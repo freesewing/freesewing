@@ -1,6 +1,6 @@
----
-title: teams
----
+***
+
+## title: teams
 
 Een team is niet meer dan een groep mensen die geïnteresseerd zijn in hetzelfde onderwerp, en wie wil samenwerken om het vooruit te helpen.
 

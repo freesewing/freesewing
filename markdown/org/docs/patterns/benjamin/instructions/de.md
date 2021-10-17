@@ -30,7 +30,6 @@ Diese Bänder findest du in besseren Kurzwarenläden oder online.
 
 Da die Fliege mit den rechten Seiten des Stoffes zueinander konstruiert wird, muss das Ganze am Ende von innen nach außen gedreht werden. Du solltest vielleicht erwägen, eine kleinere Nahtzugabe wie 6mm (¼ inch) zu verwenden, um die Menge an Stoff zu reduzieren.
 
-
 ## Konstruktion
 
 ### Schritt 1: Einlage einsetzen

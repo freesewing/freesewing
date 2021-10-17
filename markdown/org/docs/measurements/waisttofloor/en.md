@@ -1,6 +1,6 @@
----
-title: Waist to floor
----
+***
+
+## title: Waist to floor
 
 The **waist to floor** is the measurement from your waist down to the floor.
 

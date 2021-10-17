@@ -1,7 +1,8 @@
----
+***
+
 title: Avoiding overlap
 order: 220
----
+----------
 
 While you've only drawn the end of one strap, it's pretty obvious they overlap.
 Which is a big no-no in sewing patterns, so you're going to have to address that.
@@ -50,4 +51,3 @@ points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
 <Example pattern="tutorial" part="step8" caption="The right part looks a bit wonky now, but we'll get to that" />
 
 Now let's mirror this on the other side, and replace our `neck` and `rect` paths with a new path.
-

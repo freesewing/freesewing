@@ -1,6 +1,6 @@
----
-title: Cobertura
----
+***
+
+## title: Cobertura
 
 ![Una lluvia en una camiseta, hecha con una máquina de cierre](coverlock-hem.jpg)
 

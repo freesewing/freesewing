@@ -1,5 +1,5 @@
----
-title: Sewing patterns
----
+***
+
+## title: Sewing patterns
 
 <ReadMore list />

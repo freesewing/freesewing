@@ -1,7 +1,8 @@
----
+***
+
 title: Deine Personen
 order: 350
----
+----------
 
 Sobald du einen Account hast, kannst du damit anfangen, Körpermaße hinzuzufügen. Aber das wirft schnell die Frage auf: Was, wenn du ein Schnittmuster für dich haben willst, aber auch für deine/n Partner/in?
 

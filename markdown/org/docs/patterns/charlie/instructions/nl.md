@@ -1,9 +1,8 @@
-
 ## Stap 1: Sluit de neep op de rug
 
 Eerst gaan we de neep van de taille op de achterkant sluiten.
 
-Om dat te doen Plooi het achterpaneel dubbel met _goede kanten op elkaar,_ en zorg ervoor dat de twee kanten van de neep bovenop elkaar liggen.
+Om dat te doen Plooi het achterpaneel dubbel met *goede kanten op elkaar,* en zorg ervoor dat de twee kanten van de neep bovenop elkaar liggen.
 
 Stik nu de neep dichtbij, en gebruik een kleine stiklengte, en de hele weg naar het einde van de neep vaststikken, zelfs een paar steken van de stof.
 
@@ -27,7 +26,7 @@ de instructies) maar het is typisch klaar voor chinos, en maakt het makkelijker 
 
 ### Bevestig het beleg van de achterzak aan het zakdeel
 
-Bevestig het beleg aan het zakdeel van de achterzak door ze met _goede kanten op elkaar te plaatsen_ en de langste naad van de niet-gebogen naden van het gezicht te stikken.
+Bevestig het beleg aan het zakdeel van de achterzak door ze met *goede kanten op elkaar te plaatsen* en de langste naad van de niet-gebogen naden van het gezicht te stikken.
 
 Strijk de naadwaarde aan de zijkant van het zakdeel als je klaar bent.
 
@@ -51,7 +50,7 @@ Je zou de zijkanten van het zakdeel moeten oververgrendelen/verstoppen zodat ze 
 
 <Tip>
 
-Als je geen _serger_ hebt, kun je in plaats daarvan een zigzagsteek gebruiken. 
+Als je geen *serger* hebt, kun je in plaats daarvan een zigzagsteek gebruiken.
 
 </Tip>
 
@@ -69,7 +68,7 @@ De voorzakken zijn een beetje ongewoon omdat ze het uiterlijk hebben van klassie
 
 We hebben twee voorzakken die elk twee stukken beleg hebben om aan ze vast te bevestigen.
 
-Leg ze gelijk met _goede kanten op elkaar_ (\*) en stik het beleg vast.
+Leg ze gelijk met *goede kanten op elkaar* (\*) en stik het beleg vast.
 
 <Note>
 
@@ -119,7 +118,6 @@ Sluit de buitennaad om de voor- en achterkant van het paneel te plaatsen met de 
 ### Stik de bovenrand van de buitenste naad tot het bovenste merkteken van de zakopening
 
 Zorg ervoor dat alles netjes is afgestemd. Stik dan van de bovenkant van de taille naar het bovenste merkteken (dit is iets meer dan een halve cm of een inch).
-
 
 ### Stik de onderkant van de buitenste naad vanaf het onderste merkteken van de zakopening
 
@@ -174,7 +172,7 @@ Wanneer je klaar bent. Doe het opnieuw. Stik de kruisnaad altijd twee keer. Het 
 <Tip>
 
 Let op dat de naden waarbij de achterpanden aan beide broekspijpen en voorpanden aan elkaar bevestigd zijn, zorgvuldig op elkaar worden afgestemd.
-Dit zorgt ervoor dat de kruisnaadresultaten perfect zijn uitgelijnd _kruis_ waar 4 patroondelen elkaar op één punt ontmoeten.
+Dit zorgt ervoor dat de kruisnaadresultaten perfect zijn uitgelijnd *kruis* waar 4 patroondelen elkaar op één punt ontmoeten.
 
 Het goed doen is een van die dingen die je uiteindelijk altijd zal koesteren wanneer je dit draagt.
 
@@ -240,7 +238,6 @@ Misschien wil je dit eerst driegen om ervoor te zorgen dat het aardig parallel i
 
 Stik nu de andere kant van de rits aan het gulpdeel. Zorg ervoor dat het goed uitgelijkt zodat wanneer de broek wordt gesloten, de rits verborgen is
 
-
 ### Werk de kruisnaad af
 
 Stik het laatste stukje van de kruisnaad tot aan de hoogste gulpbok.
@@ -277,10 +274,10 @@ Knip ten slotte de lengte van de riemlusjes in 8 gelijke delen om 8 riemlusjes t
 
 We gaan onze riemlusjes verdelen langs de taille:
 
- - 2 aan de middenrug, elke zet een beetje apart van het midden, dus er is een kleine opening tussen hen.
- - 1 boven de achterste neep op elke zijde
- - 1 aan elke kant min of meer waar de zijnaad de taille zou raken als het recht omhoog zou gaan
- - 1 op elke kant van het middenvoorpand. Niet te dicht bij elkaar dus er is geen plaats voor gordels, maar ook niet te ver dus het ziet er niet raar uit
+*   2 aan de middenrug, elke zet een beetje apart van het midden, dus er is een kleine opening tussen hen.
+*   1 boven de achterste neep op elke zijde
+*   1 aan elke kant min of meer waar de zijnaad de taille zou raken als het recht omhoog zou gaan
+*   1 op elke kant van het middenvoorpand. Niet te dicht bij elkaar dus er is geen plaats voor gordels, maar ook niet te ver dus het ziet er niet raar uit
 
 Leg de riemlus op deze plekken met de goede kant naar beneden (tegen de goede kant van de stof van je broek, en de bovenkant komt overeen met de taille. Stik dit vast in de naadwaarde van de tailleband. Let op dat ze niet aan de tailleband kunnen voldoen.
 
@@ -335,7 +332,7 @@ Aan het begin en einde van de tailleband moet je wat meer naadwaarde instoppen. 
 
 ### Stik de tailleband dicht
 
-Nou, met de goede kant naar boven, stik precies in de naad die voor de naad was (zoal _stiksel in de naad_ genoemd).
+Nou, met de goede kant naar boven, stik precies in de naad die voor de naad was (zoal *stiksel in de naad* genoemd).
 
 Dit houdt in dat de achterkant van de tailleband die we gemaakt hebben om iets verder uit te breiden, en alle naadwaarde erin vergrendelen.
 

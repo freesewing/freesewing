@@ -1,7 +1,8 @@
----
+***
+
 title: Completing the neck opening
 order: 180
----
+----------
 
 ## Hiding our quarter neck
 
@@ -65,4 +66,3 @@ paths.neck = new Path()
 ```
 
 <Example pattern="tutorial" part="step4" caption="And now you have a complete neck opening" />
-

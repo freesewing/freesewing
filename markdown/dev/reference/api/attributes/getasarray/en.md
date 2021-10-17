@@ -1,6 +1,6 @@
----
-title: getAsArray()
----
+***
+
+## title: getAsArray()
 
 ```js
 array attributes.getAsArray(string key)
@@ -18,4 +18,3 @@ paths.demo = new Path()
 let class = paths.demo.attributes.getAsArray('class'); 
 // class now holds: ["classA", "classB"]
 ```
-

@@ -1,4 +1,3 @@
-
 Un tablier fonctionne mieux avec un tissu épais, tissé serré et facile à nettoyer. In addition, make sure to go for a natural fibre and in any case something that is heat-resistant.
 
 Heavy cotton, chino, canvas or denim are all excellent choices.

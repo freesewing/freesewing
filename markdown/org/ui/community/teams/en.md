@@ -1,6 +1,6 @@
----
-title: Teams
----
+***
+
+## title: Teams
 
 A team is no more than a group of people who are interested in the same topic,
 and who want to work together to move it forward.

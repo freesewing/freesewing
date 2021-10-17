@@ -1,4 +1,3 @@
-
 <Tip>
 
 ##### The key to Waralee is the waist band
@@ -12,11 +11,13 @@ In a way, Waralee is just a waist band with a long piece of fabric attached. The
 <Note>
 
 ##### Pockets are optional
+
 Traditionally, these types of pants do not have pockets. But I want to put my phone, keys and wallet somewhere. So I've included pockets in the pattern. You can decide for yourself if you would like them on your pants.
 
 The illustrations in the next steps show the Waralee pants without pockets. Only the pocket placements from the pattern are shown, to help you orient yourself.
 
 ##### If you do want pockets, make them first
+
 If you're going to make the pockets, make them before putting one piece of fabric on the other. It's easier to work with the parts still separated.
 
 </Note>
@@ -37,7 +38,7 @@ You can use whatever method works best for you. In the version I first made I ju
 
 ![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-crotch-seam-no-pockets.png)
 
-Now you get to sew the two parts together. Lay them with _good sides together_ and sew the seam along the cutout. Finish this seam and press it.
+Now you get to sew the two parts together. Lay them with *good sides together* and sew the seam along the cutout. Finish this seam and press it.
 
 ## Step 4: Prepare the four strings
 
@@ -50,6 +51,7 @@ For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm.
 <Note>
 
 ##### You can lengthen the front ties
+
 Optionally, to make the front ties longer, extend them by your quarter waist measurement.
 
 When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
@@ -60,7 +62,7 @@ If your material is delicate or flimsy, you can add some interfacing to this to 
 
 </Note>
 
-Fold them in half along the long side, _good sides together_. Stitch the long side and one of the short sides, and turn the tie right side out.
+Fold them in half along the long side, *good sides together*. Stitch the long side and one of the short sides, and turn the tie right side out.
 
 <Tip>
 
@@ -97,4 +99,3 @@ Hold the front side against your belly and wrap both strings around you and tie 
 Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
 
 If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
-

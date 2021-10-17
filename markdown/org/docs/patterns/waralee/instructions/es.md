@@ -1,4 +1,3 @@
-
 <Tip>
 
 ##### La clave de Waralee es la banda de cintura
@@ -12,11 +11,13 @@ de alguna manera, Waralee es sólo una banda de cintura con un largo trozo de te
 <Note>
 
 ##### Los bolsillos son opcionales
+
 Tradicionalmente, estos tipos de pantalones no tienen bolsillos. Pero quiero poner mi teléfono, llaves y monedero en algún lugar. Así que he incluido bolsillos en el patrón. Usted puede decidir por sí mismo si lo desea en sus pantalones.
 
 Las ilustraciones en los siguientes pasos muestran los pantalones de Waralee sin bolsillos. Sólo se muestran las colocaciones de los bolsillos del patrón, para ayudarte a orientarte a ti mismo.
 
 ##### Si quieres bolsillos, hazlos primero
+
 Si vas a hacer los bolsillos, fabricarlos antes de poner una pieza de tejido en la otra. Es más fácil trabajar con las piezas aún separadas.
 
 </Note>
@@ -37,7 +38,7 @@ Puede utilizar cualquier método que mejor le funcione. En la versión que prime
 
 ![Coloque las dos partes encima de la otra con buenos lados juntos. Difundir la costura del cromo](waralee-crotch-seam-no-pockets.png)
 
-Ahora puedes coser las dos partes juntos. Escríbelos con _lados buenos_ juntos y coser la costura a lo largo del corte. Termina esta costura y presiona.
+Ahora puedes coser las dos partes juntos. Escríbelos con *lados buenos* juntos y coser la costura a lo largo del corte. Termina esta costura y presiona.
 
 ## Paso 4: Prepara las cuatro cadenas
 
@@ -50,6 +51,7 @@ Por ejemplo, si mi circunstancia de cintura es 84.6cm: 84.6cm dividido por 4 es 
 <Note>
 
 ##### Puedes alargar los lazos frontales
+
 Opcionalmente, para hacer los lazos frontales más largos, agrandarlos con la medida de cintura de tu cuarto.
 
 Al generar tu patrón, una de las opciones de estilo se llama “Waist Band”. Las cadenas, cuando se doblan, deben tener el mismo ancho que ha especificado para esa opción, 2,5cm (1") por defecto.
@@ -60,7 +62,7 @@ Si su material es delicado o endeble, puede añadir alguna interfaz para darle f
 
 </Note>
 
-Doble a la mitad a lo largo del lado largo, _lados buenos juntos_. Unir el lado largo y uno de los lados cortos, y girar el lado derecho de la corbata.
+Doble a la mitad a lo largo del lado largo, *lados buenos juntos*. Unir el lado largo y uno de los lados cortos, y girar el lado derecho de la corbata.
 
 <Tip>
 
@@ -97,4 +99,3 @@ Mantenga la parte frontal contra su vientre y envuelva ambas cuerdas a su alrede
 Aquí hay un artículo que muestra cómo atar pantalones de envoltorio: [Cómo envolver pantalones](https://www.wikihow.com/Tie-Wrap-Pants)
 
 Si te quedas atascado, o tienes preguntas adicionales, siempre puedes contactar con [otros Sewers libres](https://discord.freesewing.org/).
-

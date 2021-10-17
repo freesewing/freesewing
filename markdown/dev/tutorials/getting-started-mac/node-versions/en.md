@@ -1,7 +1,8 @@
----
+***
+
 title: Using a different Node version
 order: 40
----
+---------
 
 Now that you've got Node setup, we can start setting up the FreeSewing
 development environment.
@@ -17,8 +18,8 @@ To see the different Node versions on your system, run this command:
 nvm ls
 ```
 
-It will show you a list of local node versions. 
-Either the version number, or an _alias_ that points to a specific version.
+It will show you a list of local node versions.
+Either the version number, or an *alias* that points to a specific version.
 You should see the `lts/*` alias in the list which is what we've just installed.
 
 ### nvm ls-remote
@@ -52,4 +53,3 @@ nvm use v10.22.1
 
 If you picked a version that is not installed, `nvm` will simply tell you
 and even suggest the command you should type to install it. Handy!
-

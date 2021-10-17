@@ -1,7 +1,7 @@
-
 Pour fabriquer Téagan, vous aurez besoin des éléments suivants :
-- [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- Environ 1 m d'un tissu adapté ([voir Options de tissu](/docs/patterns/teagan/fabric))
+
+*   [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
+*   Environ 1 m d'un tissu adapté ([voir Options de tissu](/docs/patterns/teagan/fabric))
 
 <!--- This link isn't a thing yet, but it follows the site nomenclature, so it should work when everything's up? --->
 

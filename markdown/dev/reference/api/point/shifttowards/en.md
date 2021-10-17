@@ -1,6 +1,6 @@
----
-title: shiftTowards()
----
+***
+
+## title: shiftTowards()
 
 ```js
 Point point.shiftTowards(Point target, float distance)
@@ -9,8 +9,8 @@ Point point.shiftTowards(Point target, float distance)
 Returns a point that lies distance in the direction of target.
 
 <Example 
-  part="point_shifttowards"
-  caption="An example of the Point.shiftTowards() method"
+part="point_shifttowards"
+caption="An example of the Point.shiftTowards() method"
 />
 
 ```js

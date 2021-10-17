@@ -1,6 +1,6 @@
----
-title: Zurückschneiden
----
+***
+
+## title: Zurückschneiden
 
 ![Nahtzugabe, die zurückgeschnitten wird](trimming.jpg)
 

@@ -1,7 +1,8 @@
----
+***
+
 title: Das Recht auf Datenübertragbarkeit
 order: 60
----
+---------
 
 Du hast das Recht, deine persönlichen Daten zu erhalten und weiterzuverarbeiten, sei es für eigene Zwecke oder über verschiedene Dienstleister hinweg.
 

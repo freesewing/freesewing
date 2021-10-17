@@ -8,6 +8,6 @@ Si aumentas la subida de espalda, tu corsé subirá hacia arriba en la espalda.
 
 > Dado que se trata de un corsé de subbuste, el retroceso es una opción de estilo y no va a afectar al ajuste
 
-
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_backrise_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin\_backrise\_sample.svg "Efecto de esta opción en el patrón")

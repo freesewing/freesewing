@@ -1,6 +1,6 @@
----
-title: Distancia entre pechos
----
+***
+
+## title: Distancia entre pechos
 
 El **rango de polvo** es la distancia horizontal entre los dos puntos apex de tu busto.
 

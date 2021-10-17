@@ -1,6 +1,6 @@
----
-title: Your rights
----
+***
+
+## title: Your rights
 
 Freesewing applies the General Data Protection Regulation (GDPR) of the European Union (EU).
 

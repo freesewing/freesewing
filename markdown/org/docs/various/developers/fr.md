@@ -1,6 +1,6 @@
----
-title: Documentation pour les développeurs
----
+***
+
+## title: Documentation pour les développeurs
 
 Freesewing.org n'héberge que la documentation pour les créateurs.
 

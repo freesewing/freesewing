@@ -1,6 +1,6 @@
 ### Step 1: Sew the front to the first gusset piece
 
-Place one of the gusset pieces on the front piece, _good sides together_, so that the crotch seams are aligned. Pin or baste at the seam allowance.
+Place one of the gusset pieces on the front piece, *good sides together*, so that the crotch seams are aligned. Pin or baste at the seam allowance.
 
 ![Sew the front to the first gusset piece](step01.png)
 

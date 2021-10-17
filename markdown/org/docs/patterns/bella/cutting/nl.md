@@ -1,7 +1,7 @@
 Om Bella te maken heb je nodig:
 
- - 1 voorzijde
- - 2 Terug
+*   1 voorzijde
+*   2 Terug
 
 <Note>
 

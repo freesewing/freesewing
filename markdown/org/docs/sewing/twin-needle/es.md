@@ -1,6 +1,6 @@
----
-title: Aguja gemela
----
+***
+
+## title: Aguja gemela
 
 ![Una aguja gemela de Schmetz](twin-needle.jpg)
 

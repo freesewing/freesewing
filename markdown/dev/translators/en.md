@@ -1,22 +1,23 @@
----
+***
+
 title: For translators
 order: 1140
----
+-----------
 
 Freesewing is proudly multilingual. We currently support 5 languges:
 
 We currently support the following five languages:
 
-  - **en** : English
-  - **de** : German
-  - **es** : Spanish
-  - **fr** : French
-  - **nl** : Dutch
+*   **en** : English
+*   **de** : German
+*   **es** : Spanish
+*   **fr** : French
+*   **nl** : Dutch
 
 <Note>
 
 If you'd like to start working on a new language, that's great, but a bit
-beyond the scope of this documentation. So in that case, 
+beyond the scope of this documentation. So in that case,
 please [come and talk to us on Discord](https://discord.freesewing.org).
 
 </Note>
@@ -38,10 +39,10 @@ simply [let us know you'd like to help out](https://discord.freesewing.org/) and
 
 Our content comes in two flavors:
 
- - Strings and markdown content **on Crowdin**. Here, English is the **origin language** and 
- translations are kept close to the origin.
- - Blog posts and showcases **on Strapi**. Here, there is no origin langauge. People can write 
- blog posts in any language, or translate more freely to adapt the content to a different audience.
+*   Strings and markdown content **on Crowdin**. Here, English is the **origin language** and
+    translations are kept close to the origin.
+*   Blog posts and showcases **on Strapi**. Here, there is no origin langauge. People can write
+    blog posts in any language, or translate more freely to adapt the content to a different audience.
 
 </Tip>
 
@@ -74,8 +75,6 @@ These will be filled in later with the correct value. For example:
 
 looks like this in Spanish
 
-
 ```yaml
 {field} guardado
 ```
-

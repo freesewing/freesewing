@@ -1,8 +1,9 @@
----
+***
+
 title: Designs
 for: contributors
 about: Complete list of FreeSewing designs that we've put out
----
+-------------------------------------------------------------
 
 We have a growing number of designs (sewing patterns).
 

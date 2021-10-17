@@ -1,9 +1,8 @@
-
 ## Étape 1 : Fermer la dart arrière
 
 La première chose que nous allons faire est de fermer la ceinture sur le panneau arrière.
 
-Pour cela, pliez le panneau arrière double avec _bons côtés ensemble_ en s'assurant de faire correspondre les deux côtés de la fléchette les uns aux autres.
+Pour cela, pliez le panneau arrière double avec *bons côtés ensemble* en s'assurant de faire correspondre les deux côtés de la fléchette les uns aux autres.
 
 Maintenant coudre le dart à la fermeture, assurez-vous d'utiliser une petite longueur de couture, et de coudre toute la route à l'extrémité de la fléchette, même quelques points du tissu.
 
@@ -27,7 +26,7 @@ les instructions) mais c'est une fin très typique pour les chinois, et facilite
 
 ### Attacher la poche arrière face au sac de poche
 
-Rejoignez la poche arrière face au sac de poche en les plaçant avec _de bons côtés ensemble_ et en cousant le long des coutures les plus longues de la face non incurvée.
+Rejoignez la poche arrière face au sac de poche en les plaçant avec *de bons côtés ensemble* et en cousant le long des coutures les plus longues de la face non incurvée.
 
 Lorsque vous avez terminé, appuyez sur le côté du sac de poche.
 
@@ -51,7 +50,7 @@ Vous devriez surverrouiller/serrer les côtés du sac de poche pour qu'ils ne se
 
 <Tip>
 
-Si vous n'avez pas de _serger_, vous pouvez toujours utiliser un point zig-zag à la place. 
+Si vous n'avez pas de *serger*, vous pouvez toujours utiliser un point zig-zag à la place.
 
 </Tip>
 
@@ -69,7 +68,7 @@ Les poches avant sont un peu inhabituelles parce qu'elles ont l'apparence de poc
 
 Nous avons deux sacs de poche avant, qui ont chacun deux pièces en face pour les fixer.
 
-Alignez-les avec _bons côtés ensemble_ (\*) et cousez la face en place.
+Alignez-les avec *bons côtés ensemble* (\*) et cousez la face en place.
 
 <Note>
 
@@ -119,7 +118,6 @@ Fermer le revêtement extérieur signifie placer le panneau avant et arrière av
 ### Coudre le haut de la couture extérieure jusqu'à l'encoche supérieure de la pochette
 
 Assurez-vous que tout est bien aligné. Coudre ensuite du haut de la taille jusqu'à l'encoche supérieure (soit un peu plus d'un cm ou un demi pouce).
-
 
 ### Coudre le bas de la couture extérieure de l'encoche inférieure de la poche
 
@@ -174,7 +172,7 @@ Quand vous avez terminé. Faites-le à nouveau. Coudre toujours la couture de cr
 <Tip>
 
 Faites très attention à aligner soigneusement les coutures où les deux jambes ont leur dos et les panneaux avant unis.
-Ce faisant, vous assurerez que vos résultats de couture croisée seront parfaitement alignés avec une _croix_ où 4 parties de motif se rencontreront en un seul point.
+Ce faisant, vous assurerez que vos résultats de couture croisée seront parfaitement alignés avec une *croix* où 4 parties de motif se rencontreront en un seul point.
 
 Une de ces choses que vous finirez par chérir chaque fois que vous les porterez.
 
@@ -240,7 +238,6 @@ Vous pourriez vouloir baster cette première fois pour vous assurer qu'elle est 
 
 Coudre ensuite l'autre côté de la fermeture à la mouche. Make sure to align it properly so that when the trousers are closed, the zip is hidden
 
-
 ### Terminer la couture de croix
 
 Coudre le dernier morceau de la couture de croix jusqu'à l'encoche la plus haute.
@@ -277,10 +274,10 @@ Enfin, coupez votre bande de courroies de longueur en 8 parties égales pour fai
 
 Nous allons diviser nos boucles de ceinture le long de la taille :
 
- - 2 au centre arrière, chacun mis de côté un peu du centre donc il y a un petit écart entre eux.
- - 1 au-dessus du dard arrière de chaque côté
- - 1 de chaque côté plus ou moins où la couture latérale frapperait la taille si elle était droite vers le haut
- - 1 de chaque côté à partir du centre devant. Pas trop près les uns des autres donc il n'y a pas de place pour les boucles de ceinture, mais pas trop loin non plus, donc ça ne semble pas bizarre
+*   2 au centre arrière, chacun mis de côté un peu du centre donc il y a un petit écart entre eux.
+*   1 au-dessus du dard arrière de chaque côté
+*   1 de chaque côté plus ou moins où la couture latérale frapperait la taille si elle était droite vers le haut
+*   1 de chaque côté à partir du centre devant. Pas trop près les uns des autres donc il n'y a pas de place pour les boucles de ceinture, mais pas trop loin non plus, donc ça ne semble pas bizarre
 
 Placez la boucle de ceinture à ces endroits avec leur bon côté vers le bas (contre le bon côté du tissu de votre pantalon, et le haut aligné avec la taille. Coudre ceci dans la couture de la taille en veillant à ce qu'ils soient perpendiculaires à la ceinture.
 
@@ -335,7 +332,7 @@ Au début et à la fin de la ceinture, vous devrez ajouter une marge de couture.
 
 ### Coudre la ceinture
 
-Maintenant avec le bon côté vers le haut, coudre exactement dans la couture qui a été cousue avant (appelé _point dans le fossé_).
+Maintenant avec le bon côté vers le haut, coudre exactement dans la couture qui a été cousue avant (appelé *point dans le fossé*).
 
 Cela accrochera l'arrière de la ceinture que nous avons fait pour aller un peu plus loin, et verrouille toute la marge de couture à l'intérieur.
 

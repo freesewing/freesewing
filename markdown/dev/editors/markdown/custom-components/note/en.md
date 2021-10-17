@@ -1,7 +1,8 @@
----
+***
+
 title: Note
 order: 10
----
+---------
 
 ```md
 <Note>
@@ -15,6 +16,7 @@ I point out things
 <Note>
 
 ##### I am a note
+
 I point out things
 
 </Note>

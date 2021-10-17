@@ -1,6 +1,6 @@
----
-title: round
----
+***
+
+## title: round
 
 The `round` macro rounds a corner. It is provided by the [round plugin](/reference/plugins/round/).
 
@@ -19,7 +19,7 @@ macro('round', {
 })
 ```
 
-| Property    | Default | Type                | Description | 
+| Property    | Default | Type                | Description |
 |------------:|---------|---------------------|-------------|
 | `from`      |         | [Point](/reference/api/point) | The startpoint towards the corner to round |
 | `to`        |         | [Point](/reference/api/point) | The endpoint away from the corner to round |
@@ -28,4 +28,3 @@ macro('round', {
 | `prefix`    |         | String              | A prefix to give to the points and paths created by this macro |
 | `render`    | `false` | Boolean             | Whether to render the path created by this macro |
 | `class`     |         | String              | Class(es) to assign to the path created by this macro |
-

@@ -1,6 +1,6 @@
----
-title: Borstomtrek
----
+***
+
+## title: Borstomtrek
 
 De **borstomtrek** maat gaat rond het volste deel van je borst.
 

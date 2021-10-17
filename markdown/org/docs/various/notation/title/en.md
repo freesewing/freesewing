@@ -1,8 +1,9 @@
----
-title: Titles
----
+***
 
-Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name:  
+## title: Titles
+
+Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name:
+
 <Legend part="title" caption="Example of a title" />
 
 <Note>

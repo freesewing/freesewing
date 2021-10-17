@@ -1,4 +1,3 @@
-
 Legt die Weite des Hosenbeins fest.
 
 <Note>
@@ -11,5 +10,6 @@ können Sie die Beinbreite ändern.
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_fitknee_sample.svg "Effekt dieser Option auf das Schnittmuster")
+## Effekt dieser Option auf das Muster
+
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan\_fitknee\_sample.svg "Effekt dieser Option auf das Muster")

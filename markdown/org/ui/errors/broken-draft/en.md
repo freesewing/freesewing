@@ -1,6 +1,6 @@
----
-title: Something went wrong
----
+***
+
+## title: Something went wrong
 
 ##### Help us make FreeSewing better by reporting this crash
 
@@ -10,10 +10,10 @@ investigate what exactly went wrong.
 
 The diagnostics data we collect includes:
 
- - Your userid 
- - Your Github username (only if you configured it in your profile)
- - The pattern name and version
- - The full set of measurements and options used to create this pattern
+*   Your userid
+*   Your Github username (only if you configured it in your profile)
+*   The pattern name and version
+*   The full set of measurements and options used to create this pattern
 
 If you consent to publish this data in the crash report, click the button below.
 

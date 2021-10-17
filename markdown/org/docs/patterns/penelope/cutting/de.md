@@ -2,8 +2,7 @@ Penelope besteht aus einer Vorderseite und einem hinteren Stück. Das Vorderteil
 
 <Tip>
 
-Wenn Sie ein Stück auf der Falte ausgeschnitten haben, müssen Sie bedenken, dass die Falte nicht in der Mitte des Stoffes sein muss. 
+Wenn Sie ein Stück auf der Falte ausgeschnitten haben, müssen Sie bedenken, dass die Falte nicht in der Mitte des Stoffes sein muss.
 Die Wahl der Platzierung Ihrer Stücke kann die Menge an Stoff für Ihren Rock erheblich reduzieren.
 
 </Tip>
-

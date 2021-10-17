@@ -1,6 +1,6 @@
----
-title: Caja de escala
----
+***
+
+## title: Caja de escala
 
 La casilla de escala le permite verificar que su patrón fue impreso a la escala correcta:
 

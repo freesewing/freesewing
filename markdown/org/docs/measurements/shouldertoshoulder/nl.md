@@ -1,6 +1,6 @@
----
-title: Schouder tot schouder
----
+***
+
+## title: Schouder tot schouder
 
 De afmeting **schouder tot schouder** loopt van de tip van je ene schouder, langs je rug, naar de top van de andere.
 

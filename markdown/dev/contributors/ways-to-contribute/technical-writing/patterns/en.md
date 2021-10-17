@@ -1,6 +1,6 @@
----
-title: Writing for freesewing.org
----
+***
+
+## title: Writing for freesewing.org
 
 You could write documentation for freesewing.org, our makers website.
 

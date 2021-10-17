@@ -1,6 +1,6 @@
----
-title: linesIntersect()
----
+***
+
+## title: linesIntersect()
 
 ```js
 Point | false utils.linesIntersect(
@@ -40,5 +40,3 @@ snippets.X = new Snippet(
   utils.linesIntersect(points.A, points.B, points.C, points.D)
 );
 ```
-
-

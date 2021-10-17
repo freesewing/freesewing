@@ -1,6 +1,6 @@
----
-title: Waist to seat
----
+***
+
+## title: Waist to seat
 
 The **waist to seat** is the measurement from your waist down towards the fullest part of your bum, measured on the side of your body.
 

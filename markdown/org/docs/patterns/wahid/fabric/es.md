@@ -7,5 +7,3 @@ Estos tejidos son típicamente lana, pero también puedes ser un poco más creat
 De todos modos, se necesita un poco de peso. Denim está bien, algún algodón ligero no.
 
 </Note>
-
-

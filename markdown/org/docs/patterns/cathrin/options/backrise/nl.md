@@ -8,6 +8,6 @@ Als je de rughoogte groter maakt zal je korset achteraan hoger komen.
 
 > Aangezien dit een korset is dat onder de buste zit is de hoogte van de rug een esthetische keuze en heeft dit geen invloed op de pasvorm
 
-
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cathrin_backrise_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cathrin\_backrise\_sample.svg "Effect van deze optie op het patroon")

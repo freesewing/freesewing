@@ -1,6 +1,6 @@
----
-title: Gute Seiten zusammen
----
+***
+
+## title: Gute Seiten zusammen
 
 Wenn ich von guten Seiten spreche, dann kann man sich entweder auf Schnitt oder Nähen beziehen:
 
@@ -20,7 +20,7 @@ Dies gibt Ihnen zwei Teile, die Spiegelbilder voneinander sind.
 
 ##### Was passiert, wenn es keine offensichtliche gute Seite gibt?
 
-Beim Ausschneiden von etwas ohne offensichtliche *gut* Seite (wie Schnittstellen), 
+Beim Ausschneiden von etwas ohne offensichtliche *gut* Seite (wie Schnittstellen),
 Wichtig ist, dass du zwei gespiegelte Teile geschnitten hast und nicht zwei identische.
 
 </Note>

@@ -1,6 +1,6 @@
----
-title: Gebruik van hashtags
----
+***
+
+## title: Gebruik van hashtags
 
 Mocht je hashtags gebruiken op social media, gebruik dan de specifieke voor onze patronen.
 

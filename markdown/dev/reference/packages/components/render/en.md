@@ -1,6 +1,6 @@
----
-title: Render
----
+***
+
+## title: Render
 
 The `Render` component is componet that renders a FreeSewing pattern.
 It's an alternative to rendering patterns as SVG, allowing for more
@@ -34,11 +34,11 @@ The name `Draft` is deprecated and will be removed in a future release.
 
 <Note>
 
-###### (*) Use `pattern.getRenderProps()` to get these props
+###### (\*) Use `pattern.getRenderProps()` to get these props
 
-The `width`, `height`, `settings`, and `parts` props are provided by the 
-[getRenderProps()](/reference/api/pattern/#getrenderprops) method of 
-the [Pattern](/reference/api/pattern/) object. 
+The `width`, `height`, `settings`, and `parts` props are provided by the
+[getRenderProps()](/reference/api/pattern/#getrenderprops) method of
+the [Pattern](/reference/api/pattern/) object.
 
 They are typically uses as in the example below:
 

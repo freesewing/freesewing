@@ -7,6 +7,7 @@ Diese Anleitung ist nur eine davon. Bei dieser Methode empfehle ich eine breiter
 Hersteller von Anfängerkorsetten sollten die Tutorials lesen, die von [Sidney Eileen](http://www.sidneyeileen.com), die verschiedene Baumethoden demonstrieren, geschrieben wurden. [Foundations Revealed](https://www.foundationsrevealed.com) ist eine Paywall-Website für Korsettmacher, mit einigen außergewöhnlichen Artikeln kostenlos für Nichtmitglieder.
 
 #### Überprüfe das ursprüngliche Tutorial
+
 Dieses Muster basiert auf [diesem Tutorial von Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin hat auch [diesen informativen Beitrag über das Erstellen von Korsetten](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) in ihrem Blog, den Sie vielleicht hilfreich finden.
 
 </Note>
@@ -25,13 +26,13 @@ Mit einer kleinen Nähbreite (ich setze Mine auf „2“), nähen Sie eine Linie
 
 Nimm das nächste Stück. Für einen Cathrin mit 11 Panels wird dies Panel 2 sein.
 
-Platzieren Sie das äußere Panel 2 auf der äußeren Leiste 1, _gute Seiten zusammen_.
+Platzieren Sie das äußere Panel 2 auf der äußeren Leiste 1, *gute Seiten zusammen*.
 
-Platzieren Sie das Core Panel 2 auf dem Core Panel 1, _gute Seiten zusammen_.
+Platzieren Sie das Core Panel 2 auf dem Core Panel 1, *gute Seiten zusammen*.
 
 Vergewissern Sie sich, dass die vier Schichten des Stoff perfekt sind. Überprüfen Sie doppelt, ob Sie keine Musterstücke vermischt oder versehentlich gekippt haben.
 
-Passen Sie die vier Stoffschichten im engsten Teil an, _gute Seiten zusammen_, und pin. Dann passen Sie oben und unten auf jeder Platte und Pin. Schließlich den Rest der Kante anpinnen. Verwenden Sie so viele Pins wie nötig, um sicherzustellen, dass die Platten perfekt aufeinander abgestimmt bleiben.
+Passen Sie die vier Stoffschichten im engsten Teil an, *gute Seiten zusammen*, und pin. Dann passen Sie oben und unten auf jeder Platte und Pin. Schließlich den Rest der Kante anpinnen. Verwenden Sie so viele Pins wie nötig, um sicherzustellen, dass die Platten perfekt aufeinander abgestimmt bleiben.
 
 Nähen Sie die Naht.
 
@@ -51,11 +52,11 @@ Topstitch eine weitere Naht parallel zur ersten Naht, so dass ein bisschen mehr 
 
 Nimm das nächste Stück. Für einen 11 Panel Cathrin wird dies Panel 3 sein.
 
-Platzieren Sie das äußere Panel 3 auf der äußeren Leiste 2, _gute Seiten zusammen_.
+Platzieren Sie das äußere Panel 3 auf der äußeren Leiste 2, *gute Seiten zusammen*.
 
-Platzieren Sie das Core Panel 3 auf dem Core Panel 2, _gute Seiten zusammen_.
+Platzieren Sie das Core Panel 3 auf dem Core Panel 2, *gute Seiten zusammen*.
 
-Passen Sie die vier Stoffschichten im engsten Teil an, _gute Seiten zusammen_, und pin. Dann passen Sie oben und unten auf jeder Platte und Pin. Schließlich den Rest der Kante anpinnen. Verwenden Sie so viele Pins wie nötig, um sicherzustellen, dass die Platten perfekt aufeinander abgestimmt bleiben.
+Passen Sie die vier Stoffschichten im engsten Teil an, *gute Seiten zusammen*, und pin. Dann passen Sie oben und unten auf jeder Platte und Pin. Schließlich den Rest der Kante anpinnen. Verwenden Sie so viele Pins wie nötig, um sicherzustellen, dass die Platten perfekt aufeinander abgestimmt bleiben.
 
 Nähen Sie die Naht.
 

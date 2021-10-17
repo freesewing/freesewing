@@ -1,6 +1,6 @@
----
-title: "@freesewing/models"
----
+***
+
+## title: "@freesewing/models"
 
 <p>
   <a
@@ -52,4 +52,3 @@ This package provides a set of standard-sized measurements to test your patterns
   <li><a href='https://www.npmjs.com/package/@freesewing/models'>Package on NPM</a></li>
   <li><a href='https://github.com/freesewing/freesewing/tree/develop/packages/models'>Code on Github</a></li>
 </ul>
-

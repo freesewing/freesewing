@@ -1,6 +1,6 @@
----
-title: Why don't you use double notches to mark the back of the pattern?
----
+***
+
+## title: Why don't you use double notches to mark the back of the pattern?
 
 A double-notch is a common way to mark the back of the pattern. Common, but not universal.
 

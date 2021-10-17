@@ -48,7 +48,7 @@
 
 # @freesewing/bee
 
-A FreeSewing pattern for a bikini
+A FreeSewing pattern for a bikini top
 
 
 

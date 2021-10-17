@@ -1,4 +1,3 @@
-
 Una camisa A es esencialmente ropa interior. Y en esa capacidad, usted quiere algo que es confortable, se siente bien en su piel y respira.
 
 Algodón con un toque de algo estirado, tal vez rayon, o un buen tejido. Le sugiero que vaya a la tienda de tejidos y se sienta un poco.

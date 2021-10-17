@@ -1,6 +1,6 @@
----
-title: inject
----
+***
+
+## title: inject
 
 ```js
 inject: {

@@ -1,6 +1,6 @@
----
-title: Tour de cou
----
+***
+
+## title: Tour de cou
 
 Le **tour de cou** est la mesure autour du cou, au niveau du col de chemise ou de la cravate.
 

@@ -7,6 +7,7 @@ te maken. Deze instructies zijn slechts één manier. Met deze methode raad ik a
 Beginnende korsettenmakers zouden de tutorials van [Sidney Eileen](http://www.sidneyeileen.com), die verschillende bouwmethodes toont, moeten lezen. [Foundations Revealed](https://www.foundationsrevealed.com) is een paywall site voor corset makers, met enkele gratis uitzonderlijke artikelen voor niet-leden.
 
 #### Bekijk de originele tutorial
+
 Dit patroon is gebaseerd op [deze tutorial van Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin heeft ook [dit informatieve bericht over het maken van korsets](https://katafalk.wordpress.com/2009/05/05/03how-i-sew-korsets/) op haar blog, die je misschien nuttig vindt.
 
 </Note>
@@ -25,13 +26,13 @@ Met een kleine naaimachbreedte (ik zet mijn op “2”), naai een rechte lijn aa
 
 Sla het volgende stuk. Voor een 11-paneel Kathrin zal dit paneel 2 zijn.
 
-Plaats het buitenpaneel 2 in het buitenpaneel 1, _goede kanten op elkaar_.
+Plaats het buitenpaneel 2 in het buitenpaneel 1, *goede kanten op elkaar*.
 
-Plaats de core Panel 2 in het core Panel 1, _goede kanten op elkaar_.
+Plaats de core Panel 2 in het core Panel 1, *goede kanten op elkaar*.
 
 Zorg ervoor dat de vier lagen stof perfect omhoog. Controleer twee: je hebt patroondelen niet gemengd of per ongeluk omgedraaid.
 
-Combineer de vier lagen stof aan het smalste gedeelte, _goede kanten op elkaar_, en speld. Vervolgens de bovenkant en onderkant van elk paneel en pin overeenkomen. Speld ten slotte de rest van de rand vast. Gebruik zoveel spelden als nodig om ervoor te zorgen dat de panelen perfect op elkaar zijn afgestemd.
+Combineer de vier lagen stof aan het smalste gedeelte, *goede kanten op elkaar*, en speld. Vervolgens de bovenkant en onderkant van elk paneel en pin overeenkomen. Speld ten slotte de rest van de rand vast. Gebruik zoveel spelden als nodig om ervoor te zorgen dat de panelen perfect op elkaar zijn afgestemd.
 
 Stik de naad.
 
@@ -51,11 +52,11 @@ Stik een andere naad parallel aan de eerste naad, wat een beetje extra spatie, o
 
 Sla het volgende stuk. Voor een 11-paneel Kathrin zal dit paneel 3 zijn.
 
-Plaats het buitenpaneel 3 op het buitenpaneel 2, _goede kanten op elkaar_.
+Plaats het buitenpaneel 3 op het buitenpaneel 2, *goede kanten op elkaar*.
 
-Plaats de core Panel 3 in de kern Paneel 2, _goede kanten op elkaar_.
+Plaats de core Panel 3 in de kern Paneel 2, *goede kanten op elkaar*.
 
-Combineer de vier lagen stof aan het smalste gedeelte, _goede kanten op elkaar_, en speld. Vervolgens de bovenkant en onderkant van elk paneel en pin overeenkomen. Speld ten slotte de rest van de rand vast. Gebruik zoveel spelden als nodig om ervoor te zorgen dat de panelen perfect op elkaar zijn afgestemd.
+Combineer de vier lagen stof aan het smalste gedeelte, *goede kanten op elkaar*, en speld. Vervolgens de bovenkant en onderkant van elk paneel en pin overeenkomen. Speld ten slotte de rest van de rand vast. Gebruik zoveel spelden als nodig om ervoor te zorgen dat de panelen perfect op elkaar zijn afgestemd.
 
 Stik de naad.
 

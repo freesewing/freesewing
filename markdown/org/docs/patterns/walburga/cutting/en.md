@@ -9,4 +9,3 @@ Apart from the cutout for the neck opening, front and back are identical. It is 
 - cut *1 front*, on the fold
 - cut *1 back*, on the fold
 
-<Note>

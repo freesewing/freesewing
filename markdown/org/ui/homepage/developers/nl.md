@@ -1,5 +1,6 @@
-- - -
-- - -
+***
+
+***
 
 #### Eigenaardig hoe dit werkt?
 
@@ -19,7 +20,7 @@ Onze [documentatie over ontwikkelaars](https://freesewing.dev) is beschikbaar op
 
 #### Wil je meehelpen?
 
-Geweldig ❤️   
+Geweldig ❤️\
 Onze [documentatie voor bijdragers](https://freesewing.dev/contributors/) is een goed vertrekpunt. We hebben ook specifieke handleidingen voor [vertalers](https://freesewing.dev/translators/) en [editors](https://freesewing.dev/editors/).
 
 Niet in de laatste plaats [sluit je aan bij Discord](https://discord.freesewing.org/) waar alle andere bijdragers ophangen.

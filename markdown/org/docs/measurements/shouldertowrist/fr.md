@@ -1,6 +1,6 @@
----
-title: Longueur de bras
----
+***
+
+## title: Longueur de bras
 
 La **longueur de bras** détermine la longueur de votre manche, et court du point d'épaule le long du bras jusqu'à votre poignet.
 

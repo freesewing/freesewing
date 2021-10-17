@@ -1,4 +1,3 @@
-
 <Tip>
 
 ##### Suivez la couture avec Kelly et Julian
@@ -7,7 +6,7 @@ Kelly Hogaboom et Julian Collins ont fait une couture de Simone, et ils ont des 
 toutes les étapes.
 Si vous cherchez à créer ce modèle, Kelly et Julian peuvent vous guider vers la fin.
 
-Vous pouvez trouver tout le matériel sur le site 
+Vous pouvez trouver tout le matériel sur le site
 de Kelly's : [#simonsayssew avec kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
@@ -17,21 +16,23 @@ de Kelly's : [#simonsayssew avec kelly hogaboom & julian collins](https://kelly.
 ![Thermocollez l'entoilage aux poignets](1a.png) ![Thermocollez l'entoilage sur le col](1b.png)
 
 #### Thermocoller au fer l'entoilage sur les poignets
+
 Pour faire les deux poignets, vous avez coupé 4 pièces dans le tissu et 2 pièces dans l'entoilage.
 
 Pour chaque poignet, repassez l'entoilage sur l'envers du poignet.
 
 > Si l'envers et l'endroit de votre poignet sont coupés dans le même tissu, peu importe le côté sur lequel vous collez l'entoilage.
-> 
+>
 > Cependant, un détail prisé consiste à utiliser un tissu différent pour l'intérieur du poignet. Dans ce cas, assurez vous de thermocoller l'entoilage sur la pièce qui se trouvera à l'extérieur du poignet. Dans ce cas, assurez-vous de thermocoller l'entoilage sur la pièce du poignet qui sera côté extérieur.
 
 > Selon le poignet que vous avez choisi, la forme du poignet sera différente.
-> 
+>
 > Sur la première image, vous pouvez voir un poignet arrondi et un poignet carré par exemple.
-> 
+>
 > Ci dessous, les images montrent un poignet arrondi, mais le processus est le même pour les autres types de poignets.
 
 #### Repasser l'entoilage thermocollant au col et au sous-col, et au pied de col
+
 Pour faire votre col, vous devez couper 1 sous-col, 1 col, et 2 pieds de col. Le tout dans le tissu, et dans l'entoilage thermocollant.
 
 Poser l'entoilage thermocollant sur l'envers de chaque pièce et repassez le.
@@ -45,9 +46,9 @@ Poser l'entoilage thermocollant sur l'envers de chaque pièce et repassez le.
 Placez les 2 pièces de vos poignets (l'une entoilée, l'autre non) endroit contre endroit, et cousez les ensemble en respectant la marge de couture.
 
 > **Assurez vous de :**
-> 
-> - - ne pas coudre le côté qui sera assemblé à la manche plus tard
-> - - vous arrêter de coudre à la marge de couture, à partir du bord qui sera assemblé à la manche
+>
+> *   *   ne pas coudre le côté qui sera assemblé à la manche plus tard
+> *   *   vous arrêter de coudre à la marge de couture, à partir du bord qui sera assemblé à la manche
 
 #### Dégarnir la marge de couture
 
@@ -94,7 +95,7 @@ Avant de retourner le col, il faut dégarnir la marge de couture pour enlever l'
 Retournez votre col sur l'endroit, rendez les pointes aussi pointues que possible, et donnez un bon coup de fer.
 
 > Quand vous repassez votre col, souvenez vous que le sous-col est un peu plus étroit.
-> 
+>
 > Quand vous alignez les côtés non cousus, ceci fera rouler la couture au dos du col, et garantira que la face interne du col ne soit pas visible.
 
 #### Surpiquer le col
@@ -118,7 +119,7 @@ Placez d'abord un pied de col sur l'envers, puis votre col, côté entoilé sur 
 Votre col doit se trouver entre les deux pieds de col, et les milieux (où vous avez placé vos épingles) doivent être alignés.
 
 > L'aspect dépend un peu du col que vous avez choisi, mais en général votre col est courbé vers le bas, et votre pied de col est courbé vers le haut.
-> 
+>
 > Pour ajuster le tout, nous allons bâtir, plutôt qu'épingler. Votre col est une partie importante de votre chemise, donc il le mérite.
 
 D'abord, remplacer les épingles marquant le milieu par une épingle prenant toutes les pièces ensemble.
@@ -142,7 +143,7 @@ Cousez le long du bord de votre pied de col, en respectant la marge de couture s
 Repliez la marge de couture du côté non cousu de votre pied de col et repassez.
 
 > Au milieu, ce sera facile. Mais vers les pointes de votre col, ce sera difficile de ne pas faire de plis.
-> 
+>
 > Repassez de votre mieux sans faire de plis. Nous repasserons à nouveau quand le col sera retourné.
 
 #### Retourner le col et repasser
@@ -222,6 +223,7 @@ Placez le devant gauche (pièce 1) sur l'envers, et placez dessus la patte de bo
 Cousez les 2 pièces ensemble en repectant la marge de couture standard.
 
 #### Repassez la couture en couchant la marge de couture côté patte de boutonnage
+
 Placez votre devant sur l'endroit, et repassez en couchant la marge de couture du côté de la patte de boutonnage.
 
 #### Replier la patte de boutonnage
@@ -239,13 +241,12 @@ Quand vous êtes satisfait, repassez la patte pliée.
 ![Fixer la patte de boutonnage](9c.png)
 
 > Ce qui suit est l'approche classique. Si vous avez choisi une patte de boutonnage intégrée (sans couture), passez cette étape.
-> 
+>
 > Plutôt que de coudre la patte de boutonnage, laissez-la pliée. Les plis seront fixés en place par les boutons lorsqu'ils seront cousus plus tard.
 
 Retourner la pièce sur l'endroit, et fixer la patte repliée en piquant dans la rainure.
 
 Pour cela, coudre exactement sur votre couture précédente. Comme vous avez plié la patte en dépassant un peu cette couture, la patte sera prise au dos, ce qui la fixera et maintiendra la marge de couture à l'intérieur.
-
 
 ### Etape 10: Préparer la patte de boutonnage (côté boutonnières)
 
@@ -264,21 +265,22 @@ Cousez les 2 pièces ensemble en repectant la marge de couture standard.
 Quand vous avez terminé, n'oubliez pas de donner un bon coup de fer. Repassez la couture en couchant la marge de couture côté patte de boutonnage.
 
 #### Repassez la couture en couchant la marge de couture côté patte de boutonnage
+
 Placez votre devant sur l'endroit, et repassez la marge de couture en la couchant du côté de la patte de boutonnage.
 
 #### Comprendre une patte de boutonnage classique (côté boutonnière)
 
 > Si vous avez choisi une patte sans couture, suivez les étapes de la patte de boutonnage côté boutons, car le principe est le même.
-> 
+>
 > Les étapes ci-dessous sont celles d'une patte de boutonnage (côté boutonnières) classique.
 
 ![Comprendre une patte de boutonnage classique (côté boutonnière)](10b.png)
 
 Votre patte a un tas de lignes, alors clarifions d'abord à quoi elles correspondent :
 
- - La ligne de boutonnières est en pointillés longs et des boutonnières y figurent. Elle indique la position des boutonnières
- - Les deux lignes de plis sont en pointillés longs et sont à égale distance à droite et à gauche de la ligne de boutonnière
- - Les deux + deux lignes de couture sont en pointillés courts, à égale distance de chaque ligne de pli
+*   La ligne de boutonnières est en pointillés longs et des boutonnières y figurent. Elle indique la position des boutonnières
+*   Les deux lignes de plis sont en pointillés longs et sont à égale distance à droite et à gauche de la ligne de boutonnière
+*   Les deux + deux lignes de couture sont en pointillés courts, à égale distance de chaque ligne de pli
 
 #### Dégarnir la marge de couture
 
@@ -321,9 +323,9 @@ Maintenant repassez-moi tout ça mon ami. Avouez qu'on en a envie.
 ### Etape 11: Assemblez les coutures d'épaule
 
 > **Faisons un burrito**
-> 
+>
 > Nous allons fermer les coutures d'épaule avec une technique communément connue sous le nom de **méthode du burrito**.
-> 
+>
 > Si vous connaissez la méthode du burrito, vous savez déjà comment faire. Si ce n'est pas le cas, lisez ce qui suit pour découvrir une méthode astucieuse pour assembler les coutures d'épaule de votre chemise tout en emprisonnant de façon invisible tous les bords bruts.
 
 #### Épingler les devants à la partie extérieure de l'empiècement dos
@@ -347,10 +349,11 @@ Maintenant, faites passer cet empiécement dos par dessus votre saucisse, et ali
 ![Faire correspondre les repères](11e.png)
 
 > Assurez-vous d'aligner la vraie ligne de couture. En raison des angles inégaux à l'encolure, le bord du tissu est souvent plus long d'un côté que de l'autre.
-> 
+>
 > Cependant, les lignes de couture sont de même longueur, alors assurez-vous de les assembler en utilisant les repères.
 
 #### Retournez-le à l'intérieur à travers l'encolure
+
 Lorsque vous avez cousu les deux coutures d'épaule, attrapez votre burrito en passant par l'encolure, et faites le sortir.
 
 #### Repassez les coutures d'épaule
@@ -375,17 +378,17 @@ Puisque vous venez de repasser ces coutures d'épaule, tout devrait être beau e
 
 ![Coudre la sous-patte de poignet](13a.png) ![Repassez la sous-patte de poignet](13b.png) ![Piquer la sous patte de poignet le long du bord en place](13c.png)
 
- - Placez votre manche sur l'endroit, et votre sous-patte de poignet dessus, également sur l'endroit.
- - Alignez le bord de votre sous-patte avec la fente de votre manche, en plaçant la sous patte sur le côté le plus court par rapport à la fente.
- - Coudre maintenant le long de la ligne de pli indiquée sur la sous-patte la plus proche du bord.
+*   Placez votre manche sur l'endroit, et votre sous-patte de poignet dessus, également sur l'endroit.
+*   Alignez le bord de votre sous-patte avec la fente de votre manche, en plaçant la sous patte sur le côté le plus court par rapport à la fente.
+*   Coudre maintenant le long de la ligne de pli indiquée sur la sous-patte la plus proche du bord.
 
 > Si vous n'aviez pas encore coupé dans votre manche la ligne sur laquelle la patte de manche doit être placée, vous devez le faire maintenant.
 
- - Repliez la sous-patte, et repasser la couture.
- - Retournez votre manche sur l'endroit, et ramenez votre sous-patte par dessus la fente de votre manche.
- - Plier deux fois sur les lignes de façon à emprisonner le bord brut.
- - Faites vos plis de façon à ce que le dernier pli arrive légèrement plus loin que la couture faite précédemment.
- - Repassez le tout, puis surpiquez la sous-patte.
+*   Repliez la sous-patte, et repasser la couture.
+*   Retournez votre manche sur l'endroit, et ramenez votre sous-patte par dessus la fente de votre manche.
+*   Plier deux fois sur les lignes de façon à emprisonner le bord brut.
+*   Faites vos plis de façon à ce que le dernier pli arrive légèrement plus loin que la couture faite précédemment.
+*   Repassez le tout, puis surpiquez la sous-patte.
 
 #### Plier et repasser la patte
 
@@ -393,13 +396,12 @@ Puisque vous venez de repasser ces coutures d'épaule, tout devrait être beau e
 
 C'est le moment Origami ! Nous allons plier la patte de manche en utilisant les lignes comme repères. Cela sera beaucoup plus facile si vous repassez entre chaque pli.
 
- - Tout d'abord, pliez les bords extérieurs de la patte vers l'intérieur.
- - Ensuite, pliez le tout en deux au milieu.
- - Puis faites deux plis à l'extrémité pour obtenir une belle forme pointue.
- - Maintenant donnez un bon coup de fer.
+*   Tout d'abord, pliez les bords extérieurs de la patte vers l'intérieur.
+*   Ensuite, pliez le tout en deux au milieu.
+*   Puis faites deux plis à l'extrémité pour obtenir une belle forme pointue.
+*   Maintenant donnez un bon coup de fer.
 
-Voici une très courte vidéo YouTube de moi pliant la patte de boutonnage:
-<YouTube id='kgd5eubxShM' />
+Voici une très courte vidéo YouTube de moi pliant la patte de boutonnage: <YouTube id='kgd5eubxShM' />
 
 #### Épingler la patte en place
 
@@ -433,9 +435,8 @@ Ensuite, coudre horizontalement jusqu'à l'autre côté de la patte pour finir.
 
 ![Alignement du tissu pour une couture rabattue à plat](14c.png)
 
-
 > **Attention avec la marge de couture supplémentaire pour la couture plat rabattue**. Une marge de couture supplémentaire est prévue sur la manche pour permettre la réalisation d'une couture plate rabattue.
-> 
+>
 > Par conséquent, ce sont les coutures et non les bords qui doivent être alignés, donc il faut positionner la manche de façon à ce qu'elle dépasse du bord de 1 cm.
 
 #### Épingler à la chemise
@@ -447,14 +448,14 @@ Ensuite, coudre horizontalement jusqu'à l'autre côté de la patte pour finir.
 Placez maintenant votre manche dessus, endroit contre endroit, en faisant correspondre le repère du haut de la manche avec la couture d'épaule.
 
 > Attention, votre manche n'est pas symétrique, alors assurez-vous d'avoir les deux repères (et la patte de boutonnage du poignet) à l'arrière. et le repère simple à l'avant.
-> 
+>
 > Notez également que les repères doubles au dos de votre manche n'ont pas de repères correspondant sur le dos. C'est parce que sur le dos, le repère est constitué par la couture assemblant l'empiècement dos et le dos.
 
 Vous devez maintenant épingler la manche à l'emmanchure. Pour ce faire, assurez-vous de :
 
- - Faire correspondre le début et la fin de la tête de manche au début et à la fin de l'emmanchure
- - Faire correspondre les repères de la tête de manche aux repères du dos et des devant
- - Distribuer l'embu entre les repères comme indiqué
+*   Faire correspondre le début et la fin de la tête de manche au début et à la fin de l'emmanchure
+*   Faire correspondre les repères de la tête de manche aux repères du dos et des devant
+*   Distribuer l'embu entre les repères comme indiqué
 
 #### Répartir l'embu de la tête de manche
 
@@ -465,6 +466,7 @@ Pour ce patron, l'embu de la tête de manche est de 0,5 cm par défaut. Si vous 
 > Si vous n'êtes pas sûr de ce qu'est un embu de tête de manche, jetez un coup d'oeil à la documentation sur les [ options de tête de manche dans les patrons ](/en/docs/patterns/simon/options#sleevecapEase).
 
 #### Coudre les manches aux emmanchures
+
 Lorsque vous avez bien épinglé votre manche dans votre emmanchure, cousez la en place. Faites attention à éviter les plis dans la partie située entre les repères au niveau de la tête de manche.
 
 > Inutile de le dire, mais je le dis quand même: répétez cette étape pour l'autre manche.
@@ -494,6 +496,7 @@ Vous pouvez épingler pour maintenir en place, ou tout simplement repasser.
 > Cela sera relativement facile sur les parties droites de la couture, mais un peu plus délicat sur les parties courbes. Prenez votre temps, et au besoin, couper l'excédent de tissu dans la marge de couture pour lui permettre de s'évaser ou se courber.
 
 #### Coudre la couture plate rabattue
+
 Maintenant, sur l'envers, cousez la marge de couture sur le bord, juste au niveau ou elle est repliée sous l'autre marge de couture.
 
 Il est important ici de piquer à une distance constante par rapport à la couture de votre manche. Si vous avez un pied rabatteur, cela pourra vous aider. Mais si ce n'est pas le cas, soyez simplement soigneux.
@@ -501,6 +504,7 @@ Il est important ici de piquer à une distance constante par rapport à la coutu
 > Il est plus important de rester à la même distance de la couture de manche que de coudre exactement au bord du pli. Idéalement, le pli est censé être aussi à distance constante de la couture, mais si ce n'est pas le cas, assurez-vous juste de coudre parallèlement à la couture de manche. Même si cela implique de s'écarter un peu du bord plié.
 
 #### Repasser la couture plate rabattue
+
 Quand vous avez terminé, repassez la couture plate rabattue sur l'endroit, pour qu'elle soit bien plate.
 
 ### Etape 16: : Fermer les côtés et les manches
@@ -534,6 +538,7 @@ Vous pouvez épingler pour maintenir en place, ou tout simplement repasser.
 > Cela sera relativement facile sur les parties droites de la couture, mais un peu plus délicat sur les parties courbes. Prenez votre temps, et au besoin, couper l'excédent de tissu dans la marge de couture pour lui permettre de s'évaser ou se courber.
 
 #### Coudre la couture plate rabattue
+
 Maintenant, sur l'envers, cousez la marge de couture sur le bord, juste au niveau ou elle est repliée sous l'autre marge de couture.
 
 Il est important ici de piquer à une distance constante par rapport à la couture de votre manche. Si vous avez un pied rabatteur, cela pourra vous aider. Mais si ce n'est pas le cas, soyez simplement soigneux.
@@ -541,6 +546,7 @@ Il est important ici de piquer à une distance constante par rapport à la coutu
 > Il est plus important de rester à la même distance de la couture de manche que de coudre exactement au bord du pli. Idéalement, le pli est censé être aussi à distance constante de la couture, mais si ce n'est pas le cas, assurez-vous juste de coudre parallèlement à la couture de manche. Même si cela implique de s'écarter un peu du bord plié.
 
 #### Repasser la couture plate rabattue
+
 Quand vous avez terminé, repassez la couture plate rabattue sur l'endroit, pour qu'elle soit bien plate.
 
 ### Assembler les poignets aux manches
@@ -592,7 +598,7 @@ A partir du milieu dos, placer la marge de couture de votre dos entre les deux f
 Veillez à respecter la marge de couture standard et - important - évitez les plis.
 
 > Bien que votre pied de col soit relativement droit, nous allons le coudre à ce qui est en fait un trou dans votre chemise.
-> 
+>
 > C'est un peu délicat, donc faites très attention aux parties les plus courbées : là où le dos rejoint les devants.
 
 #### Piquer le col en place
@@ -644,8 +650,7 @@ Lorsque vous les avez marquées, faites les boutonnières.
 Lorsque vous avez marqué la poition des boutons, cousez-les.
 
 > Plutôt que de marquer les emplacements des boutons à partir du patron, je préfère les repérer à l'aide des boutonnières une fois faites.
-> 
+>
 > De cette façon, si une boutonnière a un peu dévié, le bouton la suivra tout simplement.
 
 ![Voilà, c'est fini !](finished.gif)
-

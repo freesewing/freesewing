@@ -1,6 +1,6 @@
----
-title: Dies ist ein veraltetes Schnittmuster
----
+***
+
+## title: Dies ist ein veraltetes Schnittmuster
 
 Dieses Schnittmuster wurde mit einer älteren Version von FreeSewing erstellt und ist mit der aktuellen Version nicht kompatibel.
 

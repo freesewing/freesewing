@@ -1,7 +1,8 @@
----
+***
+
 layout: opecol
 title: Knippen
----
+--------------
 
 ![Ik, druk t-shirts aan het uitknippen](cutting.jpg)
 

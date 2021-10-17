@@ -19,9 +19,9 @@ Platzieren Sie Ihre Vorderseite mit der guten Seite nach unten und Ihre Schnitts
 Drücken Sie die Schnittstelle an der Stelle.
 
 > **Nehmen Sie sich Zeit**
-> 
+>
 > Ziehen Sie das nicht einfach aus, um es zu bekommen, sondern drücken Sie die Schnittstelle wirklich auf Ihren Stoff, damit er gut verschmolzen kann.
-> 
+>
 > Legen Sie Ihr Eisen ab und lehnen Sie es 10 Sekunden lang an, bevor Sie zum nächsten Punkt gehen, um den Vorgang zu wiederholen.
 
 ### Schritt 2: Frontseite und Futter beitreten
@@ -35,6 +35,7 @@ Platzieren Sie Ihre Front und Futter mit guten Seiten zusammen. Nähen Sie die K
 Nähen Sie sie zusammen.
 
 #### Öffne Naht drücken
+
 Drücken Sie die Naht zwischen Auflage und Verkleidung.
 
 ### Schritt 3: Alle Darts schließen
@@ -48,6 +49,7 @@ Falte deinen Rücken mit guten Seiten zusammen und nähe den Rückendart.
 > Vergiss nicht, dasselbe für das Futter zu tun
 
 #### Front-Darts schließen
+
 Falte deine Vorderseite (und die Schnittstelle, die mit ihr verbunden ist) mit guten Seiten zusammen, und nähe den Vorderdart.
 
 ### Schritt 4: Drücken Sie alle Darts
@@ -55,9 +57,11 @@ Falte deine Vorderseite (und die Schnittstelle, die mit ihr verbunden ist) mit g
 ![Alle Darts drücken](04a.png)
 
 #### Drag & Drop
+
 Nach dem Ausschnitt öffnen, drücken Sie die Front Darts öffnen.
 
 #### Dart nach hinten drücken
+
 Wenn Sie die Rückendarten öffnen, drücken Sie sie offen. Wenn nicht, drücken Sie sie zur Seite.
 
 > Vergiss nicht, dasselbe für das Futter zu tun
@@ -73,6 +77,7 @@ Legen Sie Ihre Tasche mit der guten Seite nach unten und Ihre Taschenwelt mit de
 Die geradlinige Seite der Tasche mit der Seite der Welt ausrichten, die keine Schnittstelle hat, und nähen sie zusammen mit der Standardnahtzugabe.
 
 #### Drücke Naht offen
+
 Wenn Sie fertig sind, drücken Sie diese Naht öffnen.
 
 #### Markieren, wohin deine Tasche gehen muss
@@ -92,7 +97,7 @@ Wenn du die vier Ecken dieses Rechtecks noch nicht markiert hast, solltest du da
 Platzieren Sie Ihr Frontstück mit der guten Seite. Wir werden die Welt an die untere Linie Ihrer Taschenumrissenumrissenlinie anschließen und die Verkleidung an der oberen Linie.
 
 > Wenn Sie noch nie eine Welttasche gemacht haben, kann es ein bisschen kontraintuitiv sein, die Tasche an der Außenseite des Kleidungsstücks zu befestigen. Tasche sollte auf der Innenseite, nicht wahr?
-> 
+>
 > Entspannen, die Tasche landet auf der Innenseite
 
 Sowohl Ihre Taschenwelt als auch Ihre Tasche nach oben haben eine Hilfestellung. Diese Linie muss den langen Kanten Ihrer Tasche entsprechen.
@@ -248,6 +253,7 @@ falten Sie nun das Futter ein bisschen vor dem Rand des Armlochs zurück und pin
 Benutzen Sie einen Hausschuh, um das Futter an den Stoff entlang des Armlochs zu nähen.
 
 ### Schritt 11: Beende den Saum
+
 Denken Sie daran, dass wir in Schritt 9 nicht geschlossen haben? Es ist Zeit, es zu schließen.
 
 Benutzen Sie einen Slipstitch, um das Futter mit der Hand zu nähen und den Saum zu schließen.

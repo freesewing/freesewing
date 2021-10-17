@@ -1,6 +1,6 @@
----
-title: Contorno de asiento
----
+***
+
+## title: Contorno de asiento
 
 La circunstancia de **asiento** es la medida alrededor de la parte más completa de tu bum.
 

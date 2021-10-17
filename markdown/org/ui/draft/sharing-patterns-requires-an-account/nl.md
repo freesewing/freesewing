@@ -1,6 +1,6 @@
----
-title: Het delen van je patronen vereist een FreeSewing account
----
+***
+
+## title: Het delen van je patronen vereist een FreeSewing account
 
 U kunt **uw patroon** exporteren naar PDF, SVG of andere formaten.
 

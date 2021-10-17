@@ -1,6 +1,6 @@
----
-title: Tiro
----
+***
+
+## title: Tiro
 
 El **inseam** es la medición de tu cromo hasta el piso.
 

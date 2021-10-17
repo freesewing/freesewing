@@ -1,6 +1,6 @@
----
-title: '¿Cómo puedo registrarme? Nunca he recibido el E-mail para activar mi cuenta!'
----
+***
+
+## title: '¿Cómo puedo registrarme? Nunca he recibido el E-mail para activar mi cuenta!'
 
 Si no recibiste el correo electrónico, revisa tu carpeta de spam/basura. Si tampoco puede encontrarlo allí, es muy probable que su proveedor de correo electrónico lo haya bloqueado externamente.
 
@@ -12,10 +12,10 @@ Either try using a different E-mail address, or [reach out to us](https://discor
 
 En Francia, varios proveedores de correo electrónico comparten el mismo filtro:
 
- - gratis. r
- - laposte.net
- - organge.fr
- - sfr.fr
+*   gratis. r
+*   laposte.net
+*   organge.fr
+*   sfr.fr
 
 Todos ellos son conocidos por causar problemas con los envíos.
 

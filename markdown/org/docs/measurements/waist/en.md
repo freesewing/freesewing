@@ -1,6 +1,6 @@
----
-title: Waist circumference
----
+***
+
+## title: Waist circumference
 
 The **waist circumference** measurement is the circumference of your waist below your ribcage.
 

@@ -1,7 +1,5 @@
----
-title: "@freesewing/plugin-cutonfold"
----
+***
 
- 
+## title: "@freesewing/plugin-cutonfold"
 
 <PluginPage plugin="cutonfold" />

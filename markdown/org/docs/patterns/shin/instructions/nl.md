@@ -1,5 +1,5 @@
 > ### Prentjes zijn onderweg
-> 
+>
 > Deze instructies zijn een work in progress, en we hebben de illustraties nog niet gemaakt. We voegen ze binnenkort toe.
 
 ## Stap 1: Achternaad
@@ -37,7 +37,7 @@ Markeer het midden van de lengte van je tailleband. Plooi de tailleband dubbel, 
 Installeer twee vetergaten links en rechts van deze markering. Dit voorkomt het soort gênante situatie waarbij je voor die indrukwekkende duik gaat en opeens merkt dat je zwembroek op je enkels hangt.
 
 > ### Verstevigen is een goed idee
-> 
+>
 > Aangezien badpakstof dun en glad is, is het geen slecht idee om een beetje versteviging achter de vetergaatjes toe te voegen. Een restje jeans werkt perfect.
 
 ## Stap 6: Bereid het elastiek voor
@@ -57,7 +57,7 @@ Vouw je tailleband dubbel langs de lengte met de goede kant naar buiten, en schu
 Leg de achterkant van je zwembroek gelijk met de plek waar je de tailleband hebt aangesloten, Leg de rand van de tailleband gelijk met de rand van de achterkant, en speld ze samen. Zorg ervoor dat je het vastspeld aan de slechte kant van de rug.
 
 > ### Let op je vetergaten
-> 
+>
 > Als je vetergaatjes in je tailleband gemaakt hebt, check dan of ze zeker op de buitenkant van je tailleband staan, en niet aan de binnenkant.
 
 Zoek het middenvoor van de tailleband (makkelijk als je vetergaatjes maakte, indien niet plooi je de tailleband in twee) en leg dit gelijk met de naad middenvoor. Speld dit ook op z'n plaats.
@@ -73,7 +73,7 @@ Het is ok om de eerste keer niet te dichtbij te stikken, en voor een tweede rond
 Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. Indien niet, gebruik een tweelingnaald of een zigzagsteek zodat de zoom elastisch blijft.
 
 > ### Vouw maar een keer om een teveel aan stof te vermijden
-> 
+>
 > Badpakstof rafelt niet, dus je kan dit gewoon één keer omplooien en vaststikken, en daarna de rand netjes bijknippen.
 
 ## Stap 10: Haal een koordje door de tailleband

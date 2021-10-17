@@ -1,5 +1,6 @@
-- - -
-- - -
+***
+
+***
 
 #### Vous êtes curieux de savoir comment ça marche ?
 
@@ -19,7 +20,7 @@ Notre [documentation de développeur](https://freesewing.dev) est disponible sur
 
 #### Vous souhaitez nous aider ?
 
-Génial ❤️   
+Génial ❤️\
 Notre [documentation pour contributeur](https://freesewing.dev/contributors/) est un bon point de départ. Nous avons également des guides dédiés pour [traducteurs](https://freesewing.dev/translators/) et [éditeurs](https://freesewing.dev/editors/).
 
 Dernier point, mais non des moindres, [rejoignez-nous sur Discord](https://discord.freesewing.org/) où tous les autres contributeurs se rejoignent.

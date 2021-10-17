@@ -1,6 +1,6 @@
----
-title: Oberarmweite
----
+***
+
+## title: Oberarmweite
 
 Die **Oberarmweite** (auch Bizepsumfang) ist der Umfang des breitesten Teils deines Oberarmes.
 

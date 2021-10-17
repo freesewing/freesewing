@@ -1,7 +1,8 @@
----
+***
+
 title: Wat is FreeSewing?
 order: 100
----
+----------
 
 [FreeSewing is een open source software project](https://github.com/freesewing/) met als doel om de Wikipedia van naaipatronen te worden.
 

@@ -2,8 +2,7 @@ Penelope se compose d'un avant et d'un arrière morceau. La pièce avant est tou
 
 <Tip>
 
-Lorsque vous découpez une pièce sur le pli, rappelez-vous que le pli n'a pas besoin d'être au milieu du tissu. 
+Lorsque vous découpez une pièce sur le pli, rappelez-vous que le pli n'a pas besoin d'être au milieu du tissu.
 Choisir le placement de vos pièces judicieusement peut réduire considérablement la quantité de tissu dont vous avez besoin pour votre jupe.
 
 </Tip>
-

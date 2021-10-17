@@ -1,7 +1,8 @@
----
+***
+
 title: Headings
 order: 40
----
+---------
 
 Prefix your line with a number of `#` characters to determine the header level.
 

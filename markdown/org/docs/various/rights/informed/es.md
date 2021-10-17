@@ -1,7 +1,8 @@
----
+***
+
 title: El derecho a ser informado
 order: 10
----
+---------
 
 Usted tiene el derecho de ser informado sobre la recogida y el uso de sus datos personales.
 

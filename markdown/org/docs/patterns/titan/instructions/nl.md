@@ -1,4 +1,3 @@
-
 ### Stap 1: Bevestig de buitennaad
 
 Stik de buitennaad aan (de naad die langs de zijkant van je been loopt) van het voor- en achterpand.
@@ -15,7 +14,7 @@ Je hebt nu een been. Herhaal deze stap voor de andere benen, waarbij ze er nogma
 
 Keer de ene broekspijp met de goede kant in, en de andere met de goede kant naar buiten.
 
-Grijp nu de *goede kant uit* in de *goede kant in* broekspijp, zodat ze hun _goede kanten samen_ hebben.
+Grijp nu de *goede kant uit* in de *goede kant in* broekspijp, zodat ze hun *goede kanten samen* hebben.
 
 Je kan nu de kruisnaad uitlijnen en stikken.
 
@@ -23,7 +22,7 @@ Je kan nu de kruisnaad uitlijnen en stikken.
 
 ###### Je wilt waarschijnlijk een rits
 
-plaatsen of het laatste deel van de kruisnaad laten open (zodat je hem kan spelen).  
+plaatsen of het laatste deel van de kruisnaad laten open (zodat je hem kan spelen).\
 Als je niet in staat bent Titan op de juiste plek te zetten.
 
 </Note>

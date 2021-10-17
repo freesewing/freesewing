@@ -1,6 +1,6 @@
----
-title: Aiguilles doubles
----
+***
+
+## title: Aiguilles doubles
 
 ![Une aiguille double de Schmetz](twin-needle.jpg)
 

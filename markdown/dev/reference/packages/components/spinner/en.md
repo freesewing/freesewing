@@ -1,6 +1,6 @@
----
-title: Spinner
----
+***
+
+## title: Spinner
 
 The `Spinner` component renders a loading indicator with the FreeSewing logo.
 
@@ -11,4 +11,3 @@ It is a pure SVG implementation, using SMIL for animation.
 ## Example
 
 ![Example of the spinner](example.svg)
-

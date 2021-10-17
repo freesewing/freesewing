@@ -1,7 +1,7 @@
 # Change log for: @freesewing/bee
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.0 (2021-10-17)
 
 ### Added
 

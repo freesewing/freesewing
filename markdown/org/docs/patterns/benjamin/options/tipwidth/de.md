@@ -10,5 +10,6 @@ Diese Option wird ignoriert beim rechteckigem Fliegen-Stil. Rechteckige Fliegen 
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](benjamin_tipwidth_sample.svg "Effekt dieser Option auf das Schnittmuster")
+## Effekt dieser Option auf das Muster
+
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](benjamin\_tipwidth\_sample.svg "Effekt dieser Option auf das Muster")

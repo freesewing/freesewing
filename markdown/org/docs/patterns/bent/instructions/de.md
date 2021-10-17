@@ -1,4 +1,3 @@
-
 ## Bent ist ein Grundschnitt, kein Schnittmuster
 
 Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren. Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.

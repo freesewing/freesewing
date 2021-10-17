@@ -7,7 +7,7 @@ Let ook op de binnenkant van de stof. Sweaterstoffen worden met lusjes op de ach
 <Note>
 
 Je moet geen sweaterstof gebruiken. Er zijn andere opties, van überhip neopreen (of scuba) tot totaal onsubtiel crash fluweel.
- 
+
 Of ga voor fleece als je alle pretentie opgegeven hebt.
 
 </Note>

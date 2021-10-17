@@ -1,6 +1,6 @@
----
-title: Largeur d'épaules
----
+***
+
+## title: Largeur d'épaules
 
 La **largeur d'épaules** court du bout de votre épaule d'un côté sur votre dos jusqu'au bout de votre autre épaule.
 

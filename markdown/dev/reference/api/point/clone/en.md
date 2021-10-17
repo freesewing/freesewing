@@ -1,10 +1,8 @@
----
-title: clone()
----
+***
 
-```
-Point point.clone()
-```
+## title: clone()
+
+    Point point.clone()
 
 Returns a new point with the same coordinates and attributes as this point.
 
@@ -18,8 +16,8 @@ The `Point.copy()` method will only copy the point's coordinates, whereas this
 </Note>
 
 <Example 
-  part="point_clone"
-  caption="An example of the Point.clone() method"
+part="point_clone"
+caption="An example of the Point.clone() method"
 />
 
 ```js
@@ -33,4 +31,3 @@ The `Point.copy()` method will only copy the point's coordinates, whereas this
 
   snippets.x = new Snippet("notch", points.A);
 ```
-

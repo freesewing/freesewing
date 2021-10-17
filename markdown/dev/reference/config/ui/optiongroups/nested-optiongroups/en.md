@@ -1,6 +1,6 @@
----
-title: Nested option groups
----
+***
+
+## title: Nested option groups
 
 You can create sub-groups within an option group:
 
@@ -24,4 +24,3 @@ optionGroups: {
 Only create subgroups one level deep. 
 We do not support groups in groups in groups.
 </Warning>
-

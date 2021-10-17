@@ -1,7 +1,5 @@
----
-title: "@freesewing/tamiko"
----
+***
 
- 
+## title: "@freesewing/tamiko"
 
 <PatternPage pattern="tamiko" />

@@ -1,6 +1,6 @@
----
-title: Skalierungsbox
----
+***
+
+## title: Skalierungsbox
 
 Die Skalierungsbox erlaubt dir zu überprüfen, ob dein Schnittmuster in der richtigen Skalierung gedruckt wurde:
 

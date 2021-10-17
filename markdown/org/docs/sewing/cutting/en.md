@@ -1,7 +1,8 @@
----
+***
+
 layout: onecol
 title: Cutting
----
+--------------
 
 ![Me cutting out some T-shirts](cutting.jpg)
 

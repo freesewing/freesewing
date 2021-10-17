@@ -1,4 +1,3 @@
-
 ## Bent est un bloc, pas un patron
 
 Un bloc est une forme de base sur laquelle d'autres patron sont basés. Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.

@@ -1,8 +1,6 @@
----
-title: tile
----
+***
 
- 
+## title: tile
 
 <RepoPage repo="tile" />
 

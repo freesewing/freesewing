@@ -1,6 +1,6 @@
----
-title: Schulterneigung
----
+***
+
+## title: Schulterneigung
 
 Die **Schulterneigung**ist ein Indikator dafür, wie starl sich deine Schulter nach unten neigt.
 

@@ -1,8 +1,8 @@
 To make Brian, you'll need:
 
- - 1 Front
- - 1 Back
- - 2 Sleeves
+*   1 Front
+*   1 Back
+*   2 Sleeves
 
 <Note>
 

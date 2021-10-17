@@ -1,6 +1,6 @@
----
-title: Marge de couture
----
+***
+
+## title: Marge de couture
 
 La marge de couture est indiquée par une ligne pointillée, qui a la même largeur et la même couleur que la couture à laquelle elle appartient :
 

@@ -1,6 +1,6 @@
----
-title: Scale box
----
+***
+
+## title: Scale box
 
 The scale box allows you to verify that your pattern was printed to the correct scale:
 

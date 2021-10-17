@@ -1,6 +1,6 @@
----
-title: Zomen
----
+***
+
+## title: Zomen
 
 ![De zoom aan de onderrand van een t-shirt](coverlock-hem.jpg)
 

@@ -1,19 +1,19 @@
-
 ## Paso 1: Cerrar costuras
 
 ![Cerrar el lado y las costuras del hombro](step01.png)
 
-Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Pon delantero y de vuelta sobre el otro con *buenos lados juntos*. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Paso 2: Termina la lluvia
 
 ![Terminar el hem](step02.png)
 
-Doble la lluvia hacia arriba, y coser hacia abajo. Si tienes una cubierta, úsala. Si no, usa una _aguja gemela_ o _zig-zag stitch_ para mantener la costura estirable.
+Doble la lluvia hacia arriba, y coser hacia abajo. Si tienes una cubierta, úsala. Si no, usa una *aguja gemela* o *zig-zag stitch* para mantener la costura estirable.
 
 <Note>
 
 ##### Doblar solo una vez, para evitar el grueso
+
 El brillo no se cuelga, así que puede doblar esto una vez y coser la tela, luego recortar la tela.
 
 </Note>
@@ -52,8 +52,8 @@ Esta es la única parte de hacer esta camisa que requiere un poco de práctica. 
 
 Lo primero que tenemos que hacer es decidir dónde vamos a empezar/detener nuestro vinculante. Esto es lo que sugiero:
 
-  - Para los orificios de armadura: en la costura lateral. Esto ocultará nuestra costura bajo el brazo
-  - Para la apertura del cuello: el centro de la parte trasera del cuello. Puede que quieras marcar esto con un pin
+*   Para los orificios de armadura: en la costura lateral. Esto ocultará nuestra costura bajo el brazo
+*   Para la apertura del cuello: el centro de la parte trasera del cuello. Puede que quieras marcar esto con un pin
 
 ### Colocar (el inicio de) tu vinculación
 
@@ -73,8 +73,8 @@ Vamos a coser a 1,5 cm del borde. Así que tenga cuidado, porque no se trata de 
 
 <Tip>
 
-La forma más fácil de mantener esta distancia de 1,5 cm es utilizando una gauga de costura. 
-O haga lo que hago, coloque una cinta de marcado en su máquina de coser y marque una línea en ella a 1,5 cm de su aguja. 
+La forma más fácil de mantener esta distancia de 1,5 cm es utilizando una gauga de costura.
+O haga lo que hago, coloque una cinta de marcado en su máquina de coser y marque una línea en ella a 1,5 cm de su aguja.
 Entonces todo lo que tienes que hacer es mantener alineado el borde de tu tela con esa línea.
 
 </Tip>
@@ -123,7 +123,6 @@ Ahora que los extremos de la unión están unidos, es hora de terminar los últi
 
 ![Doble unión de tejidos a la espalda](step04a.png)
 
-
 Doblar tu tela de unión alrededor de la tela de tu camisa A-hacia la espalda. Así es como lo costaremos.
 
 > Mientras que la tela está doblada en la parte delantera (ocultando el borde de la tela en el proceso) no hay necesidad de eso en la parte trasera. Nos limitaremos a recortar el borde más tarde, dado que el nudo no se cuelga. Si tuviésemos que doblar la tela también en la espalda, sólo añadiríamos granel.
@@ -145,10 +144,11 @@ Tendrás que, una vez más, estirar tu vinculación un poco mientras haces esto.
 <Note>
 
 ##### Cuidado con el alimento desigual
-mientras alimentas tu unión a través de tu máquina de coser, los perros de alimentación tirarán hacia adelante la capa inferior (parte trasera de su enlazamiento). 
 
-En un mundo perfecto, todas las capas seguirán sin problemas. 
-Pero la mayoría de las veces la capa superior (frontal de su enlace) tiende a retrasarse un poco. 
+mientras alimentas tu unión a través de tu máquina de coser, los perros de alimentación tirarán hacia adelante la capa inferior (parte trasera de su enlazamiento).
+
+En un mundo perfecto, todas las capas seguirán sin problemas.
+Pero la mayoría de las veces la capa superior (frontal de su enlace) tiende a retrasarse un poco.
 Esto hace que su unión no se pliega bien alrededor del borde del tejido, sino que haga tortillas feas.
 
 Así que ten cuidado con esto, y si ves que sucede, estira la capa inferior un poco más para compensar.
@@ -167,4 +167,4 @@ Ten cuidado de no cortar un agujero en tu camiseta. Me ha ocurrido esto en más 
 
 </Note>
 
-![Eso es así, ya has hecho :Budgets_up:](finished.gif)
+![Eso es así, ya has hecho :Budgets\_up:](finished.gif)

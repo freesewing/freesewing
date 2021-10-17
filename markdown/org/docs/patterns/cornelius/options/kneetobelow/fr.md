@@ -1,10 +1,9 @@
----
-title: Longueur de bracelet
----
+***
+
+## title: Longueur de bracelet
 
 Contrôle la longueur des bracelets.
 
-
-
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cornelius_kneetobelow_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cornelius\_kneetobelow\_sample.svg "Effet de cette option sur le motif")

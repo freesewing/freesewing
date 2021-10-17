@@ -1,8 +1,8 @@
 Para hacer Brian, necesitarás:
 
- - 1 frente
- - 1 Volver
- - 2 Mangas
+*   1 frente
+*   1 Volver
+*   2 Mangas
 
 <Note>
 

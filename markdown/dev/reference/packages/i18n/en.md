@@ -1,6 +1,6 @@
----
-title: "@freesewing/i18n"
----
+***
+
+## title: "@freesewing/i18n"
 
 <p>
   <a
@@ -53,4 +53,3 @@ These are the string translations for FreeSewing's websites and patterns.
   <li><a href='https://www.npmjs.com/package/@freesewing/i18n'>Package on NPM</a></li>
   <li><a href='https://github.com/freesewing/freesewing/tree/develop/packages/i18n'>Code on Github</a></li>
 </ul>
-

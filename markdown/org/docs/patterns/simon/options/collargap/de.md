@@ -8,5 +8,6 @@ Dies ist eigentlich eine Stilwahl, aber eine breitere Kragenspalte (zusammen mit
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_collargap_sample.svg "Effekt dieser Option auf das Schnittmuster")
+## Effekt dieser Option auf das Muster
+
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon\_collargap\_sample.svg "Effekt dieser Option auf das Muster")

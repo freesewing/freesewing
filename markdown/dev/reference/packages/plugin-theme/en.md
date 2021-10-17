@@ -1,7 +1,5 @@
----
-title: "@freesewing/plugin-theme"
----
+***
 
- 
+## title: "@freesewing/plugin-theme"
 
 <PluginPage plugin="theme" />

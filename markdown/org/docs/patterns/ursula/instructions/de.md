@@ -1,6 +1,6 @@
 ### Schritt 1: Nähe die Vorderseite an das erste Zwickel-Stück
 
-Platziere eines der Zwickelstücke auf das Vorderteil, _gute Seiten zusammen_, so dass die Schritt-Nähte zueinander ausgerichtet sind. Stecke oder hefte an der Nahtzugabe.
+Platziere eines der Zwickelstücke auf das Vorderteil, *gute Seiten zusammen*, so dass die Schritt-Nähte zueinander ausgerichtet sind. Stecke oder hefte an der Nahtzugabe.
 
 ![Nähe die Vorderseite zum ersten Gusset Stück](step01.png)
 

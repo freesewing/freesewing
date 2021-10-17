@@ -1,6 +1,6 @@
----
-title: line()
----
+***
+
+## title: line()
 
 ```js
 Path path.line(Point to)

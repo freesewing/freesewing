@@ -14,4 +14,5 @@ Techniquement, ce n'est pas une fléchette, mais je ne savais pas comment l'appe
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_centerbackdart_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid\_centerbackdart\_sample.svg "Effet de cette option sur le motif")

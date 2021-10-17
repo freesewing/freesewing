@@ -6,10 +6,10 @@ Vous pouvez trouver un bon guide pour d'autres outils sur [Fondations Révélée
 
 Liste d'échantillons de fournitures:
 
-* Environ 0,5 mètre de tissu de base ([voir Options de tissu](/docs/patterns/cathrin/fabric))
-* Environ 0,5 mètre de tissu extérieur ([voir Options de tissu](/docs/patterns/cathrin/fabric))
-* Assaisonnement
-* Grommets (size 2)
-* Environ 2 mètres de bande de biais
-* Environ 3 mètres de lacage
-* Tools: Grommet setter, awl
+*   Environ 0,5 mètre de tissu de base ([voir Options de tissu](/docs/patterns/cathrin/fabric))
+*   Environ 0,5 mètre de tissu extérieur ([voir Options de tissu](/docs/patterns/cathrin/fabric))
+*   Assaisonnement
+*   Grommets (size 2)
+*   Environ 2 mètres de bande de biais
+*   Environ 3 mètres de lacage
+*   Tools: Grommet setter, awl

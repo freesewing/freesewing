@@ -1,7 +1,8 @@
----
+***
+
 title: Fonts
 order: 10
----
+---------
 
 We use three types of fonts:
 

@@ -1,7 +1,8 @@
----
+***
+
 title: Vos personnes
 order: 350
----
+----------
 
 Une fois que vous avez un compte, vous pouvez commencer à ajouter des mesures. Mais cela soulève rapidement la question suivante : que faire si vous voulez un patron pour vous, mais aussi pour votre partenaire ?
 

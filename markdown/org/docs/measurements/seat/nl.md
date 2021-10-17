@@ -1,6 +1,6 @@
----
-title: Omtrek zitvlak
----
+***
+
+## title: Omtrek zitvlak
 
 De **omtrek zitvlak** is de maat rondom het volste deel van je kont.
 

@@ -1,6 +1,6 @@
----
-title: attr()
----
+***
+
+## title: attr()
 
 ```js
 Point point.attr(
@@ -16,8 +16,8 @@ This allows you to chain different calls together as in the example below.
 If the third parameter is set to `true` it will call `this.attributes.set()` instead, thereby overwriting the value of the attribute.
 
 <Example 
-  part="point_attr"
-  caption="An example of the Point.attr() method"
+part="point_attr"
+caption="An example of the Point.attr() method"
 />
 
 ```js
@@ -27,4 +27,3 @@ points.anchor = new Point(100, 25)
   .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
   .attr("data-text-class", "center");
 ```
-

@@ -1,6 +1,6 @@
----
-title: Pattern.render()
----
+***
+
+## title: Pattern.render()
 
 A pattern's `render()` method will render the pattern to SVG and return
 the SVG as a string. It should only ever be called after calling
@@ -10,7 +10,7 @@ the SVG as a string. It should only ever be called after calling
 
 ```js
 string pattern.render()
-``` 
+```
 
 # Pattern.render() example
 
@@ -26,5 +26,4 @@ const pattern = new Aaron({
 })
 
 const svg = pattern.draft().render()
-``` 
-
+```

@@ -1,8 +1,6 @@
-
- - Couper **2 fronts** avec _bons côtés ensemble_
- - Coupez **1 dos** _sur le pli_
- - Couper **2 manches** _endroit contre endroit_
- - Cut **2 gussets** _on the fold_ with _good sides together_
- - Coupez **4 côtés de capot** 2 x 2 avec _bons côtés ensemble_ pour le capot extérieur et le capot intérieur
- - Coupez **2 centres de capuche** avec _bons côtés ensemble_
-
+*   Couper **2 fronts** avec *bons côtés ensemble*
+*   Coupez **1 dos** *sur le pli*
+*   Couper **2 manches** *endroit contre endroit*
+*   Cut **2 gussets** *on the fold* with *good sides together*
+*   Coupez **4 côtés de capot** 2 x 2 avec *bons côtés ensemble* pour le capot extérieur et le capot intérieur
+*   Coupez **2 centres de capuche** avec *bons côtés ensemble*

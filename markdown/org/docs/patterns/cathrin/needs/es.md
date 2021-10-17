@@ -6,10 +6,10 @@ Puedes encontrar una buena guía de otras herramientas en [Fundaciones Reveladas
 
 Lista de suministros de muestra:
 
-* Alrededor de 0.5 metros de tela central ([ver opciones de tela](/docs/patterns/cathrin/fabric))
-* Alrededor de 0.5 metros de tela exterior ([ver opciones de tela](/docs/patterns/cathrin/fabric))
-* Bonito
-* Grommets (size 2)
-* Aproximadamente 2 metros de sesgo
-* A unos 3 metros de lacado
-* Tools: Grommet setter, awl
+*   Alrededor de 0.5 metros de tela central ([ver opciones de tela](/docs/patterns/cathrin/fabric))
+*   Alrededor de 0.5 metros de tela exterior ([ver opciones de tela](/docs/patterns/cathrin/fabric))
+*   Bonito
+*   Grommets (size 2)
+*   Aproximadamente 2 metros de sesgo
+*   A unos 3 metros de lacado
+*   Tools: Grommet setter, awl

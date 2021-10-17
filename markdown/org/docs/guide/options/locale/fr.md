@@ -1,6 +1,6 @@
----
-title: Langue
----
+***
+
+## title: Langue
 
 Détermine la langue utilisée sur votre patron.
 

@@ -1,10 +1,9 @@
-
 ## Stap 1: Sluit de schoudernaden
 
 ![Sluit de schoudernaden](step01.svg)
 
-- Leg het voor- en achterpand op elkaar met [goede kanten op elkaar](/docs/sewing/good-sides-together). Leg de schoudernaden gelijk.
-- Lock de schoudernaden of stik ze met een smalle (~2 mm) zigzagsteek aan de standaard naadwaarde.
+*   Leg het voor- en achterpand op elkaar met [goede kanten op elkaar](/docs/sewing/good-sides-together). Leg de schoudernaden gelijk.
+*   Lock de schoudernaden of stik ze met een smalle (~2 mm) zigzagsteek aan de standaard naadwaarde.
 
 <Note>
 Optioneel: In een draaiknop kun je ervoor kiezen om de schoudernaden te versterken door duidelijk elastiek langs de naad aan de binnenkant te stikken. Op een T-shirt ondersteunen de schoudernaden het grootste gewicht van het kledingstuk. Versterking is niet vereist, maar het kan de schoudernaden niet na verloop van tijd uitrekken.
@@ -14,13 +13,13 @@ Optioneel: In een draaiknop kun je ervoor kiezen om de schoudernaden te versterk
 
 ![Zet de mouwen in](step02.svg)
 
-- Leg je aan elkaar bevestigde voor- en achterpand neer met de goede kant naar boven.
-- Identificeer de voor- en achterkanten van elke mouw. (Dit is hoe je de linker mouw van rechts scheidt.) Op het patroondeel van je papier staat de voorkant van de mouw aan de linkerkant.
-- Leg een mouw bovenop de voor- en achterkant, met de goede kant naar beneden.
-- Leg de bovenkant van de mouwkop gelijk met de schoudernaad. Zorg dat de voor- en achterkant van de mouw gelijk staan met de voor- en achterpanden van je shirt.
-- Speld de mouw op z'n plaats langs het hele armsgat. Er is een beetje extra stof in de mouwkop, wat betekent dat de mouwkop iets langer is dan het armsgat. Verbeter het bovenste deel van de mouwkop tijdens het spelden.
-- Stik/lock de gespelde mouw op z'n plaats.
-- Herhaal voor de andere mouw.
+*   Leg je aan elkaar bevestigde voor- en achterpand neer met de goede kant naar boven.
+*   Identificeer de voor- en achterkanten van elke mouw. (Dit is hoe je de linker mouw van rechts scheidt.) Op het patroondeel van je papier staat de voorkant van de mouw aan de linkerkant.
+*   Leg een mouw bovenop de voor- en achterkant, met de goede kant naar beneden.
+*   Leg de bovenkant van de mouwkop gelijk met de schoudernaad. Zorg dat de voor- en achterkant van de mouw gelijk staan met de voor- en achterpanden van je shirt.
+*   Speld de mouw op z'n plaats langs het hele armsgat. Er is een beetje extra stof in de mouwkop, wat betekent dat de mouwkop iets langer is dan het armsgat. Verbeter het bovenste deel van de mouwkop tijdens het spelden.
+*   Stik/lock de gespelde mouw op z'n plaats.
+*   Herhaal voor de andere mouw.
 
 ## Stap 3: Stik de bies aan de halsopening.
 

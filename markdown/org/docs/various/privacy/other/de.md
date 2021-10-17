@@ -1,13 +1,12 @@
----
-title: Andere Themen im Zusammenhang mit Datenschutz
----
+***
+
+## title: Andere Themen im Zusammenhang mit Datenschutz
 
 ##### Vollständige Offenlegung
 
 Wenn wir erfahren, dass unsere Sicherheitssysteme umgangen wurden, werden wir dich und die Behörden informieren.
 
 Wenn du glaubst, dass deine persönlichen Daten kompromittiert wurden, kontaktiere bitte joost@joost.at.
-
 
 ##### Dienstanbieter
 
@@ -26,4 +25,3 @@ Bisher haben wir von der Strafverfolgung keine Anfrage erhalten, Informationen �
 ##### Nutzung von Minderjährigen unter 16 Jahren
 
 Aus rechtlichen Gründen musst du mindestens 16 Jahre alt sein, um Freesewing zu benutzen.
-

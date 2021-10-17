@@ -1,6 +1,6 @@
----
-title: Distancia entre hombros
----
+***
+
+## title: Distancia entre hombros
 
 La medición del hombro **al hombro** corre desde la punta del hombro en un lado a través de la espalda hasta la punta del otro hombro.
 

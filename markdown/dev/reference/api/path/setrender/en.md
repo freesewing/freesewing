@@ -1,6 +1,6 @@
----
-title: setRender()
----
+***
+
+## title: setRender()
 
 ```js
 Path path.setRender(bool render)

@@ -1,8 +1,9 @@
----
+***
+
 title: Pattern configuration file
 for: developers
 about: Reference documentation for the pattern configuration file
----
+-----------------------------------------------------------------
 
 ```js
 import { version } from '../package.json'
@@ -25,4 +26,3 @@ This is about the pattern configuration file, used at build-time.
 For run-time configuration, see [Pattern settings](/reference/settings/).
 
 </Note>
-

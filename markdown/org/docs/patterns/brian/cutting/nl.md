@@ -1,8 +1,8 @@
 Om Brian te maken, moet je:
 
- - 1 voorzijde
- - 1 Achterzijde
- - 2 mouwen
+*   1 voorzijde
+*   1 Achterzijde
+*   2 mouwen
 
 <Note>
 

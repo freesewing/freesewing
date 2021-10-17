@@ -1,6 +1,6 @@
----
-title: Design/Pattern
----
+***
+
+## title: Design/Pattern
 
 The terms **pattern** and **design** somewhat overlap and their exact meaning
 depends on the context.

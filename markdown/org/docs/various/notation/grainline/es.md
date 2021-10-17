@@ -1,8 +1,8 @@
----
-title: Indicador lineal y cortado
----
+***
 
-Las grietas, una línea que indica el grano de tela ** — se ven así:
+## title: Indicador lineal y cortado
+
+Las grietas, una línea que indica el grano de tela \*\* — se ven así:
 
 <Legend part="grainline" caption="A grainline indicator" >
 

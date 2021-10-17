@@ -1,5 +1,5 @@
----
-title: Accounts & privacy
----
+***
+
+## title: Accounts & privacy
 
 <ReadMore list />

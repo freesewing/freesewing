@@ -1,9 +1,12 @@
-unreleased:
+2.19.0:
+  date: 2021-10-17
 
   Added:
     bee:
       - Bee is a bikini
       - Initial release
+    components:
+      - Added Bee linedrawing
     core:
       - Added support for snapped percentage options
         See https://github.com/freesewing/freesewing/discussions/1331
@@ -51,6 +54,11 @@ unreleased:
     paco:
       - Changed the `waistbandWidth` option type from `mm` to `pct`
       - Changed the `ankleElastic` option type from `mm` to `pct`
+    pattern-info:
+      - Added Bee pattern
+      - Added Lunetius pattern
+      - Added Tiberius pattern
+      - Added Walburga pattern
     penelope:
       - Changed the `hem` option type from `mm` to `pct`
       - Changed the `waistBandWidth` option type from `mm` to `pct`
@@ -80,6 +88,8 @@ unreleased:
     charlie:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1313](https://github.com/freesewing/freesewing/issues/1313)
+    components:
+      - Added missing linedrawing for Yuri
     i18n:
       - Fixed bug in resolving of shared pattern options
       - Removed optional chaining which broke node v12 support

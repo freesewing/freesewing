@@ -7,5 +7,3 @@ Diese Stoffe sind typischerweise Wolle, aber man kann auch etwas kreativer sein 
 Sie brauchen jedoch ein bisschen Gewicht. Denim ist in Ordnung, einige leichte Baumwolle nicht.
 
 </Note>
-
-

@@ -1,6 +1,6 @@
----
-title: Coverlock
----
+***
+
+## title: Coverlock
 
 ![Een zoom van een t-shirt, genaaid met een coverlock](coverlock-hem.jpg)
 

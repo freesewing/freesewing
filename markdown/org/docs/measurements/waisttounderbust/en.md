@@ -1,6 +1,6 @@
----
-title: Waist to underbust
----
+***
+
+## title: Waist to underbust
 
 The **waist to underbust** is the measurement from your waist up towards your underbust link (where your bra band sits).
 
