@@ -32,10 +32,7 @@ export default {
       'bandLength',
     ],
     advanced: [
-      { bellaFit: [ 'chestEase', 'waistEase', 'bustSpanEase', 'bellaGuide' ] },
-      { bellaDarts: ['backDartHeight'] },
-      { bellaArmhole: ['armholeDepth', 'frontArmholePitchDepth'] },
-      { bellaAdvanced: ['frontShoulderWidth', 'highBustWidth'] },
+      { bella: [ 'chestEase', 'waistEase', 'bustSpanEase', 'bellaGuide' ] },
     ],
   },
   measurements: [
