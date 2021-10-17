@@ -1,6 +1,6 @@
-***
-
-## title: Why do you even publish womenswear blocks? They are \[insert strong opinion here].
+---
+title: Mais pourquoi donc publier des patrons de base de vêtements féminins ? They are [insert strong opinion here].
+---
 
 This question comes up every now and then. The wording varies, but the sentiment can be summarized as *why even publish this garbage, it doesn't work at all*.
 
