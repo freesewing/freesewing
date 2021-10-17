@@ -4,11 +4,11 @@ title: Mais pourquoi donc publier des patrons de base de vêtements féminins ? 
 
 Cette question revient de temps à autres. L'expression varie, mais on peut résumer le fond de la pensée comme *mais pourquoi publier ce ramassis, ça ne marche pas du tout*.
 
-Let me start by saying that you are not wrong. Both [Breanna](/designs/breanna/) and [Bella](/designs/bella/) have serious shortcomings.
+Commençons par dire que ce n'est pas faux. À la fois [Breanna](/designs/breanna/) et [Bella](/designs/bella/) présentent de sérieuses lacunes.
 
-I myself ([joost](/makers/joostdecock/)) am painfully aware of them, and I have toyed with the idea of retracting these patterns altogether.
+Moi-même([joost](/makers/joostdecock/)) en suis douloureusement conscient, et j'ai flirté avec l'idée de totalement retirer ces patrons.
 
-But there's a subset of people who get good results with them. I've seen several good looking makes based on Bella, and Breanna seems to be popular with people making doll clothes for some reason.
+Mais il y a une minorité de personnes qui en obtiennent de bons résultats. J'ai vu plusieurs belles réalisations basées sur Bella, et Breanna semble être populaire auprès des gens qui fabriquent des vêtements de poupées pour une raison quelconque.
 
 What I'm saying is, we're not removing them because they work in some cases. Not in all cases though, which can be frustrating.
 
