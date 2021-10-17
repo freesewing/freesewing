@@ -102,6 +102,13 @@
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1320](https://github.com/freesewing/freesewing/issues/1316)
 
+### plugin-versionfree-svg
+
+#### Added
+
+ - This is a plugin to strip (FreeSewing) versdion info out of the SVG to allow you to diff your SVG output between FreeSewing versions
+ - Initial release
+
 ### simon
 
 #### Changed
