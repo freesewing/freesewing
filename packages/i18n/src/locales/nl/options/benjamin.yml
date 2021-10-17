@@ -20,4 +20,6 @@ bowStyle:
 endStyle:
   title: Puntvorm
   description: Stijl van de puntjes van de strik
-
+collarEase:
+  title: Collar ease
+  description: The amount of ease at your neck
