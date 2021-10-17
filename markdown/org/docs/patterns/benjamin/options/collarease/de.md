@@ -7,5 +7,5 @@ Die Verwendung des Halsumfanges ist ein wichtiger Schritt, um eine gut sitzende 
 > Diese Option ist dafür da, um eine präzise passende Fliege zu erstellen. Wenn du ein Einstellband verwendest, wird diese Option nicht angewandt.
 
 
-## Effekt dieser Option auf das Muster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](benjamin_collarease_sample.svg "Effekt dieser Option auf das Muster")
+## Effekt dieser Option auf das Schnittmuster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](benjamin_collarease_sample.svg "Effekt dieser Option auf das Schnittmuster")
