@@ -2,12 +2,12 @@
 title: Découpe de Bee
 ---
 
-Il y a trois variantes de ce patron. **One Colour**, which is where the bikini top is made out of one colour. **Two Colours**, where the bikini top is made reversible by using two colours, and **Cross Back Tie Variant**, where the neck ties tie in the back replacing the band tie.
+Il y a trois variantes de ce patron. **Une couleur**, qui est celle où le haut de bikini est fait d'une couleur. **Deux couleurs**, celle où le haut de bikini est rendu réversible en utilisant deux couleurs, et **Cross Back Tie Variant**, celle où les attaches du cou se fixent dans le dos en remplaçant l'attache bandeau.
 
 ## Materials
-### One Colour (Non-Reversible)
+### Une couleur (Non-Réversible)
 
-**Main fabric**
+**Tissu principal**
    - Cut **4 cup** parts.
    - Cut **2 neck tie** parts.
    - Cut **1 band tie** part.
