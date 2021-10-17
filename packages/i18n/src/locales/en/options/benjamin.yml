@@ -27,3 +27,6 @@ endStyle:
   title: End style
   description: Style of the bow ends
 
+collarEase:
+  title: Collar ease
+  description: The amount of ease at your neck
