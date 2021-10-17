@@ -6,7 +6,7 @@ export default {
   name: 'bee',
   version,
   design: 'PrudenceRabbit',
-  code: ['Joost De Cock', 'bobgeorgethe3rd'],
+  code: ['bobgeorgethe3rd'],
   department: 'tops',
   type: 'pattern',
   difficulty: 3,
