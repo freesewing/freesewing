@@ -11,4 +11,4 @@ Finish all raw edges with a method of your choice. Clip into cornerrs as needed.
 ## Step 2 -- Done!
 
 And you're already done! Since Lunetius is cut out of one piece, no seams have to be sewn. 
-Now take a *fibula* (a brooch, pin or clasp) to fasten your cloak over your right shoulder (that is how the ROmans did it, you can of course also take the left shoulder, or the middle, or whatever you prefer) and enjoy looking dramatic.
+Now take a *fibula* (a brooch, pin or clasp) to fasten your cloak over your right shoulder (that is how the Romans did it, you can of course also take the left shoulder, or the middle, or whatever you prefer) and enjoy looking dramatic.
