@@ -1,6 +1,6 @@
 <Tip>
 
-##### Use the power of the *paperless* option - do not print this pattern  
+##### Use the power of the *paperless* option - do *not* print this pattern  
   
 Tiberius is just a big rectangle, so printing the pattern out is a bit of a waste. Save a tree, toggle the [paperless](/docs/guide/options/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
 
