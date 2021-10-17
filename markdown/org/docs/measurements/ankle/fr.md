@@ -1,6 +1,6 @@
-***
-
-## title: Tour de cheville
+---
+title: Tour de cheville
+---
 
 La mesure de **tour de cheville** se fait autour de votre cheville.
 

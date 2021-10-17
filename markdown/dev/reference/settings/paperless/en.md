@@ -1,6 +1,6 @@
-***
-
-## title: paperless
+--- 
+title: paperless
+---
 
 Set this to `true` to draft a paperless pattern. The default is `false`.
 
@@ -11,3 +11,4 @@ let pattern = new brian({
   paperless: true
 })
 ```
+

@@ -1,7 +1,6 @@
-***
-
-## title: Trimming
-
+---
+title: Trimming
+---
 ![Seam allowance being trimmed](trimming.jpg)
 
 Trimming, or to trim, is cutting away excessive [seam allowance](/docs/sewing/seam-allowance).

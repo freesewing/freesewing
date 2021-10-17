@@ -1,6 +1,6 @@
-***
-
-## title: Taille tot zitvlak
+---
+title: Taille tot zitvlak
+---
 
 De afmeting **taille tot zitvlak** is de afstand tussen je taille en het breedste deel van je kont, gemeten aan de zijkant van je lichaam.
 

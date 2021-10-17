@@ -1,6 +1,6 @@
-***
-
-## title: Este es un patrón heredado
+---
+title: Este es un patrón heredado
+---
 
 This pattern was made with an older version of FreeSewing and is not compatible with the current version.
 

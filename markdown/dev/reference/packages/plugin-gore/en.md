@@ -1,5 +1,7 @@
-***
+---
+title: "@freesewing/plugin-gore"
+---
 
-## title: "@freesewing/plugin-gore"
+ 
 
 <PluginPage plugin="gore" />

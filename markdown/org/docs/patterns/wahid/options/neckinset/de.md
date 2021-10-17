@@ -11,5 +11,4 @@ Die Schulternaht einer Weste ist typischerweise enger als Ihr Hemd. Diese Option
 </Note>
 
 ## Effekt dieser Option auf das Muster
-
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid\_neckinset\_sample.svg "Effekt dieser Option auf das Muster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_neckinset_sample.svg "Effekt dieser Option auf das Muster")

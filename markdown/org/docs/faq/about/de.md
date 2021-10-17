@@ -1,5 +1,5 @@
-***
-
-## title: About FreeSewing
+---
+title: About FreeSewing
+---
 
 <ReadMore list />

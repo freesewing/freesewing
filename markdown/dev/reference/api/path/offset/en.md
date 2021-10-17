@@ -1,7 +1,7 @@
-***
-
-## title: offset()
-
+---
+title: offset()
+---
+ 
 ```js
 Path path.offset(float distance)
 ```

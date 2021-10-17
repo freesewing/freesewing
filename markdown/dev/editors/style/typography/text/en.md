@@ -1,8 +1,7 @@
-***
-
+---
 title: Text and paragraphs
 order: 20
----------
+---
 
 ##### Text
 
@@ -13,7 +12,7 @@ sized, preventing lines from getting too long, having a nice vertical cadence, a
 
 ##### Paragraphs
 
-This is what a paragraph looks like.
+This is what a paragraph looks like. 
 We use `1.5` for line height in paragraphs because vertical space is abundantly
 available, so in general we are rather generous with vertical spacing.
 

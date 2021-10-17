@@ -1,6 +1,6 @@
-***
-
-## title: snap-stud
+---
+title: snap-stud
+---
 
 The `snap-stud` snippet is used to mark the stud part of a snap button.
 
@@ -11,3 +11,4 @@ snippets.demo = new Snippet('snap-stud', points.anchor)
 ```
 
 <Example part="snippets_snapstud" caption="An example of the snap-stud snippet" />
+

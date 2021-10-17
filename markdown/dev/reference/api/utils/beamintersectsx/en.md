@@ -1,6 +1,6 @@
-***
-
-## title: beamIntersectsX()
+---
+title: beamIntersectsX()
+---
 
 ```js
 Point | false utils.beamIntersectsX(Point A, Point B, float X)
@@ -34,3 +34,4 @@ for the intersection, or `false` there is no intersection.
     .line(new Point(40, 35))
     .attr("class", "note dashed");
 ```
+

@@ -1,6 +1,6 @@
-***
-
-## title: Inhalte
+---
+title: Inhalte
+---
 
 Mit dieser Einstellung kannst du manuell auswählen, welche Teile du in deinem Schnittmuster einbeziehen möchtest.
 

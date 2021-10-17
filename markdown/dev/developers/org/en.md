@@ -1,5 +1,5 @@
-***
-
-## title: The freesewing.org website
+---
+title: The freesewing.org website
+---
 
 <Fixme>Under construction</Fixme>

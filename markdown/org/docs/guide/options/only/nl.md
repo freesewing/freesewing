@@ -1,6 +1,6 @@
-***
-
-## title: Inhoud
+---
+title: Inhoud
+---
 
 Deze instelling staat je toe manueel de patroondelen te kiezen die je inbegrepen wil in je patroon.
 

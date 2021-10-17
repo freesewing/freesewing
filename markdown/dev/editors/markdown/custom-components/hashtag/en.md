@@ -1,8 +1,7 @@
-***
-
+---
 title: Hashtag
 order: 60
----------
+---
 
 Typically used on our community pages:
 
@@ -10,6 +9,8 @@ Typically used on our community pages:
 <Hashtag tag='WeAreFreeSewing' />
 ```
 
-Adds our *community* font and color:
+Adds our _community_ font and color:
 
 <Hashtag tag='WeAreFreeSewing' />
+
+

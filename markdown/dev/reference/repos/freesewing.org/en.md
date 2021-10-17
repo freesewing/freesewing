@@ -1,6 +1,8 @@
-***
+---
+title: freesewing.org
+---
 
-## title: freesewing.org
+ 
 
 <RepoPage repo="freesewing.org" />
 
@@ -33,6 +35,7 @@ If after cloning the `markdown` directory is empty,
 please check [these alternatives](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules).
 
 </Note>
+
 
 <Note>
 
@@ -73,8 +76,8 @@ The website allows signing up/logging in via your Github or Google account.
 
 We use Oauth for this, which has a few dependencies:
 
-*   You need to create/configure an app with Github and Google for Oauth
-*   You need to configure the various environment variables (see below)
+ - You need to create/configure an app with Github and Google for Oauth
+ - You need to configure the various environment variables (see below)
 
 If you don't setup/configure Oauth, everything will work, except Oath (duh).
 
@@ -104,3 +107,5 @@ The `.env.example` file contains the required variables to get the site up and r
 | `GATSBY_ALGOLIA_API_ID` | The Algolia client ID for search (under construction) | `MA0Y5A2PF0` |
 | `GATSBY_ALGOLIA_SEARCH_KEY` | The Algolia *read only* key for search (under construction) | `9209470ad243eee797156aa2874d886c` |
 | `GATSBY_ALGOLIA_UPDATE_KEY` | The *write* key to update the Algolia search index at build time (under construction) | `ba780a3afe2118062ee08ea4fb54c097` |
+
+

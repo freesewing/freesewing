@@ -1,7 +1,8 @@
-Controls the position of the grainline.
+
+Controls the position of the grainline. 
 
 You can use this to shift the grainline inward or outward if that works better for your body.
 
-## Effect of this option on the pattern
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco\_grainlineposition\_sample.svg "Effect of this option on the pattern")
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_grainlineposition_sample.svg "Effect of this option on the pattern")

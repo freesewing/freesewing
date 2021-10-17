@@ -1,6 +1,6 @@
-***
-
-## title: Pattern.draft()
+---
+title: Pattern.draft()
+---
 
 A pattern's `draft()` method will draft all the different pattern parts
 making sure to do so in the right order, handle dependencies, resolve
@@ -13,7 +13,7 @@ that are required for the pattern to be drafted.
 
 ```js
 Pattern pattern.draft()
-```
+``` 
 
 ## Pattern.draft() example
 
@@ -29,4 +29,5 @@ const pattern = new Aaron({
 })
 
 const svg = pattern.draft().render()
-```
+``` 
+

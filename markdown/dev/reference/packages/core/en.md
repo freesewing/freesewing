@@ -1,6 +1,6 @@
-***
-
-## title: "@freesewing/core"
+---
+title: "@freesewing/core"
+---
 
 <p>
   <a

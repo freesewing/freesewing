@@ -1,8 +1,8 @@
 Um Brian zu machen, brauchst du:
 
-*   1 Front
-*   1 Zurück
-*   2 Ärmel
+ - 1 Front
+ - 1 Zurück
+ - 2 Ärmel
 
 <Note>
 

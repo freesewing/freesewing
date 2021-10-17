@@ -1,8 +1,8 @@
-***
+---
+title: Droit-fil et indications de coupe au-pli
+---
 
-## title: Droit-fil et indications de coupe au-pli
-
-Droit-fil— une ligne qui indique le droit-fil du tissu \*\* — ressemble à ceci :
+Droit-fil— une ligne qui indique le droit-fil du tissu ** — ressemble à ceci :
 
 <Legend part="grainline" caption="A grainline indicator" >
 

@@ -1,6 +1,6 @@
-***
-
-## title: Hoge buste
+---
+title: Hoge buste
+---
 
 De **hoge buste** afmeting is je borstomtrek net onder je armen, boven het breedste deel van je borst.
 

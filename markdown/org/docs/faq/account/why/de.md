@@ -1,6 +1,6 @@
-***
-
-## title: Why do I need to create an account to download a made-to-measure pattern?
+---
+title: Why do I need to create an account to download a made-to-measure pattern?
+---
 
 For practical reasons. To generate made-to-measure sewing patterns, we need your measurements.
 
@@ -15,8 +15,9 @@ Without a way to store your measurements, generating made-to-measure patterns wo
 This question often hints at an underlying distrust towards
 creating an account. As such, the following questions and answers may also be relevant:
 
-*   [What are you doing with my personal data?](#what-are-you-doing-with-my-personal-data)
-*   [Who pays for all of this?](#who-pays-for-all-of-this)
-*   [What's your end game?](#whats-your-end-game)
+ - [What are you doing with my personal data?](#what-are-you-doing-with-my-personal-data)
+ - [Who pays for all of this?](#who-pays-for-all-of-this)
+ - [What's your end game?](#whats-your-end-game)
 
 </Note>
+

@@ -1,6 +1,6 @@
-***
-
-## title: '¿Puedo usar patrones de coser con fines comerciales?'
+---
+title: '¿Puedo usar patrones de coser con fines comerciales?'
+---
 
 Sí puede. Open Source es un modelo de desarrollo, no un modelo de negocios.
 

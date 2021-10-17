@@ -1,6 +1,6 @@
-***
-
-## title: beamsIntersect()
+---
+title: beamsIntersect()
+---
 
 ```js
 Point | false utils.beamsIntersect(

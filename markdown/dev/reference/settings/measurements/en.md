@@ -1,6 +1,6 @@
-***
-
-## title: measurements
+--- 
+title: measurements
+---
 
 The measurements to draft for. The pattern configuration lists all required measurements.
 
@@ -14,3 +14,4 @@ let pattern = new brian({
   }
 })
 ```
+

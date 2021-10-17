@@ -1,6 +1,6 @@
-***
-
-## title: Devops
+---
+title: Devops
+---
 
 We have use a lot of automation from Github actions to automated deployment on Netlify.
 We also have some Ansible playbooks to run maintenance tasks.

@@ -1,6 +1,6 @@
-***
-
-## title: Oberweite vorne
+---
+title: Oberweite vorne
+---
 
 Die **Oberweite vorne** ist der vordere Teil deines Brustumfangs.
 

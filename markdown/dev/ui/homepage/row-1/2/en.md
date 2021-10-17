@@ -1,6 +1,5 @@
-***
-
-***
+---
+---
 
 ## FreeSewing tutorial
 

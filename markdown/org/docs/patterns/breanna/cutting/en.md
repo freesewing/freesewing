@@ -1,8 +1,8 @@
 To make Breanna, you'll need:
 
-*   1 Front
-*   2 Back
-*   2 Sleeves
+ - 1 Front
+ - 2 Back
+ - 2 Sleeves
 
 <Note>
 

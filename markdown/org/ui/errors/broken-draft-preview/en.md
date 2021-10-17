@@ -1,6 +1,6 @@
-***
-
-## title: This is a legacy pattern
+---
+title: This is a legacy pattern
+---
 
 This pattern was made with an older version of FreeSewing
 and is not compatible with the current version.

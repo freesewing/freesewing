@@ -2,6 +2,6 @@
 
 Willst du die Tasche vorne (Beutel) oder nicht?
 
-## Effekt dieser Option auf das Muster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey\_pocket\_sample.svg "Effekt dieser Option auf das Muster")
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_pocket_sample.svg "Effekt dieser Option auf das Muster")

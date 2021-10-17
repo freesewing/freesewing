@@ -1,6 +1,5 @@
-***
-
-***
+- - -
+- - -
 
 ### Pour les développeurs
 

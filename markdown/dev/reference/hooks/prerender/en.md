@@ -1,6 +1,6 @@
-***
-
-## title: preRender
+---
+title: preRender
+---
 
 The `preRender` hook is triggered just before your pattern is rendered to SVG.
 

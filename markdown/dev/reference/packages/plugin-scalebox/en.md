@@ -1,5 +1,7 @@
-***
+---
+title: "@freesewing/plugin-scalebox"
+---
 
-## title: "@freesewing/plugin-scalebox"
+ 
 
 <PluginPage plugin="scalebox" />

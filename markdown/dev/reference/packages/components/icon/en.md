@@ -1,8 +1,8 @@
-***
+---
+title: Icon
+---
 
-## title: Icon
-
-The `Icon` component renders a couple of icons that we use, but
+The `Icon` component renders a couple of icons that we use, but 
 are not available in the standard [material icon set](https://material.io/resources/icons/).
 
 <Fixme> Add more documentation for this component </Fixme>
@@ -20,3 +20,4 @@ are not available in the standard [material icon set](https://material.io/resour
 | `note`       |  <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="none" fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" ></path></svg> |
 | `tip`        |  <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="none" fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" ></path></svg> |
 | `warning`    |  <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path stroke="none" fill="currentColor" d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" ></path></svg> |
+

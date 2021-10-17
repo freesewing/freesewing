@@ -1,6 +1,6 @@
-***
-
-## title: Bust point to underbust
+---
+title: Bust point to underbust
+---
 
 The **bust point to underbust** measurement is the distance from your bust point/nipple to your underbust.
 

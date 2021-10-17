@@ -1,6 +1,6 @@
-***
-
-## title: Waarom heb ik een account nodig om een patroon op maat te downloaden?
+---
+title: Waarom heb ik een account nodig om een patroon op maat te downloaden?
+---
 
 Om praktische redenen. Om naaipatronen op maat te maken, hebben we je maten nodig.
 
@@ -14,7 +14,7 @@ Als we geen manier hadden om je maten op te slaan, zou het hopeloos onpraktisch 
 
 Deze vraag wijst vaak op een onderliggend wantrouwen tegenover het aanmaken van een account. Daarom kunnen de volgende links ook relevant zijn:
 
-*   Lees \[onze privacymededeling]\[1]
-*   Leer meer over \[uw rechten]\[2]
+ - Lees [onze privacymededeling][1]
+ - Leer meer over [uw rechten][2]
 
 </Note>

@@ -1,6 +1,6 @@
-***
-
-## title: Example
+---
+title: Example
+---
 
 The `Example` component renders the [examples](/reference/packages/examples/) pattern.
 It is used throughout our developer documentation.
@@ -10,3 +10,4 @@ It is used throughout our developer documentation.
 ## Example
 
 <Example part="path_intersects" caption="The Example component used to illustrate the Path.intersects() method" />
+

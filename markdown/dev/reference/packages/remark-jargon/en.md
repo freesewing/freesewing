@@ -1,6 +1,6 @@
-***
-
-## title: "remark-jargon"
+---
+title: "remark-jargon"
+---
 
 <p>
   <a
@@ -45,7 +45,7 @@
   </a>
 </p>
 
-This is a [Remark](https://github.com/remarkjs/remark) plugin for jargon terms.
+This is a [Remark](https://github.com/remarkjs/remark) plugin for jargon terms.  
 
 <ul class='links'>
   <li><a href='https://www.npmjs.com/package/remark-jargon'>Package on NPM</a></li>
@@ -57,3 +57,4 @@ This is a [Remark](https://github.com/remarkjs/remark) plugin for jargon terms.
 The [README](https://github.com/freesewing/freesewing/blob/develop/packages/remark-jargon/README.md) contains detailed information on the use and purpose of this package.
 
 </Note>
+

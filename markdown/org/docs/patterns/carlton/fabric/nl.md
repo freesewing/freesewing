@@ -1,3 +1,4 @@
-***
+---
+title: Stofkeuze
+---
 
-## title: Stofkeuze

@@ -1,6 +1,6 @@
-***
-
-## title: curve()
+---
+title: curve()
+---
 
 ```js
 Path path.curve(Point cp1, Point cp2, Point to)

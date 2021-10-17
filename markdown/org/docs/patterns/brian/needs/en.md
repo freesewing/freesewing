@@ -8,3 +8,4 @@ They are sometimes also called slopers, although purists will argue that a block
 Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
+

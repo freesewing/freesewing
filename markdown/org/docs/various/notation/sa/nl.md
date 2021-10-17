@@ -1,6 +1,6 @@
-***
-
-## title: Naadtoeslag
+---
+title: Naadtoeslag
+---
 
 Naadwaarde wordt aangegeven door een stippellijn, met dezelfde dikte en kleur als de naad die erbij hoort:
 

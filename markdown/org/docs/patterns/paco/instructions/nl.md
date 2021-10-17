@@ -10,7 +10,8 @@ de rauwe randen te omhelzen.
 Voor deze instructies, gaan we ervan uit dat je een overlock gebruikt voor naadafstand, maar we
 ook alternatieven aanbieden. Andere opties voor het afwerken van de naden zijn onder meer het knippen met een knijpende
 schaar, stik een zigzag langs de rand van de naad om te voorkomen dat het uitrafelt, of koppel met
-bias tape. </Tip>
+bias tape.
+ </Tip>
 
 ## Stap 1: Maak de achterzakken
 

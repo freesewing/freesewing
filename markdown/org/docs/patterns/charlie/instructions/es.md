@@ -1,8 +1,9 @@
+
 ## Paso 1: Cierra el dardo trasero
 
 Lo primero que vamos a hacer es cerrar la densa cintura en el panel trasero.
 
-Para hacerlo, dobla el panel trasero con *lados buenos juntos* asegurándose de que coincida con ambos lados del dardo.
+Para hacerlo, dobla el panel trasero con _lados buenos juntos_ asegurándose de que coincida con ambos lados del dardo.
 
 Ahora coser el dardo cerca, asegurándose de usar una pequeña longitud de la caña, y coser todo el camino del teh hasta el final del dardo, incluso un par de tetas de la tela.
 
@@ -26,7 +27,7 @@ las instrucciones) pero es un acabado muy típico para chinos, y hace más fáci
 
 ### Adjuntar el bolsillo trasero hacia la bolsa de bolsillo
 
-Únete al bolsillo trasero mirando a la bolsa de bolsillo colocándolos con *buenos lados juntos* y cosiendo a lo largo de las costuras no curvas de la cara.
+Únete al bolsillo trasero mirando a la bolsa de bolsillo colocándolos con _buenos lados juntos_ y cosiendo a lo largo de las costuras no curvas de la cara.
 
 Cuando hayas terminado, presiona el permiso de costura al lado de la bolsa de bolsillo.
 
@@ -50,7 +51,7 @@ Deberías overlock/serge los lados de la bolsa para que no se cuelgan.
 
 <Tip>
 
-Si no tienes un *serger* siempre puedes usar un zig-zag en su lugar.
+Si no tienes un _serger_ siempre puedes usar un zig-zag en su lugar. 
 
 </Tip>
 
@@ -68,7 +69,7 @@ Los bolsillos delanteros son un poco inusuales porque tienen la apariencia de lo
 
 Tenemos dos bolsas de bolsillo delanteras, que cada una tiene dos piezas de frente para sujetarlas.
 
-Alinear con *lados buenos* juntos (\*) y coser el revestimiento en su lugar.
+Alinear con _lados buenos_ juntos (\*) y coser el revestimiento en su lugar.
 
 <Note>
 
@@ -119,6 +120,7 @@ Cerrar la costura exterior significa colocar el panel frontal y trasero con buen
 ### Difunde la parte superior de la costura exterior hasta la parte superior de la cortina de bolsillo
 
 Asegúrate de que todo esté bien alineado. Luego, coser desde la parte superior de la cintura hasta la parte superior (esto es algo más de un cm o media pulgada).
+
 
 ### Difunde la parte inferior de la costura externa de la parte inferior de la franja del bolsillo
 
@@ -173,7 +175,7 @@ Cuando haya terminado. Hágalo de nuevo. Siempre coser la costura de la cruz dos
 <Tip>
 
 Tenga mucho cuidado de alinear cuidadosamente las costuras donde ambas piernas tienen sus paneles trasero y frontal juntos.
-Hacerlo asegurará que los resultados de su costura cruzada con una *cross* perfectamente alineada, donde 4 partes de patrón se reúnen entre sí en un solo punto.
+Hacerlo asegurará que los resultados de su costura cruzada con una _cross_ perfectamente alineada, donde 4 partes de patrón se reúnen entre sí en un solo punto.
 
 Conseguirlo bien es una de esas cosas que acabarás cherizando cada vez que las llevas.
 
@@ -239,6 +241,7 @@ Quizás quieras bastar esto primero para asegurarte de que es muy paralelo al zi
 
 Ahora coser el otro lado del cipper a la mosca. Make sure to align it properly so that when the trousers are closed, the zip is hidden
 
+
 ### Termina la costura cruzada
 
 Difunde el último trozo de la costura de la cruz hasta la altura más alta de la mosca.
@@ -275,10 +278,10 @@ Por último, cortar los bucles de la correa de longitud en 8 partes iguales para
 
 Vamos a dividir nuestros bucles de cinturón a lo largo de la cintura:
 
-*   2 en el centro de vuelta, cada uno de ellos apartado un poco del centro, así que hay un pequeño hueco entre ellos.
-*   1 sobre el dardo trasero de cada lado
-*   1 en cada lado más o menos donde la costura lateral golpearía la cintura si subiera recto
-*   1 en cada lado desde el frente central. No está demasiado cerca unos de otros, así que no hay espacio para los cubos de cinta, pero tampoco demasiado lejos, por lo que no parece extraño
+ - 2 en el centro de vuelta, cada uno de ellos apartado un poco del centro, así que hay un pequeño hueco entre ellos.
+ - 1 sobre el dardo trasero de cada lado
+ - 1 en cada lado más o menos donde la costura lateral golpearía la cintura si subiera recto
+ - 1 en cada lado desde el frente central. No está demasiado cerca unos de otros, así que no hay espacio para los cubos de cinta, pero tampoco demasiado lejos, por lo que no parece extraño
 
 Coloca el bucle de la cinta en estos lugares con su buena cara hacia abajo (contra el lado bueno de la tela de tus pantalones, y la parte superior alineada con la cintura. Conserva esto en la costura de la cintura, asegurándose de que son perpendiculares a la cintura.
 
@@ -333,7 +336,7 @@ Al principio y al final de la banda de cintura, usted tendrá que agarrar en má
 
 ### Cerrar la cintura
 
-Ahora con el buen lado arriba, coser exactamente en la costura que antes había cosido (así llamado *empate en la zanja*).
+Ahora con el buen lado arriba, coser exactamente en la costura que antes había cosido (así llamado _empate en la zanja_).
 
 Esto cogerá la parte trasera de la cintura que hemos hecho para extenderse un poco más y bloquear toda la costura dentro.
 

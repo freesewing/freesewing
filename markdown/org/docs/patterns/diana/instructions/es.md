@@ -1,12 +1,13 @@
+
 ## Termina el cuello trasero
 
-Cortar una tira de tela propia de la longitud del cuello trasero y alrededor de 3 cm de largo.\
+Cortar una tira de tela propia de la longitud del cuello trasero y alrededor de 3 cm de largo.  
 Presiona un pliegue en esta tira, a 1 cm del borde.
 
 <Tip>
 
-Haz de esto una tira de corte parcial si estás usando un tejido tejido,
-o una tira con la dirección de estiramiento corriendo a lo largo del borde largo si está usando un tejido.
+Haz de esto una tira de corte parcial si estás usando un tejido tejido, 
+o una tira con la dirección de estiramiento corriendo a lo largo del borde largo si está usando un tejido. 
 
 </Tip>
 
@@ -40,7 +41,7 @@ Coser, terminar y presionar la costura.
 
 ## Cerrar costura de lado y manga
 
-Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.\
+Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.  
 Make sure the armhole seam lines up across the front and back.
 
 Coser, terminar y presionar la costura.

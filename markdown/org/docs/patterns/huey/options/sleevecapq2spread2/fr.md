@@ -9,5 +9,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 </Tip>
 
 ## Effet de cette option sur le motif
-
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey\_sleevecapq2spread2\_sample.svg "Effet de cette option sur le motif")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_sleevecapq2spread2_sample.svg "Effet de cette option sur le motif")

@@ -1,6 +1,6 @@
-***
-
-## title: snap-socket
+---
+title: snap-socket
+---
 
 The `snap-socket` snippet is used to mark the socket part of a snap button.
 
@@ -11,3 +11,4 @@ snippets.demo = new Snippet('snap-socket', points.anchor)
 ```
 
 <Example part="snippets_snapsocket" caption="An example of the snap-socket snippet" />
+

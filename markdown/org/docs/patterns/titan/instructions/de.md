@@ -1,3 +1,4 @@
+
 ### Schritt 1: Nehmen Sie an der Ausbreitung teil
 
 Schließen Sie sich dem Aussennaht (die Naht, die entlang der Seite des Beines läuft) der Vorder- und Rückseite ab.
@@ -14,7 +15,7 @@ Du hast jetzt ein Bein. Wiederholen Sie diesen Schritt für die anderen Beine un
 
 Drehen Sie ein Bein mit der guten Seite, die andere mit der guten Seite.
 
-Jetzt die *gute Seite* in die *gute Seite in* Bein schnüren, damit sie ihre *guten Seiten zusammen haben*.
+Jetzt die *gute Seite* in die *gute Seite in* Bein schnüren, damit sie ihre _guten Seiten zusammen haben_.
 
 Nun können Sie die Kreuznaht ausrichten und nähen.
 
@@ -22,7 +23,7 @@ Nun können Sie die Kreuznaht ausrichten und nähen.
 
 ###### Du möchtest wahrscheinlich einen Reißverschluss
 
-einfügen. Du solltest einen Reißverschluss einfügen oder den letzten Teil der Quernaht offen lassen (damit du ihn anpingst).\
+einfügen. Du solltest einen Reißverschluss einfügen oder den letzten Teil der Quernaht offen lassen (damit du ihn anpingst).  
 Wenn Sie nicht in der Lage sind, Titan zu setzen, um die Passform zu überprüfen.
 
 </Note>

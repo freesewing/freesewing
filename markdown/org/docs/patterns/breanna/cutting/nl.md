@@ -1,8 +1,8 @@
 Om Breanna te maken moet je:
 
-*   1 voorzijde
-*   2 Terug
-*   2 mouwen
+ - 1 voorzijde
+ - 2 Terug
+ - 2 mouwen
 
 <Note>
 

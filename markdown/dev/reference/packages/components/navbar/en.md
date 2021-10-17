@@ -1,6 +1,6 @@
-***
-
-## title: Navbar
+---
+title: Navbar
+---
 
 The `Navbar` component is the shared navigation bar we use at the top of our websites.
 
@@ -9,3 +9,4 @@ The `Navbar` component is the shared navigation bar we use at the top of our web
 ## Example
 
 ![Screenshot of the component](example.png)
+

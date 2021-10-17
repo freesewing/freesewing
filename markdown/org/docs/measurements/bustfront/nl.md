@@ -1,6 +1,6 @@
-***
-
-## title: Buste voor
+---
+title: Buste voor
+---
 
 De **bustenfront** is het voorste deel van je borstomtrek.
 

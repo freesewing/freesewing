@@ -1,6 +1,6 @@
-***
-
-## title: Contorno de pecho
+---
+title: Contorno de pecho
+---
 
 La medición de **circunstancia del cofre** envuelve la parte más completa de tu cofre.
 

@@ -1,6 +1,6 @@
-***
-
-## title: Tour de buste supérieur
+---
+title: Tour de buste supérieur
+---
 
 La mesure de **tour de buste supérieur** est votre circonférence thoracique mesurée juste sous vos bras, au-dessus de la partie la plus large de votre buste.
 

@@ -1,6 +1,6 @@
-***
-
-## title: "create-freesewing-pattern"
+---
+title: "create-freesewing-pattern"
+---
 
 <p>
   <a
@@ -52,3 +52,4 @@ npm init freesewing-pattern
 ```
 
 This package is what's loaded when you enter that command.
+

@@ -15,7 +15,6 @@
   "license": "MIT",
   "scripts": {
     "kickstart": "npx lerna bootstrap && npx lerna run lernabuild --no-bail && npx lerna run lernabuild",
-    "format": "remark ./markdown -qfo && remark . -e mdx -u mdx -qfo && npm run prettier",
     "clean": "rimraf dist",
     "test": "lerna run test",
     "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/**/example/src/*' 'packages/i18n/src/locales/**/*.*'",

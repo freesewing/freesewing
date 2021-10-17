@@ -1,6 +1,6 @@
-***
-
-## title: Zugabe
+---
+title: Zugabe
+---
 
 ![Ohne eine Zugabe wärst du nicht in der Lage, deinen Arm zu heben](ease-plus.jpg)
 
@@ -16,4 +16,5 @@ Zugabe kann auch umgekehrt arbeiten. Wenn der Stoff dehnbar ist, können wir wen
 
 Negative Zugabe wird bei dehnbaren Materialien verwendet, bei denen das Kleidungsstück eng anliegen muss. Zum Beispiel bei Badebekleidung, Strumpfhosen, Unterwäsche oder Sportbekleidung.
 
-> Bilder von [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) und [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)
+
+> Bilder von [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) und [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893) 

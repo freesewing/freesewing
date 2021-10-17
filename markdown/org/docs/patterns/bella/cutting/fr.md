@@ -1,7 +1,7 @@
 Pour faire Bella, tu auras besoin de :
 
-*   1 devant
-*   2 dos
+ - 1 devant
+ - 2 dos
 
 <Note>
 

@@ -1,12 +1,13 @@
-***
-
-## title: Autres sujets liés à la vie privée
+---
+title: Autres sujets liés à la vie privée
+---
 
 ##### Devoir de transparence
 
 Si nous décelons une violation des systèmes de sécurité, nous vous en informerons ainsi que les autorités.
 
 Si vous pensez que vos données personnelles ont été compromises, veuillez contacter joost@joost.at.
+
 
 ##### Prestataires de services
 
@@ -25,3 +26,4 @@ Jusqu'à présent, nous n'avons reçu aucune demande de la part des forces de l'
 ##### Utilisation par les mineurs de moins de 16 ans
 
 Pour des raisons juridiques, vous devez avoir au moins 16 ans pour utiliser Freesewing.
+

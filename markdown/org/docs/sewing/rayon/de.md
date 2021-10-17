@@ -1,6 +1,6 @@
-***
-
-## title: Rayon
+---
+title: Rayon
+---
 
 ![Ich benutze Strahlen für meine Unterwäsche](rayon.jpg)
 

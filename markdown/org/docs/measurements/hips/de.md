@@ -1,6 +1,6 @@
-***
-
-## title: Hüftweite
+---
+title: Hüftweite
+---
 
 Die **Hüftweite** wird an der obersten Stelle deiner Hüftknochen gemessen.
 

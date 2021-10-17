@@ -1,6 +1,6 @@
-***
-
-## title: Das Teilen deiner Schnittmuster erfordert einen FreeSewing-Account
+---
+title: Das Teilen deiner Schnittmuster erfordert einen FreeSewing-Account
+---
 
 Du kannst deine Schnittmuster nach PDF, SVG oder andere Formate **exportieren**.
 

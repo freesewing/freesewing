@@ -13,5 +13,4 @@ Wer sein Shirt unter einem Pullover tragen möchte, sollte sich auch die Schmals
 </Note>
 
 ## Effekt dieser Option auf das Muster
-
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone\_cuffease\_sample.svg "Effekt dieser Option auf das Muster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_cuffease_sample.svg "Effekt dieser Option auf das Muster")

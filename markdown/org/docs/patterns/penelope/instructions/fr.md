@@ -41,3 +41,7 @@ Of course, if you include a lining, you have to include this in the way you've f
 Ensuite, attachez la ceinture si votre version en a une. First fold it double along the long side and press. Ajoutez votre interface. Coudre sur le côté droit du tissu. Then turn it over and press the seam into the waistband. Now use the stitch-in-the-ditch technique to finish the waistband. Ajoutez votre choix de fermeture.
 
 Il ne reste plus qu'à ourdir la jupe.
+
+
+
+

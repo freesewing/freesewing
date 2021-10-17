@@ -1,5 +1,6 @@
+
 The collar spread controls how the collar drapes over the shoulders
 
-## Effect of this option on the pattern
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger\_collarspread\_sample.svg "Effect of this option on the pattern")
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_collarspread_sample.svg "Effect of this option on the pattern")

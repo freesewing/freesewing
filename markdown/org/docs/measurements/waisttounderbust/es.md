@@ -1,6 +1,6 @@
-***
-
-## title: Espera a bajo busto
+---
+title: Espera a bajo busto
+---
 
 La cintura **para subbust** es la medición desde tu cintura hacia tu enlace de subbust (donde se encuentra tu banda de sujetas).
 

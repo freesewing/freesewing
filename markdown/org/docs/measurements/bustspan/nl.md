@@ -1,6 +1,6 @@
-***
-
-## title: Bustewijdte
+---
+title: Bustewijdte
+---
 
 De **bustewijdte** is de horizontale afstand tussen de toppen van de buste.
 

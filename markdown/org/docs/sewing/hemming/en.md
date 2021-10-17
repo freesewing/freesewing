@@ -1,6 +1,6 @@
-***
-
-## title: Hemming
+---
+title: Hemming
+---
 
 ![The hem at the bottom of a T-shirt](coverlock-hem.jpg)
 

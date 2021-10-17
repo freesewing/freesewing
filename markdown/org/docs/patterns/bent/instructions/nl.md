@@ -1,3 +1,4 @@
+
 ## Bent is een basis, geen patroon
 
 Een basisvorm is een basispatroon waar andere patronen op gebaseerd worden. Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.

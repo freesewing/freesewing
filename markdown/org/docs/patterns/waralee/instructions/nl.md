@@ -1,3 +1,4 @@
+
 <Tip>
 
 ##### De sleutel van Waralee is de tailleband
@@ -11,13 +12,11 @@ Op een manier Waralee is slechts een tailleband met een lang stuk stof vast. De 
 <Note>
 
 ##### Pockets zijn optioneel
-
 Traditioneel hebben deze broektypes geen zakken. Maar ik wil ergens mijn telefoon, sleutels en portemonnee zetten. Dus ik heb zakken in het patroon opgenomen. Je kunt voor jezelf beslissen of je ze op je broek wilt hebben.
 
 De illustraties in de volgende stappen laten de oorlogsbroek zien zonder zakken. Alleen de zakplaatsingen van het patroon worden getoond, om je te helpen jezelf te oriënteren.
 
 ##### Als je zakken wilt kun je ze eerst
-
 Als je de zakken gaat maken, laat ze eerst één stuk stof op de andere plaatsen. Het is makkelijker om met de delen te werken die nog gescheiden.
 
 </Note>
@@ -38,7 +37,7 @@ Je kunt de methode die het beste voor je werkt gebruiken. In de versie die ik ee
 
 ![Leg de twee delen bovenop elkaar met de goede kanten op elkaar. Stik de kruisnaad](waralee-crotch-seam-no-pockets.png)
 
-Nu ga je de twee delen aan elkaar naaien. Leg ze met *goede kanten op elkaar* en stik de naad langs het uitsnijden. Werk deze naad af en strijk het.
+Nu ga je de twee delen aan elkaar naaien. Leg ze met _goede kanten op elkaar_ en stik de naad langs het uitsnijden. Werk deze naad af en strijk het.
 
 ## Stap 4: Bereid de vier tekenreeksen voor
 
@@ -51,7 +50,6 @@ Als mijn tailleomtrek bijvoorbeeld 84,6 cm: 84,6 cm gedeeld door 4 is 2cm. 2cm p
 <Note>
 
 ##### Je kunt de voorpanden verlengen
-
 optioneel om de voorpanden langer te maken, verleng ze met je kwarttaillemeting.
 
 Bij het genereren van je patroon wordt een van de stijlopties "Waist Band" genoemd. De strings, wanneer geplooid moet dezelfde breedte hebben als je hebt opgegeven voor die optie, 2,5 cm (1") als standaard.
@@ -62,7 +60,7 @@ Als je materiaal gevoelig of zwak is, kun je hier wat tussenvoering aan toevoege
 
 </Note>
 
-Plooi ze over de helft langs de lange zijde, *goede kanten op elkaar*. Stik de lange kant en één van de korte zijden, en draai de das naar buiten.
+Plooi ze over de helft langs de lange zijde, _goede kanten op elkaar_. Stik de lange kant en één van de korte zijden, en draai de das naar buiten.
 
 <Tip>
 
@@ -99,3 +97,4 @@ Houd de voorkant tegen je broekriem en pak beide tekenreeksen om je heen en stri
 Hier is een artikel dat laat zien hoe ingepakte broek moet worden [Hoe Tie Wrap Broek](https://www.wikihow.com/Tie-Wrap-Pants)
 
 Als je vastloopt, of extra vragen hebt, kun je altijd contact opnemen met [andere FreeSewers](https://discord.freesewing.org/).
+

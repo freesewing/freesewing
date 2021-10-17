@@ -1,6 +1,6 @@
-***
-
-## title: Heupomtrek
+---
+title: Heupomtrek
+---
 
 De **heupomtrek** wordt gemeten aan de bovenkant van je heupbotten.
 

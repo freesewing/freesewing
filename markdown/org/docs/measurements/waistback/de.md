@@ -1,6 +1,6 @@
-***
-
-## title: Taillenweite hinten
+---
+title: Taillenweite hinten
+---
 
 Die **Taille zurück** ist der hintere Teil deines Taillenumfangs.
 

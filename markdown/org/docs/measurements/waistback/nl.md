@@ -1,6 +1,6 @@
-***
-
-## title: Taille achter
+---
+title: Taille achter
+---
 
 De **taille achter** maat is het achterste deel van je tailleomtrek.
 

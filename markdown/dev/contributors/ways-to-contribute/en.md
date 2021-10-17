@@ -1,6 +1,6 @@
-***
-
-## title: Ways to contribute
+---
+title: Ways to contribute
+---
 
 <Tip>
 
@@ -13,8 +13,8 @@ Don't be afraid to take on an issue. If you get stuck, [we'll help you out](http
 
 </Tip>
 
-Unsure where to begin contributing to FreeSewing?
-*Contributing* can take on many shapes and forms.
+Unsure where to begin contributing to FreeSewing? 
+*Contributing* can take on many shapes and forms. 
 There's certainly a way that works well for you.
 
 Here's a non-exhaustive list:
@@ -32,3 +32,6 @@ We are happy to provide guidance to anyone who wants to learn,
 especially when doing so enables upwards social mobility.
 
 </Note>
+
+
+

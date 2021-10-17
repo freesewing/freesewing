@@ -1,6 +1,6 @@
-***
-
-## title: Sommet de l’Épaule (ou PHE)
+---
+title: Sommet de l’Épaule (ou PHE)
+---
 
 Le *Sommet de l'épaule* ou *Point Haut de l’Épaule (PHE)* est utilisé comme base pour plusieurs mesures verticales.
 

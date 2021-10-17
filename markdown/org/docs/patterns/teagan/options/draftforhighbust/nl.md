@@ -1,3 +1,4 @@
+
 Kies deze optie om Teagan te tekenen naar je hoge bustemeting, in plaats van je volledige borstomtrek.
 
 Deze optie is specifiek voor mensen met borsten. Het inschakelen van zal Teagan op je hoge bustemaat laten knipperen en stretch past bij je borsten.
@@ -13,5 +14,4 @@ Deze optie heeft geen effect wanneer er geen hoge bustemeting wordt gegeven
 </Note>
 
 ## Effect van deze optie op het patroon
-
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan\_draftforhighbust\_sample.svg "Effect van deze optie op het patroon")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_draftforhighbust_sample.svg "Effect van deze optie op het patroon")

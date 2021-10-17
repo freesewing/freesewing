@@ -1,6 +1,6 @@
-***
-
-## title: curvesIntersect()
+---
+title: curvesIntersect()
+---
 
 ```js
 array | false utils.curvesIntersect(
@@ -58,3 +58,4 @@ for (let p of utils.curvesIntersect(
   snippets[part.getId()] = new Snippet("notch", p);
 }
 ```
+

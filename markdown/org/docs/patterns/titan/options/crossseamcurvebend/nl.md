@@ -1,4 +1,6 @@
+
 Bepaalt de curve van de kruisnaad
+
 
 <Note>
 
@@ -12,5 +14,4 @@ Mensen met een ronde bum willen dit misschien verlagen om wat meer (horizontaal)
 </Note>
 
 ## Effect van deze optie op het patroon
-
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan\_crossseamcurvebend\_sample.svg "Effect van deze optie op het patroon")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](titan_crossseamcurvebend_sample.svg "Effect van deze optie op het patroon")

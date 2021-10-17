@@ -1,6 +1,6 @@
-***
-
-## title: Papierloos
+---
+title: Papierloos
+---
 
 Pepierloze patronen hebben extra markeringen om te gebruiken zonder printer.
 

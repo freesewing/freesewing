@@ -1,6 +1,6 @@
-***
-
-## title: shift()
+---
+title: shift()
+---
 
 ```js
 Point point.shift(float degrees, float distance)
@@ -9,8 +9,8 @@ Point point.shift(float degrees, float distance)
 Returns a point that lies distance in the direction of degrees from this point.
 
 <Example 
-part="point_shift"
-caption="An example of the Point.shift() method"
+  part="point_shift"
+  caption="An example of the Point.shift() method"
 />
 
 ```js

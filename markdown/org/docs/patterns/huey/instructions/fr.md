@@ -1,3 +1,4 @@
+
 <Note>
 
 Ce patron a été mis en vedette dans le [numéro 27 du magazine HackSpace ](https://hackspace.raspberrypi.org/issues/27),

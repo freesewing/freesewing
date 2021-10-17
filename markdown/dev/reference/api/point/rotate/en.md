@@ -1,16 +1,16 @@
-***
-
-## title: rotate()
+---
+title: rotate()
+---
 
 ```js
 Point point.rotate(float angle, Point center)
-```
+``` 
 
 Rotates a point the number of degrees you pass it around the point you pass it.
 
 <Example 
-part="point_rotate"
-caption="An example of the Point.rotate() method"
+  part="point_rotate"
+  caption="An example of the Point.rotate() method"
 />
 
 ```js

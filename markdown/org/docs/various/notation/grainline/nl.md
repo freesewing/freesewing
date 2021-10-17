@@ -1,6 +1,6 @@
-***
-
-## title: Draadrichting en aanduiding van de stofvouw
+---
+title: Draadrichting en aanduiding van de stofvouw
+---
 
 Draadrichting - een lijn die de *draadrichting van de stof* aangeeft - ziet er zo uit:
 

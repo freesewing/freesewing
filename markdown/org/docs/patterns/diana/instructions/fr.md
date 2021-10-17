@@ -1,12 +1,13 @@
+
 ## Terminer l'encolure dos
 
-Coupez une bande d'auto-tissu de la longueur de votre collier arrière, et environ 3 cm de large.\
+Coupez une bande d'auto-tissu de la longueur de votre collier arrière, et environ 3 cm de large.  
 Appuyez sur un pli dans cette bande, à 1 cm du bord.
 
 <Tip>
 
-Faites de cette bande de coupe de biais si vous utilisez un tissu tissé,
-ou une bande avec la direction d'étirement le long du bord long si vous utilisez un tricot.
+Faites de cette bande de coupe de biais si vous utilisez un tissu tissé, 
+ou une bande avec la direction d'étirement le long du bord long si vous utilisez un tricot. 
 
 </Tip>
 
@@ -40,7 +41,7 @@ Courir, finir et presser la couture.
 
 ## Fermer la couture des côtés et des manches
 
-Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.\
+Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.  
 Make sure the armhole seam lines up across the front and back.
 
 Courir, finir et presser la couture.

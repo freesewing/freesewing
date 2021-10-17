@@ -1,6 +1,6 @@
-***
-
-## title: department
+---
+title: department
+---
 
 ```js
 department: "menswear",
@@ -8,7 +8,7 @@ department: "menswear",
 
 One of the following:
 
-*   menswear
-*   womenswear
-*   unisex
-*   accessories
+ - menswear
+ - womenswear
+ - unisex
+ - accessories

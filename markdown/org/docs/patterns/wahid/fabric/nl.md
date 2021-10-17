@@ -7,3 +7,5 @@ Deze stoffen zijn gewoonlijk van wol, maar je kan ook wat creatiever zijn en iet
 Je stof heeft wel wat gewicht nodig. Denim is ok, een licht katoentje niet.
 
 </Note>
+
+

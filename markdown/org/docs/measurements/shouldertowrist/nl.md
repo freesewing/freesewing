@@ -1,6 +1,6 @@
-***
-
-## title: Schouder tot pols
+---
+title: Schouder tot pols
+---
 
 De afmeting **schouder tot pols** bepaalt de lengte van je mouwen, en loopt vanaf het schouderpunt langs je arm tot aan je pols.
 

@@ -1,6 +1,6 @@
-***
-
-## title: Margen de costura
+---
+title: Margen de costura
+---
 
 Seam allowance is indicated by a dashed line, that has the same width and color as the seam they belong to:
 

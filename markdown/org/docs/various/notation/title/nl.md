@@ -1,9 +1,8 @@
-***
-
-## title: Titels
+---
+title: Titels
+---
 
 Elk patroondeel heeft een titel dat je het nummer en de naam van het deel geeft, en de naam van het patroon:
-
 <Legend part="title" caption="Example of a title" >
 
 <Note>

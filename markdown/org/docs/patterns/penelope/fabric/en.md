@@ -1,3 +1,4 @@
+
 A pencil skirt is a rather formal cut, and most commonly made in a suiting material. In other words, a fine wool.
 More casual options among medium weight fabrics include cotton or denim.
 

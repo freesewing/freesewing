@@ -1,6 +1,6 @@
-***
-
-## title: Contorno de alto de pierna
+---
+title: Contorno de alto de pierna
+---
 
 La **circunstancia superior de la pierna** es la medida alrededor de la pierna, cerca de la parte superior de la pierna.
 

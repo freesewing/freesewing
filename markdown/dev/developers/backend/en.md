@@ -1,5 +1,5 @@
-***
-
-## title: The freesewing backend
+---
+title: The freesewing backend
+---
 
 <Fixme>Under construction</Fixme>

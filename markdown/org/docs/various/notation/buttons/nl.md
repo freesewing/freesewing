@@ -1,6 +1,6 @@
-***
-
-## title: Knopen, knoopsgaten en en drukknopen
+---
+title: Knopen, knoopsgaten en en drukknopen
+---
 
 Knoppen en knoopsgaten kunnen in verschillende maten komen, maar hebben altijd dezelfde vorm die geeft hoe ze er in het echte leven uitzien:
 

@@ -1,3 +1,4 @@
+
 <Note>
 
 This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),

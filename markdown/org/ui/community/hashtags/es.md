@@ -1,6 +1,6 @@
-***
-
-## title: Uso de hashtags
+---
+title: Uso de hashtags
+---
 
 En las redes sociales, utilice las etiquetas específicas del patrón cuando publique sobre nuestro patrón.
 

@@ -1,8 +1,7 @@
-***
-
+---
 layout: onecol
 title: Zuschnitt
-----------------
+---
 
 ![Ich, wie ich ein paar T-Shirts ausschneide](cutting.jpg)
 

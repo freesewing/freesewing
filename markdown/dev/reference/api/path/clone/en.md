@@ -1,6 +1,7 @@
-***
+---
+title: clone()
+---
 
-## title: clone()
 
 ```js
 Path path.clone()
@@ -29,3 +30,4 @@ paths.clone = paths.example
     .attr("class", "note lashed stroke-l")
     .attr("style", "stroke-opacity: 0.5");
 ```
+

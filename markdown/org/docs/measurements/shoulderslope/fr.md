@@ -1,6 +1,6 @@
-***
-
-## title: Pente d'épaule
+---
+title: Pente d'épaule
+---
 
 La mesure de **pente d'épaule** est un indicateur de la façon dont vos épaules descendent.
 

@@ -1,5 +1,5 @@
-***
-
-## title: Typography
+---
+title: Typography
+---
 
 <ReadMore list />

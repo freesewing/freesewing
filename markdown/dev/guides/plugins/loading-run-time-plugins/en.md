@@ -1,8 +1,7 @@
-***
-
+---
 title: Loading run-time plugins
 order: 40
----------
+---
 
 Run-time plugin are loaded at run time, by passing them to the `use` method of
 an instatiated pattern. That method is chainable, so if you have multiple plugins
@@ -23,3 +22,5 @@ const myAaron = new Aaron()
 Plugins that use only hooks are typically run-time plugins
 
 </Tip>
+
+

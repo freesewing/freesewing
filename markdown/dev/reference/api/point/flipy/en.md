@@ -1,6 +1,6 @@
-***
-
-## title: flipY()
+---
+title: flipY()
+---
 
 ```js
 Point point.flipY(Point mirror = false)
@@ -13,8 +13,8 @@ If you don't pass it a point, it will mirror around a Y-value of zero.
 ### Point.flipY() example
 
 <Example 
-part="point_flipy"
-caption="An example of the Point.flipY() method"
+  part="point_flipy"
+  caption="An example of the Point.flipY() method"
 />
 
 ```js
@@ -68,3 +68,4 @@ paths.skylineTop = new Path()
   .line(points.houseWallRight)
   .line(points.end);
 ```
+

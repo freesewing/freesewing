@@ -1,8 +1,7 @@
-***
-
+---
 title: What is FreeSewing?
 order: 100
-----------
+---
 
 [FreeSewing is an open source software project](https://github.com/freesewing/)
 with the aim of becoming the Wikipedia of sewing patterns.

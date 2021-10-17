@@ -1,6 +1,6 @@
-***
-
-## title: Verwalte dein Abonnement in deinem Account
+---
+title: Verwalte dein Abonnement in deinem Account
+---
 
 Als registrierter Benutzer kannst du [deine Newsletter-Einstellungen in deinem Account verwalten][1].
 

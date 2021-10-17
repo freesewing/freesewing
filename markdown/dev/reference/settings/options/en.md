@@ -1,6 +1,6 @@
-***
-
-## title: options
+--- 
+title: options
+---
 
 The pattern options as specified in the pattern configuration.
 
@@ -15,3 +15,4 @@ let pattern = new brian({
 ```
 
 <Note>Unlike measurements, options come with defaults.</Note>
+

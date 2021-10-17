@@ -1,6 +1,6 @@
-***
-
-## title: Contenus
+---
+title: Contenus
+---
 
 Ce paramètre vous permet de choisir manuellement les parties que vous voulez inclure dans votre patron.
 

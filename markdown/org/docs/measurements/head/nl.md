@@ -1,6 +1,6 @@
-***
-
-## title: Hoofdomtrek
+---
+title: Hoofdomtrek
+---
 
 De **hoofdomtrek** is de omtrek van het breedste deel van je hoofd.
 

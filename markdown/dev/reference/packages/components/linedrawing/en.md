@@ -1,6 +1,6 @@
-***
-
-## title: Linedrawing
+---
+title: Linedrawing
+---
 
 The `Linedrawing` component renders linedrawings for the FreeSewing patterns.
 
@@ -9,3 +9,4 @@ The `Linedrawing` component renders linedrawings for the FreeSewing patterns.
 ## Example
 
 ![Screenshot of the component](example.png)
+

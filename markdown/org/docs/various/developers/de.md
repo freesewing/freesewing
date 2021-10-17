@@ -1,6 +1,6 @@
-***
-
-## title: Entwicklerdokumentation
+---
+title: Entwicklerdokumentation
+---
 
 Freesewing.org beherbergt nur Dokumentationen für Macher/innen.
 

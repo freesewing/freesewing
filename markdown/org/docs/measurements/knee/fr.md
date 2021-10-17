@@ -1,6 +1,6 @@
-***
-
-## title: Tour de genou
+---
+title: Tour de genou
+---
 
 Le **tour de genou** est la mesure autour de votre genou.
 

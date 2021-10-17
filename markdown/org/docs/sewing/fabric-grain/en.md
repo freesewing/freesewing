@@ -1,6 +1,6 @@
-***
-
-## title: Fabric grain
+---
+title: Fabric grain
+---
 
 ![The grainline runs parallel to the selvedge](fabric-grain.jpg)
 
@@ -13,9 +13,8 @@ Grain is indicated on a pattern by the grain line. When cutting out your pattern
 > For more warp and weft details: [Weaving on Wikipedia](http://en.wikipedia.org/wiki/Weaving)
 
 > ##### Confused? Think wood
->
-> Wood is not woven, but grows in different layers based on the seasons (growth rings).
-> The way these layers are aligned are important for woodworkers.
+> Wood is not woven, but grows in different layers based on the seasons (growth rings). 
+> The way these layers are aligned are important for woodworkers. 
 > They influence to what extent the wood will deform after cutting it and how it will bend, as well as other parameters.
->
+> 
 > Just like a woodworker will take this into account before cutting the wood, you should take grain into account before cutting out your fabric.

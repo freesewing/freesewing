@@ -1,6 +1,6 @@
-***
-
-## title: remove()
+---
+title: remove()
+---
 
 ```js
 Attributes attributes.remove(string key)

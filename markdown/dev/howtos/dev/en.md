@@ -1,5 +1,6 @@
-***
-
-## title: Setting up your development environment
+---
+title: Setting up your development environment
+---
 
 <ReadMore />
+

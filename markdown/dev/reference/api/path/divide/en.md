@@ -1,6 +1,6 @@
-***
-
-## title: divide()
+---
+title: divide()
+---
 
 ```js
 array path.divide()

@@ -1,8 +1,7 @@
-***
-
+---
 title: Kann ich FreeSewing für kommerzielle Zwecke verwenden?
 order: 200
-----------
+---
 
 Ja, das kannst du. Open Source ist ein Entwicklungsmodell und kein Geschäftsmodell.
 

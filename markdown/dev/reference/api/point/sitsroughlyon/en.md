@@ -1,6 +1,6 @@
-***
-
-## title: sitsRoughlyOn()
+---
+title: sitsRoughlyOn()
+---
 
 ```js
 bool point.sitsRoughlyOn(Point check)
@@ -12,14 +12,14 @@ Returns true is the point has roughly the same coordinates as the one you pass t
 
 ###### How rough?
 
-The difference between this method and [Point.sitsOn](/reference/api/point/sitson/) is
+The difference between this method and [Point.sitsOn](/reference/api/point/sitson/) is 
 that this one rounds things down to the nearest integer (thus mm) before checking.
 
 </Note>
 
 <Example 
-part="point_sitsroughlyon"
-caption="An example of the Point.sitsRoughlyOn() method"
+  part="point_sitsroughlyon"
+  caption="An example of the Point.sitsRoughlyOn() method"
 />
 
 ```js
