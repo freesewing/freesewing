@@ -1,6 +1,5 @@
----
 
-undefined
+Controls the length of the visor
 
 
 ## Effect of this option on the pattern

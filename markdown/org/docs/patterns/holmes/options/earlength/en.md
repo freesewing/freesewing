@@ -1,6 +1,3 @@
----
-
-undefined
 
 
 ## Effect of this option on the pattern
