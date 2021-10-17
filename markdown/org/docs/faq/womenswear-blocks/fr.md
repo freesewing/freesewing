@@ -1,8 +1,8 @@
 ---
-title: Mais pourquoi donc publier des patrons de base de vêtements féminins ? They are [insert strong opinion here].
+title: Mais pourquoi donc publier des patrons de base de vêtements féminins ? Ils sont [insérez un cliché ici].
 ---
 
-This question comes up every now and then. The wording varies, but the sentiment can be summarized as *why even publish this garbage, it doesn't work at all*.
+Cette question revient de temps à autres. L'expression varie, mais on peut résumer le fond de la pensée comme *mais pourquoi publier ce ramassis, ça ne marche pas du tout*.
 
 Let me start by saying that you are not wrong. Both [Breanna](/designs/breanna/) and [Bella](/designs/bella/) have serious shortcomings.
 
