@@ -22,10 +22,18 @@
 
 ### components
 
+#### Added
+
+ - Added Bee linedrawing
+
 #### Changed
 
  - Added measurements for dolls & giants to Workbench measurments selector
  - Added sampling for dolls & giants to Workbench tests
+
+#### Fixed
+
+ - Added missing linedrawing for Yuri
 
 ### core
 
@@ -95,6 +103,15 @@
 #### Fixed
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1316](https://github.com/freesewing/freesewing/issues/1316)
+
+### pattern-info
+
+#### Changed
+
+ - Added Bee pattern
+ - Added Lunetius pattern
+ - Added Tiberius pattern
+ - Added Walburga pattern
 
 ### penelope
 
