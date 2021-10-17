@@ -14,9 +14,9 @@ Là où je veux en venir c'est que, nous ne les retirons pas parce qu'ils foncti
 
 Je ne prétends pas savoir comment ébaucher pour les femmes. Mais on me demande à longueur de temps d'ajouter des vêtements pour femmes à freesewing.org, et cela commence par un patron de base bien conçu.
 
-J'ai longtemps attendu que quelqu'un fasse le premier pas et prenne sur soi de le faire. Hélas, j'ai attendu en vain. Since the fastest way to get a question answered on the internet is to answer it yourself incorrectly, I set out to create these blocks.
+J'ai longtemps attendu que quelqu'un fasse le premier pas et prenne sur soi de le faire. Hélas, j'ai attendu en vain. Et comme la manière la plus rapide d'obtenir une réponse sur internet est d'y répondre soi même inexactement, je me suis lancé pour créer ces patrons de base.
 
-So if you think you can do better, I hereby formally invite you to work together to design the womenswear block that you think/know to be the best one out there.
+Donc, si vous pensez pouvoir faire mieux, je vous invite par la présente formellement à travailler ensemble pour concevoir le patron de base de vêtements féminins que vous pensez/savez être le meilleur.
 
 I gladly offer my services to code/implement your design/vision, so that the entire sewing community can benefit from it.
 
