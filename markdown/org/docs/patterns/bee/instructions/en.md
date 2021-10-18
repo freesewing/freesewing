@@ -9,7 +9,7 @@ title: Bee Construction
 
 - ***Baste*** : Long temporary stitches to join pieces together. Can be machined or hand-sewn.
 
-- ***Slipstitch*** : A concealed stitch to join folded edges to body or another folded edge.
+- ***Slipstitch*** : A concealed stitch to join folded edges to the body or another folded edge.
 
 Glossary Terms will be formatted in ***bold and italics*** below.
 
@@ -63,12 +63,12 @@ If your seam allowance is wide you may find that you need to trim the gaps' seam
 If you are having trouble turning the cups you can either:   
 __1.__ Create a 2.5cm (1") gap in the front or side seam and turn throught that, either ***Slipstitch***-ing the gap closed or ***Edgestitch***-ing it closed during Step 7.  
   Or  
-__2.__ Widen one of the existing gaps and turn through that. Then when turned ***Edgestitch*** or ***Slipstitch** the widened part closed. 
+__2.__ Widen one of the existing gaps and turn through that. Then when turned ***Edgestitch*** or ***Slipstitch*** the widened part closed. 
 
 </Tip>
 <Note>
 
-Whilst certainly optional it is recommending to ***Edgestitch*** the top and sides of the cups but the bottom is entirely optional.  
+Whilst certainly optional it is recommended to ***Edgestitch*** the top and sides of the cups but the bottom is entirely optional.  
 
 </Note>
 
