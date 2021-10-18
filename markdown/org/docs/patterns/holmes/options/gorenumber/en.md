@@ -1,6 +1,8 @@
 ---
-title: Number of gores
+title: Number of crown pieces
 ---
+
+Controls the number of panels there are in the crown
 
 
 ## Effect of this option on the pattern
