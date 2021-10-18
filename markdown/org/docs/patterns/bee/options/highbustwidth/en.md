@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: High bust width (Bella)
 ---
 
-undefined
+Controls the high bust width in the underlying Bella block Bee is based on
 
 
 ## Effect of this option on the pattern

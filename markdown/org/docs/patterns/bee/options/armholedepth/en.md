@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: Armhole depth (Bella)
 ---
 
-undefined
+Controls the armhole depth in the underlying Bella block Bee is based on
 
 
 ## Effect of this option on the pattern

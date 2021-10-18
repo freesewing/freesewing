@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: Front armhole pitch depth (Bella)
 ---
 
-undefined
+Controls the front armhole pitch depth in the underlying Bella block Bee is based on
 
 
 ## Effect of this option on the pattern
