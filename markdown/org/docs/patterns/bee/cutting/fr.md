@@ -9,7 +9,7 @@ Il y a trois variantes de ce patron. **Une couleur**, qui est celle où le haut 
 
 **Tissu principal**
    - Cut **4 cup** parts.
-   - Cut **2 neck tie** parts.
+   - Couper **2 pièces** de l'attache du cou.
    - Cut **1 band tie** part.
 
 ### Two Colours (Reversible)
