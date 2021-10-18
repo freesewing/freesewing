@@ -6,7 +6,7 @@ albert:
   description: Albert est un tablier.
   title: Tablier Albert
 bee:
-  description: Bee is a bikini top
+  description: Bee est un haut de bikini
   title: Haut de bikini Bee
 bella:
   description: Bella est un bloc corporel de base pour les personnes qui ont le sein.
@@ -63,7 +63,7 @@ hugo:
   description: Hugo est un sweat à capuche avec des manches raglan.
   title: Sweat à capuche Hugo
 jaeger:
-  description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
+  description: Jaeger est une veste de sport de style manteau avec deux boutons et des poches plaquées.
   title: Veste Jaeger
 lunetius:
   description: Lunetius is a lacerna, a historical Roman cloak
