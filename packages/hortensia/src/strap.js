@@ -2,7 +2,7 @@ export default function (part) {
   let { store, options, Point, Path, points, paths, complete, sa, paperless, macro } =
     part.shorthand()
 
-  let w = options.handleWidth
+  let w = store.get('width') * options.handleWidth
   let h = store.get('depth') * options.strapLength
   if (sa > w * 0.8) {
     sa = w * 0.8
