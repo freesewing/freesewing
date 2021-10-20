@@ -1,6 +1,15 @@
 # Change log for: @freesewing/pattern-info
 
 
+## 2.19.0 (2021-10-17)
+
+### Changed
+
+ - Added Bee pattern
+ - Added Lunetius pattern
+ - Added Tiberius pattern
+ - Added Walburga pattern
+
 ## 2.15.0 (2021-04-15)
 
 ### Added

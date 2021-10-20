@@ -34,6 +34,10 @@ import hortensia from './hortensia.yml'
 import cornelius from './cornelius.yml'
 import charlie from './charlie.yml'
 import ursula from './ursula.yml'
+import lunetius from './lunetius.yml'
+import tiberius from './tiberius.yml'
+import walburga from './walburga.yml'
+import bee from './bee.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -75,6 +79,10 @@ let patterns = {
   charlie,
   ursula,
   yuri: false,
+  lunetius,
+  tiberius,
+  walburga,
+  bee,
 }
 
 let options = {}
@@ -87,15 +95,20 @@ for (let pattern in patterns) {
     if (typeof value === 'object') options[pattern][option] = value
     else {
       if (typeof value === 'undefined') {
-        if (typeof patterns[shared?.[pattern]?.dflt]?.[option] === 'object')
-          options[pattern][option] = patterns[shared[pattern].dflt][option]
-        else if (
-          typeof shared?.[pattern]?.other !== 'undefined' &&
-          typeof shared?.[pattern]?.other?.[option] === 'string'
-        )
-          options[pattern][option] = patterns[shared[pattern].other[option]][option]
-        else {
-          throw new Error(`No option translation found for ${option} in ${pattern}`)
+        if (shared[pattern]) {
+          if (
+            shared[pattern].dflt &&
+            typeof patterns[shared[pattern].dflt][option] === 'object'
+          ) {
+            options[pattern][option] = patterns[shared[pattern].dflt][option]
+          } else if (
+            typeof shared[pattern].other !== 'undefined' &&
+            typeof shared[pattern].other[option] === 'string'
+          ) {
+            options[pattern][option] = patterns[shared[pattern].other[option]][option]
+          } else {
+            throw new Error(`No option translation found for ${option} in ${pattern}`)
+          }
         }
       }
     }

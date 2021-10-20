@@ -1,0 +1,10 @@
+---
+# Hardcoding this to prevent accidentally dropping the production database
+- hosts: backend.freesewing.org
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Clone production database
+      shell: "mongodump --archive --db=freesewing | mongorestore --archive  --nsFrom='freesewing.*' --nsTo='next_freesewing.*'"
+
+

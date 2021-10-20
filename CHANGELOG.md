@@ -1,7 +1,14 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.0 (2021-10-17)
+
+### bee
+
+#### Added
+
+ - Bee is a bikini
+ - Initial release
 
 ### charlie
 
@@ -15,10 +22,18 @@
 
 ### components
 
+#### Added
+
+ - Added Bee linedrawing
+
 #### Changed
 
  - Added measurements for dolls & giants to Workbench measurments selector
  - Added sampling for dolls & giants to Workbench tests
+
+#### Fixed
+
+ - Added missing linedrawing for Yuri
 
 ### core
 
@@ -30,11 +45,36 @@
 
  - Pattern.on() is now chainable as it returns the Pattern object
 
+### holmes
+
+#### Added
+
+ - Added the `headEase` option
+ - Added the `earLength` option
+ - Added the `earWidth` option
+ - Added the `visorWidth` option
+ - Added the `buttonhole` option
+
+#### Changed
+
+ - The `brim` part has been renamed to `visor` because semantics
+ - The `brimWidth` option is now `visorWidth`
+ - _Gore_ has been changed to _Crown_ in the title
+ - _Ear_ has been changed to _Ear flap_
+ - Added hem allowance at the hem, rather than standard seam allowance
+
 ### hortensia
 
 #### Changed
 
  - Changed the `handleWidth` option type from `mm` to `pct`
+
+### i18n
+
+#### Fixed
+
+ - Fixed bug in resolving of shared pattern options
+ - Removed optional chaining which broke node v12 support
 
 ### jaeger
 
@@ -46,6 +86,13 @@
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1321](https://github.com/freesewing/freesewing/issues/1313)
 
+### lunetius
+
+#### Added
+
+ - Lunetius is a lacerna, a historical Roman cloak
+ - Initial release
+
 ### paco
 
 #### Changed
@@ -56,6 +103,15 @@
 #### Fixed
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1316](https://github.com/freesewing/freesewing/issues/1316)
+
+### pattern-info
+
+#### Changed
+
+ - Added Bee pattern
+ - Added Lunetius pattern
+ - Added Tiberius pattern
+ - Added Walburga pattern
 
 ### penelope
 
@@ -69,6 +125,13 @@
 #### Fixed
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1320](https://github.com/freesewing/freesewing/issues/1316)
+
+### plugin-versionfree-svg
+
+#### Added
+
+ - This is a plugin to strip (FreeSewing) versdion info out of the SVG to allow you to diff your SVG output between FreeSewing versions
+ - Initial release
 
 ### simon
 
@@ -114,6 +177,20 @@
 #### Changed
 
  - Added deprecation warning as we need to rewrite this pattern
+
+### tiberius
+
+#### Added
+
+ - Tiberius is a tunica, a historic Roman tunic
+ - Initial release
+
+### walburga
+
+#### Added
+
+ - Walburga is a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment
+ - Initial release
 
 
 ## 2.18.0 (2021-09-09)

@@ -5,8 +5,8 @@ import { version } from '../package.json'
 export default {
   name: 'lunetius',
   version,
-  design: 'starf',
-  code: 'starf',
+  design: 'Rika Tamaike',
+  code: 'Rika Tamaike',
   department: 'tops',
   type: 'pattern',
   difficulty: 1,
@@ -39,8 +39,8 @@ export default {
     lengthRatio: { pct: 105, min: 60, max: 130 },
     widthRatio: { pct: 100, min: 50, max: 130 },
     length: {
-      list: ['ToKnee', 'ToBelowKnee', 'ToHips', 'ToUpperLeg', 'ToFloor'],
-      dflt: 'ToBelowKnee',
+      list: ['toKnee', 'toBelowKnee', 'toHips', 'toUpperLeg', 'toFloor'],
+      dflt: 'toBelowKnee',
     },
   },
 }

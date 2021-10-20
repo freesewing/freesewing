@@ -1,8 +1,4 @@
----
----
 
-<Fixme>
+Controla lo curvada que es la banda de cintura.
 
-Document this option
-
-</Fixme>
+Incrementar esto dará una cintura curvadora, haciéndola más pequeña en el borde superior de la cintura.

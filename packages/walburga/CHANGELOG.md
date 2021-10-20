@@ -1,6 +1,13 @@
 # Change log for: @freesewing/walburga
 
 
+## 2.19.0 (2021-10-17)
+
+### Added
+
+ - Walburga is a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment
+ - Initial release
+
 
 This is the **initial release**, and the start of this change log.
 

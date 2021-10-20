@@ -1,12 +1,37 @@
-unreleased:
+2.19.0:
+  date: 2021-10-17
 
   Added:
+    bee:
+      - Bee is a bikini
+      - Initial release
+    components:
+      - Added Bee linedrawing
     core:
       - Added support for snapped percentage options
         See https://github.com/freesewing/freesewing/discussions/1331
+    holmes:
+      - Added the `headEase` option
+      - Added the `earLength` option
+      - Added the `earWidth` option
+      - Added the `visorWidth` option
+      - Added the `buttonhole` option
+    lunetius:
+      - Lunetius is a lacerna, a historical Roman cloak
+      - Initial release
+    plugin-versionfree-svg:
+      - This is a plugin to strip (FreeSewing) versdion info out of the SVG
+        to allow you to diff your SVG output between FreeSewing versions
+      - Initial release
+    tiberius:
+      - Tiberius is a tunica, a historic Roman tunic
+      - Initial release
     snapseries:
       - Initial release of `@freesewing/snapseries` wich holds
         commonly used series of snap values for percentage options
+    walburga:
+      - Walburga is a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment
+      - Initial release
 
   Changed:
     charlie:
@@ -16,6 +41,12 @@ unreleased:
       - Added sampling for dolls & giants to Workbench tests
     core:
       - Pattern.on() is now chainable as it returns the Pattern object
+    holmes:
+      - The `brim` part has been renamed to `visor` because semantics
+      - The `brimWidth` option is now `visorWidth`
+      - _Gore_ has been changed to _Crown_ in the title
+      - _Ear_ has been changed to _Ear flap_
+      - Added hem allowance at the hem, rather than standard seam allowance
     hortensia:
       - Changed the `handleWidth` option type from `mm` to `pct`
     jaeger:
@@ -23,6 +54,11 @@ unreleased:
     paco:
       - Changed the `waistbandWidth` option type from `mm` to `pct`
       - Changed the `ankleElastic` option type from `mm` to `pct`
+    pattern-info:
+      - Added Bee pattern
+      - Added Lunetius pattern
+      - Added Tiberius pattern
+      - Added Walburga pattern
     penelope:
       - Changed the `hem` option type from `mm` to `pct`
       - Changed the `waistBandWidth` option type from `mm` to `pct`
@@ -52,6 +88,11 @@ unreleased:
     charlie:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1313](https://github.com/freesewing/freesewing/issues/1313)
+    components:
+      - Added missing linedrawing for Yuri
+    i18n:
+      - Fixed bug in resolving of shared pattern options
+      - Removed optional chaining which broke node v12 support
     jaeger:
       - Support drafting of non-human measurements (dolls & giants)
         Closes [#1321](https://github.com/freesewing/freesewing/issues/1313)

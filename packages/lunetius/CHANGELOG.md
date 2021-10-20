@@ -1,6 +1,13 @@
 # Change log for: @freesewing/lunetius
 
 
+## 2.19.0 (2021-10-17)
+
+### Added
+
+ - Lunetius is a lacerna, a historical Roman cloak
+ - Initial release
+
 
 This is the **initial release**, and the start of this change log.
 

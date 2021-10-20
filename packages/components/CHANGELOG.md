@@ -1,12 +1,20 @@
 # Change log for: @freesewing/components
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.0 (2021-10-17)
+
+### Added
+
+ - Added Bee linedrawing
 
 ### Changed
 
  - Added measurements for dolls & giants to Workbench measurments selector
  - Added sampling for dolls & giants to Workbench tests
+
+### Fixed
+
+ - Added missing linedrawing for Yuri
 
 ## 2.17.0 (2021-07-01)
 

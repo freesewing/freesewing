@@ -1,7 +1,7 @@
 # Change log for: @freesewing/simone
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.0 (2021-10-17)
 
 ### Changed
 

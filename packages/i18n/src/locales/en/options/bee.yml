@@ -1,0 +1,75 @@
+chestEase:
+  title: Chest ease
+  description: Controls the chest ease in the underlying Bella block Bee is based on
+
+waistEase:
+  title: Waist ease
+  description: Controls the waist ease in the underlying Bella block Bee is based on
+
+bustSpanEase:
+  title: Bust span ease
+  description: Controls the bust span ease in the underlying Bella block Bee is based on
+
+topDepth:
+  title: Top Depth
+  description: Controls how far the bikini cup extends upwards
+
+bottomCupDepth:
+  title: Bottom depth
+  description: Controls how far the bikini cup extends downwards
+
+sideDepth:
+  title: Side depth
+  description: Controls how far the bikini cup extends towards the side
+
+sideCurve:
+  title: Side curve
+  description: Controls the curvature of the side of the bikini cup
+
+frontCurve:
+  title: Front curve
+  description: Controls the curvature of the front of the bikini cup
+
+bellaGuide:
+  title: Show Bella
+  description: Shows the outline of the Bella block Bee is based on
+
+ties:
+  title: Ties
+  description: Whether to includes ties, yes or no
+
+bandTieWidth:
+  title: Band (chest) tie width
+  description: Controls the width of the ties around your chest
+
+bandTieLength:
+  title: Band (chest) tie length
+  description: Controls the length of the ties around your chest
+
+bandTieEnds:
+  title: Band (chest) tie ends
+  description: Whether you like straight or pointy ends on the ties around your chest
+
+bandTieColours:
+  title: Band (chest) tie length colours
+  description: Whether you want single color ties around your chest, or dual-coloured ones
+
+neckTieWidth:
+  title: Neck tie width
+  description: Controls the width of the ties around your chest
+
+neckTieLength:
+  title: Neck tie length
+  description: Controls the length of the ties around your chest
+
+neckTieEnds:
+  title: Neck tie ends
+  description: Whether you like straight or pointy ends on the ties around your chest
+
+neckTieColours:
+  title: Neck tie colours
+  description: Whether you want single color ties around your chest, or dual-coloured ones
+
+crossBackTies:
+  title: Cross back ties
+  description: Whether you'd like to cross the ties at the back or not

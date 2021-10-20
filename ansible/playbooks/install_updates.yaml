@@ -1,0 +1,11 @@
+---
+- hosts: '!localhost'
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Update all packages to their latest version
+      apt:
+        name: '*'
+        state: latest
+        update_cache: yes
+

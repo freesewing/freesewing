@@ -141,10 +141,8 @@ function snappedOption(option, pattern) {
           snap,
         }
       }))
-      if (abs < snap.max && abs >= snap.min) return snap.snap
+      if (abs <= snap.max && abs >= snap.min) return snap.snap
   }
-  // If we end up here, the snap config is wrong
-  pattern.raise.warning(`Invalid snap config for option ${option}`)
 
   return abs
 }

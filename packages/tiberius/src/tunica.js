@@ -15,11 +15,12 @@ export default function (part) {
   } = part.shorthand()
 
   // Handle width
-  let width = (options.width === 'ToElbow')
-    ? measurements.shoulderToElbow
-    : (options.width === 'ToMidArm')
-    ? measurements.shoulderToElbow / 2
-    : 0
+  let width =
+    options.width === 'toElbow'
+      ? measurements.shoulderToElbow
+      : options.width === 'toMidArm'
+      ? measurements.shoulderToElbow / 2
+      : 0
   let hwidth = (measurements.shoulderToShoulder / 2 + width) * options.widthBonus
   // Some checks, can be circumvented with forceWidth
   if (options.forceWidth === false) {
@@ -37,11 +38,12 @@ export default function (part) {
     }
   }
   // Other variables
-  const hem_pos = (options.length === 'ToKnee')
-    ? measurements.waistToKnee
-    : (options.length === 'ToMidLeg')
-    ? measurements.waistToKnee / 1.3
-    : measurements.waistToFloor * 0.95
+  const hem_pos =
+    options.length === 'toKnee'
+      ? measurements.waistToKnee
+      : options.length === 'toMidLeg'
+      ? measurements.waistToKnee / 1.3
+      : measurements.waistToFloor * 0.95
   const length = (measurements.hpsToWaistBack + hem_pos) * options.lengthBonus
   const hhead = (measurements.head / 4) * options.headRatio
   const armhole = (measurements.biceps / 2) * 1.3 * options.armholeDrop
@@ -65,19 +67,9 @@ export default function (part) {
     .line(points.topLeft)
     .line(points.bottomLeft)
     .setRender(false)
-  paths.hem = new Path()
-    .move(points.bottomLeft)
-    .line(points.bottom)
-    .setRender(false)
-  paths.fold = new Path()
-    .move(points.bottom)
-    .line(points.top)
-    .setRender(false)
-  paths.seam = paths.saBase
-    .join(paths.hem)
-    .join(paths.fold)
-    .setRender(true)
-    .attr('class', 'fabric')
+  paths.hem = new Path().move(points.bottomLeft).line(points.bottom).setRender(false)
+  paths.fold = new Path().move(points.bottom).line(points.top).setRender(false)
+  paths.seam = paths.saBase.join(paths.hem).join(paths.fold).setRender(true).attr('class', 'fabric')
 
   // clavi
   if (options.clavi) {

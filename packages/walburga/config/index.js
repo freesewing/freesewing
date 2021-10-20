@@ -5,8 +5,8 @@ import { version } from '../package.json'
 export default {
   name: 'walburga',
   version,
-  design: 'starf',
-  code: 'starf',
+  design: 'Rika Tamaike',
+  code: 'Rika Tamaike',
   department: 'tops',
   type: 'pattern',
   difficulty: 1,
@@ -23,14 +23,7 @@ export default {
   ],
   optionGroups: {
     fit: ['headRatio'],
-    style: [
-      'lengthBonus',
-      'widthBonus',
-      'length',
-      'neckoRatio',
-      'hipLengthBonus',
-      'neckline',
-    ],
+    style: ['lengthBonus', 'widthBonus', 'length', 'neckoRatio', 'neckline'],
   },
   measurements: [
     'head',
@@ -53,11 +46,10 @@ export default {
     lengthBonus: { pct: 85, min: 60, max: 130 },
     widthBonus: { pct: 95, min: 50, max: 130 },
     length: {
-      list: ['ToKnee', 'ToMidLeg', 'ToFloor'],
-      dflt: 'ToKnee',
+      list: ['toKnee', 'toMidLeg', 'toFloor'],
+      dflt: 'toKnee',
     },
     neckline: { bool: true },
     neckoRatio: { pct: 100, min: 10, max: 190 },
-    hipLengthBonus: { pct: 95, min: 80, max: 120 },
   },
 }

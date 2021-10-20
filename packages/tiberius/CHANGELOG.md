@@ -1,6 +1,13 @@
 # Change log for: @freesewing/tiberius
 
 
+## 2.19.0 (2021-10-17)
+
+### Added
+
+ - Tiberius is a tunica, a historic Roman tunic
+ - Initial release
+
 
 This is the **initial release**, and the start of this change log.
 

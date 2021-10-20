@@ -1,8 +1,0 @@
----
----
-
-Controls the shoulder seam location on the collar side.
-
-- Increase this option to shift the shoulder seam forward on the collar side
-- Decrease this option to shift the shoulder seam backward on the collar side
-

@@ -6,7 +6,7 @@ export default {
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'bottoms',
-  type: 'block',
+  type: 'pattern',
   difficulty: 3,
   optionGroups: {
     fit: ['seatEase', 'kneeEase', 'waistEase', 'waistbandCurve'],
