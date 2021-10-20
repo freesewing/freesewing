@@ -8,11 +8,21 @@ export default (part) => {
 
   if (complete && paperless) {
     frontDimensions(part, 'left')
-    macro('ld', {
+	  switch (options.buttonholePlacement){
+	case 'leftOverRight':
+	macro('ld', {
       from: points.s3CollarSplit,
       to: points.s3ArmholeSplit,
       d: 15 + sa,
     })
+	break
+	case 'rightOverLeft':
+    macro('ld', {
+      from: points.s3ArmholeSplit,
+      to: points.s3CollarSplit,
+      d: - 15 - sa,
+    })
+	  }
   }
 
   return options.buttonholePlacketStyle === 'seamless'

@@ -199,17 +199,37 @@ switch (options.buttonholePlacement){
     let j
     for (let i = 0; i < options.buttons; i++) {
       j = i + 1
+	switch (options.buttonholePlacement){
+	  case 'leftOverRight':
       macro('vd', {
         from: points['button' + j],
         to: points['button' + i],
         x: points.placketTopEdge.x - 15,
       })
+	  break
+	  case 'rightOverLeft':
+	  macro('vd', {
+        from: points['button' + j],
+        to: points['button' + i],
+        x: points.placketTopEdge.x + 15,
+      })
+	}
     }
+	switch (options.buttonholePlacement){
+		  case 'leftOverRight':
     macro('vd', {
       from: points.placketBottomEdge,
       to: points.placketTopEdge,
       x: points.placketTopEdge.x - 30,
     })
+	break
+	case 'rightOverLeft':
+	macro('vd', {
+      from: points.placketBottomEdge,
+      to: points.placketTopEdge,
+      x: points.placketTopEdge.x + 30,
+    })
+	}
   }
 
   return part

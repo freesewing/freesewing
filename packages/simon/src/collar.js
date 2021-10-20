@@ -14,6 +14,10 @@ export default (part) => {
     options,
   } = part.shorthand()
 
+if (options.collarStyle == 'noCollar'){
+	part.render = false
+}
+
   const draft = function (tweak = 1) {
     const length = measurements.neck * (1 + options.collarEase - options.collarGap) * tweak
     const width = store.get('collarStandWidth') * (1 + options.collarRoll)

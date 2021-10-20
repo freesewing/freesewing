@@ -58,6 +58,7 @@ export default {
       },
       {
         collar: [
+		  'collarStyle',
           'collarAngle',
           'collarStandBend',
           'collarStandCurve',
@@ -181,6 +182,7 @@ export default {
       dflt: 'auto',
     },
 	buttonholePlacement: {dflt:'leftOverRight', list:['leftOverRight','rightOverLeft']},
+	collarStyle: {dflt:'straight', list:['straight','noCollar']},
     // Bool
     boxPleat: { bool: false },
     // Counters

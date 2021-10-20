@@ -83,6 +83,28 @@ switch (options.buttonholePlacement){
 
   // Paperless?
   if (paperless) {
+    if (complete) {
+      points.button0 = points.placketTopEdge
+      let j
+      for (let i = 0; i < options.buttons; i++) {
+        j = i + 1
+	switch (options.buttonholePlacement){
+		  case 'leftOverRight':
+        macro('vd', {
+          from: points['button' + j],
+          to: points['button' + i],
+          x: points.placketTopEdge.x + 15 + sa,
+        })
+		break
+		case 'rightOverLeft':
+        macro('vd', {
+          from: points['button' + j],
+          to: points['button' + i],
+          x: points.placketTopEdge.x - 15 - sa,
+	})
+	}
+      }
+    }
     macro('hd', {
       from: points.hps,
       to: points.placketTopEdge,
@@ -98,6 +120,8 @@ switch (options.buttonholePlacement){
       to: points.placketTopEdge,
       y: points.hps.y - sa - 45,
     })
+	switch (options.buttonholePlacement){
+		  case 'leftOverRight':
     macro('vd', {
       from: points.placketTopEdge,
       to: points.s3CollarSplit,
@@ -108,6 +132,19 @@ switch (options.buttonholePlacement){
       to: points.placketTopEdge,
       x: points.placketTopEdge.x + sa + 15,
     })
+	break
+	case 'rightOverLeft':
+    macro('vd', {
+      from: points.placketTopEdge,
+      to: points.s3CollarSplit,
+      x: points.placketTopEdge.x - sa - 15,
+    })
+    macro('vd', {
+      from: points.placketBottomEdge,
+      to: points.placketTopEdge,
+      x: points.placketTopEdge.x - sa - 15,
+    })
+	}
   }
 
   return part
