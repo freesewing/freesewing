@@ -1,3 +1,9 @@
+---
+title: Bella Fabric options
+---
+
+If you are making a test Bella to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a pattern based on Bella with.    
+
 <Note>
 
 ###### Bella is a block, not a pattern
