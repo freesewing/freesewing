@@ -2,13 +2,13 @@
 title: Bella Cutting
 ---
 
-To make Bella, you'll need:
+**Main fabric**
 
  - Cut **1 Front** part on the fold.
  - Cut **2 Back** parts.
 
 
-These cutting instructions are just for the default Bella block. Adjust your cutting accordingly if you are making changes to the block.
+These cutting instructions are just for the default Bella block. Adjust your cutting accordingly if you have/are making changes to the block.
 
 <Tip>
 
