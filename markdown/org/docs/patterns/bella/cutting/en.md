@@ -1,7 +1,11 @@
+---
+title: Bella Cutting
+---
+
 To make Bella, you'll need:
 
- - 1 Front
- - 2 Back
+ - Cut **1 Front** part.
+ - Cut **2 Back** parts.
 
 <Note>
 
