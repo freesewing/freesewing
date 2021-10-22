@@ -29,7 +29,7 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 ### Step 2: Try it on
 
 - Try it on and check the fit by pinning the back closed whilst wearing it.
-- Make any alterations and try on again.
+- Make any alterations and try it on again.
 - Repeat until you are happy.
 
 <Tip>
