@@ -1,14 +1,14 @@
-##### New pattern: The Yuri Hoodie
+##### New patterns: Bee, Lunetius, Tiberius, and Walburga
 
-Check out the latest addition to our catalog: [the Yuri hoodie pattern](/designs/yuri/).
+Check out the latest additions to our catalog: the [Bee bikini](/designs/bee/), [Lunetius Lacerna](/designs/lunetius/), [Tiberius Tunica](/designs/tiberius/), and [Walburga Wappenrock](/designs/walburga/).
 
-Yuri is a fancy zipless cardigan based on the Huey & Hugo hoodies.
+Bee is a bikini pattern, while Lunetius, Tiberius, and Walburga are historical patterns.
 
-##### Next contributor call on 2 October
+Read more in [our blog](/blog/freesewing-2-19/).
 
-The next contributor call is on **2 October 2021**, Lucian and Karen will host it.
+##### Next contributor call on 30 October
 
-There will also be a [developer call](https://github.com/freesewing/freesewing/issues/1352) 30 minutes prior.
+The next contributor call is on **30 October 2021**, Lucian and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
