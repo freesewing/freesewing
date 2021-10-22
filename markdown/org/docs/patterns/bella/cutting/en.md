@@ -12,7 +12,7 @@ These cutting instructions are just for the default Bella block. Adjust your cut
 
 <Tip>
 
-If you do not have someone help pin you into Bella then you may find it easier to Cut 2 Front parts with seam allowance and sew the back up when constructing so you can pin in the front.
+If you do not have someone to help pin you into Bella then you may find it easier to Cut 2 Front parts with seam allowance and sew the back up when constructing so you can pin in the front.
 
 </Tip>
 
