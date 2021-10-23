@@ -10,7 +10,8 @@ les bords bruts.
 Pour ces instructions, nous supposerons que vous utilisez un sergeur pour les finitions de couture, mais
 nous fournirons également des alternatives. Parmi les autres options pour la finition des coutures figurent la garniture avec des cisailles
 roseuses, coudre un zig-zag le long du bord de la couture pour l'empêcher de s'effilocher, ou de lier avec
-ruban adhésif. </Tip>
+ruban adhésif.
+ </Tip>
 
 ## Étape 1 : Construire les poches arrière
 
