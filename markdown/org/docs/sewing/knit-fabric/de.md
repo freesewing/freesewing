@@ -1,6 +1,6 @@
-***
-
-## title: Strickstoff
+---
+title: Strickstoff
+---
 
 ![Ein Stück graues (Französisch Terry) Trikot, ein Strickstoff](fabric.jpg)
 
@@ -10,4 +10,4 @@ Während das Stoff strickt ist, sieht es nicht wie Strickwaren aus, sondern wie 
 
 Strickstoff wird in Kleidungsstücken verwendet, wo Dehnung erforderlich ist. Das Nähen erfolgt oft mit einem Serger, um die Streckung in den Nähten zu erhalten.
 
-> Wikipedia hat mehr über Strickereien zu sagen: [Stoff in Wikipedia](http://en.wikipedia.org/wiki/Knitted\_fabric)
+> Wikipedia hat mehr über Strickereien zu sagen: [Stoff in Wikipedia](http://en.wikipedia.org/wiki/Knitted_fabric)
