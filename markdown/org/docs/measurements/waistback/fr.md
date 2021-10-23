@@ -1,6 +1,6 @@
-***
-
-## title: Taille arrière
+---
+title: Taille arrière
+---
 
 La mesure **du dos de la taille** est la partie arrière de votre tour de taille.
 
