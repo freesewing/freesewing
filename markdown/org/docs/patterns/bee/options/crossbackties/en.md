@@ -2,7 +2,7 @@
 title: Cross back ties
 ---
 
-Whether you'd like to cross the ties at the back or not
+A variation of Bee, where the neck ties cross and tie at the back with a band that replaces the band tie
 
 
 ## Effect of this option on the pattern

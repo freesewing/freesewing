@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: Front shoulder width (Bella)
 ---
 
-undefined
+Controls the front shoulder width in the underlying Bella block Bee is based on
 
 
 ## Effect of this option on the pattern
