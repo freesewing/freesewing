@@ -9,7 +9,7 @@ function findR(part, height, arcLength) {
     if (diff < 0) {
       a = a * (0.995 + diff / 1000)
     } else {
-      a = a * (1.002 + diff / 1000)
+      a = a * (1.003 + diff / 1000)
     }
     diff = (a * height) / (1 - Math.cos(a / 2)) - arcLength
     iter++
