@@ -1,6 +1,6 @@
-***
-
-## title: Repères
+---
+title: Repères
+---
 
 Il y a deux types de repères. Le repère par défaut est un point dans un cercle.
 
