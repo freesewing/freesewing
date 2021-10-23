@@ -1,3 +1,4 @@
+
 ### Étape 1 : Rejoignez le plein air
 
 Rejoignez la couture extérieure (la couture qui coule le long du côté de votre jambe) de l'avant et de l'arrière.
@@ -14,7 +15,7 @@ Vous avez maintenant une jambe. Répétez cette étape pour les autres jambes, u
 
 Tournez une jambe avec le bon côté dedans et l'autre avec le bon côté.
 
-Maintenant enfoncez le *bon côté* dans le *bon côté en* jambe, afin qu'ils aient leurs *bons côtés ensemble*.
+Maintenant enfoncez le *bon côté* dans le *bon côté en* jambe, afin qu'ils aient leurs _bons côtés ensemble_.
 
 Vous pouvez maintenant aligner et coudre la couture de croix.
 
@@ -22,7 +23,7 @@ Vous pouvez maintenant aligner et coudre la couture de croix.
 
 ###### Vous voulez probablement insérer une fermeture à glissière
 
-Vous devez insérer une fermeture à glissière ou laisser la dernière partie de la couture de croix ouverte (pour que vous puissiez la fixer).\
+Vous devez insérer une fermeture à glissière ou laisser la dernière partie de la couture de croix ouverte (pour que vous puissiez la fixer).  
 Si vous ne le voulez pas, vous ne serez pas en mesure de mettre sur Titan pour vérifier l'ajustement.
 
 </Note>
