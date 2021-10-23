@@ -1,6 +1,6 @@
-***
-
-## title: Hauteur taille sous-poitrine
+---
+title: Hauteur taille sous-poitrine
+---
 
 La **hauteur taille sous-poitrine** est la mesure de votre taille naturelle jusqu'à votre dessous de poitrine (au niveau de l'élastique du soutien-gorge).
 
