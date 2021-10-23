@@ -1,8 +1,7 @@
-***
-
+---
 title: Modèles de couture sur mesure
 order: 200
-----------
+---
 
 Toutes nos patrons de couture sont **sur mesure**.
 
@@ -16,7 +15,7 @@ La génération d'un modèle de couture sur mesure nécessite un compte.
 Pour le visiteur décontracté qui tombe sur notre site web,
 cela ajoute beaucoup de frein avant de pouvoir essayer le site Web.
 
-Pour cette raison, nous avons ajouté des tailles standards depuis la version 2.2.\
+Pour cette raison, nous avons ajouté des tailles standards depuis la version 2.2.  
 We advise against using our standard sizes for actual garment construction.
 
 </Note>
