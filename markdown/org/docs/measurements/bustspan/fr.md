@@ -1,6 +1,6 @@
-***
-
-## title: Écart de poitrine
+---
+title: Écart de poitrine
+---
 
 L'**écart de poitrine** est la distance d'apex à apex - distance horizontale entre les deux sommets de votre poitrine.
 
