@@ -1,3 +1,4 @@
+
 <Tip>
 
 ##### La clé de Waralee est la bande de taille
@@ -11,13 +12,11 @@ d'une certaine manière, Waralee est juste une bande de taille avec un long morc
 <Note>
 
 ##### Les poches sont optionnelles
-
 Traditionnellement, ce type de pantalon n'a pas de poches. Mais je veux mettre mon téléphone, mes clés et mon portefeuille quelque part. J'ai donc inclus des poches dans le motif. Vous pouvez décider par vous-même si vous le souhaitez sur votre pantalon.
 
 Les illustrations des étapes suivantes montrent les pantalons Waralee sans poches. Seuls les emplacements de poche du modèle sont affichés, pour vous aider à vous orienter.
 
 ##### Si vous voulez des poches, faites-les d'abord
-
 si vous voulez faire les poches, les faire avant de mettre un morceau de tissu sur l'autre. Il est plus facile de travailler avec les pièces encore séparées.
 
 </Note>
@@ -38,7 +37,7 @@ Vous pouvez utiliser la méthode qui vous convient le mieux. Dans la version que
 
 ![Disposez les deux parties les unes sur les autres avec de bons côtés ensemble. Coudre la couture](waralee-crotch-seam-no-pockets.png)
 
-Maintenant vous devez coudre les deux parties ensemble. Disposez-les avec *bons côtés ensemble* et cousez la couture le long du cutout. Terminez cette couture et appuyez dessus.
+Maintenant vous devez coudre les deux parties ensemble. Disposez-les avec _bons côtés ensemble_ et cousez la couture le long du cutout. Terminez cette couture et appuyez dessus.
 
 ## Étape 4 : Préparez les quatre chaînes
 
@@ -51,7 +50,6 @@ Par exemple, si ma tour de taille est de 84,6 cm : 84,6 cm divisée par 4 est de
 <Note>
 
 ##### Vous pouvez allonger les attaches avant
-
 Optionnellement, pour allonger les attaches avant, les étendre par la mesure de votre quart de taille.
 
 Lors de la génération de votre patron, une des options de style est appelée « Bande de taille ». Les chaînes, lorsqu'elles sont pliées, doivent avoir la même largeur que celle que vous avez spécifiée pour cette option, soit 2,5cm (1") par défaut.
@@ -62,7 +60,7 @@ Si votre matériau est délicat ou mince, vous pouvez ajouter un peu d'interfaç
 
 </Note>
 
-Repliez-les en deux le long du côté long, *bons côtés ensemble*. Faire piquer le côté long et l'un des côtés courts et tourner la cravate à droite.
+Repliez-les en deux le long du côté long, _bons côtés ensemble_. Faire piquer le côté long et l'un des côtés courts et tourner la cravate à droite.
 
 <Tip>
 
@@ -99,3 +97,4 @@ Tenez le côté avant contre votre ventre et enveloppez les deux cordes autour d
 Voici un article qui montre comment attacher des pantalons d'écharpe : [Comment attacher des pantalons](https://www.wikihow.com/Tie-Wrap-Pants)
 
 Si vous êtes coincé ou avez des questions supplémentaires, vous pouvez toujours atteindre [autres FreeSewers](https://discord.freesewing.org/).
+
