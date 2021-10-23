@@ -1,6 +1,6 @@
-***
-
-## title: Utilisation des hashtags
+---
+title: Utilisation des hashtags
+---
 
 Sur les réseaux sociaux, utilisez les balises spécifiques au patron lorsque vous publiez à propos de notre patron.
 
