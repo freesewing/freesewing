@@ -1,4 +1,6 @@
-Pour faire Bella, tu auras besoin de :
+- - -
+title: Bella Cutting
+- - -
 
  - 1 devant
  - 2 dos
