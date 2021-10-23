@@ -1,6 +1,6 @@
-***
-
-## title: Dégarnir
+---
+title: Dégarnir
+---
 
 ![Dégarnissage en cours](trimming.jpg)
 
