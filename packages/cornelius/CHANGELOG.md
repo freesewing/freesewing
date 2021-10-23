@@ -1,6 +1,16 @@
 # Change log for: @freesewing/cornelius
 
 
+## 2.19.1 (2021-10-23)
+
+### Added
+
+ - Added the zipper guard
+
+### Fixed
+
+ - Fixed issue where the cuff style is not drafted in certain configurations Closes [#1325](https://github.com/freesewing/freesewing/issues/1325)
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed
