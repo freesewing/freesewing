@@ -1,6 +1,6 @@
-***
-
-## title: Carré/Rectangle test
+---
+title: Carré/Rectangle test
+---
 
 Le carré/rectangle test vous permet de vérifier que votre patron a été imprimé à la bonne échelle :
 
