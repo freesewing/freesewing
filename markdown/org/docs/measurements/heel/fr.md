@@ -1,6 +1,6 @@
-***
-
-## title: Tour de talon
+---
+title: Tour de talon
+---
 
 La mesure **de la circonférence** du talon est la mesure la plus étroite qu'un pantalon peut être pour que vous puissiez encore y accéder.
 
