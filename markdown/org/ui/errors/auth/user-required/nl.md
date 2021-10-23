@@ -1,6 +1,6 @@
-***
-
-## title: Een FreeSewing gebruikersaccount is vereist voor toegang tot deze pagina
+---
+title: Een FreeSewing gebruikersaccount is vereist voor toegang tot deze pagina
+---
 
 De pagina die u probeerde te openen is alleen beschikbaar voor FreeSewing gebruikers.
 

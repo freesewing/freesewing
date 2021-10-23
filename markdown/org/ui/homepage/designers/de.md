@@ -1,12 +1,11 @@
-***
-
-***
+- - -
+- - -
 
 #### Was ist parametrisches Design?
 
 Parametrisches Design bezieht sich auf das Verwenden von Parametern oder Variablen um das Ergebnis eines bestimmten Designs innerhalb bestimmter Regeln zu beeinflussen.
 
-In Schnittmustern sind die *Parameter* das, was Nutzer/innen zur Verfügung stellen: ihre Körpermaße und Optionen, die sie ausgewählt haben.\
+In Schnittmustern sind die *Parameter* das, was Nutzer/innen zur Verfügung stellen: ihre Körpermaße und Optionen, die sie ausgewählt haben.  
 Die *Regeln* des Designs ist das, was du als Designer/in festlegst.
 
 #### Was bedeutet das für Designer/innen?

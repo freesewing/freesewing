@@ -1,6 +1,6 @@
-***
-
-## title: Schouderhelling
+---
+title: Schouderhelling
+---
 
 De **schouderhelling** maat geeft aan hoe scherp je schouders naar beneden hellen.
 

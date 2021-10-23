@@ -1,10 +1,10 @@
-***
+---
+title: Part.getId()
+---
 
-## title: Part.getId()
-
-A part's `getId()` method will return an integer the can be used as an
+A part's `getId()` method will return an integer the can be used as an 
 ID Points/Paths/Snippets. This method will ensure the ID is unique be
-keeping an internal record of the ID that have been used.
+keeping an internal record of the ID that have been used. 
 It is typically used when programatically adding points, paths, or snippets.
 
 ## Part.getId() signature
@@ -30,3 +30,5 @@ export default function (part) {
   return part
 }
 ```
+
+

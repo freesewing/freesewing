@@ -1,6 +1,6 @@
-***
-
-## title: Dar comentarios
+---
+title: Dar comentarios
+---
 
 <Note>
 
@@ -11,3 +11,4 @@ Nos encantaría escuchar tus pensamientos sobre lo que te gusta (o sobre FreeSew
 Por favor [únete a nuestra sala de chat](https://discord.freesewing.org/) y comparte tus pensamientos.
 
 </Note>
+

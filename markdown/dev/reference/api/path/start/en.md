@@ -1,6 +1,6 @@
-***
-
-## title: start()
+---
+title: start()
+---
 
 ```js
 Point path.start()
@@ -9,8 +9,8 @@ Point path.start()
 Returns the Point object at the start of the path.
 
 <Example 
-part="path_start" 
-caption="Example of the Path.start() method" 
+  part="path_start" 
+  caption="Example of the Path.start() method" 
 />
 
 ```js

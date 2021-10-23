@@ -1,5 +1,3 @@
-- - -
-- - -
 
 <PatternOptions pattern='carlton' />
 

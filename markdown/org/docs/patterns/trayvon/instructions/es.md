@@ -1,8 +1,9 @@
+
 <Tip>
 
 ###### Solo la punta
 
-La punta es la parte más sensible del empate.
+La punta es la parte más sensible del empate. 
 Si nunca has hecho un empate antes, Le aconsejo que haga algunas puntas de empatado en tela de basura antes de llevar tijeras y agujas a su agradable tejido de empate.
 
 Para practicar la elaboración de consejos, ejecute las construcciones pasos 1 a 4 un par de veces hasta que se le cuelgue el colmillo.
@@ -116,9 +117,9 @@ La costura donde el tejido de corbata se encuentra con el revestimiento de corba
 Únete a la punta de Interface (pieza 1) y la cola de Interface (pieza 2) juntos en el lado no puntiagudo, coincidiendo con el grosor.
 
 > **Or don't** To be honest, I never join the interfacing. Dejo las dos mitades sin ajustes.
->
+> 
 > De esta manera, nunca se puede malinterpretar la longitud de la corbata, y sólo se puede deslizar las partes que se interrelacionan entre sí. Además, crea menos masa en el medio, y es menos trabajo.
->
+> 
 > Así que puedes saltarte este paso, es lo que hago.
 
 ### Paso 10: Únete a la tela de empatado
@@ -170,9 +171,9 @@ Cuando usted haya completado un lado, doblar hacia atrás el otro lado, y vapor 
 Por último, retire la capa superior a lo largo de la mitad de su corbata, y presione en su lugar. Esta vez, usted está haciendo un pliegue agudo a lo largo del medio de la corbata.
 
 > Para aclarar la diferencia entre los dos últimos pliegues, He incluido una línea oscura en la imagen que marca el borde del tejido, o doblar.
->
+> 
 > Como se puede ver, la primera vez que doblamos la tela hacia atrás, y se extiende por encima del centro de la corbata.
->
+> 
 > La segunda vez, la volvemos a doblar en el medio, el lugar donde la cosecharemos en su lugar.
 
 ### Paso 14: Prepara el bucle
@@ -192,7 +193,7 @@ Por último, presione su ciclo abierto para que la costura se sienta en medio y 
 Usa un slipch para coser la mano a lo largo de la longitud de la espalda.
 
 > Tu slipch solo debería atrapar la tela de la corbata en la espalda. Refrain de ejecutarlo a través de la interfaz de empate.
->
+> 
 > Ten cuidado por si corres la banda demasiado profunda, puede que se muestre en el frente, y arruine tu corbata.
 
 Asegúrese de deslizarse en su bucle, en algún lugar alrededor del 1/5º de la longitud de la corbata, comenzando por la punta.

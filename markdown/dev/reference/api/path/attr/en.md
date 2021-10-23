@@ -1,6 +1,6 @@
-***
-
-## title: attr()
+---
+title: attr()
+---
 
 ```js
 Path path.attr(

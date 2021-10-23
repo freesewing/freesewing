@@ -1,6 +1,6 @@
-***
-
-## title: Documentación para desarrolladores
+---
+title: Documentación para desarrolladores
+---
 
 Freesewing.org sólo aloja documentación para makers.
 

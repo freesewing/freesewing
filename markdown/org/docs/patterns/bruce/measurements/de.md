@@ -1,5 +1,7 @@
-***
+- - -
+- - -
 
-***
+
 
 <PatternMeasurements pattern='bruce' />
+

@@ -1,6 +1,6 @@
-***
-
-## title: "gatsby-remark-jargon"
+---
+title: "gatsby-remark-jargon"
+---
 
 <p>
   <a
@@ -57,3 +57,4 @@ This is a [Gatsby](https://gatsbyjs.org/) plugin that wraps our [remark-jargon](
 The [README](https://github.com/freesewing/freesewing/blob/develop/packages/gatsby-remark-jargon/README.md) contains detailed information on the use and purpose of this package.
 
 </Note>
+

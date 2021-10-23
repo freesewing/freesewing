@@ -44,6 +44,7 @@ export default function (part) {
     .setRender(false)
 
   paths.flyFold = new Path().move(points.pW).line(points.pZ).attr('class', 'fabric dashed')
+  store.set('flyLength', paths.flyFold.length())
 
   store.set('frontWaistLength', paths.waistSeam.line(points.flyTop).length())
 
@@ -111,6 +112,7 @@ export default function (part) {
     snippets.n2 = new Snippet('notch', points.pJ)
     snippets.n3 = new Snippet('notch', points.pocketWaist)
     snippets.n4 = new Snippet('notch', points.pocketSide)
+    snippets.n5 = new Snippet('notch', points.pZ)
 
     // Keystone original (see above):
     if (keystone) {

@@ -1,6 +1,5 @@
-***
-
-***
+---
+---
 
 ## Get started in seconds
 
@@ -13,3 +12,4 @@ Setup your development environment with this one-liner:
 </div>
 
 You can try it out right now, or learn more about what to expect.
+

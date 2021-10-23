@@ -1,3 +1,4 @@
+
 <Tip>
 
 ##### Der Schlüssel zu Waralee ist die Taillenband
@@ -11,13 +12,11 @@ in gewisser Weise Warale ist nur eine Taillenband mit einem langen Stück Stoff 
 <Note>
 
 ##### Taschen sind optional
-
 Traditionell, diese Art von Hosen haben keine Taschen. Aber ich möchte mein Telefon, meine Schlüssel und Brieftasche irgendwo platzieren. Also habe ich Taschen in das Muster aufgenommen. Sie können selbst entscheiden, ob Sie sie auf Ihrer Hose haben möchten.
 
 Die Illustrationen in den nächsten Schritten zeigen die Waralee Hosen ohne Taschen. Es werden nur die Pocket Placements aus dem Muster angezeigt, um Ihnen zu helfen, sich selbst zu orientieren.
 
 ##### Wenn du Taschen willst, mache sie zuerst
-
 wenn du die Taschen herstellen willst, machen Sie sie, bevor Sie ein Stück Stoff auf die andere. Es ist einfacher, mit den noch getrennten Teilen zu arbeiten.
 
 </Note>
@@ -38,7 +37,7 @@ Sie können die beste Methode für Sie verwenden. In der Version, die ich zum er
 
 ![Verlege die beiden Teile nebeneinander mit guten Seiten zusammen. Nähen Sie die Schnitt Naht](waralee-crotch-seam-no-pockets.png)
 
-Jetzt kommen Sie zu nähen die beiden Teile zusammen. Lege sie mit *guten Seiten zusammen* und nähe die Naht entlang des Ausschnitts. Beenden Sie die Naht und drücken Sie sie.
+Jetzt kommen Sie zu nähen die beiden Teile zusammen. Lege sie mit _guten Seiten zusammen_ und nähe die Naht entlang des Ausschnitts. Beenden Sie die Naht und drücken Sie sie.
 
 ## Schritt 4: Bereiten Sie die vier Zeichenketten vor
 
@@ -51,7 +50,6 @@ Zum Beispiel, wenn meine Taillenumfang ist 84,6cm: 84,6cm geteilt durch 4 21,2cm
 <Note>
 
 ##### Du kannst die Frontverbindungen
-
 optional verlängern, um die Frontverbindungen zu verlängern, sie um deine Viertel-Taillemessung zu verlängern.
 
 Bei der Generierung Ihres Musters wird eine der Stiloptionen „Taillenband“ genannt. Die Zeichenketten, wenn sie gefaltet sind, sollten die gleiche Breite haben, wie Sie sie für diese Option angegeben haben, standardmäßig 2.5cm (1").
@@ -62,7 +60,7 @@ Wenn Ihr Material empfindlich oder fadenscheinig ist, können Sie eine Schnittst
 
 </Note>
 
-Halb entlang der langen Seite einklappen, *gute Seiten zusammen*. Nähen Sie die lange Seite und eine der kurzen Seiten und drehen Sie die Krawatte rechts aus.
+Halb entlang der langen Seite einklappen, _gute Seiten zusammen_. Nähen Sie die lange Seite und eine der kurzen Seiten und drehen Sie die Krawatte rechts aus.
 
 <Tip>
 
@@ -99,3 +97,4 @@ Halten Sie die Vorderseite gegen Ihren Bauch und wickeln Sie beide Saiten um Sie
 Hier ist ein Artikel, der zeigt, wie man die Wickelhose bindet: [Wie man die Hosen umwickeln kann](https://www.wikihow.com/Tie-Wrap-Pants)
 
 Wenn Sie festsitzen oder zusätzliche Fragen haben, können Sie jederzeit [andere FreeSewers](https://discord.freesewing.org/) erreichen.
+

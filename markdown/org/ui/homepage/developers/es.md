@@ -1,6 +1,5 @@
-***
-
-***
+- - -
+- - -
 
 #### ¿Cómo funciona esto curiosamente?
 
@@ -20,7 +19,7 @@ Nuestra [documentación del desarrollador](https://freesewing.dev) está disponi
 
 #### ¿Quieres ayudar?
 
-Asombroso ❤️\
+Asombroso ❤️   
 Nuestra [documentación del colaborador](https://freesewing.dev/contributors/) es un buen punto de partida. También tenemos guías dedicadas para [traductores](https://freesewing.dev/translators/) y [editores](https://freesewing.dev/editors/).
 
 Por último, pero no por ello menos importante, [únete a nosotros en Discord](https://discord.freesewing.org/) donde todos los demás colaboradores permanecen al margen.

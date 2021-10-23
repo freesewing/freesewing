@@ -1,9 +1,8 @@
-***
-
+---
 title: Working on freesewing.org
 for: developers
 about: Shows you how to setup your development environment to work on freesewing.org, our website for makers
-------------------------------------------------------------------------------------------------------------
+---
 
 To work on freesewing.org, checkout the repository:
 
@@ -40,7 +39,7 @@ If you prefer, you can also use yarn:
 yarn install
 ```
 
-This will take a while. When it's done,
+This will take a while. When it's done, 
 run the following command to start your development environment:
 
 ```bash

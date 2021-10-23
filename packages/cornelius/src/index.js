@@ -9,6 +9,7 @@ import draftLegbandkeystone from './legbandkeystone'
 import draftWaistband from './waistband'
 import draftPocketfacing from './pocketfacing'
 import draftPocket from './pocket'
+import draftZipperguard from './zipperguard'
 // import draftPlacket from './placket'
 
 // Create new design
@@ -23,6 +24,7 @@ Pattern.prototype.draftLegbandkeystone = draftLegbandkeystone
 Pattern.prototype.draftWaistband = draftWaistband
 Pattern.prototype.draftPocketfacing = draftPocketfacing
 Pattern.prototype.draftPocket = draftPocket
+Pattern.prototype.draftZipperguard = draftZipperguard
 // Pattern.prototype.draftPlacket = draftPlacket
 
 export default Pattern

@@ -1,6 +1,6 @@
-***
-
-## title: Circunferencia de Waist
+---
+title: Circunferencia de Waist
+---
 
 La medición de **circunstancia de cintura** es la circunstancia de la cintura debajo de la cinta.
 

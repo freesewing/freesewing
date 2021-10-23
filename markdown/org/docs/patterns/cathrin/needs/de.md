@@ -6,10 +6,10 @@ Du findest eine gute Anleitung zu anderen Werkzeugen unter [Foundations Revealed
 
 Mustervorrätliste:
 
-*   Etwa 0,5 Meter Kernstoff ([siehe Stoffoptionen](/docs/patterns/cathrin/fabric))
-*   Etwa 0,5 Meter Außenstoff ([siehe Stoffoptionen](/docs/patterns/cathrin/fabric))
-*   Boning
-*   Grommets (size 2)
-*   Ungefähr 2 Meter Voreinstellung
-*   Etwa 3 Meter Schnürung
-*   Tools: Grommet setter, awl
+* Etwa 0,5 Meter Kernstoff ([siehe Stoffoptionen](/docs/patterns/cathrin/fabric))
+* Etwa 0,5 Meter Außenstoff ([siehe Stoffoptionen](/docs/patterns/cathrin/fabric))
+* Boning
+* Grommets (size 2)
+* Ungefähr 2 Meter Voreinstellung
+* Etwa 3 Meter Schnürung
+* Tools: Grommet setter, awl

@@ -1,6 +1,6 @@
-***
-
-## title: Tus derechos
+---
+title: Tus derechos
+---
 
 La libertad aplica el Reglamento General de Protección de Datos (PIB) de la Unión Europea (UE).
 

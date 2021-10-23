@@ -1,6 +1,6 @@
-***
-
-## title: Omtrek Hiel
+---
+title: Omtrek Hiel
+---
 
 De **hellomtrek** maat is de smalste maat die een broekspijp kan hebben zodat je er nog aan toe kunt komen.
 

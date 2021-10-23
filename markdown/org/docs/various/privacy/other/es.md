@@ -1,12 +1,13 @@
-***
-
-## title: Otros temas relacionados con la privacidad
+---
+title: Otros temas relacionados con la privacidad
+---
 
 ##### Divulgación completa
 
 Si nos enteramos de una violación de los sistemas de seguridad, le informaremos a usted y a las autoridades.
 
 Si cree que sus datos personales han sido comprometidos, póngase en contacto con joost@joost.at.
+
 
 ##### Proveedores de servicios
 
@@ -25,3 +26,4 @@ Hasta ahora, no hemos recibido ninguna solicitud de la fuerza pública para reve
 ##### Uso por menores de 16 años
 
 Por razones legales, usted necesita tener al menos 16 años para usar freesewing.
+

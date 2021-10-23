@@ -2,7 +2,8 @@ Penélope consiste en una parte delantera y una parte trasera. La pieza delanter
 
 <Tip>
 
-Cuando cortes una pieza en el plegado, recuerda que el pliegue no necesita estar en el centro de la tela.
+Cuando cortes una pieza en el plegado, recuerda que el pliegue no necesita estar en el centro de la tela. 
 Elegir la colocación de tus piezas sabiamente puede reducir en gran medida la cantidad de tejido que necesitas para tu skirt.
 
 </Tip>
+

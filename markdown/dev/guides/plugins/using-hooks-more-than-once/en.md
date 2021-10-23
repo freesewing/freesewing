@@ -1,8 +1,7 @@
-***
-
+---
 title: Using hooks more than once
 order: 80
----------
+---
 
 What if you want to attach more than one method to a hook?
 You could spread them over seperate plugins, but there's a better way.

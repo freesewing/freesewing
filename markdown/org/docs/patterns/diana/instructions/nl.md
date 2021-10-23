@@ -1,11 +1,12 @@
+
 ## Werk de halslijn achteraan af
 
-Knip een strook stof even lang als de halslijn van het rugpand, en ongeveer 3 cm breed.\
+Knip een strook stof even lang als de halslijn van het rugpand, en ongeveer 3 cm breed.  
 Plooi een lange rand van de strook 1 cm om en strijk.
 
 <Tip>
 
-Als je een geweven stof gebruikt, knip deze strook dan schuin van draad. Gebruik je een gebreide stof, knip dan zo dat de richting met de meeste stretch parallel ligt met de lange rand.
+Als je een geweven stof gebruikt, knip deze strook dan schuin van draad. Gebruik je een gebreide stof, knip dan zo dat de richting met de meeste stretch parallel ligt met de lange rand. 
 
 </Tip>
 
@@ -39,7 +40,7 @@ Stik, werk de naad af en strijk.
 
 ## Sluit de zij- en mouwnaad
 
-Leg het voorpand op het achterpand met goede kanten op elkaar, zodat de zijnaden en mouwnaden overeenkomen en de boel er als een kledingstuk begint uit te zien.\
+Leg het voorpand op het achterpand met goede kanten op elkaar, zodat de zijnaden en mouwnaden overeenkomen en de boel er als een kledingstuk begint uit te zien.  
 Zorg dat de naden van het armsgat vooraan en achteraan mooi op elkaar liggen.
 
 Stik, werk de naad af en strijk.

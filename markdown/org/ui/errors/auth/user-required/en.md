@@ -1,6 +1,6 @@
-***
-
-## title: A FreeSewing user account is required to access this page
+---
+title: A FreeSewing user account is required to access this page
+---
 
 The page you tried to access is only available to FreeSewing users.
 

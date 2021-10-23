@@ -1,5 +1,5 @@
-***
+---
+---
 
-***
+<PatternOptions pattern='carlton' />
 
-<PatternOptions pattern='carlon' />

@@ -1,6 +1,6 @@
-***
-
-## title: "@freesewing/mui-theme"
+---
+title: "@freesewing/mui-theme"
+---
 
 <p>
   <a
@@ -51,3 +51,4 @@ This is the [Material-ui](https://material-ui.com/) theme that's used on FreeSew
   <li><a href='https://www.npmjs.com/package/@freesewing/mui-theme'>Package on NPM</a></li>
   <li><a href='https://github.com/freesewing/freesewing/tree/develop/packages/mui-theme'>Code on Github</a></li>
 </ul>
+

@@ -1,6 +1,6 @@
-***
-
-## title: Tweelingnaald
+---
+title: Tweelingnaald
+---
 
 ![Een tweelingnaald van Schmetz](twin-needle.jpg)
 

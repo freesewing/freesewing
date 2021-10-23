@@ -1,6 +1,6 @@
-***
-
-## title: Sierstiksel
+---
+title: Sierstiksel
+---
 
 ![Ik gebruikte een hoop contrasterend rood sierstiksel op deze jeans voor mijn petekind Akki](topstitching.jpg)
 

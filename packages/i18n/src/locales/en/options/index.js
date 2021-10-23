@@ -96,7 +96,10 @@ for (let pattern in patterns) {
     else {
       if (typeof value === 'undefined') {
         if (shared[pattern]) {
-          if (shared[pattern].dflt && typeof patterns[shared[pattern].dflt][option] === 'object') {
+          if (
+            shared[pattern].dflt &&
+            typeof patterns[shared[pattern].dflt][option] === 'object'
+          ) {
             options[pattern][option] = patterns[shared[pattern].dflt][option]
           } else if (
             typeof shared[pattern].other !== 'undefined' &&

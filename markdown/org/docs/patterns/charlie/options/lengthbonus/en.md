@@ -1,4 +1,5 @@
-Controls the length of the entire trousers, which essentially means the length of the legs.
+
+Controls the length of the entire trousers, which essentially means the length of the legs. 
 
 <Note>
 
@@ -9,6 +10,6 @@ the trousers will need to be longer than this to actually hit the floor.
 
 </Note>
 
-## Effect of this option on the pattern
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie\_lengthbonus\_sample.svg "Effect of this option on the pattern")
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_lengthbonus_sample.svg "Effect of this option on the pattern")

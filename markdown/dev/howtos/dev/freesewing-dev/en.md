@@ -1,9 +1,8 @@
-***
-
+---
 title: Working on freesewing.dev
 for: developers
 about: Shows you how to setup your development environment to work on freesewing.dev, our website for developers
-----------------------------------------------------------------------------------------------------------------
+---
 
 To work on freesewing.dev, checkout the repository:
 

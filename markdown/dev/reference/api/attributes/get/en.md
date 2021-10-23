@@ -1,6 +1,6 @@
-***
-
-## title: get()
+---
+title: get()
+---
 
 ```js
 string attributes.get(string key)

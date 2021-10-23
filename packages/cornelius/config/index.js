@@ -22,6 +22,7 @@ export default {
     'legbandkeystone',
     'pocket',
     'pocketfacing',
+    'zipperguard',
   ],
   inject: {
     front: 'frontpoints',
@@ -44,6 +45,7 @@ export default {
     legband: ['back', 'front'],
     legbandkeystone: ['back', 'front'],
     waistband: ['back', 'front'],
+    zipperguard: 'front',
   },
   hide: ['frontpoints'],
   options: {

@@ -1,9 +1,8 @@
-***
-
-## title: Titulos
+---
+title: Titulos
+---
 
 Cada pieza de patrón tiene un título que le indica el número y el nombre de la pieza, así como el nombre del patrón:
-
 <Legend part="title" caption="Example of a title" >
 
 <Note>

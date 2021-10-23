@@ -1,6 +1,6 @@
-***
-
-## title: Wrist circumference
+---
+title: Wrist circumference
+---
 
 The **wrist circumference** measurement is the circumference of your wrist.
 

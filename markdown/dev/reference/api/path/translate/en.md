@@ -1,18 +1,18 @@
-***
-
-## title: translate()
-
+---
+title: translate()
+---
+ 
 ```js
 Path path.translate(float deltaX, float deltaY)
 ```
 
-Returns a path with
+Returns a path with 
 [a translate transform](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#Translate)
 applied.
 
 <Example 
-part="path_translate" 
-caption="Example of the Path.translate() method" 
+  part="path_translate" 
+  caption="Example of the Path.translate() method" 
 />
 
 ```js

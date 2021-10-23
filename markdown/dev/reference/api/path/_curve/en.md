@@ -1,6 +1,6 @@
-***
-
-## title: "\_curve()"
+---
+title: "_curve()"
+---
 
 ```js
 Path path._curve(Point cp2, Point to)

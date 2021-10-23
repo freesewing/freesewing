@@ -1,6 +1,6 @@
-***
-
-## title: Warum verwendet ihr keine doppelten Knipse, um die Rückseite des Schnittes zu markieren?
+---
+title: Warum verwendet ihr keine doppelten Knipse, um die Rückseite des Schnittes zu markieren?
+---
 
 Ein doppelter Knips ist eine gängige Methode, um die Rückseite eines Schnittmusters zu markieren. Gängig, aber nicht universell.
 

@@ -1,8 +1,8 @@
 Um Breanna zu machen, brauchst du:
 
-*   1 Front
-*   2 Zurück
-*   2 Ärmel
+ - 1 Front
+ - 2 Zurück
+ - 2 Ärmel
 
 <Note>
 

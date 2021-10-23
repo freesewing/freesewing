@@ -1,6 +1,6 @@
-***
-
-## title: Hochpunkt Schulter (HPS)
+---
+title: Hochpunkt Schulter (HPS)
+---
 
 Der *Hochpunkt der Schulter* oder *HPS* Punkt wird als Basis für mehrere vertikale Messungen verwendet.
 

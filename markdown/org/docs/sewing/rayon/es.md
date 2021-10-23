@@ -1,6 +1,6 @@
-***
-
-## title: Rayon
+---
+title: Rayon
+---
 
 ![Uso rayón para mi ropa interior](rayon.jpg)
 

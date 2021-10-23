@@ -1,6 +1,6 @@
-***
-
-## title: stretchToScale()
+---
+title: stretchToScale()
+---
 
 ```js
 float utils.stretchToScale(float stretch)

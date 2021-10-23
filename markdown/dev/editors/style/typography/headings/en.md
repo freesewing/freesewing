@@ -1,13 +1,12 @@
-***
-
+---
 title: Headings
 order: 30
----------
+---
 
 Headings serve two different purposes:
 
-*   They can give a title to a subsection within your content
-*   They can structure lengthy content
+ - They can give a title to a subsection within your content
+ - They can structure lengthy content
 
 Those two roles might sound the same, but they are somewhat different.
 
@@ -21,18 +20,18 @@ It also happens to be how we're using headings on this page.
 
 ##### Structuring lengthy content with headings
 
-You can use heading levels 2 and 3 (and if you must, 4) to bring
+You can use heading levels 2 and 3 (and if you must, 4) to bring 
 structure to a lengthy piece of content.
-These headings are intended to make a significant break in
+These headings are intended to make a significant break in 
 a flowing text, and as such come with copious spacing above
 and below them.
 
-In addition, headings of level 2 and 3 will also get an
+In addition, headings of level 2 and 3 will also get an 
 anchor link inserted, allowing users to link to that specific
 heading in any given page.
 
-However, due to subtle differences between *SSR* and client-side
-rendering, anchor links are notoriously unreliable, which is
+However, due to subtle differences between _SSR_ and client-side
+rendering, anchor links are notoriously unreliable, which is 
 why it is almost always better to break up your content in
 smaller pages, rather than 1 big read.
 
@@ -44,6 +43,7 @@ Do not use this for documentation, instead break up your content
 in bite-sized pages.
 
 </Note>
+
 
 ##### Examples
 
@@ -58,6 +58,8 @@ content, as that will be the level of the page title. The example
 below is the exception that confirms the rule.
 
 </Note>
+
+
 
 # Heading 1
 
@@ -94,3 +96,4 @@ on paper (where serif fonts reign).
 This is what a paragraph looks like. Ubuntu is a sans-serif font, giving it
 a somewhat modern look that is associated with reading on screen, rather than
 on paper (where serif fonts reign).
+

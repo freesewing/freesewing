@@ -1,6 +1,6 @@
-***
-
-## title: Bajo pecho
+---
+title: Bajo pecho
+---
 
 La medición del **bajo el pulso** es la circunstancia de tu pecho sin tener en cuenta tus pechos.
 

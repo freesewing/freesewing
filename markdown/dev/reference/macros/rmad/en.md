@@ -1,6 +1,6 @@
-***
-
-## title: rmad
+---
+title: rmad
+---
 
 The `rmad` macro removes all dimensions with the exception of those that were created with a custom ID.
 It is provided by the [dimension plugin](/reference/plugins/dimension/).

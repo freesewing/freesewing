@@ -1,6 +1,6 @@
-***
-
-## title: Taille bis Unterbrustweite
+---
+title: Taille bis Unterbrustweite
+---
 
 Die **Taille zum Unterbrechen** ist die Messung von deiner Taille nach oben hin zu deiner Unterbruchverbindung (wo sich dein BH befindet).
 

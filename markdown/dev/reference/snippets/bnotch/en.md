@@ -1,6 +1,6 @@
-***
-
-## title: bnotch
+---
+title: bnotch
+---
 
 The `bnotch` snippet is intended for notches at the back, or when you
 need an alternative to the default `notch`.
@@ -12,3 +12,4 @@ snippets.demo = new Snippet('bnotch', points.anchor)
 ```
 
 <Example part="snippets_bnotch" caption="An example of the bnotch snippet" />
+

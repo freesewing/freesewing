@@ -1,5 +1,7 @@
-***
+---
+title: "@freesewing/plugin-dimension"
+---
 
-## title: "@freesewing/plugin-dimension"
+ 
 
 <PluginPage plugin="dimension" />

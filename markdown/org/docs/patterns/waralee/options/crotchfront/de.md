@@ -1,5 +1,6 @@
 Der Prozentsatz des Sitzumfangs, den der vordere Schlitz besetzen muss. Dies schafft mehr oder weniger Platz zwischen der Seitennaht und der Vorderseite.
 
-## Effekt dieser Option auf das Muster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](waralee\_crotchfront\_sample.svg "Effekt dieser Option auf das Muster")
+
+## Effekt dieser Option auf das Muster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](waralee_crotchfront_sample.svg "Effekt dieser Option auf das Muster")

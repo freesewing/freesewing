@@ -1,6 +1,6 @@
-***
-
-## title: rmd
+---
+title: rmd
+---
 
 The `rmd` macro removes a dimension.
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
@@ -24,6 +24,7 @@ macro('rmd', {
 })
 ```
 
-| Property | Default | Type     | Description |
+| Property | Default | Type     | Description | 
 |----------|---------|----------|-------------|
 | `id`     |         | `string` | The id of the dimension to remove |
+

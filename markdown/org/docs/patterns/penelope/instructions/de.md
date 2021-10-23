@@ -41,3 +41,7 @@ Of course, if you include a lining, you have to include this in the way you've f
 Als nächstes wird die Taille angehängt, wenn Ihre Version eine hat. First fold it double along the long side and press. Füge deine Schnittstelle hinzu. Nähen Sie es auf der rechten Seite des Stoffes. Then turn it over and press the seam into the waistband. Now use the stitch-in-the-ditch technique to finish the waistband. Fügen Sie Ihre Auswahl an Schließungen hinzu.
 
 Jetzt bleibt nur noch der Rock.
+
+
+
+

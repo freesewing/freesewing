@@ -1,6 +1,6 @@
-***
-
-## title: name
+---
+title: name
+---
 
 ```js
 name: "sorcha"

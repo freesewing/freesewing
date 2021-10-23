@@ -1,3 +1,4 @@
-***
+---
+title: Fabric options
+---
 
-## title: Fabric options

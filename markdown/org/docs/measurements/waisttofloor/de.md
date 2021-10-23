@@ -1,6 +1,6 @@
-***
-
-## title: Taille bis Boden
+---
+title: Taille bis Boden
+---
 
 Die **Taille zum Boden** ist die Messung von der Taille bis zum Boden.
 

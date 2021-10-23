@@ -1,6 +1,6 @@
-***
-
-## title: Logo
+---
+title: Logo
+---
 
 The `Logo` component renders the FreeSewing logo.
 
@@ -9,3 +9,4 @@ The `Logo` component renders the FreeSewing logo.
 ## Example
 
 ![Example of the logo](https://freesewing.org/logo.svg)
+

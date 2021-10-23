@@ -1,6 +1,6 @@
-***
-
-## title: Schulter zu Schulter
+---
+title: Schulter zu Schulter
+---
 
 Die **Schulter an Schulter** misst von der Schulterspitze auf der einen Seite auf den Rücken bis zur Spitze der anderen Schulter.
 

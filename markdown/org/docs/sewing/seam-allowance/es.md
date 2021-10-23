@@ -1,6 +1,6 @@
-***
-
-## title: Margen de costura
+---
+title: Margen de costura
+---
 
 ![El interior de la pierna en un par de vaqueros. La SA es el estrecho oscuro canal de tela junto a la costura. Ha sido zig-zagged para evitar que se fríe](zig-zag.jpg)
 

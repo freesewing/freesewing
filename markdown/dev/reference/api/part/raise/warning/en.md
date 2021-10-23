@@ -1,6 +1,6 @@
-***
-
-## title: Part.raise.warning()
+---
+title: Part.raise.warning()
+---
 
 A part's `raise.warning()` method will log a warning-level event.
 Warning events are typically used to pass information to pattern developers
@@ -41,3 +41,4 @@ export default function (part) {
   return part
 }
 ```
+

@@ -1,6 +1,6 @@
-***
-
-## title: shiftAlong()
+---
+title: shiftAlong()
+---
 
 ```js
 Point path.shiftAlong(float distance[, int stepsPerMm=25])

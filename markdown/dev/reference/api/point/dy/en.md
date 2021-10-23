@@ -1,6 +1,6 @@
-***
-
-## title: dy()
+---
+title: dy()
+---
 
 ```js
 float point.dy(Point point)
@@ -9,8 +9,8 @@ float point.dy(Point point)
 Returns the delta along the Y-axis between this point and the point you pass it.
 
 <Example 
-part="point_dy"
-caption="An example of the Point.dy() method"
+  part="point_dy"
+  caption="An example of the Point.dy() method"
 />
 
 ```js

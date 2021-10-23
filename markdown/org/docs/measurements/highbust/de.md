@@ -1,6 +1,6 @@
-***
-
-## title: Oberbrustweite
+---
+title: Oberbrustweite
+---
 
 Die **Oberbrustweite** ist dein Brust(-korb)umfang, direkt unter deinen Armen gemessen, oberhalb der vollsten Stelle deiner Brust.
 

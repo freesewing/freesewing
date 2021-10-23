@@ -1,6 +1,6 @@
-***
-
-## title: Polsomtrek
+---
+title: Polsomtrek
+---
 
 De **polsomtrek** is de omtrek van je pols.
 

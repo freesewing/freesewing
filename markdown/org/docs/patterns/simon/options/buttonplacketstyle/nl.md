@@ -15,5 +15,4 @@ Aangezien naadloos enkel mogelijk is bij een aangeknipt knopenpat wordt deze opt
 </Note>
 
 ## Effect van deze optie op het patroon
-
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon\_buttonplacketstyle\_sample.svg "Effect van deze optie op het patroon")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_buttonplacketstyle_sample.svg "Effect van deze optie op het patroon")

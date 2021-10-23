@@ -1,6 +1,6 @@
-***
-
-## title: Getreide- und Faltenanzeige
+---
+title: Getreide- und Faltenanzeige
+---
 
 Körnlinien – eine Linie, die das *Stoffkorn* anzeigt – sehen folgendermaßen aus:
 

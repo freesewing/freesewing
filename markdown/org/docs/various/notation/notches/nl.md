@@ -1,6 +1,6 @@
-***
-
-## title: Merktekens
+---
+title: Merktekens
+---
 
 Er zijn twee soorten merktekens. Het standaard merkteken is een punt in een cirkel.
 

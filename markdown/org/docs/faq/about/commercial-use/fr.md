@@ -1,8 +1,7 @@
-***
-
+---
 title: Puis-je utiliser les patrons de FreeSewing à des fins commerciales ?
 order: 200
-----------
+---
 
 Oui, vous pouvez. L'Open Source est un modèle de développement, pas un modèle d'affaires.
 

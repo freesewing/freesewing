@@ -1,6 +1,6 @@
-***
-
-## title: Diepte kruis
+---
+title: Diepte kruis
+---
 
 Demaar voor **diepte kruis** is de hoogte van je taille in relatie tot het oppervlak waar je op zit.
 

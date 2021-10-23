@@ -1,6 +1,6 @@
-***
-
-## title: Sprache
+---
+title: Sprache
+---
 
 Legt die für deine Schnittmuster verwendete Sprache fest.
 

@@ -1,6 +1,6 @@
-***
-
-## title: Oberweite
+---
+title: Oberweite
+---
 
 Die **Oberweite** ist der Umfang des breitesten Teils deiner Brust.
 

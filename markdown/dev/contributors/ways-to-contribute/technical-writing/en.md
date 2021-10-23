@@ -1,5 +1,5 @@
-***
-
-## title: Technical writing
+---
+title: Technical writing
+---
 
 <ReadMore list />

@@ -1,6 +1,6 @@
-***
-
-## title: Profundidad de cromo
+---
+title: Profundidad de cromo
+---
 
 La medición de la profundidad del **cromo** es la altura en la que sube tu cintura de la superficie en la que estás sentado.
 

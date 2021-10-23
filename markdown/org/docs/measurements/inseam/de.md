@@ -1,6 +1,6 @@
-***
-
-## title: Schrittlänge
+---
+title: Schrittlänge
+---
 
 Die **Schrittlänge** ist das Maß von deinem Schritt bis zum Boden.
 

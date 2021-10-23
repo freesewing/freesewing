@@ -1,6 +1,6 @@
-***
-
-## title: "@freesewing/css-theme"
+---
+title: "@freesewing/css-theme"
+---
 
 <p>
   <a

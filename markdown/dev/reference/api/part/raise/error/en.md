@@ -1,6 +1,6 @@
-***
-
-## title: Part.raise.error()
+---
+title: Part.raise.error()
+---
 
 A part's `raise.error()` method will log a error-level event.
 Unlike other raised events which have no side-effects, if there is one or more
@@ -32,3 +32,4 @@ export default function (part) {
   } 
 }
 ```
+

@@ -1,6 +1,6 @@
-***
-
-## title: Use of hashtags
+---
+title: Use of hashtags
+---
 
 On social media, use the pattern-specific tags when posting about our pattern.
 

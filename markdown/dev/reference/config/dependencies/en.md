@@ -1,6 +1,6 @@
-***
-
-## title: dependencies
+---
+title: dependencies
+---
 
 ```js
 dependencies: {
@@ -16,3 +16,4 @@ An object of `key`-`value` pairs that controls the order in which pattern parts 
 See [Part dependencies](/advanced/dependencies) for more in-depth information on dependencies.
 
 </Tip>
+

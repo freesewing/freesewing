@@ -1,6 +1,6 @@
-***
-
-## title: beamIntersectsY()
+---
+title: beamIntersectsY()
+---
 
 ```js
 Point | false utils.beamIntersectsY(Point A, Point B, float Y)

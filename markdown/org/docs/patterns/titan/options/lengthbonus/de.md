@@ -1,3 +1,4 @@
+
 Steuert die Länge der gesamten Hose, was im Wesentlichen die Länge der Beine bedeutet.
 
 <Note>
@@ -10,5 +11,4 @@ Die Hose muss länger sein, um auf den Boden zu kommen.
 </Note>
 
 ## Effekt dieser Option auf das Muster
-
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan\_lengthbonus\_sample.svg "Effekt dieser Option auf das Muster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_lengthbonus_sample.svg "Effekt dieser Option auf das Muster")

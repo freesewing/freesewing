@@ -1,6 +1,6 @@
-***
-
-## title: scalebox
+---
+title: scalebox
+---
 
 The `scalebox` macro adds a *scale box* to your pattern. This box allows
 users to verify their pattern is printed to scale.
@@ -15,7 +15,7 @@ macro('scalebox', {
 })
 ```
 
-| Property    | Default | Type                | Description |
+| Property    | Default | Type                | Description | 
 |-------------|---------|---------------------|-------------|
 | `at`        |         | [Point](/reference/api/point) | The point to anchor the *scale box* on |
 | `lead`      | FreeSewing | String           | The lead text above the title |
@@ -24,3 +24,4 @@ macro('scalebox', {
 | `rotate`    | 0       | Number              | Rotation in degrees |
 
 (\*) `freesewingIsMadeByJoostDeCockAndContributors \n withTheFinancialSupportOfOurPatrons`
+

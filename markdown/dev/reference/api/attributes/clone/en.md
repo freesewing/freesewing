@@ -1,6 +1,6 @@
-***
-
-## title: clone()
+---
+title: clone()
+---
 
 ```js
 Attributes attributes.clone()
@@ -17,3 +17,4 @@ paths.demo = new Path()
 
 paths.clone = paths.demo.clone()
 ```
+

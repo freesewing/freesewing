@@ -1,6 +1,6 @@
-***
-
-## title: pattern
+---
+title: pattern
+---
 
 A reference to [the Pattern object](/reference/api/pattern/).
 

@@ -1,6 +1,6 @@
-***
-
-## title: Schritthöhe
+---
+title: Schritthöhe
+---
 
 Die **Schritthöhe** (auch bekannt als Sitzhöhe, Leibhöhe) ist das Maß dafür, wie weit deine Taille über der Oberfläche ist, auf der du sitzt.
 

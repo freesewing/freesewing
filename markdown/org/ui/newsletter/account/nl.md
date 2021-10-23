@@ -1,6 +1,6 @@
-***
-
-## title: Beheer uw abonnement in uw account
+---
+title: Beheer uw abonnement in uw account
+---
 
 Als geregistreerde gebruiker kunt u [uw nieuwsbriefinstellingen beheren in uw account][1].
 

@@ -13,5 +13,4 @@ Bitte beachten Sie den Standardwert und verwenden Sie dies als Grundlage, um den
 </Note>
 
 ## Effekt dieser Option auf das Muster
-
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita\_sleevelengthbonus\_sample.svg "Effekt dieser Option auf das Muster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_sleevelengthbonus_sample.svg "Effekt dieser Option auf das Muster")

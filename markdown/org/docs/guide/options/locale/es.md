@@ -1,6 +1,6 @@
-***
-
-## title: Idioma
+---
+title: Idioma
+---
 
 Esto determina el idioma utilizado en tu patrón.
 

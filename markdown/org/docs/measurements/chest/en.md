@@ -1,6 +1,6 @@
-***
-
-## title: Chest circumference
+---
+title: Chest circumference
+---
 
 The **chest circumference** measurement wraps around the fullest part of your chest.
 

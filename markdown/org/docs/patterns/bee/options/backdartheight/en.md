@@ -1,9 +1,9 @@
-***
+---
+title: Back dart height (Bella)
+---
 
-## title: undefined
+Controls the back dart height in the underlying Bella block Bee is based on
 
-undefined
 
 ## Effect of this option on the pattern
-
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee\_backdartheight\_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_backdartheight_sample.svg "Effect of this option on the pattern")

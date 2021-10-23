@@ -1,6 +1,6 @@
-***
-
-## title: Measurements graph
+---
+title: Measurements graph
+---
 
 Below is an example of a measurements graph.
 We will generate such a graph for your people as soon as you

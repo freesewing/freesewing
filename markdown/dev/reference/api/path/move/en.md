@@ -1,23 +1,24 @@
-***
-
-## title: move()
+---
+title: move()
+---
 
 ```js
 Path path.move(Point to)
 ```
 
-Moves to a given point without drawing a line.
+Moves to a given point without drawing a line. 
+
 
 <Tip>
 
 ###### Always start your path with a move
 
-When drawing a path, you must always start with a `move()` call,
+When drawing a path, you must always start with a `move()` call, 
 followed by your `line()` and/or `curve()` calls
 and an optional `close()` call.
 
 These calls are chainable, making your code easier to read:
-
+ 
 ```js
 paths.example = new Path()
   .move(points.a)
@@ -27,6 +28,7 @@ paths.example = new Path()
 ```
 
 </Tip>
+
 
 <Example part="path_move" caption="Example of the Path.move() method" />
 

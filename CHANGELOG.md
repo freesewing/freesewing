@@ -1,6 +1,37 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.19.1 (2021-10-23)
+
+### cornelius
+
+#### Added
+
+ - Added the zipper guard
+
+#### Fixed
+
+ - Fixed issue where the cuff style is not drafted in certain configurations Closes [#1325](https://github.com/freesewing/freesewing/issues/1325)
+
+### hortensia
+
+#### Fixed
+
+ - Fixed issue with the handle width not drafting correctly Closes [#1403](https://github.com/freesewing/freesewing/issues/1403)
+
+### simon
+
+#### Fixed
+
+ - Fixed incorrect value for `brianFitCollar` resulting in incorrect collar fit Closes [#1411](https://github.com/freesewing/freesewing/issues/1411)
+
+### simone
+
+#### Fixed
+
+ - Fixed incorrect value for `brianFitCollar` resulting in incorrect collar fit Closes [#1411](https://github.com/freesewing/freesewing/issues/1411)
+
+
 ## 2.19.0 (2021-10-17)
 
 ### bee

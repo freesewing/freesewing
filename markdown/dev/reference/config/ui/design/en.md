@@ -1,6 +1,6 @@
-***
-
-## title: design
+---
+title: design
+---
 
 ```js
 design: "Joost De Cock",

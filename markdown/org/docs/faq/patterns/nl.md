@@ -1,5 +1,5 @@
-***
-
-## title: Naaipatronen
+---
+title: Naaipatronen
+---
 
 <ReadMore list />

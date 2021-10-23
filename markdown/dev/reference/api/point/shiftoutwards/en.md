@@ -1,6 +1,6 @@
-***
-
-## title: shiftOutwards()
+---
+title: shiftOutwards()
+---
 
 ```js
 Point point.shiftOutwards(Point direction, float distance)
@@ -9,8 +9,8 @@ Point point.shiftOutwards(Point direction, float distance)
 Returns a point that is shifted distance beyond target in the direction of target.
 
 <Example 
-part="point_shiftoutwards"
-caption="An example of the Point.shiftOutwards() method"
+  part="point_shiftoutwards"
+  caption="An example of the Point.shiftOutwards() method"
 />
 
 ```js

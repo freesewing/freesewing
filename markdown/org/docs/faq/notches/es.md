@@ -1,6 +1,6 @@
-***
-
-## title: '¿Por qué no usas balizas dobles para marcar la parte trasera del patrón?'
+---
+title: '¿Por qué no usas balizas dobles para marcar la parte trasera del patrón?'
+---
 
 Una doble toma es una manera común de marcar la parte trasera del patrón. Commón, pero no universal.
 

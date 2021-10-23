@@ -1,6 +1,6 @@
-***
-
-## title: Taille tot knie
+---
+title: Taille tot knie
+---
 
 De maat **taille tot knie** is de afstand van je taille tot aan je knie, gemeten langs de zijkant van je lichaam.
 

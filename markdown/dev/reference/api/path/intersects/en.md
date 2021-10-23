@@ -1,8 +1,10 @@
-***
+---
+title: intersects()
+---
 
-## title: intersects()
-
-    array|false path.intersects(Path path)
+```
+array|false path.intersects(Path path)
+```
 
 Returns the Point object(s) where the path intersects with a path you pass it.
 
@@ -53,3 +55,4 @@ for (let p of paths.demo1.intersects(paths.demo2)) {
   snippets[part.getId()] = new Snippet("notch", p);
 }
 ```
+

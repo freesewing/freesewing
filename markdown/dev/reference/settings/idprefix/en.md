@@ -1,6 +1,6 @@
-***
-
-## title: idPrefix
+--- 
+title: idPrefix
+---
 
 Prefixes all IDs in the SVG with the string you pass it. (defaults to `fs-`).
 

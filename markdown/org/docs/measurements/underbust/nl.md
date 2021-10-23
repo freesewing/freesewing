@@ -1,6 +1,6 @@
-***
-
-## title: Onderbuste
+---
+title: Onderbuste
+---
 
 De **onderbuste** maat is de omtrek van je borstkas zonder rekening te houden met je borsten.
 

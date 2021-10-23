@@ -1,6 +1,6 @@
-***
-
-## title: locale
+--- 
+title: locale
+---
 
 A 2-letter language code that indicates what language the user wants.
 

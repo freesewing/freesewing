@@ -1,6 +1,6 @@
-***
-
-## title: Trampa
+---
+title: Trampa
+---
 
 ![Permiso de costura siendo recortado](trimming.jpg)
 

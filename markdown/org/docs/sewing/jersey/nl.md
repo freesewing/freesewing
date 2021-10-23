@@ -1,6 +1,6 @@
-***
-
-## title: Jersey
+---
+title: Jersey
+---
 
 ![Een stuk grijze jersey](knit-fabric.jpg)
 

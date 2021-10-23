@@ -1,6 +1,6 @@
-***
-
-## title: Head circumference
+---
+title: Head circumference
+---
 
 The **head circumference** measurement wraps around the fullest part of your head.
 

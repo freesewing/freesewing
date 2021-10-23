@@ -1,6 +1,6 @@
-***
-
-## title: Contorno de muñeca
+---
+title: Contorno de muñeca
+---
 
 La medición de **circunstancia de la muñeca** es la circunstancia de su muñeca.
 

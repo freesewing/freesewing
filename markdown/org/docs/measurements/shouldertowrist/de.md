@@ -1,6 +1,6 @@
-***
-
-## title: Schulter bis Handgelenk
+---
+title: Schulter bis Handgelenk
+---
 
 Das Maß von **Schulter zu Handgelenk**, auch bekannt als Ärmellänge, bestimmt die Länge deines Ärmels, und verläuft von Schulterpunkt entlang des Armes bis zu deinem Handgelenk.
 

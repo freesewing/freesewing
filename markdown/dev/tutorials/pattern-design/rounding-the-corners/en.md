@@ -1,10 +1,10 @@
-***
-
+---
 title: Rounding the corners
 order: 240
-----------
+---
 
 We already know how to round corners, let the `round` macro do it:
+
 
 ```js
 macro("round", {
@@ -30,8 +30,8 @@ you'll notice that we used this line in the beginning:
   render: true,
 ```
 
-This instructs the `round` macro create a path that draws the rounded corner.
-Whereas by default, it merely constructs the points required to round the corner.
+This instructs the `round` macro create a path that draws the rounded corner. 
+Whereas by default, it merely constructs the points required to round the corner. 
 
 Typically, your rounded corner will be part of a larger path and so you don't want the macro
 to draw it. That's why the `round` macro's `render` property defaults to `false`.
@@ -40,9 +40,9 @@ We've left it out here, and you should also remove it from your earlier use of t
 We merely set `render` to `true` and then `false` at that time so you could see what the macro was doing.
 
 <Note>
-
-There is no need to explicitly specify a default value. While writing `render: false,` also works, it clutters up your code a bit.
-
+  
+  There is no need to explicitly specify a default value. While writing `render: false,` also works, it clutters up your code a bit. 
+  
   </Note>
 
 With our corners rounded, we should update our path.
@@ -73,3 +73,6 @@ and keep the rest of the path as it was.
 The shape our bib is now completed:
 
 <Example pattern="tutorial" part="step10" caption="That is looking a lot like a bib" />
+
+
+

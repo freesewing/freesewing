@@ -1,8 +1,7 @@
-***
-
+---
 title: Adding a showcase on freesewing.org
 for: editors
-------------
+---
 
 Showcase posts have been migrated to [Strapi](https://strapi.io/), a headless CMS system.
 

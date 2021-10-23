@@ -1,6 +1,6 @@
-***
-
-## title: Omtrek taille
+---
+title: Omtrek taille
+---
 
 De maat van je **omtrek taille** is de omtrek van je taille onder je ribbenkast.
 

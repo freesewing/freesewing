@@ -1,19 +1,19 @@
-***
-
-## title: i18n
+---
+title: i18n
+---
 
 [![Run-time plugin](https://img.shields.io/badge/Type-run--time-pink.svg)](/plugins)
- 
+&nbsp;
 [![License: MIT](https://img.shields.io/npm/l/@freesewing/plugin-i18n.svg?label=License)](https://www.npmjs.com/package/@freesewing/plugin-i18n)
- 
-[![Code quality on DeepScan](https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg)](https://deepscan.io/dashboard#view=project\&tid=2114\&pid=2993\&bid=23256)
- 
+&nbsp;
+[![Code quality on DeepScan](https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256)
+&nbsp;
 [![Open issues tagged pkg:plugin-i18n](https://img.shields.io/github/issues/freesewing/freesewing/pkg:plugin-i18n.svg?label=Issues)](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aplugin-i18n)
 
 The **i18n** plugin provides translation for your pattern:
 
-\<Example part="path\_attr" caption="An example in English" design={false} options={{locale: 'en'}} />
-\<Example part="path\_attr" caption="An example in French" design={false} options={{locale: 'fr'}} />
+<Example part="path_attr" caption="An example in English" design={false} options={{locale: 'en'}} />
+<Example part="path_attr" caption="An example in French" design={false} options={{locale: 'fr'}} />
 
 It uses the [`insertText`](/plugins#inserttext) hook to do so.
 
@@ -32,7 +32,7 @@ npm install @freesewing/plugin-i18n
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them
+Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them 
 by passing them to the [`freesewing.Design`](/reference/api#design) constructor:
 
 ```js
@@ -60,3 +60,5 @@ It should be structured as such:
   }
 }
 ```
+
+

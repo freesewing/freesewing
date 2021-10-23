@@ -14,5 +14,4 @@ Während dieser Dart benutzt wird, um das Muster zu formen, müssen Sie den Dart
 </Note>
 
 ## Effekt dieser Option auf das Muster
-
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid\_backscyedart\_sample.svg "Effekt dieser Option auf das Muster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_backscyedart_sample.svg "Effekt dieser Option auf das Muster")

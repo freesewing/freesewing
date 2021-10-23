@@ -1,6 +1,8 @@
-***
+---
+title: backend
+---
 
-## title: backend
+ 
 
 <Note>
 
@@ -15,11 +17,11 @@ using [MongoDB](https://www.mongodb.com/) as our database.
 
 This backend handles the storage and retrieval of user data. Including:
 
-*   User profiles
-*   Models
-*   Recipes
+ - User profiles
+ - Models
+ - Recipes
 
-This backend does not include any code related to our patterns.
+This backend does not include any code related to our patterns. 
 It is only required if you want to use your own instance
 of [freesewing.org](https://github.com/freesewing/backend).
 
@@ -27,8 +29,8 @@ of [freesewing.org](https://github.com/freesewing/backend).
 
 To start this backend, you'll need:
 
-*   A MongoDB database
-*   Configure environment variables (see [configuration](#configuration) below)
+ - A MongoDB database
+ - Configure environment variables (see [configuration](#configuration) below)
 
 There's a few different ways you can get started:
 
@@ -38,7 +40,9 @@ If you just want the backend and provide your own mongo instance,
 you can run [our docker image](https://hub.docker.com/r/freesewing/backend) directly
 from the internet:
 
-    docker run --env-file .env --name fs_backend -d -p 3000:3000 freesewing/backend
+```
+docker run --env-file .env --name fs_backend -d -p 3000:3000 freesewing/backend
+```
 
 Your backend will now be available at http://localhost:3000
 
@@ -47,9 +51,11 @@ Your backend will now be available at http://localhost:3000
 You can use [docker-compose](https://docs.docker.com/compose/) to spin up both the backend
 API and a MongoDB instance. Clone the repository, and run `docker-compose up`:
 
-    git clone git@github.com:freesewing/backend.git
-    cd backend
-    docker-compose up
+```
+git clone git@github.com:freesewing/backend.git
+cd backend
+docker-compose up
+```
 
 Your backend will now be available at http://localhost:3000
 
@@ -58,10 +64,12 @@ Your backend will now be available at http://localhost:3000
 To run the backend from source, you'll need to clone this repository
 and intall dependencies.
 
-    git clone git@github.com:freesewing/backend
-    cd backend
-    npm install
-    npm install --global backpack-core
+```
+git clone git@github.com:freesewing/backend
+cd backend
+npm install
+npm install --global backpack-core
+```
 
 <Note>
 
@@ -71,24 +79,29 @@ We are installing [backpack-core](https://www.npmjs.com/package/backpack-core) g
 
 While developing, you can run:
 
-    npm run develop
+```
+npm run develop
+```
 
 And backpack will compile the backend, and spin it up.
 It will also watch for changes and re-compile every time. Handy!
 
 If you want to run this in production, you should build the code:
 
-    npm run build
+```
+npm run build
+```
 
 Then use something like [PM2](http://pm2.keymetrics.io/) to run it and keep it running.
 
 ## Configuration
 
-This backend can be configured with environment variables.
-We provide an `example.env` file that you can edit and rename to `.env`.
+This backend can be configured with environment variables. 
+We provide an `example.env` file that you can edit and rename to `.env`. 
 This way they will be picked up automatically.
 
 The available variables are listed below, as we as in our [example.env](https://github.com/freesewing/backend/blob/develop/example.env) file.
+
 
 | Variable                  | Description                                      |
 | ------------------------- | ------------------------------------------------ |
@@ -110,7 +123,9 @@ The available variables are listed below, as we as in our [example.env](https://
 
 This API uses [JWT](https://jwt.io/) for authentication. Authenticated calls to this API should include a `Authorization` header as such:
 
-    Authorization: Bearer <token>
+```
+Authorization: Bearer <token>
+```
 
 The `token` is returned from the `/login`, `/oauth/login`, and `/confirm/login` endpoints.
 
@@ -139,17 +154,19 @@ Because of this, this backend comes with a couple of command-line tools to do ba
 
 There's two ways to run tests:
 
-*   `npm run test` will run tests that don't depend on emails
-
+ - `npm run test` will run tests that don't depend on emails
+ 
 ![npm run test](https://github.com/freesewing/backend/blob/develop/test.svg)
-
-*   `npm run testall` will runn all tests, including the ones that depend on email
+ 
+ - `npm run testall` will runn all tests, including the ones that depend on email
 
 ![npm run testall](https://github.com/freesewing/backend/blob/develop/testall.svg)
 
 To run the email tests, spin up a mailhog container with Docker:
 
-    sudo docker run -p 8025:8025 -p 1025:1025 mailhog/mailhog
+```
+sudo docker run -p 8025:8025 -p 1025:1025 mailhog/mailhog
+```
 
 Then, configure your backend as such:
 
@@ -158,13 +175,14 @@ Then, configure your backend as such:
 
 This allows complete end-to-end testing of signup flow and other things the depend on email sent to the user.
 
+
 ## Links
 
-*   💻 Maker site: [freesewing.org](https://freesewing.org)
-*   👩‍💻 Developer site: [freesewing.dev](https://freesewing.dev)
-*   💬 Chat/Support: [discord.freesewing.org](https://discord.freesewing.org)
-*   🐦 Twitter: [@freesewing\_org](https://twitter.com/freesewing\_org)
-*   📷 Instagram: [@freesewing\_org](https://instagram.com/freesewing\_org)
+- 💻 Maker site: [freesewing.org](https://freesewing.org)
+- 👩‍💻 Developer site: [freesewing.dev](https://freesewing.dev)
+- 💬 Chat/Support: [discord.freesewing.org](https://discord.freesewing.org)
+- 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
+- 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
 
 ## License
 

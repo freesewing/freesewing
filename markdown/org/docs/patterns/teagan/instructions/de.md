@@ -1,9 +1,10 @@
+
 ## Schritt 1: Schließe die Schulternähte
 
 ![Schulternähte schließen](step01.svg)
 
-*   Platzieren Sie die Vorder- und Rückseite mit [guten Seiten zusammen](/docs/sewing/good-sides-together) oben. Die Schulternaht ausrichten.
-*   Servieren Sie die Schulternaht oder nähen Sie sie mit einer schmalen Zickzack-Zickzack-Nähte nach der üblichen Nahtzugabe.
+- Platzieren Sie die Vorder- und Rückseite mit [guten Seiten zusammen](/docs/sewing/good-sides-together) oben. Die Schulternaht ausrichten.
+- Servieren Sie die Schulternaht oder nähen Sie sie mit einer schmalen Zickzack-Zickzack-Nähte nach der üblichen Nahtzugabe.
 
 <Note>
 Optional: In einem Drapierstrick können Sie die Schulternähte durch das Nähen der Naht an der Innenseite festigen. Auf einem T-Shirt unterstützen die Schulternähte den Großteil des Gewichts des Kleidungsstücks. Verstärkungen sind nicht erforderlich, aber sie können die Schulternähte davor bewahren, sich im Laufe der Zeit auszudehnen.
@@ -13,13 +14,13 @@ Optional: In einem Drapierstrick können Sie die Schulternähte durch das Nähen
 
 ![In Ärmel setzen](step02.svg)
 
-*   Platzieren Sie Ihre jetzt befestigte Vorder- und Rückseite mit der guten Seite.
-*   Identifizieren Sie die Vorder- und Rückseite jeder Ihrer Ärmel. (So trennen Sie den linken Ärmel von rechts.) (This is how you separate the left sleeve from the right.) On your paper pattern piece, the front side of the sleeve is to the left.
-*   Platzieren Sie einen Ärmel oben auf der Vorder- und Rückseite mit der guten Seite.
-*   Legen Sie die Oberseite der Ärmel mit der Schulternaht an. Vergewissern Sie sich, dass Vorder- und Rückseite des Ärmels mit den Vorder- und Rückenteilen Ihres Hemdes ausgerichtet sind.
-*   Pin Sleeve am Platz entlang des gesamten Armlochs. Es gibt ein bisschen Ärmel Leichtigkeit, was bedeutet, dass der Ärmelkopf etwas länger ist als das Armloch. Leicht im oberen Teil des Ärmelkopfes während der Pinning.
-*   Nähen Sie Ihren angehefteten Ärmel in Platz.
-*   Wiederholen für den anderen Ärmel.
+- Platzieren Sie Ihre jetzt befestigte Vorder- und Rückseite mit der guten Seite.
+- Identifizieren Sie die Vorder- und Rückseite jeder Ihrer Ärmel. (So trennen Sie den linken Ärmel von rechts.) (This is how you separate the left sleeve from the right.) On your paper pattern piece, the front side of the sleeve is to the left.
+- Platzieren Sie einen Ärmel oben auf der Vorder- und Rückseite mit der guten Seite.
+- Legen Sie die Oberseite der Ärmel mit der Schulternaht an. Vergewissern Sie sich, dass Vorder- und Rückseite des Ärmels mit den Vorder- und Rückenteilen Ihres Hemdes ausgerichtet sind.
+- Pin Sleeve am Platz entlang des gesamten Armlochs. Es gibt ein bisschen Ärmel Leichtigkeit, was bedeutet, dass der Ärmelkopf etwas länger ist als das Armloch. Leicht im oberen Teil des Ärmelkopfes während der Pinning.
+- Nähen Sie Ihren angehefteten Ärmel in Platz.
+- Wiederholen für den anderen Ärmel.
 
 ## Schritt 3: Nähen Strickbindung an die Halsöffnung.
 
