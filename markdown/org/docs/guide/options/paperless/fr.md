@@ -1,6 +1,6 @@
-***
-
-## title: Sans papier
+---
+title: Sans papier
+---
 
 Les patrons sans papier ont des marquages supplémentaires pour pouvoir les utiliser sans imprimante.
 
