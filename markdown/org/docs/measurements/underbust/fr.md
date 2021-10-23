@@ -1,6 +1,6 @@
-***
-
-## title: Tour sous poitrine
+---
+title: Tour sous poitrine
+---
 
 La mesure du **tour sous poitrine** est la circonférence de votre poitrine sans tenir compte de vos seins.
 
