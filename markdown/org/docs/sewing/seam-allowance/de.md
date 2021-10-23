@@ -1,6 +1,6 @@
-***
-
-## title: Nahtzugabe
+---
+title: Nahtzugabe
+---
 
 ![Die Innenseite des Beins bei einem Paar Jeans. Die Nahtzugabe ist der dunkle, schmale Streifen neben der Naht. Sie wurde gezick-zackt, um sie vorm Ausfransen zu bewahren](zig-zag.jpg)
 
