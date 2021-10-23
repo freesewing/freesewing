@@ -1,6 +1,6 @@
-***
-
-## title: Gérer votre abonnement dans votre compte
+---
+title: Gérer votre abonnement dans votre compte
+---
 
 En tant qu'utilisateur enregistré, vous pouvez [gérer vos paramètres de newsletter dans votre compte][1].
 
