@@ -1,8 +1,7 @@
-***
-
+---
 layout: onecol
 title: Coupe
-------------
+---
 
 ![Moi coupant un T-shirt](cutting.jpg)
 
