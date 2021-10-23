@@ -1,6 +1,6 @@
 ### Étape 1 : Coudre le devant à la première pièce de la rafale
 
-Placez l'une des pièces scintillantes sur la pièce avant, *de bons côtés ensemble*, afin que les coutures de crotte soient alignées. Épingler ou badigeonner à la marge de couture.
+Placez l'une des pièces scintillantes sur la pièce avant, _de bons côtés ensemble_, afin que les coutures de crotte soient alignées. Épingler ou badigeonner à la marge de couture.
 
 ![Coudre le devant à la première pièce du jeu](step01.png)
 
@@ -42,7 +42,7 @@ Sortez les undies du côté droit. Toutes les coutures de gusset doivent être f
 
 Épingler le côté couture les bons côtés ensemble. Coudre les coutures latérales à votre couture en utilisant un sergeur ou une couture en zigzag.
 
-![!\[Sew the side seams\](etape 7)](step07.png)
+![![Sew the side seams](etape 7)](step07.png)
 
 <Note>
 
