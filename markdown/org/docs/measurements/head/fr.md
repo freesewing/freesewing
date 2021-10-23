@@ -1,6 +1,6 @@
-***
-
-## title: Tour de tête
+---
+title: Tour de tête
+---
 
 La mesure de **tour de tête** se fait autour de la partie la plus large de votre tête.
 
