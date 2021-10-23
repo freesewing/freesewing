@@ -1,6 +1,6 @@
-***
-
-## title: Warum veröffentlicht ihr überhaupt Grundschnitte für Damenkleidung? Sie sind \[hier starke Meinung einfügen].
+---
+title: Warum veröffentlicht ihr überhaupt Grundschnitte für Damenkleidung? Sie sind [hier starke Meinung einfügen].
+---
 
 Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber die Stimmung kann zusammengefasst werden als *warum überhaupt diesen Müll veröffentlichen, es funktioniert absolut nicht*.
 
