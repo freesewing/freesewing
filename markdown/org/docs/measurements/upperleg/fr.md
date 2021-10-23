@@ -1,6 +1,6 @@
-***
-
-## title: Tour de cuisse
+---
+title: Tour de cuisse
+---
 
 Le **tour de cuisse** est la mesure autour de votre jambe, près du sommet de votre jambe.
 
