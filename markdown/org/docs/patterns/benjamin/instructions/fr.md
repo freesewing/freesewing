@@ -16,7 +16,7 @@ Ce patron comprend un sens de droit fil. Ce droit fil est principalement là pou
 
 <Note>
 
-Si tout cela semble très confus, puis-je suggérer de lire la page d'aide
+Si tout cela semble très confus, puis-je suggérer de lire la page d'aide 
 sur [le droit fil de tissu](/docs/sewing/fabric-grain).
 
 </Note>
@@ -30,6 +30,7 @@ Ces rubans peuvent être trouvés dans les meilleures merceries ou peuvent être
 ### Marge de couture
 
 Puisque le nœud papillon est construit endroit contre endroit, tout l'ouvrage devra être retourné. Vous voulez probablement envisager d'utiliser une petite marge de couture de 6 mm (¼ pouces) pour réduire le volume.
+
 
 ## Montage
 
