@@ -1,6 +1,6 @@
-***
-
-## title: Rayonne ou viscose
+---
+title: Rayonne ou viscose
+---
 
 ![J'utilise la rayonne pour mes sous-vêtements](rayon.jpg)
 
