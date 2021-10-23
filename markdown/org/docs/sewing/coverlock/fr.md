@@ -1,6 +1,6 @@
-***
-
-## title: Recouvreuse
+---
+title: Recouvreuse
+---
 
 ![Un ourlet sur un T-shirt, fait à la recouvreuse](coverlock-hem.jpg)
 
