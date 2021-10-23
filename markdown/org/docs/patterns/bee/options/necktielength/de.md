@@ -2,7 +2,7 @@
 title: Neck tie length
 - - -
 
-Controls the length of the ties around your chest
+Controls the length of the ties around your neck
 
 
 ## Effect of this option on the pattern
