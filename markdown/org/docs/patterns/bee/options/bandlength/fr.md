@@ -1,8 +1,8 @@
 - - -
-title: undefined
+title: Band Length (Cross back ties)
 - - -
 
-undefined
+Controls the length of the band around your chest for the cross back ties variation of Bee.
 
 
 ## Effect of this option on the pattern

@@ -2,7 +2,7 @@
 title: Band (chest) tie width
 - - -
 
-Controls the width of the ties around your chest
+Controls the width of the tie/band around your chest
 
 
 ## Effect of this option on the pattern

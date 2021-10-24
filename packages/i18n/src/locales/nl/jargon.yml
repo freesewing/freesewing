@@ -17,6 +17,9 @@ doubleWeltPockets:
 ease:
   term: overwijdte
   description: "Zie <a href='/docs/sewing/ease/'>Overwijdte</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
+edgestitch:
+  term: edgestitch
+  description: "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 fabricGrain:
   term: draadrichting
   description: "Zie <a href='/docs/sewing/fabric-grain/'>Draadrichting</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
@@ -50,6 +53,9 @@ sa:
 serger:
   term: serger/overlock
   description: "Zie <a href='/docs/sewing/serger/'>Serger/Overlock</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
+slipstitch:
+  term: slipstitch
+  description: "See <a href='/docs/sewing/slipstitch/'>Slipstitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 topstitching:
   term: sierstiksel
   description: "Zie <a href='/docs/sewing/topstitching/'>Sierstiksel</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
