@@ -14,6 +14,6 @@ Unten ist ein typisches Layout:
 
 <Tip>
 
-Die [Muster-Notation][1] erklärt alle verschiedenen Markierungen und Linien auf Ihrem Entwurf.
+Die [Schnittmuster-Notation][1] erklärt alle verschiedenen Markierungen und Linien auf deinem Schnittbogen.
 
 </Tip>
