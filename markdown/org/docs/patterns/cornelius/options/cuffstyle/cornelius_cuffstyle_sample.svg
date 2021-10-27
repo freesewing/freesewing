@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" class="freesewing" width="1193mm" height="880.71mm" viewBox="0 0 1193.0048782915949 880.7063338501717"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" class="freesewing" width="0mm" height="0mm" viewBox="0 0 0 0"
 >
 <style type="text/css"> <![CDATA[ 
 text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baseline:reset-size}text.title-name{font-size:7pt;font-weight:500;text-anchor:middle;dominant-baseline:reset-size}text.title-pattern{font-size:4pt;font-weight:500;dominant-baseline:reset-size;text-anchor:middle;font-style:italic}
@@ -39,7 +39,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <g id="fs-container">
 
 <!-- Start of group #fs-part-front -->
-<g id="fs-part-front"  transform="translate(310.12500000000017, 2.00000000000007) translate(419.98672456283805, 0)">
+<g id="fs-part-front" >
 <path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-1" d="M -30.5,707.75 C -19.87,623.61 12.02,371.19 12.02,259 C 12.02,207.62 2.48,161.34 -10.3,122.17" />
 <path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-2" d="M -107.63,0 L -121.75,0 L -243.5,0 L -285.57,0" />
 <path  class="fabric dashed" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-3" d="M -243.5,0 L -251.42,170.67" />
@@ -56,7 +56,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-front -->
 
 <!-- Start of group #fs-part-back -->
-<g id="fs-part-back"  transform="translate(334.2318122022321, 54.6041666666667)">
+<g id="fs-part-back" >
 <path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-13" d="M -18.48,707.75 C 2.95,626.48 67.25,382.67 79.29,271.57 C 94.22,133.83 67.63,29.89 58.77,-4.76" />
 <path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-14" d="M 58.77,-4.76 L -121.75,-52.6" />
 <path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-15" d="M -332.23,260.9 C -280.47,372.08 -263.44,596.04 -225.02,707.75" />
@@ -79,8 +79,8 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-back -->
 
 <!-- Start of group #fs-part-legband -->
-<g id="fs-part-legband"  transform="translate(60.686134934701926, 64.0482435731994) translate(744.1325578961714, 263)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-31" d="M 0,0 L 0,172.75 C 0,260.26 -7.97,285.22 -58.69,356.53 L -19.5,384.4 C 38.9,302.27 48.08,273.53 48.08,172.75 L 48.08,0 C 48.08,-18.54 47.86,-22.47 45.76,-40.89 L 19.14,-62.05 L -2.02,-35.43 C -0.19,-19.44 0,-16.1 0,0 z" />
+<g id="fs-part-legband" >
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-31" d="M 0,0 L 0,172.75 C 0,260.22 -8,285.25 -58.71,356.52 L -19.53,384.4 C 38.87,302.32 48.08,273.49 48.08,172.75 L 48.08,0 C 48.08,-18.53 47.86,-22.48 45.75,-40.89 L 19.14,-62.05 L -2.02,-35.43 C -0.19,-19.45 0,-16.09 0,0 z" />
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-32" d="M 0,0 L 48.08,0" />
 <path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-33" d="M 0,0 L 0,183.78 C 0,193.78 0,380.82 0,390.82 L 48.08,390.82 C 48.08,380.82 48.08,193.78 48.08,183.78 L 48.08,0 C 48.08,-1 48.08,-35.06 48.08,-36.06 L 24.04,-60.1 L 0,-36.06 C 0,-35.06 0,-1 0,0 z" />
 <path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-34" d="M 0,0 L 48.08,0" />
@@ -88,7 +88,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-legband -->
 
 <!-- Start of group #fs-part-legbandkeystone -->
-<g id="fs-part-legbandkeystone"  transform="translate(438.9393472859911, 4.982001744082442) translate(0, 764.3541666666667)">
+<g id="fs-part-legbandkeystone" >
 <path  style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-35" d="M 0,0 C -67.59,8.45 -108.45,12.02 -135.69,12.02 L -147.71,12.02 C -185.76,12.02 -275.23,15.73 -401.06,0 L -424.92,-2.98" />
 <path  style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-36" d="M -424.92,-2.98 L -436.94,93.18" />
 <path  style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-37" d="M -436.94,93.18 L -413.08,96.17 C -278.29,113.02 -209.62,108.94 -141.7,108.94 C -103.14,108.94 -64.51,105.73 12.02,96.17" />
@@ -98,7 +98,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-legbandkeystone -->
 
 <!-- Start of group #fs-part-waistband -->
-<g id="fs-part-waistband"  transform="translate(44.07291666666679, 2.00000000000001) translate(1146.9319616249281, 0)">
+<g id="fs-part-waistband" >
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-40" d="M 0,403.51 L 0,0 L -42.07,0 L -42.07,403.51" />
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-41" d="M -42.07,403.51 L 0,403.51" />
 <path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-42" d="M 0,403.51 L 0,0 L -42.07,0 L -42.07,403.51" />
@@ -108,25 +108,36 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 </g>
 <!-- end of group #fs-part-waistband -->
 
+<!-- Start of group #fs-part-zipperguard -->
+<g id="fs-part-zipperguard" >
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-46" d="M 0,0 L -42.07,0 L -42.07,128.78 C -42.07,152 -23.22,170.85 0,170.85" />
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-47" d="M 0,170.85 L 0,0" />
+<path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-48" d="M 0,0 L -42.07,0 L -42.07,128.78 C -42.07,152 -23.22,170.85 0,170.85" />
+<path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-49" d="M 0,170.85 L 0,0" />
+<path  class="fabric" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-50" d="M 0,0 L -42.07,0 L -42.07,128.78 C -42.07,152 -23.22,170.85 0,170.85" />
+<path  class="fabric" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-51" d="M 0,170.85 L 0,0" />
+</g>
+<!-- end of group #fs-part-zipperguard -->
+
 <!-- Start of group #fs-part-pocket -->
-<g id="fs-part-pocket"  transform="translate(401.2284518643784, 2.000000000000049) translate(744.1325578961714, 0)">
-<path  class="fabric dashed" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-46" d="M -199.83,0 L -199.83,259" />
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-47" d="M -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85" />
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-48" d="M -68.81,0 L -121.75,0 L -143.7,0 L -292.02,0 L -389.36,122.17 L -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
-<path  class="fabric dashed" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-49" d="M -199.83,0 L -199.83,259" />
-<path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-50" d="M -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85" />
-<path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-51" d="M -68.81,0 L -121.75,0 L -143.7,0 L -292.02,0 L -389.36,122.17 L -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
-<path  class="fabric dashed" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-52" d="M -199.83,0 L -199.83,259" />
-<path  class="fabric" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-53" d="M -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85" />
-<path  class="fabric" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-54" d="M -68.81,0 L -121.75,0 L -143.7,0 L -292.02,0 L -389.36,122.17 L -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
+<g id="fs-part-pocket" >
+<path  class="fabric dashed" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-52" d="M -199.83,0 L -199.83,259" />
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-53" d="M -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85" />
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-54" d="M -68.81,0 L -121.75,0 L -143.7,0 L -292.02,0 L -389.36,122.17 L -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
+<path  class="fabric dashed" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-55" d="M -199.83,0 L -199.83,259" />
+<path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-56" d="M -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85" />
+<path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-57" d="M -68.81,0 L -121.75,0 L -143.7,0 L -292.02,0 L -389.36,122.17 L -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
+<path  class="fabric dashed" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-58" d="M -199.83,0 L -199.83,259" />
+<path  class="fabric" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-59" d="M -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85" />
+<path  class="fabric" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-60" d="M -68.81,0 L -121.75,0 L -143.7,0 L -292.02,0 L -389.36,122.17 L -399.23,156.85 C -320.81,156.85 -367.86,259 -199.83,259 C -31.8,259 -78.84,156.85 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
 </g>
 <!-- end of group #fs-part-pocket -->
 
 <!-- Start of group #fs-part-pocketfacing -->
-<g id="fs-part-pocketfacing"  transform="translate(145.6963888888889, 2.000000000000038) translate(854.9020261642067, 263)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-55" d="M -68.81,0 L -121.75,0 L -143.7,0 C -143.7,72.12 -35.11,166.72 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
-<path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-56" d="M -68.81,0 L -121.75,0 L -143.7,0 C -143.7,72.12 -35.11,166.72 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
-<path  class="fabric" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-57" d="M -68.81,0 L -121.75,0 L -143.7,0 C -143.7,72.12 -35.11,166.72 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
+<g id="fs-part-pocketfacing" >
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="3" id="fs-61" d="M -68.81,0 L -121.75,0 L -143.7,0 C -143.7,72.12 -35.11,166.72 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
+<path  class="fabric" style="stroke: hsl(110, 100%, 35%);" data-sample-run="2" data-sample-runs="3" id="fs-62" d="M -68.81,0 L -121.75,0 L -143.7,0 C -143.7,72.12 -35.11,166.72 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
+<path  class="fabric" style="stroke: hsl(220, 100%, 35%);" data-sample-run="3" data-sample-runs="3" id="fs-63" d="M -68.81,0 L -121.75,0 L -143.7,0 C -143.7,72.12 -35.11,166.72 -0.43,156.85 C -19.27,79.37 -54.37,23.14 -68.81,0 z" />
 </g>
 <!-- end of group #fs-part-pocketfacing -->
 </g>
