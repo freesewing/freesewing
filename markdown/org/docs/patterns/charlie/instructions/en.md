@@ -7,6 +7,8 @@ To do so, fold the back panel double with _good sides together_ making sure to m
 
 Now sew the dart close, making sure to use a small stitch length, and to sew all teh way to the end of the dart, even a couple of stitches off the fabric.
 
+![Closed darts](step01.svg)
+
 <Note>
 
 Your back darts should be of equal length. Make sure to sew them precisely.
@@ -63,6 +65,8 @@ Make sure to also catch the top of the pocket bag when doing the back panels.
 What we want to to prevent these edges from ravelling after we've completed our trousers,
 and now is the best time to do so.
 
+![Overlocked leg panels](step03.svg)
+
 ## Step 4:  Construct the front pocket opening
 
 The front pockets are a little unusual because they have the appearance of classic slanted pockets, but are constructed on the side seam.
@@ -84,11 +88,15 @@ There's no right or wrong answer here. You do you.
 
 </Note>
 
+![Pocket bags sewn to facings](step04a.svg)
+
 ### Mark the pocket notch on pocket facing, and front and back leg panels
 
 There's a notch on both front and back leg panels that indicates up to what point the pocket facing should be attached to the side seam.
 
 Make sure to transfer this notch to both the (edge of the) pocket facing and the front trouser leg, since it's important we match them.
+
+![Pocket facings with notches](step04b.svg)
 
 ### Pin or base the pocket to the front and back leg panel
 
@@ -102,6 +110,8 @@ Start with the front, since that's the easier seam. Once you've got some practic
 
 </Note>
 
+![Pocket bags sewn to pant leg panels](step04c.svg)
+
 ### Sew the front pocket in place
 
 Sew from the waist down right until the notch that indicates where to stop.
@@ -109,6 +119,8 @@ Sew from the waist down right until the notch that indicates where to stop.
 ### Press the front pocket slant
 
 Now press the slant of the front pocket, both on the back and front panel, so that it's a sharp crease.
+
+![Pressed front pocket slant](step04d.svg)
 
 ## Step 5:  Close the outseam
 
@@ -123,10 +135,13 @@ That's easy enough at the legs, but at the top we have our pocket, which complic
 
 Make sure everything is neatly aligned. Then sew from the top of the waist down to the top notch (this is just over a cm or half an inch).
 
+![Outer seam sewn until top notch](step05a.svg)
 
 ### Sew the bottom of the outer seam from the bottom notch of the pocket slant
 
 Now move to the bottom notch of the pocket slant, and sew from there all the way to the bottom of the legs.
+
+![Outer seam sewn from lower pocket notch down](step05b.svg)
 
 ### Press the outer seam open
 
@@ -143,6 +158,8 @@ either use a serger to finish the edge, or sew closely to the edge.
 
 Make sure you end up at the point where the bottom part of the outer seam starts.
 
+![Pocket bag, sewn closed](step06a.svg)
+
 ### Finish pocket bag edge
 
 When you're done, you can flip the pocket bag back to the inside of the trouser leg.
@@ -154,17 +171,23 @@ To avoid that, topstitch along the edge of the pocket bag, locking in the seam a
 If your seam allowance is wide, you might want to trim it back first.
 </Note>
 
+![Pocket bag, finished](step06b.svg)
+
 ## Step 7:  Bar-tack the pocket opening
 
 At the place the leg down with the good side up, making sure the pocket bag lies flat and towards the front panel.
 
 Now at the top and bottom of the pocket opening, place a bar-tack perpendicular to the outer seam.
 
+![Bar tacks at pocket openings](step07.svg)
+
 ## Step 8:  Close the inseam
 
 With our front pockets finished, close the inseam of both legs. 
 
 When you're done, press open the inseam.
+
+![Closed inseams](step08.svg)
 
 ## Step 9:  Close the crossseam
 
