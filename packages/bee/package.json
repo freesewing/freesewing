@@ -40,7 +40,8 @@
   },
   "peerDependencies": {
     "@freesewing/core": "^2.19.1",
-    "@freesewing/plugin-bundle": "^2.19.1"
+    "@freesewing/plugin-bundle": "^2.19.1",
+    "@freesewing/bella": "^2.19.1"
   },
   "dependencies": {},
   "devDependencies": {

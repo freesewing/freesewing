@@ -39,6 +39,9 @@ _types:
 aaron:
   peer:
     '@freesewing/brian': *freesewing
+bee:
+  peer:
+    '@freesewing/bella': *freesewing
 bent:
   peer:
     '@freesewing/brian': *freesewing
