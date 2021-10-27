@@ -1,6 +1,10 @@
 unreleased:
 
-  changed:
+  Fixed:
+    cornelius:
+      - Removed lingering console.log statements
+
+  Changed:
     trayvon:
       - Migrated the `knotWidth` and `tipWidth` options from mm to snapped pct
 

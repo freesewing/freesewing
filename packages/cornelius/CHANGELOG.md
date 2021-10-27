@@ -1,6 +1,12 @@
 # Change log for: @freesewing/cornelius
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Removed lingering console.log statements
+
 ## 2.19.1 (2021-10-23)
 
 ### Added
