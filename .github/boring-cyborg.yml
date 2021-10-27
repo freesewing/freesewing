@@ -84,6 +84,7 @@ labelPRBasedOnFilePath:
   ":package: walburga": [ packages/walburga/* ]
   ":package: waralee": [ packages/waralee/* ]
   ":package: yuri": [ packages/yuri/* ]
+  ":book: documentation": [ markdown/* ]
 
 labelerFlags:
   labelOnPRUpdates: true
