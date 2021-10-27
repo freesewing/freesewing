@@ -1,14 +1,13 @@
 export default function (part) {
   let { Point, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
     part.shorthand()
-  
+
   const cc = 0.551915024494 // circle constant
 
     let halfInch = store.get('halfInch')
     let flyWidth = store.get('flyWidth') *halfInch
     let flyLength = store.get('flyLength')
-    console.log( {flyWidth: flyWidth, flyLength: flyLength})
-  
+
     points.pA = new Point(0, 0)
     points.pB = points.pA.shift(180, flyWidth)
     points.pC = points.pB.shift(270, flyLength -flyWidth)
@@ -16,26 +15,21 @@ export default function (part) {
     points.pDcpC = points.pD.shift(180, flyWidth * cc)
     points.pCcpD = points.pC.shift(270, flyWidth * cc)
 
-    console.log( points.pA )
-    console.log( points.pB )
-    console.log( points.pC )
-    console.log( points.pD )
-
     paths.seam = new Path()
       .move(points.pA)
       .line(points.pB)
       .line(points.pC)
       .curve(points.pCcpD, points.pDcpC, points.pD)
       .attr('class', 'fabric')
-  
+
     paths.seam2 = new Path().move(points.pD).line(points.pA).attr('class', 'fabric')
-  
+
     if (complete) {
       macro('cutonfold', {
         from: points.pD,
         to: points.pA,
       })
-  
+
       points.logo = points.pA.shiftFractionTowards(points.pC, 0.5)
       snippets.logo = new Snippet('logo', points.logo)
       points.title = points.logo.shift(90, 70)
@@ -47,7 +41,7 @@ export default function (part) {
       points.__titleNr.attr('data-text-class', 'center')
       points.__titleName.attr('data-text-class', 'center')
       points.__titlePattern.attr('data-text-class', 'center')
-  
+
       if (sa) {
         paths.sa = new Path()
           .move(points.pA)
@@ -57,7 +51,7 @@ export default function (part) {
           .attr('class', 'fabric sa')
       }
     }
-  
+
     // Paperless?
     if (paperless) {
       macro('hd', {
@@ -71,7 +65,7 @@ export default function (part) {
         x: points.pA.x + 15,
       })
     }
-  
+
     return part
   }
-  
+
