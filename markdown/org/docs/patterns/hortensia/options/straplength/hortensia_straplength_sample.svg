@@ -54,44 +54,44 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-sidepanel -->
 
 <!-- Start of group #fs-part-strap -->
-<g id="fs-part-strap"  transform="translate(2.1, 2) translate(0, 270.9756081355)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-11" d="M -0.1,0 L -0.1,200.23 L 0.1,200.23 L 0.1,0 L -0.1,0 z" />
+<g id="fs-part-strap"  transform="translate(11.889999999999999, 2) translate(0, 270.9756081355)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-11" d="M -9.89,0 L -9.89,200.23 L 9.89,200.23 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-12" d="M 0,0 L 0,200.23" />
 <text><textPath xlink:href="#fs-12"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-13" d="M -0.1,0 L -0.1,252.14 L 0.1,252.14 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-13" d="M -9.89,0 L -9.89,252.14 L 9.89,252.14 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-14" d="M 0,0 L 0,252.14" />
 <text><textPath xlink:href="#fs-14"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-15" d="M -0.1,0 L -0.1,304.06 L 0.1,304.06 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-15" d="M -9.89,0 L -9.89,304.06 L 9.89,304.06 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-16" d="M 0,0 L 0,304.06" />
 <text><textPath xlink:href="#fs-16"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-17" d="M -0.1,0 L -0.1,355.97 L 0.1,355.97 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-17" d="M -9.89,0 L -9.89,355.97 L 9.89,355.97 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-18" d="M 0,0 L 0,355.97" />
 <text><textPath xlink:href="#fs-18"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-19" d="M -0.1,0 L -0.1,407.88 L 0.1,407.88 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-19" d="M -9.89,0 L -9.89,407.88 L 9.89,407.88 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-20" d="M 0,0 L 0,407.88" />
 <text><textPath xlink:href="#fs-20"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-21" d="M -0.1,0 L -0.1,459.79 L 0.1,459.79 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-21" d="M -9.89,0 L -9.89,459.79 L 9.89,459.79 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-22" d="M 0,0 L 0,459.79" />
 <text><textPath xlink:href="#fs-22"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-23" d="M -0.1,0 L -0.1,511.7 L 0.1,511.7 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-23" d="M -9.89,0 L -9.89,511.7 L 9.89,511.7 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-24" d="M 0,0 L 0,511.7" />
 <text><textPath xlink:href="#fs-24"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-25" d="M -0.1,0 L -0.1,563.62 L 0.1,563.62 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-25" d="M -9.89,0 L -9.89,563.62 L 9.89,563.62 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-26" d="M 0,0 L 0,563.62" />
 <text><textPath xlink:href="#fs-26"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-27" d="M -0.1,0 L -0.1,615.53 L 0.1,615.53 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-27" d="M -9.89,0 L -9.89,615.53 L 9.89,615.53 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-28" d="M 0,0 L 0,615.53" />
 <text><textPath xlink:href="#fs-28"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-29" d="M -0.1,0 L -0.1,667.44 L 0.1,667.44 L 0.1,0 L -0.1,0 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-29" d="M -9.89,0 L -9.89,667.44 L 9.89,667.44 L 9.89,0 L -9.89,0 z" />
 <path  data-text="FoldLine" data-text-class="center text-xs" class="lining dashed" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-30" d="M 0,0 L 0,667.44" />
 <text><textPath xlink:href="#fs-30"  startOffset="50%" ><tspan  class="center text-xs">FoldLine</tspan></textPath>
 </text>
@@ -204,7 +204,7 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <!-- end of group #fs-part-sidepanelreinforcement -->
 
 <!-- Start of group #fs-part-zipperpanel -->
-<g id="fs-part-zipperpanel"  transform="translate(2, 2) translate(4.2, 270.9756081355)">
+<g id="fs-part-zipperpanel"  transform="translate(2, 2) translate(23.779999999999998, 270.9756081355)">
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-81" d="M 0,0 L 0,266.98 L 4.34,266.98 L 4.34,0 L 0,0 z" />
 <path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-82" d="M 0,0 L 0,266.98 L 4.34,266.98 L 4.34,0 L 0,0 z" />
 <path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-83" d="M 0,0 L 0,266.98 L 4.34,266.98 L 4.34,0 L 0,0 z" />
