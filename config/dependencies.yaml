@@ -223,6 +223,9 @@ teagan:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
+trayvon:
+  peer:
+    '@freesewing/snapseries': *freesewing
 utils:
   peer:
     'tlds': '^1.221.1'

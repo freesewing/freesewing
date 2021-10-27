@@ -1,6 +1,9 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+
 ## 2.19.1 (2021-10-23)
 
 ### cornelius

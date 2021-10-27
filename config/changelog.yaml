@@ -1,3 +1,9 @@
+unreleased:
+
+  changed:
+    trayvon:
+      - Migrated the `knotWidth` and `tipWidth` options from mm to snapped pct
+
 2.19.1:
   date: 2021-10-23
 
