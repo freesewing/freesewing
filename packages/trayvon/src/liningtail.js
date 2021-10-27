@@ -1,14 +1,14 @@
 import { calculateHelpers, draftTieShape, seamAllowance, tieShapeDimensions } from './shared'
 
 export default (part) => {
-  let { Path, Snippet, complete, macro, options, paths, points, paperless, sa, snippets, store } =
+  let { Path, Snippet, complete, macro, options, paths, points, paperless, sa, snippets, store, absoluteOptions } =
     part.shorthand()
 
   calculateHelpers(part)
   draftTieShape(part, store.get('backTip') * 2.5, options.knotWidth * 2.5)
 
   // Cut part short
-  points.cutRight = points.tipRight.shiftTowards(points.midRight, options.tipWidth * 2.5)
+  points.cutRight = points.tipRight.shiftTowards(points.midRight, absoluteOptions.tipWidth * 2.5)
   points.cutLeft = points.cutRight.flipX()
 
   // Overwrite path

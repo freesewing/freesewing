@@ -1,10 +1,10 @@
 import { draftTieShape, tieShapeDimensions, calculateHelpers } from './shared'
 
 export default (part) => {
-  let { options, paths, points, macro, complete, paperless, Path, store } = part.shorthand()
+  let { options, paths, points, macro, complete, paperless, Path, store, absoluteOptions } = part.shorthand()
 
   calculateHelpers(part)
-  draftTieShape(part, store.get('backTip'), options.knotWidth)
+  draftTieShape(part, store.get('backTip'), absoluteOptions.knotWidth)
   paths.seam.attributes.add('class', 'interfacing')
 
   // Complete pattern?
