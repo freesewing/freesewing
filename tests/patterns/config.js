@@ -151,7 +151,7 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.mm).to.be.true
       })
-      if (deprecated.indexOf(design) === -1) {
+      if (deprecated.indexOf(design) === -1 && option.testIgnore !== true) {
         it(`    - Patterns should not use mm options`, () => {
           expect("Does not use mm").to.be.true
         })
