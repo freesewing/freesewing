@@ -1,6 +1,12 @@
 # Change log for: @freesewing/trayvon
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Migrated the `knotWidth` and `tipWidth` options from mm to snapped pct
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

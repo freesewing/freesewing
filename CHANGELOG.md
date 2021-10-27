@@ -3,6 +3,18 @@
 
 ## unreleased (NaN-NaN-NaN)
 
+### cornelius
+
+#### Fixed
+
+ - Removed lingering console.log statements
+
+### trayvon
+
+#### Changed
+
+ - Migrated the `knotWidth` and `tipWidth` options from mm to snapped pct
+
 
 ## 2.19.1 (2021-10-23)
 
