@@ -7,7 +7,7 @@ Dazu falten Sie die Rückseite doppelt mit _guten Seiten zusammen_ und stellen S
 
 Nähen Sie nun den Dart schließend, achten Sie darauf, eine kleine Nählänge zu verwenden, und bis zum Ende des Darts nähen, sogar ein paar Nähte vom Stoff.
 
-![Closed darts](step01.svg)
+![Geschlossene Abnäher](step01.svg)
 
 <Note>
 

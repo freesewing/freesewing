@@ -1,3 +1,3 @@
-Lunetius consists only of one part, the *lacerna* itself.
+Lunetius besteht nur aus einem Teil, die *lacerna* selbst:
 
-- cut *1 lacerna*, on the fold
+- schneide *1 Lacerna*, _im Stoffbruch_

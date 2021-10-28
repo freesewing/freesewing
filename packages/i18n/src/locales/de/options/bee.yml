@@ -1,9 +1,9 @@
 ---
 chestEase:
-  title: Chest ease
+  title: Brustzugabe
   description: Controls the chest ease in the underlying Bella block Bee is based on
 waistEase:
-  title: Waist ease
+  title: Taillenzugabe
   description: Controls the waist ease in the underlying Bella block Bee is based on
 bustSpanEase:
   title: Bust span ease
