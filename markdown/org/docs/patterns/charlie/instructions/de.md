@@ -1,5 +1,5 @@
 
-## Schritt 1: Schließe den Rückendart
+## Schritt 1: Nähe den hinteren Abnäher
 
 Als erstes werden wir den Taillendart auf der Rückseite schließen.
 
@@ -11,13 +11,13 @@ Nähen Sie nun den Dart schließend, achten Sie darauf, eine kleine Nählänge z
 
 <Note>
 
-Ihr Rückendart sollte gleich lang sein. Achten Sie darauf, sie genau zu nähen.
+Deine hinteren Abnäher sollten dieselbe Länge haben. Achte darauf, sie präzise zu nähen.
 
 </Note>
 
 ## Schritt 2: Baue die hinteren Taschen
 
-Follow [our double welt pocket instructions](/docs/sewing/double-welt-pockets/) to create the back welt pockets.
+Schau dir [unsere Anleitung für die Doppelpaspeltasche](/docs/sewing/double-welt-pockets/) an, um die hinteren Paspeltaschen zu erstellen.
 
 <Note>
 
