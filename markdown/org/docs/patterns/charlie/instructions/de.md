@@ -15,7 +15,7 @@ Deine hinteren Abnäher sollten dieselbe Länge haben. Achte darauf, sie präzis
 
 </Note>
 
-## Schritt 2: Baue die hinteren Taschen
+## Schritt 2: Konstruiere die hinteren Taschen
 
 Schau dir [unsere Anleitung für die Doppelpaspeltasche](/docs/sewing/double-welt-pockets/) an, um die hinteren Paspeltaschen zu erstellen.
 
