@@ -170,6 +170,7 @@ export default (part) => {
     snippets,
     Snippet,
     sa,
+    absoluteOptions,
   } = part.shorthand()
 
   // Let's get to work
@@ -215,7 +216,7 @@ export default (part) => {
   points.kneeOutCp1 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
   points.seatOutCp1 = points.seatOut.shift(
     90,
-    measurements.waistToHips * options.waistHeight + options.waistbandWidth
+    measurements.waistToHips + absoluteOptions.waistbandWidth
   )
   points.seatOutCp2 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
 
@@ -270,9 +271,9 @@ export default (part) => {
   adaptInseam()
 
   // Only now style the waist lower if requested
-  if (options.waistHeight < 1 || options.waistbandWidth > 0) {
+  if (options.waistHeight < 1 || absoluteOptions.waistbandWidth > 0) {
     points.styleWaistOut = drawOutseam().shiftAlong(
-      measurements.waistToHips * (1 - options.waistHeight) + options.waistbandWidth
+      measurements.waistToHips + absoluteOptions.waistbandWidth
     )
     points.styleWaistIn = utils.beamsIntersect(
       points.styleWaistOut,

@@ -5,6 +5,8 @@ unreleased:
       - Removed lingering console.log statements
 
   Changed:
+    titan:
+      - Migrated the `waistbandWidth` option from mm to snapped pct
     trayvon:
       - Migrated the `knotWidth` and `tipWidth` options from mm to snapped pct
 
