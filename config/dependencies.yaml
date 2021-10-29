@@ -195,6 +195,9 @@ remark-jargon:
   peer:
     'remark': '^13.0.0'
     'remark-html': '^13.0.1'
+shin:
+  peer:
+    '@freesewing/snapseries': *freesewing
 simon:
   peer:
     '@freesewing/brian': *freesewing
@@ -226,6 +229,9 @@ teagan:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
+titan:
+  peer:
+    '@freesewing/snapseries': *freesewing
 trayvon:
   peer:
     '@freesewing/snapseries': *freesewing
