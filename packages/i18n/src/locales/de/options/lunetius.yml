@@ -1,16 +1,16 @@
 ---
 lengthRatio:
-  title: Length ratio
-  description: Controls the length of the garment
+  title: Längenverhältnis
+  description: Steuert die Länge des Kleidungsstückes
 widthRatio:
-  title: Width ratio
-  description: Controls the width of the garment
+  title: Breitenverhältnis
+  description: Steuert die Breite des Kleidungsstückes
 length:
-  title: Length
+  title: Länge
   description: Choose from the different length styles
   options:
     toKnee: On the knee
     toBelowKnee: Below the knee
     toHips: On the hips
     toUpperLeg: Below the hips
-    toFloor: To the floor
+    toFloor: Zum Boden

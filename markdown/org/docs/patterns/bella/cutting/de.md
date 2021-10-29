@@ -2,13 +2,13 @@
 title: Bella Cutting
 - - -
 
-**Main fabric**
+**Oberstoff**
 
- - Cut **1 Front** part on the fold.
- - Cut **2 Back** parts.
+ - Schneide **1 Vorderteil** im Stoffbruch.
+ - Schneide **2 Rückteile**.
 
 
-These cutting instructions are just for the default Bella block. Adjust your cutting accordingly if you have/are making changes to the block.
+Diese Anleitung ist nur für den Bella-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
 <Tip>
 

@@ -1,8 +1,8 @@
 
 <Fixme>
 
-This documentation page is yet to be written.
+Diese Dokumentation muss erst noch geschrieben werden.
 
-Sorry for the inconvenience.
+Entschuldigung für die Unannehmlichkeiten.
 
 </Fixme>

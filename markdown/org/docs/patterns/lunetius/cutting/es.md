@@ -1,3 +1,3 @@
-Lunetius consists only of one part, the *lacerna* itself.
+Lunetius consists only of one part, the *lacerna* itself:
 
-- cut *1 lacerna*, on the fold
+- cut *1 lacerna*, _on the fold_
