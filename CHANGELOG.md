@@ -9,6 +9,12 @@
 
  - Removed lingering console.log statements
 
+### sandy
+
+#### Changed
+
+ - Migrated the `waistbandWidth` option from mm to snapped pct
+
 ### titan
 
 #### Changed

@@ -15,6 +15,7 @@ export default function (part) {
     complete,
     paperless,
     macro,
+    absoluteOptions,
   } = part.shorthand()
 
   // Circumference of the top of the waistband, calculated from the waistbandPosition option
@@ -29,7 +30,7 @@ export default function (part) {
     store.set(
       'bottomCircumference',
       store.get('topCircumference') +
-        (options.waistbandWidth * (measurements.hips - measurements.waist)) /
+        (absoluteOptions.waistbandWidth * (measurements.hips - measurements.waist)) /
           measurements.waistToHips
     )
   } else {
@@ -83,7 +84,7 @@ export default function (part) {
    * arc with the length of the skirt added
    */
   let radiusHem =
-    radiusWaist + store.get('fullLength') * options.lengthBonus - options.waistbandWidth
+    radiusWaist + store.get('fullLength') * options.lengthBonus - absoluteOptions.waistbandWidth
 
   /**
    * The ring sector will be rotated an angle an/2 so we

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/sandy
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Migrated the `waistbandWidth` option from mm to snapped pct
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

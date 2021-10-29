@@ -16,6 +16,7 @@ export default function (part) {
     complete,
     paperless,
     macro,
+    absoluteOptions,
   } = part.shorthand()
 
   // Calculate the corners of the rectangle and other auxiliar points
@@ -25,8 +26,8 @@ export default function (part) {
     store.get('topCircumference') / 2 + store.get('waistbandOverlap'),
     0
   )
-  points.topRight = points.centerRight.shift(90, options.waistbandWidth)
-  points.topLeft = points.centerLeft.shift(90, options.waistbandWidth)
+  points.topRight = points.centerRight.shift(90, absoluteOptions.waistbandWidth)
+  points.topLeft = points.centerLeft.shift(90, absoluteOptions.waistbandWidth)
   points.bottomRight = points.topRight.flipY()
   points.bottomLeft = points.topLeft.flipY()
 
