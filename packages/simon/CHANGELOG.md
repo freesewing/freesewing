@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Fixed missing store object in buttonholeplacket part
+
 ## 2.19.1 (2021-10-23)
 
 ### Fixed

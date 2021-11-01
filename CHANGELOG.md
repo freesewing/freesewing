@@ -21,6 +21,18 @@
 
  - Migrated the `waistbandWidth` option from mm to snapped pct
 
+### simon
+
+#### Fixed
+
+ - Fixed missing store object in buttonholeplacket part
+
+### simone
+
+#### Fixed
+
+ - Fixed missing store object in buttonholeplacket part
+
 ### titan
 
 #### Changed

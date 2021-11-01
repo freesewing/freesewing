@@ -14,6 +14,7 @@ export default (part) => {
     paperless,
     macro,
     options,
+    store,
   } = part.shorthand()
 
   if (!options.seperateButtonholePlacket || options.buttonholePlacketStyle !== 'classic') {

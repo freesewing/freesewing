@@ -5,6 +5,10 @@ unreleased:
       - Removed lingering console.log statements
     holmes:
       - Fixed SA to use twice the SA value on hem allowance
+    simon:
+      - Fixed missing store object in buttonholeplacket part
+    simone:
+      - Fixed missing store object in buttonholeplacket part
 
   Changed:
     titan:
