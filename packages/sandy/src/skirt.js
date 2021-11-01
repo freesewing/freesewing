@@ -1,7 +1,7 @@
 import draftRingSector from './shared'
 
 export default function (part) {
-  let {
+  const {
     utils,
     store,
     sa,
@@ -75,7 +75,7 @@ export default function (part) {
      * fabric
      */
     if (an > 90 && sa) {
-      let maxAn = utils.rad2deg(Math.atan(radiusWaist / sa))
+      const maxAn = utils.rad2deg(Math.atan(radiusWaist / sa))
       if (an > 90 + maxAn) an = 90 + maxAn
     }
   }
@@ -83,14 +83,14 @@ export default function (part) {
    * The radius of the hem arc is the radius of the waist
    * arc with the length of the skirt added
    */
-  let radiusHem =
+  const radiusHem =
     radiusWaist + store.get('fullLength') * options.lengthBonus - absoluteOptions.waistbandWidth
 
   /**
    * The ring sector will be rotated an angle an/2 so we
    * display the part with one edge of the skirt vertical
    */
-  let rot = an / 2
+  const rot = an / 2
 
   // Call draftRingSector to draft the part
   paths.seam = draftRingSector(part, rot, an, radiusWaist, radiusHem, true).attr('class', 'fabric')

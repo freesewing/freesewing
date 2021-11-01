@@ -6,7 +6,7 @@ export default function (part) {
    * and intenal radius and angle calculated from measurements
    * and options
    */
-  let {
+  const {
     utils,
     store,
     sa,
@@ -25,7 +25,8 @@ export default function (part) {
   // Calculate the angle of the ring sector and the radius of the upper arc
   const an =
     utils.rad2deg(store.get('bottomCircumference') - store.get('topCircumference')) /
-    absuluteOptions.waistbandWidth
+    absoluteOptions.waistbandWidth
+
 
   const rad = store.get('topCircumference') / utils.deg2rad(an)
 
