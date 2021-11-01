@@ -1,6 +1,12 @@
 # Change log for: @freesewing/holmes
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Fixed SA to use twice the SA value on hem allowance
+
 ## 2.19.0 (2021-10-17)
 
 ### Added

@@ -9,6 +9,12 @@
 
  - Removed lingering console.log statements
 
+### holmes
+
+#### Fixed
+
+ - Fixed SA to use twice the SA value on hem allowance
+
 ### sandy
 
 #### Changed

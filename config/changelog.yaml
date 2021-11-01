@@ -3,6 +3,8 @@ unreleased:
   Fixed:
     cornelius:
       - Removed lingering console.log statements
+    holmes:
+      - Fixed SA to use twice the SA value on hem allowance
 
   Changed:
     titan:
