@@ -75,7 +75,7 @@ export default function (part) {
       macro('vd', {
         from: points.p0,
         to: points.gore_p3,
-        x: points.p0.x - 15 - sa,
+        x: points.p0.x - 15 - sa*2,
       })
     }
   }
