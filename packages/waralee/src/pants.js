@@ -1,17 +1,17 @@
 export default function (part) {
-  let { options, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
+  let { options, points, paths, Snippet, snippets, complete, sa, paperless, macro, store } =
     part.shorthand()
 
   paths.waistFoldBack = paths.waistBack
-    .offset(-1 * options.waistBand)
+    .offset(-1 * store.get('waistBand'))
     .attr('class', 'fabric stroke-sm')
   paths.waistFoldFront = paths.waistFront
-    .offset(-1 * options.waistBand)
+    .offset(-1 * store.get('waistBand'))
     .attr('class', 'fabric stroke-sm')
 
-  paths.frontFold = paths.front.offset(-1 * options.hem).attr('class', 'fabric stroke-sm')
-  paths.legFold = paths.leg.offset(-1 * options.hem).attr('class', 'fabric stroke-sm')
-  paths.backFold = paths.back.offset(-1 * options.hem).attr('class', 'fabric stroke-sm')
+  paths.frontFold = paths.front.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
+  paths.legFold = paths.leg.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
+  paths.backFold = paths.back.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
 
   // Complete?
   if (complete) {

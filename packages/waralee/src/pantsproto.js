@@ -1,11 +1,14 @@
 import { CreateCrotchPoints } from './util'
 
 export default function (part) {
-  let { options, measurements, Point, Path, points, paths } = part.shorthand()
+  let { options, measurements, Point, Path, points, paths, store } = part.shorthand()
 
   let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
   let circumference = measurements.seat
   let circumference4 = circumference / 4
+  store.set('waistBand', measurements.inseam * options.waistbandWidth)
+  store.set('hem', measurements.inseam * options.hemWidth)
+  let waistBand = store.get('waistBand')
 
   points.mWaist = new Point(0, 0)
 
@@ -29,7 +32,7 @@ export default function (part) {
   )
   // Create a point that is this distance from the side.
   points.bWaistBack = points.mWaist
-    .shift(90, options.waistBand)
+    .shift(90, waistBand)
     .shift(0, options.crotchBack * circumference4 + bHorDistance)
 
   points.bWaistBackOverlap = points.bWaistBack.shift(0, options.waistOverlap * circumference4)
@@ -81,7 +84,7 @@ export default function (part) {
       .shift(
         270,
         options.frontPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
-          options.waistBand * 2
+          waistBand * 2
       )
       .shift(180, options.frontPocketHorizontalOffset * measurements.seat)
 
@@ -107,7 +110,7 @@ export default function (part) {
       .shift(
         270,
         options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
-          options.waistBand * 2
+          waistBand * 2
       )
     points.backPocketLeft = points.bWaistBack
       .shiftTowards(
@@ -118,7 +121,7 @@ export default function (part) {
       .shift(
         270,
         options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
-          options.waistBand * 2
+          waistBand * 2
       )
     points.backPocketRight2 = points.backPocketRight.shift(
       points.backPocketRight.angle(points.backPocketLeft) + 90,

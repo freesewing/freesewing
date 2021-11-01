@@ -13,7 +13,7 @@ export default {
   difficulty: 2,
   optionGroups: {
     fit: ['backRaise', 'waistRaise'],
-    style: ['hem', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistBand'],
+    style: ['hemWidth', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistbandWidth'],
     advanced: [
       'crotchFront',
       'crotchBack',
@@ -40,8 +40,8 @@ export default {
     backPocketHorizontalOffset: 0.045,
     backPocketSize: 0.65,
     backPocket: { bool: true },
-    hem: { mm: 15, min: 0, max: 100 },
-    waistBand: { mm: 25, min: 0, max: 100 },
+    hemWidth: { pct: 1.75, min: 1, max: 2.5 },
+    waistbandWidth: { pct: 3.5, min: 2, max: 5 },
     waistRaise: { pct: 20, min: 0, max: 40 },
     crotchBack: { pct: 45, min: 10, max: 70 },
     crotchFront: { pct: 30, min: 10, max: 70 },
