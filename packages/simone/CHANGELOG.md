@@ -5,7 +5,7 @@
 
 ### Fixed
 
- - Fixed missing store object in buttonholeplacket part
+ - Fixed missing store object in button(hole)placket part
 
 ## 2.19.1 (2021-10-23)
 

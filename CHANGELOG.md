@@ -25,13 +25,13 @@
 
 #### Fixed
 
- - Fixed missing store object in buttonholeplacket part
+ - Fixed missing store object in button(hole)placket part
 
 ### simone
 
 #### Fixed
 
- - Fixed missing store object in buttonholeplacket part
+ - Fixed missing store object in button(hole)placket part
 
 ### titan
 

@@ -6,9 +6,9 @@ unreleased:
     holmes:
       - Fixed SA to use twice the SA value on hem allowance
     simon:
-      - Fixed missing store object in buttonholeplacket part
+      - Fixed missing store object in button(hole)placket part
     simone:
-      - Fixed missing store object in buttonholeplacket part
+      - Fixed missing store object in button(hole)placket part
 
   Changed:
     titan:
