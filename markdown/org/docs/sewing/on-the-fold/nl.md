@@ -15,3 +15,4 @@ De vouwlijn wordt aangegeven met een dubbele pijl zoals in dit voorbeeld:
 Voor een overzicht van alle indicatoren op uw patroon, ga naar de [patroonnotatie handleiding](/docs/various/notation/)
 
 </Tip>
+

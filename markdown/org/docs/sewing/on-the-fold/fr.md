@@ -16,4 +16,3 @@ Pour un aperçu de tous les indicateurs de votre patron, reportez-vous au [guide
 
 </Tip>
 
-[1]:/docs/various/notation/
