@@ -12,7 +12,7 @@ La ligne de pli est indiquée avec une double flèche, comme dans cet exemple :
 
 <Tip>
 
-For an overview of all indicators on your pattern, refer to the [pattern notation guide](/docs/various/notation/)
+Pour un aperçu de tous les indicateurs de votre patron, reportez-vous au [guide de notation du patron](/docs/various/notation/)
 
 </Tip>
 
