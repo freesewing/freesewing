@@ -8,10 +8,10 @@ Dit betekent dat slechts de helft van het patroondeel is afgedrukt, en je moet h
 
 De vouwlijn wordt aangegeven met een dubbele pijl zoals in dit voorbeeld:
 
-<Legend part="cutonfold" caption="A cut-on-fold indicator" >
+<Legend part="cutonfold" caption="A cut-on-fold indicator" />
 
 <Tip>
 
-Voor een overzicht van alle indicatoren op uw patroon, ga naar de [patroonnotatie handleiding][1]
+Voor een overzicht van alle indicatoren op uw patroon, ga naar de [patroonnotatie handleiding](/docs/various/notation/)
 
 </Tip>
