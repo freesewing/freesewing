@@ -1,7 +1,7 @@
 # Change log for: @freesewing/sandy
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.2 (2021-11-02)
 
 ### Changed
 

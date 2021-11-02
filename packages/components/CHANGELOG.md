@@ -1,6 +1,13 @@
 # Change log for: @freesewing/components
 
 
+## 2.19.2 (2021-11-02)
+
+### Added
+
+ - Added linedrawing for Tiberius
+ - Added linedrawing for Walburga
+
 ## 2.19.0 (2021-10-17)
 
 ### Added

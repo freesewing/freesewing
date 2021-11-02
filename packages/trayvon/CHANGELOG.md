@@ -1,7 +1,7 @@
 # Change log for: @freesewing/trayvon
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.2 (2021-11-02)
 
 ### Changed
 

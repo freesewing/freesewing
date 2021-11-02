@@ -1,7 +1,7 @@
 # Change log for: @freesewing/cornelius
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.2 (2021-11-02)
 
 ### Fixed
 

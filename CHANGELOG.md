@@ -1,7 +1,14 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.2 (2021-11-02)
+
+### components
+
+#### Added
+
+ - Added linedrawing for Tiberius
+ - Added linedrawing for Walburga
 
 ### cornelius
 
