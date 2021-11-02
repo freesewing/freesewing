@@ -33,6 +33,7 @@ These instructions assume you have marked your seam lines. They may be harder to
 - Repeat steps 1 and 2 until you have two halves. If half the number of crown pieces is an odd number you will have to sew a single piece to each half. e.g. If you have 6 crown pieces, you make two halves of 3 sewing one piece to two sewn together pieces.  
 - With right sides together, matchinig seam lines and peaks, sew the two halves together. You may find it easier to handstitch the peak together due to bulk or for precision. This seam will be refered to as the "centre crown seam" going forward. 
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
+
 <Note>
 
 Depending on your seam allowance you may want to trim seams as you go to reduce bulk.
