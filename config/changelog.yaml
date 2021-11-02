@@ -1,4 +1,10 @@
-unreleased:
+2.19.2:
+  date: 2021-11-02
+
+  Added:
+    components:
+      - Added linedrawing for Tiberius
+      - Added linedrawing for Walburga
 
   Fixed:
     cornelius:
