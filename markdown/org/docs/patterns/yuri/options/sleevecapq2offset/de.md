@@ -1,11 +1,10 @@
-![The offset in the second quarter of the sleevecap](./sleevecapq2offset.svg)
+![Der Versatz im zweiten Quartal der Ärmel](./sleevecapq2offset.svg)
 
-This option controls the offset in the second quadrant of the sleevecap.
+Diese Option steuert den Versatz im zweiten Quadranten der Ärmel.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/patterns/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sleevecap) für eine detaillierte Erklärung, wie die Armkugel konstruiert wird und wie die einzelnen Optionen ihre Form beeinflussen.
 
 </Tip>
 

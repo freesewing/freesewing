@@ -11,4 +11,8 @@ Algunos patrones pueden tener otras líneas, hay 4 estilos adicionales:
 
 Pueden ser usados por los diseñadores de patrones para agregar información adicional, dependiendo del contexto.
 
-<Legend part="otherLines" caption="Other line styles" >
+<Legend part="otherLines">
+
+Other line styles
+
+</Legend>

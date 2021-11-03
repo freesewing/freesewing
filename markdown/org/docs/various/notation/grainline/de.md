@@ -4,8 +4,16 @@ title: Getreide- und Faltenanzeige
 
 Körnlinien – eine Linie, die das *Stoffkorn* anzeigt – sehen folgendermaßen aus:
 
-<Legend part="grainline" caption="A grainline indicator" >
+<Legend part="grainline">
 
-Schneiden Sie die Indikatoren ähnlich aus, weisen Sie aber auf die Linie, auf der das Gewebe geklappt werden sollte:
+A grainline indicator
 
-<Legend part="cutonfold" caption="A cut-on-fold indicator" >
+</Legend>
+
+Cut-on-fold indicators look similar, but point towards the line on which the fabric should be folded:
+
+<Legend part="cutonfold">
+
+A cut-on-fold indicator
+
+</Legend>

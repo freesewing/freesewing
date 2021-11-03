@@ -4,7 +4,11 @@ title: Dimensiones
 
 Cuando optas por un patrón ** sin papel, tu patrón vendrá con dimensiones:
 
-<Legend part="dimension" caption="An example of a dimension on a pattern" />
+<Legend part="dimension">
+
+An example of a dimension on a pattern
+
+</Legend>
 
 <Tip>
 

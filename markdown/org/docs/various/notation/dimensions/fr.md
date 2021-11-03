@@ -4,7 +4,11 @@ title: Dimensions
 
 Lorsque vous optez pour un patron *sans papier* , votre patron se fourni avec des dimensions :
 
-<Legend part="dimension" caption="An example of a dimension on a pattern" />
+<Legend part="dimension">
+
+An example of a dimension on a pattern
+
+</Legend>
 
 <Tip>
 

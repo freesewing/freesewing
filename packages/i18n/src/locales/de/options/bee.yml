@@ -6,7 +6,7 @@ waistEase:
   title: Taillenzugabe
   description: Controls the waist ease in the underlying Bella block Bee is based on
 bustSpanEase:
-  title: Bust span ease
+  title: Büstenumfang leicht
   description: Controls the bust span ease in the underlying Bella block Bee is based on
 topDepth:
   title: Top Depth

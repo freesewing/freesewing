@@ -57,7 +57,7 @@ Formarán las dos tiras estrechas de tela que forman su doble bolsillo de soldad
 
 La interfaz del bolsillo es una sola tira rectangular de interfaz fusible con las siguientes medidas:
 
- - Length: Pocket width + 4cm
+ - Longitud: Ancho de bolsillo + 4cm
  - Ancho: Altura del mundo x2 + 5cm
 
 Por ejemplo:

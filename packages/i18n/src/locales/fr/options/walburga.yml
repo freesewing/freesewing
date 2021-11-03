@@ -3,13 +3,13 @@ headRatio:
   title: Head ratio
   description: Controls the size of the head opening
 lengthBonus:
-  title: Length bonus
+  title: Supplément de longueur
   description: Allows variation of the length of the garment
 widthBonus:
   title: Width bonus
   description: Allows variation of the width of the garment
 length:
-  title: Length
+  title: Longueur
   description: Controls the length of the garment
   options:
     toKnee: On the knee
