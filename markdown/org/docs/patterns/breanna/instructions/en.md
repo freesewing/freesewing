@@ -17,6 +17,12 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 - Matching notches, sew the sleeves to the shoulder good sides together.
 - Sew the side seams good sides together.
 
+<Note>
+
+You may need to leave the bottom of sleeve side seams open to put the garment on.
+
+</Note>
+
 <Tip>
 
 If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
