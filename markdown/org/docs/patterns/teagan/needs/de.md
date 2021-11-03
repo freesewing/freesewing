@@ -1,5 +1,5 @@
 
-Um Teagan zu machen, benötigst du Folgendes:
+Um Teagan zu erstellen, benötigst du Folgendes:
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
 - Etwa 1 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/teagan/fabric))
 
