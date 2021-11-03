@@ -10,7 +10,7 @@ A grainline indicator
 
 </Legend>
 
-Cut-on-fold indicators look similar, but point towards the line on which the fabric should be folded:
+Los indicadores recortados parecen similares, pero apuntan hacia la línea en la que se debe plegar el tejido:
 
 <Legend part="cutonfold">
 
