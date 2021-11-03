@@ -24,12 +24,12 @@ As Bent is a block it does not have any closures. So the instructions below will
 - Sew the fronts to the back at the shoulder seams good sides together.
 - Sew the fronts to the back at the side seams good sides together.
 - Sew the under sleeves to the top sleeves good sides together.
-- Sew the sleeve side seams good sides together.
 - Attach the sleeves to the body, good sides together and sew them in the round.
 
 <Note>
 
-You may need to ease/gather the sleeves to fit
+You may need to ease/gather the sleeves to fit.  
+You may need to leave the bottom of one of the sleeve seams open to put the garment on.
 
 </Note>
 <Tip>
