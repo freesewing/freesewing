@@ -1,11 +1,4 @@
----
----
-
-<Fixme>
-
-Document this option
-
-</Fixme>
+The size of the back waist dart
 
 
 ## Effect of this option on the pattern
