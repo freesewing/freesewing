@@ -1,4 +1,5 @@
-The size of the back waist dart.
+
+Whether or not to inlude a back waist dart to round the back.
 
 
 ## Effect of this option on the pattern
