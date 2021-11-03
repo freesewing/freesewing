@@ -1,5 +1,5 @@
 ---
-title: Bust point to underbust
+title: Point de buste vers le buste inférieur
 ---
 
 The **bust point to underbust** measurement is the distance from your bust point/nipple to your underbust.
