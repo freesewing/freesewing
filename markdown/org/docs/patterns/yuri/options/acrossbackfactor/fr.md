@@ -1,7 +1,7 @@
-![The across back option on Brian](./acrossbackfactor.svg)
+![L'option dos de Brian](./acrossbackfactor.svg)
 
-Controls your across back width as a factor of your shoulder to shoulder measurement
+Contrôle la largeur de votre dos en tant que facteur de mesure de votre épaule à épaule
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_acrossbackfactor_sample.svg "Effet de cette option sur le motif")
