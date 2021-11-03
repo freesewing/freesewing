@@ -1,12 +1,12 @@
 ---
 chestEase:
-  title: Chest ease
+  title: Holgura de pecho
   description: Controls the chest ease in the underlying Bella block Bee is based on
 waistEase:
-  title: Waist ease
+  title: Holgura de cintura
   description: Controls the waist ease in the underlying Bella block Bee is based on
 bustSpanEase:
-  title: Bust span ease
+  title: Facilidad de la expansión del polvo
   description: Controls the bust span ease in the underlying Bella block Bee is based on
 topDepth:
   title: Top Depth
