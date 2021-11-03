@@ -44,6 +44,7 @@ Going forward the pockets and fronts will just be referred to as the fronts.
 When sewing the left flap down on the outside, you may find it best to make a template to help you.
 
 </Tip>
+
 <Note>
   
 If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
