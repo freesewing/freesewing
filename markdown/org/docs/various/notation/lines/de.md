@@ -11,4 +11,8 @@ Einige Schnittmuster weisen möglicherweise andere Linien auf, es gibt 4 zusätz
 
 Sie können von Schnittmuster-Designern verwendet werden, um je nach Kontext zusätzliche Informationen hinzuzufügen.
 
-<Legend part="otherLines" caption="Other line styles" >
+<Legend part="otherLines">
+
+Other line styles
+
+</Legend>
