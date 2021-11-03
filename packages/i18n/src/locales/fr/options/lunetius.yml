@@ -1,12 +1,12 @@
 ---
 lengthRatio:
-  title: Length ratio
+  title: Profondeur de tête
   description: Controls the length of the garment
 widthRatio:
   title: Width ratio
   description: Controls the width of the garment
 length:
-  title: Length
+  title: Longueur
   description: Choose from the different length styles
   options:
     toKnee: On the knee

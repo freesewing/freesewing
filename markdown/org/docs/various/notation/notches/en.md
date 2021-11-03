@@ -9,7 +9,11 @@ This style is used to indicate the back of a garment.
 For example, on a sleevecap you may see a dot and a cross notch. 
 This way you know which side of the sleevecap is the back (the one with the cross notch).
 
-<Legend part="notches" caption="The default notch style (shown left) and alternative style for notches on the back" />
+<Legend part="notches"> 
+
+  The default notch style (shown left) and alternative style for notches on the back
+
+</Legend>
 
 <Tip>
 

@@ -70,6 +70,7 @@ charlie:
   peer:
     '@freesewing/plugin-bartack': *freesewing
     '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/snapseries': *freesewing
     '@freesewing/titan': *freesewing
 css-theme:
   _:

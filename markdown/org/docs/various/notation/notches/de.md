@@ -6,7 +6,11 @@ Es gibt zwei Arten von Knipsen. Der standardmäßige Knips ist ein Punkt in eine
 
 Ein alternativer Stil zeigt ein Kreuz in einem Kreis. Dieser Stil wird verwendet, um die Rückseite eines Kleidungsstückes zu markieren. Beispielsweise könntest du an einer Ärmelkugel einen Punkt- und einen Kreuzknips sehen. Auf diese Art und Weise weißt du, welche Seite der Ärmelkugel hinten ist (die Seite mit dem Kreuzknips).
 
-<Legend part="notches" caption="The default notch style (shown left) and alternative style for notches on the back" >
+<Legend part="notches"> 
+
+  The default notch style (shown left) and alternative style for notches on the back
+
+</Legend>
 
 <Tip>
 

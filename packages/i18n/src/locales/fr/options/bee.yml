@@ -1,12 +1,12 @@
 ---
 chestEase:
-  title: Chest ease
+  title: Aisance de poitrine
   description: Controls the chest ease in the underlying Bella block Bee is based on
 waistEase:
-  title: Waist ease
+  title: Aisance à la taille
   description: Controls the waist ease in the underlying Bella block Bee is based on
 bustSpanEase:
-  title: Bust span ease
+  title: Aisance de l'écart poitrine
   description: Controls the bust span ease in the underlying Bella block Bee is based on
 topDepth:
   title: Top Depth

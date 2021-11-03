@@ -6,7 +6,11 @@ Er zijn twee soorten merktekens. Het standaard merkteken is een punt in een cirk
 
 Een alternatieve stijl toont een kruis in een cirkel. Dit type wordt gebruikt om de achterkant van een kledingstuk aan te duiden. Op een mouwkop zie je bijvoorbeeld misschien een stip en een kruismerkmeting. Op deze manier weet je welke kant van de mouwkop de achterkant is (de achterkant met de merktekening).
 
-<Legend part="notches" caption="The default notch style (shown left) and alternative style for notches on the back" >
+<Legend part="notches"> 
+
+  The default notch style (shown left) and alternative style for notches on the back
+
+</Legend>
 
 <Tip>
 

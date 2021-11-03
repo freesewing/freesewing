@@ -4,8 +4,16 @@ title: Draadrichting en aanduiding van de stofvouw
 
 Draadrichting - een lijn die de *draadrichting van de stof* aangeeft - ziet er zo uit:
 
-<Legend part="grainline" caption="A grainline indicator" >
+<Legend part="grainline">
 
-Markeringen voor de stofvouw zien er gelijkaardig uit, maar wijzen naar de lijn waarlangs de stof gevouwen moet worden:
+A grainline indicator
 
-<Legend part="cutonfold" caption="A cut-on-fold indicator" >
+</Legend>
+
+Cut-on-fold indicators look similar, but point towards the line on which the fabric should be folded:
+
+<Legend part="cutonfold">
+
+A cut-on-fold indicator
+
+</Legend>

@@ -1,6 +1,6 @@
-![The armhole depth factor on Brian](./armholedepthfactor.svg)
+![Der Rüstungstiefenfaktor auf Brian](./armholedepthfactor.svg)
 
-This option controls the depth of the armhole.
+Diese Option steuert die Tiefe des Armlochs.
 
 
 ## Effekt dieser Option auf das Schnittmuster

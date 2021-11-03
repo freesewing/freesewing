@@ -3,8 +3,8 @@ headRatio:
   title: Head ratio
   description: Controls the size of the head opening
 armholeDrop:
-  title: Armhole drop
-  description: Controls the depth of the armhole
+  title: Armlochabsenkung
+  description: Steuert die Tiefe des Armloches
 lengthBonus:
   title: Längenzugabe
   description: Allows variation of the length of the garment
@@ -26,7 +26,7 @@ length:
   options:
     toKnee: On the knee
     toMidLeg: On the thigh
-    toFloor: To the floor
+    toFloor: Zum Boden
 width:
   title: Breite
   description: Steuert die Breite des Kleidungsstückes

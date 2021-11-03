@@ -1,12 +1,12 @@
 ---
 lengthRatio:
-  title: Length ratio
+  title: Ratio de longitud
   description: Controls the length of the garment
 widthRatio:
   title: Width ratio
   description: Controls the width of the garment
 length:
-  title: Length
+  title: Longitud
   description: Choose from the different length styles
   options:
     toKnee: On the knee
