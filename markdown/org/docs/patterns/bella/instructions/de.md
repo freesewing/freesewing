@@ -15,10 +15,10 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 ### Step 1: Mock-up Construction
 
-__1.__ Close the front bust and waist darts.  
-__2.__ Close the back darts.  
-__3.__ Sew the front to the backs at the shoulders right sides together.  
-__4.__ Sew the front to the backs at the side seams right sides together.
+- Close the front bust and waist darts.
+- Close the back darts.
+- Sew the front to the backs at the shoulders right sides together.
+- Sew the front to the backs at the side seams right sides together.
 
 <Tip>
 
@@ -28,14 +28,18 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 ### Step 2: Try it on
 
-__1.__ Try it on and check the fit by pinning the back closed whilst wearing it.  
-__2.__ Make any alterations and try it on again.  
-__3.__ Repeat until you are happy.
+- Try it on and check the fit by pinning the back closed whilst wearing it.
+- Make any alterations and try it on again.
+- Repeat until you are happy.
 
 <Tip>
-  
-If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
- 
+
+If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.  
+
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.  
+
+Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+
 </Tip>
 
 <Note>
@@ -53,8 +57,8 @@ It is all up to you! Experiment and go forth!
 
 ### Step 3: Make a paper pattern
 
-__1.__ Once happy with all your changes unpick your mockup and make a paper pattern based off of it.  
-__2.__ Now you have a pattern you can use to produce a garment.
+- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
+- Now you have a pattern you can use to produce a garment.
 
 <Note>
 
