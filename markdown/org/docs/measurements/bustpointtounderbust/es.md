@@ -1,5 +1,5 @@
 ---
-title: Bust point to underbust
+title: Debe apuntar a la base
 ---
 
 The **bust point to underbust** measurement is the distance from your bust point/nipple to your underbust.
