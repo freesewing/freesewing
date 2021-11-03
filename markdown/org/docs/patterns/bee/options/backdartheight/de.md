@@ -5,5 +5,5 @@ title: Back dart height (Bella)
 Controls the back dart height in the underlying Bella block Bee is based on
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_backdartheight_sample.svg "Effect of this option on the pattern")
+## Effekt dieser Option auf das Schnittmuster
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bee_backdartheight_sample.svg "Effekt dieser Option auf das Schnittmuster")
