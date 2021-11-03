@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-scalebox",
-  "version": "2.19.0",
+  "version": "2.19.2",
   "description": "A FreeSewing plugin to add a scalebox to your pattern",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -37,7 +37,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.19.0"
+    "@freesewing/core": "^2.19.2"
   },
   "dependencies": {},
   "devDependencies": {},

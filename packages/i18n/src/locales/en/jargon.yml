@@ -16,6 +16,9 @@ doubleWeltPockets:
 ease:
   term: ease
   description: "See <a href='/docs/sewing/ease/'>Ease</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+edgestitch:
+  term: edgestitch
+  description: "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 fabricGrain:
   term: fabric grain
   description: "See <a href='/docs/sewing/fabric-grain/'>Fabric grain</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
@@ -49,6 +52,9 @@ sa:
 serger:
   term: serger
   description: "See <a href='/docs/sewing/serger/'>Serger</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+slipstitch:
+  term: slipstitch
+  description: "See <a href='/docs/sewing/slipstitch/'>Slipstitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 topstitching:
   term: topstitching
   description: "See <a href='/docs/sewing/topstitching/'>Topstitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"

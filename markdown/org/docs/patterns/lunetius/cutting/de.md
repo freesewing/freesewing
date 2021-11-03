@@ -1,8 +1,3 @@
+Lunetius besteht nur aus einem Teil, die *lacerna* selbst:
 
-<Fixme>
-
-This documentation page is yet to be written.
-
-Sorry for the inconvenience.
-
-</Fixme>
+- schneide *1 Lacerna*, _im Stoffbruch_

@@ -1,216 +1,243 @@
 ---
-title: Construction de Holmes
+title: Holmes Construction
 ---
 
-### Glossary
-- ***Edgestitch*** : Trancher 1/8" (3mm) de distance ou plus près de la couture
+### Step 1: Prepping the Pieces
 
-- ***Toppoint*** : Sur point extérieur de 1/4" (6mm) de la couture.
+- If needed, Interface the crown and half the ear flap pieces.  
+- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. This is for a more precise sew which is key for hat construction. 
 
-- ***Slippoint*** : Un point caché pour joindre les bords pliés au corps ou à une autre arête pliée.
-
-- ***Whipstitch*** : Un point de recouvrement proche. Aussi connu sous le nom de Fell Stitch.
-
-- ***Sous-couture*** : Appuyer sur la couture de doublure et la couture loin du tissu principal. Faire cuire près de la couture sur la doublure accrochant la marge de couture au-dessous.
-
-- ***Baste*** : De longs points temporaires pour assembler des pièces. Peut être usiné ou cousu à la main.
-
-- ***Pad Stitch*** : A parallel running stitch to secure two layers together.
-
-- ***Tack*** : Une sitch en cours d'exécution à un endroit pour sécuriser les pièces ensemble.
-
-Les termes du glossaire seront formatés en ***gras et en italique*** ci-dessous.
-
-### Étape 1 : Préparation des morceaux
-
-__1.__ Si nécessaire, Interface la couronne et la moitié des morceaux de rabat de l'oreille.  
-__2.__ Si ce n'est pas déjà fait, il est recommandé de marquer les lignes de couture de vos pièces de tissu par un marqueur temporaire ou par un marquage du fil. Ceci est pour une couture plus précise qui est la clé pour la construction de chapeaux.
 <Tip>
 
-Le marquage du fil permet de voir la ligne de couture à la fois sur les côtés de droite et sur les mauvais côtés.
+Thread marking allows for the seam line to be seen on both the right and wrong sides.
   
 </Tip>
+
 <Note>
 
-Même si vous êtes confronté à la couronne, vous ne voudrez peut-être pas faire face à l'oreille si vous voulez qu'ils soient moins rigides lorsque vous vous tapotez.
+Even if you face the crown you may not want to face the ear flaps if you want them to be less rigid when tieing down.
   
 </Note>
+
 <Warning>
 
-Ces instructions supposent que vous avez marqué vos lignes de couture. Ils peuvent être plus difficiles à suivre si vous sautez cette étape.
+These instructions assume you have marked your seam lines. They may be harder to follower if you skip this step.
 
 </Warning>
 
-### Étape 2 : La Couronne
+### Step 2: The Crown
 
-__1.__ Avec les côtés droit ensemble, coudre les lignes de couture et les pics, coudre deux pièces de couronne ensemble.  
-__2.__ Appuyez sur les coutures ouvertes. Vous avez fait besoin d'utiliser un jambon tailleur pour cela, si vous n'en avez pas, vous pouvez utiliser des flanques ou des serviettes à la place.  
-__3.__ (facultatif) ***Edgestitch*** les deux côtés de la couture, en s'assurant de prendre les autorisations de couture.  
-__4.__ Répétez les étapes 1 et 2 jusqu'à ce que vous ayez deux moitiés. Si la moitié du nombre de pièces de couronne est un nombre impair, vous devrez coudre une pièce à chaque moitié. Par exemple, si vous avez 6 pièces de couronne, vous fabriquez deux moitiés de 3 pièces cousues ensemble à deux pièces.  
-__5.__ Avec les côtés droit ensemble, coudre les lignes et les pics, coudre les deux moitiés ensemble. Il peut être plus facile de broder le sommet ensemble en raison de la masse ou de la précision. Cette couture sera désignée comme la « couture de couronne centrale » qui va de l'avant. __6.__ (facultatif) ***Edgestitch*** Les deux côtés de la couture centrale de la couture, en s'assurant de prendre les autorisations de couture.
+- With right sides together, matching seam lines and peaks, sew two crown pieces together.  
+- Press seams open. You made need to use a tailors ham for this, if you do not have one you can use flannels or towels instead.  
+- (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.  
+- Repeat steps 1 and 2 until you have two halves. If half the number of crown pieces is an odd number you will have to sew a single piece to each half. e.g. If you have 6 crown pieces, you make two halves of 3 sewing one piece to two sewn together pieces.  
+- With right sides together, matchinig seam lines and peaks, sew the two halves together. You may find it easier to handstitch the peak together due to bulk or for precision. This seam will be refered to as the "centre crown seam" going forward. 
+- (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
+
 <Note>
 
-Selon votre marge de couture, vous pourriez vouloir couper les coutures au fur et à mesure que vous allez réduire les coutures.
+Depending on your seam allowance you may want to trim seams as you go to reduce bulk.
   
 </Note>
 
-### Étape 3 : Les flacons des oreilles
+### Step 3: The Ear Flaps
 
-#### Flaps des oreilles avec des cravates
+#### Ear Flaps with Ties
 
-__1.__ Couper deux 12 " (30cm) - 16 " (40cm) de longueur de ruban. Ils seront désignés comme des liens à venir.  
-__2.__ ***Coller*** une cravate sur le côté droit d'un rabat auditif (celui interfacé s'il utilise). Répéter pour une autre cravate.  
-__3.__ Avec les côtés droit ensemble, coudre des lignes de couture, coudre un rabat d'oreille cravate à un rabat d'oreille non cravate.  
-__4.__ Clip et découpe couture autorisée.  
-__5.__ Retournez à l'intérieur et appuyez dessus.  
-__6.__ (facultatif) ***Topstitch*** ou ***Edgestitch*** le bord plié.  
-__7.__ ***Baste*** les bords bruts ensemble.  
-__8.__ Répétez les étapes 3 à 7 pour le rabat auditif restant.
+- Cut two 12" (30cm) - 16" (40cm) length of ribbon. These will be refered to as ties going forward.  
+- _Baste_ a tie to the right side of an ear flap (the interfaced one if using). Repeat for other tie.  
+- With right sides together, matching seam lines, sew a tie ear flap to a non-tie ear flap.  
+- Clip and trim seam allowance.  
+- Turn inside out and press.  
+- (Optional) _Topstitch_ or _edgestitch_ the folded edge.  
+- _Baste_ the raw edges together.  
+- Repeat steps 3 to 7 for the remaining ear flap.
+
 <Tip>
 
-If you are uncertain about the length you want for you ties take 1 metre (39") of ribbon and cut in half. Utilisez ces moitiés comme des liens dans les instructions ci-dessus. Les cravates sont terminées à la fin afin de pouvoir ajuster les longueurs.
+If you are uncertain about the length you want for your ties take 1 metre (39") of ribbon and cut it in half. Use these halves as the ties in the instructions above. The ties are finished at the end so you can adjust the lengths then.
   
 </Tip>
+
 <Note>
 
-Les longueurs ci-dessus sont des recommandations donc n'hésitez pas à aller aussi longtemps ou aussi court que vous le souhaitez avec les attaches.  
-If you prefer you can make your ties with your main fabric, you can find how to [here](https://freesewing.org/docs/patterns/holmes/cutting/).  
+The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
+If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
 
 </Note>
 
-#### Flaps de l'oreille avec trous de boutons
+#### Ear Flaps with Buttonholes
 
-__1.__ Face au dos de deux des trous de boutons. (Ce n'est pas nécessaire si deux flaps ont déjà été interfacés)  
-(This is not needed if two flaps have already been interfaced) __2.__ With right sides together, matching seam lines, sew two ear flap pieces together (one interfaced, one not).  
-__3.__ Clip et découpe couture autorisée.  
-__4.__ Retournez à l'intérieur et appuyez dessus.  
-__5.__ (facultatif) ***Toppoint*** ou ***Edgestitch*** la bordure pliée.  
-__6.__ ***Baste*** les bords bruts ensemble.  
-__7.__ Coudre le trou de bouton dans votre méthode préférée.  
-__8.__ Répétez les étapes 2 à 7 pour le rabat auditif restant.
-<Warning>
-
-Les clapets de l'oreille devront être assez longs pour dépasser le sommet de la crête afin qu'ils puissent être remplis par un bouton sur la crête. N'utilisez pas cette méthode si vous n'utilisez pas de bouton en haut.
-
-</Warning>
-<Note>
-
-**Pour les flacons des oreilles avec des cravates et des trous de boutons**  
-Il est recommandé de ***Topstitch*** au moins les flacons de l'oreille, mais cela peut ne pas être souhaitable avec certains motifs, donc a été marqué comme facultatif.
-
-</Note>
-
-### Step 4: The Bill
-
-There are two methods for constructing the bill. This is due to the different types of materials the bill inserts can be made of. La méthode 1 est pour les matériaux qui ne seront pas endommagés par une aiguille ou un fer. La méthode 2 est pour les matériaux qui seront endommagés par une aiguille ou un fer. Lisez les deux méthodes pour déterminer quelle est la meilleure méthode à utiliser.
-
-#### The Bill Method 1
-
-__1.__ Place bill insert on one bill piece inside seam lines. __2.__ Temporarily secure bill insert to bill with temporary ***Pad Stitches***. This will be refered to as "faced bill" going forward. __3.__ ***Baste*** along the seam line of the inner curve of the bill, making sure not to catch the bill insert. __4.__ With right sides together, matching seam lines and centre fronts, sew the faced bill to another bill piece along the outer curve close to the bill insert, making sure not to catch the bill Insert. __5.__ Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step) __6.__ Turn inside out and press. Making sure that the seam allowances are on top of not under the bill insert. __7.__ Using the previous basting line as a guide, ***Baste*** the opening closed. __8.__ Repeat steps 1 to 7 for remaining bill pieces.
+- Face the backs of two of the buttonholes. (This is not needed if two flaps have already been interfaced)  
+- With right sides together, matching seam lines, sew two ear flap pieces together (one interfaced, one not).  
+- Clip and trim seam allowance.  
+- Turn inside out and press.  
+- (Optional) _Topstitch_ or _Edgestitch_ the folded edge.  
+- _Baste_ the raw edges together.  
+- Sew the buttonhole in your prefered method.  
+- Repeat steps 2 to 7 for the remaining ear flap.
 
 <Warning>
 
-Faites attention à la chaleur d'un fer lorsque vous utilisez certains matériaux d'insertion. You do not want to melt the Bill Insert and damage both it and the fabric.
+The ear flaps will need to be long enough to go over the top of the peak so they can be done up by a button on the peak. Do not use this method if you are not using a button on the top.
 
 </Warning>
+
 <Note>
 
-If preferred you can temporarily attach the bill insert another way that does not require hand sewing and putting a needle through the material. Veillez simplement à ce que le tissu de votre chapeau ne soit pas endommagé lors de l'enlèvement ou de l'application. 
+**For both Ear Flaps with Ties and Button Holes**  
+
+It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
 
 </Note>
 
-#### The Bill Method 2
+### Step 4: The Visors
 
-__1.__ With rights sides together, matching seam lines and centre fronts, sew the outer curver of two bill pieces together. __2.__ Notch and trim (if needed) the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step) __3.__ Turn inside out and press. __4.__ Insert bill insert in to sewn bill tightly so there is no gap on the outer curver and the seam allowances are all one on side of the bill insert. __5.__ Pin the inner curve together making sure that the outer edge is pulled tightly over the bill insert. __6.__ ***Baste*** as close as you can to the inner curve of the bill insert, making sure you pull the fabric tightly over the outer edge as you sew.
+There are two methods for constructing the visors. This is due to the different types of materials the visor inserts can be made of. Method 1 is for materials that will not be damaged by a needle or iron. Method 2 is for materials that will be damaged by a needle or iron. Read both methods to determine which is best for you to use. 
 
-### Étape 5 : Assemblage et doublure
+#### The Visors Method 1
 
-Une fois de plus, il y a deux méthodes pour l'assemblage et la doublure finales. Lisez attentivement les deux méthodes pour déterminer quelle est la meilleure pour vous.
+- Place visor insert on one visor piece inside seam lines.  
+- Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.  
+- _Baste_ along the seam line of the inner curve of the visor, making sure not to catch the visor insert.  
+- With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.  
+- Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)  
+- Turn inside out and press. Making sure that the seam allowances are on top of not under the visor insert.  
+- Using the previous basting line as a guide, _baste_ the opening closed.  
+- Repeat this for remaining visor pieces.
 
-#### Méthode de montage et de doublure 1
+<Warning>
 
-__1.__ Les centres d'appariement et les lignes de couture alignent le rabat à droite de l'un des panneaux qui ne fait pas partie de la couture centrale de la couronne. Making sure the faced side is placed against the crown (if faced). __2.__ ***Baste*** the ear flap to the crown along seam lines __3.__ Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown. __4.__ Align centre front of bill with the right side of the centre crown seam making sure the bill insert is on the bottom. __5.__ Hand-***Baste*** the bill to the crown matching the bill basting lines to the crown seam lines. It easier to ***Baste*** the centre down first and then work from the centre out. It easier to ***Baste*** the centre down first and then work from the centre out. __6.__ Sew the bill to the crown along seam lines. Vous pouvez trouver plus facile de coudre la visière en permanence à la main plutôt que d'utiliser une machine.   
-</strong>.</strong> Répéter les étapes 4 à 6 pour la visière restante du côté opposé de la couture de couronne centrale.  
-__8.__ Retirez tous les patins et points de bâton.  
-__9.__ Appuyez sur les droits de couture à l'intérieur, en veillant à ce que la couture ne soit pas visible à l'extérieur.  
-__10.__ (facultatif) Vraiment ***Whipstitch*** les coutures à l'intérieur de la couronne en s'assurant que la couture ne se montre pas à l'extérieur.  
-__11.__ Construire de la même manière que la couronne omet ***Edgestitching*** .  
-__12.__ Pliez et appuyez sous la couture inférieure de la doublure. Il se peut que vous ayez besoin d'appuyer sous plus pour éviter que la doublure ne s'affiche. You may also find you need to ***Baste*** the seam allowance down. __13.__ Matching centre crown seams and panel seams, pin the lining into the hat wrong sides together. Placing the folded edge along the stitching lines. __14.__ ***Slipstitch*** or ***Whipstitch*** the lining to the seam allowance of the hat. __15.__ Remove lining basting if used. __16.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. Il s'agit de contribuer à éviter que la doublure ne s'effondre.
+Be careful with the heat of an iron when using certain insert materials. You do not want to melt the Visor Insert and damage both it and the fabric.
 
-#### Méthode de montage et de doublure 2
-
-__1.__ Les centres d'appariement et les lignes de couture alignent le rabat à droite de l'un des panneaux qui ne fait pas partie de la couture centrale de la couronne. S'assure que la face est placée contre la couronne (si elle est visée).  
-</em>.</strong> ***Baste*** le rabat de l'oreille à la couronne le long des lignes de couture  
-__3.__ Répétez les étapes 1 et 2 pour le rabat d'oreille restant sur le côté opposé de la couronne.  
-____ Aligner le devant central de la visière avec le côté droit de la couture de couronne du centre en s'assurant que l'insertion du viseur est sur le fond.  
-__5.__ Main -***Baste *** la visière à la couronne correspondant aux lignes de fixation de la visière aux lignes de la couture de la couronne. Il est plus facile de ***Baste*** le centre d'abord vers le bas, puis de travailler depuis le centre.  
-__6.__ (Facultatif) Machine-***Baste*** la visière à la couronne le long des lignes de couture.  
-__7.__ Répétez les étapes 4 à 6 pour la visière restante du côté opposé de la couture de couronne centrale.  
-____ Construire la doublure de la même manière que la couronne ommise ***Edgestitching*** et laisser un écart dans la doublure centrale suffisamment grand pour tourner le chapeau.  
-__9.__ Avec des côtés droit ensemble, coutures de couronne au centre, coutures de panneau et lignes de couture. Coudre la doublure à la couronne le long des lignes de couture. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures. __10.__ Tournez le chapeau à l'intérieur, en appuyant sur la doublure à l'intérieur.   
-__11.__ (Optionnel/Alternatif à 13.) ***Understitch*** lining.  
-__12.__ ***Slipstitch*** lining opening closed.  
-__13.__ (Optional/Alternate to 11.) ***Topstitch*** or ***Edgestitch*** along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
-__14.__ (Optional) ***Tack*** the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
+</Warning>
 
 <Note>
+
+If preferred you can temporarily attach the visor insert another way that does not require hand sewing and putting a needle through the material. Just make sure it does not damage your hat fabric when removing or applying. 
+
+</Note>
+
+#### The Visors Method 2
+
+- With rights sides together, matching seam lines and centre fronts, sew the outer curver of two visor pieces together.  
+- Notch and trim (if needed) the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)  
+- Turn inside out and press.  
+- Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.  
+- Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.  
+- _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.  
+- Repeat steps 1 to 6 for the remaining visor pieces.
+
+### Step 5: Assembly and Lining
+
+Once again there are two methods for final assembly and lining. Read both methods carefully to determine which is best for you. 
+
+#### Assembly and Lining Method 1
+
+- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).  
+- Sew ear flap to the crown along seam lines.  
+- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.  
+- Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.  
+- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.  
+- Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.   
+- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.  
+- Remove all pad and basting stitches.  
+- Press the seam allowances inwards, making sure the stitching is not visible on the outside.  
+- (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.  
+- Construct lining the same way as the crown ommitting _edgestitching_.  
+- Fold and Press under the bottom seam allowance of the lining. You may find you need to press under more to prevent the lining from showing. You may also find you need to _baste_ the seam allowance down.  
+- Matching centre crown seams and panel seams, pin the lining into the hat wrong sides together. Placing the folded edge along the stitching lines.  
+- _Slipstitch_ or _whipstitch_ the lining to the seam allowance of the hat.  
+- Remove lining basting if used.  
+- (Optional) _Tack_ the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
+
+#### Assembly and Lining Method 2
+
+- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).  
+- _Baste_ the ear flap to the crown along seam lines  
+- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.  
+- Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.  
+- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.  
+- (Optional) Machine-baste the visor to the crown along seam lines.  
+- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.  
+- Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.  
+- With right sides together, matching centre crown seams, panel seams and seam lines. Sew the lining to the the crown along seam lines. If bulky you may want to trim either the lining seams or both seams.
+- Turn hat inside out, pressing lining to inside.   
+- (Optional/Alternate) _Understitch_ lining.  
+- Slipstitch lining opening closed.  
+- (Optional/Alternate) _Topstitch_ or _Edgestitch_ along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.  
+- (Optional) _Tack_ the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
+
+<Note>
+
+**For both Assembly and Lining Methods** 
+
+You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. It is simply whether you prefer the visors to be underneath or prefer the ear flaps to be underneath like in the instructions.
+
+</Note>
+
+<Tip>
 
 **For both Assembly and Lining Methods**  
-You can attach the bills on first, just make sure the bills are under the ear flaps if there is any overlap. It is simply whether you prefer the bills to be underneath or prefer the ear flaps to be underneath like in the instructions.
 
-</Note>
-<Tip>
-
-**For both Assembly and Lining Methods**  
-If you are having trouble dealing with the curves of the bills, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the bill and clip to it. This should make it easier to bend the bill to shape. Assurez-vous juste de cacher cette broderie et les clips lorsque vous fixez la doublure.
+If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. This should make it easier to bend the visor to shape. Just make sure to hide this stitching and the clips when attaching the lining.
 
 </Tip>
+
 <Warning>
 
-**Pour les méthodes d'assemblage et de doublage**  
-Les instructions d'assemblage et de confection sont écrites avec 6 panneaux en tête. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule generally the centre front of the bill is always on the centre crown seam so go from there if struggling.
+**For both Assembly and Lining Methods**  
+
+Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of visors and ear flap pieces are different for other numbered panelled Holmes. As a rule generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
-### Étape 6: Finition des cravates
+### Step 6: Finishing Ties
 
-Si vous n'avez pas réduit vos attaches lors de la construction de l'oreille, il est temps de le faire. If you made your ties with your main fabric then you do not need to do these steps. Lisez à nouveau à travers les deux méthodes soigneusement et choisissez lequel est le meilleur pour vous.
+If you did not cut your ties down when constructing the ear flaps, now is the time to do so. If you made custom ties with fabric then you do not need to do these steps. Again read through both methods carefully and pick which is the best for you.
 
-#### Méthode de finition des cravates 1
+#### Finishing Ties Method 1
 
-__1.__ Fold the ends of a tie in half and cut a triangle out from the corner to the fold. __2.__ Unfold. __3.__ If you are worried about the ties fraying you can use fray check or equivalent. __4.__ Repeat steps 1 to 3 for the remaining tie.
+- Fold the ends of a tie in half and cut a triangle out from the corner to the fold.  
+- Unfold.  
+- If you are worried about the ties fraying you can use fray check or equivalent.  
+- Repeat steps 1 to 3 for the remaining tie.
 
-#### Méthode de finition des cravates 2
+#### Finishing Ties Method 2
 
-***Baste*** the raw edges together. __8.__ Repeat steps 3 to 7 for the remaining ear flap.
+- Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.  
+- _Whipstitch_ the folded edge down to the tie  
+- Repeat steps 1 to 2 for the remaining tie.
 
 <Note>
 
-Pour déterminer la façon dont vous voulez plier les cravates, il vous sera peut-être plus facile de nouer l'oreille en premier. Généralement, vous voulez que le pli se trouve au dessous des liens, mais comme toujours il est de préférence personnelle.
+To determine which way you want to fold the ties, you may find it easier to tie the ear flaps up first. Generally you want the fold to be on the underside of the ties but as always it is personal preference.
   
 </Note>
 
-### Étape 7 : Bouton
+### Step 7: Button
 
-À moins que vous ne fassiez les Flaps de l'oreille du bouton, vous n'avez pas à coudre un bouton sur le bouton, mais il peut être utile si vous voulez cacher les coutures mal alignées au sommet de la couronne.
+Unless you are doing the Buttonhole Ear Flaps you do not have to sew a button on but it may be useful if you want to hide any misaligned seams at the crown peak.
 
-__1.__ Construct a covered button. __2.__ Attach the button via the shank to the peak of the crown doing your best to keep it in the middle of the seams. __3.__ Alternatively if you are not using the button with the ear flaps you can bend the shank down and ***Whipstitch*** the edge of the button to the crown instead so it does not move.
+- Construct a covered button.  
+- Attach the button via the shank to the peak of the crown doing your best to keep it in the middle of the seams.  
+- Alternatively if you are not using the button with the ear flaps you can bend the shank down and _whipstitch_ the edge of the button to the crown instead so it does not move.
 
 <Note>
 
-Bien que facultatif, il se peut que vous trouviez un bouton qui manque dans le chapeau pour finir l'apparence. Donc, si vous n'êtes pas sûr de ce point, faites un bouton rapide et placez-le temporairement pour voir si c'est ce qui manque. If it is attach it permanently. 
-Bien qu'un bouton couvert soit recommandé, vous pouvez utiliser n'importe quel bouton que vous désirez, n'hésitez pas à expérimenter !
+Whilst certainly optional, you may find that a button is what is missing from the hat to finish the look. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what missing. If it is, attach it permanently. 
+Whilst a covered button is recommeneded you can use whatever button you desire, feel free to experiment!
 
 </Note>
 
-### Étape 8 : Profitez de votre nouveau chapeau!
+### Step 8: Enjoy your new hat!
 
-Voilà! « Vous avez fini. » Maintenant profitez du monde dans votre nouveau chapeau merveilleux tout en résolvant un crime ou deux!
+That's it! You're all done. Now enjoy the world in your wonderful new hat whilst maybe solving a crime or two!
 
 <Note>
 
-Rappelez-vous que ces instructions ne sont que des lignes directrices, donc ne vous inquiétez pas si vous voulez construire le chapeau différemment.  
-Les diagrammes doivent encore être faits pour ce modèle, donc en attendant, si vous avez besoin d'une aide visuelle, regardez la vidéo YouTube qui a inspiré ce modèle :
+Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
+The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
 
 </Note>
 

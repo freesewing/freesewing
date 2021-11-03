@@ -1,3 +1,9 @@
-## Effect of this option on the pattern
+- - -
+title: Ear flap width
+- - -
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](holmes\_earwidth\_sample.svg "Effect of this option on the pattern")
+Controls the width of the ear flaps
+
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](holmes_earwidth_sample.svg "Effect of this option on the pattern")

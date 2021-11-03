@@ -7,6 +7,8 @@ Para hacerlo, dobla el panel trasero con _lados buenos juntos_ asegurándose de 
 
 Ahora coser el dardo cerca, asegurándose de usar una pequeña longitud de la caña, y coser todo el camino del teh hasta el final del dardo, incluso un par de tetas de la tela.
 
+![Closed darts](step01.svg)
+
 <Note>
 
 Sus dardos de espalda deben tener la misma longitud. Asegúrate de coser con precisión.
@@ -15,7 +17,7 @@ Sus dardos de espalda deben tener la misma longitud. Asegúrate de coser con pre
 
 ## Paso 2: Construir los bolsillos de respaldo
 
-Sigue [nuestras instrucciones de bolsillo doble](/docs/sewing/double-welt-pockets/) para crear los bolsillos de soldadura trasera.
+Follow [our double welt pocket instructions](/docs/sewing/double-welt-pockets/) to create the back welt pockets.
 
 <Note>
 
@@ -27,19 +29,19 @@ las instrucciones) pero es un acabado muy típico para chinos, y hace más fáci
 
 ### Adjuntar el bolsillo trasero hacia la bolsa de bolsillo
 
-Únete al bolsillo trasero mirando a la bolsa de bolsillo colocándolos con _buenos lados juntos_ y cosiendo a lo largo de las costuras no curvas de la cara.
+Join the back pocket facing to the pocket bag by placing them with _good sides together_ and sewing along the longest of the non-curved seams of the facing.
 
-Cuando hayas terminado, presiona el permiso de costura al lado de la bolsa de bolsillo.
+When you're done, press the seam allowance to the side of the pocket bag.
 
 ### Adjuntar la bolsa de bolsillo trasera
 
-Difunde la parte inferior de la bolsa de bolsa al fondo de la soldadura. Presione el botón abajo cuando haya terminado.
+Sew the bottom of the pocket bag to the bottom welt. Press it down when done.
 
-Ahora alinea la parte superior de la bolsa de bolsa con la cintura y coser en la costura de la cintura.
+Now align the top of the pocket bag with the waist and sew it down in the waist's seam allowance.
 
 ### Cerrar el bolsillo de vuelta
 
-Doble el panel de la pierna fuera del camino para que puedas cerrar ambos lados de la bolsa de bolsa.
+Fold the leg panel out of the way so you can close both sides of the pocket bag.
 
 <Note>
 
@@ -47,7 +49,7 @@ Asegúrate de coser también la bolsa de bolsa
 
 </Note>
 
-Deberías overlock/serge los lados de la bolsa para que no se cuelgan.
+You should overlock/serge the sides of the pocketbag so they don't ravel.
 
 <Tip>
 
@@ -57,19 +59,21 @@ Si no tienes un _serger_ siempre puedes usar un zig-zag en su lugar.
 
 ## Paso 3: Reemplaza los bordes frontales y traseros
 
-Antes de ir más lejos, vamos a sobrebloquear/servir los bordes de los paneles frontales y traseros de las piernas. Asegúrate de coger la parte superior de la bolsa de bolsa al hacer los paneles traseros.
+Before we go any further, we'll overlock/serge the edges of the front and back panels of the legs. Make sure to also catch the top of the pocket bag when doing the back panels.
 
 What we want to to prevent these edges from ravelling after we've completed our trousers, and now is the best time to do so.
 
+![Overlocked leg panels](step03.svg)
+
 ## Paso 4: Construir la apertura del bolsillo frontal
 
-Los bolsillos delanteros son un poco inusuales porque tienen la apariencia de los clásicos bolsillos cortados, pero están construidos en la costura lateral.
+The front pockets are a little unusual because they have the appearance of classic slanted pockets, but are constructed on the side seam.
 
 ### Adjuntar las miradas del bolsillo delantero a las bolsas de bolsillo
 
-Tenemos dos bolsas de bolsillo delanteras, que cada una tiene dos piezas de frente para sujetarlas.
+We have two front pocket bags, that each have two pieces of facing to attach to them.
 
-Alinear con _lados buenos_ juntos (\*) y coser el revestimiento en su lugar.
+Align them with _good sides together_ (\*) and sew the facing in place.
 
 <Note>
 
@@ -83,17 +87,21 @@ No hay ninguna respuesta correcta o equivocada aquí. Te haces.
 
 </Note>
 
+![Pocket bags sewn to facings](step04a.svg)
+
 ### Marca el marco del bolsillo en la cara del bolsillo y los paneles de la parte frontal y trasera
 
-Hay una maraña en los paneles de la parte delantera y trasera que indica hasta qué punto el revestimiento del bolsillo debe estar unido a la costura lateral.
+There's a notch on both front and back leg panels that indicates up to what point the pocket facing should be attached to the side seam.
 
-Asegúrate de transferir esta muñeca tanto al (borde del pocket hacia el lado como a la pata del pantalón delantero, ya que es importante que los compartimos.
+Make sure to transfer this notch to both the (edge of the) pocket facing and the front trouser leg, since it's important we match them.
+
+![Pocket facings with notches](step04b.svg)
 
 ### Anclar o basar el bolsillo en el panel de la pierna frontal y trasera
 
-Tanto en la parte delantera como en el panel de la pierna trasera, vamos a coser el bolsillo de cara a la costura lateral.
+Both on the front and the back leg panel, we're going to sew the pocket facing to the side seam.
 
-Sin embargo, esto tiene que ser preciso, así que realmente quiere asegurarse de que lo pines o lo bastas en su lugar.
+However, this needs to be precise, so you really want to make sure you either pin or baste it in place.
 
 <Note>
 
@@ -101,76 +109,91 @@ Comience por el frente, ya que es la costura más fácil. Una vez que tienes alg
 
 </Note>
 
+![Pocket bags sewn to pant leg panels](step04c.svg)
+
 ### Difunde el bolsillo frontal
 
-Diviértete desde la cintura hacia abajo hasta el muelle que indica dónde parar.
+Sew from the waist down right until the notch that indicates where to stop.
 
 ### Presione la capa delantera del bolsillo
 
-Ahora presione la cortina del bolsillo delantero, tanto en el panel trasero como en el frontal, para que sea un pliegue afilado.
+Now press the slant of the front pocket, both on the back and front panel, so that it's a sharp crease.
+
+![Pressed front pocket slant](step04d.svg)
 
 ## Paso 5: Cerrar el exterior
 
 ### Cerrar los bolsillos frontales
 
-Le aconsejo encarecidamente que coja el pocket cerrado/en su lugar antes de coser esta costura para que sepa que es precisa.
+I strongly advice you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
 
-Cerrar la costura exterior significa colocar el panel frontal y trasero con buenos lados juntos, y coser la costura exterior. Eso es bastante fácil en las piernas, pero en la parte superior tenemos nuestro bolsillo, lo que complica las cosas.
+Closing the outseam means to place front and back panel with good sides together, and sew the outer seam. That's easy enough at the legs, but at the top we have our pocket, which complicates things.
 
 ### Difunde la parte superior de la costura exterior hasta la parte superior de la cortina de bolsillo
 
-Asegúrate de que todo esté bien alineado. Luego, coser desde la parte superior de la cintura hasta la parte superior (esto es algo más de un cm o media pulgada).
+Make sure everything is neatly aligned. Then sew from the top of the waist down to the top notch (this is just over a cm or half an inch).
 
+![Outer seam sewn until top notch](step05a.svg)
 
 ### Difunde la parte inferior de la costura externa de la parte inferior de la franja del bolsillo
 
-Ahora muévete a la niebla de fondo de la chispa de bolsillo y coser desde allí hasta el fondo de las piernas.
+Now move to the bottom notch of the pocket slant, and sew from there all the way to the bottom of the legs.
+
+![Outer seam sewn from lower pocket notch down](step05b.svg)
 
 ### Presione la costura externa abierta
 
-Cuando hayas terminado, asegúrate de pulsar la costura abierta a lo largo de la pierna. No presione el bolsillo, ya lo hicimos.
+When you're done, make sure to press the seam allowance open along the leg. Don't press the pocket, we already did that.
 
 ## Paso 6: Termina la bolsa de bolsillo frontal
 
 ### Difunde bolsa de bolsa de cerco dentro
 
-Con la apertura de nuestro bolsillo construido y la costura exterior cerrada, ahora deberíamos terminar la bolsa de bolsillo.
+With our pocket opening constructed and outer seam closed, we should now finish the pocket bag.
 
-Tira la bolsa de bolsa para que se ponga en peligro en el exterior de la pata del pantalón. Then place both halves together and either use a serger to finish the edge, or sew closely to the edge.
+Pull the pocket bag out so that it dangles on the outside of the trouser leg. Then place both halves together and either use a serger to finish the edge, or sew closely to the edge.
 
-Asegúrate de que terminas en el punto donde comienza la parte inferior de la costura externa.
+Make sure you end up at the point where the bottom part of the outer seam starts.
+
+![Pocket bag, sewn closed](step06a.svg)
 
 ### Finalizar borde de bolsa de bolsa
 
-Cuando hayas terminado, puedes voltear la bolsa de bolsillo hacia el interior de la pata de pantalón.
+When you're done, you can flip the pocket bag back to the inside of the trouser leg.
 
-Nuestra bolsa de bolsillo está ahora cerrada, pero cuando ponemos nuestra mano en ella, usted puede sentir el borde crudo de la costura. Para evitarlo, enganche la parte superior a lo largo del borde de la bolsa de bolsillo, bloqueando en la costura.
+Our pocket bag is now closed, but when we put our hand in it, you can feel the raw edge of the seam allowance. To avoid that, topstitch along the edge of the pocket bag, locking in the seam allowance.
 
 <Note>
 Si tu franquicia de costura es ancha, tal vez quieras recortarla primero.
 </Note>
 
+![Pocket bag, finished](step06b.svg)
+
 ## Paso 7: Bar-tack la apertura del bolsillo
 
-En el lugar la pierna hacia abajo con el lado bueno, asegurándose de que la bolsa de bolsa esté plana y hacia el panel frontal.
+At the place the leg down with the good side up, making sure the pocket bag lies flat and towards the front panel.
 
-Ahora en la parte superior e inferior de la abertura del bolsillo, coloque un bar-tack perpendicular a la costura exterior.
+Now at the top and bottom of the pocket opening, place a bar-tack perpendicular to the outer seam.
+
+![Bar tacks at pocket openings](step07.svg)
 
 ## Paso 8: Cerrar la entrada
 
-Con nuestros bolsillos delanteros acabados, cierre la costura de ambas piernas.
+With our front pockets finished, close the inseam of both legs.
 
-Cuando hayas terminado, presiona Abrirlo.
+When you're done, press open the inseam.
+
+![Closed inseams](step08.svg)
 
 ## Paso 9: Cerrar el cruce
 
-Asegúrate de que una pierna esté girada con el lado bueno, y la otra tiene el lado bueno.
+Make sure one leg is turned with the good side out, and the other has the good side in.
 
-No pegar la pierna con el lado bueno dentro de la pierna que tiene el lado bueno dentro. De esta manera, tienen su lado bueno entre sí.
+Not tuck the leg with the good side out inside the leg that has the good side in. This way, they have their good sides against each other.
 
-Aling the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Parar en el nivel de vuelo más bajo.
+Aling the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Stop at the lowest fly notch.
 
-Cuando haya terminado. Hágalo de nuevo. Siempre coser la costura de la cruz dos veces. Es una de esas mejores prácticas que usted ignora bajo su propio riesgo.
+When you're done. Do it again. Always sew the cross seam twice. It's one of those best practices you ignore at your own peril.
 
 <Tip>
 
@@ -185,51 +208,51 @@ Conseguirlo bien es una de esas cosas que acabarás cherizando cada vez que las 
 
 ### Cerrar extensión de mosca
 
-Doblar la extensión de la mosca en su línea plegable con buenos lados juntos.
+Fold the fly extension on its fold line with good sides together.
 
-Ahora coser a lo largo del fondo, para cerrar la extensión de la mosca.
+Now sew along the bottom, to close the fly extension.
 
-Recorre la mitad de la franquicia de costura para quitar el granel antes de girar el lado bueno y presionar.
+Trim back one half of the seam allowance to remove bulk before turning it good side out and pressing.
 
 ### Sirve la extensión de la mosca y mira a la mosca
 
-Serge (o zig-zag) a lo largo del lado abierto de la extensión de la mosca. No hay necesidad de servir la parte superior, ya que eso se verá atrapado en nuestra cintura.
+Serge (or zig-zag) along the open side of the fly extension. No need to serge the top as that will get caught in our waistband.
 
-mientras estás en él, también siéntate a lo largo de toda la mosca mirando hacia el borde en forma de J.
+while you're at it, also serge along the entirety of the fly facings J-shaped edge.
 
 ### Cortar la costura extra en el frente de la pierna izquierda
 
-Hay una franquicia extra de costura que corre a lo largo de la mosca. Solo necesitamos esto en el panel de la pierna derecha. Corte en el panel izquierdo para que se quede con la franquicia regular de costura solamente.
+There's extra seam allowance that runs along the fly. We only need this on the right leg panel. Cut it away on the left panel so you're left with the regular seam allowance only.
 
 ### Adjuntar la cara de vuelo
 
-Pase la mosca hacia el frente izquierdo. Colócalos con buenos lados juntos, alineando la parte superior.
+Sew the fly facing to the left front. Place them with good sides together, alingning the top.
 
 ### Pegado en la punta de la cara de la mosca
 
-Doblar la parte inferior de la franquicia de costura de la mosca hacia adentro y asegurar con unas pocas pulseras
+Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches
 
 ### El borde tira la mosca hacia la costura
 
-Difunde la mosca hacia la franquicia de costura. Asegúrate de dejar el panel frontal fuera de él.
+Sew the fly facing to the seam allowance. Make sure to leave the front panel out of it.
 
 ### Presione la costura cruzada, la cara de la mosca y el borde de la mosca
 
-Pulse abrir la costura cruzada. Presione el volar hacia el lado.
+Press open the cross seam. Press the fly facing to the side.
 
-Luego, doblézcalo sobre la franquicia extra de costura en la parte delantera derecha y presione la parte inferior.
+Then, fold over the extra seam allowance on the right front leg and press it down.
 
 ### Baste el zipper para la extensión de moscas
 
-Coloque el zipper a lo largo del borde (ligeramente curvado) de la extensión de la mosca.
+Place the zipper along the (slightly curved) edge of the fly extension.
 
-Ahora coser a lo largo del borde. No hay necesidad de acercarse al césped, sólo coser a lo largo del borde para mantenerlos en su lugar.
+Now sew along the edge. No need to get close to the zipper, just sew along the edge to hold them in place.
 
 ### Adjuntar zipper a la mosca
 
-Ahora coloque la mosca de la pata delantera derecha con la franquicia extra de costura que se dobló de nuevo en la parte superior de la zipa.
+Now place the right front leg's fly with the extra seam allowance that you folded back on top of the zip.
 
-Usa un borde de zipper en el borde plegado a lo largo del borde de zipper.
+Use a zipper foot edge-stitch the folded-over edge along the zipper edge.
 
 <Tip>
 
@@ -239,20 +262,20 @@ Quizás quieras bastar esto primero para asegurarte de que es muy paralelo al zi
 
 ### Difunde el caparazón hacia la mosca
 
-Ahora coser el otro lado del cipper a la mosca. Make sure to align it properly so that when the trousers are closed, the zip is hidden
+Now sew the other side of the zipper to the fly facing. Make sure to align it properly so that when the trousers are closed, the zip is hidden
 
 
 ### Termina la costura cruzada
 
-Difunde el último trozo de la costura de la cruz hasta la altura más alta de la mosca.
+Sew the last bit of the cross seam up to the highest fly notch.
 
 ### Difunde la costura J de la mosca
 
-Ahora suman la llamada costura J de la mosca. Asegúrese de mantener la extensión de la mosca fuera del camino.
+Now topstitch the so-called J-seam of the fly. Make sure to keep the fly extension out of the way.
 
 ### Barra toca la parte inferior de la mosca
 
-Ahora desmenuzan el mismo botton de la costura J-costura (la parte horizontal), pero esta vez asegúrese de capturar también la extensión de la mosca.
+Now bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension.
 
 ## Paso 11: Adjuntar bucles de cinturón
 
@@ -264,38 +287,38 @@ Para la eficiencia, contructaremos una larga franja de bucle de cinturón que di
 
 </Note>
 
-Cortar una tira de 80 cm de largo (32 pulgadas) y 2,8 cm de ancho (1 1/8 pulgadas).
+Cut a strip of 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
-Servir (o zigzag) el borde largo de la tira en ambos lados.
+Serge (or zigzag) the long edge of the strip on both sides.
 
-Doblar un lado hacia adentro, y el otro hacia arriba. Luego presiona con tu hierro. El resultado final debe ser una tira larga de aproximadamente 1cm de largo.
+Fold one side inwards, and the other side over it. Then press down with your iron. The end result should be a long strip about 1cm wide.
 
-Ahora coser a lo largo de toda la longitud de la raya, huele en medio de ella. Asegúrate de usar una longitud de unión generosa para esto.
+Now sew along the entire length of the strip, smack in the middle of it. Make sure to use a generous stitch length for this.
 
-Por último, cortar los bucles de la correa de longitud en 8 partes iguales para hacer 8 bucles de la cinta.
+Finally, cut your length belt loops strip into 8 equal parts to make 8 belt loops.
 
 ### Adjuntar bucles de la cinta
 
-Vamos a dividir nuestros bucles de cinturón a lo largo de la cintura:
+We're going to divide our belt loops along the waist:
 
  - 2 en el centro de vuelta, cada uno de ellos apartado un poco del centro, así que hay un pequeño hueco entre ellos.
  - 1 sobre el dardo trasero de cada lado
  - 1 en cada lado más o menos donde la costura lateral golpearía la cintura si subiera recto
  - 1 en cada lado desde el frente central. No está demasiado cerca unos de otros, así que no hay espacio para los cubos de cinta, pero tampoco demasiado lejos, por lo que no parece extraño
 
-Coloca el bucle de la cinta en estos lugares con su buena cara hacia abajo (contra el lado bueno de la tela de tus pantalones, y la parte superior alineada con la cintura. Conserva esto en la costura de la cintura, asegurándose de que son perpendiculares a la cintura.
+Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist. Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 
 ## Paso 12: Adjuntar la banda de cintura
 
 ### Colmenar cintura curvada
 
-Si estás haciendo una cintura recta, sáltate directamente a adjuntar la cintura al exterior.
+If you're making a straight waistband, skip directly to attaching the waistband to the outside.
 
-Coloque ambas cinturones con buenos lados juntos, y coser a lo largo de la parte superior de la cintura (el borde más corto).
+Place both waistbands with good sides together, and sew along the top of the waistband (the shorter edge).
 
-Recorta la costura de la cintura interna y presiona todos los permisos de costura hacia el waisband interior.
+Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waisband.
 
-Ahora puede tratar a su waisband ensamblado como un picoteo y continuar como para la cintura recta.
+You can now treat your assembled waisband as one piece, and continue as for the straight waistband.
 
 <Tip>
 Para asegurarse de que tu pulsera interna no se apaga, puedes _understitch_.
@@ -304,59 +327,59 @@ Difunde una línea de cinta en el interior de la cintura, cerca del borde, a tra
 
 ### Adjuntar la banda de la cintura al exterior
 
-Coloque la cintura con buenos lados junto a la cintura. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
+Place the waistband with good sides together along the waist. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-También asegúrese de dejar la costura suficiente más allá del principio y el final de la cintura.
+Also make sure to leave suffucient seam allowance beyond the start and end of the waistband.
 
-Sufrió a lo largo de toda la cintura, uniendo la cintura y cosiendo los bucles de cintura en una sola vez.
+Sew along the entirety of the waist, attaching the waist band and sewing down the belt loops in one go.
 
 ### Presiona la costura de la cintura y dobla la cintura
 
-Presione la costura que acaba de coser, presionando la costura en la cintura.
+Press the seam you just sewed, pressing the seam allowance up into the waistband.
 
-Ahora llévate sobre la cintura en el ancho correcto y presiona en el pliegue.
+Now fold over the waistband at the correct width and press in the crease.
 
 ### Cierre el inicio y el final de la cintura.
 
-Al principio y al final, doblar la cintura sobre lo que tiene sus buenos lados juntos.
+At the start and end, fold the waistband over so it has it's good sides together.
 
-Ahora coser el extremo cerrado coser arriba abajo hasta el punto en que la costura de cintura termina.
+Now sew the end shut by sewing top to bottom to just the point where the waistband seam ends.
 
-Recorta la costura un poco para que puedas colocarla todo en la cintura más tarde.
+Trim back the seam allowance a bit so you can tuck it all into the waistband later.
 
 ### Crea la cintura en su lugar
 
-La cintura tiene permisos de costura extra aquí, y lo vamos a utilizar en nuestra ventaja.
+The waistband has extra seam allowance here, and we're going to use that to our advantage.
 
-Doblar la cintura en el pliegue que has presionado. Luego en el interior, doblar la costura hacia adentro, asegurándose de dejar correr unos pocos mm más allá de la costura de la cintura.
+Fold the waistband in the fold you pressed. Then on the inside, fold the seam allowance inwards, making sure to let it run a few mm beyond the waistband seam.
 
-Quieres derribar esto en su lugar para que se quede mientras te pasas por la cintura.
+You want to baste this in place so it stays put as you make your way around the waistband.
 
-Al principio y al final de la banda de cintura, usted tendrá que agarrar en más franquicias de costura. Tómese un momento para hacerlo bien.
+At the start and end of the waistband, you'll need to tuck in some more seam allowance. Take a moment to get it right.
 
 ### Cerrar la cintura
 
-Ahora con el buen lado arriba, coser exactamente en la costura que antes había cosido (así llamado _empate en la zanja_).
+Now with the good side up, sew exactly in the seam that was sewn before (so called _stitch in the ditch_).
 
-Esto cogerá la parte trasera de la cintura que hemos hecho para extenderse un poco más y bloquear toda la costura dentro.
+This will catch the back of the waistband which we've made to extend slightly further, and lock all the seam allowance inside.
 
 ## Paso 13: Finaliza los bucles de la cinta
 
 ### Difunde los bucles de la cinta para hacerlos más anchos
 
-Es mejor hacer los bucles de la correa un poco más anchos que la banda de espera, para acoplar correas más anchas.
+It's best to make the belt loops a bit wider than the waitband, to accomodate wider belts.
 
-Para esto, deje que la cintura esté plana, y coser con un bartack de 1,5 cm más o menos (mitad y pulgada) debajo de la cintura.
+For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half and inch) below the waistband.
 
 ### Doble hacia arriba, abajo de nuevo, y coser
 
-Ahora dobla el cinturón hacia arriba (ocultando el bartack que acabas de hacer).
+Now fold the belt loops upwards (hiding the bartack you just did).
 
-Se extenderán más allá de la parte superior de la cintura. Así que doblémonos el exceso otra vez. No lo pliegues por encima o alrededor de la cintura, sino que lo doblen sobre sí mismo.
+They'll extend beyond the top of the waistband. So fold the excess down again. Don't fold it over/around the waistband, but fold it double on itself.
 
-Ahora haz un trozo a lo largo de la parte superior de la cintura para bloquear el ciclo de la cinta en su lugar.
+Now do a bartack along the top of the waistband to lock the belt loop in place.
 
-Cuando haya terminado, tenga cuidado de girar la parte trasera del bucle de cinturón hacia la parte delantera y cortar el exceso justo al lado de la barrita.
+When you're done, carefull twist the back of the beltloop to the front and cut off the excess right next to the bartack.
 
 <Note>
 
@@ -368,14 +391,14 @@ Comprueba que no tienes capas extra debajo de tu aguja porque descoger un bartac
 
 ## Paso 14: Hem los pantalones
 
-Doblar la franquicia a mitad de camino, y prensa. Luego llévalos de nuevo, y pulsa de nuevo.
+Fold the hem allowance halfway up, and press. Then fold them again, and press again.
 
-Finaliza a mano y ciega tus pantalones.
+Finalize by hand and blind hem your trousers.
 
 ## Paso 15: Botón en el botón
 
-Crear un agujero de botón. O a mano (vale la pena practicar) o con una máquina.
+Create a buttonhole. Either by hand (it's worth practicing) or with a machine.
 
-Finalmente, añada el botón.
+Finally, attach the button.
 
-Ahora tómate un momento para apreciar todo el trabajo duro que has hecho. Esperamos que obtenga un montón de ropa de estos.
+Now take a moment to appreciate all the hard work you did. We hope you'll get a lot of wears out of these.

@@ -1,4 +1,7 @@
 import { version } from '../package.json'
+import { elastics } from '@freesewing/snapseries'
+import freesewing from '@freesewing/core'
+const { pctBasedOn } = freesewing
 
 export default {
   name: 'sandy',
@@ -24,10 +27,8 @@ export default {
     // Bool
     seamlessFullCircle: { bool: false },
 
-    // Millimeter
-    waistbandWidth: { mm: 40, min: 5, max: 150 },
-
     // Percentages
+    waistbandWidth: { pct: 4, min: 1, max: 8, snap: elastics, ...pctBasedOn('waistToFloor') },
     waistbandPosition: { pct: 50, min: 0, max: 100 },
     lengthBonus: { pct: 50, min: 10, max: 100 },
     circleRatio: { pct: 50, min: 20, max: 100 },

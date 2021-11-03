@@ -3,18 +3,18 @@ headRatio:
   title: Head ratio
   description: Controls the size of the head opening
 lengthBonus:
-  title: Length bonus
+  title: Längenzugabe
   description: Allows variation of the length of the garment
 widthBonus:
-  title: Width bonus
+  title: Breitenzugabe
   description: Allows variation of the width of the garment
 length:
-  title: Length
-  description: Controls the length of the garment
+  title: Länge
+  description: Steuert die Länge des Kleidungsstückes
   options:
     toKnee: On the knee
     toMidLeg: On the thigh
-    toFloor: To the floor
+    toFloor: Zum Boden
 neckoRatio:
   title: Neck opening shape
   description: controls the shape of the neck opening

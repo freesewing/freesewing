@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: Back dart height (Bella)
 ---
 
-undefined
+Controls the back dart height in the underlying Bella block Bee is based on
 
 
 ## Effect of this option on the pattern

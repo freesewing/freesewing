@@ -1,4 +1,7 @@
 import { version } from '../package.json'
+import { smallsteps } from '@freesewing/snapseries'
+import freesewing from '@freesewing/core'
+const { pctBasedOn } = freesewing
 
 export default {
   name: 'trayvon',
@@ -22,16 +25,8 @@ export default {
     'loop',
   ],
   options: {
-    tipWidth: {
-      mm: 60,
-      min: 20,
-      max: 120,
-    },
-    knotWidth: {
-      mm: 35,
-      min: 20,
-      max: 70,
-    },
+    tipWidth: { pct: 15, min: 5, max: 35, snap: smallsteps, ...pctBasedOn('neck') },
+    knotWidth: { pct: 8, min: 4, max: 12, snap: smallsteps, ...pctBasedOn('neck') },
     lengthBonus: {
       pct: 0,
       min: -50,

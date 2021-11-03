@@ -1,18 +1,18 @@
 export const calculateHelpers = (part) => {
-  let { store, measurements, options } = part.shorthand()
+  let { store, measurements, options, absoluteOptions } = part.shorthand()
 
   let halfLength =
     (measurements.hpsToWaistBack + measurements.waistToHips + measurements.neck / 2) *
     (1 + options.lengthBonus)
-  let backTip = options.tipWidth * 0.7
-  if (backTip < options.knotWidth) backTip = options.knotWidth
+  let backTip = absoluteOptions.tipWidth * 0.7
+  if (backTip < absoluteOptions.knotWidth) backTip = options.knotWidth
 
   store.set('halfLength', halfLength)
   store.set('backTip', backTip)
 }
 
 export const draftTieShape = (part, tipWidth, knotWidth, notch = false) => {
-  let { points, Point, store, utils, options, paths, Path, macro } = part.shorthand()
+  let { points, Point, store, utils, options, paths, Path, macro, absoluteOptions } = part.shorthand()
 
   let hl = store.get('halfLength')
   let ht = tipWidth / 2
@@ -32,8 +32,8 @@ export const draftTieShape = (part, tipWidth, knotWidth, notch = false) => {
   points.title = new Point(0, hl / 5)
 
   if (notch) {
-    points.notch1 = points.tip.shift(-45, options.tipWidth / 5)
-    points.notch2 = points.tip.shift(-135, options.tipWidth / 5)
+    points.notch1 = points.tip.shift(-45, absoluteOptions.tipWidth / 5)
+    points.notch2 = points.tip.shift(-135, absoluteOptions.tipWidth / 5)
     macro('sprinkle', {
       snippet: 'notch',
       on: ['notch1', 'notch2', 'mid'],

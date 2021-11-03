@@ -1,6 +1,12 @@
 # Change log for: @freesewing/hortensia
 
 
+## 2.19.1 (2021-10-23)
+
+### Fixed
+
+ - Fixed issue with the handle width not drafting correctly Closes [#1403](https://github.com/freesewing/freesewing/issues/1403)
+
 ## 2.19.0 (2021-10-17)
 
 ### Changed

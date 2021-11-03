@@ -1,27 +1,27 @@
 ---
-title: Why do you even publish womenswear blocks? They are [insert strong opinion here].
+title: Mais pourquoi donc publier des patrons de base de vêtements féminins ? Ils sont [insérez un cliché ici].
 ---
 
-This question comes up every now and then. The wording varies, but the sentiment can be summarized as *why even publish this garbage, it doesn't work at all*.
+Cette question revient de temps à autres. L'expression varie, mais on peut résumer le fond de la pensée comme *mais pourquoi publier ce ramassis, ça ne marche pas du tout*.
 
-Let me start by saying that you are not wrong. Both [Breanna](/designs/breanna/) and [Bella](/designs/bella/) have serious shortcomings.
+Commençons par dire que ce n'est pas faux. À la fois [Breanna](/designs/breanna/) et [Bella](/designs/bella/) présentent de sérieuses lacunes.
 
-I myself ([joost](/makers/joostdecock/)) am painfully aware of them, and I have toyed with the idea of retracting these patterns altogether.
+Moi-même([joost](/makers/joostdecock/)) en suis douloureusement conscient, et j'ai flirté avec l'idée de totalement retirer ces patrons.
 
-But there's a subset of people who get good results with them. I've seen several good looking makes based on Bella, and Breanna seems to be popular with people making doll clothes for some reason.
+Mais il y a une minorité de personnes qui en obtiennent de bons résultats. J'ai vu plusieurs belles réalisations basées sur Bella, et Breanna semble être populaire auprès des gens qui fabriquent des vêtements de poupées pour une raison quelconque.
 
-What I'm saying is, we're not removing them because they work in some cases. Not in all cases though, which can be frustrating.
+Là où je veux en venir c'est que, nous ne les retirons pas parce qu'ils fonctionnent dans certains cas. Pas dans tous les cas cependant, ce qui peut être frustrant.
 
-I don't pretend to know how to draft for women. But I do get questions all the time about adding more womenswear to freesewing.org, and that starts with a well-designed block.
+Je ne prétends pas savoir comment ébaucher pour les femmes. Mais on me demande à longueur de temps d'ajouter des vêtements pour femmes à freesewing.org, et cela commence par un patron de base bien conçu.
 
-I have long waited for somebody to step forward to take this on themselves. Alas, I've been waiting in vain. Since the fastest way to get a question answered on the internet is to answer it yourself incorrectly, I set out to create these blocks.
+J'ai longtemps attendu que quelqu'un fasse le premier pas et prenne sur soi de le faire. Hélas, j'ai attendu en vain. Et comme la manière la plus rapide d'obtenir une réponse sur internet est d'y répondre soi même inexactement, je me suis lancé pour créer ces patrons de base.
 
-So if you think you can do better, I hereby formally invite you to work together to design the womenswear block that you think/know to be the best one out there.
+Donc, si vous pensez pouvoir faire mieux, je vous invite par la présente formellement à travailler ensemble pour concevoir le patron de base de vêtements féminins que vous pensez/savez être le meilleur.
 
-I gladly offer my services to code/implement your design/vision, so that the entire sewing community can benefit from it.
+J'offre avec joie mes services pour coder/mettre en œuvre votre conception/vision, ainsi toute la communauté de couture pourra en bénéficier.
 
-You can reach me at joost at freesewing.org, we also have [an active community on Discord](https://discord.freesewing.org/).
+Vous pouvez me joindre sur joost at freesewing.org, nous avons également [une communauté active sur Discord](https://discord.freesewing.org/).
 
-I hope to hear from you soon.
+J'ai hâte d'entendre ce que vous en dites.
 
 joost

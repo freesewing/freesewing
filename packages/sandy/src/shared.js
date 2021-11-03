@@ -1,8 +1,8 @@
 const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
-  let { utils, Point, points, Path } = part.shorthand()
+  const { utils, Point, points, Path } = part.shorthand()
 
   const roundExtended = (radius, angle = 90) => {
-    let arg = utils.deg2rad(angle / 2)
+    const arg = utils.deg2rad(angle / 2)
 
     return (radius * 4 * (1 - Math.cos(arg))) / Math.sin(arg) / 3
   }
@@ -11,8 +11,8 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
    * Calculates the distance of the control point for the internal
    * and external arcs using bezierCircleExtended
    */
-  let distIn = roundExtended(radIn, an / 2)
-  let distEx = roundExtended(radEx, an / 2)
+  const distIn = roundExtended(radIn, an / 2)
+  const distEx = roundExtended(radEx, an / 2)
   // The centre of the circles
   points.center = new Point(0, 0)
 
@@ -64,11 +64,11 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
   points.ex2C = points.ex2.shift(an / 2 + 180, distEx)
 
   // Flip all the points to generate the full ring sector
-  for (let id of ['in2', 'in2C', 'in1C', 'ex1C', 'ex2C', 'ex2'])
+  for (const id of ['in2', 'in2C', 'in1C', 'ex1C', 'ex2C', 'ex2'])
     points[id + 'Flipped'] = points[id].flipX()
 
   // Rotate all the points an angle rot
-  for (let id of [
+  for (const id of [
     'in1',
     'in1C',
     'in2',
@@ -88,8 +88,8 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
 
   if (rotate) {
     // Rotate all points so the line from in1Rotated to ex1Rotated is vertical
-    let deg = 270 - points.in2Flipped.angle(points.ex2Flipped)
-    for (let id in points) {
+    const deg = 270 - points.in2Flipped.angle(points.ex2Flipped)
+    for (const id in points) {
       points[id] = points[id].rotate(deg, points.in2Flipped)
     }
   }

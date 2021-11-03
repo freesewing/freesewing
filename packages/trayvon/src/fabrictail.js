@@ -1,10 +1,10 @@
 import { calculateHelpers, draftTieShape, seamAllowance, tieShapeDimensions } from './shared'
 
 export default (part) => {
-  let { Path, complete, macro, options, paths, points, paperless, sa, store } = part.shorthand()
+  let { Path, complete, macro, options, paths, points, paperless, sa, store, absoluteOptions } = part.shorthand()
 
   calculateHelpers(part)
-  draftTieShape(part, store.get('backTip') * 2.5, options.knotWidth * 2.5, true)
+  draftTieShape(part, store.get('backTip') * 2.5, absoluteOptions.knotWidth * 2.5, true)
   paths.seam.attributes.add('class', 'fabric')
 
   // Complete pattern?
@@ -25,12 +25,12 @@ export default (part) => {
     macro('ld', {
       from: points.tip,
       to: points.notch1,
-      d: options.tipWidth / -2.5,
+      d: absoluteOptions.tipWidth / -2.5,
     })
     macro('ld', {
       from: points.notch2,
       to: points.tip,
-      d: options.tipWidth / -2.5,
+      d: absoluteOptions.tipWidth / -2.5,
     })
     paths.n45 = new Path()
       .move(points.midLeft)

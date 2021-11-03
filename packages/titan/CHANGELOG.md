@@ -1,6 +1,12 @@
 # Change log for: @freesewing/titan
 
 
+## 2.19.2 (2021-11-02)
+
+### Changed
+
+ - Migrated the `waistbandWidth` option from mm to snapped pct
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

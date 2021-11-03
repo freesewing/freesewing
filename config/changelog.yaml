@@ -1,3 +1,50 @@
+2.19.2:
+  date: 2021-11-02
+
+  Added:
+    components:
+      - Added linedrawing for Tiberius
+      - Added linedrawing for Walburga
+
+  Fixed:
+    cornelius:
+      - Removed lingering console.log statements
+    holmes:
+      - Fixed SA to use twice the SA value on hem allowance
+    simon:
+      - Fixed missing store object in button(hole)placket part
+    simone:
+      - Fixed missing store object in button(hole)placket part
+
+  Changed:
+    titan:
+      - Migrated the `waistbandWidth` option from mm to snapped pct
+    trayvon:
+      - Migrated the `knotWidth` and `tipWidth` options from mm to snapped pct
+    sandy:
+      - Migrated the `waistbandWidth` option from mm to snapped pct
+
+2.19.1:
+  date: 2021-10-23
+
+  Fixed:
+    cornelius:
+      - Fixed issue where the cuff style is not drafted in certain configurations
+        Closes [#1325](https://github.com/freesewing/freesewing/issues/1325)
+    hortensia:
+      - Fixed issue with the handle width not drafting correctly
+        Closes [#1403](https://github.com/freesewing/freesewing/issues/1403)
+    simon:
+      - Fixed incorrect value for `brianFitCollar` resulting in incorrect collar fit
+        Closes [#1411](https://github.com/freesewing/freesewing/issues/1411)
+    simone:
+      - Fixed incorrect value for `brianFitCollar` resulting in incorrect collar fit
+        Closes [#1411](https://github.com/freesewing/freesewing/issues/1411)
+
+  Added:
+    cornelius:
+      - Added the zipper guard
+
 2.19.0:
   date: 2021-10-17
 

@@ -15,7 +15,7 @@ export default {
   measurements: [],
   parts: ['test'],
   options: {
-    width: { mm: 200, min: 50, max: 500 },
+    width: { mm: 200, min: 50, max: 500, testIgnore: true },
     colors: { bool: true },
     circles: { bool: true },
     text: { bool: true },
