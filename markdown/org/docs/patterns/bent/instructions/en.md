@@ -25,7 +25,7 @@ As Bent is a block it does not have any closures. So the instructions below will
 - Sew the fronts to the back at the side seams good sides together.
 - Sew the under sleeves to the top sleeves good sides together.
 - Sew the sleeve side seams good sides together.
-- Attach the sleeves to the body, good sides together and sew them in the round. 
+- Attach the sleeves to the body, good sides together and sew them in the round.
 
 <Note>
 
@@ -40,9 +40,9 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 ### Step 2: Try it on
 
-- Try it on and check the fit by pinning the front closed whilst wearing it.  
-- Make any alterations and try it on again.  
-- Repeat until you are happy.  
+- Try it on and check the fit by pinning the front closed whilst wearing it.
+- Make any alterations and try it on again.
+- Repeat until you are happy.
 
 <Tip>
   
@@ -68,8 +68,8 @@ It is all up to you! Experiment and go forth!
 
 ### Step 3: Make a paper pattern
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.  
-- Now you have a pattern you can use to produce a garment.  
+- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
+- Now you have a pattern you can use to produce a garment.
 
 <Note>
 
