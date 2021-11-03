@@ -4,7 +4,7 @@ title: Bent What you need
 
 To make Bent, you will need the following:
 
-- Basic sewing supplies
+- Grundlegendes Nähzubehör
 - About 1.5 - 2 metres of a suitable fabric ([see Bent Fabric options](/docs/patterns/bent/fabric/))
 
 This list is for a default Bent Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
@@ -14,9 +14,9 @@ This list is for a default Bent Block. If you have/are making changes to the blo
 ###### Bent is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
 
 </Note>
 
