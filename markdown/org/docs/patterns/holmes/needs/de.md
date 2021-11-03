@@ -2,7 +2,7 @@
 title: Holmes Was du brauchst
 ---
 
-Um Holmes zu machen, benötigst du Folgendes:
+Um Holmes zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
 - Etwa 0,5 Meter eines geeigneten Stoffes ([siehe Optionen für Holmes Stoffe](/docs/patterns/holmes/fabric/))
