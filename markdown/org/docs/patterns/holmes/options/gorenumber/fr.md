@@ -1,6 +1,8 @@
 ---
-title: Nombre de pans
+title: Number of crown pieces
 ---
+
+Controls the number of panels there are in the crown
 
 
 ## Effet de cette option sur le motif
