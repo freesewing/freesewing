@@ -1,7 +1,7 @@
 
-![Back neck cutout](./backneckcutout.svg)
+![Rückenhalsausschnitt](./backneckcutout.svg)
 
-Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
+Kontrolliert wie tief die Nackenöffnung im Rücken des Kleidungsstücks ausgeschnitten wird. Mit anderen Worten, wenn man dies erhöht, wird sich der Hals nach hinten verschieben.
 
 
 ## Effekt dieser Option auf das Schnittmuster
