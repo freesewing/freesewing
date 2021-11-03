@@ -1,11 +1,5 @@
----
----
 
-<Fixme>
-
-Document this option
-
-</Fixme>
+Where to place the primary bust dart to shape the chest.
 
 
 ## Effect of this option on the pattern
