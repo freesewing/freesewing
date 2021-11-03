@@ -4,7 +4,7 @@ title: Dimensiones
 
 Cuando optas por un patrón ** sin papel, tu patrón vendrá con dimensiones:
 
-<Legend part="dimension" caption="An example of a dimension on a pattern" >
+<Legend part="dimension" caption="An example of a dimension on a pattern" />
 
 <Tip>
 
@@ -14,4 +14,5 @@ Algunos patrones utilizan la dimensión para indicar el tamaño completo de una 
 Esto suele ocurrir cuando una parte es un simple rectángulo.
 
 Así que cuando un patrón incluye una dimensión, asegúrese de prestarle atención antes de cortarlo en su tejido.
+
 </Tip>
