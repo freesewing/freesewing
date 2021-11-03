@@ -79,7 +79,7 @@ If you are worried about a draft you can create a triangle piece of fabric that 
 
 </Note>
 
-#### Keystone
+#### Piedra angular
 
 - If using construct plackets for the leg slits.
 - Sew the plackets to the leg slits similar to how you would sew a sleeve cuff on a shirt.
@@ -129,4 +129,4 @@ You can _Edgestitch_ the waistband together like a modern waistband if you prefe
 
 ### Step 7: Enjoy!
 
-You're all done! Now go have a ride in your brilliant new cycling breeches!
+Todo listo! Now go have a ride in your brilliant new cycling breeches!
