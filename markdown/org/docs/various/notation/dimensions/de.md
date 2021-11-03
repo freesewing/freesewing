@@ -4,7 +4,11 @@ title: Abmessungen
 
 Wenn Sie ein *-papierloses* Muster wählen, wird Ihr Muster mit Dimensionen geliefert:
 
-<Legend part="dimension" caption="An example of a dimension on a pattern" />
+<Legend part="dimension">
+
+An example of a dimension on a pattern
+
+</Legend>
 
 <Tip>
 
