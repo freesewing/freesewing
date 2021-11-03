@@ -3,10 +3,10 @@ headRatio:
   title: Head ratio
   description: Controls the size of the head opening
 armholeDrop:
-  title: Armhole drop
-  description: Controls the depth of the armhole
+  title: Armsgat verlagen/verhogen
+  description: Bepaalt de diepte van het armsgat
 lengthBonus:
-  title: Length bonus
+  title: Lengtebonus
   description: Allows variation of the length of the garment
 widthBonus:
   title: Width bonus
@@ -21,14 +21,14 @@ clavusWidth:
   title: Clavus width
   description: Controls the width of the clavi
 length:
-  title: Length
+  title: Lengte
   description: Controls the length of the garment
   options:
     toKnee: On the knee
     toMidLeg: On the thigh
     toFloor: To the floor
 width:
-  title: Width
+  title: Breedte
   description: Controls the width of the garment
   options:
     toElbow: To the elbow
