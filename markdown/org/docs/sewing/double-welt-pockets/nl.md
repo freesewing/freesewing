@@ -57,7 +57,7 @@ Deze vormen de twee smalle stroken stof die je paspelzak maken.
 
 De tussenvoering voor de zak is een enkele rechthoekige strook kleefbare tussenvoering met de volgende afmetingen:
 
- - Length: Pocket width + 4cm
+ - Lengte: zakbreedte + 4 cm
  - Breedte: Hoogte van de paspel x 2 + 5 cm
 
 Voor ons voorbeeld:
