@@ -1,4 +1,4 @@
-Um Jaeger zu machen, benötigst du Folgendes:
+Um Jaeger zu erstellen, benötigst du Folgendes:
 
  - Etwa zweieinhalb Meter eines geeigneten Stoffes (siehe [Stoffoptionen](#fabric-options))
  - Lining Stoff, optional unterschiedliche Ärmelfutter
