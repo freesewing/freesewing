@@ -50,6 +50,12 @@
 
 This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).
 
+## Get involved with FreeSewing v3 🚀
+
+Check out [out v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278) to
+see what we've planning. And we are open to ideas/suggestions for what you would like to
+see in our mext major release.
+
 ## Getting started ⚡ 
 
 As this is a monorepo. You'll need [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
