@@ -1,11 +1,6 @@
-- - -
-- - -
 
-<Fixme>
+Where to place the primary bust dart to shape the chest.
 
-Diese Option dokumentieren
-
-</Fixme>
 
 ## Effekt dieser Option auf das Schnittmuster
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](breanna_primarybustdart_sample.svg "Effekt dieser Option auf das Schnittmuster")
