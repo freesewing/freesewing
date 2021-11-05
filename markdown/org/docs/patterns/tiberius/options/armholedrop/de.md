@@ -1,6 +1,6 @@
 ---
 
-Controls the depth of the armhole
+Steuert die Tiefe des Armloches
 
 
 ## Effekt dieser Option auf das Schnittmuster

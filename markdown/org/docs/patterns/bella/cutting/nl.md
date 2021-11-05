@@ -2,7 +2,7 @@
 title: Bella Cutting
 - - -
 
-**Main fabric**
+**Buitenstof**
 
  - Cut **1 Front** part on the fold.
  - Cut **2 Back** parts.

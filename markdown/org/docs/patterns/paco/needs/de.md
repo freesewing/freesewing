@@ -1,5 +1,5 @@
 
-Um Paco zu machen, benötigst du Folgendes:
+Um Paco zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
 - Etwa 1,25 Meter (je nach Höhe) eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/paco/fabric))

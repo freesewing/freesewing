@@ -1,4 +1,4 @@
-Um Wahid zu machen, benötigst du Folgendes:
+Um Wahid zu erstellen, benötigst du Folgendes:
 
  - Grundlegendes Nähzubehör
  - Ein Meter geeigneter Stoff ([siehe Stoffoptionen](/docs/patterns/wahid/fabric))

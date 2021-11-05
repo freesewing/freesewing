@@ -2,7 +2,7 @@
 title: Was du brauchst
 ---
 
-Um Florenz zu machen, benötigst du Folgendes:
+Um Florenz zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
 - Etwa 0.5 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/florent/fabric/))

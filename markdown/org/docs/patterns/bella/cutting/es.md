@@ -2,7 +2,7 @@
 title: Bella Cutting
 - - -
 
-**Main fabric**
+**Tela principal**
 
  - Cut **1 Front** part on the fold.
  - Cut **2 Back** parts.

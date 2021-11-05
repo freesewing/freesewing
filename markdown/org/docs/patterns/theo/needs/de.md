@@ -1,4 +1,4 @@
-Um Theodore zu machen, benötigst du Folgendes:
+Um Theodore zu erstellen, benötigst du Folgendes:
 
  - Grundlegendes Nähzubehör
  - Etwa 2 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/theo/fabric))

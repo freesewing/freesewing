@@ -1,4 +1,4 @@
-Um Bruce zu machen, benötigst du Folgendes:
+Um Bruce zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
 - Etwa 1 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/bruce/fabric/))
