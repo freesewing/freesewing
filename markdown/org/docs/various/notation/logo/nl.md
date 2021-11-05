@@ -6,6 +6,6 @@ Sommige (of alle) patroondelen kunnen ook het FreeSewing logo bevatten. Dit logo
 
 <Legend part="logo">
 
-The FreeSewing logo
+Het FreeSewing logo
 
 </Legend>
