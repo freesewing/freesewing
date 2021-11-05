@@ -1,11 +1,5 @@
----
----
 
-<Fixme>
-
-Document this option
-
-</Fixme>
+The size of the back shoulder dart.
 
 
 ## Effect of this option on the pattern

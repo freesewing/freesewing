@@ -1,6 +1,4 @@
 
-![Shoulder ease](./shoulderease.svg)
-
 Controls the amount of ease on the shoulder to shoulder measurement.
 
 This option allows you to create some extra ease at the shoulders which shifts
