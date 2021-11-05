@@ -14,9 +14,10 @@ export default (part) => {
     Snippet,
     sa,
     measurements,
+    absoluteOptions,
   } = part.shorthand()
 
-  store.set('waistbandWidth', measurements.waistToFloor * options.waistbandWidth)
+  store.set('waistbandWidth', absoluteOptions.waistbandWidth)
 
   if (options.waistbandCurve > 0) {
     return part

@@ -1,3 +1,15 @@
+2.19.3:
+  date: 2021-11-05
+
+  Fixed:
+    charlie:
+      - Worked around ESM issue by adding snapseries as local dependency
+
+  Changed:
+    charlie:
+      - Converted the `waistbandWidth` options to snapped pct (was normal pct)
+
+
 2.19.2:
   date: 2021-11-02
 

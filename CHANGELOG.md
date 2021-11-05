@@ -1,6 +1,19 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.19.3 (2021-11-05)
+
+### charlie
+
+#### Changed
+
+ - Converted the `waistbandWidth` options to snapped pct (was normal pct)
+
+#### Fixed
+
+ - Worked around ESM issue by adding snapseries as local dependency
+
+
 ## 2.19.2 (2021-11-02)
 
 ### components

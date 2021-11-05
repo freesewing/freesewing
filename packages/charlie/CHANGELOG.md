@@ -1,6 +1,16 @@
 # Change log for: @freesewing/charlie
 
 
+## 2.19.3 (2021-11-05)
+
+### Changed
+
+ - Converted the `waistbandWidth` options to snapped pct (was normal pct)
+
+### Fixed
+
+ - Worked around ESM issue by adding snapseries as local dependency
+
 ## 2.19.0 (2021-10-17)
 
 ### Changed

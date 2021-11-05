@@ -1,4 +1,7 @@
 import { version } from '../package.json'
+import { elastics } from '@freesewing/snapseries'
+import freesewing from '@freesewing/core'
+const { pctBasedOn } = freesewing
 
 export default {
   name: 'charlie',
@@ -103,7 +106,8 @@ export default {
 
     // Style (from Titan)
     waistHeight: { pct: -4, min: -50, max: 30 },
-    waistbandWidth: { pct: 3.5, min: 2, max: 5 },
+    waistbandWidth: { pct: 3, min: 1, max: 6, snap: elastics, ...pctBasedOn('waistToFloor') },
+    //waistbandWidth: { pct: 3.5, min: 2, max: 5 },
     lengthBonus: { pct: 2, min: -20, max: 10 },
     crotchDrop: { pct: 2, min: 0, max: 15 },
 
