@@ -31,7 +31,7 @@
     "watch": "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs"
   },
   "peerDependencies": {
-    "axios": "0.21.1",
+    "axios": "0.21.2",
     "react": "^17.0.2",
     "@freesewing/pattern-info": "^2.19.2",
     "@freesewing/mui-theme": "^2.19.2",
