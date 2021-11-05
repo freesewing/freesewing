@@ -64,7 +64,7 @@
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^v4.0.0-alpha.57",
-    "axios": "0.21.1",
+    "axios": "0.21.2",
     "react-intl": "^5.17.6",
     "prop-types": "^15.7.2",
     "mocha": "^9.1.1",
