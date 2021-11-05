@@ -1,6 +1,4 @@
 
-![Overwijdte kraag](./collarease.svg)
-
 Bepaalt de hoeveelheid overwijdte aan je kraag/nek.
 
 
