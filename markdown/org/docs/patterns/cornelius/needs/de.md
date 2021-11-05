@@ -4,7 +4,7 @@ title: Cornelius What you need
 
 To make Cornelius, you will need the following:
 
-- Basic sewing supplies
+- Grundlegendes Nähzubehör
 - About 2 metres of a suitable fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
 - About 0.5 metres of lining fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
 - Interfacing for the waistband ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
