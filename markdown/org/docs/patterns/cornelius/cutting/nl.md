@@ -2,8 +2,8 @@
 title: Cornelius Cutting
 - - -
 
-### Materials
- - **Main fabric**
+### Materialen
+ - **Buitenstof**
    - Cut **2 back** parts
    - Cut **2 front** parts
    - Cut **2 pocket facing** parts
@@ -12,7 +12,7 @@ title: Cornelius Cutting
    - Cut **1 zipper guard** part on the fold
  - **Lining (Pocket) fabric**
    - Cut **2 pocket** parts
- - **Interfacing**
+ - **Tussenvoering**
    - Cut **1 waistband** part on the fold
 
 <Note>
