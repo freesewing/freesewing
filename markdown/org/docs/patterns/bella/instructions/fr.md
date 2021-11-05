@@ -17,8 +17,8 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 - Close the front bust and waist darts.
 - Fermer les fléchettes arrière.
-- Sew the front to the backs at the shoulders right sides together.
-- Sew the front to the backs at the side seams right sides together.
+- Sew the front to the backs at the shoulders good sides together.
+- Sew the front to the backs at the side seams good sides together.
 
 <Tip>
 
