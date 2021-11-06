@@ -4,6 +4,8 @@ title: Point.copy()
 A point's `copy()` method returns a new point with the same coordinates as the original point.
 This method does _not_ copy any attributes the original point may have.
 
+## Point.copy() signature
+
 ```js
 Point point.copy()
 ```
@@ -16,6 +18,8 @@ this `Point.copy()` method will only copy the point's coordinates.
 To also copy the attributes, use [`Point.clone()`](reference/api/point/clone/) instead.
 
 </Note>
+
+## Point.copy() example
 
 <Example
   part="point_copy"

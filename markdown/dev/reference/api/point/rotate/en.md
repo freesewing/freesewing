@@ -7,9 +7,13 @@ around the point (`center`) that you pass it.
 
 Just like the result of the [`Point.angle()`](reference/api/point/angle/) method, an angle of 0° points right, and the angle increases counterclockwise.
 
+## Point.rotate() signature
+
 ```js
 Point point.rotate(float angle, Point center)
 ```
+
+## Point.rotate() example
 
 <Example
   part="point_rotate"

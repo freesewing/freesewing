@@ -6,9 +6,13 @@ Returns a new `Point` that is shifted `distance` (mm) in the direction of the `t
 
 If you need to move a point a percentage instead of a specific distance, use [`Point.shiftFractionTowards()`](reference/api/point/shiftfractiontowards/) instead.
 
+## Point.shiftTowards() signature
+
 ```js
 Point point.shiftTowards(Point target, float distance)
 ```
+
+## Point.shiftTowards() example
 
 <Example
   part="point_shifttowards"

@@ -4,9 +4,13 @@ title: Point.dist()
 
 A point's `dist()` method returns the distance (in mm) between this point and the point you pass it.
 
+## Point.dist() signature
+
 ```js
 float point.dist(Point point)
 ```
+
+## Point.dist() example
 
 <Example
   part="point_dist"

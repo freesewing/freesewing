@@ -4,6 +4,8 @@ title: Point.sitsRoughlyOn()
 
 Returns `true` if this point has roughly (rounded to the nearest millimeter) the same coordinates as the one you pass to it.
 
+## Point.sitsRoughlyOn() signature
+
 ```js
 bool point.sitsRoughlyOn(Point check)
 ```
@@ -16,6 +18,8 @@ The difference between this method and [`Point.sitsOn()`](/reference/api/point/s
 that this one rounds things down to the nearest integer (thus mm) before checking.
 
 </Note>
+
+## Point.sitsRoughlyOn() example
 
 <Example 
   part="point_sitsroughlyon"

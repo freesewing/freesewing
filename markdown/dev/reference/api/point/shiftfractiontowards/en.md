@@ -10,9 +10,13 @@ point in the opposite direction.
 
 If you need to move a point by a specific distance instead of a percentage, use [`Point.shiftTowards()`]((reference/api/point/shifttowards/)) or [`Point.shiftOutwards()`](reference/api/point/shiftoutwards/) instead.
 
+## Point.shiftFractionTowards() signature
+
 ```js
 Point point.shiftFractionTowards(Point target, float fraction)
 ```
+
+## Point.shiftFractionTowards() example
 
 <Example
   part="point_shiftfractiontowards"

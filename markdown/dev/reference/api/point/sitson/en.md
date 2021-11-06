@@ -16,9 +16,13 @@ millimeter, use [`Point.sitsRoughlyOn()`](/reference/api/point/sitsroughlyon/) i
 
 </Note>
 
+## Point.sitsOn() signature
+
 ```js
 bool point.sitsOn(Point check)
 ```
+
+## Point.sitsOn() example
 
 <Example
   part="point_sitson"

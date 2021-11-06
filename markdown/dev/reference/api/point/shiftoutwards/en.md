@@ -4,9 +4,13 @@ title: Point.shiftOutwards()
 
 Returns a new `Point` that is shifted `distance` (mm) beyond the `target` in the direction of the target point.
 
+## Point.shiftOutwards() signature
+
 ```js
 Point point.shiftOutwards(Point target, float distance)
 ```
+
+## Point.shiftOutwards() example
 
 <Example
   part="point_shiftoutwards"

@@ -5,9 +5,13 @@ title: Point.flipX()
 A point's `flipX()` method returns a new `Point` that mirrors the original point around the X-value of the point you pass it.
 If you do not pass in a point, it will default to mirroring around an X-value of zero.
 
+## Point.flipX() signature
+
 ```js
 Point point.flipX(Point mirror = false)
 ```
+
+## Point.flipX() example
 
 <Example
   part="point_flipx"

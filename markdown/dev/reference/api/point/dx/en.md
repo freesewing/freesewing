@@ -4,9 +4,13 @@ title: Point.dx()
 
 A point's `dx()` method returns the delta (in mm) along the X-axis between this point and the point you pass it.
 
+## Point.dx() signature
+
 ```js
 float point.dx(Point point)
 ```
+
+## Point.dx() example
 
 <Example
   part="point_dx"
