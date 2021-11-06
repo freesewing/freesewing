@@ -21,7 +21,7 @@ Als je een overlocker/overlock gebruikt, kun je naden naaien die in één keer f
   
 </Tip>
 
-## Step 1: Attaching the Gussets
+## Stap 1: Gussets bijvoegen
 
 - Stik de voorpanden langs de zijkanten van de goede kanten op elkaar, langs de zijnaden.
 - ***Voltooi*** naden.

@@ -1,7 +1,6 @@
-![La opción de bonificación de longitud de manga en Brian](./sleevelengthbonus.svg)
 
-Esta opción controla cómo alargar las mangas.
+This option controls how to lengthen the sleeves.
 
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](breanna_sleevelengthbonus_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevelengthbonus_sample.svg "Effect of this option on the pattern")

@@ -1,4 +1,3 @@
-![Die Manschettenleicht-Faktor auf Brian](./cuffease.svg)
 
 Diese Option steuert die Leichtigkeit am Handgelenk.
 

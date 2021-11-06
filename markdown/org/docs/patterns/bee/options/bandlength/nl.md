@@ -5,5 +5,5 @@ title: Band Length (Cross back ties)
 Controls the length of the band around your chest for the cross back ties variation of Bee.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bandlength_sample.svg "Effect of this option on the pattern")
+## Effect van deze optie op het patroon
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_bandlength_sample.svg "Effect van deze optie op het patroon")
