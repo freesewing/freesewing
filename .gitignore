@@ -91,3 +91,6 @@ scripts/verdaccio.sh
 
 # Local Netlify folder
 .netlify
+
+# Don't ignore the specific Points.dist() docs folder
+!markdown/dev/reference/api/point/dist
