@@ -2,7 +2,7 @@
 title: Point.attr()
 ---
 
-A point's `attr()` method adds an attribute to the point, and returns the point. Setting the third parameter
+Adds an attribute to the point, and returns the original point. Setting the third parameter
 to `true` will replace the value of the attribute instead of adding it.
 
 ```js

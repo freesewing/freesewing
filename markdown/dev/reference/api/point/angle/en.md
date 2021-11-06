@@ -5,9 +5,13 @@ title: Point.angle()
 A point's `angle()` method returns the angle (in degrees) between this point and
 the point passed into the method. An angle of 0° points to the right, and the angle increases counterclockwise.
 
+## Point.angle() signature
+
 ```js
-float point.angle(Point point)
+float point.angle(Point pointB)
 ```
+
+## Point.angle() Example
 
 <Example
   part="point_angle"

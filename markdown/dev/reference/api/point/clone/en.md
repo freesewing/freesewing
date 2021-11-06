@@ -2,7 +2,7 @@
 title: Point.clone()
 ---
 
-A point's `clone()` method returns a new `Point` with the same coordinates and attributes as the original point.
+Returns a new `Point` with the same coordinates and attributes as the original point.
 
 ```js
 Point point.clone()
