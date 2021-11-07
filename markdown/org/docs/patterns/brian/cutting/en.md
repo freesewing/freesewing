@@ -1,7 +1,7 @@
 **Main fabric**
 
  - Cut **1 Front** part on the fold.
- - Cut **2 Back** parts.
+ - Cut **1 Back** part on the fold.
  - Cut **2 Sleeve** parts.
 
 These cutting instructions are just for the default Brian block. Adjust your cutting accordingly if you have/are making changes to the block.
