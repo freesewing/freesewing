@@ -1,14 +1,18 @@
 ---
-title: dx()
+title: Point.dx()
 ---
+
+A point's `dx()` method returns the delta (in mm) along the X-axis between this point and the point you pass it.
+
+## Point.dx() signature
 
 ```js
 float point.dx(Point point)
 ```
 
-Returns the delta along the X-axis between this point and the point you pass it.
+## Point.dx() example
 
-<Example 
+<Example
   part="point_dx"
   caption="An example of the Point.dx() method"
 />
@@ -42,4 +46,3 @@ paths.line_dy = new Path()
   .line(points.totop)
   .attr("class", "dashed")
 ```
-

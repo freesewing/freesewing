@@ -1,21 +1,25 @@
 ---
-title: translate()
+title: Point.translate()
 ---
- 
+
+Returns a new `Point` with a [translate transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate) applied.
+
+## Point.translate() signature
+
 ```js
 Point point.translate(float deltaX, float deltaY)
 ```
 
-Returns a point with 
-[a translate transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate) 
-applied. 
-
 In other words, this will:
 
- - Add `deltaX` to the point's X-coordinate
- - Add `deltaY` to the point's Y-coordinate
+- Add `deltaX` to the point's X-coordinate
+- Add `deltaY` to the point's Y-coordinate
 
-<Example 
+Positive values for `deltaX` will move the point to the right. Positive values for `deltaY` will move the point downwards.
+
+## Point.translate() example
+
+<Example
   part="point_translate"
   caption="An example of the Point.translate() method"
 />

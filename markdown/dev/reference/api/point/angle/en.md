@@ -1,14 +1,19 @@
 ---
-title: angle()
+title: Point.angle()
 ---
 
+A point's `angle()` method returns the angle (in degrees) between this point and
+the point passed into the method. An angle of 0° points to the right, and the angle increases counterclockwise.
+
+## Point.angle() signature
+
 ```js
-float point.angle(Point point)
-``` 
+float point.angle(Point pointB)
+```
 
-Returns the angle made by a line from this point to the point you pass it.
+## Point.angle() Example
 
-<Example 
+<Example
   part="point_angle"
   caption="An example of the Point.angle() method"
 />
@@ -28,4 +33,3 @@ paths.line = new Path()
   .line(points.moon)
   .attr("class", "dashed");
 ```
-
