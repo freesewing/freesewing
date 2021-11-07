@@ -1,11 +1,5 @@
----
----
 
-<Fixme>
-
-Documentation missing
-
-</Fixme>
+Controls the angle of the crotch seam.
 
 
 ## Effect of this option on the pattern
