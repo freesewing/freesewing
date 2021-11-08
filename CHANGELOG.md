@@ -3,6 +3,18 @@
 
 ## unreleased (2022-11-05)
 
+### simon
+
+#### Fixed
+
+ - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
+
+### simone
+
+#### Fixed
+
+ - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
+
 ### titan
 
 #### Fixed

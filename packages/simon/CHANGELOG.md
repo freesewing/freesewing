@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## unreleased (2022-11-05)
+
+### Fixed
+
+ - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
+
 ## 2.19.2 (2021-11-02)
 
 ### Fixed
