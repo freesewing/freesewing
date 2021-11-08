@@ -3,6 +3,12 @@
 
 ## unreleased (2022-11-05)
 
+### paco
+
+#### Fixed
+
+ - Make pocket flaps properly parametric Closes [#1401](https://github.com/freesewing/freesewing/issues/1401)
+
 ### simon
 
 #### Fixed

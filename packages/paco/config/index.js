@@ -1,5 +1,5 @@
 import { version } from '../package.json'
-import { elastics } from '@freesewing/snapseries'
+import { elastics, smallsteps } from '@freesewing/snapseries'
 import freesewing from '@freesewing/core'
 const { pctBasedOn } = freesewing
 
@@ -77,7 +77,6 @@ export default {
     fitCrossSeamBack: true,
     kneeEase: 0.06,
     fitKnee: false,
-    frontPocketFlapSize: 25,
     frontPocketHeelRatio: 0.4,
     backPocketWaistRatio: 0.4,
     backPocketHeightRatio: 0.4,
@@ -105,6 +104,8 @@ export default {
     // Pockets
     frontPockets: { bool: true },
     backPockets: { bool: false },
+    // Not exposed to the user
+    frontPocketFlapSize: { pct: 3, min: 3, max: 3, snap: smallsteps, ...pctBasedOn('waist') },
 
     // Advanced
     legBalance: { pct: 57.5, min: 52.5, max: 62.5 },

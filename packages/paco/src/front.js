@@ -64,6 +64,7 @@ export default function (part) {
     complete,
     paperless,
     macro,
+    absoluteOptions,
   } = part.shorthand()
 
   // Adapt bottom leg based on heel and heel ease
@@ -108,19 +109,19 @@ export default function (part) {
   // Add the (optional) front pocket extention
   if (options.frontPockets) {
     let outseam = drawOutseam(true)
-    points.pocketFlapTopIn = outseam.shiftAlong(options.frontPocketFlapSize)
+    points.pocketFlapTopIn = outseam.shiftAlong(absoluteOptions.frontPocketFlapSize)
     points.pocketFlapBottomIn = outseam.shiftAlong(
-      options.frontPocketFlapSize + measurements.heel * options.frontPocketHeelRatio
+      absoluteOptions.frontPocketFlapSize + measurements.heel * options.frontPocketHeelRatio
     )
     points.pocketFlapTopOut = points.pocketFlapTopIn
-      .shiftTowards(points.pocketFlapBottomIn, options.frontPocketFlapSize)
+      .shiftTowards(points.pocketFlapBottomIn, absoluteOptions.frontPocketFlapSize)
       .rotate(-90, points.pocketFlapTopIn)
     points.pocketFlapBottomOut = points.pocketFlapBottomIn
-      .shiftTowards(points.pocketFlapTopIn, options.frontPocketFlapSize)
+      .shiftTowards(points.pocketFlapTopIn, absoluteOptions.frontPocketFlapSize)
       .rotate(90, points.pocketFlapBottomIn)
     points.pocketFlapBottomOut = points.pocketFlapTopOut.shiftOutwards(
       points.pocketFlapBottomOut,
-      options.frontPocketFlapSize
+      absoluteOptions.frontPocketFlapSize
     )
 
     points.flapTopLeft = points.pocketFlapTopOut.flipX(points.pocketFlapTopIn)
