@@ -195,7 +195,7 @@ export default (part) => {
   if (options.waistHeight < 1 || absoluteOptions.waistbandWidth > 0) {
     points.styleWaistOut = drawOutseam()
       .reverse()
-      .shiftAlong(measurements.waistToHips + absoluteOptions.waistbandWidth)
+      .shiftAlong(measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth)
     points.styleWaistIn = utils.beamsIntersect(
       points.styleWaistOut,
       points.styleWaistOut.shift(points.waistOut.angle(points.waistIn), 10),

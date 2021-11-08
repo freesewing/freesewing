@@ -273,7 +273,7 @@ export default (part) => {
   // Only now style the waist lower if requested
   if (options.waistHeight < 1 || absoluteOptions.waistbandWidth > 0) {
     points.styleWaistOut = drawOutseam().shiftAlong(
-      measurements.waistToHips + absoluteOptions.waistbandWidth
+      measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth
     )
     points.styleWaistIn = utils.beamsIntersect(
       points.styleWaistOut,
