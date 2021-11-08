@@ -1,6 +1,15 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (2022-11-05)
+
+### titan
+
+#### Fixed
+
+ - Fixed a regression that caused the `waistHeight` option to be ignored. Closes [#1467](https://github.com/freesewing/freesewing/issues/1467)
+
+
 ## 2.19.3 (2021-11-05)
 
 ### charlie
