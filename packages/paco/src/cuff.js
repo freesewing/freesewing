@@ -53,19 +53,19 @@ export default function (part) {
         .line(points.bottomRight.shift(-90, sa).shift(0, sa))
         .attr('class', 'help')
     }
+  }
 
-    if (paperless) {
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.topRight.x + 15 + sa,
-      })
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomRight.y + 15 + sa,
-      })
-    }
+  if (paperless) {
+    macro('vd', {
+      from: points.bottomRight,
+      to: points.topRight,
+      x: points.topRight.x + 15 + sa,
+    })
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomRight.y + 15 + sa,
+    })
   }
 
   return part

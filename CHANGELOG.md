@@ -7,6 +7,7 @@
 
 #### Fixed
 
+ - Make paperless markings available when detail is disabled Closes [#1400](https://github.com/freesewing/freesewing/issues/1401)
  - Make pocket flaps properly parametric Closes [#1401](https://github.com/freesewing/freesewing/issues/1401)
 
 ### simon
