@@ -1,7 +1,7 @@
 # Change log for: @freesewing/paco
 
 
-## unreleased (2022-11-05)
+## 2.19.4 (2022-11-09)
 
 ### Fixed
 
