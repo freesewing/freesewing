@@ -1,6 +1,13 @@
 # Change log for: @freesewing/paco
 
 
+## unreleased (2022-11-05)
+
+### Fixed
+
+ - Make paperless markings available when detail is disabled Closes [#1400](https://github.com/freesewing/freesewing/issues/1401)
+ - Make pocket flaps properly parametric Closes [#1401](https://github.com/freesewing/freesewing/issues/1401)
+
 ## 2.19.0 (2021-10-17)
 
 ### Changed

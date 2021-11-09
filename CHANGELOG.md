@@ -1,6 +1,34 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (2022-11-05)
+
+### paco
+
+#### Fixed
+
+ - Make paperless markings available when detail is disabled Closes [#1400](https://github.com/freesewing/freesewing/issues/1401)
+ - Make pocket flaps properly parametric Closes [#1401](https://github.com/freesewing/freesewing/issues/1401)
+
+### simon
+
+#### Fixed
+
+ - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
+
+### simone
+
+#### Fixed
+
+ - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
+
+### titan
+
+#### Fixed
+
+ - Fixed a regression that caused the `waistHeight` option to be ignored. Closes [#1467](https://github.com/freesewing/freesewing/issues/1467)
+
+
 ## 2.19.3 (2021-11-05)
 
 ### charlie
