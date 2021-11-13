@@ -105,7 +105,7 @@ export default {
     kneeEase: { pct: 15, min: 10, max: 30 },
 
     // Style (from Titan)
-    waistHeight: { pct: -4, min: -50, max: 30 },
+    waistHeight: { pct: -4, min: -15, max: 40 },
     waistbandWidth: { pct: 3, min: 1, max: 6, snap: elastics, ...pctBasedOn('waistToFloor') },
     //waistbandWidth: { pct: 3.5, min: 2, max: 5 },
     lengthBonus: { pct: 2, min: -20, max: 10 },

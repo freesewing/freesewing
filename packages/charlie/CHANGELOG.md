@@ -1,6 +1,16 @@
 # Change log for: @freesewing/charlie
 
 
+## 2.19.5 (2022-11-13)
+
+### Changed
+
+ - Updated the `waistHeight` options to increase both min and max values
+
+### Fixed
+
+ - Fix issue where a very low waist caused the fly to be incorrectly drawn This only happens at unrealistic waist heights, so I changed the option minimum value instead. Closes [#1486](https://github.com/freesewing/freesewing/issues/1486)
+
 ## 2.19.3 (2021-11-05)
 
 ### Changed

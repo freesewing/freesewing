@@ -2,11 +2,18 @@
   date: 2022-11-13
 
   Fixed:
+    charlie:
+      - Fix issue where a very low waist caused the fly to be incorrectly drawn
+        This only happens at unrealistic waist heights, so I changed the option
+        minimum value instead.
+        Closes [#1486](https://github.com/freesewing/freesewing/issues/1486)
     yuri:
       - Fix seam allowance on back, gusset and hood center parts
         Closes [#1464](https://github.com/freesewing/freesewing/issues/1464)
 
   Changed:
+    charlie:
+      - Updated the `waistHeight` options to increase both min and max values
     penelope:
       - Increased maximum for the `waistEase` option
       - Increased maximum for the `seatEase` options
