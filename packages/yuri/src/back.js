@@ -77,7 +77,9 @@ export default function (part) {
     })
     macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
     if (sa) {
-      paths.sa = paths.hemBase.offset(3 * sa).join(paths.saBase.offset(sa))
+      paths.sa = paths.hemBase.offset(3 * sa)
+        .join(paths.gussetBase.offset(sa))
+        .join(paths.saBase.offset(sa))
       paths.sa
         .move(paths.sa.end())
         .line(points.cbNeck)
