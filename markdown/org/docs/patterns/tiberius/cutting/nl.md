@@ -8,7 +8,7 @@ Tiberius is just a big rectangle, so printing the pattern out is a bit of a wast
 
 Tiberius consists of only one part, the *tunica*, that will act as a pattern for both front and back pieces.
 
-- cut *2 tunicae*, on the fold
+- cut *2 tunicae*, _on the fold_
 
 <Note>
 
