@@ -1,3 +1,16 @@
+2.19.5:
+  date: 2022-11-13
+
+  Fixed:
+    yuri:
+      - Fix seam allowance on back, gusset and hood center parts
+        Closes [#1464](https://github.com/freesewing/freesewing/issues/1464)
+
+  Changed:
+    penelope:
+      - Increased maximum for the `waistEase` option
+      - Increased maximum for the `seatEase` options
+
 2.19.4:
   date: 2022-11-09
 

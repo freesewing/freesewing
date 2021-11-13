@@ -1,6 +1,13 @@
 # Change log for: @freesewing/penelope
 
 
+## 2.19.5 (2022-11-13)
+
+### Changed
+
+ - Increased maximum for the `waistEase` option
+ - Increased maximum for the `seatEase` options
+
 ## 2.19.0 (2021-10-17)
 
 ### Changed

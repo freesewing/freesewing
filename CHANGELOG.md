@@ -1,6 +1,22 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.19.5 (2022-11-13)
+
+### penelope
+
+#### Changed
+
+ - Increased maximum for the `waistEase` option
+ - Increased maximum for the `seatEase` options
+
+### yuri
+
+#### Fixed
+
+ - Fix seam allowance on back, gusset and hood center parts Closes [#1464](https://github.com/freesewing/freesewing/issues/1464)
+
+
 ## 2.19.4 (2022-11-09)
 
 ### paco
