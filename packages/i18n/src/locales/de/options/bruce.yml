@@ -13,7 +13,7 @@ stretch:
   description: Die Menge an negativer Bewegungszugabe.
 legStretch:
   title: Bein Dehnung
-  description: 'Das beste Ergebnis erzielst du, wenn du den Sitz der Beine etwas enger machst — Sag Nein zu klaffenden Lücken.'
+  description: 'For best results, you want to fit your legs a bit more snugly — say no to gaping.'
 backRise:
   title: Hintere Anstieg
-  description: Prozentsatz, um den die Taille am Rücken angehoben wird.
+  description: Betrag, um den die Taille hinten angehoben wird.
