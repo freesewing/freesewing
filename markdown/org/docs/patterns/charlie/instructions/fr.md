@@ -5,7 +5,7 @@ La première chose que nous allons faire est de fermer la ceinture sur le pannea
 
 Pour cela, pliez le panneau arrière double avec _bons côtés ensemble_ en s'assurant de faire correspondre les deux côtés de la fléchette les uns aux autres.
 
-Maintenant coudre le dart à la fermeture, assurez-vous d'utiliser une petite longueur de couture, et de coudre toute la route à l'extrémité de la fléchette, même quelques points du tissu.
+Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
 ![Closed darts](step01.svg)
 
@@ -22,8 +22,8 @@ Suivez [nos instructions](/docs/sewing/double-welt-pockets/) pour créer les poc
 <Note>
 
 Comme il s'agit de chinos, vous pouvez/devriez edgestitch autour de l'ouverture.
-Ce n'est pas strictement nécessaire pour les poches de welt, et généralement pas fait sur un pantalon classique (et donc ne devrait pas dans
-les instructions) mais c'est une fin très typique pour les chinois, et facilite le maintien de tout en place.
+It's not strictly required for welt pockets, and typically not done on classic trousers (and thus not shown in
+the instructions) but it's a very typical finish for chinos, and makes it easier to keep everything in place.
 
 </Note>
 
@@ -124,7 +124,7 @@ Appuyez maintenant sur la courbure de la poche avant, tant sur le panneau arriè
 
 ### Coller les poches avant fermées
 
-Je vous conseille fortement de basculer la fermeture de poche/en place avant de coudre cette couture pour que vous sachiez qu'elle est précise.
+I strongly advise you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
 
 Fermer le revêtement extérieur signifie placer le panneau avant et arrière avec de bons côtés ensemble, et coudre la couture extérieure. C'est assez facile aux jambes, mais en haut nous avons notre poche, ce qui complique les choses.
 
@@ -188,9 +188,9 @@ Lorsque vous avez terminé, appuyez sur ouvrir la couture.
 
 Assurez-vous qu'une jambe est retournée avec le bon côté dehors, et l'autre a le bon côté dedans.
 
-Ne pas enfoncer la jambe avec le bon côté à l'intérieur de la jambe qui a le bon côté dedans. De cette façon, ils ont leurs bons côtés les uns contre les autres.
+Now tuck the leg with the good side out inside the leg that has the good side in. De cette façon, ils ont leurs bons côtés les uns contre les autres.
 
-Aling the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Arrête à l'encoche de vol la plus basse.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Arrête à l'encoche de vol la plus basse.
 
 Quand vous avez terminé. Faites-le à nouveau. Coudre toujours la couture de croix deux fois. C'est l'une de ces meilleures pratiques que vous ignorez à vos propres risques.
 
@@ -225,11 +225,11 @@ Il y a une marge de couture supplémentaire qui coule le long de la mouche. Nous
 
 ### Fixer la face de la mouche
 
-Coudre la mouche face à gauche. Placez-les avec de bons côtés ensemble, en alignant le haut.
+Coudre la mouche face à gauche. Place them with good sides together, aligning the top.
 
 ### Tuck in the tip of the fly facing
 
-Plier le fond de la mouche en faisant face à la couture à l'intérieur et sécuriser avec quelques points
+Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
 
 ### Coudre le bord de la mouche face à la couture
 
@@ -261,7 +261,7 @@ Vous pourriez vouloir baster cette première fois pour vous assurer qu'elle est 
 
 ### Coudre la fermeture éclair sur la mouche
 
-Coudre ensuite l'autre côté de la fermeture à la mouche. Make sure to align it properly so that when the trousers are closed, the zip is hidden
+Coudre ensuite l'autre côté de la fermeture à la mouche. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
 
 ### Terminer la couture de croix
@@ -286,7 +286,7 @@ Pour plus d'efficacité, nous fabriquerons une longue bande de boucle de courroi
 
 </Note>
 
-Couper une bande de 80 cm de long (32 po) et 2,8 cm de large (1 1/8 po).
+Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
 Serge (ou zigzag) le bord long de la bande des deux côtés.
 
@@ -305,7 +305,7 @@ Nous allons diviser nos boucles de ceinture le long de la taille :
  - 1 de chaque côté plus ou moins où la couture latérale frapperait la taille si elle était droite vers le haut
  - 1 de chaque côté à partir du centre devant. Pas trop près les uns des autres donc il n'y a pas de place pour les boucles de ceinture, mais pas trop loin non plus, donc ça ne semble pas bizarre
 
-Placez la boucle de ceinture à ces endroits avec leur bon côté vers le bas (contre le bon côté du tissu de votre pantalon, et le haut aligné avec la taille. Coudre ceci dans la couture de la taille en veillant à ce qu'ils soient perpendiculaires à la ceinture.
+Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 
 ## Étape 12 : Attacher la bande de taille
 
@@ -315,9 +315,9 @@ Si vous faites une ceinture droite, glissez directement pour attacher la ceintur
 
 Placez les deux bandes de taille avec de bons côtés ensemble, et cousez le long du haut de la ceinture (le bord plus court).
 
-Couper la taille de la bande intérieure et presser toutes les coutures vers la ceinture intérieure.
+Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waistband.
 
-Vous pouvez maintenant traiter votre ceinture assemblée comme un seul morceau, et continuer comme pour la ceinture droite.
+You can now treat your assembled waistband as one piece, and continue as for the straight waistband.
 
 <Tip>
 Pour vous assurer que la taille de votre ceinture intérieure ne fait pas de dérapage, vous pouvez _understitch_.
@@ -340,7 +340,7 @@ Pliez maintenant la ceinture à la bonne largeur et appuyez dans le creux.
 
 ### Fermer le début et la fin de la ceinture.
 
-Au début et à la fin, plissez la ceinture pour qu'elle ait de bons côtés ensemble.
+At the start and end, fold the waistband over so it has its good sides together.
 
 Maintenant coudre la fin fermée par la couture de haut en bas au point où se termine la couture de la ceinture.
 
@@ -366,9 +366,9 @@ Cela accrochera l'arrière de la ceinture que nous avons fait pour aller un peu 
 
 ### Coudre les boucles de la ceinture pour les agrandir
 
-Il est préférable de rendre les boucles de la ceinture un peu plus larges que la bande d'attente, pour accomoder des ceintures plus larges.
+It's best to make the belt loops a bit wider than the waistband, to accomodate wider belts.
 
-Pour cela, laisser la ceinture reposer à plat, et coudre avec un bartack de 1,5 cm environ (moitié et pouce) sous la ceinture.
+For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half an inch) below the waistband.
 
 ### Pliez vers le haut, vers le bas, et coudez vers le bas
 
@@ -378,7 +378,7 @@ Ils s'étendront au-delà du haut de la ceinture. Repliez l'excès à nouveau. N
 
 Maintenant, faites un bartack le long du haut de la ceinture pour verrouiller la boucle de la ceinture.
 
-Lorsque vous avez terminé, tournez prudemment le dos de la boucle ceinture vers l'avant et coupez l'excès juste à côté du bartack.
+When you're done, carefully twist the back of the beltloop to the front and cut off the excess right next to the bartack.
 
 <Note>
 
@@ -400,4 +400,4 @@ Créer un trou de bouton. Soit à la main (cela vaut la peine d'être pratiqué)
 
 Enfin, attachez le bouton.
 
-Prenez maintenant un moment pour apprécier tout le travail acharné que vous avez fait. Nous espérons que vous aurez beaucoup d'usures de ceux-ci.
+Prenez maintenant un moment pour apprécier tout le travail acharné que vous avez fait. We hope you'll get a lot of use out of these.
