@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.19.5 (2022-11-13)
+
+### Fixed
+
+ - Fixed a copy-paste error that caused the `absoluteOptions` shorthand property to be a proxy for the regular options object instead. Note that this bug (and proxying in general) only occurs in debug mode.
+
 ## 2.19.0 (2021-10-17)
 
 ### Added
