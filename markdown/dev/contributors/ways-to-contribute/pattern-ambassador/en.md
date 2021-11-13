@@ -1,5 +1,5 @@
 ---
-title: Pattern amabassador
+title: Pattern ambassador
 ---
 
 You could take charge of a specific FreeSewing design/pattern. 

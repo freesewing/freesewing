@@ -64,8 +64,8 @@ export default {
     zipperLocation: { dflt: 'backSeam', list: ['backSeam', 'sideSeam'] },
     nrOfDarts: { count: 2, min: 1, max: 2 },
 
-    seatEase: { pct: 1, min: 0, max: 5 },
-    waistEase: { pct: 1, min: 0, max: 5 },
+    seatEase: { pct: 1, min: 0, max: 8 },
+    waistEase: { pct: 1, min: 0, max: 8 },
     backDartDepthFactor: { pct: 50, min: 35, max: 70 },
     frontDartDepthFactor: { pct: 45, min: 30, max: 65 },
     dartToSideSeamFactor: { pct: 50, min: 30, max: 70 },
