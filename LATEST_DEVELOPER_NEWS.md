@@ -20,11 +20,3 @@ The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
 
 
-##### Summertime: Things are a bit slower
-
-Things are [a bit slower during the summertime](https://github.com/freesewing/freesewing/discussions/1139) but
-on the plus side, we're looking into playing DnD together.
-
-Join [discord.freesewing.org](https://discord.freesewing.org/) for more info.
-
-There's also a `v3` channel there with info on some future stuff we're working on.
