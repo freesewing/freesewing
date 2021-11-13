@@ -1,6 +1,5 @@
 export default function (part) {
   const {
-    Point,
     points,
     Path,
     paths,

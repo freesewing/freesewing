@@ -11,7 +11,6 @@ export default (part) => {
     complete,
     paperless,
     macro,
-    options,
   } = part.shorthand()
 
   const fold = store.get('buttonholePlacketFoldWidth')

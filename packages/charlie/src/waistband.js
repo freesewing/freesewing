@@ -13,7 +13,6 @@ export default (part) => {
     snippets,
     Snippet,
     sa,
-    measurements,
     absoluteOptions,
   } = part.shorthand()
 

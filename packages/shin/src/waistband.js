@@ -9,7 +9,6 @@ export default function (part) {
     complete,
     paperless,
     sa,
-    options,
     utils,
     absoluteOptions,
   } = part.shorthand()

@@ -196,7 +196,6 @@ Pattern.prototype.draft = function () {
       typeof this.config.options[i].snap !== 'undefined' &&
       this.config.options[i].toAbs instanceof Function
     ) {
-      let abs = this.config.options[i].toAbs(this.settings.options[i], this.settings)
       this.settings.absoluteOptions[i] = snappedOption(i, this)
     }
   }

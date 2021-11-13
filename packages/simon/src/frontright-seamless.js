@@ -1,7 +1,7 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  const { sa, store, Point, points, Path, paths, complete, paperless, macro, options } =
+  const { sa, store, Point, points, Path, paths, complete, paperless, macro } =
     part.shorthand()
 
   const width = store.get('buttonPlacketWidth')

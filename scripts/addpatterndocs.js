@@ -76,12 +76,13 @@ title: ` + i18n.strings.en[`options.${pattern}.${option}.title`] +
 
 const present = folder => {
   try {
-    const md = fs.readFileSync(path.join(folder, file))
-    return true
+    if (fs.readFileSync(path.join(folder, file))) return true
   }
   catch (err) {
     return false
   }
+
+  return false
 }
 
 const getSubFolders = folder => fs
@@ -92,8 +93,7 @@ const getSubFolders = folder => fs
 const checkOptionDocs = () => {
   const steps = ['markdown', 'org', 'docs', 'patterns']
   for (const pattern of pi.list) {
-    const Pattern = require(`../packages/${pattern}/dist`)
-    // Index page,
+    // Index page
     const folder = path.join(...steps, pattern)
     const subFolders = getSubFolders(folder)
     for (const page of subpages) {
