@@ -5,7 +5,7 @@ Eerst gaan we de neep van de taille op de achterkant sluiten.
 
 Om dat te doen Plooi het achterpaneel dubbel met _goede kanten op elkaar,_ en zorg ervoor dat de twee kanten van de neep bovenop elkaar liggen.
 
-Stik nu de neep dichtbij, en gebruik een kleine stiklengte, en de hele weg naar het einde van de neep vaststikken, zelfs een paar steken van de stof.
+Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
 ![Closed darts](step01.svg)
 
@@ -22,8 +22,8 @@ Volg [onze instructies voor de dubbele paspelzak](/docs/sewing/double-welt-pocke
 <Note>
 
 Omdat dit chino's zijn, kan je niet /should edgestitch rond de paspelopening.
-Het is niet strikt vereist voor paspelzakken, en meestal niet gedaan met klassieke broek (en dus niet in
-de instructies) maar het is typisch klaar voor chinos, en maakt het makkelijker om alles op zijn plaats te houden.
+It's not strictly required for welt pockets, and typically not done on classic trousers (and thus not shown in
+the instructions) but it's a very typical finish for chinos, and makes it easier to keep everything in place.
 
 </Note>
 
@@ -124,7 +124,7 @@ Strijk nu de schuine zak vooraan, zowel aan de achterkant als aan het voorpand, 
 
 ### Drieg de voorzakken dicht
 
-Ik raad je ten sterkste aan om de zaksluiting/op z'n plaats te driegen voordat je deze naad naait, zodat je weet dat het precies is.
+I strongly advise you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
 
 Sluit de buitennaad om de voor- en achterkant van het paneel te plaatsen met de goede kanten op elkaar, en stik de buitennaad. Dat is makkelijk genoeg aan de benen, maar aan de bovenkant hebben we onze portemonnee, wat de zaken ingewikkelder maakt.
 
@@ -188,9 +188,9 @@ Strijk de binnennaad open wanneer je klaar bent.
 
 Zorg dat de ene broekspijp met de goede kant naar buiten gekeerd is, en de andere de goede kant erin heeft.
 
-Stop de broekspijp niet met de goede kant binnen de broekspijp waar de goede kant in zit. Op die manier hebben ze hun goede kanten tegen elkaar.
+Now tuck the leg with the good side out inside the leg that has the good side in. Op die manier hebben ze hun goede kanten tegen elkaar.
 
-De kruisnaad aan de achterkant beginnen te spelden terwijl je de helften samen speld terwijl je op weg bent naar de vliegen . Stop bij de laagste gulpbel.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Stop bij de laagste gulpbel.
 
 Wanneer je klaar bent. Doe het opnieuw. Stik de kruisnaad altijd twee keer. Het is een van die beste praktijken die je negeert op eigen risico.
 
@@ -225,11 +225,11 @@ Er is extra naadwaarde die langs de vliegen loopt. Dat is alleen nodig aan de re
 
 ### Bevestig het gulpbeleg
 
-Stik de gulp aan het voorpand. Leg ze met de goede kanten samen, om de bovenkant te bewegen.
+Stik de gulp aan het voorpand. Place them with good sides together, aligning the top.
 
 ### Trek in de punt van de gulp
 
-Plooi de onderkant van de gulp naar binnen en bevestig met een paar steken
+Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
 
 ### Stik de gulp naar de naad door
 
@@ -261,7 +261,7 @@ Misschien wil je dit eerst driegen om ervoor te zorgen dat het aardig parallel i
 
 ### Stik de rits aan de gulpbeleg
 
-Stik nu de andere kant van de rits aan het gulpdeel. Zorg ervoor dat het goed uitgelijkt zodat wanneer de broek wordt gesloten, de rits verborgen is
+Stik nu de andere kant van de rits aan het gulpdeel. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
 
 ### Werk de kruisnaad af
@@ -286,7 +286,7 @@ Voor de efficiëntie, zullen we een lange strook riem herhalen die we in 8 delen
 
 </Note>
 
-Knip een strook van 80cm lang (32 inch) en 2,8 cm breed (1 1/8 inch).
+Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
 Serge (of zigzag) de lange rand van de strip aan beide zijden.
 
@@ -305,7 +305,7 @@ We gaan onze riemlusjes verdelen langs de taille:
  - 1 aan elke kant min of meer waar de zijnaad de taille zou raken als het recht omhoog zou gaan
  - 1 op elke kant van het middenvoorpand. Niet te dicht bij elkaar dus er is geen plaats voor gordels, maar ook niet te ver dus het ziet er niet raar uit
 
-Leg de riemlus op deze plekken met de goede kant naar beneden (tegen de goede kant van de stof van je broek, en de bovenkant komt overeen met de taille. Stik dit vast in de naadwaarde van de tailleband. Let op dat ze niet aan de tailleband kunnen voldoen.
+Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 
 ## Stap 12: Bevestig de tailleband
 
@@ -315,9 +315,9 @@ Als je een rechte tailleband maakt, sla de tailleband dan direct naar buiten toe
 
 Leg beide taillebanden met de goede kanten op elkaar, en stik langs de bovenkant van de tailleband (de kortere rand).
 
-Knip de naadwaarde van de tailleband bij, en strijk alle naadwaarde naar de binnenste tailleband.
+Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waistband.
 
-Je kan je gemonteerde tailleband nu als één stuk behandelen en doorgaan met de rechte tailleband.
+You can now treat your assembled waistband as one piece, and continue as for the straight waistband.
 
 <Tip>
 Om ervoor te zorgen dat de tailleband van je innerlijke tailleband niet knippert, kun je _onderstik_.
@@ -340,7 +340,7 @@ Plooi nu de tailleband aan de juiste breedte en strijk in de plooi.
 
 ### Sluit het begin en einde van de tailleband.
 
-Aan het begin en het einde plooi de tailleband om zodat het de goede kanten op elkaar heeft.
+At the start and end, fold the waistband over so it has its good sides together.
 
 Stik nu het einde door de bovenkant naar de onderkant te naaien, precies het punt waar de taillebandnaad eindigt.
 
@@ -366,9 +366,9 @@ Dit houdt in dat de achterkant van de tailleband die we gemaakt hebben om iets v
 
 ### Stik de riemlusjes vast om ze breder te maken
 
-Het is beter om de riemlusjes een beetje breder te maken dan de kelder, om bredere gordels vast te stellen.
+It's best to make the belt loops a bit wider than the waistband, to accomodate wider belts.
 
-Laat de tailleband daarom plat liggen en stik ze vast met ongeveer 1,5 cm (de helft en de inch) onder de tailleband.
+For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half an inch) below the waistband.
 
 ### Plooi omhoog, neer en stik vast
 
@@ -378,7 +378,7 @@ Ze zullen zich verder uitstrekken dan de top van de tailleband. Vouw de overtoll
 
 Doe nu een zak langs de bovenkant van de tailleband om de riemlus op zijn plaats te zetten.
 
-Als je klaar bent, draai ongewoon de achterkant van de riem naar het voorpand en knip de overtollige rechts naast de schuurdruk.
+When you're done, carefully twist the back of the beltloop to the front and cut off the excess right next to the bartack.
 
 <Note>
 
@@ -400,4 +400,4 @@ Maak een knoopsgat. Ofwel met de hand (het is de moeite waard) of met een machin
 
 Bevestig tenslotte de knop.
 
-Neem nu even de tijd om al uw harde werk te waarderen. We hopen dat je hier veel van zult missen.
+Neem nu even de tijd om al uw harde werk te waarderen. We hope you'll get a lot of use out of these.

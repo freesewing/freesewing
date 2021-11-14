@@ -11,8 +11,8 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 ### Step 1: Mock-up Construction
 
-- Close the front darts.
-- Close the back darts.
+- Schließe die vorderen Abnäher.
+- Schließe die hinteren Abnäher.
 - Sew the front to the backs at the shoulders good sides together.
 - Matching notches, sew the sleeves to the shoulder good sides together.
 - Sew the side seams good sides together.

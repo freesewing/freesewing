@@ -5,7 +5,7 @@ Lo primero que vamos a hacer es cerrar la densa cintura en el panel trasero.
 
 Para hacerlo, dobla el panel trasero con _lados buenos juntos_ asegurándose de que coincida con ambos lados del dardo.
 
-Ahora coser el dardo cerca, asegurándose de usar una pequeña longitud de la caña, y coser todo el camino del teh hasta el final del dardo, incluso un par de tetas de la tela.
+Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
 ![Closed darts](step01.svg)
 
@@ -22,8 +22,8 @@ Sigue [nuestras instrucciones de bolsillo doble](/docs/sewing/double-welt-pocket
 <Note>
 
 Dado que estos son chinos, usted puede/debe editar en torno a la apertura de la soldadura.
-No es estrictamente necesario para los bolsillos de soldadura, y normalmente no se hace en pantalones clásicos (y por lo tanto no debería en
-las instrucciones) pero es un acabado muy típico para chinos, y hace más fácil mantener todo en su lugar.
+It's not strictly required for welt pockets, and typically not done on classic trousers (and thus not shown in
+the instructions) but it's a very typical finish for chinos, and makes it easier to keep everything in place.
 
 </Note>
 
@@ -125,7 +125,7 @@ Ahora presione la cortina del bolsillo delantero, tanto en el panel trasero como
 
 ### Cerrar los bolsillos frontales
 
-Le aconsejo encarecidamente que coja el pocket cerrado/en su lugar antes de coser esta costura para que sepa que es precisa.
+I strongly advise you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
 
 Cerrar la costura exterior significa colocar el panel frontal y trasero con buenos lados juntos, y coser la costura exterior. Eso es bastante fácil en las piernas, pero en la parte superior tenemos nuestro bolsillo, lo que complica las cosas.
 
@@ -189,9 +189,9 @@ Cuando hayas terminado, presiona Abrirlo.
 
 Asegúrate de que una pierna esté girada con el lado bueno, y la otra tiene el lado bueno.
 
-No pegar la pierna con el lado bueno dentro de la pierna que tiene el lado bueno dentro. De esta manera, tienen su lado bueno entre sí.
+Now tuck the leg with the good side out inside the leg that has the good side in. De esta manera, tienen su lado bueno entre sí.
 
-Aling the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Parar en el nivel de vuelo más bajo.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Parar en el nivel de vuelo más bajo.
 
 Cuando haya terminado. Hágalo de nuevo. Siempre coser la costura de la cruz dos veces. Es una de esas mejores prácticas que usted ignora bajo su propio riesgo.
 
@@ -226,11 +226,11 @@ Hay una franquicia extra de costura que corre a lo largo de la mosca. Solo neces
 
 ### Adjuntar la cara de vuelo
 
-Pase la mosca hacia el frente izquierdo. Colócalos con buenos lados juntos, alineando la parte superior.
+Pase la mosca hacia el frente izquierdo. Place them with good sides together, aligning the top.
 
 ### Pegado en la punta de la cara de la mosca
 
-Doblar la parte inferior de la franquicia de costura de la mosca hacia adentro y asegurar con unas pocas pulseras
+Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
 
 ### El borde tira la mosca hacia la costura
 
@@ -262,7 +262,7 @@ Quizás quieras bastar esto primero para asegurarte de que es muy paralelo al zi
 
 ### Difunde el caparazón hacia la mosca
 
-Ahora coser el otro lado del cipper a la mosca. Make sure to align it properly so that when the trousers are closed, the zip is hidden
+Ahora coser el otro lado del cipper a la mosca. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
 
 ### Termina la costura cruzada
@@ -287,7 +287,7 @@ Para la eficiencia, contructaremos una larga franja de bucle de cinturón que di
 
 </Note>
 
-Cortar una tira de 80 cm de largo (32 pulgadas) y 2,8 cm de ancho (1 1/8 pulgadas).
+Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
 Servir (o zigzag) el borde largo de la tira en ambos lados.
 
@@ -306,7 +306,7 @@ Vamos a dividir nuestros bucles de cinturón a lo largo de la cintura:
  - 1 en cada lado más o menos donde la costura lateral golpearía la cintura si subiera recto
  - 1 en cada lado desde el frente central. No está demasiado cerca unos de otros, así que no hay espacio para los cubos de cinta, pero tampoco demasiado lejos, por lo que no parece extraño
 
-Coloca el bucle de la cinta en estos lugares con su buena cara hacia abajo (contra el lado bueno de la tela de tus pantalones, y la parte superior alineada con la cintura. Conserva esto en la costura de la cintura, asegurándose de que son perpendiculares a la cintura.
+Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 
 ## Paso 12: Adjuntar la banda de cintura
 
@@ -316,9 +316,9 @@ Si estás haciendo una cintura recta, sáltate directamente a adjuntar la cintur
 
 Coloque ambas cinturones con buenos lados juntos, y coser a lo largo de la parte superior de la cintura (el borde más corto).
 
-Recorta la costura de la cintura interna y presiona todos los permisos de costura hacia el waisband interior.
+Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waistband.
 
-Ahora puede tratar a su waisband ensamblado como un picoteo y continuar como para la cintura recta.
+You can now treat your assembled waistband as one piece, and continue as for the straight waistband.
 
 <Tip>
 Para asegurarse de que tu pulsera interna no se apaga, puedes _understitch_.
@@ -341,7 +341,7 @@ Ahora llévate sobre la cintura en el ancho correcto y presiona en el pliegue.
 
 ### Cierre el inicio y el final de la cintura.
 
-Al principio y al final, doblar la cintura sobre lo que tiene sus buenos lados juntos.
+At the start and end, fold the waistband over so it has its good sides together.
 
 Ahora coser el extremo cerrado coser arriba abajo hasta el punto en que la costura de cintura termina.
 
@@ -367,9 +367,9 @@ Esto cogerá la parte trasera de la cintura que hemos hecho para extenderse un p
 
 ### Difunde los bucles de la cinta para hacerlos más anchos
 
-Es mejor hacer los bucles de la correa un poco más anchos que la banda de espera, para acoplar correas más anchas.
+It's best to make the belt loops a bit wider than the waistband, to accomodate wider belts.
 
-Para esto, deje que la cintura esté plana, y coser con un bartack de 1,5 cm más o menos (mitad y pulgada) debajo de la cintura.
+For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half an inch) below the waistband.
 
 ### Doble hacia arriba, abajo de nuevo, y coser
 
@@ -379,7 +379,7 @@ Se extenderán más allá de la parte superior de la cintura. Así que doblémon
 
 Ahora haz un trozo a lo largo de la parte superior de la cintura para bloquear el ciclo de la cinta en su lugar.
 
-Cuando haya terminado, tenga cuidado de girar la parte trasera del bucle de cinturón hacia la parte delantera y cortar el exceso justo al lado de la barrita.
+When you're done, carefully twist the back of the beltloop to the front and cut off the excess right next to the bartack.
 
 <Note>
 
@@ -401,4 +401,4 @@ Crear un agujero de botón. O a mano (vale la pena practicar) o con una máquina
 
 Finalmente, añada el botón.
 
-Ahora tómate un momento para apreciar todo el trabajo duro que has hecho. Esperamos que obtenga un montón de ropa de estos.
+Ahora tómate un momento para apreciar todo el trabajo duro que has hecho. We hope you'll get a lot of use out of these.
