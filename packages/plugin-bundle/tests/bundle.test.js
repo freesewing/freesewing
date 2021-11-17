@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
 let bundle = [
