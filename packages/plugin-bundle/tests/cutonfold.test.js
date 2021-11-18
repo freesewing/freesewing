@@ -1,5 +1,6 @@
 import freesewing from "@freesewing/core";
 import { version } from "../../plugin-cutonfold/package.json";
+let round = freesewing.utils.round;
 let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
 
@@ -35,7 +36,7 @@ describe("plugin-cutonfold", function() {
     expect(c.ops[1].type).to.equal("line");
     expect(c.ops[2].type).to.equal("line");
     expect(c.ops[3].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(10);   //needs to be rounded 
+    expect(round(c.ops[0].to.x)).to.equal(10); 
     expect(c.ops[0].to.y).to.equal(200);
     expect(c.ops[1].to.x).to.equal(30);
     expect(c.ops[1].to.y).to.equal(200);

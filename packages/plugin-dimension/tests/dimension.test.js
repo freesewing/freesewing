@@ -1,10 +1,10 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import { version } from "../package.json";
 let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
 
 it("Should set the plugin name:version attribute", () => {
-  let pattern = new freesewing.Pattern().with(plugin);
+  let pattern = new freesewing.Pattern().use(plugin);
   pattern.render();
   expect(pattern.svg.attributes.get("freesewing:plugin-dimension")).to.equal(
     version
@@ -14,7 +14,7 @@ it("Should set the plugin name:version attribute", () => {
 it("Should run the hd macro", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.from = new pattern.Point(10, 20);
   pattern.parts.test.points.to = new pattern.Point(200, 20);
@@ -57,7 +57,7 @@ it("Should run the hd macro", () => {
 it("Should run the vd macro", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.from = new pattern.Point(10, 20);
   pattern.parts.test.points.to = new pattern.Point(10, 200);
@@ -100,7 +100,7 @@ it("Should run the vd macro", () => {
 it("Should run the ld macro", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.from = new pattern.Point(10, 10);
   pattern.parts.test.points.to = new pattern.Point(100, 100);
@@ -143,7 +143,7 @@ it("Should run the ld macro", () => {
 it("Should run the pd macro", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   let from = new pattern.Point(10, 10);
   let cp1 = new pattern.Point(100, 10);

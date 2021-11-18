@@ -2,6 +2,7 @@ import freesewing from "@freesewing/core";
 import { version } from "../../plugin-dimension/package.json";
 let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
+const { Console } = require("console");
 
 describe("plugin-dimension", function() {
   it("Should set the plugin name:version attribute", () => {

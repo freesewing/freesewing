@@ -1,5 +1,6 @@
 import freesewing from "@freesewing/core";
 import { version } from "../../plugin-grainline/package.json";
+let round = freesewing.utils.round;
 let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
 
@@ -32,9 +33,9 @@ describe("plugin-grainline", function() {
     expect(c.attributes.get("data-text-class")).to.equal("center fill-note");
     expect(c.ops[0].type).to.equal("move");
     expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(10);
+    expect(round(c.ops[0].to.x)).to.equal(10);
     expect(c.ops[0].to.y).to.equal(30.5);
-    expect(c.ops[1].to.x).to.equal(10);
+    expect(round(c.ops[1].to.x)).to.equal(10);
     expect(c.ops[1].to.y).to.equal(219.5);
   });
 });

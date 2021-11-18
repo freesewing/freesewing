@@ -1,10 +1,11 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import { version } from "../package.json";
+let round = freesewing.utils.round;
 let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
 
 it("Should set the plugin name:version attribute", () => {
-  let pattern = new freesewing.Pattern().with(plugin);
+  let pattern = new freesewing.Pattern().use(plugin);
   pattern.render();
   expect(pattern.svg.attributes.get("freesewing:plugin-cutonfold")).to.equal(
     version
@@ -14,7 +15,7 @@ it("Should set the plugin name:version attribute", () => {
 it("Should run the default cutonfold macro", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.from = new pattern.Point(10, 20);
   pattern.parts.test.points.to = new pattern.Point(10, 230);
@@ -33,7 +34,7 @@ it("Should run the default cutonfold macro", () => {
   expect(c.ops[1].type).to.equal("line");
   expect(c.ops[2].type).to.equal("line");
   expect(c.ops[3].type).to.equal("line");
-  expect(c.ops[0].to.x).to.equal(10);
+  expect(round(c.ops[0].to.x)).to.equal(10);
   expect(c.ops[0].to.y).to.equal(200);
   expect(c.ops[1].to.x).to.equal(30);
   expect(c.ops[1].to.y).to.equal(200);
@@ -46,7 +47,7 @@ it("Should run the default cutonfold macro", () => {
 it("Should run the cutonfold/grainline macro", () => {
   let pattern = new freesewing.Pattern();
   pattern.draft = function() {};
-  pattern.with(plugin);
+  pattern.use(plugin);
   pattern.parts.test = new pattern.Part();
   pattern.parts.test.points.from = new pattern.Point(10, 20);
   pattern.parts.test.points.to = new pattern.Point(10, 230);
