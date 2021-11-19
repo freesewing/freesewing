@@ -103,22 +103,18 @@ If you do not wish to have the decorative rim, you may still want to understitch
 ## Step 9: Prepping a Neckband for the Hood (Optional)
 
 - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
-- With good sides together sew the strip in to a circular band with a 1cm (3/8 inch) seam allowance.
-- Press open the seams.
-- On the good sides, ***Edgestitch*** close to both sides of the seam catching the seam allowance underneath.
-- (Optional) Trim the excess seam allowance.
-
+- Press under 1cm (3/8 inch) allowance on the short sides.
 <Note>
   
 Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
-You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
+You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.  
   
 </Note>
 
 ## Step 10: Attach the Hood
 
 - With good sides together, starting from the centre back pin the hood to the neck, matching the centre backs and overlapping the hood ends at the centre front.
-- With good side of neckband to lining side of hood, pin the neckband to the hood matching the neckband seam with centre back.
+- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
 - If using an overlocker/serger, serge the neck and hood together through all layers.
 - If using a sewing machine, use a zig-zag stich to sew all the neck and hood layers together.
 - On the outside check around the neckline to make sure all the layers are caught.
