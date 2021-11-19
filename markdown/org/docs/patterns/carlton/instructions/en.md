@@ -10,7 +10,7 @@ Some parts for Carlton require you to draft parts from the existing parts. The f
 - Cut along the green line.
 - Add seam allowance (if including) along green line to both pieces
 - The piece with the lapel is now the **Front facing** part.
-- Trim the hem allowance (if included) of the remaining piece to seam allowance length
+- Trim the hem allowance (if included) off the remaining piece to seam allowance length
 - The remaining piece is now the **Front lining** part.
 
 <Note>
