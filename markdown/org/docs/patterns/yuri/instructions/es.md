@@ -103,22 +103,18 @@ Si no desea tener la lluvia decorativa, puede que todavía quiera enganchar el r
 ## Paso 9: Preparando una banda ancha para la madera (opcional)
 
 - Corta una banda de tela de sentido cruzado de tu tela principal, la abertura de su cuello + 2cm (3/4 pulgadas) largo y triplicar la costura del cuello
-- Con buenos lados coser juntos la tira en una cinta circular con una costura de 1 cm (3/8 pulgadas).
-- Pulse abrir las costuras.
-- En los buenos lados, ***Edgestión*** cerca de ambos lados de la costura captando el permiso de costura debajo.
-- (Opcional) Recorta el exceso de costura.
-
+- Press under 1cm (3/8 inch) allowance on the short sides.
 <Note>
   
-Si bien está marcado como opcional, se recomienda hacer este paso ya que crea un acabado más limpio y fuerte alrededor del cuello.
-También puedes hacer una banda plegable por lo que la banda de cuello no tiene un borde crudo, pero esto puede ser masivo. También tendrá que asegurarse de que el borde plegado se extienda ligeramente más de 1cm para ser capturado cuando se adjunta y se enciende la capucha, pero no tanto que se aletea sobre ella.
+Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
+You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
   
 </Note>
 
 ## Paso 10: Adjunta la Capucha
 
 - Con buenos lados juntos, comenzando desde el centro de la espalda anclar la capucha al cuello, emparejar las espaldas del centro y superponer la campana termina en el frente central.
-- Con el buen lado de la banda de cuello a la cara de revestimiento de la capa, anclar el cuello a la capilla que empareja la costura del cuello con el centro de la espalda.
+- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
 - Si se usa un overlocker/serger, sergue el cuello y la capucha juntos a través de todas las capas.
 - Si se utiliza una máquina de coser, utilice un zig-zag para coser todas las capas del cuello y del capuchón.
 - En el exterior, compruebe alrededor de la línea del cuello para asegurarse de que todas las capas están atrapadas.
@@ -134,8 +130,8 @@ Si usas un overlocker/serger para sujetar la capa, es posible que quieras coloca
 
 <Note>
   
-Si te preocupa que la parte superior de la banda del cuello con una banda recta no dará suficiente estiramiento siempre se puede unir por encima de ella con un estrecho zig-zag o el estiramiento apropiado de tu elección.
-Si no estás usando una banda de cuello querrás terminar la costura con **Finishing Method 2** y topstitch con 6mm (1/4 pulgadas) en lugar de 1cm (3/8 pulgadas). 
+If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
+If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch). 
   
 </Note>
 
