@@ -84,8 +84,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
  - To close the hood, serge together the bottom layers along the neckline.  If you do not have a serger, use a zig-zag stitch.
  - (Optional) If you added holes for a drawstring, you can thread the drawstring now.
 
-### Step 8: Attach the Hood
+### Step 8: Preparing a Neckband and Attaching the Hood
 
+ - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
  - Place good sides together on the neck binding piece, then sew a 1cm seam allowance along the short side to make the binding into a circular band.
  - Starting from the back, match the outside of the hood to the right side of the neckline. Align the hood panel to the back of the neckline.
  - Working around to the front, pin the hood to the neckline.
