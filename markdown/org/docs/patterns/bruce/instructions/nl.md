@@ -40,7 +40,7 @@ Als je de stof zo manipuleert is het makkelijk om één stuk meer uit te rekken 
 
 Zodra je voorbij dit merkteken bent wordt alles makkelijker. Dit zou ook een goed moment zijn om de resterende lengte van de gebogen naden te vergelijken. Als één stuk een beetje langer is dan het andere, rek het korte stuk dan een beetje tot ze even lang zijn.
 
-Als het verschil te groot is, laat het dan gewoon. Het zal afgeknipt worden bij het naaien van de kruisnaad.
+Als het verschil te groot is, laat het dan gewoon. It will get cut off when we do the crotchseam.
 
 <Note>
 
