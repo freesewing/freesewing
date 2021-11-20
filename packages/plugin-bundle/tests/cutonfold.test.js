@@ -7,7 +7,6 @@ let plugin = require("../dist/index.js");
 describe("plugin-cutonfold", function() {
   it("Should set the plugin name:version attribute", () => {
     let pattern = new freesewing.Pattern().use(plugin);
-    pattern.render();
     expect(pattern.svg.attributes.get("freesewing:plugin-cutonfold")).to.equal(
       version
     );
@@ -26,7 +25,6 @@ describe("plugin-cutonfold", function() {
       to: pattern.parts.test.points.to
     });
     let c = pattern.parts.test.paths.cutonfold;
-    console.log(c.ops);
     expect(c.attributes.get("class")).to.equal("note");
     expect(c.attributes.get("marker-start")).to.equal("url(#cutonfoldFrom)");
     expect(c.attributes.get("marker-end")).to.equal("url(#cutonfoldTo)");

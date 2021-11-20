@@ -1,10 +1,11 @@
 import freesewing from "@freesewing/core";
-import { version } from "../../plugin-dimension/package.json";
+import { version } from "../package.json";
 let expect = require("chai").expect;
 let plugin = require("../dist/index.js");
-const { Console } = require("console");
+let round = freesewing.utils.round;
 
-describe("plugin-dimension", function() {
+describe("The dimension plugin", function() {
+
   it("Should set the plugin name:version attribute", () => {
     let pattern = new freesewing.Pattern().use(plugin);
     pattern.render();
@@ -13,7 +14,8 @@ describe("plugin-dimension", function() {
     );
   });
   
-  it("Should run the hd macro", () => {
+  describe("Measures horizontal dimensions", function() {
+  
     let pattern = new freesewing.Pattern();
     pattern.draft = function() {};
     pattern.use(plugin);
@@ -25,38 +27,47 @@ describe("plugin-dimension", function() {
       from: pattern.parts.test.points.from,
       to: pattern.parts.test.points.to,
       y: 35
+    })
+  
+    it("should draw a line and add text to indicate its length", () => {
+      let c = pattern.parts.test.paths["__paperless1"];
+      expect(c.attributes.get("class")).to.equal("mark");
+      expect(c.attributes.get("marker-start")).to.equal("url(#dimensionFrom)");
+      expect(c.attributes.get("marker-end")).to.equal("url(#dimensionTo)");
+      expect(c.attributes.get("data-text")).to.equal("19cm");
+      expect(c.attributes.get("data-text-class")).to.equal("fill-mark center");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("line");
+      expect(c.ops[0].to.x).to.equal(10);
+      expect(c.ops[0].to.y).to.equal(35);
+      expect(c.ops[1].to.x).to.equal(200);
+      expect(c.ops[1].to.y).to.equal(35);
     });
-    let c = pattern.parts.test.paths[1];
-    expect(c.attributes.get("class")).to.equal("mark");
-    expect(c.attributes.get("marker-start")).to.equal("url(#dimensionFrom)");
-    expect(c.attributes.get("marker-end")).to.equal("url(#dimensionTo)");
-    expect(c.attributes.get("data-text")).to.equal("19cm");
-    expect(c.attributes.get("data-text-class")).to.equal("fill-mark center");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(10);
-    expect(c.ops[0].to.y).to.equal(35);
-    expect(c.ops[1].to.x).to.equal(200);
-    expect(c.ops[1].to.y).to.equal(35);
-    c = pattern.parts.test.paths["1_ls"];
-    expect(c.attributes.get("class")).to.equal("mark dotted");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(10);
-    expect(c.ops[0].to.y).to.equal(20);
-    expect(c.ops[1].to.x).to.equal(10);
-    expect(c.ops[1].to.y).to.equal(35);
-    c = pattern.parts.test.paths["1_le"];
-    expect(c.attributes.get("class")).to.equal("mark dotted");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(200);
-    expect(c.ops[0].to.y).to.equal(20);
-    expect(c.ops[1].to.x).to.equal(200);
-    expect(c.ops[1].to.y).to.equal(35);
+  
+    it("should draw the start marker", () => {
+      let c = pattern.parts.test.paths["__paperless1_ls"];
+      expect(c.attributes.get("class")).to.equal("mark dotted");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("line");
+      expect(c.ops[0].to.x).to.equal(10);
+      expect(c.ops[0].to.y).to.equal(20);
+      expect(c.ops[1].to.x).to.equal(10);
+      expect(c.ops[1].to.y).to.equal(35);
+    });
+  
+    it("should draw the end marker", () => {
+      let c = pattern.parts.test.paths["__paperless1_le"];
+      expect(c.attributes.get("class")).to.equal("mark dotted");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("line");
+      expect(c.ops[0].to.x).to.equal(200);
+      expect(c.ops[0].to.y).to.equal(20);
+      expect(c.ops[1].to.x).to.equal(200);
+      expect(c.ops[1].to.y).to.equal(35);
+    });
   });
   
-  it("Should run the vd macro", () => {
+  describe("Measures vertical dimensions", () => {
     let pattern = new freesewing.Pattern();
     pattern.draft = function() {};
     pattern.use(plugin);
@@ -69,37 +80,46 @@ describe("plugin-dimension", function() {
       to: pattern.parts.test.points.to,
       x: 25
     });
-    let c = pattern.parts.test.paths[1];
-    expect(c.attributes.get("class")).to.equal("mark");
-    expect(c.attributes.get("marker-start")).to.equal("url(#dimensionFrom)");
-    expect(c.attributes.get("marker-end")).to.equal("url(#dimensionTo)");
-    expect(c.attributes.get("data-text")).to.equal("18cm");
-    expect(c.attributes.get("data-text-class")).to.equal("fill-mark center");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(25);
-    expect(c.ops[0].to.y).to.equal(20);
-    expect(c.ops[1].to.x).to.equal(25);
-    expect(c.ops[1].to.y).to.equal(200);
-    c = pattern.parts.test.paths["1_ls"];
-    expect(c.attributes.get("class")).to.equal("mark dotted");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(10);
-    expect(c.ops[0].to.y).to.equal(20);
-    expect(c.ops[1].to.x).to.equal(25);
-    expect(c.ops[1].to.y).to.equal(20);
-    c = pattern.parts.test.paths["1_le"];
-    expect(c.attributes.get("class")).to.equal("mark dotted");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(10);
-    expect(c.ops[0].to.y).to.equal(200);
-    expect(c.ops[1].to.x).to.equal(25);
-    expect(c.ops[1].to.y).to.equal(200);
+
+    it("Should draw a line and add text to indicate its length", () => {
+      let c = pattern.parts.test.paths["__paperless1"];
+      expect(c.attributes.get("class")).to.equal("mark");
+      expect(c.attributes.get("marker-start")).to.equal("url(#dimensionFrom)");
+      expect(c.attributes.get("marker-end")).to.equal("url(#dimensionTo)");
+      expect(c.attributes.get("data-text")).to.equal("18cm");
+      expect(c.attributes.get("data-text-class")).to.equal("fill-mark center");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("line");
+      expect(c.ops[0].to.x).to.equal(25);
+      expect(c.ops[0].to.y).to.equal(20);
+      expect(c.ops[1].to.x).to.equal(25);
+      expect(c.ops[1].to.y).to.equal(200);
+    });
+
+    it("Should draw the start marker", () => {
+      let c = pattern.parts.test.paths["__paperless1_ls"];
+      expect(c.attributes.get("class")).to.equal("mark dotted");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("line");
+      expect(c.ops[0].to.x).to.equal(10);
+      expect(c.ops[0].to.y).to.equal(20);
+      expect(c.ops[1].to.x).to.equal(25);
+      expect(c.ops[1].to.y).to.equal(20);
+    });
+
+    it("Should draw the end marker", () => {
+      let c = pattern.parts.test.paths["__paperless1_le"];
+      expect(c.attributes.get("class")).to.equal("mark dotted");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("line");
+      expect(c.ops[0].to.x).to.equal(10);
+      expect(c.ops[0].to.y).to.equal(200);
+      expect(c.ops[1].to.x).to.equal(25);
+      expect(c.ops[1].to.y).to.equal(200);
+    });
   });
   
-  it("Should run the ld macro", () => {
+  describe("Measures the length of straight lines", () => {
     let pattern = new freesewing.Pattern();
     pattern.draft = function() {};
     pattern.use(plugin);
@@ -112,7 +132,9 @@ describe("plugin-dimension", function() {
       to: pattern.parts.test.points.to,
       d: 15
     });
-    let c = pattern.parts.test.paths[1];
+    
+    it("Should draw a line and add text to indicate its length", () => { 
+    let c = pattern.parts.test.paths["__paperless1"];
     expect(c.attributes.get("class")).to.equal("mark");
     expect(c.attributes.get("marker-start")).to.equal("url(#dimensionFrom)");
     expect(c.attributes.get("marker-end")).to.equal("url(#dimensionTo)");
@@ -120,29 +142,37 @@ describe("plugin-dimension", function() {
     expect(c.attributes.get("data-text-class")).to.equal("fill-mark center");
     expect(c.ops[0].type).to.equal("move");
     expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(20.61);
-    expect(c.ops[0].to.y).to.equal(-0.61);
-    expect(c.ops[1].to.x).to.equal(110.61);
-    expect(c.ops[1].to.y).to.equal(89.39);
-    c = pattern.parts.test.paths["1_ls"];
+    expect(round(c.ops[0].to.x)).to.equal(20.61);
+    expect(round(c.ops[0].to.y)).to.equal(-0.61);
+    expect(round(c.ops[1].to.x)).to.equal(110.61);
+    expect(round(c.ops[1].to.y)).to.equal(89.39);
+    });
+
+    it("Should draw the start marker", () => {
+    let c = pattern.parts.test.paths["__paperless1_ls"];
     expect(c.attributes.get("class")).to.equal("mark dotted");
     expect(c.ops[0].type).to.equal("move");
     expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(10);
-    expect(c.ops[0].to.y).to.equal(10);
-    expect(c.ops[1].to.x).to.equal(20.61);
-    expect(c.ops[1].to.y).to.equal(-0.61);
-    c = pattern.parts.test.paths["1_le"];
+    expect(round(c.ops[0].to.x)).to.equal(10);
+    expect(round(c.ops[0].to.y)).to.equal(10);
+    expect(round(c.ops[1].to.x)).to.equal(20.61);
+    expect(round(c.ops[1].to.y)).to.equal(-0.61);
+    });
+
+    it("Should draw the end marker", () => {
+    let c = pattern.parts.test.paths["__paperless1_le"];
     expect(c.attributes.get("class")).to.equal("mark dotted");
     expect(c.ops[0].type).to.equal("move");
     expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(100);
-    expect(c.ops[0].to.y).to.equal(100);
-    expect(c.ops[1].to.x).to.equal(110.61);
-    expect(c.ops[1].to.y).to.equal(89.39);
+    expect(round(c.ops[0].to.x)).to.equal(100);
+    expect(round(c.ops[0].to.y)).to.equal(100);
+    expect(round(c.ops[1].to.x)).to.equal(110.61);
+    expect(round(c.ops[1].to.y)).to.equal(89.39);
+    });
   });
   
-  it("Should run the pd macro", () => {
+  describe("Measures curved lines", () => {
+  
     let pattern = new freesewing.Pattern();
     pattern.draft = function() {};
     pattern.use(plugin);
@@ -156,33 +186,42 @@ describe("plugin-dimension", function() {
       path: new pattern.Path().move(from).curve(cp1, cp2, to),
       d: 15
     });
-    let c = pattern.parts.test.paths[1];
-    expect(c.attributes.get("class")).to.equal("mark");
-    expect(c.attributes.get("marker-start")).to.equal("url(#dimensionFrom)");
-    expect(c.attributes.get("marker-end")).to.equal("url(#dimensionTo)");
-    expect(c.attributes.get("data-text")).to.equal("15.09cm");
-    expect(c.attributes.get("data-text-class")).to.equal("fill-mark center");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("curve");
-    expect(c.ops[0].to.x).to.equal(10);
-    expect(c.ops[0].to.y).to.equal(25);
-    expect(c.ops[1].to.x).to.equal(37.15);
-    expect(c.ops[1].to.y).to.equal(32.79);
-    c = pattern.parts.test.paths["1_ls"];
-    expect(c.attributes.get("class")).to.equal("mark dotted");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(10);
-    expect(c.ops[0].to.y).to.equal(10);
-    expect(c.ops[1].to.x).to.equal(10);
-    expect(c.ops[1].to.y).to.equal(25);
-    c = pattern.parts.test.paths["1_le"];
-    expect(c.attributes.get("class")).to.equal("mark dotted");
-    expect(c.ops[0].type).to.equal("move");
-    expect(c.ops[1].type).to.equal("line");
-    expect(c.ops[0].to.x).to.equal(100);
-    expect(c.ops[0].to.y).to.equal(100);
-    expect(c.ops[1].to.x).to.equal(100);
-    expect(c.ops[1].to.y).to.equal(115);
+    
+    it("Should draw a line and add text to indicate the length", () => { 
+      let c = pattern.parts.test.paths["__paperless1"];
+      expect(c.attributes.get("class")).to.equal("mark");
+      expect(c.attributes.get("marker-start")).to.equal("url(#dimensionFrom)");
+      expect(c.attributes.get("marker-end")).to.equal("url(#dimensionTo)");
+      expect(c.attributes.get("data-text")).to.equal("15.09cm");
+      expect(c.attributes.get("data-text-class")).to.equal("fill-mark center");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("curve");
+      expect(round(c.ops[0].to.x)).to.equal(10);
+      expect(round(c.ops[0].to.y)).to.equal(25);
+      expect(round(c.ops[1].to.x)).to.equal(37.15);
+      expect(round(c.ops[1].to.y)).to.equal(32.79);
+    });
+    
+    it("Should draw the start marker", () => {
+      let c = pattern.parts.test.paths["__paperless1_ls"];
+      expect(c.attributes.get("class")).to.equal("mark dotted");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("line");
+      expect(c.ops[0].to.x).to.equal(10);
+      expect(c.ops[0].to.y).to.equal(10);
+      expect(c.ops[1].to.x).to.equal(10);
+      expect(c.ops[1].to.y).to.equal(25);
+    });    
+
+    it("Should draw the end marker", () => {
+      let c = pattern.parts.test.paths["__paperless1_le"];
+      expect(c.attributes.get("class")).to.equal("mark dotted");
+      expect(c.ops[0].type).to.equal("move");
+      expect(c.ops[1].type).to.equal("line");
+      expect(c.ops[0].to.x).to.equal(100);
+      expect(c.ops[0].to.y).to.equal(100);
+      expect(c.ops[1].to.x).to.equal(100);
+      expect(c.ops[1].to.y).to.equal(115);
+    });
   });
 });
