@@ -103,22 +103,18 @@ Wenn du den dekorativen Rand nicht haben möchtest, Sie wollen das Futter vielle
 ## Schritt 9: Vorbereitung eines Halsbandes für die Kapuze (Optional)
 
 - Schneiden Sie einen quer gerichteten Stoffstreifen aus Ihrem Hauptstoff, Ihre Nackenöffnung + 2cm lang (3/4 Zoll) und dreifachen Sie Ihren Nackennaht breit.
-- Mit guten Seiten zusammen nähen Sie den Streifen in ein kreisförmiges Band mit einer Naht von 1cm (3/8 Zoll).
-- Drücken Sie die Nähte öffnen.
-- Auf den guten Seiten ist ***Edgestitch*** in der Nähe von beiden Seiten der Naht zu sehen, die den Nahtzuwachs darunter auffängt.
-- (Optional) Den überschüssigen Nahtzuwachs verringern.
-
+- Press under 1cm (3/8 inch) allowance on the short sides.
 <Note>
   
-Dieser Schritt wird zwar als optional markiert, wird aber empfohlen, da er eine bessere und stärkere Oberfläche um den Hals schafft.
-Sie können auch eine gefaltete Band herstellen, so dass der Halsband keine rohe Kante hat, aber das kann sperrig sein. Sie müssen auch sicherstellen, dass die gefaltete Kante etwas länger als 1 cm liegt, um beim Anbringen und Aufsetzen der Kapuze gefangen zu werden, aber nicht so lange, dass sie durchsickern kann.
+Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
+You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
   
 </Note>
 
 ## Schritt 10: Hänge die Kapuze an
 
 - Mit guten Seiten zusammen, beginnend von der Mitte hinten Pin die Kapuze zum Hals, passend zur Mitte und zum Überlappen der Kapuze endet an der Vorderseite.
-- Mit guter Nackenseite zur Verkleidungsseite der Kapuze fixieren Sie den Halsband an die Kapuze passend zum Halsband mit Mittenrückseite.
+- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
 - Bei Verwendung eines Overlockers/Sergers ziehen Hals und Kapuze durch alle Lagen zusammen.
 - Bei Nähmaschine mit Zickzackstich können alle Näh- und Haubenschichten zusammengenäht werden.
 - Überprüfen Sie nach außen die Halslinie, um sicherzustellen, dass alle Schichten gefangen werden.
@@ -134,8 +130,8 @@ Wenn Sie einen Überlocker/Serger verwenden, um die Kapuze zu befestigen, könne
 
 <Note>
   
-Wenn Sie befürchten, dass das Aufnähen des Halsbandes mit einem geraden Stich nicht genug Dehnung bringt, können Sie ihn immer mit einem schmalen Zick-Zick-Zack oder einem passenden Streckstich Ihrer Wahl aufstecken.
-Wenn du kein Halsband verwendest, solltest du die Naht mit der **Veredelungsmethode 2** und der Aufstitch mit 6mm (1/4 Zoll) statt 1cm (3/8 Zoll) beenden. 
+If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
+If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch). 
   
 </Note>
 

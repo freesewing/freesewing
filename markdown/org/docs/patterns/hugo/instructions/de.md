@@ -84,17 +84,18 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
  - Um die Kapuze zu schließen, werden die unteren Schichten entlang der Halslinie zusammengeführt.  Wenn Sie keinen Serger haben, verwenden Sie eine Zick-Zack-Nähte.
  - (Optional) Wenn Sie Löcher für eine Zeichenkette hinzugefügt haben, können Sie die Zeichenkette jetzt einbinden.
 
-### Schritt 8: Hänge die Kapuze an
+### Step 8: Preparing a Neckband and Attaching the Hood
 
- - Platziere gute Seiten zusammen auf das Halsbindungsstück, Dann nähen Sie eine Naht von 1 cm entlang der kurzen Seite, um die Bindung zu einem Rundband zu machen.
- - Von der Rückseite bis zur rechten Seite der Halslinie passen. Legen Sie die Kapuzenleiste an die Rückseite der Halslinie an.
- - An der Vorderseite arbeiten und die Kapuze an den Hals befestigen.
- - Passen Sie die gute Seite der Halsbindung an die äußere Halslinie an (dies wird die Innenseite der Haube sein). Pin die Bindung an die Kapuze.
- - Serge oder Zick-Zack alle Schichten zusammen mit 1 cm Nahtzustand.  Überprüfen Sie die Halslinie, um sicherzustellen, dass alle Schichten vom Nähen gefangen wurden.
- - Verstärken Sie die Punkte, an denen sich die Halslinie mit den Ärmelnähten kreuzt.  Verwenden Sie eine geradlinige Nähmaschine um diese Nähte zu stabilisieren.
- - Falten Sie die Bindung über den rohen Rand der Halslinie und Pin.
- - Von außen ist der Oberstich entlang und ca. 1cm von der Halskante entfernt, um die Bindung zu fangen und zu sichern.  Du solltest hier einen geraden Stich verwenden können, solange der Hals etwas locker passt, wenn du es versuchst.  Wenn der Hals schräg ist, dann verwenden Sie eine Zickzack-Nähte.
- - Schneiden Sie überschüssige Bindung von innen ab.
+ - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
+ - Place good sides together on the neck binding piece, then sew a 1cm seam allowance along the short side to make the binding into a circular band.
+ - Starting from the back, match the outside of the hood to the right side of the neckline. Align the hood panel to the back of the neckline.
+ - Working around to the front, pin the hood to the neckline.
+ - Match the good side of the neck binding to the outer neckline (this will be the inside of the hood). Pin the binding to the hood.
+ - Serge or zig-zag all layers together with 1cm seam allowance.  Check around the neckline to make sure all layers were caught by the stitching.
+ - Reinforce the points where the neckline intersects with the sleeve seams.  Use a straight stitch on the sewing machine to stabilize these seams.
+ - Fold the binding over the raw edge of the neckline, and pin.
+ - From the outside, topstitch along and approx 1cm away from the neck edge to catch and secure the binding.  You should be able to use a straight stitch here as long as the neck fits somewhat loosely when you try it on.  If the neck fits snug, then use a zigzag stitch.
+ - Trim excess binding from the inside.
 
 ### Schritt 9: Füge die Cuffs und den Taillenband hinzu
 
