@@ -1,7 +1,7 @@
 
-Steuert die Höhe der Leichtigkeit auf der Schulter zu Schultermessung.
+Steuert die Menge an Zugabe an dem Schulter-zu-Schulter Maß.
 
-This option allows you to create some extra ease at the shoulders which shifts the shoulder seam more outwards and off the shoulder. Thereby creating extra room for extra layers of clothing underneath, or more shaped/padded shoulders.
+Diese Option erlaubt es dir, etwas zusätzliche Zugabe an den Schultern hinzuzufügen, was die Schulternaht mehr nach außen und von der Schulter herunter bewegt. Dadurch wird zusätzlicher Raum für zusätzliche Kleidungsschichten oder gepolsterte Schultern geschaffen.
 
 
 ## Effekt dieser Option auf das Schnittmuster
