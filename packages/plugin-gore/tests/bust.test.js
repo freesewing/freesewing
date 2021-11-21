@@ -1,15 +1,12 @@
 import freesewing from 'freesewing'
 import { version } from '../package.json'
-let chai = require('chai')
-let expect = chai.expect
-chai.use(require('chai-string'))
-let plugin = require('../dist/index.js')
+
+const chai = require('chai')
+const expect = chai.expect
+const plugin = require('../dist/index.js')
 
 it('Should set the plugin name:version attribute', () => {
-  let pattern = new freesewing.Pattern()
-  pattern
-    .use(plugin)
-    .draft()
-    .render()
+  const pattern = new freesewing.Pattern().use(plugin)
+  pattern.draft().render()
   expect(pattern.svg.attributes.get('freesewing:plugin-buttons')).to.equal(version)
 })
