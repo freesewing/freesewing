@@ -20,4 +20,3 @@ for (const snippet of ['button', 'buttonhole', 'snap-stud', 'snap-socket']) {
     expect(pattern.svg.defs.indexOf(`<g id="${snippet}">`)).to.not.equal(-1)
   })
 }
-
