@@ -3,7 +3,7 @@
 
 #### Nach deinen Maßen erstellte Schnittmuster
 
-Alle unsere Schnittmuster sind *maßgeschneidert*. Nicht nur nach hoch- oder runterskaliert, sondern tatsächlich nach deinen genauen Spezifikationen entworfen, so wie du es auf dem Papier tun würdest.
+Alle unsere Schnittmuster sind *maßgeschneidert*. Nicht nur hoch- oder runterskaliert, sondern tatsächlich nach deinen genauen Spezifikationen entworfen, so wie du es auf dem Papier tun würdest.
 
 #### Vollgepackt mit Optionen und einer Livevorschau
 
