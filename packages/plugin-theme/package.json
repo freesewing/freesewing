@@ -35,6 +35,7 @@
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
+    "prettier": "npx prettier --write 'src/*.js' 'tests/*.js'",
     "prebuild": "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js"
   },
   "peerDependencies": {

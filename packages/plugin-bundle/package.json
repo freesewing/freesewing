@@ -35,7 +35,8 @@
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "prettier": "npx prettier --write 'src/*.js' 'tests/*.js'"
   },
   "peerDependencies": {
     "@freesewing/core": "^2.19.5"
