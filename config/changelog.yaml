@@ -1,3 +1,9 @@
+unreleased:
+
+  Added:
+    core:
+      - Added the new attributes.setIfUnset() method
+
 2.19.5:
   date: 2022-11-13
 
