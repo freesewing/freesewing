@@ -17,7 +17,7 @@ If you do not have someone to help pin you into Brian then you may find it easie
 ###### Brian ist ein Grundschnitt, kein Schnittmuster
 
 Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
-Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
 Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
 
