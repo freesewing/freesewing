@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
+    preRender: svg => {
       if (svg.attributes.get('freesewing:plugin-grainline') === false) {
         svg.attributes.set('freesewing:plugin-grainline', version)
         svg.defs += markers
