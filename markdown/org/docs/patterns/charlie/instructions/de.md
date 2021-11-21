@@ -53,7 +53,7 @@ Du solltest die Seiten des Taschenbeutels übersperren/austreten, damit sie nich
 
 <Tip>
 
-Wenn du keinen _serger_ hast, kannst du stattdessen immer einen Zick-Zack-Zack-Stitch verwenden. 
+Wenn du keine _Overlock/Serger_ hast, kannst du stattdessen immer einen Zick-Zack-Zack-Stich verwenden. 
 
 </Tip>
 
