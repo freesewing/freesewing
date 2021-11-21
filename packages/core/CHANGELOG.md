@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added the new attributes.setIfUnset() method
+
 ## 2.19.5 (2022-11-13)
 
 ### Fixed

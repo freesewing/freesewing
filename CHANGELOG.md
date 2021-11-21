@@ -1,6 +1,21 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+### core
+
+#### Added
+
+ - Added the new attributes.setIfUnset() method
+
+### plugin-buttons
+
+#### Fixed
+
+ - Only add snippets once to SVG object
+
+
 ## 2.19.5 (2022-11-13)
 
 ### charlie
