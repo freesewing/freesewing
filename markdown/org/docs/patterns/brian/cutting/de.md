@@ -1,10 +1,10 @@
-**Main fabric**
+**Oberstoff**
 
- - Cut **1 Front** part on the fold.
+ - Schneide **1 Vorderteil** im Stoffbruch.
  - Cut **1 Back** part on the fold.
  - Cut **2 Sleeve** parts.
 
-These cutting instructions are just for the default Brian block. Adjust your cutting accordingly if you have/are making changes to the block.
+These cutting instructions are just for the default Brian block. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
 <Tip>
 
