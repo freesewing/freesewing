@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
+    preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-cutonfold') === false) {
         svg.attributes.set('freesewing:plugin-cutonfold', version)
         svg.defs += markers
@@ -22,7 +22,7 @@ export default {
         delete this.paths.cutonfold
         return true
       }
-      let points = this.points
+      const points = this.points
       so = {
         offset: 15,
         margin: 5,
@@ -37,7 +37,7 @@ export default {
       points['cutonfoldVia2' + so.prefix] = points['cutonfoldTo' + so.prefix]
         .shiftTowards(so.to, so.offset)
         .rotate(90, points['cutonfoldTo' + so.prefix])
-      let text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
+      const text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
       this.paths['cutonfold' + so.prefix] = new this.Path()
         .move(points['cutonfoldFrom' + so.prefix])
         .line(points['cutonfoldVia1' + so.prefix])
