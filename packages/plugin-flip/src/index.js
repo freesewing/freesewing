@@ -4,10 +4,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
-      if (svg.attributes.get('freesewing:plugin-flip') === false)
-        svg.attributes.set('freesewing:plugin-flip', version)
-    },
+    preRender: svg => svg.attributes.set('freesewing:plugin-flip', version)
   },
   macros: {
     flip: function () {
