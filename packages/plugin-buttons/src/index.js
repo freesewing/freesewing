@@ -8,9 +8,10 @@ export default {
   version: version,
   hooks: {
     preRender: function (svg) {
-      if (svg.attributes.get('freesewing:plugin-buttons') === false)
+      if (svg.attributes.get('freesewing:plugin-buttons') === false) {
         svg.attributes.set('freesewing:plugin-buttons', version)
-      svg.defs += button + buttonhole + snaps
+        svg.defs += button + buttonhole + snaps
+      }
     },
   },
 }
