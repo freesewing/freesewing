@@ -40,7 +40,7 @@ Lorsque vous maintenez les bords du tissu alignés, vous risquez d'étirer un c�
 
 Après le repère, les choses seront plus faciles. Ce serait également un bon moment pour comparer la longueur restante des coutures courbes. Si l'une est un peu plus longue que l'autre, étirez un peu la plus courte jusqu'à ce qu'elles correspondent.
 
-Si la différence est trop grande, laissez-la tout simplement. L'excédent sera coupé quand nous ferons la couture d'entrejamble.
+Si la différence est trop grande, laissez-la tout simplement. It will get cut off when we do the crotchseam.
 
 <Note>
 

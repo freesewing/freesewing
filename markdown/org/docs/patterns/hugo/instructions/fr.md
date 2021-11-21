@@ -84,17 +84,18 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
  - Pour fermer la capuche, surjetez ensemble les couches en bas, le long du cou.  Si vous n'avez pas de surjeteuse, utilisez un point zig-zag.
  - (Facultatif) Si vous avez ajouté des trous pour un cordon, vous pouvez le passer maintenant.
 
-### Étape 8 : Attacher la Capuche
+### Step 8: Preparing a Neckband and Attaching the Hood
 
- - Pliez endroit contre endroit la pièce d'encolure et la coudre à 1 cm sur le côté court afin de créer une bande circulaire.
- - À partir du dos, faites correspondre l'extérieur de la capuche et le dos de l'encolure, endroit contre endroit. Alignez le panneau de capuche à l'arrière du cou.
- - Épinglez tout le tour de l'encolure jusqu'au devant.
- - Faires correspondre l'endroit de la bande d'encolure au bord de la ligne du cou (ce sera l'intérieur de la capuche). Épinglez la bande à la capuche.
- - Surjetez ou faites un zig-zag sur toutes les couches avec une marge de couture de 1cm.  Vérifiez tout le tour de l'encolure que toutes les couches ont bien été prises dans la couture.
- - Renforcez les points où l'encolure se croise avec les coutures de manche.  Utilisez un point droit sur la machine à coudre pour stabiliser ces coutures.
- - Pliez la bande par-dessus le bord brut de l'encolure, et épinglez.
- - Depuis l'extérieur, faites une surpiqûre à environ 1 cm du bord de l'encolure pour s'assurer de bien prendre la bande d'encolure.  Vous devriez être en mesure d'utiliser un point droit ici dans la mesure où le cou prévoit suffisamment d'aisance une fois porté.  Si le cou est prévu plus ajusté, alors utilisez un point de zigzag.
- - Coupez l’excès de marge de couture à l’intérieur.
+ - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
+ - Place good sides together on the neck binding piece, then sew a 1cm seam allowance along the short side to make the binding into a circular band.
+ - Starting from the back, match the outside of the hood to the right side of the neckline. Align the hood panel to the back of the neckline.
+ - Working around to the front, pin the hood to the neckline.
+ - Match the good side of the neck binding to the outer neckline (this will be the inside of the hood). Pin the binding to the hood.
+ - Serge or zig-zag all layers together with 1cm seam allowance.  Check around the neckline to make sure all layers were caught by the stitching.
+ - Reinforce the points where the neckline intersects with the sleeve seams.  Use a straight stitch on the sewing machine to stabilize these seams.
+ - Fold the binding over the raw edge of the neckline, and pin.
+ - From the outside, topstitch along and approx 1cm away from the neck edge to catch and secure the binding.  You should be able to use a straight stitch here as long as the neck fits somewhat loosely when you try it on.  If the neck fits snug, then use a zigzag stitch.
+ - Trim excess binding from the inside.
 
 ### Étape 9 : Attacher les Poignets et la Ceinture
 

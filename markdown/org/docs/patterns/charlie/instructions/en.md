@@ -5,7 +5,7 @@ First thing we're going to do is close the waist dart on the back panel.
 
 To do so, fold the back panel double with _good sides together_ making sure to match both sides of the dart on top of each other.
 
-Now sew the dart close, making sure to use a small stitch length, and to sew all teh way to the end of the dart, even a couple of stitches off the fabric.
+Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
 ![Closed darts](step01.svg)
 
@@ -22,8 +22,8 @@ Follow [our double welt pocket instructions](/docs/sewing/double-welt-pockets/) 
 <Note>
 
 Since these are chinos, you can/should edgestitch around the welt opening.
-It's not strictly required for welt pockets, and typically not done on classic trousers (and thus not should in
-the instructions) but it's a very typically finish for chinos, and makes it easier to keep everything in place.
+It's not strictly required for welt pockets, and typically not done on classic trousers (and thus not shown in
+the instructions) but it's a very typical finish for chinos, and makes it easier to keep everything in place.
 
 </Note>
 
@@ -126,7 +126,7 @@ Now press the slant of the front pocket, both on the back and front panel, so th
 
 ### Baste the front pockets shut
 
-I strongly advice you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
+I strongly advise you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
 
 Closing the outseam means to place front and back panel with good sides together, and sew the outer seam.
 That's easy enough at the legs, but at the top we have our pocket, which complicates things.
@@ -193,10 +193,10 @@ When you're done, press open the inseam.
 
 Make sure one leg is turned with the good side out, and the other has the good side in.
 
-Not tuck the leg with the good side out inside the leg that has the good side in.
+Now tuck the leg with the good side out inside the leg that has the good side in.
 This way, they have their good sides against each other.
 
-Aling the cross seam, starting at the back waist, pinning both halves together as you make your way
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way
 towards the fly. Stop at the lowest fly notch.
 
 When you're done. Do it again. Always sew the cross seam twice. 
@@ -234,11 +234,11 @@ Cut it away on the left panel so you're left with the regular seam allowance onl
 
 ### Attach the fly facing
 
-Sew the fly facing to the left front. Place them with good sides together, alingning the top.
+Sew the fly facing to the left front. Place them with good sides together, aligning the top.
 
 ### Tuck in the tip of the fly facing
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches
+Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
 
 ### Edge stitch the fly facing to the seam alowance
 
@@ -271,7 +271,7 @@ You might want to baste this first to make sure it is nicely parallel to the zip
 ### Sew the zipper to the fly facing
 
 Now sew the other side of the zipper to the fly facing. Make sure to align it properly so that
-when the trousers are closed, the zip is hidden
+when the trousers are closed, the zip is hidden.
 
 
 ### Finish the cross seam
@@ -296,7 +296,7 @@ For efficiency, we will contruct one long strip of belt loop that we'll divide i
 
 </Note>
 
-Cut a strip of 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
+Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
 Serge (or zigzag) the long edge of the strip on both sides.
 
@@ -317,7 +317,7 @@ We're going to divide our belt loops along the waist:
  - 1 on each side more or less where the side seam would hit the waist if it went straight up 
  - 1 on each side from center front. Not too close to each other so there's no room for belt buckles, but not too far either so it doesn't look weird
 
-Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist.
+Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist)
 Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 
 ## Step 12: Attach the waist band
@@ -328,9 +328,9 @@ If you're making a straight waistband, skip directly to attaching the waistband 
 
 Place both waistbands with good sides together, and sew along the top of the waistband (the shorter edge).
 
-Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waisband.
+Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waistband.
 
-You can now treat your assembled waisband as one piece, and continue as for the straight waistband.
+You can now treat your assembled waistband as one piece, and continue as for the straight waistband.
 
 <Tip>
 To make sure your inner waistband doesn't peek out, you can _understitch_.
@@ -355,7 +355,7 @@ Now fold over the waistband at the correct width and press in the crease.
 
 ### Close the start and end of the waistband.
 
-At the start and end, fold the waistband over so it has it's good sides together.
+At the start and end, fold the waistband over so it has its good sides together.
 
 Now sew the end shut by sewing top to bottom to just the point where the waistband seam ends.
 
@@ -381,9 +381,9 @@ This will catch the back of the waistband which we've made to extend slightly fu
 
 ### Sew the belt loops down to make them wider
 
-It's best to make the belt loops a bit wider than the waitband, to accomodate wider belts.
+It's best to make the belt loops a bit wider than the waistband, to accomodate wider belts.
 
-For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half and inch) below the waistband.
+For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half an inch) below the waistband.
 
 ### Fold upwards, down again, and sew down
 
@@ -394,7 +394,7 @@ Don't fold it over/around the waistband, but fold it double on itself.
 
 Now do a bartack along the top of the waistband to lock the belt loop in place.
 
-When you're done, carefull twist the back of the beltloop to the front and cut off the excess right next to the bartack.
+When you're done, carefully twist the back of the beltloop to the front and cut off the excess right next to the bartack.
 
 <Note>
 
@@ -418,4 +418,4 @@ Create a buttonhole. Either by hand (it's worth practicing) or with a machine.
 Finally, attach the button.
 
 Now take a moment to appreciate all the hard work you did.
-We hope you'll get a lot of wears out of these.
+We hope you'll get a lot of use out of these.

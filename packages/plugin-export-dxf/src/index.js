@@ -6,6 +6,11 @@ export default {
   name: name,
   version: version,
   hooks: {
+    preRender: function (svg) {
+      if (svg.attributes.get('freesewing:plugin-export-dxf') === false) {
+        svg.attributes.set('freesewing:plugin-export-dxf', version);
+      }
+    },
     postDraft: (pattern, config = { precision: 1 }) => {
       pattern.exportDxf = () => new Dxf(config).render(pattern)
     },

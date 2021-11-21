@@ -5,7 +5,7 @@ Als erstes werden wir den Taillendart auf der Rückseite schließen.
 
 Dazu falten Sie die Rückseite doppelt mit _guten Seiten zusammen_ und stellen Sie sicher, dass beide Seiten des Darts übereinander übereinstimmen.
 
-Nähen Sie nun den Dart schließend, achten Sie darauf, eine kleine Nählänge zu verwenden, und bis zum Ende des Darts nähen, sogar ein paar Nähte vom Stoff.
+Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
 ![Geschlossene Abnäher](step01.svg)
 
@@ -22,8 +22,8 @@ Schau dir [unsere Anleitung für die Doppelpaspeltasche](/docs/sewing/double-wel
 <Note>
 
 Da es sich dabei um Chinos handelt, kann / sollte man sich um die Weltoffenöffnung herumreißen.
-Für Welttaschen ist es nicht unbedingt erforderlich und normalerweise nicht in der klassischen Hose gemacht (und sollte daher nicht in
-in den Anweisungen), aber es ist ein sehr typisches Ziel für Chinos, und macht es einfacher, alles in Ordnung zu halten.
+It's not strictly required for welt pockets, and typically not done on classic trousers (and thus not shown in
+the instructions) but it's a very typical finish for chinos, and makes it easier to keep everything in place.
 
 </Note>
 
@@ -124,7 +124,7 @@ Drücken Sie nun die Schrägheit der Vordertasche, sowohl auf der Rückseite als
 
 ### Schließen Sie die vorderen Taschen
 
-Ich empfehle Ihnen, vor dem Nähen der Naht die Tasche zu schließen, damit Sie wissen, dass sie genau ist.
+I strongly advise you to baste the pocket shut/in place before sewing this seam so that you know it's precise.
 
 Das Schließen des Aussenseams bedeutet, die Vorder- und Rückseite mit guten Seiten zusammenzulegen und die Außennaht zu nähen. Das ist einfach genug an den Beinen, aber oben haben wir unsere Tasche, die die Dinge kompliziert.
 
@@ -188,9 +188,9 @@ Wenn du fertig bist, drücke die Inseam zu öffnen.
 
 Vergewissern Sie sich, dass ein Bein mit der guten Seite gedreht wird, und die andere mit der guten Seite.
 
-Das Bein darf nicht mit der guten Seite in das Bein geklebt werden, das die gute Seite hat. Auf diese Weise haben sie ihre guten Seiten gegeneinander.
+Now tuck the leg with the good side out inside the leg that has the good side in. Auf diese Weise haben sie ihre guten Seiten gegeneinander.
 
-Aling the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Halten Sie an der niedrigsten Flugnotch Halt.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Halten Sie an der niedrigsten Flugnotch Halt.
 
 Wenn du fertig bist. Machen Sie es erneut. Die Kreuznaht immer zweimal nähen. Es ist eine der besten Praktiken, die Sie auf eigene Gefahr ignorieren.
 
@@ -225,11 +225,11 @@ Es gibt zusätzliche Nahtzustand, die entlang des Flusses verläuft. Das brauche
 
 ### Fliegenanhang anhängen
 
-Nähen Sie die Fliege nach links vorne. Legen Sie sie mit guten Seiten zusammen und versetzen Sie die Oberseite.
+Nähen Sie die Fliege nach links vorne. Place them with good sides together, aligning the top.
 
 ### In der Spitze der Fliegenfront stecken
 
-Klappen Sie die Naht nach innen hin und sicher mit ein paar Nähten
+Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
 
 ### Kantenstich die Fliege mit Blick auf die Naht
 
@@ -261,7 +261,7 @@ Vielleicht solltest du diese zuerst einfügen, um sicher zu gehen, dass sie sch�
 
 ### Nähen Sie den Reißverschluss zur Fliege
 
-Nähen Sie nun die andere Seite des Reißverschlusses. Make sure to align it properly so that when the trousers are closed, the zip is hidden
+Nähen Sie nun die andere Seite des Reißverschlusses. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
 
 ### Beende die Kreuznaht
@@ -286,7 +286,7 @@ Für die Effizienz werden wir einen langen Streifen Gurtschleifen in 8 Teile zer
 
 </Note>
 
-Schneiden Sie einen Streifen von 80 cm lang (32 Zoll) und 2,8 cm breit (1 1/8 Zoll).
+Cut a strip 80cm long (32 inch) and 2.8cm wide (1 1/8 inch).
 
 Serge (oder Zickzag) den langen Rand des Streifens auf beiden Seiten.
 
@@ -305,7 +305,7 @@ Wir werden unsere Gürtelschleifen entlang der Taille teilen:
  - 1 an jeder Seite mehr oder weniger wo die Seitennaht die Taille treffen würde, wenn sie gerade nach oben ging
  - 1 auf jeder Seite von der Mitte vorne. Nicht zu nah beieinander, so dass es keinen Platz für Gürtelschnallen gibt, aber auch nicht zu weit, so dass es nicht seltsam aussieht
 
-Platziere die Gürtelschleife an diesen Stellen mit ihrer guten Seite nach unten (gegen die gute Seite des Stoffes deiner Hosen, und die Oberseite mit der Taille ausgerichtet. Nähen Sie dies in die Naht der Taille und stellen Sie sicher, dass sie senkrecht zur Taille sind.
+Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 
 ## Schritt 12: Taillenband anhängen
 
@@ -315,9 +315,9 @@ Wenn Sie eine geradlinige Taille herstellen, springen Sie direkt an die Außense
 
 Legen Sie beide Bänder mit guten Seiten zusammen und nähen Sie an der Spitze der Taille (die kürzere Kante).
 
-Schneiden Sie die Nahtzuweisung der inneren Taille und drücken Sie alle Nahtzuschläge zum Innenband.
+Trim the seam allowance of the inner waistband, and press all seam allowances towards the inner waistband.
 
-Sie können Ihr montiertes Bund nun als ein Stück behandeln und weiter wie für die geraden Taillenband.
+You can now treat your assembled waistband as one piece, and continue as for the straight waistband.
 
 <Tip>
 Um sicherzustellen, dass dein inneres Taillenband nicht aussieht, kannst du _understitch_.
@@ -340,7 +340,7 @@ Nun falten Sie über den Bund in der richtigen Breite und drücken Sie in der Br
 
 ### Schließen Sie den Start und das Ende der Taille.
 
-Am Anfang und Ende falten Sie die Taille über und haben so ihre guten Seiten gemeinsam.
+At the start and end, fold the waistband over so it has its good sides together.
 
 Nähen Sie nun das Ende mit dem Nähen von oben nach unten zu dem Punkt, an dem die Taillendicke endet.
 
@@ -366,9 +366,9 @@ Dies wird die Rückseite des Taillenbands, das wir gemacht haben, um etwas weite
 
 ### Nähen Sie die Gürtelschleifen nach unten um sie breiter zu machen
 
-Es ist am besten, die Gürtelschleifen etwas breiter als die Kellnerbande zu machen, um breitere Gürtel zu unterbringen.
+It's best to make the belt loops a bit wider than the waistband, to accomodate wider belts.
 
-Lassen Sie dafür die Taille flach liegen und nähen Sie sie mit etwa 1,5cm Bartack (halb und inch) unter dem Band.
+For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half an inch) below the waistband.
 
 ### Nach oben, wieder unten und nach unten nähen
 
@@ -378,7 +378,7 @@ Sie werden über die Oberseite der Taille hinausgehen. Also falten Sie den Über
 
 Führen Sie nun einen Bartack entlang der Oberseite der Taille, um die Gurtschleife zu verriegeln.
 
-Wenn Sie fertig sind, drehen Sie vorsichtig die Rückseite der Gürtelschleife nach vorne und schneiden Sie den Überschuss direkt neben der Bartack.
+When you're done, carefully twist the back of the beltloop to the front and cut off the excess right next to the bartack.
 
 <Note>
 
@@ -400,4 +400,4 @@ Erstelle ein Knopfloch. Entweder von Hand (es lohnt sich zu üben) oder mit eine
 
 Schließlich, hängen Sie den Knopf.
 
-Nehmen Sie sich jetzt einen Moment Zeit, um all die harte Arbeit zu schätzen, die Sie geleistet haben. Wir hoffen, dass Sie viele Verschleißteile daraus bekommen.
+Nehmen Sie sich jetzt einen Moment Zeit, um all die harte Arbeit zu schätzen, die Sie geleistet haben. We hope you'll get a lot of use out of these.

@@ -16,4 +16,4 @@ legStretch:
   description: 'Das beste Ergebnis erzielst du, wenn du den Sitz der Beine etwas enger machst — Sag Nein zu klaffenden Lücken.'
 backRise:
   title: Hintere Anstieg
-  description: Prozentsatz, um den die Taille am Rücken angehoben wird.
+  description: Betrag, um den die Taille hinten angehoben wird.

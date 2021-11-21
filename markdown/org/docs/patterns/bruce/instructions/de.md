@@ -40,7 +40,7 @@ Während du den Stoff manipulierst, um ihn richtig auszurichten, ist es einfach 
 
 Sobald Sie die Etappe überwunden haben, wird es einfacher werden. Dies wäre auch ein guter Zeitpunkt, um die verbleibende Länge der gebogenen Nähte zu vergleichen. Wenn der eine ein bisschen länger als der andere ist, dann strecken Sie einfach die kürzere aus, bis sie zusammenpassen.
 
-Wenn der Unterschied jedoch zu groß ist, lassen Sie ihn einfach aus. Es wird abgeschnitten, wenn wir die Crotchseam machen.
+Wenn der Unterschied jedoch zu groß ist, lassen Sie ihn einfach aus. It will get cut off when we do the crotchseam.
 
 <Note>
 
