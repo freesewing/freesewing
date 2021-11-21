@@ -2,7 +2,7 @@ const name = (n, so) => `${so.prefix}${n}${so.suffix}`
 
 const drawBartack = (points, self) => {
   let path = new self.Path().move(points.path1[0])
-  for (let i in points.path1) {
+  for (const i in points.path1) {
     if (points.path1[i]) path = path.line(points.path1[i])
     if (points.path2[i]) path = path.line(points.path2[i])
   }
