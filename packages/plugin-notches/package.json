@@ -30,7 +30,7 @@
     "clean": "rimraf dist",
     "build": "rollup -c",
     "lernabuild": "rollup -c",
-    "test": "echo \"plugin-notches: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
