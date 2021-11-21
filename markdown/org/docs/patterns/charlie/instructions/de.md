@@ -229,7 +229,7 @@ Nähen Sie die Fliege nach links vorne. Place them with good sides together, ali
 
 ### In der Spitze der Fliegenfront stecken
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
+Klappen Sie die Naht nach innen hin und sicher mit ein paar Nähten.
 
 ### Kantenstich die Fliege mit Blick auf die Naht
 
