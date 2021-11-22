@@ -6,7 +6,7 @@ Le carré/rectangle test vous permet de vérifier que votre patron a été impri
 
 <Legend part="scalebox">
 
-The scale box
+La boite à l'échelle
 
 </Legend>
 
