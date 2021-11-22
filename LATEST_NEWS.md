@@ -1,14 +1,14 @@
 ##### New patterns: Bee, Lunetius, Tiberius, and Walburga
 
-Check out the latest additions to our catalog: the [Bee bikini](/designs/bee/), [Lunetius Lacerna](/designs/lunetius/), [Tiberius Tunica](/designs/tiberius/), and [Walburga Wappenrock](/designs/walburga/).
+Check out the latest additions to our catalog: the [Bee bikini top](/designs/bee/), [Lunetius Lacerna](/designs/lunetius/), [Tiberius Tunica](/designs/tiberius/), and [Walburga Wappenrock](/designs/walburga/).
 
-Bee is a bikini pattern, while Lunetius, Tiberius, and Walburga are historical patterns.
+Bee is a bikini top pattern, while Lunetius, Tiberius, and Walburga are historical patterns.
 
 Read more in [our blog](/blog/freesewing-2-19/).
 
-##### Next contributor call on 13 November
+##### Next contributor call on 27 November
 
-The next contributor call is on **13 November 2021**, Lucian and Karen will host it.
+The next contributor call is on **27 November 2021**, Lucian and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
