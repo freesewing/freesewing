@@ -104,6 +104,7 @@ Si no desea tener la lluvia decorativa, puede que todavía quiera enganchar el r
 
 - Corta una banda de tela de sentido cruzado de tu tela principal, la abertura de su cuello + 2cm (3/4 pulgadas) largo y triplicar la costura del cuello
 - Press under 1cm (3/8 inch) allowance on the short sides.
+
 <Note>
   
 Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
