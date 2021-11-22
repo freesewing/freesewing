@@ -1,45 +1,45 @@
 ---
 chestEase:
   title: Aisance de poitrine
-  description: Controls the chest ease in the underlying Bella block Bee is based on
+  description: Contrôle l'aisance de la poitrine dans le bloc de Bella sur lequel est basé Bee
 waistEase:
   title: Aisance à la taille
-  description: Controls the waist ease in the underlying Bella block Bee is based on
+  description: Contrôle l'aisance de la taille dans le bloc de Bella sur lequel est basé Bee
 bustSpanEase:
   title: Aisance de l'écart poitrine
-  description: Controls the bust span ease in the underlying Bella block Bee is based on
+  description: Contrôle l'aisance de l'écart de poitrine dans le bloc de Bella sur lequel est basé Bee
 topDepth:
-  title: Top Depth
-  description: Controls how far the bikini cup extends upwards
+  title: Profondeur supérieure
+  description: Contrôle jusqu'à quel point le bonnet de bikini s'étend vers le haut
 bottomCupDepth:
-  title: Bottom depth
-  description: Controls how far the bikini cup extends downwards
+  title: Profondeur inférieure
+  description: Contrôle jusqu'à quel point le bonnet de bikini s'étend vers le bas
 sideDepth:
-  title: Side depth
-  description: Controls how far the bikini cup extends towards the side
+  title: Profondeur latérale
+  description: Contrôle jusqu'à quel point le bonnet du bikini se prolonge vers le côté
 sideCurve:
-  title: Side curve
-  description: Controls the curvature of the side of the bikini cup
+  title: Courbe latérale
+  description: Contrôle la courbure du côté du bonnet du bikini
 frontCurve:
-  title: Front curve
-  description: Controls the curvature of the front of the bikini cup
+  title: Courbe frontale
+  description: Contrôle la courbure du devant du bonnet du bikini
 bellaGuide:
-  title: Show Bella
-  description: Shows the outline of the Bella block Bee is based on
+  title: Afficher Bella
+  description: Affiche le contour du bloc Bella sur lequel est basé Bee
 ties:
-  title: Ties
-  description: Whether to includes ties, yes or no
+  title: Liens
+  description: S'il faut inclure les liens, oui ou non
 bandTieWidth:
-  title: Band (chest) tie width
-  description: Controls the width of the ties around your chest
+  title: Largeur de la bande (sous poitrine)
+  description: Contrôle la largeur des bandes autour de votre poitrine
 bandTieLength:
-  title: Band (chest) tie length
-  description: Controls the length of the ties around your chest
+  title: Longueur de la bande (poitrine)
+  description: Contrôle la longueur des bandes autour de votre poitrine
 bandTieEnds:
-  title: Band (chest) tie ends
-  description: Whether you like straight or pointy ends on the ties around your chest
+  title: Finition des bouts de bandes (poitrine)
+  description: Choisir si vous voulez que la pointe de la bande autour de votre poitrine se termine droite ou en pointe
 bandTieColours:
-  title: Band (chest) tie length colours
+  title: Couleurs de la bande (sous-poitrine)
   description: Whether you want single color ties around your chest, or dual-coloured ones
 neckTieWidth:
   title: Neck tie width
