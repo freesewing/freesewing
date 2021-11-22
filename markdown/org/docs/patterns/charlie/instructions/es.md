@@ -230,7 +230,7 @@ Pase la mosca hacia el frente izquierdo. Place them with good sides together, al
 
 ### Pegado en la punta de la cara de la mosca
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
+Doblar la parte inferior de la franquicia de costura de la mosca hacia adentro y asegurar con unas pocas pulseras.
 
 ### El borde tira la mosca hacia la costura
 

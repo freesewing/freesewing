@@ -1,4 +1,4 @@
-**Main fabric**
+**Oberstoff**
 
  - Schneide **1 Vorderteil** im Stoffbruch.
  - Schneide **2 Rückteile**.

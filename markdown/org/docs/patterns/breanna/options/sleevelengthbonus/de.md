@@ -1,5 +1,5 @@
 
-This option controls how to lengthen the sleeves.
+Diese Option legt fest, wie die Ärmel verlängert werden.
 
 
 ## Effekt dieser Option auf das Schnittmuster
