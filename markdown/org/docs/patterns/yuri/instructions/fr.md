@@ -104,6 +104,7 @@ Si vous ne souhaitez pas avoir la jante décorative, vous voudrez peut-être enc
 
 - Coupez une bande de tissu transversale de votre tissu principal, votre encolure + 2 cm (3/4 po) de long et triple votre couture de cou de largeur.
 - Press under 1cm (3/8 inch) allowance on the short sides.
+
 <Note>
   
 Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
