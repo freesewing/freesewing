@@ -33,26 +33,26 @@ bandTieWidth:
   title: Largeur de la bande (sous poitrine)
   description: Contrôle la largeur des bandes autour de votre poitrine
 bandTieLength:
-  title: Longueur de la bande (poitrine)
+  title: Longueur de la bande (sous poitrine)
   description: Contrôle la longueur des bandes autour de votre poitrine
 bandTieEnds:
-  title: Finition des bouts de bandes (poitrine)
+  title: Finition des bouts de bandes (sous poitrine)
   description: Choisir si vous voulez que la pointe de la bande autour de votre poitrine se termine droite ou en pointe
 bandTieColours:
-  title: Couleurs de la bande (sous-poitrine)
-  description: Whether you want single color ties around your chest, or dual-coloured ones
+  title: Couleurs de la bande (sous poitrine)
+  description: Que vous vouliez une seule couleur autour de votre poitrine, ou des couleurs doubles
 neckTieWidth:
-  title: Neck tie width
-  description: Controls the width of the ties around your chest
+  title: Largeur de la bande de cou
+  description: Contrôle la largeur des bandes autour de votre cou
 neckTieLength:
-  title: Neck tie length
-  description: Controls the length of the ties around your chest
+  title: Longueur de la bande
+  description: Contrôle la longueur des bandes autour de votre cou
 neckTieEnds:
-  title: Neck tie ends
-  description: Whether you like straight or pointy ends on the ties around your chest
+  title: Fin de la bande de cou
+  description: Choisir si vous voulez que la pointe de la bande autour de votre cou se termine droite ou en pointe
 neckTieColours:
-  title: Neck tie colours
-  description: Whether you want single color ties around your chest, or dual-coloured ones
+  title: Couleurs de bande de cou
+  description: Que vous vouliez une seule couleur autour de votre cou, ou des couleurs doubles
 crossBackTies:
-  title: Cross back ties
-  description: Whether you'd like to cross the ties at the back or not
+  title: Bandes croisées dans le dos
+  description: Si vous souhaitez croiser les liens à l'arrière ou non
