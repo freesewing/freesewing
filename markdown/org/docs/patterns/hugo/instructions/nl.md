@@ -86,16 +86,16 @@ Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
 
 ### Step 8: Preparing a Neckband and Attaching the Hood
 
- - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
- - Place good sides together on the neck binding piece, then sew a 1cm seam allowance along the short side to make the binding into a circular band.
- - Starting from the back, match the outside of the hood to the right side of the neckline. Align the hood panel to the back of the neckline.
- - Working around to the front, pin the hood to the neckline.
- - Match the good side of the neck binding to the outer neckline (this will be the inside of the hood). Pin the binding to the hood.
- - Serge or zig-zag all layers together with 1cm seam allowance.  Check around the neckline to make sure all layers were caught by the stitching.
- - Reinforce the points where the neckline intersects with the sleeve seams.  Use a straight stitch on the sewing machine to stabilize these seams.
- - Fold the binding over the raw edge of the neckline, and pin.
- - From the outside, topstitch along and approx 1cm away from the neck edge to catch and secure the binding.  You should be able to use a straight stitch here as long as the neck fits somewhat loosely when you try it on.  If the neck fits snug, then use a zigzag stitch.
- - Trim excess binding from the inside.
+ - Knip een kruisverstandige strook stof uit je hoofdstof, je halsopening + 2 cm (3/4 inch) lang en drievoudig de naadwaarde van je nek.
+ - Leg de uiteindes van de halsbies met goede kanten op elkaar en stik vast met 1 cm naadwaarde om een ronde band te vormen.
+ - Begin aan de achterkant, en leg de goede kant van de kap op de goede kant van de halslijn. Leg het middendeel gelijk met de achterkant van de halslijn.
+ - Speld de kap aan de halslijn, van achter naar voor.
+ - Leg de goede kant van de halsbies tegen de buitenste halslijn (dit wordt de binnenkant van de kap). Speld de bies aan de kap.
+ - Lock of zigzag alle lagen samen met 1 cm naadwaarde.  Controleer of je overal alle lagen meegestikt hebt.
+ - Verstevig de punten waar de halslijn de mouwnaden kruist.  Gebruik een rechte steek op de naaimachine om deze naden te stabiliseren.
+ - Vouw de bies over de onafgewerkte rand van de halslijn en speld vast.
+ - Stik de halslijn langs de goede kant op 1 cm van de naad door om de bies vast te zetten.  Dit zou moeten lukken met een rechte steek zolang de halsopening redelijk los is als je de trui past.  Als de opening klein is, gebruik dan een zigzagsteek.
+ - Knip de overtollige bies weg aan de binnenkant.
 
 ### Stap 9: Bevestig de manchetten en tailleband
 

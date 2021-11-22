@@ -87,15 +87,15 @@ Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a termina
 ### Step 8: Preparing a Neckband and Attaching the Hood
 
  - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
- - Place good sides together on the neck binding piece, then sew a 1cm seam allowance along the short side to make the binding into a circular band.
- - Starting from the back, match the outside of the hood to the right side of the neckline. Align the hood panel to the back of the neckline.
- - Working around to the front, pin the hood to the neckline.
- - Match the good side of the neck binding to the outer neckline (this will be the inside of the hood). Pin the binding to the hood.
- - Serge or zig-zag all layers together with 1cm seam allowance.  Check around the neckline to make sure all layers were caught by the stitching.
- - Reinforce the points where the neckline intersects with the sleeve seams.  Use a straight stitch on the sewing machine to stabilize these seams.
- - Fold the binding over the raw edge of the neckline, and pin.
- - From the outside, topstitch along and approx 1cm away from the neck edge to catch and secure the binding.  You should be able to use a straight stitch here as long as the neck fits somewhat loosely when you try it on.  If the neck fits snug, then use a zigzag stitch.
- - Trim excess binding from the inside.
+ - Coloca buenos lados juntos en el tubo de unión del cuello a continuación, coser una costura de 1 cm a lo largo del lado corto para hacer la unión en una banda circular.
+ - A partir de la espalda, hacer frente al exterior de la capucha al lado derecho de la línea de cuello. Alinear el panel de la campana a la parte trasera del cuello.
+ - Trabajando alrededor de la parte delantera, anclar el capuchón al cuello.
+ - Concuerda con el lado bueno del cuello que se une al cuello exterior (éste será el interior de la capucha). Anclar la unión al capó.
+ - Servir o zig-zag todas las capas junto con 1 cm de costura.  Comprueba alrededor de la línea del cuello para asegurarte de que todas las capas fueron capturadas por el stitching.
+ - Reforzar los puntos donde la línea del cuello se interseca con las costuras de la manga.  Usa una banda recta en la máquina de coser para estabilizar estas costuras.
+ - Doblar la unión sobre el borde crudo de la línea del cuello y apilar.
+ - Desde el exterior, se unen en la parte superior y aproximadamente a 1 cm del borde del cuello para capturar y asegurar el encuadernado.  Debería ser capaz de usar una cinta recta aquí siempre y cuando el cuello encaje un poco al probarlo.  Si el cuello se ajusta a un zigzag, entonces use un zigzag stitch.
+ - Recortar el exceso de unión desde el interior.
 
 ### Paso 9: Adjuntar los Cuffs y Waistband
 

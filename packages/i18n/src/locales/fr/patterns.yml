@@ -66,8 +66,8 @@ jaeger:
   description: Jaeger est une veste de sport de style manteau avec deux boutons et des poches plaquées.
   title: Veste Jaeger
 lunetius:
-  description: Lunetius is a lacerna, a historical Roman cloak
-  title: Lunetius Lacerna
+  description: Lunetius est une lacerne, un manteau romain historique
+  title: Lacerne Lunetius
 paco:
   description: Paco est un pantalon d'été décontracté mais élégant.
   title: Pantalon Paco
@@ -99,10 +99,10 @@ theo:
   description: Theo est un patron de pantalon classique.
   title: Pantalon Theo
 tiberius:
-  description: Tiberius is a historical Roman tunic
-  title: Tiberius Tunica
+  description: Tiberius est une tunique romaine historique
+  title: Tunique Tiberius
 titan:
-  description: Titan is a dartless trouser block.
+  description: Titan est un patron de base de pantalon sans pinces.
   title: Bloc de pantalon Titan
 trayvon:
   description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
@@ -114,8 +114,8 @@ wahid:
   description: Wahid est un gilet classique ajusté.
   title: Gilet Wahid
 walburga:
-  description: Walburga is a tabard/surcoat, a historical garment from medieval Europe
-  title: Walburga Wappenrock
+  description: Walburga est un tabard/surcot, un vêtement historique de l'Europe médiévale
+  title: Tabard Walburga
 waralee:
   description: Waralee sont des pantalons enveloppés.
   title: Pantalon portefeuille Waralee

@@ -3,9 +3,9 @@
 
 <Note>
 
-##### Es gibt mehr auf dem Bild als das Auge
+##### Es gibt mehr, als man auf den ersten Blick sieht
 
-Diese Liste der FreeSewing Mitwirkenden ist nicht erschöpfend.
+Diese Liste an FreeSewing-Mitwirkenden ist nicht umfassend.
 Sie listet nur Mitwirkende auf, die sich dafür entschieden haben, ihren Namen auf unserer Website bekannt zu geben.
 
 ###### Fehlst du?

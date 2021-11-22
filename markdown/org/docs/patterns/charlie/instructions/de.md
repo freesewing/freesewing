@@ -53,7 +53,7 @@ Du solltest die Seiten des Taschenbeutels übersperren/austreten, damit sie nich
 
 <Tip>
 
-Wenn du keinen _serger_ hast, kannst du stattdessen immer einen Zick-Zack-Zack-Stitch verwenden. 
+Wenn du keine _Overlock/Serger_ hast, kannst du stattdessen immer einen Zick-Zack-Zack-Stich verwenden. 
 
 </Tip>
 
@@ -203,7 +203,7 @@ Richtig zu sein ist eines der Dinge, die du am Ende jedes Mal hochschätzst, wen
 
 </Tip>
 
-## Schritt 10: Bau der Fliege
+## Schritt 10: Konstruktion des Hosenstalls
 
 ### Fliegenverlängerung schließen
 
@@ -229,7 +229,7 @@ Nähen Sie die Fliege nach links vorne. Place them with good sides together, ali
 
 ### In der Spitze der Fliegenfront stecken
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
+Klappen Sie die Naht nach innen hin und sicher mit ein paar Nähten.
 
 ### Kantenstich die Fliege mit Blick auf die Naht
 
@@ -247,7 +247,7 @@ Legen Sie den Reißverschluss am (leicht gebogenen) Rand der Fliegenverlängerun
 
 Nähen Sie nun entlang der Kante. Es ist nicht nötig, den Reißverschluss näher zu bringen, sondern nur am Rand entlang nähen, um ihn an der Stelle zu halten.
 
-### Reißverschluss an die Fliege anhängen
+### Reißverschluss am Hosenstall befestigen
 
 Platzieren Sie nun die rechte Vorderschenkel mit dem zusätzlichen Nahtzustand, den Sie auf der Zippe hinten gefaltet haben.
 
@@ -276,9 +276,9 @@ Jetzt die so genannte J-Naht der Fliege aufstitten. Achten Sie darauf, die Flieg
 
 Jetzt die Flasche der J-Naht (das horizontale Teil), aber dieses Mal vergewissern Sie sich auch, die Fliegenverlängerung zu fangen.
 
-## Schritt 11: Befestigen Sie die Riemenschleifen
+## Schritt 11: Befestige die Gürtelschlaufen
 
-### Gürtelschleifen konstruieren
+### Konstruiere die Gürtelschlaufen
 
 <Note>
 
@@ -296,7 +296,7 @@ Nähen Sie nun entlang der gesamten Länge des Streifens, riechen Sie in der Mit
 
 Schneiden Sie schließlich Ihre Längenschleifen in 8 gleiche Teile ab, um 8 Gurtschleifen zu bilden.
 
-### Gürtelschleifen anhängen
+### Befestige die Gürtelschlaufen
 
 Wir werden unsere Gürtelschleifen entlang der Taille teilen:
 
