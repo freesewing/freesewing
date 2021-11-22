@@ -13,6 +13,6 @@ Elles peuvent être utilisées par les concepteurs de patrons pour ajouter des i
 
 <Legend part="otherLines">
 
-Other line styles
+Autres styles de ligne
 
 </Legend>
