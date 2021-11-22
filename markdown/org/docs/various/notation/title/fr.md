@@ -6,7 +6,7 @@ Chaque pièce de patron a un titre qui indique le numéro et le nom de la pièce
 
 <Legend part="title">
 
-Example of a title
+Exemple de titre
 
 </Legend>
 
