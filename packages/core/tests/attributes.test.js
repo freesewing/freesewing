@@ -1,9 +1,25 @@
-let expect = require("chai").expect;
-let Point = require("./dist").Point;
+const expect = require("chai").expect;
+const Point = require("./dist").Point;
 
-function newAttr() {
-  return new Point(0, 0).attributes;
-}
+const newAttr = () => new Point(0, 0).attributes;
+
+const a = newAttr();
+it("Should set an attribute", () => {
+  a.set('hold', 'me')
+  expect(a.get("hold")).to.equal('me');
+});
+
+it("Should remove an attribute", () => {
+  a.remove('hold')
+  expect(a.get("hold")).to.equal(false);
+});
+
+it("Should only set an unset attribute", () => {
+  a.setIfUnset('hold', 'me')
+  expect(a.get("hold")).to.equal('me');
+  a.setIfUnset('hold', 'thatDudeOverThere')
+  expect(a.get("hold")).to.equal('me');
+});
 
 it("Should return false when getting an unset attribute", () => {
   let a = newAttr();

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-buttons
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Only add snippets once to SVG object
+
 ## 2.17.0 (2021-07-01)
 
 ### Changed

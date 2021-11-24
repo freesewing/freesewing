@@ -6,16 +6,16 @@ order: 280
 Congratulations, you have created your first pattern. And while it's arguably rather simple, 
 you have learned a bunch of things along the way. Let's list some of the things you've learned:
 
- - You have learned how to [setup your development environment](/tutorials/pattern-design/create-freesewing-pattern) with `npx create-freesewing-pattern`
+ - You learned how to [setup your development environment](/tutorials/pattern-design/create-freesewing-pattern) with `npx create-freesewing-pattern`
  - You learned how to [add parts](/tutorials/pattern-design/your-first-part), [measurements](/tutorials/pattern-design/adding-measurements), and [options](/tutorials/pattern-design/adding-options) to your pattern's configuration file
  - You learned what [a good boilerplate is to start with a new part](/tutorials/pattern-design/part-structure)
- - You've learned [how to add points and draw paths](/tutorials/pattern-design/constructing-the-neck-opening)
+ - You learned [how to add points and draw paths](/tutorials/pattern-design/constructing-the-neck-opening)
  - You learned how you can make changes in a loop to [adapt the neck opening](/tutorials/pattern-design/fitting-the-neck-opening) or [rotate the straps](/tutorials/pattern-design/avoiding-overlap) until they were just right
  - You learned about [macros and how to use them](/tutorials/pattern-design/creating-the-closure)
  - You learned different methods to manipulate [points](/reference/api/point/) and [paths](/reference/api/path/)
  - You learned about using [attributes](/reference/api/attributes/) to influence the appearance of points and paths
- - Your learned about what it means to draft [a complete pattern](/tutorials/pattern-design/completing-your-pattern)
- - Your learned about [snippets and how to add them](/tutorials/pattern-design/completing-your-pattern#adding-snippets)
+ - You learned about what it means to draft [a complete pattern](/tutorials/pattern-design/completing-your-pattern)
+ - You learned about [snippets and how to add them](/tutorials/pattern-design/completing-your-pattern#adding-snippets)
  - You learned [how to offset a path](/tutorials/pattern-design/completing-your-pattern#seam-allowance) to create seam allowance, or in our case, mark the bias tape line
  - You learned how to create a [paperless pattern](/tutorials/pattern-design/paperless-bib) by adding dimensions
 
@@ -38,9 +38,9 @@ or need some help or advice, you can [join our chat room](https://discord.freese
 
 ###### Tell us how we can improve this tutorial
 
-You could do as a real favor by letting us know what you loved or hated about this tutorial.
+You could do us a real favor by letting us know what you loved or hated about this tutorial.
 
-Where there areas that were not clear? Did we dwell too long on one topic, or rushed through another one too quickly?
+Were there areas that were not clear? Did we dwell too long on one topic, or rushed through another one too quickly?
 You feedback helps us improve things, so don't be shy and [tell us what you think](https://discord.freesewing.org/).
 
 </Note>

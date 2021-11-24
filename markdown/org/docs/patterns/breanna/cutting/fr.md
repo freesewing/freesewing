@@ -1,4 +1,4 @@
-**Main fabric**
+**Tissu principal**
 
  - Cut **1 Front** part on the fold.
  - Cut **2 Back** parts.

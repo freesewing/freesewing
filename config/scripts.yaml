@@ -12,6 +12,9 @@ _types:
     netlify: 'echo "Not configured yet"'
     test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
     testci: 'BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
+  plugin:
+    test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
+    prettier: "npx prettier --write 'src/*.js' 'tests/*.js'"
 create-freesewing-pattern:
   clean: '!'
   nodebuild: '!'

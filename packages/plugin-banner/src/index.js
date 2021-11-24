@@ -4,10 +4,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
-      if (svg.attributes.get('freesewing:plugin-banner') === false)
-        svg.attributes.set('freesewing:plugin-banner', version)
-    },
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-banner', version),
   },
   macros: {
     banner: function (so) {

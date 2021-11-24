@@ -67,7 +67,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
+    preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-dimension') === false) {
         svg.attributes.set('freesewing:plugin-dimension', version)
         svg.defs += markers
@@ -77,38 +77,47 @@ export default {
   macros: {
     // horizontal
     hd: function (so) {
-      let id = so.id || this.getId(prefix)
-      let from = hleader(so, 'from', this, id + '_ls')
-      let to = hleader(so, 'to', this, id + '_le')
-      this.paths[id] = drawDimension(from, to, so, this)
+      const id = so.id || this.getId(prefix)
+      this.paths[id] = drawDimension(
+        hleader(so, 'from', this, id + '_ls'),
+        hleader(so, 'to', this, id + '_le'),
+        so,
+        this
+      )
     },
     // vertical
     vd: function (so) {
-      let id = so.id || this.getId(prefix)
-      let from = vleader(so, 'from', this, id + '_ls')
-      let to = vleader(so, 'to', this, id + '_le')
-      this.paths[id] = drawDimension(from, to, so, this)
+      const id = so.id || this.getId(prefix)
+      this.paths[id] = drawDimension(
+        vleader(so, 'from', this, id + '_ls'),
+        vleader(so, 'to', this, id + '_le'),
+        so,
+        this
+      )
     },
     // linear
     ld: function (so) {
-      let id = so.id || this.getId(prefix)
-      let from = lleader(so, 'from', this, id + '_ls')
-      let to = lleader(so, 'to', this, id + '_le')
-      this.paths[id] = drawDimension(from, to, so, this)
+      const id = so.id || this.getId(prefix)
+      this.paths[id] = drawDimension(
+        lleader(so, 'from', this, id + '_ls'),
+        lleader(so, 'to', this, id + '_le'),
+        so,
+        this
+      )
     },
     // path
     pd: function (so) {
-      let dimension = so.path
+      const id = so.id || this.getId(prefix)
+      const dimension = so.path
         .offset(so.d)
         .attr('class', 'mark')
         .attr('marker-start', 'url(#dimensionFrom)')
         .attr('marker-end', 'url(#dimensionTo)')
         .attr('data-text', so.text || this.units(so.path.length()))
         .attr('data-text-class', 'fill-mark center')
-      let id = so.id || this.getId(prefix)
+      this.paths[id] = dimension
       drawLeader(this, so.path.start(), dimension.start(), id + '_ls')
       drawLeader(this, so.path.end(), dimension.end(), id + '_le')
-      this.paths[id] = dimension
     },
     // Remove dimension
     rmd: function (so) {

@@ -104,6 +104,7 @@ If you do not wish to have the decorative rim, you may still want to understitch
 
 - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
 - Press under 1cm (3/8 inch) allowance on the short sides.
+
 <Note>
   
 Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.

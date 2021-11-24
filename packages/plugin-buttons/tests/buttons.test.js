@@ -1,17 +1,22 @@
-import freesewing from "@freesewing/core";
-import { version } from "../package.json";
-let chai = require("chai");
-let expect = chai.expect;
-chai.use(require('chai-string'));
-let plugin = require("../dist/index.js");
+import freesewing from '@freesewing/core'
+import { version } from '../package.json'
 
-it("Should set the plugin name:version attribute", () => {
-  let pattern = new freesewing.Pattern();
-  pattern.use(plugin).draft().render();
-  expect(pattern.svg.attributes.get("freesewing:plugin-buttons")).to.equal(
-    version
-  );
-});
+const chai = require('chai')
+const expect = chai.expect
+const plugin = require('../dist/index.js')
+
+const pattern = new freesewing.Pattern().use(plugin)
+pattern.draft().render()
+
+it('Should set the plugin name:version attribute', () => {
+  expect(pattern.svg.attributes.get('freesewing:plugin-buttons')).to.equal(version)
+})
+
+for (const snippet of ['button', 'buttonhole', 'snap-stud', 'snap-socket']) {
+  it(`Should add the ${snippet} snippet to defs`, () => {
+    expect(pattern.svg.defs.indexOf(`<g id="${snippet}">`)).to.not.equal(-1)
+  })
+}
 
 it("Draws a button on an anchor point", () => {
   let pattern = new freesewing.Pattern();
@@ -81,4 +86,3 @@ it("Draws a snap-socket on an anchor point", () => {
   let c = pattern.svg;
   expect(c.layout.test.svg).to.equal('\n\<use x=\"10\" y=\"20\" xlink:href=\"\#snap-socket\" \>\<\/use\>');
 });
-

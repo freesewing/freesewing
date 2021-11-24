@@ -1,3 +1,13 @@
+unreleased:
+
+  Added:
+    core:
+      - Added the new attributes.setIfUnset() method
+
+  Fixed:
+    plugin-buttons:
+      - Only add snippets once to SVG object
+
 2.19.5:
   date: 2022-11-13
 

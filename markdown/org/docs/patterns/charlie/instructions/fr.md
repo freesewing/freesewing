@@ -229,7 +229,7 @@ Coudre la mouche face à gauche. Place them with good sides together, aligning t
 
 ### Tuck in the tip of the fly facing
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
+Plier le fond de la mouche en faisant face à la couture à l'intérieur et sécuriser avec quelques points.
 
 ### Coudre le bord de la mouche face à la couture
 

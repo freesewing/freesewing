@@ -229,7 +229,7 @@ Stik de gulp aan het voorpand. Place them with good sides together, aligning the
 
 ### Trek in de punt van de gulp
 
-Fold the bottom of the fly facing seam allowance inwards and secure with a few stitches.
+Plooi de onderkant van de gulp naar binnen en bevestig met een paar steken.
 
 ### Stik de gulp naar de naad door
 
@@ -261,7 +261,7 @@ Misschien wil je dit eerst driegen om ervoor te zorgen dat het aardig parallel i
 
 ### Stik de rits aan de gulpbeleg
 
-Stik nu de andere kant van de rits aan het gulpdeel. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Stik nu de andere kant van de rits aan het gulpdeel. Zorg ervoor dat het goed uitgelijkt zodat wanneer de broek wordt gesloten, de rits verborgen is.
 
 
 ### Werk de kruisnaad af
