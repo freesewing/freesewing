@@ -1,6 +1,6 @@
 import { name, version } from '../package.json'
 
-const lineValues = (start, end) => {
+export const lineValues = (start, end) => {
   const { x: x1, y: y1 } = start
   const { x: x2, y: y2 } = end
   const [A, B] = [-(y2 - y1), x2 - x1]
@@ -8,7 +8,7 @@ const lineValues = (start, end) => {
   return [A, B, C]
 }
 
-const mirrorGen = (start, end) => {
+export const mirrorGen = (start, end) => {
   const [A, B, C] = lineValues(start, end)
   return (point) => {
     const { x, y } = point
