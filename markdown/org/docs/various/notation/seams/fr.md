@@ -6,6 +6,6 @@ Les coutures (les lignes sur lesquelles vous coudrez) sont indiquées par une li
 
 <Legend part="fabricLines">
 
-Seamlines for different fabric types
+Lignes de couture pour différents types de tissu
 
 </Legend>

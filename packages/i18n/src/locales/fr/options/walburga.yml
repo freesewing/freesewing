@@ -1,23 +1,23 @@
 ---
 headRatio:
-  title: Head ratio
-  description: Controls the size of the head opening
+  title: Ratio de tête
+  description: Contrôle la taille de l'ouverture de la tête
 lengthBonus:
   title: Supplément de longueur
-  description: Allows variation of the length of the garment
+  description: Permet de varier la longueur du vêtement
 widthBonus:
-  title: Width bonus
-  description: Allows variation of the width of the garment
+  title: Bonus de largeur
+  description: Permet de varier la largeur du vêtement
 length:
   title: Longueur
-  description: Controls the length of the garment
+  description: Contrôle la longueur du vêtement
   options:
-    toKnee: On the knee
-    toMidLeg: On the thigh
-    toFloor: To the floor
+    toKnee: Aux genoux
+    toMidLeg: À mi-cuisses
+    toFloor: Jusqu'au sol
 neckoRatio:
-  title: Neck opening shape
-  description: controls the shape of the neck opening
+  title: Forme de l'encolure
+  description: contrôle la forme de l'encolure
 neckline:
-  title: Neckline
-  description: Controls whether or not to draft a neck opening
+  title: Ligne d'encolure
+  description: Contrôle si oui ou non il faut tracer un encolure
