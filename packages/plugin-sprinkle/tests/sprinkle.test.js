@@ -1,4 +1,4 @@
-import freesewing from "freesewing";
+import freesewing from "@freesewing/core";
 import { version } from "../package.json";
 let chai = require("chai");
 let expect = chai.expect;
