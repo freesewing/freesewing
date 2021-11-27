@@ -8,6 +8,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://joost.at/"><img src="https://avatars.githubusercontent.com/u/1708494?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joost De Cock</b></sub></a><br /><a href="#maintenance-joostdecock" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/tangerineshark"><img src="https://avatars.githubusercontent.com/u/70777269?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Karen</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=tangerineshark" title="Documentation">📖</a> <a href="#eventOrganizing-tangerineshark" title="Event Organizing">📋</a></td>
   </tr>
 </table>
 
