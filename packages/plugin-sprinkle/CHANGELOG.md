@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-sprinkle
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.0.0 (2019-08-25)
 
 ### Added
