@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-export-dxf
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.6.0 (2020-05-01)
 
 ### Added
