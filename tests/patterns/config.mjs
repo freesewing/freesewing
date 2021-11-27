@@ -20,7 +20,7 @@ const deprecated = ['theo']
  * @param object models: Imported @freesewing/models
  * @param object patterns: Imported @freesewing/pattern-info
  */
-const testPatternConfig = (design, pattern, expect, models, patterns) => {
+export const testPatternConfig = (design, pattern, expect, models, patterns) => {
   it('Metadata:', () => true)
   it(`  - 'name' should match package name`, () => {
     expect(pattern.config.name).to.equal(design)
@@ -199,4 +199,3 @@ const testPatternConfig = (design, pattern, expect, models, patterns) => {
   }
 }
 
-module.exports = testPatternConfig

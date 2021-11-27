@@ -1,15 +1,17 @@
 // This file is auto-generated.
 // Changes you make will be overwritten.
-const expect = require("chai").expect;
-const models = require("@freesewing/models")
-const patterns = require("@freesewing/pattern-info")
-
-const {{ Pattern }}  = require('../dist')
+import chai from 'chai'
+import models from '@freesewing/models'
+import patterns from '@freesewing/pattern-info'
+import {{ Pattern }} from '../dist/index.mjs'
 
 // Shared tests
-const testPatternConfig = require('../../../tests/patterns/config')
-const testPatternDrafting = require('../../../tests/patterns/drafting')
-const testPatternSampling = require('../../../tests/patterns/sampling')
+import { testPatternConfig } from '../../../tests/patterns/config.mjs'
+import { testPatternDrafting } from '../../../tests/patterns/drafting.mjs'
+import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
+
+const expect = chai.expect
+
 
 // Test config
 testPatternConfig(

@@ -1,4 +1,4 @@
-const nonHumanMeasurements = require('./non-human-measurements.js')
+import { nonHumanMeasurements } from './non-human-measurements.mjs'
 
 // Some patterns are different
 const isGarment = design => ([
@@ -22,7 +22,7 @@ const deprecated = ['theo']
  * @param object models: Imported @freesewing/models
  * @param object patterns: Imported @freesewing/pattern-info
  */
-const testPatternDrafting = (design, Pattern, expect, models, patterns, log=false) => {
+export const testPatternDrafting = (design, Pattern, expect, models, patterns, log=false) => {
   // Load non-human measurements
   const nonHuman = nonHumanMeasurements(models)
 
@@ -145,4 +145,3 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns, log=fals
   }
 }
 
-module.exports = testPatternDrafting

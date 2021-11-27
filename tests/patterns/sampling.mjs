@@ -1,4 +1,4 @@
-const nonHumanMeasurements = require('./non-human-measurements.js')
+import { nonHumanMeasurements } from './non-human-measurements.mjs'
 /*
  * This runs unit tests for pattern sampling
  * It expects the following:
@@ -14,7 +14,7 @@ const nonHumanMeasurements = require('./non-human-measurements.js')
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']
 
-const testPatternSampling = (design, Pattern, expect, models, patterns) => {
+export const testPatternSampling = (design, Pattern, expect, models, patterns) => {
   // Load non-human measurements
   const nonHuman = nonHumanMeasurements(models)
 
@@ -112,4 +112,3 @@ const testPatternSampling = (design, Pattern, expect, models, patterns) => {
 
 }
 
-module.exports = testPatternSampling

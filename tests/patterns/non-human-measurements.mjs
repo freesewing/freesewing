@@ -10,7 +10,7 @@ const nonHuman = {
 }
 const round = val => Math.round(val*10)/10
 
-module.exports = function nonHumanMeasurements(models) {
+export const nonHumanMeasurements = models => {
 
   const { withBreasts, withoutBreasts } = models
 

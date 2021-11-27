@@ -3,6 +3,54 @@ unreleased:
   Added:
     core:
       - Added the new attributes.setIfUnset() method
+    plugin-banner:
+      - Added (esm) unit tests
+    plugin-bartack:
+      - Added (esm) unit tests
+    plugin-bundle:
+      - Added (esm) unit tests
+    plugin-bust:
+      - Added (esm) unit tests
+    plugin-buttons:
+      - Added (esm) unit tests
+    plugin-cutonfold:
+      - Added (esm) unit tests
+    plugin-dimension:
+      - Added (esm) unit tests
+    plugin-export-dxf:
+      - Added (esm) unit tests
+    plugin-flip:
+      - Added (esm) unit tests
+    plugin-gore:
+      - Added (esm) unit tests
+    plugin-grainline:
+      - Added (esm) unit tests
+    plugin-i18n:
+      - Added (esm) unit tests
+    plugin-logo:
+      - Added (esm) unit tests
+    plugin-measurements:
+      - Added (esm) unit tests
+    plugin-mirror:
+      - Added (esm) unit tests
+    plugin-notches:
+      - Added (esm) unit tests
+    plugin-round:
+      - Added (esm) unit tests
+    plugin-scalebox:
+      - Added (esm) unit tests
+    plugin-sprinkle:
+      - Added (esm) unit tests
+    plugin-svgattr:
+      - Added (esm) unit tests
+    plugin-theme:
+      - Added (esm) unit tests
+    plugin-title:
+      - Added (esm) unit tests
+    plugin-validate:
+      - Added (esm) unit tests
+    plugin-versionfree-svg:
+      - Added (esm) unit tests
 
   Fixed:
     plugin-buttons:
