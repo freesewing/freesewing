@@ -64,7 +64,7 @@ const testPatternDrafting = (design, Pattern, expect, models, patterns, log=fals
     }
 
     if (deprecated.indexOf(design) === -1) {
-      // Do the same for fantistical models (dolls, giants)
+      // Do the same for fantastical models (dolls, giants)
       it('Draft for dolls:', () => true)
 
       for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls) {
