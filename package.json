@@ -21,6 +21,7 @@
     "reconfigure": "node scripts/reconfigure.js",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && lerna run lernabuild",
     "buildall": "lerna run lernabuild",
+    "testall": "lerna run testci",
     "release": "lerna exec -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
     "bump": "git add . && git commit -m 'chore: Reconfigure packages'"
