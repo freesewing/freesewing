@@ -27,6 +27,30 @@
       "profile": "https://github.com/lucibytes",
       "contributions": [
         "eventOrganizing"
+},{      "login": "tangerineshark",
+      "name": "Karen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70777269?v=4",
+      "profile": "https://github.com/tangerineshark",
+      "contributions": [
+        "doc",
+        "eventOrganizing"
+},{
+      "login": "nataliabarnhart",
+      "name": "nataliabarnhart",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91577500?v=4",
+      "profile": "https://github.com/nataliabarnhart",
+      "contributions": [
+        "code",
+        "design",
+        "blog"
+},{   "login": "woutervdub",
+      "name": "Wouter van Wageningen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24414629?v=4",
+      "profile": "https://github.com/woutervdub",
+      "contributions": [
+        "code",
+        "design",
+        "tool"
       ]
     }
   ],
