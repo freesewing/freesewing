@@ -70,6 +70,14 @@
         "code",
         "doc",
         "design"
+},{
+      "login": "sannek",
+      "name": "Sanne",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17491062?v=4",
+      "profile": "https://github.com/sannek",
+      "contributions": [
+        "code",
+        "doc"
       ]
     }
   ],
