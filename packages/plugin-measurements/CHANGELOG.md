@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-measurements
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.7.0 (2020-07-12)
 
 ### Added
