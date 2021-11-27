@@ -107,7 +107,17 @@
       "profile": "http://thelettereph.com",
       "contributions": [
         "doc",
-        "plugin"
+      ]
+    }
+},{
+      "login": "AlfaLyr",
+      "name": "AlfaLyr",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39273729?v=4",
+      "profile": "https://github.com/AlfaLyr",
+      "contributions": [
+        "code",
+        "plugin",
+        "design"
       ]
     }
   ],
