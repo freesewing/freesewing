@@ -4,7 +4,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: svg =>  svg.attributes.set('freesewing:plugin-gore', version)
+    preRender: svg =>  svg.attributes.setIfUnset('freesewing:plugin-gore', version)
   },
   macros: {
     gore: function (so) {

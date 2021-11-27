@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-gore
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.3.0 (2020-02-23)
 
 ### Added
