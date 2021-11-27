@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-bartack
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 
 This is the **initial release**, and the start of this change log.
 
