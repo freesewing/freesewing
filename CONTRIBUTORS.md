@@ -17,6 +17,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/sannek"><img src="https://avatars.githubusercontent.com/u/17491062?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sanne</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=sannek" title="Code">💻</a> <a href="https://github.com/freesewing/freesewing/commits?author=sannek" title="Documentation">📖</a></td>
     <td align="center"><a href="https://weblog.redisdead.net"><img src="https://avatars.githubusercontent.com/u/6494414?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hellgy</b></sub></a><br /><a href="#design-hellgy" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/biou"><img src="https://avatars.githubusercontent.com/u/1340376?v=4?s=100" width="100px;" alt=""/><br /><sub><b>biou</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=biou" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.chrisbarrett.fr"><img src="https://avatars.githubusercontent.com/u/2373249?v=4?s=100" width="100px;" alt=""/><br /><sub><b>chri5b</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=chri5b" title="Code">💻</a> <a href="https://github.com/freesewing/freesewing/commits?author=chri5b" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
