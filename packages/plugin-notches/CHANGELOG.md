@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-notches
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.11.0 (2021-01-10)
 
 ### Added

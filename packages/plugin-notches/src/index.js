@@ -10,7 +10,7 @@ export default {
     preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-notches') === false) {
         svg.defs += notches
-        svg.attributes.add('freesewing:plugin-notches', version)
+        svg.attributes.set('freesewing:plugin-notches', version)
       }
     },
   },
