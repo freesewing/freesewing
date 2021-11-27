@@ -100,6 +100,14 @@
       "contributions": [
         "code",
         "test"
+},{
+      "login": "ephphatha",
+      "name": "Andrew James",
+      "avatar_url": "https://avatars.githubusercontent.com/u/357684?v=4",
+      "profile": "http://thelettereph.com",
+      "contributions": [
+        "doc",
+        "plugin"
       ]
     }
   ],
