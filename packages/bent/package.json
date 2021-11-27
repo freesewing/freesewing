@@ -30,13 +30,13 @@
     "clean": "rimraf dist",
     "build": "rollup -c",
     "lernabuild": "rollup -c",
-    "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
+    "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
     "netlify": "echo \"Not configured yet\"",
-    "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.js --require @babel/register"
+    "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register"
   },
   "peerDependencies": {
     "@freesewing/core": "^2.19.5",
@@ -73,7 +73,6 @@
     "prop-types": "^15.7.2",
     "mocha": "^9.1.1",
     "chai": "^4.2.0",
-    "chai-string": "^1.5.0",
     "@babel/register": "^7.10.5"
   },
   "files": [
