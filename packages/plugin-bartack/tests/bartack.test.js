@@ -1,28 +1,28 @@
 import freesewing from '@freesewing/core'
 import { version } from '../package.json'
-let chai = require('chai')
-let expect = chai.expect
-chai.use(require('chai-string'))
-let plugin = require('../dist/index.js')
-let round = freesewing.utils.round
+import chai from 'chai'
+import plugin from '../dist/index.js'
+
+const expect = chai.expect
+const round = freesewing.utils.round
 
 describe('Bartack plugin', function () {
   it('Should set the plugin name:version attribute', () => {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin).render()
     expect(pattern.svg.attributes.get('freesewing:plugin-bartack')).to.equal(version)
   })
 
   it('draws a default bartack from a point', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartack', {
       anchor: pattern.parts.test.points.from,
     })
-    let c = pattern.parts.test.paths.bartack
+    const c = pattern.parts.test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -40,17 +40,17 @@ describe('Bartack plugin', function () {
   })
 
   it('draws a bartack along a path', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
-    let from = new pattern.Point(10, 20)
-    let to = new pattern.Point(10, 30)
+    const from = new pattern.Point(10, 20)
+    const to = new pattern.Point(10, 30)
 
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartack', {
       path: new pattern.Path().move(from).line(to),
     })
-    let c = pattern.parts.test.paths.bartack
+    const c = pattern.parts.test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(8.5)
@@ -68,19 +68,19 @@ describe('Bartack plugin', function () {
   })
 
   it('can be called using the bartackAlong syntax', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
-    let from = new pattern.Point(10, 20)
-    let to = new pattern.Point(10, 100)
+    const from = new pattern.Point(10, 20)
+    const to = new pattern.Point(10, 100)
 
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartackAlong', {
       path: new pattern.Path().move(from).line(to),
       start: 10,
       end: 30,
     })
-    let c = pattern.parts.test.paths.bartack
+    const c = pattern.parts.test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
@@ -98,19 +98,19 @@ describe('Bartack plugin', function () {
   })
 
   it('can be called using the bartackFractionAlong syntax', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
-    let from = new pattern.Point(10, 20)
-    let to = new pattern.Point(10, 100)
+    const from = new pattern.Point(10, 20)
+    const to = new pattern.Point(10, 100)
 
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartackFractionAlong', {
       path: new pattern.Path().move(from).line(to),
       start: 0.2,
       end: 0.8,
     })
-    let c = pattern.parts.test.paths.bartack
+    const c = pattern.parts.test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
@@ -128,16 +128,16 @@ describe('Bartack plugin', function () {
   })
 
   it('has configurable length', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartack', {
       anchor: pattern.parts.test.points.from,
       length: 20,
     })
-    let c = pattern.parts.test.paths.bartack
+    const c = pattern.parts.test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -155,16 +155,16 @@ describe('Bartack plugin', function () {
   })
 
   it('has configurable width', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartack', {
       anchor: pattern.parts.test.points.from,
       width: 5,
     })
-    let c = pattern.parts.test.paths.bartack
+    const c = pattern.parts.test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -182,16 +182,16 @@ describe('Bartack plugin', function () {
   })
 
   it('has configurable angle', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartack', {
       anchor: pattern.parts.test.points.from,
       angle: 45,
     })
-    let c = pattern.parts.test.paths.bartack
+    const c = pattern.parts.test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(11.06)
@@ -209,30 +209,30 @@ describe('Bartack plugin', function () {
   })
 
   it('has configurable suffix', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartack', {
       anchor: pattern.parts.test.points.from,
       suffix: 'foo',
     })
-    let c = pattern.parts.test.paths.bartackfoo
+    const c = pattern.parts.test.paths.bartackfoo
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
   })
 
   it('has configurable prefix', function () {
-    let pattern = new freesewing.Pattern()
+    const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
-    let { macro } = pattern.parts.test.shorthand()
+    const { macro } = pattern.parts.test.shorthand()
     macro('bartack', {
       anchor: pattern.parts.test.points.from,
       prefix: 'foo',
     })
-    let c = pattern.parts.test.paths.foobartack
+    const c = pattern.parts.test.paths.foobartack
     expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
   })
 })
