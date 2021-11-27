@@ -19,7 +19,19 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "bobgeorgethe3rd",
+      "name": "bobgeorgethe3rd",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16866285?v=4",
+      "profile": "https://github.com/bobgeorgethe3rd",
+      "contributions": [
+        "code",
+        "doc",
+        "design"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
