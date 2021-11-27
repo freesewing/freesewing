@@ -6,9 +6,11 @@ export default {
   hooks: {
     preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-bust', version),
     preDraft: ({ settings }) => {
-      if (typeof settings.measurements.bust === 'undefined') {
-        settings.measurements.bust = settings.measurements.chest
-        settings.measurements.chest = settings.measurements.highBust
+      if (settings.measurements) {
+        if (typeof settings.measurements.bust === 'undefined') {
+          settings.measurements.bust = settings.measurements.chest
+          settings.measurements.chest = settings.measurements.highBust
+        }
       }
     },
   },
