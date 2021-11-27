@@ -19,7 +19,18 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "AlfaLyr",
+      "name": "AlfaLyr",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39273729?v=4",
+      "profile": "https://github.com/AlfaLyr",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
