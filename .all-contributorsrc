@@ -19,7 +19,17 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "forresto",
+      "name": "Forrest O.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/395307?v=4",
+      "profile": "https://www.forresto.com/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
