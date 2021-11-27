@@ -1,5 +1,4 @@
 import freesewing from '@freesewing/core'
-import { version } from '../package.json'
 
 const chai = require('chai')
 const expect = chai.expect
