@@ -71,3 +71,7 @@ Our [chatrooms on Discord](https://chat.freesewing.org/) are the best place to a
 share your feedback, or just hang out.
 
 If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
+
+
+{{{contributors}}}
+

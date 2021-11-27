@@ -34,6 +34,8 @@ const packages = glob.sync('*', {
   cwd: path.join(config.repoPath, 'packages')
 })
 
+const contributors = fs.readFileSync(path.join(repoPath, 'CONTRIBUTORS.md'), 'utf-8')
+
 validate(packages, config)
 reconfigure(packages, config)
 
@@ -273,7 +275,8 @@ function readme(pkg, config) {
     fullname: fullName(pkg, config),
     description: config.descriptions[pkg],
     badges: badges(pkg, config),
-    info: readInfoFile(pkg)
+    info: readInfoFile(pkg),
+    contributors
   })
 
   return markup
