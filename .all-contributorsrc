@@ -21,6 +21,71 @@
       ]
     },
     {
+      "login": "starfetch",
+      "name": "starfetch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80041179?v=4",
+      "profile": "https://github.com/starfetch",
+      "contributions": [
+        "code",
+        "doc",
+        "translation",
+        "design"
+},{      "login": "lucibytes",
+      "name": "Lucian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77203781?v=4",
+      "profile": "https://github.com/lucibytes",
+      "contributions": [
+        "eventOrganizing"
+},{      "login": "tangerineshark",
+      "name": "Karen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70777269?v=4",
+      "profile": "https://github.com/tangerineshark",
+      "contributions": [
+        "doc",
+        "eventOrganizing"
+},{
+      "login": "nataliabarnhart",
+      "name": "nataliabarnhart",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91577500?v=4",
+      "profile": "https://github.com/nataliabarnhart",
+      "contributions": [
+        "code",
+        "design",
+        "blog"
+},{
+      "login": "woutervdub",
+      "name": "Wouter van Wageningen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24414629?v=4",
+      "profile": "https://github.com/woutervdub",
+      "contributions": [
+        "code",
+        "design",
+        "tool"
+},{
+      "login": "bobgeorgethe3rd",
+      "name": "bobgeorgethe3rd",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16866285?v=4",
+      "profile": "https://github.com/bobgeorgethe3rd",
+      "contributions": [
+        "code",
+        "doc",
+        "design"
+},{
+      "login": "sannek",
+      "name": "Sanne",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17491062?v=4",
+      "profile": "https://github.com/sannek",
+      "contributions": [
+        "code",
+        "doc"
+},{
+      "login": "hellgy",
+      "name": "hellgy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6494414?v=4",
+      "profile": "https://weblog.redisdead.net",
+      "contributions": [
+        "design"
+},{
       "login": "biou",
       "name": "biou",
       "avatar_url": "https://avatars.githubusercontent.com/u/1340376?v=4",
