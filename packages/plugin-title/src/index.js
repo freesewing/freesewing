@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
+    preRender: svg => {
       if (svg.attributes.get('freesewing:plugin-title') === false) {
         svg.attributes.set('freesewing:plugin-title', version)
         svg.style += style
@@ -15,12 +15,12 @@ export default {
   macros: {
     title: function (so) {
       const transform = function (anchor) {
-        let cx = anchor.x - so.scale * anchor.x
-        let cy = anchor.y - so.scale * anchor.y
+        const cx = anchor.x - so.scale * anchor.x
+        const cy = anchor.y - so.scale * anchor.y
 
         return `matrix(${so.scale}, 0, 0, ${so.scale}, ${cx}, ${cy}) rotate(${so.rotation} ${anchor.x} ${anchor.y})`
       }
-      let defaults = {
+      const defaults = {
         scale: 1,
         rotation: 0,
       }

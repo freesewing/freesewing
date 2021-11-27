@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-title
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.9.0 (2020-10-02)
 
 ### Added
