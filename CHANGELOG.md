@@ -9,11 +9,153 @@
 
  - Added the new attributes.setIfUnset() method
 
+### plugin-banner
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-bartack
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-bundle
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-bust
+
+#### Added
+
+ - Added (esm) unit tests
+
 ### plugin-buttons
+
+#### Added
+
+ - Added (esm) unit tests
 
 #### Fixed
 
  - Only add snippets once to SVG object
+
+### plugin-cutonfold
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-dimension
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-export-dxf
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-flip
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-gore
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-grainline
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-i18n
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-logo
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-measurements
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-mirror
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-notches
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-round
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-scalebox
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-sprinkle
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-svgattr
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-theme
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-title
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-validate
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-versionfree-svg
+
+#### Added
+
+ - Added (esm) unit tests
 
 
 ## 2.19.5 (2022-11-13)
