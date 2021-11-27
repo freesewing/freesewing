@@ -19,7 +19,17 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "ttimearl",
+      "name": "ttimearl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77916590?v=4",
+      "profile": "https://github.com/ttimearl",
+      "contributions": [
+        "content"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
