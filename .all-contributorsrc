@@ -21,7 +21,16 @@
       ]
     },
     {
-      "login": "lucibytes",
+      "login": "starfetch",
+      "name": "starfetch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80041179?v=4",
+      "profile": "https://github.com/starfetch",
+      "contributions": [
+        "code",
+        "doc",
+        "translation",
+        "design"
+},{      "login": "lucibytes",
       "name": "Lucian",
       "avatar_url": "https://avatars.githubusercontent.com/u/77203781?v=4",
       "profile": "https://github.com/lucibytes",
