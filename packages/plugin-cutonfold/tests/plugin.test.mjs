@@ -1,17 +1,11 @@
-import freesewing from '@freesewing/core'
-import { version } from '../../plugin-cutonfold/package.json'
 import chai from 'chai'
+import freesewing from '@freesewing/core'
 import plugin from '../dist/index.js'
 
 const expect = chai.expect
 const round = freesewing.utils.round
 
-describe('plugin-cutonfold', function () {
-  it('Should set the plugin name:version attribute', () => {
-    const pattern = new freesewing.Pattern().use(plugin)
-    pattern.render()
-    expect(pattern.svg.attributes.get('freesewing:plugin-cutonfold')).to.equal(version)
-  })
+describe('Cutonfold Plugin Tests', () => {
 
   it('Should run the default cutonfold macro', () => {
     const pattern = new freesewing.Pattern().use(plugin)
