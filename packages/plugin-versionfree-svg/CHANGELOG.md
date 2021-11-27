@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-versionfree-svg
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.19.0 (2021-10-17)
 
 ### Added
