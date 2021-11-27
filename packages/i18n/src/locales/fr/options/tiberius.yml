@@ -12,28 +12,28 @@ widthBonus:
   title: Bonus de largeur
   description: Permet de varier la largeur du vêtement
 clavi:
-  title: Clavi
-  description: Whether or not to include guides for clavi
+  title: Bande de pourpre
+  description: Inclure ou non des guides pour la bande de pourpre
 clavusLocation:
-  title: Clavus location
-  description: Controls the location of the clavi
+  title: Emplacement de la bande de pourpre
+  description: Contrôle la localisation de la bande de pourpre
 clavusWidth:
-  title: Clavus width
-  description: Controls the width of the clavi
+  title: Largeur de la bande de pourpre
+  description: Contrôle la largeur de la bande de pourpre
 length:
   title: Longueur
-  description: Controls the length of the garment
+  description: Contrôle la longueur du vêtement
   options:
-    toKnee: On the knee
-    toMidLeg: On the thigh
-    toFloor: To the floor
+    toKnee: Aux genoux
+    toMidLeg: À mi-cuisses
+    toFloor: Jusqu'au sol
 width:
   title: Largeur
-  description: Controls the width of the garment
+  description: Contrôle la largeur du vêtement
   options:
-    toElbow: To the elbow
-    toShoulder: To the shoulder
-    toMidArm: To the upper arm
+    toElbow: Jusqu'aux coudes
+    toShoulder: Aux épaules
+    toMidArm: Vers le haut du bras
 forceWidth:
-  title: Force width
-  description: Apply width settings regardless of constraints
+  title: Forcer la largeur
+  description: Appliquer les paramètres de largeur indépendamment des contraintes
