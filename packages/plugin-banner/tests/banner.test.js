@@ -1,21 +1,21 @@
 import freesewing from '@freesewing/core'
 import { version } from '../package.json'
-let chai = require('chai')
-let expect = chai.expect
-chai.use(require('chai-string'))
-let plugin = require('../dist/index.js')
+import chai from 'chai'
+import plugin from '../dist/index.js'
+
+const expect = chai.expect
 
 describe('Banner Plugin', () => {
   it('Should set the plugin name:version attribute', () => {
-    let pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new freesewing.Pattern().use(plugin)
     pattern.render()
     expect(pattern.svg.attributes.get('freesewing:plugin-banner')).to.equal(version)
   })
 
-  let pattern = new freesewing.Pattern()
+  const pattern = new freesewing.Pattern()
   pattern.use(plugin).render()
   pattern.parts.test = new pattern.Part()
-  let { Point, points, Path, paths, macro } = pattern.parts.test.shorthand()
+  const { Point, points, Path, paths, macro } = pattern.parts.test.shorthand()
 
   it('Should add repeating text to a path', () => {
     pattern.parts.test.points.from = new pattern.Point(30, 30)
