@@ -1,135 +1,82 @@
 const validate = {}
 
-validate.point = function (point, partId, pointId, debug) {
+validate.point = function (point, partId, pointId, raise) {
   if (typeof point !== 'object') {
-    debug({
-      type: 'error',
-      label: 'Problem with point',
-      msg: points,
-    })
+    raise.error(`Point pattern.parts.${partId}.points.${pointId} is not an object`)
     throw new Error(`Point pattern.parts.${partId}.points.${pointId} is not an object`)
   } else if (typeof point.x !== 'number' || isNaN(point.x)) {
-    debug({
-      type: 'error',
-      label: 'Problem with point X-value',
-      msg: points,
-    })
+    raise.error(`Problem with point X-value for ${pointId} on part ${partId}`)
     throw new Error(`X-value of point pattern.parts.${partId}.points.${pointId} is not a number`)
   } else if (typeof point.y !== 'number' || isNaN(point.y)) {
-    debug({
-      type: 'error',
-      label: 'Problem with point Y-value',
-      msg: points,
-    })
-    debug(dbg, 'Problem with point Y-value:', point)
+    raise.error(`Problem with point Y-value for ${pointId} on part ${partId}`)
     throw new Error(`Y-value of point pattern.parts.${partId}.points.${pointId} is not a number`)
   } else if (
     typeof point.attributes !== 'object' ||
     !(point.attributes.clone instanceof Function)
   ) {
-    debug({
-      type: 'error',
-      label: 'Problem with point attributes',
-      msg: points,
-    })
+    raise.error('Problem with point attributes')
     throw new Error(
       `attributes property of point pattern.parts.${partId}.points.${pointId} is not an object`
     )
   } else if (!(point.clone instanceof Function)) {
-    debug({
-      type: 'error',
-      label: 'Problem with point',
-      msg: points,
-    })
+    raise.error('Problem with point')
     throw new Error(`Point pattern.parts.${partId}.points.${pointId} is not a valid Point object`)
   }
 
   return true
 }
 
-validate.text = function (type, item, partId, itemId, debug) {
+validate.text = function (type, item, partId, itemId, raise) {
   let text = item.attributes.getAsArray('data-text')
   if (text === false) return true
   else {
     if (item.attributes.get('data-validate-skip-text') !== false) {
-      debug({
-        type: 'warning',
-        label: '🌐 Possible translation issue',
-        msg: `This text might be a translation problem:, ${item} However, the error was suppresed, so moving on.`,
-      })
+      raise.info(
+        `🌐 Possible translation issue: This text might be a translation problem:, ${item} However, the error was suppresed, so moving on.`
+      )
       return true
     }
     for (let t of text) {
       if (typeof t !== 'string' && typeof t !== 'number') {
-        debug({
-          type: 'error',
-          label: 'This text is not a string or number',
-          msg: t,
-        })
+        raise.error(`This text is not a string or number: ${t}`)
         throw new Error(
           `${type} pattern.parts.${partId}.${type}s.${itemId} has text that is not a string nor a number. Set the 'data-validate-skip-text' attribute to true to suppress this error.`
         )
       } else if (typeof t === 'string' && t.indexOf(' ') !== -1) {
-        debug({
-          type: 'warning',
-          label: '🌐 Possible translation issue',
-          msg: t,
-        })
-        debug({
-          type: 'info',
-          label: '💡 Tip',
-          msg: `${type} pattern.parts.${partId}.${type}s.${itemId} has text containing spaces. Please insert translation identifiers, and not actual text. Set the 'data-validate-skip-text' attribute to true to suppress this warning.`,
-        })
+        raise.warning(`🌐 Possible translation issue with: ${t}`)
+        raise.info(
+          `${type} pattern.parts.${partId}.${type}s.${itemId} has text containing spaces. Please insert translation identifiers, and not actual text. Set the 'data-validate-skip-text' attribute to true to suppress this warning.`
+        )
+        //This would fix the unit test but might have a lot of downstream impacts
+        //throw new Error(
+        //  `${type} pattern.parts.${partId}.${type}s.${itemId} has text containing spaces`
+        //)
       }
     }
   }
   return true
 }
 
-validate.path = function (path, partId, pathId, debug) {
+validate.path = function (path, partId, pathId, raise) {
   if (typeof path !== 'object') {
-    debug({
-      type: 'error',
-      label: 'Problem with path',
-      msg: path,
-    })
+    raise.error(`Problem with path ${path}`)
     throw new Error(`Path pattern.parts.${partId}.paths.${pathId} is not an object`)
   } else if (typeof path.ops !== 'object') {
-    debug({
-      type: 'error',
-      label: 'Problem with path ops',
-      msg: path,
-    })
+    raise.error(`Problem with path ops on ${path}`)
     throw new Error(`ops property of path pattern.parts.${partId}.paths.${pathId} is not an object`)
   } else if (path.ops.length < 2) {
-    debug({
-      type: 'error',
-      label: 'Problem with path ops',
-      msg: path,
-    })
+    raise.error(`Problem with path ops on ${path}`)
     throw new Error(`Path pattern.parts.${partId}.paths.${pathId} does not do anything`)
   } else if (typeof path.attributes !== 'object') {
-    debug({
-      type: 'error',
-      label: 'Problem with path attributes',
-      msg: path,
-    })
+    raise.error(`Problem with path attributes on ${path}`)
     throw new Error(
       `attributes property of path pattern.parts.${partId}.paths.${pathId} is not an object`
     )
   } else if (!(path.clone instanceof Function)) {
-    debug({
-      type: 'error',
-      label: 'Problem with path',
-      msg: path,
-    })
+    raise.error(`Problem with path ${path}: not a valid Path object`)
     throw new Error(`Path pattern.parts.${partId}.paths.${pathId} is not a valid Path object`)
   } else if (!(path.attributes.clone instanceof Function)) {
-    debug({
-      type: 'error',
-      label: 'Problem with path attributes',
-      msg: path,
-    })
+    raise.error(`Problem with path attributes on ${path}`)
     throw new Error(
       `attributes property of path pattern.parts.${partId}.paths.${pathId} is not a valid Attributes object`
     )
@@ -137,32 +84,20 @@ validate.path = function (path, partId, pathId, debug) {
   for (let o in path.ops) {
     let op = path.ops[o]
     if (op.type !== 'close') {
-      if (!validate.point(op.to, partId, '_unknown_', debug)) {
-        debug({
-          type: 'error',
-          label: 'Problem with path TO point',
-          msg: op.to,
-        })
+      if (!validate.point(op.to, partId, '_unknown_', raise)) {
+        raise.error(`Problem with path TO point ${op.to}`)
         throw new Error(
           `Point in pattern.parts.${partId}.paths.${pathId}.ops[o].to is not a valid Point object`
         )
       }
     } else if (op.type === 'curve') {
-      if (!validate.point(op.cp1, partId, '_unknown_', debug)) {
-        debug({
-          type: 'error',
-          label: 'Problem with path CP1 point',
-          msg: op.cp1,
-        })
+      if (!validate.point(op.cp1, partId, '_unknown_', raise)) {
+        raise.error(`Problem with path CP1 point ${op.cp1}`)
         throw new Error(
           `Point in pattern.parts.${partId}.paths.${pathId}.ops[o].cp1 is not a valid Point object`
         )
-      } else if (!validate.point(op.cp2, partId, '_unknown_', debug)) {
-        debug({
-          type: 'error',
-          label: 'Problem with path CP2 point',
-          msg: op.cp2,
-        })
+      } else if (!validate.point(op.cp2, partId, '_unknown_', raise)) {
+        raise.error(`Problem with path CP2 point ${op.cp2}`)
         throw new Error(
           `Point in pattern.parts.${partId}.paths.${pathId}.ops[o].cp2 is not a valid Point object`
         )
@@ -173,9 +108,9 @@ validate.path = function (path, partId, pathId, debug) {
   return true
 }
 
-validate.snippet = function (snippet, partId, snippetId, debug) {
+validate.snippet = function (snippet, partId, snippetId, raise) {
   if (typeof snippet !== 'object') return false
-  if (!validate.point(snippet.anchor, partId, '_unknown_', debug)) return false
+  if (!validate.point(snippet.anchor, partId, '_unknown_', raise)) return false
   if (typeof snippet.attributes !== 'object') return false
   if (!(snippet.clone instanceof Function)) return false
   if (!(snippet.attributes.clone instanceof Function)) return false
