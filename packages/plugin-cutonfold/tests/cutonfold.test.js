@@ -1,9 +1,10 @@
 import freesewing from '@freesewing/core'
 import { version } from '../../plugin-cutonfold/package.json'
+import chai from 'chai'
+import plugin from '../dist/index.js'
 
+const expect = chai.expect
 const round = freesewing.utils.round
-const expect = require('chai').expect
-const plugin = require('../dist/index.js')
 
 describe('plugin-cutonfold', function () {
   it('Should set the plugin name:version attribute', () => {
