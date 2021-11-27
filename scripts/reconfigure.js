@@ -35,6 +35,8 @@ const packages = glob.sync('*', {
 })
 
 const contributors = fs.readFileSync(path.join(repoPath, 'CONTRIBUTORS.md'), 'utf-8')
+const mainReadme = fs.readFileSync(path.join(repoPath, 'config', 'templates', 'readme.main.md'), 'utf-8')
+fs.writeFileSync(path.join(repoPath, 'README.md'), mainReadme + contributors)
 
 validate(packages, config)
 reconfigure(packages, config)
