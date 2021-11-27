@@ -1,8 +1,9 @@
 import freesewing from '@freesewing/core'
 import { version } from '../package.json'
+import chai from 'chai'
+import plugin from '../dist/index.js'
 
-const expect = require('chai').expect
-const plugin = require('../dist/index.js')
+const expect = chai.expect
 const round = freesewing.utils.round
 
 describe('The dimension plugin', function () {
