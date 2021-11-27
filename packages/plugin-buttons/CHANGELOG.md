@@ -3,6 +3,10 @@
 
 ## unreleased (NaN-NaN-NaN)
 
+### Added
+
+ - Added (esm) unit tests
+
 ### Fixed
 
  - Only add snippets once to SVG object
