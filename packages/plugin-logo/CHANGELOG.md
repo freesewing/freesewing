@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-logo
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.15.0 (2021-04-15)
 
 ### Added
