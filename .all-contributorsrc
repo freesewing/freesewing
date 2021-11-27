@@ -19,7 +19,17 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "woolishboy",
+      "name": "woolishboy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57816321?v=4",
+      "profile": "https://github.com/woolishboy",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
