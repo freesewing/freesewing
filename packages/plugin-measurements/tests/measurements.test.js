@@ -21,7 +21,7 @@ describe('plugin-measurements', function () {
     const testPattern = new freesewing.Design(config,plugin)
     let pattern = new testPattern()
     let userMeasurements = {seat: 50, seatBack: 20}
-    pattern.settings.measurements = userMeasurements;
+    pattern.settings.measurements = userMeasurements
     pattern.draft()
     expect(pattern.settings.measurements.seatFront).to.equal(30)
   })
