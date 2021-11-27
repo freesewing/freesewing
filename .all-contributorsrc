@@ -21,14 +21,21 @@
       ]
     },
     {
-      "login": "tangerineshark",
+      "login": "lucibytes",
+      "name": "Lucian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77203781?v=4",
+      "profile": "https://github.com/lucibytes",
+      "contributions": [
+        "eventOrganizing"
+},{      "login": "tangerineshark",
       "name": "Karen",
       "avatar_url": "https://avatars.githubusercontent.com/u/70777269?v=4",
       "profile": "https://github.com/tangerineshark",
       "contributions": [
         "doc",
         "eventOrganizing"
-},{      "login": "nataliabarnhart",
+},{
+      "login": "nataliabarnhart",
       "name": "nataliabarnhart",
       "avatar_url": "https://avatars.githubusercontent.com/u/91577500?v=4",
       "profile": "https://github.com/nataliabarnhart",
