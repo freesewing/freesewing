@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-bundle
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.17.0 (2021-07-01)
 
 ### Changed

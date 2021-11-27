@@ -13,7 +13,7 @@ import sprinkle from '@freesewing/plugin-sprinkle'
 import measurements from '@freesewing/plugin-measurements'
 import { version, name } from '../package.json'
 
-let bundle = [
+const bundle = [
   buttons,
   cutonfold,
   dimension,
