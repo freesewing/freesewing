@@ -19,7 +19,18 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "darigovresearch",
+      "name": "Darigov Research",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30328618?v=4",
+      "profile": "https://www.darigovresearch.com/",
+      "contributions": [
+        "doc",
+        "ideas"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
