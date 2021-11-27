@@ -52,7 +52,8 @@
         "code",
         "design",
         "blog"
-},{   "login": "woutervdub",
+},{
+      "login": "woutervdub",
       "name": "Wouter van Wageningen",
       "avatar_url": "https://avatars.githubusercontent.com/u/24414629?v=4",
       "profile": "https://github.com/woutervdub",
@@ -60,6 +61,15 @@
         "code",
         "design",
         "tool"
+},{
+      "login": "bobgeorgethe3rd",
+      "name": "bobgeorgethe3rd",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16866285?v=4",
+      "profile": "https://github.com/bobgeorgethe3rd",
+      "contributions": [
+        "code",
+        "doc",
+        "design"
       ]
     }
   ],
