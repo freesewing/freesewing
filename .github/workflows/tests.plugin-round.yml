@@ -1,4 +1,4 @@
-name: Unit tests - 
+name: Unit tests - Plugin-round
 
 on:
   push:
@@ -31,10 +31,10 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: "cd packages/ && npm install  @freesewing/models@2.19.5 @freesewing/pattern-info@2.19.5 mocha chai"
+        run: "cd packages/plugin-round && npm install  mocha chai"
         env:
           CI: true
       - name: Build plugin
-        run: cd packages/ && npm run build
+        run: cd packages/plugin-round && npm run build
       - name: Run plugin unit tests
-        run: cd packages/ && npm run testci
+        run: cd packages/plugin-round && npm run testci

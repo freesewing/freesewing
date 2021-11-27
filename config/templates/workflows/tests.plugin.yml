@@ -33,7 +33,7 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: "cd packages/{{ plugin }} && npm install {{{ peerdeps }}} @freesewing/models@{{{ version }}} @freesewing/pattern-info@{{{ version }}} mocha chai"
+        run: "cd packages/{{ plugin }} && npm install {{{ peerdeps }}} mocha chai"
         env:
           CI: true
       - name: Build plugin

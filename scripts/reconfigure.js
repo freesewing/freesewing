@@ -459,7 +459,11 @@ function configurePkgUnitTests(type, pkg, config) {
           .map((dep) => dep + '@' + peerdeps[dep])
           .join(' ')
       }
-    : { version }
+    : {
+      version,
+      plugin: pkg,
+      Plugin: capitalize(pkg),
+    }
 
   for (const file of ['shared.test.mjs']) {
     fs.writeFileSync(
