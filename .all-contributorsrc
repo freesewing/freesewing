@@ -19,7 +19,17 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "destos",
+      "name": "Patrick Forringer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136456?v=4",
+      "profile": "https://pat.forringer.com",
+      "contributions": [
+        "plugin"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
