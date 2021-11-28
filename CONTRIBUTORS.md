@@ -42,6 +42,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/kristinruben"><img src="https://avatars.githubusercontent.com/u/17237479?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kristin Ruben</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=kristinruben" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Soazillon"><img src="https://avatars.githubusercontent.com/u/40845940?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Soazillon</b></sub></a><br /><a href="#translation-Soazillon" title="Translation">🌍</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/ericamattos"><img src="https://avatars.githubusercontent.com/u/4341417?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ericamattos</b></sub></a><br /><a href="#translation-ericamattos" title="Translation">🌍</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
