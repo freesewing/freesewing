@@ -224,6 +224,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "TriploidTree",
+      "name": "Tríona",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4170521?v=4",
+      "profile": "https://github.com/TriploidTree",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 5,
