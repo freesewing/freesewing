@@ -386,6 +386,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Loudepeuter",
+      "name": "Loudepeuter",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38081954?v=4",
+      "profile": "https://github.com/Loudepeuter",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7
