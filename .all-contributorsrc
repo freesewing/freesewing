@@ -46,6 +46,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "joshessman",
+      "name": "Josh Essman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9941074?v=4",
+      "profile": "https://github.com/joshessman",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
