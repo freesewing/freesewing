@@ -4,11 +4,14 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
-    "CONTRIBUTORS.md"
+    "CONTRIBUTORS.md",
+    "CONTRIBUTORS_BADGE.md"
   ],
   "imageSize": 100,
   "commit": true,
+  "skipCi": true,
   "commitConvention": "angular",
+  "contributorsPerLine": 5,
   "contributors": [
     {
       "login": "joostdecock",
@@ -261,7 +264,5 @@
         "code"
       ]
     }
-  ],
-  "contributorsPerLine": 5,
-  "skipCi": true
+  ]
 }
