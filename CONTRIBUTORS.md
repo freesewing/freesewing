@@ -15,6 +15,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/valadaptive"><img src="https://avatars.githubusercontent.com/u/79560998?v=4?s=100" width="100px;" alt=""/><br /><sub><b>valadaptive</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=valadaptive" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/martintribo"><img src="https://avatars.githubusercontent.com/u/1613442?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Martin Tribo</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=martintribo" title="Documentation">📖</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/phillipthelen"><img src="https://avatars.githubusercontent.com/u/298062?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Phillip Thelen</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=phillipthelen" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->

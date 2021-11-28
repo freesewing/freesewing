@@ -73,6 +73,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "phillipthelen",
+      "name": "Phillip Thelen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/298062?v=4",
+      "profile": "https://github.com/phillipthelen",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
