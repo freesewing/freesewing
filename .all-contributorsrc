@@ -250,6 +250,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "kristinruben",
+      "name": "Kristin Ruben",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17237479?v=4",
+      "profile": "https://github.com/kristinruben",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
