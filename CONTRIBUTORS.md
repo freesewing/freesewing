@@ -44,6 +44,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/ericamattos"><img src="https://avatars.githubusercontent.com/u/4341417?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ericamattos</b></sub></a><br /><a href="#translation-ericamattos" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/berce"><img src="https://avatars.githubusercontent.com/u/10439709?v=4?s=100" width="100px;" alt=""/><br /><sub><b>berce</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=berce" title="Documentation">📖</a></td>
   </tr>
 </table>
 
