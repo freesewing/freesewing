@@ -147,6 +147,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "enyachoke",
+      "name": "Emmanuel Nyachoke",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1908926?v=4",
+      "profile": "https://emmanuelnyachoke.com/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
