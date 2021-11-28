@@ -34,6 +34,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://polymerisation-des-concepts.fr/"><img src="https://avatars.githubusercontent.com/u/365999?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alexandre Ignjatovic</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=bankair" title="Code">💻</a></td>
     <td align="center"><a href="https://www.darigovresearch.com/"><img src="https://avatars.githubusercontent.com/u/30328618?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Darigov Research</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=darigovresearch" title="Documentation">📖</a> <a href="#ideas-darigovresearch" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://www.uza.be/persoon/prof-dr-sorcha-ni-dhubhghaill"><img src="https://avatars.githubusercontent.com/u/30624634?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Prof. dr. Sorcha Ní Dhubhghaill</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=sorchanidhubhghaill" title="Documentation">📖</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
