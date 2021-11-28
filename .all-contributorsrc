@@ -55,6 +55,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "valadaptive",
+      "name": "valadaptive",
+      "avatar_url": "https://avatars.githubusercontent.com/u/79560998?v=4",
+      "profile": "https://github.com/valadaptive",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
