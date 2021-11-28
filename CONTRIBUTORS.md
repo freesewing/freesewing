@@ -57,6 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Fantastik-Maman"><img src="https://avatars.githubusercontent.com/u/39785382?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fantastik-Maman</b></sub></a><br /><a href="#translation-Fantastik-Maman" title="Translation">🌍</a></td>
     <td align="center"><a href="http://adamrtomkins.github.io/"><img src="https://avatars.githubusercontent.com/u/5709603?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adam Tomkins</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=AdamRTomkins" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/dpiquet"><img src="https://avatars.githubusercontent.com/u/4688628?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Damien PIQUET</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=dpiquet" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/brmlyklr"><img src="https://avatars.githubusercontent.com/u/22308713?v=4?s=100" width="100px;" alt=""/><br /><sub><b>brmlyklr</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=brmlyklr" title="Documentation">📖</a></td>
   </tr>
 </table>
 
