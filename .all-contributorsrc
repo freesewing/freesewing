@@ -241,6 +241,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "Pixieish",
+      "name": "Pixieish",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32991415?v=4",
+      "profile": "https://github.com/Pixieish",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
