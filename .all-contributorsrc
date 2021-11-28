@@ -4,8 +4,7 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
-    "CONTRIBUTORS.md",
-    "CONTRIBUTORS_BADGE.md"
+    "CONTRIBUTORS.md"
   ],
   "imageSize": 100,
   "commit": true,
@@ -30,20 +29,28 @@
         "doc",
         "translation",
         "design"
-},{      "login": "lucibytes",
+      ]
+    },
+    {
+      "login": "lucibytes",
       "name": "Lucian",
       "avatar_url": "https://avatars.githubusercontent.com/u/77203781?v=4",
       "profile": "https://github.com/lucibytes",
       "contributions": [
         "eventOrganizing"
-},{      "login": "tangerineshark",
+      ]
+    },
+    {
+      "login": "tangerineshark",
       "name": "Karen",
       "avatar_url": "https://avatars.githubusercontent.com/u/70777269?v=4",
       "profile": "https://github.com/tangerineshark",
       "contributions": [
         "doc",
         "eventOrganizing"
-},{
+      ]
+    },
+    {
       "login": "nataliabarnhart",
       "name": "nataliabarnhart",
       "avatar_url": "https://avatars.githubusercontent.com/u/91577500?v=4",
@@ -52,7 +59,9 @@
         "code",
         "design",
         "blog"
-},{
+      ]
+    },
+    {
       "login": "woutervdub",
       "name": "Wouter van Wageningen",
       "avatar_url": "https://avatars.githubusercontent.com/u/24414629?v=4",
@@ -61,7 +70,9 @@
         "code",
         "design",
         "tool"
-},{
+      ]
+    },
+    {
       "login": "bobgeorgethe3rd",
       "name": "bobgeorgethe3rd",
       "avatar_url": "https://avatars.githubusercontent.com/u/16866285?v=4",
@@ -70,7 +81,9 @@
         "code",
         "doc",
         "design"
-},{
+      ]
+    },
+    {
       "login": "sannek",
       "name": "Sanne",
       "avatar_url": "https://avatars.githubusercontent.com/u/17491062?v=4",
@@ -78,21 +91,27 @@
       "contributions": [
         "code",
         "doc"
-},{
+      ]
+    },
+    {
       "login": "hellgy",
       "name": "hellgy",
       "avatar_url": "https://avatars.githubusercontent.com/u/6494414?v=4",
       "profile": "https://weblog.redisdead.net",
       "contributions": [
         "design"
-},{
+      ]
+    },
+    {
       "login": "biou",
       "name": "biou",
       "avatar_url": "https://avatars.githubusercontent.com/u/1340376?v=4",
       "profile": "https://github.com/biou",
       "contributions": [
         "code"
-},{
+      ]
+    },
+    {
       "login": "chri5b",
       "name": "chri5b",
       "avatar_url": "https://avatars.githubusercontent.com/u/2373249?v=4",
@@ -100,16 +119,18 @@
       "contributions": [
         "code",
         "test"
-},{
+      ]
+    },
+    {
       "login": "ephphatha",
       "name": "Andrew James",
       "avatar_url": "https://avatars.githubusercontent.com/u/357684?v=4",
       "profile": "http://thelettereph.com",
       "contributions": [
-        "doc",
+        "doc"
       ]
-    }
-},{
+    },
+    {
       "login": "AlfaLyr",
       "name": "AlfaLyr",
       "avatar_url": "https://avatars.githubusercontent.com/u/39273729?v=4",
@@ -119,8 +140,17 @@
         "plugin",
         "design"
       ]
+    },
+    {
+      "login": "destos",
+      "name": "Patrick Forringer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/136456?v=4",
+      "profile": "https://pat.forringer.com/",
+      "contributions": [
+        "plugin"
+      ]
     }
   ],
-  "contributorsPerLine": 7,
+  "contributorsPerLine": 5,
   "skipCi": true
 }
