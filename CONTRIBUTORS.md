@@ -13,6 +13,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://twitter.com/kapunahele"><img src="https://avatars.githubusercontent.com/u/4116963?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kapunahele Wong</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=kapunahelewong" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/joshessman"><img src="https://avatars.githubusercontent.com/u/9941074?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Josh Essman</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=joshessman" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/valadaptive"><img src="https://avatars.githubusercontent.com/u/79560998?v=4?s=100" width="100px;" alt=""/><br /><sub><b>valadaptive</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=valadaptive" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/martintribo"><img src="https://avatars.githubusercontent.com/u/1613442?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Martin Tribo</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=martintribo" title="Documentation">📖</a></td>
   </tr>
 </table>
 

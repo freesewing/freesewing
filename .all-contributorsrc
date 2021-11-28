@@ -64,6 +64,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "martintribo",
+      "name": "Martin Tribo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1613442?v=4",
+      "profile": "https://github.com/martintribo",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
