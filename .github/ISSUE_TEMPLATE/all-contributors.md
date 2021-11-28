@@ -1,7 +1,7 @@
 ---
 name: All Contributors update
 about: Help capture the various contributions to FreeSewing
-title: All Contributors: Please add [username here]
+title: "All Contributors: Please add (username here)"
 labels: "\U0001F49C all contributors"
 assignees: 'joostdecock'
 ---
