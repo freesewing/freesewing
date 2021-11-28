@@ -39,6 +39,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.forresto.com/"><img src="https://avatars.githubusercontent.com/u/395307?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Forrest O.</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=forresto" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/TriploidTree"><img src="https://avatars.githubusercontent.com/u/4170521?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tríona</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=TriploidTree" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/woolishboy"><img src="https://avatars.githubusercontent.com/u/57816321?v=4?s=100" width="100px;" alt=""/><br /><sub><b>woolishboy</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=woolishboy" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ttimearl"><img src="https://avatars.githubusercontent.com/u/77916590?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ttimearl</b></sub></a><br /><a href="#content-ttimearl" title="Content">🖋</a></td>
   </tr>
 </table>
 
