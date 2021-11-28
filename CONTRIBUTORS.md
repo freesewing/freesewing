@@ -18,6 +18,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/phillipthelen"><img src="https://avatars.githubusercontent.com/u/298062?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Phillip Thelen</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=phillipthelen" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/amysews"><img src="https://avatars.githubusercontent.com/u/25280778?v=4?s=100" width="100px;" alt=""/><br /><sub><b>amysews</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=amysews" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.instagram.com/celine_mge/"><img src="https://avatars.githubusercontent.com/u/57619777?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Slylele</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=Slylele" title="Documentation">📖</a> <a href="#translation-Slylele" title="Translation">🌍</a></td>
   </tr>
 </table>
 
