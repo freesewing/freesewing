@@ -440,6 +440,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "theUnmutual",
+      "name": "Unmutual",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22374635?v=4",
+      "profile": "https://github.com/theUnmutual",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
