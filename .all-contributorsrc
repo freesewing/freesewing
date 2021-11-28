@@ -295,6 +295,17 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "PD75",
+      "name": "Paul",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10294795?v=4",
+      "profile": "http://pd75.github.io/",
+      "contributions": [
+        "doc",
+        "blog",
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7

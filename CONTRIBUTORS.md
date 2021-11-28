@@ -46,6 +46,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/ericamattos"><img src="https://avatars.githubusercontent.com/u/4341417?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ericamattos</b></sub></a><br /><a href="#translation-ericamattos" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/berce"><img src="https://avatars.githubusercontent.com/u/10439709?v=4?s=100" width="100px;" alt=""/><br /><sub><b>berce</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=berce" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/manufakturedelweiss"><img src="https://avatars.githubusercontent.com/u/38063391?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marcus</b></sub></a><br /><a href="#translation-manufakturedelweiss" title="Translation">🌍</a></td>
+    <td align="center"><a href="http://pd75.github.io/"><img src="https://avatars.githubusercontent.com/u/10294795?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paul</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=PD75" title="Documentation">📖</a> <a href="#blog-PD75" title="Blogposts">📝</a> <a href="#translation-PD75" title="Translation">🌍</a></td>
   </tr>
 </table>
 
