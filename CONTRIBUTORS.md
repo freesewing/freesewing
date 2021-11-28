@@ -41,6 +41,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/woolishboy"><img src="https://avatars.githubusercontent.com/u/57816321?v=4?s=100" width="100px;" alt=""/><br /><sub><b>woolishboy</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=woolishboy" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/ttimearl"><img src="https://avatars.githubusercontent.com/u/77916590?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ttimearl</b></sub></a><br /><a href="#content-ttimearl" title="Content">🖋</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/grimlokason"><img src="https://avatars.githubusercontent.com/u/5112238?v=4?s=100" width="100px;" alt=""/><br /><sub><b>grimlokason</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=grimlokason" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->

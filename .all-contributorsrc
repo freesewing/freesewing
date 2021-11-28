@@ -251,6 +251,15 @@
       "contributions": [
         "content"
       ]
+    },
+    {
+      "login": "grimlokason",
+      "name": "grimlokason",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5112238?v=4",
+      "profile": "https://github.com/grimlokason",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 5,
