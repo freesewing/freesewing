@@ -60,6 +60,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/brmlyklr"><img src="https://avatars.githubusercontent.com/u/22308713?v=4?s=100" width="100px;" alt=""/><br /><sub><b>brmlyklr</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=brmlyklr" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Loudepeuter"><img src="https://avatars.githubusercontent.com/u/38081954?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Loudepeuter</b></sub></a><br /><a href="#translation-Loudepeuter" title="Translation">🌍</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://metafly.info/"><img src="https://avatars.githubusercontent.com/u/961256?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stefan Sydow</b></sub></a><br /><a href="#translation-stsydow" title="Translation">🌍</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->

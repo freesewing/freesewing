@@ -395,6 +395,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "stsydow",
+      "name": "Stefan Sydow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/961256?v=4",
+      "profile": "http://metafly.info/",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7
