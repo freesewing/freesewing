@@ -101,6 +101,16 @@
         "doc",
         "translation"
       ]
+    },
+    {
+      "login": "ElenaFdR",
+      "name": "Elena FdR",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5113815?v=4",
+      "profile": "https://github.com/ElenaFdR",
+      "contributions": [
+        "doc",
+        "blog"
+      ]
     }
   ],
   "contributorsPerLine": 7
