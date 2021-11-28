@@ -33,6 +33,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/cloutiy"><img src="https://avatars.githubusercontent.com/u/8433147?v=4?s=100" width="100px;" alt=""/><br /><sub><b>yc</b></sub></a><br /><a href="#translation-cloutiy" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/fightingrabbit"><img src="https://avatars.githubusercontent.com/u/25751445?v=4?s=100" width="100px;" alt=""/><br /><sub><b>fightingrabbit</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=fightingrabbit" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/QuentinFelix"><img src="https://avatars.githubusercontent.com/u/5288091?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Quentin FELIX</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=QuentinFelix" title="Code">💻</a> <a href="#design-QuentinFelix" title="Design">🎨</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->

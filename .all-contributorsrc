@@ -204,6 +204,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "QuentinFelix",
+      "name": "Quentin FELIX",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5288091?v=4",
+      "profile": "https://github.com/QuentinFelix",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7
