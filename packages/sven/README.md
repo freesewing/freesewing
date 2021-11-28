@@ -20,10 +20,10 @@
   ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:sven.svg?label=Issues"
   alt="Open issues tagged pkg:sven"/>
   </a><a
-  href="https://todo.freesewing.org/"
-  title="Project board"
-  ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Project%20board-9775fa.svg?logo=github&logoColor=white&logoWidth=15"
-  alt="Project board"/>
+  href="#contributors-"
+  title="All Contributors"
+  ><img src="https://img.shields.io/badge/all_contributors-74-pink.svg"
+  alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
   title="Follow @freesewing_org on Twitter"

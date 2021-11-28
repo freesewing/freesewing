@@ -14,7 +14,7 @@
   title="Code quality on DeepScan"
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg" 
   alt="DeepScan grade"
-  ></a><a
+  ></a> <a
   href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen"
   title="Open issues tagged pkg:aaron"
   ><img src="https://img.shields.io/github/issues/freesewing/freesewing.svg?label=Issues"
@@ -22,7 +22,7 @@
   </a><a 
   href="#contributors-"
   title="All Contributors"
-  ><img src="https://img.shields.io/badge/all_contributors-74-pink.svg?style=flat-square"
+  ><img src="https://img.shields.io/badge/all_contributors-74-pink.svg"
   alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
