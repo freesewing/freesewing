@@ -28,6 +28,15 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "geeksam",
+      "name": "Sam Livingston-Gray",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6462?v=4",
+      "profile": "http://resume.livingston-gray.com/faq.html",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

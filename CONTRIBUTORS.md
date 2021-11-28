@@ -9,6 +9,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://joost.at/"><img src="https://avatars.githubusercontent.com/u/1708494?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joost De Cock</b></sub></a><br /><a href="#maintenance-joostdecock" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/nadege"><img src="https://avatars.githubusercontent.com/u/3792171?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nadege Michel</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=nadege" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://resume.livingston-gray.com/faq.html"><img src="https://avatars.githubusercontent.com/u/6462?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sam Livingston-Gray</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=geeksam" title="Documentation">📖</a></td>
   </tr>
 </table>
 
