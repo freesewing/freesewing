@@ -51,6 +51,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/viocky"><img src="https://avatars.githubusercontent.com/u/39279173?v=4?s=100" width="100px;" alt=""/><br /><sub><b>viocky</b></sub></a><br /><a href="#translation-viocky" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/Joebidido"><img src="https://avatars.githubusercontent.com/u/39796210?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Joebidido</b></sub></a><br /><a href="#translation-Joebidido" title="Translation">🌍</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/dingcycle"><img src="https://avatars.githubusercontent.com/u/1681985?v=4?s=100" width="100px;" alt=""/><br /><sub><b>dingcycle</b></sub></a><br /><a href="#translation-dingcycle" title="Translation">🌍</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
