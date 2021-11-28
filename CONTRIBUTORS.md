@@ -36,6 +36,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://www.uza.be/persoon/prof-dr-sorcha-ni-dhubhghaill"><img src="https://avatars.githubusercontent.com/u/30624634?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Prof. dr. Sorcha Ní Dhubhghaill</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=sorchanidhubhghaill" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.forresto.com/"><img src="https://avatars.githubusercontent.com/u/395307?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Forrest O.</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=forresto" title="Documentation">📖</a></td>
   </tr>
 </table>
 
