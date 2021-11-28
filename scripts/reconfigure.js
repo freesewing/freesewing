@@ -35,7 +35,11 @@ const packages = glob.sync('*', {
 })
 
 const contributors = fs.readFileSync(path.join(repoPath, 'CONTRIBUTORS.md'), 'utf-8')
-const mainReadme = fs.readFileSync(path.join(repoPath, 'config', 'templates', 'readme.main.md'), 'utf-8')
+const acconfig = JSON.parse(fs.readFileSync(path.join(repoPath, '.all-contributorsrc'), 'utf-8'))
+const mainReadme = Mustache.render(
+  fs.readFileSync(path.join(repoPath, 'config', 'templates', 'readme.main.md'), 'utf-8'),
+  { allcontributors: acconfig.contributors.length }
+)
 fs.writeFileSync(path.join(repoPath, 'README.md'), mainReadme + contributors)
 
 validate(packages, config)
@@ -242,7 +246,10 @@ function badges(pkg, config) {
   for (let group of ['_all', '_social']) {
     markup += "<p align='center'>"
     for (let key of Object.keys(config.badges[group])) {
-      markup += formatBadge(config.badges[group][key], pkg, fullName(pkg, config))
+      const name = (key === 'contributors')
+        ? acconfig.contributors.length
+        : pkg
+      markup += formatBadge(config.badges[group][key], name, fullName(pkg, config))
     }
     markup += '</p>'
   }

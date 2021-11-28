@@ -22,7 +22,7 @@
   </a><a 
   href="#contributors-"
   title="All Contributors"
-  ><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square"
+  ><img src="https://img.shields.io/badge/all_contributors-{{ allcontributors }}-pink.svg?style=flat-square"
   alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
