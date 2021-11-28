@@ -214,6 +214,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "nyergler",
+      "name": "Nathan Yergler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/510875?v=4",
+      "profile": "http://yergler.net/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
