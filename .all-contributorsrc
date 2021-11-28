@@ -111,6 +111,15 @@
         "doc",
         "blog"
       ]
+    },
+    {
+      "login": "camerondubas",
+      "name": "Cameron Dubas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6216460?v=4",
+      "profile": "https://github.com/camerondubas",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

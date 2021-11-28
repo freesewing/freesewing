@@ -20,6 +20,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/amysews"><img src="https://avatars.githubusercontent.com/u/25280778?v=4?s=100" width="100px;" alt=""/><br /><sub><b>amysews</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=amysews" title="Documentation">📖</a></td>
     <td align="center"><a href="https://www.instagram.com/celine_mge/"><img src="https://avatars.githubusercontent.com/u/57619777?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Slylele</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=Slylele" title="Documentation">📖</a> <a href="#translation-Slylele" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/ElenaFdR"><img src="https://avatars.githubusercontent.com/u/5113815?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Elena FdR</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=ElenaFdR" title="Documentation">📖</a> <a href="#blog-ElenaFdR" title="Blogposts">📝</a></td>
+    <td align="center"><a href="https://github.com/camerondubas"><img src="https://avatars.githubusercontent.com/u/6216460?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cameron Dubas</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=camerondubas" title="Documentation">📖</a></td>
   </tr>
 </table>
 
