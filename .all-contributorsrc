@@ -176,6 +176,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "annekecaramin",
+      "name": "Anneke",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38046191?v=4",
+      "profile": "https://github.com/annekecaramin",
+      "contributions": [
+        "doc",
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7

@@ -29,6 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://emmanuelnyachoke.com/"><img src="https://avatars.githubusercontent.com/u/1908926?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Emmanuel Nyachoke</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=enyachoke" title="Code">💻</a> <a href="https://github.com/freesewing/freesewing/commits?author=enyachoke" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/econo202"><img src="https://avatars.githubusercontent.com/u/34138153?v=4?s=100" width="100px;" alt=""/><br /><sub><b>econo202</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=econo202" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/chrisgloom"><img src="https://avatars.githubusercontent.com/u/15905991?v=4?s=100" width="100px;" alt=""/><br /><sub><b>tuesgloomsday</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=chrisgloom" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/annekecaramin"><img src="https://avatars.githubusercontent.com/u/38046191?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anneke</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=annekecaramin" title="Documentation">📖</a> <a href="#translation-annekecaramin" title="Translation">🌍</a></td>
   </tr>
 </table>
 
