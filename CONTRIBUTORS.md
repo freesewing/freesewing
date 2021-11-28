@@ -37,6 +37,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/QuentinFelix"><img src="https://avatars.githubusercontent.com/u/5288091?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Quentin FELIX</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=QuentinFelix" title="Code">💻</a> <a href="#design-QuentinFelix" title="Design">🎨</a></td>
     <td align="center"><a href="http://yergler.net/"><img src="https://avatars.githubusercontent.com/u/510875?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nathan Yergler</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=nyergler" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/cabi"><img src="https://avatars.githubusercontent.com/u/2596253?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carsten Biebricher</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=cabi" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Kittycatou"><img src="https://avatars.githubusercontent.com/u/48165583?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kittycatou</b></sub></a><br /><a href="#translation-Kittycatou" title="Translation">🌍</a></td>
   </tr>
 </table>
 

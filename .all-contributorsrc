@@ -232,6 +232,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Kittycatou",
+      "name": "Kittycatou",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48165583?v=4",
+      "profile": "https://github.com/Kittycatou",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7
