@@ -64,6 +64,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://metafly.info/"><img src="https://avatars.githubusercontent.com/u/961256?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Stefan Sydow</b></sub></a><br /><a href="#translation-stsydow" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/beautifulsummermoon"><img src="https://avatars.githubusercontent.com/u/40396388?v=4?s=100" width="100px;" alt=""/><br /><sub><b>beautifulsummermoon</b></sub></a><br /><a href="#translation-beautifulsummermoon" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/Chantalbijoux"><img src="https://avatars.githubusercontent.com/u/39673694?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chantal Lapointe</b></sub></a><br /><a href="#translation-Chantalbijoux" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/Irapeke"><img src="https://avatars.githubusercontent.com/u/39604334?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Irapeke</b></sub></a><br /><a href="#translation-Irapeke" title="Translation">🌍</a></td>
   </tr>
 </table>
 
