@@ -4,11 +4,15 @@ on:
   push:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/plugin-buttons/**'
+      - '!packages/plugin-buttons/README.md'
   pull_request:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/plugin-buttons/**'
+      - '!packages/plugin-buttons/README.md'
 
 jobs:
   test:

@@ -4,11 +4,15 @@ on:
   push:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/plugin-validate/**'
+      - '!packages/plugin-validate/README.md'
   pull_request:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/plugin-validate/**'
+      - '!packages/plugin-validate/README.md'
 
 jobs:
   test:

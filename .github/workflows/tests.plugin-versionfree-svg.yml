@@ -4,11 +4,15 @@ on:
   push:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/plugin-versionfree-svg/**'
+      - '!packages/plugin-versionfree-svg/README.md'
   pull_request:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/plugin-versionfree-svg/**'
+      - '!packages/plugin-versionfree-svg/README.md'
 
 jobs:
   test:

@@ -4,11 +4,15 @@ on:
   push:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/plugin-sprinkle/**'
+      - '!packages/plugin-sprinkle/README.md'
   pull_request:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/plugin-sprinkle/**'
+      - '!packages/plugin-sprinkle/README.md'
 
 jobs:
   test:

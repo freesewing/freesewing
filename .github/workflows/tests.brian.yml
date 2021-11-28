@@ -4,11 +4,15 @@ on:
   push:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/brian/**'
+      - '!packages/brian/README.md'
   pull_request:
     branches:
       - develop
-      - main
+    paths:
+      - 'packages/brian/**'
+      - '!packages/brian/README.md'
 
 jobs:
   test:
