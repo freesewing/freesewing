@@ -458,6 +458,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "jsawo",
+      "name": "Jacek Sawoszczuk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1294706?v=4",
+      "profile": "https://github.com/jsawo",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
