@@ -40,6 +40,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Kittycatou"><img src="https://avatars.githubusercontent.com/u/48165583?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kittycatou</b></sub></a><br /><a href="#translation-Kittycatou" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/Pixieish"><img src="https://avatars.githubusercontent.com/u/32991415?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pixieish</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=Pixieish" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/kristinruben"><img src="https://avatars.githubusercontent.com/u/17237479?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kristin Ruben</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=kristinruben" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Soazillon"><img src="https://avatars.githubusercontent.com/u/40845940?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Soazillon</b></sub></a><br /><a href="#translation-Soazillon" title="Translation">🌍</a></td>
   </tr>
 </table>
 

@@ -259,6 +259,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Soazillon",
+      "name": "Soazillon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40845940?v=4",
+      "profile": "https://github.com/Soazillon",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7
