@@ -149,6 +149,17 @@
       "contributions": [
         "plugin"
       ]
+    },
+    {
+      "login": "nataliasayang",
+      "name": "Natalia",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48160791?v=4",
+      "profile": "https://github.com/nataliasayang",
+      "contributions": [
+        "code",
+        "design",
+        "blog"
+      ]
     }
   ],
   "contributorsPerLine": 5,

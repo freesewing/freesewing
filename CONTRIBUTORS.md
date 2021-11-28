@@ -25,6 +25,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://thelettereph.com"><img src="https://avatars.githubusercontent.com/u/357684?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrew James</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=ephphatha" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/AlfaLyr"><img src="https://avatars.githubusercontent.com/u/39273729?v=4?s=100" width="100px;" alt=""/><br /><sub><b>AlfaLyr</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=AlfaLyr" title="Code">💻</a> <a href="#plugin-AlfaLyr" title="Plugin/utility libraries">🔌</a> <a href="#design-AlfaLyr" title="Design">🎨</a></td>
     <td align="center"><a href="https://pat.forringer.com/"><img src="https://avatars.githubusercontent.com/u/136456?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Patrick Forringer</b></sub></a><br /><a href="#plugin-destos" title="Plugin/utility libraries">🔌</a></td>
+    <td align="center"><a href="https://github.com/nataliasayang"><img src="https://avatars.githubusercontent.com/u/48160791?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Natalia</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=nataliasayang" title="Code">💻</a> <a href="#design-nataliasayang" title="Design">🎨</a> <a href="#blog-nataliasayang" title="Blogposts">📝</a></td>
   </tr>
 </table>
 
