@@ -359,6 +359,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "AdamRTomkins",
+      "name": "Adam Tomkins",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5709603?v=4",
+      "profile": "http://adamrtomkins.github.io/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
