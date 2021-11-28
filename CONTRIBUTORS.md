@@ -30,6 +30,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://www.kieranklaassen.com/"><img src="https://avatars.githubusercontent.com/u/209089?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kieran Klaassen</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=kieranklaassen" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jejacks0n"><img src="https://avatars.githubusercontent.com/u/13765?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jeremy Jackson</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=jejacks0n" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/DocSpencer77"><img src="https://avatars.githubusercontent.com/u/43393580?v=4?s=100" width="100px;" alt=""/><br /><sub><b>gaylyndie</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=DocSpencer77" title="Documentation">📖</a></td>
   </tr>
 </table>
 
