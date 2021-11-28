@@ -53,6 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/dingcycle"><img src="https://avatars.githubusercontent.com/u/1681985?v=4?s=100" width="100px;" alt=""/><br /><sub><b>dingcycle</b></sub></a><br /><a href="#translation-dingcycle" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://www.krishoward.org/"><img src="https://avatars.githubusercontent.com/u/5946286?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kris</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=web-goddess" title="Documentation">📖</a></td>
   </tr>
 </table>
 
