@@ -223,6 +223,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "cabi",
+      "name": "Carsten Biebricher",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2596253?v=4",
+      "profile": "https://github.com/cabi",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
