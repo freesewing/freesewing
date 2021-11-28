@@ -67,6 +67,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Irapeke"><img src="https://avatars.githubusercontent.com/u/39604334?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Irapeke</b></sub></a><br /><a href="#translation-Irapeke" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/marckiesel"><img src="https://avatars.githubusercontent.com/u/39653780?v=4?s=100" width="100px;" alt=""/><br /><sub><b>marckiesel</b></sub></a><br /><a href="#translation-marckiesel" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/theUnmutual"><img src="https://avatars.githubusercontent.com/u/22374635?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Unmutual</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=theUnmutual" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/cathyzoller"><img src="https://avatars.githubusercontent.com/u/2120275?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cathy Zoller</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=cathyzoller" title="Documentation">📖</a></td>
   </tr>
 </table>
 
