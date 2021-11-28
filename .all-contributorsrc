@@ -9,9 +9,9 @@
   ],
   "imageSize": 100,
   "commit": true,
-  "skipCi": true,
   "commitConvention": "angular",
-  "contributorsPerLine": 5,
+  "skipCi": true,
+  "contributorsPerLine": 7,
   "contributors": [
     {
       "login": "joostdecock",
