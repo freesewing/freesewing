@@ -48,6 +48,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/manufakturedelweiss"><img src="https://avatars.githubusercontent.com/u/38063391?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Marcus</b></sub></a><br /><a href="#translation-manufakturedelweiss" title="Translation">🌍</a></td>
     <td align="center"><a href="http://pd75.github.io/"><img src="https://avatars.githubusercontent.com/u/10294795?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paul</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=PD75" title="Documentation">📖</a> <a href="#blog-PD75" title="Blogposts">📝</a> <a href="#translation-PD75" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/EvEkSwed"><img src="https://avatars.githubusercontent.com/u/39723451?v=4?s=100" width="100px;" alt=""/><br /><sub><b>EvEkSwed</b></sub></a><br /><a href="#translation-EvEkSwed" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/viocky"><img src="https://avatars.githubusercontent.com/u/39279173?v=4?s=100" width="100px;" alt=""/><br /><sub><b>viocky</b></sub></a><br /><a href="#translation-viocky" title="Translation">🌍</a></td>
   </tr>
 </table>
 
