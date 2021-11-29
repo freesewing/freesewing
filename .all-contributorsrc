@@ -700,6 +700,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Quiltmaster",
+      "name": "Anthony",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71795777?v=4",
+      "profile": "https://github.com/Quiltmaster",
+      "contributions": [
+        "question"
+      ]
     }
   ]
 }
