@@ -97,7 +97,7 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 
 ### Step 9: The zipper
 
--If need be, face the front edges of the hoodie.
+- If need be, face the front edges of the hoodie.
 - Unzip the zipper part way. 
 - Fold the top of the zipper tape down to the *good side* of the zipper tape. Trim if need be.
 - Pin the zipper along one of the front edges of the hood, front and waistband. Making sure the zipper pull is faced the *good sides* of the hoodie and the bottoms are lined up. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge.
