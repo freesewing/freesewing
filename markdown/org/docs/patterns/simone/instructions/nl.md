@@ -1,7 +1,11 @@
+### Step 1: Bust Darts
+
+- Close the Front bust darts.
+
+### Step 2: Follow Simon's Instructions
+
 <Note>
 
-Simone is ons [Simon patroon](/patronen/simon/) aangepast voor borsten.
-
-Raadpleeg [de Simon documentatie](/docs/patterns/simon/).
+Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](docs/patterns/simon/instructions) to finish your Simone :) 
 
 </Note>
