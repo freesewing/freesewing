@@ -1,4 +1,7 @@
----
-title: Wat je nodig hebt
----
+To make Huey, you will need the following:
 
+- Basic sewing supplies
+- About 2 metres of a suitable fabric ([see Fabric options](/docs/patterns/huey/fabric))
+- Ribbing fabric for the hem and cuffs.
+- 1 open ended zipper the length of front seam including hood and waistband.
+- (Optional) Cording or suitable alternate for hood strings.
