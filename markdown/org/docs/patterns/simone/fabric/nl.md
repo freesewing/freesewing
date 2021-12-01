@@ -1,6 +1,6 @@
 <Note>
 
-Simone is ons [Simon patroon](/patronen/simon/) aangepast voor borsten.
+Simone is our [Simon pattern](/designs/simon/) adapted for breasts.
 
 Raadpleeg [de Simon documentatie](/docs/patterns/simon/).
 
