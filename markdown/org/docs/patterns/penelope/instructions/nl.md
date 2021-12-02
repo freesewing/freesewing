@@ -1,6 +1,6 @@
 <Note>
 
-Due to the different styles and configurations of Penelope, we will first go over some tips of the different elements that make up a pencil skirts.
+Due to the different styles and configurations of Penelope, we will first go over some tips of the different elements that make up a pencil skirt.
 
 </Note>
 
