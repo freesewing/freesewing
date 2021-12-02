@@ -11,7 +11,7 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 
 - Cut **1 front** part on fold.
 - Cut **back** part(s).
-- (Optional) Cut **2 waistband** parts on the fold.
+- (Optional) Cut **1 waistband** parts on the fold.
 
 **Lining Fabric (Optional)**
 
