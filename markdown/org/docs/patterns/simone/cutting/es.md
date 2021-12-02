@@ -1,6 +1,6 @@
 <Note>
 
-Simone es nuestro [patrón Simon](/patterns/simon/) adaptado para mamas.
+Simone is our [Simon pattern](/designs/simon/) adapted for breasts.
 
 Por favor, consulte [la documentación de Simon](/docs/patterns/simon/).
 
