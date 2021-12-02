@@ -1,6 +1,26 @@
-Penelope consists of a front and a back piece. The front piece is always cut-on-fold. 
-For the back piece, this depends on whether you wanted a vent, or moved the zipper to the back seam. 
-Either of those options will have you cut out two individual pieces for the back. 
+
+<Note>
+
+The number of back parts depends on whether you want a vent, or have moved the zipper to the back seam.  
+Either one of these options will require you to cut out two individual back parts. Otherwise the back is cut on the fold.  
+Due to this, the cutting list does not specify how many back parts to cut as the pattern options determine this.
+
+</Note>
+
+**Main Fabric**
+
+- Cut **1 front** part on fold.
+- Cut **back** part(s).
+- (Optional) Cut **2 waistband** parts on the fold.
+
+**Lining Fabric (Optional)**
+
+- Cut **1 front** part on fold.
+- Cut **back** part(s).
+
+**Interfacing**
+
+- Cut **1 waistband** part on the fold.
 
 <Tip>
 
