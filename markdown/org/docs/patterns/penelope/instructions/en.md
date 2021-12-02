@@ -119,7 +119,7 @@ If you prefer to insert the zipper with the main and lining fabric as one, you w
 - Press a fold the waistband in half lengthwise.
 - With *good sides together* sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
 - Press the waistband up and away from the skirt.
-- Press the remaning waistband seam allowances to the inside of the waistband.
+- Press the remaining waistband seam allowances to the inside of the waistband.
 - Fold and press the waistband to the inside along fold line.
 - *Stitch in the ditch* to secure the waistband.
 - *Slipstitch* or *Whipstitch* the gap in the waistband that goes over the zipper seam
@@ -139,12 +139,12 @@ This step is only needed if you have not lined your skirt as the hem and vents w
 - If desired, face the hem and vents.
 - Construct the vents with your preferred method
 - Press under the hem allowances of the skirt.
-- If hem is large enough and/or the fabric press under a small amount along the top to create a fold.
+- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
 - Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. Th8s comes down to how you want the finished product to look.
 
 <Tip>
 
-If the seam allowances are big enough you can sew the vents and hems with narrow hems. This is especially useful if your fabric is prone to fraying.
+If the seam allowances are big enough you can sew the hems as narrow hems. This is especially useful if your fabric is prone to fraying.
 
 </Tip>
 
