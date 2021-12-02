@@ -2,8 +2,8 @@
 Om Penelop te maken heb je het volgende nodig:
 
   - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-  - Ongeveer 1 meter geschikte stof
-  - Een onzichtbare rits
-  - Een tussenvoering voor de tailleband (indien gebruikt) en misschien voor de vent en zoom
-  - Een soort sluiting voor de tailleband (indien gebruikt)
-  - Optioneel: voering stof
+  - About 1 meter of a suitable main fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
+  - An invisible or regular closed end zipper
+  - Some interfacing for the waistband (if using) and maybe for the vent and hem
+  - Some sort of closure for the waistband (if using)
+  - (Optional) About 1 meter of suitable lining fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
