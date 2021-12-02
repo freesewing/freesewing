@@ -18,6 +18,12 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 - Cut **1 front** part on fold.
 - Cut **back** part(s).
 
+<Note>
+
+[See Penelope Instructions](docs/patterns/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
+
+</Note>
+
 **Interfacing**
 
 - Cut **1 waistband** part on the fold.
