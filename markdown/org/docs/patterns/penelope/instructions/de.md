@@ -1,3 +1,9 @@
+<Note>
+
+Due to the different styles and configurations of Penelope, we will first go over some tips of the different elements that make up a pencil skirt.
+
+</Note>
+
 ## Anmerkungen und Hinweise
 
 ### Lining
@@ -14,7 +20,7 @@ Ein Taillenband ist optional auf Penelope. If you omit it, there will be quite s
 
 Ohne den Reißverschluss wird es unmöglich sein, aus dem Rock zu kommen. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
-Traditionell wird in einem Bleistiftrock ein unsichtbarer Reißverschluss verwendet. Lately there has been a trend to use zippers that are right in the open. Manchmal sogar aus Kontraststoff. Wählen Sie aus, was für Sie im gewünschten Stil funktioniert. Sei kreativ (oder nicht)! Wenn Ihr Stoff auf der schwereren Seite liegt, können Sie sich für eine andere Option entscheiden.
+Traditionally, an invisible zipper is used in a pencil skirt but a regular zipper will work just as well. You can even use a zipper that constrast your fabric if the fancy takes you. Choose what works for you and the style you're going for. Be creative (or not) it is entirely up to you! All though if your fabric is on the heavier side you might want to opt for a different closure entirely.
 
 ### Schlitz
 
@@ -26,21 +32,98 @@ Darts werden verwendet, um den Unterschied zwischen Taillen- und Sitzmessungen a
 
 ## Konstruktion
 
-We're not going into a full explanation here on how to create all the individual details that make up a pencil skirt. Wir gehen davon aus, dass Sie wissen, wie Sie einen Dart nähen, einen unsichtbaren Reißverschluss einfügen, einen Schlot erstellen usw. Wenn nicht, gibt es im Web zahlreiche ausgezeichnete Artikel, sowohl in schriftlicher Form als auch auf Video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
+<Warning>
 
-Zuerst nähen Sie alle Darts. Sie wollen sie nach hinten drücken. So for the back piece, that means you press boths sides towards eachother. Für das vordere Stück, genau das Gegenteil.
+We're not going to go into a full explanation on how to create all the individual details 
+that make up a pencil skirt. These instructions assume that you know how to sew a dart, insert an invisible 
+zipper, make a vent, etc. If not, there are numerous excellent articles available on the 
+web, both in writen form, and on video. If you do get stuck, you can always reach out to 
+[other FreeSewers](https://discord.freesewing.org/) in our discord.
 
-The next thing you want to do is sew the seam that has the zipper, and insert the zipper into it. Folgen Sie der Prozedur, die für den Typ des Reißverschlusses, den Sie verwenden, geeignet ist.
+</Warning>
 
-Nähen Sie beide Seitennähte auf.
+### Step 1: Darts
 
-Ihr nächster Schritt hängt davon ab, ob Sie ein Schlot und Futter haben. If you're including a lining, now is the time to make it. The lining is made the same way that the rest of the skirt is made, with two exceptions; the darts are just pleats, and they have more 'ease' included. Wie Sie diese "einfache" verteilen, liegt bei Ihnen. You can add it to the dart pleats, add another dart pleat, or make a box pleat in the middle.
+- Sew all the darts.
+- Press the darts towards the back.
+  - For the back piece(s), that means you press the darts towards eachother.
+  - For the front piece, that means you press the darts towards the side seams.
 
-Of course, if you include a lining, you have to include this in the way you've finished your zipper. Und verbinden Sie es mit dem Schlot, wenn Ihr Rock einen davon hat.
+### Step 2: The zipper
 
-Als nächstes wird die Taille angehängt, wenn Ihre Version eine hat. First fold it double along the long side and press. Füge deine Schnittstelle hinzu. Nähen Sie es auf der rechten Seite des Stoffes. Then turn it over and press the seam into the waistband. Now use the stitch-in-the-ditch technique to finish the waistband. Fügen Sie Ihre Auswahl an Schließungen hinzu.
+- With *good sides together*, sew the seam that has the zipper leaving the top open for the zipper.
+- Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
 
-Jetzt bleibt nur noch der Rock.
+<Note>
+  
+If using a different closure construct it during this step.
+
+</Note>
+
+### Step 3: Sew the side seams
+
+- With *good sides together*, sew up both the side seams.
+- With *good sides together*, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
+
+### Step 4: The lining (Optional)
+
+You can skip this step if not making a lining.
+
+- Follow Step 1 - 4 to construct the lining with following changes:
+  - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
+  - Do not include the zipper but leave the opening in the zipper seam.
+- Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
+
+<Note>
+
+How to distribute the extra 'ease' is up to you. You can either add it to the darts by increasing them. or you can add another dart or box pleat in the middle.
+
+</Note>
+
+<Warning>
+
+If you prefer to insert the zipper with the main and lining fabric as one, you will need to omit inserting the zipper until this step.
+
+</Warning>
+
+### Step 5: The waistband
+
+- Face lengthwise half of the waistband.
+- Press a fold the waistband in half lengthwise.
+- With *good sides together* sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
+- Press the waistband up and away from the skirt.
+- Press the remaining waistband seam allowances to the inside of the waistband.
+- Fold and press the waistband to the inside along fold line.
+- *Stitch in the ditch* to secure the waistband.
+- *Slipstitch* or *Whipstitch* the gap in the waistband that goes over the zipper seam
+- Construct your preferred choice of closure where the waistband overlaps.
+
+<Note>
+
+Alternatively you can *Edgestitch* the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.  
+The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
+
+</Note>
+
+### Step 6: The hem and vents
+
+This step is only needed if you have not lined your skirt as the hem and vents would have been taken care of in that step.
+
+- If desired, face the hem and vents.
+- Construct the vents with your preferred method
+- Press under the hem allowances of the skirt.
+- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
+- Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. Th8s comes down to how you want the finished product to look.
+
+<Tip>
+
+If the seam allowances are big enough you can sew the hems as narrow hems. This is especially useful if your fabric is prone to fraying.
+
+</Tip>
+
+### Step 7: Enjoy!
+
+- Now all that's left to do is to enjoy you new skirt!
 
 
 
