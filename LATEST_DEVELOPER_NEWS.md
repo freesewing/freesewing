@@ -12,11 +12,9 @@ Take a look at our new development blog, which you can read at [2022.freesewing.
 If you'd like to get involved in this effort, head over to [discord.freesewing.org](https://discord.freesewing.org/) and join the **v3** channel.
 
 
-##### Next contributor call on 27 November
+##### Next contributor call on 11th December
 
-The next contributor call is on **27 November 2021**, Lucian and Karen will host it.
+The next contributor call is on the **11th of December 2021**, @tangerineshark and @lucibytes will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
-Check the meetings voice/video channel.
-
-
+Check the meetings voice/video channel & [here](https://github.com/freesewing/freesewing/issues/1562) for the agenda.
