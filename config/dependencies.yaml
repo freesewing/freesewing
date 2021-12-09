@@ -112,7 +112,7 @@ components:
     'prismjs': '^1.23.0'
     'react-markdown': '^6.0.2'
     'file-saver': '^2.0.5'
-    'yaml': '^1.10.2'
+    'yaml': &yaml '^1.10.2'
 core:
   _:
     'bezier-js': '^4.1.1'
@@ -164,6 +164,8 @@ hugo:
   peer:
     '@freesewing/brian': *freesewing
 i18n:
+  dev:
+    'yaml': *yaml
   peer:
     '@freesewing/pattern-info': *freesewing
 jaeger:

@@ -36,7 +36,9 @@
     "@freesewing/pattern-info": "^2.19.5"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "yaml": "^1.10.2"
+  },
   "files": [
     "dist/*",
     "README.md",
