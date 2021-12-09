@@ -213,7 +213,6 @@ export default (part) => {
 
   // Complete pattern?
   if (complete) {
-    delete snippets.armholePitchNotch
     macro('cutonfold', {
       from: points.cbYoke,
       to: points.cbHem,
