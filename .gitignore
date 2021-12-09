@@ -68,6 +68,9 @@ build
 .yarn
 .yarnrc
 
+# NextJS
+.next
+
 # Mock registry (verdaccio)
 .registry
 
