@@ -1,0 +1,22 @@
+{
+  "name": "freesewing.dev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "develop": "next dev -p 3002",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start -p 3002",
+    "serve": "pm2 start npm --name 'freesewing.dev' -- run start"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^2.0.0-rc.2",
+    "@mdx-js/react": "^2.0.0-rc.2",
+    "@mdx-js/runtime": "next",
+    "next": "latest",
+    "remark-gfm": "^3.0.1",
+    "remark-jargon": "^2.19.5"
+  },
+  "devDependencies": {}
+}
