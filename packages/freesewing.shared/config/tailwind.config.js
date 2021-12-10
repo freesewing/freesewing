@@ -4,7 +4,11 @@ module.exports = {
     './pages/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: require('daisyui/colors'),
+    },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }

@@ -14,6 +14,7 @@ export default function Home() {
         <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <button className="btn btn-primary">daisyUI Button</button>
 
         <p>
           Get started by editing{' '}
