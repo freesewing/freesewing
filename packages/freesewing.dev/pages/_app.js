@@ -1,7 +1,5 @@
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const FreeSewingDev = ({ Component, pageProps }) => <Component {...pageProps} />
 
-export default MyApp
+export default FreeSewingDev
