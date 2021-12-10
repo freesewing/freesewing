@@ -9,7 +9,7 @@ customChangelog:
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
-customPacakgeJson:
+customPackageJson:
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
