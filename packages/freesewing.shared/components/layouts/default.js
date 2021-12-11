@@ -40,12 +40,11 @@ const DefaultLayout = props => {
           ${props.app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
           sm:relative sm:transform-none
           h-screen
-          p-4
           w-screen
           sm:max-w-[38.2%]
+          sm:flex sm:flex-row-reverse
         `}>
           <PrimaryMenu />
-          <button className='btn btn-primary' onClick={() => props.app.togglePrimaryMenu()}>Toggle</button>
         </aside>
         <section>
           <H1>{props.title}</H1>

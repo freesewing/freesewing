@@ -5,13 +5,19 @@
   "scripts": {
     "dev": "next dev -p 3002",
     "develop": "next dev -p 3002",
+    "prebuild": "SITE=dev LANG=en node ../freesewing.shared/prebuild/index.mjs",
     "build": "next build",
     "export": "next build && next export",
     "start": "next start -p 3002",
     "serve": "pm2 start npm --name 'freesewing.dev' -- run start"
   },
   "dependencies": {
-    "daisyui": "^1.16.2"
+    "daisyui": "^1.16.2",
+    "remark-extract-frontmatter": "^3.2.0",
+    "remark-frontmatter": "^4.0.1",
+    "to-vfile": "^7.2.2",
+    "unist-util-visit": "^4.1.0",
+    "vfile-reporter": "^7.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

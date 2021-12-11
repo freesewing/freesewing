@@ -64,6 +64,9 @@ node_modules
 dist
 build
 
+#prebuild
+prebuild/*.json
+
 # yarn
 .yarn
 .yarnrc

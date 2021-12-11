@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3002",
     "develop": "next dev -p 3002",
+    "prebuild": "SITE=dev LANG=en node ../freesewing.shared/prebuild/index.mjs",
     "build": "next build",
     "export": "next build && next export",
     "start": "next start -p 3002",
