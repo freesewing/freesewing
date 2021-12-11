@@ -83,7 +83,7 @@ web, both in writen form, and on video. If you do get stuck, you can always reac
 
 <Note>
   
-If using a different closure construct it during this step.
+If using a different closure, construct it during this step.
 
 </Note>
 
@@ -96,7 +96,7 @@ If using a different closure construct it during this step.
 
 You can skip this step if not making a lining.
 
-- Follow Step 1 - 4 to construct the lining with following changes:
+- Follow Step 1 - 4 to construct the lining with the following changes:
   - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
   - Do not include the zipper but leave the opening in the zipper seam.
 - Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
@@ -140,7 +140,7 @@ This step is only needed if you have not lined your skirt as the hem and vents w
 - Construct the vents with your preferred method
 - Press under the hem allowances of the skirt.
 - If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
-- Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. Th8s comes down to how you want the finished product to look.
+- Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. This comes down to how you want the finished product to look.
 
 <Tip>
 
