@@ -13,8 +13,6 @@ The next contributor call is on **8 January 2022**, Lucian and Karen will host i
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
 
-Agenda/Notes are avaialable [in this Github issue](https://github.com/freesewing/freesewing/issues/1562)
-
 ##### FreeSewing v3 is coming
 
 Over the summer, Joost started working on *project 2022*, an effort to
