@@ -8,3 +8,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+  .primary-menu {
+    transform: translateX(-100%);
+  }
+}

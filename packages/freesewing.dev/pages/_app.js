@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import 'shared/styles/globals.css'
 
 const FreeSewingDev = ({ Component, pageProps }) => <Component {...pageProps} />
 

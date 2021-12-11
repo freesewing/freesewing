@@ -1,8 +1,9 @@
+import path from 'path'
 import remarkGfm from 'remark-gfm'
 import remarkJargon from 'remark-jargon'
 import { jargon } from '@freesewing/i18n'
 
-const config = {
+const config = site => ({
   experimental: {
     externalDir: true,
     esmExternals: true,
@@ -13,11 +14,9 @@ const config = {
 		// Fixes npm packages that depend on node modules
     if (!options.isServer) {
       config.resolve.fallback.fs = false
+      config.resolve.fallback.path = false
       config.resolve.fallback.child_process = false
     }
-
-    // Prevent symlink loops
-    config.resolve.symlinks = false
 
     // MDX support
     config.module.rules.push({
@@ -36,6 +35,7 @@ const config = {
         }
       ]
     })
+
     // Fix for nextjs bug #17806
     config.module.rules.push({
       test: /index.mjs$/,
@@ -45,8 +45,12 @@ const config = {
       }
     })
 
+    // Aliases
+    config.resolve.alias.shared = path.resolve('../freesewing.shared/')
+    config.resolve.alias.site = path.resolve(`../freesewing.${site}/`)
+
     return config
   }
-}
+})
 
 export default config

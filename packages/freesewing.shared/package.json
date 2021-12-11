@@ -1,5 +1,5 @@
 {
-  "name": "freesewing.dev",
+  "name": "freesewing.shared",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,14 +11,7 @@
     "serve": "pm2 start npm --name 'freesewing.dev' -- run start"
   },
   "dependencies": {
-    "@mdx-js/loader": "^2.0.0-rc.2",
-    "@mdx-js/react": "^2.0.0-rc.2",
-    "@mdx-js/runtime": "next",
-    "daisyui": "^1.16.2",
-    "next": "latest",
-    "react-swipeable": "^6.2.0",
-    "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.19.5"
+    "daisyui": "^1.16.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

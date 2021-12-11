@@ -1,3 +1,3 @@
-import config from '../freesewing.shared/config/next.mjs'
+import configBuilder from '../freesewing.shared/config/next.mjs'
 
-export default config
+export default configBuilder('dev')

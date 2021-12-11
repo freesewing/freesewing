@@ -114,6 +114,8 @@
   },
   "version": "0.0.0",
   "dependencies": {
-    "jsonfile": "^6.1.0"
+    "jsonfile": "^6.1.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^3.0.1"
   }
 }
