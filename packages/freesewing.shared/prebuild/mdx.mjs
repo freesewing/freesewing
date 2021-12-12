@@ -1,5 +1,6 @@
 import path from 'path'
 import fs from 'fs'
+import { languages, strapiHost } from '../config/freesewing.mjs'
 import rdir from 'recursive-readdir'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
@@ -21,7 +22,7 @@ import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
  *  - folder: the root folder to look in
  *  - lang: the language files to looks for
  */
-const getMdxFileList = async (folder, lang='en') => {
+const getMdxFileList = async (folder, lang) => {
   let allFiles
   try {
     allFiles = await rdir(folder)
@@ -69,42 +70,46 @@ const mdxMetaInfo = async file => await unified()
 /*
  * Main method that does what needs doing
  */
-export const prebuildMdx = async(site, lang) => {
+export const prebuildMdx = async(site) => {
 
   // Say hi
   console.log()
-  console.log('Prebuilding MDX for:')
-  console.log(`  - Website: freesewing.${site}`)
-  console.log(`  - Language: ${lang}`)
+  console.log(`Prebuilding MDX for freesewing.${site}`)
   console.log()
 
   // Setup MDX root path
   const mdxRoot = path.resolve('..', '..', 'markdown', site)
 
-  // Get list of filenames
-  const list = await getMdxFileList(mdxRoot, lang)
+  // Loop over languages
+  for (const lang of (site === 'dev' ? ['en'] : languages)) {
 
-  // Parse them for title and intro
-  const pages = {}
-  for (const file of list) {
-    const slug = fileToSlug(file, site, lang)
-    if (slug) {
-      const meta = await mdxMetaInfo(file)
-      if (meta) {
-        pages[slug] = {
-          ...meta.data,
-          slug,
-          order: meta?.data?.order
-            ? `${meta.data.order}${meta.data.title}`
-            : meta.data.title
+    console.log(`  - Language: ${lang}`)
+
+    // Get list of filenames
+    const list = await getMdxFileList(mdxRoot, lang)
+
+    // Parse them for title and intro
+    const pages = {}
+    for (const file of list) {
+      const slug = fileToSlug(file, site, lang)
+      if (slug) {
+        const meta = await mdxMetaInfo(file)
+        if (meta) {
+          pages[slug] = {
+            ...meta.data,
+            slug,
+            order: meta?.data?.order
+              ? `${meta.data.order}${meta.data.title}`
+              : meta.data.title
+          }
         }
       }
     }
-  }
 
-  fs.writeFileSync(
-    path.resolve('..', `freesewing.${site}`, 'prebuild', 'mdx-pages.json'),
-    JSON.stringify(pages, null ,2)
-  )
+    fs.writeFileSync(
+      path.resolve('..', `freesewing.${site}`, 'prebuild', `mdx.${lang}.js`),
+      `export default ${JSON.stringify(pages, null ,2)}`
+    )
+  }
 }
 
