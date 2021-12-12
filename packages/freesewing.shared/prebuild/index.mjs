@@ -5,7 +5,7 @@ const SITE = process.env.SITE
 const LANG = process.env.LANG
 
 const run = async () => {
-  //await prebuildMdx(SITE, LANG)
+  await prebuildMdx(SITE, LANG)
   await prebuildStrapi(SITE, LANG)
 }
 

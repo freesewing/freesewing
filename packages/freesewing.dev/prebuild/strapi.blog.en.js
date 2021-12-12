@@ -13,99 +13,7 @@ export const posts = {
     "createdAt": "2021-07-11T10:57:56.433Z",
     "updatedAt": "2021-07-23T15:05:17.024Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60eace684f0f4957dbc9d64a",
       "name": "pexels-kaboompics-com-6347.jpg",
@@ -175,7 +83,8 @@ export const posts = {
     },
     "site": "60ead51670e8d35a6d089fa0",
     "locale": "en",
-    "id": "60eaceb44f0f4957dbc9d64b"
+    "id": "60eaceb44f0f4957dbc9d64b",
+    "intro": "The internet is plastered with abandoned or dormant blogs, so starting another one is perhaps madness, but hear me out:"
   },
   "blog/project-2022": {
     "dev": true,
@@ -191,99 +100,7 @@ export const posts = {
     "createdAt": "2021-07-11T15:58:20.218Z",
     "updatedAt": "2021-07-23T15:05:11.967Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60eb14eedb32b45d5c4d6d95",
       "name": "pexels-anamul-rezwan-1216544.jpg",
@@ -353,7 +170,8 @@ export const posts = {
     },
     "site": "60ead51670e8d35a6d089fa0",
     "locale": "en",
-    "id": "60eb151cdb32b45d5c4d6d96"
+    "id": "60eb151cdb32b45d5c4d6d96",
+    "intro": "During my summer break I wanted to look into migrating the FreeSewing websites (freesewing.org and freesewing.dev) from GatbsyJS to NextJS ."
   },
   "blog/tailwind-css-project-2022": {
     "dev": true,
@@ -369,99 +187,7 @@ export const posts = {
     "createdAt": "2021-07-11T16:11:34.563Z",
     "updatedAt": "2021-07-23T15:04:59.003Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60eb1815db32b45d5c4d6d98",
       "name": "pexels-suleyman-seykan-6068893.jpg",
@@ -531,7 +257,8 @@ export const posts = {
     },
     "site": "60ead51670e8d35a6d089fa0",
     "locale": "en",
-    "id": "60eb1836db32b45d5c4d6d99"
+    "id": "60eb1836db32b45d5c4d6d99",
+    "intro": "Building a website that is supposed to do something essentially boils down to two things:"
   },
   "blog/daisyui-components-themes": {
     "dev": true,
@@ -547,99 +274,7 @@ export const posts = {
     "createdAt": "2021-07-11T16:33:05.698Z",
     "updatedAt": "2021-07-23T15:04:53.670Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60eb1d29db32b45d5c4d6d9b",
       "name": "pexels-bess-hamiti-36764.jpg",
@@ -709,7 +344,8 @@ export const posts = {
     },
     "site": "60ead51670e8d35a6d089fa0",
     "locale": "en",
-    "id": "60eb1d41db32b45d5c4d6d9c"
+    "id": "60eb1d41db32b45d5c4d6d9c",
+    "intro": "Since we're changing pretty much everything in project 2022 anyway, we might as well try to reduce our bundle size by removing our dependency on Material UI , the React component framework that implements Google's material design."
   },
   "blog/shared-frontend-code-monorepo": {
     "dev": true,
@@ -725,99 +361,7 @@ export const posts = {
     "createdAt": "2021-07-11T16:59:40.699Z",
     "updatedAt": "2021-07-23T15:04:46.863Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60eb236bdb32b45d5c4d6d9e",
       "name": "pexels-ihsan-aditya-1056251.jpg",
@@ -887,7 +431,8 @@ export const posts = {
     },
     "site": "60ead51670e8d35a6d089fa0",
     "locale": "en",
-    "id": "60eb237cdb32b45d5c4d6d9f"
+    "id": "60eb237cdb32b45d5c4d6d9f",
+    "intro": "Up until now, our websites each live in their own repository. This makes sharing code and content somewhat more involved, and situation that we currently handle as follows:"
   },
   "blog/improved-search-keyboard": {
     "dev": true,
@@ -903,99 +448,7 @@ export const posts = {
     "createdAt": "2021-07-11T17:16:09.119Z",
     "updatedAt": "2021-07-23T15:04:40.641Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60eb2742db32b45d5c4d6da1",
       "name": "pexels-skitterphoto-63901.jpg",
@@ -1065,7 +518,8 @@ export const posts = {
     },
     "site": "60ead51670e8d35a6d089fa0",
     "locale": "en",
-    "id": "60eb2759db32b45d5c4d6da2"
+    "id": "60eb2759db32b45d5c4d6da2",
+    "intro": "Since we've got a ton of documentation, good search is a crucial aspect of our websites."
   },
   "blog/strapi-headless-cms": {
     "dev": true,
@@ -1079,99 +533,7 @@ export const posts = {
     "createdAt": "2021-07-11T17:44:49.116Z",
     "updatedAt": "2021-07-23T15:04:36.017Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60eb2d74db32b45d5c4d6da4",
       "name": "pexels-leah-kelley-5852942.jpg",
@@ -1243,7 +605,8 @@ export const posts = {
     "date": "2021-07-10",
     "slug": "strapi-headless-cms",
     "locale": "en",
-    "id": "60eb2e11db32b45d5c4d6da5"
+    "id": "60eb2e11db32b45d5c4d6da5",
+    "intro": "As things are now, all of FreeSewing's content is contained in our markdown repository ."
   },
   "blog/layout-blocks-overview": {
     "dev": true,
@@ -1259,99 +622,7 @@ export const posts = {
     "createdAt": "2021-07-15T16:25:17.007Z",
     "updatedAt": "2021-07-23T15:04:30.866Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60f05ac3db32b45d5c4d6da7",
       "name": "pexels-kelly-lacy-2402233.jpg",
@@ -1421,7 +692,8 @@ export const posts = {
     },
     "site": "60ead51670e8d35a6d089fa0",
     "locale": "en",
-    "id": "60f0616ddb32b45d5c4d6dac"
+    "id": "60f0616ddb32b45d5c4d6dac",
+    "intro": "I wanted to do a quick write-up of the main layout blocks of our websites. So let's have a look:"
   },
   "blog/freesewing-v3-seems-inevitable": {
     "dev": true,
@@ -1437,99 +709,7 @@ export const posts = {
     "createdAt": "2021-07-17T14:02:23.828Z",
     "updatedAt": "2021-07-23T15:04:23.665Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "60f2de802f81c03239366843",
       "name": "pexels-miguel-á-padriñán-1061140.jpg",
@@ -1610,7 +790,8 @@ export const posts = {
     },
     "site": "60ead51670e8d35a6d089fa0",
     "locale": "en",
-    "id": "60f2e2ef2f81c03239366844"
+    "id": "60f2e2ef2f81c03239366844",
+    "intro": "I just made a bunch of breaking changes in @freesewing/i18n and it made me realize that if/when we get around to merging my work back into our monorepo, there's going to be too many changes not to bump the major version."
   },
   "blog/migration-to-strapi": {
     "dev": true,
@@ -1627,99 +808,7 @@ export const posts = {
     "createdAt": "2021-08-26T12:14:45.394Z",
     "updatedAt": "2021-08-26T12:41:37.039Z",
     "__v": 0,
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
+    "author": "joostdecock",
     "image": {
       "_id": "61276adbfca7f36c6a727a6a",
       "name": "pexels-pixabay-315939.jpg",
@@ -1798,7 +887,8 @@ export const posts = {
       "__v": 0,
       "id": "61276adbfca7f36c6a727a6a"
     },
-    "id": "612785b5fca7f36c6a727a6b"
+    "id": "612785b5fca7f36c6a727a6b",
+    "intro": "Effective immediately, all blog and showcase posts on freesewing.org are backed by our Strapi instance , rather than our markdown repository . That markdown repository has been archived, and the markdown content that are not blog or showcase posts  (predominantly documentation) has been moved into our monorepo ."
   },
   "blog/pattern-docs-option-sampling": {
     "dev": true,
@@ -1893,99 +983,8 @@ export const posts = {
       "__v": 0,
       "id": "6128cce1fca7f36c6a727a72"
     },
-    "author": {
-      "localizations": [],
-      "_id": "60eae49cdb32b45d5c4d6d93",
-      "about": "Joost is FreeSewing's maintainer. As an introvert, he enjoys making clothes and shoes since you don't have to leave the house to do so 🙈\n\nYou can follow him as [j__st on Twitter](https://twitter.com/j__st) or [joostdecock on Github](https://github.com/joostdecock).",
-      "name": "joost",
-      "displayname": "Joost De Cock",
-      "createdAt": "2021-07-11T12:31:24.779Z",
-      "updatedAt": "2021-09-19T14:23:43.748Z",
-      "__v": 0,
-      "picture": {
-        "_id": "6134ca45cd9dc073cc08db6a",
-        "name": "tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-        "alternativeText": "Joost De Cock",
-        "caption": "Joost De Cock",
-        "hash": "tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-        "ext": ".jpg",
-        "mime": "image/jpeg",
-        "size": 76.85,
-        "width": 1080,
-        "height": 810,
-        "url": "/uploads/tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg",
-        "formats": {
-          "thumbnail": {
-            "name": "thumbnail_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 208,
-            "height": 156,
-            "size": 6.22,
-            "path": null,
-            "url": "/uploads/thumbnail_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "large": {
-            "name": "large_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 1000,
-            "height": 750,
-            "size": 85.96,
-            "path": null,
-            "url": "/uploads/large_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "medium": {
-            "name": "medium_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 600,
-            "height": 450,
-            "size": 36,
-            "path": null,
-            "url": "/uploads/medium_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "small": {
-            "name": "small_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 400,
-            "height": 300,
-            "size": 17.49,
-            "path": null,
-            "url": "/uploads/small_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          },
-          "xsmall": {
-            "name": "xsmall_tumblr_ok2vhiYCDh1qbhhcgo1_1280.jpg",
-            "hash": "xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "width": 200,
-            "height": 150,
-            "size": 5.99,
-            "path": null,
-            "url": "/uploads/xsmall_tumblr_ok2vhi_YC_Dh1qbhhcgo1_1280_41d8d5799e.jpg"
-          }
-        },
-        "provider": "local",
-        "related": [
-          "60eae49cdb32b45d5c4d6d93",
-          "60fade591972003530e03b39",
-          "60fadf5e19815b356b32781e"
-        ],
-        "createdAt": "2021-09-05T13:46:45.753Z",
-        "updatedAt": "2021-09-19T14:24:00.480Z",
-        "__v": 0,
-        "id": "6134ca45cd9dc073cc08db6a"
-      },
-      "locale": "en",
-      "slug": "joostdecock",
-      "id": "60eae49cdb32b45d5c4d6d93"
-    },
-    "id": "6128ccacfca7f36c6a727a70"
+    "author": "joostdecock",
+    "id": "6128ccacfca7f36c6a727a70",
+    "intro": "Yesterday, I merged our markdown content into our monorepo, and archived our markdown repository. Our documentation now lives side-by-side with our code, and that opens up some options that previously would have been cumbersome to implement."
   }
 }
