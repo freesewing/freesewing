@@ -15,7 +15,6 @@ export default (props) => {
         >Toggle</button>
       </p>
       <ThemePicker app={app} />
-      <pre>{JSON.stringify(nav, null ,2)}</pre>
     </Page>
   )
 }

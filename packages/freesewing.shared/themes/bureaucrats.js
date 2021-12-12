@@ -1,5 +1,5 @@
 const colors = require('tailwindcss/colors')
-const gray = colors.trueGray
+const gray = colors.neutral
 
 module.exports = {
   icon: "👨‍💼",
@@ -34,9 +34,9 @@ module.exports = {
     '--rounded-box': '2px',
     '--rounded-btn': '2px',
 
-    '--pattern-fabric': colors.trueGray['700'],
+    '--pattern-fabric': colors.neutral['700'],
     '--pattern-lining': colors.emerald['500'],
-    '--pattern-interfacing': colors.trueGray['400'],
+    '--pattern-interfacing': colors.neutral['400'],
     '--pattern-canvas': colors.amber['600'],
     '--pattern-various': colors.red['500'],
     '--pattern-mark': colors.blue['500'],

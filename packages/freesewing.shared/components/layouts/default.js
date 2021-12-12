@@ -39,8 +39,9 @@ const DefaultLayout = props => {
           fixed top-0 right-0
           ${props.app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
           sm:relative sm:transform-none
-          h-screen
-          w-screen
+          h-screen w-screen
+          bg-base-200
+          sm:bg-base-100
           sm:max-w-[38.2%]
           sm:flex sm:flex-row-reverse
         `}>

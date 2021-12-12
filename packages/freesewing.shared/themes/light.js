@@ -40,20 +40,20 @@ module.exports = {
     */
 
     // base-100: The default background color
-    'base-100': colors.trueGray['100'],
+    'base-100': colors.neutral['100'],
     // base-200: A slightly different background color, used for hovers and so on
-    'base-200': colors.trueGray['200'],
+    'base-200': colors.neutral['200'],
     // base-300: A shade midway between dark and light
-    'base-300': colors.trueGray['400'],
+    'base-300': colors.neutral['400'],
     // base-content: The default text color
-    'base-content': colors.trueGray['700'],
+    'base-content': colors.neutral['700'],
 
     // primary: The main brand color and color of the primary button
-    'primary': colors.trueGray['900'],
+    'primary': colors.neutral['900'],
     // primary-focus: The :hover color for the primary button
     'primary-focus': colors.violet['600'],
     // primary-content: The text color for the primary button
-    'primary-content': colors.trueGray['200'],
+    'primary-content': colors.neutral['200'],
 
     // secondary: The link color
     'secondary': colors.violet['500'],
@@ -69,15 +69,15 @@ module.exports = {
     // accent-focus: The :hover color for the accent button
     'accent-focus': colors.emerald['400'],
     // accent-content: The text color for the accent button
-    'accent-content': colors.trueGray['900'],
+    'accent-content': colors.neutral['900'],
 
     // neutral: Used as the background for the footer and code blocks.
     // Should always be dark(ish) because of prism syntax highlighting
-    'neutral': colors.trueGray['800'],
+    'neutral': colors.neutral['800'],
     // neutral-focus: Typically a shade lighter than neutral
-    'neutral-focus': colors.trueGray['700'],
+    'neutral-focus': colors.neutral['700'],
     // neutral-content: The text color on neutral backgrounds
-    'neutral-content': colors.trueGray['200'],
+    'neutral-content': colors.neutral['200'],
 
     // info: Used rarely, can be another color best somewhat neutral looking
     // and should work with the default text color
@@ -127,11 +127,11 @@ module.exports = {
     */
 
     // Color for the main fabric
-    '--pattern-fabric': colors.trueGray['700'],
+    '--pattern-fabric': colors.neutral['700'],
     // Color for lining fabric
     '--pattern-lining': colors.emerald['500'],
     // Color for interfacing
-    '--pattern-interfacing': colors.trueGray['400'],
+    '--pattern-interfacing': colors.neutral['400'],
     // Color for canvas
     '--pattern-canvas': colors.amber['600'],
     // Color for various fabric types

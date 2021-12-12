@@ -1,11 +1,19 @@
 import Icon from 'shared/components/icon/index.js'
 import nav from 'site/prebuild/navigation.js'
+import Link from 'next/link'
 
-const TopLevel = ({ icon, title }) => (
-  <details className='p-3'>
-    <summary className='flex flex-row uppercase font-bold text-lg gap-6'>
-      {icon}
-      {title}
+const keepClosed = ['blog', 'showcase', ]
+
+const TopLevel = ({ icon, title, nav, current }) => (
+  <details className='p-2' open={((keepClosed.indexOf(current._slug) === -1) ? 1 : 0)}>
+    <summary className={`
+      flex flex-row uppercase gap-4 font-bold text-lg
+      hover:cursor-row-resize
+      hover:bg-base-200
+      p-2
+    `}>
+      <Link href={`/${current._slug}/`} className='hover:cursor-pointer'>{icon}</Link>
+      <Link href={`/${current._slug}/`} className='hover:cursor-pointer'>{title}</Link>
     </summary>
     <div className='pl-4'>
       <ul>
@@ -18,19 +26,35 @@ const TopLevel = ({ icon, title }) => (
   </details>
 )
 
+// TODO: Get rid of this when markdown has been restructured
+const remove = ['contributors', 'developers', 'editors', 'translators']
+const Navigation = ({ nav, app }) => {
+  const output = []
+  for (const key of Object.keys(nav[app.language]).sort()) {
+    if (
+      key.slice(0,1) !== '_' &&
+      remove.indexOf(key) === -1
+    ) output.push(<TopLevel
+        icon={<Icon icon={key}/>}
+        title={key}
+        key={key}
+        nav={nav}
+        current={nav[app.language][key]}
+      />
+    )
+  }
+
+  return output
+}
+
 const PrimaryMenu = props => {
 
   return (
     <nav className={`
       sm:max-w-sm
-      bg-base-200
       grow
     `}>
-      <TopLevel icon={<Icon icon='tutorial' size={28}/>} title='tutorials' />
-      <TopLevel icon={<Icon icon='guide' size={28}/>} title='guides' />
-      <TopLevel icon={<Icon icon='help' size={28}/>} title='howtos' />
-      <TopLevel icon={<Icon icon='docs' size={28}/>} title='reference' />
-      <pre>{Object.keys(nav[props.app.language])}</pre>
+      <Navigation nav={nav} app={props.app}/>
     </nav>
   )
 }
