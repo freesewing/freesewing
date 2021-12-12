@@ -1,4 +1,5 @@
 import Icon from 'shared/components/icon/index.js'
+import nav from 'site/prebuild/navigation.js'
 
 const TopLevel = ({ icon, title }) => (
   <details className='p-3'>
@@ -29,6 +30,7 @@ const PrimaryMenu = props => {
       <TopLevel icon={<Icon icon='guide' size={28}/>} title='guides' />
       <TopLevel icon={<Icon icon='help' size={28}/>} title='howtos' />
       <TopLevel icon={<Icon icon='docs' size={28}/>} title='reference' />
+      <pre>{Object.keys(nav[props.app.language])}</pre>
     </nav>
   )
 }

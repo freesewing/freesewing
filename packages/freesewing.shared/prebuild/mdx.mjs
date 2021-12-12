@@ -75,12 +75,12 @@ export const prebuildMdx = async(site) => {
   // Say hi
   console.log()
   console.log(`Prebuilding MDX for freesewing.${site}`)
-  console.log()
 
   // Setup MDX root path
   const mdxRoot = path.resolve('..', '..', 'markdown', site)
 
   // Loop over languages
+  const pages = {}
   for (const lang of (site === 'dev' ? ['en'] : languages)) {
 
     console.log(`  - Language: ${lang}`)
@@ -89,13 +89,13 @@ export const prebuildMdx = async(site) => {
     const list = await getMdxFileList(mdxRoot, lang)
 
     // Parse them for title and intro
-    const pages = {}
+    pages[lang] = {}
     for (const file of list) {
       const slug = fileToSlug(file, site, lang)
       if (slug) {
         const meta = await mdxMetaInfo(file)
         if (meta) {
-          pages[slug] = {
+          pages[lang][slug] = {
             ...meta.data,
             slug,
             order: meta?.data?.order
@@ -108,8 +108,10 @@ export const prebuildMdx = async(site) => {
 
     fs.writeFileSync(
       path.resolve('..', `freesewing.${site}`, 'prebuild', `mdx.${lang}.js`),
-      `export default ${JSON.stringify(pages, null ,2)}`
+      `export default ${JSON.stringify(pages[lang], null ,2)}`
     )
   }
+
+  return pages
 }
 

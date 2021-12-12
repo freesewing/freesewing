@@ -2,7 +2,7 @@ import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import ThemePicker from 'shared/components/theme-picker.js'
 
-import { blog, mdx } from 'site/prebuild/index.js'
+import nav from 'site/prebuild/navigation.js'
 
 export default (props) => {
   const app = useApp()
@@ -15,8 +15,7 @@ export default (props) => {
         >Toggle</button>
       </p>
       <ThemePicker app={app} />
-      <pre>{JSON.stringify(blog, null ,2)}</pre>
-      <pre>{JSON.stringify(mdx, null ,2)}</pre>
+      <pre>{JSON.stringify(nav, null ,2)}</pre>
     </Page>
   )
 }

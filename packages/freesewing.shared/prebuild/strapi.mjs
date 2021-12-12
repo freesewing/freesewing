@@ -58,14 +58,11 @@ const getPosts = async (type, site, lang) => {
 /*
  * Main method that does what needs doing
  */
-export const prebuildStrapi = async(site, lang) => {
+export const prebuildStrapi = async(site) => {
 
   // Say hi
   console.log()
-  console.log('Prebuilding Strapi content for:')
-  console.log(`  - Website: freesewing.${site}`)
-  console.log(`  - Language: ${lang}`)
-  console.log()
+  console.log(`Prebuilding Strapi content for freesewing.${site}`)
 
   // What types of content to load
   const types = ['blog']
@@ -77,15 +74,17 @@ export const prebuildStrapi = async(site, lang) => {
     authors[type] = {}
     // Loop over languages
     for (const lang of (site === 'dev' ? ['en'] : languages)) {
-      posts[type] = await getPosts(type, process.env.SITE, lang)
+      posts[lang] = {}
+      console.log(`  - Language: ${lang}`)
+      posts[lang][type] = await getPosts(type, site, lang)
       // Extract list of authors
-      for (const [slug, post] of Object.entries(posts[type])) {
+      for (const [slug, post] of Object.entries(posts[lang][type])) {
         authors[type][post.author.slug] = post.author
-        posts[type][slug].author = post.author.slug
+        posts[lang][type][slug].author = post.author.slug
       }
       fs.writeFileSync(
         path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.${type}.${lang}.js`),
-        `export const posts = ${JSON.stringify(posts[type], null, 2)}`
+        `export const posts = ${JSON.stringify(posts[lang][type], null, 2)}`
       )
       fs.writeFileSync(
         path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.${type}.authors.js`),
@@ -93,5 +92,7 @@ export const prebuildStrapi = async(site, lang) => {
       )
     }
   }
+
+  return [posts, authors]
 }
 

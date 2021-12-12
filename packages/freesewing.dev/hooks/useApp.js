@@ -15,6 +15,7 @@ function useApp(full = true) {
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useLocalStorage('theme', prefersDarkMode ? 'dark' : 'light')
+  const [language, setLanguage] = useLocalStorage('language', 'en')
 
 
   // State methods
@@ -27,10 +28,12 @@ function useApp(full = true) {
     // State
     primaryMenu,
     theme,
+    language,
 
     // State setters
     setPrimaryMenu,
     setTheme,
+    setLanguage,
 
     // State handlers
     togglePrimaryMenu,

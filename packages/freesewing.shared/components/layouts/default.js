@@ -44,7 +44,7 @@ const DefaultLayout = props => {
           sm:max-w-[38.2%]
           sm:flex sm:flex-row-reverse
         `}>
-          <PrimaryMenu />
+          <PrimaryMenu app={props.app}/>
         </aside>
         <section>
           <H1>{props.title}</H1>
