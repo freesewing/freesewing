@@ -19,10 +19,6 @@ You will need to print out the pocket and pocket facings in the traditional way.
    - Cut **4 frontFacing** parts
    - Cut **4 backFacing** parts
 
- - **Interfacing**
-   - Cut **4 frontFacing** parts
-   - Cut **4 backFacing** parts
-
 <Note>
 
 You can cut the Pocket and backPocket out of a lining fabric if you prefer but this with only be needed if you deviate from the recommended main fabrics.
