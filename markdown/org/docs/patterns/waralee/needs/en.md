@@ -3,4 +3,4 @@ To make Waralee, you will need the following:
 
   - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
   - About 2 meters of a suitable fabric ([see Waralee Fabric options](/docs/patterns/waralee/fabric/))
-  - Some interfacing for the waistband and pocket facings (if making pockets).
+  - Some interfacing for the waistband and pockets (if making pockets).
