@@ -16,6 +16,9 @@ You will need to print out the pocket and pocket facings in the traditional way.
    - Cut the **2 pants** parts.
    - (Optional) Cut **2 Pocket** parts on the fold.
    - Cut **4 backPocket** parts
+   - Cut **4 frontFacing** parts
+   - Cut **4 backFacing** parts
+
  - **Interfacing**
    - Cut **4 frontFacing** parts
    - Cut **4 backFacing** parts
