@@ -1,5 +1,15 @@
 Um Titan zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 1,5 Meter geeigneter Stoff ([siehe Stoffoptionen](/docs/patterns/titan/fabric))
+- About 1.5 meter of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
 
+<Note>
+
+###### Titan is a block, not a pattern
+
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
+
+</Note>
