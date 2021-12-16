@@ -1,8 +1,13 @@
+import get from 'lodash.get'
 import Icon from 'shared/components/icon/index.js'
 import nav from 'site/prebuild/navigation.js'
 import Link from 'next/link'
+import orderBy from 'lodash.orderby'
 
 const keepClosed = ['blog', 'showcase', ]
+
+const linkClasses = {className: 'hover:text-underline color-primary'}
+
 
 const TopLevel = ({ icon, title, nav, current }) => (
   <details className='p-2' open={((keepClosed.indexOf(current._slug) === -1) ? 1 : 0)}>
@@ -11,16 +16,27 @@ const TopLevel = ({ icon, title, nav, current }) => (
       hover:cursor-row-resize
       hover:bg-base-200
       p-2
+      text-primary
     `}>
-      <Link href={`/${current._slug}/`} className='hover:cursor-pointer'>{icon}</Link>
-      <Link href={`/${current._slug}/`} className='hover:cursor-pointer'>{title}</Link>
+      {icon}
+      <Link
+        href={`/${current._slug}/`}
+        className='hover:cursor-pointer'
+      >
+        {title}
+      </Link>
     </summary>
     <div className='pl-4'>
       <ul>
-        <li>Getting started on Linux</li>
-        <li>Getting started on Mac</li>
-        <li>Getting started on Windows</li>
-        <li>Pattern design tutorial</li>
+        {orderBy(Object.values(current._children), ['order', 'title'], ['asc', 'asc']).map(item => {
+          console.log(item)
+          const target = item._slug ? get(nav, item._slug.split('/')) : '/'
+          return (
+            <li key={item._slug}>
+              { item?._linktitle || item._title }
+            </li>
+          )
+        })}
       </ul>
     </div>
   </details>
@@ -38,7 +54,7 @@ const Navigation = ({ nav, app }) => {
         icon={<Icon icon={key}/>}
         title={key}
         key={key}
-        nav={nav}
+        nav={nav[app.language]}
         current={nav[app.language][key]}
       />
     )
