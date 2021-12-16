@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "daisyui": "^1.16.2",
+    "lodash.orderby": "^4.6.0",
     "remark-extract-frontmatter": "^3.2.0",
     "remark-frontmatter": "^4.0.1",
     "to-vfile": "^7.2.2",
