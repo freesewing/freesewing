@@ -34,14 +34,14 @@ Iron-on some interfacing on the wrong side of the 'pants' fabric. about 3cm larg
 Lay the other facing part on the right side of the 'pants', with most of the fabric towards the crotch. You want about 1/4", or 6mm, sticking out on the side-seam side.
 Lay the 'inside' of the pocket (the side without the already attached facing) on the right side of the 'pants'. Add another 2cm or so for the seam and French finish as mentioned above. Stitch the two lines of stitching as you would on any welt pocket.
 
-#### Back Pockets
-
 Cut the pocket as usual, and push everything to the wrong side. Check to make sure you have the inside/outside and facing correctly. (I cheat a lot with this step by attaching that piece of facing after I do this step. If I get the inside/outside wrong, no harm done). Press this well. I press open both seams before folding them back onto themselves. Now take the longer part of the facing you just cut the opening through and fold it like a single welt. Stitch it in place by sewing through the seam closest to the crotch. Fold under the last part of it, and sew that to the pocket. Sew the little triangles on the ends of the pocket to the facing and pocket.
 Now bring the whole thing back to the outside, and sew a seam around it, about 5mm from the edge. Push it back inside, press and stitch 6mm from the edge to complete the French seam.
 
 As a last step, I sew the side closest to the side through all layers. This anchors the pocket to that side well.
 
 Make sure you sew the top of the pocket into the waist hem.
+
+#### Back Pockets
 
 ### Step 2: Hem the sides and bottom
 
