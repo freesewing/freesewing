@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
+details { user-select: none; }
+details > summary > svg.details-toggle {
+  transform: rotate(90deg);
+  opacity: 0.4;
+}
+details[open] > summary > svg.details-toggle {
+  transform: rotate(-90deg);
+  opacity: 0.8;
+}
+details[open] summary ~ * {	animation: ease-opacity-t-b .5s ease}
+summary { cursor: pointer; }
+svg.details-toggle { transition: all 0.2s ease-out; }
+
+/* TO JE TO - TO JE TAJ */
+summary::-webkit-details-marker {
+  display: none;
+}
+

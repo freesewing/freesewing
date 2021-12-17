@@ -1,5 +1,5 @@
 export const posts = {
-  "blog/welcome-to-our-dev-blog": {
+  "welcome-to-our-dev-blog": {
     "dev": true,
     "localizations": [],
     "_id": "60eaceb44f0f4957dbc9d64b",
@@ -86,7 +86,7 @@ export const posts = {
     "id": "60eaceb44f0f4957dbc9d64b",
     "intro": "The internet is plastered with abandoned or dormant blogs, so starting another one is perhaps madness, but hear me out:"
   },
-  "blog/project-2022": {
+  "project-2022": {
     "dev": true,
     "localizations": [],
     "_id": "60eb151cdb32b45d5c4d6d96",
@@ -173,7 +173,7 @@ export const posts = {
     "id": "60eb151cdb32b45d5c4d6d96",
     "intro": "During my summer break I wanted to look into migrating the FreeSewing websites (freesewing.org and freesewing.dev) from GatbsyJS to NextJS ."
   },
-  "blog/tailwind-css-project-2022": {
+  "tailwind-css-project-2022": {
     "dev": true,
     "localizations": [],
     "_id": "60eb1836db32b45d5c4d6d99",
@@ -260,7 +260,7 @@ export const posts = {
     "id": "60eb1836db32b45d5c4d6d99",
     "intro": "Building a website that is supposed to do something essentially boils down to two things:"
   },
-  "blog/daisyui-components-themes": {
+  "daisyui-components-themes": {
     "dev": true,
     "localizations": [],
     "_id": "60eb1d41db32b45d5c4d6d9c",
@@ -347,7 +347,7 @@ export const posts = {
     "id": "60eb1d41db32b45d5c4d6d9c",
     "intro": "Since we're changing pretty much everything in project 2022 anyway, we might as well try to reduce our bundle size by removing our dependency on Material UI , the React component framework that implements Google's material design."
   },
-  "blog/shared-frontend-code-monorepo": {
+  "shared-frontend-code-monorepo": {
     "dev": true,
     "localizations": [],
     "_id": "60eb237cdb32b45d5c4d6d9f",
@@ -434,7 +434,7 @@ export const posts = {
     "id": "60eb237cdb32b45d5c4d6d9f",
     "intro": "Up until now, our websites each live in their own repository. This makes sharing code and content somewhat more involved, and situation that we currently handle as follows:"
   },
-  "blog/improved-search-keyboard": {
+  "improved-search-keyboard": {
     "dev": true,
     "localizations": [],
     "_id": "60eb2759db32b45d5c4d6da2",
@@ -521,7 +521,7 @@ export const posts = {
     "id": "60eb2759db32b45d5c4d6da2",
     "intro": "Since we've got a ton of documentation, good search is a crucial aspect of our websites."
   },
-  "blog/strapi-headless-cms": {
+  "strapi-headless-cms": {
     "dev": true,
     "localizations": [],
     "_id": "60eb2e11db32b45d5c4d6da5",
@@ -608,7 +608,7 @@ export const posts = {
     "id": "60eb2e11db32b45d5c4d6da5",
     "intro": "As things are now, all of FreeSewing's content is contained in our markdown repository ."
   },
-  "blog/layout-blocks-overview": {
+  "layout-blocks-overview": {
     "dev": true,
     "localizations": [],
     "_id": "60f0616ddb32b45d5c4d6dac",
@@ -695,7 +695,7 @@ export const posts = {
     "id": "60f0616ddb32b45d5c4d6dac",
     "intro": "I wanted to do a quick write-up of the main layout blocks of our websites. So let's have a look:"
   },
-  "blog/freesewing-v3-seems-inevitable": {
+  "freesewing-v3-seems-inevitable": {
     "dev": true,
     "localizations": [],
     "_id": "60f2e2ef2f81c03239366844",
@@ -793,7 +793,7 @@ export const posts = {
     "id": "60f2e2ef2f81c03239366844",
     "intro": "I just made a bunch of breaking changes in @freesewing/i18n and it made me realize that if/when we get around to merging my work back into our monorepo, there's going to be too many changes not to bump the major version."
   },
-  "blog/migration-to-strapi": {
+  "migration-to-strapi": {
     "dev": true,
     "localizations": [],
     "_id": "612785b5fca7f36c6a727a6b",
@@ -890,7 +890,7 @@ export const posts = {
     "id": "612785b5fca7f36c6a727a6b",
     "intro": "Effective immediately, all blog and showcase posts on freesewing.org are backed by our Strapi instance , rather than our markdown repository . That markdown repository has been archived, and the markdown content that are not blog or showcase posts  (predominantly documentation) has been moved into our monorepo ."
   },
-  "blog/pattern-docs-option-sampling": {
+  "pattern-docs-option-sampling": {
     "dev": true,
     "localizations": [],
     "_id": "6128ccacfca7f36c6a727a70",

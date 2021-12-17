@@ -54,7 +54,8 @@ export const remarkIntroPlugin = () => {
   const visitor = (node) => {
     const intro = extractFirstParagraph(node)
     if (hasFrontmatter(node)) {
-      node.children[0].value += `\nintro: "${intro}"`
+      node.children[0].value += `\nintro: "${intro}"\n`
+      //console.log(node.children[0])
     } else {
       node.children.unshift({
         type: 'yaml',

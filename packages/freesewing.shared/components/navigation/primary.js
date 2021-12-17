@@ -4,12 +4,84 @@ import nav from 'site/prebuild/navigation.js'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 
+// TODO: Clean this up after restructuring markdown content
+const hide = ['contributors', 'developers', 'editors', 'translators']
+
+// Don't show children for blog and showcase posts
 const keepClosed = ['blog', 'showcase', ]
 
-const linkClasses = {className: 'hover:text-underline color-primary'}
+// TODO: For now we force tailwind to pickup these styles
+// At some point this should 'just work' though, but let's not worry about it now
+const force = <p className="w-6 mr-3"/>
 
+// Component for the collapse toggle
+const Chevron = ({w=8, m=1}) => <svg
+  className={`fill-current opacity-75 w-${w} h-${w} mr-${m} details-toggle`}
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
+</svg>
 
-const TopLevel = ({ icon, title, nav, current }) => (
+// Helper method to filter out the real children
+const currentChildren = current => Object.values(current)
+  .filter(entry => (typeof entry === 'object'))
+
+// Component that renders a sublevel of navigation
+const SubLevel = ({ nodes={} }) => (
+  <ul className='list-inside'>
+    {currentChildren(nodes).map(child => (Object.keys(child).length > 4)
+      ? (
+        <li>
+          <details key={child.__slug}>
+            <summary className={`
+              flex flex-row gap-4 font-bold
+              hover:cursor-row-resize
+              hover:bg-base-200
+              p-1
+              px-2
+              text-primary
+            `}>
+                <Link href={child.__slug}>
+                  <a title={child.__title} className={`
+                grow
+                text-primary
+                color-primary
+                hover:cursor-pointer
+                hover:underline
+                hover:decoration-secondary
+                hover:decoration-2
+                  `}>
+                    { child?.__linktitle || child.__title }
+                  </a>
+                </Link>
+              <Chevron w={6} m={3}/>
+            </summary>
+            <SubLevel nodes={child} />
+          </details>
+        </li>
+      ) : (
+        <li className='text-primary pl-2 font-bold'>
+          <div className={`
+                p-1
+                text-primary
+                color-primary
+                hover:cursor-pointer
+                hover:underline
+                hover:decoration-secondary
+                hover:decoration-2
+          `}>
+          <Link href={child.__slug} title={child.__title}>
+            {child.__linktitle}
+          </Link>
+          </div>
+        </li>
+      )
+
+    )}
+  </ul>
+)
+
+// Component that renders a toplevel of navigation
+const TopLevel = ({ icon, title, nav, current, slug, showChildren=false }) => (
   <details className='p-2' open={((keepClosed.indexOf(current._slug) === -1) ? 1 : 0)}>
     <summary className={`
       flex flex-row uppercase gap-4 font-bold text-lg
@@ -19,45 +91,40 @@ const TopLevel = ({ icon, title, nav, current }) => (
       text-primary
     `}>
       {icon}
-      <Link
-        href={`/${current._slug}/`}
-        className='hover:cursor-pointer'
-      >
-        {title}
-      </Link>
+      {/* Wrapping this in a div because tailwind doesn't pick up
+      classes on the next js Link component */}
+      <div className={`
+        grow
+        hover:cursor-pointer hover:text-underline
+        hover:underline
+        hover:decoration-secondary
+        hover:decoration-4
+      `}>
+        <Link href={`/${current._slug}/`}>
+          {title}
+        </Link>
+      </div>
+    {showChildren && <Chevron />}
     </summary>
-    <div className='pl-4'>
-      <ul>
-        {orderBy(Object.values(current._children), ['order', 'title'], ['asc', 'asc']).map(item => {
-          console.log(item)
-          const target = item._slug ? get(nav, item._slug.split('/')) : '/'
-          return (
-            <li key={item._slug}>
-              { item?._linktitle || item._title }
-            </li>
-          )
-        })}
-      </ul>
-    </div>
+    {showChildren && <SubLevel nodes={current} />}
   </details>
 )
 
 // TODO: Get rid of this when markdown has been restructured
 const remove = ['contributors', 'developers', 'editors', 'translators']
 const Navigation = ({ nav, app }) => {
+  console.log(nav.en)
   const output = []
   for (const key of Object.keys(nav[app.language]).sort()) {
-    if (
-      key.slice(0,1) !== '_' &&
-      remove.indexOf(key) === -1
-    ) output.push(<TopLevel
-        icon={<Icon icon={key}/>}
-        title={key}
-        key={key}
-        nav={nav[app.language]}
-        current={nav[app.language][key]}
-      />
-    )
+    if (hide.indexOf(key) === -1) output.push(<TopLevel
+      icon={<Icon icon={key}/>}
+      title={key}
+      slug={key}
+      key={key}
+      showChildren={keepClosed.indexOf(key) === -1}
+      nav={nav[app.language]}
+      current={orderBy(nav[app.language][key], ['order', 'title'], ['asc', 'asc'])}
+    />)
   }
 
   return output

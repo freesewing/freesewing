@@ -7,9 +7,10 @@ import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
+import remarkMdx from 'remark-mdx'
 import vfileReporter from 'vfile-reporter'
 import { readSync } from 'to-vfile'
-import yaml from 'yaml'
+import yaml from 'js-yaml'
 import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
 
 
@@ -59,13 +60,24 @@ const fileToSlug = (file, site, lang) => (file.slice(-6) === `/${lang}.md`)
  *
  *  - file: the full path to the file
  */
-const mdxMetaInfo = async file => await unified()
-  .use(remarkIntroPlugin)
-  .use(remarkParser)
-  .use(remarkCompiler)
-  .use(remarkFrontmatter)
-  .use(remarkFrontmatterExtractor, { yaml: yaml.parse })
-  .process(readSync(file))
+const mdxMetaInfo = async file => {
+  let result
+  try {
+    result = await unified()
+      .use(remarkMdx)
+      .use(remarkIntroPlugin)
+      .use(remarkParser)
+      .use(remarkCompiler)
+      .use(remarkFrontmatter)
+      .use(remarkFrontmatterExtractor, { yaml: yaml.load })
+      .process(readSync(file))
+  }
+  catch (err) {
+    console.log(err)
+  }
+
+  return result
+}
 
 /*
  * Main method that does what needs doing
@@ -94,14 +106,21 @@ export const prebuildMdx = async(site) => {
       const slug = fileToSlug(file, site, lang)
       if (slug) {
         const meta = await mdxMetaInfo(file)
-        if (meta) {
+        if (meta?.data?.title && meta?.data?.title) {
           pages[lang][slug] = {
-            ...meta.data,
+            title: meta.data.title,
+            intro: meta.data.intro,
+            order: meta.data.order
+              ? meta.data.order+meta.data.title
+              : meta.data.title,
             slug,
             order: meta?.data?.order
               ? `${meta.data.order}${meta.data.title}`
               : meta.data.title
           }
+        } else {
+          console.log('Failed to extract title & intro from:', slug)
+          console.log(meta.messages, null ,2)
         }
       }
     }

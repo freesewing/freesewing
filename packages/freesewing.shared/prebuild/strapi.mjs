@@ -46,8 +46,8 @@ const getPosts = async (type, site, lang) => {
   }
   const posts = {}
   for (const post of res.data) {
-    const intro = await postIntro(post.body)
-    posts[`${type}/${post.slug}`] = { ...post, intro: intro.data.intro }
+    const intro = await postIntro(`---\n---\n\n${post.body}`)
+    posts[post.slug] = { ...post, intro: intro.data.intro }
   }
 
   return posts

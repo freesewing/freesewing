@@ -1,1637 +1,1347 @@
 export default {
   "en": {
     "contributors": {
-      "_title": "For contributors",
-      "_linktitle": "For contributors",
-      "_slug": "contributors",
-      "_order": "1110For contributors",
-      "_children": {
-        "contributors/help": "contributors/help",
-        "contributors/terms": "contributors/terms",
-        "contributors/ways-to-contribute": "contributors/ways-to-contribute"
-      },
+      "__title": "For contributors",
+      "__linktitle": "For contributors",
+      "__slug": "contributors",
+      "__order": "1110For contributors",
       "help": {
-        "_slug": "contributors/help",
-        "_children": {}
+        "__title": "Where to get help",
+        "__linktitle": "Where to get help",
+        "__slug": "contributors/help",
+        "__order": "Where to get help"
       },
       "terms": {
-        "_slug": "contributors/terms",
-        "_children": {
-          "Express": "contributors/terms/express",
-          "freesewing.dev": "contributors/terms/freesewing.dev",
-          "freesewing.org": "contributors/terms/freesewing.org",
-          "FreeSewing": "contributors/terms/freesewing",
-          "Frontend": "contributors/terms/frontend",
-          "Gatsby": "contributors/terms/gatsby",
-          "contributors/terms/i18n": "contributors/terms/i18n",
-          "contributors/terms/issue": "contributors/terms/issue",
-          "contributors/terms/javascript": "contributors/terms/javascript",
-          "Made-to-measure": "contributors/terms/made-to-measure",
-          "contributors/terms/markdown": "contributors/terms/markdown",
-          "contributors/terms/monorepo": "contributors/terms/monorepo",
-          "Node": "contributors/terms/node",
-          "contributors/terms/parametric-pattern-design": "contributors/terms/parametric-pattern-design",
-          "Patron": "contributors/terms/patron",
-          "Plugin": "contributors/terms/plugin",
-          "Pull request": "contributors/terms/pull-request",
-          "React": "contributors/terms/react",
-          "Repo": "contributors/terms/repo",
-          "Repository": "contributors/terms/repository",
-          "contributors/terms/tiler": "contributors/terms/tiler",
-          "Translator": "contributors/terms/translator"
-        },
+        "__title": "Terminology",
+        "__linktitle": "Terminology",
+        "__slug": "contributors/terms",
+        "__order": "Terminology",
         "express": {
-          "_title": "Express",
-          "_linktitle": "Express",
-          "_slug": "contributors/terms/express",
-          "_order": "Express",
-          "_children": {}
+          "__title": "Express",
+          "__linktitle": "Express",
+          "__slug": "contributors/terms/express",
+          "__order": "Express"
         },
         "freesewing.dev": {
-          "_title": "freesewing.dev",
-          "_linktitle": "freesewing.dev",
-          "_slug": "contributors/terms/freesewing.dev",
-          "_order": "freesewing.dev",
-          "_children": {}
+          "__title": "freesewing.dev",
+          "__linktitle": "freesewing.dev",
+          "__slug": "contributors/terms/freesewing.dev",
+          "__order": "freesewing.dev"
         },
         "freesewing.org": {
-          "_title": "freesewing.org",
-          "_linktitle": "freesewing.org",
-          "_slug": "contributors/terms/freesewing.org",
-          "_order": "freesewing.org",
-          "_children": {}
+          "__title": "freesewing.org",
+          "__linktitle": "freesewing.org",
+          "__slug": "contributors/terms/freesewing.org",
+          "__order": "freesewing.org"
         },
         "freesewing": {
-          "_title": "FreeSewing",
-          "_linktitle": "FreeSewing",
-          "_slug": "contributors/terms/freesewing",
-          "_order": "FreeSewing",
-          "_children": {}
+          "__title": "FreeSewing",
+          "__linktitle": "FreeSewing",
+          "__slug": "contributors/terms/freesewing",
+          "__order": "FreeSewing"
         },
         "frontend": {
-          "_title": "Frontend",
-          "_linktitle": "Frontend",
-          "_slug": "contributors/terms/frontend",
-          "_order": "Frontend",
-          "_children": {}
+          "__title": "Frontend",
+          "__linktitle": "Frontend",
+          "__slug": "contributors/terms/frontend",
+          "__order": "Frontend"
         },
         "gatsby": {
-          "_title": "Gatsby",
-          "_linktitle": "Gatsby",
-          "_slug": "contributors/terms/gatsby",
-          "_order": "Gatsby",
-          "_children": {}
+          "__title": "Gatsby",
+          "__linktitle": "Gatsby",
+          "__slug": "contributors/terms/gatsby",
+          "__order": "Gatsby"
         },
         "i18n": {
-          "_slug": "contributors/terms/i18n",
-          "_children": {}
+          "__title": "i18n",
+          "__linktitle": "i18n",
+          "__slug": "contributors/terms/i18n",
+          "__order": "i18n"
         },
         "issue": {
-          "_slug": "contributors/terms/issue",
-          "_children": {}
+          "__title": "Issue",
+          "__linktitle": "Issue",
+          "__slug": "contributors/terms/issue",
+          "__order": "Issue"
         },
         "javascript": {
-          "_slug": "contributors/terms/javascript",
-          "_children": {}
+          "__title": "Javascript",
+          "__linktitle": "Javascript",
+          "__slug": "contributors/terms/javascript",
+          "__order": "Javascript"
         },
         "made-to-measure": {
-          "_title": "Made-to-measure",
-          "_linktitle": "Made-to-measure",
-          "_slug": "contributors/terms/made-to-measure",
-          "_order": "Made-to-measure",
-          "_children": {}
+          "__title": "Made-to-measure",
+          "__linktitle": "Made-to-measure",
+          "__slug": "contributors/terms/made-to-measure",
+          "__order": "Made-to-measure"
         },
         "markdown": {
-          "_slug": "contributors/terms/markdown",
-          "_children": {}
+          "__title": "Markdown",
+          "__linktitle": "Markdown",
+          "__slug": "contributors/terms/markdown",
+          "__order": "Markdown"
         },
         "monorepo": {
-          "_slug": "contributors/terms/monorepo",
-          "_children": {}
+          "__title": "Monorepo",
+          "__linktitle": "Monorepo",
+          "__slug": "contributors/terms/monorepo",
+          "__order": "Monorepo"
         },
         "node": {
-          "_title": "Node",
-          "_linktitle": "Node",
-          "_slug": "contributors/terms/node",
-          "_order": "Node",
-          "_children": {}
+          "__title": "Node",
+          "__linktitle": "Node",
+          "__slug": "contributors/terms/node",
+          "__order": "Node"
         },
         "parametric-pattern-design": {
-          "_slug": "contributors/terms/parametric-pattern-design",
-          "_children": {}
+          "__title": "Parametric pattern design",
+          "__linktitle": "Parametric pattern design",
+          "__slug": "contributors/terms/parametric-pattern-design",
+          "__order": "Parametric pattern design"
         },
         "patron": {
-          "_title": "Patron",
-          "_linktitle": "Patron",
-          "_slug": "contributors/terms/patron",
-          "_order": "Patron",
-          "_children": {}
+          "__title": "Patron",
+          "__linktitle": "Patron",
+          "__slug": "contributors/terms/patron",
+          "__order": "Patron"
         },
         "plugin": {
-          "_title": "Plugin",
-          "_linktitle": "Plugin",
-          "_slug": "contributors/terms/plugin",
-          "_order": "Plugin",
-          "_children": {}
+          "__title": "Plugin",
+          "__linktitle": "Plugin",
+          "__slug": "contributors/terms/plugin",
+          "__order": "Plugin"
         },
         "pull-request": {
-          "_title": "Pull request",
-          "_linktitle": "Pull request",
-          "_slug": "contributors/terms/pull-request",
-          "_order": "Pull request",
-          "_children": {}
+          "__title": "Pull request",
+          "__linktitle": "Pull request",
+          "__slug": "contributors/terms/pull-request",
+          "__order": "Pull request"
         },
         "react": {
-          "_title": "React",
-          "_linktitle": "React",
-          "_slug": "contributors/terms/react",
-          "_order": "React",
-          "_children": {}
+          "__title": "React",
+          "__linktitle": "React",
+          "__slug": "contributors/terms/react",
+          "__order": "React"
         },
         "repo": {
-          "_title": "Repo",
-          "_linktitle": "Repo",
-          "_slug": "contributors/terms/repo",
-          "_order": "Repo",
-          "_children": {}
+          "__title": "Repo",
+          "__linktitle": "Repo",
+          "__slug": "contributors/terms/repo",
+          "__order": "Repo"
         },
         "repository": {
-          "_title": "Repository",
-          "_linktitle": "Repository",
-          "_slug": "contributors/terms/repository",
-          "_order": "Repository",
-          "_children": {}
+          "__title": "Repository",
+          "__linktitle": "Repository",
+          "__slug": "contributors/terms/repository",
+          "__order": "Repository"
         },
         "tiler": {
-          "_slug": "contributors/terms/tiler",
-          "_children": {}
+          "__title": "Tiler",
+          "__linktitle": "Tiler",
+          "__slug": "contributors/terms/tiler",
+          "__order": "Tiler"
         },
         "translator": {
-          "_title": "Translator",
-          "_linktitle": "Translator",
-          "_slug": "contributors/terms/translator",
-          "_order": "Translator",
-          "_children": {}
+          "__title": "Translator",
+          "__linktitle": "Translator",
+          "__slug": "contributors/terms/translator",
+          "__order": "Translator"
         }
       },
       "ways-to-contribute": {
-        "_slug": "contributors/ways-to-contribute",
-        "_children": {
-          "contributors/ways-to-contribute/illustrations": "contributors/ways-to-contribute/illustrations",
-          "contributors/ways-to-contribute/language-ambassador": "contributors/ways-to-contribute/language-ambassador",
-          "Pattern ambassador": "contributors/ways-to-contribute/pattern-ambassador",
-          "Pattern testing": "contributors/ways-to-contribute/pattern-testing",
-          "Project management": "contributors/ways-to-contribute/project-management",
-          "contributors/ways-to-contribute/proofreading": "contributors/ways-to-contribute/proofreading",
-          "contributors/ways-to-contribute/report-bugs": "contributors/ways-to-contribute/report-bugs",
-          "Showcase our patterns": "contributors/ways-to-contribute/showcase-our-patterns",
-          "Technical writing": "contributors/ways-to-contribute/technical-writing",
-          "contributors/ways-to-contribute/translation": "contributors/ways-to-contribute/translation",
-          "Triage issues": "contributors/ways-to-contribute/triage-issues",
-          "UI / UX Webdesign": "contributors/ways-to-contribute/webdesign"
-        },
+        "__title": "Ways to contribute",
+        "__linktitle": "Ways to contribute",
+        "__slug": "contributors/ways-to-contribute",
+        "__order": "Ways to contribute",
         "illustrations": {
-          "_slug": "contributors/ways-to-contribute/illustrations",
-          "_children": {}
+          "__title": "Make illustrations",
+          "__linktitle": "Make illustrations",
+          "__slug": "contributors/ways-to-contribute/illustrations",
+          "__order": "Make illustrations"
         },
         "language-ambassador": {
-          "_slug": "contributors/ways-to-contribute/language-ambassador",
-          "_children": {}
+          "__title": "Language ambassador",
+          "__linktitle": "Language ambassador",
+          "__slug": "contributors/ways-to-contribute/language-ambassador",
+          "__order": "Language ambassador"
         },
         "pattern-ambassador": {
-          "_title": "Pattern ambassador",
-          "_linktitle": "Pattern ambassador",
-          "_slug": "contributors/ways-to-contribute/pattern-ambassador",
-          "_order": "Pattern ambassador",
-          "_children": {}
+          "__title": "Pattern ambassador",
+          "__linktitle": "Pattern ambassador",
+          "__slug": "contributors/ways-to-contribute/pattern-ambassador",
+          "__order": "Pattern ambassador"
         },
         "pattern-testing": {
-          "_title": "Pattern testing",
-          "_linktitle": "Pattern testing",
-          "_slug": "contributors/ways-to-contribute/pattern-testing",
-          "_order": "Pattern testing",
-          "_children": {}
+          "__title": "Pattern testing",
+          "__linktitle": "Pattern testing",
+          "__slug": "contributors/ways-to-contribute/pattern-testing",
+          "__order": "Pattern testing"
         },
         "project-management": {
-          "_title": "Project management",
-          "_linktitle": "Project management",
-          "_slug": "contributors/ways-to-contribute/project-management",
-          "_order": "Project management",
-          "_children": {}
+          "__title": "Project management",
+          "__linktitle": "Project management",
+          "__slug": "contributors/ways-to-contribute/project-management",
+          "__order": "Project management"
         },
         "proofreading": {
-          "_slug": "contributors/ways-to-contribute/proofreading",
-          "_children": {}
+          "__title": "Proofreading",
+          "__linktitle": "Proofreading",
+          "__slug": "contributors/ways-to-contribute/proofreading",
+          "__order": "Proofreading"
         },
         "report-bugs": {
-          "_slug": "contributors/ways-to-contribute/report-bugs",
-          "_children": {}
+          "__title": "Report bugs",
+          "__linktitle": "Report bugs",
+          "__slug": "contributors/ways-to-contribute/report-bugs",
+          "__order": "Report bugs"
         },
         "showcase-our-patterns": {
-          "_title": "Showcase our patterns",
-          "_linktitle": "Showcase our patterns",
-          "_slug": "contributors/ways-to-contribute/showcase-our-patterns",
-          "_order": "Showcase our patterns",
-          "_children": {}
+          "__title": "Showcase our patterns",
+          "__linktitle": "Showcase our patterns",
+          "__slug": "contributors/ways-to-contribute/showcase-our-patterns",
+          "__order": "Showcase our patterns"
         },
         "technical-writing": {
-          "_title": "Technical writing",
-          "_linktitle": "Technical writing",
-          "_slug": "contributors/ways-to-contribute/technical-writing",
-          "_order": "Technical writing",
-          "_children": {
-            "Writing for freesewing.org": "contributors/ways-to-contribute/technical-writing/patterns"
-          },
+          "__title": "Technical writing",
+          "__linktitle": "Technical writing",
+          "__slug": "contributors/ways-to-contribute/technical-writing",
+          "__order": "Technical writing",
           "patterns": {
-            "_title": "Writing for freesewing.org",
-            "_linktitle": "Writing for freesewing.org",
-            "_slug": "contributors/ways-to-contribute/technical-writing/patterns",
-            "_order": "Writing for freesewing.org",
-            "_children": {}
+            "__title": "Writing for freesewing.org",
+            "__linktitle": "Writing for freesewing.org",
+            "__slug": "contributors/ways-to-contribute/technical-writing/patterns",
+            "__order": "Writing for freesewing.org"
           }
         },
         "translation": {
-          "_slug": "contributors/ways-to-contribute/translation",
-          "_children": {}
+          "__title": "Translation",
+          "__linktitle": "Translation",
+          "__slug": "contributors/ways-to-contribute/translation",
+          "__order": "Translation"
         },
         "triage-issues": {
-          "_title": "Triage issues",
-          "_linktitle": "Triage issues",
-          "_slug": "contributors/ways-to-contribute/triage-issues",
-          "_order": "Triage issues",
-          "_children": {}
+          "__title": "Triage issues",
+          "__linktitle": "Triage issues",
+          "__slug": "contributors/ways-to-contribute/triage-issues",
+          "__order": "Triage issues"
         },
         "webdesign": {
-          "_title": "UI / UX Webdesign",
-          "_linktitle": "UI / UX Webdesign",
-          "_slug": "contributors/ways-to-contribute/webdesign",
-          "_order": "UI / UX Webdesign",
-          "_children": {}
+          "__title": "UI / UX Webdesign",
+          "__linktitle": "UI / UX Webdesign",
+          "__slug": "contributors/ways-to-contribute/webdesign",
+          "__order": "UI / UX Webdesign"
         }
       }
     },
-    "_children": {
-      "1110For contributors": "contributors",
-      "1120For developers": "developers",
-      "1130For editors": "editors",
-      "1020Guides": "guides",
-      "1020Howtos": "howtos",
-      "1040Reference": "reference",
-      "1140For translators": "translators",
-      "1010Tutorials": "tutorials"
-    },
     "developers": {
-      "_title": "For developers",
-      "_linktitle": "For developers",
-      "_slug": "developers",
-      "_order": "1120For developers",
-      "_children": {
-        "The freesewing.org website": "developers/org",
-        "The freesewing on-demand tiler": "developers/svg2pdf",
-        "Our tile command line tool": "developers/tiler"
-      },
+      "__title": "For developers",
+      "__linktitle": "For developers",
+      "__slug": "developers",
+      "__order": "1120For developers",
       "org": {
-        "_title": "The freesewing.org website",
-        "_linktitle": "The freesewing.org website",
-        "_slug": "developers/org",
-        "_order": "The freesewing.org website",
-        "_children": {}
+        "__title": "The freesewing.org website",
+        "__linktitle": "The freesewing.org website",
+        "__slug": "developers/org",
+        "__order": "The freesewing.org website"
       },
       "svg2pdf": {
-        "_title": "The freesewing on-demand tiler",
-        "_linktitle": "The freesewing on-demand tiler",
-        "_slug": "developers/svg2pdf",
-        "_order": "The freesewing on-demand tiler",
-        "_children": {}
+        "__title": "The freesewing on-demand tiler",
+        "__linktitle": "The freesewing on-demand tiler",
+        "__slug": "developers/svg2pdf",
+        "__order": "The freesewing on-demand tiler"
       },
       "tiler": {
-        "_title": "Our tile command line tool",
-        "_linktitle": "Our tile command line tool",
-        "_slug": "developers/tiler",
-        "_order": "Our tile command line tool",
-        "_children": {}
+        "__title": "Our tile command line tool",
+        "__linktitle": "Our tile command line tool",
+        "__slug": "developers/tiler",
+        "__order": "Our tile command line tool"
       }
     },
     "editors": {
-      "_title": "For editors",
-      "_linktitle": "For editors",
-      "_slug": "editors",
-      "_order": "1130For editors",
-      "_children": {
-        "Common tasks for editors": "editors/howtos",
-        "editors/markdown": "editors/markdown",
-        "910Style guide": "editors/style"
-      },
+      "__title": "For editors",
+      "__linktitle": "For editors",
+      "__slug": "editors",
+      "__order": "1130For editors",
       "howtos": {
-        "_title": "Common tasks for editors",
-        "_linktitle": "Common tasks for editors",
-        "_slug": "editors/howtos",
-        "_order": "Common tasks for editors",
-        "_children": {
-          "editors/howtos/frontmatter": "editors/howtos/frontmatter",
-          "Adding a showcase on freesewing.org": "editors/howtos/showcase"
-        },
+        "__title": "Common tasks for editors",
+        "__linktitle": "Common tasks for editors",
+        "__slug": "editors/howtos",
+        "__order": "Common tasks for editors",
         "frontmatter": {
-          "_slug": "editors/howtos/frontmatter",
-          "_children": {
-            "editors/howtos/frontmatter/lists": "editors/howtos/frontmatter/lists",
-            "editors/howtos/frontmatter/multi-line": "editors/howtos/frontmatter/multi-line",
-            "editors/howtos/frontmatter/structure": "editors/howtos/frontmatter/structure"
-          },
+          "__title": "Working with frontmatter",
+          "__linktitle": "Working with frontmatter",
+          "__slug": "editors/howtos/frontmatter",
+          "__order": "Working with frontmatter",
           "lists": {
-            "_slug": "editors/howtos/frontmatter/lists",
-            "_children": {}
+            "__title": "Lists or arrays",
+            "__linktitle": "Lists or arrays",
+            "__slug": "editors/howtos/frontmatter/lists",
+            "__order": "30Lists or arrays"
           },
           "multi-line": {
-            "_slug": "editors/howtos/frontmatter/multi-line",
-            "_children": {}
+            "__title": "Mult-line text",
+            "__linktitle": "Mult-line text",
+            "__slug": "editors/howtos/frontmatter/multi-line",
+            "__order": "40Mult-line text"
           },
           "structure": {
-            "_slug": "editors/howtos/frontmatter/structure",
-            "_children": {}
+            "__title": "Structure",
+            "__linktitle": "Structure",
+            "__slug": "editors/howtos/frontmatter/structure",
+            "__order": "20Structure"
           }
         },
         "showcase": {
-          "_title": "Adding a showcase on freesewing.org",
-          "_linktitle": "Adding a showcase on freesewing.org",
-          "_slug": "editors/howtos/showcase",
-          "_order": "Adding a showcase on freesewing.org",
-          "_children": {}
+          "__title": "Adding a showcase on freesewing.org",
+          "__linktitle": "Adding a showcase on freesewing.org",
+          "__slug": "editors/howtos/showcase",
+          "__order": "Adding a showcase on freesewing.org"
         }
       },
       "markdown": {
-        "_slug": "editors/markdown",
-        "_children": {
-          "40Headings": "editors/markdown/headings",
-          "editors/markdown/images": "editors/markdown/images",
-          "30Italics and bold": "editors/markdown/italic-and-bold",
-          "editors/markdown/line-breaks": "editors/markdown/line-breaks",
-          "60Links": "editors/markdown/links",
-          "50Lists": "editors/markdown/lists",
-          "70Tables": "editors/markdown/tables",
-          "10Text and paragraphs": "editors/markdown/text-and-paragraphs"
-        },
+        "__title": "Markdown guide",
+        "__linktitle": "Markdown guide",
+        "__slug": "editors/markdown",
+        "__order": "900Markdown guide",
         "headings": {
-          "_title": "Headings",
-          "_linktitle": "Headings",
-          "_slug": "editors/markdown/headings",
-          "_order": "40Headings",
-          "_children": {}
+          "__title": "Headings",
+          "__linktitle": "Headings",
+          "__slug": "editors/markdown/headings",
+          "__order": "40Headings"
         },
         "images": {
-          "_slug": "editors/markdown/images",
-          "_children": {}
+          "__title": "Images",
+          "__linktitle": "Images",
+          "__slug": "editors/markdown/images",
+          "__order": "70Images"
         },
         "italic-and-bold": {
-          "_title": "Italics and bold",
-          "_linktitle": "Italics and bold",
-          "_slug": "editors/markdown/italic-and-bold",
-          "_order": "30Italics and bold",
-          "_children": {}
+          "__title": "Italics and bold",
+          "__linktitle": "Italics and bold",
+          "__slug": "editors/markdown/italic-and-bold",
+          "__order": "30Italics and bold"
         },
         "line-breaks": {
-          "_slug": "editors/markdown/line-breaks",
-          "_children": {}
+          "__title": "Line breaks",
+          "__linktitle": "Line breaks",
+          "__slug": "editors/markdown/line-breaks",
+          "__order": "20Line breaks"
         },
         "links": {
-          "_title": "Links",
-          "_linktitle": "Links",
-          "_slug": "editors/markdown/links",
-          "_order": "60Links",
-          "_children": {}
+          "__title": "Links",
+          "__linktitle": "Links",
+          "__slug": "editors/markdown/links",
+          "__order": "60Links"
         },
         "lists": {
-          "_title": "Lists",
-          "_linktitle": "Lists",
-          "_slug": "editors/markdown/lists",
-          "_order": "50Lists",
-          "_children": {}
+          "__title": "Lists",
+          "__linktitle": "Lists",
+          "__slug": "editors/markdown/lists",
+          "__order": "50Lists"
         },
         "tables": {
-          "_title": "Tables",
-          "_linktitle": "Tables",
-          "_slug": "editors/markdown/tables",
-          "_order": "70Tables",
-          "_children": {}
+          "__title": "Tables",
+          "__linktitle": "Tables",
+          "__slug": "editors/markdown/tables",
+          "__order": "70Tables"
         },
         "text-and-paragraphs": {
-          "_title": "Text and paragraphs",
-          "_linktitle": "Text and paragraphs",
-          "_slug": "editors/markdown/text-and-paragraphs",
-          "_order": "10Text and paragraphs",
-          "_children": {}
+          "__title": "Text and paragraphs",
+          "__linktitle": "Text and paragraphs",
+          "__slug": "editors/markdown/text-and-paragraphs",
+          "__order": "10Text and paragraphs"
         }
       },
       "style": {
-        "_title": "Style guide",
-        "_linktitle": "Style guide",
-        "_slug": "editors/style",
-        "_order": "910Style guide",
-        "_children": {
-          "Typography": "editors/style/typography"
-        },
+        "__title": "Style guide",
+        "__linktitle": "Style guide",
+        "__slug": "editors/style",
+        "__order": "910Style guide",
         "typography": {
-          "_title": "Typography",
-          "_linktitle": "Typography",
-          "_slug": "editors/style/typography",
-          "_order": "Typography",
-          "_children": {
-            "10Fonts": "editors/style/typography/fonts",
-            "30Headings": "editors/style/typography/headings",
-            "20Text and paragraphs": "editors/style/typography/text"
-          },
+          "__title": "Typography",
+          "__linktitle": "Typography",
+          "__slug": "editors/style/typography",
+          "__order": "Typography",
           "fonts": {
-            "_title": "Fonts",
-            "_linktitle": "Fonts",
-            "_slug": "editors/style/typography/fonts",
-            "_order": "10Fonts",
-            "_children": {}
+            "__title": "Fonts",
+            "__linktitle": "Fonts",
+            "__slug": "editors/style/typography/fonts",
+            "__order": "10Fonts"
           },
           "headings": {
-            "_title": "Headings",
-            "_linktitle": "Headings",
-            "_slug": "editors/style/typography/headings",
-            "_order": "30Headings",
-            "_children": {}
+            "__title": "Headings",
+            "__linktitle": "Headings",
+            "__slug": "editors/style/typography/headings",
+            "__order": "30Headings"
           },
           "text": {
-            "_title": "Text and paragraphs",
-            "_linktitle": "Text and paragraphs",
-            "_slug": "editors/style/typography/text",
-            "_order": "20Text and paragraphs",
-            "_children": {}
+            "__title": "Text and paragraphs",
+            "__linktitle": "Text and paragraphs",
+            "__slug": "editors/style/typography/text",
+            "__order": "20Text and paragraphs"
           }
         }
       }
     },
     "guides": {
-      "_title": "Guides",
-      "_linktitle": "Guides",
-      "_slug": "guides",
-      "_order": "1020Guides",
-      "_children": {
-        "guides/patterns": "guides/patterns",
-        "400Plugin guide": "guides/plugins",
-        "guides/prerequisites": "guides/prerequisites"
-      },
+      "__title": "Guides",
+      "__linktitle": "Guides",
+      "__slug": "guides",
+      "__order": "1020Guides",
       "patterns": {
-        "_slug": "guides/patterns",
-        "_children": {
-          "guides/patterns/parts": "guides/patterns/parts",
-          "guides/patterns/paths": "guides/patterns/paths",
-          "guides/patterns/pattern": "guides/patterns/pattern",
-          "guides/patterns/points": "guides/patterns/points",
-          "guides/patterns/snippets": "guides/patterns/snippets",
-          "guides/patterns/store": "guides/patterns/store"
-        },
+        "__title": "Pattern guide",
+        "__linktitle": "Pattern guide",
+        "__slug": "guides/patterns",
+        "__order": "200Pattern guide",
         "parts": {
-          "_slug": "guides/patterns/parts",
-          "_children": {}
+          "__title": "Parts",
+          "__linktitle": "Parts",
+          "__slug": "guides/patterns/parts",
+          "__order": "40Parts"
         },
         "paths": {
-          "_slug": "guides/patterns/paths",
-          "_children": {}
+          "__title": "Paths",
+          "__linktitle": "Paths",
+          "__slug": "guides/patterns/paths",
+          "__order": "20Paths"
         },
         "pattern": {
-          "_slug": "guides/patterns/pattern",
-          "_children": {}
+          "__title": "Pattern",
+          "__linktitle": "Pattern",
+          "__slug": "guides/patterns/pattern",
+          "__order": "80Pattern"
         },
         "points": {
-          "_slug": "guides/patterns/points",
-          "_children": {}
+          "__title": "Points",
+          "__linktitle": "Points",
+          "__slug": "guides/patterns/points",
+          "__order": "10Points"
         },
         "snippets": {
-          "_slug": "guides/patterns/snippets",
-          "_children": {}
+          "__title": "Snippets",
+          "__linktitle": "Snippets",
+          "__slug": "guides/patterns/snippets",
+          "__order": "20Snippets"
         },
         "store": {
-          "_slug": "guides/patterns/store",
-          "_children": {}
+          "__title": "Store",
+          "__linktitle": "Store",
+          "__slug": "guides/patterns/store",
+          "__order": "70Store"
         }
       },
       "plugins": {
-        "_title": "Plugin guide",
-        "_linktitle": "Plugin guide",
-        "_slug": "guides/plugins",
-        "_order": "400Plugin guide",
-        "_children": {
-          "60Hooks": "guides/plugins/hooks",
-          "guides/plugins/loading-build-time-plugins": "guides/plugins/loading-build-time-plugins",
-          "guides/plugins/loading-run-time-plugins": "guides/plugins/loading-run-time-plugins",
-          "90Macros": "guides/plugins/macros",
-          "50Plugin structure": "guides/plugins/plugin-structure",
-          "10Types of plugins": "guides/plugins/types-of-plugins",
-          "guides/plugins/using-hooks-more-than-once": "guides/plugins/using-hooks-more-than-once",
-          "guides/plugins/using-hooks-without-plugin": "guides/plugins/using-hooks-without-plugin",
-          "guides/plugins/using-hooks": "guides/plugins/using-hooks"
-        },
+        "__title": "Plugin guide",
+        "__linktitle": "Plugin guide",
+        "__slug": "guides/plugins",
+        "__order": "400Plugin guide",
         "hooks": {
-          "_title": "Hooks",
-          "_linktitle": "Hooks",
-          "_slug": "guides/plugins/hooks",
-          "_order": "60Hooks",
-          "_children": {}
+          "__title": "Hooks",
+          "__linktitle": "Hooks",
+          "__slug": "guides/plugins/hooks",
+          "__order": "60Hooks"
         },
         "loading-build-time-plugins": {
-          "_slug": "guides/plugins/loading-build-time-plugins",
-          "_children": {}
+          "__title": "Loading build-time plugins",
+          "__linktitle": "Loading build-time plugins",
+          "__slug": "guides/plugins/loading-build-time-plugins",
+          "__order": "20Loading build-time plugins"
         },
         "loading-run-time-plugins": {
-          "_slug": "guides/plugins/loading-run-time-plugins",
-          "_children": {}
+          "__title": "Loading run-time plugins",
+          "__linktitle": "Loading run-time plugins",
+          "__slug": "guides/plugins/loading-run-time-plugins",
+          "__order": "40Loading run-time plugins"
         },
         "macros": {
-          "_title": "Macros",
-          "_linktitle": "Macros",
-          "_slug": "guides/plugins/macros",
-          "_order": "90Macros",
-          "_children": {}
+          "__title": "Macros",
+          "__linktitle": "Macros",
+          "__slug": "guides/plugins/macros",
+          "__order": "90Macros"
         },
         "plugin-structure": {
-          "_title": "Plugin structure",
-          "_linktitle": "Plugin structure",
-          "_slug": "guides/plugins/plugin-structure",
-          "_order": "50Plugin structure",
-          "_children": {}
+          "__title": "Plugin structure",
+          "__linktitle": "Plugin structure",
+          "__slug": "guides/plugins/plugin-structure",
+          "__order": "50Plugin structure"
         },
         "types-of-plugins": {
-          "_title": "Types of plugins",
-          "_linktitle": "Types of plugins",
-          "_slug": "guides/plugins/types-of-plugins",
-          "_order": "10Types of plugins",
-          "_children": {}
+          "__title": "Types of plugins",
+          "__linktitle": "Types of plugins",
+          "__slug": "guides/plugins/types-of-plugins",
+          "__order": "10Types of plugins"
         },
         "using-hooks-more-than-once": {
-          "_slug": "guides/plugins/using-hooks-more-than-once",
-          "_children": {}
+          "__title": "Using hooks more than once",
+          "__linktitle": "Using hooks more than once",
+          "__slug": "guides/plugins/using-hooks-more-than-once",
+          "__order": "80Using hooks more than once"
         },
         "using-hooks-without-plugin": {
-          "_slug": "guides/plugins/using-hooks-without-plugin",
-          "_children": {}
+          "__title": "Using hooks without a plugin",
+          "__linktitle": "Using hooks without a plugin",
+          "__slug": "guides/plugins/using-hooks-without-plugin",
+          "__order": "85Using hooks without a plugin"
         },
         "using-hooks": {
-          "_slug": "guides/plugins/using-hooks",
-          "_children": {}
+          "__title": "Using hooks",
+          "__linktitle": "Using hooks",
+          "__slug": "guides/plugins/using-hooks",
+          "__order": "70Using hooks"
         }
       },
       "prerequisites": {
-        "_slug": "guides/prerequisites",
-        "_children": {
-          "guides/prerequisites/parametric-pattern-design": "guides/prerequisites/parametric-pattern-design",
-          "guides/prerequisites/svg": "guides/prerequisites/svg",
-          "guides/prerequisites/units": "guides/prerequisites/units"
-        },
+        "__title": "Prerequisites",
+        "__linktitle": "Prerequisites",
+        "__slug": "guides/prerequisites",
+        "__order": "100Prerequisites",
         "parametric-pattern-design": {
-          "_slug": "guides/prerequisites/parametric-pattern-design",
-          "_children": {}
+          "__title": "Parametric pattern design",
+          "__linktitle": "Parametric pattern design",
+          "__slug": "guides/prerequisites/parametric-pattern-design",
+          "__order": "10Parametric pattern design"
         },
         "svg": {
-          "_slug": "guides/prerequisites/svg",
-          "_children": {}
+          "__title": "SVG",
+          "__linktitle": "SVG",
+          "__slug": "guides/prerequisites/svg",
+          "__order": "20SVG"
         },
         "units": {
-          "_slug": "guides/prerequisites/units",
-          "_children": {}
+          "__title": "Units",
+          "__linktitle": "Units",
+          "__slug": "guides/prerequisites/units",
+          "__order": "40Units"
         }
       }
     },
     "howtos": {
-      "_title": "Howtos",
-      "_linktitle": "Howtos",
-      "_slug": "howtos",
-      "_order": "1020Howtos",
-      "_children": {}
+      "__title": "Howtos",
+      "__linktitle": "Howtos",
+      "__slug": "howtos",
+      "__order": "1020Howtos"
     },
     "reference": {
-      "_title": "Reference",
-      "_linktitle": "Reference",
-      "_slug": "reference",
-      "_order": "1040Reference",
-      "_children": {
-        "Hooks API": "reference/hooks",
-        "reference/macros": "reference/macros",
-        "Packages": "reference/packages",
-        "Plugins": "reference/plugins",
-        "Repositories": "reference/repos",
-        "Settings": "reference/settings",
-        "Snippets": "reference/snippets"
-      },
+      "__title": "Reference",
+      "__linktitle": "Reference",
+      "__slug": "reference",
+      "__order": "1040Reference",
       "hooks": {
-        "_title": "Hooks API",
-        "_linktitle": "Hooks API",
-        "_slug": "reference/hooks",
-        "_order": "Hooks API",
-        "_children": {
-          "insertText": "reference/hooks/inserttext",
-          "postDraft": "reference/hooks/postdraft",
-          "postRender": "reference/hooks/postrender",
-          "reference/hooks/postsample": "reference/hooks/postsample",
-          "preDraft": "reference/hooks/predraft",
-          "preRender": "reference/hooks/prerender",
-          "preSample": "reference/hooks/presample"
-        },
+        "__title": "Hooks API",
+        "__linktitle": "Hooks API",
+        "__slug": "reference/hooks",
+        "__order": "Hooks API",
         "inserttext": {
-          "_title": "insertText",
-          "_linktitle": "insertText",
-          "_slug": "reference/hooks/inserttext",
-          "_order": "insertText",
-          "_children": {}
+          "__title": "insertText",
+          "__linktitle": "insertText",
+          "__slug": "reference/hooks/inserttext",
+          "__order": "insertText"
         },
         "postdraft": {
-          "_title": "postDraft",
-          "_linktitle": "postDraft",
-          "_slug": "reference/hooks/postdraft",
-          "_order": "postDraft",
-          "_children": {}
+          "__title": "postDraft",
+          "__linktitle": "postDraft",
+          "__slug": "reference/hooks/postdraft",
+          "__order": "postDraft"
         },
         "postrender": {
-          "_title": "postRender",
-          "_linktitle": "postRender",
-          "_slug": "reference/hooks/postrender",
-          "_order": "postRender",
-          "_children": {}
+          "__title": "postRender",
+          "__linktitle": "postRender",
+          "__slug": "reference/hooks/postrender",
+          "__order": "postRender"
         },
         "postsample": {
-          "_slug": "reference/hooks/postsample",
-          "_children": {}
+          "__title": "postSample",
+          "__linktitle": "postSample",
+          "__slug": "reference/hooks/postsample",
+          "__order": "postSample"
         },
         "predraft": {
-          "_title": "preDraft",
-          "_linktitle": "preDraft",
-          "_slug": "reference/hooks/predraft",
-          "_order": "preDraft",
-          "_children": {}
+          "__title": "preDraft",
+          "__linktitle": "preDraft",
+          "__slug": "reference/hooks/predraft",
+          "__order": "preDraft"
         },
         "prerender": {
-          "_title": "preRender",
-          "_linktitle": "preRender",
-          "_slug": "reference/hooks/prerender",
-          "_order": "preRender",
-          "_children": {}
+          "__title": "preRender",
+          "__linktitle": "preRender",
+          "__slug": "reference/hooks/prerender",
+          "__order": "preRender"
         },
         "presample": {
-          "_title": "preSample",
-          "_linktitle": "preSample",
-          "_slug": "reference/hooks/presample",
-          "_order": "preSample",
-          "_children": {}
+          "__title": "preSample",
+          "__linktitle": "preSample",
+          "__slug": "reference/hooks/presample",
+          "__order": "preSample"
         }
       },
       "macros": {
-        "_slug": "reference/macros",
-        "_children": {
-          "flip": "reference/macros/flip",
-          "grainline": "reference/macros/grainline",
-          "hd": "reference/macros/hd",
-          "ld": "reference/macros/ld",
-          "reference/macros/miniscale": "reference/macros/miniscale",
-          "reference/macros/mirror": "reference/macros/mirror",
-          "pd": "reference/macros/pd",
-          "reference/macros/rmad": "reference/macros/rmad",
-          "reference/macros/rmd": "reference/macros/rmd",
-          "round": "reference/macros/round",
-          "reference/macros/scalebox": "reference/macros/scalebox",
-          "sprinkle": "reference/macros/sprinkle",
-          "title": "reference/macros/title",
-          "vd": "reference/macros/vd"
-        },
+        "__title": "Macros",
+        "__linktitle": "Macros",
+        "__slug": "reference/macros",
+        "__order": "Macros",
         "flip": {
-          "_title": "flip",
-          "_linktitle": "flip",
-          "_slug": "reference/macros/flip",
-          "_order": "flip",
-          "_children": {}
+          "__title": "flip",
+          "__linktitle": "flip",
+          "__slug": "reference/macros/flip",
+          "__order": "flip"
         },
         "grainline": {
-          "_title": "grainline",
-          "_linktitle": "grainline",
-          "_slug": "reference/macros/grainline",
-          "_order": "grainline",
-          "_children": {}
+          "__title": "grainline",
+          "__linktitle": "grainline",
+          "__slug": "reference/macros/grainline",
+          "__order": "grainline"
         },
         "hd": {
-          "_title": "hd",
-          "_linktitle": "hd",
-          "_slug": "reference/macros/hd",
-          "_order": "hd",
-          "_children": {}
+          "__title": "hd",
+          "__linktitle": "hd",
+          "__slug": "reference/macros/hd",
+          "__order": "hd"
         },
         "ld": {
-          "_title": "ld",
-          "_linktitle": "ld",
-          "_slug": "reference/macros/ld",
-          "_order": "ld",
-          "_children": {}
+          "__title": "ld",
+          "__linktitle": "ld",
+          "__slug": "reference/macros/ld",
+          "__order": "ld"
         },
         "miniscale": {
-          "_slug": "reference/macros/miniscale",
-          "_children": {}
+          "__title": "miniscale",
+          "__linktitle": "miniscale",
+          "__slug": "reference/macros/miniscale",
+          "__order": "miniscale"
         },
         "mirror": {
-          "_slug": "reference/macros/mirror",
-          "_children": {}
+          "__title": "mirror",
+          "__linktitle": "mirror",
+          "__slug": "reference/macros/mirror",
+          "__order": "mirror"
         },
         "pd": {
-          "_title": "pd",
-          "_linktitle": "pd",
-          "_slug": "reference/macros/pd",
-          "_order": "pd",
-          "_children": {}
+          "__title": "pd",
+          "__linktitle": "pd",
+          "__slug": "reference/macros/pd",
+          "__order": "pd"
         },
         "rmad": {
-          "_slug": "reference/macros/rmad",
-          "_children": {}
+          "__title": "rmad",
+          "__linktitle": "rmad",
+          "__slug": "reference/macros/rmad",
+          "__order": "rmad"
         },
         "rmd": {
-          "_slug": "reference/macros/rmd",
-          "_children": {}
+          "__title": "rmd",
+          "__linktitle": "rmd",
+          "__slug": "reference/macros/rmd",
+          "__order": "rmd"
         },
         "round": {
-          "_title": "round",
-          "_linktitle": "round",
-          "_slug": "reference/macros/round",
-          "_order": "round",
-          "_children": {}
+          "__title": "round",
+          "__linktitle": "round",
+          "__slug": "reference/macros/round",
+          "__order": "round"
         },
         "scalebox": {
-          "_slug": "reference/macros/scalebox",
-          "_children": {}
+          "__title": "scalebox",
+          "__linktitle": "scalebox",
+          "__slug": "reference/macros/scalebox",
+          "__order": "scalebox"
         },
         "sprinkle": {
-          "_title": "sprinkle",
-          "_linktitle": "sprinkle",
-          "_slug": "reference/macros/sprinkle",
-          "_order": "sprinkle",
-          "_children": {}
+          "__title": "sprinkle",
+          "__linktitle": "sprinkle",
+          "__slug": "reference/macros/sprinkle",
+          "__order": "sprinkle"
         },
         "title": {
-          "_title": "title",
-          "_linktitle": "title",
-          "_slug": "reference/macros/title",
-          "_order": "title",
-          "_children": {}
+          "__title": "title",
+          "__linktitle": "title",
+          "__slug": "reference/macros/title",
+          "__order": "title"
         },
         "vd": {
-          "_title": "vd",
-          "_linktitle": "vd",
-          "_slug": "reference/macros/vd",
-          "_order": "vd",
-          "_children": {}
+          "__title": "vd",
+          "__linktitle": "vd",
+          "__slug": "reference/macros/vd",
+          "__order": "vd"
         }
       },
       "packages": {
-        "_title": "Packages",
-        "_linktitle": "Packages",
-        "_slug": "reference/packages",
-        "_order": "Packages",
-        "_children": {
-          "@freesewing/examples": "reference/packages/examples",
-          "@freesewing/florence": "reference/packages/florence",
-          "@freesewing/florent": "reference/packages/florent",
-          "gatsby-remark-jargon": "reference/packages/gatsby-remark-jargon",
-          "@freesewing/holmes": "reference/packages/holmes",
-          "@freesewing/huey": "reference/packages/huey",
-          "@freesewing/hugo": "reference/packages/hugo",
-          "@freesewing/i18n": "reference/packages/i18n",
-          "@freesewing/jaeger": "reference/packages/jaeger",
-          "@freesewing/models": "reference/packages/models",
-          "@freesewing/mui-theme": "reference/packages/mui-theme",
-          "@freesewing/pattern-info": "reference/packages/pattern-info",
-          "@freesewing/penelope": "reference/packages/penelope",
-          "@freesewing/plugin-bundle": "reference/packages/plugin-bundle",
-          "@freesewing/plugin-bust": "reference/packages/plugin-bust",
-          "@freesewing/plugin-buttons": "reference/packages/plugin-buttons",
-          "@freesewing/plugin-cutonfold": "reference/packages/plugin-cutonfold",
-          "@freesewing/plugin-dimension": "reference/packages/plugin-dimension",
-          "@freesewing/plugin-flip": "reference/packages/plugin-flip",
-          "@freesewing/plugin-gore": "reference/packages/plugin-gore",
-          "@freesewing/plugin-grainline": "reference/packages/plugin-grainline",
-          "@freesewing/plugin-i18n": "reference/packages/plugin-i18n",
-          "@freesewing/plugin-logo": "reference/packages/plugin-logo",
-          "@freesewing/plugin-round": "reference/packages/plugin-round",
-          "@freesewing/plugin-scalebox": "reference/packages/plugin-scalebox",
-          "@freesewing/plugin-sprinkle": "reference/packages/plugin-sprinkle",
-          "@freesewing/plugin-svgattr": "reference/packages/plugin-svgattr",
-          "@freesewing/plugin-theme": "reference/packages/plugin-theme",
-          "@freesewing/plugin-title": "reference/packages/plugin-title",
-          "@freesewing/prettier-config": "reference/packages/prettier-config",
-          "remark-jargon": "reference/packages/remark-jargon",
-          "reference/packages/rendertest": "reference/packages/rendertest",
-          "@freesewing/sandy": "reference/packages/sandy",
-          "@freesewing/shin": "reference/packages/shin",
-          "@freesewing/simon": "reference/packages/simon",
-          "@freesewing/simone": "reference/packages/simone",
-          "@freesewing/sven": "reference/packages/sven",
-          "@freesewing/tamiko": "reference/packages/tamiko",
-          "@freesewing/theo": "reference/packages/theo",
-          "@freesewing/trayvon": "reference/packages/trayvon",
-          "@freesewing/tutorial": "reference/packages/tutorial",
-          "@freesewing/utils": "reference/packages/utils",
-          "@freesewing/wahid": "reference/packages/wahid",
-          "@freesewing/waralee": "reference/packages/waralee"
-        },
+        "__title": "Packages",
+        "__linktitle": "Packages",
+        "__slug": "reference/packages",
+        "__order": "Packages",
         "examples": {
-          "_title": "@freesewing/examples",
-          "_linktitle": "@freesewing/examples",
-          "_slug": "reference/packages/examples",
-          "_order": "@freesewing/examples",
-          "_children": {}
+          "__title": "@freesewing/examples",
+          "__linktitle": "@freesewing/examples",
+          "__slug": "reference/packages/examples",
+          "__order": "@freesewing/examples"
         },
         "florence": {
-          "_title": "@freesewing/florence",
-          "_linktitle": "@freesewing/florence",
-          "_slug": "reference/packages/florence",
-          "_order": "@freesewing/florence",
-          "_children": {}
+          "__title": "@freesewing/florence",
+          "__linktitle": "@freesewing/florence",
+          "__slug": "reference/packages/florence",
+          "__order": "@freesewing/florence"
         },
         "florent": {
-          "_title": "@freesewing/florent",
-          "_linktitle": "@freesewing/florent",
-          "_slug": "reference/packages/florent",
-          "_order": "@freesewing/florent",
-          "_children": {}
+          "__title": "@freesewing/florent",
+          "__linktitle": "@freesewing/florent",
+          "__slug": "reference/packages/florent",
+          "__order": "@freesewing/florent"
         },
         "gatsby-remark-jargon": {
-          "_title": "gatsby-remark-jargon",
-          "_linktitle": "gatsby-remark-jargon",
-          "_slug": "reference/packages/gatsby-remark-jargon",
-          "_order": "gatsby-remark-jargon",
-          "_children": {}
+          "__title": "gatsby-remark-jargon",
+          "__linktitle": "gatsby-remark-jargon",
+          "__slug": "reference/packages/gatsby-remark-jargon",
+          "__order": "gatsby-remark-jargon"
         },
         "holmes": {
-          "_title": "@freesewing/holmes",
-          "_linktitle": "@freesewing/holmes",
-          "_slug": "reference/packages/holmes",
-          "_order": "@freesewing/holmes",
-          "_children": {}
+          "__title": "@freesewing/holmes",
+          "__linktitle": "@freesewing/holmes",
+          "__slug": "reference/packages/holmes",
+          "__order": "@freesewing/holmes"
         },
         "huey": {
-          "_title": "@freesewing/huey",
-          "_linktitle": "@freesewing/huey",
-          "_slug": "reference/packages/huey",
-          "_order": "@freesewing/huey",
-          "_children": {}
+          "__title": "@freesewing/huey",
+          "__linktitle": "@freesewing/huey",
+          "__slug": "reference/packages/huey",
+          "__order": "@freesewing/huey"
         },
         "hugo": {
-          "_title": "@freesewing/hugo",
-          "_linktitle": "@freesewing/hugo",
-          "_slug": "reference/packages/hugo",
-          "_order": "@freesewing/hugo",
-          "_children": {}
+          "__title": "@freesewing/hugo",
+          "__linktitle": "@freesewing/hugo",
+          "__slug": "reference/packages/hugo",
+          "__order": "@freesewing/hugo"
         },
         "i18n": {
-          "_title": "@freesewing/i18n",
-          "_linktitle": "@freesewing/i18n",
-          "_slug": "reference/packages/i18n",
-          "_order": "@freesewing/i18n",
-          "_children": {}
+          "__title": "@freesewing/i18n",
+          "__linktitle": "@freesewing/i18n",
+          "__slug": "reference/packages/i18n",
+          "__order": "@freesewing/i18n"
         },
         "jaeger": {
-          "_title": "@freesewing/jaeger",
-          "_linktitle": "@freesewing/jaeger",
-          "_slug": "reference/packages/jaeger",
-          "_order": "@freesewing/jaeger",
-          "_children": {}
+          "__title": "@freesewing/jaeger",
+          "__linktitle": "@freesewing/jaeger",
+          "__slug": "reference/packages/jaeger",
+          "__order": "@freesewing/jaeger"
         },
         "models": {
-          "_title": "@freesewing/models",
-          "_linktitle": "@freesewing/models",
-          "_slug": "reference/packages/models",
-          "_order": "@freesewing/models",
-          "_children": {}
+          "__title": "@freesewing/models",
+          "__linktitle": "@freesewing/models",
+          "__slug": "reference/packages/models",
+          "__order": "@freesewing/models"
         },
         "mui-theme": {
-          "_title": "@freesewing/mui-theme",
-          "_linktitle": "@freesewing/mui-theme",
-          "_slug": "reference/packages/mui-theme",
-          "_order": "@freesewing/mui-theme",
-          "_children": {}
+          "__title": "@freesewing/mui-theme",
+          "__linktitle": "@freesewing/mui-theme",
+          "__slug": "reference/packages/mui-theme",
+          "__order": "@freesewing/mui-theme"
         },
         "pattern-info": {
-          "_title": "@freesewing/pattern-info",
-          "_linktitle": "@freesewing/pattern-info",
-          "_slug": "reference/packages/pattern-info",
-          "_order": "@freesewing/pattern-info",
-          "_children": {}
+          "__title": "@freesewing/pattern-info",
+          "__linktitle": "@freesewing/pattern-info",
+          "__slug": "reference/packages/pattern-info",
+          "__order": "@freesewing/pattern-info"
         },
         "penelope": {
-          "_title": "@freesewing/penelope",
-          "_linktitle": "@freesewing/penelope",
-          "_slug": "reference/packages/penelope",
-          "_order": "@freesewing/penelope",
-          "_children": {}
+          "__title": "@freesewing/penelope",
+          "__linktitle": "@freesewing/penelope",
+          "__slug": "reference/packages/penelope",
+          "__order": "@freesewing/penelope"
         },
         "plugin-bundle": {
-          "_title": "@freesewing/plugin-bundle",
-          "_linktitle": "@freesewing/plugin-bundle",
-          "_slug": "reference/packages/plugin-bundle",
-          "_order": "@freesewing/plugin-bundle",
-          "_children": {}
+          "__title": "@freesewing/plugin-bundle",
+          "__linktitle": "@freesewing/plugin-bundle",
+          "__slug": "reference/packages/plugin-bundle",
+          "__order": "@freesewing/plugin-bundle"
         },
         "plugin-bust": {
-          "_title": "@freesewing/plugin-bust",
-          "_linktitle": "@freesewing/plugin-bust",
-          "_slug": "reference/packages/plugin-bust",
-          "_order": "@freesewing/plugin-bust",
-          "_children": {}
+          "__title": "@freesewing/plugin-bust",
+          "__linktitle": "@freesewing/plugin-bust",
+          "__slug": "reference/packages/plugin-bust",
+          "__order": "@freesewing/plugin-bust"
         },
         "plugin-buttons": {
-          "_title": "@freesewing/plugin-buttons",
-          "_linktitle": "@freesewing/plugin-buttons",
-          "_slug": "reference/packages/plugin-buttons",
-          "_order": "@freesewing/plugin-buttons",
-          "_children": {}
+          "__title": "@freesewing/plugin-buttons",
+          "__linktitle": "@freesewing/plugin-buttons",
+          "__slug": "reference/packages/plugin-buttons",
+          "__order": "@freesewing/plugin-buttons"
         },
         "plugin-cutonfold": {
-          "_title": "@freesewing/plugin-cutonfold",
-          "_linktitle": "@freesewing/plugin-cutonfold",
-          "_slug": "reference/packages/plugin-cutonfold",
-          "_order": "@freesewing/plugin-cutonfold",
-          "_children": {}
+          "__title": "@freesewing/plugin-cutonfold",
+          "__linktitle": "@freesewing/plugin-cutonfold",
+          "__slug": "reference/packages/plugin-cutonfold",
+          "__order": "@freesewing/plugin-cutonfold"
         },
         "plugin-dimension": {
-          "_title": "@freesewing/plugin-dimension",
-          "_linktitle": "@freesewing/plugin-dimension",
-          "_slug": "reference/packages/plugin-dimension",
-          "_order": "@freesewing/plugin-dimension",
-          "_children": {}
+          "__title": "@freesewing/plugin-dimension",
+          "__linktitle": "@freesewing/plugin-dimension",
+          "__slug": "reference/packages/plugin-dimension",
+          "__order": "@freesewing/plugin-dimension"
         },
         "plugin-flip": {
-          "_title": "@freesewing/plugin-flip",
-          "_linktitle": "@freesewing/plugin-flip",
-          "_slug": "reference/packages/plugin-flip",
-          "_order": "@freesewing/plugin-flip",
-          "_children": {}
+          "__title": "@freesewing/plugin-flip",
+          "__linktitle": "@freesewing/plugin-flip",
+          "__slug": "reference/packages/plugin-flip",
+          "__order": "@freesewing/plugin-flip"
         },
         "plugin-gore": {
-          "_title": "@freesewing/plugin-gore",
-          "_linktitle": "@freesewing/plugin-gore",
-          "_slug": "reference/packages/plugin-gore",
-          "_order": "@freesewing/plugin-gore",
-          "_children": {}
+          "__title": "@freesewing/plugin-gore",
+          "__linktitle": "@freesewing/plugin-gore",
+          "__slug": "reference/packages/plugin-gore",
+          "__order": "@freesewing/plugin-gore"
         },
         "plugin-grainline": {
-          "_title": "@freesewing/plugin-grainline",
-          "_linktitle": "@freesewing/plugin-grainline",
-          "_slug": "reference/packages/plugin-grainline",
-          "_order": "@freesewing/plugin-grainline",
-          "_children": {}
+          "__title": "@freesewing/plugin-grainline",
+          "__linktitle": "@freesewing/plugin-grainline",
+          "__slug": "reference/packages/plugin-grainline",
+          "__order": "@freesewing/plugin-grainline"
         },
         "plugin-i18n": {
-          "_title": "@freesewing/plugin-i18n",
-          "_linktitle": "@freesewing/plugin-i18n",
-          "_slug": "reference/packages/plugin-i18n",
-          "_order": "@freesewing/plugin-i18n",
-          "_children": {}
+          "__title": "@freesewing/plugin-i18n",
+          "__linktitle": "@freesewing/plugin-i18n",
+          "__slug": "reference/packages/plugin-i18n",
+          "__order": "@freesewing/plugin-i18n"
         },
         "plugin-logo": {
-          "_title": "@freesewing/plugin-logo",
-          "_linktitle": "@freesewing/plugin-logo",
-          "_slug": "reference/packages/plugin-logo",
-          "_order": "@freesewing/plugin-logo",
-          "_children": {}
+          "__title": "@freesewing/plugin-logo",
+          "__linktitle": "@freesewing/plugin-logo",
+          "__slug": "reference/packages/plugin-logo",
+          "__order": "@freesewing/plugin-logo"
         },
         "plugin-round": {
-          "_title": "@freesewing/plugin-round",
-          "_linktitle": "@freesewing/plugin-round",
-          "_slug": "reference/packages/plugin-round",
-          "_order": "@freesewing/plugin-round",
-          "_children": {}
+          "__title": "@freesewing/plugin-round",
+          "__linktitle": "@freesewing/plugin-round",
+          "__slug": "reference/packages/plugin-round",
+          "__order": "@freesewing/plugin-round"
         },
         "plugin-scalebox": {
-          "_title": "@freesewing/plugin-scalebox",
-          "_linktitle": "@freesewing/plugin-scalebox",
-          "_slug": "reference/packages/plugin-scalebox",
-          "_order": "@freesewing/plugin-scalebox",
-          "_children": {}
+          "__title": "@freesewing/plugin-scalebox",
+          "__linktitle": "@freesewing/plugin-scalebox",
+          "__slug": "reference/packages/plugin-scalebox",
+          "__order": "@freesewing/plugin-scalebox"
         },
         "plugin-sprinkle": {
-          "_title": "@freesewing/plugin-sprinkle",
-          "_linktitle": "@freesewing/plugin-sprinkle",
-          "_slug": "reference/packages/plugin-sprinkle",
-          "_order": "@freesewing/plugin-sprinkle",
-          "_children": {}
+          "__title": "@freesewing/plugin-sprinkle",
+          "__linktitle": "@freesewing/plugin-sprinkle",
+          "__slug": "reference/packages/plugin-sprinkle",
+          "__order": "@freesewing/plugin-sprinkle"
         },
         "plugin-svgattr": {
-          "_title": "@freesewing/plugin-svgattr",
-          "_linktitle": "@freesewing/plugin-svgattr",
-          "_slug": "reference/packages/plugin-svgattr",
-          "_order": "@freesewing/plugin-svgattr",
-          "_children": {}
+          "__title": "@freesewing/plugin-svgattr",
+          "__linktitle": "@freesewing/plugin-svgattr",
+          "__slug": "reference/packages/plugin-svgattr",
+          "__order": "@freesewing/plugin-svgattr"
         },
         "plugin-theme": {
-          "_title": "@freesewing/plugin-theme",
-          "_linktitle": "@freesewing/plugin-theme",
-          "_slug": "reference/packages/plugin-theme",
-          "_order": "@freesewing/plugin-theme",
-          "_children": {}
+          "__title": "@freesewing/plugin-theme",
+          "__linktitle": "@freesewing/plugin-theme",
+          "__slug": "reference/packages/plugin-theme",
+          "__order": "@freesewing/plugin-theme"
         },
         "plugin-title": {
-          "_title": "@freesewing/plugin-title",
-          "_linktitle": "@freesewing/plugin-title",
-          "_slug": "reference/packages/plugin-title",
-          "_order": "@freesewing/plugin-title",
-          "_children": {}
+          "__title": "@freesewing/plugin-title",
+          "__linktitle": "@freesewing/plugin-title",
+          "__slug": "reference/packages/plugin-title",
+          "__order": "@freesewing/plugin-title"
         },
         "prettier-config": {
-          "_title": "@freesewing/prettier-config",
-          "_linktitle": "@freesewing/prettier-config",
-          "_slug": "reference/packages/prettier-config",
-          "_order": "@freesewing/prettier-config",
-          "_children": {}
+          "__title": "@freesewing/prettier-config",
+          "__linktitle": "@freesewing/prettier-config",
+          "__slug": "reference/packages/prettier-config",
+          "__order": "@freesewing/prettier-config"
         },
         "remark-jargon": {
-          "_title": "remark-jargon",
-          "_linktitle": "remark-jargon",
-          "_slug": "reference/packages/remark-jargon",
-          "_order": "remark-jargon",
-          "_children": {}
+          "__title": "remark-jargon",
+          "__linktitle": "remark-jargon",
+          "__slug": "reference/packages/remark-jargon",
+          "__order": "remark-jargon"
         },
         "rendertest": {
-          "_slug": "reference/packages/rendertest",
-          "_children": {}
+          "__title": "@freesewing/rendertest",
+          "__linktitle": "@freesewing/rendertest",
+          "__slug": "reference/packages/rendertest",
+          "__order": "@freesewing/rendertest"
         },
         "sandy": {
-          "_title": "@freesewing/sandy",
-          "_linktitle": "@freesewing/sandy",
-          "_slug": "reference/packages/sandy",
-          "_order": "@freesewing/sandy",
-          "_children": {}
+          "__title": "@freesewing/sandy",
+          "__linktitle": "@freesewing/sandy",
+          "__slug": "reference/packages/sandy",
+          "__order": "@freesewing/sandy"
         },
         "shin": {
-          "_title": "@freesewing/shin",
-          "_linktitle": "@freesewing/shin",
-          "_slug": "reference/packages/shin",
-          "_order": "@freesewing/shin",
-          "_children": {}
+          "__title": "@freesewing/shin",
+          "__linktitle": "@freesewing/shin",
+          "__slug": "reference/packages/shin",
+          "__order": "@freesewing/shin"
         },
         "simon": {
-          "_title": "@freesewing/simon",
-          "_linktitle": "@freesewing/simon",
-          "_slug": "reference/packages/simon",
-          "_order": "@freesewing/simon",
-          "_children": {}
+          "__title": "@freesewing/simon",
+          "__linktitle": "@freesewing/simon",
+          "__slug": "reference/packages/simon",
+          "__order": "@freesewing/simon"
         },
         "simone": {
-          "_title": "@freesewing/simone",
-          "_linktitle": "@freesewing/simone",
-          "_slug": "reference/packages/simone",
-          "_order": "@freesewing/simone",
-          "_children": {}
+          "__title": "@freesewing/simone",
+          "__linktitle": "@freesewing/simone",
+          "__slug": "reference/packages/simone",
+          "__order": "@freesewing/simone"
         },
         "sven": {
-          "_title": "@freesewing/sven",
-          "_linktitle": "@freesewing/sven",
-          "_slug": "reference/packages/sven",
-          "_order": "@freesewing/sven",
-          "_children": {}
+          "__title": "@freesewing/sven",
+          "__linktitle": "@freesewing/sven",
+          "__slug": "reference/packages/sven",
+          "__order": "@freesewing/sven"
         },
         "tamiko": {
-          "_title": "@freesewing/tamiko",
-          "_linktitle": "@freesewing/tamiko",
-          "_slug": "reference/packages/tamiko",
-          "_order": "@freesewing/tamiko",
-          "_children": {}
+          "__title": "@freesewing/tamiko",
+          "__linktitle": "@freesewing/tamiko",
+          "__slug": "reference/packages/tamiko",
+          "__order": "@freesewing/tamiko"
         },
         "theo": {
-          "_title": "@freesewing/theo",
-          "_linktitle": "@freesewing/theo",
-          "_slug": "reference/packages/theo",
-          "_order": "@freesewing/theo",
-          "_children": {}
+          "__title": "@freesewing/theo",
+          "__linktitle": "@freesewing/theo",
+          "__slug": "reference/packages/theo",
+          "__order": "@freesewing/theo"
         },
         "trayvon": {
-          "_title": "@freesewing/trayvon",
-          "_linktitle": "@freesewing/trayvon",
-          "_slug": "reference/packages/trayvon",
-          "_order": "@freesewing/trayvon",
-          "_children": {}
+          "__title": "@freesewing/trayvon",
+          "__linktitle": "@freesewing/trayvon",
+          "__slug": "reference/packages/trayvon",
+          "__order": "@freesewing/trayvon"
         },
         "tutorial": {
-          "_title": "@freesewing/tutorial",
-          "_linktitle": "@freesewing/tutorial",
-          "_slug": "reference/packages/tutorial",
-          "_order": "@freesewing/tutorial",
-          "_children": {}
+          "__title": "@freesewing/tutorial",
+          "__linktitle": "@freesewing/tutorial",
+          "__slug": "reference/packages/tutorial",
+          "__order": "@freesewing/tutorial"
         },
         "utils": {
-          "_title": "@freesewing/utils",
-          "_linktitle": "@freesewing/utils",
-          "_slug": "reference/packages/utils",
-          "_order": "@freesewing/utils",
-          "_children": {}
+          "__title": "@freesewing/utils",
+          "__linktitle": "@freesewing/utils",
+          "__slug": "reference/packages/utils",
+          "__order": "@freesewing/utils"
         },
         "wahid": {
-          "_title": "@freesewing/wahid",
-          "_linktitle": "@freesewing/wahid",
-          "_slug": "reference/packages/wahid",
-          "_order": "@freesewing/wahid",
-          "_children": {}
+          "__title": "@freesewing/wahid",
+          "__linktitle": "@freesewing/wahid",
+          "__slug": "reference/packages/wahid",
+          "__order": "@freesewing/wahid"
         },
         "waralee": {
-          "_title": "@freesewing/waralee",
-          "_linktitle": "@freesewing/waralee",
-          "_slug": "reference/packages/waralee",
-          "_order": "@freesewing/waralee",
-          "_children": {}
+          "__title": "@freesewing/waralee",
+          "__linktitle": "@freesewing/waralee",
+          "__slug": "reference/packages/waralee",
+          "__order": "@freesewing/waralee"
         }
       },
       "plugins": {
-        "_title": "Plugins",
-        "_linktitle": "Plugins",
-        "_slug": "reference/plugins",
-        "_order": "Plugins",
-        "_children": {
-          "flip": "reference/plugins/flip",
-          "grainline": "reference/plugins/grainline",
-          "i18n": "reference/plugins/i18n",
-          "logo": "reference/plugins/logo",
-          "mirror": "reference/plugins/mirror",
-          "round": "reference/plugins/round",
-          "scalebox": "reference/plugins/scalebox",
-          "sprinkle": "reference/plugins/sprinkle",
-          "svgattr": "reference/plugins/svgattr",
-          "theme": "reference/plugins/theme",
-          "title": "reference/plugins/title"
-        },
+        "__title": "Plugins",
+        "__linktitle": "Plugins",
+        "__slug": "reference/plugins",
+        "__order": "Plugins",
         "flip": {
-          "_title": "flip",
-          "_linktitle": "flip",
-          "_slug": "reference/plugins/flip",
-          "_order": "flip",
-          "_children": {}
+          "__title": "flip",
+          "__linktitle": "flip",
+          "__slug": "reference/plugins/flip",
+          "__order": "flip"
         },
         "grainline": {
-          "_title": "grainline",
-          "_linktitle": "grainline",
-          "_slug": "reference/plugins/grainline",
-          "_order": "grainline",
-          "_children": {}
+          "__title": "grainline",
+          "__linktitle": "grainline",
+          "__slug": "reference/plugins/grainline",
+          "__order": "grainline"
         },
         "i18n": {
-          "_title": "i18n",
-          "_linktitle": "i18n",
-          "_slug": "reference/plugins/i18n",
-          "_order": "i18n",
-          "_children": {}
+          "__title": "i18n",
+          "__linktitle": "i18n",
+          "__slug": "reference/plugins/i18n",
+          "__order": "i18n"
         },
         "logo": {
-          "_title": "logo",
-          "_linktitle": "logo",
-          "_slug": "reference/plugins/logo",
-          "_order": "logo",
-          "_children": {}
+          "__title": "logo",
+          "__linktitle": "logo",
+          "__slug": "reference/plugins/logo",
+          "__order": "logo"
         },
         "mirror": {
-          "_title": "mirror",
-          "_linktitle": "mirror",
-          "_slug": "reference/plugins/mirror",
-          "_order": "mirror",
-          "_children": {}
+          "__title": "mirror",
+          "__linktitle": "mirror",
+          "__slug": "reference/plugins/mirror",
+          "__order": "mirror"
         },
         "round": {
-          "_title": "round",
-          "_linktitle": "round",
-          "_slug": "reference/plugins/round",
-          "_order": "round",
-          "_children": {}
+          "__title": "round",
+          "__linktitle": "round",
+          "__slug": "reference/plugins/round",
+          "__order": "round"
         },
         "scalebox": {
-          "_title": "scalebox",
-          "_linktitle": "scalebox",
-          "_slug": "reference/plugins/scalebox",
-          "_order": "scalebox",
-          "_children": {}
+          "__title": "scalebox",
+          "__linktitle": "scalebox",
+          "__slug": "reference/plugins/scalebox",
+          "__order": "scalebox"
         },
         "sprinkle": {
-          "_title": "sprinkle",
-          "_linktitle": "sprinkle",
-          "_slug": "reference/plugins/sprinkle",
-          "_order": "sprinkle",
-          "_children": {}
+          "__title": "sprinkle",
+          "__linktitle": "sprinkle",
+          "__slug": "reference/plugins/sprinkle",
+          "__order": "sprinkle"
         },
         "svgattr": {
-          "_title": "svgattr",
-          "_linktitle": "svgattr",
-          "_slug": "reference/plugins/svgattr",
-          "_order": "svgattr",
-          "_children": {}
+          "__title": "svgattr",
+          "__linktitle": "svgattr",
+          "__slug": "reference/plugins/svgattr",
+          "__order": "svgattr"
         },
         "theme": {
-          "_title": "theme",
-          "_linktitle": "theme",
-          "_slug": "reference/plugins/theme",
-          "_order": "theme",
-          "_children": {}
+          "__title": "theme",
+          "__linktitle": "theme",
+          "__slug": "reference/plugins/theme",
+          "__order": "theme"
         },
         "title": {
-          "_title": "title",
-          "_linktitle": "title",
-          "_slug": "reference/plugins/title",
-          "_order": "title",
-          "_children": {}
+          "__title": "title",
+          "__linktitle": "title",
+          "__slug": "reference/plugins/title",
+          "__order": "title"
         }
       },
       "repos": {
-        "_title": "Repositories",
-        "_linktitle": "Repositories",
-        "_slug": "reference/repos",
-        "_order": "Repositories",
-        "_children": {
-          "reference/repos/freesewing.dev": "reference/repos/freesewing.dev",
-          "freesewing.org": "reference/repos/freesewing.org",
-          "reference/repos/freesewing": "reference/repos/freesewing",
-          "reference/repos/svgtopdf": "reference/repos/svgtopdf",
-          "tile": "reference/repos/tile"
-        },
+        "__title": "Repositories",
+        "__linktitle": "Repositories",
+        "__slug": "reference/repos",
+        "__order": "Repositories",
         "freesewing.dev": {
-          "_slug": "reference/repos/freesewing.dev",
-          "_children": {}
+          "__title": "freesewing.dev",
+          "__linktitle": "freesewing.dev",
+          "__slug": "reference/repos/freesewing.dev",
+          "__order": "freesewing.dev"
         },
         "freesewing.org": {
-          "_title": "freesewing.org",
-          "_linktitle": "freesewing.org",
-          "_slug": "reference/repos/freesewing.org",
-          "_order": "freesewing.org",
-          "_children": {}
+          "__title": "freesewing.org",
+          "__linktitle": "freesewing.org",
+          "__slug": "reference/repos/freesewing.org",
+          "__order": "freesewing.org"
         },
         "freesewing": {
-          "_slug": "reference/repos/freesewing",
-          "_children": {}
+          "__title": "freesewing",
+          "__linktitle": "freesewing",
+          "__slug": "reference/repos/freesewing",
+          "__order": "freesewing"
         },
         "svgtopdf": {
-          "_slug": "reference/repos/svgtopdf",
-          "_children": {}
+          "__title": "svgtopdf",
+          "__linktitle": "svgtopdf",
+          "__slug": "reference/repos/svgtopdf",
+          "__order": "svgtopdf"
         },
         "tile": {
-          "_title": "tile",
-          "_linktitle": "tile",
-          "_slug": "reference/repos/tile",
-          "_order": "tile",
-          "_children": {}
+          "__title": "tile",
+          "__linktitle": "tile",
+          "__slug": "reference/repos/tile",
+          "__order": "tile"
         }
       },
       "settings": {
-        "_title": "Settings",
-        "_linktitle": "Settings",
-        "_slug": "reference/settings",
-        "_order": "Settings",
-        "_children": {
-          "idPrefix": "reference/settings/idprefix",
-          "reference/settings/layout": "reference/settings/layout",
-          "locale": "reference/settings/locale",
-          "margin": "reference/settings/margin",
-          "measurements": "reference/settings/measurements",
-          "only": "reference/settings/only",
-          "options": "reference/settings/options",
-          "paperless": "reference/settings/paperless",
-          "sa": "reference/settings/sa",
-          "units": "reference/settings/units"
-        },
+        "__title": "Settings",
+        "__linktitle": "Settings",
+        "__slug": "reference/settings",
+        "__order": "Settings",
         "idprefix": {
-          "_title": "idPrefix",
-          "_linktitle": "idPrefix",
-          "_slug": "reference/settings/idprefix",
-          "_order": "idPrefix",
-          "_children": {}
+          "__title": "idPrefix",
+          "__linktitle": "idPrefix",
+          "__slug": "reference/settings/idprefix",
+          "__order": "idPrefix"
         },
         "layout": {
-          "_slug": "reference/settings/layout",
-          "_children": {}
+          "__title": "layout",
+          "__linktitle": "layout",
+          "__slug": "reference/settings/layout",
+          "__order": "layout"
         },
         "locale": {
-          "_title": "locale",
-          "_linktitle": "locale",
-          "_slug": "reference/settings/locale",
-          "_order": "locale",
-          "_children": {}
+          "__title": "locale",
+          "__linktitle": "locale",
+          "__slug": "reference/settings/locale",
+          "__order": "locale"
         },
         "margin": {
-          "_title": "margin",
-          "_linktitle": "margin",
-          "_slug": "reference/settings/margin",
-          "_order": "margin",
-          "_children": {}
+          "__title": "margin",
+          "__linktitle": "margin",
+          "__slug": "reference/settings/margin",
+          "__order": "margin"
         },
         "measurements": {
-          "_title": "measurements",
-          "_linktitle": "measurements",
-          "_slug": "reference/settings/measurements",
-          "_order": "measurements",
-          "_children": {}
+          "__title": "measurements",
+          "__linktitle": "measurements",
+          "__slug": "reference/settings/measurements",
+          "__order": "measurements"
         },
         "only": {
-          "_title": "only",
-          "_linktitle": "only",
-          "_slug": "reference/settings/only",
-          "_order": "only",
-          "_children": {}
+          "__title": "only",
+          "__linktitle": "only",
+          "__slug": "reference/settings/only",
+          "__order": "only"
         },
         "options": {
-          "_title": "options",
-          "_linktitle": "options",
-          "_slug": "reference/settings/options",
-          "_order": "options",
-          "_children": {}
+          "__title": "options",
+          "__linktitle": "options",
+          "__slug": "reference/settings/options",
+          "__order": "options"
         },
         "paperless": {
-          "_title": "paperless",
-          "_linktitle": "paperless",
-          "_slug": "reference/settings/paperless",
-          "_order": "paperless",
-          "_children": {}
+          "__title": "paperless",
+          "__linktitle": "paperless",
+          "__slug": "reference/settings/paperless",
+          "__order": "paperless"
         },
         "sa": {
-          "_title": "sa",
-          "_linktitle": "sa",
-          "_slug": "reference/settings/sa",
-          "_order": "sa",
-          "_children": {}
+          "__title": "sa",
+          "__linktitle": "sa",
+          "__slug": "reference/settings/sa",
+          "__order": "sa"
         },
         "units": {
-          "_title": "units",
-          "_linktitle": "units",
-          "_slug": "reference/settings/units",
-          "_order": "units",
-          "_children": {}
+          "__title": "units",
+          "__linktitle": "units",
+          "__slug": "reference/settings/units",
+          "__order": "units"
         }
       },
       "snippets": {
-        "_title": "Snippets",
-        "_linktitle": "Snippets",
-        "_slug": "reference/snippets",
-        "_order": "Snippets",
-        "_children": {
-          "reference/snippets/logo": "reference/snippets/logo",
-          "reference/snippets/notch": "reference/snippets/notch",
-          "snap-socket": "reference/snippets/snap-socket",
-          "snap-stud": "reference/snippets/snap-stud"
-        },
+        "__title": "Snippets",
+        "__linktitle": "Snippets",
+        "__slug": "reference/snippets",
+        "__order": "Snippets",
         "logo": {
-          "_slug": "reference/snippets/logo",
-          "_children": {}
+          "__title": "logo",
+          "__linktitle": "logo",
+          "__slug": "reference/snippets/logo",
+          "__order": "logo"
         },
         "notch": {
-          "_slug": "reference/snippets/notch",
-          "_children": {}
+          "__title": "notch",
+          "__linktitle": "notch",
+          "__slug": "reference/snippets/notch",
+          "__order": "notch"
         },
         "snap-socket": {
-          "_title": "snap-socket",
-          "_linktitle": "snap-socket",
-          "_slug": "reference/snippets/snap-socket",
-          "_order": "snap-socket",
-          "_children": {}
+          "__title": "snap-socket",
+          "__linktitle": "snap-socket",
+          "__slug": "reference/snippets/snap-socket",
+          "__order": "snap-socket"
         },
         "snap-stud": {
-          "_title": "snap-stud",
-          "_linktitle": "snap-stud",
-          "_slug": "reference/snippets/snap-stud",
-          "_order": "snap-stud",
-          "_children": {}
+          "__title": "snap-stud",
+          "__linktitle": "snap-stud",
+          "__slug": "reference/snippets/snap-stud",
+          "__order": "snap-stud"
         }
       }
     },
     "translators": {
-      "_title": "For translators",
-      "_linktitle": "For translators",
-      "_slug": "translators",
-      "_order": "1140For translators",
-      "_children": {}
+      "__title": "For translators",
+      "__linktitle": "For translators",
+      "__slug": "translators",
+      "__order": "1140For translators"
     },
     "tutorials": {
-      "_title": "Tutorials",
-      "_linktitle": "Tutorials",
-      "_slug": "tutorials",
-      "_order": "1010Tutorials",
-      "_children": {
-        "tutorials/getting-started-linux": "tutorials/getting-started-linux",
-        "tutorials/getting-started-mac": "tutorials/getting-started-mac",
-        "30Getting started on Windows": "tutorials/getting-started-windows",
-        "tutorials/pattern-design": "tutorials/pattern-design"
-      },
+      "__title": "Tutorials",
+      "__linktitle": "Tutorials",
+      "__slug": "tutorials",
+      "__order": "1010Tutorials",
       "getting-started-linux": {
-        "_slug": "tutorials/getting-started-linux",
-        "_children": {
-          "20Installing Node": "tutorials/getting-started-linux/installing-node",
-          "10Installing nvm": "tutorials/getting-started-linux/installing-nvm",
-          "tutorials/getting-started-linux/node-versions": "tutorials/getting-started-linux/node-versions",
-          "tutorials/getting-started-linux/start-development-environment": "tutorials/getting-started-linux/start-development-environment"
-        },
+        "__title": "Getting started on Linux",
+        "__linktitle": "Getting started on Linux",
+        "__slug": "tutorials/getting-started-linux",
+        "__order": "10Getting started on Linux",
         "installing-node": {
-          "_title": "Installing Node",
-          "_linktitle": "Installing Node",
-          "_slug": "tutorials/getting-started-linux/installing-node",
-          "_order": "20Installing Node",
-          "_children": {}
+          "__title": "Installing Node",
+          "__linktitle": "Installing Node",
+          "__slug": "tutorials/getting-started-linux/installing-node",
+          "__order": "20Installing Node"
         },
         "installing-nvm": {
-          "_title": "Installing nvm",
-          "_linktitle": "Installing nvm",
-          "_slug": "tutorials/getting-started-linux/installing-nvm",
-          "_order": "10Installing nvm",
-          "_children": {}
+          "__title": "Installing nvm",
+          "__linktitle": "Installing nvm",
+          "__slug": "tutorials/getting-started-linux/installing-nvm",
+          "__order": "10Installing nvm"
         },
         "node-versions": {
-          "_slug": "tutorials/getting-started-linux/node-versions",
-          "_children": {}
+          "__title": "Using a different Node version",
+          "__linktitle": "Using a different Node version",
+          "__slug": "tutorials/getting-started-linux/node-versions",
+          "__order": "30Using a different Node version"
         },
         "start-development-environment": {
-          "_slug": "tutorials/getting-started-linux/start-development-environment",
-          "_children": {}
+          "__title": "Start the development environment",
+          "__linktitle": "Start the development environment",
+          "__slug": "tutorials/getting-started-linux/start-development-environment",
+          "__order": "50Start the development environment"
         }
       },
       "getting-started-mac": {
-        "_slug": "tutorials/getting-started-mac",
-        "_children": {
-          "30Installing Node": "tutorials/getting-started-mac/installing-node",
-          "20Installing nvm": "tutorials/getting-started-mac/installing-nvm",
-          "tutorials/getting-started-mac/installing-xcode": "tutorials/getting-started-mac/installing-xcode",
-          "tutorials/getting-started-mac/node-versions": "tutorials/getting-started-mac/node-versions",
-          "tutorials/getting-started-mac/start-development-environment": "tutorials/getting-started-mac/start-development-environment"
-        },
+        "__title": "Getting started on Mac",
+        "__linktitle": "Getting started on Mac",
+        "__slug": "tutorials/getting-started-mac",
+        "__order": "20Getting started on Mac",
         "installing-node": {
-          "_title": "Installing Node",
-          "_linktitle": "Installing Node",
-          "_slug": "tutorials/getting-started-mac/installing-node",
-          "_order": "30Installing Node",
-          "_children": {}
+          "__title": "Installing Node",
+          "__linktitle": "Installing Node",
+          "__slug": "tutorials/getting-started-mac/installing-node",
+          "__order": "30Installing Node"
         },
         "installing-nvm": {
-          "_title": "Installing nvm",
-          "_linktitle": "Installing nvm",
-          "_slug": "tutorials/getting-started-mac/installing-nvm",
-          "_order": "20Installing nvm",
-          "_children": {}
+          "__title": "Installing nvm",
+          "__linktitle": "Installing nvm",
+          "__slug": "tutorials/getting-started-mac/installing-nvm",
+          "__order": "20Installing nvm"
         },
         "installing-xcode": {
-          "_slug": "tutorials/getting-started-mac/installing-xcode",
-          "_children": {}
+          "__title": "Installing the Xcode command line tools",
+          "__linktitle": "Installing the Xcode command line tools",
+          "__slug": "tutorials/getting-started-mac/installing-xcode",
+          "__order": "10Installing the Xcode command line tools"
         },
         "node-versions": {
-          "_slug": "tutorials/getting-started-mac/node-versions",
-          "_children": {}
+          "__title": "Using a different Node version",
+          "__linktitle": "Using a different Node version",
+          "__slug": "tutorials/getting-started-mac/node-versions",
+          "__order": "40Using a different Node version"
         },
         "start-development-environment": {
-          "_slug": "tutorials/getting-started-mac/start-development-environment",
-          "_children": {}
+          "__title": "Start the development environment",
+          "__linktitle": "Start the development environment",
+          "__slug": "tutorials/getting-started-mac/start-development-environment",
+          "__order": "60Start the development environment"
         }
       },
       "getting-started-windows": {
-        "_title": "Getting started on Windows",
-        "_linktitle": "Getting started on Windows",
-        "_slug": "tutorials/getting-started-windows",
-        "_order": "30Getting started on Windows",
-        "_children": {}
+        "__title": "Getting started on Windows",
+        "__linktitle": "Getting started on Windows",
+        "__slug": "tutorials/getting-started-windows",
+        "__order": "30Getting started on Windows"
       },
       "pattern-design": {
-        "_slug": "tutorials/pattern-design",
-        "_children": {
-          "170Fitting the neck opening": "tutorials/pattern-design/fitting-the-neck-opening",
-          "270Making your pattern paperless": "tutorials/pattern-design/paperless-bib",
-          "tutorials/pattern-design/part-structure": "tutorials/pattern-design/part-structure",
-          "240Rounding the corners": "tutorials/pattern-design/rounding-the-corners",
-          "tutorials/pattern-design/shaping-the-straps": "tutorials/pattern-design/shaping-the-straps",
-          "tutorials/pattern-design/testing-your-pattern": "tutorials/pattern-design/testing-your-pattern",
-          "120Your first part": "tutorials/pattern-design/your-first-part"
-        },
+        "__title": "Pattern design tutorial",
+        "__linktitle": "Pattern design tutorial",
+        "__slug": "tutorials/pattern-design",
+        "__order": "50Pattern design tutorial",
         "fitting-the-neck-opening": {
-          "_title": "Fitting the neck opening",
-          "_linktitle": "Fitting the neck opening",
-          "_slug": "tutorials/pattern-design/fitting-the-neck-opening",
-          "_order": "170Fitting the neck opening",
-          "_children": {}
+          "__title": "Fitting the neck opening",
+          "__linktitle": "Fitting the neck opening",
+          "__slug": "tutorials/pattern-design/fitting-the-neck-opening",
+          "__order": "170Fitting the neck opening"
         },
         "paperless-bib": {
-          "_title": "Making your pattern paperless",
-          "_linktitle": "Making your pattern paperless",
-          "_slug": "tutorials/pattern-design/paperless-bib",
-          "_order": "270Making your pattern paperless",
-          "_children": {}
+          "__title": "Making your pattern paperless",
+          "__linktitle": "Making your pattern paperless",
+          "__slug": "tutorials/pattern-design/paperless-bib",
+          "__order": "270Making your pattern paperless"
         },
         "part-structure": {
-          "_slug": "tutorials/pattern-design/part-structure",
-          "_children": {}
+          "__title": "Structure of a part",
+          "__linktitle": "Structure of a part",
+          "__slug": "tutorials/pattern-design/part-structure",
+          "__order": "150Structure of a part"
         },
         "rounding-the-corners": {
-          "_title": "Rounding the corners",
-          "_linktitle": "Rounding the corners",
-          "_slug": "tutorials/pattern-design/rounding-the-corners",
-          "_order": "240Rounding the corners",
-          "_children": {}
+          "__title": "Rounding the corners",
+          "__linktitle": "Rounding the corners",
+          "__slug": "tutorials/pattern-design/rounding-the-corners",
+          "__order": "240Rounding the corners"
         },
         "shaping-the-straps": {
-          "_slug": "tutorials/pattern-design/shaping-the-straps",
-          "_children": {}
+          "__title": "Shaping the straps",
+          "__linktitle": "Shaping the straps",
+          "__slug": "tutorials/pattern-design/shaping-the-straps",
+          "__order": "200Shaping the straps"
         },
         "testing-your-pattern": {
-          "_slug": "tutorials/pattern-design/testing-your-pattern",
-          "_children": {}
+          "__title": "Testing your pattern",
+          "__linktitle": "Testing your pattern",
+          "__slug": "tutorials/pattern-design/testing-your-pattern",
+          "__order": "250Testing your pattern"
         },
         "your-first-part": {
-          "_title": "Your first part",
-          "_linktitle": "Your first part",
-          "_slug": "tutorials/pattern-design/your-first-part",
-          "_order": "120Your first part",
-          "_children": {}
+          "__title": "Your first part",
+          "__linktitle": "Your first part",
+          "__slug": "tutorials/pattern-design/your-first-part",
+          "__order": "120Your first part"
         }
       }
     },
     "blog": {
-      "_title": "blog",
-      "_linktitle": "blog",
-      "_slug": "blog",
-      "_order": "blog",
-      "_children": {
-        "2021-07-04blog/welcome-to-our-dev-blog": "blog/welcome-to-our-dev-blog",
-        "2021-07-05blog/project-2022": "blog/project-2022",
-        "2021-07-06blog/tailwind-css-project-2022": "blog/tailwind-css-project-2022",
-        "2021-07-07blog/daisyui-components-themes": "blog/daisyui-components-themes",
-        "2021-07-08blog/shared-frontend-code-monorepo": "blog/shared-frontend-code-monorepo",
-        "2021-07-09blog/improved-search-keyboard": "blog/improved-search-keyboard",
-        "2021-07-10blog/strapi-headless-cms": "blog/strapi-headless-cms",
-        "2021-07-15blog/layout-blocks-overview": "blog/layout-blocks-overview",
-        "2021-07-16blog/freesewing-v3-seems-inevitable": "blog/freesewing-v3-seems-inevitable",
-        "2021-08-26blog/migration-to-strapi": "blog/migration-to-strapi",
-        "2021-08-27blog/pattern-docs-option-sampling": "blog/pattern-docs-option-sampling"
+      "__title": "blog",
+      "__linktitle": "blog",
+      "__slug": "blog",
+      "__order": "blog",
+      "welcome-to-our-dev-blog": {
+        "__title": "Welcome to FreeSewing's development blog",
+        "__linktitle": "Welcome to our dev blog",
+        "__slug": "blog/welcome-to-our-dev-blog",
+        "__order": 1663992
       },
-      "blog": {
-        "welcome-to-our-dev-blog": {
-          "_title": "Welcome to FreeSewing's development blog",
-          "_linktitle": "Welcome to our dev blog",
-          "_slug": "blog/welcome-to-our-dev-blog",
-          "_order": 1663992,
-          "_children": {}
-        },
-        "project-2022": {
-          "_title": "Project 2022: Giving FreeSewing a new face",
-          "_linktitle": "Announcing projet 2022",
-          "_slug": "blog/project-2022",
-          "_order": 1663128,
-          "_children": {}
-        },
-        "tailwind-css-project-2022": {
-          "_title": "Taming CSS complexity with TailwindCSS",
-          "_linktitle": "Tailwind CSS in project 2022",
-          "_slug": "blog/tailwind-css-project-2022",
-          "_order": 1662264,
-          "_children": {}
-        },
-        "daisyui-components-themes": {
-          "_title": "Once more without MaterialUI: DaisyUI for CSS components and themes",
-          "_linktitle": "Components and themes with DaisyUI",
-          "_slug": "blog/daisyui-components-themes",
-          "_order": 1661400,
-          "_children": {}
-        },
-        "shared-frontend-code-monorepo": {
-          "_title": "Better code sharing by bringing frontend code into our monorepo",
-          "_linktitle": "Sharing frontend code in our monorepo",
-          "_slug": "blog/shared-frontend-code-monorepo",
-          "_order": 1660536,
-          "_children": {}
-        },
-        "improved-search-keyboard": {
-          "_title": "Improved search with keyboard bindings",
-          "_linktitle": "Improved search with keyboard bindings",
-          "_slug": "blog/improved-search-keyboard",
-          "_order": 1659672,
-          "_children": {}
-        },
-        "strapi-headless-cms": {
-          "_title": "Strapi as headless CMS",
-          "_linktitle": "Strapi as headless CMS",
-          "_slug": "blog/strapi-headless-cms",
-          "_order": 1658808,
-          "_children": {}
-        },
-        "layout-blocks-overview": {
-          "_title": "A quick tour of the main layout blocks",
-          "_linktitle": "Main layout blocks",
-          "_slug": "blog/layout-blocks-overview",
-          "_order": 1654488,
-          "_children": {}
-        },
-        "freesewing-v3-seems-inevitable": {
-          "_title": "Better tree-shaking means breaking changes; FreeSewing v3 now seems inevitable",
-          "_linktitle": "FreeSewing v3 seems inevitable",
-          "_slug": "blog/freesewing-v3-seems-inevitable",
-          "_order": 1653624,
-          "_children": {}
-        },
-        "migration-to-strapi": {
-          "_title": "We migrated to strapi and moved our markdown content into our monorepo",
-          "_linktitle": "Migration to Strapi",
-          "_slug": "blog/migration-to-strapi",
-          "_order": 1618200,
-          "_children": {}
-        },
-        "pattern-docs-option-sampling": {
-          "_title": "Auto-generated images showing option impact to improve documentation for pattern options",
-          "_linktitle": "Sampling pattern options for bettter docs",
-          "_slug": "blog/pattern-docs-option-sampling",
-          "_order": 1617336,
-          "_children": {}
-        }
+      "project-2022": {
+        "__title": "Project 2022: Giving FreeSewing a new face",
+        "__linktitle": "Announcing projet 2022",
+        "__slug": "blog/project-2022",
+        "__order": 1663128
+      },
+      "tailwind-css-project-2022": {
+        "__title": "Taming CSS complexity with TailwindCSS",
+        "__linktitle": "Tailwind CSS in project 2022",
+        "__slug": "blog/tailwind-css-project-2022",
+        "__order": 1662264
+      },
+      "daisyui-components-themes": {
+        "__title": "Once more without MaterialUI: DaisyUI for CSS components and themes",
+        "__linktitle": "Components and themes with DaisyUI",
+        "__slug": "blog/daisyui-components-themes",
+        "__order": 1661400
+      },
+      "shared-frontend-code-monorepo": {
+        "__title": "Better code sharing by bringing frontend code into our monorepo",
+        "__linktitle": "Sharing frontend code in our monorepo",
+        "__slug": "blog/shared-frontend-code-monorepo",
+        "__order": 1660536
+      },
+      "improved-search-keyboard": {
+        "__title": "Improved search with keyboard bindings",
+        "__linktitle": "Improved search with keyboard bindings",
+        "__slug": "blog/improved-search-keyboard",
+        "__order": 1659672
+      },
+      "strapi-headless-cms": {
+        "__title": "Strapi as headless CMS",
+        "__linktitle": "Strapi as headless CMS",
+        "__slug": "blog/strapi-headless-cms",
+        "__order": 1658808
+      },
+      "layout-blocks-overview": {
+        "__title": "A quick tour of the main layout blocks",
+        "__linktitle": "Main layout blocks",
+        "__slug": "blog/layout-blocks-overview",
+        "__order": 1654488
+      },
+      "freesewing-v3-seems-inevitable": {
+        "__title": "Better tree-shaking means breaking changes; FreeSewing v3 now seems inevitable",
+        "__linktitle": "FreeSewing v3 seems inevitable",
+        "__slug": "blog/freesewing-v3-seems-inevitable",
+        "__order": 1653624
+      },
+      "migration-to-strapi": {
+        "__title": "We migrated to strapi and moved our markdown content into our monorepo",
+        "__linktitle": "Migration to Strapi",
+        "__slug": "blog/migration-to-strapi",
+        "__order": 1618200
+      },
+      "pattern-docs-option-sampling": {
+        "__title": "Auto-generated images showing option impact to improve documentation for pattern options",
+        "__linktitle": "Sampling pattern options for bettter docs",
+        "__slug": "blog/pattern-docs-option-sampling",
+        "__order": 1617336
       }
     }
   }
