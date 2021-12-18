@@ -5,6 +5,12 @@ import path from 'path'
 // MDX compiler
 import { compile } from '@mdx-js/mdx'
 
+// Remark plugins we want to use
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkGfm from 'remark-gfm'
+// Rehype plugins we want to use
+import rehypeHighlight from 'rehype-highlight'
+
 /*
  * Summary: Loads markdown from disk and compiles it as MDX.
  *
@@ -24,7 +30,16 @@ const mdxLoader = async (language, site, slug) => {
   )
 
   const mdx = String(
-    await compile(md, { outputFormat: 'function-body' })
+    await compile(md, {
+      outputFormat: 'function-body',
+      remarkPlugins: [
+        remarkFrontmatter,
+        remarkGfm,
+      ],
+      rehypePlugins: [
+        rehypeHighlight
+      ],
+    })
   )
 
   return mdx

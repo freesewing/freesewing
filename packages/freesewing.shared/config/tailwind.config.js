@@ -9,6 +9,10 @@ module.exports = {
     './pages/**/*.js',
     '../freesewing.shared/components/**/*.js',
   ],
+  plugins: [
+    require('daisyui'),
+    require('@tailwindcss/typography'),
+  ],
   daisyui: {
     styled: true,
     themes: [ themes ],
@@ -22,7 +26,4 @@ module.exports = {
       colors: require('daisyui/colors'),
     },
   },
-  plugins: [
-    require('daisyui'),
-  ],
 }

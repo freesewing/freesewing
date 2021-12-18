@@ -40,7 +40,7 @@ module.exports = {
     */
 
     // base-100: The default background color
-    'base-100': colors.neutral['100'],
+    'base-100': colors.neutral['50'],
     // base-200: A slightly different background color, used for hovers and so on
     'base-200': colors.neutral['200'],
     // base-300: A shade midway between dark and light
@@ -81,7 +81,7 @@ module.exports = {
 
     // info: Used rarely, can be another color best somewhat neutral looking
     // and should work with the default text color
-    'info': colors.amber['300'],
+    'info': colors.violet['400'],
     // success: Used rarely, but if it is it's in notifications indicating success
     // Typically some shade of green
     'success': colors.green['500'],
@@ -121,6 +121,39 @@ module.exports = {
     // focus ring offset size for button and inputs
     '--focus-ring-offset': '2px',
 
+    /* CODE HIGHLIGHTING COLORS
+    *
+    * These are variables to style highlighted code blocks.
+    *
+    * Specifically this first set applies to the wrapper around
+    * the highlighted code.
+    * The names should (hopefully) speak for themselves
+    */
+    '--code-background-color': colors.neutral['100'],
+    '--code-border-color': colors.neutral['300'],
+    '--code-color': colors.neutral['900'],
+    '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
+    '--code-border-radius': '0.5rem',
+    '--code-border-style': 'solid',
+    '--code-border-width': 1,
+    '--code-outer-padding': '0 0.5rem',
+    '--code-inner-padding': '1rem',
+    /*
+     * These variables are used to style the highlighted tokesn themselves
+     */
+    '--code-color-keyword': colors.pink['500'],
+    '--code-font-weight-keyword': 'bold',
+    '--code-color-entity': colors.violet['500'],
+    '--code-font-weight-entity': 'bold',
+    '--code-color-constant': colors.lime['600'],
+    '--code-color-string': colors.sky['600'],
+    '--code-font-style-string': 'italic',
+    '--code-color-variable': colors.indigo['600'],
+    '--code-color-comment': colors.neutral['600'],
+    '--code-color-tag': colors.green['600'],
+    '--code-color-property': 'inherit',
+    '--code-font-weight-property': 'bold',
+
     /* FREESEWING PATTERN COLORS
     *
     * These are variables to style FreeSewing SVG output (drafts, examples, and so on)
@@ -143,20 +176,5 @@ module.exports = {
     // Color for noting things on a pattern
     '--pattern-note': colors.violet['500'],
 
-    /* ADVANCED
-    *
-    * You can override CSS this way, but ask yourself: why?
-    *
-    * One thing we do is take care of links in MDX content.
-    * Since this content is styled by the TailwindCSS Typography
-    * plugin, it won't follow the theme link styling.
-    */
-    ".mdx.prose a" : {
-      color: colors.violet['500'],
-      'text-decoration': 'none',
-    },
-    ".mdx.prose a:hover" : {
-      color: colors.violet['400'],
-    },
   }
 }

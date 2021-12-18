@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './code.css';
 
 details { user-select: none; }
 details > summary > svg.details-toggle {
@@ -20,4 +21,5 @@ svg.details-toggle { transition: all 0.2s ease-out; }
 summary::-webkit-details-marker {
   display: none;
 }
+
 

@@ -35,6 +35,7 @@ import mdxLoader from 'shared/mdx/loader'
  */
 import MdxWrapper from 'shared/components/wrappers/mdx'
 
+import ThemePicker from 'shared/components/theme-picker.js'
 
 /*
  * The NextJS page object
@@ -55,6 +56,7 @@ const MdxPage = props => {
    */
   return (
     <Page app={app} {...props.page}>
+      <ThemePicker app={app} />
       <MdxWrapper mdx={props.mdx} />
     </Page>
   )

@@ -34,6 +34,29 @@ module.exports = {
     '--rounded-box': '2px',
     '--rounded-btn': '2px',
 
+    '--code-background-color': colors.blue['800'],
+    '--code-border-color': colors.blue['900'],
+    '--code-color': colors.blue['100'],
+    '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
+    '--code-border-radius': '0',
+    '--code-border-style': 'solid',
+    '--code-border-width': 15,
+    '--code-outer-padding': '0 0.5rem',
+    '--code-inner-padding': '1rem',
+    '--code-color-keyword': colors.neutral['50'],
+    '--code-font-weight-keyword': 'bold',
+    '--code-color-entity': colors.neutral['50'],
+    '--code-font-weight-entity': 'bold',
+    '--code-color-constant': colors.blue['300'],
+    '--code-color-string': colors.sky['300'],
+    '--code-font-style-string': 'italic',
+    '--code-color-variable': colors.blue['300'],
+    '--code-color-comment': colors.blue['400'],
+    '--code-color-tag': colors.blue['100'],
+    '--code-color-property': colors.blue['300'],
+    '--code-font-weight-property': 'bold',
+
+
     '--pattern-fabric': colors.neutral['700'],
     '--pattern-lining': colors.emerald['500'],
     '--pattern-interfacing': colors.neutral['400'],
@@ -42,14 +65,5 @@ module.exports = {
     '--pattern-mark': colors.blue['500'],
     '--pattern-contrast': colors.pink['500'],
     '--pattern-note': colors.violet['500'],
-
-    ".mdx.prose a" : {
-      color: colors.blue['600'],
-      'text-decoration': 'underline',
-    },
-    ".mdx.prose a:hover" : {
-      color: colors.blue['500'],
-      'text-decoration': 'underline',
-    },
   }
 }
