@@ -21,7 +21,7 @@ module.exports = {
     'neutral-focus': gray['800'],
     'neutral-content': gray['300'],
 
-    'base-100': gray['800'],
+    'base-100': gray['900'],
     'base-200': gray['700'],
     'base-300': gray['600'],
     'base-content': gray['300'],
@@ -31,7 +31,7 @@ module.exports = {
     'warning': colors.amber['500'],
     'error': colors.red['400'],
 
-    '--code-background-color': colors.neutral['900'],
+    '--code-background-color': '#111',
     '--code-border-color': colors.neutral['800'],
     '--code-color': colors.neutral['300'],
     '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,

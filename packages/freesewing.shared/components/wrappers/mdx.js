@@ -72,7 +72,7 @@ const MdxWrapper = ({mdx, components={}}) => {
   const MdxContent = mdxModule ? mdxModule.default : Fragment
 
   return (
-    <div className="prose lg:prose-xl prose-pre:bg-primary">
+    <div className="prose lg:prose-xl prose-pre:bg-primary text-primary">
       <MdxContent components={allComponents}/>
     </div>
   )
