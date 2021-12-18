@@ -5,6 +5,7 @@ import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import Logo from '@freesewing/components/Logo'
 import ThemePicker from 'shared/components/theme-picker.js'
+import { getTagline } from 'site/utils.js'
 
 // TODO: Clean this up after restructuring markdown content
 const hide = ['contributors', 'developers', 'editors', 'translators']
@@ -137,7 +138,7 @@ const TopLogo = ({ app }) => (
         <a>freesewing.{app.site}</a>
       </Link>
       <p className={`text-base text-captalize text-primary text-sm font-normal
-        `}>{app.pitch}</p>
+        `}>{getTagline()}</p>
     </div>
   </div>
 )

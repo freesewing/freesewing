@@ -22,6 +22,7 @@ const DefaultLayout = props => {
     flex flex-col justify-between
     min-h-screen
     bg-base-100
+    lg:py-8
     `} data-theme={props.app.theme}>
       <header className={`
         bg-primary
@@ -34,6 +35,9 @@ const DefaultLayout = props => {
       <main className={`
         grow flex flex-row
         sm:py-8
+        gap-2
+        lg:gap-8
+        xl:gap-18
       `}>
         <aside className={`
           fixed top-0 right-0

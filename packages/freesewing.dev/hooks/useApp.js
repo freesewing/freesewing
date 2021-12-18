@@ -27,7 +27,6 @@ function useApp(full = true) {
   return {
     // Static vars
     site: 'dev',
-    pitch: "This website does not track you",
 
     // State
     primaryMenu,
