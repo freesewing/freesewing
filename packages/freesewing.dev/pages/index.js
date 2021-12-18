@@ -2,8 +2,6 @@ import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import ThemePicker from 'shared/components/theme-picker.js'
 
-import nav from 'site/prebuild/navigation.js'
-
 export default (props) => {
   const app = useApp()
   return (
@@ -15,6 +13,7 @@ export default (props) => {
         >Toggle</button>
       </p>
       <ThemePicker app={app} />
+
     </Page>
   )
 }

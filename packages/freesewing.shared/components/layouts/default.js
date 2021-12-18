@@ -47,7 +47,7 @@ const DefaultLayout = props => {
         `}>
           <PrimaryMenu app={props.app}/>
         </aside>
-        <section>
+        <section className='max-w-screen-lg'>
           <H1>{props.title}</H1>
           {props.children}
         </section>

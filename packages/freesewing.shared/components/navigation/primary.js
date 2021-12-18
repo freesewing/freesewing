@@ -12,10 +12,13 @@ const keepClosed = ['blog', 'showcase', ]
 
 // TODO: For now we force tailwind to pickup these styles
 // At some point this should 'just work' though, but let's not worry about it now
-const force = <p className="w-6 mr-3"/>
+const force = [
+  <p className="w-6 mr-2"/>,
+  <p className="w-8 mr-3"/>
+]
 
 // Component for the collapse toggle
-const Chevron = ({w=8, m=1}) => <svg
+const Chevron = ({w=8, m=2}) => <svg
   className={`fill-current opacity-75 w-${w} h-${w} mr-${m} details-toggle`}
   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
   <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
@@ -30,8 +33,8 @@ const SubLevel = ({ nodes={} }) => (
   <ul className='list-inside'>
     {currentChildren(nodes).map(child => (Object.keys(child).length > 4)
       ? (
-        <li>
-          <details key={child.__slug}>
+        <li key={child.__slug}>
+          <details>
             <summary className={`
               flex flex-row gap-4 font-bold
               hover:cursor-row-resize
@@ -113,7 +116,6 @@ const TopLevel = ({ icon, title, nav, current, slug, showChildren=false }) => (
 // TODO: Get rid of this when markdown has been restructured
 const remove = ['contributors', 'developers', 'editors', 'translators']
 const Navigation = ({ nav, app }) => {
-  console.log(nav.en)
   const output = []
   for (const key of Object.keys(nav[app.language]).sort()) {
     if (hide.indexOf(key) === -1) output.push(<TopLevel

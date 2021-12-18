@@ -8,7 +8,7 @@ const config = site => ({
     externalDir: true,
     esmExternals: true,
   },
-  pageExtensions: [ 'js' ],
+  pageExtensions: [ 'js', 'md' ],
   webpack: (config, options) => {
 
 		// Fixes npm packages that depend on node modules
@@ -48,6 +48,7 @@ const config = site => ({
     // Aliases
     config.resolve.alias.shared = path.resolve('../freesewing.shared/')
     config.resolve.alias.site = path.resolve(`../freesewing.${site}/`)
+    config.resolve.alias.markdown = path.resolve(`../../markdown/${site}/`)
 
     return config
   }
