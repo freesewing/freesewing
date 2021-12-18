@@ -3,6 +3,8 @@ import Icon from 'shared/components/icon/index.js'
 import nav from 'site/prebuild/navigation.js'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
+import Logo from '@freesewing/components/Logo'
+import ThemePicker from 'shared/components/theme-picker.js'
 
 // TODO: Clean this up after restructuring markdown content
 const hide = ['contributors', 'developers', 'editors', 'translators']
@@ -113,6 +115,59 @@ const TopLevel = ({ icon, title, nav, current, slug, showChildren=false }) => (
   </details>
 )
 
+// Component that renders the logo first entry
+const TopLogo = ({ app }) => (
+  <div className={`
+    flex flex-row uppercase gap-4 font-bold text-lg
+    items-center
+    hover:cursor-row-resize
+    hover:bg-base-200
+    p-2
+    text-primary
+  `}>
+    <Logo size={32} />
+    <div className={`
+      grow
+      hover:cursor-pointer hover:text-underline
+      hover:underline
+      hover:decoration-secondary
+      hover:decoration-4
+    `}>
+      <Link href='/'>
+        <a>freesewing.{app.site}</a>
+      </Link>
+      <p className={`text-base text-captalize text-primary text-sm font-normal
+        `}>{app.pitch}</p>
+    </div>
+  </div>
+)
+
+// Component that renders the theme picker first entry
+const TopTheme = ({ app }) => (
+  <>
+  <div className={`
+    flex flex-row uppercase gap-4 font-bold text-lg
+    items-center
+    hover:cursor-row-resize
+    hover:bg-base-200
+    p-2
+    text-primary
+  `}>
+    <Icon icon='theme' />
+    <div className={`
+      grow
+      hover:cursor-pointer hover:text-underline
+      hover:underline
+      hover:decoration-secondary
+      hover:decoration-4
+    `}>
+      Theme
+    </div>
+  </div>
+  <ThemePicker app={app} />
+  </>
+)
+
 // TODO: Get rid of this when markdown has been restructured
 const remove = ['contributors', 'developers', 'editors', 'translators']
 const Navigation = ({ nav, app }) => {
@@ -139,7 +194,9 @@ const PrimaryMenu = props => {
       sm:max-w-sm
       grow
     `}>
+      <TopLogo app={props.app}/>
       <Navigation nav={nav} app={props.app}/>
+      <TopTheme app={props.app}/>
     </nav>
   )
 }
