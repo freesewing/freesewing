@@ -1,11 +1,18 @@
 import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import ThemePicker from 'shared/components/theme-picker.js'
+import Popout from 'shared/components/popout'
 
 export default (props) => {
   const app = useApp()
   return (
     <Page app={app} title='This is not a homepage'>
+    <Popout {...props} fixme>test</Popout>
+    <Popout {...props} link>test</Popout>
+    <Popout {...props} note>test</Popout>
+    <Popout {...props} related>test</Popout>
+    <Popout {...props} tip>test</Popout>
+    <Popout {...props} warning>test</Popout>
       <pre>{JSON.stringify(Object.keys(app.navigation.reference), null, 2)}</pre>
       <p className='px-8'>
         <button

@@ -56,8 +56,7 @@ const MdxPage = props => {
    */
   return (
     <Page app={app} {...props.page}>
-      <ThemePicker app={app} />
-      <MdxWrapper mdx={props.mdx} />
+      <MdxWrapper mdx={props.mdx} app={app}/>
     </Page>
   )
 }
