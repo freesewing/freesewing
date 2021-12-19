@@ -6,6 +6,7 @@ export default (props) => {
   const app = useApp()
   return (
     <Page app={app} title='This is not a homepage'>
+      <pre>{JSON.stringify(Object.keys(app.navigation.reference), null, 2)}</pre>
       <p className='px-8'>
         <button
           className='btn btn-primary'

@@ -1,6 +1,5 @@
 import get from 'lodash.get'
 import Icon from 'shared/components/icon/index.js'
-import nav from 'site/prebuild/navigation.js'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import Logo from '@freesewing/components/Logo'
@@ -171,33 +170,34 @@ const TopTheme = ({ app }) => (
 
 // TODO: Get rid of this when markdown has been restructured
 const remove = ['contributors', 'developers', 'editors', 'translators']
-const Navigation = ({ nav, app }) => {
+const Navigation = ({ app }) => {
+  if (!app.navigation) return null
   const output = []
-  for (const key of Object.keys(nav[app.language]).sort()) {
+  for (const key of Object.keys(app.navigation).sort()) {
     if (hide.indexOf(key) === -1) output.push(<TopLevel
       icon={<Icon icon={key}/>}
       title={key}
       slug={key}
       key={key}
       showChildren={keepClosed.indexOf(key) === -1}
-      nav={nav[app.language]}
-      current={orderBy(nav[app.language][key], ['order', 'title'], ['asc', 'asc'])}
+      nav={app.navigation}
+      current={orderBy(app.navigation[key], ['order', 'title'], ['asc', 'asc'])}
     />)
   }
 
   return output
 }
 
-const PrimaryMenu = props => {
+const PrimaryMenu = ({ app }) => {
 
   return (
     <nav className={`
       sm:max-w-sm
       grow
     `}>
-      <TopLogo app={props.app}/>
-      <Navigation nav={nav} app={props.app}/>
-      <TopTheme app={props.app}/>
+      <TopLogo app={app}/>
+      <Navigation app={app}/>
+      <TopTheme app={app}/>
     </nav>
   )
 }

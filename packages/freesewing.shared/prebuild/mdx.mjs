@@ -64,8 +64,8 @@ const mdxMetaInfo = async file => {
   let result
   try {
     result = await unified()
-      .use(remarkMdx)
-      .use(remarkIntroPlugin)
+//      .use(remarkMdx)
+//      .use(remarkIntroPlugin)
       .use(remarkParser)
       .use(remarkCompiler)
       .use(remarkFrontmatter)
