@@ -96,19 +96,17 @@ const TopLevel = ({ icon, title, nav, current, slug, showChildren=false }) => (
       text-primary
     `}>
       {icon}
-      {/* Wrapping this in a div because tailwind doesn't pick up
-      classes on the next js Link component */}
-      <div className={`
-        grow
-        hover:cursor-pointer hover:text-underline
-        hover:underline
-        hover:decoration-secondary
-        hover:decoration-4
-      `}>
-        <Link href={`/${current._slug}/`}>
+      <Link href={`/${current._slug}/`}>
+        <a className={`
+          grow
+          hover:cursor-pointer hover:text-underline
+          hover:underline
+          hover:decoration-secondary
+          hover:decoration-4
+        `}>
           {title}
-        </Link>
-      </div>
+        </a>
+      </Link>
     {showChildren && <Chevron />}
     </summary>
     {showChildren && <SubLevel nodes={current} />}
