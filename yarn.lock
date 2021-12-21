@@ -7662,9 +7662,9 @@ d@1, d@^1.0.1:
     type "^1.0.1"
 
 daisyui@^1.16.2:
-  version "1.16.2"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.16.2.tgz#3b3d62f393c293601efb744ce40d5916ec5b8d93"
-  integrity sha512-kHoTvq3/eU8tPbu3U3Nwq7yy0I5zauqAYRSvw1x+t8g9FBjFm3jNtUQO/vBjUZsU7ABIf5aaT58iBF2NeusCUA==
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.17.1.tgz#092de1b19eaefc070ba089e960c11d0528c26f9d"
+  integrity sha512-Qixk3DIUeF1qFJEMLXdEG346698UvqCYYzxbJ2ZX3NoPLprtr7Vo9I370i1ZzBPnEQLnaHZhvSTHOJef9qvhKA==
 
 damerau-levenshtein@^1.0.6:
   version "1.0.7"
