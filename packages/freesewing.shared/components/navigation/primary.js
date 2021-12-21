@@ -2,7 +2,7 @@ import get from 'lodash.get'
 import Icon from 'shared/components/icon/index.js'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
-import Logo from '@freesewing/components/Logo'
+import Logo from 'shared/components/logos/freesewing.js'
 import ThemePicker from 'shared/components/theme-picker.js'
 import { getTagline } from 'site/utils.js'
 
@@ -100,7 +100,7 @@ const TopLogo = ({ app }) => (
     p-2
     text-base-content
   `}>
-    <Logo size={32} />
+    <Logo size={32} theme={app.theme} />
     <div>
     <Link href='/'>
       <a className={`grow ${linkClasses}`}>
