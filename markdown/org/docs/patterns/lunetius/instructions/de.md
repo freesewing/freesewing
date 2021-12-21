@@ -6,7 +6,7 @@ Lunetius ist ein historisch inspiriertes Schnittmuster, und für mehr Authentizi
 
 ### Schritt 1: Versäubere alle Kanten
 
-Versäubere alle Kanten mit einer Methode deiner Wahl. Clip into corners as needed. This is a nice place to use some decorative stitches, embroidery and/or trimmings.
+Versäubere alle Kanten mit einer Methode deiner Wahl. Clip into corners as needed. Dies ist eine schöne Gelegenheit für Zierstiche, Stickereien und/oder Borten.
 
 ### Schritt 2: Fertig!
 
