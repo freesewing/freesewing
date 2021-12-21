@@ -1,8 +1,8 @@
 <Note>
 
-###### Titan is a block, not a pattern
+###### Titan ist ein Grundschnitt, kein Schnittmuster
 
-A block is a basic shape on which other patterns are based.
+Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
 They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Titan block.
@@ -61,7 +61,7 @@ It is all up to you! Experiment and go forth!
 ### Step 3: Make a paper pattern
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Jetzt hast du ein Schnittmuster, das du verwenden kannst um Kleidungsstücke herzustellen.
 
 <Note>
 
