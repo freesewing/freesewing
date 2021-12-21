@@ -1,6 +1,6 @@
 <Note>
 
-Lunetius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Sie tun das.
+Lunetius ist ein historisch inspiriertes Schnittmuster, und für mehr Authentizität ist das Nähen per Hand das Mittel der Wahl. Ich selber verwende eine Nähmaschine. Tu, was dir beliebt.
 
 </Note>
 
