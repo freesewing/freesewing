@@ -2,11 +2,13 @@ import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import ThemePicker from 'shared/components/theme-picker.js'
 import Popout from 'shared/components/popout'
+import Logo from 'shared/components/logos/freesewing.js'
 
 export default (props) => {
   const app = useApp()
   return (
     <Page app={app} title='This is not a homepage'>
+      <Logo size={400} theme={app.theme} />
     <Popout {...props} fixme>test</Popout>
     <Popout {...props} link>test</Popout>
     <Popout {...props} note>test</Popout>

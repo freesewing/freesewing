@@ -49,19 +49,19 @@ module.exports = {
     'base-content': colors.neutral['700'],
 
     // primary: The main brand color and color of the primary button
-    'primary': colors.neutral['900'],
+    'primary': colors.violet['700'],
     // primary-focus: The :hover color for the primary button
     'primary-focus': colors.violet['600'],
     // primary-content: The text color for the primary button
-    'primary-content': colors.neutral['200'],
+    'primary-content': colors.violet['50'],
 
     // secondary: The link color
-    'secondary': colors.violet['500'],
+    'secondary': colors.sky['500'],
     // secondary: The :hover link color
-    'secondary-focus': colors.violet['400'],
+    'secondary-focus': colors.sky['400'],
     // secondary: An alternative link color for on dark backgrounds
     // Typically a light shade of the secondary color
-    'secondary-content': colors.violet['300'],
+    'secondary-content': colors.sky['300'],
 
     // accent: The accent color is used to highlight active things
     // Should be something is positive/neutral. Avoid red or orange.

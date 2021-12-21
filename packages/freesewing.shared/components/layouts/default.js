@@ -48,6 +48,8 @@ const DefaultLayout = props => {
           sm:bg-base-100
           sm:max-w-[38.2%]
           sm:flex sm:flex-row-reverse
+          overflow-scroll
+          py-8
         `}>
           <PrimaryMenu app={props.app}/>
         </aside>
