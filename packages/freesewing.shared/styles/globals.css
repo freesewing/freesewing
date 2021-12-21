@@ -4,6 +4,22 @@
 
 @import './code.css';
 
+/* Applied styles for common HTML tags */
+@layer components {
+  h1 { @apply text-base-content text-4xl py-5 font-bold lg:text-6xl }
+  h2 { @apply text-base-content text-3xl py-4 font-bold lg:text-4xl }
+  h3 { @apply text-base-content text-2xl py-3 font-bold lg:text-3xl }
+  h4 { @apply text-base-content text-xl py-2 font-bold lg:text-2xl }
+  h5 { @apply text-base-content text-lg py-1 font-bold lg:text-xl }
+  h6 { @apply text-base-content text-base font-bold lg:text-lg }
+  p { @apply text-base-content my-1 py-2 lg:text-xl }
+  /* mdx styles */
+  .mdx a { @apply text-secondary }
+  .mdx a:hover { @apply text-secondary-focus }
+  .mdx p > code { @apply text-info px-1 rounded-lg }
+  .mdx ul { @apply pl-4 list-disc list-inside text-base-content }
+}
+
 details { user-select: none; }
 details > summary > svg.details-toggle {
   transform: rotate(90deg);

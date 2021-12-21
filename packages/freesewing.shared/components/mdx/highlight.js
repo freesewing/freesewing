@@ -13,7 +13,7 @@ const Highlight = ({
     : (className === '') ? 'js' : className.split('-').pop()
 
   return (
-    <div className="hljs my-4 not-prose">
+    <div className="hljs my-4">
       <div className={`text-xs uppercase font-bold text-info mt-1 text-center border-b border-info border-opacity-20 py-1 mb-2 lg:text-sm`}>
         {names[language] ? names[language] : language}
       </div>

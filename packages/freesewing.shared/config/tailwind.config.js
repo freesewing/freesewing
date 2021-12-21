@@ -11,7 +11,7 @@ module.exports = {
   ],
   plugins: [
     require('daisyui'),
-    require('@tailwindcss/typography'),
+    //require('@tailwindcss/typography'),
   ],
   daisyui: {
     styled: true,

@@ -30,35 +30,44 @@ const Chevron = ({w=8, m=2}) => <svg
 const currentChildren = current => Object.values(current)
   .filter(entry => (typeof entry === 'object'))
 
-const linkClasses = "text-lg py-2 text-base-content hover:cursor-pointer hover:text-secondary bg-opacity-50"
+const howActive = (slug) => {
+}
+
+// Shared classes for links
+const linkClasses = "text-lg lg:text-xl py-1 text-base-content hover:cursor-pointer hover:text-secondary bg-opacity-50"
+
+
 
 // Component that renders a sublevel of navigation
-const SubLevel = ({ nodes={} }) => (
-  <ul className='list-inside'>
+const SubLevel = ({ nodes={}, level=1 }) => (
+  <ul className="pl-5 list-inside">
     {currentChildren(nodes).map(child => (Object.keys(child).length > 4)
       ? (
-        <li key={child.__slug}>
-          <details>
+        <li key={child.__slug} className="flex flex-row">
+          <details className="grow">
             <summary className={`
-              flex flex-row gap-4
-              p-1 px-2
+              flex flex-row
+              px-2
               text-base-content
               hover:cursor-row-resize
+              items-center
             `}>
-                <Link href={child.__slug}>
-                  <a title={child.__title} className={`grow ${linkClasses}`}>
-                    { child?.__linktitle || child.__title }
-                  </a>
-                </Link>
+              <Link href={child.__slug}>
+                <a title={child.__title} className={`grow pl-2 border-l-2 ${linkClasses} hover:border-secondary`}>
+                <Icon icon="middot" size="24" className="text-secondary inline" />
+                  { child?.__linktitle || child.__title }
+                </a>
+              </Link>
               <Chevron w={6} m={3}/>
             </summary>
-            <SubLevel nodes={child} />
+            <SubLevel nodes={child} level={level+1} />
           </details>
         </li>
       ) : (
-        <li className='pl-2'>
+        <li className='pl-2 flex flex-row items-center'>
           <Link href={child.__slug} title={child.__title}>
-            <a className={linkClasses}>
+            <a className={`pl-2 border-l-2 ${linkClasses} grow hover:border-secondary`}>
+              <Icon icon="middot" size="24" className="text-secondary inline" />
               {child.__linktitle}
             </a>
           </Link>
@@ -70,8 +79,8 @@ const SubLevel = ({ nodes={} }) => (
 )
 
 // Component that renders a toplevel of navigation
-const TopLevel = ({ icon, title, nav, current, slug, showChildren=false }) => (
-  <details className='py-1' open={((keepClosed.indexOf(current._slug) === -1) ? 1 : 0)}>
+const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }) => (
+  <details className='py-1' open={((keepClosed.indexOf(current.__slug) === -1) ? 1 : 0)}>
     <summary className={`
       flex flex-row uppercase gap-4 font-bold text-lg
       hover:cursor-row-resize
@@ -80,14 +89,14 @@ const TopLevel = ({ icon, title, nav, current, slug, showChildren=false }) => (
       items-center
     `}>
       {icon}
-      <Link href={`/${current._slug}/`}>
+      <Link href={`/${current.__slug}/`}>
         <a className={`grow ${linkClasses}`}>
-          {title}
+          {title} {active}
         </a>
       </Link>
-    {showChildren && <Chevron />}
+    {hasChildren && <Chevron />}
     </summary>
-    {showChildren && <SubLevel nodes={current} />}
+    {hasChildren && <SubLevel nodes={current} />}
   </details>
 )
 
@@ -129,13 +138,15 @@ const TopTheme = ({ app }) => (
       Theme
     </div>
   </div>
-  <ThemePicker app={app} />
+  <div className="p-2">
+    <ThemePicker app={app} className="pr-8"/>
+  </div>
   </>
 )
 
 // TODO: Get rid of this when markdown has been restructured
 const remove = ['contributors', 'developers', 'editors', 'translators']
-const Navigation = ({ app }) => {
+const Navigation = ({ app, active }) => {
   if (!app.navigation) return null
   const output = []
   for (const key of Object.keys(app.navigation).sort()) {
@@ -144,16 +155,17 @@ const Navigation = ({ app }) => {
       title={key}
       slug={key}
       key={key}
-      showChildren={keepClosed.indexOf(key) === -1}
+      hasChildren={keepClosed.indexOf(key) === -1}
       nav={app.navigation}
       current={orderBy(app.navigation[key], ['order', 'title'], ['asc', 'asc'])}
+      active={active}
     />)
   }
 
   return output
 }
 
-const PrimaryMenu = ({ app }) => {
+const PrimaryMenu = ({ app, active }) => {
 
   return (
     <nav className={`
@@ -161,7 +173,7 @@ const PrimaryMenu = ({ app }) => {
       grow
     `}>
       <TopLogo app={app}/>
-      <Navigation app={app}/>
+      <Navigation app={app} active={active} />
       <TopTheme app={app}/>
     </nav>
   )
