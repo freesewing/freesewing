@@ -52,6 +52,10 @@ unreleased:
     plugin-versionfree-svg:
       - Added (esm) unit tests
 
+  Changed:
+    plugin-scalebox:
+      - Add utility classes for better styling support
+
   Fixed:
     plugin-buttons:
       - Only add snippets once to SVG object
