@@ -29,7 +29,7 @@ const Popout = (props) => {
   const color = colors[type]
 
   return (
-    <div className="relative my-4">
+    <div className="relative my-8">
       <div className={`
         border-l-4 px-8 py-2 shadow border-${color}`}>
         <div className={`font-bold uppercase text-${color}`}>
