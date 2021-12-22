@@ -36,13 +36,26 @@ const howActive = (slug) => {
 // Shared classes for links
 const linkClasses = "text-lg lg:text-xl py-1 hover:cursor-pointer hover:text-secondary bg-opacity-50"
 
+// Figure out whether a page is on the path to the active page
+const isActive = (slug, active) => {
+  if (slug === active) return true
+  let result = true
+  const slugParts = slug.split('/')
+  const activeParts = active.split('/')
+  for (const i in slugParts) {
+    if (slugParts[i] !== activeParts[i]) result = false
+  }
+
+  return result
+}
+
 // Component that renders a sublevel of navigation
 const SubLevel = ({ nodes={}, active }) => (
   <ul className="pl-5 list-inside">
     {currentChildren(nodes).map(child => (Object.keys(child).length > 4)
       ? (
         <li key={child.__slug} className="flex flex-row">
-          <details className="grow">
+          <details className="grow" open={isActive(child.__slug, active)}>
             <summary className={`
               flex flex-row
               px-2
