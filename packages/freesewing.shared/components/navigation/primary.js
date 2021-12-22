@@ -34,12 +34,10 @@ const howActive = (slug) => {
 }
 
 // Shared classes for links
-const linkClasses = "text-lg lg:text-xl py-1 text-base-content hover:cursor-pointer hover:text-secondary bg-opacity-50"
-
-
+const linkClasses = "text-lg lg:text-xl py-1 hover:cursor-pointer hover:text-secondary bg-opacity-50"
 
 // Component that renders a sublevel of navigation
-const SubLevel = ({ nodes={}, level=1 }) => (
+const SubLevel = ({ nodes={}, active }) => (
   <ul className="pl-5 list-inside">
     {currentChildren(nodes).map(child => (Object.keys(child).length > 4)
       ? (
@@ -53,20 +51,30 @@ const SubLevel = ({ nodes={}, level=1 }) => (
               items-center
             `}>
               <Link href={child.__slug}>
-                <a title={child.__title} className={`grow pl-2 border-l-2 ${linkClasses} hover:border-secondary`}>
+                <a title={child.__title} className={`
+                  grow pl-2 border-l-2
+                  hover:border-secondary
+                  ${linkClasses}
+                  ${child.__slug === active ? 'text-secondary border-secondary' : 'text-base-content'}
+                `}>
                 <Icon icon="middot" size="24" className="text-secondary inline" />
                   { child?.__linktitle || child.__title }
                 </a>
               </Link>
               <Chevron w={6} m={3}/>
             </summary>
-            <SubLevel nodes={child} level={level+1} />
+            <SubLevel nodes={child} active={active} />
           </details>
         </li>
       ) : (
         <li className='pl-2 flex flex-row items-center'>
           <Link href={child.__slug} title={child.__title}>
-            <a className={`pl-2 border-l-2 ${linkClasses} grow hover:border-secondary`}>
+            <a className={`
+              pl-2 border-l-2
+              grow hover:border-secondary
+              ${linkClasses}
+              ${child.__slug === active ? 'text-secondary border-secondary' : 'text-base-content'}
+            `}>
               <Icon icon="middot" size="24" className="text-secondary inline" />
               {child.__linktitle}
             </a>
@@ -89,14 +97,14 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
       items-center
     `}>
       {icon}
-      <Link href={`/${current.__slug}/`}>
-        <a className={`grow ${linkClasses}`}>
-          {title} {active}
+      <Link href={`/${slug}`}>
+        <a className={`grow ${linkClasses} ${slug === active ? 'text-secondary' : ''}`}>
+          {title}
         </a>
       </Link>
     {hasChildren && <Chevron />}
     </summary>
-    {hasChildren && <SubLevel nodes={current} />}
+    {hasChildren && <SubLevel nodes={current} active={active} />}
   </details>
 )
 
@@ -157,7 +165,7 @@ const Navigation = ({ app, active }) => {
       key={key}
       hasChildren={keepClosed.indexOf(key) === -1}
       nav={app.navigation}
-      current={orderBy(app.navigation[key], ['order', 'title'], ['asc', 'asc'])}
+      current={orderBy(app.navigation[key], ['__order', '__title'], ['asc', 'asc'])}
       active={active}
     />)
   }

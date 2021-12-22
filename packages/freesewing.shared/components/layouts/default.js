@@ -20,8 +20,9 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
   const crumbs = []
   const chunks = slug.split('/')
   for (const i in chunks) {
-    const page = get(app.navigation, chunks.slice(0,i+1))
-    crumbs.push([page.__linktitle, '/'+chunks.slice(0,i+1).join('/'), (i+1 < chunks.length)])
+    const j = parseInt(i)+parseInt(1)
+    const page = get(app.navigation, chunks.slice(0,j))
+    crumbs.push([page.__linktitle, '/'+chunks.slice(0,j).join('/'), (j < chunks.length)])
   }
 
   return (

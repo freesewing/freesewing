@@ -37,7 +37,7 @@ const MdxWrapper = ({mdx, app, components={}}) => {
 
   return (
     <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-lg lg:text-xl">
-      <MdxContent components={allComponents}/>
+      {mdxModule && <MdxContent components={allComponents}/>}
     </div>
   )
 }

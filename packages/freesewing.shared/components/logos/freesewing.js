@@ -31,9 +31,9 @@ const fill = {
     <linearGradient id="hax0r" x1="0%" y1="0%" x2="50%" y2="100%">
       {[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20].map( i => (
         <>
-          <stop offset={`${i*5}%`} stopColor={colors.lime[900]} stopOpacity="1.0" />
-          <stop offset={`${i*5+1}%`} stopColor={colors.lime[800]} stopOpacity="1.0" />
-          <stop offset={`${i*5+2}%`} stopColor={colors.lime[900]} stopOpacity="1.0" />
+          <stop key={i} offset={`${i*5}%`} stopColor={colors.lime[900]} stopOpacity="1.0" />
+          <stop key={i} offset={`${i*5+1}%`} stopColor={colors.lime[800]} stopOpacity="1.0" />
+          <stop key={i} offset={`${i*5+2}%`} stopColor={colors.lime[900]} stopOpacity="1.0" />
         </>
       ))}
     </linearGradient>
@@ -42,7 +42,7 @@ const fill = {
     <linearGradient id="lgbtq" x1="0%" y1="0%" x2="0%" y2="100%">
       {['red', 'orange', 'yellow', 'green', 'blue', 'violet'].map(c => {
         let next = step + 100/6
-        let stop = <>
+        const stop = <>
           <stop offset={`${step}%`} stopColor={colors[c][500]} stopOpacity="1.0" />
           <stop offset={`${next}%`} stopColor={colors[c][500]} stopOpacity="1.0" />
         </>

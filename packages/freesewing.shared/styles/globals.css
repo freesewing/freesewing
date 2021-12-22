@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import './code.css';
+@import './svg-freesewing-draft.css';
 
 /* Applied styles for common HTML tags */
 @layer components {

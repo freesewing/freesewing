@@ -129,9 +129,9 @@ module.exports = {
     * the highlighted code.
     * The names should (hopefully) speak for themselves
     */
-    '--code-background-color': colors.neutral['100'],
-    '--code-border-color': colors.neutral['300'],
-    '--code-color': colors.neutral['900'],
+    '--code-background-color': colors.neutral['800'],
+    '--code-border-color': colors.neutral['900'],
+    '--code-color': colors.neutral['100'],
     '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
     '--code-border-radius': '0.5rem',
     '--code-border-style': 'solid',
@@ -141,16 +141,16 @@ module.exports = {
     /*
      * These variables are used to style the highlighted tokesn themselves
      */
-    '--code-color-keyword': colors.pink['500'],
+    '--code-color-keyword': colors.pink['400'],
     '--code-font-weight-keyword': 'bold',
-    '--code-color-entity': colors.violet['500'],
+    '--code-color-entity': colors.violet['400'],
     '--code-font-weight-entity': 'bold',
-    '--code-color-constant': colors.lime['600'],
-    '--code-color-string': colors.sky['600'],
+    '--code-color-constant': colors.lime['400'],
+    '--code-color-string': colors.sky['400'],
     '--code-font-style-string': 'italic',
-    '--code-color-variable': colors.indigo['600'],
-    '--code-color-comment': colors.neutral['600'],
-    '--code-color-tag': colors.green['600'],
+    '--code-color-variable': colors.indigo['400'],
+    '--code-color-comment': colors.neutral['400'],
+    '--code-color-tag': colors.green['400'],
     '--code-color-property': 'inherit',
     '--code-font-weight-property': 'bold',
 
