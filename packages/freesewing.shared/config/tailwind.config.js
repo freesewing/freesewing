@@ -1,7 +1,5 @@
 // Handle themes
-const allThemes = require('../themes')
-const themes = {}
-for (const theme in allThemes) themes[theme] = allThemes[theme].config
+const themes = require('../themes')
 
 module.exports = {
   content: [

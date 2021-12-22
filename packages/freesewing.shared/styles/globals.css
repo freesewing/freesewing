@@ -5,8 +5,9 @@
 @import './code.css';
 @import './svg-freesewing-draft.css';
 
-/* Applied styles for common HTML tags */
 @layer components {
+
+  /* Applied styles for common HTML tags */
   h1 { @apply text-base-content text-4xl py-5 font-bold lg:text-6xl }
   h2 { @apply text-base-content text-3xl py-4 font-bold lg:text-4xl }
   h3 { @apply text-base-content text-2xl py-3 font-bold lg:text-3xl }
@@ -14,12 +15,86 @@
   h5 { @apply text-base-content text-lg py-1 font-bold lg:text-xl }
   h6 { @apply text-base-content text-base font-bold lg:text-lg }
   p { @apply text-base-content my-1 py-2 lg:text-xl }
+
   /* mdx styles */
   .mdx a { @apply text-secondary }
   .mdx a:hover { @apply text-secondary-focus }
   .mdx p > code { @apply text-info px-1 rounded-lg }
   .mdx ul { @apply pl-4 list-disc list-inside text-base-content }
+
+  /* FreeSewing SVG output styles */
+  .fs-stroke-fabric      { stroke: var(--pattern-fabric); }
+  .fs-stroke-lining      { stroke: var(--pattern-lining); }
+  .fs-stroke-interfacing { stroke: var(--pattern-interfacing); }
+  .fs-stroke-canvas      { stroke: var(--pattern-canvas); }
+  .fs-stroke-various     { stroke: var(--pattern-various); }
+  .fs-stroke-mark        { stroke: var(--pattern-mark); }
+  .fs-stroke-contrast    { stroke: var(--pattern-contrast); }
+  .fs-stroke-note        { stroke: var(--pattern-note); }
+  svg.freesewing.draft path.fabric,
+  svg.freesewing.draft circle.fabric { @apply fs-stroke-fabric }
+  svg.freesewing.draft path.lining,
+  svg.freesewing.draft circle.lining { @apply fs-stroke-lining }
+  svg.freesewing.draft path.interfacing,
+  svg.freesewing.draft circle.interfacing { @apply fs-stroke-interfacing }
+  svg.freesewing.draft path.canvas,
+  svg.freesewing.draft circle.canvas { @apply fs-stroke-canvas }
+  svg.freesewing.draft path.various,
+  svg.freesewing.draft circle.various { @apply fs-stroke-various }
+  svg.freesewing.draft path.mark,
+  svg.freesewing.draft circle.mark { @apply fs-stroke-mark }
+  svg.freesewing.draft path.contrast,
+  svg.freesewing.draft circle.contrast { @apply fs-stroke-contrast }
+  svg.freesewing.draft path.note,
+  svg.freesewing.draft circle.note { @apply fs-stroke-note }
+  .fs-fill-fabric      { fill: var(--pattern-fabric); }
+  .fs-fill-lining      { fill: var(--pattern-lining); }
+  .fs-fill-interfacing { fill: var(--pattern-interfacing); }
+  .fs-fill-canvas      { fill: var(--pattern-canvas); }
+  .fs-fill-various     { fill: var(--pattern-various); }
+  .fs-fill-mark        { fill: var(--pattern-mark); }
+  .fs-fill-contrast    { fill: var(--pattern-contrast); }
+  .fs-fill-note        { fill: var(--pattern-note); }
+  svg.freesewing.draft path.fill-fabric,
+  svg.freesewing.draft text.fill-fabric,
+  svg.freesewing.draft tspan.fill-fabric,
+  svg.freesewing.draft circle.fill-fabric { @apply fs-fill-fabric }
+  svg.freesewing.draft text.fill-lining,
+  svg.freesewing.draft tspan.fill-lining,
+  svg.freesewing.draft path.fill-lining,
+  svg.freesewing.draft circle.fill-lining { @apply fs-fill-lining }
+  svg.freesewing.draft text.fill-interfacing,
+  svg.freesewing.draft tspan.fill-interfacing,
+  svg.freesewing.draft path.fill-interfacing,
+  svg.freesewing.draft circle.fill-interfacing { @apply fs-fill-interfacing }
+  svg.freesewing.draft text.fill-canvas,
+  svg.freesewing.draft tspan.fill-canvas,
+  svg.freesewing.draft path.fill-canvas,
+  svg.freesewing.draft circle.fill-canvas { @apply fs-fill-canvas }
+  svg.freesewing.draft text.fill-various,
+  svg.freesewing.draft tspan.fill-various,
+  svg.freesewing.draft path.fill-various,
+  svg.freesewing.draft circle.fill-various { @apply fs-fill-various }
+  svg.freesewing.draft path.fill-mark,
+  svg.freesewing.draft text.fill-mark,
+  svg.freesewing.draft tspan.fill-mark,
+  svg.freesewing.draft circle.fill-mark { @apply fs-fill-mark }
+  svg.freesewing.draft text.fill-contrast,
+  svg.freesewing.draft tspan.fill-contrast,
+  svg.freesewing.draft path.fill-contrast,
+  svg.freesewing.draft circle.fill-contrast { @apply fs-fill-contrast }
+  svg.freesewing.draft text.fill-note,
+  svg.freesewing.draft tspan.fill-note,
+  svg.freesewing.draft path.fill-note,
+  svg.freesewing.draft circle.fill-note { @apply fs-fill-note }
+
+  .fs-fill-bg { fill: var(--pattern-bg); }
+  .fs-fill-current { fill: currentColor; }
+  svg.freesewing.draft .fill-bg { @apply fs-fill-bg }
+  svg.freesewing.draft .fill-current { @apply fs-fill-current }
 }
+
+
 
 details { user-select: none; }
 details > summary > svg.details-toggle {

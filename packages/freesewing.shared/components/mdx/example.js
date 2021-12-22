@@ -5,6 +5,8 @@ import tutorial from '@freesewing/tutorial'
 import Draft from '@freesewing/components/Draft'
 import Icon from 'shared/components/icon'
 //import Design from '../Workbench/Design'
+//
+const Design = props => <p>TODO: Design</p>
 
 const Example = ({
   pattern = 'examples',
@@ -60,7 +62,7 @@ const Example = ({
   const patternProps = patternInstance.getRenderProps()
   return (
     <figure className={designMode ? 'design example' : 'example'}>
-      <div className="example">
+      <div className="example text-base-content">
         <div className="actions">
           <button
             disabled={!designMode}
@@ -69,23 +71,23 @@ const Example = ({
           >
             <Icon icon='settings' />
           </button>
-          <div className="p-6 card bordered">
-            <div className="form-control">
-              <label className="cursor-pointer label">
-                <span className="label-text">Design mode</span>
-                <input
-                  type="checkbox"
-                  checked={designMode}
-                  className="toggle toggle-primary"
-                  onChange={() => setDesignMode(!designMode)}
-                />
-              </label>
-            </div>
+          <div className="form-control">
+            <label className="cursor-pointer label justify-start gap-4 font-lg lg:font-xl font-bold">
+              <input
+                type="checkbox"
+                checked={designMode}
+                className="toggle toggle-secondary"
+                onChange={() => setDesignMode(!designMode)}
+              />
+              <span className="label-text text-secondary">{designMode ? 'Disable' : 'Enable'} Developer View</span>
+            </label>
           </div>
         </div>
-        <Draft {...patternProps} design={designMode} focus={focus} raiseEvent={raiseEvent} />
+        <div className="shadow rounded border border-base-200">
+          <Draft {...patternProps} design={designMode} focus={focus} raiseEvent={raiseEvent} />
+        </div>
       </div>
-      <figcaption>{children}</figcaption>
+      <figcaption className="text-base-content text-center text-base lg:text-lg italic">{children}</figcaption>
       {designMode && (
         <div className="design">
           <Design

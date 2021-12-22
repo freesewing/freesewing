@@ -19,11 +19,20 @@ const mdxCustomComponents = {
   Tip: props => <Popout {...props} tip />,
   Warning: props => <Popout {...props} warning />,
   YouTube,
-  // Tailwind typography plugin overrides
-  h5: props => <h5 className="font-bold my-2">{props.children}</h5>,
-  h6: props => <h6 className="font-bold my-2 text-sm">{props.children}</h6>,
   pre: props => <Highlight {...props} />,
   //code: props => <Highlight {...props} tag='code'/>,
+  // TODO: Handle PatternPage component
+  PatternPage: props => (
+    <Popout {...props} fixme>
+      <p>
+        The PatternPage component is not yet implemented.
+        <br />
+        Below are the props:
+      </p>
+      <pre>{JSON.stringify(props, null ,2)}</pre>
+    </Popout>
+  ),
+
 }
 
 export default mdxCustomComponents
