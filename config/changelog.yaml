@@ -53,8 +53,11 @@ unreleased:
       - Added (esm) unit tests
 
   Changed:
+    plugin-buttons:
+      - Add utility classes and CSS variables for better styling support
+
     plugin-scalebox:
-      - Add utility classes for better styling support
+      - Add utility classes and CSS variables for better styling support
 
   Fixed:
     plugin-buttons:
