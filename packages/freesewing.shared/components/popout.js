@@ -10,15 +10,15 @@ const colors = {
   none: '',
 }
 
-let forceTailwind = <p className="border-accent" />
+let forceTailwind = <p className="border-accent bg-accent" />
 forceTailwind = <p className="text-accent" />
-forceTailwind = <p className="border-secondary" />
+forceTailwind = <p className="border-secondary bg-secondary" />
 forceTailwind = <p className="text-secondary" />
-forceTailwind = <p className="border-error" />
+forceTailwind = <p className="border-error bg-error" />
 forceTailwind = <p className="text-error" />
-forceTailwind = <p className="border-warning" />
+forceTailwind = <p className="border-warning bg-warning" />
 forceTailwind = <p className="text-warning" />
-forceTailwind = <p className="border-info" />
+forceTailwind = <p className="border-info bg-info" />
 forceTailwind = <p className="text-info" />
 
 const Popout = (props) => {
@@ -29,7 +29,7 @@ const Popout = (props) => {
   const color = colors[type]
 
   return (
-    <div className="relative my-8">
+    <div className={`relative my-8 bg-${color} bg-opacity-5`}>
       <div className={`
         border-l-4 px-8 py-2 shadow border-${color}`}>
         <div className={`font-bold uppercase text-${color}`}>

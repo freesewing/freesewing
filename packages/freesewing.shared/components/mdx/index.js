@@ -10,7 +10,7 @@ import rendertest from '@freesewing/rendertest'
 import tutorial from '@freesewing/tutorial'
 
 
-const mdxCustomComponents = {
+const mdxCustomComponents = (app) => ({
   // Custom components
   DesignIterator,
   Example: props => <Example
@@ -20,7 +20,7 @@ const mdxCustomComponents = {
   Fixme: props => <Popout {...props} fixme />,
   Link: props => <Popout {...props} link />,
   Note: props => <Popout {...props} note />,
-  ReadMore,
+  ReadMore: props => <ReadMore {...props} app={app} />,
   Related: props => <Popout {...props} related />,
   Tip: props => <Popout {...props} tip />,
   Warning: props => <Popout {...props} warning />,
@@ -39,7 +39,7 @@ const mdxCustomComponents = {
     </Popout>
   ),
 
-}
+})
 
 export default mdxCustomComponents
 

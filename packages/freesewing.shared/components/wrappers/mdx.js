@@ -28,7 +28,7 @@ const MdxWrapper = ({mdx, app, components={}}) => {
    * extra components via props
    */
   const allComponents = {
-    ...customComponents,
+    ...customComponents(app),
     ...components
   }
 

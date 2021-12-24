@@ -13,6 +13,7 @@ svg.freesewing.pattern {
     stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale));
     stroke-linecap: round;
     stroke-linejoin: round;
+    stroke: currentColor;
   }
 
   /* Stroke width utility classes */

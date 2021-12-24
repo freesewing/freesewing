@@ -695,8 +695,8 @@ export default {
     "slug": "guides/prerequisites/coordinate-system"
   },
   "guides/prerequisites": {
-    "title": "Prerequisites",
-    "order": "100Prerequisites",
+    "title": "Before you start",
+    "order": "100Before you start",
     "slug": "guides/prerequisites"
   },
   "guides/prerequisites/parametric-pattern-design": {

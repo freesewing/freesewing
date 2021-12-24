@@ -21,7 +21,7 @@ function useApp(full = true) {
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
   const [navigation, setNavigation] = useState(prebuildNavigation[language])
-
+  const [slug, setSlug] = useState('/')
 
   // State methods
   const togglePrimaryMenu = () => setPrimaryMenu(!primaryMenu)
@@ -58,12 +58,14 @@ function useApp(full = true) {
     language,
     navigation,
     primaryMenu,
+    slug,
     theme,
 
     // State setters
     setLanguage,
     setNavigation,
     setPrimaryMenu,
+    setSlug,
     setTheme,
 
     // State handlers

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
-//import {themeChange} from "theme-change"
+import { useRouter } from 'next/router'
 //import Head from 'next/head'
 //import { useHotkeys } from 'react-hotkeys-hook'
 //import themes from '@/shared/themes'
-//import { useRouter } from 'next/router'
 //import config from '@/site/freesewing.config.js'
 // Shared components
 import Layout from 'shared/components/layouts/default'
@@ -24,8 +23,8 @@ const AppWrapper= props => {
     trackMouse: true
   })
 
-  //const router = useRouter()
-  //const path = router.asPath
+  const router = useRouter()
+  props.app.setSlug(router.asPath.slice(1))
   //const locale = router.locale || config.language
   //const tree = useNavigation(locale, path)
 

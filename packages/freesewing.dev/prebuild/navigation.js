@@ -822,10 +822,10 @@ export default {
         }
       },
       "prerequisites": {
-        "__title": "Prerequisites",
-        "__linktitle": "Prerequisites",
+        "__title": "Before you start",
+        "__linktitle": "Before you start",
         "__slug": "guides/prerequisites",
-        "__order": "100Prerequisites",
+        "__order": "100Before you start",
         "bezier-curves": {
           "__title": "Bézier curves",
           "__linktitle": "Bézier curves",
