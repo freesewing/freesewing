@@ -97,7 +97,7 @@ export default function (so) {
     this.points.__scaleboxText.attr('data-text', 'supportFreesewingBecomeAPatron')
     this.points.__scaleboxLink = this.points.__scaleboxLink
       .attr('data-text', 'freesewing.org/patrons/join')
-      .attr('data-text-class', 'text-xs fill-note')
+      .attr('data-text-class', 'text-sm fill-note')
   }
   this.points.__scaleboxText.attr('data-text-class', 'text-xs').attr('data-text-lineheight', 4)
   // Instructions
