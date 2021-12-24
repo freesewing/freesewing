@@ -114,3 +114,50 @@ path.gridline.imperial {
 path.gridline.imperial.sm {
   stroke-dasharray: 2 2;
 }
+
+
+figure.develop.example div.develop {
+  .path,
+  .point {
+    border-left: 0.25rem solid transparent;
+    padding-left: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .path {
+    border-left: 3px dotted transparent;
+    padding-left: 4px;
+  }
+  .path.c0,
+  .point.c0 {
+    border-color: var(--pattern-dev-0);
+  }
+  .path.c1,
+  .point.c1 {
+    border-color: var(--pattern-dev-1);
+  }
+  .path.c2,
+  .point.c2 {
+    border-color: var(--pattern-dev-2);
+  }
+  .path.c3,
+  .point.c3 {
+    border-color: var(--pattern-dev-3);
+  }
+  .path.c4,
+  .point.c4 {
+    border-color: var(--pattern-dev-4);
+  }
+  .path.c5,
+  .point.c5 {
+    border-color: var(--pattern-dev-5);
+  }
+  .path.c6,
+  .point.c6 {
+    border-color: var(--pattern-dev-6);
+  }
+  .path.c7,
+  .point.c7 {
+    border-color: var(--pattern-dev-7);
+  }
+}
+
