@@ -55,9 +55,10 @@ unreleased:
   Changed:
     plugin-buttons:
       - Add utility classes and CSS variables for better styling support
-
     plugin-scalebox:
       - Add utility classes and CSS variables for better styling support
+    rendertest:
+      - Updated the rendertest pattern to be more concise
 
   Fixed:
     plugin-buttons:
