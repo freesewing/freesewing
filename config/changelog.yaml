@@ -3,6 +3,7 @@ unreleased:
   Added:
     core:
       - Added the new attributes.setIfUnset() method
+      - Added the new `scale` setting
     plugin-banner:
       - Added (esm) unit tests
     plugin-bartack:
@@ -53,9 +54,13 @@ unreleased:
       - Added (esm) unit tests
 
   Changed:
+    plugin-bartack:
+      - Add utility classes and CSS variables for better styling support
     plugin-buttons:
       - Add utility classes and CSS variables for better styling support
     plugin-scalebox:
+      - Add utility classes and CSS variables for better styling support
+    plugin-title:
       - Add utility classes and CSS variables for better styling support
     rendertest:
       - Updated the rendertest pattern to be more concise

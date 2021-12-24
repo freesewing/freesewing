@@ -27,7 +27,6 @@ customRollup:
   - gatsby-remark-jargon
   - i18n
   - prettier-config
-  - react-pattern
   - remark-jargon
   - strapi
   - utils

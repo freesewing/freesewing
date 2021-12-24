@@ -62,7 +62,6 @@ plugin-title: 'A FreeSewing plugin to add a title to your pattern parts'
 plugin-validate: 'A FreeSewing plugin that validates aspects of your code'
 plugin-versionfree-svg: 'A FreeSewing plugin to keep version info out of your SVG to allow easy diffs across versions'
 prettier-config: "FreeSewing's shared configuration for prettier"
-react-pattern: "React component to render a FreeSewing pattern"
 remark-jargon: 'A Remark plugin for jargon terms'
 rendertest: 'A FreeSewing pattern to test (y)our render engine our CSS'
 sandy: 'A FreeSewing pattern for a circle skirt'
