@@ -3,11 +3,12 @@ import { round } from './utils'
 import { version } from '../package.json'
 
 function Svg(pattern) {
+  console.log(pattern)
   this.openGroups = []
   this.layout = {}
   this.freeId = 0
   this.body = ''
-  this.style = ''
+  this.style = `svg.freesewing.pattern { --pattern-scale: ${pattern.settings.scale} }`
   this.script = ''
   this.defs = ''
   this.pattern = pattern // Needed to expose pattern to hooks

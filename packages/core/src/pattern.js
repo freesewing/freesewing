@@ -60,6 +60,7 @@ export default function Pattern(config = { options: {} }) {
     margin: 2,
     layout: true,
     debug: true,
+    scale: 1,
     options: {},
     absoluteOptions: {},
   }
