@@ -83,7 +83,7 @@ export default function bartack(so, self) {
     else guide = so.path.clone()
   }
 
-  self.paths[name('bartack', so)] = bartackPath(guide, so, self).attr('class', 'stroke-sm bartack')
+  self.paths[name('bartack', so)] = bartackPath(guide, so, self).attr('class', 'stroke-sm stroke-mark')
 
   return true
 }
