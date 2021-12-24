@@ -32,14 +32,14 @@ export default {
       this.points[`_${prefix}_titleNr`] = so.at
         .clone()
         .attr('data-text', so.nr, overwrite)
-        .attr('data-text-class', 'title-nr note fill-note')
+        .attr('data-text-class', 'text-4xl fill-note bold')
         .attr('data-text-transform', transform(so.at))
       let shift = 10
       if (so.title) {
         this.points[`_${prefix}_titleName`] = so.at
           .shift(-90 - so.rotation, 13 * so.scale)
           .attr('data-text', so.title)
-          .attr('data-text-class', 'title-name')
+          .attr('data-text-class', 'text-lg fill-current bold')
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, 13 * so.scale)))
         shift += 10
       }
@@ -47,14 +47,14 @@ export default {
         .shift(-90 - so.rotation, shift * so.scale)
         .attr('data-text', this.context.config.name)
         .attr('data-text', 'v' + this.context.config.version)
-        .attr('data-text-class', 'title-pattern fill-note')
+        .attr('data-text-class', 'fill-note')
         .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       if (this.context.settings.metadata && this.context.settings.metadata.for) {
         shift += 8
         this.points[`_${prefix}_titleFor`] = so.at
           .shift(-90 - so.rotation, shift * so.scale)
           .attr('data-text', '( ' + this.context.settings.metadata.for + ' )')
-          .attr('data-text-class', 'title-pattern')
+          .attr('data-text-class', 'fill-current bold')
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       }
       if (this.context.config.cut && this.context.config.cut[this.name]) {
