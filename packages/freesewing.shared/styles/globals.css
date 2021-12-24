@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @import './code.css';
-@import './svg-freesewing-draft.css';
 
 @layer components {
 
@@ -31,22 +30,22 @@
   .fs-stroke-mark        { stroke: var(--pattern-mark); }
   .fs-stroke-contrast    { stroke: var(--pattern-contrast); }
   .fs-stroke-note        { stroke: var(--pattern-note); }
-  svg.freesewing.draft path.fabric,
-  svg.freesewing.draft circle.fabric { @apply fs-stroke-fabric }
-  svg.freesewing.draft path.lining,
-  svg.freesewing.draft circle.lining { @apply fs-stroke-lining }
-  svg.freesewing.draft path.interfacing,
-  svg.freesewing.draft circle.interfacing { @apply fs-stroke-interfacing }
-  svg.freesewing.draft path.canvas,
-  svg.freesewing.draft circle.canvas { @apply fs-stroke-canvas }
-  svg.freesewing.draft path.various,
-  svg.freesewing.draft circle.various { @apply fs-stroke-various }
-  svg.freesewing.draft path.mark,
-  svg.freesewing.draft circle.mark { @apply fs-stroke-mark }
-  svg.freesewing.draft path.contrast,
-  svg.freesewing.draft circle.contrast { @apply fs-stroke-contrast }
-  svg.freesewing.draft path.note,
-  svg.freesewing.draft circle.note { @apply fs-stroke-note }
+  svg.freesewing.pattern path.fabric,
+  svg.freesewing.pattern circle.fabric { @apply fs-stroke-fabric }
+  svg.freesewing.pattern path.lining,
+  svg.freesewing.pattern circle.lining { @apply fs-stroke-lining }
+  svg.freesewing.pattern path.interfacing,
+  svg.freesewing.pattern circle.interfacing { @apply fs-stroke-interfacing }
+  svg.freesewing.pattern path.canvas,
+  svg.freesewing.pattern circle.canvas { @apply fs-stroke-canvas }
+  svg.freesewing.pattern path.various,
+  svg.freesewing.pattern circle.various { @apply fs-stroke-various }
+  svg.freesewing.pattern path.mark,
+  svg.freesewing.pattern circle.mark { @apply fs-stroke-mark }
+  svg.freesewing.pattern path.contrast,
+  svg.freesewing.pattern circle.contrast { @apply fs-stroke-contrast }
+  svg.freesewing.pattern path.note,
+  svg.freesewing.pattern circle.note { @apply fs-stroke-note }
   .fs-fill-fabric      { fill: var(--pattern-fabric); }
   .fs-fill-lining      { fill: var(--pattern-lining); }
   .fs-fill-interfacing { fill: var(--pattern-interfacing); }
@@ -55,47 +54,47 @@
   .fs-fill-mark        { fill: var(--pattern-mark); }
   .fs-fill-contrast    { fill: var(--pattern-contrast); }
   .fs-fill-note        { fill: var(--pattern-note); }
-  svg.freesewing.draft path.fill-fabric,
-  svg.freesewing.draft text.fill-fabric,
-  svg.freesewing.draft tspan.fill-fabric,
-  svg.freesewing.draft circle.fill-fabric { @apply fs-fill-fabric }
-  svg.freesewing.draft text.fill-lining,
-  svg.freesewing.draft tspan.fill-lining,
-  svg.freesewing.draft path.fill-lining,
-  svg.freesewing.draft circle.fill-lining { @apply fs-fill-lining }
-  svg.freesewing.draft text.fill-interfacing,
-  svg.freesewing.draft tspan.fill-interfacing,
-  svg.freesewing.draft path.fill-interfacing,
-  svg.freesewing.draft circle.fill-interfacing { @apply fs-fill-interfacing }
-  svg.freesewing.draft text.fill-canvas,
-  svg.freesewing.draft tspan.fill-canvas,
-  svg.freesewing.draft path.fill-canvas,
-  svg.freesewing.draft circle.fill-canvas { @apply fs-fill-canvas }
-  svg.freesewing.draft text.fill-various,
-  svg.freesewing.draft tspan.fill-various,
-  svg.freesewing.draft path.fill-various,
-  svg.freesewing.draft circle.fill-various { @apply fs-fill-various }
-  svg.freesewing.draft path.fill-mark,
-  svg.freesewing.draft text.fill-mark,
-  svg.freesewing.draft tspan.fill-mark,
-  svg.freesewing.draft circle.fill-mark { @apply fs-fill-mark }
-  svg.freesewing.draft text.fill-contrast,
-  svg.freesewing.draft tspan.fill-contrast,
-  svg.freesewing.draft path.fill-contrast,
-  svg.freesewing.draft circle.fill-contrast { @apply fs-fill-contrast }
-  svg.freesewing.draft text.fill-note,
-  svg.freesewing.draft tspan.fill-note,
-  svg.freesewing.draft path.fill-note,
-  svg.freesewing.draft circle.fill-note { @apply fs-fill-note }
+  svg.freesewing.pattern path.fill-fabric,
+  svg.freesewing.pattern text.fill-fabric,
+  svg.freesewing.pattern tspan.fill-fabric,
+  svg.freesewing.pattern circle.fill-fabric { @apply fs-fill-fabric }
+  svg.freesewing.pattern text.fill-lining,
+  svg.freesewing.pattern tspan.fill-lining,
+  svg.freesewing.pattern path.fill-lining,
+  svg.freesewing.pattern circle.fill-lining { @apply fs-fill-lining }
+  svg.freesewing.pattern text.fill-interfacing,
+  svg.freesewing.pattern tspan.fill-interfacing,
+  svg.freesewing.pattern path.fill-interfacing,
+  svg.freesewing.pattern circle.fill-interfacing { @apply fs-fill-interfacing }
+  svg.freesewing.pattern text.fill-canvas,
+  svg.freesewing.pattern tspan.fill-canvas,
+  svg.freesewing.pattern path.fill-canvas,
+  svg.freesewing.pattern circle.fill-canvas { @apply fs-fill-canvas }
+  svg.freesewing.pattern text.fill-various,
+  svg.freesewing.pattern tspan.fill-various,
+  svg.freesewing.pattern path.fill-various,
+  svg.freesewing.pattern circle.fill-various { @apply fs-fill-various }
+  svg.freesewing.pattern path.fill-mark,
+  svg.freesewing.pattern text.fill-mark,
+  svg.freesewing.pattern tspan.fill-mark,
+  svg.freesewing.pattern circle.fill-mark { @apply fs-fill-mark }
+  svg.freesewing.pattern text.fill-contrast,
+  svg.freesewing.pattern tspan.fill-contrast,
+  svg.freesewing.pattern path.fill-contrast,
+  svg.freesewing.pattern circle.fill-contrast { @apply fs-fill-contrast }
+  svg.freesewing.pattern text.fill-note,
+  svg.freesewing.pattern tspan.fill-note,
+  svg.freesewing.pattern path.fill-note,
+  svg.freesewing.pattern circle.fill-note { @apply fs-fill-note }
 
   .fs-fill-bg { fill: var(--pattern-bg); }
   .fs-fill-current { fill: currentColor; }
-  svg.freesewing.draft .fill-bg { @apply fs-fill-bg }
-  svg.freesewing.draft .fill-current { @apply fs-fill-current }
+  svg.freesewing.pattern .fill-bg { @apply fs-fill-bg }
+  svg.freesewing.pattern .fill-current { @apply fs-fill-current }
 }
 
 
-
+/* Style for navigation */
 details { user-select: none; }
 details > summary > svg.details-toggle {
   transform: rotate(90deg);
@@ -114,4 +113,6 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+/* Style for patterns */
+@import './svg-freesewing-draft.css';
 

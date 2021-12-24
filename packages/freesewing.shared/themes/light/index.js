@@ -152,7 +152,7 @@ module.exports = {
   '--code-color-property': 'inherit',
   '--code-font-weight-property': 'bold',
 
-  /* FREESEWING PATTERN COLORS
+  /* FREESEWING PATTERN THEMEING
   *
   * These are variables to style FreeSewing SVG output (drafts, examples, and so on)
   */
@@ -175,5 +175,37 @@ module.exports = {
   '--pattern-contrast': colors.pink['500'],
   // Color for noting things on a pattern
   '--pattern-note': colors.violet['500'],
+
+  // Pattern xs text size
+  '--pattern-text-xs': '0.2rem',
+  // Pattern sm text size
+  '--pattern-text-sm': '0.3rem',
+  // Pattern default text size
+  '--pattern-text': '0.4rem',
+  // Pattern lg text size
+  '--pattern-text-lg': '0.6rem',
+  // Pattern xl text size
+  '--pattern-text-xl': '0.8rem',
+  // Pattern 2xl text size
+  '--pattern-text-2xl': '1.5rem',
+  // Pattern 3xl text size
+  '--pattern-text-3xl': '2rem',
+  // Pattern 4xl text size
+  '--pattern-text-4xl': '3rem',
+
+  // Pattern overal scale for strokes and text sizes
+  '--pattern-scale': '1',
+  // Pattern xs stroke width
+  '--pattern-stroke-xs': "0.2px",
+  // Pattern sm stroke width
+  '--pattern-stroke-sm': "0.4px",
+  // Pattern default stroke width
+  '--pattern-stroke': "0.7px",
+  // Pattern lg stroke width
+  '--pattern-stroke-lg': "1.3px",
+  // Pattern xl stroke width
+  '--pattern-stroke-xl': "2px",
+  // Pattern xxl stroke width
+  '--pattern-stroke-2xl': "4px",
 
 }

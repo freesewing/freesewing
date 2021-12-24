@@ -70,4 +70,11 @@ module.exports = {
   '--pattern-contrast': colors.pink['500'],
   '--pattern-note': colors.violet['500'],
 
+  '--pattern-scale': 1,
+  '--pattern-stroke-xs': "0.2",
+  '--pattern-stroke-sm': "0.4",
+  '--pattern-stroke': "0.7",
+  '--pattern-stroke-lg': "1.3",
+  '--pattern-stroke-xl': "2",
+  '--pattern-stroke-xxl': "4",
 }

@@ -4,6 +4,7 @@ import rendertest from '@freesewing/rendertest'
 import tutorial from '@freesewing/tutorial'
 import Draft from '@freesewing/components/Draft'
 import Icon from 'shared/components/icon'
+import Pattern from '../../../react-pattern/dist/index.mjs'
 //import Design from '../Workbench/Design'
 //
 const Design = props => <p>TODO: Design</p>
@@ -84,7 +85,7 @@ const Example = ({
           </div>
         </div>
         <div className="shadow rounded border border-base-200">
-          <Draft {...patternProps} design={designMode} focus={focus} raiseEvent={raiseEvent} />
+          <Pattern {...patternProps} design={designMode} focus={focus} raiseEvent={raiseEvent} />
         </div>
       </div>
       <figcaption className="text-base-content text-center text-base lg:text-lg italic">{children}</figcaption>
