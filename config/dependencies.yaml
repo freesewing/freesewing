@@ -201,6 +201,9 @@ plugin-bundle:
     '@freesewing/plugin-scalebox': *freesewing
     '@freesewing/plugin-round': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
+react-pattern:
+  peer:
+    '@freesewing/i18n': *freesewing
 remark-jargon:
   _:
     'unist-util-visit': '^4.0.0'

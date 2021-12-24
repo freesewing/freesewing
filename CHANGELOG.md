@@ -39,6 +39,10 @@
 
  - Added (esm) unit tests
 
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
 #### Fixed
 
  - Only add snippets once to SVG object
@@ -121,6 +125,10 @@
 
  - Added (esm) unit tests
 
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
 ### plugin-sprinkle
 
 #### Added
@@ -156,6 +164,12 @@
 #### Added
 
  - Added (esm) unit tests
+
+### rendertest
+
+#### Changed
+
+ - Updated the rendertest pattern to be more concise
 
 
 ## 2.19.5 (2022-11-13)
