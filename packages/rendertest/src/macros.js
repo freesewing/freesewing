@@ -1,33 +1,46 @@
 export default function (part) {
-  let { macro, Point, Path, points, paths, store } = part.shorthand()
+  const { macro, Point, Path, points, paths, store } = part.shorthand()
 
   let y = store.get('y')
-  let w = store.get('w')
+  const w = store.get('w')
   y += 10
-  points.ml = new Point(0, y)
-  points.mr = new Point(w, y)
-  paths.macros = new Path().move(points.ml).line(points.mr).attr('data-text', 'macros')
+  points.macros = new Point(0,y)
+    .attr('data-text', 'Macros')
+    .attr('data-text-class', 'text-lg bold')
 
-  y += 40
+  // title
+  y += 60
   macro('title', {
     at: new Point(w / 2, y),
     nr: 5,
     title: 'title',
   })
 
+  // grainline
   y += 40
   macro('grainline', {
     from: new Point(0, y),
     to: new Point(w, y),
   })
 
-  y += 20
+  // cutonfold
+  y += 35
   macro('cutonfold', {
-    from: new Point(w, y),
-    to: new Point(0, y),
+    from: new Point(0, y),
+    to: new Point(w, y),
   })
 
-  y += 70
+  // cutonfold * grainline
+  y += 30
+  macro('cutonfold', {
+    from: new Point(0, y),
+    to: new Point(w, y),
+    grainline: true,
+    prefix: 'combo'
+  })
+
+  // hd, vd, ld, and pd
+  y += 30
   points.dimf = new Point(20, y)
   points.dimt = new Point(w - 20, y + 120)
   points.dimv = new Point(20, y + 80)
@@ -55,10 +68,18 @@ export default function (part) {
     d: 10,
   })
 
+  // scalebox
   y += 170
   macro('scalebox', {
     at: new Point(w / 2, y),
   })
+
+  // miniscale
+  y += 45
+  macro('miniscale', {
+    at: new Point(w / 2, y),
+  })
+
   store.set('y', y)
 
   return part

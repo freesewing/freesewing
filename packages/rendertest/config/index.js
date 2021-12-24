@@ -16,11 +16,13 @@ export default {
   parts: ['test'],
   options: {
     width: { mm: 200, min: 50, max: 500, testIgnore: true },
-    colors: { bool: true },
+    strokeColors: { bool: true },
+    strokeWidths: { bool: true },
+    strokeStyles: { bool: true },
+    strokeCombos: { bool: true },
     circles: { bool: true },
     text: { bool: true },
     snippets: { bool: true },
     macros: { bool: true },
-    widthHd: { bool: true },
   },
 }
