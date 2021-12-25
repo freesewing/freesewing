@@ -5,6 +5,8 @@ import Link from 'next/link'
 import Logo from 'shared/components/logos/freesewing.js'
 import PrimaryNavigation from 'shared/components/navigation/primary'
 import get from 'lodash.get'
+// Site components
+import Header from 'site/components/header'
 
 const iconSize= 48
 
@@ -71,14 +73,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
     bg-base-100
     lg:py-8
     `} data-theme={app.theme}>
-      <header className={`
-        bg-primary
-        p-4
-        block
-        sm:hidden
-      `}>
-        header
-      </header>
+      <Header app={app}/>
       <main className={`
         grow flex flex-row
         sm:py-8
@@ -89,9 +84,11 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
         <aside className={`
           fixed top-0 right-0
           ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
+          pt-16
+          sm:pt-4
           sm:relative sm:transform-none
           h-screen w-screen
-          bg-base-50
+          bg-base-100
           sm:bg-base-50
           sm:max-w-[38.2%]
           sm:flex sm:flex-row-reverse

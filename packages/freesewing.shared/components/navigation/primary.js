@@ -156,7 +156,7 @@ const TopTheme = ({ app }) => (
     hover:cursor-row-resize
     hover:bg-base-200
     p-2
-    text-primary
+    text-content-base
   `}>
     <Icon icon='theme' className="text-secondary"/>
     <div className={`grow`}>
