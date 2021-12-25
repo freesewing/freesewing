@@ -22,6 +22,7 @@ function useApp(full = true) {
   const [primaryMenu, setPrimaryMenu] = useState(false)
   const [navigation, setNavigation] = useState(prebuildNavigation[language])
   const [slug, setSlug] = useState('/')
+  const [loading, setLoading] = useState(false)
 
   // State methods
   const togglePrimaryMenu = () => setPrimaryMenu(!primaryMenu)
@@ -56,6 +57,7 @@ function useApp(full = true) {
 
     // State
     language,
+    loading,
     navigation,
     primaryMenu,
     slug,
@@ -63,10 +65,13 @@ function useApp(full = true) {
 
     // State setters
     setLanguage,
+    setLoading,
     setNavigation,
     setPrimaryMenu,
     setSlug,
     setTheme,
+    startLoading: () => setLoading(true),
+    stopLoading: () => setLoading(false),
 
     // State handlers
     togglePrimaryMenu,

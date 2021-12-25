@@ -119,6 +119,22 @@ module.exports = {
   // focus ring offset size for button and inputs
   '--focus-ring-offset': '2px',
 
+  /* THEME GRADIENT
+  *
+  * This is used as a border & loading indicator
+  */
+  '--theme-gradient': `repeating-linear-gradient(
+    -45deg,
+    ${colors.sky[400]},
+    ${colors.sky[400]} 10px,
+    transparent 10px,
+    transparent 20px,
+    ${colors.violet[400]} 20px,
+    ${colors.violet[400]} 30px,
+    transparent 30px,
+    transparent 40px
+  )`,
+
   /* CODE HIGHLIGHTING COLORS
   *
   * These are variables to style highlighted code blocks.
@@ -137,7 +153,7 @@ module.exports = {
   '--code-outer-padding': '0 0.5rem',
   '--code-inner-padding': '1rem',
   /*
-    * These variables are used to style the highlighted tokesn themselves
+    * These variables are used to style the highlighted tokens themselves
     */
   '--code-color-keyword': colors.pink['400'],
   '--code-font-weight-keyword': 'bold',

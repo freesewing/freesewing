@@ -13,22 +13,22 @@ const Header = ({ app }) => {
   return (
       <header className={`
         bg-primary
-        p-4
         block
         sm:hidden
         z-10
+        p-4
       `}>
-          <button
-            className={`
-              btn border-base-100 text-base-100 btn-sm border border-transparent bg-transparent
-              hover:border hover:bg-transparent hover:border-base-100
-            `}
-            onClick={app.togglePrimaryMenu}>
-              {app.primaryMenu
-                ? <><Left />&nbsp; Hide menu</>
-                : <>Show menu &nbsp;<Right /></>
-              }
-          </button>
+        <button
+          className={`
+            btn border-base-100 text-base-100 btn-sm border border-transparent bg-transparent
+            hover:border hover:bg-transparent hover:border-base-100
+          `}
+          onClick={app.togglePrimaryMenu}>
+            {app.primaryMenu
+              ? <><Left />&nbsp; Hide menu</>
+              : <>Show menu &nbsp;<Right /></>
+            }
+        </button>
       </header>
   )
 }

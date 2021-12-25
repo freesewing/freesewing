@@ -28,6 +28,22 @@ module.exports = {
   'warning': colors.amber['500'],
   'error': colors.red['600'],
 
+  '--theme-gradient': `repeating-linear-gradient(
+    -45deg,
+    #77cbf9,
+    #77cbf9 20px,
+    #ecadb9 20px,
+    #ecadb9 40px,
+    #ffffff 40px,
+    #ffffff 60px,
+    #ecadb9 60px,
+    #ecadb9 80px,
+    #77cbf9 80px,
+    #77cbf9 100px,
+    transparent 100px,
+    transparent 105px
+  )`,
+
   '--code-background-color': colors.neutral['100'],
   '--code-border-color': colors.neutral['300'],
   '--code-color': colors.neutral['900'],

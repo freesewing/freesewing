@@ -29,6 +29,18 @@ module.exports = {
   'warning': colors.amber['500'],
   'error': colors.red['400'],
 
+  '--theme-gradient': `repeating-linear-gradient(
+    -45deg,
+    ${colors.gray[500]},
+    ${colors.gray[500]} 10px,
+    transparent 10px,
+    transparent 20px,
+    ${colors.violet[500]} 20px,
+    ${colors.violet[500]} 30px,
+    transparent 30px,
+    transparent 40px
+  )`,
+
   '--code-background-color': '#111',
   '--code-border-color': colors.neutral['800'],
   '--code-color': colors.neutral['300'],

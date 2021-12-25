@@ -93,6 +93,24 @@
   svg.freesewing.pattern .fill-current { @apply fs-fill-current }
 }
 
+/* Theme gradient */
+.theme-gradient {
+  background: var(--theme-gradient);
+}
+.theme-gradient.loading {
+  animation-name: MOVE-BG;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes MOVE-BG {
+   from {
+     background-position-x: 0;
+   }
+   to {
+     background-position-x: -300px;
+   }
+}
 
 /* Style for navigation */
 details { user-select: none; }

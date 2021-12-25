@@ -28,6 +28,24 @@ module.exports = {
   'warning': colors.amber['500'],
   'error': colors.red['600'],
 
+  '--theme-gradient': `repeating-linear-gradient(
+    -45deg,
+    ${colors.red[500]},
+    ${colors.red[500]} 20px,
+    ${colors.orange[500]} 20px,
+    ${colors.orange[500]} 40px,
+    ${colors.yellow[500]} 40px,
+    ${colors.yellow[500]} 60px,
+    ${colors.green[500]} 60px,
+    ${colors.green[500]} 80px,
+    ${colors.blue[500]} 80px,
+    ${colors.blue[500]} 100px,
+    ${colors.violet[500]} 100px,
+    ${colors.violet[500]} 120px,
+    transparent 120px,
+    transparent 125px
+  )`,
+
   '--code-background-color': colors.neutral['100'],
   '--code-border-color': colors.neutral['300'],
   '--code-color': colors.neutral['900'],

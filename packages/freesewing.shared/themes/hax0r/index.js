@@ -30,6 +30,18 @@ module.exports = {
 
   '--rounded-btn': '0',
 
+  '--theme-gradient': `repeating-linear-gradient(
+    -45deg,
+    ${colors.lime[500]},
+    ${colors.lime[500]} 10px,
+    transparent 10px,
+    transparent 20px,
+    ${colors.lime[700]} 20px,
+    ${colors.lime[700]} 30px,
+    transparent 30px,
+    transparent 40px
+  )`,
+
   '--code-background-color': '#002407',
   '--code-border-color': colors.lime['900'],
   '--code-color': colors.lime['600'],

@@ -7,6 +7,7 @@ import PrimaryNavigation from 'shared/components/navigation/primary'
 import get from 'lodash.get'
 // Site components
 import Header from 'site/components/header'
+import Footer from 'site/components/footer'
 
 const iconSize= 48
 
@@ -61,6 +62,8 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
 const DefaultLayout = ({ app, title=false, children=[]}) => {
 
   const router = useRouter()
+  router?.events?.on('routeChangeStart', () => app.startLoading())
+  router?.events?.on('routeChangeComplete', () => app.stopLoading())
   const slug = router.asPath.slice(1)
   const [leftNav, setLeftNav] = useState(false)
 
@@ -71,9 +74,12 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
     flex flex-col justify-between
     min-h-screen
     bg-base-100
-    lg:py-8
     `} data-theme={app.theme}>
       <Header app={app}/>
+      <div className={`
+        h-1 w-full theme-gradient ${app.loading ? 'loading' : ''}
+        fixed top-0 right-0 z-20
+      `}></div>
       <main className={`
         grow flex flex-row
         sm:py-8
@@ -108,7 +114,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
           {children}
         </section>
       </main>
-      <footer className="bg-primary p-8">footer</footer>
+      <Footer app={app} />
     </div>
   )
 }

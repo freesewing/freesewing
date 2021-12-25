@@ -8,6 +8,7 @@ export default (props) => {
     <Page app={app} title='FIXME: Create homepage content'>
       <Logo size={200} theme={app.theme}/>
       <button className="btn btn-primary" onClick={app.togglePrimaryMenu}>toggle menu</button>
+      <div className="theme-gradient loading">test</div>
     </Page>
   )
 }
