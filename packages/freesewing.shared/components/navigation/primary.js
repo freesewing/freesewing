@@ -19,6 +19,10 @@ const force = [
   <p className="w-8 mr-3"/>
 ]
 
+/* helper method to order nav entries */
+const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
+
+
 // Component for the collapse toggle
 const Chevron = ({w=8, m=2}) => <svg
   className={`fill-current opacity-75 w-${w} h-${w} mr-${m} details-toggle hover:text-secondary`}
@@ -27,7 +31,7 @@ const Chevron = ({w=8, m=2}) => <svg
 </svg>
 
 // Helper method to filter out the real children
-const currentChildren = current => Object.values(current)
+const currentChildren = current => Object.values(order(current))
   .filter(entry => (typeof entry === 'object'))
 
 const howActive = (slug) => {
@@ -178,7 +182,7 @@ const Navigation = ({ app, active }) => {
       key={key}
       hasChildren={keepClosed.indexOf(key) === -1}
       nav={app.navigation}
-      current={orderBy(app.navigation[key], ['__order', '__title'], ['asc', 'asc'])}
+      current={order(app.navigation[key])}
       active={active}
     />)
   }

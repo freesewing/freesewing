@@ -12,6 +12,9 @@ import * as runtime from 'react/jsx-runtime.js'
 // Components that are available in all MDX
 import customComponents from 'shared/components/mdx'
 
+// Previous-Next navigation
+import PrevNext from '../mdx/prev-next'
+
 const MdxWrapper = ({mdx, app, components={}}) => {
 
   const [mdxModule, setMdxModule] = useState()
@@ -38,6 +41,7 @@ const MdxWrapper = ({mdx, app, components={}}) => {
   return (
     <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-lg lg:text-xl">
       {mdxModule && <MdxContent components={allComponents}/>}
+      <PrevNext app={app} />
     </div>
   )
 }

@@ -24,6 +24,7 @@
     "next": "latest",
     "react-swipeable": "^6.2.0",
     "rehype-highlight": "^5.0.1",
+    "remark-copy-linked-files": "^1.5.0",
     "remark-gfm": "^3.0.1",
     "remark-jargon": "^2.19.5"
   },

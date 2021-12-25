@@ -54,6 +54,48 @@ svg.freesewing.pattern {
   .center { text-anchor: middle; }
   .right { text-anchor: end; }
 
+  /* Developer view */
+  g.develop.point {
+    circle.center {
+      stroke: var(--pattern-contrast);
+      stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) / 2);
+      fill: transparent;
+    }
+    circle.hovertrap {
+      fill: var(--pattern-contrast);
+      stroke: var(--pattern-contrast);
+      stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) / 2);
+      fill-opacity: 0;
+      stroke-opacity: 0;
+      transform: all 0.5s ease-out;
+    }
+    circle.hovertrap:hover {
+      fill-opacity: 0.2;
+      cursor: pointer;
+    }
+  }
+  circle.develop.path.cp {
+    stroke: none;
+    fill: var(--pattern-lining);
+    fill-opacity: 0.4;
+  }
+  path.develop.path.cp {
+    stroke: var(--pattern-lining);
+    stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) / 2);
+  }
+  path.develop.hovertrap {
+    stroke: var(--pattern-lining);
+    stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) * 4);
+    stroke-opacity: 0;
+  }
+  path.develop.hovertrap:hover {
+    stroke: var(--pattern-contrast);
+    stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) * 4);
+    stroke-opacity: 0.2;
+    stroke-dasharray: 5 3;
+    cursor: pointer;
+  }
+
   /* New style for sampled sizes */
   path.size-3XS,
   path.size-2XS,

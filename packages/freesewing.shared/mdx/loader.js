@@ -8,6 +8,7 @@ import { compile } from '@mdx-js/mdx'
 // Remark plugins we want to use
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkGfm from 'remark-gfm'
+import remarkCopyLinkedFiles from 'remark-copy-linked-files'
 // Rehype plugins we want to use
 import rehypeHighlight from 'rehype-highlight'
 
@@ -28,13 +29,20 @@ const mdxLoader = async (language, site, slug) => {
     path.resolve(`../../markdown/${site}/${slug}/${language}.md`),
     'utf-8'
   )
-
   const mdx = String(
     await compile(md, {
       outputFormat: 'function-body',
       remarkPlugins: [
         remarkFrontmatter,
         remarkGfm,
+        [
+          remarkCopyLinkedFiles,
+          {
+            destinationDir: path.resolve(`../freesewing.${site}/public/mdx`),
+            sourceDir: path.resolve(`../../markdown/${site}/${slug}`),
+            staticPath: '/mdx/',
+          }
+        ]
       ],
       rehypePlugins: [
         rehypeHighlight

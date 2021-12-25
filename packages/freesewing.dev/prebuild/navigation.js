@@ -708,27 +708,27 @@ export default {
         }
       },
       "patterns": {
-        "__title": "Pattern guide",
-        "__linktitle": "Pattern guide",
+        "__title": "How patterns work",
+        "__linktitle": "How patterns work",
         "__slug": "guides/patterns",
-        "__order": "200Pattern guide",
+        "__order": "200How patterns work",
         "config": {
           "__title": "Configuration",
           "__linktitle": "Configuration",
           "__slug": "guides/patterns/config",
-          "__order": "60Configuration"
+          "__order": "10Configuration"
         },
         "parts": {
           "__title": "Parts",
           "__linktitle": "Parts",
           "__slug": "guides/patterns/parts",
-          "__order": "40Parts"
+          "__order": "20Parts"
         },
         "paths": {
           "__title": "Paths",
           "__linktitle": "Paths",
           "__slug": "guides/patterns/paths",
-          "__order": "20Paths"
+          "__order": "40Paths"
         },
         "pattern": {
           "__title": "Pattern",
@@ -740,19 +740,19 @@ export default {
           "__title": "Points",
           "__linktitle": "Points",
           "__slug": "guides/patterns/points",
-          "__order": "10Points"
+          "__order": "30Points"
         },
         "snippets": {
           "__title": "Snippets",
           "__linktitle": "Snippets",
           "__slug": "guides/patterns/snippets",
-          "__order": "20Snippets"
+          "__order": "50Snippets"
         },
         "store": {
           "__title": "Store",
           "__linktitle": "Store",
           "__slug": "guides/patterns/store",
-          "__order": "70Store"
+          "__order": "60Store"
         }
       },
       "plugins": {
@@ -827,34 +827,28 @@ export default {
         "__slug": "guides/prerequisites",
         "__order": "100Before you start",
         "bezier-curves": {
-          "__title": "Bézier curves",
-          "__linktitle": "Bézier curves",
+          "__title": "Understanding Bézier curves",
+          "__linktitle": "Understanding Bézier curves",
           "__slug": "guides/prerequisites/bezier-curves",
-          "__order": "50Bézier curves"
+          "__order": "50Understanding Bézier curves"
         },
         "coordinate-system": {
-          "__title": "Coordinate system",
-          "__linktitle": "Coordinate system",
+          "__title": "The coordinate system",
+          "__linktitle": "The coordinate system",
           "__slug": "guides/prerequisites/coordinate-system",
-          "__order": "30Coordinate system"
-        },
-        "parametric-pattern-design": {
-          "__title": "Parametric pattern design",
-          "__linktitle": "Parametric pattern design",
-          "__slug": "guides/prerequisites/parametric-pattern-design",
-          "__order": "10Parametric pattern design"
+          "__order": "30The coordinate system"
         },
         "svg": {
-          "__title": "SVG",
-          "__linktitle": "SVG",
+          "__title": "Scalable Vector Graphics",
+          "__linktitle": "Scalable Vector Graphics",
           "__slug": "guides/prerequisites/svg",
-          "__order": "20SVG"
+          "__order": "20Scalable Vector Graphics"
         },
         "units": {
-          "__title": "Units",
-          "__linktitle": "Units",
+          "__title": "Units in FreeSewing",
+          "__linktitle": "Units in FreeSewing",
           "__slug": "guides/prerequisites/units",
-          "__order": "40Units"
+          "__order": "40Units in FreeSewing"
         }
       }
     },

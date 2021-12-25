@@ -591,22 +591,22 @@ export default {
   },
   "guides/patterns/config": {
     "title": "Configuration",
-    "order": "60Configuration",
+    "order": "10Configuration",
     "slug": "guides/patterns/config"
   },
   "guides/patterns": {
-    "title": "Pattern guide",
-    "order": "200Pattern guide",
+    "title": "How patterns work",
+    "order": "200How patterns work",
     "slug": "guides/patterns"
   },
   "guides/patterns/parts": {
     "title": "Parts",
-    "order": "40Parts",
+    "order": "20Parts",
     "slug": "guides/patterns/parts"
   },
   "guides/patterns/paths": {
     "title": "Paths",
-    "order": "20Paths",
+    "order": "40Paths",
     "slug": "guides/patterns/paths"
   },
   "guides/patterns/pattern": {
@@ -616,17 +616,17 @@ export default {
   },
   "guides/patterns/points": {
     "title": "Points",
-    "order": "10Points",
+    "order": "30Points",
     "slug": "guides/patterns/points"
   },
   "guides/patterns/snippets": {
     "title": "Snippets",
-    "order": "20Snippets",
+    "order": "50Snippets",
     "slug": "guides/patterns/snippets"
   },
   "guides/patterns/store": {
     "title": "Store",
-    "order": "70Store",
+    "order": "60Store",
     "slug": "guides/patterns/store"
   },
   "guides/plugins/conditionally-loading-build-time-plugins": {
@@ -685,13 +685,13 @@ export default {
     "slug": "guides/plugins/using-hooks"
   },
   "guides/prerequisites/bezier-curves": {
-    "title": "Bézier curves",
-    "order": "50Bézier curves",
+    "title": "Understanding Bézier curves",
+    "order": "50Understanding Bézier curves",
     "slug": "guides/prerequisites/bezier-curves"
   },
   "guides/prerequisites/coordinate-system": {
-    "title": "Coordinate system",
-    "order": "30Coordinate system",
+    "title": "The coordinate system",
+    "order": "30The coordinate system",
     "slug": "guides/prerequisites/coordinate-system"
   },
   "guides/prerequisites": {
@@ -699,19 +699,14 @@ export default {
     "order": "100Before you start",
     "slug": "guides/prerequisites"
   },
-  "guides/prerequisites/parametric-pattern-design": {
-    "title": "Parametric pattern design",
-    "order": "10Parametric pattern design",
-    "slug": "guides/prerequisites/parametric-pattern-design"
-  },
   "guides/prerequisites/svg": {
-    "title": "SVG",
-    "order": "20SVG",
+    "title": "Scalable Vector Graphics",
+    "order": "20Scalable Vector Graphics",
     "slug": "guides/prerequisites/svg"
   },
   "guides/prerequisites/units": {
-    "title": "Units",
-    "order": "40Units",
+    "title": "Units in FreeSewing",
+    "order": "40Units in FreeSewing",
     "slug": "guides/prerequisites/units"
   },
   "howtos/code/accessing-measurements": {

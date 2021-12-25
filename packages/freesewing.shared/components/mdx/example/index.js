@@ -99,7 +99,7 @@ const Pattern = props => {
   return svgOnly
     ? <PatternSvg {...patternProps} develop={develop} focus={focus} raiseEvent={raiseEvent} />
     : (
-      <figure className={develop ? 'develop example' : 'example'}>
+      <figure className={`my-4 ${develop ? 'develop example' : 'example'}`}>
         <div className="example text-base-content">
           {allowDevelop && (
             <div className="actions">

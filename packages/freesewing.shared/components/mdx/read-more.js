@@ -3,7 +3,8 @@ import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 
 // Helper method to filter out the real children
-const currentChildren = current => Object.values(current)
+const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
+const currentChildren = current => Object.values(order(current))
   .filter(entry => (typeof entry === 'object'))
 
 const ReadMore = props => {

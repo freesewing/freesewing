@@ -28,7 +28,7 @@ const DevelopPath = (props) => {
           key={key + 'cpcirc1'}
           cx={op.cp1.x}
           cy={op.cp1.y}
-          r={3.5}
+          r={1}
           className="develop path cp"
         />
       )

@@ -38,7 +38,7 @@ const mdxCustomComponents = (app) => ({
       <pre>{JSON.stringify(props, null ,2)}</pre>
     </Popout>
   ),
-
+  img: Figure,
 })
 
 export default mdxCustomComponents
