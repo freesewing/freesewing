@@ -9,18 +9,18 @@ module.exports = {
   'base-content': colors.neutral['700'],
 
   'primary': colors.sky['500'],
-  'primary-focus': colors.sky['600'],
-  'primary-content': colors.sky['100'],
-  'secondary': colors.violet['500'],
-  'secondary-focus': colors.violet['400'],
-  'secondary-content': colors.violet['300'],
+  'primary-focus': colors.sky['400'],
+  'primary-content': colors.sky['50'],
+  'secondary': colors.violet['400'],
+  'secondary-focus': colors.violet['600'],
+  'secondary-content': colors.violet['50'],
 
-  'accent': colors.emerald['500'],
-  'accent-focus': colors.emerald['400'],
-  'accent-content': colors.neutral['900'],
+  'accent': colors.fuchsia['500'],
+  'accent-focus': colors.fuchsia['400'],
+  'accent-content': colors.neutral['50'],
 
   'neutral': colors.neutral['800'],
-  'neutral-focus': colors.neutral['700'],
+  'neutral-focus': colors.neutral['600'],
   'neutral-content': colors.neutral['200'],
 
   'info': colors.pink['400'],
@@ -41,9 +41,7 @@ module.exports = {
     ${colors.blue[500]} 80px,
     ${colors.blue[500]} 100px,
     ${colors.violet[500]} 100px,
-    ${colors.violet[500]} 120px,
-    transparent 120px,
-    transparent 125px
+    ${colors.violet[500]} 120px
   )`,
 
   '--code-background-color': colors.neutral['100'],

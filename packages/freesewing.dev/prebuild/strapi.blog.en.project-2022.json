@@ -1,0 +1,87 @@
+{
+  "dev": true,
+  "localizations": [],
+  "_id": "60eb151cdb32b45d5c4d6d96",
+  "body": "During [my summer break](https://github.com/freesewing/freesewing/discussions/1139) I wanted to look into migrating the FreeSewing websites (freesewing.org and freesewing.dev) from [GatbsyJS](https://gatsbyjs.org) to [NextJS](https://nextjs.org).\n\nI've been [frustrated with Gatsby](https://twitter.com/j__st/status/1398987583644966912) for a while now, and I feel its complexity is a large hurdle for people to get more hands-on with our websites.\n\nMy main gripe is with Gatsby's build process. You essentially have to maintain two different projects: The website itself as it runs. And the infamous `gatbsy-node.js` that outlines everything required to build the site.\n\nIn comparison, NextJS handles this much better (IMHO) with their `getStaticProps` and `getStaticPaths` methods. Because they are defined at the page level, we can keep break up the complexity for an entire site build per page.\n\nI am going to start with the freesewing.dev website, and if that goes well, I'll have a look at (the much more complex) freesewing.org site.\n\nTo manage expectations, I'm calling this the **2022 project** because frankly, if this gets done by the end of the year, I'd be happy.\n\nIf you want to follow along, check out [my fork of the FreeSewing monorepo](https://github.com/joostdecock/freesewing) or [come hang out with us on Discord](https://discord.freesewing.org/) in the `#project-2022` temporary channel.",
+  "caption": "A person working in construction - Picture by by Anamul Rezwan via Pexels",
+  "slug": "project-2022",
+  "date": "2021-07-05",
+  "title": "Project 2022: Giving FreeSewing a new face",
+  "linktitle": "Announcing projet 2022",
+  "published_at": "2021-07-11T15:59:35.454Z",
+  "createdAt": "2021-07-11T15:58:20.218Z",
+  "updatedAt": "2021-07-23T15:05:11.967Z",
+  "__v": 0,
+  "author": "joostdecock",
+  "image": {
+    "_id": "60eb14eedb32b45d5c4d6d95",
+    "name": "pexels-anamul-rezwan-1216544.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "hash": "pexels_anamul_rezwan_1216544_05424140f6",
+    "ext": ".jpg",
+    "mime": "image/jpeg",
+    "size": 196.29,
+    "width": 1920,
+    "height": 1280,
+    "url": "/uploads/pexels_anamul_rezwan_1216544_05424140f6.jpg",
+    "formats": {
+      "thumbnail": {
+        "name": "thumbnail_pexels-anamul-rezwan-1216544.jpg",
+        "hash": "thumbnail_pexels_anamul_rezwan_1216544_05424140f6",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 234,
+        "height": 156,
+        "size": 7.19,
+        "path": null,
+        "url": "/uploads/thumbnail_pexels_anamul_rezwan_1216544_05424140f6.jpg"
+      },
+      "large": {
+        "name": "large_pexels-anamul-rezwan-1216544.jpg",
+        "hash": "large_pexels_anamul_rezwan_1216544_05424140f6",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1000,
+        "height": 667,
+        "size": 67.52,
+        "path": null,
+        "url": "/uploads/large_pexels_anamul_rezwan_1216544_05424140f6.jpg"
+      },
+      "medium": {
+        "name": "medium_pexels-anamul-rezwan-1216544.jpg",
+        "hash": "medium_pexels_anamul_rezwan_1216544_05424140f6",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 500,
+        "size": 43.01,
+        "path": null,
+        "url": "/uploads/medium_pexels_anamul_rezwan_1216544_05424140f6.jpg"
+      },
+      "small": {
+        "name": "small_pexels-anamul-rezwan-1216544.jpg",
+        "hash": "small_pexels_anamul_rezwan_1216544_05424140f6",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 333,
+        "size": 23.31,
+        "path": null,
+        "url": "/uploads/small_pexels_anamul_rezwan_1216544_05424140f6.jpg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      "60eb151cdb32b45d5c4d6d96"
+    ],
+    "createdAt": "2021-07-11T15:57:34.488Z",
+    "updatedAt": "2021-07-11T15:58:20.222Z",
+    "__v": 0,
+    "id": "60eb14eedb32b45d5c4d6d95"
+  },
+  "site": "60ead51670e8d35a6d089fa0",
+  "locale": "en",
+  "id": "60eb151cdb32b45d5c4d6d96",
+  "intro": "During my summer break I wanted to look into migrating the FreeSewing websites (freesewing.org and freesewing.dev) from GatbsyJS to NextJS ."
+}

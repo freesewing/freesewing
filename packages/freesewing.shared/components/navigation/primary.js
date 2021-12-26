@@ -38,7 +38,7 @@ const howActive = (slug) => {
 }
 
 // Shared classes for links
-const linkClasses = "text-lg lg:text-xl py-1 hover:cursor-pointer hover:text-secondary bg-opacity-50"
+const linkClasses = "text-lg text-base-content lg:text-xl py-1 hover:cursor-pointer hover:text-secondary bg-opacity-50"
 
 // Figure out whether a page is on the path to the active page
 const isActive = (slug, active) => {
@@ -130,11 +130,14 @@ const TopLogo = ({ app }) => (
   <div className={`
     flex flex-row uppercase gap-4 font-bold text-lg
     items-center
-    hover:cursor-row-resize
     p-2
     text-base-content
   `}>
-    <Logo size={32} theme={app.theme} />
+    <Link href='/'>
+      <a className="hover:pointer">
+        <Logo size={32} fill='currentColor' stroke={false}/>
+      </a>
+    </Link>
     <div>
     <Link href='/'>
       <a className={`grow ${linkClasses}`}>
@@ -153,10 +156,8 @@ const TopTheme = ({ app }) => (
   <div className={`
     flex flex-row uppercase gap-4 font-bold text-lg
     items-center
-    hover:cursor-row-resize
-    hover:bg-base-200
     p-2
-    text-content-base
+    text-base-content
   `}>
     <Icon icon='theme' className="text-secondary"/>
     <div className={`grow`}>

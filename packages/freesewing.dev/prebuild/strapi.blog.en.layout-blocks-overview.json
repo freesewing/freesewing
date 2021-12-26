@@ -1,0 +1,87 @@
+{
+  "dev": true,
+  "localizations": [],
+  "_id": "60f0616ddb32b45d5c4d6dac",
+  "body": "I wanted to do a quick write-up of the main layout blocks of our websites. So let's have a look:\n\n## Screen sizes and break points: 1024px wide or not?\n\nOur websites should work on a variety of devices:\n![screens.png](https://posts.freesewing.org/uploads/screens_cf77bf2abb.png)\n\nFor this, we practice so-called **responsive design**. A design that adapts to the screen size. \nOr rather, the screen width because thanks to scrolling, we always have plenty of height.\n\nIn practice, we use so-called **break points**. A list of one or more screen widths at which we apply a different layout for our website.\nTo keep things simple, we utilize a single breakpoint: **1024px**. \n\n - large screen: 1024 pixels or more wide\n - small screen: less than 1024 pixels wide\n\n## Page structure: Three elements, one dimension\n\nThe structure of each page on the website is a vertical column with three elements:\n\n - The header which holds the so-called `navbar`, short for *navigation bar*\n - The main part of the page, which in this case shows this blog post\n - The footer\n\nIt looks like this:\n\n![spage.png](https://posts.freesewing.org/uploads/spage_db9ce89cb5.png)\n\nThat's on large screens. We'll have a closer look at small screens later.\n\n## Footer\n\nThe footer is the simplest element. It's always there, and it sits at the bottom of the page.\n\nThe footer spans the entire width of the screen, but the content within is constrained by a maximum width. That width is **1536px** (indicated by the red dashed lines in the image above).\nThis is to avoid that people on a 4K monitor get neck cramps like they're attending some tennis match, just to read what's on the screen.\n\n## Navbar\n\nThe navbar is similar to the footer in the sense that it spans the full width, yet the content within is constrained to maximum 1536 pixels.\n\nOn large screens, the navbar sits at the top of the page and does not have a background color to make it stand out.\nThat's because it's rather intuitive to have the navigation at the top of the page.\n\nOn mobile, the navbar collapses gets fixed at the bottom of the screen, and gets a background color to draw attention to the fact that this is where the navigation controls are:\n\n![mpage.png](https://posts.freesewing.org/uploads/mpage_e3cade7d29.png)\n\nThe reason we place the navigation at the bottom of the screen is that it's easier to reach when using a mobile phone with one hand.\n\nRather than try to cram everything in the (now very small) navbar. We simply use a button that makes the whole screen the navigation menu on small screens.\n\n## Main layout\n\nThe *main* part of a page can be pretty much anything we want. But on most pages, it looks like this:\n\n![slayout.png](https://posts.freesewing.org/uploads/slayout_50f7b8270b.png)\n\nHere's too we are constraining the content to the same maximum width.\nApart from that, we have the main content of the page, and the `aside` which typically holds navigation.\n\nThis aside is not available on mobile, and instead can be reached by bringing up the menu.\n\n\n## Summary\n\nAll our websites look the same\n\n - The page is a vertical column made of 3 parts: header -> main -> footer\n - The main part can be any layout, but the most common has content + aside\n - On mobile, the navbar sits fixed at the bottom, and aside moves off-canvas\n\n",
+  "caption": " Photo by Kelly Lacy via Pexels",
+  "slug": "layout-blocks-overview",
+  "date": "2021-07-15",
+  "title": "A quick tour of the main layout blocks",
+  "linktitle": "Main layout blocks",
+  "published_at": "2021-07-15T16:25:20.922Z",
+  "createdAt": "2021-07-15T16:25:17.007Z",
+  "updatedAt": "2021-07-23T15:04:30.866Z",
+  "__v": 0,
+  "author": "joostdecock",
+  "image": {
+    "_id": "60f05ac3db32b45d5c4d6da7",
+    "name": "pexels-kelly-lacy-2402233.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "hash": "pexels_kelly_lacy_2402233_45b5683839",
+    "ext": ".jpg",
+    "mime": "image/jpeg",
+    "size": 630.2,
+    "width": 1920,
+    "height": 1078,
+    "url": "/uploads/pexels_kelly_lacy_2402233_45b5683839.jpg",
+    "formats": {
+      "thumbnail": {
+        "name": "thumbnail_pexels-kelly-lacy-2402233.jpg",
+        "hash": "thumbnail_pexels_kelly_lacy_2402233_45b5683839",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 245,
+        "height": 138,
+        "size": 16.81,
+        "path": null,
+        "url": "/uploads/thumbnail_pexels_kelly_lacy_2402233_45b5683839.jpg"
+      },
+      "large": {
+        "name": "large_pexels-kelly-lacy-2402233.jpg",
+        "hash": "large_pexels_kelly_lacy_2402233_45b5683839",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1000,
+        "height": 561,
+        "size": 207.61,
+        "path": null,
+        "url": "/uploads/large_pexels_kelly_lacy_2402233_45b5683839.jpg"
+      },
+      "medium": {
+        "name": "medium_pexels-kelly-lacy-2402233.jpg",
+        "hash": "medium_pexels_kelly_lacy_2402233_45b5683839",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 421,
+        "size": 122.96,
+        "path": null,
+        "url": "/uploads/medium_pexels_kelly_lacy_2402233_45b5683839.jpg"
+      },
+      "small": {
+        "name": "small_pexels-kelly-lacy-2402233.jpg",
+        "hash": "small_pexels_kelly_lacy_2402233_45b5683839",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 281,
+        "size": 61.63,
+        "path": null,
+        "url": "/uploads/small_pexels_kelly_lacy_2402233_45b5683839.jpg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      "60f0616ddb32b45d5c4d6dac"
+    ],
+    "createdAt": "2021-07-15T15:56:51.570Z",
+    "updatedAt": "2021-07-15T16:25:17.017Z",
+    "__v": 0,
+    "id": "60f05ac3db32b45d5c4d6da7"
+  },
+  "site": "60ead51670e8d35a6d089fa0",
+  "locale": "en",
+  "id": "60f0616ddb32b45d5c4d6dac",
+  "intro": "I wanted to do a quick write-up of the main layout blocks of our websites. So let's have a look:"
+}

@@ -133,10 +133,10 @@ module.exports = {
   */
   '--theme-gradient': `repeating-linear-gradient(
     -45deg,
-    ${colors.gray[900]},
-    ${colors.gray[900]} 15px,
-    transparent 15px,
-    transparent 25px
+    ${colors.neutral[900]} 0,
+    ${colors.neutral[900]} 10px,
+    ${colors.neutral[50]} 10px,
+    ${colors.neutral[50]} 20px
   )`,
 
   /* CODE HIGHLIGHTING COLORS

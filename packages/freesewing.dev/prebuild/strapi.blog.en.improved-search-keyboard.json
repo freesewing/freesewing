@@ -1,0 +1,87 @@
+{
+  "dev": true,
+  "localizations": [],
+  "_id": "60eb2759db32b45d5c4d6da2",
+  "body": "\nSince we've got a ton of documentation, good search is a crucial aspect of our websites.\n\nIn [project 2022](/blog/project-2022) I wanted to improve the search experience for our users. Here are some of the pain points I have identified:\n\n - Searching takes too many clicks\n - All content is indexed for search, when people are typically looking for documentation\n\nI've implemented a new search solution that is never more than one click away (right there in the navigation bar). And, even better, can be triggered at any time by pressing `Ctrl-k` on your keyboard.\n\nThis will launch the search and auto-focus the input field so you can just start typing. The first result will be selected, but you can navigation through the results using the up and down arrows, giving you full control over the search experience from the keyboard.\n\nIf you want to cancel the search, clicking `escape` will do just that. To clear the search input, `ctrl-c` is your friend.\n\nAll of this keyboard-drive search adds little value on mobile. But it's particularly handy when you're working on a pattern or documentation and you quickly want to look something up.\n\nWhile we still have to handle the search indexing itself (we're using the index of the current freesewing.dev site since we did not change any URLs), I feel the search experience itself is a nice improvement.\n\nGive it a go and let me know what you think [in our #project-2022 Discord channel](https://discord.freesewing.org/).",
+  "caption": "Picture by Skitterphoto via Pexels",
+  "slug": "improved-search-keyboard",
+  "date": "2021-07-09",
+  "title": "Improved search with keyboard bindings",
+  "linktitle": "Improved search with keyboard bindings",
+  "published_at": "2021-07-11T17:16:16.082Z",
+  "createdAt": "2021-07-11T17:16:09.119Z",
+  "updatedAt": "2021-07-23T15:04:40.641Z",
+  "__v": 0,
+  "author": "joostdecock",
+  "image": {
+    "_id": "60eb2742db32b45d5c4d6da1",
+    "name": "pexels-skitterphoto-63901.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "hash": "pexels_skitterphoto_63901_6dad2c294b",
+    "ext": ".jpg",
+    "mime": "image/jpeg",
+    "size": 150.68,
+    "width": 1920,
+    "height": 1302,
+    "url": "/uploads/pexels_skitterphoto_63901_6dad2c294b.jpg",
+    "formats": {
+      "thumbnail": {
+        "name": "thumbnail_pexels-skitterphoto-63901.jpg",
+        "hash": "thumbnail_pexels_skitterphoto_63901_6dad2c294b",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 230,
+        "height": 156,
+        "size": 5.91,
+        "path": null,
+        "url": "/uploads/thumbnail_pexels_skitterphoto_63901_6dad2c294b.jpg"
+      },
+      "large": {
+        "name": "large_pexels-skitterphoto-63901.jpg",
+        "hash": "large_pexels_skitterphoto_63901_6dad2c294b",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1000,
+        "height": 678,
+        "size": 48.18,
+        "path": null,
+        "url": "/uploads/large_pexels_skitterphoto_63901_6dad2c294b.jpg"
+      },
+      "medium": {
+        "name": "medium_pexels-skitterphoto-63901.jpg",
+        "hash": "medium_pexels_skitterphoto_63901_6dad2c294b",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 509,
+        "size": 30.98,
+        "path": null,
+        "url": "/uploads/medium_pexels_skitterphoto_63901_6dad2c294b.jpg"
+      },
+      "small": {
+        "name": "small_pexels-skitterphoto-63901.jpg",
+        "hash": "small_pexels_skitterphoto_63901_6dad2c294b",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 339,
+        "size": 17.53,
+        "path": null,
+        "url": "/uploads/small_pexels_skitterphoto_63901_6dad2c294b.jpg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      "60eb2759db32b45d5c4d6da2"
+    ],
+    "createdAt": "2021-07-11T17:15:46.611Z",
+    "updatedAt": "2021-07-11T17:16:09.123Z",
+    "__v": 0,
+    "id": "60eb2742db32b45d5c4d6da1"
+  },
+  "site": "60ead51670e8d35a6d089fa0",
+  "locale": "en",
+  "id": "60eb2759db32b45d5c4d6da2",
+  "intro": "Since we've got a ton of documentation, good search is a crucial aspect of our websites."
+}

@@ -1,0 +1,98 @@
+{
+  "dev": true,
+  "localizations": [],
+  "_id": "60f2e2ef2f81c03239366844",
+  "body": "I just made a bunch of breaking changes in `@freesewing/i18n` and it made me realize that if/when we get around to merging my work back into our monorepo, there's going to be too many changes not to bump the major version.\n\nAnd I guess that with that I've made the realization that I'm working on FreeSewing v3.\n\nThe breaking changes are not in our core library or how patterns work, but more in how we organize our code and tie it all together. Ultimately, I want to make it easier for people to graduate from interested bystander to contributor, and bringing everything into our monorepo with reasonable dependencies is part of that.\n\n## Changes in i18n\n\nTake our internationalization package, [@freesewing/i18n](https://www.npmjs.com/package/@freesewing/i18n) which holds all our translations.\n\nBecause of this, it's a relatively large package, and weighs in just over 282.9kB when minified. That is 4 times the size of our core library.\n\nIt's not a problem as such. There's no shortcut for all this translated strings, we need to ship them somehow. But the problem is that the package is currently not *tree-shakeable*.\n\nTree-shaking is a term that is used to describe a process of removing unused code from the Javascript bundle, and is implemented by bundlers such as Rollup or Webpack.\nThe idea is that if you use only a part of a library, the rest of it will be kept out of the bundle, so you have to ship less code.\n\nWith the current setup, `@freesewing/i18n` is not tree-shakeable, which means that if you build a website that is exclusively English, you still will find all other translations in the bundle. Not cool.\n\nCurrently, `i18n` has a default export which is an object with these keys: \n\n```js\nexport { strings, languages, plugin, jargon }\n```\n\nIn v3, we will switch to named exports, and export the following:\n\n - `locales`: List of languages codes we provide\n - `languages`: Translations for the languages codes (for use in a language switcher)\n - `en`: English translations\n - `es`: Spanish translations\n - `de`: German translations\n - `fr`: French translations\n - `nl`: Dutch translations\n - `jargon_en`: English jargon file (for use in our [remark plugin for jargon](https://www.npmjs.com/package/remark-jargon))\n - `jargon_es`: Spanish jargon file (for use in our [remark plugin for jargon](https://www.npmjs.com/package/remark-jargon))\n - `jargon_de`: German jargon file (for use in our [remark plugin for jargon](https://www.npmjs.com/package/remark-jargon))\n - `jargon_fr`: French jargon file (for use in our [remark plugin for jargon](https://www.npmjs.com/package/remark-jargon))\n - `jargon_nl`: Dutch jargon file (for use in our [remark plugin for jargon](https://www.npmjs.com/package/remark-jargon))\n\n\nNow you can import only what you need, and let your bundler tree-shake the rest.\n\n\n\n\n",
+  "caption": "Photo by Miguel Á. Padriñán via Pexels",
+  "slug": "freesewing-v3-seems-inevitable",
+  "date": "2021-07-16",
+  "title": "Better tree-shaking means breaking changes; FreeSewing v3 now seems inevitable",
+  "linktitle": "FreeSewing v3 seems inevitable",
+  "published_at": "2021-07-17T15:15:08.840Z",
+  "createdAt": "2021-07-17T14:02:23.828Z",
+  "updatedAt": "2021-07-23T15:04:23.665Z",
+  "__v": 0,
+  "author": "joostdecock",
+  "image": {
+    "_id": "60f2de802f81c03239366843",
+    "name": "pexels-miguel-á-padriñán-1061140.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "hash": "pexels_miguel_a_padrinan_1061140_7a14d61e89",
+    "ext": ".jpg",
+    "mime": "image/jpeg",
+    "size": 161.74,
+    "width": 1920,
+    "height": 1276,
+    "url": "/uploads/pexels_miguel_a_padrinan_1061140_7a14d61e89.jpg",
+    "formats": {
+      "thumbnail": {
+        "name": "thumbnail_pexels-miguel-á-padriñán-1061140.jpg",
+        "hash": "thumbnail_pexels_miguel_a_padrinan_1061140_7a14d61e89",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 235,
+        "height": 156,
+        "size": 2.6,
+        "path": null,
+        "url": "/uploads/thumbnail_pexels_miguel_a_padrinan_1061140_7a14d61e89.jpg"
+      },
+      "large": {
+        "name": "large_pexels-miguel-á-padriñán-1061140.jpg",
+        "hash": "large_pexels_miguel_a_padrinan_1061140_7a14d61e89",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1000,
+        "height": 665,
+        "size": 37.15,
+        "path": null,
+        "url": "/uploads/large_pexels_miguel_a_padrinan_1061140_7a14d61e89.jpg"
+      },
+      "medium": {
+        "name": "medium_pexels-miguel-á-padriñán-1061140.jpg",
+        "hash": "medium_pexels_miguel_a_padrinan_1061140_7a14d61e89",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 600,
+        "height": 399,
+        "size": 11.93,
+        "path": null,
+        "url": "/uploads/medium_pexels_miguel_a_padrinan_1061140_7a14d61e89.jpg"
+      },
+      "small": {
+        "name": "small_pexels-miguel-á-padriñán-1061140.jpg",
+        "hash": "small_pexels_miguel_a_padrinan_1061140_7a14d61e89",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 400,
+        "height": 266,
+        "size": 5.54,
+        "path": null,
+        "url": "/uploads/small_pexels_miguel_a_padrinan_1061140_7a14d61e89.jpg"
+      },
+      "xsmall": {
+        "name": "xsmall_pexels-miguel-á-padriñán-1061140.jpg",
+        "hash": "xsmall_pexels_miguel_a_padrinan_1061140_7a14d61e89",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 200,
+        "height": 133,
+        "size": 2.16,
+        "path": null,
+        "url": "/uploads/xsmall_pexels_miguel_a_padrinan_1061140_7a14d61e89.jpg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      "60f2e2ef2f81c03239366844"
+    ],
+    "createdAt": "2021-07-17T13:43:28.919Z",
+    "updatedAt": "2021-07-17T14:02:23.831Z",
+    "__v": 0,
+    "id": "60f2de802f81c03239366843"
+  },
+  "site": "60ead51670e8d35a6d089fa0",
+  "locale": "en",
+  "id": "60f2e2ef2f81c03239366844",
+  "intro": "I just made a bunch of breaking changes in @freesewing/i18n and it made me realize that if/when we get around to merging my work back into our monorepo, there's going to be too many changes not to bump the major version."
+}

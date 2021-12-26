@@ -7,8 +7,8 @@ module.exports = {
   'primary-focus': colors.lime['600'],
   'primary-content': colors.lime['50'],
 
-  'secondary': colors.lime['400'],
-  'secondary-focus': colors.lime['300'],
+  'secondary': colors.lime['200'],
+  'secondary-focus': colors.lime['600'],
   'secondary-content': bg,
 
   'accent': colors.lime['700'],

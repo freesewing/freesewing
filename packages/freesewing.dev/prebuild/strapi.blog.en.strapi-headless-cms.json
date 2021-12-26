@@ -1,0 +1,87 @@
+{
+  "dev": true,
+  "localizations": [],
+  "_id": "60eb2e11db32b45d5c4d6da5",
+  "title": "Strapi as headless CMS",
+  "linktitle": "Strapi as headless CMS",
+  "body": "As things are now, all of FreeSewing's content is contained [in our markdown repository](https://github.com/freesewing/markdown/).\n\nHistorically, that made a lot of sense:\n\n - I am perfectly happy to write markdown and put it in git\n - We need that content in a repo to we can translate it with [Crowding](https://crowdin.com)\n\nHowever, as the project grows, this approach is starting to show some real downsides:\n\n - It is scary/intimidating for new users to get familiar with git(hub) just to write a blog post or submit a showcase\n - The fact that the markdown repo is included as a submodule in our freesewing.org and freesewing.dev repositories means there's extra hoops to jump through before changes show up on the website\n - Translators have a lot of translation work in their queue with arguably little added value (like a blog post from 2 years ago).\n\nI've been thinking about this within the context of our [project 2022](/blog/project-2022) and I think we should make a distinction between two types of content:\n\n- **documentation**: This should be in git because we want a history, we want to include that little pencil icon that lets people fix errors directly on the github website, and should be translated as close as possible and as complete as possible to provide consistent info in different languages.\n- **posts**: Specifically blog posts, and to a lesser extend showcase posts. This content does not really have to live in a git repository. It is much more a write-once, never look back sort of thing.\n\nI also feel it makes little sense to translate blog posts word for word. Sure, blog posts announcing new patterns and so on would preferable be available in all languages. But I'd like to lower the bar for people to contribute to our blog, and that includes letting people write original content in languages other than English.\n\nSo, as a sort of test, I have setup [Strapi](https://strapi.io/) and it is the source for all blog posts on this developer blog.\n\nStrapi is a so-called *headless CMS* (where CMS stands for content management system). You might be familiar with Wordpress, which is a more classic CMS. A headless CMS provides similar functionality for creating and editing content. But rather than generating a website, it comes with an API you can talk to to get your content. Such an approach works great with the kind of [JAMstack](https://jamstack.org/) websites we buid.\n\nWhile it's early to draw conclusions, there's a bunch of things that I feel make this an avenue worth pursuing:\n\n- Writing and editing content is significantly simpler\n- Images can simply be uploaded, which was a pain point in the current setup\n- Keeping (large) images out of a git repository makes a lot of sense. Case in point: Our markdown repo is currently about 400MB and growing steadily. in comparison, our monorepo is less than 10% of that size.\n- All the image handling and resizing makes build times exceedingly slow. It's also somewhat frustrating that we have to do this on every build, when in reality, the images don't change\n\nThe Strapi instance I've setup lives at https://posts.freesewing.org/ \n\nI would like to configure authentication in such a way that you can either re-use your FreeSewing accounts, or your Discord account.\n\nStrapi uses the same Mongo database server as the main website, just a different database).\n\nI think this is a promising path to go down on. Anecdotal evidence: this is my 7th blog post since setting it up 😄 It's just nice to be able to dump your thoughts into a post without that having to be a big deal.\n\nUntil I've setup proper authentication, I can create an account for you if you'd like to kick the tires. As usual, the [#project-2022 channel on our Discord server](https://discord.freesewing.org/) is the place to be.\n",
+  "caption": "Headless. Get it? - Picture by Leah Kelley via Pexels",
+  "published_at": "2021-07-11T17:45:31.369Z",
+  "createdAt": "2021-07-11T17:44:49.116Z",
+  "updatedAt": "2021-07-23T15:04:36.017Z",
+  "__v": 0,
+  "author": "joostdecock",
+  "image": {
+    "_id": "60eb2d74db32b45d5c4d6da4",
+    "name": "pexels-leah-kelley-5852942.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "hash": "pexels_leah_kelley_5852942_3a27bb6b4e",
+    "ext": ".jpg",
+    "mime": "image/jpeg",
+    "size": 113.12,
+    "width": 1920,
+    "height": 1279,
+    "url": "/uploads/pexels_leah_kelley_5852942_3a27bb6b4e.jpg",
+    "formats": {
+      "thumbnail": {
+        "name": "thumbnail_pexels-leah-kelley-5852942.jpg",
+        "hash": "thumbnail_pexels_leah_kelley_5852942_3a27bb6b4e",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 234,
+        "height": 156,
+        "size": 4.33,
+        "path": null,
+        "url": "/uploads/thumbnail_pexels_leah_kelley_5852942_3a27bb6b4e.jpg"
+      },
+      "large": {
+        "name": "large_pexels-leah-kelley-5852942.jpg",
+        "hash": "large_pexels_leah_kelley_5852942_3a27bb6b4e",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1000,
+        "height": 666,
+        "size": 36.1,
+        "path": null,
+        "url": "/uploads/large_pexels_leah_kelley_5852942_3a27bb6b4e.jpg"
+      },
+      "medium": {
+        "name": "medium_pexels-leah-kelley-5852942.jpg",
+        "hash": "medium_pexels_leah_kelley_5852942_3a27bb6b4e",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 500,
+        "size": 23.26,
+        "path": null,
+        "url": "/uploads/medium_pexels_leah_kelley_5852942_3a27bb6b4e.jpg"
+      },
+      "small": {
+        "name": "small_pexels-leah-kelley-5852942.jpg",
+        "hash": "small_pexels_leah_kelley_5852942_3a27bb6b4e",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 333,
+        "size": 13.02,
+        "path": null,
+        "url": "/uploads/small_pexels_leah_kelley_5852942_3a27bb6b4e.jpg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      "60eb2e11db32b45d5c4d6da5"
+    ],
+    "createdAt": "2021-07-11T17:42:12.875Z",
+    "updatedAt": "2021-07-11T17:44:49.121Z",
+    "__v": 0,
+    "id": "60eb2d74db32b45d5c4d6da4"
+  },
+  "site": "60ead51670e8d35a6d089fa0",
+  "date": "2021-07-10",
+  "slug": "strapi-headless-cms",
+  "locale": "en",
+  "id": "60eb2e11db32b45d5c4d6da5",
+  "intro": "As things are now, all of FreeSewing's content is contained in our markdown repository ."
+}

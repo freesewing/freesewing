@@ -32,14 +32,14 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
     <ul className="flex flex-row gap-2 font-bold">
       <li>
         <Link href="/">
-          <a title="To the homepage">
-            <Logo size={24} />
+          <a title="To the homepage" className="text-base-content">
+            <Logo size={24} fill="currentColor" stroke={false}/>
           </a>
         </Link>
       </li>
       {crumbs.map(crumb => (
         <>
-          <li>&raquo;</li>
+          <li className="text-base-content">&raquo;</li>
           <li>
             {crumb[2]
               ?  (
@@ -49,7 +49,7 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
                   </a>
                 </Link>
               )
-              : crumb[0]
+              : <span className="text-base-content">{crumb[0]}</span>
             }
           </li>
         </>
@@ -78,7 +78,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
       <Header app={app}/>
       <div className={`
         h-1 w-full theme-gradient ${app.loading ? 'loading' : ''}
-        fixed top-0 right-0 z-20
+        fixed top-0 right-0 z-40
         -mt-1
       `}></div>
       <main className={`

@@ -1,0 +1,87 @@
+{
+  "dev": true,
+  "localizations": [],
+  "_id": "60eb237cdb32b45d5c4d6d9f",
+  "body": "Up until now, our websites each live in their own repository. This makes sharing code and content somewhat more involved, and situation that we currently handle as follows:\n\n- Content is shared by making [our markdown repository](https://github.com/freesewing/markdown) available as a git submodule\n- Code is shared by publishing packages on NPM, specifically [@freesewing/components](https://www.npmjs.com/package/@freesewing/components) for shared React components, [@freesewing/css-theme](https://www.npmjs.com/package/@freesewing/css-theme) for shared CSS,\nand [@freesewing/mui-theme](https://www.npmjs.com/package/@freesewing/mui-theme) for our shared MaterialUI theme.\n\nWhile that works fine, it has a few downsides:\n\n - Changes to the theming require publishing a new version of our software\n - The mix of library components and forntend components in [@freesewing/components](https://www.npmjs.com/package/@freesewing/components) make semantic versioning hard to apply\n\nThe first point is pretty straight-forward. The latter might require some more explanation:\n\nOur components package contains a number of components that we provide to users our our software, rather than users of our websites. Things like our `Draft` components, and `Workbench` component can be re-used by people who want to build their own projects/sites on top of FreeSewing.\n\nOn the other hand, there's a bunch of components that are clearly more geared towards internal use, such as the `Icon`, `Logo` or `Robots` components to name but a few.\n\nStrictly speaking, respecting [semantic versioning](https://semver.org/) means that a breaking changes in these components should trigger a new major version. But clearly it doesn't make sense to bump FreeSewing to a new major version just because we made a breaking change in our `Logo` component.\n\nIf we can bring our websites into our monorepo and share code directly in the repository, we can limit ourselves to publishing only those components that are not tightly coupled with our own website(s).\n\nSo how do we do that?\n\n# freesewing.dev in the monorepo\n\nFirst thing I did was bring freesewing.dev into our monorep. In `packages/freesewing.dev` to be precise. Then I added a new folder for shared code as `packages/shared`. Finally, I used webpack aliases to link all of this together:\n\n```js\nconfig.resolve.alias.shared = path.resolve(__dirname, '../shared')\nconfig.resolve.alias.site = path.resolve(__dirname)\n```\n\nThe first alias `shared` allows us to import a shared component as such:\n\n```js\nimport AppWrapper from 'shared/components/wrappers/app'\n```\n\nBut what's more, a site-specific component can be imported as such:\n\n```js\nimport NavigationButtons from 'site/components/navigation-buttons'\n```\n\nThis also works inside shared components. Which gives us a flexible way to add site-specific code to a component that is shared between freesewing.dev and freesewing.org.\n\nIt also avoids this kind of maintenance nightmare:\n\n```js\nimport Icon from '../../../../../../../components/Icon'\n```\n\nSo far, all this seems to work well with no unexpected side-effects 🤞",
+  "caption": "Picture by Ihsan Aditya via Pexels",
+  "slug": "shared-frontend-code-monorepo",
+  "date": "2021-07-08",
+  "title": "Better code sharing by bringing frontend code into our monorepo",
+  "linktitle": "Sharing frontend code in our monorepo",
+  "published_at": "2021-07-11T16:59:43.035Z",
+  "createdAt": "2021-07-11T16:59:40.699Z",
+  "updatedAt": "2021-07-23T15:04:46.863Z",
+  "__v": 0,
+  "author": "joostdecock",
+  "image": {
+    "_id": "60eb236bdb32b45d5c4d6d9e",
+    "name": "pexels-ihsan-aditya-1056251.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "hash": "pexels_ihsan_aditya_1056251_41549d8d66",
+    "ext": ".jpg",
+    "mime": "image/jpeg",
+    "size": 329.3,
+    "width": 1920,
+    "height": 1280,
+    "url": "/uploads/pexels_ihsan_aditya_1056251_41549d8d66.jpg",
+    "formats": {
+      "thumbnail": {
+        "name": "thumbnail_pexels-ihsan-aditya-1056251.jpg",
+        "hash": "thumbnail_pexels_ihsan_aditya_1056251_41549d8d66",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 234,
+        "height": 156,
+        "size": 8.22,
+        "path": null,
+        "url": "/uploads/thumbnail_pexels_ihsan_aditya_1056251_41549d8d66.jpg"
+      },
+      "large": {
+        "name": "large_pexels-ihsan-aditya-1056251.jpg",
+        "hash": "large_pexels_ihsan_aditya_1056251_41549d8d66",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1000,
+        "height": 667,
+        "size": 94.56,
+        "path": null,
+        "url": "/uploads/large_pexels_ihsan_aditya_1056251_41549d8d66.jpg"
+      },
+      "medium": {
+        "name": "medium_pexels-ihsan-aditya-1056251.jpg",
+        "hash": "medium_pexels_ihsan_aditya_1056251_41549d8d66",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 500,
+        "size": 56.07,
+        "path": null,
+        "url": "/uploads/medium_pexels_ihsan_aditya_1056251_41549d8d66.jpg"
+      },
+      "small": {
+        "name": "small_pexels-ihsan-aditya-1056251.jpg",
+        "hash": "small_pexels_ihsan_aditya_1056251_41549d8d66",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 333,
+        "size": 28.71,
+        "path": null,
+        "url": "/uploads/small_pexels_ihsan_aditya_1056251_41549d8d66.jpg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      "60eb237cdb32b45d5c4d6d9f"
+    ],
+    "createdAt": "2021-07-11T16:59:23.684Z",
+    "updatedAt": "2021-07-11T16:59:40.702Z",
+    "__v": 0,
+    "id": "60eb236bdb32b45d5c4d6d9e"
+  },
+  "site": "60ead51670e8d35a6d089fa0",
+  "locale": "en",
+  "id": "60eb237cdb32b45d5c4d6d9f",
+  "intro": "Up until now, our websites each live in their own repository. This makes sharing code and content somewhat more involved, and situation that we currently handle as follows:"
+}

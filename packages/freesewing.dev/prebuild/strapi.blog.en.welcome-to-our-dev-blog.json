@@ -1,0 +1,87 @@
+{
+  "dev": true,
+  "localizations": [],
+  "_id": "60eaceb44f0f4957dbc9d64b",
+  "title": "Welcome to FreeSewing's development blog",
+  "slug": "welcome-to-our-dev-blog",
+  "date": "2021-07-04",
+  "linktitle": "Welcome to our dev blog",
+  "caption": "Brought to you by a lot of coffee -  Photo by Kaboompics.com via Pexels",
+  "body": "The internet is plastered with abandoned or dormant blogs, so starting another one is perhaps madness, but hear me out:\n\n- I'm working on some new stuff, and I'd like to talk about it so people can weigh in with their opinions and feedback\n- I am often reluctant to write on the *main* FreeSewing blog about things that are way too technical for the average visitor\n- I have some wild plans for how to handle our blog content, and I need a place to kick the tires\n\nSo, without much fanfare, I am launching this blog. Here we go.",
+  "published_at": "2021-07-11T12:29:54.663Z",
+  "createdAt": "2021-07-11T10:57:56.433Z",
+  "updatedAt": "2021-07-23T15:05:17.024Z",
+  "__v": 0,
+  "author": "joostdecock",
+  "image": {
+    "_id": "60eace684f0f4957dbc9d64a",
+    "name": "pexels-kaboompics-com-6347.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "hash": "pexels_kaboompics_com_6347_2e9a6ffd54",
+    "ext": ".jpg",
+    "mime": "image/jpeg",
+    "size": 210.66,
+    "width": 1920,
+    "height": 1280,
+    "url": "/uploads/pexels_kaboompics_com_6347_2e9a6ffd54.jpg",
+    "formats": {
+      "thumbnail": {
+        "name": "thumbnail_pexels-kaboompics-com-6347.jpg",
+        "hash": "thumbnail_pexels_kaboompics_com_6347_2e9a6ffd54",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 234,
+        "height": 156,
+        "size": 4.95,
+        "path": null,
+        "url": "/uploads/thumbnail_pexels_kaboompics_com_6347_2e9a6ffd54.jpg"
+      },
+      "large": {
+        "name": "large_pexels-kaboompics-com-6347.jpg",
+        "hash": "large_pexels_kaboompics_com_6347_2e9a6ffd54",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1000,
+        "height": 667,
+        "size": 50.35,
+        "path": null,
+        "url": "/uploads/large_pexels_kaboompics_com_6347_2e9a6ffd54.jpg"
+      },
+      "medium": {
+        "name": "medium_pexels-kaboompics-com-6347.jpg",
+        "hash": "medium_pexels_kaboompics_com_6347_2e9a6ffd54",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 500,
+        "size": 28.35,
+        "path": null,
+        "url": "/uploads/medium_pexels_kaboompics_com_6347_2e9a6ffd54.jpg"
+      },
+      "small": {
+        "name": "small_pexels-kaboompics-com-6347.jpg",
+        "hash": "small_pexels_kaboompics_com_6347_2e9a6ffd54",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 333,
+        "size": 14.48,
+        "path": null,
+        "url": "/uploads/small_pexels_kaboompics_com_6347_2e9a6ffd54.jpg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      "60eaceb44f0f4957dbc9d64b"
+    ],
+    "createdAt": "2021-07-11T10:56:40.376Z",
+    "updatedAt": "2021-07-11T10:57:56.439Z",
+    "__v": 0,
+    "id": "60eace684f0f4957dbc9d64a"
+  },
+  "site": "60ead51670e8d35a6d089fa0",
+  "locale": "en",
+  "id": "60eaceb44f0f4957dbc9d64b",
+  "intro": "The internet is plastered with abandoned or dormant blogs, so starting another one is perhaps madness, but hear me out:"
+}

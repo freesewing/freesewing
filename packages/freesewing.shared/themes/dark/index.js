@@ -15,9 +15,9 @@ module.exports = {
   'accent-focus': colors.pink['400'],
   'accent-content': colors.pink['50'],
 
-  'neutral': colors.neutral['300'],
+  'neutral': colors.neutral['800'],
   'neutral-focus': colors.neutral['50'],
-  'neutral-content': colors.neutral['900'],
+  'neutral-content': colors.neutral['50'],
 
   'base-100': colors.neutral['900'],
   'base-200': colors.neutral['700'],
@@ -36,10 +36,10 @@ module.exports = {
 
   '--theme-gradient': `repeating-linear-gradient(
     -45deg,
-    ${colors.gray[300]},
-    ${colors.gray[300]} 15px,
-    transparent 15px,
-    transparent 25px
+    ${colors.neutral[300]},
+    ${colors.neutral[300]} 10px,
+    ${colors.neutral[800]} 10px,
+    ${colors.neutral[800]} 20px
   )`,
 
   '--code-background-color': '#111',

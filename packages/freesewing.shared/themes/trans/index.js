@@ -1,27 +1,31 @@
 const colors = require('tailwindcss/colors')
 
+const blue = '#77cbf9'
+const pink = '#ecadb9'
+const white = '#ffffff'
+
 module.exports = {
   'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
-  'base-100': colors.neutral['50'],
+  'base-100': white,
   'base-200': colors.neutral['200'],
   'base-300': colors.neutral['400'],
   'base-content': colors.neutral['700'],
 
-  'primary': colors.sky['500'],
-  'primary-focus': colors.sky['600'],
-  'primary-content': colors.sky['100'],
-  'secondary': colors.violet['500'],
-  'secondary-focus': colors.violet['400'],
-  'secondary-content': colors.violet['300'],
+  'primary': pink,
+  'primary-focus': blue,
+  'primary-content': colors.neutral['900'],
+  'secondary': blue,
+  'secondary-focus': pink,
+  'secondary-content': colors.neutral['900'],
 
-  'accent': colors.emerald['500'],
-  'accent-focus': colors.emerald['400'],
-  'accent-content': colors.neutral['900'],
+  'accent': colors.neutral['700'],
+  'accent-focus': colors.neutral['900'],
+  'accent-content': blue,
 
-  'neutral': colors.neutral['800'],
-  'neutral-focus': colors.neutral['700'],
-  'neutral-content': colors.neutral['200'],
+  'neutral': colors.neutral['700'],
+  'neutral-focus': colors.neutral['900'],
+  'neutral-content': pink,
 
   'info': colors.pink['400'],
   'success': colors.green['600'],
@@ -39,9 +43,7 @@ module.exports = {
     #ecadb9 60px,
     #ecadb9 80px,
     #77cbf9 80px,
-    #77cbf9 100px,
-    transparent 100px,
-    transparent 105px
+    #77cbf9 100px
   )`,
 
   '--code-background-color': colors.neutral['100'],

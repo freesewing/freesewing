@@ -1,3 +1,6 @@
+import Logo from 'shared/components/logos/freesewing.js'
+import Link from 'next/link'
+
 const Right = props => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -17,7 +20,7 @@ const Header = ({ app }) => {
         sm:hidden
         z-30
       `}>
-        <div className="p-2">
+        <div className="p-2 flex flex-row gap-2 justify-between">
         <button
           className={`
             btn border-base-100 text-base-100 btn-sm border border-transparent bg-transparent
@@ -29,8 +32,14 @@ const Header = ({ app }) => {
               : <>Show menu &nbsp;<Right /></>
             }
         </button>
+        <Logo size={32} color="#fff"/>
+        <Link href="/">
+          <button className="btn btn-link btn-sm">
+            freesewing.dev
+          </button>
+        </Link>
         </div>
-        <div className="theme-gradient h-2 w-full z-10 relative -mb-2"></div>
+        <div className={`theme-gradient h-2 w-full z-10 relative -mb-2 ${app.loading ? 'loading' : ''}`}></div>
       </header>
   )
 }
