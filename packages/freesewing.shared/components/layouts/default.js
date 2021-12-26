@@ -25,7 +25,7 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
   for (const i in chunks) {
     const j = parseInt(i)+parseInt(1)
     const page = get(app.navigation, chunks.slice(0,j))
-    crumbs.push([page.__linktitle, '/'+chunks.slice(0,j).join('/'), (j < chunks.length)])
+    if (page) crumbs.push([page.__linktitle, '/'+chunks.slice(0,j).join('/'), (j < chunks.length)])
   }
 
   return (
@@ -79,6 +79,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
       <div className={`
         h-1 w-full theme-gradient ${app.loading ? 'loading' : ''}
         fixed top-0 right-0 z-20
+        -mt-1
       `}></div>
       <main className={`
         grow flex flex-row
@@ -90,7 +91,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
         <aside className={`
           fixed top-0 right-0
           ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
-          pt-16
+          pt-24
           sm:pt-4
           sm:relative sm:transform-none
           h-screen w-screen
@@ -101,6 +102,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
           sm:sticky
           overflow-y-scroll
           py-4
+          z-20
         `}>
           <PrimaryNavigation app={app} active={slug}/>
         </aside>

@@ -51,7 +51,7 @@ module.exports = {
   // primary-focus: The :hover color for the primary button
   'primary-focus': colors.violet['600'],
   // primary-content: The text color for the primary button
-  'primary-content': colors.violet['50'],
+  'primary-content': colors.neutral['50'],
 
   // secondary: The link color
   'secondary': colors.sky['500'],
@@ -59,37 +59,45 @@ module.exports = {
   'secondary-focus': colors.sky['400'],
   // secondary: An alternative link color for on dark backgrounds
   // Typically a light shade of the secondary color
-  'secondary-content': colors.sky['300'],
+  'secondary-content': colors.sky['50'],
 
   // accent: The accent color is used to highlight active things
   // Should be something is positive/neutral. Avoid red or orange.
-  'accent': colors.emerald['500'],
+  'accent': colors.pink['400'],
   // accent-focus: The :hover color for the accent button
-  'accent-focus': colors.emerald['400'],
+  'accent-focus': colors.pink['300'],
   // accent-content: The text color for the accent button
-  'accent-content': colors.neutral['900'],
+  'accent-content': colors.pink['50'],
 
   // neutral: Used as the background for the footer and code blocks.
   // Should always be dark(ish) because of prism syntax highlighting
-  'neutral': colors.neutral['800'],
+  'neutral': colors.neutral['900'],
   // neutral-focus: Typically a shade lighter than neutral
   'neutral-focus': colors.neutral['700'],
   // neutral-content: The text color on neutral backgrounds
-  'neutral-content': colors.neutral['200'],
+  'neutral-content': colors.neutral['50'],
 
   // info: Used rarely, can be another color best somewhat neutral looking
   // and should work with the default text color
-  'info': colors.violet['400'],
+  'info': colors.indigo['600'],
+  // Text color on the info button
+  '--btn-info-content': colors.neutral[50],
   // success: Used rarely, but if it is it's in notifications indicating success
   // Typically some shade of green
-  'success': colors.green['500'],
+  'success': colors.green['600'],
+  // Text color on the success button
+  '--btn-success-content': colors.neutral[50],
   // warning: We don't do warnings, but this is used for the tabs under code blocks
   // and a couple of other UI elements.
-  'warning': colors.amber['500'],
+  'warning': colors.orange['500'],
+  // Text color on the warning button
+  '--btn-warning-content': colors.neutral[50],
   // error: Used rarely, but if it is it's in notifications indicating success
   // or the danger button
   // Typically some shade of red
   'error': colors.red['600'],
+  // Text color on the error button
+  '--btn-error-content': colors.neutral[50],
 
   /* VARIOUS
   *
@@ -125,14 +133,10 @@ module.exports = {
   */
   '--theme-gradient': `repeating-linear-gradient(
     -45deg,
-    ${colors.sky[400]},
-    ${colors.sky[400]} 10px,
-    transparent 10px,
-    transparent 20px,
-    ${colors.violet[400]} 20px,
-    ${colors.violet[400]} 30px,
-    transparent 30px,
-    transparent 40px
+    ${colors.gray[900]},
+    ${colors.gray[900]} 15px,
+    transparent 15px,
+    transparent 25px
   )`,
 
   /* CODE HIGHLIGHTING COLORS

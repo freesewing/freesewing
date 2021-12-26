@@ -1,45 +1,46 @@
 const colors = require('tailwindcss/colors')
 
+const bg = '#002808'
 module.exports = {
   'fontFamily': `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
-  'primary': colors.lime['600'],
-  'primary-focus': colors.lime['700'],
-  'primary-content': colors.lime['100'],
+  'primary': colors.lime['700'],
+  'primary-focus': colors.lime['600'],
+  'primary-content': colors.lime['50'],
 
-  'secondary': colors.lime['600'],
-  'secondary-focus': colors.lime['500'],
-  'secondary-content': colors.lime['100'],
+  'secondary': colors.lime['700'],
+  'secondary-focus': colors.lime['600'],
+  'secondary-content': bg,
 
-  'accent': colors.yellow['400'],
-  'accent-focus': colors.yellow['500'],
-  'accent-content': colors.neutral['900'],
+  'accent': colors.lime['700'],
+  'accent-focus': colors.lime['600'],
+  'accent-content': colors.yellow['200'],
 
-  'neutral': colors.lime['900'],
-  'neutral-focus': colors.neutral['200'],
-  'neutral-content': colors.lime['300'],
+  'neutral': colors.lime['700'],
+  'neutral-focus': colors.lime['600'],
+  'neutral-content': colors.lime['200'],
 
-  'base-100': '#002808',
-  'base-200': '#002808',
-  'base-300': colors.lime['900'],
+  'base-100': bg,
+  'base-200': colors.lime['900'],
+  'base-300': colors.lime['800'],
   'base-content': colors.lime['500'],
 
   'info': colors.lime['700'],
-  'success': colors.green['600'],
-  'warning': colors.amber['400'],
-  'error': colors.red['400'],
+  'success': colors.lime['700'],
+  'warning': colors.lime['700'],
+  'error': colors.lime['700'],
 
+  '--btn-info-content': colors.teal[300],
+  '--btn-success-content': colors.green[300],
+  '--btn-warning-content': colors.orange[300],
+  '--btn-error-content': colors.red[300],
   '--rounded-btn': '0',
 
   '--theme-gradient': `repeating-linear-gradient(
     -45deg,
-    ${colors.lime[500]},
-    ${colors.lime[500]} 10px,
-    transparent 10px,
-    transparent 20px,
-    ${colors.lime[700]} 20px,
-    ${colors.lime[700]} 30px,
-    transparent 30px,
-    transparent 40px
+    ${colors.lime['700']},
+    ${colors.lime['700']} 15px,
+    ${bg} 15px,
+    ${bg} 30px
   )`,
 
   '--code-background-color': '#002407',

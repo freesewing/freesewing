@@ -12,12 +12,12 @@ const Left = props => (
 const Header = ({ app }) => {
   return (
       <header className={`
-        bg-primary
+        bg-neutral
         block
         sm:hidden
-        z-10
-        p-4
+        z-30
       `}>
+        <div className="p-2">
         <button
           className={`
             btn border-base-100 text-base-100 btn-sm border border-transparent bg-transparent
@@ -29,6 +29,8 @@ const Header = ({ app }) => {
               : <>Show menu &nbsp;<Right /></>
             }
         </button>
+        </div>
+        <div className="theme-gradient h-2 w-full z-10 relative -mb-2"></div>
       </header>
   )
 }

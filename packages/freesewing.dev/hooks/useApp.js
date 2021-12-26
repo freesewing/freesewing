@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Translation
@@ -28,6 +29,19 @@ function useApp(full = true) {
   const togglePrimaryMenu = () => setPrimaryMenu(!primaryMenu)
   const openPrimaryMenu = () => setPrimaryMenu(true)
   const closePrimaryMenu = () => setPrimaryMenu(false)
+
+  /*
+   * Hot-update navigation method
+   */
+  const updateNavigation = (path, content) => {
+    const newNavigation = {...navigation}
+    if (typeof path === 'string') {
+      path = (path.slice(0,1) === '/')
+        ? path.slice(1).split('/')
+        : path.split('/')
+    }
+    setNavigation(set(navigation, path, content))
+  }
 
   /*
    * Translation method
@@ -72,6 +86,7 @@ function useApp(full = true) {
     setTheme,
     startLoading: () => setLoading(true),
     stopLoading: () => setLoading(false),
+    updateNavigation,
 
     // State handlers
     togglePrimaryMenu,

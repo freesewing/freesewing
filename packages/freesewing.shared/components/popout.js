@@ -1,11 +1,11 @@
 import Icon from "shared/components/icon"
 
 const colors = {
-  note: 'accent',
-  tip: 'secondary',
+  note: 'primary',
+  tip: 'accent',
   warning: 'error',
   fixme: 'warning',
-  link: 'info',
+  link: 'secondary',
   related: 'info',
   none: '',
 }
@@ -20,6 +20,10 @@ forceTailwind = <p className="border-warning bg-warning" />
 forceTailwind = <p className="text-warning" />
 forceTailwind = <p className="border-info bg-info" />
 forceTailwind = <p className="text-info" />
+forceTailwind = <p className="border-success bg-success" />
+forceTailwind = <p className="text-success" />
+forceTailwind = <p className="border-primary bg-primary" />
+forceTailwind = <p className="text-primary" />
 
 const Popout = (props) => {
   let type = 'none'

@@ -93,6 +93,20 @@
   svg.freesewing.pattern .fill-current { @apply fs-fill-current }
 }
 
+/* Override DaisyUI button text color */
+.btn-info {
+  color: var(--btn-info-content);
+}
+.btn-success {
+  color: var(--btn-success-content);
+}
+.btn-warning {
+  color: var(--btn-warning-content);
+}
+.btn-error {
+  color: var(--btn-error-content);
+}
+
 /* Theme gradient */
 .theme-gradient {
   background: var(--theme-gradient);
@@ -102,6 +116,8 @@
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  margin-top: 0;
+  transition: margin-top 0.2s ease-out;
 }
 @keyframes MOVE-BG {
    from {

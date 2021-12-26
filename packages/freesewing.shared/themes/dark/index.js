@@ -3,42 +3,43 @@ const gray = colors.neutral
 
 module.exports = {
   'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
-  'primary': gray['300'],
-  'primary-focus': colors.violet['300'],
-  'primary-content': gray['900'],
+  'primary': colors.violet['700'],
+  'primary-focus': colors.violet['600'],
+  'primary-content': colors.violet['50'],
 
-  'secondary': colors.violet['500'],
-  'secondary-focus': colors.violet['400'],
-  'secondary-content': colors.violet['900'],
+  'secondary': colors.sky['500'],
+  'secondary-focus': colors.sky['400'],
+  'secondary-content': colors.sky['50'],
 
-  'accent': colors.emerald['500'],
-  'accent-focus': colors.emerald['400'],
-  'accent-content': gray['900'],
+  'accent': colors.pink['500'],
+  'accent-focus': colors.pink['400'],
+  'accent-content': colors.pink['50'],
 
-  'neutral': gray['900'],
-  'neutral-focus': gray['800'],
-  'neutral-content': gray['300'],
+  'neutral': colors.neutral['300'],
+  'neutral-focus': colors.neutral['50'],
+  'neutral-content': colors.neutral['900'],
 
-  'base-100': gray['900'],
-  'base-200': gray['700'],
-  'base-300': gray['600'],
-  'base-content': gray['300'],
+  'base-100': colors.neutral['900'],
+  'base-200': colors.neutral['700'],
+  'base-300': colors.neutral['600'],
+  'base-content': colors.neutral['300'],
 
-  'info': colors.emerald['700'],
-  'success': colors.green['500'],
-  'warning': colors.amber['500'],
-  'error': colors.red['400'],
+  'info': colors.indigo['700'],
+  'success': colors.green['700'],
+  'warning': colors.orange['500'],
+  'error': colors.red['700'],
+
+  '--btn-info-content': colors.neutral[50],
+  '--btn-success-content': colors.neutral[50],
+  '--btn-warning-content': colors.neutral[50],
+  '--btn-error-content': colors.neutral[50],
 
   '--theme-gradient': `repeating-linear-gradient(
     -45deg,
-    ${colors.gray[500]},
-    ${colors.gray[500]} 10px,
-    transparent 10px,
-    transparent 20px,
-    ${colors.violet[500]} 20px,
-    ${colors.violet[500]} 30px,
-    transparent 30px,
-    transparent 40px
+    ${colors.gray[300]},
+    ${colors.gray[300]} 15px,
+    transparent 15px,
+    transparent 25px
   )`,
 
   '--code-background-color': '#111',
