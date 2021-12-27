@@ -35,7 +35,7 @@ const Popout = (props) => {
   return (
     <div className={`relative my-8 bg-${color} bg-opacity-5`}>
       <div className={`
-        border-l-4 px-8 py-2 shadow border-${color}`}>
+        border-y-4 sm:border-0 sm:border-l-4 px-6 sm:px-8 py-4 sm:py-2 shadow border-${color}`}>
         <div className={`font-bold uppercase text-${color}`}>
           {type}
         </div>
