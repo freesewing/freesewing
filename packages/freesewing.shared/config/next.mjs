@@ -1,6 +1,6 @@
 import path from 'path'
 import remarkGfm from 'remark-gfm'
-import remarkJargon from '../remark-jargon/src/index.js'
+import remarkJargon from '../../../remark-jargon/src/index.js'
 import { jargon } from '@freesewing/i18n'
 
 const config = site => ({
