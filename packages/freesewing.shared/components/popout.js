@@ -1,5 +1,3 @@
-import Icon from "shared/components/icon"
-
 const colors = {
   note: 'primary',
   tip: 'accent',

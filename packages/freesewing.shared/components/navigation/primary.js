@@ -1,10 +1,15 @@
 import get from 'lodash.get'
-import Icon from 'shared/components/icon/index.js'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import Logo from 'shared/components/logos/freesewing.js'
 import ThemePicker from 'shared/components/theme-picker.js'
 import { getTagline } from 'site/utils.js'
+import RssIcon from 'shared/components/icons/rss.js'
+import ThemeIcon from 'shared/components/icons/theme.js'
+import TutorialIcon from 'shared/components/icons/tutorial.js'
+import GuideIcon from 'shared/components/icons/guide.js'
+import HelpIcon from 'shared/components/icons/help.js'
+import DocsIcon from 'shared/components/icons/docs.js'
 
 // TODO: Clean this up after restructuring markdown content
 const hide = ['contributors', 'developers', 'editors', 'translators']
@@ -18,6 +23,15 @@ const force = [
   <p className="w-6 mr-2"/>,
   <p className="w-8 mr-3"/>
 ]
+
+// List of icons matched to top-level slug
+const icons = {
+  blog: <RssIcon />,
+  tutorials: <TutorialIcon />,
+  guides: <GuideIcon />,
+  howtos: <HelpIcon />,
+  reference: <DocsIcon />
+}
 
 /* helper method to order nav entries */
 const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
@@ -74,8 +88,15 @@ const SubLevel = ({ nodes={}, active }) => (
                   ${linkClasses}
                   ${child.__slug === active ? 'text-secondary border-secondary' : 'text-base-content'}
                 `}>
-                <Icon icon="middot" size="24" className="text-secondary inline" />
-                  { child?.__linktitle || child.__title }
+                  <span className={`
+                    text-3xl mr-2 inline-block p-0 leading-3
+                    ${child.__slug === active ? 'text-secondary translate-y-1' : 'translate-y-3' }
+                  `}>
+                    {child.__slug === active ? <>&bull;</> : <>&deg;</>}
+                  </span>
+                  <span className={child.__slug === active ? 'font-bold' : ''}>
+                    { child?.__linktitle || child.__title }
+                  </span>
                 </a>
               </Link>
               <Chevron w={6} m={3}/>
@@ -92,8 +113,15 @@ const SubLevel = ({ nodes={}, active }) => (
               ${linkClasses}
               ${child.__slug === active ? 'text-secondary border-secondary' : 'text-base-content'}
             `}>
-              <Icon icon="middot" size="24" className="text-secondary inline" />
-              {child.__linktitle}
+              <span className={`
+                text-3xl mr-2 inline-block p-0 leading-3
+                ${child.__slug === active ? 'text-secondary translate-y-1' : 'translate-y-3' }
+              `}>
+               {child.__slug === active ? <>&bull;</> : <>&deg;</>}
+              </span>
+              <span className={child.__slug === active ? 'font-bold' : ''}>
+                {child.__linktitle}
+              </span>
             </a>
           </Link>
         </li>
@@ -113,7 +141,7 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
       text-base-content
       items-center
     `}>
-      {icon}
+      <span className="text-secondary">{icon}</span>
       <Link href={`/${slug}`}>
         <a className={`grow ${linkClasses} ${slug === active ? 'text-secondary' : ''}`}>
           {title}
@@ -135,7 +163,9 @@ const TopLogo = ({ app }) => (
   `}>
     <Link href='/'>
       <a className="hover:pointer">
-        <Logo size={32} fill='currentColor' stroke={false}/>
+        <span className="text-secondary">
+          <Logo size={32} fill='currentColor' stroke={false}/>
+        </span>
       </a>
     </Link>
     <div>
@@ -159,7 +189,9 @@ const TopTheme = ({ app }) => (
     p-2
     text-base-content
   `}>
-    <Icon icon='theme' className="text-secondary"/>
+    <span className="text-secondary">
+      <ThemeIcon  />
+    </span>
     <div className={`grow`}>
       Theme
     </div>
@@ -177,7 +209,7 @@ const Navigation = ({ app, active }) => {
   const output = []
   for (const key of Object.keys(app.navigation).sort()) {
     if (hide.indexOf(key) === -1) output.push(<TopLevel
-      icon={<Icon icon={key} className="text-secondary"/>}
+      icon={icons[key] || <span className="text-3xl mr-2 translate-y-3 inline-block p-0 leading-3">&deg;</span>}
       title={key}
       slug={key}
       key={key}

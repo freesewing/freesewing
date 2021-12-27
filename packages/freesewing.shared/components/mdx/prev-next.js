@@ -1,6 +1,8 @@
 import get from 'lodash.get'
 import orderBy from 'lodash.orderby'
 import Link from 'next/link'
+import Right from 'shared/components/icons/right.js'
+import Left from 'shared/components/icons/left.js'
 
 // helper method to order nav entries
 const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
@@ -73,16 +75,16 @@ const next = app => {
 const renderPrevious = node => node
   ? (
     <Link href={'/'+node.__slug}>
-      <a className="text-secondary"><strong>🠐 </strong>{node.__linktitle}</a>
+      <a className="text-secondary"><Left />{node.__linktitle}</a>
     </Link>
-  ) : null
+  ) : <span></span>
 
 const renderNext = node => node
   ? (
     <Link href={'/'+node.__slug}>
-      <a>{node.__linktitle} <strong>➞</strong></a>
+      <a>{node.__linktitle} <Right /></a>
     </Link>
-  ) : null
+  ) : <span></span>
 
 const PrevNext = ({ app }) => {
 
