@@ -23,5 +23,13 @@ macro('cutonfold', {
 | `offset`    | 50      | Number              | The distance in mm to offset from the line from start to end |
 | `grainline` | `false` | Boolean             | Whether this cutonfold indicator is also the grainline |
 
+<Note>
+
+###### It's safe to use a corner of your pattern part for this
+
+Since this is typically used on corners, the generated cut-on-fold indicator 
+will not go all the way to the `to` and `from` points.
+
+</Note>
 
 

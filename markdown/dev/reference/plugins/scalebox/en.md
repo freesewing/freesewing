@@ -1,34 +1,21 @@
 ---
-title: scalebox
+title: "@freesewing/plugin-scalebox"
 ---
 
-[![Build-time plugin](https://img.shields.io/badge/Type-build--time-purple.svg)](/plugins)
-&nbsp;
-[![License: MIT](https://img.shields.io/npm/l/@freesewing/plugin-scalebox.svg?label=License)](https://www.npmjs.com/package/@freesewing/plugin-scalebox)
-&nbsp;
-[![Code quality on DeepScan](https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256)
-&nbsp;
-[![Open issues tagged pkg:plugin-scalebox](https://img.shields.io/github/issues/freesewing/freesewing/pkg:plugin-scalebox.svg?label=Issues)](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aplugin-scalebox)
+The **@freesewing/plugin-scalebox** plugin provides [the 
+scalebox macro](/reference/api/macros/scalebox/) with facilitates
+adding a scalebox to your design, so users can verify that the pattern
+is printed at the correct scale.
 
-The **scalebox** plugin provides [the scalebox macro](/reference/macros/scalebox/):
-
-<Example part="plugin_scalebox" caption="An example of the scalebox" design={false} />
-
-```js
-let { Point, points, macro } = part.shorthand();
-
-points.anchor = new Point(0, 0);
-
-macro("scalebox", {
-  at: points.anchor
-});
-```
+<Example part="plugin_scalebox">An example of the scalebox</Example>
 
 <Note>
 
-###### Purpose of a scale box
+##### FreeSewing branding can be overruled at runtime
 
-A scalebox allows people to verify the pattern is printed at the correct scale
+This plugin by default includes FreeSewing branding, but you can
+override that when calling the scalebox macro in case you want to
+generate your own branded designs.
 
 </Note>
 
@@ -46,8 +33,8 @@ npm install @freesewing/plugin-scalebox
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them 
-by passing them to the [`freesewing.Design`](/reference/api#design) constructor:
+Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
+load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
 
 ```js
 import freesewing from "@freesewing/core";
@@ -57,4 +44,4 @@ import config from "../config";
 const Pattern = new freesewing.Design(config, scalebox);
 ```
 
-Now you can use [the scalebox macro](/reference/macros/scalebox/) the macro in your parts.
+Now you can use the [scalebox](/reference/api/macros/scalebox/) macro in your parts.
