@@ -29,7 +29,7 @@
     "react-swipeable": "^6.2.0",
     "react-timeago": "^6.2.1",
     "rehype-highlight": "^5.0.1",
-    "remark-copy-linked-files": "^1.5.0",
+    "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
     "remark-jargon": "^2.19.5"
   },
@@ -39,5 +39,8 @@
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.18.1"
   }
 }
