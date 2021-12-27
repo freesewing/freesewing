@@ -1,7 +1,7 @@
 [build]
   base = "."
   publish = "packages/freesewing.dev/out/"
-  command = "yarn ciexport"
+  command = "cd packages/freesewing.dev && yarn export"
   SITE = "dev"
 
 
