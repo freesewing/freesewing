@@ -43,7 +43,7 @@ The `Part.shorthand()` method returns a plain object with the following properti
 
 ## Part.shorthand() example
 
-```js{16}
+```js
 // You could write this:
 part.points.from = new part.Point(
   pattern.measurements.chest / 2, 

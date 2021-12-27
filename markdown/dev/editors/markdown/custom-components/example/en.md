@@ -11,7 +11,7 @@ and use is not fully covered below. It's good to know it exists though.
 And if you want to use it, reach out on Discord to some of our more
 experienced documentation writers.
 
-```mdx
+```md
 <Example 
   part="path_attr" 
   caption="Example of the Example custom component" 

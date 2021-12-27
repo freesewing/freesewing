@@ -1,5 +1,5 @@
 ---
-title: Testing your pattern
+title: "Testing your pattern"
 order: 250
 ---
 

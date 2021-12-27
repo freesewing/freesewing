@@ -11,5 +11,5 @@ It is provided by [plugin-theme](/reference/plugins/theme/).
 snippets.demo = new Snippet('bnotch', points.anchor)
 ```
 
-<Example part="snippets_bnotch" caption="An example of the bnotch snippet" />
+<Example part="snippets_bnotch">An example of the bnotch snippet</Example>
 

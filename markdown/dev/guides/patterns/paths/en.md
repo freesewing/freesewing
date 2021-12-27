@@ -1,6 +1,6 @@
 ---
 title: Paths
-order: 20
+order: 40
 ---
 
 <Example 

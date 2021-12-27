@@ -1,5 +1,5 @@
 ---
-title: Prerequisites
+title: Before you start
 order: 100
 for: developers
 icons: 
@@ -15,10 +15,12 @@ goals:
   - Learn about Bézier curves
 ---
 
-Here's a few things that, once you get them, will make it easier to understand
-what FreeSewing is doing, and how it's doing it. 
+Drawing lines and curves on paper is a skill most people have been practicing since kindergarten.
+In FreeSewing, we draw lines and curves with code, which is a bit more abstract 
+but doesn't have to be complicated once you understand a few basic building blocks.
 
-We'll cover the following topics:
+Understanding the concepts that are involved in designing sewing patterns in code will pay dividents later.
+That is why we recommend you familiarize yourself with the following topics:
 
 <ReadMore list />
 

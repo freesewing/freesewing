@@ -31,7 +31,7 @@ Your focus today is on learning FreeSewing and how to translate your designs int
 
 At the end of this tutorial, you will have created this pattern:
 
-<Example pattern="tutorial" part="bib" caption="Your end result" />
+<Example pattern="tutorial" part="bib">Your end result</Example>
 
 Before we can get started, let's make sure you have the required software 
 installed on your computer:

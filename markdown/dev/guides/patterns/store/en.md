@@ -1,6 +1,6 @@
 ---
 title: Store
-order: 70
+order: 60
 ---
 
 <Example 
