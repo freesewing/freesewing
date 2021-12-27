@@ -1,9 +1,7 @@
 import path from 'path'
 import remarkGfm from 'remark-gfm'
-import remarkJargon from '../../../remark-jargon/src/index.js'
-import { jargon } from '@freesewing/i18n'
 
-const config = site => ({
+const config = (site, remarkPlugins=[]) => ({
   experimental: {
     externalDir: true,
     esmExternals: true,
@@ -29,7 +27,7 @@ const config = site => ({
           options: {
             remarkPlugins: [
               remarkGfm,
-              [remarkJargon, { jargon } ],
+              ...remarkPlugins,
             ]
           }
         }
