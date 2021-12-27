@@ -84,7 +84,7 @@ function useApp(full = true) {
     setPrimaryMenu,
     setSlug,
     setTheme,
-    startLoading: () => setLoading(true),
+    startLoading: () => { setLoading(true); setPrimaryMenu(false) }, // Always close menu when navigating
     stopLoading: () => setLoading(false),
     updateNavigation,
 
