@@ -107,7 +107,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
         `}>
           <PrimaryNavigation app={app} active={slug}/>
         </aside>
-        <section className='max-w-screen-lg lg:pt-8 p-4'>
+        <section className='max-w-screen-lg lg:pt-8 p-4 w-full'>
           {title && (
             <>
               <Breadcrumbs app={app} slug={slug} title={title} />
