@@ -1050,10 +1050,10 @@ export default {
       "__slug": "reference",
       "__order": "1040Reference",
       "api": {
-        "__title": "Core API",
-        "__linktitle": "Core API",
+        "__title": "@freesewing/core API",
+        "__linktitle": "@freesewing/core API",
         "__slug": "reference/api",
-        "__order": "Core API",
+        "__order": "@freesewing/core API",
         "attributes": {
           "__title": "Attributes",
           "__linktitle": "Attributes",
@@ -1102,11 +1102,275 @@ export default {
             "__order": "setIfUnset()"
           }
         },
+        "config": {
+          "__title": "Pattern configuration file",
+          "__linktitle": "Pattern configuration file",
+          "__slug": "reference/api/config",
+          "__order": "Pattern configuration file",
+          "dependencies": {
+            "__title": "dependencies",
+            "__linktitle": "dependencies",
+            "__slug": "reference/api/config/dependencies",
+            "__order": "dependencies"
+          },
+          "hide": {
+            "__title": "hide",
+            "__linktitle": "hide",
+            "__slug": "reference/api/config/hide",
+            "__order": "hide"
+          },
+          "inject": {
+            "__title": "inject",
+            "__linktitle": "inject",
+            "__slug": "reference/api/config/inject",
+            "__order": "inject"
+          },
+          "measurements": {
+            "__title": "measurements",
+            "__linktitle": "measurements",
+            "__slug": "reference/api/config/measurements",
+            "__order": "measurements"
+          },
+          "name": {
+            "__title": "name",
+            "__linktitle": "name",
+            "__slug": "reference/api/config/name",
+            "__order": "name"
+          },
+          "optionalmeasurements": {
+            "__title": "optionalMeasurements",
+            "__linktitle": "optionalMeasurements",
+            "__slug": "reference/api/config/optionalmeasurements",
+            "__order": "optionalMeasurements"
+          },
+          "options": {
+            "__title": "options",
+            "__linktitle": "options",
+            "__slug": "reference/api/config/options",
+            "__order": "options",
+            "boolean": {
+              "__title": "boolean",
+              "__linktitle": "boolean",
+              "__slug": "reference/api/config/options/boolean",
+              "__order": "boolean"
+            },
+            "constant": {
+              "__title": "constant",
+              "__linktitle": "constant",
+              "__slug": "reference/api/config/options/constant",
+              "__order": "constant"
+            },
+            "counter": {
+              "__title": "counter",
+              "__linktitle": "counter",
+              "__slug": "reference/api/config/options/counter",
+              "__order": "counter"
+            },
+            "degrees": {
+              "__title": "degrees",
+              "__linktitle": "degrees",
+              "__slug": "reference/api/config/options/degrees",
+              "__order": "degrees"
+            },
+            "list": {
+              "__title": "list",
+              "__linktitle": "list",
+              "__slug": "reference/api/config/options/list",
+              "__order": "list"
+            },
+            "millimeter": {
+              "__title": "millimeter",
+              "__linktitle": "millimeter",
+              "__slug": "reference/api/config/options/millimeter",
+              "__order": "millimeter"
+            },
+            "percentage": {
+              "__title": "percentage",
+              "__linktitle": "percentage",
+              "__slug": "reference/api/config/options/percentage",
+              "__order": "percentage"
+            }
+          },
+          "parts": {
+            "__title": "parts",
+            "__linktitle": "parts",
+            "__slug": "reference/api/config/parts",
+            "__order": "parts"
+          },
+          "version": {
+            "__title": "version",
+            "__linktitle": "version",
+            "__slug": "reference/api/config/version",
+            "__order": "version"
+          }
+        },
         "design": {
           "__title": "Design",
           "__linktitle": "Design",
           "__slug": "reference/api/design",
           "__order": "10Design"
+        },
+        "hooks": {
+          "__title": "Hooks API",
+          "__linktitle": "Hooks API",
+          "__slug": "reference/api/hooks",
+          "__order": "Hooks API",
+          "inserttext": {
+            "__title": "insertText",
+            "__linktitle": "insertText",
+            "__slug": "reference/api/hooks/inserttext",
+            "__order": "insertText"
+          },
+          "postdraft": {
+            "__title": "postDraft",
+            "__linktitle": "postDraft",
+            "__slug": "reference/api/hooks/postdraft",
+            "__order": "postDraft"
+          },
+          "postrender": {
+            "__title": "postRender",
+            "__linktitle": "postRender",
+            "__slug": "reference/api/hooks/postrender",
+            "__order": "postRender"
+          },
+          "postsample": {
+            "__title": "postSample",
+            "__linktitle": "postSample",
+            "__slug": "reference/api/hooks/postsample",
+            "__order": "postSample"
+          },
+          "predraft": {
+            "__title": "preDraft",
+            "__linktitle": "preDraft",
+            "__slug": "reference/api/hooks/predraft",
+            "__order": "preDraft"
+          },
+          "prerender": {
+            "__title": "preRender",
+            "__linktitle": "preRender",
+            "__slug": "reference/api/hooks/prerender",
+            "__order": "preRender"
+          },
+          "presample": {
+            "__title": "preSample",
+            "__linktitle": "preSample",
+            "__slug": "reference/api/hooks/presample",
+            "__order": "preSample"
+          }
+        },
+        "macros": {
+          "__title": "Macros",
+          "__linktitle": "Macros",
+          "__slug": "reference/api/macros",
+          "__order": "Macros",
+          "bartack": {
+            "__title": "bartack",
+            "__linktitle": "bartack",
+            "__slug": "reference/api/macros/bartack",
+            "__order": "bartack"
+          },
+          "bartackalong": {
+            "__title": "bartackAlong",
+            "__linktitle": "bartackAlong",
+            "__slug": "reference/api/macros/bartackalong",
+            "__order": "bartackAlong"
+          },
+          "bartackfractionalong": {
+            "__title": "bartackFractionAlong",
+            "__linktitle": "bartackFractionAlong",
+            "__slug": "reference/api/macros/bartackfractionalong",
+            "__order": "bartackFractionAlong"
+          },
+          "cutonfold": {
+            "__title": "cutonfold",
+            "__linktitle": "cutonfold",
+            "__slug": "reference/api/macros/cutonfold",
+            "__order": "cutonfold"
+          },
+          "flip": {
+            "__title": "flip",
+            "__linktitle": "flip",
+            "__slug": "reference/api/macros/flip",
+            "__order": "flip"
+          },
+          "grainline": {
+            "__title": "grainline",
+            "__linktitle": "grainline",
+            "__slug": "reference/api/macros/grainline",
+            "__order": "grainline"
+          },
+          "hd": {
+            "__title": "hd",
+            "__linktitle": "hd",
+            "__slug": "reference/api/macros/hd",
+            "__order": "hd"
+          },
+          "ld": {
+            "__title": "ld",
+            "__linktitle": "ld",
+            "__slug": "reference/api/macros/ld",
+            "__order": "ld"
+          },
+          "miniscale": {
+            "__title": "miniscale",
+            "__linktitle": "miniscale",
+            "__slug": "reference/api/macros/miniscale",
+            "__order": "miniscale"
+          },
+          "mirror": {
+            "__title": "mirror",
+            "__linktitle": "mirror",
+            "__slug": "reference/api/macros/mirror",
+            "__order": "mirror"
+          },
+          "pd": {
+            "__title": "pd",
+            "__linktitle": "pd",
+            "__slug": "reference/api/macros/pd",
+            "__order": "pd"
+          },
+          "rmad": {
+            "__title": "rmad",
+            "__linktitle": "rmad",
+            "__slug": "reference/api/macros/rmad",
+            "__order": "rmad"
+          },
+          "rmd": {
+            "__title": "rmd",
+            "__linktitle": "rmd",
+            "__slug": "reference/api/macros/rmd",
+            "__order": "rmd"
+          },
+          "round": {
+            "__title": "round",
+            "__linktitle": "round",
+            "__slug": "reference/api/macros/round",
+            "__order": "round"
+          },
+          "scalebox": {
+            "__title": "scalebox",
+            "__linktitle": "scalebox",
+            "__slug": "reference/api/macros/scalebox",
+            "__order": "scalebox"
+          },
+          "sprinkle": {
+            "__title": "sprinkle",
+            "__linktitle": "sprinkle",
+            "__slug": "reference/api/macros/sprinkle",
+            "__order": "sprinkle"
+          },
+          "title": {
+            "__title": "title",
+            "__linktitle": "title",
+            "__slug": "reference/api/macros/title",
+            "__order": "title"
+          },
+          "vd": {
+            "__title": "vd",
+            "__linktitle": "vd",
+            "__slug": "reference/api/macros/vd",
+            "__order": "vd"
+          }
         },
         "part": {
           "__title": "Part",
@@ -1498,6 +1762,84 @@ export default {
             "__order": "Point.translate()"
           }
         },
+        "settings": {
+          "__title": "Settings",
+          "__linktitle": "Settings",
+          "__slug": "reference/api/settings",
+          "__order": "Settings",
+          "complete": {
+            "__title": "complete",
+            "__linktitle": "complete",
+            "__slug": "reference/api/settings/complete",
+            "__order": "complete"
+          },
+          "embed": {
+            "__title": "embed",
+            "__linktitle": "embed",
+            "__slug": "reference/api/settings/embed",
+            "__order": "embed"
+          },
+          "idprefix": {
+            "__title": "idPrefix",
+            "__linktitle": "idPrefix",
+            "__slug": "reference/api/settings/idprefix",
+            "__order": "idPrefix"
+          },
+          "layout": {
+            "__title": "layout",
+            "__linktitle": "layout",
+            "__slug": "reference/api/settings/layout",
+            "__order": "layout"
+          },
+          "locale": {
+            "__title": "locale",
+            "__linktitle": "locale",
+            "__slug": "reference/api/settings/locale",
+            "__order": "locale"
+          },
+          "margin": {
+            "__title": "margin",
+            "__linktitle": "margin",
+            "__slug": "reference/api/settings/margin",
+            "__order": "margin"
+          },
+          "measurements": {
+            "__title": "measurements",
+            "__linktitle": "measurements",
+            "__slug": "reference/api/settings/measurements",
+            "__order": "measurements"
+          },
+          "only": {
+            "__title": "only",
+            "__linktitle": "only",
+            "__slug": "reference/api/settings/only",
+            "__order": "only"
+          },
+          "options": {
+            "__title": "options",
+            "__linktitle": "options",
+            "__slug": "reference/api/settings/options",
+            "__order": "options"
+          },
+          "paperless": {
+            "__title": "paperless",
+            "__linktitle": "paperless",
+            "__slug": "reference/api/settings/paperless",
+            "__order": "paperless"
+          },
+          "sa": {
+            "__title": "sa",
+            "__linktitle": "sa",
+            "__slug": "reference/api/settings/sa",
+            "__order": "sa"
+          },
+          "units": {
+            "__title": "units",
+            "__linktitle": "units",
+            "__slug": "reference/api/settings/units",
+            "__order": "units"
+          }
+        },
         "snippet": {
           "__title": "Snippet",
           "__linktitle": "Snippet",
@@ -1514,6 +1856,66 @@ export default {
             "__linktitle": "clone()",
             "__slug": "reference/api/snippet/clone",
             "__order": "clone()"
+          }
+        },
+        "snippets": {
+          "__title": "Snippets",
+          "__linktitle": "Snippets",
+          "__slug": "reference/api/snippets",
+          "__order": "Snippets",
+          "bnotch": {
+            "__title": "bnotch",
+            "__linktitle": "bnotch",
+            "__slug": "reference/api/snippets/bnotch",
+            "__order": "bnotch"
+          },
+          "button": {
+            "__title": "button",
+            "__linktitle": "button",
+            "__slug": "reference/api/snippets/button",
+            "__order": "button"
+          },
+          "buttonhole": {
+            "__title": "buttonhole",
+            "__linktitle": "buttonhole",
+            "__slug": "reference/api/snippets/buttonhole",
+            "__order": "buttonhole"
+          },
+          "buttonhole-end": {
+            "__title": "buttonhole-end",
+            "__linktitle": "buttonhole-end",
+            "__slug": "reference/api/snippets/buttonhole-end",
+            "__order": "buttonhole-end"
+          },
+          "buttonhole-start": {
+            "__title": "buttonhole-start",
+            "__linktitle": "buttonhole-start",
+            "__slug": "reference/api/snippets/buttonhole-start",
+            "__order": "buttonhole-start"
+          },
+          "logo": {
+            "__title": "logo",
+            "__linktitle": "logo",
+            "__slug": "reference/api/snippets/logo",
+            "__order": "logo"
+          },
+          "notch": {
+            "__title": "notch",
+            "__linktitle": "notch",
+            "__slug": "reference/api/snippets/notch",
+            "__order": "notch"
+          },
+          "snap-socket": {
+            "__title": "snap-socket",
+            "__linktitle": "snap-socket",
+            "__slug": "reference/api/snippets/snap-socket",
+            "__order": "snap-socket"
+          },
+          "snap-stud": {
+            "__title": "snap-stud",
+            "__linktitle": "snap-stud",
+            "__slug": "reference/api/snippets/snap-stud",
+            "__order": "snap-stud"
           }
         },
         "store": {
@@ -1721,610 +2123,112 @@ export default {
           }
         }
       },
-      "backend": {
-        "__title": "Backend API",
-        "__linktitle": "Backend API",
-        "__slug": "reference/backend",
-        "__order": "Backend API",
-        "account": {
-          "__title": "Account",
-          "__linktitle": "Account",
-          "__slug": "reference/backend/account",
-          "__order": "Account"
-        },
-        "login": {
-          "__title": "Log in",
-          "__linktitle": "Log in",
-          "__slug": "reference/backend/login",
-          "__order": "Log in"
-        },
-        "models": {
-          "__title": "Models",
-          "__linktitle": "Models",
-          "__slug": "reference/backend/models",
-          "__order": "Models"
-        },
-        "oauth": {
-          "__title": "Oauth",
-          "__linktitle": "Oauth",
-          "__slug": "reference/backend/oauth",
-          "__order": "Oauth"
-        },
-        "recipes": {
-          "__title": "Recipes",
-          "__linktitle": "Recipes",
-          "__slug": "reference/backend/recipes",
-          "__order": "Recipes"
-        },
-        "signup": {
-          "__title": "Sign up",
-          "__linktitle": "Sign up",
-          "__slug": "reference/backend/signup",
-          "__order": "Sign up"
-        },
-        "users": {
-          "__title": "Users",
-          "__linktitle": "Users",
-          "__slug": "reference/backend/users",
-          "__order": "Users"
-        }
-      },
-      "config": {
-        "__title": "Pattern configuration file",
-        "__linktitle": "Pattern configuration file",
-        "__slug": "reference/config",
-        "__order": "Pattern configuration file",
-        "dependencies": {
-          "__title": "dependencies",
-          "__linktitle": "dependencies",
-          "__slug": "reference/config/dependencies",
-          "__order": "dependencies"
-        },
-        "hide": {
-          "__title": "hide",
-          "__linktitle": "hide",
-          "__slug": "reference/config/hide",
-          "__order": "hide"
-        },
-        "inject": {
-          "__title": "inject",
-          "__linktitle": "inject",
-          "__slug": "reference/config/inject",
-          "__order": "inject"
-        },
-        "measurements": {
-          "__title": "measurements",
-          "__linktitle": "measurements",
-          "__slug": "reference/config/measurements",
-          "__order": "measurements"
-        },
-        "name": {
-          "__title": "name",
-          "__linktitle": "name",
-          "__slug": "reference/config/name",
-          "__order": "name"
-        },
-        "optionalmeasurements": {
-          "__title": "optionalMeasurements",
-          "__linktitle": "optionalMeasurements",
-          "__slug": "reference/config/optionalmeasurements",
-          "__order": "optionalMeasurements"
-        },
-        "options": {
-          "__title": "options",
-          "__linktitle": "options",
-          "__slug": "reference/config/options",
-          "__order": "options",
-          "boolean": {
-            "__title": "boolean",
-            "__linktitle": "boolean",
-            "__slug": "reference/config/options/boolean",
-            "__order": "boolean"
-          },
-          "constant": {
-            "__title": "constant",
-            "__linktitle": "constant",
-            "__slug": "reference/config/options/constant",
-            "__order": "constant"
-          },
-          "counter": {
-            "__title": "counter",
-            "__linktitle": "counter",
-            "__slug": "reference/config/options/counter",
-            "__order": "counter"
-          },
-          "degrees": {
-            "__title": "degrees",
-            "__linktitle": "degrees",
-            "__slug": "reference/config/options/degrees",
-            "__order": "degrees"
-          },
-          "list": {
-            "__title": "list",
-            "__linktitle": "list",
-            "__slug": "reference/config/options/list",
-            "__order": "list"
-          },
-          "millimeter": {
-            "__title": "millimeter",
-            "__linktitle": "millimeter",
-            "__slug": "reference/config/options/millimeter",
-            "__order": "millimeter"
-          },
-          "percentage": {
-            "__title": "percentage",
-            "__linktitle": "percentage",
-            "__slug": "reference/config/options/percentage",
-            "__order": "percentage"
-          }
-        },
-        "parts": {
-          "__title": "parts",
-          "__linktitle": "parts",
-          "__slug": "reference/config/parts",
-          "__order": "parts"
-        },
-        "version": {
-          "__title": "version",
-          "__linktitle": "version",
-          "__slug": "reference/config/version",
-          "__order": "version"
-        }
-      },
-      "designs": {
-        "__title": "Designs",
-        "__linktitle": "Designs",
-        "__slug": "reference/designs",
-        "__order": "Designs"
-      },
-      "hooks": {
-        "__title": "Hooks API",
-        "__linktitle": "Hooks API",
-        "__slug": "reference/hooks",
-        "__order": "Hooks API",
-        "inserttext": {
-          "__title": "insertText",
-          "__linktitle": "insertText",
-          "__slug": "reference/hooks/inserttext",
-          "__order": "insertText"
-        },
-        "postdraft": {
-          "__title": "postDraft",
-          "__linktitle": "postDraft",
-          "__slug": "reference/hooks/postdraft",
-          "__order": "postDraft"
-        },
-        "postrender": {
-          "__title": "postRender",
-          "__linktitle": "postRender",
-          "__slug": "reference/hooks/postrender",
-          "__order": "postRender"
-        },
-        "postsample": {
-          "__title": "postSample",
-          "__linktitle": "postSample",
-          "__slug": "reference/hooks/postsample",
-          "__order": "postSample"
-        },
-        "predraft": {
-          "__title": "preDraft",
-          "__linktitle": "preDraft",
-          "__slug": "reference/hooks/predraft",
-          "__order": "preDraft"
-        },
-        "prerender": {
-          "__title": "preRender",
-          "__linktitle": "preRender",
-          "__slug": "reference/hooks/prerender",
-          "__order": "preRender"
-        },
-        "presample": {
-          "__title": "preSample",
-          "__linktitle": "preSample",
-          "__slug": "reference/hooks/presample",
-          "__order": "preSample"
-        }
-      },
-      "macros": {
-        "__title": "Macros",
-        "__linktitle": "Macros",
-        "__slug": "reference/macros",
-        "__order": "Macros",
-        "bartack": {
-          "__title": "bartack",
-          "__linktitle": "bartack",
-          "__slug": "reference/macros/bartack",
-          "__order": "bartack"
-        },
-        "bartackalong": {
-          "__title": "bartackAlong",
-          "__linktitle": "bartackAlong",
-          "__slug": "reference/macros/bartackalong",
-          "__order": "bartackAlong"
-        },
-        "bartackfractionalong": {
-          "__title": "bartackFractionAlong",
-          "__linktitle": "bartackFractionAlong",
-          "__slug": "reference/macros/bartackfractionalong",
-          "__order": "bartackFractionAlong"
-        },
-        "cutonfold": {
-          "__title": "cutonfold",
-          "__linktitle": "cutonfold",
-          "__slug": "reference/macros/cutonfold",
-          "__order": "cutonfold"
-        },
-        "flip": {
-          "__title": "flip",
-          "__linktitle": "flip",
-          "__slug": "reference/macros/flip",
-          "__order": "flip"
-        },
-        "grainline": {
-          "__title": "grainline",
-          "__linktitle": "grainline",
-          "__slug": "reference/macros/grainline",
-          "__order": "grainline"
-        },
-        "hd": {
-          "__title": "hd",
-          "__linktitle": "hd",
-          "__slug": "reference/macros/hd",
-          "__order": "hd"
-        },
-        "ld": {
-          "__title": "ld",
-          "__linktitle": "ld",
-          "__slug": "reference/macros/ld",
-          "__order": "ld"
-        },
-        "miniscale": {
-          "__title": "miniscale",
-          "__linktitle": "miniscale",
-          "__slug": "reference/macros/miniscale",
-          "__order": "miniscale"
-        },
-        "mirror": {
-          "__title": "mirror",
-          "__linktitle": "mirror",
-          "__slug": "reference/macros/mirror",
-          "__order": "mirror"
-        },
-        "pd": {
-          "__title": "pd",
-          "__linktitle": "pd",
-          "__slug": "reference/macros/pd",
-          "__order": "pd"
-        },
-        "rmad": {
-          "__title": "rmad",
-          "__linktitle": "rmad",
-          "__slug": "reference/macros/rmad",
-          "__order": "rmad"
-        },
-        "rmd": {
-          "__title": "rmd",
-          "__linktitle": "rmd",
-          "__slug": "reference/macros/rmd",
-          "__order": "rmd"
-        },
-        "round": {
-          "__title": "round",
-          "__linktitle": "round",
-          "__slug": "reference/macros/round",
-          "__order": "round"
-        },
-        "scalebox": {
-          "__title": "scalebox",
-          "__linktitle": "scalebox",
-          "__slug": "reference/macros/scalebox",
-          "__order": "scalebox"
-        },
-        "sprinkle": {
-          "__title": "sprinkle",
-          "__linktitle": "sprinkle",
-          "__slug": "reference/macros/sprinkle",
-          "__order": "sprinkle"
-        },
-        "title": {
-          "__title": "title",
-          "__linktitle": "title",
-          "__slug": "reference/macros/title",
-          "__order": "title"
-        },
-        "vd": {
-          "__title": "vd",
-          "__linktitle": "vd",
-          "__slug": "reference/macros/vd",
-          "__order": "vd"
-        }
-      },
       "plugins": {
         "__title": "Plugins",
         "__linktitle": "Plugins",
         "__slug": "reference/plugins",
         "__order": "Plugins",
         "bartack": {
-          "__title": "bartack",
-          "__linktitle": "bartack",
+          "__title": "@freesewing/plugin-bartack",
+          "__linktitle": "@freesewing/plugin-bartack",
           "__slug": "reference/plugins/bartack",
-          "__order": "bartack"
+          "__order": "@freesewing/plugin-bartack"
         },
         "bundle": {
-          "__title": "bundle",
-          "__linktitle": "bundle",
+          "__title": "@freesewing/plugin-bundle",
+          "__linktitle": "@freesewing/plugin-bundle",
           "__slug": "reference/plugins/bundle",
-          "__order": "bundle"
+          "__order": "@freesewing/plugin-bundle"
         },
         "bust": {
-          "__title": "bust",
-          "__linktitle": "bust",
+          "__title": "@freesewing/plugin-bust",
+          "__linktitle": "@freesewing/plugin-bust",
           "__slug": "reference/plugins/bust",
-          "__order": "bust"
+          "__order": "@freesewing/plugin-bust"
         },
         "buttons": {
-          "__title": "buttons",
-          "__linktitle": "buttons",
+          "__title": "@freesewing/plugin-buttons",
+          "__linktitle": "@freesewing/plugin-buttons",
           "__slug": "reference/plugins/buttons",
-          "__order": "buttons"
+          "__order": "@freesewing/plugin-buttons"
         },
         "cutonfold": {
-          "__title": "cutonfold",
-          "__linktitle": "cutonfold",
+          "__title": "@freesewing/plugin-cutonfold",
+          "__linktitle": "@freesewing/plugin-cutonfold",
           "__slug": "reference/plugins/cutonfold",
-          "__order": "cutonfold"
+          "__order": "@freesewing/plugin-cutonfold"
         },
         "dimension": {
-          "__title": "dimension",
-          "__linktitle": "dimension",
+          "__title": "@freesewing/plugin-dimension",
+          "__linktitle": "@freesewing/plugin-dimension",
           "__slug": "reference/plugins/dimension",
-          "__order": "dimension"
+          "__order": "@freesewing/plugin-dimension"
         },
         "flip": {
-          "__title": "flip",
-          "__linktitle": "flip",
+          "__title": "@freesewing/plugin-flip",
+          "__linktitle": "@freesewing/plugin-flip",
           "__slug": "reference/plugins/flip",
-          "__order": "flip"
+          "__order": "@freesewing/plugin-flip"
         },
         "grainline": {
-          "__title": "grainline",
-          "__linktitle": "grainline",
+          "__title": "@freesewing/plugin-grainline",
+          "__linktitle": "@freesewing/plugin-grainline",
           "__slug": "reference/plugins/grainline",
-          "__order": "grainline"
+          "__order": "@freesewing/plugin-grainline"
         },
         "i18n": {
-          "__title": "i18n",
-          "__linktitle": "i18n",
+          "__title": "@freesewing/plugin-i18n",
+          "__linktitle": "@freesewing/plugin-i18n",
           "__slug": "reference/plugins/i18n",
-          "__order": "i18n"
+          "__order": "@freesewing/plugin-i18n"
         },
         "logo": {
-          "__title": "logo",
-          "__linktitle": "logo",
+          "__title": "@freesewing/plugin-logo",
+          "__linktitle": "@freesewing/plugin-logo",
           "__slug": "reference/plugins/logo",
-          "__order": "logo"
+          "__order": "@freesewing/plugin-logo"
         },
         "mirror": {
-          "__title": "mirror",
-          "__linktitle": "mirror",
+          "__title": "@freesewing/plugin-mirror",
+          "__linktitle": "@freesewing/plugin-mirror",
           "__slug": "reference/plugins/mirror",
-          "__order": "mirror"
+          "__order": "@freesewing/plugin-mirror"
         },
         "round": {
-          "__title": "round",
-          "__linktitle": "round",
+          "__title": "@freesewing/plugin-round",
+          "__linktitle": "@freesewing/plugin-round",
           "__slug": "reference/plugins/round",
-          "__order": "round"
+          "__order": "@freesewing/plugin-round"
         },
         "scalebox": {
-          "__title": "scalebox",
-          "__linktitle": "scalebox",
+          "__title": "@freesewing/plugin-scalebox",
+          "__linktitle": "@freesewing/plugin-scalebox",
           "__slug": "reference/plugins/scalebox",
-          "__order": "scalebox"
+          "__order": "@freesewing/plugin-scalebox"
         },
         "sprinkle": {
-          "__title": "sprinkle",
-          "__linktitle": "sprinkle",
+          "__title": "@freesewing/plugin-sprinkle",
+          "__linktitle": "@freesewing/plugin-sprinkle",
           "__slug": "reference/plugins/sprinkle",
-          "__order": "sprinkle"
+          "__order": "@freesewing/plugin-sprinkle"
         },
         "svgattr": {
-          "__title": "svgattr",
-          "__linktitle": "svgattr",
+          "__title": "@freesewing/plugin-svgattr",
+          "__linktitle": "@freesewing/plugin-svgattr",
           "__slug": "reference/plugins/svgattr",
-          "__order": "svgattr"
+          "__order": "@freesewing/plugin-svgattr"
         },
         "theme": {
-          "__title": "theme",
-          "__linktitle": "theme",
+          "__title": "@freesewing/plugin-theme",
+          "__linktitle": "@freesewing/plugin-theme",
           "__slug": "reference/plugins/theme",
-          "__order": "theme"
+          "__order": "@freesewing/plugin-theme"
         },
         "title": {
-          "__title": "title",
-          "__linktitle": "title",
+          "__title": "@freesewing/plugin-title",
+          "__linktitle": "@freesewing/plugin-title",
           "__slug": "reference/plugins/title",
-          "__order": "title"
-        }
-      },
-      "repos": {
-        "__title": "Repositories",
-        "__linktitle": "Repositories",
-        "__slug": "reference/repos",
-        "__order": "Repositories",
-        "backend": {
-          "__title": "backend",
-          "__linktitle": "backend",
-          "__slug": "reference/repos/backend",
-          "__order": "backend"
-        },
-        "freesewing": {
-          "__title": "freesewing",
-          "__linktitle": "freesewing",
-          "__slug": "reference/repos/freesewing",
-          "__order": "freesewing"
-        },
-        "freesewing.dev": {
-          "__title": "freesewing.dev",
-          "__linktitle": "freesewing.dev",
-          "__slug": "reference/repos/freesewing.dev",
-          "__order": "freesewing.dev"
-        },
-        "freesewing.org": {
-          "__title": "freesewing.org",
-          "__linktitle": "freesewing.org",
-          "__slug": "reference/repos/freesewing.org",
-          "__order": "freesewing.org"
-        },
-        "svgtopdf": {
-          "__title": "svgtopdf",
-          "__linktitle": "svgtopdf",
-          "__slug": "reference/repos/svgtopdf",
-          "__order": "svgtopdf"
-        },
-        "tile": {
-          "__title": "tile",
-          "__linktitle": "tile",
-          "__slug": "reference/repos/tile",
-          "__order": "tile"
-        }
-      },
-      "settings": {
-        "__title": "Settings",
-        "__linktitle": "Settings",
-        "__slug": "reference/settings",
-        "__order": "Settings",
-        "complete": {
-          "__title": "complete",
-          "__linktitle": "complete",
-          "__slug": "reference/settings/complete",
-          "__order": "complete"
-        },
-        "embed": {
-          "__title": "embed",
-          "__linktitle": "embed",
-          "__slug": "reference/settings/embed",
-          "__order": "embed"
-        },
-        "idprefix": {
-          "__title": "idPrefix",
-          "__linktitle": "idPrefix",
-          "__slug": "reference/settings/idprefix",
-          "__order": "idPrefix"
-        },
-        "layout": {
-          "__title": "layout",
-          "__linktitle": "layout",
-          "__slug": "reference/settings/layout",
-          "__order": "layout"
-        },
-        "locale": {
-          "__title": "locale",
-          "__linktitle": "locale",
-          "__slug": "reference/settings/locale",
-          "__order": "locale"
-        },
-        "margin": {
-          "__title": "margin",
-          "__linktitle": "margin",
-          "__slug": "reference/settings/margin",
-          "__order": "margin"
-        },
-        "measurements": {
-          "__title": "measurements",
-          "__linktitle": "measurements",
-          "__slug": "reference/settings/measurements",
-          "__order": "measurements"
-        },
-        "only": {
-          "__title": "only",
-          "__linktitle": "only",
-          "__slug": "reference/settings/only",
-          "__order": "only"
-        },
-        "options": {
-          "__title": "options",
-          "__linktitle": "options",
-          "__slug": "reference/settings/options",
-          "__order": "options"
-        },
-        "paperless": {
-          "__title": "paperless",
-          "__linktitle": "paperless",
-          "__slug": "reference/settings/paperless",
-          "__order": "paperless"
-        },
-        "sa": {
-          "__title": "sa",
-          "__linktitle": "sa",
-          "__slug": "reference/settings/sa",
-          "__order": "sa"
-        },
-        "units": {
-          "__title": "units",
-          "__linktitle": "units",
-          "__slug": "reference/settings/units",
-          "__order": "units"
-        }
-      },
-      "snippets": {
-        "__title": "Snippets",
-        "__linktitle": "Snippets",
-        "__slug": "reference/snippets",
-        "__order": "Snippets",
-        "bnotch": {
-          "__title": "bnotch",
-          "__linktitle": "bnotch",
-          "__slug": "reference/snippets/bnotch",
-          "__order": "bnotch"
-        },
-        "button": {
-          "__title": "button",
-          "__linktitle": "button",
-          "__slug": "reference/snippets/button",
-          "__order": "button"
-        },
-        "buttonhole": {
-          "__title": "buttonhole",
-          "__linktitle": "buttonhole",
-          "__slug": "reference/snippets/buttonhole",
-          "__order": "buttonhole"
-        },
-        "buttonhole-end": {
-          "__title": "buttonhole-end",
-          "__linktitle": "buttonhole-end",
-          "__slug": "reference/snippets/buttonhole-end",
-          "__order": "buttonhole-end"
-        },
-        "buttonhole-start": {
-          "__title": "buttonhole-start",
-          "__linktitle": "buttonhole-start",
-          "__slug": "reference/snippets/buttonhole-start",
-          "__order": "buttonhole-start"
-        },
-        "logo": {
-          "__title": "logo",
-          "__linktitle": "logo",
-          "__slug": "reference/snippets/logo",
-          "__order": "logo"
-        },
-        "notch": {
-          "__title": "notch",
-          "__linktitle": "notch",
-          "__slug": "reference/snippets/notch",
-          "__order": "notch"
-        },
-        "snap-socket": {
-          "__title": "snap-socket",
-          "__linktitle": "snap-socket",
-          "__slug": "reference/snippets/snap-socket",
-          "__order": "snap-socket"
-        },
-        "snap-stud": {
-          "__title": "snap-stud",
-          "__linktitle": "snap-stud",
-          "__slug": "reference/snippets/snap-stud",
-          "__order": "snap-stud"
+          "__order": "@freesewing/plugin-title"
         }
       }
     },

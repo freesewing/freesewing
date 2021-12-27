@@ -909,15 +909,235 @@ export default {
     "order": "setIfUnset()",
     "slug": "reference/api/attributes/setifunset"
   },
+  "reference/api/config/dependencies": {
+    "title": "dependencies",
+    "order": "dependencies",
+    "slug": "reference/api/config/dependencies"
+  },
+  "reference/api/config": {
+    "title": "Pattern configuration file",
+    "order": "Pattern configuration file",
+    "slug": "reference/api/config"
+  },
+  "reference/api/config/hide": {
+    "title": "hide",
+    "order": "hide",
+    "slug": "reference/api/config/hide"
+  },
+  "reference/api/config/inject": {
+    "title": "inject",
+    "order": "inject",
+    "slug": "reference/api/config/inject"
+  },
+  "reference/api/config/measurements": {
+    "title": "measurements",
+    "order": "measurements",
+    "slug": "reference/api/config/measurements"
+  },
+  "reference/api/config/name": {
+    "title": "name",
+    "order": "name",
+    "slug": "reference/api/config/name"
+  },
+  "reference/api/config/optionalmeasurements": {
+    "title": "optionalMeasurements",
+    "order": "optionalMeasurements",
+    "slug": "reference/api/config/optionalmeasurements"
+  },
+  "reference/api/config/options/boolean": {
+    "title": "boolean",
+    "order": "boolean",
+    "slug": "reference/api/config/options/boolean"
+  },
+  "reference/api/config/options/constant": {
+    "title": "constant",
+    "order": "constant",
+    "slug": "reference/api/config/options/constant"
+  },
+  "reference/api/config/options/counter": {
+    "title": "counter",
+    "order": "counter",
+    "slug": "reference/api/config/options/counter"
+  },
+  "reference/api/config/options/degrees": {
+    "title": "degrees",
+    "order": "degrees",
+    "slug": "reference/api/config/options/degrees"
+  },
+  "reference/api/config/options": {
+    "title": "options",
+    "order": "options",
+    "slug": "reference/api/config/options"
+  },
+  "reference/api/config/options/list": {
+    "title": "list",
+    "order": "list",
+    "slug": "reference/api/config/options/list"
+  },
+  "reference/api/config/options/millimeter": {
+    "title": "millimeter",
+    "order": "millimeter",
+    "slug": "reference/api/config/options/millimeter"
+  },
+  "reference/api/config/options/percentage": {
+    "title": "percentage",
+    "order": "percentage",
+    "slug": "reference/api/config/options/percentage"
+  },
+  "reference/api/config/parts": {
+    "title": "parts",
+    "order": "parts",
+    "slug": "reference/api/config/parts"
+  },
+  "reference/api/config/version": {
+    "title": "version",
+    "order": "version",
+    "slug": "reference/api/config/version"
+  },
   "reference/api/design": {
     "title": "Design",
     "order": "10Design",
     "slug": "reference/api/design"
   },
   "reference/api": {
-    "title": "Core API",
-    "order": "Core API",
+    "title": "@freesewing/core API",
+    "order": "@freesewing/core API",
     "slug": "reference/api"
+  },
+  "reference/api/hooks": {
+    "title": "Hooks API",
+    "order": "Hooks API",
+    "slug": "reference/api/hooks"
+  },
+  "reference/api/hooks/inserttext": {
+    "title": "insertText",
+    "order": "insertText",
+    "slug": "reference/api/hooks/inserttext"
+  },
+  "reference/api/hooks/postdraft": {
+    "title": "postDraft",
+    "order": "postDraft",
+    "slug": "reference/api/hooks/postdraft"
+  },
+  "reference/api/hooks/postrender": {
+    "title": "postRender",
+    "order": "postRender",
+    "slug": "reference/api/hooks/postrender"
+  },
+  "reference/api/hooks/postsample": {
+    "title": "postSample",
+    "order": "postSample",
+    "slug": "reference/api/hooks/postsample"
+  },
+  "reference/api/hooks/predraft": {
+    "title": "preDraft",
+    "order": "preDraft",
+    "slug": "reference/api/hooks/predraft"
+  },
+  "reference/api/hooks/prerender": {
+    "title": "preRender",
+    "order": "preRender",
+    "slug": "reference/api/hooks/prerender"
+  },
+  "reference/api/hooks/presample": {
+    "title": "preSample",
+    "order": "preSample",
+    "slug": "reference/api/hooks/presample"
+  },
+  "reference/api/macros/bartack": {
+    "title": "bartack",
+    "order": "bartack",
+    "slug": "reference/api/macros/bartack"
+  },
+  "reference/api/macros/bartackalong": {
+    "title": "bartackAlong",
+    "order": "bartackAlong",
+    "slug": "reference/api/macros/bartackalong"
+  },
+  "reference/api/macros/bartackfractionalong": {
+    "title": "bartackFractionAlong",
+    "order": "bartackFractionAlong",
+    "slug": "reference/api/macros/bartackfractionalong"
+  },
+  "reference/api/macros/cutonfold": {
+    "title": "cutonfold",
+    "order": "cutonfold",
+    "slug": "reference/api/macros/cutonfold"
+  },
+  "reference/api/macros": {
+    "title": "Macros",
+    "order": "Macros",
+    "slug": "reference/api/macros"
+  },
+  "reference/api/macros/flip": {
+    "title": "flip",
+    "order": "flip",
+    "slug": "reference/api/macros/flip"
+  },
+  "reference/api/macros/grainline": {
+    "title": "grainline",
+    "order": "grainline",
+    "slug": "reference/api/macros/grainline"
+  },
+  "reference/api/macros/hd": {
+    "title": "hd",
+    "order": "hd",
+    "slug": "reference/api/macros/hd"
+  },
+  "reference/api/macros/ld": {
+    "title": "ld",
+    "order": "ld",
+    "slug": "reference/api/macros/ld"
+  },
+  "reference/api/macros/miniscale": {
+    "title": "miniscale",
+    "order": "miniscale",
+    "slug": "reference/api/macros/miniscale"
+  },
+  "reference/api/macros/mirror": {
+    "title": "mirror",
+    "order": "mirror",
+    "slug": "reference/api/macros/mirror"
+  },
+  "reference/api/macros/pd": {
+    "title": "pd",
+    "order": "pd",
+    "slug": "reference/api/macros/pd"
+  },
+  "reference/api/macros/rmad": {
+    "title": "rmad",
+    "order": "rmad",
+    "slug": "reference/api/macros/rmad"
+  },
+  "reference/api/macros/rmd": {
+    "title": "rmd",
+    "order": "rmd",
+    "slug": "reference/api/macros/rmd"
+  },
+  "reference/api/macros/round": {
+    "title": "round",
+    "order": "round",
+    "slug": "reference/api/macros/round"
+  },
+  "reference/api/macros/scalebox": {
+    "title": "scalebox",
+    "order": "scalebox",
+    "slug": "reference/api/macros/scalebox"
+  },
+  "reference/api/macros/sprinkle": {
+    "title": "sprinkle",
+    "order": "sprinkle",
+    "slug": "reference/api/macros/sprinkle"
+  },
+  "reference/api/macros/title": {
+    "title": "title",
+    "order": "title",
+    "slug": "reference/api/macros/title"
+  },
+  "reference/api/macros/vd": {
+    "title": "vd",
+    "order": "vd",
+    "slug": "reference/api/macros/vd"
   },
   "reference/api/part": {
     "title": "Part",
@@ -1244,6 +1464,71 @@ export default {
     "order": "Point.translate()",
     "slug": "reference/api/point/translate"
   },
+  "reference/api/settings/complete": {
+    "title": "complete",
+    "order": "complete",
+    "slug": "reference/api/settings/complete"
+  },
+  "reference/api/settings/embed": {
+    "title": "embed",
+    "order": "embed",
+    "slug": "reference/api/settings/embed"
+  },
+  "reference/api/settings": {
+    "title": "Settings",
+    "order": "Settings",
+    "slug": "reference/api/settings"
+  },
+  "reference/api/settings/idprefix": {
+    "title": "idPrefix",
+    "order": "idPrefix",
+    "slug": "reference/api/settings/idprefix"
+  },
+  "reference/api/settings/layout": {
+    "title": "layout",
+    "order": "layout",
+    "slug": "reference/api/settings/layout"
+  },
+  "reference/api/settings/locale": {
+    "title": "locale",
+    "order": "locale",
+    "slug": "reference/api/settings/locale"
+  },
+  "reference/api/settings/margin": {
+    "title": "margin",
+    "order": "margin",
+    "slug": "reference/api/settings/margin"
+  },
+  "reference/api/settings/measurements": {
+    "title": "measurements",
+    "order": "measurements",
+    "slug": "reference/api/settings/measurements"
+  },
+  "reference/api/settings/only": {
+    "title": "only",
+    "order": "only",
+    "slug": "reference/api/settings/only"
+  },
+  "reference/api/settings/options": {
+    "title": "options",
+    "order": "options",
+    "slug": "reference/api/settings/options"
+  },
+  "reference/api/settings/paperless": {
+    "title": "paperless",
+    "order": "paperless",
+    "slug": "reference/api/settings/paperless"
+  },
+  "reference/api/settings/sa": {
+    "title": "sa",
+    "order": "sa",
+    "slug": "reference/api/settings/sa"
+  },
+  "reference/api/settings/units": {
+    "title": "units",
+    "order": "units",
+    "slug": "reference/api/settings/units"
+  },
   "reference/api/snippet/attr": {
     "title": "attr()",
     "order": "attr()",
@@ -1258,6 +1543,56 @@ export default {
     "title": "Snippet",
     "order": "35Snippet",
     "slug": "reference/api/snippet"
+  },
+  "reference/api/snippets/bnotch": {
+    "title": "bnotch",
+    "order": "bnotch",
+    "slug": "reference/api/snippets/bnotch"
+  },
+  "reference/api/snippets/button": {
+    "title": "button",
+    "order": "button",
+    "slug": "reference/api/snippets/button"
+  },
+  "reference/api/snippets/buttonhole-end": {
+    "title": "buttonhole-end",
+    "order": "buttonhole-end",
+    "slug": "reference/api/snippets/buttonhole-end"
+  },
+  "reference/api/snippets/buttonhole-start": {
+    "title": "buttonhole-start",
+    "order": "buttonhole-start",
+    "slug": "reference/api/snippets/buttonhole-start"
+  },
+  "reference/api/snippets/buttonhole": {
+    "title": "buttonhole",
+    "order": "buttonhole",
+    "slug": "reference/api/snippets/buttonhole"
+  },
+  "reference/api/snippets": {
+    "title": "Snippets",
+    "order": "Snippets",
+    "slug": "reference/api/snippets"
+  },
+  "reference/api/snippets/logo": {
+    "title": "logo",
+    "order": "logo",
+    "slug": "reference/api/snippets/logo"
+  },
+  "reference/api/snippets/notch": {
+    "title": "notch",
+    "order": "notch",
+    "slug": "reference/api/snippets/notch"
+  },
+  "reference/api/snippets/snap-socket": {
+    "title": "snap-socket",
+    "order": "snap-socket",
+    "slug": "reference/api/snippets/snap-socket"
+  },
+  "reference/api/snippets/snap-stud": {
+    "title": "snap-stud",
+    "order": "snap-stud",
+    "slug": "reference/api/snippets/snap-stud"
   },
   "reference/api/store": {
     "title": "Store",
@@ -1429,304 +1764,39 @@ export default {
     "order": "units()",
     "slug": "reference/api/utils/units"
   },
-  "reference/backend/account": {
-    "title": "Account",
-    "order": "Account",
-    "slug": "reference/backend/account"
-  },
-  "reference/backend": {
-    "title": "Backend API",
-    "order": "Backend API",
-    "slug": "reference/backend"
-  },
-  "reference/backend/login": {
-    "title": "Log in",
-    "order": "Log in",
-    "slug": "reference/backend/login"
-  },
-  "reference/backend/models": {
-    "title": "Models",
-    "order": "Models",
-    "slug": "reference/backend/models"
-  },
-  "reference/backend/oauth": {
-    "title": "Oauth",
-    "order": "Oauth",
-    "slug": "reference/backend/oauth"
-  },
-  "reference/backend/recipes": {
-    "title": "Recipes",
-    "order": "Recipes",
-    "slug": "reference/backend/recipes"
-  },
-  "reference/backend/signup": {
-    "title": "Sign up",
-    "order": "Sign up",
-    "slug": "reference/backend/signup"
-  },
-  "reference/backend/users": {
-    "title": "Users",
-    "order": "Users",
-    "slug": "reference/backend/users"
-  },
-  "reference/config/dependencies": {
-    "title": "dependencies",
-    "order": "dependencies",
-    "slug": "reference/config/dependencies"
-  },
-  "reference/config": {
-    "title": "Pattern configuration file",
-    "order": "Pattern configuration file",
-    "slug": "reference/config"
-  },
-  "reference/config/hide": {
-    "title": "hide",
-    "order": "hide",
-    "slug": "reference/config/hide"
-  },
-  "reference/config/inject": {
-    "title": "inject",
-    "order": "inject",
-    "slug": "reference/config/inject"
-  },
-  "reference/config/measurements": {
-    "title": "measurements",
-    "order": "measurements",
-    "slug": "reference/config/measurements"
-  },
-  "reference/config/name": {
-    "title": "name",
-    "order": "name",
-    "slug": "reference/config/name"
-  },
-  "reference/config/optionalmeasurements": {
-    "title": "optionalMeasurements",
-    "order": "optionalMeasurements",
-    "slug": "reference/config/optionalmeasurements"
-  },
-  "reference/config/options/boolean": {
-    "title": "boolean",
-    "order": "boolean",
-    "slug": "reference/config/options/boolean"
-  },
-  "reference/config/options/constant": {
-    "title": "constant",
-    "order": "constant",
-    "slug": "reference/config/options/constant"
-  },
-  "reference/config/options/counter": {
-    "title": "counter",
-    "order": "counter",
-    "slug": "reference/config/options/counter"
-  },
-  "reference/config/options/degrees": {
-    "title": "degrees",
-    "order": "degrees",
-    "slug": "reference/config/options/degrees"
-  },
-  "reference/config/options": {
-    "title": "options",
-    "order": "options",
-    "slug": "reference/config/options"
-  },
-  "reference/config/options/list": {
-    "title": "list",
-    "order": "list",
-    "slug": "reference/config/options/list"
-  },
-  "reference/config/options/millimeter": {
-    "title": "millimeter",
-    "order": "millimeter",
-    "slug": "reference/config/options/millimeter"
-  },
-  "reference/config/options/percentage": {
-    "title": "percentage",
-    "order": "percentage",
-    "slug": "reference/config/options/percentage"
-  },
-  "reference/config/parts": {
-    "title": "parts",
-    "order": "parts",
-    "slug": "reference/config/parts"
-  },
-  "reference/config/version": {
-    "title": "version",
-    "order": "version",
-    "slug": "reference/config/version"
-  },
-  "reference/designs": {
-    "title": "Designs",
-    "order": "Designs",
-    "slug": "reference/designs"
-  },
   "reference": {
     "title": "Reference",
     "order": "1040Reference",
     "slug": "reference"
   },
-  "reference/hooks": {
-    "title": "Hooks API",
-    "order": "Hooks API",
-    "slug": "reference/hooks"
-  },
-  "reference/hooks/inserttext": {
-    "title": "insertText",
-    "order": "insertText",
-    "slug": "reference/hooks/inserttext"
-  },
-  "reference/hooks/postdraft": {
-    "title": "postDraft",
-    "order": "postDraft",
-    "slug": "reference/hooks/postdraft"
-  },
-  "reference/hooks/postrender": {
-    "title": "postRender",
-    "order": "postRender",
-    "slug": "reference/hooks/postrender"
-  },
-  "reference/hooks/postsample": {
-    "title": "postSample",
-    "order": "postSample",
-    "slug": "reference/hooks/postsample"
-  },
-  "reference/hooks/predraft": {
-    "title": "preDraft",
-    "order": "preDraft",
-    "slug": "reference/hooks/predraft"
-  },
-  "reference/hooks/prerender": {
-    "title": "preRender",
-    "order": "preRender",
-    "slug": "reference/hooks/prerender"
-  },
-  "reference/hooks/presample": {
-    "title": "preSample",
-    "order": "preSample",
-    "slug": "reference/hooks/presample"
-  },
-  "reference/macros/bartack": {
-    "title": "bartack",
-    "order": "bartack",
-    "slug": "reference/macros/bartack"
-  },
-  "reference/macros/bartackalong": {
-    "title": "bartackAlong",
-    "order": "bartackAlong",
-    "slug": "reference/macros/bartackalong"
-  },
-  "reference/macros/bartackfractionalong": {
-    "title": "bartackFractionAlong",
-    "order": "bartackFractionAlong",
-    "slug": "reference/macros/bartackfractionalong"
-  },
-  "reference/macros/cutonfold": {
-    "title": "cutonfold",
-    "order": "cutonfold",
-    "slug": "reference/macros/cutonfold"
-  },
-  "reference/macros": {
-    "title": "Macros",
-    "order": "Macros",
-    "slug": "reference/macros"
-  },
-  "reference/macros/flip": {
-    "title": "flip",
-    "order": "flip",
-    "slug": "reference/macros/flip"
-  },
-  "reference/macros/grainline": {
-    "title": "grainline",
-    "order": "grainline",
-    "slug": "reference/macros/grainline"
-  },
-  "reference/macros/hd": {
-    "title": "hd",
-    "order": "hd",
-    "slug": "reference/macros/hd"
-  },
-  "reference/macros/ld": {
-    "title": "ld",
-    "order": "ld",
-    "slug": "reference/macros/ld"
-  },
-  "reference/macros/miniscale": {
-    "title": "miniscale",
-    "order": "miniscale",
-    "slug": "reference/macros/miniscale"
-  },
-  "reference/macros/mirror": {
-    "title": "mirror",
-    "order": "mirror",
-    "slug": "reference/macros/mirror"
-  },
-  "reference/macros/pd": {
-    "title": "pd",
-    "order": "pd",
-    "slug": "reference/macros/pd"
-  },
-  "reference/macros/rmad": {
-    "title": "rmad",
-    "order": "rmad",
-    "slug": "reference/macros/rmad"
-  },
-  "reference/macros/rmd": {
-    "title": "rmd",
-    "order": "rmd",
-    "slug": "reference/macros/rmd"
-  },
-  "reference/macros/round": {
-    "title": "round",
-    "order": "round",
-    "slug": "reference/macros/round"
-  },
-  "reference/macros/scalebox": {
-    "title": "scalebox",
-    "order": "scalebox",
-    "slug": "reference/macros/scalebox"
-  },
-  "reference/macros/sprinkle": {
-    "title": "sprinkle",
-    "order": "sprinkle",
-    "slug": "reference/macros/sprinkle"
-  },
-  "reference/macros/title": {
-    "title": "title",
-    "order": "title",
-    "slug": "reference/macros/title"
-  },
-  "reference/macros/vd": {
-    "title": "vd",
-    "order": "vd",
-    "slug": "reference/macros/vd"
-  },
   "reference/plugins/bartack": {
-    "title": "bartack",
-    "order": "bartack",
+    "title": "@freesewing/plugin-bartack",
+    "order": "@freesewing/plugin-bartack",
     "slug": "reference/plugins/bartack"
   },
   "reference/plugins/bundle": {
-    "title": "bundle",
-    "order": "bundle",
+    "title": "@freesewing/plugin-bundle",
+    "order": "@freesewing/plugin-bundle",
     "slug": "reference/plugins/bundle"
   },
   "reference/plugins/bust": {
-    "title": "bust",
-    "order": "bust",
+    "title": "@freesewing/plugin-bust",
+    "order": "@freesewing/plugin-bust",
     "slug": "reference/plugins/bust"
   },
   "reference/plugins/buttons": {
-    "title": "buttons",
-    "order": "buttons",
+    "title": "@freesewing/plugin-buttons",
+    "order": "@freesewing/plugin-buttons",
     "slug": "reference/plugins/buttons"
   },
   "reference/plugins/cutonfold": {
-    "title": "cutonfold",
-    "order": "cutonfold",
+    "title": "@freesewing/plugin-cutonfold",
+    "order": "@freesewing/plugin-cutonfold",
     "slug": "reference/plugins/cutonfold"
   },
   "reference/plugins/dimension": {
-    "title": "dimension",
-    "order": "dimension",
+    "title": "@freesewing/plugin-dimension",
+    "order": "@freesewing/plugin-dimension",
     "slug": "reference/plugins/dimension"
   },
   "reference/plugins": {
@@ -1735,209 +1805,59 @@ export default {
     "slug": "reference/plugins"
   },
   "reference/plugins/flip": {
-    "title": "flip",
-    "order": "flip",
+    "title": "@freesewing/plugin-flip",
+    "order": "@freesewing/plugin-flip",
     "slug": "reference/plugins/flip"
   },
   "reference/plugins/grainline": {
-    "title": "grainline",
-    "order": "grainline",
+    "title": "@freesewing/plugin-grainline",
+    "order": "@freesewing/plugin-grainline",
     "slug": "reference/plugins/grainline"
   },
   "reference/plugins/i18n": {
-    "title": "i18n",
-    "order": "i18n",
+    "title": "@freesewing/plugin-i18n",
+    "order": "@freesewing/plugin-i18n",
     "slug": "reference/plugins/i18n"
   },
   "reference/plugins/logo": {
-    "title": "logo",
-    "order": "logo",
+    "title": "@freesewing/plugin-logo",
+    "order": "@freesewing/plugin-logo",
     "slug": "reference/plugins/logo"
   },
   "reference/plugins/mirror": {
-    "title": "mirror",
-    "order": "mirror",
+    "title": "@freesewing/plugin-mirror",
+    "order": "@freesewing/plugin-mirror",
     "slug": "reference/plugins/mirror"
   },
   "reference/plugins/round": {
-    "title": "round",
-    "order": "round",
+    "title": "@freesewing/plugin-round",
+    "order": "@freesewing/plugin-round",
     "slug": "reference/plugins/round"
   },
   "reference/plugins/scalebox": {
-    "title": "scalebox",
-    "order": "scalebox",
+    "title": "@freesewing/plugin-scalebox",
+    "order": "@freesewing/plugin-scalebox",
     "slug": "reference/plugins/scalebox"
   },
   "reference/plugins/sprinkle": {
-    "title": "sprinkle",
-    "order": "sprinkle",
+    "title": "@freesewing/plugin-sprinkle",
+    "order": "@freesewing/plugin-sprinkle",
     "slug": "reference/plugins/sprinkle"
   },
   "reference/plugins/svgattr": {
-    "title": "svgattr",
-    "order": "svgattr",
+    "title": "@freesewing/plugin-svgattr",
+    "order": "@freesewing/plugin-svgattr",
     "slug": "reference/plugins/svgattr"
   },
   "reference/plugins/theme": {
-    "title": "theme",
-    "order": "theme",
+    "title": "@freesewing/plugin-theme",
+    "order": "@freesewing/plugin-theme",
     "slug": "reference/plugins/theme"
   },
   "reference/plugins/title": {
-    "title": "title",
-    "order": "title",
+    "title": "@freesewing/plugin-title",
+    "order": "@freesewing/plugin-title",
     "slug": "reference/plugins/title"
-  },
-  "reference/repos/backend": {
-    "title": "backend",
-    "order": "backend",
-    "slug": "reference/repos/backend"
-  },
-  "reference/repos": {
-    "title": "Repositories",
-    "order": "Repositories",
-    "slug": "reference/repos"
-  },
-  "reference/repos/freesewing.dev": {
-    "title": "freesewing.dev",
-    "order": "freesewing.dev",
-    "slug": "reference/repos/freesewing.dev"
-  },
-  "reference/repos/freesewing.org": {
-    "title": "freesewing.org",
-    "order": "freesewing.org",
-    "slug": "reference/repos/freesewing.org"
-  },
-  "reference/repos/freesewing": {
-    "title": "freesewing",
-    "order": "freesewing",
-    "slug": "reference/repos/freesewing"
-  },
-  "reference/repos/svgtopdf": {
-    "title": "svgtopdf",
-    "order": "svgtopdf",
-    "slug": "reference/repos/svgtopdf"
-  },
-  "reference/repos/tile": {
-    "title": "tile",
-    "order": "tile",
-    "slug": "reference/repos/tile"
-  },
-  "reference/settings/complete": {
-    "title": "complete",
-    "order": "complete",
-    "slug": "reference/settings/complete"
-  },
-  "reference/settings/embed": {
-    "title": "embed",
-    "order": "embed",
-    "slug": "reference/settings/embed"
-  },
-  "reference/settings": {
-    "title": "Settings",
-    "order": "Settings",
-    "slug": "reference/settings"
-  },
-  "reference/settings/idprefix": {
-    "title": "idPrefix",
-    "order": "idPrefix",
-    "slug": "reference/settings/idprefix"
-  },
-  "reference/settings/layout": {
-    "title": "layout",
-    "order": "layout",
-    "slug": "reference/settings/layout"
-  },
-  "reference/settings/locale": {
-    "title": "locale",
-    "order": "locale",
-    "slug": "reference/settings/locale"
-  },
-  "reference/settings/margin": {
-    "title": "margin",
-    "order": "margin",
-    "slug": "reference/settings/margin"
-  },
-  "reference/settings/measurements": {
-    "title": "measurements",
-    "order": "measurements",
-    "slug": "reference/settings/measurements"
-  },
-  "reference/settings/only": {
-    "title": "only",
-    "order": "only",
-    "slug": "reference/settings/only"
-  },
-  "reference/settings/options": {
-    "title": "options",
-    "order": "options",
-    "slug": "reference/settings/options"
-  },
-  "reference/settings/paperless": {
-    "title": "paperless",
-    "order": "paperless",
-    "slug": "reference/settings/paperless"
-  },
-  "reference/settings/sa": {
-    "title": "sa",
-    "order": "sa",
-    "slug": "reference/settings/sa"
-  },
-  "reference/settings/units": {
-    "title": "units",
-    "order": "units",
-    "slug": "reference/settings/units"
-  },
-  "reference/snippets/bnotch": {
-    "title": "bnotch",
-    "order": "bnotch",
-    "slug": "reference/snippets/bnotch"
-  },
-  "reference/snippets/button": {
-    "title": "button",
-    "order": "button",
-    "slug": "reference/snippets/button"
-  },
-  "reference/snippets/buttonhole-end": {
-    "title": "buttonhole-end",
-    "order": "buttonhole-end",
-    "slug": "reference/snippets/buttonhole-end"
-  },
-  "reference/snippets/buttonhole-start": {
-    "title": "buttonhole-start",
-    "order": "buttonhole-start",
-    "slug": "reference/snippets/buttonhole-start"
-  },
-  "reference/snippets/buttonhole": {
-    "title": "buttonhole",
-    "order": "buttonhole",
-    "slug": "reference/snippets/buttonhole"
-  },
-  "reference/snippets": {
-    "title": "Snippets",
-    "order": "Snippets",
-    "slug": "reference/snippets"
-  },
-  "reference/snippets/logo": {
-    "title": "logo",
-    "order": "logo",
-    "slug": "reference/snippets/logo"
-  },
-  "reference/snippets/notch": {
-    "title": "notch",
-    "order": "notch",
-    "slug": "reference/snippets/notch"
-  },
-  "reference/snippets/snap-socket": {
-    "title": "snap-socket",
-    "order": "snap-socket",
-    "slug": "reference/snippets/snap-socket"
-  },
-  "reference/snippets/snap-stud": {
-    "title": "snap-stud",
-    "order": "snap-stud",
-    "slug": "reference/snippets/snap-stud"
   },
   "translators/empty": {
     "title": " ",

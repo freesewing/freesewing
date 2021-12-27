@@ -47,6 +47,7 @@ const config = (site, remarkPlugins=[]) => ({
     config.resolve.alias.shared = path.resolve('../freesewing.shared/')
     config.resolve.alias.site = path.resolve(`../freesewing.${site}/`)
     config.resolve.alias.markdown = path.resolve(`../../markdown/${site}/`)
+    config.resolve.alias.pkgs = path.resolve(`../`)
 
     return config
   }

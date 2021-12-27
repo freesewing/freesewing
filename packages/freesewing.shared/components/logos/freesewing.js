@@ -82,10 +82,10 @@ const Logo = ({ size=false, className='stroke-0', theme='light', fill=false, str
     <svg {...svgProps}>
       <defs>
         {fill[theme]}
-        <path id="logo" d={path} />
+        <path id="react-logo" d={path} />
       </defs>
-      <use xlinkHref="#logo" fill="none" stroke={stroke || strokes[theme]} strokeWidth="0.5"/>
-      <use xlinkHref="#logo" fill={fill || `url(#${theme})`} stroke="none"/>
+      <use xlinkHref="#react-logo" fill="none" stroke={stroke || strokes[theme]} strokeWidth="0.5"/>
+      <use xlinkHref="#react-logo" fill={fill || `url(#${theme})`} stroke="none"/>
     </svg>
   )
 }
