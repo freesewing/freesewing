@@ -45,17 +45,18 @@ const Preview = ({ app, post }) => (
   </div>
 )
 
-export default (props) => {
+const BlogIndexPage = (props) => {
   const app = useApp()
 
   return (
     <Page app={app} title='FreeSewing Development Blog' slug='blog'>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         {Object.values(orderBy(posts, ['date'], ['desc']))
-          .map(post => <Preview app={app} post={post} />)
+          .map(post => <Preview app={app} post={post} key={post.slug}/>)
         }
       </div>
     </Page>
   )
 }
 
+export default BlogIndexPage

@@ -20,7 +20,7 @@ const Header = ({ app }) => {
         sm:hidden
         z-30
       `}>
-        <div className="p-2 flex flex-row gap-2 justify-between">
+        <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
         <button
           className={`
             btn border-base-100 text-base-100 btn-sm border border-transparent bg-transparent
@@ -32,11 +32,11 @@ const Header = ({ app }) => {
               : <>Show menu &nbsp;<Right /></>
             }
         </button>
-        <Logo size={32} color="#fff"/>
+        <Logo size={32} fill="currentColor" stroke={false} />
         <Link href="/">
-          <button className="btn btn-link btn-sm">
+          <a role="button" className="btn btn-link btn-sm text-neutral-content">
             freesewing.dev
-          </button>
+          </a>
         </Link>
         </div>
         <div className={`theme-gradient h-2 w-full z-10 relative -mb-2 ${app.loading ? 'loading' : ''}`}></div>

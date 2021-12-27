@@ -72,8 +72,8 @@ const Footer = ({ app }) => (
         <div className="theme-gradient h-1 mb-2"></div>
         <p className="text-sm text-neutral-content">
           <a className={link} href={social.discord}>Our Discord server</a> is
-          the best place to ask questions and get help. It's where our community hangs out
-          so you'll get the fastest response and  might even make a few new friends along the way.
+          the best place to ask questions and get help. It&apos;s where our community hangs out
+          so you&apos;ll get the fastest response and  might even make a few new friends along the way.
         </p>
         <p className="text-sm text-neutral-content">
           You can also <a href={social.twitter} className={link} >reach out on Twitter</a> or <a
@@ -108,8 +108,11 @@ const Footer = ({ app }) => (
     </p>
     <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
       {contributors.map(person => (
-        <a title={person.name} href={person.profile} className="m-auto">
-          <img src={person.avatar_url} className="w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-secondary hover:border-accent"/>
+        <a title={person.name} href={person.profile} className="m-auto" key={person.name}>
+          <img
+            src={person.avatar_url} alt={`Avatar of ${person.name}`}
+            className="w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-secondary hover:border-accent"
+          />
         </a>
       ))}
     </div>
@@ -121,8 +124,17 @@ const Footer = ({ app }) => (
     </p>
     <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
       {patrons.map(person => (
-        <a title={person.name} href={`https://freesewing.org/users/${person.username}`} className="m-auto">
-          <img src={person.img} className="w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-secondary hover:border-accent"/>
+        <a
+          title={person.name}
+          href={`https://freesewing.org/users/${person.username}`}
+          className="m-auto"
+          key={person.name}
+        >
+          <img
+            src={person.img}
+            alt={`Avatar of ${person.name}`}
+            className="w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-secondary hover:border-accent"
+          />
         </a>
       ))}
     </div>
@@ -134,16 +146,16 @@ const Footer = ({ app }) => (
     </p>
     <div className="p-4 py-16 flex flex-row bg-neutral -mt-2 z-0 gap-8 flex-wrap justify-center items-center text-neutral-content">
       <a title="Search powered by Algolia" href="https://www.algolia.com/">
-        <img src="/brands/algolia.svg" className="w-64 mx-12 sm:mx-4"/>
+        <img src="/brands/algolia.svg" className="w-64 mx-12 sm:mx-4" alt="Search powered by Algolia"/>
       </a>
-      <a title="Translation powered by Algolia" href="https://www.crowdin.com/">
-        <img src="/brands/crowdin.svg" className="w-64 mx-12 sm:mx-4"/>
+      <a title="Translation powered by Crowdin" href="https://www.crowdin.com/">
+        <img src="/brands/crowdin.svg" className="w-64 mx-12 sm:mx-4" alt="Translation powered by Crowdin" />
       </a>
-      <a title="Website hosted by Netligy" href="https://www.netlify.com/">
-        <img src="/brands/netlify.svg" className="w-44 mx-12 sm:mx-4"/>
+      <a title="Deploys & hosting by Netlify" href="https://www.netlify.com/">
+        <img src="/brands/netlify.svg" className="w-44 mx-12 sm:mx-4" alt="Deploys & hosting by Netlify" />
       </a>
       <a title="Error handling by Bugsnag" href="https://www.bugsnag.com/">
-        <img src="/brands/bugsnag.svg" className="h-36 mx-12 sm:mx-4"/>
+        <img src="/brands/bugsnag.svg" className="h-36 mx-12 sm:mx-4" alt="Error handling by bugsnag" />
       </a>
     </div>
 

@@ -3,7 +3,7 @@ import useApp from 'site/hooks/useApp.js'
 import Logo from 'shared/components/logos/freesewing.js'
 import Popout from 'shared/components/popout.js'
 
-export default (props) => {
+const HomePage = (props) => {
   const app = useApp()
   return (
     <Page app={app} >
@@ -32,3 +32,4 @@ export default (props) => {
   )
 }
 
+export default HomePage

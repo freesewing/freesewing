@@ -5,6 +5,7 @@ import { posts } from 'site/prebuild/strapi.blog.en.js'
 import TimeAgo from 'react-timeago'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import Markdown from 'react-markdown'
+import Image from 'next/image'
 
 const strapi = "https://posts.freesewing.org"
 

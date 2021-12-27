@@ -3,11 +3,12 @@ import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Popout from 'shared/components/popout.js'
 
-export default (props) => {
+const TypographyPage = (props) => {
   const app = useApp()
+  const { updateNavigation } = app
 
   useEffect(() => {
-    app.updateNavigation(
+    updateNavigation(
       ['typography'],
       {
         __title: 'Typography',
@@ -15,12 +16,12 @@ export default (props) => {
         __slug: 'typography',
         __order: 'typography'
       })
-  }, [])
+  }, [updateNavigation])
 
   const p = (
     <p>
       This paragraph is here to show the vertical spacing between headings and paragraphs.
-      In addition, let's make it a bit longer so we can see the line height as the text wraps.
+      In addition, let&apos;s make it a bit longer so we can see the line height as the text wraps.
     </p>
   )
 
@@ -28,7 +29,7 @@ export default (props) => {
     <Page app={app} title='Typography'>
       <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-lg lg:text-xl">
         <p>This typography page shows an overview of different elements and how they are styled.</p>
-        <p>It's a good starting point for theme development.</p>
+        <p>It&apos;s a good starting point for theme development.</p>
         <h2>Headings (this is h2)</h2>
         {p}
         <h3>This is h3</h3>{p}
@@ -93,4 +94,6 @@ export default (props) => {
     </Page>
   )
 }
+
+export default TypographyPage
 
