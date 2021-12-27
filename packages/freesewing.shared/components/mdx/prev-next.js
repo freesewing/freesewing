@@ -74,16 +74,22 @@ const next = app => {
 
 const renderPrevious = node => node
   ? (
-    <Link href={'/'+node.__slug}>
-      <a className="text-secondary"><Left />{node.__linktitle}</a>
-    </Link>
+    <div>
+      <span className="mr-2 text-3xl leading-3 opacity-60">&#x025C3;</span>
+      <Link href={'/'+node.__slug}>
+        <a className="text-secondary">{node.__linktitle}</a>
+      </Link>
+    </div>
   ) : <span></span>
 
 const renderNext = node => node
   ? (
-    <Link href={'/'+node.__slug}>
-      <a>{node.__linktitle} <Right /></a>
-    </Link>
+    <div>
+      <Link href={'/'+node.__slug}>
+        <a>{node.__linktitle}</a>
+      </Link>
+      <span className="ml-2 text-3xl leading-3 opacity-60">&#x025B9;</span>
+    </div>
   ) : <span></span>
 
 const PrevNext = ({ app }) => {
