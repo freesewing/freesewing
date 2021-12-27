@@ -33,7 +33,7 @@
     "commander": "^8.1.0",
     "conf": "^10.0.1",
     "cp-file": "^9.0.0",
-    "execa": "^5.1.0",
+    "execa": "^6.0.0",
     "git-config-path": "^2.0.0",
     "github-username": "^6.0.0",
     "globby": "^11.0.3",
