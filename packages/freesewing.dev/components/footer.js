@@ -103,8 +103,8 @@ const Footer = ({ app }) => (
     </div>
     <p className="text-center text-neutral-content text-sm px-2">
       <span
-        className="px-1 text-lg font-bold">FreeSewing</span> is made by these <span
-      className="text-accent font-bold text-lg px-1">wonderful contributors</span>
+        className="px-1 text-lg font-bold block sm:inline">FreeSewing</span> is made by these <span
+      className="text-accent font-bold text-lg px-1 block sm:inline">wonderful contributors</span>
     </p>
     <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
       {contributors.map(person => (
@@ -119,8 +119,8 @@ const Footer = ({ app }) => (
 
     <p className="text-center text-neutral-content text-sm px-2">
       <span
-        className="px-1 text-lg font-bold">FreeSewing</span> is supported by these <span
-      className="text-accent font-bold text-lg px-1">generous patrons</span>
+        className="px-1 text-lg font-bold block sm:inline">FreeSewing</span> is supported by these <span
+      className="text-accent font-bold text-lg px-1 block sm:inline">generous patrons</span>
     </p>
     <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
       {patrons.map(person => (
@@ -141,8 +141,8 @@ const Footer = ({ app }) => (
 
     <p className="text-center text-neutral-content text-sm px-2">
       <span
-        className="px-1 text-lg font-bold">FreeSewing</span> is hosted by these <span
-      className="text-accent font-bold text-lg px-1">awesome companies</span>
+        className="px-1 text-lg font-bold block sm:inline">FreeSewing</span> is hosted by these <span
+      className="text-accent font-bold text-lg px-1 block sm:inline">awesome companies</span>
     </p>
     <div className="p-4 py-16 flex flex-row bg-neutral -mt-2 z-0 gap-8 flex-wrap justify-center items-center text-neutral-content">
       <a title="Search powered by Algolia" href="https://www.algolia.com/">
