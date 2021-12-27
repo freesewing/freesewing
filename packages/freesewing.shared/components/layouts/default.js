@@ -29,7 +29,7 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
   }
 
   return (
-    <ul className="flex flex-row gap-2 font-bold">
+    <ul className="flex flex-row flex-wrap gap-2 font-bold">
       <li>
         <Link href="/">
           <a title="To the homepage" className="text-base-content">
@@ -80,6 +80,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
         h-1 w-full theme-gradient ${app.loading ? 'loading' : ''}
         fixed top-0 right-0 z-40
         -mt-1
+        hidden sm:block
       `}></div>
       <main className={`
         grow flex flex-row
