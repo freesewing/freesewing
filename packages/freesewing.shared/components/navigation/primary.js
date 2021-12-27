@@ -3,7 +3,6 @@ import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import Logo from 'shared/components/logos/freesewing.js'
 import ThemePicker from 'shared/components/theme-picker.js'
-import { getTagline } from 'site/utils.js'
 import RssIcon from 'shared/components/icons/rss.js'
 import ThemeIcon from 'shared/components/icons/theme.js'
 import TutorialIcon from 'shared/components/icons/tutorial.js'
@@ -162,21 +161,15 @@ const TopLogo = ({ app }) => (
     text-base-content
   `}>
     <Link href='/'>
-      <a className="hover:pointer">
-        <span className="text-secondary">
-          <Logo size={32} fill='currentColor' stroke={false}/>
-        </span>
+      <a className="hover:pointer text-secondary">
+        <Logo size={24} fill='currentColor' stroke={false}/>
       </a>
     </Link>
-    <div>
     <Link href='/'>
       <a className={`grow ${linkClasses}`}>
         freesewing.{app.site}
       </a>
     </Link>
-    <p className={`text-base-content text-captalize text-sm font-normal
-      `}>{getTagline()}</p>
-    </div>
   </div>
 )
 

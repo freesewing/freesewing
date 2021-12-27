@@ -71,7 +71,7 @@ const fill = {
 const Logo = ({ size=false, className='stroke-0', theme='light', fill=false, stroke=false }) => {
   const svgProps = {
     xmlns: 'http://www.w3.org/2000/svg',
-    viewBox: '-1 0 50 50',
+    viewBox: '-1 0 25 25',
     className: className
   }
   if (size) {
