@@ -1,14 +1,7 @@
 [build]
-  base = "packages/freesewing.dev"
-  publish = "out/"
-  command = "yarn export"
+  base = "."
+  publish = "packages/freesewing.dev/out/"
+  command = "yarn ciexport"
+  SITE = "dev"
 
-# Production website (freesewing.dev)
-# Not yet implemented
-
-# Pre-release website (canary.freesewing.dev)
-[context.canary]
-  command = "yarn export"
-  [context.canary.environment]
-    SITE = "dev"
 

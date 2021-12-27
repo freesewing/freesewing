@@ -8,6 +8,7 @@
     "prebuild": "SITE=dev node ../freesewing.shared/prebuild/index.mjs",
     "build": "next build",
     "export": "next build && next export",
+    "ciexport": "cd packages/freesewing.dev && next build && next export",
     "start": "next start -p 3002",
     "lint": "next lint",
     "serve": "pm2 start npm --name 'freesewing.dev' -- run start"
