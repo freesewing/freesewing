@@ -197,6 +197,7 @@ const PrimaryMenu = ({ app, active }) => {
     <nav className={`
       sm:max-w-sm
       grow
+      mb-12
     `}>
       <TopLogo app={app}/>
       <Navigation app={app} active={active} />
