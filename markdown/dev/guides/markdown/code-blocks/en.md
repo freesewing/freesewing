@@ -9,7 +9,7 @@ You can make these look pretty by using a code block.
 
 The basic use is to wrap your code in three backtick characters on a line:
 
-````
+````markdown
 ```
 let me = 'you'
 ```
@@ -17,14 +17,14 @@ let me = 'you'
 
 Gives you: 
 
-```
+```text
 let me = 'you'
 ```
 
 This is a generic code block. But we also support syntax highlighting.
 To do so, add the language specifier after the opening backticks:
 
-````
+````markdown
 ```js
 let me = 'you'
 ```
@@ -39,15 +39,13 @@ let me = 'you'
 The following language codes are supported:
 
  - `js` for Javascript code
- - `md` for Markdown
+ - `markdown` for Markdown
  - `html` for HTML
  - `svg` for SVG
  - `bash` for Bash or shell scripts
  - `mdx` for MDX
  - `jsx` for JSX
  - `json` for JSON
- - `js-error` for a Javascript error
- - `js-trace` for a Javascript stack trace
 
 
 
