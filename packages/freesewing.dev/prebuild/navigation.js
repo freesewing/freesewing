@@ -134,79 +134,7 @@ export default {
           "__title": "Custom components",
           "__linktitle": "Custom components",
           "__slug": "guides/markdown/custom-components",
-          "__order": "90Custom components",
-          "example": {
-            "__title": "Example",
-            "__linktitle": "Example",
-            "__slug": "guides/markdown/custom-components/example",
-            "__order": "90Example"
-          },
-          "fixme": {
-            "__title": "Fixme",
-            "__linktitle": "Fixme",
-            "__slug": "guides/markdown/custom-components/fixme",
-            "__order": "40Fixme"
-          },
-          "hashtag": {
-            "__title": "Hashtag",
-            "__linktitle": "Hashtag",
-            "__slug": "guides/markdown/custom-components/hashtag",
-            "__order": "60Hashtag"
-          },
-          "note": {
-            "__title": "Note",
-            "__linktitle": "Note",
-            "__slug": "guides/markdown/custom-components/note",
-            "__order": "10Note"
-          },
-          "readmore": {
-            "__title": "ReadMore",
-            "__linktitle": "ReadMore",
-            "__slug": "guides/markdown/custom-components/readmore",
-            "__order": "70ReadMore",
-            "example-1": {
-              "__title": "Example page 1",
-              "__linktitle": "Example page 1",
-              "__slug": "guides/markdown/custom-components/readmore/example-1",
-              "__order": "Example page 1"
-            },
-            "example-2": {
-              "__title": "Example page 2",
-              "__linktitle": "Example page 2",
-              "__slug": "guides/markdown/custom-components/readmore/example-2",
-              "__order": "Example page 2",
-              "sub-example-2-1": {
-                "__title": "Sub-example page 1",
-                "__linktitle": "Sub-example page 1",
-                "__slug": "guides/markdown/custom-components/readmore/example-2/sub-example-2-1",
-                "__order": "Sub-example page 1"
-              },
-              "sub-example-2-2": {
-                "__title": "Sub-example page 2",
-                "__linktitle": "Sub-example page 2",
-                "__slug": "guides/markdown/custom-components/readmore/example-2/sub-example-2-2",
-                "__order": "Sub-example page 2"
-              }
-            }
-          },
-          "tip": {
-            "__title": "Tip",
-            "__linktitle": "Tip",
-            "__slug": "guides/markdown/custom-components/tip",
-            "__order": "20Tip"
-          },
-          "warning": {
-            "__title": "Warning",
-            "__linktitle": "Warning",
-            "__slug": "guides/markdown/custom-components/warning",
-            "__order": "30Warning"
-          },
-          "youtube": {
-            "__title": "YouTube",
-            "__linktitle": "YouTube",
-            "__slug": "guides/markdown/custom-components/youtube",
-            "__order": "50YouTube"
-          }
+          "__order": "90Custom components"
         },
         "headings": {
           "__title": "Headings",
@@ -2453,12 +2381,6 @@ export default {
         "__slug": "blog/strapi-headless-cms",
         "__order": 1658808
       },
-      "layout-blocks-overview": {
-        "__title": "A quick tour of the main layout blocks",
-        "__linktitle": "Main layout blocks",
-        "__slug": "blog/layout-blocks-overview",
-        "__order": 1654488
-      },
       "freesewing-v3-seems-inevitable": {
         "__title": "Better tree-shaking means breaking changes; FreeSewing v3 now seems inevitable",
         "__linktitle": "FreeSewing v3 seems inevitable",
@@ -2476,6 +2398,12 @@ export default {
         "__linktitle": "Sampling pattern options for bettter docs",
         "__slug": "blog/pattern-docs-option-sampling",
         "__order": 1617336
+      },
+      "end-of-2021-update": {
+        "__title": "The end (of the year) is nigh; Project 2022 update",
+        "__linktitle": "End of 2021 update",
+        "__slug": "blog/end-of-2021-update",
+        "__order": 1511064
       }
     }
   }

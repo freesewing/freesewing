@@ -109,66 +109,6 @@ export default {
     "order": "90Custom components",
     "slug": "guides/markdown/custom-components"
   },
-  "guides/markdown/custom-components/example": {
-    "title": "Example",
-    "order": "90Example",
-    "slug": "guides/markdown/custom-components/example"
-  },
-  "guides/markdown/custom-components/fixme": {
-    "title": "Fixme",
-    "order": "40Fixme",
-    "slug": "guides/markdown/custom-components/fixme"
-  },
-  "guides/markdown/custom-components/hashtag": {
-    "title": "Hashtag",
-    "order": "60Hashtag",
-    "slug": "guides/markdown/custom-components/hashtag"
-  },
-  "guides/markdown/custom-components/note": {
-    "title": "Note",
-    "order": "10Note",
-    "slug": "guides/markdown/custom-components/note"
-  },
-  "guides/markdown/custom-components/readmore": {
-    "title": "ReadMore",
-    "order": "70ReadMore",
-    "slug": "guides/markdown/custom-components/readmore"
-  },
-  "guides/markdown/custom-components/readmore/example-1": {
-    "title": "Example page 1",
-    "order": "Example page 1",
-    "slug": "guides/markdown/custom-components/readmore/example-1"
-  },
-  "guides/markdown/custom-components/readmore/example-2": {
-    "title": "Example page 2",
-    "order": "Example page 2",
-    "slug": "guides/markdown/custom-components/readmore/example-2"
-  },
-  "guides/markdown/custom-components/readmore/example-2/sub-example-2-1": {
-    "title": "Sub-example page 1",
-    "order": "Sub-example page 1",
-    "slug": "guides/markdown/custom-components/readmore/example-2/sub-example-2-1"
-  },
-  "guides/markdown/custom-components/readmore/example-2/sub-example-2-2": {
-    "title": "Sub-example page 2",
-    "order": "Sub-example page 2",
-    "slug": "guides/markdown/custom-components/readmore/example-2/sub-example-2-2"
-  },
-  "guides/markdown/custom-components/tip": {
-    "title": "Tip",
-    "order": "20Tip",
-    "slug": "guides/markdown/custom-components/tip"
-  },
-  "guides/markdown/custom-components/warning": {
-    "title": "Warning",
-    "order": "30Warning",
-    "slug": "guides/markdown/custom-components/warning"
-  },
-  "guides/markdown/custom-components/youtube": {
-    "title": "YouTube",
-    "order": "50YouTube",
-    "slug": "guides/markdown/custom-components/youtube"
-  },
   "guides/markdown": {
     "title": "Markdown guide",
     "order": "900Markdown guide",

@@ -1,0 +1,107 @@
+{
+  "dev": true,
+  "localizations": [],
+  "_id": "61cb0bcbae410e5da6418a64",
+  "title": "The end (of the year) is nigh; Project 2022 update",
+  "linktitle": "End of 2021 update",
+  "date": "2021-12-28",
+  "slug": "end-of-2021-update",
+  "body": "My favorite times of the year are the summer and winter holidays. Holidays are always nice because they are much needed mental health break or just some time away from my day job.\nBut these holidays are extra-special because (in Europe at least) so many people are in holiday that life as a whole just sort of slows down.\n\nAnd that creates time and space to focus on those things that we rarely get time for throughout the year.\nI like building stuff and making things. So holidays are typically spent making clothes or shoes. But this year, I was doing something different.\n\nIn the summer, I set out to work on [project 2022](/blog/project-2022) which I somewhat bluntly summarized as *giving FreeSewing a new face*.\n\nOver the summer I kicked the tires, trying to figure out what worked and what doesn't. I made some progress, but as September rolled around, I quickly got swamped again and it's been laying dormant every since.\n\nOr at least, it had been laying dormant, because now that the end-of-year holidays are upon us, I've decided to push ahead and double-down on this effort.\n\n## Putting a pin in v3\nI've also learned a couple of things over the summer that allowed me to limit the scope. Essentially, at some point the idea of building a new frontend got intertwined with [our v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278), and suddenly this project was a huge hulking beast that was kinda hard to wrap your head around.\n\nSo, I've decided that v3 can wait. Not only did we manage to implement a bunch of stuff on the v3 roadmap already today (in v2). I also feel like it's better/safer to move ahead in incremental steps, rather than overhaul too much at the same time.\n\nThat being said, what I'm working on now is still a big departure from what was there before. From the top of my head, here's some of the changes:\n\n- Frontend code is (will be) [in our monorepo now](https://github.com/freesewing/freesewing/tree/develop/packages/freesewing.dev)\n- [Markdown is in our monorepo](https://github.com/freesewing/freesewing/tree/develop/markdown) now (no more submodules)\n- Migrating from [GatsbyJS](https://www.gatsbyjs.com/) to [NextJS](https://nextjs.org/)\n- Phasing out [Material-UI](https://mui.com/) in favor of [TailwindCSS](https://tailwindcss.com/) and [DaisyUI](https://daisyui.com/)\n- We're using the latest NextJS v12 release\n- We're using the brand new [MDX](https://mdxjs.com/) v2 release\n\nThat's still a lot of stuff, and as both NextJS 12 and MDX 2 were release after my work in the summer, I've decided to somewhat start over, rather than to continue my efforts from back then.\n\n## Meet canary.freesewing.dev\n\nI started with freesewing.dev, our website hosting documentation for developers and contributors. It's a lot simpler than freesewing.org, there's no authentication, no multilingualism, no user accounts/profiles, and so on.\n\nI'm publishing my work-in-progress on [canary.freesewing.dev](https://canary.freesewing.dev/). Historically, we've been using [next.freesewing.org](https://next.freesewing.org/) to deploy the develop branch of our frontend (and thus the 'next' version to go in production. However, since we're using NextJS now, I kinda feel all this references to next would get confusing for people, so in the end I opted for canary, since it's [the canary release](https://martinfowler.com/bliki/CanaryRelease.html).\n\nToday, I'm somewhat happy with where I am. There's still plenty of work to be done, but perhaps I might just be able to push this into production and replace freesewing.dev with our new NextJS based website that's in our monorepo.\n\nSo please click around, kick the tires and [join us on Discord](https://discord.freesewing.org/) to let me know how you feel about it.",
+  "locale": "en",
+  "published_at": "2021-12-28T13:07:32.906Z",
+  "createdAt": "2021-12-28T13:06:19.196Z",
+  "updatedAt": "2021-12-28T13:15:14.582Z",
+  "__v": 0,
+  "author": "joostdecock",
+  "image": {
+    "_id": "61cb036fae410e5da6418a63",
+    "name": "jelle-taman-60WkGpWyadY-unsplash.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "hash": "jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5",
+    "ext": ".jpg",
+    "mime": "image/jpeg",
+    "size": 1179.35,
+    "width": 5184,
+    "height": 3456,
+    "url": "/uploads/jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5.jpg",
+    "formats": {
+      "thumbnail": {
+        "name": "thumbnail_jelle-taman-60WkGpWyadY-unsplash.jpg",
+        "hash": "thumbnail_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 234,
+        "height": 156,
+        "size": 5.16,
+        "path": null,
+        "url": "/uploads/thumbnail_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5.jpg"
+      },
+      "xlarge": {
+        "name": "xlarge_jelle-taman-60WkGpWyadY-unsplash.jpg",
+        "hash": "xlarge_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1920,
+        "height": 1280,
+        "size": 164.03,
+        "path": null,
+        "url": "/uploads/xlarge_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5.jpg"
+      },
+      "large": {
+        "name": "large_jelle-taman-60WkGpWyadY-unsplash.jpg",
+        "hash": "large_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 1000,
+        "height": 667,
+        "size": 46.29,
+        "path": null,
+        "url": "/uploads/large_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5.jpg"
+      },
+      "medium": {
+        "name": "medium_jelle-taman-60WkGpWyadY-unsplash.jpg",
+        "hash": "medium_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 600,
+        "height": 400,
+        "size": 19.35,
+        "path": null,
+        "url": "/uploads/medium_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5.jpg"
+      },
+      "small": {
+        "name": "small_jelle-taman-60WkGpWyadY-unsplash.jpg",
+        "hash": "small_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 400,
+        "height": 267,
+        "size": 10.91,
+        "path": null,
+        "url": "/uploads/small_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5.jpg"
+      },
+      "xsmall": {
+        "name": "xsmall_jelle-taman-60WkGpWyadY-unsplash.jpg",
+        "hash": "xsmall_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "width": 200,
+        "height": 133,
+        "size": 4.24,
+        "path": null,
+        "url": "/uploads/xsmall_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5.jpg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      "61cb0bcbae410e5da6418a64"
+    ],
+    "createdAt": "2021-12-28T12:30:39.324Z",
+    "updatedAt": "2021-12-28T13:06:19.200Z",
+    "__v": 0,
+    "id": "61cb036fae410e5da6418a63"
+  },
+  "caption": "A canary - Picture by Jelle Taman via Unspash",
+  "id": "61cb0bcbae410e5da6418a64"
+}

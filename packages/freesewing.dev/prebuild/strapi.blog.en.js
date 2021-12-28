@@ -49,13 +49,6 @@ export const posts = [
     "img": "/uploads/large_pexels_leah_kelley_5852942_3a27bb6b4e.jpg"
   },
   {
-    "title": "A quick tour of the main layout blocks",
-    "date": "2021-07-15",
-    "slug": "layout-blocks-overview",
-    "author": "joostdecock",
-    "img": "/uploads/large_pexels_kelly_lacy_2402233_45b5683839.jpg"
-  },
-  {
     "title": "Better tree-shaking means breaking changes; FreeSewing v3 now seems inevitable",
     "date": "2021-07-16",
     "slug": "freesewing-v3-seems-inevitable",
@@ -75,5 +68,12 @@ export const posts = [
     "slug": "pattern-docs-option-sampling",
     "author": "joostdecock",
     "img": "/uploads/large_pexels_george_becker_122480_5e1723471f.jpg"
+  },
+  {
+    "title": "The end (of the year) is nigh; Project 2022 update",
+    "date": "2021-12-28",
+    "slug": "end-of-2021-update",
+    "author": "joostdecock",
+    "img": "/uploads/large_jelle_taman_60_Wk_Gp_Wyad_Y_unsplash_7ba7274fe5.jpg"
   }
 ]
