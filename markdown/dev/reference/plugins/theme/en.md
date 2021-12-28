@@ -35,6 +35,6 @@ That method is chainable, so if you have multiple plugins you can just chain the
 import Aaron from "@freesewing/aaron";
 import theme from "@freesewing/plugin-theme";
 
-const myAaron = new Aaron().use(theme);
+const pattern = new Aaron().use(theme);
 ```
 
