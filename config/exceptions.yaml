@@ -1,4 +1,5 @@
 noNamespace:
+  - backend
   - create-freesewing-pattern
   - remark-jargon
   - gatsby-remark-jargon
@@ -6,18 +7,22 @@ noNamespace:
   - freesewing.shared
   - freesewing.org
 customChangelog:
+  - backend
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
 customPackageJson:
+  - backend
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
 customReadme:
+  - backend
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
 customRollup:
+  - backend
   - components
   - core
   - css-theme
@@ -37,6 +42,8 @@ namedExports:
   - mui-theme
   - snapseries
 packageJson:
+  backend:
+    private: true
   bee:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:

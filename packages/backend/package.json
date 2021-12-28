@@ -2,6 +2,7 @@
   "name": "@freesewing/backend",
   "version": "0.1.0",
   "description": "The freesewing.org backend",
+  "private": true,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
@@ -39,7 +40,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing/i18n": "0.1.0",
+    "@freesewing/i18n": "latest",
     "axios": "0.18.0",
     "body-parser": "1.18.3",
     "chalk": "2.4.1",

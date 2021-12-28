@@ -7,6 +7,10 @@
 
  - Added (esm) unit tests
 
+### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
 ### Fixed
 
  - Only add snippets once to SVG object

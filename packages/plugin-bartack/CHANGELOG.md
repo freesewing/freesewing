@@ -7,6 +7,10 @@
 
  - Added (esm) unit tests
 
+### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
 
 This is the **initial release**, and the start of this change log.
 

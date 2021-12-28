@@ -6,6 +6,7 @@
 ### Added
 
  - Added the new attributes.setIfUnset() method
+ - Added the new `scale` setting
 
 ## 2.19.5 (2022-11-13)
 

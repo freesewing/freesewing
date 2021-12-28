@@ -1,6 +1,12 @@
 # Change log for: @freesewing/rendertest
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Updated the rendertest pattern to be more concise
+
 ## 2.0.0 (2019-08-25)
 
 ### Added

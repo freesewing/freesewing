@@ -8,6 +8,7 @@
 #### Added
 
  - Added the new attributes.setIfUnset() method
+ - Added the new `scale` setting
 
 ### plugin-banner
 
@@ -20,6 +21,10 @@
 #### Added
 
  - Added (esm) unit tests
+
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
 
 ### plugin-bundle
 
@@ -152,6 +157,10 @@
 #### Added
 
  - Added (esm) unit tests
+
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
 
 ### plugin-validate
 

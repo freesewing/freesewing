@@ -7,6 +7,10 @@
 
  - Added (esm) unit tests
 
+### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
 ## 2.9.0 (2020-10-02)
 
 ### Added
