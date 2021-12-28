@@ -1,669 +1,15 @@
 export default {
   "en": {
-    "contributors": {
-      "__title": "For contributors",
-      "__linktitle": "For contributors",
-      "__slug": "contributors",
-      "__order": "1110For contributors",
-      "code-of-conduct": {
-        "__title": "Code of Conduct",
-        "__linktitle": "Code of Conduct",
-        "__slug": "contributors/code-of-conduct",
-        "__order": "Code of Conduct",
-        "enforcement": {
-          "__title": "Enforcement",
-          "__linktitle": "Enforcement",
-          "__slug": "contributors/code-of-conduct/enforcement",
-          "__order": "50Enforcement"
-        },
-        "enforcement-guidelines": {
-          "__title": "Enforcement Guidelines",
-          "__linktitle": "Enforcement Guidelines",
-          "__slug": "contributors/code-of-conduct/enforcement-guidelines",
-          "__order": "60Enforcement Guidelines",
-          "correction": {
-            "__title": "Correction",
-            "__linktitle": "Correction",
-            "__slug": "contributors/code-of-conduct/enforcement-guidelines/correction",
-            "__order": "10Correction"
-          },
-          "permanent-ban": {
-            "__title": "Permanent ban",
-            "__linktitle": "Permanent ban",
-            "__slug": "contributors/code-of-conduct/enforcement-guidelines/permanent-ban",
-            "__order": "40Permanent ban"
-          },
-          "temporary-ban": {
-            "__title": "Temporary ban",
-            "__linktitle": "Temporary ban",
-            "__slug": "contributors/code-of-conduct/enforcement-guidelines/temporary-ban",
-            "__order": "30Temporary ban"
-          },
-          "warning": {
-            "__title": "Warning",
-            "__linktitle": "Warning",
-            "__slug": "contributors/code-of-conduct/enforcement-guidelines/warning",
-            "__order": "20Warning"
-          }
-        },
-        "enforcement-responsibilities": {
-          "__title": "Enforcement responsibilities",
-          "__linktitle": "Enforcement responsibilities",
-          "__slug": "contributors/code-of-conduct/enforcement-responsibilities",
-          "__order": "30Enforcement responsibilities"
-        },
-        "our-pledge": {
-          "__title": "Our pledge",
-          "__linktitle": "Our pledge",
-          "__slug": "contributors/code-of-conduct/our-pledge",
-          "__order": "10Our pledge"
-        },
-        "our-standards": {
-          "__title": "Our standards",
-          "__linktitle": "Our standards",
-          "__slug": "contributors/code-of-conduct/our-standards",
-          "__order": "20Our standards"
-        },
-        "scope": {
-          "__title": "Scope",
-          "__linktitle": "Scope",
-          "__slug": "contributors/code-of-conduct/scope",
-          "__order": "40Scope"
-        }
-      },
-      "help": {
-        "__title": "Where to get help",
-        "__linktitle": "Where to get help",
-        "__slug": "contributors/help",
-        "__order": "Where to get help"
-      },
-      "terms": {
-        "__title": "Terminology",
-        "__linktitle": "Terminology",
-        "__slug": "contributors/terms",
-        "__order": "Terminology",
-        "backend": {
-          "__title": "Backend",
-          "__linktitle": "Backend",
-          "__slug": "contributors/terms/backend",
-          "__order": "Backend"
-        },
-        "commit": {
-          "__title": "Commit",
-          "__linktitle": "Commit",
-          "__slug": "contributors/terms/commit",
-          "__order": "Commit"
-        },
-        "contributor": {
-          "__title": "Contributor",
-          "__linktitle": "Contributor",
-          "__slug": "contributors/terms/contributor",
-          "__order": "Contributor"
-        },
-        "contributor-call": {
-          "__title": "Contributor call (fscc)",
-          "__linktitle": "Contributor call (fscc)",
-          "__slug": "contributors/terms/contributor-call",
-          "__order": "Contributor call (fscc)"
-        },
-        "design-pattern": {
-          "__title": "Design/Pattern",
-          "__linktitle": "Design/Pattern",
-          "__slug": "contributors/terms/design-pattern",
-          "__order": "Design/Pattern"
-        },
-        "developer": {
-          "__title": "Developer",
-          "__linktitle": "Developer",
-          "__slug": "contributors/terms/developer",
-          "__order": "Developer"
-        },
-        "discord": {
-          "__title": "Discord",
-          "__linktitle": "Discord",
-          "__slug": "contributors/terms/discord",
-          "__order": "Discord"
-        },
-        "editor": {
-          "__title": "Editor",
-          "__linktitle": "Editor",
-          "__slug": "contributors/terms/editor",
-          "__order": "Editor"
-        },
-        "express": {
-          "__title": "Express",
-          "__linktitle": "Express",
-          "__slug": "contributors/terms/express",
-          "__order": "Express"
-        },
-        "freesewing": {
-          "__title": "FreeSewing",
-          "__linktitle": "FreeSewing",
-          "__slug": "contributors/terms/freesewing",
-          "__order": "FreeSewing"
-        },
-        "freesewing.dev": {
-          "__title": "freesewing.dev",
-          "__linktitle": "freesewing.dev",
-          "__slug": "contributors/terms/freesewing.dev",
-          "__order": "freesewing.dev"
-        },
-        "freesewing.org": {
-          "__title": "freesewing.org",
-          "__linktitle": "freesewing.org",
-          "__slug": "contributors/terms/freesewing.org",
-          "__order": "freesewing.org"
-        },
-        "frontend": {
-          "__title": "Frontend",
-          "__linktitle": "Frontend",
-          "__slug": "contributors/terms/frontend",
-          "__order": "Frontend"
-        },
-        "gatsby": {
-          "__title": "Gatsby",
-          "__linktitle": "Gatsby",
-          "__slug": "contributors/terms/gatsby",
-          "__order": "Gatsby"
-        },
-        "i18n": {
-          "__title": "i18n",
-          "__linktitle": "i18n",
-          "__slug": "contributors/terms/i18n",
-          "__order": "i18n"
-        },
-        "issue": {
-          "__title": "Issue",
-          "__linktitle": "Issue",
-          "__slug": "contributors/terms/issue",
-          "__order": "Issue"
-        },
-        "javascript": {
-          "__title": "Javascript",
-          "__linktitle": "Javascript",
-          "__slug": "contributors/terms/javascript",
-          "__order": "Javascript"
-        },
-        "made-to-measure": {
-          "__title": "Made-to-measure",
-          "__linktitle": "Made-to-measure",
-          "__slug": "contributors/terms/made-to-measure",
-          "__order": "Made-to-measure"
-        },
-        "markdown": {
-          "__title": "Markdown",
-          "__linktitle": "Markdown",
-          "__slug": "contributors/terms/markdown",
-          "__order": "Markdown"
-        },
-        "monorepo": {
-          "__title": "Monorepo",
-          "__linktitle": "Monorepo",
-          "__slug": "contributors/terms/monorepo",
-          "__order": "Monorepo"
-        },
-        "node": {
-          "__title": "Node",
-          "__linktitle": "Node",
-          "__slug": "contributors/terms/node",
-          "__order": "Node"
-        },
-        "parametric-pattern-design": {
-          "__title": "Parametric pattern design",
-          "__linktitle": "Parametric pattern design",
-          "__slug": "contributors/terms/parametric-pattern-design",
-          "__order": "Parametric pattern design"
-        },
-        "patron": {
-          "__title": "Patron",
-          "__linktitle": "Patron",
-          "__slug": "contributors/terms/patron",
-          "__order": "Patron"
-        },
-        "plugin": {
-          "__title": "Plugin",
-          "__linktitle": "Plugin",
-          "__slug": "contributors/terms/plugin",
-          "__order": "Plugin"
-        },
-        "pull-request": {
-          "__title": "Pull request",
-          "__linktitle": "Pull request",
-          "__slug": "contributors/terms/pull-request",
-          "__order": "Pull request"
-        },
-        "react": {
-          "__title": "React",
-          "__linktitle": "React",
-          "__slug": "contributors/terms/react",
-          "__order": "React"
-        },
-        "repo": {
-          "__title": "Repo",
-          "__linktitle": "Repo",
-          "__slug": "contributors/terms/repo",
-          "__order": "Repo"
-        },
-        "repository": {
-          "__title": "Repository",
-          "__linktitle": "Repository",
-          "__slug": "contributors/terms/repository",
-          "__order": "Repository"
-        },
-        "tiler": {
-          "__title": "Tiler",
-          "__linktitle": "Tiler",
-          "__slug": "contributors/terms/tiler",
-          "__order": "Tiler"
-        },
-        "translator": {
-          "__title": "Translator",
-          "__linktitle": "Translator",
-          "__slug": "contributors/terms/translator",
-          "__order": "Translator"
-        }
-      },
-      "ways-to-contribute": {
-        "__title": "Ways to contribute",
-        "__linktitle": "Ways to contribute",
-        "__slug": "contributors/ways-to-contribute",
-        "__order": "Ways to contribute",
-        "body-ambassador": {
-          "__title": "Body ambassador",
-          "__linktitle": "Body ambassador",
-          "__slug": "contributors/ways-to-contribute/body-ambassador",
-          "__order": "Body ambassador"
-        },
-        "community-building": {
-          "__title": "Community building",
-          "__linktitle": "Community building",
-          "__slug": "contributors/ways-to-contribute/community-building",
-          "__order": "Community building"
-        },
-        "design-patterns": {
-          "__title": "Design sewing patterns",
-          "__linktitle": "Design sewing patterns",
-          "__slug": "contributors/ways-to-contribute/design-patterns",
-          "__order": "Design sewing patterns"
-        },
-        "develop-patterns": {
-          "__title": "Develop sewing patterns",
-          "__linktitle": "Develop sewing patterns",
-          "__slug": "contributors/ways-to-contribute/develop-patterns",
-          "__order": "Develop sewing patterns"
-        },
-        "devops": {
-          "__title": "Devops",
-          "__linktitle": "Devops",
-          "__slug": "contributors/ways-to-contribute/devops",
-          "__order": "Devops"
-        },
-        "illustrations": {
-          "__title": "Make illustrations",
-          "__linktitle": "Make illustrations",
-          "__slug": "contributors/ways-to-contribute/illustrations",
-          "__order": "Make illustrations"
-        },
-        "language-ambassador": {
-          "__title": "Language ambassador",
-          "__linktitle": "Language ambassador",
-          "__slug": "contributors/ways-to-contribute/language-ambassador",
-          "__order": "Language ambassador"
-        },
-        "pattern-ambassador": {
-          "__title": "Pattern ambassador",
-          "__linktitle": "Pattern ambassador",
-          "__slug": "contributors/ways-to-contribute/pattern-ambassador",
-          "__order": "Pattern ambassador"
-        },
-        "pattern-testing": {
-          "__title": "Pattern testing",
-          "__linktitle": "Pattern testing",
-          "__slug": "contributors/ways-to-contribute/pattern-testing",
-          "__order": "Pattern testing"
-        },
-        "project-management": {
-          "__title": "Project management",
-          "__linktitle": "Project management",
-          "__slug": "contributors/ways-to-contribute/project-management",
-          "__order": "Project management"
-        },
-        "proofreading": {
-          "__title": "Proofreading",
-          "__linktitle": "Proofreading",
-          "__slug": "contributors/ways-to-contribute/proofreading",
-          "__order": "Proofreading"
-        },
-        "report-bugs": {
-          "__title": "Report bugs",
-          "__linktitle": "Report bugs",
-          "__slug": "contributors/ways-to-contribute/report-bugs",
-          "__order": "Report bugs"
-        },
-        "showcase-our-patterns": {
-          "__title": "Showcase our patterns",
-          "__linktitle": "Showcase our patterns",
-          "__slug": "contributors/ways-to-contribute/showcase-our-patterns",
-          "__order": "Showcase our patterns"
-        },
-        "technical-writing": {
-          "__title": "Technical writing",
-          "__linktitle": "Technical writing",
-          "__slug": "contributors/ways-to-contribute/technical-writing",
-          "__order": "Technical writing",
-          "code": {
-            "__title": "Writing for freesewing.dev",
-            "__linktitle": "Writing for freesewing.dev",
-            "__slug": "contributors/ways-to-contribute/technical-writing/code",
-            "__order": "Writing for freesewing.dev"
-          },
-          "patterns": {
-            "__title": "Writing for freesewing.org",
-            "__linktitle": "Writing for freesewing.org",
-            "__slug": "contributors/ways-to-contribute/technical-writing/patterns",
-            "__order": "Writing for freesewing.org"
-          }
-        },
-        "translation": {
-          "__title": "Translation",
-          "__linktitle": "Translation",
-          "__slug": "contributors/ways-to-contribute/translation",
-          "__order": "Translation"
-        },
-        "triage-issues": {
-          "__title": "Triage issues",
-          "__linktitle": "Triage issues",
-          "__slug": "contributors/ways-to-contribute/triage-issues",
-          "__order": "Triage issues"
-        },
-        "webdesign": {
-          "__title": "UI / UX Webdesign",
-          "__linktitle": "UI / UX Webdesign",
-          "__slug": "contributors/ways-to-contribute/webdesign",
-          "__order": "UI / UX Webdesign"
-        }
-      }
-    },
-    "developers": {
-      "__title": "For developers",
-      "__linktitle": "For developers",
-      "__slug": "developers",
-      "__order": "1120For developers",
-      "backend": {
-        "__title": "The freesewing backend",
-        "__linktitle": "The freesewing backend",
-        "__slug": "developers/backend",
-        "__order": "The freesewing backend"
-      },
-      "dev": {
-        "__title": "The freesewing.dev website",
-        "__linktitle": "The freesewing.dev website",
-        "__slug": "developers/dev",
-        "__order": "The freesewing.dev website"
-      },
-      "org": {
-        "__title": "The freesewing.org website",
-        "__linktitle": "The freesewing.org website",
-        "__slug": "developers/org",
-        "__order": "The freesewing.org website"
-      },
-      "svg2pdf": {
-        "__title": "The freesewing on-demand tiler",
-        "__linktitle": "The freesewing on-demand tiler",
-        "__slug": "developers/svg2pdf",
-        "__order": "The freesewing on-demand tiler"
-      },
-      "tiler": {
-        "__title": "Our tile command line tool",
-        "__linktitle": "Our tile command line tool",
-        "__slug": "developers/tiler",
-        "__order": "Our tile command line tool"
-      }
-    },
-    "editors": {
-      "__title": "For editors",
-      "__linktitle": "For editors",
-      "__slug": "editors",
-      "__order": "1130For editors",
-      "content": {
-        "__title": "Content sources",
-        "__linktitle": "Content sources",
-        "__slug": "editors/content",
-        "__order": "Content sources"
-      },
-      "howtos": {
-        "__title": "Common tasks for editors",
-        "__linktitle": "Common tasks for editors",
-        "__slug": "editors/howtos",
-        "__order": "Common tasks for editors",
-        "blogpost": {
-          "__title": "Adding a blog post",
-          "__linktitle": "Adding a blog post",
-          "__slug": "editors/howtos/blogpost",
-          "__order": "Adding a blog post"
-        },
-        "frontmatter": {
-          "__title": "Working with frontmatter",
-          "__linktitle": "Working with frontmatter",
-          "__slug": "editors/howtos/frontmatter",
-          "__order": "Working with frontmatter",
-          "about": {
-            "__title": "About frontmatter",
-            "__linktitle": "About frontmatter",
-            "__slug": "editors/howtos/frontmatter/about",
-            "__order": "10About frontmatter"
-          },
-          "lists": {
-            "__title": "Lists or arrays",
-            "__linktitle": "Lists or arrays",
-            "__slug": "editors/howtos/frontmatter/lists",
-            "__order": "30Lists or arrays"
-          },
-          "multi-line": {
-            "__title": "Mult-line text",
-            "__linktitle": "Mult-line text",
-            "__slug": "editors/howtos/frontmatter/multi-line",
-            "__order": "40Mult-line text"
-          },
-          "structure": {
-            "__title": "Structure",
-            "__linktitle": "Structure",
-            "__slug": "editors/howtos/frontmatter/structure",
-            "__order": "20Structure"
-          }
-        },
-        "showcase": {
-          "__title": "Adding a showcase on freesewing.org",
-          "__linktitle": "Adding a showcase on freesewing.org",
-          "__slug": "editors/howtos/showcase",
-          "__order": "Adding a showcase on freesewing.org"
-        }
-      },
-      "markdown": {
-        "__title": "Markdown guide",
-        "__linktitle": "Markdown guide",
-        "__slug": "editors/markdown",
-        "__order": "900Markdown guide",
-        "code-blocks": {
-          "__title": "Code and code blocks",
-          "__linktitle": "Code and code blocks",
-          "__slug": "editors/markdown/code-blocks",
-          "__order": "80Code and code blocks"
-        },
-        "custom-components": {
-          "__title": "Custom components",
-          "__linktitle": "Custom components",
-          "__slug": "editors/markdown/custom-components",
-          "__order": "90Custom components",
-          "example": {
-            "__title": "Example",
-            "__linktitle": "Example",
-            "__slug": "editors/markdown/custom-components/example",
-            "__order": "90Example"
-          },
-          "fixme": {
-            "__title": "Fixme",
-            "__linktitle": "Fixme",
-            "__slug": "editors/markdown/custom-components/fixme",
-            "__order": "40Fixme"
-          },
-          "hashtag": {
-            "__title": "Hashtag",
-            "__linktitle": "Hashtag",
-            "__slug": "editors/markdown/custom-components/hashtag",
-            "__order": "60Hashtag"
-          },
-          "note": {
-            "__title": "Note",
-            "__linktitle": "Note",
-            "__slug": "editors/markdown/custom-components/note",
-            "__order": "10Note"
-          },
-          "readmore": {
-            "__title": "ReadMore",
-            "__linktitle": "ReadMore",
-            "__slug": "editors/markdown/custom-components/readmore",
-            "__order": "70ReadMore",
-            "example-1": {
-              "__title": "Example page 1",
-              "__linktitle": "Example page 1",
-              "__slug": "editors/markdown/custom-components/readmore/example-1",
-              "__order": "Example page 1"
-            },
-            "example-2": {
-              "__title": "Example page 2",
-              "__linktitle": "Example page 2",
-              "__slug": "editors/markdown/custom-components/readmore/example-2",
-              "__order": "Example page 2",
-              "sub-example-2-1": {
-                "__title": "Sub-example page 1",
-                "__linktitle": "Sub-example page 1",
-                "__slug": "editors/markdown/custom-components/readmore/example-2/sub-example-2-1",
-                "__order": "Sub-example page 1"
-              },
-              "sub-example-2-2": {
-                "__title": "Sub-example page 2",
-                "__linktitle": "Sub-example page 2",
-                "__slug": "editors/markdown/custom-components/readmore/example-2/sub-example-2-2",
-                "__order": "Sub-example page 2"
-              }
-            }
-          },
-          "tip": {
-            "__title": "Tip",
-            "__linktitle": "Tip",
-            "__slug": "editors/markdown/custom-components/tip",
-            "__order": "20Tip"
-          },
-          "warning": {
-            "__title": "Warning",
-            "__linktitle": "Warning",
-            "__slug": "editors/markdown/custom-components/warning",
-            "__order": "30Warning"
-          },
-          "youtube": {
-            "__title": "YouTube",
-            "__linktitle": "YouTube",
-            "__slug": "editors/markdown/custom-components/youtube",
-            "__order": "50YouTube"
-          }
-        },
-        "headings": {
-          "__title": "Headings",
-          "__linktitle": "Headings",
-          "__slug": "editors/markdown/headings",
-          "__order": "40Headings"
-        },
-        "images": {
-          "__title": "Images",
-          "__linktitle": "Images",
-          "__slug": "editors/markdown/images",
-          "__order": "70Images"
-        },
-        "italic-and-bold": {
-          "__title": "Italics and bold",
-          "__linktitle": "Italics and bold",
-          "__slug": "editors/markdown/italic-and-bold",
-          "__order": "30Italics and bold"
-        },
-        "line-breaks": {
-          "__title": "Line breaks",
-          "__linktitle": "Line breaks",
-          "__slug": "editors/markdown/line-breaks",
-          "__order": "20Line breaks"
-        },
-        "links": {
-          "__title": "Links",
-          "__linktitle": "Links",
-          "__slug": "editors/markdown/links",
-          "__order": "60Links"
-        },
-        "lists": {
-          "__title": "Lists",
-          "__linktitle": "Lists",
-          "__slug": "editors/markdown/lists",
-          "__order": "50Lists"
-        },
-        "tables": {
-          "__title": "Tables",
-          "__linktitle": "Tables",
-          "__slug": "editors/markdown/tables",
-          "__order": "70Tables"
-        },
-        "text-and-paragraphs": {
-          "__title": "Text and paragraphs",
-          "__linktitle": "Text and paragraphs",
-          "__slug": "editors/markdown/text-and-paragraphs",
-          "__order": "10Text and paragraphs"
-        }
-      },
-      "style": {
-        "__title": "Style guide",
-        "__linktitle": "Style guide",
-        "__slug": "editors/style",
-        "__order": "910Style guide",
-        "colors": {
-          "__title": "Colors",
-          "__linktitle": "Colors",
-          "__slug": "editors/style/colors",
-          "__order": "Colors"
-        },
-        "typography": {
-          "__title": "Typography",
-          "__linktitle": "Typography",
-          "__slug": "editors/style/typography",
-          "__order": "Typography",
-          "fonts": {
-            "__title": "Fonts",
-            "__linktitle": "Fonts",
-            "__slug": "editors/style/typography/fonts",
-            "__order": "10Fonts"
-          },
-          "headings": {
-            "__title": "Headings",
-            "__linktitle": "Headings",
-            "__slug": "editors/style/typography/headings",
-            "__order": "30Headings"
-          },
-          "text": {
-            "__title": "Text and paragraphs",
-            "__linktitle": "Text and paragraphs",
-            "__slug": "editors/style/typography/text",
-            "__order": "20Text and paragraphs"
-          }
-        }
-      }
-    },
     "guides": {
       "__title": "Guides",
       "__linktitle": "Guides",
       "__slug": "guides",
       "__order": "1020Guides",
       "best-practices": {
-        "__title": "Design guide",
-        "__linktitle": "Design guide",
+        "__title": "Pattern design best practices",
+        "__linktitle": "Pattern design best practices",
         "__slug": "guides/best-practices",
-        "__order": "300Design guide",
+        "__order": "Pattern design best practices",
         "go-counter-clockwise": {
           "__title": "Construct paths counter-clockwise",
           "__linktitle": "Construct paths counter-clockwise",
@@ -707,11 +53,215 @@ export default {
           "__order": "60Use translation keys, not text"
         }
       },
+      "code-of-conduct": {
+        "__title": "Code of Conduct",
+        "__linktitle": "Code of Conduct",
+        "__slug": "guides/code-of-conduct",
+        "__order": "Code of Conduct",
+        "enforcement": {
+          "__title": "Enforcement",
+          "__linktitle": "Enforcement",
+          "__slug": "guides/code-of-conduct/enforcement",
+          "__order": "50Enforcement"
+        },
+        "enforcement-guidelines": {
+          "__title": "Enforcement Guidelines",
+          "__linktitle": "Enforcement Guidelines",
+          "__slug": "guides/code-of-conduct/enforcement-guidelines",
+          "__order": "60Enforcement Guidelines",
+          "correction": {
+            "__title": "Correction",
+            "__linktitle": "Correction",
+            "__slug": "guides/code-of-conduct/enforcement-guidelines/correction",
+            "__order": "10Correction"
+          },
+          "permanent-ban": {
+            "__title": "Permanent ban",
+            "__linktitle": "Permanent ban",
+            "__slug": "guides/code-of-conduct/enforcement-guidelines/permanent-ban",
+            "__order": "40Permanent ban"
+          },
+          "temporary-ban": {
+            "__title": "Temporary ban",
+            "__linktitle": "Temporary ban",
+            "__slug": "guides/code-of-conduct/enforcement-guidelines/temporary-ban",
+            "__order": "30Temporary ban"
+          },
+          "warning": {
+            "__title": "Warning",
+            "__linktitle": "Warning",
+            "__slug": "guides/code-of-conduct/enforcement-guidelines/warning",
+            "__order": "20Warning"
+          }
+        },
+        "enforcement-responsibilities": {
+          "__title": "Enforcement responsibilities",
+          "__linktitle": "Enforcement responsibilities",
+          "__slug": "guides/code-of-conduct/enforcement-responsibilities",
+          "__order": "30Enforcement responsibilities"
+        },
+        "our-pledge": {
+          "__title": "Our pledge",
+          "__linktitle": "Our pledge",
+          "__slug": "guides/code-of-conduct/our-pledge",
+          "__order": "10Our pledge"
+        },
+        "our-standards": {
+          "__title": "Our standards",
+          "__linktitle": "Our standards",
+          "__slug": "guides/code-of-conduct/our-standards",
+          "__order": "20Our standards"
+        },
+        "scope": {
+          "__title": "Scope",
+          "__linktitle": "Scope",
+          "__slug": "guides/code-of-conduct/scope",
+          "__order": "40Scope"
+        }
+      },
+      "markdown": {
+        "__title": "Markdown guide",
+        "__linktitle": "Markdown guide",
+        "__slug": "guides/markdown",
+        "__order": "900Markdown guide",
+        "code-blocks": {
+          "__title": "Code and code blocks",
+          "__linktitle": "Code and code blocks",
+          "__slug": "guides/markdown/code-blocks",
+          "__order": "80Code and code blocks"
+        },
+        "custom-components": {
+          "__title": "Custom components",
+          "__linktitle": "Custom components",
+          "__slug": "guides/markdown/custom-components",
+          "__order": "90Custom components",
+          "example": {
+            "__title": "Example",
+            "__linktitle": "Example",
+            "__slug": "guides/markdown/custom-components/example",
+            "__order": "90Example"
+          },
+          "fixme": {
+            "__title": "Fixme",
+            "__linktitle": "Fixme",
+            "__slug": "guides/markdown/custom-components/fixme",
+            "__order": "40Fixme"
+          },
+          "hashtag": {
+            "__title": "Hashtag",
+            "__linktitle": "Hashtag",
+            "__slug": "guides/markdown/custom-components/hashtag",
+            "__order": "60Hashtag"
+          },
+          "note": {
+            "__title": "Note",
+            "__linktitle": "Note",
+            "__slug": "guides/markdown/custom-components/note",
+            "__order": "10Note"
+          },
+          "readmore": {
+            "__title": "ReadMore",
+            "__linktitle": "ReadMore",
+            "__slug": "guides/markdown/custom-components/readmore",
+            "__order": "70ReadMore",
+            "example-1": {
+              "__title": "Example page 1",
+              "__linktitle": "Example page 1",
+              "__slug": "guides/markdown/custom-components/readmore/example-1",
+              "__order": "Example page 1"
+            },
+            "example-2": {
+              "__title": "Example page 2",
+              "__linktitle": "Example page 2",
+              "__slug": "guides/markdown/custom-components/readmore/example-2",
+              "__order": "Example page 2",
+              "sub-example-2-1": {
+                "__title": "Sub-example page 1",
+                "__linktitle": "Sub-example page 1",
+                "__slug": "guides/markdown/custom-components/readmore/example-2/sub-example-2-1",
+                "__order": "Sub-example page 1"
+              },
+              "sub-example-2-2": {
+                "__title": "Sub-example page 2",
+                "__linktitle": "Sub-example page 2",
+                "__slug": "guides/markdown/custom-components/readmore/example-2/sub-example-2-2",
+                "__order": "Sub-example page 2"
+              }
+            }
+          },
+          "tip": {
+            "__title": "Tip",
+            "__linktitle": "Tip",
+            "__slug": "guides/markdown/custom-components/tip",
+            "__order": "20Tip"
+          },
+          "warning": {
+            "__title": "Warning",
+            "__linktitle": "Warning",
+            "__slug": "guides/markdown/custom-components/warning",
+            "__order": "30Warning"
+          },
+          "youtube": {
+            "__title": "YouTube",
+            "__linktitle": "YouTube",
+            "__slug": "guides/markdown/custom-components/youtube",
+            "__order": "50YouTube"
+          }
+        },
+        "headings": {
+          "__title": "Headings",
+          "__linktitle": "Headings",
+          "__slug": "guides/markdown/headings",
+          "__order": "40Headings"
+        },
+        "images": {
+          "__title": "Images",
+          "__linktitle": "Images",
+          "__slug": "guides/markdown/images",
+          "__order": "70Images"
+        },
+        "italic-and-bold": {
+          "__title": "Italics and bold",
+          "__linktitle": "Italics and bold",
+          "__slug": "guides/markdown/italic-and-bold",
+          "__order": "30Italics and bold"
+        },
+        "line-breaks": {
+          "__title": "Line breaks",
+          "__linktitle": "Line breaks",
+          "__slug": "guides/markdown/line-breaks",
+          "__order": "20Line breaks"
+        },
+        "links": {
+          "__title": "Links",
+          "__linktitle": "Links",
+          "__slug": "guides/markdown/links",
+          "__order": "60Links"
+        },
+        "lists": {
+          "__title": "Lists",
+          "__linktitle": "Lists",
+          "__slug": "guides/markdown/lists",
+          "__order": "50Lists"
+        },
+        "tables": {
+          "__title": "Tables",
+          "__linktitle": "Tables",
+          "__slug": "guides/markdown/tables",
+          "__order": "70Tables"
+        },
+        "text-and-paragraphs": {
+          "__title": "Text and paragraphs",
+          "__linktitle": "Text and paragraphs",
+          "__slug": "guides/markdown/text-and-paragraphs",
+          "__order": "10Text and paragraphs"
+        }
+      },
       "patterns": {
         "__title": "How patterns work",
         "__linktitle": "How patterns work",
         "__slug": "guides/patterns",
-        "__order": "200How patterns work",
+        "__order": "How patterns work",
         "config": {
           "__title": "Configuration",
           "__linktitle": "Configuration",
@@ -850,6 +400,12 @@ export default {
           "__slug": "guides/prerequisites/units",
           "__order": "40Units in FreeSewing"
         }
+      },
+      "translation": {
+        "__title": "Translation guide",
+        "__linktitle": "Translation guide",
+        "__slug": "guides/translation",
+        "__order": "Translation guide"
       }
     },
     "howtos": {
@@ -1041,6 +597,198 @@ export default {
           "__linktitle": "Working on freesewing.org",
           "__slug": "howtos/dev/freesewing-org",
           "__order": "Working on freesewing.org"
+        }
+      },
+      "editors": {
+        "__title": "Common tasks for editors",
+        "__linktitle": "Common tasks for editors",
+        "__slug": "howtos/editors",
+        "__order": "Common tasks for editors",
+        "blogpost": {
+          "__title": "Adding a blog post",
+          "__linktitle": "Adding a blog post",
+          "__slug": "howtos/editors/blogpost",
+          "__order": "Adding a blog post"
+        },
+        "frontmatter": {
+          "__title": "Working with frontmatter",
+          "__linktitle": "Working with frontmatter",
+          "__slug": "howtos/editors/frontmatter",
+          "__order": "Working with frontmatter",
+          "about": {
+            "__title": "About frontmatter",
+            "__linktitle": "About frontmatter",
+            "__slug": "howtos/editors/frontmatter/about",
+            "__order": "10About frontmatter"
+          },
+          "lists": {
+            "__title": "Lists or arrays",
+            "__linktitle": "Lists or arrays",
+            "__slug": "howtos/editors/frontmatter/lists",
+            "__order": "30Lists or arrays"
+          },
+          "multi-line": {
+            "__title": "Mult-line text",
+            "__linktitle": "Mult-line text",
+            "__slug": "howtos/editors/frontmatter/multi-line",
+            "__order": "40Mult-line text"
+          },
+          "structure": {
+            "__title": "Structure",
+            "__linktitle": "Structure",
+            "__slug": "howtos/editors/frontmatter/structure",
+            "__order": "20Structure"
+          }
+        },
+        "showcase": {
+          "__title": "Adding a showcase on freesewing.org",
+          "__linktitle": "Adding a showcase on freesewing.org",
+          "__slug": "howtos/editors/showcase",
+          "__order": "Adding a showcase on freesewing.org"
+        }
+      },
+      "environments": {
+        "__title": "FreeSewing in different environments",
+        "__linktitle": "FreeSewing in different environments",
+        "__slug": "howtos/environments",
+        "__order": "FreeSewing in different environments",
+        "browser": {
+          "__title": "FreeSewing in the browser",
+          "__linktitle": "FreeSewing in the browser",
+          "__slug": "howtos/environments/browser",
+          "__order": "FreeSewing in the browser"
+        },
+        "nodejs": {
+          "__title": "FreeSewing in NodeJS",
+          "__linktitle": "FreeSewing in NodeJS",
+          "__slug": "howtos/environments/nodejs",
+          "__order": "FreeSewing in NodeJS"
+        }
+      },
+      "help": {
+        "__title": "Where to get help",
+        "__linktitle": "Where to get help",
+        "__slug": "howtos/help",
+        "__order": "Where to get help"
+      },
+      "ways-to-contribute": {
+        "__title": "Ways to contribute",
+        "__linktitle": "Ways to contribute",
+        "__slug": "howtos/ways-to-contribute",
+        "__order": "Ways to contribute",
+        "body-ambassador": {
+          "__title": "Body ambassador",
+          "__linktitle": "Body ambassador",
+          "__slug": "howtos/ways-to-contribute/body-ambassador",
+          "__order": "Body ambassador"
+        },
+        "community-building": {
+          "__title": "Community building",
+          "__linktitle": "Community building",
+          "__slug": "howtos/ways-to-contribute/community-building",
+          "__order": "Community building"
+        },
+        "design-patterns": {
+          "__title": "Design sewing patterns",
+          "__linktitle": "Design sewing patterns",
+          "__slug": "howtos/ways-to-contribute/design-patterns",
+          "__order": "Design sewing patterns"
+        },
+        "develop-patterns": {
+          "__title": "Develop sewing patterns",
+          "__linktitle": "Develop sewing patterns",
+          "__slug": "howtos/ways-to-contribute/develop-patterns",
+          "__order": "Develop sewing patterns"
+        },
+        "devops": {
+          "__title": "Devops",
+          "__linktitle": "Devops",
+          "__slug": "howtos/ways-to-contribute/devops",
+          "__order": "Devops"
+        },
+        "illustrations": {
+          "__title": "Make illustrations",
+          "__linktitle": "Make illustrations",
+          "__slug": "howtos/ways-to-contribute/illustrations",
+          "__order": "Make illustrations"
+        },
+        "language-ambassador": {
+          "__title": "Language ambassador",
+          "__linktitle": "Language ambassador",
+          "__slug": "howtos/ways-to-contribute/language-ambassador",
+          "__order": "Language ambassador"
+        },
+        "pattern-ambassador": {
+          "__title": "Pattern ambassador",
+          "__linktitle": "Pattern ambassador",
+          "__slug": "howtos/ways-to-contribute/pattern-ambassador",
+          "__order": "Pattern ambassador"
+        },
+        "pattern-testing": {
+          "__title": "Pattern testing",
+          "__linktitle": "Pattern testing",
+          "__slug": "howtos/ways-to-contribute/pattern-testing",
+          "__order": "Pattern testing"
+        },
+        "project-management": {
+          "__title": "Project management",
+          "__linktitle": "Project management",
+          "__slug": "howtos/ways-to-contribute/project-management",
+          "__order": "Project management"
+        },
+        "proofreading": {
+          "__title": "Proofreading",
+          "__linktitle": "Proofreading",
+          "__slug": "howtos/ways-to-contribute/proofreading",
+          "__order": "Proofreading"
+        },
+        "report-bugs": {
+          "__title": "Report bugs",
+          "__linktitle": "Report bugs",
+          "__slug": "howtos/ways-to-contribute/report-bugs",
+          "__order": "Report bugs"
+        },
+        "showcase-our-patterns": {
+          "__title": "Showcase our patterns",
+          "__linktitle": "Showcase our patterns",
+          "__slug": "howtos/ways-to-contribute/showcase-our-patterns",
+          "__order": "Showcase our patterns"
+        },
+        "technical-writing": {
+          "__title": "Technical writing",
+          "__linktitle": "Technical writing",
+          "__slug": "howtos/ways-to-contribute/technical-writing",
+          "__order": "Technical writing",
+          "code": {
+            "__title": "Writing for freesewing.dev",
+            "__linktitle": "Writing for freesewing.dev",
+            "__slug": "howtos/ways-to-contribute/technical-writing/code",
+            "__order": "Writing for freesewing.dev"
+          },
+          "patterns": {
+            "__title": "Writing for freesewing.org",
+            "__linktitle": "Writing for freesewing.org",
+            "__slug": "howtos/ways-to-contribute/technical-writing/patterns",
+            "__order": "Writing for freesewing.org"
+          }
+        },
+        "translation": {
+          "__title": "Translation",
+          "__linktitle": "Translation",
+          "__slug": "howtos/ways-to-contribute/translation",
+          "__order": "Translation"
+        },
+        "triage-issues": {
+          "__title": "Triage issues",
+          "__linktitle": "Triage issues",
+          "__slug": "howtos/ways-to-contribute/triage-issues",
+          "__order": "Triage issues"
+        },
+        "webdesign": {
+          "__title": "UI / UX Webdesign",
+          "__linktitle": "UI / UX Webdesign",
+          "__slug": "howtos/ways-to-contribute/webdesign",
+          "__order": "UI / UX Webdesign"
         }
       }
     },
@@ -2123,6 +1871,12 @@ export default {
           }
         }
       },
+      "measurements": {
+        "__title": "Measurements",
+        "__linktitle": "Measurements",
+        "__slug": "reference/measurements",
+        "__order": "Measurements"
+      },
       "plugins": {
         "__title": "Plugins",
         "__linktitle": "Plugins",
@@ -2164,11 +1918,23 @@ export default {
           "__slug": "reference/plugins/dimension",
           "__order": "@freesewing/plugin-dimension"
         },
+        "export-dxf": {
+          "__title": "@freesewing/plugin-export-dxf",
+          "__linktitle": "@freesewing/plugin-export-dxf",
+          "__slug": "reference/plugins/export-dxf",
+          "__order": "@freesewing/plugin-export-dxf"
+        },
         "flip": {
           "__title": "@freesewing/plugin-flip",
           "__linktitle": "@freesewing/plugin-flip",
           "__slug": "reference/plugins/flip",
           "__order": "@freesewing/plugin-flip"
+        },
+        "gore": {
+          "__title": "@freesewing/plugin-gore",
+          "__linktitle": "@freesewing/plugin-gore",
+          "__slug": "reference/plugins/gore",
+          "__order": "@freesewing/plugin-gore"
         },
         "grainline": {
           "__title": "@freesewing/plugin-grainline",
@@ -2188,11 +1954,23 @@ export default {
           "__slug": "reference/plugins/logo",
           "__order": "@freesewing/plugin-logo"
         },
+        "measurements": {
+          "__title": "@freesewing/plugin-measurements",
+          "__linktitle": "@freesewing/plugin-measurements",
+          "__slug": "reference/plugins/measurements",
+          "__order": "@freesewing/plugin-measurements"
+        },
         "mirror": {
           "__title": "@freesewing/plugin-mirror",
           "__linktitle": "@freesewing/plugin-mirror",
           "__slug": "reference/plugins/mirror",
           "__order": "@freesewing/plugin-mirror"
+        },
+        "notches": {
+          "__title": "@freesewing/plugin-notches",
+          "__linktitle": "@freesewing/plugin-notches",
+          "__slug": "reference/plugins/notches",
+          "__order": "@freesewing/plugin-notches"
         },
         "round": {
           "__title": "@freesewing/plugin-round",
@@ -2229,19 +2007,199 @@ export default {
           "__linktitle": "@freesewing/plugin-title",
           "__slug": "reference/plugins/title",
           "__order": "@freesewing/plugin-title"
+        },
+        "versionfree-svg": {
+          "__title": "@freesewing/versionfree-svg",
+          "__linktitle": "@freesewing/versionfree-svg",
+          "__slug": "reference/plugins/versionfree-svg",
+          "__order": "@freesewing/versionfree-svg"
         }
-      }
-    },
-    "translators": {
-      "__title": "For translators",
-      "__linktitle": "For translators",
-      "__slug": "translators",
-      "__order": "1140For translators",
-      "empty": {
-        "__title": " ",
-        "__linktitle": " ",
-        "__slug": "translators/empty",
-        "__order": " "
+      },
+      "terms": {
+        "__title": "Terminology",
+        "__linktitle": "Terminology",
+        "__slug": "reference/terms",
+        "__order": "Terminology",
+        "backend": {
+          "__title": "Backend",
+          "__linktitle": "Backend",
+          "__slug": "reference/terms/backend",
+          "__order": "Backend"
+        },
+        "commit": {
+          "__title": "Commit",
+          "__linktitle": "Commit",
+          "__slug": "reference/terms/commit",
+          "__order": "Commit"
+        },
+        "contributor": {
+          "__title": "Contributor",
+          "__linktitle": "Contributor",
+          "__slug": "reference/terms/contributor",
+          "__order": "Contributor"
+        },
+        "contributor-call": {
+          "__title": "Contributor call (fscc)",
+          "__linktitle": "Contributor call (fscc)",
+          "__slug": "reference/terms/contributor-call",
+          "__order": "Contributor call (fscc)"
+        },
+        "design-pattern": {
+          "__title": "Design/Pattern",
+          "__linktitle": "Design/Pattern",
+          "__slug": "reference/terms/design-pattern",
+          "__order": "Design/Pattern"
+        },
+        "developer": {
+          "__title": "Developer",
+          "__linktitle": "Developer",
+          "__slug": "reference/terms/developer",
+          "__order": "Developer"
+        },
+        "discord": {
+          "__title": "Discord",
+          "__linktitle": "Discord",
+          "__slug": "reference/terms/discord",
+          "__order": "Discord"
+        },
+        "editor": {
+          "__title": "Editor",
+          "__linktitle": "Editor",
+          "__slug": "reference/terms/editor",
+          "__order": "Editor"
+        },
+        "express": {
+          "__title": "Express",
+          "__linktitle": "Express",
+          "__slug": "reference/terms/express",
+          "__order": "Express"
+        },
+        "freesewing": {
+          "__title": "FreeSewing",
+          "__linktitle": "FreeSewing",
+          "__slug": "reference/terms/freesewing",
+          "__order": "FreeSewing"
+        },
+        "freesewing.dev": {
+          "__title": "freesewing.dev",
+          "__linktitle": "freesewing.dev",
+          "__slug": "reference/terms/freesewing.dev",
+          "__order": "freesewing.dev"
+        },
+        "freesewing.org": {
+          "__title": "freesewing.org",
+          "__linktitle": "freesewing.org",
+          "__slug": "reference/terms/freesewing.org",
+          "__order": "freesewing.org"
+        },
+        "frontend": {
+          "__title": "Frontend",
+          "__linktitle": "Frontend",
+          "__slug": "reference/terms/frontend",
+          "__order": "Frontend"
+        },
+        "gatsby": {
+          "__title": "Gatsby",
+          "__linktitle": "Gatsby",
+          "__slug": "reference/terms/gatsby",
+          "__order": "Gatsby"
+        },
+        "i18n": {
+          "__title": "i18n",
+          "__linktitle": "i18n",
+          "__slug": "reference/terms/i18n",
+          "__order": "i18n"
+        },
+        "issue": {
+          "__title": "Issue",
+          "__linktitle": "Issue",
+          "__slug": "reference/terms/issue",
+          "__order": "Issue"
+        },
+        "javascript": {
+          "__title": "Javascript",
+          "__linktitle": "Javascript",
+          "__slug": "reference/terms/javascript",
+          "__order": "Javascript"
+        },
+        "made-to-measure": {
+          "__title": "Made-to-measure",
+          "__linktitle": "Made-to-measure",
+          "__slug": "reference/terms/made-to-measure",
+          "__order": "Made-to-measure"
+        },
+        "markdown": {
+          "__title": "Markdown",
+          "__linktitle": "Markdown",
+          "__slug": "reference/terms/markdown",
+          "__order": "Markdown"
+        },
+        "monorepo": {
+          "__title": "Monorepo",
+          "__linktitle": "Monorepo",
+          "__slug": "reference/terms/monorepo",
+          "__order": "Monorepo"
+        },
+        "node": {
+          "__title": "Node",
+          "__linktitle": "Node",
+          "__slug": "reference/terms/node",
+          "__order": "Node"
+        },
+        "parametric-pattern-design": {
+          "__title": "Parametric pattern design",
+          "__linktitle": "Parametric pattern design",
+          "__slug": "reference/terms/parametric-pattern-design",
+          "__order": "Parametric pattern design"
+        },
+        "patron": {
+          "__title": "Patron",
+          "__linktitle": "Patron",
+          "__slug": "reference/terms/patron",
+          "__order": "Patron"
+        },
+        "plugin": {
+          "__title": "Plugin",
+          "__linktitle": "Plugin",
+          "__slug": "reference/terms/plugin",
+          "__order": "Plugin"
+        },
+        "pull-request": {
+          "__title": "Pull request",
+          "__linktitle": "Pull request",
+          "__slug": "reference/terms/pull-request",
+          "__order": "Pull request"
+        },
+        "react": {
+          "__title": "React",
+          "__linktitle": "React",
+          "__slug": "reference/terms/react",
+          "__order": "React"
+        },
+        "repo": {
+          "__title": "Repo",
+          "__linktitle": "Repo",
+          "__slug": "reference/terms/repo",
+          "__order": "Repo"
+        },
+        "repository": {
+          "__title": "Repository",
+          "__linktitle": "Repository",
+          "__slug": "reference/terms/repository",
+          "__order": "Repository"
+        },
+        "tiler": {
+          "__title": "Tiler",
+          "__linktitle": "Tiler",
+          "__slug": "reference/terms/tiler",
+          "__order": "Tiler"
+        },
+        "translator": {
+          "__title": "Translator",
+          "__linktitle": "Translator",
+          "__slug": "reference/terms/translator",
+          "__order": "Translator"
+        }
       }
     },
     "tutorials": {
