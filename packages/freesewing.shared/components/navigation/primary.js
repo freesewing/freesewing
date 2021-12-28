@@ -210,7 +210,7 @@ const Navigation = ({ app, active }) => {
 }
 
 const PrimaryMenu = ({ app, active }) => (
-  <nav className="sm:max-w-sm grow mb-12">
+  <nav className="sm:max-w-lg grow mb-12">
     <TopLogo app={app}/>
     <Navigation app={app} active={active} />
     <TopTheme app={app}/>

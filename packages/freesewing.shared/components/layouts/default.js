@@ -86,8 +86,8 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
         grow flex flex-row
         sm:py-8
         gap-2
-        lg:gap-16
-        xl:gap-32
+        lg:gap-8
+        xl:gap-16
       `}>
         <aside className={`
           fixed top-0 right-0
@@ -107,7 +107,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
         `}>
           <PrimaryNavigation app={app} active={slug}/>
         </aside>
-        <section className='max-w-screen-lg lg:pt-8 p-4 w-full'>
+        <section className='max-w-61.8% lg:pt-8 p-4 w-full'>
           {title && (
             <>
               <Breadcrumbs app={app} slug={slug} title={title} />
