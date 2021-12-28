@@ -17,6 +17,7 @@ const mdxCustomComponents = (app) => ({
     {...props}
     patterns={{examples, rendertest, tutorial}}
   >{props.children}</Example>,
+  Comment: props => <Popout {...props} comment />,
   Fixme: props => <Popout {...props} fixme />,
   Link: props => <Popout {...props} link />,
   Note: props => <Popout {...props} note />,
