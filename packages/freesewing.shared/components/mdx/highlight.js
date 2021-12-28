@@ -18,7 +18,9 @@ const Highlight = (props) => {
       <div className={`text-xs uppercase font-bold text-neutral-content mt-1 text-center border-b border-neutral-content border-opacity-25 py-1 mb-2 lg:text-sm`}>
         {names[language] ? names[language] : language}
       </div>
-      <pre className={`language-${language} hljs text-base lg:text-lg`}>{children}</pre>
+      <pre className={`language-${language} hljs text-base lg:text-lg whitespace-pre-line`}>
+        {children}
+      </pre>
     </div>
   )
 }
