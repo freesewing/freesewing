@@ -5,7 +5,7 @@ export default function (part) {
   let w = store.get('w')
 
   const snips = {
-    logo: 75,
+    logo: 35,
     notch: 15,
     bnotch: 15,
     button: 15,
