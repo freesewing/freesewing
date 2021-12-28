@@ -8,9 +8,9 @@ It will attach the [the postDraft lifecycle
 hook](/reference/api/hooks/postdraft) to add a `renderDxf()` method
 to the pattern object.
 
-<Warning>
+<Comment by="joost">
 
-##### Maintainer note: This is de-facto unmaintained
+##### This is de-facto unmaintained
 
 This plugin is de-facto unmaintained because I have no use for it.
 I keep it around in case it might be useful, and I've used it 
@@ -19,7 +19,7 @@ myself for exporting to different software.
 The being said, DXF is a poor choice as a file format for storing sewing patterns.
 For one thing, it only allows straight lines, no curves. Yikes!
 
-</Warning>
+</Comment>
 
 ## Installation
 

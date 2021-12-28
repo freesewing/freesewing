@@ -1,20 +1,5 @@
 ---
 title: How patterns work
-order: 200
-for: contributors
-icons: 
-  - blocks
-  - pattern
-about: |
-  Learn about the main building blocks that make up a FreeSewing pattern
-goals:
-  - Learn about points
-  - Learn about paths
-  - Learn about snippets
-  - Learn about parts
-  - Learn about the pattern configuration
-  - Learn about the pattern store
-  - Learn about the pattern itself
 ---
 
 This short guide will illustrate and explain how patterns work in FreeSewing.

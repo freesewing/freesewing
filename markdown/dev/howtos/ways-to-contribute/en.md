@@ -3,67 +3,52 @@ title: Ways to contribute
 ---
 
 Thank you for being part of our community, and for wanting to contribute! ❤️  
-
 FreeSewing is an open source project ran by volunteers from different corners of the world.
-We would love to have you on board, but before we get to that, let's look at what we expect from you:
+We would love to have you on board, and this page lists everything you need to know to get started.
 
-<Note>
+## Requirements
 
-##### Contributor requirements
+The only requirement we ask from our contributors is that they are the kind of people who
+value a safe and welcoming environment for all members of the FreeSewing community.
 
- - Please respect [our community standards](https://freesewing.org/docs/various/community-standards/)
- - As a contributor, you must uphold [our Code of Conduct](/contributors/code-of-conduct/)
+To that extend, we impose the following requirements to ensure everyone feels safe and welcome:
 
-</Note>
+ - Any member of our community must respect [our community standards](https://freesewing.org/docs/various/community-standards/)
+ - As a contributor, you must uphold [our Code of Conduct](/guides/code-of-conduct/)
+
+Go ahead and read those, we'll wait.
+
+## Good to know
 
 With that out of the way, here's a few more things that are *good to know*:
 
-<Tip>
-
-##### Did you know?
-
  - Nobody gets paid to work on/for FreeSewing. We are a 100% volunteer organisation.
- - We have patrons who support us financially, but all the money that comes in goes to charity -- 
+ - We have patrons who support us financially, but all the money that comes in goes to charity — 
    See our [revenue pledge](https://freesewing.org/docs/various/pledge/) for details
+ - FreeSewing follows the [all-contributors](https://allcontributors.org/) specification. 
+   Contributions of any kind are welcome.
 
-</Tip>
+## Where to begin
 
+Below is a list of ideas or roles you could take up.
+If you're not sure what to do, or if you have questions, [please reach out to 
+us](https://discord.freesewing.org/).
 
-With the formalities out of the way, please continue 
-to [Ways to contribute](/contributors/ways-to-contribute)
-or [Where to get help](/contributors/help/).
+<ReadMore />
 
-
-<Tip>
-
-##### Looking to hit the ground running?
-
-You can start with [our project board](https://todo.freesewing.org/), or
-going through the issues labeled [good first issue](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%8D+good+first+issue%22).
-
-Don't be afraid to take on an issue. If you get stuck, [we'll help you out](https://discord.freesewing.org/).
-
-</Tip>
-
-Unsure where to begin contributing to FreeSewing? 
-*Contributing* can take on many shapes and forms. 
-There's certainly a way that works well for you.
-
-Here's a non-exhaustive list:
-
-<ReadMore list />
-
-<Note>
+<Comment by="joost">
 
 ##### Who wants a job in the tech sector?
 
 For many in our community, contributring to FreeSewing marked their
 first steps into the world of open source software development.
 
-We are happy to provide guidance to anyone who wants to learn,
-especially when doing so enables upwards social mobility.
+I (joost) am happy to provide guidance or mentorship to anyone who 
+wants to learn, especially when doing so enables upwards social mobility.
 
-</Note>
+[Reach out](https://discord.freesewing.org/) and we let's do this.
+
+</Comment>
 
 
 
