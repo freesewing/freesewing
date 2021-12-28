@@ -2,8 +2,10 @@
 title: margin
 ---
 
-Allows you to specify a part margin (in mm). The default is 2mm.  
-Each part will have this margin applied. This means that:
+The `margin` setting allows you to specify a part margin (in mm). 
+Each part will have this margin applied. The default is `2mm`. 
+
+This means that:
 
  - At the edge of the SVG, the margin will be `margin * 1` (2mm by default)
  - Between parts, the margin will be `margin * 2` (4mm by default)
@@ -11,9 +13,9 @@ Each part will have this margin applied. This means that:
 Note that setting the margin to zero (or below) will cause parts to overlap.
 
 ```js
-import brian from "@freesewing/brian";
+import Brian from "@freesewing/brian";
 
-let pattern = new brian({
+const pattern = new Brian({
   margin: 5
 })
 ```

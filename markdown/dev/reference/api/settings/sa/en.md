@@ -2,15 +2,13 @@
 title: sa
 ---
 
-The seam allowance in mm.
-
-Not setting this, setting it to `false`, or to zero, will draft a pattern without seam allowance.
-
+The `sa` setting controls the seam allowance. It expects a value in mm
+or `false` or `0` to disable seam allowance altogether.
 
 ```js
-import brian from "@freesewing/brian";
+import Brian from "@freesewing/brian";
 
-let pattern = new brian({
+const pattern = new Brian({
   sa: 10
 })
 ```
@@ -18,5 +16,10 @@ let pattern = new brian({
 <Note>
 
 This is ignored if [settings.complete](#complete) is `false`
+
+<Comment by="joost">
+Is it though?
+I suspect this is not clearly enforced and we should clarify that.
+</Comment>
 
 </Note>

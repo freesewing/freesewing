@@ -2,12 +2,15 @@
 title: options
 ---
 
-The pattern options as specified in the pattern configuration.
+The `options` setting allows you to specify the pattern-specific options
+that have been implemented by the pattern designer.
+
+The available options are listed in the pattern configuration.
 
 ```js
-import brian from "@freesewing/brian";
+import Brian from "@freesewing/brian";
 
-let pattern = new brian({
+const pattern = new Brian({
   options: {
     chestEase: 120
   }

@@ -2,15 +2,20 @@
 title: embed
 ---
 
-Set to `true` to make SVG output suitable for embedding in a web page.
+The `embed` setting controls the properties of the SVG document.
+Set it to `true` to make SVG output suitable for embedding in a web page.
 
-This removes the `width` and `height` attributes from the SVG tag, which allows
-you to inject the SVG into an HTML document, and it will responsively scale.
+The default for `embed` is `false` which will include the `width` and `height`
+attributes in the SVG tag, thereby making it suitable for printing.
+
+When set to `true` the `width` and `height` attributes will not be added
+which allows you to inject the SVG into an HTML document, where it will 
+responsively scale.
 
 ```js
-import brian from "@freesewing/brian";
+import Brian from "@freesewing/brian";
 
-let pattern = new brian({
+const pattern = new Brian({
   embed: true
 })
 ```

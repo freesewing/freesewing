@@ -2,14 +2,16 @@
 title: only
 ---
 
-Allows you to specify one or more parts to draft/render, rather than the entire pattern.
+The `only` setting allows you to specify one or more parts to 
+draft/render, rather than the entire pattern.
 
-Accepts a part name as string, or an array of part names.
+It accepts either a single part name as a string, or an array of 
+one or more part names.
 
 ```js
-import brian from "@freesewing/brian";
+import Brian from "@freesewing/brian";
 
-let pattern = new brian({
+const pattern = new Brian({
   only: ["front", "sleeve"]
 })
 ```
