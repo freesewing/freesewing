@@ -10,9 +10,6 @@ import GuideIcon from 'shared/components/icons/guide.js'
 import HelpIcon from 'shared/components/icons/help.js'
 import DocsIcon from 'shared/components/icons/docs.js'
 
-// TODO: Clean this up after restructuring markdown content
-const hide = ['contributors', 'developers', 'editors', 'translators']
-
 // Don't show children for blog and showcase posts
 const keepClosed = ['blog', 'showcase', ]
 
@@ -80,7 +77,7 @@ const SubLevel = ({ nodes={}, active }) => (
               hover:cursor-row-resize
               items-center
             `}>
-              <Link href={child.__slug}>
+              <Link href={`/${child.__slug}`}>
                 <a title={child.__title} className={`
                   grow pl-2 border-l-2
                   hover:border-secondary
@@ -105,7 +102,7 @@ const SubLevel = ({ nodes={}, active }) => (
         </li>
       ) : (
         <li className='pl-2 flex flex-row items-center'>
-          <Link href={child.__slug} title={child.__title}>
+          <Link href={`/${child.__slug}`} title={child.__title}>
             <a className={`
               pl-2 border-l-2
               grow hover:border-secondary
@@ -195,40 +192,29 @@ const TopTheme = ({ app }) => (
   </>
 )
 
-// TODO: Get rid of this when markdown has been restructured
-const remove = ['contributors', 'developers', 'editors', 'translators']
 const Navigation = ({ app, active }) => {
   if (!app.navigation) return null
   const output = []
-  for (const key of Object.keys(app.navigation).sort()) {
-    if (hide.indexOf(key) === -1) output.push(<TopLevel
-      icon={icons[key] || <span className="text-3xl mr-2 translate-y-3 inline-block p-0 leading-3">&deg;</span>}
-      title={key}
-      slug={key}
-      key={key}
-      hasChildren={keepClosed.indexOf(key) === -1}
-      nav={app.navigation}
-      current={order(app.navigation[key])}
-      active={active}
-    />)
-  }
+  for (const key of Object.keys(app.navigation).sort()) output.push(<TopLevel
+    icon={icons[key] || <span className="text-3xl mr-2 translate-y-3 inline-block p-0 leading-3">&deg;</span>}
+    title={key}
+    slug={key}
+    key={key}
+    hasChildren={keepClosed.indexOf(key) === -1}
+    nav={app.navigation}
+    current={order(app.navigation[key])}
+    active={active}
+  />)
 
   return output
 }
 
-const PrimaryMenu = ({ app, active }) => {
-
-  return (
-    <nav className={`
-      sm:max-w-sm
-      grow
-      mb-12
-    `}>
-      <TopLogo app={app}/>
-      <Navigation app={app} active={active} />
-      <TopTheme app={app}/>
-    </nav>
-  )
-}
+const PrimaryMenu = ({ app, active }) => (
+  <nav className="sm:max-w-sm grow mb-12">
+    <TopLogo app={app}/>
+    <Navigation app={app} active={active} />
+    <TopTheme app={app}/>
+  </nav>
+)
 
 export default PrimaryMenu
