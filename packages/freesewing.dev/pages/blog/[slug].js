@@ -5,6 +5,7 @@ import { posts } from 'site/prebuild/strapi.blog.en.js'
 import TimeAgo from 'react-timeago'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import Markdown from 'react-markdown'
+import Head from 'next/head'
 
 const strapi = "https://posts.freesewing.org"
 
@@ -51,6 +52,15 @@ const PostPage = ({ post, author }) => {
 
   return (
     <Page app={app} title={post.title}>
+      <Head>
+        <meta property="og:title" content={post.title} key="title" />
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content={author.displayname} />
+        <meta property="og:url" content={`https://canary.freesewing.dev/blog/${post.slug}`} />
+        <meta property="og:image" content={`${strapi}${post.image.formats.large.url}`} />
+        <meta property="og:local" content="en_US" />
+        <meta property="og:site_name" content="freesewing.dev" />
+      </Head>
       <article className="mb-12">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
           <span><TimeAgo date={post.date} /> [{post.date}]</span>
