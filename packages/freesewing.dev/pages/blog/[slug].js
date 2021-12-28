@@ -49,17 +49,21 @@ const Author = ({ author }) => (
 
 const PostPage = ({ post, author }) => {
   const app = useApp()
-
+console.log(post)
   return (
     <Page app={app} title={post.title}>
       <Head>
         <meta property="og:title" content={post.title} key="title" />
-        <meta property="og:type" content="article" />
-        <meta property="og:article:author" content={author.displayname} />
-        <meta property="og:url" content={`https://canary.freesewing.dev/blog/${post.slug}`} />
-        <meta property="og:image" content={`${strapi}${post.image.formats.large.url}`} />
-        <meta property="og:local" content="en_US" />
-        <meta property="og:site_name" content="freesewing.dev" />
+        <meta property="og:type" content="article" key='type' />
+        <meta property="og:description" content={post.intro || post.title} key='description' />
+        <meta property="og:article:author" content={author.displayname} key='author' />
+        <meta property="og:url" content={`https://canary.freesewing.dev/blog/${post.slug}`} key='url' />
+        <meta property="og:image" content={`${strapi}${post.image.formats.large.url}`} key='image' />
+        <meta property="og:image:type" content={post.image.mime} key='image' />
+        <meta property="og:image:width" content={post.image.width} key='image' />
+        <meta property="og:image:height" content={post.image.height} key='image' />
+        <meta property="og:locale" content="en_US" key='locale' />
+        <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
       <article className="mb-12">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">

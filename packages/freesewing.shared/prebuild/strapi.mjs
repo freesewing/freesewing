@@ -8,7 +8,7 @@ import remarkCompiler from 'remark-stringify'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import yaml from 'yaml'
-import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
+import { remarkIntroPlugin } from '../mdx/remark-intro-plugin.mjs'
 
 
 /*

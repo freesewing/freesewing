@@ -1,45 +1,11 @@
-/*
- * This page will be used to generate all markdown content
- * which, on freesewing.dev, is pretty much the entire website
- * apart from the home page.
- *
- * It uses a dynamic route and data fetching to do that.
- * More info is available at the bottom of this page, or check
- * https://nextjs.org/docs/basic-features/data-fetching
- */
-
-/*
- * Page wrapper - a MUST for all pages
- */
 import Page from 'shared/components/wrappers/page.js'
-
-/*
- * useApp hook - also a MUST for all pages
- */
 import useApp from 'site/hooks/useApp.js'
-
-/*
- * mdxMeta is generated in the prebuild step and contains
- * meta-data about markdown content (titles, slugs, intro)
- */
 import mdxMeta from 'site/prebuild/mdx.en.js'
-
-/*
- * This loads MDX (markdown) from disk
- */
 import mdxLoader from 'shared/mdx/loader'
-
-/*
- * This wraps MDX making sure to include all components
- * like Tip, Note, Example, and so on
- */
 import MdxWrapper from 'shared/components/wrappers/mdx'
-
+import Head from 'next/head'
 import Popout from 'shared/components/popout.js'
 
-/*
- * The NextJS page object
- */
 const MdxPage = props => {
 
   // This hook is used for shared code and global state
@@ -56,6 +22,15 @@ const MdxPage = props => {
    */
   return (
     <Page app={app} {...props.page}>
+      <Head>
+        <meta property="og:title" content={props.page.title} key="title" />
+        <meta property="og:type" content="article" key='type' />
+        <meta property="og:description" content={props.intro} key='type' />
+        <meta property="og:article:author" content='Joost De Cock' key='author' />
+        <meta property="og:url" content={`https://canary.freesewing.dev/${props.page.slug}`} key='url' />
+        <meta property="og:locale" content="en_US" key='locale' />
+        <meta property="og:site_name" content="freesewing.dev" key='site' />
+      </Head>
       <MdxWrapper mdx={props.mdx} app={app}/>
       <Popout tip className='max-w-prose'>
         <h6>Found a mistake?</h6>
@@ -87,11 +62,12 @@ export default MdxPage
  */
 export async function getStaticProps({ params }) {
 
-  const mdx = await mdxLoader('en', 'dev', params.mdxslug.join('/'))
+  const { mdx, intro } = await mdxLoader('en', 'dev', params.mdxslug.join('/'))
 
   return {
     props: {
       mdx,
+      intro: intro.join(' '),
       page: {
         slug: params.mdxslug.join('/'),
         path: '/' + params.mdxslug.join('/'),

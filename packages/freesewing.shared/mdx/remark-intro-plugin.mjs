@@ -25,7 +25,9 @@ const asText = [
 ]
 
 // The actual plugin starts here
-export const remarkIntroPlugin = () => {
+export const remarkIntroPlugin = (opts={}) => {
+
+  const { intro=[] } = opts
 
   // Check to see whether the node has frontmatter
   const hasFrontmatter = node => (node.children[0].type === 'yaml')
@@ -52,14 +54,15 @@ export const remarkIntroPlugin = () => {
 
   // Tree visitor
   const visitor = (node) => {
-    const intro = extractFirstParagraph(node)
+    const nodeIntro = extractFirstParagraph(node)
+    // Forgive me for this hack
+    intro.push(nodeIntro)
     if (hasFrontmatter(node)) {
-      node.children[0].value += `\nintro: "${intro}"\n`
-      //console.log(node.children[0])
+      node.children[0].value += `\nintro: "${nodeIntro}"\n`
     } else {
       node.children.unshift({
         type: 'yaml',
-        value: `intro: "${intro}"`
+        value: `intro: "${nodeIntro}"`
       })
     }
   }

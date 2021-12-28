@@ -108,13 +108,15 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
           <PrimaryNavigation app={app} active={slug}/>
         </aside>
         <section className='max-w-61.8% lg:pt-8 p-4 w-full'>
-          {title && (
-            <>
-              <Breadcrumbs app={app} slug={slug} title={title} />
-              <PageTitle app={app} slug={slug} title={title} />
-            </>
-          )}
-          {children}
+          <div className="max-w-5xl">
+            {title && (
+              <>
+                <Breadcrumbs app={app} slug={slug} title={title} />
+                <PageTitle app={app} slug={slug} title={title} />
+              </>
+            )}
+            {children}
+          </div>
         </section>
       </main>
       <Footer app={app} />

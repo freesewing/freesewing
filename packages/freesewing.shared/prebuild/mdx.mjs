@@ -11,7 +11,6 @@ import remarkMdx from 'remark-mdx'
 import vfileReporter from 'vfile-reporter'
 import { readSync } from 'to-vfile'
 import yaml from 'js-yaml'
-import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
 
 
 /*
@@ -54,7 +53,7 @@ const fileToSlug = (file, site, lang) => (file.slice(-6) === `/${lang}.md`)
   : false
 
 /*
- * Helper method to get the title and intro text from an MDX file
+ * Helper method to get the title and meta data from an MDX file
  *
  * Parameters:
  *
@@ -64,8 +63,7 @@ const mdxMetaInfo = async file => {
   let result
   try {
     result = await unified()
-//      .use(remarkMdx)
-//      .use(remarkIntroPlugin)
+      //.use(remarkMdx)
       .use(remarkParser)
       .use(remarkCompiler)
       .use(remarkFrontmatter)
@@ -109,7 +107,6 @@ export const prebuildMdx = async(site) => {
         if (meta?.data?.title && meta?.data?.title) {
           pages[lang][slug] = {
             title: meta.data.title,
-            intro: meta.data.intro,
             order: meta.data.order
               ? meta.data.order+meta.data.title
               : meta.data.title,
@@ -119,7 +116,7 @@ export const prebuildMdx = async(site) => {
               : meta.data.title
           }
         } else {
-          console.log('Failed to extract title & intro from:', slug)
+          console.log('Failed to extract meta info from:', slug)
           console.log(meta.messages, null ,2)
         }
       }
