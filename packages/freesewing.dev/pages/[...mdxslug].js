@@ -35,7 +35,7 @@ import mdxLoader from 'shared/mdx/loader'
  */
 import MdxWrapper from 'shared/components/wrappers/mdx'
 
-import ThemePicker from 'shared/components/theme-picker.js'
+import Popout from 'shared/components/popout.js'
 
 /*
  * The NextJS page object
@@ -57,6 +57,13 @@ const MdxPage = props => {
   return (
     <Page app={app} {...props.page}>
       <MdxWrapper mdx={props.mdx} app={app}/>
+      <Popout tip className='max-w-prose'>
+        <h6>Found a mistake?</h6>
+        You can <a
+          href={`https://github.com/freesewing/freesewing/edit/develop/markdown/dev/${props.page.slug}/en.md`}
+          className="text-secondary font-bold"
+        >edit this page on Github</a> and help us improve our documentation.
+      </Popout>
     </Page>
   )
 }
