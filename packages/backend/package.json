@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@freesewing/i18n": "latest",
-    "axios": "0.18.0",
+    "axios": "0.21.2",
     "body-parser": "1.18.3",
     "chalk": "2.4.1",
     "cors": "2.8.4",
