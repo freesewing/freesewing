@@ -6,21 +6,25 @@ noNamespace:
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
+  - svgtopdf
 customChangelog:
   - backend
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
+  - svgtopdf
 customPackageJson:
   - backend
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
+  - svgtopdf
 customReadme:
   - backend
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
+  - svgtopdf
 customRollup:
   - backend
   - components
@@ -34,6 +38,7 @@ customRollup:
   - prettier-config
   - remark-jargon
   - strapi
+  - svgtopdf
   - utils
 namedExports:
   - css-theme
@@ -128,6 +133,8 @@ packageJson:
     files: []
     publishConfig: {}
     rollup: {}
+  svgtopdf:
+    private: true
   tiberius: *starf
   utils:
     # react-scripts doesn't handle .mjs files correctly
