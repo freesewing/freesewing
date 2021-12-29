@@ -1509,6 +1509,12 @@ export default {
             "__slug": "reference/api/settings/sa",
             "__order": "sa"
           },
+          "scale": {
+            "__title": "scale",
+            "__linktitle": "scale",
+            "__slug": "reference/api/settings/scale",
+            "__order": "scale"
+          },
           "units": {
             "__title": "units",
             "__linktitle": "units",

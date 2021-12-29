@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/backend",
-  "version": "0.1.0",
+  "version": "2.19.6",
   "description": "The freesewing.org backend",
   "private": true,
   "main": "dist/index.js",
