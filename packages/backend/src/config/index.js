@@ -52,7 +52,18 @@ const config = {
       tokenUri: "https://oauth2.googleapis.com/token",
       dataUri: "https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos"
     }
-  }
+  },
+  og: {
+    template: ["..", "..", "artwork", "og", "template.svg"],
+    chars: {
+      title_1: 18,
+      title_2: 19,
+      title_3: 20,
+      intro: 34,
+      sub: 42
+    }
+  },
+  strapi: 'https://posts.freesewing.org',
 }
 
 export default config
