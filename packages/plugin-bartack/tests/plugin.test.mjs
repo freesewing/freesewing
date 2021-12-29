@@ -17,7 +17,7 @@ describe('Bartack plugin Tests', () => {
       anchor: pattern.parts.test.points.from,
     })
     const c = pattern.parts.test.paths.bartack
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
     expect(c.ops[0].to.y).to.equal(21.5)
@@ -45,7 +45,7 @@ describe('Bartack plugin Tests', () => {
       path: new pattern.Path().move(from).line(to),
     })
     const c = pattern.parts.test.paths.bartack
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(8.5)
     expect(c.ops[0].to.y).to.equal(20)
@@ -75,7 +75,7 @@ describe('Bartack plugin Tests', () => {
       end: 30,
     })
     const c = pattern.parts.test.paths.bartack
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
     expect(c.ops[0].to.y).to.equal(30)
@@ -105,7 +105,7 @@ describe('Bartack plugin Tests', () => {
       end: 0.8,
     })
     const c = pattern.parts.test.paths.bartack
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
     expect(c.ops[0].to.y).to.equal(36)
@@ -132,7 +132,7 @@ describe('Bartack plugin Tests', () => {
       length: 20,
     })
     const c = pattern.parts.test.paths.bartack
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
     expect(c.ops[0].to.y).to.equal(21.5)
@@ -159,7 +159,7 @@ describe('Bartack plugin Tests', () => {
       width: 5,
     })
     const c = pattern.parts.test.paths.bartack
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
     expect(c.ops[0].to.y).to.equal(22.5)
@@ -186,7 +186,7 @@ describe('Bartack plugin Tests', () => {
       angle: 45,
     })
     const c = pattern.parts.test.paths.bartack
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(11.06)
     expect(round(c.ops[0].to.y)).to.equal(21.06)
@@ -213,7 +213,7 @@ describe('Bartack plugin Tests', () => {
       suffix: 'foo',
     })
     const c = pattern.parts.test.paths.bartackfoo
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
   })
 
   it('has configurable prefix', function () {
@@ -227,6 +227,6 @@ describe('Bartack plugin Tests', () => {
       prefix: 'foo',
     })
     const c = pattern.parts.test.paths.foobartack
-    expect(c.attributes.get('class')).to.equal('stroke-sm bartack')
+    expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
   })
 })
