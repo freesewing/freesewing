@@ -1,6 +1,12 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.19.6 (2022-12-29)
+
+### Fixed
+
+ - Fix axios version conflict
+
 ## 2.17.1 (2021-07-14)
 
 ### Fixed

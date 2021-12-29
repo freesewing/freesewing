@@ -1,4 +1,5 @@
-unreleased:
+2.19.6:
+  date: 2022-12-29
 
   Added:
     core:
@@ -66,6 +67,8 @@ unreleased:
       - Updated the rendertest pattern to be more concise
 
   Fixed:
+    create-freesewing-pattern:
+      - Fix axios version conflict
     plugin-buttons:
       - Only add snippets once to SVG object
 

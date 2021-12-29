@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.6 (2022-12-29)
 
 ### core
 
@@ -9,6 +9,12 @@
 
  - Added the new attributes.setIfUnset() method
  - Added the new `scale` setting
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Fix axios version conflict
 
 ### plugin-banner
 
