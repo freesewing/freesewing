@@ -1,4 +1,9 @@
-export default {
+// Load environment variables
+import dotenv from 'dotenv'
+dotenv.config()
+
+// Construct config object
+const config = {
   api: process.env.FS_BACKEND,
   website: process.env.FS_SITE,
   static: process.env.FS_STATIC,
@@ -49,3 +54,5 @@ export default {
     }
   }
 }
+
+export default config
