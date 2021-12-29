@@ -1,13 +1,15 @@
 import config from "../config";
-import { log } from "../utils";
+import { capitalize, log } from "../utils";
 import sharp from 'sharp';
 import fs from "fs";
 import path from "path";
 import axios from 'axios'
 import remark from 'remark'
 import remarkParse from 'remark-parse'
+import remarkFrontmatter from 'remark-frontmatter'
 import toString from 'mdast-util-to-string'
 import { Buffer } from 'buffer'
+import yaml from 'yaml'
 
 // Sites for which we generate images
 const sites = ['dev', 'org']
@@ -20,14 +22,30 @@ const template = fs.readFileSync(
   'utf-8'
 )
 
-/* Turns markdown into a syntax tree */
-/* Helper method to extract intro from markdown */
-const introFromMarkdown = async (md, slug) => {
+/* Helper method to extract intro from strapi markdown */
+const introFromStrapiMarkdown = async (md, slug) => {
   const tree = await remark().use(remarkParse).parse(md)
   if (tree.children[0].type !== 'paragraph')
     console.log('Markdown does not start with paragraph', slug)
 
   return toString(tree.children[0])
+}
+
+/* Helper method to extract title from markdown frontmatter */
+const titleAndIntroFromLocalMarkdown = async (md, slug) => {
+  const tree = await remark()
+    .use(remarkParse)
+    .use(remarkFrontmatter, ['yaml'])
+    .parse(md)
+
+  if (tree.children[0].type !== 'yaml')
+    console.log('Markdown does not start with frontmatter', slug)
+  else return {
+    title: titleAsLines(yaml.parse(tree.children[0].value).title),
+    intro: introAsLines(toString(tree.children.slice(1, 2)))
+  }
+
+  return false
 }
 
 /* Helper method to load dev blog post */
@@ -37,7 +55,7 @@ const loadDevBlogPost = async (slug) => {
   )
   if (result.data) return {
     title: titleAsLines(result.data[0].title),
-    intro: introAsLines(await introFromMarkdown(result.data[0].body, slug)),
+    intro: introAsLines(await introFromStrapiMarkdown(result.data[0].body, slug)),
     sub: [
       result.data[0].author.displayname,
       new Date(result.data[0].published_at).toString().split(' ').slice(0,4).join(' '),
@@ -47,6 +65,22 @@ const loadDevBlogPost = async (slug) => {
 
   return false
 }
+
+/* Helper method to load markdown file from disk */
+const loadMarkdownFile = async (page, site, lang) => fs.promises.readFile(
+  path.resolve('..', '..', 'markdown', site, ...page.split('/'), `${lang}.md`),
+  'utf-8'
+).then(async (md) => md
+  ? {
+    ...((await titleAndIntroFromLocalMarkdown(md, page))),
+    sub: [
+      'freesewing.dev',
+      page
+    ],
+    lead: capitalize(page.split('/').shift())
+  }
+  : false
+)
 
 /* Find longest possible place to split a string */
 const splitLine = (line, chars) => {
@@ -84,28 +118,43 @@ const introAsLines = intro => {
   // Two lines it is
   return splitLine(intro, config.og.chars.intro)
 }
+
 // Get title and intro
 const getMetaData = {
   dev: async (page) => {
     const data = {}
     const chunks = page.split('/')
+    // Home page
     if (chunks.length === 0) return {
       title: 'FreeSewing FIXME',
       intro: "FreeSewing's fixme",
       sub: ['freesewing.dev', '/fixme'],
     }
-    if (chunks.length === 1) {
-      if (chunks[0] === 'blog') return {
-        title: titleAsLines('FreeSewing Development Blog'),
-        intro: introAsLines("FreeSewing's blog for developers and contributors"),
-        sub: ['freesewing.dev', '/blog'],
-      }
+    // Blog index page
+    if (chunks.length === 1 && chunks[0] === 'blog') return {
+      title: titleAsLines('FreeSewing Developer Blog'),
+      intro: introAsLines("Contains no sewing news whatsover. Only posts for (aspiring) developers :)"),
+      sub: ['freesewing.dev', '/blog'],
+      lead: 'Developer Blog',
     }
+    // Blog post
     if (chunks.length === 2 && chunks[0] === 'blog') {
       return await loadDevBlogPost(chunks[1])
     }
+    // Other (MDX) page
+    const md = await loadMarkdownFile(page, 'dev', 'en')
+
+    // Return markdown info or default generic data
+    return md
+      ? md
+      : {
+      title: titleAsLines('FreeSewing.dev'),
+      intro: introAsLines('Documentation, guides, and howtos for contributors and developers alike'),
+      sub: ['https://freesewing.dev/', '&lt;== Check it out'],
+      lead: 'freesewing.dev'
+    }
   },
-  org: page => ({})
+  org: async (page, site, lang) => ({})
 }
 
 /* Hide unused placeholders */
@@ -169,7 +218,7 @@ OgController.prototype.image = async function (req, res) {
   if (languages.indexOf(lang) === -1) return res.send({error: 'sorry'})
 
   // Load meta data
-  const data = await getMetaData[site](page)
+  const data = await getMetaData[site](page, site, lang)
   // Inject into SVG
   const svg = decorateSvg(data)
   // Turn into PNG

@@ -12,6 +12,8 @@ import sharp from "sharp";
 export const email = mailer;
 export const log = logger;
 
+export const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
+
 export const getHash = (email) => {
   let hash = crypto.createHash("sha256");
   hash.update(clean(email));

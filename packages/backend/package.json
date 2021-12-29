@@ -59,10 +59,12 @@
     "passport-jwt": "4.0.0",
     "query-string": "6.2.0",
     "remark": "13",
+    "remark-frontmatter": "^4.0.1",
     "remark-parse": "^9.0.0",
     "remark-plain-text": "^0.2.0",
     "rimraf": "2.6.2",
-    "sharp": "^0.29.3"
+    "sharp": "^0.29.3",
+    "yaml": "^1.10.2"
   },
   "devDependencies": {
     "backpack-core": "0.7.0"
