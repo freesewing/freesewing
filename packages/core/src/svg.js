@@ -3,7 +3,6 @@ import { round } from './utils'
 import { version } from '../package.json'
 
 function Svg(pattern) {
-  console.log(pattern)
   this.openGroups = []
   this.layout = {}
   this.freeId = 0
