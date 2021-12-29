@@ -84,7 +84,6 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
       `}></div>
       <main className={`
         grow flex flex-row
-        sm:py-8
         gap-2
         lg:gap-8
         xl:gap-16
@@ -104,6 +103,8 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
           overflow-y-scroll
           py-4
           z-20
+          bg-neutral bg-opacity-95
+          text-neutral-content
         `}>
           <PrimaryNavigation app={app} active={slug}/>
         </aside>

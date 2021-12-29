@@ -35,7 +35,7 @@ const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
 
 // Component for the collapse toggle
 const Chevron = ({w=8, m=2}) => <svg
-  className={`fill-current opacity-75 w-${w} h-${w} mr-${m} details-toggle hover:text-secondary`}
+  className={`fill-current opacity-75 w-${w} h-${w} mr-${m} details-toggle hover:text-secondary-focus`}
   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
   <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
 </svg>
@@ -48,7 +48,7 @@ const howActive = (slug) => {
 }
 
 // Shared classes for links
-const linkClasses = "text-lg text-base-content lg:text-xl py-1 hover:cursor-pointer hover:text-secondary bg-opacity-50"
+const linkClasses = "text-lg text-neutral-content lg:text-xl py-1 hover:cursor-pointer hover:text-secondary-focus bg-opacity-50"
 
 // Figure out whether a page is on the path to the active page
 const isActive = (slug, active) => {
@@ -73,20 +73,20 @@ const SubLevel = ({ nodes={}, active }) => (
             <summary className={`
               flex flex-row
               px-2
-              text-base-content
+              text-neutral-content
               hover:cursor-row-resize
               items-center
             `}>
               <Link href={`/${child.__slug}`}>
                 <a title={child.__title} className={`
                   grow pl-2 border-l-2
-                  hover:border-secondary
+                  hover:border-secondary-focus
                   ${linkClasses}
-                  ${child.__slug === active ? 'text-secondary border-secondary' : 'text-base-content'}
+                  ${child.__slug === active ? 'text-secondary-focus border-secondary-focus' : 'text-neutral-content'}
                 `}>
                   <span className={`
                     text-3xl mr-2 inline-block p-0 leading-3
-                    ${child.__slug === active ? 'text-secondary translate-y-1' : 'translate-y-3' }
+                    ${child.__slug === active ? 'text-secondary-focus translate-y-1' : 'translate-y-3' }
                   `}>
                     {child.__slug === active ? <>&bull;</> : <>&deg;</>}
                   </span>
@@ -105,13 +105,13 @@ const SubLevel = ({ nodes={}, active }) => (
           <Link href={`/${child.__slug}`} title={child.__title}>
             <a className={`
               pl-2 border-l-2
-              grow hover:border-secondary
+              grow hover:border-secondary-focus
               ${linkClasses}
-              ${child.__slug === active ? 'text-secondary border-secondary' : 'text-base-content'}
+              ${child.__slug === active ? 'text-secondary-focus border-secondary-focus' : 'text-neutral-content'}
             `}>
               <span className={`
                 text-3xl mr-2 inline-block p-0 leading-3
-                ${child.__slug === active ? 'text-secondary translate-y-1' : 'translate-y-3' }
+                ${child.__slug === active ? 'text-secondary-focus translate-y-1' : 'translate-y-3' }
               `}>
                {child.__slug === active ? <>&bull;</> : <>&deg;</>}
               </span>
@@ -134,12 +134,12 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
       flex flex-row uppercase gap-4 font-bold text-lg
       hover:cursor-row-resize
       p-2
-      text-base-content
+      text-neutral-content
       items-center
     `}>
-      <span className="text-secondary">{icon}</span>
+      <span className="text-secondary-focus">{icon}</span>
       <Link href={`/${slug}`}>
-        <a className={`grow ${linkClasses} ${slug === active ? 'text-secondary' : ''}`}>
+        <a className={`grow ${linkClasses} ${slug === active ? 'text-secondary-focus' : ''}`}>
           {title}
         </a>
       </Link>
@@ -155,10 +155,10 @@ const TopLogo = ({ app }) => (
     flex flex-row uppercase gap-4 font-bold text-lg
     items-center
     p-2
-    text-base-content
+    text-neutral-content
   `}>
     <Link href='/'>
-      <a className="hover:pointer text-secondary">
+      <a className="hover:pointer text-secondary-focus">
         <Logo size={24} fill='currentColor' stroke={false}/>
       </a>
     </Link>
@@ -177,9 +177,9 @@ const TopTheme = ({ app }) => (
     flex flex-row uppercase gap-4 font-bold text-lg
     items-center
     p-2
-    text-base-content
+    text-neutral-content
   `}>
-    <span className="text-secondary">
+    <span className="text-secondary-focus-focus">
       <ThemeIcon  />
     </span>
     <div className={`grow`}>
