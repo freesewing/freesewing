@@ -1,16 +1,10 @@
 ---
 title: Code of Conduct
-for: contributors
-icons: 
- - face
- - heart
-about: |
-  FreeSewing's code of conduct is based on the [contributor covenant](https://www.contributor-covenant.org/)
 ---
 
-<ReadMore title="The FreeSewing Code of Conduct" />
+All FreeSewing contributors must respect and uphold our Code of Conduct:
 
-<Tip>Upholding our Code of Conduct is a requirement for all FreeSewing contributors</Tip>
+<ReadMore title="The FreeSewing Code of Conduct" />
 
 <Note>
 
