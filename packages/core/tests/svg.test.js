@@ -13,7 +13,7 @@ it("Svg constructor should initialize object", () => {
   expect(svg.openGroups).to.eql([]);
   expect(svg.freeId).to.equal(0);
   expect(svg.body).to.equal("");
-  expect(svg.style).to.equal("");
+  expect(svg.style).to.equal("svg.freesewing.pattern { --pattern-scale: 1 }");
   expect(svg.script).to.equal("");
   expect(svg.defs).to.equal("");
   expect(svg.pattern).to.eql(pattern);
