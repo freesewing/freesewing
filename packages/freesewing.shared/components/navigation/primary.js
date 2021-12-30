@@ -13,13 +13,6 @@ import DocsIcon from 'shared/components/icons/docs.js'
 // Don't show children for blog and showcase posts
 const keepClosed = ['blog', 'showcase', ]
 
-// TODO: For now we force tailwind to pickup these styles
-// At some point this should 'just work' though, but let's not worry about it now
-const force = [
-  <p className="w-6 mr-2"/>,
-  <p className="w-8 mr-3"/>
-]
-
 // List of icons matched to top-level slug
 const icons = {
   blog: <RssIcon />,
@@ -32,10 +25,11 @@ const icons = {
 /* helper method to order nav entries */
 const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
 
-
 // Component for the collapse toggle
-const Chevron = ({w=8, m=2}) => <svg
-  className={`fill-current opacity-75 w-${w} h-${w} mr-${m} details-toggle hover:text-secondary-focus`}
+const Chevron = ({w=8, m=2}) => <svg className={`
+    fill-current opacity-75 w-${w} h-${w} mr-${m}
+    details-toggle hover:text-secondary sm:hover:text-secondary-focus
+  `}
   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
   <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
 </svg>
@@ -44,11 +38,13 @@ const Chevron = ({w=8, m=2}) => <svg
 const currentChildren = current => Object.values(order(current))
   .filter(entry => (typeof entry === 'object'))
 
-const howActive = (slug) => {
-}
-
 // Shared classes for links
-const linkClasses = "text-lg text-neutral-content lg:text-xl py-1 hover:cursor-pointer hover:text-secondary-focus bg-opacity-50"
+const linkClasses = `text-lg lg:text-xl
+  py-1 hover:cursor-pointer
+  text-base-content sm:text-neutral-content
+  hover:text-secondary
+  sm:hover:text-secondary-focus
+`
 
 // Figure out whether a page is on the path to the active page
 const isActive = (slug, active) => {
@@ -73,20 +69,28 @@ const SubLevel = ({ nodes={}, active }) => (
             <summary className={`
               flex flex-row
               px-2
-              text-neutral-content
+              text-base-content
+              sm:text-neutral-content
               hover:cursor-row-resize
               items-center
             `}>
               <Link href={`/${child.__slug}`}>
                 <a title={child.__title} className={`
                   grow pl-2 border-l-2
-                  hover:border-secondary-focus
                   ${linkClasses}
-                  ${child.__slug === active ? 'text-secondary-focus border-secondary-focus' : 'text-neutral-content'}
+                  hover:border-secondary
+                  sm:hover:border-secondary-focus
+                  ${child.__slug === active
+                    ? 'text-secondary border-secondary sm:text-secondary-focus sm:border-secondary-focus'
+                    : 'text-base-content sm:text-neutral-content'
+                  }
                 `}>
                   <span className={`
                     text-3xl mr-2 inline-block p-0 leading-3
-                    ${child.__slug === active ? 'text-secondary-focus translate-y-1' : 'translate-y-3' }
+                    ${child.__slug === active
+                      ? 'text-secondary sm:text-secondary-focus translate-y-1'
+                      : 'translate-y-3'
+                    }
                   `}>
                     {child.__slug === active ? <>&bull;</> : <>&deg;</>}
                   </span>
@@ -105,18 +109,25 @@ const SubLevel = ({ nodes={}, active }) => (
           <Link href={`/${child.__slug}`} title={child.__title}>
             <a className={`
               pl-2 border-l-2
-              grow hover:border-secondary-focus
+              grow
               ${linkClasses}
-              ${child.__slug === active ? 'text-secondary-focus border-secondary-focus' : 'text-neutral-content'}
-            `}>
+              hover:border-secondary
+              sm:hover:border-secondary-focus
+              ${child.__slug === active
+                ? 'text-secondary border-secondary sm:text-secondary-focus sm:border-secondary-focus'
+                : 'text-base-content sm:text-neutral-content'
+              }`}>
               <span className={`
                 text-3xl mr-2 inline-block p-0 leading-3
-                ${child.__slug === active ? 'text-secondary-focus translate-y-1' : 'translate-y-3' }
+                ${child.__slug === active
+                  ? 'text-secondary sm:text-secondary-focus translate-y-1'
+                  : 'translate-y-3'
+                }
               `}>
                {child.__slug === active ? <>&bull;</> : <>&deg;</>}
               </span>
               <span className={child.__slug === active ? 'font-bold' : ''}>
-                {child.__linktitle}
+                {child.__linktitle} here
               </span>
             </a>
           </Link>
@@ -134,12 +145,13 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
       flex flex-row uppercase gap-4 font-bold text-lg
       hover:cursor-row-resize
       p-2
-      text-neutral-content
+      text-base-content
+      sm:text-neutral-content
       items-center
     `}>
       <span className="text-secondary-focus">{icon}</span>
       <Link href={`/${slug}`}>
-        <a className={`grow ${linkClasses} ${slug === active ? 'text-secondary-focus' : ''}`}>
+        <a className={`grow ${linkClasses} ${slug === active ? 'text-secondary sm:text-secondary-focus' : ''}`}>
           {title}
         </a>
       </Link>
@@ -163,7 +175,7 @@ const Navigation = ({ app, active }) => {
     active={active}
   />)
 
-  return output
+  return <div className='pb-20'>{output}</div>
 }
 
 const PrimaryMenu = ({ app, active }) => (

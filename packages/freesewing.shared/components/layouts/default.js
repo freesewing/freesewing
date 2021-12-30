@@ -97,8 +97,8 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
           sm:sticky
           overflow-y-scroll
           z-20
-          bg-neutral sm:bg-opacity-95
-          text-neutral-content
+          bg-base-100 text-base-content
+          sm:bg-neutral sm:bg-opacity-95 sm:text-neutral-content
         `}>
           <PrimaryNavigation app={app} active={slug}/>
         </aside>
