@@ -68,7 +68,7 @@ const AppWrapper= props => {
     <Wrapper>
       {props.noLayout
         ? props.children
-        : <Layout {...childProps}><p className={`theme-${props.app.theme}`} data-theme={props.app.theme}>{props.app.theme}</p>{props.children}</Layout>
+        : <Layout {...childProps}>{props.children}</Layout>
       }
     </Wrapper>
   )
