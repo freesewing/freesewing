@@ -1,5 +1,6 @@
 import Logo from 'shared/components/logos/freesewing.js'
 import Link from 'next/link'
+import ThemePicker from 'shared/components/theme-picker.js'
 
 const Right = props => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -17,29 +18,31 @@ const Header = ({ app }) => {
       <header className={`
         bg-neutral
         block
-        sm:hidden
         z-30
       `}>
-        <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
-        <button
-          className={`
-            btn border-base-100 text-base-100 btn-sm border border-transparent bg-transparent
-            hover:border hover:bg-transparent hover:border-base-100
-          `}
-          onClick={app.togglePrimaryMenu}>
-            {app.primaryMenu
-              ? <><Left />&nbsp; Hide menu</>
-              : <>Show menu &nbsp;<Right /></>
-            }
-        </button>
-        <Logo size={32} fill="currentColor" stroke={false} />
-        <Link href="/">
-          <a role="button" className="btn btn-link btn-sm text-neutral-content">
-            freesewing.dev
-          </a>
-        </Link>
+        <div className="max-w-6xl m-auto">
+          <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
+            <button
+              className={`
+                btn border-base-100 text-base-100 btn-sm border border-transparent bg-transparent
+                hover:border hover:bg-transparent hover:border-base-100
+              `}
+              onClick={app.togglePrimaryMenu}>
+                {app.primaryMenu
+                  ? <><Left />&nbsp; Hide menu</>
+                  : <>Show menu &nbsp;<Right /></>
+                }
+            </button>
+            <Logo size={32} fill="currentColor" stroke={false} />
+            <Link href="/">
+              <a role="button" className="btn btn-link btn-sm text-neutral-content">
+                freesewing.dev
+              </a>
+            </Link>
+            <ThemePicker app={app} />
+          </div>
         </div>
-        <div className={`theme-gradient h-2 w-full z-10 relative -mb-2 ${app.loading ? 'loading' : ''}`}></div>
+        <div className={`theme-gradient h-1 w-full z-10 relative -mb-1 ${app.loading ? 'loading' : ''}`}></div>
       </header>
   )
 }

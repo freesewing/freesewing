@@ -74,7 +74,7 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
     flex flex-col justify-between
     min-h-screen
     bg-base-100
-    `} data-theme={app.theme}>
+    `}>
       <Header app={app}/>
       <div className={`
         h-1 w-full theme-gradient ${app.loading ? 'loading' : ''}

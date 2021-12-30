@@ -54,10 +54,15 @@ const AppWrapper= props => {
   //}
 
   return (
-    <div {...swipeHandlers}>
+    <div
+      {...swipeHandlers}
+      data-theme={props.app.theme}
+      key={props.app.theme}
+      className={`theme-${props.app.theme}`}
+    >
       {props.noLayout
         ? props.children
-        : <Layout {...childProps}>{props.children}</Layout>
+        : <Layout {...childProps}><p className={`theme-${props.app.theme}`} data-theme={props.app.theme}>{props.app.theme}</p>{props.children}</Layout>
       }
     </div>
   )
