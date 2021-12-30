@@ -3,7 +3,7 @@ import ThemeIcon from 'shared/components/icons/theme.js'
 
 const ThemePicker = ({ app, className='' }) => {
   return (
-      <div className="dropdown">
+      <div className={`dropdown ${className}`}>
         <div tabIndex="0" className="m-0 btn flex flex-row gap-2 hover:bg-neutral hover:border-neutral-content">
           <ThemeIcon />
           <span>{app.theme}</span>

@@ -149,49 +149,6 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
   </details>
 )
 
-// Component that renders the logo first entry
-const TopLogo = ({ app }) => (
-  <div className={`
-    flex flex-row uppercase gap-4 font-bold text-lg
-    items-center
-    p-2
-    text-neutral-content
-  `}>
-    <Link href='/'>
-      <a className="hover:pointer text-secondary-focus">
-        <Logo size={24} fill='currentColor' stroke={false}/>
-      </a>
-    </Link>
-    <Link href='/'>
-      <a className={`grow ${linkClasses}`}>
-        freesewing.{app.site}
-      </a>
-    </Link>
-  </div>
-)
-
-// Component that renders the theme picker first entry
-const TopTheme = ({ app }) => (
-  <>
-  <div className={`
-    flex flex-row uppercase gap-4 font-bold text-lg
-    items-center
-    p-2
-    text-neutral-content
-  `}>
-    <span className="text-secondary-focus-focus">
-      <ThemeIcon  />
-    </span>
-    <div className={`grow`}>
-      Theme
-    </div>
-  </div>
-  <div className="p-2">
-    <ThemePicker app={app} className="pr-8"/>
-  </div>
-  </>
-)
-
 const Navigation = ({ app, active }) => {
   if (!app.navigation) return null
   const output = []
@@ -211,9 +168,8 @@ const Navigation = ({ app, active }) => {
 
 const PrimaryMenu = ({ app, active }) => (
   <nav className="sm:max-w-lg grow mb-12">
-    <TopLogo app={app}/>
+    <ThemePicker app={app} className="w-full sm:hidden"/>
     <Navigation app={app} active={active} />
-    <TopTheme app={app}/>
   </nav>
 )
 

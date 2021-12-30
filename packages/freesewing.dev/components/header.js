@@ -74,7 +74,9 @@ const Header = ({ app }) => {
                 </a>
               </Link>
             </div>
-            <ThemePicker app={app} />
+            <div className="hidden sm:block">
+              <ThemePicker app={app} />
+            </div>
           </div>
         </div>
         <div className={`theme-gradient h-1 w-full z-10 relative -mb-1 ${app.loading ? 'loading' : ''}`}></div>

@@ -85,8 +85,9 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
         <aside className={`
           fixed top-0 right-0
           ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
-          pt-24
-          sm:pt-4
+          pt-28
+          pb-4 px-2
+          sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32
           sm:relative sm:transform-none
           h-screen w-screen
           bg-base-100
@@ -95,14 +96,16 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
           sm:flex sm:flex-row-reverse
           sm:sticky
           overflow-y-scroll
-          py-4
           z-20
-          bg-neutral bg-opacity-95
+          bg-neutral sm:bg-opacity-95
           text-neutral-content
         `}>
           <PrimaryNavigation app={app} active={slug}/>
         </aside>
-        <section className='max-w-61.8% lg:pt-8 p-4 w-full'>
+        <section className={`
+          max-w-61.8% p-4 pt-24 sm:pt-28 w-full
+          sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32
+        `}>
           <div className="max-w-5xl">
             {title && (
               <>
