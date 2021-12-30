@@ -74,7 +74,7 @@ const loadMarkdownFile = async (page, site, lang) => fs.promises.readFile(
   ? {
     ...((await titleAndIntroFromLocalMarkdown(md, page))),
     sub: [
-      'freesewing.dev',
+      'freesewing.dev/',
       page
     ],
     lead: capitalize(page.split('/').shift())
@@ -165,8 +165,6 @@ const hidePlaceholders = list => {
       .replace(`${i}title_1`, '')
       .replace(`${i}title_2`, '')
       .replace(`${i}title_3`, '')
-      .replace(`${i}intro_1`, '')
-      .replace(`${i}intro_2`, '')
   }
 
   return svg
@@ -179,16 +177,12 @@ const decorateSvg = data => {
   if (data.title.length === 1) {
     svg = hidePlaceholders([2,3])
       .replace(`1title_1`, data.title[0])
-      .replace(`1intro_1`, data.intro[0] || '')
-      .replace(`1intro_2`, data.intro[1] || '')
   }
   // Double title line
   else if (data.title.length === 2) {
     svg = hidePlaceholders([1,3])
       .replace(`2title_1`, data.title[0])
       .replace(`2title_2`, data.title[1])
-      .replace(`2intro_1`, data.intro[0] || '')
-      .replace(`2intro_2`, data.intro[1] || '')
   }
   // Triple title line
   else if (data.title.length === 3) {
@@ -196,14 +190,14 @@ const decorateSvg = data => {
       .replace(`3title_1`, data.title[0])
       .replace(`3title_2`, data.title[1])
       .replace(`3title_3`, data.title[2])
-      .replace(`3intro_1`, data.intro[0] || '')
-      .replace(`3intro_2`, data.intro[1] || '')
   }
 
   return svg
-    .replace('sub_1', data.sub[0])
-    .replace('sub_2', data.sub[1])
-    .replace('lead_1', data.lead)
+    .replace('sub_1', data.sub[0] || '')
+    .replace('sub_2', data.sub[1] || '')
+    .replace(`intro_1`, data.intro[0] || '')
+    .replace(`intro_2`, data.intro[1] || '')
+    .replace('lead_1', data.lead || '')
 }
 
 /* This generates open graph images */
