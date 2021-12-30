@@ -13,6 +13,13 @@ import DocsIcon from 'shared/components/icons/docs.js'
 // Don't show children for blog and showcase posts
 const keepClosed = ['blog', 'showcase', ]
 
+// TODO: For now we force tailwind to pickup these styles
+// At some point this should 'just work' though, but let's not worry about it now
+const force = [
+  <p className="w-6 mr-2"/>,
+  <p className="w-8 mr-3"/>
+]
+
 // List of icons matched to top-level slug
 const icons = {
   blog: <RssIcon />,
