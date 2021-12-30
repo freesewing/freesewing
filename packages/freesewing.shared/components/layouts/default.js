@@ -76,12 +76,6 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
     bg-base-100
     `}>
       <Header app={app}/>
-      <div className={`
-        h-1 w-full theme-gradient ${app.loading ? 'loading' : ''}
-        fixed top-0 right-0 z-40
-        -mt-1
-        hidden sm:block
-      `}></div>
       <main className={`
         grow flex flex-row
         gap-2

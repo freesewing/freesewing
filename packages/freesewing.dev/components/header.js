@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Logo from 'shared/components/logos/freesewing.js'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
@@ -14,18 +15,46 @@ const Left = props => (
 )
 
 const Header = ({ app }) => {
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [show, setShow] = useState(true)
+
+  const handleScroll = () => {
+    const curScrollPos = (typeof window !== 'undefined') ? window.pageYOffset : 0
+    if (curScrollPos >= prevScrollPos) {
+      if (show && curScrollPos > 20) setShow(false)
+    }
+    else setShow(true)
+    setPrevScrollPos(curScrollPos)
+  }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll)
+      return () => window.removeEventListener('scroll', handleScroll)
+    }
+  }, [prevScrollPos, show, handleScroll])
+
+
   return (
       <header className={`
+        fixed top-0 left-0
         bg-neutral
-        block
+        w-full
         z-30
+        transition-transform
+        ${show ? '': 'fixed top-0 left-0 -translate-y-20'}
       `}>
         <div className="max-w-6xl m-auto">
           <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
             <button
               className={`
-                btn border-base-100 text-base-100 btn-sm border border-transparent bg-transparent
-                hover:border hover:bg-transparent hover:border-base-100
+                btn btn-sm
+                text-base-100 bg-transparent
+                border border-transparent
+                hover:bg-transparent hover:border-base-100
+                sm:hidden
+                h-12
               `}
               onClick={app.togglePrimaryMenu}>
                 {app.primaryMenu
@@ -33,12 +62,18 @@ const Header = ({ app }) => {
                   : <>Show menu &nbsp;<Right /></>
                 }
             </button>
-            <Logo size={32} fill="currentColor" stroke={false} />
-            <Link href="/">
-              <a role="button" className="btn btn-link btn-sm text-neutral-content">
-                freesewing.dev
-              </a>
-            </Link>
+            <div className="flex flex-row gap-2">
+              <Link href="/">
+                <a className="flex flex-column items-center">
+                  <Logo size={36} fill="currentColor" stroke={false} />
+                </a>
+              </Link>
+              <Link href="/">
+                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12">
+                  freesewing.dev
+                </a>
+              </Link>
+            </div>
             <ThemePicker app={app} />
           </div>
         </div>
