@@ -27,18 +27,52 @@ const MdxPage = props => {
         <meta property="og:type" content="article" key='type' />
         <meta property="og:description" content={props.intro} key='type' />
         <meta property="og:article:author" content='Joost De Cock' key='author' />
+        <meta property="og:image" content={`https://canary.backend.freesewing.org/en/dev/${props.page.slug}`} key='image' />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content={`https://canary.freesewing.dev/${props.page.slug}`} key='url' />
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
       <MdxWrapper mdx={props.mdx} app={app}/>
-      <Popout tip className='max-w-prose'>
-        <h6>Found a mistake?</h6>
-        You can <a
-          href={`https://github.com/freesewing/freesewing/edit/develop/markdown/dev/${props.page.slug}/en.md`}
-          className="text-secondary font-bold"
-        >edit this page on Github</a> and help us improve our documentation.
-      </Popout>
+      <details className="mt-4">
+        <summary>Click here to learn how you can help us improve this page</summary>
+        <Popout tip className='max-w-prose'>
+          <h6>Found a mistake?</h6>
+          You can <a
+            href={`https://github.com/freesewing/freesewing/edit/develop/markdown/dev/${props.page.slug}/en.md`}
+            className="text-secondary font-bold"
+          >edit this page on Github</a> and help us improve our documentation.
+        </Popout>
+        <Popout comment by="joost" className='max-w-prose'>
+          <h6>Does this look ok?</h6>
+          <img className="my-4 rounded" src={`https://canary.backend.freesewing.org/og-img/en/dev/${props.page.slug}`} />
+          <p>
+            I recently added a backend endpoint to auto-generate pretty (I hope) Open Graph images.
+            They are those little preview images you see when you paste a link in Discord (for example).
+          </p>
+          <p>
+            This idea is that it will auto-generate an image, but I am certain there are some edge cases
+            where that will not work.
+            There are hundreds of pages on this website and checking them all one by one is not something
+            I see myself doing. But since you are here on this page, perhaps you could see if the image
+            above looks ok.
+          </p>
+          <p>If it does look ok, then Yay! that is great and no need to do anything.</p>
+          <p>
+            If it is not ok, please let me know about it.
+            Either by <a href="https://discord.freesewing.org/" className="text-secondary">
+              reaching out on Discord
+            </a> or feel free to <a
+              href="https://github.com/freesewing/freesewing/issues/new/choose"
+              className="text-secondary"
+            >create
+            an issue on Github</a>.
+          </p>
+          <p>Thank you, I really appreciate your help with this.</p>
+        </Popout>
+      </details>
     </Page>
   )
 }

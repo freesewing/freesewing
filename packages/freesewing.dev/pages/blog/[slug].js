@@ -6,6 +6,7 @@ import TimeAgo from 'react-timeago'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import Markdown from 'react-markdown'
 import Head from 'next/head'
+import Popout from 'shared/components/popout.js'
 
 const strapi = "https://posts.freesewing.org"
 
@@ -58,10 +59,10 @@ console.log(post)
         <meta property="og:description" content={post.intro || post.title} key='description' />
         <meta property="og:article:author" content={author.displayname} key='author' />
         <meta property="og:url" content={`https://canary.freesewing.dev/blog/${post.slug}`} key='url' />
-        <meta property="og:image" content={`${strapi}${post.image.formats.large.url}`} key='image' />
-        <meta property="og:image:type" content={post.image.mime} key='image' />
-        <meta property="og:image:width" content={post.image.width} key='image' />
-        <meta property="og:image:height" content={post.image.height} key='image' />
+        <meta property="og:image" content={`https://canary.backend.freesewing.org/en/dev/blog/${post.slug}`} key='image' />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
@@ -94,6 +95,36 @@ console.log(post)
         <div className="max-w-prose text-lg lg:text-xl">
           <Author author={author} />
         </div>
+      <details className="mt-4">
+        <summary>Click here to learn how you can help us improve this page</summary>
+        <Popout comment by="joost" className='max-w-prose'>
+          <h6>Does this look ok?</h6>
+          <img className="my-4 rounded" src={`https://canary.backend.freesewing.org/og-img/en/dev/blog/${post.slug}`} />
+          <p>
+            I recently added a backend endpoint to auto-generate pretty (I hope) Open Graph images.
+            They are those little preview images you see when you paste a link in Discord (for example).
+          </p>
+          <p>
+            This idea is that it will auto-generate an image, but I am certain there are some edge cases
+            where that will not work.
+            There are hundreds of pages on this website and checking them all one by one is not something
+            I see myself doing. But since you are here on this page, perhaps you could see if the image
+            above looks ok.
+          </p>
+          <p>If it does look ok, then Yay! that is great and no need to do anything.</p>
+          <p>
+            If it is not ok, please let me know about it.
+            Either by <a href="https://discord.freesewing.org/" className="text-secondary">
+              reaching out on Discord
+            </a> or feel free to <a
+              href="https://github.com/freesewing/freesewing/issues/new/choose"
+              className="text-secondary"
+            >create
+            an issue on Github</a>.
+          </p>
+          <p>Thank you, I really appreciate your help with this.</p>
+        </Popout>
+      </details>
       </article>
     </Page>
   )
