@@ -57,7 +57,7 @@ const BlogIndexPage = (props) => {
         <meta property="og:type" content="article" key='type' />
         <meta property="og:description" content="Content for developers and contributors alike. Strictly no sewing stuff" key='type' />
         <meta property="og:article:author" content='Joost De Cock' key='author' />
-        <meta property="og:image" content="https://canary.backend.freesewing.org/en/dev/blog" key='image' />
+        <meta property="og:image" content="https://canary.backend.freesewing.org/og-img/en/dev/blog" key='image' />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />

@@ -58,8 +58,8 @@ const PostPage = ({ post, author }) => {
         <meta property="og:type" content="article" key='type' />
         <meta property="og:description" content={post.intro || post.title} key='description' />
         <meta property="og:article:author" content={author.displayname} key='author' />
-        <meta property="og:url" content={`https://canary.freesewing.dev/blog/${post.slug}`} key='url' />
-        <meta property="og:image" content={`https://canary.backend.freesewing.org/en/dev/blog/${post.slug}`} key='image' />
+        <meta property="og:url" content={`https://freesewing.dev/blog/${post.slug}`} key='url' />
+        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/en/dev/blog/${post.slug}`} key='image' />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
