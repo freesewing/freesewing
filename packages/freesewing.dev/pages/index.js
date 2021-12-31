@@ -1,6 +1,7 @@
 import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Logo from 'shared/components/logos/freesewing.js'
+import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import Link from 'next/link'
 
@@ -8,6 +9,19 @@ const HomePage = (props) => {
   const app = useApp()
   return (
     <Page app={app} title="Welcome to FreeSewing.dev">
+      <Head>
+        <meta property="og:title" content="FreeSewing.dev" key="title" />
+        <meta property="og:type" content="article" key='type' />
+        <meta property="og:description" content="Documentation and tutorials for FreeSewing developers and contributors. Plus our Developers Blog" key='type' />
+        <meta property="og:article:author" content='Joost De Cock' key='author' />
+        <meta property="og:image" content="https://canary.backend.freesewing.org/en/dev/" key='image' />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://freesewing.dev/" key='url' />
+        <meta property="og:locale" content="en_US" key='locale' />
+        <meta property="og:site_name" content="freesewing.dev" key='site' />
+      </Head>
       <div className="max-w-screen-md">
         <p>
           FreeSewing.dev hosts documentation for contributors and developers alike.
