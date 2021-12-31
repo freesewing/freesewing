@@ -8,6 +8,7 @@ import get from 'lodash.get'
 // Site components
 import Header from 'site/components/header'
 import Footer from 'site/components/footer'
+import Search from 'site/components/search'
 
 const iconSize= 48
 
@@ -59,7 +60,7 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
 }
 
 
-const DefaultLayout = ({ app, title=false, children=[]}) => {
+const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
 
   const router = useRouter()
   router?.events?.on('routeChangeStart', () => app.startLoading())
@@ -117,6 +118,11 @@ const DefaultLayout = ({ app, title=false, children=[]}) => {
           </div>
         </section>
       </main>
+      {search && (
+        <div className={`fixed w-full min-h-screen bg-base-200 px-4 lg:py-24 top-0 z-20`}>
+          <Search app={app} search={search} setSearch={setSearch}/>
+        </div>
+      )}
       <Footer app={app} />
     </div>
   )

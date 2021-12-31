@@ -21,8 +21,10 @@ import yaml from 'js-yaml'
  *
  *  - folder: the root folder to look in
  *  - lang: the language files to looks for
+ *
+ *  Exported because it's also used by the Algolia index script
  */
-const getMdxFileList = async (folder, lang) => {
+export const getMdxFileList = async (folder, lang) => {
   let allFiles
   try {
     allFiles = await rdir(folder)

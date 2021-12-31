@@ -35,8 +35,9 @@ const buildUrl = (type, site, lang) => (type === 'blog')
 
 /*
  * Helper method to load posts from Strapi
+ * Exported because it's re-used by the Algolia indexing script
  */
-const getPosts = async (type, site, lang) => {
+export const getPosts = async (type, site, lang) => {
   let res
   try {
     res = await axios.get(buildUrl(type, site, lang))
