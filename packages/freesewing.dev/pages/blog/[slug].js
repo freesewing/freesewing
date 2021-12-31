@@ -50,7 +50,7 @@ const Author = ({ author }) => (
 
 const PostPage = ({ post, author }) => {
   const app = useApp()
-console.log(post)
+
   return (
     <Page app={app} title={post.title}>
       <Head>
