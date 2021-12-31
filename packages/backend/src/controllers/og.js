@@ -125,10 +125,11 @@ const getMetaData = {
     const data = {}
     const chunks = page.split('/')
     // Home page
-    if (chunks.length === 0) return {
-      title: 'FreeSewing FIXME',
-      intro: "FreeSewing's fixme",
-      sub: ['freesewing.dev', '/fixme'],
+    if (chunks.length === 1 && chunks[0] === '') return {
+      title: ['FreeSewing.dev'],
+      intro: introAsLines('FreeSewing API documentation and tutorials for developers and contributors'),
+      sub: ['Also featuring', ' our developers blog'],
+      lead: '.dev',
     }
     // Blog index page
     if (chunks.length === 1 && chunks[0] === 'blog') return {
