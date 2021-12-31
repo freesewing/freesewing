@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import Logo from 'shared/components/logos/freesewing.js'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
+import CloseIcon from 'shared/components/icons/close.js'
+import MenuIcon from 'shared/components/icons/menu.js'
+import SearchIcon from 'shared/components/icons/search.js'
 
 const Right = props => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -14,7 +17,7 @@ const Left = props => (
 </svg>
 )
 
-const Header = ({ app }) => {
+const Header = ({ app, setSearch }) => {
 
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [show, setShow] = useState(true)
@@ -50,7 +53,7 @@ const Header = ({ app }) => {
             <button
               className={`
                 btn btn-sm
-                text-base-100 bg-transparent
+                text-neutral-content bg-transparent
                 border border-transparent
                 hover:bg-transparent hover:border-base-100
                 sm:hidden
@@ -58,11 +61,30 @@ const Header = ({ app }) => {
               `}
               onClick={app.togglePrimaryMenu}>
                 {app.primaryMenu
-                  ? <><Left />&nbsp; Hide menu</>
-                  : <>Show menu &nbsp;<Right /></>
+                  ? <><CloseIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Left />swipe</span></>
+                  : <><MenuIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Right />swipe</span></>
                 }
             </button>
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row gap-2 sm:hidden">
+              <button className="btn btn-sm btn h-12 px-12" onClick={() => setSearch(true)}>
+                <SearchIcon />
+              </button>
+            </div>
+            <button className={`
+              btn btn-sm h-12
+              hidden sm:flex
+              flex-row gap-1 mr-4 w-64 px-2
+              bg-base-100 text-base-content
+              hover:bg-base-100 hover:text-base-content
+              justify-between
+            `} onClick={() => setSearch(true)}>
+              <div className="flex flex-row items-center gap-2">
+              <SearchIcon />
+              <span className="normal-case font-normal">Quick Search...</span>
+              </div>
+              <span className="normal-case">Ctrl K</span>
+            </button>
+            <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">
                 <a className="flex flex-column items-center">
                   <Logo size={36} fill="currentColor" stroke={false} />
@@ -74,7 +96,7 @@ const Header = ({ app }) => {
                 </a>
               </Link>
             </div>
-            <div className="hidden sm:block">
+            <div className="hidden sm:flex flex-row items-center">
               <ThemePicker app={app} />
             </div>
           </div>

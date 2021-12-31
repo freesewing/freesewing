@@ -76,7 +76,7 @@ const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
     min-h-screen
     bg-base-100
     `}>
-      <Header app={app}/>
+      <Header app={app} setSearch={setSearch} />
       <main className={`
         grow flex flex-row
         gap-2
@@ -119,9 +119,18 @@ const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
         </section>
       </main>
       {search && (
-        <div className={`fixed w-full min-h-screen bg-base-200 px-4 lg:py-24 top-0 z-20`}>
+        <>
+        <div className={`
+          fixed w-full max-h-screen bg-base-100 top-0 z-30 pt-0 pb-16 px-8
+          sm:rounded-lg sm:top-24
+          sm:max-w-xl sm:m-auto sm:inset-x-12
+          md:max-w-2xl
+          lg:max-w-4xl
+        `}>
           <Search app={app} search={search} setSearch={setSearch}/>
         </div>
+        <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
+        </>
       )}
       <Footer app={app} />
     </div>

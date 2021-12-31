@@ -134,7 +134,7 @@ const SubLevel = ({ nodes={}, active }) => (
                {child.__slug === active ? <>&bull;</> : <>&deg;</>}
               </span>
               <span className={child.__slug === active ? 'font-bold' : ''}>
-                {child.__linktitle} here
+                {child.__linktitle}
               </span>
             </a>
           </Link>
