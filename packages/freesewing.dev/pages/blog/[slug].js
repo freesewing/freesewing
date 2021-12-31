@@ -6,7 +6,7 @@ import TimeAgo from 'react-timeago'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import Markdown from 'react-markdown'
 import Head from 'next/head'
-import Popout from 'shared/components/popout.js'
+import HelpUs from 'site/components/help-us.js'
 
 const strapi = "https://posts.freesewing.org"
 
@@ -95,36 +95,7 @@ const PostPage = ({ post, author }) => {
         <div className="max-w-prose text-lg lg:text-xl">
           <Author author={author} />
         </div>
-      <details className="mt-4">
-        <summary>Click here to learn how you can help us improve this page</summary>
-        <Popout comment by="joost" className='max-w-prose'>
-          <h6>Does this look ok?</h6>
-          <img className="my-4 rounded" src={`https://canary.backend.freesewing.org/og-img/en/dev/blog/${post.slug}`} />
-          <p>
-            I recently added a backend endpoint to auto-generate pretty (I hope) Open Graph images.
-            They are those little preview images you see when you paste a link in Discord (for example).
-          </p>
-          <p>
-            This idea is that it will auto-generate an image, but I am certain there are some edge cases
-            where that will not work.
-            There are hundreds of pages on this website and checking them all one by one is not something
-            I see myself doing. But since you are here on this page, perhaps you could see if the image
-            above looks ok.
-          </p>
-          <p>If it does look ok, then Yay! that is great and no need to do anything.</p>
-          <p>
-            If it is not ok, please let me know about it.
-            Either by <a href="https://discord.freesewing.org/" className="text-secondary">
-              reaching out on Discord
-            </a> or feel free to <a
-              href="https://github.com/freesewing/freesewing/issues/new/choose"
-              className="text-secondary"
-            >create
-            an issue on Github</a>.
-          </p>
-          <p>Thank you, I really appreciate your help with this.</p>
-        </Popout>
-      </details>
+        <HelpUs blog slug={`/blog/${post.slug}`} />
       </article>
     </Page>
   )
@@ -137,7 +108,6 @@ const PostPage = ({ post, author }) => {
         </div>
       </article>
       <Author author={author} type={props.type} t={props.t}/>
-      <pre>{JSON.stringify(props, null, 2)}</pre>
     </Page>
   )
 }

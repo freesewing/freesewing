@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { posts } from 'site/prebuild/strapi.blog.en.js'
 import orderBy from 'lodash.orderby'
 import TimeAgo from 'react-timeago'
+import HelpUs from 'site/components/help-us.js'
 
 const strapi = "https://posts.freesewing.org"
 
@@ -55,6 +56,7 @@ const BlogIndexPage = (props) => {
           .map(post => <Preview app={app} post={post} key={post.slug}/>)
         }
       </div>
+      <HelpUs slug='/blog' />
     </Page>
   )
 }
