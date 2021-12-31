@@ -53,24 +53,18 @@ const AppWrapper= props => {
   //  locale, languages: config.languages,
   //}
 
-  // Cannot understand why, but a re-render does update the content
-  // but not the attributes. So this is a hackish workaround
-  const themeWrappers = {
-    light: props => <div {...props} data-theme="light" />,
-    dark: props => <div {...props} data-theme="dark" />,
-    hax0r: props => <div {...props} data-theme="hax0r" />,
-    lgbtq: props => <div {...props} data-theme="lgbtq" />,
-    trans: props => <div {...props} data-theme="trans" />,
-  }
-  const Wrapper = themeWrappers[props.app.theme]
 
   return (
-    <Wrapper>
+    <div
+      {...swipeHandlers}
+      data-theme={props.app.theme}
+      key={props.app.theme+Date.now()} // Thiis forces the data-theme update
+    >
       {props.noLayout
         ? props.children
         : <Layout {...childProps}>{props.children}</Layout>
       }
-    </Wrapper>
+    </div>
   )
 }
 
