@@ -1,7 +1,7 @@
 import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Logo from 'shared/components/logos/freesewing.js'
-import Popout from 'shared/components/popout.js'
+import HelpUs from 'site/components/help-us.js'
 import Link from 'next/link'
 
 const HomePage = (props) => {
@@ -100,25 +100,7 @@ const HomePage = (props) => {
           </p>
           <a role="button" className="btn btn-accent btn-wide ml-4 mb-8" href="https://freesewing.org/patrons/join">Become a Patron</a>
         </div>
-        <Popout comment by="joost">
-          <p>
-            This is a work in progress to build a new freesewing.dev website.
-            <br />
-            It remains a work in progress, although I feel we&apos;re getting there
-            and I kinda wish to push this in production before the end of 2021.
-          </p>
-          <p>
-            I appreciate your feedback. <a className='text-secondary' href="https://discord.freesewing.org/">Join
-            us on Discord</a> to rant/rave.
-          </p>
-          <h5>Todo</h5>
-          <ul className="ml-8 my-2 list-disc">
-            <li>Create a proper start page (homepage)</li>
-            <li>Integrate with Algolia search</li>
-            <li>Build search UI</li>
-            <li>Configure automatic builds on Netlify</li>
-          </ul>
-        </Popout>
+        <HelpUs slug='/' />
       </div>
     </Page>
   )
