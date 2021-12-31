@@ -15,8 +15,8 @@ module.exports = {
   'accent-focus': colors.pink['400'],
   'accent-content': colors.pink['50'],
 
-  'neutral': colors.neutral['800'],
-  'neutral-focus': colors.neutral['50'],
+  'neutral': '#000000', // Dark as my soul
+  'neutral-focus': colors.neutral['800'],
   'neutral-content': colors.neutral['50'],
 
   'base-100': colors.neutral['900'],
@@ -74,11 +74,29 @@ module.exports = {
   '--pattern-contrast': colors.pink['600'],
   '--pattern-note': colors.violet['600'],
 
-  '--pattern-scale': 1,
-  '--pattern-stroke-xs': "0.2",
-  '--pattern-stroke-sm': "0.4",
-  '--pattern-stroke': "0.7",
-  '--pattern-stroke-lg': "1.3",
-  '--pattern-stroke-xl': "2",
-  '--pattern-stroke-xxl': "4",
+  '--pattern-dev-0': colors.red['500'],
+  '--pattern-dev-1': colors.green['500'],
+  '--pattern-dev-2': colors.blue['500'],
+  '--pattern-dev-3': colors.yellow['500'],
+  '--pattern-dev-4': colors.pink['500'],
+  '--pattern-dev-5': colors.violet['500'],
+  '--pattern-dev-6': colors.teal['500'],
+  '--pattern-dev-7': colors.neutral['500'],
+
+  '--pattern-text-xs': '0.2rem',
+  '--pattern-text-sm': '0.3rem',
+  '--pattern-text': '0.4rem',
+  '--pattern-text-lg': '0.6rem',
+  '--pattern-text-xl': '0.8rem',
+  '--pattern-text-2xl': '1.5rem',
+  '--pattern-text-3xl': '2rem',
+  '--pattern-text-4xl': '3rem',
+
+  '--pattern-scale': '1',
+  '--pattern-stroke-xs': "0.2px",
+  '--pattern-stroke-sm': "0.4px",
+  '--pattern-stroke': "0.7px",
+  '--pattern-stroke-lg': "1.3px",
+  '--pattern-stroke-xl': "2px",
+  '--pattern-stroke-2xl': "4px",
 }

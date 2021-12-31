@@ -2,11 +2,11 @@
  * This is a theme file for FreeSewing's NextJS-based website
  *
  * You can change colors, fonts, and a few other things here.
- * While technically, you can change more, it's really not recommended.
+ * While technically, you can change more, it is not recommended.
  * Best to stick to the examples in this light theme
  *
  * If you want to make your own theme, copy this file to a new name.
- * Update ../index.js to include it, and you're good to go.
+ * Then update the index.js to include it, and you're good to go.
  */
 
 /*
@@ -17,13 +17,13 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-
   /* FONTS
   *
   * This will apply to everything except code blocks
+  * Note that we're using a system font stack here.
+  * That means we're not loading any fonts in the browser,
+  * but rather relying on what the user has available locally.
   */
-
-  // fontFamily: The font family to use.
   'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
   /* COLORS
@@ -37,28 +37,28 @@ module.exports = {
   * Read the descriptions below to understand what each color is used for.
   */
 
-  // base-100: The default background color
+  // base-100: The default background color for a regular page (docs and so on)
   'base-100': colors.neutral['50'],
-  // base-200: A slightly different background color, used for hovers and so on
+  // base-200: A slightly darker background color, used for hovers and so on
   'base-200': colors.neutral['200'],
   // base-300: A shade midway between dark and light
   'base-300': colors.neutral['400'],
-  // base-content: The default text color
+  // base-content: The default text color for a regular page (docs and so on)
   'base-content': colors.neutral['700'],
 
   // primary: The main brand color and color of the primary button
   'primary': colors.violet['700'],
   // primary-focus: The :hover color for the primary button
   'primary-focus': colors.violet['600'],
-  // primary-content: The text color for the primary button
+  // primary-content: The text color on a primary button
   'primary-content': colors.neutral['50'],
 
-  // secondary: The link color
+  // secondary: The link color on default backgrounds (base-100)
   'secondary': colors.sky['500'],
-  // secondary: The :hover link color
+  // secondary-focus: The :hover link color for default backgrounds. Or:
+  // secondary-focus: An alternative link color for on dark backgrounds
   'secondary-focus': colors.sky['400'],
-  // secondary: An alternative link color for on dark backgrounds
-  // Typically a light shade of the secondary color
+  // secondary-content: The text color on a secondary button
   'secondary-content': colors.sky['50'],
 
   // accent: The accent color is used to highlight active things
@@ -69,8 +69,8 @@ module.exports = {
   // accent-content: The text color for the accent button
   'accent-content': colors.pink['50'],
 
-  // neutral: Used as the background for the footer and code blocks.
-  // Should always be dark(ish) because of prism syntax highlighting
+  // neutral: Used as the background for the footer and navigation on desktop
+  // Should always be dark
   'neutral': colors.neutral['900'],
   // neutral-focus: Typically a shade lighter than neutral
   'neutral-focus': colors.neutral['700'],
@@ -103,7 +103,6 @@ module.exports = {
   *
   * These are additional variables to control other aspects of the theme
   */
-
   // border-radius for cards and other big elements
   '--rounded-box': '0.5rem',
   // border-radius for buttons and similar elements
@@ -176,7 +175,6 @@ module.exports = {
   *
   * These are variables to style FreeSewing SVG output (drafts, examples, and so on)
   */
-
   // Pattern background color
   '--pattern-bg': colors.neutral['50'],
   // Color for the main fabric
@@ -244,5 +242,4 @@ module.exports = {
   '--pattern-stroke-xl': "2px",
   // Pattern xxl stroke width
   '--pattern-stroke-2xl': "4px",
-
 }

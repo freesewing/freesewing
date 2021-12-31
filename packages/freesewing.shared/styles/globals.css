@@ -16,10 +16,11 @@
   p { @apply text-base-content my-1 py-2 lg:text-xl }
 
   /* mdx styles */
-  .mdx a { @apply text-secondary }
-  .mdx a:hover { @apply text-secondary-focus }
-  .mdx p > code { @apply text-info px-1 rounded-lg }
+  .mdx a { @apply text-secondary underline decoration-1 }
+  .mdx a:hover { @apply text-secondary-focus decoration-2 decoration-current }
   .mdx ul { @apply pl-4 list-disc list-inside text-base-content }
+  .mdx code { @apply bg-base-200 px-2 py-0.5 rounded }
+  .mdx pre code { @apply bg-inherit }
 
   /* FreeSewing SVG output styles */
   .fs-stroke-fabric      { stroke: var(--pattern-fabric); }

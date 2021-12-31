@@ -8,14 +8,14 @@ module.exports = {
   'primary-content': colors.lime['50'],
 
   'secondary': colors.lime['400'],
-  'secondary-focus': colors.lime['300'],
+  'secondary-focus': colors.lime['500'],
   'secondary-content': bg,
 
   'accent': colors.lime['700'],
   'accent-focus': colors.lime['600'],
   'accent-content': colors.yellow['200'],
 
-  'neutral': colors.lime['700'],
+  'neutral': '#001c06', // Even darker
   'neutral-focus': colors.lime['600'],
   'neutral-content': colors.lime['200'],
 
@@ -83,11 +83,29 @@ module.exports = {
   '--pattern-contrast': colors.pink['500'],
   '--pattern-note': colors.violet['500'],
 
-  '--pattern-scale': 1,
-  '--pattern-stroke-xs': "0.2",
-  '--pattern-stroke-sm': "0.4",
-  '--pattern-stroke': "0.7",
-  '--pattern-stroke-lg': "1.3",
-  '--pattern-stroke-xl': "2",
-  '--pattern-stroke-xxl': "4",
+  '--pattern-dev-0': colors.red['500'],
+  '--pattern-dev-1': colors.green['500'],
+  '--pattern-dev-2': colors.blue['500'],
+  '--pattern-dev-3': colors.yellow['500'],
+  '--pattern-dev-4': colors.pink['500'],
+  '--pattern-dev-5': colors.violet['500'],
+  '--pattern-dev-6': colors.teal['500'],
+  '--pattern-dev-7': colors.neutral['500'],
+
+  '--pattern-text-xs': '0.2rem',
+  '--pattern-text-sm': '0.3rem',
+  '--pattern-text': '0.4rem',
+  '--pattern-text-lg': '0.6rem',
+  '--pattern-text-xl': '0.8rem',
+  '--pattern-text-2xl': '1.5rem',
+  '--pattern-text-3xl': '2rem',
+  '--pattern-text-4xl': '3rem',
+
+  '--pattern-scale': '1',
+  '--pattern-stroke-xs': "0.2px",
+  '--pattern-stroke-sm': "0.4px",
+  '--pattern-stroke': "0.7px",
+  '--pattern-stroke-lg': "1.3px",
+  '--pattern-stroke-xl': "2px",
+  '--pattern-stroke-2xl': "4px",
 }
