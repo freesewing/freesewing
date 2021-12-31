@@ -108,7 +108,7 @@ const Footer = ({ app }) => (
     </p>
     <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
       {contributors.map(person => (
-        <a title={person.name} href={person.profile} className="m-auto" key={person.name}>
+        <a title={person.name} href={person.profile} className="m-auto" key={person.profile+person.name}>
           <img
             src={person.avatar_url} alt={`Avatar of ${person.name}`}
             className="w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-secondary hover:border-accent"
@@ -128,7 +128,7 @@ const Footer = ({ app }) => (
           title={person.name}
           href={`https://freesewing.org/users/${person.username}`}
           className="m-auto"
-          key={person.name}
+          key={person.username}
         >
           <img
             src={person.img}

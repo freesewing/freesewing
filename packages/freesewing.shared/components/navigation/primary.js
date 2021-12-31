@@ -112,7 +112,7 @@ const SubLevel = ({ nodes={}, active }) => (
           </details>
         </li>
       ) : (
-        <li className='pl-2 flex flex-row items-center'>
+        <li className='pl-2 flex flex-row items-center' key={child.__slug}>
           <Link href={`/${child.__slug}`} title={child.__title}>
             <a className={`
               pl-2 border-l-2
@@ -172,10 +172,10 @@ const Navigation = ({ app, active }) => {
   if (!app.navigation) return null
   const output = []
   for (const key of Object.keys(app.navigation).sort()) output.push(<TopLevel
+    key={key}
     icon={icons[key] || <span className="text-3xl mr-2 translate-y-3 inline-block p-0 leading-3">&deg;</span>}
     title={key}
     slug={key}
-    key={key}
     hasChildren={keepClosed.indexOf(key) === -1}
     nav={app.navigation}
     current={order(app.navigation[key])}
