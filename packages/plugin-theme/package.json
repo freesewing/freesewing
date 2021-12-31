@@ -29,7 +29,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "rollup -c",
-    "lernabuild": "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js && rollup -c",
+    "cibuild_step1": "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js && rollup -c",
     "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
