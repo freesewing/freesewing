@@ -19,6 +19,7 @@ const Hits = props => {
 
   return props.hits.map((hit, index) => (
     <Hit
+      key={hit.page}
       {...props}
       hit={hit}
       index={index}
