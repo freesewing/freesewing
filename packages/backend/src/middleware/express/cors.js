@@ -1,5 +1,5 @@
-import cors from "cors";
+import cors from 'cors'
 
-export default (app) => {
-  app.use(cors());
+export default app => {
+  app.use(cors())
 }

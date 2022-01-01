@@ -1,9 +1,5 @@
 const goodbye = {
-  i18n: [
-    "goodbyeTitle",
-    "goodbyeCopy1",
-    "signature",
-  ],
+  i18n: ['goodbyeTitle', 'goodbyeCopy1', 'signature'],
   html: `<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td bgcolor="#ffffff" align="center" style="padding: 10px 15px 40px 15px;" class="section-padding">
@@ -44,6 +40,6 @@ const goodbye = {
   text: `__goodbyeTitle__
 
 __goodbyeCopy1__`
-};
+}
 
-export default goodbye;
+export default goodbye

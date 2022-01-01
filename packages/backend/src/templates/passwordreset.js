@@ -1,10 +1,10 @@
 const passwordreset = {
   i18n: [
-    "passwordresetTitle",
-    "passwordresetCopy1",
-    "passwordresetActionText",
-    "questionsJustReply",
-    "signature",
+    'passwordresetTitle',
+    'passwordresetCopy1',
+    'passwordresetActionText',
+    'questionsJustReply',
+    'signature'
   ],
   html: `<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
@@ -72,6 +72,6 @@ __passwordresetCopy1__
 __passwordresetActionLink__
 
 __questionsJustReply__`
-};
+}
 
-export default passwordreset;
+export default passwordreset

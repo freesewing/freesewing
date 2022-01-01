@@ -1,3 +1,3 @@
-import jwt from "./jwt";
+import jwt from './jwt'
 
 export default { jwt }

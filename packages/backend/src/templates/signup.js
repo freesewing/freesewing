@@ -1,11 +1,5 @@
 const signup = {
-  i18n: [
-    "signupTitle",
-    "signupCopy1",
-    "signupActionText",
-    "questionsJustReply",
-    "signature",
-  ],
+  i18n: ['signupTitle', 'signupCopy1', 'signupActionText', 'questionsJustReply', 'signature'],
   html: `<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td bgcolor="#ffffff" align="center" style="padding: 10px 15px 40px 15px;" class="section-padding">
@@ -72,6 +66,6 @@ __signupCopy1__
 __signupActionLink__
 
 __questionsJustReply__`
-};
+}
 
-export default signup;
+export default signup

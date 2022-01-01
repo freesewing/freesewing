@@ -1,10 +1,10 @@
 const emailchange = {
   i18n: [
-    "emailchangeTitle",
-    "emailchangeCopy1",
-    "emailchangeActionText",
-    "questionsJustReply",
-    "signature",
+    'email.emailchangeTitle',
+    'email.emailchangeCopy1',
+    'email.emailchangeActionText',
+    'email.questionsJustReply',
+    'email.signature'
   ],
   html: `<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
@@ -72,6 +72,6 @@ __emailchangeCopy1__
 __emailchangeActionLink__
 
 __questionsJustReply__`
-};
+}
 
-export default emailchange;
+export default emailchange

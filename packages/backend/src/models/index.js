@@ -1,12 +1,11 @@
-import mongoose from "mongoose";
-import CommentModel from "./comment";
-import ConfirmationModel from "./confirmation";
-import ModelModel from "./model";
-import UserModel from "./user";
-import DraftModel from "./draft";
+import ConfirmationModel from './confirmation'
+import PersonModel from './person'
+import UserModel from './user'
+import PatternModel from './pattern'
+import NewsletterModel from './newsletter'
 
-export const Comment = CommentModel;
-export const Confirmation = ConfirmationModel;
-export const Model = ModelModel;
-export const User = UserModel;
-export const Draft = DraftModel;
+export const Confirmation = ConfirmationModel
+export const Person = PersonModel
+export const User = UserModel
+export const Pattern = PatternModel
+export const Newsletter = NewsletterModel

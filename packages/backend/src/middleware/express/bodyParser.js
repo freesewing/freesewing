@@ -1,6 +1,6 @@
-import bodyParser from "body-parser";
+import bodyParser from 'body-parser'
 
-export default (app) => {
-  app.use(bodyParser.json({ limit: '20mb' }));
-  app.use(bodyParser.urlencoded({ extended: true }));
+export default app => {
+  app.use(bodyParser.json({ limit: '20mb' }))
+  app.use(bodyParser.urlencoded({ extended: true }))
 }
