@@ -1,4 +1,9 @@
-module.exports = {
+// Load environment variables
+import dotenv from 'dotenv'
+dotenv.config()
+
+// Construct config object
+const config = {
   api: process.env.FS_BACKEND,
   website: {
     domain: 'freesewing.org',
@@ -25,32 +30,31 @@ module.exports = {
   },
   jwt: {
     secretOrKey: process.env.FS_ENC_KEY,
-    issuer: 'freesewing.org',
-    audience: 'freesewing.org',
-    expiresIn: '36 days'
+    issuer: process.env.FS_JWT_ISSUER,
+    audience: process.env.FS_JWT_ISSUER,
+    expiresIn: "36 days",
+
   },
-  languages: ['en', 'de', 'es', 'fr', 'nl'],
-  sendEmailWith: 'smtp',
-  sendgrid: process.env.FS_SENDGRID_API_KEY,
+  languages: ["en", "de", "es", "fr", "nl"],
   smtp: {
     host: process.env.FS_SMTP_HOST,
-    port: process.env.FS_SMTP_PORT,
     user: process.env.FS_SMTP_USER,
-    pass: process.env.FS_SMTP_PASS
+    pass: process.env.FS_SMTP_PASS,
+
   },
   oauth: {
     github: {
       clientId: process.env.FS_GITHUB_CLIENT_ID,
       clientSecret: process.env.FS_GITHUB_CLIENT_SECRET,
-      tokenUri: 'https://github.com/login/oauth/access_token',
-      dataUri: 'https://api.github.com/user',
+      tokenUri: "https://github.com/login/oauth/access_token",
+      dataUri: "https://api.github.com/user",
       emailUri: 'https://api.github.com/user/emails'
     },
     google: {
       clientId: process.env.FS_GOOGLE_CLIENT_ID,
       clientSecret: process.env.FS_GOOGLE_CLIENT_SECRET,
-      tokenUri: 'https://oauth2.googleapis.com/token',
-      dataUri: 'https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos'
+      tokenUri: "https://oauth2.googleapis.com/token",
+      dataUri: "https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos"
     }
   },
   github: {
@@ -63,12 +67,21 @@ module.exports = {
     },
     notify: {
       specific: {
+        albert: [ 'woutervdub' ],
+        bee: [ 'bobgeorgethe3rd' ],
         benjamin: [ 'woutervdub' ],
-        penelope: [ 'woutervdub' ],
-        waralee: [ 'woutervdub' ],
+        cornelius: [ 'woutervdub' ],
         diana: [ 'alfalyr' ],
         holmes: [ 'alfalyr' ],
+        hortensia: [ 'woutervdub' ],
+        lunetius: [ 'starfetch' ],
+        penelope: [ 'woutervdub' ],
+        tiberius: [ 'starfetch' ],
         sandy: [ 'alfalyr' ],
+        ursula: [ 'nataliasayang' ],
+        yuri: [ 'biou', 'hellgy' ],
+        walburga: [ 'starfetch' ],
+        waralee: [ 'woutervdub' ],
       },
       dflt: [ 'joostdecock' ]
     }
@@ -80,5 +93,17 @@ module.exports = {
     username: process.env.FS_STRAPI_USERNAME,
     password: process.env.FS_STRAPI_PASSWORD,
     tmp: process.env.FS_STRAPI_TMP,
-  }
+  },
+  og: {
+    template: ["..", "..", "artwork", "og", "template.svg"],
+    chars: {
+      title_1: 18,
+      title_2: 19,
+      title_3: 20,
+      intro: 34,
+      sub: 42
+    }
+  },
 }
+
+export default config
