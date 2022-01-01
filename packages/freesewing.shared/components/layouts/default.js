@@ -62,8 +62,16 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
 
 const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
 
+  const startNavigation = () => {
+    app.startLoading()
+    // Force close of menu on mobile if it is open
+    if (app.primaryNavigation) app.setPrimaryNavigation(false)
+    // Force close of search modal if it is open
+    if (search) setSearch(false)
+  }
+
   const router = useRouter()
-  router?.events?.on('routeChangeStart', () => app.startLoading())
+  router?.events?.on('routeChangeStart', startNavigation)
   router?.events?.on('routeChangeComplete', () => app.stopLoading())
   const slug = router.asPath.slice(1)
   const [leftNav, setLeftNav] = useState(false)
