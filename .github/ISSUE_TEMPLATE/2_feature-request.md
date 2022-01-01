@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: 🚀 Feature request
 about: Suggest an idea to make FreeSewing better
 title: Feature request
 labels: "\U0001F48E enhancement"

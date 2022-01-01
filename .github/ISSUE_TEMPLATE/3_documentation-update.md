@@ -1,5 +1,5 @@
 ---
-name: Documentation/content update
+name: 📝 Documentation/content update
 about: Suggest updates to FreeSewing documentation or site content
 title: Documentation/content update
 labels: "\U0001F44D good first issue, \U0001F4D6 documentation"

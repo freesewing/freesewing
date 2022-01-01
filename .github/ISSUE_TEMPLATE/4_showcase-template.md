@@ -1,5 +1,5 @@
 ---
-name: Showcase template
+name: 📸 Showcase template
 about: Add a new showcase on freesewing.org
 title: Create showcase from this content
 labels: "\U0001F44D good first issue, \U0001F4F8 showcase, \U0001F917 community"
