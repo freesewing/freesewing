@@ -27,13 +27,13 @@ const MdxPage = props => {
         <meta property="og:type" content="article" key='type' />
         <meta property="og:description" content={props.intro} key='type' />
         <meta property="og:article:author" content='Joost De Cock' key='author' />
-        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/en/dev/${props.page.slug}`} key='image' />
+        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/en/org/${props.page.slug}`} key='image' />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`https://freesewing.dev/${props.page.slug}`} key='url' />
+        <meta property="og:url" content={`https://freesewing.org/${props.page.slug}`} key='url' />
         <meta property="og:locale" content="en_US" key='locale' />
-        <meta property="og:site_name" content="freesewing.dev" key='site' />
+        <meta property="og:site_name" content="freesewing.org key='site' />
       </Head>
       <MdxWrapper mdx={props.mdx} app={app}/>
       <HelpUs mdx slug={`/${props.page.slug}`} />
@@ -60,7 +60,7 @@ export default MdxPage
  */
 export async function getStaticProps({ params }) {
 
-  const { mdx, intro } = await mdxLoader('en', 'dev', params.mdxslug.join('/'))
+  const { mdx, intro } = await mdxLoader('en', 'org', params.mdxslug.join('/'))
 
   return {
     props: {
