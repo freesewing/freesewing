@@ -1,6 +1,13 @@
 # Change log for: @freesewing/brian
 
 
+## 2.19.7 (2022-01-04)
+
+### Changed
+
+ - Always calculate sleevecap notch from armhole rather than shoulder
+ - Default for `sleevecapEase` option is now `0`
+
 ## 2.17.0 (2021-07-01)
 
 ### Added

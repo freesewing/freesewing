@@ -1,7 +1,7 @@
 # Change log for: @freesewing/plugin-export-dxf
 
 
-## 2.19.6 (2022-12-29)
+## 2.19.6 (2021-12-29)
 
 ### Added
 

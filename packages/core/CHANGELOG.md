@@ -1,14 +1,14 @@
 # Change log for: @freesewing/core
 
 
-## 2.19.6 (2022-12-29)
+## 2.19.6 (2021-12-29)
 
 ### Added
 
  - Added the new attributes.setIfUnset() method
  - Added the new `scale` setting
 
-## 2.19.5 (2022-11-13)
+## 2.19.5 (2021-11-13)
 
 ### Fixed
 

@@ -1,7 +1,29 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.19.6 (2022-12-29)
+## 2.19.7 (2022-01-04)
+
+### brian
+
+#### Changed
+
+ - Always calculate sleevecap notch from armhole rather than shoulder
+ - Default for `sleevecapEase` option is now `0`
+
+### simon
+
+#### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+### simone
+
+#### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+
+## 2.19.6 (2021-12-29)
 
 ### core
 
@@ -187,7 +209,7 @@
  - Updated the rendertest pattern to be more concise
 
 
-## 2.19.5 (2022-11-13)
+## 2.19.5 (2021-11-13)
 
 ### charlie
 
@@ -219,7 +241,7 @@
  - Fix seam allowance on back, gusset and hood center parts Closes [#1464](https://github.com/freesewing/freesewing/issues/1464)
 
 
-## 2.19.4 (2022-11-09)
+## 2.19.4 (2021-11-09)
 
 ### paco
 
