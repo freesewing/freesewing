@@ -1,5 +1,5 @@
 {
-  "name": "freesewing.dev",
+  "name": "freesewing.org",
   "version": "2.19.6",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "lint": "next lint",
     "testdeploy": "next build && next export && netlify-cli deploy",
     "deploy": "next build && next export && netlify-cli deploy --prod",
-    "serve": "pm2 start npm --name 'freesewing.dev' -- run start"
+    "serve": "pm2 start npm --name 'freesewing.org' -- run start"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.5",
