@@ -1,5 +1,21 @@
+2.19.7:
+  date: 2022-01-04
+
+  Changed:
+    brian:
+      - Always calculate sleevecap notch from armhole rather than shoulder
+      - Default for `sleevecapEase` option is now `0`
+
+  Fixed:
+    simon:
+      - Correctly place sleevecap notches
+        Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+    simone:
+      - Correctly place sleevecap notches
+        Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
 2.19.6:
-  date: 2022-12-29
+  date: 2021-12-29
 
   Added:
     core:
@@ -73,7 +89,7 @@
       - Only add snippets once to SVG object
 
 2.19.5:
-  date: 2022-11-13
+  date: 2021-11-13
 
   Fixed:
     charlie:
@@ -97,7 +113,7 @@
       - Increased maximum for the `seatEase` options
 
 2.19.4:
-  date: 2022-11-09
+  date: 2021-11-09
 
   Fixed:
     paco:
