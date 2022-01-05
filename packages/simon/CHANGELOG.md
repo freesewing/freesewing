@@ -1,7 +1,7 @@
 # Change log for: @freesewing/simon
 
 
-## 2.19.7 (2022-01-04)
+## 2.19.7 (2022-01-06)
 
 ### Fixed
 
