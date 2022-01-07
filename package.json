@@ -62,7 +62,7 @@
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
-    "@svgr/rollup": "^5.4.0",
+    "@svgr/rollup": "^6.1.2",
     "all-contributors-cli": "^6.20.0",
     "ava": "^3.11.0",
     "axios": "0.21.2",
