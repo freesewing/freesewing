@@ -57,7 +57,7 @@ from are provided:
 
 <Tip>
 
-##### How to take measurement is documented on FreeSewing.org
+##### How to take measurements is documented on FreeSewing.org
 
 For instructions on how to take measurements, please refer to our 
 maker documentation on FreeSewing.org: https://freesewing.org/docs/measurements/
