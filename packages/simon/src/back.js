@@ -117,9 +117,8 @@ export default (part) => {
 
   // Round back
   paths.armhole = armholeToPitch
-  if (options.yokeHeight < 1 && options.yokeHeight > 0)
-    paths.armhole = paths.armhole.join(paths.backArmholeBack)
-  else if (options.yokeHeight === 0) paths.armhole = paths.armhole.join(paths.backArmhole)
+  if (options.yokeHeight === 0) paths.armhole = paths.armhole.join(paths.backArmhole)
+  else paths.armhole = paths.armhole.join(paths.backArmholeBack)
   paths.armhole.render = false
 
   if (options.roundBack > 0) {
@@ -128,14 +127,11 @@ export default (part) => {
     paths.roundedBack = new Path()
       .move(points.armholeYokeSplit)
       ._curve(points.cbTopCp1, points.cbTop)
-      .line(points.cbYoke)
-  }
+  } else points.cbTop = points.cbYoke
 
   // Box pleat
   if (options.boxPleat) {
-    points.boxPleatLeft = paths.roundedBack
-      ? points.cbTop.shift(0, store.get('boxPleatWidth') / 2)
-      : points.cbYoke.shift(0, store.get('boxPleatWidth') / 2)
+    points.boxPleatLeft = points.cbTop.shift(0, store.get('boxPleatWidth') / 2)
     points.boxPleatMid = points.boxPleatLeft.shift(0, store.get('boxPleatFold'))
     points.boxPleatRight = points.boxPleatMid.shift(0, store.get('boxPleatFold'))
     points.boxPleatLeftBottom = new Point(points.boxPleatLeft.x, points.armholeHollowCp2.y)
