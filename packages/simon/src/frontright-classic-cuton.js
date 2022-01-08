@@ -19,30 +19,51 @@ export default (part) => {
   points.placketBottomOut = points.cfHem.shift(0, width / 2)
   points.placketBottomEdge = points.cfHem.shift(0, width * 1.5)
 
+  const buttonholePlacketWidth = store.get('buttonholePlacketWidth')
+  if (options.buttonholePlacketStyle === 'seamless') {
+    points.placketTopMatch = points.cfNeck.shift(180, buttonholePlacketWidth / 2)
+    points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2)
+  } else {
+    const fold = store.get('buttonholePlacketFoldWidth')
+    points.placketTopMatch = points.cfNeck.shift(180, buttonholePlacketWidth / 2 - fold)
+    points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2 - fold)
+  }
+
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
   // Complete pattern?
   if (complete) {
     // Placket help lines
     paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
-    paths.placketInnerFold = new Path()
-      .move(points.placketBottomIn)
-      .line(points.placketTopIn)
-      .attr('class', 'dotted')
-      .attr('data-text', 'matchHere')
-      .attr('data-text-class', 'text-xs center')
     paths.placketOuterFold = new Path()
       .move(points.placketTopOut)
       .line(points.placketBottomOut)
       .attr('class', 'dotted')
+    paths.placketInnerFold = new Path()
+      .move(points.placketBottomIn)
+      .line(points.placketTopIn)
+      .attr('class', 'dotted')
+    if (!options.seperateButtonholePlacket) {
+      // Match lines are only displayed on attached plackets
+      if (Math.abs(points.placketTopIn.x - points.placketTopMatch.x) < 0.5) {
+        // Match line is nearly the same as the inner fold line.
+        paths.placketInnerFold
+          .attr('data-text', 'matchHere')
+          .attr('data-text-class', 'text-xs center')
+      } else {
+        // Separate match line and inner fold line.
+        paths.placketMatch = new Path()
+          .move(points.placketBottomMatch)
+          .line(points.placketTopMatch)
+          .attr('class', 'stroke-sm help')
+          .attr('data-text', 'matchHere')
+          .attr('data-text-class', 'text-xs center')
+      }
+    }
     macro('sprinkle', {
       snippet: 'notch',
       on: [
-        'placketTopIn',
-        'placketTopOut',
         'cfNeck',
-        'placketBottomIn',
-        'placketBottomOut',
         'cfHem',
       ],
     })
