@@ -453,7 +453,7 @@ Then, sew horizontal to the other side of the placket to finish.
 
 Spread your shirt open so that both fronts and back lie flat with their good sides up.
 
-Now place your sleeve on top with the good side down, matching the notch at the top of the sleeve with the shoulder seam.
+Now place your sleeve on top with the good side down, matching the top of the sleeve with the shoulder seam.
 
 > Be careful, your sleeve is not symmetric, so be sure to have the double notch (and cuff guard) on the back side, and the single notch on the front side.
 >
