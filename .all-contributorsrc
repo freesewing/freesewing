@@ -718,6 +718,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "anniekao",
+      "name": "Annie Kao",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1550506?v=4",
+      "profile": "https://github.com/anniekao",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true
