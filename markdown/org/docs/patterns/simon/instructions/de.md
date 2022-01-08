@@ -612,7 +612,7 @@ Nähen Sie etwa die Hälfte der Naht von Ihrer früheren Kantenstichung. Achten 
 
 #### Drücke den Kragen
 
-![Drücke den Kragen](19.png)
+![Drücke den Kragen](19e.png)
 
 Jetzt da der Kragen angehängt ist, geben Sie ihm eine gute Presse.
 

@@ -629,7 +629,7 @@ Sew about half the seam allowance from your earlier edge-stitching. Make sure to
 
 #### Press the collar
 
-![Press the collar](19.png)
+![Press the collar](19e.png)
 
 Now that your collar is attached, give it a good press.
 

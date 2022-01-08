@@ -612,7 +612,7 @@ Stik op ongeveer de helft van de naadwaarde van je eerdere stiksel. Stop een paa
 
 #### Strijk de kraag
 
-![Strijk de kraag](19.png)
+![Strijk de kraag](19e.png)
 
 Nu je kraag vasthangt mag je hem nog eens goed strijken.
 

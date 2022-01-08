@@ -612,7 +612,7 @@ Piquez à environ la moitié de la marge de couture de votre couture précédent
 
 #### Repasser le col
 
-![Repasser le col](19.png)
+![Repasser le col](19e.png)
 
 Maintenant que votre col est attaché, donnez-lui un bon coup de fer.
 

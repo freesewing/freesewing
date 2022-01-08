@@ -612,7 +612,7 @@ Difunde aproximadamente la mitad de la franquicia de costura de su borde anterio
 
 #### Presione el cuello
 
-![Presione el cuello](19.png)
+![Presione el cuello](19e.png)
 
 Ahora que tu cuello está adjunto, dale una buena prensa.
 
