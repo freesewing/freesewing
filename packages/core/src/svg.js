@@ -7,7 +7,12 @@ function Svg(pattern) {
   this.layout = {}
   this.freeId = 0
   this.body = ''
-  this.style = `svg.freesewing.pattern { --pattern-scale: ${pattern.settings.scale} }`
+  /*
+   * This breaks SVG style (see #1606)
+   * Can we not set variables in SVG style?
+   * this.style = `svg.freesewing.pattern { --pattern-scale: ${pattern.settings.scale} }`
+   */
+  this.style = ''
   this.script = ''
   this.defs = ''
   this.pattern = pattern // Needed to expose pattern to hooks
