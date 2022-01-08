@@ -398,9 +398,6 @@ Origami Zeit! Die Überlappung der Ärmel erfolgt mit den markierten Faltlinien 
  - Dann falten Sie beide Spitzen in eine schöne spitzige Form.
  - Jetzt geben Sie ihr eine letzte gute Presse.
 
-Here's a very short YouTube video of me folding the placket:
-<YouTube id='kgd5eubxShM' />
-
 #### Platzhalter an Stelle anheften
 
 ![Folienplatz an Position](13e.png) ![Platzhalter an Stelle anheften](13f.png)
@@ -615,7 +612,7 @@ Nähen Sie etwa die Hälfte der Naht von Ihrer früheren Kantenstichung. Achten 
 
 #### Drücke den Kragen
 
-![Drücke den Kragen](19.png)
+![Drücke den Kragen](19e.png)
 
 Jetzt da der Kragen angehängt ist, geben Sie ihm eine gute Presse.
 
