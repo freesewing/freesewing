@@ -27,7 +27,7 @@
   </a>
 </p>
 
-# tutorial example
+# bob example
 
 This project was bootstrapped with [Create Freesewing Pattern](https://en.freesewing.dev/create-freesewing-pattern):
 
@@ -43,7 +43,7 @@ To run this example, follow these steps:
  - In the folder above this one, run: `yarn start` (or `npm start`)
  - Then, in new terminal, run the same command in this folder: `yarn start` (or `npm start`)
 
-This will spin up the development environment, similar to [our online demo](https://tutorial.freesewing.dev/).
+This will spin up the development environment, similar to [our online demo](https://bob.freesewing.dev/).
 
 ## About FreeSewing 🤔
 
@@ -93,4 +93,3 @@ Our [chatroom on Gitter](https://gitter.im) is the best place to ask questions,
 share your feedback, or just hang out.
 
 If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
-

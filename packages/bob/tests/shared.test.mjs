@@ -3,7 +3,7 @@
 import chai from 'chai'
 import models from '@freesewing/models'
 import patterns from '@freesewing/pattern-info'
-import Tutorial from '../dist/index.mjs'
+import Bob from '../dist/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/patterns/config.mjs'
@@ -15,8 +15,8 @@ const expect = chai.expect
 
 // Test config
 testPatternConfig(
-  'tutorial',
-  new Tutorial(),
+  'bob',
+  new Bob(),
   expect,
   models,
   patterns
@@ -24,8 +24,8 @@ testPatternConfig(
 
 // Test drafting
 testPatternDrafting(
-  'tutorial',
-  Tutorial,
+  'bob',
+  Bob,
   expect,
   models,
   patterns
@@ -33,8 +33,8 @@ testPatternDrafting(
 
 // Test sampling
 testPatternSampling(
-  'tutorial',
-  Tutorial,
+  'bob',
+  Bob,
   expect,
   models,
   patterns

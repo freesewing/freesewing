@@ -1,13 +1,13 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/tutorial"
-  title="@freesewing/tutorial on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/tutorial.svg"
-  alt="@freesewing/tutorial on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/bob"
+  title="@freesewing/bob on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/bob.svg"
+  alt="@freesewing/bob on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/tutorial.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/bob.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -15,10 +15,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Atutorial"
-  title="Open issues tagged pkg:tutorial"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:tutorial.svg?label=Issues"
-  alt="Open issues tagged pkg:tutorial"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Abob"
+  title="Open issues tagged pkg:bob"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:bob.svg?label=Issues"
+  alt="Open issues tagged pkg:bob"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
@@ -46,18 +46,17 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/tutorial
+# @freesewing/bob
 
-A FreeSewing pattern for a baby bib that&#39;s used in our tutorial
-
+A FreeSewing pattern for bob a baby bib that&#39;s also used in our tutorial
 
 
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* 
+This repository is our *monorepo*
 holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
 
-This folder holds: @freesewing/tutorial
+This folder holds: @freesewing/bob
 
 ## About FreeSewing 💀
 
@@ -68,8 +67,8 @@ our sewing patterns adapted to your measurements.
 
 If you're a developer, our documentation is on [freesewing.dev](https://freesewing.dev/).
 Our [core library](https://freesewing.dev/reference/api/) is a *batteries-included* toolbox
-for parametric design of sewing patterns. But we also provide a range 
-of [plugins](https://freesewing.dev/reference/plugins/) that further extend the 
+for parametric design of sewing patterns. But we also provide a range
+of [plugins](https://freesewing.dev/reference/plugins/) that further extend the
 functionality of the platform.
 
 If you have NodeJS installed, you can try it right now by running:
@@ -78,19 +77,19 @@ If you have NodeJS installed, you can try it right now by running:
 npx create-freesewing-pattern
 ```
 
-Or, consult our getting started guides 
+Or, consult our getting started guides
 for [Linux](https://freesewing.dev/tutorials/getting-started-linux/),
-[MacOS](https://freesewing.dev/tutorials/getting-started-mac/), 
+[MacOS](https://freesewing.dev/tutorials/getting-started-mac/),
 or [Windows](https://freesewing.dev/tutorials/getting-started-windows/).
 
 We also have a [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design/) that
-walks you through your first parametric design, 
-and [a friendly community](https://freesewing.org/community/where/) with 
+walks you through your first parametric design,
+and [a friendly community](https://freesewing.org/community/where/) with
 people who can help you when you get stuck.
 
 ## Support FreeSewing: Become a patron 🥰
 
-FreeSewing is an open source project run by a community, 
+FreeSewing is an open source project run by a community,
 and financially supported by our patrons.
 
 If you feel what we do is worthwhile, and you can spend a few coind without
@@ -233,4 +232,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-

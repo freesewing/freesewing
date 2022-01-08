@@ -4,7 +4,7 @@ const expect = require("chai").expect;
 const models = require("@freesewing/models")
 const patterns = require("@freesewing/pattern-info")
 
-const Tutorial  = require('../dist')
+const Bob  = require('../dist')
 
 // Shared tests
 const testPatternConfig = require('../../../tests/patterns/config')
@@ -13,8 +13,8 @@ const testPatternSampling = require('../../../tests/patterns/sampling')
 
 // Test config
 testPatternConfig(
-  'tutorial',
-  new Tutorial(),
+  'bob',
+  new Bob(),
   expect,
   models,
   patterns
@@ -22,8 +22,8 @@ testPatternConfig(
 
 // Test drafting
 testPatternDrafting(
-  'tutorial',
-  Tutorial,
+  'bob',
+  Bob,
   expect,
   models,
   patterns
@@ -31,8 +31,8 @@ testPatternDrafting(
 
 // Test sampling
 testPatternSampling(
-  'tutorial',
-  Tutorial,
+  'bob',
+  Bob,
   expect,
   models,
   patterns

@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/tutorial",
+  "name": "@freesewing/bob",
   "version": "2.19.7",
-  "description": "A FreeSewing pattern for a baby bib that's used in our tutorial",
+  "description": "A FreeSewing pattern for bob a baby bib that's also used in our tutorial",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
