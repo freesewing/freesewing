@@ -15,6 +15,12 @@
 
  - Make seam allowance stop at fold when using rounded back option Fixes [#1608](https://github.com/freesewing/freesewing/issues/1608)
 
+### yuri
+
+#### Fixed
+
+ - Fix dependency configuration Fixes [#1334](https://github.com/freesewing/freesewing/issues/1334)
+
 
 ## 2.19.7 (2022-01-06)
 
