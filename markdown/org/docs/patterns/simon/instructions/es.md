@@ -398,9 +398,6 @@ Como acabas de presionar estas costuras de hombro, todo debería ser agradable y
  - Luego, doblézcalo ambos consejos en una forma puntiaguda.
  - Ahora démosle una buena prensa final.
 
-Here's a very short YouTube video of me folding the placket:
-<YouTube id='kgd5eubxShM' />
-
 #### Fijar placket en su lugar
 
 ![Deslizar la placa en posición](13e.png) ![Fijar placket en su lugar](13f.png)

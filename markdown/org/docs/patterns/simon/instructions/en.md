@@ -408,9 +408,6 @@ Origami time! We're going to fold the sleeve placket overlap using the marked fo
  - Then, fold down both tips into a nice pointy shape.
  - Now give it a final good press.
 
-Here's a very short YouTube video of me folding the placket:
-<YouTube id='kgd5eubxShM' />
-
 #### Pin placket in place
 
 ![Slide placket in position](13e.png)

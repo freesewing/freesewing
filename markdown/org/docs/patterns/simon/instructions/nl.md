@@ -398,9 +398,6 @@ Tijd voor origami! We gaan de mouwsplitbies plooien, met de aangegeven vouwlijne
  - Plooi daarna de twee hoekjes tot een mooie punt.
  - Strijk alles nog eens grondig.
 
-Hier is een heel korte YouTube-video van mij het knopenpat vouwen:
-<YouTube id='kgd5eubxShM' />
-
 #### Speld de mouwsplitbies
 
 ![Schuif de mouwsplitbies in positie](13e.png) ![Speld de mouwsplitbies](13f.png)

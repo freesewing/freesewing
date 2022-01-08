@@ -398,9 +398,6 @@ Origami Zeit! Die Überlappung der Ärmel erfolgt mit den markierten Faltlinien 
  - Dann falten Sie beide Spitzen in eine schöne spitzige Form.
  - Jetzt geben Sie ihr eine letzte gute Presse.
 
-Here's a very short YouTube video of me folding the placket:
-<YouTube id='kgd5eubxShM' />
-
 #### Platzhalter an Stelle anheften
 
 ![Folienplatz an Position](13e.png) ![Platzhalter an Stelle anheften](13f.png)
