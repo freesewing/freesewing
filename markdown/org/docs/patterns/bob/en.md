@@ -1,4 +1,4 @@
 ---
 ---
 
-<PatternDocs pattern='hortensia' />
+<PatternDocs pattern='bob' />
