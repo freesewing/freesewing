@@ -20,14 +20,16 @@ export default (part) => {
   points.placketBottomEdge = points.cfHem.shift(0, width * 1.5)
 
   const buttonholePlacketWidth = store.get('buttonholePlacketWidth')
-  if (options.buttonholePlacketStyle === 'seamless') {
-    points.placketTopMatch = points.cfNeck.shift(180, buttonholePlacketWidth / 2)
-    points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2)
-  } else {
-    const fold = store.get('buttonholePlacketFoldWidth')
-    points.placketTopMatch = points.cfNeck.shift(180, buttonholePlacketWidth / 2 - fold)
-    points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2 - fold)
-  }
+  const fold = options.buttonholePlacketStyle === 'seamless' ? 0 : store.get('buttonholePlacketFoldWidth')
+  points.placketTopMatch = utils.lineIntersectsCurve(
+    new Point(-(buttonholePlacketWidth / 2 - fold), points.cfNeck.y + 20),
+    new Point(-(buttonholePlacketWidth / 2 - fold), points.cfNeck.y - 20),
+    points.cfNeck,
+    points.cfNeckCp1,
+    points.neckCp2Front,
+    points.neck
+  )
+  points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2 - fold)
 
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 

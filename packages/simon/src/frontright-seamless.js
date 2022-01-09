@@ -1,7 +1,7 @@
 import { addButtons } from './shared'
 
 export default (part) => {
-  const { sa, store, Point, points, Path, paths, complete, paperless, macro, options } =
+  const { sa, store, Point, points, Path, paths, complete, paperless, macro, options, utils } =
     part.shorthand()
 
   const width = store.get('buttonPlacketWidth')
@@ -15,14 +15,16 @@ export default (part) => {
   points.placketBottomIn = points.cfHem.shift(180, width / 2)
 
   const buttonholePlacketWidth = store.get('buttonholePlacketWidth')
-  if (options.buttonholePlacketStyle === 'seamless') {
-    points.placketTopMatch = points.cfNeck.shift(180, buttonholePlacketWidth / 2)
-    points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2)
-  } else {
-    const fold = store.get('buttonholePlacketFoldWidth')
-    points.placketTopMatch = points.cfNeck.shift(180, buttonholePlacketWidth / 2 - fold)
-    points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2 - fold)
-  }
+  const fold = options.buttonholePlacketStyle === 'seamless' ? 0 : store.get('buttonholePlacketFoldWidth')
+  points.placketTopMatch = utils.lineIntersectsCurve(
+    new Point(-(buttonholePlacketWidth / 2 - fold), points.cfNeck.y + 20),
+    new Point(-(buttonholePlacketWidth / 2 - fold), points.cfNeck.y - 20),
+    points.cfNeck,
+    points.cfNeckCp1,
+    points.neckCp2Front,
+    points.neck
+  )
+  points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2 - fold)
 
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
