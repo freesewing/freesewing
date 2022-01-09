@@ -6,6 +6,7 @@ Naadwaarde wordt aangegeven door een stippellijn, met dezelfde dikte en kleur al
 
 <Legend part="saLines"> Seam allowance for different fabric types </Legend>
 
-Merk op dat de hoeken van de naadwaarde bijgesneden zijn, en niet doorlopen:
+Note that the corners of the seam allowance are trimmed, and not extended:
 
 <Legend part="sa"> A trimmed seam allowance corner </Legend>
+

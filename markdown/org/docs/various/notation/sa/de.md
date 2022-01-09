@@ -6,6 +6,6 @@ Seam allowance is indicated by a dashed line, that has the same width and color 
 
 <Legend part="saLines"> Seam allowance for different fabric types </Legend>
 
-Beachten Sie, dass die Ecken des Nahtzuges beschnitten werden und nicht verlängert werden:
+Note that the corners of the seam allowance are trimmed, and not extended:
 
 <Legend part="sa"> A trimmed seam allowance corner </Legend>

@@ -6,6 +6,7 @@ La marge de couture est indiquée par une ligne pointillée, qui a la même larg
 
 <Legend part="saLines"> Seam allowance for different fabric types </Legend>
 
-Notez que les coins de la marge de couture sont coupés, et non prolongés :
+Note that the corners of the seam allowance are trimmed, and not extended:
 
 <Legend part="sa"> A trimmed seam allowance corner </Legend>
+
