@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## 2.19.9 (2022-01-09)
+
+### Fixed
+
+ - Fix incorrectly alliegned fabric match line. Move to CF instead [Fixed by @nicholasdower in
+
 ## 2.19.8 (2022-01-08)
 
 ### Fixed
