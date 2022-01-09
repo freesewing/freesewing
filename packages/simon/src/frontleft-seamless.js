@@ -21,8 +21,12 @@ export default (part) => {
       .move(points.placketBottomFold1)
       .line(points.placketTopFold1)
       .attr('class', 'dotted')
-      .attr('data-text', 'matchHere')
-      .attr('data-text-class', 'text-xs center')
+    if (!options.seperateButtonPlacket) {
+      // Match lines are only displayed on attached plackets
+      paths.placketFold1
+        .attr('data-text', 'matchHere')
+        .attr('data-text-class', 'text-xs center')
+    }
     paths.placketFold2 = new Path()
       .move(points.placketBottomFold2)
       .line(points.placketTopFold2)

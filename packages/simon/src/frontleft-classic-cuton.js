@@ -52,8 +52,12 @@ export default (part) => {
       .move(points.placketBottomOuterEdgeOver)
       .line(points.placketTopOuterEdgeOver)
       .attr('class', 'dotted')
-      .attr('data-text', 'matchHere')
-      .attr('data-text-class', 'text-xs center')
+    if (!options.seperateButtonPlacket) {
+      // Match lines are only displayed on attached plackets
+      paths.placketOuterEdgeOver
+        .attr('data-text', 'matchHere')
+        .attr('data-text-class', 'text-xs center')
+    }
     paths.placketOuterEdgeUnder = new Path()
       .move(points.placketTopOuterEdgeUnder)
       .line(points.placketBottomOuterEdgeUnder)
