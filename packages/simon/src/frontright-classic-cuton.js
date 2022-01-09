@@ -19,49 +19,26 @@ export default (part) => {
   points.placketBottomOut = points.cfHem.shift(0, width / 2)
   points.placketBottomEdge = points.cfHem.shift(0, width * 1.5)
 
-  const buttonholePlacketWidth = store.get('buttonholePlacketWidth')
-  const fold = options.buttonholePlacketStyle === 'seamless' ? 0 : store.get('buttonholePlacketFoldWidth')
-  points.placketTopMatch = utils.lineIntersectsCurve(
-    new Point(-(buttonholePlacketWidth / 2 - fold), points.cfNeck.y + 20),
-    new Point(-(buttonholePlacketWidth / 2 - fold), points.cfNeck.y - 20),
-    points.cfNeck,
-    points.cfNeckCp1,
-    points.neckCp2Front,
-    points.neck
-  )
-  points.placketBottomMatch = points.cfHem.shift(180, buttonholePlacketWidth / 2 - fold)
-
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
   // Complete pattern?
   if (complete) {
     // Placket help lines
     paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
-    paths.placketOuterFold = new Path()
-      .move(points.placketTopOut)
-      .line(points.placketBottomOut)
-      .attr('class', 'dotted')
+    if (!options.seperateButtonholePlacket) {
+      // Match lines are only displayed on attached plackets
+      paths.frontCenter
+        .attr('data-text', 'matchHere')
+        .attr('data-text-class', 'text-xs center')
+    }
     paths.placketInnerFold = new Path()
       .move(points.placketBottomIn)
       .line(points.placketTopIn)
       .attr('class', 'dotted')
-    if (!options.seperateButtonholePlacket) {
-      // Match lines are only displayed on attached plackets
-      if (Math.abs(points.placketTopIn.x - points.placketTopMatch.x) < 0.5) {
-        // Match line is nearly the same as the inner fold line.
-        paths.placketInnerFold
-          .attr('data-text', 'matchHere')
-          .attr('data-text-class', 'text-xs center')
-      } else {
-        // Separate match line and inner fold line.
-        paths.placketMatch = new Path()
-          .move(points.placketBottomMatch)
-          .line(points.placketTopMatch)
-          .attr('class', 'stroke-sm help')
-          .attr('data-text', 'matchHere')
-          .attr('data-text-class', 'text-xs center')
-      }
-    }
+    paths.placketOuterFold = new Path()
+      .move(points.placketTopOut)
+      .line(points.placketBottomOut)
+      .attr('class', 'dotted')
     macro('sprinkle', {
       snippet: 'notch',
       on: [
