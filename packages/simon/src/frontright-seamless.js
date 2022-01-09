@@ -41,6 +41,10 @@ export default (part) => {
     macro('sprinkle', {
       snippet: 'notch',
       on: [
+        'placketTopFold1',
+        'placketTopFold2',
+        'placketBottomFold1',
+        'placketBottomFold2',
         'cfNeck',
         'cfHem',
       ],
