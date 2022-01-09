@@ -1,6 +1,12 @@
 # Change log for: @freesewing/yuri
 
 
+## 2.19.8 (2022-01-08)
+
+### Fixed
+
+ - Fix dependency configuration Fixes [#1334](https://github.com/freesewing/freesewing/issues/1334)
+
 ## 2.19.5 (2021-11-13)
 
 ### Fixed

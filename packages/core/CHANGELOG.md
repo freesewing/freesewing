@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.19.8 (2022-01-08)
+
+### Fixed
+
+ - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
+
 ## 2.19.6 (2021-12-29)
 
 ### Added
