@@ -9,7 +9,8 @@
     "build": "next build",
     "export": "next build && next export",
     "start": "next start -p 3002",
-    "serve": "pm2 start npm --name 'freesewing.dev' -- run start"
+    "serve": "pm2 start npm --name 'freesewing.dev' -- run start",
+    "strapiqa": "node strapi/qa.mjs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",
