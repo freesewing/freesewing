@@ -18,7 +18,7 @@ Update the command above with the path of your own fork on Github
 Enter the newly installed repository:
 
 ```bash
-cd freesewing.dev
+cd freesewing.org
 ```
 
 Copy the `.env.example` file to `.env`
