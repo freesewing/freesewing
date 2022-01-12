@@ -1,7 +1,5 @@
 ---
 title: Pattern configuration file
-for: developers
-about: Reference documentation for the pattern configuration file
 ---
 
 ```js
@@ -16,13 +14,13 @@ export default {
 
 A pattern configuration file exports a default object with the following properties:
 
-<ReadMore list />
+<ReadMore />
 
 <Note>
 
 This is about the pattern configuration file, used at build-time.
 
-For run-time configuration, see [Pattern settings](/reference/settings/).
+For run-time configuration, see [Pattern settings](/reference/api/settings).
 
 </Note>
 
