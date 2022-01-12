@@ -20,7 +20,7 @@ do {
 	  .move(points.right)
 	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
 
-	delta = paths.neck.length() - target
+	delta = paths.quarterNeck.length() - target
   if (delta > 0) tweak = tweak * 0.99
   else tweak = tweak * 1.02
 } while (Math.abs(delta) > 1)
