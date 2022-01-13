@@ -17,7 +17,14 @@ You should check out your own fork so you can write your changes to it.
 Update the command above with the path of your own fork on Github
 </Note>
 
-Enter the newly installed repository and the freesewing.dev package folder:
+Enter the newly installed repository and run kickstart:
+
+```bash
+cd freesewing
+yarn kickstart
+```
+
+After that completes, navigate to the freesewing.dev package directory:
 
 ```bash
 cd freesewing/packages/freesewing.dev
