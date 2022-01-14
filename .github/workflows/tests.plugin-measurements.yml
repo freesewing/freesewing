@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: cd packages/ && npm install
+        run: cd packages/plugin-measurements && npm install
         env:
           CI: true
       - name: Install peer & test dependencies in monorepo root
