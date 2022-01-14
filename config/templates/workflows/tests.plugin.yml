@@ -36,6 +36,10 @@ jobs:
         run: cd packages/{{ pattern }} && npm install
         env:
           CI: true
+      - name: Install peer & test dependencies in monorepo root
+        run: "npm install {{{ peerdeps }}} {{{ devdeps }}}"
+        env:
+          CI: true
       - name: Install peer & test dependencies
         run: "cd packages/{{ plugin }} && npm install {{{ peerdeps }}} {{{ devdeps }}}"
         env:
