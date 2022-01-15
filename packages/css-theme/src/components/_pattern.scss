@@ -11,33 +11,33 @@ svg.freesewing.pattern {
   path,
   circle {
     stroke-opacity: 1;
-    stroke-width: 0.7;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.7);
     stroke-linecap: round;
     stroke-linejoin: round;
   }
 
   /* Stroke classes */
   .stroke-xs {
-    stroke-width: 0.1;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.1);
   }
   .stroke-sm {
-    stroke-width: 0.4;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.4);
   }
   .stroke-lg {
-    stroke-width: 1.3;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 1.3);
   }
   .stroke-xl {
-    stroke-width: 2;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 2);
   }
   .stroke-xxl {
-    stroke-width: 4;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 4);
   }
 
   .sa {
     stroke-dasharray: 1, 3;
   }
   .help {
-    stroke-width: 0.6;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.6);
     stroke-dasharray: 15, 5, 2, 5;
   }
   .dotted {
@@ -56,26 +56,26 @@ svg.freesewing.pattern {
 
   /* Text */
   text {
-    font-size: 6px;
+    font-size: calc(6px * var(--freesewing-pattern-scale));
     @include title-font;
     text-anchor: start;
     font-weight: 400;
     dominant-baseline: ideographic;
   }
   .text-xs {
-    font-size: 4px;
+    font-size: calc(4px * var(--freesewing-pattern-scale));
   }
   .text-sm {
-    font-size: 5px;
+    font-size: calc(5px * var(--freesewing-pattern-scale));
   }
   .text-l {
-    font-size: 8px;
+    font-size: calc(8px * var(--freesewing-pattern-scale));
   }
   .text-xl {
-    font-size: 10px;
+    font-size: calc(10px * var(--freesewing-pattern-scale));
   }
   .text-xxl {
-    font-size: 13px;
+    font-size: calc(12px * var(--freesewing-pattern-scale));
   }
 
   .center {
@@ -91,7 +91,7 @@ svg.freesewing.pattern {
 
   /* Plugins */
   text.title-nr {
-    font-size: 32px;
+    font-size: calc(32px * var(--freesewing-pattern-scale));
     @include title-font;
     font-weight: 700;
     stroke: none;
@@ -102,7 +102,7 @@ svg.freesewing.pattern {
   path.size-XS,
   path.size-S,
   path.size-M {
-    stroke-width: 0.5;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.5);
     stroke-dasharray: 0.25 0.75;
   }
   path.made-to-measure,
@@ -111,7 +111,7 @@ svg.freesewing.pattern {
   path.size-2XL,
   path.size-3XL,
   path.size-4XL {
-    stroke-width: 0.5;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.5);
   }
 }
 
