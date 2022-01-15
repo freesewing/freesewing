@@ -33,11 +33,15 @@ jobs:
           node-version: ${{ matrix.node-version }}
 <%={{ }}=%>
       - name: Install dependencies
-        run: cd packages/{{ pattern }} && npm install
+        run: cd packages/{{ plugin }} && npm install
+        env:
+          CI: true
+      - name: Install peer & test dependencies in monorepo root
+        run: "npm install {{{ peerdeps }}} {{{ devdeps }}}"
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: "cd packages/{{ plugin }} && npm install {{{ peerdeps }}} mocha chai"
+        run: "cd packages/{{ plugin }} && npm install {{{ peerdeps }}} {{{ devdeps }}}"
         env:
           CI: true
       - name: Build plugin

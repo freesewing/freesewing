@@ -738,6 +738,15 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "jgfichte",
+      "name": "Jason Williams",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1787162?v=4",
+      "profile": "https://github.com/jgfichte",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true

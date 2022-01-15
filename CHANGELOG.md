@@ -1,6 +1,36 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.19.9 (2022-01-09)
+
+### simon
+
+#### Fixed
+
+ - Fix incorrectly alliegned fabric match line. Move to CF instead [Fixed by @nicholasdower in
+
+
+## 2.19.8 (2022-01-08)
+
+### core
+
+#### Fixed
+
+ - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
+
+### simon
+
+#### Fixed
+
+ - Make seam allowance stop at fold when using rounded back option Fixes [#1608](https://github.com/freesewing/freesewing/issues/1608)
+
+### yuri
+
+#### Fixed
+
+ - Fix dependency configuration Fixes [#1334](https://github.com/freesewing/freesewing/issues/1334)
+
+
 ## 2.19.7 (2022-01-06)
 
 ### brian

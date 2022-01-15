@@ -3,7 +3,7 @@ title: Translation guide
 ---
 
 Freesewing.org is proudly multilingual, and we currently support five languges.
-For this, we rely on the work for our translators who volunteer their
+For this, we rely on the work of our translators who volunteer their
 time to translate FreeSewing into various languages from English, which
 is our source language. 
 
@@ -59,7 +59,7 @@ We use two different tools to manage our translations, depending on the context:
 
 If you'd like to help out, please join our translation team on Crowdin.
 
-While it can be nice to have blog and showcase posts translated, the are less important than the 
+While it can be nice to have blog and showcase posts translated, these are less important than the 
 translation work in Crowdin which is about the documentation and strings that allow people to
 use FreeSewing.org in a different language.
 
@@ -67,10 +67,10 @@ use FreeSewing.org in a different language.
 
 ### Crowdin
 
-Most translation happens in Crowdin ([crowdin.com](https://crowdin.com/)), and online translation platform
+Most translation happens in Crowdin ([crowdin.com](https://crowdin.com/)), an online translation platform
 that makes translation and collaboration a breeze.
 
-In Crowdin, all text is broken up into lines words or paragraphs, that are than translated.
+In Crowdin, all text is broken up into lines, words or paragraphs, that are than translated.
 This does not only facilitate collaboration — as rather than work on one large block of text
 various people can jump in and translate smaller snippets — it also enforces a strict one-on-one
 match between the English source material and the translation.

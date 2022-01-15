@@ -24,4 +24,20 @@ describe('Theme Plugin Tests', () => {
     expect(pattern.svg.defs).to.contain('gridline-sm')
     expect(pattern.svg.defs).to.contain('M 12.7 0 L 12.7')
   });
+
+  it("Should apply scale.", () => {
+    expect(pattern.svg.style).to.contain('svg.freesewing .text-xxl {\n    font-size: 12px')
+
+    pattern.settings.scale = 2
+    pattern.draft().render()
+
+    expect(pattern.svg.style).to.contain('svg.freesewing .text-xxl {\n    font-size: 24px;')
+  })
+
+  it("Should round after applying scale.", () => {
+    pattern.settings.scale = 1/3
+    pattern.draft().render()
+
+    expect(pattern.svg.style).to.contain('svg.freesewing .text-xxl {\n    font-size: 4px')
+  })
 })
