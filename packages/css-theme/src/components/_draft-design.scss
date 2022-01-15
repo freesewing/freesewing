@@ -132,34 +132,34 @@ div.design {
 .theme-wrapper.light svg.freesewing.draft {
   g.design.point {
     circle {
-      fill: $fc-link-light;
+      fill: $fs-link-light;
     }
     circle.hovertrap {
-      stroke: $fc-link-light;
+      stroke: $fs-link-light;
     }
   }
   path.design.hovertrap {
-    stroke: $fc-link-light;
+    stroke: $fs-link-light;
   }
   circle.design.path.cp {
-    fill: $fc-bg-light;
+    fill: $fs-bg-light;
   }
 }
 
 .theme-wrapper.dark svg.freesewing.draft {
   g.design.point {
     circle {
-      fill: $fc-link-dark;
+      fill: $fs-link-dark;
     }
     circle.hovertrap {
-      stroke: $fc-link-dark;
+      stroke: $fs-link-dark;
     }
   }
   path.design.hovertrap {
-    stroke: $fc-link-dark;
+    stroke: $fs-link-dark;
   }
   circle.design.path.cp {
-    fill: $fc-bg-dark;
+    fill: $fs-bg-dark;
   }
   path.focus.path {
     stroke-opacity: 0.5;

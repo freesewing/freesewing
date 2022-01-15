@@ -1,4 +1,4 @@
-svg.freesewing.draft {
+svg.freesewing.pattern {
   max-width: 100%;
   /* Reset */
   path,
@@ -122,59 +122,59 @@ svg.freesewing.draft text {
   /* Stroke classes */
   path,
   circle {
-    stroke: $fc-draft-fabric-light;
+    stroke: $fs-pattern-fabric-light;
   }
   .fabric {
-    stroke: $fc-draft-fabric-light;
+    stroke: $fs-pattern-fabric-light;
   }
   .lining {
-    stroke: $fc-draft-lining-light;
+    stroke: $fs-pattern-lining-light;
   }
   .interfacing {
-    stroke: $fc-draft-interfacing-light;
+    stroke: $fs-pattern-interfacing-light;
   }
   .canvas {
-    stroke: $fc-draft-canvas-light;
+    stroke: $fs-pattern-canvas-light;
   }
   .various {
-    stroke: $fc-draft-various-light;
+    stroke: $fs-pattern-various-light;
   }
   .mark {
-    stroke: $fc-draft-mark-light;
+    stroke: $fs-pattern-mark-light;
   }
   .contrast {
-    stroke: $fc-draft-contrast-light;
+    stroke: $fs-pattern-contrast-light;
   }
   .note {
-    stroke: $fc-draft-note-light;
+    stroke: $fs-pattern-note-light;
   }
   /* Fill classes */
   .fill-fabric {
-    fill: $fc-draft-fabric-light;
+    fill: $fs-pattern-fabric-light;
   }
   .fill-lining {
-    fill: $fc-draft-lining-light;
+    fill: $fs-pattern-lining-light;
   }
   .fill-interfacing {
-    fill: $fc-draft-interfacing-light;
+    fill: $fs-pattern-interfacing-light;
   }
   .fill-canvas {
-    fill: $fc-draft-canvas-light;
+    fill: $fs-pattern-canvas-light;
   }
   .fill-various {
-    fill: $fc-draft-various-light;
+    fill: $fs-pattern-various-light;
   }
   .fill-mark {
-    fill: $fc-draft-mark-light;
+    fill: $fs-pattern-mark-light;
   }
   .fill-contrast {
-    fill: $fc-draft-contrast-light;
+    fill: $fs-pattern-contrast-light;
   }
   .fill-note {
-    fill: $fc-draft-note-light;
+    fill: $fs-pattern-note-light;
   }
   .fill-bg {
-    fill: $fc-bg-light;
+    fill: $fs-bg-light;
   }
   path.sample-focus {
     fill: #000;
@@ -182,14 +182,14 @@ svg.freesewing.draft text {
   /* scalebox plugin */
   path.scalebox.metric {
     stroke: none;
-    fill: $fc-bg-light;
+    fill: $fs-bg-light;
   }
   path.scalebox.imperial {
     stroke: none;
-    fill: $fc-bg-dark;
+    fill: $fs-bg-dark;
   }
   path.bartack {
-    stroke: $fc-draft-mark-light;
+    stroke: $fs-pattern-mark-light;
   }
   path.logo {
     fill: currentColor;
@@ -234,59 +234,59 @@ svg.freesewing.draft text {
   /* Stroke classes */
   path,
   circle {
-    stroke: $fc-draft-fabric-dark;
+    stroke: $fs-pattern-fabric-dark;
   }
   .fabric {
-    stroke: $fc-draft-fabric-dark;
+    stroke: $fs-pattern-fabric-dark;
   }
   .lining {
-    stroke: $fc-draft-lining-dark;
+    stroke: $fs-pattern-lining-dark;
   }
   .interfacing {
-    stroke: $fc-draft-interfacing-dark;
+    stroke: $fs-pattern-interfacing-dark;
   }
   .canvas {
-    stroke: $fc-draft-canvas-dark;
+    stroke: $fs-pattern-canvas-dark;
   }
   .various {
-    stroke: $fc-draft-various-dark;
+    stroke: $fs-pattern-various-dark;
   }
   .mark {
-    stroke: $fc-draft-mark-dark;
+    stroke: $fs-pattern-mark-dark;
   }
   .contrast {
-    stroke: $fc-draft-contrast-dark;
+    stroke: $fs-pattern-contrast-dark;
   }
   .note {
-    stroke: $fc-draft-note-dark;
+    stroke: $fs-pattern-note-dark;
   }
   /* Fill classes */
   .fill-fabric {
-    fill: $fc-draft-fabric-dark;
+    fill: $fs-pattern-fabric-dark;
   }
   .fill-lining {
-    fill: $fc-draft-lining-dark;
+    fill: $fs-pattern-lining-dark;
   }
   .fill-interfacing {
-    fill: $fc-draft-interfacing-dark;
+    fill: $fs-pattern-interfacing-dark;
   }
   .fill-canvas {
-    fill: $fc-draft-canvas-dark;
+    fill: $fs-pattern-canvas-dark;
   }
   .fill-various {
-    fill: $fc-draft-various-dark;
+    fill: $fs-pattern-various-dark;
   }
   .fill-mark {
-    fill: $fc-draft-mark-dark;
+    fill: $fs-pattern-mark-dark;
   }
   .fill-contrast {
-    fill: $fc-draft-contrast-dark;
+    fill: $fs-pattern-contrast-dark;
   }
   .fill-note {
-    fill: $fc-draft-note-dark;
+    fill: $fs-pattern-note-dark;
   }
   .fill-bg {
-    fill: $fc-bg-dark;
+    fill: $fs-bg-dark;
   }
   path.sample-focus {
     fill: #fff;
@@ -294,14 +294,14 @@ svg.freesewing.draft text {
   /* scalebox plugin */
   path.scalebox.metric {
     stroke: none;
-    fill: $fc-bg-dark;
+    fill: $fs-bg-dark;
   }
   path.scalebox.imperial {
     stroke: none;
-    fill: $fc-bg-light;
+    fill: $fs-bg-light;
   }
   path.bartack {
-    stroke: $fc-draft-mark-dark;
+    stroke: $fs-pattern-mark-dark;
   }
   path.logo {
     fill: currentColor;
@@ -347,11 +347,11 @@ svg.freesewing.draft text {
 g.snippet.notch > circle,
 g.snippet.button > circle,
 g.snippet.buttonhole > path {
-  color: $fc-draft-mark-light;
+  color: $fs-pattern-mark-light;
 }
 g.snippet.bnotch > circle,
 g.snippet.bnotch > path {
-  color: $fc-draft-note-light;
+  color: $fs-pattern-note-light;
 }
 /* Same for paperless grid, also in shadow DOM */
 rect.grid {
