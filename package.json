@@ -59,7 +59,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.6",
     "@rollup/plugin-babel": "^5.1.0",
-    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@svgr/rollup": "^5.4.0",
