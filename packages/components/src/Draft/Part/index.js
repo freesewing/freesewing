@@ -119,6 +119,7 @@ const Part = (props) => {
           name={name}
           part={props.name}
           language={props.language}
+          scale={props.scale}
           point={props.part.points[name]}
           focus={props.focus}
           topLeft={props.part.topLeft}
@@ -128,7 +129,7 @@ const Part = (props) => {
         />
       ))}
       {Object.keys(props.part.snippets).map((name) => (
-        <Snippet key={name} name={name} snippet={props.part.snippets[name]} />
+        <Snippet key={name} name={name} snippet={props.part.snippets[name]} scale={props.scale} />
       ))}
       {focus}
     </g>

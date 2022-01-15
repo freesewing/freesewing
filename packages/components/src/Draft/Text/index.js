@@ -16,13 +16,14 @@ const Text = (props) => {
     let key = 0
     let lines = translated.split('\n')
     text.push(<tspan key={'tspan-' + key}>{lines.shift()}</tspan>)
+    let lineHeight = (props.point.attributes.get('data-text-lineheight') || 12) * (props.scale || 1)
     for (let line of lines) {
       key++
       text.push(
         <tspan
           key={'tspan-' + key}
           x={props.point.x}
-          dy={props.point.attributes.get('data-text-lineheight') || 12}
+          dy={lineHeight}
         >
           {line.toString().replace(/&quot;/g, '"')}
         </tspan>

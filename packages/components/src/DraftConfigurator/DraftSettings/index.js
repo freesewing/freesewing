@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FormattedMessage } from 'react-intl'
 import DraftSettingSa from '../DraftSettingSa'
+import DraftSettingScale from '../DraftSettingScale'
 import DraftSettingMargin from '../DraftSettingMargin'
 import DraftSettingComplete from '../DraftSettingComplete'
 import DraftSettingPaperless from '../DraftSettingPaperless'
@@ -59,6 +60,8 @@ const DraftSettings = ({
     switch (setting) {
       case 'sa':
         return 10
+      case 'scale':
+        return 1
       case 'only':
         return 'dflt'
       case 'complete':
@@ -106,6 +109,7 @@ const DraftSettings = ({
       <DraftSettingLanguage {...addProps('locale')} />,
       <DraftSettingUnits {...addProps('units')} list={metricimperial} />,
       <DraftSettingComplete {...addProps('complete')} />,
+      <DraftSettingScale {...addProps('scale')} />,
       <DraftSettingMargin {...addProps('margin')} />,
       <DraftSettingOnly {...addProps('only')} />,
       <DraftSettingDebug {...addProps('debug')} />
