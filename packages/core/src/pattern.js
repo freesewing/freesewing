@@ -58,6 +58,7 @@ export default function Pattern(config = { options: {} }) {
     locale: 'en',
     units: 'metric',
     margin: 2,
+    scale: 1,
     layout: true,
     debug: true,
     scale: 1,

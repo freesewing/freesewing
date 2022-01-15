@@ -182,6 +182,7 @@ Part.prototype.shorthand = function () {
   let sa = this.context.settings.complete ? this.context.settings.sa || 0 : 0
   const shorthand = {
     sa,
+    scale: this.context.settings.scale,
     store: this.context.store,
     macro: this.macroClosure(),
     units: this.unitsClosure(),
