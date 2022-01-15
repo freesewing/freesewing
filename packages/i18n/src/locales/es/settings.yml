@@ -29,3 +29,6 @@ layout:
 debug:
   title: Debug
   description: Habilita la depuración para obtener información adicional sobre cómo se creó tu patrón
+scale:
+  title: Scale
+  description: Controls the overal line width, font size, and other elements that do not scale with the pattern's measurements
