@@ -16,7 +16,7 @@ understanding of the structure of a FreeSewing pattern:
   caption="A schematic overview of FreeSewing"
 />
 
-If we look at our image, it can can divided into three areas:
+If we look at our image, it can be divided into three areas:
 
  - The left area with the **settings**  box
  - The middle area with the **Pattern** box and everything in it
