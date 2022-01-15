@@ -37,3 +37,7 @@ layout:
 debug:
   title: Debug
   description: Enable debug to gain additional info about how your pattern was created
+
+scale:
+  title: Scale
+  description: Controls the overal line width, font size, and other elements that do not scale with the pattern's measurements
