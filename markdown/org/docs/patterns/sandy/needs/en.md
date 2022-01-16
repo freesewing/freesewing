@@ -21,6 +21,12 @@ Don't forget that the waistband also needs to be cut from the main fabric.
 
 </Note>
 
+<Warning>  
+
+If making a **seamless** Sandy you will need to make sure the width of your fabrics are double the length of your skirt pieces otherwise you will have to piece or add seams.
+  
+</Warning>
+
 ##### Lining Fabric
 
 Lining fabric is only really needed if your main fabric is unpleasant to have against the skin or hard to wash. You will need the same amount as your main fabric if you are fully lining the skirt.
