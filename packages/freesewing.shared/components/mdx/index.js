@@ -19,7 +19,7 @@ const mdxCustomComponents = (app) => ({
   Fixme: props => <Popout {...props} fixme />,
   Link: props => <Popout {...props} link />,
   Note: props => <Popout {...props} note />,
-  ReadMore: props => <ReadMore {...props} app={app} />,
+  ReadMore: props => <ReadMore {...props} app={app} slug={app.slug} />,
   Related: props => <Popout {...props} related />,
   Tip: props => <Popout {...props} tip />,
   Warning: props => <Popout {...props} warning />,

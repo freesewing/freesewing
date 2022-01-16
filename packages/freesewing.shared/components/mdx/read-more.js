@@ -9,13 +9,14 @@ const currentChildren = current => Object.values(order(current))
 
 const ReadMore = props => {
 
-  const root = get(props.app.navigation, props.app.slug.split('/'))
+  const root = get(props.app.navigation, props.slug.split('/'))
   const list = []
   for (const page of currentChildren(root)) {
-    list.push(<li key={page.__slug}>
+    list.push(<li key={page.__slug} className={props.recurse ? 'ont-bold' : ''}>
       <Link href={`/${page.__slug}`}>
-        <a>{page.__title}</a>
+        <a className={props.recurse ? 'inline-block font-bold pt-3 pb-1' : ''}>{page.__title}</a>
       </Link>
+      {props.recurse && <ReadMore app={props.app} slug={page.__slug}  />}
     </li>)
   }
   return <ul>{list}</ul>

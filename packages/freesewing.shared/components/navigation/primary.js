@@ -171,14 +171,14 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
 const Navigation = ({ app, active }) => {
   if (!app.navigation) return null
   const output = []
-  for (const key of Object.keys(app.navigation).sort()) output.push(<TopLevel
-    key={key}
-    icon={icons[key] || <span className="text-3xl mr-2 translate-y-3 inline-block p-0 leading-3">&deg;</span>}
-    title={key}
-    slug={key}
-    hasChildren={keepClosed.indexOf(key) === -1}
+  for (const page of order(app.navigation)) output.push(<TopLevel
+    key={page.__slug}
+    icon={icons[page.__slug] || <span className="text-3xl mr-2 translate-y-3 inline-block p-0 leading-3">&deg;</span>}
+    title={page.__title}
+    slug={page.__slug}
+    hasChildren={keepClosed.indexOf(page.__slug) === -1}
     nav={app.navigation}
-    current={order(app.navigation[key])}
+    current={order(app.navigation[page.__slug])}
     active={active}
   />)
 
