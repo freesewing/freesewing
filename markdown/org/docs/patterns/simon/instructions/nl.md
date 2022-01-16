@@ -59,7 +59,7 @@ Before we flip your cuff over, we need to trim back the seam allowance to remove
 
 ![Strijk de naadwaarde terug](2c.png)
 
-Plooi de naadwaarde aan de kant van de mouw naar binnen, en strijk.
+Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
 
 > Als je eerder iets te ver langs de rand gestikt hebt ga je nu een paar steken moeten lostornen.
 

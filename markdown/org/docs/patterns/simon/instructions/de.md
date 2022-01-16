@@ -59,7 +59,7 @@ Before we flip your cuff over, we need to trim back the seam allowance to remove
 
 ![Drücken Sie die Naht zurück](2c.png)
 
-Falten Sie die Nahtzuweisung auf der Ärmelseite zurück und drücken Sie sie nach unten.
+Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
 
 > Wenn man früher zu weit am Rand genäht ist, muss man ein paar Nähte aufnehmen.
 
