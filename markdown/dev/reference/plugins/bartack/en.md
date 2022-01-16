@@ -33,6 +33,6 @@ const Pattern = new freesewing.Design(config, bartack);
 Now you can use the 
 [bartack](/reference/api/macros/bartack/), 
 [bartackAlong](/reference/api/macros/bartackalong/), and 
-[bartackFractionAlong](/reference/api/macros/bartackfractionalong/) macros in your parts:
+[bartackFractionAlong](/reference/api/macros/bartackfractionalong/) macros in your parts.
 
 
