@@ -29,3 +29,6 @@ layout:
 debug:
   title: Debug
   description: Debuggen aktivieren, um zusätzliche Informationen dazu zu erhalten, wie dein Schnittmuster erstellt wurde
+scale:
+  title: Scale
+  description: Controls the overal line width, font size, and other elements that do not scale with the pattern's measurements
