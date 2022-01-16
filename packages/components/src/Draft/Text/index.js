@@ -15,7 +15,7 @@ const Text = (props) => {
   if (translated.indexOf('\n') !== -1) {
     let key = 0
     let lines = translated.split('\n')
-    text.push(<tspan key={'tspan-' + key}>{lines.shift()}</tspan>)
+    text.push(<tspan key={'tspan-' + key} dangerouslySetInnerHTML={{ __html: lines.shift()}} />)
     let lineHeight = (props.point.attributes.get('data-text-lineheight') || 12) * (props.scale || 1)
     for (let line of lines) {
       key++
@@ -24,12 +24,11 @@ const Text = (props) => {
           key={'tspan-' + key}
           x={props.point.x}
           dy={lineHeight}
-        >
-          {line.toString().replace(/&quot;/g, '"')}
-        </tspan>
+          dangerouslySetInnerHTML={{ __html: line.toString().replace(/&quot;/g, '"')}}
+        />
       )
     }
-  } else text.push(<tspan key="tspan-1">{translated}</tspan>)
+  } else text.push(<tspan key="tspan-1" dangerouslySetInnerHTML={{ __html: translated}} />)
 
   return (
     <text
