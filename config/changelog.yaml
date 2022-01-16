@@ -1,3 +1,41 @@
+unreleased:
+
+  Added:
+    core:
+      - Added support for `settings.scale`
+    components:
+      - Added support for `settings.scale` to Draft and Workbench components
+
+    css-theme:
+      - Added support for `settings.scale`
+
+    plugintest:
+      - Added the plugintest pattern which is used for testing plugins
+
+  Fixed:
+
+    components:
+      - Support handling of `&#160;` in text
+
+    plugin-bartack:
+      - Fixed issue with `bartackFractionAlong` macro
+      - Handle start and endpoints being the same in `bartackFractionAlong`
+      - Support start and endpoints being reversed in `bartackFractionAlong`
+
+
+  Changed:
+
+    plugin-bundle:
+      - plugin-banner is now part of plugin-bundle
+      - plugin-bartack is now part of plugin-bundle
+
+    plugin-banner:
+      - Changed the default options
+      - Now part of `@freesewing/plugin-bundle`
+
+    plugin-bartack:
+      - Now part of `@freesewing/plugin-bundle`
+
 2.19.9:
   date: 2022-01-09
 
