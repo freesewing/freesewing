@@ -62,6 +62,7 @@ plugin-theme: 'A FreeSewing plugin that provides a default theme'
 plugin-title: 'A FreeSewing plugin to add a title to your pattern parts'
 plugin-validate: 'A FreeSewing plugin that validates aspects of your code'
 plugin-versionfree-svg: 'A FreeSewing plugin to keep version info out of your SVG to allow easy diffs across versions'
+plugintest: 'A FreeSewing pattern to test (y)our plugins'
 prettier-config: "FreeSewing's shared configuration for prettier"
 remark-jargon: 'A Remark plugin for jargon terms'
 rendertest: 'A FreeSewing pattern to test (y)our render engine our CSS'
