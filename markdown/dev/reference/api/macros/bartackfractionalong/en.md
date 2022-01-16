@@ -21,7 +21,7 @@ paths.a = new Path()
   .curve(points.b, points.c, points.d)
   .setRender(false)
 
-macro('bartackAlong', { 
+macro('bartackFractionAlong', { 
   path: paths.a,
   start: 0.2,
   end: 0.8
