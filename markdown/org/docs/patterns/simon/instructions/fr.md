@@ -59,7 +59,7 @@ Before we flip your cuff over, we need to trim back the seam allowance to remove
 
 ![Repasser la marge de couture](2c.png)
 
-Sur le côté du poignet qui sera fixé à la manche, repliez la marge de couture, et repassez.
+Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
 
 > Si vous avez cousu trop loin, décousez quelques points.
 

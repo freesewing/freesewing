@@ -59,7 +59,7 @@ Before we flip your cuff over, we need to trim back the seam allowance to remove
 
 ![Presione la costura posterior](2c.png)
 
-Doblar la abertura de la costura en el lado de la manga y presionarla hacia abajo.
+Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
 
 > Si te has costado demasiado a lo largo del borde antes, tendrás que deseleccionar unas cuantas stitches.
 
