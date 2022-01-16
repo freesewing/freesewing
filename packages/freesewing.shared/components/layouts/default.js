@@ -95,6 +95,7 @@ const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
           fixed top-0 right-0
           ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
           pt-28
+          sm:pt-8 sm:mt-16
           pb-4 px-2
           sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32
           sm:relative sm:transform-none
