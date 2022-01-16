@@ -1,4 +1,6 @@
 /* eslint no-unused-expressions: "warn" */
+import banner from '@freesewing/plugin-banner'
+import bartack from '@freesewing/plugin-bartack'
 import buttons from '@freesewing/plugin-buttons'
 import cutonfold from '@freesewing/plugin-cutonfold'
 import dimension from '@freesewing/plugin-dimension'
@@ -14,6 +16,8 @@ import measurements from '@freesewing/plugin-measurements'
 import { version, name } from '../package.json'
 
 const bundle = [
+  banner,
+  bartack,
   buttons,
   cutonfold,
   dimension,
