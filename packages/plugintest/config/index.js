@@ -30,7 +30,7 @@ export default {
   parts: [
     'banner',
     'bartack',
-    //'buttons',
+    'buttons',
     //'cutonfold',
     //'dimension',
     //'flip',
@@ -52,7 +52,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'banner',
+      dflt: 'buttons',
       list: [
         'banner',
         'bartack',
