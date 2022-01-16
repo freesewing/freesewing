@@ -60,7 +60,7 @@ Before we flip your cuff over, we need to trim back the seam allowance to remove
 
 ![Press back seam allowance](2c.png)
 
-Fold back the seam allowance on the sleeve side, and press it down.
+Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
 
 > If you sewed too far along the edge earlier, you will have to unpick a few stitches.
 
