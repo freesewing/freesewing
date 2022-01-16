@@ -19,6 +19,7 @@ macro('bartack', {
 
 | Property     | Default    | Type       | Description | 
 |-------------:|------------|------------|-------------|
+| `anchor`     |            | `Point`    | The point to start the bartack from |
 | `angle`      | `0`        | `number`   | The angle under which to draw the bartack |
 | `density`    | `3`        | `number`   | Controls how close the stitches are togeter |
 | `length`     | `15`       | `number`   | Length of the bartack |
