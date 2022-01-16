@@ -54,6 +54,7 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "@freesewing/plugin-banner": "^2.19.9",
     "@freesewing/plugin-buttons": "^2.19.9",
     "@freesewing/plugin-cutonfold": "^2.19.9",
     "@freesewing/plugin-dimension": "^2.19.9",

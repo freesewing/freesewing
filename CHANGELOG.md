@@ -1,6 +1,63 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+### components
+
+#### Added
+
+ - Added support for `settings.scale` to Draft and Workbench components
+
+#### Fixed
+
+ - Support handling of `&#160;` in text
+
+### core
+
+#### Added
+
+ - Added support for `settings.scale`
+
+### css-theme
+
+#### Added
+
+ - Added support for `settings.scale`
+
+### plugin-banner
+
+#### Changed
+
+ - Changed the default options
+ - Now part of `@freesewing/plugin-bundle`
+
+### plugin-bartack
+
+#### Changed
+
+ - Now part of `@freesewing/plugin-bundle`
+
+#### Fixed
+
+ - Fixed issue with `bartackFractionAlong` macro
+ - Handle start and endpoints being the same in `bartackFractionAlong`
+ - Support start and endpoints being reversed in `bartackFractionAlong`
+
+### plugin-bundle
+
+#### Changed
+
+ - plugin-banner is now part of plugin-bundle
+ - plugin-bartack is now part of plugin-bundle
+
+### plugintest
+
+#### Added
+
+ - Added the plugintest pattern which is used for testing plugins
+
+
 ## 2.19.9 (2022-01-09)
 
 ### simon

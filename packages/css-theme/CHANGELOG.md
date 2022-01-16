@@ -1,6 +1,12 @@
 # Change log for: @freesewing/css-theme
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for `settings.scale`
+
 ## 2.16.0 (2021-05-24)
 
 ### Changed

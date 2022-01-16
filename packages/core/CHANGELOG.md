@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for `settings.scale`
+
 ## 2.19.8 (2022-01-08)
 
 ### Fixed
