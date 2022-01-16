@@ -58,6 +58,7 @@ If not lining you should face the skirt when hemming later.
 - Press under the seam allowance on the long edge of the waistband that is not faced.
 - Attach the faced side of the waistband, *good sides together* to the skirt. There will be some overhang, the side you wish not to overlap should be overhang by your seam allowance. The side intended to overlap will have a greater overhang. Trim seam.
 - Press the waistband and seam allowance up and away from the skirt.
+- If inserting a zipper now is the time to do so, attach the zipper from the fold line down. Then follow the rest of the instructions ommiting overhangs and other closures. You will need to attach the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
 - Press the waistband *good sides together* along fold-line. 
 - Sew the overhangs with your seam allowance.
 - Turn the waistband out and to the inside, Press.
