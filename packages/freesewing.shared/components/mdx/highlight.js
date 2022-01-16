@@ -1,3 +1,5 @@
+import CopyToClipboard from 'shared/components/copy-to-clipboard'
+
 const names = {
   js: 'javascript',
   bash: 'bash',
@@ -5,16 +7,21 @@ const names = {
 }
 
 const Highlight = (props) => {
-  const {
-    children=[],
-    className='language-js',
-  } = props
+
+  const { children=[], className='language-js' } = props
   const language = props.children.props.className.split('-').pop()
 
   return (
     <div className="hljs my-4">
-      <div className={`text-xs uppercase font-bold text-neutral-content mt-1 text-center border-b border-neutral-content border-opacity-25 py-1 mb-2 lg:text-sm`}>
-        {names[language] ? names[language] : language}
+      <div className={`
+        flex flex-row justify-between
+        text-xs uppercase font-bold text-neutral-content
+        mt-1 border-b border-neutral-content border-opacity-25
+        py-1 mb-2 lg:text-sm
+      `}>
+        <span>&nbsp;</span>
+        <span>{names[language] ? names[language] : language}</span>
+        <CopyToClipboard content={children} />
       </div>
       <pre className={`language-${language} hljs text-base lg:text-lg whitespace-pre-wrap break-words`}>
         {children}
