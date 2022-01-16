@@ -12,8 +12,7 @@ To make Sandy, you will need the following:
 Due to the many different styles of Sandy it is difficult to precisely say what you need so we will go through some of the options.
 
 ##### Main Fabric
-The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficent with 2 - 2.5 metres whearas a floor length will require more unless it is not a full skirt.
-If in doubt buy a metre more than you think. Also don't be afraid to piece if your fabric is not wide or long enough as 
+The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficent with 2 - 2.5 metres whearas a floor length will require more. If in doubt buy a metre more than you think. Also don't be afraid to piece if your fabric is not wide or long enough, it is better to have an extra seam than not to use the fabric you like.
 
 <Note>
 
@@ -30,17 +29,16 @@ If making a **seamless** Sandy you will need to make sure the width of your fabr
 ##### Lining Fabric
 
 Lining fabric is only really needed if your main fabric is unpleasant to have against the skin or hard to wash. You will need the same amount as your main fabric if you are fully lining the skirt.
-If you only intend to make pockets with a liningy you only need 0.25 - 0.5 metres of fabric.
+If you only intend to make pockets with a lining you only need 0.25 - 0.5 metres of fabric.
 
 ##### Hem Facing
 
-To add flare/keep the hems shape you may wish to add a facing the bottom of the skirt. This can be done multiple ways such as the use of horsehair braid or tarlatan and really depends on the look you are going for and the fabric you are using.
+To add flare/keep the hems shape you may wish to add a facing to the bottom of the skirt. This can be done multiple ways such as the use of horsehair braid or tarlatan and really depends on the look you are going for and the fabric you are using.
 
 ##### Closures
 
 If not making an elasticated Sandy you will need some type of closure.
-This can be just a zip that is inserted in to the waistband and seam.
-It can be buttons, dress hooks, or snaps with an overlapping waistband and an openining, placket or zipper at the top of the seam.
+This can be just a zip that is inserted in to the waistband and seam or it can be buttons, dress hooks, or snaps with an overlapping waistband and an openining, placket or zipper at the top of the seam.
 
 ##### Elastic
 
