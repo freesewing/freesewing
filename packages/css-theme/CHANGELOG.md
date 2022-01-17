@@ -6,6 +6,7 @@
 ### Added
 
  - Added support for `settings.scale`
+ - Included variables used by TailwindCSS themes for compatibility
 
 ## 2.16.0 (2021-05-24)
 

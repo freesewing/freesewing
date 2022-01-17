@@ -24,6 +24,7 @@
 #### Added
 
  - Added support for `settings.scale`
+ - Included variables used by TailwindCSS themes for compatibility
 
 ### plugin-banner
 

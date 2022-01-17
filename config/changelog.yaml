@@ -8,6 +8,7 @@ unreleased:
 
     css-theme:
       - Added support for `settings.scale`
+      - Included variables used by TailwindCSS themes for compatibility
 
     plugintest:
       - Added the plugintest pattern which is used for testing plugins
