@@ -24,14 +24,19 @@ export default {
       'bartackWidth',
       'bartackStart',
       'bartackEnd',
-    ]
+    ],
+    cutonfold: [
+      'cutonfoldMargin',
+      'cutonfoldOffset',
+      'cutonfoldGrainline',
+    ],
   },
   measurements: [],
   parts: [
     'banner',
     'bartack',
     'buttons',
-    //'cutonfold',
+    'cutonfold',
     //'dimension',
     //'flip',
     //'gore',
@@ -52,7 +57,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'buttons',
+      dflt: 'cutonfold',
       list: [
         'banner',
         'bartack',
@@ -88,5 +93,9 @@ export default {
     bartackWidth: {count: 3, min: 1, max: 5 },
     bartackStart: {pct: 25, min: 0, max: 100 },
     bartackEnd: {pct: 75, min: 0, max: 100 },
+    // Cutonfold options
+    cutonfoldMargin: { count: 5, min: 0, max: 25 },
+    cutonfoldOffset: { count: 15, min: 0, max: 100 },
+    cutonfoldGrainline: { bool: false },
   },
 }
