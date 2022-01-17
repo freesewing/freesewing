@@ -1,3 +1,42 @@
+/* These vars are needed for those components already using TailwindCSS */
+:root {
+  /* Pattern background color */
+  --pattern-bg: #f8f9fa;
+  /* Color for the main fabric */
+  --pattern-fabric: #212529;
+  /* Color for lining fabric */
+  --pattern-lining: #74b816;
+  /* Color for interfacing */
+  --pattern-interfacing: #f03e3e;
+  /* Color for canvas */
+  --pattern-canvas: #f59f00;
+  /* Color for various fabric types */
+  --pattern-various: #ae3ec9;
+  /* Color for marking things on a pattern */
+  --pattern-mark: #4dabf7;
+  /* Color to provide contrast on a pattern */
+  --pattern-contrast: #f76707;
+  /* Color for noting things on a pattern */
+  --pattern-note: #f76707;
+
+  /* Pattern xs text size */
+  --pattern-text-xs: '0.2rem';
+  /* Pattern sm text size */
+  --pattern-text-sm: '0.3rem';
+  /* Pattern default text size */
+  --pattern-text: '0.4rem';
+  /* Pattern lg text size */
+  --pattern-text-lg: '0.6rem';
+  /* Pattern xl text size */
+  --pattern-text-xl: '0.8rem';
+  /* Pattern 2xl text size */
+  --pattern-text-2xl: '1.5rem';
+  /* Pattern 3xl text size */
+  --pattern-text-3xl: '2rem';
+}
+
+
+
 svg.freesewing.pattern {
   max-width: 100%;
   /* Reset */
