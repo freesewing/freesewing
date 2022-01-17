@@ -7747,10 +7747,10 @@ better-opn@^3.0.0:
   dependencies:
     open "^8.0.4"
 
-bezier-js@^4.0.3, bezier-js@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-4.1.1.tgz#414df656833104e86765c0fa5e31439fb3e83a34"
-  integrity sha512-oVOS6SSFFFlfnZdzC+lsfvhs/RRcbxJ47U04M4s5QIBaJmr3YWmTIL3qmrOK9uW+nUUcl9Jccmo/xpTrG+bBoQ==
+bezier-js@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-5.1.0.tgz#49f5f3b2aba543a2be7987bd561b2a75c9b6a164"
+  integrity sha512-VHg016m6DarlJRAg6mcSUN/9czTLhenTyrlO6OqPH3TECq12R+XmBJQq9XQzKW6zGNF+VHV2vq4gTIWDXQXftA==
 
 bfj@^7.0.2:
   version "7.0.2"
