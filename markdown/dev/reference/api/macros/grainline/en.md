@@ -11,7 +11,7 @@ It is provided by the [grainline plugin](/reference/plugins/grainline/).
 macro("grainline", {
   from: points.grainlineFrom,
   to: points.grainlineTo,
-}
+})
 ```
 
 | Property    | Default     | Type       | Description                                  | 

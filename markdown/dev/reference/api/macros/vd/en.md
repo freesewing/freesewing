@@ -5,10 +5,9 @@ title: vd
 The `vd` macro adds a *vertical dimension* to your pattern.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
-<Example 
-  part="point_dy"
-  caption="An example of a vertical dimension"
-/>
+<Example part="point_dy">
+An example of a vertical dimension
+</Example>
 
 ```js
 macro('vd', {

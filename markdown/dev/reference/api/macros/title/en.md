@@ -5,7 +5,7 @@ title: title
 The `title` macro adds a title to a pattern part.  
 It is provided by the [title plugin](/reference/plugins/title).
 
-<Example part="plugin_title" caption="Example of a title added by this macro" />
+<Example part="plugin_title">Example of a title added by this macro</Example>
 
 | Property   | Default | Type                | Description | 
 | ----------:| :-----: | ---------------------------------------------------------- |

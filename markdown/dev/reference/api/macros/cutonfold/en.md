@@ -12,7 +12,7 @@ macro('cutonfold', {
   from: points.cofLeft,
   to: points.cofRight,
   grainline: true
-}
+})
 ```
 
 | Property    | Default | Type                | Description | 
