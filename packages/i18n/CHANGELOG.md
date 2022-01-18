@@ -1,6 +1,12 @@
 # Change log for: @freesewing/i18n
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Fixed issue that was causing plugin translations to always be in English
+
 ## 2.19.0 (2021-10-17)
 
 ### Fixed

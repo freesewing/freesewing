@@ -1,6 +1,16 @@
 # Change log for: @freesewing/plugin-title
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for `settings.scale`
+
+### Removed
+
+ - Removed rendering of config.cut as it's not used
+
 ## 2.19.6 (2021-12-29)
 
 ### Added

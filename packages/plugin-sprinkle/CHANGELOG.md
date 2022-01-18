@@ -1,6 +1,13 @@
 # Change log for: @freesewing/plugin-sprinkle
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for `scale` to scale all sprinkled snippets
+ - Added support for `rotate` to rotate all sprinkled snippets
+
 ## 2.19.6 (2021-12-29)
 
 ### Added

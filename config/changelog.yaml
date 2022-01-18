@@ -14,20 +14,13 @@ unreleased:
       - Added support for flipping around the Y-axis
     plugin-grainline:
       - Added support for custom text
+    plugin-sprinkle:
+      - Added support for `scale` to scale all sprinkled snippets
+      - Added support for `rotate` to rotate all sprinkled snippets
+    plugin-title:
+      - Added support for `settings.scale`
     plugintest:
       - Added the plugintest pattern which is used for testing plugins
-
-
-  Fixed:
-    components:
-      - Support handling of `&#160;` in text
-    plugin-bartack:
-      - Fixed issue with `bartackFractionAlong` macro
-      - Handle start and endpoints being the same in `bartackFractionAlong`
-      - Support start and endpoints being reversed in `bartackFractionAlong`
-    plugin-dimension:
-      - Support hiding start/end markers on path dimensions (pd macro)
-
 
   Changed:
     plugin-bundle:
@@ -41,6 +34,23 @@ unreleased:
     plugin-gore:
       - The `goreNumber` property of the gore macro has been renamed to `gores`
       - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
+
+  Fixed:
+    components:
+      - Support handling of `&#160;` in text
+    i18n:
+      - Fixed issue that was causing plugin translations to always be in English
+    plugin-bartack:
+      - Fixed issue with `bartackFractionAlong` macro
+      - Handle start and endpoints being the same in `bartackFractionAlong`
+      - Support start and endpoints being reversed in `bartackFractionAlong`
+    plugin-dimension:
+      - Support hiding start/end markers on path dimensions (pd macro)
+
+  Removed:
+    plugin-title:
+      - Removed rendering of config.cut as it's not used
+
 
 2.19.9:
   date: 2022-01-09

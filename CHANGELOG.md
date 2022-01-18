@@ -26,6 +26,18 @@
  - Added support for `settings.scale`
  - Included variables used by TailwindCSS themes for compatibility
 
+### examples
+
+#### Added
+
+ - Added plugin_gore example
+
+### i18n
+
+#### Fixed
+
+ - Fixed issue that was causing plugin translations to always be in English
+
 ### plugin-banner
 
 #### Changed
@@ -76,6 +88,23 @@
 #### Added
 
  - Added support for custom text
+
+### plugin-sprinkle
+
+#### Added
+
+ - Added support for `scale` to scale all sprinkled snippets
+ - Added support for `rotate` to rotate all sprinkled snippets
+
+### plugin-title
+
+#### Added
+
+ - Added support for `settings.scale`
+
+#### Removed
+
+ - Removed rendering of config.cut as it's not used
 
 ### plugintest
 

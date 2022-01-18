@@ -1,6 +1,12 @@
 # Change log for: @freesewing/examples
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added plugin_gore example
+
 ## 2.15.0 (2021-04-15)
 
 ### Added
