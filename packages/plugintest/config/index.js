@@ -56,7 +56,7 @@ export default {
     'logo',
     'measurements',
     'mirror',
-    //'notches',
+    'notches',
     //'round',
     //'scalebox',
     //'sprinkle',
@@ -68,7 +68,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'mirror',
+      dflt: 'notches',
       list: [
         'all',
         'banner',

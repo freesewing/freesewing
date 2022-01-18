@@ -14,7 +14,7 @@ import grainline from '@freesewing/plugin-grainline'
 import logo from '@freesewing/plugin-logo'
 import measurements from '@freesewing/plugin-measurements'
 import mirror from '@freesewing/plugin-mirror'
-//import notches from '@freesewing/plugin-notches'
+import notches from '@freesewing/plugin-notches'
 //import round from '@freesewing/plugin-round'
 //import scalebox from '@freesewing/plugin-scalebox'
 //import sprinkle from '@freesewing/plugin-sprinkle'
@@ -36,7 +36,7 @@ import draftI18n from './plugin-i18n'
 import draftLogo from './plugin-logo'
 import draftMeasurements from './plugin-measurements'
 import draftMirror from './plugin-mirror'
-//import draftNotches from './plugin-notches'
+import draftNotches from './plugin-notches'
 //import draftRound from './plugin-round'
 //import draftScalebox from './plugin-scalebox'
 //import draftSprinkle from './plugin-sprinkle'
@@ -64,7 +64,7 @@ const plugins = [
   logo,
   measurements,
   mirror,
-//  notches,
+  notches,
 //  round,
 //  scalebox,
 //  sprinkle,
@@ -88,7 +88,7 @@ const methods = {
   draftLogo,
   draftMeasurements,
   draftMirror,
-//  draftNotches,
+  draftNotches,
 //  draftRound,
 //  draftScalebox,
 //  draftSprinkle,
