@@ -12,7 +12,7 @@ describe('Title Plugin Tests', () => {
   it("Should import the style", () => {
     const patternStyle = pattern.svg.style.toString();
     const pluginStyle = style.default;
-    expect(patternStyle).to.equal(`svg.freesewing.pattern { --pattern-scale: 1 }${pluginStyle}`);
+    expect(patternStyle).to.equal(pluginStyle);
   });
 
   it("Should run the title macro", () => {
@@ -41,14 +41,14 @@ describe('Title Plugin Tests', () => {
     expect(p.attributes.get("data-text")).to.equal("unitTest");
     expect(p.attributes.get("data-text-class")).to.equal("text-lg fill-current font-bold");
     expect(p.attributes.get("data-text-x")).to.equal("-12");
-    expect(p.attributes.get("data-text-y")).to.equal("-21");
+    expect(p.attributes.get("data-text-y")).to.equal("-26");
     p = pattern.parts.test.points.__titlePattern;
     expect(p.attributes.get("data-text")).to.equal("testPattern v99");
     expect(p.attributes.get("data-text-class")).to.equal(
       "fill-note"
     );
     expect(p.attributes.get("data-text-x")).to.equal("-12");
-    expect(p.attributes.get("data-text-y")).to.equal("-14");
+    expect(p.attributes.get("data-text-y")).to.equal("-18");
   });
 
   it("Should run the title macro with append flag", () => {
@@ -109,11 +109,11 @@ describe('Title Plugin Tests', () => {
     expect(p.attributes.get("data-text")).to.equal("unitTest");
     expect(p.attributes.get("data-text-class")).to.equal("text-lg fill-current font-bold");
     expect(p.attributes.get("data-text-x")).to.equal("-12");
-    expect(p.attributes.get("data-text-y")).to.equal("-21");
+    expect(p.attributes.get("data-text-y")).to.equal("-26");
     p = pattern.parts.test.points._foo_titlePattern;
     expect(p.attributes.get("data-text")).to.equal("testPattern v99");
     expect(p.attributes.get("data-text-class")).to.equal("fill-note");
     expect(p.attributes.get("data-text-x")).to.equal("-12");
-    expect(p.attributes.get("data-text-y")).to.equal("-14");
+    expect(p.attributes.get("data-text-y")).to.equal("-18");
   });
 });
