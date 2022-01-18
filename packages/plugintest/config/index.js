@@ -36,6 +36,7 @@ export default {
       'dimensionEndMarker',
       'dimensionStartMarker',
     ],
+    flip: [ 'flipAxis' ],
   },
   measurements: [],
   parts: [
@@ -44,7 +45,7 @@ export default {
     'buttons',
     'cutonfold',
     'dimension',
-    //'flip',
+    'flip',
     //'gore',
     //'grainline',
     //'i18n',
@@ -63,7 +64,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'dimension',
+      dflt: 'flip',
       list: [
         'all',
         'banner',
@@ -109,5 +110,7 @@ export default {
     dimensionD: { count: 10, min: -20, max: 20 },
     dimensionEndMarker: { bool: true },
     dimensionStartMarker: { bool: true },
-  },
+    // Flip options
+    flipAxis: { dflt: 'x', list: ['x', 'y'] },
+  }
 }
