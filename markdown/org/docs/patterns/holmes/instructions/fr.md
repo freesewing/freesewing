@@ -30,7 +30,7 @@ Ces instructions supposent que vous avez marqué vos lignes de couture. Ils peuv
 - With right sides together, matching seam lines and peaks, sew two crown pieces together.
 - Press seams open. Vous avez fait besoin d'utiliser un jambon tailleur pour cela, si vous n'en avez pas, vous pouvez utiliser des flanques ou des serviettes à la place.
 - (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat steps 1 and 2 until you have two halves. Si la moitié du nombre de pièces de couronne est un nombre impair, vous devrez coudre une pièce à chaque moitié. Par exemple, si vous avez 6 pièces de couronne, vous fabriquez deux moitiés de 3 pièces cousues ensemble à deux pièces.
+- Repeat until you have two halves. Si la moitié du nombre de pièces de couronne est un nombre impair, vous devrez coudre une pièce à chaque moitié. Par exemple, si vous avez 6 pièces de couronne, vous fabriquez deux moitiés de 3 pièces cousues ensemble à deux pièces.
 - With right sides together, matchinig seam lines and peaks, sew the two halves together. Il peut être plus facile de broder le sommet ensemble en raison de la masse ou de la précision. Cette couture sera désignée comme la « couture de couronne centrale » qui va de l'avant.
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
 
@@ -51,7 +51,7 @@ Selon votre marge de couture, vous pourriez vouloir couper les coutures au fur e
 - Turn inside out and press.
 - (Optional) _Topstitch_ or _edgestitch_ the folded edge.
 - _Baste_ the raw edges together.
-- Repeat steps 3 to 7 for the remaining ear flap.
+- Repeat for the remaining ear flap.
 
 <Tip>
 
@@ -75,7 +75,7 @@ If you prefer you can make your custom ties with fabric, you can find how to do 
 - (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
 - _Baste_ the raw edges together.
 - Sew the buttonhole in your prefered method.
-- Repeat steps 2 to 7 for the remaining ear flap.
+- Repeat for the remaining ear flap.
 
 <Warning>
 
@@ -126,7 +126,7 @@ If preferred you can temporarily attach the bill insert another way that does no
 - Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
 - Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
 - _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
-- Repeat steps 1 to 6 for the remaining visor pieces.
+- Repeat for the remaining visor pieces.
 
 ### Étape 5 : Assemblage et doublure
 
@@ -136,11 +136,11 @@ Une fois de plus, il y a deux méthodes pour l'assemblage et la doublure finales
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
 - Sew ear flap to the crown along seam lines.
-- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.
+- Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
 - Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.
-- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.
+- Repeat for the remaining visor on the opposite side of the centre crown seam.
 - Remove all pad and basting stitches.
 - Press the seam allowances inwards, making sure the stitching is not visible on the outside.
 - (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.
@@ -155,11 +155,11 @@ Une fois de plus, il y a deux méthodes pour l'assemblage et la doublure finales
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
 - _Baste_ the ear flap to the crown along seam lines
-- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.
+- Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
 - (Optional) Machine-baste the visor to the crown along seam lines.
-- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.
+- Repeat for the remaining visor on the opposite side of the centre crown seam.
 - Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
 - With right sides together, matching centre crown seams, panel seams and seam lines. Coudre la doublure à la couronne le long des lignes de couture. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures.
 - Turn hat inside out, pressing lining to inside.
@@ -188,7 +188,7 @@ If you are having trouble dealing with the curves of the bills, sew a stitching 
 
 **Pour les méthodes d'assemblage et de doublage**  
 
-Les instructions d'assemblage et de confection sont écrites avec 6 panneaux en tête. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule generally the centre front of the bill is always on the centre crown seam so go from there if struggling.
+Les instructions d'assemblage et de confection sont écrites avec 6 panneaux en tête. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
@@ -201,13 +201,13 @@ Si vous n'avez pas réduit vos attaches lors de la construction de l'oreille, il
 - Fold the ends of a tie in half and cut a triangle out from the corner to the fold.
 - Unfold.
 - If you are worried about the ties fraying you can use fray check or equivalent.
-- Repeat steps 1 to 3 for the remaining tie.
+- Repeat for the remaining tie.
 
 #### Méthode de finition des cravates 2
 
 - Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.
 - _Whipstitch_ the folded edge down to the tie
-- Repeat steps 1 to 2 for the remaining tie.
+- Repeat for the remaining tie.
 
 <Note>
 

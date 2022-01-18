@@ -2,11 +2,11 @@
 
 ![Rincez la couture de l'armures](step03.png)
 
-Terminez la couture du manche avec un ourlet étroit.
+- Finish the armhole seam with a narrow hem.
 
 ### Étape 2 : Terminer le haut
 
-![Coudre les trois lignes de couture marquées sur votre brouillon](step04.png)
+![Sew the three seamlines that are marked on your draft](step04.png)
 
 <Note>
 
@@ -15,4 +15,8 @@ De cette façon, votre top ne peut pas se déplacer pendant que nous le finisson
 
 </Note>
 
-Coudre les trois lignes de couture qui sont marquées sur votre brouillon.
+- Sew the three seamlines that are marked on your draft. F-H, C and I-J in the diagram, represented by lines and notches on the pattern.
+
+### Step 3: Enjoy!
+
+Now enjoy your new top and it's zero waste properties!
