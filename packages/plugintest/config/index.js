@@ -25,6 +25,7 @@ export default {
       'bartackStart',
       'bartackEnd',
     ],
+    buttons: [ 'buttonsScale', 'buttonsRotate' ],
     cutonfold: [
       'cutonfoldMargin',
       'cutonfoldOffset',
@@ -38,6 +39,7 @@ export default {
     ],
     flip: [ 'flipAxis' ],
     gore: [ 'goreRadius', 'goreGoreNumber', 'goreExtraLength' ],
+    logo: [ 'logoScale', 'logoRotate' ],
   },
   measurements: [],
   parts: [
@@ -50,7 +52,7 @@ export default {
     'gore',
     'grainline',
     'i18n',
-    //'logo',
+    'logo',
     //'measurements',
     //'mirror',
     //'notches',
@@ -65,7 +67,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'i18n',
+      dflt: 'logo',
       list: [
         'all',
         'banner',
@@ -102,6 +104,9 @@ export default {
     bartackWidth: {count: 3, min: 1, max: 5 },
     bartackStart: {pct: 25, min: 0, max: 100 },
     bartackEnd: {pct: 75, min: 0, max: 100 },
+    // Buttons options
+    buttonsScale: { pct: 100, min: 10, max: 200 },
+    buttonsRotate: { deg: 0, min: -360, max: 360 },
     // Cutonfold options
     cutonfoldMargin: { count: 5, min: 0, max: 25 },
     cutonfoldOffset: { count: 15, min: 0, max: 100 },
@@ -117,6 +122,9 @@ export default {
     goreRadius: { count: 20, min: 10, max: 30 },
     goreGoreNumber: { count: 6, min: 4, max: 8 },
     goreExtraLength: { count: 10, min: 0, max: 20 },
+    // Logo options
+    logoScale: { pct: 100, min: 10, max: 200 },
+    logoRotate: { deg: 0, min: -360, max: 360 },
 
   }
 }

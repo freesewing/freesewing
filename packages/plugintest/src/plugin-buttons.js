@@ -17,6 +17,8 @@ const draftButtons = part => {
     for (const add of addThese) {
       points[add] = new Point(x, 0)
       snippets[add] = new Snippet(add, points[add])
+        .attr('data-scale', options.buttonsScale)
+        .attr('data-rotate', options.buttonsRotate)
       x += 20
     }
 
