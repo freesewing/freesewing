@@ -37,6 +37,7 @@ export default {
       'dimensionStartMarker',
     ],
     flip: [ 'flipAxis' ],
+    gore: [ 'goreRadius', 'goreGoreNumber', 'goreExtraLength' ],
   },
   measurements: [],
   parts: [
@@ -46,7 +47,7 @@ export default {
     'cutonfold',
     'dimension',
     'flip',
-    //'gore',
+    'gore',
     //'grainline',
     //'i18n',
     //'logo',
@@ -64,7 +65,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'flip',
+      dflt: 'gore',
       list: [
         'all',
         'banner',
@@ -112,5 +113,10 @@ export default {
     dimensionStartMarker: { bool: true },
     // Flip options
     flipAxis: { dflt: 'x', list: ['x', 'y'] },
+    // Gore options
+    goreRadius: { count: 20, min: 10, max: 30 },
+    goreGoreNumber: { count: 6, min: 4, max: 8 },
+    goreExtraLength: { count: 10, min: 0, max: 20 },
+
   }
 }
