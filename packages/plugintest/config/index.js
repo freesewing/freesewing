@@ -53,7 +53,7 @@ export default {
     'grainline',
     'i18n',
     'logo',
-    //'measurements',
+    'measurements',
     //'mirror',
     //'notches',
     //'round',
@@ -67,7 +67,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'logo',
+      dflt: 'measurements',
       list: [
         'all',
         'banner',
