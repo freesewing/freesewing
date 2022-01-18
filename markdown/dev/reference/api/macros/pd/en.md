@@ -17,11 +17,11 @@ macro('pd', {
 | Property        | Default | Type                | Description | 
 |----------------:|---------|---------------------|-------------|
 | `path`          |         | [Path](/reference/api/path)   | The path to draw the dimension along |
-| `offset`        | 0       | Number              | The offset at which to draw the dimension |
+| `d`             | 0       | Number              | The offset at which to draw the dimension |
 | `text`          | Path length | Number          | The text to go on the dimension if not the length of the path |
 | `id`            | auto-assigned | String | A custom ID under wich paths and points will be created |
 | `noStartMarker` | `false` | Boolean             | Whether to not draw a start marker |
-| `noEndMarker`  | `false` | Boolean             | Whether to not draw an end marker |
+| `noEndMarker`   | `false` | Boolean             | Whether to not draw an end marker |
 
 <Note>
 
