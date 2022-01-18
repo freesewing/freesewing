@@ -34,7 +34,6 @@ const getPoints = (path, so) => {
     points.path2.push(path2.shiftFractionAlong((1 / steps) * i))
   }
 
-console.log(points, path.length(), path)
   return points
 }
 
