@@ -14,8 +14,10 @@ macro("grainline", {
 }
 ```
 
-| Property    | Default | Type                | Description | 
-|------------:|---------|---------------------|-------------|
-| `from`      |         | [Point](/reference/api/point) | The startpoint of the *grainline* indicator |
-| `to`        |         | [Point](/reference/api/point) | The endpoint of the *grainline* indicator |
+| Property    | Default     | Type       | Description                                  | 
+|------------:|-------------|------------|----------------------------------------------|
+| `from`      |             | [Point][1] | The startpoint of the *grainline* indicator  |
+| `to`        |             | [Point][1] | The endpoint of the *grainline* indicator    |
+| `text`      | 'grainline' | string     | The text to put on the *grainline* indicator |
 
+[1]: /reference/api/point
