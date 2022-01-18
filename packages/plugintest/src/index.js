@@ -19,8 +19,6 @@ import round from '@freesewing/plugin-round'
 import scalebox from '@freesewing/plugin-scalebox'
 import sprinkle from '@freesewing/plugin-sprinkle'
 import title from '@freesewing/plugin-title'
-//import validate from '@freesewing/plugin-validate'
-//import versionfreeSvg from '@freesewing/plugin-versionfree-svg'
 // Parts
 import draftBanner from './plugin-banner'
 import draftBartack from './plugin-bartack'
@@ -39,8 +37,6 @@ import draftRound from './plugin-round'
 import draftScalebox from './plugin-scalebox'
 import draftSprinkle from './plugin-sprinkle'
 import draftTitle from './plugin-title'
-//import draftValidate from './plugin-validate'
-//import draftVersionfreeSvg from './plugin-versionfree-svg'
 
 
 const plugins = [
@@ -62,8 +58,6 @@ const plugins = [
   scalebox,
   sprinkle,
   title,
-//  validate,
-//  versionfreeSvg,
 ]
 
 const methods = {
@@ -84,8 +78,6 @@ const methods = {
   draftScalebox,
   draftSprinkle,
   draftTitle,
-//  draftValidate,
-//  draftVersionfreeSvg,
 }
 
 // Create design

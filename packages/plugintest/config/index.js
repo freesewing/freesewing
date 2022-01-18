@@ -71,8 +71,6 @@ export default {
     'scalebox',
     'sprinkle',
     'title',
-    //'validate',
-    //'versionfreeSvg',
   ],
   options: {
     plugin: {
