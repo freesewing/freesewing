@@ -142,7 +142,7 @@ export default {
     sprinkleScale: { pct: 100, min: 10, max: 200 },
     sprinkleRotate: { deg: 0, min: -360, max: 360 },
     sprinkleSnippet: {
-      dflt: 'title',
+      dflt: 'bnotch',
       list: [
         'notch',
         'bnotch',
