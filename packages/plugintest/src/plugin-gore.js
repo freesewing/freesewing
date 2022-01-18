@@ -8,7 +8,7 @@ const draftDimension = part => {
     macro('gore', {
       from: points.start,
       radius: options.goreRadius,
-      goreNumber: options.goreGoreNumber,
+      gores: options.goreGoreNumber,
       extraLength: options.goreExtraLength,
       render: true,
     })
