@@ -40,6 +40,7 @@ export default {
     flip: [ 'flipAxis' ],
     gore: [ 'goreRadius', 'goreGoreNumber', 'goreExtraLength' ],
     logo: [ 'logoScale', 'logoRotate' ],
+    mirror: [ 'mirrorLine', 'mirrorClone' ],
   },
   measurements: [],
   parts: [
@@ -54,7 +55,7 @@ export default {
     'i18n',
     'logo',
     'measurements',
-    //'mirror',
+    'mirror',
     //'notches',
     //'round',
     //'scalebox',
@@ -67,7 +68,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'measurements',
+      dflt: 'mirror',
       list: [
         'all',
         'banner',
@@ -125,6 +126,9 @@ export default {
     // Logo options
     logoScale: { pct: 100, min: 10, max: 200 },
     logoRotate: { deg: 0, min: -360, max: 360 },
+    // Mirror options
+    mirrorLine: { dflt: 'a', list: ['a', 'b', 'none' ] },
+    mirrorClone: { bool: true },
 
   }
 }
