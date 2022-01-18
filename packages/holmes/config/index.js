@@ -15,7 +15,7 @@ export default {
     fit: ['headEase'],
     style: [
       'lengthRatio',
-      'goreNumber',
+      'gores',
       'visorAngle',
       'visorWidth',
       'earLength',
@@ -41,7 +41,7 @@ export default {
       ...pctBasedOn('head'),
     },
     lengthRatio: { pct: 55, min: 40, max: 60 },
-    goreNumber: { count: 6, min: 4, max: 20 },
+    gores: { count: 6, min: 4, max: 20 },
     visorAngle: { deg: 45, min: 10, max: 90 },
     visorWidth: { pct: 5, min: 1, max: 17, snap: 5, ...pctBasedOn('head') },
     earLength: { pct: 100, min: 80, max: 150 },
