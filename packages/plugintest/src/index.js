@@ -5,7 +5,7 @@ import banner from '@freesewing/plugin-banner'
 import bartack from '@freesewing/plugin-bartack'
 import buttons from '@freesewing/plugin-buttons'
 import cutonfold from '@freesewing/plugin-cutonfold'
-//import dimension from '@freesewing/plugin-dimension'
+import dimension from '@freesewing/plugin-dimension'
 //import flip from '@freesewing/plugin-flip'
 //import gore from '@freesewing/plugin-gore'
 //import grainline from '@freesewing/plugin-grainline'
@@ -27,7 +27,7 @@ import draftBanner from './plugin-banner'
 import draftBartack from './plugin-bartack'
 import draftButtons from './plugin-buttons'
 import draftCutonfold from './plugin-cutonfold'
-//import draftDimension from './plugin-dimension'
+import draftDimension from './plugin-dimension'
 //import draftFlip from './plugin-flip'
 //import draftGore from './plugin-gore'
 //import draftGrainline from './plugin-grainline'
@@ -54,7 +54,7 @@ const plugins = [
   bartack,
   buttons,
   cutonfold,
-//  dimension,
+  dimension,
 //  flip,
 //  gore,
 //  grainline,
@@ -78,7 +78,7 @@ const methods = {
   draftBartack,
   draftButtons,
   draftCutonfold,
-//  draftDimension,
+  draftDimension,
 //  draftFlip,
 //  draftGore,
 //  draftGrainline,

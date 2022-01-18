@@ -2,7 +2,7 @@ const draftCutonfold = part => {
 
   const { points, Point, paths, Path, options, macro } = part.shorthand()
 
-  if (options.plugin === 'cutonfold') {
+  if (['cutonfold', 'all'].indexOf(options.plugin) !== -1) {
 
     points.a = new Point(0,0)
     points.b = new Point(200,0)

@@ -11,7 +11,7 @@ const draftButtons = part => {
 
   const { points, Point, paths, Path, snippets, Snippet, options } = part.shorthand()
 
-  if (options.plugin === 'buttons') {
+  if (['buttons', 'all'].indexOf(options.plugin) !== -1) {
 
     let x = 10
     for (const add of addThese) {

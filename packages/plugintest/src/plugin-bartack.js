@@ -11,7 +11,7 @@ const draftBartack = part => {
 
   const { points, Point, paths, Path, macro, options } = part.shorthand()
 
-  if (options.plugin === 'bartack') {
+  if (['bartack', 'all'].indexOf(options.plugin) !== -1) {
     points.bartack = new Point(0,0)
     macro('bartack', {
       anchor: points.bartack,

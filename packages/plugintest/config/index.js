@@ -30,6 +30,12 @@ export default {
       'cutonfoldOffset',
       'cutonfoldGrainline',
     ],
+    dimension: [
+      'dimensionCustomText',
+      'dimensionD',
+      'dimensionEndMarker',
+      'dimensionStartMarker',
+    ],
   },
   measurements: [],
   parts: [
@@ -37,7 +43,7 @@ export default {
     'bartack',
     'buttons',
     'cutonfold',
-    //'dimension',
+    'dimension',
     //'flip',
     //'gore',
     //'grainline',
@@ -57,8 +63,9 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'cutonfold',
+      dflt: 'dimension',
       list: [
+        'all',
         'banner',
         'bartack',
         'buttons',
@@ -97,5 +104,10 @@ export default {
     cutonfoldMargin: { count: 5, min: 0, max: 25 },
     cutonfoldOffset: { count: 15, min: 0, max: 100 },
     cutonfoldGrainline: { bool: false },
+    // Dimension options
+    dimensionCustomText: { bool: false },
+    dimensionD: { count: 10, min: -20, max: 20 },
+    dimensionEndMarker: { bool: true },
+    dimensionStartMarker: { bool: true },
   },
 }

@@ -2,7 +2,7 @@ const draftBanner = part => {
 
   const { points, Point, paths, Path, macro, options } = part.shorthand()
 
-  if (options.plugin === 'banner') {
+  if (['banner', 'all'].indexOf(options.plugin) !== -1) {
     points.from = new Point(0,0)
     points.to = new Point(320,0)
 
