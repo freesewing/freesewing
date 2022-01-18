@@ -5,7 +5,9 @@ title: sprinkle
 The `sprinkle` macro facilitates adding snippets to your pattern in bulk.   
 It is by the [sprinkle plugin](/reference/plugins/sprinkle).
 
-<Example part="plugin_sprinkle" caption="Example of button snippets sprinkled on a pattern by this macro" />
+<Example part="plugin_sprinkle">
+Example of button snippets sprinkled on a pattern by this macro
+</Example>
 
 ```js
 macro('sprinkle', {
@@ -18,5 +20,7 @@ macro('sprinkle', {
 |------------:|---------|------------------|-------------|
 | `snippet`   |         | String           | Name of the snippet to sprinkle |
 | `on`        | `[]`    | Array of strings | An array with **the names** of points to add the snippet on |
+| `scale`     | 1       | number           | Scale for the individual snippets |
+| `rotate`    | 0       | number           | Rotation for the individual snippets |
 
 
