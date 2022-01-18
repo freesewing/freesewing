@@ -229,7 +229,11 @@ export default (part) => {
         .line(points.boxPleatRightBottom)
         .attr('class', 'fabric stroke-sm dashed')
     }
-
+//Correcting Brian Waist path
+paths.waist = new Path()
+.move(points.cbWaist)
+.line(points.waist)
+.attr('class','fabric help')
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
       paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')

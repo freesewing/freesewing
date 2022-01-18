@@ -44,6 +44,7 @@ export default {
           'buttonholePlacketWidth',
           'buttonholePlacketFoldWidth',
           'buttonFreeLength',
+		  'buttonholePlacement'
         ],
       },
       {
@@ -59,6 +60,7 @@ export default {
       },
       {
         collar: [
+		  'collarStyle',
           'collarAngle',
           'collarStandBend',
           'collarStandCurve',
@@ -191,7 +193,8 @@ export default {
       list: ['auto', 'never', 'always'],
       dflt: 'auto',
     },
-
+	buttonholePlacement: {dflt:'leftOverRight', list:['leftOverRight','rightOverLeft']},
+	collarStyle: {dflt:'straight', list:['straight','noCollar']},
     // Bool
     boxPleat: { bool: false },
     // Counters

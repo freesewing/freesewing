@@ -122,8 +122,6 @@ export default {
   dependencies: {
     sleeveBase: ['frontBase', 'backBase', 'back'],
     sleeve: ['sleeveBase', 'front', 'back'],
-    frontRight: ['back'],
-    frontLeft: ['back'],
   },
   inject: {
     frontBase: 'base',

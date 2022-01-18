@@ -22,6 +22,7 @@ export default (part) => {
   points.placketTopFold1 = points.cfNeck.shift(180, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(180, width * 1.5)
   points.placketTopEdge = points.cfNeck.shift(180, width * 2.5)
+  points.placketTopIn = points.cfNeck.shift(0, width / 2)
   points.placketBottomFold1 = points.cfHem.shift(180, width / 2)
   points.placketBottomFold2 = points.cfHem.shift(180, width * 1.5)
   points.placketBottomEdge = points.cfHem.shift(180, width * 2.5)
