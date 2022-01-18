@@ -5,40 +5,42 @@ unreleased:
       - Added support for `settings.scale`
     components:
       - Added support for `settings.scale` to Draft and Workbench components
-
     css-theme:
       - Added support for `settings.scale`
       - Included variables used by TailwindCSS themes for compatibility
-
+    examples:
+      - Added plugin_gore example
+    plugin-flip:
+      - Added support for flipping around the Y-axis
+    plugin-grainline:
+      - Added support for custom text
     plugintest:
       - Added the plugintest pattern which is used for testing plugins
 
-  Fixed:
 
+  Fixed:
     components:
       - Support handling of `&#160;` in text
-
     plugin-bartack:
       - Fixed issue with `bartackFractionAlong` macro
       - Handle start and endpoints being the same in `bartackFractionAlong`
       - Support start and endpoints being reversed in `bartackFractionAlong`
-
     plugin-dimension:
       - Support hiding start/end markers on path dimensions (pd macro)
 
 
   Changed:
-
     plugin-bundle:
       - plugin-banner is now part of plugin-bundle
       - plugin-bartack is now part of plugin-bundle
-
     plugin-banner:
       - Changed the default options
       - Now part of `@freesewing/plugin-bundle`
-
     plugin-bartack:
       - Now part of `@freesewing/plugin-bundle`
+    plugin-gore:
+      - The `goreNumber` property of the gore macro has been renamed to `gores`
+      - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
 
 2.19.9:
   date: 2022-01-09

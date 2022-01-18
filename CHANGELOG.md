@@ -58,6 +58,25 @@
 
  - Support hiding start/end markers on path dimensions (pd macro)
 
+### plugin-flip
+
+#### Added
+
+ - Added support for flipping around the Y-axis
+
+### plugin-gore
+
+#### Changed
+
+ - The `goreNumber` property of the gore macro has been renamed to `gores`
+ - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
+
+### plugin-grainline
+
+#### Added
+
+ - Added support for custom text
+
 ### plugintest
 
 #### Added

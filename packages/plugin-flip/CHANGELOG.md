@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-flip
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for flipping around the Y-axis
+
 ## 2.19.6 (2021-12-29)
 
 ### Added

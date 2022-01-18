@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-grainline
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for custom text
+
 ## 2.19.6 (2021-12-29)
 
 ### Added
