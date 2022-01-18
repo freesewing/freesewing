@@ -113,8 +113,15 @@ svg.freesewing.pattern {
   .text-xl {
     font-size: calc(10px * var(--freesewing-pattern-scale));
   }
-  .text-xxl {
+  .text-xxl,
+  .text-2xl {
     font-size: calc(12px * var(--freesewing-pattern-scale));
+  }
+  .text-3xl {
+    font-size: calc(16px * var(--freesewing-pattern-scale));
+  }
+  .text-4xl {
+    font-size: calc(22px * var(--freesewing-pattern-scale));
   }
 
   .center {
@@ -122,6 +129,9 @@ svg.freesewing.pattern {
   }
   .right {
     text-anchor: end;
+  }
+  .font-bold {
+    font-weight: bold;
   }
 
   .scribble {
