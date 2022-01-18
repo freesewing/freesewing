@@ -42,6 +42,7 @@ export default {
     logo: [ 'logoScale', 'logoRotate' ],
     mirror: [ 'mirrorLine', 'mirrorClone' ],
     round: [ 'roundRadius', 'roundRender' ],
+    scalebox: [ 'scaleboxType' ],
   },
   measurements: [],
   parts: [
@@ -59,7 +60,7 @@ export default {
     'mirror',
     'notches',
     'round',
-    //'scalebox',
+    'scalebox',
     //'sprinkle',
     //'svgattr',
     //'theme',
@@ -69,7 +70,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'round',
+      dflt: 'scalebox',
       list: [
         'all',
         'banner',
@@ -133,5 +134,6 @@ export default {
     // Round options
     roundRadius: { count: 10, min: 0, max: 50 },
     roundRender: { bool: true },
+    scaleboxType: { dflt: 'scalebox' , list: ['scalebox', 'miniscale'] }
   }
 }

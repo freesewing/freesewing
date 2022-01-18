@@ -16,7 +16,7 @@ import measurements from '@freesewing/plugin-measurements'
 import mirror from '@freesewing/plugin-mirror'
 import notches from '@freesewing/plugin-notches'
 import round from '@freesewing/plugin-round'
-//import scalebox from '@freesewing/plugin-scalebox'
+import scalebox from '@freesewing/plugin-scalebox'
 //import sprinkle from '@freesewing/plugin-sprinkle'
 //import svgattr from '@freesewing/plugin-svgattr'
 //import theme from '@freesewing/plugin-theme'
@@ -38,7 +38,7 @@ import draftMeasurements from './plugin-measurements'
 import draftMirror from './plugin-mirror'
 import draftNotches from './plugin-notches'
 import draftRound from './plugin-round'
-//import draftScalebox from './plugin-scalebox'
+import draftScalebox from './plugin-scalebox'
 //import draftSprinkle from './plugin-sprinkle'
 //import draftSvgattr from './plugin-svgattr'
 //import draftTheme from './plugin-theme'
@@ -66,7 +66,7 @@ const plugins = [
   mirror,
   notches,
   round,
-//  scalebox,
+  scalebox,
 //  sprinkle,
 //  svgattr,
 //  theme,
@@ -90,7 +90,7 @@ const methods = {
   draftMirror,
   draftNotches,
   draftRound,
-//  draftScalebox,
+  draftScalebox,
 //  draftSprinkle,
 //  draftSvgattr,
 //  draftTheme,
