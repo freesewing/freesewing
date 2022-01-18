@@ -5,25 +5,29 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
-      if (svg.attributes.get('freesewing:plugin-bartack') === false) {
-        svg.attributes.set('freesewing:plugin-bartack', version)
-      }
-    },
+    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-bartack', version)
   },
   macros: {
     bartack: function (so) {
-      let self = this
+      const self = this
       return bartack(so, self)
     },
     bartackAlong: function (so) {
-      let self = this
+      const self = this
+      so.bartackFractionAlong = false
       so.bartackAlong = true
+      so.anchor = false
+      so.from = false
+      so.to = false
       return bartack(so, self)
     },
     bartackFractionAlong: function (so) {
-      let self = this
+      const self = this
       so.bartackFractionAlong = true
+      so.bartackAlong = false
+      so.anchor = false
+      so.from = false
+      so.to = false
       return bartack(so, self)
     },
   },

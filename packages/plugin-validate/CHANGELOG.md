@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-validate
 
 
+## 2.19.6 (2021-12-29)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.0.0 (2019-08-25)
 
 ### Added

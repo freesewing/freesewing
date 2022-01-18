@@ -12,7 +12,6 @@ export default function (part) {
     paths,
     Snippet,
     snippets,
-    options,
     complete,
     paperless,
     macro,

@@ -1,8 +1,8 @@
 
-![Back neck cutout](./backneckcutout.svg)
+![Découpe du cou arrière](./backneckcutout.svg)
 
-Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
+Contrôle la profondeur de l'encolure au dos du vêtement. En d'autres termes, plus cette valeur augmente, plus l'ouverture de l'encolure sera profonde vers le dos.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_backneckcutout_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_backneckcutout_sample.svg "Effet de cette option sur le motif")

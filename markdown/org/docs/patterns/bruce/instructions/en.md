@@ -46,7 +46,7 @@ As you manipulate the fabric to get it aligned properly, it's easy to stretch on
 
 Once you've passed the notch, things will get easier. This would also be a good time to compare the remaining length of the curved seams. If one is a bit longer than the other, simply stretch the shorter one until they match up.
 
-If the difference is too big however, just leave it. It will get get cut off when we do the crotchseam.
+If the difference is too big however, just leave it. It will get cut off when we do the crotchseam.
 
 <Note>
 

@@ -52,14 +52,10 @@ export default (part) => {
     macro('scalebox', { at: points.scalebox })
 
     points.frontNotch = paths.sleevecap.shiftAlong(
-      paths.sleevecap.length() / 2 -
-        store.get('frontShoulderToArmholePitch') -
-        store.get('sleevecapEase') / 2
+      store.get('frontArmholeToArmholePitch')
     )
-    points.backNotch = paths.sleevecap.shiftAlong(
-      paths.sleevecap.length() / 2 +
-        store.get('backShoulderToArmholePitch') +
-        store.get('sleevecapEase') / 2
+    points.backNotch = paths.sleevecap.reverse().shiftAlong(
+      store.get('backArmholeToArmholePitch')
     )
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
     snippets.backNotch = new Snippet('bnotch', points.backNotch)

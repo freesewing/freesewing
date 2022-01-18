@@ -47,7 +47,6 @@ export default function (part) {
   const length = (measurements.hpsToWaistBack + hem_pos) * options.lengthBonus
   const hhead = (measurements.head / 4) * options.headRatio
   const armhole = (measurements.biceps / 2) * 1.3 * options.armholeDrop
-  const clavusPos = hhead * options.clavusPosBonus
   const clavusWidth = (options.clavusWidth * hwidth) / 13 / options.widthBonus
 
   // Add points

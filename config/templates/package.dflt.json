@@ -16,7 +16,7 @@
   "scripts": {
     "watch": "rollup -c -w",
     "start": "rollup -c -w",
-    "lernabuild": "rollup -c",
+    "cibuild_step1": "rollup -c",
     "build": "rollup -c",
     "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
     "publish": "npm run build && npm publish --access public"

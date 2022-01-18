@@ -1,6 +1,19 @@
 # Change log for: @freesewing/plugin-banner
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Changed the default options
+ - Now part of `@freesewing/plugin-bundle`
+
+## 2.19.6 (2021-12-29)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.0.0 (2019-08-25)
 
 ### Added

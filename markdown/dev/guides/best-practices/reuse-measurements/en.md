@@ -9,10 +9,10 @@ certain measurements differently.
 
 <Tip>
 
-######  See our models packages for standard measurement names
+######  See our measurements page for standard measurement names
 
-The [@freesewing/models](/reference/packages/models/)
-package contains all our standard measurement names.
+The [measurements reference page](/reference/measurements/)
+contains all our standard measurement names.
 
 </Tip>
 

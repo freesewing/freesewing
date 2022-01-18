@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-theme
 
 
+## 2.19.6 (2021-12-29)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.15.0 (2021-04-15)
 
 ### Added

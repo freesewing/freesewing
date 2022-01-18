@@ -1,14 +1,18 @@
 ---
-title: dy()
+title: Point.dy()
 ---
+
+A point's `dy()` method returns the delta (in mm) along the Y-axis between this point and the point you pass it.
+
+## Point.dy() signature
 
 ```js
 float point.dy(Point point)
 ```
 
-Returns the delta along the Y-axis between this point and the point you pass it.
+## Point.dy() example
 
-<Example 
+<Example
   part="point_dy"
   caption="An example of the Point.dy() method"
 />

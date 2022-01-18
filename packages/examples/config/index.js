@@ -43,6 +43,7 @@ export default {
     'path_start',
     'path_translate',
     'path_trim',
+    'plugin_banner',
     'plugin_bartack',
     'plugin_bartackalong',
     'plugin_bartackfractionalong',

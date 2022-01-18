@@ -84,8 +84,9 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
  - Pour fermer la capuche, surjetez ensemble les couches en bas, le long du cou.  Si vous n'avez pas de surjeteuse, utilisez un point zig-zag.
  - (Facultatif) Si vous avez ajouté des trous pour un cordon, vous pouvez le passer maintenant.
 
-### Étape 8 : Attacher la Capuche
+### Step 8: Preparing a Neckband and Attaching the Hood
 
+ - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
  - Pliez endroit contre endroit la pièce d'encolure et la coudre à 1 cm sur le côté court afin de créer une bande circulaire.
  - À partir du dos, faites correspondre l'extérieur de la capuche et le dos de l'encolure, endroit contre endroit. Alignez le panneau de capuche à l'arrière du cou.
  - Épinglez tout le tour de l'encolure jusqu'au devant.

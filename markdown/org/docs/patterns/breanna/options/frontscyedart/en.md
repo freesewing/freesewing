@@ -1,11 +1,5 @@
----
----
 
-<Fixme>
-
-Document this option
-
-</Fixme>
+The amount to take out in a dart at the front of the armhole.
 
 
 ## Effect of this option on the pattern

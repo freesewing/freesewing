@@ -3,7 +3,7 @@ title: Drawing the straps
 order: 230
 ---
 
-All we have to do know is flip a bunch of points on the other side,
+All we have to do now is flip a bunch of points on the other side,
 and create one single path that follows our bib outline.
 
 First, let's create the points:

@@ -1,5 +1,5 @@
 
-Um Yuri zu machen, benötigst du Folgendes:
+Um Yuri zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
 - Etwa 2.5 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/yuri/fabric))

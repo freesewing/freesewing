@@ -6,7 +6,7 @@ Lorsque vous optez pour un patron *sans papier* , votre patron se fourni avec de
 
 <Legend part="dimension">
 
-An example of a dimension on a pattern
+Un exemple de dimension sur un patron
 
 </Legend>
 

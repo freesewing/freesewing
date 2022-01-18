@@ -1,16 +1,16 @@
 ---
 lengthRatio:
-  title: Profondeur de tête
-  description: Controls the length of the garment
+  title: Ratio de longueur
+  description: Contrôle la longueur du vêtement
 widthRatio:
-  title: Width ratio
-  description: Controls the width of the garment
+  title: Ratio de largeur
+  description: Contrôle la largeur du vêtement
 length:
   title: Longueur
-  description: Choose from the different length styles
+  description: Choisit parmi les différents styles de longueur
   options:
-    toKnee: On the knee
-    toBelowKnee: Below the knee
-    toHips: On the hips
-    toUpperLeg: Below the hips
-    toFloor: To the floor
+    toKnee: Aux genoux
+    toBelowKnee: Sous les genoux
+    toHips: Aux hanches
+    toUpperLeg: Sous les hanches
+    toFloor: Jusqu'au sol

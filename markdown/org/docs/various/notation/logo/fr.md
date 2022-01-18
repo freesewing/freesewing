@@ -6,6 +6,6 @@ Certaines (ou toutes) les pièces de patron peuvent également inclure le logo F
 
 <Legend part="logo">
 
-The FreeSewing logo
+Le logo FreeSewing
 
 </Legend>

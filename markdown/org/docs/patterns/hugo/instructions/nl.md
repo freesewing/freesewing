@@ -84,8 +84,9 @@ Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
  - Om de kap te sluiten lock je de lagen samen langs de halslijn.  Als je geen overlock hebt, gebruik dan een zigzagsteek.
  - (Optioneel) Als je gaten hebt gemaakt voor een koordje kan je dit er nu doorheen halen.
 
-### Stap 8: Bevestig de kap
+### Step 8: Preparing a Neckband and Attaching the Hood
 
+ - Knip een kruisverstandige strook stof uit je hoofdstof, je halsopening + 2 cm (3/4 inch) lang en drievoudig de naadwaarde van je nek.
  - Leg de uiteindes van de halsbies met goede kanten op elkaar en stik vast met 1 cm naadwaarde om een ronde band te vormen.
  - Begin aan de achterkant, en leg de goede kant van de kap op de goede kant van de halslijn. Leg het middendeel gelijk met de achterkant van de halslijn.
  - Speld de kap aan de halslijn, van achter naar voor.

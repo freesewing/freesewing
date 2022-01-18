@@ -1,4 +1,4 @@
-Um Sven zu machen, benötigst du Folgendes:
+Um Sven zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
 - Etwa 1.75 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](#fabric-options))

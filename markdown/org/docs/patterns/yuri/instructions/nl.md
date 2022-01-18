@@ -21,7 +21,7 @@ Als je een overlocker/overlock gebruikt, kun je naden naaien die in één keer f
   
 </Tip>
 
-## Step 1: Attaching the Gussets
+## Stap 1: Gussets bijvoegen
 
 - Stik de voorpanden langs de zijkanten van de goede kanten op elkaar, langs de zijnaden.
 - ***Voltooi*** naden.
@@ -103,22 +103,19 @@ Als je de decoratieve rand niet wilt hebben, Misschien wil je de voering nog ond
 ## Stap 9: Voorbereiden van een Neckband voor de kap (optioneel)
 
 - Knip een kruisverstandige strook stof uit je hoofdstof, je halsopening + 2 cm (3/4 inch) lang en drievoudig de naadwaarde van je nek.
-- Met de goede kanten op elkaar stik de strook aan een cirkelband met een naadwaarde van 1 cm (3/8 inch).
-- Strijk de naden open.
-- Aan de goede kanten, ***Stik*** dicht bij beide kanten van de naadwaarde eronder.
-- (Optioneel) Knip de overtollige naadwaarde bij.
+- Press under 1cm (3/8 inch) allowance on the short sides.
 
 <Note>
   
-Terwijl het een optioneel gemarkeerde stap is, wordt aangeraden deze stap te doen omdat het een naaste en sterkere afwerking rond de nek creëert.
-Je kan ook een geplooide band maken zodat de nekband geen onbewerkte rand heeft, maar dit kan bulky zijn. Je moet er ook voor zorgen dat de geplooide rand iets langer is dan 1 cm om te worden bevestigd en de kap aan te stikken, maar niet zo lang dat het over draait.
+Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
+You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
   
 </Note>
 
 ## Stap 10: Bevestig de kap
 
 - Met de goede kanten op elkaar, vanaf de middelste achterpand naar de nek, overeenkomend met de middelste rug en overlap de capuchon aan de middenvoorkant.
-- Speld de halslijn aan de goede kant van de voering van de kap, de halslijn naar de kap die gelijk is aan de nekband met het midden van de achterkant.
+- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
 - Als je een overlocker/overlock gebruikt, vervang dan de nek en capuchon samen door alle lagen.
 - Wanneer je een naaimachine gebruikt, gebruik dan een zigzagsteek om alle nek en capuchonlagen aan elkaar te naaien.
 - Bij de buitencheck om de halslijn om ervoor te zorgen dat alle lagen worden gevangen.
@@ -134,8 +131,8 @@ Als je een overlocker/overlock gebruikt om de capuchon te bevestigen die je miss
 
 <Note>
   
-Als je bang bent dat het stikken van de halslijn met een rechte steek niet genoeg stretch geeft, dan kan je hem altijd omstikken met een smalle zigzag, of met een juiste elassteek naar keuze.
-Als je geen halsband gebruikt, wil je de naad afwerken met **afwerkingsmethode 2** en doorsteek met 6 mm (1/4 inch) in plaats van 1 cm (3/8 inch). 
+If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
+If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch). 
   
 </Note>
 

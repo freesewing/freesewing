@@ -1,6 +1,4 @@
 
-![Ausschnitt im Nacken](./backneckcutout.svg)
-
 Kontrolliert wie tief die Nackenöffnung im Rücken des Kleidungsstücks ausgeschnitten wird. Mit anderen Worten, wenn man dies erhöht, wird sich der Hals nach hinten verschieben.
 
 

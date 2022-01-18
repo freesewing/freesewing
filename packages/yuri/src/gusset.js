@@ -21,7 +21,7 @@ export default function (part) {
     .curve(points.cp1, points.cp2, points.right)
     .attr('class', 'fabric')
 
-  paths.seam = paths.hat.join(paths.curve)
+  paths.seam = paths.hat.join(paths.curve).close()
 
   // Complete?
   if (complete) {
@@ -41,6 +41,7 @@ export default function (part) {
       paths.sa = paths.hat
         .offset(sa)
         .join(paths.curve.offset(3 * sa))
+        .close()
         .attr('class', 'fabric sa')
     }
   }

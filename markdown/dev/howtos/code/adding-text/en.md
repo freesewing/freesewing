@@ -1,7 +1,5 @@
 ---
 title: Adding text
-for: developers
-about: Shows you how to add text to your pattern
 ---
 
 SVG is pretty great, but its text handling leaves much to be desired.

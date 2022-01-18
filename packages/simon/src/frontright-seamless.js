@@ -10,11 +10,13 @@ export default (part) => {
   points.placketTopFold1 = points.cfNeck.shift(0, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(0, width * 1.5)
   points.placketTopEdge = points.cfNeck.shift(0, width * 2.5)
+  points.placketTopIn = points.cfNeck.shift(180, width / 2)
   points.placketBottomFold1 = points.cfHem.shift(0, width / 2)
   points.placketBottomFold2 = points.cfHem.shift(0, width * 1.5)
   points.placketBottomEdge = points.cfHem.shift(0, width * 2.5)
   points.placketBottomMatch = points.cfHem.shift(180, width / 2)
   points.placketTopMatch = points.cfNeck.shift(180, width / 2)
+  points.placketBottomIn = points.cfHem.shift(180, width / 2)
   break
   case 'rightOverLeft':
   points.placketTopFold1 = points.cfNeck.shift(180, width / 2)
@@ -25,6 +27,7 @@ export default (part) => {
   points.placketBottomEdge = points.cfHem.shift(180, width * 2.5)
   points.placketBottomMatch = points.cfHem.shift(0, width / 2)
   points.placketTopMatch = points.cfNeck.shift(0, width / 2)
+  points.placketBottomIn = points.cfHem.shift(0, width / 2)
   }
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
@@ -32,6 +35,12 @@ export default (part) => {
   if (complete) {
     // Placket help lines
     paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
+    if (!options.seperateButtonholePlacket) {
+      // Match lines are only displayed on attached plackets
+      paths.frontCenter
+        .attr('data-text', 'matchHere')
+        .attr('data-text-class', 'text-xs center')
+    }
     paths.placketFold1 = new Path()
       .move(points.placketTopFold1)
       .line(points.placketBottomFold1)
@@ -40,12 +49,10 @@ export default (part) => {
       .move(points.placketTopFold2)
       .line(points.placketBottomFold2)
       .attr('class', 'dotted')
-    paths.placketMatch = new Path()
-      .move(points.placketBottomMatch)
-      .line(points.placketTopMatch)
-      .attr('class', 'stroke-sm help')
-      .attr('data-text', 'matchHere')
-      .attr('data-text-class', 'text-xs center')
+    paths.placketInnerFold = new Path()
+      .move(points.placketBottomIn)
+      .line(points.placketTopIn)
+      .attr('class', 'dotted')
     macro('sprinkle', {
       snippet: 'notch',
       on: [

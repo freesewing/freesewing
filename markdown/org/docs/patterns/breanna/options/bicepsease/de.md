@@ -1,4 +1,3 @@
-![Der Beizeps-Leichtigkeitsfaktor auf Brian](./bicepsease.svg)
 
 Die Menge an Leichtigkeit an Ihrem Oberarm.
 

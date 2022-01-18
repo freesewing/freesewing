@@ -1,6 +1,6 @@
 <Note>
 
-Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. You do you.
+Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Jullie doen jullie.
 
 </Note>
 
@@ -10,7 +10,7 @@ Walburga is a historically inspired pattern, and if you want more authenticity, 
 
 ### Step 2: Finish seams and head opening
 
-- Finish the seams and the raw edges at the head opening, with a method of your choice. (If you used the fabrics recommended in the ([fabric options](/docs/patterns/walburga/fabric)), they *will* fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Finish the seams and the raw edges at the head opening, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/walburga/fabric), they *will* fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
 
 ### (Optional) Step 3: Cut slits
 

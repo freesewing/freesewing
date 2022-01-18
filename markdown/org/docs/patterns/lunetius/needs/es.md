@@ -1,4 +1,4 @@
 To make Lunetius, you will need the following:
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 2 meter of a suitable fabric (see [Fabric options](/docs/patterns/lunetius/fabric))
+- [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
+- Alrededor de 2 metros de un tejido adecuado (ver [opciones de tejidos](/docs/patterns/lunetius/fabric))
 - (a *fibula* (brooch, pin, clasp) to wear and close it)

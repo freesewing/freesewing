@@ -15,7 +15,7 @@ export default (part) => {
     store,
   } = part.shorthand()
 
-  const width = store.get('sleevePlacketWidth') > 20 ? 10 : store.get('sleevePlacketWidth') / 4
+  const width = Math.min(store.get('sleevePlacketWidth') / 2, 10)
   const length = measurements.shoulderToWrist * options.sleevePlacketLength
 
   points.midLeft = new Point(0, 0)

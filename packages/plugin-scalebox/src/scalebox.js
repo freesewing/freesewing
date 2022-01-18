@@ -65,14 +65,14 @@ export default function (so) {
   }
   // Paths
   this.paths.__scaleboxImperial = new this.Path()
-    .attr('class', 'scalebox imperial')
+    .attr('class', 'scalebox imperial fill-current')
     .move(this.points.__scaleboxImperialTopLeft)
     .line(this.points.__scaleboxImperialBottomLeft)
     .line(this.points.__scaleboxImperialBottomRight)
     .line(this.points.__scaleboxImperialTopRight)
     .close()
   this.paths.__scaleboxMetric = new this.Path()
-    .attr('class', 'scalebox metric')
+    .attr('class', 'scalebox metric fill-bg')
     .move(this.points.__scaleboxMetricTopLeft)
     .line(this.points.__scaleboxMetricBottomLeft)
     .line(this.points.__scaleboxMetricBottomRight)
@@ -97,7 +97,7 @@ export default function (so) {
     this.points.__scaleboxText.attr('data-text', 'supportFreesewingBecomeAPatron')
     this.points.__scaleboxLink = this.points.__scaleboxLink
       .attr('data-text', 'freesewing.org/patrons/join')
-      .attr('data-text-class', 'text-xs fill-note')
+      .attr('data-text-class', 'text-sm fill-note')
   }
   this.points.__scaleboxText.attr('data-text-class', 'text-xs').attr('data-text-lineheight', 4)
   // Instructions

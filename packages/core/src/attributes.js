@@ -19,6 +19,13 @@ Attributes.prototype.set = function (name, value) {
   return this
 }
 
+/** Sets an attribute, but only if it's not currently set */
+Attributes.prototype.setIfUnset = function (name, value) {
+  if (typeof this.list[name] === 'undefined') this.list[name] = [value]
+
+  return this
+}
+
 /** Removes an attribute */
 Attributes.prototype.remove = function (name) {
   delete this.list[name]

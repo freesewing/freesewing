@@ -1,7 +1,7 @@
 - - -
 title: Cornelius Fabric options
 - - -
-### Main Fabric
+### Tissu principal
 
 Any **bottom (trouser) weight material** will work fine for this pattern. Generally you want to avoid anything that is over 7oz (230gsm) as this will more likely be too stiff and uncomfortable. You want something that provides a bit of warmth whilst still being able to drape such as **Corduroy** or **Medium Weight Suiting** fabrics. If you are looking for someting more historically correct, then **Medium weight wool suiting** is the way to go. **Linen** is also an option, especially if you would like something that isn't too warm.
 
@@ -21,7 +21,7 @@ If you have anything you typically use for pockets in trousers that will work to
 
 </Note>
 
-### Interfacing
+### Entoilage
 
 This pattern requires the waistband to be interfaced. We recommend using a **Hair Cloth** for the interfacing, you can either use fusible or non-fusible which ever you prefer. If you do not have access to hair cloth you can use any medium to firm interfacing you deem appropriate for waistbands.
 

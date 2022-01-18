@@ -42,9 +42,17 @@ export default function (part) {
 
   // Complete pattern?
   if (complete) {
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
+    if (sa) paths.sa = new Path()
+      .move(points.topLeft.shift(180, sa))
+      .line(points.bottomLeft.shift(180, sa))
+      .line(points.bottomLeft.shift(-90, sa))
+      .line(points.bottomRight.shift(-90, sa))
+      .line(points.bottomRight.shift(0, sa))
+      .line(points.topRight.shift(0, sa))
+      .line(points.topRight.shift(90, sa))
+      .line(points.topLeft.shift(90, sa))
+      .close()
+      .attr('class', 'fabric sa')
     points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5)
     macro('title', { at: points.title, nr: 6, title: 'hoodCenter' })
     macro('grainline', {

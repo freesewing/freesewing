@@ -1,11 +1,5 @@
----
----
 
-<Fixme>
-
-Document this option
-
-</Fixme>
+The length of the secondary bust dart.
 
 
 ## Effect of this option on the pattern

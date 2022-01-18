@@ -4,10 +4,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
-      if (svg.attributes.get('freesewing:plugin-sprinkle') === false)
-        svg.attributes.set('freesewing:plugin-sprinkle', version)
-    },
+    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-sprinkle', version)
   },
   macros: {
     sprinkle: function (so) {

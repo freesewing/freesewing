@@ -31,7 +31,7 @@ Your focus today is on learning FreeSewing and how to translate your designs int
 
 At the end of this tutorial, you will have created this pattern:
 
-<Example pattern="tutorial" part="bib" caption="Your end result" />
+<Example pattern="tutorial" part="bib">Your end result</Example>
 
 Before we can get started, let's make sure you have the required software 
 installed on your computer:
@@ -50,3 +50,5 @@ node -v
 ```
 
 If you get the node version number, you're all set.
+
+You can find the complete code of the tutorial pattern for the final result to help make sure you're following the steps correctly [here on GitHub](https://github.com/freesewing/freesewing/blob/develop/packages/tutorial/src/bib.js).

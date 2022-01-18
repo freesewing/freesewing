@@ -1,6 +1,19 @@
 # Change log for: @freesewing/plugin-bundle
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - plugin-banner is now part of plugin-bundle
+ - plugin-bartack is now part of plugin-bundle
+
+## 2.19.6 (2021-12-29)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.17.0 (2021-07-01)
 
 ### Changed

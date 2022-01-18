@@ -84,8 +84,9 @@ Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a termina
  - Para cerrar el capó, siéntese juntar las capas inferiores a lo largo de la línea del cuello.  Si no tienes un serger, usa un zig-zag stitch.
  - (Opcional) Si agregó agujeros para una cadena de dibujo, puede hilar la cadena de dibujo ahora.
 
-### Paso 8: Adjunta la Capucha
+### Step 8: Preparing a Neckband and Attaching the Hood
 
+ - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
  - Coloca buenos lados juntos en el tubo de unión del cuello a continuación, coser una costura de 1 cm a lo largo del lado corto para hacer la unión en una banda circular.
  - A partir de la espalda, hacer frente al exterior de la capucha al lado derecho de la línea de cuello. Alinear el panel de la campana a la parte trasera del cuello.
  - Trabajando alrededor de la parte delantera, anclar el capuchón al cuello.

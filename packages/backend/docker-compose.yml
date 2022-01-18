@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  fs_backend:
+    image: freesewing/backend:beta
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    networks:
+      - public
+      - private
+    volumes:
+      - fs-backend-static:/storage/static
+      - fs-backend-api:/storage/api
+      - fs-backend-mongo:/data/db
+    dns_search: .
+
+### External Services
+
+  mongo:
+    image: mongo:3.4
+    env_file:
+      - .env
+    networks:
+      - private
+    volumes:
+      - fs-backend-mongo:/data/db
+    dns_search: .
+
+volumes:
+  fs-backend-static:
+  fs-backend-api:
+  fs-backend-mongo:
+
+networks:
+  public:
+    driver: bridge
+  private:
+    driver: bridge

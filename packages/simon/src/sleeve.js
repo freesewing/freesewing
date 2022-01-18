@@ -12,7 +12,13 @@ export default (part) => {
     options,
     snippets,
     Snippet,
+    store
   } = part.shorthand()
+
+  // Update the back armhole notch because the one from Brian is not correct
+  points.backNotch = paths.sleevecap.reverse().shiftAlong(
+    store.get('backArmholeToArmholePitch')
+  )
 
   // Remove inherited paths, snippets, and scalebox
   for (const p in paths) delete paths[p]

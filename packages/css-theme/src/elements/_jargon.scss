@@ -18,8 +18,8 @@
   position: absolute;
   top: 1.5em;
   left: 0;
-  background: $fc-bg-light;
-  color: $fc-text-light;
+  background: $fs-bg-light;
+  color: $fs-text-light;
   border: 1px solid #dcdcdc;
   padding: 1rem;
   border-radius: 4px;
@@ -34,8 +34,8 @@
     text-decoration: none;
   }
   .jargon-term:hover .jargon-info {
-    background: $fc-bg-dark;
-    color: $fc-text-dark;
+    background: $fs-bg-dark;
+    color: $fs-text-dark;
     border: 1px solid #5a5a5a;
   }
 }

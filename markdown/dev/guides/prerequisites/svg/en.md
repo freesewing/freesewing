@@ -1,12 +1,11 @@
 ---
-title: SVG
+title: Scalable Vector Graphics
 order: 20
 ---
 
-Patterns are rendered as SVG — short
+Patterns are rendered as **SVG** — short
 for [Scalable Vector Graphics](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) —
 an XML-based vector image format and an open standard.
-
 While you don’t need to be an SVG expert, a basic understanding of the format 
 will greatly help you to understand FreeSewing.
 

@@ -1,4 +1,4 @@
-Um Charlie zu machen, benötigst du Folgendes:
+Um Charlie zu erstellen, benötigst du Folgendes:
 
  - Grundlegendes Nähzubehör
  - Etwa 1.5 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/charlie/fabric))

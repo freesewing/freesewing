@@ -1,18 +1,19 @@
 ---
-title: flipY()
+title: Point.flipY()
 ---
+
+A point's `flipY()` method returns a new `Point` that mirrors the original point around the Y-value of the point you pass it.
+If you do not pass in a point, it will default to mirroring around an Y-value of zero.
+
+## Point.flipY() signature
 
 ```js
 Point point.flipY(Point mirror = false)
 ```
 
-Returns a new point that mirrors this point around the Y-value of the point your pass it.
+## Point.flipY() example
 
-If you don't pass it a point, it will mirror around a Y-value of zero.
-
-### Point.flipY() example
-
-<Example 
+<Example
   part="point_flipy"
   caption="An example of the Point.flipY() method"
 />
@@ -68,4 +69,3 @@ paths.skylineTop = new Path()
   .line(points.houseWallRight)
   .line(points.end);
 ```
-

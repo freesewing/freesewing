@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-bust
 
 
+## 2.19.6 (2021-12-29)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.7.0 (2020-07-12)
 
 ### Changed

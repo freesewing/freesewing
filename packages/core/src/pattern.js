@@ -58,8 +58,10 @@ export default function Pattern(config = { options: {} }) {
     locale: 'en',
     units: 'metric',
     margin: 2,
+    scale: 1,
     layout: true,
     debug: true,
+    scale: 1,
     options: {},
     absoluteOptions: {},
   }
@@ -196,7 +198,6 @@ Pattern.prototype.draft = function () {
       typeof this.config.options[i].snap !== 'undefined' &&
       this.config.options[i].toAbs instanceof Function
     ) {
-      let abs = this.config.options[i].toAbs(this.settings.options[i], this.settings)
       this.settings.absoluteOptions[i] = snappedOption(i, this)
     }
   }

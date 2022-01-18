@@ -1,8 +1,17 @@
-Um Breanna zu machen, brauchst du:
+**Oberstoff**
 
- - 1 Front
- - 2 Zurück
- - 2 Ärmel
+ - Schneide **1 Vorderteil** im Stoffbruch.
+ - Schneide **2 Rückteile**.
+ - Schneide **2 Ärmel** mit _guten Seiten zusammen_.
+
+
+Diese Anleitung ist nur für den Breanna-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
+
+<Tip>
+
+If you do not have someone to help pin you into Breanna then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+
+</Tip>
 
 <Note>
 

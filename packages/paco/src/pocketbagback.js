@@ -73,29 +73,29 @@ export default function (part) {
         .line(points.pocketBagBottomLeft)
         .attr('class', 'lining sa')
     }
+  }
 
-    if (paperless) {
-      macro('hd', {
-        from: points.pocketBagBottomLeft,
-        to: points.pocketBagBottomRight,
-        y: points.pocketBagBottomLeft.y + 15 + sa,
-      })
-      macro('hd', {
-        from: points.pocketLeft,
-        to: points.pocketRight,
-        y: points.pocketLeft.y + 15 + sa,
-      })
-      macro('vd', {
-        from: points.pocketRight,
-        to: points.pocketBagWaistRight,
-        x: points.pocketBagBottomRight.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.pocketBagBottomRight,
-        to: points.pocketBagWaistRight,
-        x: points.pocketBagBottomRight.x + 30 + sa,
-      })
-    }
+  if (paperless) {
+    macro('hd', {
+      from: points.pocketBagBottomLeft,
+      to: points.pocketBagBottomRight,
+      y: points.pocketBagBottomLeft.y + 15 + sa,
+    })
+    macro('hd', {
+      from: points.pocketLeft,
+      to: points.pocketRight,
+      y: points.pocketLeft.y + 15 + sa,
+    })
+    macro('vd', {
+      from: points.pocketRight,
+      to: points.pocketBagWaistRight,
+      x: points.pocketBagBottomRight.x + 15 + sa,
+    })
+    macro('vd', {
+      from: points.pocketBagBottomRight,
+      to: points.pocketBagWaistRight,
+      x: points.pocketBagBottomRight.x + 30 + sa,
+    })
   }
 
   return part

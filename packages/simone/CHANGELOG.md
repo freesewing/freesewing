@@ -1,6 +1,18 @@
 # Change log for: @freesewing/simone
 
 
+## 2.19.7 (2022-01-06)
+
+### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+## 2.19.4 (2021-11-09)
+
+### Fixed
+
+ - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
+
 ## 2.19.2 (2021-11-02)
 
 ### Fixed

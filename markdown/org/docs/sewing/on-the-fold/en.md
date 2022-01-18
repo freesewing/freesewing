@@ -8,7 +8,7 @@ aligning the line that is _on the fold_ with the fold line indicated on the patt
 
 The fold line is indicated with a double arrow like in this example:
 
-<Legend part="cutonfold" caption="A cut-on-fold indicator" />
+<Legend part="cutonfold">A cut-on-fold indicator</Legend>
 
 <Tip>
 

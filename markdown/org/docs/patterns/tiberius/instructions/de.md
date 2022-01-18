@@ -1,13 +1,13 @@
 <Note>
 
-Tiberius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. You do you.
+Tiberius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Sie tun das.
 
 </Note>
 
 ### Step 1: Sew shoulder seams
 
 - Put both parts with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
-- Finish the seams, with a method of your choice. (If you used the fabrics recommended in the ([fabric options](/docs/patterns/tiberius/fabric)), they *will* fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Finish the seams, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/tiberius/fabric), they *will* fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
 
 <Note>
 

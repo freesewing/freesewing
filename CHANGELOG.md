@@ -1,6 +1,381 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+### components
+
+#### Added
+
+ - Added support for `settings.scale` to Draft and Workbench components
+
+#### Fixed
+
+ - Support handling of `&#160;` in text
+
+### core
+
+#### Added
+
+ - Added support for `settings.scale`
+
+### css-theme
+
+#### Added
+
+ - Added support for `settings.scale`
+ - Included variables used by TailwindCSS themes for compatibility
+
+### plugin-banner
+
+#### Changed
+
+ - Changed the default options
+ - Now part of `@freesewing/plugin-bundle`
+
+### plugin-bartack
+
+#### Changed
+
+ - Now part of `@freesewing/plugin-bundle`
+
+#### Fixed
+
+ - Fixed issue with `bartackFractionAlong` macro
+ - Handle start and endpoints being the same in `bartackFractionAlong`
+ - Support start and endpoints being reversed in `bartackFractionAlong`
+
+### plugin-bundle
+
+#### Changed
+
+ - plugin-banner is now part of plugin-bundle
+ - plugin-bartack is now part of plugin-bundle
+
+### plugin-dimension
+
+#### Fixed
+
+ - Support hiding start/end markers on path dimensions (pd macro)
+
+### plugintest
+
+#### Added
+
+ - Added the plugintest pattern which is used for testing plugins
+
+
+## 2.19.9 (2022-01-09)
+
+### simon
+
+#### Fixed
+
+ - Fix incorrectly alliegned fabric match line. Move to CF instead [Fixed by @nicholasdower in
+
+
+## 2.19.8 (2022-01-08)
+
+### core
+
+#### Fixed
+
+ - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
+
+### simon
+
+#### Fixed
+
+ - Make seam allowance stop at fold when using rounded back option Fixes [#1608](https://github.com/freesewing/freesewing/issues/1608)
+
+### yuri
+
+#### Fixed
+
+ - Fix dependency configuration Fixes [#1334](https://github.com/freesewing/freesewing/issues/1334)
+
+
+## 2.19.7 (2022-01-06)
+
+### brian
+
+#### Changed
+
+ - Always calculate sleevecap notch from armhole rather than shoulder
+ - Default for `sleevecapEase` option is now `0`
+
+### simon
+
+#### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+### simone
+
+#### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+
+## 2.19.6 (2021-12-29)
+
+### core
+
+#### Added
+
+ - Added the new attributes.setIfUnset() method
+ - Added the new `scale` setting
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Fix axios version conflict
+
+### plugin-banner
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-bartack
+
+#### Added
+
+ - Added (esm) unit tests
+
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
+### plugin-bundle
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-bust
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-buttons
+
+#### Added
+
+ - Added (esm) unit tests
+
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
+#### Fixed
+
+ - Only add snippets once to SVG object
+
+### plugin-cutonfold
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-dimension
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-export-dxf
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-flip
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-gore
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-grainline
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-i18n
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-logo
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-measurements
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-mirror
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-notches
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-round
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-scalebox
+
+#### Added
+
+ - Added (esm) unit tests
+
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
+### plugin-sprinkle
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-svgattr
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-theme
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-title
+
+#### Added
+
+ - Added (esm) unit tests
+
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
+### plugin-validate
+
+#### Added
+
+ - Added (esm) unit tests
+
+### plugin-versionfree-svg
+
+#### Added
+
+ - Added (esm) unit tests
+
+### rendertest
+
+#### Changed
+
+ - Updated the rendertest pattern to be more concise
+
+
+## 2.19.5 (2021-11-13)
+
+### charlie
+
+#### Changed
+
+ - Updated the `waistHeight` options to increase both min and max values
+
+#### Fixed
+
+ - Fix issue where a very low waist caused the fly to be incorrectly drawn This only happens at unrealistic waist heights, so I changed the option minimum value instead. Closes [#1486](https://github.com/freesewing/freesewing/issues/1486)
+
+### core
+
+#### Fixed
+
+ - Fixed a copy-paste error that caused the `absoluteOptions` shorthand property to be a proxy for the regular options object instead. Note that this bug (and proxying in general) only occurs in debug mode.
+
+### penelope
+
+#### Changed
+
+ - Increased maximum for the `waistEase` option
+ - Increased maximum for the `seatEase` options
+
+### yuri
+
+#### Fixed
+
+ - Fix seam allowance on back, gusset and hood center parts Closes [#1464](https://github.com/freesewing/freesewing/issues/1464)
+
+
+## 2.19.4 (2021-11-09)
+
+### paco
+
+#### Fixed
+
+ - Make paperless markings available when detail is disabled Closes [#1400](https://github.com/freesewing/freesewing/issues/1401)
+ - Make pocket flaps properly parametric Closes [#1401](https://github.com/freesewing/freesewing/issues/1401)
+
+### simon
+
+#### Fixed
+
+ - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
+
+### simone
+
+#### Fixed
+
+ - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
+
+### titan
+
+#### Fixed
+
+ - Fixed a regression that caused the `waistHeight` option to be ignored. Closes [#1467](https://github.com/freesewing/freesewing/issues/1467)
+
+
+## 2.19.3 (2021-11-05)
+
+### charlie
+
+#### Changed
+
+ - Converted the `waistbandWidth` options to snapped pct (was normal pct)
+
+#### Fixed
+
+ - Worked around ESM issue by adding snapseries as local dependency
+
+
 ## 2.19.2 (2021-11-02)
 
 ### components

@@ -4,7 +4,7 @@ title: Warum veröffentlicht ihr überhaupt Grundschnitte für Damenkleidung? Si
 
 Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber die Stimmung kann zusammengefasst werden als *warum überhaupt diesen Müll veröffentlichen, es funktioniert absolut nicht*.
 
-Da hast du nicht ganz unrecht. Sowohl [Breanna](/designs/breanna/) als auch [Bella](/designs/bella/) weisen gravierende Mängel auf.
+Lass mich damit anfangen, dass du da nicht falsch liegst. Sowohl [Breanna](/designs/breanna/) als auch [Bella](/designs/bella/) weisen gravierende Mängel auf.
 
 Ich selbst ([Joost](/makers/joostdecock/)) bin mir dessen schmerzlichst bewusst, und ich habe häufiger in Erwägung gezogen, diese Schnittmuster vollständig zurückzuziehen.
 

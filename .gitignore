@@ -64,9 +64,21 @@ node_modules
 dist
 build
 
+#prebuild
+prebuild/*.json
+
 # yarn
 .yarn
 .yarnrc
+
+# NextJS
+.next
+packages/freesewing.dev/out
+packages/freesewing.org/out
+packages/freesewing.dev/public/mdx
+packages/freesewing.org/public/mdx
+packages/freesewing.dev/prebuild
+packages/freesewing.org/prebuild
 
 # Mock registry (verdaccio)
 .registry
@@ -91,3 +103,6 @@ scripts/verdaccio.sh
 
 # Local Netlify folder
 .netlify
+
+# Don't ignore the specific Points.dist() docs folder
+!markdown/dev/reference/api/point/dist

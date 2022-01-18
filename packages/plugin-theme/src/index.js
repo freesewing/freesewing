@@ -2,6 +2,7 @@ import { version, name } from '../package.json'
 import gridMetric from './defs/grid-metric'
 import gridImperial from './defs/grid-imperial'
 import css from './bundle.css.js'
+import draft from './lib/draft'
 
 export default {
   name: name,
@@ -11,6 +12,7 @@ export default {
       if (svg.attributes.get('freesewing:plugin-theme') === false) {
         svg.attributes.set('class', 'freesewing')
         svg.style += css
+        svg.style += draft(svg.pattern.settings.scale)
         if (svg.pattern.settings.paperless) {
           svg.pattern.settings.units === 'imperial'
             ? (svg.defs += gridImperial)
@@ -35,7 +37,7 @@ export default {
             }
           }
         }
-        svg.attributes.add('freesewing:plugin-theme', version)
+        svg.attributes.set('freesewing:plugin-theme', version)
       }
     },
   },

@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
+    preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-logo') === false) {
         svg.attributes.set('freesewing:plugin-logo', version)
         svg.defs += logo

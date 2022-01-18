@@ -14,7 +14,63 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 ]]>
 </script>
 <defs>
-<g id="button"><circle cx="0" cy="0" r="3.4" style="stroke:#000000;fill:none;stroke-width:1;"/><circle cx="-1" cy="-1" r="0.5" style="stroke:none;fill:#000000;"/><circle cx="1" cy="-1" r="0.5" style="stroke:none;fill:#000000;" /><circle cx="1" cy="1" r="0.5" style="stroke:none;fill:#000000;" /><circle cx="-1" cy="1" r="0.5" style="stroke:none;fill:#000000;" /></g><g id="buttonhole"><path style="fill:none;stroke:#000000;" d="M -1,-5 L 1,-5 L 1,5 L -1,5 z" /></g><g id="buttonhole-start"><path style="fill:none;stroke:#000000;" d="M -1,-10 L 1,-10 L 1,0 L -1,0 z" /></g><g id="buttonhole-end"><path style="fill:none;stroke:#000000;" d="M -1,0 L 1,0 L 1,10 L -1,10 z" /></g><radialGradient id="snap-stud-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="30%" style="stop-color:rgb(235,235,235); stop-opacity:1"/><stop offset="80%" style="stop-color:rgb(100,100,100);stop-opacity:1" /></radialGradient><g id="snap-stud" ><circle id="snap-stud-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#666;fill:#dddddd;stroke-width:0.3;" /><circle id="snap-stud-circle-middle" cx="0" cy="0" r="1.8" style="stroke:none;fill:url(#snap-stud-grad);"/><path style="fill:none;stroke:#666; stroke-width:0.2;" d="M -2,0 L -3,0 M 2,0 L 3,0 M 0,2 L 0,3 M 0,-2 L 0,-3 M 1.5,1.5 L 2.1,2.1 M -1.5,1.5 L -2.1,2.1 M -1.5,-1.5 L -2.1,-2.1 M 1.5,-1.5 L 2.1,-2.1" id="snap-stud-lines"/></g><g id="snap-socket"><circle id="snap-socket-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#666;fill:#bbbbbb;stroke-width:0.3;"/><circle id="snap-socket-circle-middle" cx="0" cy="0" r="2" style="stroke:#666;fill:#dddddd; stroke-width:0.4;"/><path style="fill:none;stroke:#666; stroke-width:0.5;" d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1" id="snap-socket-lines" /></g>
+
+<g id="button">
+  <circle
+    cx="0" cy="0" r="3.4"
+    style="stroke:var(--pattern-mark);fill:none;stroke-width:var(--pattern-stroke);"
+  />
+  <circle cx="-1" cy="-1" r="0.5" style="stroke:none;fill:var(--pattern-mark)"/>
+  <circle cx="1"  cy="-1" r="0.5" style="stroke:none;fill:var(--pattern-mark)" />
+  <circle cx="1"  cy="1"  r="0.5" style="stroke:none;fill:var(--pattern-mark)" />
+  <circle cx="-1" cy="1"  r="0.5" style="stroke:none;fill:var(--pattern-mark)" />
+</g>
+<g id="buttonhole">
+  <path
+    style="fill:none;stroke:var(--pattern-mark);stroke-width:var(--pattern-stroke);"
+    d="M -1,-5 L 1,-5 L 1,5 L -1,5 z"
+  />
+</g>
+<g id="buttonhole-start">
+  <path
+    style="fill:none;stroke:var(--pattern-mark);stroke-width:var(--pattern-stroke);"
+    d="M -1,-10 L 1,-10 L 1,0 L -1,0 z"
+  />
+</g>
+<g id="buttonhole-end">
+  <path
+    style="fill:none;stroke:var(--pattern-mark);stroke-width:var(--pattern-stroke);"
+    d="M -1,0 L 1,0 L 1,10 L -1,10 z"
+  />
+</g>
+<radialGradient id="snap-stud-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+  <stop offset="30%" style="stop-color:rgb(235,235,235); stop-opacity:1"/>
+  <stop offset="80%" style="stop-color:rgb(100,100,100);stop-opacity:1" />
+</radialGradient>
+<g id="snap-stud">
+  <circle id="snap-stud-circle-edge" cx="0" cy="0" r="3.4"
+    style="stroke:#666;fill:#dddddd;stroke-width:0.3;"
+  />
+  <circle id="snap-stud-circle-middle" cx="0" cy="0" r="1.8"
+    style="stroke:none;fill:url(#snap-stud-grad);"
+  />
+  <path
+    id="snap-stud-lines" style="fill:none;stroke:#666; stroke-width:0.2;"
+    d="M -2,0 L -3,0 M 2,0 L 3,0 M 0,2 L 0,3 M 0,-2 L 0,-3 M 1.5,1.5 L 2.1,2.1 M -1.5,1.5 L -2.1,2.1 M -1.5,-1.5 L -2.1,-2.1 M 1.5,-1.5 L 2.1,-2.1"
+  />
+</g>
+<g id="snap-socket">
+  <circle id="snap-socket-circle-edge" cx="0" cy="0" r="3.4"
+    style="stroke:#666;fill:#bbbbbb;stroke-width:0.3;"
+  />
+  <circle id="snap-socket-circle-middle" cx="0" cy="0" r="2"
+    style="stroke:#666;fill:#dddddd; stroke-width:0.4;"
+  />
+  <path
+    style="fill:none;stroke:#666; stroke-width:0.5;"
+    d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1" id="snap-socket-lines"
+  />
+</g>
 <marker orient="auto" refY="0.0" refX="0.0" id="cutonfoldFrom" style="overflow:visible;" >
 	<path class="note fill-note" d="M 0,0 L 12,-4 C 10,-2 10,2  12, 4 z" />
 </marker>
@@ -89,62 +145,62 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-22" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-22"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-23" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-24" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-23" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-24" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-25" d="M 243.5,136.45 C 148.88,136.45 40.36,129.6 40.36,129.6 L 28.65,180.38 C 56.57,180.38 183.31,279.37 183.31,315.1 L 243.5,315.1 L 303.69,315.1 C 303.69,279.37 430.43,180.38 458.35,180.38 L 446.64,129.6 C 446.64,129.6 338.12,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-26" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-26"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-27" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-28" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-27" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-28" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-29" d="M 243.5,136.45 C 147.66,136.45 44.03,129.6 44.03,129.6 L 32.57,180.38 C 60.01,180.38 184.53,279.37 184.53,315.1 L 243.5,315.1 L 302.47,315.1 C 302.47,279.37 426.99,180.38 454.43,180.38 L 442.97,129.6 C 442.97,129.6 339.34,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-30" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-30"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-31" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-32" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-31" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-32" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-33" d="M 243.5,136.45 C 146.48,136.45 47.56,129.6 47.56,129.6 L 36.32,180.38 C 63.31,180.38 185.71,279.37 185.71,315.1 L 243.5,315.1 L 301.29,315.1 C 301.29,279.37 423.69,180.38 450.68,180.38 L 439.44,129.6 C 439.44,129.6 340.52,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-34" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-34"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-35" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-36" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-35" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-36" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-37" d="M 243.5,136.45 C 145.35,136.45 50.95,129.6 50.95,129.6 L 39.93,180.38 C 66.48,180.38 186.83,279.37 186.83,315.1 L 243.5,315.1 L 300.17,315.1 C 300.17,279.37 420.52,180.38 447.07,180.38 L 436.05,129.6 C 436.05,129.6 341.65,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-38" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-38"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-39" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-40" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-39" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-40" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-41" d="M 243.5,136.45 C 144.26,136.45 54.22,129.6 54.22,129.6 L 43.41,180.38 C 69.53,180.38 187.92,279.37 187.92,315.1 L 243.5,315.1 L 299.08,315.1 C 299.08,279.37 417.47,180.38 443.59,180.38 L 432.78,129.6 C 432.78,129.6 342.74,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-42" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-42"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-43" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-44" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-43" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-44" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-45" d="M 243.5,136.45 C 143.22,136.45 57.35,129.6 57.35,129.6 L 46.75,180.38 C 72.46,180.38 188.96,279.37 188.96,315.1 L 243.5,315.1 L 298.04,315.1 C 298.04,279.37 414.54,180.38 440.25,180.38 L 429.65,129.6 C 429.65,129.6 343.78,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-46" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-46"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-47" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-48" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-47" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-48" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-49" d="M 243.5,136.45 C 142.21,136.45 60.38,129.6 60.38,129.6 L 49.97,180.38 C 75.29,180.38 189.97,279.37 189.97,315.1 L 243.5,315.1 L 297.03,315.1 C 297.03,279.37 411.71,180.38 437.03,180.38 L 426.62,129.6 C 426.62,129.6 344.79,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-50" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-50"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-51" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-52" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-51" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-52" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-53" d="M 243.5,136.45 C 141.24,136.45 63.29,129.6 63.29,129.6 L 53.07,180.38 C 78.01,180.38 190.94,279.37 190.94,315.1 L 243.5,315.1 L 296.06,315.1 C 296.06,279.37 408.99,180.38 433.93,180.38 L 423.71,129.6 C 423.71,129.6 345.76,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-54" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-54"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-55" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-56" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-55" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-56" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 <path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-57" d="M 243.5,136.45 C 140.3,136.45 66.1,129.6 66.1,129.6 L 56.06,180.38 C 80.64,180.38 191.87,279.37 191.87,315.1 L 243.5,315.1 L 295.13,315.1 C 295.13,279.37 406.36,180.38 430.94,180.38 L 420.9,129.6 C 420.9,129.6 346.7,136.45 243.5,136.45 z" />
 <path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-58" d="M 243.5,311.53 L 243.5,247.21" />
 <text><textPath xlink:href="#fs-58"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
 </text>
-<path  class="scalebox imperial" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-59" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-60" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-59" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-60" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
 </g>
 <!-- end of group #fs-part-back -->
 

@@ -1,22 +1,29 @@
 ##### New patterns: Bee, Lunetius, Tiberius, and Walburga
 
-Check out the latest additions to our catalog: the [Bee bikini](/designs/bee/), [Lunetius Lacerna](/designs/lunetius/), [Tiberius Tunica](/designs/tiberius/), and [Walburga Wappenrock](/designs/walburga/).
+Check out the latest additions to our catalog: the [Bee bikini top](/designs/bee/), [Lunetius Lacerna](/designs/lunetius/), [Tiberius Tunica](/designs/tiberius/), and [Walburga Wappenrock](/designs/walburga/).
 
-Bee is a bikini pattern, while Lunetius, Tiberius, and Walburga are historical patterns.
+Bee is a bikini top pattern, while Lunetius, Tiberius, and Walburga are historical patterns.
 
 Read more in [our blog](/blog/freesewing-2-19/).
 
-##### Next contributor call on 13 November
+##### Next contributor call on 22 January
 
-The next contributor call is on **13 November 2021**, Lucian and Karen will host it.
+The next contributor call is on **22 January 2022**, Lucian and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
 
+##### FreeSewing v3 is coming
 
-##### Summertime: Things are a bit slower
+Over the summer, Joost started working on *project 2022*, an effort to
+migrate the FreeSewing websites (freesewing.org and freesewing.dev) from
+GatbsyJS to NextJS, and in the process consolidate and streamline our various repositories.
 
-Things are [a bit slower during the summertime](https://github.com/freesewing/freesewing/discussions/1139) but
-on the plus side, we're looking into playing DnD together.
+Before long, it became clear that there are going to be too many major changes not to bump
+the major version.
 
-Join [discord.freesewing.org](https://discord.freesewing.org/) for more info.
+Take a look at our new development blog, which you can read at [2022.freesewing.dev/blog](https://2022.freesewing.dev/blog), and the [FreeSewing v3 Roadmap](https://github.com/freesewing/freesewing/discussions/1278).
+
+If you'd like to get involved in this effort, head over to [discord.freesewing.org](https://discord.freesewing.org/) and join the **v3** channel.
+
+

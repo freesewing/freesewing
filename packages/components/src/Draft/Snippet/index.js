@@ -7,8 +7,8 @@ const Snippet = (props) => {
     x: props.snippet.anchor.x,
     y: props.snippet.anchor.y
   }
-  let scale = props.snippet.attributes.get('data-scale')
-  let rotate = props.snippet.attributes.get('data-rotate')
+  const scale = (props.snippet.attributes.get('data-scale') || 1) * (props.scale || 1)
+  const rotate = props.snippet.attributes.get('data-rotate')
   if (scale || rotate) {
     snippetProps.transform = ''
     if (scale) {

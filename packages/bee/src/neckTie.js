@@ -10,7 +10,6 @@ export default function (part) {
     complete,
     paperless,
     macro,
-    utils,
     measurements,
     absoluteOptions,
   } = part.shorthand()

@@ -7,7 +7,7 @@ title: Bent Construction
 ###### Bent is a block, not a pattern
 
 A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
 Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Bent block.
 
@@ -23,13 +23,13 @@ As Bent is a block it does not have any closures. So the instructions below will
 
 - Sew the fronts to the back at the shoulder seams good sides together.
 - Sew the fronts to the back at the side seams good sides together.
-- Sew the under sleeves to the top sleeves good sides together.
-- Sew the sleeve side seams good sides together.
+- Sew the under sleeves to the top sleeves good sides together along the side seams.
 - Attach the sleeves to the body, good sides together and sew them in the round.
 
 <Note>
 
-You may need to ease/gather the sleeves to fit
+You may need to ease/gather the sleeves to fit.  
+You may need to leave the bottom of one of the sleeve seams open to put the garment on.
 
 </Note>
 <Tip>

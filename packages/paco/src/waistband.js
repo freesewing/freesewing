@@ -1,5 +1,5 @@
 export default function (part) {
-  let { utils, store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
+  let { utils, store, sa, Point, points, Path, paths, complete, paperless, macro } =
     part.shorthand()
 
   points.topLeft = new Point(0, 0)

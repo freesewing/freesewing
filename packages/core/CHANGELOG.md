@@ -1,6 +1,31 @@
 # Change log for: @freesewing/core
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Added
+
+ - Added support for `settings.scale`
+
+## 2.19.8 (2022-01-08)
+
+### Fixed
+
+ - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
+
+## 2.19.6 (2021-12-29)
+
+### Added
+
+ - Added the new attributes.setIfUnset() method
+ - Added the new `scale` setting
+
+## 2.19.5 (2021-11-13)
+
+### Fixed
+
+ - Fixed a copy-paste error that caused the `absoluteOptions` shorthand property to be a proxy for the regular options object instead. Note that this bug (and proxying in general) only occurs in debug mode.
+
 ## 2.19.0 (2021-10-17)
 
 ### Added

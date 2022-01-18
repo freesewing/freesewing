@@ -32,6 +32,7 @@ The `Part.shorthand()` method returns a plain object with the following properti
 | `paths` | Holds `part.paths` |
 | `Point` | The [Point constructor](/reference/api/point) |
 | `points` | Holds `part.points` |
+| `scale` | Holds `pattern.settings.scale` |
 | `Snippet` | The [Snippet constructor](/reference/api/snippet) |
 | `snippets` | Holds `part.snippets` |
 | `options` | Holds `pattern.settings.options` |
@@ -43,7 +44,7 @@ The `Part.shorthand()` method returns a plain object with the following properti
 
 ## Part.shorthand() example
 
-```js{16}
+```js
 // You could write this:
 part.points.from = new part.Point(
   pattern.measurements.chest / 2, 

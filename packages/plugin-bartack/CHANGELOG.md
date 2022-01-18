@@ -1,6 +1,28 @@
 # Change log for: @freesewing/plugin-bartack
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Now part of `@freesewing/plugin-bundle`
+
+### Fixed
+
+ - Fixed issue with `bartackFractionAlong` macro
+ - Handle start and endpoints being the same in `bartackFractionAlong`
+ - Support start and endpoints being reversed in `bartackFractionAlong`
+
+## 2.19.6 (2021-12-29)
+
+### Added
+
+ - Added (esm) unit tests
+
+### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
 
 This is the **initial release**, and the start of this change log.
 

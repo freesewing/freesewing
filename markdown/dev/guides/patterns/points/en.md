@@ -1,6 +1,6 @@
 ---
 title: Points
-order: 10
+order: 30
 ---
 
 <Example 

@@ -6,7 +6,7 @@ Droit-fil— une ligne qui indique le droit-fil du tissu ** — ressemble à cec
 
 <Legend part="grainline">
 
-A grainline indicator
+Un indicateur de ligne de droit fil
 
 </Legend>
 
@@ -14,6 +14,6 @@ Les indicateurs de coupe au-pli sont semblables, mais pointent vers la ligne sur
 
 <Legend part="cutonfold">
 
-A cut-on-fold indicator
+Un indicateur de découpe au pli
 
 </Legend>

@@ -6,4 +6,4 @@ Controls the length of the crown and ear flaps
 
 
 ## Efecto de esta opción en el patrón
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](holmes_lengthratio_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](holmes_lengthratio_sample.svg "Efecto de esta opción en el patrón")

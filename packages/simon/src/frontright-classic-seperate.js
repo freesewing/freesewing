@@ -1,5 +1,5 @@
 export default (part) => {
-  const { store, snippets, utils, sa, Point, points, paths, complete, paperless, macro, options } =
+  const { store, snippets, utils, sa, Point, points, paths, complete, paperless, macro } =
     part.shorthand()
 
   const width = store.get('buttonPlacketWidth')

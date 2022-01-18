@@ -1,5 +1,5 @@
 ---
-title: Testing your pattern
+title: "Testing your pattern"
 order: 250
 ---
 
@@ -40,7 +40,6 @@ Click on any of the options we've added to our pattern, and your bib will be dra
 The `lengthRatio` option controls the length of our bib. Testing it confirms that it only influences the length:
 
 <Example 
-  caption="Your bib with the lengthRatio option sampled" 
   sample 
   part="bib" 
   pattern="tutorial" 
@@ -50,7 +49,9 @@ The `lengthRatio` option controls the length of our bib. Testing it confirms tha
       option: "lengthRatio" 
     } 
   }} 
-/>
+>
+Your bib with the lengthRatio option sampled
+</Example>
 
 ### neckRatio
 
@@ -62,7 +63,6 @@ Testing it confirms this. We can also see that as the neck opening gets smaller,
 further out of the way to avoid overlap:
 
 <Example 
-  caption="Your bib with the neckRatio option sampled" 
   sample 
   part="bib" 
   pattern="tutorial" 
@@ -72,7 +72,9 @@ further out of the way to avoid overlap:
       option: "neckRatio" 
     } 
   }} 
-/>
+>
+Your bib with the neckRatio option sampled
+</Example>
 
 ### widthRatio
 
@@ -94,7 +96,6 @@ covered in this tutorial. It is left *as an exercise to the reader*.
 </Note>
 
 <Example 
-  caption="Your bib with the widthRatio option sampled" 
   sample 
   part="bib" 
   pattern="tutorial" 
@@ -104,7 +105,9 @@ covered in this tutorial. It is left *as an exercise to the reader*.
       option: "widthRatio" 
     } 
   }} 
-/>
+>
+Your bib with the widthRatio option sampled
+</Example>
 
 ## Testing measurements
 
@@ -114,7 +117,6 @@ This gives you the option to determine how any given measurement is influencing 
 For our bib, we only use one measurement, so it influences the entire pattern:
 
 <Example 
-  caption="Your bib with the head circumference measurement sampled" 
   sample 
   part="bib" 
   pattern="tutorial" 
@@ -124,7 +126,9 @@ For our bib, we only use one measurement, so it influences the entire pattern:
       measurement: "head" 
     } 
   }} 
-/>
+>
+Your bib with the head circumference measurement sampled
+</Example>
 
 ## Testing models
 
@@ -140,7 +144,6 @@ pattern will adapt to differently sized bodies.
 
 <Example 
   sample 
-  caption="Your bib sampled for a range of baby sizes" 
   pattern="tutorial" 
   part="bib" 
   settings={{ 
@@ -159,7 +162,9 @@ pattern will adapt to differently sized bodies.
       }
     } 
   }} 
-/>
+>
+Your bib sampled for a range of baby sizes
+</Example>
 
 ## The antperson test
 
@@ -179,7 +184,6 @@ The best patterns will pass the antperson test with 2 patterns exactly the same,
 
 <Example 
   sample 
-  caption="Congratulations, your bib passes the antperson test" 
   pattern="tutorial" 
   part="bib" 
   settings={{ 
@@ -191,6 +195,8 @@ The best patterns will pass the antperson test with 2 patterns exactly the same,
       }
     } 
   }} 
-/>
+>
+Congratulations, your bib passes the antperson test 
+</Example>
 
 When you're happy with how your pattern passes these tests, it's time to complete it.

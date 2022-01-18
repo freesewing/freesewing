@@ -1,7 +1,7 @@
 ---
-title: Bust point to underbust
+title: Distance de buste vers sous-poitrine
 ---
 
-The **bust point to underbust** measurement is the distance from your bust point/nipple to your underbust.
+La mesure de **buste vers sous-poitrine** est la distance entre votre point de buste/mamelon et votre point de sous-poitrine.
 
-It's the distance an ant would have to walk to go from your bust point/nipple straight down to where your breast meets your torso.
+C'est la distance que devrait parcourir une fourmi depuis votre mamelon directement jusqu'à l'endroit où votre poitrine rejoint votre torse.

@@ -84,8 +84,9 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
  - Um die Kapuze zu schließen, werden die unteren Schichten entlang der Halslinie zusammengeführt.  Wenn Sie keinen Serger haben, verwenden Sie eine Zick-Zack-Nähte.
  - (Optional) Wenn Sie Löcher für eine Zeichenkette hinzugefügt haben, können Sie die Zeichenkette jetzt einbinden.
 
-### Schritt 8: Hänge die Kapuze an
+### Step 8: Preparing a Neckband and Attaching the Hood
 
+ - Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
  - Platziere gute Seiten zusammen auf das Halsbindungsstück, Dann nähen Sie eine Naht von 1 cm entlang der kurzen Seite, um die Bindung zu einem Rundband zu machen.
  - Von der Rückseite bis zur rechten Seite der Halslinie passen. Legen Sie die Kapuzenleiste an die Rückseite der Halslinie an.
  - An der Vorderseite arbeiten und die Kapuze an den Hals befestigen.

@@ -1,11 +1,6 @@
-- - -
-- - -
 
-<Fixme>
+La cantidad de facilidad en la cintura.
 
-Documentar esta opción
-
-</Fixme>
 
 ## Efecto de esta opción en el patrón
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](breanna_waistease_sample.svg "Efecto de esta opción en el patrón")

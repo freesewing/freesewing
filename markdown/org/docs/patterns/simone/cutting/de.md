@@ -1,6 +1,6 @@
 <Note>
 
-Simone ist unser [Simon Pattern](/patterns/simon/) angepasst für Brüste.
+Simone is our [Simon pattern](/designs/simon/) adapted for breasts.
 
 Bitte schau dir die [Simon-Dokumentation](/docs/patterns/simon/) an.
 

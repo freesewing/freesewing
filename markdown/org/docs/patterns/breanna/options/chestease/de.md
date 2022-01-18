@@ -1,4 +1,3 @@
-![Der Brust Leichtigkeit Faktor auf Brian](./chestease.svg)
 
 Diese Option steuert die Leichtigkeit an deiner Truhe.
 

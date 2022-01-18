@@ -1,7 +1,7 @@
 import { calculateHelpers, draftTieShape, seamAllowance, tieShapeDimensions } from './shared'
 
 export default (part) => {
-  let { Path, complete, macro, options, paths, points, paperless, sa, store, absoluteOptions } = part.shorthand()
+  let { Path, complete, macro, paths, points, paperless, sa, store, absoluteOptions } = part.shorthand()
 
   calculateHelpers(part)
   draftTieShape(part, store.get('backTip') * 2.5, absoluteOptions.knotWidth * 2.5, true)

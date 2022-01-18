@@ -9,8 +9,8 @@ export default {
   type: 'pattern',
   difficulty: 2,
   cut: {
-    front: [2, 'onFold'],
-    back: [2, 'onFold'],
+    front: [1, 'onFold'],
+    back: [1, 'onFold'],
     sleeve: 2,
   },
   optionGroups: {

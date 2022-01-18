@@ -1,7 +1,7 @@
-![The armhole depth factor on Brian](./armholedepthfactor.svg)
+![Facteur de profondeur d''emmanchure pour Brian](./armholedepthfactor.svg)
 
-This option controls the depth of the armhole.
+Cette option contrôle la profondeur de l'emmanchure.
 
 
-## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_armholedepthfactor_sample.svg "Effect of this option on the pattern")
+## Effet de cette option sur le motif
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_armholedepthfactor_sample.svg "Effet de cette option sur le motif")

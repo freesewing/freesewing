@@ -1,4 +1,10 @@
 
-Een potloodrok is een nogal formele snede die meestal in een pakmateriaal is gemaakt. Met andere woorden, een mooie wol. Meer casual opties onder medium gewicht omvatten katoen of denim.
+### Main Fabric
 
-Het gebruik van een stof met een beetje stretch maakt het makkelijker om een comfortabele pasvorm te krijgen en geeft je wat meer ruimte om rond te bewegen als een potlood-rok een beetje strak.
+A pencil skirt is a rather formal cut, and most commonly is made in a suiting material. In other words, a **fine wool**. More casual options among **medium weight** fabrics include **cotton** or **denim**.
+
+Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretchs.
+
+### Lining Fabric
+
+The lining fabric needs to be light, and allow the body to slide over it easily. You also don't want something to thick as this will be constricting. **Silky** fabrics are the go to choice as they are lightweight and slippery. 

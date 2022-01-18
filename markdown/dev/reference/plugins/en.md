@@ -1,9 +1,13 @@
 ---
 title: Plugins
-for: developers
-about: Complete list of all the plugins available for FreeSewing core
 ---
 
-The following FreeSewing plugins are available:
+FreeSewing uses a modular approach where functionality can be extended with
+plugins. Plugins can provide macros, or use any of the lifecycle hooks.
+Refer to [the plugin guide](/guides/plugins) for an in-depth look into plugins.
 
-<ReadMore list />
+We maintain the following plugins for @freesewing/core:
+
+<ReadMore />
+
+

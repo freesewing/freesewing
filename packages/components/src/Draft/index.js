@@ -13,7 +13,7 @@ const Draft = (props) => (
     design={props.design || false}
     style={props.style || {}}
     viewBox={props.viewBox}
-    className={props.className || 'freesewing draft'}
+    className={props.className || 'freesewing draft pattern'}
   >
     <Defs {...props} />
     <g>
@@ -23,6 +23,7 @@ const Draft = (props) => (
           language={props.settings.locale}
           paperless={props.settings.paperless}
           units={props.settings.units}
+          scale={props.settings.scale}
           key={name}
           name={name}
           focus={props.focus || false}

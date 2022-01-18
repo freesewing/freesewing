@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-mirror
 
 
+## 2.19.6 (2021-12-29)
+
+### Added
+
+ - Added (esm) unit tests
+
 ## 2.17.0 (2021-07-01)
 
 ### Changed

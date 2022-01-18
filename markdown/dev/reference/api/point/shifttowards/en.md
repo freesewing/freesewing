@@ -1,14 +1,20 @@
 ---
-title: shiftTowards()
+title: Point.shiftTowards()
 ---
+
+Returns a new `Point` that is shifted `distance` (mm) in the direction of the `target`.
+
+If you need to move a point a percentage instead of a specific distance, use [`Point.shiftFractionTowards()`](reference/api/point/shiftfractiontowards/) instead.
+
+## Point.shiftTowards() signature
 
 ```js
 Point point.shiftTowards(Point target, float distance)
 ```
 
-Returns a point that lies distance in the direction of target.
+## Point.shiftTowards() example
 
-<Example 
+<Example
   part="point_shifttowards"
   caption="An example of the Point.shiftTowards() method"
 />

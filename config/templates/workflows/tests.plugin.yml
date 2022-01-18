@@ -1,0 +1,50 @@
+name: Unit tests - {{ Plugin }}
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - 'packages/{{ plugin }}/**'
+      - '!packages/{{ plugin }}/README.md'
+  pull_request:
+    branches:
+      - develop
+    paths:
+      - 'packages/{{ plugin }}/**'
+      - '!packages/{{ plugin }}/README.md'
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+{{=<% %>=}}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+<%={{ }}=%>
+      - name: Install dependencies
+        run: cd packages/{{ plugin }} && npm install
+        env:
+          CI: true
+      - name: Install peer & test dependencies in monorepo root
+        run: "npm install {{{ peerdeps }}} {{{ devdeps }}}"
+        env:
+          CI: true
+      - name: Install peer & test dependencies
+        run: "cd packages/{{ plugin }} && npm install {{{ peerdeps }}} {{{ devdeps }}}"
+        env:
+          CI: true
+      - name: Build plugin
+        run: cd packages/{{ plugin }} && npm run build
+      - name: Run plugin unit tests
+        run: cd packages/{{ plugin }} && npm run testci

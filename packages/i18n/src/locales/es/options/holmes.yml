@@ -6,9 +6,9 @@ goreNumber:
   title: Número de paneles
   description: El número de paneles usado para construir la semiesfera
 brimAngle:
-  title: Brim angle
-  description: Controls the curvature of the brim
+  title: Ángulo de la visera
+  description: Controla la curvatura de la visera
 brimWidth:
-  title: Brim width
-  description: Controls the width of the brim
+  title: Ancho de la visera
+  description: Controla la anchura de la visera
 

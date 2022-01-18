@@ -1,14 +1,21 @@
 ---
-title: rotate()
+title: Point.rotate()
 ---
+
+A point's `rotate()` method returns a new `Point` that has been rotated by `angle` degrees
+around the point (`center`) that you pass it.
+
+Just like the result of the [`Point.angle()`](reference/api/point/angle/) method, an angle of 0° points right, and the angle increases counterclockwise.
+
+## Point.rotate() signature
 
 ```js
 Point point.rotate(float angle, Point center)
-``` 
+```
 
-Rotates a point the number of degrees you pass it around the point you pass it.
+## Point.rotate() example
 
-<Example 
+<Example
   part="point_rotate"
   caption="An example of the Point.rotate() method"
 />

@@ -1,6 +1,18 @@
 # Change log for: @freesewing/yuri
 
 
+## 2.19.8 (2022-01-08)
+
+### Fixed
+
+ - Fix dependency configuration Fixes [#1334](https://github.com/freesewing/freesewing/issues/1334)
+
+## 2.19.5 (2021-11-13)
+
+### Fixed
+
+ - Fix seam allowance on back, gusset and hood center parts Closes [#1464](https://github.com/freesewing/freesewing/issues/1464)
+
 ## 2.18.0 (2021-09-09)
 
 ### Added

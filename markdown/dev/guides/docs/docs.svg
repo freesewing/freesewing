@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="317.5mm"
+   height="178.59377mm"
+   viewBox="0 0 317.5 178.59377"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="docs.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1229"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1227"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker1201"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mstart">
+      <path
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1199"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path844"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path841"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="631.61926"
+     inkscape:cy="447.13138"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="3840"
+     inkscape:window-height="2132"
+     inkscape:window-x="1080"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(492.12497,-18.620489)">
+    <rect
+       style="opacity:1;fill:#5b21b6;fill-opacity:1;stroke:none;stroke-width:3.62117767;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815"
+       width="317.5"
+       height="178.59377"
+       x="-492.12497"
+       y="18.620489"
+       rx="3.4404027"
+       ry="3.8114519" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.70005989px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       x="-328.29581"
+       y="63.211033"
+       id="text819"><tspan
+         sodipodi:role="line"
+         id="tspan817"
+         x="-328.29581"
+         y="63.211033"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#ffffff;stroke-width:2.15250444">Guides</tspan></text>
+    <text
+       id="text823"
+       y="99.14698"
+       x="-328.29581"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.70005989px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#ffffff;stroke-width:2.15250444"
+         y="99.14698"
+         x="-328.29581"
+         id="tspan821"
+         sodipodi:role="line">Howtos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.70005989px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       x="-328.29581"
+       y="156.04854"
+       id="text827"><tspan
+         sodipodi:role="line"
+         id="tspan825"
+         x="-328.29581"
+         y="156.04854"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#ffffff;stroke-width:2.15250444">Reference</tspan></text>
+    <text
+       id="text831"
+       y="78.169304"
+       x="-350.03833"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.70005989px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:end;text-anchor:end;fill:#ffffff;stroke-width:2.15250444"
+         y="78.169304"
+         x="-350.03833"
+         id="tspan829"
+         sodipodi:role="line">Tutorials</tspan></text>
+    <path
+       style="opacity:0.66500005;fill:none;stroke:#ffffff;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M -333.37497,35.54476 V 180.28998"
+       id="path833"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1197"
+       d="M -198.20312,107.38283 H -468.54681"
+       style="opacity:0.66600001;fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1201);marker-end:url(#marker1229)" />
+    <text
+       id="text3411"
+       y="29.591507"
+       x="-333.36511"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.84702301px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;opacity:0.66600001;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:2.15250444"
+         y="29.591507"
+         x="-333.36511"
+         id="tspan3409"
+         sodipodi:role="line">discovering</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.84702301px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;opacity:0.66600001;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       x="-107.90753"
+       y="-479.78055"
+       id="text3715"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan3713"
+         x="-107.90753"
+         y="-479.78055"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:2.15250444">learning</tspan></text>
+    <text
+       transform="rotate(-90)"
+       id="text3719"
+       y="-181.55731"
+       x="-107.90753"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.84702301px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;opacity:0.66600001;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:2.15250444"
+         y="-181.55731"
+         x="-107.90753"
+         id="tspan3717"
+         sodipodi:role="line">working</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.84702301px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;opacity:0.66600001;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       x="-333.36511"
+       y="191.93228"
+       id="text4191"><tspan
+         sodipodi:role="line"
+         id="tspan4189"
+         x="-333.36511"
+         y="191.93228"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:2.15250444">double-checking</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.9861412px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.15250444"
+       x="-352.35159"
+       y="146.07664"
+       id="text4195"><tspan
+         sodipodi:role="line"
+         id="tspan4193"
+         x="-352.35159"
+         y="146.07664"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:end;text-anchor:end;fill:#ffffff;stroke-width:2.15250444">Discord &amp; Githbub</tspan></text>
+    <g
+       id="g4217"
+       transform="rotate(-4.9299968,-205.7308,220.23688)">
+      <text
+         transform="rotate(5.0638764)"
+         id="text4207"
+         y="59.988617"
+         x="-282.07816"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         xml:space="preserve"
+         inkscape:transform-center-x="0.49090944"
+         inkscape:transform-center-y="1.5321792"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           y="59.988617"
+           x="-282.07816"
+           id="tspan4205"
+           sodipodi:role="line">I want to learn about...</tspan></text>
+      <text
+         inkscape:transform-center-y="1.5321792"
+         inkscape:transform-center-x="0.49090944"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="-282.07816"
+         y="59.988617"
+         id="text4211"
+         transform="rotate(5.0638764)"><tspan
+           sodipodi:role="line"
+           id="tspan4209"
+           x="-282.07816"
+           y="59.988617"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">I want to learn about...</tspan></text>
+    </g>
+    <g
+       transform="rotate(-4.9299968,227.67374,431.71495)"
+       id="g4227">
+      <text
+         inkscape:transform-center-y="1.5321792"
+         inkscape:transform-center-x="0.49090944"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="-282.07816"
+         y="59.988617"
+         id="text4221"
+         transform="rotate(5.0638764)"><tspan
+           sodipodi:role="line"
+           id="tspan4219"
+           x="-282.07816"
+           y="59.988617"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">I want to do this common thing</tspan></text>
+      <text
+         transform="rotate(5.0638764)"
+         id="text4225"
+         y="59.988617"
+         x="-282.07816"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         xml:space="preserve"
+         inkscape:transform-center-x="0.49090944"
+         inkscape:transform-center-y="1.5321792"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           y="59.988617"
+           x="-282.07816"
+           id="tspan4223"
+           sodipodi:role="line">I want to do this common thing...</tspan></text>
+    </g>
+    <g
+       transform="rotate(-4.9299968,-110.62565,2101.3475)"
+       id="g4237">
+      <text
+         inkscape:transform-center-y="1.5321792"
+         inkscape:transform-center-x="0.49090944"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="-282.07816"
+         y="59.988617"
+         id="text4231"
+         transform="rotate(5.0638764)"><tspan
+           sodipodi:role="line"
+           id="tspan4229"
+           x="-282.07816"
+           y="59.988617"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">What even is this thing???</tspan></text>
+      <text
+         transform="rotate(5.0638764)"
+         id="text4235"
+         y="59.988617"
+         x="-282.07816"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         xml:space="preserve"
+         inkscape:transform-center-x="0.49090944"
+         inkscape:transform-center-y="1.5321792"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           y="59.988617"
+           x="-282.07816"
+           id="tspan4233"
+           sodipodi:role="line">What even is this thing???</tspan></text>
+    </g>
+    <g
+       transform="rotate(-4.9299968,1191.8402,500.31153)"
+       id="g4247">
+      <text
+         inkscape:transform-center-y="1.5321792"
+         inkscape:transform-center-x="0.49090944"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="-282.07816"
+         y="59.988617"
+         id="text4241"
+         transform="rotate(5.0638764)"><tspan
+           sodipodi:role="line"
+           id="tspan4239"
+           x="-282.07816"
+           y="59.988617"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">What was that parameter again...</tspan></text>
+      <text
+         transform="rotate(5.0638764)"
+         id="text4245"
+         y="59.988617"
+         x="-282.07816"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         xml:space="preserve"
+         inkscape:transform-center-x="0.49090944"
+         inkscape:transform-center-y="1.5321792"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           y="59.988617"
+           x="-282.07816"
+           id="tspan4243"
+           sodipodi:role="line">What was that parameter again...</tspan></text>
+    </g>
+    <g
+       id="g4257"
+       transform="rotate(-4.9299968,1107.691,1893.1223)">
+      <text
+         transform="rotate(5.0638764)"
+         id="text4251"
+         y="59.988617"
+         x="-282.07816"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         xml:space="preserve"
+         inkscape:transform-center-x="0.49090944"
+         inkscape:transform-center-y="1.5321792"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:#6d28d9;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           y="59.988617"
+           x="-282.07816"
+           id="tspan4249"
+           sodipodi:role="line">I'm stuck; Help!</tspan></text>
+      <text
+         inkscape:transform-center-y="1.5321792"
+         inkscape:transform-center-x="0.49090944"
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.59147549px;line-height:1.25;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         x="-282.07816"
+         y="59.988617"
+         id="text4255"
+         transform="rotate(5.0638764)"><tspan
+           sodipodi:role="line"
+           id="tspan4253"
+           x="-282.07816"
+           y="59.988617"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#fde047;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">I'm stuck; Help!</tspan></text>
+    </g>
+  </g>
+</svg>

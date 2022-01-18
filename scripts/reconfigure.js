@@ -34,6 +34,14 @@ const packages = glob.sync('*', {
   cwd: path.join(config.repoPath, 'packages')
 })
 
+const contributors = fs.readFileSync(path.join(repoPath, 'CONTRIBUTORS.md'), 'utf-8')
+const acconfig = JSON.parse(fs.readFileSync(path.join(repoPath, '.all-contributorsrc'), 'utf-8'))
+const mainReadme = Mustache.render(
+  fs.readFileSync(path.join(repoPath, 'config', 'templates', 'readme.main.md'), 'utf-8'),
+  { allcontributors: acconfig.contributors.length }
+)
+fs.writeFileSync(path.join(repoPath, 'README.md'), mainReadme + contributors)
+
 validate(packages, config)
 reconfigure(packages, config)
 
@@ -238,7 +246,10 @@ function badges(pkg, config) {
   for (let group of ['_all', '_social']) {
     markup += "<p align='center'>"
     for (let key of Object.keys(config.badges[group])) {
-      markup += formatBadge(config.badges[group][key], pkg, fullName(pkg, config))
+      const name = (key === 'contributors')
+        ? acconfig.contributors.length
+        : pkg
+      markup += formatBadge(config.badges[group][key], name, fullName(pkg, config))
     }
     markup += '</p>'
   }
@@ -273,7 +284,8 @@ function readme(pkg, config) {
     fullname: fullName(pkg, config),
     description: config.descriptions[pkg],
     badges: badges(pkg, config),
-    info: readInfoFile(pkg)
+    info: readInfoFile(pkg),
+    contributors
   })
 
   return markup
@@ -441,25 +453,38 @@ function configurePatternExample(pkg, config) {
 }
 
 /**
- * Adds unit tests for patterns
+ * Adds unit tests for patterns and plugins
  */
-function configurePatternUnitTests(pkg, config) {
+function configurePkgUnitTests(type, pkg, config) {
   // Create tests directory
-  let dest = path.join(config.repoPath, 'packages', pkg, 'tests')
+  const dest = path.join(config.repoPath, 'packages', pkg, 'tests')
   fse.ensureDirSync(dest)
-  let source = path.join(config.repoPath, 'config', 'templates', 'tests', 'patterns')
+  const source = path.join(config.repoPath, 'config', 'templates', 'tests', `${type}s`)
   // Write templates
-  let peerdeps = peerDependencies(pkg, config, 'pattern')
-  let replace = {
-    version,
-    pattern: pkg,
-    Pattern: capitalize(pkg),
-    peerdeps: Object.keys(peerdeps)
-      .map((dep) => dep + '@' + peerdeps[dep])
-      .join(' ')
-  }
+  const peerdeps = peerDependencies(pkg, config, type)
+  const devdeps = devDependencies(pkg, config, type)
+  const replace = (type === 'pattern')
+    ? {
+        version,
+        pattern: pkg,
+        Pattern: capitalize(pkg),
+        peerdeps: Object.keys(peerdeps)
+          .map((dep) => dep + '@' + peerdeps[dep])
+          .join(' ')
+      }
+    : {
+        version,
+        plugin: pkg,
+        Plugin: capitalize(pkg),
+        peerdeps: Object.keys(peerdeps)
+          .map((dep) => dep + '@' + peerdeps[dep])
+          .join(' '),
+        devdeps: Object.keys(devdeps)
+          .map((dep) => dep + '@' + devdeps[dep])
+          .join(' ')
+    }
 
-  for (let file of ['shared.test.js']) {
+  for (const file of ['shared.test.mjs']) {
     fs.writeFileSync(
       path.join(dest, file),
       Mustache.render(fs.readFileSync(path.join(source, file + '.template'), 'utf-8'), replace)
@@ -470,7 +495,7 @@ function configurePatternUnitTests(pkg, config) {
     path.join(config.repoPath, '.github', 'workflows', `tests.${pkg}.yml`),
     Mustache.render(
       fs.readFileSync(
-        path.join(config.repoPath, 'config', 'templates', 'workflows', 'tests.pattern.yml'),
+        path.join(config.repoPath, 'config', 'templates', 'workflows', `tests.${type}.yml`),
         'utf-8'
       ),
       replace
@@ -486,28 +511,33 @@ function configurePatternUnitTests(pkg, config) {
  * New: Adds unit tests for patterns
  */
 function reconfigure(pkgs, config) {
-  for (let pkg of pkgs) {
+  for (const pkg of pkgs) {
     console.log(chalk.blueBright(`Reconfiguring ${pkg}`))
-    let pkgConfig = packageConfig(pkg, config)
-    fs.writeFileSync(
-      path.join(config.repoPath, 'packages', pkg, 'package.json'),
-      JSON.stringify(pkgConfig, null, 2) + '\n'
-    )
+    if (config.exceptions.customPackageJson.indexOf(pkg) === -1) {
+      const pkgConfig = packageConfig(pkg, config)
+      fs.writeFileSync(
+        path.join(config.repoPath, 'packages', pkg, 'package.json'),
+        JSON.stringify(pkgConfig, null, 2) + '\n'
+      )
+    }
     if (config.exceptions.customRollup.indexOf(pkg) === -1) {
       fs.writeFileSync(
         path.join(config.repoPath, 'packages', pkg, 'rollup.config.js'),
         config.templates.rollup
       )
     }
-    fs.writeFileSync(path.join(config.repoPath, 'packages', pkg, 'README.md'), readme(pkg, config))
-    fs.writeFileSync(
-      path.join(config.repoPath, 'packages', pkg, 'CHANGELOG.md'),
-      changelog(pkg, config)
-    )
-    if (packageType(pkg, config) === 'pattern') {
-      configurePatternExample(pkg, config)
-      configurePatternUnitTests(pkg, config)
+    if (config.exceptions.customReadme.indexOf(pkg) === -1) {
+      fs.writeFileSync(path.join(config.repoPath, 'packages', pkg, 'README.md'), readme(pkg, config))
     }
+    if (config.exceptions.customChangelog.indexOf(pkg) === -1) {
+      fs.writeFileSync(
+        path.join(config.repoPath, 'packages', pkg, 'CHANGELOG.md'),
+        changelog(pkg, config)
+      )
+    }
+    const type = packageType(pkg, config)
+    if (type === 'pattern') configurePatternExample(pkg, config)
+    if (['pattern', 'plugin'].indexOf(type) !== -1) configurePkgUnitTests(type, pkg, config)
   }
   fs.writeFileSync(path.join(config.repoPath, 'CHANGELOG.md'), changelog('global', config))
   console.log(chalk.yellowBright.bold('All done.'))

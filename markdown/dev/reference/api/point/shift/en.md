@@ -1,14 +1,19 @@
 ---
-title: shift()
+title: Point.shift()
 ---
 
+Returns a new `Point` that is `distance` (mm) away in the direction of `angle` (degrees).
+An angle of 0° points to the right, and the angle increases counterclockwise.
+
+## Point.shift() signature
+
 ```js
-Point point.shift(float degrees, float distance)
+Point point.shift(float angle, float distance)
 ```
 
-Returns a point that lies distance in the direction of degrees from this point.
+## Point.shift() example
 
-<Example 
+<Example
   part="point_shift"
   caption="An example of the Point.shift() method"
 />

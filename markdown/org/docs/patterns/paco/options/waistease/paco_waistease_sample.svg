@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" class="freesewing" width="879.6mm" height="1648.7mm" viewBox="0 0 879.6042011189885 1648.7014738073894"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" class="freesewing" width="880.44mm" height="1660.36mm" viewBox="0 0 880.438149907805 1660.3580357565938"
 >
 <style type="text/css"> <![CDATA[ 
 text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baseline:reset-size}text.title-name{font-size:7pt;font-weight:500;text-anchor:middle;dominant-baseline:reset-size}text.title-pattern{font-size:4pt;font-weight:500;dominant-baseline:reset-size;text-anchor:middle;font-style:italic}
@@ -14,7 +14,63 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 ]]>
 </script>
 <defs>
-<g id="button"><circle cx="0" cy="0" r="3.4" style="stroke:#000000;fill:none;stroke-width:1;"/><circle cx="-1" cy="-1" r="0.5" style="stroke:none;fill:#000000;"/><circle cx="1" cy="-1" r="0.5" style="stroke:none;fill:#000000;" /><circle cx="1" cy="1" r="0.5" style="stroke:none;fill:#000000;" /><circle cx="-1" cy="1" r="0.5" style="stroke:none;fill:#000000;" /></g><g id="buttonhole"><path style="fill:none;stroke:#000000;" d="M -1,-5 L 1,-5 L 1,5 L -1,5 z" /></g><g id="buttonhole-start"><path style="fill:none;stroke:#000000;" d="M -1,-10 L 1,-10 L 1,0 L -1,0 z" /></g><g id="buttonhole-end"><path style="fill:none;stroke:#000000;" d="M -1,0 L 1,0 L 1,10 L -1,10 z" /></g><radialGradient id="snap-stud-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"><stop offset="30%" style="stop-color:rgb(235,235,235); stop-opacity:1"/><stop offset="80%" style="stop-color:rgb(100,100,100);stop-opacity:1" /></radialGradient><g id="snap-stud" ><circle id="snap-stud-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#666;fill:#dddddd;stroke-width:0.3;" /><circle id="snap-stud-circle-middle" cx="0" cy="0" r="1.8" style="stroke:none;fill:url(#snap-stud-grad);"/><path style="fill:none;stroke:#666; stroke-width:0.2;" d="M -2,0 L -3,0 M 2,0 L 3,0 M 0,2 L 0,3 M 0,-2 L 0,-3 M 1.5,1.5 L 2.1,2.1 M -1.5,1.5 L -2.1,2.1 M -1.5,-1.5 L -2.1,-2.1 M 1.5,-1.5 L 2.1,-2.1" id="snap-stud-lines"/></g><g id="snap-socket"><circle id="snap-socket-circle-edge" cx="0" cy="0" r="3.4" style="stroke:#666;fill:#bbbbbb;stroke-width:0.3;"/><circle id="snap-socket-circle-middle" cx="0" cy="0" r="2" style="stroke:#666;fill:#dddddd; stroke-width:0.4;"/><path style="fill:none;stroke:#666; stroke-width:0.5;" d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1" id="snap-socket-lines" /></g>
+
+<g id="button">
+  <circle
+    cx="0" cy="0" r="3.4"
+    style="stroke:var(--pattern-mark);fill:none;stroke-width:var(--pattern-stroke);"
+  />
+  <circle cx="-1" cy="-1" r="0.5" style="stroke:none;fill:var(--pattern-mark)"/>
+  <circle cx="1"  cy="-1" r="0.5" style="stroke:none;fill:var(--pattern-mark)" />
+  <circle cx="1"  cy="1"  r="0.5" style="stroke:none;fill:var(--pattern-mark)" />
+  <circle cx="-1" cy="1"  r="0.5" style="stroke:none;fill:var(--pattern-mark)" />
+</g>
+<g id="buttonhole">
+  <path
+    style="fill:none;stroke:var(--pattern-mark);stroke-width:var(--pattern-stroke);"
+    d="M -1,-5 L 1,-5 L 1,5 L -1,5 z"
+  />
+</g>
+<g id="buttonhole-start">
+  <path
+    style="fill:none;stroke:var(--pattern-mark);stroke-width:var(--pattern-stroke);"
+    d="M -1,-10 L 1,-10 L 1,0 L -1,0 z"
+  />
+</g>
+<g id="buttonhole-end">
+  <path
+    style="fill:none;stroke:var(--pattern-mark);stroke-width:var(--pattern-stroke);"
+    d="M -1,0 L 1,0 L 1,10 L -1,10 z"
+  />
+</g>
+<radialGradient id="snap-stud-grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+  <stop offset="30%" style="stop-color:rgb(235,235,235); stop-opacity:1"/>
+  <stop offset="80%" style="stop-color:rgb(100,100,100);stop-opacity:1" />
+</radialGradient>
+<g id="snap-stud">
+  <circle id="snap-stud-circle-edge" cx="0" cy="0" r="3.4"
+    style="stroke:#666;fill:#dddddd;stroke-width:0.3;"
+  />
+  <circle id="snap-stud-circle-middle" cx="0" cy="0" r="1.8"
+    style="stroke:none;fill:url(#snap-stud-grad);"
+  />
+  <path
+    id="snap-stud-lines" style="fill:none;stroke:#666; stroke-width:0.2;"
+    d="M -2,0 L -3,0 M 2,0 L 3,0 M 0,2 L 0,3 M 0,-2 L 0,-3 M 1.5,1.5 L 2.1,2.1 M -1.5,1.5 L -2.1,2.1 M -1.5,-1.5 L -2.1,-2.1 M 1.5,-1.5 L 2.1,-2.1"
+  />
+</g>
+<g id="snap-socket">
+  <circle id="snap-socket-circle-edge" cx="0" cy="0" r="3.4"
+    style="stroke:#666;fill:#bbbbbb;stroke-width:0.3;"
+  />
+  <circle id="snap-socket-circle-middle" cx="0" cy="0" r="2"
+    style="stroke:#666;fill:#dddddd; stroke-width:0.4;"
+  />
+  <path
+    style="fill:none;stroke:#666; stroke-width:0.5;"
+    d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1" id="snap-socket-lines"
+  />
+</g>
 <marker orient="auto" refY="0.0" refX="0.0" id="cutonfoldFrom" style="overflow:visible;" >
 	<path class="note fill-note" d="M 0,0 L 12,-4 C 10,-2 10,2  12, 4 z" />
 </marker>
@@ -39,137 +95,137 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <g id="fs-container">
 
 <!-- Start of group #fs-part-back -->
-<g id="fs-part-back"  transform="translate(345.02895730456976, -157.04900719421528)">
-<path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-1" d="M -342.17,279.48 C -333,322.89 -241.83,577 -241.83,975 L -54.67,975 C -54.67,710.74 -9.59,474.93 19.47,328.03 L 39.54,357.13 L 66.45,210.58 L 41.86,206.06 C 43.2,195.43 43.76,187.06 43.36,181.14 L -242.03,159.45 L -253.32,201.73 C -266.83,252.27 -298.89,270.28 -342.17,279.48 z" />
-<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-2" d="M -342.28,279.48 C -333.07,323.07 -241.83,577 -241.83,975 L -54.67,975 C -54.67,710.79 -9.89,475.02 19.02,328.14 L 39.11,357.23 L 65.93,210.68 L 41.33,206.18 C 42.68,195.54 43.24,187.17 42.86,181.25 L -242.37,159.43 L -253.48,201.69 C -266.77,252.26 -298.82,270.24 -342.28,279.48 z" />
-<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-3" d="M -342.38,279.48 C -333.14,323.24 -241.83,577 -241.83,975 L -54.67,975 C -54.67,710.84 -10.18,475.09 18.59,328.22 L 38.7,357.3 L 65.42,210.73 L 40.83,206.25 C 42.17,195.6 42.75,187.23 42.37,181.32 L -242.7,159.36 L -253.64,201.66 C -266.72,252.24 -298.75,270.21 -342.38,279.48 z" />
-<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-4" d="M -342.48,279.48 C -333.2,323.42 -241.83,577 -241.83,975 L -54.67,975 C -54.67,710.89 -10.48,475.17 18.14,328.33 L 38.27,357.39 L 64.9,210.81 L 40.3,206.35 C 41.65,195.7 42.23,187.33 41.87,181.42 L -243.04,159.33 L -253.79,201.63 C -266.66,252.23 -298.68,270.17 -342.48,279.48 z" />
-<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-5" d="M -342.58,279.48 C -333.26,323.59 -241.83,577 -241.83,975 L -54.67,975 C -54.67,710.96 -10.78,475.28 17.69,328.46 L 37.84,357.52 L 64.38,210.91 L 39.78,206.45 C 41.13,195.79 41.72,187.42 41.37,181.52 L -243.38,159.31 L -253.95,201.6 C -266.6,252.22 -298.6,270.13 -342.58,279.48 z" />
-<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-6" d="M -342.67,279.48 C -333.32,323.76 -241.83,577 -241.83,975 L -54.67,975 C -54.67,711 -11.06,475.34 17.26,328.53 L 37.43,357.58 L 63.88,210.93 L 39.27,206.49 C 40.63,195.84 41.22,187.47 40.88,181.57 L -243.71,159.22 L -254.11,201.57 C -266.55,252.21 -298.53,270.1 -342.67,279.48 z" />
-<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-7" d="M -342.76,279.48 C -333.38,323.93 -241.83,577 -241.83,975 L -54.67,975 C -54.67,711.04 -11.36,475.42 16.82,328.63 L 37,357.66 L 63.35,211.02 L 38.75,206.6 C 40.1,195.93 40.71,187.56 40.38,181.66 L -244.05,159.2 L -254.27,201.54 C -266.49,252.2 -298.46,270.06 -342.76,279.48 z" />
-<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-8" d="M -342.85,279.48 C -333.43,324.1 -241.83,577 -241.83,975 L -54.67,975 C -54.67,711.09 -11.65,475.49 16.37,328.72 L 36.58,357.74 L 62.83,211.08 L 38.23,206.68 C 39.58,196.01 40.19,187.64 39.88,181.75 L -244.4,159.17 L -254.43,201.51 C -266.44,252.19 -298.38,270.03 -342.85,279.48 z" />
-<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-9" d="M -342.94,279.48 C -333.49,324.26 -241.83,577 -241.83,975 L -54.67,975 C -54.67,711.13 -11.93,475.54 15.95,328.78 L 36.17,357.78 L 62.33,211.08 L 37.72,206.69 C 39.08,196.02 39.69,187.66 39.39,181.77 L -244.73,159.08 L -254.59,201.48 C -266.38,252.18 -298.3,269.99 -342.94,279.48 z" />
-<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-10" d="M -343.03,279.48 C -333.54,324.43 -241.83,577 -241.83,975 L -54.67,975 C -54.67,711.17 -12.23,475.61 15.51,328.86 L 35.75,357.85 L 61.81,211.16 L 37.19,206.78 C 38.56,196.1 39.18,187.73 38.89,181.85 L -245.07,159.05 L -254.75,201.45 C -266.33,252.17 -298.23,269.96 -343.03,279.48 z" />
+<g id="fs-part-back"  transform="translate(345.02895730456976, -151.1610099553203)">
+<path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-1" d="M -342.17,279.48 C -333,322.89 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.06 -2.41,443.58 26.51,297.75 L 44.39,323.22 L 65.78,201.08 L 44.11,197.28 C 45.09,188.26 45.46,180.9 45.1,175.31 L -240.47,153.61 L -253.32,201.73 C -266.83,252.27 -298.89,270.28 -342.17,279.48 z" />
+<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-2" d="M -342.28,279.48 C -333.07,323.07 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.1 -2.76,443.64 26.03,297.82 L 43.91,323.27 L 65.25,201.1 L 43.58,197.32 C 44.56,188.3 44.93,180.94 44.59,175.36 L -240.82,153.53 L -253.48,201.69 C -266.77,252.26 -298.82,270.24 -342.28,279.48 z" />
+<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-3" d="M -342.38,279.48 C -333.14,323.24 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.15 -3.12,443.71 25.53,297.91 L 43.43,323.36 L 64.7,201.21 L 43.02,197.43 C 44.01,188.41 44.39,181.05 44.06,175.47 L -241.18,153.5 L -253.64,201.66 C -266.72,252.24 -298.75,270.21 -342.38,279.48 z" />
+<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-4" d="M -342.48,279.48 C -333.2,323.42 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.21 -3.48,443.81 25.02,298.04 L 42.93,323.48 L 64.15,201.29 L 42.47,197.53 C 43.46,188.5 43.85,181.14 43.53,175.57 L -241.55,153.47 L -253.79,201.63 C -266.66,252.23 -298.68,270.17 -342.48,279.48 z" />
+<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-5" d="M -342.58,279.48 C -333.26,323.59 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.26 -3.84,443.88 24.52,298.14 L 42.45,323.57 L 63.6,201.37 L 41.92,197.62 C 42.91,188.59 43.31,181.23 43.01,175.66 L -241.92,153.44 L -253.95,201.6 C -266.6,252.22 -298.6,270.13 -342.58,279.48 z" />
+<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-6" d="M -342.67,279.48 C -333.32,323.76 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.3 -4.19,443.93 24.04,298.2 L 41.97,323.62 L 63.06,201.41 L 41.38,197.67 C 42.38,188.64 42.79,181.28 42.49,175.71 L -242.27,153.36 L -254.11,201.57 C -266.55,252.21 -298.53,270.1 -342.67,279.48 z" />
+<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-7" d="M -342.76,279.48 C -333.38,323.93 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.34 -4.54,444 23.54,298.29 L 41.49,323.7 L 62.51,201.49 L 40.83,197.76 C 41.83,188.72 42.25,181.36 41.96,175.8 L -242.64,153.32 L -254.27,201.54 C -266.49,252.2 -298.46,270.06 -342.76,279.48 z" />
+<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-8" d="M -342.85,279.48 C -333.43,324.1 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.4 -4.9,444.09 23.03,298.4 L 41,323.8 L 61.96,201.56 L 40.28,197.84 C 41.28,188.8 41.71,181.44 41.43,175.88 L -243,153.29 L -254.43,201.51 C -266.44,252.19 -298.38,270.03 -342.85,279.48 z" />
+<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-9" d="M -342.94,279.48 C -333.49,324.26 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.45 -5.26,444.15 22.54,298.48 L 40.52,323.88 L 61.41,201.62 L 39.73,197.92 C 40.73,188.87 41.16,181.52 40.9,175.97 L -243.37,153.25 L -254.59,201.48 C -266.38,252.18 -298.3,269.99 -342.94,279.48 z" />
+<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-10" d="M -343.03,279.48 C -333.54,324.43 -241.83,577 -241.83,975 L -54.67,975 C -54.67,693.46 -5.59,444.16 22.06,298.5 L 40.05,323.88 L 60.88,201.63 L 39.19,197.94 C 40.2,188.89 40.64,181.53 40.39,175.98 L -243.73,153.16 L -254.75,201.45 C -266.33,252.17 -298.23,269.96 -343.03,279.48 z" />
 </g>
 <!-- end of group #fs-part-back -->
 
 <!-- Start of group #fs-part-front -->
-<g id="fs-part-front"  transform="translate(10.166043153134964, -147.21579299489696) translate(0, 819.9509928057847)">
-<path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-11" d="M 15.99,174.15 C 15.74,180.16 16.01,188.55 16.71,199.13 L -8.17,201.61 L 6.61,349.88 L 29.01,322.53 C 45.08,470.7 70.22,707.98 70.22,973.2 L 208.56,973.2 C 208.56,574.2 306.68,333.96 331.62,283.18 C 277.42,257.18 252.39,263.76 236.04,189.37 L 227.21,149.22 L 15.99,174.15 z" />
-<path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-12" d="M 39.58,171.36 L 51.41,349.88 C 51.41,349.88 51.41,415.06 121.65,415.06 L 191.89,415.06 L 152.16,158.08 L 39.58,171.36 z" />
-<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-13" d="M 16.42,174.4 C 16.19,180.4 16.47,188.78 17.17,199.38 L -7.71,201.85 L 6.99,350.13 L 29.4,322.78 C 45.35,470.93 70.22,708.19 70.22,973.31 L 208.56,973.31 C 208.56,574.3 306.67,334.08 331.66,283.28 C 277.35,257.2 252.33,263.82 236.19,189.41 L 227.52,149.4 L 16.42,174.4 z" />
-<path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-14" d="M 40.05,171.6 L 51.82,350.13 C 51.82,350.13 51.82,415.29 122,415.29 L 192.18,415.29 L 152.53,158.28 L 40.05,171.6 z" />
-<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-15" d="M 16.85,174.6 C 16.62,180.59 16.91,188.97 17.62,199.59 L -7.26,202.05 L 7.37,350.34 L 29.8,323.01 C 45.62,471.14 70.22,708.4 70.22,973.4 L 208.56,973.4 C 208.56,574.4 306.66,334.19 331.69,283.36 C 277.28,257.22 252.26,263.88 236.35,189.44 L 227.83,149.57 L 16.85,174.6 z" />
-<path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-16" d="M 40.51,171.79 L 52.22,350.34 C 52.22,350.34 52.22,415.51 122.34,415.51 L 192.47,415.51 L 152.9,158.46 L 40.51,171.79 z" />
-<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-17" d="M 17.28,174.84 C 17.06,180.81 17.36,189.2 18.07,199.83 L -6.81,202.27 L 7.74,350.55 L 30.18,323.22 C 45.87,471.32 70.22,708.58 70.22,973.5 L 208.56,973.5 C 208.56,574.5 306.65,334.3 331.72,283.45 C 277.21,257.24 252.2,263.94 236.51,189.47 L 228.13,149.74 L 17.28,174.84 z" />
-<path  class="lining" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-18" d="M 40.97,172.02 L 52.62,350.55 C 52.62,350.55 52.62,415.67 122.68,415.67 L 192.74,415.67 L 153.27,158.65 L 40.97,172.02 z" />
-<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-19" d="M 17.71,175.07 C 17.5,181.02 17.81,189.41 18.52,200.06 L -6.36,202.49 L 8.12,350.78 L 30.58,323.46 C 46.14,471.54 70.22,708.78 70.22,973.58 L 208.56,973.58 C 208.56,574.59 306.64,334.41 331.75,283.53 C 277.14,257.25 252.13,263.99 236.66,189.5 L 228.45,149.95 L 17.71,175.07 z" />
-<path  class="lining" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-20" d="M 41.44,172.24 L 53.03,350.78 C 53.03,350.78 53.03,415.91 123.03,415.91 L 193.04,415.91 L 153.64,158.86 L 41.44,172.24 z" />
-<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-21" d="M 18.12,175.24 C 17.93,181.19 18.24,189.57 18.96,200.23 L -5.92,202.65 L 8.49,350.94 L 30.95,323.64 C 46.39,471.7 70.22,708.94 70.22,973.67 L 208.56,973.67 C 208.56,574.67 306.63,334.52 331.78,283.61 C 277.07,257.26 252.07,264.04 236.82,189.52 L 228.75,150.09 L 18.12,175.24 z" />
-<path  class="lining" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-22" d="M 41.89,172.4 L 53.42,350.94 C 53.42,350.94 53.42,416.09 123.36,416.09 L 193.31,416.09 L 154,159.02 L 41.89,172.4 z" />
-<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-23" d="M 18.54,175.46 C 18.36,181.38 18.68,189.77 19.4,200.43 L -5.48,202.84 L 8.85,351.17 L 31.33,323.88 C 46.65,471.91 70.22,709.13 70.22,973.75 L 208.56,973.75 C 208.56,574.75 306.62,334.62 331.81,283.68 C 276.99,257.27 252,264.09 236.97,189.55 L 229.04,150.23 L 18.54,175.46 z" />
-<path  class="lining" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-24" d="M 42.34,172.6 L 53.81,351.17 C 53.81,351.17 53.81,416.31 123.7,416.31 L 193.59,416.31 L 154.36,159.18 L 42.34,172.6 z" />
-<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-25" d="M 18.95,175.66 C 18.78,181.57 19.11,189.96 19.84,200.64 L -5.05,203.04 L 9.21,351.35 L 31.7,324.07 C 46.9,472.08 70.22,709.3 70.22,973.83 L 208.56,973.83 C 208.56,574.83 306.61,334.73 331.84,283.75 C 276.92,257.28 251.94,264.13 237.13,189.57 L 229.34,150.35 L 18.95,175.66 z" />
-<path  class="lining" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-26" d="M 42.79,172.79 L 54.2,351.35 C 54.2,351.35 54.2,416.45 124.03,416.45 L 193.86,416.45 L 154.72,159.33 L 42.79,172.79 z" />
-<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-27" d="M 19.36,175.79 C 19.2,181.7 19.53,190.09 20.26,200.78 L -4.62,203.16 L 9.56,351.5 L 32.07,324.23 C 47.15,472.22 70.22,709.44 70.22,973.9 L 208.56,973.9 C 208.56,574.9 306.6,334.84 331.87,283.81 C 276.85,257.28 251.87,264.17 237.28,189.59 L 229.63,150.46 L 19.36,175.79 z" />
-<path  class="lining" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-28" d="M 43.23,172.92 L 54.58,351.5 C 54.58,351.5 54.58,416.6 124.35,416.6 L 194.13,416.6 L 155.07,159.44 L 43.23,172.92 z" />
-<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-29" d="M 19.77,175.98 C 19.62,181.87 19.96,190.26 20.69,200.96 L -4.2,203.33 L 9.92,351.67 L 32.44,324.42 C 47.39,472.39 70.22,709.6 70.22,973.97 L 208.56,973.97 C 208.56,574.97 306.58,334.94 331.89,283.87 C 276.78,257.28 251.81,264.21 237.43,189.6 L 229.91,150.57 L 19.77,175.98 z" />
-<path  class="lining" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-30" d="M 43.67,173.09 L 54.96,351.67 C 54.96,351.67 54.96,416.75 124.67,416.75 L 194.39,416.75 L 155.42,159.58 L 43.67,173.09 z" />
+<g id="fs-part-front"  transform="translate(8.840172283020083, -141.44722828458782) translate(0, 825.8389900446797)">
+<path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-11" d="M 14.61,168.22 C 14.38,173.88 14.55,181.24 15.06,190.21 L -6.84,192.36 L 7.37,337.65 L 27.13,313.61 C 43.56,463.07 70.22,703.66 70.22,973.2 L 208.56,973.2 C 208.56,574.2 306.68,333.96 331.62,283.18 C 277.42,257.18 252.39,263.76 236.04,189.37 L 225.94,143.45 L 14.61,168.22 z" />
+<path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-12" d="M 35.14,165.82 L 46.88,337.65 C 46.88,337.65 46.88,404.18 117.99,404.18 L 189.09,404.18 L 149.62,152.4 L 35.14,165.82 z" />
+<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-13" d="M 15.06,168.41 C 14.84,174.06 15.02,181.42 15.53,190.4 L -6.37,192.53 L 7.78,337.86 L 27.55,313.83 C 43.85,463.27 70.22,703.86 70.22,973.31 L 208.56,973.31 C 208.56,574.3 306.67,334.08 331.66,283.28 C 277.35,257.2 252.33,263.82 236.19,189.41 L 226.27,143.62 L 15.06,168.41 z" />
+<path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-14" d="M 35.62,166 L 47.31,337.86 C 47.31,337.86 47.31,404.41 118.36,404.41 L 189.41,404.41 L 150.01,152.57 L 35.62,166 z" />
+<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-15" d="M 15.5,168.66 C 15.3,174.29 15.49,181.66 16,190.65 L -5.9,192.77 L 8.2,338.1 L 27.97,314.08 C 44.14,463.48 70.22,704.07 70.22,973.4 L 208.56,973.4 C 208.56,574.4 306.66,334.19 331.69,283.36 C 277.28,257.22 252.26,263.88 236.35,189.44 L 226.59,143.78 L 15.5,168.66 z" />
+<path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-16" d="M 36.1,166.23 L 47.74,338.1 C 47.74,338.1 47.74,404.61 118.73,404.61 L 189.72,404.61 L 150.39,152.76 L 36.1,166.23 z" />
+<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-17" d="M 15.95,168.89 C 15.76,174.52 15.95,181.89 16.47,190.89 L -5.43,193.01 L 8.6,338.33 L 28.39,314.32 C 44.43,463.69 70.22,704.27 70.22,973.5 L 208.56,973.5 C 208.56,574.5 306.65,334.3 331.72,283.45 C 277.21,257.24 252.2,263.94 236.51,189.47 L 226.91,143.93 L 15.95,168.89 z" />
+<path  class="lining" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-18" d="M 36.58,166.45 L 48.17,338.33 C 48.17,338.33 48.17,404.8 119.1,404.8 L 190.03,404.8 L 150.78,152.94 L 36.58,166.45 z" />
+<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-19" d="M 16.39,169.12 C 16.21,174.73 16.41,182.1 16.94,191.11 L -4.96,193.22 L 9.01,338.56 L 28.8,314.56 C 44.72,463.9 70.22,704.47 70.22,973.58 L 208.56,973.58 C 208.56,574.59 306.64,334.41 331.75,283.53 C 277.14,257.25 252.13,263.99 236.66,189.5 L 227.23,144.08 L 16.39,169.12 z" />
+<path  class="lining" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-20" d="M 37.06,166.67 L 48.6,338.56 C 48.6,338.56 48.6,405.01 119.47,405.01 L 190.34,405.01 L 151.16,153.11 L 37.06,166.67 z" />
+<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-21" d="M 16.83,169.3 C 16.66,174.9 16.87,182.27 17.4,191.29 L -4.5,193.38 L 9.4,338.73 L 29.21,314.73 C 45,464.06 70.22,704.64 70.22,973.67 L 208.56,973.67 C 208.56,574.67 306.63,334.52 331.78,283.61 C 277.07,257.26 252.07,264.04 236.82,189.52 L 227.54,144.21 L 16.83,169.3 z" />
+<path  class="lining" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-22" d="M 37.53,166.83 L 49.01,338.73 C 49.01,338.73 49.01,405.17 119.82,405.17 L 190.63,405.17 L 151.54,153.26 L 37.53,166.83 z" />
+<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-23" d="M 17.27,169.51 C 17.12,175.1 17.33,182.46 17.87,191.49 L -4.03,193.58 L 9.8,338.92 L 29.62,314.93 C 45.28,464.22 70.22,704.8 70.22,973.75 L 208.56,973.75 C 208.56,574.75 306.62,334.62 331.81,283.68 C 276.99,257.27 252,264.09 236.97,189.55 L 227.87,144.39 L 17.27,169.51 z" />
+<path  class="lining" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-24" d="M 38,167.03 L 49.43,338.92 C 49.43,338.92 49.43,405.35 120.19,405.35 L 190.94,405.35 L 151.92,153.45 L 38,167.03 z" />
+<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-25" d="M 17.71,169.71 C 17.56,175.29 17.78,182.66 18.33,191.71 L -3.58,193.78 L 10.2,339.13 L 30.02,315.16 C 45.56,464.42 70.22,704.99 70.22,973.83 L 208.56,973.83 C 208.56,574.83 306.61,334.73 331.84,283.75 C 276.92,257.28 251.94,264.13 237.13,189.57 L 228.18,144.51 L 17.71,169.71 z" />
+<path  class="lining" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-26" d="M 38.47,167.22 L 49.85,339.13 C 49.85,339.13 49.85,405.52 120.54,405.52 L 191.24,405.52 L 152.29,153.6 L 38.47,167.22 z" />
+<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-27" d="M 18.14,169.91 C 18,175.48 18.23,182.85 18.78,191.9 L -3.12,193.97 L 10.58,339.31 L 30.42,315.34 C 45.83,464.58 70.22,705.14 70.22,973.9 L 208.56,973.9 C 208.56,574.9 306.6,334.84 331.87,283.81 C 276.85,257.28 251.87,264.17 237.28,189.59 L 228.48,144.61 L 18.14,169.91 z" />
+<path  class="lining" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-28" d="M 38.93,167.41 L 50.26,339.31 C 50.26,339.31 50.26,405.66 120.89,405.66 L 191.52,405.66 L 152.66,153.73 L 38.93,167.41 z" />
+<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-29" d="M 18.56,170.03 C 18.43,175.59 18.67,182.96 19.22,192.02 L -2.68,194.08 L 10.96,339.45 L 30.81,315.49 C 46.1,464.72 70.22,705.28 70.22,973.97 L 208.56,973.97 C 208.56,574.97 306.58,334.94 331.89,283.87 C 276.78,257.28 251.81,264.21 237.43,189.6 L 228.79,144.71 L 18.56,170.03 z" />
+<path  class="lining" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-30" d="M 39.39,167.52 L 50.66,339.45 C 50.66,339.45 50.66,405.82 121.24,405.82 L 191.82,405.82 L 153.03,153.83 L 39.39,167.52 z" />
 </g>
 <!-- end of group #fs-part-front -->
 
 <!-- Start of group #fs-part-pocketBagFront -->
-<g id="fs-part-pocketBagFront"  transform="translate(-20.787824773383683, -152.00833363814058) translate(413.4767990441019, 0)">
-<path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-31" d="M 38.88,154.01 L 23.28,332.24 C 23.28,332.24 13.32,396.65 82.74,407.38 L 152.16,418.12 L 152.16,158.08 L 38.88,154.01 z" />
-<path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-32" d="M 39.34,154.3 L 23.74,332.53 C 23.74,332.53 13.81,396.93 83.17,407.63 L 152.53,418.33 L 152.53,158.28 L 39.34,154.3 z" />
-<path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-33" d="M 39.79,154.54 L 24.2,332.79 C 24.2,332.79 14.28,397.2 83.59,407.87 L 152.9,418.54 L 152.9,158.46 L 39.79,154.54 z" />
-<path  class="lining" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-34" d="M 40.25,154.82 L 24.65,333.04 C 24.65,333.04 14.77,397.41 84.02,408.05 L 153.27,418.68 L 153.27,158.65 L 40.25,154.82 z" />
-<path  class="lining" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-35" d="M 40.71,155.09 L 25.12,333.32 C 25.12,333.32 15.25,397.71 84.45,408.31 L 153.64,418.91 L 153.64,158.86 L 40.71,155.09 z" />
-<path  class="lining" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-36" d="M 41.16,155.31 L 25.56,333.54 C 25.56,333.54 15.72,397.93 84.86,408.5 L 154,419.08 L 154,159.02 L 41.16,155.31 z" />
-<path  class="lining" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-37" d="M 41.6,155.55 L 26,333.81 C 26,333.81 16.18,398.21 85.27,408.75 L 154.36,419.29 L 154.36,159.18 L 41.6,155.55 z" />
-<path  class="lining" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-38" d="M 42.04,155.79 L 26.44,334.04 C 26.44,334.04 16.65,398.39 85.68,408.9 L 154.72,419.41 L 154.72,159.33 L 42.04,155.79 z" />
-<path  class="lining" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-39" d="M 42.47,155.97 L 26.88,334.23 C 26.88,334.23 17.1,398.6 86.08,409.07 L 155.07,419.55 L 155.07,159.44 L 42.47,155.97 z" />
-<path  class="lining" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-40" d="M 42.9,156.19 L 27.31,334.45 C 27.31,334.45 17.56,398.79 86.49,409.24 L 155.42,419.69 L 155.42,159.58 L 42.9,156.19 z" />
+<g id="fs-part-pocketBagFront"  transform="translate(-16.898358741459017, -145.9246090724965) translate(412.81061917472994, 0)">
+<path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-31" d="M 34.44,147.92 L 19.43,319.5 C 19.43,319.5 9.12,385.23 79.37,396.24 L 149.62,407.25 L 149.62,152.4 L 34.44,147.92 z" />
+<path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-32" d="M 34.92,148.15 L 19.91,319.75 C 19.91,319.75 9.62,385.51 79.81,396.49 L 150.01,407.48 L 150.01,152.57 L 34.92,148.15 z" />
+<path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-33" d="M 35.39,148.43 L 20.38,320.04 C 20.38,320.04 10.12,385.76 80.26,396.71 L 150.39,407.66 L 150.39,152.76 L 35.39,148.43 z" />
+<path  class="lining" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-34" d="M 35.86,148.71 L 20.85,320.32 C 20.85,320.32 10.61,386 80.7,396.92 L 150.78,407.84 L 150.78,152.94 L 35.86,148.71 z" />
+<path  class="lining" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-35" d="M 36.33,148.97 L 21.31,320.6 C 21.31,320.6 11.1,386.26 81.13,397.15 L 151.16,408.04 L 151.16,153.11 L 36.33,148.97 z" />
+<path  class="lining" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-36" d="M 36.79,149.18 L 21.78,320.81 C 21.78,320.81 11.59,386.46 81.56,397.32 L 151.54,408.18 L 151.54,153.26 L 36.79,149.18 z" />
+<path  class="lining" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-37" d="M 37.27,149.44 L 22.25,321.04 C 22.25,321.04 12.08,386.7 82,397.53 L 151.92,408.36 L 151.92,153.45 L 37.27,149.44 z" />
+<path  class="lining" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-38" d="M 37.72,149.68 L 22.71,321.31 C 22.71,321.31 12.57,386.91 82.43,397.71 L 152.29,408.51 L 152.29,153.6 L 37.72,149.68 z" />
+<path  class="lining" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-39" d="M 38.18,149.91 L 23.16,321.53 C 23.16,321.53 13.05,387.1 82.85,397.87 L 152.66,408.64 L 152.66,153.73 L 38.18,149.91 z" />
+<path  class="lining" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-40" d="M 38.63,150.07 L 23.61,321.71 C 23.61,321.71 13.51,387.31 83.27,398.05 L 153.03,408.78 L 153.03,153.83 L 38.63,150.07 z" />
 </g>
 <!-- end of group #fs-part-pocketBagFront -->
 
 <!-- Start of group #fs-part-waistband -->
-<g id="fs-part-waistband"  transform="translate(2, 2) translate(550.1042011189885, 109.00000000000004)">
+<g id="fs-part-waistband"  transform="translate(2, 2) translate(550.938149907805, 109.00000000000004)">
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-41" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-42" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-43" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-44" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.89cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-45" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-45"  startOffset="50%" ><tspan  class="fill-mark center">49.89cm</tspan></textPath>
+<path  class="mark" data-text="49.92cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-45" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-45"  startOffset="50%" ><tspan  class="fill-mark center">49.92cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-46" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-47" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-48" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-49" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.86cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-50" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-50"  startOffset="50%" ><tspan  class="fill-mark center">49.86cm</tspan></textPath>
+<path  class="mark" data-text="49.89cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-50" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-50"  startOffset="50%" ><tspan  class="fill-mark center">49.89cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-51" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-52" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-53" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-54" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.84cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-55" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-55"  startOffset="50%" ><tspan  class="fill-mark center">49.84cm</tspan></textPath>
+<path  class="mark" data-text="49.86cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-55" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-55"  startOffset="50%" ><tspan  class="fill-mark center">49.86cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-56" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-57" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-58" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-59" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.81cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-60" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-60"  startOffset="50%" ><tspan  class="fill-mark center">49.81cm</tspan></textPath>
+<path  class="mark" data-text="49.84cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-60" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-60"  startOffset="50%" ><tspan  class="fill-mark center">49.84cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-61" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-62" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-63" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-64" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.78cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-65" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-65"  startOffset="50%" ><tspan  class="fill-mark center">49.78cm</tspan></textPath>
+<path  class="mark" data-text="49.81cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-65" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-65"  startOffset="50%" ><tspan  class="fill-mark center">49.81cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-66" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-67" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-68" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-69" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.76cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-70" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-70"  startOffset="50%" ><tspan  class="fill-mark center">49.76cm</tspan></textPath>
+<path  class="mark" data-text="49.78cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-70" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-70"  startOffset="50%" ><tspan  class="fill-mark center">49.78cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-71" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-72" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-73" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-74" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.73cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-75" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-75"  startOffset="50%" ><tspan  class="fill-mark center">49.73cm</tspan></textPath>
+<path  class="mark" data-text="49.76cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-75" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-75"  startOffset="50%" ><tspan  class="fill-mark center">49.76cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-76" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-77" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-78" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-79" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.71cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-80" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-80"  startOffset="50%" ><tspan  class="fill-mark center">49.71cm</tspan></textPath>
+<path  class="mark" data-text="49.73cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-80" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-80"  startOffset="50%" ><tspan  class="fill-mark center">49.73cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-81" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-82" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-83" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-84" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.68cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-85" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-85"  startOffset="50%" ><tspan  class="fill-mark center">49.68cm</tspan></textPath>
+<path  class="mark" data-text="49.7cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-85" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-85"  startOffset="50%" ><tspan  class="fill-mark center">49.7cm</tspan></textPath>
 </text>
 <path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-86" d="M 60,0 L 0,0 L 0,60 L 60,60M 100,60 L 160,60 L 160,0 L 100,0" />
 <path  class="fabric dashed" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-87" d="M 100,0 L 60,0M 60,60 L 100,60" />
 <path  class="mark dotted" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-88" d="M 0,30 L 0,55" />
 <path  class="mark dotted" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-89" d="M 160,30 L 160,55" />
-<path  class="mark" data-text="49.66cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-90" d="M 0,55 L 160,55" />
-<text><textPath xlink:href="#fs-90"  startOffset="50%" ><tspan  class="fill-mark center">49.66cm</tspan></textPath>
+<path  class="mark" data-text="49.68cm" data-text-class="fill-mark center" marker-start="url(#dimensionFrom)" marker-end="url(#dimensionTo)" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-90" d="M 0,55 L 160,55" />
+<text><textPath xlink:href="#fs-90"  startOffset="50%" ><tspan  class="fill-mark center">49.68cm</tspan></textPath>
 </text>
 </g>
 <!-- end of group #fs-part-waistband -->
 
 <!-- Start of group #fs-part-cuff -->
-<g id="fs-part-cuff"  transform="translate(2, 2) translate(550.1042011189885, 0)">
+<g id="fs-part-cuff"  transform="translate(2, 2) translate(550.938149907805, 0)">
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-91" d="M 0,0 L 0,105 L 325.5,105 L 325.5,0 L 0,0 z" />
 <path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-92" d="M 0,0 L 0,105 L 325.5,105 L 325.5,0 L 0,0 z" />
 <path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-93" d="M 0,0 L 0,105 L 325.5,105 L 325.5,0 L 0,0 z" />

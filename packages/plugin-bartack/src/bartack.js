@@ -2,7 +2,7 @@ const name = (n, so) => `${so.prefix}${n}${so.suffix}`
 
 const drawBartack = (points, self) => {
   let path = new self.Path().move(points.path1[0])
-  for (let i in points.path1) {
+  for (const i in points.path1) {
     if (points.path1[i]) path = path.line(points.path1[i])
     if (points.path2[i]) path = path.line(points.path2[i])
   }
@@ -34,6 +34,7 @@ const getPoints = (path, so) => {
     points.path2.push(path2.shiftFractionAlong((1 / steps) * i))
   }
 
+console.log(points, path.length(), path)
   return points
 }
 
@@ -70,20 +71,24 @@ export default function bartack(so, self) {
     // Along path
     let start = false
     let end = false
-    if (so.bartackAlong) {
-      if (so.start > 0) start = so.path.shiftAlong(so.start)
-      end = so.path.shiftAlong(so.end)
-    } else if (so.bartackFractionAlong) {
+    if (so.bartackAlong) guide = so.path.clone()
+    else if (so.bartackFractionAlong) {
+      if (so.start === so.end) return null
+      if (so.start > so.end) {
+        const newEnd = so.start
+        so.start = so.end
+        so.end = newEnd
+      }
       if (so.start > 0) start = so.path.shiftFractionAlong(so.start)
       if (so.end < 1) end = so.path.shiftFractionAlong(so.end)
+      if (start && end) guide = so.path.split(start).pop().split(end).shift()
+      else if (start) guide = so.path.split(start).pop()
+      else if (end) guide = so.path.split(end).shift()
+      else guide = so.path.clone()
     }
-    if (start && end) guide = so.path.split(start).pop().split(end).shift()
-    else if (start) guide = so.path.split(start).pop()
-    else if (end) guide = so.path.split(end).shift()
-    else guide = so.path.clone()
   }
 
-  self.paths[name('bartack', so)] = bartackPath(guide, so, self).attr('class', 'stroke-sm bartack')
+  self.paths[name('bartack', so)] = bartackPath(guide, so, self).attr('class', 'stroke-sm stroke-mark')
 
   return true
 }

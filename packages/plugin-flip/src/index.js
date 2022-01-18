@@ -4,17 +4,15 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: function (svg) {
-      if (svg.attributes.get('freesewing:plugin-flip') === false)
-        svg.attributes.set('freesewing:plugin-flip', version)
-    },
+    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-flip', version)
   },
   macros: {
     flip: function () {
       let flipped = null
-      let ops = ['from', 'to', 'cp1', 'cp2']
-      for (let id in this.points) {
-        // Keep track of the amount of flips (needed to allow flipping twice, but also avoid double flips in paths below)
+      const ops = ['from', 'to', 'cp1', 'cp2']
+      for (const id in this.points) {
+        // Keep track of the amount of flips
+        // (needed to allow flipping twice, but also avoid double flips in paths below)
         if (flipped === null) {
           flipped = this.points[id].attributes.get('flipped')
           if (flipped === false) flipped = 1
@@ -46,6 +44,6 @@ export default {
         if (wasFlipped !== false) wasFlipped = parseInt(wasFlipped)
         if (wasFlipped !== flipped) this.snippets[id].anchor.x = this.snippets[id].anchor.x * -1
       }
-    },
-  },
+    }
+  }
 }

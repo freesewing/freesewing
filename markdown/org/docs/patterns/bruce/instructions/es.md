@@ -40,7 +40,7 @@ A medida que se manipula el tejido para que se alinee adecuadamente, es fácil e
 
 Una vez que haya superado, las cosas se harán más fáciles. También sería un buen momento para comparar la longitud restante de las costuras curvas. Si uno es un poco más largo que el otro, simplemente estira el más corto hasta que igualen.
 
-Sin embargo, si la diferencia es demasiado grande, simplemente déjenla. Se cortarán cuando hagamos la costura.
+Sin embargo, si la diferencia es demasiado grande, simplemente déjenla. It will get cut off when we do the crotchseam.
 
 <Note>
 

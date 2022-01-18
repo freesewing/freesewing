@@ -1,6 +1,6 @@
 ---
 title: Parts
-order: 40
+order: 20
 ---
 
 <Example 

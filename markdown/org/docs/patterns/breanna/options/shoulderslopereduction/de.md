@@ -1,7 +1,5 @@
 
-![Verringerung der Schulterneigung](./shoulderslopereduction.svg)
-
-Reduziert den Schulterhang, um zusätzlichen Platz für Schulterpolsterung zu schaffen.
+Reduziert die Schulterneigung, um zusätzlichen Platz für Schulterpolster zu schaffen.
 
 
 ## Effekt dieser Option auf das Schnittmuster

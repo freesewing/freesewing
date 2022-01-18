@@ -12,7 +12,7 @@ export const calculateHelpers = (part) => {
 }
 
 export const draftTieShape = (part, tipWidth, knotWidth, notch = false) => {
-  let { points, Point, store, utils, options, paths, Path, macro, absoluteOptions } = part.shorthand()
+  let { points, Point, store, utils, paths, Path, macro, absoluteOptions } = part.shorthand()
 
   let hl = store.get('halfLength')
   let ht = tipWidth / 2

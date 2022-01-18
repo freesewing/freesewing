@@ -55,14 +55,14 @@ export default function (so) {
   }
   // Paths
   this.paths.__miniscaleImperial = new this.Path()
-    .attr('class', 'scalebox imperial')
+    .attr('class', 'scalebox imperial fill-current')
     .move(this.points.__miniscaleImperialTopLeft)
     .line(this.points.__miniscaleImperialBottomLeft)
     .line(this.points.__miniscaleImperialBottomRight)
     .line(this.points.__miniscaleImperialTopRight)
     .close()
   this.paths.__miniscaleMetric = new this.Path()
-    .attr('class', 'scalebox metric')
+    .attr('class', 'scalebox metric fill-bg')
     .move(this.points.__miniscaleMetricTopLeft)
     .line(this.points.__miniscaleMetricBottomLeft)
     .line(this.points.__miniscaleMetricBottomRight)

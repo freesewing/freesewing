@@ -103,22 +103,19 @@ Si vous ne souhaitez pas avoir la jante décorative, vous voudrez peut-être enc
 ## Étape 9 : Préparation d'un cou pour le Capuchon (facultatif)
 
 - Coupez une bande de tissu transversale de votre tissu principal, votre encolure + 2 cm (3/4 po) de long et triple votre couture de cou de largeur.
-- Avec de bons côtés, coudre la bande dans une bande circulaire avec une marge de couture de 1 cm (3/8 po).
-- Appuyez sur ouvrir les coutures.
-- Sur les bons côtés, ***Edgestitch*** près des deux côtés de la couture capturant la marge de couture en dessous.
-- (Facultatif) Couper la marge de couture excédentaire.
+- Press under 1cm (3/8 inch) allowance on the short sides.
 
 <Note>
   
-Bien que marqué comme facultatif, il est recommandé de faire cette étape car elle crée une finition plus nette et plus forte autour du cou.
-Vous pouvez également faire une bande pliée de sorte que le collier n'a pas de bord brut, mais cela peut être volumineux. Vous devrez également vous assurer que le bord plié s'étend légèrement plus longtemps que 1 cm pour être pris lors de la fixation et de la surpiqûre du capot mais pas si longtemps qu'il se battit.
+Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
+You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
   
 </Note>
 
 ## Étape 10 : Attacher la Capuche
 
 - Avec de bons côtés ensemble, en partant de la broche centrale le capot au cou, assortir le dos du centre et chevaucher les extrémités du capot à l'avant du centre.
-- Avec un bon côté du cou et le côté doublure du capot, attachez le cou au capot qui correspond à la couture du manche avec le dos central.
+- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
 - Si vous utilisez un overlocker/serger, serrez le cou et le capot ensemble à travers toutes les couches.
 - Si vous utilisez une machine à coudre, utilisez un point en zig-zag pour coudre toutes les couches du cou et du capot ensemble.
 - À l'extérieur, vérifiez le collier pour vous assurer que toutes les couches sont capturées.
@@ -134,8 +131,8 @@ Si vous utilisez un overlocker/serger pour attacher la capuche, vous pouvez d'ab
 
 <Note>
   
-Si vous craignez que la surpiqûre du collier avec un point droit ne donne pas assez d'extension, vous pouvez toujours le surpiqûre avec un zig-zag étroit ou un point d'extension approprié de votre choix.
-Si vous n'utilisez pas de collier vous voudrez finir la couture avec **Méthode de Finition 2** et point de toppitch de 6mm (1/4 pouce) au lieu de 1cm (3/8 pouces). 
+If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
+If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch). 
   
 </Note>
 

@@ -1,4 +1,3 @@
-![Die Hülsen-Bonusoption auf Brian](./sleevelengthbonus.svg)
 
 Diese Option legt fest, wie die Ärmel verlängert werden.
 
