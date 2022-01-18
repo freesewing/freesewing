@@ -43,6 +43,7 @@ export default {
     mirror: [ 'mirrorLine', 'mirrorClone' ],
     round: [ 'roundRadius', 'roundRender' ],
     scalebox: [ 'scaleboxType' ],
+    sprinkle: [ 'sprinkleScale', 'sprinkleRotate', 'sprinkleSnippet' ],
   },
   measurements: [],
   parts: [
@@ -61,7 +62,7 @@ export default {
     'notches',
     'round',
     'scalebox',
-    //'sprinkle',
+    'sprinkle',
     //'svgattr',
     //'theme',
     //'title',
@@ -70,7 +71,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'scalebox',
+      dflt: 'sprinkle',
       list: [
         'all',
         'banner',
@@ -134,6 +135,23 @@ export default {
     // Round options
     roundRadius: { count: 10, min: 0, max: 50 },
     roundRender: { bool: true },
-    scaleboxType: { dflt: 'scalebox' , list: ['scalebox', 'miniscale'] }
+    scaleboxType: { dflt: 'scalebox' , list: ['scalebox', 'miniscale'] },
+    // Logo options
+    sprinkleScale: { pct: 100, min: 10, max: 200 },
+    sprinkleRotate: { deg: 0, min: -360, max: 360 },
+    sprinkleSnippet: {
+      dflt: 'notch',
+      list: [
+        'notch',
+        'bnotch',
+        'button',
+        'buttonhole',
+        'buttonhole-start',
+        'buttonhole-end',
+        'snap-stud',
+        'snap-socket',
+        'logo',
+      ]
+    },
   }
 }
