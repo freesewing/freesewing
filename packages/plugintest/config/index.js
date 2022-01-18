@@ -44,6 +44,13 @@ export default {
     round: [ 'roundRadius', 'roundRender' ],
     scalebox: [ 'scaleboxType' ],
     sprinkle: [ 'sprinkleScale', 'sprinkleRotate', 'sprinkleSnippet' ],
+    title: [
+      'titleNr',
+      'titleTitle',
+      'titleMeta',
+      'titleScale',
+      'titleRotate'
+    ],
   },
   measurements: [],
   parts: [
@@ -63,15 +70,13 @@ export default {
     'round',
     'scalebox',
     'sprinkle',
-    //'svgattr',
-    //'theme',
-    //'title',
+    'title',
     //'validate',
     //'versionfreeSvg',
   ],
   options: {
     plugin: {
-      dflt: 'sprinkle',
+      dflt: 'title',
       list: [
         'all',
         'banner',
@@ -90,7 +95,6 @@ export default {
         'round',
         'scalebox',
         'sprinkle',
-        'svgattr',
         'theme',
         'title',
         'validate',
@@ -140,7 +144,7 @@ export default {
     sprinkleScale: { pct: 100, min: 10, max: 200 },
     sprinkleRotate: { deg: 0, min: -360, max: 360 },
     sprinkleSnippet: {
-      dflt: 'notch',
+      dflt: 'title',
       list: [
         'notch',
         'bnotch',
@@ -153,5 +157,11 @@ export default {
         'logo',
       ]
     },
+    // Title options
+    titleNr: { count: 1, min: 0, max: 100 },
+    titleTitle: { bool: true },
+    titleMeta: { bool: true },
+    titleScale: { pct: 100, min: 10, max: 200 },
+    titleRotate: { deg: 0, min: -360, max: 360 },
   }
 }

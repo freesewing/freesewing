@@ -18,9 +18,7 @@ import notches from '@freesewing/plugin-notches'
 import round from '@freesewing/plugin-round'
 import scalebox from '@freesewing/plugin-scalebox'
 import sprinkle from '@freesewing/plugin-sprinkle'
-//import svgattr from '@freesewing/plugin-svgattr'
-//import theme from '@freesewing/plugin-theme'
-//import title from '@freesewing/plugin-title'
+import title from '@freesewing/plugin-title'
 //import validate from '@freesewing/plugin-validate'
 //import versionfreeSvg from '@freesewing/plugin-versionfree-svg'
 // Parts
@@ -40,14 +38,9 @@ import draftNotches from './plugin-notches'
 import draftRound from './plugin-round'
 import draftScalebox from './plugin-scalebox'
 import draftSprinkle from './plugin-sprinkle'
-//import draftSvgattr from './plugin-svgattr'
-//import draftTheme from './plugin-theme'
-//import draftTitle from './plugin-title'
+import draftTitle from './plugin-title'
 //import draftValidate from './plugin-validate'
 //import draftVersionfreeSvg from './plugin-versionfree-svg'
-// Note included:
-// plugin-bundle: Is just a wrapper
-// plugin-export-dxf: Deprecated
 
 
 const plugins = [
@@ -68,9 +61,7 @@ const plugins = [
   round,
   scalebox,
   sprinkle,
-//  svgattr,
-//  theme,
-//  title,
+  title,
 //  validate,
 //  versionfreeSvg,
 ]
@@ -92,9 +83,7 @@ const methods = {
   draftRound,
   draftScalebox,
   draftSprinkle,
-//  draftSvgattr,
-//  draftTheme,
-//  draftTitle,
+  draftTitle,
 //  draftValidate,
 //  draftVersionfreeSvg,
 }
