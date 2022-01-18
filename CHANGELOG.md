@@ -52,6 +52,12 @@
  - plugin-banner is now part of plugin-bundle
  - plugin-bartack is now part of plugin-bundle
 
+### plugin-dimension
+
+#### Fixed
+
+ - Support hiding start/end markers on path dimensions (pd macro)
+
 ### plugintest
 
 #### Added

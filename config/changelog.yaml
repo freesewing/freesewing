@@ -23,6 +23,9 @@ unreleased:
       - Handle start and endpoints being the same in `bartackFractionAlong`
       - Support start and endpoints being reversed in `bartackFractionAlong`
 
+    plugin-dimension:
+      - Support hiding start/end markers on path dimensions (pd macro)
+
 
   Changed:
 
