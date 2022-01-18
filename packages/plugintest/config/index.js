@@ -41,6 +41,7 @@ export default {
     gore: [ 'goreRadius', 'goreGoreNumber', 'goreExtraLength' ],
     logo: [ 'logoScale', 'logoRotate' ],
     mirror: [ 'mirrorLine', 'mirrorClone' ],
+    round: [ 'roundRadius', 'roundRender' ],
   },
   measurements: [],
   parts: [
@@ -57,7 +58,7 @@ export default {
     'measurements',
     'mirror',
     'notches',
-    //'round',
+    'round',
     //'scalebox',
     //'sprinkle',
     //'svgattr',
@@ -68,7 +69,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'notches',
+      dflt: 'round',
       list: [
         'all',
         'banner',
@@ -129,6 +130,8 @@ export default {
     // Mirror options
     mirrorLine: { dflt: 'a', list: ['a', 'b', 'none' ] },
     mirrorClone: { bool: true },
-
+    // Round options
+    roundRadius: { count: 10, min: 0, max: 50 },
+    roundRender: { bool: true },
   }
 }
