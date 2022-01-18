@@ -50,6 +50,7 @@ export default {
     'plugin_buttons',
     'plugin_cutonfold',
     'plugin_dimension',
+    'plugin_gore',
     'plugin_grainline',
     'plugin_logo',
     'plugin_mirror',

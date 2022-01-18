@@ -1,6 +1,7 @@
 import freesewing from '@freesewing/core'
 import pluginBundle from '@freesewing/plugin-bundle'
 import mirrorPlugin from '@freesewing/plugin-mirror'
+import gorePlugin from '@freesewing/plugin-gore'
 import config from '../config/'
 // Path API
 import draftPath_move from './path_move'
@@ -36,6 +37,7 @@ import draftPlugin_bartackfractionalong from './plugin_bartackfractionalong'
 import draftPlugin_buttons from './plugin_buttons'
 import draftPlugin_cutonfold from './plugin_cutonfold'
 import draftPlugin_dimension from './plugin_dimension'
+import draftPlugin_gore from './plugin_gore'
 import draftPlugin_grainline from './plugin_grainline'
 import draftPlugin_logo from './plugin_logo'
 import draftPlugin_mirror from './plugin_mirror'
@@ -96,7 +98,7 @@ import draftDocs_overview from './docs_overview'
 import draftDocs_coords from './docs_coords'
 
 // Create design
-const Pattern = new freesewing.Design(config, [ pluginBundle, mirrorPlugin ])
+const Pattern = new freesewing.Design(config, [ pluginBundle, gorePlugin, mirrorPlugin ])
 
 // Attach draft methods to prototype
 let methods = {
@@ -132,6 +134,7 @@ let methods = {
   draftPlugin_buttons,
   draftPlugin_cutonfold,
   draftPlugin_dimension,
+  draftPlugin_gore,
   draftPlugin_grainline,
   draftPlugin_logo,
   draftPlugin_mirror,

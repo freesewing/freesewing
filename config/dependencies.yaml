@@ -148,8 +148,7 @@ diana:
 examples:
   peer:
     '@freesewing/plugin-mirror': *freesewing
-    '@freesewing/plugin-bartack': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-gore': *freesewing
 gatsby-remark-jargon:
   _:
     'remark-jargon': *freesewing

@@ -37,8 +37,7 @@
     "@freesewing/core": "^2.19.9",
     "@freesewing/plugin-bundle": "^2.19.9",
     "@freesewing/plugin-mirror": "^2.19.9",
-    "@freesewing/plugin-bartack": "^2.19.9",
-    "@freesewing/plugin-buttons": "^2.19.9"
+    "@freesewing/plugin-gore": "^2.19.9"
   },
   "dependencies": {},
   "devDependencies": {
