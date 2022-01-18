@@ -74,7 +74,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'title',
+      dflt: 'all',
       list: [
         'all',
         'banner',
