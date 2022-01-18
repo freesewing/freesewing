@@ -6,7 +6,6 @@ const expect = chai.expect
 const round = freesewing.utils.round
 
 describe('Bartack plugin Tests', () => {
-
   it('draws a default bartack from a point', function () {
     const pattern = new freesewing.Pattern()
     pattern.use(plugin)
@@ -41,7 +40,7 @@ describe('Bartack plugin Tests', () => {
     const to = new pattern.Point(10, 30)
 
     const { macro } = pattern.parts.test.shorthand()
-    macro('bartack', {
+    macro('bartackAlong', {
       path: new pattern.Path().move(from).line(to),
     })
     const c = pattern.parts.test.paths.bartack
@@ -61,7 +60,7 @@ describe('Bartack plugin Tests', () => {
     expect(c.ops).to.have.lengthOf(21)
   })
 
-  it('can be called using the bartackAlong syntax', function () {
+  it('can be called using the bartackFractionAlong syntax', function () {
     const pattern = new freesewing.Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
@@ -71,24 +70,24 @@ describe('Bartack plugin Tests', () => {
     const { macro } = pattern.parts.test.shorthand()
     macro('bartackAlong', {
       path: new pattern.Path().move(from).line(to),
-      start: 10,
-      end: 30,
+      start: 0.2,
+      end: 0.8,
     })
     const c = pattern.parts.test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
-    expect(c.ops[0].to.y).to.equal(30)
+    expect(c.ops[0].to.y).to.equal(20)
     expect(c.ops[1].type).to.equal('line')
     expect(round(c.ops[1].to.x)).to.equal(8.5)
-    expect(c.ops[1].to.y).to.equal(30)
+    expect(c.ops[1].to.y).to.equal(20)
     expect(round(c.ops[2].to.x)).to.equal(11.5)
-    expect(c.ops[2].to.y).to.equal(30)
+    expect(c.ops[2].to.y).to.equal(20)
     expect(round(c.ops[3].to.x)).to.equal(8.5)
-    expect(c.ops[3].to.y).to.equal(31)
+    expect(c.ops[3].to.y).to.equal(21)
     expect(round(c.ops[4].to.x)).to.equal(11.5)
-    expect(c.ops[4].to.y).to.equal(31)
-    expect(c.ops).to.have.lengthOf(41)
+    expect(c.ops[4].to.y).to.equal(21)
+    expect(c.ops).to.have.lengthOf(161)
   })
 
   it('can be called using the bartackFractionAlong syntax', function () {
