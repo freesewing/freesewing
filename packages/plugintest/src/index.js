@@ -8,7 +8,7 @@ import cutonfold from '@freesewing/plugin-cutonfold'
 import dimension from '@freesewing/plugin-dimension'
 import flip from '@freesewing/plugin-flip'
 import gore from '@freesewing/plugin-gore'
-//import grainline from '@freesewing/plugin-grainline'
+import grainline from '@freesewing/plugin-grainline'
 //import i18n from '@freesewing/plugin-i18n'
 //import logo from '@freesewing/plugin-logo'
 //import measurements from '@freesewing/plugin-measurements'
@@ -30,7 +30,7 @@ import draftCutonfold from './plugin-cutonfold'
 import draftDimension from './plugin-dimension'
 import draftFlip from './plugin-flip'
 import draftGore from './plugin-gore'
-//import draftGrainline from './plugin-grainline'
+import draftGrainline from './plugin-grainline'
 //import draftI18n from './plugin-i18n'
 //import draftLogo from './plugin-logo'
 //import draftMeasurements from './plugin-measurements'
@@ -57,7 +57,7 @@ const plugins = [
   dimension,
   flip,
   gore,
-//  grainline,
+  grainline,
 //  i18n,
 //  logo,
 //  measurements,
@@ -81,7 +81,7 @@ const methods = {
   draftDimension,
   draftFlip,
   draftGore,
-//  draftGrainline,
+  draftGrainline,
 //  draftI18n,
 //  draftLogo,
 //  draftMeasurements,

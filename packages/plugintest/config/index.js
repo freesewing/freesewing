@@ -48,7 +48,7 @@ export default {
     'dimension',
     'flip',
     'gore',
-    //'grainline',
+    'grainline',
     //'i18n',
     //'logo',
     //'measurements',
@@ -65,7 +65,7 @@ export default {
   ],
   options: {
     plugin: {
-      dflt: 'gore',
+      dflt: 'grainline',
       list: [
         'all',
         'banner',
