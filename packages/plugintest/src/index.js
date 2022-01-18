@@ -9,7 +9,7 @@ import dimension from '@freesewing/plugin-dimension'
 import flip from '@freesewing/plugin-flip'
 import gore from '@freesewing/plugin-gore'
 import grainline from '@freesewing/plugin-grainline'
-//import i18n from '@freesewing/plugin-i18n'
+import i18n from '@freesewing/plugin-i18n'
 //import logo from '@freesewing/plugin-logo'
 //import measurements from '@freesewing/plugin-measurements'
 //import mirror from '@freesewing/plugin-mirror'
@@ -31,7 +31,7 @@ import draftDimension from './plugin-dimension'
 import draftFlip from './plugin-flip'
 import draftGore from './plugin-gore'
 import draftGrainline from './plugin-grainline'
-//import draftI18n from './plugin-i18n'
+import draftI18n from './plugin-i18n'
 //import draftLogo from './plugin-logo'
 //import draftMeasurements from './plugin-measurements'
 //import draftMirror from './plugin-mirror'
@@ -58,7 +58,7 @@ const plugins = [
   flip,
   gore,
   grainline,
-//  i18n,
+  // Not loading i18n because it's already loaded by Workbench
 //  logo,
 //  measurements,
 //  mirror,
@@ -82,7 +82,7 @@ const methods = {
   draftFlip,
   draftGore,
   draftGrainline,
-//  draftI18n,
+  draftI18n,
 //  draftLogo,
 //  draftMeasurements,
 //  draftMirror,
