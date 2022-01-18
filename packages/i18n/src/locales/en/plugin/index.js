@@ -10,7 +10,7 @@ import grainline from './plugins/grainline.yaml'
 import scalebox from './plugins/scalebox.yaml'
 import title from './plugins/title.yaml'
 
-let files = {
+const files = {
   brian,
   aaron,
   bruce,
@@ -24,10 +24,10 @@ let files = {
   title,
 }
 
-let messages = {}
+const messages = {}
 
-for (let file of Object.keys(files)) {
-  for (let msg of Object.keys(files[file])) messages[msg] = files[file][msg]
+for (const file in files) {
+  for (const [key, val] of Object.entries(files[file])) messages[key] = val
 }
 
 export default messages
