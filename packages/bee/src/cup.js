@@ -46,7 +46,7 @@ export default function (part) {
     points.bustDartTop,
     points.bustDartBottom.dist(points.sideHemInitial)
   )
-  points.waistDartRightRotated = points.waistDartRight.rotate(angle,points.bust)
+  points.waistDartRightRotated = points.waistDartRight.rotate(angle, points.bust)
   if (options.bellaGuide) {
     paths.bellaGuide = new Path()
       .move(points.sideHemNew)
