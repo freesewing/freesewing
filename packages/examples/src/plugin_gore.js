@@ -3,7 +3,7 @@ export default (part) => {
 
   points.anchor = new Point(0, 0)
 
-  macro("gore", {
+  macro('gore', {
     from: points.anchor,
     radius: 60,
     gores: 5,

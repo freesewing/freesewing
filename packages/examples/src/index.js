@@ -98,7 +98,7 @@ import draftDocs_overview from './docs_overview'
 import draftDocs_coords from './docs_coords'
 
 // Create design
-const Pattern = new freesewing.Design(config, [ pluginBundle, gorePlugin, mirrorPlugin ])
+const Pattern = new freesewing.Design(config, [pluginBundle, gorePlugin, mirrorPlugin])
 
 // Attach draft methods to prototype
 let methods = {
