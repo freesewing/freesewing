@@ -38,7 +38,6 @@ import draftScalebox from './plugin-scalebox'
 import draftSprinkle from './plugin-sprinkle'
 import draftTitle from './plugin-title'
 
-
 const plugins = [
   banner,
   bartack,
@@ -85,7 +84,7 @@ const Pattern = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
 for (const [name, method] of Object.entries(methods)) {
-  Pattern.prototype[name] = part => method(part)
+  Pattern.prototype[name] = (part) => method(part)
 }
 
 export default Pattern

@@ -1,19 +1,15 @@
-const draftDimension = part => {
-
+const draftDimension = (part) => {
   const { points, Point, paths, Path, options, macro } = part.shorthand()
 
   if (['dimension', 'all'].indexOf(options.plugin) !== -1) {
-
-    points.a = new Point(0,0)
-    points.b = new Point(10,0)
-    points.c = new Point(0,10)
-    points.d = new Point(100,0)
-    points.e = new Point(0,100)
-    points.f = new Point(50,50)
-    points.g = new Point(80,80)
-    paths.a = new Path()
-      .move(points.c)
-      .curve(points.e, points.g, points.d)
+    points.a = new Point(0, 0)
+    points.b = new Point(10, 0)
+    points.c = new Point(0, 10)
+    points.d = new Point(100, 0)
+    points.e = new Point(0, 100)
+    points.f = new Point(50, 50)
+    points.g = new Point(80, 80)
+    paths.a = new Path().move(points.c).curve(points.e, points.g, points.d)
 
     const opts = {
       text: options.dimensionCustomText ? 'custom text' : false,
@@ -51,7 +47,6 @@ const draftDimension = part => {
       path: paths.a,
       ...opts,
     })
-
 
     // Prevent clipping of text
     paths.box = new Path()

@@ -1,4 +1,4 @@
-const bartackOptions = options => ({
+const bartackOptions = (options) => ({
   angle: options.bartackAngle,
   length: options.bartackLength,
   density: options.bartackDensity,
@@ -7,16 +7,15 @@ const bartackOptions = options => ({
   end: options.bartackEnd,
 })
 
-const draftBartack = part => {
-
+const draftBartack = (part) => {
   const { points, Point, paths, Path, macro, options } = part.shorthand()
 
   if (['bartack', 'all'].indexOf(options.plugin) !== -1) {
-    points.bartack = new Point(0,0)
+    points.bartack = new Point(0, 0)
     macro('bartack', {
       anchor: points.bartack,
       prefix: 'a',
-      ...bartackOptions(options)
+      ...bartackOptions(options),
     })
 
     points.a = new Point(20, 0)
@@ -32,7 +31,7 @@ const draftBartack = part => {
     macro('bartackAlong', {
       path: paths.a,
       prefix: 'b',
-      ...bartackOptions(options)
+      ...bartackOptions(options),
     })
 
     points.e = new Point(50, 0)
@@ -48,7 +47,7 @@ const draftBartack = part => {
     macro('bartackFractionAlong', {
       prefix: 'c',
       path: paths.e,
-      ...bartackOptions(options)
+      ...bartackOptions(options),
     })
   }
 

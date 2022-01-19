@@ -9,14 +9,8 @@ export default {
   type: 'pattern',
   difficulty: 1,
   optionGroups: {
-    tests: [
-      'plugin',
-    ],
-    banner: [
-      'bannerDy',
-      'bannerSpaces',
-      'bannerRepeat',
-    ],
+    tests: ['plugin'],
+    banner: ['bannerDy', 'bannerSpaces', 'bannerRepeat'],
     bartack: [
       'bartackLength',
       'bartackAngle',
@@ -25,32 +19,17 @@ export default {
       'bartackStart',
       'bartackEnd',
     ],
-    buttons: [ 'buttonsScale', 'buttonsRotate' ],
-    cutonfold: [
-      'cutonfoldMargin',
-      'cutonfoldOffset',
-      'cutonfoldGrainline',
-    ],
-    dimension: [
-      'dimensionCustomText',
-      'dimensionD',
-      'dimensionEndMarker',
-      'dimensionStartMarker',
-    ],
-    flip: [ 'flipAxis' ],
-    gore: [ 'goreRadius', 'goreGoreNumber', 'goreExtraLength' ],
-    logo: [ 'logoScale', 'logoRotate' ],
-    mirror: [ 'mirrorLine', 'mirrorClone' ],
-    round: [ 'roundRadius', 'roundRender' ],
-    scalebox: [ 'scaleboxType' ],
-    sprinkle: [ 'sprinkleScale', 'sprinkleRotate', 'sprinkleSnippet' ],
-    title: [
-      'titleNr',
-      'titleTitle',
-      'titleMeta',
-      'titleScale',
-      'titleRotate'
-    ],
+    buttons: ['buttonsScale', 'buttonsRotate'],
+    cutonfold: ['cutonfoldMargin', 'cutonfoldOffset', 'cutonfoldGrainline'],
+    dimension: ['dimensionCustomText', 'dimensionD', 'dimensionEndMarker', 'dimensionStartMarker'],
+    flip: ['flipAxis'],
+    gore: ['goreRadius', 'goreGoreNumber', 'goreExtraLength'],
+    logo: ['logoScale', 'logoRotate'],
+    mirror: ['mirrorLine', 'mirrorClone'],
+    round: ['roundRadius', 'roundRender'],
+    scalebox: ['scaleboxType'],
+    sprinkle: ['sprinkleScale', 'sprinkleRotate', 'sprinkleSnippet'],
+    title: ['titleNr', 'titleTitle', 'titleMeta', 'titleScale', 'titleRotate'],
   },
   measurements: [],
   parts: [
@@ -97,19 +76,19 @@ export default {
         'title',
         'validate',
         'versionfreeSvg',
-      ]
+      ],
     },
     // Banner options
     bannerDy: { count: -1, min: -15, max: 15 },
     bannerSpaces: { count: 10, min: 0, max: 20 },
     bannerRepeat: { count: 10, min: 1, max: 20 },
     // Bartack options
-    bartackLength: {count: 15, min: 2, max: 100 },
-    bartackAngle: {count: 0, min: -360, max: 360 },
-    bartackDensity: {count: 3, min: 1, max: 5 },
-    bartackWidth: {count: 3, min: 1, max: 5 },
-    bartackStart: {pct: 25, min: 0, max: 100 },
-    bartackEnd: {pct: 75, min: 0, max: 100 },
+    bartackLength: { count: 15, min: 2, max: 100 },
+    bartackAngle: { count: 0, min: -360, max: 360 },
+    bartackDensity: { count: 3, min: 1, max: 5 },
+    bartackWidth: { count: 3, min: 1, max: 5 },
+    bartackStart: { pct: 25, min: 0, max: 100 },
+    bartackEnd: { pct: 75, min: 0, max: 100 },
     // Buttons options
     buttonsScale: { pct: 100, min: 10, max: 200 },
     buttonsRotate: { deg: 0, min: -360, max: 360 },
@@ -132,12 +111,12 @@ export default {
     logoScale: { pct: 100, min: 10, max: 200 },
     logoRotate: { deg: 0, min: -360, max: 360 },
     // Mirror options
-    mirrorLine: { dflt: 'a', list: ['a', 'b', 'none' ] },
+    mirrorLine: { dflt: 'a', list: ['a', 'b', 'none'] },
     mirrorClone: { bool: true },
     // Round options
     roundRadius: { count: 10, min: 0, max: 50 },
     roundRender: { bool: true },
-    scaleboxType: { dflt: 'scalebox' , list: ['scalebox', 'miniscale'] },
+    scaleboxType: { dflt: 'scalebox', list: ['scalebox', 'miniscale'] },
     // Logo options
     sprinkleScale: { pct: 100, min: 10, max: 200 },
     sprinkleRotate: { deg: 0, min: -360, max: 360 },
@@ -153,7 +132,7 @@ export default {
         'snap-stud',
         'snap-socket',
         'logo',
-      ]
+      ],
     },
     // Title options
     titleNr: { count: 1, min: 0, max: 100 },
@@ -161,5 +140,5 @@ export default {
     titleMeta: { bool: true },
     titleScale: { pct: 100, min: 10, max: 200 },
     titleRotate: { deg: 0, min: -360, max: 360 },
-  }
+  },
 }

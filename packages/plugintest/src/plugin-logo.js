@@ -4,11 +4,10 @@ const addThese = [
   'buttonhole-start',
   'buttonhole-end',
   'snap-stud',
-  'snap-socket'
+  'snap-socket',
 ]
 
-const draftButtons = part => {
-
+const draftButtons = (part) => {
   const { points, Point, paths, Path, snippets, Snippet, options } = part.shorthand()
 
   if (['logo', 'all'].indexOf(options.plugin) !== -1) {
@@ -18,10 +17,7 @@ const draftButtons = part => {
       .attr('data-rotate', options.logoRotate)
 
     // Prevent clipping of text
-    paths.box = new Path()
-      .move(new Point(0,0))
-      .line(new Point(80, 60))
-      .attr('class', 'hidden')
+    paths.box = new Path().move(new Point(0, 0)).line(new Point(80, 60)).attr('class', 'hidden')
   }
 
   return part

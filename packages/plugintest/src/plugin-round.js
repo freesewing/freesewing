@@ -1,6 +1,4 @@
-
-const draftRound = part => {
-
+const draftRound = (part) => {
   const { Point, points, Path, paths, macro, options } = part.shorthand()
 
   if (['round', 'all'].indexOf(options.plugin) !== -1) {
@@ -19,7 +17,7 @@ const draftRound = part => {
 
     const opts = {
       radius: options.roundRadius,
-      render: options.roundRender
+      render: options.roundRender,
     }
 
     macro('round', {
@@ -27,14 +25,14 @@ const draftRound = part => {
       to: points.bottomRight,
       via: points.bottomLeft,
       prefix: 'bl',
-      ...opts
+      ...opts,
     })
     macro('round', {
       from: points.bottomRight,
       to: points.topLeft,
       via: points.topRight,
       prefix: 'tr',
-      ...opts
+      ...opts,
     })
   }
 
