@@ -12,6 +12,7 @@ export default {
     fit: [
       'chestEase',
       'bicepsEase',
+      'cuffEase',
       'shoulderEase',
       'waistEase',
       'hipsEase',
