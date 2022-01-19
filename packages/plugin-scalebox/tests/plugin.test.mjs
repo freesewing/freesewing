@@ -155,4 +155,36 @@ describe('Scalebox Plugin Tests', () => {
     expect(p.get("data-text-class")).to.equal("text-xs");
     expect(p.get("data-text-lineheight")).to.equal("4");
   })
+
+  it("Should apply scale to the scalebox macro", () => {
+    const pattern = new freesewing.Pattern().use(plugin)
+    pattern.settings.scale = 0.5
+    pattern.parts.test = new pattern.Part();
+    pattern.parts.test.points.anchor = new pattern.Point(100, 200);
+    const { macro } = pattern.parts.test.shorthand()
+    macro("scalebox", {
+      at: pattern.parts.test.points.anchor
+    });
+    let p = pattern.parts.test.points;
+    expect(p.__scaleboxMetricTopLeft.x).to.equal(75);
+    expect(p.__scaleboxMetricTopLeft.y).to.equal(187.5);
+    expect(p.__scaleboxMetricTopRight.x).to.equal(125);
+    expect(p.__scaleboxMetricTopRight.y).to.equal(187.5);
+    expect(p.__scaleboxMetricBottomLeft.x).to.equal(75);
+    expect(p.__scaleboxMetricBottomLeft.y).to.equal(212.5);
+    expect(p.__scaleboxMetricBottomRight.x).to.equal(125);
+    expect(p.__scaleboxMetricBottomRight.y).to.equal(212.5);
+    expect(p.__scaleboxImperialTopLeft.x).to.equal(74.6);
+    expect(p.__scaleboxImperialTopLeft.y).to.equal(187.3);
+    expect(p.__scaleboxImperialTopRight.x).to.equal(125.4);
+    expect(p.__scaleboxImperialTopRight.y).to.equal(187.3);
+    expect(p.__scaleboxImperialBottomLeft.x).to.equal(74.6);
+    expect(p.__scaleboxImperialBottomLeft.y).to.equal(212.7);
+    expect(p.__scaleboxImperialBottomRight.x).to.equal(125.4);
+    expect(p.__scaleboxImperialBottomRight.y).to.equal(212.7);
+    expect(p.__scaleboxMetric.attributes.get('data-text'))
+      .to.equal("theWhiteInsideOfThisBoxShouldMeasure 5cm x 2.5cm")
+    expect(p.__scaleboxImperial.attributes.get('data-text'))
+      .to.equal("theBlackOutsideOfThisBoxShouldMeasure 2″ x 1″")
+  });
 })
