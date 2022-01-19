@@ -92,7 +92,16 @@ const Pattern = props => {
   }
   // Support for options_ prefix
   for (const [key, val] of Object.entries(props)) {
-    if (key.slice(0,8) === 'options_') settings.options[key.slice(8)] = val
+    if (key.slice(0,8) === 'options_') settings.options[key.slice(8)] = (val === 'true')
+     ? true
+     : (val === 'false')
+     ? false
+     : val
+    if (key.slice(0,9) === 'settings_') settings[key.slice(9)] = (val === 'true')
+     ? true
+     : (val === 'false')
+     ? false
+     : val
   }
 
   if (part !== '') settings.only = [part]
