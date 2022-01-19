@@ -15,7 +15,7 @@ export default function (part) {
     utils,
     units,
     measurements,
-    scale
+    scale,
   } = part.shorthand()
 
   // Lower back neck a bit
@@ -73,8 +73,11 @@ export default function (part) {
       .attr('data-text', ':\n')
       .attr('data-text', 'width')
       .attr('data-text', ':')
-      .attr('data-text', `${units((sa || 10) * 6)} x ${units(neckOpeningLength * 2 * 0.95 + 2 * sa)}`)
-      //.attr('data-text-class', 'text-sm')
+      .attr(
+        'data-text',
+        `${units((sa || 10) * 6)} x ${units(neckOpeningLength * 2 * 0.95 + 2 * sa)}`
+      )
+    //.attr('data-text-class', 'text-sm')
 
     macro('cutonfold', {
       from: points.cfNeck,
