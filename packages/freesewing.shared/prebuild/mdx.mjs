@@ -119,7 +119,7 @@ export const prebuildMdx = async(site) => {
           }
         } else {
           console.log('Failed to extract meta info from:', slug)
-          console.log(meta.messages, null ,2)
+          if (meta.messages.length > 0) console.log(meta.messages)
         }
       }
     }

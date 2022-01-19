@@ -9,13 +9,10 @@ module.exports = {
     './components/**/*.js',
     '../freesewing.shared/components/**/*.js',
   ],
-  plugins: [
-    require('daisyui'),
-    require('tailwindcss/nesting'),
-  ],
+  plugins: [require('daisyui'), require('tailwindcss/nesting')],
   daisyui: {
     styled: true,
-    themes: [ themes ],
+    themes: [themes],
     base: true,
     utils: true,
     logs: true,
