@@ -1,6 +1,12 @@
 # Change log for: @freesewing/paco
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Hide the `frontPocketFlapSize` from the user
+
 ## 2.19.4 (2021-11-09)
 
 ### Fixed

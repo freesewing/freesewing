@@ -1,6 +1,13 @@
 # Change log for: @freesewing/bella
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Expose the `fullChestEaseReduction` option to the user via option groups
+ - Expose the `frontArmholeCurvature` option to the user via option groups
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

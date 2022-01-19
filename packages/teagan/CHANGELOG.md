@@ -1,6 +1,12 @@
 # Change log for: @freesewing/teagan
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Lock the `frontArmholeDeeper` option to a static value
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

@@ -1,6 +1,13 @@
 # Change log for: @freesewing/sven
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Expose the `hipsEase` option to the user via option groups
+ - Lock the `waistEase` option to a static value
+
 ## 2.17.0 (2021-07-01)
 
 ### Added

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/diana
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Expose the `cuffEase` option to the user via option groups
+
 ## 2.17.0 (2021-07-01)
 
 ### Changed

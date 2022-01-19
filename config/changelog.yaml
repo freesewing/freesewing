@@ -25,6 +25,15 @@ unreleased:
   Changed:
     bee:
       - Re-structured option groups
+      - Expose all options to the user that should be configurable
+      - Hide/lock options that should be fixed (inherited from Bella)
+    bella:
+      - Expose the `fullChestEaseReduction` option to the user via option groups
+      - Expose the `frontArmholeCurvature` option to the user via option groups
+    diana:
+      - Expose the `cuffEase` option to the user via option groups
+    paco:
+      - Hide the `frontPocketFlapSize` from the user
     plugin-bundle:
       - plugin-banner is now part of plugin-bundle
       - plugin-bartack is now part of plugin-bundle
@@ -38,18 +47,15 @@ unreleased:
       - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
     rendertest:
       - Restructured the pattern to allow inclusion of individual parts in Example component
+    sven:
+      - Expose the `hipsEase` option to the user via option groups
+      - Lock the `waistEase` option to a static value
+    teagan:
+      - Lock the `frontArmholeDeeper` option to a static value
 
   Fixed:
-    bee:
-      - Expose all options to the user that should be configurable
-      - Hide/lock options that should be fixed (inherited from Bella)
-    bella:
-      - Expose the `fullChestEaseReduction` option to the user via option groups
-      - Expose the `frontArmholeCurvature` option to the user via option groups
     components:
       - Support handling of `&#160;` in text
-    diana:
-      - Expose the `cuffEase` option to the user via option groups
     i18n:
       - Fixed issue that was causing plugin translations to always be in English
     plugin-bartack:
@@ -58,11 +64,6 @@ unreleased:
       - Support start and endpoints being reversed in `bartackFractionAlong`
     plugin-dimension:
       - Support hiding start/end markers on path dimensions (pd macro)
-    sven:
-      - Expose the `hipsEase` option to the user via option groups
-      - Lock the `waistEase` option to a static value
-    teagan:
-      - Lock the `frontArmholeDeeper` option to a static value
 
   Removed:
     plugin-title:

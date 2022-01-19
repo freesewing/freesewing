@@ -3,6 +3,21 @@
 
 ## unreleased (NaN-NaN-NaN)
 
+### bee
+
+#### Changed
+
+ - Re-structured option groups
+ - Expose all options to the user that should be configurable
+ - Hide/lock options that should be fixed (inherited from Bella)
+
+### bella
+
+#### Changed
+
+ - Expose the `fullChestEaseReduction` option to the user via option groups
+ - Expose the `frontArmholeCurvature` option to the user via option groups
+
 ### components
 
 #### Added
@@ -26,6 +41,12 @@
  - Added support for `settings.scale`
  - Included variables used by TailwindCSS themes for compatibility
 
+### diana
+
+#### Changed
+
+ - Expose the `cuffEase` option to the user via option groups
+
 ### examples
 
 #### Added
@@ -37,6 +58,12 @@
 #### Fixed
 
  - Fixed issue that was causing plugin translations to always be in English
+
+### paco
+
+#### Changed
+
+ - Hide the `frontPocketFlapSize` from the user
 
 ### plugin-banner
 
@@ -117,6 +144,19 @@
 #### Changed
 
  - Restructured the pattern to allow inclusion of individual parts in Example component
+
+### sven
+
+#### Changed
+
+ - Expose the `hipsEase` option to the user via option groups
+ - Lock the `waistEase` option to a static value
+
+### teagan
+
+#### Changed
+
+ - Lock the `frontArmholeDeeper` option to a static value
 
 
 ## 2.19.9 (2022-01-09)
