@@ -124,9 +124,15 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     if (type === 'object' && typeof option.pct !== 'undefined') {
       // Percentage option
       it(`  - '${name}' is a percentage option`, () => true)
-      it(`    - Should be exposed in an option group`, () => {
-        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
-      })
+      // Snapped options can just be hidden instead
+      if (option.hidden) {
+        if (option.snap) it(`  - '${name}' is a hidden snap option`, () => true)
+        else {
+          it(`    - Should be exposed in an option group`, () => {
+            expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
+          })
+        }
+      }
       it(`    - Should have a default value`, () => {
         expect(typeof option.pct).to.equal('number')
       })
