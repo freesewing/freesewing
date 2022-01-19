@@ -90,6 +90,10 @@ const Pattern = props => {
     measurements: { ...measurements },
     ...settings
   }
+  // Support for options_ prefix
+  for (const [key, val] of Object.entries(props)) {
+    if (key.slice(0,8) === 'options_') settings.options[key.slice(8)] = val
+  }
 
   if (part !== '') settings.only = [part]
   const patternInstance = new patterns[pattern](settings)
