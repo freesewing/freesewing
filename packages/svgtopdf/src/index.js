@@ -8,7 +8,7 @@ import shellExec from 'shell-exec'
 
 const app = express()
 app.use(cors())
-app.use(bodyParser.json({limit: '5mb'}))
+app.use(bodyParser.json({ limit: '5mb' }))
 const port = process.env.PORT || 4000
 const formats = ['pdf', 'ps']
 const sizes = ['full', 'a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid']
@@ -39,9 +39,7 @@ app.post('/', async (req, res) => {
       let tiled = '/tmp/tiled.ps'
       cmd = `/usr/bin/inkscape --export-ps=${untiled} ${upload}`
       shellExec(cmd).then(() => {
-        cmd = `/usr/local/bin/tile -a -m${
-          fields.size
-        } -s1 -t"On-demand tiler" ${untiled} > ${tiled}`
+        cmd = `/usr/local/bin/tile -a -m${fields.size} -s1 -t"On-demand tiler" ${untiled} > ${tiled}`
         shellExec(cmd).then(() => {
           if (fields.format === 'ps') return res.sendFile(tiled)
           cmd = `/usr/bin/ps2pdf14 ${tiled} ${tiled}.pdf`
@@ -71,7 +69,7 @@ app.post('/api', async (req, res) => {
   let url = req.body.url || 'https://freesewing.org/'
   let title = req.body.design || 'FreeSewing Pattern'
   // Save svg to disk
-  fs.writeFile(svg, req.body.svg, err => {
+  fs.writeFile(svg, req.body.svg, (err) => {
     if (err) {
       console.log(err)
       return res.sendStatus(500)
@@ -99,9 +97,7 @@ app.post('/api', async (req, res) => {
       let tiled = storage + dir + '/tiled.ps'
       cmd = `/usr/bin/inkscape --export-ps=${untiled} ${svg}`
       shellExec(cmd).then(() => {
-        cmd = `/usr/local/bin/tile -a -m${
-          req.body.size
-        } -s1 -u"${url}" -t"${title}" ${untiled} > ${tiled}`
+        cmd = `/usr/local/bin/tile -a -m${req.body.size} -s1 -u"${url}" -t"${title}" ${untiled} > ${tiled}`
         console.log('tile cmd', cmd)
         shellExec(cmd).then(() => {
           cmd = `/usr/bin/ps2pdf14 ${tiled} ${target}`
@@ -114,10 +110,10 @@ app.post('/api', async (req, res) => {
   })
 })
 
-const createTempDir = folder => {
+const createTempDir = (folder) => {
   let dir = newDir()
   let path = folder + dir
-  fs.mkdirSync(path, { recursive: true }, err => {
+  fs.mkdirSync(path, { recursive: true }, (err) => {
     if (err) console.log('mkdirFailed', err)
   })
 
@@ -133,6 +129,6 @@ const newDir = (length = 10) => {
   return dir
 }
 
-app.listen(port, err => {
+app.listen(port, (err) => {
   console.log(`> listening on port ${port}`)
 })
