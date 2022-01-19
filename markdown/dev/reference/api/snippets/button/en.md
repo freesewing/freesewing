@@ -9,5 +9,7 @@ provided by [plugin-buttons](/reference/plugins/buttons/).
 snippets.demo = new Snippet('button', points.anchor)
 ```
 
-<Example part="snippets_button" caption="An example of the button snippet" />
+<Example part="snippets_button">
+An example of the button snippet
+</Example>
 

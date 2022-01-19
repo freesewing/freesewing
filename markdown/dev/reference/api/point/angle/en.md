@@ -13,10 +13,9 @@ float point.angle(Point pointB)
 
 ## Point.angle() Example
 
-<Example
-  part="point_angle"
-  caption="An example of the Point.angle() method"
-/>
+<Example part="point_angle">
+An example of the Point.angle() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

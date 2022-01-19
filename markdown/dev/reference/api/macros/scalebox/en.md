@@ -7,7 +7,9 @@ users to verify their pattern is printed to scale.
 
 The `scalebox` macro is provided by the [scalebox plugin](/reference/plugins/scalebox).
 
-<Example part="plugin_scalebox" caption="Example of the scalebox added by this macro" />
+<Example part="plugin_scalebox">
+Example of the scalebox added by this macro
+</Example>
 
 ```js
 macro('scalebox', {

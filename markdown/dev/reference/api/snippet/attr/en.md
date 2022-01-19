@@ -16,10 +16,9 @@ but returns the Snippet object.  This allows you to chain different calls togeth
 If the third parameter is set to `true` it will call [`Attributes.set()`](./attributes#set) instead, 
 thereby overwriting the value of the attribute.
 
-<Example
-  part="snippet_attr"
-  caption="An example of the Snippet.attr() method"
-/>
+<Example part="snippet_attr">
+An example of the Snippet.attr() method
+</Example>
 
 ```js
 let { Point, points, Snippet, snippets } = part.shorthand();

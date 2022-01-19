@@ -10,10 +10,9 @@ Returns a path with
 [a translate transform](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform#Translate)
 applied.
 
-<Example 
-  part="path_translate" 
-  caption="Example of the Path.translate() method" 
-/>
+<Example part="path_translate">
+Example of the Path.translate() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, macro } = part.shorthand();

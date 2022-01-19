@@ -19,7 +19,9 @@ If you do know, use one of the intersection methods in [Utils](/reference/api/ut
 
 </Tip>
 
-<Example part="path_intersects" caption="Example of the Path.intersects() method" />
+<Example part="path_intersects">
+Example of the Path.intersects() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

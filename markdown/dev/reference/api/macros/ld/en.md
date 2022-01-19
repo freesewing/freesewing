@@ -5,10 +5,9 @@ title: ld
 The `ld` macro adds a *linear dimension* to your pattern.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
-<Example 
-  part="point_dist"
-  caption="An example of a linear dimension"
-/>
+<Example part="point_dist">
+An example of a linear dimension
+</Example>
 
 ```js
 macro('ld', {

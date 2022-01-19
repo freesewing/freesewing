@@ -8,10 +8,9 @@ Point path.shiftFractionAlong(float fraction[, int stepsPerMm=25])
 
 Returns a point that lies at fraction of the length of the path travelled along the path.
 
-<Example 
-  part="path_shiftfractionalong" 
-  caption="Example of the Path.shiftFractionAlong() method" 
-/>
+<Example part="path_shiftfractionalong">
+Example of the Path.shiftFractionAlong() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

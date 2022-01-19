@@ -6,7 +6,9 @@ The `round` macro rounds a corner. It is provided by the [round plugin](/referen
 
 Note that this is only intended for 90 degree corners.
 
-<Example part="plugin_round" caption="Example of corners rounded with the round plugin" />
+<Example part="plugin_round">
+Example of corners rounded with the round plugin
+</Example>
 
 ```js
 macro('round', {

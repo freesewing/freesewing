@@ -21,10 +21,9 @@ that this one rounds things down to the nearest integer (thus mm) before checkin
 
 ## Point.sitsRoughlyOn() example
 
-<Example 
-  part="point_sitsroughlyon"
-  caption="An example of the Point.sitsRoughlyOn() method"
-/>
+<Example part="point_sitsroughlyon">
+An example of the Point.sitsRoughlyOn() method
+</Example>
 
 ```js
 let { Point, points, Snippet, snippets } = part.shorthand();

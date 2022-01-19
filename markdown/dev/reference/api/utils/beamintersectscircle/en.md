@@ -24,7 +24,9 @@ Set sort to:
  - `x` : The point with the lowest X-coordinate will go first (left to right)
  - `y` : The point with the lowest Y-coordinate will go first (top to bottom)
 
-<Example part="utils_beamintersectscircle" caption="A Utils.beamIntersectsCircle() example" />
+<Example part="utils_beamintersectscircle">
+A Utils.beamIntersectsCircle() example
+</Example>
 
 ```js
 let {

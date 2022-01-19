@@ -3,11 +3,9 @@ title: Paths
 order: 40
 ---
 
-<Example 
-  part="docs_overview" 
-  caption="Paths are the lines and curves of your pattern"
-  options={{focus: "Paths"}}
-/>
+<Example part="docs_overview" options={{focus: "Paths"}}>
+Paths are the lines and curves of your pattern
+</Example>
 
 Paths are the lines and curves that make up your pattern.
 

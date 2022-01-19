@@ -3,11 +3,9 @@ title: Parts
 order: 20
 ---
 
-<Example 
-  part="docs_overview" 
-  caption="Parts divide your pattern into re-usable components"
-  options={{focus: "Part"}}
-/>
+<Example part="docs_overview" options={{focus: "Part"}}>
+Parts divide your pattern into re-usable components
+</Example>
 
 Parts are a container for the points, paths, and snippets of (a part of) your pattern.
 They are also re-usable by other patterns, which makes them a powerful tool to build 

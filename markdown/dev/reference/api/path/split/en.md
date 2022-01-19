@@ -8,10 +8,9 @@ array path.split(Point splitPoint)
 
 Splits a path in two halves, on a point along that path that you pass it.
 
-<Example 
-  part="path_split" 
-  caption="Example of the Path.split() method" 
-/>
+<Example part="path_split">
+Example of the Path.split() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

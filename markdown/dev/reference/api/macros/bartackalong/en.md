@@ -6,7 +6,9 @@ The `bartackAlong` macro allows you to add a *bartack* marker to your sewing pat
 More specifically, a bartack along a path.
 It is provided by the [bartack plugin](/reference/plugins/bartack/).
 
-<Example part="plugin_bartackalong" caption="Example of the bartackAlong macro" />
+<Example part="plugin_bartackalong">
+Example of the bartackAlong macro
+</Example>
 
 ```js
 points.a = new Point(15, 15)

@@ -7,7 +7,9 @@ The coordinate system in FreeSewing -- and in SVG -- follows the same rules as t
 You start at the top-left, and as you go to the right, the X-coordinate will increase.
 As you go down the Y-coordinate will increase.
 
-<Example part="docs_coords" caption="The SVG coordinate system" /> 
+<Example part="docs_coords">
+The SVG coordinate system
+</Example>
 
 The image above illustrates both the X-axis and Y-axis.
 On the X-axis, `20` is further to the right than `10`.

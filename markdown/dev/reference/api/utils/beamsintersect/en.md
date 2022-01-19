@@ -14,7 +14,9 @@ Point | false utils.beamsIntersect(
 Finds the intersection between two endless lines (beams). Returns a [Point](#point) object
 for the intersection, or `false` if the lines don't intersect.
 
-<Example part="utils_beamsintersect" caption="A Utils.beamIntersect() example" />
+<Example part="utils_beamsintersect">
+A Utils.beamIntersect() example
+</Example>
 
 ```js
 let {

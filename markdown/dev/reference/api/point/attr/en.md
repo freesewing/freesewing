@@ -22,10 +22,9 @@ If the third parameter is set to `true` it will call [`this.attributes.set()`](/
 
 ## Point.attr() example
 
-<Example
-  part="point_attr"
-  caption="An example of the Point.attr() method"
-/>
+<Example part="point_attr">
+An example of the Point.attr() method
+</Example>
 
 ```js
 let { Point, points } = part.shorthand();

@@ -5,7 +5,9 @@ title: bartack
 The `bartack` macro allows you to add a *bartack* marker to your sewing pattern.
 It is provided by the [bartack plugin](/reference/plugins/bartack/).
 
-<Example part="plugin_bartack" caption="Example of the bartack macro" />
+<Example part="plugin_bartack">
+Example of the bartack macro
+</Example>
 
 ```js
 points.a = new Point(15, 15)

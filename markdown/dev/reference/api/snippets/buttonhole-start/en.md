@@ -9,7 +9,10 @@ provided by [plugin-buttons](/reference/plugins/buttons/).
 snippets.demo = new Snippet('buttonhole-start', points.anchor)
 ```
 
-<Example part="snippets_buttonhole_start" caption="An example of the buttonhole-start snippet" />
+<Example part="snippets_buttonhole_start">
+An example of the buttonhole-start snippet
+</Example>
+
 
 <Note>
 

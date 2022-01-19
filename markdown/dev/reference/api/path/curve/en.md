@@ -8,7 +8,9 @@ Path path.curve(Point cp1, Point cp2, Point to)
 
 Draws a cubic Bezier curve from the current position via two control points to a given endpoint.
 
-<Example part="path_curve" caption="Example of the Path.curve() method" />
+<Example part="path_curve">
+Example of the Path.curve() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

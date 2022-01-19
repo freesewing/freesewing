@@ -20,7 +20,9 @@ Keep in mind that calculations with Bezier curves are often aproximations.
 
 </Note>
 
-<Example part="utils_pointoncurve" caption="A Utils.pointOnCurve() example" />
+<Example part="utils_pointoncurve">
+A Utils.pointOnCurve() example
+</Example>
 
 ```js
 let {

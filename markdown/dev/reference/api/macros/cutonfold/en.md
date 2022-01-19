@@ -5,7 +5,9 @@ title: cutonfold
 The `cutonfold` macro adds a *cut on fold* indicator to your pattern.  
 It is provided by the [cutonfold plugin](/reference/plugins/cutonfold).
 
-<Example part="plugin_cutonfold" caption="Example of the cut on fold indicator added by this macro" />
+<Example part="plugin_cutonfold">
+Example of the cut on fold indicator added by this macro
+</Example>
 
 ```js
 macro('cutonfold', {

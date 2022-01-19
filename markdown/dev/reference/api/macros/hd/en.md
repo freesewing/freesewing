@@ -5,10 +5,9 @@ title: hd
 The `hd` macro adds a *horizontal dimension* to your pattern.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
-<Example 
-  part="point_dx"
-  caption="An example of a horizontal dimension"
-/>
+<Example part="point_dx">
+An example of a horizontal dimension
+</Example>
 
 ```js
 macro('hd', {

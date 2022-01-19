@@ -9,7 +9,9 @@ Path path.clone()
 
 Returns a new Path that is a deep copy of this path.
 
-<Example part="path_clone" caption="Example of the Path.clone() method" />
+<Example part="path_clone">
+Example of the Path.clone() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

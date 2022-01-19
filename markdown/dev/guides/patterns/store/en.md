@@ -3,11 +3,9 @@ title: Store
 order: 60
 ---
 
-<Example 
-  part="docs_overview" 
-  caption="The store provides pattern-wide key/value storage"
-  options={{focus: "Store"}}
-/>
+<Example part="docs_overview" options={{focus: "Store"}}>
+The store provides pattern-wide key/value storage
+</Example>
 
 The store provides key-value storage that is shared across your pattern.
 

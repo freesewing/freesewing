@@ -12,10 +12,9 @@ float point.dy(Point point)
 
 ## Point.dy() example
 
-<Example
-  part="point_dy"
-  caption="An example of the Point.dy() method"
-/>
+<Example part="point_dy">
+An example of the Point.dy() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand()

@@ -8,7 +8,9 @@ Path path.line(Point to)
 
 Draws a straight line from the current position to a given point.
 
-<Example part="path_line" caption="Example of the Path.line() method" />
+<Example part="path_line">
+Example of the Path.line() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

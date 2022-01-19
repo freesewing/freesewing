@@ -3,11 +3,9 @@ title: Points
 order: 30
 ---
 
-<Example 
-  part="docs_overview" 
-  caption="Points store coordinates"
-  options={{focus: "Points"}}
-/>
+<Example part="docs_overview" options={{focus: "Points"}}>
+Points store coordinates
+</Example>
 
 Developing a pattern with FreeSewing is similar to doing it on paper.
 But instead of using a pencil and paper, you'll be writing code.

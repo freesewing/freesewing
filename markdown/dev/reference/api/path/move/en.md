@@ -30,7 +30,9 @@ paths.example = new Path()
 </Tip>
 
 
-<Example part="path_move" caption="Example of the Path.move() method" />
+<Example part="path_move">
+Example of the Path.move() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

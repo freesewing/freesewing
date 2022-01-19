@@ -10,5 +10,7 @@ It is provided by [plugin-buttons](/reference/plugins/buttons/).
 snippets.demo = new Snippet('snap-socket', points.anchor)
 ```
 
-<Example part="snippets_snapsocket" caption="An example of the snap-socket snippet" />
+<Example part="snippets_snapsocket">
+An example of the snap-socket snippet
+</Example>
 

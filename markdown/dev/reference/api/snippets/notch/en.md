@@ -8,5 +8,7 @@ provided by [plugin-theme](/reference/plugins/theme/).
 ```js
 snippets.demo = new Snippet('bnotch', points.anchor)
 ```
-<Example part="snippets_notch" caption="An example of the notch snippet" />
+<Example part="snippets_notch">
+An example of the notch snippet
+</Example>
 

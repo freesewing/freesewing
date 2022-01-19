@@ -18,10 +18,9 @@ Point point.shiftFractionTowards(Point target, float fraction)
 
 ## Point.shiftFractionTowards() example
 
-<Example
-  part="point_shiftfractiontowards"
-  caption="An example of the Point.shiftFractionTowards() method"
-/>
+<Example part="point_shiftfractiontowards">
+An example of the Point.shiftFractionTowards() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, macro } = part.shorthand();

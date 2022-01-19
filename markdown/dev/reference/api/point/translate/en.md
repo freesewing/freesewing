@@ -19,10 +19,9 @@ Positive values for `deltaX` will move the point to the right. Positive values f
 
 ## Point.translate() example
 
-<Example
-  part="point_translate"
-  caption="An example of the Point.translate() method"
-/>
+<Example part="point_translate">
+An example of the Point.translate() method
+</Example>
 
 ```js
 let { Point, points, Snippet, snippets, macro } = part.shorthand();

@@ -5,7 +5,9 @@ title: grainline
 The `grainline` macro adds a *grainline* indicator to your pattern.  
 It is provided by the [grainline plugin](/reference/plugins/grainline/).
 
-<Example part="plugin_grainline" caption="Example of the grainline indicator added by this macro" />
+<Example part="plugin_grainline">
+Example of the grainline indicator added by this macro
+</Example>
 
 ```js
 macro("grainline", {

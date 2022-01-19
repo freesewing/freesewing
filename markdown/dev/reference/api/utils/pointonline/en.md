@@ -15,7 +15,9 @@ Returns `true` if the point `check` lies on a line segment from point `from` to 
 
 The fourth parameter controls the precision. See [pointOnBeam](#utilspointonbeam).
 
-<Example part="utils_pointonline" caption="A Utils.pointOnLine() example" />
+<Example part="utils_pointonline">
+A Utils.pointOnLine() example
+</Example>
 
 ```js
 let {

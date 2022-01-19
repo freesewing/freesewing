@@ -10,5 +10,7 @@ It is provided by [plugin-buttons](/reference/plugins/buttons/).
 snippets.demo = new Snippet('snap-stud', points.anchor)
 ```
 
-<Example part="snippets_snapstud" caption="An example of the snap-stud snippet" />
+<Example part="snippets_snapstud">
+An example of the snap-stud snippet
+</Example>
 

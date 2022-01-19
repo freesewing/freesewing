@@ -17,7 +17,9 @@ If you want a deep copy, including the attributes, use `Path.clone().reverse()`.
 
 </Note>
 
-<Example part="path_reverse" caption="Example of the Path.reverse() method" />
+<Example part="path_reverse">
+Example of the Path.reverse() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

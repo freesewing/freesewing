@@ -5,7 +5,9 @@ title: mirror
 The `mirror` macro allows you to mirror points and/or paths around a mirror line.
 It is provided by the [mirror plugin](/reference/plugins/mirror/).
 
-<Example part="plugin_mirror" caption="Example of the mirror plugin" />
+<Example part="plugin_mirror">
+Example of the mirror plugin
+</Example>
 
 ```js
 points.a = new Point(5,5)

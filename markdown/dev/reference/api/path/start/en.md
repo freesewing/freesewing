@@ -8,10 +8,9 @@ Point path.start()
 
 Returns the Point object at the start of the path.
 
-<Example 
-  part="path_start" 
-  caption="Example of the Path.start() method" 
-/>
+<Example part="path_start">
+Example of the Path.start() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

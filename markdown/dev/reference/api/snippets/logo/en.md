@@ -9,5 +9,7 @@ provided by [plugin-logo](/reference/plugins/logo/).
 snippets.demo = new Snippet('logo', points.anchor)
 ```
 
-<Example part="snippets_logo" caption="An example of the logo snippet" />
+<Example part="snippets_logo">
+An example of the logo snippet
+</Example>
 

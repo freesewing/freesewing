@@ -6,7 +6,9 @@ The `bartackFractionAlong` macro allows you to add a *bartack* marker to your se
 More specifically, a bartack along a fraction of a path.
 It is provided by the [bartack plugin](/reference/plugins/bartack/).
 
-<Example part="plugin_bartackfractionalong" caption="Example of the bartackFractionAlong macro" />
+<Example part="plugin_bartackfractionalong">
+Example of the bartackFractionAlong macro
+</Example>
 
 ```js
 points.a = new Point(15, 15)

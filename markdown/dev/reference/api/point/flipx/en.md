@@ -13,10 +13,9 @@ Point point.flipX(Point mirror = false)
 
 ## Point.flipX() example
 
-<Example
-  part="point_flipx"
-  caption="An example of the Point.flipX() method"
-/>
+<Example part="point_flipx">
+An example of the Point.flipX() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

@@ -12,10 +12,9 @@ float point.dx(Point point)
 
 ## Point.dx() example
 
-<Example
-  part="point_dx"
-  caption="An example of the Point.dx() method"
-/>
+<Example part="point_dx">
+An example of the Point.dx() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand()

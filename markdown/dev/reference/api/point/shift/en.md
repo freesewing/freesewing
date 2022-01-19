@@ -13,10 +13,9 @@ Point point.shift(float angle, float distance)
 
 ## Point.shift() example
 
-<Example
-  part="point_shift"
-  caption="An example of the Point.shift() method"
-/>
+<Example part="point_shift">
+An example of the Point.shift() method
+</Example>
 
 ```js
 let { Point, points, macro } = part.shorthand();

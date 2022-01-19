@@ -22,7 +22,9 @@ Set sort to:
  - `x` : The point with the lowest X-coordinate will go first (left to right)
  - `y` : The point with the lowest Y-coordinate will go first (top to bottom)
 
-<Example part="utils_circlesintersect" caption="A Utils.circlesIntersect() example" />
+<Example part="utils_circlesintersect">
+A Utils.circlesIntersect() example
+</Example>
 
 ```js
 let { Point, points, Snippet, snippets, utils } = part.shorthand();
