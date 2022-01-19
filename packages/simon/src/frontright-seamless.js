@@ -22,9 +22,7 @@ export default (part) => {
     paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
     if (!options.seperateButtonholePlacket) {
       // Match lines are only displayed on attached plackets
-      paths.frontCenter
-        .attr('data-text', 'matchHere')
-        .attr('data-text-class', 'text-xs center')
+      paths.frontCenter.attr('data-text', 'matchHere').attr('data-text-class', 'text-xs center')
     }
     paths.placketFold1 = new Path()
       .move(points.placketTopFold1)

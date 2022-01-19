@@ -109,11 +109,7 @@ export default (part) => {
 
   // Update this value in the store set by Brian because it is only correct
   // if the yoke height happens to fall on the armhole pitch point
-  store.set(
-    'backArmholeToArmholePitch',
-    paths.backArmholeBack.length() +
-    armholeToPitch.length()
-  )
+  store.set('backArmholeToArmholePitch', paths.backArmholeBack.length() + armholeToPitch.length())
 
   // Round back
   paths.armhole = armholeToPitch
