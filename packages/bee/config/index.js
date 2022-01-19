@@ -3,7 +3,7 @@ import freesewing from '@freesewing/core'
 const { pctBasedOn } = freesewing
 
 export default {
-  name: 'bee pattern',
+  name: 'bee',
   version,
   design: 'PrudenceRabbit',
   code: 'bobgeorgethe3rd',
