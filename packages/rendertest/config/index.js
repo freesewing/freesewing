@@ -10,10 +10,20 @@ export default {
   difficulty: 1,
   optionGroups: {
     size: ['width'],
-    content: ['colors', 'circles', 'text', 'snippets', 'macros'],
+    content: ['only'],
   },
   measurements: [],
-  parts: ['test'],
+  parts: [
+    'demo',
+    'circles',
+    'colors',
+    'widths',
+    'styles',
+    'combos',
+    'text',
+    'snippets',
+    'macros',
+  ],
   options: {
     width: { mm: 200, min: 50, max: 500, testIgnore: true },
     strokeColors: { bool: true },
@@ -24,5 +34,19 @@ export default {
     text: { bool: true },
     snippets: { bool: true },
     macros: { bool: true },
+    only: {
+      dflt: false,
+      list: [
+        false,
+        'circles',
+        'colors',
+        'widths',
+        'styles',
+        'combos',
+        'text',
+        'snippets',
+        'macros',
+      ]
+    }
   },
 }

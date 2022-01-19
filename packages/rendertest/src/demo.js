@@ -1,11 +1,11 @@
-import strokeColors from './stroke-colors'
-import strokeWidths from './stroke-widths'
-import strokeStyles from './stroke-styles'
-import strokeCombos from './stroke-combos'
-import circles from './circles'
-import text from './text'
-import snippets from './snippets'
-import macros from './macros'
+import strokeColors from './colors.js'
+import strokeWidths from './widths.js'
+import strokeStyles from './styles.js'
+import strokeCombos from './combos.js'
+import circles from './circles.js'
+import text from './text.js'
+import snippets from './snippets.js'
+import macros from './macros.js'
 
 export default function (part) {
   const { macro, store, options, Path, paths, Point } = part.shorthand()
@@ -40,14 +40,18 @@ export default function (part) {
     'help',
     'hidden',
   ])
-  if (options.strokeColors) strokeColors(part)
-  if (options.strokeWidths) strokeWidths(part)
-  if (options.strokeStyles) strokeStyles(part)
-  if (options.strokeCombos) strokeCombos(part)
-  if (options.circles) circles(part)
-  if (options.text) text(part)
-  if (options.snippets) snippets(part)
-  if (options.macros) macros(part)
+
+  if (options.only) return part
+
+  // We are drafting in one part to control the layout
+  if (options.strokeColors) strokeColors(part, true)
+  if (options.strokeWidths) strokeWidths(part, true)
+  if (options.strokeStyles) strokeStyles(part, true)
+  if (options.strokeCombos) strokeCombos(part, true)
+  if (options.circles) circles(part, true)
+  if (options.text) text(part, true)
+  if (options.snippets) snippets(part, true)
+  if (options.macros) macros(part, true)
 
   // Make sure no text is cut off
   paths.box = new Path()
