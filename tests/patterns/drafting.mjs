@@ -6,6 +6,7 @@ const isGarment = design => ([
   'tutorial',
   'examples',
   'legend',
+  'plugintest',
 ].indexOf(design) === -1)
 
 // Some patterns are deprecated and won't support more stringent doll/giant tests
