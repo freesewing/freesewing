@@ -326,7 +326,10 @@ Part.prototype.shorthand = function () {
       },
       set: (absoluteOptions, name, value) => (self.context.settings.absoluteOptions[name] = value),
     }
-    shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions || {}, absoluteOptionsProxy)
+    shorthand.absoluteOptions = new Proxy(
+      this.context.settings.absoluteOptions || {},
+      absoluteOptionsProxy
+    )
   } else {
     shorthand.Point = Point
     shorthand.Path = Path

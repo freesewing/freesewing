@@ -204,7 +204,8 @@ Svg.prototype.renderText = function (point) {
   }
   point.attributes.set('data-text-x', round(point.x))
   point.attributes.set('data-text-y', round(point.y))
-  let lineHeight = point.attributes.get('data-text-lineheight') || (6 * (this.pattern.settings.scale || 1))
+  let lineHeight =
+    point.attributes.get('data-text-lineheight') || 6 * (this.pattern.settings.scale || 1)
   point.attributes.remove('data-text-lineheight')
   let svg = `${this.nl()}<text ${point.attributes.renderIfPrefixIs('data-text-')}>`
   this.indent()
