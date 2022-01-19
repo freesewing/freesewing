@@ -2,10 +2,11 @@
 title: millimeter
 ---
 
-While we recommend using percentages where possible, sometimes that doesn't make sense.  
+While FreeSewing supports millimeter options, we recommend 
+using [percentage options][1] and will not accept 
+contributions that use millimeter options.
 
-For those cases, you can use a millimeter option which 
-should be an object with these properties:
+A millimeter option should be an object with these properties:
 
  - `mm` : The default value in millimeter
  - `min` : The minimul that's allowed
@@ -21,11 +22,24 @@ options: {
 }
 ```
 
-<Tip>
+<Comment by="joost">
 
-##### When to use a millimeter option
+##### What's wrong with millimeter options?
 
-You should only use millimeter when the option refers to a physical object
-that comes in certain sizes. 
+Millimeter options do not scale. 
+Parametric design is the _raison d'être_ of FreeSewing and that core belief 
+that things should seamlessly adapt goes out the window when you use a `mm` 
+option because now you have a value that will not change based on the 
+input measurements.
 
-</Tip>
+You could argue that it's fine because _you can just lower the option_
+but that breaks the principle of _sensible defaults_ (aka no surprises). 
+The fact that you can sidestep the bullet does not mean you're not creating 
+a footgun.
+
+When you need a millimeter option, reach for a [snapped 
+percentage option][1] instead.
+
+</Comment>
+
+[1]: /reference/api/config/options/percentage
