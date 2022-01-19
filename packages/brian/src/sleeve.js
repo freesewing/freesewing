@@ -51,12 +51,8 @@ export default (part) => {
     )
     macro('scalebox', { at: points.scalebox })
 
-    points.frontNotch = paths.sleevecap.shiftAlong(
-      store.get('frontArmholeToArmholePitch')
-    )
-    points.backNotch = paths.sleevecap.reverse().shiftAlong(
-      store.get('backArmholeToArmholePitch')
-    )
+    points.frontNotch = paths.sleevecap.shiftAlong(store.get('frontArmholeToArmholePitch'))
+    points.backNotch = paths.sleevecap.reverse().shiftAlong(store.get('backArmholeToArmholePitch'))
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
     snippets.backNotch = new Snippet('bnotch', points.backNotch)
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
