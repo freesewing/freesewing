@@ -68,7 +68,8 @@ svg.freesewing.pattern {
   .stroke-xl {
     stroke-width: calc(var(--freesewing-pattern-scale) * 2);
   }
-  .stroke-xxl {
+  .stroke-xxl,
+  .stroke-2xl {
     stroke-width: calc(var(--freesewing-pattern-scale) * 4);
   }
 
