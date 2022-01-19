@@ -5,7 +5,7 @@ title: pd
 The `pd` macro adds a *path dimension* to your pattern, indicating the length of a path.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
-<Example part="path_length"><
+<Example part="path_length">
 Example of a multiple path dimensions
 </Example>
 
