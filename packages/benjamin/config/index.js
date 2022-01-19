@@ -10,7 +10,7 @@ export default {
   difficulty: 3,
   optionGroups: {
     fit: ['collarEase', 'adjustmentRibbon'],
-    style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle'],
+    style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle', 'ribbonWidth'],
   },
   measurements: ['neck'],
   dependencies: {},
