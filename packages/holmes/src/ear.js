@@ -57,7 +57,7 @@ export default function (part) {
       macro('hd', {
         from: points.bottomFlipped,
         to: points.bottom,
-        y: points.bottom.y + 15 + sa*2,
+        y: points.bottom.y + 15 + sa * 2,
       })
       macro('vd', {
         from: points.bottomFlipped,
