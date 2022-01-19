@@ -13,7 +13,7 @@ export default function (part) {
     sa,
     paperless,
     store,
-    utils
+    utils,
   } = part.shorthand()
 
   // Store length and width
