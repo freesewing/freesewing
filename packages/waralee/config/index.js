@@ -13,7 +13,14 @@ export default {
   difficulty: 2,
   optionGroups: {
     fit: ['backRaise', 'waistRaise'],
-    style: ['hemWidth', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistbandWidth'],
+    style: [
+      'hemWidth',
+      'legShortening',
+      'waistOverlap',
+      'frontPocket',
+      'backPocket',
+      'waistbandWidth',
+    ],
     advanced: [
       'crotchFront',
       'crotchBack',
