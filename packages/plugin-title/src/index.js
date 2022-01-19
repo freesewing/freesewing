@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: svg => {
+    preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-title') === false) {
         svg.attributes.set('freesewing:plugin-title', version)
         svg.style += style

@@ -4,7 +4,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-sprinkle', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-sprinkle', version),
   },
   macros: {
     sprinkle: function (so) {
@@ -13,6 +13,6 @@ export default {
         if (so.scale) this.snippets[pid + '-' + so.snippet].attr('data-scale', so.scale)
         if (so.rotate) this.snippets[pid + '-' + so.snippet].attr('data-rotate', so.rotate)
       }
-    }
-  }
+    },
+  },
 }

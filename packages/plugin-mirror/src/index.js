@@ -25,7 +25,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-mirror', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-mirror', version),
   },
   macros: {
     mirror: function ({
@@ -94,5 +94,5 @@ export default {
       }
     },
   },
-  methods: { lineValues, mirrorGen }
+  methods: { lineValues, mirrorGen },
 }

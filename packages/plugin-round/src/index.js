@@ -4,7 +4,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-round', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-round', version),
   },
   macros: {
     round: function (so) {

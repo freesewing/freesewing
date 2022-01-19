@@ -6,8 +6,8 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-validate', version),
-    preDraft: pattern => console.log(err),
-    postDraft: pattern => console.log(err),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-validate', version),
+    preDraft: (pattern) => console.log(err),
+    postDraft: (pattern) => console.log(err),
   },
 }

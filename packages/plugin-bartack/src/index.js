@@ -5,7 +5,7 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-bartack', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-bartack', version),
   },
   macros: {
     bartack: function (so) {

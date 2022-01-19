@@ -4,11 +4,11 @@ export default {
   name: name,
   version: version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-flip', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-flip', version),
   },
   macros: {
-    flip: function(so) {
-      const axis = (so?.axis === 'y') ? 'y' : 'x'
+    flip: function (so) {
+      const axis = so?.axis === 'y' ? 'y' : 'x'
       let flipped = null
       const ops = ['from', 'to', 'cp1', 'cp2']
       for (const id in this.points) {
@@ -43,8 +43,9 @@ export default {
         // and not double flip the points flipped above
         let wasFlipped = this.snippets[id].anchor.attributes.get('flipped')
         if (wasFlipped !== false) wasFlipped = parseInt(wasFlipped)
-        if (wasFlipped !== flipped) this.snippets[id].anchor[axis] = this.snippets[id].anchor[axis] * -1
+        if (wasFlipped !== flipped)
+          this.snippets[id].anchor[axis] = this.snippets[id].anchor[axis] * -1
       }
-    }
-  }
+    },
+  },
 }

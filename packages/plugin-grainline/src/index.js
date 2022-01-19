@@ -2,7 +2,7 @@ import markers from './markers'
 import { version, name } from '../package.json'
 
 const dflts = {
-  text: 'grainline'
+  text: 'grainline',
 }
 
 export default {
@@ -17,7 +17,7 @@ export default {
     },
   },
   macros: {
-    grainline: function (so={}) {
+    grainline: function (so = {}) {
       if (so === false) {
         delete this.points.grainlineFrom
         delete this.points.grainlineTo
@@ -26,7 +26,7 @@ export default {
       }
       so = {
         ...dflts,
-        ...so
+        ...so,
       }
       let points = this.points
       points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)

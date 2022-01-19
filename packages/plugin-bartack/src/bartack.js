@@ -87,7 +87,10 @@ export default function bartack(so, self) {
     }
   }
 
-  self.paths[name('bartack', so)] = bartackPath(guide, so, self).attr('class', 'stroke-sm stroke-mark')
+  self.paths[name('bartack', so)] = bartackPath(guide, so, self).attr(
+    'class',
+    'stroke-sm stroke-mark'
+  )
 
   return true
 }
