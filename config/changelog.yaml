@@ -34,6 +34,8 @@ unreleased:
     plugin-gore:
       - The `goreNumber` property of the gore macro has been renamed to `gores`
       - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
+    rendertest:
+      - Restructured the pattern to allow inclusion of individual parts in Example component
 
   Fixed:
     components:

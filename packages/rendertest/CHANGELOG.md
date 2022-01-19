@@ -1,6 +1,12 @@
 # Change log for: @freesewing/rendertest
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Restructured the pattern to allow inclusion of individual parts in Example component
+
 ## 2.19.6 (2021-12-29)
 
 ### Changed

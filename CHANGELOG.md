@@ -112,6 +112,12 @@
 
  - Added the plugintest pattern which is used for testing plugins
 
+### rendertest
+
+#### Changed
+
+ - Restructured the pattern to allow inclusion of individual parts in Example component
+
 
 ## 2.19.9 (2022-01-09)
 
