@@ -11,6 +11,17 @@ export default {
   optionGroups: {
     size: ['width'],
     content: ['only'],
+    advanced: [
+      'strokeColors',
+      'strokeWidths',
+      'strokeStyles',
+      'strokeCombos',
+      'circles',
+      'text',
+      'snippets',
+      'macros',
+    ],
+
   },
   measurements: [],
   parts: ['demo', 'circles', 'colors', 'widths', 'styles', 'combos', 'text', 'snippets', 'macros'],
@@ -25,9 +36,9 @@ export default {
     snippets: { bool: true },
     macros: { bool: true },
     only: {
-      dflt: false,
+      dflt: 'false',
       list: [
-        false,
+        'false',
         'circles',
         'colors',
         'widths',
