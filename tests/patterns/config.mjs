@@ -43,6 +43,33 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
       }
     })
   }
+
+  /*
+   *  Ensure optiongroup structure and content
+   */
+  it('Option groups:', () => true)
+  for (const group in pattern.config.optionGroups) {
+    for (const option of pattern.config.optionGroups[group]) {
+      if (typeof option === 'string') {
+        it(`  - '${option}' should be a valid option`, () => {
+          expect(pattern.config.options[option]).to.exist
+        })
+        allOptiongroupOptions.push(option)
+      } else {
+        for (const subgroup in option) {
+          it(`  Subgroup: ${subgroup}`, () => true)
+          for (const suboption of option[subgroup]) {
+            it(`    - '${suboption}' should be a valid option`, () => {
+              expect(pattern.config.options[suboption]).to.exist
+            })
+            allOptiongroupOptions.push(suboption)
+          }
+        }
+      }
+    }
+  }
+
+
   // Config tests for garments only
   if (isGarment(design)) {
     it(`  - 'type' should be 'pattern' or 'block'`, () => {
@@ -58,31 +85,6 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
       expect(pattern.config.difficulty > 0).to.be.true
       expect(pattern.config.difficulty < 6).to.be.true
     })
-
-    /*
-     *  Ensure optiongroup structure and content
-     */
-    it('Option groups:', () => true)
-    for (const group in pattern.config.optionGroups) {
-      for (const option of pattern.config.optionGroups[group]) {
-        if (typeof option === 'string') {
-          it(`  - '${option}' should be a valid option`, () => {
-            expect(pattern.config.options[option]).to.exist
-          })
-          allOptiongroupOptions.push(option)
-        } else {
-          for (const subgroup in option) {
-            it(`  Subgroup: ${subgroup}`, () => true)
-            for (const suboption of option[subgroup]) {
-              it(`    - '${suboption}' should be a valid option`, () => {
-                expect(pattern.config.options[suboption]).to.exist
-              })
-              allOptiongroupOptions.push(suboption)
-            }
-          }
-        }
-      }
-    }
 
     /*
      *  Ensure pattern is listed as being for breasts or not
