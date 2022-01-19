@@ -22,6 +22,7 @@ const deprecated = ['theo']
  * @param object patterns: Imported @freesewing/pattern-info
  */
 export const testPatternConfig = (design, pattern, expect, models, patterns) => {
+  const allOptiongroupOptions = []
   it('Metadata:', () => true)
   it(`  - 'name' should match package name`, () => {
     expect(pattern.config.name).to.equal(design)
@@ -62,19 +63,21 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
      *  Ensure optiongroup structure and content
      */
     it('Option groups:', () => true)
-    for (let group in pattern.config.optionGroups) {
-      for (let option of pattern.config.optionGroups[group]) {
+    for (const group in pattern.config.optionGroups) {
+      for (const option of pattern.config.optionGroups[group]) {
         if (typeof option === 'string') {
           it(`  - '${option}' should be a valid option`, () => {
             expect(pattern.config.options[option]).to.exist
           })
+          allOptiongroupOptions.push(option)
         } else {
-          for (let subgroup in option) {
+          for (const subgroup in option) {
             it(`  Subgroup: ${subgroup}`, () => true)
-            for (let suboption of option[subgroup]) {
+            for (const suboption of option[subgroup]) {
               it(`    - '${suboption}' should be a valid option`, () => {
                 expect(pattern.config.options[suboption]).to.exist
               })
+              allOptiongroupOptions.push(suboption)
             }
           }
         }
@@ -119,6 +122,9 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     if (type === 'object' && typeof option.pct !== 'undefined') {
       // Percentage option
       it(`  - '${name}' is a percentage option`, () => true)
+      it(`    - Should be exposed in an option group`, () => {
+        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
+      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.pct).to.equal('number')
       })
@@ -131,6 +137,9 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     } else if (type === 'object' && typeof option.deg !== 'undefined') {
       // Degree option
       it(`  - '${name}' is a degree option`, () => true)
+      it(`    - Should be exposed in an option group`, () => {
+        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
+      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.deg).to.equal('number')
       })
@@ -143,6 +152,9 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     } else if (type === 'object' && typeof option.mm !== 'undefined') {
       // Millimeter option
       it(`  - '${name}' is a distance (mm) option`, () => true)
+      it(`    - Should be exposed in an option group`, () => {
+        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
+      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.mm).to.equal('number')
       })
@@ -160,6 +172,9 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     } else if (type === 'object' && typeof option.bool !== 'undefined') {
       // Boolean option
       it(`  - '${name}' is a boolean option`, () => true)
+      it(`    - Should be exposed in an option group`, () => {
+        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
+      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.bool).to.equal('boolean')
       })
@@ -169,6 +184,9 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     } else if (type === 'object' && typeof option.count !== 'undefined') {
       // Count option
       it(`  - '${name}' is a count option`, () => true)
+      it(`    - Should be exposed in an option group`, () => {
+        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
+      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.count).to.equal('number')
       })
@@ -181,6 +199,9 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     } else if (type === 'object' && typeof option.list !== 'undefined') {
       // List option
       it(`  - '${name}' is a list option`, () => true)
+      it(`    - Should be exposed in an option group`, () => {
+        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
+      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.dflt).to.not.equal('undefined')
       })
