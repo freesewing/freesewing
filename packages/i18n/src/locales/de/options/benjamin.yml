@@ -23,3 +23,6 @@ endStyle:
 collarEase:
   title: Kragen Zugabe
   description: Die Menge an Zugabe an deinem Hals
+ribbonWidth:
+  title: Ribbon width
+  description: Width of the ribbon
