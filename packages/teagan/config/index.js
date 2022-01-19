@@ -79,6 +79,7 @@ export default {
     collarEase: 0,
     shoulderSlopeReduction: 0,
     sleeveWidthGuarantee: 0.85,
+    frontArmholeDeeper: 0.005,
 
     // Boolean
     draftForHighBust: { bool: false },
@@ -94,7 +95,6 @@ export default {
     lengthBonus: { pct: 5, min: -20, max: 60 },
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
     armholeDepthFactor: { pct: 65, min: 60, max: 70 },
-    frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     backNeckCutout: { pct: 8, min: 4, max: 12 },
 
     // Sleevecap (from brian)

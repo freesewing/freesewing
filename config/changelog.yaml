@@ -61,6 +61,8 @@ unreleased:
     sven:
       - Expose the `hipsEase` option to the user via option groups
       - Lock the `waistEase` option to a static value
+    teagan:
+      - Lock the `frontArmholeDeeper` option to a static value
 
   Removed:
     plugin-title:
