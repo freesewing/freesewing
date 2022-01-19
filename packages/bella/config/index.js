@@ -9,11 +9,12 @@ export default {
   type: 'block',
   difficulty: 3,
   optionGroups: {
-    fit: ['chestEase', 'waistEase', 'bustSpanEase'],
+    fit: ['chestEase', 'waistEase', 'bustSpanEase', 'fullChestEaseReduction'],
     darts: ['backDartHeight', 'bustDartLength', 'waistDartLength', 'bustDartCurve'],
     armhole: [
       'armholeDepth',
       'backArmholeSlant',
+      'frontArmholeCurvature',
       'backArmholeCurvature',
       'frontArmholePitchDepth',
       'backArmholePitchDepth',

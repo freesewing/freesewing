@@ -10,6 +10,10 @@ bustSpanEase:
   title: Bust span ease
   description: Controls the amount of (horizontal) ease added to your bust span when locating the bust point.
 
+fullChestEaseReduction:
+  title: Full chest ease reduction
+  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+
 backDartHeight:
   title: Back dart height
   description: Controls the height of the back dart
@@ -33,6 +37,10 @@ armholeDepth:
 backArmholeSlant:
   title: Back armhole slant
   description: Slightly rotates the armhole around its pitch point
+
+frontArmholeCurvature:
+  title: Front armhole curvature
+  description: Controls how deep the armhole is scooped out at the front bottom
 
 backArmholeCurvature:
   title: Back armhole curvature
