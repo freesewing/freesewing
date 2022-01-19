@@ -3,7 +3,7 @@ title: Store
 order: 60
 ---
 
-<Example part="docs_overview" options={{focus: "Store"}}>
+<Example part="docs_overview" options_focus="Store">
 The store provides pattern-wide key/value storage
 </Example>
 

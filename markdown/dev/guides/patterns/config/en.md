@@ -3,7 +3,7 @@ title: Configuration
 order: 10
 ---
 
-<Example part="docs_overview" options={{focus: "config"}}>
+<Example part="docs_overview" options_focus="config">
 
 The pattern configuration holds important information about the pattern
 

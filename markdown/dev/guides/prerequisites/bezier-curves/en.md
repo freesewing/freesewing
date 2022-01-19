@@ -17,7 +17,7 @@ In FreeSewing, we use so-called cubic Bézier curves which have:
  - A second control point that’s linked to the end point
  - An end point
 
-<Example settings={{complete: false}} part="path_curve">
+<Example settings_complete="0" part="path_curve">
 An example of a Bézier curve drawn by the Path.curve() method
 </Example>
 

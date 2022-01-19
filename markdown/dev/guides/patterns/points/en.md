@@ -3,7 +3,7 @@ title: Points
 order: 30
 ---
 
-<Example part="docs_overview" options={{focus: "Points"}}>
+<Example part="docs_overview" options_focus="Points">
 Points store coordinates
 </Example>
 

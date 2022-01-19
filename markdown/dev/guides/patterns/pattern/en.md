@@ -3,7 +3,7 @@ title: Pattern
 order: 80
 ---
 
-<Example part="docs_overview" options={{focus: "Pattern"}}>
+<Example part="docs_overview" options_focus="Pattern">
 The pattern you create will be a constructor for instances of your pattern
 </Example>
 

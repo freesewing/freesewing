@@ -3,7 +3,7 @@ title: Snippets
 order: 50
 ---
 
-<Example part="docs_overview" options={{focus: "Snippets"}}>
+<Example part="docs_overview" options_focus="Snippets">
 Snippets are little embelishments that go on your pattern
 </Example>
 

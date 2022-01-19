@@ -3,7 +3,7 @@ title: Parts
 order: 20
 ---
 
-<Example part="docs_overview" options={{focus: "Part"}}>
+<Example part="docs_overview" options_focus="Part">
 Parts divide your pattern into re-usable components
 </Example>
 
