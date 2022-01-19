@@ -31,15 +31,7 @@ export default function (part) {
     'stroke-xl',
     'stroke-2xl',
   ])
-  store.set('styles', [
-    'default-style',
-    'dotted',
-    'dashed',
-    'lashed',
-    'sa',
-    'help',
-    'hidden',
-  ])
+  store.set('styles', ['default-style', 'dotted', 'dashed', 'lashed', 'sa', 'help', 'hidden'])
 
   if (options.only) return part
 
@@ -56,7 +48,7 @@ export default function (part) {
   // Make sure no text is cut off
   paths.box = new Path()
     .move(new Point(-10, -10))
-    .line(new Point(store.get('w')+10, store.get('y')))
+    .line(new Point(store.get('w') + 10, store.get('y')))
     .attr('class', 'hidden')
 
   return part

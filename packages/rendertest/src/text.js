@@ -1,23 +1,23 @@
-export default function (part, demo=false) {
+export default function (part, demo = false) {
   const { Point, Path, points, paths, store, options } = part.shorthand()
   if (options.only === 'text' || demo) {
-
     let y = store.get('y')
     const w = store.get('w')
 
     // Text sizes
     y += 15
-    if (!demo) paths.noClip = new Path()
-      .move(new Point(0, y-5))
-      .line(new Point(10, y-5))
-      .attr('class', 'hidden')
-    points.textsize = new Point(0,y)
+    if (!demo)
+      paths.noClip = new Path()
+        .move(new Point(0, y - 5))
+        .line(new Point(10, y - 5))
+        .attr('class', 'hidden')
+    points.textsize = new Point(0, y)
       .attr('data-text', 'Text sizes')
       .attr('data-text-class', 'text-lg bold')
     const sizes = {
       'text-xs': 3,
       'text-sm': 5,
-      'text': 8,
+      text: 8,
       'text-lg': 10,
       'text-xl': 14,
       'text-2xl': 22,
@@ -32,7 +32,7 @@ export default function (part, demo=false) {
     }
     // Text alignment
     y += 15
-    points.textalign = new Point(0,y)
+    points.textalign = new Point(0, y)
       .attr('data-text', 'Text alignment')
       .attr('data-text-class', 'text-lg bold')
     y += 10
@@ -59,17 +59,13 @@ export default function (part, demo=false) {
 
     // Text style
     y += 20
-    points.textstyle = new Point(0,y)
+    points.textstyle = new Point(0, y)
       .attr('data-text', 'Text style')
       .attr('data-text-class', 'text-lg bold')
     y += 10
-    points.titalic = new Point(0, y)
-      .attr('data-text', '.italic')
-      .attr('data-text-class', 'italic')
+    points.titalic = new Point(0, y).attr('data-text', '.italic').attr('data-text-class', 'italic')
     y += 10
-    points.tbold = new Point(0, y)
-      .attr('data-text', '.bold')
-      .attr('data-text-class', 'bold')
+    points.tbold = new Point(0, y).attr('data-text', '.bold').attr('data-text-class', 'bold')
 
     store.set('y', y)
   }

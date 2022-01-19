@@ -1,17 +1,16 @@
-export default function (part, demo=false) {
+export default function (part, demo = false) {
   const { macro, Point, Path, points, paths, store, options } = part.shorthand()
 
   if (options.only === 'macros' || demo) {
     let y = store.get('y')
     const w = store.get('w')
     y += 10
-    if (!demo) paths.noClip = new Path()
-      .move(new Point(0, y))
-      .line(new Point(10, y))
-      .attr('class', 'hidden')
-    else points.macros = new Point(0,y)
-      .attr('data-text', 'Macros')
-      .attr('data-text-class', 'text-lg bold')
+    if (!demo)
+      paths.noClip = new Path().move(new Point(0, y)).line(new Point(10, y)).attr('class', 'hidden')
+    else
+      points.macros = new Point(0, y)
+        .attr('data-text', 'Macros')
+        .attr('data-text-class', 'text-lg bold')
 
     // title
     y += 60
@@ -41,7 +40,7 @@ export default function (part, demo=false) {
       from: new Point(0, y),
       to: new Point(w, y),
       grainline: true,
-      prefix: 'combo'
+      prefix: 'combo',
     })
 
     // hd, vd, ld, and pd

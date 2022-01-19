@@ -1,4 +1,4 @@
-export default function (part, demo=false) {
+export default function (part, demo = false) {
   const { Point, Path, points, paths, snippets, Snippet, store, options } = part.shorthand()
 
   if (options.only === 'snippets' || demo) {
@@ -11,19 +11,21 @@ export default function (part, demo=false) {
       bnotch: 15,
       button: 15,
       buttonhole: 25,
-      "buttonhole-start": 15,
-      "buttonhole-end": 25,
-      "snap-socket": 25,
-      "snap-stud": 15,
+      'buttonhole-start': 15,
+      'buttonhole-end': 25,
+      'snap-socket': 25,
+      'snap-stud': 15,
     }
     y += 20
-    if (!demo) paths.noClip = new Path()
-      .move(new Point(0, y-5))
-      .line(new Point(10, y-5))
-      .attr('class', 'hidden')
-    else points.snippets = new Point(0,y)
-      .attr('data-text', 'Snippets')
-      .attr('data-text-class', 'text-lg bold')
+    if (!demo)
+      paths.noClip = new Path()
+        .move(new Point(0, y - 5))
+        .line(new Point(10, y - 5))
+        .attr('class', 'hidden')
+    else
+      points.snippets = new Point(0, y)
+        .attr('data-text', 'Snippets')
+        .attr('data-text-class', 'text-lg bold')
     y += 10
     points['sl1'] = new Point(w * 0.25, y)
     points['sl2'] = new Point(w * 0.5, y)

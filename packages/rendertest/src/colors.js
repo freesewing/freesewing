@@ -1,4 +1,4 @@
-export default function (part, demo=false) {
+export default function (part, demo = false) {
   const { Point, Path, points, paths, store, options } = part.shorthand()
 
   if (options.only === 'colors' || demo) {
@@ -7,17 +7,18 @@ export default function (part, demo=false) {
 
     // Stroke colors
     y += 10
-    if (!demo) paths.noClip = new Path()
-      .move(new Point(0, y-5))
-      .line(new Point(10, y-5))
-      .attr('class', 'hidden')
-    points.colors = new Point(0,y)
+    if (!demo)
+      paths.noClip = new Path()
+        .move(new Point(0, y - 5))
+        .line(new Point(10, y - 5))
+        .attr('class', 'hidden')
+    points.colors = new Point(0, y)
       .attr('data-text', 'Stroke colors')
       .attr('data-text-class', 'text-lg bold')
     for (const color of store.get('colors').sort()) {
       y += 12
-      points[`l-${color}`] = new Point(0,y)
-      points[`r-${color}`] = new Point(w,y)
+      points[`l-${color}`] = new Point(0, y)
+      points[`r-${color}`] = new Point(w, y)
       paths[`color${color}`] = new Path()
         .move(points[`l-${color}`])
         .line(points[`r-${color}`])

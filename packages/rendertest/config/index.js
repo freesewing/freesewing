@@ -13,17 +13,7 @@ export default {
     content: ['only'],
   },
   measurements: [],
-  parts: [
-    'demo',
-    'circles',
-    'colors',
-    'widths',
-    'styles',
-    'combos',
-    'text',
-    'snippets',
-    'macros',
-  ],
+  parts: ['demo', 'circles', 'colors', 'widths', 'styles', 'combos', 'text', 'snippets', 'macros'],
   options: {
     width: { mm: 200, min: 50, max: 500, testIgnore: true },
     strokeColors: { bool: true },
@@ -46,7 +36,7 @@ export default {
         'text',
         'snippets',
         'macros',
-      ]
-    }
+      ],
+    },
   },
 }
