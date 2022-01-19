@@ -1,5 +1,5 @@
 const verifyConfig = (config, chalk) => {
-  const nonEmptyString = input => {
+  const nonEmptyString = (input) => {
     if (typeof input === 'string' && input.length > 0) return true
     return false
   }

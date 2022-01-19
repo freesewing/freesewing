@@ -29,12 +29,12 @@ for (let type of Object.keys(routes)) routes[type](app, passport)
 mongoose.Promise = global.Promise
 mongoose
   .connect(config.db.uri, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
   })
   .then(() => {
     console.log(chalk.green('Successfully connected to the database'))
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(chalk.red('Could not connect to the database. Exiting now...'), err)
     process.exit()
   })
@@ -44,7 +44,7 @@ app.get('/', async (req, res) => res.sendFile(path.resolve(__dirname, 'landing',
 
 const port = process.env.PORT || 3000
 
-app.listen(port, err => {
+app.listen(port, (err) => {
   if (err) console.error(chalk.red('Error occured'), err)
   if (__DEV__) console.log(chalk.yellow('> in development'))
   console.log(chalk.green(`> listening on port ${port}`))
