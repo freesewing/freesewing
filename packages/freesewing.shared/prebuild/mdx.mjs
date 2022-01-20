@@ -108,7 +108,7 @@ export const prebuildMdx = async(site) => {
           pages[lang][slug] = {
             title: meta.data.title,
             slug,
-            order: meta.data?.order
+            order: meta.data.order
               ? `${meta.data.order}${meta.data.title}`
               : meta.data.title
           }

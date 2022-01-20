@@ -3,7 +3,7 @@ import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Translation
-import { en } from '@freesewing/i18n'
+//import { en } from '@freesewing/i18n'
 // Prebuild navigation
 import prebuildNavigation from 'site/prebuild/navigation.js'
 
