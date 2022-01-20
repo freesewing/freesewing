@@ -13,7 +13,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 - Join the outseam (the seam that runs along the side of your leg) of the front and back.
 - Join the inseam (the seam the runs along the inside of your legs) of the front and back.
-- You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
+- Du hast jetzt ein Bein. Repeat for the other leg, **making certain they are mirror images of each other**.
 - Turn one leg with the good side in, and the other with the good side out.
 - Now tuck the *good side out* into the *good side in* leg, so that they have their _good sides together_.
 - Align and sew the cross seam.
@@ -58,7 +58,7 @@ It is all up to you! Experiment and go forth!
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Schritt 3: Erstelle ein Papierschnittmuster
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
 - Jetzt hast du ein Schnittmuster, das du verwenden kannst um Kleidungsstücke herzustellen.
