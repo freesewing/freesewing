@@ -9,8 +9,8 @@ bustSpanEase:
   title: Aisance de l'écart poitrine
   description: Contrôle la quantité d'aisance (horizontale) ajoutée à votre poitrine entre les 2 pointes de la poitrine.
 fullChestEaseReduction:
-  title: Full chest ease reduction
-  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+  title: Réduction de l'aisance de la poitrine
+  description: Vous permet de réduire l'aisance de la poitrine indépendamment pour rendre plus seyant cette zone
 backDartHeight:
   title: Hauteur de pince dos
   description: Contrôle la hauteur de pince dans le dos
