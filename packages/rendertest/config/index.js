@@ -21,7 +21,6 @@ export default {
       'snippets',
       'macros',
     ],
-
   },
   measurements: [],
   parts: ['demo', 'circles', 'colors', 'widths', 'styles', 'combos', 'text', 'snippets', 'macros'],
