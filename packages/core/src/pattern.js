@@ -61,7 +61,6 @@ export default function Pattern(config = { options: {} }) {
     scale: 1,
     layout: true,
     debug: true,
-    scale: 1,
     options: {},
     absoluteOptions: {},
   }

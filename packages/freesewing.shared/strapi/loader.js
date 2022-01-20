@@ -8,7 +8,6 @@ import { compile } from '@mdx-js/mdx'
 // Remark plugins we want to use
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkGfm from 'remark-gfm'
-import remarkCopyLinkedFiles from 'remark-copy-linked-files'
 // Rehype plugins we want to use
 import rehypeHighlight from 'rehype-highlight'
 

@@ -1,5 +1,5 @@
 const draftDimension = (part) => {
-  const { points, Point, paths, Path, snippets, Snippet, options, macro } = part.shorthand()
+  const { points, Point, options, macro } = part.shorthand()
 
   if (['gore', 'all'].indexOf(options.plugin) !== -1) {
     points.start = new Point(10, 10)

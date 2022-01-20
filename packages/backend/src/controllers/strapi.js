@@ -3,14 +3,6 @@ import config from '../config'
 import asBuffer from 'data-uri-to-buffer'
 import FormData from 'form-data'
 import fs from 'fs'
-import toFile from 'data-uri-to-file'
-import toStream from 'buffer-to-stream'
-import tou8 from 'buffer-to-uint8array'
-
-const auth = {
-  identifier: config.strapi.username,
-  password: config.strapi.password,
-}
 
 const getToken = async () => {
   let result
@@ -66,7 +58,6 @@ const uploadPicture = async (img, name, token) => {
 
   // I hate you strapi, because this hack is the only way I can get your shitty upload to work
   const filename = `${config.strapi.tmp}/viaBackend.${extention}`
-  const onDisk = await fs.promises.writeFile(filename, asBuffer(img))
   const file = fs.createReadStream(filename)
   form.append('files', file)
   form.append('fileInfo', JSON.stringify({

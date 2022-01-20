@@ -5,8 +5,6 @@ import chai from 'chai'
  * It expects the following:
  *
  * @param object plugin: The plugin object
- * @param object freesewing: Imported @freesewing/core
- * @param object expect: Imported chai.expect
  */
 export const sharedPluginTests = plugin => {
 

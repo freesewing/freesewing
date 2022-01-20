@@ -1,10 +1,7 @@
-import get from 'lodash.get'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
-import Logo from 'shared/components/logos/freesewing.js'
 import ThemePicker from 'shared/components/theme-picker.js'
 import RssIcon from 'shared/components/icons/rss.js'
-import ThemeIcon from 'shared/components/icons/theme.js'
 import TutorialIcon from 'shared/components/icons/tutorial.js'
 import GuideIcon from 'shared/components/icons/guide.js'
 import HelpIcon from 'shared/components/icons/help.js'
@@ -102,7 +99,7 @@ const SubLevel = ({ nodes={}, active }) => (
                     {child.__slug === active ? <>&bull;</> : <>&deg;</>}
                   </span>
                   <span className={child.__slug === active ? 'font-bold' : ''}>
-                    { child?.__linktitle || child.__title }
+                    { child.__linktitle || child.__title }
                   </span>
                 </a>
               </Link>

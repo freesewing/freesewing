@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
@@ -9,8 +10,6 @@ import get from 'lodash.get'
 import Header from 'site/components/header'
 import Footer from 'site/components/footer'
 import Search from 'site/components/search'
-
-const iconSize= 48
 
 const PageTitle = ({ app, slug, title }) => {
   if (title) return <h1>{title}</h1>
@@ -39,7 +38,7 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
         </Link>
       </li>
       {crumbs.map(crumb => (
-        <>
+        <React.Fragment key={crumb[1]}>
           <li className="text-base-content">&raquo;</li>
           <li>
             {crumb[2]
@@ -53,7 +52,7 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
               : <span className="text-base-content">{crumb[0]}</span>
             }
           </li>
-        </>
+        </React.Fragment>
       ))}
     </ul>
   )
@@ -71,12 +70,10 @@ const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
   }
 
   const router = useRouter()
-  router?.events?.on('routeChangeStart', startNavigation)
-  router?.events?.on('routeChangeComplete', () => app.stopLoading())
+  router.events?.on('routeChangeStart', startNavigation)
+  router.events?.on('routeChangeComplete', () => app.stopLoading())
   const slug = router.asPath.slice(1)
   const [leftNav, setLeftNav] = useState(false)
-
-  const toggleLeftNav = () => setLeftNav(!leftNav)
 
   return (
     <div className={`

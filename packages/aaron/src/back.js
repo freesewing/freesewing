@@ -15,7 +15,6 @@ export default function (part) {
     utils,
     units,
     measurements,
-    scale,
   } = part.shorthand()
 
   // Lower back neck a bit

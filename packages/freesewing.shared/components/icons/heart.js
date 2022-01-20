@@ -5,4 +5,4 @@ const Heart = () => (
   </svg>
 )
 
-export const Heart
+export default Heart

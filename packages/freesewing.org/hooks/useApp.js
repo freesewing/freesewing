@@ -27,14 +27,11 @@ function useApp(full = true) {
 
   // State methods
   const togglePrimaryMenu = () => setPrimaryMenu(!primaryMenu)
-  const openPrimaryMenu = () => setPrimaryMenu(true)
-  const closePrimaryMenu = () => setPrimaryMenu(false)
 
   /*
    * Hot-update navigation method
    */
   const updateNavigation = (path, content) => {
-    const newNavigation = {...navigation}
     if (typeof path === 'string') {
       path = (path.slice(0,1) === '/')
         ? path.slice(1).split('/')
@@ -42,28 +39,6 @@ function useApp(full = true) {
     }
     setNavigation(set(navigation, path, content))
   }
-
-  /*
-   * Translation method
-   *
-   * Note that freesewing.dev is only available in English
-   * however we use certain shared code/components between
-   * freesewing.dev and freesewing.org, so we still need
-   * a translation method
-   */
-  const t = (key=false, vals=false) => {
-    if (!key) return ''
-    if (!en.strings[key]) return key
-    let val = en.strings[key]
-    if (vals) {
-      for (const [search, replace] of Object.entries(vals)) {
-        val = val.replace(/search/g, replace)
-      }
-    }
-
-    return val
-  }
-
 
   return {
     // Static vars
@@ -90,9 +65,7 @@ function useApp(full = true) {
 
     // State handlers
     togglePrimaryMenu,
-
   }
-
 }
 
 export default useApp

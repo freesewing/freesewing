@@ -55,8 +55,6 @@
     "@freesewing/i18n": "latest",
     "axios": "0.18.0",
     "body-parser": "1.18.3",
-    "buffer-to-stream": "^1.0.0",
-    "buffer-to-uint8array": "^1.1.0",
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "chalk": "2.4.1",

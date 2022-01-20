@@ -1,12 +1,3 @@
-const addThese = [
-  'button',
-  'buttonhole',
-  'buttonhole-start',
-  'buttonhole-end',
-  'snap-stud',
-  'snap-socket',
-]
-
 const draftButtons = (part) => {
   const { points, Point, paths, Path, snippets, Snippet, options } = part.shorthand()
 

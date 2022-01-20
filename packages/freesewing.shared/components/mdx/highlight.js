@@ -8,8 +8,9 @@ const names = {
 
 const Highlight = (props) => {
 
-  const { children=[], className='language-js' } = props
-  const language = props.children.props.className.split('-').pop()
+  const language = props.children
+    ? props.children.props.className.split('-').pop()
+    : 'txt'
 
   return (
     <div className="hljs my-4">

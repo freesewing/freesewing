@@ -74,7 +74,7 @@ const PostPage = ({ post, author }) => {
               href="#author"
               className="text-secondary hover:text-secondary-focus"
             >
-              {author?.displayname || 'FIXME: No displayname'}
+              {author.displayname || 'FIXME: No displayname'}
             </a>
           </span>
         </div>
@@ -97,17 +97,6 @@ const PostPage = ({ post, author }) => {
         </div>
         <HelpUs blog slug={`/blog/${post.slug}`} />
       </article>
-    </Page>
-  )
-
-  return (
-    <Page app={app} title='Blog' slug='blog'>
-      <article className="mb-12">
-        <div className="strapi prose lg:prose-lg mb-12 m-auto">
-          <MdxWrapper mdx={props.post.mdx} />
-        </div>
-      </article>
-      <Author author={author} type={props.type} t={props.t}/>
     </Page>
   )
 }

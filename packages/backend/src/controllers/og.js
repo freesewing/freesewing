@@ -1,5 +1,5 @@
 import config from "../config";
-import { capitalize, log } from "../utils";
+import { capitalize } from "../utils";
 import sharp from 'sharp';
 import fs from "fs";
 import path from "path";
@@ -72,7 +72,7 @@ const loadMarkdownFile = async (page, site, lang) => fs.promises.readFile(
   'utf-8'
 ).then(async (md) => md
   ? {
-    ...((await titleAndIntroFromLocalMarkdown(md, page))),
+    ...(await titleAndIntroFromLocalMarkdown(md, page)),
     sub: [
       'freesewing.dev/',
       page
@@ -122,7 +122,6 @@ const introAsLines = intro => {
 // Get title and intro
 const getMetaData = {
   dev: async (page) => {
-    const data = {}
     const chunks = page.split('/')
     // Home page
     if (chunks.length === 1 && chunks[0] === '') return {
