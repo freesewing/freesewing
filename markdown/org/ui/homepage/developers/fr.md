@@ -15,11 +15,14 @@ Nous apprécions ces projets/entreprises et d'autres qui nous permettent de nous
 
 #### En savoir plus
 
-Notre [documentation de développeur](https://freesewing.dev) est disponible sur [freesewing.dev](https://freesewing.dev). Vous y trouverez des liens vers tous nos référentiels, ainsi que des documentations approfondies, des tutoriels et des exemples.
+Notre [documentation de développeur](https://freesewing.dev) est disponible sur [freesewing.dev](https://freesewing.dev). You'll find tutorials, how-to guides, as well as our API reference documentation.
 
 #### Vous souhaitez nous aider ?
 
-Génial ❤️   
-Notre [documentation pour contributeur](https://freesewing.dev/contributors/) est un bon point de départ. Nous avons également des guides dédiés pour [traducteurs](https://freesewing.dev/translators/) et [éditeurs](https://freesewing.dev/editors/).
+Awesome ❤️   
+The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
 
-Dernier point, mais non des moindres, [rejoignez-nous sur Discord](https://discord.freesewing.org/) où tous les autres contributeurs se rejoignent.
+If you're not sure how you could contribute, check out [ways to contribute](https://freesewing.dev/howtos/ways-to-contribute), you'll see there's certainly something you can do to help.
+
+We also have specific documentation for [translators](https://freesewing.dev/guides/translation) and [editors](https://freesewing.dev/howtos/editors).
+
