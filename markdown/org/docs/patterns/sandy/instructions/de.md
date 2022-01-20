@@ -86,9 +86,9 @@ There are many ways to hem/face the bottom of a skirt, If you have a prefered me
 
 </Note>
 
-### Step 6: Enjoy!
+### Schritt 6: Viel Spaß!
 
-You are all done! Now go enjoy your wonderful new skirt!
+Du bist fertig! Now go enjoy your wonderful new skirt!
 
 ## Sandy with no closure (seamless/elasticated waistband)
 
@@ -141,9 +141,9 @@ There are many ways to hem/face the bottom of a skirt, If you have a prefered me
 
 </Note>
 
-### Step 4: Enjoy!
+### Schritt 4: Viel Spaß!
 
-You all done! Now go enjoy your wonderfully seamless skirt!
+Du bist fertig! Now go enjoy your wonderfully seamless skirt!
 
 <Note>
 
