@@ -13,7 +13,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 - Join the outseam (the seam that runs along the side of your leg) of the front and back.
 - Join the inseam (the seam the runs along the inside of your legs) of the front and back.
-- Du hast jetzt ein Bein. Repeat for the other leg, **making certain they are mirror images of each other**.
+- Du hast jetzt ein Bein. Wiederhole die Schritte für das andere Bein, **und stelle dabei sicher, dass die beiden Beine Spiegelbilder voneinander sind**.
 - Turn one leg with the good side in, and the other with the good side out.
 - Now tuck the *good side out* into the *good side in* leg, so that they have their _good sides together_.
 - Align and sew the cross seam.
@@ -30,7 +30,7 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
-### Step 2: Try it on
+### Schritt 2: Anprobieren
 
 - Try it on and check the fit by pinning the front closed whilst wearing it.
 - Make any alterations and try it on again.
