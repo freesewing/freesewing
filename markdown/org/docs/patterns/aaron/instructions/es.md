@@ -3,11 +3,11 @@
 
 ![Cerrar el lado y las costuras del hombro](step01.png)
 
-Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Cose las costuras laterales y las costuras cortas de los tirantes. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Paso 2: Termina la lluvia
 
-![Terminar el hem](step02.png)
+![Termina el dobladillo](step02.png)
 
 Doble la lluvia hacia arriba, y coser hacia abajo. Si tienes una cubierta, úsala. Si no, usa una _aguja gemela_ o _zig-zag stitch_ para mantener la costura estirable.
 
