@@ -30,5 +30,5 @@ debug:
   title: Débug
   description: Activer le débogage pour obtenir des informations supplémentaires sur la façon dont votre patron a été créé
 scale:
-  title: Scale
-  description: Controls the overal line width, font size, and other elements that do not scale with the pattern's measurements
+  title: Échelle
+  description: Contrôle la largeur de la ligne de contour, la taille de police et d'autres éléments qui ne sont pas à l'échelle avec les mesures du patron
