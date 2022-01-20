@@ -8,6 +8,9 @@ waistEase:
 bustSpanEase:
   title: Overwijdte bustenwijdte
   description: Bepaalt de hoeveelheid (horizontaal) overwijdte die wordt toegevoegd aan uw bustewijdte bij het lokaliseren van het bustepunt.
+fullChestEaseReduction:
+  title: Full chest ease reduction
+  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
 backDartHeight:
   title: Hoogte neep rug
   description: Bepaalt de hoogte van de achterste neep
@@ -26,6 +29,9 @@ armholeDepth:
 backArmholeSlant:
   title: Schuin armsgat achter
   description: Het armsgat rond zijn toonhoogte roteert enigszins
+frontArmholeCurvature:
+  title: Front armhole curvature
+  description: Controls how deep the armhole is scooped out at the front bottom
 backArmholeCurvature:
   title: Kromming armsgat achter
   description: Bepaalt hoe diep het armsgat aan de achterste onderkant wordt uitgekoopt
