@@ -15,7 +15,7 @@ Wir schätzen diese und andere Projekte/Unternehmen, die es uns ermöglichen, au
 
 #### Erfahre mehr
 
-Unsere [Entwicklerdokumentation](https://freesewing.dev) ist unter [freesewing.dev](https://freesewing.dev) verfügbar. You'll find tutorials, how-to guides, as well as our API reference documentation.
+Unsere [Entwicklerdokumentation](https://freesewing.dev) ist unter [freesewing.dev](https://freesewing.dev) verfügbar. Dort findest du Tutorials, ausführliche Anleitungen, sowie unsere API-Referenzdokumentation.
 
 #### Willst du mithelfen?
 
