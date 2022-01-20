@@ -1,14 +1,14 @@
 ---
-title: Why do you even publish womenswear blocks? They are [insert strong opinion here].
+title: '¿Por qué te molestas en publicar corpiños de mujer? Son [insertar convicción fuerte aquí].'
 ---
 
-This question comes up every now and then. The wording varies, but the sentiment can be summarized as *why even publish this garbage, it doesn't work at all*.
+Esta pregunta aparece de vez en cuando. Las palabras cambian, pero la idea se puede resumir como *por qué molestarse en publicar esta basura, no funciona*.
 
-Let me start by saying that you are not wrong. Both [Breanna](/designs/breanna/) and [Bella](/designs/bella/) have serious shortcomings.
+Os digo, algo de razón hay. Tanto [Breanna](/designs/breanna/) como [Bella](/designs/bella/) tienen defectos importantes.
 
-I myself ([joost](/makers/joostdecock/)) am painfully aware of them, and I have toyed with the idea of retracting these patterns altogether.
+Yo mismo ([joost](/makers/joostdecock/)) soy muy consciente, y le he dado vueltas a la idea de retractarme de estos patrones por completo.
 
-But there's a subset of people who get good results with them. I've seen several good looking makes based on Bella, and Breanna seems to be popular with people making doll clothes for some reason.
+Pero hay un subconjunto de gente que consigue buenos resultados con ellos. I've seen several good looking makes based on Bella, and Breanna seems to be popular with people making doll clothes for some reason.
 
 What I'm saying is, we're not removing them because they work in some cases. Not in all cases though, which can be frustrating.
 
