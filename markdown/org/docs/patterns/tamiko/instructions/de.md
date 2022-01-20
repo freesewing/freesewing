@@ -19,4 +19,4 @@ Auf diese Weise kann sich dein Oberteil nicht umdrehen, während wir es beenden.
 
 ### Schritt 3: Viel Spaß!
 
-Now enjoy your new top and it's zero waste properties!
+Habe nun viel Spaß mit deinem neuen Oberteil und den dazugehörigen Zero-Waste-Eigenschaften!
