@@ -8,6 +8,9 @@ waistEase:
 bustSpanEase:
   title: Büstenumfang leicht
   description: Steuert die Menge der (horizontalen) Leichtigkeit, die deinem Bustbereich hinzugefügt wird, wenn du den Bustpunkt findest.
+fullChestEaseReduction:
+  title: Full chest ease reduction
+  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
 backDartHeight:
   title: Rückseitendart-Höhe
   description: Steuert die Höhe des Rückendarts
@@ -26,6 +29,9 @@ armholeDepth:
 backArmholeSlant:
   title: Hintere Armlochschiebung
   description: Das Rüstungsloch dreht sich leicht um seinen Pitchpunkt
+frontArmholeCurvature:
+  title: Front armhole curvature
+  description: Controls how deep the armhole is scooped out at the front bottom
 backArmholeCurvature:
   title: Hintere Armlochkrümmung
   description: Steuert die Tiefe des Rüstungslochs im hinteren unteren Bereich
