@@ -3,7 +3,7 @@
 
 ![Cerrar el lado y las costuras del hombro](step01.png)
 
-Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Cose las costuras laterales y las costuras cortas de los tirantes. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Cose las costuras laterales y las costuras cortas de los arriba de los tirantes. Si tienes una remalladora, este es un buen momento para usarla. Si no, haz las costuras de otra forma.
 
 ## Paso 2: Termina la lluvia
 
