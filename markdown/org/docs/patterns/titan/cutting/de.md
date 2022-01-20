@@ -1,9 +1,9 @@
- **Main fabric**
+ **Oberstoff**
 
-  - Cut **2 front** parts with _good sides together_
-  - Cut **2 back** parts with _good sides together_
+  - Schneide **2 Vorderseiten** mit _guten Seiten zusammen_
+  - Schneide **2 Rückseiten** mit _guten Seiten zusammen_
 
-These cutting instructions are just for the default Titan block. Adjust your cutting accordingly if you have/are making changes to the block.
+Diese Anleitung ist nur für den Titan-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
 <Note>
 
