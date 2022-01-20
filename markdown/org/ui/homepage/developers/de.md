@@ -19,10 +19,10 @@ Unsere [Entwicklerdokumentation](https://freesewing.dev) ist unter [freesewing.d
 
 #### Willst du mithelfen?
 
-Awesome ❤️   
-The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
+Klasse ❤️   
+Am schnellsten geht das, indem du [uns auf Discord besuchst](https://discord.freesewing.org/) -- dort hängen auch die ganzen anderen Mitwirkenden ab.
 
-If you're not sure how you could contribute, check out [ways to contribute](https://freesewing.dev/howtos/ways-to-contribute), you'll see there's certainly something you can do to help.
+Wenn du dir nicht sicher bist, wie du mitwirken kannst, schau dir die verschiedenen [Möglichkeiten zum Mitwirken](https://freesewing.dev/howtos/ways-to-contribute) an, du wirst sehen, dass es sicher etwas gibt, wo du helfen kannst.
 
-We also have specific documentation for [translators](https://freesewing.dev/guides/translation) and [editors](https://freesewing.dev/howtos/editors).
+Wir haben auch konkrete Anleitungen für [Übersetzer/-innen](https://freesewing.dev/guides/translation) und [Redakteur/-innen](https://freesewing.dev/howtos/editors).
 
