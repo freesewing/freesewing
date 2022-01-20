@@ -1,4 +1,7 @@
 ---
+hipsEase:
+  title: Hips ease
+  description: Controls the amount of ease at your hips (the bottom of the sweater)
 ribbing:
   title: Tejido acanalado
   description: Ya sea para terminar el dobladillo y los puños con tejido acanalado.
