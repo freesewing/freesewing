@@ -6,7 +6,7 @@ Cero significa que el backline permanecerá horizontal en el nivel de su subbust
 
 Si aumentas la subida de espalda, tu corsé subirá hacia arriba en la espalda.
 
-> Dado que se trata de un corsé de subbuste, el retroceso es una opción de estilo y no va a afectar al ajuste
+> As this is an underbust corset, the back rise is a style choice and won't affect the fit
 
 
 ## Efecto de esta opción en el patrón
