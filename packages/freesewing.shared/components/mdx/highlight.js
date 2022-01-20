@@ -22,10 +22,10 @@ const Highlight = (props) => {
       `}>
         <span>&nbsp;</span>
         <span>{names[language] ? names[language] : language}</span>
-        <CopyToClipboard content={children} />
+        <CopyToClipboard content={props.children} />
       </div>
       <pre className={`language-${language} hljs text-base lg:text-lg whitespace-pre-wrap break-words`}>
-        {children}
+        {props.children}
       </pre>
     </div>
   )
