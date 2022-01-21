@@ -3,7 +3,7 @@
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% código abierto
 aboutFreesewing: Acerca de Freesewing
-accessoryPatterns: Accessory Patterns
+accessoryPatterns: Patrones de accesorios
 account: Cuenta
 accountCreated: Cuenta creada
 actions: Acciones
@@ -30,7 +30,7 @@ changePattern: Cambiar patrón
 chatOnDiscord: Chatear en Discord
 checkInboxClickLinkInConfirmationEmail: Ahora revise su bandeja de entrada y haga clic en el enlace en el correo electrónico de confirmación que le hemos enviado.
 chest: Pecho
-chestInfo: Los senos requieren medidas adicionales. Si esta persona no tiene senos, se ocultarán las medidas irrelevantes al configurar el modelo. Esto no tiene ningún impacto en cómo se redactan los patrones.
+chestInfo: Los senos requieren medidas adicionales. Si esta persona no tiene senos, se ocultarán las medidas irrelevantes al configurarlos. Esto no tiene ningún impacto en cómo se generan los patrones.
 chooseASize: Elige un tamaño
 chooseAPerson: Elige una persona
 chooseADesign: Elija un diseño
@@ -47,9 +47,9 @@ continue: Continuar
 copiedToClipboard: Copiado al portapapeles
 copy: Dupdo
 couldYouTranslateThis: '¿Podrías traducir esto?'
-countModelsLackingForPattern: 'Tiene {count} modelos que carecen de las medidas necesarias para dibujar {pattern}'
+countModelsLackingForPattern: '{count} de tus personas carecen de las medidas necesarias para esbozar el patrón {pattern}'
 created: Creado
-custom: personalizado
+custom: Personalizado
 customSeamAllowance: Margen de costura personalizada
 lightMode: Modo claro
 data: Datos
@@ -324,12 +324,12 @@ editOwnPatternsOnly: Solo puedes editar tus propios patrones
 editOwnPatternsOnly-txt: No puedes editar este patrón porque no es tuyo, pero puedes usarlo como línea de referencia para crear tu propio patrón.
 updateNotes-txt: Actualiza las notas que guardas a lo largo de tu patrón
 franceWarning: Tenga cuidado con los usuarios en Francia
-franceWarning-txt: Se sabe que varios proveedores franceses de correo electrónico —incluidos, free.fr, laposte.net, orange.fr, y sfr.fr — descartan de forma rutinaria nuestros correos electrónicos.
-emailNotReceived: Si no recibes el correo electrónico de activación, por favor contacta para que podamos ayudarte.
+franceWarning-txt: Se sabe que varios proveedores de correo electrónico franceses (incluyendo free.fr, laposte.net, orange.fr y sfr.fr) descartan de forma rutinaria nuestros correos electrónicos.
+emailNotReceived: Si no recibes el correo electrónico de activación, por favor contacta con nosotros para que podamos ayudarte.
 error: Error
 info: Información
 warning: Advertencia
 debug: Debug
 unsubscribe: Darse de baja
 slogan-come: Ven a los patrones de costura
-slogan-stay: Permanecer para la comunidad
+slogan-stay: Quédate por la comunidad
