@@ -3,6 +3,7 @@
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% código abierto
 aboutFreesewing: Acerca de Freesewing
+accessoryPatterns: Accessory Patterns
 account: Cuenta
 accountCreated: cuenta creada
 actions: Acciones
@@ -12,11 +13,12 @@ applyThisLayout: Aplicar este diseño
 areYouSureYouWantToContinue: Estás seguro de que quieres continuar?
 askForHelp: Pide ayuda
 automatic: Automático
-averagePeopleDoNotExist: 'La gente promedio no existe'
+averagePeopleDoNotExist: "La gente promedio no existe"
 awesome: Genial
 back: Atrás
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
 becomeAPatron: Conviértete en un mecenas
+blockPatterns: Block/Sloper Patterns
 blog: Blog
 browseBlogposts: Navegar por les publicaciones del blog
 browsePatterns: Navegar por les patrones
@@ -72,7 +74,7 @@ drafts: Bocetos
 draftSettings: Ajustes del boceto
 dragAndDropImageHere: Arrastra y suelta una imagen aquí, o selecciona una manualmente con el botón de abajo
 emailAddress: Dirección de correo electrónico
-emailWorksToo: 'Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará'
+emailWorksToo: "Si no conoces tu nombre de usuario, tu dirección de correo electrónico también funcionará"
 enterEmailPickPassword: Introduce tu dirección de email y elige una contraseña
 export: Exportar
 exportTiledPDF: Exportar PDF paginado
@@ -81,9 +83,10 @@ fieldRemoved: '{field} eliminado'
 fieldSaved: '{field} guardado'
 filterByPattern: Filtrar por patrón
 filterPatterns: Filtrar los patrones
-forgotLoginInstructions: 'Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña'
+forgotLoginInstructions: "Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
+garmentPatterns: Garment Patterns
 github: GitHub
 goAheadWeWillWait: Adelante, esperaremos.
 goodJob: Buen trabajo
@@ -156,7 +159,7 @@ remove: Eliminar
 removeThing: Eliminar {thing}
 reportThisOnGithub: Notifícalo en GitHub
 requiredMeasurements: Medidas requeridas
-resendActivationEmailMessage: 'Complete la dirección de correo electrónico con la que se registró y le enviaremos un nuevo mensaje de confirmación.'
+resendActivationEmailMessage: "Complete la dirección de correo electrónico con la que se registró y le enviaremos un nuevo mensaje de confirmación."
 resendActivationEmail: Reenviar email de activación
 resetPassword: Restablecer contraseña
 reset: Reiniciar
@@ -198,13 +201,14 @@ twitter: Twitter
 txt-footer: Freesewing está hecho por una comunidad de colaboradores<br />con el apoyo financiero de nuestros Patrones
 txt-tier2: Nuestro nivel más democrático de precios. Puede ser menor que el precio de un café con leche, pero su apoyo significa mucho para nosotros.
 txt-tier4: Suscríbase a este nivel y le enviaremos parte de nuestro codiciado botín de diseño gratuito a su hogar en cualquier parte del mundo.
-txt-tier8: 'Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!'
+txt-tier8: "Si no solo desea apoyarnos, sino que quiere ver prosperar en la libertad, este es el nivel para usted. También: botín extra!"
 txt-tiers: 'FreeSewing es alimentado por un modelo de suscripción voluntario'
 unitsInfo: La liberación es compatible con el sistema métrico y las unidades imperiales. Simplemente elige el que te gustaría usar aquí. (El valor predeterminado es utilizar las unidades configuradas en su cuenta).
 updated: Actualizado
 update: Actualizar
 userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
 users: Userios
+utilityPatterns: Utility Patterns
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
 weCouldNotValidateYourConfirmationCode: No pudimos validar su código de confirmación
 weEncounteredAProblem: Nos encontramos con un problema
@@ -240,8 +244,8 @@ noPattern: No tienes ningún patrón (todavía). Crea un nuevo patrón, luego gu
 modelFirst: Empezar añadiendo mediciones
 noModel: No has añadido ninguna medición (aún). La Coser libre puede generar patrones de costura hechos a medida. Pero para eso necesitamos mediciones.
 noModel2: Así que lo primero que debes hacer es añadir una persona y agitar tu cinta de medición.
-noUserBrowsingTitle: 'No puedes navegar por todos los usuarios'
-noUserBrowsingText: 'Tenemos miles de ellos. ¿Seguro que tienes cosas mejores que hacer?'
+noUserBrowsingTitle: "No puedes navegar por todos los usuarios"
+noUserBrowsingText: "Tenemos miles de ellos. ¿Seguro que tienes cosas mejores que hacer?"
 usePatternMeasurements: 'Usar las mediciones del patrón original'
 createReplica: Crear una réplica
 showDetails: Mostrar detalles
