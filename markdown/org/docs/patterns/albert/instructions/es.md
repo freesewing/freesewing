@@ -9,11 +9,11 @@ title: Albert Construction
 - Aprieta el borde para el dobladillo de los lados y la parte inferior hacia el lado malo del tejido.
 - En el lado bueno, haz un pespunte cerca de donde el borde del dobladillo acaba en la parte de abajo, asegurándote de que coses sobre el dobladillo.
 - Sujeta el bolsillo con alfileres en el sitio usando las guías.
-- _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
+- Haz un _pespunte_ en los lados y parte de abajo del bolsillo, dejando la parte superior abierta. Asegúrate de hacer punto atrás al principio y al final para fijar el bolsillo correctamente.
 
 <Tip>
 
-If you have trouble catching the top hem we suggest to either _Baste_ close to the hem edge first, and use that as a guide when stitching on the right side or pin the hem edge down from the right side making sure the pins are parallel to the top edge and use them as a guide.
+Si tienes problemas para sujetar el borde superior, sugerimos que hilvanes cerca del borde superior primero y uses eso como guía cuando cosas por el lado bueno, o que pongas alfileres en el dobladillo desde el lado bueno paralelos al borde superior y los uses como guía.
 
 </Tip>
 
