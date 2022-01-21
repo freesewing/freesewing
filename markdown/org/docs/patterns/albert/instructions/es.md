@@ -2,9 +2,9 @@
 title: Albert Construction
 - - -
 
-### Step 1: The Pocket
+### Paso 1: El bolsillo
 
-- Along the top of the pocket fold the seam allowance to wrong side, press.
+- A lo largo del borde superior del bolsillo, dobla el trozo para el dobladillo hacia el lado malo/incorrecto y apriétalo.
 - Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.
 - Press the seam allowance of the sides and bottom to the wrong side.
 - On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
