@@ -747,6 +747,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Tyrannogina",
+      "name": "Sara Latorre",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19556565?v=4",
+      "profile": "https://github.com/Tyrannogina",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "skipCi": true
