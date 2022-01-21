@@ -19,14 +19,14 @@ Si tienes problemas para sujetar el borde superior, sugerimos que hilvanes cerca
 
 <Note>
   
-There are multiple ways to sew a patch pocket so use the way you prefer if you do not like this one.  
-A fun thing you can do is embroider/stitch the pocket with the name of the person the apron is for or even a cute design. Just remember that aprons typically get dirty so don't go to overtop with it.
+Hay muchas formas de coser un bolsillo de parche, así que usa la que prefieras si no te gusta esta.  
+Una cosa divertida que puedes hacer es bordar en el bolsillo el nombre de la persona para la que es el delantal, o incluso bordar diseño mono. Pero recuerda que los delantales normalmente se ensucian, así que no te pases.
   
 </Note>
 
-### Step 2: The Front
+### Paso 2: La parte de delante
 
-- Press under the side seam allowances to the wrong side.
+- Dobla hacia abajo los bordes laterales hacia el lado malo.
 - Press under the side seams to the wrong side along the hem lines making sure the seam allowances are tucked underneath.
 - On the right side topstich close to where the folded edges lie underneath, making sure to catch the hems as you sew.
 - Repeat Step 2 for the top and bottom hems.
