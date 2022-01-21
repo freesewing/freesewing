@@ -27,9 +27,9 @@ Una cosa divertida que puedes hacer es bordar en el bolsillo el nombre de la per
 ### Paso 2: La parte de delante
 
 - Dobla hacia abajo los bordes laterales hacia el lado malo.
-- Press under the side seams to the wrong side along the hem lines making sure the seam allowances are tucked underneath.
-- On the right side topstich close to where the folded edges lie underneath, making sure to catch the hems as you sew.
-- Repeat Step 2 for the top and bottom hems.
+- Presiona sobre las costuras laterales hacia el lado malo a lo largo del dobladillo, asegurándote de que el borde de la tela queda escondido debajo.
+- En el lado bueno, haz un pespunte cerca de donde el borde del dobladillo acaba debajo, asegurándote que coses sobre el dobladillo.
+- Repite el Paso 2 para los dobladillos superior e inferior.
 
 <Note>
 
@@ -41,14 +41,14 @@ The side seams are narrow hems simply being the seam allowance folded over twice
 ### Paso 3: Los tirantes
 
 - Dobla una de las tiras por la mitad, con los lados buenos juntos, y cose la parte de arriba y el lado.
-- Turn inside out through the bottom. Press.
-- Using the cross and rectangle as a guide, stitch the top of the strap to the wrong side of the front on the top left.
-- Using the cross and rectangle as a guide, stitch the bottom of the strap to the wrong side of the front at the side right.
-- Repeat Step 3 for the remaining strap attaching it at the top right and then the side left.
+- Dale la vuelta a través de la parte de abajo. Alísala.
+- Utilizando la cruz y el rectángulo como guía, cose la parte de arriba de la cinta en la esquina superior izquierda de la parte de delante, por el lado malo.
+- Utilizando la cruz y el rectángulo como guía, cose la parte de abajo de la cinta con el lado izquierdo, por el lado malo.
+- Repite el Paso 3 para la otra cinta, uniéndola la la parte superior derecha y lado izquierdo.
 
 <Note>
   
-You can make another set of straps to tie at the back if you wish to keep the apron close to body when moving.
+Puedes hacer otro conjunto de tiras para atar a la espalda si quieres mantener el delantal pegado al cuerpo cuando te mueves.
 
 </Note>
 
