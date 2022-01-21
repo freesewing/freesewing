@@ -5,10 +5,10 @@ title: Albert Construction
 ### Paso 1: El bolsillo
 
 - A lo largo del borde superior del bolsillo, dobla el trozo para el dobladillo hacia el lado malo/incorrecto y apriétalo.
-- Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.
-- Press the seam allowance of the sides and bottom to the wrong side.
-- On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
-- Pin the pocket to the front using the guides.
+- Vuelve a doblar hacia el lado malo y aprieta, asegurándote de que el borde de la tela queda escondida debajo. Sujétalo con alfileres si hace falta.
+- Aprieta el borde para el dobladillo de los lados y la parte inferior hacia el lado malo del tejido.
+- En el lado bueno, haz un pespunte cerca de donde el borde del dobladillo acaba en la parte de abajo, asegurándote de que coses sobre el dobladillo.
+- Sujeta el bolsillo con alfileres en el sitio usando las guías.
 - _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
 
 <Tip>
