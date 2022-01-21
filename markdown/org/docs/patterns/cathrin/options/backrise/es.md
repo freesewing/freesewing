@@ -1,4 +1,4 @@
-![La opción de retroceso en la Catedral](./backrise.svg)
+![La opción espalda elevada en Cathrin](./backrise.svg)
 
 ¿Qué tan alto quieres que el corsé se levante en la espalda, en relación a la altura de la basura?
 
