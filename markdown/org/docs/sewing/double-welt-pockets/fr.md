@@ -46,8 +46,8 @@ Les rabats sont deux bandes rectangulaires de tissu avec les mesures suivantes :
 
 Pour notre exemple :
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+ - Longueur : 13 cm + 4 cm = 17 cm
+ - Largeur : (0.5 cm x 2) + 5 cm = 6 cm
 
 Ils formeront les deux bandes étroites de tissu qui forment votre poche passepoilée.
 
