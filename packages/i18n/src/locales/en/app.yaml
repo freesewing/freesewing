@@ -2,6 +2,7 @@
 100PercentFree: 100% free
 100PercentOpenSource: 100% open source
 aboutFreesewing: About Freesewing
+accessoryPatterns: Accessory Patterns
 account: Account
 accountCreated: Account created
 actions: Actions
@@ -16,6 +17,7 @@ awesome: Awesome
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
 becomeAPatron: Become a patron
+blockPatterns: Block/Sloper Patterns
 blog: Blog
 browseBlogposts: Browse blogposts
 browsePatterns: Browse patterns
@@ -83,6 +85,7 @@ filterPatterns: Filter patterns
 forgotLoginInstructions: "If you don't remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing on GitHub
+garmentPatterns: Garment Patterns
 github: GitHub
 goAheadWeWillWait: Go ahead, we'll wait.
 goodJob: Good job
@@ -204,6 +207,7 @@ updated: Updated
 update: Update
 userHasBeenWithUsSince: '{user} has been with us since {since}'
 users: Users
+utilityPatterns: Utility Patterns
 weAreValidatingYourConfirmationCode: We are validating your confirmation code
 weCouldNotValidateYourConfirmationCode: We could not validate your confirmation code
 weEncounteredAProblem: We encountered a problem
