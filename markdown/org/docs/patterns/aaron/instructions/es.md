@@ -9,7 +9,7 @@ Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Cose las cost
 
 ![Termina el dobladillo](step02.png)
 
-Doble la lluvia hacia arriba, y coser hacia abajo. Si tienes una cubierta, úsala. Si no, usa una _aguja gemela_ o _zig-zag stitch_ para mantener la costura estirable.
+Doble la lluvia hacia arriba, y coser hacia abajo. Si tienes una cubierta, úsala. Si no, usa una _aguja doble o gemela_ o _punto de zig-zag_ para mantener la costura elástica.
 
 <Note>
 
