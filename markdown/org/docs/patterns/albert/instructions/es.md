@@ -33,8 +33,8 @@ Una cosa divertida que puedes hacer es bordar en el bolsillo el nombre de la per
 
 <Note>
 
-It is recommended to hem the side seams before the top and bottom seams as they are narrower.  
-The side seams are narrow hems simply being the seam allowance folded over twice.
+Es recomendable hacer el dobladillo de los laterales antes que el superior y el inferior, que son más estrechos.  
+Los dobladillos laterales son estrechos y permiten doblar la tela dos veces.
 
 </Note>
 
