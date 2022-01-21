@@ -271,7 +271,7 @@ oneMomentPlease: Un momento, por favor
 loadingMagic: Estamos cargando la magia
 estimate: Estimar
 actual: Actual
-weEstimateYM2B: 'Estimamos que tu {measurement} esté cerrada:'
+weEstimateYM2B: 'Estimamos que tu {measurement} es aproximadamente:'
 exportAsData: Exportar como datos
 availablePatterns: Patrones disponibles
 browseCollection: Navegar colección
@@ -280,16 +280,16 @@ yourPatterns: Tus patrones
 loginNeededToSavePatternsMsg: Necesitas iniciar sesión para guardar tus patrones
 docsForContributors: Documentación para colaboradores
 patternDocs: Documentación del patrón
-socialMedia: Medios sociales
+socialMedia: Redes sociales
 create: Crear
 browse: Navegar
-patrons: Patrons
-scrollToTop: Desplazar hasta arriba
-sitemap: Sitemap
-contributeToThing: Contribuir a {thing}
-mtmIsOurJam: patrones de costura hechos a medida es en lo que nos especializamos en
-fitYouDeserve: Te estás perdiendo si vas a buscar tamaños estandarizados.<br />Así que regístrate hoy y consigue el ajuste que te mereces.
-supportNag: <b>Gratis</b>La costura es <b>gratuita</b>, pero agradeceríamos que consideraras <a href='/patrons/join/'>apoyarnos</a>.
+patrons: Patrones
+scrollToTop: Desplazar hasta el inicio
+sitemap: Mapa del sitio
+contributeToThing: Contribuye a {thing}
+mtmIsOurJam: Patrones de costura hechos a medida es en lo que nos especializamos
+fitYouDeserve: Te estás perdiendo lo bueno si eliges tamaños estandarizados.<br />Regístrate hoy y consigue el ajuste adecuado que te mereces.
+supportNag: La costura <b>gratuita</b> es <b>gratis</b>, pero agradeceríamos que consideraras <a href='/patrons/join/'>apoyarnos</a>.
 madeToMeasure: a medida
 sizes: Tamaños
 standardSizes: Tamaños estándar
