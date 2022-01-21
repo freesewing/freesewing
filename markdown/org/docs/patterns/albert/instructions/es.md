@@ -38,9 +38,9 @@ The side seams are narrow hems simply being the seam allowance folded over twice
 
 </Note>
 
-### Step 3: The Straps
+### Paso 3: Los tirantes
 
-- Fold one strap in half, right sides together and sew the top and side together.
+- Dobla una de las tiras por la mitad, con los lados buenos juntos, y cose la parte de arriba y el lado.
 - Turn inside out through the bottom. Press.
 - Using the cross and rectangle as a guide, stitch the top of the strap to the wrong side of the front on the top left.
 - Using the cross and rectangle as a guide, stitch the bottom of the strap to the wrong side of the front at the side right.
@@ -52,6 +52,6 @@ You can make another set of straps to tie at the back if you wish to keep the ap
 
 </Note>
 
-### Step 4: Enjoy!
+### Paso 4: ¡Disfrútalo!
 
-You're done! Now go enjoy your apron and make every stain a memory!
+¡Has acabado! ¡Ahora ve a disfrutar de tu delantal y crea un recuerdo con cada mancha!
