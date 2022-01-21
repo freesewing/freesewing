@@ -260,14 +260,14 @@ seeYouLaterUser: Nos vemos después {user}
 exportForPrinting: Exportar para impresión
 exportForEditing: Exportar para editar
 startWithNeckTitle: Comenzar con la circunstancia del cuello
-startWithNeckDescription: Basándonos en la circunstancia del cuello, podemos ayudarle a detectar errores en sus mediciones.
+startWithNeckDescription: Basándonos en la circunferencia del cuello, podemos ayudarte a detectar errores en tus medidas.
 whatYouNeed: Lo que necesitas
 fabricOptions: Opciones de tela
 cutting: Corte
 instructions: Instrucciones
 hide: Ocultar
 show: Mostrar
-oneMomentPlease: Un momento por favor
+oneMomentPlease: Un momento, por favor
 loadingMagic: Estamos cargando la magia
 estimate: Estimar
 actual: Actual
@@ -309,17 +309,17 @@ printPattern: Patrón de impresión
 exportPattern-txt: Exporte un PDF adecuado para su impresora, o descargue este patrón en una variedad de formatos
 editThing: 'Editar {thing}'
 editPattern-txt: Cargar este patrón en el editor de patrones
-featureRequiresAccount: Esta característica requiere una cuenta de FreeSewing
+featureRequiresAccount: Esta función requiere una cuenta de FreeSewing
 zoom: Zoom
-zoomIn: Acercarse en
-zoomOut: Apagar
+zoomIn: Acerca el zoom
+zoomOut: Aleja el zoom
 zoom-txt: Cambia entre restringir la altura o el ancho del patrón para caber en la pantalla
 savePattern-txt: Guarda este patrón en tu cuenta de FreeSewing
 comparePattern: Patrón de comparación
 showPattern: Mostrar patrón
-comparePattern-txt: Compara tu patrón a un rango de tamaños estándar para revisar posibles problemas de ajuste
+comparePattern-txt: Compara tu patrón con un rango de tamaños estándar para revisar posibles problemas de ajuste
 recreatePattern: Recrear patrón
-recreatePattern-txt: Elige una persona diferente, luego vuelve a crear este patrón para esa persona
+recreatePattern-txt: Elige una persona diferente, luego recrear este patrón para esa persona
 editOwnPatternsOnly: Solo puedes editar tus propios patrones
 editOwnPatternsOnly-txt: No puedes editar este patrón porque no es tuyo, pero puedes usarlo como línea de referencia para crear tu propio patrón.
 updateNotes-txt: Actualiza las notas que guardas a lo largo de tu patrón
