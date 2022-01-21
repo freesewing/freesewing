@@ -1,10 +1,10 @@
 ![La opción espalda elevada en Cathrin](./backrise.svg)
 
-¿Qué tan alto quieres que el corsé se levante en la espalda, en relación a la altura de la basura?
+¿Qué tan alto quieres que el corsé se levante en la espalda, en relación a la altura bajo el pecho?
 
-Cero significa que el backline permanecerá horizontal en el nivel de su subbust. En otras palabras, la parte trasera será un poco la misma altura que la correa de tu sujetador.
+Cero significa que la altura de la parte de atrás permanecerá horizontal en el nivel bajo el pecho. En otras palabras, la parte trasera será más o menos de la misma altura que la cinta de tu sujetador.
 
-Si aumentas la subida de espalda, tu corsé subirá hacia arriba en la espalda.
+Si aumentas la elevación de la de espalda, tu corsé se elevará en la parte trasera.
 
 > Dado que este es un corsé por debajo del pecho, la elevación trasera es una elección de estilo y no afectará al ajuste
 
