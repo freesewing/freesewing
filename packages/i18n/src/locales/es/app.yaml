@@ -5,12 +5,12 @@
 aboutFreesewing: Acerca de Freesewing
 accessoryPatterns: Accessory Patterns
 account: Cuenta
-accountCreated: cuenta creada
+accountCreated: Cuenta creada
 actions: Acciones
 allDocumentation: Toda la documentación
 andThatIsAwesome: Y eso es genial
 applyThisLayout: Aplicar este diseño
-areYouSureYouWantToContinue: Estás seguro de que quieres continuar?
+areYouSureYouWantToContinue: '¿Seguro que quieres continuar?'
 askForHelp: Pide ayuda
 automatic: Automático
 averagePeopleDoNotExist: "La gente promedio no existe"
@@ -20,8 +20,8 @@ becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
 becomeAPatron: Conviértete en un mecenas
 blockPatterns: Block/Sloper Patterns
 blog: Blog
-browseBlogposts: Navegar por les publicaciones del blog
-browsePatterns: Navegar por les patrones
+browseBlogposts: Hojea las publicaciones del blog
+browsePatterns: Hojea los patrones
 browseShowcases: Navegar por las escaparates
 butThatCouldChange: Pero eso podría cambiar
 cancel: Cancelar
@@ -40,8 +40,8 @@ close: Cerrar
 community: Comunidad
 configureLayout: Configurar diseño
 configureYourDraft: Configurar su boceto
-contactUs: Contactáctanos
-contentLocaleFallback: Por eso te estamos enseñando la versión en inglés en su lugar.
+contactUs: Contacta con nosotros
+contentLocaleFallback: Es por eso que te mostramos la versión en inglés.
 contents: Contenido
 continue: Continuar
 copiedToClipboard: Copiado al portapapeles
