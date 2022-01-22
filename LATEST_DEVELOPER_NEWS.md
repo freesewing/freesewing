@@ -9,7 +9,7 @@ If you'd like to get involved in this effort, head over to [discord.freesewing.o
 
 ##### Next contributor call on 5 February
 
-The next contributor call is on **5 February 2022**, Lucian and Karen will host it.
+The next contributor call is on **5 February 2022**, Lexander and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
