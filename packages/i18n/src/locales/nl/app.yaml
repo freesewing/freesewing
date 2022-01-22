@@ -128,6 +128,7 @@ notesInfo: Dit zijn je aantekeningen; Je kunt hier alles schrijven wat je wil
 notes: Aantekeningen
 ohNo: Oh nee!
 oneMoreThing: En dan nog dit
+optionalMeasurements: Optional measurements
 options: Opties
 orPayPerYear: Of betaal per jaar
 other: Andere
@@ -333,3 +334,8 @@ debug: Debug
 unsubscribe: Uitschrijven
 slogan-come: Kom voor de naaipatronen
 slogan-stay: Blijf voor het gezelschap
+lightTheme: Light Theme
+darkTheme: Dark Theme
+hax0rTheme: Hax0r Theme
+lgbtqTheme: LGBTQ Theme
+transTheme: Trans Theme
