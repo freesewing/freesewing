@@ -30,7 +30,7 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 - Try it on and check the fit by pinning the back closed whilst wearing it.
 - Make any alterations and try it on again.
-- Repeat until you are happy.
+- Repite hasta que te satisfaga.
 
 <Tip>
 
