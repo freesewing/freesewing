@@ -22,7 +22,7 @@ Notre [documentation de développeur](https://freesewing.dev) est disponible sur
 Génial ❤️   
 La chose la plus rapide à faire est de [nous rejoindre sur Discord](https://discord.freesewing.org/) où sont tous les autres contributeurs.
 
-If you're not sure how you could contribute, check out [ways to contribute](https://freesewing.dev/howtos/ways-to-contribute), you'll see there's certainly something you can do to help.
+Si vous n'êtes pas sûr de la façon dont vous pourriez contribuer, consultez [les moyens de contribuer](https://freesewing.dev/howtos/ways-to-contribute), vous verrez qu'il y a certainement quelque chose que vous pouvez faire pour aider.
 
-We also have specific documentation for [translators](https://freesewing.dev/guides/translation) and [editors](https://freesewing.dev/howtos/editors).
+Nous avons également une documentation spécifique pour les [traducteurs](https://freesewing.dev/guides/translation) et [éditeurs](https://freesewing.dev/howtos/editors).
 
