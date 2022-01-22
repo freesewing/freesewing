@@ -5,7 +5,7 @@ headEase:
 lengthRatio:
   title: Length ratio
   description: Controls the length of the crown and ear flaps
-goreNumber:
+gores:
   title: Number of gores
   description: The number of gores used to construct the semi-sphere
 visorAngle:
