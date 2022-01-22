@@ -3,7 +3,7 @@
 
 ![Fermer les coutures latérales et les coutures d'épaule](step01.png)
 
-Mettez le devant et le dos l'un sur l'autre _endroit contre endroit_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Mettez le devant et le dos l'un sur l'autre _endroit contre endroit_. Cousez les coutures latérales et les coutures d'épaules. Si vous avez une surjeteuse, c'est un bon moment pour l'utiliser. Si ce n'est pas le cas, finissez vos coutures autrement.
 
 ## Étape 2 : Faire l'ourlet
 
