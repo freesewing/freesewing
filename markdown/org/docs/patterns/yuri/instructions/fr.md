@@ -1,6 +1,6 @@
 <Note>
 
-Ce motif peut être cousu avec ou avec un overlocker/serger. Pour ***Finir*** coutures sans overlocker/serger, vous pouvez soit utiliser la méthode que vous préférez, soit l'une des méthodes ci-dessous :
+Ce patron peut être cousu avec ou avec une surjeteuse. Pour ***Finir*** coutures sans overlocker/serger, vous pouvez soit utiliser la méthode que vous préférez, soit l'une des méthodes ci-dessous :
 
 ##### Méthode de finition 1
 
