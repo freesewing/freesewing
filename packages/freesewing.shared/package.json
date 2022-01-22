@@ -22,8 +22,7 @@
     "remark-extract-frontmatter": "^3.2.0",
     "remark-frontmatter": "^4.0.1",
     "to-vfile": "^7.2.2",
-    "unist-util-visit": "^4.1.0",
-    "vfile-reporter": "^7.0.3"
+    "unist-util-visit": "^4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

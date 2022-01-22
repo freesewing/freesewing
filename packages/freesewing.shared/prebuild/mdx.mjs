@@ -1,14 +1,12 @@
 import path from 'path'
 import fs from 'fs'
-import { languages, strapiHost } from '../config/freesewing.mjs'
+import { languages } from '../config/freesewing.mjs'
 import rdir from 'recursive-readdir'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
-import remarkMdx from 'remark-mdx'
-import vfileReporter from 'vfile-reporter'
 import { readSync } from 'to-vfile'
 import yaml from 'js-yaml'
 
@@ -106,14 +104,11 @@ export const prebuildMdx = async(site) => {
       const slug = fileToSlug(file, site, lang)
       if (slug) {
         const meta = await mdxMetaInfo(file)
-        if (meta?.data?.title && meta?.data?.title) {
+        if (meta.data?.title && meta.data?.title) {
           pages[lang][slug] = {
             title: meta.data.title,
-            order: meta.data.order
-              ? meta.data.order+meta.data.title
-              : meta.data.title,
             slug,
-            order: meta?.data?.order
+            order: meta.data.order
               ? `${meta.data.order}${meta.data.title}`
               : meta.data.title
           }

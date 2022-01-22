@@ -12,6 +12,8 @@ import avatar from '../templates/avatar'
 export const email = mailer
 export const log = logger
 
+export const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1)
+
 export const createUrl = (language, path) => {
   // Handle development mode
   if (config.api.indexOf('localhost') !== -1) return 'http://localhost:8000' + path

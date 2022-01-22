@@ -1,7 +1,6 @@
 import path from 'path'
 import fs from 'fs'
 import set from 'lodash.set'
-import get from 'lodash.get'
 
 // Some arbitrary future time
 const future = new Date('10-12-2026').getTime()
@@ -51,4 +50,5 @@ export const prebuildNavigation = (mdxPages, strapiPosts, site) => {
     `export default ${JSON.stringify(nav, null ,2)}`
   )
 
+  return true
 }

@@ -111,7 +111,7 @@ export default {
       max: 3,
       snap: smallsteps,
       ...pctBasedOn('waist'),
-      hidden: true
+      hidden: true,
     },
 
     // Advanced

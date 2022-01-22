@@ -22,21 +22,20 @@ const Header = ({ app, setSearch }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [show, setShow] = useState(true)
 
-  const handleScroll = () => {
-    const curScrollPos = (typeof window !== 'undefined') ? window.pageYOffset : 0
-    if (curScrollPos >= prevScrollPos) {
-      if (show && curScrollPos > 20) setShow(false)
-    }
-    else setShow(true)
-    setPrevScrollPos(curScrollPos)
-  }
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      const handleScroll = () => {
+        const curScrollPos = (typeof window !== 'undefined') ? window.pageYOffset : 0
+        if (curScrollPos >= prevScrollPos) {
+          if (show && curScrollPos > 20) setShow(false)
+        }
+        else setShow(true)
+        setPrevScrollPos(curScrollPos)
+      }
       window.addEventListener('scroll', handleScroll)
       return () => window.removeEventListener('scroll', handleScroll)
     }
-  }, [prevScrollPos, show, handleScroll])
+  }, [prevScrollPos, show])
 
 
   return (

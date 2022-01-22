@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
@@ -5,12 +6,12 @@ import Link from 'next/link'
 import Logo from 'shared/components/logos/freesewing.js'
 import PrimaryNavigation from 'shared/components/navigation/primary'
 import get from 'lodash.get'
+import Right from 'shared/components/icons/right.js'
+import Left from 'shared/components/icons/left.js'
 // Site components
 import Header from 'site/components/header'
 import Footer from 'site/components/footer'
 import Search from 'site/components/search'
-
-const iconSize= 48
 
 const PageTitle = ({ app, slug, title }) => {
   if (title) return <h1>{title}</h1>
@@ -39,7 +40,7 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
         </Link>
       </li>
       {crumbs.map(crumb => (
-        <>
+        <React.Fragment key={crumb[1]}>
           <li className="text-base-content">&raquo;</li>
           <li>
             {crumb[2]
@@ -53,15 +54,40 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
               : <span className="text-base-content">{crumb[0]}</span>
             }
           </li>
-        </>
+        </React.Fragment>
       ))}
     </ul>
   )
 }
 
+const asideClasses = `
+  fixed top-0 right-0
+  pt-28
+  sm:pt-8 sm:mt-16
+  pb-4 px-2
+  sm:relative sm:transform-none
+  h-screen w-screen
+  bg-base-100
+  sm:bg-base-50
+  sm:flex
+  sm:sticky
+  overflow-y-scroll
+  z-20
+  bg-base-100 text-base-content
+  sm:bg-neutral sm:bg-opacity-95 sm:text-neutral-content
+  transition-all `
 
-const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
 
+const DefaultLayout = ({
+  app,
+  title=false,
+  children=[],
+  search,
+  setSearch,
+  noSearch=false,
+  workbench=false,
+  AltMenu=null,
+}) => {
   const startNavigation = () => {
     app.startLoading()
     // Force close of menu on mobile if it is open
@@ -71,12 +97,11 @@ const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
   }
 
   const router = useRouter()
-  router?.events?.on('routeChangeStart', startNavigation)
-  router?.events?.on('routeChangeComplete', () => app.stopLoading())
+  router.events?.on('routeChangeStart', startNavigation)
+  router.events?.on('routeChangeComplete', () => app.stopLoading())
   const slug = router.asPath.slice(1)
-  const [leftNav, setLeftNav] = useState(false)
-
-  const toggleLeftNav = () => setLeftNav(!leftNav)
+  const [collapsePrimaryNav, setCollapsePrimaryNav] = useState(workbench || false)
+  const [collapseAltMenu, setCollapseAltMenu] = useState(false)
 
   return (
     <div className={`
@@ -88,35 +113,41 @@ const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
       <main className={`
         grow flex flex-row
         gap-2
-        lg:gap-8
-        xl:gap-16
+        ${!workbench ? 'lg:gap-8 xl:gap-16' : ''}
       `}>
         <aside className={`
-          fixed top-0 right-0
+          ${asideClasses}
           ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
-          pt-28
-          sm:pt-8 sm:mt-16
-          pb-4 px-2
-          sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32
-          sm:relative sm:transform-none
-          h-screen w-screen
-          bg-base-100
-          sm:bg-base-50
-          sm:max-w-[38.2%]
-          sm:flex sm:flex-row-reverse
-          sm:sticky
-          overflow-y-scroll
-          z-20
-          bg-base-100 text-base-content
-          sm:bg-neutral sm:bg-opacity-95 sm:text-neutral-content
+          sm:flex-row-reverse
+          ${workbench && collapsePrimaryNav
+            ? 'sm:px-0 sm:w-16'
+            : 'sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32 sm:w-[38.2%]'
+          }
         `}>
+          {workbench && (
+            <div className={`hidden sm:flex`}>
+              <button
+                className="text-secondary-focus h-full px-2 pl-4 hover:animate-pulse"
+                onClick={() => setCollapsePrimaryNav(!collapsePrimaryNav)}
+              >
+                {collapsePrimaryNav
+                  ? <><Right /><Right /><Right /></>
+                  : <><Left /><Left /><Left /></>
+                }
+              </button>
+            </div>
+          )}
           <PrimaryNavigation app={app} active={slug}/>
         </aside>
         <section className={`
-          max-w-61.8% p-4 pt-24 sm:pt-28 w-full
-          sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32
+          p-4 pt-24 sm:pt-28 w-full
+          sm:px-1 md:px-4 lg:px-8
+          ${workbench && collapsePrimaryNav
+            ? ''
+            : 'max-w-61.8% xl:px-16 2xl:px-32'
+          }
         `}>
-          <div className="max-w-5xl">
+          <div className={workbench ? '' : "max-w-5xl"}>
             {title && (
               <>
                 <Breadcrumbs app={app} slug={slug} title={title} />
@@ -126,8 +157,32 @@ const DefaultLayout = ({ app, title=false, children=[], search, setSearch}) => {
             {children}
           </div>
         </section>
+        {workbench && AltMenu && (
+          <aside className={`
+            ${asideClasses}
+            ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
+            sm:flex-row
+            ${workbench && collapseAltMenu
+              ? 'sm:px-0 sm:w-16'
+              : 'sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32 sm:w-[38.2%]'
+            }
+          `}>
+            <div className={`hidden sm:flex`}>
+              <button
+                className="text-secondary-focus h-full px-2 pr-4 hover:animate-pulse"
+                onClick={() => setCollapseAltMenu(!collapseAltMenu)}
+              >
+                {collapseAltMenu
+                  ? <><Left /><Left /><Left /></>
+                  : <><Right /><Right /><Right /></>
+                }
+              </button>
+            </div>
+            <AltMenu />
+          </aside>
+        )}
       </main>
-      {search && (
+      {!noSearch && search && (
         <>
         <div className={`
           fixed w-full max-h-screen bg-base-100 top-0 z-30 pt-0 pb-16 px-8

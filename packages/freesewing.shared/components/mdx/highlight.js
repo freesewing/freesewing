@@ -8,8 +8,9 @@ const names = {
 
 const Highlight = (props) => {
 
-  const { children=[], className='language-js' } = props
-  const language = props.children.props.className.split('-').pop()
+  const language = props.children
+    ? props.children.props.className.split('-').pop()
+    : 'txt'
 
   return (
     <div className="hljs my-4">
@@ -21,10 +22,10 @@ const Highlight = (props) => {
       `}>
         <span>&nbsp;</span>
         <span>{names[language] ? names[language] : language}</span>
-        <CopyToClipboard content={children} />
+        <CopyToClipboard content={props.children} />
       </div>
       <pre className={`language-${language} hljs text-base lg:text-lg whitespace-pre-wrap break-words`}>
-        {children}
+        {props.children}
       </pre>
     </div>
   )

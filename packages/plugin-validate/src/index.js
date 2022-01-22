@@ -1,5 +1,4 @@
 import { version, name } from '../package.json'
-import validate from './validate'
 
 const err = 'FIXME: plugin-validate is not updated for recent core versions'
 export default {

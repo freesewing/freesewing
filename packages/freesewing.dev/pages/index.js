@@ -1,6 +1,5 @@
 import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import Logo from 'shared/components/logos/freesewing.js'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import Link from 'next/link'

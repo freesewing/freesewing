@@ -1,10 +1,7 @@
-import get from 'lodash.get'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
-import Logo from 'shared/components/logos/freesewing.js'
 import ThemePicker from 'shared/components/theme-picker.js'
 import RssIcon from 'shared/components/icons/rss.js'
-import ThemeIcon from 'shared/components/icons/theme.js'
 import TutorialIcon from 'shared/components/icons/tutorial.js'
 import GuideIcon from 'shared/components/icons/guide.js'
 import HelpIcon from 'shared/components/icons/help.js'
@@ -33,7 +30,8 @@ const icons = {
 const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
 
 // Component for the collapse toggle
-const Chevron = ({w=8, m=2}) => <svg className={`
+// Exported for re-use
+export const Chevron = ({w=8, m=2}) => <svg className={`
     fill-current opacity-75 w-${w} h-${w} mr-${m}
     details-toggle hover:text-secondary sm:hover:text-secondary-focus
   `}
@@ -46,7 +44,8 @@ const currentChildren = current => Object.values(order(current))
   .filter(entry => (typeof entry === 'object'))
 
 // Shared classes for links
-const linkClasses = `text-lg lg:text-xl
+// Exported for re-use
+export const linkClasses = `text-lg lg:text-xl
   py-1 hover:cursor-pointer
   text-base-content sm:text-neutral-content
   hover:text-secondary
@@ -102,7 +101,7 @@ const SubLevel = ({ nodes={}, active }) => (
                     {child.__slug === active ? <>&bull;</> : <>&deg;</>}
                   </span>
                   <span className={child.__slug === active ? 'font-bold' : ''}>
-                    { child?.__linktitle || child.__title }
+                    { child.__linktitle || child.__title }
                   </span>
                 </a>
               </Link>

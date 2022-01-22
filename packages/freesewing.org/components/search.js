@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -63,7 +63,7 @@ const Hit = props => (
     <Link href={props.hit.page}>
       <a href={props.hit.page} className="flex flex-row justify-between gap-2">
         <span className="text-base sm:text-xl font-bold leading-5">
-          {props.hit?._highlightResult?.title
+          {props.hit._highlightResult?.title
             ? <CustomHighlight hit={props.hit} attribute='title' />
             : props.hit.title
           }
@@ -71,7 +71,7 @@ const Hit = props => (
         <span className="text-xs pt-0.5 sm:text-base sm:pt-1 font-bold uppercase">{props.hit.page.split('/')[1]}</span>
       </a>
     </Link>
-    {props.hit?._snippetResult?.body && (
+    {props.hit._snippetResult?.body && (
       <Link href={props.hit.page}>
         <a href={props.hit.page} className="text-sm sm:text-base block py-1">
           <CustomHighlight hit={props.hit} attribute='body' snippet />
@@ -89,14 +89,13 @@ const Hit = props => (
 )
 
 // We use this for trapping ctrl-c
-let prev
 const handleInputKeydown = (evt, setSearch, setActive, active, router) => {
   if (evt.key === 'Escape') setSearch(false)
   if (evt.key === 'ArrowDown') setActive(act => act + 1)
   if (evt.key === 'ArrowUp') setActive(act => act - 1)
   if (evt.key === 'Enter') {
     // Trigger navigation
-    if (evt?.target?.dataset?.links) {
+    if (evt.target?.dataset?.links) {
       router.push(JSON.parse(evt.target.dataset.links)[active])
       setSearch(false)
     }
@@ -112,7 +111,7 @@ const SearchBox = props => {
   })
   if (input.current && props.active < 0) input.current.focus()
 
-  const { currentRefinement, isSearchStalled, refine, setSearch, setActive } = props
+  const { currentRefinement, refine, setSearch, setActive } = props
 
   return (
     <div className="py-8">

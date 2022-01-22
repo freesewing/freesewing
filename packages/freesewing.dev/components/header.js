@@ -22,21 +22,20 @@ const Header = ({ app, setSearch }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [show, setShow] = useState(true)
 
-  const handleScroll = () => {
-    const curScrollPos = (typeof window !== 'undefined') ? window.pageYOffset : 0
-    if (curScrollPos >= prevScrollPos) {
-      if (show && curScrollPos > 20) setShow(false)
-    }
-    else setShow(true)
-    setPrevScrollPos(curScrollPos)
-  }
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      const handleScroll = () => {
+        const curScrollPos = (typeof window !== 'undefined') ? window.pageYOffset : 0
+        if (curScrollPos >= prevScrollPos) {
+          if (show && curScrollPos > 20) setShow(false)
+        }
+        else setShow(true)
+        setPrevScrollPos(curScrollPos)
+      }
       window.addEventListener('scroll', handleScroll)
       return () => window.removeEventListener('scroll', handleScroll)
     }
-  }, [prevScrollPos, show, handleScroll])
+  }, [prevScrollPos, show])
 
 
   return (
@@ -61,8 +60,23 @@ const Header = ({ app, setSearch }) => {
               `}
               onClick={app.togglePrimaryMenu}>
                 {app.primaryMenu
-                  ? <><CloseIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Left />swipe</span></>
-                  : <><MenuIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Right />swipe</span></>
+                  ? (
+                    <>
+                      <CloseIcon />
+                      <span className="opacity-50 pl-2 flex flex-row items-center gap-1">
+                        <Left />
+                        swipe
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <MenuIcon />
+                      <span className="opacity-50 pl-2 flex flex-row items-center gap-1">
+                        <Right />
+                        swipe
+                      </span>
+                    </>
+                  )
                 }
             </button>
             <div className="flex flex-row gap-2 sm:hidden">
@@ -101,7 +115,10 @@ const Header = ({ app, setSearch }) => {
             </div>
           </div>
         </div>
-        <div className={`theme-gradient h-1 w-full z-10 relative -mb-1 ${app.loading ? 'loading' : ''}`}></div>
+        <div className={`
+          theme-gradient h-1 w-full z-10 relative -mb-1
+          ${app.loading ? 'loading' : ''}
+        `}></div>
       </header>
   )
 }

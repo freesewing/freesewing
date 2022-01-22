@@ -1,5 +1,5 @@
 import ReactDOMServer from 'react-dom/server'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import CopyIcon from 'shared/components/icons/copy.js'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 

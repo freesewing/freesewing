@@ -6,7 +6,7 @@ Null bedeutet, dass die Backline auf der Ebene des Unterbruchs horizontal bleibt
 
 Wenn du den Rückenaufstieg erhöhst, wird dein Korsett auf der Rückseite nach oben steigen.
 
-> As this is an underbust corset, the back rise is a style choice and won't affect the fit
+> Da es sich um ein unterbrochenes Korsett handelt, ist der Rückenaufstieg eine Wahl und beeinflussen die Passform nicht
 
 
 ## Effekt dieser Option auf das Schnittmuster

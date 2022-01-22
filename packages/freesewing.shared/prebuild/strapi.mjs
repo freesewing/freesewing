@@ -91,7 +91,7 @@ export const prebuildStrapi = async(site) => {
           date: post.date,
           slug: post.slug,
           author: post.author,
-          img: post?.image?.formats?.large?.url || 'https://posts.freesewing.org/uploads/logo_8401e711e4.png'
+          img: post.image?.formats?.large?.url || 'https://posts.freesewing.org/uploads/logo_8401e711e4.png'
         })), null, 2)}`
       )
       for (const [slug, post] of Object.entries(posts[lang][type])) {

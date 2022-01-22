@@ -1,5 +1,5 @@
 const draftI18n = (part) => {
-  const { points, Point, paths, Path, options, macro, settings } = part.shorthand()
+  const { points, Point, paths, Path, options } = part.shorthand()
 
   if (['i18n', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(0, 0).attr('data-text', 'cutTwoStripsToFinishTheArmholes')

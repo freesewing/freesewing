@@ -6,7 +6,7 @@ Percentage options are the bread and butter of freesewing.
 Almost all your options will most likely be percentage options as
 they ensure that your pattern will scale regardless of size.
 
-Percentage come in two varieties:
+Percentage options come in two varieties:
 
 - Plain percentage options
 - Snapped percentage options
@@ -18,24 +18,27 @@ For both varieties, the following is good to keep in mind:
 ###### Percentage options will be divided by 100 when loaded
 
 You specify percentages in your config file. For example, `50` means 50%.
-When your configuration is loaded, those percentages will by divided by 100. 
+When your configuration is loaded, those percentages will be divided by 100. 
 
 So a percentage of `50` in your config file will be `0.5` when you read out that option in your pattern.
 
 ###### Percentage options are not limited to the range 0-100
 
-The minimum and maximum (and default) values are not restricted to the range from `0%` to `100%`.
+The minimum and maximum (and default) percentages are not restricted to the range from `0%` to `100%`.
 A percentage option that spans from `-25%` to `135%` is just as valid.
 
 </Note>
 
 ## Plain percentage options
 
+A plain percentage option allows a user to specify a relative value (a percentage) which is
+then used to produce an absolute value in mm based on one or more measurements.
+
 A plain percentage option should be an object with these properties:
 
- - `pct` : The percentage
- - `min` : The minimum that's allowed
- - `max` : The maximum that's allowed
+ - `pct` : The default percentage
+ - `min` : The minimum percentage that's allowed
+ - `max` : The maximum percentage that's allowed
 
 ```js
 options: {
@@ -51,9 +54,9 @@ options: {
 
 A snapped percentage option should be an object with these properties:
 
- - `pct` : The percentage
- - `min` : The minimum that's allowed
- - `max` : The maximum that's allowed
+ - `pct` : The default percentage
+ - `min` : The minimum percentage that's allowed
+ - `max` : The maximum percentage that's allowed
  - `snap`: See below
  - `toAbs`: See below
 
@@ -71,14 +74,14 @@ options: {
 
 ### How snapped percentage options work
 
-In a so-called _snapped percentage option_ the value of the option is snapped to
-absolute values (think millimeter). To make that happen, the following happens
-under the hood:
+In a so-called _snapped percentage option_ the absolute (i.e. not relative) value
+of the option is snapped to discreet values ("snap points"). To make that happen,
+the following happens under the hood:
 
-- Use `toAbs()` to calculate the absolute value of the option
+- Use `toAbs()` to calculate an absolute value for the option
 - See whether that approaches one of the absolute values provided by `snap` 
-- If so, set the absolute option to the snapped value
-- If not, set the absolute option to whatever the absolute option is
+- If so, use the snapped value
+- If not, use the absolute value unchanged
 
 If you're head's spinning, here's an image that will hopefully clarify things a bit:
 
@@ -87,30 +90,31 @@ If you're head's spinning, here's an image that will hopefully clarify things a 
 The gradient box represents the range of any given measurement, 
 from dolls all the way on the left, to giants all the way on the right.
 The sort of middle green-colored region is what the designer had in mind 
-when designing the pattern, and they have setup snap points for values 
+when designing the pattern, and they have set up snap points for values 
 that they feel make sense.
 
 The region of influence of any given snap point will extend 50% towards its 
-neighbor, on both sides (indicated by the dashed lines).This means that the 
+neighbor on both sides (indicated by the dashed lines).This means that the 
 region of snap points is continuous, once you're in, you're going to be 
-snapped to a given absolute value.
+snapped to one of the snap points.
 
 However, when you venture out into the area where the designer did not 
-configure any snap points, your input will be used as-is.
+configure any snap points, the absolute value will be used as-is, without
+snapping, just as it would in a normal percentage option.
 
-This system results in a best of both words:
+This system results in the best of both worlds:
 
 - Things like elastic widths and so on can be configured to be fixed values, 
   of common elastic widths for example
-- The default value will still scale up and down, but merely snap to the closest 
-  fixed value
+- The absolute value will still scale up and down, but will snap to the closest 
+  fixed value when appropriate.
 - When the input measurements go somewhere the designer did not anticipate, 
   the option will just behave as a regular `pct` option
 
 
 ### What does it take?
 
-To make all this work, we need to clarify we want to happen.
+To make all this work, we need to clarify what we want to happen.
 Specifically, we need to:
 
 - Configure the `snap` property to define what values to snap to
@@ -143,14 +147,14 @@ The absolute value of this option will be set to a multiple of `7`
 
 In a case like this, the value will **always** be snapped, 
 because the snap points will be distributed equally across the entire range 
-of all possible input.
+of all possible inputs.
 
 </Note>
 
 ##### snap is an array of numbers
 
-This will snap the **absolute value** of the option to any of the numbers in the 
-array/list. 
+This will snap the **absolute value** of the option to one of the numbers in the
+array/list if it is in the region of influence.
 
 An example:
 
@@ -163,12 +167,13 @@ myOption: {
 }
 ```
 
-This will snap the **absolute value** of the option to the number of the list, 
-if it approaches it.
+In this case, if the absolute value returned by `toAbs` is in the region of influence (in
+this example between 4.5 and 69.5), the nearest snap point will be used. If instead it is
+outside the region of influence, it will be used unchanged.
 
 ##### snap is an object with `metric` and `imperial` properties that each hold an array of numbers
 
-This will work the same as an array numbers, but it allows you to supply a 
+This will work the same as an array of numbers, but it allows you to supply a 
 different array/list for users drawing metric, or imperial patterns. 
 
 An example config:
@@ -185,13 +190,14 @@ myOption: {
 }
 ```
 
-This will snap the **absolute value** of the option to the number of the list, 
-if it approaches it. 
-What list is used will depend on the value of [settings.units](/api/settings/units).
+In this case, the value of [settings.units](/api/settings/units) will determine which
+list of snap points to use. If the absolute value returned by `toAbs` is in the region of
+influence, the nearest snap point will be used. If instead it is outside the region of
+influence, it will be used unchanged.
 
 #### Pass a method to the `toAbs` property that will calculate the absolute value of the option
 
-Our snap configuration depends on the **absulute value** of the option.
+Our snap configuration depends on the **absolute value** of the option.
 But we only receive the percentage value as input. It's up to us to come up
 with the logic to turn that into its absolute value.
 
@@ -203,8 +209,8 @@ function toAbs(pctValue, settings) {
   // return absolute value here
 }
 ```
-The first parameter is the value of the option provided by the user
-(as a percentage, so for example `0.5` for `50%`), 
+The first parameter is the percentage value provided by the user (for example
+`0.5` for `50%`),
 the second is the pattern's settings object which (among other things) 
 holds the measurements.
 
@@ -250,13 +256,13 @@ method that does the inverse: return the `pct` value required to achieve a certa
 absolute value.
 
 This ability to set a percentage option to whatever is required for a given absolute
-value in on our roadmap, so by using this method you are future-proving your code.
+value is on our roadmap, so by using this method you are future-proofing your code.
 
 </Note>
 
 ### How to use this in your pattern code
 
-This is all good and well, but how do you use this?
+This is all well and good, but how do you use this?
 
 Well, just like you can get the `options` object from our shorthand call, 
 you can now get the `absoluteOptions` object that holds absolute values 

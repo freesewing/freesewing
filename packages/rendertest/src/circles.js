@@ -1,10 +1,9 @@
 export default function (part, demo = false) {
-  const { Point, Path, points, paths, store, options } = part.shorthand()
+  const { Point, points, store, options } = part.shorthand()
 
   if (options.only === 'circles' || demo) {
     let y = store.get('y')
     const w = store.get('w')
-    let colors = store.get('colors')
 
     y += w / 8 + 5
     for (let i = 1; i < 6; i++) {

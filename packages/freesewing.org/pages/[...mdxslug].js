@@ -33,7 +33,7 @@ const MdxPage = props => {
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content={`https://freesewing.org/${props.page.slug}`} key='url' />
         <meta property="og:locale" content="en_US" key='locale' />
-        <meta property="og:site_name" content="freesewing.org key='site' />
+        <meta property="og:site_name" content="freesewing.org" key='site' />
       </Head>
       <MdxWrapper mdx={props.mdx} app={app}/>
       <HelpUs mdx slug={`/${props.page.slug}`} />

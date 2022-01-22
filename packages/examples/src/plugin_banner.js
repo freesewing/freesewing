@@ -1,5 +1,5 @@
 const draftPluginBanner = (part) => {
-  const { points, Point, paths, Path, macro, options } = part.shorthand()
+  const { points, Point, paths, Path, macro } = part.shorthand()
 
   points.from = new Point(0, 0)
   points.to = new Point(320, 0)

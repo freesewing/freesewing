@@ -44,7 +44,6 @@ const Pattern = props => {
     children=null,
     options = {},
     measurements = { head: 390},
-    settings,
     part = '',
     sample,
     svgOnly=false,
@@ -85,10 +84,10 @@ const Pattern = props => {
   }
 
   /* Set up settings object */
-  settings = {
+  const settings = {
     options: { ...options },
     measurements: { ...measurements },
-    ...settings
+    ...props.settings
   }
   // Support for options_ prefix
   for (const [key, val] of Object.entries(props)) {

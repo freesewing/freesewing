@@ -8,7 +8,7 @@ import snippets from './snippets.js'
 import macros from './macros.js'
 
 export default function (part) {
-  const { macro, store, options, Path, paths, Point } = part.shorthand()
+  const { store, options, Path, paths, Point } = part.shorthand()
 
   // Keep things in store
   store.set('y', 0)

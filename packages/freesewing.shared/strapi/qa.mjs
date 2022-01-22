@@ -1,9 +1,7 @@
 /*
  * This tries to fix as many Strapi things as possible
  */
-import axios from 'axios'
-import { languages as allLanguages, strapiHost } from '../config/freesewing.mjs'
-import {getPosts } from '../prebuild/strapi.mjs'
+import { languages as allLanguages } from '../config/freesewing.mjs'
 
 // What types of content to load
 const content = {
