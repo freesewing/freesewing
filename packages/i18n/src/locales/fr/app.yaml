@@ -3,7 +3,7 @@
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
 aboutFreesewing: À propos de Freesewing
-accessoryPatterns: Accessory Patterns
+accessoryPatterns: Patrons d'accessoires
 account: Mon Compte
 accountCreated: Compte créé
 actions: Actions
@@ -18,7 +18,7 @@ awesome: Incroyable
 back: Dos
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
 becomeAPatron: Devenir mécène
-blockPatterns: Block/Sloper Patterns
+blockPatterns: Patrons de base/Blocs
 blog: Blog
 browseBlogposts: Parcourir les articles du blog
 browsePatterns: Parcourir les patrons
@@ -86,7 +86,7 @@ filterPatterns: Filtrez les patrons
 forgotLoginInstructions: "Entrez votre nom d'utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>."
 freesewing: Freesewing
 freesewingOnGithub: Freesewing sur GitHub
-garmentPatterns: Garment Patterns
+garmentPatterns: Patrons de vêtements
 github: GitHub
 goAheadWeWillWait: Allez-y, nous attendrons.
 goodJob: Bon travail
@@ -208,7 +208,7 @@ updated: Mis à jour
 update: Mettre à jour
 userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
 users: Utilisateurs
-utilityPatterns: Utility Patterns
+utilityPatterns: Patrons utilitaires
 weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation
 weCouldNotValidateYourConfirmationCode: Nous n'avons pas pu valider votre code de confirmation
 weEncounteredAProblem: Nous avons rencontré un problème
