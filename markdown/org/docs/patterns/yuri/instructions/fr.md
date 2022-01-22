@@ -5,8 +5,8 @@ Ce patron peut être cousu avec ou avec une surjeteuse. Pour ***Finir*** les cou
 ##### Méthode de finition 1
 
 - Repasser les marges de couture ouvertes. 
-- Puis sur le bon côté, ***Edgestitch*** 3mm (1/8 pouce) de distance ou plus près des deux côtés de la couture accrochant les admissions de couture en dessous.
-- Sur le mauvais côté couper les limites de couture près du bord. 
+- Puis sur l'endroit, faier une ***surpiqûre nervure*** à 3mm (1/8 pouce) ou moins des deux côtés de la couture en cousant les marges de couture en dessous.
+- Sur le côté envers couper les marges de couture près du bord. 
 
 ##### Méthode de finition 2
 
