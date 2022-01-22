@@ -128,6 +128,7 @@ notesInfo: Dies sind deine Notizen. Du kannst hier alles schreiben, was du möch
 notes: Notizen
 ohNo: Oh nein!
 oneMoreThing: Und zum Schluss
+optionalMeasurements: Optional measurements
 options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
@@ -333,3 +334,8 @@ debug: Debug
 unsubscribe: Abmelden
 slogan-come: Komm für die Schnittmuster
 slogan-stay: Bleib für die Community
+lightTheme: Light Theme
+darkTheme: Dark Theme
+hax0rTheme: Hax0r Theme
+lgbtqTheme: LGBTQ Theme
+transTheme: Trans Theme
