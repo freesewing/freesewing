@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -6,7 +6,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import Layout from 'shared/components/layouts/default'
 
 /* This component should wrap all page content */
-const AppWrapper= props => {
+const PageWrapper= props => {
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: evt => (props.app.primaryMenu) ? props.app.setPrimaryMenu(false) : null,
@@ -15,7 +15,9 @@ const AppWrapper= props => {
   })
 
   const router = useRouter()
-  props.app.setSlug(router.asPath.slice(1))
+  const slug = router.asPath.slice(1)
+
+  useEffect(() => props.app.setSlug(slug), [slug])
 
   // Trigger search with Ctrl+k
   useHotkeys('ctrl+k', (evt) => {
@@ -29,6 +31,9 @@ const AppWrapper= props => {
     app: props.app,
     title: props.title,
     search, setSearch, toggleSearch: () => setSearch(!search),
+    noSearch: props.noSearch,
+    workbench: props.workbench,
+    AltMenu: props.AltMenu || null
   }
 
   return (
@@ -45,5 +50,5 @@ const AppWrapper= props => {
   )
 }
 
-export default AppWrapper
+export default PageWrapper
 

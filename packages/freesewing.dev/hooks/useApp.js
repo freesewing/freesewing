@@ -6,6 +6,8 @@ import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 import prebuildNavigation from 'site/prebuild/navigation.js'
 
 function useApp(full = true) {
+  // No translation for freesewing.dev
+  const language = 'en'
 
   // User color scheme preference
   const prefersDarkMode = (typeof window !== 'undefined' && typeof  window.matchMedia === 'function')
@@ -15,7 +17,6 @@ function useApp(full = true) {
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useLocalStorage('theme', prefersDarkMode ? 'dark' : 'light')
-  const [language, setLanguage] = useLocalStorage('language', 'en')
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
@@ -41,9 +42,9 @@ function useApp(full = true) {
   return {
     // Static vars
     site: 'dev',
+    language,
 
     // State
-    language,
     loading,
     navigation,
     primaryMenu,
@@ -51,7 +52,6 @@ function useApp(full = true) {
     theme,
 
     // State setters
-    setLanguage,
     setLoading,
     setNavigation,
     setPrimaryMenu,
@@ -63,6 +63,10 @@ function useApp(full = true) {
 
     // State handlers
     togglePrimaryMenu,
+
+    // Dummy translation method
+    t: s => s,
+    i18n: false,
   }
 }
 

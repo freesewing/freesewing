@@ -30,8 +30,7 @@ const icons = {
 const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
 
 // Component for the collapse toggle
-// Exported for re-use
-export const Chevron = ({w=8, m=2}) => <svg className={`
+const Chevron = ({w=8, m=2}) => <svg className={`
     fill-current opacity-75 w-${w} h-${w} mr-${m}
     details-toggle hover:text-secondary sm:hover:text-secondary-focus
   `}
@@ -44,8 +43,7 @@ const currentChildren = current => Object.values(order(current))
   .filter(entry => (typeof entry === 'object'))
 
 // Shared classes for links
-// Exported for re-use
-export const linkClasses = `text-lg lg:text-xl
+const linkClasses = `text-lg lg:text-xl
   py-1 hover:cursor-pointer
   text-base-content sm:text-neutral-content
   hover:text-secondary
