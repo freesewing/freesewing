@@ -30,8 +30,8 @@ backArmholeSlant:
   title: Inclinaison d'emmanchure dos
   description: Modifie légèrement l'inclinaison de courbe de l'emmanchure autour de son point de pivot
 frontArmholeCurvature:
-  title: Front armhole curvature
-  description: Controls how deep the armhole is scooped out at the front bottom
+  title: Coube de l'emmanchure avant
+  description: Contrôle la profondeur du bas de la courbure d'emmanchure sur le devant
 backArmholeCurvature:
   title: Courbure de l'emmanchure arrière
   description: Contrôle la profondeur du bas de la courbure d'emmanchure dans le dos
