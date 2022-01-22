@@ -127,6 +127,7 @@ notesInfo: These are your notes. You can write anything you want here
 notes: Notes
 ohNo: Oh no!
 oneMoreThing: One more thing
+optionalMeasurements: Optional measurements
 options: Options
 orPayPerYear: Or pay per year
 other: Other
@@ -332,3 +333,8 @@ debug: Debug
 unsubscribe: Unsubscribe
 slogan-come: Come for the sewing patterns
 slogan-stay: Stay for the community
+lightTheme: Light Theme
+darkTheme: Dark Theme
+hax0rTheme: Hax0r Theme
+lgbtqTheme: LGBTQ Theme
+transTheme: Trans Theme
