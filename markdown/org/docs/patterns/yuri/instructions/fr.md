@@ -1,10 +1,10 @@
 <Note>
 
-Ce patron peut être cousu avec ou avec une surjeteuse. Pour ***Finir*** coutures sans overlocker/serger, vous pouvez soit utiliser la méthode que vous préférez, soit l'une des méthodes ci-dessous :
+Ce patron peut être cousu avec ou avec une surjeteuse. Pour ***Finir*** les coutures sans surjeteuse, vous pouvez soit utiliser la méthode que vous préférez, soit l'une des méthodes ci-dessous :
 
 ##### Méthode de finition 1
 
-- Appuyez sur ouvrir les autorisations de couture. 
+- Repasser les marges de couture ouvertes. 
 - Puis sur le bon côté, ***Edgestitch*** 3mm (1/8 pouce) de distance ou plus près des deux côtés de la couture accrochant les admissions de couture en dessous.
 - Sur le mauvais côté couper les limites de couture près du bord. 
 
