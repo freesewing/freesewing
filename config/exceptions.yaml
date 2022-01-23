@@ -10,18 +10,21 @@ noNamespace:
 customChangelog:
   - backend
   - freesewing.dev
+  - freesewing.lab
   - freesewing.shared
   - freesewing.org
   - svgtopdf
 customPackageJson:
   - backend
   - freesewing.dev
+  - freesewing.lab
   - freesewing.shared
   - freesewing.org
   - svgtopdf
 customReadme:
   - backend
   - freesewing.dev
+  - freesewing.lab
   - freesewing.shared
   - freesewing.org
   - svgtopdf
@@ -31,6 +34,7 @@ customRollup:
   - core
   - css-theme
   - freesewing.dev
+  - freesewing.lab
   - freesewing.shared
   - freesewing.org
   - gatsby-remark-jargon
