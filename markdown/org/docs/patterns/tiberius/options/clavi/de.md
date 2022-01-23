@@ -1,5 +1,5 @@
 
-Whether or not to include guides for clavi
+Legt fest, ob Hilfslinien für clavi enthalten sind oder nicht
 
 ## Effekt dieser Option auf das Schnittmuster
 
