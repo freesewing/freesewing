@@ -1,5 +1,5 @@
 ---
-title: Frente de polvo
+title: Frente de pecho
 ---
 
 El **frente de polvo** es la parte frontal de tu circunstancia del cofre.
