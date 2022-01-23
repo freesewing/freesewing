@@ -1,11 +1,15 @@
 # Change log for: @freesewing/plugintest
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.0 (2022-01-23)
 
 ### Added
 
  - Added the plugintest pattern which is used for testing plugins
+
+### Changed
+
+ - Switched to default import for version from package.json
 
 
 This is the **initial release**, and the start of this change log.

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/penelope
 
 
+## 2.20.0 (2022-01-23)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.19.5 (2021-11-13)
 
 ### Changed

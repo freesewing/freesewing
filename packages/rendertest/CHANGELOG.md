@@ -1,11 +1,12 @@
 # Change log for: @freesewing/rendertest
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Restructured the pattern to allow inclusion of individual parts in Example component
+ - Switched to default import for version from package.json
 
 ## 2.19.6 (2021-12-29)
 

@@ -1,13 +1,13 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/sven"
-  title="@freesewing/sven on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/sven.svg"
-  alt="@freesewing/sven on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/freesewing.lab"
+  title="@freesewing/freesewing.lab on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/freesewing.lab.svg"
+  alt="@freesewing/freesewing.lab on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/sven.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/freesewing.lab.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -15,10 +15,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Asven"
-  title="Open issues tagged pkg:sven"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:sven.svg?label=Issues"
-  alt="Open issues tagged pkg:sven"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Afreesewing.lab"
+  title="Open issues tagged pkg:freesewing.lab"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:freesewing.lab.svg?label=Issues"
+  alt="Open issues tagged pkg:freesewing.lab"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
@@ -46,9 +46,9 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/sven
+# @freesewing/freesewing.lab
 
-A FreeSewing pattern for a straightforward sweater
+FreeSewing website to test various patterns
 
 
 
@@ -57,7 +57,7 @@ A FreeSewing pattern for a straightforward sweater
 This repository is our *monorepo* 
 holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
 
-This folder holds: @freesewing/sven
+This folder holds: @freesewing/freesewing.lab
 
 ## About FreeSewing 💀
 

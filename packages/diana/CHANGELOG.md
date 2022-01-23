@@ -1,11 +1,12 @@
 # Change log for: @freesewing/diana
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Expose the `cuffEase` option to the user via option groups
+ - Switched to default import for version from package.json
 
 ## 2.17.0 (2021-07-01)
 

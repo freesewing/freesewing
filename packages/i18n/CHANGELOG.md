@@ -1,7 +1,7 @@
 # Change log for: @freesewing/i18n
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.0 (2022-01-23)
 
 ### Fixed
 

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/yuri
 
 
+## 2.20.0 (2022-01-23)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.19.8 (2022-01-08)
 
 ### Fixed

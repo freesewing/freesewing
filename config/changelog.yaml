@@ -1,4 +1,5 @@
-unreleased:
+2.20.0:
+  date: 2022-01-23
 
   Added:
     core:
@@ -23,17 +24,68 @@ unreleased:
       - Added the plugintest pattern which is used for testing plugins
 
   Changed:
+    aaron:
+      - Switched to default import for version from package.json
+    albert:
+      - Switched to default import for version from package.json
     bee:
       - Re-structured option groups
       - Expose all options to the user that should be configurable
       - Hide/lock options that should be fixed (inherited from Bella)
+      - Switched to default import for version from package.json
     bella:
       - Expose the `fullChestEaseReduction` option to the user via option groups
       - Expose the `frontArmholeCurvature` option to the user via option groups
+      - Switched to default import for version from package.json
+    benjamin:
+      - Switched to default import for version from package.json
+    bent:
+      - Switched to default import for version from package.json
+    breanna:
+      - Switched to default import for version from package.json
+    brian:
+      - Switched to default import for version from package.json
+    bruce:
+      - Switched to default import for version from package.json
+    carlita:
+      - Switched to default import for version from package.json
+    carlton:
+      - Switched to default import for version from package.json
+    cathrin:
+      - Switched to default import for version from package.json
+    charlie:
+      - Expose the `frontPocketFacing` option to the user via option groups
+      - Switched to default import for version from package.json
+    cornelius:
+      - Switched to default import for version from package.json
     diana:
       - Expose the `cuffEase` option to the user via option groups
+      - Switched to default import for version from package.json
+    examples:
+      - Switched to default import for version from package.json
+    florence:
+      - Switched to default import for version from package.json
+    florent:
+      - Switched to default import for version from package.json
+    holmes:
+      - Switched to default import for version from package.json
+    hortensia:
+      - Switched to default import for version from package.json
+    huey:
+      - Switched to default import for version from package.json
+    hugo:
+      - Switched to default import for version from package.json
+    jaeger:
+      - Switched to default import for version from package.json
+    legend:
+      - Switched to default import for version from package.json
+    lunetius:
+      - Switched to default import for version from package.json
     paco:
       - Hide the `frontPocketFlapSize` from the user
+      - Switched to default import for version from package.json
+    penelope:
+      - Switched to default import for version from package.json
     plugin-bundle:
       - plugin-banner is now part of plugin-bundle
       - plugin-bartack is now part of plugin-bundle
@@ -45,13 +97,48 @@ unreleased:
     plugin-gore:
       - The `goreNumber` property of the gore macro has been renamed to `gores`
       - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
+    plugintest:
+      - Switched to default import for version from package.json
     rendertest:
       - Restructured the pattern to allow inclusion of individual parts in Example component
+      - Switched to default import for version from package.json
+    sandy:
+      - Switched to default import for version from package.json
+    shin:
+      - Switched to default import for version from package.json
+    simon:
+      - Switched to default import for version from package.json
+    simone:
+      - Switched to default import for version from package.json
     sven:
       - Expose the `hipsEase` option to the user via option groups
       - Lock the `waistEase` option to a static value
+      - Switched to default import for version from package.json
+    tamiko:
+      - Switched to default import for version from package.json
     teagan:
       - Lock the `frontArmholeDeeper` option to a static value
+      - Switched to default import for version from package.json
+    theo:
+      - Switched to default import for version from package.json
+    tiberius:
+      - Switched to default import for version from package.json
+    titan:
+      - Switched to default import for version from package.json
+    trayvon:
+      - Switched to default import for version from package.json
+    tutorial:
+      - Switched to default import for version from package.json
+    ursula:
+      - Switched to default import for version from package.json
+    wahid:
+      - Switched to default import for version from package.json
+    walburga:
+      - Switched to default import for version from package.json
+    waralee:
+      - Switched to default import for version from package.json
+    yuri:
+      - Switched to default import for version from package.json
 
   Fixed:
     components:

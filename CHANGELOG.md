@@ -1,7 +1,19 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.0 (2022-01-23)
+
+### aaron
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### albert
+
+#### Changed
+
+ - Switched to default import for version from package.json
 
 ### bee
 
@@ -10,6 +22,7 @@
  - Re-structured option groups
  - Expose all options to the user that should be configurable
  - Hide/lock options that should be fixed (inherited from Bella)
+ - Switched to default import for version from package.json
 
 ### bella
 
@@ -17,6 +30,62 @@
 
  - Expose the `fullChestEaseReduction` option to the user via option groups
  - Expose the `frontArmholeCurvature` option to the user via option groups
+ - Switched to default import for version from package.json
+
+### benjamin
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### bent
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### breanna
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### brian
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### bruce
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### carlita
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### carlton
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### cathrin
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### charlie
+
+#### Changed
+
+ - Expose the `frontPocketFacing` option to the user via option groups
+ - Switched to default import for version from package.json
 
 ### components
 
@@ -34,6 +103,12 @@
 
  - Added support for `settings.scale`
 
+### cornelius
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
 ### css-theme
 
 #### Added
@@ -46,6 +121,7 @@
 #### Changed
 
  - Expose the `cuffEase` option to the user via option groups
+ - Switched to default import for version from package.json
 
 ### examples
 
@@ -53,17 +129,82 @@
 
  - Added plugin_gore example
 
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### florence
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### florent
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### holmes
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### hortensia
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### huey
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### hugo
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
 ### i18n
 
 #### Fixed
 
  - Fixed issue that was causing plugin translations to always be in English
 
+### jaeger
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### legend
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### lunetius
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
 ### paco
 
 #### Changed
 
  - Hide the `frontPocketFlapSize` from the user
+ - Switched to default import for version from package.json
+
+### penelope
+
+#### Changed
+
+ - Switched to default import for version from package.json
 
 ### plugin-banner
 
@@ -139,11 +280,40 @@
 
  - Added the plugintest pattern which is used for testing plugins
 
+#### Changed
+
+ - Switched to default import for version from package.json
+
 ### rendertest
 
 #### Changed
 
  - Restructured the pattern to allow inclusion of individual parts in Example component
+ - Switched to default import for version from package.json
+
+### sandy
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### shin
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### simon
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### simone
+
+#### Changed
+
+ - Switched to default import for version from package.json
 
 ### sven
 
@@ -151,12 +321,80 @@
 
  - Expose the `hipsEase` option to the user via option groups
  - Lock the `waistEase` option to a static value
+ - Switched to default import for version from package.json
+
+### tamiko
+
+#### Changed
+
+ - Switched to default import for version from package.json
 
 ### teagan
 
 #### Changed
 
  - Lock the `frontArmholeDeeper` option to a static value
+ - Switched to default import for version from package.json
+
+### theo
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### tiberius
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### titan
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### trayvon
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### tutorial
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### ursula
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### wahid
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### walburga
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### waralee
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### yuri
+
+#### Changed
+
+ - Switched to default import for version from package.json
 
 
 ## 2.19.9 (2022-01-09)
