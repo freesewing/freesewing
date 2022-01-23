@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Las longitudes anteriores son recomendaciones, así que siéntete libre de ir tan largo o corto como quieras con los vínculos.  
-If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](https://freesewing.org/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
@@ -225,7 +225,7 @@ A menos que esté haciendo las aletas de ojo de botón, no tiene que coser un bo
 
 <Note>
 
-Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. Por lo tanto, si no están seguros de la mirada a este punto, crear un botón rápido y colocarlo temporalmente para ver si esto es lo que falta. If it is attach it permanently. 
+Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently. 
 Mientras que un botón cubierto está cubierto puedes usar cualquier botón que desees, ¡siéntete libre de experimentar!
 
 </Note>
