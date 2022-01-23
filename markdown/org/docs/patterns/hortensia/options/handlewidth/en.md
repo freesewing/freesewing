@@ -1,9 +1,10 @@
-<Fixme>
+Controls the width of the handle.
 
-Complete documentation for Hortensia
+<Tip>
 
-</Fixme>
+Turn on paperless to see the width of the handle.
 
+</Tip>
 
 ## Effect of this option on the pattern
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_handlewidth_sample.svg "Effect of this option on the pattern")
