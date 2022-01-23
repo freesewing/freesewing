@@ -5,7 +5,7 @@ const { pctBasedOn } = freesewing
 
 export default {
   name: 'charlie',
-  version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'bottoms',
@@ -21,6 +21,7 @@ export default {
           'backPocketVerticalPlacement',
           'backPocketWidth',
           'backPocketDepth',
+          'backPocketFacing',
         ],
         frontPockets: [
           'frontPocketSlantDepth',
