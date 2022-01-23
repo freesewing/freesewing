@@ -62,7 +62,7 @@ Als je onzeker bent over de lengte van je stropdassen duurt 1 meter (39") en kni
 <Note>
 
 De lengtes hierboven zijn aanbevelingen, dus voel je vrij om zo lang of zo kort te gaan als je wilt met de banden.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](https://freesewing.org/docs/patterns/holmes/cutting/) for more info.  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
