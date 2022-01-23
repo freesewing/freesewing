@@ -1,15 +1,3 @@
-/*
- * This will create (SVG) images for all options of all patterns
- * To do that, it will load the configuration from:
- *
- * config/pattern-options.js
- *
- * Based on that, it will generate SVG images for each option and store them
- * in the relevant folder:
- *
- * markdown/org/docs/patterns/[pattern]/[option]/[pattern]_[option]_sample.svg
- *
- */
 const fs = require('fs')
 const path = require('path')
 const core = require('../packages/core/dist')
