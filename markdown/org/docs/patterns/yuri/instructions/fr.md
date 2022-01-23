@@ -5,7 +5,7 @@ Ce patron peut être cousu avec ou avec une surjeteuse. Pour ***Finir*** les cou
 ##### Méthode de finition 1
 
 - Repasser les marges de couture ouvertes. 
-- Puis sur l'endroit, faier une ***surpiqûre nervure*** à 3mm (1/8 pouce) ou moins des deux côtés de la couture en cousant les marges de couture en dessous.
+- Puis sur l'endroit, faire une ***surpiqûre nervure*** à 3mm (1/8 pouce) ou moins des deux côtés de la couture en cousant les marges de couture en dessous.
 - Sur le côté envers couper les marges de couture près du bord. 
 
 ##### Méthode de finition 2
@@ -76,21 +76,21 @@ Suivez cette étape deux fois, une fois pour la capuche extérieure et une fois 
 - Endroit contre endroit, coudre le bord long du centre de la capuche vers le bord extérieur des côtés de la capuche.
 - Endroit contre endroit, coudre le bord long restant du centre de la capuche vers le bord extérieur de l'autre côté de la capuche.
 - Repassez la couture avec les marges ouvertes.
-- ***Terminez*** coutures.
+- ***Finissez*** les coutures.
 
 <Note>
 
-Il est recommandé d'utiliser **la méthode de finalisation 1** pour cette étape, que vous utilisiez un overlocker/serger.
+Il est recommandé d'utiliser **la méthode de finition 1** pour cette étape, que vous utilisiez ou pas une surjeteuse.
   
 </Note>
 
 ## Étape 8 : Assembler l'intérieur et l'extérieur de la capuche
 
-- Avec _bons côtés ensemble_, épinglez les capuches extérieures et les capuches de doublure qui correspondent aux coutures.
+- _Endroit contre endroit_, épinglez la capuche extérieure et la capuche de doublure en faisant correspondre les coutures.
 - Coudre le bord épinglé ensemble.
-- Gardez la marge de couture à 1 cm (3/8 po) si la marge de couture que vous avez choisie est plus grande et que vous n'avez pas utilisée et que vous n'avez pas surchargé/serger. Sinon *ne* pas couper la couture.
-- Sortez le capot des bons côtés et appuyez sur le bord extérieur à plat.
-- Sur le Topstitch extérieur le long du bord de la capuche, environ 1,5 - 2cm (5/8 - 3/4 pouces) du bord. Assurez-vous que vos embouts de surpiqûre ne traversent pas la marge de couture du bord extérieur du capot. Cela créera une jante décorative, avec la marge de couture fermée faisant de la jante un peu de poofy.
+- Couper la marge de couture à 1 cm (3/8 po) si la marge de couture que vous avez choisie est plus grande et que vous n'avez pas utilisée et que vous n'avez pas de surjeteuse. Sinon *ne pas* couper la la marge.
+- Retournez la capuche vers l'extérieur et repassez les coutures à plat.
+- Sur l'extérieur, surpiquez le long du bord de la capuche, à environ 1,5 - 2cm (5/8 - 3/4 pouces) du bord. Assurez-vous que vos embouts de surpiqûre ne traversent pas la marge de couture du bord extérieur du capot. Cela créera une jante décorative, avec la marge de couture fermée faisant de la jante un peu de poofy.
 - Avec des bords bruts ensemble, recouvrez le bas du capot. Vous pouvez le faire avec un overlocker/serger ou un ziz-zag ou un overcast point sur une machine ordinaire.
 
 <Note>
