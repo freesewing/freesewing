@@ -6,7 +6,7 @@ Tiberius is just a big rectangle, so printing the pattern out is a bit of a wast
 
 </Tip>
 
-Tiberius consists of only one part, the *tunica*, that will act as a pattern for both front and back pieces.
+Tiberius besteht aus nur einem Teil, der *tunica*, welche sowohl für Vorder- als auch Rückenteil als Schnittmuster dient.
 
 - schneide *2 tunicae*, _im Stoffbruch_
 
