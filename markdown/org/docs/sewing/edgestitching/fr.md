@@ -1,15 +1,15 @@
 ---
-title: Edgestitching
+title: Surpiqûre nervure
 ---
 
-Edgestitching is a speficic type of _topstitching_. It is specific because of its location. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
+La surpiqûre nervure est un type spécifique de _surpiqûre_. Elle est spécifique en raison de son emplacement. Faire une surpiqûre nervure signifie faire une surpiqûre juste à côté d'une couture, généralement environ 3mm ou 1/8 de pouce à côté de celle-ci.
 
-![Edgestitching on a FreeSewing Hugo Hoodie](edgestitching.jpg)
+![Surpiqûre nervure sur un sweat à capuche Hugo de FreeSewing](edgestitching.jpg)
 
-Edgestitching can be used to reinforce seams, to keep material in place by sewing down seam allowance or lining, and for decorative effect.
+La surpiqûre nervure peut être utilisée pour renforcer les coutures, pour maintenir le tissu en place en cousant la couture ou la doublure, et pour obtenir un effet décoratif.
 
 <Tip>
 
-For best results, use a sewing needle for optimized for topstitching
+Pour de meilleurs résultats, utilisez une aiguille de couture pour optimiser la surpiqûre
 
 </Tip>

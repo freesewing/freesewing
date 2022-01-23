@@ -1,5 +1,5 @@
 ---
-title: Costura cruzada frontal
+title: Costura transversal frontal
 ---
 
 El frente **de la costura cruzada** es la parte frontal de la medición [de la costura cruzada](/docs/measurements/crossseam/).

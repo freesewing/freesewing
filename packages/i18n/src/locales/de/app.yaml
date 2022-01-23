@@ -3,6 +3,7 @@
 100PercentFree: 100% kostenlos
 100PercentOpenSource: 100% Open Source
 aboutFreesewing: Über Freesewing
+accessoryPatterns: Accessory Patterns
 account: Account
 accountCreated: Account erstellt
 actions: Aktionen
@@ -12,11 +13,12 @@ applyThisLayout: Dieses Layout anwenden
 areYouSureYouWantToContinue: Bist du sicher, dass du fortfahren möchtest?
 askForHelp: Nach Hilfe fragen
 automatic: Automatisch
-averagePeopleDoNotExist: 'Durchschnittliche Menschen existieren nicht'
+averagePeopleDoNotExist: "Durchschnittliche Menschen existieren nicht"
 awesome: Großartig
 back: Zurück
 becauseThatWouldBeReallyHelpful: Weil das wirklich hilfreich wäre.
 becomeAPatron: Förderer/in werden
+blockPatterns: Block/Sloper Patterns
 blog: Blog
 browseBlogposts: Blogeinträge durchsuchen
 browsePatterns: Schnittmuster durchsuchen
@@ -72,7 +74,7 @@ drafts: Entwürfe
 draftSettings: Entwurfseinstellungen
 dragAndDropImageHere: Du kannst das Bild hier per Drag-and-Drop ablegen oder es unten manuell auswählen
 emailAddress: E-Mail-Adresse
-emailWorksToo: 'Falls du deinen Benutzername nicht weißt: deine E-Mail-Adresse funktioniert auch'
+emailWorksToo: "Falls du deinen Benutzername nicht weißt: deine E-Mail-Adresse funktioniert auch"
 enterEmailPickPassword: Gib deine E-Mail Adresse ein und wähle ein Passwort
 export: Exportieren
 exportTiledPDF: Exportieren als paginiertes PDF
@@ -81,9 +83,10 @@ fieldRemoved: '{field} entfernt'
 fieldSaved: '{field} gespeichert'
 filterByPattern: Filtern nach Schnittmuster
 filterPatterns: Schnittmuster filtern
-forgotLoginInstructions: 'Wenn du dein Passwort nicht mehr weißt: Benutzername oder E-Mail-Adresse eingeben und den <b>Passwort zurücksetzen</b> Knopf drücken'
+forgotLoginInstructions: "Wenn du dein Passwort nicht mehr weißt: Benutzername oder E-Mail-Adresse eingeben und den <b>Passwort zurücksetzen</b> Knopf drücken"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
+garmentPatterns: Garment Patterns
 github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
@@ -125,6 +128,7 @@ notesInfo: Dies sind deine Notizen. Du kannst hier alles schreiben, was du möch
 notes: Notizen
 ohNo: Oh nein!
 oneMoreThing: Und zum Schluss
+optionalMeasurements: Optional measurements
 options: Optionen
 orPayPerYear: Oder pro Jahr bezahlen
 other: Andere
@@ -156,7 +160,7 @@ remove: Entfernen
 removeThing: '{thing} entfernen'
 reportThisOnGithub: Melde dies auf GitHub
 requiredMeasurements: Erforderliche Maße
-resendActivationEmailMessage: 'Trage die E-Mail-Adresse ein, mit der du dich angemeldet hast, und wir senden dir eine neue Bestätigungsnachricht.'
+resendActivationEmailMessage: "Trage die E-Mail-Adresse ein, mit der du dich angemeldet hast, und wir senden dir eine neue Bestätigungsnachricht."
 resendActivationEmail: Aktivierungs-E-Mail erneut senden
 resetPassword: Passwort zurücksetzen
 reset: Zurücksetzen
@@ -198,13 +202,14 @@ twitter: Twitter
 txt-footer: Freesewing wird erstellt von einer Gemeinschaft von Mitwirkenden<br />mit der finanziellen Unterstützung unserer Förderer/-innen
 txt-tier2: Unsere Kategorie mit dem demokratischsten Preis. Es ist vielleicht weniger als der Preis eines Lattes, aber deine Unterstützung bedeutet uns sehr viel.
 txt-tier4: Wähle diese Stufe, und wir senden dir etwas von unserem heiß begehrten Freesewing-Swag nach Hause. Egal, wo in der Welt das auch sein mag.
-txt-tier8: 'Wenn du uns nicht nur unterstützen möchtest, sondern Freesewing zum Gedeihen bringen willst, ist das die Stufe für dich. Außerdem: extra Swag!'
+txt-tier8: "Wenn du uns nicht nur unterstützen möchtest, sondern Freesewing zum Gedeihen bringen willst, ist das die Stufe für dich. Außerdem: extra Swag!"
 txt-tiers: 'FreeSewing wird durch ein freiwilliges Abonnement-Modell unterstützt'
 unitsInfo: Freesewing unterstützt sowohl das metrische System als auch imperiale Einheiten. Wähle einfach aus, was von beiden du hier verwenden möchtest. (Standardmäßig werden die in deinem Account konfigurierten Einheiten verwendet).
 updated: Aktualisiert
 update: Aktualisieren
 userHasBeenWithUsSince: '{user} ist seit {since} bei uns'
 users: Benutzer
+utilityPatterns: Utility Patterns
 weAreValidatingYourConfirmationCode: Wir prüfen deinen Bestätigungs-Code.
 weCouldNotValidateYourConfirmationCode: Wir konnten deinen Bestätigungscode nicht validieren
 weEncounteredAProblem: Wir sind auf ein Problem gestoßen
@@ -240,8 +245,8 @@ noPattern: Du hast (noch) keine Schnittmuster. Erstelle ein neues Schnittmuster 
 modelFirst: Beginne damit, Maße hinzuzufügen
 noModel: Du hast (noch) keine Maße hinzugefügt. FreeSewing kann maßgeschneiderte Schnittmuster erzeugen. Dafür benötigen wir jedoch Maße.
 noModel2: Das erste, was du tun solltest, ist, eine Person hinzuzufügen und das Maßband auszupacken.
-noUserBrowsingTitle: 'Du kannst nicht einfach alle Benutzer durchsuchen'
-noUserBrowsingText: 'Wir haben Tausende von ihnen. Sicher gibt es Interessanteres auf unserer Seite zu tun?'
+noUserBrowsingTitle: "Du kannst nicht einfach alle Benutzer durchsuchen"
+noUserBrowsingText: "Wir haben Tausende von ihnen. Sicher gibt es Interessanteres auf unserer Seite zu tun?"
 usePatternMeasurements: 'Verwende die Maße des Originalschnittmusters'
 createReplica: Duplikat erstellen
 showDetails: Details anzeigen
@@ -329,3 +334,8 @@ debug: Debug
 unsubscribe: Abmelden
 slogan-come: Komm für die Schnittmuster
 slogan-stay: Bleib für die Community
+lightTheme: Light Theme
+darkTheme: Dark Theme
+hax0rTheme: Hax0r Theme
+lgbtqTheme: LGBTQ Theme
+transTheme: Trans Theme

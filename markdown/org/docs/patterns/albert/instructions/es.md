@@ -2,56 +2,56 @@
 title: Albert Construction
 - - -
 
-### Step 1: The Pocket
+### Paso 1: El bolsillo
 
-- Along the top of the pocket fold the seam allowance to wrong side, press.
-- Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.
-- Press the seam allowance of the sides and bottom to the wrong side.
-- On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
-- Pin the pocket to the front using the guides.
-- _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
+- A lo largo del borde superior del bolsillo, dobla el trozo para el dobladillo hacia el lado malo/incorrecto y apriétalo.
+- Vuelve a doblar hacia el lado malo y aprieta, asegurándote de que el borde de la tela queda escondida debajo. Sujétalo con alfileres si hace falta.
+- Aprieta el borde para el dobladillo de los lados y la parte inferior hacia el lado malo del tejido.
+- En el lado bueno, haz un pespunte cerca de donde el borde del dobladillo acaba en la parte de abajo, asegurándote de que coses sobre el dobladillo.
+- Sujeta el bolsillo con alfileres en el sitio usando las guías.
+- Haz un _pespunte_ en los lados y parte de abajo del bolsillo, dejando la parte superior abierta. Asegúrate de hacer punto atrás al principio y al final para fijar el bolsillo correctamente.
 
 <Tip>
 
-If you have trouble catching the top hem we suggest to either _Baste_ close to the hem edge first, and use that as a guide when stitching on the right side or pin the hem edge down from the right side making sure the pins are parallel to the top edge and use them as a guide.
+Si tienes problemas para sujetar el borde superior, sugerimos que hilvanes cerca del borde superior primero y uses eso como guía cuando cosas por el lado bueno, o que pongas alfileres en el dobladillo desde el lado bueno paralelos al borde superior y los uses como guía.
 
 </Tip>
 
 <Note>
   
-There are multiple ways to sew a patch pocket so use the way you prefer if you do not like this one.  
-A fun thing you can do is embroider/stitch the pocket with the name of the person the apron is for or even a cute design. Just remember that aprons typically get dirty so don't go to overtop with it.
+Hay muchas formas de coser un bolsillo de parche, así que usa la que prefieras si no te gusta esta.  
+Una cosa divertida que puedes hacer es bordar en el bolsillo el nombre de la persona para la que es el delantal, o incluso bordar diseño mono. Pero recuerda que los delantales normalmente se ensucian, así que no te pases.
   
 </Note>
 
-### Step 2: The Front
+### Paso 2: La parte de delante
 
-- Press under the side seam allowances to the wrong side.
-- Press under the side seams to the wrong side along the hem lines making sure the seam allowances are tucked underneath.
-- On the right side topstich close to where the folded edges lie underneath, making sure to catch the hems as you sew.
-- Repeat Step 2 for the top and bottom hems.
+- Dobla hacia abajo los bordes laterales hacia el lado malo.
+- Presiona sobre las costuras laterales hacia el lado malo a lo largo del dobladillo, asegurándote de que el borde de la tela queda escondido debajo.
+- En el lado bueno, haz un pespunte cerca de donde el borde del dobladillo acaba debajo, asegurándote que coses sobre el dobladillo.
+- Repite el Paso 2 para los dobladillos superior e inferior.
 
 <Note>
 
-It is recommended to hem the side seams before the top and bottom seams as they are narrower.  
-The side seams are narrow hems simply being the seam allowance folded over twice.
+Es recomendable hacer el dobladillo de los laterales antes que el superior y el inferior, que son más estrechos.  
+Los dobladillos laterales son estrechos y permiten doblar la tela dos veces.
 
 </Note>
 
-### Step 3: The Straps
+### Paso 3: Los tirantes
 
-- Fold one strap in half, right sides together and sew the top and side together.
-- Turn inside out through the bottom. Press.
-- Using the cross and rectangle as a guide, stitch the top of the strap to the wrong side of the front on the top left.
-- Using the cross and rectangle as a guide, stitch the bottom of the strap to the wrong side of the front at the side right.
-- Repeat Step 3 for the remaining strap attaching it at the top right and then the side left.
+- Dobla una de las tiras por la mitad, con los lados buenos juntos, y cose la parte de arriba y el lado.
+- Dale la vuelta a través de la parte de abajo. Alísala.
+- Utilizando la cruz y el rectángulo como guía, cose la parte de arriba de la cinta en la esquina superior izquierda de la parte de delante, por el lado malo.
+- Utilizando la cruz y el rectángulo como guía, cose la parte de abajo de la cinta con el lado izquierdo, por el lado malo.
+- Repite el Paso 3 para la otra cinta, uniéndola la la parte superior derecha y lado izquierdo.
 
 <Note>
   
-You can make another set of straps to tie at the back if you wish to keep the apron close to body when moving.
+Puedes hacer otro conjunto de tiras para atar a la espalda si quieres mantener el delantal pegado al cuerpo cuando te mueves.
 
 </Note>
 
-### Step 4: Enjoy!
+### Paso 4: ¡Disfrútalo!
 
-You're done! Now go enjoy your apron and make every stain a memory!
+¡Has acabado! ¡Ahora ve a disfrutar de tu delantal y crea un recuerdo con cada mancha!

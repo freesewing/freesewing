@@ -30,7 +30,7 @@ Diese Anweisungen gehen davon aus, dass Sie Ihre Nahtlinien markiert haben. Sie 
 - With right sides together, matching seam lines and peaks, sew two crown pieces together.
 - Press seams open. Sie mussten dafür einen Schneider-Schinken verwenden, wenn Sie keinen Schinken haben, können Sie stattdessen Flannels oder Handtücher verwenden.
 - (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat until you have two halves. Wenn die Hälfte der Anzahl der Kronenstücke eine ungerade Zahl ist, müssen Sie zu jeder Hälfte ein einzelnes Stück nähen. z.B. Wenn Sie 6 Kronen haben, machen Sie zwei Hälften von 3 Nähen ein Stück zu zwei zusammengenähten Stücken.
+- Wiederhole dies, bis du zwei Hälften hast. Wenn die Hälfte der Anzahl der Kronenstücke eine ungerade Zahl ist, müssen Sie zu jeder Hälfte ein einzelnes Stück nähen. z.B. Wenn Sie 6 Kronen haben, machen Sie zwei Hälften von 3 Nähen ein Stück zu zwei zusammengenähten Stücken.
 - With right sides together, matchinig seam lines and peaks, sew the two halves together. Sie können den Gipfel vielleicht leichter zusammen handnähen durch Schüttgut oder Präzision. Diese Naht wird als "Mittelkronennaht" bezeichnet.
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
 

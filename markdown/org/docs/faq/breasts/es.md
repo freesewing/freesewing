@@ -14,7 +14,7 @@ Estas características generalmente se piensan como _las características típic
 No queremos excluir a nadie y pensamos que _cuerpo forma =género_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
 
 ##### Cómo se aplica a los patrones
-Any user can draft any pattern on our site, as long as they provide the required measurements. Which for some patterns includes measurements that are only relevant if you have breasts.
+Cualquier usuario puede dibujar cualquier diseño en nuestro sitio, siempre y cuando proporcione las medidas requeridas. Which for some patterns includes measurements that are only relevant if you have breasts.
 
 ##### Cómo se aplica a la vinculación
 Si estás enlazándose, usa **sin senos** patrones, y usa la cirumferencia de tu cofre enlazado como [medición del cofre](/docs/measurements/chest/)

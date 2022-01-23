@@ -2,10 +2,10 @@
 title: Bella What you need
 - - -
 
-To make Bella, you will need the following:
+Para hacer Bella, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 0.5 metres of a suitable fabric ([see Bella Fabric options](/docs/patterns/bella/fabric/))
+- Unos 0.5 metros de una tela adecuada ([ver Opciones de tela para Bella](/docs/patterns/bella/fabric/))
 
 This list is for a default Bella Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
 

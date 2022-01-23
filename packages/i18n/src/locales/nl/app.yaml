@@ -3,6 +3,7 @@
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% open source
 aboutFreesewing: Over FreeSewing
+accessoryPatterns: Patronen voor Accessoires
 account: Account
 accountCreated: Account aangemaakt
 actions: Acties
@@ -12,11 +13,12 @@ applyThisLayout: Pas deze layout toe
 areYouSureYouWantToContinue: Weet je zeker dat je door wilt gaan?
 askForHelp: Vraag om hulp
 automatic: Automatisch
-averagePeopleDoNotExist: 'Gemiddelde mensen bestaan niet'
+averagePeopleDoNotExist: "Gemiddelde mensen bestaan niet"
 awesome: Super
 back: Achterzijde
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
+blockPatterns: Blokpatronen
 blog: Blog
 browseBlogposts: Bekijk de blogposts
 browsePatterns: Bekijk de patronen
@@ -72,7 +74,7 @@ drafts: Patroontekeningen
 draftSettings: Instellingen patroontekening
 dragAndDropImageHere: Sleep een afbeelding hierheen of selecteer er handmatig een met de knop hieronder
 emailAddress: Email adres
-emailWorksToo: 'Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook'
+emailWorksToo: "Als je je gebruikersnaam niet meer weet, vul dan je email adres in, dat werkt ook"
 enterEmailPickPassword: Voer je email adres in, en kies een wachtwoord
 export: Exporteren
 exportTiledPDF: Gepagineerde PDF exporteren
@@ -81,9 +83,10 @@ fieldRemoved: '{field} verwijderd'
 fieldSaved: '{field} opgeslagen'
 filterByPattern: Filter op patroon
 filterPatterns: Patronen filteren
-forgotLoginInstructions: 'Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop'
+forgotLoginInstructions: "Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop"
 freesewing: Freesewing
 freesewingOnGithub: FreeSewing op GitHub
+garmentPatterns: Patronen voor kledij
 github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
 goodJob: Mooi werk
@@ -125,6 +128,7 @@ notesInfo: Dit zijn je aantekeningen; Je kunt hier alles schrijven wat je wil
 notes: Aantekeningen
 ohNo: Oh nee!
 oneMoreThing: En dan nog dit
+optionalMeasurements: Optional measurements
 options: Opties
 orPayPerYear: Of betaal per jaar
 other: Andere
@@ -156,7 +160,7 @@ remove: Verwijderen
 removeThing: '{thing} verwijderen'
 reportThisOnGithub: Melden via GitHub
 requiredMeasurements: Vereiste maten
-resendActivationEmailMessage: 'Vul het e-mailadres waarmee je je account aangemaakt hebt in en we zullen je een nieuwe bevestigingsmail sturen.'
+resendActivationEmailMessage: "Vul het e-mailadres waarmee je je account aangemaakt hebt in en we zullen je een nieuwe bevestigingsmail sturen."
 resendActivationEmail: Stuur een nieuwe activatie email
 resetPassword: Wachtwoord opnieuw instellen
 reset: Reset
@@ -198,13 +202,14 @@ twitter: Twitter
 txt-footer: FreeSewing is gemaakt door een gemeenschap van bijdragers<br />met de financiële steun van onze mecenassen
 txt-tier2: Onze meest democratisch geprijsde optie. Het is minder dan de prijs van een latte, maar jouw steun betekent alles voor ons.
 txt-tier4: Abonneer je op deze optie en we sturen wat van onze erg gegeerde FreeSewing swag naar je thuis. Waar ook ter wereld dat mag zijn.
-txt-tier8: 'Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!'
+txt-tier8: "Als je ons niet louter wil steunen, maar FreeSewing wil zien groeien, dan is dit de optie voor jou. Ook: extra swag!"
 txt-tiers: 'FreeSewing draait op een vrijwillig subscriptiemodel'
 unitsInfo: FreeSewing ondersteunt zowel het metrieke stelsel als de imperiale eenheden. Kies eenvoudig welke u hier wilt gebruiken. (de standaard is om de eenheden te gebruiken die in uw account zijn geconfigureerd).
 updated: Bijgewerkt
 update: Bijwerken
 userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
 users: Gebruikers
+utilityPatterns: Patronen voor hulpprogramma's
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
 weCouldNotValidateYourConfirmationCode: We kunnen uw bevestigingscode niet valideren
 weEncounteredAProblem: We zijn op een probleem gestoten
@@ -240,8 +245,8 @@ noPattern: Je hebt (nog) geen patronen. Maak een nieuw patroon, en sla het op in
 modelFirst: Begin met maten toe te voegen
 noModel: Je hebt (nog) geen maten toegevoegd. FreeSewing can naaipatronen op maat genereren. Maar daarvoor hebben we maten nodig.
 noModel2: Dus het eerste dat je zou moeten doen is een persoon toevoegen, en je lintmeter bovenhalen.
-noUserBrowsingTitle: 'Je kan niet zomaar door alle gebruikers grasduinen'
-noUserBrowsingText: 'We hebben er duizenden. Je hebt toch wel wat beters te doen?'
+noUserBrowsingTitle: "Je kan niet zomaar door alle gebruikers grasduinen"
+noUserBrowsingText: "We hebben er duizenden. Je hebt toch wel wat beters te doen?"
 usePatternMeasurements: 'Gebruik de maten van het originele patroon'
 createReplica: Creëer een replica
 showDetails: Toon details
@@ -329,3 +334,8 @@ debug: Debug
 unsubscribe: Uitschrijven
 slogan-come: Kom voor de naaipatronen
 slogan-stay: Blijf voor het gezelschap
+lightTheme: Light Theme
+darkTheme: Dark Theme
+hax0rTheme: Hax0r Theme
+lgbtqTheme: LGBTQ Theme
+transTheme: Trans Theme

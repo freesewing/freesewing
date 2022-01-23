@@ -1,44 +1,44 @@
 <Note>
 
-Ce motif peut être cousu avec ou avec un overlocker/serger. Pour ***Finir*** coutures sans overlocker/serger, vous pouvez soit utiliser la méthode que vous préférez, soit l'une des méthodes ci-dessous :
+Ce patron peut être cousu avec ou avec une surjeteuse. Pour ***Finir*** les coutures sans surjeteuse, vous pouvez soit utiliser la méthode que vous préférez, soit l'une des méthodes ci-dessous :
 
 ##### Méthode de finition 1
 
-- Appuyez sur ouvrir les autorisations de couture. 
-- Puis sur le bon côté, ***Edgestitch*** 3mm (1/8 pouce) de distance ou plus près des deux côtés de la couture accrochant les admissions de couture en dessous.
-- Sur le mauvais côté couper les limites de couture près du bord. 
+- Repasser les marges de couture ouvertes. 
+- Puis sur l'endroit, faier une ***surpiqûre nervure*** à 3mm (1/8 pouce) ou moins des deux côtés de la couture en cousant les marges de couture en dessous.
+- Sur le côté envers couper les marges de couture près du bord. 
 
 ##### Méthode de finition 2
 
-- Coudre les admissions de couture avec soit un zag, un overcast ou un point droit et appuyer sur un côté.
+- Coudre les marges de couture avec soit un point zig-zag, éclair ou un point droit et presser sur un côté.
 - Couper à 1 cm (3/8 po) si nécessaire.
 
 </Note>
 
 <Tip>
 
-Si vous utilisez un overlocker/serger, vous pouvez coudre les coutures qui ont besoin d'un shing en une seule fois plutôt que de coudre la couture conventionnellement et de le finir. 
+Si vous utilisez une surjeteuse, vous pouvez coudre les coutures qui ont besoin d'une finition en une seule fois plutôt que de faire la couture conventionnellement et de le finir. 
   
 </Tip>
 
-## Step 1: Attaching the Gussets
+## Étape 1 : Coudre les Goussets
 
-- Avec les bons côtés ensemble, coudre les éclats aux panneaux avant le long des coutures latérales.
-- ***Terminez*** coutures.
+- Endroit contre endroit, coudre les goussets aux panneaux avant le long des coutures latérales.
+- ***Finir*** les coutures.
 
 ## Étape 2 : Coudre les coutures des épaules
 
-- Avec de bons côtés ensemble, coudre les pièces avant au dos le long des coutures d'épaule.
-- ***Terminez*** coutures.
+- Endroit contre endroit, coudre les pièces avant au dos le long des coutures d'épaule.
+- ***Finir*** les coutures.
 
 ## Étape 3 : Fixer les manches
 
-- Avec de bons côtés ensemble, associant l'encoche arrière à l'encoche arrière et l'encoche avant à l'encoche avant, coudre les manches au corps.
-- ***Terminez*** coutures.
+- Endroit contre endroit, en faisant correspondre le repères dos au repère avant, coudre les manches au corps.
+- ***Finir*** les coutures.
 
 <Note>
 
-On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Il est recommandé d'en faire une double encoche lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
+Sur le patron, le repère arrière est marquée comme un repère en croix (voir [notre guide des repères de patron](/docs/various/notation/notches/)). Il est recommandé d'en faire une double encoche lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
   
 </Note>
 
