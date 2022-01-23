@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Les longueurs ci-dessus sont des recommandations donc n'hésitez pas à aller aussi longtemps ou aussi court que vous le souhaitez avec les attaches.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](https://freesewing.org/docs/patterns/holmes/cutting/) for more info.  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
