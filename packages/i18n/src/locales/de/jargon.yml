@@ -54,8 +54,8 @@ serger:
   term: Overlock
   description: "Siehe <a href='/docs/sewing/serger/'>Overlock</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 slipstitch:
-  term: slipstitch
-  description: "See <a href='/docs/sewing/slipstitch/'>Slipstitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Kettstich
+  description: "Siehe <a href='/docs/sewing/slipstitch/'>Kettstich</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 topstitching:
   term: Absteppen
   description: "Siehe <a href='/docs/sewing/topstitching/'>Absteppen</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
