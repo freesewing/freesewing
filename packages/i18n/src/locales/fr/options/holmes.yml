@@ -1,28 +1,28 @@
 ---
 headEase:
   title: Aisance du tour de tête
-  description: The amount of ease around your head.
+  description: La quantité d'aisance autour de votre tête.
 lengthRatio:
   title: Profondeur de tête
-  description: Controls the length of the crown and ear flaps
+  description: Contrôle la longueur de la visière et des rabats d'oreilles
 gores:
-  title: Number of gores
-  description: The number of gores used to construct the semi-sphere
+  title: Nombre de pans
+  description: Le nombre de pans utilisés pour construire la semi-sphère
 visorAngle:
-  title: Visor angle
-  description: The arc angle used to draft the inner curve of the visor
+  title: Angle de la visière
+  description: L'angle d'arc utilisé pour tracer la courbe intérieure de la visière
 visorWidth:
-  title: Visor width
-  description: Controls the width of the visor
+  title: Largeur de la visière
+  description: Contrôle la largeur de la visière
 earLength:
-  title: Ear flap length
-  description: Controls the length of the ear flaps independently from the crown pieces
+  title: Longueur du rabat de l'oreille
+  description: Contrôle la longueur des rabats de l'oreille indépendamment des autres pièces de contour
 earWidth:
-  title: Ear flap width
-  description: Controls the width of the ear flaps
+  title: Largeur du rabat de l'oreille
+  description: Contrôle la largeur des rabats de l'oreille
 buttonhole:
-  title: Buttonhole guide
-  description: Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+  title: Guide des boutonnières
+  description: Ajoute une boutonnière au rabat d'oreille pour vous aider à tracer la variante du rabat de l'oreille avec boutonnière
 visorLength:
-  title: Visor length
-  description: Controls the length of the visor
+  title: Longueur de la visière
+  description: Contrôle la longueur de la visière
