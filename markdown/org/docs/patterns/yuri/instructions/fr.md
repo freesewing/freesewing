@@ -90,17 +90,17 @@ Il est recommandé d'utiliser **la méthode de finition 1** pour cette étape, q
 - Coudre le bord épinglé ensemble.
 - Couper la marge de couture à 1 cm (3/8 po) si la marge de couture que vous avez choisie est plus grande et que vous n'avez pas utilisée et que vous n'avez pas de surjeteuse. Sinon *ne pas* couper la la marge.
 - Retournez la capuche vers l'extérieur et repassez les coutures à plat.
-- Sur l'extérieur, surpiquez le long du bord de la capuche, à environ 1,5 - 2cm (5/8 - 3/4 pouces) du bord. Assurez-vous que vos embouts de surpiqûre ne traversent pas la marge de couture du bord extérieur du capot. Cela créera une jante décorative, avec la marge de couture fermée faisant de la jante un peu de poofy.
-- Avec des bords bruts ensemble, recouvrez le bas du capot. Vous pouvez le faire avec un overlocker/serger ou un ziz-zag ou un overcast point sur une machine ordinaire.
+- Sur l'extérieur, surpiquez le long du bord de la capuche, à environ 1,5 - 2cm (5/8 - 3/4 pouces) du bord. Assurez-vous que votre surpiqûre doit proche mais ne prenne pas les marges de couture du bord extérieur de la capuche. Cela créera une bordure décorative, avec la marge de couture proche en rendant la bordure un peu bombée.
+- Avec des bords bruts ensemble, surpiquez ou surjetez le bas de la capuche. Vous pouvez le faire avec une surjeteuse ou un point ziz-zag ou un point overlock sur une machine ordinaire.
 
 <Note>
   
-Lorsque vous appuyez sur le bouton, assurez-vous que le tissu extérieur se plie un peu à l'intérieur. Cela aidera à éviter que la doublure ne s'arrête hors de la capuche quand elle est renversée.
-Si vous ne souhaitez pas avoir la jante décorative, vous voudrez peut-être encore étancher la doublure pour qu'elle ne soit pas à l'extérieur.
+Lorsque vous repassez, assurez-vous que le tissu extérieur se plie un peu à l'intérieur. Cela aidera à éviter que la doublure ne ressorte hors de la capuche quand elle est surpiquée.
+Si vous ne souhaitez pas avoir la bordure décorative, vous voudrez peut-être sous-piquer la doublure pour qu'elle ne ressorte pas à l'extérieur.
   
 </Note>
 
-## Étape 9 : Préparation d'un cou pour le Capuchon (facultatif)
+## Étape 9 : Préparer une bande d'encolure pour la capuche (facultatif)
 
 - Coupez une bande de tissu transversale de votre tissu principal, votre encolure + 2 cm (3/4 po) de long et triple votre couture de cou de largeur.
 - Press under 1cm (3/8 inch) allowance on the short sides.
