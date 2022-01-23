@@ -46,23 +46,23 @@ Sur le patron, le repère arrière est marquée comme un repère en croix (voir 
 
 - (Facultatif) Surfiler le bord brut de la manche.
 - Pressez sur l'ourlet sur l'envers du tissu et bâtissez en place près du bord brut.
-- À l’extérieur, cousez plus loin du bord plié, en attrapant l’ourlet en dessous en utilisant le bâtonnage comme guide vers l’endroit où se trouve le bord brut.
-- (Facultatif) À l'extérieur, coupez 6 mm (1/4 po) parallèlement au point original le long de l'ourlet.
-- Supprimer le basting.
+- À l’extérieur, cousez plus loin du bord plié, en attrapant l’ourlet en dessous en utilisant le bâti comme guide vers l’endroit où se trouve le bord brut.
+- (Facultatif) À l'extérieur, cousez à 6 mm (1/4 po) parallèlement au premier point le long de l'ourlet.
+- Enlevez le fil de bâti.
 
 <Note>
 
-Si vous préférez serrer vos manches après avoir cousu les coutures latérales, vous pouvez faire cette étape après **l'étape 5**.
-Vous pouvez éviter le dépassement si vous utilisez une double aiguille, une machine à coudre ou si vous souhaitez laisser le bord brut lors de l'ourlet. 
-Il ne s'agit là que d'une méthode de sertissage, si vous préférez une autre façon d'y parvenir.
+Si vous préférez ourler vos manches après avoir cousu les coutures latérales, vous pouvez faire cette étape après **l'étape 5**.
+Vous pouvez éviter la double couture et le surfilage si vous utilisez une double aiguille, une recouvreuse ou si vous souhaitez laisser le bord brut lors de l'ourlet. 
+Il ne s'agit là que d'une méthode d'ourlet, si vous préférez une autre façon d'y parvenir.
   
 </Note>
 
 ## Étape 5 : Fermer les côtés
 
-- Avec de bons côtés ensemble, coudre les épaules correspondantes, commencer au bord de la manche et coudre la manche ensemble que coudre le gusset et le dos ensemble.
-- ***Terminez*** coutures.
-- Répétez pour le reste de la manche et de l'ouverture latérale.
+- Avec côtés endroits ensemble, avec les coutures d'épaules alignées, commencer au bord de la manche et coudre la manche ensemble que coudre le gousset et le dos ensemble.
+- ***Finissez*** les coutures.
+- Répétez pour l'autre manche et ouverture latérale.
 
 ## Étape 6 : Ajuster les bords bruts
 
