@@ -1,4 +1,4 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 import { elastics } from '@freesewing/snapseries'
 import freesewing from '@freesewing/core'
 const { pctBasedOn } = freesewing

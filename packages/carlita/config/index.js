@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'carlita',
-  version: version,
+  version: pkg.version,
   design: ['Anneke Caramin', 'Joost De Cock'],
   code: 'Joost De Cock',
   department: 'coats',

@@ -1,11 +1,11 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 import { elastics } from '@freesewing/snapseries'
 import freesewing from '@freesewing/core'
 const { pctBasedOn } = freesewing
 
 export default {
   name: 'sandy',
-  version,
+  version: pkg.version,
   design: 'Erica Alcusa Sáez',
   code: ['Erica Alcusa Sáez', 'Joost De Cock'],
   department: 'bottoms',

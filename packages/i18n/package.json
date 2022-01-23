@@ -25,6 +25,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "rollup -c",
+    "watch": "rollup -c -w",
     "cibuild_step1": "rollup -c",
     "test": "echo \"i18n: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",

@@ -1,10 +1,10 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 // 🤔 --> https://freesewing.dev/reference/config/
 
 export default {
   name: 'hortensia',
-  version,
+  version: pkg.version,
   design: ['Stoffsuchti', 'Wouter Van Wageningen'],
   code: 'Wouter Van Wageningen',
   department: 'accessories',
