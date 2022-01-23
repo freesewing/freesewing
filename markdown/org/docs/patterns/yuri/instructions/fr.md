@@ -102,7 +102,7 @@ Si vous ne souhaitez pas avoir la bordure décorative, vous voudrez peut-être s
 
 ## Étape 9 : Préparer une bande d'encolure pour la capuche (facultatif)
 
-- Coupez une bande de tissu transversale de votre tissu principal, votre encolure + 2 cm (3/4 po) de long et triple votre couture de cou de largeur.
+- Coupez une bande de tissu dans votre tissu principal, de la longueur de votre encolure + 2 cm (3/4 po) et de la largeur égale au triple de votre marge de couture au cou.
 - Press under 1cm (3/8 inch) allowance on the short sides.
 
 <Note>
