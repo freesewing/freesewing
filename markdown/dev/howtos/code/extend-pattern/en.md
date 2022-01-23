@@ -29,7 +29,7 @@ In your freshly created pattern folder, you now have to run
 ```bash
 npm install --save @freesewing/brian
 ```
-This will install Brian as a dependency, which you can then access in you pattern (see [examples](/howtos/code/extend-pattern/#examples) below on how to do that).  
+This will install Brian as a dependency, which you can then access in your pattern (see [examples](/howtos/code/extend-pattern/#examples) below on how to do that).  
 This has to be repeated for every new pattern you create.
 
 <Tip>
@@ -50,9 +50,9 @@ You can use the power of robots to install the needed dependencies if you work i
 - You can now start the actual pattern design work (i.e. editing and adding `src` and `config` files for your pattern.
 - For dependencies, configure them in `config/dependencies.yaml`.
 - Run `yarn reconfigure` again, and the magic will make sure that your `package.json` is updated accordingly.
-- You can set yourself as author in `config/exceptions.yaml`, and - you guessed it - run `yarn reconfigure` again.
+- You can set yourself as an author in `config/exceptions.yaml`, and - you guessed it - run `yarn reconfigure` again.
 
-Now you can work on extending existing patterns into something new and exiting. And the best part about using this method is that making a pull request will be much easier once you're done developing your new pattern.
+Now you can work on extending existing patterns into something new and exciting. And the best part about using this method is that making a pull request will be much easier once you're done developing your new pattern.
 
 ## Examples
 
