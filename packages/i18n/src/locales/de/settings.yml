@@ -30,5 +30,5 @@ debug:
   title: Debug
   description: Debuggen aktivieren, um zusätzliche Informationen dazu zu erhalten, wie dein Schnittmuster erstellt wurde
 scale:
-  title: Skalierung
+  title: Beschriftungsgöße
   description: "Steuert die allgemeine Linienbreite, Schriftgröße und andere Elementgrößen, \nbeeinflusst jedoch nicht den Maßstab des Schnittmusters"
