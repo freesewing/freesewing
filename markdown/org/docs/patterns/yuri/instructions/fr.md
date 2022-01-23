@@ -38,15 +38,15 @@ Si vous utilisez une surjeteuse, vous pouvez coudre les coutures qui ont besoin 
 
 <Note>
 
-Sur le patron, le repère arrière est marquée comme un repère en croix (voir [notre guide des repères de patron](/docs/various/notation/notches/)). Il est recommandé d'en faire une double encoche lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
+Sur le patron, le repère arrière est marquée comme un repère en croix (voir [notre guide des repères de patron](/docs/various/notation/notches/)). Il est recommandé d'en faire un double repère lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
   
 </Note>
 
-## Étape 4 : Entailler les manches
+## Étape 4 : Faire l'ourlet des manches
 
 - (Facultatif) Surfiler le bord brut de la manche.
-- Appuyez sur l'ourlet sur le mauvais côté du tissu et badigeonnez en place près du bord brut.
-- À l’extérieur, coupez loin du bord plié, en attrapant l’ourlet en dessous en utilisant le bâtonnage comme guide vers l’endroit où se trouve le tranchant brut.
+- Pressez sur l'ourlet sur l'envers du tissu et bâtissez en place près du bord brut.
+- À l’extérieur, cousez plus loin du bord plié, en attrapant l’ourlet en dessous en utilisant le bâtonnage comme guide vers l’endroit où se trouve le bord brut.
 - (Facultatif) À l'extérieur, coupez 6 mm (1/4 po) parallèlement au point original le long de l'ourlet.
 - Supprimer le basting.
 
