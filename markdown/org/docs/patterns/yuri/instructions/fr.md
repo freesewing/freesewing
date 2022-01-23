@@ -119,29 +119,29 @@ Vous pouvez également faire une bande pliée de sorte que le col n'ait pas de b
 - Si vous utilisez une surjeteuse, surjetez le cou et le la capuche ensemble en prenant toutes les épaisseurs.
 - Si vous utilisez une machine à coudre, utilisez un point en zig-zag pour coudre toutes les couches du cou et de la capuche ensemble.
 - À l'extérieur, vérifiez l'encolure pour vous assurer que toutes les couches sont cousues.
-- Permissions de couture de la presse vers le corps.
-- Sur le bon côté, embrocher avec une tige droite à environ 1 cm (3/8 po) à l'écart du bord du cou vers le corps pour attraper et fixer le cou en dessous.
-- Couper l’excès de reliure de l’intérieur.
+- Pressez les marges de coutures vers le corps.
+- Sur l'endroit, surpiquez avec un point droit à environ 1 cm (3/8 po) du bord du cou vers le corps pour attraper et fixer le cou en dessous.
+- Coupez l’excès de tissu de l’intérieur.
 
 <Warning>
   
-Si vous utilisez un overlocker/serger pour attacher la capuche, vous pouvez d'abord attacher des zones encombrantes avec un point droit comme le devant comme un overlocker/serger peut avoir du mal à coudre ces pièces.
+Si vous utilisez une surjeteuse pour attacher la capuche, vous pouvez d'abord attacher des zones volumineuses avec un point droit comme le devant car une surjeteuse peut avoir du mal à coudre ces pièces.
   
 </Warning>
 
 <Note>
   
-If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
-If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch). 
+Si vous craignez que la surpiqûre du cou avec un point droit ne donne pas assez d'extension, vous pouvez toujours faire le surpiqûre avec un zig-zag étroit ou un point extensible approprié de votre choix.
+Si vous n'utilisez pas de bande d'encolure vous voudrez finir la couture avec **Méthode de Finition 2** et surpiquer à 6mm (1/4 pouce) au lieu de 1cm (3/8 pouces). 
   
 </Note>
 
-## Étape 11: Boutons et trous de boutons
+## Étape 11: Boutons et boutonnières
 
-- Au niveau du bouton-trou sur les panneaux avant, coudre des trous de bouton pour les boutons de 2,5 cm (1 pouce) ou la taille des boutons de votre choix.
+- Au niveau des repères de boutonnières sur les panneaux avant, coudre des boutonnières pour les boutons de 2,5 cm (1 pouce) ou la taille des boutons de votre choix.
 - Pour le placement de boutons, vous pouvez essayer votre Yuri et voir où les boutons conviennent le mieux pour vous.
 - Alternativement, vous pouvez utiliser les marquages de boutons sur le modèle pour le placement.
-- Joindre les boutons.
+- Coudre les boutons.
 
 ## Etape 12 : Ta-daaa
 
