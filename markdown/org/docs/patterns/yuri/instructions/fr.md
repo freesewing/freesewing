@@ -64,18 +64,18 @@ Il ne s'agit là que d'une méthode d'ourlet, si vous préférez une autre faço
 - ***Finissez*** les coutures.
 - Répétez pour l'autre manche et ouverture latérale.
 
-## Étape 6 : Ajuster les bords bruts
+## Étape 6 : Ourler les bords bruts
 
-- Plier sous et coudre l'ourlet sur tous les bords bruts sauf autour du bord du cou.
-- Coudre l'ourlet du haut d'un devant, vers le bas du devant, puis le long du bas du gusset, puis le long du fond du dos, puis le long du fond de l'autre gusset, puis jusqu'au cou de l'autre avant.
+- Plier vers l'intérieur et coudre l'ourlet sur tous les bords bruts sauf autour de l'encolure.
+- Coudre l'ourlet du haut d'un devant, vers le bas du devant, puis le long du bas du gousset, puis le long du fond du dos, puis le long du fond de l'autre gousset, puis jusqu'au cou de l'autre avant.
 
-## Étape 7 : Préparez la doublure et le capuchon extérieur
+## Étape 7 : Préparer la doublure et l'extérieur de la capuche
 
-Suivez cette étape deux fois, une fois pour le capot extérieur et une fois pour le capot de doublage.
+Suivez cette étape deux fois, une fois pour la capuche extérieure et une fois pour la doublure de la capuche.
 
-- Avec de bons côtés ensemble, coudre le long bord du Centre des Bois au bord extérieur de l'un des Hood Sides.
-- Avec de bons côtés ensemble, coudre le bord long restant du centre des bois au bord extérieur de l'autre côté des Hood Side.
-- Appuyez sur les autorisations de couture ouvertes.
+- Endroit contre endroit, coudre le bord long du centre de la capuche vers le bord extérieur des côtés de la capuche.
+- Endroit contre endroit, coudre le bord long restant du centre de la capuche vers le bord extérieur de l'autre côté de la capuche.
+- Repassez la couture avec les marges ouvertes.
 - ***Terminez*** coutures.
 
 <Note>
