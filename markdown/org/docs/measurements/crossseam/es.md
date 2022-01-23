@@ -1,5 +1,5 @@
 ---
-title: Costura cruzada
+title: Costura transversal
 ---
 
 La costura cruza **** se mide desde la línea de cintura en el frente a través de las piernas hasta la espalda.
