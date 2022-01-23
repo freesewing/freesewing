@@ -103,22 +103,22 @@ Si vous ne souhaitez pas avoir la bordure décorative, vous voudrez peut-être s
 ## Étape 9 : Préparer une bande d'encolure pour la capuche (facultatif)
 
 - Coupez une bande de tissu dans votre tissu principal, de la longueur de votre encolure + 2 cm (3/4 po) et de la largeur égale au triple de votre marge de couture au cou.
-- Press under 1cm (3/8 inch) allowance on the short sides.
+- Repassez à moins de 1cm (3/8 pouces) de marge sur les côtés courts.
 
 <Note>
   
-Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
-You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
+Bien que marqué comme facultatif, il est recommandé de faire cette étape car elle crée une finition plus nette et de renforcement autour du cou.
+Vous pouvez également faire une bande pliée de sorte que le col n'ait pas de bord brut, mais cela peut être volumineux. Vous devrez également vous assurer que le bord plié s'étend légèrement plus long que 1 cm pour être pris lors de la fixation et de la surpiqûre de la capuche mais pas si long qu'il se rabat.
   
 </Note>
 
 ## Étape 10 : Attacher la Capuche
 
-- Avec de bons côtés ensemble, en partant de la broche centrale le capot au cou, assortir le dos du centre et chevaucher les extrémités du capot à l'avant du centre.
-- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
-- Si vous utilisez un overlocker/serger, serrez le cou et le capot ensemble à travers toutes les couches.
-- Si vous utilisez une machine à coudre, utilisez un point en zig-zag pour coudre toutes les couches du cou et du capot ensemble.
-- À l'extérieur, vérifiez le collier pour vous assurer que toutes les couches sont capturées.
+- Endroit contre endroit, en partant du centre dos, épinglez la capuche à l'encolure, en faisant correspondre les centre dos et que le recouvrement de la capuche se termine au centre devant.
+- Avec l'endroit de la bande d'encolure sur la doublure de la capuche, épinglez la bande à la capuche en faisant correspondre le milieu de la bande au centre dos.
+- Si vous utilisez une surjeteuse, surjetez le cou et le la capuche ensemble en prenant toutes les épaisseurs.
+- Si vous utilisez une machine à coudre, utilisez un point en zig-zag pour coudre toutes les couches du cou et de la capuche ensemble.
+- À l'extérieur, vérifiez l'encolure pour vous assurer que toutes les couches sont cousues.
 - Permissions de couture de la presse vers le corps.
 - Sur le bon côté, embrocher avec une tige droite à environ 1 cm (3/8 po) à l'écart du bord du cou vers le corps pour attraper et fixer le cou en dessous.
 - Couper l’excès de reliure de l’intérieur.
