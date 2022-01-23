@@ -11,6 +11,9 @@ backPocketWidth:
 backPocketDepth:
   title: Tiefe der hinteren Tasche
   description: Steuert die Tiefe der hinteren Tasche
+backPocketFacing:
+  title: Back pocket facing
+  description: Controls whether or not to include facing on the back pockets
 frontPocketSlantDepth:
   title: Vordertasche Schrägtiefe
   description: Steuert die Tiefe des (vorder) Taschenschlitzes
