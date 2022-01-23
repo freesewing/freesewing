@@ -30,7 +30,7 @@ backArmholeSlant:
   title: Hintere Armlochschiebung
   description: Das Rüstungsloch dreht sich leicht um seinen Pitchpunkt
 frontArmholeCurvature:
-  title: Front armhole curvature
+  title: Vordere Armlochkrümmung
   description: Controls how deep the armhole is scooped out at the front bottom
 backArmholeCurvature:
   title: Hintere Armlochkrümmung

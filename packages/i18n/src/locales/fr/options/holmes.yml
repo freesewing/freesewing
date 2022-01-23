@@ -1,14 +1,28 @@
 ---
+headEase:
+  title: Aisance du tour de tête
+  description: The amount of ease around your head.
 lengthRatio:
   title: Profondeur de tête
-  description: fixme
-goreNumber:
-  title: Nombre de pans
-  description: Le nombre de pans utilisés pour construire la semi-sphère
-brimAngle:
-  title: Angle des visières
-  description: Contrôle l'angle de courbure des visières
-brimWidth:
-  title: Largeur des visières
-  description: Contrôle la largeur des visières
-
+  description: Controls the length of the crown and ear flaps
+gores:
+  title: Number of gores
+  description: The number of gores used to construct the semi-sphere
+visorAngle:
+  title: Visor angle
+  description: The arc angle used to draft the inner curve of the visor
+visorWidth:
+  title: Visor width
+  description: Controls the width of the visor
+earLength:
+  title: Ear flap length
+  description: Controls the length of the ear flaps independently from the crown pieces
+earWidth:
+  title: Ear flap width
+  description: Controls the width of the ear flaps
+buttonhole:
+  title: Buttonhole guide
+  description: Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+visorLength:
+  title: Visor length
+  description: Controls the length of the visor

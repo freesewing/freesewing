@@ -2,4 +2,4 @@
 title: Hauteur taille hanches
 ---
 
-The **waist to hips** measurement is measured from your waist down to the top of your hip bone (where your trousers sit). Measure it at the side of your body.
+La mesure de la hauteur **taille hanches** se mesure à partir de votre taille jusqu'à l'os de votre hanche (où se place votre pantalon). Elle se mesure sur le côté du corps.

@@ -16,6 +16,6 @@ Para el visitante casual que tropieza con nuestro sitio web, eso
 añade mucha fricción antes de poder probar el sitio web.
 
 Por esta razón, hemos añadido tamaños estándar desde la versión 2.2.  
-We advise against using our standard sizes for actual garment construction.
+Desaconsejamos usar nuestros tamaños comunes para construir ropa real.
 
 </Note>

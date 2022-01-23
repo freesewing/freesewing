@@ -62,7 +62,7 @@ If you are uncertain about the length you want for your ties take 1 metre (39") 
 <Note>
 
 The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
-If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
@@ -225,7 +225,7 @@ Unless you are doing the Buttonhole Ear Flaps you do not have to sew a button on
 
 <Note>
 
-Whilst certainly optional, you may find that a button is what is missing from the hat to finish the look. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what missing. If it is, attach it permanently. 
+Whilst certainly optional, you may find that a button is what is missing from the hat to finish the look. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is, attach it permanently. 
 Whilst a covered button is recommeneded you can use whatever button you desire, feel free to experiment!
 
 </Note>

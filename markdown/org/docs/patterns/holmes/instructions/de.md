@@ -30,7 +30,7 @@ Diese Anweisungen gehen davon aus, dass Sie Ihre Nahtlinien markiert haben. Sie 
 - With right sides together, matching seam lines and peaks, sew two crown pieces together.
 - Press seams open. Sie mussten dafür einen Schneider-Schinken verwenden, wenn Sie keinen Schinken haben, können Sie stattdessen Flannels oder Handtücher verwenden.
 - (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat until you have two halves. Wenn die Hälfte der Anzahl der Kronenstücke eine ungerade Zahl ist, müssen Sie zu jeder Hälfte ein einzelnes Stück nähen. z.B. Wenn Sie 6 Kronen haben, machen Sie zwei Hälften von 3 Nähen ein Stück zu zwei zusammengenähten Stücken.
+- Wiederhole dies, bis du zwei Hälften hast. Wenn die Hälfte der Anzahl der Kronenstücke eine ungerade Zahl ist, müssen Sie zu jeder Hälfte ein einzelnes Stück nähen. z.B. Wenn Sie 6 Kronen haben, machen Sie zwei Hälften von 3 Nähen ein Stück zu zwei zusammengenähten Stücken.
 - With right sides together, matchinig seam lines and peaks, sew the two halves together. Sie können den Gipfel vielleicht leichter zusammen handnähen durch Schüttgut oder Präzision. Diese Naht wird als "Mittelkronennaht" bezeichnet.
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
 
@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Die oben genannten Längen sind Empfehlungen, so fühlen Sie sich frei zu gehen so lange oder so kurz wie Sie wollen mit den Krawatten.  
-If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
@@ -225,7 +225,7 @@ Wenn du nicht die Buttonhole Ohrenklappen machst, musst du keinen Knopf einnähe
 
 <Note>
 
-Sicherlich optional, können Sie feststellen, dass ein Knopf fehlt, um das Aussehen zu beenden. Wenn Sie sich also nicht sicher sind, ob Sie sich diesen Punkt anschauen wollen. stellen Sie einen schnellen Knopf zusammen und platzieren Sie ihn vorübergehend, um zu sehen, ob dies was fehlt. If it is attach it permanently. 
+Sicherlich optional, können Sie feststellen, dass ein Knopf fehlt, um das Aussehen zu beenden. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently. 
 Während ein überdachter Button empfohlen wird, kannst du jeden gewünschten Button verwenden, kannst du es probieren!
 
 </Note>

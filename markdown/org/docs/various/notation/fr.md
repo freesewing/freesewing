@@ -1,9 +1,9 @@
 ---
-title: Guide de notation de patron
+title: Guide des repères de patron
 order: 800
 ---
 
-Nous espérons que nos patrons sont assez faciles à comprendre, mais si vous rencontrez quelque chose qui ne vous paraît pas clair, veuillez trouver ci-dessous une référence de toutes nos notes de patron :
+Nous espérons que nos patrons sont assez faciles à comprendre, mais si vous rencontrez quelque chose qui ne vous paraît pas clair, veuillez trouver ci-dessous une référence de toutes nos repères de patron :
 
 <ReadMore list />
 

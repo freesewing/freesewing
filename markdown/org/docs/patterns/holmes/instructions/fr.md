@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Les longueurs ci-dessus sont des recommandations donc n'hésitez pas à aller aussi longtemps ou aussi court que vous le souhaitez avec les attaches.  
-If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
@@ -225,7 +225,7 @@ Pour déterminer la façon dont vous voulez plier les cravates, il vous sera peu
 
 <Note>
 
-Bien que facultatif, il se peut que vous trouviez un bouton qui manque dans le chapeau pour finir l'apparence. Donc, si vous n'êtes pas sûr de ce point, faites un bouton rapide et placez-le temporairement pour voir si c'est ce qui manque. If it is attach it permanently. 
+Bien que facultatif, il se peut que vous trouviez un bouton qui manque dans le chapeau pour finir l'apparence. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently. 
 Bien qu'un bouton couvert soit recommandé, vous pouvez utiliser n'importe quel bouton que vous désirez, n'hésitez pas à expérimenter !
 
 </Note>

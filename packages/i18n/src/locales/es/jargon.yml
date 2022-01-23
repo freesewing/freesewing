@@ -18,7 +18,7 @@ ease:
   term: facilidad
   description: "Ve <a href='/docs/sewing/ease/'>Sube</a> en la <a href='/docs/sewing'>documentación de costura</a>"
 edgestitch:
-  term: edgestitch
+  term: pespunte
   description: "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 fabricGrain:
   term: grano de tela
