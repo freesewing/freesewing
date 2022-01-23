@@ -62,7 +62,7 @@ Als je onzeker bent over de lengte van je stropdassen duurt 1 meter (39") en kni
 <Note>
 
 De lengtes hierboven zijn aanbevelingen, dus voel je vrij om zo lang of zo kort te gaan als je wilt met de banden.  
-If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](https://freesewing.org/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
@@ -225,7 +225,7 @@ Tenzij je de knoopsgatenvlakken doet hoef je geen knop aan te naaien, maar het k
 
 <Note>
 
-Hoewel het zeker facultatief is, vind je misschien dat er een knop ontbreekt bij de hoed om het uiterlijk af te maken. Dus als u niet zeker bent van het standpunt op dit punt. maak een snelle knop en plaats deze tijdelijk op om te zien of dit ontbreekt. Neem dit permanent toe als het is. 
+Hoewel het zeker facultatief is, vind je misschien dat er een knop ontbreekt bij de hoed om het uiterlijk af te maken. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. Neem dit permanent toe als het is. 
 Terwijl een gedekte knop wordt aanbevolen, kunt u elke knop gebruiken die u wilt, voel je vrij om te experimenteren!
 
 </Note>
