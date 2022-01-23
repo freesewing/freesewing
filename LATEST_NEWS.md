@@ -15,9 +15,6 @@ Check the meetings voice/video channel.
 
 ##### Check out where FreeSewing is heading
 
-Ongoing FreeSewing efforts include migrating the FreeSewing websites (freesewing.org and freesewing.dev) from
-GatbsyJS to NextJS, and in the process consolidating and streamlining our various repositories.
-
-Take a look at our new development blog, which you can read at [2022.freesewing.dev/blog](https://2022.freesewing.dev/blog), and the [FreeSewing Roadmap](https://github.com/freesewing/freesewing/discussions/1278).
-
-If you'd like to get involved in this effort, head over to [discord.freesewing.org](https://discord.freesewing.org/).
+If you're curious to see what we're working on, check out [the
+FreeSewing roadmap](https://github.com/freesewing/freesewing/discussions/1278) which
+includes all the things on the horizon for FreeSewing.
