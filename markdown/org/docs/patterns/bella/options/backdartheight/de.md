@@ -2,7 +2,7 @@
 title: Rückseitendart-Höhe
 ---
 
-![Der Effekt der Dart Höhe des Rückens auf das Muster](sample.png)
+![Der Effekt der Dart Höhe des Rückens auf das Schnittmuster](sample.png)
 
 Die Option **Rückseite Dart Höhe** steuert die Höhe (Länge, wenn Sie wollen) des Rückendarts.
 
