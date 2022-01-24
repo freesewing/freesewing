@@ -1,10 +1,10 @@
 ---
-title: Brustzugabe
+title: Brustumfangszugabe
 ---
 
-![Der Effekt der Brustpflegeoption auf das Muster](sample.png)
+![Der Effekt der Brustpflegeoption auf das Schnittmuster](sample.png)
 
-Die Option **Brustschmerz** steuert die Menge an Leichtigkeit im vollen Teil deiner Truhe.
+The **chest ease** option controls the amount of ease at the fullest part of your chest.
 
 
 ## Effekt dieser Option auf das Schnittmuster
