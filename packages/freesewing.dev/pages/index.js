@@ -20,6 +20,7 @@ const HomePage = (props) => {
         <meta property="og:url" content="https://freesewing.dev/" key='url' />
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
+        <script src="/sw.js" />
       </Head>
       <div className="max-w-screen-md">
         <p>
