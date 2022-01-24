@@ -11,6 +11,8 @@
       - Included variables used by TailwindCSS themes for compatibility
     examples:
       - Added plugin_gore example
+    plugin-cutonfold:
+      - Support for scale setting
     plugin-flip:
       - Added support for flipping around the Y-axis
     plugin-grainline:
