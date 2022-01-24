@@ -13,7 +13,7 @@ fullChestEaseReduction:
   description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
 backDartHeight:
   title: Rückseitendart-Höhe
-  description: Steuert die Höhe des Rückendarts
+  description: Steuert die Höhe des Rückenabnähers
 bustDartLength:
   title: Länge des Brustabnähers
   description: Steuert die Länge des Büstendarts
