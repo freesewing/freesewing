@@ -12,7 +12,7 @@ Servieren Sie sie zusammen und berücksichtigen Sie, dass die Naht 1 cm beträgt
 
 > Einige Serger haben einen Hebel zur Wahl zwischen flachen Nähten oder gebündelten Nähten. Wenn Sie vorhaben, später zu starten (siehe Schritt 6), stellen Sie sicher, dass Sie flache Nähte wählen.
 
-### Schritt 2: Zur zweiten Seite zurückkehren
+### Schritt 2: Rückteil an zweites Seitenteil anbringen
 
 ![Zur zweiten Seite zurücktreten](step02.png)
 
@@ -22,7 +22,7 @@ Servieren Sie sie zusammen, wie Sie es auf der anderen Seite getan haben.
 
 > Rücken und Seite sind jetzt miteinander verbunden. Lassen Sie sie einen Moment beiseite, während wir unsere Aufmerksamkeit auf die anderen Stücke richten.
 
-### Schritt 3: erste Einfügung und Fronten beitreten
+### Schritt 3: ersten Einsatz an Vorderteile anbringen
 
 ![Starte an einem Ende](step03-a.png) ![Weiter die Stücke ausrichten während du fortfährst](step03-b.png) ![Bis zum anderen Ende](step03-c.png)
 
@@ -59,7 +59,7 @@ Nähen Sie die Frontdarts separat und drehen Sie die ganze Sache nach draußen, 
 
 </Tip>
 
-### Schritt 4: Zweiter Ein- und Ausgang beitreten
+### Schritt 4: zweiten Einsatz an Vorderteile anbringen
 ![Zweite Einfügung und Fronten beitreten](step03-d.png)
 
 Nachdem Sie den ersten Einsatz und die Fronten beigetreten sind, fahren Sie mit der zweiten fort.
@@ -70,7 +70,7 @@ Wenn die Fronten und Einsätze miteinander verbunden sind, bleiben Ihnen 3 Teile
  - Die beigetretenen Seiten und zurück
  - Der elastische
 
-### Schritt 5: Den Frontdart schließen
+### Schritt 5: vordere Abnäher schließen
 ![Den Frontdart schließen](step05.png)
 
 Falten Sie die Fronten an der Mitte der Frontlinie, so dass die Tasten am unteren Rand nach oben.
@@ -110,12 +110,12 @@ Die Naht stoppt auf halbem Wege (wo der Dart endet), aber die Aufstiftung sollte
 
 </Tip>
 
-### Schritt 7: Betreten Sie die erste Seite an den Fronten
+### Schritt 7: erstes Seitenteil an Vorderteile anbringen
 ![Schließen Sie sich der ersten Seite an den Fronten an](step07.png)
 
 Legen Sie die Seitenkante der ersten Seite mit der Kante aus dem Front+Einsatz (gute Seiten wie üblich) zusammen und verführen Sie sie zusammen.
 
-### Schritt 8: Betreten Sie die zweite Seite an den Fronten
+### Schritt 8: zweites Seitenteil an Vorderteile anbringen
 ![Schließen Sie sich der zweiten Seite an den Fronten an](step08.png)
 
 Tun Sie dasselbe für die zweite Seite.
@@ -140,7 +140,7 @@ Nimm es langsam und sei **sehr bewusst**, wo deine Sergerklinge schneiden wird.
 
 </Tip>
 
-### Schritt 11: Hem das erste Bein
+### Schritt 11: säume das erste Bein
 ![Hem das erste Bein](step11.png)
 
 Zeit, die Beine zu stumpfen. Hem sie wie du alle anderen streckigen Stricken machen würst. Gehen Sie nach einer flexiblen Stickerei. Sie können eine Zick-Zack-Zwillingsstick- oder Zwillingsnadel verwenden, wenn Sie nicht über einen Deckschloss oder eine spezielle flexible Stich-Einstellung verfügen.
@@ -153,12 +153,12 @@ Noch besser: Nähen Sie beide Beine und nähen Sie nur, wenn Sie mit dem Aussehe
 
 </Note>
 
-### Schritt 12: Hem das zweite Bein
+### Schritt 12: säume das zweite Bein
 ![Hem das zweite Bein](step12.png)
 
 Sie wissen, dass das sinnvoll ist.
 
-### Schritt 13: Machen Sie Ihren elastischen Teil zu einer Schleife
+### Schritt 13: forme den Gummizug zu einer Schlaufe
 ![Machen Sie Ihren elastischen Teil zu einer Schleife](step13.png)
 
 Nähen Sie beide Enden der Elastik zusammen mit guten Seiten zusammen.
