@@ -58,16 +58,16 @@ hortensia:
   title: Hortensia, bolso de mano
 huey:
   description: Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.
-  title: Sudadera Huey
+  title: Huey, sudadera con capucha
 hugo:
-  description: Hugo es una sudadera con capucha y manga ranglán.
-  title: Hugo hoodie
+  description: Hugo es una sudadera con capucha y manga raglán.
+  title: Hugo, sudadera con capucha
 jaeger:
   description: Jaeger es una chaqueta de estilo deportivo con dos botones y bolsillos de parche.
-  title: Manga de Jaeger
+  title: Jaeger, chaqueta
 lunetius:
   description: Lunetius es una lacerna, una capa histórica romana
-  title: Lacerna Lunetius
+  title: Lunetius, lacerna
 paco:
   description: Paco son pantalones de verano casual pero con estilo.
   title: Pantalones de Paco
