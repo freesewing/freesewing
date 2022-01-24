@@ -10,7 +10,7 @@ bee:
   title: Bee, sujetador de bikini
 bella:
   description: Bella es un patrón báse para personas con pechos.
-  title: Bella, patrón base de pecho
+  title: Bella, patrón base de torso con pechos
 benjamin:
   description: Benjamin es un patrón de pajarita con cuatro formas a elegir.
   title: Benjamin, pajarita
@@ -18,25 +18,25 @@ bent:
   description: Este patrón base con mangas de dos partes es la base de nuestros patrones de chaqueta y abrigo.
   title: Bent, patrón base de chaqueta
 breanna:
-  description: Breanna es un bloque corporal básico para las personas con senos.
-  title: Bloque de cuerpo de Breanna
+  description: Breanna es un patrón base de torso para personas con pechos.
+  title: Breanna, patrón base de torso con pechos
 brian:
-  description: Brian es un bloque corporal básico para personas sin senos.
-  title: Bloque de cuerpo de Brian
+  description: Brian es un patrón base para personas sin pechos.
+  title: Brian, patrón base de torso sin pechos
 bruce:
   description: Bruce es un bóxer cerrado cómodo y elegante.
-  title: Resúmenes de boxeador de bruce
+  title: Bruce, calzoncillos bóxer
 carlita:
-  description: 'La versión para los senos de nuestro abrigo Carlton, el abrigo de Sherlock Holmes.'
-  title: Capa de Carlita
+  description: 'La versión para gente con pechos de nuestro abrigo Carlton, también conocido como el abrigo de Sherlock Holmes.'
+  title: Carlita, abrigo
 carlton:
-  description: 'Para disfrazarse de Sherlock Holmes o tener un abrigo muy elegante.'
-  title: Capa Carlton
+  description: 'Para un cosplay de Sherlock Holms, o simplemente un abrigo muy bonito.'
+  title: Carlton, abrigo
 cathrin:
-  description: Cathrin es un corsé bajo pecho o reductor de la cintura.
-  title: Cathrin corset
+  description: Cathrin es un corset por debajo del pecho o faja.
+  title: Cathrin, corset
 charlie:
-  description: Charlie es un patrón de pantalón chino.
+  description: Charlie es un patrón de pantalón tipo chinos.
   title: Charlie chinos
 cornelius:
   description: El cornelio son brechas ciclistas basadas en el método de redacción de piedra angular.
