@@ -21,8 +21,8 @@ const HomePage = (props) => {
         <meta property="og:url" content="https://freesewing.dev/" key='url' />
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
-        <Script src="/sw.js"></Script>
       </Head>
+      <Script src="/sw.js"></Script>
       <div className="max-w-screen-md">
         <p>
           FreeSewing.dev hosts documentation for contributors and developers alike.
