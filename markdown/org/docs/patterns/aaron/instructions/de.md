@@ -9,7 +9,7 @@ Legen Sie Vorder- und Rückseite mit _guten Seiten zusammen_ übereinander. Näh
 
 ![Versäubere den Saum](step02.png)
 
-Falte den Saum nach oben und nähe ihn nach unten. Wenn du einen Coverlock hast, benutze es. Falls nicht, verwenden Sie eine _Zwillingsnadel_ oder _Zickzackstich_ , um die Naht dehnbar zu halten.
+Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwenden Sie eine _Zwillingsnadel_ oder _Zickzackstich_ , um die Naht dehnbar zu halten.
 
 <Note>
 
@@ -50,7 +50,7 @@ Dies ist der einzige Teil, um dieses A-Shirt zu machen, das ein bisschen Praxis 
 
 ![Strickbindung anwenden](step03a.png)
 
-Das Erste, was wir tun müssen, ist, zu entscheiden, wo wir unsere Bindung ansetzen bzw. stoppen wollen. Hier ist, was ich vorschlage,
+Das Erste, was wir tun müssen, ist, zu entscheiden, wo wir unsere Bindung ansetzen bzw. stoppen wollen. Ich schlage folgendes vor:
 
   - Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
   - Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
@@ -81,9 +81,9 @@ Dann musst du nur den Rand deines Stoffes an dieser Linie angleichen.
 
 Außerdem beginnen wir nicht bei unserem Start, aber wir überspringen die ersten 3cm. Dieser Wiggle Raum wird später benötigt, um den Enden unserer Bindung beizutreten.
 
-### Näh-Bindung
+### Sew binding in place
 
-![Näh-Bindung](step03d.png)
+![Sew binding in place](step03d.png)
 
 Nähen Sie Ihre Bindung an und strecken Sie die Bindung, aber nicht das Gewebe. Vergewissern Sie sich, nicht die letzten 3cm zu nähen, sondern lassen Sie sie, so wie Sie es zu Beginn getan haben.
 
