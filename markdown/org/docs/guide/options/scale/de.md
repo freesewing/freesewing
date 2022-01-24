@@ -1,9 +1,9 @@
 ---
-title: Scale
+title: Skalierung
 ---
 
-The scale factor can be used to scale down (or up) everything that is not the actual pattern itself. Things like font sizes, arrow sizes, logos, scalebox, line width and so on.
+Der Skalierungsfaktor kann dazu verwendet werden, um alles, was nicht das eigentliche Schnittmuster ist, hoch- oder runter zu skalieren. Darunter fallen Dinge wie Schriftgröße, Pfeilgröße, Logos, Skalierungsbox, Strichbreite, und so weiter.
 
 It was specifically created to accomodate patterns for doll clothes and other situations where the text and snippets would become too large in comparison to the pattern.
 
-You need to enable *Expert mode* after which you can find the scale setting under *Advanced*.
+Um die Skalierung zu ändern, musst du zunächst den *Expertenmodus* aktivieren, dort findest du dann die Skalierungseinstellung unter *Fortgeschritten*.
