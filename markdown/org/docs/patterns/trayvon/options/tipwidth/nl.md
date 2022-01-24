@@ -1,4 +1,4 @@
-![Breedte punt](topwidth.svg)
+![Breedte punt](tipwidth.svg)
 
 De breedte van de punt is de breedte aan de punt van de das.
 

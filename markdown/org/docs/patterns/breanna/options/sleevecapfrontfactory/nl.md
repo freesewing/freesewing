@@ -1,4 +1,4 @@
-![De verticale locatie van het tussenpunt vooraan](./sleevecapfonrtfactory.svg)
+![De verticale locatie van het tussenpunt vooraan](./sleevecapfrontfactory.svg)
 
 Deze optie bepaalt de verticale plaatsing van het tussenpunt aan de voorkant van de mouw.
 

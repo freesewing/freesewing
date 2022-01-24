@@ -1,4 +1,4 @@
-![Die vertikale Position des vorderen Durchbiegungspunkts](./sleevecapfonrtfactory.svg)
+![Die vertikale Position des vorderen Durchbiegungspunkts](./sleevecapfrontfactory.svg)
 
 Diese Option steuert die vertikale Positionierung der Ärmelschaltung an der Vorderseite des Ärmels.
 
