@@ -9,25 +9,25 @@ bustSpanEase:
   title: Holgura alrededor del busto
   description: Controla la holgura de busto en el patrón base (Bella) en el que se basa Bee
 topDepth:
-  title: Altura superior
-  description: Controls how far the bikini cup extends upwards
+  title: Límite superior
+  description: Controla hasta qué punto la copa de bikini se extiende hacia arriba
 bottomCupDepth:
-  title: Bottom depth
-  description: Controls how far the bikini cup extends downwards
+  title: Límite inferior
+  description: Controla hasta qué punto la copa de bikini se extiende hacia abajo
 sideDepth:
-  title: Side depth
-  description: Controls how far the bikini cup extends towards the side
+  title: Límite lateral
+  description: Controla hasta qué punto se extiende la copa del bikini hacia el lado
 sideCurve:
-  title: Side curve
-  description: Controls the curvature of the side of the bikini cup
+  title: Curva lateral exterior
+  description: Controla la curvatura del lado exterior de la copa del bikini
 frontCurve:
-  title: Front curve
-  description: Controls the curvature of the front of the bikini cup
+  title: Curva lateral interior
+  description: Controla la curvatura de la parte lateral interior de la copa del bikini
 bellaGuide:
-  title: Show Bella
-  description: Shows the outline of the Bella block Bee is based on
+  title: Mostrar Bella
+  description: Muestra el contorno del patrón base Bella en el que se basa Bee
 ties:
-  title: Ties
+  title: Tirantes
   description: Whether to includes ties, yes or no
 bandTieWidth:
   title: Band (chest) tie width
