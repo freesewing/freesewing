@@ -1,5 +1,5 @@
 
-Steuert die Länge der Riemen auf der Schürze.
+Steuert die Länge der Riemen an deiner Schürze.
 
 
 ## Effekt dieser Option auf das Schnittmuster
