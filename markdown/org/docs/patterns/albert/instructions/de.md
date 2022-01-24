@@ -2,7 +2,7 @@
 title: Albert Construction
 - - -
 
-### Step 1: The Pocket
+### Schritt 1: Die Tasche
 
 - Along the top of the pocket fold the seam allowance to wrong side, press.
 - Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.
@@ -52,6 +52,6 @@ You can make another set of straps to tie at the back if you wish to keep the ap
 
 </Note>
 
-### Step 4: Enjoy!
+### Schritt 4: Viel Spaß!
 
 Fertig! Now go enjoy your apron and make every stain a memory!
