@@ -1,5 +1,5 @@
 
- - **1 Front** auf die Falte schneiden
- - **1 Tasche** auf die Falte schneiden
- - **2 Riemen schneiden** 
+ - Schneide **1 Vorderteil** im Stoffbruch
+ - Schneide **1 Tasche** im Stoffbruch
+ - Schneide **2 Riemen** 
 
