@@ -45,13 +45,13 @@ neckTieWidth:
   title: Ancho de la cinta del cuello
   description: Controls the width of the ties around your chest
 neckTieLength:
-  title: Neck tie length
+  title: Longitud de la cinta del cuello
   description: Controls the length of the ties around your chest
 neckTieEnds:
-  title: Neck tie ends
+  title: Puntas de la cinta del cuello
   description: Whether you like straight or pointy ends on the ties around your chest
 neckTieColours:
-  title: Neck tie colours
+  title: Colores de la cinta del cuello
   description: Whether you want single color ties around your chest, or dual-coloured ones
 crossBackTies:
   title: Cross back ties
