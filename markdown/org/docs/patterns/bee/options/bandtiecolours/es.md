@@ -1,8 +1,8 @@
 - - -
-title: Band (chest) tie length colours
+title: Colores de la longitud de la cinta del pecho
 - - -
 
-Whether you want single color tie around your chest, or dual-coloured ones
+Sobre si quieres una cinta de un solo color alrededor del pecho o de dos colores
 
 
 ## Efecto de esta opción en el patrón
