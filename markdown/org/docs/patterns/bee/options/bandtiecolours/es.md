@@ -2,7 +2,7 @@
 title: Colores de la longitud de la cinta del pecho
 - - -
 
-Sobre si quieres una cinta de un solo color alrededor del pecho o de dos colores
+Sobre si quieres la cinta alrededor del pecho de un solo color o de dos colores
 
 
 ## Efecto de esta opción en el patrón
