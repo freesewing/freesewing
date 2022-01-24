@@ -1,8 +1,8 @@
 - - -
-title: Show Bella
+title: Mostrar Bella
 - - -
 
-Shows the outline of the Bella block Bee is based on
+Muestra el contorno del patrón base Bella en el que se basa Bee
 
 
 ## Efecto de esta opción en el patrón
