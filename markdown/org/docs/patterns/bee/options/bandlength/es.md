@@ -1,8 +1,8 @@
 - - -
-title: Band Length (Cross back ties)
+title: Longitud de la cinta del torso (para la versión de tirantes cruzados)
 - - -
 
-Controls the length of the band around your chest for the cross back ties variation of Bee.
+Controla la longitud de la cinta alrededor de tu pecho para la versión de tirantes cruzados de Bee.
 
 
 ## Efecto de esta opción en el patrón
