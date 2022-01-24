@@ -12,8 +12,8 @@ backPocketDepth:
   title: Profondeur de la poche arrière
   description: Contrôle la profondeur de la poche arrière
 backPocketFacing:
-  title: Back pocket facing
-  description: Controls whether or not to include facing on the back pockets
+  title: Fond de poche arrière
+  description: Contrôle s'il faut inclure ou non un fond dans les poches arrière
 frontPocketSlantDepth:
   title: Profondeur de la poche avant
   description: Contrôle la profondeur de la poche (frontale)
