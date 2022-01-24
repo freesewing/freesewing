@@ -2,7 +2,7 @@
 title: Büstenumfang leicht
 ---
 
-![Der Effekt der Bust-Spannen-Option auf das Muster](sample.png)
+![Der Effekt der Bust-Spannen-Option auf das Schnittmuster](sample.png)
 
 Die **Bustumpfschlanke** Option bestimmt, wie viel Leichtigkeit auf den Bustumpfbereich angewendet wird.
 
