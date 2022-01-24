@@ -37,7 +37,7 @@ cathrin:
   title: Cathrin, corset
 charlie:
   description: Charlie es un patrón de pantalón tipo chinos.
-  title: Charlie chinos
+  title: Charlie, chinos
 cornelius:
   description: Cornelius son pantalones cortos de ciclista basados en el método de bocetado Keystone.
   title: Cornelius, pantalones cortos de ciclista
@@ -70,7 +70,7 @@ lunetius:
   title: Lunetius, lacerna
 paco:
   description: Paco son pantalones de verano casual pero con estilo.
-  title: Pantalones de Paco
+  title: Paco, pantalones largos
 penelope:
   description: Penelope es una falda de tubo una gorra de lápiz con o sin apertura en la parte de atrás.
   title: Penelope, falda de tubo
@@ -88,12 +88,12 @@ simone:
   title: Simone, camisa
 sven:
   description: Sven es una sudadera de líneas sencillas.
-  title: Sudadera de Sven
+  title: Sven, sudadera
 tamiko:
   description: Tamiko es un top cero residuos (zero-waste).
   title: Tamiko top
 teagan:
-  description: Teagan es un patrón de camiseta ajustada.
+  description: Teagan es un patrón de camiseta entallada.
   title: Teagan, camiseta
 theo:
   description: Theo es un patrón de pantalones clásico.
@@ -103,22 +103,22 @@ tiberius:
   title: Tiberius, túnica
 titan:
   description: Titán es un patrón base de pantalón sin pinzas.
-  title: Bloque de pantalones de tentán
+  title: Titan, patrón base de pantalón
 trayvon:
   description: Trayvon es una corbata que no repara en gastos para un resultado profesional.
   title: Trayvon, corbata
 ursula:
   description: Ursula es un patrón básico de braguitas altamente personalizable.
-  title: Ursula undies
+  title: Ursula, braguitas
 wahid:
   description: Wahid es el clásico chaleco entallado.
-  title: Cupón Wahid
+  title: Wahid, chaleco
 walburga:
   description: Walburga es un tabardo o sobreveste, una prenda histórica de la Europa medieval
-  title: Tabardo Walburga
+  title: Walburga, tabardo
 waralee:
-  description: Waralee son pantalones envueltos.
+  description: Waralee son pantalones envolventes.
   title: Pantalones de Waralee
 yuri:
-  description: Yuri es un elegante cardíaco de zipless basado en las sudaderas de Huey & Hugo
-  title: Sudadera Yuri
+  description: Yuri es una elegante sudadera tipo cárdigan sin cremallera, basado en las sudaderas Huey y Hugo
+  title: Yuri, sudadera
