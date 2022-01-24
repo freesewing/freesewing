@@ -8,7 +8,7 @@ Legen Sie die Seite des Rückens (Teil 1) mit der Seite (Teil 3) und stellen Sie
 
 Servieren Sie sie zusammen und berücksichtigen Sie, dass die Naht 1 cm beträgt. So richten Sie die Außennadel Ihres Sergers 1cm vom Rand Ihres Stoffes.
 
-> Wenn die Metrik nicht Ihre Tasche ist, ist 1 cm 3/8 Zoll.
+> Falls metrische Einheiten nicht dein Ding sind: 1cm entsprechen 3/8 inch.
 
 > Einige Serger haben einen Hebel zur Wahl zwischen flachen Nähten oder gebündelten Nähten. Wenn Sie vorhaben, später zu starten (siehe Schritt 6), stellen Sie sicher, dass Sie flache Nähte wählen.
 
@@ -79,9 +79,7 @@ Servieren Sie die Seiten der Türken, um die Fronten zu schließen. Um die beste
 
 <Tip>
 
-###### Halten Sie die Naht weg von meiner ...
-
-###### Keep that seam away from my ...
+##### Halte diese Naht weg von meinem ...
 
 Alternatively, sew the darts on each piece individually so that both seams are folded inside.
 Vermutlich ist es für den Träger angenehmer, in diesem Bereich keine belichtete Naht zu haben.
@@ -185,9 +183,9 @@ Wenn Sie einen Coverlock verwenden, legen Sie die elastische auf die gute Seite 
 Die Länge deines Gummizuges wird wahrscheinlich anders sein als die Länge des Stoffes, weil beide sich unterschiedlich weit dehnen lassen.
 Feststecken wird dir dabei helfen, eine gleichmäßige Dehnung zu erzielen.
 
-Teilen Sie Ihre elastische und Boxerbund in 4 (oder 8) Teile auf. An diesen Punkten elastisch und Gewebe anpinnen.
+Teile sowohl deinen Gummizug als auch dein Bund deiner Shorts in 4 (oder 8) Teile auf. Stecke Gummi und Stoff an diesen Stellen zusammen.
 
-Während des Nähens strecken Sie elastisch und Gewebe zwischen jedem Satz von Stiften, und entfernen Sie die Stifte während Sie sich bewegen.
+Während des Nähens dehnst du nun sowohl Gummi als auch Stoff zwischen den Stecknadeln, wobei du die Stecknadeln Stück für Stück entfernst.
 
 </Tip>
 
