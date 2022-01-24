@@ -232,6 +232,12 @@
  - plugin-banner is now part of plugin-bundle
  - plugin-bartack is now part of plugin-bundle
 
+### plugin-cutonfold
+
+#### Added
+
+ - Support for scale setting
+
 ### plugin-dimension
 
 #### Fixed
