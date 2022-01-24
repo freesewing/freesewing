@@ -118,7 +118,7 @@ Legen Sie die Seitenkante der ersten Seite mit der Kante aus dem Front+Einsatz (
 ### Schritt 8: zweites Seitenteil an Vorderteile anbringen
 ![zweites Seitenteil an Vorderteile anbringen](step08.png)
 
-Tun Sie dasselbe für die zweite Seite.
+Tu dasselbe für das zweite Seitenteil.
 
 ### Schritt 9: Optional: Topstitch
 ![Boxer mit (links) und ohne Aufsteckung](step06.jpg)
@@ -143,13 +143,13 @@ Nimm es langsam und sei **sehr bewusst**, wo deine Sergerklinge schneiden wird.
 ### Schritt 11: säume das erste Bein
 ![säume das erste Bein](step11.png)
 
-Zeit, die Beine zu stumpfen. Hem sie wie du alle anderen streckigen Stricken machen würst. Gehen Sie nach einer flexiblen Stickerei. Sie können eine Zick-Zack-Zwillingsstick- oder Zwillingsnadel verwenden, wenn Sie nicht über einen Deckschloss oder eine spezielle flexible Stich-Einstellung verfügen.
+Zeit, die Beine zu säumen. Säume sie genauso wie jeden anderen dehnbaren Strickstoff. Wähle einen flexiblen Stich. Sie können eine Zick-Zack-Zwillingsstick- oder Zwillingsnadel verwenden, wenn Sie nicht über einen Deckschloss oder eine spezielle flexible Stich-Einstellung verfügen.
 
 <Note>
 
-Ich habe das Gefühl, dass das Hämen viel einfacher ist, wenn man die Dinge zuerst fixiert.
-So falten Sie Ihren Saum zurück, und pinnen Sie ihn an der Stelle.
-Noch besser: Nähen Sie beide Beine und nähen Sie nur, wenn Sie mit dem Aussehen zufrieden sind.
+Ich finde, dass Säumen immer sehr viel einfacher ist, wenn die Teile zuerst festgesteckt werden.
+Falte also deinen Saum zurück, und stecke ihn fest.
+Noch besser: Stecke beide Beine fest und nähe erst dann, wenn es dir das Aussehen gefällt.
 
 </Note>
 
@@ -174,7 +174,7 @@ Machen Sie eine Markierung, wo die Kantengelenke, fügen Sie 2cm Naht erlaubt, u
 ### Schritt 14: Gummizug an Taille befestigen
 ![Gummizug an Taille befestigen](step14.png)
 
-Befestigen Sie die elastische Taille.
+Befestige den Gummizug an der Taille.
 
 Tun Sie so gute Seiten zusammen, wenn Sie auf einer herkömmlichen Nähmaschine eine flexible Nadelnüsse oder Zwillingsnadel verwenden.
 
@@ -182,8 +182,8 @@ Wenn Sie einen Coverlock verwenden, legen Sie die elastische auf die gute Seite 
 
 <Tip>
 
-Die Länge Ihres elastischen Materials wird sich wahrscheinlich von der Länge des Stoffes unterscheiden, da sie sich anders ausdehnen.
-Pinning hilft Ihnen, eine gleichmäßige Streckung zu erreichen.
+Die Länge deines Gummizuges wird wahrscheinlich anders sein als die Länge des Stoffes, weil beide sich unterschiedlich weit dehnen lassen.
+Feststecken wird dir dabei helfen, eine gleichmäßige Dehnung zu erzielen.
 
 Teilen Sie Ihre elastische und Boxerbund in 4 (oder 8) Teile auf. An diesen Punkten elastisch und Gewebe anpinnen.
 
