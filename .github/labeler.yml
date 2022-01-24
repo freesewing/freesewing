@@ -2,6 +2,10 @@
   - packages/aaron/*
 ":package: albert":
   - packages/albert/*
+":package: backend":
+  - packages/backend/*
+":package: bee":
+  - packages/bee/*
 ":package: bella":
   - packages/bella/*
 ":package: benjamin":
@@ -42,6 +46,8 @@
   - packages/florent/*
 "freesewing.dev":
   - packages/freesewing.dev/*
+"freesewing.lab":
+  - packages/freesewing.lab/*
 "freesewing.org":
   - packages/freesewing.org/*
 "freesewing.shared":
@@ -64,6 +70,8 @@
   - packages/jaeger/*
 "legend":
   - packages/legend/*
+"package: lunetius":
+  - packages/lunetius/*
 ":package: models":
   - packages/models/*
 ":package: mui-theme":
@@ -101,7 +109,7 @@
 ":package: plugin-logo":
   - packages/plugin-logo/*
 ":package: plugin-measurements":
-  - packages/plugin-measurments/*
+  - packages/plugin-measurements/*
 ":package: plugin-mirror":
   - packages/plugin-mirror/*
 ":package: plugin-notches":
@@ -120,6 +128,10 @@
   - packages/plugin-title/*
 ":package: plugin-validate":
   - packages/plugin-validate/*
+":package: plugin-versionfree-svg":
+  - packages/plugin-versionfree-svg/*
+":package: plugintest":
+  - packages/plugintest/*
 ":package: prettier-config":
   - packages/prettier-config/*
 ":package: remark-jargon":
@@ -134,16 +146,22 @@
   - packages/simon/*
 ":package: simone":
   - packages/simone/*
+":package: snapseries":
+  - packages/snapseries/*
 "strapi":
   - packages/strapi/*
 ":package: sven":
   - packages/sven/*
+":package: svgtopdf":
+  - packages/svgtopdf/*
 ":package: tamiko":
   - packages/tamiko/*
 ":package: teagan":
   - packages/teagan/*
 ":package: theo":
   - packages/theo/*
+":package: tiberius":
+  - packages/tiberius/*
 ":package: titan":
   - packages/titan/*
 ":package: trayvon":
@@ -156,6 +174,10 @@
   - packages/utils/*
 ":package: wahid":
   - packages/wahid/*
+":package: walburga":
+  - packages/walburga/*
 ":package: waralee":
   - packages/waralee/*
+":package: yuri":
+  - packages/yuri/*
 
