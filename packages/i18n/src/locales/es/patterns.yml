@@ -39,23 +39,23 @@ charlie:
   description: Charlie es un patrón de pantalón tipo chinos.
   title: Charlie chinos
 cornelius:
-  description: El cornelio son brechas ciclistas basadas en el método de redacción de piedra angular.
-  title: Breeches de ciclismo cornelio
+  description: Cornelius son pantalones cortos de ciclista basados en el método de bocetado Keystone.
+  title: Cornelius, pantalones cortos de ciclista
 diana:
   description: Diana es un top con un escote drapeado.
-  title: Diana tapizada
+  title: Diana, top de escote drapeado
 florent:
-  description: 'Florent es una boina plana, de forma redondeada y con una pequeña visera rígida.'
-  title: Florent flat cap
+  description: 'Florent es una boina, redondeada, con una pequeña visera rígida en en la parte de delante.'
+  title: Florent, boina
 florence:
-  description: 'Florencia es una máscara facial.'
+  description: 'Florence es una mascarilla.'
   title: Máscara de Florencia
 holmes:
-  description: 'Para Sherlock Holmes cosplay o sólo un lindo sombrero.'
-  title: Sombrero venado holmes
+  description: 'Para un cosplay de Sherlock Holmes o simplemente un sombrero bonito.'
+  title: Holmes, sombrero deerstalker o cervadora
 hortensia:
-  description: 'Hortensia es una bolsa.'
-  title: Bolso de la hortensia
+  description: 'Hortensia es un bolso de mano.'
+  title: Hortensia, bolso de mano
 huey:
   description: Huey es una sudadera con capucha, cremallera y bolsillos delanteros opcionales.
   title: Sudadera Huey
