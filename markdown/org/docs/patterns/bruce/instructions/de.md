@@ -81,8 +81,8 @@ Servieren Sie die Seiten der Türken, um die Fronten zu schließen. Um die beste
 
 ##### Halte diese Naht weg von meinem ...
 
-Alternatively, sew the darts on each piece individually so that both seams are folded inside.
-Vermutlich ist es für den Träger angenehmer, in diesem Bereich keine belichtete Naht zu haben.
+Alternativ kannst du die Abnäher auf jeden Teil einzeln schließen, damit beide Nähte innen umschlossen sind.
+Vermutlich ist es für die tragende Person angenehmer, in diesem Bereich keine exponierte Naht zu haben.
 
 </Tip>
 
@@ -128,7 +128,7 @@ Wenn Sie vorher geheftet haben, sollten Sie das Gleiche jetzt für die Nähte tu
 
 Wir werden nun die bogenförmige Öffnung im hinteren Teil zu den vorderen Teilen der Boxer, bestehend aus den Fronten und Einsätzen, verführen.
 
-Die Noten auf dem hinteren Stück helfen Ihnen. Es gibt die Mittelstufe und die anderen beiden Noten sollten mit den Fronten und Einsatzteilen übereinstimmen.
+Die Knipse auf dem Rückteil helfen dir dabei. Es gibt die Mittelstufe und die anderen beiden Noten sollten mit den Fronten und Einsatzteilen übereinstimmen.
 
 <Tip>
 
@@ -141,7 +141,7 @@ Nimm es langsam und sei **sehr bewusst**, wo deine Sergerklinge schneiden wird.
 ### Schritt 11: säume das erste Bein
 ![säume das erste Bein](step11.png)
 
-Zeit, die Beine zu säumen. Säume sie genauso wie jeden anderen dehnbaren Strickstoff. Wähle einen flexiblen Stich. Sie können eine Zick-Zack-Zwillingsstick- oder Zwillingsnadel verwenden, wenn Sie nicht über einen Deckschloss oder eine spezielle flexible Stich-Einstellung verfügen.
+Zeit, die Beine zu säumen. Säume sie genauso wie jeden anderen dehnbaren Strickstoff. Wähle einen flexiblen Stich. Du kannst einen Zick-Zack-Stich oder eine Zwillingsnadel verwenden, falls du keine Coverlock oder einen speziellen dehnbaren Stich hast.
 
 <Note>
 
