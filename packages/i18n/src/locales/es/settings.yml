@@ -31,4 +31,4 @@ debug:
   description: Habilita la depuración para obtener información adicional sobre cómo se creó tu patrón
 scale:
   title: Escala
-  description: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
+  description: Controla el ancho de línea general, el tamaño de fuente y otros elementos que no cambian de escala junto a las medidas del patrón
