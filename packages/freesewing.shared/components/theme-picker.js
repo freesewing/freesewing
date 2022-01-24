@@ -26,8 +26,8 @@ const ThemePicker = ({ app, className }) => {
                 className="btn btn-ghost text-base-content hover:bg-base-200"
               >
                 {app.i18n
-                  ? app.t(`${app.theme}Theme`)
-                  : `${app.theme} Theme`
+                  ? app.t(`${theme}Theme`)
+                  : `${theme} Theme`
                 }
               </button>
             </li>
