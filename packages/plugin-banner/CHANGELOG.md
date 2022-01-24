@@ -1,7 +1,7 @@
 # Change log for: @freesewing/plugin-banner
 
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 

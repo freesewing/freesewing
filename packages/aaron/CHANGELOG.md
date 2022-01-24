@@ -1,7 +1,7 @@
 # Change log for: @freesewing/aaron
 
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 

@@ -1,7 +1,7 @@
 # Change log for: @freesewing/examples
 
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Added
 

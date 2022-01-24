@@ -1,7 +1,7 @@
 # Change log for: @freesewing/plugin-bartack
 
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
