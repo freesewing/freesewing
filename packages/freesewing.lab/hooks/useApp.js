@@ -69,6 +69,7 @@ function useApp(full = true) {
   return {
     // Static vars
     site: 'lab',
+    patterns: config.patterns,
 
     // State
     language,

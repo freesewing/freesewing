@@ -38,7 +38,6 @@ const WorkbenchWrapper = ({ app, pattern }) => {
   // State for display mode and gist
   const [mode, setMode] = useState(null)
   const [gist, setGist] = useState(defaultGist(pattern, app.language))
-  const [fuck, setFuck] = useState('')
 
   // If we don't have the requiremed measurements,
   // force mode to measurements

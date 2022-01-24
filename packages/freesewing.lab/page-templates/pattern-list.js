@@ -13,7 +13,7 @@ const links = (section, list) => list.map(design => (
   </li>
 ))
 
-const ListPage = ({ sections=Object.keys(config.patterns) }) => {
+const PatternListPageTemplate = ({ sections=Object.keys(config.patterns) }) => {
   const app = useApp()
   return (
     <Page app={app} title="FreeSewing Lab" noSearch>
@@ -33,7 +33,7 @@ const ListPage = ({ sections=Object.keys(config.patterns) }) => {
       <div className="max-w-screen-md">
         {Object.keys(config.navigation).map(section => {
           if (sections.indexOf(section) !== -1) return (
-            <div>
+            <div key={section}>
               <h2>{config.navigation[section].__title}</h2>
               <ul className="flex flex-row flex-wrap gap-2">
                 {links(section, config.patterns[section])}
@@ -48,4 +48,4 @@ const ListPage = ({ sections=Object.keys(config.patterns) }) => {
   )
 }
 
-export default ListPage
+export default PatternListPageTemplate
