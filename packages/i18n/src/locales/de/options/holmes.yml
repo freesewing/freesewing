@@ -1,7 +1,7 @@
 ---
 headEase:
-  title: Head ease
-  description: The amount of ease around your head.
+  title: Kopfumfangszugabe
+  description: Bequemlichkeits-/Bewegungszugabe zum Umfang deines Kopfes.
 lengthRatio:
   title: Längenverhältnis
   description: Controls the length of the crown and ear flaps
