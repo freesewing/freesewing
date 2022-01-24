@@ -1,8 +1,8 @@
 ---
-title: Scale
+title: Mise à l'échelle
 ---
 
-The scale factor can be used to scale down (or up) everything that is not the actual pattern itself. Things like font sizes, arrow sizes, logos, scalebox, line width and so on.
+Le facteur d'échelle peut être utilisé pour réduire (ou augmenter) tout ce qui n'est pas le patron réel lui-même. Things like font sizes, arrow sizes, logos, scalebox, line width and so on.
 
 It was specifically created to accommodate patterns for doll clothes and other situations where the text and snippets would become too large in comparison to the pattern.
 
