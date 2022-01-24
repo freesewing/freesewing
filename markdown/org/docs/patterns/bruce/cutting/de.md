@@ -1,17 +1,17 @@
-Bruce besteht aus einem Rücken und zwei Seiten, Insets und Fronten.
+Bruce besteht aus einer Rückseite, und jeweils zwei Seitenteilen, Einsätzen und Vorderteilen.
 
  - **Oberstoff**
-   - **1 zurück** auf die Falte schneiden
-   - **2 Fronten schneiden**
-   - **2 Einfügungen schneiden**
-   - **2 Seiten schneiden**
+   - Schneide **1 Rückseite** im Stoffbruch
+   - Schneide **2 Vorderteile**
+   - Schneide **2 Einsätze**
+   - Schneide **2 Seitenteile**
 
 <Warning>
 
-###### Vorsichtsmaßnahmen
+###### Vorbehalte
 
-- **back**: Extra Saum im Bein
-- **front**: Schneiden **zweimal**
+- **Rückseite**: extra Saumzugabe am Bein
+- **Vorderteil**: schneide dies **zweimal**
 
 </Warning>
 
