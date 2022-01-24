@@ -19,16 +19,16 @@ units:
   description: Legt die in deinem Schnittmuster verwendete Maßeinheit fest
 margin:
   title: Randabstand
-  description: Legt den freien Rand um die einzelnen Teile des Schnittmusters fest
+  description: Legt den Mindestabstand der Teile des Schnittmusters zum Rand und untereinander fest
 complete:
   title: Details
   description: Legt fest, wie detailliert das Schnittmuster dargestellt wird; entweder ein vollständiges Schnittmuster mit allen Details oder eine einfache Kontur der Schnittmusterteile
 layout:
   title: Layout
-  description: Legt fest, wie die einzelnen Schnittmusterteile auf deinem Schnittmusterbogen angeordnet werden
+  description: Legt fest, wie die einzelnen Teile auf deinem Schnittmusterbogen angeordnet werden
 debug:
   title: Debug
   description: Debuggen aktivieren, um zusätzliche Informationen dazu zu erhalten, wie dein Schnittmuster erstellt wurde
 scale:
-  title: Beschriftungsgöße
+  title: Beschriftungsgröße
   description: "Steuert die allgemeine Linienbreite, Schriftgröße und andere Elementgrößen, \nbeeinflusst jedoch nicht den Maßstab des Schnittmusters selbst"
