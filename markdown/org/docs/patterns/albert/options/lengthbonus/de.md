@@ -1,5 +1,5 @@
 
-Wie viel länger als die Standardlänge, um Ihre Schürze zu erstellen.
+Wie viel länger als die Standardlänge deine Schürze sein soll.
 
 
 ## Effekt dieser Option auf das Schnittmuster
