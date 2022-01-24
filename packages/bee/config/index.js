@@ -38,7 +38,7 @@ export default {
     advanced: [
       { bellaDarts: ['backDartHeight'] },
       { bellaArmhole: ['armholeDepth', 'frontArmholePitchDepth'] },
-      { bellaAdvanced: ['frontShoulderWidth', 'highBustWidth'] },
+      { bellaAdvanced: ['frontShoulderWidth', 'fullChestEaseReduction', 'highBustWidth'] },
     ],
   },
   measurements: [
@@ -87,7 +87,6 @@ export default {
     backArmholeSlant: 5,
     backArmholeCurvature: 0.63,
     frontArmholeCurvature: 0.63,
-    fullChestEaseReduction: 0.04,
     backArmholePitchDepth: 0.35,
     bustDartLength: 1,
     waistDartLength: 1,
@@ -100,8 +99,9 @@ export default {
     //Bella Advanced
     backDartHeight: { pct: 46, min: 38, max: 54 },
     armholeDepth: { pct: 44, min: 38, max: 46 },
-    frontShoulderWidth: { pct: 95, max: 98, min: 92 },
     frontArmholePitchDepth: { pct: 29, max: 31, min: 27 },
+    frontShoulderWidth: { pct: 95, max: 98, min: 92 },
+    fullChestEaseReduction: { pct: 4, min: 0, max: 8 },
     highBustWidth: { pct: 86, max: 92, min: 80 },
     // Bikini Top
     topDepth: { pct: 54, min: 50, max: 80 },
