@@ -3,7 +3,7 @@ title: Patrones de costura hechos a medida
 order: 200
 ---
 
-Todos nuestros patrones de costura están **hechos para medir**.
+Todos nuestros patrones están **hechos a medida**.
 
 No escalamos ni clasificamos patrones. En su lugar, redactamos el patrón a sus mediciones. Eso sucede en tiempo real, en tu navegador.
 
