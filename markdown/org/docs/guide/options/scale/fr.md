@@ -2,8 +2,8 @@
 title: Mise à l'échelle
 ---
 
-Le facteur d'échelle peut être utilisé pour réduire (ou augmenter) tout ce qui n'est pas le patron réel lui-même. Things like font sizes, arrow sizes, logos, scalebox, line width and so on.
+Le facteur d'échelle peut être utilisé pour réduire (ou augmenter) tout ce qui n'est pas le patron réel lui-même. Des choses comme les tailles de police, les tailles de flèches, les logos, la boîte d'échelle, la largeur de ligne etc.
 
-It was specifically created to accommodate patterns for doll clothes and other situations where the text and snippets would become too large in comparison to the pattern.
+Cela a été spécialement créé pour adapter des patrons pour les vêtements de poupée et d'autres situations où le texte et les encarts deviendraient trop volumineux par rapport au patron.
 
-You need to enable *Expert mode* after which you can find the scale setting under *Advanced*.
+Vous devez activer le *Mode Expert* après quoi vous pouvez trouver le réglage d'échelle sous *Avancé*.
