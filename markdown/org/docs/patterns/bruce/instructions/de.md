@@ -2,7 +2,7 @@
 
 ### Schritt 1: Rückteil an erstes Seitenteil anbringen
 
-![Zur ersten Seite zurückkehren](step01.png)
+![Rückteil an erstes Seitenteil anbringen](step01.png)
 
 Legen Sie die Seite des Rückens (Teil 1) mit der Seite (Teil 3) und stellen Sie sicher, dass die guten Seiten zusammengesetzt sind. Da die Seite (Teil 3) symmetrisch ist, kann man nicht schief gehen.
 
@@ -14,7 +14,7 @@ Servieren Sie sie zusammen und berücksichtigen Sie, dass die Naht 1 cm beträgt
 
 ### Schritt 2: Rückteil an zweites Seitenteil anbringen
 
-![Zur zweiten Seite zurücktreten](step02.png)
+![Rückteil an zweites Seitenteil anbringen](step02.png)
 
 Legen Sie die andere Seite des Rückens (Teil 1) mit der zweiten Seite (Teil 3) auf und stellen Sie die guten Seiten zusammen. Da die Seite (Teil 3) symmetrisch ist, kann man nicht schief gehen.
 
@@ -24,7 +24,7 @@ Servieren Sie sie zusammen, wie Sie es auf der anderen Seite getan haben.
 
 ### Schritt 3: ersten Einsatz an Vorderteile anbringen
 
-![Starte an einem Ende](step03-a.png) ![Weiter die Stücke ausrichten während du fortfährst](step03-b.png) ![Bis zum anderen Ende](step03-c.png)
+![Starte an einem Ende](step03-a.png) ![Fahre damit fort, die Teile auszurichten, während du fortfährst](step03-b.png) ![Bis zum anderen Ende](step03-c.png)
 
 Um den Einsatz (Teil 4) mit den Fronten (Teil 2) zu verbinden, müssen Sie sie über ihre kurvigen Kanten verstreuen.
 
@@ -60,18 +60,18 @@ Nähen Sie die Frontdarts separat und drehen Sie die ganze Sache nach draußen, 
 </Tip>
 
 ### Schritt 4: zweiten Einsatz an Vorderteile anbringen
-![Zweite Einfügung und Fronten beitreten](step03-d.png)
+![zweiten Einsatz an Vorderteile anbringen](step03-d.png)
 
 Nachdem Sie den ersten Einsatz und die Fronten beigetreten sind, fahren Sie mit der zweiten fort.
 
-Wenn die Fronten und Einsätze miteinander verbunden sind, bleiben Ihnen 3 Teile übrig:
+Jetzt, wo Vorderteile und Einsätze miteinander verbunden sind, hast du noch drei Teile übrig:
 
- - Die verbundenen Einsätze und Fronten
- - Die beigetretenen Seiten und zurück
- - Der elastische
+ - die miteinander verbundenen Vorderteile und Einsätze
+ - die miteinander verbunden Seiten- und Rückteile
+ - der Gummizug
 
 ### Schritt 5: vordere Abnäher schließen
-![Den Frontdart schließen](step05.png)
+![vordere Abnäher schließen](step05.png)
 
 Falten Sie die Fronten an der Mitte der Frontlinie, so dass die Tasten am unteren Rand nach oben.
 
@@ -111,12 +111,12 @@ Die Naht stoppt auf halbem Wege (wo der Dart endet), aber die Aufstiftung sollte
 </Tip>
 
 ### Schritt 7: erstes Seitenteil an Vorderteile anbringen
-![Schließen Sie sich der ersten Seite an den Fronten an](step07.png)
+![erstes Seitenteil an Vorderteile anbringen](step07.png)
 
 Legen Sie die Seitenkante der ersten Seite mit der Kante aus dem Front+Einsatz (gute Seiten wie üblich) zusammen und verführen Sie sie zusammen.
 
 ### Schritt 8: zweites Seitenteil an Vorderteile anbringen
-![Schließen Sie sich der zweiten Seite an den Fronten an](step08.png)
+![zweites Seitenteil an Vorderteile anbringen](step08.png)
 
 Tun Sie dasselbe für die zweite Seite.
 
@@ -141,7 +141,7 @@ Nimm es langsam und sei **sehr bewusst**, wo deine Sergerklinge schneiden wird.
 </Tip>
 
 ### Schritt 11: säume das erste Bein
-![Hem das erste Bein](step11.png)
+![säume das erste Bein](step11.png)
 
 Zeit, die Beine zu stumpfen. Hem sie wie du alle anderen streckigen Stricken machen würst. Gehen Sie nach einer flexiblen Stickerei. Sie können eine Zick-Zack-Zwillingsstick- oder Zwillingsnadel verwenden, wenn Sie nicht über einen Deckschloss oder eine spezielle flexible Stich-Einstellung verfügen.
 
@@ -154,25 +154,25 @@ Noch besser: Nähen Sie beide Beine und nähen Sie nur, wenn Sie mit dem Aussehe
 </Note>
 
 ### Schritt 12: säume das zweite Bein
-![Hem das zweite Bein](step12.png)
+![säume das zweite Bein](step12.png)
 
-Sie wissen, dass das sinnvoll ist.
+Du weißt, dass das Sinn ergibt.
 
 ### Schritt 13: forme den Gummizug zu einer Schlaufe
-![Machen Sie Ihren elastischen Teil zu einer Schleife](step13.png)
+![forme den Gummizug zu einer Schlaufe](step13.png)
 
 Nähen Sie beide Enden der Elastik zusammen mit guten Seiten zusammen.
 
 <Note>
 
-###### Nicht sicher, wie viel Elastik du brauchst?
+###### Nicht sicher, wie lang dein Gummizug sein muss?
 Einfach die Elastik in die Taille einwickeln, wo sie am Ende sitzt, und bis sie sich richtig fühlt.
 Machen Sie eine Markierung, wo die Kantengelenke, fügen Sie 2cm Naht erlaubt, und das ist Ihre Länge.
 
 </Note>
 
-### Schritt 14: elastisch an Taille befestigen
-![elastisch an Taille befestigen](step14.png)
+### Schritt 14: Gummizug an Taille befestigen
+![Gummizug an Taille befestigen](step14.png)
 
 Befestigen Sie die elastische Taille.
 
