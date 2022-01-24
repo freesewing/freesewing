@@ -23,7 +23,7 @@
 
 <Tip>
 
-##### Ein Farbton vielleicht?
+##### Ein bisschen Farbe vielleicht?
 
 Du kannst Teil 4 aus einer anderen Farbe für ein wenig kontrastierendes Detail in den hinteren Taschen schneiden
 
