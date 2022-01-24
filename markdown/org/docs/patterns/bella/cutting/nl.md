@@ -1,6 +1,6 @@
-- - -
+---
 title: Bella Cutting
-- - -
+---
 
 **Buitenstof**
 

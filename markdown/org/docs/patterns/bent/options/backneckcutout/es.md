@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 ![Corte trasero del cuello](backneckcutout.svg)
 

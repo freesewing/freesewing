@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 ![Arrondi de l'encolure dos](backneckcutout.svg)
 

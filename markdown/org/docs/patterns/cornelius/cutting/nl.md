@@ -1,6 +1,6 @@
-- - -
+---
 title: Cornelius Cutting
-- - -
+---
 
 ### Materialen
  - **Buitenstof**

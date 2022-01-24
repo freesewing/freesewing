@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 Bepaalt de breedte van de tailleband.
 
 

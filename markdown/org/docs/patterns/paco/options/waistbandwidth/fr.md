@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 Contrôle la largeur de la ceinture.
 
 

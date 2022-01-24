@@ -1,6 +1,6 @@
-- - -
+---
 title: Cross back ties
-- - -
+---
 
 A variation of Bee, where the neck ties cross and tie at the back with a band that replaces the band tie
 

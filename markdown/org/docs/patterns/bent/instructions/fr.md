@@ -1,6 +1,6 @@
-- - -
+---
 title: Bent Construction
-- - -
+---
 
 <Note>
 
