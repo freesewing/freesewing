@@ -27,22 +27,22 @@ bellaGuide:
   title: Mostrar Bella
   description: Muestra el contorno del patrón base Bella en el que se basa Bee
 ties:
-  title: Tirantes
-  description: Whether to includes ties, yes or no
+  title: Cintas
+  description: Sobre si incluir cintas o no
 bandTieWidth:
-  title: Band (chest) tie width
-  description: Controls the width of the ties around your chest
+  title: Ancho de la cinta del pecho
+  description: Controla el ancho de las cintas alrededor del pecho
 bandTieLength:
-  title: Band (chest) tie length
-  description: Controls the length of the ties around your chest
+  title: Longitud de la cinta del pecho
+  description: Controla la longitud de las cintas alrededor del pecho
 bandTieEnds:
-  title: Band (chest) tie ends
-  description: Whether you like straight or pointy ends on the ties around your chest
+  title: Puntas de la cinta del pecho
+  description: Si prefieres que las puntas de la cinta alrededor del pecho sean planas o acaben en punta
 bandTieColours:
-  title: Band (chest) tie length colours
-  description: Whether you want single color ties around your chest, or dual-coloured ones
+  title: Colores de la longitud de la cinta del pecho
+  description: Sobre si quieres cintas de un solo color alrededor del pecho o de dos colores.
 neckTieWidth:
-  title: Neck tie width
+  title: Ancho de la cinta del cuello
   description: Controls the width of the ties around your chest
 neckTieLength:
   title: Neck tie length
