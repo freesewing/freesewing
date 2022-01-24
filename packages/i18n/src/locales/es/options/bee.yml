@@ -1,15 +1,15 @@
 ---
 chestEase:
   title: Holgura de pecho
-  description: Controls the chest ease in the underlying Bella block Bee is based on
+  description: Controla la holgura del pecho en el patrón base (Bella) en el que se basa Bee
 waistEase:
   title: Holgura de cintura
-  description: Controls the waist ease in the underlying Bella block Bee is based on
+  description: Controla la holgura de cintura en el patrón base (Bella) en el que se basa Bee
 bustSpanEase:
-  title: Facilidad de la expansión del polvo
-  description: Controls the bust span ease in the underlying Bella block Bee is based on
+  title: Holgura alrededor del busto
+  description: Controla la holgura de busto en el patrón base (Bella) en el que se basa Bee
 topDepth:
-  title: Top Depth
+  title: Altura superior
   description: Controls how far the bikini cup extends upwards
 bottomCupDepth:
   title: Bottom depth
