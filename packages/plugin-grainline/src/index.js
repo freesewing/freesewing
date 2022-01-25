@@ -1,17 +1,17 @@
 import markers from './markers'
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 const dflts = {
   text: 'grainline',
 }
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
     preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-grainline') === false) {
-        svg.attributes.set('freesewing:plugin-grainline', version)
+        svg.attributes.set('freesewing:plugin-grainline', pkg.version)
         svg.defs += markers
       }
     },
