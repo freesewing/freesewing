@@ -19,6 +19,7 @@ const ModeButtons = props => props.children.length === 0
             hover:border-secondary
             sm:hover:border-secondary-focus
             text-left
+            capitalize
             ${mode.name === props.mode
               ? 'text-secondary border-secondary sm:text-secondary-focus sm:border-secondary-focus'
               : 'text-base-content sm:text-neutral-content'
@@ -54,12 +55,12 @@ const groupMaker = (t, setMode, pattern) => ({
       },
       {
         name: 'draft',
-        title: t('app.draftThing', { thing: pattern }),
+        title: t('app.draftPattern', { pattern: pattern.config.name }),
         onClick: () => setMode('draft')
       },
       {
         name: 'test',
-        title: t('app.testThing', { thing: pattern }),
+        title: t('app.testPattern', { pattern: pattern.config.name }),
         onClick: () => setMode('test')
       },
       {

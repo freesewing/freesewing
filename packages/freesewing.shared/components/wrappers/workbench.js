@@ -21,8 +21,10 @@ const defaultGist = (pattern, language='en') => ({
 
 const hasRequiredMeasurements = (pattern, gist) => {
   for (const m of pattern.config.measurements) {
-    //console.log(m)
+    if (!gist?.measurements?.[m]) return false
   }
+
+  return true
 }
 
 /*
