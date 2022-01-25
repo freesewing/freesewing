@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu.js'
 import Measurements, { Input } from 'shared/components/workbench/measurements.js'
@@ -39,7 +40,7 @@ const WorkbenchWrapper = ({ app, pattern }) => {
 
   // State for display mode and gist
   const [mode, setMode] = useState(null)
-  const [gist, setGist] = useState(defaultGist(pattern, app.language))
+  const [gist, setGist] = useLocalStorage('gist', defaultGist(pattern, app.language))
 
   // If we don't have the requiremed measurements,
   // force mode to measurements
