@@ -7,7 +7,7 @@ import draftBack from './back'
 import draftFront from './front'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Pattern = new freesewing.Design(config(freesewing), plugins)
 
 // Attach draft methods to prototype
 Pattern.prototype.draftBase = function (part) {
