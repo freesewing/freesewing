@@ -1,10 +1,10 @@
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-i18n', version),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-i18n', pkg.version),
     insertText: (locale, text, data) => {
       if (!data) {
         console.log(
