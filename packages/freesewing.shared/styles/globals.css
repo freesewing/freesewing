@@ -15,6 +15,9 @@
   h6 { @apply text-base-content text-base font-bold lg:text-lg }
   p { @apply text-base-content my-1 py-2 lg:text-xl }
 
+  /* Dropdowns */
+  .navdrop { max-height: 80vh; }
+
   /* mdx styles */
   .mdx a { @apply text-secondary underline decoration-1 }
   .mdx a:hover { @apply text-secondary-focus decoration-2 decoration-current }

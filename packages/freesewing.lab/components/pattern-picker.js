@@ -14,7 +14,7 @@ const PatternPicker = ({ app }) => {
           <DesignIcon />
           <span>Patterns</span>
         </div>
-        <ul tabIndex="0" className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 max-h-96 overflow-y-scroll">
+        <ul tabIndex="0" className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 overflow-y-scroll navdrop">
           {Object.keys(app.patterns).map(section => (
             <React.Fragment key={section}>
               <li className={`
