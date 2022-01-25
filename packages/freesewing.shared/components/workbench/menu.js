@@ -23,7 +23,7 @@ const ModeButtons = props => props.children.length === 0
               ? 'text-secondary border-secondary sm:text-secondary-focus sm:border-secondary-focus'
               : 'text-base-content sm:text-neutral-content'
             }
-          `}>
+          `} onClick={mode.onClick}>
             <span className={`
               text-3xl mr-2 inline-block p-0 leading-3
               ${mode.name === props.mode
@@ -88,7 +88,7 @@ const WorkbenchMenu = props => {
   return (
     <nav className="smmax-w-96 grow mb-12">
       {Object.keys(groups).map(group => (
-        <details className='py-1'>
+        <details className='py-1' key={group}>
           <summary className={`
             flex flex-row uppercase gap-4 font-bold text-lg
             hover:cursor-row-resize

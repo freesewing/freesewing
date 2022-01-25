@@ -12,7 +12,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
   const title = app.t(`measurements.${m}`)
   const isValid = input => {
-    if (input === null || input === '') return null
+    if (input === '') return ''
     return !isNaN(input)
   }
 
@@ -26,9 +26,9 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
     } else setValid(false)
   }
 
-  const [val, setVal] = useState(gist?.measurements?.[m] || null)
+  const [val, setVal] = useState(gist?.measurements?.[m] || '')
   const [valid, setValid] = useState(typeof gist?.measurements?.[m] === 'undefined'
-    ? null :
+    ? '' :
     isValid(gist.measurements[m])
   )
 
@@ -68,14 +68,14 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
         <span className={`
           ${valid === false && 'bg-error text-neutral-content'}
           ${valid === true && 'bg-success text-neutral-content'}
-          ${valid === null && 'bg-base-200 text-base-content'}
+          ${valid === '' && 'bg-base-200 text-base-content'}
        `}>
           cm
         </span>
       </label>
       <label className="label">
         <span className="label-text-alt">
-          {valid === null
+          {valid === ''
             ? ''
             : valid
             ? 'Looks good'

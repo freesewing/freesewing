@@ -21,7 +21,7 @@ const defaultGist = (pattern, language='en') => ({
 
 const hasRequiredMeasurements = (pattern, gist) => {
   for (const m of pattern.config.measurements) {
-    console.log(m)
+    //console.log(m)
   }
 }
 
@@ -75,6 +75,8 @@ const WorkbenchWrapper = ({ app, pattern }) => {
           updateGist={updateGist}
         />
       )}
+      <pre>{JSON.stringify(mode, null, 2)}</pre>
+      <pre>{JSON.stringify(gist, null, 2)}</pre>
     </Layout>
   )
 }
