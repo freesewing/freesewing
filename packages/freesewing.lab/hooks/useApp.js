@@ -2,13 +2,52 @@ import { useState } from 'react'
 import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
-// config
-import config from 'site/freesewing.config.js'
+// Patterns
+import patterns from 'site/patterns.json'
 // Languages
 import { strings } from 'pkgs/i18n'
 
+// Initial navigation
+const initialNavigation = {
+  accessories: {
+    __title: 'accessoryPatterns',
+    __order: 'accessoryPatterns',
+    __linktitle: 'accessoryPatterns',
+    __slug: 'accessories',
+  },
+  blocks: {
+    __title: 'blockPatterns',
+    __order: 'blockPatterns',
+    __linktitle: 'blockPatterns',
+    __slug: 'blocks',
+  },
+  garments: {
+    __title: 'garmentPatterns',
+    __order: 'garmentPatterns',
+    __linktitle: 'GarmentPatterns',
+    __slug: 'garments',
+  },
+  utilities: {
+    __title: 'utilityPatterns',
+    __order: 'utilityPatterns',
+    __linktitle: 'utilityPatterns',
+    __slug: 'utilities',
+  },
+}
+for (const type in patterns) {
+  for (const design of patterns[type]) {
+    initialNavigation[type][design] = {
+      __title: design,
+      __order: design,
+      __linktitle: design,
+      __slug: `${type}/${design}`
+    }
+  }
+}
+
+// Translate navigation
 const translateNavigation = (lang, t) => {
-  const newNav = {...config.navigation}
+  const newNav = {...initialNavigation}
   for (const key in newNav) {
     const translated = t(newNav[key].__title, false, lang)
     newNav[key].__title = translated
@@ -34,7 +73,7 @@ function useApp(full = true) {
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(config.navigation)
+  const [navigation, setNavigation] = useState(initialNavigation)
   const [slug, setSlug] = useState('/')
   const [pattern, setPattern] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -69,7 +108,7 @@ function useApp(full = true) {
   return {
     // Static vars
     site: 'lab',
-    patterns: config.patterns,
+    patterns,
 
     // State
     language,
