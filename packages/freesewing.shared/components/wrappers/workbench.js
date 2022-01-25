@@ -62,7 +62,7 @@ const WorkbenchWrapper = ({ app, pattern }) => {
     app: app,
     noSearch: true,
     workbench: true,
-    AltMenu: Menu
+    AltMenu: <Menu app={app} pattern={pattern} mode={mode} setMode={setMode} gist={gist} updateGist={updateGist} />
   }
 
   return (
@@ -75,7 +75,6 @@ const WorkbenchWrapper = ({ app, pattern }) => {
           updateGist={updateGist}
         />
       )}
-      <pre>{JSON.stringify(gist, null, 2)}</pre>
     </Layout>
   )
 }
