@@ -94,6 +94,7 @@ function useApp(full = true) {
     const template =
       strings[toLanguage][key] ||
       strings[toLanguage][`app.${key}`] ||
+      strings[toLanguage][`plugin.${key}`] ||
       strings.en[`app.${key}`] ||
       false
     if (!props && template) return template
@@ -105,7 +106,7 @@ function useApp(full = true) {
     //console.log('Missing translation key:', key)
 
     // If it's a key (no spaces), return the final part, that's slightly better
-    return (key.indexOf(' ') === -1)
+    return (typeof key === 'string' && key.indexOf(' ') === -1)
       ? key.split('.').pop()
       : key
   }
