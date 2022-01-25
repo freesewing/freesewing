@@ -7,7 +7,7 @@
 <Tip>
 
 For woven fabric make this a bias cut strip.  
-For knit fabrc Make a strip with the stretch of the fabric running along the long edge.
+For knit fabric make a strip with the stretch of the fabric running along the long edge.
 
 </Tip>
 
