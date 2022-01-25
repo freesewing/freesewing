@@ -68,6 +68,7 @@ documentationOverview: Documentation overview
 download: Download
 draft: Draft
 draftPattern: 'Draft {pattern}'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Draft {pattern} for {model}'
 drafts: Drafts
 draftSettings: Draft settings
