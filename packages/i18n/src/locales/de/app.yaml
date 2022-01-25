@@ -69,6 +69,7 @@ documentationOverview: Überblick über die Dokumentation
 download: Herunterladen
 draft: Entwurf
 draftPattern: '{pattern} erstellen'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Entwerfe {pattern} für {model}'
 drafts: Entwürfe
 draftSettings: Entwurfseinstellungen
