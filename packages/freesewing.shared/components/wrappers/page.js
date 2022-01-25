@@ -38,9 +38,10 @@ const PageWrapper= props => {
 
   return (
     <div
-      {...swipeHandlers}
+      ref={swipeHandlers.ref}
+      onMouseDown={swipeHandlers.onMouseDown}
       data-theme={props.app.theme}
-      key={props.app.theme+Date.now()} // Thiis forces the data-theme update
+      key={props.app.theme} // Thiis forces the data-theme update
     >
       {props.noLayout
         ? props.children
