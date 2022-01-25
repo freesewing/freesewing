@@ -5,6 +5,7 @@ import Menu from 'shared/components/workbench/menu/index.js'
 import Measurements, { Input } from 'shared/components/workbench/measurements/index.js'
 import LabDraft from 'shared/components/workbench/draft/index.js'
 import set from 'lodash.set'
+import unset from 'lodash.unset'
 
 // Generates a default pattern gist to start from
 const defaultGist = (pattern, language='en') => ({
@@ -60,13 +61,27 @@ const WorkbenchWrapper = ({ app, pattern }) => {
     set(newGist, path, content)
     setGist(newGist)
   }
+  const unsetGist = (path) => {
+    const newGist = {...gist}
+    unset(newGist, path)
+    setGist(newGist)
+  }
+
 
   // Required props for layout
   const layoutProps = {
     app: app,
     noSearch: true,
     workbench: true,
-    AltMenu: <Menu app={app} pattern={pattern} mode={mode} setMode={setMode} gist={gist} updateGist={updateGist} />
+    AltMenu: <Menu
+      app={app}
+      pattern={pattern}
+      mode={mode}
+      setMode={setMode}
+      gist={gist}
+      updateGist={updateGist}
+      unsetGist={unsetGist}
+    />
   }
 
   return (
