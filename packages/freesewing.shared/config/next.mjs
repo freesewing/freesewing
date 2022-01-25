@@ -1,6 +1,5 @@
 import path from 'path'
 import remarkGfm from 'remark-gfm'
-import { patterns } from '../../../config/packages.mjs'
 
 /*
  * This mehthod will return the NextJS configuration
@@ -11,10 +10,9 @@ import { patterns } from '../../../config/packages.mjs'
  * srcPkgs: Array of folders in the monorepo/packages that should be aliased
  * so they are loaded from source, rather than from a compiled bundle
  */
-const config = (site, remarkPlugins=[], srcPkgs=[]) => ({
+const config = (site, remarkPlugins=[]) => ({
   experimental: {
     externalDir: true,
-    esmExternals: true,
   },
   pageExtensions: [ 'js', 'md' ],
   webpack: (config, options) => {
@@ -57,11 +55,6 @@ const config = (site, remarkPlugins=[], srcPkgs=[]) => ({
     config.resolve.alias.shared = path.resolve('../freesewing.shared/')
     config.resolve.alias.site = path.resolve(`../freesewing.${site}/`)
     config.resolve.alias.markdown = path.resolve(`../../markdown/${site}/`)
-    config.resolve.alias.pkgs = path.resolve(`../`)
-    // This forces webpack to load the code from source, rather than compiled bundle
-    for (const pkg of srcPkgs) {
-      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../${pkg}/src/index.js`)
-    }
 
     return config
   }
