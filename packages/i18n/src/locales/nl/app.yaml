@@ -69,6 +69,7 @@ documentationOverview: Overzicht documentatie
 download: Download
 draft: Patroontekening
 draftPattern: 'Teken {pattern}'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Teken {pattern} voor {model}'
 drafts: Patroontekeningen
 draftSettings: Instellingen patroontekening
