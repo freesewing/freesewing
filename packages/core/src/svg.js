@@ -1,6 +1,6 @@
 import Attributes from './attributes'
 import { round } from './utils'
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 function Svg(pattern) {
   this.openGroups = []
@@ -23,7 +23,7 @@ function Svg(pattern) {
   this.attributes.add('xmlns:xlink', 'http://www.w3.org/1999/xlink')
   this.attributes.add('xml:lang', pattern.settings.locale)
   this.attributes.add('xmlns:freesewing', 'http://freesewing.org/namespaces/freesewing')
-  this.attributes.add('freesewing', version)
+  this.attributes.add('freesewing', pkg.version)
 }
 
 Svg.prototype.runHooks = function (hookName, data = false) {

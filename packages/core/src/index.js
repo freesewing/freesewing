@@ -4,10 +4,10 @@ import Point from './point'
 import Path from './path'
 import Snippet from './snippet'
 import * as utils from './utils'
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  version,
+  version: pkg.version,
   Design,
   Pattern,
   Point,

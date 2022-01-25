@@ -8,7 +8,7 @@ import pack from 'bin-pack'
 import Store from './store'
 import Hooks from './hooks'
 import Attributes from './attributes'
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default function Pattern(config = { options: {} }) {
   // Events store and raise methods
@@ -34,7 +34,7 @@ export default function Pattern(config = { options: {} }) {
     },
   }
   this.raise.debug(
-    `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${version}\``
+    `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${pkg.version}\``
   )
 
   this.config = config // Pattern configuration
