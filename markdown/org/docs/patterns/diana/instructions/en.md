@@ -20,7 +20,7 @@ For knit fabric make a strip with the stretch of the fabric running along the lo
 ![This drawing was too nice not to use](neckline.jpg)
 
 - Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
-- With *good sides together*, place the front on the back along the shoulder seams.
+- With *good sides together*, place the front on the back aligning the shoulder seams.
 - Fold the front neckline seam allowance over to the wrong side of the back.
 
 <Note>
