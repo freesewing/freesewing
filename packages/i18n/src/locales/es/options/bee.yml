@@ -55,4 +55,22 @@ neckTieColours:
   description: Whether you want single color ties around your chest, or dual-coloured ones
 crossBackTies:
   title: Cintas cruzadas
-  description: Whether you'd like to cross the ties at the back or not
+  description: Whether you'd like to use the cross back tie variation of Bee
+bandLength:
+  title: Band Length (Cross back ties)
+  description: Controls the length of the band around your chest for the cross back ties variation of Bee
+backDartHeight:
+  title: Back dart height (Bella)
+  description: Controls the back dart height in the underlying Bella block Bee is based on
+armholeDepth:
+  title: Armhole depth (Bella)
+  description: Controls the armhole depth in the underlying Bella block Bee is based on
+frontArmholePitchDepth:
+  title: Front armhole pitch depth (Bella)
+  description: Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+frontShoulderWidth:
+  title: Front shoulder width (Bella)
+  description: Controls the front shoulder width in the underlying Bella block Bee is based on
+highBustWidth:
+  title: High bust width (Bella)
+  description: Controls the high bust width in the underlying Bella block Bee is based on
