@@ -1,4 +1,5 @@
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
+import PercentOption from 'shared/components/workbench/inputs/design-option-percentage'
 
 const Option = props => {
   return (
@@ -31,6 +32,9 @@ const Option = props => {
           </div>
           <Chevron w={6} m={3}/>
         </summary>
+        {props.pattern.config.options[props.option]?.pct && <PercentOption {...props} />}
+        <pre>{JSON.stringify(props.pattern.config.options[props.option],null,2)}</pre>
+
         fixme
       </details>
     </li>

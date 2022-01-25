@@ -33,7 +33,6 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   )
 
   useEffect(() => {
-    console.log(gist.measurements)
     if (gist?.measurements?.[m]) setVal(gist.measurements[m]/10)
   }, [gist])
 
