@@ -47,7 +47,7 @@ The sleeve will be inserted flat, meaning the armhole seam will be sewn first an
 
 ### Step 5: Close side and sleeve seam
 
-- With *good sides together* pin the front to the back with along the sleeve and side seams, making sure the armhole seams line up.
+- With *good sides together* pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
 - Sew, finish and press the seam.
 
 ### Step 6: Hem
