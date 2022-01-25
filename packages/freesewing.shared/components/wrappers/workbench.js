@@ -40,7 +40,7 @@ const hasRequiredMeasurements = (pattern, gist) => {
 const WorkbenchWrapper = ({ app, pattern }) => {
 
   // State for display mode and gist
-  const [mode, setMode] = useState('draft')
+  const [mode, setMode] = useState('measurements')
   const [gist, setGist] = useLocalStorage('gist', defaultGist(pattern, app.language))
 
   // If we don't have the requiremed measurements,
