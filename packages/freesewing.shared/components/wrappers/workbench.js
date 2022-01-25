@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu.js'
-import Measurements, { Input } from 'shared/components/workbench/measurements.js'
+import Measurements, { Input } from 'shared/components/workbench/measurements/index.js'
+import LabDraft from 'shared/components/workbench/draft/index.js'
 import set from 'lodash.set'
 
 // Generates a default pattern gist to start from
@@ -72,6 +73,14 @@ const WorkbenchWrapper = ({ app, pattern }) => {
     <Layout {...layoutProps}>
       {mode === 'measurements' && (
         <Measurements
+          app={app}
+          pattern={pattern}
+          gist={gist}
+          updateGist={updateGist}
+        />
+      )}
+      {mode === 'draft' && (
+        <LabDraft
           app={app}
           pattern={pattern}
           gist={gist}

@@ -1,7 +1,7 @@
 import React from 'react'
-import MeasurementInput from './input-measurement.js'
+import MeasurementInput from './input.js'
 import { withBreasts, withoutBreasts } from 'pkgs/models/src/index.js'
-import nonHuman from './non-human-measurements.js'
+import nonHuman from './non-human.js'
 import WithBreastsIcon from 'shared/components/icons/with-breasts.js'
 import WithoutBreastsIcon from 'shared/components/icons/without-breasts.js'
 
