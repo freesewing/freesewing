@@ -148,6 +148,34 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+/* Style for slider track */
+input[type=range]::-webkit-slider-runnable-track {
+  background: #ffffff44;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffffff66;
+}
+
+input[type=range]::-moz-range-track {
+  background: #3071a9;
+}
+
+input[type=range]::-ms-track {
+  background: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
 /* Style for patterns */
 @import './svg-freesewing-draft.css';
 

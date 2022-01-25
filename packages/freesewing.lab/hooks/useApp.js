@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import set from 'lodash.set'
+import mustache from 'mustache'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Patterns
@@ -90,19 +91,24 @@ function useApp(full = true) {
    */
   const t = (key, props=false, toLanguage=false) => {
     if (!toLanguage) toLanguage = language
-    if (!props) { // easy
-      if (strings[toLanguage][key]) return strings[toLanguage][key]
-      // app is the most common prefix, so we allow to skip it
-      if (strings[toLanguage][`app.${key}`]) return strings[toLanguage][`app.${key}`]
-      // Can we fall back to English?
-      if (toLanguage !== 'en') {
-        if (strings.en[key]) return strings.en[key]
-        if (strings.en[`app.${key}`]) return strings.en[`app.${key}`]
-      }
-    }
-    console.log('Missing translation key:', key)
+    const template =
+      strings[toLanguage][key] ||
+      strings[toLanguage][`app.${key}`] ||
+      strings[toLanguage][`plugin.${key}`] ||
+      strings.en[`app.${key}`] ||
+      false
+    if (!props && template) return template
+    else if (template) return mustache.render(
+      template.split('{').join('{{').split('}').join('}}'),
+      props
+    )
+    // No translation found
+    //console.log('Missing translation key:', key)
 
-    return key
+    // If it's a key (no spaces), return the final part, that's slightly better
+    return (typeof key === 'string' && key.indexOf(' ') === -1)
+      ? key.split('.').pop()
+      : key
   }
 
   return {

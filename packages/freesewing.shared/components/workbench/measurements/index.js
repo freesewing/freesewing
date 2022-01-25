@@ -1,6 +1,7 @@
-import MeasurementInput from './input-measurement.js'
+import React from 'react'
+import MeasurementInput from '../inputs/measurement.js'
 import { withBreasts, withoutBreasts } from 'pkgs/models/src/index.js'
-import nonHuman from './non-human-measurements.js'
+import nonHuman from './non-human.js'
 import WithBreastsIcon from 'shared/components/icons/with-breasts.js'
 import WithoutBreastsIcon from 'shared/components/icons/without-breasts.js'
 
@@ -52,11 +53,11 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
         <summary><h2 className="inline-block">{app.t('cfp.preloadMeasurements')}</h2></summary>
         <div className="ml-2 pl-4 border-l-2">
           {Object.keys(groups).map(group => (
-            <details>
+            <details key={group}>
               <summary><h3 className="inline-block">{app.t(`app.${group}`)}</h3></summary>
               <div className="ml-2 pl-4 border-l-2">
                 {Object.keys(icons).map(type => (
-                  <>
+                  <React.Fragment key={type}>
                     <h4>{app.t(`app.${type}Breasts`)}</h4>
                     <ul className="flex flex-row flex-wrap gap-2">
                       {Object.keys(groups[group][type]).map((m) => (
@@ -75,7 +76,7 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
                         </li>
                       ))}
                     </ul>
-                  </>
+                  </React.Fragment>
                 ))}
               </div>
             </details>
