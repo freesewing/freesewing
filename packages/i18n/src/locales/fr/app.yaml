@@ -69,6 +69,7 @@ documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
 draft: Ébauche
 draftPattern: 'Ébauche de {pattern}'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Ébauche de {pattern} pour {model}'
 drafts: Ébauches
 draftSettings: Réglages de l'ébauche
