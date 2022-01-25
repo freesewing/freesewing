@@ -69,6 +69,7 @@ documentationOverview: Documentation general
 download: Descargar
 draft: Boceto
 draftPattern: 'Trazar {pattern} '
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Trazar {pattern} para {model} '
 drafts: Bocetos
 draftSettings: Ajustes del boceto
