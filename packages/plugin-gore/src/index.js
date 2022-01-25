@@ -1,14 +1,14 @@
-import { name, version } from '../package.json'
+import pkg from '../package.json'
 
 const deprecated =
   "The 'goreNumber' property for the gore macro is deprecated " +
   "and will be removed in a future version. Please use 'gores' instead"
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-gore', version),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-gore', pkg.version),
   },
   macros: {
     gore: function (so) {
