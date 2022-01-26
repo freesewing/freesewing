@@ -31,4 +31,4 @@ debug:
   description: Activer le débogage pour obtenir des informations supplémentaires sur la façon dont votre patron a été créé
 scale:
   title: Échelle
-  description: Contrôle la largeur de la ligne de contour, la taille de police et d'autres éléments qui ne sont pas à l'échelle avec les mesures du patron
+  description: Contrôle la largeur de la ligne de contour, la taille de police et les autres éléments dont la valeur est indépendante des mesures du patron

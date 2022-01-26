@@ -8,9 +8,9 @@ You can use scraps of fabrics from your stash so don't worry about buying fabric
 
 <Note>
 
-###### Bella ist ein Block, kein Muster
+###### Bella ist ein Grundschnitt, kein Schnittmuster
 
-Ein Block ist eine Grundform, auf der andere Muster basieren.
+Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
 Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
 Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.

@@ -2,7 +2,7 @@
 title: Länge des Taillenabnähers
 ---
 
-![Der Effekt der Taillenlänge auf das Muster](sample.png)
+![The effect of the waist dart length option on the pattern](sample.png)
 
 Die Option **Taillenlänge Dart** steuert die Länge des Taillendarts in Richtung Büste.
 

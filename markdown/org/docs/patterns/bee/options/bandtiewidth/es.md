@@ -1,8 +1,8 @@
 ---
-title: Band (chest) tie width
+titulo: Ancho de la cinta del pecho
 ---
 
-Controls the width of the tie/band around your chest
+Controla el ancho de la cinta alrededor del pecho
 
 
 ## Efecto de esta opción en el patrón

@@ -1,8 +1,8 @@
 ---
-title: Neck tie ends
+title: Puntas de las cintas del cuello
 ---
 
-Whether you like straight or pointy ends on the ties around your neck
+Si prefieres que las puntas de las cintas alrededor del cuello sean planas o acaben en punta
 
 
 ## Efecto de esta opción en el patrón

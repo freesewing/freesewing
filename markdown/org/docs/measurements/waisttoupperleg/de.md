@@ -2,4 +2,4 @@
 title: Taille bis Oberschenkel
 ---
 
-Die **Taille zum oberen Bein** wird von der Taille bis zur Oberseite deines Beines gemessen. Messen Sie es an der Seite Ihres Körpers.
+Die **Taille zum oberen Bein** wird von der Taille bis zur Oberseite deines Beines gemessen. Miss dies an der Seite deines Körpers aus.

@@ -69,6 +69,7 @@ documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
 draft: Ébauche
 draftPattern: 'Ébauche de {pattern}'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Ébauche de {pattern} pour {model}'
 drafts: Ébauches
 draftSettings: Réglages de l'ébauche
@@ -120,7 +121,7 @@ addThing: Ajouter {thing}
 newThing: Nouveau {thing}
 newPatternForModel: 'Nouveau {pattern} pour {model}'
 noChanges: Pas de changement
-no: false
+no: "No" #Keep in quotes or it will evaluate to false
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
 noSeamAllowance: Marges de couture non-comprises
 notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible en français
@@ -221,7 +222,7 @@ whatIsThis: Qu'est-ce que c'est ?
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
 yay: Yeh !
-yes: true
+yes: "Yes" #Keep in quotes or it will evaluate to false
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté

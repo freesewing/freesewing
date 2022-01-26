@@ -31,4 +31,4 @@ debug:
   description: Schakel debug in om extra informatie te krijgen over hoe je patroon tot stand kwam
 scale:
   title: Scale
-  description: Controls the overal line width, font size, and other elements that do not scale with the pattern's measurements
+  description: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements

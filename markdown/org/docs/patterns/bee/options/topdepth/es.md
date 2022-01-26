@@ -1,8 +1,8 @@
 ---
-title: Top Depth
+title: Límite superior
 ---
 
-Controls how far the bikini cup extends upwards
+Controla hasta qué punto la copa de bikini se extiende hacia arriba
 
 
 ## Efecto de esta opción en el patrón

@@ -2,9 +2,9 @@
 title: Büstendart-Kurve
 ---
 
-![Der Effekt der Bust-Dart-Kurve auf das Muster](sample.png)
+![Der Effekt der Bust-Dart-Kurve auf das Schnittmuster](sample.png)
 
-Die **Bust-Dart-Kurve** steuert die Krümmung des Bust-Darts. Von direkt bis leicht gebogen.
+Die **Bust-Dart-Kurve** steuert die Krümmung des Bust-Darts. Von gerade bis leicht gebogen.
 
 
 ## Effekt dieser Option auf das Schnittmuster

@@ -1,18 +1,18 @@
 ---
-title: Bee What you need
+title: Bee Qué necesitas
 ---
 
-To make Bee, you will need the following:
+Para hacer Bee, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 0.5 - 1 metre of a suitable fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) About 0.5 - 1 metre of lining fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) Ribbons/Tapes/Cords for neck ties and bands, with the same length and width as neck tie and/or band.
+- Entre 0,5 a 1 metro de una tela adecuada ([ver Bee Opciones de tela](/docs/patterns/bee/fabric/))
+- (Opcional) Entre 0,5 a 1 metro de tela de forro ([ver Bee Opciones de tela](/docs/patterns/bee/fabric/))
+- (Opcional) Lazos, cintas o cuerdas para las tiras del cuello y torso, de la misma longitud y ancho que las tiras del patrón.
 
 <Note>
 
-The lining fabric is only needed if you want to make this pattern reversible. If you don't, you only need the main fabric.  
-You can use a serger/overlocker to construct this pattern but it is not mandatory.  
-Ribbons/Tapes/Cords can be used instead of making custom ties. Just make sure to get more than you need and that you cut down to size after construction.
+La tela de forro solo es necesaria si quieres hacer este patrón reversible. Si no, sólo necesitas la tela principal.  
+Puedes usar una remalladora/overlocker para hacer este patrón, pero no es obligatorio.  
+Los lazos, cintas o cuerdas se pueden usar en lugar de hacer tiras a mano. Simplemente asegúrate de que tienes más de lo que necesitas y lo cortas a medida tras la construcción.
   
 </Note>

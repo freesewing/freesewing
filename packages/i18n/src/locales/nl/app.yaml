@@ -69,6 +69,7 @@ documentationOverview: Overzicht documentatie
 download: Download
 draft: Patroontekening
 draftPattern: 'Teken {pattern}'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Teken {pattern} voor {model}'
 drafts: Patroontekeningen
 draftSettings: Instellingen patroontekening
@@ -120,7 +121,7 @@ addThing: Voeg {thing} toe
 newThing: Nieuw {thing}
 newPatternForModel: 'Nieuwe {pattern} voor {model}'
 noChanges: Geen wijzigingen
-no: false
+no: "No" #Keep in quotes or it will evaluate to false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
 noSeamAllowance: Geen naadtoeslag
 notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in het Nederlands
@@ -221,7 +222,7 @@ whatIsThis: What betekent dit?
 withBreasts: Met borsten
 withoutBreasts: Zonder borsten
 yay: Joehoew!
-yes: true
+yes: "Yes" #Keep in quotes or it will evaluate to false
 youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd

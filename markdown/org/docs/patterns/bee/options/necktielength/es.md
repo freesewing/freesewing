@@ -1,8 +1,8 @@
 ---
-title: Neck tie length
+title: Longitud de las cintas del cuello
 ---
 
-Controls the length of the ties around your neck
+Controla la longitud de las cintas alrededor de tu cuello
 
 
 ## Efecto de esta opción en el patrón

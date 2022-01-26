@@ -2,6 +2,6 @@
 title: Brustpunkte Abstand
 ---
 
-Die **Büstenspanne** ist der horizontale Abstand zwischen den beiden Spitzenpunkten deiner Büste.
+The **bust span** is the horizontal distance between the two apex points of your bust.
 
-Um Ihre Büstenspanne zu messen, das Klebeband horizontal in einer geraden Linie von der Spitze der eine Brust bis zur Spitze der anderen ausführen.
+To measure your bust span, run the tape measure horizontally in a straight line from the tip of your one breast to the tip of the other.

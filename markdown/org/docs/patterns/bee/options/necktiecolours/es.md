@@ -1,8 +1,8 @@
 ---
-title: Neck tie colours
+title: Colores de la cinta del cuello
 ---
 
-Whether you want single color ties around your neck, or dual-coloured ones
+Sobre si quieres cintas de un solo color alrededor del cuello o de dos colores
 
 
 ## Efecto de esta opción en el patrón
