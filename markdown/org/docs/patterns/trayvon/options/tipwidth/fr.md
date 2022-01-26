@@ -1,4 +1,4 @@
-![Largeur de la pointe](topwidth.svg)
+![Largeur de la pointe](tipwidth.svg)
 
 La largeur de la pointe est la largeur à la pointe de la cravate.
 

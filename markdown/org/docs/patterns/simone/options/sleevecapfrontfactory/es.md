@@ -1,4 +1,4 @@
-![La posición vertical del punto de inflexión frontal](./sleevecapfonrtfactory.svg)
+![La posición vertical del punto de inflexión frontal](./sleevecapfrontfactory.svg)
 
 Esta opción controla la colocación vertical del punto de inflexión de manga en la parte frontal de la manga.
 
