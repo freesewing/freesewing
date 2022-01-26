@@ -20,7 +20,38 @@ const values = {
         }
       </span>
     )
-  }
+  },
+  bool: props => {
+    const dflt = props.pattern.config.options[props.option].bool
+    const current = props.gist?.options?.[props.option]
+    return (
+      <span className={
+        (dflt==current || typeof current === 'undefined')
+          ? 'text-secondary'
+          : 'text-accent'
+      }>
+        {props.gist?.options?.[props.option]
+          ? props.app.t('app.yes')
+          : props.app.t('app.no')
+        }
+      </span>
+    )
+  },
+  count: props => {
+    return <p>No val yet</p>
+  },
+  deg: props => {
+    return <p>No val yet</p>
+  },
+  list: props => {
+    return <p>No val yet</p>
+  },
+  mm: props => {
+    return <p>No val yet</p>
+  },
+  constant: props => {
+    return <p>No val yet</p>
+  },
 }
 
 const Tmp = props => <p>not yet</p>
@@ -40,6 +71,51 @@ const Option = props => {
   const type = optionType(props.pattern.config.options[props.option])
   const Input = inputs[type]
   const Value = values[type]
+
+  const toggleBoolean = () => {
+    const dflt = props.pattern.config.options[props.option].bool
+    const current = props.gist?.options?.[props.option]
+    if (typeof current === 'undefined')
+      props.updateGist(['options', props.option], !dflt)
+    else props.unsetGist(['options', props.option])
+
+  }
+
+  if (type === 'bool') return (
+    <li className="flex flex-row">
+      <button className={`
+        flex flex-row
+        w-full
+        justify-between
+        px-2
+        text-left
+        text-base-content
+        sm:text-neutral-content
+        items-center
+        pr-6
+      `} onClick={toggleBoolean}>
+        <div className={`
+          grow pl-2 border-l-2
+          ${linkClasses}
+          hover:border-secondary
+          sm:hover:border-secondary-focus
+          text-base-content sm:text-neutral-content
+        `}>
+          <span className={`
+            text-3xl mr-2 inline-block p-0 leading-3
+            translate-y-3
+          `}>
+            <>&deg;</>
+          </span>
+          <span>
+            { props.app.t(`options.${props.pattern.config.name}.${props.option}.title`) }
+          </span>
+        </div>
+        <Value type={type} {...props} />
+      </button>
+    </li>
+
+  )
 
   return (
     <li className="flex flex-row">
