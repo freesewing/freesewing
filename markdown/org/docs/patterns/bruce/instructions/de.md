@@ -1,20 +1,20 @@
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
 
-### Schritt 1: Zur ersten Seite zurückkehren
+### Schritt 1: Rückteil an erstes Seitenteil anbringen
 
-![Zur ersten Seite zurückkehren](step01.png)
+![Rückteil an erstes Seitenteil anbringen](step01.png)
 
 Legen Sie die Seite des Rückens (Teil 1) mit der Seite (Teil 3) und stellen Sie sicher, dass die guten Seiten zusammengesetzt sind. Da die Seite (Teil 3) symmetrisch ist, kann man nicht schief gehen.
 
 Servieren Sie sie zusammen und berücksichtigen Sie, dass die Naht 1 cm beträgt. So richten Sie die Außennadel Ihres Sergers 1cm vom Rand Ihres Stoffes.
 
-> Wenn die Metrik nicht Ihre Tasche ist, ist 1 cm 3/8 Zoll.
+> Falls metrische Einheiten nicht dein Ding sind: 1cm entsprechen 3/8 inch.
 
 > Einige Serger haben einen Hebel zur Wahl zwischen flachen Nähten oder gebündelten Nähten. Wenn Sie vorhaben, später zu starten (siehe Schritt 6), stellen Sie sicher, dass Sie flache Nähte wählen.
 
-### Schritt 2: Zur zweiten Seite zurückkehren
+### Schritt 2: Rückteil an zweites Seitenteil anbringen
 
-![Zur zweiten Seite zurücktreten](step02.png)
+![Rückteil an zweites Seitenteil anbringen](step02.png)
 
 Legen Sie die andere Seite des Rückens (Teil 1) mit der zweiten Seite (Teil 3) auf und stellen Sie die guten Seiten zusammen. Da die Seite (Teil 3) symmetrisch ist, kann man nicht schief gehen.
 
@@ -22,9 +22,9 @@ Servieren Sie sie zusammen, wie Sie es auf der anderen Seite getan haben.
 
 > Rücken und Seite sind jetzt miteinander verbunden. Lassen Sie sie einen Moment beiseite, während wir unsere Aufmerksamkeit auf die anderen Stücke richten.
 
-### Schritt 3: erste Einfügung und Fronten beitreten
+### Schritt 3: ersten Einsatz an Vorderteile anbringen
 
-![Starte an einem Ende](step03-a.png) ![Weiter die Stücke ausrichten während du fortfährst](step03-b.png) ![Bis zum anderen Ende](step03-c.png)
+![Starte an einem Ende](step03-a.png) ![Fahre damit fort, die Teile auszurichten, während du fortfährst](step03-b.png) ![Bis zum anderen Ende](step03-c.png)
 
 Um den Einsatz (Teil 4) mit den Fronten (Teil 2) zu verbinden, müssen Sie sie über ihre kurvigen Kanten verstreuen.
 
@@ -59,19 +59,19 @@ Nähen Sie die Frontdarts separat und drehen Sie die ganze Sache nach draußen, 
 
 </Tip>
 
-### Schritt 4: Zweiter Ein- und Ausgang beitreten
-![Zweite Einfügung und Fronten beitreten](step03-d.png)
+### Schritt 4: zweiten Einsatz an Vorderteile anbringen
+![zweiten Einsatz an Vorderteile anbringen](step03-d.png)
 
 Nachdem Sie den ersten Einsatz und die Fronten beigetreten sind, fahren Sie mit der zweiten fort.
 
-Wenn die Fronten und Einsätze miteinander verbunden sind, bleiben Ihnen 3 Teile übrig:
+Jetzt, wo Vorderteile und Einsätze miteinander verbunden sind, hast du noch drei Teile übrig:
 
- - Die verbundenen Einsätze und Fronten
- - Die beigetretenen Seiten und zurück
- - Der elastische
+ - die miteinander verbundenen Vorderteile und Einsätze
+ - die miteinander verbunden Seiten- und Rückteile
+ - der Gummizug
 
-### Schritt 5: Den Frontdart schließen
-![Den Frontdart schließen](step05.png)
+### Schritt 5: vordere Abnäher schließen
+![vordere Abnäher schließen](step05.png)
 
 Falten Sie die Fronten an der Mitte der Frontlinie, so dass die Tasten am unteren Rand nach oben.
 
@@ -79,12 +79,10 @@ Servieren Sie die Seiten der Türken, um die Fronten zu schließen. Um die beste
 
 <Tip>
 
-###### Halten Sie die Naht weg von meiner ...
+##### Halte diese Naht weg von meinem ...
 
-###### Keep that seam away from my ...
-
-Alternatively, sew the darts on each piece individually so that both seams are folded inside.
-Vermutlich ist es für den Träger angenehmer, in diesem Bereich keine belichtete Naht zu haben.
+Alternativ kannst du die Abnäher auf jeden Teil einzeln schließen, damit beide Nähte innen umschlossen sind.
+Vermutlich ist es für die tragende Person angenehmer, in diesem Bereich keine exponierte Naht zu haben.
 
 </Tip>
 
@@ -110,15 +108,15 @@ Die Naht stoppt auf halbem Wege (wo der Dart endet), aber die Aufstiftung sollte
 
 </Tip>
 
-### Schritt 7: Betreten Sie die erste Seite an den Fronten
-![Schließen Sie sich der ersten Seite an den Fronten an](step07.png)
+### Schritt 7: erstes Seitenteil an Vorderteile anbringen
+![erstes Seitenteil an Vorderteile anbringen](step07.png)
 
 Legen Sie die Seitenkante der ersten Seite mit der Kante aus dem Front+Einsatz (gute Seiten wie üblich) zusammen und verführen Sie sie zusammen.
 
-### Schritt 8: Betreten Sie die zweite Seite an den Fronten
-![Schließen Sie sich der zweiten Seite an den Fronten an](step08.png)
+### Schritt 8: zweites Seitenteil an Vorderteile anbringen
+![zweites Seitenteil an Vorderteile anbringen](step08.png)
 
-Tun Sie dasselbe für die zweite Seite.
+Tu dasselbe für das zweite Seitenteil.
 
 ### Schritt 9: Optional: Topstitch
 ![Boxer mit (links) und ohne Aufsteckung](step06.jpg)
@@ -130,7 +128,7 @@ Wenn Sie vorher geheftet haben, sollten Sie das Gleiche jetzt für die Nähte tu
 
 Wir werden nun die bogenförmige Öffnung im hinteren Teil zu den vorderen Teilen der Boxer, bestehend aus den Fronten und Einsätzen, verführen.
 
-Die Noten auf dem hinteren Stück helfen Ihnen. Es gibt die Mittelstufe und die anderen beiden Noten sollten mit den Fronten und Einsatzteilen übereinstimmen.
+Die Knipse auf dem Rückteil helfen dir dabei. Es gibt die Mittelstufe und die anderen beiden Noten sollten mit den Fronten und Einsatzteilen übereinstimmen.
 
 <Tip>
 
@@ -140,41 +138,41 @@ Nimm es langsam und sei **sehr bewusst**, wo deine Sergerklinge schneiden wird.
 
 </Tip>
 
-### Schritt 11: Hem das erste Bein
-![Hem das erste Bein](step11.png)
+### Schritt 11: säume das erste Bein
+![säume das erste Bein](step11.png)
 
-Zeit, die Beine zu stumpfen. Hem sie wie du alle anderen streckigen Stricken machen würst. Gehen Sie nach einer flexiblen Stickerei. Sie können eine Zick-Zack-Zwillingsstick- oder Zwillingsnadel verwenden, wenn Sie nicht über einen Deckschloss oder eine spezielle flexible Stich-Einstellung verfügen.
+Zeit, die Beine zu säumen. Säume sie genauso wie jeden anderen dehnbaren Strickstoff. Wähle einen flexiblen Stich. Du kannst einen Zick-Zack-Stich oder eine Zwillingsnadel verwenden, falls du keine Coverlock oder einen speziellen dehnbaren Stich hast.
 
 <Note>
 
-Ich habe das Gefühl, dass das Hämen viel einfacher ist, wenn man die Dinge zuerst fixiert.
-So falten Sie Ihren Saum zurück, und pinnen Sie ihn an der Stelle.
-Noch besser: Nähen Sie beide Beine und nähen Sie nur, wenn Sie mit dem Aussehen zufrieden sind.
+Ich finde, dass Säumen immer sehr viel einfacher ist, wenn die Teile zuerst festgesteckt werden.
+Falte also deinen Saum zurück, und stecke ihn fest.
+Noch besser: Stecke beide Beine fest und nähe erst dann, wenn es dir das Aussehen gefällt.
 
 </Note>
 
-### Schritt 12: Hem das zweite Bein
-![Hem das zweite Bein](step12.png)
+### Schritt 12: säume das zweite Bein
+![säume das zweite Bein](step12.png)
 
-Sie wissen, dass das sinnvoll ist.
+Du weißt, dass das Sinn ergibt.
 
-### Schritt 13: Machen Sie Ihren elastischen Teil zu einer Schleife
-![Machen Sie Ihren elastischen Teil zu einer Schleife](step13.png)
+### Schritt 13: forme den Gummizug zu einer Schlaufe
+![forme den Gummizug zu einer Schlaufe](step13.png)
 
 Nähen Sie beide Enden der Elastik zusammen mit guten Seiten zusammen.
 
 <Note>
 
-###### Nicht sicher, wie viel Elastik du brauchst?
+###### Nicht sicher, wie lang dein Gummizug sein muss?
 Einfach die Elastik in die Taille einwickeln, wo sie am Ende sitzt, und bis sie sich richtig fühlt.
 Machen Sie eine Markierung, wo die Kantengelenke, fügen Sie 2cm Naht erlaubt, und das ist Ihre Länge.
 
 </Note>
 
-### Schritt 14: elastisch an Taille befestigen
-![elastisch an Taille befestigen](step14.png)
+### Schritt 14: Gummizug an Taille befestigen
+![Gummizug an Taille befestigen](step14.png)
 
-Befestigen Sie die elastische Taille.
+Befestige den Gummizug an der Taille.
 
 Tun Sie so gute Seiten zusammen, wenn Sie auf einer herkömmlichen Nähmaschine eine flexible Nadelnüsse oder Zwillingsnadel verwenden.
 
@@ -182,12 +180,12 @@ Wenn Sie einen Coverlock verwenden, legen Sie die elastische auf die gute Seite 
 
 <Tip>
 
-Die Länge Ihres elastischen Materials wird sich wahrscheinlich von der Länge des Stoffes unterscheiden, da sie sich anders ausdehnen.
-Pinning hilft Ihnen, eine gleichmäßige Streckung zu erreichen.
+Die Länge deines Gummizuges wird wahrscheinlich anders sein als die Länge des Stoffes, weil beide sich unterschiedlich weit dehnen lassen.
+Feststecken wird dir dabei helfen, eine gleichmäßige Dehnung zu erzielen.
 
-Teilen Sie Ihre elastische und Boxerbund in 4 (oder 8) Teile auf. An diesen Punkten elastisch und Gewebe anpinnen.
+Teile sowohl deinen Gummizug als auch dein Bund deiner Shorts in 4 (oder 8) Teile auf. Stecke Gummi und Stoff an diesen Stellen zusammen.
 
-Während des Nähens strecken Sie elastisch und Gewebe zwischen jedem Satz von Stiften, und entfernen Sie die Stifte während Sie sich bewegen.
+Während des Nähens dehnst du nun sowohl Gummi als auch Stoff zwischen den Stecknadeln, wobei du die Stecknadeln Stück für Stück entfernst.
 
 </Tip>
 

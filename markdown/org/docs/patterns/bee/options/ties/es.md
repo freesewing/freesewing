@@ -1,8 +1,8 @@
 ---
-title: Ties
+title: Cintas
 ---
 
-Whether to includes ties, yes or no
+Sobre si incluir cintas o no
 
 
 ## Efecto de esta opción en el patrón

@@ -1,7 +1,7 @@
 ---
 basting:
-  term: derribo
-  description: "Ver <a href='/docs/sewing/basting/'>Basting</a> en la <a href='/docs/sewing'>documentación de costura</a>"
+  term: hilvanar
+  description: "Ver <a href='/docs/sewing/basting/'>hilvanar</a> en la <a href='/docs/sewing'>documentación de costura</a>"
 coverlock:
   term: cubierto
   description: "Ver <a href='/docs/sewing/coverlock/'>Coverlock</a> en la <a href='/docs/sewing'>documentación de costura</a>"
@@ -9,7 +9,7 @@ cutting:
   term: corte
   description: "Ver <a href='/docs/sewing/cutting/'>Cortando</a> en la <a href='/docs/sewing'>documentación de costura</a>"
 darts:
-  term: dardos
+  term: pinzas
   description: "Ver <a href='/docs/sewing/darts/'>Dardos</a> en la <a href='/docs/sewing'>documentación de costura</a>"
 doubleWeltPockets:
   term: bolsillos de doble soldadura
@@ -19,7 +19,7 @@ ease:
   description: "Ve <a href='/docs/sewing/ease/'>Sube</a> en la <a href='/docs/sewing'>documentación de costura</a>"
 edgestitch:
   term: pespunte
-  description: "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  description: "Ver <a href='/docs/sewing/edgestitching/'>pespunte</a> en la <a href='/docs/sewing'>documentación de costura</a>"
 fabricGrain:
   term: grano de tela
   description: "Ver <a href='/docs/sewing/fabric-grain/'>Grano de tela</a> en la <a href='/docs/sewing'>documentación de costura</a>"
@@ -54,8 +54,8 @@ serger:
   term: serrador
   description: "Ver <a href='/docs/sewing/serger/'>Serger</a> en la <a href='/docs/sewing'>documentación de costura</a>"
 slipstitch:
-  term: slipstitch
-  description: "See <a href='/docs/sewing/slipstitch/'>Slipstitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: punto deslizado
+  description: "Ver <a href='/docs/sewing/slipstitch/'>punto deslizado</a> en la <a href='/docs/sewing'>documentación de costura</a>"
 topstitching:
   term: topstitching
   description: "Ver <a href='/docs/sewing/topstitching/'>Topstitching</a> en la <a href='/docs/sewing'>documentación de costura</a>"
@@ -73,13 +73,13 @@ freesewing:
   description: '<b>FreeSewing</b> es una plataforma de código abierto para patrones de costura hechos a medida'
 patternOptions:
   term: opciones del patrón
-  description: 'Las opciones de patrón <b></b> le permiten personalizar el diseño del patrón'
+  description: 'Las <b>opciones de patrón</b> te permiten personalizar el diseño del patrón'
 draftSettings:
   term: ajustes del boceto
-  description: 'La configuración del borrador <b></b> le da el control de cómo se genera un patrón'
+  description: 'Los <b>ajustes del boceto</b> te permiten controlar cómo se genera un patrón'
 patrons:
-  term: patrons
-  description: 'Los patrocinadores apoyan a Freesewing financieramente. Son partidarios leales que aseguran un futuro sostenible para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad.'
+  term: mecenas
+  description: 'Los mecenas apoyan a Freesewing económicamente. Son colaboradores fieles que aseguran un futuro sostenible para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad.'
 msf:
   term: msf
-  description: "Médecins sin fronteras/Doctores sin fronteras - Ver <a href='https://msf.org/'>msf.org</a>"
+  description: "Médicos Sin Fronteras/Médecins Sans Frontières - Ver <a href='https://msf.org/'>msf.org</a>"

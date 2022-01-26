@@ -18,7 +18,7 @@ awesome: Genial
 back: Atrás
 becauseThatWouldBeReallyHelpful: Porque eso sería realmente útil.
 becomeAPatron: Conviértete en un mecenas
-blockPatterns: Block/Sloper Patterns
+blockPatterns: Patrones base o básicos
 blog: Blog
 browseBlogposts: Hojea las publicaciones del blog
 browsePatterns: Hojea los patrones
@@ -33,7 +33,7 @@ chest: Pecho
 chestInfo: Los senos requieren medidas adicionales. Si esta persona no tiene senos, se ocultarán las medidas irrelevantes al configurarlos. Esto no tiene ningún impacto en cómo se generan los patrones.
 chooseASize: Elige un tamaño
 chooseAPerson: Elige una persona
-chooseADesign: Elija un diseño
+chooseADesign: Elige un diseño
 chooseAPattern: Elige un patrón
 chooseYourOptions: Elige tus opciones
 close: Cerrar
@@ -69,6 +69,7 @@ documentationOverview: Documentation general
 download: Descargar
 draft: Boceto
 draftPattern: 'Trazar {pattern} '
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Trazar {pattern} para {model} '
 drafts: Bocetos
 draftSettings: Ajustes del boceto
@@ -86,7 +87,7 @@ filterPatterns: Filtrar los patrones
 forgotLoginInstructions: "Entra tu nombre de usuario o correo electrónico debajo y pulsa el botón de Restablecer contraseña"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
-garmentPatterns: Garment Patterns
+garmentPatterns: Patrones de prendas
 github: GitHub
 goAheadWeWillWait: Adelante, esperaremos.
 goodJob: Buen trabajo
@@ -120,7 +121,7 @@ addThing: Añadir {thing}
 newThing: Nuevo {thing}
 newPatternForModel: 'Nuevo {pattern} para {model}'
 noChanges: No hay cambios
-no: false
+no: "No" #Keep in quotes or it will evaluate to false
 noPasswordPolicy: No aplicamos una política de contraseña
 noSeamAllowance: Sin margen de costura
 notAllOfThisContentIsAvailableInLanguage: No todo este contenido está disponible en español.
@@ -128,7 +129,7 @@ notesInfo: Estas son tus notas. Puedes escribir lo que quieras aquí.
 notes: Notas
 ohNo: '¡Oh no!'
 oneMoreThing: Una cosa más
-optionalMeasurements: Optional measurements
+optionalMeasurements: Medidas opcionales
 options: Opciones
 orPayPerYear: O pagar por año
 other: Otro
@@ -209,7 +210,7 @@ updated: Actualizado
 update: Actualizar
 userHasBeenWithUsSince: '{user} ha estado con nosotros desde {since}'
 users: Userios
-utilityPatterns: Utility Patterns
+utilityPatterns: Patrones de prendas de trabajo
 weAreValidatingYourConfirmationCode: Estamos validando tu código de confirmación
 weCouldNotValidateYourConfirmationCode: No pudimos validar su código de confirmación
 weEncounteredAProblem: Nos encontramos con un problema
@@ -221,7 +222,7 @@ whatIsThis: Que es esto
 withBreasts: Con pechos
 withoutBreasts: Sin pechos
 yay: '¡Hurra!'
-yes: true
+yes: "Yes" #Keep in quotes or it will evaluate to false
 youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn: No has iniciado sesión
@@ -334,8 +335,8 @@ debug: Debug
 unsubscribe: Darse de baja
 slogan-come: Ven a los patrones de costura
 slogan-stay: Quédate por la comunidad
-lightTheme: Light Theme
-darkTheme: Dark Theme
-hax0rTheme: Hax0r Theme
-lgbtqTheme: LGBTQ Theme
-transTheme: Trans Theme
+lightTheme: Tema claro
+darkTheme: Tema oscuro
+hax0rTheme: Tema Hax0r
+lgbtqTheme: Tema LGBTQ
+transTheme: Tema Trans

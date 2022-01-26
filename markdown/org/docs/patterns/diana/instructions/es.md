@@ -1,53 +1,67 @@
 
-## Termina el cuello trasero
+### Step 1: Finish the back neckline
 
-Cortar una tira de tela propia de la longitud del cuello trasero y alrededor de 3 cm de largo.  
-Presiona un pliegue en esta tira, a 1 cm del borde.
+- Cut a strip of main fabric the length of your back neckline, and around 3 cm wide.
+- Press a fold into this strip, 1 cm from the edge.
 
 <Tip>
 
-Haz de esto una tira de corte parcial si estás usando un tejido tejido, 
-o una tira con la dirección de estiramiento corriendo a lo largo del borde largo si está usando un tejido. 
+For woven fabric make this a bias cut strip.  
+For knit fabric make a strip with the stretch of the fabric running along the long edge.
 
 </Tip>
 
-Alinear el borde no doblado de la tira con el cuello trasero con buenos lados juntos. Difundir la tira hacia el cuello trasero y recortar la costura. Turn the strip to the wrong side of the fabric and topstitch along the folded edge to keep it in place.
+- With *good sides together* align the non-folded edge of the strip with the back neckline.
+- Sew the strip to the back neckline and trim the seam.
+- Turn the strip to the wrong side of the fabric and *topstitch* along the folded edge to keep it in place.
 
-## Cerrar costuras de hombro
+### Step 2: Close shoulder seams
 
-![Este dibujo fue demasiado agradable para no usarlo](neckline.jpg)
+![This drawing was too nice not to use](neckline.jpg)
 
-Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
+- Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
+- With *good sides together*, place the front on the back aligning the shoulder seams.
+- Fold the front neckline seam allowance over to the wrong side of the back.
 
-Coloque la parte delantera en la espalda con buenos lados juntos, alineando las costuras del hombro. Doblar la costura del cuello frontal hacia el lado equivocado de la espalda.
+<Note>
 
 If you have a lightweight woven fabric you can fold this edge up again, so it will form a narrow double hem afterwards (it can help to press these folds first).
 
-Unir la costura del hombro, encerrando el borde crudo del cuello trasero en el pliegue.
+</Note>
 
-Gire a la derecha y prensa.
+- Stitch the shoulder seam, enclosing the raw edge of the back neckline in the fold.
+- Turn to the right side and press.
 
-## Terminar cuello frontal
+### Step 3: Finish front neckline
 
-Presione el hem formado en su tela por los pliegues que hizo a la costura del hombro cuando cerró el hombro y la parte superior cerca del borde.
+- Press the hem formed in your fabric by the folds you made at the shoulder seam when you closed the shoulder and topstitch close to the edge.
 
-## Adjuntar mangas
+### Step 4: Attach sleeves
 
 The sleeve will be inserted flat, meaning the armhole seam will be sewn first and the sleeve and side seam will be closed in one go.
 
-Coloca la cabeza de manga a lo largo del agujero de armadura, con *buenos lados juntos* y escaleras de emparejamiento. Si es necesario, aléjese en la cabeza de manga en la parte superior, entre las escamas.
+- With *good sides together*, matching notches, pin the sleeve head along the armhole.
+- If necessary, ease in the sleeve head at the top, between the notches.
+- Sew, finish and press the seam.
+- Repeat for other sleeve.
 
-Coser, terminar y presionar la costura.
+### Step 5: Close side and sleeve seam
 
-## Cerrar costura de lado y manga
+- With *good sides together* pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
+- Sew, finish and press the seam.
 
-Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.  
-Make sure the armhole seam lines up across the front and back.
+### Step 6: Hem
 
-Coser, terminar y presionar la costura.
+- Finish the sleeves and bottom hems in a way that works with your fabric choice.
 
-## Hem
+<Note>
 
-Termina las mangas y los sombreros de fondo de una manera que funcione con tu elección.
+Again, this can mean folding the hem under twice and *topstitching*, finishing the raw edge with a serger
+or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and
+trimming close to the stitching.
 
-Again, this can mean folding the hem under twice and topstitching, finishing the raw edge with a serger or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and trimming close to the stitching.
+</Note>
+
+### Step 7: Enjoy!
+
+You're all done! Now go enjoy your new top!

@@ -1,8 +1,8 @@
 ---
-title: Armhole depth (Bella)
+title: Profundidad de la sisa (Bella)
 ---
 
-Controls the armhole depth in the underlying Bella block Bee is based on
+Controla la profundidad de la sisa en el patron de base Bella en el que se basa Bee
 
 
 ## Efecto de esta opción en el patrón

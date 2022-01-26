@@ -1,53 +1,67 @@
 
-## Beende die Rückenlinie
+### Step 1: Finish the back neckline
 
-Schneiden Sie einen Streifen Selbststoff um die Länge Ihrer Rückenhalslinie und ca. 3 cm breit.  
-Drücken Sie eine Falte in diesen Streifen, 1 cm von der Kante.
+- Cut a strip of main fabric the length of your back neckline, and around 3 cm wide.
+- Press a fold into this strip, 1 cm from the edge.
 
 <Tip>
 
-Machen Sie diesen Streifen zu einem einseitigen Schnitt, wenn Sie einen Gewebe verwenden, 
-oder ein Streifen mit der Streckrichtung entlang der langen Kante, wenn Sie ein Strick verwenden. 
+For woven fabric make this a bias cut strip.  
+For knit fabric make a strip with the stretch of the fabric running along the long edge.
 
 </Tip>
 
-Legen Sie den nicht gefalteten Rand des Streifens mit der Rückenlinie zusammen mit guten Seiten an. Nähen Sie den Streifen auf die Rückenlinie und schneiden Sie die Naht. Turn the strip to the wrong side of the fabric and topstitch along the folded edge to keep it in place.
+- With *good sides together* align the non-folded edge of the strip with the back neckline.
+- Sew the strip to the back neckline and trim the seam.
+- Turn the strip to the wrong side of the fabric and *topstitch* along the folded edge to keep it in place.
 
-## Schulternähte schließen
+### Step 2: Close shoulder seams
 
-![Diese Zeichnung war zu schön, um sie nicht zu verwenden](neckline.jpg)
+![This drawing was too nice not to use](neckline.jpg)
 
-Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
+- Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
+- With *good sides together*, place the front on the back aligning the shoulder seams.
+- Fold the front neckline seam allowance over to the wrong side of the back.
 
-Platzieren Sie die Vorderseite mit guten Seiten zusammen und richten Sie die Schulternaht aus. Falten Sie die Naht vorne auf die falsche Rückseite der Rückseite.
+<Note>
 
 If you have a lightweight woven fabric you can fold this edge up again, so it will form a narrow double hem afterwards (it can help to press these folds first).
 
-Nähen Sie die Schulternaht und schließen Sie den rohen Rand der Rückenlinie im Falten ein.
+</Note>
 
-Biegen Sie rechts ab und drücken Sie auf der rechten Seite.
+- Stitch the shoulder seam, enclosing the raw edge of the back neckline in the fold.
+- Turn to the right side and press.
 
-## Finish vordere Halslinie
+### Step 3: Finish front neckline
 
-Drücken Sie den Saum in Ihrem Stoff durch die Falten, die Sie an der SchulterNaht gemacht haben, wenn Sie die Schulter und den Stich nahe an der Kante geschlossen haben.
+- Press the hem formed in your fabric by the folds you made at the shoulder seam when you closed the shoulder and topstitch close to the edge.
 
-## Ärmel anhängen
+### Step 4: Attach sleeves
 
 The sleeve will be inserted flat, meaning the armhole seam will be sewn first and the sleeve and side seam will be closed in one go.
 
-Platziere den Ärmelkopf entlang des Armlochs mit *guten Seiten* und passenden Nocken. Bei Bedarf leicht im Ärmelkopf an der Oberseite, zwischen den Ausschnitten.
+- With *good sides together*, matching notches, pin the sleeve head along the armhole.
+- If necessary, ease in the sleeve head at the top, between the notches.
+- Sew, finish and press the seam.
+- Repeat for other sleeve.
 
-Nähen, fertigstellen und drücken Sie die Naht.
+### Step 5: Close side and sleeve seam
 
-## Seiten- und Ärmelnaht schließen
+- With *good sides together* pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
+- Sew, finish and press the seam.
 
-Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.  
-Make sure the armhole seam lines up across the front and back.
+### Step 6: Hem
 
-Nähen, fertigstellen und drücken Sie die Naht.
+- Finish the sleeves and bottom hems in a way that works with your fabric choice.
 
-## Hem
+<Note>
 
-Beenden Sie die Ärmel und die Bodenhemme auf eine Weise, die mit Ihrer Stoffwahl funktioniert.
+Again, this can mean folding the hem under twice and *topstitching*, finishing the raw edge with a serger
+or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and
+trimming close to the stitching.
 
-Again, this can mean folding the hem under twice and topstitching, finishing the raw edge with a serger or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and trimming close to the stitching.
+</Note>
+
+### Step 7: Enjoy!
+
+You're all done! Now go enjoy your new top!

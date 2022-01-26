@@ -24,11 +24,11 @@ complete:
   title: Detalle
   description: Controla qué tan detallado es el patrón. Ya sea un patrón completo con todos los detalles, o un esquema básico de las partes del patrón
 layout:
-  title: Diseño
+  title: Disposición
   description: Controla cómo se colocan las partes individuales del patrón en tu patrón
 debug:
   title: Debug
   description: Habilita la depuración para obtener información adicional sobre cómo se creó tu patrón
 scale:
   title: Escala
-  description: Controls the overal line width, font size, and other elements that do not scale with the pattern's measurements
+  description: Controla el ancho de línea general, el tamaño de fuente y otros elementos que no cambian de escala junto a las medidas del patrón

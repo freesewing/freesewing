@@ -1,8 +1,8 @@
 ---
-title: Band (chest) tie length
+title: Longitud de la cinta del pecho
 ---
 
-Controls the length of the tie around your chest
+Controla la longitud de la cinta alrededor del pecho
 
 
 ## Efecto de esta opción en el patrón

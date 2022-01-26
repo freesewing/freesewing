@@ -4,7 +4,7 @@ advanced:
   description: Legt fest, ob erweiterte Einstellungen und Schnittmusteroptionen angezeigt werden sollen oder nicht
 paperless:
   title: Papierlos
-  description: Zeichnet ein Schnittmuster mit allen benötigten Dimensionen, sodass du es direkt auf den Stoff oder ein anderes Medium transferieren kannst, ohne es ausdrucken zu müssen
+  description: Zeichnet ein Schnittmuster mit allen benötigten Dimensionen, sodass es direkt auf den Stoff oder ein anderes Medium übertragen werden kann, ohne es auszudrucken
 sa:
   title: Nahtzugabe
   description: Steuert die Breite der Nahtzugabe, die in deinem Schnittmuster enthalten ist
@@ -25,10 +25,10 @@ complete:
   description: Legt fest, wie detailliert das Schnittmuster dargestellt wird; entweder ein vollständiges Schnittmuster mit allen Details oder eine einfache Kontur der Schnittmusterteile
 layout:
   title: Layout
-  description: Legt fest, wie die einzelnen Schnittmusterteile auf deinem Schnittmusterbogen angeordnet werden
+  description: Legt fest, wie die einzelnen Teile auf deinem Schnittmusterbogen angeordnet werden
 debug:
   title: Debug
   description: Debuggen aktivieren, um zusätzliche Informationen dazu zu erhalten, wie dein Schnittmuster erstellt wurde
 scale:
-  title: Beschriftungsgöße
-  description: "Steuert die allgemeine Linienbreite, Schriftgröße und andere Elementgrößen, \nbeeinflusst jedoch nicht den Maßstab des Schnittmusters"
+  title: Beschriftungsgröße
+  description: "Steuert die allgemeine Linienbreite, Schriftgröße und andere Elementgrößen, \nbeeinflusst jedoch nicht den Maßstab des Schnittmusters selbst"

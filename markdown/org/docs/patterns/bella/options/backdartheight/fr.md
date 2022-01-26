@@ -4,7 +4,7 @@ title: Hauteur de pince dos
 
 ![L'effet de l'option de hauteur de la jauge arrière sur le motif](sample.png)
 
-L'option **hauteur de la fléchette arrière** contrôle la hauteur de la flèche arrière (longueur, si vous le souhaitez).
+The **back dart height** option controls the height (length if you will) of the back dart.
 
 
 ## Effet de cette option sur le motif

@@ -1,53 +1,67 @@
 
-## Terminer l'encolure dos
+### Step 1: Finish the back neckline
 
-Coupez une bande d'auto-tissu de la longueur de votre collier arrière, et environ 3 cm de large.  
-Appuyez sur un pli dans cette bande, à 1 cm du bord.
+- Cut a strip of main fabric the length of your back neckline, and around 3 cm wide.
+- Press a fold into this strip, 1 cm from the edge.
 
 <Tip>
 
-Faites de cette bande de coupe de biais si vous utilisez un tissu tissé, 
-ou une bande avec la direction d'étirement le long du bord long si vous utilisez un tricot. 
+For woven fabric make this a bias cut strip.  
+For knit fabric make a strip with the stretch of the fabric running along the long edge.
 
 </Tip>
 
-Alignez le bord non plié de la bande avec le collier arrière avec de bons côtés ensemble. Coudre la bande à l'encolure arrière et couper la couture. Turn the strip to the wrong side of the fabric and topstitch along the folded edge to keep it in place.
+- With *good sides together* align the non-folded edge of the strip with the back neckline.
+- Sew the strip to the back neckline and trim the seam.
+- Turn the strip to the wrong side of the fabric and *topstitch* along the folded edge to keep it in place.
 
-## Fermer les coutures d'épaule
+### Step 2: Close shoulder seams
 
-![Ce dessin était trop beau pour ne pas utiliser](neckline.jpg)
+![This drawing was too nice not to use](neckline.jpg)
 
-Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
+- Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
+- With *good sides together*, place the front on the back aligning the shoulder seams.
+- Fold the front neckline seam allowance over to the wrong side of the back.
 
-Placez l'avant sur le dos avec de bons côtés ensemble, alignant les coutures des épaules. Placer la couture de l'encolure avant sur le mauvais côté du dos.
+<Note>
 
 If you have a lightweight woven fabric you can fold this edge up again, so it will form a narrow double hem afterwards (it can help to press these folds first).
 
-Séparez la couture de l'épaule en enfermant le bord brut de l'encolure arrière dans le pli.
+</Note>
 
-Tourner à droite et presser.
+- Stitch the shoulder seam, enclosing the raw edge of the back neckline in the fold.
+- Turn to the right side and press.
 
-## Terminer l'encollure avant
+### Step 3: Finish front neckline
 
-Appuyez sur l'ourlet formé dans votre tissu par les plis que vous avez faits à la couture de l'épaule lorsque vous avez fermé l'épaule et le dessus à proximité du bord.
+- Press the hem formed in your fabric by the folds you made at the shoulder seam when you closed the shoulder and topstitch close to the edge.
 
-## Attacher les manches
+### Step 4: Attach sleeves
 
 The sleeve will be inserted flat, meaning the armhole seam will be sewn first and the sleeve and side seam will be closed in one go.
 
-Placer la tête de manche le long de l'armure, avec *bons côtés ensemble* et des encoches correspondantes. Si nécessaire, adoucissez la tête de manche en haut, entre les entailles.
+- With *good sides together*, matching notches, pin the sleeve head along the armhole.
+- If necessary, ease in the sleeve head at the top, between the notches.
+- Sew, finish and press the seam.
+- Repeat for other sleeve.
 
-Courir, finir et presser la couture.
+### Step 5: Close side and sleeve seam
 
-## Fermer la couture des côtés et des manches
+- With *good sides together* pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
+- Sew, finish and press the seam.
 
-Place the front on the back with good sides together so the side seams and sleeve seam match and the whole thing starts to look like a shirt.  
-Make sure the armhole seam lines up across the front and back.
+### Step 6: Hem
 
-Courir, finir et presser la couture.
+- Finish the sleeves and bottom hems in a way that works with your fabric choice.
 
-## Faire les ourlets
+<Note>
 
-Finissez les manches et les ourlets du bas d'une manière qui fonctionne avec votre choix de tissu.
+Again, this can mean folding the hem under twice and *topstitching*, finishing the raw edge with a serger
+or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and
+trimming close to the stitching.
 
-Again, this can mean folding the hem under twice and topstitching, finishing the raw edge with a serger or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and trimming close to the stitching.
+</Note>
+
+### Step 7: Enjoy!
+
+You're all done! Now go enjoy your new top!

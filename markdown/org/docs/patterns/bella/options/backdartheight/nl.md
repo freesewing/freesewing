@@ -4,7 +4,7 @@ title: Hoogte neep rug
 
 ![Het effect van de optie voor de hoogte achterste neep op het patroon](sample.png)
 
-De **hoogte van de achterste neep** optie bepaalt de hoogte (zwaarder als je dat wilt) van de achterste neep.
+The **back dart height** option controls the height (length if you will) of the back dart.
 
 
 ## Effect van deze optie op het patroon
