@@ -133,7 +133,7 @@ export default (part) => {
     points.boxPleatLeftBottom = new Point(points.boxPleatLeft.x, points.armholeHollowCp2.y)
     points.boxPleatMidBottom = new Point(points.boxPleatMid.x, points.armholeHollowCp2.y)
     points.boxPleatRightBottom = new Point(points.boxPleatRight.x, points.armholeHollowCp2.y)
-    paths.armhole.setRender(true).attr('class', 'stroke-xl highlight debug canvas')
+    paths.armhole.setRender(false)
     paths.armhole = paths.armhole.translate(store.get('boxPleatFold') * 2, 0)
     for (const p of [
       'armholePitch',

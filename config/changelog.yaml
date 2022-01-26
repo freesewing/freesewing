@@ -1,3 +1,9 @@
+Unreleased:
+
+  Fixed:
+    simon:
+      - Remove debug outline when enabling box pleat setting
+
 2.20.0:
   date: 2022-01-24
 
