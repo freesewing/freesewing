@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import ClearIcon from 'shared/components/icons/clear.js'
 import EditIcon from 'shared/components/icons/edit.js'
-import { formatMm, round } from 'shared/utils.js'
 
 const EditCount = props => (
   <div className="form-control mb-2 w-full">

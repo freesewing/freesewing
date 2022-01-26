@@ -44,19 +44,24 @@ const values = {
     const current = props.gist?.options?.[props.option]
     return (dflt==current || typeof current === 'undefined')
       ? <span className="text-secondary">{dflt}</span>
-      : <span className="text-secondary">{current}</span>
-  },
-  deg: props => {
-    return <p>No val yet</p>
+      : <span className="text-accent">{current}</span>
   },
   list: props => {
-    return <p>No val yet</p>
+    const dflt = props.pattern.config.options[props.option].dflt
+    const current = props.gist?.options?.[props.option]
+    const prefix = `options.${props.pattern.config.name}.${props.option}.options.`
+    return (dflt==current || typeof current === 'undefined')
+      ? <span className="text-secondary">{props.app.t(prefix+dflt)}</span>
+      : <span className="text-accent">{props.app.t(prefix+current)}</span>
+  },
+  deg: props => {
+    return <p>No deg val yet</p>
   },
   mm: props => {
-    return <p>No val yet</p>
+    return <p>No mm val yet</p>
   },
   constant: props => {
-    return <p>No val yet</p>
+    return <p>No constant val yet</p>
   },
 }
 
