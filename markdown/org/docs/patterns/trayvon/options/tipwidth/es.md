@@ -1,4 +1,4 @@
-![Ancho de la punta](topwidth.svg)
+![Ancho de la punta](tipwidth.svg)
 
 El ancho de la punta es el ancho en la punta del empate.
 
