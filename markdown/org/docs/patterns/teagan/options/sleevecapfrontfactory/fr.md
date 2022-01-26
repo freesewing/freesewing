@@ -1,4 +1,4 @@
-![La position verticale du point de flexion avant](./sleevecapfonrtfactory.svg)
+![La position verticale du point de flexion avant](./sleevecapfrontfactory.svg)
 
 Cette option contrôle la position verticale du point de flexion du tête de manche à l'avant de la manche.
 
