@@ -121,7 +121,7 @@ addThing: '{thing} hinzufügen'
 newThing: Neu {thing}
 newPatternForModel: '{pattern} für {model} neu erstellen'
 noChanges: Keine Änderungen
-no: false
+no: "No" #Keep in quotes or it will evaluate to false
 noPasswordPolicy: Wir haben keine strikten Passwort-Rictlinien
 noSeamAllowance: Keine Nahtzugabe
 notAllOfThisContentIsAvailableInLanguage: Nicht alle Inhalte sind auf Deutsch verfügbar
@@ -222,7 +222,7 @@ whatIsThis: Was ist das?
 withBreasts: Mit Brüsten
 withoutBreasts: Ohne Brüste
 yay: Juhuu!
-yes: true
+yes: "Yes" #Keep in quotes or it will evaluate to false
 youAreAPatron: Du bist ein/e Förder/in
 youAreNotAPatron: Du bist kein/e Förder/in
 youAreNotLoggedIn: Du bist nicht eingeloggt
