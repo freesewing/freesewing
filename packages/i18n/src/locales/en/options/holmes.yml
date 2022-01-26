@@ -7,7 +7,7 @@ lengthRatio:
   description: Controls the length of the crown and ear flaps
 gores:
   title: Number of gores
-  description: The number of gores used to construct the semi-sphere
+  description: The number of gores used to construct the crown
 visorAngle:
   title: Visor angle
   description: The arc angle used to draft the inner curve of the visor
