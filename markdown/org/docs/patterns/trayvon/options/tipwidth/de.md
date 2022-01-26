@@ -1,4 +1,4 @@
-![Spitzenbreite](topwidth.svg)
+![Spitzenbreite](tipwidth.svg)
 
 Die Breite der Spitze ist die Breite an der Spitze der Krawatte.
 
