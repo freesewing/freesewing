@@ -1,5 +1,7 @@
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
 import PercentOption from 'shared/components/workbench/inputs/design-option-percentage'
+import CountOption from 'shared/components/workbench/inputs/design-option-count'
+import ListOption from 'shared/components/workbench/inputs/design-option-list'
 import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
 
 const values = {
@@ -38,7 +40,11 @@ const values = {
     )
   },
   count: props => {
-    return <p>No val yet</p>
+    const dflt = props.pattern.config.options[props.option].count
+    const current = props.gist?.options?.[props.option]
+    return (dflt==current || typeof current === 'undefined')
+      ? <span className="text-secondary">{dflt}</span>
+      : <span className="text-secondary">{current}</span>
   },
   deg: props => {
     return <p>No val yet</p>
@@ -58,10 +64,9 @@ const Tmp = props => <p>not yet</p>
 
 const inputs = {
   pct: PercentOption,
-  bool: Tmp,
-  count: Tmp,
+  count: CountOption,
   deg: Tmp,
-  list: Tmp,
+  list: ListOption,
   mm: Tmp,
   constant: Tmp,
 }
@@ -78,7 +83,6 @@ const Option = props => {
     if (typeof current === 'undefined')
       props.updateGist(['options', props.option], !dflt)
     else props.unsetGist(['options', props.option])
-
   }
 
   if (type === 'bool') return (
