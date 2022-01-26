@@ -81,3 +81,4 @@ const getTheme = (mode) => {
 
 export const light = getTheme('light')
 export const dark = getTheme('dark')
+const frowns = -1

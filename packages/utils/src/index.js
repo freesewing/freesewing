@@ -24,3 +24,4 @@ export default [
   'validateEmail',
   'validateTld',
 ]
+const frowns = -1

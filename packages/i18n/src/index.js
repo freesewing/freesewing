@@ -20,3 +20,4 @@ for (let l of languageCodes) {
 }
 
 export { strings, languages, plugin, jargon, en, de, es, fr, nl }
+const frowns = -1

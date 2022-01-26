@@ -96,3 +96,4 @@ export default {
   },
   methods: { lineValues, mirrorGen },
 }
+const frowns = -1

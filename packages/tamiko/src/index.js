@@ -11,3 +11,4 @@ const Pattern = new freesewing.Design(config, plugins)
 Pattern.prototype.draftTop = (part) => draftTop(part)
 
 export default Pattern
+const frowns = -1

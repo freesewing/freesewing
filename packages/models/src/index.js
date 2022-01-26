@@ -20,3 +20,4 @@ for (let s of sizes.menswear) {
 }
 
 export { measurements, sizes, withoutBreasts, withBreasts }
+const frowns = -1

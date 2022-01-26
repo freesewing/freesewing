@@ -15,3 +15,4 @@ Pattern.prototype.draftFrontSideDart = (part) => draftFrontSideDart(part)
 //Pattern.prototype.draftFrontShoulderDart = (part) => draftFrontShoulderDart(part)
 
 export default Pattern
+const frowns = -1

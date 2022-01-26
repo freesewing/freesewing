@@ -36,3 +36,4 @@ export default {
     },
   },
 }
+const frowns = -1

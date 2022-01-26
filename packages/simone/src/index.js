@@ -54,3 +54,4 @@ for (let Part of simonParts) {
 Pattern.prototype.draftFbaFront = draftFbaFront
 
 export default Pattern
+const frowns = -1

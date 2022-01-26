@@ -46,3 +46,4 @@ Pattern.prototype.draftFlyExtension = (part) => draftFlyExtension(part)
 Pattern.prototype.draftBeltLoops = (part) => draftBeltLoops(part)
 
 export default Pattern
+const frowns = -1

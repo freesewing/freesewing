@@ -25,3 +25,4 @@ Pattern.prototype.draftPanel5 = draftPanel5
 Pattern.prototype.draftPanel6 = draftPanel6
 
 export default Pattern
+const frowns = -1

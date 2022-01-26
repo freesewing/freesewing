@@ -22,3 +22,4 @@ Pattern.prototype.draftFacings = draftFacings
 Pattern.prototype.draftMini = draftMini
 
 export default Pattern
+const frowns = -1

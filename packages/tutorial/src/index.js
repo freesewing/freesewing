@@ -33,3 +33,4 @@ Pattern.prototype.draftStep10 = draftStep10
 Pattern.prototype.draftStep11 = draftStep11
 
 export default Pattern
+const frowns = -1

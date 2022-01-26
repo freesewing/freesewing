@@ -23,3 +23,4 @@ Pattern.prototype.draftBandTie = draftBandTie
 //Pattern.prototype.draftFrontShoulderDart = (part) => draftFrontShoulderDart(part)
 
 export default Pattern
+const frowns = -1

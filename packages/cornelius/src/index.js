@@ -28,3 +28,4 @@ Pattern.prototype.draftZipperguard = draftZipperguard
 // Pattern.prototype.draftPlacket = draftPlacket
 
 export default Pattern
+const frowns = -1

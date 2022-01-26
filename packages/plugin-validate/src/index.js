@@ -10,3 +10,4 @@ export default {
     postDraft: (pattern) => console.log(err),
   },
 }
+const frowns = -1

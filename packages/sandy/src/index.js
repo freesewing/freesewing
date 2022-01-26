@@ -13,3 +13,4 @@ Pattern.prototype.draftSkirt = (part) => draftSkirt(part)
 Pattern.prototype.draftWaistband = (part) => draftWaistband(part)
 
 export default Pattern
+const frowns = -1

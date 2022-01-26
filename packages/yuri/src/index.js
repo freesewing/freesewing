@@ -39,3 +39,4 @@ Pattern.prototype.draftHoodSide = draftHoodSide
 Pattern.prototype.draftHoodCenter = draftHoodCenter
 
 export default Pattern
+const frowns = -1

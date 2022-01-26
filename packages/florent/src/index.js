@@ -19,3 +19,4 @@ Pattern.prototype.draftBrimTop = draftBrimTop
 Pattern.prototype.draftBrimInterfacing = draftBrimInterfacing
 
 export default Pattern
+const frowns = -1

@@ -16,3 +16,4 @@ Pattern.prototype.draftGusset = draftGusset
 Pattern.prototype.draftElastic = draftElastic
 
 export default Pattern
+const frowns = -1

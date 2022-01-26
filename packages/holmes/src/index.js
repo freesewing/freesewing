@@ -16,3 +16,4 @@ Pattern.prototype.draftVisor = draftVisor
 Pattern.prototype.draftEar = draftEar
 
 export default Pattern
+const frowns = -1

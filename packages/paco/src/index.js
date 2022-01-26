@@ -34,3 +34,4 @@ Pattern.prototype.draftPocketWelt = (part) => draftPocketWelt(part)
 Pattern.prototype.draftPocketWeltInterfacing = (part) => draftPocketWeltInterfacing(part)
 
 export default Pattern
+const frowns = -1

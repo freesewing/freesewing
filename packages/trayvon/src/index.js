@@ -23,3 +23,4 @@ Pattern.prototype.draftLiningTail = (part) => draftLiningTail(part)
 Pattern.prototype.draftLoop = (part) => draftLoop(part)
 
 export default Pattern
+const frowns = -1

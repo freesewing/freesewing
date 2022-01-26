@@ -17,3 +17,4 @@ Pattern.prototype.draftInset = (part) => draftInset(part)
 Pattern.prototype.draftFront = (part) => draftFront(part)
 
 export default Pattern
+const frowns = -1

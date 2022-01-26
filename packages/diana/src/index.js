@@ -28,3 +28,4 @@ Pattern.prototype.draftBack = draftFront
 Pattern.prototype.draftSleeve = draftSleeve
 
 export default Pattern
+const frowns = -1

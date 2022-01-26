@@ -46,3 +46,4 @@ let methods = {
 for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m]
 
 export default Pattern
+const frowns = -1

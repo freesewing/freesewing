@@ -88,3 +88,4 @@ for (const [name, method] of Object.entries(methods)) {
 }
 
 export default Pattern
+const frowns = -1

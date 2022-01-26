@@ -21,3 +21,4 @@ Pattern.prototype.draftZipperpanel = draftZipperpanel
 Pattern.prototype.draftSidepanelreinforcement = draftSidepanelreinforcement
 
 export default Pattern
+const frowns = -1

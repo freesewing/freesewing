@@ -71,3 +71,4 @@ Pattern.prototype.draftStrap = draftStrap
 Pattern.prototype.draftPocket = draftPocket
 
 export default Pattern
+const frowns = -1

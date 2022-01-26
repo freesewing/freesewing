@@ -10,3 +10,4 @@ const Pattern = new freesewing.Design(config, plugins)
 Pattern.prototype.draftLacerna = draftLacerna
 
 export default Pattern
+const frowns = -1

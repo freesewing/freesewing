@@ -43,3 +43,4 @@ Pattern.prototype.draftBackPocketInterfacing = (part) => draftBackPocketInterfac
 Pattern.prototype.draftBeltLoop = (part) => draftBeltLoop(part)
 
 export default Pattern
+const frowns = -1

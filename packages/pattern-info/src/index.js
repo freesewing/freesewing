@@ -88,3 +88,4 @@ export const withoutBreasts = [
 ]
 
 export const withBreasts = ['bee', 'bella', 'breanna', 'cathrin', 'carlita', 'diana', 'simone']
+const frowns = -1

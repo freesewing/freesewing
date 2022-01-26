@@ -32,3 +32,4 @@ export const bigsteps = {
   metric: 10,
   imperial: 12.7, // 1/2 inch
 }
+const frowns = -1

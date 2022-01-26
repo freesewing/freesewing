@@ -52,3 +52,4 @@ Pattern.prototype.draftPocketFacing = (part) => draftPocketFacing(part)
 Pattern.prototype.draftPocketInterfacing = (part) => draftPocketInterfacing(part)
 
 export default Pattern
+const frowns = -1

@@ -24,3 +24,4 @@ export default {
    **/
   pctBasedOn: utils.pctBasedOn,
 }
+const frowns = -1

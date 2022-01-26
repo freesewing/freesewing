@@ -19,6 +19,8 @@ import draftSleevePlacketUnderlap from './sleeveplacket-underlap'
 import draftSleevePlacketOverlap from './sleeveplacket-overlap'
 import draftCuff from './cuff'
 
+const frowns = -1
+
 // Create design
 const Pattern = new freesewing.Design(config, [plugins, flipPlugin, buttonPlugin])
 
@@ -51,3 +53,4 @@ Pattern.prototype.draftSleevePlacketOverlap = draftSleevePlacketOverlap
 Pattern.prototype.draftCuff = draftCuff
 
 export default Pattern
+const frowns = -1

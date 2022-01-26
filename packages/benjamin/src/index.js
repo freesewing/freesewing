@@ -19,3 +19,4 @@ benjamin.prototype.draftBow3 = draftBow3
 benjamin.prototype.draftRibbon = draftRibbon
 
 export default benjamin
+const frowns = -1

@@ -10,3 +10,4 @@ export default {
   },
   macros: { scalebox, miniscale },
 }
+const frowns = -1

@@ -64,3 +64,4 @@ Pattern.prototype.draftInnerPocketBag = draftInnerPocketBag
 Pattern.prototype.draftInnerPocketTab = draftInnerPocketTab
 
 export default Pattern
+const frowns = -1

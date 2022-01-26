@@ -27,3 +27,4 @@ Pattern.prototype.draftSnippets = (part) => draftSnippets(part)
 Pattern.prototype.draftMacros = (part) => draftMacros(part)
 
 export default Pattern
+const frowns = -1

@@ -37,3 +37,4 @@ Pattern.prototype.draftBack = (part) => draftBack(part)
 Pattern.prototype.draftSleeve = (part) => draftSleeve(part)
 
 export default Pattern
+const frowns = -1

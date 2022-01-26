@@ -32,3 +32,4 @@ Pattern.prototype.draftCuff = draftCuff
 Pattern.prototype.draftWaistband = draftWaistband
 
 export default Pattern
+const frowns = -1
