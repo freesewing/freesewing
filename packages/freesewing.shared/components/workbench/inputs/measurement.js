@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 /*
  * This is a single input for a measurements
@@ -11,9 +11,8 @@ import React, { useState } from 'react'
 const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
   const title = app.t(`measurements.${m}`)
-  console.log('render', m)
   const isValid = input => {
-    if (input === null || input === '') return null
+    if (input === '') return ''
     return !isNaN(input)
   }
 
@@ -23,15 +22,19 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
     console.log({ok})
     if (ok) {
       setValid(true)
-      updateMeasurements(evt.target.value, m)
+      updateMeasurements(evt.target.value*10, m)
     } else setValid(false)
   }
 
-  const [val, setVal] = useState(gist?.measurements?.[m] || null)
+  const [val, setVal] = useState(gist?.measurements?.[m] || '')
   const [valid, setValid] = useState(typeof gist?.measurements?.[m] === 'undefined'
-    ? null :
+    ? '' :
     isValid(gist.measurements[m])
   )
+
+  useEffect(() => {
+    if (gist?.measurements?.[m]) setVal(gist.measurements[m]/10)
+  }, [gist])
 
   if (!m) return null
 
@@ -64,14 +67,14 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
         <span className={`
           ${valid === false && 'bg-error text-neutral-content'}
           ${valid === true && 'bg-success text-neutral-content'}
-          ${valid === null && 'bg-base-200 text-base-content'}
+          ${valid === '' && 'bg-base-200 text-base-content'}
        `}>
           cm
         </span>
       </label>
       <label className="label">
         <span className="label-text-alt">
-          {valid === null
+          {valid === ''
             ? ''
             : valid
             ? 'Looks good'

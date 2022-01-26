@@ -1,13 +1,13 @@
 import style from './lib/style'
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
     preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-title') === false) {
-        svg.attributes.set('freesewing:plugin-title', version)
+        svg.attributes.set('freesewing:plugin-title', pkg.version)
         svg.style += style
       }
     },

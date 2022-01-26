@@ -1,10 +1,10 @@
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-measurements', version),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-measurements', pkg.version),
     preDraft: function ({ settings }) {
       if (settings.measurements) {
         if (

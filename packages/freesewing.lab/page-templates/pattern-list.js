@@ -2,7 +2,6 @@ import Page from 'shared/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import Link from 'next/link'
-import config from 'site/freesewing.config.js'
 import About from 'site/components/about.js'
 
 const links = (section, list) => list.map(design => (
@@ -13,8 +12,10 @@ const links = (section, list) => list.map(design => (
   </li>
 ))
 
-const ListPage = ({ sections=Object.keys(config.patterns) }) => {
+const PatternListPageTemplate = ({ sections=false }) => {
   const app = useApp()
+  if (sections === false) sections = Object.keys(app.patterns)
+
   return (
     <Page app={app} title="FreeSewing Lab" noSearch>
       <Head>
@@ -31,12 +32,12 @@ const ListPage = ({ sections=Object.keys(config.patterns) }) => {
         <meta property="og:site_name" content="lab.freesewing.dev" key='site' />
       </Head>
       <div className="max-w-screen-md">
-        {Object.keys(config.navigation).map(section => {
+        {Object.keys(app.navigation).map(section => {
           if (sections.indexOf(section) !== -1) return (
-            <div>
-              <h2>{config.navigation[section].__title}</h2>
+            <div key={section}>
+              <h2>{app.navigation[section].__title}</h2>
               <ul className="flex flex-row flex-wrap gap-2">
-                {links(section, config.patterns[section])}
+                {links(section, app.patterns[section])}
               </ul>
             </div>
           )
@@ -48,4 +49,4 @@ const ListPage = ({ sections=Object.keys(config.patterns) }) => {
   )
 }
 
-export default ListPage
+export default PatternListPageTemplate

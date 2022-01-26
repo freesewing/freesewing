@@ -3,6 +3,7 @@ import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import Link from 'next/link'
+import Script from 'next/script'
 
 const HomePage = (props) => {
   const app = useApp()
@@ -20,8 +21,8 @@ const HomePage = (props) => {
         <meta property="og:url" content="https://freesewing.dev/" key='url' />
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
-        <script src="/sw.js" />
       </Head>
+      <Script src="/sw.js"></Script>
       <div className="max-w-screen-md">
         <p>
           FreeSewing.dev hosts documentation for contributors and developers alike.

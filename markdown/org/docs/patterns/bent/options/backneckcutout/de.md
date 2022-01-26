@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 ![Ausschnitt im Nacken](backneckcutout.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: Cornelius Fabric options
-- - -
+---
 ### Tela principal
 
 Any **bottom (trouser) weight material** will work fine for this pattern. Generally you want to avoid anything that is over 7oz (230gsm) as this will more likely be too stiff and uncomfortable. You want something that provides a bit of warmth whilst still being able to drape such as **Corduroy** or **Medium Weight Suiting** fabrics. If you are looking for someting more historically correct, then **Medium weight wool suiting** is the way to go. **Linen** is also an option, especially if you would like something that isn't too warm.

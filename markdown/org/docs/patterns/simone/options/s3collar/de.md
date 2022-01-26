@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 Steuert die Position der Schulternaht auf der Kragenseite.
 

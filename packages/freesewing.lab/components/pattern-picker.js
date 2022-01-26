@@ -1,5 +1,4 @@
 import React from 'react'
-import config from 'site/freesewing.config.js'
 import DesignIcon from 'shared/components/icons/design.js'
 import Link from 'next/link'
 
@@ -15,16 +14,16 @@ const PatternPicker = ({ app }) => {
           <DesignIcon />
           <span>Patterns</span>
         </div>
-        <ul tabIndex="0" className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 max-h-96 overflow-y-scroll">
-          {Object.keys(config.patterns).map(section => (
+        <ul tabIndex="0" className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 overflow-y-scroll navdrop">
+          {Object.keys(app.patterns).map(section => (
             <React.Fragment key={section}>
               <li className={`
                 capitalize font-bold text-base-content text-center
                 opacity-50 border-b2 my-2 border-base-content
               `}>
-                  {t(config.navigation[section].__title)}
+                  {t(app.navigation[section].__title)}
               </li>
-              {config.patterns[section].map(pattern => (
+              {app.patterns[section].map(pattern => (
                 <li key={pattern}>
                   <Link href={`/${section}/${pattern}`}>
                     <button className="btn btn-sm btn-ghost text-base-content">

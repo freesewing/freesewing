@@ -1,6 +1,6 @@
-- - -
+---
 title: Longitud de las cintas del cuello
-- - -
+---
 
 Controla la longitud de las cintas alrededor de tu cuello
 

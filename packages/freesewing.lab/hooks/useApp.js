@@ -1,14 +1,54 @@
 import { useState } from 'react'
 import set from 'lodash.set'
+import mustache from 'mustache'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
-// config
-import config from 'site/freesewing.config.js'
+// Patterns
+import patterns from 'site/patterns.json'
 // Languages
 import { strings } from 'pkgs/i18n'
 
+// Initial navigation
+const initialNavigation = {
+  accessories: {
+    __title: 'accessoryPatterns',
+    __order: 'accessoryPatterns',
+    __linktitle: 'accessoryPatterns',
+    __slug: 'accessories',
+  },
+  blocks: {
+    __title: 'blockPatterns',
+    __order: 'blockPatterns',
+    __linktitle: 'blockPatterns',
+    __slug: 'blocks',
+  },
+  garments: {
+    __title: 'garmentPatterns',
+    __order: 'garmentPatterns',
+    __linktitle: 'GarmentPatterns',
+    __slug: 'garments',
+  },
+  utilities: {
+    __title: 'utilityPatterns',
+    __order: 'utilityPatterns',
+    __linktitle: 'utilityPatterns',
+    __slug: 'utilities',
+  },
+}
+for (const type in patterns) {
+  for (const design of patterns[type]) {
+    initialNavigation[type][design] = {
+      __title: design,
+      __order: design,
+      __linktitle: design,
+      __slug: `${type}/${design}`
+    }
+  }
+}
+
+// Translate navigation
 const translateNavigation = (lang, t) => {
-  const newNav = {...config.navigation}
+  const newNav = {...initialNavigation}
   for (const key in newNav) {
     const translated = t(newNav[key].__title, false, lang)
     newNav[key].__title = translated
@@ -34,7 +74,7 @@ function useApp(full = true) {
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(config.navigation)
+  const [navigation, setNavigation] = useState(initialNavigation)
   const [slug, setSlug] = useState('/')
   const [pattern, setPattern] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -51,24 +91,30 @@ function useApp(full = true) {
    */
   const t = (key, props=false, toLanguage=false) => {
     if (!toLanguage) toLanguage = language
-    if (!props) { // easy
-      if (strings[toLanguage][key]) return strings[toLanguage][key]
-      // app is the most common prefix, so we allow to skip it
-      if (strings[toLanguage][`app.${key}`]) return strings[toLanguage][`app.${key}`]
-      // Can we fall back to English?
-      if (toLanguage !== 'en') {
-        if (strings.en[key]) return strings.en[key]
-        if (strings.en[`app.${key}`]) return strings.en[`app.${key}`]
-      }
-    }
-    console.log('Missing translation key:', key)
+    const template =
+      strings[toLanguage][key] ||
+      strings[toLanguage][`app.${key}`] ||
+      strings[toLanguage][`plugin.${key}`] ||
+      strings.en[`app.${key}`] ||
+      false
+    if (!props && template) return template
+    else if (template) return mustache.render(
+      template.split('{').join('{{').split('}').join('}}'),
+      props
+    )
+    // No translation found
+    //console.log('Missing translation key:', key)
 
-    return key
+    // If it's a key (no spaces), return the final part, that's slightly better
+    return (typeof key === 'string' && key.indexOf(' ') === -1)
+      ? key.split('.').pop()
+      : key
   }
 
   return {
     // Static vars
     site: 'lab',
+    patterns,
 
     // State
     language,

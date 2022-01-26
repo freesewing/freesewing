@@ -1,6 +1,6 @@
-- - -
+---
 title: Cornelius Cutting
-- - -
+---
 
 ### Materiales
  - **Tela principal**

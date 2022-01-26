@@ -68,6 +68,7 @@ documentationOverview: Documentation overview
 download: Download
 draft: Draft
 draftPattern: 'Draft {pattern}'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Draft {pattern} for {model}'
 drafts: Drafts
 draftSettings: Draft settings
@@ -119,7 +120,7 @@ addThing: Add {thing}
 newThing: New {thing}
 newPatternForModel: 'New {pattern} for {model}'
 noChanges: No changes
-no: No
+no: "No" # Keep in quotes or it will evaluate to false
 noPasswordPolicy: We don't enforce a password policy
 noSeamAllowance: No seam allowance
 notAllOfThisContentIsAvailableInLanguage: Not all of this content is available in English
@@ -220,7 +221,7 @@ whatIsThis: What is this?
 withBreasts: With breasts
 withoutBreasts: Without breasts
 yay: Yay!
-yes: Yes
+yes: "Yes" # Keep in quotes or it will evaluate to false
 youAreAPatron: You are a patron
 youAreNotAPatron: Your are not a patron
 youAreNotLoggedIn: You are not logged in

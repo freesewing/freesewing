@@ -1,6 +1,6 @@
-- - -
+---
 title: Cornelius Construction
-- - -
+---
 
 ### Step 1: The Front Pockets
 

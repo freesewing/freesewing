@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 ## Nieuwste updates
 

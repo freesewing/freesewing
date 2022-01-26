@@ -1,7 +1,6 @@
 import pkg from '../package.json'
 
-
-export default {
+export default (core) => ({
   name: 'aaron',
   version: pkg.version,
   design: 'Joost De Cock',
@@ -56,7 +55,7 @@ export default {
     // Percentages
     armholeDrop: { pct: 10, min: 0, max: 75 },
     backlineBend: { pct: 50, min: 25, max: 100 },
-    chestEase: { pct: 8, min: 0, max: 20 },
+    chestEase: { pct: 8, min: 0, max: 20, ...core.pctBasedOn('chest') },
     hipsEase: { pct: 8, min: 0, max: 20 },
     lengthBonus: { pct: 10, min: -20, max: 60 },
     necklineBend: { pct: 100, min: 40, max: 100 },
@@ -65,4 +64,4 @@ export default {
     shoulderStrapWidth: { pct: 15, min: 10, max: 40 },
     shoulderStrapPlacement: { pct: 40, min: 20, max: 80 },
   },
-}
+})

@@ -1,11 +1,11 @@
-import { name, version } from '../package.json'
+import pkg from '../package.json'
 import bartack from './bartack'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-bartack', version),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-bartack', pkg.version),
   },
   macros: {
     bartack: function (so) {

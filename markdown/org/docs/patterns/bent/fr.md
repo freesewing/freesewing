@@ -1,4 +1,4 @@
-- - -
-- - -
+---
+---
 
 <PatternDocs pattern='bent' />

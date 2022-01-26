@@ -1,6 +1,6 @@
-- - -
+---
 title: Bella What you need
-- - -
+---
 
 Um Bella zu erstellen, benötigst du Folgendes:
 

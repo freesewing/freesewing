@@ -1,10 +1,10 @@
-import { name, version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-flip', version),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-flip', pkg.version),
   },
   macros: {
     flip: function (so) {

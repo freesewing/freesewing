@@ -42,12 +42,12 @@ module.exports = {
   // base-200: A slightly darker background color, used for hovers and so on
   'base-200': colors.neutral['200'],
   // base-300: A shade midway between dark and light
-  'base-300': colors.neutral['400'],
+  'base-300': colors.neutral['500'],
   // base-content: The default text color for a regular page (docs and so on)
   'base-content': colors.neutral['700'],
 
   // primary: The main brand color and color of the primary button
-  'primary': colors.violet['700'],
+  'primary': colors.violet['500'],
   // primary-focus: The :hover color for the primary button
   'primary-focus': colors.violet['600'],
   // primary-content: The text color on a primary button

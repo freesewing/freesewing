@@ -1,6 +1,6 @@
-- - -
+---
 title: Band (chest) tie length colours
-- - -
+---
 
 Whether you want single color tie around your chest, or dual-coloured ones
 

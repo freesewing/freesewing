@@ -1,6 +1,6 @@
-- - -
+---
 title: Ancho de las cintas del cuello
-- - -
+---
 
 Controla el ancho de las cintas alrededor del cuello
 

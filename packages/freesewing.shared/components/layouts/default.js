@@ -178,7 +178,7 @@ const DefaultLayout = ({
                 }
               </button>
             </div>
-            <AltMenu />
+            {AltMenu}
           </aside>
         )}
       </main>

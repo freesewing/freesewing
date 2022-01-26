@@ -1,6 +1,6 @@
-- - -
+---
 title: Mostrar Bella
-- - -
+---
 
 Muestra el contorno del patrón base Bella en el que se basa Bee
 

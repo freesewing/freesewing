@@ -1,13 +1,13 @@
 import markers from './lib/markers'
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
     preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-cutonfold') === false) {
-        svg.attributes.set('freesewing:plugin-cutonfold', version)
+        svg.attributes.set('freesewing:plugin-cutonfold', pkg.version)
         svg.defs += markers
       }
     },

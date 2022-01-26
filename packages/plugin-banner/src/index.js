@@ -1,10 +1,10 @@
-import { name, version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-banner', version),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-banner', pkg.version),
   },
   macros: {
     banner: function (so) {

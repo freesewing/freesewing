@@ -1,5 +1,5 @@
 import markers from './lib/markers'
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 const prefix = '__paperless'
 
@@ -64,12 +64,12 @@ function lleader(so, type, self, id) {
 }
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
     preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-dimension') === false) {
-        svg.attributes.set('freesewing:plugin-dimension', version)
+        svg.attributes.set('freesewing:plugin-dimension', pkg.version)
         svg.defs += markers
       }
     },
