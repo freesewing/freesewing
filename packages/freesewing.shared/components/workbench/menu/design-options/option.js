@@ -1,5 +1,5 @@
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
-import PercentOption from 'shared/components/workbench/inputs/design-option-percentage'
+import PctDegOption from 'shared/components/workbench/inputs/design-option-pct-deg'
 import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListOption from 'shared/components/workbench/inputs/design-option-list'
 import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
@@ -55,7 +55,11 @@ const values = {
       : <span className="text-accent">{props.app.t(prefix+current)}</span>
   },
   deg: props => {
-    return <p>No deg val yet</p>
+    const dflt = props.pattern.config.options[props.option].deg
+    const current = props.gist?.options?.[props.option]
+    return (dflt==current || typeof current === 'undefined')
+      ? <span className="text-secondary">{dflt}&deg;</span>
+      : <span className="text-accent">{current}&deg;</span>
   },
   mm: props => {
     return <p>No mm val yet</p>
@@ -68,11 +72,11 @@ const values = {
 const Tmp = props => <p>not yet</p>
 
 const inputs = {
-  pct: PercentOption,
+  pct: PctDegOption,
   count: CountOption,
-  deg: Tmp,
+  deg: props => <PctDegOption {...props} type='deg' />,
   list: ListOption,
-  mm: Tmp,
+  mm: <p>Mm options are not supported. Please report this.</p>,
   constant: Tmp,
 }
 

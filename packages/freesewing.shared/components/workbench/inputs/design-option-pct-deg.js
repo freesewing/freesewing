@@ -3,12 +3,12 @@ import ClearIcon from 'shared/components/icons/clear.js'
 import EditIcon from 'shared/components/icons/edit.js'
 import { formatMm, round } from 'shared/utils.js'
 
-const EditPercentage = props => (
+const EditOption = props => (
   <div className="form-control mb-2 w-full">
     <label className="label">
-      <span className="label-text text-neutral-content">{props.min}%</span>
-      <span className="label-text font-bold text-neutral-content">{props.value}%</span>
-      <span className="label-text text-neutral-content">{props.max}%</span>
+      <span className="label-text text-neutral-content">{props.min}{props.suffix}</span>
+      <span className="label-text font-bold text-neutral-content">{props.value}{props.suffix}</span>
+      <span className="label-text text-neutral-content">{props.max}{props.suffix}</span>
     </label>
     <label className="input-group input-group-sm">
       <input
@@ -19,52 +19,56 @@ const EditPercentage = props => (
         value={props.value}
         onChange={props.handleChange}
       />
-      <span className="text-neutral-content font-bold">%</span>
+      <span className="text-neutral-content font-bold">{props.suffix}</span>
     </label>
   </div>
 )
 
 
-const DesignOptionPercentage = props => {
-  const { pct, max, min } = props.pattern.config.options[props.option]
+const DesignOptionPctDeg = props => {
+  const suffix = props.type === 'deg' ? '°' : '%'
+  const factor = props.type === 'deg' ? 1 : 100
+  const { max, min } = props.pattern.config.options[props.option]
+  const dflt = props.pattern.config.options[props.option][props.type || 'pct']
   const val = (typeof props.gist?.options?.[props.option] === 'undefined')
-    ? pct
-    : props.gist.options[props.option] * 100
+    ? dflt
+    : props.gist.options[props.option] * factor
 
   const [value, setValue] = useState(val)
-  const [editPercentage, setEditPercentage] = useState(false)
+  const [editOption, setEditOption] = useState(false)
 
   const handleChange = (evt) => {
     const newVal = evt.target.value
     setValue(newVal)
-    props.updateGist(['options', props.option], newVal/100)
+    props.updateGist(['options', props.option], newVal/factor)
   }
   const reset = () => {
-    setValue(pct)
+    setValue(dflt)
     props.unsetGist(['options', props.option])
   }
 
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <div className="flex flex-row justify-between">
-        {editPercentage
-          ? <EditPercentage
+        {editOption
+          ? <EditOption
               value={value}
               handleChange={handleChange}
               min={min}
               max={max}
-              setEditPercentage={setEditPercentage}
+              setEditOption={setEditOption}
               t={props.app.t}
+              suffix={suffix}
             />
           : (
             <>
-              <span className="opacity-50">{round(min)}%</span>
+              <span className="opacity-50">{round(min)}{suffix}</span>
               <span className={
-                `font-bold ${val===pct ? 'text-secondary' : 'text-accent'}`}
+                `font-bold ${val===dflt ? 'text-secondary' : 'text-accent'}`}
               >
-                {round(val)}%
+                {round(val)}{suffix}
               </span>
-              <span className="opacity-50">{round(max)}%</span>
+              <span className="opacity-50">{round(max)}{suffix}</span>
             </>
           )
         }
@@ -78,11 +82,11 @@ const DesignOptionPercentage = props => {
         onChange={handleChange}
         className={`
           range range-sm mt-1
-          ${val === pct ? 'range-secondary' : 'range-accent'}
+          ${val === dflt ? 'range-secondary' : 'range-accent'}
         `}
       />
       <div className="flex flex-row justify-between">
-        <span className={val===pct ? 'text-secondary' : 'text-accent'}>
+        <span className={val===dflt ? 'text-secondary' : 'text-accent'}>
           {props.pattern.config.options[props.option]?.toAbs
             ? formatMm(props.pattern.config.options[props.option].toAbs(value/100, props.gist))
             : ' '
@@ -92,21 +96,21 @@ const DesignOptionPercentage = props => {
           <button
             title={props.app.t('app.reset')}
             className="btn btn-ghost btn-xs text-accent"
-            disabled={val === pct}
+            disabled={val === dflt}
             onClick={reset}
           >
             <ClearIcon />
           </button>
           <button
-            title={props.app.t('app.editThing', { thing: '%' })}
+            title={props.app.t('app.editThing', { thing: suffix })}
             className={`
               btn btn-ghost btn-xs hover:text-secondary-focus
-              ${editPercentage
+              ${editOption
                 ? 'text-accent'
                 : 'text-secondary'
               }
             `}
-            onClick={() => setEditPercentage(!editPercentage)}
+            onClick={() => setEditOption(!editOption)}
           >
             <EditIcon />
           </button>
@@ -116,4 +120,4 @@ const DesignOptionPercentage = props => {
   )
 }
 
-export default DesignOptionPercentage
+export default DesignOptionPctDeg
