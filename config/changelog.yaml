@@ -1,3 +1,10 @@
+2.20.2:
+  date: 2022-01-27
+
+  Fixed:
+    i18n:
+      - Patterns options were always in English due to symlinks being used
+
 2.20.1:
   date: 2022-01-27
 
