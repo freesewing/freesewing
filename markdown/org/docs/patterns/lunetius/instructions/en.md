@@ -12,9 +12,9 @@ When done by hand, this can be done with a spaced backstitch, or a running stitc
 
 On the machine a regular straight stitch in any size will work.
 
-### Hemming the edges 
-
 Felling the edges by hand can be done with a felling stitch, or a running stitch if you prefer. On the machine you can use any stitch you use to hem fabric. 
+
+### Hemming the edges 
 
 The next and last step is to finish the edges. This can be done by turning a hem on the whole edge, or by using a binding. Once this is done, you are finished!
 
