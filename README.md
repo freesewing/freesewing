@@ -58,7 +58,7 @@ see in our mext major release.
 
 ## Getting started ⚡ 
 
-As this is a monorepo. You'll need [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
+As this is a monorepo. You'll need [NodeJS v14](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
 Once you have those, clone (or fork) this repo and run `yarn kickstart`:
 
 ```bash
