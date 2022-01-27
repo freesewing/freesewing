@@ -8,3 +8,15 @@ A lot of garments were woven to shape in the roman era, so this is one aspect wh
 
 If you want to learn more about this you can read about it in:  
 Granger-Taylor, H. (1982) *Weaving Clothes To Shape in the Ancient World: The Tunic and Toga of the Arringatore* in Textile History 13 (1), pp 3-25
+
+<Note> 
+ ###On Historical Accuracy
+
+The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+
+This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+
+We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+
+How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required!
+</Note> 
