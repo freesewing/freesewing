@@ -35,7 +35,7 @@
   },
   "peerDependencies": {
     "tlds": "^1.221.1",
-    "axios": "0.21.2"
+    "axios": "^0.25.0"
   },
   "dependencies": {},
   "devDependencies": {},

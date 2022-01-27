@@ -1,6 +1,15 @@
 # Change log for: FreeSewing (global)
 
 
+## Unreleased
+
+### simon
+
+#### Fixed
+
+ - Remove debug outline when enabling box pleat setting
+
+
 ## 2.20.0 (2022-01-24)
 
 ### aaron
