@@ -1,6 +1,15 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.20.2 (2022-01-27)
+
+### i18n
+
+#### Fixed
+
+ - Patterns options were always in English due to symlinks being used
+
+
 ## 2.20.1 (2022-01-27)
 
 ### bee
