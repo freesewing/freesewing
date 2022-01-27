@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-theme",
-  "version": "2.20.0",
+  "version": "2.20.1",
   "description": "A FreeSewing plugin that provides a default theme",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -40,7 +40,7 @@
     "prebuild": "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.20.0"
+    "@freesewing/core": "^2.20.1"
   },
   "dependencies": {},
   "devDependencies": {

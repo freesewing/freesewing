@@ -1,4 +1,9 @@
-Unreleased:
+2.20.1:
+  date: 2022-01-27
+
+  Changed:
+    bee:
+      - Exposed additional Bella options
 
   Fixed:
     hugo:

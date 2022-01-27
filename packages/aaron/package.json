@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/aaron",
-  "version": "2.20.0",
+  "version": "2.20.1",
   "description": "A FreeSewing pattern for a A-shirt or tank top",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -39,23 +39,23 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.20.0",
-    "@freesewing/plugin-bundle": "^2.20.0",
-    "@freesewing/brian": "^2.20.0"
+    "@freesewing/core": "^2.20.1",
+    "@freesewing/plugin-bundle": "^2.20.1",
+    "@freesewing/brian": "^2.20.1"
   },
   "dependencies": {},
   "devDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@freesewing/components": "^2.20.0",
-    "@freesewing/css-theme": "^2.20.0",
-    "@freesewing/i18n": "^2.20.0",
-    "@freesewing/mui-theme": "^2.20.0",
-    "@freesewing/plugin-bust": "^2.20.0",
-    "@freesewing/plugin-buttons": "^2.20.0",
-    "@freesewing/plugin-flip": "^2.20.0",
-    "@freesewing/utils": "^2.20.0",
+    "@freesewing/components": "^2.20.1",
+    "@freesewing/css-theme": "^2.20.1",
+    "@freesewing/i18n": "^2.20.1",
+    "@freesewing/mui-theme": "^2.20.1",
+    "@freesewing/plugin-bust": "^2.20.1",
+    "@freesewing/plugin-buttons": "^2.20.1",
+    "@freesewing/plugin-flip": "^2.20.1",
+    "@freesewing/utils": "^2.20.1",
     "react-scripts": "^5.0.0",
     "webpack": "^5.67.0",
     "rollup": "^2.66.1",

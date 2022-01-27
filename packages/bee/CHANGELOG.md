@@ -1,6 +1,12 @@
 # Change log for: @freesewing/bee
 
 
+## 2.20.1 (2022-01-27)
+
+### Changed
+
+ - Exposed additional Bella options
+
 ## 2.20.0 (2022-01-24)
 
 ### Changed

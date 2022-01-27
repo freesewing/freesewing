@@ -35,7 +35,7 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: "cd packages/penelope && npm install @freesewing/core@^2.20.0 @freesewing/plugin-bundle@^2.20.0 @freesewing/models@2.20.0 @freesewing/pattern-info@2.20.0 mocha chai"
+        run: "cd packages/penelope && npm install @freesewing/core@^2.20.1 @freesewing/plugin-bundle@^2.20.1 @freesewing/models@2.20.1 @freesewing/pattern-info@2.20.1 mocha chai"
         env:
           CI: true
       - name: Build pattern

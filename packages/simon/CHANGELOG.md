@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## 2.20.1 (2022-01-27)
+
+### Fixed
+
+ - Remove debug outline when enabling box pleat setting
+
 ## 2.20.0 (2022-01-24)
 
 ### Changed

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-validate",
-  "version": "2.20.0",
+  "version": "2.20.1",
   "description": "A FreeSewing plugin that validates aspects of your code",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -39,7 +39,7 @@
     "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.20.0"
+    "@freesewing/core": "^2.20.1"
   },
   "dependencies": {},
   "devDependencies": {
