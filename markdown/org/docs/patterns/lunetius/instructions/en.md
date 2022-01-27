@@ -1,5 +1,5 @@
 ---
-title: Sewing
+title: Instructions
 ---
 
 All the sewing can be done by machine or by hand as you prefer. If you want to sew with historically accurate thread, you can use linen or wool thread, or silk if you prefer.
