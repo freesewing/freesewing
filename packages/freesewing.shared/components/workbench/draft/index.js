@@ -11,15 +11,15 @@ const LabDraft = ({ app, pattern, gist, updateGist }) => {
   return (
     <Svg {...patternProps}>
       <Defs {...patternProps} />
-      <style>{`:root { --pattern-scale: ${gist.settings.scale || 1}}`}</style>
+      <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
       <g>
         {Object.keys(patternProps.parts).map((name) => (
           <Part
             key={name}
             part={patternProps.parts[name]}
-            language={gist.settings.locale}
-            paperless={gist.settings.paperless}
-            units={gist.settings.units}
+            locale={gist.locale}
+            paperless={gist.paperless}
+            units={gist.units}
             name={name}
             app={app}
           />

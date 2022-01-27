@@ -103,7 +103,7 @@ const Part = (props) => {
           key={name}
           name={name}
           part={props.name}
-          language={props.language}
+          locale={props.locale}
           path={props.part.paths[name]}
           focus={props.focus}
           topLeft={props.part.topLeft}
@@ -118,7 +118,7 @@ const Part = (props) => {
           key={name}
           name={name}
           part={props.name}
-          language={props.language}
+          locale={props.locale}
           point={props.part.points[name]}
           focus={props.focus}
           topLeft={props.part.topLeft}

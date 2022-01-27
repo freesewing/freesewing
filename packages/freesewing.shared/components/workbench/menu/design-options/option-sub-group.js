@@ -16,6 +16,7 @@ const OptionSubGroup = props => {
           <div className={`
             grow pl-2 border-l-2
             ${linkClasses}
+            hover:cursor-resize
             hover:border-secondary
             sm:hover:border-secondary-focus
             text-base-content sm:text-neutral-content

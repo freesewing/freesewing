@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const CoreSettingList = props => {
   const { dflt, list } = props
-  const val = props.gist?.settings?.[props.setting]
+  const val = props.gist?.[props.setting]
 
   const [value, setValue] = useState(val)
 
@@ -10,8 +10,13 @@ const CoreSettingList = props => {
     if (newVal === dflt) reset()
     else {
       setValue(newVal)
-      props.updateGist(['settings', props.setting], newVal)
+      props.updateGist([props.setting], newVal)
     }
+  }
+
+  const reset = () => {
+    setValue(props.dflt)
+    props.updateGist([props.setting], props.dflt)
   }
 
   return (

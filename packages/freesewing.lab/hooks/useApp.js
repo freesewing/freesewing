@@ -5,7 +5,7 @@ import mustache from 'mustache'
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Patterns
 import patterns from 'site/patterns.json'
-// Languages
+// Locales
 import { strings } from 'pkgs/i18n'
 
 // Initial navigation
@@ -70,7 +70,7 @@ function useApp(full = true) {
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useLocalStorage('theme', prefersDarkMode ? 'dark' : 'light')
-  const [language, setLanguage] = useLocalStorage('language', 'en')
+  const [locale, setLocale] = useLocalStorage('locale', 'en')
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
@@ -81,20 +81,20 @@ function useApp(full = true) {
 
   // State methods
   const togglePrimaryMenu = () => setPrimaryMenu(!primaryMenu)
-  const changeLanguage = lang => {
-    setLanguage(lang)
-    setNavigation(translateNavigation(lang, t))
+  const changeLocale = loc => {
+    setLocale(loc)
+    setNavigation(translateNavigation(loc, t))
   }
 
   /*
    * Translation method
    */
-  const t = (key, props=false, toLanguage=false) => {
-    if (!toLanguage) toLanguage = language
+  const t = (key, props=false, toLocale=false) => {
+    if (!toLocale) toLocale = locale
     const template =
-      strings[toLanguage][key] ||
-      strings[toLanguage][`app.${key}`] ||
-      strings[toLanguage][`plugin.${key}`] ||
+      strings[toLocale][key] ||
+      strings[toLocale][`app.${key}`] ||
+      strings[toLocale][`plugin.${key}`] ||
       strings.en[`app.${key}`] ||
       false
     if (!props && template) return template
@@ -117,7 +117,7 @@ function useApp(full = true) {
     patterns,
 
     // State
-    language,
+    locale,
     loading,
     navigation,
     pattern,
@@ -137,11 +137,11 @@ function useApp(full = true) {
 
     // State handlers
     togglePrimaryMenu,
-    changeLanguage,
+    changeLocale,
 
     // Translation
     t,
-    languages: Object.keys(strings),
+    locales: Object.keys(strings),
   }
 }
 

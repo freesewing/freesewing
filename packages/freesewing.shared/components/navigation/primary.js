@@ -46,7 +46,7 @@ const currentChildren = current => Object.values(order(current))
 // Shared classes for links
 // Exported for re-use
 export const linkClasses = `text-lg lg:text-xl
-  py-1 hover:cursor-pointer
+  py-1
   text-base-content sm:text-neutral-content
   hover:text-secondary
   sm:hover:text-secondary-focus
@@ -84,6 +84,7 @@ const SubLevel = ({ nodes={}, active }) => (
                 <a title={child.__title} className={`
                   grow pl-2 border-l-2
                   ${linkClasses}
+                  hover:cursor-pointer
                   hover:border-secondary
                   sm:hover:border-secondary-focus
                   ${child.__slug === active
@@ -117,6 +118,7 @@ const SubLevel = ({ nodes={}, active }) => (
               pl-2 border-l-2
               grow
               ${linkClasses}
+              hover:cursor-pointer
               hover:border-secondary
               sm:hover:border-secondary-focus
               ${child.__slug === active
@@ -157,7 +159,13 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
     `}>
       <span className="text-secondary-focus">{icon}</span>
       <Link href={`/${slug}`}>
-        <a className={`grow ${linkClasses} ${slug === active ? 'text-secondary sm:text-secondary-focus' : ''}`}>
+        <a className={`
+          grow ${linkClasses} hover:cursor-pointer
+          ${slug === active
+            ? 'text-secondary sm:text-secondary-focus'
+            : ''
+          }`}
+        >
           {title}
         </a>
       </Link>

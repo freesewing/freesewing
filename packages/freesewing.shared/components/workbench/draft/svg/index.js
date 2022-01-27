@@ -3,7 +3,7 @@ import React from 'react'
 const Svg = ({
   embed = true,
   develop = false,
-  language = 'en',
+  locale = 'en',
   className = 'freesewing pattern',
   style = {},
   viewBox = false,
@@ -15,7 +15,7 @@ const Svg = ({
     xmlns: 'http://www.w3.org/2000/svg',
     'xmlns:svg': 'http://www.w3.org/2000/svg',
     xmlnsXlink: 'http://www.w3.org/1999/xlink',
-    xmlLang: language,
+    xmlLang: locale,
     viewBox: viewBox || `0 0 ${width} ${height}`,
     className,
     style

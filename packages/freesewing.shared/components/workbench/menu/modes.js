@@ -37,7 +37,7 @@ const Modes = props => {
         items-center
       `}>
         <span className="text-secondary-focus mr-4"><MenuIcon /></span>
-        <span className={`grow ${linkClasses}`}>
+        <span className={`grow ${linkClasses} hover:cursor-resize`}>
           {props.app.t('app.modes')}
         </span>
         <Chevron />
@@ -48,6 +48,7 @@ const Modes = props => {
             <button title={entry.title} className={`
               grow pl-2 border-l-2
               ${linkClasses}
+              hover:cursor-pointer
               hover:border-secondary
               sm:hover:border-secondary-focus
               text-left

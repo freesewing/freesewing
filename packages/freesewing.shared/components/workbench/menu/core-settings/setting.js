@@ -2,69 +2,30 @@ import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
 import PctDegOption from 'shared/components/workbench/inputs/design-option-pct-deg'
 import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListSetting from './core-setting-list'
+import MmSetting from './core-setting-mm'
 import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
 
 const settings = {
   locale: props => {
     return (
       <span className="text-secondary">
-        {props.app.t(`i18n.${props.gist.settings.locale}`)}
+        {props.app.t(`i18n.${props.gist.locale}`)}
       </span>
     )
   },
-  pct: props => {
-    const val = (typeof props.gist?.options?.[props.option] === 'undefined')
-      ? props.pattern.config.options[props.option].pct/100
-      : props.gist.options[props.option]
+  units: props => {
     return (
-      <span className={
-        val=== props.pattern.config.options[props.option].pct/100
-          ? 'text-secondary'
-          : 'text-accent'
-      }>
-        {formatPercentage(val)}
-        {props.pattern.config.options[props.option]?.toAbs
-          ? ' | ' +formatMm(props.pattern.config.options[props.option]?.toAbs(val, props.gist))
-          : null
-        }
+      <span className="text-secondary">
+        {props.app.t(`app.${props.gist.units}Units`)}
       </span>
     )
   },
-  bool: props => {
-    const dflt = props.pattern.config.options[props.option].bool
-    const current = props.gist?.options?.[props.option]
+  margin: props => {
     return (
-      <span className={
-        (dflt==current || typeof current === 'undefined')
-          ? 'text-secondary'
-          : 'text-accent'
-      }>
-        {props.gist?.options?.[props.option]
-          ? props.app.t('app.yes')
-          : props.app.t('app.no')
-        }
-      </span>
+      <span className="text-secondary" dangerouslySetInnerHTML={{
+        __html: formatMm(props.gist.margin, props.gist.units)
+      }} />
     )
-  },
-  count: props => {
-    const dflt = props.pattern.config.options[props.option].count
-    const current = props.gist?.options?.[props.option]
-    return (dflt==current || typeof current === 'undefined')
-      ? <span className="text-secondary">{dflt}</span>
-      : <span className="text-accent">{current}</span>
-  },
-  deg: props => {
-    const dflt = props.pattern.config.options[props.option].deg
-    const current = props.gist?.options?.[props.option]
-    return (dflt==current || typeof current === 'undefined')
-      ? <span className="text-secondary">{dflt}&deg;</span>
-      : <span className="text-accent">{current}&deg;</span>
-  },
-  mm: props => {
-    return <p>No mm val yet</p>
-  },
-  constant: props => {
-    return <p>No constant val yet</p>
   },
 }
 
@@ -73,13 +34,20 @@ const Tmp = props => <p>not yet</p>
 const inputs = {
   locale: props => <ListSetting
     {...props}
-    list={props.app.languages.map(key => ({
+    list={props.config.list.map(key => ({
       key,
       title: props.app.t(`i18n.${key}`)
     }))}
   />,
+  units: props => <ListSetting
+    {...props}
+    list={props.config.list.map(key => ({
+      key,
+      title: props.app.t(`app.${key}Units`)
+    }))}
+  />,
+  margin: props => <MmSetting {...props} {...props.config} />,
 }
-
 
 const Setting = props => {
   const Input = inputs[props.setting]
@@ -109,6 +77,7 @@ const Setting = props => {
         <div className={`
           grow pl-2 border-l-2
           ${linkClasses}
+          hover:cursor-pointer
           hover:border-secondary
           sm:hover:border-secondary-focus
           text-base-content sm:text-neutral-content
@@ -143,6 +112,7 @@ const Setting = props => {
           <div className={`
             grow pl-2 border-l-2
             ${linkClasses}
+            hover:cursor-resize
             hover:border-secondary
             sm:hover:border-secondary-focus
             text-base-content sm:text-neutral-content

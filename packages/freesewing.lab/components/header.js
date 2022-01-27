@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Logo from 'shared/components/logos/freesewing.js'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
-import LanguagePicker from 'shared/components/language-picker.js'
+import LocalePicker from 'shared/components/locale-picker.js'
 import PatternPicker from 'site/components/pattern-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
@@ -82,7 +82,7 @@ const Header = ({ app }) => {
             </div>
             <div className="hidden sm:flex flex-row items-center">
               <ThemePicker app={app} />
-              <LanguagePicker app={app} />
+              <LocalePicker app={app} />
             </div>
           </div>
         </div>

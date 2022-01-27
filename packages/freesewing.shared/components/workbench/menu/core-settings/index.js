@@ -4,8 +4,15 @@ import Setting from './setting.js'
 
 const settings = {
   locale: {
-    dflt: 'en',
     list: ['de', 'en', 'es', 'fr', 'nl'],
+  },
+  units: {
+    list: ['metric', 'imperial'],
+  },
+  margin: {
+    min: 0,
+    max: 25,
+    dflt: 2,
   },
 }
 
@@ -22,7 +29,7 @@ const CoreSettings = props => {
         items-center
       `}>
         <span className="text-secondary-focus mr-4"><SettingsIcon /></span>
-        <span className={`grow ${linkClasses}`}>
+        <span className={`grow ${linkClasses} hover:cursor-resize`}>
           {props.app.t('app.settings')}
         </span>
         <Chevron />

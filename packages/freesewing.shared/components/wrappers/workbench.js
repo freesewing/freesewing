@@ -10,13 +10,13 @@ import defaultSettings from 'shared/components/workbench/default-settings.js'
 
 
 // Generates a default pattern gist to start from
-const defaultGist = (pattern, language='en') => {
+const defaultGist = (pattern, locale='en') => {
   const gist = {
   design: pattern.config.name,
   version: pattern.config.version,
-  settings: defaultSettings
+  ...defaultSettings
   }
-  if (language) gist.settings.locale = language
+  if (locale) gist.locale = locale
 
   return gist
 }
@@ -41,7 +41,7 @@ const WorkbenchWrapper = ({ app, pattern }) => {
 
   // State for display mode and gist
   const [mode, setMode] = useState('measurements')
-  const [gist, setGist] = useLocalStorage('gist', defaultGist(pattern, app.language))
+  const [gist, setGist] = useLocalStorage('gist', defaultGist(pattern, app.locale))
 
   // If we don't have the requiremed measurements,
   // force mode to measurements
