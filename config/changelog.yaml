@@ -1,6 +1,9 @@
 Unreleased:
 
   Fixed:
+    hugo:
+      - Seam allowance on pocket is incorrectly marked for cut-on-fold
+        Closes [#1731](https://github.com/freesewing/freesewing/issues/1731)
     simon:
       - Remove debug outline when enabling box pleat setting
 
