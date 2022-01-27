@@ -49,6 +49,9 @@ const DesignOptionPctDeg = props => {
 
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
+      <p className="m-0 p-0 px-2 mb-2 text-neutral-content opacity-60 italic">
+        {props.app.t(`options.${props.pattern.config.name}.${props.option}.description`, props.app.language)}
+      </p>
       <div className="flex flex-row justify-between">
         {editOption
           ? <EditOption
