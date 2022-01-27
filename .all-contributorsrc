@@ -757,6 +757,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "RikHekker",
+      "name": "Rik Hekker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31843274?v=4",
+      "profile": "https://github.com/RikHekker",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true

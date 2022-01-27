@@ -141,6 +141,7 @@ function useApp(full = true) {
 
     // Translation
     t,
+    languages: Object.keys(strings),
   }
 }
 
