@@ -10,7 +10,7 @@ If you want to learn more about this you can read about it in:
 Granger-Taylor, H. (1982) *Weaving Clothes To Shape in the Ancient World: The Tunic and Toga of the Arringatore* in Textile History 13 (1), pp 3-25
 
 <Note>
- ###On Historical Accuracy
+ ### On Historical Accuracy
 
 The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
 
