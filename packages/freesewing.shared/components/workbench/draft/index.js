@@ -5,11 +5,8 @@ import Part from './part'
 
 const LabDraft = ({ app, pattern, gist, updateGist }) => {
 
-  const patternInstance = new pattern(gist)
-  patternInstance.draft()
+  const patternInstance = new pattern(gist).draft()
   const patternProps = patternInstance.getRenderProps()
-
-
 
   return (
     <Svg {...patternProps}>

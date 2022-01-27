@@ -3,7 +3,7 @@ const Text = (props) => {
   // Handle translation
   let translated = ''
   for (let string of props.point.attributes.getAsArray('data-text')) {
-    translated += props.app.t(string.toString()).replace(/&quot;/g, '"') + ' '
+    translated += props.app.t(string.toString(), false, props.language).replace(/&quot;/g, '"') + ' '
   }
   // Handle muti-line text
   if (translated.indexOf('\n') !== -1) {

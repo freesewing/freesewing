@@ -3,7 +3,7 @@ const TextOnPath = (props) => {
   // Handle translation
   let translated = ''
   for (let string of props.path.attributes.getAsArray('data-text')) {
-    translated += props.app.t(string).replace(/&quot;/g, '"') + ' '
+    translated += props.app.t(string, false, props.language).replace(/&quot;/g, '"') + ' '
   }
   const textPathProps = {
     xlinkHref: '#' + props.pathId,
