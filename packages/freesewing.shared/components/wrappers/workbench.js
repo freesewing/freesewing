@@ -6,21 +6,20 @@ import Measurements, { Input } from 'shared/components/workbench/measurements/in
 import LabDraft from 'shared/components/workbench/draft/index.js'
 import set from 'lodash.set'
 import unset from 'lodash.unset'
+import defaultSettings from 'shared/components/workbench/default-settings.js'
+
 
 // Generates a default pattern gist to start from
-const defaultGist = (pattern, language='en') => ({
+const defaultGist = (pattern, language='en') => {
+  const gist = {
   design: pattern.config.name,
   version: pattern.config.version,
-  settings: {
-    sa: 0,
-    complete: true,
-    paperless: false,
-    units: 'metric',
-    locale: language,
-    margin: 2,
-    debug: true,
+  settings: defaultSettings
   }
-})
+  if (language) gist.settings.locale = language
+
+  return gist
+}
 
 const hasRequiredMeasurements = (pattern, gist) => {
   for (const m of pattern.config.measurements) {
