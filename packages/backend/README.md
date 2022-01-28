@@ -16,7 +16,7 @@ in which case you have two ways to do so:
 ### Using docker-compose
 
 You can use [docker-compose](https://docs.docker.com/compose/) to spin up both the backend
-API and a mongo instance. Clone this repository, and then run:
+API and a mongo instance. Clone this repository, create a `.env` file (See [Configuration](#configuration)), and then run:
 
 ```
 docker-compose up
@@ -73,7 +73,8 @@ This backend can be configured with environment variables. They are detailed bel
 
 > **Note:**
 >
-> If you're using docker (or docker-compose) you can use an environment file.  
+> If you're using docker (or docker-compose) you can use an environment file (See [example.env](example.env)).
+>
 > If you're running from source, you need to set these manually, or via a script.
 
 
