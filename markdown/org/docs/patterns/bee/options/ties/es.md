@@ -1,6 +1,6 @@
----
+- - -
 title: Cintas
----
+- - -
 
 Sobre si incluir cintas o no
 

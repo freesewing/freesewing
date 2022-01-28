@@ -32,3 +32,6 @@ debug:
 scale:
   title: Échelle
   description: Contrôle la largeur de la ligne de contour, la taille de police et les autres éléments dont la valeur est indépendante des mesures du patron
+renderer:
+  title: Render engine
+  description: Controls how the pattern is rendered (drawn) on the screen

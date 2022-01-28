@@ -1,14 +1,14 @@
----
+- - -
 title: Bella Cutting
----
+- - -
 
 **Tela principal**
 
  - Cut **1 Front** part on the fold.
- - Cut **2 Back** parts.
+ - Corta **2 partes traseras**.
 
 
-These cutting instructions are just for the default Bella block. Adjust your cutting accordingly if you have/are making changes to the block.
+Estas instrucciones de corte son sólo para el patrón básico de Bella por defecto. Si has hecho o estás haciendo cambios al patrón base, ajusta tu corte como corresponda.
 
 <Tip>
 

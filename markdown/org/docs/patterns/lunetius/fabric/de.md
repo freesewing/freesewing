@@ -2,7 +2,6 @@
 title: Fabric options
 - - -
 
-
 In the Roman era both linen and wool were widely available so both would be appropriate for this project. Silk was also available but it was very much a ‘fancy’ fabric used to show off wealth and status as it had to come from abroad.
 
 A lot of the fabrics found in military contexts like excavated forts are tightly woven twills that would be good at keeping the weather out. If you want to have a historically appropriate fabric then a wool twill would be a great choice.

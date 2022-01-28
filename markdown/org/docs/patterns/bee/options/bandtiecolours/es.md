@@ -1,6 +1,6 @@
----
+- - -
 title: Colores de la longitud de la cinta del pecho
----
+- - -
 
 Sobre si quieres la cinta alrededor del pecho de un solo color o de dos colores
 

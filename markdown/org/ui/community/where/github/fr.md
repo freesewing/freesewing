@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 [L'organisation `freesewing` sur Github](https://github.com/freesewing/) contient tous nos répertoires et code source.
 
