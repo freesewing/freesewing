@@ -1,6 +1,6 @@
----
+- - -
 title: Bella What you need
----
+- - -
 
 Para hacer Bella, necesitarás lo siguiente:
 

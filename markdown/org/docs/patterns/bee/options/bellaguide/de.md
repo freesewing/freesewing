@@ -1,6 +1,6 @@
----
+- - -
 title: Show Bella
----
+- - -
 
 Shows the outline of the Bella block Bee is based on
 
