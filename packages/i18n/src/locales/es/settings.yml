@@ -32,3 +32,6 @@ debug:
 scale:
   title: Escala
   description: Controla el ancho de línea general, el tamaño de fuente y otros elementos que no cambian de escala junto a las medidas del patrón
+renderer:
+  title: Render engine
+  description: Controls how the pattern is rendered (drawn) on the screen
