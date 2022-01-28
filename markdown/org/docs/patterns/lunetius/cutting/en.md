@@ -19,5 +19,5 @@ This is especially true for the Roman and Mediaeval eras, not to mention that a 
 
 We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required!
+How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
 
