@@ -1,6 +1,15 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.20.4 (2022-01-28)
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Downgraded back to react-scripts 4 because 5 has a regression bug
+
+
 ## 2.20.3 (2022-01-28)
 
 ### core
