@@ -1,4 +1,5 @@
-unreleased:
+2.20.3:
+  date: 2022-01-28
 
   Changed:
     core:
@@ -6,6 +7,8 @@ unreleased:
       - Always raise debug, but only store it whend debug is enabled
 
   Fixed:
+    create-freesewing-pattern:
+      - Updated to react-scripts 5 to sidestep bug in error-overlay
     simon:
       - Properly style SA paths on cuffs and collarstand
       - SA path on sleeve was double-drawn

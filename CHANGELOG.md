@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.3 (2022-01-28)
 
 ### core
 
@@ -9,6 +9,12 @@
 
  - Setting Path.render() no longer raises an info message
  - Always raise debug, but only store it whend debug is enabled
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated to react-scripts 5 to sidestep bug in error-overlay
 
 ### simon
 

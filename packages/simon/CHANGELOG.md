@@ -1,7 +1,7 @@
 # Change log for: @freesewing/simon
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.3 (2022-01-28)
 
 ### Fixed
 
