@@ -1,6 +1,22 @@
 # Change log for: FreeSewing (global)
 
 
+## unreleased (NaN-NaN-NaN)
+
+### core
+
+#### Changed
+
+ - Setting Path.render() no longer raises an info message
+
+### simon
+
+#### Fixed
+
+ - Properly style SA paths on cuffs and collarstand
+ - SA path on sleeve was double-drawn
+
+
 ## 2.20.2 (2022-01-27)
 
 ### i18n

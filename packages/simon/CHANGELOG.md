@@ -1,6 +1,13 @@
 # Change log for: @freesewing/simon
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Fixed
+
+ - Properly style SA paths on cuffs and collarstand
+ - SA path on sleeve was double-drawn
+
 ## 2.20.1 (2022-01-27)
 
 ### Fixed

@@ -1,5 +1,9 @@
 unreleased:
 
+  Changed:
+    core:
+      - Setting Path.render() no longer raises an info message
+
   Fixed:
     simon:
       - Properly style SA paths on cuffs and collarstand

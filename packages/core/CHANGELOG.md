@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## unreleased (NaN-NaN-NaN)
+
+### Changed
+
+ - Setting Path.render() no longer raises an info message
+
 ## 2.20.0 (2022-01-24)
 
 ### Added
