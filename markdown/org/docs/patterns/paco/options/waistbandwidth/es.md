@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 Controla la anchura de la cinturilla.
 
 
