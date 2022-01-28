@@ -37,7 +37,7 @@ Path.prototype.setRender = function (render = true) {
 
 /** Adds a move operation to Point to */
 Path.prototype.move = function (to) {
-  if (this.debug && to instanceof Point !== true)
+  if (to instanceof Point !== true)
     this.raise.warning('Called `Path.rotate(to)` but `to` is not a `Point` object')
   this.ops.push({ type: 'move', to })
 
@@ -46,7 +46,7 @@ Path.prototype.move = function (to) {
 
 /** Adds a line operation to Point to */
 Path.prototype.line = function (to) {
-  if (this.debug && to instanceof Point !== true)
+  if (to instanceof Point !== true)
     this.raise.warning('Called `Path.line(to)` but `to` is not a `Point` object')
   this.ops.push({ type: 'line', to })
 
@@ -55,14 +55,12 @@ Path.prototype.line = function (to) {
 
 /** Adds a curve operation via cp1 & cp2 to Point to */
 Path.prototype.curve = function (cp1, cp2, to) {
-  if (this.debug) {
-    if (to instanceof Point !== true)
-      this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `to` is not a `Point` object')
-    if (cp1 instanceof Point !== true)
-      this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `cp1` is not a `Point` object')
-    if (cp2 instanceof Point !== true)
-      this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `cp2` is not a `Point` object')
-  }
+  if (to instanceof Point !== true)
+    this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `to` is not a `Point` object')
+  if (cp1 instanceof Point !== true)
+    this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `cp1` is not a `Point` object')
+  if (cp2 instanceof Point !== true)
+    this.raise.warning('Called `Path.curve(cp1, cp2, to)` but `cp2` is not a `Point` object')
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
   return this
@@ -70,12 +68,10 @@ Path.prototype.curve = function (cp1, cp2, to) {
 
 /** Adds a curve operation without cp1 via cp2 to Point to */
 Path.prototype._curve = function (cp2, to) {
-  if (this.debug) {
-    if (to instanceof Point !== true)
-      this.raise.warning('Called `Path._curve(cp2, to)` but `to` is not a `Point` object')
-    if (cp2 instanceof Point !== true)
-      this.raise.warning('Called `Path._curve(cp2, to)` but `cp2` is not a `Point` object')
-  }
+  if (to instanceof Point !== true)
+    this.raise.warning('Called `Path._curve(cp2, to)` but `to` is not a `Point` object')
+  if (cp2 instanceof Point !== true)
+    this.raise.warning('Called `Path._curve(cp2, to)` but `cp2` is not a `Point` object')
   let cp1 = this.ops.slice(-1).pop().to
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
@@ -84,12 +80,10 @@ Path.prototype._curve = function (cp2, to) {
 
 /** Adds a curve operation via cp1 with no cp2 to Point to */
 Path.prototype.curve_ = function (cp1, to) {
-  if (this.debug) {
-    if (to instanceof Point !== true)
-      this.raise.warning('Called `Path.curve_(cp1, to)` but `to` is not a `Point` object')
-    if (cp1 instanceof Point !== true)
-      this.raise.warning('Called `Path.curve_(cp1, to)` but `cp2` is not a `Point` object')
-  }
+  if (to instanceof Point !== true)
+    this.raise.warning('Called `Path.curve_(cp1, to)` but `to` is not a `Point` object')
+  if (cp1 instanceof Point !== true)
+    this.raise.warning('Called `Path.curve_(cp1, to)` but `cp2` is not a `Point` object')
   let cp2 = to.copy()
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
@@ -112,12 +106,10 @@ Path.prototype.noop = function (id = false) {
 
 /** Replace a noop operation with the ops from path */
 Path.prototype.insop = function (noopId, path) {
-  if (this.debug) {
-    if (!noopId)
-      this.raise.warning('Called `Path.insop(noopId, path)` but `noopId` is undefined or false')
-    if (path instanceof Path !== true)
-      this.raise.warning('Called `Path.insop(noopId, path) but `path` is not a `Path` object')
-  }
+  if (!noopId)
+    this.raise.warning('Called `Path.insop(noopId, path)` but `noopId` is undefined or false')
+  if (path instanceof Path !== true)
+    this.raise.warning('Called `Path.insop(noopId, path) but `path` is not a `Path` object')
   let newPath = this.clone()
   for (let i in newPath.ops) {
     if (newPath.ops[i].type === 'noop' && newPath.ops[i].id === noopId) {
@@ -133,20 +125,18 @@ Path.prototype.insop = function (noopId, path) {
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
 Path.prototype.attr = function (name, value, overwrite = false) {
-  if (this.debug) {
-    if (!name)
-      this.raise.warning(
-        'Called `Path.attr(name, value, overwrite=false)` but `name` is undefined or false'
-      )
-    if (typeof value === 'undefined')
-      this.raise.warning(
-        'Called `Path.attr(name, value, overwrite=false)` but `value` is undefined'
-      )
-    if (overwrite)
-      this.raise.debug(
-        `Overwriting \`Path.attribute.${name}\` with ${value} (was: ${this.attributes.get(name)})`
-      )
-  }
+  if (!name)
+    this.raise.warning(
+      'Called `Path.attr(name, value, overwrite=false)` but `name` is undefined or false'
+    )
+  if (typeof value === 'undefined')
+    this.raise.warning(
+      'Called `Path.attr(name, value, overwrite=false)` but `value` is undefined'
+    )
+  if (overwrite)
+    this.raise.debug(
+      `Overwriting \`Path.attribute.${name}\` with ${value} (was: ${this.attributes.get(name)})`
+    )
   if (overwrite) this.attributes.set(name, value)
   else this.attributes.add(name, value)
 

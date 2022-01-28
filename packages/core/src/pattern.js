@@ -11,46 +11,6 @@ import Attributes from './attributes'
 import pkg from '../package.json'
 
 export default function Pattern(config = { options: {} }) {
-  // Events store and raise methods
-  this.events = {
-    info: [],
-    warning: [],
-    error: [],
-    debug: [],
-  }
-  const events = this.events
-  this.raise = {
-    info: function (data) {
-      events.info.push(data)
-    },
-    warning: function (data) {
-      events.warning.push(data)
-    },
-    error: function (data) {
-      events.error.push(data)
-    },
-    debug: function (data) {
-      events.debug.push(data)
-    },
-  }
-  this.raise.debug(
-    `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${pkg.version}\``
-  )
-
-  this.config = config // Pattern configuration
-  this.width = 0 // Will be set after render
-  this.height = 0 // Will be set after render
-  this.is = '' // Will be set when drafting/sampling
-  this.debug = true // Will be set when applying settings
-
-  this.store = new Store(this.raise) // Store for sharing data across parts
-  this.parts = {} // Parts container
-  this.hooks = new Hooks() // Hooks container
-  this.Point = Point // Point constructor
-  this.Path = Path // Path constructor
-  this.Snippet = Snippet // Snippet constructor
-  this.Attributes = Attributes // Attributes constructor
-
   // Default settings
   this.settings = {
     complete: true,
@@ -64,6 +24,50 @@ export default function Pattern(config = { options: {} }) {
     options: {},
     absoluteOptions: {},
   }
+
+  // Events store and raise methods
+  this.events = {
+    info: [],
+    warning: [],
+    error: [],
+    debug: [],
+  }
+  const events = this.events
+  // Make settings available in the raise.debug method
+  const settings = this.settings
+  this.raise = {
+    info: function (data) {
+      events.info.push(data)
+    },
+    warning: function (data) {
+      events.warning.push(data)
+    },
+    error: function (data) {
+      events.error.push(data)
+    },
+    debug: function (data) {
+      // Debug only if debug is active
+      if (settings.debug) events.debug.push(data)
+    },
+  }
+  this.raise.info(
+    `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${pkg.version}\``
+  )
+
+  this.config = config // Pattern configuration
+  this.width = 0 // Will be set after render
+  this.height = 0 // Will be set after render
+  this.is = '' // Will be set when drafting/sampling
+  //this.debug = true // Will be set when applying settings
+
+  this.store = new Store(this.raise) // Store for sharing data across parts
+  this.parts = {} // Parts container
+  this.hooks = new Hooks() // Hooks container
+  this.Point = Point // Point constructor
+  this.Path = Path // Path constructor
+  this.Snippet = Snippet // Snippet constructor
+  this.Attributes = Attributes // Attributes constructor
+
 
   if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
   if (typeof this.config.inject === 'undefined') this.config.inject = {}
@@ -175,7 +179,7 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
   if (data === false) data = this
   let hooks = this.hooks[hookName]
   if (hooks.length > 0) {
-    if (this.debug) this.raise.debug(`Running \`${hookName}\` hooks`)
+    this.raise.debug(`Running \`${hookName}\` hooks`)
     for (let hook of hooks) {
       hook.method(data, hook.data)
     }
@@ -188,7 +192,7 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
 Pattern.prototype.draft = function () {
   if (this.is !== 'sample') {
     this.is = 'draft'
-    if (this.debug) this.raise.debug(`Drafting pattern`)
+    this.raise.debug(`Drafting pattern`)
   }
   // Handle snap for pct options
   for (let i in this.settings.options) {
@@ -203,13 +207,12 @@ Pattern.prototype.draft = function () {
 
   this.runHooks('preDraft')
   for (let partName of this.config.draftOrder) {
-    if (this.debug) this.raise.debug(`Creating part \`${partName}\``)
+    this.raise.debug(`Creating part \`${partName}\``)
     this.parts[partName] = new this.Part(partName)
     if (typeof this.config.inject[partName] === 'string') {
-      if (this.debug)
-        this.raise.debug(
-          `Injecting part \`${this.config.inject[partName]}\` into part \`${partName}\``
-        )
+      this.raise.debug(
+        `Injecting part \`${this.config.inject[partName]}\` into part \`${partName}\``
+      )
       try {
         this.parts[partName].inject(this.parts[this.config.inject[partName]])
       } catch (err) {
@@ -242,10 +245,9 @@ Pattern.prototype.draft = function () {
         this.raise.error([`Unable to set \`render\` property on part \`${partName}\``, err])
       }
     } else {
-      if (this.debug)
-        this.raise.debug(
-          `Part \`${partName}\` is not needed. Skipping draft and setting render to \`false\``
-        )
+      this.raise.debug(
+        `Part \`${partName}\` is not needed. Skipping draft and setting render to \`false\``
+      )
       this.parts[partName].render = false
     }
   }
@@ -323,7 +325,7 @@ Pattern.prototype.sampleRun = function (parts, anchors, run, runs, extraClass = 
  */
 Pattern.prototype.sampleOption = function (optionName) {
   this.is = 'sample'
-  if (this.debug) this.raise.debug(`Sampling option \`${optionName}\``)
+  this.raise.debug(`Sampling option \`${optionName}\``)
   this.runHooks('preSample')
   let step, val
   let factor = 1
@@ -373,7 +375,7 @@ Pattern.prototype.sampleListOption = function (optionName) {
  */
 Pattern.prototype.sampleMeasurement = function (measurementName) {
   this.is = 'sample'
-  if (this.debug) this.raise.debug(`Sampling measurement \`${measurementName}\``)
+  this.raise.debug(`Sampling measurement \`${measurementName}\``)
   this.runHooks('preSample')
   let anchors = {}
   let parts = this.sampleParts()
@@ -398,7 +400,7 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
  */
 Pattern.prototype.sampleModels = function (models, focus = false) {
   this.is = 'sample'
-  if (this.debug) this.raise.debug(`Sampling models`)
+  this.raise.debug(`Sampling models`)
   this.runHooks('preSample')
   let anchors = {}
   let parts = this.sampleParts()
@@ -435,7 +437,7 @@ Pattern.prototype.on = function (hook, method, data) {
 }
 
 Pattern.prototype.use = function (plugin, data) {
-  if (this.debug) this.raise.debug(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
+  this.raise.info(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
   if (plugin.hooks) this.loadPluginHooks(plugin, data)
   if (plugin.macros) this.loadPluginMacros(plugin)
 
@@ -444,16 +446,14 @@ Pattern.prototype.use = function (plugin, data) {
 
 Pattern.prototype.useIf = function (plugin, settings) {
   if (plugin.condition(settings)) {
-    if (this.debug)
-      this.raise.debug(
-        `Condition met: Loaded plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
-      )
+    this.raise.info(
+      `Condition met: Loaded plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
+    )
     this.loadPluginHooks(plugin.plugin, plugin.data)
   } else {
-    if (this.debug)
-      this.raise.debug(
-        `Condition not met: Skipped loading plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
-      )
+    this.raise.info(
+      `Condition not met: Skipped loading plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
+    )
   }
 
   return this
