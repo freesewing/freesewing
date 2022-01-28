@@ -1,27 +1,29 @@
-svg.freesewing {
+export default `
   /* Paperless grid */
-  path.grid {
+  svg.freesewing path.grid {
     fill: none;
     stroke: #555;
     stroke-width: 0.3;
   }
-  path.gridline {
+  svg.freesewing path.gridline {
     stroke: #555;
     stroke-width: 0.2;
   }
-  path.gridline-lg {
+  svg.freesewing path.gridline-lg {
     stroke: #777;
     stroke-width: 0.2;
     stroke-dasharray: 1.5,1.5;
   }
-  path.gridline-sm {
+  svg.freesewing path.gridline-sm {
     stroke: #999;
     stroke-width: 0.1;
   }
-  path.gridline-xs {
+  svg.freesewing path.gridline-xs {
     stroke: #999;
     stroke-width: 0.1;
     stroke-dasharray: 0.5,0.5;
   }
-  path.gridbox{ fill: url(#grid); }
-}
+  svg.freesewing path.gridbox {
+    fill: url(#grid);
+  }
+`;
