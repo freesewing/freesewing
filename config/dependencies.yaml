@@ -203,6 +203,7 @@ plugin-bundle:
     '@freesewing/plugin-round': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
 plugintest:
+  peer:
     '@freesewing/plugin-banner': *freesewing
     '@freesewing/plugin-bartack': *freesewing
     '@freesewing/plugin-bust': *freesewing
