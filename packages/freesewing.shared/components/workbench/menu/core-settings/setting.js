@@ -64,9 +64,9 @@ const settings = {
       {props.config.titles[props.gist.renderer]}
     </span>
   ),
-  only: props => (props.gist?.only && props.gist.only.lenght > 0)
-    ? <span>{props.gist.only.length}</span>
-    : <span>fixme</span>
+  only: props => (props.gist?.only && props.gist.only.length > 0)
+    ? <span className="text-accent">{props.gist.only.length}</span>
+    : <span className="text-secondary">{props.app.t('app.default')}</span>
 }
 
 const inputs = {
