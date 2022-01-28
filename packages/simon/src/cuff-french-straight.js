@@ -19,7 +19,7 @@ export default (part) => {
   // Complete pattern?
   if (complete) {
     decorateFrenchCuff(part)
-    if (sa) paths.sa = paths.seam.offset(sa)
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 
   // Paperless?
