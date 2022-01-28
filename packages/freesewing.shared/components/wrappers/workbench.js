@@ -80,6 +80,7 @@ const WorkbenchWrapper = ({ app, pattern }) => {
       gist={gist}
       updateGist={updateGist}
       unsetGist={unsetGist}
+      setGist={setGist}
     />
   }
 

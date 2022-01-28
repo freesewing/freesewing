@@ -1,6 +1,6 @@
 const TextOnPath = (props) => {
   const text = []
-  // Handle translation
+  // Handle translation (and spaces)
   let translated = ''
   for (let string of props.path.attributes.getAsArray('data-text')) {
     translated += props.app.t(string, false, props.locale).replace(/&quot;/g, '"') + ' '
@@ -16,7 +16,10 @@ const TextOnPath = (props) => {
   return (
     <text>
       <textPath {...textPathProps}>
-        <tspan {...props.path.attributes.asPropsIfPrefixIs('data-text-')}>{translated}</tspan>
+        <tspan
+          {...props.path.attributes.asPropsIfPrefixIs('data-text-')}
+          dangerouslySetInnerHTML={{__html: translated}}
+        />
       </textPath>
     </text>
   )

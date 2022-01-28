@@ -3,6 +3,17 @@ import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
 import Setting from './setting.js'
 
 const settings = {
+  paperless: {
+    dflt: false,
+  },
+  saBool: {
+    dflt: false,
+  },
+  saMm: {
+    min: 0,
+    max: 25,
+    dflt: 10,
+  },
   locale: {
     list: ['de', 'en', 'es', 'fr', 'nl'],
   },
@@ -13,6 +24,13 @@ const settings = {
     min: 0,
     max: 25,
     dflt: 2,
+  },
+  renderer: {
+    list: ['react', 'svg'],
+    titles: {
+      react: '<Draft /> (React)',
+      svg: '@freesewing/core (SVG)'
+    }
   },
 }
 
