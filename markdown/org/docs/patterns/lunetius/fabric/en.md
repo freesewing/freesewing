@@ -2,6 +2,7 @@
 title: Fabric options 
 ---
 
+### Main Fabric
 
 In the Roman era both linen and wool were widely available so both would be appropriate for this project. Silk was also available but it was very much a ‘fancy’ fabric used to show off wealth and status as it had to come from abroad.
 
