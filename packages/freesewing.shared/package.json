@@ -15,9 +15,10 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",
     "daisyui": "^1.16.2",
+    "highlight.js": "^11.4.0",
     "lodash.orderby": "^4.6.0",
     "lodash.unset": "^4.5.2",
-    "react-markdown": "^7.1.1",
+    "react-markdown": "^8.0.0",
     "react-timeago": "^6.2.1",
     "rehype-highlight": "^5.0.1",
     "remark-extract-frontmatter": "^3.2.0",

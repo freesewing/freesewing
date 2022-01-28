@@ -32,7 +32,7 @@
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
     "react-instantsearch-dom": "^6.18.0",
-    "react-markdown": "^7.1.1",
+    "react-markdown": "^8.0.0",
     "react-swipeable": "^6.2.0",
     "react-timeago": "^6.2.1",
     "rehype-highlight": "^5.0.1",

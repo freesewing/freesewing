@@ -2,6 +2,7 @@ import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
 import PctDegOption from 'shared/components/workbench/inputs/design-option-pct-deg'
 import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListSetting from './core-setting-list'
+import OnlySetting from './core-setting-only'
 import MmSetting from './core-setting-mm'
 import BoolSetting from './core-setting-bool.js'
 import SaBoolSetting from './core-setting-sa-bool.js'
@@ -20,6 +21,13 @@ const settings = {
     return (
       <span className="text-secondary">
         {props.app.t(`app.${props.gist.complete ? 'yes' : 'no'}`)}
+      </span>
+    )
+  },
+  debug: props => {
+    return (
+      <span className="text-secondary">
+        {props.app.t(`app.${props.gist.debug ? 'yes' : 'no'}`)}
       </span>
     )
   },
@@ -56,6 +64,9 @@ const settings = {
       {props.config.titles[props.gist.renderer]}
     </span>
   ),
+  only: props => (props.gist?.only && props.gist.only.lenght > 0)
+    ? <span>{props.gist.only.length}</span>
+    : <span>fixme</span>
 }
 
 const inputs = {
@@ -82,13 +93,14 @@ const inputs = {
       title: props.config.titles[key]
     }))}
   />,
+  only: props => <OnlySetting {...props} />
 }
 
 const Setting = props => {
 
   if (props.setting === 'saBool')
     return <SaBoolSetting {...props} {...props.config} />
-  if (['paperless', 'complete'].indexOf(props.setting) !== -1)
+  if (['paperless', 'complete', 'debug'].indexOf(props.setting) !== -1)
     return <BoolSetting {...props} {...props.config} />
 
   const Input = inputs[props.setting]

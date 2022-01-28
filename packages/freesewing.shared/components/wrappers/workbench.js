@@ -102,8 +102,6 @@ const WorkbenchWrapper = ({ app, pattern }) => {
           updateGist={updateGist}
         />
       )}
-      <pre>{JSON.stringify(mode, null, 2)}</pre>
-      <pre>{JSON.stringify(gist, null, 2)}</pre>
     </Layout>
   )
 }

@@ -17,6 +17,7 @@ const settings = {
   complete: {
     dflt: false,
   },
+  only: { },
   locale: {
     list: ['de', 'en', 'es', 'fr', 'nl'],
   },
@@ -34,6 +35,9 @@ const settings = {
       react: '<Draft /> (React)',
       svg: '@freesewing/core (SVG)'
     }
+  },
+  debug: {
+    dflt: false,
   },
 }
 

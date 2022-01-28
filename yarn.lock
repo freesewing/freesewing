@@ -14021,6 +14021,11 @@ highlight.js@^10.4.1:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
   integrity sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==
 
+highlight.js@^11.4.0:
+  version "11.4.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.4.0.tgz#34ceadd49e1596ee5aba3d99346cdfd4845ee05a"
+  integrity sha512-nawlpCBCSASs7EdvZOYOYVkJpGmAOKMYZgZtUqSRqodZE0GRVcFKwo1RcpeOemqh9hyttTdd5wDBwHkuSyUfnA==
+
 highlight.js@~11.3.0:
   version "11.3.1"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.3.1.tgz#813078ef3aa519c61700f84fe9047231c5dc3291"
@@ -22990,6 +22995,26 @@ react-markdown@^7.1.1:
     react-is "^17.0.0"
     remark-parse "^10.0.0"
     remark-rehype "^9.0.0"
+    space-separated-tokens "^2.0.0"
+    style-to-object "^0.3.0"
+    unified "^10.0.0"
+    unist-util-visit "^4.0.0"
+    vfile "^5.0.0"
+
+react-markdown@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-8.0.0.tgz#3243296a59ddb0f451d262cc2e11123674b416c2"
+  integrity sha512-qbrWpLny6Ef2xHqnYqtot948LXP+4FtC+MWIuaN1kvSnowM+r1qEeEHpSaU0TDBOisQuj+Qe6eFY15cNL3gLAw==
+  dependencies:
+    "@types/hast" "^2.0.0"
+    "@types/unist" "^2.0.0"
+    comma-separated-tokens "^2.0.0"
+    hast-util-whitespace "^2.0.0"
+    prop-types "^15.0.0"
+    property-information "^6.0.0"
+    react-is "^17.0.0"
+    remark-parse "^10.0.0"
+    remark-rehype "^10.0.0"
     space-separated-tokens "^2.0.0"
     style-to-object "^0.3.0"
     unified "^10.0.0"
