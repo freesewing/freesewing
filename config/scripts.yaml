@@ -47,9 +47,6 @@ pattern-info:
   cibuild_step1: '!'
   cibuild_step2: 'node src/prebuild.js && rollup -c'
   prebuild: 'node src/prebuild.js'
-plugin-theme:
-  cibuild_step1: "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js && rollup -c"
-  prebuild: "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js"
 utils:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
