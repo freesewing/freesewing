@@ -16,6 +16,13 @@ const settings = {
       </span>
     )
   },
+  complete: props => {
+    return (
+      <span className="text-secondary">
+        {props.app.t(`app.${props.gist.complete ? 'yes' : 'no'}`)}
+      </span>
+    )
+  },
   locale: props => {
     return (
       <span className="text-secondary">
@@ -79,8 +86,10 @@ const inputs = {
 
 const Setting = props => {
 
-  if (props.setting === 'saBool') return <SaBoolSetting {...props} {...props.config} />
-  if (props.setting === 'paperless') return <BoolSetting {...props} {...props.config} />
+  if (props.setting === 'saBool')
+    return <SaBoolSetting {...props} {...props.config} />
+  if (['paperless', 'complete'].indexOf(props.setting) !== -1)
+    return <BoolSetting {...props} {...props.config} />
 
   const Input = inputs[props.setting]
   const Value = settings[props.setting]

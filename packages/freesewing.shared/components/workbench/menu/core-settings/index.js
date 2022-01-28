@@ -14,6 +14,9 @@ const settings = {
     max: 25,
     dflt: 10,
   },
+  complete: {
+    dflt: false,
+  },
   locale: {
     list: ['de', 'en', 'es', 'fr', 'nl'],
   },
