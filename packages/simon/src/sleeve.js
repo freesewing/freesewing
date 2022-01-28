@@ -150,7 +150,7 @@ export default (part) => {
 
     if (sa) {
       paths.sa = paths.frenchBase.offset(sa * options.ffsa)
-      paths.frenchSa = paths.sa.clone()
+      paths.frenchSa = paths.sa.clone().attr('class', 'hidden')
       paths.sa = paths.sa
         .join(paths.saBase.offset(sa))
         .join(paths.cuffBase.offset(sa))
@@ -158,7 +158,8 @@ export default (part) => {
         .attr('class', 'fabric sa')
       macro('banner', {
         path: 'frenchSa',
-        text: ['frenchSean', ': 2x', 'seamAllowance'],
+        text: 'flatFelledSeamAllowance',
+        repeat: 30
       })
     }
   }

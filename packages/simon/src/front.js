@@ -123,8 +123,17 @@ export default (part) => {
 
     if (sa) {
       paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
+      macro('banner', {
+        path: 'saFrench',
+        text: 'flatFelledSeamAllowance',
+        repeat: 30
+      })
       paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
       paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
+      macro('banner', {
+        path: 'hemSa',
+        text: ['hem', ': 3x', 'seamAllowance'],
+      })
       paths.saConnect = new Path()
         .move(paths.hemSa.end())
         .line(paths.saFrench.start())
