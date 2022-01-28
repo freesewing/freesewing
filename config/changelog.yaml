@@ -1,3 +1,9 @@
+unreleased:
+
+  Fixed:
+    simon:
+      - Properly style SA paths on cuffs and collarstand
+
 2.20.2:
   date: 2022-01-27
 
