@@ -3,6 +3,7 @@ unreleased:
   Fixed:
     simon:
       - Properly style SA paths on cuffs and collarstand
+      - SA path on sleeve was double-drawn
 
 2.20.2:
   date: 2022-01-27
