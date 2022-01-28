@@ -1,15 +1,16 @@
 import TextOnPath from '../text-on-path'
 import { getProps } from '../utils'
 
-const Path = (props) => {
-  if (!props.path.render) return null
+const Path = props => {
+  const { path, part, name } = props
+  if (!path.render) return null
   const output = []
-  const pathId = 'path-' + props.part + '-' + props.name
+  const pathId = 'path-' + part + '-' + name
   output.push(
-    <path id={pathId} key={pathId} d={props.path.asPathstring()} {...getProps(props.path)} />
+    <path id={pathId} key={pathId} d={path.asPathstring()} {...getProps(path)} />
   )
-  if (props.path.attributes.get('data-text'))
-    output.push(<TextOnPath key={'text-on-path-' + props.name} pathId={pathId} {...props} />)
+  if (path.attributes.get('data-text'))
+    output.push(<TextOnPath key={'text-on-path-' + name} pathId={pathId} {...props} />)
 
   return output
 }

@@ -35,21 +35,37 @@
   .fs-stroke-contrast    { stroke: var(--pattern-contrast); }
   .fs-stroke-note        { stroke: var(--pattern-note); }
   svg.freesewing.pattern path.fabric,
-  svg.freesewing.pattern circle.fabric { @apply fs-stroke-fabric }
+  svg.freesewing.pattern path.stroke-fabric,
+  svg.freesewing.pattern circle.fabric,
+  svg.freesewing.pattern circle.stroke-fabric { @apply fs-stroke-fabric }
   svg.freesewing.pattern path.lining,
-  svg.freesewing.pattern circle.lining { @apply fs-stroke-lining }
+  svg.freesewing.pattern path.stroke-lining,
+  svg.freesewing.pattern circle.lining,
+  svg.freesewing.pattern circle.stroke-lining { @apply fs-stroke-lining }
   svg.freesewing.pattern path.interfacing,
-  svg.freesewing.pattern circle.interfacing { @apply fs-stroke-interfacing }
+  svg.freesewing.pattern path.stroke-interfacing,
+  svg.freesewing.pattern circle.interfacing,
+  svg.freesewing.pattern circle.stroke-interfacing { @apply fs-stroke-interfacing }
   svg.freesewing.pattern path.canvas,
-  svg.freesewing.pattern circle.canvas { @apply fs-stroke-canvas }
+  svg.freesewing.pattern path.stroke-canvas,
+  svg.freesewing.pattern circle.canvas,
+  svg.freesewing.pattern circle.stroke-canvas { @apply fs-stroke-canvas }
   svg.freesewing.pattern path.various,
-  svg.freesewing.pattern circle.various { @apply fs-stroke-various }
+  svg.freesewing.pattern path.stroke-various,
+  svg.freesewing.pattern circle.various,
+  svg.freesewing.pattern circle.stroke-various { @apply fs-stroke-various }
   svg.freesewing.pattern path.mark,
-  svg.freesewing.pattern circle.mark { @apply fs-stroke-mark }
+  svg.freesewing.pattern path.stroke-mark,
+  svg.freesewing.pattern circle.mark,
+  svg.freesewing.pattern circle.stroke-mark { @apply fs-stroke-mark }
   svg.freesewing.pattern path.contrast,
-  svg.freesewing.pattern circle.contrast { @apply fs-stroke-contrast }
+  svg.freesewing.pattern path.stroke-contrast,
+  svg.freesewing.pattern circle.contrast,
+  svg.freesewing.pattern circle.stroke-contrast { @apply fs-stroke-contrast }
   svg.freesewing.pattern path.note,
-  svg.freesewing.pattern circle.note { @apply fs-stroke-note }
+  svg.freesewing.pattern path.stroke-note,
+  svg.freesewing.pattern circle.note,
+  svg.freesewing.pattern circle.stroke-note { @apply fs-stroke-note }
   .fs-fill-fabric      { fill: var(--pattern-fabric); }
   .fs-fill-lining      { fill: var(--pattern-lining); }
   .fs-fill-interfacing { fill: var(--pattern-interfacing); }
@@ -95,6 +111,8 @@
   .fs-fill-current { fill: currentColor; }
   svg.freesewing.pattern .fill-bg { @apply fs-fill-bg }
   svg.freesewing.pattern .fill-current { @apply fs-fill-current }
+  .fill-opacity-25 { fill-opacity: 0.25; }
+  .fill-opacity-50 { fill-opacity: 0.5; }
 }
 
 /* Override DaisyUI button text color */

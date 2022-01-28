@@ -4,6 +4,7 @@ import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListSetting from './core-setting-list'
 import OnlySetting from './core-setting-only'
 import MmSetting from './core-setting-mm'
+import NrSetting from './core-setting-nr'
 import BoolSetting from './core-setting-bool.js'
 import SaBoolSetting from './core-setting-sa-bool.js'
 import SaMmSetting from './core-setting-sa-mm.js'
@@ -52,6 +53,9 @@ const settings = {
       }} />
     )
   },
+  scale: props => props.gist.scale === 1
+    ? <span className="text-secondary">{props.gist.scale}</span>
+    : <span className="text-accent">{props.gist.scale}</span>,
   saMm: props => {
     return (
       <span className="text-secondary" dangerouslySetInnerHTML={{
@@ -85,6 +89,7 @@ const inputs = {
     }))}
   />,
   margin: props => <MmSetting {...props} {...props.config} />,
+  scale: props => <NrSetting {...props} {...props.config} />,
   saMm: props => <SaMmSetting {...props} {...props.config} />,
   renderer: props => <ListSetting
     {...props}
@@ -100,7 +105,7 @@ const Setting = props => {
 
   if (props.setting === 'saBool')
     return <SaBoolSetting {...props} {...props.config} />
-  if (['paperless', 'complete', 'debug'].indexOf(props.setting) !== -1)
+  if (['paperless', 'complete', 'debug', 'xray'].indexOf(props.setting) !== -1)
     return <BoolSetting {...props} {...props.config} />
 
   const Input = inputs[props.setting]

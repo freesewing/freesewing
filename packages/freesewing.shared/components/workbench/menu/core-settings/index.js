@@ -29,6 +29,11 @@ const settings = {
     max: 25,
     dflt: 2,
   },
+  scale: {
+    min: 0.1,
+    max: 5,
+    dflt: 1,
+  },
   renderer: {
     list: ['react', 'svg'],
     titles: {
@@ -37,6 +42,9 @@ const settings = {
     }
   },
   debug: {
+    dflt: false,
+  },
+  xray: {
     dflt: false,
   },
 }

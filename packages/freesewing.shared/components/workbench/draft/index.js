@@ -18,7 +18,7 @@ const tabClasses = active => `
 const Wrap = props => <div className="max-w-screen-xl m-auto">{props.children}</div>
 
 const LabDraft = props => {
-  const { app, pattern, gist, updateGist } = props
+  const { app, pattern, gist, updateGist, unsetGist } = props
 
   const [tab, setTab] = useState(props.pattern.config.name)
 
@@ -71,12 +71,12 @@ const LabDraft = props => {
             {Object.keys(patternProps.parts).map((name) => (
               <Part
                 key={name}
+                partName={name}
                 part={patternProps.parts[name]}
-                locale={gist.locale}
-                paperless={gist.paperless}
-                units={gist.units}
-                name={name}
                 app={app}
+                gist={gist}
+                updateGist={updateGist}
+                unsetGist={unsetGist}
               />
             ))}
           </g>
