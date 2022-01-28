@@ -1,8 +1,9 @@
 import pkg from '../package.json'
 import gridMetric from './defs/grid-metric'
 import gridImperial from './defs/grid-imperial'
-import css from './bundle.css.js'
 import draft from './lib/draft'
+import paperless from './lib/paperless'
+import sample from './lib/sample'
 
 export default {
   name: pkg.name,
@@ -11,7 +12,8 @@ export default {
     preRender: function (svg) {
       if (svg.attributes.get('freesewing:plugin-theme') === false) {
         svg.attributes.set('class', 'freesewing')
-        svg.style += css
+        svg.style += sample
+        svg.style += paperless
         svg.style += draft(svg.pattern.settings.scale)
         if (svg.pattern.settings.paperless) {
           svg.pattern.settings.units === 'imperial'
