@@ -72,6 +72,12 @@ svg.freesewing.pattern {
   .stroke-2xl {
     stroke-width: calc(var(--freesewing-pattern-scale) * 4);
   }
+  .stroke-3xl {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 6);
+  }
+  .stroke-4xl {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 10);
+  }
 
   .sa {
     stroke-dasharray: 1, 3;

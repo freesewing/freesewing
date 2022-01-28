@@ -102,5 +102,7 @@ module.exports = {
   '--pattern-stroke-lg': "1.3px",
   '--pattern-stroke-xl': "2px",
   '--pattern-stroke-2xl': "4px",
+  '--pattern-stroke-3xl': "6px",
+  '--pattern-stroke-4xl': "8px",
 }
 

@@ -240,6 +240,10 @@ module.exports = {
   '--pattern-stroke-lg': "1.3px",
   // Pattern xl stroke width
   '--pattern-stroke-xl': "2px",
-  // Pattern xxl stroke width
+  // Pattern 2xl stroke width
   '--pattern-stroke-2xl': "4px",
+  // Pattern 3xl stroke width
+  '--pattern-stroke-3xl': "6px",
+  // Pattern 4xl stroke width
+  '--pattern-stroke-4xl': "8px",
 }

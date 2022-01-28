@@ -22,6 +22,9 @@ svg.freesewing.pattern {
   .stroke-lg { stroke-width: calc(var(--pattern-stroke-lg) * var(--pattern-scale)); }
   .stroke-xl { stroke-width: calc(var(--pattern-stroke-xl) * var(--pattern-scale)); }
   .stroke-2xl { stroke-width: calc(var(--pattern-stroke-2xl) * var(--pattern-scale)); }
+  .stroke-3xl { stroke-width: calc(var(--pattern-stroke-3xl) * var(--pattern-scale)); }
+  .stroke-4xl { stroke-width: calc(var(--pattern-stroke-4xl) * var(--pattern-scale)); }
+  .stroke-5xl { stroke-width: calc(var(--pattern-stroke-5xl) * var(--pattern-scale)); }
 
   /* Stroke dasharray utility classes */
   .sa { stroke-dasharray: 1, 3; }

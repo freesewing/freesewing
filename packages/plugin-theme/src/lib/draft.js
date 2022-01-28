@@ -64,8 +64,15 @@ export default (scale) => `
   svg.freesewing .stroke-xl {
     stroke-width: ${round(1*scale)};
   }
-  svg.freesewing .stroke-xxl {
+  svg.freesewing .stroke-xxl,
+  svg.freesewing .stroke-2xl {
     stroke-width: ${round(2*scale)};
+  }
+  svg.freesewing .stroke-3xl {
+    stroke-width: ${round(3*scale)};
+  }
+  svg.freesewing .stroke-4xl {
+    stroke-width: ${round(4*scale)};
   }
 
   svg.freesewing .sa {
