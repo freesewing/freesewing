@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 Controla el ancho de la banda de cintura.
 
 
