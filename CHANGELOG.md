@@ -8,6 +8,7 @@
 #### Changed
 
  - Setting Path.render() no longer raises an info message
+ - Always raise debug, but only store it whend debug is enabled
 
 ### simon
 
