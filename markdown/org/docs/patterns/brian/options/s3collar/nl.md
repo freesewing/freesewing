@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 Bepaalt de locatie van de schoudernaad aan de kant van de kraag.
 
