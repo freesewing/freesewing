@@ -101,18 +101,14 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
    * Draft parts individually
    */
   it('Draft parts individually:', () => true)
-  let parts = isGarment(design)
-    ? patterns.parts[design]
-    : Pattern.config.parts
-  for (let name of parts) {
-    it(`  - ${name} should draft on its own`, () => {
+  const parts = new Pattern().draftOrder()
+  for (const part of parts) {
+    it(`  - Drafting only the ${part} part`, () => {
       expect(
         doesItDraft(
           new Pattern({
             measurements,
-            settings: {
-              only: [name]
-            }
+            only: [part]
           }), log
         )
       ).to.equal(true)
