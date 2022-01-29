@@ -1,7 +1,7 @@
 Pour faire Ursula, vous aurez besoin des éléments suivants :
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- Environ 0,7 mètre d'un tissu approprié (voir [Options de tissu](/docs/patterns/ursula/fabric))
-- Environ 3 mètres d'élastique de sous-vêtements, tels que l'élastique de picot ou le pli sur élastique
+- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/ursula/fabric))
+- About 3 meters (3.3 yards) of underwear elastic, such as picot elastic or fold over elastic
 
 <Tip>
 

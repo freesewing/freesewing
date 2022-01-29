@@ -1,7 +1,7 @@
 Para hacer Shin, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Alrededor de 0.75 metros de un tejido adecuado ([vea las opciones de Tela](/docs/patterns/shin/fabric))
+- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
 - dos eyelets y una cadena de dibujo
 
 > ## Un serger/overlock es bueno, pero opcional

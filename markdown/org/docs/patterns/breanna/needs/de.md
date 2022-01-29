@@ -1,7 +1,7 @@
 To make Breanna, you will need the following:
 
 - Grundlegendes Nähzubehör
-- Etwa 1.25 - 1.5 Meter eines geeigneten Stoffes ([siehe Stoffoptionen Breanna](/docs/patterns/Breanna/fabric/))
+- About 1.25 - 1.5 metres (1.4 - 1.7 yards) of a suitable fabric ([see Breanna Fabric options](/docs/patterns/Breanna/fabric/))
 
 Diese Liste ist für einen Breanna-Grundschnitt mit Standardeinstellungen. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
 

@@ -2,7 +2,7 @@
 Pour faire de Diana, vous aurez besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- Environ 1. mètre (ou la moitié s'il est assez large pour tenir les manches à côté de son corps) d'un tissu approprié ([voir les options de tissu](/docs/patterns/diana/fabric))
+- About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next tot he body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
 
 <Note>
 

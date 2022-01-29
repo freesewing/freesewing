@@ -1,7 +1,7 @@
 Pour faire du shin, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Environ 75 cm d'un tissu adapté ([voir Options de tissu](/docs/patterns/shin/fabric))
+- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
 - deux oeillets et un cordon
 
 > ## Un serge/overlock est sympa, mais facultatif
