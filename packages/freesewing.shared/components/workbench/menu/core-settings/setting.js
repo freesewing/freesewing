@@ -1,4 +1,4 @@
-import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
+import { Chevron } from 'shared/components/navigation/primary.js'
 import PctDegOption from 'shared/components/workbench/inputs/design-option-pct-deg'
 import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListSetting from './core-setting-list'
@@ -9,67 +9,46 @@ import BoolSetting from './core-setting-bool.js'
 import SaBoolSetting from './core-setting-sa-bool.js'
 import SaMmSetting from './core-setting-sa-mm.js'
 import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
+import { SecText, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu/index.js'
 
 const settings = {
-  paperless: props => {
-    return (
-      <span className="text-secondary">
-        {props.app.t(`app.${props.gist.paperless ? 'yes' : 'no'}`)}
-      </span>
-    )
-  },
-  complete: props => {
-    return (
-      <span className="text-secondary">
-        {props.app.t(`app.${props.gist.complete ? 'yes' : 'no'}`)}
-      </span>
-    )
-  },
-  debug: props => {
-    return (
-      <span className="text-secondary">
-        {props.app.t(`app.${props.gist.debug ? 'yes' : 'no'}`)}
-      </span>
-    )
-  },
-  locale: props => {
-    return (
-      <span className="text-secondary">
-        {props.app.t(`i18n.${props.gist.locale}`)}
-      </span>
-    )
-  },
-  units: props => {
-    return (
-      <span className="text-secondary">
-        {props.app.t(`app.${props.gist.units}Units`)}
-      </span>
-    )
-  },
-  margin: props => {
-    return (
-      <span className="text-secondary" dangerouslySetInnerHTML={{
-        __html: formatMm(props.gist.margin, props.gist.units)
-      }} />
-    )
-  },
+  paperless: props => (
+    <SecText>
+      {props.app.t(`app.${props.gist.paperless ? 'yes' : 'no'}`)}
+    </SecText>
+  ),
+  complete: props => (
+    <SecText>
+      {props.app.t(`app.${props.gist.complete ? 'yes' : 'no'}`)}
+    </SecText>
+  ),
+  debug: props => (
+    <SecText>
+      {props.app.t(`app.${props.gist.debug ? 'yes' : 'no'}`)}
+    </SecText>
+  ),
+  locale: props => (
+    <SecText>
+      {props.app.t(`i18n.${props.gist.locale}`)}
+    </SecText>
+  ),
+  units: props => (
+    <SecText>
+      {props.app.t(`app.${props.gist.units}Units`)}
+    </SecText>
+  ),
+  margin: props => <SecText raw={formatMm(props.gist.margin, props.gist.units)} />,
   scale: props => props.gist.scale === 1
-    ? <span className="text-secondary">{props.gist.scale}</span>
+    ? <SecText>{props.gist.scale}</SecText>
     : <span className="text-accent">{props.gist.scale}</span>,
-  saMm: props => {
-    return (
-      <span className="text-secondary" dangerouslySetInnerHTML={{
-        __html: formatMm(props.gist.saMm, props.gist.units)
-      }} />
-    )
-  },
+  saMm: props => <SecText raw={formatMm(props.gist.saMm, props.gist.units)} />,
   renderer: props => (
-    <span className="text-secondary">
+    <SecText>
       {props.config.titles[props.gist.renderer]}
-    </span>
+    </SecText>
   ),
   only: props => (props.gist?.only && props.gist.only.length > 0)
-    ? <span className="text-accent">{props.gist.only.length}</span>
+    ? <SecText>{props.gist.only.length}</SecText>
     : <span className="text-secondary">{props.app.t('app.default')}</span>
 }
 
@@ -112,30 +91,11 @@ const Setting = props => {
   const Value = settings[props.setting]
 
   return (
-    <li className="flex flex-row">
-      <details className="grow">
-        <summary className={`
-          flex flex-row
-          px-2
-          text-base-content
-          sm:text-neutral-content
-          hover:cursor-row-resize
-          items-center
-        `}>
-          <div className={`
-            grow pl-2 border-l-2
-            ${linkClasses}
-            hover:cursor-resize
-            hover:border-secondary
-            sm:hover:border-secondary-focus
-            text-base-content sm:text-neutral-content
-          `}>
-            <span className={`
-              text-3xl inline-block p-0 leading-3 px-2
-              translate-y-3
-            `}>
-              <>&deg;</>
-            </span>
+    <Li>
+      <Details>
+        <Summary>
+          <SumDiv>
+            <Deg />
             {props.setting === 'saMm'
               ? (
                 <>
@@ -145,13 +105,13 @@ const Setting = props => {
               )
               : <span>{props.app.t(`settings.${props.setting}.title`)}</span>
             }
-          </div>
+          </SumDiv>
           <Value setting={props.setting} {...props} />
-          <Chevron w={6} m={3}/>
-        </summary>
+          <Chevron />
+        </Summary>
         <Input {...props} />
-      </details>
-    </li>
+      </Details>
+    </Li>
   )
 }
 

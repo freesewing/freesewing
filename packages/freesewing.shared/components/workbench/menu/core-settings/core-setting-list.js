@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Deg } from 'shared/components/workbench/menu/index.js'
 
 const CoreSettingList = props => {
   const { dflt, list } = props
@@ -35,12 +36,7 @@ const CoreSettingList = props => {
                 ${entry.key === value && 'font-bold text-secondary'}
               `}
             >
-              <span className={`
-                text-3xl mr-2 inline-block p-0 leading-3
-                translate-y-3
-              `}>
-                <>&deg;</>
-              </span>
+              <Deg />
               {entry.title}
             </button>
           ))}

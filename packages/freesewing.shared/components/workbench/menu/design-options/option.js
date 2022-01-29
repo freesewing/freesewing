@@ -1,8 +1,9 @@
-import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
+import { Chevron } from 'shared/components/navigation/primary.js'
 import PctDegOption from 'shared/components/workbench/inputs/design-option-pct-deg'
 import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListOption from 'shared/components/workbench/inputs/design-option-list'
 import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
+import { Li, Ul, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
 
 const values = {
   pct: props => {
@@ -94,77 +95,36 @@ const Option = props => {
     else props.unsetGist(['options', props.option])
   }
 
-  if (type === 'bool') return (
-    <li className="flex flex-row">
-      <button className={`
-        flex flex-row
-        w-full
-        justify-between
-        px-2
-        text-left
-        text-base-content
-        sm:text-neutral-content
-        items-center
-        pr-6
-      `} onClick={toggleBoolean}>
-        <div className={`
-          grow pl-2 border-l-2
-          ${linkClasses}
-          hover:border-secondary
-          sm:hover:border-secondary-focus
-          text-base-content sm:text-neutral-content
-        `}>
-          <span className={`
-            text-3xl mr-2 inline-block p-0 leading-3
-            translate-y-3
-          `}>
-            <>&deg;</>
-          </span>
-          <span>
-            { props.app.t(`options.${props.pattern.config.name}.${props.option}.title`) }
-          </span>
-        </div>
-        <Value type={type} {...props} />
-      </button>
-    </li>
-
-  )
-
-  return (
-    <li className="flex flex-row">
-      <details className="grow">
-        <summary className={`
-          flex flex-row
-          px-2
-          text-base-content
-          sm:text-neutral-content
-          hover:cursor-row-resize
-          items-center
-        `}>
-          <div className={`
-            grow pl-2 border-l-2
-            ${linkClasses}
-            hover:border-secondary
-            sm:hover:border-secondary-focus
-            text-base-content sm:text-neutral-content
-          `}>
-            <span className={`
-              text-3xl mr-2 inline-block p-0 leading-3
-              translate-y-3
-            `}>
-              <>&deg;</>
-            </span>
+  return (type === 'bool')
+    ? (
+      <Li>
+        <SumButton onClick={toggleBoolean}>
+          <SumDiv>
+            <Deg />
             <span>
               { props.app.t(`options.${props.pattern.config.name}.${props.option}.title`) }
             </span>
-          </div>
+          </SumDiv>
           <Value type={type} {...props} />
-          <Chevron w={6} m={3}/>
-        </summary>
-        <Input {...props} />
-      </details>
-    </li>
-  )
+        </SumButton>
+      </Li>
+    ) : (
+      <Li>
+        <Details>
+          <Summary>
+            <SumDiv>
+              <Deg />
+              <span>
+                { props.app.t(`options.${props.pattern.config.name}.${props.option}.title`) }
+              </span>
+            </SumDiv>
+            <Value type={type} {...props} />
+            <Chevron w={6} m={3}/>
+          </Summary>
+          <Input {...props} />
+        </Details>
+      </Li>
+    )
 }
 
 export default Option
