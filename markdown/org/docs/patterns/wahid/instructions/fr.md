@@ -55,31 +55,31 @@ Repliez votre devant (avec son entoilage thermocollé) endroit contre endroit, e
 ![Appuyez sur toutes les fléchettes](04a.png)
 
 #### Repasser les pinces de devant
-Une fois coupé ouvert, appuyez sur les fléchettes avant ouvertes.
+Une fois coupées ouvertes, Repassez sur les pinces avant ouvertes.
 
-#### Appuyez sur les fléchettes arrière
-Si vous coupez les fléchettes arrière, appuyez sur les ouvrir. Si ce n'est pas le cas, appuyez sur le côté.
+#### Repasser les pinces dos
+Si vous coupez les pinces dos, repassez pour les ouvrir. Si ce n'est pas le cas, repassez vers le côté.
 
 > N'oubliez pas de faire la même chose pour la doublure
 
 ### Étape 5 : Construire les poches
 
-#### Attachez le sac de poche à la poche
+#### Attacher le fond de poche au passepoil de poche
 
 ![Attachez le sac de poche à la poche](05a.png)
 
-Placez votre sac de poche vers le bas avec le bon côté vers le haut, et votre poche vers le haut avec le bon côté vers le bas.
+Placez votre fond de poche avec l'endroit vers le haut, et votre passepoil de poche dessus avec l'endroit vers le bas.
 
-Alignez le côté droit du sac avec le côté de la soudure qui n'a aucune interface, et les coudre ensemble à la marge de couture standard.
+Alignez le côté droit du fond avec le côté du passepoil qui n'a pas d'entoilage, et les coudre ensemble avec la marge de couture standard.
 
-#### Appuyer sur la couture ouverte
-Lorsque vous avez terminé, appuyez sur ouvrir cette couture.
+#### Repasser pour ouvrir la couture
+Lorsque vous avez terminé, repassez sur cette couture avec les marges ouvertes.
 
-#### Marquer où votre poche doit aller
+#### Marquer l'emplacement de votre poche
 
 ![Marquer où votre poche doit aller](05a.png)
 
-Votre pièce de patron avant a une ligne d'aide sur elle pour montrer où la poche de soudure doit aller. C'est deux demi-rectangles qui se sont réunis en fermant la dart pour former la forme de votre poche de soudure.
+Votre pièce de patron avant possède une ligne d'aide pour montrer où le passepoil de poche doit aller. Il s'agit de deux demi-rectangles réunis lors de la couture de la pince pour créer la forme de votre passepoil de poche.
 
 Si vous n'avez pas encore marqué les quatre coins de ce rectange, vous devriez le faire maintenant.
 
