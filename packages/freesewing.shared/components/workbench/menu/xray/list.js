@@ -1,9 +1,13 @@
 import { Chevron } from 'shared/components/navigation/primary.js'
 import ClearIcon from 'shared/components/icons/clear.js'
 import { Ul, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu'
+import Path from './path.js'
+import Point from './point.js'
 
-
-const Path = props => <p>{props.pathName}</p>
+const types = {
+  paths: Path,
+  points: Point
+}
 
 const XrayList = props => {
 
@@ -27,22 +31,35 @@ const XrayList = props => {
           </button>
           <Chevron w={6} m={3}/>
         </Summary>
-        {props.gist.xray.parts[props.partName].paths && (
+        {Object.keys(types).map(type => props.gist.xray.parts[props.partName][type] && (
           <Ul>
             <Li>
               <Details>
                 <Summary>
                   <SumDiv>
-                    <span>Paths</span>
+                    <span className="capitalize">{type}</span>
                   </SumDiv>
                 </Summary>
-                {Object.keys(props.gist.xray.parts[props.partName].paths)
-                  .map(pathName => <Path {...props} pathName={pathName} />)
+                {Object.keys(props.gist.xray.parts[props.partName][type])
+                  .map(id => (
+                    <Li>
+                      <Details>
+                        <Summary>
+                          <SumDiv>
+                            <Deg />
+                            <span>{id}</span>
+                          </SumDiv>
+                          <Chevron />
+                        </Summary>
+                        {types[type]({...props, id})}
+                      </Details>
+                    </Li>
+                  ))
                 }
               </Details>
             </Li>
           </Ul>
-        )}
+        ))}
       </Details>
     </Li>
   )
