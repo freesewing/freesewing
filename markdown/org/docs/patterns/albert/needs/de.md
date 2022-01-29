@@ -2,5 +2,5 @@
 Um Albert zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 1,25 Meter (abhängig von der Länge deiner Schürze) eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/albert/fabric))
+- About 1.25 meters (1.4 yards) (depending on the length of your apron) of a suitable fabric ([see Fabric options](/docs/patterns/albert/fabric))
 
