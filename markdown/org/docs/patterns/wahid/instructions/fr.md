@@ -1,14 +1,14 @@
 ### Étape 1 : Thermocoller l'entoilage
 
-#### Appuyer sur l'interfaçage vers les douilles de poche
+#### Repassez l'entoilage sur les passpoils/rabats de poche
 
 ![Appuyer sur l'interfaçage vers les douilles de poche](01a.png)
 
-Placez votre poche avec le bon côté vers le bas, et votre poche interfacée sur le dessus.
+Placez votre passepoil/rabat poche avec le côté endroit vers le bas, et votre entoilage de poche sur le dessus.
 
-L'interface est un peu plus courte que la soudure, alors assurez-vous d'aligner le côté qui a la ligne d'aide marquée dessus.
+L'entoilage est un peu plus petit que le passepoil, alors assurez-vous d'aligner le côté qui a la ligne d'aide marquée dessus.
 
-Pour chaque poche, appuyez sur la pièce interfacée sur le mauvais côté de la poche.
+Pour chaque poche, repassez l'entoilage sur l'envers du passepoil de poche.
 
 #### Appuyer sur l'interface vers les devants
 
