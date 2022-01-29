@@ -13,7 +13,9 @@ export default {
     style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle', 'ribbonWidth'],
   },
   measurements: ['neck'],
-  dependencies: {},
+  dependencies: {
+    ribbon: 'base',
+  },
   inject: {
     bow1: 'base',
     bow2: 'base',

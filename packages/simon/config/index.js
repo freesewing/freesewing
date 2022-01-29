@@ -122,6 +122,12 @@ export default {
     sleeve: ['sleeveBase', 'front', 'back'],
     frontRight: ['back'],
     frontLeft: ['back'],
+    sleevePlacketUnderlap: ['back'],
+    sleevePlacketOverlap: ['back'],
+    collar: ['back'],
+    collarStand: ['back'],
+    buttonPlacket: ['back'],
+    buttonholePlacket: ['back'],
   },
   inject: {
     frontBase: 'base',

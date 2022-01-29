@@ -67,6 +67,8 @@ export default {
     pocketBagBack: 'back',
     pocketWelt: 'pocketBagBack',
     pocketWeltInterfacing: 'pocketWelt',
+    waistband: 'back',
+    cuff: 'front',
   },
   hide: ['titanBack', 'titanFront'],
   options: {
