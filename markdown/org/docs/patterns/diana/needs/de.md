@@ -2,7 +2,7 @@
 Um Diana zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Über 1. Meter (oder die Hälfte, wenn es breit genug ist, um die Ärmel als Nächstes den Körper zu passen) aus einem geeigneten Stoff ([siehe Stoffoptionen](/docs/patterns/diana/fabric))
+- About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next tot he body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
 
 <Note>
 
