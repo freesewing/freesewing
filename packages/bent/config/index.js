@@ -45,8 +45,8 @@ export default {
   dependencies: {
     back: 'base',
     front: 'back',
-    topSleeve: 'sleeve',
-    underSleeve: 'sleeve',
+    topSleeve: ['sleeve', 'front'],
+    underSleeve: ['sleeve', 'front'],
   },
   inject: {
     back: 'base',
