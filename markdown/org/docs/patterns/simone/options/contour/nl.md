@@ -1,11 +1,9 @@
-- - -
-- - -
 
-<Fixme>
+Controls how sharply the extra room for breasts is removed again below the chest.
 
-Document deze optie
+- Increase this option to sharpen the curve below the bust darts
+- Decrease this option to loosen the curve below the bust darts
 
-</Fixme>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_contour_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_contour_sample.svg "Effect of this option on the pattern")
