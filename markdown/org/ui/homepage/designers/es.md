@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 #### ¿Qué es el diseño paramétrico?
 
