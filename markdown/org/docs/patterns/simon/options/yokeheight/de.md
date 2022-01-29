@@ -1,11 +1,9 @@
-- - -
-- - -
 
-<Fixme>
+Controls the height of the yoke seam.
 
-Diese Option dokumentieren
+- Increase this option to lower the height and lengthen the yoke
+- Decrease this option to raise the height and shorten the yoke
 
-</Fixme>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_yokeheight_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_yokeheight_sample.svg "Effect of this option on the pattern")

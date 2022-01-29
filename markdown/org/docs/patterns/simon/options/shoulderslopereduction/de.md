@@ -1,8 +1,6 @@
 
-![Verringerung der Schulterneigung](./shoulderslopereduction.svg)
-
-Reduziert den Schulterhang, um zusätzlichen Platz für Schulterpolsterung zu schaffen.
+Reduces the shoulder slope to create extra room for shoulder padding.
 
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_shoulderslopereduction_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_shoulderslopereduction_sample.svg "Effect of this option on the pattern")
