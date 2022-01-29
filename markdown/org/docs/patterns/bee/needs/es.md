@@ -5,8 +5,8 @@ title: Bee Qué necesitas
 Para hacer Bee, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Entre 0,5 a 1 metro de una tela adecuada ([ver Bee Opciones de tela](/docs/patterns/bee/fabric/))
-- (Opcional) Entre 0,5 a 1 metro de tela de forro ([ver Bee Opciones de tela](/docs/patterns/bee/fabric/))
+- About 0.5 - 1 metre (0.6 - 1.1 yards) of a suitable fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
+- (Optional) About 0.5 - 1 metre (0.6 - 1.1 yards) of lining fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
 - (Opcional) Lazos, cintas o cuerdas para las tiras del cuello y torso, de la misma longitud y ancho que las tiras del patrón.
 
 <Note>
