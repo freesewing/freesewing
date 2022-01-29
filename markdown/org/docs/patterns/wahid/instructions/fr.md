@@ -30,31 +30,31 @@ Repassez l'entoilage en place.
 
 ![Coudre face à la doublure](02a.png)
 
-Placez votre face avant et votre doublure avec de bons côtés ensemble. Épingler les bords de la bordure face/doublure en place.
+Placez votre parementure avant et votre doublure endroit contre endroit. Épinglez les bords de la parementure/doublure en place.
 
 Les coudre ensemble.
 
-#### Appuyer sur la pression sur la marge de couture ouverte
-Appuyez sur ouvrir la marge de couture entre la face et la garniture.
+#### Repasser sur la marge de couture ouverte
+Repassez pour ouvrir les marges de couture entre la parementure et la doublure.
 
-### Étape 3 : Fermer toutes les fléchettes
+### Étape 3 : Fermer toutes les pinces
 
 ![Fermer toutes les fléchettes](03a.png)
 
-#### Fermer les fléchettes arrière
+#### Fermer les pinces dos
 
-Repliez le dos avec de bons côtés ensemble et cousez la fléchette arrière.
+Repliez le dos endroit contre endroit et cousez la pince dos.
 
 > N'oubliez pas de faire la même chose pour la doublure
 
-#### Fermer les fléchettes avant
-Repliez votre front (et l'interface-face fusionnée) avec de bons côtés ensemble, et cousez la fléchette avant.
+#### Fermer les pinces devant
+Repliez votre devant (avec son entoilage thermocollé) endroit contre endroit, et cousez la pince avant.
 
-### Étape 4 : Appuyez sur toutes les fléchettes
+### Étape 4 : Repasser toutes les pinces
 
 ![Appuyez sur toutes les fléchettes](04a.png)
 
-#### Appuyez sur les flèches avant
+#### Repasser les pinces de devant
 Une fois coupé ouvert, appuyez sur les fléchettes avant ouvertes.
 
 #### Appuyez sur les fléchettes arrière
