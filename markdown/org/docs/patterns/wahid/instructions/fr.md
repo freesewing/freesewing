@@ -1,6 +1,6 @@
 ### Étape 1 : Thermocoller l'entoilage
 
-#### Repassez l'entoilage sur les passpoils/rabats de poche
+#### Repasser l'entoilage sur les passepoils/rabats de poche
 
 ![Appuyer sur l'interfaçage vers les douilles de poche](01a.png)
 
@@ -10,23 +10,23 @@ L'entoilage est un peu plus petit que le passepoil, alors assurez-vous d'aligner
 
 Pour chaque poche, repassez l'entoilage sur l'envers du passepoil de poche.
 
-#### Appuyer sur l'interface vers les devants
+#### Repasser l'entoilage sur les devants
 
 ![Appuyer sur l'interfaçage sur les devants de poche](01b.png)
 
-Placez votre front avec le bon côté vers le bas et votre interface vers le haut.
+Placez votre devant avec le côté endroit vers le bas et votre entoilage par-dessus.
 
-Appuyez sur l'interfaçage en place.
+Repassez l'entoilage en place.
 
 > **Prenez votre temps**
 > 
-> Ne le ferez pas simplement pour le repasser, vous voulez vraiment appuyer sur votre tissu pour qu'il se fusionne.
+> Ne passez pas le fer simplement pour le repasser, vous voulez vraiment repasser sur votre tissu pour qu'il se thermocolle bien.
 > 
-> Placez votre fer à repasser et reposez-vous sur lui pendant 10 secondes avant de passer au point suivant pour répéter le processus.
+> Placez votre fer à repasser et pressez pendant 10 secondes environ avant de passer au point suivant pour répéter le processus.
 
-### Étape 2 : Rejoignez la face avant et la doublure
+### Étape 2 : Assembler la parementure et la doublure de devant
 
-#### Coudre face à la doublure
+#### Coudre la parementure à la doublure
 
 ![Coudre face à la doublure](02a.png)
 
