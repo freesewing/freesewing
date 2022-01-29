@@ -1,8 +1,8 @@
 
-Controls how close the bust dart approaches the bust point.
+Controls how close the **bust darts** approach the bust points.
 
-- Increase this option to lengthen the bust dart moving it closer to the bust point
-- Decrease this option to shorten the bust dart moving it further away from the bust point
+- Increase this option to lengthen the bust darts moving them closer to the bust points
+- Decrease this option to shorten the bust darts moving them further away from the bust points
 
 
 ## Effect of this option on the pattern
