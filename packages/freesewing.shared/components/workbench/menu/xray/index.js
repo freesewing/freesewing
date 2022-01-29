@@ -1,6 +1,6 @@
 import XrayIcon from 'shared/components/icons/xray.js'
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
-import Clear from './clear.js'
+import Reset from './reset.js'
 import Disable from './disable.js'
 import List from './list.js'
 
@@ -43,7 +43,7 @@ const Xray = props => {
       {props.gist?.xray?.enabled && (
         <ul className="pl-5 list-inside">
           <Disable {...props} />
-          <Clear {...props} />
+          <Reset {...props} />
           {
             props.gist?.xray?.parts &&
             Object.keys(props.gist.xray.parts).map(partName => <List {...props} partName={partName} />)
