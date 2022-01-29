@@ -129,11 +129,6 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
               complete: false,
               paperless: true,
               sa,
-              settings: {
-              complete: false,
-              paperless: true,
-              sa,
-              }
             }), log
           )
         ).to.equal(true)
