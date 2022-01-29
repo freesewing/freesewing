@@ -1,7 +1,7 @@
 Um Sven zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 1.75 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](#fabric-options))
+- About 1.75 meters (1.9 yards) of a suitable fabric ([see Fabric options](#fabric-options))
 - Ribbing Stoff für die Manschetten und Nackenöffnung
 
 <Note>
