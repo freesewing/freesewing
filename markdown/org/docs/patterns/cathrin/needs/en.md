@@ -6,8 +6,8 @@ You can find a good guide to other tools at [Foundations Revealed](https://found
 
 Sample supplies list:
 
-* About 0.5 meter of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
-* About 0.5 meter of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+* About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+* About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
 * Boning
 * Grommets (size 2)
 * About 2 meters of bias tape

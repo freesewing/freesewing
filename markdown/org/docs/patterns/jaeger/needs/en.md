@@ -1,6 +1,6 @@
 To make Jaeger, you will need the following:
 
- - About two and a half meters of a suitable fabric (see [Fabric options](#fabric-options))
+ - About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
  - Lining fabric, optionally different sleeve lining fabric
  - Two larger buttons for the front, and 8 buttons for the sleeves
  - A bit of lightweight fusible interfacing for local enforcement
