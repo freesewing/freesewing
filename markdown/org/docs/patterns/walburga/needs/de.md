@@ -1,4 +1,4 @@
 Um Walburga zu erstellen, benötigst du Folgendes:
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 1 Meter eines geeigneten Stoffes (siehe [Stoffoptionen](/docs/patterns/walburga/fabric))
-- (optional) about 3 metres of bias tape or trimmings to finsh the raw edges
+- About 1 meter (1.1 yards) of a suitable fabric (see [Fabric options](/docs/patterns/walburga/fabric))
+- (optional) about 3 metres (3.3 yards) of bias tape or trimmings to finsh the raw edges
