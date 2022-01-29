@@ -1,7 +1,7 @@
 Para hacer Sven, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Alrededor de 1,75 metros de un tejido adecuado ([vea las opciones de Tela](#fabric-options))
+- About 1.75 meters (1.9 yards) of a suitable fabric ([see Fabric options](#fabric-options))
 - Tejido de costilla para las tazas y la apertura del cuello
 
 <Note>
