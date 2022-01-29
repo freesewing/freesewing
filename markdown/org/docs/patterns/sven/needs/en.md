@@ -1,7 +1,7 @@
 To make Sven, you will need the following:
 
 - Basic sewing supplies
-- About 1.75 meter of a suitable fabric ([see Fabric options](#fabric-options))
+- About 1.75 meters (1.9 yards) of a suitable fabric ([see Fabric options](#fabric-options))
 - Ribbing fabric for the cuffs and neck opening
 
 <Note>

@@ -2,7 +2,7 @@
 To make Yuri, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 2.5 meter of a suitable fabric ([see Fabric options](/docs/patterns/yuri/fabric))
+- About 2.5 meters (2.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/yuri/fabric))
 - 2 large buttons
 
 <Note>

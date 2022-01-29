@@ -112,27 +112,17 @@ De naad waar de buitenstof van de das aan de voering vastzit zit niet aan de ran
 
 Bevestig tussenvoering punt (deel 1) aan tussenvoering staart (deel 2) aan elkaar aan de niet-puntige kant. Let op dat de merktekens overeenkomen.
 
-<Tip>
-
-##### Of niet
- 
-Om eerlijk te zijn stik ik de tussenvoering nooit aan elkaar. Ik laat de twee helften gewoon los.
-
-Op deze manier kan de lengte van je das nooit fout zijn, en kan je de stukken tussenvoering gewoon over elkaar heen schuiven. Daarnaast zorgt het voor minder bulk in het midden en is het minder werk.
-
-Je kan deze stap dus gewoon overslaan, dat doe ik ook.
-
-</Tip>
+> **Of niet** <br> Om eerlijk te zijn stik ik de tussenvoering nooit aan elkaar. Ik laat de twee helften gewoon los.
+> 
+> Op deze manier kan de lengte van je das nooit fout zijn, en kan je de stukken tussenvoering gewoon over elkaar heen schuiven. Daarnaast zorgt het voor minder bulk in het midden en is het minder werk.
+> 
+> Je kan deze stap dus gewoon overslaan, dat doe ik ook.
 
 ### Stap 10: Bevestig de stof van de das
 
 ![Bevestig de stof van de das](step10.png)
 
-<Note>
-
-Als de tussenvoering vastgenaaid is, ligt de lengte van de das ook vast. Meet de das van punt tot punt, en let op dat je de stofdelen op de correcte lengte aan elkaar zet.
-
-</Note>
+> Als de tussenvoering vastgenaaid is, ligt de lengte van de das ook vast. Meet de das van punt tot punt, en let op dat je de stofdelen op de correcte lengte aan elkaar zet.
 
 Stik de punt en staart aan elkaar aan de niet-puntige kant.
 

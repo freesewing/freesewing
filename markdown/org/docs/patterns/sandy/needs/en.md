@@ -2,11 +2,11 @@
 To make Sandy, you will need the following:
 
   - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-  - About 2 - 4 metres of a suitable main fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
+  - About 2 - 6 metres (2.2 - 6.6 yards) of a suitable main fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
   - Some interfacing for the waistband
   - (Optional) Facing for the hem.
   - Some sort of closure for the waistband (if not seamless)
-  - (Optional) About 2 - 4 metres of suitable lining fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
+  - (Optional) About 2 - 6 metres (2.2 - 6.6 yards) of suitable lining fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
   - Elastic (if needed)
 
 Due to the many different styles of Sandy it is difficult to precisely say what you need so we will go through some of the options.

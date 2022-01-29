@@ -9,3 +9,4 @@ Seam allowance is indicated by a dashed line, that has the same width and color 
 Note that the corners of the seam allowance are trimmed, and not extended:
 
 <Legend part="sa"> A trimmed seam allowance corner </Legend>
+

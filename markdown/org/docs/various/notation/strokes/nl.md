@@ -6,16 +6,9 @@ Ontwerpers kunnen, als ze willen, een andere lijndikte of vorm van lijn kiezen d
 
 Ter referentie zijn hier de verschillende beschikbare lijndiktes:
 
-<Legend part="lineWidths">
+<Legend part="lineWidths" caption="The different line widths" >
 
-De verschillende lijndiktes
+En dit zijn de verschillende types lijnen:
 
-</Legend>
-
-
-<Legend part="lineStrokes">
-
-De verschillende types lijnen:
-
-</Legend>
+<Legend part="lineStrokes" caption="The different line strokes" >
 
