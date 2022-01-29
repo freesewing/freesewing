@@ -1,7 +1,7 @@
  - **Tissu principal**
-   - Couper **2 devant(s)** avec _bons côtés ensemble_
-   - Couper **2 dos** avec _bons côtés ensemble_
-   - Couper **2 faces avant** avec _bons côtés ensemble_
+   - Couper **2 devant(s)** _endroit contre endroit_
+   - Couper **2 dos** _endroit contre endroit_
+   - Couper **2 parementures avant** _endroit contre endroit_
    - Coupez **2 poches** avec _bons côtés ensemble_
    - Coupez **2 faces de poche** avec _bons côtés ensemble_
  - **Tissu de doublure**
