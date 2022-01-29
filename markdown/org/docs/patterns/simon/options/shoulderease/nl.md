@@ -1,10 +1,8 @@
 
-![Overwijdte schouder](./shoulderease.svg)
+Controls the amount of ease on the shoulder to shoulder measurement.
 
-Bepaalt de hoeveelheid overwijdte op de schouder tot schouder maat.
-
-Deze optie stelt je in staat om wat extra overwijdte aan de schouders te maken die de schoudernaad meer naar buiten en van de schouder verschuift. Hierdoor wordt extra ruimte gecreëerd voor extra kledinglagen onderaan, of meer gevormde/gewatteerde schouders.
+This option allows you to create some extra ease at the shoulders which shifts the shoulder seam more outwards and off the shoulder. Thereby creating extra room for extra layers of clothing underneath, or more shaped/padded shoulders.
 
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_shoulderease_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_shoulderease_sample.svg "Effect of this option on the pattern")

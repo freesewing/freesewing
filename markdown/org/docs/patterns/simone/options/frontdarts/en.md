@@ -1,11 +1,5 @@
----
----
 
-<Fixme>
-
-Document this option
-
-</Fixme>
+Whether to include front waist darts or not.
 
 
 ## Effect of this option on the pattern

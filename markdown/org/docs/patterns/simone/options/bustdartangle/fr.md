@@ -1,11 +1,9 @@
-- - -
-- - -
 
-<Fixme>
+Controls the angle by which the (side) bust dart slopes downward.
 
-Document de cette option
+- Increase this option to angle the bust darts downwards and towards the floor
+- Decrease this option to angle the bust darts upwards and towards the armscye
 
-</Fixme>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_bustdartangle_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_bustdartangle_sample.svg "Effect of this option on the pattern")
