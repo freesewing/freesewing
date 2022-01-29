@@ -85,6 +85,8 @@ labelPRBasedOnFilePath:
   ":package: waralee": [ packages/waralee/* ]
   ":package: yuri": [ packages/yuri/* ]
   ":book: documentation": [ markdown/* ]
+  ":test_tube: tests": [ tests/* ]
+  ":gear: configuration": [ "config/*", ".github/*" ]
 
 labelerFlags:
   labelOnPRUpdates: true
