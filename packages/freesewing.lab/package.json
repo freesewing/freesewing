@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3002",
     "develop": "next dev -p 3002",
-    "prebuild": "SITE=dev node ../freesewing.shared/prebuild/index.mjs",
+    "prebuild": "SITE=lab node ../freesewing.shared/prebuild/index.mjs",
     "build": "next build",
     "export": "yarn prebuild && next build && next export",
     "start": "next start -p 3002",
