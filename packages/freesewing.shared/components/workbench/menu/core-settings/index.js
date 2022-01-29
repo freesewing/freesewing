@@ -44,9 +44,6 @@ const settings = {
   debug: {
     dflt: false,
   },
-  xray: {
-    dflt: false,
-  },
 }
 
 const CoreSettings = props => {

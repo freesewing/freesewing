@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import Svg from './svg'
-import Defs from './defs'
-import Part from './part'
+import SvgWrapper from './svg-wrapper'
 import theme from 'pkgs/plugin-theme/src/index.js'
 import Robot from 'shared/components/robot/index.js'
 import Error from './error.js'
@@ -9,6 +7,7 @@ import Events from './events.js'
 import Json from 'shared/components/json.js'
 import Yaml from 'shared/components/yaml.js'
 import { capitalize } from 'shared/utils.js'
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 
 const tabClasses = active => `
   tab tab-bordered font-bold text-4xl pb-12 capitalize
@@ -63,25 +62,14 @@ const LabDraft = props => {
       {tab === 'events' && <Wrap><Events events={patternInstance.events} /></Wrap>}
       {tab === 'json' && <Wrap><Json>{JSON.stringify(props.gist, null, 2)}</Json></Wrap>}
       {tab === 'yaml' && <Wrap><Yaml json={JSON.stringify(props.gist, null, 2)} /></Wrap>}
-      {tab === props.pattern.config.name && (
-        <Svg {...patternProps}>
-          <Defs {...patternProps} />
-          <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
-          <g>
-            {Object.keys(patternProps.parts).map((name) => (
-              <Part
-                key={name}
-                partName={name}
-                part={patternProps.parts[name]}
-                app={app}
-                gist={gist}
-                updateGist={updateGist}
-                unsetGist={unsetGist}
-              />
-            ))}
-          </g>
-        </Svg>
-      )}
+      {tab === props.pattern.config.name && <SvgWrapper
+        patternInstance={patternInstance}
+        patternProps={patternProps}
+        gist={gist}
+        updateGist={updateGist}
+        unsetGist={unsetGist}
+        app={app}
+      />}
     </div>
   )
 }

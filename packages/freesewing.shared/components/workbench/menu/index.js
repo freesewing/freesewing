@@ -1,6 +1,7 @@
 import ModesMenu from './modes.js'
 import DesignOptions from './design-options'
 import CoreSettings from './core-settings'
+import Xray from './xray'
 
 const WorkbenchMenu = props => {
   return (
@@ -10,6 +11,7 @@ const WorkbenchMenu = props => {
         <>
           <DesignOptions {...props} />
           <CoreSettings {...props} />
+          {props.gist.renderer === 'react' && <Xray {...props} />}
         </>
       )}
     </nav>

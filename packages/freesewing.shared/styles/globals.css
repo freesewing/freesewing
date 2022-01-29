@@ -200,3 +200,10 @@ input[type=range]:focus::-ms-fill-upper {
 /* Style for patterns */
 @import './svg-freesewing-draft.css';
 
+/* Fix styling for pan&zoom */
+/*
+div#pan-zoom-wrapper > div.react-transform-wrapper > div.react-transform-component {
+  width: calc(100vw - 64rem);
+  height: calc(100vh - 8rem);
+}
+*/
