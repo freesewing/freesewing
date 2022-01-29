@@ -1,6 +1,6 @@
 Para hacer de Jaeger, necesitarás lo siguiente:
 
- - Aproximadamente dos metros y medio de un tejido adecuado (ver [opciones de tela](#fabric-options))
+ - About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
  - Tejido luminoso, tela de revestimiento de manga diferente opcionalmente
  - Dos botones más grandes para el frontal, y 8 botones para las mangas
  - Un poco de ligero interfaz fusible para la aplicación local
