@@ -14,6 +14,8 @@ const XrayList = props => {
   let title = props.app.t(`parts.${props.partName}`)
   if (title !== props.partName || true) title + ` (${props.partName})`
 
+  const part = props.gist.xray.parts[props.partName]
+
   return (
     <Li>
       <Details>
@@ -31,7 +33,7 @@ const XrayList = props => {
           </button>
           <Chevron w={6} m={3}/>
         </Summary>
-        {Object.keys(types).map(type => props.gist.xray.parts[props.partName][type] && (
+        {Object.keys(types).map(type => part[type] && (
           <Ul>
             <Li>
               <Details>
@@ -39,23 +41,39 @@ const XrayList = props => {
                   <SumDiv>
                     <span className="capitalize">{type}</span>
                   </SumDiv>
+                  <button
+                    className="text-accent px-3 hover:text-secondary-focus"
+                    onClick={() => props.unsetGist(['xray', 'parts', props.partName, type])}
+                  >
+                    <ClearIcon />
+                  </button>
+                  <Chevron />
                 </Summary>
-                {Object.keys(props.gist.xray.parts[props.partName][type])
-                  .map(id => (
-                    <Li>
-                      <Details>
-                        <Summary>
-                          <SumDiv>
-                            <Deg />
-                            <span>{id}</span>
-                          </SumDiv>
-                          <Chevron />
-                        </Summary>
-                        {types[type]({...props, id})}
-                      </Details>
-                    </Li>
-                  ))
-                }
+                <Ul>
+                  {Object.keys(part[type])
+                    .map(id => (
+                      <Li>
+                        <Details>
+                          <Summary>
+                            <SumDiv>
+                              <Deg />
+                              <span>{id}</span>
+                            </SumDiv>
+                            <button
+                              className="text-accent px-3 hover:text-secondary-focus"
+                              onClick={() => props.unsetGist(['xray', 'parts', props.partName, type, id])}
+                            >
+                              <ClearIcon />
+                            </button>
+                            <Chevron />
+                          </Summary>
+                          {type === 'paths' && <Path path={part.paths[id]} />}
+                          {type === 'points' && <Point point={part.points[id]} />}
+                        </Details>
+                      </Li>
+                    ))
+                  }
+                </Ul>
               </Details>
             </Li>
           </Ul>

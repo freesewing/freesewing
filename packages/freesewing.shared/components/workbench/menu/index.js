@@ -12,6 +12,16 @@ export const Details = props => (
   </details>
 )
 export const Deg = props => <span className="text-3xl inline-block p-0 leading-3 px-2 translate-y-3">&deg;</span>
+export const NoSumDiv = props => (
+  <div className={`
+    grow px-2 ml-2 border-l-2
+    ${linkClasses}
+    hover:cursor-resize
+    hover:border-secondary
+    sm:hover:border-secondary-focus
+    text-base-content sm:text-neutral-content
+  `}>{props.children}</div>
+)
 export const SumDiv = props => (
   <div className={`
     grow pl-2 border-l-2
