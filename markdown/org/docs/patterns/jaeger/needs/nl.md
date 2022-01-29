@@ -1,6 +1,6 @@
 Om Jaeger te maken heb je het volgende nodig:
 
- - Ongeveer 2,5 meter geschikte stof (zie [Stofkeuzes](#fabric-options))
+ - About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
  - Voering, eventueel een andere stof voor de voering van de mouwen
  - Twee grotere knopen voor de voorkant, en 8 knopen voor de mouwen
  - Een beetje lichtgewicht kleefbare tussenvoering voor lokale versteviging

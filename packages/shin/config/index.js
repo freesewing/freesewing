@@ -16,6 +16,9 @@ export default {
     style: ['rise', 'elasticWidth'],
   },
   measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
+  dependencies: {
+    front: 'back',
+  },
   parts: ['back', 'front', 'waistband'],
   options: {
     // Constants

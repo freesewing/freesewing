@@ -31,7 +31,7 @@ export default {
     frontBase: 'base',
     front: 'frontBase',
     backBase: 'base',
-    back: 'backBase',
+    back: ['backBase', 'front'],
     sleevecap: 'front',
     sleeveBase: 'sleevecap',
     sleeve: ['sleeveBase', 'front', 'back'],

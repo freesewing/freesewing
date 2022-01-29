@@ -2,8 +2,8 @@
 Um Paco zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 1,25 Meter (je nach Höhe) eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/paco/fabric))
-- 30cm Futter für Taschen
+- About 1.25 meters (1.4 yards) (depending on your height) of a suitable fabric ([see Fabric options](/docs/patterns/paco/fabric))
+- 30cm (12") of lining for the pocket bags
 - Ein wenig Schnittstellen für die Taschenschweißungen (nur erforderlich, wenn Sie sich für die Rückentaschen entschieden haben)
 - Eine Zeichenkette und zwei Ösen (optional)
 - Genug flache elastische Taille und Manschetten

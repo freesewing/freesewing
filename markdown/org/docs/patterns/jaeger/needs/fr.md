@@ -1,6 +1,6 @@
 Pour fabriquer Jaeger, vous aurez besoin des éléments suivants:
 
- - Environ deux mètres et demi d'un tissu approprié (voir [Options de tissu](#fabric-options))
+ - About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
  - Tissu doublé, tissu de doublure à manches différent
  - Deux boutons plus gros pour le devant et 8 boutons pour les manches
  - Un peu d'interface légère et fusible pour l'application locale

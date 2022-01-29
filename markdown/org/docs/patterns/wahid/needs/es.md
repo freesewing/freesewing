@@ -1,8 +1,8 @@
 Para hacer Wahid, necesitarás lo siguiente:
 
  - Suministros básicos de costura
- - Un metro de un tejido adecuado ([vea las opciones de Tela](/docs/patterns/wahid/fabric))
- - Un metro de tela de forro
- - Interfaz Fusible
+ - About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/wahid/fabric))
+ - About 1 meter (1.1 yards) of lining fabric
+ - Fusible interfacing
  - Botones
 

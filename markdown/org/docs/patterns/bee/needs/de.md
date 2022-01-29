@@ -5,8 +5,8 @@ title: Bee What you need
 To make Bee, you will need the following:
 
 - Grundlegendes Nähzubehör
-- About 0.5 - 1 metre of a suitable fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) About 0.5 - 1 metre of lining fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
+- About 0.5 - 1 metre (0.6 - 1.1 yards) of a suitable fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
+- (Optional) About 0.5 - 1 metre (0.6 - 1.1 yards) of lining fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
 - (Optional) Ribbons/Tapes/Cords for neck ties and bands, with the same length and width as neck tie and/or band.
 
 <Note>

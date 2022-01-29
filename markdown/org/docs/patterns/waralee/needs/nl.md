@@ -2,5 +2,5 @@
 Om Waralee te maken heb je het volgende nodig:
 
   - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-  - Ongeveer 2 meter geschikte stof
+  - About 2 meters (2.2 yards) of a suitable fabric
   - Een tussenvoering voor de tailleband

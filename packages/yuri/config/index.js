@@ -66,6 +66,7 @@ export default {
     sleeve: 'sleeveBase',
     hoodCenter: 'hoodSide',
     hoodSide: ['front', 'back'],
+    gusset: 'back',
   },
   inject: {
     backBase: 'base',

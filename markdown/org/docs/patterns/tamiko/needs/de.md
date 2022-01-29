@@ -1,5 +1,5 @@
 Um Tamiko zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 1 Meter eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/tamiko/fabric))
+- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/tamiko/fabric))
 

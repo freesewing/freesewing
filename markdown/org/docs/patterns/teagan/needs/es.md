@@ -1,7 +1,7 @@
 
 Para hacer Teagan, necesitarás lo siguiente:
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- Aproximadamente 1 metro de un tejido adecuado ([ver opciones de tela](/docs/patterns/teagan/fabric))
+- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/teagan/fabric))
 
 <!--- This link isn't a thing yet, but it follows the site nomenclature, so it should work when everything's up? --->
 

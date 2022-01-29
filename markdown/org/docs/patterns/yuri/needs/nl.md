@@ -2,7 +2,7 @@
 Om Yuri te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- Ongeveer 2.5 m geschikte stof ([zie Optionele stoffen](/docs/patterns/yuri/fabric))
+- About 2.5 meters (2.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/yuri/fabric))
 - 2 grote knoppen
 
 <Note>
