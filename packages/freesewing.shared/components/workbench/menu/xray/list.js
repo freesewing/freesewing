@@ -1,5 +1,6 @@
 import { Chevron } from 'shared/components/navigation/primary.js'
 import ClearIcon from 'shared/components/icons/clear.js'
+import SearchIcon from 'shared/components/icons/search.js'
 import { Ul, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu'
 import Path from './path.js'
 import Point from './point.js'
@@ -59,6 +60,24 @@ const XrayList = props => {
                               <Deg />
                               <span>{id}</span>
                             </SumDiv>
+                            <button
+                              className={`px-3 hover:text-secondary-focus"
+                                ${props.gist.xray.reveal[props.partName][type][id]
+                                  ? 'text-accent'
+                                  : 'text-secondary'
+                                }`}
+                              onClick={props.gist.xray.reveal[props.partName][type][id]
+                                ? () => props.unsetGist(
+                                  ['xray', 'reveal', props.partName, type, id]
+                                )
+                                : () => props.updateGist(
+                                  ['xray', 'reveal', props.partName, type, id],
+                                  id
+                                )
+                              }
+                            >
+                              <SearchIcon />
+                            </button>
                             <button
                               className="text-accent px-3 hover:text-secondary-focus"
                               onClick={() => props.unsetGist(['xray', 'parts', props.partName, type, id])}

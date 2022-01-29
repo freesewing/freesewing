@@ -1,5 +1,4 @@
 import { Ul, Li, Details, Summary, NoSumDiv, Deg } from 'shared/components/workbench/menu'
-import ClearIcon from 'shared/components/icons/clear.js'
 import Attributes from './attributes.js'
 import Ops from './path-ops.js'
 /*
