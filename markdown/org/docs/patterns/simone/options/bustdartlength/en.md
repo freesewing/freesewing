@@ -1,11 +1,8 @@
----
----
 
-<Fixme>
+Controls how close the bust dart approaches the bust point.
 
-Document this option
-
-</Fixme>
+- Increase this option to lengthen the bust dart moving it closer to the bust point
+- Decrease this option to shorten the bust dart moving it further away from the bust point
 
 
 ## Effect of this option on the pattern
