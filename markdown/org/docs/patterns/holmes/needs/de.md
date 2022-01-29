@@ -5,10 +5,10 @@ title: Holmes Was du brauchst
 Um Holmes zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 0,5 Meter eines geeigneten Stoffes ([siehe Optionen für Holmes Stoffe](/docs/patterns/holmes/fabric/))
-- Etwa 0,5 Meter Futter ([siehe Optionen für Holmes Stoff](/docs/patterns/holmes/fabric/))
+- About 0.5 metres (0.6 yards) of a suitable fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
+- About 0.5 metres (0.6 yards) of lining fabric ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
 - A rigid material for the bill insert ([see Holmes Fabric options](/docs/patterns/holmes/fabric/))
-- (Optional) Über 1.0 Meter von 1" (2.5cm) Kreuzkornband oder Petersham.
+- (Optional) About 1 metre of 1" (2.5cm) crossgrain ribbon or petersham.
 - (Optional) 1 abgedeckter Button über 3/4" (2cm) - 7/8" (2.2cm)
 
 <Note>
