@@ -1,7 +1,7 @@
 Pour fabriquer Sven, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Environ 1.75 m d'un tissu adapté ([voir Options de tissu](#fabric-options))
+- About 1.75 meters (1.9 yards) of a suitable fabric ([see Fabric options](#fabric-options))
 - Tissu de bordure pour les poignets et l'encolure
 
 <Note>
