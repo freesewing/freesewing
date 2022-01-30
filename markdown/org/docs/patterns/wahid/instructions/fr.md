@@ -97,7 +97,7 @@ Placez votre pièce devant avec l'endroit vers le haut. Nous allons fixer le pas
 
 Tant votre passepoil de poche que votre parement de poche ont une ligne d'aide. Cette ligne doit être alignée sur les bords longs de votre poche.
 
-Placez la poche vers le bas et la poche vers le haut, les deux avec leur bon côté vers le bas.
+Placez le passepoil de poche vers le bas et le parement de poche vers le haut, les deux avec le côté endroit vers le bas.
 
 Alignez soigneusement leur ligne d'aide sur le contour de la poche. Ils devraient maintenant s’asseoir côte à côte et s’enfoncer les uns dans les autres au milieu de votre poche.
 
