@@ -201,74 +201,74 @@ Alignez les coutures des épaules, cousez-les et repassez pour ouvrir la marge d
 
 ![Faire glisser la doublure dans la ceinture](09a.png)
 
-Placez votre doublure dans votre manteau de taille, de bons côtés ensemble. En d'autres termes, le manteau de taille devrait avoir le bon côté et le mauvais côté à l'extérieur. La doublure devrait avoir le mauvais côté et le bon côté.
+Placez votre doublure dans votre giler, endroit contre endroit. En d'autres termes, le gilet devrait avoir le côté endroit à l'intérieur et le côté envers à l'extérieur. La doublure devrait avoir le côté envers à l'intérieur et le côté endroit vers l'extérieur.
 
 #### Épingler la doublure sur le tissu
 
 ![Épingler le lin sur le tissu](09b.png)
 
-Alignez la doublure avec le bord du tissu, puis fixez-la en place.
+Alignez la doublure avec le bord du tissu, puis épinglez-la en place.
 
-Commencez au centre de l'arrière et suivez le coude vers le bas de la fermeture avant. Faites le tour de l'ourlet, mais laissez un écart de 15 cm au centre de l'arrière.
+Commencez au centre de l'arrière et suivez l'encolure jusqu'à l'ouverture du devant. Faites le tour de l'ourlet, mais laissez un écart de 15 cm environ au centre du dos.
 
-#### Coudre la doublure en tissu
+#### Coudre la doublure au tissu
 
 ![Coudre le lin en tissu](09c.png)
 
 Avec votre doublure épinglée bien en place, coudre la doublure et le tissu ensemble.
 
-N'oubliez pas de laisser cet écart de 15 cm au centre de l'arrière.
+N'oubliez pas de laisser cet écart de 15 cm au centre du dos.
 
-#### Tournez la ceinture et appuyez sur les bords
+#### Retourner le gilet et repasser les coutures
 
 ![Tournez la ceinture et appuyez sur le bord](09d.png)
 
-Atteignez l’écart que vous avez laissé ouvert à l’ourlet et tournez votre manteau de taille.
+Passez la main par l’écart que vous avez laissé ouvert à l’ourlet et retournez votre gilet.
 
-Appuyez sur les bords que vous venez de coudre, assurez-vous de rouler un peu le tissu afin que la doublure soit toujours cachée.
+Repassez les bords que vous venez de coudre, assurez-vous de rouler un peu le tissu afin que la doublure soit toujours cachée.
 
-### Étape 10 : Terminer les armures
+### Étape 10 : Terminer les emmanchures
 
-#### Épingler la marge de couture en tissu
+#### Épingler la marge de couture du tissu
 
 ![Épingler la marge de couture en tissu](10a.png)
 
-Tout au long de l'embouteillage, enfoncez la couture du tissu de votre ceinture. Tout en agissant de la sorte, gardez votre maquillage hors d'atteinte.
+Tout au long de l'emmanchure, épinglez la marge de couture du tissu de votre gilet. Tout le long de cette manoeuvre, veillez à maintenir la doublure hors d'atteinte.
 
-#### Épingler la ligne vers le bas
+#### Épingler la doublure
 
 ![Épingler la ligne vers le bas](10b.png)
 
-Maintenant, pliez votre doublure un peu avant le bord de l'armure et enfoncez-la.
+Maintenant, pliez votre doublure un peu en retrait du bord de l'emmanchure et épinglez-la.
 
 #### Coudre la doublure à la main sur le tissu
 
 ![Coudre à la main la doublure de la farbrique](10c.png)
 
-Utilisez un point de couture pour coudre à la main la doublure sur le tissu le long de l'armure.
+Utilisez un point de couture glissée pour coudre à la main la doublure sur le tissu le long de l'emmanchure.
 
 ### Étape 11 : Terminer l'ourlet
-Rappelez-vous que nous n'avons pas comblé cette lacune à l'étape 9? Il est temps de le fermer.
+Vous vous souvenez que nous n'avons pas fermé l'ouverture laissée à l'étape 9 ? Il est temps de la fermer.
 
-Utilisez un point de couture pour coudre à la main la doublure sur le tissu et refermez l'ourlet.
+Utilisez un point de couture glissée pour coudre à la main la doublure sur le tissu et ainsi fermer l'ouverture.
 
-### Étape 12: Faire les trous de boutons
+### Étape 12: Faire les boutonnières
 
 ![Faire les trous de boutons](12a.png)
 
-Si vous ne l'avez pas encore fait, transférez le bouton de votre patron sur votre tissu.
+Si vous ne l'avez pas encore fait, transférez le placement des boutonnières de votre patron sur votre tissu.
 
-Fais ces boutontrous.
+Faites ces boutonnières.
 
-### Étape 13: Attacher les boutons
+### Étape 13: Coudre les boutons
 
 ![Joindre les boutons](13a.png)
 
-Épinglez votre manteau de taille fermé et transférez l'emplacement de vos trous de boutons sur le côté du bouton.
+Épinglez votre gilet fermé et transférez l'emplacement de vos trous de boutonnières sur le côté des boutons.
 
-Coudre sur ces boutons.
+Coudre ces boutons.
 
-> Vous pouvez également transférer l'emplacement des boutons à partir du modèle. Cependant, le transfert des trous de boutons que vous venez de faire vous assure que les boutons et les trous de boutons s'alignent, même si votre ou vos boutonnier(s) sont un peu éteints.
+> Vous pouvez également transférer l'emplacement des boutons à partir du patron. Cependant, le transfert des trous de boutons que vous venez de faire vous assure que les boutons et les boutonnières s'alignent, même si votre ou vos boutonnier(s) sont un peu décalés.
 
 ### Étape 14: Optionnel: Coller les bords
 
