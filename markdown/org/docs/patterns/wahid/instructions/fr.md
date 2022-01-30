@@ -153,33 +153,33 @@ Placez votre devant avec le côté endroit vers le haut et assurez-vous que le p
 
 Repliez le devant verticalement au bord de votre poche pour révéler ce petit triangle sur le côté court de votre ouverture.
 
-Coudre ce triangle en cousant à droite du pli, et le bord de la poche.
+Cousez ce triangle en cousant tout près du pli, et du bord de la poche.
 
-#### Fermer le sac de poche
+#### Fermer le fond de poche
 
 ![Fermer le sac de poche](05l.png)
 
-Coudre votre poche face au sac de poche pour finir votre poche.
+Cousez votre parement de poche au fond de poche pour finir votre poche.
 
-> Cela devrait aller de soi, mais attention à ne pas coudre votre sac de poche à l'avant de la ceinture.
+> Cela devrait aller de soi, mais attention à ne pas coudre votre fond de poche au devant de votre gilet.
 
-#### Appuyez sur votre poche terminée
+#### Repasser votre poche terminée
 
 ![Appuyez sur votre poche terminée](05m.png)
 
-Lorsque vous avez terminé, donnez à votre poche une bonne pression finale.
+Lorsque vous avez terminé, donnez à votre poche un bon coup de repassage final.
 
-### Etape 6: Centrer la couture du dos
+### Etape 6: Couture centrale du dos
 
 ![Coudre et appuyer sur la couture centrale](06a.png)
 
-Placez vos deux pièces de dos avec leur bon côté et cousez la couture centrale de l'arrière.
+Placez vos deux pièces de dos endroit contre endroit et cousez la couture centrale du dos.
 
-Lorsque vous avez terminé, appuyez sur ouvrir cette couture.
+Lorsque vous avez terminé, repassez pour ouvrir cette couture.
 
 > N'oubliez pas de faire la même chose pour la doublure
 
-### Étape 7 : Rejoignez les devants
+### Étape 7 : Joindre le dos aux devants
 
 ![Rejoindre les devants](07a.png)
 
