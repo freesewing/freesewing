@@ -79,7 +79,7 @@ Lorsque vous avez terminé, repassez sur cette couture avec les marges ouvertes.
 
 ![Marquer où votre poche doit aller](05a.png)
 
-Votre pièce de patron avant possède une ligne d'aide pour montrer où le passepoil de poche doit aller. Il s'agit de deux demi-rectangles réunis lors de la couture de la pince pour créer la forme de votre passepoil de poche.
+Votre pièce de patron avant possède une ligne d'aide pour montrer où doit être placée la poche passepoilée. Il s'agit de deux demi-rectangles réunis lors de la couture de la pince pour créer la forme de votre poche passepoilée.
 
 Si vous n'avez pas encore marqué les quatre coins de ce rectange, vous devriez le faire maintenant.
 
@@ -93,9 +93,9 @@ Placez votre pièce devant avec l'endroit vers le haut. Nous allons fixer le pas
 
 > Si vous n'avez jamais fait de poche passepoilée auparavant, cela peut paraître un peu contre-intuitif d'attacher la poche à l'extérieur du vêtement. La poche devrait être à l'intérieur, non ?
 > 
-> Détendez-vous, la poche se retrouvera à l'intérieur
+> Détendez-vous, la poche se retrouvera bien à l'intérieur
 
-Tant votre poche que votre poche orientée ont une ligne d'aide sur elles. Cette ligne doit être alignée sur les bords longs de votre poche.
+Tant votre passepoil de poche que votre parement de poche ont une ligne d'aide. Cette ligne doit être alignée sur les bords longs de votre poche.
 
 Placez la poche vers le bas et la poche vers le haut, les deux avec leur bon côté vers le bas.
 
