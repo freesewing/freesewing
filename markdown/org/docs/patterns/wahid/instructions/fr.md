@@ -183,21 +183,21 @@ Lorsque vous avez terminé, repassez pour ouvrir cette couture.
 
 ![Rejoindre les devants](07a.png)
 
-Montez le dos avec le bon côté vers le haut et mettez vos devants sur le bon côté vers le bas. Alignez les coutures latérales, la broche et la couture.
+Posez votre dos avec le côté endroit vers le haut et posez vos devants dessus avec leur côté endroit vers le bas (endroit contre endroit donc). Alignez les coutures latérales, épinglez et cousez.
 
-Lorsque vous avez terminé, appuyez sur ouvrir ces coutures.
+Lorsque vous avez terminé, Repassez pour ouvrir ces coutures.
 
-### Étape 8: Rejoignez les épaules
+### Étape 8: Joindre les épaules
 
 ![Rejoignez les épaules](08a.png)
 
-Alignez les coutures des épaules, coupez-les et appuyez sur ouvrir la marge de couture.
+Alignez les coutures des épaules, cousez-les et repassez pour ouvrir la marge de couture.
 
 > N'oubliez pas de faire la même chose pour la doublure
 
 ### Étape 9 : Insérez la ligne
 
-#### Faire glisser la doublure dans le wasitcoat
+#### Faire glisser la doublure dans le gilet
 
 ![Faire glisser la doublure dans la ceinture](09a.png)
 
