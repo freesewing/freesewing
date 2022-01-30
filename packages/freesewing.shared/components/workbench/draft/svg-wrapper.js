@@ -29,7 +29,10 @@ const SvgWrapper = props => {
   const { patternProps, gist, app, updateGist, unsetGist } = props
 
   return <SizeMe>{({ size }) => (
-    <TransformWrapper>
+    <TransformWrapper
+      minScale={0.1}
+      centerZoomedOut={true}
+    >
       <TransformComponent>
         <div style={{ width: size.width+'px', }}>
           <Svg {...patternProps} embed={gist.embed}>

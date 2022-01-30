@@ -194,22 +194,26 @@ module.exports = {
   // Color for noting things on a pattern
   '--pattern-note': colors.violet['500'],
 
-  // Color 0 in develop mode
-  '--pattern-dev-0': colors.red['500'],
-  // Color 1 in develop mode
-  '--pattern-dev-1': colors.green['500'],
-  // Color 2 in develop mode
-  '--pattern-dev-2': colors.blue['500'],
-  // Color 3 in develop mode
-  '--pattern-dev-3': colors.yellow['500'],
-  // Color 4 in develop mode
-  '--pattern-dev-4': colors.pink['500'],
-  // Color 5 in develop mode
-  '--pattern-dev-5': colors.violet['500'],
-  // Color 6 in develop mode
-  '--pattern-dev-6': colors.teal['500'],
-  // Color 7 in develop mode
-  '--pattern-dev-7': colors.neutral['500'],
+  // Color 0 in xray reveals
+  '--pattern-color-0': colors.red['500'],
+  // Color 1 in xray reveals
+  '--pattern-color-1': colors.green['500'],
+  // Color 2 in xray reveals
+  '--pattern-color-2': colors.blue['500'],
+  // Color 3 in xray reveals
+  '--pattern-color-3': colors.yellow['500'],
+  // Color 4 in xray reveals
+  '--pattern-color-4': colors.pink['500'],
+  // Color 5 in xray reveals
+  '--pattern-color-5': colors.violet['500'],
+  // Color 6 in xray reveals
+  '--pattern-color-6': colors.teal['500'],
+  // Color 7 in xray reveals
+  '--pattern-color-7': colors.amber['500'],
+  // Color 8 in xray reveals
+  '--pattern-color-8': colors.fuchsia['500'],
+  // Color 9 in xray reveals
+  '--pattern-color-9': colors.cyan['500'],
 
   // Pattern xs text size
   '--pattern-text-xs': '0.2rem',

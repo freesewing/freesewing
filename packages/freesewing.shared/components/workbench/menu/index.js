@@ -5,7 +5,11 @@ import CoreSettings from './core-settings'
 import Xray from './xray'
 
 export const Ul = props => <ul className="pl-5 list-inside">{props.children}</ul>
-export const Li = props => <li className="flex flex-row">{props.children}</li>
+export const Li = props => (
+  <li className="flex flex-row hover:border-r-2 hover:border-r-secondary">
+    {props.children}
+  </li>
+)
 export const Details = props => (
   <details className="grow" open={props.open || false}>
     {props.children}
