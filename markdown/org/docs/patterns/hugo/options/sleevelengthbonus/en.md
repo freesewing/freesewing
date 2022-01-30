@@ -1,6 +1,5 @@
-![The sleeve length bonus option on Brian](./sleevelengthbonus.svg)
 
-This option controls how to lengthen the sleeves.
+This option controls how long to lengthen the sleeves by.
 
 
 ## Effect of this option on the pattern

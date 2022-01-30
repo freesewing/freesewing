@@ -1,11 +1,8 @@
----
----
 
-<Fixme>
+How deep you would like the inner pocket to be.
 
-Document this option
-
-</Fixme>
+- Increase this option to make a deeper inner pocket
+- Decrease this option to make a shallower inner pocket
 
 
 ## Effect of this option on the pattern
