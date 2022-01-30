@@ -1,11 +1,8 @@
----
----
 
-<Fixme>
+How much the tip of the lapels turns inwards.
 
-Document this option
-
-</Fixme>
+- Increase this option to shift the lapel tip inward
+- Decrease this option to shift the lapel tip outward
 
 
 ## Effect of this option on the pattern
