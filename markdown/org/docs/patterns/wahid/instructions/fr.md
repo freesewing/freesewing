@@ -270,15 +270,15 @@ Coudre ces boutons.
 
 > Vous pouvez également transférer l'emplacement des boutons à partir du patron. Cependant, le transfert des trous de boutons que vous venez de faire vous assure que les boutons et les boutonnières s'alignent, même si votre ou vos boutonnier(s) sont un peu décalés.
 
-### Étape 14: Optionnel: Coller les bords
+### Étape 14: Optionnel : Surpiquer les bords
 
 ![Vous pouvez éventuellement piocher les bords de votre coque de taille](14a.png)
 
-Si vous le souhaitez, vous pouvez piocher autour des bords de votre manteau de taille.
+Si vous le souhaitez, vous pouvez faire une surpiqure (nommée couture AMF) sur les bords de votre gilet.
 
-Le piquage doit être fait à la main. Vous courez un simple point à quelques mm des bords de votre manteau de taille, mais ne laissez vos points de surface que pour quelques fils. Vous l'avez certainement vu comme une finale sur des vestes en costume.
+La couture AMF doit être faite à la main. Vous faites un simple point droit à quelques mm des bords de votre gilet, mais en laissant le fil du dessus plus court. Vous l'avez certainement vu comme finition sur des vestes de costume.
 
-> Vous pouvez piocher avec un fil de la même couleur ou utiliser une couleur contrastante si vous vous sentez audacieux.
+> Vous pouvez faire la couture avec un fil de la même couleur ou utiliser une couleur contrastante si vous vous sentez audacieux.
 
 > Bien que le piquage ajoute un aspect distinctif, il enroule également votre tissu dans votre garniture/face ce qui empêche les choses de se déplacer.
 
