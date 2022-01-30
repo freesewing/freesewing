@@ -119,15 +119,15 @@ Aux bords de votre poche, vous devez arrêter d'ouvrir le centre un peu avant et
 
 ![Appuyez sur ouvrir la marge de couture](05c.png)
 
-Appuyez sur ouvrir la marge de couture le long des bords longs de votre poche.
+Repassez pour ouvrir la marge de couture le long des bords longs de votre poche.
 
-#### Apportez la poche face à l'arrière et appuyez sur
+#### Retourner le parement de poche vers l'arrière et repasser
 
 ![Apportez la poche face à l'arrière et appuyez sur](05g.png)
 
-Retournez la poche face à l'arrière et appuyez dessus.
+Retournez le parement de poche vers l'arrière et repassez.
 
-#### Appuyez sur les triangles sur les côtés courts
+#### Repasser les triangles sur les côtés courts
 
 ![Appuyez sur les triangles sur les côtés courts](05h.png)
 
