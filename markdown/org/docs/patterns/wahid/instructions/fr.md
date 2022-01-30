@@ -99,23 +99,23 @@ Tant votre passepoil de poche que votre parement de poche ont une ligne d'aide. 
 
 Placez le passepoil de poche vers le bas et le parement de poche vers le haut, les deux avec le côté endroit vers le bas.
 
-Alignez soigneusement leur ligne d'aide sur le contour de la poche. Ils devraient maintenant s’asseoir côte à côte et s’enfoncer les uns dans les autres au milieu de votre poche.
+Alignez soigneusement leur ligne d'aide sur le contour de la poche. Ils devraient maintenant se placer côte à côte et juste se superposer au milieu de votre poche.
 
-Maintenant coudre le long de la ligne d’assistance qui marque le bord long de votre poche.
+Cousez maintenant le long de la ligne d’aide qui marque le bord long de votre poche.
 
-> Il est important que les lignes que vous coudez forment maintenant les bords longs d'un rectangle parfait. Cela déterminera la forme de votre poche, donc si vous faites une ligne plus longue que l'autre, ou s'ils ne sont pas parallèles ou mal alignés, votre poche sera mauvaise.
+> Il est important que les lignes que vous cousez forment maintenant les bords longs d'un rectangle parfait. Cela déterminera la forme de votre poche, donc si vous faites une ligne plus longue que l'autre, ou si elles ne sont pas parallèles ou mal alignées, votre poche aura mauvaise allure.
 
-#### Couper la poche
+#### Couper et ouvrir la poche
 
 ![Couper la poche](05c.png)
 
 Il est temps de couper soigneusement la poche. Commencez au milieu de la poche et coupez le long des bords les plus longs vers le côté.
 
-Aux bords de votre poche, vous devez arrêter d'ouvrir le centre et au lieu de couper vers la fin de votre ligne de points de moins de 45 degrés.
+Aux bords de votre poche, vous devez arrêter d'ouvrir le centre un peu avant et coupez plutôt à un angle de 45 degrés jusqu'à chaque bout des coutures.
 
-> Ce petit triangle que vous coupez à la fin est important. Assurez-vous de bien cibler car vous devriez couper jusqu'à l'extrémité de vos points sans les couper.
+> Ce petit triangle que vous coupez à la fin est important. Assurez-vous de bien couper jusqu'à l'extrémité de vos points, sans les couper.
 
-#### Appuyez sur ouvrir la marge de couture
+#### Repasser pour ouvrir la marge de couture
 
 ![Appuyez sur ouvrir la marge de couture](05c.png)
 
