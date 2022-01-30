@@ -1,10 +1,8 @@
 
-![Aisance des épaules](./shoulderease.svg)
+Controls the amount of ease on the shoulder to shoulder measurement.
 
-Contrôle l'aisance sur la mesure épaule à épaule.
-
-Cette option vous permet de créer une aisance supplémentaire entre les épaules, ce qui déplace la couture d'épaule vers l'extérieur et vers l'épaule. Ceci permet de créer de l'aisance si l'on veut porter un autre vêtement en dessous, ou si on prévoit des épaules rembourrées sur le modèle.
+This option allows you to create some extra ease at the shoulders which shifts the shoulder seam more outwards and off the shoulder. Thereby creating extra room for extra layers of clothing underneath, or more shaped/padded shoulders.
 
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_shoulderease_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_shoulderease_sample.svg "Effect of this option on the pattern")
