@@ -14,7 +14,7 @@
   "homepage": "https://freesewing.org/",
   "license": "MIT",
   "scripts": {
-    "kickstart": "npx lerna bootstrap && npm run buildall",
+    "kickstart": "npx lerna bootstrap && yarn buildall",
     "clean": "rimraf dist",
     "test": "lerna run test",
     "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/**/example/src/*' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.js'",
@@ -50,22 +50,30 @@
     "@babel/plugin-external-helpers": "^7.12.13",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.5",
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
+    "@fontsource/permanent-marker": "latest",
+    "@fontsource/roboto-mono": "latest",
+    "@fontsource/ubuntu": "latest",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.6",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@svgr/rollup": "^6.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^14.0.0",
+    "@types/react": "^17.0.38",
     "all-contributors-cli": "^6.20.0",
     "ava": "^4.0.1",
-    "axios": "0.21.2",
+    "axios": "^0.25.0",
     "babel-loader": "^8.1.0",
     "bezier-js": "^6.1.0",
     "chai": "^4.2.0",
@@ -107,13 +115,14 @@
     "tlds": "^1.221.1",
     "typeface-raleway": "^1.1.13",
     "typeface-roboto-condensed": "^1.1.13",
-    "uglifycss": "^0.0.29"
+    "typescript": "^4.5.5",
+    "uglifycss": "^0.0.29",
+    "webpack": "^5.67.0",
+    "yaml": "^1.10.2"
   },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "version": "0.0.0",
   "dependencies": {
     "autoprefixer": "^10.4.0",
