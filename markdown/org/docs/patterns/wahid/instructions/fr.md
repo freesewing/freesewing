@@ -131,27 +131,27 @@ Retournez le parement de poche vers l'arrière et repassez.
 
 ![Appuyez sur les triangles sur les côtés courts](05h.png)
 
-Déplacez votre poche vers le haut pour révéler ces petits traingles sur le côté de votre poche.
+Déplacez votre parement de poche vers le haut pour révéler ces petits traingles sur le côté de votre poche.
 
-Repliez-les en vous assurant de garder votre poche en ouvrant un rectangle propre, puis enfoncez-les.
+Repliez-les en vous assurant de garder votre poche en ouvrant un rectangle propre, puis repassez-les.
 
-#### Amenez la poche à l'arrière, le pli et appuyez sur
+#### Retourner le passepoil/rabet vers l'arrière, le plier et le repasser
 
 ![Amenez la poche à l'avant, le pliage et appuyez sur](05i.png) ![Amenez la poche à l'avant, le pliage et appuyez sur](05j.png)
 
-Retournez la poche avec le dos de la poche attachée sur le côté arrière.
+Retournez le passepoil de poche avec la poche attachée vers le côté arrière.
 
-Pliez votre welt au point où il atteint le sommet de la poche. La soude doit couvrir la totalité de l'ouverture de poche.
+Pliez votre passepoil au point où il atteint le sommet de la poche. Le passepoil doit couvrir la totalité de l'ouverture de poche.
 
-> L'illustration le montre depuis le dos car il est plus facile de voir ce qui se passe de cette façon. Cependant, vous devriez vérifier à l'avant pour vous assurer que votre poche de soudure est bonne.
+> L'illustration le montre depuis le dos car il est plus facile de voir ce qui se passe de cette façon. Cependant, vous devriez vérifier à l'avant pour vous assurer que votre passepoil de poche est bien placé.
 
 #### Coudre les triangles de poche
 
 ![Coudre les triangles de poche](05k.png)
 
-Placez votre devant avec le bon côté vers le haut et assurez-vous que la poche orientée et soudée repose à plat.
+Placez votre devant avec le côté endroit vers le haut et assurez-vous que le parement et le passepoil de poche soient bien à plat.
 
-Pliez le devant verticalement au bord de votre poche pour révéler ce petit triangle sur le côté court de votre ouverture.
+Repliez le devant verticalement au bord de votre poche pour révéler ce petit triangle sur le côté court de votre ouverture.
 
 Coudre ce triangle en cousant à droite du pli, et le bord de la poche.
 
