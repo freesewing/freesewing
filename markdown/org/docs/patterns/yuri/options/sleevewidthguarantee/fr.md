@@ -9,4 +9,4 @@ Mais pour éviter que la manche ne devienne trop étroite, on n'adapte la largeu
 
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_sleevewidthguarantee_sample.svg "Effet de cette option sur le motif")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](yuri_sleevewidthguarantee_sample.svg "Effet de cette option sur le motif")
