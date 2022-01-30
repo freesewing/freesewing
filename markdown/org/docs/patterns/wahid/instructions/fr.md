@@ -89,9 +89,9 @@ Si vous n'avez pas encore marqué les quatre coins de ce rectange, vous devriez 
 
 ![Fixer la pochette et la poche face](05c.png) ![Fixer la pochette et la poche face](05d.png)
 
-Placez votre pièce devant avec l'endroit vers le haut. Nous allons attacher la soudure à la ligne inférieure de votre contour de poche et à la ligne de face vers le haut.
+Placez votre pièce devant avec l'endroit vers le haut. Nous allons fixer le passepoil à la ligne inférieure de votre contour de poche et le parement à la ligne du haut.
 
-> Si vous n'avez jamais fait de poche de soudure auparavant, il peut être un peu contre-intuitif d'attacher la poche à l'extérieur du vêtement. La poche devrait être à l'intérieur, non ?
+> Si vous n'avez jamais fait de poche passepoilée auparavant, cela peut paraître un peu contre-intuitif d'attacher la poche à l'extérieur du vêtement. La poche devrait être à l'intérieur, non ?
 > 
 > Détendez-vous, la poche se retrouvera à l'intérieur
 
