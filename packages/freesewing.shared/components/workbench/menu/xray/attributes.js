@@ -2,7 +2,7 @@ import { Chevron } from 'shared/components/navigation/primary.js'
 import { Ul, Li, Details, Summary, SumDiv, NoSumDiv, Deg } from 'shared/components/workbench/menu'
 import { round } from 'shared/utils.js'
 
-const XrayAttributes = ({ attr=false }) => {
+const XrayAttributes = ({ attr=false, t }) => {
   if (!attr || !attr.list || Object.keys(attr.list).length < 1) return null
 
   return (
@@ -17,7 +17,7 @@ const XrayAttributes = ({ attr=false }) => {
         </Summary>
         <Ul>
           {Object.keys(attr.list).map(at => (
-          <Li>
+          <Li key={at}>
             <Details>
               <Summary>
                 <SumDiv>
@@ -31,7 +31,10 @@ const XrayAttributes = ({ attr=false }) => {
                   <Li key={val}>
                     <NoSumDiv>
                       <Deg />
-                      <span>{val}</span>
+                      <span>{val === true
+                        ? t('app.yes')
+                        : val
+                      }</span>
                     </NoSumDiv>
                   </Li>
                 ))}

@@ -6,10 +6,10 @@ const XrayPath = props => (
     <path
       d={props.path.asPathstring()}
       {...getProps(props.path)}
-      className="opacity-0 stroke-4xl stroke-contrast hover:opacity-25 hover:cursor-pointer"
+      className="opacity-0 stroke-3xl stroke-contrast hover:opacity-25 hover:cursor-pointer"
       onClick={() => props.updateGist(
         ['xray', 'parts', props.partName, 'paths', props.pathName],
-        props.path
+        1
       )}
     />
   </g>

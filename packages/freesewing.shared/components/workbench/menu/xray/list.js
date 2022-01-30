@@ -107,8 +107,19 @@ const XrayList = props => {
                             </button>
                             <Chevron />
                           </Summary>
-                          {type === 'paths' && <Path path={part.paths[id]} />}
-                          {type === 'points' && <Point point={part.points[id]} />}
+                          {type === 'paths' && <Path
+                            pathName={id}
+                            partName={props.partName}
+                            draft={props.draft}
+                            t={props.app.t}
+                            units={props.gist.units}
+                          />}
+                          {type === 'points' && <Point
+                            pointName={id}
+                            partName={props.partName}
+                            draft={props.draft}
+                            t={props.app.t}
+                          />}
                         </Details>
                       </Li>
                     ))

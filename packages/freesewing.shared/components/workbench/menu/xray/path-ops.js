@@ -61,7 +61,7 @@ const XrayPathOps = ({ ops=false }) => {
         <Summary>
           <SumDiv>
             <Deg />
-            PathOps
+            <span className="font-bold">path.ops</span>
           </SumDiv>
           <Chevron />
         </Summary>

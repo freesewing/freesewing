@@ -7,7 +7,7 @@ const Error = props => (
       <h1>{props.app.t('errors.something')}</h1>
       <div className="max-w-96"><Robot pose='fail' embed/></div>
     </div>
-    <Events events={props.patternInstance.events} />
+    <Events events={props.draft.events} />
   </div>
 )
 

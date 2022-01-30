@@ -41,7 +41,7 @@ const Part = props => {
       {props.gist?.xray?.reveal?.[partName] && <XrayPart {...props} />}
       {Object.keys(part.paths).map((pathName) => (
         <Path
-          key={name}
+          key={pathName}
           pathName={pathName}
           path={part.paths[pathName]}
           topLeft={props.part.topLeft}
@@ -49,11 +49,11 @@ const Part = props => {
           {...props}
         />
       ))}
-      {Object.keys(props.part.points).map((name) => (
+      {Object.keys(props.part.points).map((pointName) => (
         <Point
-          key={name}
-          pointName={name}
-          point={props.part.points[name]}
+          key={pointName}
+          pointName={pointName}
+          point={props.part.points[pointName]}
           topLeft={props.part.topLeft}
           bottomRight={props.part.bottomRight}
           {...props}
@@ -61,7 +61,7 @@ const Part = props => {
       ))}
       {Object.keys(props.part.snippets).map((snippetName) => (
         <Snippet
-          key={name}
+          key={snippetName}
           snippetName={snippetName}
           snippet={props.part.snippets[snippetName]}
           {...props}

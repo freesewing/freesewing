@@ -7,6 +7,8 @@ import LabDraft from 'shared/components/workbench/draft/index.js'
 import set from 'lodash.set'
 import unset from 'lodash.unset'
 import defaultSettings from 'shared/components/workbench/default-settings.js'
+import DraftError from 'shared/components/workbench/draft/error.js'
+import theme from 'pkgs/plugin-theme/src/index.js'
 
 
 // Generates a default pattern gist to start from
@@ -66,6 +68,18 @@ const WorkbenchWrapper = ({ app, pattern }) => {
     setGist(newGist)
   }
 
+  // Generate the draft here so we can pass it to both Menu
+  // and LabDraft
+  let draft = false
+  if (mode === 'draft') {
+    draft = new pattern(gist)
+    if (gist?.renderer === 'svg') patternInstance.use(theme)
+    try { draft.draft() }
+    catch(error) {
+      console.log('Failed to draft pattern', error)
+      return <DraftError error={error} app={app} draft={draft} at={'draft'} />
+    }
+  }
 
   // Required props for layout
   const layoutProps = {
@@ -81,8 +95,11 @@ const WorkbenchWrapper = ({ app, pattern }) => {
       updateGist={updateGist}
       unsetGist={unsetGist}
       setGist={setGist}
+      draft={draft}
     />
   }
+
+
 
   return (
     <Layout {...layoutProps}>
@@ -98,8 +115,10 @@ const WorkbenchWrapper = ({ app, pattern }) => {
         <LabDraft
           app={app}
           pattern={pattern}
+          draft={draft}
           gist={gist}
           updateGist={updateGist}
+          unsetGist={unsetGist}
         />
       )}
     </Layout>
