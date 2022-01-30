@@ -280,6 +280,6 @@ La couture AMF doit être faite à la main. Vous faites un simple point droit à
 
 > Vous pouvez faire la couture avec un fil de la même couleur ou utiliser une couleur contrastante si vous vous sentez audacieux.
 
-> Bien que le piquage ajoute un aspect distinctif, il enroule également votre tissu dans votre garniture/face ce qui empêche les choses de se déplacer.
+> Bien que la couture AMF ajoute un aspect esthétique, il permet également de maintenir votre tissu à votre doublure/parementure ; ce qui les empêche de se décaler par la suite.
 
-Après cela, vous voudrez probablement repasser votre manteau de taille.
+Après cela, vous voudrez probablement repasser votre gilet.
