@@ -83,13 +83,13 @@ Votre pièce de patron avant possède une ligne d'aide pour montrer où le passe
 
 Si vous n'avez pas encore marqué les quatre coins de ce rectange, vous devriez le faire maintenant.
 
-> La poche est assise sous un léger angle sur votre patron. En avançant, dans les illustrations, je vais dessiner la poche droite car cela facilite les choses.
+> La poche est placée avec un léger angle sur votre patron. En avançant, dans les illustrations, je vais dessiner la poche droite car cela facilite les choses.
 
-#### Fixer la pochette et la poche face
+#### Fixer le passepoil et le parement de poche
 
 ![Fixer la pochette et la poche face](05c.png) ![Fixer la pochette et la poche face](05d.png)
 
-Placez votre pièce avant vers le bas avec le bon côté vers le haut. Nous allons attacher la soudure à la ligne inférieure de votre contour de poche et à la ligne de face vers le haut.
+Placez votre pièce devant avec l'endroit vers le haut. Nous allons attacher la soudure à la ligne inférieure de votre contour de poche et à la ligne de face vers le haut.
 
 > Si vous n'avez jamais fait de poche de soudure auparavant, il peut être un peu contre-intuitif d'attacher la poche à l'extérieur du vêtement. La poche devrait être à l'intérieur, non ?
 > 
