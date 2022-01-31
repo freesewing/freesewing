@@ -135,9 +135,9 @@ Déplacez votre parement de poche vers le haut pour révéler ces petits traingl
 
 Repliez-les en vous assurant de garder votre poche en ouvrant un rectangle propre, puis repassez-les.
 
-#### Retourner le passepoil/rabet vers l'arrière, le plier et le repasser
+#### Retourner le passepoil/rabat vers l'arrière, le plier et le repasser
 
-![Amenez la poche à l'avant, le pliage et appuyez sur](05i.png) ![Amenez la poche à l'avant, le pliage et appuyez sur](05j.png)
+![Retourner le passepoil/rabat vers l'avant, le plier et le repasser](05i.png) ![Retourner le passepoil/rabat vers l'avant, le plier et le repasser](05j.png)
 
 Retournez le passepoil de poche avec la poche attachée vers le côté arrière.
 
@@ -157,7 +157,7 @@ Cousez ce triangle en cousant tout près du pli, et du bord de la poche.
 
 #### Fermer le fond de poche
 
-![Fermer le sac de poche](05l.png)
+![Fermer le fond de poche](05l.png)
 
 Cousez votre parement de poche au fond de poche pour finir votre poche.
 
@@ -165,13 +165,13 @@ Cousez votre parement de poche au fond de poche pour finir votre poche.
 
 #### Repasser votre poche terminée
 
-![Appuyez sur votre poche terminée](05m.png)
+![Repasser votre poche terminée](05m.png)
 
 Lorsque vous avez terminé, donnez à votre poche un bon coup de repassage final.
 
 ### Etape 6: Couture centrale du dos
 
-![Coudre et appuyer sur la couture centrale](06a.png)
+![Coudre et repasser la couture centrale dos](06a.png)
 
 Placez vos deux pièces de dos endroit contre endroit et cousez la couture centrale du dos.
 
@@ -181,7 +181,7 @@ Lorsque vous avez terminé, repassez pour ouvrir cette couture.
 
 ### Étape 7 : Joindre le dos aux devants
 
-![Rejoindre les devants](07a.png)
+![Rejoindre le dos aux devants](07a.png)
 
 Posez votre dos avec le côté endroit vers le haut et posez vos devants dessus avec leur côté endroit vers le bas (endroit contre endroit donc). Alignez les coutures latérales, épinglez et cousez.
 
@@ -189,7 +189,7 @@ Lorsque vous avez terminé, Repassez pour ouvrir ces coutures.
 
 ### Étape 8: Joindre les épaules
 
-![Rejoignez les épaules](08a.png)
+![Rejoindre les épaules](08a.png)
 
 Alignez les coutures des épaules, cousez-les et repassez pour ouvrir la marge de couture.
 
@@ -199,13 +199,13 @@ Alignez les coutures des épaules, cousez-les et repassez pour ouvrir la marge d
 
 #### Faire glisser la doublure dans le gilet
 
-![Faire glisser la doublure dans la ceinture](09a.png)
+![Faire glisser la doublure dans le gilet](09a.png)
 
 Placez votre doublure dans votre giler, endroit contre endroit. En d'autres termes, le gilet devrait avoir le côté endroit à l'intérieur et le côté envers à l'extérieur. La doublure devrait avoir le côté envers à l'intérieur et le côté endroit vers l'extérieur.
 
 #### Épingler la doublure sur le tissu
 
-![Épingler le lin sur le tissu](09b.png)
+![Épingler la doublure sur le tissu](09b.png)
 
 Alignez la doublure avec le bord du tissu, puis épinglez-la en place.
 
@@ -213,7 +213,7 @@ Commencez au centre de l'arrière et suivez l'encolure jusqu'à l'ouverture du d
 
 #### Coudre la doublure au tissu
 
-![Coudre le lin en tissu](09c.png)
+![Coudre la doublure au tissu](09c.png)
 
 Avec votre doublure épinglée bien en place, coudre la doublure et le tissu ensemble.
 
@@ -221,7 +221,7 @@ N'oubliez pas de laisser cet écart de 15 cm au centre du dos.
 
 #### Retourner le gilet et repasser les coutures
 
-![Tournez la ceinture et appuyez sur le bord](09d.png)
+![Retourner le gilet et repasser les coutures](09d.png)
 
 Passez la main par l’écart que vous avez laissé ouvert à l’ourlet et retournez votre gilet.
 
@@ -231,19 +231,19 @@ Repassez les bords que vous venez de coudre, assurez-vous de rouler un peu le ti
 
 #### Épingler la marge de couture du tissu
 
-![Épingler la marge de couture en tissu](10a.png)
+![Épingler la marge de couture du tissu](10a.png)
 
 Tout au long de l'emmanchure, épinglez la marge de couture du tissu de votre gilet. Tout le long de cette manoeuvre, veillez à maintenir la doublure hors d'atteinte.
 
 #### Épingler la doublure
 
-![Épingler la ligne vers le bas](10b.png)
+![Épingler la doublure](10b.png)
 
 Maintenant, pliez votre doublure un peu en retrait du bord de l'emmanchure et épinglez-la.
 
 #### Coudre la doublure à la main sur le tissu
 
-![Coudre à la main la doublure de la farbrique](10c.png)
+![Coudre la doublure à la main sur le tissu](10c.png)
 
 Utilisez un point de couture glissée pour coudre à la main la doublure sur le tissu le long de l'emmanchure.
 
@@ -254,7 +254,7 @@ Utilisez un point de couture glissée pour coudre à la main la doublure sur le 
 
 ### Étape 12: Faire les boutonnières
 
-![Faire les trous de boutons](12a.png)
+![Faites ces boutonnières](12a.png)
 
 Si vous ne l'avez pas encore fait, transférez le placement des boutonnières de votre patron sur votre tissu.
 
@@ -262,7 +262,7 @@ Faites ces boutonnières.
 
 ### Étape 13: Coudre les boutons
 
-![Joindre les boutons](13a.png)
+![Coudre les boutons](13a.png)
 
 Épinglez votre gilet fermé et transférez l'emplacement de vos trous de boutonnières sur le côté des boutons.
 
@@ -272,7 +272,7 @@ Coudre ces boutons.
 
 ### Étape 14: Optionnel : Surpiquer les bords
 
-![Vous pouvez éventuellement piocher les bords de votre coque de taille](14a.png)
+![Vous pouvez éventuellement surpiquer les bords de votre gilet](14a.png)
 
 Si vous le souhaitez, vous pouvez faire une surpiqure (nommée couture AMF) sur les bords de votre gilet.
 
