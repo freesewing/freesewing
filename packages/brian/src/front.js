@@ -113,22 +113,48 @@ export default (part) => {
   // Front neckline points
   points.neckCp2 = new Point(points.neckCp2Front.x, points.neckCp2Front.y)
 
-  // Seamline
-  paths.saBase = new Path()
+  // Paths
+  paths.hemBase = new Path()
     .move(points.cfHem)
     .line(points.hem)
-    .line(points.armhole)
+    .setRender(false)
+
+  paths.fArmhole = new Path()
+    .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .join(paths.frontArmhole)
+    .setRender(false)
+
+  if( points.armhole.y < points.bust.y) {
+    paths.fBust = new Path()
+      .move(points.waist)
+      .curve(points.waistCp2, points.bustCp1, points.bust)
+      .curve_(points.bustCp2, points.armhole)
+      .setRender(false)
+  } else {
+    paths.fBust = new Path()
+      .move(points.waist)
+      .curve(points.waistCp2, points.bustCp1, points.armhole)
+      .setRender(false)
+  }
+
+  paths.saBase = new Path()
+    .move(points.hem)
+    .line(points.hips)
+    .curve(points.hipsCp2, points.waistCp1, points.waist)
+    .join(paths.fBust)
+    .join(paths.fArmhole)
     .line(points.s3CollarSplit)
     .join(paths.frontCollar)
+    .setRender(false)
 
-  paths.saBase.render = false
   paths.seam = new Path()
     .move(points.cfNeck)
     .line(points.cfHem)
+    .join(paths.hemBase)
     .join(paths.saBase)
+    .close()
     .attr('class', 'fabric')
 
   // Store lengths to fit sleeve
@@ -144,13 +170,17 @@ export default (part) => {
     })
     macro('title', { at: points.title, nr: 1, title: 'front' })
     snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
+    snippets.waistNotch = new Snippet('notch', points.waist)
+    if(points.bust.y - 10 > points.armhole.y) {
+      snippets.bustNotch = new Snippet('notch', points.bust)
+    }
     paths.waist = new Path().move(points.cfWaist).line(points.waist).attr('class', 'help')
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)
         .attr('class', 'fabric sa')
         .line(points.cfNeck)
-        .move(points.cfHips)
+        .move(points.cfHem)
       paths.sa.line(paths.sa.start())
     }
 
@@ -161,21 +191,29 @@ export default (part) => {
   // Paperless?
   if (paperless) {
     shared.dimensions(part, 'front')
-    macro('hd', {
-      from: points.cfHips,
-      to: points.hips,
-      y: points.hem.y + sa + 15,
-    })
-    macro('vd', {
-      from: points.cfHem,
-      to: points.cfWaist,
-      x: points.cfHips.x - sa - 15,
-    })
     macro('vd', {
       from: points.cfHem,
       to: points.cfNeck,
-      x: points.cfHips.x - sa - 30,
+      x: points.cfHips.x - sa - 15,
     })
+    macro('vd', {
+      from: points.cfNeck,
+      to: points.s3CollarSplit,
+      x: points.cfHips.x - sa - 15,
+    })
+    macro('hd', {
+      from: points.cfHem,
+      to: points.hem,
+      y: points.hem.y + sa + 15,
+    })
+    let width = Math.max(points.bust.x, points.waist.x, points.hips.x) + sa
+    if(width > points.hem.x) {
+      macro('hd', {
+        from: points.cfHem,
+        to: new Point(width, points.hem.y),
+        y: points.hem.y + sa + 30,
+      })
+    }
     macro('hd', {
       from: points.cfNeck,
       to: points.s3CollarSplit,

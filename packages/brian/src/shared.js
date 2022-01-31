@@ -35,25 +35,106 @@ export function dimensions(part, side) {
     path: paths[`${side}Armhole`],
     d: -15,
   })
+  let width = Math.max(points.bust.x, points.waist.x, points.hips.x) + sa
+  let measurementOffset = (layer) =>  width + 15* layer
+  if(points.hem.y > points.hips.y +15) {
+    macro('vd', {
+      from: points.hem,
+      to: points.hips,
+      x: measurementOffset(1),
+    })
+    macro('vd', {
+      from: points.hips,
+      to: points.waist,
+      x: measurementOffset(1),
+    })
+    macro('vd', {
+      from: points.hips,
+      to: points.armhole,
+      x: measurementOffset(2),
+    })
+    if(points.hips.x > points.waist.x + 20) {
+      macro('hd', {
+        from: points.waist,
+        to: points.hips,
+        y: points.hips.y,
+      })
+    }
+  } else {
+    macro('vd', {
+      from: points.hem,
+      to: points.waist,
+      x: measurementOffset(1),
+    })
+    macro('vd', {
+      from: points.hem,
+      to: points.armhole,
+      x: measurementOffset(2),
+    })
+    if(points.hem.x > points.waist.x + 20) {
+      macro('hd', {
+        from: points.waist,
+        to: points.hem,
+        y: points.hem.y - 5,
+      })
+    }
+  }
+  if(points.bust.y > points.armhole.y +15) {
+    macro('vd', {
+      from: points.waist,
+      to: points.bust,
+      x: measurementOffset(1),
+    })
+    macro('vd', {
+      from: points.bust,
+      to: points.armhole,
+      x: measurementOffset(1),
+    })
+    if(points.bust.x > points.waist.x + 20) {
+      macro('hd', {
+        from: points.waist,
+        to: points.bust,
+        y: points.waist.y,
+      })
+    }
+  } else {
+    macro('vd', {
+      from: points.waist,
+      to: points.armhole,
+      x: measurementOffset(1),
+    })
+  }
+  if(points.bust.x > points.armhole.x + 20) {
+    macro('hd', {
+      from: points.armhole,
+      to: points.bust,
+      y: points.bust.y,
+    })
+  }
   macro('vd', {
-    from: points.hem,
-    to: points.armhole,
-    x: points.hips.x + sa + 15,
-  })
-  macro('vd', {
-    from: points.hem,
+    from: points.armhole,
     to: points.armholePitch,
-    x: points.hips.x + sa + 30,
+    x: measurementOffset(1),
   })
   macro('vd', {
-    from: points.hem,
+    from: points.armholePitch,
     to: points.s3ArmholeSplit,
-    x: points.hips.x + sa + 45,
+    x: measurementOffset(1),
+  })
+  macro('vd', {
+    from: points.armhole,
+    to: points.s3ArmholeSplit,
+    x: measurementOffset(2),
+  })
+  macro('vd', {
+    from: points.s3ArmholeSplit,
+    to: points.s3CollarSplit,
+    x: measurementOffset(1),
   })
   macro('vd', {
     from: points.hem,
     to: points.s3CollarSplit,
-    x: points.hips.x + sa + 60,
+    x: measurementOffset(3),
   })
   macro('ld', { from: points.s3CollarSplit, to: points.s3ArmholeSplit, d: sa + 15 })
 }

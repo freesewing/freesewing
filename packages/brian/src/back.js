@@ -6,6 +6,7 @@ export default (part) => {
     sa,
     points,
     Path,
+    Point,
     paths,
     Snippet,
     snippets,
@@ -13,10 +14,11 @@ export default (part) => {
     paperless,
     macro,
     options,
+    measurements,
     utils,
   } = part.shorthand()
 
-  points.anchor = points.hps.clone()
+  points.anchor = points.cbHem.clone()
 
   // Adapt the shoulder seam according to the relevant options
   // Note: s3 stands for Shoulder Seam Shift
@@ -103,21 +105,48 @@ export default (part) => {
       .setRender(false)
   }
 
-  // Seamline
-  paths.saBase = new Path()
+  // Paths
+  paths.hemBase = new Path()
     .move(points.cbHem)
     .line(points.hem)
-    .line(points.armhole)
+    .setRender(false)
+
+  paths.bArmhole = new Path()
+    .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .join(paths.backArmhole)
+    .setRender(false)
+
+  if( points.armhole.y < points.bust.y) {
+    paths.bBust = new Path()
+      .move(points.waist)
+      .curve(points.waistCp2, points.bustCp1, points.bust)
+      .curve_(points.bustCp2, points.armhole)
+      .setRender(false)
+  } else {
+    paths.bBust = new Path()
+      .move(points.waist)
+      .curve(points.waistCp2, points.bustCp1, points.armhole)
+      .setRender(false)
+  }
+
+  paths.saBase = new Path()
+    .move(points.hem)
+    .line(points.hips)
+    .curve(points.hipsCp2, points.waistCp1, points.waist)
+    .join(paths.bBust)
+    .join(paths.bArmhole)
     .line(points.s3CollarSplit)
     .join(paths.backCollar)
     .setRender(false)
+
   paths.seam = new Path()
     .move(points.cbNeck)
-    .line(points.cbHips)
+    .line(points.cbHem)
+    .join(paths.hemBase)
     .join(paths.saBase)
+    .close()
     .attr('class', 'fabric')
 
   // Store lengths to fit sleeve
@@ -128,19 +157,24 @@ export default (part) => {
   if (complete) {
     macro('cutonfold', {
       from: points.cbNeck,
-      to: points.cbHips,
+      to: points.cbHem,
       grainline: true,
     })
 
     macro('title', { at: points.title, nr: 2, title: 'back' })
     snippets.armholePitchNotch = new Snippet('bnotch', points.armholePitch)
+    snippets.waistNotch = new Snippet('bnotch', points.waist)
+    if(points.bust.y - 10 > points.armhole.y) {
+      snippets.bustNotch = new Snippet('bnotch', points.bust)
+    }
     paths.waist = new Path().move(points.cbWaist).line(points.waist).attr('class', 'help')
+    paths.hips = new Path().move(points.cbHips).line(points.hips).attr('class', 'help')
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)
         .attr('class', 'fabric sa')
         .line(points.cbNeck)
-        .move(points.cbHips)
+        .move(points.cbHem)
       paths.sa.line(paths.sa.start())
     }
 
@@ -151,21 +185,30 @@ export default (part) => {
   // Paperless?
   if (paperless) {
     shared.dimensions(part, 'back')
-    macro('hd', {
-      from: points.cbHips,
-      to: points.hips,
-      y: points.hem.y + sa + 15,
-    })
-    macro('vd', {
-      from: points.cbHem,
-      to: points.cbWaist,
-      x: points.cbHips.x - sa - 15,
-    })
+
     macro('vd', {
       from: points.cbHem,
       to: points.cbNeck,
-      x: points.cbHips.x - sa - 30,
+      x: points.cbHem.x - sa - 15,
     })
+    macro('vd', {
+      from: points.cbNeck,
+      to: points.s3CollarSplit,
+      x: points.cbHem.x - sa - 15,
+    })
+    macro('hd', {
+      from: points.cbHem,
+      to: points.hem,
+      y: points.hem.y + sa + 15,
+    })
+    let width = Math.max(points.bust.x, points.waist.x, points.hips.x) + sa
+    if(width > points.hem.x) {
+      macro('hd', {
+        from: points.cbHem,
+        to: new Point(width, points.hem.y),
+        y: points.hem.y + sa + 30,
+      })
+    }
     macro('hd', {
       from: points.cbNeck,
       to: points.s3CollarSplit,

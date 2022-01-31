@@ -1,5 +1,6 @@
 import freesewing from '@freesewing/core'
 import plugins from '@freesewing/plugin-bundle'
+import plugin_bust from '@freesewing/plugin-bust' // Note: conditional plugin
 import config from '../config'
 // Parts
 import draftBase from './base'
@@ -9,7 +10,7 @@ import draftSleevecap from './sleevecap'
 import draftSleeve from './sleeve'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Pattern = new freesewing.Design(config, [plugins, plugin_bust], )
 
 // Attach draft methods to prototype
 Pattern.prototype.draftBase = draftBase

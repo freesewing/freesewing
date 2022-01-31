@@ -15,8 +15,11 @@ export default {
       'bicepsEase',
       'cuffEase',
       'shoulderEase',
+      'waistEase',
+      'hipsEase',
       'lengthBonus',
       'sleeveLengthBonus',
+      'draftForHighBust'
     ],
     style: ['s3Collar', 's3Armhole'],
     advanced: [
@@ -47,20 +50,26 @@ export default {
           'sleevecapQ3Spread2',
           'sleevecapQ4Spread1',
           'sleevecapQ4Spread2',
+          'brianFitSleeve',
         ],
       },
+      'brianFitCollar'
     ],
   },
   measurements: [
     'biceps',
+    'hpsToBust',
     'chest',
     'hpsToWaistBack',
+    'hips',
     'waistToHips',
+    'waist',
     'neck',
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
     'wrist',
+    'highBust'
   ],
   dependencies: {
     back: 'base',
@@ -76,20 +85,23 @@ export default {
   hide: ['base', 'sleevecap'],
   options: {
     // Constants
-    brianFitSleeve: true,
-    brianFitCollar: true,
+    brianFitSleeve: { bool: true },
+    brianFitCollar: { bool: true },
     collarFactor: 4.8,
+    draftForHighBust: { bool: false },
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
     armholeDepthFactor: { pct: 60, min: 50, max: 70 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
     bicepsEase: { pct: 15, min: 0, max: 50 },
-    chestEase: { pct: 8, min: -4, max: 20 },
+    waistEase: { pct: 0, min: -4, max: 20 },
+    hipsEase: { pct: 0, min: -4, max: 20 },
+    chestEase: { pct: 0, min: -4, max: 20 },
     collarEase: { pct: 3.5, min: 0, max: 10 },
     cuffEase: { pct: 20, min: 0, max: 200 },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
-    lengthBonus: { pct: 0, min: -4, max: 60 },
+    lengthBonus: { pct: 0, min: 0, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80 },
     // s3 is short for Shoulder Seam Shift

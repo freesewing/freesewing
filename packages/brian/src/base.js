@@ -19,6 +19,8 @@ export default (part) => {
   // Center back (cb) vertical axis
   points.cbHps = new Point(0, 0)
   points.cbNeck = new Point(0, options.backNeckCutout * measurements.neck)
+
+  points.cbBust = new Point(0, measurements.hpsToBust)
   points.cbWaist = new Point(0, measurements.hpsToWaistBack)
   points.cbHips = new Point(0, points.cbWaist.y + measurements.waistToHips)
 
@@ -34,6 +36,7 @@ export default (part) => {
   )
   // Determine armhole depth and cbShoulder independent of shoulder slope reduction
   points.cbShoulder = new Point(0, points.shoulder.y)
+  points.cbChest = new Point(0, points.shoulder.y + measurements.biceps/4 + measurements.biceps/(2*Math.PI))
   points.cbArmhole = new Point(
     0,
     points.shoulder.y + measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
@@ -47,10 +50,31 @@ export default (part) => {
   points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
   // Side back (cb) vertical axis
-  points.armhole = new Point((measurements.chest * (1 + options.chestEase)) / 4, points.cbArmhole.y)
-  points.waist = new Point(points.armhole.x, points.cbWaist.y)
-  points.hips = new Point(points.armhole.x, points.cbHips.y)
-  points.hem = new Point(points.armhole.x, points.cbHem.y)
+  points.chest = new Point((measurements.chest * (1 + options.chestEase)) / 4, points.cbChest.y)
+  let xBust = measurements.bust ? (measurements.bust * (1 + options.chestEase)) / 4 : points.chest.x;
+  points.bust = new Point(xBust, points.cbBust.y)
+
+  let xArmhole = points.bust.x
+  let dyArmhole = points.cbBust.y - points.cbArmhole.y
+  let dyChest = points.cbBust.y - points.cbChest.y
+  if(options.draftForHighBust && dyArmhole > 10 && dyChest > 10) {
+    let chestReduction = Math.min(1, dyArmhole / dyChest)
+    let dxBust = points.bust.x - points.chest.x
+    xArmhole = points.bust.x - chestReduction * dxBust
+  }
+
+  points.armhole = new Point(xArmhole, points.cbArmhole.y)
+  points.waist = new Point((measurements.waist * (1 + options.waistEase)) / 4, points.cbWaist.y)
+  points.hips = new Point((measurements.hips * (1 + options.hipsEase)) / 4, points.cbHips.y)
+  points.hem = new Point(points.hips.x, points.cbHem.y)
+
+  //  Side shaping
+  points.hipsCp2 = points.hips.shift(90, measurements.waistToHips / 3)
+  points.waistCp1 = points.waist.shift(-90, measurements.waistToHips / 3)
+  let waistToBust = (measurements.hpsToWaistBack - measurements.hpsToBust);
+  points.waistCp2 = points.waist.shift(90, waistToBust / 3)
+  points.bustCp1 = points.bust.shift(-90, waistToBust / 3)
+  points.bustCp2 = points.bust.shift(90, (measurements.hpsToBust - points.cbArmhole.y) / 2)
 
   // Armhhole
   points.armholePitch = new Point(
