@@ -2,7 +2,7 @@
 
 #### Repasser l'entoilage sur les passepoils/rabats de poche
 
-![Appuyer sur l'interfaçage vers les douilles de poche](01a.png)
+![Repasser l'entoilage sur les passepoils/rabats de poche](01a.png)
 
 Placez votre passepoil/rabat poche avec le côté endroit vers le bas, et votre entoilage de poche sur le dessus.
 
@@ -12,7 +12,7 @@ Pour chaque poche, repassez l'entoilage sur l'envers du passepoil de poche.
 
 #### Repasser l'entoilage sur les devants
 
-![Appuyer sur l'interfaçage sur les devants de poche](01b.png)
+![Repasser l'entoilage sur les devants de poche](01b.png)
 
 Placez votre devant avec le côté endroit vers le bas et votre entoilage par-dessus.
 
@@ -28,7 +28,7 @@ Repassez l'entoilage en place.
 
 #### Coudre la parementure à la doublure
 
-![Coudre face à la doublure](02a.png)
+![Coudre la parementure à la doublure](02a.png)
 
 Placez votre parementure avant et votre doublure endroit contre endroit. Épinglez les bords de la parementure/doublure en place.
 
@@ -39,7 +39,7 @@ Repassez pour ouvrir les marges de couture entre la parementure et la doublure.
 
 ### Étape 3 : Fermer toutes les pinces
 
-![Fermer toutes les fléchettes](03a.png)
+![Fermer toutes les pinces](03a.png)
 
 #### Fermer les pinces dos
 
@@ -52,7 +52,7 @@ Repliez votre devant (avec son entoilage thermocollé) endroit contre endroit, e
 
 ### Étape 4 : Repasser toutes les pinces
 
-![Appuyez sur toutes les fléchettes](04a.png)
+![Repasser les pinces](04a.png)
 
 #### Repasser les pinces de devant
 Une fois coupées ouvertes, Repassez sur les pinces avant ouvertes.
@@ -66,7 +66,7 @@ Si vous coupez les pinces dos, repassez pour les ouvrir. Si ce n'est pas le cas,
 
 #### Attacher le fond de poche au passepoil de poche
 
-![Attachez le sac de poche à la poche](05a.png)
+![Attacher le fond de poche au passepoil de poche](05a.png)
 
 Placez votre fond de poche avec l'endroit vers le haut, et votre passepoil de poche dessus avec l'endroit vers le bas.
 
@@ -77,7 +77,7 @@ Lorsque vous avez terminé, repassez sur cette couture avec les marges ouvertes.
 
 #### Marquer l'emplacement de votre poche
 
-![Marquer où votre poche doit aller](05a.png)
+![Marquer l'emplacement de votre poche](05a.png)
 
 Votre pièce de patron avant possède une ligne d'aide pour montrer où doit être placée la poche passepoilée. Il s'agit de deux demi-rectangles réunis lors de la couture de la pince pour créer la forme de votre poche passepoilée.
 
@@ -87,7 +87,7 @@ Si vous n'avez pas encore marqué les quatre coins de ce rectange, vous devriez 
 
 #### Fixer le passepoil et le parement de poche
 
-![Fixer la pochette et la poche face](05c.png) ![Fixer la pochette et la poche face](05d.png)
+![Fixer le passepoil et le parement de poche](05c.png) ![Fixer le passepoil et le parement de poche](05d.png)
 
 Placez votre pièce devant avec l'endroit vers le haut. Nous allons fixer le passepoil à la ligne inférieure de votre contour de poche et le parement à la ligne du haut.
 
@@ -107,7 +107,7 @@ Cousez maintenant le long de la ligne d’aide qui marque le bord long de votre 
 
 #### Couper et ouvrir la poche
 
-![Couper la poche](05c.png)
+![Couper et ouvrir la poche](05c.png)
 
 Il est temps de couper soigneusement la poche. Commencez au milieu de la poche et coupez le long des bords les plus longs vers le côté.
 
@@ -117,19 +117,19 @@ Aux bords de votre poche, vous devez arrêter d'ouvrir le centre un peu avant et
 
 #### Repasser pour ouvrir la marge de couture
 
-![Appuyez sur ouvrir la marge de couture](05c.png)
+![Repasser pour ouvrir la marge de couture](05c.png)
 
 Repassez pour ouvrir la marge de couture le long des bords longs de votre poche.
 
 #### Retourner le parement de poche vers l'arrière et repasser
 
-![Apportez la poche face à l'arrière et appuyez sur](05g.png)
+![Retourner le parement de poche vers l'arrière et repasser](05g.png)
 
 Retournez le parement de poche vers l'arrière et repassez.
 
 #### Repasser les triangles sur les côtés courts
 
-![Appuyez sur les triangles sur les côtés courts](05h.png)
+![Repasser les triangles sur les côtés courts](05h.png)
 
 Déplacez votre parement de poche vers le haut pour révéler ces petits traingles sur le côté de votre poche.
 
