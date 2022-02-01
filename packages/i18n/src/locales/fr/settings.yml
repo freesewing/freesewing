@@ -37,5 +37,5 @@ renderer:
   description: Contrôle comment le patron est restitué (dessiné) à l'écran
 xray:
   title: Rayons X
-  description: Look under the hood with FreeSewing's X-ray mode
+  description: Regardez en dessous avec le mode rayons X de FreeSewing
 
