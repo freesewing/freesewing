@@ -8,7 +8,7 @@ It is provided by the [title plugin](/reference/plugins/title).
 <Example part="plugin_title">Example of a title added by this macro</Example>
 
 | Property   | Default | Type                | Description | 
-| ----------:| :-----: | ---------------------------------------------------------- |
+| ----------:| :-----: | ------------------- | ----------- |
 | `at`       |         | [Point](/reference/api/point) | The point at which to insert the title |
 | `nr`       |         | String              | The number of the pattern part |
 | `title`    |         | String              | The name of the pattern part. If title is not set or is an empty string, this won't be rendered, and the version will go beneath the nr.|
