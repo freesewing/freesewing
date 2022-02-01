@@ -72,5 +72,5 @@ frontShoulderWidth:
   title: Largeur de l'épaule devant (Bella)
   description: Contrôle la largeur de l'épaule avant dans le bloc de Bella sur lequel est basé le patron Bee
 highBustWidth:
-  title: High bust width (Bella)
-  description: Controls the high bust width in the underlying Bella block Bee is based on
+  title: Largeur du tour de buste supérieur (Bella)
+  description: Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee
