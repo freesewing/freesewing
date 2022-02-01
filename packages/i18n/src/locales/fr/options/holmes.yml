@@ -4,10 +4,10 @@ headEase:
   description: La quantité d'aisance autour de votre tête.
 lengthRatio:
   title: Profondeur de tête
-  description: Contrôle la longueur de la visière et des rabats d'oreilles
+  description: Contrôle la longueur de la couronne et des rabats d'oreilles
 gores:
   title: Nombre de pans
-  description: The number of gores used to construct the crown
+  description: Le nombre de pans utilisés pour construire la couronne
 visorAngle:
   title: Angle de la visière
   description: L'angle d'arc utilisé pour tracer la courbe intérieure de la visière
