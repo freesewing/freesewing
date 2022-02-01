@@ -9,4 +9,4 @@ Om te voorkomen dat de mouw te smal wordt, passen we alleen een deel van de mouw
 
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_sleevewidthguarantee_sample.svg "Effect van deze optie op het patroon")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](yuri_sleevewidthguarantee_sample.svg "Effect van deze optie op het patroon")

@@ -1,24 +1,24 @@
  - **Tissu principal**
-   - Couper **2 devant(s)** avec _bons côtés ensemble_
-   - Couper **2 dos** avec _bons côtés ensemble_
-   - Couper **2 faces avant** avec _bons côtés ensemble_
-   - Coupez **2 poches** avec _bons côtés ensemble_
-   - Coupez **2 faces de poche** avec _bons côtés ensemble_
+   - Couper **2 devant(s)** _endroit contre endroit_
+   - Couper **2 dos** _endroit contre endroit_
+   - Couper **2 parementures avant** _endroit contre endroit_
+   - Couper **2 passepoils/rabats de poche** _endroit contre endroit_
+   - Couper **2 parements de poche** _endroit contre endroit_
  - **Tissu de doublure**
-   - Couper **2 doublures avant** avec _bons côtés ensemble_
-   - Couper **2 dos** avec _bons côtés ensemble_
-   - Coupez **2 sacs de poche** avec _bons côtés ensemble_
+   - Couper **2 doublures devant** _endroit contre endroit_
+   - Couper **2 dos** _endroit contre endroit_
+   - Couper **2 fonds de poche** _endroit contre endroit_
  - **Entoilage**
-   - Couper **2 devant(s)** avec _bons côtés ensemble_
-   - Coupez **2 interfaces(s) de pocket**
+   - Couper **2 devant(s)** _endroit contre endroit_
+   - Couper **2 entoilage(s) de poche**
 
 <Warning>
 
-###### Les mises en garde
+###### Mises en garde
 
- - Ne coupez pas la fléchette **devant**
- - Ne coupez pas la fléchette **dos**
- - Attention à la ligne de grains sur le **pocket welt** et **face de poche**
+ - Ne coupez pas la pince **devant**
+ - Ne coupez pas la pince **dos**
+ - Attention à la ligne de droit fil sur le **passepoil/rabat de poche** et **le parement de poche**
 
 </Warning>
 

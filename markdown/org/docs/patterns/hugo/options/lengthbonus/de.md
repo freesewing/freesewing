@@ -1,9 +1,6 @@
-![Die Längen-Bonus-Option auf Brian](./lengthbonus.svg)
 
-Diese Option bestimmt, wie weit sich der Block unterhalb der Hüfte erstreckt.
-
-> Beachten Sie, dass dieser Block standardmäßig so lange ist, wie Ihre Hüftlinie, die fast sicher zu kurz für das letzte Kleidungsstück ist.
+The amount to lengthen the garment by. A negative value will shorten it.
 
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](hugo_lengthbonus_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_lengthbonus_sample.svg "Effect of this option on the pattern")

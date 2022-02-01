@@ -1,8 +1,5 @@
-![The length bonus option on Brian](./lengthbonus.svg)
 
-This option controls how far the block extend below your hips.
-
-> Note that by default this block is as long as your hip line, which is almost certainly too short for the final garment.
+The amount to lengthen the garment by. A negative value will shorten it.
 
 
 ## Effect of this option on the pattern
