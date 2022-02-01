@@ -1,11 +1,9 @@
-- - -
-- - -
 
-<Fixme>
+The radius by which the front pocket is rounded.
 
-Document deze optie
+- Increase this option to curve the bottom of the front pocket
+- Decrease this option to straighten out the bottom of the front pocket
 
-</Fixme>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_frontpocketradius_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontpocketradius_sample.svg "Effect of this option on the pattern")

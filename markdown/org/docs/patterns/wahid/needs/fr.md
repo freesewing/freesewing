@@ -1,8 +1,8 @@
-Pour faire Wahid, vous aurez besoin des éléments suivants :
+Pour faire Wahid, vous aurez besoin des fournitures suivantes :
 
- - Fourniture de base pour la couture
- - About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/wahid/fabric))
- - About 1 meter (1.1 yards) of lining fabric
- - Fusible interfacing
+ - Fournitures de base pour la couture
+ - Environ 1 m (1.1 yards) d'un tissu adapté ([voir Options de tissu](/docs/patterns/wahid/fabric))
+ - Environ 1 mètre (1.1 yards) de tissu de doublure
+ - Entoilage thermocollant
  - Boutons
 

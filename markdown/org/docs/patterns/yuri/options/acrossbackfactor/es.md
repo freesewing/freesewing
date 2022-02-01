@@ -1,7 +1,6 @@
-![La opción a través de la espalda en Brian](./acrossbackfactor.svg)
 
-Controla tu anchura trasera como un factor de tu hombro a la medición del hombro
+Controls your across back width as a factor of your shoulder to shoulder measurement
 
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](huey_acrossbackfactor_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](yuri_acrossbackfactor_sample.svg "Effect of this option on the pattern")

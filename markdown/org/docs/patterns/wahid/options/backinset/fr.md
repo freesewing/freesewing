@@ -1,6 +1,6 @@
 ![Échancrure emmanchure arrière](backinset.svg)
 
-Jusqu'où voulez-vous que votre armure-manteau de taille se courbe vers l'arrière ?
+Jusqu'où voulez-vous que l'emmanchure de votre gilet se courbe côté dos ?
 
 <Note>
 
