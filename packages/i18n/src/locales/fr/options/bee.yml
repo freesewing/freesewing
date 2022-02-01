@@ -55,9 +55,9 @@ neckTieColours:
   description: Que vous vouliez une seule couleur autour de votre cou, ou des couleurs doubles
 crossBackTies:
   title: Bandes croisées dans le dos
-  description: Whether you'd like to use the cross back tie variation of Bee
+  description: Si vous souhaitez utiliser la variation de dos croisé de Bee
 bandLength:
-  title: Band Length (Cross back ties)
+  title: Longueur de la bande (bandes croisées dans le dos)
   description: Controls the length of the band around your chest for the cross back ties variation of Bee
 backDartHeight:
   title: Back dart height (Bella)
