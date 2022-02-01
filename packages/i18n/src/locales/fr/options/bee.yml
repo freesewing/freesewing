@@ -58,19 +58,19 @@ crossBackTies:
   description: Si vous souhaitez utiliser la variation de dos croisé de Bee
 bandLength:
   title: Longueur de la bande (bandes croisées dans le dos)
-  description: Controls the length of the band around your chest for the cross back ties variation of Bee
+  description: Contrôle la longueur de la bande autour de votre buste pour la variation du dos croisé de Bee
 backDartHeight:
-  title: Back dart height (Bella)
-  description: Controls the back dart height in the underlying Bella block Bee is based on
+  title: Hauteur de la pince dos (Bella)
+  description: Contrôle la hauteur de pince dos dans le bloc de Bella sur lequel est basé Bee
 armholeDepth:
-  title: Armhole depth (Bella)
-  description: Controls the armhole depth in the underlying Bella block Bee is based on
+  title: Profondeur d'emmanchure (Bella)
+  description: Contrôle la profondeur de l'emmanchure dans le bloc de Bella sur lequel est basé Bee
 frontArmholePitchDepth:
-  title: Front armhole pitch depth (Bella)
-  description: Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+  title: Profondeur du point pivot de l'emmanchure devant (Bella)
+  description: Contrôle la profondeur du point pivot de l'emmanchure avant dans le bloc Bella sur lequel est basé le patron Bee
 frontShoulderWidth:
-  title: Front shoulder width (Bella)
-  description: Controls the front shoulder width in the underlying Bella block Bee is based on
+  title: Largeur de l'épaule devant (Bella)
+  description: Contrôle la largeur de l'épaule avant dans le bloc de Bella sur lequel est basé le patron Bee
 highBustWidth:
   title: High bust width (Bella)
   description: Controls the high bust width in the underlying Bella block Bee is based on
