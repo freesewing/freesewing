@@ -1,4 +1,4 @@
-![Flèche du centre arrière](centerbackdart.svg)
+![Pince milieu dos](centerbackdart.svg)
 
 Etant donné que personne n'a un dos parfaitement droit, ce patron est monté avec 0,5 cm au centre du cou.
 
