@@ -1,6 +1,6 @@
 ![Boutons](buttons.svg)
 
-Combien de boutons voulez-vous?
+Combien de boutons voulez-vous ?
 
 
 ## Effet de cette option sur le motif
