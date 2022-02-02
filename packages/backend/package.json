@@ -63,7 +63,7 @@
     "data-uri-to-buffer": "^3.0.1",
     "data-uri-to-file": "^0.1.8",
     "dateformat": "3.0.3",
-    "express": "4.16.4",
+    "express": "4.17.2",
     "form-data": "^4.0.0",
     "formidable": "1.2.1",
     "jsonwebtoken": "8.5.1",
