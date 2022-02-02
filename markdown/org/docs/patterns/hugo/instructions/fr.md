@@ -24,8 +24,8 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
  - Cousez les parmentures à la poche avec une marge de 1 cm.  Cousez à la fois le bord long et le bord court sur le bas de la poche.
  - Dégarnissez soigneusement la marge de couture sur les pièces de parmenture.
  - Retournez les pièces de parmenture sur l'endroit.  Aplatissez bien la couture en faisant rouler pour bien mettre en place la couture, puis pressez au fer.
- - Faites une surpiqûre à ½ cm le long des côtés long et bas de chaque coté de la poche afin de maintenir la parmenture et la marge de couture.
- - Surpiquez une autre ligne à ½ cm du bord intérieur de la parmenture de chaque côté de la poche.  Cette surpiqûre s'arrête sur la première ligne de surpiqûre du côté bas (voir vidéo 2 à 1'50)
+ - Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
+ - Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Cette surpiqûre s'arrête sur la première ligne de surpiqûre du côté bas (voir vidéo 2 à 1'50)
  - Dégarnissez l'excès de matière de la parmenture à l'intérieur de la poche.
  - Pressez sur les bords.
 
