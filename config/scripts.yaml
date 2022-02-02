@@ -38,11 +38,14 @@ components:
 core:
   testonly: 'BABEL_ENV=production mocha tests/*.test.js'
   test: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js'
+  testci: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js'
   report: 'BABEL_ENV=production nyc report --reporter=html'
   coverage: 'BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
 i18n:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
+  test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
+  testci: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
 pattern-info:
   cibuild_step1: '!'
   cibuild_step2: 'node src/prebuild.js && rollup -c'
