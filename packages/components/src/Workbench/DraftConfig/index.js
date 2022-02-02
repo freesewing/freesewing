@@ -122,6 +122,7 @@ const DraftPattern = (props) => {
         updatePatternData={props.updateGist}
         raiseEvent={props.raiseEvent}
         freesewing={props.freesewing}
+        pattern={props.pattern}
         units={props.units || 'metric'}
       />
       <li className='zoombox'>

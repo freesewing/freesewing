@@ -66,13 +66,19 @@ const OptionGroup = (props) => {
 
   return (
     <>
-      {props.options.map((name) => {
+      {props.options.map(nameOrGroup => {
         let output = []
-        if (typeof name === 'object') {
+        if (typeof nameOrGroup === 'object') {
+          const group = nameOrGroup
           // Subgroup
-          for (let subGroup of Object.keys(name)) {
+          for (const subGroup in group) {
             let children = []
-            for (let option of name[subGroup]) children.push(renderOption(option, true))
+            for (const name of group[subGroup]) {
+              const option = props.config.options[name]
+              if (!option.hide(props.pattern.settings.options)) {
+                children.push(renderOption(name, true))
+              }
+            }
             output.push(
               <OptionSubGroup
                 title={<FormattedMessage id={'optiongroups.' + subGroup} />}
@@ -81,7 +87,13 @@ const OptionGroup = (props) => {
               />
             )
           }
-        } else output.push(renderOption(name))
+        } else {
+          const name = nameOrGroup
+          const option = props.config.options[name]
+          if (!option.hide(props.pattern.settings.options)) {
+            output.push(renderOption(name))
+          }
+        }
 
         return output
       })}
