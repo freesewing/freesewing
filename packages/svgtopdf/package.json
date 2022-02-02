@@ -42,7 +42,7 @@
   "dependencies": {
     "body-parser": "1.18.3",
     "cors": "2.8.5",
-    "express": "4.16.4",
+    "express": "4.17.2",
     "formidable": "1.2.1",
     "rimraf": "2.6.2",
     "shell-exec": "1.0.2"
