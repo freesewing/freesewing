@@ -24,8 +24,8 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
  - Nähen Sie die Gesichtsstücke mit einem Abstand von 1cm an die Tasche an.  Nähen Sie sowohl den langen Rand als auch den kürzeren Rand am unteren Rand der Tasche.
  - Die Nahtzuweisung auf die Seitenteile sorgfältig abschneiden.
  - Drehen und drehen Sie die Gesichtsstücke gute Seiten aus.  Dann Handwalzen und drücken Sie die Nähte.
- - Topstitch oder Kantenstich 1<unk> 2 cm entlang der oberen und unteren Kanten auf jeder Seite der Tasche zu verankern, um die Vorderseite und die Nahtzugabe.
- - Topstitch eine weitere Linie 1<unk> 2 aus der Innenkante der Fassade auf jeder Seite der Tasche.  Diese Stichlinie endet an der unteren Kantenstichlinie.
+ - Topstitch oder Kantenstich 0.5 cm entlang der oberen und unteren Kanten auf jeder Seite der Tasche zu verankern, um die Vorderseite und die Nahtzugabe.
+ - Topstitch eine weitere Linie 0.5 cm aus der Innenkante der Fassade auf jeder Seite der Tasche.  Diese Stichlinie endet an der unteren Kantenstichlinie.
  - Abschneiden Sie den Überschuss an der Innenseite der Tasche.
  - Drücke die Kanten.
 
@@ -35,7 +35,7 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
  - Die obere Taschennahtlinie ist mit Noten am Muster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Überlappen Sie die Oberseite der Tasche über der Nahtlinie um etwas weniger als 1 cm Nahtzugabe.
  - Nähen Sie die obere Naht der Tasche an die Shirt Front.
  - Drehen Sie die Tasche über die Nahtlinie, so dass die Unterseite nun mit der Kante an der Taille nach oben zieht.
- - Mit einem langen Baststich (4mm oder länger) die Tasche in der Taille mit einer Naht von 1<unk> 2 cm in die Tasche legen.  Dies ist optional, hält aber die Tasche fest während Sie am Rest des Hemdes arbeiten.
+ - Mit einem langen Baststich (4mm oder länger) die Tasche in der Taille mit einer Naht von 0.5 cm in die Tasche legen.  Dies ist optional, hält aber die Tasche fest während Sie am Rest des Hemdes arbeiten.
 
 ### Schritt 3: Hänge die Ärmel an
 

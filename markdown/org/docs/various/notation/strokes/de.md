@@ -6,9 +6,13 @@ Die Designer können, wenn sie dies wünschen, die Standardlinienbreite übersch
 
 Hier sind die verschiedenen verfügbaren Linienbreiten:
 
-<Legend part="lineWidths" caption="The different line widths" >
+<Legend part="lineWidths">
+The different line widths
+</Legend>
 
 Und das sind die verschiedenen Strichstile:
 
-<Legend part="lineStrokes" caption="The different line strokes" >
+<Legend part="lineStrokes">
+The different line strokes
+</Legend>
 
