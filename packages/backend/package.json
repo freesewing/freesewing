@@ -70,7 +70,7 @@
     "jszip": "3.7.1",
     "mdast-util-to-string": "2",
     "mocha": "^8.3.2",
-    "mongoose": "^5.12.13",
+    "mongoose": "^6.1.8",
     "mongoose-bcrypt": "^1.8.1",
     "mongoose-encryption": "^2.1.0",
     "nodemailer": "6.7.2",
