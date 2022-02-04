@@ -1,3 +1,8 @@
+---
+title: Frequent mistakes
+order: 100
+---
+
 Some things to keep in mind when working in Markdown are:
 
 - There is no need to add a *glossary* section to documentation. We use a plugin called [remark-jargon](https://github.com/freesewing/freesewing/blob/develop/packages/remark-jargon/README.md) to explain terms. Information can be found at the link.
