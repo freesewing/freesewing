@@ -6,13 +6,15 @@ Some things to keep in mind when working in Markdown are:
 
 <Note>
 Github itself also allows working in Markdown and will give you a handy preview!
-</Note>
+</Note>  
 
 If you get lost or have a question about how to do something, feel free to come ask on the Discord. We've all had to learn Markdown at some point and would be delighted to pass knowledge on. 
 
 - When adding links please do not link them using a structure like: Link [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ). Instead put the link under the relevant term. See first list item for an example.
 
-- When you are linking within freesewing you can use a relative link from the site root. Think ```markdown/dev/guides/markdown/frequent-mistakes``` instead of ```https://github.com/freesewing/freesewing/tree/develop/markdown/dev/guides/markdown/frequent-mistakes```  
+- When you are linking within freesewing you can use a relative link from the site root.  
+Think ```markdown/dev/guides/markdown/frequent-mistakes``` instead of ```https://github.com/freesewing/freesewing/tree/develop/markdown/dev/guides/markdown/frequent-mistakes```  
+
 Images can be put in the same folder you are working on with a link to the filename. 
 
 - If you're writing documentation that involves steps, please do not mix levels of steps. Steps written out in documentation are there to facilitate brainless execution. Don't be afraid to repeat yourself.
