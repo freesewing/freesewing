@@ -24,8 +24,8 @@ Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a termina
  - Unir las piezas de cara al bolsillo con una costura de 1 cm.  Unir tanto el borde largo como el borde más corto en la parte inferior del bolsillo.
  - Recorre cuidadosamente la franquicia de la costura en los pedazos orientados.
  - Girar y girar las piezas de cara hacia afuera.  Luego rodar a mano y presionar las costuras.
- - Topstitch or edge-stitch 1-2 cm along both upper and lower bords on each side of the pocket, to anchor the facing and the costurance allowance.
- - Topstitch otra línea 1 de 2 desde el borde superior interior de la cara a cada lado del bolsillo.  Esta línea superior terminará en la línea de stitch del borde inferior.
+ - Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
+ - Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Esta línea superior terminará en la línea de stitch del borde inferior.
  - Recorre el exceso de cara en el interior del bolsillo.
  - Presione los bordes.
 
