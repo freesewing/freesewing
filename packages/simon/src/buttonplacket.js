@@ -17,7 +17,7 @@ export default (part) => {
     store,
   } = part.shorthand()
 
-  if (!options.seperateButtonPlacket || options.buttonPlacketStyle !== 'classic') {
+  if (!options.seperateButtonPlacket) {
     part.paths = {}
     part.snippets = {}
     part.points = {}
