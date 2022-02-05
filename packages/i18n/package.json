@@ -38,7 +38,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "yaml": "^1.10.2"
+    "js-yaml": "^4.1.0"
   },
   "files": [
     "dist/*",
