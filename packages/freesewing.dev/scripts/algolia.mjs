@@ -141,9 +141,19 @@ const indexMarkdownContent = async () => {
 }
 
 const run = async () => {
-  await indexMarkdownContent()
-  await indexStrapiContent()
-  console.log()
+  if (
+    (process.env.NETLIFY && process.env.CONTEXT === 'production')
+    || process.env.FORCE_ALGOLIA
+  ) {
+    await indexMarkdownContent()
+    await indexStrapiContent()
+    console.log()
+  } else {
+    console.log()
+    console.log('Not a producion deploy. Not indexing to Algolia.')
+    console.log('To force indexing, set the FORCE_ALGOLIA environment variable')
+    console.log()
+  }
 }
 
 run()
