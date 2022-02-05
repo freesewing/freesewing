@@ -2,13 +2,21 @@
 title: optionalMeasurements
 ---
 
+The `optionalMeasurements` key in the pattern configuration file allows 
+you to configure measurments that are optional to draft the pattern.
+
+## Structure
+
+An array of strings where the strings are the names of the optional
+measurements.
+
+## Example
+
 ```js
 optionalMeasurements: [
   'highBust'
 ]
 ```
-
-An array with the names of optional measurements that can be used to draft this pattern. 
 
 <Note>
 

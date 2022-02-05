@@ -6,11 +6,18 @@ While FreeSewing supports millimeter options, we recommend
 using [percentage options][1] and will not accept 
 contributions that use millimeter options.
 
-A millimeter option should be an object with these properties:
+## Structure
+
+A millimeter option should be a plain object with these properties:
 
  - `mm` : The default value in millimeter
  - `min` : The minimul that's allowed
  - `max` : The maximum that's allowed
+ - `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
+
+[hide]: /reference/api/config/options#optionally-hide-options-by-configuring-a-hide-method
+
+## Example
 
 ```js
 options: {
@@ -42,4 +49,4 @@ percentage option][1] instead.
 
 </Comment>
 
-[1]: /reference/api/config/options/percentage
+[1]: /reference/api/config/options/pct

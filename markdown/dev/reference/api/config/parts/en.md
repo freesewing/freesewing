@@ -2,14 +2,8 @@
 title: parts
 ---
 
-```js
-parts: [
-  "front",
-  "back"
-]
-```
-
-An array that lists your (additional) pattern parts. The name must be the key the `pattern.parts` object.
+The `parts` key in the pattern configuration file holds a list of
+names of pattern parts.
 
 <Tip>
 
@@ -21,3 +15,17 @@ So if parts are included in the `dependencies`, `inject`, or `hide` configuratio
 there's no need to include them here, as we already know of their existence.
 
 </Tip>
+
+## Structure
+
+An array of strings where the strings are part name.
+
+## Example
+
+```js
+parts: [
+  "front",
+  "back"
+]
+```
+
