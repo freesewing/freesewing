@@ -5,7 +5,7 @@ title: hide
 The `hide` key in the pattern configuration file allow you to configure
 parts that should be hidden by default.
 *Hidden* means that they will be drafted, but not rendered. This is
-ypically used for a base part on which other parts are built.
+typically used for a base part on which other parts are built.
 
 Note that hidden parts will be rendered when the user requests 
 to [only draft some parts of a pattern](/reference/api/settings/only) 
