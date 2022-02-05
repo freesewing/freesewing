@@ -283,6 +283,7 @@ const Workbench = ({
         <Measurements
           measurements={measurements}
           required={config.measurements}
+          optional={config.optionalMeasurements}
           units={units}
           updateMeasurement={updateMeasurement}
           preloadMeasurements={preloadMeasurements}

@@ -148,6 +148,16 @@ const Measurements = (props) => {
             updateValue={props.updateMeasurement}
           />
         ))}
+        {props.optional.map((m) => (
+          <FormFieldMeasurement
+            key={m}
+            name={m}
+            units={props.units}
+            value={getValue(m)}
+            label={'measurements.' + m}
+            updateValue={props.updateMeasurement}
+          />
+        ))}
       </div>
     </div>
   )
