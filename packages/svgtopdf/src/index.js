@@ -5,6 +5,7 @@ import path from 'path'
 import fs from 'fs'
 import formidable from 'formidable'
 import shellExec from 'shell-exec'
+import rateLimit from 'express-rate-limit'
 
 const app = express()
 app.use(cors())
@@ -22,7 +23,15 @@ app.get('/', async (req, res) => res
   .send(form)
 )
 
-app.post('/', async (req, res) => {
+const rateLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 50, // Limit to 50 requests per window (15m)
+  standardHeaders: true,
+  legacyHeaders: false
+})
+
+
+app.post('/', rateLimiter, async (req, res) => {
   let form = new formidable.IncomingForm()
   form.parse(req, (err, fields, files) => {
     if (

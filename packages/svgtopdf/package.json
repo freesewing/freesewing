@@ -40,15 +40,16 @@
     ]
   },
   "dependencies": {
-    "body-parser": "1.18.3",
+    "body-parser": "1.19.1",
     "cors": "2.8.5",
     "express": "4.17.2",
+    "express-rate-limit": "^6.2.0",
     "formidable": "2.0.1",
-    "rimraf": "2.6.2",
+    "rimraf": "3.0.2",
     "shell-exec": "1.0.2"
   },
   "devDependencies": {
-    "@freesewing/prettier-config": "2.0.0-beta.37",
+    "@freesewing/prettier-config": "latest",
     "backpack-core": "^0.8.4",
     "nodemon": "2.0.15"
   }

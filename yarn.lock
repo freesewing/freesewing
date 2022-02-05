@@ -2164,10 +2164,10 @@
   resolved "https://registry.yarnpkg.com/@freesewing/i18n/-/i18n-2.19.6.tgz#b3feb6ce81841da026987600444da21a481cd917"
   integrity sha512-rw/8fezabWYtilTULMFJ+GS1RhCxkbRUUTNIM2SRR+cpr+qHCy2VSvc75TJEU/jSRA9QOVtVHtNL1zH+5j9lhw==
 
-"@freesewing/prettier-config@2.0.0-beta.37":
-  version "2.0.0-beta.37"
-  resolved "https://registry.yarnpkg.com/@freesewing/prettier-config/-/prettier-config-2.0.0-beta.37.tgz#55deebca519f668e16df3bda4ffecfd499542f6e"
-  integrity sha512-JISpjXqT/EkSDSzd1asQkBDQPbrVuqPEsy8aafICLoP0WV4R2YcTYCX9YuoE+87lKsFP3X7oKW27nkJ/84P2Aw==
+"@freesewing/prettier-config@latest":
+  version "2.20.4"
+  resolved "https://registry.yarnpkg.com/@freesewing/prettier-config/-/prettier-config-2.20.4.tgz#0cfed3d2b681588128158df8d41c36f587db621d"
+  integrity sha512-hYhP7epkpz9qg0dOGiS4unTI0pz0MqnnKvKbnp5XYKoNhsEJdmOI1fVFcrR2x/9WLOnIFuUx57abTUCZTMQdyQ==
 
 "@gar/promisify@^1.0.1":
   version "1.1.2"
@@ -12029,6 +12029,11 @@ express-logging@^1.1.1:
   integrity sha1-YoOWGMurW7NhDxocFIU1L+nSbCo=
   dependencies:
     on-headers "^1.0.0"
+
+express-rate-limit@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-6.2.0.tgz#be644be082d4d5da8c368aed07cef80152f6e218"
+  integrity sha512-q9xfttbPX79HiBsHA4LT3PZEeJR96CJ5/2jloAKSEECMx8XlOOOpjxx6iK/kBw3hFJ8uhx6Q9lCfSGp70yV0tQ==
 
 express@4.17.2, express@^4.17.1:
   version "4.17.2"
