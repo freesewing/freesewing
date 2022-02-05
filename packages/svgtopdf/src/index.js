@@ -72,7 +72,7 @@ app.post('/', rateLimiter, async (req, res) => {
   })
 })
 
-app.post('/api', async (req, res) => {
+app.post('/api', rateLimiter, async (req, res) => {
   if (
     typeof req.body.svg === 'undefined' ||
     typeof req.body.format === 'undefined' ||

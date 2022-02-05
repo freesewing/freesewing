@@ -7,7 +7,7 @@ Unreleased:
       - Fix bug in Svg.escapeText() that only escaped the first quote
     svgtopdf:
       - Mitigate risk of denial-of-service attacks in / route
-      - Rate-limit PDF generation endpoint
+      - Rate-limit PDF generation endpoints
 
 2.20.4:
   date: 2022-01-28
