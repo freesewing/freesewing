@@ -15,7 +15,7 @@ render them if they were not requested.
 
 ## Structure
 
-An plain object of `key`-`value` pairs that controls the order in which pattern 
+A plain object of `key`-`value` pairs that controls the order in which pattern 
 parts will get drafted.
 The value can either be a string, or an array of strings.
 Those strings should be part names.
