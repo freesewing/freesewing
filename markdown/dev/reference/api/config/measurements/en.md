@@ -2,7 +2,7 @@
 title: measurements
 ---
 
-The `measurements` key in the pattern configuration file allow you to configure
+The `measurements` key in the pattern configuration file allows you to configure
 the measurments that are required to draft the pattern.
 
 ## Structure
