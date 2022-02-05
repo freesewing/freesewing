@@ -13,7 +13,15 @@ const port = process.env.PORT || 4000
 const formats = ['pdf', 'ps']
 const sizes = ['full', 'a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid']
 
-app.get('/', async (req, res) => res.sendFile(path.resolve(__dirname + '/form.html')))
+// Load form.html once instead of at every request)
+const form = fs.readFileSync(path.resolve(__dirname, 'form.html'))
+
+app.get('/', async (req, res) => res
+  .set('Content-Type', 'text/html')
+  .status(200)
+  .send(form)
+)
+
 app.post('/', async (req, res) => {
   let form = new formidable.IncomingForm()
   form.parse(req, (err, fields, files) => {
@@ -23,7 +31,10 @@ app.post('/', async (req, res) => {
       formats.indexOf(fields.format) === -1 ||
       sizes.indexOf(fields.size) === -1
     )
-      return res.sendFile(path.resolve(__dirname + '/form.html'))
+      return res
+        .set('Content-Type', 'text/html')
+        .status(200)
+        .send(form)
     let upload = files.svg.path
     let cmd
     if (fields.size === 'full') {

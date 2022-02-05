@@ -5,6 +5,8 @@ Unreleased:
       - Mitigate risk of denial-of-service attacks in catch-all route
     core:
       - Fix bug in Svg.escapeText() that only escaped the first quote
+    svg2pdf:
+      - Mitigate risk of denial-of-service attacks in / route
 
 2.20.4:
   date: 2022-01-28
