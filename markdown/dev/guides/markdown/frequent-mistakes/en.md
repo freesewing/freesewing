@@ -93,6 +93,8 @@ your line. I've found it helpful to experiment and keep checking the preview
 to see how things look. Not all the empty lines and whitespace in your 
 document will render in the preview. 
 
+## Using custom components
+
 When you're using custom components you want to leave an empty line before 
 and after your component. 
 
