@@ -42,15 +42,16 @@ See first list item for an example.
 
 ### Lining within the same website
 
-- When you are linking within freesewing.dev or freesewing.org you can use a relative link from 
+When you are linking within freesewing.dev or freesewing.org you can use a relative link from 
 the site root.  
 Use:
-```
+
+```text
 /guides/markdown/frequent-mistakes
 ```
 instead of 
 
-```
+```text
 https://freesewing.dev/guides/markdown/frequent-mistakes
 ```  
 
@@ -59,7 +60,7 @@ https://freesewing.dev/guides/markdown/frequent-mistakes
 Images can be put in the same folder you are working on with a link 
 to the filename. For example:
 
-```md
+```markdown
 This is [a picture of a banana](banana.jpg)
 ```
 
