@@ -14,7 +14,7 @@ and includes the hidden part(s).
 
 ## Structure
 
-An array with strings that hold part names.
+An array of strings that holds part names.
 
 ## Example
 
