@@ -167,10 +167,12 @@ export default {
     buttonPlacketStyle: {
       list: ['classic', 'seamless'],
       dflt: 'classic',
+      hide: options => options.seperateButtonPlacket
     },
     buttonholePlacketStyle: {
       list: ['classic', 'seamless'],
       dflt: 'seamless',
+      hide: options => options.seperateButtonholePlacket
     },
     cuffStyle: {
       list: [

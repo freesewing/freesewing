@@ -23,9 +23,13 @@ export default (part) => {
     }
   }
 
-  return options.buttonPlacketStyle === 'seamless'
-    ? frontRightSeamless(part)
-    : options.seperateButtonPlacket
-    ? frontRightClassicSeperate(part)
-    : frontRightClassicCuton(part)
+  if (options.seperateButtonPlacket) {
+    return frontRightClassicSeperate(part)
+  } else if (options.buttonPlacketStyle === 'seamless') {
+    return frontRightSeamless(part)
+  } else if (options.buttonPlacketStyle === 'classic') {
+    return frontRightClassicCuton(part)
+  } else {
+    throw `Unexpected buttonPlacketStyle: ${options.buttonPlacketStyle}`
+  }
 }

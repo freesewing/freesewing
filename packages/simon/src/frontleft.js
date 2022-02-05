@@ -15,9 +15,13 @@ export default (part) => {
     })
   }
 
-  return options.buttonholePlacketStyle === 'seamless'
-    ? frontLeftSeamless(part)
-    : options.seperateButtonholePlacket
-    ? frontLeftClassicSeperate(part)
-    : frontLeftClassicCuton(part)
+  if (options.seperateButtonholePlacket) {
+    return frontLeftClassicSeperate(part)
+  } else if (options.buttonholePlacketStyle === 'seamless') {
+    return frontLeftSeamless(part)
+  } else if (options.buttonholePlacketStyle === 'classic') {
+    return frontLeftClassicCuton(part)
+  } else {
+    throw `Unexpected buttonholePlacketStyle: ${options.buttonholePlacketStyle}`
+  }
 }
