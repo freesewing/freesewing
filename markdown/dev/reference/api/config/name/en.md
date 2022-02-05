@@ -15,4 +15,4 @@ name](https://github.com/npm/validate-npm-package-name).
 name: "sorcha"
 ```
 
-In this example, the pattern is named **Sorcha**.
+In this example, the pattern is named **sorcha**.
