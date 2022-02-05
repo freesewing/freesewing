@@ -23,12 +23,14 @@ const ThemePicker = ({ app, className }) => {
             <li key={theme}>
               <button
                 onClick={() => app.setTheme(theme)}
-                className="btn btn-ghost text-base-content hover:bg-base-200"
+                className="btn btn-ghost hover:bg-base-200"
               >
-                {app.i18n
-                  ? app.t(`${theme}Theme`)
-                  : `${theme} Theme`
-                }
+                <span className="text-base-content">
+                  {app.i18n
+                    ? app.t(`${theme}Theme`)
+                    : `${theme} Theme`
+                  }
+                </span>
               </button>
             </li>
           ))}
