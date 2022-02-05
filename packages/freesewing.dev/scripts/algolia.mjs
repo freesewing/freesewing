@@ -142,7 +142,7 @@ const indexMarkdownContent = async () => {
 
 const run = async () => {
   if (
-    (process.env.NETLIFY && process.env.CONTEXT === 'production')
+    (process.env.NETLIFY && process.env.CONTEXT === 'production' && false) // disabled for now
     || process.env.FORCE_ALGOLIA
   ) {
     await indexMarkdownContent()
