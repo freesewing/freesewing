@@ -1,5 +1,12 @@
 import path from 'path'
+import { readdirSync } from 'fs'
 import remarkGfm from 'remark-gfm'
+
+const getDirectories = source =>
+  readdirSync(source, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name)
+const pkgs = getDirectories(path.resolve(`../`))
 
 /*
  * This mehthod will return the NextJS configuration
@@ -42,6 +49,13 @@ const config = (site, remarkPlugins=[]) => ({
       ]
     })
 
+    // YAML support
+    config.module.rules.push({
+      test: /\.ya?ml$/,
+      type: 'json',
+      use: 'yaml-loader'
+    })
+
     // Fix for nextjs bug #17806
     config.module.rules.push({
       test: /index.mjs$/,
@@ -55,6 +69,11 @@ const config = (site, remarkPlugins=[]) => ({
     config.resolve.alias.shared = path.resolve('../freesewing.shared/')
     config.resolve.alias.site = path.resolve(`../freesewing.${site}/`)
     config.resolve.alias.markdown = path.resolve(`../../markdown/${site}/`)
+    config.resolve.alias.pkgs = path.resolve(`../`)
+    // This forces webpack to load the code from source, rather than compiled bundle
+    for (const pkg of pkgs) {
+      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../${pkg}/src/index.js`)
+    }
 
     return config
   }

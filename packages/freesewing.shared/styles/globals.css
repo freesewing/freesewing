@@ -22,8 +22,19 @@
   .mdx a { @apply text-secondary underline decoration-1 }
   .mdx a:hover { @apply text-secondary-focus decoration-2 decoration-current }
   .mdx ul { @apply pl-4 list-disc list-inside text-base-content }
+  .mdx ol { @apply pl-4 list-decimal list-inside text-base-content }
   .mdx code { @apply bg-base-200 px-2 py-0.5 rounded }
   .mdx pre code { @apply bg-inherit }
+  .mdx span.icon.icon-link:before {
+    content: '#';
+    font-size: 80%;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+  .mdx a[aria-hidden="true"] {
+    text-decoration: none;
+  }
 
   /* FreeSewing SVG output styles */
   .fs-stroke-fabric      { stroke: var(--pattern-fabric); }

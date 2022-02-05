@@ -10,9 +10,11 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkCopyLinkedFiles from 'remark-copy-linked-files'
 import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
+import smartypants from 'remark-smartypants'
 // Rehype plugins we want to use
 import rehypeHighlight from 'rehype-highlight'
-
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeSlug from 'rehype-slug'
 /*
  * Summary: Loads markdown from disk and compiles it as MDX.
  *
@@ -37,6 +39,7 @@ const mdxLoader = async (language, site, slug) => {
       remarkPlugins: [
         remarkFrontmatter,
         remarkGfm,
+        smartypants,
         [
           remarkCopyLinkedFiles,
           {
@@ -51,7 +54,9 @@ const mdxLoader = async (language, site, slug) => {
         ]
       ],
       rehypePlugins: [
-        rehypeHighlight
+        rehypeHighlight,
+        rehypeSlug,
+        rehypeAutolinkHeadings,
       ],
     })
   )

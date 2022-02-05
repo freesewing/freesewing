@@ -22,9 +22,11 @@
     "react-sizeme": "^3.0.2",
     "react-timeago": "^6.2.1",
     "react-zoom-pan-pinch": "^2.1.3",
+    "rehype-autolink-headings": "^6.1.1",
     "rehype-highlight": "^5.0.1",
     "remark-extract-frontmatter": "^3.2.0",
     "remark-frontmatter": "^4.0.1",
+    "remark-smartypants": "^2.0.0",
     "to-vfile": "^7.2.2",
     "unist-util-visit": "^4.1.0"
   },
