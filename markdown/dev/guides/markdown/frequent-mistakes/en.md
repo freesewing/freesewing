@@ -70,18 +70,20 @@ If you're writing documentation that involves steps, please do not mix levels
 of steps. Steps written out in documentation are there to facilitate brainless 
 execution. Don't be afraid to repeat yourself.
 
-    If you use substeps we want those substeps to take away ambiguity rather 
-    than introduce it into your instructions. In the next example the substep 
-    introduces something that ought to be done before the previous steps. 
-    This creates confusion about when that step ought to be executed. 
+If you use substeps we want those substeps to take away ambiguity rather 
+than introduce it into your instructions. In the next example the substep 
+introduces something that ought to be done before the previous steps. 
+This creates confusion about when that step ought to be executed. 
 
-    An example of what not to do: 
+An example of what not to do: 
 
-    1. cut collar
-    2. cut collar stand
-    3.  sew collar stand to collar
-        1. sewing staystitch collar and collar stand
-    4. sew collar stand to neckline
+```md
+1. cut collar
+2. cut collar stand
+3.  sew collar stand to collar
+    1. sewing staystitch collar and collar stand
+4. sew collar stand to neckline
+```
 
 ## Be mindful of whitespace
 
