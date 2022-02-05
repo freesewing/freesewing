@@ -9,19 +9,11 @@ In a way, Waralee is just a waist band with a long piece of fabric attached. The
 
 ### Step 1: Sew the pockets
 
-<Note>
+<Fixme>
 
-##### Pockets are optional
-Traditionally, these types of pants do not have pockets. But I wanted to put my phone, keys and wallet somewhere. So I've included pockets in the pattern. You can decide for yourself if you would like them on your pants.
+The documentation for this step is still being writtern. Sorry for any inconveniences this causes.
 
-The illustrations in the next steps show the Waralee pants without pockets. Only the pocket placements from the pattern are shown, to help you orient yourself.
-
-##### If you do want pockets, make them first
-If you're going to make the pockets, make them before putting one piece of fabric on the other. It's easier to work with the parts still separated.
-
-I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
-
-</Note>
+</Fixme>
 
 #### Front Pockets
 
