@@ -9,6 +9,7 @@ import expressMiddleware from './middleware/express'
 import passportMiddleware from './middleware/passport'
 import routes from './routes'
 import path from 'path'
+import fs from 'fs'
 
 // Verify configuration
 verifyConfig(config, chalk)
@@ -39,8 +40,13 @@ mongoose
     process.exit()
   })
 
-// Catch-all route
-app.get('/', async (req, res) => res.sendFile(path.resolve(__dirname, 'landing', 'index.html')))
+// Catch-all route (Load index.html once instead of at every request)
+const index = fs.readFileSync(path.resolve(__dirname, 'landing', 'index.html'))
+app.get('/', async (req, res) => res
+  .set('Content-Type', 'text/html')
+  .status(200)
+  .send(index)
+)
 
 const port = process.env.PORT || 3000
 

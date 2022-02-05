@@ -1,6 +1,8 @@
 Unreleased:
 
   Fixed:
+    backend:
+      - Mitigate risk of denial-of-service attacks in catch-all route
     core:
       - Fix bug in Svg.escapeText() that only escaped the first quote
 
