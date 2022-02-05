@@ -7,7 +7,7 @@
     "develop": "next dev -p 3002",
     "prebuild": "SITE=dev node ../freesewing.shared/prebuild/index.mjs",
     "build": "next build",
-    "export": "yarn prebuild && next build && next export",
+    "export": "yarn prebuild && next build && next export && node scripts/algolia.js",
     "start": "next start -p 3002",
     "lint": "next lint",
     "testdeploy": "next build && next export && netlify-cli deploy",
