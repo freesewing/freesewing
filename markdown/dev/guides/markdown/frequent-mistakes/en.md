@@ -7,7 +7,9 @@ Some things to keep in mind when working in Markdown are:
 
 ## Use remark-jargon for glossary terms
 
-There is no need to add a *glossary* section to documentation. We use a plugin called [remark-jargon](https://github.com/freesewing/freesewing/blob/develop/packages/remark-jargon/README.md) to explain terms. Information can be found at the link.
+There is no need to add a *glossary* section to documentation. We use a plugin called [remark-jargon][rj] to explain terms. Information can be found at the link.
+
+[rj]: https://github.com/freesewing/freesewing/blob/develop/packages/remark-jargon/README.md
 
 ## Let lists be lists
 
@@ -21,7 +23,9 @@ If you get lost or have a question about how to do something, feel free to come 
 
 ## Create meaningful links
 
-When adding links please do not link them using a structure like: Link [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ). Instead put the link under the relevant term. See first list item for an example.
+When adding links please do not link them using a structure like: Link [here][yt]. Instead put the link under the relevant term. See first list item for an example.
+
+[yt]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 ## Make sure your links lead where they think you do
 
