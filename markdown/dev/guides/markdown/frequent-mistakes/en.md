@@ -40,12 +40,28 @@ See first list item for an example.
 
 ## Make sure your links lead where they think you do
 
-- When you are linking within freesewing you can use a relative link from 
+### Lining within the same website
+
+- When you are linking within freesewing.dev or freesewing.org you can use a relative link from 
 the site root.  
-Think `markdown/dev/guides/markdown/frequent-mistakes` instead of 
-`https://github.com/freesewing/freesewing/tree/develop/markdown/dev/guides/markdown/frequent-mistakes`  
-- Images can be put in the same folder you are working on with a link 
-to the filename. 
+Use:
+```
+/guides/markdown/frequent-mistakes
+```
+instead of 
+
+```
+https://freesewing.dev/guides/markdown/frequent-mistakes
+```  
+
+### Linking images
+
+Images can be put in the same folder you are working on with a link 
+to the filename. For example:
+
+```md
+This is [a picture of a banana](banana.jpg)
+```
 
 ## Avoid ambiguity when lising a number of steps
 
