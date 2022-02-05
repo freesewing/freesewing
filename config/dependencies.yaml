@@ -165,7 +165,7 @@ hugo:
     '@freesewing/brian': *freesewing
 i18n:
   dev:
-    'yaml': *yaml
+    'js-yaml': '^4.1.0'
   peer:
     '@freesewing/pattern-info': *freesewing
 jaeger:

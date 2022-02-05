@@ -226,7 +226,7 @@ Svg.prototype.renderText = function (point) {
 }
 
 Svg.prototype.escapeText = function (text) {
-  return text.replace('"', '&#8220;')
+  return text.replace(/\"/g, '&#8220;')
 }
 
 Svg.prototype.renderCircle = function (point) {

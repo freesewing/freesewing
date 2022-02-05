@@ -1,3 +1,9 @@
+Unreleased:
+
+  Fixed:
+    core:
+      - Fix bug in Svg.escapeText() that only escaped the first quote
+
 2.20.4:
   date: 2022-01-28
 
