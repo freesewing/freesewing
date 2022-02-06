@@ -50,6 +50,7 @@ If your main fabric is quite lightweight and flimsy you may need to interface al
  - **Heavyweight Hair Canvas**
    - Cut **2 Front** parts
    - Cut **2 Front shoulder** parts
+   - Cut **2 Side shoulder** parts
    - Cut **2 Back shoulder** parts
 
 <Note>
