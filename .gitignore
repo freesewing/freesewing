@@ -57,6 +57,12 @@ packages/*/package-lock.json
 packages/*/yarn.lock
 packages/strapi/.cache
 
+packages/freesewing.lab/public/locales/en/*.json
+packages/freesewing.lab/public/locales/es/*.json
+packages/freesewing.lab/public/locales/de/*.json
+packages/freesewing.lab/public/locales/fr/*.json
+packages/freesewing.lab/public/locales/nl/*.json
+
 # dependencies
 node_modules
 

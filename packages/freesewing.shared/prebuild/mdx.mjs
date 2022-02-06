@@ -1,6 +1,6 @@
 import path from 'path'
 import fs from 'fs'
-import { languages } from '../config/freesewing.mjs'
+import i18nConfig from '../config/i18n.config.mjs'
 import rdir from 'recursive-readdir'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
@@ -89,9 +89,9 @@ export const prebuildMdx = async(site) => {
   // Setup MDX root path
   const mdxRoot = path.resolve('..', '..', 'markdown', site)
 
-  // Loop over languages
+  // Loop over locales
   const pages = {}
-  for (const lang of (site === 'dev' ? ['en'] : languages)) {
+  for (const lang of (site === 'dev' ? ['en'] : i18nConfig.locales)) {
 
     console.log(`  - Language: ${lang}`)
 
