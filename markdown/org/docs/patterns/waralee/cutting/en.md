@@ -7,7 +7,7 @@ than it is to print out everything and cut the pattern the traditional way.
 
 However the pattern is available both ways so you can print out the whole thing, tape all the pages together, and use that to cut out the fabric if you prefer but we recommend only printing the part that you need to cut out.
 
-You will need to print out the pocket and pocket facings in the traditional way.
+You will need to print out the pockets and pocket facings in the traditional way.
 
 </Note>
 
