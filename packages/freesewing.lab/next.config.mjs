@@ -1,5 +1,6 @@
 import path from 'path'
 import { readdirSync } from 'fs'
+import i18nConfig from './next-i18next.config.js'
 
 const getDirectories = source =>
   readdirSync(source, { withFileTypes: true })
@@ -12,6 +13,7 @@ const config = {
   experimental: {
     externalDir: true,
   },
+  i18n: i18nConfig.i18n,
   pageExtensions: [ 'js' ],
   webpack: (config, options) => {
     // YAML support

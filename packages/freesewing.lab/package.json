@@ -29,6 +29,7 @@
     "mustache": "^4.2.0",
     "netlify-cli": "^8.4.2",
     "next": "latest",
+    "next-i18next": "^10.2.0",
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
     "react-instantsearch-dom": "^6.18.0",

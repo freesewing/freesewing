@@ -3,6 +3,7 @@ import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import Link from 'next/link'
 import About from 'site/components/about.js'
+import { useTranslation } from 'next-i18next'
 
 const links = (section, list) => list.map(design => (
   <li key={design} className="">
@@ -14,6 +15,7 @@ const links = (section, list) => list.map(design => (
 
 const PatternListPageTemplate = ({ sections=false }) => {
   const app = useApp()
+  const { t } = useTranslation(['app'])
   if (sections === false) sections = Object.keys(app.patterns)
 
   return (
@@ -32,6 +34,7 @@ const PatternListPageTemplate = ({ sections=false }) => {
         <meta property="og:site_name" content="lab.freesewing.dev" key='site' />
       </Head>
       <div className="max-w-screen-md">
+        <h1>{t('docs')}</h1>
         {Object.keys(app.navigation).map(section => {
           if (sections.indexOf(section) !== -1) return (
             <div key={section}>

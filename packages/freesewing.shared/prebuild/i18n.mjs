@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 import yaml from 'js-yaml'
-import { en, de, es, fr, nl } from '../../i18n/dist/index.mjs'
+import { en, de, es, fr, nl, languages } from '../../i18n/dist/index.js'
 
 const locales = { en, de, es, fr, nl }
 const l1 = ['patterns', 'settings']
@@ -16,7 +16,7 @@ const writeJson = (site, locale, namespace, content) => fs.writeFileSync(
     locale,
     `${namespace}.json`
   ),
-  JSON.stringify(content,null,2)
+  JSON.stringify(content)
 )
 
 const flattenL1 = content => {
@@ -48,6 +48,7 @@ const flattenL2 = content => {
 export const prebuildI18n = async (site) => {
   // Iterate over locales
   for (const locale in locales) {
+    console.log('Generating translation files for', locale)
     const loc = locales[locale]
     // Fan out into namespaces
     for (const namespace in loc.topics) {
@@ -69,7 +70,7 @@ export const prebuildI18n = async (site) => {
       }
       else writeJson(site, locale, namespace, loc.topics[namespace])
     }
-    console.log()
+    writeJson(site, locale, 'locales', languages)
   }
 }
 
