@@ -1,6 +1,16 @@
 # Change log for: @freesewing/components
 
 
+## 2.20.0 (2022-01-24)
+
+### Added
+
+ - Added support for `settings.scale` to Draft and Workbench components
+
+### Fixed
+
+ - Support handling of `&#160;` in text
+
 ## 2.19.2 (2021-11-02)
 
 ### Added

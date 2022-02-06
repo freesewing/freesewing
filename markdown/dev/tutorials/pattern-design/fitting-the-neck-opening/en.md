@@ -20,7 +20,7 @@ do {
 	  .move(points.right)
 	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
 
-	delta = paths.neck.length() - target
+	delta = paths.quarterNeck.length() - target
   if (delta > 0) tweak = tweak * 0.99
   else tweak = tweak * 1.02
 } while (Math.abs(delta) > 1)
@@ -43,7 +43,9 @@ If the delta is negative, our path is too short and we increase the tweak factor
 
 We keep on doing this until `Math.abs(delta)` is less than 1. Meaning that we are within 1mm of our target value.
 
-<Example pattern="tutorial" part="step2" caption="It might look the same as before, but now it's just right" />
+<Example pattern="tutorial" part="step2">
+It might look the same as before, but now it's just right
+</Example>
 
 Now that we're happy with the length of our quarter neck opening, let's construct the entire neck opening.
 

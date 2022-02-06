@@ -7,7 +7,7 @@ In other words, the back will be somewhat the same height as your bra strap.
 
 If you increase the back rise, your corset will rise upwards at the back.
 
-> As this is an underbust corset, the back rise is a style choice and wonâ€™t affect the fit
+> As this is an underbust corset, the back rise is a style choice and won't affect the fit
 
 
 ## Effect of this option on the pattern

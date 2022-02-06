@@ -1,25 +1,31 @@
-import { name, version } from '../package.json'
+import pkg from '../package.json'
+
+const deprecated =
+  "The 'goreNumber' property for the gore macro is deprecated " +
+  "and will be removed in a future version. Please use 'gores' instead"
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: svg =>  svg.attributes.setIfUnset('freesewing:plugin-gore', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-gore', pkg.version),
   },
   macros: {
     gore: function (so) {
       let from = so.from
-      let goreNumber = so.goreNumber //number of gores for the complete sphere
+      // TODO: Drop so.goreNumber in v3, it's deprecated
+      let gores = so.gores || so.goreNumber //number of gores for the complete sphere
+      if (so.goreNumber) console.log(deprecated)
       let radius = so.radius //radius of the sphere
       let prefix = so.prefix
       let extraLength = so.extraLength //the length of the straight section after a complete semisphere
 
       this.points[prefix + 'p1'] = from.shift(0, (radius * Math.PI) / 2 + extraLength)
       this.points[prefix + 'Cp1'] = this.points[prefix + 'p1'].shift(
-        180 - 180 / goreNumber,
-        radius / 2 / Math.cos(Math.PI / goreNumber)
+        180 - 180 / gores,
+        radius / 2 / Math.cos(Math.PI / gores)
       )
-      this.points[prefix + 'p3'] = from.shift(90, (radius * Math.PI) / goreNumber)
+      this.points[prefix + 'p3'] = from.shift(90, (radius * Math.PI) / gores)
       this.points[prefix + 'p2'] = this.points[prefix + 'p3'].shift(0, extraLength)
       this.points[prefix + 'Cp2'] = this.points[prefix + 'p2'].shift(
         0,

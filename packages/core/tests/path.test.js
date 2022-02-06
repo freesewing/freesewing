@@ -766,7 +766,9 @@ it("Should overwrite a path attribute", () => {
   pattern.parts.a = new pattern.Part();
   let a = pattern.parts.a;
 
-  a.paths.line = new a.Path()
+  // Paths from shorthand have the raise method
+  const { Path } = a.shorthand()
+  a.paths.line = new Path()
     .move(new a.Point(0, 0))
     .line(new a.Point(0, 40))
     .attr("class", "foo")

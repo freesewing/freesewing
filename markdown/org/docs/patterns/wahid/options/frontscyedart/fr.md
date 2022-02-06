@@ -1,14 +1,14 @@
 
-Ce motif est livré avec un dart scye par défaut de 1 cm (fléchette d'emmanchement) à l'avant.
+Ce patron est prévu avec une pince de 1 cm (pensez pince d'emmanchure) par défaut sur le devant.
 
-Vous pouvez augmenter ou diminuer la fléchette pour influencer le blindage.
+Vous pouvez augmenter ou diminuer la pince pour modifier l'emmanchure.
 
 > #### ###### Pour quoi faire ?
 > 
-> Le but de ce treillis est de s'assurer que le blindage est à plat contre votre corps, plutôt que de la grignoter. Etant donné qu’il n’y a pas de manche, une brèche béante est particulièrement malvoyante.
+> Le but de cette pince est de s'assurer que l'emmanchure se pose à plat contre votre corps, plutôt que de la bailler. Etant donné qu’il n’y a pas de manche, une emmanchure qui baille c'est particulièrement disgracieux.
 
-> Bien que ce dart soit utilisé pour façonner le motif, vous n'avez pas à coudre le dart parce qu'il est incorporé dans la fléchette avant.
+> Bien que cette pince soit utilisée pour façonner le patron, vous n'avez pas à coudre la pince parce qu'elle est incorporée dans la pince du devant.
 
 
-## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_frontscyedart_sample.svg "Effet de cette option sur le motif")
+## Effet de cette option sur le patron
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_frontscyedart_sample.svg "Effet de cette option sur le patron")

@@ -1,7 +1,7 @@
 Om Shin te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Ongeveer 0,75 meter geschikte stof (zie [optionele stoffen](/docs/patterns/shin/fabric))
+- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
 - Twee vetergaatjes en een koordje
 
 > ## Een overlockmachine is handig, maar optioneel

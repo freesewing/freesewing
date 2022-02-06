@@ -41,4 +41,4 @@ For example `38` as 38cm is a realistic head circumference measurement for a bab
 Enter `38` in the box, and click on **Draft your pattern** in the top navigation bar to get back to your draft,
 which for now still looks like this:
 
-<Example pattern="tutorial" part="step1" caption="Nothing has changed, yet" />
+<Example pattern="tutorial" part="step1">Nothing has changed, yet</Example>

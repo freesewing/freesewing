@@ -1,13 +1,14 @@
-import { name, version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-flip', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-flip', pkg.version),
   },
   macros: {
-    flip: function () {
+    flip: function (so) {
+      const axis = so?.axis === 'y' ? 'y' : 'x'
       let flipped = null
       const ops = ['from', 'to', 'cp1', 'cp2']
       for (const id in this.points) {
@@ -18,7 +19,7 @@ export default {
           if (flipped === false) flipped = 1
           else flipped += 1
         }
-        this.points[id].x = this.points[id].x * -1
+        this.points[id][axis] = this.points[id][axis] * -1
         this.points[id].attributes.set('flipped', flipped)
       }
       for (let id of Object.keys(this.paths)) {
@@ -30,7 +31,7 @@ export default {
               let wasFlipped = this.paths[id].ops[op][type].attributes.get('flipped')
               if (wasFlipped !== false) wasFlipped = parseInt(wasFlipped)
               if (wasFlipped !== flipped) {
-                this.paths[id].ops[op][type].x = this.paths[id].ops[op][type].x * -1
+                this.paths[id].ops[op][type][axis] = this.paths[id].ops[op][type][axis] * -1
                 this.paths[id].ops[op][type].attributes.set('flipped', flipped)
               }
             }
@@ -42,8 +43,9 @@ export default {
         // and not double flip the points flipped above
         let wasFlipped = this.snippets[id].anchor.attributes.get('flipped')
         if (wasFlipped !== false) wasFlipped = parseInt(wasFlipped)
-        if (wasFlipped !== flipped) this.snippets[id].anchor.x = this.snippets[id].anchor.x * -1
+        if (wasFlipped !== flipped)
+          this.snippets[id].anchor[axis] = this.snippets[id].anchor[axis] * -1
       }
-    }
-  }
+    },
+  },
 }

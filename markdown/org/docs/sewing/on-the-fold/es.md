@@ -8,7 +8,7 @@ This means that only half the pattern piece is printed, and you should cut it ou
 
 La línea plegable se indica con una doble flecha como en este ejemplo:
 
-<Legend part="cutonfold" caption="A cut-on-fold indicator" >
+<Legend part="cutonfold">A cut-on-fold indicator</Legend>
 
 <Tip>
 

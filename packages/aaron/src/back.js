@@ -63,27 +63,20 @@ export default function (part) {
         .move(points.armhole)
         .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
         .length() + store.get('frontArmholeLength')
-    points.bindinAnchor = new Point(points.armhole.x / 4, points.armhole.y)
+    points.bindingAnchor = new Point(points.armhole.x / 4, points.armhole.y)
       .attr('data-text', 'cutTwoStripsToFinishTheArmholes')
       .attr('data-text', ':\n')
-      .attr('data-text', 'width')
-      .attr('data-text', ':')
-      .attr('data-text', units(sa * 6 || 60))
-      .attr('data-text', '\n')
-      .attr('data-text', 'length')
-      .attr('data-text', ':')
-      .attr('data-text', units(armholeLength * 0.95 + 2 * sa))
-      .attr('data-text', '\n&#160;\n')
+      .attr('data-text', `2x: ${units(sa * 6 || 60)} x ${units(armholeLength * 0.95 + 2 * sa)}`)
+      .attr('data-text', '\n \n')
       .attr('data-text', 'cutOneStripToFinishTheNeckOpening')
       .attr('data-text', ':\n')
       .attr('data-text', 'width')
       .attr('data-text', ':')
-      .attr('data-text', units(sa * 6))
-      .attr('data-text', '\n')
-      .attr('data-text', 'length')
-      .attr('data-text', ':')
-      .attr('data-text', units(neckOpeningLength * 2 * 0.95 + 2 * sa))
-      .attr('data-text-lineheight', 6)
+      .attr(
+        'data-text',
+        `${units((sa || 10) * 6)} x ${units(neckOpeningLength * 2 * 0.95 + 2 * sa)}`
+      )
+    //.attr('data-text-class', 'text-sm')
 
     macro('cutonfold', {
       from: points.cfNeck,

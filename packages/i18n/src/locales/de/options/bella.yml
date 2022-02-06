@@ -1,24 +1,27 @@
 ---
 chestEase:
-  title: Brust Zugabe
-  description: Steuert die Menge an Leichtigkeit im vollen Teil deiner Truhe
+  title: Brustumfangszugabe
+  description: Steuert die Größe der Zugabe zum Brustumfang
 waistEase:
   title: Taillenzugabe
   description: Steuert die Menge an Leichtigkeit in deiner Taille
 bustSpanEase:
-  title: Büstenumfang leicht
-  description: Steuert die Menge der (horizontalen) Leichtigkeit, die deinem Bustbereich hinzugefügt wird, wenn du den Bustpunkt findest.
+  title: Zugabe seitlicher Brustbereich
+  description: "Steuert die Größe der (horizontalen) Zugabe, zu deinem seitlichen Brustbereich, \nwenn Brustpunkt berechnet wird."
+fullChestEaseReduction:
+  title: Full chest ease reduction
+  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
 backDartHeight:
-  title: Rückseitendart-Höhe
-  description: Steuert die Höhe des Rückendarts
+  title: Höhe Rückenabnäher
+  description: Steuert die Höhe des Rückenabnähers
 bustDartLength:
   title: Länge des Brustabnähers
-  description: Steuert die Länge des Büstendarts
+  description: Steuert die Länge des Brustabnähers
 waistDartLength:
   title: Länge des Taillenabnähers
-  description: Steuert die Länge des Taillendarts
+  description: Steuert die Länge des Taillenabnähers
 bustDartCurve:
-  title: Büstendart-Kurve
+  title: Rundung Brustabnäher
   description: Steuert die Krümmung des Büstendarts
 armholeDepth:
   title: Armlochtiefe
@@ -26,9 +29,12 @@ armholeDepth:
 backArmholeSlant:
   title: Hintere Armlochschiebung
   description: Das Rüstungsloch dreht sich leicht um seinen Pitchpunkt
+frontArmholeCurvature:
+  title: Vordere Armlochkrümmung
+  description: Steuert wie tief das Armloch nach vorne unten ausgeschnitten ist
 backArmholeCurvature:
   title: Hintere Armlochkrümmung
-  description: Steuert die Tiefe des Rüstungslochs im hinteren unteren Bereich
+  description: Steuert wie tief das Armloch nach hinten unten ausgeschnitten ist
 frontArmholePitchDepth:
   title: Front-Armloch-Tiefe
   description: Stellt die horizontale Position des Vorderarmlochpunktes fest
@@ -45,5 +51,5 @@ frontShoulderWidth:
   title: Vordere Schulterbreite
   description: Steuert die Schmalheit der vorderen Schultern relativ zum Rücken
 highBustWidth:
-  title: Hohe Büstenbreite
-  description: Erlaubt es dir die Breite der hohen Büste vorne zu optimieren
+  title: Oberbrustweite
+  description: Erlaubt es dir die Oberbrustweite vorne zu optimieren

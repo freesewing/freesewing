@@ -1,5 +1,17 @@
- - **Oberstoff**
-   - Schneiden Sie **2 Vorderhosen** den Stoff _rechts auf rechts gelegt_
-   - Schneiden Sie **2 Hinterhosen** den Stoff _rechts auf rechts gelegt_
+ **Oberstoff**
 
-Titan ist ein Hosengrundschnitt. Es gibt nur die Vorder- und Hinterhose des Hosenbeins (je 2x zugeschneiden gespiegelt).
+  - Schneide **2 Vorderseiten** mit _guten Seiten zusammen_
+  - Schneide **2 Rückseiten** mit _guten Seiten zusammen_
+
+Diese Anleitung ist nur für den Titan-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
+
+<Note>
+
+###### Titan ist ein Grundschnitt, kein Schnittmuster
+
+Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+
+Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
+
+</Note>

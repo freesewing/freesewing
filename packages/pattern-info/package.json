@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/pattern-info",
-  "version": "2.19.5",
+  "version": "2.20.4",
   "description": "Information about available freesewing patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -27,12 +27,12 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "rollup -c",
-    "lernabuild": "node src/prebuild.js && rollup -c",
     "test": "echo \"pattern-info: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
+    "cibuild_step2": "node src/prebuild.js && rollup -c",
     "prebuild": "node src/prebuild.js"
   },
   "peerDependencies": {},

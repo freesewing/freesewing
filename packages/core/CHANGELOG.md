@@ -1,13 +1,33 @@
 # Change log for: @freesewing/core
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.3 (2022-01-28)
+
+### Changed
+
+ - Setting Path.render() no longer raises an info message
+ - Always raise debug, but only store it whend debug is enabled
+
+## 2.20.0 (2022-01-24)
+
+### Added
+
+ - Added support for `settings.scale`
+
+## 2.19.8 (2022-01-08)
+
+### Fixed
+
+ - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
+
+## 2.19.6 (2021-12-29)
 
 ### Added
 
  - Added the new attributes.setIfUnset() method
+ - Added the new `scale` setting
 
-## 2.19.5 (2022-11-13)
+## 2.19.5 (2021-11-13)
 
 ### Fixed
 

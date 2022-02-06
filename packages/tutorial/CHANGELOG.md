@@ -1,6 +1,12 @@
 # Change log for: @freesewing/tutorial
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.17.0 (2021-07-01)
 
 ### Fixed

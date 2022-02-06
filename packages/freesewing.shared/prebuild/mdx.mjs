@@ -1,16 +1,14 @@
 import path from 'path'
 import fs from 'fs'
-import { languages, strapiHost } from '../config/freesewing.mjs'
+import { languages } from '../config/freesewing.mjs'
 import rdir from 'recursive-readdir'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
-import vfileReporter from 'vfile-reporter'
 import { readSync } from 'to-vfile'
-import yaml from 'yaml'
-import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
+import yaml from 'js-yaml'
 
 
 /*
@@ -21,8 +19,10 @@ import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
  *
  *  - folder: the root folder to look in
  *  - lang: the language files to looks for
+ *
+ *  Exported because it's also used by the Algolia index script
  */
-const getMdxFileList = async (folder, lang) => {
+export const getMdxFileList = async (folder, lang) => {
   let allFiles
   try {
     allFiles = await rdir(folder)
@@ -53,19 +53,29 @@ const fileToSlug = (file, site, lang) => (file.slice(-6) === `/${lang}.md`)
   : false
 
 /*
- * Helper method to get the title and intro text from an MDX file
+ * Helper method to get the title and meta data from an MDX file
  *
  * Parameters:
  *
  *  - file: the full path to the file
  */
-const mdxMetaInfo = async file => await unified()
-  .use(remarkIntroPlugin)
-  .use(remarkParser)
-  .use(remarkCompiler)
-  .use(remarkFrontmatter)
-  .use(remarkFrontmatterExtractor, { yaml: yaml.parse })
-  .process(readSync(file))
+const mdxMetaInfo = async file => {
+  let result
+  try {
+    result = await unified()
+      //.use(remarkMdx)
+      .use(remarkParser)
+      .use(remarkCompiler)
+      .use(remarkFrontmatter)
+      .use(remarkFrontmatterExtractor, { yaml: yaml.load })
+      .process(readSync(file))
+  }
+  catch (err) {
+    console.log(err)
+  }
+
+  return result
+}
 
 /*
  * Main method that does what needs doing
@@ -94,14 +104,17 @@ export const prebuildMdx = async(site) => {
       const slug = fileToSlug(file, site, lang)
       if (slug) {
         const meta = await mdxMetaInfo(file)
-        if (meta) {
+        if (meta.data?.title && meta.data?.title) {
           pages[lang][slug] = {
-            ...meta.data,
+            title: meta.data.title,
             slug,
-            order: meta?.data?.order
+            order: meta.data.order
               ? `${meta.data.order}${meta.data.title}`
               : meta.data.title
           }
+        } else {
+          console.log('Failed to extract meta info from:', slug)
+          if (meta.messages.length > 0) console.log(meta.messages)
         }
       }
     }

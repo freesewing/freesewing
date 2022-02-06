@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'carlton',
-  version: version,
+  version: pkg.version,
   design: ['Anneke Caramin', 'Joost De Cock'],
   code: 'Joost De Cock',
   department: 'coats',
@@ -81,12 +81,12 @@ export default {
     front: 'bentFront',
     back: 'bentBack',
     tail: ['front', 'back'],
-    topSleeve: 'bentTopSleeve',
-    underSleeve: 'bentUnderSleeve',
+    topSleeve: ['bentTopSleeve', 'bentFront'],
+    underSleeve: ['bentUnderSleeve', 'bentFront'],
     belt: 'back',
     collarStand: ['front', 'back'],
     collar: 'collarStand',
-    cuffFacing: ['topSleeve', 'underSleeve'],
+    cuffFacing: ['topSleeve', 'underSleeve', 'bentFront'],
     pocket: 'front',
     pocketFlap: 'front',
     pocketLining: 'pocket',

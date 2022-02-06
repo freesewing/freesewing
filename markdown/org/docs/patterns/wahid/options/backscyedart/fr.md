@@ -1,17 +1,17 @@
-![Pince de carrure](backscyedart.svg)
+![Pince de carrure dos](backscyedart.svg)
 
-Ce motif est livré avec une dart de 0.5 cm scye par défaut sur le dos. Vous pouvez augmenter ou diminuer la fléchette pour influencer le blindage.
+Ce patron est prévu avec une pince de 0.5 cm (pince d'emmanchure) par défaut sur le dos. Vous pouvez augmenter ou diminuer la pince pour modifier l'emmanchure.
 
 <Note>
 
 ###### Pour quoi faire ?
 
-Le but de ce treillis est de s'assurer que le blindage est à plat contre votre corps, plutôt que de la grignoter.
-Etant donné qu’il n’y a pas de manche, une brèche béante est particulièrement malvoyante.
+Le but de cette pince est de s'assurer que l'emmanchure se pose à plat contre votre corps, plutôt que de la bailler.
+Etant donné qu’il n’y a pas de manche, une emmanchure qui baille c'est particulièrement disgracieux.
 
-Bien que ce dart soit utilisé pour façonner le motif, vous n'avez pas à coudre le dart parce qu'il est incorporé dans la ligne de couture des épaules.
+Bien que cette pince soit utilisée pour façonner le patron, vous n'avez pas à coudre la pince parce qu'elle est incorporée dans la ligne de couture des épaules.
 
 </Note>
 
-## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backscyedart_sample.svg "Effet de cette option sur le motif")
+## Effet de cette option sur le patron
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backscyedart_sample.svg "Effet de cette option sur le patron")

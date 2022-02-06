@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'simon',
-  version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -122,6 +122,12 @@ export default {
     sleeve: ['sleeveBase', 'front', 'back'],
     frontRight: ['back'],
     frontLeft: ['back'],
+    sleevePlacketUnderlap: ['back'],
+    sleevePlacketOverlap: ['back'],
+    collar: ['back'],
+    collarStand: ['back'],
+    buttonPlacket: ['back'],
+    buttonholePlacket: ['back'],
   },
   inject: {
     frontBase: 'base',
@@ -161,10 +167,12 @@ export default {
     buttonPlacketStyle: {
       list: ['classic', 'seamless'],
       dflt: 'classic',
+      hide: options => options.seperateButtonPlacket
     },
     buttonholePlacketStyle: {
       list: ['classic', 'seamless'],
       dflt: 'seamless',
+      hide: options => options.seperateButtonholePlacket
     },
     cuffStyle: {
       list: [

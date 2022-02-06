@@ -1,0 +1,113 @@
+{
+  "name": "@freesewing/plugintest",
+  "version": "2.20.4",
+  "description": "A FreeSewing pattern to test (y)our plugins",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
+    "pattern",
+    "sewing",
+    "sewing pattern"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "rollup -c",
+    "cibuild_step1": "rollup -c",
+    "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register",
+    "pubtest": "npm publish --registry http://localhost:6662",
+    "pubforce": "npm publish",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "start": "rollup -c -w",
+    "netlify": "echo \"Not configured yet\"",
+    "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register"
+  },
+  "peerDependencies": {
+    "@freesewing/core": "^2.20.4",
+    "@freesewing/plugin-bundle": "^2.20.4",
+    "@freesewing/plugin-banner": "^2.20.4",
+    "@freesewing/plugin-bartack": "^2.20.4",
+    "@freesewing/plugin-bust": "^2.20.4",
+    "@freesewing/plugin-buttons": "^2.20.4",
+    "@freesewing/plugin-cutonfold": "^2.20.4",
+    "@freesewing/plugin-dimension": "^2.20.4",
+    "@freesewing/plugin-flip": "^2.20.4",
+    "@freesewing/plugin-gore": "^2.20.4",
+    "@freesewing/plugin-grainline": "^2.20.4",
+    "@freesewing/plugin-i18n": "^2.20.4",
+    "@freesewing/plugin-logo": "^2.20.4",
+    "@freesewing/plugin-measurements": "^2.20.4",
+    "@freesewing/plugin-mirror": "^2.20.4",
+    "@freesewing/plugin-notches": "^2.20.4",
+    "@freesewing/plugin-round": "^2.20.4",
+    "@freesewing/plugin-scalebox": "^2.20.4",
+    "@freesewing/plugin-sprinkle": "^2.20.4",
+    "@freesewing/plugin-svgattr": "^2.20.4",
+    "@freesewing/plugin-theme": "^2.20.4",
+    "@freesewing/plugin-title": "^2.20.4",
+    "@freesewing/plugin-validate": "^2.20.4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@freesewing/components": "^2.20.4",
+    "@freesewing/css-theme": "^2.20.4",
+    "@freesewing/i18n": "^2.20.4",
+    "@freesewing/mui-theme": "^2.20.4",
+    "@freesewing/plugin-bust": "^2.20.4",
+    "@freesewing/plugin-buttons": "^2.20.4",
+    "@freesewing/plugin-flip": "^2.20.4",
+    "@freesewing/utils": "^2.20.4",
+    "react-scripts": "^5.0.0",
+    "webpack": "^5.67.0",
+    "rollup": "^2.66.1",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^v4.0.0-alpha.60",
+    "axios": "^0.25.0",
+    "react-intl": "^5.24.4",
+    "prop-types": "^15.8.1",
+    "mocha": "^9.1.1",
+    "chai": "^4.2.0",
+    "@babel/register": "^7.10.5"
+  },
+  "files": [
+    "dist/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6"
+  },
+  "rollup": {
+    "exports": "default"
+  }
+}

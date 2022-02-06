@@ -1,7 +1,13 @@
 # Change log for: @freesewing/plugin-dimension
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.0 (2022-01-24)
+
+### Fixed
+
+ - Support hiding start/end markers on path dimensions (pd macro)
+
+## 2.19.6 (2021-12-29)
 
 ### Added
 

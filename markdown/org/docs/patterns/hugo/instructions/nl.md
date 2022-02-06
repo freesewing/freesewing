@@ -24,8 +24,8 @@ Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
  - Stik de belegdelen aan de zak met 1 cm naadwaarde.  Stik zowel de lange rand als het kortere randje onderaan de zak.
  - Knip voorzichtig de naadwaarde bij aan de belegdelen.
  - Keer de belegdelen naar de goede kant.  Rol de naden op hun plaats en strijk ze plat.
- - Stik de zakopening op 1/2 cm van de rand door, zowel langs de boven- en de onderrand, om het beleg en de naadwaarde vast te zetten.
- - Stik de bovenrand nog een keer door, 1/2 cm van het eerste stiksel.  Dit stiksel stopt aan het eerste stiksel aan de onderrand.
+ - Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
+ - Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Dit stiksel stopt aan het eerste stiksel aan de onderrand.
  - Knip het overtollige beleg aan de binnenkant van de zak weg.
  - Strijk de randen.
 

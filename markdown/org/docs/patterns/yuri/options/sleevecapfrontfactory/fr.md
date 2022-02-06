@@ -1,4 +1,4 @@
-![L'emplacement vertical du point d'inflexion avant](./sleevecapfonrtfactory.svg)
+![L'emplacement vertical du point d'inflexion avant](./sleevecapfrontfactory.svg)
 
 Cette option contrôle la position verticale du point d'inflexion de la tête de manche sur le devant de la manche.
 
@@ -9,4 +9,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_sleevecapfrontfactory_sample.svg "Effet de cette option sur le motif")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](yuri_sleevecapfrontfactory_sample.svg "Effet de cette option sur le motif")

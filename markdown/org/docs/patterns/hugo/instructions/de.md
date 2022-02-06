@@ -24,8 +24,8 @@ Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
  - Nähen Sie die Gesichtsstücke mit einem Abstand von 1cm an die Tasche an.  Nähen Sie sowohl den langen Rand als auch den kürzeren Rand am unteren Rand der Tasche.
  - Die Nahtzuweisung auf die Seitenteile sorgfältig abschneiden.
  - Drehen und drehen Sie die Gesichtsstücke gute Seiten aus.  Dann Handwalzen und drücken Sie die Nähte.
- - Topstitch oder Kantenstich 1<unk> 2 cm entlang der oberen und unteren Kanten auf jeder Seite der Tasche zu verankern, um die Vorderseite und die Nahtzugabe.
- - Topstitch eine weitere Linie 1<unk> 2 aus der Innenkante der Fassade auf jeder Seite der Tasche.  Diese Stichlinie endet an der unteren Kantenstichlinie.
+ - Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
+ - Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Diese Stichlinie endet an der unteren Kantenstichlinie.
  - Abschneiden Sie den Überschuss an der Innenseite der Tasche.
  - Drücke die Kanten.
 

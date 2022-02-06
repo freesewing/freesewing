@@ -21,10 +21,9 @@ To also copy the attributes, use [`Point.clone()`](reference/api/point/clone/) i
 
 ## Point.copy() example
 
-<Example
-  part="point_copy"
-  caption="An example of the Point.copy() method"
-/>
+<Example part="point_copy">
+An example of the Point.copy() method
+</Example>
 
 ```js
 let { Point, points, Snippet, snippets } = part.shorthand();

@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'simone',
-  version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -130,6 +130,12 @@ export default {
     sleeve: ['sleeveBase', 'front', 'back'],
     frontRight: ['back'],
     frontLeft: ['back'],
+    sleevePlacketUnderlap: ['back'],
+    sleevePlacketOverlap: ['back'],
+    collar: ['back'],
+    collarStand: ['back'],
+    buttonPlacket: ['back'],
+    buttonholePlacket: ['back'],
   },
   inject: {
     frontBase: 'base',

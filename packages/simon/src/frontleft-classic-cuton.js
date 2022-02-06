@@ -32,6 +32,10 @@ export default (part) => {
       .move(points.placketCfNeck)
       .line(points.placketCfHem)
       .attr('class', 'help')
+    if (!options.seperateButtonPlacket) {
+      // Match lines are only displayed on attached plackets
+      paths.frontCenter.attr('data-text', 'matchHere').attr('data-text-class', 'text-xs center')
+    }
     paths.placketInnerEdgeFold = new Path()
       .move(points.placketTopInnerEdgeFold)
       .line(points.placketBottomInnerEdgeFold)
@@ -52,8 +56,6 @@ export default (part) => {
       .move(points.placketBottomOuterEdgeOver)
       .line(points.placketTopOuterEdgeOver)
       .attr('class', 'dotted')
-      .attr('data-text', 'matchHere')
-      .attr('data-text-class', 'text-xs center')
     paths.placketOuterEdgeUnder = new Path()
       .move(points.placketTopOuterEdgeUnder)
       .line(points.placketBottomOuterEdgeUnder)

@@ -9,7 +9,9 @@ array path.divide()
 Breaks a path apart in an array of atomic paths. An atomic path is a path that can't be divided further and is
 always made up of one move + one drawing operation.
 
-<Example part="path_divide" caption="Example of the Path.divide() method" />
+<Example part="path_divide">
+Example of the Path.divide() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

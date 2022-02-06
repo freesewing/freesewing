@@ -1,13 +1,13 @@
 import logo from './logo'
-import { name, version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
     preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-logo') === false) {
-        svg.attributes.set('freesewing:plugin-logo', version)
+        svg.attributes.set('freesewing:plugin-logo', pkg.version)
         svg.defs += logo
       }
     },

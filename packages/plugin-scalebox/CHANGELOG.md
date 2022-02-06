@@ -1,11 +1,15 @@
 # Change log for: @freesewing/plugin-scalebox
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.6 (2021-12-29)
 
 ### Added
 
  - Added (esm) unit tests
+
+### Changed
+
+ - Add utility classes and CSS variables for better styling support
 
 ## 2.11.3 (2021-01-16)
 

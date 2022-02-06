@@ -30,7 +30,7 @@ These instructions assume you have marked your seam lines. They may be harder to
 - With right sides together, matching seam lines and peaks, sew two crown pieces together.  
 - Press seams open. You made need to use a tailors ham for this, if you do not have one you can use flannels or towels instead.  
 - (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.  
-- Repeat steps 1 and 2 until you have two halves. If half the number of crown pieces is an odd number you will have to sew a single piece to each half. e.g. If you have 6 crown pieces, you make two halves of 3 sewing one piece to two sewn together pieces.  
+- Repeat until you have two halves. If half the number of crown pieces is an odd number you will have to sew a single piece to each half. e.g. If you have 6 crown pieces, you make two halves of 3 sewing one piece to two sewn together pieces.  
 - With right sides together, matchinig seam lines and peaks, sew the two halves together. You may find it easier to handstitch the peak together due to bulk or for precision. This seam will be refered to as the "centre crown seam" going forward. 
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
 
@@ -51,7 +51,7 @@ Depending on your seam allowance you may want to trim seams as you go to reduce 
 - Turn inside out and press.  
 - (Optional) _Topstitch_ or _edgestitch_ the folded edge.  
 - _Baste_ the raw edges together.  
-- Repeat steps 3 to 7 for the remaining ear flap.
+- Repeat for the remaining ear flap.
 
 <Tip>
 
@@ -62,7 +62,7 @@ If you are uncertain about the length you want for your ties take 1 metre (39") 
 <Note>
 
 The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
-If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
@@ -75,7 +75,7 @@ If you prefer you can make your custom ties with fabric, you can find how to do 
 - (Optional) _Topstitch_ or _Edgestitch_ the folded edge.  
 - _Baste_ the raw edges together.  
 - Sew the buttonhole in your prefered method.  
-- Repeat steps 2 to 7 for the remaining ear flap.
+- Repeat for the remaining ear flap.
 
 <Warning>
 
@@ -126,7 +126,7 @@ If preferred you can temporarily attach the visor insert another way that does n
 - Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.  
 - Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.  
 - _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.  
-- Repeat steps 1 to 6 for the remaining visor pieces.
+- Repeat for the remaining visor pieces.
 
 ### Step 5: Assembly and Lining
 
@@ -136,11 +136,11 @@ Once again there are two methods for final assembly and lining. Read both method
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).  
 - Sew ear flap to the crown along seam lines.  
-- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.  
+- Repeat for the remaining ear flap on the opposite side of the crown.  
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.  
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.  
 - Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.   
-- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.  
+- Repeat for the remaining visor on the opposite side of the centre crown seam.  
 - Remove all pad and basting stitches.  
 - Press the seam allowances inwards, making sure the stitching is not visible on the outside.  
 - (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.  
@@ -155,11 +155,11 @@ Once again there are two methods for final assembly and lining. Read both method
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).  
 - _Baste_ the ear flap to the crown along seam lines  
-- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.  
+- Repeat for the remaining ear flap on the opposite side of the crown.  
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.  
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.  
 - (Optional) Machine-baste the visor to the crown along seam lines.  
-- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.  
+- Repeat for the remaining visor on the opposite side of the centre crown seam.  
 - Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.  
 - With right sides together, matching centre crown seams, panel seams and seam lines. Sew the lining to the the crown along seam lines. If bulky you may want to trim either the lining seams or both seams.
 - Turn hat inside out, pressing lining to inside.   
@@ -188,7 +188,7 @@ If you are having trouble dealing with the curves of the visors, sew a stitching
 
 **For both Assembly and Lining Methods**  
 
-Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of visors and ear flap pieces are different for other numbered panelled Holmes. As a rule generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of visors and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
@@ -201,13 +201,13 @@ If you did not cut your ties down when constructing the ear flaps, now is the ti
 - Fold the ends of a tie in half and cut a triangle out from the corner to the fold.  
 - Unfold.  
 - If you are worried about the ties fraying you can use fray check or equivalent.  
-- Repeat steps 1 to 3 for the remaining tie.
+- Repeat for the remaining tie.
 
 #### Finishing Ties Method 2
 
 - Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.  
 - _Whipstitch_ the folded edge down to the tie  
-- Repeat steps 1 to 2 for the remaining tie.
+- Repeat for the remaining tie.
 
 <Note>
 
@@ -225,7 +225,7 @@ Unless you are doing the Buttonhole Ear Flaps you do not have to sew a button on
 
 <Note>
 
-Whilst certainly optional, you may find that a button is what is missing from the hat to finish the look. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what missing. If it is, attach it permanently. 
+Whilst certainly optional, you may find that a button is what is missing from the hat to finish the look. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is, attach it permanently. 
 Whilst a covered button is recommeneded you can use whatever button you desire, feel free to experiment!
 
 </Note>

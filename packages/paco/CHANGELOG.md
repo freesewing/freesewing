@@ -1,7 +1,14 @@
 # Change log for: @freesewing/paco
 
 
-## 2.19.4 (2022-11-09)
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Hide the `frontPocketFlapSize` from the user
+ - Switched to default import for version from package.json
+
+## 2.19.4 (2021-11-09)
 
 ### Fixed
 

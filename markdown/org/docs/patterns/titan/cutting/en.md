@@ -1,5 +1,17 @@
- - **Main fabric**
-   - Cut **2 front** with _good sides together_
-   - Cut **2 back** with _good sides together_
+ **Main fabric**
 
-Titan is a trouser block. There's only the front and back of each leg.
+  - Cut **2 front** parts with _good sides together_
+  - Cut **2 back** parts with _good sides together_
+
+These cutting instructions are just for the default Titan block. Adjust your cutting accordingly if you have/are making changes to the block.
+
+<Note>
+
+###### Titan is a block, not a pattern
+
+A block is a basic shape on which other patterns are based.
+They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+
+Blocks are typically not made as-is but rather serve as a basis for other patterns.
+
+</Note>

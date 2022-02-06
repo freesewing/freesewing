@@ -1,17 +1,18 @@
 // Handle themes
-const allThemes = require('../themes')
-const themes = {}
-for (const theme in allThemes) themes[theme] = allThemes[theme].config
+const themes = require('../themes')
 
 module.exports = {
   content: [
     './pages/*.js',
     './pages/**/*.js',
+    './components/*.js',
+    './components/**/*.js',
     '../freesewing.shared/components/**/*.js',
   ],
+  plugins: [require('daisyui'), require('tailwindcss/nesting')],
   daisyui: {
     styled: true,
-    themes: [ themes ],
+    themes: [themes],
     base: true,
     utils: true,
     logs: true,
@@ -22,7 +23,4 @@ module.exports = {
       colors: require('daisyui/colors'),
     },
   },
-  plugins: [
-    require('daisyui'),
-  ],
 }

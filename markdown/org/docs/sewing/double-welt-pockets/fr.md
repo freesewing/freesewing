@@ -46,8 +46,8 @@ Les rabats sont deux bandes rectangulaires de tissu avec les mesures suivantes :
 
 Pour notre exemple :
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+ - Longueur : 13 cm + 4 cm = 17 cm
+ - Largeur : (0.5 cm x 2) + 5 cm = 6 cm
 
 Ils formeront les deux bandes étroites de tissu qui forment votre poche passepoilée.
 
@@ -62,12 +62,12 @@ L'entoilage de poche est une seule bande rectangulaire d'entoilage thermocollant
 
 Pour notre exemple :
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+ - Longueur : 13 cm + 4 cm = 17 cm
+ - Largeur : (0.5 cm x 2) + 5 cm = 6 cm
 
 > Vous avez peut-être remarqué que l'entoilage est de la même taille qu'un rabat
 
-The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
+L'entoilage est utilisé pour stabiliser la poche, et sera thermocollé au tissu avec votre fer.
 
 ### Optionnel: parement fond de poche
 
@@ -78,8 +78,8 @@ Le parement de poche (optionnelle) est une seule bande rectangulaire de tissu av
 
 Pour notre exemple :
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+ - Longueur : 13 cm + 4 cm = 17 cm
+ - Largeur : (0.5 cm x 2) + 5 cm = 6 cm
 
 > Vous avez peut-être remarqué que le parement est de la même taille qu'un rabat
 

@@ -1,4 +1,4 @@
-![De verticale locatie van het tussenpunt vooraan](./sleevecapfonrtfactory.svg)
+![De verticale locatie van het tussenpunt vooraan](./sleevecapfrontfactory.svg)
 
 Deze optie bepaalt de verticale plaatsing van het tussenpunt aan de voorkant van de mouw.
 
@@ -10,4 +10,4 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](huey_sleevecapfrontfactory_sample.svg "Effect van deze optie op het patroon")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](yuri_sleevecapfrontfactory_sample.svg "Effect van deze optie op het patroon")

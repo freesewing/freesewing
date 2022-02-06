@@ -1,73 +1,26 @@
 ---
-title: dimension
+title: "@freesewing/plugin-dimension"
 ---
 
-[![Build-time plugin](https://img.shields.io/badge/Type-build--time-purple.svg)](/plugins)
-&nbsp;
-[![License: MIT](https://img.shields.io/npm/l/@freesewing/plugin-dimension.svg?label=License)](https://www.npmjs.com/package/@freesewing/plugin-dimension)
-&nbsp;
-[![Code quality on DeepScan](https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256)
-&nbsp;
-[![Open issues tagged pkg:plugin-dimension](https://img.shields.io/github/issues/freesewing/freesewing/pkg:plugin-dimension.svg?label=Issues)](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aplugin-dimension)
+The **@freesewing/plugin-dimension** plugin provides a variety of macros
+to facilitate adding *dimensions* to your design. By *dimensions* we mean 
+the indicators for distance that are added to patterns 
+in [paperless mode](/reference/api/settings/paperless).
 
-The **dimension** plugin provides the following [macros](/plugins#macros):
+The following macors are provided by this plugin:
 
- - [hd](/reference/macros/hd/) : Adds a horizontal dimension
- - [vd](/reference/macros/vd/) : Adds a vertical dimension
- - [ld](/reference/macros/ld/) : Adds a linear dimension
- - [pd](/reference/macros/pd/) : Adds a dimension along a path
- - [rmd](/reference/macros/rmd/) : Removes a dimension
- - [rmad](/reference/macros/rmad/) : Removes all dimensions with a default prefix
+ - [hd](/reference/api/macros/hd) : Adds a horizontal dimension
+ - [vd](/reference/api/macros/vd) : Adds a vertical dimension
+ - [ld](/reference/api/macros/ld) : Adds a linear dimension
+ - [pd](/reference/api/macros/pd) : Adds a dimension along a path
+ - [rmd](/reference/api/macros/rmd) : Removes a dimension
+ - [rmad](/reference/api/macros/rmad) : Removes all dimensions with a default prefix
 
-<Example part="plugin_dimension" caption="An example of the different dimensinon macros" design={false} />
+<Example part="plugin_dimension">
 
-```js
-let { Point, points, Path, paths, macro } = part.shorthand();
+An example of the different dimensinon macros
 
-points.A = new Point(0, 0);
-points.B = new Point(0, 100);
-points.C = new Point(50, 100);
-points.D = new Point(100, 50);
-points.DCp1 = new Point(100, 0);
-
-paths.box = new Path()
-  .move(points.A)
-  .line(points.B)
-  .line(points.C)
-  .line(points.D)
-  .curve(points.DCp1, points.A, points.A)
-  .close();
-
-macro("vd", {
-  from: points.A,
-  to: points.B,
-  x: points.A.x - 15
-});
-
-macro("hd", {
-  from: points.B,
-  to: points.C,
-  y: points.B.y + 15
-});
-
-macro("ld", {
-  from: points.C,
-  to: points.D,
-  d: -15
-});
-
-macro("ld", {
-  from: points.C,
-  to: points.D,
-  d: -30,
-  text: "Custom text"
-});
-
-macro("pd", {
-  path: new Path().move(points.A).curve(points.A, points.DCp1, points.D),
-  d: -15
-});
-```
+</Example>
 
 <Tip>
 
@@ -83,8 +36,8 @@ npm install @freesewing/plugin-dimension
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them 
-by passing them to the [`freesewing.Design`](/reference/api#design) constructor:
+Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
+load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
 
 ```js
 import freesewing from "@freesewing/core";
@@ -94,9 +47,12 @@ import config from "../config";
 const Pattern = new freesewing.Design(config, dimension);
 ```
 
-Now you can use the following macros in your parts:
+Now you can use the 
+[hd](/reference/api/macros/hd/), 
+[vd](/reference/api/macros/vd/), 
+[ld](/reference/api/macros/ld/), 
+[pd](/reference/api/macros/pd/), 
+[rmd](/reference/api/macros/rmd/), and
+[rmad](/reference/api/macros/rmad/) 
+macros in your parts.
 
- - [hd](/reference/macros/hd/)
- - [vd](/reference/macros/vd/)
- - [ld](/reference/macros/ld/)
- - [pd](/reference/macros/pd/)

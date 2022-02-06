@@ -13,10 +13,9 @@ Point point.flipY(Point mirror = false)
 
 ## Point.flipY() example
 
-<Example
-  part="point_flipy"
-  caption="An example of the Point.flipY() method"
-/>
+<Example part="point_flipy">
+An example of the Point.flipY() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

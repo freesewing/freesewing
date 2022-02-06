@@ -162,7 +162,7 @@ export default (part) => {
     )
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa)
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
   }
 

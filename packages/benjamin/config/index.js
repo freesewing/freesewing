@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'benjamin',
-  version: version,
+  version: pkg.version,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
   department: 'accessories',
@@ -10,10 +10,12 @@ export default {
   difficulty: 3,
   optionGroups: {
     fit: ['collarEase', 'adjustmentRibbon'],
-    style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle'],
+    style: ['tipWidth', 'knotWidth', 'bowLength', 'bowStyle', 'endStyle', 'ribbonWidth'],
   },
   measurements: ['neck'],
-  dependencies: {},
+  dependencies: {
+    ribbon: 'base',
+  },
   inject: {
     bow1: 'base',
     bow2: 'base',

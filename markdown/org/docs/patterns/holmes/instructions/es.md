@@ -30,7 +30,7 @@ Estas instrucciones asumen que has marcado tus líneas de costura. Pueden ser m�
 - With right sides together, matching seam lines and peaks, sew two crown pieces together.
 - Press seams open. Para ello, si no dispone de jamón puede utilizar flanneles o toallas en su lugar.
 - (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat steps 1 and 2 until you have two halves. Si la mitad del número de piezas de la corona es un número impar, tendrás que coser una sola pieza para cada mitad. Por ejemplo, si usted tiene 6 piezas de la corona, usted hace dos mitades de 3 coser una pieza a dos piezas cocidas juntas.
+- Repeat until you have two halves. Si la mitad del número de piezas de la corona es un número impar, tendrás que coser una sola pieza para cada mitad. Por ejemplo, si usted tiene 6 piezas de la corona, usted hace dos mitades de 3 coser una pieza a dos piezas cocidas juntas.
 - With right sides together, matchinig seam lines and peaks, sew the two halves together. Es posible que le resulte más fácil unir la mano debido a la masa o a la precisión. Esta costura será referida como la "costura de la corona central" que avanza.
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
 
@@ -51,7 +51,7 @@ Dependiendo de su franquicia de costura puede que desee recortar costuras a medi
 - Turn inside out and press.
 - (Optional) _Topstitch_ or _edgestitch_ the folded edge.
 - _Baste_ the raw edges together.
-- Repeat steps 3 to 7 for the remaining ear flap.
+- Repeat for the remaining ear flap.
 
 <Tip>
 
@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Las longitudes anteriores son recomendaciones, así que siéntete libre de ir tan largo o corto como quieras con los vínculos.  
-If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
@@ -75,7 +75,7 @@ If you prefer you can make your custom ties with fabric, you can find how to do 
 - (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
 - _Baste_ the raw edges together.
 - Sew the buttonhole in your prefered method.
-- Repeat steps 2 to 7 for the remaining ear flap.
+- Repeat for the remaining ear flap.
 
 <Warning>
 
@@ -126,7 +126,7 @@ If preferred you can temporarily attach the bill insert another way that does no
 - Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
 - Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
 - _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
-- Repeat steps 1 to 6 for the remaining visor pieces.
+- Repeat for the remaining visor pieces.
 
 ### Paso 5: Colmena y Lining
 
@@ -136,11 +136,11 @@ Una vez más, hay dos métodos para el montaje final y el revestimiento. Lea amb
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
 - Sew ear flap to the crown along seam lines.
-- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.
+- Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
 - Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.
-- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.
+- Repeat for the remaining visor on the opposite side of the centre crown seam.
 - Remove all pad and basting stitches.
 - Press the seam allowances inwards, making sure the stitching is not visible on the outside.
 - (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.
@@ -155,11 +155,11 @@ Una vez más, hay dos métodos para el montaje final y el revestimiento. Lea amb
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
 - _Baste_ the ear flap to the crown along seam lines
-- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.
+- Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
 - (Optional) Machine-baste the visor to the crown along seam lines.
-- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.
+- Repeat for the remaining visor on the opposite side of the centre crown seam.
 - Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
 - With right sides together, matching centre crown seams, panel seams and seam lines. Difundir el revestimiento a la corona a lo largo de las líneas de costura. Si es voluminoso puede querer recortar las costuras de forro o ambas costuras.
 - Turn hat inside out, pressing lining to inside.
@@ -188,7 +188,7 @@ If you are having trouble dealing with the curves of the bills, sew a stitching 
 
 **Tanto para los métodos de ensamblaje como para los de estiramiento**  
 
-Las instrucciones de ensamblaje y aprendizaje están escritas teniendo en cuenta los 6 hoyos panelados. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule generally the centre front of the bill is always on the centre crown seam so go from there if struggling.
+Las instrucciones de ensamblaje y aprendizaje están escritas teniendo en cuenta los 6 hoyos panelados. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
@@ -201,13 +201,13 @@ Si no cortaron sus lazos cuando construyeron los tapones de los oídos, ahora es
 - Fold the ends of a tie in half and cut a triangle out from the corner to the fold.
 - Unfold.
 - If you are worried about the ties fraying you can use fray check or equivalent.
-- Repeat steps 1 to 3 for the remaining tie.
+- Repeat for the remaining tie.
 
 #### Finalizando método Ties 2
 
 - Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.
 - _Whipstitch_ the folded edge down to the tie
-- Repeat steps 1 to 2 for the remaining tie.
+- Repeat for the remaining tie.
 
 <Note>
 
@@ -225,7 +225,7 @@ A menos que esté haciendo las aletas de ojo de botón, no tiene que coser un bo
 
 <Note>
 
-Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. Por lo tanto, si no están seguros de la mirada a este punto, crear un botón rápido y colocarlo temporalmente para ver si esto es lo que falta. If it is attach it permanently. 
+Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently. 
 Mientras que un botón cubierto está cubierto puedes usar cualquier botón que desees, ¡siéntete libre de experimentar!
 
 </Note>

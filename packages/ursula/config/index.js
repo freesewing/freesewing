@@ -1,10 +1,8 @@
-import { version } from '../package.json'
-
-// ?? 🤔 ?? --> https://en.freesewing.dev/packages/core/config
+import pkg from '../package.json'
 
 export default {
   name: 'ursula',
-  version,
+  version: pkg.version,
   design: 'Natalia Sayang',
   code: 'Natalia Sayang',
   department: 'underwear',
@@ -26,7 +24,10 @@ export default {
     style: ['rise', 'legOpening', 'frontDip', 'backDip', 'taperToGusset', 'backExposure'],
   },
   measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg'], // Potentially useful: 'hips', 'waistToHips'
-  dependencies: {},
+  dependencies: {
+    back: 'front',
+    gusset: 'back',
+  },
   inject: {},
   hide: [],
   parts: ['front', 'back', 'gusset', 'elastic'],

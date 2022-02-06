@@ -1,4 +1,7 @@
 ---
+hipsEase:
+  title: Zugabe Hüfte
+  description: Steuert die Menge an Zugabe an deinen Hüften (am unteren Ende des Pullovers)
 ribbing:
   title: Bündchen
   description: Ob Saum und Manschetten mit Bündchen abschließen oder nicht.

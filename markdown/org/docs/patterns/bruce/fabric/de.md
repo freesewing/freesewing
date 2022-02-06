@@ -1,7 +1,7 @@
-Du benötigst für dieses Muster einen Stretchy-Stoff. Bevorzugtes Bequemes und sanftes Berühren, während die Haut atmen kann.
+Für dieses Schnittmuster benötigst du einen dehnbaren Stoff. Vorzugsweise etwas Bequemes und Weiches, das dazu die Haut atmen lässt.
 
-Ich persönlich denke, dass nichts kann rayon für dieses Muster, auch wenn man mit anderen Stricken wie Trikot tun kann.
+Ich persönlich denke, dass Rayon für dieses Schnittmuster unschlagbar ist, auch wenn es sich natürlich auch aus einem anderen Strickstoff nähen lässt, wie beispielsweise Jersey.
 
-Wenn Sie Zweifel haben, gehen Sie nach Roggen.
+Im Zweifelsfall wähle Rayon.
 
 

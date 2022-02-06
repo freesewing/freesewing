@@ -24,8 +24,8 @@ This 6-episode series shows you how to make your hoodie start to finish:
  - Stitch the facing pieces to the pocket with a 1cm seam allowance.  Stitch both the long edge, and the shorter edge at the bottom of the pocket.
  - Carefully trim the seam allowance on the facing pieces.
  - Flip and turn the facing pieces good sides out.  Then hand-roll and press the seams.
- - Topstitch or edge-stitch ½ cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
- - Topstitch another line ½ from the inside upper edge of the facing on each side of the pocket.  This topstitch line will end at the lower edge stitch line.
+ - Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
+ - Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  This topstitch line will end at the lower edge stitch line.
  - Trim away the excess facing on the inside of the pocket.
  - Press the edges.
 

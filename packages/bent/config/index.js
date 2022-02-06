@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'bent',
-  version: version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -45,8 +45,8 @@ export default {
   dependencies: {
     back: 'base',
     front: 'back',
-    topSleeve: 'sleeve',
-    underSleeve: 'sleeve',
+    topSleeve: ['sleeve', 'front'],
+    underSleeve: ['sleeve', 'front'],
   },
   inject: {
     back: 'base',

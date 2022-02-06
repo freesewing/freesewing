@@ -13,10 +13,11 @@ export function armholeLength(points, Path) {
     .length()
 }
 
-export function shoulderToArmholePitch(points, Path) {
+export function armholeToArmholePitch(points, Path) {
   return new Path()
-    .move(points.armholePitch)
-    .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+    .move(points.armhole)
+    .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
+    .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .length()
 }
 

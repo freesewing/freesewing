@@ -122,7 +122,7 @@ export default (part) => {
 
   // Store lengths to fit sleeve
   store.set('backArmholeLength', shared.armholeLength(points, Path))
-  store.set('backShoulderToArmholePitch', shared.shoulderToArmholePitch(points, Path))
+  store.set('backArmholeToArmholePitch', shared.armholeToArmholePitch(points, Path))
 
   // Complete pattern?
   if (complete) {

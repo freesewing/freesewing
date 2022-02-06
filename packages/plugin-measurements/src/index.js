@@ -1,10 +1,10 @@
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-measurements', version),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-measurements', pkg.version),
     preDraft: function ({ settings }) {
       if (settings.measurements) {
         if (
@@ -20,9 +20,10 @@ export default {
           typeof settings.measurements.waist !== 'undefined' &&
           typeof settings.measurements.waistBack !== 'undefined'
         ) {
-          settings.measurements.waistFront = settings.measurements.waist - settings.measurements.waistBack
+          settings.measurements.waistFront =
+            settings.measurements.waist - settings.measurements.waistBack
           settings.measurements.waistBackArc = settings.measurements.waistBack / 2
-          settings.measurements.waistFrontArc = settings.measurements.waistFront /2
+          settings.measurements.waistFrontArc = settings.measurements.waistFront / 2
         }
         if (
           typeof settings.measurements.crossSeam !== 'undefined' &&
@@ -35,4 +36,3 @@ export default {
     },
   },
 }
-

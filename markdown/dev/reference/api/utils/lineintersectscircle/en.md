@@ -23,7 +23,9 @@ Set sort to:
  - `x` : The point with the lowest X-coordinate will go first (left to right)
  - `y` : The point with the lowest Y-coordinate will go first (top to bottom)
 
-<Example part="utils_lineintersectscircle" caption="A Utils.lineIntersectsCircle() example" />
+<Example part="utils_lineintersectscircle">
+A Utils.lineIntersectsCircle() example
+</Example>
 
 ```js
 let {

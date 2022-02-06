@@ -1,13 +1,11 @@
 ---
 title: Paths
-order: 20
+order: 40
 ---
 
-<Example 
-  part="docs_overview" 
-  caption="Paths are the lines and curves of your pattern"
-  options={{focus: "Paths"}}
-/>
+<Example part="docs_overview" options_focus="Paths">
+Paths are the lines and curves of your pattern
+</Example>
 
 Paths are the lines and curves that make up your pattern.
 
@@ -23,7 +21,7 @@ To crucial thing to keep in mind is that, with the exception of the **move** ope
 all drawing operations start from wherever you are currently on your virtual sheet of paper.
 
 For example, you might expect the **line** operation to take a start- and endpoint. 
-But in fact, it only takes and endpoint, and will draw a straight line from where our virtual pen
+But in fact, it only takes an endpoint, and will draw a straight line from where our virtual pen
 currently is to said endpoint.
 
 Because all but the **move** drawing operations are relative to their operation preceding it,

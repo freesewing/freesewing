@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'yuri',
-  version: version,
+  version: pkg.version,
   design: 'Hellgy',
   code: 'Biou',
   department: 'tops',
@@ -64,6 +64,9 @@ export default {
     back: 'backBase',
     front: 'frontBase',
     sleeve: 'sleeveBase',
+    hoodCenter: 'hoodSide',
+    hoodSide: ['front', 'back'],
+    gusset: 'back',
   },
   inject: {
     backBase: 'base',

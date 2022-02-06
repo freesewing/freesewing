@@ -6,8 +6,8 @@ Puedes encontrar una buena guía de otras herramientas en [Fundaciones Reveladas
 
 Lista de suministros de muestra:
 
-* Alrededor de 0.5 metros de tela central ([ver opciones de tela](/docs/patterns/cathrin/fabric))
-* Alrededor de 0.5 metros de tela exterior ([ver opciones de tela](/docs/patterns/cathrin/fabric))
+* About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+* About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
 * Bonito
 * Grommets (size 2)
 * Aproximadamente 2 metros de sesgo

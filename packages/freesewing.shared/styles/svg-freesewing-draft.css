@@ -1,0 +1,209 @@
+svg.freesewing.pattern {
+
+  /* Don't let the SVG surpass the parent container */
+  max-width: 100%;
+
+  /* Reset */
+  path, circle { fill: none; stroke: none; }
+
+  /* Defaults */
+  path,
+  circle {
+    stroke-opacity: 1;
+    stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale));
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: currentColor;
+  }
+
+  /* Stroke width utility classes */
+  .stroke-xs { stroke-width: calc(var(--pattern-stroke-xs) * var(--pattern-scale)); }
+  .stroke-sm { stroke-width: calc(var(--pattern-stroke-sm) * var(--pattern-scale)); }
+  .stroke-lg { stroke-width: calc(var(--pattern-stroke-lg) * var(--pattern-scale)); }
+  .stroke-xl { stroke-width: calc(var(--pattern-stroke-xl) * var(--pattern-scale)); }
+  .stroke-2xl { stroke-width: calc(var(--pattern-stroke-2xl) * var(--pattern-scale)); }
+  .stroke-3xl { stroke-width: calc(var(--pattern-stroke-3xl) * var(--pattern-scale)); }
+  .stroke-4xl { stroke-width: calc(var(--pattern-stroke-4xl) * var(--pattern-scale)); }
+  .stroke-5xl { stroke-width: calc(var(--pattern-stroke-5xl) * var(--pattern-scale)); }
+
+  /* Stroke dasharray utility classes */
+  .sa { stroke-dasharray: 1, 3; }
+  .help { stroke-dasharray: 15, 5, 2, 5; }
+  .dotted { stroke-dasharray: 0.5, 1; }
+  .dashed { stroke-dasharray: 2, 2; }
+  .lashed { stroke-dasharray: 8, 3; }
+
+  /* Hidden */
+  .hidden { stroke: none !important; fill: none !important; }
+
+  /* Text */
+  text {
+    font-size: calc(var(--pattern-text) * var(--pattern-scale));
+    text-anchor: start;
+    font-weight: normal;
+    fill: currentColor;
+    dominant-baseline: ideographic;
+  }
+  .text-xs { font-size: calc(var(--pattern-text-xs) * var(--pattern-scale)); }
+  .text-sm { font-size: calc(var(--pattern-text-sm) * var(--pattern-scale)); }
+  .text-lg { font-size: calc(var(--pattern-text-lg) * var(--pattern-scale)); }
+  .text-xl { font-size: calc(var(--pattern-text-xl) * var(--pattern-scale)); }
+  .text-2xl { font-size: calc(var(--pattern-text-2xl) * var(--pattern-scale)); }
+  .text-3xl { font-size: calc(var(--pattern-text-3xl) * var(--pattern-scale)); }
+  .text-4xl { font-size: calc(var(--pattern-text-4xl) * var(--pattern-scale)); }
+  .text-5xl { font-size: calc(var(--pattern-text-5xl) * var(--pattern-scale)); }
+  .bold { font-weight: bold; }
+
+  .center { text-anchor: middle; }
+  .right { text-anchor: end; }
+
+  /* Developer view */
+  g.develop.point {
+    circle.center {
+      stroke: var(--pattern-contrast);
+      stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) / 2);
+      fill: transparent;
+    }
+    circle.hovertrap {
+      fill: var(--pattern-contrast);
+      stroke: var(--pattern-contrast);
+      stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) / 2);
+      fill-opacity: 0;
+      stroke-opacity: 0;
+      transform: all 0.5s ease-out;
+    }
+    circle.hovertrap:hover {
+      fill-opacity: 0.2;
+      cursor: pointer;
+    }
+  }
+  circle.develop.path.cp {
+    stroke: none;
+    fill: var(--pattern-lining);
+    fill-opacity: 0.4;
+  }
+  path.develop.path.cp {
+    stroke: var(--pattern-lining);
+    stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) / 2);
+  }
+  path.develop.hovertrap {
+    stroke: var(--pattern-lining);
+    stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) * 4);
+    stroke-opacity: 0;
+  }
+  path.develop.hovertrap:hover {
+    stroke: var(--pattern-contrast);
+    stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) * 4);
+    stroke-opacity: 0.2;
+    stroke-dasharray: 5 3;
+    cursor: pointer;
+  }
+
+  /* New style for sampled sizes */
+  path.size-3XS,
+  path.size-2XS,
+  path.size-XS,
+  path.size-S,
+  path.size-M {
+    stroke-width: 0.5;
+    stroke-dasharray: 0.25 0.75;
+  }
+  path.made-to-measure,
+  path.size-L,
+  path.size-XL,
+  path.size-2XL,
+  path.size-3XL,
+  path.size-4XL {
+    stroke-width: 0.5;
+  }
+}
+
+/* Styling the shadow DOM is hard to do
+ * This is for styling FreeSewing snippets
+ * TODO: Update snippets to use inline styles with CSS vars
+ */
+g#buttonhole path.note,
+g#notch circle.note,
+g#bnotch path.note,
+g#bnotch circle.note {
+  stroke: var(--pattern-note);
+  fill: none;
+ }
+g#notch circle.fill-note,
+g#bnotch circle.fill-note { fill: var(--pattern-note); }
+
+/* Same for paperless grid, also in shadow DOM */
+rect.grid {
+  stroke-width: 1;
+  stroke: currentColor;
+}
+path.gridline {
+  stroke-linecap: butt;
+  stroke-width: 0.3 !important;
+  stroke-dasharray: none;
+}
+path.gridline.sm {
+  stroke-width: 0.15 !important;
+}
+path.gridline.xs {
+  stroke-width: 0.1 !important;
+}
+path.gridline.metric.sm {
+  stroke-dasharray: 3 1;
+}
+path.gridline.metric.xs {
+  stroke-dasharray: 1 1;
+}
+path.gridline.imperial {
+  stroke-dasharray: 5 5;
+}
+path.gridline.imperial.sm {
+  stroke-dasharray: 2 2;
+}
+
+
+figure.develop.example div.develop {
+  .path,
+  .point {
+    border-left: 0.25rem solid transparent;
+    padding-left: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .path {
+    border-left: 3px dotted transparent;
+    padding-left: 4px;
+  }
+  .path.c0,
+  .point.c0 {
+    border-color: var(--pattern-dev-0);
+  }
+  .path.c1,
+  .point.c1 {
+    border-color: var(--pattern-dev-1);
+  }
+  .path.c2,
+  .point.c2 {
+    border-color: var(--pattern-dev-2);
+  }
+  .path.c3,
+  .point.c3 {
+    border-color: var(--pattern-dev-3);
+  }
+  .path.c4,
+  .point.c4 {
+    border-color: var(--pattern-dev-4);
+  }
+  .path.c5,
+  .point.c5 {
+    border-color: var(--pattern-dev-5);
+  }
+  .path.c6,
+  .point.c6 {
+    border-color: var(--pattern-dev-6);
+  }
+  .path.c7,
+  .point.c7 {
+    border-color: var(--pattern-dev-7);
+  }
+}
+

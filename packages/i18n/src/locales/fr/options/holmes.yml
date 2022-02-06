@@ -1,14 +1,28 @@
 ---
+headEase:
+  title: Aisance du tour de tête
+  description: La quantité d'aisance autour de votre tête.
 lengthRatio:
   title: Profondeur de tête
-  description: fixme
-goreNumber:
+  description: Contrôle la longueur de la couronne et des rabats d'oreilles
+gores:
   title: Nombre de pans
-  description: Le nombre de pans utilisés pour construire la semi-sphère
-brimAngle:
-  title: Angle des visières
-  description: Contrôle l'angle de courbure des visières
-brimWidth:
-  title: Largeur des visières
-  description: Contrôle la largeur des visières
-
+  description: Le nombre de pans utilisés pour construire la couronne
+visorAngle:
+  title: Angle de la visière
+  description: L'angle d'arc utilisé pour tracer la courbe intérieure de la visière
+visorWidth:
+  title: Largeur de la visière
+  description: Contrôle la largeur de la visière
+earLength:
+  title: Longueur du rabat de l'oreille
+  description: Contrôle la longueur des rabats de l'oreille indépendamment des autres pièces de contour
+earWidth:
+  title: Largeur du rabat de l'oreille
+  description: Contrôle la largeur des rabats de l'oreille
+buttonhole:
+  title: Guide des boutonnières
+  description: Ajoute une boutonnière au rabat d'oreille pour vous aider à tracer la variante du rabat de l'oreille avec boutonnière
+visorLength:
+  title: Longueur de la visière
+  description: Contrôle la longueur de la visière

@@ -28,10 +28,9 @@ You can see an example of this
 
 </Warning>
 
-<Example 
-  part="path_trim" 
-  caption="Example of the Path.trim() method" 
-/>
+<Example part="path_trim">
+Example of the Path.trim() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

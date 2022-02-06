@@ -13,7 +13,7 @@ it("Svg constructor should initialize object", () => {
   expect(svg.openGroups).to.eql([]);
   expect(svg.freeId).to.equal(0);
   expect(svg.body).to.equal("");
-  expect(svg.style).to.equal("");
+  expect(svg.style).to.equal("")
   expect(svg.script).to.equal("");
   expect(svg.defs).to.equal("");
   expect(svg.pattern).to.eql(pattern);
@@ -201,6 +201,14 @@ it("Should render an Svg snippet", () => {
     "This is a snippet"
   );
   expect(pattern.render()).to.equalIgnoreSpaces(render.snippet);
+});
+
+it("Should replaced double quotes in Svg text", () => {
+  const pattern = new freesewing.Pattern()
+  pattern.render()
+  expect(
+    pattern.svg.escapeText('This is a "test" message')
+  ).to.equal('This is a &#8220;test&#8220; message')
 });
 
 it("Should scale an Svg snippet", () => {

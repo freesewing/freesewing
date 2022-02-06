@@ -1,6 +1,6 @@
 Um Jaeger zu erstellen, benötigst du Folgendes:
 
- - Etwa zweieinhalb Meter eines geeigneten Stoffes (siehe [Stoffoptionen](#fabric-options))
+ - About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
  - Lining Stoff, optional unterschiedliche Ärmelfutter
  - Zwei größere Tasten für die Vorderseite und 8 Tasten für die Ärmel
  - Ein bisschen leichtgewichtige Schnittstellen für lokale Durchsetzung

@@ -15,20 +15,20 @@ _types:
       '@freesewing/plugin-buttons': *freesewing
       '@freesewing/plugin-flip': *freesewing
       '@freesewing/utils': *freesewing
-      'react-scripts': '^4.0.3'
-      'webpack': '^5.37.0'
-      'rollup': '^2.50.6'
+      'react-scripts': '^5.0.0'
+      'webpack': '^5.67.0'
+      'rollup': '^2.66.1'
       '@rollup/plugin-babel': '^5.3.0'
-      '@rollup/plugin-commonjs': '^20.0.0'
+      '@rollup/plugin-commonjs': '^21.0.1'
       '@rollup/plugin-json': '^4.1.0'
-      '@rollup/plugin-node-resolve': '^13.0.0'
+      '@rollup/plugin-node-resolve': '^13.1.3'
       'rollup-plugin-peer-deps-external': '^2.2.4'
-      '@material-ui/core': &matui-core '^4.11.4'
+      '@material-ui/core': &matui-core '^4.12.3'
       '@material-ui/icons': &matui-icons '^4.11.2'
-      '@material-ui/lab': &matui-lab '^v4.0.0-alpha.57'
-      'axios': &axios '0.21.2'
-      'react-intl': &react-intl '^5.17.6'
-      'prop-types': '^15.7.2'
+      '@material-ui/lab': &matui-lab '^v4.0.0-alpha.60'
+      'axios': &axios '^0.25.0'
+      'react-intl': &react-intl '^5.24.4'
+      'prop-types': '^15.8.1'
       'mocha': &mocha '^9.1.1'
       'chai': &chai '^4.2.0'
       '@babel/register': &babelregister '^7.10.5'
@@ -38,10 +38,11 @@ _types:
     dev:
       'mocha': *mocha
       'chai': *chai
+      '@babel/core': '^7.11.0'
       '@babel/register': *babelregister
       'rollup': '^2.50.6'
       '@rollup/plugin-babel': '^5.3.0'
-      '@rollup/plugin-commonjs': '^20.0.0'
+      '@rollup/plugin-commonjs': '^21.0.1'
       '@rollup/plugin-json': '^4.1.0'
       '@rollup/plugin-node-resolve': '^13.0.0'
       'rollup-plugin-peer-deps-external': '^2.2.4'
@@ -147,8 +148,7 @@ diana:
 examples:
   peer:
     '@freesewing/plugin-mirror': *freesewing
-    '@freesewing/plugin-bartack': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-gore': *freesewing
 gatsby-remark-jargon:
   _:
     'remark-jargon': *freesewing
@@ -165,7 +165,7 @@ hugo:
     '@freesewing/brian': *freesewing
 i18n:
   dev:
-    'yaml': *yaml
+    'js-yaml': '^4.1.0'
   peer:
     '@freesewing/pattern-info': *freesewing
 jaeger:
@@ -191,6 +191,7 @@ paco:
     '@freesewing/titan': *freesewing
 plugin-bundle:
   dev:
+    '@freesewing/plugin-banner': *freesewing
     '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-cutonfold': *freesewing
     '@freesewing/plugin-dimension': *freesewing
@@ -201,6 +202,33 @@ plugin-bundle:
     '@freesewing/plugin-scalebox': *freesewing
     '@freesewing/plugin-round': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
+plugintest:
+  peer:
+    '@freesewing/plugin-banner': *freesewing
+    '@freesewing/plugin-bartack': *freesewing
+    '@freesewing/plugin-bust': *freesewing
+    '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-cutonfold': *freesewing
+    '@freesewing/plugin-dimension': *freesewing
+    '@freesewing/plugin-flip': *freesewing
+    '@freesewing/plugin-gore': *freesewing
+    '@freesewing/plugin-grainline': *freesewing
+    '@freesewing/plugin-i18n': *freesewing
+    '@freesewing/plugin-logo': *freesewing
+    '@freesewing/plugin-measurements': *freesewing
+    '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-notches': *freesewing
+    '@freesewing/plugin-round': *freesewing
+    '@freesewing/plugin-scalebox': *freesewing
+    '@freesewing/plugin-sprinkle': *freesewing
+    '@freesewing/plugin-svgattr': *freesewing
+    '@freesewing/plugin-theme': *freesewing
+    '@freesewing/plugin-title': *freesewing
+    '@freesewing/plugin-validate': *freesewing
+
+react-pattern:
+  peer:
+    '@freesewing/i18n': *freesewing
 remark-jargon:
   _:
     'unist-util-visit': '^4.0.0'

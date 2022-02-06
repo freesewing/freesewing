@@ -1,21 +1,36 @@
-export default function (part) {
-  let { Point, Path, points, paths, store } = part.shorthand()
+export default function (part, demo = false) {
+  const { Point, points, store, options } = part.shorthand()
 
-  let y = store.get('y')
-  let w = store.get('w')
-  let colors = store.get('colors')
+  if (options.only === 'circles' || demo) {
+    let y = store.get('y')
+    const w = store.get('w')
 
-  points.crl = new Point(0, y)
-  points.crr = new Point(w, y)
-  paths.circles = new Path().move(points.crl).line(points.crr).attr('data-text', 'circles')
-  y += w / 2
-  for (let i = 1; i < 50; i++) {
-    points['cr' + i] = new Point(w / 2, y)
-      .attr('data-circle', i * (w / 100))
-      .attr('data-circle-class', colors[i % colors.length])
+    y += w / 8 + 5
+    for (let i = 1; i < 6; i++) {
+      points[`circles1-${i}`] = new Point(w / 3 - w / 6, y)
+        .attr('data-circle', i * (w / 50))
+        .attr('data-circle-class', store.get('colors')[i])
+      points[`circles2-${i}`] = new Point((w / 3) * 2 - w / 6, y)
+        .attr('data-circle', i * (w / 50))
+        .attr(
+          'data-circle-class',
+          'fabric ' + store.get('styles')[i] + ' ' + store.get('colors')[i]
+        )
+      points[`circles3-${i}`] = new Point(w - w / 6, y)
+        .attr('data-circle', i * (w / 50))
+        .attr(
+          'data-circle-class',
+          'fabric ' +
+            store.get('widths')[i] +
+            ' ' +
+            store.get('styles')[i] +
+            ' ' +
+            store.get('colors')[i]
+        )
+    }
+    y += w / 8
+    store.set('y', y)
   }
-  y += w / 2
-  store.set('y', y)
 
   return part
 }

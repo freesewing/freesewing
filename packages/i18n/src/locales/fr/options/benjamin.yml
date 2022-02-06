@@ -23,3 +23,6 @@ endStyle:
 collarEase:
   title: Aisance du col
   description: La quantité d'aisance à votre cou
+ribbonWidth:
+  title: Largeur du ruban d'ajustement
+  description: Largeur du ruban

@@ -1,6 +1,18 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.20.2 (2022-01-27)
+
+### Fixed
+
+ - Patterns options were always in English due to symlinks being used
+
+## 2.20.0 (2022-01-24)
+
+### Fixed
+
+ - Fixed issue that was causing plugin translations to always be in English
+
 ## 2.19.0 (2021-10-17)
 
 ### Fixed

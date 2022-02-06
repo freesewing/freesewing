@@ -3,11 +3,9 @@ title: Pattern
 order: 80
 ---
 
-<Example 
-  part="docs_overview" 
-  caption="The pattern you create will be a constructor for instances of your pattern"
-  options={{focus: "Pattern"}}
-/>
+<Example part="docs_overview" options_focus="Pattern">
+The pattern you create will be a constructor for instances of your pattern
+</Example>
 
 Last but not least, we've arrived at the level of the pattern itself.
 The pattern is a container that holds all your parts, along with the configuration

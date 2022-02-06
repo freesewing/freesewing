@@ -3,6 +3,7 @@
 100PercentFree: 100 % gratuit
 100PercentOpenSource: 100 % open source
 aboutFreesewing: À propos de Freesewing
+accessoryPatterns: Patrons d'accessoires
 account: Mon Compte
 accountCreated: Compte créé
 actions: Actions
@@ -17,6 +18,7 @@ awesome: Incroyable
 back: Dos
 becauseThatWouldBeReallyHelpful: Parce que ce serait vraiment utile.
 becomeAPatron: Devenir mécène
+blockPatterns: Patrons de base/Blocs
 blog: Blog
 browseBlogposts: Parcourir les articles du blog
 browsePatterns: Parcourir les patrons
@@ -67,6 +69,7 @@ documentationOverview: Vue d'ensemble de la documentation
 download: Télécharger
 draft: Ébauche
 draftPattern: 'Ébauche de {pattern}'
+testPattern: 'Tester {pattern}'
 draftPatternForModel: 'Ébauche de {pattern} pour {model}'
 drafts: Ébauches
 draftSettings: Réglages de l'ébauche
@@ -84,6 +87,7 @@ filterPatterns: Filtrez les patrons
 forgotLoginInstructions: "Entrez votre nom d'utilisateur ou votre adresse e-mail ci-dessous et cliquez sur le bouton <b>Réintialiser le mot de passe</b>."
 freesewing: Freesewing
 freesewingOnGithub: Freesewing sur GitHub
+garmentPatterns: Patrons de vêtements
 github: GitHub
 goAheadWeWillWait: Allez-y, nous attendrons.
 goodJob: Bon travail
@@ -117,7 +121,7 @@ addThing: Ajouter {thing}
 newThing: Nouveau {thing}
 newPatternForModel: 'Nouveau {pattern} pour {model}'
 noChanges: Pas de changement
-no: false
+no: "Non" #Keep in quotes or it will evaluate to false
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
 noSeamAllowance: Marges de couture non-comprises
 notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible en français
@@ -125,6 +129,7 @@ notesInfo: Ce sont vos notes. Vous pouvez écrire tout ce que vous voulez ici.
 notes: Remarques
 ohNo: Oh non !
 oneMoreThing: Encore une chose
+optionalMeasurements: Mesures optionnelles
 options: Options
 orPayPerYear: Ou payer par an
 other: Autre
@@ -205,6 +210,7 @@ updated: Mis à jour
 update: Mettre à jour
 userHasBeenWithUsSince: '{user} est parmi nous depuis {since}'
 users: Utilisateurs
+utilityPatterns: Patrons utilitaires
 weAreValidatingYourConfirmationCode: Nous sommes en train de valider votre code de confirmation
 weCouldNotValidateYourConfirmationCode: Nous n'avons pas pu valider votre code de confirmation
 weEncounteredAProblem: Nous avons rencontré un problème
@@ -216,7 +222,7 @@ whatIsThis: Qu'est-ce que c'est ?
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
 yay: Yeh !
-yes: true
+yes: "Oui" #Keep in quotes or it will evaluate to false
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté
@@ -329,3 +335,8 @@ debug: Débug
 unsubscribe: Se désabonner
 slogan-come: Venez pour les patrons de couture
 slogan-stay: Restez pour la communauté
+lightTheme: Thème clair
+darkTheme: Thème Sombre
+hax0rTheme: Thème Hax0r
+lgbtqTheme: Thème LGBTQ
+transTheme: Thème Trans

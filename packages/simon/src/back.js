@@ -91,36 +91,30 @@ export default (part) => {
   // Cut off at yoke
   const neverAboveCbNeck = () =>
     points.cbNeck.dy(points.cbYoke) < 10 ? (points.cbYoke.y = points.cbNeck.y + 10) : null
-  if (options.yokeHeight === 1) {
-    points.cbYoke = new Point(0, points.armholePitch.y)
-    neverAboveCbNeck()
-    points.armholeYokeSplit = points.armholePitch.clone()
-    paths.backArmholeYoke = paths.backArmhole
-  } else if (options.yokeHeight === 0) {
-    points.cbYoke = new Point(0, points.s3ArmholeSplit.y)
-    neverAboveCbNeck()
-    points.armholeYokeSplit = points.s3ArmholeSplit.clone()
-    paths.backArmholeBack = paths.backArmhole
-  } else {
-    points.cbYoke = new Point(
-      0,
-      points.s3ArmholeSplit.y + points.s3ArmholeSplit.dy(points.armholePitch) * options.yokeHeight
-    )
-    neverAboveCbNeck()
-    points.armholeYokeSplit = paths.backArmhole.intersectsY(points.cbYoke.y).pop()
-    const [back, yoke] = paths.backArmhole.split(points.armholeYokeSplit)
-    paths.backArmholeYoke = yoke.setRender(false)
-    paths.backArmholeBack = back.setRender(false)
-  }
+  points.cbYoke = new Point(
+    0,
+    points.s3ArmholeSplit.y + points.s3ArmholeSplit.dy(points.armholePitch) * options.yokeHeight
+  )
+  neverAboveCbNeck()
+  points.armholeYokeSplit = paths.backArmhole.intersectsY(points.cbYoke.y).pop()
+  const [back, yoke] = paths.backArmhole.split(points.armholeYokeSplit)
+  paths.backArmholeYoke = yoke.setRender(false)
+  paths.backArmholeBack = back.setRender(false)
 
-  // Round back
-  paths.armhole = new Path()
+  // We'll re-use this
+  const armholeToPitch = new Path()
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-  if (options.yokeHeight < 1 && options.yokeHeight > 0)
-    paths.armhole = paths.armhole.join(paths.backArmholeBack)
-  else if (options.yokeHeight === 0) paths.armhole = paths.armhole.join(paths.backArmhole)
+
+  // Update this value in the store set by Brian because it is only correct
+  // if the yoke height happens to fall on the armhole pitch point
+  store.set('backArmholeToArmholePitch', paths.backArmholeBack.length() + armholeToPitch.length())
+
+  // Round back
+  paths.armhole = armholeToPitch
+  if (options.yokeHeight === 0) paths.armhole = paths.armhole.join(paths.backArmhole)
+  else paths.armhole = paths.armhole.join(paths.backArmholeBack)
   paths.armhole.render = false
 
   if (options.roundBack > 0) {
@@ -129,20 +123,17 @@ export default (part) => {
     paths.roundedBack = new Path()
       .move(points.armholeYokeSplit)
       ._curve(points.cbTopCp1, points.cbTop)
-      .line(points.cbYoke)
-  }
+  } else points.cbTop = points.cbYoke
 
   // Box pleat
   if (options.boxPleat) {
-    points.boxPleatLeft = paths.roundedBack
-      ? points.cbTop.shift(0, store.get('boxPleatWidth') / 2)
-      : points.cbYoke.shift(0, store.get('boxPleatWidth') / 2)
+    points.boxPleatLeft = points.cbTop.shift(0, store.get('boxPleatWidth') / 2)
     points.boxPleatMid = points.boxPleatLeft.shift(0, store.get('boxPleatFold'))
     points.boxPleatRight = points.boxPleatMid.shift(0, store.get('boxPleatFold'))
     points.boxPleatLeftBottom = new Point(points.boxPleatLeft.x, points.armholeHollowCp2.y)
     points.boxPleatMidBottom = new Point(points.boxPleatMid.x, points.armholeHollowCp2.y)
     points.boxPleatRightBottom = new Point(points.boxPleatRight.x, points.armholeHollowCp2.y)
-    paths.armhole.setRender(true).attr('class', 'stroke-xl highlight debug canvas')
+    paths.armhole.setRender(false)
     paths.armhole = paths.armhole.translate(store.get('boxPleatFold') * 2, 0)
     for (const p of [
       'armholePitch',
@@ -214,6 +205,7 @@ export default (part) => {
   // Complete pattern?
   if (complete) {
     delete snippets.armholePitchNotch
+    snippets.sleevecapNotch = new Snippet('notch', points.armholeYokeSplit)
     macro('cutonfold', {
       from: points.cbYoke,
       to: points.cbHem,

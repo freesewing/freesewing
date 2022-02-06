@@ -1,10 +1,5 @@
 ---
-title: Core API
-for: developers
-icons: 
-  - javascript
-  - terms
-about: FreeSewing's core API reference documents all available methods and objects
+title: "@freesewing/core API"
 ---
 
 This is the documentation for FreeSewing's core library, published as `@freesewing/core` on NPM.

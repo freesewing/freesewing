@@ -24,7 +24,7 @@ ul.links {
 	}
   li.active:before,
   li:hover:before {
-		background: $fc-link-light;
+		background: $fs-link-light;
 	}
 }
 @include xs-screen {

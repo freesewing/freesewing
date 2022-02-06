@@ -70,6 +70,9 @@ In our case, we have a part named `bib` so we're using `draftBib()` as the metho
 Congratulations, your pattern now has a `bib` part, rather than a `box` part. 
 It still looks the same though:
 
-<Example pattern="tutorial" part="step1" caption="Our bib part, which is the renamed box part" />
+<Example pattern="tutorial" part="step1">
+Our bib part, which is the renamed box part
+</Example>
+
 
 This `bib` part is where we'll do some real work. But first, we have some more configuration to do.

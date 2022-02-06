@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'examples',
-  version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'womenswear',
@@ -43,12 +43,14 @@ export default {
     'path_start',
     'path_translate',
     'path_trim',
+    'plugin_banner',
     'plugin_bartack',
     'plugin_bartackalong',
     'plugin_bartackfractionalong',
     'plugin_buttons',
     'plugin_cutonfold',
     'plugin_dimension',
+    'plugin_gore',
     'plugin_grainline',
     'plugin_logo',
     'plugin_mirror',

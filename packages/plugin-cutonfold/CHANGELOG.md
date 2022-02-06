@@ -1,7 +1,13 @@
 # Change log for: @freesewing/plugin-cutonfold
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.0 (2022-01-24)
+
+### Added
+
+ - Support for scale setting
+
+## 2.19.6 (2021-12-29)
 
 ### Added
 

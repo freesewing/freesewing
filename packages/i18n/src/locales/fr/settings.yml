@@ -29,3 +29,13 @@ layout:
 debug:
   title: Débug
   description: Activer le débogage pour obtenir des informations supplémentaires sur la façon dont votre patron a été créé
+scale:
+  title: Échelle
+  description: Contrôle la largeur de la ligne de contour, la taille de police et les autres éléments dont la valeur est indépendante des mesures du patron
+renderer:
+  title: Moteur de Rendu
+  description: Contrôle comment le patron est restitué (dessiné) à l'écran
+xray:
+  title: Rayons X
+  description: Regardez en dessous avec le mode rayons X de FreeSewing
+

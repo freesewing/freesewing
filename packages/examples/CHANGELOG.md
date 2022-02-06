@@ -1,6 +1,16 @@
 # Change log for: @freesewing/examples
 
 
+## 2.20.0 (2022-01-24)
+
+### Added
+
+ - Added plugin_gore example
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.15.0 (2021-04-15)
 
 ### Added

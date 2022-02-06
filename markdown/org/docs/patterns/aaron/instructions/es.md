@@ -1,15 +1,15 @@
 
 ## Paso 1: Cerrar costuras
 
-![Cerrar el lado y las costuras del hombro](step01.png)
+![Cerrar las costuras de los lados y los hombros](step01.png)
 
-Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Pon delantero y de vuelta sobre el otro con _buenos lados juntos_. Cose las costuras laterales y las costuras cortas de los arriba de los tirantes. Si tienes una remalladora, este es un buen momento para usarla. Si no, haz las costuras de otra forma.
 
-## Paso 2: Termina la lluvia
+## Paso 2: Termina el dobladillo
 
-![Terminar el hem](step02.png)
+![Termina el dobladillo](step02.png)
 
-Doble la lluvia hacia arriba, y coser hacia abajo. Si tienes una cubierta, úsala. Si no, usa una _aguja gemela_ o _zig-zag stitch_ para mantener la costura estirable.
+Dobla el borde hacia arriba y cóselo. Si tienes una remalladora con coverlock, úsala. Si no, usa una _aguja doble o gemela_ o _punto de zig-zag_ para mantener la costura elástica.
 
 <Note>
 
@@ -167,4 +167,4 @@ Ten cuidado de no cortar un agujero en tu camiseta. Me ha ocurrido esto en más 
 
 </Note>
 
-![Eso es así, ya has hecho :Budgets_up:](finished.gif)
+![Ya está, ya has terminado 👍](finished.gif)

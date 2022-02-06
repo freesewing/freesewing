@@ -26,7 +26,9 @@ When that happens, you can lower the precision so you get what you expect.
 
 </Note>
 
-<Example part="utils_pointonbeam" caption="A Utils.pointOnBeam() example" />
+<Example part="utils_pointonbeam">
+A Utils.pointOnBeam() example
+</Example>
 
 ```js
 let {

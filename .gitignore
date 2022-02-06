@@ -73,6 +73,15 @@ prebuild/*.json
 
 # NextJS
 .next
+packages/freesewing.dev/out
+packages/freesewing.lab/out
+packages/freesewing.org/out
+packages/freesewing.dev/public/mdx
+packages/freesewing.lab/public/mdx
+packages/freesewing.org/public/mdx
+packages/freesewing.dev/prebuild
+packages/freesewing.lab/prebuild
+packages/freesewing.org/prebuild
 
 # Mock registry (verdaccio)
 .registry

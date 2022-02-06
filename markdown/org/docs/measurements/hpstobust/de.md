@@ -7,7 +7,7 @@ title: HPS zu Brust
 ###### HPS: Hochpunktschulter
 
 Der *Hochpunktschulter* oder *HPS* Punkt wird als Basis für mehrere vertikale Messungen verwendet.
-Weitere Informationen zum Auffinden dieses Punktes finden Sie in der [Hps-Dokumentation](/docs/measurements/hps/).
+Weitere Informationen zum Auffinden dieses Punktes findest du in der [HPS-Dokumentation](/docs/measurements/hps/).
 
 </Note>
 
@@ -24,7 +24,7 @@ Der Sinn dieser Messung ist es, den vollsten Teil deiner Brust vertikal an deine
 If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on 
 the same side of your body as the shoulder you're measuring. So könnten Sie zum Beispiel die Oberseite von 
 mit der rechten Hand bis zur rechten Schulter halten während die linke Hand das Ende hält. 
-Aber das bedeutet, dass Sie die Länge verzerren wollen, indem Sie den Arm auf der gleichen Seite anheben. 
+Dies bedeutet jedoch, dass du durch das Heben deines Armes auf derselben Seite geneu die Länge verzerrst, die du messen möchtest. 
 Du denkst vielleicht nicht, dass es einen Unterschied macht, aber in der Welt der Physiologie ist alles miteinander verbunden. Dadurch kann dies zu einem Fehler von ~2 cm (~1 Zoll) in deiner Messung führen.  
 Wechsle einfach die Hände, und du erhältst eine genauere Messung.
 

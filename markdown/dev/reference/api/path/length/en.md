@@ -8,7 +8,9 @@ float path.length()
 
 Returns the length of the path.
 
-<Example part="path_length" caption="Example of the Path.length() method" />
+<Example part="path_length">
+Example of the Path.length() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, macro } = part.shorthand();

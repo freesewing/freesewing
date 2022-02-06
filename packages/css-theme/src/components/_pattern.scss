@@ -1,0 +1,451 @@
+/* These vars are needed for those components already using TailwindCSS */
+:root {
+  /* Pattern background color */
+  --pattern-bg: #f8f9fa;
+  /* Color for the main fabric */
+  --pattern-fabric: #212529;
+  /* Color for lining fabric */
+  --pattern-lining: #74b816;
+  /* Color for interfacing */
+  --pattern-interfacing: #f03e3e;
+  /* Color for canvas */
+  --pattern-canvas: #f59f00;
+  /* Color for various fabric types */
+  --pattern-various: #ae3ec9;
+  /* Color for marking things on a pattern */
+  --pattern-mark: #4dabf7;
+  /* Color to provide contrast on a pattern */
+  --pattern-contrast: #f76707;
+  /* Color for noting things on a pattern */
+  --pattern-note: #f76707;
+
+  /* Pattern xs text size */
+  --pattern-text-xs: '0.2rem';
+  /* Pattern sm text size */
+  --pattern-text-sm: '0.3rem';
+  /* Pattern default text size */
+  --pattern-text: '0.4rem';
+  /* Pattern lg text size */
+  --pattern-text-lg: '0.6rem';
+  /* Pattern xl text size */
+  --pattern-text-xl: '0.8rem';
+  /* Pattern 2xl text size */
+  --pattern-text-2xl: '1.5rem';
+  /* Pattern 3xl text size */
+  --pattern-text-3xl: '2rem';
+}
+
+
+
+svg.freesewing.pattern {
+  max-width: 100%;
+  /* Reset */
+  path,
+  circle {
+    fill: none;
+    stroke: none;
+  }
+
+  /* Defaults */
+  path,
+  circle {
+    stroke-opacity: 1;
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.7);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Stroke classes */
+  .stroke-xs {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.1);
+  }
+  .stroke-sm {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.4);
+  }
+  .stroke-lg {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 1.3);
+  }
+  .stroke-xl {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 2);
+  }
+  .stroke-xxl,
+  .stroke-2xl {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 4);
+  }
+  .stroke-3xl {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 6);
+  }
+  .stroke-4xl {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 10);
+  }
+
+  .sa {
+    stroke-dasharray: 1, 3;
+  }
+  .help {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.6);
+    stroke-dasharray: 15, 5, 2, 5;
+  }
+  .dotted {
+    stroke-dasharray: 0.5, 1;
+  }
+  .dashed {
+    stroke-dasharray: 2, 2;
+  }
+  .lashed {
+    stroke-dasharray: 8, 3;
+  }
+  .hidden {
+    stroke: none !important;
+    fill: none !important;
+  }
+
+  /* Text */
+  text {
+    font-size: calc(6px * var(--freesewing-pattern-scale));
+    @include title-font;
+    text-anchor: start;
+    font-weight: 400;
+    dominant-baseline: ideographic;
+  }
+  .text-xs {
+    font-size: calc(4px * var(--freesewing-pattern-scale));
+  }
+  .text-sm {
+    font-size: calc(5px * var(--freesewing-pattern-scale));
+  }
+  .text-l {
+    font-size: calc(8px * var(--freesewing-pattern-scale));
+  }
+  .text-xl {
+    font-size: calc(10px * var(--freesewing-pattern-scale));
+  }
+  .text-xxl,
+  .text-2xl {
+    font-size: calc(12px * var(--freesewing-pattern-scale));
+  }
+  .text-3xl {
+    font-size: calc(16px * var(--freesewing-pattern-scale));
+  }
+  .text-4xl {
+    font-size: calc(22px * var(--freesewing-pattern-scale));
+  }
+
+  .center {
+    text-anchor: middle;
+  }
+  .right {
+    text-anchor: end;
+  }
+  .font-bold {
+    font-weight: bold;
+  }
+
+  .scribble {
+    @include scribble-font;
+  }
+
+  /* Plugins */
+  text.title-nr {
+    font-size: calc(32px * var(--freesewing-pattern-scale));
+    @include title-font;
+    font-weight: 700;
+    stroke: none;
+  }
+  /* New style for sampled sizes */
+  path.size-3XS,
+  path.size-2XS,
+  path.size-XS,
+  path.size-S,
+  path.size-M {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.5);
+    stroke-dasharray: 0.25 0.75;
+  }
+  path.made-to-measure,
+  path.size-L,
+  path.size-XL,
+  path.size-2XL,
+  path.size-3XL,
+  path.size-4XL {
+    stroke-width: calc(var(--freesewing-pattern-scale) * 0.5);
+  }
+}
+
+svg.freesewing.draft text {
+  fill: currentColor;
+}
+.theme-wrapper.light svg.freesewing.draft {
+  /* Stroke classes */
+  path,
+  circle {
+    stroke: $fs-pattern-fabric-light;
+  }
+  .fabric {
+    stroke: $fs-pattern-fabric-light;
+  }
+  .lining {
+    stroke: $fs-pattern-lining-light;
+  }
+  .interfacing {
+    stroke: $fs-pattern-interfacing-light;
+  }
+  .canvas {
+    stroke: $fs-pattern-canvas-light;
+  }
+  .various {
+    stroke: $fs-pattern-various-light;
+  }
+  .mark {
+    stroke: $fs-pattern-mark-light;
+  }
+  .contrast {
+    stroke: $fs-pattern-contrast-light;
+  }
+  .note {
+    stroke: $fs-pattern-note-light;
+  }
+  /* Fill classes */
+  .fill-fabric {
+    fill: $fs-pattern-fabric-light;
+  }
+  .fill-lining {
+    fill: $fs-pattern-lining-light;
+  }
+  .fill-interfacing {
+    fill: $fs-pattern-interfacing-light;
+  }
+  .fill-canvas {
+    fill: $fs-pattern-canvas-light;
+  }
+  .fill-various {
+    fill: $fs-pattern-various-light;
+  }
+  .fill-mark {
+    fill: $fs-pattern-mark-light;
+  }
+  .fill-contrast {
+    fill: $fs-pattern-contrast-light;
+  }
+  .fill-note {
+    fill: $fs-pattern-note-light;
+  }
+  .fill-bg {
+    fill: $fs-bg-light;
+  }
+  path.sample-focus {
+    fill: #000;
+  }
+  /* scalebox plugin */
+  path.scalebox.metric {
+    stroke: none;
+    fill: $fs-bg-light;
+  }
+  path.scalebox.imperial {
+    stroke: none;
+    fill: $fs-bg-dark;
+  }
+  path.bartack {
+    stroke: $fs-pattern-mark-light;
+  }
+  path.logo {
+    fill: currentColor;
+    stroke: none;
+  }
+  /* New style for sampled sizes */
+  path.made-to-measure {
+    stroke: #212529;
+  }
+  path.size-3XS {
+    stroke: $oc-lime-6;
+  }
+  path.size-2XS {
+    stroke: $oc-orange-6;
+  }
+  path.size-XS {
+    stroke: $oc-grape-6;
+  }
+  path.size-S {
+    stroke: $oc-indigo-6;
+  }
+  path.size-M {
+    stroke: $oc-cyan-6;
+  }
+  path.size-L {
+    stroke: $oc-indigo-6;
+  }
+  path.size-XL {
+    stroke: $oc-grape-6;
+  }
+  path.size-2XL {
+    stroke: $oc-orange-6;
+  }
+  path.size-3XL {
+    stroke: $oc-lime-6;
+  }
+  path.size-4XL {
+    stroke: $oc-teal-6;
+  }
+}
+.theme-wrapper.dark svg.freesewing.draft {
+  /* Stroke classes */
+  path,
+  circle {
+    stroke: $fs-pattern-fabric-dark;
+  }
+  .fabric {
+    stroke: $fs-pattern-fabric-dark;
+  }
+  .lining {
+    stroke: $fs-pattern-lining-dark;
+  }
+  .interfacing {
+    stroke: $fs-pattern-interfacing-dark;
+  }
+  .canvas {
+    stroke: $fs-pattern-canvas-dark;
+  }
+  .various {
+    stroke: $fs-pattern-various-dark;
+  }
+  .mark {
+    stroke: $fs-pattern-mark-dark;
+  }
+  .contrast {
+    stroke: $fs-pattern-contrast-dark;
+  }
+  .note {
+    stroke: $fs-pattern-note-dark;
+  }
+  /* Fill classes */
+  .fill-fabric {
+    fill: $fs-pattern-fabric-dark;
+  }
+  .fill-lining {
+    fill: $fs-pattern-lining-dark;
+  }
+  .fill-interfacing {
+    fill: $fs-pattern-interfacing-dark;
+  }
+  .fill-canvas {
+    fill: $fs-pattern-canvas-dark;
+  }
+  .fill-various {
+    fill: $fs-pattern-various-dark;
+  }
+  .fill-mark {
+    fill: $fs-pattern-mark-dark;
+  }
+  .fill-contrast {
+    fill: $fs-pattern-contrast-dark;
+  }
+  .fill-note {
+    fill: $fs-pattern-note-dark;
+  }
+  .fill-bg {
+    fill: $fs-bg-dark;
+  }
+  path.sample-focus {
+    fill: #fff;
+  }
+  /* scalebox plugin */
+  path.scalebox.metric {
+    stroke: none;
+    fill: $fs-bg-dark;
+  }
+  path.scalebox.imperial {
+    stroke: none;
+    fill: $fs-bg-light;
+  }
+  path.bartack {
+    stroke: $fs-pattern-mark-dark;
+  }
+  path.logo {
+    fill: currentColor;
+    stroke: none;
+  }
+  /* New style for sampled sizes */
+  path.made-to-measure {
+    stroke: #f8f9fa;
+  }
+  path.size-3XS {
+    stroke: $oc-lime-3;
+  }
+  path.size-2XS {
+    stroke: $oc-orange-3;
+  }
+  path.size-XS {
+    stroke: $oc-grape-3;
+  }
+  path.size-S {
+    stroke: $oc-indigo-3;
+  }
+  path.size-M {
+    stroke: $oc-cyan-3;
+  }
+  path.size-L {
+    stroke: $oc-indigo-3;
+  }
+  path.size-XL {
+    stroke: $oc-grape-3;
+  }
+  path.size-2XL {
+    stroke: $oc-orange-3;
+  }
+  path.size-3XL {
+    stroke: $oc-lime-3;
+  }
+  path.size-4XL {
+    stroke: $oc-teal-3;
+  }
+}
+
+/* SVG defs (snippets) are in the shadow DOM */
+g.snippet.notch > circle,
+g.snippet.button > circle,
+g.snippet.buttonhole > path {
+  color: $fs-pattern-mark-light;
+}
+g.snippet.bnotch > circle,
+g.snippet.bnotch > path {
+  color: $fs-pattern-note-light;
+}
+/* Same for paperless grid, also in shadow DOM */
+rect.grid {
+  stroke-width: 1;
+  stroke: currentColor;
+}
+path.gridline {
+  stroke-linecap: butt;
+  stroke-width: 0.3 !important;
+  stroke-dasharray: none;
+}
+path.gridline.sm {
+  stroke-width: 0.15 !important;
+}
+path.gridline.xs {
+  stroke-width: 0.1 !important;
+}
+path.gridline.metric.sm {
+  stroke-dasharray: 3 1;
+}
+path.gridline.metric.xs {
+  stroke-dasharray: 1 1;
+}
+path.gridline.imperial {
+  stroke-dasharray: 5 5;
+}
+path.gridline.imperial.sm {
+  stroke-dasharray: 2 2;
+}
+.light {
+  rect.grid,
+  path.gridline {
+    color: $oc-gray-5 !important;
+  }
+}
+.dark {
+  rect.grid,
+  path.gridline {
+    color: $oc-gray-6 !important;
+  }
+}

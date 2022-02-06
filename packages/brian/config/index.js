@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'brian',
-  version: version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -95,7 +95,7 @@ export default {
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },
-    sleevecapEase: { pct: 1, min: 0, max: 10 },
+    sleevecapEase: { pct: 0, min: 0, max: 10 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
     sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },

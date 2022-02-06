@@ -1,4 +1,4 @@
-To make Tiberius, you will need the following:
+Um Tiberius zu erstellen, benötigst du Folgendes:
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 2 Meter eines geeigneten Stoffes (siehe [Stoffoptionen](/docs/patterns/tiberius/fabric))
-- (a belt, for wearing it)
+- About 2 meters (2.2 yards) of a suitable fabric (see [Fabric options](/docs/patterns/tiberius/fabric))
+- (einen Gürtel zum Tragen)

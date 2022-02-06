@@ -14,7 +14,9 @@ Point | false utils.linesIntersect(
 Finds the intersection between two line segments. Returns a [Point](#point) object
 for the intersection, or `false` if the lines don't intersect.
 
-<Example part="utils_linesintersect" caption="A Utils.linesIntersect() example" />
+<Example part="utils_linesintersect">
+A Utils.linesIntersect() example
+</Example>
 
 ```js
 let {

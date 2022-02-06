@@ -1,7 +1,19 @@
 # Change log for: @freesewing/yuri
 
 
-## 2.19.5 (2022-11-13)
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
+## 2.19.8 (2022-01-08)
+
+### Fixed
+
+ - Fix dependency configuration Fixes [#1334](https://github.com/freesewing/freesewing/issues/1334)
+
+## 2.19.5 (2021-11-13)
 
 ### Fixed
 

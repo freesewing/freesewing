@@ -1,11 +1,11 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 import { smallsteps } from '@freesewing/snapseries'
 import freesewing from '@freesewing/core'
 const { pctBasedOn } = freesewing
 
 export default {
   name: 'trayvon',
-  version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'accessories',

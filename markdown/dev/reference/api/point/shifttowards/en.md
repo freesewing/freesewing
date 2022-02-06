@@ -14,10 +14,9 @@ Point point.shiftTowards(Point target, float distance)
 
 ## Point.shiftTowards() example
 
-<Example
-  part="point_shifttowards"
-  caption="An example of the Point.shiftTowards() method"
-/>
+<Example part="point_shifttowards">
+An example of the Point.shiftTowards() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, macro } = part.shorthand();

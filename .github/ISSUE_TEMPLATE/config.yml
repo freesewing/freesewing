@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Chat on Discord
-    url: https://chat.freesewing.org/
-    about: Reach out to us on Discord if you need help or have questions
+  - name: 💬 Chat on Discord
+    url: https://discord.freesewing.org/
+    about: Join our community on Discord for real-time chat
+  - name: 🙋 Ask a question on Github discussions
+    url: https://github.com/freesewing/freesewing/discussions
+    about: Ask questions on a formum-style discussion board on Github

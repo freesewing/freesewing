@@ -1,11 +1,11 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 import { elastics } from '@freesewing/snapseries'
 import freesewing from '@freesewing/core'
 const { pctBasedOn } = freesewing
 
 export default {
   name: 'shin',
-  version: version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'swimwear',
@@ -16,6 +16,9 @@ export default {
     style: ['rise', 'elasticWidth'],
   },
   measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
+  dependencies: {
+    front: 'back',
+  },
   parts: ['back', 'front', 'waistband'],
   options: {
     // Constants

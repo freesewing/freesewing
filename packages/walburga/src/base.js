@@ -24,8 +24,7 @@ export default function (part) {
       ? measurements.waistToKnee / 1.3
       : measurements.waistToFloor * 0.95
 
-  const hiplength =
-    (measurements.hpsToWaistBack + measurements.waistToHips)
+  const hiplength = measurements.hpsToWaistBack + measurements.waistToHips
   const hwidth = (measurements.shoulderToShoulder / 2) * options.widthBonus
   const length = (measurements.hpsToWaistBack + hem_pos) * options.lengthBonus
   const hhead = (measurements.head / 4) * options.headRatio

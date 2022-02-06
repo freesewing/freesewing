@@ -1,24 +1,13 @@
 ---
-title: logo
+title: "@freesewing/plugin-logo"
 ---
 
-[![Build-time plugin](https://img.shields.io/badge/Type-build--time-purple.svg)](/plugins)
-&nbsp;
-[![License: MIT](https://img.shields.io/npm/l/@freesewing/plugin-logo.svg?label=License)](https://www.npmjs.com/package/@freesewing/plugin-logo)
-&nbsp;
-[![Code quality on DeepScan](https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256)
-&nbsp;
-[![Open issues tagged pkg:plugin-logo](https://img.shields.io/github/issues/freesewing/freesewing/pkg:plugin-logo.svg?label=Issues)](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aplugin-logo)
+The **@freesewing/plugin-logo** plugin provides the FreeSewing logo
+as [the logo snippet](/reference/api/snippets/logo).
+It's a plugin you most likely want to replace with your own version
+if you want to generate patterns with your own branding.
 
-The **logo** plugin provides [the logo snippet](/reference/snippets/):
-
-<Example part="plugin_logo" caption="An example of the logo snippet" design={false} />
-
-```js
-let { Point, snippets, Snippet } = part.shorthand();
-
-snippets.logo = new Snippet("logo", new Point(50, 30));
-```
+<Example part="plugin_logo">An example of the logo snippet</Example>
 
 <Tip>
 
@@ -34,8 +23,8 @@ npm install @freesewing/plugin-logo
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them 
-by passing them to the [`freesewing.Design`](/reference/api#design) constructor:
+Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
+load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
 
 ```js
 import freesewing from "@freesewing/core";
@@ -44,4 +33,6 @@ import config from "../config";
 
 const Pattern = new freesewing.Design(config, logo);
 ```
+
+You can now use the [logo](/reference/api/snippets/logo) snippet in your parts.
 

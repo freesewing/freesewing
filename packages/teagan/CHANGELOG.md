@@ -1,6 +1,13 @@
 # Change log for: @freesewing/teagan
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Lock the `frontArmholeDeeper` option to a static value
+ - Switched to default import for version from package.json
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

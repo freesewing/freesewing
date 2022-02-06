@@ -34,6 +34,8 @@ Now that you have learned how to create a pattern, why don't you make one?
 Think about what it is you would like to create, and just do it. If you get stuck at any moment,
 or need some help or advice, you can [join our chat room](https://discord.freesewing.org/) and we'll help you out.
 
+If you need some ideas or want to help on a pattern design take a look [at these open projects](https://github.com/freesewing/freesewing/discussions?discussions_q=label%3A%22%3Ashirt%3A+pattern+design%22+label%3A%22%3A%2B1%3A+good+first+issue%22) for patterns which are currently being worked on and are good patterns for a first time contributor to have a go at!
+
 <Note>
 
 ###### Tell us how we can improve this tutorial

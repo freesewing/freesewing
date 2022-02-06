@@ -1,5 +1,0 @@
----
-title: Typography
----
-
-<ReadMore list />

@@ -16,7 +16,9 @@ array | false utils.curvesIntersect(
 
 Finds the intersections between two curves described by 4 points each.
 
-<Example part="utils_curvesintersect" caption="A Utils.curvesIntersect() example" />
+<Example part="utils_curvesintersect">
+A Utils.curvesIntersect() example
+</Example>
 
 ```js
 let {

@@ -1,4 +1,6 @@
 /* eslint no-unused-expressions: "warn" */
+import banner from '@freesewing/plugin-banner'
+import bartack from '@freesewing/plugin-bartack'
 import buttons from '@freesewing/plugin-buttons'
 import cutonfold from '@freesewing/plugin-cutonfold'
 import dimension from '@freesewing/plugin-dimension'
@@ -11,9 +13,11 @@ import scalebox from '@freesewing/plugin-scalebox'
 import round from '@freesewing/plugin-round'
 import sprinkle from '@freesewing/plugin-sprinkle'
 import measurements from '@freesewing/plugin-measurements'
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 const bundle = [
+  banner,
+  bartack,
   buttons,
   cutonfold,
   dimension,
@@ -54,8 +58,8 @@ function bundleMacros() {
 }
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: bundleHooks(),
   macros: bundleMacros(),
 }

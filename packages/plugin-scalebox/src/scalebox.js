@@ -21,22 +21,66 @@ export default function (so) {
     for (let id of ['__scaleboxMetric', '__scaleboxImperial']) delete this.paths[id]
     return true
   }
+
+  const scale = this.context.settings.scale
+
+  // Convert scale to a value between 0 and 9, inclusive.
+  const scaleIndex = Math.round(10 * Math.max(0.1, Math.min(1, this.context.settings.scale))) - 1
+
+  // Metric width and height in mm and display width and height for each scale index.
+  const metricSizes = [
+    [ 10, 5,  "1cm",  "0.5cm"],
+    [ 20, 10, "2cm",  "1cm"],
+    [ 30, 15, "3cm",  "1.5cm"],
+    [ 40, 20, "4cm",  "2cm"],
+    [ 50, 25, "5cm",  "2.5cm"],
+    [ 60, 30, "6cm",  "3cm"],
+    [ 70, 35, "7cm",  "3.5cm"],
+    [ 80, 40, "8cm",  "4cm"],
+    [ 90, 45, "9cm",  "4.5cm"],
+    [100, 50, "10cm", "5cm"],
+  ]
+
+  const metricWidth         = metricSizes[scaleIndex][0]
+  const metricHeight        = metricSizes[scaleIndex][1]
+  const metricDisplayWidth  = metricSizes[scaleIndex][2]
+  const metricDisplayHeight = metricSizes[scaleIndex][3]
+
+  // Imperial width and height in mm and display width and heigth for each scale index.
+  const imperialSizes = [
+    [25.4 * 0.5,   25.4 * 0.25,  '½″',   '¼″'],
+    [25.4 * 0.875, 25.4 * 0.5,   '⅞″',   '½″'],
+    [25.4 * 1.25,  25.4 * 0.625, '1 ¼″', '⅝″'],
+    [25.4 * 1.625, 25.4 * 0.875, '1 ⅝″', '⅞″'],
+    [25.4 * 2,     25.4 * 1,     '2″',   '1″'],
+    [25.4 * 2.375, 25.4 * 1.25,  '2 ⅜″', '1 ¼″'],
+    [25.4 * 2.875, 25.4 * 1.5,   '2 ⅞″', '1 ½″'],
+    [25.4 * 3.25,  25.4 * 1.625, '3 ¼″', '1 ⅝″'],
+    [25.4 * 3.625, 25.4 * 1.875, '3 ⅝″', '1 ⅞″'],
+    [25.4 * 4,     25.4 * 2,     '4″',   '2″'],
+  ]
+
+  const imperialWidth         = imperialSizes[scaleIndex][0]
+  const imperialHeight        = imperialSizes[scaleIndex][1]
+  const imperialDisplayWidth  = imperialSizes[scaleIndex][2]
+  const imperialDisplayHeight = imperialSizes[scaleIndex][3]
+
   // Box points
-  this.points.__scaleboxMetricTopLeft = new this.Point(so.at.x - 50, so.at.y - 25)
-  this.points.__scaleboxMetricTopRight = new this.Point(so.at.x + 50, so.at.y - 25)
-  this.points.__scaleboxMetricBottomLeft = new this.Point(so.at.x - 50, so.at.y + 25)
-  this.points.__scaleboxMetricBottomRight = new this.Point(so.at.x + 50, so.at.y + 25)
-  this.points.__scaleboxImperialTopLeft = new this.Point(so.at.x - 50.8, so.at.y - 25.4)
-  this.points.__scaleboxImperialTopRight = new this.Point(so.at.x + 50.8, so.at.y - 25.4)
-  this.points.__scaleboxImperialBottomLeft = new this.Point(so.at.x - 50.8, so.at.y + 25.4)
-  this.points.__scaleboxImperialBottomRight = new this.Point(so.at.x + 50.8, so.at.y + 25.4)
+  this.points.__scaleboxMetricTopLeft = new this.Point(so.at.x - metricWidth / 2, so.at.y - metricHeight / 2)
+  this.points.__scaleboxMetricTopRight = new this.Point(so.at.x + metricWidth / 2, so.at.y - metricHeight / 2)
+  this.points.__scaleboxMetricBottomLeft = new this.Point(so.at.x - metricWidth / 2, so.at.y + metricHeight / 2)
+  this.points.__scaleboxMetricBottomRight = new this.Point(so.at.x + metricWidth / 2, so.at.y + metricHeight / 2)
+  this.points.__scaleboxImperialTopLeft = new this.Point(so.at.x - imperialWidth / 2, so.at.y - imperialHeight / 2)
+  this.points.__scaleboxImperialTopRight = new this.Point(so.at.x + imperialWidth / 2, so.at.y - imperialHeight / 2)
+  this.points.__scaleboxImperialBottomLeft = new this.Point(so.at.x - imperialWidth / 2, so.at.y + imperialHeight / 2)
+  this.points.__scaleboxImperialBottomRight = new this.Point(so.at.x + imperialWidth / 2, so.at.y + imperialHeight / 2)
   // Text anchor points
-  this.points.__scaleboxLead = new this.Point(so.at.x - 45, so.at.y - 15)
-  this.points.__scaleboxTitle = this.points.__scaleboxLead.shift(-90, 10)
-  this.points.__scaleboxText = this.points.__scaleboxTitle.shift(-90, 12)
-  this.points.__scaleboxLink = this.points.__scaleboxText.shift(-90, 5)
-  this.points.__scaleboxMetric = new this.Point(so.at.x, so.at.y + 20)
-  this.points.__scaleboxImperial = new this.Point(so.at.x, so.at.y + 24)
+  this.points.__scaleboxLead = new this.Point(so.at.x - 45 * scale, so.at.y - 15 * scale)
+  this.points.__scaleboxTitle = this.points.__scaleboxLead.shift(-90, 10 * scale)
+  this.points.__scaleboxText = this.points.__scaleboxTitle.shift(-90, 12 * scale)
+  this.points.__scaleboxLink = this.points.__scaleboxText.shift(-90, 5 * scale)
+  this.points.__scaleboxMetric = new this.Point(so.at.x, so.at.y + 20 * scale)
+  this.points.__scaleboxImperial = new this.Point(so.at.x, so.at.y + 24 * scale)
   // Rotation
   if (so.rotate) {
     let points = [
@@ -65,14 +109,14 @@ export default function (so) {
   }
   // Paths
   this.paths.__scaleboxImperial = new this.Path()
-    .attr('class', 'scalebox imperial')
+    .attr('class', 'scalebox imperial fill-current')
     .move(this.points.__scaleboxImperialTopLeft)
     .line(this.points.__scaleboxImperialBottomLeft)
     .line(this.points.__scaleboxImperialBottomRight)
     .line(this.points.__scaleboxImperialTopRight)
     .close()
   this.paths.__scaleboxMetric = new this.Path()
-    .attr('class', 'scalebox metric')
+    .attr('class', 'scalebox metric fill-bg')
     .move(this.points.__scaleboxMetricTopLeft)
     .line(this.points.__scaleboxMetricBottomLeft)
     .line(this.points.__scaleboxMetricBottomRight)
@@ -97,20 +141,20 @@ export default function (so) {
     this.points.__scaleboxText.attr('data-text', 'supportFreesewingBecomeAPatron')
     this.points.__scaleboxLink = this.points.__scaleboxLink
       .attr('data-text', 'freesewing.org/patrons/join')
-      .attr('data-text-class', 'text-xs fill-note')
+      .attr('data-text-class', 'text-sm fill-note')
   }
   this.points.__scaleboxText.attr('data-text-class', 'text-xs').attr('data-text-lineheight', 4)
   // Instructions
   this.points.__scaleboxMetric = this.points.__scaleboxMetric
     .attr('data-text', 'theWhiteInsideOfThisBoxShouldMeasure')
-    .attr('data-text', '10cm')
+    .attr('data-text', `${metricDisplayWidth}`)
     .attr('data-text', 'x')
-    .attr('data-text', '5cm')
+    .attr('data-text', `${metricDisplayHeight}`)
     .attr('data-text-class', 'text-xs center')
   this.points.__scaleboxImperial = this.points.__scaleboxImperial
     .attr('data-text', 'theBlackOutsideOfThisBoxShouldMeasure')
-    .attr('data-text', '4"')
+    .attr('data-text', `${imperialDisplayWidth}`)
     .attr('data-text', 'x')
-    .attr('data-text', '2"')
+    .attr('data-text', `${imperialDisplayHeight}`)
     .attr('data-text-class', 'text-xs center ')
 }

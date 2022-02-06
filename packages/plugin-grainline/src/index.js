@@ -1,24 +1,32 @@
 import markers from './markers'
-import { version, name } from '../package.json'
+import pkg from '../package.json'
+
+const dflts = {
+  text: 'grainline',
+}
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
     preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-grainline') === false) {
-        svg.attributes.set('freesewing:plugin-grainline', version)
+        svg.attributes.set('freesewing:plugin-grainline', pkg.version)
         svg.defs += markers
       }
     },
   },
   macros: {
-    grainline: function (so) {
+    grainline: function (so = {}) {
       if (so === false) {
         delete this.points.grainlineFrom
         delete this.points.grainlineTo
         delete this.paths.grainline
         return true
+      }
+      so = {
+        ...dflts,
+        ...so,
       }
       let points = this.points
       points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
@@ -29,7 +37,7 @@ export default {
         .attr('class', 'note')
         .attr('marker-start', 'url(#grainlineFrom)')
         .attr('marker-end', 'url(#grainlineTo)')
-        .attr('data-text', 'grainline')
+        .attr('data-text', so.text)
         .attr('data-text-class', 'center fill-note')
     },
   },

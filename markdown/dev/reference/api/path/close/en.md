@@ -8,7 +8,9 @@ Path path.close()
 
 Closes a path by drawing a straight line from the current position to the path's start.
 
-<Example part="path_close" caption="Example of the Path.close() method" />
+<Example part="path_close">
+Example of the Path.close() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

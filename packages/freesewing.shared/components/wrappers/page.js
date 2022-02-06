@@ -1,22 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
-//import {themeChange} from "theme-change"
-//import Head from 'next/head'
-//import { useHotkeys } from 'react-hotkeys-hook'
-//import themes from '@/shared/themes'
-//import { useRouter } from 'next/router'
-//import config from '@/site/freesewing.config.js'
+import { useRouter } from 'next/router'
+import { useHotkeys } from 'react-hotkeys-hook'
 // Shared components
 import Layout from 'shared/components/layouts/default'
-//import ProgressBar from '@/shared/components/progress-bar'
-//import Navbar from '@/shared/components/sections/navbar'
-//import Footer from '@/site/components/footer'
-//import useNavigation from '@/shared/hooks/useNavigation'
-//
-
 
 /* This component should wrap all page content */
-const AppWrapper= props => {
+const PageWrapper= props => {
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: evt => (props.app.primaryMenu) ? props.app.setPrimaryMenu(false) : null,
@@ -24,38 +14,35 @@ const AppWrapper= props => {
     trackMouse: true
   })
 
-  //const router = useRouter()
-  //const path = router.asPath
-  //const locale = router.locale || config.language
-  //const tree = useNavigation(locale, path)
+  const router = useRouter()
+  const slug = router.asPath.slice(1)
+
+  useEffect(() => props.app.setSlug(slug), [slug])
 
   // Trigger search with Ctrl+k
-  //useHotkeys('ctrl+k', (evt) => {
-  //  evt.preventDefault()
-  //  setSearch(true)
-  //})
+  useHotkeys('ctrl+k', (evt) => {
+    evt.preventDefault()
+    setSearch(true)
+  })
 
-  //const [menu, setMenu] = useState(false)
-  //const [search, setSearch] = useState(false)
-
-  //useEffect(() => {
-  //  themeChange(false)
-  //}, [menu])
+  const [search, setSearch] = useState(false)
 
   const childProps = {
     app: props.app,
     title: props.title,
+    search, setSearch, toggleSearch: () => setSearch(!search),
+    noSearch: props.noSearch,
+    workbench: props.workbench,
+    AltMenu: props.AltMenu || null
   }
-  //  menu, setMenu, toggleMenu: () => setMenu(!menu),
-  //  search, setSearch, toggleSearch: () => setSearch(!search),
-  //  path, tree,
-  //  title: props.title,
-  //  t: props.t ? props.t : (x) => x,
-  //  locale, languages: config.languages,
-  //}
 
   return (
-    <div {...swipeHandlers}>
+    <div
+      ref={swipeHandlers.ref}
+      onMouseDown={swipeHandlers.onMouseDown}
+      data-theme={props.app.theme}
+      key={props.app.theme} // Thiis forces the data-theme update
+    >
       {props.noLayout
         ? props.children
         : <Layout {...childProps}>{props.children}</Layout>
@@ -64,5 +51,5 @@ const AppWrapper= props => {
   )
 }
 
-export default AppWrapper
+export default PageWrapper
 

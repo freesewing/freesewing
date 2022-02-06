@@ -1,4 +1,4 @@
-import { name, version } from '../package.json'
+import pkg from '../package.json'
 
 const lineValues = (start, end) => {
   const { x: x1, y: y1 } = start
@@ -22,10 +22,10 @@ const mirrorGen = (start, end) => {
 const capFirst = (string) => string.charAt(0).toUpperCase() + string.slice(1)
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-mirror', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-mirror', pkg.version),
   },
   macros: {
     mirror: function ({
@@ -94,5 +94,5 @@ export default {
       }
     },
   },
-  methods: { lineValues, mirrorGen }
+  methods: { lineValues, mirrorGen },
 }

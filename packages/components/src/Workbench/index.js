@@ -318,7 +318,10 @@ const Workbench = ({
 
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
-      <style>{sass}</style>
+      <style>
+        {`:root { --freesewing-pattern-scale: ${gist.settings.scale || 1}; }`}
+        {sass}
+      </style>
       <div
         className={
           theme === 'light' ? 'workbench theme-wrapper light' : 'workbench theme-wrapper dark'

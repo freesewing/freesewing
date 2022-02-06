@@ -635,7 +635,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/961256?v=4",
       "profile": "http://metafly.info/",
       "contributions": [
-        "translation"
+        "translation",
+        "doc"
       ]
     },
     {
@@ -709,6 +710,73 @@
       "contributions": [
         "question"
       ]
+    },
+    {
+      "login": "glennmatthews",
+      "name": "Glenn Matthews",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5603551?v=4",
+      "profile": "https://www.linkedin.com/in/glennfmatthews/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "anniekao",
+      "name": "Annie Kao",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1550506?v=4",
+      "profile": "https://github.com/anniekao",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "nicholasdower",
+      "name": "Nick Dower",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9117775?v=4",
+      "profile": "https://github.com/nicholasdower",
+      "contributions": [
+        "doc",
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "jgfichte",
+      "name": "Jason Williams",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1787162?v=4",
+      "profile": "https://github.com/jgfichte",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Tyrannogina",
+      "name": "Sara Latorre",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19556565?v=4",
+      "profile": "https://github.com/Tyrannogina",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "RikHekker",
+      "name": "Rik Hekker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31843274?v=4",
+      "profile": "https://github.com/RikHekker",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "SeaZeeZee",
+      "name": "SeaZeeZee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86711383?v=4",
+      "profile": "https://github.com/SeaZeeZee",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
-  ]
+  ],
+  "skipCi": true
 }

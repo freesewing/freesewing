@@ -8,7 +8,9 @@ Point path.end()
 
 Returns the Point object at the end of the path.
 
-<Example part="path_end" caption="Example of the Path.end() method" />
+<Example part="path_end">
+Example of the Path.end() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

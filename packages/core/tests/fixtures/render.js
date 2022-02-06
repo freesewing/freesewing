@@ -5,7 +5,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="0mm" height="0mm" viewBox="0 0 0 0"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -26,7 +25,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="nl" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="0mm" height="0mm" viewBox="0 0 0 0"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -47,7 +45,6 @@ var render = {
      xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" viewBox="0 0 0 0"
      >
      <style type="text/css"> <![CDATA[
-
      ]]>
      </style>
      <script type="text/javascript"> <![CDATA[
@@ -68,7 +65,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -94,7 +90,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.451075975520425"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -121,7 +116,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -149,7 +143,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="104mm" height="104mm" viewBox="0 0 104 104"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -180,7 +173,6 @@ var render = {
      xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
      >
      <style type="text/css"> <![CDATA[
-
      ]]>
      </style>
      <script type="text/javascript"> <![CDATA[
@@ -208,7 +200,6 @@ var render = {
      xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
      >
      <style type="text/css"> <![CDATA[
-
      ]]>
      </style>
      <script type="text/javascript"> <![CDATA[
@@ -225,7 +216,7 @@ var render = {
 
        <!-- Start of group #fs-part-test -->
        <g id="fs-part-test"  transform=" translate(2, 2)">
-       <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="12">with text on</tspan><tspan x="20" dy="12">multiple lines</tspan>
+       <text  class="text-lg" x="20" y="20"><tspan>This is a test</tspan><tspan x="20" dy="6">with text on</tspan><tspan x="20" dy="6">multiple lines</tspan>
        </text>
        </g>
        <!-- end of group #fs-part-test -->
@@ -236,7 +227,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.451075975520425"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -265,7 +255,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.451075975520425"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -294,7 +283,6 @@ var render = {
  xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="44mm" height="56.45mm" viewBox="0 0 44 56.451075975520425"
 >
 <style type="text/css"> <![CDATA[
-
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -340,7 +328,7 @@ var render = {
 
 <!-- Start of group #fs-part-test -->
 <g id="fs-part-test"  transform="translate(2, 2)">
-<use x="20" y="20" xlink:href="#test" ></use>
+<use x="20" y="20" xlink:href="#test"  transform="translate(20, 20) scale(1) translate(-20, -20)"></use>
 </g>
 <!-- end of group #fs-part-test -->
 </g>

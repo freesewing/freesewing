@@ -1,4 +1,4 @@
-![The vertical location of the front inflection point](./sleevecapfonrtfactory.svg)
+![The vertical location of the front inflection point](./sleevecapfrontfactory.svg)
 
 This option controls the vertical placement of the sleevecap inflection point at the front of the sleeve.
 
@@ -11,4 +11,4 @@ look into how the sleevecap is constructed and the influence of the different op
 
 
 ## Effect of this option on the pattern
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](huey_sleevecapfrontfactory_sample.svg "Effect of this option on the pattern")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](yuri_sleevecapfrontfactory_sample.svg "Effect of this option on the pattern")

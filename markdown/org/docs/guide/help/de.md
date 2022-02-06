@@ -1,5 +1,5 @@
 ---
-title: Hilfe bekommen
+title: Hilfe erhalten
 order: 999
 ---
 

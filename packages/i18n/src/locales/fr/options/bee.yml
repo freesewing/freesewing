@@ -55,4 +55,22 @@ neckTieColours:
   description: Que vous vouliez une seule couleur autour de votre cou, ou des couleurs doubles
 crossBackTies:
   title: Bandes croisées dans le dos
-  description: Si vous souhaitez croiser les liens à l'arrière ou non
+  description: Si vous souhaitez utiliser la variation de dos croisé de Bee
+bandLength:
+  title: Longueur de la bande (bandes croisées dans le dos)
+  description: Contrôle la longueur de la bande autour de votre buste pour la variation du dos croisé de Bee
+backDartHeight:
+  title: Hauteur de la pince dos (Bella)
+  description: Contrôle la hauteur de pince dos dans le bloc de Bella sur lequel est basé Bee
+armholeDepth:
+  title: Profondeur d'emmanchure (Bella)
+  description: Contrôle la profondeur de l'emmanchure dans le bloc de Bella sur lequel est basé Bee
+frontArmholePitchDepth:
+  title: Profondeur du point pivot de l'emmanchure devant (Bella)
+  description: Contrôle la profondeur du point pivot de l'emmanchure avant dans le bloc Bella sur lequel est basé le patron Bee
+frontShoulderWidth:
+  title: Largeur de l'épaule devant (Bella)
+  description: Contrôle la largeur de l'épaule avant dans le bloc de Bella sur lequel est basé le patron Bee
+highBustWidth:
+  title: Largeur du tour de buste supérieur (Bella)
+  description: Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee

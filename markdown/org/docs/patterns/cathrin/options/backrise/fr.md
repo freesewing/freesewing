@@ -6,7 +6,7 @@ Zéro signifie que la ligne de fond restera horizontale au niveau de votre sous-
 
 Si vous augmentez le dos, votre corset se lèvera vers le haut à l'arrière.
 
-> Etant donné qu'il s'agit d'un corset sous-buste, l'ascension arrière est un choix de style et n'affectera pas l'ajustement
+> As this is an underbust corset, the back rise is a style choice and won't affect the fit
 
 
 ## Effet de cette option sur le motif

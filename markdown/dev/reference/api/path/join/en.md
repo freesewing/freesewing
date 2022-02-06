@@ -14,7 +14,9 @@ You cannot join a closed path to another path
 
 </Warning>
 
-<Example part="path_join" caption="Example of the Path.join() method" />
+<Example part="path_join">
+Example of the Path.join() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

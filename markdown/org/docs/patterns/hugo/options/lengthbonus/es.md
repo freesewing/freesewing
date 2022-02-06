@@ -1,9 +1,6 @@
-![La opción de bonificación de longitud en Brian](./lengthbonus.svg)
 
-Esta opción controla hasta qué punto el bloque se extiende por debajo de sus caderas.
-
-> Tenga en cuenta que por defecto este bloque es tan largo como su línea de cadera, que es casi con toda seguridad demasiado corta para la prenda final.
+The amount to lengthen the garment by. A negative value will shorten it.
 
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hugo_lengthbonus_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_lengthbonus_sample.svg "Effect of this option on the pattern")

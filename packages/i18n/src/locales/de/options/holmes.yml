@@ -1,14 +1,28 @@
 ---
+headEase:
+  title: Kopfumfangszugabe
+  description: Bequemlichkeits-/Bewegungszugabe zum Umfang deines Kopfes.
 lengthRatio:
   title: Längenverhältnis
-  description: fixme
-goreNumber:
-  title: Anzahl Keile
-  description: Die Anzahl der zur Konstruktion der Halbkugel verwendeten Keile
-brimAngle:
-  title: Winkel der Krempe
-  description: Steuert die Krümmung der Krempe
-brimWidth:
-  title: Breite der Krempe
-  description: Steuert die Breite der Krempe
-
+  description: Controls the length of the crown and ear flaps
+gores:
+  title: Number of gores
+  description: The number of gores used to construct the crown
+visorAngle:
+  title: Visor angle
+  description: The arc angle used to draft the inner curve of the visor
+visorWidth:
+  title: Visor width
+  description: Controls the width of the visor
+earLength:
+  title: Ear flap length
+  description: Controls the length of the ear flaps independently from the crown pieces
+earWidth:
+  title: Ear flap width
+  description: Controls the width of the ear flaps
+buttonhole:
+  title: Buttonhole guide
+  description: Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+visorLength:
+  title: Visor length
+  description: Controls the length of the visor

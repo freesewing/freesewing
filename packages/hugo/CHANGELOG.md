@@ -1,6 +1,18 @@
 # Change log for: @freesewing/hugo
 
 
+## 2.20.1 (2022-01-27)
+
+### Fixed
+
+ - Seam allowance on pocket is incorrectly marked for cut-on-fold Closes [#1731](https://github.com/freesewing/freesewing/issues/1731)
+
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.17.0 (2021-07-01)
 
 ### Changed

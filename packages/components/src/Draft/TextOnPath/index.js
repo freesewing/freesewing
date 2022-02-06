@@ -19,10 +19,18 @@ const TextOnPath = (props) => {
   if (align && align.indexOf('center') > -1) textPathProps.startOffset = '50%'
   else if (align && align.indexOf('right') > -1) textPathProps.startOffset = '100%'
 
+  /*
+   * We need dangerouslySetInnerHTML here to make sure we have a way to
+   * add whitespace that works both in the browser as in SVG.
+   * Whitespace = &#160;
+   */
   return (
     <text>
       <textPath {...textPathProps}>
-        <tspan {...props.path.attributes.asPropsIfPrefixIs('data-text-')}>{translated}</tspan>
+        <tspan
+          {...props.path.attributes.asPropsIfPrefixIs('data-text-')}
+          dangerouslySetInnerHTML={{ __html: translated }}
+        />
       </textPath>
     </text>
   )

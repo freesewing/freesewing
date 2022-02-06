@@ -6,6 +6,7 @@ const isGarment = design => ([
   'tutorial',
   'examples',
   'legend',
+  'plugintest',
 ].indexOf(design) === -1)
 
 // Some patterns are deprecated and won't support more stringent doll/giant tests
@@ -27,9 +28,9 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
   const nonHuman = nonHumanMeasurements(models)
 
   // Helper method to try/catch pattern drafting
-  const doesItDraft = (pattern, log=false) => {
+  const doesItDraftAndRender = (pattern, log=false) => {
     try {
-      pattern.draft()
+      pattern.draft().render()
       if (pattern.events.error.length < 1) return true
       if (log) console.log(pattern.events.error)
       return false
@@ -54,7 +55,7 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
     for (let size in ourModels) {
       it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
         expect(
-          doesItDraft(
+          doesItDraftAndRender(
             new Pattern({
               measurements: ourModels[size]
             }), log
@@ -70,7 +71,7 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
       for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls) {
         it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
           expect(
-            doesItDraft(
+            doesItDraftAndRender(
               new Pattern({
                 measurements: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls[size]
               }), log
@@ -84,7 +85,7 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
       for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].giants) {
         it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
           expect(
-            doesItDraft(
+            doesItDraftAndRender(
               new Pattern({
                 measurements: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].giants[size]
               }), log
@@ -104,14 +105,12 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
     ? patterns.parts[design]
     : Pattern.config.parts
   for (let name of parts) {
-    it(`  - ${name} should draft on its own`, () => {
+    it(`  - ${name} should draft and render on its own`, () => {
       expect(
-        doesItDraft(
+        doesItDraftAndRender(
           new Pattern({
             measurements,
-            settings: {
-              only: [name]
-            }
+            only: [name]
           }), log
         )
       ).to.equal(true)
@@ -126,17 +125,12 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
     for (const sa of [0,10]) {
       it(`  - Drafting paperless non-detailed pattern for size-40 (${breasts ? 'with' : 'no'} breasts) sa: ${sa}`, () => {
         expect(
-          doesItDraft(
+          doesItDraftAndRender(
             new Pattern({
               measurements: ourModels.size40,
               complete: false,
               paperless: true,
-              sa,
-              settings: {
-              complete: false,
-              paperless: true,
-              sa,
-              }
+              sa
             }), log
           )
         ).to.equal(true)

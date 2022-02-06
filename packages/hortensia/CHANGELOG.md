@@ -1,6 +1,12 @@
 # Change log for: @freesewing/hortensia
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.19.1 (2021-10-23)
 
 ### Fixed

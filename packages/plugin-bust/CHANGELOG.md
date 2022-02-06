@@ -1,7 +1,7 @@
 # Change log for: @freesewing/plugin-bust
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.19.6 (2021-12-29)
 
 ### Added
 

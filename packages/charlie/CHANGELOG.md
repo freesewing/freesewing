@@ -1,7 +1,14 @@
 # Change log for: @freesewing/charlie
 
 
-## 2.19.5 (2022-11-13)
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Expose the `frontPocketFacing` option to the user via option groups
+ - Switched to default import for version from package.json
+
+## 2.19.5 (2021-11-13)
 
 ### Changed
 

@@ -3,6 +3,7 @@
 100PercentFree: 100% gratis
 100PercentOpenSource: 100% open source
 aboutFreesewing: Over FreeSewing
+accessoryPatterns: Patronen voor Accessoires
 account: Account
 accountCreated: Account aangemaakt
 actions: Acties
@@ -17,6 +18,7 @@ awesome: Super
 back: Achterzijde
 becauseThatWouldBeReallyHelpful: Want dat zou ons echt vooruit helpen.
 becomeAPatron: Word mecenas
+blockPatterns: Blokpatronen
 blog: Blog
 browseBlogposts: Bekijk de blogposts
 browsePatterns: Bekijk de patronen
@@ -67,6 +69,7 @@ documentationOverview: Overzicht documentatie
 download: Download
 draft: Patroontekening
 draftPattern: 'Teken {pattern}'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Teken {pattern} voor {model}'
 drafts: Patroontekeningen
 draftSettings: Instellingen patroontekening
@@ -84,6 +87,7 @@ filterPatterns: Patronen filteren
 forgotLoginInstructions: "Als je je wachtwoord niet meer weet, vul dan hieronder je gebruikersnaam of email adres in, en klik op de <b>Herstel wachtwoord</b> knop"
 freesewing: Freesewing
 freesewingOnGithub: FreeSewing op GitHub
+garmentPatterns: Patronen voor kledij
 github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
 goodJob: Mooi werk
@@ -117,7 +121,7 @@ addThing: Voeg {thing} toe
 newThing: Nieuw {thing}
 newPatternForModel: 'Nieuwe {pattern} voor {model}'
 noChanges: Geen wijzigingen
-no: false
+no: "Nee" #Keep in quotes or it will evaluate to false
 noPasswordPolicy: We handhaven geen wachtwoordbeleid
 noSeamAllowance: Geen naadtoeslag
 notAllOfThisContentIsAvailableInLanguage: Niet al deze inhoud is beschikbaar in het Nederlands
@@ -125,6 +129,7 @@ notesInfo: Dit zijn je aantekeningen; Je kunt hier alles schrijven wat je wil
 notes: Aantekeningen
 ohNo: Oh nee!
 oneMoreThing: En dan nog dit
+optionalMeasurements: Optional measurements
 options: Opties
 orPayPerYear: Of betaal per jaar
 other: Andere
@@ -205,6 +210,7 @@ updated: Bijgewerkt
 update: Bijwerken
 userHasBeenWithUsSince: '{user} hoort erbij sinds {since}'
 users: Gebruikers
+utilityPatterns: Patronen voor hulpprogramma's
 weAreValidatingYourConfirmationCode: We valideren je bevestigingscode
 weCouldNotValidateYourConfirmationCode: We kunnen uw bevestigingscode niet valideren
 weEncounteredAProblem: We zijn op een probleem gestoten
@@ -216,7 +222,7 @@ whatIsThis: What betekent dit?
 withBreasts: Met borsten
 withoutBreasts: Zonder borsten
 yay: Joehoew!
-yes: true
+yes: "Ja" #Keep in quotes or it will evaluate to false
 youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd
@@ -329,3 +335,8 @@ debug: Debug
 unsubscribe: Uitschrijven
 slogan-come: Kom voor de naaipatronen
 slogan-stay: Blijf voor het gezelschap
+lightTheme: Light Theme
+darkTheme: Dark Theme
+hax0rTheme: Hax0r Theme
+lgbtqTheme: LGBTQ Theme
+transTheme: Trans Theme

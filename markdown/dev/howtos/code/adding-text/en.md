@@ -1,7 +1,5 @@
 ---
 title: Adding text
-for: developers
-about: Shows you how to add text to your pattern
 ---
 
 SVG is pretty great, but its text handling leaves much to be desired.
@@ -18,10 +16,9 @@ points.anchor = new Point(100, 25)
   .attr("data-text-class", "center");
 ```
 
-<Example 
-  part="point_attr" 
-  caption="Text inserted in a FreeSewing pattern"
-/>
+<Example part="point_attr">
+Text inserted in a FreeSewing pattern
+</Example>
 
 <Note>
 
@@ -48,7 +45,7 @@ paths.example = new Path()
   .attr("data-text-class", "text-xs center");
 ```
 
-<Example 
-  part="path_attr" 
-  caption="Text on a path"
-/>
+<Example part="path_attr">
+Text on a path
+</Example>
+

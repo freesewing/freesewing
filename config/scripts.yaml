@@ -1,7 +1,7 @@
 _:
   clean: 'rimraf dist'
   build: 'rollup -c'
-  lernabuild: 'rollup -c'
+  cibuild_step1: 'rollup -c'
   test: 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
   pubtest: 'npm publish --registry http://localhost:6662'
   pubforce: 'npm publish'
@@ -20,10 +20,10 @@ create-freesewing-pattern:
   clean: '!'
   nodebuild: '!'
   modulebuild: '!'
-  lernabuild: '!'
+  cibuild_step1: '!'
   build: '!'
 css-theme:
-  lernabuild: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
+  cibuild_step1: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   build: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   watch: 'npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css'
 components:
@@ -32,23 +32,24 @@ components:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
   clean: 'rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench'
-  lernabuild: 'rollup -c'
+  cibuild_step2: 'rollup -c'
   build: 'rollup -c'
   watch: 'BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs'
 core:
   testonly: 'BABEL_ENV=production mocha tests/*.test.js'
   test: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js'
+  testci: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js'
   report: 'BABEL_ENV=production nyc report --reporter=html'
   coverage: 'BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
 i18n:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
+  test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
+  testci: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
 pattern-info:
-  lernabuild: 'node src/prebuild.js && rollup -c'
+  cibuild_step1: '!'
+  cibuild_step2: 'node src/prebuild.js && rollup -c'
   prebuild: 'node src/prebuild.js'
-plugin-theme:
-  lernabuild: "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js && rollup -c"
-  prebuild: "npx node-sass --output-style compressed -r src/scss -o css && echo 'export default `' > src/bundle.css.js && cat css/*.css >> src/bundle.css.js && echo '`;' >> src/bundle.css.js"
 utils:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'

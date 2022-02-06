@@ -1,8 +1,8 @@
 - - -
-title: Albert Construction
+titre: Construction d'Albert
 - - -
 
-### Step 1: The Pocket
+### Étape 1 : La Poche
 
 - Along the top of the pocket fold the seam allowance to wrong side, press.
 - Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.

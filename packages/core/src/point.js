@@ -32,7 +32,7 @@ Point.prototype.deg2rad = function (degrees) {
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
 Point.prototype.attr = function (name, value, overwrite = false) {
-  if (this.debug) this.check()
+  this.check()
   if (overwrite) this.attributes.set(name, value)
   else this.attributes.add(name, value)
 
@@ -41,10 +41,8 @@ Point.prototype.attr = function (name, value, overwrite = false) {
 
 /** Returns the distance between this point and that point */
 Point.prototype.dist = function (that) {
-  if (this.debug) {
-    this.check()
-    that.check()
-  }
+  this.check()
+  that.check()
   let dx = this.x - that.x
   let dy = this.y - that.y
 
@@ -53,37 +51,32 @@ Point.prototype.dist = function (that) {
 
 /** Returns slope of a line made by this point and that point */
 Point.prototype.slope = function (that) {
-  if (this.debug) {
-    this.check()
-    that.check()
-  }
+  this.check()
+  that.check()
   return (that.y - this.y) / (that.x - this.x)
 }
 
 /** Returns the x-delta between this point and that point */
 Point.prototype.dx = function (that) {
-  if (this.debug) {
-    this.check()
-    that.check()
-  }
+  this.check()
+  that.check()
+
   return that.x - this.x
 }
 
 /** Returns the y-delta between this point and that point */
 Point.prototype.dy = function (that) {
-  if (this.debug) {
-    this.check()
-    that.check()
-  }
+  this.check()
+  that.check()
+
   return that.y - this.y
 }
 
 /** Returns the angle between this point and that point */
 Point.prototype.angle = function (that) {
-  if (this.debug) {
-    this.check()
-    that.check()
-  }
+  this.check()
+  that.check()
+
   let rad = Math.atan2(-1 * this.dy(that), this.dx(that))
   while (rad < 0) rad += 2 * Math.PI
 
@@ -92,14 +85,12 @@ Point.prototype.angle = function (that) {
 
 /** Rotate this point deg around that point */
 Point.prototype.rotate = function (deg, that) {
-  if (this.debug) {
-    this.check()
-    that.check()
-    if (typeof deg !== 'number')
-      this.raise.warning('Called `Point.rotate(deg,that)` but `deg` is not a number')
-    if (that instanceof Point !== true)
-      this.raise.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
-  }
+  this.check()
+  that.check()
+  if (typeof deg !== 'number')
+    this.raise.warning('Called `Point.rotate(deg,that)` but `deg` is not a number')
+  if (that instanceof Point !== true)
+    this.raise.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
   let radius = this.dist(that)
   let angle = this.angle(that)
   let x = that.x + radius * Math.cos(this.deg2rad(angle + deg)) * -1
@@ -110,19 +101,18 @@ Point.prototype.rotate = function (deg, that) {
 
 /** returns an identical copy of this point */
 Point.prototype.copy = function () {
-  if (this.debug) this.check()
+  this.check()
+
   return new Point(this.x, this.y, this.debug).withRaise(this.raise)
 }
 
 /** Mirrors this point around X value of that point */
 Point.prototype.flipX = function (that = false) {
-  if (this.debug) {
-    this.check()
-    if (that) {
-      if (that instanceof Point !== true)
-        this.raise.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
-      that.check()
-    }
+  this.check()
+  if (that) {
+    if (that instanceof Point !== true)
+      this.raise.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
+    that.check()
   }
   if (that === false || that.x === 0)
     return new Point(this.x * -1, this.y, this.debug).withRaise(this.raise)
@@ -131,13 +121,11 @@ Point.prototype.flipX = function (that = false) {
 
 /** Mirrors this point around Y value of that point */
 Point.prototype.flipY = function (that = false) {
-  if (this.debug) {
-    this.check()
-    if (that) {
-      if (that instanceof Point !== true)
-        this.raise.warning('Called `Point.flipY(that)` but `that` is not a `Point` object')
-      that.check()
-    }
+  this.check()
+  if (that) {
+    if (that instanceof Point !== true)
+      this.raise.warning('Called `Point.flipY(that)` but `that` is not a `Point` object')
+    that.check()
   }
   if (that === false || that.y === 0)
     return new Point(this.x, this.y * -1, this.debug).withRaise(this.raise)
@@ -146,11 +134,9 @@ Point.prototype.flipY = function (that = false) {
 
 /** Shifts this point distance in the deg direction */
 Point.prototype.shift = function (deg, distance) {
-  if (this.debug) {
-    this.check()
-    if (typeof distance !== 'number')
-      this.raise.warning('Called `Point.shift` but `distance` is not a number')
-  }
+  this.check()
+  if (typeof distance !== 'number')
+    this.raise.warning('Called `Point.shift` but `distance` is not a number')
   let p = this.copy()
   p.x += distance
 
@@ -159,40 +145,34 @@ Point.prototype.shift = function (deg, distance) {
 
 /** Shifts this point distance in the direction of that point */
 Point.prototype.shiftTowards = function (that, distance) {
-  if (this.debug) {
-    if (typeof distance !== 'number')
-      this.raise.warning('Called `Point.shiftTowards` but `distance` is not a number')
-    if (that instanceof Point !== true)
-      this.raise.warning(
-        'Called `Point.shiftTowards(that, distance)` but `that` is not a `Point` object'
-      )
-    this.check()
-    that.check()
-  }
-  if (this.debug) this.check()
+  if (typeof distance !== 'number')
+    this.raise.warning('Called `Point.shiftTowards` but `distance` is not a number')
+  if (that instanceof Point !== true)
+    this.raise.warning(
+      'Called `Point.shiftTowards(that, distance)` but `that` is not a `Point` object'
+    )
+  this.check()
+  that.check()
+
   return this.shift(this.angle(that), distance)
 }
 
 /** Checks whether this has the same coordinates as that */
 Point.prototype.sitsOn = function (that) {
-  if (this.debug) {
-    if (that instanceof Point !== true)
-      this.raise.warning('Called `Point.sitsOn(that)` but `that` is not a `Point` object')
-    this.check()
-    that.check()
-  }
+  if (that instanceof Point !== true)
+    this.raise.warning('Called `Point.sitsOn(that)` but `that` is not a `Point` object')
+  this.check()
+  that.check()
   if (this.x === that.x && this.y === that.y) return true
   else return false
 }
 
 /** Checks whether this has roughly the same coordinates as that */
 Point.prototype.sitsRoughlyOn = function (that) {
-  if (this.debug) {
-    if (that instanceof Point !== true)
-      this.raise.warning('Called `Point.sitsRoughlyOn(that)` but `that` is not a `Point` object')
-    this.check()
-    that.check()
-  }
+  if (that instanceof Point !== true)
+    this.raise.warning('Called `Point.sitsRoughlyOn(that)` but `that` is not a `Point` object')
+  this.check()
+  that.check()
   if (Math.round(this.x) === Math.round(that.x) && Math.round(this.y) === Math.round(that.y))
     return true
   else return false
@@ -200,40 +180,38 @@ Point.prototype.sitsRoughlyOn = function (that) {
 
 /** Shifts this point fraction of the distance towards that point */
 Point.prototype.shiftFractionTowards = function (that, fraction) {
-  if (this.debug) {
-    if (that instanceof Point !== true)
-      this.raise.warning(
-        'Called `Point.shiftFractionTowards(that, fraction)` but `that` is not a `Point` object'
-      )
-    if (typeof fraction !== 'number')
-      this.raise.warning('Called `Point.shiftFractionTowards` but `fraction` is not a number')
-    this.check()
-    that.check()
-  }
+  if (that instanceof Point !== true)
+    this.raise.warning(
+      'Called `Point.shiftFractionTowards(that, fraction)` but `that` is not a `Point` object'
+    )
+  if (typeof fraction !== 'number')
+    this.raise.warning('Called `Point.shiftFractionTowards` but `fraction` is not a number')
+  this.check()
+  that.check()
+
   return this.shiftTowards(that, this.dist(that) * fraction)
 }
 
 /** Shifts this point distance beyond that point */
 Point.prototype.shiftOutwards = function (that, distance) {
-  if (this.debug) {
-    if (that instanceof Point !== true)
-      this.raise.warning(
-        'Called `Point.shiftOutwards(that, distance)` but `that` is not a `Point` object'
-      )
-    if (typeof distance !== 'number')
-      this.raise.warning(
-        'Called `Point.shiftOutwards(that, distance)` but `distance` is not a number'
-      )
-    this.check()
-    that.check()
-  }
+  if (that instanceof Point !== true)
+    this.raise.warning(
+      'Called `Point.shiftOutwards(that, distance)` but `that` is not a `Point` object'
+    )
+  if (typeof distance !== 'number')
+    this.raise.warning(
+      'Called `Point.shiftOutwards(that, distance)` but `distance` is not a number'
+    )
+  this.check()
+  that.check()
+
   return this.shiftTowards(that, this.dist(that) + distance)
 }
 
 /** Returns a deep copy of this */
 Point.prototype.clone = function () {
-  if (this.debug) this.check()
-  let clone = new Point(this.x, this.y, this.debug).withRaise(this.raise)
+  this.check()
+  const clone = new Point(this.x, this.y, this.debug).withRaise(this.raise)
   clone.attributes = this.attributes.clone()
 
   return clone
@@ -241,14 +219,12 @@ Point.prototype.clone = function () {
 
 /** Applies a translate transform */
 Point.prototype.translate = function (x, y) {
-  if (this.debug) {
-    this.check()
-    if (typeof x !== 'number')
-      this.raise.warning('Called `Point.translate(x,y)` but `x` is not a number')
-    if (typeof y !== 'number')
-      this.raise.warning('Called `Point.translate(x,y)` but `y` is not a number')
-  }
-  let p = this.copy()
+  this.check()
+  if (typeof x !== 'number')
+    this.raise.warning('Called `Point.translate(x,y)` but `x` is not a number')
+  if (typeof y !== 'number')
+    this.raise.warning('Called `Point.translate(x,y)` but `y` is not a number')
+  const p = this.copy()
   p.x += x
   p.y += y
 

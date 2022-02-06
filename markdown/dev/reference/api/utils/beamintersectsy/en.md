@@ -9,7 +9,9 @@ Point | false utils.beamIntersectsY(Point A, Point B, float Y)
 Finds the intersection between an endless line and a given Y-value. Returns a [Point](#point) object
 for the intersection, or `false` there is no intersection.
 
-<Example part="utils_beamintersectsy" caption="A Utils.beamIntersectsY() example" />
+<Example part="utils_beamintersectsy">
+A Utils.beamIntersectsY() example
+</Example>
 
 ```js
 let {

@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'sven',
-  version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -11,6 +11,7 @@ export default {
   optionGroups: {
     fit: [
       'chestEase',
+      'hipsEase',
       'collarEase',
       'bicepsEase',
       'cuffEase',
@@ -86,6 +87,7 @@ export default {
     brianFitSleeve: true,
     brianFitCollar: true,
     shoulderSlopeReduction: 0,
+    waistEase: 0.08,
 
     // Booleans
     ribbing: { bool: true },
@@ -134,6 +136,5 @@ export default {
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    waistEase: { pct: 8, min: -4, max: 20 },
   },
 }

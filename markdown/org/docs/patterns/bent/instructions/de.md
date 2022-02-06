@@ -38,7 +38,7 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
-### Step 2: Try it on
+### Schritt 2: Anprobieren
 
 - Try it on and check the fit by pinning the front closed whilst wearing it.
 - Make any alterations and try it on again.
@@ -66,7 +66,7 @@ It is all up to you! Experiment and go forth!
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Schritt 3: Erstelle ein Papierschnittmuster
 
 - Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
 - Now you have a pattern you can use to produce a garment.

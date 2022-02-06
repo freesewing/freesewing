@@ -8,7 +8,7 @@ import remarkCompiler from 'remark-stringify'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import yaml from 'yaml'
-import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
+import { remarkIntroPlugin } from '../mdx/remark-intro-plugin.mjs'
 
 
 /*
@@ -35,8 +35,9 @@ const buildUrl = (type, site, lang) => (type === 'blog')
 
 /*
  * Helper method to load posts from Strapi
+ * Exported because it's re-used by the Algolia indexing script
  */
-const getPosts = async (type, site, lang) => {
+export const getPosts = async (type, site, lang) => {
   let res
   try {
     res = await axios.get(buildUrl(type, site, lang))
@@ -46,8 +47,8 @@ const getPosts = async (type, site, lang) => {
   }
   const posts = {}
   for (const post of res.data) {
-    const intro = await postIntro(post.body)
-    posts[`${type}/${post.slug}`] = { ...post, intro: intro.data.intro }
+    const intro = await postIntro(`---\n---\n\n${post.body}`)
+    posts[post.slug] = { ...post, intro: intro.data.intro }
   }
 
   return posts
@@ -82,14 +83,36 @@ export const prebuildStrapi = async(site) => {
         authors[type][post.author.slug] = post.author
         posts[lang][type][slug].author = post.author.slug
       }
+      // Write to disc, one file for the index page, one file for each post
       fs.writeFileSync(
         path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.${type}.${lang}.js`),
-        `export const posts = ${JSON.stringify(posts[lang][type], null, 2)}`
+        `export const posts = ${JSON.stringify(Object.values(posts[lang][type]).map(post => ({
+          title: post.title,
+          date: post.date,
+          slug: post.slug,
+          author: post.author,
+          img: post.image?.formats?.large?.url || 'https://posts.freesewing.org/uploads/logo_8401e711e4.png'
+        })), null, 2)}`
       )
-      fs.writeFileSync(
-        path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.${type}.authors.js`),
-        `export const authors = ${JSON.stringify(authors[type], null, 2)}`
-      )
+      for (const [slug, post] of Object.entries(posts[lang][type])) {
+        fs.writeFileSync(
+          path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.${type}.${lang}.${slug}.json`),
+          JSON.stringify(post, null, 2)
+        )
+      }
+      // Write to disc, one file per author
+      for (const [name, author] of Object.entries(authors[type])) {
+        fs.writeFileSync(
+          path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.authors.${type}.${lang}.${name}.json`),
+          JSON.stringify({
+            slug: author.slug,
+            name: author.name,
+            displayname: author.displayname,
+            about: author.about,
+            img: author.picture?.formats?.medium?.url,
+          }, null, 2)
+        )
+      }
     }
   }
 

@@ -16,7 +16,7 @@ export default function (part) {
     sa,
     paperless,
     macro,
-    store
+    store,
   } = part.shorthand()
 
   let mini = options.minimizer
@@ -33,9 +33,13 @@ export default function (part) {
     .offset((-1 * store.get('waistBand')) / mini)
     .attr('class', 'fabric stroke-sm')
 
-  paths.frontFold = paths.front.offset((-1 * store.get('hem')) / mini).attr('class', 'fabric stroke-sm')
+  paths.frontFold = paths.front
+    .offset((-1 * store.get('hem')) / mini)
+    .attr('class', 'fabric stroke-sm')
   paths.legFold = paths.leg.offset((-1 * store.get('hem')) / mini).attr('class', 'fabric stroke-sm')
-  paths.backFold = paths.back.offset((-1 * store.get('hem')) / mini).attr('class', 'fabric stroke-sm')
+  paths.backFold = paths.back
+    .offset((-1 * store.get('hem')) / mini)
+    .attr('class', 'fabric stroke-sm')
 
   // Complete?
   if (complete) {

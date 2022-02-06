@@ -21,10 +21,9 @@ The [`Point.copy()`](reference/api/point/copy/) method will only copy the point'
 
 ## Point.clone() example
 
-<Example
-  part="point_clone"
-  caption="An example of the Point.clone() method"
-/>
+<Example part="point_clone">
+An example of the Point.clone() method
+</Example>
 
 ```js
   let { Point, points, Snippet, snippets } = part.shorthand();

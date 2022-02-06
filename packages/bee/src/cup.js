@@ -46,15 +46,7 @@ export default function (part) {
     points.bustDartTop,
     points.bustDartBottom.dist(points.sideHemInitial)
   )
-  points.waistDartRightNew = points.bustA.shift(
-    270 +
-      angle +
-      Math.atan(
-        points.waistDartHem.dist(points.waistDartRight) / points.waistDartHem.dist(points.bustA)
-      ) *
-        (180 / Math.PI),
-    points.bustA.dist(points.waistDartLeft)
-  )
+  points.waistDartRightRotated = points.waistDartRight.rotate(angle, points.bust)
   if (options.bellaGuide) {
     paths.bellaGuide = new Path()
       .move(points.sideHemNew)
@@ -67,7 +59,7 @@ export default function (part) {
       .line(points.cfHem)
       .line(points.waistDartLeft)
       .line(points.bustA)
-      .line(points.waistDartRightNew)
+      .line(points.waistDartRightRotated)
       .line(points.sideHemNew)
       .attr('class', 'various lashed')
       .close()
@@ -86,7 +78,7 @@ export default function (part) {
     absoluteOptions.neckTieWidth / 2
   )
   points.leftDart = points.bustA.shiftTowards(points.waistDartLeft, underbust)
-  points.rightDart = points.bustA.shiftTowards(points.waistDartRightNew, underbust)
+  points.rightDart = points.bustA.shiftTowards(points.waistDartRightRotated, underbust)
   points.lefti = utils.beamsIntersect(
     points.leftDart,
     points.leftDart.shift(points.leftDart.angle(points.bustA) + 90, 10),

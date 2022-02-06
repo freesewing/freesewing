@@ -6,10 +6,10 @@ coverlock:
   term: Coverlock
   description: "Siehe <a href='/docs/sewing/coverlock/'>Coverlock</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 cutting:
-  term: zuschnitt
+  term: Zuschnitt
   description: "Siehe <a href='/docs/sewing/cutting/'>Zuschnitt</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 darts:
-  term: abnäher
+  term: Abnäher
   description: "<a href='/docs/sewing/darts/'>Abnäher</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 doubleWeltPockets:
   term: Doppelpaspeltaschen
@@ -21,7 +21,7 @@ edgestitch:
   term: edgestitch
   description: "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 fabricGrain:
-  term: fadenlauf
+  term: Fadenlauf
   description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenlauf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 goodSidesTogether:
   term: rechts auf rechts
@@ -48,14 +48,14 @@ rayon:
   term: Rayon
   description: "Siehe <a href='/docs/sewing/rayon/'>Rayon</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 sa:
-  term: nahtzugabe
+  term: Nahtzugabe
   description: "Siehe <a href='/docs/sewing/seam-allowance/'>Nahtzugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 serger:
   term: Overlock
   description: "Siehe <a href='/docs/sewing/serger/'>Overlock</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 slipstitch:
-  term: slipstitch
-  description: "See <a href='/docs/sewing/slipstitch/'>Slipstitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Kettstich
+  description: "Siehe <a href='/docs/sewing/slipstitch/'>Kettstich</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 topstitching:
   term: Absteppen
   description: "Siehe <a href='/docs/sewing/topstitching/'>Absteppen</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
@@ -63,7 +63,7 @@ trimming:
   term: Zurückschneiden
   description: "Siehe <a href='/docs/sewing/trimming/'>Zurückschneiden</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 twinNeedle:
-  term: zwillingsnadel
+  term: Zwillingsnadel
   description: "Siehe <a href='/docs/sewing/twin-neelde/'>Zwillingsnadel</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 zigZag:
   term: Zickzackstich
@@ -72,10 +72,10 @@ freesewing:
   term: freesewing
   description: '<b>FreeSewing</b> ist eine Open-Source Plattform für Schnittmuster nach Maß'
 patternOptions:
-  term: schnittmusteroptionen
+  term: Schnittmusteroptionen
   description: 'Die <b>Schnittmusteroptionen</b> erlauben es dir, das Design des Schnittmusters anzupassen'
 draftSettings:
-  term: entwurfseinstellungen
+  term: Entwurfseinstellungen
   description: 'Mit den <b>Entwurfseinstellungen</b> legst du fest, wie ein Schnittmuster erzeugt wird'
 patrons:
   term: Förderer/-innen

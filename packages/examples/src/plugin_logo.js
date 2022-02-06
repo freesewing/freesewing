@@ -1,9 +1,10 @@
 import { box } from './shared'
 
 export default (part) => {
-  let { Point, snippets, Snippet } = part.shorthand()
+  let { points, Point, snippets, Snippet } = part.shorthand()
+  points.anchor = new Point(50, 25)
 
-  snippets.logo = new Snippet('logo', new Point(50, 30))
+  snippets.logo = new Snippet('logo', points.anchor).attr('data-scale', 0.666)
 
-  return box(part, 100, 40)
+  return box(part, 100, 35)
 }

@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'diana',
-  version,
+  version: pkg.version,
   design: 'Erica Alcusa Sáez',
   code: 'Erica Alcusa Sáez',
   department: 'tops',
@@ -12,6 +12,7 @@ export default {
     fit: [
       'chestEase',
       'bicepsEase',
+      'cuffEase',
       'shoulderEase',
       'waistEase',
       'hipsEase',

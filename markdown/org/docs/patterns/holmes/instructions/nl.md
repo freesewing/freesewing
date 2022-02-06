@@ -30,7 +30,7 @@ Deze instructies gaan ervan uit dat je naadlijnen hebt gemarkeerd. Ze kunnen moe
 - With right sides together, matching seam lines and peaks, sew two crown pieces together.
 - Press seams open. Je moest hiervoor een kleerham gebruiken, als je er geen hebt, kun je flannels of handdoeken gebruiken.
 - (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat steps 1 and 2 until you have two halves. Als de helft van het aantal kroon een raar getal is, moet je aan elke helft één stuk naaien. bv. Als je 6 kroon stukjes hebt, maak je twee helften van 3 stikken aan elkaar vast.
+- Repeat until you have two halves. Als de helft van het aantal kroon een raar getal is, moet je aan elke helft één stuk naaien. bv. Als je 6 kroon stukjes hebt, maak je twee helften van 3 stikken aan elkaar vast.
 - With right sides together, matchinig seam lines and peaks, sew the two halves together. Het is mogelijk dat het makkelijker is om de piek samen te doorstikken door bulk of precisie. Deze naad wordt verwezen naar de "middelste kroonnaad" die verder gaat.
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
 
@@ -51,7 +51,7 @@ Afhankelijk van je naadwaarde wil je misschien naden bijknippen terwijl je bulk 
 - Turn inside out and press.
 - (Optional) _Topstitch_ or _edgestitch_ the folded edge.
 - _Baste_ the raw edges together.
-- Repeat steps 3 to 7 for the remaining ear flap.
+- Repeat for the remaining ear flap.
 
 <Tip>
 
@@ -62,7 +62,7 @@ Als je onzeker bent over de lengte van je stropdassen duurt 1 meter (39") en kni
 <Note>
 
 De lengtes hierboven zijn aanbevelingen, dus voel je vrij om zo lang of zo kort te gaan als je wilt met de banden.  
-If you prefer you can make your custom ties with fabric, you can find how to do so in [the Holmes cutting instrations](https://freesewing.org/docs/patterns/holmes/cutting/).  
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
 
 </Note>
 
@@ -75,7 +75,7 @@ If you prefer you can make your custom ties with fabric, you can find how to do 
 - (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
 - _Baste_ the raw edges together.
 - Sew the buttonhole in your prefered method.
-- Repeat steps 2 to 7 for the remaining ear flap.
+- Repeat for the remaining ear flap.
 
 <Warning>
 
@@ -126,7 +126,7 @@ Als je liever zou zien dat je tijdelijk de bezoeker bevestigt, dan moet je ander
 - Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
 - Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
 - _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
-- Repeat steps 1 to 6 for the remaining visor pieces.
+- Repeat for the remaining visor pieces.
 
 ### Stap 5: Buurderij en Eten
 
@@ -136,11 +136,11 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
 - Sew ear flap to the crown along seam lines.
-- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.
+- Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
 - Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.
-- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.
+- Repeat for the remaining visor on the opposite side of the centre crown seam.
 - Remove all pad and basting stitches.
 - Press the seam allowances inwards, making sure the stitching is not visible on the outside.
 - (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.
@@ -155,11 +155,11 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 
 - Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
 - _Baste_ the ear flap to the crown along seam lines
-- Repeat steps 1 and 2 for the remaining ear flap on the opposite side of the crown.
+- Repeat for the remaining ear flap on the opposite side of the crown.
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
 - (Optional) Machine-baste the visor to the crown along seam lines.
-- Repeat steps 4 to 6 for the remaining visor on the opposite side of the centre crown seam.
+- Repeat for the remaining visor on the opposite side of the centre crown seam.
 - Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
 - With right sides together, matching centre crown seams, panel seams and seam lines. Stik de voering aan de kroon langs de naadlijnen. Als je grootmoedig bent kun je de voering naden of beide naden bijknippen.
 - Turn hat inside out, pressing lining to inside.
@@ -188,7 +188,7 @@ Heb je problemen met de curves van de bezoekers, stik een stiksel 1/8" (3mm) van
 
 **Voor zowel de Buurderij als de montagemogelijkheden**  
 
-De instructies van de Buurderij en de Ling worden geschreven met een 6 Panelled Holmes in het achterhoofd. Je kunt de plaatsing van bezoekers en stukjes oor verschillend vinden voor andere gegenummerde broekzakken. Meestal staat het midden van de voorkant van de bezoeker altijd op de middenkroon, bij worstelingen.
+De instructies van de Buurderij en de Ling worden geschreven met een 6 Panelled Holmes in het achterhoofd. Je kunt de plaatsing van bezoekers en stukjes oor verschillend vinden voor andere gegenummerde broekzakken. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
@@ -201,13 +201,13 @@ Als je je stropdassen niet hebt geknipt bij het bouwen van de oorvlakken, is het
 - Fold the ends of a tie in half and cut a triangle out from the corner to the fold.
 - Unfold.
 - If you are worried about the ties fraying you can use fray check or equivalent.
-- Repeat steps 1 to 3 for the remaining tie.
+- Repeat for the remaining tie.
 
 #### Voltooien van Ties Methode 2
 
 - Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.
 - _Whipstitch_ the folded edge down to the tie
-- Repeat steps 1 to 2 for the remaining tie.
+- Repeat for the remaining tie.
 
 <Note>
 
@@ -225,7 +225,7 @@ Tenzij je de knoopsgatenvlakken doet hoef je geen knop aan te naaien, maar het k
 
 <Note>
 
-Hoewel het zeker facultatief is, vind je misschien dat er een knop ontbreekt bij de hoed om het uiterlijk af te maken. Dus als u niet zeker bent van het standpunt op dit punt. maak een snelle knop en plaats deze tijdelijk op om te zien of dit ontbreekt. Neem dit permanent toe als het is. 
+Hoewel het zeker facultatief is, vind je misschien dat er een knop ontbreekt bij de hoed om het uiterlijk af te maken. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. Neem dit permanent toe als het is. 
 Terwijl een gedekte knop wordt aanbevolen, kunt u elke knop gebruiken die u wilt, voel je vrij om te experimenteren!
 
 </Note>

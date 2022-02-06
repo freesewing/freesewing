@@ -19,4 +19,4 @@ for (let l of languageCodes) {
   languages[l] = strings[l]['i18n.' + l]
 }
 
-export { strings, languages, plugin, jargon }
+export { strings, languages, plugin, jargon, en, de, es, fr, nl }

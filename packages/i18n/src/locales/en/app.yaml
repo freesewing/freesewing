@@ -2,6 +2,7 @@
 100PercentFree: 100% free
 100PercentOpenSource: 100% open source
 aboutFreesewing: About Freesewing
+accessoryPatterns: Accessory Patterns
 account: Account
 accountCreated: Account created
 actions: Actions
@@ -16,6 +17,7 @@ awesome: Awesome
 back: Back
 becauseThatWouldBeReallyHelpful: Because that would be really helpful.
 becomeAPatron: Become a patron
+blockPatterns: Block/Sloper Patterns
 blog: Blog
 browseBlogposts: Browse blogposts
 browsePatterns: Browse patterns
@@ -66,6 +68,7 @@ documentationOverview: Documentation overview
 download: Download
 draft: Draft
 draftPattern: 'Draft {pattern}'
+testPattern: 'Test {pattern}'
 draftPatternForModel: 'Draft {pattern} for {model}'
 drafts: Drafts
 draftSettings: Draft settings
@@ -83,6 +86,7 @@ filterPatterns: Filter patterns
 forgotLoginInstructions: "If you don't remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing on GitHub
+garmentPatterns: Garment Patterns
 github: GitHub
 goAheadWeWillWait: Go ahead, we'll wait.
 goodJob: Good job
@@ -116,7 +120,7 @@ addThing: Add {thing}
 newThing: New {thing}
 newPatternForModel: 'New {pattern} for {model}'
 noChanges: No changes
-no: No
+no: "No" # Keep in quotes or it will evaluate to false
 noPasswordPolicy: We don't enforce a password policy
 noSeamAllowance: No seam allowance
 notAllOfThisContentIsAvailableInLanguage: Not all of this content is available in English
@@ -124,6 +128,7 @@ notesInfo: These are your notes. You can write anything you want here
 notes: Notes
 ohNo: Oh no!
 oneMoreThing: One more thing
+optionalMeasurements: Optional measurements
 options: Options
 orPayPerYear: Or pay per year
 other: Other
@@ -204,6 +209,7 @@ updated: Updated
 update: Update
 userHasBeenWithUsSince: '{user} has been with us since {since}'
 users: Users
+utilityPatterns: Utility Patterns
 weAreValidatingYourConfirmationCode: We are validating your confirmation code
 weCouldNotValidateYourConfirmationCode: We could not validate your confirmation code
 weEncounteredAProblem: We encountered a problem
@@ -215,7 +221,7 @@ whatIsThis: What is this?
 withBreasts: With breasts
 withoutBreasts: Without breasts
 yay: Yay!
-yes: Yes
+yes: "Yes" # Keep in quotes or it will evaluate to false
 youAreAPatron: You are a patron
 youAreNotAPatron: Your are not a patron
 youAreNotLoggedIn: You are not logged in
@@ -328,3 +334,8 @@ debug: Debug
 unsubscribe: Unsubscribe
 slogan-come: Come for the sewing patterns
 slogan-stay: Stay for the community
+lightTheme: Light Theme
+darkTheme: Dark Theme
+hax0rTheme: Hax0r Theme
+lgbtqTheme: LGBTQ Theme
+transTheme: Trans Theme

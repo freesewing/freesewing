@@ -10,6 +10,9 @@ backPocketWidth:
 backPocketDepth:
   title: Back pocket depth
   description: Controls the depth of the back pocket
+backPocketFacing:
+  title: Back pocket facing
+  description: Controls whether or not to include facing on the back pockets
 frontPocketSlantDepth:
   title: Front pocket slant depth
   description: Controls the depth of the (front) pocket slant

@@ -16,7 +16,9 @@ This allows you to chain different calls together as in the example below.
 
 If the third parameter is set to `true` it will call `this.attributes.set()` instead, thereby overwriting the value of the attribute.
 
-<Example part="path_attr" caption="Example of the Path.attr() method" />
+<Example part="path_attr">
+Example of the Path.attr() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

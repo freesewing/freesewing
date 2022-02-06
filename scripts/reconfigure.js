@@ -462,6 +462,7 @@ function configurePkgUnitTests(type, pkg, config) {
   const source = path.join(config.repoPath, 'config', 'templates', 'tests', `${type}s`)
   // Write templates
   const peerdeps = peerDependencies(pkg, config, type)
+  const devdeps = devDependencies(pkg, config, type)
   const replace = (type === 'pattern')
     ? {
         version,
@@ -472,9 +473,15 @@ function configurePkgUnitTests(type, pkg, config) {
           .join(' ')
       }
     : {
-      version,
-      plugin: pkg,
-      Plugin: capitalize(pkg),
+        version,
+        plugin: pkg,
+        Plugin: capitalize(pkg),
+        peerdeps: Object.keys(peerdeps)
+          .map((dep) => dep + '@' + peerdeps[dep])
+          .join(' '),
+        devdeps: Object.keys(devdeps)
+          .map((dep) => dep + '@' + devdeps[dep])
+          .join(' ')
     }
 
   for (const file of ['shared.test.mjs']) {

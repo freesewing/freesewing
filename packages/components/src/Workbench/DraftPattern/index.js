@@ -43,7 +43,7 @@ const DraftPattern = (props) => {
         focus={props.focus}
         raiseEvent={props.raiseEvent}
         viewBox={props.viewBox}
-        className="freesewing draft shadow"
+        className="freesewing draft pattern shadow"
       />
       <Events events={props.patternProps.events} />
     </>

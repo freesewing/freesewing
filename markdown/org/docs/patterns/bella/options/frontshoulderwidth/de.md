@@ -2,7 +2,7 @@
 title: Vordere Schulterbreite
 ---
 
-![Der Effekt der vorderen Schulterbreite auf das Muster](sample.png)
+![Der Effekt der vorderen Schulterbreite auf das Schnittmuster](sample.png)
 
 Die Option **Vorderschulterbreite** steuert die Breite der Schultern an der Vorderseite, relativ zur Rückseite.
 

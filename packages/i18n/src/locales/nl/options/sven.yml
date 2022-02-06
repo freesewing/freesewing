@@ -1,4 +1,7 @@
 ---
+hipsEase:
+  title: Hips ease
+  description: Controls the amount of ease at your hips (the bottom of the sweater)
 ribbing:
   title: Boordstof
   description: Of we boordstof plaatsen aan de zoom en manchetten of niet.

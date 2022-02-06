@@ -37,3 +37,16 @@ layout:
 debug:
   title: Debug
   description: Enable debug to gain additional info about how your pattern was created
+
+scale:
+  title: Scale
+  description: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
+
+renderer:
+  title: Render engine
+  description: Controls how the pattern is rendered (drawn) on the screen
+
+xray:
+  title: X-ray
+  description: Look under the hood with FreeSewing's X-ray mode
+

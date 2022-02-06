@@ -182,6 +182,7 @@ Part.prototype.shorthand = function () {
   let sa = this.context.settings.complete ? this.context.settings.sa || 0 : 0
   const shorthand = {
     sa,
+    scale: this.context.settings.scale,
     store: this.context.store,
     macro: this.macroClosure(),
     units: this.unitsClosure(),
@@ -325,7 +326,10 @@ Part.prototype.shorthand = function () {
       },
       set: (absoluteOptions, name, value) => (self.context.settings.absoluteOptions[name] = value),
     }
-    shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions || {}, absoluteOptionsProxy)
+    shorthand.absoluteOptions = new Proxy(
+      this.context.settings.absoluteOptions || {},
+      absoluteOptionsProxy
+    )
   } else {
     shorthand.Point = Point
     shorthand.Path = Path

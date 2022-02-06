@@ -1,27 +1,40 @@
 noNamespace:
+  - backend
   - create-freesewing-pattern
   - remark-jargon
   - gatsby-remark-jargon
   - freesewing.dev
   - freesewing.shared
   - freesewing.org
+  - svgtopdf
 customChangelog:
+  - backend
   - freesewing.dev
+  - freesewing.lab
   - freesewing.shared
   - freesewing.org
+  - svgtopdf
 customPackageJson:
+  - backend
   - freesewing.dev
+  - freesewing.lab
   - freesewing.shared
   - freesewing.org
+  - svgtopdf
 customReadme:
+  - backend
   - freesewing.dev
+  - freesewing.lab
   - freesewing.shared
   - freesewing.org
+  - svgtopdf
 customRollup:
+  - backend
   - components
   - core
   - css-theme
   - freesewing.dev
+  - freesewing.lab
   - freesewing.shared
   - freesewing.org
   - gatsby-remark-jargon
@@ -29,6 +42,7 @@ customRollup:
   - prettier-config
   - remark-jargon
   - strapi
+  - svgtopdf
   - utils
 namedExports:
   - css-theme
@@ -37,6 +51,8 @@ namedExports:
   - mui-theme
   - snapseries
 packageJson:
+  backend:
+    private: true
   bee:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:
@@ -121,6 +137,8 @@ packageJson:
     files: []
     publishConfig: {}
     rollup: {}
+  svgtopdf:
+    private: true
   tiberius: *starf
   utils:
     # react-scripts doesn't handle .mjs files correctly

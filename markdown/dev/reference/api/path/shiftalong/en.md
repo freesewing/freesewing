@@ -8,7 +8,9 @@ Point path.shiftAlong(float distance[, int stepsPerMm=25])
 
 Returns a point that lies at distance travelled along the path.
 
-<Example part="path_shiftalong" caption="Example of the Path.shiftAlong() method" />
+<Example part="path_shiftalong">
+Example of the Path.shiftAlong() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

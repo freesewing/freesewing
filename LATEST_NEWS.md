@@ -6,24 +6,15 @@ Bee is a bikini top pattern, while Lunetius, Tiberius, and Walburga are historic
 
 Read more in [our blog](/blog/freesewing-2-19/).
 
-##### Next contributor call on 8 January
+##### Next contributor call on 5 February
 
-The next contributor call is on **8 January 2022**, Lucian and Karen will host it.
+The next contributor call is on **5 February 2022**, Lexander and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
 
-##### FreeSewing v3 is coming
+##### Check out where FreeSewing is heading
 
-Over the summer, Joost started working on *project 2022*, an effort to
-migrate the FreeSewing websites (freesewing.org and freesewing.dev) from
-GatbsyJS to NextJS, and in the process consolidate and streamline our various repositories.
-
-Before long, it became clear that there are going to be too many major changes not to bump
-the major version.
-
-Take a look at our new development blog, which you can read at [2022.freesewing.dev/blog](https://2022.freesewing.dev/blog), and the [FreeSewing v3 Roadmap](https://github.com/freesewing/freesewing/discussions/1278).
-
-If you'd like to get involved in this effort, head over to [discord.freesewing.org](https://discord.freesewing.org/) and join the **v3** channel.
-
-
+If you're curious to see what we're working on, check out [the
+FreeSewing roadmap](https://github.com/freesewing/freesewing/discussions/1278) which
+includes all the things on the horizon for FreeSewing.

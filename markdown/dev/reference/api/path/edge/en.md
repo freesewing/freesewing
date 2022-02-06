@@ -17,7 +17,9 @@ Returns the Point object at the edge of the path you specify. Edge must be one o
  - `bottomLeft`
  - `bottomRight`
 
-<Example part="path_edge" caption="Example of the Path.edge() method" />
+<Example part="path_edge">
+Example of the Path.edge() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

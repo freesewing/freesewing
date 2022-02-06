@@ -8,17 +8,17 @@
 }
 .style-wrapper.light a:not(.MuiButton-root),
 .theme-wrapper.light a:not(.MuiButton-root) {
-  color: $fc-link-light;
+  color: $fs-link-light;
 }
 .style-wrapper.dark a:not(.MuiButton-root),
 .theme-wrapper.dark a:not(.MuiButton-root) {
-  color: $fc-link-dark;
+  color: $fs-link-dark;
 }
 .style-wrapper.light a.anchor svg path,
 .theme-wrapper.light a.anchor svg path {
-  stroke: $fc-link-light;
+  stroke: $fs-link-light;
 }
 .style-wrapper.dark a.anchor svg path,
 .theme-wrapper.dark a.anchor svg path {
-  stroke: $fc-link-dark;
+  stroke: $fs-link-dark;
 }

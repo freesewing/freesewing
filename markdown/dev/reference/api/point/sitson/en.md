@@ -24,10 +24,9 @@ bool point.sitsOn(Point check)
 
 ## Point.sitsOn() example
 
-<Example
-  part="point_sitson"
-  caption="An example of the Point.sitsOn() method"
-/>
+<Example part="point_sitson">
+An example of the Point.sitsOn() method
+</Example>
 
 ```js
 let { Point, points, Snippet, snippets } = part.shorthand();

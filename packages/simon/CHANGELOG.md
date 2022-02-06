@@ -1,7 +1,44 @@
 # Change log for: @freesewing/simon
 
 
-## 2.19.4 (2022-11-09)
+## 2.20.3 (2022-01-28)
+
+### Fixed
+
+ - Properly style SA paths on cuffs and collarstand
+ - SA path on sleeve was double-drawn
+
+## 2.20.1 (2022-01-27)
+
+### Fixed
+
+ - Remove debug outline when enabling box pleat setting
+
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
+## 2.19.9 (2022-01-09)
+
+### Fixed
+
+ - Fix incorrectly alliegned fabric match line. Move to CF instead [Fixed by @nicholasdower in
+
+## 2.19.8 (2022-01-08)
+
+### Fixed
+
+ - Make seam allowance stop at fold when using rounded back option Fixes [#1608](https://github.com/freesewing/freesewing/issues/1608)
+
+## 2.19.7 (2022-01-06)
+
+### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+## 2.19.4 (2021-11-09)
 
 ### Fixed
 

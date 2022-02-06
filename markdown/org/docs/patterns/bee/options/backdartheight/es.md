@@ -1,8 +1,8 @@
 - - -
-title: Back dart height (Bella)
+title: Altura de la pinza trasera (Bella)
 - - -
 
-Controls the back dart height in the underlying Bella block Bee is based on
+Controla la altura de la pinza trasera en el patrón base Bella, en el que se basa Bee
 
 
 ## Efecto de esta opción en el patrón

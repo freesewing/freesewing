@@ -24,7 +24,9 @@ So the only purpose of this method is to save your some typing;
 
 </Tip>
 
-<Example part="path_curve_" caption="Example of the Path.curve_() method" />
+<Example part="path_curve_">
+Example of the Path.curve\_() method
+</Example>
 
 ```js
   let { Point, points, Path, paths } = part.shorthand();

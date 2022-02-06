@@ -1,10 +1,10 @@
-import { name, version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-round', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-round', pkg.version),
   },
   macros: {
     round: function (so) {

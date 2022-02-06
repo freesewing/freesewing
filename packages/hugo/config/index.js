@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'hugo',
-  version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -31,7 +31,7 @@ export default {
     frontBase: 'base',
     front: 'frontBase',
     backBase: 'base',
-    back: 'backBase',
+    back: ['backBase', 'front'],
     sleevecap: 'front',
     sleeveBase: 'sleevecap',
     sleeve: ['sleeveBase', 'front', 'back'],

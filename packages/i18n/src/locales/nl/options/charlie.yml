@@ -11,6 +11,9 @@ backPocketWidth:
 backPocketDepth:
   title: Diepte achterzak
   description: Bepaalt de diepte van de achterzak
+backPocketFacing:
+  title: Back pocket facing
+  description: Controls whether or not to include facing on the back pockets
 frontPocketSlantDepth:
   title: Diepte voorzak
   description: Bepaalt de diepte van de voorste zakopening

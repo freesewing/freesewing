@@ -15,10 +15,9 @@ Point point.rotate(float angle, Point center)
 
 ## Point.rotate() example
 
-<Example
-  part="point_rotate"
-  caption="An example of the Point.rotate() method"
-/>
+<Example part="point_rotate">
+An example of the4Point.rotate() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

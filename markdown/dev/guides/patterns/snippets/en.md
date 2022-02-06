@@ -1,13 +1,11 @@
 ---
 title: Snippets
-order: 20
+order: 50
 ---
 
-<Example 
-  part="docs_overview" 
-  caption="Snippets are little embelishments that go on your pattern"
-  options={{focus: "Snippets"}}
-/>
+<Example part="docs_overview" options_focus="Snippets">
+Snippets are little embelishments that go on your pattern
+</Example>
 
 Snippets are little embellishments you can use and re-use on your pattern.
 They are typically used for things like logos or buttons. 
@@ -20,8 +18,7 @@ Each snippet must have:
 Since our example image does not have any snippets in it, here's another example
 of a `button`, `buttonhole`, and `logo` snippet added to a FreeSewing pattern:
 
-<Example 
-  part="snippet" 
-  caption="An example of the use of snippets"
-/>
+<Example part="snippet">
+An example of the use of snippets
+</Example>
 

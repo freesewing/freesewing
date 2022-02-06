@@ -3,44 +3,44 @@
 .theme-wrapper.dark,
 .theme-wrapper.light {
   .MuiButton-containedPrimary.info {
-    background-color: $fc-info-light;
+    background-color: $fs-info-light;
   }
   .MuiButton-containedPrimary.info:hover {
-    background-color: darken($fc-info-light, 10%);
+    background-color: darken($fs-info-light, 10%);
   }
 
   .MuiButton-containedPrimary.success {
-    background-color: $fc-success-light;
+    background-color: $fs-success-light;
   }
   .MuiButton-containedPrimary.success:hover {
-    background-color: darken($fc-success-light, 10%);
+    background-color: darken($fs-success-light, 10%);
   }
 
   .MuiButton-containedPrimary.warning {
-    background-color: $fc-warning-light;
+    background-color: $fs-warning-light;
   }
   .MuiButton-containedPrimary.warning:hover {
-    background-color: darken($fc-warning-light, 10%);
+    background-color: darken($fs-warning-light, 10%);
   }
 
   .MuiButton-containedPrimary.danger {
-    background-color: $fc-danger-light;
+    background-color: $fs-danger-light;
   }
   .MuiButton-containedPrimary.danger:hover {
-    background-color: darken($fc-danger-light, 10%);
+    background-color: darken($fs-danger-light, 10%);
   }
 
   .MuiButton-containedPrimary.accent {
-    background-color: $fc-accent-light;
+    background-color: $fs-accent-light;
   }
   .MuiButton-containedPrimary.accent:hover {
-    background-color: darken($fc-accent-light, 10%);
+    background-color: darken($fs-accent-light, 10%);
   }
 }
 
 .theme-wrapper.light {
   .MuiButton-containedPrimary {
-    background-color: $fc-bg-dark;
+    background-color: $fs-bg-dark;
   }
   .MuiButton-containedPrimary:hover {
     background-color: #000;
@@ -51,10 +51,10 @@
 }
 .theme-wrapper.dark {
   .MuiButton-containedPrimary {
-    background-color: $fc-bg-light;
+    background-color: $fs-bg-light;
   }
   .MuiButton-containedPrimary:hover {
-    background-color: darken($fc-bg-light, 10%);
+    background-color: darken($fs-bg-light, 10%);
   }
   .MuiButton-contained.Mui-disabled {
     background-color: rgba(2550, 255, 255, 0.12);

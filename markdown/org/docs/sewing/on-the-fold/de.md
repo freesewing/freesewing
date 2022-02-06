@@ -8,7 +8,7 @@ Das bedeutet, dass nur die Hälfte des Schnittmusterstücks gedruckt ist, und da
 
 Die Stoffbruchlinie wird mit einem doppeltem Pfeil markiert, wie in diesem Beispiel:
 
-<Legend part="cutonfold" caption="A cut-on-fold indicator" >
+<Legend part="cutonfold">A cut-on-fold indicator</Legend>
 
 <Tip>
 

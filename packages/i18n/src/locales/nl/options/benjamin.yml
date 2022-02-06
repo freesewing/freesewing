@@ -23,3 +23,6 @@ endStyle:
 collarEase:
   title: Overwijdte kraag
   description: The amount of ease at your neck
+ribbonWidth:
+  title: Ribbon width
+  description: Width of the ribbon

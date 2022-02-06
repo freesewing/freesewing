@@ -1,12 +1,17 @@
 import Attributes from './attributes'
 import { round } from './utils'
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 function Svg(pattern) {
   this.openGroups = []
   this.layout = {}
   this.freeId = 0
   this.body = ''
+  /*
+   * This breaks SVG style (see #1606)
+   * Can we not set variables in SVG style?
+   * this.style = `svg.freesewing.pattern { --pattern-scale: ${pattern.settings.scale} }`
+   */
   this.style = ''
   this.script = ''
   this.defs = ''
@@ -18,7 +23,7 @@ function Svg(pattern) {
   this.attributes.add('xmlns:xlink', 'http://www.w3.org/1999/xlink')
   this.attributes.add('xml:lang', pattern.settings.locale)
   this.attributes.add('xmlns:freesewing', 'http://freesewing.org/namespaces/freesewing')
-  this.attributes.add('freesewing', version)
+  this.attributes.add('freesewing', pkg.version)
 }
 
 Svg.prototype.runHooks = function (hookName, data = false) {
@@ -199,7 +204,8 @@ Svg.prototype.renderText = function (point) {
   }
   point.attributes.set('data-text-x', round(point.x))
   point.attributes.set('data-text-y', round(point.y))
-  let lineHeight = point.attributes.get('data-text-lineheight') || 12
+  let lineHeight =
+    point.attributes.get('data-text-lineheight') || 6 * (this.pattern.settings.scale || 1)
   point.attributes.remove('data-text-lineheight')
   let svg = `${this.nl()}<text ${point.attributes.renderIfPrefixIs('data-text-')}>`
   this.indent()
@@ -220,7 +226,7 @@ Svg.prototype.renderText = function (point) {
 }
 
 Svg.prototype.escapeText = function (text) {
-  return text.replace('"', '&#8220;')
+  return text.replace(/\"/g, '&#8220;')
 }
 
 Svg.prototype.renderCircle = function (point) {
@@ -233,7 +239,8 @@ Svg.prototype.renderCircle = function (point) {
 Svg.prototype.renderSnippet = function (snippet, part) {
   let x = round(snippet.anchor.x)
   let y = round(snippet.anchor.y)
-  let scale = snippet.attributes.get('data-scale')
+  let scale = snippet.attributes.get('data-scale') || 1
+  scale = scale * (this.pattern.settings.scale || 1)
   if (scale) {
     snippet.attributes.add('transform', `translate(${x}, ${y})`)
     snippet.attributes.add('transform', `scale(${scale})`)

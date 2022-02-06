@@ -12,10 +12,9 @@ float point.dist(Point point)
 
 ## Point.dist() example
 
-<Example
-  part="point_dist"
-  caption="An example of the Point.dist() method"
-/>
+<Example part="point_dist">
+An example of the Point.dist() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand()

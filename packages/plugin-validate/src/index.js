@@ -1,13 +1,12 @@
-import { version, name } from '../package.json'
-import validate from './validate'
+import pkg from '../package.json'
 
 const err = 'FIXME: plugin-validate is not updated for recent core versions'
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-validate', version),
-    preDraft: pattern => console.log(err),
-    postDraft: pattern => console.log(err),
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-validate', pkg.version),
+    preDraft: (pattern) => console.log(err),
+    postDraft: (pattern) => console.log(err),
   },
 }

@@ -11,6 +11,9 @@ backPocketWidth:
 backPocketDepth:
   title: Profundidad del bolsillo trasero
   description: Controla la profundidad del bolsillo trasero
+backPocketFacing:
+  title: Back pocket facing
+  description: Controls whether or not to include facing on the back pockets
 frontPocketSlantDepth:
   title: Profundidad delantera de bolsillo
   description: Controla la profundidad de la capa delantera del bolsillo

@@ -12,10 +12,9 @@ Point point.shiftOutwards(Point target, float distance)
 
 ## Point.shiftOutwards() example
 
-<Example
-  part="point_shiftoutwards"
-  caption="An example of the Point.shiftOutwards() method"
-/>
+<Example part="point_shiftoutwards">
+An example of the Point.shiftOutwards() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, macro } = part.shorthand();

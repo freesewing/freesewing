@@ -1,14 +1,27 @@
 import path from 'path'
+import { readdirSync } from 'fs'
 import remarkGfm from 'remark-gfm'
-import remarkJargon from 'remark-jargon'
-import { jargon } from '@freesewing/i18n'
 
-const config = site => ({
+const getDirectories = source =>
+  readdirSync(source, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name)
+const pkgs = getDirectories(path.resolve(`../`))
+
+/*
+ * This mehthod will return the NextJS configuration
+ * Parameters:
+ *
+ * site: one of 'dev', 'org', or 'lab'
+ * remarkPlugins: Array of remark plugins to load
+ * srcPkgs: Array of folders in the monorepo/packages that should be aliased
+ * so they are loaded from source, rather than from a compiled bundle
+ */
+const config = (site, remarkPlugins=[]) => ({
   experimental: {
     externalDir: true,
-    esmExternals: true,
   },
-  pageExtensions: [ 'js' ],
+  pageExtensions: [ 'js', 'md' ],
   webpack: (config, options) => {
 
 		// Fixes npm packages that depend on node modules
@@ -29,11 +42,18 @@ const config = site => ({
           options: {
             remarkPlugins: [
               remarkGfm,
-              [remarkJargon, { jargon } ],
+              ...remarkPlugins,
             ]
           }
         }
       ]
+    })
+
+    // YAML support
+    config.module.rules.push({
+      test: /\.ya?ml$/,
+      type: 'json',
+      use: 'yaml-loader'
     })
 
     // Fix for nextjs bug #17806
@@ -48,6 +68,12 @@ const config = site => ({
     // Aliases
     config.resolve.alias.shared = path.resolve('../freesewing.shared/')
     config.resolve.alias.site = path.resolve(`../freesewing.${site}/`)
+    config.resolve.alias.markdown = path.resolve(`../../markdown/${site}/`)
+    config.resolve.alias.pkgs = path.resolve(`../`)
+    // This forces webpack to load the code from source, rather than compiled bundle
+    for (const pkg of pkgs) {
+      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../${pkg}/src/index.js`)
+    }
 
     return config
   }

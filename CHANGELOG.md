@@ -1,13 +1,536 @@
 # Change log for: FreeSewing (global)
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.4 (2022-01-28)
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Downgraded back to react-scripts 4 because 5 has a regression bug
+
+
+## 2.20.3 (2022-01-28)
+
+### core
+
+#### Changed
+
+ - Setting Path.render() no longer raises an info message
+ - Always raise debug, but only store it whend debug is enabled
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated to react-scripts 5 to sidestep bug in error-overlay
+
+### simon
+
+#### Fixed
+
+ - Properly style SA paths on cuffs and collarstand
+ - SA path on sleeve was double-drawn
+
+
+## 2.20.2 (2022-01-27)
+
+### i18n
+
+#### Fixed
+
+ - Patterns options were always in English due to symlinks being used
+
+
+## 2.20.1 (2022-01-27)
+
+### bee
+
+#### Changed
+
+ - Exposed additional Bella options
+
+### hugo
+
+#### Fixed
+
+ - Seam allowance on pocket is incorrectly marked for cut-on-fold Closes [#1731](https://github.com/freesewing/freesewing/issues/1731)
+
+### simon
+
+#### Fixed
+
+ - Remove debug outline when enabling box pleat setting
+
+
+## 2.20.0 (2022-01-24)
+
+### aaron
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### albert
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### bee
+
+#### Changed
+
+ - Re-structured option groups
+ - Expose all options to the user that should be configurable
+ - Hide/lock options that should be fixed (inherited from Bella)
+ - Switched to default import for version from package.json
+
+### bella
+
+#### Changed
+
+ - Expose the `fullChestEaseReduction` option to the user via option groups
+ - Expose the `frontArmholeCurvature` option to the user via option groups
+ - Switched to default import for version from package.json
+
+### benjamin
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### bent
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### breanna
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### brian
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### bruce
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### carlita
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### carlton
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### cathrin
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### charlie
+
+#### Changed
+
+ - Expose the `frontPocketFacing` option to the user via option groups
+ - Switched to default import for version from package.json
+
+### components
+
+#### Added
+
+ - Added support for `settings.scale` to Draft and Workbench components
+
+#### Fixed
+
+ - Support handling of `&#160;` in text
+
+### core
+
+#### Added
+
+ - Added support for `settings.scale`
+
+### cornelius
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### css-theme
+
+#### Added
+
+ - Added support for `settings.scale`
+ - Included variables used by TailwindCSS themes for compatibility
+
+### diana
+
+#### Changed
+
+ - Expose the `cuffEase` option to the user via option groups
+ - Switched to default import for version from package.json
+
+### examples
+
+#### Added
+
+ - Added plugin_gore example
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### florence
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### florent
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### holmes
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### hortensia
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### huey
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### hugo
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### i18n
+
+#### Fixed
+
+ - Fixed issue that was causing plugin translations to always be in English
+
+### jaeger
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### legend
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### lunetius
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### paco
+
+#### Changed
+
+ - Hide the `frontPocketFlapSize` from the user
+ - Switched to default import for version from package.json
+
+### penelope
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### plugin-banner
+
+#### Changed
+
+ - Changed the default options
+ - Now part of `@freesewing/plugin-bundle`
+
+### plugin-bartack
+
+#### Changed
+
+ - Now part of `@freesewing/plugin-bundle`
+
+#### Fixed
+
+ - Fixed issue with `bartackFractionAlong` macro
+ - Handle start and endpoints being the same in `bartackFractionAlong`
+ - Support start and endpoints being reversed in `bartackFractionAlong`
+
+### plugin-bundle
+
+#### Changed
+
+ - plugin-banner is now part of plugin-bundle
+ - plugin-bartack is now part of plugin-bundle
+
+### plugin-cutonfold
+
+#### Added
+
+ - Support for scale setting
+
+### plugin-dimension
+
+#### Fixed
+
+ - Support hiding start/end markers on path dimensions (pd macro)
+
+### plugin-flip
+
+#### Added
+
+ - Added support for flipping around the Y-axis
+
+### plugin-gore
+
+#### Changed
+
+ - The `goreNumber` property of the gore macro has been renamed to `gores`
+ - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
+
+### plugin-grainline
+
+#### Added
+
+ - Added support for custom text
+
+### plugin-sprinkle
+
+#### Added
+
+ - Added support for `scale` to scale all sprinkled snippets
+ - Added support for `rotate` to rotate all sprinkled snippets
+
+### plugin-title
+
+#### Added
+
+ - Added support for `settings.scale`
+
+#### Removed
+
+ - Removed rendering of config.cut as it's not used
+
+### plugintest
+
+#### Added
+
+ - Added the plugintest pattern which is used for testing plugins
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### rendertest
+
+#### Changed
+
+ - Restructured the pattern to allow inclusion of individual parts in Example component
+ - Switched to default import for version from package.json
+
+### sandy
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### shin
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### simon
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### simone
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### sven
+
+#### Changed
+
+ - Expose the `hipsEase` option to the user via option groups
+ - Lock the `waistEase` option to a static value
+ - Switched to default import for version from package.json
+
+### tamiko
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### teagan
+
+#### Changed
+
+ - Lock the `frontArmholeDeeper` option to a static value
+ - Switched to default import for version from package.json
+
+### theo
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### tiberius
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### titan
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### trayvon
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### tutorial
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### ursula
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### wahid
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### walburga
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### waralee
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+### yuri
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
+
+## 2.19.9 (2022-01-09)
+
+### simon
+
+#### Fixed
+
+ - Fix incorrectly alliegned fabric match line. Move to CF instead [Fixed by @nicholasdower in
+
+
+## 2.19.8 (2022-01-08)
+
+### core
+
+#### Fixed
+
+ - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
+
+### simon
+
+#### Fixed
+
+ - Make seam allowance stop at fold when using rounded back option Fixes [#1608](https://github.com/freesewing/freesewing/issues/1608)
+
+### yuri
+
+#### Fixed
+
+ - Fix dependency configuration Fixes [#1334](https://github.com/freesewing/freesewing/issues/1334)
+
+
+## 2.19.7 (2022-01-06)
+
+### brian
+
+#### Changed
+
+ - Always calculate sleevecap notch from armhole rather than shoulder
+ - Default for `sleevecapEase` option is now `0`
+
+### simon
+
+#### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+### simone
+
+#### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+
+## 2.19.6 (2021-12-29)
 
 ### core
 
 #### Added
 
  - Added the new attributes.setIfUnset() method
+ - Added the new `scale` setting
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Fix axios version conflict
 
 ### plugin-banner
 
@@ -20,6 +543,10 @@
 #### Added
 
  - Added (esm) unit tests
+
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
 
 ### plugin-bundle
 
@@ -38,6 +565,10 @@
 #### Added
 
  - Added (esm) unit tests
+
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
 
 #### Fixed
 
@@ -121,6 +652,10 @@
 
  - Added (esm) unit tests
 
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
 ### plugin-sprinkle
 
 #### Added
@@ -145,6 +680,10 @@
 
  - Added (esm) unit tests
 
+#### Changed
+
+ - Add utility classes and CSS variables for better styling support
+
 ### plugin-validate
 
 #### Added
@@ -157,8 +696,14 @@
 
  - Added (esm) unit tests
 
+### rendertest
 
-## 2.19.5 (2022-11-13)
+#### Changed
+
+ - Updated the rendertest pattern to be more concise
+
+
+## 2.19.5 (2021-11-13)
 
 ### charlie
 
@@ -190,7 +735,7 @@
  - Fix seam allowance on back, gusset and hood center parts Closes [#1464](https://github.com/freesewing/freesewing/issues/1464)
 
 
-## 2.19.4 (2022-11-09)
+## 2.19.4 (2021-11-09)
 
 ### paco
 

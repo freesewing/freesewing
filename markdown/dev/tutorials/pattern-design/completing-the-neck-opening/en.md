@@ -14,7 +14,7 @@ as it is, and simply chose to not show it.
 To accomplish this, update the code and add this one line:
 
 ```js
-paths.neck = new Path()
+paths.quarterNeck = new Path()
 	  .move(points.right)
 	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
     .setRender(false) // <== Add this line
@@ -64,5 +64,7 @@ paths.neck = new Path()
   .close()
 ```
 
-<Example pattern="tutorial" part="step4" caption="And now you have a complete neck opening" />
+<Example pattern="tutorial" part="step4">
+And now you have a complete neck opening
+</Example>
 

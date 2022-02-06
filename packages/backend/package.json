@@ -1,0 +1,93 @@
+{
+  "name": "@freesewing/backend",
+  "version": "2.20.4",
+  "description": "The freesewing.org backend",
+  "private": true,
+  "main": "build/main.js",
+  "module": "build/main.mjs",
+  "scripts": {
+    "cli": "babel-node --presets '@babel/preset-env' src/cli/index.js --help",
+    "clear:users": "babel-node --presets '@babel/preset-env' src/cli/index.js --clearUsers",
+    "clear:models": "babel-node --presets '@babel/preset-env' src/cli/index.js --clearModels",
+    "clear:patterns": "babel-node --presets '@babel/preset-env' src/cli/index.js --clearPatterns",
+    "clear:confirmations": "babel-node --presets '@babel/preset-env' src/cli/index.js --clearConfirmations",
+    "clear:all": "babel-node --presets '@babel/preset-env' src/cli/index.js --clearAll",
+    "clear:reboot": "babel-node --presets '@babel/preset-env' src/cli/index.js --reboot",
+    "precommit": "npm run pretty && lint-staged",
+    "patch": "npm version patch -m ':bookmark: v%s' && npm run build",
+    "minor": "npm version minor -m ':bookmark: v%s' && npm run build",
+    "major": "npm version major -m ':bookmark: v%s' && npm run build",
+    "test": "SEND_TEST_EMAILS=0 ./node_modules/.bin/mocha tests/index.js",
+    "testall": "SEND_TEST_EMAILS=1 ./node_modules/.bin/mocha tests/index.js",
+    "clean": "rimraf dist",
+    "prettier": "npx prettier --write 'src/**' 'tests/**'",
+    "lint": "eslint --fix \"src/*.js\"",
+    "develop": "backpack",
+    "build": "backpack build",
+    "start:prod": "backpack build && pm2 start build/main.js --name freesewing-backend",
+    "start:canary": "backpack build && pm2 start build/main.js --name canary-backend",
+    "upgrade:freesewing": "git checkout main && npm run build && pm2 stop freesewing-backend && pm2 delete freesewing-backend && pm2 start build/main.js --name freesewing-backend",
+    "upgrade:next": "git checkout develop && npm run build && pm2 stop canary-backend && pm2 delete canary-backend && pm2 start build/main.js --name canary-backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freesewing/freesewing.git"
+  },
+  "author": "Joost De Cock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "homepage": "https://github.com/freesewing/freesewing#readme",
+  "prettier": "@freesewing/prettier-config",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@freesewing/i18n": "latest",
+    "axios": "0.18.0",
+    "body-parser": "1.18.3",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "chalk": "2.4.1",
+    "command-line-args": "^5.1.1",
+    "cors": "2.8.5",
+    "data-uri-to-buffer": "^3.0.1",
+    "data-uri-to-file": "^0.1.8",
+    "dateformat": "3.0.3",
+    "express": "4.17.2",
+    "form-data": "^4.0.0",
+    "formidable": "2.0.1",
+    "jsonwebtoken": "8.5.1",
+    "jszip": "3.7.1",
+    "mdast-util-to-string": "2",
+    "mocha": "^8.3.2",
+    "mongoose": "^6.1.8",
+    "mongoose-bcrypt": "^1.8.1",
+    "mongoose-encryption": "^2.1.0",
+    "nodemailer": "6.7.2",
+    "passport": "0.5.2",
+    "passport-jwt": "4.0.0",
+    "query-string": "7.1.0",
+    "remark": "13",
+    "remark-frontmatter": "3",
+    "remark-parse": "^9.0.0",
+    "remark-plain-text": "^0.2.0",
+    "rimraf": "2.6.2",
+    "sharp": "^0.29.3",
+    "tlds": "^1.221.1",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "backpack-core": "0.7.0",
+    "prettier": "^2.3.1"
+  }
+}

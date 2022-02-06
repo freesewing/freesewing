@@ -30,3 +30,7 @@ endStyle:
 collarEase:
   title: Collar ease
   description: The amount of ease at your neck
+
+ribbonWidth:
+  title: Ribbon width
+  description: Width of the ribbon

@@ -8,7 +8,9 @@ Path path.offset(float distance)
 
 Returns a new Path that is offset by distance from the original path.
 
-<Example part="path_offset" caption="Example of the Path.offset() method" />
+<Example part="path_offset">
+Example of the Path.offset() method
+</Example>
 
 ```js
 let { Point, points, Path, paths } = part.shorthand();

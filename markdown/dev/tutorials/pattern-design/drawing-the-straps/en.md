@@ -113,7 +113,10 @@ macro("round", {
 
 With that out of the way, our bib now looks like this:
 
-<Example pattern="tutorial" part="step9" caption="That is looking a lot like a bib" />
+<Example pattern="tutorial" part="step9">
+That is looking a lot like a bib
+</Example>
+
 
 <Note> 
 

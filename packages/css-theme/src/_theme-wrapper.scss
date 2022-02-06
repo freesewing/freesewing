@@ -8,18 +8,18 @@
 }
 
 .theme-wrapper.light {
-  background: $fc-bg-light;
-  color: $fc-bg-dark;
+  background: $fs-bg-light;
+  color: $fs-bg-dark;
   .altbg {
-    background: $fc-altbg-light;
+    background: $fs-altbg-light;
   }
 }
 
 .theme-wrapper.dark {
-  background: $fc-bg-dark;
-  color: $fc-bg-light;
+  background: $fs-bg-dark;
+  color: $fs-bg-light;
   .altbg {
-    background: $fc-altbg-dark;
+    background: $fs-altbg-dark;
   }
 }
 

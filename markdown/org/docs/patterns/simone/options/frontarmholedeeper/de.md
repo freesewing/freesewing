@@ -1,10 +1,8 @@
 
-![Zusätzlicher Ausschnitt am vorderen Armloch](./frontarmholedeeper.svg)
+Controls how much the front of the armhole is cut deeper into the garment than the back.
 
-Steuert wie viel die Vorderseite des Armlochs tiefer in das Gewand geschnitten wird als die Rückseite.
-
-Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more rounded there too, and the armhole is typically cut deeper into the front of the garment than the back. Diese Option bestimmt, wie viel tiefer ist.
+Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more rounded there too, and the armhole is typically cut deeper into the front of the garment than the back. This option controls how much deeper.
 
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_frontarmholedeeper_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_frontarmholedeeper_sample.svg "Effect of this option on the pattern")

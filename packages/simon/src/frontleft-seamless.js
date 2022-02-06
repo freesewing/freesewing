@@ -17,12 +17,14 @@ export default (part) => {
   if (complete) {
     // Placket help lines
     paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
+    if (!options.seperateButtonPlacket) {
+      // Match lines are only displayed on attached plackets
+      paths.frontCenter.attr('data-text', 'matchHere').attr('data-text-class', 'text-xs center')
+    }
     paths.placketFold1 = new Path()
       .move(points.placketBottomFold1)
       .line(points.placketTopFold1)
       .attr('class', 'dotted')
-      .attr('data-text', 'matchHere')
-      .attr('data-text-class', 'text-xs center')
     paths.placketFold2 = new Path()
       .move(points.placketBottomFold2)
       .line(points.placketTopFold2)

@@ -38,7 +38,7 @@ This will take a few minutes because we're loading some software for your develo
 
 When it's ready, enter the directory that was just created for our `tutorial` pattern and navigate to the `example` subfolder. There, start the development environment:
 
-```bash:
+```bash
 cd tutorial/example
 npm start
 ```

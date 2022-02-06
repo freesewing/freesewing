@@ -1,13 +1,26 @@
 export default function (part) {
   // Remove clutter
-  let pocket = part.paths.pocket
+  const pocket = part.paths.pocket
   part.paths = {}
   part.snippets = {}
 
-  let { utils, store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
+  const { utils, store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
-  paths.seam = pocket.line(points.cfRibbing).line(points.pocketHem).attr('class', 'fabric', true)
+  paths.seam = pocket
+    .line(points.cfRibbing)
+    .line(points.pocketHem)
+    .close()
+    .attr('class', 'fabric', true)
   paths.seam.render = true
+
+  paths.saBase = new Path()
+    .move(points.cfRibbing)
+    .line(points.pocketHem)
+    .join(paths.seam
+      .split(points.pocketCf)
+      .shift()
+    )
+    .setRender(false)
 
   store.set('facingWidth', points.pocketHem.dist(points.pocketTip) / 2)
 
@@ -41,7 +54,11 @@ export default function (part) {
     points.title = points.cfRibbing.shiftFractionTowards(points.pocketTop, 0.5)
     macro('title', { at: points.title, nr: 4, title: 'pocket' })
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.saBase.offset(sa)
+        .line(points.pocketCf)
+        .move(points.cfRibbing)
+      paths.sa.line(paths.sa.start())
+        .attr('class', 'fabric sa')
     }
   }
 

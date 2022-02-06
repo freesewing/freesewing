@@ -1,6 +1,12 @@
 # Change log for: @freesewing/holmes
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.19.2 (2021-11-02)
 
 ### Fixed

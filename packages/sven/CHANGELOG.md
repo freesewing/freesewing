@@ -1,6 +1,14 @@
 # Change log for: @freesewing/sven
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Expose the `hipsEase` option to the user via option groups
+ - Lock the `waistEase` option to a static value
+ - Switched to default import for version from package.json
+
 ## 2.17.0 (2021-07-01)
 
 ### Added

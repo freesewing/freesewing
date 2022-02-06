@@ -1,7 +1,14 @@
 # Change log for: @freesewing/plugin-gore
 
 
-## unreleased (NaN-NaN-NaN)
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - The `goreNumber` property of the gore macro has been renamed to `gores`
+ - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
+
+## 2.19.6 (2021-12-29)
 
 ### Added
 

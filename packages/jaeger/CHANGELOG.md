@@ -1,6 +1,12 @@
 # Change log for: @freesewing/jaeger
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.19.0 (2021-10-17)
 
 ### Changed

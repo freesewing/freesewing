@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-logo",
-  "version": "2.19.5",
+  "version": "2.20.4",
   "description": "A FreeSewing plugin to add our logo to your patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -29,7 +29,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "rollup -c",
-    "lernabuild": "rollup -c",
+    "cibuild_step1": "rollup -c",
     "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
@@ -39,16 +39,17 @@
     "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.19.5"
+    "@freesewing/core": "^2.20.4"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "^9.1.1",
     "chai": "^4.2.0",
+    "@babel/core": "^7.11.0",
     "@babel/register": "^7.10.5",
     "rollup": "^2.50.6",
     "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4"

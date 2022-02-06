@@ -1,11 +1,9 @@
-- - -
-- - -
 
-<Fixme>
+How deep you would like the inner pocket to be.
 
-Document deze optie
+- Increase this option to make a deeper inner pocket
+- Decrease this option to make a shallower inner pocket
 
-</Fixme>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_innerpocketdepth_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_innerpocketdepth_sample.svg "Effect of this option on the pattern")

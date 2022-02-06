@@ -8,7 +8,9 @@ array|false path.intersectsY(float y)
 
 Returns the Point object(s) where the path intersects with a given Y-value.
 
-<Example part="path_intersectsy" caption="Example of the Path.intersectsY() method" />
+<Example part="path_intersectsy">
+Example of the Path.intersectsY() method
+</Example>
 
 ```js
 let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();

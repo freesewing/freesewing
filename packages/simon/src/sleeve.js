@@ -12,7 +12,11 @@ export default (part) => {
     options,
     snippets,
     Snippet,
+    store,
   } = part.shorthand()
+
+  // Update the back armhole notch because the one from Brian is not correct
+  points.backNotch = paths.sleevecap.reverse().shiftAlong(store.get('backArmholeToArmholePitch'))
 
   // Remove inherited paths, snippets, and scalebox
   for (const p in paths) delete paths[p]
@@ -142,11 +146,14 @@ export default (part) => {
       paths.pleats.attr('class', 'dotted')
     }
     macro('title', { at: points.centerBiceps, nr: 5, title: 'sleeve' })
-    macro('grainline', { from: points.cuffMid, to: points.sleeveTip })
+    macro('grainline', { from: points.cuffMid, to: new Point(
+        points.cuffMid.x,
+        points.sleeveTip.y
+    ) })
 
     if (sa) {
       paths.sa = paths.frenchBase.offset(sa * options.ffsa)
-      paths.frenchSa = paths.sa.clone()
+      paths.frenchSa = paths.sa.clone().attr('class', 'hidden')
       paths.sa = paths.sa
         .join(paths.saBase.offset(sa))
         .join(paths.cuffBase.offset(sa))
@@ -154,7 +161,8 @@ export default (part) => {
         .attr('class', 'fabric sa')
       macro('banner', {
         path: 'frenchSa',
-        text: ['frenchSean', ': 2x', 'seamAllowance'],
+        text: 'flatFelledSeamAllowance',
+        repeat: 30
       })
     }
   }

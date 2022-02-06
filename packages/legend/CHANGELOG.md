@@ -1,6 +1,12 @@
 # Change log for: @freesewing/legend
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.7.0 (2020-07-12)
 
 ### Added

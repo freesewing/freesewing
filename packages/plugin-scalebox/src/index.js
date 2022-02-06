@@ -1,12 +1,12 @@
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 import scalebox from './scalebox'
 import miniscale from './miniscale'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
-    preRender: svg => svg.attributes.setIfUnset('freesewing:plugin-scalebox', version)
+    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-scalebox', pkg.version),
   },
   macros: { scalebox, miniscale },
 }

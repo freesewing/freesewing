@@ -1,19 +1,20 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'bella',
-  version,
+  version: pkg.version,
   design: 'Bella Incognito',
   code: 'Joost De Cock',
   department: 'tops',
   type: 'block',
   difficulty: 3,
   optionGroups: {
-    fit: ['chestEase', 'waistEase', 'bustSpanEase'],
+    fit: ['chestEase', 'waistEase', 'bustSpanEase', 'fullChestEaseReduction'],
     darts: ['backDartHeight', 'bustDartLength', 'waistDartLength', 'bustDartCurve'],
     armhole: [
       'armholeDepth',
       'backArmholeSlant',
+      'frontArmholeCurvature',
       'backArmholeCurvature',
       'frontArmholePitchDepth',
       'backArmholePitchDepth',

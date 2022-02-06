@@ -1,8 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 
 export default {
   name: 'jaeger',
-  version: version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'coats',
@@ -96,18 +96,18 @@ export default {
     frontBase: 'bentFront',
     front: ['frontBase', 'backBase'],
     back: 'backBase',
-    side: 'frontBase',
-    collarStand: 'front',
+    side: ['frontBase', 'backBase'],
+    collarStand: ['front', 'back'],
     collar: 'collarStand',
     underCollar: 'collarStand',
-    pocket: 'frontBase',
+    pocket: ['frontBase', 'backBase'],
     pocketLining: 'pocket',
     chestPocketWelt: 'front',
     chestPocketBag: 'front',
     innerPocketWelt: 'front',
     innerPocketBag: 'front',
-    topSleeve: 'bentTopSleeve',
-    underSleeve: 'bentUnderSleeve',
+    topSleeve: ['bentTopSleeve', 'bentSleeve', 'bentFront'],
+    underSleeve: ['bentUnderSleeve', 'bentSleeve', 'bentFront'],
   },
   inject: {
     bentBack: 'bentBase',

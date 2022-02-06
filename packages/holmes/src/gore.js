@@ -24,7 +24,7 @@ export default function (part) {
   macro('gore', {
     from: points.p0,
     radius: headRadius,
-    goreNumber: options.goreNumber,
+    gores: options.gores,
     extraLength: ((options.lengthRatio - 0.5) * headCircumference) / 2,
     prefix: 'gore_',
     render: true,
@@ -75,7 +75,7 @@ export default function (part) {
       macro('vd', {
         from: points.p0,
         to: points.gore_p3,
-        x: points.p0.x - 15 - sa*2,
+        x: points.p0.x - 15 - sa * 2,
       })
     }
   }

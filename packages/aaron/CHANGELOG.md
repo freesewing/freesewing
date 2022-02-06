@@ -1,6 +1,12 @@
 # Change log for: @freesewing/aaron
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.16.1 (2021-05-30)
 
 ### Changed

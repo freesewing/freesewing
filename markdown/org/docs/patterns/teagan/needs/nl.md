@@ -1,7 +1,7 @@
 
 Om Teagan te maken heb je het volgende nodig:
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- Ongeveer 1 m geschikte stof ([zie Optionele stoffen](/docs/patterns/teagan/fabric))
+- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/teagan/fabric))
 
 <!--- This link isn't a thing yet, but it follows the site nomenclature, so it should work when everything's up? --->
 

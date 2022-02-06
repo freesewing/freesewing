@@ -1,13 +1,13 @@
 import markers from './lib/markers'
-import { version, name } from '../package.json'
+import pkg from '../package.json'
 
 export default {
-  name: name,
-  version: version,
+  name: pkg.name,
+  version: pkg.version,
   hooks: {
     preRender: (svg) => {
       if (svg.attributes.get('freesewing:plugin-cutonfold') === false) {
-        svg.attributes.set('freesewing:plugin-cutonfold', version)
+        svg.attributes.set('freesewing:plugin-cutonfold', pkg.version)
         svg.defs += markers
       }
     },
@@ -32,10 +32,10 @@ export default {
       points['cutonfoldFrom' + so.prefix] = so.from.shiftFractionTowards(so.to, so.margin / 100)
       points['cutonfoldTo' + so.prefix] = so.to.shiftFractionTowards(so.from, so.margin / 100)
       points['cutonfoldVia1' + so.prefix] = points['cutonfoldFrom' + so.prefix]
-        .shiftTowards(so.from, so.offset)
+        .shiftTowards(so.from, so.offset * this.context.settings.scale)
         .rotate(-90, points['cutonfoldFrom' + so.prefix])
       points['cutonfoldVia2' + so.prefix] = points['cutonfoldTo' + so.prefix]
-        .shiftTowards(so.to, so.offset)
+        .shiftTowards(so.to, so.offset * this.context.settings.scale)
         .rotate(90, points['cutonfoldTo' + so.prefix])
       const text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
       this.paths['cutonfold' + so.prefix] = new this.Path()

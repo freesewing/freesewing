@@ -1,4 +1,7 @@
 ---
+hipsEase:
+  title: Holgura de cadera
+  description: Controla la cantidad de holgura en las caderas (en la parte de abajo de la sudadera)
 ribbing:
   title: Tejido acanalado
   description: Ya sea para terminar el dobladillo y los puños con tejido acanalado.

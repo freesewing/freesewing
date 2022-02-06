@@ -1,6 +1,24 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.20.4 (2022-01-28)
+
+### Fixed
+
+ - Downgraded back to react-scripts 4 because 5 has a regression bug
+
+## 2.20.3 (2022-01-28)
+
+### Fixed
+
+ - Updated to react-scripts 5 to sidestep bug in error-overlay
+
+## 2.19.6 (2021-12-29)
+
+### Fixed
+
+ - Fix axios version conflict
+
 ## 2.17.1 (2021-07-14)
 
 ### Fixed

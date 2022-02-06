@@ -4,10 +4,12 @@ for: developers
 about: Shows you how to setup your development environment to work on freesewing.dev, our website for developers
 ---
 
-To work on freesewing.dev, checkout the repository:
+freesewing.dev is built from a package in our monorepo. You will need the following setup and installed before you begin: Node, [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/). 
+
+To get started, checkout the repository:
 
 ```bash
-git@github.com:freesewing/freesewing.dev.git
+git@github.com:freesewing/freesewing.git
 ```
 
 <Note>
@@ -15,30 +17,32 @@ You should check out your own fork so you can write your changes to it.
 Update the command above with the path of your own fork on Github
 </Note>
 
-Enter the newly installed repository:
+Enter the newly installed repository and run kickstart:
 
 ```bash
-cd freesewing.dev
+cd freesewing
+yarn kickstart
 ```
 
-Now let NPM install the dependencies:
+After that completes, navigate to the freesewing.dev package directory:
 
 ```bash
-npm install
+cd freesewing/packages/freesewing.dev
 ```
 
-If you prefer, you can also use yarn:
+Now install the dependencies:
 
 ```bash
 yarn install
 ```
 
-This will take a while. Then it's done, run the following command to start your development environment:
+This will take a while. When it's done, run the following commands to build and then start your development environment:
 
 ```bash
-npm run develop
+yarn prebuild
+yarn dev
 ```
 
-Once the command builds the site, you can open your browser on http://localhost:8000 to see the site.
+Once the command builds the site, you can open your browser on http://localhost:3002 to see the site.
 
 As you make changes, they will automatically be loaded into your browser.

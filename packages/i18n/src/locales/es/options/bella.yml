@@ -8,6 +8,9 @@ waistEase:
 bustSpanEase:
   title: Facilidad de la expansión del polvo
   description: Controla la cantidad de facilidad (horizontal) que se agrega a tu superficie de busto al ubicar el punto de busto.
+fullChestEaseReduction:
+  title: Full chest ease reduction
+  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
 backDartHeight:
   title: Altura del dart trasero
   description: Controla la altura del dart posterior
@@ -26,6 +29,9 @@ armholeDepth:
 backArmholeSlant:
   title: Slant del orificio trasero
   description: Rota ligeramente el orificio alrededor de su punto de zanja
+frontArmholeCurvature:
+  title: Front armhole curvature
+  description: Controls how deep the armhole is scooped out at the front bottom
 backArmholeCurvature:
   title: Curvatura del orificio trasero
   description: Controla la profundidad del agujero de armadura en la parte trasera

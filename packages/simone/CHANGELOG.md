@@ -1,7 +1,19 @@
 # Change log for: @freesewing/simone
 
 
-## 2.19.4 (2022-11-09)
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
+## 2.19.7 (2022-01-06)
+
+### Fixed
+
+ - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
+
+## 2.19.4 (2021-11-09)
 
 ### Fixed
 

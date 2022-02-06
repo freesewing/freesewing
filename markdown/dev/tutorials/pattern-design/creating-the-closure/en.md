@@ -57,9 +57,11 @@ macro("round", {
 })
 ```
 
-<Note> You can find more information on the `round` macro in [the macros docs](/reference/macros/round/).</Note>
+<Note> You can find more information on the `round` macro in [the macros docs](/reference/api/macros/round/).</Note>
 
-<Example pattern="tutorial" part="step7" caption="Pretty good, but how are we going to fit it over the baby's head?" />
+<Example pattern="tutorial" part="step7">
+Pretty good, but how are we going to fit it over the baby's head?
+</Example>
 
 Like our neck opening, we've only drawn half since we can simply copy the points to the other side.
 

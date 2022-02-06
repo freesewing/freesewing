@@ -1,11 +1,11 @@
-import { version } from '../package.json'
+import pkg from '../package.json'
 import { elastics, smallsteps } from '@freesewing/snapseries'
 import freesewing from '@freesewing/core'
 const { pctBasedOn } = freesewing
 
 export default {
   name: 'paco',
-  version,
+  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'bottoms',
@@ -67,6 +67,8 @@ export default {
     pocketBagBack: 'back',
     pocketWelt: 'pocketBagBack',
     pocketWeltInterfacing: 'pocketWelt',
+    waistband: 'back',
+    cuff: 'front',
   },
   hide: ['titanBack', 'titanFront'],
   options: {
@@ -105,7 +107,14 @@ export default {
     frontPockets: { bool: true },
     backPockets: { bool: false },
     // Not exposed to the user
-    frontPocketFlapSize: { pct: 3, min: 3, max: 3, snap: smallsteps, ...pctBasedOn('waist') },
+    frontPocketFlapSize: {
+      pct: 3,
+      min: 3,
+      max: 3,
+      snap: smallsteps,
+      ...pctBasedOn('waist'),
+      hidden: true,
+    },
 
     // Advanced
     legBalance: { pct: 57.5, min: 52.5, max: 62.5 },

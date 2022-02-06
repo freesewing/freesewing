@@ -1,6 +1,13 @@
 # Change log for: @freesewing/css-theme
 
 
+## 2.20.0 (2022-01-24)
+
+### Added
+
+ - Added support for `settings.scale`
+ - Included variables used by TailwindCSS themes for compatibility
+
 ## 2.16.0 (2021-05-24)
 
 ### Changed

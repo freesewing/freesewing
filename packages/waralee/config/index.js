@@ -1,10 +1,8 @@
-import { version } from '../package.json'
-
-// ?? 🤔 ?? --> https://en.freesewing.dev/packages/core/config
+import pkg from '../package.json'
 
 export default {
   name: 'waralee',
-  version,
+  version: pkg.version,
   beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',
@@ -13,7 +11,14 @@ export default {
   difficulty: 2,
   optionGroups: {
     fit: ['backRaise', 'waistRaise'],
-    style: ['hemWidth', 'legShortening', 'waistOverlap', 'frontPocket', 'backPocket', 'waistbandWidth'],
+    style: [
+      'hemWidth',
+      'legShortening',
+      'waistOverlap',
+      'frontPocket',
+      'backPocket',
+      'waistbandWidth',
+    ],
     advanced: [
       'crotchFront',
       'crotchBack',

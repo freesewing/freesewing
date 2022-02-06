@@ -1,6 +1,12 @@
 # Change log for: @freesewing/huey
 
 
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Switched to default import for version from package.json
+
 ## 2.18.0 (2021-09-09)
 
 ### Fixed

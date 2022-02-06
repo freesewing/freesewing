@@ -1,6 +1,21 @@
 # Change log for: @freesewing/bee
 
 
+## 2.20.1 (2022-01-27)
+
+### Changed
+
+ - Exposed additional Bella options
+
+## 2.20.0 (2022-01-24)
+
+### Changed
+
+ - Re-structured option groups
+ - Expose all options to the user that should be configurable
+ - Hide/lock options that should be fixed (inherited from Bella)
+ - Switched to default import for version from package.json
+
 ## 2.19.0 (2021-10-17)
 
 ### Added

@@ -19,10 +19,10 @@ button.fab.secondary {
 .style-wrapper.dark,
 .theme-wrapper.dark {
   button.fab.accent {
-    background-color: $fc-accent-light;
-    color: $fc-text-dark;
+    background-color: $fs-accent-light;
+    color: $fs-text-dark;
   }
   button.fab.accent:hover {
-    background-color: darken($fc-accent-light, 10%);
+    background-color: darken($fs-accent-light, 10%);
   }
 }
