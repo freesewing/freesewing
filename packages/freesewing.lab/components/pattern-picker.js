@@ -26,8 +26,10 @@ const PatternPicker = ({ app }) => {
               {app.patterns[section].map(pattern => (
                 <li key={pattern}>
                   <Link href={`/${section}/${pattern}`}>
-                    <button className="btn btn-sm btn-ghost text-base-content">
-                      {pattern}
+                    <button className="btn btn-ghost">
+                      <span className="text-base-content">
+                        {pattern}
+                      </span>
                     </button>
                   </Link>
                 </li>
