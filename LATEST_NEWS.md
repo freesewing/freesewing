@@ -6,9 +6,9 @@ Bee is a bikini top pattern, while Lunetius, Tiberius, and Walburga are historic
 
 Read more in [our blog](/blog/freesewing-2-19/).
 
-##### Next contributor call on 5 February
+##### Next contributor call on 19 February
 
-The next contributor call is on **5 February 2022**, Lexander and Karen will host it.
+The next contributor call is on **19 February 2022**, Lexander and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
