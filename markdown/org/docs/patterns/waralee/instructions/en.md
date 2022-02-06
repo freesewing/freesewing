@@ -15,26 +15,6 @@ The documentation for this step is still being writtern. Sorry for any inconveni
 
 </Fixme>
 
-#### Front Pockets
-
-Okay, the facing is used twice (per pocket). The pocket itself (part 3) is cut-on-fold.
-
-You attach one facing to the pocket after folding the sides under (for finishing), align with the slanted side (or add a small SA, since you will be needing to sew this to the other side of the pocket, and that seam will need to be finished. I use French seams for my pockets, so reducing bulk is good). This will be the 'inside' of the pocket.
-
-Iron-on some interfacing on the wrong side of the 'pants' fabric, about 3cm larger than the pocket opening (I use pinking shears to cut this, so it's less obvious from the right side that the interfacing is there).
-
-Lay the other facing part on the right side of the 'pants', with most of the fabric towards the crotch. You want about 1/4", or 6mm, sticking out on the side-seam side.
-Lay the 'inside' of the pocket (the side without the already attached facing) on the right side of the 'pants'. Add another 2cm or so for the seam and French finish as mentioned above. Stitch the two lines of stitching as you would on any welt pocket.
-
-Cut the pocket as usual, and push everything to the wrong side. Check to make sure you have the inside/outside and facing correctly. (I cheat a lot with this step by attaching that piece of facing after I do this step. If I get the inside/outside wrong, no harm done). Press this well. I press open both seams before folding them back onto themselves. Now take the longer part of the facing you just cut the opening through and fold it like a single welt. Stitch it in place by sewing through the seam closest to the crotch. Fold under the last part of it, and sew that to the pocket. Sew the little triangles on the ends of the pocket to the facing and pocket.
-Now bring the whole thing back to the outside, and sew a seam around it, about 5mm from the edge. Push it back inside, press and stitch 6mm from the edge to complete the French seam.
-
-As a last step, I sew the side closest to the side through all layers. This anchors the pocket to that side well.
-
-Make sure you sew the top of the pocket into the waist hem.
-
-#### Back Pockets
-
 ### Step 2: Hem the sides and bottom
 
 ![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
