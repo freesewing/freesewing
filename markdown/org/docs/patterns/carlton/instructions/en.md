@@ -35,6 +35,13 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 - Remove the seam allowances (if included) of the upper piece.
 - The upper piece is now the **Chest canvas** part.
 
+##### Front Shoulder
+
+- Trace off of **Front** part.
+- Draw a curve from shoulder to bottom of armhole.
+- Cut along this curve and discard the lower part.
+- The upper piece is now the **Front Shoulder** part.
+
 ##### Back shoulder
 
 - Trace off of **Back** part.
