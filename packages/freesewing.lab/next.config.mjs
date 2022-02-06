@@ -14,6 +14,13 @@ const config = {
   },
   pageExtensions: [ 'js' ],
   webpack: (config, options) => {
+    // YAML support
+    config.module.rules.push({
+      test: /\.ya?ml$/,
+      type: 'json',
+      use: 'yaml-loader'
+    })
+
     // Aliases
     config.resolve.alias.shared = path.resolve('../freesewing.shared/')
     config.resolve.alias.site = path.resolve(`.`)
