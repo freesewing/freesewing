@@ -48,7 +48,8 @@ If your main fabric is quite lightweight and flimsy you may need to interface al
    - Cut **2 chestPocketWelt** parts
    - Cut **2 innerPocketWelt** parts
  - **Heavyweight Hair Canvas**
-   - Cut **2 Chest canvas** parts
+   - Cut **2 Front** parts
+   - Cut **2 Front shoulder** parts
    - Cut **2 Back shoulder** parts
 
 <Note>
