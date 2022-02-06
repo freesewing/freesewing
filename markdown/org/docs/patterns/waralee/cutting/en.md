@@ -21,7 +21,7 @@ You will need to print out the pockets and pocket facings in the traditional way
 
 <Note>
 
-You can cut the Pocket and backPocket out of a lining fabric if you prefer but this with only be needed if you deviate from the recommended main fabrics.
+You can cut the Pocket and backPocket parts out of a lining fabric if you prefer but this will only be needed if you deviate from the recommended main fabrics.
 
 </Note>
 
