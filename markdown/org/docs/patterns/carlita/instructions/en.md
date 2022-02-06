@@ -1,9 +1,62 @@
 
-## Maker's notes
+### Step 1: Draft and Cut the missing Lining and Facing Parts
+
+Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
+
+#### Drafting
+##### Front facing and Front lining
+
+- Trace off of **Front** part.
+- Cut along the green line.
+- Add seam allowance (if including) along green line to both pieces
+- The piece with the lapel is now the **Front facing** part.
+- Trim the hem allowance (if included) of the remaining piece to seam allowance length
+- The remaining piece is now the **Front lining** part.
+
+<Note>
+
+The button and pocket markings are not needed for these parts so feel free not to trace them.
+
+</Note>
+
+<Warning>
+  
+Don't forget the seam allowance for these pieces when cutting if you are making these parts nett! 
+
+</Warning>
+
+##### Front and Side Shoulder
+
+- Trace off of **Front and Side** part.
+- Tape together so the notches match and armhole is complete. Do not worry about connecting everything else, you just need the armhole.
+- Draw a curve from shoulder to bottom of armhole.
+- Cut along this curve and discard the lower parts.
+- Separate out the pieces back into their front and side pieces.
+- These are now you **Front and Side shoulder* parts.
+
+##### Back shoulder
+
+- Trace off of **Back** part.
+- Cut along the orange line.
+- Discard lower piece.
+- Remove the seam allowamces (if included) of the upper piece.
+- The upper piece is now the **Back shoulder** part.
+
+#### Cutting
+  
+- Cut all the parts above from their respective fabrics/facings. ([see Carlita Cutting](/docs/patterns/carlita/cutting/))
+
+### Step 2 : Preliminary Instructions
+
+#### Maker's notes
+
+<Warning>
 
 We don't have fully worked out instructions for Carlita yet.
 Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who 
 [made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
+
+</Warning>
 
  - Draft extra pieces for hair canvas on entire center front, second layer of hair canvas on front shoulder (curved piece from shoulder to bottom of armhole). Find and mark roll line on lapel
  - Draft back stay & cut from heavy muslin or hair canvas if you want to be absolutely bulletproof
