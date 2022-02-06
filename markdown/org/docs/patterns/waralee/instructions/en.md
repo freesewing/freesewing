@@ -21,7 +21,7 @@ Okay, the facing is used twice (per pocket). The pocket itself (part 3) is cut-o
 
 You attach one facing to the pocket after folding the sides under (for finishing), align with the slanted side (or add a small SA, since you will be needing to sew this to the other side of the pocket, and that seam will need to be finished. I use French seams for my pockets, so reducing bulk is good). This will be the 'inside' of the pocket.
 
-Iron-on some interfacing on the wrong side of the 'pants' fabric. about 3cm larger than the pocket opening (I use pinking shears to cut this, so it's less obvious from the right side that the interfacing is there).
+Iron-on some interfacing on the wrong side of the 'pants' fabric, about 3cm larger than the pocket opening (I use pinking shears to cut this, so it's less obvious from the right side that the interfacing is there).
 
 Lay the other facing part on the right side of the 'pants', with most of the fabric towards the crotch. You want about 1/4", or 6mm, sticking out on the side-seam side.
 Lay the 'inside' of the pocket (the side without the already attached facing) on the right side of the 'pants'. Add another 2cm or so for the seam and French finish as mentioned above. Stitch the two lines of stitching as you would on any welt pocket.
