@@ -1,6 +1,6 @@
 <Note>
 
-Waralee pants parts consists of two mirrored pieces of fabric.
+Waralee consists of two mirrored pieces of fabric.
 They are basically big rectangles with pieces missing.
 As such, it is easier to print out the part you need to cut out and measure the rest,
 than it is to print out everything and cut the pattern the traditional way.
