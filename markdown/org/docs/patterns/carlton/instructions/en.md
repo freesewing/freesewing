@@ -47,6 +47,10 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
   
 - Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/patterns/carlton/cutting/))
 
-### Step 2: Facing the Front and Back.
+### Step 2: Fix Me
 
-- 
+<Fixme>
+
+Documentation for this pattern still needs to be written. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)) that should help.
+
+</Fixme>
