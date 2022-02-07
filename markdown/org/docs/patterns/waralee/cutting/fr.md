@@ -1,15 +1,40 @@
-Waralee se compose de deux pièces de tissu identiques. Ils sont essentiellement de grands rectangles avec des pièces manquantes. As such, it is easier to print out the piece you need to cut out and measure the rest, than it is to print out everything and cut the pattern the traditional way.
+<Note>
 
-Le modèle est disponible dans les deux sens. Vous pouvez imprimer le tout, coller toutes les pages ensemble et l'utiliser pour couper le tissu. Il est également possible d'imprimer seulement la pièce que vous avez besoin de couper. Cette partie a une marge de couture négative, puisque vous l'utiliserez à l'opposé de ce pour quoi vous utilisez normalement les pièces de patron.
+Waralee consists of two mirrored pieces of fabric.
+They are basically big rectangles with pieces missing.
+As such, it is easier to print out the part you need to cut out and measure the rest,
+than it is to print out everything and cut the pattern the traditional way.
+
+That said, the pattern is available both ways. So you can print out the whole thing, tape all the pages together, and use that to cut out the fabric, if you prefer. But we recommend only printing the part that you need to cut out.
+
+You will need to print out the pockets and pocket facings in the traditional way.
+
+</Note>
+
+### Materials
+ - **Main fabric**
+   - Cut **2 pants** parts.
+   - (Optional) Cut **2 Pocket** parts on the fold.
+   - Cut **4 backPocket** parts
+   - Cut **4 frontFacing** parts
+   - Cut **4 backFacing** parts
+
+<Note>
+
+You can cut the Pocket and backPocket parts out of a lining fabric if you prefer but this will only be needed if you deviate from the recommended main fabrics.
+
+</Note>
 
 <Tip>
 
-La pièce de motif 2 est juste pour quand vous voulez faire le pantalon sans tout imprimer.
+Pattern part 2 is just for when you want to make the pants without printing everything.
 Comme il ne s'agit que de quelques rectangles (avec un côté incliné), vous pouvez simplement utiliser une règle pour couper la partie principale. Ensuite, vous utilisez la partie 2 pour couper la partie crochée. Enregistrer une arborescence.
 
-Si vous optez pour la méthode de découpe, utilisez la vue sans papier pour voir toutes les dimensions du motif.
-Vous devrez couper une bande étroite de ce qui deviendra le devant, et un petit triangle et une bande de ce qui deviendra le dos.
-Et au milieu entre elles se trouve la petite pièce de motif coupé.
-Assurez-vous de bien mesurer cela et vous avez le carré de tissu avant de commencer à couper.
+Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
+
+If you opt for the cut-out method, use the paperless view to see all the dimensions of the pattern.
+You will need to cut a narrow strip out from what will become the front, and a small triangle and strip from what will become the back.
+And in the middle between these will be the little cut-out pattern piece.
+Make sure you measure this correctly, and you have the fabric squared before you start cutting.
 
 </Tip>
