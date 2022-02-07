@@ -9,9 +9,30 @@ In a way, Waralee is just a waist band with a long piece of fabric attached. The
 
 ### Step 1: Sew the pockets
 
+<Note>
+
+##### Pockets are optional
+Traditionally, these types of pants do not have pockets. But I want to put my phone, keys and wallet somewhere. So I've included pockets in the pattern. You can decide for yourself if you would like them on your pants.
+
+The illustrations in the next steps show the Waralee pants without pockets. Only the pocket placements from the pattern are shown, to help you orient yourself.
+
+##### If you do want pockets, make them first
+If you're going to make the pockets, make them before putting one piece of fabric on the other. It's easier to work with the parts still separated.
+
+</Note>
+
+- If desired, sew the pockets.
+
+
+<Note>
+
+I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
+
+</Note>
+
 <Fixme>
 
-The documentation for this step is still being writtern. Sorry for any inconveniences this causes.
+Explain how to sew the pockets more.
 
 </Fixme>
 
@@ -44,9 +65,13 @@ The strings are just long tubes of fabric.
 - Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string. 
 - Cut out four strips of fabric that are that long and 5cm (2”) wide.
 
-<Note>
+<Tip>
 
 For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
+
+</Tip>
+
+<Note>
 
 ##### You can lengthen the front ties
 Optionally, to make the front ties longer, extend them by your quarter waist measurement.
