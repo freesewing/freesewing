@@ -1,13 +1,13 @@
 
-<Tip>
+<Warning>
 
 ##### The key to Waralee is the waist band
 
 In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two strings of fabric that are used to tie the pants in the front and two in the back. These strings are not included in the pattern. Traditionally, they are of similar length. You can make longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
 
-</Tip>
+</Warning>
 
-## Step 1: Sew the pockets
+### Step 1: Sew the pockets
 
 <Note>
 
@@ -21,31 +21,55 @@ If you're going to make the pockets, make them before putting one piece of fabri
 
 </Note>
 
-If desired, sew the pockets.
+- If desired, sew the pockets.
+
+
+<Note>
 
 I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
 
-## Step 2: Hem the sides and bottom
+</Note>
+
+<Fixme>
+
+Explain how to sew the pockets more.
+
+</Fixme>
+
+### Step 2: Hem the sides and bottom
 
 ![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
 
-Hem the sides and bottom.
+- Hem the sides 
+- Hem the bottom.
+
+<Note>
 
 You can use whatever method works best for you. In the version I first made I just serged the sides, folded them back and top stitched them, then did the same for the bottom. I did this to keep the bulk of the fabric to a minimum and allow for a better drape. What you do should depend on the type of fabric you're using.
 
-## Step 3: Sew the two parts together at the crotch
+</Note>
+
+### Step 3: Sew the two pants parts together at the crotch
 
 ![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-crotch-seam-no-pockets.png)
 
-Now you get to sew the two parts together. Lay them with _good sides together_ and sew the seam along the cutout. Finish this seam and press it.
+Now you get to sew the two pants parts together.
 
-## Step 4: Prepare the four strings
+- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.  
+- _Finish_ this seam and press it.
+
+### Step 4: Prepare the four strings
 
 The strings are just long tubes of fabric.
 
-Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. That is the length of each string. Cut out four strips of fabric that are that long and 5cm (2”) wide.
+- Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string. 
+- Cut out four strips of fabric that are that long and 5cm (2”) wide.
+
+<Tip>
 
 For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
+
+</Tip>
 
 <Note>
 
@@ -60,7 +84,9 @@ If your material is delicate or flimsy, you can add some interfacing to this to 
 
 </Note>
 
-Fold them in half along the long side, _good sides together_. Stitch the long side and one of the short sides, and turn the tie right side out.
+- Fold them in half along the long side, _good sides together_. 
+- Stitch the long side and one of the short sides,
+- Turn the tie right side out.
 
 <Tip>
 
@@ -70,25 +96,26 @@ This can be made easier by taking a piece of twine longer than the strips. Lay t
 
 </Tip>
 
-## Step 5: Sew the waist band
+### Step 5: Sew the waist band
 
 ![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-waist-band-no-pockets.png)
 
-Now it is time to sew the waist band. Think about adding interfacing if your fabric is delicate.
+Now it is time to sew the waist band. 
 
-Fold the seam allowance in, and then fold along the waist band line. (red)
+- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
+- Fold the seam allowance in, and then fold along the waist band line. (red)
+- Insert one of the strings you made in the previous step on each side. 
+- Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
 
-Insert one of the strings you made in the previous step on each side. Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
-
-<Tip>
+<Warning>
 
 ##### Secure the strings well
 
 The strings keep your pants up, so having that stitching fail will result in awkward moments.
 
-</Tip>
+</Warning>
 
-## Step 6: Wear your pants
+### Step 6: Wear your pants
 
 Press your pants, and try them on!
 
