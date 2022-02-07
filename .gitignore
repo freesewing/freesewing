@@ -109,3 +109,5 @@ scripts/verdaccio.sh
 
 # Don't ignore the specific Points.dist() docs folder
 !markdown/dev/reference/api/point/dist
+
+.test-failures.log
