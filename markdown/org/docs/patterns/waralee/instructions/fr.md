@@ -1,13 +1,13 @@
 
-<Tip>
+<Warning>
 
-##### La clé de Waralee est la bande de taille
+##### The key to Waralee is the waist band
 
-d'une certaine manière, Waralee est juste une bande de taille avec un long morceau de tissu attaché. La bande de taille doit continuer à partir du tissu en deux cordes de tissu qui sont utilisées pour attacher le pantalon à l'avant et deux dans le dos. Ces chaînes ne sont pas incluses dans le masque. Traditionnellement, elles sont de la même longueur. Vous pouvez en faire des plus longues pour le panneau avant (le côté qui est un peu plus court que l'autre, sur la gauche dans les illustrations ci-dessous), pour vous permettre d'attacher les deux sets à l'avant. Je préfère cela car il est plus facile de lire, et vous n'avez pas la majeure partie du nœud dans le dos.
+In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two strings of fabric that are used to tie the pants in the front and two in the back. These strings are not included in the pattern. Traditionally, they are of similar length. You can make longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
 
-</Tip>
+</Warning>
 
-## Étape 1 : Coudre les poches
+### Step 1: Sew the pockets
 
 <Note>
 
@@ -21,46 +21,72 @@ si vous voulez faire les poches, les faire avant de mettre un morceau de tissu s
 
 </Note>
 
-Si vous le désirez, coudre les poches.
+- If desired, sew the pockets.
 
-J'ai inclus des placements pour les poches avant qui seront cachées par les volets à l'avant. Mais ils seront toujours facilement accessibles pour y insérer votre téléphone ou vos clés. Ce sont des poches simples de welt. Les deux à l'avant sont à l'angle et ceux à l'arrière sont orientés horizontalement. Les gabarits de poche devraient permettre d'avoir suffisamment de tissu pour attacher la poche à la ceinture. Si vous voulez des poches particulièrement profondes, veuillez ajuster en conséquence.
-
-## Étape 2 : tailler les côtés et le bas
-
-![Entailler les côtés et le bas](waralee-hem-sides-and-bottom.png)
-
-Entourer les côtés et le bas.
-
-Vous pouvez utiliser la méthode qui vous convient le mieux. Dans la version que j'ai d'abord fait je viens de serrer les côtés, les plié dos et le dessus les cousu, puis fait la même chose pour le fond. Je l'ai fait pour garder la majeure partie du tissu au minimum et pour permettre un meilleur drapeau. Ce que vous faites devrait dépendre du type de tissu que vous utilisez.
-
-## Étape 3 : Coudre les deux parties ensemble au crochet
-
-![Disposez les deux parties les unes sur les autres avec de bons côtés ensemble. Coudre la couture](waralee-crotch-seam-no-pockets.png)
-
-Maintenant vous devez coudre les deux parties ensemble. Disposez-les avec _bons côtés ensemble_ et cousez la couture le long du cutout. Terminez cette couture et appuyez dessus.
-
-## Étape 4 : Préparez les quatre chaînes
-
-Les cordes ne sont que de longs tubes de tissu.
-
-Prenez un quart de la mesure de votre tour de taille. Ajoutez ce numéro à 40cm (17”). Ajoutez votre marge de couture. C'est la longueur de chaque chaîne. Découpez quatre bandes de tissu de longueur et de largeur de 5cm (2").
-
-Par exemple, si ma tour de taille est de 84,6 cm : 84,6 cm divisée par 4 est de 21,2 cm. 21,2cm plus 40cm est 61,2cm. 61,2cm plus ma couture de 1cm est 62,2cm. Je couperai quatre bandes de tissu qui sont 62,2cm par 5cm.
 
 <Note>
 
-##### Vous pouvez allonger les attaches avant
-Optionnellement, pour allonger les attaches avant, les étendre par la mesure de votre quart de taille.
-
-Lors de la génération de votre patron, une des options de style est appelée « Bande de taille ». Les chaînes, lorsqu'elles sont pliées, doivent avoir la même largeur que celle que vous avez spécifiée pour cette option, soit 2,5cm (1") par défaut.
-
-La longueur supplémentaire de 40cm (17") est de faire le nœud.
-
-Si votre matériau est délicat ou mince, vous pouvez ajouter un peu d'interfaçage pour lui donner de la force.
+I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
 
 </Note>
 
-Repliez-les en deux le long du côté long, _bons côtés ensemble_. Faire piquer le côté long et l'un des côtés courts et tourner la cravate à droite.
+<Fixme>
+
+Explain how to sew the pockets more.
+
+</Fixme>
+
+### Step 2: Hem the sides and bottom
+
+![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
+
+- Hem the sides
+- Hem the bottom.
+
+<Note>
+
+You can use whatever method works best for you. In the version I first made I just serged the sides, folded them back and top stitched them, then did the same for the bottom. I did this to keep the bulk of the fabric to a minimum and allow for a better drape. What you do should depend on the type of fabric you're using.
+
+</Note>
+
+### Step 3: Sew the two pants parts together at the crotch
+
+![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-crotch-seam-no-pockets.png)
+
+Now you get to sew the two pants parts together.
+
+- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
+- _Finish_ this seam and press it.
+
+### Step 4: Prepare the four strings
+
+The strings are just long tubes of fabric.
+
+- Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
+- Cut out four strips of fabric that are that long and 5cm (2”) wide.
+
+<Tip>
+
+For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
+
+</Tip>
+
+<Note>
+
+##### You can lengthen the front ties
+Optionally, to make the front ties longer, extend them by your quarter waist measurement.
+
+When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
+
+The extra 40cm (17") of length is to make the knot.
+
+If your material is delicate or flimsy, you can add some interfacing to this to give it strength.
+
+</Note>
+
+- Fold them in half along the long side, _good sides together_.
+- Stitch the long side and one of the short sides,
+- Turn the tie right side out.
 
 <Tip>
 
@@ -70,31 +96,32 @@ Cela peut être facilité en prenant un morceau de twine plus long que les bande
 
 </Tip>
 
-## Étape 5 : Coudre la bande de taille
+### Step 5: Sew the waist band
 
-![Disposez les deux parties les unes sur les autres avec de bons côtés ensemble. Coudre la couture](waralee-waist-band-no-pockets.png)
+![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-waist-band-no-pockets.png)
 
-Il est maintenant temps de coudre le bandeau de taille. Pensez à ajouter de l'interfaçage si votre tissu est délicat.
+Now it is time to sew the waist band.
 
-Repliez la marge de couture et pliez le long de la bande de la taille. (rouge)
+- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
+- Fold the seam allowance in, and then fold along the waist band line. (red)
+- Insert one of the strings you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
 
-Insérez une des chaînes que vous avez faites à l'étape précédente de chaque côté. Coudre le long de la bande de taille et ajouter quelques coutures supplémentaires pour s'assurer que ces cordes sont bien attachées. (bleu)
+<Warning>
 
-<Tip>
+##### Secure the strings well
 
-##### Sécurisez bien les chaînes de caractères
+The strings keep your pants up, so having that stitching fail will result in awkward moments.
 
-Les cordes maintiennent votre pantalon, donc avoir cette panne de broderie entraînera des instants difficiles.
+</Warning>
 
-</Tip>
+### Step 6: Wear your pants
 
-## Étape 6: Portez votre pantalon
+Press your pants, and try them on!
 
-Appuyez sur votre pantalon, et essayez-les!
+Hold the front side against your belly and wrap both strings around you and tie in the back (or, if you have long strings, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other strings in the front.
 
-Tenez le côté avant contre votre ventre et enveloppez les deux cordes autour de vous et attachez dans le dos (ou, si vous avez de longues cordes, enveloppez-les tout le chemin autour de vous et attachez à l'avant). Puis mettez le dos à travers vos jambes et attachez les autres cordes à l'avant.
+Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
 
-Voici un article qui montre comment attacher des pantalons d'écharpe : [Comment attacher des pantalons](https://www.wikihow.com/Tie-Wrap-Pants)
-
-Si vous êtes coincé ou avez des questions supplémentaires, vous pouvez toujours atteindre [autres FreeSewers](https://discord.freesewing.org/).
+If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
 

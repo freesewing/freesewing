@@ -1,7 +1,4 @@
-Wrappenpants zijn een beetje nonchalant en perfect voor warm weer. Met lijn kun je niet mis gaan, ook katoen is een goede optie.
 
-## Tips en opmerkingen
+### Main Fabric
 
-### Duurzamer
-
-Dit is een type wrapants, die soms de kanten van je benen blootstellen. En als zodanig wordt het vooral gedragen bij warmer weer of binnenshuis. Gebruik niet erg zware materialen om een goed effect van de vloeiende benen te krijgen. Goede soorten stof zijn lijnen, en linnen mengen. Deze hebben meestal een mooie druppel en zijn cool. Zware materialen zoals denim zijn minder nuttig.
+Wrappenpants zijn een beetje nonchalant en perfect voor warm weer. You can't go wrong with **linen** and **cotton** is a good option too. This is a type of wrap pants, which leaves the sides of your legs exposed at times. And as such, it is mostly worn in warmer weather, or inside. To get a good effect of the flowing of the legs, don't use very heavy materials. Good types of fabric are **linen**, and **linen blends**. These mostly have a nice drape and are cool. Heavy materials like denim are less useful so should be avoided.

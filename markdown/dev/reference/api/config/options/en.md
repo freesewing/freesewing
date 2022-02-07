@@ -8,7 +8,7 @@ file give designers flexility to make one pattern with different variations.
 ## The use case for (design) options
 
 One of the things that sets FreeSewing apart is that sewing patterns are not 
-static. Each pattern is generated on the spot to accomodate the input 
+static. Each pattern is generated on the spot to accommodate the input 
 provided by the user. Input that typically includes their measurments.
 
 This *made-to-measure* approach is sort of *our thing* at FreeSewing, 

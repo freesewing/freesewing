@@ -21,7 +21,7 @@
     "reconfigure": "all-contributors generate && node scripts/reconfigure.js",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
     "buildall": "lerna run cibuild_step1 && lerna run cibuild_step2",
-    "testall": "lerna run testci",
+    "testall": "node scripts/testall.js",
     "release": "lerna exec -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
     "ship": "lerna exec --no-bail -- npm publish",

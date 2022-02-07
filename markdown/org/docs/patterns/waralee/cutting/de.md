@@ -1,15 +1,40 @@
-Der Waralee besteht aus zwei identischen Stoffstücken. Sie sind im Grunde große Rechtecke mit fehlenden Stücken. As such, it is easier to print out the piece you need to cut out and measure the rest, than it is to print out everything and cut the pattern the traditional way.
+<Note>
 
-Das Muster ist auf beiden Wegen verfügbar. Sie können die ganze Sache ausdrucken, alle Seiten zusammenfassen und verwenden, um das Gewebe auszuschneiden. Es ist auch möglich, nur den Teil auszudrucken, den Sie ausgeschnitten haben. Dieser Teil hat eine negative Nahtzugabe, da Sie ihn im Gegensatz zu dem verwenden, wofür Sie normalerweise die Musterstücke verwenden.
+Waralee consists of two mirrored pieces of fabric.
+They are basically big rectangles with pieces missing.
+As such, it is easier to print out the part you need to cut out and measure the rest,
+than it is to print out everything and cut the pattern the traditional way.
+
+That said, the pattern is available both ways. So you can print out the whole thing, tape all the pages together, and use that to cut out the fabric, if you prefer. But we recommend only printing the part that you need to cut out.
+
+You will need to print out the pockets and pocket facings in the traditional way.
+
+</Note>
+
+### Materials
+ - **Main fabric**
+   - Cut **2 pants** parts.
+   - (Optional) Cut **2 Pocket** parts on the fold.
+   - Cut **4 backPocket** parts
+   - Cut **4 frontFacing** parts
+   - Cut **4 backFacing** parts
+
+<Note>
+
+You can cut the Pocket and backPocket parts out of a lining fabric if you prefer but this will only be needed if you deviate from the recommended main fabrics.
+
+</Note>
 
 <Tip>
 
-Musterteil 2 ist nur für den Fall, dass Sie die Hosen machen wollen, ohne alles zu drucken.
+Pattern part 2 is just for when you want to make the pants without printing everything.
 Da es sich dabei nur um ein paar Rechtecke handelt (mit einer geschlitzten Seite) kann man den Hauptteil einfach mit einem Lineal ausschneiden. Dann verwenden Sie Teil 2, um das Crotch zu schneiden. Einen Baum speichern.
 
-Wenn Sie sich für die Ausschnittmethode entscheiden, verwenden Sie die papierlose Ansicht um alle Abmessungen des Musters zu sehen.
-Du musst einen schmalen Streifen von der Vorderseite schneiden, und ein kleines Dreieck und Streifen von dem, was wird der Rücken.
-Und in der Mitte zwischen diesen wird das kleine Ausschnittmusterstück sein.
-Vergewissern Sie sich, dass Sie dies richtig messen und dass Sie den Stoff quadriert haben, bevor Sie mit dem Schneiden beginnen.
+Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
+
+If you opt for the cut-out method, use the paperless view to see all the dimensions of the pattern.
+You will need to cut a narrow strip out from what will become the front, and a small triangle and strip from what will become the back.
+And in the middle between these will be the little cut-out pattern piece.
+Make sure you measure this correctly, and you have the fabric squared before you start cutting.
 
 </Tip>
