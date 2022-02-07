@@ -4,6 +4,7 @@ import { withBreasts, withoutBreasts } from 'pkgs/models/src/index.js'
 import nonHuman from './non-human.js'
 import WithBreastsIcon from 'shared/components/icons/with-breasts.js'
 import WithoutBreastsIcon from 'shared/components/icons/without-breasts.js'
+import { useTranslation } from 'next-i18next'
 
 const groups = {
   people: {
@@ -25,6 +26,7 @@ const icons = {
 }
 
 const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
+  const { t } = useTranslation(['app', 'cfp'])
 
   // Method to handle measurement updates
   const updateMeasurements = (value, m=false) => {
@@ -47,18 +49,18 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
         <span className='capitalize mr-4 opacity-70'>
           {pattern.config.name}:
         </span>
-        {app.t('measurements')}
+        {t('measurements')}
       </h1>
       <details open>
-        <summary><h2 className="inline-block">{app.t('cfp.preloadMeasurements')}</h2></summary>
+        <summary><h2 className="inline-block">{t('preloadMeasurements')}</h2></summary>
         <div className="ml-2 pl-4 border-l-2">
           {Object.keys(groups).map(group => (
             <details key={group}>
-              <summary><h3 className="inline-block">{app.t(`app.${group}`)}</h3></summary>
+              <summary><h3 className="inline-block">{t(group)}</h3></summary>
               <div className="ml-2 pl-4 border-l-2">
                 {Object.keys(icons).map(type => (
                   <React.Fragment key={type}>
-                    <h4>{app.t(`app.${type}Breasts`)}</h4>
+                    <h4>{t(`${type}Breasts`)}</h4>
                     <ul className="flex flex-row flex-wrap gap-2">
                       {Object.keys(groups[group][type]).map((m) => (
                         <li key={`${m}-${type}-${group}`} className="">
@@ -67,7 +69,7 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
                             onClick={() => updateMeasurements(groups[group][type][m], false)}
                           >
                             {icons[type]}
-                            {app.t('cfp.size')}&nbsp;
+                            {t('size')}&nbsp;
                             { group === 'people'
                               ? m.slice(-2)
                               : m
@@ -85,11 +87,11 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
       </details>
 
       <details>
-        <summary><h2 className="inline-block">{app.t('cfp.enterMeasurements')}</h2></summary>
+        <summary><h2 className="inline-block">{t('enterMeasurements')}</h2></summary>
         <div className="ml-2 pl-4 border-l-2">
           {pattern.config.measurements && (
             <>
-              <h3>{app.t('requiredMeasurements')}</h3>
+              <h3>{t('requiredMeasurements')}</h3>
               {pattern.config.measurements.map(m => (
                 <MeasurementInput key={m} m={m} {...inputProps} />
               ))}
@@ -97,7 +99,7 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
           )}
           {pattern.config.optionalMeasurements && (
             <>
-              <h3>{app.t('optionalMeasurements')}</h3>
+              <h3>{t('optionalMeasurements')}</h3>
               {pattern.config.optionalMeasurements.map(m => (
                 <MeasurementInput key={m} m={m} {...inputProps} />
               ))}

@@ -34,11 +34,10 @@ const PatternListPageTemplate = ({ sections=false }) => {
         <meta property="og:site_name" content="lab.freesewing.dev" key='site' />
       </Head>
       <div className="max-w-screen-md">
-        <h1>{t('docs')}</h1>
         {Object.keys(app.navigation).map(section => {
           if (sections.indexOf(section) !== -1) return (
             <div key={section}>
-              <h2>{app.navigation[section].__title}</h2>
+              <h2>{t(app.navigation[section].__title)}</h2>
               <ul className="flex flex-row flex-wrap gap-2">
                 {links(section, app.patterns[section])}
               </ul>

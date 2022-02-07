@@ -1,27 +1,29 @@
 import MenuIcon from 'shared/components/icons/menu.js'
 import OptionsIcon from 'shared/components/icons/options.js'
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
+import { useTranslation } from 'next-i18next'
 
 const Modes = props => {
+  const { t } = useTranslation(['app'])
   const entries = [
     {
       name: 'measurements',
-      title: props.app.t('app.measurements'),
+      title: t('measurements'),
       onClick: () => props.setMode('measurements')
     },
     {
       name: 'draft',
-      title: props.app.t('app.draftPattern', { pattern: props.pattern.config.name }),
+      title: t('draftPattern', { pattern: props.pattern.config.name }),
       onClick: () => props.setMode('draft')
     },
     {
       name: 'test',
-      title: props.app.t('app.testPattern', { pattern: props.pattern.config.name }),
+      title: t('testPattern', { pattern: props.pattern.config.name }),
       onClick: () => props.setMode('test')
     },
     {
       name: 'export',
-      title: props.app.t('app.export'),
+      title: t('export'),
       onClick: () => props.setMode('export')
     },
   ]
@@ -38,7 +40,7 @@ const Modes = props => {
       `}>
         <span className="text-secondary-focus mr-4"><MenuIcon /></span>
         <span className={`grow ${linkClasses} hover:cursor-resize`}>
-          {props.app.t('app.modes')}
+          {t('modes')}
         </span>
         <Chevron />
       </summary>

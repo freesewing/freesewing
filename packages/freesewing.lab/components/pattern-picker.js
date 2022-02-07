@@ -1,9 +1,10 @@
 import React from 'react'
 import DesignIcon from 'shared/components/icons/design.js'
 import Link from 'next/link'
+import { useTranslation } from 'next-i18next'
 
 const PatternPicker = ({ app }) => {
-  const { t } = app
+  const { t } = useTranslation()
   return (
       <div className="dropdown">
         <div tabIndex="0" className={`

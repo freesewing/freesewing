@@ -7,7 +7,7 @@ import Link from 'next/link'
 const LocalePicker = ({ app }) => {
   const { t } = useTranslation(['locales'])
   const router = useRouter()
-  console.log(router)
+
   return (
     <div className="dropdown">
       <div tabIndex="0" className={`

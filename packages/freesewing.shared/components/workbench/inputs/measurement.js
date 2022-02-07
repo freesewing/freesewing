@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'next-i18next'
 
 /*
  * This is a single input for a measurements
@@ -9,8 +10,9 @@ import React, { useState, useEffect } from 'react'
  * measurement and I always have some typo in it because dyslexia.
  */
 const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
+  const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
-  const title = app.t(`measurements.${m}`)
+  const title = t(m)
   const isValid = input => {
     if (input === '') return ''
     return !isNaN(input)
@@ -45,10 +47,10 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
         <a
           href={`${prefix}/docs/measurements/${m.toLowerCase()}`}
           className="label-text-alt text-secondary hover:text-secondary-focus hover:underline"
-          title={`${app.t('docs')}: ${app.t(`measurements.${m}`)}`}
+          title={`${t('docs')}: ${t(m)}`}
           tabIndex="-1"
         >
-          {app.t('docs')}
+          {t('docs')}
         </a>
       </label>
       <label className="input-group input-group-lg">
