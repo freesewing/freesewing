@@ -636,7 +636,8 @@
       "profile": "http://metafly.info/",
       "contributions": [
         "translation",
-        "doc"
+        "doc",
+        "code"
       ]
     },
     {
