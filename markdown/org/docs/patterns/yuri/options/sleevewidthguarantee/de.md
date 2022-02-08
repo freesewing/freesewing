@@ -9,4 +9,4 @@ Um zu vermeiden, dass der Ärmel zu eng wird, passen wir nur einen Teil der Ärm
 
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_sleevewidthguarantee_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](yuri_sleevewidthguarantee_sample.svg "Effekt dieser Option auf das Schnittmuster")
