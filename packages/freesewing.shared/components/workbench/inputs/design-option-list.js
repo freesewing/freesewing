@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import ClearIcon from 'shared/components/icons/clear.js'
+import { useTranslation } from 'next-i18next'
 
 const DesignOptionList = props => {
+  const { t } = useTranslation(['app'])
   const { dflt, list } = props.pattern.config.options[props.option]
   const val = (typeof props.gist?.options?.[props.option] === 'undefined')
     ? dflt
@@ -45,12 +47,12 @@ const DesignOptionList = props => {
               `}>
                 <>&deg;</>
               </span>
-              {props.app.t(`options.${props.pattern.config.name}.${props.option}.options.${choice}`)}
+              {t(`options.${props.pattern.config.name}.${props.option}.options.${choice}`)}
             </button>
           ))}
         </div>
         <button
-          title={props.app.t('app.reset')}
+          title={t('reset')}
           className=""
           disabled={val === dflt}
           onClick={reset}

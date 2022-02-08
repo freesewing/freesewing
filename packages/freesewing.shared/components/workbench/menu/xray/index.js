@@ -4,8 +4,10 @@ import Reset from './reset.js'
 import Disable from './disable.js'
 import List from './list.js'
 import { Ul, Details, TopSummary } from 'shared/components/workbench/menu'
+import { useTranslation } from 'next-i18next'
 
 const Xray = props => {
+  const { t } = useTranslation(['app', 'settings'])
 
   return (
     <Details open>
@@ -14,7 +16,7 @@ const Xray = props => {
           ? (
             <>
               <span className={`grow ${linkClasses} hover:cursor-resize font-bold uppercase`}>
-                {props.app.t('settings.xray.title')}
+                {t('settings:xray.title')}
               </span>
               <Chevron />
             </>
@@ -24,10 +26,10 @@ const Xray = props => {
               className={`grow ${linkClasses} hover:cursor-resize uppercase font-bold text-left`}
               onClick={() => props.updateGist(['xray', 'enabled'], true)}
             >
-              {props.app.t('settings.xray.title')}
+              {t('settings:xray.title')}
             </button>
             <span className="text-normal text-secondary">
-              {props.app.t('cfp.thingIsDisabled', { thing: props.app.t('settings.xray.title') })}
+              {t('cfp:thingIsDisabled', { thing: t('settings:xray.title') })}
             </span>
             </>
           )

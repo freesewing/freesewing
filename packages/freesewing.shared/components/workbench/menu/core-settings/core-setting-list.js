@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { Deg } from 'shared/components/workbench/menu/index.js'
+import { useTranslation } from 'next-i18next'
 
 const CoreSettingList = props => {
+  const { t } = useTranslation(['settings'])
   const { dflt, list } = props
   const val = props.gist?.[props.setting]
 
@@ -23,7 +25,7 @@ const CoreSettingList = props => {
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <p className="m-0 p-0 px-2 mb-2 text-neutral-content opacity-60 italic">
-        {props.app.t(`settings.${props.setting}.description`)}
+        {t(`settings:${props.setting}.description`)}
       </p>
       <div className="flex flex-row">
         <div className="grow">

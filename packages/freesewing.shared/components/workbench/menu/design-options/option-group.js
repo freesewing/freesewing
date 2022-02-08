@@ -2,8 +2,10 @@ import { Chevron } from 'shared/components/navigation/primary.js'
 import Option from './option'
 import OptionSubGroup from './option-sub-group'
 import { Li, Ul, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu'
+import { useTranslation } from 'next-i18next'
 
 const OptionGroup = props => {
+  const { t } = useTranslation(['app'])
   const config = props.config || props.pattern.config.optionGroups[props.group]
   return (
     <Li>
@@ -12,7 +14,7 @@ const OptionGroup = props => {
           <SumDiv>
             <Deg />
             <span className="font-bold">
-              { props.app.t(`optiongroups.${props.group}`) }
+              { t(`optiongroups.${props.group}`) }
             </span>
           </SumDiv>
           <Chevron />

@@ -87,7 +87,7 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
       </details>
 
       <details>
-        <summary><h2 className="inline-block">{t('enterMeasurements')}</h2></summary>
+        <summary><h2 className="inline-block">{t('cfp:enterMeasurements')}</h2></summary>
         <div className="ml-2 pl-4 border-l-2">
           {pattern.config.measurements && (
             <>

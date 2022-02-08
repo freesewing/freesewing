@@ -4,6 +4,7 @@ import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListOption from 'shared/components/workbench/inputs/design-option-list'
 import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
 import { Li, Ul, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
+import { useTranslation } from 'next-i18next'
 
 const values = {
   pct: props => {
@@ -34,8 +35,8 @@ const values = {
           : 'text-accent'
       }>
         {props.gist?.options?.[props.option]
-          ? props.app.t('app.yes')
-          : props.app.t('app.no')
+          ? props.t('app.yes')
+          : props.t('app.no')
         }
       </span>
     )
@@ -52,8 +53,8 @@ const values = {
     const current = props.gist?.options?.[props.option]
     const prefix = `options.${props.pattern.config.name}.${props.option}.options.`
     return (dflt==current || typeof current === 'undefined')
-      ? <span className="text-secondary">{props.app.t(prefix+dflt)}</span>
-      : <span className="text-accent">{props.app.t(prefix+current)}</span>
+      ? <span className="text-secondary">{props.t(prefix+dflt)}</span>
+      : <span className="text-accent">{props.t(prefix+current)}</span>
   },
   deg: props => {
     const dflt = props.pattern.config.options[props.option].deg
@@ -83,6 +84,7 @@ const inputs = {
 
 
 const Option = props => {
+  const { t } = useTranslation(['app'])
   const type = optionType(props.pattern.config.options[props.option])
   const Input = inputs[type]
   const Value = values[type]
@@ -102,10 +104,10 @@ const Option = props => {
           <SumDiv>
             <Deg />
             <span>
-              { props.app.t(`options.${props.pattern.config.name}.${props.option}.title`) }
+              { t(`options.${props.pattern.config.name}.${props.option}.title`) }
             </span>
           </SumDiv>
-          <Value type={type} {...props} />
+          <Value type={type} {...props} t={t} />
         </SumButton>
       </Li>
     ) : (
@@ -115,10 +117,10 @@ const Option = props => {
             <SumDiv>
               <Deg />
               <span>
-                { props.app.t(`options.${props.pattern.config.name}.${props.option}.title`) }
+                { t(`options.${props.pattern.config.name}.${props.option}.title`) }
               </span>
             </SumDiv>
-            <Value type={type} {...props} />
+            <Value type={type} {...props} t={t} />
             <Chevron w={6} m={3}/>
           </Summary>
           <Input {...props} />

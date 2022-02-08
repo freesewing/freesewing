@@ -2,6 +2,7 @@ import SettingsIcon from 'shared/components/icons/settings.js'
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
 import Setting from './setting.js'
 import { Ul, Details, TopSummary, TopSumTitle } from '../index.js'
+import { useTranslation } from 'next-i18next'
 
 const settings = {
   paperless: {
@@ -47,18 +48,22 @@ const settings = {
   },
 }
 
-const CoreSettings = props => (
-  <Details open>
-    <TopSummary icon={<SettingsIcon />}>
-      <TopSumTitle>{props.app.t('app.settings')}</TopSumTitle>
-      <Chevron />
-    </TopSummary>
-    <Ul>
-      {Object.keys(settings).map(setting => (
-        <Setting key={setting} setting={setting} config={settings[setting]} {...props} />
-      ))}
-    </Ul>
-  </Details>
-)
+const CoreSettings = props => {
+  const { t } = useTranslation(['app'])
+
+  return (
+    <Details open>
+      <TopSummary icon={<SettingsIcon />}>
+        <TopSumTitle>{t('settings')}</TopSumTitle>
+        <Chevron />
+      </TopSummary>
+      <Ul>
+        {Object.keys(settings).map(setting => (
+          <Setting key={setting} setting={setting} config={settings[setting]} {...props} />
+        ))}
+      </Ul>
+    </Details>
+  )
+}
 
 export default CoreSettings

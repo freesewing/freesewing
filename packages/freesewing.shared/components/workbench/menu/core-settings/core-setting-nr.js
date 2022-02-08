@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import ClearIcon from 'shared/components/icons/clear.js'
 import EditIcon from 'shared/components/icons/edit.js'
+import { useTranslation } from 'next-i18next'
 
 const CoreSettingNr = props => {
+  const { t } = useTranslation(['app', 'settings'])
   const { dflt, min, max } = props
   const val = props.gist?.[props.setting]
 
@@ -26,7 +28,7 @@ const CoreSettingNr = props => {
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <p className="m-0 p-0 px-2 mb-2 text-neutral-content opacity-60 italic">
-        {props.app.t(`settings.${props.setting}.description`)}
+        {t(`settings:${props.setting}.description`)}
       </p>
       <div className="flex flex-row justify-between">
         <span className="opacity-50">
@@ -54,7 +56,7 @@ const CoreSettingNr = props => {
       <div className="flex flex-row justify-between">
         <span />
         <button
-          title={props.app.t('app.reset')}
+          title={t('reset')}
           className="btn btn-ghost btn-xs text-accent"
           disabled={val === dflt}
           onClick={reset}

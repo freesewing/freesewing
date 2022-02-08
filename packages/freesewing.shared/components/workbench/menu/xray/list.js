@@ -5,6 +5,7 @@ import SearchIcon from 'shared/components/icons/search.js'
 import { Ul, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu'
 import Path from './path.js'
 import Point from './point.js'
+import { useTranslation } from 'next-i18next'
 
 const types = {
   paths: Path,
@@ -12,8 +13,9 @@ const types = {
 }
 
 const XrayList = props => {
+  const { t } = useTranslation(['app', 'parts'])
 
-  let title = props.app.t(`parts.${props.partName}`)
+  let title = t(`parts.${props.partName}`)
   if (title !== props.partName || true) title + ` (${props.partName})`
 
   const part = props.gist.xray.parts[props.partName]
@@ -36,7 +38,7 @@ const XrayList = props => {
           </SumDiv>
           <button
             className={`px-3 hover:text-secondary-focus ${only ? 'text-accent' : 'text-secondary'}`}
-            title={props.app.t('app.filter')}
+            title={t('filter')}
             onClick={only
               ? () => props.unsetGist(['only'])
               : () => props.updateGist(['only'], [props.partName])
@@ -111,14 +113,14 @@ const XrayList = props => {
                             pathName={id}
                             partName={props.partName}
                             draft={props.draft}
-                            t={props.app.t}
+                            t={t}
                             units={props.gist.units}
                           />}
                           {type === 'points' && <Point
                             pointName={id}
                             partName={props.partName}
                             draft={props.draft}
-                            t={props.app.t}
+                            t={t}
                           />}
                         </Details>
                       </Li>
