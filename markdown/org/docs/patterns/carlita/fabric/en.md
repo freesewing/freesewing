@@ -20,7 +20,7 @@ As per usual with Linings it is really down to your prefered lining materials bu
 
 ### Facings
 
-**Hair canvases**, you may be tempted to use modern interfacing but hair canvases will provide the best results. You will want a combination of different weight hair canvases such as lightweight to medium weight **Tailors Canvas** and heavyweight **Horsehair Canvas**.
+We recommend **Hair canvases**. You may be tempted to use modern interfacing but hair canvases will provide the best results. You will want a combination of different weight hair canvases such as lightweight to medium weight **Tailors Canvas** and heavyweight **Horsehair Canvas**.
 A common misconception is that you have to use horsehair canvas for all of it, but this is not the case and really is only needed for areas that need the most structure such as the front shoulder but are often to stiff for other parts. Tailors canvas is generally used for the majority of facing a coat.
 
 <Tip>
