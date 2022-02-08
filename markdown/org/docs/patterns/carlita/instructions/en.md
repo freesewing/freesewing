@@ -57,7 +57,9 @@ Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 [made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
 </Warning>
-
+ 
+ - Find and mark roll line on lapel,
+ - Draft back stay & cut from heavy muslin or hair canvas if you want to be absolutely bulletproof
  - Iron interfacing onto back armholes, entire side front (except for seam & hem allowances), bias strips onto back hem
  - Stitch front shoulder hair canvas pieces to larger hair canvas piece (quilt together with parallel rows of stitching)
  - Attach front hair canvas thing to center front with permanent basting stitch 
