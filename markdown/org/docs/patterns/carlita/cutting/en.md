@@ -40,6 +40,7 @@ If your main fabric is quite lightweight and flimsy you may need to interface al
    - Cut **2 pocketLining** parts
    - Cut **2 chestPocketBag** parts
  - **Light to Mediumweight Hair Canvas**
+   - Cut **2 Front** parts
    - Cut **2 Side** parts
    - Cut **1 Collar stand** parts
    - Cut **2 collar** parts on the bias and seam together
@@ -47,7 +48,6 @@ If your main fabric is quite lightweight and flimsy you may need to interface al
    - Cut **2 pocketFlap** parts
    - Cut **2 chestPocketWelt** parts
    - Cut **2 innerPocketWelt** parts
-   - Cut **2 Front** parts
  - **Heavyweight Hair Canvas**
    - Cut **2 Front shoulder** parts
    - Cut **2 Side shoulder** parts
