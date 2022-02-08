@@ -76,7 +76,7 @@
     "nodemailer": "6.7.2",
     "passport": "0.5.2",
     "passport-jwt": "4.0.0",
-    "query-string": "7.1.0",
+    "query-string": "7.1.1",
     "remark": "13",
     "remark-frontmatter": "3",
     "remark-parse": "^9.0.0",
