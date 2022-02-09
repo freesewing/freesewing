@@ -1,7 +1,8 @@
 
-Contrôle la fusée éclairante du col.
+Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
 
-<Fixme> Expliquez ce que cela signifie exactement. </Fixme>
+- Increase this option to increase the fall length.
+- Decrease this option to decrease the fall length.
 
 
 ## Effet de cette option sur le motif
