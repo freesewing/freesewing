@@ -1,7 +1,8 @@
 
-Bepaalt de vlam van de kraag.
+Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
 
-<Fixme> Leg uit wat dit precies betekent. </Fixme>
+- Increase this option to increase the fall length.
+- Decrease this option to decrease the fall length.
 
 
 ## Effect van deze optie op het patroon
