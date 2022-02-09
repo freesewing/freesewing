@@ -1,39 +1,94 @@
 
-## Notes du créateur
+### Step 1: Draft and Cut the missing Lining and Facing Parts
 
-Nous n'avons pas encore complètement élaboré les instructions pour Carlita. Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who [made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
+Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
 
- - Dessiner des pièces supplémentaires pour toiles de cheveux sur tout le devant central, deuxième couche de toile de poil sur l'épaule avant (pièce incurvée, de l'épaule au fond de l'accouplement). Trouver et marquer la ligne de rouleau sur le tour
- - Le brouillon du dos reste & coupé à partir de la toile lourde de mousseline ou de cheveux si vous voulez être absolument à l'épreuve des balles
- - Interfacant le fer sur les bras arrière, front latéral entier (sauf la couture & les limites d'ours), les bandes de biais sur l'ourlet arrière
- - Ajuster les pièces en toile de poil à la toile de poil plus grande (courtepointe avec des rangées parallèles de broderie)
- - Fixer la toile de poil avant au centre de l'avant avec un point de basage permanent
- - Faites sortir ce thimble et coupez les genoux
- - Ruban la ligne de rouleau
- - Ruban le bord avant et le bord du tour
- - Prenez une photo et postez-la sur les réseaux sociaux parce que ça a l'air tellement cool
- - Fermer les fléchettes arrière
- - Coudre la couture du dos en deux parties. Collez la pièce qui formera le pli fermé, plie et presse.
- - Déposer le dos sur les épaules, les armures et l'encolure
- - Stabiliser la couture de taille avec la bande de bord de la mousse (facultatif)
- - Stabiliser le dessus de la queue de manteau avec la bande de toile de poil (facultatif)
- - Plis pliés, épingles et bastes sur la queue du manteau
- - Coudre la taille et presser vers le haut. Attrape la couture de la taille à la bande de la mousse (facultatif)
- - Coudre la ceinture et les lames de poche avec les côtés droit ensemble, tourner et presser.
- - Coudre le bord supérieur de la poche de patch à la doublure, laissant un trou pour tourner plus tard. Coudre le côté et le bord inférieur de la poche de patch à la doublure (rendre la doublure de 1 mm plus petite pour s'assurer qu'elle ne s'affiche pas à l'extérieur). Tourner et presser.
- - Plier les pièces avant avec les côtés droit ensemble, tourner et presser.
- - Placez le coussin avant sur la partie centrale avant entre les entailles. Mettre le sac de poche sur le dessus. Faites correspondre l'emplacement du sac avant et du sac de poche sur le côté de la pièce avant, épingler la seconde partie du sac de poche en place. Coudre et presser. Épingler et coudre la princesse jusqu'à ce que le point de poche, arrêter et continuer après la poche. Couper les bords de la face avant vers le bas.
- - Placez la poche de patch et le rabat de poche sur les emplacements indiqués et fixez.
- - Coudre la couture de la manche avant. Attachez le manchon vers le haut jusqu'à ce que la ligne de pliage de poignée. Couture à la couture du dos, faites attention à ne pas accrocher le visage. Coudre le reste de la couture visée. Tournez, pressez, pliez le dos de manche et badigeonnez pour rester en place.
- - Couper la partie supérieure de la doublure à la face avant. Couper la doublure latérale avant vers la face avant. (Lorsque vous utilisez une pièce face au dos supplémentaire, laissez les cinq cm du dessus de la couture et la couture face non cousue)
- - Fabriquer un rabat, un rabat et un appui. Marquer l'emplacement de la soudure, les embouteillages, le rabat et le sac de poche en place. Cousez. Taillade entre les coulisses. Tourner et presser. Séparez ces petites minces triangles aux douilles et fermez votre sac de poche. Omg.
- - Optionnel: taillé sous le collier sur le biais pour le rendre plus agréable. Support du collier de l'interface Coudre le collier sur le haut et sous le col. Couper le morceau de toile de cheveux sous le col. Poignée sous le col. Coudre les morceaux de col autour du bord avec les côtés droit ensemble, en laissant le bord du bas ouvert. Tourner et presser. Repliez le collier en bonne forme autour du jambon du tailleur ou enroulé dans la serviette et cumulez la merde à la vapeur.
- - Doublure : option : coupez le cou en face du tissu de coquille pour avoir quelque chose de bien pour coudre une étiquette. Ébaucher un morceau de doublure supérieure séparé. Coudre les coutures du dos, coudre les fléchettes sous forme de coutures. Coudre la doublure de queue vers le haut du dos. Coudre l'épaule et les coutures latérales sur la doublure. Coutures d'épaule cousues sur la face avant et au dos. Couper la doublure pour faire face, relier les lignes de couture précédentes. Insérez des manches de doublure pour préparer mentalement la vraie affaire.
- - Prenez quelques bandoulières ou fabriquez-les vous-même à partir de toiles de cheveux et de pâtes de coton. Remettre dans les manches, pleurer, détacher, mettre à nouveau dans les manches. Ajouter une bande de pâte de coton à la tête de manche pour une oomphe maximale. Attache les bandoulières.
- - Épingler le col à l'encolure, assortir le centre du dos au col central. Pensez aux différentes possibilités de couture ! Baste en place. Épingler le combo face/doublure vers le cou et le bord avant, le col de sandwich entre les deux. Séparez soigneusement le manteau entier, y compris le bord inférieur de la face (laissez le reste de l'ourlet seul). Vérifiez s'il y a des rondelles ou des plis, coupez les coutures et retournez tout le côté droit et pressez.
- - Transformez l'ourlet, appuyez et badigeonnez en place. Coudre l'ourlet avec un point invisible, puis coudre à la main ourle à l'enrober.
- - Marquer les trous de boutons sur les pièces avant et ceinture. Faire des trous de boutons et attacher des boutons.
- - Enlevez tous les tressages encore présents, mettez votre manteau, faites-vous une pâte sur le dos et dormez ensuite pendant trois semaines.
+#### Drafting
+##### Front facing and Front lining
+
+- Trace off of **Front** part.
+- Cut along the green line.
+- Add seam allowance (if including) along green line to both pieces
+- The piece with the lapel is now the **Front facing** part.
+- Trim the hem allowance (if included) of the remaining piece to seam allowance length
+- The remaining piece is now the **Front lining** part.
+
+<Note>
+
+The button and pocket markings are not needed for these parts so feel free not to trace them.
+
+</Note>
+
+<Warning>
+  
+Don't forget the seam allowance for these pieces when cutting if you are making these parts nett! 
+
+</Warning>
+
+##### Front and Side Shoulder
+
+- Trace off of **Front and Side** parts.
+- Tape together so the notches match and armhole is complete. Do not worry about connecting everything else, you just need the armhole.
+- Draw a curve from shoulder to bottom of armhole.
+- Cut along this curve and discard the lower parts.
+- Separate out the pieces back into their front and side pieces.
+- These are now you **Front and Side shoulder* parts.
+
+##### Back shoulder
+
+- Trace off of **Back** part.
+- Cut along the orange line.
+- Discard lower piece.
+- Remove the seam allowamces (if included) of the upper piece.
+- The upper piece is now the **Back shoulder** part.
+
+#### Cutting
+
+- Cut all the parts above from their respective fabrics/facings. ([see Carlita Cutting](/docs/patterns/carlita/cutting/))
+
+### Step 2 : Preliminary Instructions
+
+#### Maker's notes
+
+<Warning>
+
+We don't have fully worked out instructions for Carlita yet.
+Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who 
+[made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
+
+</Warning>
+
+ - Find and mark roll line on lapel,
+ - Draft back stay & cut from heavy muslin or hair canvas if you want to be absolutely bulletproof
+ - Iron interfacing onto back armholes, entire side front (except for seam & hem allowances), bias strips onto back hem
+ - Stitch front shoulder hair canvas pieces to larger hair canvas piece (quilt together with parallel rows of stitching)
+ - Attach front hair canvas thing to center front with permanent basting stitch
+ - Get that thimble out and pad stitch the lapels
+ - Tape the roll line
+ - Tape the front and lapel edge
+ - Take a picture and post it on social media because this looks so cool
+ - Close back darts
+ - Sew back seam in two parts. Baste the part that will form the pleat closed, fold down and press.
+ - Baste the back stay to the shoulders, armholes and neckline
+ - Stabilize waist seam with selvedge strip of muslin (optional)
+ - Stabilize top of coat tail with strip of hair canvas (optional)
+ - Fold, pin and baste pleats on coat tail piece
+ - Sew waist seam and press up. Catch stitch waist seam to strip of muslin (optional)
+ - Sew belt and pocket flap pieces with right sides together, turn and press.
+ - Sew patch pocket top edge to lining, leaving a hole for turning later. Sew side and bottom edge of patch pocket to lining (make lining 1 mm smaller all around to make sure it doesn’t show on the outside). Turn and press.
+ - Fold front welt pieces with right sides together, turn and press.
+ - Place front welt on center front piece between notches. Put pocket bag on top. Match location of front welt and pocket bag on side front piece, pin second part of pocket bag in place. Stitch and press. Pin and sew princess seam up until pocket stitching, stop and continue after the pocket. Stitch the edges of the front welt down.
+ - Place patch pocket and pocket flap on marked locations and attach.
+ - Sew front sleeve seam. Attach cuff facing up until the cuff fold line. Stitch back sleeve seam, careful not to catch the facing. Sew the rest of the facing seam. Turn, press, fold cuff back and baste to keep in place.
+ - Stitch upper lining piece to front facing. Stitch side front lining to front facing. (When using an extra back facing piece, leave top five cm of lining/facing seam unsewn)
+ - Make inner pocket flap, fold and press welts. Mark welt location, pin welts, flap and pocket bag in place. Stitch. Slash between welts. Turn and press. Stitch those little triangle thingies to the welts and close pocket bag. Omg.
+ - Optional: cut under collar on the bias to make it sit nicer. Interface collar stand. Sew collar stands to upper and under collar. Cut piece of hair canvas for under collar. Pad stitch under collar. Sew collar pieces around edge with right sides together, leaving bottom edge open. Turn and press. Fold collar into right shape around tailor’s ham or rolled up towel and steam the shit out of it.
+ - Lining: optional: cut back neck facing from shell fabric to have something nice to sew a label on. Draft separate upper back lining piece. Stitch back seams, stitch darts as tucks. Stitch tail lining to upper back. Stitch shoulder and side seams on lining. Stitch shoulder seams on front and back facing. Stitch lining to facing, connecting the earlier stitching lines. Insert lining sleeves to mentally prepare for the real deal.
+ - Get some shoulder pads or craft them yourself from hair canvas and cotton batting. Set in sleeves, cry, unpick, set in sleeves again. Add a strip of cotton batting to the sleeve head for maximum oomph. Attach shoulder pads.
+ - Pin collar to neckline, matching center back to center collar. Mind the varying seam allowances! Baste in place. Pin facing/lining combo to neckline and front edge, sandwiching collar in between. Stitch carefully around the entire coat, including the bottom edge of the facing (leave the rest of the hem alone). Check for puckers or pleats, trim seams, turn the whole thing right side out and press.
+ - Turn hem up, press and baste into place. Sew hem with an invisible stitch, then hand sew lining hem to coat.
+ - Mark buttonholes on coat front and belt pieces. Make buttonholes and attach buttons.
+ - Remove all basting still present, put on your coat, give yourself a pat on the back and then sleep for three weeks.
 
 
 
