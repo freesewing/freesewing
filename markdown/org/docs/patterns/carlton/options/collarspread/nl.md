@@ -1,7 +1,8 @@
 
-Bepaalt de spreiding van de kraag.
+Controls the distance between the points of the collar.
 
-> FIXME: Leg uit wat dit precies betekent.
+- Increase this option to spread the collar out and towards the shoulder.
+- Decrease this option to bring the collar in towards the body.
 
 
 ## Effect van deze optie op het patroon
