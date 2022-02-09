@@ -1,7 +1,8 @@
 
-Controls the spread of the collar.
+Controls the distance between the points of the collar.
 
-> FIXME: Explain what this means exactly.
+- Increase this option to spread the collar out and towards the shoulder.
+- Decrease this option to bring the collar in towards the body.
 
 
 ## Effect of this option on the pattern
