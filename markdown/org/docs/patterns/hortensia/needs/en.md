@@ -6,7 +6,7 @@ To make Hortensia, you will need the following:
 - About 0.5 - 2 metres (0.6 - 2.2 yards) of lining fabric ([see Hortensia Fabric options](/docs/patterns/hortensia/fabric/))
 - A zipper shorter in length than the zipper panel and matching the [coil width](/docs/patterns/hortensia/options/zippersize/) selected
 - (Optional) About 1 - 2 metres (1.1 - 2.2 yards) of bias biniding if you want to bind the raw edges instead of lining
-- (Optional) Bag strap webbing the length of the strap part with seam allowance and similar width if you don't wish to make your own straps
+- (Optional) Bag strap webbing the double the length of the strap part with seam allowance and similar width if you don't wish to make your own straps
 - (Optional) Interfacing if needed to strengthen fabric and/or for the strap
 
 <Note>
