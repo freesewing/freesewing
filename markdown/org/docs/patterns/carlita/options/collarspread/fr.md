@@ -1,7 +1,8 @@
 
-Contrôle la propagation du col.
+Controls the distance between the points of the collar.
 
-<Fixme> Expliquez ce que cela signifie exactement. </Fixme>
+- Increase this option to spread the collar out and towards the shoulder.
+- Decrease this option to bring the collar in towards the body.
 
 
 ## Effet de cette option sur le motif

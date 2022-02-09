@@ -1,7 +1,8 @@
 
-Controla la dispersión del cuello.
+Controls the distance between the points of the collar.
 
-<Fixme> Explicar qué significa exactamente. </Fixme>
+- Increase this option to spread the collar out and towards the shoulder.
+- Decrease this option to bring the collar in towards the body.
 
 
 ## Efecto de esta opción en el patrón

@@ -1,7 +1,8 @@
 
-Steuert das Erscheinungsbild des Kragens.
+Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
 
-<Fixme> Erklären Sie, was das genau bedeutet. </Fixme>
+- Increase this option to increase the fall length.
+- Decrease this option to decrease the fall length.
 
 
 ## Effekt dieser Option auf das Schnittmuster

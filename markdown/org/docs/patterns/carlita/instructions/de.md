@@ -1,39 +1,94 @@
 
-## Notizen des Herstellers
+### Step 1: Draft and Cut the missing Lining and Facing Parts
 
-Wir haben die Anweisungen für Carlita noch nicht vollständig ausgearbeitet. Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who [made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
+Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
 
- - Zeichne zusätzliche Stücke für die Haarweinwand auf der gesamten Vorderseite, zweite Schicht des Haares Leinwand auf der VorderSchulter (gebogenes Stück von Schulter bis Untergrund der Armband). Rollenlinie auf lapel finden und markieren
- - Rückzugentwürfe bleiben & von schweren Muslin oder Haar Leinwand geschnitten, wenn Sie absolut kugelsicher sein möchten
- - Eisenschnittstelle auf die Rückenarmlöcher, ganze Seitenfront (außer Naht & hem Erlaubnis), Streifen auf den Rückensaum
- - Nähen Sie vor der Schulter die Haare Leinwand zu größeren Haar Leinwand (Quilten zusammen mit parallelen Heftreihen)
- - Front Haar Leinwand anhängen um vorne zu zentrieren mit dauerhaftem Blasenstich
- - Lass den Rumpf herausholen und stitch die Lapels
- - Die Rollenlinie berühren
- - Bänder Vorder- und Seitenrand
- - Nimm ein Bild und poste es in sozialen Medien, weil es so cool aussieht
- - Rückwärtsmuster schließen
- - Näht die RückenNaht in zwei Teile. Fügen Sie das Teil, das die Falten bildet geschlossen, falten nach unten und drücken Sie nach unten.
- - Füge den Rücken auf die Schultern, Armlöcher und Halslinie ein
- - Stabilisiere Taillennaht mit Eselkantenstreifen aus Muslin (optional)
- - Stabilisieren Sie den Deckel des Mantelschwanzs mit dem Streifen der Haare Leinwand (optional)
- - Falten, Pin und Baste Falten auf Mantel Schwanz
- - Nähen Taille Naht und drücken nach oben. Näht Naht der Taille ab um Muslin zu entfernen (optional)
- - Gürtel- und Taschenklappenteile mit rechten Seiten zusammen, drehen und drücken.
- - Nähen Patchtasche Oberkante zum Verkleiden, so dass ein Loch zum späteren Drehen bleibt. Nähende Seiten- und Unterkante der Patchtasche zum Futter (verkleinern Sie das Futter um 1 mm um sicherzustellen, dass es nicht nach außen zeigt). Drehen und drücken.
- - Falten Sie die Frontweltenteile mit rechten Seiten zusammen, drehen und drücken.
- - Legen Sie die Vorderwelt auf das Vorderteil zwischen den Ausschnitten. Legen Sie die Tasche oben auf. Passende Lage der Vorderwelt und Tasche auf der Vorderseite des Stücks, Pin zweiten Teil der Tasche in der Tasche. Nähen und drücken. Nähen und Nähen der Prinzessin bis zum Taschenstichen, Halten und weiter nach der Tasche. Nähen Sie die Kanten der Frontwelt nach unten.
- - Platzieren Sie die Patchtasche und die Tasche auf markierte Stellen und Anhänge.
- - Näht vorne Ärmelnaht. Befestigen Sie Manschette nach oben bis zur Manschettenfaltlinie. Nähen Sie die Ärmel hinten Näht, darauf achten, nicht die Fassade zu fangen. Nähen Sie den Rest der Naht nach hinten. Drehen, drücken, falten Manschette hinten und beugen, um an der Stelle zu bleiben.
- - Das Oberfutterstück wird an die Vorderseite genäht. Stitch Seitenseite Futter an Frontverkleidung. (Bei Verwendung eines zusätzlichen Rückenteils lassen Sie die obere Fünf cm Futter-/Naht unnäht)
- - Machen Sie innere Taschenklappen, Falten und Pressen Schweißen. Markieren Sie Welt-Position, Pin-Schweiße, Klappe und Taschentasche an der Stelle. Näht. Schlag zwischen den Welten. Drehen und drücken. Nähen Sie diese kleinen dreieckigen Dinge an die Schweißnähte und schließen Sie Taschentasche. Omg.
- - Optional: unter Kragen schneiden, um das Sitzen angenehmer zu machen. Interface-Kragenständer. Nähkragen steht oben und unter Kragen. Schneiden Sie das Stück Haar Leinwand für unter Kragen. Stickerei unter Kragen. Nähen von Kragenteilen um die Kante mit den rechten Seiten zusammen, so dass die untere Kante offen bleibt. Drehen und drücken. Füllen Sie den Kragen in die richtige Form um den Schinkenschinken oder rollten Sie das Handtuch hoch und verdampfen Sie die Scheiße.
- - Lining: optional: schneiden Sie den Hals nach hinten, um etwas Schönes, um ein Etikett auf Nähen. Entwerfen Sie ein separates Stück oberer Rückseite. Näht die Nähte hinten, Stickdarten als Tucker. Näht den Schwanz nach oben hinten. Nähte Schulter und Seitennaht auf dem Futter. Nähte Schulternähte auf Vorder- und Rückseite. Näht Futter an die Verkleidung, die Verbindung der früheren Heftlinien. Fügen Sie Futter-Ärmel ein, um sich geistig auf den richtigen Deal vorzubereiten.
- - Hol dir Schulterpads oder fertige sie selbst aus dem Kampf gegen Haarwolle und Baumwolle. Setze Ärmel ein, weinen, entpicken, wieder in Ärmel setzen. Fügen Sie dem Ärmelkopf einen Streifen Baumwollschlag hinzu, um ein Maximum an Oomp zu erhalten. Schulterpolster anschließen.
- - Halskragen an die Halslinie anheften, Mitte zurück zum Mittelkragen. Denken Sie an die unterschiedlichen Nahtzuschläge! An Ort einfügen. Kombinieren Sie Verkleidung/Verkleidungskombo an Halslinie und Vorderkante, Sandwiching Kragen dazwischen. Nähen Sie vorsichtig um das gesamte Fell, einschließlich der Unterkante der Vorderseite (lassen Sie den Rest des Saum allein). Überprüfen Sie Pucker oder Falten und schneiden Sie Nähte, drehen Sie das ganze Ding rechts und drücken Sie es.
- - Drehen Sie den Saum hoch, drücken und rüsten Sie ihn ein. Nähen Saum mit unsichtbarem Nähen, dann Handnäht-Futter Saum zu Mantel.
- - Knöpflöcher auf Vorder- und Gurtstücken markieren. Knopflöcher erstellen und Tasten anhängen.
- - Entfernen Sie alle noch vorhandenen, legen Sie Ihren Mantel, geben Sie sich ein Pat auf der Rückseite und schlafen Sie dann für drei Wochen.
+#### Drafting
+##### Front facing and Front lining
+
+- Trace off of **Front** part.
+- Cut along the green line.
+- Add seam allowance (if including) along green line to both pieces
+- The piece with the lapel is now the **Front facing** part.
+- Trim the hem allowance (if included) of the remaining piece to seam allowance length
+- The remaining piece is now the **Front lining** part.
+
+<Note>
+
+The button and pocket markings are not needed for these parts so feel free not to trace them.
+
+</Note>
+
+<Warning>
+  
+Don't forget the seam allowance for these pieces when cutting if you are making these parts nett! 
+
+</Warning>
+
+##### Front and Side Shoulder
+
+- Trace off of **Front and Side** parts.
+- Tape together so the notches match and armhole is complete. Do not worry about connecting everything else, you just need the armhole.
+- Draw a curve from shoulder to bottom of armhole.
+- Cut along this curve and discard the lower parts.
+- Separate out the pieces back into their front and side pieces.
+- These are now you **Front and Side shoulder* parts.
+
+##### Back shoulder
+
+- Trace off of **Back** part.
+- Cut along the orange line.
+- Discard lower piece.
+- Remove the seam allowamces (if included) of the upper piece.
+- The upper piece is now the **Back shoulder** part.
+
+#### Cutting
+
+- Cut all the parts above from their respective fabrics/facings. ([see Carlita Cutting](/docs/patterns/carlita/cutting/))
+
+### Step 2 : Preliminary Instructions
+
+#### Maker's notes
+
+<Warning>
+
+We don't have fully worked out instructions for Carlita yet.
+Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who 
+[made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
+
+</Warning>
+
+ - Find and mark roll line on lapel,
+ - Draft back stay & cut from heavy muslin or hair canvas if you want to be absolutely bulletproof
+ - Iron interfacing onto back armholes, entire side front (except for seam & hem allowances), bias strips onto back hem
+ - Stitch front shoulder hair canvas pieces to larger hair canvas piece (quilt together with parallel rows of stitching)
+ - Attach front hair canvas thing to center front with permanent basting stitch
+ - Get that thimble out and pad stitch the lapels
+ - Tape the roll line
+ - Tape the front and lapel edge
+ - Take a picture and post it on social media because this looks so cool
+ - Close back darts
+ - Sew back seam in two parts. Baste the part that will form the pleat closed, fold down and press.
+ - Baste the back stay to the shoulders, armholes and neckline
+ - Stabilize waist seam with selvedge strip of muslin (optional)
+ - Stabilize top of coat tail with strip of hair canvas (optional)
+ - Fold, pin and baste pleats on coat tail piece
+ - Sew waist seam and press up. Catch stitch waist seam to strip of muslin (optional)
+ - Sew belt and pocket flap pieces with right sides together, turn and press.
+ - Sew patch pocket top edge to lining, leaving a hole for turning later. Sew side and bottom edge of patch pocket to lining (make lining 1 mm smaller all around to make sure it doesn’t show on the outside). Turn and press.
+ - Fold front welt pieces with right sides together, turn and press.
+ - Place front welt on center front piece between notches. Put pocket bag on top. Match location of front welt and pocket bag on side front piece, pin second part of pocket bag in place. Stitch and press. Pin and sew princess seam up until pocket stitching, stop and continue after the pocket. Stitch the edges of the front welt down.
+ - Place patch pocket and pocket flap on marked locations and attach.
+ - Sew front sleeve seam. Attach cuff facing up until the cuff fold line. Stitch back sleeve seam, careful not to catch the facing. Sew the rest of the facing seam. Turn, press, fold cuff back and baste to keep in place.
+ - Stitch upper lining piece to front facing. Stitch side front lining to front facing. (When using an extra back facing piece, leave top five cm of lining/facing seam unsewn)
+ - Make inner pocket flap, fold and press welts. Mark welt location, pin welts, flap and pocket bag in place. Stitch. Slash between welts. Turn and press. Stitch those little triangle thingies to the welts and close pocket bag. Omg.
+ - Optional: cut under collar on the bias to make it sit nicer. Interface collar stand. Sew collar stands to upper and under collar. Cut piece of hair canvas for under collar. Pad stitch under collar. Sew collar pieces around edge with right sides together, leaving bottom edge open. Turn and press. Fold collar into right shape around tailor’s ham or rolled up towel and steam the shit out of it.
+ - Lining: optional: cut back neck facing from shell fabric to have something nice to sew a label on. Draft separate upper back lining piece. Stitch back seams, stitch darts as tucks. Stitch tail lining to upper back. Stitch shoulder and side seams on lining. Stitch shoulder seams on front and back facing. Stitch lining to facing, connecting the earlier stitching lines. Insert lining sleeves to mentally prepare for the real deal.
+ - Get some shoulder pads or craft them yourself from hair canvas and cotton batting. Set in sleeves, cry, unpick, set in sleeves again. Add a strip of cotton batting to the sleeve head for maximum oomph. Attach shoulder pads.
+ - Pin collar to neckline, matching center back to center collar. Mind the varying seam allowances! Baste in place. Pin facing/lining combo to neckline and front edge, sandwiching collar in between. Stitch carefully around the entire coat, including the bottom edge of the facing (leave the rest of the hem alone). Check for puckers or pleats, trim seams, turn the whole thing right side out and press.
+ - Turn hem up, press and baste into place. Sew hem with an invisible stitch, then hand sew lining hem to coat.
+ - Mark buttonholes on coat front and belt pieces. Make buttonholes and attach buttons.
+ - Remove all basting still present, put on your coat, give yourself a pat on the back and then sleep for three weeks.
 
 
 
