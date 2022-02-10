@@ -11,7 +11,7 @@
 
 ### Step 3: Create and attach straps 
 
-- If needed, face your straos.
+- If needed, face your straps.
 - Fold the straps in half lengthwise with *good sides matching*.
 - Sew the raw edges together making sure to leave a gap for turning.
 - Turn inside out.
