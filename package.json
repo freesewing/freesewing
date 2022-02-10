@@ -67,7 +67,7 @@
     "ava": "^4.0.1",
     "axios": "0.21.2",
     "babel-loader": "^8.1.0",
-    "bezier-js": "^5.1.0",
+    "bezier-js": "^6.1.0",
     "chai": "^4.2.0",
     "chai-string": "^1.5.0",
     "chalk": "^4.1.0",
