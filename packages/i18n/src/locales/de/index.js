@@ -79,4 +79,5 @@ export default {
   strings,
   plugin,
   jargon,
+  topics,
 }
