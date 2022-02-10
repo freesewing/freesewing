@@ -4,5 +4,10 @@ module.exports = {
     defaultLocale: 'en',
     locales: ['en', 'de', 'es', 'fr', 'nl'],
     defaultNS: 'app',
-  }
+  },
+  interpolation: {
+    prefix: '{',
+    suffix: '}',
+  },
+  localeStructure: '{lng}/{ns}',
 }
