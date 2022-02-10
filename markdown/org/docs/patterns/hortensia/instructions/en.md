@@ -15,7 +15,7 @@
 - Fold the straps in half lengthwise with *good sides matching*.
 - Sew the raw edges together making sure to leave a gap for turning.
 - Turn inside out.
-- *Slipstich* the opening close.
+- *Slipstich* the opening closed.
 - Alternatively *Edgestitch* all the edges.
 - Attach one strap to the front panel and one strap to the back panel by sewing a rectangle and a cross.
 
