@@ -9,7 +9,7 @@ The two fixed values that are used the most are Width: 23cm and Height: 33cm.
 
 <Note>
 
-So an example of this would be the default, which is 50%. This would scale the values by 0.5 resulting in a handbag that is 11.5cm (23cm * 0.5) in width and 16.5cm (33cm * 0.5) in height.
+So an example of this would be the default, which is 50%. This would scale the values by 0.5 resulting in a handbag that is 11.5cm (23cm x 0.5) in width and 16.5cm (33cm x 0.5) in height.
 
 </Note>
 
