@@ -78,8 +78,8 @@ export const TopSumTitle = props => (
   </span>
 )
 export const SecText = props => props.raw
-  ? <span className="text-secondary" dangerouslySetInnerHTML={{__html: props.raw}} />
-  : <span className="text-secondary">{props.children}</span>
+  ? <span className="text-secondary-focus" dangerouslySetInnerHTML={{__html: props.raw}} />
+  : <span className="text-secondary-focus">{props.children}</span>
 
 const WorkbenchMenu = props => {
   return (

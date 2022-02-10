@@ -15,7 +15,7 @@ const types = {
 const XrayList = props => {
   const { t } = useTranslation(['app', 'parts'])
 
-  let title = t(`parts.${props.partName}`)
+  let title = t(`parts:${props.partName}`)
   if (title !== props.partName || true) title + ` (${props.partName})`
 
   const part = props.gist.xray.parts[props.partName]

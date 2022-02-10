@@ -36,6 +36,9 @@ const flattenL2 = content => {
     for (const l2 in content[l1]) {
       flat[l1][`${l2}.t`] = content[l1][l2].title
       flat[l1][`${l2}.d`] = content[l1][l2].description
+      if (content[l1][l2].options) {
+        flat[l1][`${l2}.o`] = content[l1][l2].options
+      }
     }
   }
 
@@ -63,7 +66,7 @@ export const prebuildI18n = async (site) => {
         const subNamespaces  = flattenL2(loc.topics[namespace])
         for (const subNamespace in subNamespaces) {
           writeJson(
-            site, locale, 'o.'+subNamespace,
+            site, locale, 'o_'+subNamespace,
             subNamespaces[subNamespace]
           )
         }

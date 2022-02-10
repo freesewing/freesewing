@@ -25,7 +25,7 @@ const CoreSettingList = props => {
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <p className="m-0 p-0 px-2 mb-2 text-neutral-content opacity-60 italic">
-        {t(`settings:${props.setting}.description`)}
+        {t(`settings:${props.setting}.d`)}
       </p>
       <div className="flex flex-row">
         <div className="grow">

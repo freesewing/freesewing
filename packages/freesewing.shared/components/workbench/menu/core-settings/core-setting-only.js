@@ -23,7 +23,7 @@ const CoreSettingOnly = props => {
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <p className="m-0 p-0 px-2 mb-2 text-neutral-content opacity-60 italic">
-        {t(`settings:only.description`)}
+        {t(`settings:only.d`)}
       </p>
       <div className="flex flex-row">
         <div className="grow">
@@ -33,7 +33,7 @@ const CoreSettingOnly = props => {
               onClick={() => togglePart(part.id)}
               className={`
                 mr-1 mb-1 text-left text-lg w-full hover:text-secondary-focus px-2
-                ${props.gist?.only && props.gist.only.indexOf(part.id) !== -1 && 'font-bold text-secondary'}
+                ${props.gist?.only && props.gist.only.indexOf(part.id) !== -1 && 'font-bold text-secondary-focus'}
               `}
             >
               <span className={`

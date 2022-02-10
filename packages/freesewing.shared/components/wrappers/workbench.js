@@ -73,7 +73,7 @@ const WorkbenchWrapper = ({ app, pattern }) => {
   let draft = false
   if (mode === 'draft') {
     draft = new pattern(gist)
-    if (gist?.renderer === 'svg') patternInstance.use(theme)
+    if (gist?.renderer === 'svg') draft.use(theme)
     try { draft.draft() }
     catch(error) {
       console.log('Failed to draft pattern', error)

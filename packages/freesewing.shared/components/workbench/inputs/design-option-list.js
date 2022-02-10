@@ -12,7 +12,6 @@ const DesignOptionList = props => {
   const [value, setValue] = useState(val)
 
   const handleChange = (newVal) => {
-    console.log('setting', newVal)
     if (newVal === dflt) reset()
     else {
       setValue(newVal)
@@ -47,7 +46,7 @@ const DesignOptionList = props => {
               `}>
                 <>&deg;</>
               </span>
-              {t(`options.${props.pattern.config.name}.${props.option}.options.${choice}`)}
+              {props.ot(`${props.option}.o.${choice}`)}
             </button>
           ))}
         </div>

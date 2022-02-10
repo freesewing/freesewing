@@ -5,7 +5,7 @@ import { Li, Ul, Details, Summary, SumDiv, Deg } from 'shared/components/workben
 import { useTranslation } from 'next-i18next'
 
 const OptionGroup = props => {
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['optiongroups'])
   const config = props.config || props.pattern.config.optionGroups[props.group]
   return (
     <Li>
@@ -14,7 +14,7 @@ const OptionGroup = props => {
           <SumDiv>
             <Deg />
             <span className="font-bold">
-              { t(`optiongroups.${props.group}`) }
+              { t(props.group) }
             </span>
           </SumDiv>
           <Chevron />

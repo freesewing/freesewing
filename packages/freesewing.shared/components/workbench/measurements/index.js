@@ -52,7 +52,7 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
         {t('measurements')}
       </h1>
       <details open>
-        <summary><h2 className="inline-block">{t('preloadMeasurements')}</h2></summary>
+        <summary><h2 className="inline-block">{t('cfp:preloadMeasurements')}</h2></summary>
         <div className="ml-2 pl-4 border-l-2">
           {Object.keys(groups).map(group => (
             <details key={group}>

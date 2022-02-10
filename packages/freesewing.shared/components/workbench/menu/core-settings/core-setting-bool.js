@@ -17,7 +17,7 @@ const CoreSettingBool = props => {
       <SumButton onClick={toggle}>
         <SumDiv>
           <Deg />
-          <span>{ t(`settings.${props.setting}.title`) }</span>
+          <span>{ t(`settings:${props.setting}.t`) }</span>
         </SumDiv>
         <SecText>{ t(value ? 'yes' : 'no')}</SecText>
       </SumButton>

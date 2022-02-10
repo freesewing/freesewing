@@ -16,7 +16,7 @@ const Xray = props => {
           ? (
             <>
               <span className={`grow ${linkClasses} hover:cursor-resize font-bold uppercase`}>
-                {t('settings:xray.title')}
+                {t('settings:xray.t')}
               </span>
               <Chevron />
             </>
@@ -26,10 +26,10 @@ const Xray = props => {
               className={`grow ${linkClasses} hover:cursor-resize uppercase font-bold text-left`}
               onClick={() => props.updateGist(['xray', 'enabled'], true)}
             >
-              {t('settings:xray.title')}
+              {t('settings:xray.t')}
             </button>
             <span className="text-normal text-secondary">
-              {t('cfp:thingIsDisabled', { thing: t('settings:xray.title') })}
+              {t('cfp:thingIsDisabled', { thing: t('settings:xray.t') })}
             </span>
             </>
           )

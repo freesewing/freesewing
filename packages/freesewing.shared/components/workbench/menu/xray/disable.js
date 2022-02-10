@@ -10,7 +10,7 @@ const DisableXray = props => {
         <SumDiv>
           <Deg />
           <span>
-            {t('cfp:thingIsEnabled', { thing: t('settings:xray.title') })}
+            {t('cfp:thingIsEnabled', { thing: t('settings:xray.t') })}
           </span>
         </SumDiv>
       </SumButton>

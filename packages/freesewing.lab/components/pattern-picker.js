@@ -4,7 +4,8 @@ import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 
 const PatternPicker = ({ app }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation(['app'])
+
   return (
       <div className="dropdown">
         <div tabIndex="0" className={`
@@ -13,7 +14,7 @@ const PatternPicker = ({ app }) => {
           hover:bg-neutral hover:border-neutral-content
         `}>
           <DesignIcon />
-          <span>Patterns</span>
+          <span>{t('designs')}</span>
         </div>
         <ul tabIndex="0" className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 overflow-y-scroll navdrop">
           {Object.keys(app.patterns).map(section => (

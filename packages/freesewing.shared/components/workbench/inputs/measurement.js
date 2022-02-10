@@ -12,7 +12,7 @@ import { useTranslation } from 'next-i18next'
 const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
-  const title = t(m)
+  const title = t(`measurements:${m}`)
   const isValid = input => {
     if (input === '') return ''
     return !isNaN(input)
@@ -62,27 +62,29 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
             input input-lg input-bordered grow text-base-content
             ${valid === false && 'input-error'}
             ${valid === true && 'input-success'}
+            border-r-0
           `}
           value={val}
           onChange={update}
         />
+        <span role="img" className={`bg-transparent border-y
+          ${valid === false && 'border-error text-neutral-content'}
+          ${valid === true && 'border-success text-neutral-content'}
+          ${valid === '' && 'border-base-200 text-base-content'}
+       `}>
+          {valid === ''
+            ? ''
+            : valid
+            ? '👍'
+            : '🤔'
+          }
+        </span>
         <span className={`
           ${valid === false && 'bg-error text-neutral-content'}
           ${valid === true && 'bg-success text-neutral-content'}
           ${valid === '' && 'bg-base-200 text-base-content'}
        `}>
           cm
-        </span>
-      </label>
-      <label className="label">
-        <span className="label-text-alt">
-          {valid === ''
-            ? ''
-            : valid
-            ? 'Looks good'
-            : 'Invalid'
-          }
-          {val}
         </span>
       </label>
     </div>

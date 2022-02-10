@@ -50,7 +50,7 @@ const settings = {
   ),
   only: props => (props.gist?.only && props.gist.only.length > 0)
     ? <SecText>{props.gist.only.length}</SecText>
-    : <span className="text-secondary">{props.t('default')}</span>
+    : <span className="text-secondary-focus">{props.t('default')}</span>
 }
 
 const inputs = {
@@ -100,11 +100,11 @@ const Setting = props => {
             {props.setting === 'saMm'
               ? (
                 <>
-                  <span>{t(`settings:sa.title`)}</span>
+                  <span>{t(`settings:sa.t`)}</span>
                   <span className="ml-4 opacity-50">[ {t(`size`)} ]</span>
                 </>
               )
-              : <span>{t(`settings:${props.setting}.title`)}</span>
+              : <span>{t(`settings:${props.setting}.t`)}</span>
             }
           </SumDiv>
           <Value setting={props.setting} {...props} t={t}/>

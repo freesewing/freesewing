@@ -10,7 +10,7 @@ const DesignOptions = props => {
   return (
     <Details open>
       <TopSummary icon={<OptionsIcon />}>
-        <TopSumTitle>{('designOptions')}</TopSumTitle>
+        <TopSumTitle>{t('designOptions')}</TopSumTitle>
         <Chevron />
       </TopSummary>
       <Ul className="pl-5 list-inside">

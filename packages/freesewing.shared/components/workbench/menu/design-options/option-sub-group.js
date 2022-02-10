@@ -4,14 +4,14 @@ import { Li, Ul, Details, Summary, SumButton, SumDiv, Deg } from 'shared/compone
 import { useTranslation } from 'next-i18next'
 
 const OptionSubGroup = props => {
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['optiongroups'])
   return Object.keys(props.sub).map(name => (
     <Li>
       <Details>
         <Summary>
           <SumDiv>
             <Deg />
-            <span className="font-bold">{ t(`optiongroups.${name}`) }</span>
+            <span className="font-bold">{ t(name) }</span>
           </SumDiv>
           <Chevron />
         </Summary>
