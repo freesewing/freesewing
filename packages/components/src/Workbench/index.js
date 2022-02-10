@@ -320,7 +320,7 @@ const Workbench = ({
   return (
     <MuiThemeProvider theme={createMuiTheme(themes[theme])}>
       <style>
-        {`:root { --freesewing-pattern-scale: ${gist.settings.scale || 1}; }`}
+        {`:root { --freesewing-pattern-scale: ${gist.settings.scale || 1}px; }`}
         {sass}
       </style>
       <div
