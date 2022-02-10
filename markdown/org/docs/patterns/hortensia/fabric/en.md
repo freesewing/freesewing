@@ -1,9 +1,9 @@
 
 ### Main Fabric
 
-The key thing across all is non-stretch, durable and strong enough to hold items.
+The key fabric choices for Hortensia are non-stretch, durable and strong enough to hold items.
 
-Your main fabric choice ultimately comes down to your personal style and what you wish to use your handbag for. Due to Hortensia having a size option it can also be enlarged and used for things such as a gym bag which does not need to be as fancy as an upmarket handbag. So you may just simply want to go with **Cottons**, **Linens** or have a little fun with **Printed Cottons**. If you want something more fancy you can try going for **Brocades** and other luxe fabrics. If you want something that will be very durable you can try **Upholstery fabrics**. You can also try **Leather** but this will be harder to sew especially if it is thick so only use it if you know what you are doing. Remember if you wish to use it all the time, practically over design as the goal should be to make it last rather than make it fancy. If you do not care about the look at all then this may be an oppurtunity to use up fabric from your stash that you otherwise would not such as that ugly fabric you can never find a use for.
+Your main fabric choice ultimately comes down to your personal style and what you wish to use your handbag for. Due to Hortensia having a size option it can also be enlarged and used for things such as a gym bag which does not need to be as fancy as an upmarket handbag. So you may just simply want to go with **Cottons**, **Linens** or have a little fun with **Printed Cottons**. If you want something more fancy you can try going for **Brocades** and other luxe fabrics. If you want something that will be very durable you can try **Upholstery fabrics**. You can also try **Leather** but this will be harder to sew especially if it is thick so only use it if you know what you are doing. Remember if you wish to use it all the time, favour practicality over design, as the goal should be to make it last rather than make it fancy. If you do not care about the look at all then this may be an oppurtunity to use up fabric from your stash that you otherwise would not such as that ugly fabric you can never find a use for.
 
 <Note>
 
