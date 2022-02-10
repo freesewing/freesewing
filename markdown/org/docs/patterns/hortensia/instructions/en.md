@@ -65,7 +65,7 @@ We recommend the tabs to be about a quarter length of the straps.
 - With *good sides together* sew the side panels to the tube matching notches to the bottom and zipper panel seams.
 - If binding the edges rather than turning, sew with *wrong sides together* instead.
 - If not binding the edges leave a gap in one of the sides for turning.
-- Turn inside out and *Slipstich* the opening close.
+- Turn inside out and *Slipstich* the opening closed.
 - If sewn *wrong sides together* bind the raw edges of the side panels.
 
 <Note>
