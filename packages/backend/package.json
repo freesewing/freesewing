@@ -19,6 +19,7 @@
     "major": "npm version major -m ':bookmark: v%s' && npm run build",
     "test": "SEND_TEST_EMAILS=0 ./node_modules/.bin/mocha tests/index.js",
     "testall": "SEND_TEST_EMAILS=1 ./node_modules/.bin/mocha tests/index.js",
+    "testci": "babel-node --presets '@babel/preset-env' scripts/testci.js",
     "clean": "rimraf dist",
     "prettier": "npx prettier --write 'src/**' 'tests/**'",
     "lint": "eslint --fix \"src/*.js\"",
@@ -52,7 +53,7 @@
     ]
   },
   "dependencies": {
-    "@freesewing/i18n": "latest",
+    "@freesewing/i18n": "^2.20.4",
     "axios": "0.18.0",
     "body-parser": "1.18.3",
     "chai": "^4.3.4",
@@ -70,6 +71,7 @@
     "jszip": "3.7.1",
     "mdast-util-to-string": "2",
     "mocha": "^8.3.2",
+    "mongodb-memory-server": "^8.3.0",
     "mongoose": "^6.1.8",
     "mongoose-bcrypt": "^1.8.1",
     "mongoose-encryption": "^2.1.0",
