@@ -1,5 +1,4 @@
 import MenuIcon from 'shared/components/icons/menu.js'
-import OptionsIcon from 'shared/components/icons/options.js'
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
 import { useTranslation } from 'next-i18next'
 

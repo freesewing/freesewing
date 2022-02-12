@@ -1,7 +1,5 @@
 import SvgWrapper from './svg-wrapper'
 import Error from './error.js'
-import { capitalize } from 'shared/utils.js'
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 
 const LabDraft = props => {
   const { app, draft, pattern, gist, updateGist, unsetGist } = props

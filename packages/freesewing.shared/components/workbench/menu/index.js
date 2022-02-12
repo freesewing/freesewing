@@ -3,6 +3,7 @@ import ViewMenu from './view.js'
 import DesignOptions from './design-options'
 import CoreSettings from './core-settings'
 import Xray from './xray'
+import TestDesignOptions from './test-design-options'
 
 export const Ul = props => <ul className="pl-5 list-inside">{props.children}</ul>
 export const Li = props => (
@@ -90,6 +91,11 @@ const WorkbenchMenu = props => {
           <DesignOptions {...props} />
           <CoreSettings {...props} />
           {props.gist.renderer === 'react' && <Xray {...props} />}
+        </>
+      )}
+      {props.gist?._state?.view === 'test' && (
+        <>
+          <TestDesignOptions {...props} />
         </>
       )}
     </nav>

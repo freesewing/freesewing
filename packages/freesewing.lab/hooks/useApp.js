@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
@@ -10,7 +10,7 @@ import { useTranslation } from 'next-i18next'
 import { capitalize } from 'shared/utils'
 
 // Initial navigation
-const initialNavigation = (locale, t) => {
+const initialNavigation = (t) => {
   const base = {
     accessories: {
       __title: t('accessoryPatterns'),
@@ -69,7 +69,7 @@ function useApp(full = true) {
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(initialNavigation(locale, t))
+  const [navigation, setNavigation] = useState(initialNavigation(t))
   const [slug, setSlug] = useState('/')
   const [pattern, setPattern] = useState(false)
   const [loading, setLoading] = useState(false)

@@ -15,8 +15,7 @@ const types = {
 const XrayList = props => {
   const { t } = useTranslation(['app', 'parts'])
 
-  let title = t(`parts:${props.partName}`)
-  if (title !== props.partName || true) title + ` (${props.partName})`
+  const title = t(`parts:${props.partName}`) + ` (${props.partName})`
 
   const part = props.gist.xray.parts[props.partName]
 
@@ -82,7 +81,7 @@ const XrayList = props => {
                             </SumDiv>
                             <button
                               className={`px-3 hover:text-secondary-focus"
-                                ${props.gist?.xray?.reveal?.[props.partName]?.[type]?.[id]
+                                ${props.gist.xray?.reveal?.[props.partName]?.[type]?.[id]
                                   ? 'text-accent'
                                   : 'text-secondary'
                                 }`}

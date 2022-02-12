@@ -162,7 +162,7 @@ const DefaultLayout = ({
             ${asideClasses}
             ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
             sm:flex-row
-            ${workbench && collapseAltMenu
+            ${collapseAltMenu
               ? 'sm:px-0 sm:w-16'
               : 'sm:px-1 md:px-4 lg:px-8 sm:w-[38.2%]'
             }

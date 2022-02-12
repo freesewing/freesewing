@@ -9,12 +9,12 @@ const XrayPath = ({ pathName, partName, draft, t, units }) => {
   if (!path) return null
   return (
     <Ul>
-      <Attributes attr={path?.attributes} />
+      <Attributes attr={path.attributes} />
       <Li>
         <NoSumDiv>
           <Deg />
           <span className="font-bold mr-2">path.render =</span>
-          <span>{JSON.stringify(path?.render)}</span>
+          <span>{JSON.stringify(path.render)}</span>
         </NoSumDiv>
       </Li>
       <Li>

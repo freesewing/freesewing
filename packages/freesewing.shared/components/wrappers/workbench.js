@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu/index.js'
@@ -9,7 +9,7 @@ import DraftError from 'shared/components/workbench/draft/error.js'
 import theme from 'pkgs/plugin-theme/src/index.js'
 
 // Views
-import Measurements, { Input } from 'shared/components/workbench/measurements/index.js'
+import Measurements from 'shared/components/workbench/measurements/index.js'
 import LabDraft from 'shared/components/workbench/draft/index.js'
 import GistAsJson from 'shared/components/workbench/json.js'
 import GistAsYaml from 'shared/components/workbench/yaml.js'

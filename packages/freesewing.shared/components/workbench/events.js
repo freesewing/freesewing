@@ -1,5 +1,4 @@
 import Markdown from 'react-markdown'
-import { linkClasses } from 'shared/components/navigation/primary.js'
 
 const eventBlock = events => events.join("  \n")
 

@@ -1,6 +1,5 @@
 import path from 'path'
 import fs from 'fs'
-import yaml from 'js-yaml'
 import { en, de, es, fr, nl, languages } from '../../i18n/dist/index.js'
 
 const locales = { en, de, es, fr, nl }

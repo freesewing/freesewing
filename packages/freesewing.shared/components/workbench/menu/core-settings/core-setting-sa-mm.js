@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { formatMm } from 'shared/utils.js'
 import ClearIcon from 'shared/components/icons/clear.js'
-import EditIcon from 'shared/components/icons/edit.js'
 import { useTranslation } from 'next-i18next'
 
 const CoreSettingMm = props => {

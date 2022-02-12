@@ -28,7 +28,7 @@ const DesignOptionList = props => {
       <div className="flex flex-row">
         <div className="grow">
           {list.map(choice => (
-            <button
+            <button key={choice}
               onClick={() => handleChange(choice)}
               className={`
                 mr-1 mb-1 text-left text-lg w-full
