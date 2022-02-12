@@ -139,7 +139,7 @@ export default allNamespaces
 `
 const indexFile = (locales) => `${header}
 ${locales
-  .map(l => 'import '+l+' as '+l+'Namespaces from "./next/'+l+'/index.mjs"')
+  .map(l => 'import '+l+'Namespaces from "./next/'+l+'/index.mjs"')
   .join("\n")
 }
 
