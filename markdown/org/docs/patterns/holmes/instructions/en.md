@@ -98,7 +98,7 @@ There are two methods for constructing the visors. This is due to the different 
 #### The Visors Method 1
 
 - Place visor insert on one visor piece inside seam lines.  
-- Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.  
+- Temporarily secure visor insert to visor with temporary _Pad Stitches_. This will be refered to as "faced visor" going forward.  
 - _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.  
 - With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.  
 - Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)  
