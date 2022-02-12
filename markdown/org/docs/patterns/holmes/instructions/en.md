@@ -49,7 +49,7 @@ Depending on your seam allowance you may want to trim seams as you go to reduce 
 - With right sides together, matching seam lines, sew a tie ear flap to a non-tie ear flap.  
 - Clip and trim seam allowance.  
 - Turn inside out and press.  
-- (Optional) _Topstitch_ or _edgestitch_ the folded edge.  
+- (Optional) _Topstitch_ or _Edgestitch_ the folded edge.  
 - _Baste_ the raw edges together.  
 - Repeat for the remaining ear flap.
 
@@ -87,7 +87,7 @@ The ear flaps will need to be long enough to go over the top of the peak so they
 
 **For both Ear Flaps with Ties and Button Holes**  
 
-It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
+It is recommended to at least _Topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
 
 </Note>
 
@@ -99,11 +99,11 @@ There are two methods for constructing the visors. This is due to the different 
 
 - Place visor insert on one visor piece inside seam lines.  
 - Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.  
-- _Baste_ along the seam line of the inner curve of the visor, making sure not to catch the visor insert.  
+- _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.  
 - With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.  
 - Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)  
 - Turn inside out and press. Making sure that the seam allowances are on top of not under the visor insert.  
-- Using the previous basting line as a guide, _baste_ the opening closed.  
+- Using the previous basting line as a guide, _Baste_ the opening closed.  
 - Repeat this for remaining visor pieces.
 
 <Warning>
@@ -138,16 +138,16 @@ Once again there are two methods for final assembly and lining. Read both method
 - Sew ear flap to the crown along seam lines.  
 - Repeat for the remaining ear flap on the opposite side of the crown.  
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.  
-- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.  
+- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _Baste_ the centre down first and then work from the centre out.  
 - Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.   
 - Repeat for the remaining visor on the opposite side of the centre crown seam.  
 - Remove all pad and basting stitches.  
 - Press the seam allowances inwards, making sure the stitching is not visible on the outside.  
-- (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.  
+- (Optional) Loosely _Whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.  
 - Construct lining the same way as the crown ommitting _edgestitching_.  
-- Fold and Press under the bottom seam allowance of the lining. You may find you need to press under more to prevent the lining from showing. You may also find you need to _baste_ the seam allowance down.  
+- Fold and Press under the bottom seam allowance of the lining. You may find you need to press under more to prevent the lining from showing. You may also find you need to _Baste_ the seam allowance down.  
 - Matching centre crown seams and panel seams, pin the lining into the hat wrong sides together. Placing the folded edge along the stitching lines.  
-- _Slipstitch_ or _whipstitch_ the lining to the seam allowance of the hat.  
+- _Slipstitch_ or _Whipstitch_ the lining to the seam allowance of the hat.  
 - Remove lining basting if used.  
 - (Optional) _Tack_ the peak of the lining to the peak of the crown. This is to help prevent the lining from falling out.
 
@@ -157,7 +157,7 @@ Once again there are two methods for final assembly and lining. Read both method
 - _Baste_ the ear flap to the crown along seam lines  
 - Repeat for the remaining ear flap on the opposite side of the crown.  
 - Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.  
-- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.  
+- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _Baste_ the centre down first and then work from the centre out.  
 - (Optional) Machine-baste the visor to the crown along seam lines.  
 - Repeat for the remaining visor on the opposite side of the centre crown seam.  
 - Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.  
@@ -221,7 +221,7 @@ Unless you are doing the Buttonhole Ear Flaps you do not have to sew a button on
 
 - Construct a covered button.  
 - Attach the button via the shank to the peak of the crown doing your best to keep it in the middle of the seams.  
-- Alternatively if you are not using the button with the ear flaps you can bend the shank down and _whipstitch_ the edge of the button to the crown instead so it does not move.
+- Alternatively if you are not using the button with the ear flaps you can bend the shank down and _Whipstitch_ the edge of the button to the crown instead so it does not move.
 
 <Note>
 
