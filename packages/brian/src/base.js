@@ -14,8 +14,9 @@ export default (part) => {
     macro,
   } = part.shorthand()
 
+  store.set('stretchFactor', utils.stretchToScale(options.fabricStretch));
+  const getStretchFactor = () => store.get('stretchFactor');
   store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)
-
   // Center back (cb) vertical axis
   points.cbHps = new Point(0, 0)
   points.cbNeck = new Point(0, options.backNeckCutout * measurements.neck)
@@ -25,33 +26,33 @@ export default (part) => {
   points.cbHips = new Point(0, points.cbWaist.y + measurements.waistToHips)
 
   // Shoulder line
-  points.neck = new Point((measurements.neck * (1 + options.collarEase)) / options.collarFactor, 0)
+
+  points.neck = new Point((measurements.neck * (1 + options.collarEase) * getStretchFactor()) / options.collarFactor, 0)
   points.hps = points.neck.clone() // We started using HPS in many measurements
-  // Shoulder point using shoulderSlope degree measurement
-  points.shoulder = utils.beamsIntersect(
+  const xShoulder = (measurements.shoulderToShoulder / 2 + store.get('shoulderEase')) * getStretchFactor()
+  // Shoulder point using shoulderSlope degree measurement.
+  const shoulderIntersection = utils.beamsIntersect(
     points.hps,
     points.hps.shift(measurements.shoulderSlope * -1, 100),
-    new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), -100),
-    new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), 100)
+    new Point(xShoulder, -100),
+    new Point(xShoulder, 100)
   )
-  // Determine armhole depth and cbShoulder independent of shoulder slope reduction
+  const yShoulder = (shoulderIntersection.y - points.cbHps.y) * (1 - options.shoulderSlopeReduction);
+  points.shoulder = new Point(xShoulder, Math.max(yShoulder, 0));
+
   points.cbShoulder = new Point(0, points.shoulder.y)
   points.cbChest = new Point(0, points.shoulder.y + measurements.biceps/4 + measurements.biceps/(2*Math.PI))
+
   points.cbArmhole = new Point(
     0,
-    points.shoulder.y + measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
+    points.shoulder.y + measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor * getStretchFactor()
   )
-
-  // Now take shoulder slope reduction into account
-  points.shoulder.y -= (points.shoulder.y - points.cbHps.y) * options.shoulderSlopeReduction
-  // Shoulder should never be higher than HPS
-  if (points.shoulder.y < points.cbHps.y) points.shoulder = new Point(points.shoulder.x, 0)
-
   points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
   // Side back (cb) vertical axis
-  points.chest = new Point((measurements.chest * (1 + options.chestEase)) / 4, points.cbChest.y)
-  let xBust = measurements.bust ? (measurements.bust * (1 + options.chestEase)) / 4 : points.chest.x;
+  const chestScale =  (1 + options.chestEase) * getStretchFactor() / 4;
+  points.chest = new Point(measurements.chest * chestScale, points.cbChest.y)
+  let xBust = measurements.bust ? measurements.bust * chestScale : points.chest.x;
   points.bust = new Point(xBust, points.cbBust.y)
 
   let xArmhole = points.bust.x
@@ -64,8 +65,8 @@ export default (part) => {
   }
 
   points.armhole = new Point(xArmhole, points.cbArmhole.y)
-  points.waist = new Point((measurements.waist * (1 + options.waistEase)) / 4, points.cbWaist.y)
-  points.hips = new Point((measurements.hips * (1 + options.hipsEase)) / 4, points.cbHips.y)
+  points.waist = new Point(measurements.waist * (1 + options.waistEase) * getStretchFactor() / 4, points.cbWaist.y)
+  points.hips = new Point(measurements.hips * (1 + options.hipsEase) * getStretchFactor() / 4, points.cbHips.y)
   points.hem = new Point(points.hips.x, points.cbHem.y)
 
   //  Side shaping
@@ -78,8 +79,7 @@ export default (part) => {
 
   // Armhhole
   points.armholePitch = new Point(
-    (measurements.shoulderToShoulder * options.acrossBackFactor) / 2 +
-      store.get('shoulderEase') / 2,
+    (xShoulder * options.acrossBackFactor),
     points.shoulder.y + points.shoulder.dy(points.armhole) / 2
   )
   points._tmp1 = new Point(points.armholePitch.x, points.armhole.y)
@@ -118,7 +118,7 @@ export default (part) => {
 
   // Fit collar
   points.cfNeck = points.neck.rotate(-90, new Point(0, 0))
-  let target = measurements.neck * (1 + options.collarEase)
+  let target = measurements.neck * (1 + options.collarEase) * getStretchFactor()
   let delta = 0
   let run = 0
   do {

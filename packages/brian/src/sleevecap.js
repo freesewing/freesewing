@@ -13,26 +13,23 @@ function sleevecapAdjust(store) {
   store.set('sleeveFactor', factor)
 }
 
-function draftSleevecap(part, run) {
+function draftSleevecap(part) {
   let { store, measurements, options, Point, points, Path, paths } = part.shorthand()
   // Sleeve center axis
+
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
     90,
     options.sleevecapTopFactorY *
-      (measurements.biceps *
+      ( measurements.biceps *
         (1 + options.bicepsEase) *
         options.armholeDepthFactor *
         store.get('sleeveFactor'))
   )
 
-  // Left and right biceps points, limit impact of sleeveFactor to 25%
-  let halfWidth = (measurements.biceps * (1 + options.bicepsEase)) / 2
-  points.bicepsLeft = points.centerBiceps.shift(
-    180,
-    halfWidth * options.sleeveWidthGuarantee +
-      halfWidth * (1 - options.sleeveWidthGuarantee) * store.get('sleeveFactor')
-  )
+  // Left and right biceps points, limit impact to the biceps or sleeveWidthGuarantee setting
+  let halfWidth = measurements.biceps * (1 + options.bicepsEase) * store.get('stretchFactor') / 2;
+  points.bicepsLeft = points.centerBiceps.shift(180,halfWidth)
   points.bicepsRight = points.bicepsLeft.flipX(points.centerBiceps)
 
   // Adapt sleeve center axis
@@ -79,6 +76,7 @@ function draftSleevecap(part, run) {
     points.bicepsLeft.angle(points.backPitch) - 90,
     baseOffset * options.sleevecapQ4Offset
   )
+
   // Control points
   points.capQ1Cp1 = points.capQ1.shift(
     points.frontPitch.angle(points.bicepsRight),
@@ -124,25 +122,23 @@ function draftSleevecap(part, run) {
 
   // Store sleevecap length
   store.set('sleevecapLength', paths.sleevecap.length())
-  if (run === 0) {
-    let armholeLength = store.get('frontArmholeLength') + store.get('backArmholeLength')
-    let sleevecapEase = armholeLength * options.sleevecapEase
-    store.set('sleevecapEase', sleevecapEase)
-    store.set('sleevecapTarget', armholeLength + sleevecapEase)
-
-    // Uncomment this line to see all sleevecap iterations
-    //paths[run] = paths.sleevecap;
-  }
 }
 
 export default (part) => {
   let { store, units, options, Point, points, paths, raise } = part.shorthand()
 
+  let armholeLength = store.get('frontArmholeLength') + store.get('backArmholeLength')
+  let sleevecapEase = armholeLength * options.sleevecapEase
+  store.set('sleevecapEase', sleevecapEase)
+  store.set('sleevecapTarget', armholeLength + sleevecapEase)
+
   store.set('sleeveFactor', 1)
   let run = 0
   let delta = 0
   do {
-    draftSleevecap(part, run)
+    draftSleevecap(part)
+    // Uncomment this line to see all sleevecap iterations
+    // paths[run] = paths.sleevecap;
     delta = sleevecapDelta(store)
     sleevecapAdjust(store)
     run++

@@ -19,9 +19,10 @@ export default {
       'hipsEase',
       'lengthBonus',
       'sleeveLengthBonus',
-      'draftForHighBust'
+      'draftForHighBust',
+      'fabricStretch'
     ],
-    style: ['s3Collar', 's3Armhole'],
+    style: ['s3Collar', 's3Armhole', 'pullover'],
     advanced: [
       'acrossBackFactor',
       'armholeDepthFactor',
@@ -69,7 +70,8 @@ export default {
     'shoulderToShoulder',
     'shoulderToWrist',
     'wrist',
-    'highBust'
+    'highBust',
+    'head'
   ],
   dependencies: {
     back: 'base',
@@ -87,6 +89,7 @@ export default {
     // Constants
     brianFitSleeve: { bool: true },
     brianFitCollar: { bool: true },
+    pullover: { bool: true },
     collarFactor: 4.8,
     draftForHighBust: { bool: false },
 
@@ -104,6 +107,7 @@ export default {
     lengthBonus: { pct: 0, min: 0, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80 },
+    fabricStretch: { pct: 0, min: 0, max: 20 },
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },

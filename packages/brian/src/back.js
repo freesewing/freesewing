@@ -14,7 +14,6 @@ export default (part) => {
     paperless,
     macro,
     options,
-    measurements,
     utils,
   } = part.shorthand()
 
