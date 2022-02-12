@@ -27,7 +27,7 @@ const initialNavigation = (locale, t) => {
     garments: {
       __title: t('garmentPatterns'),
       __order: t('garmentPatterns'),
-      __linktitle: t('GarmentPatterns'),
+      __linktitle: t('garmentPatterns'),
       __slug: t('garments'),
     },
     utilities: {
