@@ -44,19 +44,19 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
   const inputProps = { app, updateMeasurements, gist }
 
   return (
-    <div className="m-auto max-w-prose">
+    <div className="m-auto max-w-2xl">
       <h1>
         <span className='capitalize mr-4 opacity-70'>
           {pattern.config.name}:
         </span>
         {t('measurements')}
       </h1>
-      <details open>
-        <summary><h2 className="inline-block">{t('cfp:preloadMeasurements')}</h2></summary>
+      <details open className="my-2">
+        <summary><h2 className="inline pl-1">{t('cfp:preloadMeasurements')}</h2></summary>
         <div className="ml-2 pl-4 border-l-2">
           {Object.keys(groups).map(group => (
             <details key={group}>
-              <summary><h3 className="inline-block">{t(group)}</h3></summary>
+              <summary><h3 className="inline pl-1">{t(group)}</h3></summary>
               <div className="ml-2 pl-4 border-l-2">
                 {Object.keys(icons).map(type => (
                   <React.Fragment key={type}>
@@ -86,8 +86,8 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
         </div>
       </details>
 
-      <details>
-        <summary><h2 className="inline-block">{t('cfp:enterMeasurements')}</h2></summary>
+      <details className="my-2">
+        <summary><h2 className="inline pl-2">{t('cfp:enterMeasurements')}</h2></summary>
         <div className="ml-2 pl-4 border-l-2">
           {pattern.config.measurements && (
             <>

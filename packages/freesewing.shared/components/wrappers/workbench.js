@@ -2,14 +2,29 @@ import { useState, useEffect } from 'react'
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu/index.js'
-import Measurements, { Input } from 'shared/components/workbench/measurements/index.js'
-import LabDraft from 'shared/components/workbench/draft/index.js'
 import set from 'lodash.set'
 import unset from 'lodash.unset'
 import defaultSettings from 'shared/components/workbench/default-settings.js'
 import DraftError from 'shared/components/workbench/draft/error.js'
 import theme from 'pkgs/plugin-theme/src/index.js'
 
+// Views
+import Measurements, { Input } from 'shared/components/workbench/measurements/index.js'
+import LabDraft from 'shared/components/workbench/draft/index.js'
+import GistAsJson from 'shared/components/workbench/json.js'
+import GistAsYaml from 'shared/components/workbench/yaml.js'
+import DraftEvents from 'shared/components/workbench/events.js'
+
+const views = {
+  measurements: Measurements,
+  draft: LabDraft,
+  test: () => <p>TODO</p>,
+  export: () => <p>TODO</p>,
+  events: DraftEvents,
+  yaml: GistAsYaml,
+  json: GistAsJson,
+  welcome: () => <p>TODO</p>,
+}
 
 // Generates a default pattern gist to start from
 const defaultGist = (pattern, locale='en') => {
@@ -33,30 +48,24 @@ const hasRequiredMeasurements = (pattern, gist) => {
 
 /*
  * This component wraps the workbench and is in charge of
- * keeping the mode & gist state, which will trickly down
+ * keeping the gist state, which will trickly down
  * to all workbench subcomponents
- *
- * mode: What to display (draft, sample, measurements, ...)
- * gist: The runtime pattern configuration
  */
 const WorkbenchWrapper = ({ app, pattern }) => {
 
-  // State for display mode and gist
-  const [mode, setMode] = useState('measurements')
-  const [gist, setGist] = useLocalStorage('gist', defaultGist(pattern, app.locale))
+  // State for gist
+  const [gist, setGist] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
 
-  // If we don't have the requiremed measurements,
-  // force mode to measurements
+  // If we don't have the required measurements,
+  // force view to measurements
   useEffect(() => {
     if (
-      mode !== 'measurements'
+      gist?._state?.view !== 'measurements'
       && !hasRequiredMeasurements(pattern, gist)
-    ) setMode('measurements')
+    ) updateGist(['_state', 'view'], 'measurements')
   })
 
-  /*
-   * Update gist method. See lodash.set
-   */
+  // Helper methods to manage the gist state
   const updateGist = (path, content) => {
     const newGist = {...gist}
     set(newGist, path, content)
@@ -68,10 +77,9 @@ const WorkbenchWrapper = ({ app, pattern }) => {
     setGist(newGist)
   }
 
-  // Generate the draft here so we can pass it to both Menu
-  // and LabDraft
+  // Generate the draft here so we can pass it down
   let draft = false
-  if (mode === 'draft') {
+  if (['draft', 'events'].indexOf(gist?._state?.view) !== -1) {
     draft = new pattern(gist)
     if (gist?.renderer === 'svg') draft.use(theme)
     try { draft.draft() }
@@ -81,48 +89,23 @@ const WorkbenchWrapper = ({ app, pattern }) => {
     }
   }
 
+  // Props to pass down
+  const componentProps = { app, pattern, gist, updateGist, unsetGist, setGist, draft }
   // Required props for layout
   const layoutProps = {
     app: app,
     noSearch: true,
     workbench: true,
-    AltMenu: <Menu
-      app={app}
-      pattern={pattern}
-      mode={mode}
-      setMode={setMode}
-      gist={gist}
-      updateGist={updateGist}
-      unsetGist={unsetGist}
-      setGist={setGist}
-      draft={draft}
-    />
+    AltMenu: <Menu {...componentProps }/>
   }
 
+  const Component = views[gist?._state?.view]
+    ? views[gist._state.view]
+    : views.welcome
 
-
-  return (
-    <Layout {...layoutProps}>
-      {mode === 'measurements' && (
-        <Measurements
-          app={app}
-          pattern={pattern}
-          gist={gist}
-          updateGist={updateGist}
-        />
-      )}
-      {mode === 'draft' && (
-        <LabDraft
-          app={app}
-          pattern={pattern}
-          draft={draft}
-          gist={gist}
-          updateGist={updateGist}
-          unsetGist={unsetGist}
-        />
-      )}
-    </Layout>
-  )
+  return  <Layout {...layoutProps}>
+            <Component {...componentProps} />
+          </Layout>
 }
 
 export default WorkbenchWrapper

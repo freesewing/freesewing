@@ -1,5 +1,5 @@
 import Robot from 'shared/components/robot/index.js'
-import Events from './events.js'
+import Events from '../events.js'
 import { useTranslation } from 'next-i18next'
 
 const Error = props => {

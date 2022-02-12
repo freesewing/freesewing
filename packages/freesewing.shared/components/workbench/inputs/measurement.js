@@ -13,15 +13,17 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
-  const isValid = input => {
-    if (input === '') return ''
-    return !isNaN(input)
-  }
+
+  const isValValid = val => (typeof val === 'undefined' || val === '')
+      ? null
+      : !isNaN(val)
+  const isValid = (newVal) => (typeof newVal === 'undefined')
+    ? isValValid(gist?.measurements?.[m])
+    : isValValid(newVal)
 
   const update = evt => {
     setVal(evt.target.value)
     const ok = isValid(evt.target.value)
-    console.log({ok})
     if (ok) {
       setValid(true)
       updateMeasurements(evt.target.value*10, m)
@@ -29,10 +31,6 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   }
 
   const [val, setVal] = useState(gist?.measurements?.[m] || '')
-  const [valid, setValid] = useState(typeof gist?.measurements?.[m] === 'undefined'
-    ? '' :
-    isValid(gist.measurements[m])
-  )
 
   useEffect(() => {
     if (gist?.measurements?.[m]) setVal(gist.measurements[m]/10)
@@ -40,6 +38,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
 
   if (!m) return null
 
+  const valid = isValid()
   return (
     <div className="form-control mb-2" key={`wrap-${m}`}>
       <label className="label">
@@ -59,20 +58,19 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
           type="text"
           placeholder={title}
           className={`
-            input input-lg input-bordered grow text-base-content
-            ${valid === false && 'input-error'}
-            ${valid === true && 'input-success'}
-            border-r-0
+            input input-lg input-bordered grow text-base-content border-r-0
+            ${isValid() === false && 'input-error'}
+            ${isValid() === true && 'input-success'}
           `}
           value={val}
           onChange={update}
         />
         <span role="img" className={`bg-transparent border-y
-          ${valid === false && 'border-error text-neutral-content'}
-          ${valid === true && 'border-success text-neutral-content'}
-          ${valid === '' && 'border-base-200 text-base-content'}
+          ${isValid() === false && 'border-error text-neutral-content'}
+          ${isValid() === true && 'border-success text-neutral-content'}
+          ${isValid() === null && 'border-base-200 text-base-content'}
        `}>
-          {valid === ''
+          {isValid() === null
             ? ''
             : valid
             ? '👍'
@@ -82,7 +80,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
         <span className={`
           ${valid === false && 'bg-error text-neutral-content'}
           ${valid === true && 'bg-success text-neutral-content'}
-          ${valid === '' && 'bg-base-200 text-base-content'}
+          ${valid === null && 'bg-base-200 text-base-content'}
        `}>
           cm
         </span>
