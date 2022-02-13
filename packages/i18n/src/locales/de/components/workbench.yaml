@@ -1,1 +1,3 @@
-testThing: "test {thing}"
+---
+designOptions: Design options
+testThing: "Test {thing}"
