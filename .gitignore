@@ -57,6 +57,14 @@ packages/*/package-lock.json
 packages/*/yarn.lock
 packages/strapi/.cache
 
+packages/freesewing.dev/public/locales/en/*.json
+
+packages/freesewing.org/public/locales/en/*.json
+packages/freesewing.org/public/locales/es/*.json
+packages/freesewing.org/public/locales/de/*.json
+packages/freesewing.org/public/locales/fr/*.json
+packages/freesewing.org/public/locales/nl/*.json
+
 packages/freesewing.lab/public/locales/en/*.json
 packages/freesewing.lab/public/locales/es/*.json
 packages/freesewing.lab/public/locales/de/*.json
