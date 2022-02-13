@@ -66,6 +66,7 @@ documentationForDevelopers: Dokumentation für Entwickler/-innen
 documentationForEditors: Dokumentation für Redakteure
 documentationForTranslators: Dokumentation für Übersetzer/-innen
 documentationOverview: Überblick über die Dokumentation
+dolls: Dolls
 download: Herunterladen
 draft: Entwurf
 draftPattern: '{pattern} erstellen'
@@ -88,6 +89,7 @@ forgotLoginInstructions: "Wenn du dein Passwort nicht mehr weißt: Benutzername 
 freesewing: Freesewing
 freesewingOnGithub: Freesewing auf GitHub
 garmentPatterns: Bekleidungsschnittmuster
+giants: Giants
 github: GitHub
 goAheadWeWillWait: Mach weiter, wir warten.
 goodJob: Gut gemacht
@@ -222,7 +224,7 @@ whatIsThis: Was ist das?
 withBreasts: Mit Brüsten
 withoutBreasts: Ohne Brüste
 yay: Juhuu!
-yes: "Yes" #Keep in quotes or it will evaluate to false
+yes: "Yes" #Keep in quotes or it will evaluate to true
 youAreAPatron: Du bist ein/e Förder/in
 youAreNotAPatron: Du bist kein/e Förder/in
 youAreNotLoggedIn: Du bist nicht eingeloggt

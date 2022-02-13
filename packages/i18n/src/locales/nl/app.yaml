@@ -66,6 +66,7 @@ documentationForDevelopers: Documentatie voor ontwikkelaars
 documentationForEditors: Documentatie voor redacteuren
 documentationForTranslators: Documentatie voor vertalers
 documentationOverview: Overzicht documentatie
+dolls: Dolls
 download: Download
 draft: Patroontekening
 draftPattern: 'Teken {pattern}'
@@ -88,6 +89,7 @@ forgotLoginInstructions: "Als je je wachtwoord niet meer weet, vul dan hieronder
 freesewing: Freesewing
 freesewingOnGithub: FreeSewing op GitHub
 garmentPatterns: Patronen voor kledij
+giants: Giants
 github: GitHub
 goAheadWeWillWait: Doe maar, we wachten wel.
 goodJob: Mooi werk
@@ -222,7 +224,7 @@ whatIsThis: What betekent dit?
 withBreasts: Met borsten
 withoutBreasts: Zonder borsten
 yay: Joehoew!
-yes: "Ja" #Keep in quotes or it will evaluate to false
+yes: "Ja" #Keep in quotes or it will evaluate to true
 youAreAPatron: Je bent een mecenas
 youAreNotAPatron: Je bent geen mecenas
 youAreNotLoggedIn: Je bent niet ingelogd

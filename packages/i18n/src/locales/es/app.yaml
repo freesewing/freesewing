@@ -66,6 +66,7 @@ documentationForDevelopers: Documentación para desarrolladores
 documentationForEditors: Documentación para editores
 documentationForTranslators: Documentación para traductores
 documentationOverview: Documentation general
+dolls: Dolls
 download: Descargar
 draft: Boceto
 draftPattern: 'Trazar {pattern} '
@@ -88,6 +89,7 @@ forgotLoginInstructions: "Entra tu nombre de usuario o correo electrónico debaj
 freesewing: Freesewing
 freesewingOnGithub: Freesewing en GitHub
 garmentPatterns: Patrones de prendas
+giants: Giants
 github: GitHub
 goAheadWeWillWait: Adelante, esperaremos.
 goodJob: Buen trabajo
@@ -222,7 +224,7 @@ whatIsThis: Que es esto
 withBreasts: Con pechos
 withoutBreasts: Sin pechos
 yay: '¡Hurra!'
-yes: "Yes" #Keep in quotes or it will evaluate to false
+yes: "Yes" #Keep in quotes or it will evaluate to true
 youAreAPatron: Eres un mecenas
 youAreNotAPatron: Tu no eres un mecenas
 youAreNotLoggedIn: No has iniciado sesión
