@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 
 const PatternPicker = ({ app }) => {
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['common'])
 
   return (
       <div className="dropdown">

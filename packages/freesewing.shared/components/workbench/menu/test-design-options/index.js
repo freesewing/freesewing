@@ -5,7 +5,7 @@ import { Ul, Details, TopSummary, TopSumTitle } from 'shared/components/workbenc
 import { useTranslation } from 'next-i18next'
 
 const DesignOptions = props => {
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['workbench'])
 
   return (
     <Details open>

@@ -3,7 +3,7 @@ module.exports = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'de', 'es', 'fr', 'nl'],
-    defaultNS: 'app',
+    defaultNS: 'common',
   },
   interpolation: {
     prefix: '{',

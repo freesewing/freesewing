@@ -77,7 +77,7 @@ const View = props => {
               <span className={`
                 text-3xl mr-2 inline-block p-0 leading-3
                 ${entry.name === props.gist?._state?.view
-                  ? 'text-secondary sm:text-secondary-focus translate-y-1'
+                  ? 'text-secondary sm:text-secondary-focus translate-y-1 font-bold'
                   : 'translate-y-3'
                 }
               `}>

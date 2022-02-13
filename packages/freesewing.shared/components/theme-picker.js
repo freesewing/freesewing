@@ -3,7 +3,7 @@ import ThemeIcon from 'shared/components/icons/theme.js'
 import { useTranslation } from 'next-i18next'
 
 const ThemePicker = ({ app, className }) => {
-  const { t } = useTranslation(['app'])
+  const { t } = useTranslation(['themes'])
 
   return (
       <div className={`dropdown ${className}`}>

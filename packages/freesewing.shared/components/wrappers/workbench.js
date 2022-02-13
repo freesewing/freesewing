@@ -11,6 +11,7 @@ import theme from 'pkgs/plugin-theme/src/index.js'
 // Views
 import Measurements from 'shared/components/workbench/measurements/index.js'
 import LabDraft from 'shared/components/workbench/draft/index.js'
+import LabSample from 'shared/components/workbench/sample.js'
 import GistAsJson from 'shared/components/workbench/json.js'
 import GistAsYaml from 'shared/components/workbench/yaml.js'
 import DraftEvents from 'shared/components/workbench/events.js'
@@ -18,7 +19,7 @@ import DraftEvents from 'shared/components/workbench/events.js'
 const views = {
   measurements: Measurements,
   draft: LabDraft,
-  test: () => <p>TODO</p>,
+  test: LabSample,
   export: () => <p>TODO</p>,
   events: DraftEvents,
   yaml: GistAsYaml,
@@ -79,10 +80,12 @@ const WorkbenchWrapper = ({ app, pattern }) => {
 
   // Generate the draft here so we can pass it down
   let draft = false
-  if (['draft', 'events'].indexOf(gist?._state?.view) !== -1) {
+  if (['draft', 'events', 'test'].indexOf(gist?._state?.view) !== -1) {
     draft = new pattern(gist)
     if (gist?.renderer === 'svg') draft.use(theme)
-    try { draft.draft() }
+    try {
+      if (gist._state.view !== 'test') draft.draft()
+    }
     catch(error) {
       console.log('Failed to draft pattern', error)
       return <DraftError error={error} app={app} draft={draft} at={'draft'} />

@@ -17,27 +17,28 @@ const order = [
   'info',
   'debug'
 ]
-const Events = props => (
-  <div className="max-w-screen-xl m-auto">
-    <div className="flex flex-col">
-      <ul className="flex flex-row row-wrap">
-        {order.map(type => (props.draft.events[type].length > 0)
-          ? (
-            <li key={type} className="">
-              <a href={`#events-${type}`} className={`text-secondary font-bold capitalize text-xl`}>{type}</a>
-              {type === 'debug' ? '' : <span className="px-2 font-bold">|</span>}
-            </li>
-          ) : (
-            <li key={type} className="text-base-content font-bold capitalize text-xl">
-              <span className="opacity-50">{type}</span>
-              {type === 'debug' ? '' : <span className="px-2 font-bold">|</span>}
-            </li>
-          )
-        )}
-      </ul>
-      {order.map(type => <EventGroup type={type} events={props.draft.events[type]} />)}
+const Events = props => props?.draft?.events
+  ? (
+    <div className="max-w-screen-xl m-auto">
+      <div className="flex flex-col">
+        <ul className="flex flex-row row-wrap">
+          {order.map(type => (props.draft.events[type].length > 0)
+            ? (
+              <li key={type} className="">
+                <a href={`#events-${type}`} className={`text-secondary font-bold capitalize text-xl`}>{type}</a>
+                {type === 'debug' ? '' : <span className="px-2 font-bold">|</span>}
+              </li>
+            ) : (
+              <li key={type} className="text-base-content font-bold capitalize text-xl">
+                <span className="opacity-50">{type}</span>
+                {type === 'debug' ? '' : <span className="px-2 font-bold">|</span>}
+              </li>
+            )
+          )}
+        </ul>
+        {order.map(type => <EventGroup type={type} events={props.draft.events[type]} />)}
+      </div>
     </div>
-  </div>
-)
+  ) : null
 
 export default Events
