@@ -70,12 +70,8 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
           ${isValid() === true && 'border-success text-neutral-content'}
           ${isValid() === null && 'border-base-200 text-base-content'}
        `}>
-          {isValid() === null
-            ? ''
-            : valid
-            ? '👍'
-            : '🤔'
-          }
+          {(isValid() === true) && '👍'}
+          {(isValid() === false) && '🤔'}
         </span>
         <span className={`
           ${valid === false && 'bg-error text-neutral-content'}
