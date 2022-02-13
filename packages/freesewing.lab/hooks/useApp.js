@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Patterns
 import patterns from 'site/patterns.json'
 // Locale and translation
-import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { capitalize } from 'shared/utils'
 
@@ -54,8 +52,6 @@ const initialNavigation = (t) => {
 function useApp(full = true) {
 
   // Locale (aka language)
-  const router = useRouter()
-  const { locale } = router
   const { t } = useTranslation(['app'])
 
   // User color scheme preference

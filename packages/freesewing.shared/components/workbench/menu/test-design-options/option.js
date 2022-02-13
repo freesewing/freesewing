@@ -1,5 +1,5 @@
 import { linkClasses } from 'shared/components/navigation/primary.js'
-import { Li, Ul, Details, Summary, Deg } from 'shared/components/workbench/menu'
+import { Li } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 
 const SumButton = props => (

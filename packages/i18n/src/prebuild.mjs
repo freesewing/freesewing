@@ -1,7 +1,7 @@
 import yaml from 'js-yaml'
 import path from 'path'
 import rdir from 'recursive-readdir'
-import { readdir, readFile, writeFile } from 'fs/promises'
+import { readFile, writeFile } from 'fs/promises'
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
 
@@ -131,7 +131,7 @@ const ${name} = ${JSON.stringify(data, null ,2)}
 
 export default ${name}
 `
-const localeFile = (locale, namespaces) => `${header}
+const localeFile = (namespaces) => `${header}
 ${namespaces
   .map(ns => 'import '+ns+' from "./'+ns+'.mjs"')
   .join("\n")
@@ -180,7 +180,7 @@ const writeFiles = async allNamespaces => {
     promises.push(
       writeFile(
         path.resolve(__dirname, 'next', locale, 'index.mjs', ),
-        localeFile(locale, Object.keys(namespaces))
+        localeFile(Object.keys(namespaces))
       )
     )
   }

@@ -7,7 +7,7 @@ const XrayPart = props => {
   // Don't bother if this is the only part on display
   if (props.gist.only && props.gist.only.length === 1) return null
   const i = props.gist.xray?.reveal
-    ? Object.keys(props.gist.xray?.reveal).indexOf(props.partName)%10
+    ? Object.keys(props.gist.xray.reveal).indexOf(props.partName)%10
     : 0
   const { topLeft, bottomRight } = props.part
 

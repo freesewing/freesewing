@@ -82,7 +82,7 @@ const WorkbenchWrapper = ({ app, pattern }) => {
   let draft = false
   if (['draft', 'events', 'test'].indexOf(gist?._state?.view) !== -1) {
     draft = new pattern(gist)
-    if (gist?.renderer === 'svg') draft.use(theme)
+    if (gist.renderer === 'svg') draft.use(theme)
     try {
       if (gist._state.view !== 'test') draft.draft()
     }
