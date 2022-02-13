@@ -54,7 +54,7 @@ const namespaceFromFile = file => {
   const ext = path.extname(file)
   const name = path.basename(file, ext)
 
-  if (pathContains(file, 'components')) return 'c_' + name
+  //if (pathContains(file, 'components')) return 'c_' + name
   if (pathContains(file, 'options')) return 'o_' + name
   if (pathContains(file, 'plugin')) return 'plugin'
 
