@@ -6,6 +6,7 @@ import account from "./account.mjs"
 import app from "./app.mjs"
 import cfp from "./cfp.mjs"
 import common from "./common.mjs"
+import themes from "./themes.mjs"
 import workbench from "./workbench.mjs"
 import cty from "./cty.mjs"
 import email from "./email.mjs"
@@ -68,6 +69,7 @@ const allNamespaces = {
   app,
   cfp,
   common,
+  themes,
   workbench,
   cty,
   email,
