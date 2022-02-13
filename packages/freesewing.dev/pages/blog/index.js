@@ -6,6 +6,7 @@ import orderBy from 'lodash.orderby'
 import TimeAgo from 'react-timeago'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const strapi = "https://posts.freesewing.org"
 
@@ -76,3 +77,12 @@ const BlogIndexPage = (props) => {
 }
 
 export default BlogIndexPage
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale)),
+    }
+  }
+}
+

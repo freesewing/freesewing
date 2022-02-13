@@ -16,7 +16,7 @@ const run = async () => {
   } else {
     await prebuildLab()
   }
-  if (SITE !== 'dev') await prebuildI18n(SITE)
+  await prebuildI18n(SITE)
   await prebuildContributors(SITE)
   await prebuildPatrons(SITE)
   console.log()

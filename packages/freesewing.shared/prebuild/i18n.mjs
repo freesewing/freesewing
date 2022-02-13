@@ -22,16 +22,19 @@ const writeJson = (site, locale, namespace, content) => fs.writeFileSync(
 export const prebuildI18n = async (site) => {
   // Iterate over locales
   for (const locale in locales) {
-    console.log('Generating translation files for', locale)
-    const loc = locales[locale]
-    // Fan out into namespaces
-    for (const namespace in loc) {
-      writeJson(
-        site, locale, namespace,
-        loc[namespace]
-      )
+    // Only English for dev site
+    if (site !== 'dev' || locale === 'en') {
+      console.log('Generating translation files for', locale)
+      const loc = locales[locale]
+      // Fan out into namespaces
+      for (const namespace in loc) {
+        writeJson(
+          site, locale, namespace,
+          loc[namespace]
+        )
+      }
+      writeJson(site, locale, 'locales', languages)
     }
-    writeJson(site, locale, 'locales', languages)
   }
 }
 
