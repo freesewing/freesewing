@@ -1,8 +1,9 @@
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
-import ModesMenu from './modes.js'
+import ViewMenu from './view.js'
 import DesignOptions from './design-options'
 import CoreSettings from './core-settings'
 import Xray from './xray'
+import TestDesignOptions from './test-design-options'
 
 export const Ul = props => <ul className="pl-5 list-inside">{props.children}</ul>
 export const Li = props => (
@@ -78,18 +79,23 @@ export const TopSumTitle = props => (
   </span>
 )
 export const SecText = props => props.raw
-  ? <span className="text-secondary" dangerouslySetInnerHTML={{__html: props.raw}} />
-  : <span className="text-secondary">{props.children}</span>
+  ? <span className="text-secondary-focus" dangerouslySetInnerHTML={{__html: props.raw}} />
+  : <span className="text-secondary-focus">{props.children}</span>
 
 const WorkbenchMenu = props => {
   return (
     <nav className="smmax-w-96 grow mb-12">
-      <ModesMenu {...props} />
-      {props.mode === 'draft' && (
+      <ViewMenu {...props} />
+      {props.gist?._state?.view === 'draft' && (
         <>
           <DesignOptions {...props} />
           <CoreSettings {...props} />
           {props.gist.renderer === 'react' && <Xray {...props} />}
+        </>
+      )}
+      {props.gist?._state?.view === 'test' && (
+        <>
+          <TestDesignOptions {...props} />
         </>
       )}
     </nav>

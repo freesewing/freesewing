@@ -7,6 +7,7 @@ import MdxWrapper from 'shared/components/wrappers/mdx'
 import Markdown from 'react-markdown'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const strapi = "https://posts.freesewing.org"
 
@@ -104,7 +105,14 @@ const PostPage = ({ post, author }) => {
 export const getStaticProps = async (props) => {
   const { post, author } = await strapiLoader('en', 'dev', 'blog', props.params.slug)
 
-  return { props: { post, author, slug: `blog/${props.params.slug}` } }
+  return {
+    props: {
+      post,
+      author,
+      slug: `blog/${props.params.slug}`,
+      ...(await serverSideTranslations(props.locale)),
+    }
+  }
 }
 
 export const getStaticPaths = async () => {
@@ -120,3 +128,4 @@ export const getStaticPaths = async () => {
 }
 
 export default PostPage
+

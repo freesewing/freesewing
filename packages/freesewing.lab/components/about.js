@@ -19,6 +19,9 @@ const About = () => (
         className="text-secondary font-bold hover-text-secondary-focus hover:underline"
       >freesewing.org</a>, our flagship website for makers.
     </p>
+    <Popout fixme>
+      This lacks translation
+    </Popout>
   </Popout>
 )
 

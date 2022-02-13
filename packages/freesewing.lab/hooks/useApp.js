@@ -1,66 +1,58 @@
 import { useState } from 'react'
-import set from 'lodash.set'
-import mustache from 'mustache'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Patterns
 import patterns from 'site/patterns.json'
-// Locales
-import { strings } from 'pkgs/i18n'
+// Locale and translation
+import { useTranslation } from 'next-i18next'
+import { capitalize } from 'shared/utils'
 
 // Initial navigation
-const initialNavigation = {
-  accessories: {
-    __title: 'accessoryPatterns',
-    __order: 'accessoryPatterns',
-    __linktitle: 'accessoryPatterns',
-    __slug: 'accessories',
-  },
-  blocks: {
-    __title: 'blockPatterns',
-    __order: 'blockPatterns',
-    __linktitle: 'blockPatterns',
-    __slug: 'blocks',
-  },
-  garments: {
-    __title: 'garmentPatterns',
-    __order: 'garmentPatterns',
-    __linktitle: 'GarmentPatterns',
-    __slug: 'garments',
-  },
-  utilities: {
-    __title: 'utilityPatterns',
-    __order: 'utilityPatterns',
-    __linktitle: 'utilityPatterns',
-    __slug: 'utilities',
-  },
-}
-for (const type in patterns) {
-  for (const design of patterns[type]) {
-    initialNavigation[type][design] = {
-      __title: design,
-      __order: design,
-      __linktitle: design,
-      __slug: `${type}/${design}`
+const initialNavigation = (t) => {
+  const base = {
+    accessories: {
+      __title: t('accessoryPatterns'),
+      __order: t('accessoryPatterns'),
+      __linktitle: t('accessoryPatterns'),
+      __slug: 'accessories',
+    },
+    blocks: {
+      __title: t('blockPatterns'),
+      __order: t('blockPatterns'),
+      __linktitle: t('blockPatterns'),
+      __slug: 'blocks',
+    },
+    garments: {
+      __title: t('garmentPatterns'),
+      __order: t('garmentPatterns'),
+      __linktitle: t('garmentPatterns'),
+      __slug: t('garments'),
+    },
+    utilities: {
+      __title: t('utilityPatterns'),
+      __order: t('utilityPatterns'),
+      __linktitle: t('utilityPatterns'),
+      __slug: 'utilities',
+    },
+  }
+  for (const type in patterns) {
+    for (const design of patterns[type]) {
+      base[type][design] = {
+        __title: capitalize(design),
+        __order: design,
+        __linktitle: capitalize(design),
+        __slug: `${type}/${design}`
+      }
     }
   }
+
+  return base
 }
-
-// Translate navigation
-const translateNavigation = (lang, t) => {
-  const newNav = {...initialNavigation}
-  for (const key in newNav) {
-    const translated = t(newNav[key].__title, false, lang)
-    newNav[key].__title = translated
-    newNav[key].__linktitle = translated
-    newNav[key].__order = translated
-  }
-
-  return newNav
-}
-
 
 function useApp(full = true) {
+
+  // Locale (aka language)
+  const { t } = useTranslation(['app'])
 
   // User color scheme preference
   const prefersDarkMode = (typeof window !== 'undefined' && typeof  window.matchMedia === 'function')
@@ -70,46 +62,16 @@ function useApp(full = true) {
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useLocalStorage('theme', prefersDarkMode ? 'dark' : 'light')
-  const [locale, setLocale] = useLocalStorage('locale', 'en')
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(initialNavigation)
+  const [navigation, setNavigation] = useState(initialNavigation(t))
   const [slug, setSlug] = useState('/')
   const [pattern, setPattern] = useState(false)
   const [loading, setLoading] = useState(false)
 
   // State methods
   const togglePrimaryMenu = () => setPrimaryMenu(!primaryMenu)
-  const changeLocale = loc => {
-    setLocale(loc)
-    setNavigation(translateNavigation(loc, t))
-  }
-
-  /*
-   * Translation method
-   */
-  const t = (key, props=false, toLocale=false) => {
-    if (!toLocale) toLocale = locale
-    const template =
-      strings[toLocale][key] ||
-      strings[toLocale][`app.${key}`] ||
-      strings[toLocale][`plugin.${key}`] ||
-      strings.en[`app.${key}`] ||
-      false
-    if (!props && template) return template
-    else if (template) return mustache.render(
-      template.split('{').join('{{').split('}').join('}}'),
-      props
-    )
-    // No translation found
-    //console.log('Missing translation key:', key)
-
-    // If it's a key (no spaces), return the final part, that's slightly better
-    return (typeof key === 'string' && key.indexOf(' ') === -1)
-      ? key.split('.').pop()
-      : key
-  }
 
   return {
     // Static vars
@@ -117,7 +79,6 @@ function useApp(full = true) {
     patterns,
 
     // State
-    locale,
     loading,
     navigation,
     pattern,
@@ -137,11 +98,6 @@ function useApp(full = true) {
 
     // State handlers
     togglePrimaryMenu,
-    changeLocale,
-
-    // Translation
-    t,
-    locales: Object.keys(strings),
   }
 }
 

@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { formatMm } from 'shared/utils.js'
 import ClearIcon from 'shared/components/icons/clear.js'
-import EditIcon from 'shared/components/icons/edit.js'
+import { useTranslation } from 'next-i18next'
 
 const CoreSettingMm = props => {
+  const { t } = useTranslation(['app', 'settings'])
   const { dflt, min, max } = props
   const val = props.gist?.[props.setting]
 
@@ -29,7 +30,7 @@ const CoreSettingMm = props => {
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <p className="m-0 p-0 px-2 mb-2 text-neutral-content opacity-60 italic">
-        {props.app.t(`settings.sa.description`)}
+        {t(`settings:sa.d`)}
       </p>
       <div className="flex flex-row justify-between">
         <span
@@ -37,7 +38,7 @@ const CoreSettingMm = props => {
           dangerouslySetInnerHTML={{__html: formatMm(min, props.gist.units)}}
         />
         <span
-          className={`font-bold ${val===dflt ? 'text-secondary' : 'text-accent'}`}
+          className={`font-bold ${val===dflt ? 'text-secondary-focus' : 'text-accent'}`}
           dangerouslySetInnerHTML={{__html: formatMm(val, props.gist.units)}}
         />
         <span
@@ -60,7 +61,7 @@ const CoreSettingMm = props => {
       <div className="flex flex-row justify-between">
         <span />
         <button
-          title={props.app.t('app.reset')}
+          title={t('reset')}
           className="btn btn-ghost btn-xs text-accent"
           disabled={val === dflt}
           onClick={reset}

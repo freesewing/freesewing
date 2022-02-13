@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import ClearIcon from 'shared/components/icons/clear.js'
+import { useTranslation } from 'next-i18next'
 
 const DesignOptionList = props => {
+  const { t } = useTranslation(['app'])
   const { dflt, list } = props.pattern.config.options[props.option]
   const val = (typeof props.gist?.options?.[props.option] === 'undefined')
     ? dflt
@@ -10,7 +12,6 @@ const DesignOptionList = props => {
   const [value, setValue] = useState(val)
 
   const handleChange = (newVal) => {
-    console.log('setting', newVal)
     if (newVal === dflt) reset()
     else {
       setValue(newVal)
@@ -27,7 +28,7 @@ const DesignOptionList = props => {
       <div className="flex flex-row">
         <div className="grow">
           {list.map(choice => (
-            <button
+            <button key={choice}
               onClick={() => handleChange(choice)}
               className={`
                 mr-1 mb-1 text-left text-lg w-full
@@ -45,12 +46,12 @@ const DesignOptionList = props => {
               `}>
                 <>&deg;</>
               </span>
-              {props.app.t(`options.${props.pattern.config.name}.${props.option}.options.${choice}`)}
+              {props.ot(`${props.option}.o.${choice}`)}
             </button>
           ))}
         </div>
         <button
-          title={props.app.t('app.reset')}
+          title={t('reset')}
           className=""
           disabled={val === dflt}
           onClick={reset}

@@ -4,6 +4,7 @@ import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListOption from 'shared/components/workbench/inputs/design-option-list'
 import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
 import { Li, Ul, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
+import { useTranslation } from 'next-i18next'
 
 const values = {
   pct: props => {
@@ -13,7 +14,7 @@ const values = {
     return (
       <span className={
         val=== props.pattern.config.options[props.option].pct/100
-          ? 'text-secondary'
+          ? 'text-secondary-focus'
           : 'text-accent'
       }>
         {formatPercentage(val)}
@@ -25,17 +26,18 @@ const values = {
     )
   },
   bool: props => {
+    const { t } = useTranslation(['app'])
     const dflt = props.pattern.config.options[props.option].bool
     const current = props.gist?.options?.[props.option]
     return (
       <span className={
         (dflt==current || typeof current === 'undefined')
-          ? 'text-secondary'
+          ? 'text-secondary-focus'
           : 'text-accent'
       }>
         {props.gist?.options?.[props.option]
-          ? props.app.t('app.yes')
-          : props.app.t('app.no')
+          ? t('yes')
+          : t('no')
         }
       </span>
     )
@@ -44,22 +46,22 @@ const values = {
     const dflt = props.pattern.config.options[props.option].count
     const current = props.gist?.options?.[props.option]
     return (dflt==current || typeof current === 'undefined')
-      ? <span className="text-secondary">{dflt}</span>
+      ? <span className="text-secondary-focus">{dflt}</span>
       : <span className="text-accent">{current}</span>
   },
   list: props => {
     const dflt = props.pattern.config.options[props.option].dflt
     const current = props.gist?.options?.[props.option]
-    const prefix = `options.${props.pattern.config.name}.${props.option}.options.`
+    const prefix = `${props.option}.o.`
     return (dflt==current || typeof current === 'undefined')
-      ? <span className="text-secondary">{props.app.t(prefix+dflt)}</span>
-      : <span className="text-accent">{props.app.t(prefix+current)}</span>
+      ? <span className="text-secondary-focus">{props.t(prefix+dflt)}</span>
+      : <span className="text-accent">{props.t(prefix+current)}</span>
   },
   deg: props => {
     const dflt = props.pattern.config.options[props.option].deg
     const current = props.gist?.options?.[props.option]
     return (dflt==current || typeof current === 'undefined')
-      ? <span className="text-secondary">{dflt}&deg;</span>
+      ? <span className="text-secondary-focus">{dflt}&deg;</span>
       : <span className="text-accent">{current}&deg;</span>
   },
   mm: props => {
@@ -83,6 +85,7 @@ const inputs = {
 
 
 const Option = props => {
+  const { t } = useTranslation([`o_${props.pattern.config.name}`])
   const type = optionType(props.pattern.config.options[props.option])
   const Input = inputs[type]
   const Value = values[type]
@@ -101,11 +104,9 @@ const Option = props => {
         <SumButton onClick={toggleBoolean}>
           <SumDiv>
             <Deg />
-            <span>
-              { props.app.t(`options.${props.pattern.config.name}.${props.option}.title`) }
-            </span>
+            <span>{t(`${props.option}.t`) }</span>
           </SumDiv>
-          <Value type={type} {...props} />
+          <Value type={type} {...props} t={t} />
         </SumButton>
       </Li>
     ) : (
@@ -114,14 +115,12 @@ const Option = props => {
           <Summary>
             <SumDiv>
               <Deg />
-              <span>
-                { props.app.t(`options.${props.pattern.config.name}.${props.option}.title`) }
-              </span>
+              <span>{t(`${props.option}.t`)}</span>
             </SumDiv>
-            <Value type={type} {...props} />
+            <Value type={type} {...props} t={t} />
             <Chevron w={6} m={3}/>
           </Summary>
-          <Input {...props} />
+          <Input {...props} ot={t} />
         </Details>
       </Li>
     )

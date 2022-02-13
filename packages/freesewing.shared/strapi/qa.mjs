@@ -1,7 +1,6 @@
 /*
  * This tries to fix as many Strapi things as possible
  */
-import { languages as allLanguages } from '../config/freesewing.mjs'
 
 // What types of content to load
 const content = {
@@ -12,7 +11,7 @@ const content = {
 // What languages to handle
 const languages = {
   dev: ['en'],
-  org: allLanguages,
+  org: ['en', 'es', 'de', 'nl', 'fr']
 }
 
 /*

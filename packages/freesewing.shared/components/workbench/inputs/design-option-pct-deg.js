@@ -2,6 +2,7 @@ import { useState } from 'react'
 import ClearIcon from 'shared/components/icons/clear.js'
 import EditIcon from 'shared/components/icons/edit.js'
 import { formatMm, round } from 'shared/utils.js'
+import { useTranslation } from 'next-i18next'
 
 const EditOption = props => (
   <div className="form-control mb-2 w-full">
@@ -26,6 +27,7 @@ const EditOption = props => (
 
 
 const DesignOptionPctDeg = props => {
+  const { t } = useTranslation(['app'])
   const suffix = props.type === 'deg' ? '°' : '%'
   const factor = props.type === 'deg' ? 1 : 100
   const { max, min } = props.pattern.config.options[props.option]
@@ -50,7 +52,7 @@ const DesignOptionPctDeg = props => {
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
       <p className="m-0 p-0 px-2 mb-2 text-neutral-content opacity-60 italic">
-        {props.app.t(`options.${props.pattern.config.name}.${props.option}.description`, props.app.locale)}
+        {props.ot(`${props.option}.d`)}
       </p>
       <div className="flex flex-row justify-between">
         {editOption
@@ -60,7 +62,7 @@ const DesignOptionPctDeg = props => {
               min={min}
               max={max}
               setEditOption={setEditOption}
-              t={props.app.t}
+              t={t}
               suffix={suffix}
             />
           : (
@@ -97,7 +99,7 @@ const DesignOptionPctDeg = props => {
         </span>
         <div>
           <button
-            title={props.app.t('app.reset')}
+            title={t('reset')}
             className="btn btn-ghost btn-xs text-accent"
             disabled={val === dflt}
             onClick={reset}
@@ -105,7 +107,7 @@ const DesignOptionPctDeg = props => {
             <ClearIcon />
           </button>
           <button
-            title={props.app.t('app.editThing', { thing: suffix })}
+            title={t('editThing', { thing: suffix })}
             className={`
               btn btn-ghost btn-xs hover:text-secondary-focus
               ${editOption

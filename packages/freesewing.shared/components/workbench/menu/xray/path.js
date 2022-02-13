@@ -6,6 +6,7 @@ import Ops from './path-ops.js'
 const XrayPath = ({ pathName, partName, draft, t, units }) => {
   const path = draft?.parts?.[partName]?.paths?.[pathName]
 
+  if (!path) return null
   return (
     <Ul>
       <Attributes attr={path.attributes} />

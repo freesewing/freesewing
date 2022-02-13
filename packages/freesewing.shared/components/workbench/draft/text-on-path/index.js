@@ -1,9 +1,12 @@
+import { useTranslation } from 'next-i18next'
+
 const TextOnPath = (props) => {
+  const { t } = useTranslation(['app'])
   const text = []
   // Handle translation (and spaces)
   let translated = ''
   for (let string of props.path.attributes.getAsArray('data-text')) {
-    translated += props.app.t(string, false, props.locale).replace(/&quot;/g, '"') + ' '
+    translated += t(string).replace(/&quot;/g, '"') + ' '
   }
   const textPathProps = {
     xlinkHref: '#' + props.pathId,

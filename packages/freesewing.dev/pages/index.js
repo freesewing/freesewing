@@ -4,6 +4,7 @@ import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import Link from 'next/link'
 import Script from 'next/script'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const HomePage = (props) => {
   const app = useApp()
@@ -122,3 +123,12 @@ const HomePage = (props) => {
 }
 
 export default HomePage
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale)),
+    }
+  }
+}
+

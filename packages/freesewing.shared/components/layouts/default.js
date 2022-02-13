@@ -121,7 +121,7 @@ const DefaultLayout = ({
           sm:flex-row-reverse
           ${workbench && collapsePrimaryNav
             ? 'sm:px-0 sm:w-16'
-            : 'sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32 sm:w-[38.2%]'
+            : 'sm:px-1 md:px-4 lg:px-8 sm:w-[38.2%]'
           }
         `}>
           {workbench && (
@@ -144,7 +144,7 @@ const DefaultLayout = ({
           sm:px-1 md:px-4 lg:px-8
           ${workbench && collapsePrimaryNav
             ? ''
-            : 'max-w-61.8% xl:px-16 2xl:px-32'
+            : 'max-w-61.8%'
           }
         `}>
           <div className={workbench ? '' : "max-w-5xl"}>
@@ -162,9 +162,9 @@ const DefaultLayout = ({
             ${asideClasses}
             ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
             sm:flex-row
-            ${workbench && collapseAltMenu
+            ${collapseAltMenu
               ? 'sm:px-0 sm:w-16'
-              : 'sm:px-1 md:px-4 lg:px-8 xl:px-16 2xl:px-32 sm:w-[38.2%]'
+              : 'sm:px-1 md:px-4 lg:px-8 sm:w-[38.2%]'
             }
           `}>
             <div className={`hidden sm:flex`}>

@@ -1,9 +1,12 @@
+import { useTranslation } from 'next-i18next'
+
 const Text = (props) => {
+  const { t } = useTranslation(['app'])
   let text = []
   // Handle translation
   let translated = ''
   for (let string of props.point.attributes.getAsArray('data-text')) {
-    translated += props.app.t(string.toString(), false, props.locale).replace(/&quot;/g, '"') + ' '
+    translated += t(string.toString()).replace(/&quot;/g, '"') + ' '
   }
   // Handle muti-line text
   if (translated.indexOf('\n') !== -1) {

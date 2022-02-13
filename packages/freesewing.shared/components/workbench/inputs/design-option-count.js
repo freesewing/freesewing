@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ClearIcon from 'shared/components/icons/clear.js'
 import EditIcon from 'shared/components/icons/edit.js'
+import { useTranslation } from 'next-i18next'
 
 const EditCount = props => (
   <div className="form-control mb-2 w-full">
@@ -25,6 +26,7 @@ const EditCount = props => (
 
 
 const DesignOptionCount = props => {
+  const { t } = useTranslation(['app'])
   const { count, max, min } = props.pattern.config.options[props.option]
   const val = (typeof props.gist?.options?.[props.option] === 'undefined')
     ? count
@@ -53,7 +55,7 @@ const DesignOptionCount = props => {
               min={min}
               max={max}
               setEditCount={setEditCount}
-              t={props.app.t}
+              t={t}
             />
           : (
             <>
@@ -84,7 +86,7 @@ const DesignOptionCount = props => {
         <span></span>
         <div>
           <button
-            title={props.app.t('app.reset')}
+            title={t('reset')}
             className="btn btn-ghost btn-xs text-accent"
             disabled={val === count}
             onClick={reset}
@@ -92,7 +94,7 @@ const DesignOptionCount = props => {
             <ClearIcon />
           </button>
           <button
-            title={props.app.t('app.editThing', { thing: '#' })}
+            title={t('editThing', { thing: '#' })}
             className={`
               btn btn-ghost btn-xs hover:text-secondary-focus
               ${editCount

@@ -11,7 +11,7 @@ const strokes = {
 }
 let step = 0
 
-const fill = {
+const fills = {
   light: (
     <linearGradient id="light" x1="0%" y1="0%" x2="50%" y2="100%">
       <stop offset={`10%`} stopColor={colors.yellow[500]} stopOpacity="1.0" />
@@ -81,7 +81,7 @@ const Logo = ({ size=false, className='stroke-0', theme='light', fill=false, str
   return (
     <svg {...svgProps}>
       <defs>
-        {fill && fill[theme]}
+        {fill && fills[theme]}
         <path id="react-logo" d={path} />
       </defs>
       <use xlinkHref="#react-logo" fill="none" stroke={stroke || strokes[theme]} strokeWidth="0.5"/>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'next-i18next'
 
 /*
  * This is a single input for a measurements
@@ -9,17 +10,20 @@ import React, { useState, useEffect } from 'react'
  * measurement and I always have some typo in it because dyslexia.
  */
 const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
+  const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
-  const title = app.t(`measurements.${m}`)
-  const isValid = input => {
-    if (input === '') return ''
-    return !isNaN(input)
-  }
+  const title = t(`measurements:${m}`)
+
+  const isValValid = val => (typeof val === 'undefined' || val === '')
+      ? null
+      : !isNaN(val)
+  const isValid = (newVal) => (typeof newVal === 'undefined')
+    ? isValValid(gist?.measurements?.[m])
+    : isValValid(newVal)
 
   const update = evt => {
     setVal(evt.target.value)
     const ok = isValid(evt.target.value)
-    console.log({ok})
     if (ok) {
       setValid(true)
       updateMeasurements(evt.target.value*10, m)
@@ -27,10 +31,6 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   }
 
   const [val, setVal] = useState(gist?.measurements?.[m] || '')
-  const [valid, setValid] = useState(typeof gist?.measurements?.[m] === 'undefined'
-    ? '' :
-    isValid(gist.measurements[m])
-  )
 
   useEffect(() => {
     if (gist?.measurements?.[m]) setVal(gist.measurements[m]/10)
@@ -38,6 +38,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
 
   if (!m) return null
 
+  const valid = isValid()
   return (
     <div className="form-control mb-2" key={`wrap-${m}`}>
       <label className="label">
@@ -45,10 +46,10 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
         <a
           href={`${prefix}/docs/measurements/${m.toLowerCase()}`}
           className="label-text-alt text-secondary hover:text-secondary-focus hover:underline"
-          title={`${app.t('docs')}: ${app.t(`measurements.${m}`)}`}
+          title={`${t('docs')}: ${t(m)}`}
           tabIndex="-1"
         >
-          {app.t('docs')}
+          {t('docs')}
         </a>
       </label>
       <label className="input-group input-group-lg">
@@ -57,30 +58,27 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
           type="text"
           placeholder={title}
           className={`
-            input input-lg input-bordered grow text-base-content
-            ${valid === false && 'input-error'}
-            ${valid === true && 'input-success'}
+            input input-lg input-bordered grow text-base-content border-r-0
+            ${isValid() === false && 'input-error'}
+            ${isValid() === true && 'input-success'}
           `}
           value={val}
           onChange={update}
         />
+        <span role="img" className={`bg-transparent border-y
+          ${isValid() === false && 'border-error text-neutral-content'}
+          ${isValid() === true && 'border-success text-neutral-content'}
+          ${isValid() === null && 'border-base-200 text-base-content'}
+       `}>
+          {(isValid() === true) && '👍'}
+          {(isValid() === false) && '🤔'}
+        </span>
         <span className={`
           ${valid === false && 'bg-error text-neutral-content'}
           ${valid === true && 'bg-success text-neutral-content'}
-          ${valid === '' && 'bg-base-200 text-base-content'}
+          ${valid === null && 'bg-base-200 text-base-content'}
        `}>
           cm
-        </span>
-      </label>
-      <label className="label">
-        <span className="label-text-alt">
-          {valid === ''
-            ? ''
-            : valid
-            ? 'Looks good'
-            : 'Invalid'
-          }
-          {val}
         </span>
       </label>
     </div>

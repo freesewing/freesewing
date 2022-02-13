@@ -117,7 +117,7 @@ const PassiveXrayPoint = props => (
       cy={props.point.y}
       r={7.5 * props.gist.scale}
       className="opacity-0 stroke-lining fill-lining hover:opacity-25 hover:cursor-pointer"
-      onClick={props.gist?.xray?.parts?.[props.partName]?.points?.[props.pointName]
+      onClick={props.gist.xray?.parts?.[props.partName]?.points?.[props.pointName]
         ? () => props.unsetGist(
           ['xray', 'parts', props.partName, 'points', props.pointName]
         )

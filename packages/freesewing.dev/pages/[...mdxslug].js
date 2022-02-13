@@ -5,6 +5,7 @@ import mdxLoader from 'shared/mdx/loader'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const MdxPage = props => {
 
@@ -58,7 +59,7 @@ export default MdxPage
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
 
   const { mdx, intro } = await mdxLoader('en', 'dev', params.mdxslug.join('/'))
 
@@ -72,7 +73,8 @@ export async function getStaticProps({ params }) {
         slugArray: params.mdxslug,
         ...mdxMeta[params.mdxslug.join('/')],
       },
-      params
+      params,
+      ...(await serverSideTranslations(locale)),
     }
   }
 }
@@ -94,3 +96,4 @@ export async function getStaticPaths() {
     fallback: false
   }
 }
+

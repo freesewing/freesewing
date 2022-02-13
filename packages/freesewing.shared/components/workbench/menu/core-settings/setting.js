@@ -1,6 +1,5 @@
 import { Chevron } from 'shared/components/navigation/primary.js'
 import PctDegOption from 'shared/components/workbench/inputs/design-option-pct-deg'
-import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListSetting from './core-setting-list'
 import OnlySetting from './core-setting-only'
 import MmSetting from './core-setting-mm'
@@ -8,33 +7,34 @@ import NrSetting from './core-setting-nr'
 import BoolSetting from './core-setting-bool.js'
 import SaBoolSetting from './core-setting-sa-bool.js'
 import SaMmSetting from './core-setting-sa-mm.js'
-import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
+import { formatMm } from 'shared/utils.js'
 import { SecText, Li, Details, Summary, SumDiv, Deg } from 'shared/components/workbench/menu/index.js'
+import { useTranslation } from 'next-i18next'
 
 const settings = {
   paperless: props => (
     <SecText>
-      {props.app.t(`app.${props.gist.paperless ? 'yes' : 'no'}`)}
+      {props.t(props.gist.paperless ? 'yes' : 'no')}
     </SecText>
   ),
   complete: props => (
     <SecText>
-      {props.app.t(`app.${props.gist.complete ? 'yes' : 'no'}`)}
+      {props.t(props.gist.complete ? 'yes' : 'no')}
     </SecText>
   ),
   debug: props => (
     <SecText>
-      {props.app.t(`app.${props.gist.debug ? 'yes' : 'no'}`)}
+      {props.t(props.gist.debug ? 'yes' : 'no')}
     </SecText>
   ),
   locale: props => (
     <SecText>
-      {props.app.t(`i18n.${props.gist.locale}`)}
+      {props.t(`i18n:${props.gist.locale}`)}
     </SecText>
   ),
   units: props => (
     <SecText>
-      {props.app.t(`app.${props.gist.units}Units`)}
+      {props.t(`${props.gist.units}Units`)}
     </SecText>
   ),
   margin: props => <SecText raw={formatMm(props.gist.margin, props.gist.units)} />,
@@ -49,7 +49,7 @@ const settings = {
   ),
   only: props => (props.gist?.only && props.gist.only.length > 0)
     ? <SecText>{props.gist.only.length}</SecText>
-    : <span className="text-secondary">{props.app.t('app.default')}</span>
+    : <span className="text-secondary-focus">{props.t('default')}</span>
 }
 
 const inputs = {
@@ -57,14 +57,14 @@ const inputs = {
     {...props}
     list={props.config.list.map(key => ({
       key,
-      title: props.app.t(`i18n.${key}`)
+      title: props.t(`i18n:${key}`)
     }))}
   />,
   units: props => <ListSetting
     {...props}
     list={props.config.list.map(key => ({
       key,
-      title: props.app.t(`app.${key}Units`)
+      title: props.t(`${key}Units`)
     }))}
   />,
   margin: props => <MmSetting {...props} {...props.config} />,
@@ -81,7 +81,7 @@ const inputs = {
 }
 
 const Setting = props => {
-
+  const { t } = useTranslation(['app', 'i18n', 'settings'])
   if (props.setting === 'saBool')
     return <SaBoolSetting {...props} {...props.config} />
   if (['paperless', 'complete', 'debug', 'xray'].indexOf(props.setting) !== -1)
@@ -99,17 +99,17 @@ const Setting = props => {
             {props.setting === 'saMm'
               ? (
                 <>
-                  <span>{props.app.t(`settings.sa.title`)}</span>
-                  <span className="ml-4 opacity-50">[ {props.app.t(`app.size`)} ]</span>
+                  <span>{t(`settings:sa.t`)}</span>
+                  <span className="ml-4 opacity-50">[ {t(`size`)} ]</span>
                 </>
               )
-              : <span>{props.app.t(`settings.${props.setting}.title`)}</span>
+              : <span>{t(`settings:${props.setting}.t`)}</span>
             }
           </SumDiv>
-          <Value setting={props.setting} {...props} />
+          <Value setting={props.setting} {...props} t={t}/>
           <Chevron />
         </Summary>
-        <Input {...props} />
+        <Input {...props} t={t} />
       </Details>
     </Li>
   )
