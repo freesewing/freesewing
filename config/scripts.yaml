@@ -46,6 +46,7 @@ i18n:
   modulebuild: '!'
   test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
   testci: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
+  prebuild: 'node src/prebuild.mjs'
 pattern-info:
   cibuild_step1: '!'
   cibuild_step2: 'node src/prebuild.js && rollup -c'

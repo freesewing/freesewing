@@ -2,6 +2,12 @@ import yaml from 'js-yaml'
 import path from 'path'
 import rdir from 'recursive-readdir'
 import { readdir, readFile, writeFile } from 'fs/promises'
+import { fileURLToPath } from 'url'
+import { dirname } from 'path'
+
+// No __dirname in Node 14
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 /*
  * Helper method to get a list of yaml/yml files.
@@ -10,7 +16,7 @@ import { readdir, readFile, writeFile } from 'fs/promises'
 const getTranslationFileList = async () => {
   let allFiles
   try {
-    allFiles = await rdir(path.resolve('.', 'locales'))
+    allFiles = await rdir(path.resolve(__dirname, 'locales'))
   }
   catch (err) {
     console.log(err)
@@ -137,7 +143,7 @@ const allNamespaces = {
 
 export default allNamespaces
 `
-const indexFile = (locales) => `${header}
+const indexFile = (locales, data) => `${header}
 ${locales
   .map(l => 'import '+l+'Namespaces from "./next/'+l+'/index.mjs"')
   .join("\n")
@@ -145,7 +151,15 @@ ${locales
 
 ${locales
   .map(l => 'export const '+l+' = '+l+'Namespaces')
-  .join("\n")}
+  .join("\n")
+}
+
+export const languages = {
+${locales
+  .map(l => '  '+l+': "'+ data[l].i18n[l]+'"')
+  .join(",\n")
+}
+}
 `
 
 /*
@@ -157,7 +171,7 @@ const writeFiles = async allNamespaces => {
     for (const [namespace, data] of Object.entries(namespaces)) {
       promises.push(
         writeFile(
-          path.resolve('.', 'next', locale, namespace+'.mjs', ),
+          path.resolve(__dirname, 'next', locale, namespace+'.mjs', ),
           namespaceFile(namespace, data)
         )
       )
@@ -165,7 +179,7 @@ const writeFiles = async allNamespaces => {
     // Locale index files
     promises.push(
       writeFile(
-        path.resolve('.', 'next', locale, 'index.mjs', ),
+        path.resolve(__dirname, 'next', locale, 'index.mjs', ),
         localeFile(locale, Object.keys(namespaces))
       )
     )
@@ -173,8 +187,8 @@ const writeFiles = async allNamespaces => {
   // Locale index files
   promises.push(
     writeFile(
-      path.resolve('.', 'next.mjs', ),
-      indexFile(Object.keys(allNamespaces))
+      path.resolve(__dirname, 'next.mjs', ),
+      indexFile(Object.keys(allNamespaces), allNamespaces)
     )
   )
   await Promise.all(promises)

@@ -13,3 +13,11 @@ export const en = enNamespaces
 export const es = esNamespaces
 export const fr = frNamespaces
 export const nl = nlNamespaces
+
+export const languages = {
+  de: "Deutsch",
+  en: "English",
+  es: "Español",
+  fr: "Français",
+  nl: "Nederlands"
+}
