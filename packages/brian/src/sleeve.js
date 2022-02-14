@@ -27,12 +27,20 @@ export default (part) => {
 
   // Paths
   paths.sleevecap.render = false
-  paths.seam = new Path()
-    .move(points.bicepsLeft)
-    .move(points.wristLeft)
+
+  paths.saBase = new Path()
     .move(points.wristRight)
     .line(points.bicepsRight)
     .join(paths.sleevecap)
+    .line(points.wristLeft)
+    .setRender(false)
+
+  paths.hemBase = new Path()
+    .move(points.wristLeft)
+    .line(points.wristRight)
+    .setRender(false)
+
+  paths.seam = paths.saBase.join(paths.hemBase)
     .close()
     .attr('class', 'fabric')
 
@@ -55,7 +63,12 @@ export default (part) => {
     points.backNotch = paths.sleevecap.reverse().shiftAlong(store.get('backArmholeToArmholePitch'))
     snippets.frontNotch = new Snippet('notch', points.frontNotch)
     snippets.backNotch = new Snippet('bnotch', points.backNotch)
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    if (sa) {
+      paths.sa = paths.saBase.offset(sa)
+        .join(paths.hemBase.offset(sa * 4))
+        .close()
+        .attr('class', 'fabric sa')
+    }
   }
 
   // Paperless?

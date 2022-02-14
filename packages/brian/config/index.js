@@ -20,7 +20,10 @@ export default {
       'lengthBonus',
       'sleeveLengthBonus',
       'draftForHighBust',
-      'fabricStretch'
+      'fabricStretch',
+      //for testing
+      'armscyeToWaist',
+      'armscye'
     ],
     style: ['s3Collar', 's3Armhole', 'pullover'],
     advanced: [
@@ -70,8 +73,10 @@ export default {
     'shoulderToShoulder',
     'shoulderToWrist',
     'wrist',
-    'highBust',
     'head'
+  ],
+  optionalMeasurements: [
+    'highBust',
   ],
   dependencies: {
     back: 'base',
@@ -92,6 +97,9 @@ export default {
     pullover: { bool: true },
     collarFactor: 4.8,
     draftForHighBust: { bool: false },
+    //TODO: for testing, add measurements instead
+    armscyeToWaist: {pct: 43, min: 25, max: 100  }, // armscyeToWaist * hpsToWaistBack
+    armscye: {pct: 33, min: 20, max: 80}, // bicep * ( 1 + armscye)
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
@@ -103,7 +111,7 @@ export default {
     chestEase: { pct: 0, min: -4, max: 20 },
     collarEase: { pct: 3.5, min: 0, max: 10 },
     cuffEase: { pct: 20, min: 0, max: 200 },
-    frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
+    frontArmholeDeeper: { pct: 20, min: 0, max: 50 },
     lengthBonus: { pct: 0, min: 0, max: 60 },
     shoulderEase: { pct: 0, min: -2, max: 6 },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80 },

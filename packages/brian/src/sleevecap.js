@@ -17,18 +17,15 @@ function draftSleevecap(part) {
   let { store, measurements, options, Point, points, Path, paths } = part.shorthand()
   // Sleeve center axis
 
+  const biceps = measurements.biceps * (1 + options.bicepsEase)
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
     90,
-    options.sleevecapTopFactorY *
-      ( measurements.biceps *
-        (1 + options.bicepsEase) *
-        options.armholeDepthFactor *
-        store.get('sleeveFactor'))
+    (store.get('armscye') / Math.PI) * store.get('sleeveFactor')
   )
 
   // Left and right biceps points, limit impact to the biceps or sleeveWidthGuarantee setting
-  let halfWidth = measurements.biceps * (1 + options.bicepsEase) * store.get('stretchFactor') / 2;
+  let halfWidth  = biceps * store.get('stretchFactor') / 2;
   points.bicepsLeft = points.centerBiceps.shift(180,halfWidth)
   points.bicepsRight = points.bicepsLeft.flipX(points.centerBiceps)
 
@@ -39,6 +36,21 @@ function draftSleevecap(part) {
     points.capRight,
     options.sleevecapTopFactorX
   )
+
+  // Test sine Sleevecap seamline
+  const armholeDepth = store.get('armholeDepth');
+  const bicepsDiameter = biceps / Math.PI;
+  const capHeight = Math.sqrt( armholeDepth*armholeDepth -  bicepsDiameter*bicepsDiameter)
+  const sineCPRatio =  0.3642
+  points.centerCapS = points.centerBiceps.shift(
+    90,
+    capHeight//(measurements.biceps * (1 + options.bicepsEase) )
+  )
+
+  paths.sineSleevecap = new Path()
+    .move(points.bicepsRight)
+    .curve(points.bicepsRight.shift(180,halfWidth * sineCPRatio), points.centerCapS.shift(0,halfWidth * sineCPRatio), points.centerCapS)
+    .curve(points.centerCapS.shift(180,halfWidth * sineCPRatio), points.bicepsLeft.shift(0,halfWidth * sineCPRatio), points.bicepsLeft)
 
   // Pitch points
   let width = points.bicepsRight.x
@@ -125,12 +137,15 @@ function draftSleevecap(part) {
 }
 
 export default (part) => {
-  let { store, units, options, Point, points, paths, raise } = part.shorthand()
+  let { store, units, options, Point, measurements, points, paths, raise } = part.shorthand()
 
   let armholeLength = store.get('frontArmholeLength') + store.get('backArmholeLength')
   let sleevecapEase = armholeLength * options.sleevecapEase
   store.set('sleevecapEase', sleevecapEase)
   store.set('sleevecapTarget', armholeLength + sleevecapEase)
+
+  const armscyeDepth = options.armscyeToWaist * measurements.hpsToWaistBack
+  console.debug(`armhole:${armholeLength}, armscye:${store.get('armscye')}, armscyeDepth: ${armscyeDepth}` );
 
   store.set('sleeveFactor', 1)
   let run = 0
@@ -138,7 +153,7 @@ export default (part) => {
   do {
     draftSleevecap(part)
     // Uncomment this line to see all sleevecap iterations
-    // paths[run] = paths.sleevecap;
+    paths[run] = paths.sleevecap;
     delta = sleevecapDelta(store)
     sleevecapAdjust(store)
     run++

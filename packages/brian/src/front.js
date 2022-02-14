@@ -130,7 +130,7 @@ export default (part) => {
     paths.fBust = new Path()
       .move(points.waist)
       .curve(points.waistCp2, points.bustCp1, points.bust)
-      .curve_(points.bustCp2, points.armhole)
+      .curve(points.bustCp2, points.armhole.shiftFractionTowards(points.bust, 0.2), points.armhole)
       .setRender(false)
   } else {
     paths.fBust = new Path()
@@ -149,11 +149,7 @@ export default (part) => {
     .join(paths.frontCollar)
     .setRender(false)
 
-  paths.seam = new Path()
-    .move(points.cfNeck)
-    .line(points.cfHem)
-    .join(paths.hemBase)
-    .join(paths.saBase)
+  paths.seam = paths.saBase.join(paths.hemBase)
     .close()
     .attr('class', 'fabric')
 
@@ -175,13 +171,12 @@ export default (part) => {
       snippets.bustNotch = new Snippet('notch', points.bust)
     }
     paths.waist = new Path().move(points.cfWaist).line(points.waist).attr('class', 'help')
+
     if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
+      paths.sa = paths.saBase.offset(sa)
+        .join(paths.hemBase.offset(sa * 4))
+        .close()
         .attr('class', 'fabric sa')
-        .line(points.cfNeck)
-        .move(points.cfHem)
-      paths.sa.line(paths.sa.start())
     }
 
     // Add notches if the shoulder seam is shifted

@@ -41,12 +41,17 @@ export default (part) => {
   points.shoulder = new Point(xShoulder, Math.max(yShoulder, 0));
 
   points.cbShoulder = new Point(0, points.shoulder.y)
-  points.cbChest = new Point(0, points.shoulder.y + measurements.biceps/4 + measurements.biceps/(2*Math.PI))
+  //TODO use a proper measurement for armscyeToWaist
+  const armscyeToWaist = options.armscyeToWaist * measurements.hpsToWaistBack
+  const armscye = measurements.biceps * (1 + options.armscye)
 
-  points.cbArmhole = new Point(
-    0,
-    points.shoulder.y + measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor * getStretchFactor()
-  )
+  points.cbChest = new Point(0, armscyeToWaist)
+  store.set('armscye', armscye)
+  const armscyeDepth = armscyeToWaist - points.shoulder.y
+  const minArmscyeDepth = 1.2 * store.get('armscye')/Math.PI
+  store.set('armholeDepth',  (1 + options.bicepsEase) * Math.max(armscyeDepth,  minArmscyeDepth));
+
+  points.cbArmhole = new Point(0, points.shoulder.y + store.get('armholeDepth'))
   points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
   // Side back (cb) vertical axis
@@ -77,19 +82,22 @@ export default (part) => {
   points.bustCp1 = points.bust.shift(-90, waistToBust / 3)
   points.bustCp2 = points.bust.shift(90, (measurements.hpsToBust - points.cbArmhole.y) / 2)
 
-  // Armhhole
+  // Armhole
+  // TODO calculate the pitch as minor radius of the armhole ellipse (armscye -> circumference; armscyeDepth -> armscyeHeight -> major radius)
+  // TODO broken for deeper front pitch
   points.armholePitch = new Point(
     (xShoulder * options.acrossBackFactor),
     points.shoulder.y + points.shoulder.dy(points.armhole) / 2
   )
   points._tmp1 = new Point(points.armholePitch.x, points.armhole.y)
-  points._tmp2 = points._tmp1.shift(45, 10)
   points._tmp3 = utils.beamsIntersect(
     points._tmp1,
-    points._tmp2,
+    points._tmp1.shift(45, 10),
     points.armhole,
     points.armholePitch
   )
+
+  //TODO get rid of armholeHollow
   points.armholeHollow = points._tmp1.shiftFractionTowards(points._tmp3, 0.5)
   points.armholeCp2 = points.armhole.shift(180, points._tmp1.dx(points.armhole) / 4)
   points.armholeHollowCp1 = points.armholeHollow.shift(
@@ -100,6 +108,7 @@ export default (part) => {
     135,
     points.armholePitch.dx(points.armholeHollow)
   )
+  //TODO align with point.shoulderCp1
   points.armholePitchCp1 = points.armholePitch.shift(
     -90,
     points.armholePitch.dy(points.armholeHollow) / 2
@@ -150,7 +159,7 @@ export default (part) => {
    * So let's make the people happy
    */
   // Front armhole is a bit deeper, add those points
-  let deeper = measurements.chest * options.frontArmholeDeeper
+  let deeper = armscyeDepth * options.frontArmholeDeeper
   for (const p of ['', 'Cp1', 'Cp2']) {
     points[`frontArmholePitch${p}`] = points[`armholePitch${p}`].shift(180, deeper)
   }
