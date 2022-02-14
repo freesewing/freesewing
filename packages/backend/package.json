@@ -81,7 +81,7 @@
     "query-string": "7.1.1",
     "remark": "13",
     "remark-frontmatter": "3",
-    "remark-parse": "^9.0.0",
+    "remark-parse": "^10.0.1",
     "remark-plain-text": "^0.2.0",
     "rimraf": "2.6.2",
     "sharp": "^0.30.1",
