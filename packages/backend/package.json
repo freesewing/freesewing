@@ -80,7 +80,7 @@
     "passport-jwt": "4.0.0",
     "query-string": "7.1.1",
     "remark": "13",
-    "remark-frontmatter": "3",
+    "remark-frontmatter": "4",
     "remark-parse": "^9.0.0",
     "remark-plain-text": "^0.2.0",
     "rimraf": "2.6.2",
