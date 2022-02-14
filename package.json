@@ -90,7 +90,7 @@
     "lerna": "^4.0.0",
     "mocha": "^9.1.1",
     "mustache": "^4.0.1",
-    "netlify-cli": "^8.4.3",
+    "netlify-cli": "^9.4.0",
     "node-sass": "^7.0.1",
     "nyc": "^15.1.0",
     "open-color": "^1.7.0",
