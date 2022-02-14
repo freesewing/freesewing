@@ -26,7 +26,7 @@
     "lodash.get": "^4.4.2",
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
-    "netlify-cli": "^8.4.2",
+    "netlify-cli": "^9.4.0",
     "next": "latest",
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
