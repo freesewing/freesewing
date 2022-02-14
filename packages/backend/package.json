@@ -84,7 +84,7 @@
     "remark-parse": "^9.0.0",
     "remark-plain-text": "^0.2.0",
     "rimraf": "2.6.2",
-    "sharp": "^0.29.3",
+    "sharp": "^0.30.1",
     "tlds": "^1.221.1",
     "yaml": "^1.10.2"
   },
