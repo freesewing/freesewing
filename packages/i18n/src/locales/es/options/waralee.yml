@@ -5,12 +5,12 @@ backPocket:
 frontPocket:
   title: Bolsillo delantero
   description: Si se añado un bolsillo frontal o no
-hem:
+hemWidth:
   title: Hem size
-  description: Tamaño de la temperatura en la parte inferior de los pantalones
-waistBand:
-  title: Banda de Waist
-  description: Tamaño de la banda de cintura
+  description: Size of the hem at the bottom of the pants
+waistbandWidth:
+  title: Waist Band
+  description: Size of the waist band
 waistRaise:
   title: Aumento de Waist
   description: Cuánto elevar la cintura a partir de la medición de profundidad del asiento, lo que influye en la profundidad del corte de los cojines.
