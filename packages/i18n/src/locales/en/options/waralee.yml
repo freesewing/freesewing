@@ -6,11 +6,11 @@ frontPocket:
   title: Front pocket
   description: Whether to include a front pocket or not
 
-hem:
+hemWidth:
   title: Hem size
   description: Size of the hem at the bottom of the pants
 
-waistBand:
+waistbandWidth:
   title: Waist Band
   description: Size of the waist band
 
