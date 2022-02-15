@@ -102,33 +102,33 @@ svg.freesewing.pattern {
 
   /* Text */
   text {
-    font-size: calc(6px * var(--freesewing-pattern-scale));
+    font-size: calc(6 * var(--freesewing-pattern-scale));
     @include title-font;
     text-anchor: start;
     font-weight: 400;
     dominant-baseline: ideographic;
   }
   .text-xs {
-    font-size: calc(4px * var(--freesewing-pattern-scale));
+    font-size: calc(4 * var(--freesewing-pattern-scale));
   }
   .text-sm {
-    font-size: calc(5px * var(--freesewing-pattern-scale));
+    font-size: calc(5 * var(--freesewing-pattern-scale));
   }
   .text-l {
-    font-size: calc(8px * var(--freesewing-pattern-scale));
+    font-size: calc(8 * var(--freesewing-pattern-scale));
   }
   .text-xl {
-    font-size: calc(10px * var(--freesewing-pattern-scale));
+    font-size: calc(10 * var(--freesewing-pattern-scale));
   }
   .text-xxl,
   .text-2xl {
-    font-size: calc(12px * var(--freesewing-pattern-scale));
+    font-size: calc(12 * var(--freesewing-pattern-scale));
   }
   .text-3xl {
-    font-size: calc(16px * var(--freesewing-pattern-scale));
+    font-size: calc(16 * var(--freesewing-pattern-scale));
   }
   .text-4xl {
-    font-size: calc(22px * var(--freesewing-pattern-scale));
+    font-size: calc(22 * var(--freesewing-pattern-scale));
   }
 
   .center {
@@ -147,7 +147,7 @@ svg.freesewing.pattern {
 
   /* Plugins */
   text.title-nr {
-    font-size: calc(32px * var(--freesewing-pattern-scale));
+    font-size: calc(32 * var(--freesewing-pattern-scale));
     @include title-font;
     font-weight: 700;
     stroke: none;
