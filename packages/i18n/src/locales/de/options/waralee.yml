@@ -5,12 +5,12 @@ backPocket:
 frontPocket:
   title: Vordere Taschen
   description: Ob eine Fronttasche hinzugefügt werden soll oder nicht
-hem:
-  title: Größe des Saums
-  description: Höhe des Saums am unteren Rand der Hose
-waistBand:
-  title: Taillenbund
-  description: Größe des Taillenbundes
+hemWidth:
+  title: Hem size
+  description: Size of the hem at the bottom of the pants
+waistbandWidth:
+  title: Waist Band
+  description: Size of the waist band
 waistRaise:
   title: Taillenhöhe
   description: Wie hoch soll die Taille über dem Gesäßumfang angelegt werden? Dies beeinflusst die Tiefe des Schrittauschnittes.
