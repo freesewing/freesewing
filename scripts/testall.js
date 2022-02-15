@@ -12,7 +12,7 @@ if (fs.existsSync(outputLog)) {
 }
 
 // Run all tests, specifying the collector script.
-spawn('lerna', ['run', '--no-bail', 'testci', '--', '--file', `${collectorScript}`], { stdio: 'inherit' })
+spawn('lerna', ['run', 'testci', '--stream', '--concurrency', '1', '--', '--file', `${collectorScript}`], { stdio: 'inherit' })
   .on('exit', function(code) {
     // If a failure occurred, the log file will have been created. Print it.
     if (fs.existsSync(outputLog)) {
