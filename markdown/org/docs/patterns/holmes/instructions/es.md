@@ -99,7 +99,7 @@ There are two methods for constructing the bill. This is due to the different ty
 
 - Place visor insert on one visor piece inside seam lines.
 - Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.
-- _Baste_ along the seam line of the inner curve of the visor, making sure not to catch the visor insert.
+- _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.
 - With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.
 - Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
 - Turn inside out and press. Making sure that the seam allowances are on top of not under the visor insert.
