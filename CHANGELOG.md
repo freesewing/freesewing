@@ -1,6 +1,28 @@
 # Change log for: FreeSewing (global)
 
 
+## Unreleased
+
+### backend
+
+#### Fixed
+
+ - Mitigate risk of denial-of-service attacks in catch-all route
+
+### core
+
+#### Fixed
+
+ - Fix bug in Svg.escapeText() that only escaped the first quote
+
+### svgtopdf
+
+#### Fixed
+
+ - Mitigate risk of denial-of-service attacks in / route
+ - Rate-limit PDF generation endpoints
+
+
 ## 2.20.4 (2022-01-28)
 
 ### create-freesewing-pattern

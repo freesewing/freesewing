@@ -53,8 +53,8 @@ it("Should offset a curve where cp2 = end", () => {
     .close();
   a.paths.offset = a.paths.curve.offset(10);
   pattern.render();
-  expect(round(a.paths.offset.bottomRight.x)).to.equal(119.86);
-  expect(round(a.paths.offset.bottomRight.y)).to.equal(43.49);
+  expect(round(a.paths.offset.bottomRight.x)).to.equal(119.26);
+  expect(round(a.paths.offset.bottomRight.y)).to.equal(43.27);
 });
 
 it("Should throw error when offsetting line that is no line", () => {

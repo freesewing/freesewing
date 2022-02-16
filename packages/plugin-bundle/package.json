@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bundle",
-  "version": "2.20.4",
+  "version": "2.20.5-rc.0",
   "description": "An umbrella package of 8 essential FreeSewing build-time plugins",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -40,7 +40,7 @@
     "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.20.4"
+    "@freesewing/core": "^2.20.5-rc.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -54,17 +54,17 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "@freesewing/plugin-banner": "^2.20.4",
-    "@freesewing/plugin-buttons": "^2.20.4",
-    "@freesewing/plugin-cutonfold": "^2.20.4",
-    "@freesewing/plugin-dimension": "^2.20.4",
-    "@freesewing/plugin-grainline": "^2.20.4",
-    "@freesewing/plugin-logo": "^2.20.4",
-    "@freesewing/plugin-mirror": "^2.20.4",
-    "@freesewing/plugin-title": "^2.20.4",
-    "@freesewing/plugin-scalebox": "^2.20.4",
-    "@freesewing/plugin-round": "^2.20.4",
-    "@freesewing/plugin-sprinkle": "^2.20.4"
+    "@freesewing/plugin-banner": "^2.20.5-rc.0",
+    "@freesewing/plugin-buttons": "^2.20.5-rc.0",
+    "@freesewing/plugin-cutonfold": "^2.20.5-rc.0",
+    "@freesewing/plugin-dimension": "^2.20.5-rc.0",
+    "@freesewing/plugin-grainline": "^2.20.5-rc.0",
+    "@freesewing/plugin-logo": "^2.20.5-rc.0",
+    "@freesewing/plugin-mirror": "^2.20.5-rc.0",
+    "@freesewing/plugin-title": "^2.20.5-rc.0",
+    "@freesewing/plugin-scalebox": "^2.20.5-rc.0",
+    "@freesewing/plugin-round": "^2.20.5-rc.0",
+    "@freesewing/plugin-sprinkle": "^2.20.5-rc.0"
   },
   "files": [
     "dist/*",
@@ -73,7 +73,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",

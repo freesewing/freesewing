@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/pattern-info",
-  "version": "2.20.4",
+  "version": "2.20.5-rc.0",
   "description": "Information about available freesewing patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -45,7 +45,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=12.0.0",
