@@ -5,12 +5,12 @@ backPocket:
 frontPocket:
   title: Voorzak
   description: Of een voorzak moet worden toegevoegd of niet
-hem:
-  title: Afmeting zoom
-  description: De afmeting van de zoom onderaan de broek
-waistBand:
-  title: Tailleband
-  description: Grootte van de tailleband
+hemWidth:
+  title: Hem size
+  description: Size of the hem at the bottom of the pants
+waistbandWidth:
+  title: Waist Band
+  description: Size of the waist band
 waistRaise:
   title: Hoogte Taille
   description: Hoeveel hoger de taille zit dan de hoogte zitvlak-maat. Dit beïnvloedt de diepte van het kruis.
