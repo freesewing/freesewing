@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",
-    "daisyui": "^1.16.2",
+    "daisyui": "^2.0.6",
     "highlight.js": "^11.4.0",
     "lodash.orderby": "^4.6.0",
     "lodash.unset": "^4.5.2",
