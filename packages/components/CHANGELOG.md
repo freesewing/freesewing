@@ -1,6 +1,12 @@
 # Change log for: @freesewing/components
 
 
+## 2.20.6 (2022-02-17)
+
+### Fixed
+
+ - Handle unset props.pattern in DraftConfigurator option.hide check
+
 ## 2.20.0 (2022-01-24)
 
 ### Added

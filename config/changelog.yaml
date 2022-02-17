@@ -1,4 +1,14 @@
+2.20.6:
+  date: 2022-02-17
+
+  Fixed:
+    css-theme:
+      - Set units on fontsizes to support scale setting
+    components:
+      - Handle unset props.pattern in DraftConfigurator option.hide check
+
 2.20.5:
+  date: 2022-02-17
 
   Fixed:
     backend:

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/models",
-  "version": "2.20.5",
+  "version": "2.20.6",
   "description": "Body measurements data for a range of default sizes",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,7 +34,7 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "@freesewing/utils": "^2.20.5"
+    "@freesewing/utils": "^2.20.6"
   },
   "dependencies": {},
   "devDependencies": {},

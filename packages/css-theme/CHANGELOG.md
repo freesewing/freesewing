@@ -1,6 +1,12 @@
 # Change log for: @freesewing/css-theme
 
 
+## 2.20.6 (2022-02-17)
+
+### Fixed
+
+ - Set units on fontsizes to support scale setting
+
 ## 2.20.0 (2022-01-24)
 
 ### Added

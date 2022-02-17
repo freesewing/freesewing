@@ -1,7 +1,22 @@
 # Change log for: FreeSewing (global)
 
 
-## 2.20.5 (NaN-NaN-NaN)
+## 2.20.6 (2022-02-17)
+
+### components
+
+#### Fixed
+
+ - Handle unset props.pattern in DraftConfigurator option.hide check
+
+### css-theme
+
+#### Fixed
+
+ - Set units on fontsizes to support scale setting
+
+
+## 2.20.5 (2022-02-17)
 
 ### backend
 

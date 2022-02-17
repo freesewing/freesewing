@@ -1,6 +1,6 @@
 {
   "name": "create-freesewing-pattern",
-  "version": "2.20.5",
+  "version": "2.20.6",
   "description": "Initializer package for FreeSewing patterns: npm init FreeSewing-pattern",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -30,7 +30,7 @@
   "peerDependencies": {},
   "dependencies": {
     "chalk": "^4.1.1",
-    "commander": "^9.0.0",
+    "commander": "^8.1.0",
     "conf": "^10.0.1",
     "cp-file": "^9.0.0",
     "execa": "^5.1.0",
@@ -46,8 +46,8 @@
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
     "which": "^2.0.2",
-    "@freesewing/i18n": "^2.20.5",
-    "@freesewing/pattern-info": "^2.20.5"
+    "@freesewing/i18n": "^2.20.6",
+    "@freesewing/pattern-info": "^2.20.6"
   },
   "devDependencies": {},
   "files": [
