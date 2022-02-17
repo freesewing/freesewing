@@ -30,7 +30,7 @@
   "peerDependencies": {},
   "dependencies": {
     "chalk": "^4.1.1",
-    "commander": "^8.1.0",
+    "commander": "^9.0.0",
     "conf": "^10.0.1",
     "cp-file": "^9.0.0",
     "execa": "^5.1.0",
