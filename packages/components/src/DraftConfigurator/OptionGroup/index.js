@@ -75,7 +75,7 @@ const OptionGroup = (props) => {
             let children = []
             for (const name of group[subGroup]) {
               const option = props.config.options[name]
-              if (!option.hide(props.pattern.settings.options)) {
+              if (!props.pattern || !option.hide(props.pattern.settings.options)) {
                 children.push(renderOption(name, true))
               }
             }
@@ -90,7 +90,7 @@ const OptionGroup = (props) => {
         } else {
           const name = nameOrGroup
           const option = props.config.options[name]
-          if (!option.hide(props.pattern.settings.options)) {
+          if (!props.pattern || !option.hide(props.pattern.settings.options)) {
             output.push(renderOption(name))
           }
         }
