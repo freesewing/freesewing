@@ -35,7 +35,7 @@ jobs:
         env:
           CI: true
       - name: Install peer & test dependencies
-        run: "cd packages/teagan && npm install @freesewing/core@^2.20.5-rc.0 @freesewing/plugin-bundle@^2.20.5-rc.0 @freesewing/brian@^2.20.5-rc.0 @freesewing/plugin-bust@^2.20.5-rc.0 @freesewing/models@2.20.5-rc.0 @freesewing/pattern-info@2.20.5-rc.0 mocha chai"
+        run: "cd packages/teagan && npm install @freesewing/core@^2.20.5 @freesewing/plugin-bundle@^2.20.5 @freesewing/brian@^2.20.5 @freesewing/plugin-bust@^2.20.5 @freesewing/models@2.20.5 @freesewing/pattern-info@2.20.5 mocha chai"
         env:
           CI: true
       - name: Build pattern

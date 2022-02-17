@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## Unreleased
+## 2.20.5 (NaN-NaN-NaN)
 
 ### backend
 
@@ -14,6 +14,18 @@
 #### Fixed
 
  - Fix bug in Svg.escapeText() that only escaped the first quote
+
+### simon
+
+#### Fixed
+
+ - Fixed grainline indicator on sleeve since it was slightly off-grain
+
+### simone
+
+#### Fixed
+
+ - Fixed grainline indicator on sleeve since it was slightly off-grain
 
 ### svgtopdf
 

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.20.5 (NaN-NaN-NaN)
+
+### Fixed
+
+ - Fix bug in Svg.escapeText() that only escaped the first quote
+
 ## 2.20.3 (2022-01-28)
 
 ### Changed

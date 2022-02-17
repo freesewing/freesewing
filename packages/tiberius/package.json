@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/tiberius",
-  "version": "2.20.5-rc.0",
+  "version": "2.20.5",
   "description": "A FreeSewing pattern for a tunica, a historical Roman tunic",
   "author": "Starfetch (https://github.com/starfetch)",
   "homepage": "https://freesewing.org/",
@@ -39,22 +39,22 @@
     "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.20.5-rc.0",
-    "@freesewing/plugin-bundle": "^2.20.5-rc.0"
+    "@freesewing/core": "^2.20.5",
+    "@freesewing/plugin-bundle": "^2.20.5"
   },
   "dependencies": {},
   "devDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@freesewing/components": "^2.20.5-rc.0",
-    "@freesewing/css-theme": "^2.20.5-rc.0",
-    "@freesewing/i18n": "^2.20.5-rc.0",
-    "@freesewing/mui-theme": "^2.20.5-rc.0",
-    "@freesewing/plugin-bust": "^2.20.5-rc.0",
-    "@freesewing/plugin-buttons": "^2.20.5-rc.0",
-    "@freesewing/plugin-flip": "^2.20.5-rc.0",
-    "@freesewing/utils": "^2.20.5-rc.0",
+    "@freesewing/components": "^2.20.5",
+    "@freesewing/css-theme": "^2.20.5",
+    "@freesewing/i18n": "^2.20.5",
+    "@freesewing/mui-theme": "^2.20.5",
+    "@freesewing/plugin-bust": "^2.20.5",
+    "@freesewing/plugin-buttons": "^2.20.5",
+    "@freesewing/plugin-flip": "^2.20.5",
+    "@freesewing/utils": "^2.20.5",
     "react-scripts": "^5.0.0",
     "webpack": "^5.67.0",
     "rollup": "^2.66.1",
@@ -80,7 +80,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=12.0.0",

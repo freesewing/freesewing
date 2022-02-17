@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simone
 
 
+## 2.20.5 (NaN-NaN-NaN)
+
+### Fixed
+
+ - Fixed grainline indicator on sleeve since it was slightly off-grain
+
 ## 2.20.0 (2022-01-24)
 
 ### Changed

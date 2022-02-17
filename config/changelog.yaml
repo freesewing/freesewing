@@ -1,10 +1,14 @@
-Unreleased:
+2.20.5:
 
   Fixed:
     backend:
       - Mitigate risk of denial-of-service attacks in catch-all route
     core:
       - Fix bug in Svg.escapeText() that only escaped the first quote
+    simon:
+      - Fixed grainline indicator on sleeve since it was slightly off-grain
+    simone:
+      - Fixed grainline indicator on sleeve since it was slightly off-grain
     svgtopdf:
       - Mitigate risk of denial-of-service attacks in / route
       - Rate-limit PDF generation endpoints
