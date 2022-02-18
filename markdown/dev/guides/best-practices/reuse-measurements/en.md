@@ -9,10 +9,9 @@ certain measurements differently.
 
 <Tip>
 
-######  See our measurements page for standard measurement names
+###### See our measurements page for standard measurement names
 
 The [measurements reference page](/reference/measurements/)
 contains all our standard measurement names.
 
 </Tip>
-
