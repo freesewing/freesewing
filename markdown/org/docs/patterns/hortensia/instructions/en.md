@@ -72,7 +72,7 @@ We recommend the tabs to be about a quarter length of the straps.
 
 It is recommended to leave the gap for turning on the side rather than the top or bottom as it needs less reinforcement.
 
-<Note>
+</Note>
 
 ### Step 9: Lining
 
