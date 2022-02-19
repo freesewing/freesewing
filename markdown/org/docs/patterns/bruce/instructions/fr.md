@@ -60,19 +60,17 @@ Cousez les pinces du devant séparément et retourner le tout à l'intérieur, e
 </Tip>
 
 ### Étape 4 : Assembler le second insert et les devants
-
 ![Assembler le second insert et les devants](step03-d.png)
 
 Après avoir assemblé le premier insert et les devants, continuez avec le second.
 
 Avec les devant et les inserts assemblés ensemble, vous avez 3 parties :
 
--   L'ensemble inserts + devants
--   L'ensemble côtés + dos
--   L'élastique
+ - L'ensemble inserts + devants
+ - L'ensemble côtés + dos
+ - L'élastique
 
 ### Étape 5 : Fermer la pince frontale
-
 ![Étape : Fermer la pince frontale](step05.png)
 
 Pliez les devants deux fois le long de la ligne frontale centrale, en alignant les bords du V.
@@ -89,7 +87,6 @@ Ne pas avoir de couture apparente dans cette zone sera plus confortable.
 </Tip>
 
 ### Étape 6 : Optionnel: Surpiquer
-
 ![Boxer avec (à gauche) et sans surpiqûre](step06.jpg)
 
 <Note>
@@ -112,25 +109,21 @@ La couture s’arrête à mi-chemin (là où se termine la pince), mais votre su
 </Tip>
 
 ### Étape 7 : Assembler le premier côté et les devants
-
 ![Assemblez le premier côté et les devants](step07.png)
 
 Alignez le bord latéral du premier côté avec le bord constitué des fronts+inset (bons côtés ensemble, comme d'habitude) et serrez-les ensemble.
 
 ### Étape 8 : Assembler le second côté et les devants
-
 ![Assembler le second côté et les devants](step08.png)
 
 Faites la même chose pour le second côté.
 
 ### Étape 9 : Optionnel: Surpiquer
-
 ![Boxer avec (à gauche) et sans surpiqûre](step06.jpg)
 
 Si vous avez surpiqué précédemment, faites maintenant la même chose pour les coutures réalisées aux étapes 7 et 8.
 
 ### Étape 10 : Terminer la fourche
-
 ![Terminez la fourche](step10.png)
 
 Nous allons maintenant coudre ensemble à la surjeteuse l'arche arrière du boxer et celle du devant, constituée des devants et des inserts.
@@ -146,7 +139,6 @@ Prenez votre temps, et soyez **très attentif** à l'endroit où votre surjeteus
 </Tip>
 
 ### Étape 11: Faire l'ourlet de la première jambe
-
 ![Faites l'ourlet de la première jambe](step11.png)
 
 Il est temps de faire les ourlets. Procédez comme vous le feriez pour n'importe quel autre tissu extensible. Utilisez un point extensible. Vous pouvez utiliser un point zig-zag ou une double aiguille si vous n'avez pas de point overlock ou de règlage spécial point extensible.
@@ -160,13 +152,11 @@ Ou mieux: épinglez les ourlets des deux jambes et ne cousez que lorsque l'aspec
 </Note>
 
 ### Étape 12: Faire l'ourlet de la seconde jambe
-
 ![Faites l'ourlet de la seconde jambe](step12.png)
 
 Vous avez compris.
 
 ### Étape 13 : Faire une boucle avec votre élastique
-
 ![Faites une boucle avec votre élastique](step13.png)
 
 Cousez les deux extrémités de votre élastique ensemble endroit contre endroit.
@@ -174,14 +164,12 @@ Cousez les deux extrémités de votre élastique ensemble endroit contre endroit
 <Note>
 
 ###### Combien d'élastique me faut-il ?
-
 Enveloppez simplement votre élastique autour de votre tour de taille où il finirait par s'asseoir et le serrez jusqu'à ce qu'il se sente bien.
 Marquez l'endroit où les bords se rejoignent, ajoutez une marge de couture de 2cm, et c'est votre longueur d'élastique.
 
 </Note>
 
 ### Étape 14 : Fixer l'élastique à la taille
-
 ![Fixez l'élastique à la taille](step14.png)
 
 Fixez l'élastique à la taille.
@@ -202,7 +190,6 @@ Lors de la couture, étirez l'élastique et tissez ensemble entre chaque ensembl
 </Tip>
 
 ### Étape 15 : Dégarnir et nettoyer
-
 ![Yeh ! Vous l'avez fait](step15.png)
 
 Coupez tout tissu excédentaire au niveau de l'élastique ou des ourlets et tous les fils qui dépassent.
