@@ -18,4 +18,3 @@ paths.demo = new Path()
 let class = paths.demo.attributes.getAsArray('class'); 
 // class now holds: ["classA", "classB"]
 ```
-

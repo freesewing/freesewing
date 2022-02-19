@@ -66,5 +66,3 @@ You didn't have to do that. But it looks nicely balanced this way:
 <Example pattern="tutorial" part="step5">
 Note how the neck opening is the same distance from the left, right, and top edge
 </Example>
-
-

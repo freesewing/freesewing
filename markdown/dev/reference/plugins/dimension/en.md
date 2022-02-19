@@ -3,18 +3,18 @@ title: "@freesewing/plugin-dimension"
 ---
 
 The **@freesewing/plugin-dimension** plugin provides a variety of macros
-to facilitate adding *dimensions* to your design. By *dimensions* we mean 
-the indicators for distance that are added to patterns 
+to facilitate adding *dimensions* to your design. By *dimensions* we mean
+the indicators for distance that are added to patterns
 in [paperless mode](/reference/api/settings/paperless).
 
 The following macors are provided by this plugin:
 
- - [hd](/reference/api/macros/hd) : Adds a horizontal dimension
- - [vd](/reference/api/macros/vd) : Adds a vertical dimension
- - [ld](/reference/api/macros/ld) : Adds a linear dimension
- - [pd](/reference/api/macros/pd) : Adds a dimension along a path
- - [rmd](/reference/api/macros/rmd) : Removes a dimension
- - [rmad](/reference/api/macros/rmad) : Removes all dimensions with a default prefix
+-   [hd](/reference/api/macros/hd) : Adds a horizontal dimension
+-   [vd](/reference/api/macros/vd) : Adds a vertical dimension
+-   [ld](/reference/api/macros/ld) : Adds a linear dimension
+-   [pd](/reference/api/macros/pd) : Adds a dimension along a path
+-   [rmd](/reference/api/macros/rmd) : Removes a dimension
+-   [rmad](/reference/api/macros/rmad) : Removes all dimensions with a default prefix
 
 <Example part="plugin_dimension">
 
@@ -47,12 +47,11 @@ import config from "../config";
 const Pattern = new freesewing.Design(config, dimension);
 ```
 
-Now you can use the 
-[hd](/reference/api/macros/hd/), 
-[vd](/reference/api/macros/vd/), 
-[ld](/reference/api/macros/ld/), 
-[pd](/reference/api/macros/pd/), 
+Now you can use the
+[hd](/reference/api/macros/hd/),
+[vd](/reference/api/macros/vd/),
+[ld](/reference/api/macros/ld/),
+[pd](/reference/api/macros/pd/),
 [rmd](/reference/api/macros/rmd/), and
-[rmad](/reference/api/macros/rmad/) 
+[rmad](/reference/api/macros/rmad/)
 macros in your parts.
-

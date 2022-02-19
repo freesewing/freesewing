@@ -3,8 +3,7 @@ title: Guides
 order: zbb
 ---
 
-You can find a list of all FreeSewing guides below: 
-
+You can find a list of all FreeSewing guides below:
 
 <ReadMore recurse />
 
@@ -20,4 +19,3 @@ guides take more time to explain in-depth what is being done and why.
 For more details, refer to [How we structure our documentation](/guides/docs).
 
 </Related>
-

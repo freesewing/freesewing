@@ -12,7 +12,4 @@ A string that holds a valid semantic version number.
 
 ## Example
 
-```
-version: "0.3.1"
-```
-
+    version: "0.3.1"

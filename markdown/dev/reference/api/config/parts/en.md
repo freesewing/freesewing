@@ -11,7 +11,7 @@ names of pattern parts.
 
 This list of parts is needed for the `draft()` method to figure out what
 parts need to be drafted.
-So if parts are included in the `dependencies`, `inject`, or `hide` configuration, 
+So if parts are included in the `dependencies`, `inject`, or `hide` configuration,
 there's no need to include them here, as we already know of their existence.
 
 </Tip>
@@ -28,4 +28,3 @@ parts: [
   "back"
 ]
 ```
-

@@ -5,7 +5,7 @@ title: Translation guide
 Freesewing.org is proudly multilingual, and we currently support five languges.
 For this, we rely on the work of our translators who volunteer their
 time to translate FreeSewing into various languages from English, which
-is our source language. 
+is our source language.
 
 This translation guide will tell you everything you need to
 know to join the effort as a translator for FreeSewing.
@@ -14,7 +14,7 @@ know to join the effort as a translator for FreeSewing.
 
 ##### TL;DR: Becoming a FreeSewing translator
 
-Our translation project on Crowdin is accessible 
+Our translation project on Crowdin is accessible
 via [translate.freesewing.org](https://translate.freesewing.org).
 
 To get started, you will need to be invited as a translator. No need to worry,
@@ -27,16 +27,15 @@ Bonus: You'll get an `@freesewing.org` email alias
 
 </Tip>
 
-
 ## Languages
 
 We currently support the following five languages:
 
-  - **en** : English
-  - **de** : German
-  - **es** : Spanish
-  - **fr** : French
-  - **nl** : Dutch
+-   **en** : English
+-   **de** : German
+-   **es** : Spanish
+-   **fr** : French
+-   **nl** : Dutch
 
 <Note>
 
@@ -50,8 +49,8 @@ please [come and talk to us on Discord](https://discord.freesewing.org).
 
 We use two different tools to manage our translations, depending on the context:
 
- - Markdown content and code strings in our monorepo are translated within **Crowdin**
- - Blog and showcase posts are translated within **Strapi**
+-   Markdown content and code strings in our monorepo are translated within **Crowdin**
+-   Blog and showcase posts are translated within **Strapi**
 
 <Tip>
 
@@ -59,7 +58,7 @@ We use two different tools to manage our translations, depending on the context:
 
 If you'd like to help out, please join our translation team on Crowdin.
 
-While it can be nice to have blog and showcase posts translated, these are less important than the 
+While it can be nice to have blog and showcase posts translated, these are less important than the
 translation work in Crowdin which is about the documentation and strings that allow people to
 use FreeSewing.org in a different language.
 
@@ -84,7 +83,7 @@ Strapi ([strapi.io](https://strapi.io/)) is a so-called *headless content manage
 Headless just means that we load the content from it via an API, rather than have it be part of our
 website like a classic CMS (eg. Wordpress).
 
-In Strapi, we keep our blog posts and showcases for FreeSewing.org. 
+In Strapi, we keep our blog posts and showcases for FreeSewing.org.
 We also keep our newsletter editions there and developer blog posts for FreeSewing.dev there, but since
 those are not translated, we will ignore them in this guide.
 
@@ -129,8 +128,6 @@ These will be filled in later with the correct value. For example:
 
 looks like this in Spanish
 
-
 ```yaml
 {field} guardado
 ```
-

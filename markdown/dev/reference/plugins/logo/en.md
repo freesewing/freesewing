@@ -35,4 +35,3 @@ const Pattern = new freesewing.Design(config, logo);
 ```
 
 You can now use the [logo](/reference/api/snippets/logo) snippet in your parts.
-

@@ -8,14 +8,14 @@ Point path.edge(string side)
 
 Returns the Point object at the edge of the path you specify. Edge must be one of:
 
- - `top`
- - `bottom`
- - `left`
- - `right`
- - `topLeft`
- - `topRight`
- - `bottomLeft`
- - `bottomRight`
+-   `top`
+-   `bottom`
+-   `left`
+-   `right`
+-   `topLeft`
+-   `topRight`
+-   `bottomLeft`
+-   `bottomRight`
 
 <Example part="path_edge">
 Example of the Path.edge() method
@@ -50,4 +50,3 @@ for (let i of [
   "right"
 ]) snippets[i] = new Snippet("notch", paths.demo.edge(i));
 ```
-

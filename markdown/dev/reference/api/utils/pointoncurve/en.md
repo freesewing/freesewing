@@ -66,4 +66,3 @@ paths.curve = new Path()
   .curve(points.cp1, points.cp2, points.end)
   .attr("class", "fabric stroke-lg");
 ```
-

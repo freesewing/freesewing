@@ -2,7 +2,7 @@
 title: "@freesewing/plugin-mirror"
 ---
 
-The **@freesewing/plugin-mirror** plugin provides [the mirror 
+The **@freesewing/plugin-mirror** plugin provides [the mirror
 macro](/reference/api/macros/mirror) which facilitates mirroring
 a number of points and/or paths around a given mirror line.
 
@@ -28,5 +28,3 @@ const Pattern = new freesewing.Design(config, mirror);
 ```
 
 You can now use the [mirror](/reference/api/macros/mirror) macro in your parts.
-
-

@@ -24,7 +24,6 @@ macro('rmd', {
 })
 ```
 
-| Property | Default | Type     | Description | 
+| Property | Default | Type     | Description |
 |----------|---------|----------|-------------|
 | `id`     |         | `string` | The id of the dimension to remove |
-

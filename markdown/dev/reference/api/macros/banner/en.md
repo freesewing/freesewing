@@ -21,7 +21,7 @@ macro('banner', {
 })
 ```
 
-| Property     | Default    | Type       | Description | 
+| Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|
 | `text`       |            | `text`     | The text to place repeat along the path |
 | `dy`         | `1`        | `number`   | Controls how far the text will be located above the path |

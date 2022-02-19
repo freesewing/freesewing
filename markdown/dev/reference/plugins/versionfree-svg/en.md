@@ -16,7 +16,7 @@ npm install @freesewing/plugin-bartack
 ## Usage
 
 Like all [run-time plugins](/guides/plugins/types-of-plugins#run-time-plugins), you
-load them by by passing them to the `use()` method of an instatiated pattern. 
+load them by by passing them to the `use()` method of an instatiated pattern.
 
 That method is chainable, so if you have multiple plugins you can just chain them together.
 
@@ -26,4 +26,3 @@ import versionfreeSvg from "@freesewing/plugin-versionfree-svg";
 
 const pattern = new Aaron().use(versionfreeSvg);
 ```
-

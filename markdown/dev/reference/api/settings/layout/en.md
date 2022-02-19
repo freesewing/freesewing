@@ -1,23 +1,23 @@
---- 
+---
 title: layout
 ---
 
-The `layout` setting allows you to control the way pattern parts are 
+The `layout` setting allows you to control the way pattern parts are
 layed out on the pattern. There are 3 scenarios:
 
-- layout is truthy: Do layout algorithmically
-- layout is falsy: Do not do any layout apart from stacking all parts together
-- layout is an object: Layout the parts as detailed in the layout object
+-   layout is truthy: Do layout algorithmically
+-   layout is falsy: Do not do any layout apart from stacking all parts together
+-   layout is an object: Layout the parts as detailed in the layout object
 
 Let's look at each in detail:
 
 ## layout is truthy
 
-This is the default behaviour. Parts will be laid without overlap in 
-a space that's a small as possible. 
+This is the default behaviour. Parts will be laid without overlap in
+a space that's a small as possible.
 
-Don't expect miracles here. 
-It's one of those things humans are far better at than 
+Don't expect miracles here.
+It's one of those things humans are far better at than
 computers.
 
 ## layout is falsy
@@ -57,10 +57,10 @@ let pattern = new brian({
 
 For each part in the `parts` attribute of our layout object, there are 4 possible attributes:
 
- - move: Expects an object with an `x` and `y` property, and will move the part by `x` along the X-axis and by `y` along the Y-axis
- - rotate: Expects a number, and will rotate the part by number degrees around its center point
- - flipX: Will flip/mirror the part horizontally
- - flipY: Will flip/mirror the part vertically
+-   move: Expects an object with an `x` and `y` property, and will move the part by `x` along the X-axis and by `y` along the Y-axis
+-   rotate: Expects a number, and will rotate the part by number degrees around its center point
+-   flipX: Will flip/mirror the part horizontally
+-   flipY: Will flip/mirror the part vertically
 
 <Related>
 

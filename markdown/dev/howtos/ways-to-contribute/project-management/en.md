@@ -9,7 +9,6 @@ organize milestones, and so on.
 
 This is helpful in more than one way:
 
- - It reduces the cognitive load of the people implementing changes because they don't have to worry about forgetting things
- - It increases transparency by making it clear what sort of things are being worked on
- - It gives us that good feeling of closing the issue when the task is done
-
+-   It reduces the cognitive load of the people implementing changes because they don't have to worry about forgetting things
+-   It increases transparency by making it clear what sort of things are being worked on
+-   It gives us that good feeling of closing the issue when the task is done

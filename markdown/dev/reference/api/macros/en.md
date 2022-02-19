@@ -17,5 +17,3 @@ Below is a list of macros from [the plugins we maintain](/reference/plugins):
 For more info on a specific macro and examples, follow the link to the plugin that provides the macro.
 
 </Tip>
-
-

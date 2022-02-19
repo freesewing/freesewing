@@ -3,7 +3,7 @@ title: Part
 order: 20
 ---
 
-The `Part` object in FreeSewing's core library holds all data and logic of a pattern part. 
+The `Part` object in FreeSewing's core library holds all data and logic of a pattern part.
 A pattern part is what holds the actual information about points and paths,
 and multiple parts together typically make up a pattern.
 

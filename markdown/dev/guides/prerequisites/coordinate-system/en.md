@@ -24,4 +24,3 @@ This is a common point of confusion so keep in mind that the Y-axis may
 not behave as you would have intuitively expected.
 
 </Note>
-

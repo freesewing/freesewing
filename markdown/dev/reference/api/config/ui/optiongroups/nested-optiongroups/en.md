@@ -24,4 +24,3 @@ optionGroups: {
 Only create subgroups one level deep. 
 We do not support groups in groups in groups.
 </Warning>
-

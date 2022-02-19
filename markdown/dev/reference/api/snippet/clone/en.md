@@ -12,7 +12,6 @@ Returns a new Snippets object that is a deep copy of this one.
 An example of the Snippet.clone() method
 </Example>
 
-
 ```js
 let { Point, points, Snippet, snippets } = part.shorthand();
 

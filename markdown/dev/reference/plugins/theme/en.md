@@ -6,7 +6,6 @@ The **@freesewing-plugin-theme** plugin provides CSS styling for SVG output.
 It leverages [the preRender lifecycle hook](/reference/api/hooks/prerender) to
 accomplish this.
 
-
 <Note>
 
 ##### Only applies to SVG/PS/PDF output
@@ -27,7 +26,7 @@ npm install @freesewing/plugin-theme
 ## Usage
 
 Like all [run-time plugins](/guides/plugins/types-of-plugins#run-time-plugins), you
-load them by by passing them to the `use()` method of an instatiated pattern. 
+load them by by passing them to the `use()` method of an instatiated pattern.
 
 That method is chainable, so if you have multiple plugins you can just chain them together.
 
@@ -37,4 +36,3 @@ import theme from "@freesewing/plugin-theme";
 
 const pattern = new Aaron().use(theme);
 ```
-

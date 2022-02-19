@@ -35,4 +35,3 @@ export default function (part) {
   return part
 }
 ```
-

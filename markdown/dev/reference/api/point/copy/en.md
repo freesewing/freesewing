@@ -1,8 +1,9 @@
 ---
 title: Point.copy()
 ---
+
 A point's `copy()` method returns a new point with the same coordinates as the original point.
-This method does _not_ copy any attributes the original point may have.
+This method does *not* copy any attributes the original point may have.
 
 ## Point.copy() signature
 

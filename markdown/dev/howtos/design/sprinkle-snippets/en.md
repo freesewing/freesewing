@@ -8,7 +8,7 @@ about: Adding multiple snippets doesn't need to be a chore with this handy macro
 
 ##### See this example in our source code
 
- - [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/8474477911daed3c383700ab29c9565883f16d66/packages/jaeger/src/front.js#L381)
+-   [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/8474477911daed3c383700ab29c9565883f16d66/packages/jaeger/src/front.js#L381)
 
 </Note>
 

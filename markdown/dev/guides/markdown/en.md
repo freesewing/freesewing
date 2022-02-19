@@ -14,7 +14,7 @@ goals:
   - Learn about the different custom components
 ---
 
-Markdown is a lightweight markup language with plain text formatting syntax. 
+Markdown is a lightweight markup language with plain text formatting syntax.
 It is designed to be easily readable by humans, and computers alike.
 
 Markdown is often used to format documentation, online comments,
@@ -24,6 +24,5 @@ In this guide, we'll look at the following topics:
 
 <ReadMore list />
 
-This will be enough to get you started. If you'd like to learn more, 
+This will be enough to get you started. If you'd like to learn more,
 visit [markdownguide.org](https://www.markdownguide.org/).
-

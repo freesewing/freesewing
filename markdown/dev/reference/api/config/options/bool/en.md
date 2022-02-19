@@ -9,8 +9,8 @@ or **yes** or **no**, use a boolean option.
 
 A boolean option is a plain object with these properties:
 
- - `bool` : Either `true` or `false` which will be the default
- - `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
+-   `bool` : Either `true` or `false` which will be the default
+-   `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
 
 [hide]: /reference/api/config/options#optionally-hide-options-by-configuring-a-hide-method
 
@@ -23,4 +23,3 @@ options: {
   }
 }
 ```
-

@@ -9,8 +9,8 @@ that as the second object.
 
 Remember that:
 
- - The `insertText` hook will receive a locale and string and you should return a string.
- - All other hooks receive an object. You don't need to return anything, but rather modify the object you receive.
+-   The `insertText` hook will receive a locale and string and you should return a string.
+-   All other hooks receive an object. You don't need to return anything, but rather modify the object you receive.
 
 Let's look at an example:
 
@@ -39,8 +39,8 @@ export default {
 
 This is a complete plugin, ready to be published on NPM. It uses two hooks:
 
- - `preRender` : We add some style and defs to our SVG
- - `insertText` : We transfer all text to UPPERCASE
+-   `preRender` : We add some style and defs to our SVG
+-   `insertText` : We transfer all text to UPPERCASE
 
 <Note>
 
@@ -52,8 +52,7 @@ the SVG tag with the name and version of our plugin.
 We check for this attribute when the `preRender` hook runs, thereby avoiding that
 our styles and defs will be added twice.
 
-It is good practice to wrap you hook methods in a call like this, because you have 
+It is good practice to wrap you hook methods in a call like this, because you have
 no guarantee the user won't render your pattern more than once.
 
 </Note>
-

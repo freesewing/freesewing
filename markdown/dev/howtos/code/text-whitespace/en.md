@@ -52,5 +52,3 @@ points.example.attr(
 
 Whether you're rendering to SVG or React, by using `&#160;` your spaces
 will be properly rendered in both environments.
-
-

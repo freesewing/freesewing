@@ -52,4 +52,3 @@ If you don't need that precision, you can pass a lower number.
 But for most cases, you can just ignore it.
 
 </Note>
-

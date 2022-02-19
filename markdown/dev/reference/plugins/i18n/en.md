@@ -3,7 +3,7 @@ title: "@freesewing/plugin-i18n"
 ---
 
 The **@freesewing/plugin-i18n** plugin provides a mechanism to translate your designs.
-It does that by attaching to [the insertText lifecycle hook](/reference/api/hooks/inserttext) to 
+It does that by attaching to [the insertText lifecycle hook](/reference/api/hooks/inserttext) to
 intercept all operations that add text to a design and attempt to translate the text
 prior to insertion.
 
@@ -22,7 +22,7 @@ npm install @freesewing/plugin-i18n
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them 
+Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them
 by passing them to the [`freesewing.Design`](/reference/api#design) constructor:
 
 ```js
@@ -50,5 +50,3 @@ It should be structured as such:
   }
 }
 ```
-
-

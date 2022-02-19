@@ -3,7 +3,7 @@ title: Code and code blocks
 order: 80
 ---
 
-Especially for our developer documentation, there's a lot of times we include source code 
+Especially for our developer documentation, there's a lot of times we include source code
 in the documentation.
 You can make these look pretty by using a code block.
 
@@ -15,7 +15,7 @@ let me = 'you'
 ```
 ````
 
-Gives you: 
+Gives you:
 
 ```text
 let me = 'you'
@@ -38,14 +38,11 @@ let me = 'you'
 
 The following language codes are supported:
 
- - `js` for Javascript code
- - `markdown` for Markdown
- - `html` for HTML
- - `svg` for SVG
- - `bash` for Bash or shell scripts
- - `mdx` for MDX
- - `jsx` for JSX
- - `json` for JSON
-
-
-
+-   `js` for Javascript code
+-   `markdown` for Markdown
+-   `html` for HTML
+-   `svg` for SVG
+-   `bash` for Bash or shell scripts
+-   `mdx` for MDX
+-   `jsx` for JSX
+-   `json` for JSON

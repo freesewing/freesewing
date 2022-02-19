@@ -1,11 +1,11 @@
---- 
+---
 title: only
 ---
 
-The `only` setting allows you to specify one or more parts to 
+The `only` setting allows you to specify one or more parts to
 draft/render, rather than the entire pattern.
 
-It accepts either a single part name as a string, or an array of 
+It accepts either a single part name as a string, or an array of
 one or more part names.
 
 ```js

@@ -2,12 +2,12 @@
 title: title
 ---
 
-The `title` macro adds a title to a pattern part.  
+The `title` macro adds a title to a pattern part.\
 It is provided by the [title plugin](/reference/plugins/title).
 
 <Example part="plugin_title">Example of a title added by this macro</Example>
 
-| Property   | Default | Type                | Description | 
+| Property   | Default | Type                | Description |
 | ----------:| :-----: | ------------------- | ----------- |
 | `at`       |         | [Point](/reference/api/point) | The point at which to insert the title |
 | `nr`       |         | String              | The number of the pattern part |
@@ -16,4 +16,3 @@ It is provided by the [title plugin](/reference/plugins/title).
 | `append`   | `false` | Boolean             | Set this to `true` to append the `nr` to any text already set in Point `at`'s attributes, rather than overwrite it |
 | `rotation` | 0       | Number | An optional rotation in degrees |
 | `scale`    | 1       | Number | An optional scaling factor |
-

@@ -7,4 +7,3 @@ the hardest part. These guides will walk you through setting up your
 development environment on your operating system of choice.
 
 <ReadMore />
-

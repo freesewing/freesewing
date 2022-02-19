@@ -2,7 +2,7 @@
 title: ld
 ---
 
-The `ld` macro adds a *linear dimension* to your pattern.  
+The `ld` macro adds a *linear dimension* to your pattern.\
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
 <Example part="point_dist">
@@ -17,8 +17,7 @@ macro('ld', {
 })
 ```
 
-
-| Property        | Default | Type                | Description | 
+| Property        | Default | Type                | Description |
 |-----------------|---------|---------------------|-------------|
 | `from`          |         | [Point](/reference/api/point) | The startpoint of the dimension |
 | `to`            |         | [Point](/reference/api/point) | The endpoint of the dimension |
@@ -32,8 +31,7 @@ macro('ld', {
 
 Setting a custom ID will:
 
- - Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
- - Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/) 
+-   Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
+-   Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
 
 </Note>
-

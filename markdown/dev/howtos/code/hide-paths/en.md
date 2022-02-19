@@ -8,7 +8,7 @@ about: When you inherit a part, it comes with a bunch of paths. Here'show to hid
 
 ##### See this example in our source code
 
- - [packages/aaron/src/front.js](https://github.com/freesewing/freesewing/blob/develop/packages/aaron/src/front.js#L22)
+-   [packages/aaron/src/front.js](https://github.com/freesewing/freesewing/blob/develop/packages/aaron/src/front.js#L22)
 
 </Note>
 

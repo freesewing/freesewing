@@ -2,7 +2,7 @@
 title: "@freesewing/plugin-title"
 ---
 
-The **@freesewing/plugin-title** plugin provides [the 
+The **@freesewing/plugin-title** plugin provides [the
 title macro](/reference/api/macros/title/) which facilitates adding part titles
 to your desings.
 
@@ -34,4 +34,3 @@ const Pattern = new freesewing.Design(config, title);
 ```
 
 Now you can use the [title](/reference/api/macros/title/) macro in your parts.
-

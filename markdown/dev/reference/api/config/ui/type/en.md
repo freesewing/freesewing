@@ -8,5 +8,5 @@ type: "pattern",
 
 One of the following:
 
- - pattern
- - block
+-   pattern
+-   block

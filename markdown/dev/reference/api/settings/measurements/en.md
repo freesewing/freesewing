@@ -1,9 +1,9 @@
---- 
+---
 title: measurements
 ---
 
-The `measurements` settings should hold and object with the 
-measurements to draft the pattern for. 
+The `measurements` settings should hold and object with the
+measurements to draft the pattern for.
 The pattern configuration lists all required measurements.
 
 ```js
@@ -16,4 +16,3 @@ const pattern = new Brian({
   }
 })
 ```
-

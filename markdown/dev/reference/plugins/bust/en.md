@@ -20,8 +20,8 @@ This is the same technique that's used in a full-bust adjustment to fit a womens
 
 This plugin helps you by:
 
- - Storing the chest circumference in `measurements.bust`
- - Changing `measurments.chestCircumference` to the value of `measurements.highBust`
+-   Storing the chest circumference in `measurements.bust`
+-   Changing `measurments.chestCircumference` to the value of `measurements.highBust`
 
 </Note>
 
@@ -33,7 +33,7 @@ In this case, the plugin will always be loaded since the pattern assumes breasts
 This way you can extend a menswear pattern and have it drafted with the high bust measurement
 as chest measurment, after which you can create room for the breasts.
 
-You can see this in practice in our [Carlita][1] pattern, 
+You can see this in practice in our [Carlita][1] pattern,
 which extends the menswear [Carlton][2] pattern.
 
 <Tip>
@@ -47,8 +47,8 @@ To learn more about extending a pattern, see [Design inheritance](/howtos/code/i
 To create a truly gender-neutral pattern — one that will adapt to breasts only if they are
 present — you can use this plugin, but you'll also need a few other things:
 
-- You'll need to mark the breast measurements as [optional measurements](/reference/api/config/optionalmeasurements)
-- You'll need to [conditionally load this plugin](/guides/plugins/conditionally-loading-build-time-plugins)
+-   You'll need to mark the breast measurements as [optional measurements](/reference/api/config/optionalmeasurements)
+-   You'll need to [conditionally load this plugin](/guides/plugins/conditionally-loading-build-time-plugins)
 
 You can see an example of this in [our Teagan design][3].
 
@@ -77,7 +77,8 @@ import config from "../config";
 const Pattern = new freesewing.Design(config, bust);
 ```
 
-
 [1]: https://github.com/freesewing/freesewing/blob/develop/packages/carlita/src/index.js#L12
+
 [2]: https://github.com/freesewing/freesewing/blob/develop/packages/carlton
+
 [3]: https://github.com/freesewing/freesewing/blob/develop/packages/teagan/src/index.js

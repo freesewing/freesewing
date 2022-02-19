@@ -8,6 +8,7 @@ Links combine square brackets for the link text with round brackets for the dest
 ```md
 [Like this](https://freesewing.org)
 ```
+
 [Like this](https://freesewing.org)
 
 An alternative notation allows you to include the links as such:
@@ -22,6 +23,7 @@ See [the reference documentation][1] on [freesewing.dev][2]
 See [the reference documentation][1] on [freesewing.dev][2]
 
 [1]: https://freesewing.dev/reference
+
 [2]: https://freesewing.dev/reference
 
 You don't have to use numbers, but can also use named references.
@@ -35,4 +37,3 @@ We moved the markdown content to [our monorepo][monorepo]
 We moved the markdown content to [our monorepo][monorepo]
 
 [monorepo]: https://github.com/freesewing/freesewing
-

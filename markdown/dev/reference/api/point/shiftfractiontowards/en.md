@@ -8,7 +8,7 @@ point and the target.
 This method accepts values larger than 1 to go beyond the target point, or negative values to shift the
 point in the opposite direction.
 
-If you need to move a point by a specific distance instead of a percentage, use [`Point.shiftTowards()`]((reference/api/point/shifttowards/)) or [`Point.shiftOutwards()`](reference/api/point/shiftoutwards/) instead.
+If you need to move a point by a specific distance instead of a percentage, use [`Point.shiftTowards()`](\(reference/api/point/shifttowards/\)) or [`Point.shiftOutwards()`](reference/api/point/shiftoutwards/) instead.
 
 ## Point.shiftFractionTowards() signature
 

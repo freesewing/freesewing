@@ -36,4 +36,3 @@ A Utils.beamIntersectsX() example
     .line(new Point(40, 35))
     .attr("class", "note dashed");
 ```
-

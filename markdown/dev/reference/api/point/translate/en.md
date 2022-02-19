@@ -12,8 +12,8 @@ Point point.translate(float deltaX, float deltaY)
 
 In other words, this will:
 
-- Add `deltaX` to the point's X-coordinate
-- Add `deltaY` to the point's Y-coordinate
+-   Add `deltaX` to the point's X-coordinate
+-   Add `deltaY` to the point's Y-coordinate
 
 Positive values for `deltaX` will move the point to the right. Positive values for `deltaY` will move the point downwards.
 

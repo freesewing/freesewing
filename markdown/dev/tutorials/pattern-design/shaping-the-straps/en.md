@@ -47,4 +47,3 @@ All of a sudden, things are starting to look like a bib:
 <Example pattern="tutorial" part="step6">
 Pretty good, but how are we going to fit it over the baby's head?
 </Example>
-

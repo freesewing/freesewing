@@ -2,7 +2,7 @@
 title: "@freesewing/plugin-svgattr"
 ---
 
-The **@freesewing/plugin-svgattr** plugin takes an object of key-value 
+The **@freesewing/plugin-svgattr** plugin takes an object of key-value
 pairs and adds them ass attributes to your SVG document on render.
 It leverages [the preRender lifecycle hook](/reference/api/hooks/prerender) to do so.
 
@@ -27,5 +27,3 @@ const myAaron = new Aaron()
 ```
 
 You should pass a second argument which holds key-value pairs of the attributes you want to add to the SVG tag.
-
-

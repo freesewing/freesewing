@@ -9,5 +9,3 @@ Refer to [the plugin guide](/guides/plugins) for an in-depth look into plugins.
 We maintain the following plugins for @freesewing/core:
 
 <ReadMore />
-
-

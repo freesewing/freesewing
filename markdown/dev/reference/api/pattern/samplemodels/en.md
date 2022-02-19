@@ -27,7 +27,8 @@ In other words, for each sample, the anchor point will be kept in the same locat
 
 ```js
 Pattern pattern.sampleModels(object models, string focus)
-``` 
+```
+
 The models object you pass as the first parameter should be structured as such:
 
 ```js
@@ -46,12 +47,12 @@ The models object you pass as the first parameter should be structured as such:
 }
 ```
 
-The (optional) string you can pass as the second parameter should hold the 
+The (optional) string you can pass as the second parameter should hold the
 key of one of the models in the first parameter. In our example above, it
 could hold `modelName2` for example.
 
-By passing this second parameter, you can put the *focus* on one of the models, 
-which will influence the render style, and make it 
+By passing this second parameter, you can put the *focus* on one of the models,
+which will influence the render style, and make it
 easier to see a comparison between a given set of measrurements, and the rest.
 
 Alternatively, you can use the `Pattern.sample()` method and set `settings.sample.focus` to the key
@@ -66,5 +67,4 @@ import models from "@freesewing/models"
 const Aaron = new Aaron()
 
 const svg = aaron.sampleModels(models, "manSize38").render()
-``` 
-
+```

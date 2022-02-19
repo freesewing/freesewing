@@ -4,8 +4,8 @@ title: "@freesewing/plugin-notches"
 
 The **@freesewing/plugin-notces** plugin provides the following [snippets](/reference/api/snippets):
 
- - [notch](/reference/api/snippets/notch)
- - [bnotch](/reference/api/snippets/bnotch)
+-   [notch](/reference/api/snippets/notch)
+-   [bnotch](/reference/api/snippets/bnotch)
 
 <Example part="plugin_notches">
 An example of the button, buttonhole, buttonhole-start, buttonhole-end, snap-stud, and snap-socket snippets
@@ -37,7 +37,6 @@ const Pattern = new freesewing.Design(config, notches);
 ```
 
 Now you can use the
-[notch](/reference/api/snippets/notch) and  
+[notch](/reference/api/snippets/notch) and\
 [bnotch](/reference/api/snippets/buttonhole)
 snippets in your designs.
-

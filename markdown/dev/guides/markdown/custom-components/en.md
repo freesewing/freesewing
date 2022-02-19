@@ -3,7 +3,7 @@ title: Custom components
 order: 90
 ---
 
-The way we render markdown on our websites is through the use of [MDX](https://mdxjs.com/).  
+The way we render markdown on our websites is through the use of [MDX](https://mdxjs.com/).\
 This allows us to extend Markdown with our own so-called *custom components*.
 
 Such custom components allow us to put things in Markdown content that would
@@ -42,7 +42,6 @@ The **Comment** component requires a `by` attribute that lists the author of the
 <Comment by="joost">**Do** try this at home</Comment>
 ```
 
-
 ## Fixme
 
 <Fixme>
@@ -61,7 +60,6 @@ or can't fix it now.
 - Fix style for text outside paragraphs
 </Fixme>
 ```
-
 
 ## Note
 
@@ -91,6 +89,7 @@ It's typically used on overview pages, such as out [markdown guide](/guides/mark
 It won't show anything on this page, since this page has not child-pages.
 
 ## Related
+
 <Related>
   This snippet is provided by [the buttons plugin](/reference/plugins/buttons)
 </Related>
@@ -104,6 +103,7 @@ Use **Related** to add something that is relevant to the current topic.
 ```
 
 ## Tip
+
 <Tip>
   Comparing yourself to others is the fastest way to become unhappy
 </Tip>
@@ -117,6 +117,7 @@ Use **Tip** for, you know, tips.
 ```
 
 ## Warning
+
 <Warning>
   ##### Please make a backup
   Following these instructions will remove all your data
@@ -142,7 +143,7 @@ Embed a video:
 ```markdown
 <YouTube id='Rz6ShSftDlI' />
 ```
-  
+
 Embed a playlist:
 
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
@@ -150,6 +151,3 @@ Embed a playlist:
 ```md
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 ```
-  
-
-

@@ -9,7 +9,7 @@ The [Part.shorthand()](/reference/api/part/#shorthand) method will become your b
 By using [object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring) you'll get access to a bunch
 of handy variables to make your code more concise and readable.
 
-[Part.shorthand()](/reference/api/part/#shorthand) provides a lot of things, and you typically 
+[Part.shorthand()](/reference/api/part/#shorthand) provides a lot of things, and you typically
 don't need all of them, but here's everything it has to offer:
 
 ```js

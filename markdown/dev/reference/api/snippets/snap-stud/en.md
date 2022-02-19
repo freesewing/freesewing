@@ -13,4 +13,3 @@ snippets.demo = new Snippet('snap-stud', points.anchor)
 <Example part="snippets_snapstud">
 An example of the snap-stud snippet
 </Example>
-

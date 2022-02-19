@@ -18,8 +18,8 @@ The fourth parameter controls the precision. Lower numbers make the check less p
 
 ###### Tweak precision only when needed
 
-Typically, you don't need to worry about precision. But occasionally, you may get 
-unexpected results because of floating point errors, rounding errors, or 
+Typically, you don't need to worry about precision. But occasionally, you may get
+unexpected results because of floating point errors, rounding errors, or
 cubic bezier juggling.
 
 When that happens, you can lower the precision so you get what you expect.
@@ -81,4 +81,3 @@ paths.lne2 = new Path()
   .line(points.b2)
   .attr("class", "fabric dashed");
 ```
-
