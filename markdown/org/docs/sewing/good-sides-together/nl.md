@@ -20,7 +20,7 @@ Dit zorgt voor twee stukken die een spiegelbeeld zijn van elkaar.
 
 ##### Wat als er niet voor de hand ligt?
 
-Bij het uitknippen van iets zonder een evidente *goed* kant (zoals tussenvoering), 
+Bij het uitknippen van iets zonder een evidente *goed* kant (zoals tussenvoering),
 wat belangrijk is, is dat je twee gespiegeld stukken knipt, in plaats van twee identieke stukken.
 
 </Note>

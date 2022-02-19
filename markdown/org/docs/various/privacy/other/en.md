@@ -8,12 +8,11 @@ If we learn of a security systems breach, we will inform both you and the author
 
 If you believe your personal data has been compromised, please contact joost@joost.at.
 
-
 ##### Service Providers
 
-Our hosting provider manages our backend systems for us. This includes hosting, storage, and backup. 
+Our hosting provider manages our backend systems for us. This includes hosting, storage, and backup.
 
-While this means they process your data (in the strict sense of the word), they do not require access to information about you. 
+While this means they process your data (in the strict sense of the word), they do not require access to information about you.
 Furthermore, as we encrypt profile data at rest, it is non-trivial for them to access it even if they wanted to.
 
 ##### Law enforcement
@@ -28,4 +27,3 @@ We have also not disclosed any personal information for any other reason.
 ##### Use by minors under the age of 16
 
 For legal reasons, you need to be at least 16 years old to use freesewing.
-

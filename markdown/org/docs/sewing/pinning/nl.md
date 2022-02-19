@@ -10,9 +10,9 @@ Spelden wordt gebruikt wanneer je kopspelden gebruikt om dingen op hun plek te h
 
 Voorbeelden van het gebruik van spelden:
 
- - Een naad vastspelden voor ze te naaien
- - Een decoratie, zak of ander element op zijn plek spelden voor het te bevestigen
- - Nepen of andere patroonaanpassingen spelden terwijl je het kledingstuk past op een model
+-   Een naad vastspelden voor ze te naaien
+-   Een decoratie, zak of ander element op zijn plek spelden voor het te bevestigen
+-   Nepen of andere patroonaanpassingen spelden terwijl je het kledingstuk past op een model
 
 Spelden is nooit permanent, maar een tijdelijke manier om dingen op hun plek te houden.
 

@@ -1,19 +1,19 @@
-
 ## Schritt 1: Nähte schließen
 
 ![Seiten- und Schulternähte schließen](step01.png)
 
-Legen Sie Vorder- und Rückseite mit _guten Seiten zusammen_ übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
+Legen Sie Vorder- und Rückseite mit *guten Seiten zusammen* übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
 
 ## Schritt 2: Saum versäubern
 
 ![Versäubere den Saum](step02.png)
 
-Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwenden Sie eine _Zwillingsnadel_ oder _Zickzackstich_ , um die Naht dehnbar zu halten.
+Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwenden Sie eine *Zwillingsnadel* oder *Zickzackstich* , um die Naht dehnbar zu halten.
 
 <Note>
 
 ##### Nur einmal falten, um zu vermeiden, dass
+
 Knitwear nicht schwenkt, so können Sie diese einfach einmal falten und nach unten nähen, dann sauber den Stoff zurückschneiden.
 
 </Note>
@@ -52,8 +52,8 @@ Dies ist der einzige Teil, um dieses A-Shirt zu machen, das ein bisschen Praxis 
 
 Das Erste, was wir tun müssen, ist, zu entscheiden, wo wir unsere Bindung ansetzen bzw. stoppen wollen. Ich schlage folgendes vor:
 
-  - Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
-  - Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
+-   Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
+-   Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
 
 ### Platzieren Sie den Beginn Ihrer Bindung
 
@@ -73,8 +73,8 @@ Wir werden 1,5 cm von der Kante nähen. Seien Sie also vorsichtig, denn dies ist
 
 <Tip>
 
-Der einfache Weg, diese 1,5 cm Distanz zu halten, ist mit einer Nahtspur. 
-Oder machen Sie, was ich tue, platzieren Sie ein Stück Markierungsband auf Ihrer Nähmaschine und markieren Sie eine Linie auf 1,5 cm aus Ihrer Nadel. 
+Der einfache Weg, diese 1,5 cm Distanz zu halten, ist mit einer Nahtspur.
+Oder machen Sie, was ich tue, platzieren Sie ein Stück Markierungsband auf Ihrer Nähmaschine und markieren Sie eine Linie auf 1,5 cm aus Ihrer Nadel.
 Dann musst du nur den Rand deines Stoffes an dieser Linie angleichen.
 
 </Tip>
@@ -123,7 +123,6 @@ Nun, da Ihre Bindungsenden miteinander verbunden sind, ist es an der Zeit, die l
 
 ![Strickverknüpfung auf die Rückseite falten](step04a.png)
 
-
 Falten Sie Ihren Bindegewebe um den Stoff Ihres A-shirts auf die Rückseite. So werden wir es nach unten nähen.
 
 > Während der Stoff doppelt geklappt ist (Verstecke den Stoffrand im Prozess), ist das auf der Rückseite nicht nötig. Wir werden später nur noch den Rand zurückschneiden, da der Strick nicht schwenkt. Wenn wir den Stoff auch auf der Rückseite zurückklappen würden, würde er nur noch mehr massieren.
@@ -145,10 +144,11 @@ Du musst deine Bindung noch einmal etwas ausdehnen, während du dies tust. Aber 
 <Note>
 
 ##### Vorsicht vor dem ungleichen Feed
-während du deine Bindung durch deine Nähmaschine fütterst, die Futterhunde ziehen die untere Schicht (hinten der Bindung) vorwärts. 
 
-In einer perfekten Welt folgen alle Ebenen reibungslos. 
-In den meisten Fällen hinkt die obere Ebene (vor der Bindung) ein bisschen hinterher. 
+während du deine Bindung durch deine Nähmaschine fütterst, die Futterhunde ziehen die untere Schicht (hinten der Bindung) vorwärts.
+
+In einer perfekten Welt folgen alle Ebenen reibungslos.
+In den meisten Fällen hinkt die obere Ebene (vor der Bindung) ein bisschen hinterher.
 Dadurch wird Ihre Bindung nicht sauber am Stoffrand gefaltet, sondern hässliche Falten erzeugt.
 
 Also achte darauf, und wenn du das siehst, strecke die Unterschicht ein bisschen extra um sie zu kompensieren.

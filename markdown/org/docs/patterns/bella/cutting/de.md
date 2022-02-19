@@ -1,12 +1,13 @@
-- - -
+***
+
 title: Bella Cutting
-- - -
+
+***
 
 **Oberstoff**
 
- - Schneide **1 Vorderteil** im Stoffbruch.
- - Schneide **2 Rückteile**.
-
+-   Schneide **1 Vorderteil** im Stoffbruch.
+-   Schneide **2 Rückteile**.
 
 Diese Anleitung ist nur für den Bella-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 

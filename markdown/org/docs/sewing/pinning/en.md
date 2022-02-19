@@ -10,9 +10,9 @@ Pinning is used whenever you use sewing pins to hold things in place.
 
 Examples of where pinning is commonly used are:
 
- - Pinning a seam in place before sewing it
- - Pinning an ornament, pocket, or other part in place before attaching it
- - Pinning darts or other pattern changes while fitting the garment on a model
+-   Pinning a seam in place before sewing it
+-   Pinning an ornament, pocket, or other part in place before attaching it
+-   Pinning darts or other pattern changes while fitting the garment on a model
 
 Pinning is never permanent, but merely a temporary measure to hold things in place.
 

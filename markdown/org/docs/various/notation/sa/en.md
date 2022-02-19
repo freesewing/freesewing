@@ -10,4 +10,3 @@ as the seam they belong to:
 Note that the corners of the seam allowance are trimmed, and not extended:
 
 <Legend part="sa"> A trimmed seam allowance corner </Legend>
-

@@ -15,12 +15,12 @@ This will help prevent the pointy ends of the plastic part to poke outside of th
 #### Version with top part cut on fold
 
 You should mark the top of the back dart on the wrong side of the fabric so that you know where to end your seam
-	
+
 ![Marking the end of the dart](step01.jpg)
-	
+
 There is several tricks to sewing darts, here is how I do it (I think it is called "balancing the dart"):
 prepare a bias cut rectangle of the same fabric you are going to stitch and place it underneath the point of your future dart.
-Stitch the dart starting from the bottom and keep stitching a few stitching after the top dart. 
+Stitch the dart starting from the bottom and keep stitching a few stitching after the top dart.
 Leave a good length of thread to make a knot by hand.
 
 ![Balanced dart](step02.jpg)
@@ -30,20 +30,24 @@ On the area where the dart is stitched with the rectangle, iron both seam allowa
 Layer the edges of the rectangle. The edge against the main fabric is wider, the one above is smaller
 
 #### Version with the top part cut twice
-This dart is more straight forward since the seam is continuous. 
+
+This dart is more straight forward since the seam is continuous.
 Simply stitch the seam all the way
 
 #### Ironing the seam
+
 You might have to notch the seam allowance to press it flat.
 Use a tailoring Ham or something rounded underneath to help you press the seam open whilst keeping the nice shape you just created.
-	
+
 #### Top Stitching
+
 Depending on the style you want to achieve, you can top stitch all your seams (by machine of by hand).
 However, the front brim seam will be a bit tricky to do with the machine (but not impossible). Anyway, I put this here and won't remind you about it after each step, but basically, the process would be: Stitch, Iron, Top stitch, Repeat on the next step.
 
 ### Step 3: Optional: Join both side parts.
+
 This applies only if you cut two parts for the side part.
-It is a straight seam. nothing much to say about that. 
+It is a straight seam. nothing much to say about that.
 Iron the seam flat, with the seam allowances open.
 
 ### Step 4: Join the top to the side
@@ -71,7 +75,7 @@ Iron both seam allowance against the **Bottom part**
 
 The plastic part is then inserted inside the brim, being careful to keep the seam allowance flat on the **Bottom part**.
 You then hand stitch the brim closed, keeping the parts in place and well tensioned.
-    
+
 ![The brim is prepared](step06.jpg)
 
 ### Step 7: Stitching the brim to the cap
@@ -115,15 +119,16 @@ Divide the tape in two with two pins
 
 ![Obviously, the cap is symmetrical, so we might as well distribute the tape evenly on both sides](step12.jpg)
 
-Pin the tape in place: The two pins are used to distribute the tape equally on both sides. 
+Pin the tape in place: The two pins are used to distribute the tape equally on both sides.
 Place one pin at the back, and the other at the front.
 Since the brim is held in place it can't be much stretched, so pin the tape in this area "normally"
 For the remaining part you might need to ease the fabric along the tape.
 I recommend to hand stitch the tape in place, on both edges of the tape
-    
+
 ![Both edges of the tape are slip stitched, and the edge of the cap is top stitched](step13.jpg)
 
 ### Step 12: Stitch the side to the brim
+
 We are almost done, and the last step will be to attach the brim top to the front of the body of the cap.
 Pin the two part in position from the outside, turn the cap on the lining side and stitch both parts together several times.
 

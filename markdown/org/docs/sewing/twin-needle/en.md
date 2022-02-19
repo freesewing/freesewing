@@ -1,6 +1,7 @@
 ---
 title: Twin needle
 ---
+
 ![A twin needle from Schmetz](twin-needle.jpg)
 
 ![A twin needle stitch is flexible because of the zig-zag at the back.](twin-needle.gif)

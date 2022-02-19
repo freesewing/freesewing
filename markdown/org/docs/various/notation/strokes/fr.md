@@ -15,4 +15,3 @@ Et ici sont les différents styles de trait :
 <Legend part="lineStrokes">
 The different line strokes
 </Legend>
-

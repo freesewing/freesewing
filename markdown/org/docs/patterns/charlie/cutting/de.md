@@ -1,25 +1,24 @@
-
 ##### Von Hauptstoff
 
-- Teil **1**: **2 x** _mit guten Seiten zusammen_.
-- Teil **2**: **2 x** _mit guten Seiten zusammen_.
-- Teil **4**: **4 x**
-- Teil **6**: **2 x**
-- Teil **8**: **2 x** 2 _mit guten Seiten zusammen_
-- Teil **9**: **2 x** _mit guten Seiten zusammen_
-- Teil **10**: **1 x** auf der Falte
-- Teil **11**: **1 x** wenn eine geradlinige Taille hergestellt wird
-- Teil **11**: **2 x** _mit guten Seiten zusammen_ wenn eine geschwungene Taille hergestellt wird
-- Teil **12**: **1 x**
+-   Teil **1**: **2 x** *mit guten Seiten zusammen*.
+-   Teil **2**: **2 x** *mit guten Seiten zusammen*.
+-   Teil **4**: **4 x**
+-   Teil **6**: **2 x**
+-   Teil **8**: **2 x** 2 *mit guten Seiten zusammen*
+-   Teil **9**: **2 x** *mit guten Seiten zusammen*
+-   Teil **10**: **1 x** auf der Falte
+-   Teil **11**: **1 x** wenn eine geradlinige Taille hergestellt wird
+-   Teil **11**: **2 x** *mit guten Seiten zusammen* wenn eine geschwungene Taille hergestellt wird
+-   Teil **12**: **1 x**
 
 ##### Aus Futter (oder jedem Material, das für Taschen geeignet ist)
 
-- Teil **5**: **2 x**
-- Teil **7**: **2 x**
+-   Teil **5**: **2 x**
+-   Teil **7**: **2 x**
 
 ##### Von flüchtiger Schnittstelle
 
-- Teil **3**: **2 x**
+-   Teil **3**: **2 x**
 
 <Tip>
 

@@ -16,4 +16,5 @@ Als je knopen onder je tailleband wil kan dat ook. Dan moet je hier een negatiev
 </Note>
 
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_buttonfreelength_sample.svg "Effect van deze optie op het patroon")

@@ -9,6 +9,6 @@ look into how the sleevecap is constructed and the influence of the different op
 
 </Tip>
 
-
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](sven_sleevecapbackfactorx_sample.svg "Effect of this option on the pattern")

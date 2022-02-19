@@ -2,5 +2,3 @@
 ---
 
 <PatternOptions pattern='hortensia' />
-
-

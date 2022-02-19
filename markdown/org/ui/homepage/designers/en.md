@@ -6,8 +6,8 @@
 Parametric design refers to the use of parameters or variables to manipulate the outcome
 of a given design within its rules.
 
-In sewing patterns, the *parameters* are what is provided by the user: Their measurements 
-and options that they have selected.  
+In sewing patterns, the *parameters* are what is provided by the user: Their measurements
+and options that they have selected.\
 The *rules* of the design are what you, the designer, make them.
 
 #### What does that mean for designers?
@@ -23,6 +23,6 @@ But in a parametric sewing pattern, adapting to different sizes or models *just 
 #### What can FreeSewing do for me?
 
 FreeSewing provides everything you need to create your own parametric sewing patterns
-with very little effort. 
+with very little effort.
 
 You are free to sell patterns you create, or contribute them to our growing collection.

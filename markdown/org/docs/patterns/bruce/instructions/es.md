@@ -60,17 +60,19 @@ Mantenga los dardos delanteros por separado y dé la vuelta a toda la cosa, y us
 </Tip>
 
 ### Paso 4: Unirse al segundo recuadro y frontales
+
 ![Unir segundo recuadro y frontales](step03-d.png)
 
 Después de que te hayas unido a la primera entrada y a los frentes, continúa con la segunda.
 
 Con los frontales e inets unidos juntos, quedas con 3 partes:
 
- - Los conjuntos y frontales unidos
- - Los lados unidos y atrás
- - El elástico
+-   Los conjuntos y frontales unidos
+-   Los lados unidos y atrás
+-   El elástico
 
 ### Paso 5: Cerrar el dart de frontales
+
 ![Cerrar el dart frontal](step05.png)
 
 Doblar los frentes doble a lo largo de la línea frontal central, de modo que los colmillos en la línea inferior hacia arriba.
@@ -87,6 +89,7 @@ Puede decirse que no tener una costura expuesta en esta zona es más cómodo par
 </Tip>
 
 ### Paso 6: Opcional: Topstitch
+
 ![Cajas con (izquierda) y sin empalmar](step06.jpg)
 
 <Note>
@@ -109,21 +112,25 @@ La costura se detiene a mitad de camino (donde termina el dardo), pero la parte 
 </Tip>
 
 ### Paso 7: Únete al primer lado de los frentes
+
 ![Únete al primer lado de los frentes](step07.png)
 
 Alinear el borde lateral del primer lado con el borde formado por los frontos+inset (buenos lados juntos como de costumbre) y sirvan juntos.
 
 ### Paso 8: Únete al segundo lado de los frentes
+
 ![Únete al segundo lado de los frentes](step08.png)
 
 Haga lo mismo con el segundo lado.
 
 ### Paso 9: Opcional: Enrollar
+
 ![Cajas con (izquierda) y sin empalmar](step06.jpg)
 
 Si has topstitched antes, asegúrate de hacer lo mismo ahora para las costuras que has hecho en los pasos 7 y 8.
 
 ### Paso 10: Termina la costura de crotchseam
+
 ![Terminar la costura](step10.png)
 
 Ahora seremos la abertura arqueada en la parte posterior a las partes delanteras de los boxeadores, formados por los frentes e insets.
@@ -139,6 +146,7 @@ Tomalo lento, y sé **muy conocido** de dónde corta tu espada serger.
 </Tip>
 
 ### Paso 11: Hem la primera pierna
+
 ![Hem la primera pierna](step11.png)
 
 Es hora de cortar las piernas. Cámbielos como lo harías con cualquier otro tejido. Vaya a un stitch flexible. Puedes usar una ranura zig-zag o una aguja gemela si no tienes un candado o un ajuste flexible específico.
@@ -152,11 +160,13 @@ Aún mejor: anclar las dos piernas en el lugar y sólo coser cuando estés conte
 </Note>
 
 ### Paso 12: Hem la segunda pierna
+
 ![Hem la segunda pierna](step12.png)
 
 Ustedes saben que tiene sentido.
 
 ### Paso 13: Haz tu elástico en un bucle
+
 ![Haz que tu elástico se convierta en un ciclo](step13.png)
 
 Difunde ambos extremos de su elástico junto con buenos lados juntos.
@@ -164,13 +174,16 @@ Difunde ambos extremos de su elástico junto con buenos lados juntos.
 <Note>
 
 ###### ¿No está seguro de cuánto elástico necesita?
+
 ###### Not sure how much elastic you need?
+
 Simply wrap your elastic around your waist where it would end up sitting, and tighten it until it feels right.
 Haz una marca de dónde se une el borde, añade 2 cm de costura, y esa es tu longitud.
 
 </Note>
 
 ### Paso 14: Adjuntar elástico a cintura
+
 ![Adjuntar elástico a cintura](step14.png)
 
 Adjuntar el elástico a la cintura.
@@ -191,6 +204,7 @@ Al coser, estira elástica y teje juntos entre cada conjunto de pines quitando l
 </Tip>
 
 ### Paso 15: Recortar y limpiar
+
 ![¡Hurra! Yay! You've made it](step15.png)
 
 Recorta cualquier tejido excedente que puedas tener en elástico o en el tubo, y cualquier hilo suelto.

@@ -1,4 +1,3 @@
-
 ### Schritt 1: Füge die Mittelnaht zusammen
 
 Füge die gekrümmte Naht, die die Mitte unserer Maske bildet, zusammen, indem du die *guten Seiten* zusammenlegst und vernähst.
@@ -28,11 +27,11 @@ Da es sich um eine gekrümmte Naht handelt, wird sie nicht flach liegen. Aber du
 
 Nun werden wir den inneren (Futter) an den äußeren (Haupt) Stoff nähen und die Bänder in einem Schritt anbringen.
 
- - Lege deinen Futterstoff mit der guten Seite nach oben vor dich hin.
- - Lege dann zwei Bänder an den Ecken einer Seite (in unserem Beispiel rechts) so an, dass sie ein wenig aus der Maske herausragen, das Band aber nach innen verläuft.
- - Lege nun den Hauptstoff mit der guten Seiten nach unten darauf. Du solltest nun beide Schichten deiner Maske übereinander haben mit den *rechten Seiten zusammen* und zwei Bänder, die zwischen ihnen eingeklemmt sind
- - Pinne alle Schichten und Bänder aneinander, um sie an Ort und Stelle zu halten
- - Jetzt mache das Gleiche auf der anderen Seite
+-   Lege deinen Futterstoff mit der guten Seite nach oben vor dich hin.
+-   Lege dann zwei Bänder an den Ecken einer Seite (in unserem Beispiel rechts) so an, dass sie ein wenig aus der Maske herausragen, das Band aber nach innen verläuft.
+-   Lege nun den Hauptstoff mit der guten Seiten nach unten darauf. Du solltest nun beide Schichten deiner Maske übereinander haben mit den *rechten Seiten zusammen* und zwei Bänder, die zwischen ihnen eingeklemmt sind
+-   Pinne alle Schichten und Bänder aneinander, um sie an Ort und Stelle zu halten
+-   Jetzt mache das Gleiche auf der anderen Seite
 
 <Tip>
 
@@ -81,4 +80,3 @@ Achte darauf, dass die offene Seite ordentlich nach innen gefaltet wird, und nä
 Das war's, du bist fertig! Du kannst jetzt deine Maske tragen.
 
 Noch besser: Mache ein paar mehr, damit du anderen auch Masken geben kannst.
-

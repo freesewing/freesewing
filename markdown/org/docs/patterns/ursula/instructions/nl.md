@@ -1,6 +1,6 @@
 ### Stap 1: Stik het voorpand aan het eerste zweefstuk
 
-Leg een van de zweefstukken op het voorpand, _goede kanten op elkaar_, zodat de kruisnaden op één lijn staan. Speld of drieg aan de naadwaarde.
+Leg een van de zweefstukken op het voorpand, *goede kanten op elkaar*, zodat de kruisnaden op één lijn staan. Speld of drieg aan de naadwaarde.
 
 ![Stik het voorpand aan het eerste zweefstuk](step01.png)
 

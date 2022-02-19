@@ -1,22 +1,22 @@
- - **Buitenstof**
-   - Knip **1 linkervoorpand**
-   - Knip **1 knopenpat** (enkel als je voor een apart knopenpat koos)
-   - Knip **1 rechtervoorpand**
-   - Knip **1 knoopsgatenpat** (enkel als je voor een apart knoopsgatenpat koos)
-   - Knip **1 rugpand**
-   - Knip **1 kraag**
-   - Knip **1 onderkraag**
-   - Knip **2 schouderpassen** of **4 schouderpassen** als je voor een gesplitste schouderpas koos
-   - Knip **2 mouwen**
-   - Knip**2 kraagstaanders**
-   - Knip **2 onderkant mouwsplit**
-   - Knip **2 overlap mouwsplit**
-   - Knip **4 manchetten**
- - **Kleefbare tussenvoering**
-   - Knip **1 kraag**
-   - Knip **1 onderkraag**
-   - Knip**2 kraagstaanders**
-   - Knip **2 manchetten**
+-   **Buitenstof**
+    -   Knip **1 linkervoorpand**
+    -   Knip **1 knopenpat** (enkel als je voor een apart knopenpat koos)
+    -   Knip **1 rechtervoorpand**
+    -   Knip **1 knoopsgatenpat** (enkel als je voor een apart knoopsgatenpat koos)
+    -   Knip **1 rugpand**
+    -   Knip **1 kraag**
+    -   Knip **1 onderkraag**
+    -   Knip **2 schouderpassen** of **4 schouderpassen** als je voor een gesplitste schouderpas koos
+    -   Knip **2 mouwen**
+    -   Knip**2 kraagstaanders**
+    -   Knip **2 onderkant mouwsplit**
+    -   Knip **2 overlap mouwsplit**
+    -   Knip **4 manchetten**
+-   **Kleefbare tussenvoering**
+    -   Knip **1 kraag**
+    -   Knip **1 onderkraag**
+    -   Knip**2 kraagstaanders**
+    -   Knip **2 manchetten**
 
 <Note>
 
@@ -31,10 +31,8 @@ Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus
 
 ###### Caveats
 
- - De **rechtervoorkant**, **linkervoorkant** en **mouw** hebben naden die tot platte naad gemaakt moeten worden. Zodoende hebben deze naden extra naadwaarde. Als je deze stukken uitknipt, moet je deze extra naadwaarde **optellen**.
- - De mouwsplitreep en mouwsplitbies hebben geen naadwaarde. Dat is normaal, knip ze gewoon uit zoals ze op je patroon staan.
- - Knip de nepen in het **achterkant** stuk niet uit. Je moet ze markeren, maar niet uitknippen.
+-   De **rechtervoorkant**, **linkervoorkant** en **mouw** hebben naden die tot platte naad gemaakt moeten worden. Zodoende hebben deze naden extra naadwaarde. Als je deze stukken uitknipt, moet je deze extra naadwaarde **optellen**.
+-   De mouwsplitreep en mouwsplitbies hebben geen naadwaarde. Dat is normaal, knip ze gewoon uit zoals ze op je patroon staan.
+-   Knip de nepen in het **achterkant** stuk niet uit. Je moet ze markeren, maar niet uitknippen.
 
 </Warning>
-
-

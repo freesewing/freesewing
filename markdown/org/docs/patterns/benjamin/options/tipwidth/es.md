@@ -11,4 +11,5 @@ Esta opción se ignora con la opción de empatado cuadrado. Los lazos cuadrados 
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](benjamin_tipwidth_sample.svg "Efecto de esta opción en el patrón")

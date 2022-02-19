@@ -1,27 +1,27 @@
- - **Buitenstof**
-   - Knip **1 punt**
-   - Knip **1 staart**
- - **Voering**
-   - Knip **1 voering punt**
-   - Knip **1 voering staart**
-   - Knip **1 lus**
- - **Tussenvoering**
-   - Knip **1 tussenvoering punt**
-   - Knip **1 tussenvoering staart**
+-   **Buitenstof**
+    -   Knip **1 punt**
+    -   Knip **1 staart**
+-   **Voering**
+    -   Knip **1 voering punt**
+    -   Knip **1 voering staart**
+    -   Knip **1 lus**
+-   **Tussenvoering**
+    -   Knip **1 tussenvoering punt**
+    -   Knip **1 tussenvoering staart**
 
 <Warning>
 
-######Opgelet
+\######Opgelet
 
-- Er is geen naadwaarde voor de **tussenvoering** delen en de **lus**
-- De **voering** **punt** en **staart** hebben enkel naadwaarde aan de punt.
-- De **buitenstof** **punt** en **staart** hebben enkel naadwaarde aan de punt en in het midden
+-   Er is geen naadwaarde voor de **tussenvoering** delen en de **lus**
+-   De **voering** **punt** en **staart** hebben enkel naadwaarde aan de punt.
+-   De **buitenstof** **punt** en **staart** hebben enkel naadwaarde aan de punt en in het midden
 
 </Warning>
 
 <Tip>
 
-######Kies de draadrichting van je das
+\######Kies de draadrichting van je das
 
 ![Eén stof, verschillende draadrichting, verschillende dassen. Maak je geen zorgen over de regels, maak wat je leuk vindt](tie-grain.png)
 
@@ -34,5 +34,3 @@ Dit gezegd zijnde zijn veel dassen schuin van draad geknipt, aangezien dit het m
 Als dit allemaal erg verwarrend vindt kan ik je aanraden onze pagina over <a href="/en/docs/sewing/fabric-grain">Draadrichting</a> eens te bekijken).
 
 </Tip>
-
-

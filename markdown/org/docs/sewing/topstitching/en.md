@@ -1,6 +1,7 @@
 ---
 title: Topstitching
 ---
+
 ![I used plenty of topstitching in a contrasting red thread on these jeans for my godson Akki](topstitching.jpg)
 
 ![Topstitching needles from Schmetz](topstitch-needles.jpg)

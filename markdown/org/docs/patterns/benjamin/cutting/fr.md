@@ -2,21 +2,20 @@ Benjamin is a rather simple pattern, but your options will determine what needs 
 
 ## Sans ruban d'ajustement
 
- - **Tissu principal**
-   - Couper **4 Nœud**
-   - Couper **2 bandes de col**
- - **Entoilage**
-   - Couper **4 entoilages de Nœud**
-   - Couper **2 entoilages de bandes de col**
+-   **Tissu principal**
+    -   Couper **4 Nœud**
+    -   Couper **2 bandes de col**
+-   **Entoilage**
+    -   Couper **4 entoilages de Nœud**
+    -   Couper **2 entoilages de bandes de col**
 
 ## Avec ruban d'ajustement
 
- - **Tissu principal**
-   - Couper **1 Nœud 1**
-   - Couper **1 Nœud 2**
-   - Couper **2 Nœud 3**
- - **Entoilage**
-   - Couper **1 entoilages de Nœud 1**
-   - Couper **1 entoilages de Nœud 2**
-   - Couper **2 entoilages de Nœud 3**
-
+-   **Tissu principal**
+    -   Couper **1 Nœud 1**
+    -   Couper **1 Nœud 2**
+    -   Couper **2 Nœud 3**
+-   **Entoilage**
+    -   Couper **1 entoilages de Nœud 1**
+    -   Couper **1 entoilages de Nœud 2**
+    -   Couper **2 entoilages de Nœud 3**

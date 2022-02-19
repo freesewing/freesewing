@@ -1,11 +1,12 @@
-- - -
-- - -
+***
+
+***
 
 #### Wat is parametrisch ontwerp?
 
 Parametrisch ontwerp verwijst naar het gebruik van parameters of variabelen om het resultaat van een bepaald ontwerp binnen de regels te manipuleren.
 
-In naaipatronen, de *parameters* zijn wat door de gebruiker wordt aangeboden: hun metingen en opties die ze hebben geselecteerd.  
+In naaipatronen, de *parameters* zijn wat door de gebruiker wordt aangeboden: hun metingen en opties die ze hebben geselecteerd.\
 De *regels* van het ontwerp zijn wat jij als ontwerper maakt.
 
 #### Wat betekent dat voor de ontwerpers?

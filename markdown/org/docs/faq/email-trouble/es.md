@@ -12,10 +12,10 @@ Either try using a different E-mail address, or [reach out to us](https://discor
 
 En Francia, varios proveedores de correo electrónico comparten el mismo filtro:
 
- - gratis. r
- - laposte.net
- - organge.fr
- - sfr.fr
+-   gratis. r
+-   laposte.net
+-   organge.fr
+-   sfr.fr
 
 Todos ellos son conocidos por causar problemas con los envíos.
 

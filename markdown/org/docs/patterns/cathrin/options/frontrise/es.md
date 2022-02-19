@@ -6,6 +6,6 @@ Qué tan alto quieres que el corsé se levante en el frente central.
 
 > Esta opción también permite valores negativos. Harán que se reduzca la parte frontal central.
 
-
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_frontrise_sample.svg "Efecto de esta opción en el patrón")

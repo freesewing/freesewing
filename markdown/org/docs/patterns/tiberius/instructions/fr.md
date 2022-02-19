@@ -6,8 +6,8 @@ Tiberius is a historically inspired pattern, and if you want more authenticity, 
 
 ### Step 1: Sew shoulder seams
 
-- Put both parts with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
-- Finish the seams, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/tiberius/fabric), they *will* fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+-   Put both parts with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
+-   Finish the seams, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/tiberius/fabric), they *will* fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
 
 <Note>
 
@@ -17,8 +17,8 @@ If you opted for cutting the whole tunica out of one piece, carefully cut out th
 
 ### Step 2: Sew side seams
 
-- Still with good sides together, sew the side seams. Start at the notch for the armhole and work your way down. Take care to align your layers properly.
-- Finish seams.
+-   Still with good sides together, sew the side seams. Start at the notch for the armhole and work your way down. Take care to align your layers properly.
+-   Finish seams.
 
 ### Step 3: Hem the bottom edge
 

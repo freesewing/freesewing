@@ -8,7 +8,6 @@ Als we op de hoogte zijn van een inbreuk op ons beveiligingssysteem, zullen zowe
 
 Als je denkt dat je persoonlijke gegevens niet langer veilig zijn, contacteer dan joost@joost.at.
 
-
 ##### Diensten/service
 
 Onze hostingprovider beheert onze backend systemen voor ons. Dit omvat hosting, opslag en back-up.
@@ -26,4 +25,3 @@ Tot nu toe hebben we nog nooit een verzoek gekregen van eender welke wetshandhav
 ##### Gebruik door minderjarigen jonger dan 16
 
 Om juridische redenen moet je ten minste 16 jaar oud zijn om freesewing te gebruiken.
-

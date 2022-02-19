@@ -10,9 +10,9 @@ La fijación se utiliza siempre que se utilizan pines de costura para mantener l
 
 Ejemplos de donde se utiliza comúnmente la fijación son:
 
- - Fijar una costura en su lugar antes de coser
- - Fijar un ornamento, bolsillo u otra parte en su lugar antes de unirlo
- - Fijar dardos u otros cambios de patrón al encajar la ropa en un modelo
+-   Fijar una costura en su lugar antes de coser
+-   Fijar un ornamento, bolsillo u otra parte en su lugar antes de unirlo
+-   Fijar dardos u otros cambios de patrón al encajar la ropa en un modelo
 
 Fijar nunca es permanente, sino simplemente una medida temporal para mantener las cosas.
 

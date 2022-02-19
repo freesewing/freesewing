@@ -15,4 +15,3 @@ En dit zijn de verschillende types lijnen:
 <Legend part="lineStrokes">
 The different line strokes
 </Legend>
-

@@ -29,7 +29,6 @@ You won't be able to cut it open all the way to the tip, but that's fine.
 Press open the darts where they are cut open, and press the rest to the side.
 Take care to only press from the back. Pressing from the front will likely mark your fabric.
 
-
 ### Construct the chest pocket
 
 ![Apply fusible interfacing to the back of the chest pocket](basteChestPocket.svg)
@@ -62,6 +61,7 @@ On the top line of your basted welt pocket, mark 0.5cm inwards from the corners 
 Fold the welt double with the good sides together, and close the sides (sew the side seams).
 
 #### Trim seam allowance, turn and press
+
 Trim the seam allowances on the sides and especially limit the seam allowance towards the corner to avoid bulk.
 
 Turn inside out so the good side is out and press.
@@ -124,7 +124,6 @@ Do this by placing the front down with the good side up. Then fold over each sid
 
 Baste the chest pocket closed while we contruct the jacket.
 
-
 ### Prepare the fronts
 
 ![Prepare the canvas for the fronts](prepareCanvas.svg)
@@ -143,7 +142,7 @@ Cut out the chest canvas piece. Align it along the roll line, and baste it in pl
 
 Now baste the front canvas and chest piece to your front. Keep in mind that the canvas has no seam allowance.
 
-> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.  
+> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\
 > You don't want your canvas to get caught in the seams.
 
 #### Pad-stitch your lapels
@@ -154,7 +153,7 @@ Make sure to make the stitches a bit smaller towards the lapel tip,
 to make sure it lies flat against the chest, curling a bit inward instead of outward.
 
 > If you're not sure how to pad-stitch the lapels, [let us know](https://discord.freesewing.org/)
-and we'll make an attempt to document it.
+> and we'll make an attempt to document it.
 
 #### Tape the lapel edge and roll line
 
@@ -163,9 +162,9 @@ This will also secure the canvas to the front here and there.
 
 Keep in mind that:
 
- - The tape along the roll line should be placed inside the roll line.
- - The tape along the roll line should be about half a centimeter shorter than the distance it spans. The slight tension this creates helps the lapel roll nicely and contour to your body.
- - The tape along the lapel edge should be placed inside the seam line
+-   The tape along the roll line should be placed inside the roll line.
+-   The tape along the roll line should be about half a centimeter shorter than the distance it spans. The slight tension this creates helps the lapel roll nicely and contour to your body.
+-   The tape along the lapel edge should be placed inside the seam line
 
 > ##### Don't sew through your fabric
 >
@@ -184,10 +183,10 @@ Keep in mind that:
 
 ![Close the sides](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down.  
+Place your front with the good side up, and your side on it with the good side down.\
 Align the front/side seams, pin them in place if you feel like it, and sew them togther.
 
-Place this down with the good side up, and place your back on top with the good side down.  
+Place this down with the good side up, and place your back on top with the good side down.\
 Align the back/side seams, pin them in place if you feel like it, and sew them togther.
 
 > Make sure the canvas does not get caught in the seam.

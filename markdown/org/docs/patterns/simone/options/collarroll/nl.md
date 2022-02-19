@@ -13,4 +13,5 @@ Door dit getal te verhogen maak je de kraag niet hoger (gebruik daarvoor de hoog
 </Note>
 
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_collarroll_sample.svg "Effect van deze optie op het patroon")

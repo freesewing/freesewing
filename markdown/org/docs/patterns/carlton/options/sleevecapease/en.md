@@ -10,6 +10,6 @@ How much sleevecap ease do you want?
 
 > The lighter your fabric, the less sleevecap ease you want.
 
-
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_sleevecapease_sample.svg "Effect of this option on the pattern")

@@ -1,5 +1,5 @@
 > ### Bilder kommen bald
-> 
+>
 > Diese Anweisungen sind in Bearbeitung und wir haben die Illustrationen noch nicht erstellt. Sie werden bald hinzugefügt.
 
 ## Schritt 1: Betrete die Rückseite
@@ -37,7 +37,7 @@ Markieren Sie die Mitte Ihrer Taillenlänge. Fold the waistband double, and mark
 Ein bisschen nach links und rechts davon können Sie zwei Ösen hinzufügen, um eine Zeichenfolge durchzulassen. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Am besten kannst du Verstärkung hinzufügen
-> 
+>
 > As swimwear fabric is slippery and thin, you might want to add some reinforcement behind these eyelets. Ein übrig bleibendes Denim-Stück wird nur in Ordnung sein.
 
 ## Schritt 6: Bereiten Sie die elastische Vorbereitung
@@ -57,7 +57,7 @@ Falten Sie Ihre Taille doppelt entlang der Länge mit guten Seiten aus, und lege
 Align the back of your swim trunks with the place where you joined the waistband, align the edge of the waistband with the edge of the back, and pin them together. Vergewissern Sie sich, dass Sie es auf der schlechten Seite des Rückens befestigen.
 
 > ### Denken Sie an Ihre Ösen
-> 
+>
 > If you've made eyelets in your waistband, double check that they are placed towards the outside, not the inside of your waistband.
 
 Find the front of the waistband (easy if there's eyelets, if not just fold it double) and align that with the front seam. Pin dies auch an Platz.
@@ -73,7 +73,7 @@ It's fine to not sew too close the first time around, and once your elastic is a
 Falte den Saum nach oben und nähe ihn nach unten. Wenn du einen Coverlock hast, benutze es. Wenn nicht, verwenden Sie eine Zick-Zick-Zick-Zack-Nadelstichung, um die Naht dehnbar zu halten.
 
 > ### Nur einmal falten, um Masse zu vermeiden
-> 
+>
 > Badebekleidungsteil schwenkt sich nicht, deshalb kann man diese einfach einmal falten und nach unten nähen, dann den Stoff sauber zurückschneiden.
 
 ## Schritt 10: Thread eine Zeichenfolge um die Taille herum

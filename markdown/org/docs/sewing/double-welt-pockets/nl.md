@@ -3,6 +3,7 @@ title: Dubbele paspelzak
 ---
 
 ## Video
+
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
 ## Leer paspelzakken met David Page Coffin
@@ -19,19 +20,19 @@ David is een vriend van deze site, en vooral veel beter geschikt om dit uit te l
 
 Om een dubbele paspelzak te maken heb je dit nodig:
 
- - Basis naaimateriaal
- - De stof of het patroondeel waar je de zak in wil maken
- - Twee stroken stof voor de paspels
- - Een strookje tussenvoering
- - Voering of een andere geschikte stof voor de binnenzak (Zie stof- en kleuropties)
- - Een beleg voor de binnenzak, afhankelijk van je stof- en kleuropties
+-   Basis naaimateriaal
+-   De stof of het patroondeel waar je de zak in wil maken
+-   Twee stroken stof voor de paspels
+-   Een strookje tussenvoering
+-   Voering of een andere geschikte stof voor de binnenzak (Zie stof- en kleuropties)
+-   Een beleg voor de binnenzak, afhankelijk van je stof- en kleuropties
 
 ### Parameters
 
 Twee waarden bepalen de afmeting van je dubbele paspelzak. Dit zijn:
 
- - Breedte van de zak: dit is de breedte van de opening van de afgewerkte dubbele paspelzak
- - Hoogte van de paspel: dit is de hoogte van één paspel, en dus de helft van de hoogte van een dubbele paspelzak
+-   Breedte van de zak: dit is de breedte van de opening van de afgewerkte dubbele paspelzak
+-   Hoogte van de paspel: dit is de hoogte van één paspel, en dus de helft van de hoogte van een dubbele paspelzak
 
 > In dit voorbeeld gebruik ik een zakbreedte van 13 cm en een paspelhoogte van 0.5 cm
 
@@ -41,13 +42,13 @@ Twee waarden bepalen de afmeting van je dubbele paspelzak. Dit zijn:
 
 De paspels zijn twee rechthoekige stroken stof met de volgende afmetingen:
 
- - Lengte: zakbreedte + 4 cm
- - Breedte: Hoogte van de paspel x 2 + 5 cm
+-   Lengte: zakbreedte + 4 cm
+-   Breedte: Hoogte van de paspel x 2 + 5 cm
 
 Voor ons voorbeeld:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+-   Length: 13cm + 4cm = 17cm
+-   Width: (0.5cm x 2) + 5cm = 6cm
 
 Deze vormen de twee smalle stroken stof die je paspelzak maken.
 
@@ -57,13 +58,13 @@ Deze vormen de twee smalle stroken stof die je paspelzak maken.
 
 De tussenvoering voor de zak is een enkele rechthoekige strook kleefbare tussenvoering met de volgende afmetingen:
 
- - Lengte: zakbreedte + 4 cm
- - Breedte: Hoogte van de paspel x 2 + 5 cm
+-   Lengte: zakbreedte + 4 cm
+-   Breedte: Hoogte van de paspel x 2 + 5 cm
 
 Voor ons voorbeeld:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+-   Length: 13cm + 4cm = 17cm
+-   Width: (0.5cm x 2) + 5cm = 6cm
 
 > Je hebt misschien opgemerkt dat de tussenvoering dezelfde afmeting heeft als een paspel
 
@@ -73,13 +74,13 @@ The interfacing is used to stabilize the pocket, and will be fused to the fabric
 
 Het (optionele) zakbeleg is een enkele rechthoekige strook stof met de volgende afmetingen:
 
- - Lengte: zakbreedte + 4 cm
- - Breedte: Hoogte van de paspel x 2 + 5 cm
+-   Lengte: zakbreedte + 4 cm
+-   Breedte: Hoogte van de paspel x 2 + 5 cm
 
 Voor ons voorbeeld:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+-   Length: 13cm + 4cm = 17cm
+-   Width: (0.5cm x 2) + 5cm = 6cm
 
 > Je hebt misschien opgemerkt dat het beleg dezelfde afmeting heeft als een paspel
 
@@ -109,9 +110,9 @@ Strijk de strook tussenvoering op de verkeerde kant van de stof, zodat het de pl
 
 Markeer de paspelzak op deze manier:
 
- - Markeer de zakbreedte met verticale lijnen. Laat deze lijnen iets verder doorlopen, dit helpt later om de paspels op de juiste plek te leggen
- - Markeer het midden van de zakopening met een horizontale lijn. Laat ook deze lijn iets verder doorlopen om het je later makkelijker te maken
- - Markeer twee horizontale lijnen, parallel aan de middenlijn, op dezelfde afstand als de paspelhoogte (in ons voorbeeld is dit 0.5 cm)
+-   Markeer de zakbreedte met verticale lijnen. Laat deze lijnen iets verder doorlopen, dit helpt later om de paspels op de juiste plek te leggen
+-   Markeer het midden van de zakopening met een horizontale lijn. Laat ook deze lijn iets verder doorlopen om het je later makkelijker te maken
+-   Markeer twee horizontale lijnen, parallel aan de middenlijn, op dezelfde afstand als de paspelhoogte (in ons voorbeeld is dit 0.5 cm)
 
 Het deel van de twee horizontale lijnen parallel met de middenlijn dat tussen de twee verticale lijnen valt is waar we de paspels vast zullen stikken. Dit is aangeduid met de rode lijnen.
 
@@ -152,7 +153,6 @@ Wanneer je dit gedaan hebt stik je de tweede paspel op dezelfde manier vast. Mer
 > Op de afbeelding geeft de rode lijn aan hoe en waar de zak opengeknipt wordt, en toont de groene lijn de naden.
 
 Knip je paspelzak open door langs de middelste horizontale lijn te knippen. Stop een stukje voor de verticale lijnen die de zijkanten van de zakopening aangeven en knip in een hoek van 45 graden naar het uiteinde van het stiksel dat de paspels bevestigt.
-
 
 > Let op dat je niet door je stiksel knipt, of er voorbij. Ga voor precisiewerk.
 

@@ -8,10 +8,10 @@ We willen graag diagnostiek verzamelen en [maak een issue op Github](https://git
 
 De diagnostische gegevens die we verzamelen, zijn:
 
- - Je gebruikers-id
- - Je Github gebruikersnaam (alleen als je het hebt ingesteld in je profiel)
- - De patroon en de versie
- - De volledige set van metingen en opties gebruikt om dit patroon te maken
+-   Je gebruikers-id
+-   Je Github gebruikersnaam (alleen als je het hebt ingesteld in je profiel)
+-   De patroon en de versie
+-   De volledige set van metingen en opties gebruikt om dit patroon te maken
 
 Als je ermee akkoord bent deze gegevens te publiceren in het crashrapport, klik dan op de knop hieronder.
 

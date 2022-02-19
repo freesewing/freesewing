@@ -1,7 +1,4 @@
 ---
 ---
 
- 
-
 <PatternOptions pattern='teagan' />
-

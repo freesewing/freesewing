@@ -1,6 +1,6 @@
 ### Paso 1: Agarra la parte frontal a la primera pieza de chispa
 
-Coloca una de las piezas de chispa en la parte delantera _lados buenos juntos_, de modo que las costuras de los croquis estén alineadas. Fijar o bastar en la costura de la costura.
+Coloca una de las piezas de chispa en la parte delantera *lados buenos juntos*, de modo que las costuras de los croquis estén alineadas. Fijar o bastar en la costura de la costura.
 
 ![Difundir el frente a la primera pieza de chispa](step01.png)
 

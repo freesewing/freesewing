@@ -8,6 +8,6 @@ You can tweak this to make sure the edges of your collar stand at the front or n
 
 </Note>
 
-
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_collarstandcurve_sample.svg "Effect of this option on the pattern")

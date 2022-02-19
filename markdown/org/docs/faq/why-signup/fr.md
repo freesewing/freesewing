@@ -14,7 +14,7 @@ Sans conservation de vos mesures en mémoire, la génération de patrons sur mes
 
 Cette question suggère souvent une méfiance liée à la création d'un compte. En tant que tel, les liens suivants peuvent également être pertinents :
 
- - Lisez [notre politique de confidentialité][1]
- - En savoir plus sur [vos droits][2]
+-   Lisez \[notre politique de confidentialité]\[1]
+-   En savoir plus sur \[vos droits]\[2]
 
 </Note>

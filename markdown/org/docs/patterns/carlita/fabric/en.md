@@ -10,7 +10,7 @@ Remember that this pattern is intended to be a winter coat so you need to consid
 
 ### Linings and Pocket Bags
 
-Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. **Silks** can also be used for the body as well but the **Cotton** will be more durable in the long run. Pocket bags should be out of **Cotton** or something that is strong enough to hold the weight of the intended items you wish to carry in them. **Printed Cottons** are a fun thing to try but if your main fabric is quite bulky you may find they add to much weight. 
+Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. **Silks** can also be used for the body as well but the **Cotton** will be more durable in the long run. Pocket bags should be out of **Cotton** or something that is strong enough to hold the weight of the intended items you wish to carry in them. **Printed Cottons** are a fun thing to try but if your main fabric is quite bulky you may find they add to much weight.
 
 <Tip>
 

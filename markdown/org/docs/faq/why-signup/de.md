@@ -14,7 +14,7 @@ Ohne die Möglichkeit, deine Körpermaße zu speichern, wäre das Erstellen von 
 
 Diese Frage deutet häufig auf ein zugrundeliegendes Misstrauen gegenüber dem Erstellen eines Accounts. Von daher sind die folgenden Links vielleicht auch relevant:
 
-- Schau dir [unsere Datenschutzerklärung][1] an
-- Erfahre mehr über [deine Rechte][2]
+-   Schau dir \[unsere Datenschutzerklärung]\[1] an
+-   Erfahre mehr über \[deine Rechte]\[2]
 
 </Note>

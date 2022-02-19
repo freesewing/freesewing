@@ -17,4 +17,3 @@ Snaps have a *stud* and *socket* part, and also look like the real thing:
 A snap stud is shown on the left, and a snap socket on the right
 
 </Legend>
-

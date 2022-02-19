@@ -1,4 +1,1 @@
-
-
 <PatternOptions pattern='diana' />
-

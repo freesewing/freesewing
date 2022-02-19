@@ -5,33 +5,36 @@ title: Bee Cutting
 There are three variations of this pattern. **One Colour**, which is where the bikini top is made out of one colour. **Two Colours**, where the bikini top is made reversible by using two colours, and **Cross Back Tie Variant**, where the neck ties tie in the back replacing the band tie.
 
 ## Materials
+
 ### One Colour (Non-Reversible)
 
 **Main fabric**
-   - Cut **4 cup** parts.
-   - Cut **2 neck tie** parts.
-   - Cut **1 band tie** part.
+
+-   Cut **4 cup** parts.
+-   Cut **2 neck tie** parts.
+-   Cut **1 band tie** part.
 
 ### Two Colours (Reversible)
 
 **Main fabric**
-   - Cut **2 cup** parts from main.
-   - Cut **2 neck tie** parts.
-   - Cut **1 band tie** part.
+
+-   Cut **2 cup** parts from main.
+-   Cut **2 neck tie** parts.
+-   Cut **1 band tie** part.
 
 **Lining fabric**
 
-   - Cut **2 cup** parts.
-   - Cut **2 neck tie** parts.
-   - Cut **1 band tie** part.
+-   Cut **2 cup** parts.
+-   Cut **2 neck tie** parts.
+-   Cut **1 band tie** part.
 
 ### Cross Back Tie Variant.
 
- **Main fabric**
- 
-   - Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
-   - Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
-   - Cut **1 band** part if making cross back tie variant instead of band tie variant.
+**Main fabric**
+
+-   Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
+-   Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
+-   Cut **1 band** part if making cross back tie variant instead of band tie variant.
 
 <Note>
 

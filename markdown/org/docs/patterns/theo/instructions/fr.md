@@ -1,4 +1,3 @@
-
 <Note>
 
 Le texte est un peu concis pour vous ? J'essaie de rendre les vidéos disponibles comme partie intégrante de la documentation du patron.
@@ -11,9 +10,9 @@ Dans ce cas particulier, il y a beaucoup de matériel vidéo disponible, mais il
 
 <Note>
 
-La plupart des étapes ci-dessous doivent être répétées pour les deux pantalons. 
+La plupart des étapes ci-dessous doivent être répétées pour les deux pantalons.
 
-Cela n'est pas toujours mentionné parce que la vie est courte et l'écriture continue _N'oubliez pas de le faire pour les deux pantalons_ se fatigue très bientôt.
+Cela n'est pas toujours mentionné parce que la vie est courte et l'écriture continue *N'oubliez pas de le faire pour les deux pantalons* se fatigue très bientôt.
 
 </Note>
 
@@ -49,7 +48,7 @@ Construisez les deux poches à l'arrière de votre pantalon, y compris le sac de
 
 ###### Poches double coulissantes
 
-Construire une double poche soudée est une technique qui est utilisée pour différents vêtements. 
+Construire une double poche soudée est une technique qui est utilisée pour différents vêtements.
 C'est pourquoi je l'ai branché dans sa propre page de documentation.
 
 Il y a à la fois une documentation écrite et une série vidéo qui vous montre comment le faire, donc même si vous n'avez jamais fait de poches de soudage avant, vous serez bien.
@@ -100,7 +99,7 @@ Collez le dessus à 0,5 cm du pli, assurez-vous de le garder parallèle et de ne
 
 ### Étape 7 : Terminer le bord dans la poche avant
 
-![![Finish the edge inside the front pocket](etape 7)](step07.png)
+![!\[Finish the edge inside the front pocket\](etape 7)](step07.png)
 
 Repliez la partie principale de la pièce avant pour pouvoir placer la doublure, le sac de poche et le bord plié de la pièce avant à plat.
 
@@ -113,7 +112,7 @@ Zig-zag le bord de la pièce avant pliée pour la finir et la fixer sur le dos d
 Lorsque vous avez terminé, placez la pièce avant, la doublure et le sac de poche à plat, et donnez-lui une bonne presse.
 
 > Ce serait peut-être un bon moment pour vous rappeler que chaque étape devait être accomplie pour les deux jambes.
-> 
+>
 > C'est juste un rappel amical, les prochaines étapes doivent être faites pour les deux jambes aussi.
 
 ### Étape 9 : Attacher la pièce latérale au sac de poche
@@ -139,10 +138,10 @@ Lorsque tout est épinglé ensemble, repliez la pièce avant et la doublure et f
 > Coudre à la courbe inférieure du sac de poche jusqu'au point où il a atteint la pièce latérale
 
 > Vous pouvez finir le sac de poche de plusieurs façons, y compris :
-> 
-> - Serge les côtés ensemble
-> - Terminer le bord avec du ruban adhésif
-> - Coudre les côtés ensemble et finir le bord avec un point de zig-zag
+>
+> -   Serge les côtés ensemble
+> -   Terminer le bord avec du ruban adhésif
+> -   Coudre les côtés ensemble et finir le bord avec un point de zig-zag
 
 ### Étape 11: Appuyez sur la poche avant
 
@@ -166,7 +165,7 @@ Avant de coudre les coutures latérales, finissez les bords latéraux en sergean
 
 ### Étape 14: Coudre les coutures latérales
 
-![![Sew the side seams](etape 7)](step14.png)
+![!\[Sew the side seams\](etape 7)](step14.png)
 
 Placez le devant et l'arrière de chaque jambe sur les uns sur les autres, avec les bons côtés ensemble.
 
@@ -209,7 +208,7 @@ Une fois que vous avez cousu la pièce de mouche et bouclier de mouche ensemble,
 ![Épingler la partie avant zip vers la droite](step18.png)
 
 > Les étapes 18 à 21 mènent tous à une seule rangée de coutures qui va coudre votre zip à l'avant, tout en attachant la pièce de mouche et le bouclier de mouche en une seule fois.
-> 
+>
 > C'est la couture la plus difficile à faire dans tout le processus de construction, donc je prends mon temps pour expliquer et illustrer cela avant de commencer à coudre.
 
 Placez votre pièce avant pour la jambe droite avec le bon côté vers le haut. Ainsi, ce sac de poche avant et doublure s'assied sous et repose à plat.
@@ -218,8 +217,8 @@ Prenez votre zip et ouvrez-le (décompresser). Maintenant, retournez-le pour qu'
 
 Alignez votre zip avec la couture de crotch comme indiqué dans l'illustration. Prendre en compte les éléments suivants :
 
- - La fin de votre glissière devrait se poser au sommet de votre pantalon où commencera votre ceinture. Cependant, n'oubliez pas qu'il y a une marge de couture là-bas, ne l'alignez donc pas avec le haut de la pièce avant, mais soustrayez une marge de couture de 1 cm.
- - Alignez le zip avec la couture crochée. Ne vous inquiétez pas le bord de la zip, comme ils viennent en différentes largeurs. Au lieu de cela, assurez-vous que vous pouvez coudre à côté des dents de la glissière dans la couture de la pièce avant.
+-   La fin de votre glissière devrait se poser au sommet de votre pantalon où commencera votre ceinture. Cependant, n'oubliez pas qu'il y a une marge de couture là-bas, ne l'alignez donc pas avec le haut de la pièce avant, mais soustrayez une marge de couture de 1 cm.
+-   Alignez le zip avec la couture crochée. Ne vous inquiétez pas le bord de la zip, comme ils viennent en différentes largeurs. Au lieu de cela, assurez-vous que vous pouvez coudre à côté des dents de la glissière dans la couture de la pièce avant.
 
 Épingler le zip en place avec quelques broches perpendiculaires à votre zip (comme montré). En d'autres termes, ne pinglez pas le long du zip, mais de l'autre côté du zip.
 
@@ -318,10 +317,10 @@ Assurez-vous d'épingler la mouche uniquement à la mouche. Pas à d'autres couc
 Enfin et surtout, coudre le long du zip avec votre pied à glissière pour l'attacher à la mouche.
 
 > Lors de l'alignement du zip, assurez-vous de prendre en compte les éléments suivants :
-> 
-> - Le zip doit être placé avec le bon côté vers le bas
-> - Le zip devrait s'asseoir un peu en arrière du bord de votre pièce de mouche
-> - Assurez-vous d'aligner le haut du zip avec l'autre moitié, sur la jambe droite
+>
+> -   Le zip doit être placé avec le bon côté vers le bas
+> -   Le zip devrait s'asseoir un peu en arrière du bord de votre pièce de mouche
+> -   Assurez-vous d'aligner le haut du zip avec l'autre moitié, sur la jambe droite
 
 ### Étape 28 : Zig-zag le bord zip à la pièce de la mouche
 
@@ -424,6 +423,7 @@ Sortez vos pantalons du bon côté, et placez soigneusement une jambe sur votre 
 Quand il est beau, appuyez sur les lignes de pli dans votre jambe, devant un dos. Répétez pour l'autre jambe.
 
 Donnez-lui une presse ferme parce que vous voulez que les plis soient toujours là après avoir lavé votre pantalon (pour voir où les appuyer à nouveau).
+
 > Dans l'industrie, les produits chimiques sont appliqués le long de la ligne de pli avant d'être pressés ensemble. Certains tailleurs utilisent une sorte de marteau et d'enclume en bois pour frapper les fibres dans un creux permanent.
 
 Selon votre tissu, votre pli peut durer plus longtemps, mais en fin de compte, vous ne pouvez pas vous attendre à avoir un pli qui peut résister à quelques lavages sans être réappliqué.
@@ -502,16 +502,16 @@ Cela dit, voici ce qu'il faut faire pour faire une boucle de ceinture standard:
 
 Trouvez la partie de motif de la boucle de la ceinture, un petit morceau de tissu rectangulaire. Il devrait y en avoir 8, et ceux-ci deviendront vos boucles de ceinture. Pour chacun d'eux, prenez ces mesures :
 
- - Zig-zag (ou serge) le long des bords les plus longs du rectangle
- - Replier un côté sur la longueur et appuyer sur
- - Plier le dos de l'autre côté le long de la longueur et appuyer sur
- - Coudre à la main le long de la boucle de la ceinture pour que les côtés pliés restent en place, mais les points ne s'affichent pas à l'avant
- - Donnez-lui une dernière bonne pression lorsque vous avez terminé
+-   Zig-zag (ou serge) le long des bords les plus longs du rectangle
+-   Replier un côté sur la longueur et appuyer sur
+-   Plier le dos de l'autre côté le long de la longueur et appuyer sur
+-   Coudre à la main le long de la boucle de la ceinture pour que les côtés pliés restent en place, mais les points ne s'affichent pas à l'avant
+-   Donnez-lui une dernière bonne pression lorsque vous avez terminé
 
 > Même si la largeur des boucles de votre ceinture n'est pas si importante, il importe de s'assurer qu'elles sont toutes de la même largeur.
-> 
+>
 > Pour faciliter l'obtention d'une largeur uniforme, vous pouvez plier vos boucles de ceinture autour d'une bande de carton, papier épais, ou plastique de la boucle de courroie désirée.
-> 
+>
 > Cette bande peut également vous aider à coudre à la main. Gardez-le dans la boucle de votre ceinture et il empêchera votre aiguille de percer à travers toutes les couches et votre fil ne se montrera pas à l'avant.
 
 ### Étape 46 : Attachez les boucles de ceinture : Bas
@@ -527,7 +527,7 @@ Puis zag le bord de la courroie vers le pantalon.
 > Il est important de faire sortir la ceinture de la taille tout en faisant ceci. Assurez-vous d’attacher les boucles de ceinture uniquement à votre pantalon, et non à la bande de taille.
 
 > Vous avez 8 boucles de ceinture, donc vous devez les répartir autour de votre ceinture. Jetez un coup d'œil à une paire existante si vous ne savez pas comment procéder.
-> 
+>
 > Assurez-vous de placer des cerceaux de ceinture à proximité du dos central, et pas trop près les uns des autres à l'avant (pour les boucles de ceinture).
 
 ### Étape 47 : Visage de la ceinture
@@ -547,16 +547,16 @@ Ce sera beaucoup plus simple à comprendre si vous jetez un coup d'œil à la vi
 Avant de finaliser la ceinture, nous allons couper une partie de sa marge de couture.
 
 > **About seam allowance grading** When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
-> 
+>
 > La couche la plus proche du bon côté du vêtement devrait être la plus longue, donc couper de là.
-> 
+>
 > Ce faisant, il sera moins probable que le contour de la marge de couture soit visible du bon côté.
 
 ### Étape 49: Appuyez et badigeonnez la doublure de ceinture
 
 ![Pressez et badigeonnez la doublure de ceinture](step49.png)
 
-La doublure à bande de taille sera cousue à partir de l'avant du pantalon sur le dessus de la couture qui relie la ceinture au pantalon (appelé _point dans le fossé_).
+La doublure à bande de taille sera cousue à partir de l'avant du pantalon sur le dessus de la couture qui relie la ceinture au pantalon (appelé *point dans le fossé*).
 
 Le fait de le faire rattrapera la doublure et la fixera en place. Cependant, comme nous allons coudre cela du bon côté, la doublure se trouvera sous toutes les autres couches, et nous ne verrons pas ce que nous faisons.
 
@@ -601,7 +601,7 @@ Avant d'ourdir le pantalon, finissez le bord brut des jambes avec un point de zi
 ![Coudre éventuellement dans un ruban d'ourlet](step53.png)
 
 > L'ourlet est un ruban qui se trouve à l'intérieur de votre pantalon. À l'endroit où votre ourlet se replie, le tissu doit prendre beaucoup d'abus de bosser dans des chaussures et d'autres choses.
-> 
+>
 > Placer un ruban à l'intérieur de l'ourlet protège votre tissu dans une certaine mesure, et c'est une finition soignée.
 
 Marquez l'ourlet sur votre pantalon (bon côté).
@@ -623,8 +623,9 @@ Repliez les jambes du pantalon à l'ourlet et appuyez sur l'ourlet.
 Avec l'ourlet bien enfoncé, cousez simplement à la main la partie arrière pliée à l'intérieur de votre pantalon.
 
 > L'emménagement se fait à la main parce qu'il est important que les points ne s'affichent pas sur le devant. Donc, lorsque vous cousez le ourlet à la main, ne poussez pas votre aiguille à travers le tissu, mais il suffit de attraper quelques fils pour que vos points ne s'affichent pas sur le devant
-> 
+>
 > Bien qu'il y ait des alternatives à la machine, elles ne sont pas aussi propres (point d'ourlets aveugles) ou probablement pas accessibles aux égouts de la maison (machine à ourlets industriels).
 
 ### Étape 56 : Couper, nettoyer et appuyer sur
+
 Couper tous les fils lâches ou les bâtons qui restent, et donner à votre pantalon une bonne presse finale.

@@ -17,7 +17,7 @@ Utilizamos estos términos como una manera de incluir el género para preguntar 
 
 ##### ¿Por qué preguntamos en primer lugar
 
-meter un cofre con senos es más complejo que acumular un cofre sin senos. 
+meter un cofre con senos es más complejo que acumular un cofre sin senos.
 Se requieren mediciones y opciones adicionales, y queremos mostrar estas
 solo cuando sea relevante.
 

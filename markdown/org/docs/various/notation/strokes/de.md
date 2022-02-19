@@ -15,4 +15,3 @@ Und das sind die verschiedenen Strichstile:
 <Legend part="lineStrokes">
 The different line strokes
 </Legend>
-

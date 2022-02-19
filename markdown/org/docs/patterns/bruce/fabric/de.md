@@ -3,5 +3,3 @@ Für dieses Schnittmuster benötigst du einen dehnbaren Stoff. Vorzugsweise etwa
 Ich persönlich denke, dass Rayon für dieses Schnittmuster unschlagbar ist, auch wenn es sich natürlich auch aus einem anderen Strickstoff nähen lässt, wie beispielsweise Jersey.
 
 Im Zweifelsfall wähle Rayon.
-
-

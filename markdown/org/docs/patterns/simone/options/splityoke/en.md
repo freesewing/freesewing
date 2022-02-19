@@ -12,6 +12,6 @@ It's a bit more work, but it allows you to align the grain line differently on b
 
 </Note>
 
-
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_splityoke_sample.svg "Effect of this option on the pattern")

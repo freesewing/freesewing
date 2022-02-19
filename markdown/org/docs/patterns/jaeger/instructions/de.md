@@ -24,7 +24,6 @@ Nähen Sie den Vorderdart und achten Sie darauf, dass der Dart Stopp am richtige
 
 Sobald die Vorderdarte geschlossen sind, schneiden Sie den Dart auf der Rückseite. Man kann es nicht bis zur Spitze schneiden, aber das ist in Ordnung. Drücken Sie die Dilts öffnen, wo sie geschnitten werden, und drücken Sie den Rest zur Seite. Achten Sie darauf, nur von der Rückseite zu drücken. Drücken von der Vorderseite wird wahrscheinlich dein Gewebe markieren.
 
-
 ### Baue die Brusttasche
 
 ![Verwundbare Schnittstelle auf die Rückseite der Brusttasche anwenden](basteChestPocket.svg)
@@ -34,7 +33,7 @@ Sobald die Vorderdarte geschlossen sind, schneiden Sie den Dart auf der Rücksei
 Verwenden Sie ein rechteckiges Stück leichtes Interface um die Brusttasche herum, so dass es sich ein paar cm in alle Richtungen erstreckt.
 
 > ##### Wir verwenden nicht fusible auf der ganzen Front
-> 
+>
 > Sportcoats werden typischerweise aus etwas schwereren Stoffen hergestellt. That, and the fact that I prefer to use canvas rather than fusible interfacing, means that I don't interface the front with fusible.
 
 #### Brust Weltenumriss, Markiere Endpunkte der oberen Linie
@@ -54,6 +53,7 @@ Markieren Sie auf der obersten Linie Ihrer Basiswelttasche 0,5 cm nach innen von
 Falten Sie die Welt mit den guten Seiten zusammen und schließen Sie die Seiten (nähen Sie die Seitennaht).
 
 #### Nahtzugabe, drehen und drücken
+
 Schneiden Sie die Nahtzuschläge an den Seiten und vor allem die Nahtzuweisung in die Ecke zu begrenzen, um Schüttgut zu vermeiden.
 
 Drehen Sie sich aus, damit die gute Seite draußen ist und drücken Sie.
@@ -106,7 +106,6 @@ Schließen Sie schließlich die Tasche durch Nähen der Seiten. Tun Sie dies, in
 
 Füllen Sie die Brusttasche geschlossen, während wir die Jacke konturieren.
 
-
 ### Die Fronten vorbereiten
 
 ![Leinwand für die Fronten vorbereiten](prepareCanvas.svg)
@@ -141,16 +140,16 @@ Jetzt werden wir das Klebeband an den Rändern der Vorderseite und an der Rollen
 
 Denken Sie daran, dass:
 
- - Das Band entlang der Rollenlinie sollte innerhalb der Rollenlinie platziert werden.
- - Das Band entlang der Rollenlinie sollte etwa einen halben Zentimeter kürzer sein als die Distanz, die es umspannt. Die leichte Spannung, die dadurch entsteht, hilft der Lupe angenehm zu rollen und die Kontur zu Ihrem Körper.
- - Das Klebeband am Rand der Lupe sollte innerhalb der Nahtlinie platziert werden
+-   Das Band entlang der Rollenlinie sollte innerhalb der Rollenlinie platziert werden.
+-   Das Band entlang der Rollenlinie sollte etwa einen halben Zentimeter kürzer sein als die Distanz, die es umspannt. Die leichte Spannung, die dadurch entsteht, hilft der Lupe angenehm zu rollen und die Kontur zu Ihrem Körper.
+-   Das Klebeband am Rand der Lupe sollte innerhalb der Nahtlinie platziert werden
 
 > ##### Nicht durch deinen Stoff nähen
-> 
+>
 > While sewing the tape to your front, avoid pushing your needle all the way through your fabric so that your stitches will show on the front.
-> 
+>
 > Gleichzeitig sollten Sie das Klebeband auch nicht nur auf Ihre Leinwand sichern. Instead, you should try to catch a few threads of your fabric on every stitch, so that the tape is secured in place, yet the stitches don't show at the front.
-> 
+>
 > Dies ist weniger ein Problem oberhalb des Bruchpunktes Ihrer Rasse, wo der Stoff auf der Rückseite des Lapels sein wird.
 
 ### Körper schließen
@@ -166,9 +165,9 @@ Place this down with the good side up, and place your back on top with the good 
 > Vergewissern Sie sich, dass die Leinwand nicht in der Naht gefangen wird.
 
 > ##### Hinweis für Nähschlitten
-> 
+>
 > Wenn Sie einen doppelten Schlot haben, wird diese Naht den Schlot enthalten.
-> 
+>
 > Nähen Sie den unteren Teil der Seitennaht und den seitlichen Teil, der den Schlot bildet. Nähen Sie danach nicht nach unten.
 
 #### Rückennaht schließen

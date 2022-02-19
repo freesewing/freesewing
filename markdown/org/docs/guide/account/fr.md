@@ -8,5 +8,5 @@ Pour créer des patrons sur mesure, nous avons besoin de vos mesures. Demander �
 Nous avons besoin d'un endroit pour les stocker, et cet *endroit* est votre compte. Les données de votre compte sont stockées dans nos serveurs, dans le respect de [notre politique de confidentialité][2], et dans le respect de [vos droits][2].
 
 [2]: /docs/various/rights/
-[2]: /docs/various/rights/
 
+[2]: /docs/various/rights/

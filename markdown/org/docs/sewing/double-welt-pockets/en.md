@@ -3,16 +3,17 @@ title: Double welt pockets
 ---
 
 ## Video
+
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
 ## Learn welts with David Page Coffin
 
-The November 2015 edition of 
-[Seamwork Magazine](https://www.seamwork.com/) has a section called 
+The November 2015 edition of
+[Seamwork Magazine](https://www.seamwork.com/) has a section called
 [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt)
 where David Page Coffin walks you through the construction of welt pockets.
 
-David has written various books on trouser and shirt construction, 
+David has written various books on trouser and shirt construction,
 teaches online sewing classes, and hosts workshops throughout the US, and abroad.
 
 David is a friend of the site, and by all measures much better at explaining this than I am.
@@ -23,19 +24,19 @@ David is a friend of the site, and by all measures much better at explaining thi
 
 To make double welt pockets, you will need:
 
- - Basic sewing supplies
- - The fabric or pattern piece you want to make the pocket in
- - Two fabric strips for the welts
- - A strip of interfacing
- - Lining or other suitable fabric for the pocket bag (See fabric and colour options)
- - Facing for the pocket bag, depending on your fabric and colour options
+-   Basic sewing supplies
+-   The fabric or pattern piece you want to make the pocket in
+-   Two fabric strips for the welts
+-   A strip of interfacing
+-   Lining or other suitable fabric for the pocket bag (See fabric and colour options)
+-   Facing for the pocket bag, depending on your fabric and colour options
 
 ### Parameters
 
 Two values determine the size of your double welt pocket. They are:
 
- - The pocket width: This is the width of the opening of the finalized double welt pocket
- - The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
+-   The pocket width: This is the width of the opening of the finalized double welt pocket
+-   The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
 
 > In the example below, I use a pocket width of 13cm and a welt height of 0.5cm
 
@@ -45,13 +46,13 @@ Two values determine the size of your double welt pocket. They are:
 
 The welts are two rectangular strips of fabric with the following measurements:
 
- - Length: Pocket width + 4cm
- - Width: Welt height x2 + 5cm
+-   Length: Pocket width + 4cm
+-   Width: Welt height x2 + 5cm
 
 For our example:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+-   Length: 13cm + 4cm = 17cm
+-   Width: (0.5cm x 2) + 5cm = 6cm
 
 They will form the two narrow strips of fabric that form your double welt pocket.
 
@@ -61,13 +62,13 @@ They will form the two narrow strips of fabric that form your double welt pocket
 
 The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
 
- - Length: Pocket width + 4cm
- - Width: Welt height x2 + 5cm
+-   Length: Pocket width + 4cm
+-   Width: Welt height x2 + 5cm
 
 For our example:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+-   Length: 13cm + 4cm = 17cm
+-   Width: (0.5cm x 2) + 5cm = 6cm
 
 > You may have noticed that the interfacing is the same size as a welt
 
@@ -77,13 +78,13 @@ The interfacing is used to stabilize the pocket, and will be fused to the fabric
 
 The (optional) pocket facing is a single rectangular strip of fabric with the following measurements:
 
- - Length: Pocket width + 4cm
- - Width: Welt height x2 + 5cm
+-   Length: Pocket width + 4cm
+-   Width: Welt height x2 + 5cm
 
 For our example:
 
- - Length: 13cm + 4cm = 17cm
- - Width: (0.5cm x 2) + 5cm = 6cm
+-   Length: 13cm + 4cm = 17cm
+-   Width: (0.5cm x 2) + 5cm = 6cm
 
 > You may have noticed that the facing is the same size as a welt
 
@@ -93,7 +94,7 @@ The facing is optional, if you do not use it, peering through the pocket will re
 
 ### Pocket bag
 
-The shape of the pocket bag depends on the pattern. 
+The shape of the pocket bag depends on the pattern.
 For simplicity, I will use a rectangular pocket bag with rounded corners at the bottom as you may find on the back pockets of trousers.
 
 > There is typically a longer and shorter version of the pocket bag. This is because one side is attached to the top welt, while the other is attached to the bottom welt.
@@ -114,9 +115,9 @@ Fuse the pocket interfacing to the bad side of your garment, so that it covers t
 
 Mark the welt pocket as follows:
 
- - Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
- - Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
- - Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
+-   Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
+-   Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
+-   Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
 
 The part of the horizontal lines parallel to the center line that fall in between the verticle lines is where we'll sew our welts in place. This is illustrated by the red lines.
 
@@ -136,8 +137,8 @@ Press the fold so that it becomes a sharp crease.
 
 ![Sew welts in place](step04.png)
 
-> In the images above, the dashed black line is the center of the welt. 
-The red line shows where to sew, and the green line is a seam that has already been sewn.
+> In the images above, the dashed black line is the center of the welt.
+> The red line shows where to sew, and the green line is a seam that has already been sewn.
 
 Place the welt on the good side of your garment with the shorter folded side down, and center it horizontally.
 
@@ -155,12 +156,11 @@ When you're done, sew the second welt in place. Note that this will be a bit mor
 
 ![Cut open your pocket](step05.png)
 
-> In the image, the red line marks how/where to cut open your pocket, and the green line shows the seams. 
+> In the image, the red line marks how/where to cut open your pocket, and the green line shows the seams.
 
 Cut open your welt pocket by cutting along the center horizontal line. Stop short of the vertical lines that mark the sides of the pocket and cut under 45 degrees to the edge of your line of stitching that holds the welts down.
 
-
-> Make sure to not cut into your stitches or cut too far. Make it precise. 
+> Make sure to not cut into your stitches or cut too far. Make it precise.
 
 ### Step 6: Flip the welts to the other side and press
 
@@ -170,7 +170,7 @@ You have been sewing your welts to the good side of the fabric. Now, we are goin
 
 Flip the welts to the back, and press them flat. Take your time to work the fabric into a neat rectangle before you press it down.
 
-> Make sure to press the triangular pieces of fabric (at the short edge of your opening) to the side 
+> Make sure to press the triangular pieces of fabric (at the short edge of your opening) to the side
 
 > You're pressing several layers of fabric. Consider pressing down (or open) the layers individually before pressing them together. This will give a sharper crease, and a neater welt pocket.
 
@@ -183,7 +183,7 @@ Put your garment down with the good side up, and fold it back on the side of you
 
 Sew the triangular piece of fabric from the pocket opening to the welts.
 
-> Make sure that you do not sew into the pocket opening, as this will show the stitches on the front 
+> Make sure that you do not sew into the pocket opening, as this will show the stitches on the front
 
 ### Step 8: Sew the bottom pocket bag to the bottom welt
 
@@ -193,7 +193,7 @@ Fold your garment out of the way so you can sew the pocket bag to the lower welt
 
 Also finish the edge of the welt with a zig-zag stitch so the welt stays flat inside the pocket.
 
-> The pocket bag is show in lining fabric here (green) far clarity. You can also make your pocket bags from other fabric. 
+> The pocket bag is show in lining fabric here (green) far clarity. You can also make your pocket bags from other fabric.
 
 ### Step 9: Optional: Sew facing to top pocket bag
 

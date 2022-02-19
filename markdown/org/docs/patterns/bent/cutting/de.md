@@ -4,10 +4,10 @@ title: Bent Cutting
 
 **Oberstoff**
 
- - Schneide **1 Vorderteil** im Stoffbruch.
- - Cut **1 Back** part on the fold.
- - Cut **2 Top sleeve** parts.
- - Cut **2 Under sleeve** parts.
+-   Schneide **1 Vorderteil** im Stoffbruch.
+-   Cut **1 Back** part on the fold.
+-   Cut **2 Top sleeve** parts.
+-   Cut **2 Under sleeve** parts.
 
 These cutting instructions are just for the default Bent block. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 

@@ -1,21 +1,21 @@
- - **Oberstoff**
-   - **1 Tipp schneiden**
-   - **1 Schwanz schneiden**
- - **Futterstoff**
-   - **1 Futter Tipp schneiden**
-   - **1 Futter schneiden**
-   - **1 Schleife schneiden**
- - **Einlage**
-   - **1 Schnittstellenkopf** schneiden
-   - **1 Schnittstellenschwanz**
+-   **Oberstoff**
+    -   **1 Tipp schneiden**
+    -   **1 Schwanz schneiden**
+-   **Futterstoff**
+    -   **1 Futter Tipp schneiden**
+    -   **1 Futter schneiden**
+    -   **1 Schleife schneiden**
+-   **Einlage**
+    -   **1 Schnittstellenkopf** schneiden
+    -   **1 Schnittstellenschwanz**
 
 <Warning>
 
 ###### Caveat
 
- - Die **Schnittstellen** und die **Schleifen**
- - Die **Verkleidung** **tip** und **tail** haben nur Nahtzuweisung an der Spitze
- - Die **Stoff** **tip** und **tail** haben nur Nahtzuweisung an der Spitze und an der Mitte
+-   Die **Schnittstellen** und die **Schleifen**
+-   Die **Verkleidung** **tip** und **tail** haben nur Nahtzuweisung an der Spitze
+-   Die **Stoff** **tip** und **tail** haben nur Nahtzuweisung an der Spitze und an der Mitte
 
 </Warning>
 
@@ -34,5 +34,3 @@ Allerdings werden viele Bindungen an die Voreingenommenheit gekürzt, da sich da
 Wenn das alles sehr verwirrend klingt, würde ich vorschlagen, die Hilfeseite auf [Stoffkorn](/docs/nähing/Stoffkorn) zu lesen.
 
 </Tip>
-
-

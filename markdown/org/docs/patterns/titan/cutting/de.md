@@ -1,7 +1,7 @@
- **Oberstoff**
+**Oberstoff**
 
-  - Schneide **2 Vorderseiten** mit _guten Seiten zusammen_
-  - Schneide **2 Rückseiten** mit _guten Seiten zusammen_
+-   Schneide **2 Vorderseiten** mit *guten Seiten zusammen*
+-   Schneide **2 Rückseiten** mit *guten Seiten zusammen*
 
 Diese Anleitung ist nur für den Titan-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 

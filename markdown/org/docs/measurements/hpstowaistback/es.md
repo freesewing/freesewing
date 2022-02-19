@@ -14,4 +14,3 @@ Consulte [la documentación de hps](/docs/measurements/hps/) para obtener inform
 El hombro de punto alto de **(HPS) para la medida de la espalda** corre desde su HPS hasta su línea de cintura.
 
 Para medir tu HPS hacia atrás, primero [localiza tu punto HPS](/docs/measurements/hps/). Luego, mide hacia abajo hacia la cintura.
-

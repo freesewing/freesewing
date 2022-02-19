@@ -8,7 +8,7 @@ Ein alternativer Stil zeigt ein Kreuz in einem Kreis. Dieser Stil wird verwendet
 
 <Legend part="notches"> 
 
-  The default notch style (shown left) and alternative style for notches on the back
+The default notch style (shown left) and alternative style for notches on the back
 
 </Legend>
 

@@ -1,5 +1,3 @@
-
----
+***
 
 <PatternDocs pattern='tiberius' />
-

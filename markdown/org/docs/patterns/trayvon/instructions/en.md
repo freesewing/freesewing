@@ -1,9 +1,8 @@
-
 <Tip>
 
 ###### Just the tip
 
-The tip is the most sensitive part of the tie. 
+The tip is the most sensitive part of the tie.
 If you have never made a tie before, I would advise you to make a few tie tips in scrap fabric before taking scissors and needles to your nice tie fabric.
 
 To practice tip-making, execute constructions steps 1 through 4 a couple of times until you get the hang of it.
@@ -64,7 +63,7 @@ Your tail should look like the picture, with a sharp point and straight edges.
 
 The seam where the tie fabric meets the tie lining does not sit at the edge of the tie but it sits a bit back, staying out of sight.
 
-If you managed to do all of this, you can do it again for the tip of your tie. 
+If you managed to do all of this, you can do it again for the tip of your tie.
 
 ### Step 5: Sew the first side of your tie tip
 

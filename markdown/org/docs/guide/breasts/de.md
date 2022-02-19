@@ -17,7 +17,7 @@ Schau dir [unsere häufig gestellten Fragen](/docs/faq/breasts/) zu dem Thema an
 
 ##### Warum wir das überhaupt fragen
 
-Eine richtige Passform für einen Oberkörper mit Brüsten zu finden ist komplexer als für einen ohne Brüste. 
+Eine richtige Passform für einen Oberkörper mit Brüsten zu finden ist komplexer als für einen ohne Brüste.
 Es werden zusätzliche Maße und Optionen benötigt, und wir wollen diese nur anzeigen, wenn es auch relevant ist.
 
 </Note>

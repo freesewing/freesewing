@@ -7,4 +7,3 @@ Ga voor **wol** voor de meest klassieke uitstraling. Controleer het paksel gedee
 Als je **katoen** wil, kies dan een zwaardere stof. Katoen is ook wat makkelijker voor een beginner dan wol. Als je niet zeker bent over wat te gebruiken, vraag dan om chino stof in de stoffenwinkel en kies een kleurtje.
 
 Niets beter dan **linen** op een hete zomerdag. Het is ook fijn om mee te werken, maar kreukt als de pest, en zelfs de best genaaide broeken zien er een beetje rommelig uit in linnen. Wat ik wil zeggen is: misschien niet voor je eerste paar.
-

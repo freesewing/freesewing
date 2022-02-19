@@ -10,8 +10,7 @@ les bords bruts.
 Pour ces instructions, nous supposerons que vous utilisez un sergeur pour les finitions de couture, mais
 nous fournirons également des alternatives. Parmi les autres options pour la finition des coutures figurent la garniture avec des cisailles
 roseuses, coudre un zig-zag le long du bord de la couture pour l'empêcher de s'effilocher, ou de lier avec
-ruban adhésif.
- </Tip>
+ruban adhésif. </Tip>
 
 ## Étape 1 : Construire les poches arrière
 
@@ -37,6 +36,7 @@ vous n'avez jamais fait de poches soudées auparavant, vous allez vous passer.
 Does it need a note to that effect? --->
 
 ## Étape 2 : Préparez les poches avant
+
 Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. Le rabat le long de la couture extérieure de chaque jambe est à cet effet.
 
 Si vous utilisez un serger, serrez les bords courbés de vos pièces de poche. Then, serge along the long edges of the pocket flaps.
@@ -149,6 +149,7 @@ au dos lorsqu'ils se nourrissent à travers la machine.
 ![Couture de coupe](step09.svg)
 
 ## Étape 10 : Placer les oeillets pour la chaîne de dessin (optionnel)
+
 Marquez le milieu de la longueur de votre ceinture. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
 
 Un peu à gauche et à droite de ceci, vous pouvez ajouter deux oeillets pour passer un cordon à travers. Because your Paco pants have elastic in the waistband, as well, this is a nice detail, but is not required.
@@ -165,6 +166,7 @@ derrière ces oeillets. Un peu d'interfaçage ou un reste de denim fera très bi
 ![Bande de taille avec oeillets](step10.svg)
 
 ## Étape 11 : Préparez l'élastique de la taille
+
 Il n’y a pas de formule magique pour la durée de votre élastique. So you wrap it around your waist and pull it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
 
 Marquer cette longueur, couper l'élastique, et joindre les deux extrémités ensemble.
@@ -172,6 +174,7 @@ Marquer cette longueur, couper l'élastique, et joindre les deux extrémités en
 ![Elastic joint avec une série de points de zig-zag](step11.svg)
 
 ## Étape 12 : Rejoignez la ceinture
+
 Placez les deux morceaux de ceinture de bons côtés ensemble et alignez les bords courts. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Pièces de ceinture jointes](step12.svg)
@@ -183,6 +186,7 @@ Plier la ceinture à double bande le long de la longueur, avec de bons côtés d
 Vous avez deux options pour fixer votre ceinture. One is a bit simpler, but leaves an exposed seam on the inside. L'autre est un peu plus violent, mais il contient les bords bruts de votre tissu.
 
 ### La méthode la plus simple
+
 Gardez votre ceinture pliée double et placez l'élastique à l'intérieur. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
 
 Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Épingler en place.
@@ -217,6 +221,7 @@ Find the center front of your waistband (easy if there are eyelets, if not just 
 <Tip>
 
 ##### Pensez à vos oeillets
+
 Pour vous assurer que vos oeillets finiront à l'extérieur, Assurez-vous qu'ils sont plus proches du sommet de votre ceinture de
 , au-dessus du pli.
 
@@ -245,6 +250,7 @@ Marquer cette longueur, couper l'élastique, et joindre les deux extrémités en
 ![Couture élastique en zig-zag](step14.svg)
 
 ## Étape 15 : Rejoignez les poignets
+
 Plier chaque manche avec de bons côtés ensemble, en alignant les bords courts. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Poignets joints](step15.svg)
@@ -257,8 +263,8 @@ Vous fixerez vos poignets de la même façon que vous fixez la ceinture. As with
 
 <Note>
 
- Si votre machine à coudre a un lit amovible (habituellement retiré pour exposer le "bras libre" pour coudre des manches de
- poignées) Cela rendra la couture des poignets plus facile.
+Si votre machine à coudre a un lit amovible (habituellement retiré pour exposer le "bras libre" pour coudre des manches de
+poignées) Cela rendra la couture des poignets plus facile.
 
  </Note>
 
@@ -322,6 +328,7 @@ sous les oeillets, laissant un canal assez large pour votre cordon.
 </Note>
 
 ## Étape 18 : Fil autour de la taille (facultatif)
+
 If you put eyelets in your waistband, thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
 
 <Note>
@@ -335,6 +342,7 @@ sera plus facile à manipuler à travers le tissu, et elle tirera le cordon avec
 ![Paco threaded avec drawstring](step18.svg)
 
 ## Étape 19: Profitez de votre pantalon Paco !
+
 Vous avez réussi ! C'est parti!
 
 <!--- Maybe we want to put a fun gif here? --->

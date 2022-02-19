@@ -1,5 +1,6 @@
-- - -
-- - -
+***
+
+***
 
 ## Neueste Updates
 
@@ -7,8 +8,7 @@
 
 Wenn du auf der Suche nach unserem Gesichtsmasken-Schnittmuster bist, folge diesem Link:
 
- - [Schnittmuster für Gesichtsmasken und Anleitung](/blog/facemask-frenzy)
-
+-   [Schnittmuster für Gesichtsmasken und Anleitung](/blog/facemask-frenzy)
 
 ##### Mitwirkendentreffen
 
@@ -21,4 +21,3 @@ An allen Treffen kann via [Discord](https://discord.freesewing.org/) teilgenomme
 Wir haben unsere Chatrooms nach Discord verschoben. Unser ursprünglicher Chat auf Gitter ist veraltet.
 
 Du kannst uns auf https://discord.freesewing.org beitreten oder diese in-app Discord-Einladung verwenden: https://discord.gg/YDV4GvU
-

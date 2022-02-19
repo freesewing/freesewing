@@ -8,7 +8,7 @@ Buttons and buttonholes may come in different sizes, but always have the same sh
 A button is shown on the left, and a buttonhole on the right
 </Legend>
 
-Las tomas tienen una parte del socket ** y *del stud* y también se ven como lo real:
+Las tomas tienen una parte del socket \*\* y *del stud* y también se ven como lo real:
 
 <Legend part="snaps">
 A snap stud is shown on the left, and a snap socket on the right

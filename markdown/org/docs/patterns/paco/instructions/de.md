@@ -10,8 +10,7 @@ die rohen Kanten zu umhüllen.
 Für diese Anweisungen gehen wir davon aus, dass Sie einen Serger für die Naht verwenden, aber wir
 bieten auch Alternativen an. Weitere Optionen für die Bearbeitung von Nähten beinhalten das Schneiden von
 Scheren mit rosa Scheren Das Nähen eines Zick-Zick-Zack am Rand der Naht, um ihn vor dem Ausziehen zu bewahren oder mit
-Bänder zu binden.
- </Tip>
+Bänder zu binden. </Tip>
 
 ## Schritt 1: Baue die hinteren Taschen
 
@@ -37,6 +36,7 @@ Sie noch nie Welttaschen gemacht haben, sind Sie in Ordnung.
 Does it need a note to that effect? --->
 
 ## Schritt 2: Bereiten Sie die Vordertaschen vor
+
 Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. Die Außennaht der Beine entlang der Außennaht dient genau diesem Zweck.
 
 Wenn Sie einen Server, servieren Sie die geschwungenen Kanten Ihrer Taschen. Then, serge along the long edges of the pocket flaps.
@@ -149,6 +149,7 @@ auf die Rückseite zu drücken, wenn sie durch die Maschine eingespeist werden.
 ![Crotchnaht](step09.svg)
 
 ## Schritt 10: Stellen Sie die Ösen für die Zeichenfolge ein (optional)
+
 Markieren Sie die Mitte Ihrer Taillenlänge. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
 
 Ein bisschen nach links und rechts davon können Sie zwei Ösen hinzufügen, um eine Zeichenfolge durchzulassen. Da deine Paco Hosen im Hüftgurt elastisches Band haben, ist dies ein schönes Detail, jedoch ist es nicht notwendig.
@@ -165,6 +166,7 @@ hinter diesen Ösen hinzufügen. Ein bisschen Schnittstellen oder ein übrig ble
 ![Bund mit Ösen](step10.svg)
 
 ## Schritt 11: Bereiten Sie die Taille elastisch vor
+
 Es gibt keine Zauberformel für die Länge Ihrer Elastik. So you wrap it around your waist and pull it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
 
 Markieren Sie diese Länge, schneiden Sie die elastische und verbinden Sie die beiden Enden zusammen.
@@ -172,6 +174,7 @@ Markieren Sie diese Länge, schneiden Sie die elastische und verbinden Sie die b
 ![Elastisch verbunden mit einer Reihe von Zick-Zack-Nähten](step11.svg)
 
 ## Schritt 12: Betrete die Taille
+
 Platzieren Sie die beiden Taillenbänder gut an den Seiten und richten Sie die kurzen Kanten aus. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Taillenband Stücke beigetreten](step12.svg)
@@ -183,6 +186,7 @@ Falten Sie die Taille doppelt entlang der Länge, mit guten Seiten aus, und drü
 Sie haben zwei Optionen zum Befestigen Ihrer Taillenband. One is a bit simpler, but leaves an exposed seam on the inside. Der andere ist ein bisschen getrunkener, aber er schließt die rohen Kanten Ihres Stoffes ein.
 
 ### Die einfachere Methode
+
 Halten Sie Ihre Taille gefaltet doppelt, und legen Sie die elastische Innenseite. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
 
 Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin-Platz.
@@ -217,6 +221,7 @@ Find the center front of your waistband (easy if there are eyelets, if not just 
 <Tip>
 
 ##### Mind your eyelets
+
 To make sure your eyelets will end up on the outside, make sure they are closer to the top of your
 waistband, above the fold, for now.
 
@@ -245,6 +250,7 @@ Markieren Sie diese Länge, schneiden Sie die elastische und verbinden Sie die b
 ![Elastisch verbunden mit Zick-Zack-Nähen](step14.svg)
 
 ## Schritt 15: Join the Manschetten
+
 Fräsen Sie jede Manschette mit guten Seiten zusammen und richten Sie die kurzen Kanten aus. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Geleitete Manschetten](step15.svg)
@@ -257,8 +263,8 @@ Sie werden Ihre Manschetten auf die gleiche Weise anbringen, wie Sie die Taille 
 
 <Note>
 
- Wenn Ihre Nähmaschine ein abnehmbares Bett hat (normalerweise entfernt, um den "freien Arm" für das Nähen von
- Ärmelschellen auszusetzen), Dies wird das Nähen der Manschetten erleichtern.
+Wenn Ihre Nähmaschine ein abnehmbares Bett hat (normalerweise entfernt, um den "freien Arm" für das Nähen von
+Ärmelschellen auszusetzen), Dies wird das Nähen der Manschetten erleichtern.
 
  </Note>
 
@@ -322,6 +328,7 @@ unter den Ösen lassen Sie einen Kanal breit genug für Ihre Zeichenkette.
 </Note>
 
 ## Schritt 18: Thread eine Zeichenfolge um die Taille herum (optional)
+
 If you put eyelets in your waistband, thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
 
 <Note>
@@ -335,6 +342,7 @@ wird leichter durch den Stoff manövrieren, und er wird die Zeichenfolge mitzieh
 ![Paco mit Zeichenkette verbunden](step18.svg)
 
 ## Schritt 19: Genießen Sie Ihre Paco Hose!
+
 Du hast es getan! Wie geht's!
 
 <!--- Maybe we want to put a fun gif here? --->

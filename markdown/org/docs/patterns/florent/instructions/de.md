@@ -23,15 +23,19 @@ Es gibt mehrere Tricks zum Nähen von Darts, hier ist, wie ich es mache (ich den
 Wo das Rechteck des Stoffes beginnt, schneiden Sie die Nahtzugabe, die gegen dieses Rechteck ist, bis zur Naht, so dass die Naht vor dem Rechteck geöffnet werden kann. Auf dem Gebiet, in dem der Dart mit dem Rechteck genäht ist, Eisen beide Nahtzustände auf der einen Seite und das gefaltete Rechteck auf der anderen Seite. Schichten Sie die Kanten des Rechtecks ein. Der Rand gegen den Hauptstoff ist breiter, der oben ist kleiner
 
 #### Version mit dem oberen Teil zweimal geschnitten
+
 Dieser Dart ist geradliniger vorwärts, da die Naht kontinuierlich ist. Nähen Sie die Naht ganz einfach
 
 #### Die Naht Bügeln
+
 Möglicherweise müssen Sie die Nahtzuweisung streichen, um sie flach zu drücken. Benutzen Sie einen Schneider oder etwas unten abgerundet, um Ihnen zu helfen, die Naht offen zu drücken, während Sie die schöne Form, die Sie gerade erstellt haben, behalten.
 
 #### Obere Nähung
+
 Je nach dem gewünschten Stil können Sie alle Nähte (per Maschine per Hand) aufnähen. Allerdings wird die vordere Brim Naht ein wenig kompliziert mit der Maschine zu tun (aber nicht unmöglich). Jedenfalls habe ich das hier gestellt und werde Sie nach jedem Schritt nicht daran erinnern, aber im Grunde genommen der Prozess wäre: Stitch, Eisen, Topstitch, Wiederholen im nächsten Schritt.
 
 ### Schritt 3: Optional: Beide Seitenteile verbinden.
+
 Dies gilt nur, wenn Sie zwei Teile für das Seitenteil schneiden. Es ist eine geradlinige Naht. nicht viel darüber zu sagen. Eisen Sie die Nahtflache, mit den Nahtzugaben geöffnet.
 
 ### Schritt 4: Schließe dich oben an die Seite
@@ -91,6 +95,7 @@ Klebeband anheben: Die beiden Pins werden verwendet, um das Klebeband gleichmä�
 ![Beide Kanten des Bandes sind rutschfest genäht und der Rand der Kappe ist oben genäht](step13.jpg)
 
 ### Schritt 12: Nähen Sie die Seite zum Schweif
+
 Wir sind fast fertig, und der letzte Schritt wird sein, die Brillenspitze an die Vorderseite der Kappe zu befestigen. Nähen Sie den beiden Teil von außen in Position, drehen Sie die Kappe auf der Außenseite und nähen Sie beide Teile mehrmals zusammen.
 
 ![An Ort anheften](step14.jpg) ![Nähen Sie es von der Verkleidungsseite](step15.jpg)

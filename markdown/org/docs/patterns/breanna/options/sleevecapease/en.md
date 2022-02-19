@@ -1,4 +1,3 @@
-
 Determines the amount of sleevecap ease.
 
 <Note>
@@ -10,6 +9,6 @@ For light fabric or knits, you want little to no sleevecap ease. For heavier wov
 
 </Note>
 
-
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapease_sample.svg "Effect of this option on the pattern")

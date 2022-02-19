@@ -1,19 +1,19 @@
-
 ## Stap 1: Sluit de naden
 
 ![Sluit de zij-en schoudernaden](step01.png)
 
-Leg de voor- en achterpand op elkaar met _goede kanten op elkaar_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Leg de voor- en achterpand op elkaar met *goede kanten op elkaar*. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Stap 2: Werk de zoom af
 
 ![Werk de zoom af](step02.png)
 
-Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. Zo niet, gebruik een _tweelingnaald_ of _zigzagsteek_ om de naad elastisch te houden.
+Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. Zo niet, gebruik een *tweelingnaald* of *zigzagsteek* om de naad elastisch te houden.
 
 <Note>
 
 ##### Enkel een keer vouw om massa
+
 Knitwear te vermijden ravel, niet dus je kan dit gewoon een keer omplooien en vaststikken, en dan de stof netjes bijknippen.
 
 </Note>
@@ -52,8 +52,8 @@ Dit is het enige onderdeel van dit hemdje waar wat oefening voor vereist is. Gee
 
 Het eerste dat we moeten doen is beslissen waar de bies gaat starten en stoppen. Dit zou ik suggereren:
 
-  - Voor de armsgaten: aan de zijnaad. Zo zit de naad verstopt onder je arm
-  - Voor de halsopening: middenachter aan je nek. Misschien wil je dit markeren met een pin
+-   Voor de armsgaten: aan de zijnaad. Zo zit de naad verstopt onder je arm
+-   Voor de halsopening: middenachter aan je nek. Misschien wil je dit markeren met een pin
 
 ### Positioneer (het begin van) je bies
 
@@ -73,8 +73,8 @@ We gaan op 1,5 cm van de rand naaien. Opletten dus, want dit is niet de standaar
 
 <Tip>
 
-Als je naaimachine geen markeringen heeft om de afstand van de naald tot de rand van de stof aan te geven kan je een zoommaatje gebruiken. 
-Of doe wat ik doe, plak een stukje plakband op je naaimachine en markeer er een lijn op 1,5 cm van je naald. 
+Als je naaimachine geen markeringen heeft om de afstand van de naald tot de rand van de stof aan te geven kan je een zoommaatje gebruiken.
+Of doe wat ik doe, plak een stukje plakband op je naaimachine en markeer er een lijn op 1,5 cm van je naald.
 Dan moet je alleen maar de rand van je stof gelijk houden met die lijn.
 
 </Tip>
@@ -123,7 +123,6 @@ Nu de uiteindes van je biezen aan elkaar hangen is het tijd om de laatste 6 cm v
 
 ![Plooi de jersey bies naar achter](step04a.png)
 
-
 Plooi je bies rond de stof van je hemdje naar de verkeerde kant. Zo gaan we de bies vaststikken.
 
 > Vooraan is de bies twee keer geplooid (en wordt de rand van de stof meteen verborgen), maar aan de verkeerde kant is dit niet nodig. Later kunnen we gewoon het randje wat bijknippen, aangezien jersey niet rafelt. Als we de bies aan de achterkant ook zouden plooien zou dit alleen maar bulk toevoegen.
@@ -145,10 +144,11 @@ Wederom moet je de bies een beetje uitrekken terwijl je dit doet. Maar nu is er 
 <Note>
 
 ##### Pas op voor de oneven feed
-Als je je bies via je naaimachine voert, de feed honden trekken de onderste laag (achterkant van je binding) vooruit. 
 
-In een ideale wereld zouden alle lagen gelijkmatig volgen. 
-Maar meestal blijft de bovenste laag (de voorkant van je bies) wat achter. 
+Als je je bies via je naaimachine voert, de feed honden trekken de onderste laag (achterkant van je binding) vooruit.
+
+In een ideale wereld zouden alle lagen gelijkmatig volgen.
+Maar meestal blijft de bovenste laag (de voorkant van je bies) wat achter.
 Dit zorgt dat je bies niet helemaal recht rond de randjes geplooid ligt, en lelijke rimpels maakt.
 
 Dus let op, en als je het ziet gebeuren, rek dan de onderlaag een beetje extra uit om te compenseren.

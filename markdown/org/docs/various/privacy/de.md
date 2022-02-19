@@ -10,10 +10,10 @@ Wir sind zuversichtlich, dass sie unser Engagement für Privatsphäre unter Bewe
 
 Der Übersicht wegen haben wir dies in vier verschiedene Rollen aufgeteilt:
 
- - Für **Besucher unserer Website** speichern wir **[Besucherdaten][v]**
- - Für **Abonnenten unseres Newsletters** speichern wir **[Abonnentendaten][s]**
- - Für **Benutzer mit einem Account** auf unserer Website speichern wir **[Accountdaten][a]**
- - Für **Benutzer mit einem Account, der Personen enthält**, speichern wir **[Personendaten][p]**
+-   Für **Besucher unserer Website** speichern wir **[Besucherdaten][v]**
+-   Für **Abonnenten unseres Newsletters** speichern wir **[Abonnentendaten][s]**
+-   Für **Benutzer mit einem Account** auf unserer Website speichern wir **[Accountdaten][a]**
+-   Für **Benutzer mit einem Account, der Personen enthält**, speichern wir **[Personendaten][p]**
 
 Hier sind die relevanten Abschnitte:
 
@@ -40,14 +40,19 @@ Eine umfassendere Übersicht über die bisherigen Änderungen dieses Dokuments i
 
 ##### Siehe auch
 
- - [Deine Rechte][2]
- - [Deine Einwilligungen][3]
+-   [Deine Rechte][2]
+-   [Deine Einwilligungen][3]
 
 [1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
-[2]: /docs/various/right/
-[3]: /account/actions/consent/
-[v]: /docs/various/privacy/visitor/
-[s]: /docs/various/privacy/subscriber/
-[a]: /docs/various/privacy/account/
-[p]: /docs/various/privacy/people/
 
+[2]: /docs/various/right/
+
+[3]: /account/actions/consent/
+
+[v]: /docs/various/privacy/visitor/
+
+[s]: /docs/various/privacy/subscriber/
+
+[a]: /docs/various/privacy/account/
+
+[p]: /docs/various/privacy/people/

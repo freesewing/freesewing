@@ -11,12 +11,12 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 ### Step 1: Mock-up Construction
 
-- Join the outseam (the seam that runs along the side of your leg) of the front and back.
-- Join the inseam (the seam the runs along the inside of your legs) of the front and back.
-- Du hast jetzt ein Bein. Wiederhole die Schritte für das andere Bein, **und stelle dabei sicher, dass die beiden Beine Spiegelbilder voneinander sind**.
-- Turn one leg with the good side in, and the other with the good side out.
-- Now tuck the *good side out* into the *good side in* leg, so that they have their _good sides together_.
-- Align and sew the cross seam.
+-   Join the outseam (the seam that runs along the side of your leg) of the front and back.
+-   Join the inseam (the seam the runs along the inside of your legs) of the front and back.
+-   Du hast jetzt ein Bein. Wiederhole die Schritte für das andere Bein, **und stelle dabei sicher, dass die beiden Beine Spiegelbilder voneinander sind**.
+-   Turn one leg with the good side in, and the other with the good side out.
+-   Now tuck the *good side out* into the *good side in* leg, so that they have their *good sides together*.
+-   Align and sew the cross seam.
 
 <Note>
 
@@ -32,27 +32,28 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 ### Schritt 2: Anprobieren
 
-- Try it on and check the fit by pinning the front closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+-   Try it on and check the fit by pinning the front closed whilst wearing it.
+-   Make any alterations and try it on again.
+-   Repeat until you are happy.
 
 <Tip>
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.  
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 
 </Tip>
 
 <Note>
-  
-Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look.  
+
+Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look.\
 For instance:
-- Add a front closure
-- Add pockets
-- Change the pant length
-- Change the pant width
-- Add a waistband
+
+-   Add a front closure
+-   Add pockets
+-   Change the pant length
+-   Change the pant width
+-   Add a waistband
 
 It is all up to you! Experiment and go forth!
 
@@ -60,8 +61,8 @@ It is all up to you! Experiment and go forth!
 
 ### Schritt 3: Erstelle ein Papierschnittmuster
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Jetzt hast du ein Schnittmuster, das du verwenden kannst um Kleidungsstücke herzustellen.
+-   Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
+-   Jetzt hast du ein Schnittmuster, das du verwenden kannst um Kleidungsstücke herzustellen.
 
 <Note>
 

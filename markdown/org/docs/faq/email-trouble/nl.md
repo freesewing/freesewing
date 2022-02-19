@@ -12,10 +12,10 @@ Probeer het ofwel met een ander e-mailadres, of [geef ons een seintje](https://d
 
 In Frankrijk verschillende e-mailproviders hebben dezelfde filtering:
 
- - gratis. r
- - laposte.net
- - organge.fr
- - sfr.fr
+-   gratis. r
+-   laposte.net
+-   organge.fr
+-   sfr.fr
 
 Iedereen weet dat ze problemen veroorzaken bij de leveringen.
 

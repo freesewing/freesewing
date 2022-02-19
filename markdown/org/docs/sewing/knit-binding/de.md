@@ -17,6 +17,7 @@ Knit Band ist das, was Sie normalerweise an der Halsöffnung Ihres T-Shirts find
 Dies hinterlässt einen unvollendeten Rand an der Innenseite, der oft mit Kantenstich um das Strickband genäht wird.
 
 ### Strickbindung
+
 ![Das graue Unterhemd und das weiße T-Shirt dieses Mädchens haben beide eine Strickbindung an der Halslinie.](knit_binding.jpg)
 
 Echte Strickbindungen wirken eher wie klassische Bindungen, da sie um den Stoff gewickelt sind als sich von ihm zu erstrecken.
@@ -26,16 +27,17 @@ Die rohe Kante des Kleidungsstückes wird zwischen der gefalteten Strickbindung,
 > Pictures by [Support Tattoos and Piercings at Work](https://www.flickr.com/photos/supporttattoosandpiercingsatwork/21870942614/) and [Derek A.](https://www.flickr.com/photos/sfj/696122404/)
 
 ### Stil vs Funktion
+
 Ein Strickband ist häufiger und ist das, was man normalerweise an T-Shirt-Halslinien findet. Es ist die eher dekorative Option.
 
 Eine Strickbindung ist weniger üblich, wird aber oft auf Unterhemden verwendet (wie in Unterwäsche). Es ist die funktionalere Option.
 
 > ##### Noch verwirrt?
-> 
+>
 > Eine weitere Möglichkeit, sie zu unterscheiden, ist Folgendes: Denken Sie daran, was passiert, wenn Sie die Strickbindung/Band erweitern.
-> 
+>
 > Auf einem T-Shirt wird die Erweiterung der Band am Hals die Öffnung des Hals verkleinern. Wenn Sie eine breitere Band wollen, müssen Sie ein größeres Loch in Ihr T-Shirt schneiden.
-> 
+>
 > On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Stattdessen wird die Bindung einfach weiter über das Unterhemdengewebe gelegt.
 
 ## Warum Strickbekleidungsbindung Dehnungen erfordert
@@ -49,7 +51,6 @@ Egal ob Strickband oder Strickverbindungsoberfläche, Sie müssen Ihr Bindegeweb
 Auf einer geraden Naht können Sie einfach Ihre Bindung/Band anbringen. Ihr Stoff und Ihre Bindung haben die gleiche Länge, also wird alles in Ordnung sein.
 
 Das wahrscheinlichste Szenario, in dem Sie dies begegnen werden, ist die (kurz) Ärmel eines T-Shirts. Obwohl das Strickband um deinen Arm umwickelt, aus einer Musterperspektive (wie in, wenn der Stoff noch flach ist) ist es eine geradlinige Naht.
-
 
 ### Einheitlich gekrümmt: einheitliches Strecken
 
@@ -82,12 +83,14 @@ Bei einer leichten Kurve ist der Unterschied zwischen Innen- und Außenkante nic
 So wie du deiner Naht folgst und es kursiert um Halslinien, oder Schultern, oder Designfunktionen, müssen Sie die Menge der Stretch an die Situation anpassen.
 
 ## Sie können die Länge Ihrer Strickbindung nicht berechnen
+
 Ich sage nicht, dass dies theoretisch unmöglich ist. Aber ich sage, das ist praktisch unmöglich.
 
 Die Länge Ihres Strickbindes hängt davon ab, wie viel Sie strecken müssen. Dies hängt von den Kurven ab, denen Sie folgen müssen, und von der Breite der Bindung, ganz zu schweigen von der Stärke ihrer Dehnung. Es gibt einfach zu viele Parameter, die man berücksichtigen kann, um die Länge der Bindung genau zu berechnen.
 
 ### Dies nicht tun
-Es gibt eine Reihe von Tutorials im Internet, die Ihnen zeigen, wie man auf Strickbinden näht. Viele von ihnen schlagen so etwas wie _vor, dass der Hals 90 % der Länge der Naht bindet, die Sie an_ befestigen (prozentual variiert).
+
+Es gibt eine Reihe von Tutorials im Internet, die Ihnen zeigen, wie man auf Strickbinden näht. Viele von ihnen schlagen so etwas wie *vor, dass der Hals 90 % der Länge der Naht bindet, die Sie an* befestigen (prozentual variiert).
 
 Diese Idee ist, dass Sie Ihre Bindung geschnitten, fügen Sie ihre Kanten zusammen und nähen Sie sie dann in der Öffnung. Das ist (meiner Meinung nach) nicht gut.
 
@@ -97,12 +100,12 @@ Das bedeutet natürlich, dass Ihre Schulternaht durch Ihre Bindung geschnitten w
 
 ### Stattdessen tun
 
- - Schneiden Sie Ihre Bindung so lange, wie die Naht, in die sie genäht werden muss. Nicht 90 %, sondern 100 %. Auf diese Weise wissen Sie, dass es zu lange dauern wird, und das ist, was wir wollen.
- - Markieren Sie den Ort, an dem Sie Ihre Bindung verbinden möchten (sagen Sie die Mitte der Halslinie) und legen Sie Ihre Bindung 1cm über diesen Punkt hinaus.
- - Nähen Sie Ihre Bindung ungefähr 3 cm und gehen Sie den ganzen Weg. Dabei sollten Sie die Streckung an die gewünschte Kurve anpassen. Dafür gibt es keine Tricks, du musst üben, bis es zu dir kommt.
- - Wenn Sie sich umdrehen und näher an den von Ihnen markierten Punkt kommen, stoppen Sie vorher etwa 3cm lang.
- - Jetzt ist Ihr ganzes Bindegewebe befestigt, abgesehen von etwa 6 cm auf der Rückseite. Nähen Sie beide Kanten Ihrer guten Seiten zusammen und machen Sie so lange wie nötig und nähen Sie sie zusammen.
- - Nähen Sie die restlichen 6 cm Ihrer Bindung.
+-   Schneiden Sie Ihre Bindung so lange, wie die Naht, in die sie genäht werden muss. Nicht 90 %, sondern 100 %. Auf diese Weise wissen Sie, dass es zu lange dauern wird, und das ist, was wir wollen.
+-   Markieren Sie den Ort, an dem Sie Ihre Bindung verbinden möchten (sagen Sie die Mitte der Halslinie) und legen Sie Ihre Bindung 1cm über diesen Punkt hinaus.
+-   Nähen Sie Ihre Bindung ungefähr 3 cm und gehen Sie den ganzen Weg. Dabei sollten Sie die Streckung an die gewünschte Kurve anpassen. Dafür gibt es keine Tricks, du musst üben, bis es zu dir kommt.
+-   Wenn Sie sich umdrehen und näher an den von Ihnen markierten Punkt kommen, stoppen Sie vorher etwa 3cm lang.
+-   Jetzt ist Ihr ganzes Bindegewebe befestigt, abgesehen von etwa 6 cm auf der Rückseite. Nähen Sie beide Kanten Ihrer guten Seiten zusammen und machen Sie so lange wie nötig und nähen Sie sie zusammen.
+-   Nähen Sie die restlichen 6 cm Ihrer Bindung.
 
 Auf diese Weise erraten wir nicht, wie lange Ihre Bindung sein sollte, und die bindenden Naht sitzt dort, wo Sie sie haben wollen.
 

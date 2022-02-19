@@ -14,9 +14,8 @@ Als we geen manier hadden om je maten op te slaan, zou het hopeloos onpraktisch 
 
 Deze vraag wijst vaak op wantrouwen bij de aanmaak van een account. Daarom zijn de volgende vragen en antwoorden misschien ook relevant:
 
- - [Wat doen jullie met mijn persoonlijke gegevens?](#wat-doen-jullie-met-mijn-persoonlijke-gegevens)
- - [Wie betaalt dit allemaal?](#wie-betaalt-dit-allemaal)
- - [Wat is jullie uiteindelijke bedoeling?](#wat-is-jullie-uiteindelijke-bedoeling)
+-   [Wat doen jullie met mijn persoonlijke gegevens?](#wat-doen-jullie-met-mijn-persoonlijke-gegevens)
+-   [Wie betaalt dit allemaal?](#wie-betaalt-dit-allemaal)
+-   [Wat is jullie uiteindelijke bedoeling?](#wat-is-jullie-uiteindelijke-bedoeling)
 
 </Note>
-

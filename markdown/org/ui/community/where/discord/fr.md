@@ -1,5 +1,6 @@
-- - -
-- - -
+***
+
+***
 
 Nous utilisons [Discord](https://discord.freesewing.org/) comme notre plateforme principale pour la discussion et la coopération.
 

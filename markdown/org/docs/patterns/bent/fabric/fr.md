@@ -16,4 +16,3 @@ Ils sont parfois aussi appelés patrons de base, bien que les puristes soutienne
 Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
 
 </Note>
-

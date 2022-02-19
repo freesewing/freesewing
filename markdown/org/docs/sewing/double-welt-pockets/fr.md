@@ -3,6 +3,7 @@ title: Poche passepoilée
 ---
 
 ## Vidéo
+
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
 ## Apprenez les rabats avec David Page Coffin
@@ -19,19 +20,19 @@ David est un ami du site, et est de loin bien mieux placé que moi pour vous exp
 
 Pour fabriquer une poche à doubles rabats (passepoilée), vous aurez besoin de :
 
- - Fourniture de base pour la couture
- - Le tissu ou la pièce du patron dans lequel vous voulez faire la poche
- - Deux bandes de tissu pour les rabats
- - Une bande d'entoilage
- - Doublure ou autre tissu adapté pour le fond de poche (Voir les options de tissu et de couleur)
- - Parement pour l'intérieur de la poche, en fonction de vos options de tissu et de couleurs
+-   Fourniture de base pour la couture
+-   Le tissu ou la pièce du patron dans lequel vous voulez faire la poche
+-   Deux bandes de tissu pour les rabats
+-   Une bande d'entoilage
+-   Doublure ou autre tissu adapté pour le fond de poche (Voir les options de tissu et de couleur)
+-   Parement pour l'intérieur de la poche, en fonction de vos options de tissu et de couleurs
 
 ### Paramètres
 
 Deux valeurs déterminent la taille de votre poche passepoilée. Il y a :
 
- - Largeur de la poche : C'est la largeur de l'ouverture de la poche passepoilée
- - La hauteur de rabat : Il s'agit de la hauteur d'un seul rabat, et donc la moitié de la hauteur de notre poche passepoilée
+-   Largeur de la poche : C'est la largeur de l'ouverture de la poche passepoilée
+-   La hauteur de rabat : Il s'agit de la hauteur d'un seul rabat, et donc la moitié de la hauteur de notre poche passepoilée
 
 > Dans l'exemple ci-dessous, j'utilise une largeur de poche de 13cm et une hauteur de rabat de 0,5cm
 
@@ -41,13 +42,13 @@ Deux valeurs déterminent la taille de votre poche passepoilée. Il y a :
 
 Les rabats sont deux bandes rectangulaires de tissu avec les mesures suivantes :
 
- - Longueur : Largeur de poche + 4cm
- - Largeur : Hauteur du rabat x2 + 5cm
+-   Longueur : Largeur de poche + 4cm
+-   Largeur : Hauteur du rabat x2 + 5cm
 
 Pour notre exemple :
 
- - Longueur : 13 cm + 4 cm = 17 cm
- - Largeur : (0.5 cm x 2) + 5 cm = 6 cm
+-   Longueur : 13 cm + 4 cm = 17 cm
+-   Largeur : (0.5 cm x 2) + 5 cm = 6 cm
 
 Ils formeront les deux bandes étroites de tissu qui forment votre poche passepoilée.
 
@@ -57,13 +58,13 @@ Ils formeront les deux bandes étroites de tissu qui forment votre poche passepo
 
 L'entoilage de poche est une seule bande rectangulaire d'entoilage thermocollant avec les mesures suivantes :
 
- - Longueur : Largeur de poche + 4cm
- - Largeur : Hauteur du rabat x2 + 5cm
+-   Longueur : Largeur de poche + 4cm
+-   Largeur : Hauteur du rabat x2 + 5cm
 
 Pour notre exemple :
 
- - Longueur : 13 cm + 4 cm = 17 cm
- - Largeur : (0.5 cm x 2) + 5 cm = 6 cm
+-   Longueur : 13 cm + 4 cm = 17 cm
+-   Largeur : (0.5 cm x 2) + 5 cm = 6 cm
 
 > Vous avez peut-être remarqué que l'entoilage est de la même taille qu'un rabat
 
@@ -73,13 +74,13 @@ L'entoilage est utilisé pour stabiliser la poche, et sera thermocollé au tissu
 
 Le parement de poche (optionnelle) est une seule bande rectangulaire de tissu avec les mesures suivantes :
 
- - Longueur : Largeur de poche + 4cm
- - Largeur : Hauteur du rabat x2 + 5cm
+-   Longueur : Largeur de poche + 4cm
+-   Largeur : Hauteur du rabat x2 + 5cm
 
 Pour notre exemple :
 
- - Longueur : 13 cm + 4 cm = 17 cm
- - Largeur : (0.5 cm x 2) + 5 cm = 6 cm
+-   Longueur : 13 cm + 4 cm = 17 cm
+-   Largeur : (0.5 cm x 2) + 5 cm = 6 cm
 
 > Vous avez peut-être remarqué que le parement est de la même taille qu'un rabat
 
@@ -109,9 +110,9 @@ Thermocollez l'entoilage de poche sur l'envers de votre vêtement, de sorte qu'i
 
 Marquez la poche passepoilée de la façon suivante :
 
- - Marquez la largueur de la poche avec les lignes verticales. Laissez ces lignes dépasser pour vous aider à aligner les rabats plus tard
- - Alignez l'ouverture centrale de la poche avec une ligne horizontale. Laissez-la dépasser pour vous aider à aligner les rabats plus tard
- - Marquez deux lignes horizontales parallèles à la ligne centrale, à un écart égal à la hauteur d'un rabat (0,5cm dans notre exemple)
+-   Marquez la largueur de la poche avec les lignes verticales. Laissez ces lignes dépasser pour vous aider à aligner les rabats plus tard
+-   Alignez l'ouverture centrale de la poche avec une ligne horizontale. Laissez-la dépasser pour vous aider à aligner les rabats plus tard
+-   Marquez deux lignes horizontales parallèles à la ligne centrale, à un écart égal à la hauteur d'un rabat (0,5cm dans notre exemple)
 
 La partie des lignes horizontales parallèle à la ligne centrale qui se situe entre les lignes verticales est l'endroit où nous coudrons nos rabats en place. Cela est illustré par les lignes rouges.
 
@@ -152,7 +153,6 @@ Lorsque vous avez terminé, coudre le deuxième rabat en place. Notez que cela s
 > Dans l'illustration, la ligne rouge indique comment/où couper la poche, et la ligne verte montre les coutures.
 
 Coupez votre poche en découpant le long de la ligne horizontale centrale. Arrêtez-vous près des lignes verticales qui marquent les côtés de la poche et coupez à 45 degrés jusqu'au bord de votre ligne de couture qui maintient les rabats vers le bas.
-
 
 > Assurez-vous de ne pas couper vos coutures ou de ne pas couper trop loin non plus. Soyez précis.
 

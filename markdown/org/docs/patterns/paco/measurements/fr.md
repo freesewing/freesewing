@@ -1,7 +1,5 @@
-- - -
-- - -
+***
 
-
+***
 
 <PatternMeasurements pattern='paco' />
-

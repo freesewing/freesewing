@@ -1,5 +1,6 @@
-- - -
-- - -
+***
+
+***
 
 #### Neugierig, wie das hier funktioniert?
 
@@ -19,10 +20,9 @@ Unsere [Entwicklerdokumentation](https://freesewing.dev) ist unter [freesewing.d
 
 #### Willst du mithelfen?
 
-Klasse ❤️   
+Klasse ❤️\
 Am schnellsten geht das, indem du [uns auf Discord besuchst](https://discord.freesewing.org/) -- dort hängen auch die ganzen anderen Mitwirkenden ab.
 
 Wenn du dir nicht sicher bist, wie du mitwirken kannst, schau dir die verschiedenen [Möglichkeiten zum Mitwirken](https://freesewing.dev/howtos/ways-to-contribute) an, du wirst sehen, dass es sicher etwas gibt, wo du helfen kannst.
 
 Wir haben auch konkrete Anleitungen für [Übersetzer/-innen](https://freesewing.dev/guides/translation) und [Redakteur/-innen](https://freesewing.dev/howtos/editors).
-

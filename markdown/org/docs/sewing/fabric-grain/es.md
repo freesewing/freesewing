@@ -13,7 +13,7 @@ El genio se indica en un patrón por la línea de grano. Al cortar el patrón, e
 > Para más detalles de warp y trampa: [Tejido en Wikipedia](http://en.wikipedia.org/wiki/Weaving)
 
 > ##### ¿Confundido? Confused? Think wood
-> 
+>
 > La madera no está tejida, pero crece en diferentes capas según las estaciones (anillos de crecimiento). La forma en que estas capas están alineadas son importantes para los madereros. Influyen en qué medida la madera se deformará después de cortarla y cómo se doblará, así como otros parámetros.
-> 
+>
 > Al igual que un maderero lo tendrá en cuenta antes de cortar la madera, debe tener en cuenta el grano antes de cortar su tejido.

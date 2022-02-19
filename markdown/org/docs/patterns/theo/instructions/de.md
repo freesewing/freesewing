@@ -1,4 +1,3 @@
-
 <Note>
 
 Text ein bisschen trocken für dich? Ich versuche, Videos als Teil der Musterdokumentation zur Verfügung zu stellen.
@@ -11,9 +10,9 @@ In diesem speziellen Fall gibt es eine Menge Videomaterial, aber es wurde urspr�
 
 <Note>
 
-Viele der folgenden Schritte sind für beide Hosenbeine zu wiederholen. 
+Viele der folgenden Schritte sind für beide Hosenbeine zu wiederholen.
 
-Das ist nicht immer erwähnt, weil das Leben kurz ist und ständig schreiben _Vergessen Sie nicht, dies für beide Hosenbeine_ wird sehr bald müde.
+Das ist nicht immer erwähnt, weil das Leben kurz ist und ständig schreiben *Vergessen Sie nicht, dies für beide Hosenbeine* wird sehr bald müde.
 
 </Note>
 
@@ -49,7 +48,7 @@ Bauen Sie die doppelten Taschen auf der Rückseite Ihrer Hose, einschließlich d
 
 ###### Doppelte Taschen
 
-Eine doppelte Tasche zu bauen ist eine Technik, die verwendet wird ist verschiedene Kleidungen. 
+Eine doppelte Tasche zu bauen ist eine Technik, die verwendet wird ist verschiedene Kleidungen.
 Aus diesem Grund habe ich es in eine eigene Dokumentationsseite verzweigt.
 
 Es gibt sowohl schriftliche Dokumentation als auch eine Videoserie, die Ihnen zeigt, wie Sie es machen können so auch wenn Sie noch nie Welttaschen gemacht haben, sind Sie in Ordnung.
@@ -113,7 +112,7 @@ Zig-zag den Rand des hinteren Faltstücks um es fertig zu stellen und an der Tas
 Wenn Sie fertig sind, platzieren Sie Vorderstück, Futter und Tasche flach und geben Sie ihm eine gute Presse.
 
 > Vielleicht ist dies ein guter Zeitpunkt, um Sie daran zu erinnern, dass jeder Schritt bis dahin für beide Beine getan werden musste.
-> 
+>
 > Es ist nur eine freundliche Erinnerung, die nächsten Schritte müssen auch für beide Beine gemacht werden.
 
 ### Schritt 9: Befestige Seitenteil an Tasche
@@ -139,10 +138,10 @@ Wenn alles zusammengesteckt ist, klappen Sie das vordere Stück und das Futter a
 > Nähen Sie die Kurve der Tasche bis zu dem Punkt, an dem sie das Seitenteil erreicht hat
 
 > Sie können die Tasche auf verschiedene Arten bearbeiten, einschließlich:
-> 
-> - Serviere die Seiten zusammen
-> - Beende die Kante mit Vorlaufband
-> - Nähen Sie die Seiten zusammen und beenden Sie die Kante mit einer Zick-Zack-Sticke
+>
+> -   Serviere die Seiten zusammen
+> -   Beende die Kante mit Vorlaufband
+> -   Nähen Sie die Seiten zusammen und beenden Sie die Kante mit einer Zick-Zack-Sticke
 
 ### Schritt 11: Drücke die Vordertasche
 
@@ -209,7 +208,7 @@ Nachdem Sie Näht fliegen Stück und Fliege zusammen, drehen Sie sie nach innen 
 ![Reißverschluss nach rechts anheften](step18.png)
 
 > Schritte 18 bis 21 führen alle zu einer einzigen Heftreihe, die deine Reißverschluss nach vorne näht, beim Anbringen des Fliegenteils und fliegen Sie Schild in einem Weg.
-> 
+>
 > Dies ist die schwierigste Naht im gesamten Bauprozess so nehme ich mir meine Zeit zu erklären und dies vor dem Nähen zu veranschaulichen.
 
 Platzieren Sie Ihr vorderes Stück für das rechte Bein mit der guten Seite. So dass das Futter und die Vordertasche sitzen unter und liegen flach.
@@ -218,8 +217,8 @@ Nehmen Sie Ihre Zip-Datei und öffnen Sie sie (entpacken Sie dies). Nun drehen S
 
 Richten Sie Ihren Reißverschluss mit der Schnitt Naht aus, wie in der Abbildung gezeigt. Folgendes berücksichtigen:
 
- - Das Ende deiner Reißverschluss sollte ganz oben auf deiner Hose sitzen, wo dein Taillenband beginnt. Achten Sie jedoch darauf, daran zu denken, dass es dort Nahtzuschüsse gibt so richten Sie es nicht mit dem oberen Teil des vorderen Stücks aus, sondern ziehen Sie 1cm Nahtzug.
- - Passen Sie die Reißverschluss mit der Schneidnaht an. Haben Sie nichts gegen den Rand der Reißverschluss, da sie in verschiedenen Breiten kommen. Stellen Sie stattdessen sicher, dass Sie neben den Zähnen der Reißverschluss innerhalb der Naht des vorderen Stückes nähen können.
+-   Das Ende deiner Reißverschluss sollte ganz oben auf deiner Hose sitzen, wo dein Taillenband beginnt. Achten Sie jedoch darauf, daran zu denken, dass es dort Nahtzuschüsse gibt so richten Sie es nicht mit dem oberen Teil des vorderen Stücks aus, sondern ziehen Sie 1cm Nahtzug.
+-   Passen Sie die Reißverschluss mit der Schneidnaht an. Haben Sie nichts gegen den Rand der Reißverschluss, da sie in verschiedenen Breiten kommen. Stellen Sie stattdessen sicher, dass Sie neben den Zähnen der Reißverschluss innerhalb der Naht des vorderen Stückes nähen können.
 
 Pinnen Sie den Reißverschluss mit ein paar senkrechten Pins zu Ihrem Reißverschluss an (wie angezeigt). Mit anderen Worten: Pin nicht entlang der zip, sondern über die zip.
 
@@ -318,10 +317,10 @@ Achten Sie darauf, die Fliege nur an die Fliege zu befestigen. Nicht auf andere 
 Zu guter Letzt nähen Sie die Reißverschluss entlang mit Ihrem Reißverschluss, um sie an die Fliege Stück zu befestigen.
 
 > Bei der Angleichung der Zip-Datei sollten Sie folgendes beachten:
-> 
-> - Die Reißverschluss sollte mit der guten Seite nach unten gesetzt werden
-> - Die Reißverschluss sollte sich ein bisschen vom Rand deines Fliegenteils zurücklehnen
-> - Stelle sicher, dass du den oberen Teil der Reißverschluss mit der anderen Reißhalle auf dem rechten Bein ausrichtest
+>
+> -   Die Reißverschluss sollte mit der guten Seite nach unten gesetzt werden
+> -   Die Reißverschluss sollte sich ein bisschen vom Rand deines Fliegenteils zurücklehnen
+> -   Stelle sicher, dass du den oberen Teil der Reißverschluss mit der anderen Reißhalle auf dem rechten Bein ausrichtest
 
 ### Schritt 28: Zig-zag die Reißverschlusskante zum Fliegenteil
 
@@ -424,6 +423,7 @@ Schalte deine Hose gut aus und legen Sie sorgfältig ein Bein auf Ihrem Bügelbr
 Wenn es gut aussieht, drücken Sie die Falten in Ihrem Bein, vorne eine Rückseite. Wiederholen für das andere Bein.
 
 Geben Sie ihm eine feste Presse, weil Sie wollen, dass die Falten noch da sind, nachdem Sie Ihre Hose waschen (so können Sie sehen, wo Sie sie erneut drücken).
+
 > In der Industrie werden Chemikalien entlang der Schmelzlinie aufgetragen, bevor sie zusammengepresst werden. Einige Schneider verwenden eine Art Holzhammer und Amboss, um die Fasern in einer permanenten Spur zu schlagen.
 
 Abhängig von deinem Stoff kann deine Fräse länger dauern, aber letztendlich Sie können nicht erwarten, eine Spur zu haben, die ein paar Waschen widerstehen kann, ohne erneut angewendet zu werden.
@@ -502,16 +502,16 @@ Dies vorausgeschickt, hier ist, was zu tun ist, um eine Standard-Gurtschleife zu
 
 Finden Sie das Bandschleifenmuster Teil, ein kleines rechteckiges Stück Stoff. Es sollte 8 davon geben, und diese werden zu deinen Gürtelschleifen. Für jeden von ihnen machen Sie folgende Schritte:
 
- - Zig-Zag (oder Serge) entlang der längsten Kanten des Rechtecks
- - Falte eine Seite entlang der Länge zurück und drücke
- - Falte die andere Seite zurück, entlang der Länge und drücke
- - Handnähen entlang der Rückseite der Gurtschleife, so dass die gefalteten Seiten an Ort bleiben aber die Nähte zeigen nicht vorne
- - Gib ihm eine letzte gute Presse, wenn du fertig bist
+-   Zig-Zag (oder Serge) entlang der längsten Kanten des Rechtecks
+-   Falte eine Seite entlang der Länge zurück und drücke
+-   Falte die andere Seite zurück, entlang der Länge und drücke
+-   Handnähen entlang der Rückseite der Gurtschleife, so dass die gefalteten Seiten an Ort bleiben aber die Nähte zeigen nicht vorne
+-   Gib ihm eine letzte gute Presse, wenn du fertig bist
 
 > Obwohl die Breite Ihrer Bandschleifen nicht so wichtig ist, ist es wichtig, dass sie alle gleich breit sind.
-> 
+>
 > Um eine gleichmäßige Breite zu erleichtern, können Sie Ihre Gürtelschleifen um einen Kartonstreifen falten dickes Papier, oder Kunststoff der gewünschten Bandbreite.
-> 
+>
 > Dieser Streifen kann Ihnen auch beim Nähen der Hand helfen. Halten Sie es in Ihrer Gürtelschleife und es wird verhindern, dass Ihre Nadel durch alle Schichten durchbricht und Ihr Faden wird nicht an der Vorderseite angezeigt.
 
 ### Schritt 46: Füge die Bandschleifen an: Unten
@@ -527,7 +527,7 @@ Dann zacken Sie den Rand der Gurtschleife an die Hosen.
 > Dabei ist es wichtig, die Weste aus dem Weg zu räumen. Achten Sie darauf, die Gürtelschleifen nur an Ihre Hose zu befestigen und nicht an das Bauchbandfutter.
 
 > Du hast 8 Bandschleifen, also musst du sie um deinen Bund verteilen. Werfen Sie einen Blick auf ein bestehendes Paar, wenn Sie unsicher sind, wie Sie dies tun.
-> 
+>
 > Achten Sie darauf, dass Sie Gurthaufen in der Nähe der Mitte hinten platzieren und nicht zu nah zueinander an der Vorderseite (für Gürtelschnallen).
 
 ### Schritt 47: Taillenband
@@ -547,16 +547,16 @@ Dies wird viel einfacher zu verstehen sein, wenn Sie einen Blick auf das relevan
 Bevor wir die Taille fertigstellen, werden wir einen Teil der Naht zurückdrehen.
 
 > **About seam allowance grading** When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
-> 
+>
 > Die Schicht, die der guten Seite des Kleidungsstückes am nächsten liegt, sollte die längste sein, also von dort zurück schneiden.
-> 
+>
 > Dadurch wird es weniger wahrscheinlich, dass die Konturen der Nahtzuweisung von der guten Seite aus sichtbar sind.
 
 ### Schritt 49: Die Taille drücken und einfügen
 
 ![Drücken und die Taillenband-Verkleidung einfügen](step49.png)
 
-Das Taillenband wird von der Vorderseite der Hose oben auf der Naht genäht, die das Taillenband an die Hose anschließt (so genannter _Stich im Graben_).
+Das Taillenband wird von der Vorderseite der Hose oben auf der Naht genäht, die das Taillenband an die Hose anschließt (so genannter *Stich im Graben*).
 
 Dies zu tun wird das Futter fangen und es an Ort und Stelle sichern. Da wir dies jedoch von der guten Seite her nähen, wird das Futter unter allen anderen Schichten liegen und wir werden nicht sehen, was wir tun.
 
@@ -601,7 +601,7 @@ Bevor wir die Hose mit einem Zick-Zack-Zackenstich beenden, beenden wir den rohe
 ![Optional in einem Saum nähen](step53.png)
 
 > Das Saum Band ist ein Band, das auf der Innenseite deiner Hose sitzt. An der Stelle, wo Ihr Saum zurückklappt, muss der Stoff eine Menge Missbrauch aus dem Stoßen in Schuhe und andere Dinge nehmen.
-> 
+>
 > Das Einlegen eines Balles in den Saum schützt Ihren Stoff in gewissem Maße und ist eine saubere Oberfläche.
 
 Markiere die Häme auf deiner Hose (gute Seite aus).
@@ -623,8 +623,9 @@ Falte die Hosenbeine an der Hemline zurück und drücke den Saum.
 Wenn der Saum sauber gedrückt wird, nähen Sie einfach den gefalteten hinteren Teil an die Innenseite Ihrer Hose.
 
 > Hemming wird von Hand gemacht, weil es wichtig ist, dass die Nähte nicht auf der Vorderseite zeigen. Wenn also der Saum von Hand genäht wird, schiebe deine Nadel nicht durch den Stoff, aber fangen Sie nur ein paar Fäden, damit Ihre Stiche nicht auf der Vorderseite angezeigt werden
-> 
+>
 > Es gibt zwar Maschinenalternativen, aber sie sind nicht so sauber (Blindsticht) oder wahrscheinlich nicht zugänglich für die Hauskanalisation (industrielle Blindhemmmaschine).
 
 ### Schritt 56: Trimmen, bereinigen und drücken
+
 Schneiden Sie die verbleibenden losen Fäden oder Backen und geben Sie Ihren Hosen eine gute Abschlusspresse.

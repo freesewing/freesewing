@@ -20,4 +20,3 @@ And these are the different stroke styles:
 The different line strokes
 
 </Legend>
-

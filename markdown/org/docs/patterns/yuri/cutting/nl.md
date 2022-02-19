@@ -1,8 +1,6 @@
-
- - Knip **2 voorpanden** met _goede kanten op elkaar_
- - Knip **1 rugpand** _aan de stofvouw_
- - Knip **2 mouwen** met _goede kanten op elkaar_
- - Cut **2 gussets** _on the fold_ with _good sides together_
- - Knip **4 zijden van capuchon** 2 x 2 met _goede kanten op elkaar_ voor de buitenste kap en de binnenste capuchon
- - Knip **2 centra op capuchon** met _goede kanten op elkaar_
-
+-   Knip **2 voorpanden** met *goede kanten op elkaar*
+-   Knip **1 rugpand** *aan de stofvouw*
+-   Knip **2 mouwen** met *goede kanten op elkaar*
+-   Cut **2 gussets** *on the fold* with *good sides together*
+-   Knip **4 zijden van capuchon** 2 x 2 met *goede kanten op elkaar* voor de buitenste kap en de binnenste capuchon
+-   Knip **2 centra op capuchon** met *goede kanten op elkaar*

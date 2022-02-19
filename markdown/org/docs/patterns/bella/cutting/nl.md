@@ -1,12 +1,13 @@
-- - -
+***
+
 title: Bella Cutting
-- - -
+
+***
 
 **Buitenstof**
 
- - Cut **1 Front** part on the fold.
- - Cut **2 Back** parts.
-
+-   Cut **1 Front** part on the fold.
+-   Cut **2 Back** parts.
 
 These cutting instructions are just for the default Bella block. Adjust your cutting accordingly if you have/are making changes to the block.
 

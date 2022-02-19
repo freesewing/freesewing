@@ -6,10 +6,11 @@ Als je (bijvoorbeeld) 90% kiest, tekenen we voor elke 10 cm boord maar 9 cm. Zo 
 
 <Note>
 
-Als je niet zeker weet wat je moet kiezen, het beste is om de boordstof die je gaat gebruiken mee te nemen, zie hoeveel er 
+Als je niet zeker weet wat je moet kiezen, het beste is om de boordstof die je gaat gebruiken mee te nemen, zie hoeveel er
 je moet uitrekken om op 10 cm te komen met een *goed* rek.
 
 </Note>
 
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](hugo_ribbingstretch_sample.svg "Effect van deze optie op het patroon")

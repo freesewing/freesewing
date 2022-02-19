@@ -8,4 +8,4 @@ Different parts of the world have different conventions or traditions on how to 
 To avoid confusion, we use a differently styled notch to indicate the back,
 as detailed in [our pattern notation guide][1].
 
-[1]:/docs/various/notation/
+[1]: /docs/various/notation/

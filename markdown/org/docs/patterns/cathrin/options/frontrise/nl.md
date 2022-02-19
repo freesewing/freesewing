@@ -6,6 +6,6 @@ Hoe hoog wil je dat het korset komt aan het midden van de voorkant.
 
 > Deze optie laat negatieve waarden toe. Die zullen het middenvoorpand verlagen.
 
-
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cathrin_frontrise_sample.svg "Effect van deze optie op het patroon")

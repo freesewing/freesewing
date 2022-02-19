@@ -9,4 +9,5 @@ Este es el parámetro principal para cambiar la altura total de su cuello. Esto 
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarstandwidth_sample.svg "Efecto de esta opción en el patrón")
