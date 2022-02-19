@@ -1,7 +1,7 @@
 Um Titan zu erstellen, benötigst du Folgendes:
 
-- Grundlegendes Nähzubehör
-- About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
+-   Grundlegendes Nähzubehör
+-   About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
 
 <Note>
 

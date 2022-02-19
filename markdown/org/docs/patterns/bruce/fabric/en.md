@@ -3,5 +3,3 @@ You need a stretchy fabric for this pattern. Preferable something that is comfor
 I personally think that nothing can beat rayon for this pattern, although you can do with some other knit too, like jersey.
 
 When in doubt, go for rayon.
-
-

@@ -12,10 +12,10 @@ Essayez d'utiliser une adresse mail différente, ou [contactez-nous](https://dis
 
 En France, plusieurs fournisseurs de messagerie partagent le même filtrage :
 
- - gratuit. r
- - laposte.net
- - organge.fr
- - sfr.fr
+-   gratuit. r
+-   laposte.net
+-   organge.fr
+-   sfr.fr
 
 Ils sont tous connus pour causer des problèmes avec les livraisons.
 

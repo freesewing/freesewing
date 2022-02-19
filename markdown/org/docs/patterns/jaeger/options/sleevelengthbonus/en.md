@@ -1,8 +1,7 @@
-
 ![Sleeve length bonus](sleevelengthbonus.svg)
 
 The amount to extend the sleeve beyond the length of the sleeve in the base block.
-   
+
 <Note>
 
 ###### This is not supposed to be zero
@@ -13,7 +12,6 @@ Please take note of the default value and use that as a basis to lengthen or sho
 
 </Note>
 
-
-
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_sleevelengthbonus_sample.svg "Effect of this option on the pattern")

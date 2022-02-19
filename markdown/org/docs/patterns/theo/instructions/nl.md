@@ -1,4 +1,3 @@
-
 <Note>
 
 Tekst een beetje te droog voor je? Ik probeer video's beschikbaar te maken als deel van de documentatie.
@@ -11,9 +10,9 @@ In dit geval is er een hoop videomateriaal beschikbaar, maar dit is origineel op
 
 <Note>
 
-Veel van de stappen hieronder worden herhaald voor beide broekspijpen. 
+Veel van de stappen hieronder worden herhaald voor beide broekspijpen.
 
-Dat wordt niet altijd vermeld omdat het leven kort is en het continu schrijven van _Do niet vergeet om dit voor beide broekspijpen_ te doen, snel genoeg wordt.
+Dat wordt niet altijd vermeld omdat het leven kort is en het continu schrijven van *Do niet vergeet om dit voor beide broekspijpen* te doen, snel genoeg wordt.
 
 </Note>
 
@@ -49,7 +48,7 @@ Maak de dubbele paspelzakken aan de achterkant van je broek, inclusief de broekz
 
 ###### Dubbele paspelzakken
 
-Het maken van een dubbele paspelzak is een techniek die wordt gebruikt zijn verschillende kledingstukken. 
+Het maken van een dubbele paspelzak is een techniek die wordt gebruikt zijn verschillende kledingstukken.
 Daarom heb ik er een aparte pagina met documentatie voor gemaakt.
 
 Er is zowel geschreven documentatie en een reeks video's die je tonen hoe dit werkt, dus zelfs als je nog nooit paspelzakken gemaakt hebt komt het wel in orde.
@@ -113,7 +112,7 @@ Zigzag de rand van het weggeplooide deel van het voorpand om het af te werken en
 Wanneer je klaar bent leg je het voorpand, de voering en het zakdeel plat, en strijk je het eens grondig.
 
 > Dit is misschien een goed moment om je nog eens te vertellen dat alle stappen tot nu toe gelden voor de twee broekspijpen.
-> 
+>
 > Gewoon zodat je eraan denkt, de volgende stappen moeten trouwens ook twee keer gedaan worden.
 
 ### Stap 9: Bevestig belegdeel voorzak aan zakdeel
@@ -139,10 +138,10 @@ Plooi wanneer alles samengespeld is het voorpand en de voering opzij en sluit de
 > Stik de onderrand van het zakdeel tot aan het punt waar het belegdeel begint
 
 > Je kan het zakdeel op verschillende manieren afwerken, zoals:
-> 
-> - Lock de randen samen
-> - Werk de randen af met biaislint
-> - Stik samen en werk de rand af met een zigzagsteek
+>
+> -   Lock de randen samen
+> -   Werk de randen af met biaislint
+> -   Stik samen en werk de rand af met een zigzagsteek
 
 ### Stap 11: Strijk de steekzak
 
@@ -209,7 +208,7 @@ Als je het gulpdeel en gulpbeleg vastgestikt hebt keer je alles naar de goede ka
 ![Speld de rits aan het rechtervoorpand](step18.png)
 
 > Stap 18 tot 21 leiden allemaal naar een enkel stiksel dat de rits aan het voorpand bevestigt, en tegelijk het gulpdeel en gulpbeleg vastmaakt.
-> 
+>
 > Dit is de moeilijkste naad in het hele proces, dus ik ga mijn tijd nemen om alles uit te leggen en te illustreren voor je begint te naaien.
 
 Leg het voorpand van de rechterbroekspijp met de goede kant omhoog. Zorg dat de voering en het zakdeel onderaan liggen, en mooi plat.
@@ -218,8 +217,8 @@ Neem je rits en open ze. Keer ze nu om zodat ze met de goede kant naar beneden l
 
 Leg je rits gelijk met de kruisnaad zoals in de illustratie. Hou het volgende in gedachten:
 
- - Het einde van je rits zou aan de bovenrand van je broek moeten zitten, waar je tailleband begint. Denk er wel aan dat daar nog naadwaarde zit, dus leg het einde niet exact samen met de rand, maar 1 cm lager.
- - Leg de rits gelijk met de kruisnaad. Let niet op de rand van de rits, aangezien deze in verschillende breedtes bestaan. Zorg in de plaats dat je naast de tandjes van de rits kan stikken en binnen de naadwaarde van het voorpand blijven.
+-   Het einde van je rits zou aan de bovenrand van je broek moeten zitten, waar je tailleband begint. Denk er wel aan dat daar nog naadwaarde zit, dus leg het einde niet exact samen met de rand, maar 1 cm lager.
+-   Leg de rits gelijk met de kruisnaad. Let niet op de rand van de rits, aangezien deze in verschillende breedtes bestaan. Zorg in de plaats dat je naast de tandjes van de rits kan stikken en binnen de naadwaarde van het voorpand blijven.
 
 Speld de rits vast met een paar spelden haaks op de rits (zoals getoond). In andere woorden, speld niet langs de rits, maar door de rits.
 
@@ -318,10 +317,10 @@ Zorg dat je de rits enkel aan het gulpdeel speldt. Vermijd alle andere lagen.
 Stik uiteindelijk langs de rits met je ritsvoet om ze vast te maken aan het gulpdeel.
 
 > Let op het volgende terwijl je de rits goedlegt:
-> 
-> - De rits ligt met de goede kant naar beneden
-> - De rits ligt een beetje verder dan de rand van je gulpdeel
-> - Leg de bovenkant van de rits gelijk met de andere helft van de rits aan de rechterbroekspijp
+>
+> -   De rits ligt met de goede kant naar beneden
+> -   De rits ligt een beetje verder dan de rand van je gulpdeel
+> -   Leg de bovenkant van de rits gelijk met de andere helft van de rits aan de rechterbroekspijp
 
 ### Stap 28: Zigzag de rand van de rits aan het gulpdeel
 
@@ -424,6 +423,7 @@ Keer je broek naar de goede kant, en leg voorzichtig één broekspijp op de stri
 Als dit er goed uit ziet, strijk je de plooien in je broekspijp, aan de voor- en achterkant. Herhaal voor de andere broekspijp.
 
 Strijk het grondig, je wil namelijk dat deze plooien zichtbaar blijven na het wassen (zodat je ze er weer in kan strijken).
+
 > In de kledingindustrie gebruikt men chemische stoffen langs de vouwlijn voor ze gestreken wordt. Sommige kleermakers gebruiken een houten hamer en aambeeld om de vezels in een permanente plooi te timmeren.
 
 Afhankelijk van je stof kan je plooi langer blijven, maar uiteindelijk kan je niet verwachten dat een plooi langer dan een paar wasbeurten meegaat.
@@ -502,16 +502,16 @@ Los daarvan is dit de standaard manier om een riemlusje te maken:
 
 Vind het patroondeel voor de riemlus, een klein rechthoekig stuk stof. Hiervan zou je er 8 moeten hebben, en dit worden je riemlusjes. Voor elke lus volg je deze stappen:
 
- - Zigzag (of lock) langs de lange randen van de rechthoek
- - Plooi één kant terug in de lengte, en strijk
- - Plooi de andere kant terug, in de lengte, en strijk
- - Naai met de hand langs de achterkant van het lusje zodat de geplooide randen op hun plek blijven, maar de steken vooraan niet zichtbaar zijn
- - Strijk nog eens goed als je klaar bent
+-   Zigzag (of lock) langs de lange randen van de rechthoek
+-   Plooi één kant terug in de lengte, en strijk
+-   Plooi de andere kant terug, in de lengte, en strijk
+-   Naai met de hand langs de achterkant van het lusje zodat de geplooide randen op hun plek blijven, maar de steken vooraan niet zichtbaar zijn
+-   Strijk nog eens goed als je klaar bent
 
 > De exacte breedte van je lusjes is niet zo belangrijk, maar het is wel belangrijk dat ze allemaal even breed zijn.
-> 
+>
 > Om het makkelijker te maken de breedte consequent te houden kan je het lusje rond een strook karton of dik papier van de gewenste breedte plooien.
-> 
+>
 > Deze strook kan je ook helpen bij het naaien. Houd het strookje in je riemlus, dit helpt voorkomen dat je naald door de voorste stoflaag gaat en de steken zichtbaar worden.
 
 ### Stap 46: Bevestig de riemlussen: Onderkant
@@ -527,7 +527,7 @@ Zigzag dan de rand van de riemlus aan de broek.
 > Het is belangrijk dat je de voering van de tailleband uit de weg houdt terwijl je dit doet. Zorg dat je de riemlusjes enkel aan je broek vastmaakt, en niet aan de voering van de tailleband.
 
 > Je hebt 8 riemlusjes, dus die moet je verdelen rond je tailleband. Kijk naar een bestaande broek als je niet zeker bent van waar ze moeten komen.
-> 
+>
 > Zorg dat er zeker lusjes aan de middenrug zitten, en niet te dicht bij elkaar aan middenboor (zodat er ruimte is voor een gesp).
 
 ### Stap 47: Beleg tailleband
@@ -547,16 +547,16 @@ Dit is een stuk makkelijker te begrijpen als je naar de video hierover kijkt:
 Voor we de tailleband afwerken gaan we de naadwaarde wat bijknippen.
 
 > **Over het bijknippen van naden** Als je verschillende lagen naadwaarde bijknipt, probeer de lagen dan op verschillende lengtes te knippen zodat de bulk geleidelijk aan vermindert.
-> 
+>
 > De laag die het dichtst bij de goede kant van het kledingstuk ligt moet het langst zijn, dus begin daar.
-> 
+>
 > Dit maakt het minder waarschijnlijk dat de rand van de naadwaarde zichtbaar is langs de goede kant.
 
 ### Stap 49: Strijk en drieg de voering van de tailleband
 
 ![Strijk en drieg de voering van de tailleband](step49.png)
 
-De voering van de tailleband wordt langs de voorkant van de broek vastgestikt, bovenop de naad tussen de tailleband en de broek (zogenaamd _door de naad stikken_).
+De voering van de tailleband wordt langs de voorkant van de broek vastgestikt, bovenop de naad tussen de tailleband en de broek (zogenaamd *door de naad stikken*).
 
 Dit stikt de voering vast. Maar, omdat we dit langs de goede kant stikken ligt de voering onder alle andere lagen en zien we niet wat we doen.
 
@@ -601,7 +601,7 @@ Werk de onafgewerkte rand van de broekspijpen af met een zigzagsteek of overlock
 ![Naai een optionele broekstootband](step53.png)
 
 > Een broekstootbandje is een lint dat aan de binnenkant van je broekzoom zit. Op de plek waar je zoom omgeplooid is krijgt de stof heel wat te verduren door tegen schoenen en andere dingen aan te schuren.
-> 
+>
 > Een broekstootband beschermt je stof in zekere mate, en is een nette afwerking.
 
 Markeer de zoomlijn op je broek (met de goede kant naar buiten).
@@ -623,8 +623,9 @@ Plooi de broekspijpen om aan de zoomlijn, en strijk de zoom.
 Als de zoom netjes gestreken is, naai het teruggeplooide deel dan vast aan de binnenkant van je broek.
 
 > Omzomen wordt met de hand gedaan omdat het belangrijk is dat de steken niet zichtbaar zijn aan de goede kant. Dus duw je naald niet door de stof wanneer je de zoom naait, maar pik een paar draadjes van de stof op zodat je steken niet zichtbaar zijn aan de goede kant
-> 
+>
 > Er bestaan manieren om dit met de naaimachine te dien, maar deze zijn niet zo netjes (blindzoomsteek), of niet toegankelijk voor gewone stervelingen (industriele blindzoommachine).
 
 ### Stap 56: Knip bij, ruim op en strijk
+
 Knip alle losse draadjes of driegdraadjes die overblijven bij, en strijk je broek nog eens grondig.

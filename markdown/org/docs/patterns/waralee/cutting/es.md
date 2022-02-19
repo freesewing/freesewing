@@ -12,12 +12,13 @@ You will need to print out the pockets and pocket facings in the traditional way
 </Note>
 
 ### Materials
- - **Main fabric**
-   - Cut **2 pants** parts.
-   - (Optional) Cut **2 Pocket** parts on the fold.
-   - Cut **4 backPocket** parts
-   - Cut **4 frontFacing** parts
-   - Cut **4 backFacing** parts
+
+-   **Main fabric**
+    -   Cut **2 pants** parts.
+    -   (Optional) Cut **2 Pocket** parts on the fold.
+    -   Cut **4 backPocket** parts
+    -   Cut **4 frontFacing** parts
+    -   Cut **4 backFacing** parts
 
 <Note>
 

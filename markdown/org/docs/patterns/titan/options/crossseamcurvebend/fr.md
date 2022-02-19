@@ -1,6 +1,4 @@
-
 Contrôle la courbure de la courbe de couture croisée.
-
 
 <Note>
 
@@ -14,4 +12,5 @@ Les gens qui ont un bum rond voudront peut-être abaisser cela pour créer un pe
 </Note>
 
 ## Effet de cette option sur le motif
+
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_crossseamcurvebend_sample.svg "Effet de cette option sur le motif")

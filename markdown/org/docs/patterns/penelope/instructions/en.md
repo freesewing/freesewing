@@ -4,18 +4,17 @@ Due to the different styles and configurations of Penelope, we will first go ove
 
 </Note>
 
-
 ## Notes and tips
 
 ### Lining
 
-Pencil skirts are tight. This limits your movement quite a bit. More so, when you 
-try to sit down, the skirt may try to pull itself off your waist, or, when you get 
+Pencil skirts are tight. This limits your movement quite a bit. More so, when you
+try to sit down, the skirt may try to pull itself off your waist, or, when you get
 back up, stay quite high on your bum. Lining the skirt will make it move a lot
-easier around your curves, and thereby make it easier for you to move. 
+easier around your curves, and thereby make it easier for you to move.
 
-Adding lining can be done by creating a slightly shorter front and back piece, that 
-has some extra fabric in the middle. The extra fabric makes it easier for the 
+Adding lining can be done by creating a slightly shorter front and back piece, that
+has some extra fabric in the middle. The extra fabric makes it easier for the
 lining to move. One inch for each of the front and back pieces is enough. You can
 either make a box pleat in the front and back, or add the extra fabric where the
 darts are. You do not need to sew darts in the lining fabric. Just a pleat at the
@@ -35,16 +34,16 @@ part of the seam where the zipper is behaves differently than the part without i
 you want to try to make it invisible also in movement.
 
 Traditionally, an invisible zipper is used in a pencil skirt but a regular zipper will work just as well.
-You can even use a zipper that constrast your fabric if the fancy takes you. 
-Choose what works for you and the style you're going for. Be creative (or not) it is entirely up to you! 
+You can even use a zipper that constrast your fabric if the fancy takes you.
+Choose what works for you and the style you're going for. Be creative (or not) it is entirely up to you!
 All though if your fabric is on the heavier side you might want to opt for a different closure entirely.
 
 ### Vent
 
-A vent in the back is optional with Penelope. It will allow you to walk a lot easier 
-than if you make the skirt without it. The vent also influences where the zipper will 
+A vent in the back is optional with Penelope. It will allow you to walk a lot easier
+than if you make the skirt without it. The vent also influences where the zipper will
 be located. If you choose to have no vent, the default zipper location is on the side
-seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the 
+seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the
 back piece, and the zipper will be located on that seam.
 
 ### Darts
@@ -52,54 +51,54 @@ back piece, and the zipper will be located on that seam.
 Darts are used to compensate for the difference between your waist and seat measurements.
 Depending on this difference, there can be two darts, one dart, or no darts at all. More
 darts make for a potentially better fit. But if the amount of fabric that the dart will
-take in becomes too small, the number of darts will be reduced. Otherwise it would be 
-very difficult to sew the darts, and they would probably become rather unsightly. Some 
-of the difference will be taken in by the side seam, and if the difference is small, no 
+take in becomes too small, the number of darts will be reduced. Otherwise it would be
+very difficult to sew the darts, and they would probably become rather unsightly. Some
+of the difference will be taken in by the side seam, and if the difference is small, no
 darts will be included in the front and back pieces.
 
 ## Construction
 
 <Warning>
 
-We're not going to go into a full explanation on how to create all the individual details 
-that make up a pencil skirt. These instructions assume that you know how to sew a dart, insert an invisible 
-zipper, make a vent, etc. If not, there are numerous excellent articles available on the 
-web, both in writen form, and on video. If you do get stuck, you can always reach out to 
+We're not going to go into a full explanation on how to create all the individual details
+that make up a pencil skirt. These instructions assume that you know how to sew a dart, insert an invisible
+zipper, make a vent, etc. If not, there are numerous excellent articles available on the
+web, both in writen form, and on video. If you do get stuck, you can always reach out to
 [other FreeSewers](https://discord.freesewing.org/) in our discord.
 
 </Warning>
 
 ### Step 1: Darts
 
-- Sew all the darts. 
-- Press the darts towards the back.
-  - For the back piece(s), that means you press the darts towards eachother. 
-  - For the front piece, that means you press the darts towards the side seams.
+-   Sew all the darts.
+-   Press the darts towards the back.
+    -   For the back piece(s), that means you press the darts towards eachother.
+    -   For the front piece, that means you press the darts towards the side seams.
 
 ### Step 2: The zipper
 
-- With *good sides together*, sew the seam that has the zipper leaving the top open for the zipper.
-- Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
+-   With *good sides together*, sew the seam that has the zipper leaving the top open for the zipper.
+-   Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
 
 <Note>
-  
+
 If using a different closure, construct it during this step.
 
 </Note>
 
 ### Step 3: Sew the side seams
 
-- With *good sides together*, sew up both the side seams.
-- With *good sides together*, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
+-   With *good sides together*, sew up both the side seams.
+-   With *good sides together*, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
 
 ### Step 4: The lining (Optional)
 
 You can skip this step if not making a lining.
 
-- Follow Step 1 - 4 to construct the lining with the following changes:
-  - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
-  - Do not include the zipper but leave the opening in the zipper seam.
-- Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
+-   Follow Step 1 - 4 to construct the lining with the following changes:
+    -   Adjust the darts to compensate for the extra 'ease' in the lining pieces.
+    -   Do not include the zipper but leave the opening in the zipper seam.
+-   Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
 
 <Note>
 
@@ -115,19 +114,19 @@ If you prefer to insert the zipper with the main and lining fabric as one, you w
 
 ### Step 5: The waistband
 
-- Face lengthwise half of the waistband.
-- Press a fold the waistband in half lengthwise.
-- With *good sides together* sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
-- Press the waistband up and away from the skirt.
-- Press the remaining waistband seam allowances to the inside of the waistband.
-- Fold and press the waistband to the inside along fold line.
-- *Stitch in the ditch* to secure the waistband.
-- *Slipstitch* or *Whipstitch* the gap in the waistband that goes over the zipper seam
-- Construct your preferred choice of closure where the waistband overlaps.
+-   Face lengthwise half of the waistband.
+-   Press a fold the waistband in half lengthwise.
+-   With *good sides together* sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
+-   Press the waistband up and away from the skirt.
+-   Press the remaining waistband seam allowances to the inside of the waistband.
+-   Fold and press the waistband to the inside along fold line.
+-   *Stitch in the ditch* to secure the waistband.
+-   *Slipstitch* or *Whipstitch* the gap in the waistband that goes over the zipper seam
+-   Construct your preferred choice of closure where the waistband overlaps.
 
 <Note>
 
-Alternatively you can *Edgestitch* the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.  
+Alternatively you can *Edgestitch* the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.\
 The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
 
 </Note>
@@ -136,11 +135,11 @@ The closure can be a button and buttonhole, snaps or simple dress hooks. It's re
 
 This step is only needed if you have not lined your skirt as the hem and vents would have been taken care of in that step.
 
-- If desired, face the hem and vents.
-- Construct the vents with your preferred method
-- Press under the hem allowances of the skirt.
-- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
-- Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. This comes down to how you want the finished product to look.
+-   If desired, face the hem and vents.
+-   Construct the vents with your preferred method
+-   Press under the hem allowances of the skirt.
+-   If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
+-   Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. This comes down to how you want the finished product to look.
 
 <Tip>
 
@@ -150,8 +149,4 @@ If the seam allowances are big enough you can sew the hems as narrow hems. This 
 
 ### Step 7: Enjoy!
 
-- Now all that's left to do is to enjoy you new skirt!
-
-
-
-
+-   Now all that's left to do is to enjoy you new skirt!

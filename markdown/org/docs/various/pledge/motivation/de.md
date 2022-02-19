@@ -15,7 +15,7 @@ Ich weiß nicht, ob du mit dem Satz **Noblesse oblige** vertraut bist, aber das 
 
 Ich bin privilegiert, und damit habe ich Verantwortung. Ich habe das große Glück, in Westeuropa geboren zu sein, einen guten Job und ein Dach über dem Kopf zu haben.
 
-Könnte ich das Geld gebrauchen? Ja, könnte ich.  
+Könnte ich das Geld gebrauchen? Ja, könnte ich.\
 Brauche ich das Geld? Nein, tue ich nicht.
 
 ##### Der Wert deiner Unterstützung
@@ -37,6 +37,7 @@ Ich könnte freiwillig in einer Suppenküche arbeiten oder unterprivilegierten K
 Darum gehen alle Einnahmen und Spenden, die ich durch FreeSewing erziele, an eine wohltätige Organisation. So macht dieses Projekt nicht nur Spaß, sondern ist auch sozial verantwortlich. Und das brauche ich, um mich davon zu überzeugen, dass es tatsächlich in Ordnung ist meine ganze Zeit darauf zu verwenden dies zu tun, weil Freesewing eine Kraft zum Guten ist.
 
 ##### Gemeinnützigkeit ist nicht sexy
+
 Hier ist der heikle Teil: Menschen geben weniger, wenn sie wissen, dass das Geld an Wohltätigkeitsorganisationen geht. Ich wünschte, es wäre nicht der Fall, aber es ist so.
 
 Daher präsentieren wir [unsere Abonnementoptionen](/community/join) wie man sie auf einer gewinnorientierten Website sehen würde. Es scheint auf diese Weise intuitiver und funktioniert auch einfach besser.
@@ -49,13 +50,12 @@ Es gibt eine Menge Elend in der Welt. Wenn ich mir Nachrichten anschaue, fühöe
 
 Aber dennoch gibt es überall dort, wo Krisen zuschlagen, ein vertrautes Banner, das Hoffnung und Hilfe bietet. Es ist weder die Flagge der Vereinten Nationen, noch das sternengeschmückte Banner, noch das Blau und Gold der Europäischen Union.
 
-Das einzige, was mich immer daran erinnert, dass die Menschheit diese Personen nicht vollständig aufgegeben hat, ist das Banner von M&eacute;decins Sans Fronti&egrave;res/Ärzte ohne Grenzen fliegen zu sehen. Manchmal prekär, unter den Trümmern ihrer bombardierten Krankenhäuser, aber immer da.
+Das einzige, was mich immer daran erinnert, dass die Menschheit diese Personen nicht vollständig aufgegeben hat, ist das Banner von Médecins Sans Frontières/Ärzte ohne Grenzen fliegen zu sehen. Manchmal prekär, unter den Trümmern ihrer bombardierten Krankenhäuser, aber immer da.
 
 Ich kann mir kein einziges Symbol vorstellen, das uns daran erinnert, dass nicht alles verloren ist und es immer noch gute Leute da draußen gibt.
 
-Es ist auch eine der wenigen Organisationen, die die globale Reichweite haben um dorthin zu gelangen, wo es am meisten gebraucht wird. Wir sind daran gewöhnt, sie in armutsgebeutelten Regionen arbeiten zu sehen, aber als die COVID-19-Pandemie unsere Gesundheitssysteme außeinandergerissen hat, ist _MSF_ auf den Plan getreten und hat Teams in Westeuropa, in den USA und überall dort eingesetzt, wo der Bedarf am nötigsten war.
+Es ist auch eine der wenigen Organisationen, die die globale Reichweite haben um dorthin zu gelangen, wo es am meisten gebraucht wird. Wir sind daran gewöhnt, sie in armutsgebeutelten Regionen arbeiten zu sehen, aber als die COVID-19-Pandemie unsere Gesundheitssysteme außeinandergerissen hat, ist *MSF* auf den Plan getreten und hat Teams in Westeuropa, in den USA und überall dort eingesetzt, wo der Bedarf am nötigsten war.
 
-Ich hoffe, dass dies die Wahl von M&eacute;decins Sans Fronti&egrave;res/Ärzte ohne Grenzen als Wohltätigkeitsorganisation der Wahl von FreeSewing erklärt. Und ich hoffe, du wirst dich uns darin anschließen, die Welt etwas besser zu machen.
+Ich hoffe, dass dies die Wahl von Médecins Sans Frontières/Ärzte ohne Grenzen als Wohltätigkeitsorganisation der Wahl von FreeSewing erklärt. Und ich hoffe, du wirst dich uns darin anschließen, die Welt etwas besser zu machen.
 
 Also freue ich mich, [diese Zusage](/docs/various/pledge/) zu machen.
-

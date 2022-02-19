@@ -23,15 +23,19 @@ Er zijn verschillende trucjes om nepen te naaien, hier is het mijne (ik denk dat
 Knip de naadwaarde die tegen het rechthoekige stukje stof ligt open tot aan de naad zodat de naad voor het rechthoekige stukje stof opengestreken kan worden. Op de plek waar de neep samen met het rechthoekige stukje stof gestikt is strijk je de naadwaarde naar 1 kant, en het geplooide rechthoekige stukje stof naar de andere kant. Knip de randen van het rechthoekige stukje stof bij. De rand aan de buitenstof is breder, die daarbovenop smaller
 
 #### Versie met bovenkant in twee delen
+
 Deze neep is eenvoudiger aangezien de naad doorloopt. Stik de naad gewoon van begin tot einde
 
 #### De naad strijken
+
 Het kan helpen om knipjes in de naadwaarde te geven zodat ze plat ligt. Gebruik een perskussen of iets rond onder je stof om de naad open te strijken en toch de vorm die je net gemaakt hebt te behouden.
 
 #### Sierstiksel
+
 Afhankelijk van de look die je wil kan je een sierstiksel langs je naden geven (met de machine of zelfs met de hand). De voorste klepnaad zal een beetje lastig zijn met de machine, maar niet onmogelijk. In elk geval zeg ik dit hier en zal ik het niet blijven herhalen, maar als je kiest voor een sierstiksel is dit het proces: Stik, Strijk, Sierstiksel, Herhaal.
 
 ### Stap 3: Optioneel: Bevestig zijpanden aan elkaar.
+
 Dit is enkel relevant als je de zijpanden in twee delen geknipt hebt. Het is een rechte naad. Niet veel over te zeggen. Strijk de naadwaarde open.
 
 ### Stap 4: Bevestig de bovenkant aan de zijkant
@@ -91,6 +95,7 @@ Speld de band op de juiste plek: de twee spelden worden gebruikt om de band geli
 ![Beide randen van de band worden onzichtbaar vastgenaaid, en de rand van de pet heeft een sierstiksel](step13.jpg)
 
 ### Stap 12: Stik de zijkant aan de klep
+
 We zijn bijna klaar, en de laatste stap is de bovenkant van de klep vastmaken aan de pet zelf. Speld de twee delen langs de buitenkant op de juiste plaats, keer de pet naar de binnenkant en stik beide kanten een paar keer door.
 
 ![Speld het op z'n plek](step14.jpg) ![Stik het op z'n plaats, vanuit de binnenkant](step15.jpg)

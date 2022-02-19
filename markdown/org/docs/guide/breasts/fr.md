@@ -17,7 +17,7 @@ Consultez [notre FAQ à ce sujet](/docs/faq/breasts/) pour plus d'informations.
 
 ##### Pourquoi demandons-nous en premier lieu
 
-Ajuster un buste avec des seins est plus complexe que d'ajuster un buste sans sein. 
+Ajuster un buste avec des seins est plus complexe que d'ajuster un buste sans sein.
 Des mensurations et options supplémentaires sont nécessaires et nous ne voulons les afficher que quand c'est pertinent.
 
 </Note>

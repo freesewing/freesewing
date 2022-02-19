@@ -66,17 +66,19 @@ Sew the front darts separately and turn the whole thing inside out, and you have
 </Tip>
 
 ### Step 4: Join second inset and fronts
+
 ![Join second inset and fronts](step03-d.png)
 
 After you have joined the first inset and the fronts, continue with the second one.
 
 With the fronts and insets joined together, you are left with 3 parts:
 
- - The joined insets and fronts
- - The joined sides and back
- - The elastic
+-   The joined insets and fronts
+-   The joined sides and back
+-   The elastic
 
 ### Step 5: Close the fronts dart
+
 ![Close the fronts dart](step05.png)
 
 Fold the fronts double along the center fronts line, so that the tusks at the bottom line up.
@@ -94,6 +96,7 @@ Arguably, not having an exposed seam in this area is more comfortable for the we
 </Tip>
 
 ### Step 6: Optional: Topstitch
+
 ![Boxers with (left) and without topstitching](step06.jpg)
 
 <Note>
@@ -116,21 +119,25 @@ The seam stops halfway through (where the dart ends) but your topstitching shoul
 </Tip>
 
 ### Step 7: Join the first side to the fronts
+
 ![Join the first side to the fronts](step07.png)
 
 Align the side edge of the first side with the edge made up of the fronts+inset (good sides together as usual) and serge them together.
 
 ### Step 8: Join the second side to the fronts
+
 ![Join the second side to the fronts](step08.png)
 
 Do the same for the second side.
 
 ### Step 9: Optional: Topstitch
+
 ![Boxers with (left) and without topstitching](step06.jpg)
 
 If you've topstitched before, make sure to do the same now for the seams you made in step 7 and 8.
 
 ### Step 10: Finish the crotchseam
+
 ![Finish the crotchseam](step10.png)
 
 We will now serge the arched opening in the back part to the front parts of the boxers, made up of the fronts and insets.
@@ -147,6 +154,7 @@ Take it slow, and be **very aware** of where your serger blade is cutting into.
 </Tip>
 
 ### Step 11: Hem the first leg
+
 ![Hem the first leg](step11.png)
 
 Time to hem the legs. Hem them as you would do any other stretchy knit. Go for a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stich setting.
@@ -160,11 +168,13 @@ Even better: pin both legs in place and only sew when you're happy with how it l
 </Note>
 
 ### Step 12: Hem the second leg
+
 ![Hem the second leg](step12.png)
 
 You know it makes sense.
 
 ### Step 13: Make your elastic into a loop
+
 ![Make your elastic into a loop](step13.png)
 
 Sew both ends of your elastic together with good sides together.
@@ -172,12 +182,14 @@ Sew both ends of your elastic together with good sides together.
 <Note>
 
 ###### Not sure how much elastic you need?
+
 Simply wrap your elastic around your waist where it would end up sitting, and tighten it until it feels right.
 Make a mark of where the edge joins, add 2cm seam allowance, and that's your length.
 
 </Note>
 
 ### Step 14: Attach elastic to waist
+
 ![Attach elastic to waist](step14.png)
 
 Attach the elastic to the waist.
@@ -198,6 +210,7 @@ While sewing, stretch elastic and fabric together between each set of pins, remo
 </Tip>
 
 ### Step 15: Trim and clean up
+
 ![Yay! You've made it](step15.png)
 
 Trim any excess fabric you might have at elastic or hem, and any loose threads.

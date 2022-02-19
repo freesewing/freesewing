@@ -10,10 +10,10 @@ We hebben er vertrouwen in dat ons engagement voor privacy aangetoond zal worden
 
 Voor de duidelijkheid hebben we dit in vier verschillende rollen opgesplitst:
 
- - Voor **bezoekers van onze website**slaan we **[bezoekersgegevens op][v]**
- - Voor **abonnees op onze nieuwsbrief**slaan we **[ontvangersgegevens op][s]**
- - Voor **gebruikers met een account** op onze website slaan we **[account gegevens op][a]**
- - Voor **gebruikers met een account met mensen**slaan we **[personen gegevens op][p]**
+-   Voor **bezoekers van onze website**slaan we **[bezoekersgegevens op][v]**
+-   Voor **abonnees op onze nieuwsbrief**slaan we **[ontvangersgegevens op][s]**
+-   Voor **gebruikers met een account** op onze website slaan we **[account gegevens op][a]**
+-   Voor **gebruikers met een account met mensen**slaan we **[personen gegevens op][p]**
 
 Hier zijn de relevante secties:
 
@@ -40,14 +40,19 @@ Een completer overzicht van de geschiedenis van dit document is [beschikbaar op 
 
 ##### Zie ook
 
- - [Je rechten][2]
- - [Je toestemming][3]
+-   [Je rechten][2]
+-   [Je toestemming][3]
 
 [1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
-[2]: /docs/various/right/
-[3]: /account/actions/consent/
-[v]: /docs/various/privacy/visitor/
-[s]: /docs/various/privacy/subscriber/
-[a]: /docs/various/privacy/account/
-[p]: /docs/various/privacy/people/
 
+[2]: /docs/various/right/
+
+[3]: /account/actions/consent/
+
+[v]: /docs/various/privacy/visitor/
+
+[s]: /docs/various/privacy/subscriber/
+
+[a]: /docs/various/privacy/account/
+
+[p]: /docs/various/privacy/people/

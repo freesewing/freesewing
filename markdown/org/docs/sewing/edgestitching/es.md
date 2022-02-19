@@ -2,7 +2,7 @@
 title: Edgestitching
 ---
 
-Edgestitching is a speficic type of _topstitching_. It is specific because of its location. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
+Edgestitching is a speficic type of *topstitching*. It is specific because of its location. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
 
 ![Edgestitching on a FreeSewing Hugo Hoodie](edgestitching.jpg)
 

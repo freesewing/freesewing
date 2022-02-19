@@ -2,8 +2,7 @@
 title: What are those symbols next to my measurements?
 ---
 
-You might have noticed these kind of icons next to your measurements:
-<Gauge val={0} theme='light' />
+You might have noticed these kind of icons next to your measurements: <Gauge val={0} theme='light' />
 
 The value they represent shows how far the measurement deviates from the proportions we test our designs with:
 
@@ -18,11 +17,10 @@ The value they represent shows how far the measurement deviates from the proport
 | <Gauge val={4} theme='light' />  | The value is **a good bit higher** |
 | <Gauge val={6} theme='light' />  | The value is **significantly higher** |
 
-
 These indicators serve a dual purpose:
 
- - Help you spot mistakes in your measurements (you know best where your outliers are)
- - Help you anticipate where our software might struggle to come up with good results
+-   Help you spot mistakes in your measurements (you know best where your outliers are)
+-   Help you anticipate where our software might struggle to come up with good results
 
 <Note>
 

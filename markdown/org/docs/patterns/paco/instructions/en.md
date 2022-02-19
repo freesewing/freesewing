@@ -10,8 +10,7 @@ the raw edges.
 For these instructions, we'll assume that you are using a serger for seam finishes, but we'll
 also provide alternatives. Other options for finishing seams include trimming them with pinking
 shears, stitching a zig-zag along the edge of the seam to keep it from fraying, or binding with
-bias tape.
- </Tip>
+bias tape. </Tip>
 
 ## Step 1: Construct the back pockets
 
@@ -39,6 +38,7 @@ you’ve never made welt pockets before, you’ll be fine.
 Does it need a note to that effect? --->
 
 ## Step 2: Prepare the front pockets
+
 Your pockets are cut from a lining material, which can save on weight and bulk, but also means
 that you'll want to hide them a little bit inside the side seam, so the lining doesn't show.
 The flap along the outside seam of each leg is for just this purpose.
@@ -179,6 +179,7 @@ pressed to the back as they feed through the machine.
 ![Crotch seam](step09.svg)
 
 ## Step 10: Place eyelets for the draw string (optional)
+
 Mark the middle of your waistband length. Fold one of your waistband pieces double, and mark the
 middle of the width (do not take the seam allowance into account).
 
@@ -197,6 +198,7 @@ behind these eyelets. A bit of interfacing or a leftover piece of denim will do 
 ![Waistband with eyelets](step10.svg)
 
 ## Step 11: Prepare the waist elastic
+
 There’s no magic formula for the length of your elastic. So you wrap it around your waist and pull
 it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is
 long enough to sit comfortably at the high hip.
@@ -206,6 +208,7 @@ Mark this length, cut the elastic, and join the two ends together.
 ![Elastic joined with a series of zig-zag stitches](step11.svg)
 
 ## Step 12: Join the waistband
+
 Place the two waistband pieces good sides together, and align the short edges. Sew the short edges
 together, then press open. These will be inside the waistband, so you don't need to finish the edges
 of these seams unless your fabric is particularly likely to fray.
@@ -221,6 +224,7 @@ You have two options for attaching your waistband. One is a bit simpler, but lea
 on the inside. The other is a bit more fiddly, but it encloses the raw edges of your fabric.
 
 ### The simpler method
+
 Keep your waistband folded double, and place the elastic inside. Make sure to align the place where
 the elastic is joined with the back of the waistband (opposite the eyelets).
 
@@ -262,6 +266,7 @@ pants, with good sides together. Pin in place.
 <Tip>
 
 ##### Mind your eyelets
+
 To make sure your eyelets will end up on the outside, make sure they are closer to the top of your
 waistband, above the fold, for now.
 
@@ -295,6 +300,7 @@ Mark this length, cut the elastic, and join the two ends together. Repeat for th
 ![Elastic joined with zig-zag stitching](step14.svg)
 
 ## Step 15: Join the cuffs
+
 Fold each cuff with good sides together, aligning the short edges. For each cuff, sew the short edges
 together, then press open. These will be inside the cuff, so you don't need to finish the edges of
 these seams unless your fabric is particularly likely to fray.
@@ -311,8 +317,8 @@ there are two options - a simpler choice, and a choice without exposed seams on 
 
 <Note>
 
- If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
- sleeve cuffs), this will make sewing the cuffs easier.
+If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
+sleeve cuffs), this will make sewing the cuffs easier.
 
  </Note>
 
@@ -386,6 +392,7 @@ below the eyelets, leaving a channel wide enough for your drawstring.
 </Note>
 
 ## Step 18: Thread a draw string around the waist (optional)
+
 If you put eyelets in your waistband, thread a drawstring through one eyelet, around the waist, and
 out of the other eyelet.
 
@@ -400,6 +407,7 @@ will be easier to maneuver through the fabric, and it will pull the drawstring a
 ![Paco threaded with drawstring](step18.svg)
 
 ## Step 19: Enjoy your Paco pants!
+
 You did it! Way to go!
 
 <!--- Maybe we want to put a fun gif here? --->

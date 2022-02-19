@@ -12,10 +12,10 @@ Versuche es entweder mit einer anderen E-Mail-Adresse, oder [melde dich bei uns]
 
 In Frankreich haben einige E-Mail Provider dieselben Filtereinstellungen:
 
- - free.fr
- - laposte.net
- - organge.fr
- - sfr.fr
+-   free.fr
+-   laposte.net
+-   organge.fr
+-   sfr.fr
 
 Diese Provider sind bekannt dafür, Probleme beim Zustellen der Aktivierungsemail zu verursachen.
 

@@ -3,6 +3,7 @@ title: Doppelpaspeltaschen
 ---
 
 ## Video
+
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
 ## Lerne Paspeln mit David Page Coffin
@@ -19,19 +20,19 @@ David ist ein Freund der Website, und so viel besser darin, dies zu erklären, a
 
 Um Doppelpaspeltaschen herzustellen, benötigst du:
 
- - Grundlegendes Nähzubehör
- - Der Stoff oder das Schnittmusterstück, in dem du die Tasche machen möchtest
- - Zwei Stoffstreifen für die Paspeln
- - Ein Streifen Einlage
- - Futterstoff oder anderen geeigneten Stoff für die Tasche (Siehe Stoff- und Farboptionen)
- - Besatz für den Taschenbeutel je nach Stoff- und Farboptionen
+-   Grundlegendes Nähzubehör
+-   Der Stoff oder das Schnittmusterstück, in dem du die Tasche machen möchtest
+-   Zwei Stoffstreifen für die Paspeln
+-   Ein Streifen Einlage
+-   Futterstoff oder anderen geeigneten Stoff für die Tasche (Siehe Stoff- und Farboptionen)
+-   Besatz für den Taschenbeutel je nach Stoff- und Farboptionen
 
 ### Parameter
 
 Zwei Werte bestimmen die Größe deiner Doppelpaspeltasche. Das sind:
 
- - Die Taschenbreite: Dies ist die Breite der Öffnung der fertigen Doppelpaspeltasche
- - Die Paspelhöhe: Dies ist die Höhe einer einzigen Paspel, und diese Hälfte der Höhe unserer Doppelpaspeltasche
+-   Die Taschenbreite: Dies ist die Breite der Öffnung der fertigen Doppelpaspeltasche
+-   Die Paspelhöhe: Dies ist die Höhe einer einzigen Paspel, und diese Hälfte der Höhe unserer Doppelpaspeltasche
 
 > Im Beispiel unten verwende ich eine Taschenbreite von 13 cm und eine Paspelhöhe von 0,5 cm
 
@@ -41,13 +42,13 @@ Zwei Werte bestimmen die Größe deiner Doppelpaspeltasche. Das sind:
 
 Die Paspeln sind zwei rechteckige Stoffstreifen mit den folgenden Maßen:
 
- - Länge: Taschenbreite + 4cm
- - Breite: Paspelhöhe x2 + 5cm
+-   Länge: Taschenbreite + 4cm
+-   Breite: Paspelhöhe x2 + 5cm
 
 Für unser Beispiel:
 
- - Länge: 13cm + 4cm = 17cm
- - Breite: (0,5cm x 2) + 5cm = 6cm
+-   Länge: 13cm + 4cm = 17cm
+-   Breite: (0,5cm x 2) + 5cm = 6cm
 
 Dies wird zu den beiden schmalen Stoffstreifen werden, die deine Doppelpaspeltasche bilden.
 
@@ -57,13 +58,13 @@ Dies wird zu den beiden schmalen Stoffstreifen werden, die deine Doppelpaspeltas
 
 Die Tascheneinlage ist ein einziger rechteckiger Streifen an Bügeleinlage mit den folgenden Maßen:
 
- - Länge: Taschenbreite + 4cm
- - Breite: Paspelhöhe x2 + 5cm
+-   Länge: Taschenbreite + 4cm
+-   Breite: Paspelhöhe x2 + 5cm
 
 Für unser Beispiel:
 
- - Länge: 13cm + 4cm = 17cm
- - Breite: (0,5cm x 2) + 5cm = 6cm
+-   Länge: 13cm + 4cm = 17cm
+-   Breite: (0,5cm x 2) + 5cm = 6cm
 
 > Du hast vielleicht bemerkt, dass die Einlage genauso groß wie eine Paspel ist
 
@@ -73,13 +74,13 @@ Die Einlage wird verwendet, um die Tasche zu stabilisieren, und wird mit dem Bü
 
 Der (optionale) Taschebesatz ist ein einziger rechteckiger Stoffstreifen mit folgenden Maßen:
 
- - Länge: Taschenbreite + 4cm
- - Breite: Paspelhöhe x2 + 5cm
+-   Länge: Taschenbreite + 4cm
+-   Breite: Paspelhöhe x2 + 5cm
 
 Für unser Beispiel:
 
- - Länge: 13cm + 4cm = 17cm
- - Breite: (0,5cm x 2) + 5cm = 6cm
+-   Länge: 13cm + 4cm = 17cm
+-   Breite: (0,5cm x 2) + 5cm = 6cm
 
 > Du hast vielleicht bemerkt, dass der Besatz genauso groß wie eine Paspel ist
 
@@ -109,9 +110,9 @@ Bügele die Einlage an der schlechten Seite deines Kleidungsstückes fest, sodas
 
 Markiere die Paspeltasche wie folgt:
 
- - Markiere die Taschenbreite mit vertikalen Linien. Mache diese Linien etwas länger, damit sie dir später beim Ausrichten der Paspeln helfen
- - Richte die Mitte der Taschenöffnung an einer horizontalen Linie aus. Mache diese Linien etwas länger, damit sie dir später beim Ausrichten der Paspeln helfen
- - Markiere zwei horizontale Linien parallel zur Mittellinie, um die Paspelhöhe versetzt (0,5cm in unserem Beispiel)
+-   Markiere die Taschenbreite mit vertikalen Linien. Mache diese Linien etwas länger, damit sie dir später beim Ausrichten der Paspeln helfen
+-   Richte die Mitte der Taschenöffnung an einer horizontalen Linie aus. Mache diese Linien etwas länger, damit sie dir später beim Ausrichten der Paspeln helfen
+-   Markiere zwei horizontale Linien parallel zur Mittellinie, um die Paspelhöhe versetzt (0,5cm in unserem Beispiel)
 
 Der Teil der horizontalen Linien parallel zur Mittellinie, die zwischen den Vertikellinien fallen, ist, wo wir unsere Schweissen nähen. Dies wird durch die roten Linien veranschaulicht.
 
@@ -152,7 +153,6 @@ Wenn du fertig bist, nähe die zweite Welt vor Ort. Beachte, dass dies ein bissc
 > Im Bild markiert die rote Linie wie und wo man die Tasche öffnet, und die grüne Linie zeigt die Nähte.
 
 Schneiden Sie Ihre Welttasche durch Schneide entlang der Mitte horizontale Linie. Stoppen Sie die vertikalen Linien, die die Seiten der Tasche markieren, und schneiden Sie unter 45 Grad an den Rand Ihrer Heftlinie, die die Schweißnähte hält.
-
 
 > Achten Sie darauf, dass Sie nicht in Ihre Nähte schneiden oder zu weit schneiden. Richten Sie es genau.
 

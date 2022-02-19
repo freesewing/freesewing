@@ -4,6 +4,6 @@ Bepaalt de curve can het armsgat op de rug. Met andere woorden, hoe ver het arms
 
 > Hoge waarden maken een diepere boog, wat een racerback als resultaat heeft.
 
-
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_backlinebend_sample.svg "Effect van deze optie op het patroon")

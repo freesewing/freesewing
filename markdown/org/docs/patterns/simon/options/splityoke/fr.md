@@ -13,4 +13,5 @@ C'est un peu plus de travail, mais cela vous permet d'aligner le droit-fil diff√
 </Note>
 
 ## Effet de cette option sur le motif
+
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur diff√©rente pour cette option](simon_splityoke_sample.svg "Effet de cette option sur le motif")

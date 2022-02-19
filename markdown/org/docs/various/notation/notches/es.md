@@ -8,7 +8,7 @@ Un estilo alternativo muestra una cruz en un círculo. Este estilo se utiliza pa
 
 <Legend part="notches"> 
 
-  The default notch style (shown left) and alternative style for notches on the back
+The default notch style (shown left) and alternative style for notches on the back
 
 </Legend>
 

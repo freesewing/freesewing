@@ -10,9 +10,9 @@ Stecken wird immer dann angewandt, wenn du Stecknadeln verwendest, um Dinge an O
 
 Einige Beispiele, wo häufig gesteckt wird:
 
- - Eine Naht an Ort und Stelle stecken, bevor sie richtig genäht wird
- - Das Anstecken von Verzierungen, Taschen, oder anderen Teilen, bevor sie angefügt werden
- - Stecken von Abnähern oder anderen Änderungen am Schnittmuster beim Testen des Kleidungsstückes an einem Modell
+-   Eine Naht an Ort und Stelle stecken, bevor sie richtig genäht wird
+-   Das Anstecken von Verzierungen, Taschen, oder anderen Teilen, bevor sie angefügt werden
+-   Stecken von Abnähern oder anderen Änderungen am Schnittmuster beim Testen des Kleidungsstückes an einem Modell
 
 Stecken ist niemals permanent, sondern nur eine temporäre Maßnahme, um Dinge an Ort und Stelle zu halten.
 

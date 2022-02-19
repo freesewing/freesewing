@@ -2,7 +2,7 @@
 title: Grainline and cut-on-fold indicator
 ---
 
-Grainlines — a line that indicates the *fabric grain* — look like this: 
+Grainlines — a line that indicates the *fabric grain* — look like this:
 
 <Legend part="grainline">
 

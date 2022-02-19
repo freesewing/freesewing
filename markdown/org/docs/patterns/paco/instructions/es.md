@@ -10,8 +10,7 @@ los bordes crudos.
 Para estas instrucciones, asumiremos que está usando un serger para que finalice la costura, pero también proporcionaremos
 alternativas. Otras opciones para terminar costuras incluyen traparlos con fragmentos de color
 , enrollar un zig-zag a lo largo del borde de la costura para evitar que se descongele, o enlazar con
-cinta de sesgo.
- </Tip>
+cinta de sesgo. </Tip>
 
 ## Paso 1: Construir los bolsillos de respaldo
 
@@ -37,6 +36,7 @@ nunca has hecho pockets de soldadura antes, estarás bien.
 Does it need a note to that effect? --->
 
 ## Paso 2: Prepara los pockets frontales
+
 Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. La aleta a lo largo de la costura exterior de cada pierna es sólo para este propósito.
 
 Si estás usando un serger, siéntate los bordes curvos de tus piezas de bolsillo. Then, serge along the long edges of the pocket flaps.
@@ -149,6 +149,7 @@ presionados al dorso mientras se alimentan a través de la máquina.
 ![Costura cruda](step09.svg)
 
 ## Paso 10: Coloca los eyelets para la cadena de dibujo (opcional)
+
 Marca la mitad de la longitud de tu cintura. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
 
 Un poco a la izquierda y a la derecha de esto, puede añadir dos eyelets para pasar una cuerda de dibujo. Because your Paco pants have elastic in the waistband, as well, this is a nice detail, but is not required.
@@ -165,6 +166,7 @@ detrás de estos amarillos. Un poco de interfaz o un pedazo restante de denim ha
 ![Waistband con eyelets](step10.svg)
 
 ## Paso 11: Prepara el elástico de cintura
+
 No hay una fórmula mágica para la longitud de tu elástico. So you wrap it around your waist and pull it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
 
 Marca esta longitud, corta el elástico y únete a los dos extremos.
@@ -172,6 +174,7 @@ Marca esta longitud, corta el elástico y únete a los dos extremos.
 ![Elástico se unió a una serie de cintas de zag](step11.svg)
 
 ## Paso 12: Únete a la cintura
+
 Coloque las dos piezas de cintura bien lados juntos, y alinear los bordes cortos. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Se unieron piezas de cintura](step12.svg)
@@ -183,6 +186,7 @@ Doble la cintura doble a lo largo de la longitud, con buenos lados fuera, y pren
 Tienes dos opciones para adjuntar tu cintura. One is a bit simpler, but leaves an exposed seam on the inside. El otro es un poco más fidedigno, pero envuelve los bordes crudos de tu tejido.
 
 ### El método más simple
+
 Mantenga la cintura doblada y coloque el elástico dentro. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
 
 Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Fijar en su lugar.
@@ -217,6 +221,7 @@ Find the center front of your waistband (easy if there are eyelets, if not just 
 <Tip>
 
 ##### Ten en cuenta tus eyelets
+
 para asegurarte de que tus eyelets terminen en el exterior, Asegúrate de que estén más cerca de la parte superior de tu pulsera
 sobre el pliegue, por ahora.
 
@@ -245,6 +250,7 @@ Marca esta longitud, corta el elástico y únete a los dos extremos. Repetir par
 ![Elástico unido con zig-zag stitching](step14.svg)
 
 ## Paso 15: Únete a los cuffs
+
 Doblar cada corte con buenos lados juntos, alineando los cortos bordes. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Se unió a los tazas](step15.svg)
@@ -257,8 +263,8 @@ Vas a sujetar tus tazas de la misma manera que te has unido a la cintura. As wit
 
 <Note>
 
- Si su máquina de coser tiene una cama despejable (normalmente removida para exponer el "brazo libre" para coser las mangas
- ), Esto facilitará la costura de los cortes.
+Si su máquina de coser tiene una cama despejable (normalmente removida para exponer el "brazo libre" para coser las mangas
+), Esto facilitará la costura de los cortes.
 
  </Note>
 
@@ -322,6 +328,7 @@ debajo de los eyelets, dejar un canal lo suficientemente ancho para su cuerda de
 </Note>
 
 ## Paso 18: Hilo de una cuerda de dibujo alrededor de la cintura (opcional)
+
 If you put eyelets in your waistband, thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
 
 <Note>
@@ -335,6 +342,7 @@ será más fácil de maniobrar a través de la tela, y arrasará la cuerda de di
 ![Paco hilado con dibujo](step18.svg)
 
 ## Paso 19: ¡Disfruta de tus pantalones Paco!
+
 ¡Lo ha conseguido! ¡Vaya!
 
 <!--- Maybe we want to put a fun gif here? --->

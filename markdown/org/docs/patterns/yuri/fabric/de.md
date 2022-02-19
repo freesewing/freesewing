@@ -7,8 +7,7 @@ Achte auf die Innenseite des Stoffes. Sweatshirt-Stoffe kommen in loopback und z
 <Note>
 
 Du musst keinen Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, vom modischen Neopren (aka scuba) bis hin zu einer exzentrischen Wahl wie gebrochener Velour (aka Samt).
- 
+
 Oder wenn du deine Klasse aufgegeben hast, kannst du nach Fleece greifen.
 
 </Note>
-

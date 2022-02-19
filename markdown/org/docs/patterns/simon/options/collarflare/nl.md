@@ -9,4 +9,5 @@ Dit heeft invloed op de lengte van de punten van je kraag.
 </Note>
 
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_collarflare_sample.svg "Effect van deze optie op het patroon")

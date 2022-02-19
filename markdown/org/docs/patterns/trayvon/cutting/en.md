@@ -1,21 +1,21 @@
- - **Main fabric**
-   - Cut **1 tip**
-   - Cut **1 tail** 
- - **Lining fabric**
-   - Cut **1 lining tip**
-   - Cut **1 lining tail** 
-   - Cut **1 loop** 
- - **Interfacing**
-   - Cut **1 interfacing tip**
-   - Cut **1 interfacing tail** 
+-   **Main fabric**
+    -   Cut **1 tip**
+    -   Cut **1 tail**
+-   **Lining fabric**
+    -   Cut **1 lining tip**
+    -   Cut **1 lining tail**
+    -   Cut **1 loop**
+-   **Interfacing**
+    -   Cut **1 interfacing tip**
+    -   Cut **1 interfacing tail**
 
 <Warning>
 
 ###### Caveat
 
- - There is no seam allowance on the **interfacing** parts and the **loop**
- - The **lining** **tip** and **tail** have only seam allowance at the tip
- - The **fabric** **tip** and **tail** have only seam allowance at the tip and center
+-   There is no seam allowance on the **interfacing** parts and the **loop**
+-   The **lining** **tip** and **tail** have only seam allowance at the tip
+-   The **fabric** **tip** and **tail** have only seam allowance at the tip and center
 
 </Warning>
 
@@ -34,5 +34,3 @@ That being said, a lot of ties are cut on bias, as this results in the best drap
 If this all sounds very confusing, might I suggest reading the help page on [Fabric grain](/docs/sewing/fabric-grain).
 
 </Tip>
-
-

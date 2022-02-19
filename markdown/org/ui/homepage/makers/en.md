@@ -3,12 +3,12 @@
 
 #### Sewing patterns made to your measurements
 
-All our patterns are *made-to-measure*. 
+All our patterns are *made-to-measure*.
 Not just graded up or down, but actually drafted to your exact specifications, just as you would on paper.
 
 #### Packed with options plus live preview
 
-FreeSewing patterns come with options that allow you to customize different aspects of the pattern. 
+FreeSewing patterns come with options that allow you to customize different aspects of the pattern.
 Our live preview means no surprises: what you see is what you get.
 
 #### Patterns you can share and adapt

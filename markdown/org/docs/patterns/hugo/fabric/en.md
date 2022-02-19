@@ -7,7 +7,7 @@ Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come 
 <Note>
 
 You don't have to use sweatshirt fabric. Other options are available, from fashion-forward neoprene (aka scuba) to a more eyebrow-rising choice like crushed velour (aka velvet).
- 
+
 Or if you have given up on class, you could go for fleece.
 
 </Note>

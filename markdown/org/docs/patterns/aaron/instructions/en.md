@@ -1,20 +1,20 @@
-
 ## Step 1: Close seams
 
 ![Close the side and shoulder seams](step01.png)
 
-Put front and back on top of each other with _good sides together_. 
+Put front and back on top of each other with *good sides together*.
 Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Step 2: Finish hem
 
 ![Finish the hem](step02.png)
 
-Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
+Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
 
 <Note>
 
 ##### Fold only once, to avoid bulk
+
 Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 </Note>
@@ -39,7 +39,7 @@ Either way, the less sharp bends you have, the easier it will be. So start with 
 
 </Note>
 
-We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) 
+We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding)
 (note: not a knit band. There's a difference, and it's explained [here](/docs/sewing/knit-binding)).
 
 <Note>
@@ -49,13 +49,13 @@ This is the only part of making this A-shirt that requires a bit of practice. Do
 </Note>
 
 ### Pick your spot
-    
+
 ![Applying knit binding](step03a.png)
 
 The first thing we need to do is decide where we are going to start/stop our binding. Here's what I suggest:
 
-  - For the armholes: at the side seam. This will hide our seam under the arm
-  - For the neck opening: the center back of the neck. You might want to mark this with a pin
+-   For the armholes: at the side seam. This will hide our seam under the arm
+-   For the neck opening: the center back of the neck. You might want to mark this with a pin
 
 ### Place (the start of) your binding
 
@@ -75,8 +75,8 @@ We are going to sew 1.5cm from the edge. So be careful because this is not the s
 
 <Tip>
 
-The easy way to keep this 1.5cm distance is by using a seam gauge. 
-Or do what I do, place a piece of marking tape on your sewing machine and mark a line on it 1.5cm from your needle. 
+The easy way to keep this 1.5cm distance is by using a seam gauge.
+Or do what I do, place a piece of marking tape on your sewing machine and mark a line on it 1.5cm from your needle.
 Then all you need to do is keep the edge of your fabric aligned with that line.
 
 </Tip>
@@ -91,7 +91,7 @@ Sew your binding in place while gently stretching the binding, but not the fabri
 
 You might need to practice a bit to get the hang of it.
 
-> Make sure to stretch your binding more when you're taking a sharper bend. 
+> Make sure to stretch your binding more when you're taking a sharper bend.
 > Read my notes on [knit binding](/docs/sewing/knit-binding) for more info.
 
 ### Mark binding ends
@@ -99,7 +99,7 @@ You might need to practice a bit to get the hang of it.
 ![Joining the binding ends](step03e.png)
 
 With about 6cm left to go before we complete our circle, it's time to sew the ends of the binding together.
-    
+
 ![Mark binding ends](step03f.png)
 
 Take one of the edges, and stretch it along the 3cm seperating it from the start point as you would while sewing.
@@ -123,9 +123,8 @@ Now that your binding ends are joined together, it's time to finish the last 6cm
 ## Step 4: Fold knit binding to the back and sew down
 
 ### Fold your binding over the fabric edge to the back
-    
-![Fold knit binding to the back](step04a.png)
 
+![Fold knit binding to the back](step04a.png)
 
 Fold your binding fabric around the fabric of your A-shirt to the back. This is how we'll sew it down.
 
@@ -148,10 +147,11 @@ You'll have to, once again, stretch your binding a bit while doing this. But thi
 <Note>
 
 ##### Beware of the uneven feed
-As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward. 
 
-In a perfect world, all layers will follow smoothly. 
-But more often than not, the top layer (front of your binding) tends to lag behind a bit. 
+As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
+
+In a perfect world, all layers will follow smoothly.
+But more often than not, the top layer (front of your binding) tends to lag behind a bit.
 This causes your binding to not neatly fold around the edge of the fabric, but make ugly wrinkles.
 
 So watch out for this, and if you see it happening, stretch the under-layer a bit extra to compensate.

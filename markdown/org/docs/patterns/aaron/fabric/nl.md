@@ -1,4 +1,3 @@
-
 Dit mouwloze hemdje is in essentie ondergoed. Zodoende wil je hiervoor iets dat comfortabel is, aangenaam tegen je huid zit en ademt.
 
 Katoen met een hint van elasthaan, misschien viscose, of een fijn breisel. Ik stel voor dat je naar de stoffenwinkel gaat en een beetje rondvoelt.

@@ -22,6 +22,7 @@ Size guide for Hortensia:
 If in doubt, or if the size of your zipper is unavailable use the size that is slightly wider. This means you will have a wider zipper panel than needed but it is better than one that is not wide enough.
 
 </Note>
- 
+
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_zippersize_sample.svg "Effect of this option on the pattern")

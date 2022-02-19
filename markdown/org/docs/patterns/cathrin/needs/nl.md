@@ -6,10 +6,10 @@ Je kunt een goede handleiding vinden voor andere gereedschappen bij [Foundations
 
 Lijst met voorbeeldbenodigdheden:
 
-* About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
-* About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
-* Boning
-* Grommets (size 2)
-* Ongeveer 2 meter biaslint
-* Ongeveer 3 meter van het uitlopen
-* Tools: Grommet setter, awl
+-   About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+-   About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+-   Boning
+-   Grommets (size 2)
+-   Ongeveer 2 meter biaslint
+-   Ongeveer 3 meter van het uitlopen
+-   Tools: Grommet setter, awl

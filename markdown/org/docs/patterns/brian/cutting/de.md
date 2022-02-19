@@ -1,8 +1,8 @@
 **Oberstoff**
 
- - Schneide **1 Vorderteil** im Stoffbruch.
- - Cut **1 Back** part on the fold.
- - Schneide **2 Ärmel**.
+-   Schneide **1 Vorderteil** im Stoffbruch.
+-   Cut **1 Back** part on the fold.
+-   Schneide **2 Ärmel**.
 
 Diese Anleitung ist nur für den Brian-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 

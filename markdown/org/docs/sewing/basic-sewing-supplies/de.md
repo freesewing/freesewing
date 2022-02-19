@@ -6,13 +6,13 @@ title: Grundlegendes Nähzubehör
 
 Zur Klarstellung, wenn ich auf dieser Seite von grundlegendem Nähzubehör spreche, meine ich folgendes:
 
- - Maßband
- - Nähmaschine
-   - Nähmaschinennadeln
-   - Unterfadenspulen
- - Nähfaden
- - Stoffschere
- - Nahtauftrenner
- - Stecknadeln und Handnähnadeln
- - Stoffmarker/-markierstifte
- - Ein Bügeleisen
+-   Maßband
+-   Nähmaschine
+    -   Nähmaschinennadeln
+    -   Unterfadenspulen
+-   Nähfaden
+-   Stoffschere
+-   Nahtauftrenner
+-   Stecknadeln und Handnähnadeln
+-   Stoffmarker/-markierstifte
+-   Ein Bügeleisen

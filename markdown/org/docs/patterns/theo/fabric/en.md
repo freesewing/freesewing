@@ -5,5 +5,3 @@ For **wool**, look in the suiting section of your fabric store. If this is your 
 For **cotton**, go for a heavier weight. Cotton might also be a bit easier on the beginner than wool. If unsure what to use, ask for chino in the fabric store and simply pick a colour you like.
 
 Nothing beats **linen** on a hot summer day. It's fun to work with too, but it does wrinkle like a mofo, and even the most neatly made trousers look somewhat messy when made in linen. What I'm saying is, maybe not for your first pair.
-
-

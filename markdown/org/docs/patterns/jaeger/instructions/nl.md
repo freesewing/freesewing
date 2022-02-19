@@ -24,7 +24,6 @@ Stik de voorste neep dicht, let op dat de neep bovenaan op de juiste hoogte stop
 
 Zodra de voorste nepen dichtgestikt zijn, knip je ze open aan de achterkant. Je zal niet helemaal tot in de punt kunnen knippen, maar dat is ok. Strijk de nepen open waar ze opengeknipt zijn, en strijk de rest opzij. Strijk alleen op de achterkant. Strijken op de voorkant kan sporen achterlaten op je stof.
 
-
 ### Maak de borstzak
 
 ![Kleef tussenvoering op de achterkant van de borstzak](basteChestPocket.svg)
@@ -34,7 +33,7 @@ Zodra de voorste nepen dichtgestikt zijn, knip je ze open aan de achterkant. Je 
 Kleef een rechthoekig stukje tussenvoering aan de verkeerde kant van de plek waar de borstzak komt, iets groter dan de aangegeven zakopening.
 
 > ##### We plakken niet het hele voorpand vol
-> 
+>
 > Sportieve jasjes worden meestal gemaakt van iets zwaardere stoffen. Dat, en het feit dat ik liever canvas gebruik in plaats van fusibele tussenvoering, betekent dat ik de voorkant niet met nutteloos draait.
 
 #### Drieg de omtrek van de bies, markeer de eindpunten van de bovenrand
@@ -54,6 +53,7 @@ Vertrek vanaf de bovenste lijn van je gedriegde paspelzak, en markeer vanaf de h
 Vouw de paspel dubbel met de goede kanten op elkaar, en sluit de zijkanten (naai de zijnaden).
 
 #### Knip naadwaarde bij, keer en strijk
+
 Knip de naadwaarde aan de zijkant bij, vooran aan de hoekjes, om bulk te voorkomen.
 
 Keer naar de goede kant en strijk plat.
@@ -106,7 +106,6 @@ Als laatste sluit je de binnenzak door de zijkanten dicht te stikken. Doe die do
 
 Drieg de bortzak dicht terwijl je de rest van het jasje maakt.
 
-
 ### Bereid de voorpanden voor
 
 ![Bereid het haardoek voor voor de voorpanden](prepareCanvas.svg)
@@ -125,7 +124,7 @@ Knip het borststuk uit. Leg het langs de rollijn, en drieg op z'n plek op het vo
 
 Drieg nu de voorpanden in haardoek en het borststuk aan je voorpand. Denk eraan dat het haardoek geen naadwaarde heeft.
 
-> Drieg het net voorbij de naadlijn zodat je het uit de weg kan plooien wanneer je deze naden stikt.   
+> Drieg het net voorbij de naadlijn zodat je het uit de weg kan plooien wanneer je deze naden stikt.\
 > Je wil niet dat je haardoek mee in de naad zit.
 
 #### Pikeer je revers
@@ -142,16 +141,16 @@ Nu gaan we met dunne keperband met de hand langs de rand van de revers naaien, a
 
 Onthoud:
 
- - Het lint langs de breuklijn moet binnen de breuklijn geplaatst worden.
- - Het lint langs de breuklijn moet ongeveer een halve centimeter korter zijn dan de afstand die het moet overbruggen. De lichte spanning op het lint zorgt dat de revers mooi rollen en zich naar je lichaam vormen.
- - Het lint langs de rand van de revers valt binnen de stiklijn
+-   Het lint langs de breuklijn moet binnen de breuklijn geplaatst worden.
+-   Het lint langs de breuklijn moet ongeveer een halve centimeter korter zijn dan de afstand die het moet overbruggen. De lichte spanning op het lint zorgt dat de revers mooi rollen en zich naar je lichaam vormen.
+-   Het lint langs de rand van de revers valt binnen de stiklijn
 
 > ##### Naai niet door je stof
-> 
+>
 > Probeer je naald niet helemaal door de stof te duwen als je het lint vastnaait, zo vermijd je dat je steken zichtbaar zijn aan de buitenkant.
-> 
+>
 > Het is echter niet de bedoeling dat je het lint enkel aan het haardoek vastnaait. In plaats daarvan moet je proberen om elke steek een paar draadjes van je stof te halen. zodat de band vastzit en de steken niet zichtbaar zijn aan de voorkant.
-> 
+>
 > Dit is minder problematisch boven het breekpunt van de revers, waar de stof aan de achterkant komt te liggen.
 
 ### Sluit de naden
@@ -160,18 +159,18 @@ Onthoud:
 
 ![Sluit de zijnaden](closeSides.svg)
 
-Leg je voorpanden neer met de goede kant omhoog, en je zijpanden erop met de goede kant omlaag.  
+Leg je voorpanden neer met de goede kant omhoog, en je zijpanden erop met de goede kant omlaag.\
 Leg de voor- en zijnaden gelijk, speld ze eventueel samen en stik.
 
-Leg dit neer met de goede kant omhoog, en leg je rugpand hierop met de goede kant naar beneden.  
+Leg dit neer met de goede kant omhoog, en leg je rugpand hierop met de goede kant naar beneden.\
 Leg de rug- en zijnaden gelijk, speld ze eventueel samen en stik.
 
 > Let op dat het haardoek niet mee vastgestikt wordt.
 
 > ##### Opmerking voor het naaien van splitten
-> 
+>
 > Als je een dubbele split hebt, zitten die in deze naad.
-> 
+>
 > Stik het deel van de zij- achternaad tot aan de split en het stukje naar opzij dat de split vormt. Stik niet verder naar beneden.
 
 #### Sluit de achternaad

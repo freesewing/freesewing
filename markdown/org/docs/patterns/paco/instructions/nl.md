@@ -10,8 +10,7 @@ de rauwe randen te omhelzen.
 Voor deze instructies, gaan we ervan uit dat je een overlock gebruikt voor naadafstand, maar we
 ook alternatieven aanbieden. Andere opties voor het afwerken van de naden zijn onder meer het knippen met een knijpende
 schaar, stik een zigzag langs de rand van de naad om te voorkomen dat het uitrafelt, of koppel met
-bias tape.
- </Tip>
+bias tape. </Tip>
 
 ## Stap 1: Maak de achterzakken
 
@@ -37,6 +36,7 @@ je nog nooit paspelzakken hebt gemaakt, ben je in orde.
 Does it need a note to that effect? --->
 
 ## Stap 2: Maak de voorzakken
+
 Jouw zakken worden geknipt van een voering materiaal, dat kan sparen op gewicht en bulk, maar betekent ook dat je ze een beetje in de zijnaad wilt verbergen, zodat de voering niet zichtbaar is. Daarvoor dient de flap bovenaan de buitennaad van de broekspijp.
 
 Als je een overlocker gebruikt, werk dan nu de gebogen randen van je zakstukken af. Verstop vervolgens langs de lange randen van de zakvlakken.
@@ -149,6 +149,7 @@ aan de achterkant te houden terwijl ze via de machine stromen.
 ![Kruisnaad](step09.svg)
 
 ## Stap 10: Plaats veterzakken voor de tekenreeks (optioneel)
+
 Markeer het midden van de lengte van je tailleband. Plooi één van je tailleband stukken dubbel, en markeer het midden van de breedte (neem de naadwaarde niet in de rekening).
 
 Installeer twee vetergaten links en rechts van deze markering. Omdat je Paco pants hebben elastiek in de tailleband, ook is dit een mooi detail, maar niet nodig.
@@ -165,6 +166,7 @@ toevoegen achter deze wenkels. Een beetje tussenvoering of een overblijfsel van 
 ![Tailleband met vetergaatjes](step10.svg)
 
 ## Stap 11: Bereid de taille elastiek voor
+
 Er is geen magische formule voor de lengte van je elastiek. Dus wikkel het rond je taille en trek het aan tot je vindt dat het goed past. Paco is geknipt om aan de hoge heupen te zitten, dus zorg ervoor dat je elastiek lang genoeg is om comfortabel aan de hoge heupen te zitten.
 
 Markeer deze lengte, knip het elastiek en naai de uiteindes aan elkaar.
@@ -172,6 +174,7 @@ Markeer deze lengte, knip het elastiek en naai de uiteindes aan elkaar.
 ![Elastiek samengevoegd met een reeks zigzagstekkers](step11.svg)
 
 ## Stap 12: Naai de tailleband
+
 Leg de twee goede kanten van de tailleband op elkaar en leg de korte randen samen. Stik de korte randen samen, en strijk dan open. Deze zitten in de tailleband, Dus je hoeft de randen van deze naden niet af te werken tenzij je stof bijzonder waarschijnlijk frams wordt.
 
 ![Deelgenomen tailleband stukjes](step12.svg)
@@ -183,6 +186,7 @@ Vouw de tailleband dubbel in de lengte met de goede kanten naar buiten. Pers. De
 Je kan de tailleband op twee manieren vastmaken. Eén is een beetje eenvoudiger, maar laat een blootgestelde naad aan de binnenkant achter. De andere is wat lastiger, maar verbergt wel alle rafelranden aan de binnenkant van de tailleband.
 
 ### De eenvoudige methode
+
 Houd je tailleband dubbelgevouwen en schuif de elastiek erin. Leg de plek waar het elastiek zit aan de achterkant van de tailleband (tegenover de ooglid).
 
 Vind het midden van de voorkant van je tailleband (makkelijk als er oogdieren zijn, zo niet dubbel plooien), en leg dat gelijk met de middennaad van je broek. Zorg ervoor dat je tailleband buiten van je broek ligt, met de goede kanten op elkaar. Speld vast.
@@ -217,6 +221,7 @@ Vind het midden van de voorkant van je tailleband (makkelijk als er oogdieren zi
 <Tip>
 
 ##### Breng je veters
+
 Om er zeker van te zijn dat je oogdieren aan de buitenkant zullen verschijnen, zorg ervoor dat ze voor dit moment dichter bij de bovenkant van je
 tailleband staan, boven de vouw.
 
@@ -245,6 +250,7 @@ Markeer deze lengte, knip het elastiek en naai de uiteindes aan elkaar. Herhaal 
 ![Elastiek meegerekend met zigzagsteek](step14.svg)
 
 ## Stap 15: Bevestig de manchetten
+
 Plooi elke manchet met de goede kanten op elkaar, leg de korte randen samen. Stik voor elke manchet de korte randen samen, en strijk dan open. Deze komen in de manchet, Dus je hoeft de randen van van deze naden niet af te werken, tenzij je stof bijzonder waarschijnlijk frams wordt.
 
 ![Gekoppelde manchetten](step15.svg)
@@ -257,8 +263,8 @@ Je zal je manchetten op dezelfde manier bevestigen als je de tailleband bevestig
 
 <Note>
 
- Als je naaimachine een afneembaar bed heeft (meestal verwijderd om de "gratis arm" te tonen voor het naaien van
- mouw manchets), Dit maakt het naaien van de manchetten eenvoudiger.
+Als je naaimachine een afneembaar bed heeft (meestal verwijderd om de "gratis arm" te tonen voor het naaien van
+mouw manchets), Dit maakt het naaien van de manchetten eenvoudiger.
 
  </Note>
 
@@ -322,6 +328,7 @@ onder de ogen verlaat een kanaal breed genoeg voor je tekenreeks.
 </Note>
 
 ## Stap 18: Thread een tekenreeks rond de taille (optioneel)
+
 Als je vezels in je tailleband stopt, draag dan een trekkoord door één wenkelet, rond de tailleband en uit het andere oogsel.
 
 <Note>
@@ -335,6 +342,7 @@ is makkelijker te maneuveren door de stof, en het trekt de tekenreeks ermee op.
 ![Paco draad met tekenreeks](step18.svg)
 
 ## Stap 19: Geniet van je Pacotaarns!
+
 Het is je gelukt! Hoe gaat het!
 
 <!--- Maybe we want to put a fun gif here? --->

@@ -34,45 +34,45 @@ Los dardos se utilizan para compensar la diferencia entre la cintura y las medic
 
 <Warning>
 
-We're not going to go into a full explanation on how to create all the individual details 
-that make up a pencil skirt. These instructions assume that you know how to sew a dart, insert an invisible 
-zipper, make a vent, etc. If not, there are numerous excellent articles available on the 
-web, both in writen form, and on video. If you do get stuck, you can always reach out to 
+We're not going to go into a full explanation on how to create all the individual details
+that make up a pencil skirt. These instructions assume that you know how to sew a dart, insert an invisible
+zipper, make a vent, etc. If not, there are numerous excellent articles available on the
+web, both in writen form, and on video. If you do get stuck, you can always reach out to
 [other FreeSewers](https://discord.freesewing.org/) in our discord.
 
 </Warning>
 
 ### Step 1: Darts
 
-- Sew all the darts.
-- Press the darts towards the back.
-  - For the back piece(s), that means you press the darts towards eachother.
-  - For the front piece, that means you press the darts towards the side seams.
+-   Sew all the darts.
+-   Press the darts towards the back.
+    -   For the back piece(s), that means you press the darts towards eachother.
+    -   For the front piece, that means you press the darts towards the side seams.
 
 ### Step 2: The zipper
 
-- With *good sides together*, sew the seam that has the zipper leaving the top open for the zipper.
-- Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
+-   With *good sides together*, sew the seam that has the zipper leaving the top open for the zipper.
+-   Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
 
 <Note>
-  
+
 If using a different closure, construct it during this step.
 
 </Note>
 
 ### Step 3: Sew the side seams
 
-- With *good sides together*, sew up both the side seams.
-- With *good sides together*, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
+-   With *good sides together*, sew up both the side seams.
+-   With *good sides together*, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
 
 ### Step 4: The lining (Optional)
 
 You can skip this step if not making a lining.
 
-- Follow Step 1 - 4 to construct the lining with the following changes:
-  - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
-  - Do not include the zipper but leave the opening in the zipper seam.
-- Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
+-   Follow Step 1 - 4 to construct the lining with the following changes:
+    -   Adjust the darts to compensate for the extra 'ease' in the lining pieces.
+    -   Do not include the zipper but leave the opening in the zipper seam.
+-   Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
 
 <Note>
 
@@ -88,19 +88,19 @@ If you prefer to insert the zipper with the main and lining fabric as one, you w
 
 ### Step 5: The waistband
 
-- Face lengthwise half of the waistband.
-- Press a fold the waistband in half lengthwise.
-- With *good sides together* sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
-- Press the waistband up and away from the skirt.
-- Press the remaining waistband seam allowances to the inside of the waistband.
-- Fold and press the waistband to the inside along fold line.
-- *Stitch in the ditch* to secure the waistband.
-- *Slipstitch* or *Whipstitch* the gap in the waistband that goes over the zipper seam
-- Construct your preferred choice of closure where the waistband overlaps.
+-   Face lengthwise half of the waistband.
+-   Press a fold the waistband in half lengthwise.
+-   With *good sides together* sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
+-   Press the waistband up and away from the skirt.
+-   Press the remaining waistband seam allowances to the inside of the waistband.
+-   Fold and press the waistband to the inside along fold line.
+-   *Stitch in the ditch* to secure the waistband.
+-   *Slipstitch* or *Whipstitch* the gap in the waistband that goes over the zipper seam
+-   Construct your preferred choice of closure where the waistband overlaps.
 
 <Note>
 
-Alternatively you can *Edgestitch* the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.  
+Alternatively you can *Edgestitch* the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.\
 The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
 
 </Note>
@@ -109,11 +109,11 @@ The closure can be a button and buttonhole, snaps or simple dress hooks. It's re
 
 This step is only needed if you have not lined your skirt as the hem and vents would have been taken care of in that step.
 
-- If desired, face the hem and vents.
-- Construct the vents with your preferred method
-- Press under the hem allowances of the skirt.
-- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
-- Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. This comes down to how you want the finished product to look.
+-   If desired, face the hem and vents.
+-   Construct the vents with your preferred method
+-   Press under the hem allowances of the skirt.
+-   If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
+-   Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. This comes down to how you want the finished product to look.
 
 <Tip>
 
@@ -123,8 +123,4 @@ If the seam allowances are big enough you can sew the hems as narrow hems. This 
 
 ### Step 7: Enjoy!
 
-- Now all that's left to do is to enjoy you new skirt!
-
-
-
-
+-   Now all that's left to do is to enjoy you new skirt!

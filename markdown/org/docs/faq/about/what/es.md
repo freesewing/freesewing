@@ -10,5 +10,3 @@ We provide a [core library](https://www.npmjs.com/package/@freesewing/core) for 
 We are not interested in fashion, trends, or publishing the hot new pattern of the season. Instead, we want to empower makers by distilling the knowledge of the sewing community into parametric designs + documentation, and make that information freely available.
 
 FreeSewing is built by [contributors](/community/who/contributors/) who are all volunteers, and financially supported by [our Patrons](/community/who/patrons/).
-
-

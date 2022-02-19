@@ -24,7 +24,6 @@ Coudre la dart avant à côté, en prenant soin d'avoir l'arrêt de dart à l'ex
 
 Une fois que les fléchettes avant sont fermées, coupez la fléchette au dos. Vous ne serez pas en mesure de le couper tout au long de la route, mais c'est bien. Appuyez sur ouvrir les fléchettes où elles sont coupées ouvertes, et appuyez sur le reste sur le côté. Faites attention à n'appuyer que sur le dos. Une pression à partir de l'avant marquera probablement votre tissu.
 
-
 ### Construire la poche de poitrine
 
 ![Appliquer une interface fusible à l'arrière de la poche thoracique](basteChestPocket.svg)
@@ -34,7 +33,7 @@ Une fois que les fléchettes avant sont fermées, coupez la fléchette au dos. V
 Appliquez une pièce rectangulaire qui peut être fusionnée autour de la zone de poche de poitrine pour qu'elle s'étende de quelques cm dans toutes les directions.
 
 > ##### Nous n'utilisons pas de fusible sur toute la face avant
-> 
+>
 > Les vêtements de sport sont généralement fabriqués à partir de tissus plus lourds. That, and the fact that I prefer to use canvas rather than fusible interfacing, means that I don't interface the front with fusible.
 
 #### Coller le contour du torse, marquer les extrémités de la ligne supérieure
@@ -54,6 +53,7 @@ Sur la ligne supérieure de votre poche de soudure bâclée, marquez 0,5cm à l'
 Plier le double de la couture avec les bons côtés ensemble, et fermer les côtés (coudre les coutures latérales).
 
 #### Ajuster la marge de couture, tourner et appuyer sur
+
 Couper les droits de couture sur les côtés et limiter en particulier la marge de couture vers le coin pour éviter les encombrements.
 
 Retournez à l'intérieur de sorte que le bon côté est sorti et presse.
@@ -106,7 +106,6 @@ Enfin, fermez le sac de poche en couturant les côtés. Faites cela en plaçant 
 
 Collez la poche de poitrine fermée pendant que nous fabriquons la veste.
 
-
 ### Préparer les devants
 
 ![Préparer la toile pour les façades](prepareCanvas.svg)
@@ -141,16 +140,16 @@ Nous allons maintenant coudre à la main du ruban de couture le long des bords d
 
 Gardez à l'esprit que :
 
- - Le ruban le long de la ligne de rouleau doit être placé à l'intérieur de la ligne de roulement.
- - Le ruban le long de la ligne de rouleau devrait être environ un demi-centimètre plus court que la distance qu'il couvre. La légère tension que cela crée aide le roulement de la patte de façon agréable et le contour de votre corps.
- - Le ruban le long du bord de la bordure doit être placé à l'intérieur de la ligne de couture
+-   Le ruban le long de la ligne de rouleau doit être placé à l'intérieur de la ligne de roulement.
+-   Le ruban le long de la ligne de rouleau devrait être environ un demi-centimètre plus court que la distance qu'il couvre. La légère tension que cela crée aide le roulement de la patte de façon agréable et le contour de votre corps.
+-   Le ruban le long du bord de la bordure doit être placé à l'intérieur de la ligne de couture
 
 > ##### Ne pas coudre à travers votre tissu
-> 
+>
 > While sewing the tape to your front, avoid pushing your needle all the way through your fabric so that your stitches will show on the front.
-> 
+>
 > En même temps, vous ne devriez pas sécuriser le ruban uniquement sur votre toile non plus. Instead, you should try to catch a few threads of your fabric on every stitch, so that the tape is secured in place, yet the stitches don't show at the front.
-> 
+>
 > Il s'agit moins d'un problème au-dessus du point de rupture de votre papeau, où le tissu sera sur le dos du rebord.
 
 ### Fermer le corps
@@ -166,9 +165,9 @@ Place this down with the good side up, and place your back on top with the good 
 > Assurez-vous que la toile ne soit pas prise dans la couture.
 
 > ##### Note pour les fentes de couture
-> 
+>
 > Si vous avez un double événement, cette couture contiendra la fenêtre.
-> 
+>
 > Coudre la partie vers le bas de la couture latérale et la partie latérale qui forme la coupe. Ne couchez pas vers le bas après cela.
 
 #### Fermer la couture arrière

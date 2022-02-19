@@ -10,8 +10,8 @@ Patrons are regular users like you who agreed to make a small monthly contributi
 <Note>
 
 ##### Join the Freesewing Patrons
-You can be a patron for as little as 2 euro per month. So why not 
+
+You can be a patron for as little as 2 euro per month. So why not
 [become a patron](/patrons/join) too?
 
 </Note>
-

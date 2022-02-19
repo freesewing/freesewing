@@ -16,5 +16,4 @@ Overwijdte kan ook in de andere richting werken. Wanneer de stof rekt kunnen we 
 
 Negatieve overwijdte wordt gebruikt voor elastische stoffen waarbij het kledingstuk strak moet zitten. Bijvoorbeeld: badkleding, leggings, ondergoed of sportkledij.
 
-
-> Foto's door [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) en [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893) 
+> Foto's door [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) en [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)

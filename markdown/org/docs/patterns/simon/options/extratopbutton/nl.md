@@ -8,7 +8,7 @@ Wil je een extra knoop tussen de bovenste knoop vooraan en de knoop aan de kraag
 
 Deze extra knoop zorgt dat je je kraag kan losmaken terwijl je hemd toch relatief gesloten blijft.
 
-Het is een extra knoop die je kan gebruiken als je er na het werk op café nog steeds goed wil uitzien, met je bovenste knoop en je das los. 
+Het is een extra knoop die je kan gebruiken als je er na het werk op café nog steeds goed wil uitzien, met je bovenste knoop en je das los.
 De extra knoop is ook geweldig als je je hemd onder een ander kledingstuk draagt met de bovenste knoop los. Onder een trui bijvoorbeeld.
 
 Laat deze knoop weg als je een eerder casual uitzicht wil.
@@ -18,4 +18,5 @@ Deze extra knoop wordt toegevoegd aan het aantal knopen vooraan. Hij vervangt ge
 </Note>
 
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_extratopbutton_sample.svg "Effect van deze optie op het patroon")

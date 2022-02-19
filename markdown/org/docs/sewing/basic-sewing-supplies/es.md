@@ -6,13 +6,13 @@ title: Suministros básicos de costura
 
 En aras de la claridad, cuando me refiero a los suministros básicos de costura en este sitio web, me refiero a lo siguiente:
 
- - Medida de Tape
- - Máquina de costura
-   - Agujas de máquina de costura
-   - Bobbins
- - Tema de costura
- - Tijeras de tela
- - Costura de costura
- - Alfileres y agujas de coser a mano
- - Marcador/Lápiz de tela
- - Un hierro
+-   Medida de Tape
+-   Máquina de costura
+    -   Agujas de máquina de costura
+    -   Bobbins
+-   Tema de costura
+-   Tijeras de tela
+-   Costura de costura
+-   Alfileres y agujas de coser a mano
+-   Marcador/Lápiz de tela
+-   Un hierro

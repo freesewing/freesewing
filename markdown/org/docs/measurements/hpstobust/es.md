@@ -21,16 +21,14 @@ El punto de esta medida es localizar la parte más completa de su busto vertical
 
 ##### Piensa en qué mano estás usando
 
-Si te mides, podrías tratar de mantener tu cinta de medición hasta el hombro con la mano en 
-el mismo lado de tu cuerpo que el hombro que estás cometiendo. Así que, por ejemplo, podrías mantener la parte superior de 
-cinta hasta tu hombro derecho con la mano derecha. mientras que la mano izquierda mantiene el final. 
-Pero eso significa que distorsionas la longitud que intentas medir al levantar el brazo del mismo lado. 
+Si te mides, podrías tratar de mantener tu cinta de medición hasta el hombro con la mano en
+el mismo lado de tu cuerpo que el hombro que estás cometiendo. Así que, por ejemplo, podrías mantener la parte superior de
+cinta hasta tu hombro derecho con la mano derecha. mientras que la mano izquierda mantiene el final.
+Pero eso significa que distorsionas la longitud que intentas medir al levantar el brazo del mismo lado.
 Tal vez no creas que haya una diferencia, pero todo está conectado en el mundo de la siología, y
-hacer esto podría llevar a un error de ~2. cm (~1 pulgada) en su medición.  
+hacer esto podría llevar a un error de ~2. cm (~1 pulgada) en su medición.\
 Simplemente cambie las manos y obtenga una medición más precisa.
 
 Para obtener mejores resultados, consiga que una segunda persona tome sus mediciones (si es posible).
-  
-</Tip>
 
-  
+</Tip>

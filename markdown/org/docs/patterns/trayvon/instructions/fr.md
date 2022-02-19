@@ -1,9 +1,8 @@
-
 <Tip>
 
 ###### Juste le pourboire
 
-Le pourboire est la partie la plus sensible de la cravate. 
+Le pourboire est la partie la plus sensible de la cravate.
 Si vous n'avez jamais fait de cravate avant, Je vous conseille de faire quelques pointes de cravate en tissu de ferraille avant de prendre des ciseaux et des aiguilles sur votre beau tissu de cravate.
 
 Pour pratiquer la fabrication d'outils, exécutez les étapes 1 à 4 fois jusqu'à ce que vous en obtiez.
@@ -117,9 +116,9 @@ La couture où le tissu de cravate correspond à la doublure de la cravate ne se
 Rejoignez la pointe Interfacing (pièce 1) et la queue Interfacing (pièce 2) sur le côté non pointu, assortie à l'encoche.
 
 > **Or don't** To be honest, I never join the interfacing. Je laisse les deux moitiés sans attache.
-> 
+>
 > De cette façon, vous ne pourrez jamais avoir la longueur de votre cravate, et vous pourrez simplement faire glisser les parties entre elles. En outre, il crée moins de masse au milieu, et c'est moins de travail.
-> 
+>
 > Alors vous pouvez simplement sauter cette étape, c'est ce que je fais.
 
 ### Étape 10 : Rejoignez le tissu de cravate
@@ -171,9 +170,9 @@ Une fois que vous avez terminé un côté, repliez l'autre côté, et reprenez l
 Enfin, repliez la couche supérieure au milieu de votre cravate, puis appuyez sur la place. Cette fois-ci, vous faites un pli pointu au milieu de la cravate.
 
 > Pour clarifier la différence entre les deux derniers plis, J'ai inclus une ligne sombre dans l'image qui marque le bord du tissu, ou plié.
-> 
+>
 > Comme vous pouvez le voir, la première fois que nous plions simplement le tissu en arrière, et il étend le centre de la cravate.
-> 
+>
 > La deuxième fois, nous la plions à nouveau au milieu, l'endroit où nous la coudrons en place.
 
 ### Étape 14: Préparer la boucle
@@ -193,7 +192,7 @@ Enfin, appuyez sur votre boucle ouverte pour que la couture se trouve au milieu,
 Utilisez un point de glissement pour coudre votre cravate tout au long de la longueur du dos.
 
 > Votre point de dérapage devrait seulement accrocher le tissu de cravate sur le dos. Refuser de le faire passer à travers l'interface des cravates.
-> 
+>
 > Faites attention car si vous courez le point trop profond, il pourrait apparaître sur le devant, et ruiner votre cravate.
 
 Assurez-vous de glisser dans votre boucle, quelque part autour du 1/5e de la longueur de la cravate, à partir de la pointe de la cravate.

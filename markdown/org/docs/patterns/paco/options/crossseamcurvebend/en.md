@@ -1,6 +1,4 @@
-
 Controls the curvature of the cross seam curve.
-
 
 <Note>
 
@@ -13,6 +11,6 @@ People with a round bum might want to lower this to create a little more (horizo
 
 </Note>
 
-
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_crossseamcurvebend_sample.svg "Effect of this option on the pattern")

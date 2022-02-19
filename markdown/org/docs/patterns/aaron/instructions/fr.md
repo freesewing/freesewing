@@ -1,19 +1,19 @@
-
 ## Étape 1 : Faire les coutures d'assemblage
 
 ![Fermer les coutures latérales et les coutures d'épaule](step01.png)
 
-Mettez le devant et le dos l'un sur l'autre _endroit contre endroit_. Cousez les coutures latérales et les coutures d'épaules. Si vous avez une surjeteuse, c'est un bon moment pour l'utiliser. Si ce n'est pas le cas, finissez vos coutures autrement.
+Mettez le devant et le dos l'un sur l'autre *endroit contre endroit*. Cousez les coutures latérales et les coutures d'épaules. Si vous avez une surjeteuse, c'est un bon moment pour l'utiliser. Si ce n'est pas le cas, finissez vos coutures autrement.
 
 ## Étape 2 : Faire l'ourlet
 
 ![Faire l'ourlet](step02.png)
 
-Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilisez-la. Sinon, utilisez une _aiguille double_ ou un _point zig-zag_ pour garder la couture extensible.
+Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilisez-la. Sinon, utilisez une *aiguille double* ou un *point zig-zag* pour garder la couture extensible.
 
 <Note>
 
 ##### Pliez une seule fois, pour éviter d'avoir trop d'épaisseur
+
 Le tricot ne s'effiloche pas, vous pouvez donc simplement le plier une fois et le coudre, puis couper le tissu au plus près de la couture.
 
 </Note>
@@ -52,8 +52,8 @@ C'est la seule partie de la fabrication de ce A-shirt qui nécessite un peu de p
 
 La première chose à faire est de décider où nous allons démarrer/arrêter notre biais. Voici ce que je suggère :
 
-  - Pour les emmanchures : à la couture latérale. Cela cachera notre couture sous le bras
-  - Pour l'encolure : à l'arrière, au milieu. Vous pourriez vouloir marquer ceci avec une broche
+-   Pour les emmanchures : à la couture latérale. Cela cachera notre couture sous le bras
+-   Pour l'encolure : à l'arrière, au milieu. Vous pourriez vouloir marquer ceci avec une broche
 
 ### Placer (démarrer) votre biais
 
@@ -73,8 +73,8 @@ Nous allons coudre à 1,5 cm du bord. Soyez donc prudent car ce n'est pas la mar
 
 <Tip>
 
-Le moyen facile de garder cette distance de 1,5 cm est d'utiliser une jauge de couture. 
-Ou faites ce que je fais, placez un ruban de marquage sur votre machine à coudre et marquez une ligne sur lui à 1,5 cm de votre aiguille. 
+Le moyen facile de garder cette distance de 1,5 cm est d'utiliser une jauge de couture.
+Ou faites ce que je fais, placez un ruban de marquage sur votre machine à coudre et marquez une ligne sur lui à 1,5 cm de votre aiguille.
 Ensuite, il vous suffit de garder le bord de votre tissu aligné sur cette ligne.
 
 </Tip>
@@ -123,7 +123,6 @@ Maintenant que vos extrémités de biais sont réunies, il est temps de terminer
 
 ![Plier le biais de jersey sur l'arrière](step04a.png)
 
-
 Pliez votre bande de biais par-dessus le tissu de votre A-Shirt sur l'envers. Voici comment nous allons le coudre.
 
 > Alors que le tissu est plié deux fois sur l'endroit (ce qui cache donc le bord du biais) il n'est pas nécessaire de faire cela à l'arrière. Nous allons simplement couper le bord plus tard, étant donné que le jersey ne s'effiloche pas. Si nous devions replier le tissu à l'arrière également, cela ne ferait qu'ajouter de l'épaisseur.
@@ -145,10 +144,11 @@ Une fois de plus, vous devrez étirer un peu votre biais en faisant cela. Mais c
 <Note>
 
 ##### Méfiez-vous du flux inégal
-Lorsque vous alimentez votre liaison à travers votre machine à coudre, les chiens d'alimentation tirent la couche inférieure (arrière de votre liaison) vers l'avant. 
 
-Dans un monde parfait, toutes les épaisseurs suivent sans problème. 
-Mais le plus souvent, la couche supérieure (face avant de votre biais) a tendance à se traîner un peu. 
+Lorsque vous alimentez votre liaison à travers votre machine à coudre, les chiens d'alimentation tirent la couche inférieure (arrière de votre liaison) vers l'avant.
+
+Dans un monde parfait, toutes les épaisseurs suivent sans problème.
+Mais le plus souvent, la couche supérieure (face avant de votre biais) a tendance à se traîner un peu.
 Cela fait que votre biais ne se plie pas bien autour du bord du tissu, mais fait des plis disgracieux.
 
 Veillez donc à ce que cela se produise, et si vous le voyez, étirez un peu plus la sous-couche pour compenser.

@@ -12,4 +12,3 @@ Go to [/account/consent](/account/consent/) and object in the **model data** sec
 The right to object is broader, but this is how it applies to freesewing.
 
 </Note>
-

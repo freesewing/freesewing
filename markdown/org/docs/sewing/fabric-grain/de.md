@@ -13,7 +13,7 @@ Der Fadenlauf wird auf einem Schnittmuster angegeben. Beim Ausschneiden des Schn
 > Für mehr Details zu Schuss- und Kettfäden: [Weben auf Wikipedia (engl. *weaving*)](http://en.wikipedia.org/wiki/Weaving)
 
 > ##### Verwirrt? Denk' an Holz
-> 
+>
 > Holz ist nicht gewebt, sondern wächst in verschiedenen Schichten basierend auf den Jahreszeiten (Wachstumsringe). Die Art und Weise, wie diese Schichten ausgerichtet sind, ist für Holzarbeiter wichtig. Sie beeinflussen, in welchem Ausmaß das Holz nach dem Schneiden verformt wird und wie es sich biegt, sowie ein paar andere Parameter.
-> 
+>
 > Genau wie Holzarbeiter/-innen dies berücksichtigen, bevor sie das Holz schneiden, solltest du den Fadenlauf berücksichtigen, bevor du deinen Stoff ausschneidest.

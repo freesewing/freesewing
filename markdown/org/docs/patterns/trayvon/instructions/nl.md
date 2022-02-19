@@ -1,7 +1,7 @@
-
 <Tip>
 
-###### De punt is het fijnste stukje van een das. 
+###### De punt is het fijnste stukje van een das.
+
 Als je nog nooit een das gemaakt hebt zou ik je aanraden een paar punten te maken in restjes stof voor je schaar en naald in je mooie stof zet.
 
 Om dit te oefenen voer je stap 1 tot 4 een paar keer uit tot je het beet hebt.
@@ -112,11 +112,11 @@ De naad waar de buitenstof van de das aan de voering vastzit zit niet aan de ran
 
 Bevestig tussenvoering punt (deel 1) aan tussenvoering staart (deel 2) aan elkaar aan de niet-puntige kant. Let op dat de merktekens overeenkomen.
 
-> **Of niet**  
+> **Of niet**\
 > Om eerlijk te zijn stik ik de tussenvoering nooit aan elkaar. Ik laat de twee helften gewoon los.
-> 
+>
 > Op deze manier kan de lengte van je das nooit fout zijn, en kan je de stukken tussenvoering gewoon over elkaar heen schuiven. Daarnaast zorgt het voor minder bulk in het midden en is het minder werk.
-> 
+>
 > Je kan deze stap dus gewoon overslaan, dat doe ik ook.
 
 ### Stap 10: Bevestig de stof van de das
@@ -168,9 +168,9 @@ Als je één kant afgewerkt hebt, plooi dan de andere kant ook om, en stoom opni
 Plooi uiteindelijk de bovenste laag langs het midden van je das, en strijk. Deze keer maak je wel een scherpe plooi langs het midden van de das.
 
 > Om het verschil tussen de laatste twee plooien duidelijk te maken heb ik een donkere lijn aan de tekening toegevoegd die de rand van de stof of vouw aangeeft.
-> 
+>
 > Zoals je kan zien plooien we eerst enkel de stof terug, en komt de rand voorbij het midden van de das.
-> 
+>
 > De tweede keer plooien we de stof terug in het midden, waar ze later vastgenaaid wordt.
 
 ### Stap 14: Bereid de lus voor
@@ -190,7 +190,7 @@ Strijk je lus dan open zodat de naad in het midden zit en de uiteindes naar éé
 Gebruik een blinde zoomsteek om met de hand helemaal langs de achterkant van je das te naaien.
 
 > De blinde zoomsteek gaat alleen door de stof aan de achterkant. Probeer de steken niet door de tussenvoering te halen.
-> 
+>
 > Wees ook voorzichtig: als de steken te diep gaan zie je ze aan de voorkant, en verpest je de das.
 
 Stop je lus tussen de lagen, ongeveer op 1/5 van de lengte van de das, beginnend aan de punt.

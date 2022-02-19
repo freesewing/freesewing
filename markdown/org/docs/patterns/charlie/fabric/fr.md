@@ -7,4 +7,3 @@ Allez chercher **laine** pour le look le plus classique. Consultez la section d'
 Pour **coton**, allez pour un poids plus lourd. Le coton pourrait aussi être un peu plus facile pour les débutants que la laine. Si vous ne savez pas quoi utiliser, demandez du porcelain dans le magasin de tissu et choisissez simplement une couleur que vous aimez.
 
 Rien ne bat **linge de maison** lors d'une chaude journée d'été. C'est amusant de travailler avec aussi, mais il fait rider comme un mofo, et même les pantalons les plus bien faits semblent quelque peu salissants quand ils sont faits dans le lin. Ce que je dis, c'est peut-être pas pour votre première paire.
-

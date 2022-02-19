@@ -13,7 +13,7 @@ Draadrichting wordt op een patroon aangeduid met een lange pijl. Wanneer je je p
 > Voor meer details over schering en inslag: [Weven op Wikipedia](https://nl.wikipedia.org/wiki/Weven)
 
 > ##### Verwarrend? Denk aan hout
-> 
+>
 > Hout is niet geweven, maar groeit in verschillende lagen, gebaseerd op de seizoenen (groeiringen). De richting van deze lagen is belangrijk voor houtbewerkers. Dit heeft een invloed op hoe hard het hout zal vervormen nadat het gesneden is en hoe het kan plooien, alsook een aantal andere parameters.
-> 
+>
 > Net zoals een houtbewerker hieraan zal denken voor hij zijn hout snijdt, moet jij aan de draadrichting denken voor je je stof uitknipt.

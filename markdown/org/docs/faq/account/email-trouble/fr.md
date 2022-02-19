@@ -12,10 +12,10 @@ Essayez d'utiliser une adresse mail différente, ou [contactez-nous](https://cha
 
 En France, plusieurs fournisseurs de messagerie partagent le même filtrage :
 
- - free.fr
- - laposte.net
- - orange.fr
- - sfr.fr
+-   free.fr
+-   laposte.net
+-   orange.fr
+-   sfr.fr
 
 Ils sont tous connus pour causer ces problèmes de réception.
 

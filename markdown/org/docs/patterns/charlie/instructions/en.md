@@ -1,9 +1,8 @@
-
 ## Step 1: Close the back dart
 
 First thing we're going to do is close the waist dart on the back panel.
 
-To do so, fold the back panel double with _good sides together_ making sure to match both sides of the dart on top of each other.
+To do so, fold the back panel double with *good sides together* making sure to match both sides of the dart on top of each other.
 
 Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
@@ -29,7 +28,7 @@ the instructions) but it's a very typical finish for chinos, and makes it easier
 
 ### Attach the back pocket facing to the pocket bag
 
-Join the back pocket facing to the pocket bag by placing them with _good sides together_ and sewing along the longest of the non-curved seams of the facing.
+Join the back pocket facing to the pocket bag by placing them with *good sides together* and sewing along the longest of the non-curved seams of the facing.
 
 When you're done, press the seam allowance to the side of the pocket bag.
 
@@ -41,7 +40,7 @@ Now align the top of the pocket bag with the waist and sew it down in the waist'
 
 ### Close the pocket back
 
-Fold the leg panel out of the way so you can close both sides of the pocket bag. 
+Fold the leg panel out of the way so you can close both sides of the pocket bag.
 
 <Note>
 
@@ -53,7 +52,7 @@ You should overlock/serge the sides of the pocketbag so they don't ravel.
 
 <Tip>
 
-If you don't have a _serger_ you can always use a zig-zag stitch instead. 
+If you don't have a *serger* you can always use a zig-zag stitch instead.
 
 </Tip>
 
@@ -75,7 +74,7 @@ The front pockets are a little unusual because they have the appearance of class
 
 We have two front pocket bags, that each have two pieces of facing to attach to them.
 
-Align them with _good sides together_ (\*) and sew the facing in place.
+Align them with *good sides together* (\*) and sew the facing in place.
 
 <Note>
 
@@ -183,7 +182,7 @@ Now at the top and bottom of the pocket opening, place a bar-tack perpendicular 
 
 ## Step 8:  Close the inseam
 
-With our front pockets finished, close the inseam of both legs. 
+With our front pockets finished, close the inseam of both legs.
 
 When you're done, press open the inseam.
 
@@ -199,13 +198,13 @@ This way, they have their good sides against each other.
 Align the cross seam, starting at the back waist, pinning both halves together as you make your way
 towards the fly. Stop at the lowest fly notch.
 
-When you're done. Do it again. Always sew the cross seam twice. 
+When you're done. Do it again. Always sew the cross seam twice.
 It's one of those best practices you ignore at your own peril.
 
 <Tip>
 
 Take extra care to carefully align the seams where both legs have their back and front panels joined together.
-Doing so will ensure your cross seam results with a perfectly aligned _cross_ where 4 pattern parts meet each other in a single point.
+Doing so will ensure your cross seam results with a perfectly aligned *cross* where 4 pattern parts meet each other in a single point.
 
 Getting it just right is one of those things you'll end up cherishing each time you wear these.
 
@@ -273,7 +272,6 @@ You might want to baste this first to make sure it is nicely parallel to the zip
 Now sew the other side of the zipper to the fly facing. Make sure to align it properly so that
 when the trousers are closed, the zip is hidden.
 
-
 ### Finish the cross seam
 
 Sew the last bit of the cross seam up to the highest fly notch.
@@ -312,10 +310,10 @@ Finally, cut your length belt loops strip into 8 equal parts to make 8 belt loop
 
 We're going to divide our belt loops along the waist:
 
- - 2 at the center back, each set aside a bit from the center so there's a small gap between them.
- - 1 above the back dart on each side
- - 1 on each side more or less where the side seam would hit the waist if it went straight up 
- - 1 on each side from center front. Not too close to each other so there's no room for belt buckles, but not too far either so it doesn't look weird
+-   2 at the center back, each set aside a bit from the center so there's a small gap between them.
+-   1 above the back dart on each side
+-   1 on each side more or less where the side seam would hit the waist if it went straight up
+-   1 on each side from center front. Not too close to each other so there's no room for belt buckles, but not too far either so it doesn't look weird
 
 Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist)
 Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
@@ -339,7 +337,7 @@ Sew a line of stitching on the inside waistband, close to the edge, through the 
 
 ### Attach the waist band to the outside
 
-Place the waistband with good sides together along the waist. 
+Place the waistband with good sides together along the waist.
 For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist,
 and not the side with double seam allowance.
 
@@ -373,7 +371,7 @@ At the start and end of the waistband, you'll need to tuck in some more seam all
 
 ### Sew the waistband close
 
-Now with the good side up, sew exactly in the seam that was sewn before (so called _stitch in the ditch_).
+Now with the good side up, sew exactly in the seam that was sewn before (so called *stitch in the ditch*).
 
 This will catch the back of the waistband which we've made to extend slightly further, and lock all the seam allowance inside.
 

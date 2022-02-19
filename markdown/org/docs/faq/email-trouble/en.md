@@ -14,10 +14,10 @@ we can help you activate your account.
 
 In France, several E-mail providers share the same filtering:
 
- - free.fr
- - laposte.net
- - organge.fr
- - sfr.fr
+-   free.fr
+-   laposte.net
+-   organge.fr
+-   sfr.fr
 
 They are all known to cause issues with deliveries.
 

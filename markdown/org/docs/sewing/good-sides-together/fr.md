@@ -20,7 +20,7 @@ Cela vous donne deux pièces en miroir les unes des autres.
 
 ##### Que se passe-t-il s'il n'y a pas de bon côté évident ?
 
-Lorsque vous coupez quelque chose sans un côté *bon* évident (comme l'interface), 
+Lorsque vous coupez quelque chose sans un côté *bon* évident (comme l'interface),
 ce qui importe, c'est que vous coupez deux pièces miroir plutôt que deux pièces identiques.
 
 </Note>

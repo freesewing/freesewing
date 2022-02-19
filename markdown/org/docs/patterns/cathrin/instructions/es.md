@@ -7,6 +7,7 @@ Estas instrucciones son sólo una vía. Con este método, recomiendo el uso de u
 Los creadores de corset principiantes deberían leer los tutoriales escritos por [Sidney Eileen](http://www.sidneyeileen.com), que demuestra varios métodos de construcción diferentes. [Foundations Revealed](https://www.foundationsrevealed.com) es un sitio de paywall para los creadores de corsets, con varios artículos excepcionales gratuitos para los no miembros.
 
 #### Consulta el tutorial original
+
 Este patrón está basado en [este tutorial de Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin también tiene [esta publicación informativa sobre la creación de corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) en su blog que tal vez te parezca útil.
 
 </Note>
@@ -25,13 +26,13 @@ Con un pequeño ancho de banda (pongo la mina en “2”), coser una línea rect
 
 Tome el siguiente trozo. Para una catedral de 11 paneles, este será el Panel 2.
 
-Coloca el Panel externo 2 en el Panel externo 1, _lados buenos juntos_.
+Coloca el Panel externo 2 en el Panel externo 1, *lados buenos juntos*.
 
-Coloca el Panel 2 del núcleo en el Panel del núcleo 1, _buenos lados juntos_.
+Coloca el Panel 2 del núcleo en el Panel del núcleo 1, *buenos lados juntos*.
 
 Asegurar que las cuatro capas de tejido se alinean perfectamente. Compruebe dos veces que no haya mezclado piezas de patrón o volteado ninguna por error.
 
-Haz coincidir las cuatro capas de tela en la parte más estrecha, _lados buenos juntos_y pin. Luego, haz coincidir la parte superior e inferior de cada panel y pin. Finalmente, anclar el resto del borde en su lugar. Utilice tantos pines como sea necesario para asegurarse de que los paneles permanecen perfectamente alineados.
+Haz coincidir las cuatro capas de tela en la parte más estrecha, \_lados buenos juntos\_y pin. Luego, haz coincidir la parte superior e inferior de cada panel y pin. Finalmente, anclar el resto del borde en su lugar. Utilice tantos pines como sea necesario para asegurarse de que los paneles permanecen perfectamente alineados.
 
 Difunde la costura.
 
@@ -51,11 +52,11 @@ Topstitch otra costura paralela a la primera costura, permitiendo un poco de esp
 
 Tome el siguiente trozo. Para una Catedral de 11 paneles, este será Panel 3.
 
-Coloca el Panel externo 3 en el Panel externo 2, _lados buenos juntos_.
+Coloca el Panel externo 3 en el Panel externo 2, *lados buenos juntos*.
 
-Coloca el Panel de núcleo 3 en el Panel de núcleo 2, _buenos lados juntos_.
+Coloca el Panel de núcleo 3 en el Panel de núcleo 2, *buenos lados juntos*.
 
-Haz coincidir las cuatro capas de tela en la parte más estrecha, _lados buenos juntos_y pin. Luego, haz coincidir la parte superior e inferior de cada panel y pin. Finalmente, anclar el resto del borde en su lugar. Utilice tantos pines como sea necesario para asegurarse de que los paneles permanecen perfectamente alineados.
+Haz coincidir las cuatro capas de tela en la parte más estrecha, \_lados buenos juntos\_y pin. Luego, haz coincidir la parte superior e inferior de cada panel y pin. Finalmente, anclar el resto del borde en su lugar. Utilice tantos pines como sea necesario para asegurarse de que los paneles permanecen perfectamente alineados.
 
 Difunde la costura.
 

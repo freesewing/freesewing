@@ -1,6 +1,7 @@
 ---
 title: Coverlock
 ---
+
 ![A hem on a T-shirt, made with a coverlock machine](coverlock-hem.jpg)
 
 ![The finished backside of a coverlocked seam](coverlock.jpg)

@@ -1,6 +1,4 @@
-
 Steuert die Krümmung der Quernahtkurve.
-
 
 <Note>
 
@@ -14,4 +12,5 @@ Menschen mit einem runden Bum wollen dies vielleicht senken, um ein wenig mehr (
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
+
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_crossseamcurvebend_sample.svg "Effekt dieser Option auf das Schnittmuster")

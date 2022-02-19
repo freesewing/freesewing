@@ -2,7 +2,7 @@
 title: Bent Fabric options
 ---
 
-If you are making a default Bent to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Bella with.  
+If you are making a default Bent to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Bella with.
 
 You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Bent.
 
@@ -16,4 +16,3 @@ They are sometimes also called slopers, although purists will argue that a block
 Blocks are typically not made as-is but rather serve as a basis for other patterns.
 
 </Note>
-

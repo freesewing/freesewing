@@ -92,6 +92,7 @@ Fold the hem upwards, and sew it down. If you have a coverlock, use it.
 If not, use a twin needle or zig-zag stitch to keep the seam stretchable.
 
 > ### Fold only once, to avoid bulk
+>
 > Swimwear fabric doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 ## Step 10: Thread a draw string around the waist

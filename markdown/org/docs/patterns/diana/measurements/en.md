@@ -1,4 +1,1 @@
- 
-
 <PatternMeasurements pattern='diana' />
-

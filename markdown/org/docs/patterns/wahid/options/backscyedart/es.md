@@ -16,4 +16,5 @@ Mientras que este dardo se utiliza para dar forma al patrón, no es necesario co
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_backscyedart_sample.svg "Efecto de esta opción en el patrón")

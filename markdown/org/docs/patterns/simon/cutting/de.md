@@ -1,22 +1,22 @@
- - **Oberstoff**
-   - **1 Front links schneiden**
-   - **1 Knopf-Platzierung schneiden** (nur, wenn Sie sich für einen separaten Tastenplacker entschieden haben)
-   - **1 vorne rechts schneiden**
-   - **1 Knopflochplatz schneiden** (nur, wenn Sie sich für einen separaten Knopflochpflaster entschieden haben)
-   - **1 zurück schneiden**
-   - **1 Kragen schneiden**
-   - **1 Undercollar schneiden**
-   - **2 Joke(n) schneiden** oder **4 Jokes** , wenn Sie ein Split-Joch gewählt haben
-   - **2 Ärmel(n) schneiden**
-   - **2 Kragenstände(n) schneiden**
-   - **2 Ärmel-Platzhalter(n) schneiden**
-   - **2 Sleeve-Placket Überlappung(en) schneiden**
-   - **4 Manschetten(e) schneiden**
- - **Fusible Schnittstelle**
-   - **1 Kragen schneiden**
-   - **1 Undercollar schneiden**
-   - **2 Kragenstände(n) schneiden**
-   - **2 Manschetten(e) schneiden**
+-   **Oberstoff**
+    -   **1 Front links schneiden**
+    -   **1 Knopf-Platzierung schneiden** (nur, wenn Sie sich für einen separaten Tastenplacker entschieden haben)
+    -   **1 vorne rechts schneiden**
+    -   **1 Knopflochplatz schneiden** (nur, wenn Sie sich für einen separaten Knopflochpflaster entschieden haben)
+    -   **1 zurück schneiden**
+    -   **1 Kragen schneiden**
+    -   **1 Undercollar schneiden**
+    -   **2 Joke(n) schneiden** oder **4 Jokes** , wenn Sie ein Split-Joch gewählt haben
+    -   **2 Ärmel(n) schneiden**
+    -   **2 Kragenstände(n) schneiden**
+    -   **2 Ärmel-Platzhalter(n) schneiden**
+    -   **2 Sleeve-Placket Überlappung(en) schneiden**
+    -   **4 Manschetten(e) schneiden**
+-   **Fusible Schnittstelle**
+    -   **1 Kragen schneiden**
+    -   **1 Undercollar schneiden**
+    -   **2 Kragenstände(n) schneiden**
+    -   **2 Manschetten(e) schneiden**
 
 <Note>
 
@@ -31,10 +31,8 @@ Wenn Sie sie einzeln schneiden, denken Sie daran, dass sie Spiegelbilder voneina
 
 ###### Vorsichten
 
- - Die **vorne rechts**, **vorne links**, und **Sleeve** haben Nähte, die zu flachgelenkten Nähten gemacht werden sollten. Daher haben sie zusätzliche Nahtzuschüsse für diese Nähte. Beim Ausschneiden dieser Stücke musst du **muss** diese zusätzliche Naht berücksichtigen.
- The cuff guard and cuff placket have no seam allowance. Das ist normal, schneiden Sie sie einfach aus, wie sie auf dem Muster gezogen werden.
- Do not cut out the darts in the **back** piece. Sie sollten sie markieren, aber nicht ausschneiden.
+-   Die **vorne rechts**, **vorne links**, und **Sleeve** haben Nähte, die zu flachgelenkten Nähten gemacht werden sollten. Daher haben sie zusätzliche Nahtzuschüsse für diese Nähte. Beim Ausschneiden dieser Stücke musst du **muss** diese zusätzliche Naht berücksichtigen.
+    The cuff guard and cuff placket have no seam allowance. Das ist normal, schneiden Sie sie einfach aus, wie sie auf dem Muster gezogen werden.
+    Do not cut out the darts in the **back** piece. Sie sollten sie markieren, aber nicht ausschneiden.
 
 </Warning>
-
-

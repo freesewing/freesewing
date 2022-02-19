@@ -19,9 +19,9 @@ Coloca tu frente con el buen lado hacia abajo, y tu interfaz en la parte superio
 Presione la interfaz en su lugar.
 
 > **Tómate tu tiempo**
-> 
+>
 > No sólo planee esto para arreglarlo, quiere realmente presionar esa interconexión en su tela para que se fusione bien.
-> 
+>
 > Coloque su hierro abajo y se incline sobre él durante 10 segundos o así antes de pasar al siguiente lugar para repetir el proceso.
 
 ### Paso 2: Unir frente y revestimiento
@@ -35,6 +35,7 @@ Coloque su frente y revestimiento con buenos lados juntos. Anclar los bordes del
 Los espolvorean juntos.
 
 #### Pulse abrir costura
+
 Pulse abrir la franquicia de costura entre la cara y el revestimiento.
 
 ### Paso 3: Cerrar todos los darts
@@ -48,6 +49,7 @@ Doblar la espalda con buenos lados y coser el dardo.
 > No te olvides de hacer lo mismo para el revestimiento
 
 #### Cerrar dardos frontales
+
 Doblar la parte delantera (y la intersección se fusionó con ella) con buenos lados juntos, y coser la parte delantera.
 
 ### Paso 4: Presione todos los darts
@@ -55,9 +57,11 @@ Doblar la parte delantera (y la intersección se fusionó con ella) con buenos l
 ![Pulsa todos los darts](04a.png)
 
 #### Presiona los dardos frontales
+
 Una vez cortado abierto, presione las artes frontales abiertas.
 
 #### Presiona el reverso de los dardos
+
 Si cortas las tinieblas, pulsa abrirlas. Si no es así, preséntalos al lado.
 
 > No te olvides de hacer lo mismo para el revestimiento
@@ -73,6 +77,7 @@ Coloque su bolsa de bolsillo abajo con el buen costado, y su bolsillo se soltó 
 Alinear el lado derecho de la bolsa con el lado de la soldadura que no tiene interfaces, y coser juntos en la costura estándar.
 
 #### Presione costura abierta
+
 Cuando haya terminado, presione Abrir esta costura.
 
 #### Marca a dónde tiene que ir tu bolsillo
@@ -92,7 +97,7 @@ Si aún no has marcado las cuatro esquinas de ese rectángulo, deberías hacerlo
 Coloca tu parte delantera abajo con el buen lado arriba. Vamos a conectar la soldadura al fondo de tu contorno de bolsillo y la cara a la línea superior.
 
 > Si nunca has hecho un bolsillo de soldadura antes, puede ser un poco contraintuitivo para colocar el bolsillo en el exterior de la prenda. Pocket debe estar en el interior, ¿verdad?
-> 
+>
 > Relajar, el bolsillo terminará en el interior
 
 Tanto tu soldadura de pocket como tu cara de pocket tienen una línea de ayuda en ellos. Esa línea necesita alinearse con los bordes largos de su bolsillo.
@@ -248,6 +253,7 @@ Ahora doblar el revestimiento un poco antes del borde del orificio y sujetarlo h
 Utilice un trozo de deslizamiento para coser a mano el forro a la tela a lo largo del orificio.
 
 ### Paso 11: Termina la lluvia
+
 Remember that gap we didn't close in step 9? Time to close it. Es hora de cerrarlo.
 
 Utilice un deslizamiento para coser a mano el forro a la tela y cerrar el sombrero.

@@ -60,17 +60,19 @@ Naai de nepen vooraan apart en keer alles binnenstebuiten, en je hebt een mooi n
 </Tip>
 
 ### Stap 4: Bevestig tweede inzetstuk en voorkanten
+
 ![Bevestig tweede inzetstuk aan voorpanden](step03-d.png)
 
 Nadat je het eerste inzetstuk aan de voorpanden bevestigd hebt, doe je hetzelfde met het tweede.
 
 Als de voorpanden en inzetstukken aan elkaar hangen heb je nog maar drie stukken:
 
- - De inzetstukken en voorpanden, aan elkaar bevestigd
- - De zijkanten en rugpand, aan elkaar bevestigd
- - De elastiek
+-   De inzetstukken en voorpanden, aan elkaar bevestigd
+-   De zijkanten en rugpand, aan elkaar bevestigd
+-   De elastiek
 
 ### Stap 5: Sluit de neep in de voorpanden
+
 ![Sluit de voorste neep](step05.png)
 
 Vouw de voorpanden in twee langs de middenvoorlijn, zodat de gebogen stukken onderaan gelijk liggen.
@@ -87,6 +89,7 @@ Het is iets meer werk, maar het is het extra comfort meer dan waard.
 </Tip>
 
 ### Stap 6: Optioneel: Sierstiksel
+
 ![Boxershort met (links) en zonder sierstiksel](step06.jpg)
 
 <Note>
@@ -109,21 +112,25 @@ De naad stopt halverwege (waar de neep eindigt), maar je stiksel moet doorlopen.
 </Tip>
 
 ### Stap 7: Bevestig de eerste zijkant aan de voorpanden
+
 ![Bevestig eerste zijkant aan voorpanden](step07.png)
 
 Leg de zijkant van de eerste kant gelijk met de rand van de voorpanden + inzetstuk (goede kanten op elkaar) en lock ze samen.
 
 ### Stap 8: Bevestig de tweede zijkant aan de voorpanden
+
 ![Bevestig tweede zijkant aan voorpanden](step08.png)
 
 Doe hetzelfde voor de tweede zijkant.
 
 ### Stap 9: Optioneel: Sierstiksel
+
 ![Boxershort met (links) en zonder sierstiksel](step06.jpg)
 
 Als je eerder al een sierstiksel gaf, doe dan nu hetzelfde voor de naden die je gemaakt hebt in stap 7 en 8.
 
 ### Stap 10: Werk de kruisnaad af
+
 ![Werk de kruisnaad af](step10.png)
 
 We gaan nu de gebogen opening aan de achterkant bevestigen aan de voorkant van de boxershort, bestaande uit de voorpanden en inzetstukken.
@@ -139,6 +146,7 @@ Neem het langzaam, en wees **zeer bewust** waar je overlock in snijdt.
 </Tip>
 
 ### Stap 11: Zoom de eerste pijp
+
 ![Zoom de eerste pijp](step11.png)
 
 Tijd om de pijpen om te zomen. Zoom ze op dezelfde manier als je elke andere elastische gebreide stof zou zomen. Ga voor een elastische steek. Je kan een zigzaksteek of tweelingnaald gebruiken als je geen coverlock of specifieke stretchsteek hebt.
@@ -152,11 +160,13 @@ Nog beter: speld beide pijpen vast en naai pas als je vindt dat het er goed uitz
 </Note>
 
 ### Stap 12: Zoom de tweede pijp
+
 ![Zoom de tweede pijp](step12.png)
 
 Niet meer dan logisch.
 
 ### Stap 13: Maak een lus van je elastiek
+
 ![Maak een lus van je elastiek](step13.png)
 
 Naai de uiteindes van je elastiek samen met de goede kanten op elkaar.
@@ -164,12 +174,14 @@ Naai de uiteindes van je elastiek samen met de goede kanten op elkaar.
 <Note>
 
 ###### Niet zeker hoeveel elastiek je nodig hebt?
+
 Ruim je elastiek rond je taille om waar het zou komen te zitten, en strak hem aan tot hij zich juist voelt.
 Duid aan waar dat punt is, voeg 2 cm naadwaarde toe, en daar is je lengte.
 
 </Note>
 
 ### Stap 14: Bevestig elastiek aan de taille
+
 ![Bevestig elastiek aan de taille](step14.png)
 
 Bevestig de elastiek aan de taille.
@@ -190,6 +202,7 @@ Tijdens het naaien rek je de elastiek en de stof tussen elke speld, verwijder de
 </Tip>
 
 ### Stap 15: Knip bij en kuis op
+
 ![Joehoew! Je hebt het gehaald](step15.png)
 
 Knip eventuele overtollige stukken stof aan de tailleband of zoom bij, en eventuele losse draadjes.

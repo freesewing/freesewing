@@ -1,9 +1,8 @@
-
 ## Schritt 1: Nähe den hinteren Abnäher
 
 Als erstes werden wir den Taillendart auf der Rückseite schließen.
 
-Dazu falten Sie die Rückseite doppelt mit _guten Seiten zusammen_ und stellen Sie sicher, dass beide Seiten des Darts übereinander übereinstimmen.
+Dazu falten Sie die Rückseite doppelt mit *guten Seiten zusammen* und stellen Sie sicher, dass beide Seiten des Darts übereinander übereinstimmen.
 
 Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
@@ -29,7 +28,7 @@ the instructions) but it's a very typical finish for chinos, and makes it easier
 
 ### Befestige die hintere Tasche mit der Tasche
 
-Join the back pocket facing to the pocket bag by placing them with _good sides together_ and sewing along the longest of the non-curved seams of the facing.
+Join the back pocket facing to the pocket bag by placing them with *good sides together* and sewing along the longest of the non-curved seams of the facing.
 
 Wenn Sie fertig sind, drücken Sie die Naht auf die Seite der Tasche Tasche.
 
@@ -53,7 +52,7 @@ Du solltest die Seiten des Taschenbeutels übersperren/austreten, damit sie nich
 
 <Tip>
 
-Wenn du keine _Overlock/Serger_ hast, kannst du stattdessen immer einen Zick-Zack-Zack-Stich verwenden. 
+Wenn du keine *Overlock/Serger* hast, kannst du stattdessen immer einen Zick-Zack-Zack-Stich verwenden.
 
 </Tip>
 
@@ -73,7 +72,7 @@ Die vorderen Taschen sind etwas ungewöhnlich, weil sie das Aussehen der klassis
 
 Wir haben zwei Taschen vor der Tasche zu befestigen, die jeweils zwei Gestelle haben.
 
-Legen Sie sie mit _guten Seiten zusammen_ (\*) und nähen Sie das Gesicht an der Stelle.
+Legen Sie sie mit *guten Seiten zusammen* (\*) und nähen Sie das Gesicht an der Stelle.
 
 <Note>
 
@@ -197,7 +196,7 @@ Wenn du fertig bist. Machen Sie es erneut. Die Kreuznaht immer zweimal nähen. E
 <Tip>
 
 Achten Sie besonders darauf, die Nähte sorgfältig auszurichten, bei denen beide Beine ihre Rücken- und Frontplatten miteinander verbunden haben.
-Dadurch wird sichergestellt, dass Ihre Quernahtergebnisse mit einem perfekt ausgerichteten _cross_ übereinstimmen, bei dem sich 4 Musterteile an einem einzigen Punkt treffen.
+Dadurch wird sichergestellt, dass Ihre Quernahtergebnisse mit einem perfekt ausgerichteten *cross* übereinstimmen, bei dem sich 4 Musterteile an einem einzigen Punkt treffen.
 
 Richtig zu sein ist eines der Dinge, die du am Ende jedes Mal hochschätzst, wenn du diese trägst.
 
@@ -263,7 +262,6 @@ Vielleicht solltest du diese zuerst einfügen, um sicher zu gehen, dass sie sch�
 
 Nähen Sie nun die andere Seite des Reißverschlusses. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
-
 ### Beende die Kreuznaht
 
 Nähen Sie das letzte Stück der Kreuznaht bis zur höchsten Fliegenpunkte.
@@ -300,10 +298,10 @@ Schneiden Sie schließlich Ihre Längenschleifen in 8 gleiche Teile ab, um 8 Gur
 
 Wir werden unsere Gürtelschleifen entlang der Taille teilen:
 
- - 2 in der Mitte hinten, die jeweils ein bisschen von der Mitte beiseite gesetzt, so dass es eine kleine Lücke zwischen ihnen.
- - 1 über dem Rückendart auf jeder Seite
- - 1 an jeder Seite mehr oder weniger wo die Seitennaht die Taille treffen würde, wenn sie gerade nach oben ging
- - 1 auf jeder Seite von der Mitte vorne. Nicht zu nah beieinander, so dass es keinen Platz für Gürtelschnallen gibt, aber auch nicht zu weit, so dass es nicht seltsam aussieht
+-   2 in der Mitte hinten, die jeweils ein bisschen von der Mitte beiseite gesetzt, so dass es eine kleine Lücke zwischen ihnen.
+-   1 über dem Rückendart auf jeder Seite
+-   1 an jeder Seite mehr oder weniger wo die Seitennaht die Taille treffen würde, wenn sie gerade nach oben ging
+-   1 auf jeder Seite von der Mitte vorne. Nicht zu nah beieinander, so dass es keinen Platz für Gürtelschnallen gibt, aber auch nicht zu weit, so dass es nicht seltsam aussieht
 
 Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 
@@ -358,7 +356,7 @@ Am Anfang und Ende der Taille müssen Sie noch etwas mehr Nahtzufuhr haben. Nehm
 
 ### Die Taille schließen
 
-Nun mit der guten Seite nach oben, nähen genau in der Naht, die zuvor genäht wurde (so genannter _Stich im Graben_).
+Nun mit der guten Seite nach oben, nähen genau in der Naht, die zuvor genäht wurde (so genannter *Stich im Graben*).
 
 Dies wird die Rückseite des Taillenbands, das wir gemacht haben, um etwas weiter zu verlängern, und die gesamte Nahtzuweisung im Inneren verriegeln.
 

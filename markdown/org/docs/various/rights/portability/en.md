@@ -7,4 +7,4 @@ You have the right to obtain and reuse your personal data for your own purposes 
 
 Go to [/account/actions/export][1] to export your data.
 
-[1]:/account/actions/export/
+[1]: /account/actions/export/

@@ -1,4 +1,3 @@
-
 <Note>
 
 Text a bit dry for you? I try to make videos available as part of the pattern documentation.
@@ -11,9 +10,9 @@ In this particular case, there's a lot of video material available, but it was o
 
 <Note>
 
-Many of the steps below are to be repeated for both trouser legs. 
+Many of the steps below are to be repeated for both trouser legs.
 
-That is not always mentioned because life is short and continuously writing _Do not forget to do this for both trouser legs_ gets tired really soon.
+That is not always mentioned because life is short and continuously writing *Do not forget to do this for both trouser legs* gets tired really soon.
 
 </Note>
 
@@ -49,7 +48,7 @@ Construct the double welt pockets at the back of your trousers, including the po
 
 ###### Double welt pockets
 
-Constructing a double welt pocket is a technique that is used is different garments. 
+Constructing a double welt pocket is a technique that is used is different garments.
 That is why I have branched it off into its own documentation page.
 
 There's both written documentation and a video series that shows you how to do it, so even if you've never made welt pockets before, you'll be fine.
@@ -140,9 +139,9 @@ When everything is pinned together, fold away the front piece and lining, and cl
 
 > You can finish the pocket bag in a number of ways, including:
 >
-> - Serge the sides together
-> - Finish the edge with bias tape
-> - Sew the sides together and finish the edge with a zig-zag stitch
+> -   Serge the sides together
+> -   Finish the edge with bias tape
+> -   Sew the sides together and finish the edge with a zig-zag stitch
 
 ### Step 11: Press the front pocket
 
@@ -154,7 +153,7 @@ Put everything flat with the front piece at the bottom, and give it a good press
 
 ![Pin the front pocket in place](step12.png)
 
-Pin the pocket down to the front piece along the slant and the edges of the pocket bag. 
+Pin the pocket down to the front piece along the slant and the edges of the pocket bag.
 This will prevent it from shifting around while we continue to work on our trousers.
 
 ### Step 13: Finish the side edges
@@ -219,8 +218,8 @@ Take your zip and open it (unzip it). Now turn it over so that it sits with the 
 
 Align your zip with the crotch seam as shown in the illustration. Take the following into account:
 
- - The end of your zip should sit at the top of your trousers where your waistband will start. However, make sure to remember that there is seam allowance there, so don't align it with the top of the front piece, but subtract 1cm seam allowance.
- - Align the zip with the crotch seam. Do not mind the edge of the zip, as they come in different widths. Instead, make sure that you can sew next to the teeth of the zip within the seam allowance of the front piece.
+-   The end of your zip should sit at the top of your trousers where your waistband will start. However, make sure to remember that there is seam allowance there, so don't align it with the top of the front piece, but subtract 1cm seam allowance.
+-   Align the zip with the crotch seam. Do not mind the edge of the zip, as they come in different widths. Instead, make sure that you can sew next to the teeth of the zip within the seam allowance of the front piece.
 
 Pin the zip in place with a few pins perpendicular to your zip (as shown). In other words, don't pin along the zip, but across the zip.
 
@@ -323,9 +322,9 @@ Last but not least, sew along the zip with your zipper foot to attach it to the 
 
 > When aligning the zip, make sure to take the following into account:
 >
-> - The zip should be placed with the good side down
-> - The zip should sit a bit back from the edge of your fly piece
-> - Make sure to align the top of the zip with the other zip half on the right leg
+> -   The zip should be placed with the good side down
+> -   The zip should sit a bit back from the edge of your fly piece
+> -   Make sure to align the top of the zip with the other zip half on the right leg
 
 ### Step 28: Zig-zag the zip edge to the fly piece
 
@@ -430,7 +429,7 @@ When it's looking good, press the crease lines in your leg, front a back. Repeat
 
 Give it a firm press because you want the pleats to still be there after you wash your trousers (so you can see where to press them again).
 
->In the industry, chemicals are applied along the crease line before it is pressed together. Some tailors use some sort of wooden hammer and anvil to bang the fibers in a permanent crease.
+> In the industry, chemicals are applied along the crease line before it is pressed together. Some tailors use some sort of wooden hammer and anvil to bang the fibers in a permanent crease.
 
 Depending on your fabric, your crease might last longer, but ultimately, you can't expect to have a crease that can withstand a few washes without being reapplied.
 
@@ -508,11 +507,11 @@ That being said, here's what to do to make a standard belt loop:
 
 Find the belt loop pattern part, a small rectangular piece of fabric. There should be 8 of them, and these will become your belt loops. For each of them, take these steps:
 
- - Zig-zag (or serge) along the longest edges of the rectangle
- - Fold one side back along the length, and press
- - Fold the other side back, along the length, and press
- - Hand sew along the back of the belt loop so that the folded sides stay in place, but the stitches do not show at the front
- - Give it a final good press when you're done
+-   Zig-zag (or serge) along the longest edges of the rectangle
+-   Fold one side back along the length, and press
+-   Fold the other side back, along the length, and press
+-   Hand sew along the back of the belt loop so that the folded sides stay in place, but the stitches do not show at the front
+-   Give it a final good press when you're done
 
 > While the width of your belt loops is not all that important, it does matter to make sure they are all the same width.
 >
@@ -563,7 +562,7 @@ Before we finalize the waistband, we're going to trim back some of its seam allo
 
 ![Press and baste the waistband lining](step49.png)
 
-The waistband lining will be sewn from the front of the trousers on top of the seam that joins the waistband to the trousers (so called _stitch in the ditch_).
+The waistband lining will be sewn from the front of the trousers on top of the seam that joins the waistband to the trousers (so called *stitch in the ditch*).
 
 Doing so will catch the lining and secure it in place. However, since we'll be sewing this from the good side, the lining will lie beneath all other layers, and we won't see what we're doing.
 
@@ -630,8 +629,9 @@ Fold back the trouser legs at the hemline, and press the hem.
 With the hem neatly pressed, simply hand-sew the folded back part to the inside of your trousers.
 
 > Hemming is done by hand because it's important that the stitches don't show on the front. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
-> 
+>
 > While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
 
 ### Step 56: Trim, clean up, and press
+
 Trim any loose threads or basting that remains, and give your trousers a good final press.

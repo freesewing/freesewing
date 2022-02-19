@@ -12,10 +12,10 @@ Either try using a different E-mail address, or [reach out to us](https://chat.f
 
 In in France, several E-mail provider share the same filtering:
 
- - free.fr
- - laposte.net
- - organge.fr
- - sfr.fr
+-   free.fr
+-   laposte.net
+-   organge.fr
+-   sfr.fr
 
 They are all known to cause issues with deliveries.
 

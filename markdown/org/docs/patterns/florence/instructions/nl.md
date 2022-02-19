@@ -1,4 +1,3 @@
-
 ### Stap 1: Sluit de midden naad
 
 Sluit de (meest) gebogen naad die het midden van ons masker vormt door beide helften van het masker op elkaar te plaatsen met de goede kant van de stof tegen elkaar.
@@ -28,11 +27,11 @@ Aangezien dit een gebogen naad is, zal het niet plat liggen. Maar je kunt het we
 
 Nu gaan we de binnenstof stikken aan de buitenstof (main), en plak de linten allemaal in één stap.
 
- - Leg je voering naar beneden met de goede kant omhoog.
- - Plaats dan twee linten in de hoeken van één kant (rechts in ons voorbeeld) zodat ze een beetje uit het mouw pieken. maar het lint breidt zich naar binnen uit.
- - Leg nu de hoofdstof bovenop met de goede kant stad. Je zou nu beide lagen van je masker bovenop elkaar moeten hebben met *goede kanten op elkaar* en twee boordjes die er tussen liggen
- - Speld door linten en lagen om ze op hun plaats te houden
- - Doe nu hetzelfde aan de andere kant
+-   Leg je voering naar beneden met de goede kant omhoog.
+-   Plaats dan twee linten in de hoeken van één kant (rechts in ons voorbeeld) zodat ze een beetje uit het mouw pieken. maar het lint breidt zich naar binnen uit.
+-   Leg nu de hoofdstof bovenop met de goede kant stad. Je zou nu beide lagen van je masker bovenop elkaar moeten hebben met *goede kanten op elkaar* en twee boordjes die er tussen liggen
+-   Speld door linten en lagen om ze op hun plaats te houden
+-   Doe nu hetzelfde aan de andere kant
 
 <Tip>
 
@@ -83,4 +82,3 @@ Zorg er voor dat de naadwaarde aan de opening aan de zijjant netjes naar binnen 
 Dat is het, je bent klaar! Je kunt nu je masker dragen.
 
 Maak nog beter, zodat je ook andere maskers kunt geven.
-

@@ -1,19 +1,22 @@
-- - -
+***
+
 title: Cornelius Cutting
-- - -
+
+***
 
 ### Materiales
- - **Tela principal**
-   - Cut **2 back** parts
-   - Cut **2 front** parts
-   - Cut **2 pocket facing** parts
-   - Cut **2 waistband** parts on the fold
-   - Cut **4 leg band** parts
-   - Cut **1 zipper guard** part on the fold
- - **Lining (Pocket) fabric**
-   - Cut **2 pocket** parts
- - **Interfaz**
-   - Cut **1 waistband** part on the fold
+
+-   **Tela principal**
+    -   Cut **2 back** parts
+    -   Cut **2 front** parts
+    -   Cut **2 pocket facing** parts
+    -   Cut **2 waistband** parts on the fold
+    -   Cut **4 leg band** parts
+    -   Cut **1 zipper guard** part on the fold
+-   **Lining (Pocket) fabric**
+    -   Cut **2 pocket** parts
+-   **Interfaz**
+    -   Cut **1 waistband** part on the fold
 
 <Note>
 

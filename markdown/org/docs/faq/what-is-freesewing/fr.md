@@ -9,5 +9,3 @@ Nous fournissons une [bibliothèque de base](https://www.npmjs.com/package/@free
 Nous ne sommes pas intéressés par la mode, les tendances ou la publication du tout nouveau modèle de la saison. Nous voulons plutôt donner des moyens de faire aux créateurs et réalisateurs en distillant les connaissances de la communauté couturière à travers des patrons paramétrables et de la documentation, tout en rendant ces informations disponibles gratuitement.
 
 FreeSewing est construit par [des contributeurs](/community/who/contributors/) qui sont tous des bénévoles, et financièrement supportés par [nos Mécènes](/community/who/patrons/).
-
-

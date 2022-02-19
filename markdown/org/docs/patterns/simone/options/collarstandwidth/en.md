@@ -8,6 +8,6 @@ This is the main parameter to change the overall height of your collar. This def
 
 </Note>
 
-
 ## Effect of this option on the pattern
+
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_collarstandwidth_sample.svg "Effect of this option on the pattern")

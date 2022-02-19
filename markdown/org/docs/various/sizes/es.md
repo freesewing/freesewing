@@ -8,14 +8,11 @@ Sin embargo, desde la versión 2.2, proporcionamos *tamaños estándar*. Each si
 
 Esto no es una ciencia exacta. We provide these sizes as a fast and easy way to get started with our patterns. But we do hope that you will take the time to take your own measurements, or have them taken. Esto siempre dará mejores resultados.
 
-
 <Tip>
 
 ##### Abrir en una vista amplia
 
 Estas tablas ocupan un montón o pantalla de bienes raíces, por eso
- [mostrar tamaños en una vista amplia](/sizes/).
+[mostrar tamaños en una vista amplia](/sizes/).
 
 </Tip>
-
-

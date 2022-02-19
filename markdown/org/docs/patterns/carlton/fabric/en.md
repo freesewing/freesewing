@@ -10,8 +10,7 @@ Remember that this pattern is intended to be a winter coat so you need to consid
 
 ### Linings and Pocket Bags
 
-Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. **Silks** can also be used for the body as well but the **Cotton** will be more durable in the long run. Pocket bags should be out of **Cotton** or something that is strong enough to hold the weight of the intended items you wish to carry in them. **Printed Cottons** are a fun thing to try but if your main fabric is quite bulky you may find they add to much weight. 
-
+Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. **Silks** can also be used for the body as well but the **Cotton** will be more durable in the long run. Pocket bags should be out of **Cotton** or something that is strong enough to hold the weight of the intended items you wish to carry in them. **Printed Cottons** are a fun thing to try but if your main fabric is quite bulky you may find they add to much weight.
 
 <Tip>
 
@@ -23,7 +22,6 @@ As per usual with Linings it is really down to your prefered lining materials bu
 
 We recommend **Hair canvases**. You may be tempted to use modern interfacing but hair canvases will provide the best results. You will want a combination of different weight hair canvases such as lightweight to medium weight **Tailors Canvas** and heavyweight **Horsehair Canvas**.
 A common misconception is that you have to use horsehair canvas for all of it, but this is not the case and really is only needed for areas that need the most structure such as the upper front but are often too stiff for other parts. Tailors canvas is generally used for the majority of facing a coat.
-
 
 <Tip>
 

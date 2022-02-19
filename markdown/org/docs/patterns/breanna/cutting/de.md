@@ -1,9 +1,8 @@
 **Oberstoff**
 
- - Schneide **1 Vorderteil** im Stoffbruch.
- - Schneide **2 Rückteile**.
- - Schneide **2 Ärmel** mit _guten Seiten zusammen_.
-
+-   Schneide **1 Vorderteil** im Stoffbruch.
+-   Schneide **2 Rückteile**.
+-   Schneide **2 Ärmel** mit *guten Seiten zusammen*.
 
 Diese Anleitung ist nur für den Breanna-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
