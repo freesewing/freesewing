@@ -35,7 +35,7 @@
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
-    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js",
+    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
     "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'"
   },
   "peerDependencies": {

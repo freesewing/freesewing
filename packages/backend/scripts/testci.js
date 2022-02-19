@@ -20,7 +20,7 @@ import { spawn } from 'child_process';
   .then(startApp)
   .then(() => {
     // Forward command-line args to test process.
-    const args = ['run', 'test', '--'].concat(process.argv.slice(2));
+    const args = ['run', 'test', '--', '--reporter', '../../tests/reporters/terse.js'].concat(process.argv.slice(2));
     spawn('npm', args, { stdio: 'inherit' })
       .on('exit', function(code) {
         // Propagate exit code so that test failures are recognized.
