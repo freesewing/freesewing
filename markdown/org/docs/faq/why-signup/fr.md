@@ -4,7 +4,7 @@ title: Pourquoi dois-je créer un compte juste pour télécharger un patron ?
 
 Pour des raisons pratiques. Pour créer des patrons sur mesure, nous avons besoin de vos mesures.
 
-Vous demander ces informations à chaque fois serait plutôt fastidieux, donc nous les enregistrons. Et c'est sur votre compte que nous le faisons.
+Asking for them every time would be rather tedious, so we need to store this information. Et c'est sur votre compte que nous le faisons.
 
 Sans conservation de vos mesures en mémoire, la génération de patrons sur mesure serait très peu pratique.
 
@@ -12,9 +12,9 @@ Sans conservation de vos mesures en mémoire, la génération de patrons sur mes
 
 ##### Vous demandez parce que vous ne nous faites pas confiance ?
 
-Cette question suggère souvent une méfiance liée à la création d'un compte. En tant que tel, les liens suivants peuvent également être pertinents :
+Cette question suggère souvent une méfiance liée à la création d'un compte. As such, the following links may also be relevant:
 
--   Lisez \[notre politique de confidentialité]\[1]
--   En savoir plus sur \[vos droits]\[2]
+-   Read [our privacy notice][1]
+-   Learn more about [your rights][2]
 
 </Note>
