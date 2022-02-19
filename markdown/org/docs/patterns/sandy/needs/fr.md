@@ -1,17 +1,17 @@
+
 To make Sandy, you will need the following:
 
--   [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
--   About 2 - 6 metres (2.2 - 6.6 yards) of a suitable main fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
--   Some interfacing for the waistband
--   (Optional) Facing for the hem.
--   Some sort of closure for the waistband (if not seamless)
--   (Optional) About 2 - 6 metres (2.2 - 6.6 yards) of suitable lining fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
--   Elastic (if needed)
+  - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+  - About 2 - 6 metres (2.2 - 6.6 yards) of a suitable main fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
+  - Some interfacing for the waistband
+  - (Optional) Facing for the hem.
+  - Some sort of closure for the waistband (if not seamless)
+  - (Optional) About 2 - 6 metres (2.2 - 6.6 yards) of suitable lining fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
+  - Elastic (if needed)
 
 Due to the many different styles of Sandy it is difficult to precisely say what you need so we will go through some of the options.
 
 ##### Main Fabric
-
 The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficent with 2 - 2.5 metres whearas a floor length will require more. If in doubt buy a metre more than you think. Also don't be afraid to piece if your fabric is not wide or long enough, it is better to have an extra seam than not to use the fabric you like.
 
 <Note>
@@ -23,7 +23,7 @@ Don't forget that the waistband also needs to be cut from the main fabric.
 <Warning>  
 
 If making a **seamless** Sandy you will need to make sure the width of your fabrics are double the length of your skirt pieces otherwise you will have to piece or add seams.
-
+  
 </Warning>
 
 ##### Lining Fabric
