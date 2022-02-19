@@ -10,8 +10,8 @@ _:
 _types:
   pattern:
     netlify: 'echo "Not configured yet"'
-    test: &test 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register'
-    testci: &testci "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js"
+    test: &test 'BABEL_ENV=production mocha tests/*.test.mjs --require @babel/register'
+    testci: &testci "BABEL_ENV=production mocha tests/*.test.mjs --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js"
   plugin:
     test: *test
     testci: *testci
@@ -40,7 +40,7 @@ components:
 core:
   testonly: 'BABEL_ENV=production mocha tests/*.test.js'
   test: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js'
-  testci: "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js"
+  testci: "BABEL_ENV=production mocha tests/*.test.js --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js"
   report: 'BABEL_ENV=production nyc report --reporter=html'
   coverage: 'BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
 i18n:

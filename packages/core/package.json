@@ -37,7 +37,7 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
     "testonly": "BABEL_ENV=production mocha tests/*.test.js",
-    "testci": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js",
+    "testci": "BABEL_ENV=production mocha tests/*.test.js --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js",
     "report": "BABEL_ENV=production nyc report --reporter=html",
     "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
   },

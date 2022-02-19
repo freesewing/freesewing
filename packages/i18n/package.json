@@ -26,12 +26,12 @@
     "clean": "rimraf dist",
     "build": "rollup -c",
     "cibuild_step1": "rollup -c",
-    "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register",
+    "test": "BABEL_ENV=production mocha tests/*.test.mjs --require @babel/register",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
-    "testci": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js",
+    "testci": "BABEL_ENV=production mocha tests/*.test.mjs --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js",
     "prebuild": "node src/prebuild.mjs"
   },
   "peerDependencies": {
