@@ -1,5 +1,5 @@
 > ### Imágenes próximamente
->
+> 
 > Estas instrucciones son un trabajo en curso, y aún no hemos creado las ilustraciones. Se añadirán pronto.
 
 ## Paso 1: Únete a la espalda
@@ -37,7 +37,7 @@ Marca la mitad de la longitud de tu cintura. Fold the waistband double, and mark
 Un poco a la izquierda y a la derecha de esto, puede añadir dos eyelets para pasar una cuerda de dibujo. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Es mejor añadir refuerzos
->
+> 
 > As swimwear fabric is slippery and thin, you might want to add some reinforcement behind these eyelets. Un pedazo restante de denim funcionará bien.
 
 ## Paso 6: Prepara el elástico
@@ -57,7 +57,7 @@ Doblar la cintura doble a lo largo de la longitud con buenos lados hacia afuera,
 Align the back of your swim trunks with the place where you joined the waistband, align the edge of the waistband with the edge of the back, and pin them together. Asegúrate de fijarlo en el lado malo de la espalda.
 
 > ### Ten en cuenta tus eyelets
->
+> 
 > If you've made eyelets in your waistband, double check that they are placed towards the outside, not the inside of your waistband.
 
 Find the front of the waistband (easy if there's eyelets, if not just fold it double) and align that with the front seam. Anclar esto también en su lugar.
@@ -73,11 +73,11 @@ It's fine to not sew too close the first time around, and once your elastic is a
 Doble la lluvia hacia arriba, y coser hacia abajo. Si tienes una cubierta, úsala. Si no es así, utilice una aguja gemela o una stitch zig-zag para mantener la costura estirable.
 
 > ### Doble sólo una vez, para evitar el grueso
->
+> 
 > La tela de traje de baño no se cuelga, así que puedes doblar esto una vez y coser la tela, luego recortar la tela.
 
 ## Paso 10: Hilo de dibujar una cuerda alrededor de la cintura
 
 Hile un hilo de dibujo a través de un eyelet, alrededor de la cintura, y fuera del otro eyelet.
 
-Eso es así, ya has hecho :Budgets\_up:
+Eso es así, ya has hecho :Budgets_up:
