@@ -20,7 +20,7 @@ Esto te da dos piezas que son imágenes espejo unas de otras.
 
 ##### ¿Qué pasa si no hay un lado bueno obvio?
 
-Cuando se corta algo sin un lado obvio *bueno* (como la interfaz),
+Cuando se corta algo sin un lado obvio *bueno* (como la interfaz), 
 lo que importa es que cortes dos piezas espejadas, en lugar de dos idénticas.
 
 </Note>
