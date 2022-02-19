@@ -14,6 +14,7 @@ El paño de rosca (frecuentemente conocido como álmina) es un tejido simple y r
 
 Es típicamente una tela más ligera y en colores claros puede ser un poco transparente.
 
+
 ## Twill
 
 Se pueden reconocer los tejidos de color por su textura diagonal característica del tejido.
@@ -22,11 +23,13 @@ Despliegue más fácilmente que la anchura, se envuelve menos y cuando lo hace, 
 
 La cara de la moneda es que no te dará ese brillo crujiente de fécula que la tela ancha pueda.
 
+
 ## Pinpoint
 
 Pinpoint es el caballo de trabajo de tejidos de camisetas. Normalmente producen un pesado y más grueso . y por tanto más duradero . tela.
 
 Pinpoint es un aspecto menos formal que la tela ancha o la twill, pero más formal que el oxford. Esto, combinado con su durabilidad, la convierten en una gran elección para tu trabajo cotidiano.
+
 
 ## Chambray
 
@@ -34,11 +37,13 @@ El chambray es un tejido sencillo, similar al de la ropa ancha. Es diferente por
 
 El resultado es una tela mucho más texturizada, tanto en contacto como en apariencia donde los diferentes colores crean un tejido de dos colores densamente polivalente.
 
+
 ## Denim
 
 Denim no necesita introducción. Es lo que tus vaqueros están fabricados.
 
 Técnicamente se produce una tela de color (busca la textura diagonal de la firma) en pesos mucho más ligeros que los de los que tus vaqueros están fabricados. Estos son los que puedes usar para una camisa.
+
 
 ## Flanel
 
@@ -46,11 +51,13 @@ Desde Curt Cobain a los hipsters de tu cafetería local, todos se desvían por c
 
 Más cálido que cualquier otra opción aquí, el flannel viene típicamente en algodón abrazado, aunque puede que lo encuentre con la lana añadida para obtener más calor.
 
+
 ## Lino
 
 Linen wrinkles como un mofo, pero no puedes vencer por las miradas de safari.
 
 La razón por la que lo asocias con aventuras en climas tropicales es que respira lino como nada más y te mantendrá fresco de todo.
+
 
 ## Número de hilos
 
@@ -60,6 +67,7 @@ El recuento de hilos se expresa en números, como 60s, 80s, 100s, etc., hasta 30
 
 No obstante, hay una captura. Los números superiores a los 100 se hacen típicamente retorciendo dos hilos juntos. Como un conteo de hilos de 160 años significa que dos hilos de 80 fueron retorcidos para el hilo.
 
+
 ## Suelo simple o dos
 
 Si un hilo está formado por dos hilos (ver recuento de hilos anteriores) lo llamamos Dos cuadrados.
@@ -67,3 +75,4 @@ Si un hilo está formado por dos hilos (ver recuento de hilos anteriores) lo lla
 Si el hilo se compone de un solo hilo, se llama Single ply.
 
 Se puede esperar que dos pliegues duren más y sean más caros.
+
