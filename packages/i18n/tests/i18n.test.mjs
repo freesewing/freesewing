@@ -1,7 +1,10 @@
-let expect = require("chai").expect;
-let i18n = require("../dist/index.js").strings;
+import chai from "chai"
+import i18nAll from "../dist/index.js"
 
-let languages = [
+const expect = chai.expect
+const i18n = i18nAll.strings
+
+const languages = [
   {
     name: "English",
     strings: i18n.en
@@ -25,18 +28,11 @@ let languages = [
 ];
 
 function checkTranslations(from, to) {
-  let originals = Object.keys(from.strings);
-  let translated = to.strings;
+  const originals = Object.keys(from.strings);
+  const translated = to.strings;
   for (let string of originals) {
     if (typeof translated[string] === "undefined") {
-      console.log(
-        "String",
-        string,
-        "in",
-        from.name,
-        "is not available in",
-        to.name
-      );
+      console.log(`String ${string} in ${from.name} is not available in ${to.name}`)
       expect(typeof translated[string]).to.equal("string");
     }
   }
