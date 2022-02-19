@@ -8,7 +8,17 @@ Les boutons et boutonnières peuvent avoir des tailles différentes, mais ont to
 A button is shown on the left, and a buttonhole on the right
 </Legend>
 
-Les boutons pressions ont une partie *mâle* et *femelle* et ressemblent également à la réalité :
+A button is shown on the left, and a buttonhole on the right
+
+</Legend>
+
+Snaps have a *stud* and *socket* part, and also look like the real thing:
+
+<Legend part="snaps">
+
+A snap stud is shown on the left, and a snap socket on the right
+
+</Legend>
 
 <Legend part="snaps">
 A snap stud is shown on the left, and a snap socket on the right
