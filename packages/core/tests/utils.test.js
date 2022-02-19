@@ -40,7 +40,7 @@ it("Should detect vertical lines", () => {
 
 it("Should swap direction prior to finding beam intersection", () => {
   let a = new freesewing.Point(10, 20);
-  let b = new freesewing.Point(00, 90);
+  let b = new freesewing.Point(0, 90);
   let c = new freesewing.Point(90, 40);
   let d = new freesewing.Point(19, 40);
   let X = freesewing.utils.beamsIntersect(a, b, c, d);
