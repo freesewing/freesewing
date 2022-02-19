@@ -1,22 +1,22 @@
--   **Tela principal**
-    -   Cortar **1 frente izquierdo**
-    -   Corta **1 placket de botón** (solo si optó por un posicionamiento de botón separado)
-    -   Cortar **1 frente a la derecha**
-    -   Corta **1 posicionamiento de agujero de botón** (solo si optó por un conjunto de posición separado del agujero del botón)
-    -   Cortar **1 atrás**
-    -   Cortar **1 collar**
-    -   Corta **1 guión inferior**
-    -   Corta **2 yo(s)** o **4 yoques** si has elegido un yugo dividido
-    -   Corta **2 mangas**
-    -   Cortar **2 stand(s) de cuello**
-    -   Corta **2 underlap(s) de placket de manga**
-    -   Corta **superposición(es) de 2 manga**
-    -   Corta **4 taza(s)**
--   **Interfaz Fusible**
-    -   Cortar **1 collar**
-    -   Corta **1 guión inferior**
-    -   Cortar **2 stand(s) de cuello**
-    -   Corta **2 taza(s)**
+ - **Tela principal**
+   - Cortar **1 frente izquierdo**
+   - Corta **1 placket de botón** (solo si optó por un posicionamiento de botón separado)
+   - Cortar **1 frente a la derecha**
+   - Corta **1 posicionamiento de agujero de botón** (solo si optó por un conjunto de posición separado del agujero del botón)
+   - Cortar **1 atrás**
+   - Cortar **1 collar**
+   - Corta **1 guión inferior**
+   - Corta **2 yo(s)** o **4 yoques** si has elegido un yugo dividido
+   - Corta **2 mangas**
+   - Cortar **2 stand(s) de cuello**
+   - Corta **2 underlap(s) de placket de manga**
+   - Corta **superposición(es) de 2 manga**
+   - Corta **4 taza(s)**
+ - **Interfaz Fusible**
+   - Cortar **1 collar**
+   - Corta **1 guión inferior**
+   - Cortar **2 stand(s) de cuello**
+   - Corta **2 taza(s)**
 
 <Note>
 
@@ -31,8 +31,10 @@ Cuando los cortes individualmente, recuerda que necesitan ser imágenes espejo u
 
 ###### Cuavadas
 
--   El **frente derecha**, **frente izquierdo**, y **manga** tienen costuras que deben hacerse en costuras llanas. Como tal, tienen permisos adicionales de costura en esas costuras. Al cortar estas piezas, **debes** incluir esta costura extra.
--   El guardia del corte y la placa del corte no tienen posibilidad de costura. Eso es normal, simplemente cortarlos como se dibujan sobre el patrón.
--   No cortes los dardos en la pieza **atrás**. Deberían marcarlos, pero no cortarlos.
+ - El **frente derecha**, **frente izquierdo**, y **manga** tienen costuras que deben hacerse en costuras llanas. Como tal, tienen permisos adicionales de costura en esas costuras. Al cortar estas piezas, **debes** incluir esta costura extra.
+ - El guardia del corte y la placa del corte no tienen posibilidad de costura. Eso es normal, simplemente cortarlos como se dibujan sobre el patrón.
+ - No cortes los dardos en la pieza **atrás**. Deberían marcarlos, pero no cortarlos.
 
 </Warning>
+
+
