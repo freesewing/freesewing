@@ -19,7 +19,7 @@ Its goal is to determine whether we should draft a *complete* pattern, or merely
 
 The [paperless](/reference/api/settings#paperless) setting is a boolean that is either true or false.
 
-A *paperless* pattern is a pattern that has extra dimensions so users can trace the 
+A *paperless* pattern is a pattern that has extra dimensions so users can trace the
 paper on fabric or paper without having the need to print it.
 
 ## Seam allowance
@@ -62,4 +62,3 @@ export default function(part) {
   return part
 }
 ```
-

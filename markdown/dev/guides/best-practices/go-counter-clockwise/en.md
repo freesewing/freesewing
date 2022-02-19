@@ -13,12 +13,11 @@ Obviously, the order in which you add points to your code needs to take a backse
 to the logic of your code. But typically what you're doing is constructing an outline
 of (a part of) a garment.
 
-So pick a point, and make your way around counter-clockwise. 
+So pick a point, and make your way around counter-clockwise.
 
 When naming control points for curves, re-use the name of the point they are attached to
 and add `Cp1` to the control point before and `Cp2` to the control point after the point if
 , once again, you'd follow your path counter-clockwise.
-
 
 For example:
 

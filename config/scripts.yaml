@@ -22,6 +22,8 @@ create-freesewing-pattern:
   modulebuild: '!'
   cibuild_step1: '!'
   build: '!'
+  test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs'
+  testci: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs'
 css-theme:
   cibuild_step1: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   build: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
