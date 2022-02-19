@@ -80,7 +80,7 @@ Comme pour l'option décalage, les dernières options pour déterminer la forme 
 
 ![Contrôle des points d'ancrage](sleevecapspread.svg)
 
-Nous avons maintenant tous les points de départ et d'arrivée pour dessiner les 5 courbes qui constitueront nos têtes de manche. Il nous manque les points de contrôle (voir [nos informations sur les courbes de Bézier ](https://freesewing.dev/concepts/beziercurves) pour en savoir plus sur la façon dont les courbes sont construites). Celles-ci sont déterminées par ce que l'on appelle *répartition*.
+Nous avons maintenant tous les points de départ et d'arrivée pour dessiner les 5 courbes qui constitueront nos têtes de manche. Il nous manque les points de contrôle (voir [nos informations sur les courbes de Bézier](https://freesewing.dev/concepts/beziercurves) pour en savoir plus sur la façon dont les courbes sont construites). Celles-ci sont déterminées par ce que l'on appelle *répartition*.
 
 Pour chacun des points d'ancrage (ceux marqués en orange, pas les points 1 et 2), une option permet de contrôler la répartition vers le haut, et vers le bas :
 

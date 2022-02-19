@@ -1,0 +1,35 @@
+name: Check Docs
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - 'markdown/**'
+  pull_request:
+    branches:
+      - develop
+    paths:
+      - 'markdown/**'
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Remark
+        run: npm install remark-cli remark-frontmatter remark-lint-emphasis-marker remark-lint-list-item-indent remark-preset-lint-consistent remark-preset-lint-recommended
+      - name: Check Docs
+        run: npm run checkdocs
+

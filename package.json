@@ -30,8 +30,8 @@
     "contributors:generate": "all-contributors generate",
     "famadd": "all-contributors add",
     "famgen": "all-contributors generate",
-    "checkdocs": "remark ./markdown/ --quiet --frail",
-    "fixdocs": "remark ./markdown/ --quiet --frail --output"
+    "checkdocs": "remark markdown --use remark-preset-lint-consistent --use remark-preset-lint-recommended --quiet --frail",
+    "fixdocs": "remark markdown --use remark-preset-lint-consistent --use remark-preset-lint-recommended --output"
   },
   "repository": {
     "type": "git",
