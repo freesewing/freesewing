@@ -30,8 +30,8 @@
     "contributors:generate": "all-contributors generate",
     "famadd": "all-contributors add",
     "famgen": "all-contributors generate",
-    "checkdocs": "remark ./markdown/dev/guides/best-practices/ --quiet --frail",
-    "fixdocs": "remark ./markdown/dev/guides/best-practices/ --quiet --frail --output"
+    "checkdocs": "remark ./markdown/ --quiet --frail",
+    "fixdocs": "remark ./markdown/ --quiet --frail --output"
   },
   "repository": {
     "type": "git",
