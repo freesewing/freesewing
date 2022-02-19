@@ -1,12 +1,12 @@
-***
-
-***
+- - -
+- - -
 
 Controla la ubicación de la costura del hombro en el lado del cuello.
 
--   Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del cuello
--   Disminuye esta opción para desplazar la costura del hombro hacia atrás en el lado del cuello
+- Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del cuello
+- Disminuye esta opción para desplazar la costura del hombro hacia atrás en el lado del cuello
+
+
 
 ## Efecto de esta opción en el patrón
-
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](huey_s3collar_sample.svg "Efecto de esta opción en el patrón")
