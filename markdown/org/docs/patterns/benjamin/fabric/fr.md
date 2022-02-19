@@ -17,3 +17,4 @@ L'objectif principal de l'entoilage est de donner à votre nœud papillon la str
 Il est bon de faire un essai avec l'entoilage sur un morceau de chute de votre tissu, en particulier avec le type thermocollant. You want to make sure you get the structure you like before committing it to your pattern pieces.
 
 Bien que le patron appelle à l'application d'entoilage sur toutes les parties, si vous avez un tissu épais ou rigide, vous ne pourrez peut-être faire qu'un seul côté ou aucun côté.
+
