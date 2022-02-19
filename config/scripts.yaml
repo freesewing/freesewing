@@ -2,7 +2,7 @@ _:
   clean: 'rimraf dist'
   build: 'rollup -c'
   cibuild_step1: 'rollup -c'
-  test: 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
+  test: &notests 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
   pubtest: 'npm publish --registry http://localhost:6662'
   pubforce: 'npm publish'
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
@@ -10,11 +10,11 @@ _:
 _types:
   pattern:
     netlify: 'echo "Not configured yet"'
-    test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register'
-    testci: 'BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register'
+    test: &test 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register'
+    testci: &testci "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js"
   plugin:
-    test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register'
-    testci: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register'
+    test: *test
+    testci: *testci
     prettier: "npx prettier --write 'src/*.js' 'tests/*.mjs'"
 create-freesewing-pattern:
   clean: '!'
@@ -22,14 +22,14 @@ create-freesewing-pattern:
   modulebuild: '!'
   cibuild_step1: '!'
   build: '!'
-  test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs'
-  testci: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs'
+  test: *test
+  testci: *testci
 css-theme:
   cibuild_step1: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   build: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   watch: 'npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css'
 components:
-  test: 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
+  test: *notests
   storybook: 'start-storybook -p 6663'
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
@@ -40,14 +40,14 @@ components:
 core:
   testonly: 'BABEL_ENV=production mocha tests/*.test.js'
   test: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js'
-  testci: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack mocha tests/*.test.js'
+  testci: "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js"
   report: 'BABEL_ENV=production nyc report --reporter=html'
   coverage: 'BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
 i18n:
   # react-scripts doesn't handle .mjs files correctly
   modulebuild: '!'
-  test: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
-  testci: 'BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register'
+  test: *test
+  testci: *testci
   prebuild: 'node src/prebuild.mjs'
 pattern-info:
   cibuild_step1: '!'
