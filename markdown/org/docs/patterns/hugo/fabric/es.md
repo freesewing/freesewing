@@ -7,7 +7,7 @@ Asegúrese de prestar atención al interior de la tela. La tela de la camisa de 
 <Note>
 
 No tienes que usar tela de sudadera. Hay otras opciones disponibles, desde neopreno de moda (aka scuba) hasta una opción más llamativa como velour triturado (aka terciopelo).
-
+ 
 O si usted ha renunciado a la clase, podría ir a por la pulga.
 
 </Note>
