@@ -2,19 +2,19 @@
 
 ![Fermer les coutures latérales et les coutures d'épaule](step01.png)
 
-Mettez le devant et le dos l'un sur l'autre *endroit contre endroit*. Cousez les coutures latérales et les coutures d'épaules. Si vous avez une surjeteuse, c'est un bon moment pour l'utiliser. Si ce n'est pas le cas, finissez vos coutures autrement.
+Put front and back on top of each other with *good sides together*. Cousez les coutures latérales et les coutures d'épaules. Si vous avez une surjeteuse, c'est un bon moment pour l'utiliser. Si ce n'est pas le cas, finissez vos coutures autrement.
 
 ## Étape 2 : Faire l'ourlet
 
 ![Faire l'ourlet](step02.png)
 
-Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilisez-la. Sinon, utilisez une *aiguille double* ou un *point zig-zag* pour garder la couture extensible.
+Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilisez-la. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
 
 <Note>
 
-##### Pliez une seule fois, pour éviter d'avoir trop d'épaisseur
+##### Fold only once, to avoid bulk
 
-Le tricot ne s'effiloche pas, vous pouvez donc simplement le plier une fois et le coudre, puis couper le tissu au plus près de la couture.
+Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 </Note>
 
@@ -38,7 +38,7 @@ Dans les deux cas, moins vous avez d'arrondi "serré", plus il sera facile de le
 
 </Note>
 
-Nous finirons par le trou du bras et du cou avec un [biais de jersey](/docs/sewing/knit-binding) (Remarque : pas une bande de jersey. Il y a une différence, et elle est expliquée [ici](/docs/sewing/knit-binding)).
+We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. Il y a une différence, et elle est expliquée [ici](/docs/sewing/knit-binding)).
 
 <Note>
 
@@ -143,9 +143,9 @@ Une fois de plus, vous devrez étirer un peu votre biais en faisant cela. Mais c
 
 <Note>
 
-##### Méfiez-vous du flux inégal
+##### Beware of the uneven feed
 
-Lorsque vous alimentez votre liaison à travers votre machine à coudre, les chiens d'alimentation tirent la couche inférieure (arrière de votre liaison) vers l'avant.
+As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
 
 Dans un monde parfait, toutes les épaisseurs suivent sans problème.
 Mais le plus souvent, la couche supérieure (face avant de votre biais) a tendance à se traîner un peu.
