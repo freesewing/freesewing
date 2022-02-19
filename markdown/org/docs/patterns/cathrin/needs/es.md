@@ -6,10 +6,10 @@ Puedes encontrar una buena guía de otras herramientas en [Fundaciones Reveladas
 
 Lista de suministros de muestra:
 
--   About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
--   About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
--   Bonito
--   Grommets (size 2)
--   Aproximadamente 2 metros de sesgo
--   A unos 3 metros de lacado
--   Tools: Grommet setter, awl
+* About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+* About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+* Bonito
+* Grommets (size 2)
+* Aproximadamente 2 metros de sesgo
+* A unos 3 metros de lacado
+* Tools: Grommet setter, awl
