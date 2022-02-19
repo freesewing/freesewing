@@ -93,11 +93,7 @@ const WorkbenchMenu = props => {
           {props.gist.renderer === 'react' && <Xray {...props} />}
         </>
       )}
-      {props.gist?._state?.view === 'test' && (
-        <>
-          <TestDesignOptions {...props} />
-        </>
-      )}
+      {props.gist?._state?.view === 'test' && <TestDesignOptions {...props} />}
     </nav>
   )
 }
