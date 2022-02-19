@@ -21,16 +21,17 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"create-freesewing-pattern: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "test": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w"
+    "start": "rollup -c -w",
+    "testci": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
     "chalk": "^4.1.1",
-    "commander": "^8.1.0",
+    "commander": "^9.0.0",
     "conf": "^10.0.1",
     "cp-file": "^9.0.0",
     "execa": "^5.1.0",

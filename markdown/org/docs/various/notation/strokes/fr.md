@@ -6,9 +6,13 @@ Les concepteurs peuvent, s'ils le souhaitent, utiliser les épaisseurs de lignes
 
 Pour référence, voici les différentes épaisseurs de lignes disponibles :
 
-<Legend part="lineWidths" caption="The different line widths" >
+<Legend part="lineWidths">
+The different line widths
+</Legend>
 
 Et ici sont les différents styles de trait :
 
-<Legend part="lineStrokes" caption="The different line strokes" >
+<Legend part="lineStrokes">
+The different line strokes
+</Legend>
 
