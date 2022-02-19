@@ -12,3 +12,4 @@ Vaya a [/account/consent](/account/consent/) y al objeto en la sección **datos 
 El derecho a objetar es más amplio, pero así es como se aplica a la libertad de expresión.
 
 </Note>
+
