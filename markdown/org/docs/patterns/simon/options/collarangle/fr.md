@@ -15,5 +15,4 @@ Dans l'image d'exemple, le haut est de 80 degrés par défaut et le bas est de 1
 </Note>
 
 ## Effet de cette option sur le motif
-
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarangle_sample.svg "Effet de cette option sur le motif")
