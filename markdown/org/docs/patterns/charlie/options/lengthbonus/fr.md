@@ -1,3 +1,4 @@
+
 Contrôle la longueur du pantalon entier, ce qui signifie essentiellement la longueur des jambes.
 
 <Note>
@@ -10,5 +11,4 @@ le pantalon devra être plus long que celui-ci pour toucher le sol.
 </Note>
 
 ## Effet de cette option sur le motif
-
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_lengthbonus_sample.svg "Effet de cette option sur le motif")
