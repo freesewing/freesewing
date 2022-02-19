@@ -3,10 +3,9 @@ title: Deine Schnittmuster
 order: 400
 ---
 
-Wenn du ein maßgeschneidertes Schnittmuster erstellst, kannst du es ohne Ende anpassen und in verschiedenste Formate exportieren, einschließlich PDF.\
-Aber es bleibt vergänglich, bis du es in deinem Account speicherst, wo es zu einem **deiner Schnittmuster** wird.
+When you generate a made-to-measure pattern, you can tweak it endlessly, and export it to a variety of formats, including PDF.\ But it remains ephemeral until you save it to your account, so it becomes one of **your patterns**.
 
-Das Speichern deines Schnittmusters ist optional, es erlaubt dir aber, es später noch einmal aufzurufen, weitere Anpassungen vorzunehmen oder einfach die PDF noch einmal herunterzuladen.
+Saving your pattern is optional, but it allows you to re-visit the pattern later, make further tweaks to it or simply download the PDF again.
 
 Du kannst so viele Schnittmuster erstellen wie du möchtest.
 
@@ -15,9 +14,9 @@ Du kannst so viele Schnittmuster erstellen wie du möchtest.
 ##### Schnittmuster vs. Designs
 
 Wenn du auf der Suche nach *Schnittmustern* auf diese Seite gestoßen bist, hast du sie womöglich unter *Designs* gefunden.
-Es ist keine super wichtige Unterscheidung, aber es hilft dem Verständnis:
+It's not a super important distinction, but it helps to understand that:
 
--   **Design**: Einer der Styles, die wir anbieten. Wir haben Dutzende von Designs, und du kannst sie alle ausprobieren
-    \-**Schnittmuster**: Das Ergebnis, wenn du aus einem dieser Styles ein Schnittmuster generierst. Wir haben Tausende von Schnittmustern für unsere Nutzer/innen gespeichert, und ein paar davon sind vielleicht von dir
+-   **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
+-   **Pattern**: The result of generating one of those styles into a pattern. Wir haben Tausende von Schnittmustern für unsere Nutzer/innen gespeichert, und ein paar davon sind vielleicht von dir
 
 </Tip>
