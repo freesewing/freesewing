@@ -12,3 +12,4 @@ Pour ce faire, allez à [/Mon Ccompte/Paramètres/Actions/Révisez votre consent
 Le droit d'opposition est plus large, mais c'est ainsi que ça s'applique sur Freesewing.
 
 </Note>
+
