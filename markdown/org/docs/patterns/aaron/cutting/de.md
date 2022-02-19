@@ -4,10 +4,10 @@
 
 <Warning>
 
-#### Achtung
+#### Caveats
 
--   Es gibt keine Nahtzugabe an den Armlöchern
--   Es gibt keine Nahtzugabe an der Halsöffnung
--   Es gibt eine zusätzliche Saumzugabe am Saum
+-   There is no seam allowance on the armholes
+-   There is no seam allowance on the neck opening
+-   There is extra hem allowance at the hem
 
 </Warning>
