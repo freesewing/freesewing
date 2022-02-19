@@ -1,3 +1,4 @@
+
 ### Paso 1: Une la costura central
 
 Une la costura curvada en el centro de nuestra mascarilla colocando los *derechos juntos* y cosiéndolos.
@@ -27,11 +28,11 @@ Como ésta es una costura curvada, no quedará plana. Pero se puede acercar la p
 
 Ahora coseremos la tela interior (forro) a la tela exterior (principal), y uniremos las cintas en un solo paso.
 
--   Pon el forro hacia abajo con el lado derecho hacia arriba.
--   Luego, pon dos cintas en las esquinas de un lado (como en nuestro ejemplo) para que sobresalgan un poco de la mascarilla, pero la cinta se extiende hacia dentro.
--   Ahora pon la tela principal encima con el derecho hacia abajo. Ahora deberías tener ambas capas de tu mascarilla una encima de la otra con *derecho juntos* y dos cintas enrolladas entre ellas
--   Pon alfileres a través de las cintas y las capas de tela para mantenerlas en su lugar
--   Ahora haz lo mismo en el otro lado
+ - Pon el forro hacia abajo con el lado derecho hacia arriba.
+ - Luego, pon dos cintas en las esquinas de un lado (como en nuestro ejemplo) para que sobresalgan un poco de la mascarilla, pero la cinta se extiende hacia dentro.
+ - Ahora pon la tela principal encima con el derecho hacia abajo. Ahora deberías tener ambas capas de tu mascarilla una encima de la otra con *derecho juntos* y dos cintas enrolladas entre ellas
+ - Pon alfileres a través de las cintas y las capas de tela para mantenerlas en su lugar
+ - Ahora haz lo mismo en el otro lado
 
 <Tip>
 
@@ -81,3 +82,4 @@ Asegúrate de que el lado abierto esté plegado de forma clara en el interior, y
 ¡Eso es todo! Ahora puedes ponerte tu máscara.
 
 Aún mejor, haz un montón para que también puedas darles mascarillas a otros.
+
