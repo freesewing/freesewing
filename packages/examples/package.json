@@ -31,7 +31,7 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w",
     "netlify": "echo \"Not configured yet\"",
-    "testci": "BABEL_ENV=production ./node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register"
+    "testci": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.mjs --require @babel/register --jobs 4 --parallel --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
     "@freesewing/core": "^2.20.6",
