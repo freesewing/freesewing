@@ -19,16 +19,16 @@ Het punt van deze afmeting is bepalen op welke hoogte het volste deel van je bus
 
 <Tip>
 
-##### Denk na over welke hand je gebruikt
+##### Think about which hand you're using
 
-Als je jezelf meet probeer je meetband aan je schouder vast te houden met de hand aan
-dezelfde kant van je lichaam als de schouder die je meet. Dus, je zou bijvoorbeeld de bovenkant van
-de band tot aan je rechter schouder kunnen houden met je rechterhand. terwijl je linkerhand het einde houdt.
+If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on
+the same side of your body as the shoulder you're measuring. So, for example, you could be holding the top of
+the tape up to your right shoulder with your right hand, while your left hand is holding the end.
 Maar dat betekent dat je de lengte die je probeert te meten verdraait door je arm aan dezelfde kant op te tillen.
-Je denkt misschien niet dat er een verschil is, maar alles is verbonden in de wereld van fysiologie, en
-dit doen kunnen leiden tot een fout van ~2. cm (~1 inch) in je maat.\
-Verander gewoon je handen rond, dan krijg je een nauwkeurigere meting.
+You might not think there is a difference, but all is connected in the world of physiology, and
+doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.\
+Simply switch your hands around, and you get a more accurate measurement.
 
-Neem voor het beste resultaat een tweede persoon om uw metingen te nemen (indien mogelijk).
+For best results, get a second person to take your measurements (if possible).
 
 </Tip>
