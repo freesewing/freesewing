@@ -5,7 +5,6 @@ title: Hauteur de poitrine
 <Note>
 
 ###### Le Point Haut de l’Épaule ou PHE est utilisé comme base pour plusieurs mesures verticales.
-
 Reportez-vous à la [documentation PHE](/docs/measurements/hps/) pour savoir comment localiser ce point.
 
 </Note>
@@ -18,16 +17,16 @@ L'objectif de cette mensuration est de déterminer la part la plus importante ve
 
 <Tip>
 
-##### Pensez à quelle main vous utilisez
+##### Think about which hand you're using
 
-Si vous vous mesurez, vous pouvez essayer de tenir votre ruban de mesure jusqu'à votre épaule avec la main sur
-le même côté de votre corps que l'épaule que vous mesurez. Ainsi, par exemple, vous pourriez tenir le haut de
-le ruban jusqu'à votre épaule droite avec votre main droite, pendant que votre main gauche tient la fin.
+If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on
+the same side of your body as the shoulder you're measuring. So, for example, you could be holding the top of
+the tape up to your right shoulder with your right hand, while your left hand is holding the end.
 Mais cela signifie que vous déformerez la longueur que vous essayez de mesurer en levant votre bras du même côté.
-Vous ne pensez peut-être pas qu'il y a une différence, mais tout est connecté dans le monde de la physiologie, et
-faire cela pourrait conduire à une erreur de ~2. cm (~1 pouce) dans votre mesure.\
-Il vous suffit de basculer vos mains et vous obtenez une mesure plus précise.
+You might not think there is a difference, but all is connected in the world of physiology, and
+doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.\
+Simply switch your hands around, and you get a more accurate measurement.
 
-Pour de meilleurs résultats, demandez à une seconde personne de prendre vos mesures (si possible).
+For best results, get a second person to take your measurements (if possible).
 
 </Tip>
