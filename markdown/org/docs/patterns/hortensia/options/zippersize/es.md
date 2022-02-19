@@ -24,5 +24,4 @@ If in doubt, or if the size of your zipper is unavailable use the size that is s
 </Note>
 
 ## Efecto de esta opción en el patrón
-
 ![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_zippersize_sample.svg "Effect of this option on the pattern")
