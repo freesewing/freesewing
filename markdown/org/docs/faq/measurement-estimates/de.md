@@ -2,7 +2,7 @@
 title: Was sind diese Symbole neben meinen Maßen?
 ---
 
-Dir sind vielleicht diese Art von Symbolen neben deinen Maßen aufgefallen: <Gauge val={0} theme='light' />
+You might have noticed these kind of icons next to your measurements: <Gauge val={0} theme='light' />
 
 Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Proportionen abweichen, mit denen wir unsere Designs testen:
 
@@ -11,99 +11,90 @@ Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Propor
     <th>
       Symbol
     </th>
-
+    
     <th>
       Beschreibung
     </th>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-6} theme='light' />
     </td>
-
+    
     <td>
       Der Wert ist <strong x-id="1">signifikant niedriger</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-4} theme='light' />
     </td>
-
+    
     <td>
       Der Wert ist <strong x-id="1">ein gutes Stück niedriger</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-2} theme='light' />
     </td>
-
+    
     <td>
       Der Wert ist <strong x-id="1">ein bisschen niedriger</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-1} theme='light' />
     </td>
-
+    
     <td>
       Der Wert ist <strong x-id="1">sehr nah</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={1} theme='light' />
     </td>
-
+    
     <td>
       Der Wert ist <strong x-id="1">sehr nah</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={2} theme='light' />
     </td>
-
+    
     <td>
       Der Wert ist <strong x-id="1">ein bisschen höher</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={4} theme='light' />
     </td>
-
+    
     <td>
       Der Wert ist <strong x-id="1">ein gutes Stück höher</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={6} theme='light' />
     </td>
-
+    
     <td>
       Der Wert ist <strong x-id="1">signifikant höher</strong>
     </td>
-
   </tr>
 </table>
 
