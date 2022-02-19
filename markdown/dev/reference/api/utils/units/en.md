@@ -16,5 +16,3 @@ The [Part.shorthand](/reference/api/part/shorthand/) call provides a context-awa
 `unit()` method that will call this method and pass it the units requested by the user.
 
 </Tip>
-
-

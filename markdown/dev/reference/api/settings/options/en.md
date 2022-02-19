@@ -1,8 +1,8 @@
---- 
+---
 title: options
 ---
 
-The `options` setting allows you to specify values for the pattern-specific 
+The `options` setting allows you to specify values for the pattern-specific
 options that have been implemented by the pattern designer.
 
 The available options are listed in the pattern configuration.
@@ -22,4 +22,3 @@ const pattern = new Brian({
 ```
 
 <Note>Unlike measurements, options come with defaults.</Note>
-

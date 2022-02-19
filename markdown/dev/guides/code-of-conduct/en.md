@@ -14,6 +14,7 @@ This Code of Conduct is an almost verbatim copy of the [Contributor Covenant][ho
 available at [http://contributor-covenant.org/version/2/0][version]
 
 [homepage]: http://contributor-covenant.org
+
 [version]: http://contributor-covenant.org/version/2/0/
 
 </Note>

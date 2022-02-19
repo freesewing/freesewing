@@ -12,4 +12,3 @@ snippets.demo = new Snippet('button', points.anchor)
 <Example part="snippets_button">
 An example of the button snippet
 </Example>
-

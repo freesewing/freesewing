@@ -20,8 +20,8 @@ When this returns 2 intersections, you can choose how they are ordered in the re
 
 Set sort to:
 
- - `x` : The point with the lowest X-coordinate will go first (left to right)
- - `y` : The point with the lowest Y-coordinate will go first (top to bottom)
+-   `x` : The point with the lowest X-coordinate will go first (left to right)
+-   `y` : The point with the lowest Y-coordinate will go first (top to bottom)
 
 <Example part="utils_lineintersectscircle">
 A Utils.lineIntersectsCircle() example
@@ -78,4 +78,3 @@ snippets.second2 = new Snippet("notch", intersections2[1]);
 snippets.first3 = new Snippet("bnotch", intersections3[0]);
 snippets.second3 = new Snippet("notch", intersections3[1]);
 ```
-

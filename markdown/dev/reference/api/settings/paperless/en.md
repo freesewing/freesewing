@@ -1,4 +1,4 @@
---- 
+---
 title: paperless
 ---
 
@@ -15,4 +15,3 @@ const pattern = new Brian({
   paperless: true
 })
 ```
-

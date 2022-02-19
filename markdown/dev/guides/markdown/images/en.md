@@ -20,9 +20,8 @@ followed by a space and the image title between quotes.
 
 ##### Images go in the same folder as your markdown file
 
-The convention is to always place your images in the same folder as the 
+The convention is to always place your images in the same folder as the
 text where you are including the image. That way, you just need to specify
 the image name, and not the path to its location.
 
 </Tip>
-

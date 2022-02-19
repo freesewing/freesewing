@@ -8,18 +8,18 @@ about: Slash and spread is easy enough on paper, here's how to do it in code
 
 ##### See this example in our source code
 
- - [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/8474477911daed3c383700ab29c9565883f16d66/packages/jaeger/src/front.js#L64)
+-   [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/8474477911daed3c383700ab29c9565883f16d66/packages/jaeger/src/front.js#L64)
 
 </Note>
 
-When we _slash and spread_ a pattern, we cut out a triangle, and then rotate it
+When we *slash and spread* a pattern, we cut out a triangle, and then rotate it
 around the tip of the triangle.
 
 And that's exactly what we do in code. We just need to know:
 
- - What point we want to rotate around
- - Which points we want to rotate
- - By how much we want to rotate
+-   What point we want to rotate around
+-   Which points we want to rotate
+-   By how much we want to rotate
 
 ```js
 let rotate = [

@@ -2,7 +2,7 @@
 title: cutonfold
 ---
 
-The `cutonfold` macro adds a *cut on fold* indicator to your pattern.  
+The `cutonfold` macro adds a *cut on fold* indicator to your pattern.\
 It is provided by the [cutonfold plugin](/reference/plugins/cutonfold).
 
 <Example part="plugin_cutonfold">
@@ -17,7 +17,7 @@ macro('cutonfold', {
 })
 ```
 
-| Property    | Default | Type                | Description | 
+| Property    | Default | Type                | Description |
 |------------:|---------|---------------------|-------------|
 | `from`      |         | [Point](/reference/api/point) | The startpoint of the *cut on fold* indicator |
 | `to`        |         | [Point](/reference/api/point) | The endpoint of the *cut on fold* indicator |
@@ -29,9 +29,7 @@ macro('cutonfold', {
 
 ###### It's safe to use a corner of your pattern part for this
 
-Since this is typically used on corners, the generated cut-on-fold indicator 
+Since this is typically used on corners, the generated cut-on-fold indicator
 will not go all the way to the `to` and `from` points.
 
 </Note>
-
-

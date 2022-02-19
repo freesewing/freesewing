@@ -4,12 +4,12 @@ title: "@freesewing/plugin-buttons"
 
 The **@freesewing/plugin-buttons** plugin provides the following [snippets](/reference/api/snippets):
 
- - [button](/reference/api/snippets/button)
- - [buttonhole](/reference/api/snippets/buttonhole)
- - [buttonhole-start](/reference/api/snippets/buttonhole-start)
- - [buttonhole-end](/reference/api/snippets/buttonhole-end)
- - [snap-stud](/reference/api/snippets/snap-stud)
- - [snap-socket](/reference/api/snippets/snap-socket)
+-   [button](/reference/api/snippets/button)
+-   [buttonhole](/reference/api/snippets/buttonhole)
+-   [buttonhole-start](/reference/api/snippets/buttonhole-start)
+-   [buttonhole-end](/reference/api/snippets/buttonhole-end)
+-   [snap-stud](/reference/api/snippets/snap-stud)
+-   [snap-socket](/reference/api/snippets/snap-socket)
 
 <Example part="plugin_buttons">
 An example of the button, buttonhole, buttonhole-start, buttonhole-end, snap-stud, and snap-socket snippets
@@ -41,11 +41,10 @@ const Pattern = new freesewing.Design(config, buttons);
 ```
 
 Now you can use the
-[button](/reference/api/snippets/button), 
-[buttonhole](/reference/api/snippets/buttonhole), 
-[buttonhole-start](/reference/api/snippets/buttonhole-start), 
-[buttonhole-end](/reference/api/snippets/buttonhole-end), 
-[snap-stud](/reference/api/snippets/snap-stud), and 
+[button](/reference/api/snippets/button),
+[buttonhole](/reference/api/snippets/buttonhole),
+[buttonhole-start](/reference/api/snippets/buttonhole-start),
+[buttonhole-end](/reference/api/snippets/buttonhole-end),
+[snap-stud](/reference/api/snippets/snap-stud), and
 [snap-socket](/reference/api/snippets/snap-socket)
 snippets in your designs.
-

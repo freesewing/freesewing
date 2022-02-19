@@ -7,4 +7,3 @@ float rad2deg(float radians)
 ```
 
 Returns the radians you pass to it as degrees.
-

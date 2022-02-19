@@ -12,4 +12,3 @@ snippets.demo = new Snippet('logo', points.anchor)
 <Example part="snippets_logo">
 An example of the logo snippet
 </Example>
-

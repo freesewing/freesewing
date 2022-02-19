@@ -2,7 +2,7 @@
 title: "@freesewing/plugin-scalebox"
 ---
 
-The **@freesewing/plugin-scalebox** plugin provides [the 
+The **@freesewing/plugin-scalebox** plugin provides [the
 scalebox macro](/reference/api/macros/scalebox/) with facilitates
 adding a scalebox to your design, so users can verify that the pattern
 is printed at the correct scale.

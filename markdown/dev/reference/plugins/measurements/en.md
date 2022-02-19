@@ -9,13 +9,13 @@ they can be deduced from the measurements that are provided.
 
 It will add the following measurements:
 
- - `seatFront` (if both `seat` and `seatBack` are provided)
- - `seatBackArc` (if both `seat` and `seatBack` are provided) 
- - `seatFrontArc` (if both `seat` and `seatBack` are provided)
- - `waistFront` (if both `waist` and `waistBack` are provided)
- - `waistBackArc` (if both `waist` and `waistBack` are provided) 
- - `waistFrontArc` (if both `waist` and `waistBack` are provided)
- - `crossSeamBack` (if both `crossSeam` and `crossSeamFront` are available)
+-   `seatFront` (if both `seat` and `seatBack` are provided)
+-   `seatBackArc` (if both `seat` and `seatBack` are provided)
+-   `seatFrontArc` (if both `seat` and `seatBack` are provided)
+-   `waistFront` (if both `waist` and `waistBack` are provided)
+-   `waistBackArc` (if both `waist` and `waistBack` are provided)
+-   `waistFrontArc` (if both `waist` and `waistBack` are provided)
+-   `crossSeamBack` (if both `crossSeam` and `crossSeamFront` are available)
 
 ## Installation
 
@@ -35,4 +35,3 @@ import config from "../config";
 
 const Pattern = new freesewing.Design(config, measurements);
 ```
-

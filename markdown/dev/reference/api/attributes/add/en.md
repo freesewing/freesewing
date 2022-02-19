@@ -8,7 +8,7 @@ Attributes attributes.add(string key, string value)
 
 Adds `value` to the attribute identified by `key`.
 
-Adding multiple values to the same key will result in them being joined together 
+Adding multiple values to the same key will result in them being joined together
 (with a space) when rendering.
 
 ```js
@@ -28,4 +28,3 @@ paths.demo = new Path()
 paths.demo = new Path()
   .attr('class', 'classA classB');
 ```
-

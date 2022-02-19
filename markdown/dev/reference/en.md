@@ -3,8 +3,7 @@ title: Reference
 order: zdd
 ---
 
-You can find a list of all FreeSewing reference documentation below: 
-
+You can find a list of all FreeSewing reference documentation below:
 
 <ReadMore recurse />
 
@@ -17,4 +16,3 @@ Reference materials hold technical descriptions of the underlying technology and
 For more details, refer to [How we structure our documentation](/guides/docs).
 
 </Related>
-

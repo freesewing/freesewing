@@ -2,7 +2,7 @@
 title: "@freesewing/plugin-banner"
 ---
 
-The **@freesewing/plugin-banner** plugin provides 
+The **@freesewing/plugin-banner** plugin provides
 [the banner macro](/reference/api/macros/banner).
 This macro allows you to add repeating text along a path.
 
@@ -29,7 +29,5 @@ import config from "../config";
 const Pattern = new freesewing.Design(config, banner);
 ```
 
-Now you can use the 
+Now you can use the
 [banner](/reference/api/macros/banner/) macros in your parts.
-
-

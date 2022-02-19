@@ -20,6 +20,7 @@ const condition = settings => {
   else return false // Do not load the plugin
 }
 ```
+
 You pass your plugin and condition method as a third parameter to the Design constructor
 with the `plugin` and `condition` keys respectively.
 
@@ -50,16 +51,15 @@ const Pattern = new freesewing.Design(
 
 Our condition method will return `true` only if the following conditions are met:
 
- - A `settings` object is passed into the method
- - `settings.options` is _truthy_
- - `settings.options.draftForHighBust` is _truthy_
- - `settings.options.measurements.highBust` is _truthy_
+-   A `settings` object is passed into the method
+-   `settings.options` is *truthy*
+-   `settings.options.draftForHighBust` is *truthy*
+-   `settings.options.measurements.highBust` is *truthy*
 
 This is a real-world example from our Teagan pattern. A t-shirt pattern that can be
-drafted to the high bust (rather than the full chest circumference) if the user 
+drafted to the high bust (rather than the full chest circumference) if the user
 choses so.
 
 But that feat is handled auto-magically by `plugin-bust` which is a build-time plugin.
 So whether to load this plugin or not hinges on the user settings, which is why we
 load this plugin conditionally.
-

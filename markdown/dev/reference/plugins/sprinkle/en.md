@@ -2,7 +2,7 @@
 title: "@freesewing/plugin-sprinkle"
 ---
 
-The **@freesewing/plugin-sprinkle** plugin provides [the 
+The **@freesewing/plugin-sprinkle** plugin provides [the
 sprinkle macro](/reference/api/macros/sprinkle/) which is a faster way
 to add several of the same snippets to your designs (think of it as
 *sprinkling* them onto your parts).

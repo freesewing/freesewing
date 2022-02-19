@@ -4,7 +4,7 @@ for: developers
 about: Shows you how to setup your development environment to work on freesewing.dev, our website for developers
 ---
 
-freesewing.dev is built from a package in our monorepo. You will need the following setup and installed before you begin: Node, [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/). 
+freesewing.dev is built from a package in our monorepo. You will need the following setup and installed before you begin: Node, [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/).
 
 To get started, checkout the repository:
 

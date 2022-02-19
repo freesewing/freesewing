@@ -13,15 +13,15 @@ array | Point | false utils.curveIntersectsY(
 
 Finds the point(s) where a curve intersects a given Y-value.
 
-This is a low-level variant 
+This is a low-level variant
 of [`Path.intersectsY()`](/reference/api/path/#pathintersectsy).
 Instead of a path, you describe a single curve by passing the four
 points that describes it.
 
-This returns `false` if no intersections are found, 
-a [Point](/reference/api/point/) object if 
-a single intersection is found, and an array 
-of [Point](/reference/api/point/) objects if 
+This returns `false` if no intersections are found,
+a [Point](/reference/api/point/) object if
+a single intersection is found, and an array
+of [Point](/reference/api/point/) objects if
 multiple intersections are found.
 
 <Example part="utils_curveintersectsy">A Utils.curveIntersectY() example</Example>
@@ -69,4 +69,3 @@ for (let p of utils.curveIntersectsY(
 ))
   snippets[p.x] = new Snippet("notch", p);
 ```
-

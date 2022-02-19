@@ -33,14 +33,14 @@ At the end of this tutorial, you will have created this pattern:
 
 <Example pattern="tutorial" part="bib">Your end result</Example>
 
-Before we can get started, let's make sure you have the required software 
+Before we can get started, let's make sure you have the required software
 installed on your computer:
 
 ## Prerequisites
 
 FreeSewing is a JavaScript library that runs on [Node.js](https://nodejs.org/).
 
-If you don't have Node.js on your system, follow the link above and 
+If you don't have Node.js on your system, follow the link above and
 install it on your system.
 
 When you're done, you can test whether it works by running:

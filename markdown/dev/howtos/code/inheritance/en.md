@@ -7,7 +7,7 @@ about: Shows how you can use one design as the basis for another
 If your pattern is based on, or extending, another pattern (some of) your
 pattern parts will need to be drafted by the parent pattern.
 
-In such a case, rather than return our own draft method for the part, you 
+In such a case, rather than return our own draft method for the part, you
 should instantiate the parent pattern, and return its part draft method:
 
 ```js

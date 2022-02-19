@@ -3,7 +3,7 @@ title: Reporting a percentage option value in millimeter
 ---
 
 Percentage options are great for parametric desing, but not always
-very intuitive for the user. For example: Setting the `chestEase` 
+very intuitive for the user. For example: Setting the `chestEase`
 option to `9%` is not very meaningful unless you happen to know
 what that percentage is based on.
 
@@ -13,7 +13,7 @@ millimeter.
 
 ## Structure
 
-The `toAbs` property should hold a function with the following 
+The `toAbs` property should hold a function with the following
 signature:
 
 ```js
@@ -24,10 +24,9 @@ function toAbs(percentage, settings) {
 
 The first parameter is the percentage value provided by the user (for example
 `0.5` for `50%`).
-The second parameter is the pattern's run-time configuration 
+The second parameter is the pattern's run-time configuration
 or [settings](/reference/api/settings) which holds -- among other things -- the
 measurements provided by the user.
-
 
 ## Example
 
@@ -46,7 +45,7 @@ chestEase: {
 }
 ```
 
-With object destructuring and fat-arrow notation, 
+With object destructuring and fat-arrow notation,
 you can write it a bit terser like this:
 
 ```js
@@ -55,10 +54,10 @@ toAbs: (val, { measurements }) => measurements.chest * val
 
 ## Using pctBasedOn for simple measurement fractions
 
-Many percentage options represent a simple fraction of a measurement 
+Many percentage options represent a simple fraction of a measurement
 (chest circumference in the example above).
 
-As this scenario is so common, `@freesewing/core` exports a `pctBasedOn` method 
+As this scenario is so common, `@freesewing/core` exports a `pctBasedOn` method
 that will do the work for you:
 
 ```js
@@ -81,8 +80,7 @@ const config = {
 ```
 
 This will not only add an `toAbs()` method to your option -- one that will return
-the value in millimeter of whatever percentage the option is set to -- it will 
+the value in millimeter of whatever percentage the option is set to -- it will
 also add a `fromAbs()` method that does the inverse: return the percentage of
-any millimeter value passed into it. See [Setting a value in millimeter as a 
+any millimeter value passed into it. See [Setting a value in millimeter as a
 percentage option](/api/config/options/pct/fromabs) for details.
-

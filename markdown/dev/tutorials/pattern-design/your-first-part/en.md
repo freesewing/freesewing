@@ -3,7 +3,7 @@ title: Your first part
 order: 120
 ---
 
-Much like garments themselves, patterns are made up of *parts*. 
+Much like garments themselves, patterns are made up of *parts*.
 
 Most patterns will have multiple parts. A sleeve, a back part, the collar, and so on.
 Our pattern is very simple, and only has one part: the bib.
@@ -24,14 +24,14 @@ Update the **parts** array with `bib`, rather than `box`:
 ```js
 parts: ["bib"],
 ```
+
 <Note>
 
-  ##### Don't worry about the big red error
-  
-  This will (temporarily) cause en error to appear in your development environment, because the rest of the code is still expecting to find a part named `box`, but we will fix this in the next steps.
-  
-</Note>
+##### Don't worry about the big red error
 
+This will (temporarily) cause en error to appear in your development environment, because the rest of the code is still expecting to find a part named `box`, but we will fix this in the next steps.
+
+</Note>
 
 When that's done, rename the `src/box.js` file into `src/bib.js`.
 
@@ -67,12 +67,11 @@ In our case, we have a part named `bib` so we're using `draftBib()` as the metho
 
 </Tip>
 
-Congratulations, your pattern now has a `bib` part, rather than a `box` part. 
+Congratulations, your pattern now has a `bib` part, rather than a `box` part.
 It still looks the same though:
 
 <Example pattern="tutorial" part="step1">
 Our bib part, which is the renamed box part
 </Example>
-
 
 This `bib` part is where we'll do some real work. But first, we have some more configuration to do.

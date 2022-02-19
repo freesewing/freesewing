@@ -26,10 +26,9 @@ and `defs` sections and an opening tag for an SVG group.
 
 ###### This does not include the opening SVG tag
 
-Note that while [Pattern.svg.tail](/reference/api/pattern/svg/tail/) closes the SVG tag, 
-[Pattern.svg.head](/reference/api/pattern/head/) does not open it. 
+Note that while [Pattern.svg.tail](/reference/api/pattern/svg/tail/) closes the SVG tag,
+[Pattern.svg.head](/reference/api/pattern/head/) does not open it.
 That's because the `width`, `height` and `viewBox` attributes will
 depend on the main body of the SVG document.
 
 </Note>
-

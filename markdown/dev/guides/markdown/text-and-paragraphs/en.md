@@ -10,7 +10,7 @@ You can just start writing.
 
 An empty line starts a new paragraph.
 ```
+
 You can just start writing.
 
 An empty line starts a new paragraph.
-

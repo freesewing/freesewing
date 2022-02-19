@@ -8,7 +8,7 @@ about: Adding seam allowance or hem allowance is easy to do
 
 ##### See this example in our source code
 
- - [packages/bruce/src/inset.js](https://github.com/freesewing/freesewing/blob/develop/packages/bruce/src/inset.js#L34)
+-   [packages/bruce/src/inset.js](https://github.com/freesewing/freesewing/blob/develop/packages/bruce/src/inset.js#L34)
 
 </Note>
 
@@ -20,8 +20,8 @@ seam allowance.
 
 In the example below we have two such paths:
 
-  - `paths.saBase` is the path that will require regular seam allowance
-  - `paths.hemBase` is the path that will require more seam allowance, or hem allowance
+-   `paths.saBase` is the path that will require regular seam allowance
+-   `paths.hemBase` is the path that will require more seam allowance, or hem allowance
 
 When creating them, we disable rendering, effectively hiding them.
 Then we string together our real path and our seam allowance based on them:

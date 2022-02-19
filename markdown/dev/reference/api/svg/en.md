@@ -14,4 +14,3 @@ want to develop a plugin, or use a custom layout:
 ## Svg properties
 
 <ReadMore list />
-

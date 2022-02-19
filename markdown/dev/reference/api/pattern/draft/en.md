@@ -13,7 +13,7 @@ that are required for the pattern to be drafted.
 
 ```js
 Pattern pattern.draft()
-``` 
+```
 
 ## Pattern.draft() example
 
@@ -29,5 +29,4 @@ const pattern = new Aaron({
 })
 
 const svg = pattern.draft().render()
-``` 
-
+```

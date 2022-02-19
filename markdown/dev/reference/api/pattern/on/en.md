@@ -2,7 +2,7 @@
 title: Pattern.on()
 ---
 
-A pattern's `on()` method allows you to attach a function to one of the 
+A pattern's `on()` method allows you to attach a function to one of the
 pattern's [lifecycle hooks](/reference/hooks/). It takes the
 lifecycle hook's name as the first argument and the function as the second.
 This method will then be triggered by the lifecycle hook.
@@ -13,7 +13,7 @@ This method will then be triggered by the lifecycle hook.
 
 ```js
 Pattern pattern.on(string hook, function method)
-``` 
+```
 
 <Tip>
 
@@ -38,4 +38,3 @@ Your pattern now has a yellow background.
 The [plugin guide](/guides/plugins/) contains more info on how you can use hooks
 
 </Tip>
-

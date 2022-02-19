@@ -42,5 +42,3 @@ snippets.X = new Snippet(
   utils.linesIntersect(points.A, points.B, points.C, points.D)
 );
 ```
-
-

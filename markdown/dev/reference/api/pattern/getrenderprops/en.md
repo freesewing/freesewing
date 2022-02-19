@@ -2,7 +2,7 @@
 title: Pattern.getRenderProps()
 ---
 
-A pattern's `getRenderProps()` method will return a set of properties 
+A pattern's `getRenderProps()` method will return a set of properties
 that allow the pattern to be rendered be an external renderer such as
 a React component. It should only be called after calling `Pattern.draft()`.
 
@@ -10,7 +10,7 @@ a React component. It should only be called after calling `Pattern.draft()`.
 
 ```js
 Object pattern.getRenderProps()
-``` 
+```
 
 The object returned by this method contains the following properties:
 
@@ -29,7 +29,6 @@ See [the Draft React component](/reference/packages/components/draft/) for more 
 
 </Tip>
 
-
 ## Pattern.getRenderProps() example
 
 ```jsx
@@ -44,5 +43,4 @@ const MyReactComponent = ({ measurements }) => {
 }
 
 export default MyReactComponent
-``` 
-
+```

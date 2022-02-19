@@ -21,20 +21,20 @@ Enter the newly installed repository:
 cd freesewing.org
 ```
 
-Copy the `.env.example` file to `.env`. If you just want to get the site running you don't need to edit the values inside the `.env` file. But if you want to use any of the integrations (e.g. Google Authentication, Algolia search) you will need to enter your own values to this file. 
+Copy the `.env.example` file to `.env`. If you just want to get the site running you don't need to edit the values inside the `.env` file. But if you want to use any of the integrations (e.g. Google Authentication, Algolia search) you will need to enter your own values to this file.
 
 ```bash
 cp .env.example .env
 ```
 
-Because freesewing.org is in the process of moving to the monorepo, it's using shared components from the monorepo as a submodule. You will need to initialize the monorepo submodule. Do so with the following git commands: 
+Because freesewing.org is in the process of moving to the monorepo, it's using shared components from the monorepo as a submodule. You will need to initialize the monorepo submodule. Do so with the following git commands:
 
 ```bash
 git submodule init
 git submodule update
 ```
 
-Before running the above command the `monorepo` folder will be empty. After running the above commands you should see files in the `monorepo` folder. 
+Before running the above command the `monorepo` folder will be empty. After running the above commands you should see files in the `monorepo` folder.
 
 Now install the dependencies:
 

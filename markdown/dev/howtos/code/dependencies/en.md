@@ -18,7 +18,7 @@ dependencies: {
 }
 ```
 
-This could be from a T-shirt pattern where the `front` and `back` patterns are very similar, 
+This could be from a T-shirt pattern where the `front` and `back` patterns are very similar,
 so they both are inheriting a `base` part.
 In addition, the `sleeve` part needs to be drafted after the `front` and `back` part because
 in `front` and `back` we store the length of the armhole seam in the [store](/reference/api/store) and
@@ -26,9 +26,9 @@ we need that info to fit the sleevecap to the armhole.
 
 Now if a user requests to draft only the `sleeve` part, FreeSewing will still draft:
 
- - First the `base` part
- - Then the `front` and `back` parts
- - Finally the `sleeve` part
+-   First the `base` part
+-   Then the `front` and `back` parts
+-   Finally the `sleeve` part
 
 but it will only render the `sleeve` part, as that's the only thing the user requested.
 

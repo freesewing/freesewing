@@ -14,4 +14,3 @@ It is structured as follows:
   // Other parts follow
 }
 ```
-

@@ -7,18 +7,18 @@ file give designers flexility to make one pattern with different variations.
 
 ## The use case for (design) options
 
-One of the things that sets FreeSewing apart is that sewing patterns are not 
-static. Each pattern is generated on the spot to accommodate the input 
+One of the things that sets FreeSewing apart is that sewing patterns are not
+static. Each pattern is generated on the spot to accommodate the input
 provided by the user. Input that typically includes their measurments.
 
-This *made-to-measure* approach is sort of *our thing* at FreeSewing, 
+This *made-to-measure* approach is sort of *our thing* at FreeSewing,
 but why stop there?
-There's a lot of things that can be left up to the user and taken into 
+There's a lot of things that can be left up to the user and taken into
 consideration when drafting the pattern. Things like how many buttons to use,
 whether or not to include pockets, shape of the collar, and so on. The only
 limit really is the creativity of the designer.
 
-The `options` section in a pattern's configuration file is what makes this 
+The `options` section in a pattern's configuration file is what makes this
 possible.
 
 ## The five option types you should know
@@ -26,11 +26,11 @@ possible.
 There are the five option types that an aspiring pattern designer should be
 familiar with:
 
-1. [**boolean** options][bool] are for yes/no choices
-1. [**counter** options][count] are for integer values
-1. [**degree** options][deg] are for degrees
-1. [**list** options][list] are for a list of possible choices
-1. [**percentage** options][pct] are for percentages
+1.  [**boolean** options][bool] are for yes/no choices
+2.  [**counter** options][count] are for integer values
+3.  [**degree** options][deg] are for degrees
+4.  [**list** options][list] are for a list of possible choices
+5.  [**percentage** options][pct] are for percentages
 
 <Tip>
 
@@ -43,10 +43,10 @@ They also have the most features and flexibility.
 
 For the sake of completeness, here are the two other types of options:
 
-6. [**constant** options][const] are used as
-[feature flags](https://en.wikipedia.org/wiki/Feature_toggle)
-6. [**millimeter** options][const] are **deprecated** (in favor of [snapped 
-percentage options][snapped])
+6.  [**constant** options][const] are used as
+    [feature flags](https://en.wikipedia.org/wiki/Feature_toggle)
+7.  [**millimeter** options][const] are **deprecated** (in favor of [snapped
+    percentage options][snapped])
 
 </Related>
 
@@ -66,7 +66,6 @@ How you configure the default value depends on the option type
 
 </Note>
 
-
 ### Optionally hide options by configuring a `hide()` method
 
 <Note>
@@ -84,9 +83,9 @@ it is not intended as a way to block access to a given option. It merely hides i
 
 By default options are shown to the user when:
 
- - They are not a constant option 
- - **and**
- - They are included in an optionGroup
+-   They are not a constant option
+-   **and**
+-   They are included in an optionGroup
 
 You can further control the optional display of options by adding a method
 to the `hide` key under you option, as such:
@@ -111,8 +110,8 @@ So you can make a choice whether to show the option or not.
 
 If it's not obvious from the name, your `hide()` method you should:
 
-- Return `true` or a truthy value to hide the option
-- Return `false` or a falsy value to show the option 
+-   Return `true` or a truthy value to hide the option
+-   Return `false` or a falsy value to show the option
 
 <Tip>
 
@@ -122,16 +121,20 @@ If you do not specify a `hide()` method, it will be populated with the default
 `hide()` method -- which always returns `false` thus always showing the option.
 
 In other words, the `hide()` option is always there and will always get called
-to determine whether an option should be shown or not. 
+to determine whether an option should be shown or not.
 
 </Tip>
 
-
 [bool]: /reference/api/config/options/bool
-[const]: /reference/api/config/options/const
-[count]: /reference/api/config/options/count
-[deg]: /reference/api/config/options/deg
-[list]: /reference/api/config/options/list
-[pct]: /reference/api/config/options/pct
-[snapped]: /reference/api/config/options/pct/snap
 
+[const]: /reference/api/config/options/const
+
+[count]: /reference/api/config/options/count
+
+[deg]: /reference/api/config/options/deg
+
+[list]: /reference/api/config/options/list
+
+[pct]: /reference/api/config/options/pct
+
+[snapped]: /reference/api/config/options/pct/snap

@@ -22,11 +22,11 @@ our website for makers.
 
 To generate a pattern, you will need to:
 
- - Instantiate the pattern (`new ...`)
- - Pass it the settings and measurements you want to use (`{ ... }`)
- - Load the theme plugin (using `use()`)
- - Draft the pattern (using `draft()`)
- - Render it to SVG  (using `render()`)
+-   Instantiate the pattern (`new ...`)
+-   Pass it the settings and measurements you want to use (`{ ... }`)
+-   Load the theme plugin (using `use()`)
+-   Draft the pattern (using `draft()`)
+-   Render it to SVG  (using `render()`)
 
 Which can be done as a one-liner since `use()`, `draft()` and
 `render()` are all chainable, as shown below.
@@ -64,11 +64,11 @@ console.log(svg)
 
 ##### Remarks on the example code
 
-- We are using `@freesewing/aaron` as the design, but you could use any design
-- You probably want to [use your own measurements](/reference/api/settings/measurements)
-or you could use `@freesewing/models` to load measurements from [our sizing grid](https://freesewing.org/sizes/)
-- We are using `@freesewing/plugin-theme` to theme our SVG, but you 
-could [pass in your own CSS](/guides/plugins/using-hooks-without-plugin)
+-   We are using `@freesewing/aaron` as the design, but you could use any design
+-   You probably want to [use your own measurements](/reference/api/settings/measurements)
+    or you could use `@freesewing/models` to load measurements from [our sizing grid](https://freesewing.org/sizes/)
+-   We are using `@freesewing/plugin-theme` to theme our SVG, but you
+    could [pass in your own CSS](/guides/plugins/using-hooks-without-plugin)
 
 </Note>
 
@@ -77,11 +77,11 @@ could [pass in your own CSS](/guides/plugins/using-hooks-without-plugin)
 The code above will only work if you've got the required dependencies installed on your system.
 Obviously you need NodeJS, but you will also need the following packages:
 
- - `@freesewing/core`: Our core library
- - `@freesewing/plugin-bundle`: Set of common plugins
- - `@freesewing/aaron` or any design you want to use
- - Any design on which the design you choose is built. In this case, Aaron depends on `@freesewing/brian`
- - `@freesewing/utils`
+-   `@freesewing/core`: Our core library
+-   `@freesewing/plugin-bundle`: Set of common plugins
+-   `@freesewing/aaron` or any design you want to use
+-   Any design on which the design you choose is built. In this case, Aaron depends on `@freesewing/brian`
+-   `@freesewing/utils`
 
 For the example above, your `package.json` **dependencies** section will look like this:
 

@@ -3,7 +3,7 @@ title: Loading build-time plugins
 order: 20
 ---
 
-Build-time plugins are loaded at build time, by passing them to 
+Build-time plugins are loaded at build time, by passing them to
 the [`freesewing.Design`](/reference/api/#design) constructor:
 
 ```js
@@ -24,4 +24,3 @@ import config from "../config"
 
 const Pattern = new freesewing.Design(config, [plugins, gorePlugin] )
 ```
-

@@ -3,7 +3,7 @@ title: Setting a value in millimeter as a percentage option
 ---
 
 Percentage options are great for parametric desing, but not always
-very intuitive for the user. For example: A user may desire 13 
+very intuitive for the user. For example: A user may desire 13
 centimeters (5 inches) of chest ease. But what percentage should
 they set the `chestEase` option to to accomplish this?
 
@@ -15,7 +15,7 @@ value.
 <Note>
 
 Note that this method will not change the percentage of the option.
-It will merely return return a percentage value. It is up to the 
+It will merely return return a percentage value. It is up to the
 frontend designer to then either set this value, or suggest it to
 the user.
 
@@ -23,7 +23,7 @@ the user.
 
 ## Structure
 
-The `fromAbs` property should hold a function with the following 
+The `fromAbs` property should hold a function with the following
 signature:
 
 ```js
@@ -34,10 +34,9 @@ function toAbs(millimeter, settings) {
 
 The first parameter is the desired value in millimeter (for example
 `130` for `13cm`).
-The second parameter is the pattern's run-time configuration 
+The second parameter is the pattern's run-time configuration
 or [settings](/reference/api/settings) which holds -- among other things -- the
 measurements provided by the user.
-
 
 ## Example
 
@@ -56,7 +55,7 @@ chestEase: {
 }
 ```
 
-With object destructuring and fat-arrow notation, 
+With object destructuring and fat-arrow notation,
 you can write it a bit terser like this:
 
 ```js
@@ -65,10 +64,10 @@ fromAbs: (val, { measurements }) => val /measurements.chest
 
 ## Using pctBasedOn for simple measurement fractions
 
-Many percentage options represent a simple fraction of a measurement 
+Many percentage options represent a simple fraction of a measurement
 (chest circumference in the example above).
 
-As this scenario is so common, `@freesewing/core` exports a `pctBasedOn` method 
+As this scenario is so common, `@freesewing/core` exports a `pctBasedOn` method
 that will do the work for you:
 
 ```js
@@ -90,10 +89,9 @@ const config = {
 }
 ```
 
-This will not only add an `fromAbs()` method to your option -- 
+This will not only add an `fromAbs()` method to your option --
 one that will return the percentage of any millimeter value passed into it --
-it will also add a `toAbs()` method that does the inverse: return the 
+it will also add a `toAbs()` method that does the inverse: return the
 value in millimeter of whatever percentage the option is set to.
-See [Reporting a percentage option value in 
+See [Reporting a percentage option value in
 millimeter](/reference/api/config/options/pct/toabs) for details.
-

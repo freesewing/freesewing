@@ -18,9 +18,7 @@ macro('miniscale', {
 })
 ```
 
-| Property    | Default | Type                | Description | 
+| Property    | Default | Type                | Description |
 |-------------|---------|---------------------|-------------|
 | `at`        |         | [Point](/reference/api/point) | The point to anchor the *scale box* on |
 | `rotate`    | 0       | Number              | Rotation in degrees |
-
-

@@ -13,7 +13,7 @@ to run-time plugins. For more details, refer to [the plugin guide](/guides/plugi
 
 ```js
 Pattern pattern.use(object plugin)
-``` 
+```
 
 See [the plugin guide](/guides/plugins/) for details on how to structure
 you plugin object.
@@ -33,4 +33,4 @@ const pattern = new Aaron({
 }).use(theme)
 
 const svg = pattern.draft().render()
-``` 
+```

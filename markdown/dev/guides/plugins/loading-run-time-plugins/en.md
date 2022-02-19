@@ -22,5 +22,3 @@ const myAaron = new Aaron()
 Plugins that use only hooks are typically run-time plugins
 
 </Tip>
-
-

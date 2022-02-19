@@ -35,7 +35,7 @@ macro('sprinkle', {
 })
 ```
 
-| Property     | Default    | Type       | Description | 
+| Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|
 | `angle`      | `0`        | `number`   | The angle under which to draw the bartack |
 | `density`    | `3`        | `number`   | Controls how close the stitches are togeter |
@@ -47,4 +47,3 @@ macro('sprinkle', {
 | `start`      | `0`        | `number`   | At which fraction of the path length (from `0` to `1`) should the bartack start |
 | `suffix`     |            | `string`   | A suffix to apply to the names of the generated path and points |
 | `width`      | `3`        | `number`   | Width of the bartack |
-

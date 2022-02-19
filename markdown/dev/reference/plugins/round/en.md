@@ -2,13 +2,13 @@
 title: "@freesewing/plugin-round"
 ---
 
-The **@freesewing/plugin-round** plugin provides [the 
-round macro](/reference/api/macros/round) which helps you round 
-corners on your designs. 
+The **@freesewing/plugin-round** plugin provides [the
+round macro](/reference/api/macros/round) which helps you round
+corners on your designs.
 
 <Warning>
 
-##### Straight corners only 
+##### Straight corners only
 
 The round macro is intended for rounding 90° angles.
 It does not support rounding other angles/corners.
@@ -43,5 +43,3 @@ const Pattern = new freesewing.Design(config, round);
 ```
 
 Now you can use [the round macro](/reference/macros/round/): in your parts.
-
-

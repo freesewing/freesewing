@@ -15,6 +15,7 @@ The style attribute is where plugins will add additional snippets.
 <Warning>
 
 ###### Add, but don't overwrite
+
 When adding your own styles, it's important not to
 overwrite this property, but rather add your own.
 
@@ -23,6 +24,7 @@ In other words, do this:
 ```js
 svg.style += myStyles;
 ```
+
 and don't do this:
 
 ```js

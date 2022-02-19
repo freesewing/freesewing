@@ -28,17 +28,17 @@ do {
 
 We've added a few new variables:
 
- - `tweak`: A *tweak factor* that we'll use to increase or decrease the neck opening by making it more or less than 1
- - `target`: How long our (quarter) neck opening should be
- - `delta`: How far we're off. Positive numbers mean it's too long, negative means too short
+-   `tweak`: A *tweak factor* that we'll use to increase or decrease the neck opening by making it more or less than 1
+-   `target`: How long our (quarter) neck opening should be
+-   `delta`: How far we're off. Positive numbers mean it's too long, negative means too short
 
 Now that we know what `target` is, we construct our path as we did before.
 But this time around, we multiply our point coordinates with our `tweak` variable (1 at the start).
 
-Then, we compare our `target` to the result of `paths.neck.length()` which — you guessed it — returns the 
+Then, we compare our `target` to the result of `paths.neck.length()` which — you guessed it — returns the
 length of our neck path.
 
-If the delta is positive, our path is too long and we reduce the tweak factor.  
+If the delta is positive, our path is too long and we reduce the tweak factor.\
 If the delta is negative, our path is too short and we increase the tweak factor.
 
 We keep on doing this until `Math.abs(delta)` is less than 1. Meaning that we are within 1mm of our target value.
@@ -48,4 +48,3 @@ It might look the same as before, but now it's just right
 </Example>
 
 Now that we're happy with the length of our quarter neck opening, let's construct the entire neck opening.
-

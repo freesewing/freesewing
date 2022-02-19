@@ -3,8 +3,7 @@ title: Howtos
 order: zcc
 ---
 
-You can find a list of all FreeSewing hotwtos below: 
-
+You can find a list of all FreeSewing hotwtos below:
 
 <ReadMore recurse />
 
@@ -20,4 +19,3 @@ guides take more time to explain in-depth what is being done and why.
 For more details, refer to [How we structure our documentation](/guides/docs).
 
 </Related>
-

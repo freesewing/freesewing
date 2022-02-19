@@ -8,11 +8,11 @@ about: While documentation is good, sometimes you want to add some instructions 
 
 ##### See this example in our source code
 
- - [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/38d101b0415a4cbf3f9f86e006bd8cb7c43c703b/packages/jaeger/src/front.js#L411)
+-   [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/38d101b0415a4cbf3f9f86e006bd8cb7c43c703b/packages/jaeger/src/front.js#L411)
 
 </Note>
 
-Adding instructions to your pattern is _just_ a matter of adding text.
+Adding instructions to your pattern is *just* a matter of adding text.
 The tricky part is to make sure your text can be translated.
 
 Below is a rather involved example from Aaron:

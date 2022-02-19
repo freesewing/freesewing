@@ -16,13 +16,13 @@ function freesewing.Design(
 ) 
 ```
 
-This constructor creates a new pattern design. 
+This constructor creates a new pattern design.
 It takes the following arguments:
 
- - `config` : The pattern configuration
- - `plugins` : Either a [plugin object](/guides/plugins/), or an array of plugin objects
- - `conditionalPlugins` : Either a [conditional plugin object](/guides/plugins/conditionally-loading-build-time-plugins/), or an array 
- of conditional plugin objects to (conditionally) load in your pattern
+-   `config` : The pattern configuration
+-   `plugins` : Either a [plugin object](/guides/plugins/), or an array of plugin objects
+-   `conditionalPlugins` : Either a [conditional plugin object](/guides/plugins/conditionally-loading-build-time-plugins/), or an array
+    of conditional plugin objects to (conditionally) load in your pattern
 
 ```js
 import freesewing from "@freesewing/core"
@@ -35,9 +35,9 @@ const Sorcha = new freesewing.Design(config, plugins)
 
 <Tip>
 
-This method is a *super-constructor*. It will return a constructor 
+This method is a *super-constructor*. It will return a constructor
 method that will become the default export of your design and
-should be called to instantiate your pattern. 
+should be called to instantiate your pattern.
 
 See [creating a new pattern design](/howtos/code/create-new-design) for a complete example.
 

@@ -15,7 +15,7 @@ roadmap](https://github.com/freesewing/freesewing/discussions/1278) for details.
 
 </Warning>
 
-There are four different types of information with their own method: 
+There are four different types of information with their own method:
 
 <ReadMore list  />
 
@@ -32,13 +32,13 @@ events: {
 
 Calling the relevant `raise` method will add the data you pass to it to the relevant array.
 
-For example, if we use: 
+For example, if we use:
 
 ```js
 raise.info('Hello')
 ```
 
-The result will be: 
+The result will be:
 
 ```js
 events: {
@@ -62,4 +62,3 @@ But if an error is raised, core won't attempt to pack the pattern parts on the p
 In other words, it will abort after the draft, and not provide a layout.
 
 </Note>
-

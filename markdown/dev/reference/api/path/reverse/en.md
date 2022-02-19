@@ -10,7 +10,7 @@ Returns a path that is the reversed version of this path. As in, start becomes e
 
 <Note>
 
-The reversed path is a shallow copy. 
+The reversed path is a shallow copy.
 It will in other words not inherit the attributes of the original path.
 
 If you want a deep copy, including the attributes, use `Path.clone().reverse()`.

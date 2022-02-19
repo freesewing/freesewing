@@ -12,4 +12,3 @@ snippets.demo = new Snippet('bnotch', points.anchor)
 ```
 
 <Example part="snippets_bnotch">An example of the bnotch snippet</Example>
-

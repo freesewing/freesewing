@@ -13,4 +13,3 @@ snippets.demo = new Snippet('snap-socket', points.anchor)
 <Example part="snippets_snapsocket">
 An example of the snap-socket snippet
 </Example>
-

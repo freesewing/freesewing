@@ -1,7 +1,7 @@
 ---
 title: split
 ---
- 
+
 ```js
 array path.split(Point splitPoint)
 ```

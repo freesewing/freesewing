@@ -27,4 +27,3 @@ paths.line = new Path()
   .attr("data-text", "Path._close()")
   .attr("data-text-class", "text-sm right fill-note");
 ```
-

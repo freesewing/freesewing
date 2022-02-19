@@ -10,10 +10,10 @@ Snippet snippet.attr(
 )
 ```
 
-This `Snippet.attr()` method calls [`Attributes.add()`](./attributes#add) under the hood, 
+This `Snippet.attr()` method calls [`Attributes.add()`](./attributes#add) under the hood,
 but returns the Snippet object.  This allows you to chain different calls together.
 
-If the third parameter is set to `true` it will call [`Attributes.set()`](./attributes#set) instead, 
+If the third parameter is set to `true` it will call [`Attributes.set()`](./attributes#set) instead,
 thereby overwriting the value of the attribute.
 
 <Example part="snippet_attr">

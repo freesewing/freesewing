@@ -2,8 +2,8 @@
 title: "@freesewing/plugin-cutonfold"
 ---
 
-The **@freesewing/plugin-cutonfold** plugin provides 
-[the cutonfold macro](/reference/api/macros/cutonfold) which adds a cut-on-fold 
+The **@freesewing/plugin-cutonfold** plugin provides
+[the cutonfold macro](/reference/api/macros/cutonfold) which adds a cut-on-fold
 indicator to your design.
 
 <Example part="plugin_cutonfold">

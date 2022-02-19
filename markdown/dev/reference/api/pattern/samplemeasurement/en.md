@@ -5,7 +5,7 @@ title: Pattern.sampleMeasurement()
 A pattern's `sampleMeasurement()` method will *sample* a given measurement,
 which means to draft it in different iterations while adjusting the input value
 of the given measurement.
-In practice, it will draft 10 iterations of the pattern 
+In practice, it will draft 10 iterations of the pattern
 while adapting the measurement between 90% and 110% of its original value.
 
 <Tip>
@@ -34,5 +34,4 @@ import models from "@freesewing/models"
 const pattern = new Aaron({ measurements: models.manSize38 })
 
 const svg = pattern.sampleMeasurement("chest").render()
-``` 
-
+```

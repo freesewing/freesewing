@@ -4,7 +4,7 @@ title: Part.shorthand()
 
 A part's `shorthand()` method provides easy access to a number of
 internal objects and properties. It does so be returning an object
-that contains all you need to draft your pattern parts. It is 
+that contains all you need to draft your pattern parts. It is
 typically combined with object destructuring to pull out those
 properties you need.
 
@@ -80,8 +80,7 @@ paths.example = new Path()
 
 <Tip>
 
-As you can see in the example above, you can/should load only 
+As you can see in the example above, you can/should load only
 the shorthand you need by using object destructuring.
 
 </Tip>
-

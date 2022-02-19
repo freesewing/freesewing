@@ -2,8 +2,8 @@
 title: FreeSewing in the browser
 ---
 
-Thanks to the advances in browser standardisation around Javascrip 
-ESM modules, not to mention [the new Skypack CDN](https://www.skypack.dev/), 
+Thanks to the advances in browser standardisation around Javascrip
+ESM modules, not to mention [the new Skypack CDN](https://www.skypack.dev/),
 you can generate patterns in the browser with a few lines of Javascript.
 
 <Tip>
@@ -21,19 +21,18 @@ our website for makers.
 
 To generate a pattern, you will need to:
 
- - Instantiate the pattern (`new ...`)
- - Pass it the settings and measurements you want to use (`{ ... }`)
- - Load the theme plugin (using `use()`)
- - Draft the pattern (using `draft()`)
- - Render it to SVG  (using `render()`)
+-   Instantiate the pattern (`new ...`)
+-   Pass it the settings and measurements you want to use (`{ ... }`)
+-   Load the theme plugin (using `use()`)
+-   Draft the pattern (using `draft()`)
+-   Render it to SVG  (using `render()`)
 
 Which can be done as a one-liner since `use()`, `draft()` and
 `render()` are all chainable, as shown below.
 
 ## Code example
 
-Below is a complete example. 
-
+Below is a complete example.
 
 ```html
 <html>
@@ -87,9 +86,7 @@ Below is a complete example.
 
 ## Dependencies
 
-If you compare this example with [our NodeJS 
+If you compare this example with [our NodeJS
 example](/reference/howtos/nodejs) you'll notice that you do not
 need to worry about loading any dependencies. Not even `@freesewing/core`
 is loaded, because Skypack will pull in all dependencies for you.
-
-

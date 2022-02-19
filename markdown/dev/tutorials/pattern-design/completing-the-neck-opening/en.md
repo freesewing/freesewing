@@ -67,4 +67,3 @@ paths.neck = new Path()
 <Example pattern="tutorial" part="step4">
 And now you have a complete neck opening
 </Example>
-
