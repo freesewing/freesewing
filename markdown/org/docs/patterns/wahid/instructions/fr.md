@@ -19,9 +19,9 @@ Placez votre devant avec le côté endroit vers le bas et votre entoilage par-de
 Repassez l'entoilage en place.
 
 > **Prenez votre temps**
->
+> 
 > Ne passez pas le fer simplement pour le repasser, vous voulez vraiment repasser sur votre tissu pour qu'il se thermocolle bien.
->
+> 
 > Placez votre fer à repasser et pressez pendant 10 secondes environ avant de passer au point suivant pour répéter le processus.
 
 ### Étape 2 : Assembler la parementure et la doublure de devant
@@ -35,7 +35,6 @@ Placez votre parementure avant et votre doublure endroit contre endroit. Épingl
 Les coudre ensemble.
 
 #### Repasser sur la marge de couture ouverte
-
 Repassez pour ouvrir les marges de couture entre la parementure et la doublure.
 
 ### Étape 3 : Fermer toutes les pinces
@@ -49,7 +48,6 @@ Repliez le dos endroit contre endroit et cousez la pince dos.
 > N'oubliez pas de faire la même chose pour la doublure
 
 #### Fermer les pinces devant
-
 Repliez votre devant (avec son entoilage thermocollé) endroit contre endroit, et cousez la pince avant.
 
 ### Étape 4 : Repasser toutes les pinces
@@ -57,11 +55,9 @@ Repliez votre devant (avec son entoilage thermocollé) endroit contre endroit, e
 ![Repasser les pinces](04a.png)
 
 #### Repasser les pinces de devant
-
 Une fois coupées ouvertes, Repassez sur les pinces avant ouvertes.
 
 #### Repasser les pinces dos
-
 Si vous coupez les pinces dos, repassez pour les ouvrir. Si ce n'est pas le cas, repassez vers le côté.
 
 > N'oubliez pas de faire la même chose pour la doublure
@@ -77,7 +73,6 @@ Placez votre fond de poche avec l'endroit vers le haut, et votre passepoil de po
 Alignez le côté droit du fond avec le côté du passepoil qui n'a pas d'entoilage, et les coudre ensemble avec la marge de couture standard.
 
 #### Repasser pour ouvrir la couture
-
 Lorsque vous avez terminé, repassez sur cette couture avec les marges ouvertes.
 
 #### Marquer l'emplacement de votre poche
@@ -97,7 +92,7 @@ Si vous n'avez pas encore marqué les quatre coins de ce rectange, vous devriez 
 Placez votre pièce devant avec l'endroit vers le haut. Nous allons fixer le passepoil à la ligne inférieure de votre contour de poche et le parement à la ligne du haut.
 
 > Si vous n'avez jamais fait de poche passepoilée auparavant, cela peut paraître un peu contre-intuitif d'attacher la poche à l'extérieur du vêtement. La poche devrait être à l'intérieur, non ?
->
+> 
 > Détendez-vous, la poche se retrouvera bien à l'intérieur
 
 Tant votre passepoil de poche que votre parement de poche ont une ligne d'aide. Cette ligne doit être alignée sur les bords longs de votre poche.
@@ -253,7 +248,6 @@ Maintenant, pliez votre doublure un peu en retrait du bord de l'emmanchure et é
 Utilisez un point de couture glissée pour coudre à la main la doublure sur le tissu le long de l'emmanchure.
 
 ### Étape 11 : Terminer l'ourlet
-
 Vous vous souvenez que nous n'avons pas fermé l'ouverture laissée à l'étape 9 ? Il est temps de la fermer.
 
 Utilisez un point de couture glissée pour coudre à la main la doublure sur le tissu et ainsi fermer l'ouverture.
