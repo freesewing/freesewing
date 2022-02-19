@@ -10,8 +10,9 @@ Une pince est créé par deux lignes qui se croisent et se rejoignent en pointe.
 
 Les pinces sont utilisées où le tissu a besoin de couvrir les courbes dans plus d'une direction. Vous n'avez pas besoin d'une pince pour vos jambes parce que votre tissu peut suivre la courbure de vos jambes et l'envelopper. Vos fesses ne courbent pas seulement horizontalement, mais aussi verticalement. Ainsi, les fesses et les seins sont généralement des endroits où vous trouverez des pinces.
 
-> Wikipédia a un peu plus à dire sur ce sujet : [Dart (couture) sur Wikipedia](http://en.wikipedia.org/wiki/Dart_\(sewing\)) (en anglais car il n'y a pas d'équivalent en français pour cette page)
->
+> Wikipédia a un peu plus à dire sur ce sujet : [Dart (couture) sur Wikipedia](http://en.wikipedia.org/wiki/Dart_(sewing)) (en anglais car il n'y a pas d'équivalent en français pour cette page)
+> 
 > Des chapitres entiers de livres sur la couture et la conception de patrons sont consacrés aux pinces. Savoir comment et où les utiliser n'est pas si simple. Mais pour ce site web, savoir ce qu'elles sont est suffisant.
 
-> Photo de [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/)
+
+> Photo de [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/) 
