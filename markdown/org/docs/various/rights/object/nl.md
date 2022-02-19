@@ -12,3 +12,4 @@ Ga naar [account/consent](/account/consent/) en geef je bezwaar aan bij de **mod
 Het recht op bezwaar is breder, maar dit is hoe het van toepassing is bij FreeSewing.
 
 </Note>
+
