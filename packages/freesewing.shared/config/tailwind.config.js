@@ -20,7 +20,7 @@ module.exports = {
   },
   theme: {
     extend: {
-      colors: require('daisyui/colors'),
+      colors: require('daisyui'),
     },
   },
 }
