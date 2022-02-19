@@ -5,23 +5,21 @@ title: Corte de Holmes
 The **gore** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Materiales
-
--   **Tela principal**
-    -   Cut the amount of **gores** you selected in the pattern options
-    -   Corta **4 partes** del oído o corta **del oído** del principal y del revestimiento.
-    -   Cut **4 bill** parts
--   **Tela fina**
-    -   Cut the amount of **gores** you selected in the pattern options
--   **Bill Insert Material**
-    -   Cut **2 bill inserts**. Use your bill pattern piece with no seam allowance.
+ - **Tela principal**
+   - Cut the amount of **gores** you selected in the pattern options
+   - Corta **4 partes** del oído o corta **del oído** del principal y del revestimiento.
+   - Cut **4 bill** parts
+ - **Tela fina**
+   - Cut the amount of **gores** you selected in the pattern options
+ - **Bill Insert Material**
+   - Cut **2 bill inserts**. Use your bill pattern piece with no seam allowance.
 
 ### Telas opcionales
-
 Si no desea utilizar cinta para sus corbatas, puede fabricarlas a partir de tejidos. Basta con cortar 4 tiras de grano cruzado de un 1" (2. cm) o anchura de su elección + franquicias de costura de ancho y coser dos tubos dejando uno de los lados cortos abiertos para girar. Recorta las esquinas y recorta las costuras. Apagar una prensa. Si lo desea, puede ***Edgestión*** o ***Topstitch*** los tubos para detener el desplazamiento de la tela. El borde en bruto de las válvulas puede entonces ocultarse en la costura de la tapa, cuando se construyen las tapas de los oídos.
 
 <Note>
 
-Se recomienda dibujar la red de patrones y utilizar el patrón para rastrear las líneas de costura en el tejido y añadir la franquicia de costura en el tejido en lugar del patrón. Esto para permitir una coser más precisa que se necesita para un sombrero. Recommended seam allowance 1/4" (6mm) on the sides of the gores, ear flaps and outer curve of the bills. 1/2" (1.3cm) for the bottom of the gores, ear flaps and inner curve of the bills. Con estos permisos de costura no tendrá que recortar las cuotas si no lo desea.
+Se recomienda dibujar la red de patrones y utilizar el patrón para rastrear las líneas de costura en el tejido y añadir la franquicia de costura en el tejido en lugar del patrón. Esto para permitir una coser más precisa que se necesita para un sombrero. Recommended seam allowance 1/4" (6mm) on the sides of the gores, ear flaps and outer curve of the bills. 1/2" (1.3cm) for the bottom of the gores, ear flaps and inner curve of the bills. Con estos permisos de costura no tendrá que recortar las cuotas si no lo desea.  
 
 </Note>
 <Warning>
