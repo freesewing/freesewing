@@ -1,5 +1,4 @@
-***
-
-***
+- - -
+- - -
 
 <PatternOptions pattern='bella' />
