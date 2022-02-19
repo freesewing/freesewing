@@ -6,7 +6,7 @@ De **schouderhelling** maat geeft aan hoe scherp je schouders naar beneden helle
 
 Om je schouderhelling te meten moet je bepalen in welke hoek je schouderlijn naar beneden loopt.
 
-Een goede manier om je schouderhelling te meten is een selfie nemen en die te roteren tot je schouderlijn horizontaal is.
+A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
 
 De hoek waaronder je de foto hebt moeten roteren is je schouderhelling.
 
