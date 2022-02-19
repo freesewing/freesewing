@@ -6,6 +6,6 @@
 
 > Cette option permet également des valeurs négatives. Ils feront baisser le front central.
 
-## Effet de cette option sur le motif
 
+## Effet de cette option sur le motif
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_frontrise_sample.svg "Effet de cette option sur le motif")
