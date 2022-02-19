@@ -1,5 +1,5 @@
 > ### Images à venir bientôt
->
+> 
 > Ces instructions sont un travail en cours et nous n'avons pas encore créé d'illustrations. Ils seront ajoutés bientôt.
 
 ## Étape 1 : Rejoignez le dos
@@ -37,7 +37,7 @@ Marquez le milieu de la longueur de votre ceinture. Fold the waistband double, a
 Un peu à gauche et à droite de ceci, vous pouvez ajouter deux oeillets pour passer un cordon à travers. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Il est préférable d'ajouter des renforts
->
+> 
 > As swimwear fabric is slippery and thin, you might want to add some reinforcement behind these eyelets. Un morceau de denim restant fera très bien.
 
 ## Étape 6 : Préparez l'élastique
@@ -57,7 +57,7 @@ Pliez votre ceinture double le long de la longueur avec de bons côtés dehors e
 Align the back of your swim trunks with the place where you joined the waistband, align the edge of the waistband with the edge of the back, and pin them together. Assurez-vous de le fixer sur le mauvais côté du dos.
 
 > ### Pensez à vos oeillets
->
+> 
 > If you've made eyelets in your waistband, double check that they are placed towards the outside, not the inside of your waistband.
 
 Find the front of the waistband (easy if there's eyelets, if not just fold it double) and align that with the front seam. Épingler cela aussi en place.
@@ -73,7 +73,7 @@ It's fine to not sew too close the first time around, and once your elastic is a
 Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilisez-la. Dans le cas contraire, utilisez une aiguille jumelle ou un point de zig-zag pour garder la couture tendue.
 
 > ### Ne pliez qu'une seule fois, pour éviter le vrac
->
+> 
 > Le tissu de maillot de bain ne ravit pas, vous pouvez donc simplement le plier une fois et le coudre vers le bas, puis couper soigneusement le tissu.
 
 ## Étape 10: Fil de tirage autour de la taille
