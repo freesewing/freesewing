@@ -6,10 +6,10 @@ Vous pouvez trouver un bon guide pour d'autres outils sur [Fondations Révélée
 
 Liste d'échantillons de fournitures:
 
--   About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
--   About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
--   Assaisonnement
--   Grommets (size 2)
--   Environ 2 mètres de bande de biais
--   Environ 3 mètres de lacage
--   Tools: Grommet setter, awl
+* About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+* About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+* Assaisonnement
+* Grommets (size 2)
+* Environ 2 mètres de bande de biais
+* Environ 3 mètres de lacage
+* Tools: Grommet setter, awl
