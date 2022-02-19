@@ -8,15 +8,15 @@ Either try using a different E-mail address, or [reach out to us](https://discor
 
 <Note>
 
-##### Es más probable que los usuarios de Francia se topen con este problema
+##### Users in France are more likely to run into this problem
 
-En Francia, varios proveedores de correo electrónico comparten el mismo filtro:
+In France, several E-mail providers share the same filtering:
 
--   gratis. r
+-   free.fr
 -   laposte.net
 -   organge.fr
 -   sfr.fr
 
-Todos ellos son conocidos por causar problemas con los envíos.
+They are all known to cause issues with deliveries.
 
 </Note>
