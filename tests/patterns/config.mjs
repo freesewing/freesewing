@@ -31,6 +31,14 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     expect(typeof pattern.config.version).to.equal('string')
     expect(pattern.config.version.length > 1).to.be.true
   })
+  it(`  - 'version' should be a proper semantic version`, () => {
+    const chunks = pattern.config.version.split('.')
+    if (chunks.length > 3) {
+      expect(pattern.config.version.split('.').length).to.equal(4)
+      expect(chunks[2]).to.contain('-rc')
+    }
+    else expect(pattern.config.version.split('.').length).to.equal(3)
+  })
   for (let key of ['design', 'code']) {
     it(`  - '${key}' should be a string or array of strings`, () => {
       if (typeof pattern.config[key] === 'string') {
