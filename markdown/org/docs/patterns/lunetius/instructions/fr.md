@@ -1,9 +1,6 @@
-***
-
+- - -
 title: Instructions
-
-***
-
+- - -
 <Note>
 
 All the sewing can be done by machine or by hand as you prefer. If you want to sew with historically accurate thread, you can use linen or wool thread, or silk if you prefer.
@@ -12,7 +9,7 @@ All the sewing can be done by machine or by hand as you prefer. If you want to s
 
 ### Step 1: Sewing and finishing the centre back seam
 
--   If you cut Lunetius with a centre back seam, sew this up first and finish the seam in some way. You can do this by binding it, or by felling it to the fabric. On a stretch fabric simply sewing up the centre back seam is enough.
+- If you cut Lunetius with a centre back seam, sew this up first and finish the seam in some way. You can do this by binding it, or by felling it to the fabric. On a stretch fabric simply sewing up the centre back seam is enough.
 
 <Tip>
 
@@ -20,13 +17,13 @@ When done by hand, this can be done with a spaced backstitch, or a running stitc
 
 On the machine a regular straight stitch in any size will work.
 
-Felling the edges by hand can be done with a felling stitch, or a running stitch if you prefer. On the machine you can use any stitch you use to hem fabric.
+Felling the edges by hand can be done with a felling stitch, or a running stitch if you prefer. On the machine you can use any stitch you use to hem fabric. 
 
 </Tip>
 
 ### Step 2: Hemming the edges
 
--   The next and last step is to finish the edges. This can be done by turning a hem on the whole edge, or by using a binding. Once this is done, you are finished!
+- The next and last step is to finish the edges. This can be done by turning a hem on the whole edge, or by using a binding. Once this is done, you are finished!
 
 <Tip>
 
