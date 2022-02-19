@@ -16,4 +16,5 @@ L'aisance peut aussi fonctionner à l'inverse. Quand le tissu est extensible, vo
 
 L'aisance négative est utilisée pour les matières extensibles lorsque le vêtement doit être ajusté près du corps. Par exemple, pour les maillots de bain, les collants, les sous-vêtements ou les vêtements de sport.
 
-> Images de [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) et [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)
+
+> Images de [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) et [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893) 
