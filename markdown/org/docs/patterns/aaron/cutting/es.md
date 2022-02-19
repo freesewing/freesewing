@@ -4,10 +4,10 @@
 
 <Warning>
 
-#### Cuerdas
+#### Caveats
 
--   No hay permisos de costura en los brazos
--   No hay permisos de costura en la abertura del cuello
--   Hay una franquicia extra en la sombra
+-   There is no seam allowance on the armholes
+-   There is no seam allowance on the neck opening
+-   There is extra hem allowance at the hem
 
 </Warning>
