@@ -1,4 +1,3 @@
-
 <Warning>
 
 ##### The key to Waralee is the waist band
@@ -11,18 +10,19 @@ In a way, Waralee is just a waist band with a long piece of fabric attached. The
 
 <Note>
 
-##### Los bolsillos son opcionales
-Tradicionalmente, estos tipos de pantalones no tienen bolsillos. Pero quiero poner mi teléfono, llaves y monedero en algún lugar. Así que he incluido bolsillos en el patrón. Usted puede decidir por sí mismo si lo desea en sus pantalones.
+##### Pockets are optional
+
+Traditionally, these types of pants do not have pockets. Pero quiero poner mi teléfono, llaves y monedero en algún lugar. Así que he incluido bolsillos en el patrón. Usted puede decidir por sí mismo si lo desea en sus pantalones.
 
 Las ilustraciones en los siguientes pasos muestran los pantalones de Waralee sin bolsillos. Sólo se muestran las colocaciones de los bolsillos del patrón, para ayudarte a orientarte a ti mismo.
 
-##### Si quieres bolsillos, hazlos primero
-Si vas a hacer los bolsillos, fabricarlos antes de poner una pieza de tejido en la otra. Es más fácil trabajar con las piezas aún separadas.
+##### If you do want pockets, make them first
+
+If you're going to make the pockets, make them before putting one piece of fabric on the other. Es más fácil trabajar con las piezas aún separadas.
 
 </Note>
 
 - If desired, sew the pockets.
-
 
 <Note>
 
@@ -74,6 +74,7 @@ For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm.
 <Note>
 
 ##### You can lengthen the front ties
+
 Optionally, to make the front ties longer, extend them by your quarter waist measurement.
 
 When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
@@ -124,4 +125,3 @@ Hold the front side against your belly and wrap both strings around you and tie 
 Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
 
 If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
-
