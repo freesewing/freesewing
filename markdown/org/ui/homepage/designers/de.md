@@ -5,16 +5,15 @@
 
 Parametrisches Design bezieht sich auf das Verwenden von Parametern oder Variablen um das Ergebnis eines bestimmten Designs innerhalb bestimmter Regeln zu beeinflussen.
 
-In Schnittmustern sind die *Parameter* das, was Nutzer/-innen zur Verfügung stellen: ihre Körpermaße und die Optionen, die sie ausgewählt haben.  
-Die *Regeln* des Designs ist das, was du als Designer/-in festlegst.
+In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.\ The _rules_ of the design are what you, the designer, make them.
 
 #### Was bedeutet das für Designer/-innen?
 
-Beim Entwurf oder Design von Schnittmustern oder Kleidungsstücken ist es üblich, mit einem *Schnittmodell* (oder einer *Schneiderpuppe*) zu beginnen. Die Maße des Schnittmodells werden als Input im initialen Design verwendet.
+When drafting or designing patterns or garments, it is common practice to start with a _fit model_ (or _dress form_). Die Maße des Schnittmodells werden als Input im initialen Design verwendet.
 
 Die Anpassung des Schnittmusters an ein anderes Modell ist eine mühsame Aufgabe, weshalb die Schnittmuster hoch- oder runterskaliert werden müssen, um verschiedene Größen abzudecken.
 
-In einem parametrischen Schnittmuster hingegen funktioniert das Anpassen an verschiedene Größen oder Modelle *einfach so*.
+But in a parametric sewing pattern, adapting to different sizes or models _just works_.
 
 #### Was kann FreeSewing für mich tun?
 
