@@ -2,13 +2,13 @@
 
 ![Seiten- und Schulternähte schließen](step01.png)
 
-Put front and back on top of each other with *good sides together*. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
+Put front and back on top of each other with _good sides together_. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
 
 ## Schritt 2: Saum versäubern
 
 ![Versäubere den Saum](step02.png)
 
-Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
+Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
 
 <Note>
 
@@ -52,8 +52,8 @@ Dies ist der einzige Teil, um dieses A-Shirt zu machen, das ein bisschen Praxis 
 
 Das Erste, was wir tun müssen, ist, zu entscheiden, wo wir unsere Bindung ansetzen bzw. stoppen wollen. Ich schlage folgendes vor:
 
--   Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
--   Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
+- Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
+- Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
 
 ### Platzieren Sie den Beginn Ihrer Bindung
 
