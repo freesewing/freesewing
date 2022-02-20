@@ -22,7 +22,7 @@
   </a><a
   href="#contributors-"
   title="All Contributors"
-  ><img src="https://img.shields.io/badge/all_contributors-84-pink.svg"
+  ><img src="https://img.shields.io/badge/all_contributors-85-pink.svg"
   alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
@@ -247,21 +247,24 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/dingcycle"><img src="https://avatars.githubusercontent.com/u/1681985?v=4?s=100" width="100px;" alt=""/><br /><sub><b>dingcycle</b></sub></a><br /><a href="#translation-dingcycle" title="Translation">🌍</a></td>
   </tr>
   <tr>
+    <td align="center"><a href="https://github.com/drowned-in-books"><img src="https://avatars.githubusercontent.com/u/100040772?v=4?s=100" width="100px;" alt=""/><br /><sub><b>drowned-in-books</b></sub></a><br /><a href="#question-drowned-in-books" title="Answering Questions">💬</a></td>
     <td align="center"><a href="https://github.com/econo202"><img src="https://avatars.githubusercontent.com/u/34138153?v=4?s=100" width="100px;" alt=""/><br /><sub><b>econo202</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=econo202" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/ericamattos"><img src="https://avatars.githubusercontent.com/u/4341417?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ericamattos</b></sub></a><br /><a href="#translation-ericamattos" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/fightingrabbit"><img src="https://avatars.githubusercontent.com/u/25751445?v=4?s=100" width="100px;" alt=""/><br /><sub><b>fightingrabbit</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=fightingrabbit" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/DocSpencer77"><img src="https://avatars.githubusercontent.com/u/43393580?v=4?s=100" width="100px;" alt=""/><br /><sub><b>gaylyndie</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=DocSpencer77" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/grimlokason"><img src="https://avatars.githubusercontent.com/u/5112238?v=4?s=100" width="100px;" alt=""/><br /><sub><b>grimlokason</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=grimlokason" title="Code">💻</a></td>
     <td align="center"><a href="https://weblog.redisdead.net"><img src="https://avatars.githubusercontent.com/u/6494414?v=4?s=100" width="100px;" alt=""/><br /><sub><b>hellgy</b></sub></a><br /><a href="#design-hellgy" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/marckiesel"><img src="https://avatars.githubusercontent.com/u/39653780?v=4?s=100" width="100px;" alt=""/><br /><sub><b>marckiesel</b></sub></a><br /><a href="#translation-marckiesel" title="Translation">🌍</a></td>
   </tr>
   <tr>
+    <td align="center"><a href="https://github.com/marckiesel"><img src="https://avatars.githubusercontent.com/u/39653780?v=4?s=100" width="100px;" alt=""/><br /><sub><b>marckiesel</b></sub></a><br /><a href="#translation-marckiesel" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/starfetch"><img src="https://avatars.githubusercontent.com/u/80041179?v=4?s=100" width="100px;" alt=""/><br /><sub><b>starfetch</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=starfetch" title="Code">💻</a> <a href="https://github.com/freesewing/freesewing/commits?author=starfetch" title="Documentation">📖</a> <a href="#translation-starfetch" title="Translation">🌍</a> <a href="#design-starfetch" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/ttimearl"><img src="https://avatars.githubusercontent.com/u/77916590?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ttimearl</b></sub></a><br /><a href="#content-ttimearl" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/chrisgloom"><img src="https://avatars.githubusercontent.com/u/15905991?v=4?s=100" width="100px;" alt=""/><br /><sub><b>tuesgloomsday</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=chrisgloom" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/valadaptive"><img src="https://avatars.githubusercontent.com/u/79560998?v=4?s=100" width="100px;" alt=""/><br /><sub><b>valadaptive</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=valadaptive" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/viocky"><img src="https://avatars.githubusercontent.com/u/39279173?v=4?s=100" width="100px;" alt=""/><br /><sub><b>viocky</b></sub></a><br /><a href="#translation-viocky" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/woolishboy"><img src="https://avatars.githubusercontent.com/u/57816321?v=4?s=100" width="100px;" alt=""/><br /><sub><b>woolishboy</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=woolishboy" title="Code">💻</a></td>
+  </tr>
+  <tr>
     <td align="center"><a href="https://github.com/cloutiy"><img src="https://avatars.githubusercontent.com/u/8433147?v=4?s=100" width="100px;" alt=""/><br /><sub><b>yc</b></sub></a><br /><a href="#translation-cloutiy" title="Translation">🌍</a></td>
   </tr>
 </table>
