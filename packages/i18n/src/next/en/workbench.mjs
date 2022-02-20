@@ -4,6 +4,9 @@
  */
 const workbench = {
   "designOptions": "Design options",
+  "forPrinting": "For printing",
+  "forCutting": "For cutting",
+  "layoutThing": "Layout {thing}",
   "testThing": "Test {thing}"
 }
 

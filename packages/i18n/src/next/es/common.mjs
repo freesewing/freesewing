@@ -3,6 +3,7 @@
  * All edits will be overwritten on the next (pre)build
  */
 const common = {
+  "designs": "Designs",
   "sloganCome": "Come for the sewing patterns",
   "sloganStay": "Stay for the community"
 }
