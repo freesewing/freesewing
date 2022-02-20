@@ -7,13 +7,13 @@ title: Basic sewing supplies
 
 For the sake of clarity, when I refer to basic sewing supplies on this website, I mean the following:
 
--   Tape measure
--   Sewing machine
-    -   Sewing machine needles
-    -   Bobbins
--   Sewing thread
--   Fabric scissors
--   Seam ripper
--   Pins and hand sewing needles
--   Fabric marker/Pencils
--   An iron
+- Tape measure
+- Sewing machine
+  - Sewing machine needles
+  - Bobbins
+- Sewing thread
+- Fabric scissors
+- Seam ripper
+- Pins and hand sewing needles
+- Fabric marker/Pencils
+- An iron

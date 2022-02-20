@@ -25,7 +25,7 @@ let {
 } = part.shorthand()
 ```
 
-The idea behind *paperless patterns* is that users don't need to print your
+The idea behind _paperless patterns_ is that users don't need to print your
 pattern in order to use it.
 Instead, we include dimensions on the pattern that allows them to transfer
 the pattern directly onto fabric, or onto an intermediate medium such as tracing paper.
@@ -36,10 +36,10 @@ markings, depending on the units requested by the user.
 While the grid gets added automatically, the dimensions you have to add yourself.
 Thankfully, there's macros that can help you with that, specifically:
 
--   The `hd` macro adds a horizontal dimension
--   The `vd` macro adds a vertical dimension
--   The `ld` macro adds a linear dimension
--   The `pd` macro adds a path dimension that follows a given path
+- The `hd` macro adds a horizontal dimension
+- The `vd` macro adds a vertical dimension
+- The `ld` macro adds a linear dimension
+- The `pd` macro adds a path dimension that follows a given path
 
 <Note> The documentation, as always, holds [all the information about the macros](/reference/macros/). </Note>
 
@@ -81,7 +81,7 @@ if (paperless) {
 }
 ```
 
-There's a lot going on, but it's mostly repetition. To see what that did to your pattern, you have to enable *paperless mode* in your developing environment; you can find the option under *Pattern options* on the right. Let's look at the end result, and discuss:
+There's a lot going on, but it's mostly repetition. To see what that did to your pattern, you have to enable _paperless mode_ in your developing environment; you can find the option under _Pattern options_ on the right. Let's look at the end result, and discuss:
 
 <Example pattern="tutorial" part="bib" settings_paperless="true">
 Your paperless bib
@@ -89,8 +89,8 @@ Your paperless bib
 
 We used the `hd` macro to add two horizontal dimensions:
 
--   One at the bottom for the width of our bib
--   One for the width of the neck opening
+- One at the bottom for the width of our bib
+- One for the width of the neck opening
 
 The `hd` macro takes a `from` and `to` point as well as a `y` value that says at what Y-value to draw the dimension.
 

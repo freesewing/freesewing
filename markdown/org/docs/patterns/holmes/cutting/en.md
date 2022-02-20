@@ -6,18 +6,18 @@ The **crown** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Materials
 
--   **Main fabric**
-    -   Cut the amount of **crowns** you selected in the pattern options
-    -   Cut **4 ear** parts or Cut **2 ear** from main and lining.
-    -   Cut **4 visor** parts
--   **Lining fabric**
-    -   Cut the amount of **crowns** you selected in the pattern options
--   **Visor Insert Material**
-    -   Cut **2 visor inserts**. Use your visor pattern piece with no seam allowance.
+- **Main fabric**
+  - Cut the amount of **crowns** you selected in the pattern options
+  - Cut **4 ear** parts or Cut **2 ear** from main and lining.
+  - Cut **4 visor** parts
+- **Lining fabric**
+  - Cut the amount of **crowns** you selected in the pattern options
+- **Visor Insert Material**
+  - Cut **2 visor inserts**. Use your visor pattern piece with no seam allowance.
 
 ### Optional Fabric Ties
 
-If you don't wish to use ribbon for your ties you can make them out of fabric. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your choosen + seam allowances wide and sew two tubes leaving one of the short sides open for turning. Clip the corners and trim seams. Turn out an press. If desired you can ***Edgestitch*** or ***Topstitch*** the tubes to stop the fabric from shifting. The raw edge of the tubes can then be concealed in the ear flap seam when constructing the ear flaps.
+If you don't wish to use ribbon for your ties you can make them out of fabric. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your choosen + seam allowances wide and sew two tubes leaving one of the short sides open for turning. Clip the corners and trim seams. Turn out an press. If desired you can _**Edgestitch**_ or _**Topstitch**_ the tubes to stop the fabric from shifting. The raw edge of the tubes can then be concealed in the ear flap seam when constructing the ear flaps.
 
 <Note>
 

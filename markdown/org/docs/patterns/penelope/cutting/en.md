@@ -8,14 +8,14 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 
 **Main Fabric**
 
--   Cut **1 front** part on fold.
--   Cut **back** part(s).
--   (Optional) Cut **1 waistband** parts on the fold.
+- Cut **1 front** part on fold.
+- Cut **back** part(s).
+- (Optional) Cut **1 waistband** parts on the fold.
 
 **Lining Fabric (Optional)**
 
--   Cut **1 front** part on fold.
--   Cut **back** part(s).
+- Cut **1 front** part on fold.
+- Cut **back** part(s).
 
 <Note>
 
@@ -25,7 +25,7 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 
 **Interfacing**
 
--   Cut **1 waistband** part on the fold.
+- Cut **1 waistband** part on the fold.
 
 <Tip>
 

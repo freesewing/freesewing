@@ -2,7 +2,7 @@
 title: Dimensions
 ---
 
-When you opt for a *paperless* pattern, your pattern will come with dimensions:
+When you opt for a _paperless_ pattern, your pattern will come with dimensions:
 
 <Legend part="dimension">
 

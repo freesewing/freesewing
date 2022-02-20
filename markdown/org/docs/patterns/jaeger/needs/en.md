@@ -1,15 +1,15 @@
 To make Jaeger, you will need the following:
 
--   About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
--   Lining fabric, optionally different sleeve lining fabric
--   Two larger buttons for the front, and 8 buttons for the sleeves
--   A bit of lightweight fusible interfacing for local enforcement
--   Canvas for the fronts and collar
--   Tailor's tape for the front edges
--   Some domette for interlining
--   Shoulder pads
--   Sleevehead wadding, with canvas if possible
--   Undercollar fabric
+- About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
+- Lining fabric, optionally different sleeve lining fabric
+- Two larger buttons for the front, and 8 buttons for the sleeves
+- A bit of lightweight fusible interfacing for local enforcement
+- Canvas for the fronts and collar
+- Tailor's tape for the front edges
+- Some domette for interlining
+- Shoulder pads
+- Sleevehead wadding, with canvas if possible
+- Undercollar fabric
 
 <Note>
 

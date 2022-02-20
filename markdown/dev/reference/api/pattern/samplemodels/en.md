@@ -2,7 +2,7 @@
 title: Pattern.sampleModels()
 ---
 
-A pattern's `sampleModels()` method will *sample* a pattern for a list of
+A pattern's `sampleModels()` method will _sample_ a pattern for a list of
 models you pass to it. It will draft different iterations of the pattern,
 using the measurements for each model you pass to it.
 
@@ -51,7 +51,7 @@ The (optional) string you can pass as the second parameter should hold the
 key of one of the models in the first parameter. In our example above, it
 could hold `modelName2` for example.
 
-By passing this second parameter, you can put the *focus* on one of the models,
+By passing this second parameter, you can put the _focus_ on one of the models,
 which will influence the render style, and make it
 easier to see a comparison between a given set of measrurements, and the rest.
 

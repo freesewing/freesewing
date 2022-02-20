@@ -2,7 +2,7 @@
 title: hd
 ---
 
-The `hd` macro adds a *horizontal dimension* to your pattern.\
+The `hd` macro adds a _horizontal dimension_ to your pattern.\
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
 <Example part="point_dx">
@@ -31,7 +31,7 @@ macro('hd', {
 
 Setting a custom ID will:
 
--   Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
--   Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
+- Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
+- Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
 
 </Note>

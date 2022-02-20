@@ -18,8 +18,8 @@ would be hopelessly inpractical.
 This question often hints at an underlying distrust towards
 creating an account. As such, the following links may also be relevant:
 
--   Read [our privacy notice][1]
--   Learn more about [your rights][2]
+- Read [our privacy notice][1]
+- Learn more about [your rights][2]
 
 </Note>
 

@@ -5,8 +5,8 @@ order: 50
 
 Plugins can do two things:
 
--   They can use hooks
--   They can provide macros
+- They can use hooks
+- They can provide macros
 
 Your plugin should export an object with the following structure:
 

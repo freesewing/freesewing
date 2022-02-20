@@ -5,7 +5,7 @@ order: 60
 
 Don't insert literal text in your patterns. Instead, insert a key that can then be translated.
 
-For example, if you want to put *Finish with bias tape* on your pattern, don't be
+For example, if you want to put _Finish with bias tape_ on your pattern, don't be
 tempted to do this:
 
 ```js

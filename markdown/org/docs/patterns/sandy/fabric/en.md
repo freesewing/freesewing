@@ -2,11 +2,11 @@
 
 A circle skirt is a very versatile garment and can be made from a variety of fabric. It all depends on your intended use and preferred style.
 
--   If you wish for an everday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
--   If you are looking for something more formal you may want to try **Suiting Fabrics**.
--   If you want something warm for the winter you can try **Wools**.
--   If wish for something flowy that drapes you can try lightweight materials such as **Chiffon**.
--   If you are want something for a special occasion who may wish to try **Brocades** and **Silks**.
+- If you wish for an everday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
+- If you are looking for something more formal you may want to try **Suiting Fabrics**.
+- If you want something warm for the winter you can try **Wools**.
+- If wish for something flowy that drapes you can try lightweight materials such as **Chiffon**.
+- If you are want something for a special occasion who may wish to try **Brocades** and **Silks**.
 
 Basically any fabric can be used to make a circle skirt you just need to find one that is right for you.
 

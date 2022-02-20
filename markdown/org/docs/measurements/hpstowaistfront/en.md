@@ -6,7 +6,7 @@ title: HPS to waist front
 
 ###### HPS: high point shoulder
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
+The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
 Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
 
 </Note>

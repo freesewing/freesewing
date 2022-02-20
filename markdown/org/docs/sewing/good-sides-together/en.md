@@ -20,7 +20,7 @@ This gives you two pieces that are mirror images of each other.
 
 ##### What if there is not obvious good side?
 
-When cutting out something without an obvious *good* side (like interfacing),
+When cutting out something without an obvious _good_ side (like interfacing),
 what matters is that you cut two mirrored pieces, rather than two identical ones.
 
 </Note>

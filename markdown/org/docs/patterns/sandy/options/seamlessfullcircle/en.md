@@ -5,7 +5,7 @@ Since it has no openings, you'll need an elastic waistband.
 
 <Note>
 
-This produces a full circle ignoring the *Circle percent* option.
+This produces a full circle ignoring the _Circle percent_ option.
 
 </Note>
 

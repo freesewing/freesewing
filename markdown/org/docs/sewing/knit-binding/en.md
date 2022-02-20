@@ -96,7 +96,7 @@ The length of your knit binding depends on the amount it needs to be stretched. 
 ### Do not do this
 
 There are a bunch of tutorials out on the internet that show you how to sew on knit binding.
-Many of those suggest something like *make the neck binding 90% of the length of the seam you are attaching it to* (the percentage varies).
+Many of those suggest something like _make the neck binding 90% of the length of the seam you are attaching it to_ (the percentage varies).
 
 This idea is that you cut your binding, join its edges, and then sew it in the opening. That is (in my opinion) no good.
 
@@ -107,12 +107,12 @@ Obviously, that means your shoulder seam will cut through your binding which is 
 
 ### Instead, do this
 
--   Cut your binding as long as the seam it needs to be sewn into. Not 90%, but 100%. This way, you know it's going to be too long, and that's what we want.
--   Mark the place you want your binding to be joined (say center back of the neckline) and place your binding 1cm beyond this point.
--   Start sewing your binding about 3cm or so from this point, and go all the way around. While you do so, make sure to adjust the stretch to whatever the curve requires. There's no tricks for this, you'll have to practice until it comes naturally to you.
--   When you make your way around and get close to the point you marked, stop about 3cm before that.
--   Now your entire binding is attached, apart from a 6cm or so stretch at the back. Pin both edges of your binding good sides together, making is exactly as long as needed and sew them together.
--   Sew the remaining 6cm of your binding.
+- Cut your binding as long as the seam it needs to be sewn into. Not 90%, but 100%. This way, you know it's going to be too long, and that's what we want.
+- Mark the place you want your binding to be joined (say center back of the neckline) and place your binding 1cm beyond this point.
+- Start sewing your binding about 3cm or so from this point, and go all the way around. While you do so, make sure to adjust the stretch to whatever the curve requires. There's no tricks for this, you'll have to practice until it comes naturally to you.
+- When you make your way around and get close to the point you marked, stop about 3cm before that.
+- Now your entire binding is attached, apart from a 6cm or so stretch at the back. Pin both edges of your binding good sides together, making is exactly as long as needed and sew them together.
+- Sew the remaining 6cm of your binding.
 
 This way, there is no guessing how long your binding should be, and the binding seam sits where you want it to sit.
 

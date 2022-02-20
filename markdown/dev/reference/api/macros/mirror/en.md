@@ -35,7 +35,7 @@ macro('sprinkle', {
 
 | Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|
-| `mirror`     |            | `array`    | Array with 2 [Point](/reference/api/point) objects that define the *mirror line* |
+| `mirror`     |            | `array`    | Array with 2 [Point](/reference/api/point) objects that define the _mirror line_ |
 | `clone`      | `true`     | `bool`     | Whether to clone mirrored points and or paths |
 | `points`     |            | `array`    | An array of [Point](/reference/api/point) objects |
 | `paths`      |            | `array`    | An array of [Path](/reference/api/path) objects |

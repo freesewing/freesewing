@@ -26,13 +26,13 @@ With a small stitch width (I set mine to “2”), sew a line straight down the 
 
 Take the next piece. For an 11-panel Cathrin, this will be Panel 2.
 
-Place the outer Panel 2 on the outer Panel 1, *good sides together*.
+Place the outer Panel 2 on the outer Panel 1, _good sides together_.
 
-Place the core Panel 2 on the core Panel 1, *good sides together*.
+Place the core Panel 2 on the core Panel 1, _good sides together_.
 
 Ensure that the four layers of fabric line up perfectly. Double check that you haven’t mixed up pattern pieces or flipped any over by mistake.
 
-Match up the four layers of fabric at the narrowest part, *good sides together*, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
+Match up the four layers of fabric at the narrowest part, _good sides together_, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
 
 Sew the seam.
 
@@ -52,11 +52,11 @@ Topstitch another seam parallel to the first seam, allowing a bit of extra space
 
 Take the next piece. For an 11-panel Cathrin, this will be Panel 3.
 
-Place the outer Panel 3 on the outer Panel 2, *good sides together*.
+Place the outer Panel 3 on the outer Panel 2, _good sides together_.
 
-Place the core Panel 3 on the core Panel 2, *good sides together*.
+Place the core Panel 3 on the core Panel 2, _good sides together_.
 
-Match up the four layers of fabric at the narrowest part, *good sides together*, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
+Match up the four layers of fabric at the narrowest part, _good sides together_, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
 
 Sew the seam.
 

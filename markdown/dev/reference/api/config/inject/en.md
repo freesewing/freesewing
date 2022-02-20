@@ -4,7 +4,7 @@ title: inject
 
 The `inject` key in the pattern configuration file allow you to configure
 the rules for injecting one part into another.
-By *injecting* we mean that rather than starting out with a fresh part,
+By _injecting_ we mean that rather than starting out with a fresh part,
 you'll get a part that has the points, paths, and snippets of the injected part.
 
 ## Structure

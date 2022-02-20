@@ -16,10 +16,10 @@ This estimate is based on your neck circumference, so this won't show up until y
 ##### This is a difficult area for us to work in
 
 We want to help you get the best results, and that includes helping you spot issues with your measurements.
-On the other hand, we in no way want to imply that someone's measurements are *wrong* somehow.
+On the other hand, we in no way want to imply that someone's measurements are _wrong_ somehow.
 
 We are an extremely size-inclusive pattern outlet, and a disproportionate amount of our users are people who struggle to find clothes or patterns from other outlets.
-So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less *standard* measurements.
+So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less _standard_ measurements.
 But you know your body. You know which of your measurements deviate from the average.
 And us pointing out that they do is in a way only confirmation that you've been measuring correctly.
 On the other hand, if something jumps out where you are fairly average sized, you know to double-check those measurements.
