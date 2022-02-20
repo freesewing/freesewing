@@ -12,12 +12,12 @@ is found.
 
 Your snapped percentage option should be a plain object with these properties:
 
--   `pct` : The default percentage
--   `min` : The minimum percentage that's allowed
--   `max` : The maximum percentage that's allowed
--   `snap`: Holds the snap configuration (see [Snap configuration](#))
--   `toAbs`: a method returning the **millimeter value** of the option ([see `toAbs()`][toabs])
--   `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
+- `pct` : The default percentage
+- `min` : The minimum percentage that's allowed
+- `max` : The maximum percentage that's allowed
+- `snap`: Holds the snap configuration (see [Snap configuration](#))
+- `toAbs`: a method returning the **millimeter value** of the option ([see `toAbs()`][toabs])
+- `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
 
 ## Snap configuration
 
@@ -150,8 +150,8 @@ our solution does not scale.
 We combine approaches A and B and configure a snapped percentage option
 with:
 
--   A percentage based on `waistToFloor`
--   Our list of standard elastic widths as _snaps_
+- A percentage based on `waistToFloor`
+- Our list of standard elastic widths as _snaps_
 
 For typical humans, our options will _snap_ to the closest match in our
 list and behave just like Approach A (with a list option).
@@ -165,19 +165,19 @@ Sweet!
 
 Before we wade into the details, let's first agree on terminology:
 
--   The **percentage value** is the page passed by the user for the option.
-    Its value always represents a percentage.
--   The **millimeter value** is the result of feeding the **percentage value** to
-    the `toAbs()` method. Its value always represents millimeters.
--   The **snap values** are the values provided by the snap confguration.
-    Each of the values always represents millimeters.
+- The **percentage value** is the page passed by the user for the option.
+  Its value always represents a percentage.
+- The **millimeter value** is the result of feeding the **percentage value** to
+  the `toAbs()` method. Its value always represents millimeters.
+- The **snap values** are the values provided by the snap confguration.
+  Each of the values always represents millimeters.
 
 Under the hood, and snapped percentage option will:
 
--   Use `toAbs()` to calculate the **millimeter value** from the **percentage value**
--   See whether the **millimeter value** approaches one of the **snap values**
--   If so, use the snap value (in millimeter) as provided by one of the **snap values**
--   If not, use the **millimeter value** as-is
+- Use `toAbs()` to calculate the **millimeter value** from the **percentage value**
+- See whether the **millimeter value** approaches one of the **snap values**
+- If so, use the snap value (in millimeter) as provided by one of the **snap values**
+- If not, use the **millimeter value** as-is
 
 If you're head's spinning, here's an image that will hopefully clarify things a bit:
 
@@ -200,12 +200,12 @@ snapping, just as it would in a normal percentage option.
 
 This system results in the best of both worlds:
 
--   Things like elastic widths and so on can be configured to be fixed values,
-    of common elastic widths for example
--   The absolute value will still scale up and down, but will snap to the closest
-    fixed value when appropriate.
--   When the input measurements go somewhere the designer did not anticipate,
-    the option will just behave as a regular percentage option
+- Things like elastic widths and so on can be configured to be fixed values,
+  of common elastic widths for example
+- The absolute value will still scale up and down, but will snap to the closest
+  fixed value when appropriate.
+- When the input measurements go somewhere the designer did not anticipate,
+  the option will just behave as a regular percentage option
 
 ## Using snapped percentage options in your pattern code
 

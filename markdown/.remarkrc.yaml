@@ -2,6 +2,7 @@ settings:
   bullet: "-"
   emphasis: "_"
   strong: "*"
+  listItemIndent: one
 plugins:
   - remark-frontmatter
   - remark-preset-lint-consistent

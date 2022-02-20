@@ -5,8 +5,8 @@ order: 10
 
 Plugins come in two flavours:
 
--   [Build-time plugins](#build-time-plugins)
--   [Run-time plugins](#run-time-plugins)
+- [Build-time plugins](#build-time-plugins)
+- [Run-time plugins](#run-time-plugins)
 
 When writing a plugin, ask yourself whether it's a run-time or a build-time plugin.
 And if the answer is both, please split them into two plugins.

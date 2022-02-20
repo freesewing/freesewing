@@ -65,19 +65,19 @@ and you use JavaScript's _object destructuring_ to only get what you need.
 
 The example above makes the following variables available:
 
--   `Point`: The Point constructor
--   `points`: A reference to the part's points
--   `Path`: The Path constructor
--   `paths`: A reference to the part's paths
+- `Point`: The Point constructor
+- `points`: A reference to the part's points
+- `Path`: The Path constructor
+- `paths`: A reference to the part's paths
 
 These will make it possible for you to draw points and paths easily.
 
 The following three variables are also needed to create a full-fledged FreeSewing pattern; their function and usage will
 be covered in detail [later on in this tutorial](/tutorials/pattern-design/completing-your-pattern/):
 
--   `complete`: create a _complete_ pattern (or not)
--   `sa`: include _seam allowance_ (or not)
--   `paperless`: allow the pattern to be _paperless_
+- `complete`: create a _complete_ pattern (or not)
+- `sa`: include _seam allowance_ (or not)
+- `paperless`: allow the pattern to be _paperless_
 
 For now, we only need these so that the pattern skeleton compiles properly.
 

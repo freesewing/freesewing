@@ -21,9 +21,9 @@ If testing your pattern sounds like a lot of work, you're in luck. FreeSewing ca
 for you. Click the **Test your pattern** button in the top navigation bar of your
 development environment, and you'll see a number of choices on the right:
 
--   Test pattern options
--   Test measurements
--   Test models
+- Test pattern options
+- Test measurements
+- Test models
 
 The [API docs on sampling](/reference/api/pattern/#sample) have all the details on how this works, but
 for now we'll just look at the end result of each of these.

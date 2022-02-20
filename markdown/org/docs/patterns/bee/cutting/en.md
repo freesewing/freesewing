@@ -10,31 +10,31 @@ There are three variations of this pattern. **One Colour**, which is where the b
 
 **Main fabric**
 
--   Cut **4 cup** parts.
--   Cut **2 neck tie** parts.
--   Cut **1 band tie** part.
+- Cut **4 cup** parts.
+- Cut **2 neck tie** parts.
+- Cut **1 band tie** part.
 
 ### Two Colours (Reversible)
 
 **Main fabric**
 
--   Cut **2 cup** parts from main.
--   Cut **2 neck tie** parts.
--   Cut **1 band tie** part.
+- Cut **2 cup** parts from main.
+- Cut **2 neck tie** parts.
+- Cut **1 band tie** part.
 
 **Lining fabric**
 
--   Cut **2 cup** parts.
--   Cut **2 neck tie** parts.
--   Cut **1 band tie** part.
+- Cut **2 cup** parts.
+- Cut **2 neck tie** parts.
+- Cut **1 band tie** part.
 
 ### Cross Back Tie Variant.
 
 **Main fabric**
 
--   Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
--   Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
--   Cut **1 band** part if making cross back tie variant instead of band tie variant.
+- Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
+- Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
+- Cut **1 band** part if making cross back tie variant instead of band tie variant.
 
 <Note>
 

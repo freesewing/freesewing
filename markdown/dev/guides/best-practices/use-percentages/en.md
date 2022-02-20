@@ -19,8 +19,8 @@ Instead, embrace percentages as options.
 To check how well your pattern scales, you can
 use the _antperson_ test by sampling the pattern for 2 models:
 
--   A model with measurements of avarage person (the person)
--   A model with measurements 1/10th of an average person (the ant)
+- A model with measurements of avarage person (the person)
+- A model with measurements 1/10th of an average person (the ant)
 
 A well-designed pattern will scale a factor 10 down and hold its shape.
 If your pattern makes assumptions about size, this test will show that.

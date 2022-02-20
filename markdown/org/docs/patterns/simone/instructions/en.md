@@ -1,6 +1,6 @@
 ### Step 1: Bust Darts
 
--   Close the Front bust darts.
+- Close the Front bust darts.
 
 ### Step 2: Follow Simon's Instructions
 

@@ -6,8 +6,8 @@ Apart from the cutout for the neck opening, front and back are identical. It is 
 
 </Tip>
 
--   cut _1 front_, _on the fold_
--   cut _1 back_, _on the fold_
+- cut _1 front_, _on the fold_
+- cut _1 back_, _on the fold_
 
 ### On Historical Accuracy
 

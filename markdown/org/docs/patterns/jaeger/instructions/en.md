@@ -162,9 +162,9 @@ This will also secure the canvas to the front here and there.
 
 Keep in mind that:
 
--   The tape along the roll line should be placed inside the roll line.
--   The tape along the roll line should be about half a centimeter shorter than the distance it spans. The slight tension this creates helps the lapel roll nicely and contour to your body.
--   The tape along the lapel edge should be placed inside the seam line
+- The tape along the roll line should be placed inside the roll line.
+- The tape along the roll line should be about half a centimeter shorter than the distance it spans. The slight tension this creates helps the lapel roll nicely and contour to your body.
+- The tape along the lapel edge should be placed inside the seam line
 
 > ##### Don't sew through your fabric
 >

@@ -5,19 +5,19 @@ order: 20
 
 ##### What personal data do we store?
 
--   Your E-mail address
+- Your E-mail address
 
 ##### Why do we need it?
 
--   To send you our newsletter
+- To send you our newsletter
 
 ##### How long do we keep it?
 
--   As long as you remain subscribed
+- As long as you remain subscribed
 
 ##### Do we share it?
 
--   No, never
+- No, never
 
 <Note> 
 

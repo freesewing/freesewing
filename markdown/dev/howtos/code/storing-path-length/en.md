@@ -8,7 +8,7 @@ about: Shows how to store a seam length so you can true the seam of another part
 
 ##### See this example in our source code
 
--   [packages/aaron/src/front.js](https://github.com/freesewing/freesewing/blob/develop/packages/aaron/src/front.js#L103)
+- [packages/aaron/src/front.js](https://github.com/freesewing/freesewing/blob/develop/packages/aaron/src/front.js#L103)
 
 </Note>
 

@@ -17,9 +17,9 @@ A schematic overview of FreeSewing
 
 If we look at our image, it can be divided into three areas:
 
--   The left area with the **settings**  box
--   The middle area with the **Pattern** box and everything in it
--   The right area with the **draft** box and the _SVG_ and _React_ logos
+- The left area with the **settings**  box
+- The middle area with the **Pattern** box and everything in it
+- The right area with the **draft** box and the _SVG_ and _React_ logos
 
 Let's take a closer look at everything that is contained within our central **Pattern** box:
 

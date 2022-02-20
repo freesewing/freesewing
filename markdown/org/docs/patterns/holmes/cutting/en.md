@@ -6,14 +6,14 @@ The **crown** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Materials
 
--   **Main fabric**
-    -   Cut the amount of **crowns** you selected in the pattern options
-    -   Cut **4 ear** parts or Cut **2 ear** from main and lining.
-    -   Cut **4 visor** parts
--   **Lining fabric**
-    -   Cut the amount of **crowns** you selected in the pattern options
--   **Visor Insert Material**
-    -   Cut **2 visor inserts**. Use your visor pattern piece with no seam allowance.
+- **Main fabric**
+  - Cut the amount of **crowns** you selected in the pattern options
+  - Cut **4 ear** parts or Cut **2 ear** from main and lining.
+  - Cut **4 visor** parts
+- **Lining fabric**
+  - Cut the amount of **crowns** you selected in the pattern options
+- **Visor Insert Material**
+  - Cut **2 visor inserts**. Use your visor pattern piece with no seam allowance.
 
 ### Optional Fabric Ties
 

@@ -11,12 +11,12 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 ### Step 1: Mock-up Construction
 
--   Join the outseam (the seam that runs along the side of your leg) of the front and back.
--   Join the inseam (the seam the runs along the inside of your legs) of the front and back.
--   You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
--   Turn one leg with the good side in, and the other with the good side out.
--   Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
--   Align and sew the cross seam.
+- Join the outseam (the seam that runs along the side of your leg) of the front and back.
+- Join the inseam (the seam the runs along the inside of your legs) of the front and back.
+- You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
+- Turn one leg with the good side in, and the other with the good side out.
+- Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
+- Align and sew the cross seam.
 
 <Note>
 
@@ -32,9 +32,9 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 ### Step 2: Try it on
 
--   Try it on and check the fit by pinning the front closed whilst wearing it.
--   Make any alterations and try it on again.
--   Repeat until you are happy.
+- Try it on and check the fit by pinning the front closed whilst wearing it.
+- Make any alterations and try it on again.
+- Repeat until you are happy.
 
 <Tip>
 
@@ -49,11 +49,11 @@ Sometimes you may need to wear the mock-up for an extended amount of time to get
 Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look.\
 For instance:
 
--   Add a front closure
--   Add pockets
--   Change the pant length
--   Change the pant width
--   Add a waistband
+- Add a front closure
+- Add pockets
+- Change the pant length
+- Change the pant width
+- Add a waistband
 
 It is all up to you! Experiment and go forth!
 
@@ -61,8 +61,8 @@ It is all up to you! Experiment and go forth!
 
 ### Step 3: Make a paper pattern
 
--   Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
--   Now you have a pattern you can use to produce a garment.
+- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
+- Now you have a pattern you can use to produce a garment.
 
 <Note>
 

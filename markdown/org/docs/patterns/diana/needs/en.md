@@ -1,7 +1,7 @@
 To make Diana, you will need the following:
 
--   [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
--   About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next tot he body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
+- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next tot he body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
 
 <Note>
 

@@ -12,10 +12,10 @@ popularized their use back in the 1960s.
 
 In FreeSewing, we use so-called cubic Bézier curves which have:
 
--   A start point
--   A first control point that’s linked to the start point
--   A second control point that’s linked to the end point
--   An end point
+- A start point
+- A first control point that’s linked to the start point
+- A second control point that’s linked to the end point
+- An end point
 
 <Example settings_complete="0" part="path_curve">
 An example of a Bézier curve drawn by the Path.curve() method

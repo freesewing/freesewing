@@ -21,11 +21,11 @@ our website for makers.
 
 To generate a pattern, you will need to:
 
--   Instantiate the pattern (`new ...`)
--   Pass it the settings and measurements you want to use (`{ ... }`)
--   Load the theme plugin (using `use()`)
--   Draft the pattern (using `draft()`)
--   Render it to SVG  (using `render()`)
+- Instantiate the pattern (`new ...`)
+- Pass it the settings and measurements you want to use (`{ ... }`)
+- Load the theme plugin (using `use()`)
+- Draft the pattern (using `draft()`)
+- Render it to SVG  (using `render()`)
 
 Which can be done as a one-liner since `use()`, `draft()` and
 `render()` are all chainable, as shown below.

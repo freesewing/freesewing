@@ -2,8 +2,8 @@
 title: Cutting 
 ---
 
--   Cut **1 lacerna** part on the fold
--   or Cut **2 lacerna** parts
+- Cut **1 lacerna** part on the fold
+- or Cut **2 lacerna** parts
 
 The way to cut Lunetius is going to depend on what fabric you have chosen to use. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage.
 

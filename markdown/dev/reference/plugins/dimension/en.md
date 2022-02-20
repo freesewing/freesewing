@@ -9,12 +9,12 @@ in [paperless mode](/reference/api/settings/paperless).
 
 The following macors are provided by this plugin:
 
--   [hd](/reference/api/macros/hd) : Adds a horizontal dimension
--   [vd](/reference/api/macros/vd) : Adds a vertical dimension
--   [ld](/reference/api/macros/ld) : Adds a linear dimension
--   [pd](/reference/api/macros/pd) : Adds a dimension along a path
--   [rmd](/reference/api/macros/rmd) : Removes a dimension
--   [rmad](/reference/api/macros/rmad) : Removes all dimensions with a default prefix
+- [hd](/reference/api/macros/hd) : Adds a horizontal dimension
+- [vd](/reference/api/macros/vd) : Adds a vertical dimension
+- [ld](/reference/api/macros/ld) : Adds a linear dimension
+- [pd](/reference/api/macros/pd) : Adds a dimension along a path
+- [rmd](/reference/api/macros/rmd) : Removes a dimension
+- [rmad](/reference/api/macros/rmad) : Removes all dimensions with a default prefix
 
 <Example part="plugin_dimension">
 

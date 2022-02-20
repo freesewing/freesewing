@@ -16,16 +16,16 @@ object to determine what to do.
 
 The possiblities are:
 
--   **type**: One of `option`, `measurement`, or `models`
--   **option**: An option name as defined in the pattern config file (only used when `type` is option).
--   **measurement**: A measurement name as defined in the pattern config file (only used when `type` is measurement).
--   **models**: An array of models with the required measurements for this pattern (only used when `type` is models).
+- **type**: One of `option`, `measurement`, or `models`
+- **option**: An option name as defined in the pattern config file (only used when `type` is option).
+- **measurement**: A measurement name as defined in the pattern config file (only used when `type` is measurement).
+- **models**: An array of models with the required measurements for this pattern (only used when `type` is models).
 
 See the specific sample methods below for more details:
 
--   [Pattern.sampleOption()](/reference/apu/pattern/sampleoption)
--   [Pattern.sampleMeasurement()](/reference/apu/pattern/sampleoption)
--   [Pattern.sampleModels()](/reference/apu/pattern/sampleoption)
+- [Pattern.sampleOption()](/reference/apu/pattern/sampleoption)
+- [Pattern.sampleMeasurement()](/reference/apu/pattern/sampleoption)
+- [Pattern.sampleModels()](/reference/apu/pattern/sampleoption)
 
 From a lifecycle point of view, the `Pattern.sample()` method is a substitute for
 `Pattern.draft()`. So you call it after instantiating the pattern, prior to

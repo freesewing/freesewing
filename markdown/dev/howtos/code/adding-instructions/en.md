@@ -8,7 +8,7 @@ about: While documentation is good, sometimes you want to add some instructions 
 
 ##### See this example in our source code
 
--   [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/38d101b0415a4cbf3f9f86e006bd8cb7c43c703b/packages/jaeger/src/front.js#L411)
+- [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/38d101b0415a4cbf3f9f86e006bd8cb7c43c703b/packages/jaeger/src/front.js#L411)
 
 </Note>
 

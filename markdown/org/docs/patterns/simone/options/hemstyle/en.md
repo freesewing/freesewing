@@ -2,9 +2,9 @@
 
 What style of hem line do you want?
 
--   Straight
--   Baseball
--   Slashed
+- Straight
+- Baseball
+- Slashed
 
 ## Effect of this option on the pattern
 

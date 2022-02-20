@@ -31,7 +31,7 @@ macro('hd', {
 
 Setting a custom ID will:
 
--   Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
--   Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
+- Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
+- Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
 
 </Note>

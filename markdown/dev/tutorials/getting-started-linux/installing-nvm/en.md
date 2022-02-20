@@ -11,8 +11,8 @@ use [nvm](https://github.com/nvm-sh/nvm), short for _Node version manager_.
 Using nvm has a number of benefits in comparison with installing Node from
 the node.js website, or from a package provided by your linux distribution:
 
--   You can easily switch between different Node versions
--   Everything gets installed in your home folder, avoiding permission problems
+- You can easily switch between different Node versions
+- Everything gets installed in your home folder, avoiding permission problems
 
 To setup nvm, run the following command in a terminal:
 

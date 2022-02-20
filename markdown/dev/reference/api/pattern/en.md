@@ -20,14 +20,14 @@ Refer to the [settings documentation](/reference/api/settings/) for an exhaustiv
 
 ## Pattern properties
 
--   `settings` : The settings as set by the user
--   `options` : the options as set by the user
--   `config` : The pattern configuration
--   `parts` : A plain object to hold your parts
--   `Part` : The [Part](/reference/api/part) constructor
--   `store` : A [Store](/reference/api/store) instance
--   `svg` : An [Svg](/reference/api/svg) instance
--   `is` : A string that will be set to `draft` or `sample` when you respectively draft or sample a pattern. This allows plugins that hook into your pattern to determine what to do in a given scenario.
+- `settings` : The settings as set by the user
+- `options` : the options as set by the user
+- `config` : The pattern configuration
+- `parts` : A plain object to hold your parts
+- `Part` : The [Part](/reference/api/part) constructor
+- `store` : A [Store](/reference/api/store) instance
+- `svg` : An [Svg](/reference/api/svg) instance
+- `is` : A string that will be set to `draft` or `sample` when you respectively draft or sample a pattern. This allows plugins that hook into your pattern to determine what to do in a given scenario.
 
 ## Pattern methods
 

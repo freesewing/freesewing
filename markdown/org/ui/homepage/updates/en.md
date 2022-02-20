@@ -7,7 +7,7 @@
 
 If you're looking for our facemask pattern, follow this link:
 
--   [Face mask pattern and instructions](/blog/facemask-frenzy)
+- [Face mask pattern and instructions](/blog/facemask-frenzy)
 
 ##### Contributor calls
 

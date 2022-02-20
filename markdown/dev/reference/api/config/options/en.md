@@ -26,11 +26,11 @@ possible.
 There are the five option types that an aspiring pattern designer should be
 familiar with:
 
-1.  [**boolean** options][bool] are for yes/no choices
-2.  [**counter** options][count] are for integer values
-3.  [**degree** options][deg] are for degrees
-4.  [**list** options][list] are for a list of possible choices
-5.  [**percentage** options][pct] are for percentages
+1. [**boolean** options][bool] are for yes/no choices
+2. [**counter** options][count] are for integer values
+3. [**degree** options][deg] are for degrees
+4. [**list** options][list] are for a list of possible choices
+5. [**percentage** options][pct] are for percentages
 
 <Tip>
 
@@ -43,10 +43,10 @@ They also have the most features and flexibility.
 
 For the sake of completeness, here are the two other types of options:
 
-6.  [**constant** options][const] are used as
-    [feature flags](https://en.wikipedia.org/wiki/Feature_toggle)
-7.  [**millimeter** options][const] are **deprecated** (in favor of [snapped
-    percentage options][snapped])
+6. [**constant** options][const] are used as
+   [feature flags](https://en.wikipedia.org/wiki/Feature_toggle)
+7. [**millimeter** options][const] are **deprecated** (in favor of [snapped
+   percentage options][snapped])
 
 </Related>
 
@@ -83,9 +83,9 @@ it is not intended as a way to block access to a given option. It merely hides i
 
 By default options are shown to the user when:
 
--   They are not a constant option
--   **and**
--   They are included in an optionGroup
+- They are not a constant option
+- **and**
+- They are included in an optionGroup
 
 You can further control the optional display of options by adding a method
 to the `hide` key under you option, as such:
@@ -110,8 +110,8 @@ So you can make a choice whether to show the option or not.
 
 If it's not obvious from the name, your `hide()` method you should:
 
--   Return `true` or a truthy value to hide the option
--   Return `false` or a falsy value to show the option
+- Return `true` or a truthy value to hide the option
+- Return `false` or a falsy value to show the option
 
 <Tip>
 

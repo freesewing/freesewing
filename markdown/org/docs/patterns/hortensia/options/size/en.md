@@ -2,8 +2,8 @@ Controls the overall size of the handbag.
 
 Rather than using measurements, Hortensia's size is determined by scaling fixed values.
 
--   20% : Will scale these values by 0.2
--   200% : Will scale these values by 2
+- 20% : Will scale these values by 0.2
+- 200% : Will scale these values by 2
 
 The two fixed values that are used the most are Width: 23cm and Height: 33cm.
 

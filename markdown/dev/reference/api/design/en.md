@@ -19,10 +19,10 @@ function freesewing.Design(
 This constructor creates a new pattern design.
 It takes the following arguments:
 
--   `config` : The pattern configuration
--   `plugins` : Either a [plugin object](/guides/plugins/), or an array of plugin objects
--   `conditionalPlugins` : Either a [conditional plugin object](/guides/plugins/conditionally-loading-build-time-plugins/), or an array
-    of conditional plugin objects to (conditionally) load in your pattern
+- `config` : The pattern configuration
+- `plugins` : Either a [plugin object](/guides/plugins/), or an array of plugin objects
+- `conditionalPlugins` : Either a [conditional plugin object](/guides/plugins/conditionally-loading-build-time-plugins/), or an array
+  of conditional plugin objects to (conditionally) load in your pattern
 
 ```js
 import freesewing from "@freesewing/core"

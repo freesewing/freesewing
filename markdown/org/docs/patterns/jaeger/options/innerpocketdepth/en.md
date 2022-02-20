@@ -1,7 +1,7 @@
 How deep you would like the inner pocket to be.
 
--   Increase this option to make a deeper inner pocket
--   Decrease this option to make a shallower inner pocket
+- Increase this option to make a deeper inner pocket
+- Decrease this option to make a shallower inner pocket
 
 ## Effect of this option on the pattern
 

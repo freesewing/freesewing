@@ -21,8 +21,8 @@ they are ordered in the returned array:
 
 Set sort to:
 
--   `x` : The point with the lowest X-coordinate will go first (left to right)
--   `y` : The point with the lowest Y-coordinate will go first (top to bottom)
+- `x` : The point with the lowest X-coordinate will go first (left to right)
+- `y` : The point with the lowest Y-coordinate will go first (top to bottom)
 
 <Example part="utils_beamintersectscircle">
 A Utils.beamIntersectsCircle() example

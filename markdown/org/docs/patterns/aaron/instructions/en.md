@@ -54,8 +54,8 @@ This is the only part of making this A-shirt that requires a bit of practice. Do
 
 The first thing we need to do is decide where we are going to start/stop our binding. Here's what I suggest:
 
--   For the armholes: at the side seam. This will hide our seam under the arm
--   For the neck opening: the center back of the neck. You might want to mark this with a pin
+- For the armholes: at the side seam. This will hide our seam under the arm
+- For the neck opening: the center back of the neck. You might want to mark this with a pin
 
 ### Place (the start of) your binding
 

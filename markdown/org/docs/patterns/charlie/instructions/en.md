@@ -310,10 +310,10 @@ Finally, cut your length belt loops strip into 8 equal parts to make 8 belt loop
 
 We're going to divide our belt loops along the waist:
 
--   2 at the center back, each set aside a bit from the center so there's a small gap between them.
--   1 above the back dart on each side
--   1 on each side more or less where the side seam would hit the waist if it went straight up
--   1 on each side from center front. Not too close to each other so there's no room for belt buckles, but not too far either so it doesn't look weird
+- 2 at the center back, each set aside a bit from the center so there's a small gap between them.
+- 1 above the back dart on each side
+- 1 on each side more or less where the side seam would hit the waist if it went straight up
+- 1 on each side from center front. Not too close to each other so there's no room for belt buckles, but not too far either so it doesn't look weird
 
 Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist)
 Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
