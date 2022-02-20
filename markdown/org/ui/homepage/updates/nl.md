@@ -7,8 +7,7 @@
 
 Als je op zoek bent naar ons facemask patroon, volg dan deze link:
 
- - [Gezicht masker patroon en instructies](/blog/facemask-frenzy)
-
+- [Gezicht masker patroon en instructies](/blog/facemask-frenzy)
 
 ##### Gesprekken met bijdragers
 
@@ -21,4 +20,3 @@ Aan alle gesprekken kan je deelnemen via [Discord](https://discord.freesewing.or
 We hebben onze chatruimtes verplaatst van Discord naar Discord. Ons legacy chat op Gitter wordt niet meer ondersteund.
 
 Je kunt je bij ons voegen op https://discord.freesewing.org, of deze in-app Discord-uitnodiging gebruiken: https://discord.gg/YDV4GvU
-
