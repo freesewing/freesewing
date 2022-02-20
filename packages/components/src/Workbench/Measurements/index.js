@@ -148,7 +148,7 @@ const Measurements = (props) => {
             updateValue={props.updateMeasurement}
           />
         ))}
-        {props.optional.map((m) => (
+        {props.optional && props.optional.map((m) => (
           <FormFieldMeasurement
             key={m}
             name={m}
