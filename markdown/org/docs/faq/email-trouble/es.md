@@ -12,10 +12,10 @@ Either try using a different E-mail address, or [reach out to us](https://discor
 
 In France, several E-mail providers share the same filtering:
 
--   free.fr
--   laposte.net
--   organge.fr
--   sfr.fr
+- free.fr
+- laposte.net
+- organge.fr
+- sfr.fr
 
 They are all known to cause issues with deliveries.
 
