@@ -1,5 +1,7 @@
 settings:
   bullet: "-"
+  emphasis: "_"
+  strong: "*"
 plugins:
   - remark-frontmatter
   - remark-preset-lint-consistent
