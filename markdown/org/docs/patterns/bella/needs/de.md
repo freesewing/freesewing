@@ -19,4 +19,3 @@ Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren
 Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
 
 </Note>
-
