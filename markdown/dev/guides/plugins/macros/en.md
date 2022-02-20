@@ -5,8 +5,8 @@ order: 90
 
 Plugin structure for macros is similar, with a few changes:
 
--   Rather than the hook name, you provide the macro name (that you choose yourself)
--   The context (`this`) of a macro method is **always** a [Part](/reference/api/part) object.
+- Rather than the hook name, you provide the macro name (that you choose yourself)
+- The context (`this`) of a macro method is **always** a [Part](/reference/api/part) object.
 
 Apart from these, the structure is very similar:
 

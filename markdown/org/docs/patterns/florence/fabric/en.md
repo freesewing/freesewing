@@ -6,9 +6,9 @@ For the outter fabric, cotton again, or a tightly woven wool.
 
 <Note>
 
-Note that fabric that is *breathable* is not the same as fabric your can breath through.
+Note that fabric that is _breathable_ is not the same as fabric your can breath through.
 There's many so-called waterproof breathable fabrics — or MBFs — that are used for outdoor gear because they
-repel water and are *breathable* but would make a poor choice for a face mask.
+repel water and are _breathable_ but would make a poor choice for a face mask.
 Look no further than your umbrella for an example. Chances are it's more from a fabric you can breath through,
 but only with substantial effort, which would not work for our face mask.
 

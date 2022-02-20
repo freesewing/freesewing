@@ -16,7 +16,7 @@ For Instagram, you can use this square image:
 
 The images above are also available in other langauges:
 
--   German: [wide](/share/de.wide.jpg) or [square](/share/de.square.jpg)
--   Spanish: [wide](/share/es.wide.jpg) or [square](/share/es.square.jpg)
--   French: [wide](/share/fr.wide.jpg) or [square](/share/fr.square.jpg)
--   Dutch: [wide](/share/nl.wide.jpg) or [square](/share/nl.square.jpg)
+- German: [wide](/share/de.wide.jpg) or [square](/share/de.square.jpg)
+- Spanish: [wide](/share/es.wide.jpg) or [square](/share/es.square.jpg)
+- French: [wide](/share/fr.wide.jpg) or [square](/share/fr.square.jpg)
+- Dutch: [wide](/share/nl.wide.jpg) or [square](/share/nl.square.jpg)

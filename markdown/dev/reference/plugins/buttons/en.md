@@ -4,12 +4,12 @@ title: "@freesewing/plugin-buttons"
 
 The **@freesewing/plugin-buttons** plugin provides the following [snippets](/reference/api/snippets):
 
--   [button](/reference/api/snippets/button)
--   [buttonhole](/reference/api/snippets/buttonhole)
--   [buttonhole-start](/reference/api/snippets/buttonhole-start)
--   [buttonhole-end](/reference/api/snippets/buttonhole-end)
--   [snap-stud](/reference/api/snippets/snap-stud)
--   [snap-socket](/reference/api/snippets/snap-socket)
+- [button](/reference/api/snippets/button)
+- [buttonhole](/reference/api/snippets/buttonhole)
+- [buttonhole-start](/reference/api/snippets/buttonhole-start)
+- [buttonhole-end](/reference/api/snippets/buttonhole-end)
+- [snap-stud](/reference/api/snippets/snap-stud)
+- [snap-socket](/reference/api/snippets/snap-socket)
 
 <Example part="plugin_buttons">
 An example of the button, buttonhole, buttonhole-start, buttonhole-end, snap-stud, and snap-socket snippets

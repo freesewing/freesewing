@@ -9,8 +9,8 @@ that as the second object.
 
 Remember that:
 
--   The `insertText` hook will receive a locale and string and you should return a string.
--   All other hooks receive an object. You don't need to return anything, but rather modify the object you receive.
+- The `insertText` hook will receive a locale and string and you should return a string.
+- All other hooks receive an object. You don't need to return anything, but rather modify the object you receive.
 
 Let's look at an example:
 
@@ -39,8 +39,8 @@ export default {
 
 This is a complete plugin, ready to be published on NPM. It uses two hooks:
 
--   `preRender` : We add some style and defs to our SVG
--   `insertText` : We transfer all text to UPPERCASE
+- `preRender` : We add some style and defs to our SVG
+- `insertText` : We transfer all text to UPPERCASE
 
 <Note>
 

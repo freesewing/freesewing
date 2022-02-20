@@ -32,7 +32,7 @@ And that message is: **Hey, you're doing a worthwhile thing. Keep up the good wo
 
 ##### The value of your money
 
-It is not *just* about the money. But that doesn't mean the money is not important.
+It is not _just_ about the money. But that doesn't mean the money is not important.
 Much to the contrary.
 
 Raising money by doing something I love and then passing it on to charity allows me to sleep at night.
@@ -69,7 +69,7 @@ Sometimes precariously, among the rubble of their bombed hospitals, but always t
 
 I can't think of a single symbol that reminds us that not everything is lost, and there's still good people out there.
 
-It is also one of the few organisations that has the global reach to go and help there where it's needed most. We're used to them working in poverty-stricken regions, but when the COVID-19 pandemic ripped our healthcare systems to shreds, *MSF* stepped up to the plate, deploying their teams in Western Europe, in the US, and anywhere where the need was most acute.
+It is also one of the few organisations that has the global reach to go and help there where it's needed most. We're used to them working in poverty-stricken regions, but when the COVID-19 pandemic ripped our healthcare systems to shreds, _MSF_ stepped up to the plate, deploying their teams in Western Europe, in the US, and anywhere where the need was most acute.
 
 I hope that this explains the choice of Médecins Sans Frontières/Doctors Without Borders as FreeSewing's charity of choice. And I hope you will join us in making the world a little bit better.
 

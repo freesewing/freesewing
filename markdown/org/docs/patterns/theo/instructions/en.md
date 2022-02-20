@@ -12,7 +12,7 @@ In this particular case, there's a lot of video material available, but it was o
 
 Many of the steps below are to be repeated for both trouser legs.
 
-That is not always mentioned because life is short and continuously writing *Do not forget to do this for both trouser legs* gets tired really soon.
+That is not always mentioned because life is short and continuously writing _Do not forget to do this for both trouser legs_ gets tired really soon.
 
 </Note>
 
@@ -139,9 +139,9 @@ When everything is pinned together, fold away the front piece and lining, and cl
 
 > You can finish the pocket bag in a number of ways, including:
 >
-> -   Serge the sides together
-> -   Finish the edge with bias tape
-> -   Sew the sides together and finish the edge with a zig-zag stitch
+> - Serge the sides together
+> - Finish the edge with bias tape
+> - Sew the sides together and finish the edge with a zig-zag stitch
 
 ### Step 11: Press the front pocket
 
@@ -218,8 +218,8 @@ Take your zip and open it (unzip it). Now turn it over so that it sits with the 
 
 Align your zip with the crotch seam as shown in the illustration. Take the following into account:
 
--   The end of your zip should sit at the top of your trousers where your waistband will start. However, make sure to remember that there is seam allowance there, so don't align it with the top of the front piece, but subtract 1cm seam allowance.
--   Align the zip with the crotch seam. Do not mind the edge of the zip, as they come in different widths. Instead, make sure that you can sew next to the teeth of the zip within the seam allowance of the front piece.
+- The end of your zip should sit at the top of your trousers where your waistband will start. However, make sure to remember that there is seam allowance there, so don't align it with the top of the front piece, but subtract 1cm seam allowance.
+- Align the zip with the crotch seam. Do not mind the edge of the zip, as they come in different widths. Instead, make sure that you can sew next to the teeth of the zip within the seam allowance of the front piece.
 
 Pin the zip in place with a few pins perpendicular to your zip (as shown). In other words, don't pin along the zip, but across the zip.
 
@@ -322,9 +322,9 @@ Last but not least, sew along the zip with your zipper foot to attach it to the 
 
 > When aligning the zip, make sure to take the following into account:
 >
-> -   The zip should be placed with the good side down
-> -   The zip should sit a bit back from the edge of your fly piece
-> -   Make sure to align the top of the zip with the other zip half on the right leg
+> - The zip should be placed with the good side down
+> - The zip should sit a bit back from the edge of your fly piece
+> - Make sure to align the top of the zip with the other zip half on the right leg
 
 ### Step 28: Zig-zag the zip edge to the fly piece
 
@@ -507,11 +507,11 @@ That being said, here's what to do to make a standard belt loop:
 
 Find the belt loop pattern part, a small rectangular piece of fabric. There should be 8 of them, and these will become your belt loops. For each of them, take these steps:
 
--   Zig-zag (or serge) along the longest edges of the rectangle
--   Fold one side back along the length, and press
--   Fold the other side back, along the length, and press
--   Hand sew along the back of the belt loop so that the folded sides stay in place, but the stitches do not show at the front
--   Give it a final good press when you're done
+- Zig-zag (or serge) along the longest edges of the rectangle
+- Fold one side back along the length, and press
+- Fold the other side back, along the length, and press
+- Hand sew along the back of the belt loop so that the folded sides stay in place, but the stitches do not show at the front
+- Give it a final good press when you're done
 
 > While the width of your belt loops is not all that important, it does matter to make sure they are all the same width.
 >
@@ -562,7 +562,7 @@ Before we finalize the waistband, we're going to trim back some of its seam allo
 
 ![Press and baste the waistband lining](step49.png)
 
-The waistband lining will be sewn from the front of the trousers on top of the seam that joins the waistband to the trousers (so called *stitch in the ditch*).
+The waistband lining will be sewn from the front of the trousers on top of the seam that joins the waistband to the trousers (so called _stitch in the ditch_).
 
 Doing so will catch the lining and secure it in place. However, since we'll be sewing this from the good side, the lining will lie beneath all other layers, and we won't see what we're doing.
 

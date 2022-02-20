@@ -4,7 +4,7 @@ title: Why do you even publish womenswear blocks? They are [insert strong opinio
 
 This question comes up every now and then.
 The wording varies, but the sentiment can be summarized as
-*why even publish this garbage, it doesn't work at all*.
+_why even publish this garbage, it doesn't work at all_.
 
 Let me start by saying that you are not wrong. Both [Breanna](/designs/breanna/)
 and [Bella](/designs/bella/) have serious shortcomings.

@@ -6,13 +6,13 @@ order: 20
 FreeSewing is built with [Node.js](https://nodejs.org/), a JavaScript runtime.
 
 You'll need to install Node JS on your system, and to do so, we'll
-use [nvm](https://github.com/nvm-sh/nvm), short for *Node version manager*.
+use [nvm](https://github.com/nvm-sh/nvm), short for _Node version manager_.
 
 Using nvm has a number of benefits in comparison with installing Node from
 the node.js website, or from a package provided by Homebrew or your OS distribution:
 
--   You can easily switch between different Node versions
--   Everything gets installed in your home folder, avoiding permission problems
+- You can easily switch between different Node versions
+- Everything gets installed in your home folder, avoiding permission problems
 
 The latest instructions for setting up nvm can be found [here](https://github.com/nvm-sh/nvm#installing-and-updating). If you want to just skip to the commands that most likely work, keep reading.
 

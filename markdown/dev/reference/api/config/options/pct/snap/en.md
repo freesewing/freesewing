@@ -4,7 +4,7 @@ title: Snapped percentage options
 
 Snapped percentage options are a hybrid between [list options][list] and
 [percentage options][pct]. By combining traits of both, they create a
-sort of *smart list option* that will select the most appropriate value
+sort of _smart list option_ that will select the most appropriate value
 from the list, and also allow a pure parametric value if no close match
 is found.
 
@@ -12,12 +12,12 @@ is found.
 
 Your snapped percentage option should be a plain object with these properties:
 
--   `pct` : The default percentage
--   `min` : The minimum percentage that's allowed
--   `max` : The maximum percentage that's allowed
--   `snap`: Holds the snap configuration (see [Snap configuration](#))
--   `toAbs`: a method returning the **millimeter value** of the option ([see `toAbs()`][toabs])
--   `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
+- `pct` : The default percentage
+- `min` : The minimum percentage that's allowed
+- `max` : The maximum percentage that's allowed
+- `snap`: Holds the snap configuration (see [Snap configuration](#))
+- `toAbs`: a method returning the **millimeter value** of the option ([see `toAbs()`][toabs])
+- `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
 
 ## Snap configuration
 
@@ -28,7 +28,7 @@ There are three different scenarios:
 
 ### snap holds a number
 
-When `snap` holds a number, the option will be *snapped* to a
+When `snap` holds a number, the option will be _snapped_ to a
 multiple of this value.
 
 In the example below, the absolute value of this option will be set to a multiple of `7`
@@ -54,7 +54,7 @@ of all possible inputs.
 
 ### snap holds an array of numbers
 
-When snap holds an array of numbers, the option will be *snapped* to one of
+When snap holds an array of numbers, the option will be _snapped_ to one of
 the numbers unless it's further away than half the distance to its closest neighbor.
 
 In the example below, if the absolute value returned by `toAbs()` is in the
@@ -150,10 +150,10 @@ our solution does not scale.
 We combine approaches A and B and configure a snapped percentage option
 with:
 
--   A percentage based on `waistToFloor`
--   Our list of standard elastic widths as *snaps*
+- A percentage based on `waistToFloor`
+- Our list of standard elastic widths as _snaps_
 
-For typical humans, our options will *snap* to the closest match in our
+For typical humans, our options will _snap_ to the closest match in our
 list and behave just like Approach A (with a list option).
 
 For dolls and giants, the option will revert to the parametric value and
@@ -165,19 +165,19 @@ Sweet!
 
 Before we wade into the details, let's first agree on terminology:
 
--   The **percentage value** is the page passed by the user for the option.
-    Its value always represents a percentage.
--   The **millimeter value** is the result of feeding the **percentage value** to
-    the `toAbs()` method. Its value always represents millimeters.
--   The **snap values** are the values provided by the snap confguration.
-    Each of the values always represents millimeters.
+- The **percentage value** is the page passed by the user for the option.
+  Its value always represents a percentage.
+- The **millimeter value** is the result of feeding the **percentage value** to
+  the `toAbs()` method. Its value always represents millimeters.
+- The **snap values** are the values provided by the snap confguration.
+  Each of the values always represents millimeters.
 
 Under the hood, and snapped percentage option will:
 
--   Use `toAbs()` to calculate the **millimeter value** from the **percentage value**
--   See whether the **millimeter value** approaches one of the **snap values**
--   If so, use the snap value (in millimeter) as provided by one of the **snap values**
--   If not, use the **millimeter value** as-is
+- Use `toAbs()` to calculate the **millimeter value** from the **percentage value**
+- See whether the **millimeter value** approaches one of the **snap values**
+- If so, use the snap value (in millimeter) as provided by one of the **snap values**
+- If not, use the **millimeter value** as-is
 
 If you're head's spinning, here's an image that will hopefully clarify things a bit:
 
@@ -200,12 +200,12 @@ snapping, just as it would in a normal percentage option.
 
 This system results in the best of both worlds:
 
--   Things like elastic widths and so on can be configured to be fixed values,
-    of common elastic widths for example
--   The absolute value will still scale up and down, but will snap to the closest
-    fixed value when appropriate.
--   When the input measurements go somewhere the designer did not anticipate,
-    the option will just behave as a regular percentage option
+- Things like elastic widths and so on can be configured to be fixed values,
+  of common elastic widths for example
+- The absolute value will still scale up and down, but will snap to the closest
+  fixed value when appropriate.
+- When the input measurements go somewhere the designer did not anticipate,
+  the option will just behave as a regular percentage option
 
 ## Using snapped percentage options in your pattern code
 

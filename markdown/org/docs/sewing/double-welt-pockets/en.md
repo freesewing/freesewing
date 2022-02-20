@@ -24,19 +24,19 @@ David is a friend of the site, and by all measures much better at explaining thi
 
 To make double welt pockets, you will need:
 
--   Basic sewing supplies
--   The fabric or pattern piece you want to make the pocket in
--   Two fabric strips for the welts
--   A strip of interfacing
--   Lining or other suitable fabric for the pocket bag (See fabric and colour options)
--   Facing for the pocket bag, depending on your fabric and colour options
+- Basic sewing supplies
+- The fabric or pattern piece you want to make the pocket in
+- Two fabric strips for the welts
+- A strip of interfacing
+- Lining or other suitable fabric for the pocket bag (See fabric and colour options)
+- Facing for the pocket bag, depending on your fabric and colour options
 
 ### Parameters
 
 Two values determine the size of your double welt pocket. They are:
 
--   The pocket width: This is the width of the opening of the finalized double welt pocket
--   The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
+- The pocket width: This is the width of the opening of the finalized double welt pocket
+- The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
 
 > In the example below, I use a pocket width of 13cm and a welt height of 0.5cm
 
@@ -46,13 +46,13 @@ Two values determine the size of your double welt pocket. They are:
 
 The welts are two rectangular strips of fabric with the following measurements:
 
--   Length: Pocket width + 4cm
--   Width: Welt height x2 + 5cm
+- Length: Pocket width + 4cm
+- Width: Welt height x2 + 5cm
 
 For our example:
 
--   Length: 13cm + 4cm = 17cm
--   Width: (0.5cm x 2) + 5cm = 6cm
+- Length: 13cm + 4cm = 17cm
+- Width: (0.5cm x 2) + 5cm = 6cm
 
 They will form the two narrow strips of fabric that form your double welt pocket.
 
@@ -62,13 +62,13 @@ They will form the two narrow strips of fabric that form your double welt pocket
 
 The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
 
--   Length: Pocket width + 4cm
--   Width: Welt height x2 + 5cm
+- Length: Pocket width + 4cm
+- Width: Welt height x2 + 5cm
 
 For our example:
 
--   Length: 13cm + 4cm = 17cm
--   Width: (0.5cm x 2) + 5cm = 6cm
+- Length: 13cm + 4cm = 17cm
+- Width: (0.5cm x 2) + 5cm = 6cm
 
 > You may have noticed that the interfacing is the same size as a welt
 
@@ -78,13 +78,13 @@ The interfacing is used to stabilize the pocket, and will be fused to the fabric
 
 The (optional) pocket facing is a single rectangular strip of fabric with the following measurements:
 
--   Length: Pocket width + 4cm
--   Width: Welt height x2 + 5cm
+- Length: Pocket width + 4cm
+- Width: Welt height x2 + 5cm
 
 For our example:
 
--   Length: 13cm + 4cm = 17cm
--   Width: (0.5cm x 2) + 5cm = 6cm
+- Length: 13cm + 4cm = 17cm
+- Width: (0.5cm x 2) + 5cm = 6cm
 
 > You may have noticed that the facing is the same size as a welt
 
@@ -115,9 +115,9 @@ Fuse the pocket interfacing to the bad side of your garment, so that it covers t
 
 Mark the welt pocket as follows:
 
--   Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
--   Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
--   Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
+- Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
+- Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
+- Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
 
 The part of the horizontal lines parallel to the center line that fall in between the verticle lines is where we'll sew our welts in place. This is illustrated by the red lines.
 

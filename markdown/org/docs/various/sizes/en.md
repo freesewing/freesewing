@@ -4,7 +4,7 @@ title: Sizing tables
 
 FreeSewing does not use sizes. All our patterns are drafted to a set of measurements.
 
-Since version 2.2 however, we do provide *standard sizes*.
+Since version 2.2 however, we do provide _standard sizes_.
 Each size is a set of measurements that is an estimation of what a person with a given
 neck circumference could have as measurements.
 

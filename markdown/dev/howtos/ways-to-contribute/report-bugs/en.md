@@ -7,11 +7,11 @@ Create an issue [in our monorepo](https://github.com/freesewing/freesewing/issue
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
--   **Use a clear and descriptive title** for the issue to identify the problem.
--   **Describe the exact steps which reproduce the problem** in as many details as possible.
--   **Include relevant information** such as your username on the site, or the person you drafted a pattern for.
+- **Use a clear and descriptive title** for the issue to identify the problem.
+- **Describe the exact steps which reproduce the problem** in as many details as possible.
+- **Include relevant information** such as your username on the site, or the person you drafted a pattern for.
 
 Provide more context by answering these questions:
 
--   **Did the problem start happening recently** (e.g. it worked fine before but since the latest update it doesn't)
--   **Can you reliably reproduce the issue?** If not, provide details about how often the problem happens and under which conditions it normally happens.
+- **Did the problem start happening recently** (e.g. it worked fine before but since the latest update it doesn't)
+- **Can you reliably reproduce the issue?** If not, provide details about how often the problem happens and under which conditions it normally happens.

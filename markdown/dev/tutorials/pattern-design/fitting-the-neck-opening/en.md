@@ -3,7 +3,7 @@ title: Fitting the neck opening
 order: 170
 ---
 
-Here's how we'll make sure the neck opening is *just right*:
+Here's how we'll make sure the neck opening is _just right_:
 
 ```js
 let tweak = 1
@@ -28,9 +28,9 @@ do {
 
 We've added a few new variables:
 
--   `tweak`: A *tweak factor* that we'll use to increase or decrease the neck opening by making it more or less than 1
--   `target`: How long our (quarter) neck opening should be
--   `delta`: How far we're off. Positive numbers mean it's too long, negative means too short
+- `tweak`: A _tweak factor_ that we'll use to increase or decrease the neck opening by making it more or less than 1
+- `target`: How long our (quarter) neck opening should be
+- `delta`: How far we're off. Positive numbers mean it's too long, negative means too short
 
 Now that we know what `target` is, we construct our path as we did before.
 But this time around, we multiply our point coordinates with our `tweak` variable (1 at the start).

@@ -17,7 +17,7 @@ spending much time to write a meaningful commit message:
 git add . && git commit -m "save"
 ```
 
-The way you can get the best of both worlds is by *rewriting history*.
+The way you can get the best of both worlds is by _rewriting history_.
 Save as many times you want, and when you've gotten to the point where
 you feel like you've hit a good milestone, roll them all back and commit
 anew with a nice commit message that makes it seem you had it all figured

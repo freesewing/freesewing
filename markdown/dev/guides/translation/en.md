@@ -31,11 +31,11 @@ Bonus: You'll get an `@freesewing.org` email alias
 
 We currently support the following five languages:
 
--   **en** : English
--   **de** : German
--   **es** : Spanish
--   **fr** : French
--   **nl** : Dutch
+- **en** : English
+- **de** : German
+- **es** : Spanish
+- **fr** : French
+- **nl** : Dutch
 
 <Note>
 
@@ -49,8 +49,8 @@ please [come and talk to us on Discord](https://discord.freesewing.org).
 
 We use two different tools to manage our translations, depending on the context:
 
--   Markdown content and code strings in our monorepo are translated within **Crowdin**
--   Blog and showcase posts are translated within **Strapi**
+- Markdown content and code strings in our monorepo are translated within **Crowdin**
+- Blog and showcase posts are translated within **Strapi**
 
 <Tip>
 
@@ -79,7 +79,7 @@ expect to find the same structure, the same amount of headings, paragraphs and s
 
 ### Strapi
 
-Strapi ([strapi.io](https://strapi.io/)) is a so-called *headless content management system (CMS)*.
+Strapi ([strapi.io](https://strapi.io/)) is a so-called _headless content management system (CMS)_.
 Headless just means that we load the content from it via an API, rather than have it be part of our
 website like a classic CMS (eg. Wordpress).
 

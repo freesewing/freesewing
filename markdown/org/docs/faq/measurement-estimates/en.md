@@ -19,8 +19,8 @@ The value they represent shows how far the measurement deviates from the proport
 
 These indicators serve a dual purpose:
 
--   Help you spot mistakes in your measurements (you know best where your outliers are)
--   Help you anticipate where our software might struggle to come up with good results
+- Help you spot mistakes in your measurements (you know best where your outliers are)
+- Help you anticipate where our software might struggle to come up with good results
 
 <Note>
 

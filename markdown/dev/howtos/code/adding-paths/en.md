@@ -9,7 +9,7 @@ After using the [shorthand](/howtos/code/shorthand/) call,
 `Path` contains the path constructor, while `paths` is a reference to `part.paths`,
 which is where you should store your paths.
 
-Things will now *just work* when you do this:
+Things will now _just work_ when you do this:
 
 ```js
 paths.example = new Path()

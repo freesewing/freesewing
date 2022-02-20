@@ -2,7 +2,7 @@
 title: miniscale
 ---
 
-The `miniscale` macro adds a mini *scale box* to your pattern. This box allows
+The `miniscale` macro adds a mini _scale box_ to your pattern. This box allows
 users to verify their pattern is printed to scale.
 
 The `miniscale` macro is provided by the [scalebox plugin](/reference/plugins/scalebox).
@@ -20,5 +20,5 @@ macro('miniscale', {
 
 | Property    | Default | Type                | Description |
 |-------------|---------|---------------------|-------------|
-| `at`        |         | [Point](/reference/api/point) | The point to anchor the *scale box* on |
+| `at`        |         | [Point](/reference/api/point) | The point to anchor the _scale box_ on |
 | `rotate`    | 0       | Number              | Rotation in degrees |

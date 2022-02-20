@@ -18,7 +18,7 @@ nvm ls
 ```
 
 It will show you a list of local node versions.
-Either the version number, or an *alias* that points to a specific version.
+Either the version number, or an _alias_ that points to a specific version.
 You should see the `lts/*` alias in the list which is what we've just installed.
 
 ### nvm ls-remote

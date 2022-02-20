@@ -6,12 +6,12 @@ Some parts for Carlton require you to draft parts from the existing parts. The f
 
 ##### Front facing and Front lining
 
--   Trace off of **Front** part.
--   Cut along the green line.
--   Add seam allowance (if including) along green line to both pieces
--   The piece with the lapel is now the **Front facing** part.
--   Trim the hem allowance (if included) of the remaining piece to seam allowance length
--   The remaining piece is now the **Front lining** part.
+- Trace off of **Front** part.
+- Cut along the green line.
+- Add seam allowance (if including) along green line to both pieces
+- The piece with the lapel is now the **Front facing** part.
+- Trim the hem allowance (if included) of the remaining piece to seam allowance length
+- The remaining piece is now the **Front lining** part.
 
 <Note>
 
@@ -27,32 +27,32 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 
 ##### Chest canvas
 
--   Trace off of **Front** part.
--   Cut along the orange line.
--   Discard lower piece.
--   Cut along lapel line.
--   Discard lapel piece.
--   Remove the seam allowances (if included) of the upper piece.
--   The upper piece is now the **Chest canvas** part.
+- Trace off of **Front** part.
+- Cut along the orange line.
+- Discard lower piece.
+- Cut along lapel line.
+- Discard lapel piece.
+- Remove the seam allowances (if included) of the upper piece.
+- The upper piece is now the **Chest canvas** part.
 
 ##### Front Shoulder
 
--   Trace off of **Front** part.
--   Draw a curve from shoulder to bottom of armhole.
--   Cut along this curve and discard the lower part.
--   The upper piece is now the **Front Shoulder** part.
+- Trace off of **Front** part.
+- Draw a curve from shoulder to bottom of armhole.
+- Cut along this curve and discard the lower part.
+- The upper piece is now the **Front Shoulder** part.
 
 ##### Back shoulder
 
--   Trace off of **Back** part.
--   Cut along the orange line.
--   Discard lower piece.
--   Remove the seam allowamces (if included) of the upper piece.
--   The upper piece is now the **Back shoulder** part.
+- Trace off of **Back** part.
+- Cut along the orange line.
+- Discard lower piece.
+- Remove the seam allowamces (if included) of the upper piece.
+- The upper piece is now the **Back shoulder** part.
 
 #### Cutting
 
--   Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/patterns/carlton/cutting/))
+- Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/patterns/carlton/cutting/))
 
 ### Step 2: Fix Me
 
