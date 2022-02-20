@@ -11,12 +11,12 @@ Vous pouvez enregistrer autant de patrons que vous le souhaitez.
 
 <Tip>
 
-##### Patrons vs Designs
+##### Patterns vs Designs
 
-Si vous êtes venu sur ce site à la recherche de *patrons* vous pourriez les avoir trouvés sous *designs*.
+If you came to this site looking for _patterns_ you might have found them under _designs_.
 It's not a super important distinction, but it helps to understand that:
 
--   **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
--   **Pattern**: The result of generating one of those styles into a pattern. Nous avons des milliers de patrons stockés pour nos utilisateurs, et certains pourraient être les vôtres
+- **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
+- **Pattern**: The result of generating one of those styles into a pattern. Nous avons des milliers de patrons stockés pour nos utilisateurs, et certains pourraient être les vôtres
 
 </Tip>
