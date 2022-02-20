@@ -57,6 +57,11 @@ svg.freesewing.pattern {
   .center { text-anchor: middle; }
   .right { text-anchor: end; }
 
+  /* muted page numbers */
+  .muted {
+    opacity: 0.1;
+  }
+
   /* Developer view */
   g.develop.point {
     circle.center {
