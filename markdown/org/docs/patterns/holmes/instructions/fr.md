@@ -10,13 +10,13 @@ title: Construction de Holmes
 <Tip>
 
 Le marquage du fil permet de voir la ligne de couture à la fois sur les côtés de droite et sur les mauvais côtés.
-  
+
 </Tip>
 
 <Note>
 
 Même si vous êtes confronté à la couronne, vous ne voudrez peut-être pas faire face à l'oreille si vous voulez qu'ils soient moins rigides lorsque vous vous tapotez.
-  
+
 </Note>
 
 <Warning>
@@ -37,7 +37,7 @@ Ces instructions supposent que vous avez marqué vos lignes de couture. Ils peuv
 <Note>
 
 Selon votre marge de couture, vous pourriez vouloir couper les coutures au fur et à mesure que vous allez réduire les coutures.
-  
+
 </Note>
 
 ### Étape 3 : Les flacons des oreilles
@@ -56,13 +56,13 @@ Selon votre marge de couture, vous pourriez vouloir couper les coutures au fur e
 <Tip>
 
 If you are uncertain about the length you want for you ties take 1 metre (39") of ribbon and cut in half. Utilisez ces moitiés comme des liens dans les instructions ci-dessus. Les cravates sont terminées à la fin afin de pouvoir ajuster les longueurs.
-  
+
 </Tip>
 
 <Note>
 
-Les longueurs ci-dessus sont des recommandations donc n'hésitez pas à aller aussi longtemps ou aussi court que vous le souhaitez avec les attaches.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
+The lengths above are recommendations so feel free to go as long or as short as you like with the ties.\
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
 
 </Note>
 
@@ -85,7 +85,7 @@ Les clapets de l'oreille devront être assez longs pour dépasser le sommet de l
 
 <Note>
 
-**For both Ear Flaps with Ties and Button Holes**  
+**For both Ear Flaps with Ties and Button Holes**
 
 It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
 
@@ -114,7 +114,7 @@ Faites attention à la chaleur d'un fer lorsque vous utilisez certains matériau
 
 <Note>
 
-If preferred you can temporarily attach the bill insert another way that does not require hand sewing and putting a needle through the material. Veillez simplement à ce que le tissu de votre chapeau ne soit pas endommagé lors de l'enlèvement ou de l'application. 
+If preferred you can temporarily attach the bill insert another way that does not require hand sewing and putting a needle through the material. Veillez simplement à ce que le tissu de votre chapeau ne soit pas endommagé lors de l'enlèvement ou de l'application.
 
 </Note>
 
@@ -170,7 +170,7 @@ Une fois de plus, il y a deux méthodes pour l'assemblage et la doublure finales
 
 <Note>
 
-**For both Assembly and Lining Methods** 
+**For both Assembly and Lining Methods**
 
 You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. It is simply whether you prefer the bills to be underneath or prefer the ear flaps to be underneath like in the instructions.
 
@@ -178,17 +178,17 @@ You can attach the visors on first, just make sure the visors are under the ear 
 
 <Tip>
 
-**For both Assembly and Lining Methods**  
+**For both Assembly and Lining Methods**
 
-If you are having trouble dealing with the curves of the bills, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the bill and clip to it. This should make it easier to bend the bill to shape. Assurez-vous juste de cacher cette broderie et les clips lorsque vous fixez la doublure.
+If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. This should make it easier to bend the bill to shape. Assurez-vous juste de cacher cette broderie et les clips lorsque vous fixez la doublure.
 
 </Tip>
 
 <Warning>
 
-**Pour les méthodes d'assemblage et de doublage**  
+**For both Assembly and Lining Methods**
 
-Les instructions d'assemblage et de confection sont écrites avec 6 panneaux en tête. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
@@ -212,7 +212,7 @@ Si vous n'avez pas réduit vos attaches lors de la construction de l'oreille, il
 <Note>
 
 Pour déterminer la façon dont vous voulez plier les cravates, il vous sera peut-être plus facile de nouer l'oreille en premier. Généralement, vous voulez que le pli se trouve au dessous des liens, mais comme toujours il est de préférence personnelle.
-  
+
 </Note>
 
 ### Étape 7 : Bouton
@@ -225,7 +225,7 @@ Pour déterminer la façon dont vous voulez plier les cravates, il vous sera peu
 
 <Note>
 
-Bien que facultatif, il se peut que vous trouviez un bouton qui manque dans le chapeau pour finir l'apparence. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently. 
+Bien que facultatif, il se peut que vous trouviez un bouton qui manque dans le chapeau pour finir l'apparence. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently.
 Bien qu'un bouton couvert soit recommandé, vous pouvez utiliser n'importe quel bouton que vous désirez, n'hésitez pas à expérimenter !
 
 </Note>
@@ -236,8 +236,8 @@ Voilà! « Vous avez fini. » Maintenant profitez du monde dans votre nouveau ch
 
 <Note>
 
-Rappelez-vous que ces instructions ne sont que des lignes directrices, donc ne vous inquiétez pas si vous voulez construire le chapeau différemment.  
-Les diagrammes doivent encore être faits pour ce modèle, donc en attendant, si vous avez besoin d'une aide visuelle, regardez la vidéo YouTube qui a inspiré ce modèle :
+Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.\
+The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
 
 </Note>
 
