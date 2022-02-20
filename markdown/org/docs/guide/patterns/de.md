@@ -11,12 +11,12 @@ Du kannst so viele Schnittmuster erstellen wie du möchtest.
 
 <Tip>
 
-##### Schnittmuster vs. Designs
+##### Patterns vs Designs
 
-Wenn du auf der Suche nach *Schnittmustern* auf diese Seite gestoßen bist, hast du sie womöglich unter *Designs* gefunden.
+If you came to this site looking for _patterns_ you might have found them under _designs_.
 It's not a super important distinction, but it helps to understand that:
 
--   **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
--   **Pattern**: The result of generating one of those styles into a pattern. Wir haben Tausende von Schnittmustern für unsere Nutzer/innen gespeichert, und ein paar davon sind vielleicht von dir
+- **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
+- **Pattern**: The result of generating one of those styles into a pattern. Wir haben Tausende von Schnittmustern für unsere Nutzer/innen gespeichert, und ein paar davon sind vielleicht von dir
 
 </Tip>
