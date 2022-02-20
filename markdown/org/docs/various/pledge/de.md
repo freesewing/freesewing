@@ -25,3 +25,4 @@ Wenn du FreeSewing unterstützen möchtest, kannst du uns [hier beitreten](/comm
 |      2019 |      4.109,38 |          |
 |      2020 |     10.736,82 |          |
 | **Summe** | **19.418,63** | **Euro** |
+

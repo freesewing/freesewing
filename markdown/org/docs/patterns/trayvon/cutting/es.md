@@ -1,21 +1,21 @@
--   **Tela principal**
-    -   Corta **1 consejo**
-    -   Cortar **1 cola**
--   **Tela fina**
-    -   Corta **1 punta de alineación**
-    -   Cortar **1 cola de forro**
-    -   Cortar **1 bucle**
--   **Interfaz**
-    -   Corta **1 consejo de interfaz**
-    -   Corta **1 cola de interfaz**
+ - **Tela principal**
+   - Corta **1 consejo**
+   - Cortar **1 cola**
+ - **Tela fina**
+   - Corta **1 punta de alineación**
+   - Cortar **1 cola de forro**
+   - Cortar **1 bucle**
+ - **Interfaz**
+   - Corta **1 consejo de interfaz**
+   - Corta **1 cola de interfaz**
 
 <Warning>
 
 ###### Caveat
 
--   No hay permisos de costura en las partes **interfacing** y el **bucle**
--   El **cuerpo** y **cola** solo tienen permisos de costura en la punta
--   El **tejido** **punta** y **tail** solo tienen permisos de costura en la punta y el centro
+ - No hay permisos de costura en las partes **interfacing** y el **bucle**
+ - El **cuerpo** y **cola** solo tienen permisos de costura en la punta
+ - El **tejido** **punta** y **tail** solo tienen permisos de costura en la punta y el centro
 
 </Warning>
 
@@ -34,3 +34,5 @@ Dicho esto, se cortan muchos lazos con la parcialidad, ya que esto resulta en el
 Si todo esto suena muy confuso, podría sugerir leer la página de ayuda en [Fabric grain](/docs/cowing/tel-grain).
 
 </Tip>
+
+

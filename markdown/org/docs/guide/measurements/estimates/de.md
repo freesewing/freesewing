@@ -12,9 +12,9 @@ Diese Abschätzung basiert auf deinem Halsumfang, daher wird sie erst angezeigt,
 
 <Note>
 
-#### Das ist für uns ein schwieriger Bereich
+##### This is a difficult area for us to work in
 
-Wir wollen dir dabei helfen, die besten Ergebnisse zu erzielen, und das beinhaltet auch, dich auf mögliche Fehler beim Maßnehmen hinzuweisen.
+We want to help you get the best results, and that includes helping you spot issues with your measurements.
 Aber natürlich wollen wir niemals andeuten, dass die Maße einer Person *falsch* sind.
 
 Wir sind eine extrem größeninklusive Plattform für Schnittmuster, und ein sehr hoher Anteil unserer Nutzer sind Menschen, die Schwierigkeiten haben, Kleidung oder Schnittmuster bei anderen Anbietern zu finden.
@@ -23,7 +23,8 @@ Aber du kennst deinen Körper. Du weißt, welches deiner Maße vom Durchschnitt 
 Und dass wir darauf hinweisen, dass sie es tun, ist in gewisser Weise nur eine Bestätigung dafür, dass du richtig gemessen hast.
 Wenn andererseits etwas hervorsticht, wo du ziemlich durchschnittliche Maße hast, weißt du, dass du diese Messung vermutlich überprüfen solltest.
 
-Zu guter Letzt: Obwohl wir versuchen, Ratschläge bei den Maßen zu geben, um Fehler zu erkennen, schließen wir niemals jemanden wegen Größe oder Maß aus.
+Last but not least, while we try to provide guidance about measurements to help spot mistakes,
+we never exclude anyone based on size or measurement.
 Egal, was du uns zum Verarbeiten gibst, wir werden ein Schnittmuster für dich erstellen, oder (unsere Software wird) bei dem Versuch sterben.
 
 </Note>

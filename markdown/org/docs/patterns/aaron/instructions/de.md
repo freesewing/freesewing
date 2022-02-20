@@ -2,19 +2,19 @@
 
 ![Seiten- und Schulternähte schließen](step01.png)
 
-Legen Sie Vorder- und Rückseite mit *guten Seiten zusammen* übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
+Put front and back on top of each other with *good sides together*. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
 
 ## Schritt 2: Saum versäubern
 
 ![Versäubere den Saum](step02.png)
 
-Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwenden Sie eine *Zwillingsnadel* oder *Zickzackstich* , um die Naht dehnbar zu halten.
+Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
 
 <Note>
 
-##### Nur einmal falten, um zu vermeiden, dass
+##### Fold only once, to avoid bulk
 
-Knitwear nicht schwenkt, so können Sie diese einfach einmal falten und nach unten nähen, dann sauber den Stoff zurückschneiden.
+Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 </Note>
 
@@ -143,9 +143,9 @@ Du musst deine Bindung noch einmal etwas ausdehnen, während du dies tust. Aber 
 
 <Note>
 
-##### Vorsicht vor dem ungleichen Feed
+##### Beware of the uneven feed
 
-während du deine Bindung durch deine Nähmaschine fütterst, die Futterhunde ziehen die untere Schicht (hinten der Bindung) vorwärts.
+As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
 
 In einer perfekten Welt folgen alle Ebenen reibungslos.
 In den meisten Fällen hinkt die obere Ebene (vor der Bindung) ein bisschen hinterher.

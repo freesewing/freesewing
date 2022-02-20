@@ -8,6 +8,7 @@ Wenn wir erfahren, dass unsere Sicherheitssysteme umgangen wurden, werden wir di
 
 Wenn du glaubst, dass deine persönlichen Daten kompromittiert wurden, kontaktiere bitte joost@joost.at.
 
+
 ##### Dienstanbieter
 
 Unser Hosting-Provider verwaltet unsere Backend-Systeme für uns. Dazu gehören Hosting, Speicher und Backup.
@@ -25,3 +26,4 @@ Bisher haben wir von der Strafverfolgung keine Anfrage erhalten, Informationen �
 ##### Nutzung von Minderjährigen unter 16 Jahren
 
 Aus rechtlichen Gründen musst du mindestens 16 Jahre alt sein, um Freesewing zu benutzen.
+

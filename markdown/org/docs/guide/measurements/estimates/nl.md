@@ -12,9 +12,9 @@ Deze schatting is gebaseerd op je nekomtrek, dus dit zal niet worden weergegeven
 
 <Note>
 
-##### Dit is een moeilijk gebied voor ons om te werken in
+##### This is a difficult area for us to work in
 
-We willen je helpen om de beste resultaten te behalen. en dat betekent ook dat u problemen kunt vinden met uw metingen.
+We want to help you get the best results, and that includes helping you spot issues with your measurements.
 Aan de andere kant willen we op geen enkele manier impliceren dat iemands metingen op de een of andere manier *verkeerd* zijn.
 
 Wij zijn een zeer omvangrijk model en een onevenredig groot deel van onze gebruikers zijn mensen die moeite hebben om kleding of patronen te vinden uit andere buitentjes.
@@ -23,8 +23,8 @@ Maar je kent je lichaam. U weet welke van uw metingen afwijken van het gemiddeld
 En we wijzen erop dat ze dat wel doen, is slechts een bevestiging dat je het goed hebt gemeten.
 Aan de andere kant weet je dat als er iets springt waar je een redelijk gemiddelde maat hebt, je die metingen nog eens dubbel moet controleren.
 
-Last but not least, terwijl we begeleiding proberen te geven bij metingen om fouten te helpen spoelen,
-we sluiten nooit iemand uit op basis van grootte of maat.
+Last but not least, while we try to provide guidance about measurements to help spot mistakes,
+we never exclude anyone based on size or measurement.
 Ongeacht wat je naar ons gooit, zullen we een patroon voor je tekenen, of (onze software zal dat proberen) die uitproberen.
 
 </Note>

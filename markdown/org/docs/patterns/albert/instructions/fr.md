@@ -1,8 +1,6 @@
-***
-
+- - -
 titre: Construction d'Albert
-
-***
+- - -
 
 ### Étape 1 : La Poche
 

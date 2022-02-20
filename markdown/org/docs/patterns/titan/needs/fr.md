@@ -1,7 +1,7 @@
 Pour faire Titan, vous aurez besoin des éléments suivants :
 
--   Fourniture de base pour la couture
--   About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
+- Fourniture de base pour la couture
+- About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
 
 <Note>
 

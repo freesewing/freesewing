@@ -15,3 +15,4 @@ Example of a title
 Cuando genere un patrón en freesewing.org, el título también incluirá el nombre de la persona para la que se hizo el patrón.
 
 </Note>
+

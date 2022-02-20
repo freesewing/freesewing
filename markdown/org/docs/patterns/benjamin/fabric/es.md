@@ -17,3 +17,4 @@ La parte clave de la interfaz es dar a tu arco la estructura que más te guste. 
 It is good to experiment with the interfacing on a scrap piece of your fabric, specially with the fusible kind. You want to make sure you get the structure you like before committing it to your pattern pieces.
 
 Although the pattern calls for applying interfacing to all parts, if you have thick or stiff fabric, you may be able to only do one side, or no sides at all.
+

@@ -1,3 +1,4 @@
+
 ![Bonus de longueur de manche](sleevelengthbonus.svg)
 
 La quantité pour allonger la manche au-delà de la longueur de la manche dans le bloc de base.
@@ -13,5 +14,4 @@ Veuillez prendre note de la valeur par défaut et utiliser cela comme base pour 
 </Note>
 
 ## Effet de cette option sur le motif
-
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_sleevelengthbonus_sample.svg "Effet de cette option sur le motif")

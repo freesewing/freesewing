@@ -2,7 +2,7 @@
 title: Quels sont ces symboles à côté de mes mesures?
 ---
 
-Vous avez peut-être remarqué ce type d'icônes à côté de vos mesures : <Gauge val={0} theme='light' />
+You might have noticed these kind of icons next to your measurements: <Gauge val={0} theme='light' />
 
 La valeur qu'ils représentent montre à quel point la mesure s'écarte des proportions avec lesquelles nous testons nos conceptions :
 
@@ -11,99 +11,90 @@ La valeur qu'ils représentent montre à quel point la mesure s'écarte des prop
     <th>
       Icône
     </th>
-
+    
     <th>
       Description
     </th>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-6} theme='light' />
     </td>
-
+    
     <td>
       La valeur est <strong x-id="1">significativement inférieure à</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-4} theme='light' />
     </td>
-
+    
     <td>
       La valeur est <strong x-id="1">un peu inférieure à</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-2} theme='light' />
     </td>
-
+    
     <td>
       La valeur est <strong x-id="1">un peu inférieure à</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-1} theme='light' />
     </td>
-
+    
     <td>
       La valeur est <strong x-id="1">très proche</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={1} theme='light' />
     </td>
-
+    
     <td>
       La valeur est <strong x-id="1">très proche</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={2} theme='light' />
     </td>
-
+    
     <td>
       La valeur est <strong x-id="1">un peu plus élevée</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={4} theme='light' />
     </td>
-
+    
     <td>
       La valeur est <strong x-id="1">un peu plus élevée</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={6} theme='light' />
     </td>
-
+    
     <td>
       La valeur est <strong x-id="1">considérablement supérieure</strong>
     </td>
-
   </tr>
 </table>
 

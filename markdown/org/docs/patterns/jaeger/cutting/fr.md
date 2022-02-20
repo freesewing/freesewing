@@ -1,29 +1,29 @@
--   **Tissu principal**
-    -   Couper **2 faces** (partie 1)
-    -   Couper **2 faces avant** (rechercher la frontière face/doublure sur la partie avant)
-    -   Couper **2 dos** (partie 2)
-    -   Couper **2 côtés** (partie 3)
-    -   Couper **2 manches supérieures** (partie 4)
-    -   Couper **2 manches inférieures** (partie 5)
-    -   Couper **1 collier** (partie 6)
-    -   Couper **1 collier** (partie 8)
-    -   Couper **2 poches** (partie 9)
-    -   Couper **1 poche de poitrine** (partie 10)
--   **tissu de doublure**
-    -   Couper **2 faces** (partie 1)
-    -   Coupez **2 doublures frontales** (cherchez la bordure face/doublure sur la partie avant, et n'oubliez pas d'attacher la poche intérieure face à l'extension)
-    -   Couper **2 dos** (partie 2)
-    -   Couper **2 côtés** (partie 3)
-    -   Couper **2 manches hautes** (partie 4) Note : Certaines personnes aiment utiliser une doublure différente pour les manches
-    -   Coupez **2 sous-manches** (partie 5) Note : Certaines personnes aiment utiliser une doublure différente pour les manches
-    -   Coupez **sacs de poche de poitrine** (partie 11)
-    -   Coupez **2 poches intérieures**
-    -   Couper **2 poches intérieures** (partie 13)
--   **Toile**
-    -   Couper **2 faces** sur un biais (partie 1) : Ne pas inclure la marge de couture
-    -   Coupez **2 pièces de poitrine** en parti. Recherchez les indications sur la partie avant. Remarque : Ne pas inclure la marge de couture
--   **Tissu de sous-col**
-    -   Couper **1 sous-collier** (partie 7)
+ - **Tissu principal**
+   - Couper **2 faces** (partie 1)
+   - Couper **2 faces avant** (rechercher la frontière face/doublure sur la partie avant)
+   - Couper **2 dos** (partie 2)
+   - Couper **2 côtés** (partie 3)
+   - Couper **2 manches supérieures** (partie 4)
+   - Couper **2 manches inférieures** (partie 5)
+   - Couper **1 collier** (partie 6)
+   - Couper **1 collier** (partie 8)
+   - Couper **2 poches** (partie 9)
+   - Couper **1 poche de poitrine** (partie 10)
+ - **tissu de doublure**
+   - Couper **2 faces** (partie 1)
+   - Coupez **2 doublures frontales** (cherchez la bordure face/doublure sur la partie avant, et n'oubliez pas d'attacher la poche intérieure face à l'extension)
+   - Couper **2 dos** (partie 2)
+   - Couper **2 côtés** (partie 3)
+   - Couper **2 manches hautes** (partie 4) Note : Certaines personnes aiment utiliser une doublure différente pour les manches
+   - Coupez **2 sous-manches** (partie 5) Note : Certaines personnes aiment utiliser une doublure différente pour les manches
+   - Coupez **sacs de poche de poitrine** (partie 11)
+   - Coupez **2 poches intérieures**
+   - Couper **2 poches intérieures** (partie 13)
+ - **Toile**
+   - Couper **2 faces** sur un biais (partie 1) : Ne pas inclure la marge de couture
+   - Coupez **2 pièces de poitrine** en parti. Recherchez les indications sur la partie avant. Remarque : Ne pas inclure la marge de couture
+ - **Tissu de sous-col**
+   - Couper **1 sous-collier** (partie 7)
 
 <Note>
 
@@ -40,9 +40,9 @@ Lorsque vous les coupez individuellement, rappelez-vous qu'elles doivent être l
 
 ###### Couper les avertissements
 
--   La pièce du coffre est marquée à l'avant.
--   Ne pas inclure la marge de couture lors du découpage de toile, et couper le sur un parti.
--   La face avant et la doublure est marquée sur la pièce avant. Ils ont divisé la partie avant en deux le long de la ligne de limite. Vous pouvez couper la partie avant le long de cette ligne après avoir coupé le devant du tissu principal. L'extension intérieure de la poche pour la face est imprimée séparément, et vous pouvez la coller à sa place après avoir coupé la pièce de paterne. **N'oubliez pas d'ajouter une marge de couture à la fois pour la face et la doublure pour cette couture de limite**.
+ - La pièce du coffre est marquée à l'avant.
+ - Ne pas inclure la marge de couture lors du découpage de toile, et couper le sur un parti.
+ - La face avant et la doublure est marquée sur la pièce avant. Ils ont divisé la partie avant en deux le long de la ligne de limite. Vous pouvez couper la partie avant le long de cette ligne après avoir coupé le devant du tissu principal. L'extension intérieure de la poche pour la face est imprimée séparément, et vous pouvez la coller à sa place après avoir coupé la pièce de paterne. **N'oubliez pas d'ajouter une marge de couture à la fois pour la face et la doublure pour cette couture de limite**.
 
 ![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 

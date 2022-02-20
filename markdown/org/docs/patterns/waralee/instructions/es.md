@@ -1,3 +1,4 @@
+
 <Warning>
 
 ##### The key to Waralee is the waist band
@@ -11,18 +12,17 @@ In a way, Waralee is just a waist band with a long piece of fabric attached. The
 <Note>
 
 ##### Los bolsillos son opcionales
-
 Tradicionalmente, estos tipos de pantalones no tienen bolsillos. Pero quiero poner mi teléfono, llaves y monedero en algún lugar. Así que he incluido bolsillos en el patrón. Usted puede decidir por sí mismo si lo desea en sus pantalones.
 
 Las ilustraciones en los siguientes pasos muestran los pantalones de Waralee sin bolsillos. Sólo se muestran las colocaciones de los bolsillos del patrón, para ayudarte a orientarte a ti mismo.
 
 ##### Si quieres bolsillos, hazlos primero
-
 Si vas a hacer los bolsillos, fabricarlos antes de poner una pieza de tejido en la otra. Es más fácil trabajar con las piezas aún separadas.
 
 </Note>
 
--   If desired, sew the pockets.
+- If desired, sew the pockets.
+
 
 <Note>
 
@@ -40,8 +40,8 @@ Explain how to sew the pockets more.
 
 ![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
 
--   Hem the sides
--   Hem the bottom.
+- Hem the sides
+- Hem the bottom.
 
 <Note>
 
@@ -55,15 +55,15 @@ You can use whatever method works best for you. In the version I first made I ju
 
 Now you get to sew the two pants parts together.
 
--   Lay the two pants parts on top of one another with *good sides together* and sew the seam along the cutout.
--   *Finish* this seam and press it.
+- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
+- _Finish_ this seam and press it.
 
 ### Step 4: Prepare the four strings
 
 The strings are just long tubes of fabric.
 
--   Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
--   Cut out four strips of fabric that are that long and 5cm (2”) wide.
+- Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
+- Cut out four strips of fabric that are that long and 5cm (2”) wide.
 
 <Tip>
 
@@ -74,7 +74,6 @@ For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm.
 <Note>
 
 ##### You can lengthen the front ties
-
 Optionally, to make the front ties longer, extend them by your quarter waist measurement.
 
 When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
@@ -85,9 +84,9 @@ If your material is delicate or flimsy, you can add some interfacing to this to 
 
 </Note>
 
--   Fold them in half along the long side, *good sides together*.
--   Stitch the long side and one of the short sides,
--   Turn the tie right side out.
+- Fold them in half along the long side, _good sides together_.
+- Stitch the long side and one of the short sides,
+- Turn the tie right side out.
 
 <Tip>
 
@@ -103,10 +102,10 @@ Esto se puede hacer más fácil tomando una pieza de twine más larga que las ca
 
 Now it is time to sew the waist band.
 
--   If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
--   Fold the seam allowance in, and then fold along the waist band line. (red)
--   Insert one of the strings you made in the previous step on each side.
--   Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
+- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
+- Fold the seam allowance in, and then fold along the waist band line. (red)
+- Insert one of the strings you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
 
 <Warning>
 
@@ -125,3 +124,4 @@ Hold the front side against your belly and wrap both strings around you and tie 
 Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
 
 If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
+

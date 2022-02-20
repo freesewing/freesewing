@@ -10,4 +10,4 @@ Bien que le tissu soit tricoté, il ne ressemble pas à du tricot, mais à du ti
 
 Le tissu maille est utilisé dans les vêtements où une certaine élasticité est requise. Les coudre se fait souvent avec une surjeteuse pour maintenir l'élasticité dans les coutures.
 
-> Wikipédia a plus d'informations sur les tissus mailles : [Tricot textile sur Wikipedia](https://fr.wikipedia.org/wiki/Tricot_\(textile\))
+> Wikipédia a plus d'informations sur les tissus mailles : [Tricot textile sur Wikipedia](https://fr.wikipedia.org/wiki/Tricot_(textile))

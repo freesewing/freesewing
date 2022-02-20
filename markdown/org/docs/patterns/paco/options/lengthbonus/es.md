@@ -1,3 +1,4 @@
+
 Controla la longitud de los pantalones enteros, lo que significa esencialmente la longitud de las piernas.
 
 <Note>
@@ -10,5 +11,4 @@ los pantalones tendrán que ser más largos que esto para golpear realmente el s
 </Note>
 
 ## Efecto de esta opción en el patrón
-
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](paco_lengthbonus_sample.svg "Efecto de esta opción en el patrón")

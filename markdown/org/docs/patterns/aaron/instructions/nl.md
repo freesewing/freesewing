@@ -2,19 +2,19 @@
 
 ![Sluit de zij-en schoudernaden](step01.png)
 
-Leg de voor- en achterpand op elkaar met *goede kanten op elkaar*. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Put front and back on top of each other with *good sides together*. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Stap 2: Werk de zoom af
 
 ![Werk de zoom af](step02.png)
 
-Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. Zo niet, gebruik een *tweelingnaald* of *zigzagsteek* om de naad elastisch te houden.
+Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
 
 <Note>
 
-##### Enkel een keer vouw om massa
+##### Fold only once, to avoid bulk
 
-Knitwear te vermijden ravel, niet dus je kan dit gewoon een keer omplooien en vaststikken, en dan de stof netjes bijknippen.
+Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 </Note>
 
@@ -38,7 +38,7 @@ Hoe dan ook, hoe minder scherp de curves zijn, hoe makkelijker. Start dus met ee
 
 </Note>
 
-We gaan de armsgaten en nekopening afwerken met een [jersey bies](/docs/sewing/knit-binding) (Pas op: geen jersey band. Er is een verschil, en dat wordt [hier](/docs/sewing/knit-binding) uitgelegd).
+We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. Er is een verschil, en dat wordt [hier](/docs/sewing/knit-binding) uitgelegd).
 
 <Note>
 
@@ -143,9 +143,9 @@ Wederom moet je de bies een beetje uitrekken terwijl je dit doet. Maar nu is er 
 
 <Note>
 
-##### Pas op voor de oneven feed
+##### Beware of the uneven feed
 
-Als je je bies via je naaimachine voert, de feed honden trekken de onderste laag (achterkant van je binding) vooruit.
+As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
 
 In een ideale wereld zouden alle lagen gelijkmatig volgen.
 Maar meestal blijft de bovenste laag (de voorkant van je bies) wat achter.

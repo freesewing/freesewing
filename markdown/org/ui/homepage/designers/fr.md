@@ -1,12 +1,11 @@
-***
-
-***
+- - -
+- - -
 
 #### Qu'est-ce que la conception paramétrique ?
 
 La conception paramétrique fait référence à l'utilisation de paramètres ou de variables pour manipuler le résultat d'un design donné selon ses règles.
 
-Dans les patrons de couture, les *paramčtres* sont ce qui est fourni par l'utilisateur : Leurs mensurations et les options qu'ils ont sélectionnées.\
+Dans les patrons de couture, les *paramčtres* sont ce qui est fourni par l'utilisateur : Leurs mensurations et les options qu'ils ont sélectionnées.  
 Les *règles* du design sont celles que vous, le designer, avez déterminées.
 
 #### Qu'est-ce que cela signifie pour les designers ?

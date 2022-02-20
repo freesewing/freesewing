@@ -1,12 +1,11 @@
-***
-
-***
+- - -
+- - -
 
 #### ¿Qué es el diseño paramétrico?
 
 Parametric design refers to the use of parameters or variables to manipulate the outcome of a given design within its rules.
 
-In sewing patterns, the *parameters* are what is provided by the user: Their measurements and options that they have selected.\
+In sewing patterns, the *parameters* are what is provided by the user: Their measurements and options that they have selected.  
 The *rules* of the design are what you, the designer, make them.
 
 #### ¿Qué significa eso para los diseñadores?

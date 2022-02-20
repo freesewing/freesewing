@@ -13,7 +13,7 @@ Le droit fil est indiqué sur un patron par la ligne de droit fil (souvent une f
 > Pour plus de détails sur la chaîne et la trame : [Tissage sur Wikipedia](https://fr.wikipedia.org/wiki/Tissage)
 
 > ##### Confus ? Pensez au bois
->
+> 
 > Le bois n'est pas tissé, mais il pousse en différentes couches en fonction des saisons (anneaux de croissance). La manière dont ces couches sont alignées est importante pour les travailleurs du bois. Ils influencent dans quelle mesure le bois se déformera après le découpage et comment il se pliera, ainsi que d'autres paramètres.
->
+> 
 > Tout comme un menuisier en tiendra compte avant de couper le bois, vous devriez prendre en compte le droit fil avant de couper votre tissu.

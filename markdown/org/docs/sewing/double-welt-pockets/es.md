@@ -3,7 +3,6 @@ title: Bolsillos de doble soldadura
 ---
 
 ## Vídeo
-
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
 ## Aprender soldaduras con David Page Coffin
@@ -20,19 +19,19 @@ David es un amigo del sitio, y por todas las medidas mucho mejores para explicar
 
 Para hacer bolsillos de doble soldadura, necesitarás:
 
--   Suministros básicos de costura
--   El tejido o patrón en el que quieres hacer el bolsillo
--   Dos tiras de tela para las soldaduras
--   Una tira de interfaz
--   Tejido o de otro tipo adecuado para la bolsa de bolsillo (Ver tela y opciones de color)
--   Encara para la bolsa de bolsillo, dependiendo de las opciones de tejido y color
+ - Suministros básicos de costura
+ - El tejido o patrón en el que quieres hacer el bolsillo
+ - Dos tiras de tela para las soldaduras
+ - Una tira de interfaz
+ - Tejido o de otro tipo adecuado para la bolsa de bolsillo (Ver tela y opciones de color)
+ - Encara para la bolsa de bolsillo, dependiendo de las opciones de tejido y color
 
 ### Parámetros
 
 Dos valores determinan el tamaño de su bolsillo de doble soldadura. Estas son:
 
--   Ancho del bolsillo: Este es el ancho de la apertura del bolsillo de doble soldadura finalizado
--   La altura de la soldadura: Esta es la altura de una soldadura, y esta mitad de la altura de nuestro bolsillo de doble soldadura
+ - Ancho del bolsillo: Este es el ancho de la apertura del bolsillo de doble soldadura finalizado
+ - La altura de la soldadura: Esta es la altura de una soldadura, y esta mitad de la altura de nuestro bolsillo de doble soldadura
 
 > En el ejemplo de abajo, uso un ancho de bolsillo de 13 cm y una altura de soldadura de 0,5 cm
 
@@ -42,13 +41,13 @@ Dos valores determinan el tamaño de su bolsillo de doble soldadura. Estas son:
 
 Las soldaduras son dos bandas rectangulares de tejido con las siguientes medidas:
 
--   Longitud: Ancho de bolsillo + 4cm
--   Ancho: Altura del mundo x2 + 5cm
+ - Longitud: Ancho de bolsillo + 4cm
+ - Ancho: Altura del mundo x2 + 5cm
 
 Por ejemplo:
 
--   Length: 13cm + 4cm = 17cm
--   Width: (0.5cm x 2) + 5cm = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 Formarán las dos tiras estrechas de tela que forman su doble bolsillo de soldadura.
 
@@ -58,13 +57,13 @@ Formarán las dos tiras estrechas de tela que forman su doble bolsillo de soldad
 
 La interfaz del bolsillo es una sola tira rectangular de interfaz fusible con las siguientes medidas:
 
--   Longitud: Ancho de bolsillo + 4cm
--   Ancho: Altura del mundo x2 + 5cm
+ - Longitud: Ancho de bolsillo + 4cm
+ - Ancho: Altura del mundo x2 + 5cm
 
 Por ejemplo:
 
--   Length: 13cm + 4cm = 17cm
--   Width: (0.5cm x 2) + 5cm = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Puede haber notado que la interfaz es del mismo tamaño que una soldadura
 
@@ -74,13 +73,13 @@ The interfacing is used to stabilize the pocket, and will be fused to the fabric
 
 La cara (opcional) del bolsillo es una sola tira rectangular de tela con las siguientes medidas:
 
--   Longitud: Ancho de bolsillo + 4cm
--   Ancho: Altura del mundo x2 + 5cm
+ - Longitud: Ancho de bolsillo + 4cm
+ - Ancho: Altura del mundo x2 + 5cm
 
 Por ejemplo:
 
--   Length: 13cm + 4cm = 17cm
--   Width: (0.5cm x 2) + 5cm = 6cm
+ - Length: 13cm + 4cm = 17cm
+ - Width: (0.5cm x 2) + 5cm = 6cm
 
 > Puede que hayas notado que la cara es del mismo tamaño que una soldadura
 
@@ -110,9 +109,9 @@ Fusionar el bolsillo con el lado malo de su ropa, para que cubra el lugar donde 
 
 Marca el pocket de la siguiente forma:
 
--   Marca el ancho del bolsillo con las líneas verticales. Dejar que estas líneas se extiendan para ayudarte a alinear las soldaduras más tarde
--   Alinear la apertura central del bolsillo con una línea horizontal. Deja que se extienda para ayudarte a alinear las soldaduras más tarde
--   Marca dos líneas horizontales paralelas a la línea central, en un desplazamiento igual a la altura de la soldadura (0,5 cm en nuestro ejemplo)
+ - Marca el ancho del bolsillo con las líneas verticales. Dejar que estas líneas se extiendan para ayudarte a alinear las soldaduras más tarde
+ - Alinear la apertura central del bolsillo con una línea horizontal. Deja que se extienda para ayudarte a alinear las soldaduras más tarde
+ - Marca dos líneas horizontales paralelas a la línea central, en un desplazamiento igual a la altura de la soldadura (0,5 cm en nuestro ejemplo)
 
 La parte de las líneas horizontales paralelas a la línea central que caen entre las líneas de vértices es donde cosecharemos nuestras soldaduras en su lugar. Esto se ve reflejado en las líneas rojas.
 
@@ -153,6 +152,7 @@ Cuando hayas terminado, coser la segunda soldadura en su lugar. Ten en cuenta qu
 > En la imagen, la línea roja marca cómo cortar el bolsillo y la línea verde muestra las costuras.
 
 Corta tu bolsillo de soldadura cortando a lo largo de la línea horizontal central. Parar a corto de las líneas verticales que marcan los lados del bolsillo y cortan menos de 45 grados hasta el borde de su línea de unión que mantiene las soldaduras hacia abajo.
+
 
 > Asegúrate de no cortar en tus cintas ni cortar demasiado lejos. Hagamos que sea precisa.
 

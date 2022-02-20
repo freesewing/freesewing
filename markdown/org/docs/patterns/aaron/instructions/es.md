@@ -2,19 +2,19 @@
 
 ![Cerrar las costuras de los lados y los hombros](step01.png)
 
-Pon delantero y de vuelta sobre el otro con *buenos lados juntos*. Cose las costuras laterales y las costuras cortas de los arriba de los tirantes. Si tienes una remalladora, este es un buen momento para usarla. Si no, haz las costuras de otra forma.
+Put front and back on top of each other with *good sides together*. Cose las costuras laterales y las costuras cortas de los arriba de los tirantes. Si tienes una remalladora, este es un buen momento para usarla. Si no, haz las costuras de otra forma.
 
 ## Paso 2: Termina el dobladillo
 
 ![Termina el dobladillo](step02.png)
 
-Dobla el borde hacia arriba y cóselo. Si tienes una remalladora con coverlock, úsala. Si no, usa una *aguja doble o gemela* o *punto de zig-zag* para mantener la costura elástica.
+Dobla el borde hacia arriba y cóselo. Si tienes una remalladora con coverlock, úsala. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
 
 <Note>
 
-##### Doblar solo una vez, para evitar el grueso
+##### Fold only once, to avoid bulk
 
-El brillo no se cuelga, así que puede doblar esto una vez y coser la tela, luego recortar la tela.
+Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 </Note>
 
@@ -143,9 +143,9 @@ Tendrás que, una vez más, estirar tu vinculación un poco mientras haces esto.
 
 <Note>
 
-##### Cuidado con el alimento desigual
+##### Beware of the uneven feed
 
-mientras alimentas tu unión a través de tu máquina de coser, los perros de alimentación tirarán hacia adelante la capa inferior (parte trasera de su enlazamiento).
+As you feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
 
 En un mundo perfecto, todas las capas seguirán sin problemas.
 Pero la mayoría de las veces la capa superior (frontal de su enlace) tiende a retrasarse un poco.

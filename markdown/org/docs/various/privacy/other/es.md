@@ -8,6 +8,7 @@ Si nos enteramos de una violación de los sistemas de seguridad, le informaremos
 
 Si cree que sus datos personales han sido comprometidos, póngase en contacto con joost@joost.at.
 
+
 ##### Proveedores de servicios
 
 Nuestro proveedor de alojamiento gestiona nuestros sistemas de backend para nosotros. Esto incluye alojamiento, almacenamiento y copia de seguridad.
@@ -25,3 +26,4 @@ Hasta ahora, no hemos recibido ninguna solicitud de la fuerza pública para reve
 ##### Uso por menores de 16 años
 
 Por razones legales, usted necesita tener al menos 16 años para usar freesewing.
+

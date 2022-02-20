@@ -7,3 +7,4 @@ Ve a **lana** para ver el aspecto más clásico. Consulta la sección de traje d
 Para **algodón**, vaya a un peso más pesado. El algodón también podría ser un poco más fácil para los principiantes que la lana. Si no está seguro de qué usar, pregunte por el chino en la tienda de tejidos y simplemente escoja el color que quiera.
 
 Nada pega a **lino** en un día caluroso de verano. Es divertido trabajar también con él, pero se envuelve como un mofo, y hasta los pantalones más bien hechos se ven un poco desordenados cuando se fabrican en lino. Lo que estoy diciendo es, tal vez no para su primer par.
+

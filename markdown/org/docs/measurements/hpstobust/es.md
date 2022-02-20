@@ -19,16 +19,16 @@ El punto de esta medida es localizar la parte más completa de su busto vertical
 
 <Tip>
 
-##### Piensa en qué mano estás usando
+##### Think about which hand you're using
 
-Si te mides, podrías tratar de mantener tu cinta de medición hasta el hombro con la mano en
-el mismo lado de tu cuerpo que el hombro que estás cometiendo. Así que, por ejemplo, podrías mantener la parte superior de
-cinta hasta tu hombro derecho con la mano derecha. mientras que la mano izquierda mantiene el final.
+If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on
+the same side of your body as the shoulder you're measuring. So, for example, you could be holding the top of
+the tape up to your right shoulder with your right hand, while your left hand is holding the end.
 Pero eso significa que distorsionas la longitud que intentas medir al levantar el brazo del mismo lado.
-Tal vez no creas que haya una diferencia, pero todo está conectado en el mundo de la siología, y
-hacer esto podría llevar a un error de ~2. cm (~1 pulgada) en su medición.\
-Simplemente cambie las manos y obtenga una medición más precisa.
+You might not think there is a difference, but all is connected in the world of physiology, and
+doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.\
+Simply switch your hands around, and you get a more accurate measurement.
 
-Para obtener mejores resultados, consiga que una segunda persona tome sus mediciones (si es posible).
+For best results, get a second person to take your measurements (if possible).
 
 </Tip>

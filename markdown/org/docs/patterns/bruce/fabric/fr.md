@@ -3,3 +3,5 @@ Vous avez besoin d'un tissu extensible pour ce modèle. Préférez quelque chose
 Je pense personnellement que rien ne vaut la viscose (rayonne) pour ce modèle, même si vous pouvez utiliser un autre tissu en maille, comme le jersey.
 
 En cas de doute, choisissez la viscose.
+
+

@@ -12,7 +12,7 @@ Nous espérons que nos patrons sont assez faciles à comprendre, mais si vous re
 ##### Cela peut varier légèrement entre l'aperçu et le résultat final
 
 Pour une raison étonnamment complexe, il peut y avoir de légères
-différences dans les polices et les couleurs entre l'apparence d'un patron en ligne
+différences dans les polices et les couleurs entre l'apparence d'un patron en ligne 
 et son apparence en format PDF ou SVG téléchargé.
 
 </Tip>

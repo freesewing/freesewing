@@ -12,9 +12,9 @@ Esta estimación se basa en la circunstancia del cuello, por lo que no aparecer�
 
 <Note>
 
-##### Esta es una área difícil de trabajar en
+##### This is a difficult area for us to work in
 
-Queremos ayudarte a obtener los mejores resultados. y eso incluye ayudarte a detectar problemas con tus mediciones.
+We want to help you get the best results, and that includes helping you spot issues with your measurements.
 Por otra parte, no queremos en modo alguno dar a entender que las mediciones de alguien están *equivocadas* de algún modo.
 
 Somos un patrón muy incluyente de tamaño, y una cantidad desproporcionada de nuestros usuarios son personas que luchan por encontrar ropa o patrones de otras tiendas.
@@ -23,8 +23,8 @@ Pero usted conoce su cuerpo. Usted sabe cuál de sus mediciones se desviará de 
 Y señalamos que lo hacen de alguna manera sólo es una confirmación de que ha estado mediendo correctamente.
 Por otro lado, si algo salta hacia fuera donde tienes un tamaño bastante medio, sabes que puedes revisar esas mediciones.
 
-Por último, pero no menos importante, mientras intentamos proporcionar orientación sobre las mediciones para ayudar a detectar errores,
-nunca excluimos a nadie basado en el tamaño o medición.
+Last but not least, while we try to provide guidance about measurements to help spot mistakes,
+we never exclude anyone based on size or measurement.
 Independientemente de lo que nos lance, elaboraremos un patrón para usted o (nuestro software morirá) intentando.
 
 </Note>

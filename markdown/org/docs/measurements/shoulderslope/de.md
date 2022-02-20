@@ -6,7 +6,7 @@ Die **Schulterneigung**ist ein Indikator dafür, wie stark sich deine Schulter n
 
 Um deine Schulterneigung zu messen, musst du den Winkel bestimmen, unter dem sich deine Schulterlinie nach unten neigt.
 
-Eine gute Methode, um deine Schulterneigung zu messen, ist, ein Selfie aufzunehmen und es solange zu drehen, bis deine Schulterlinie horizontal ist.
+A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
 
 Der Winkel, um den du das Bild drehen musstest, ist deine Schulterneigung.
 

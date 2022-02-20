@@ -10,5 +10,4 @@ en profondeur sur la façon dont le chapeau de manche est construit et l'influen
 </Tip>
 
 ## Effet de cette option sur le motif
-
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_sleevecapq3spread2_sample.svg "Effet de cette option sur le motif")

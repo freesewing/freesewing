@@ -16,4 +16,5 @@ Ease también puede funcionar al revés. When the fabric stretches, we can choos
 
 La facilidad negativa se utiliza para materiales estirados en los que la prenda debe ajustarse con fuerza. Por ejemplo, en la ropa de baño, apretas, ropa interior o sportswear.
 
-> Pictures by [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) and [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)
+
+> Pictures by [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) and [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893) 

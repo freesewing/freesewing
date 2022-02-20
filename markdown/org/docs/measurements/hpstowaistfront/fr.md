@@ -5,7 +5,6 @@ title: Longueur épaule-taille devant
 <Note>
 
 ###### Le Point Haut de l’Épaule ou PHE est utilisé comme base pour plusieurs mesures verticales.
-
 Reportez-vous à la [documentation PHE](/docs/measurements/hps/) pour savoir comment localiser ce point.
 
 </Note>

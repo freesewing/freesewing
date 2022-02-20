@@ -1,6 +1,5 @@
-***
-
-***
+- - -
+- - -
 
 #### Des patrons de couture faits à vos mesures
 

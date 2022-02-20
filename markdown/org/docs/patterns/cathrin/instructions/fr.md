@@ -7,7 +7,6 @@ Ces instructions ne sont qu'une seule façon. Grâce à cette méthode, je recom
 Les fabricants de corsets débutants devraient lire les tutoriels écrits par [Sidney Eileen](http://www.sidneyeileen.com), qui montrent plusieurs méthodes de construction différentes. [Foundations Revealed](https://www.foundationsrevealed.com) est un site paywall pour les créateurs de corseaux, avec plusieurs articles exceptionnels gratuits pour les non-membres.
 
 #### Vérifiez le tutoriel original
-
 Ce modèle est basé sur [ce tutoriel de Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin a également [cet article informatif sur la création de corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) sur son blog que vous pourriez trouver utile.
 
 </Note>
@@ -26,13 +25,13 @@ Avec une petite largeur de point (je mets la mienne à « 2 »), coudre une lign
 
 Prenez la pièce suivante. Pour un Cathrin à 11 panneaux, ce sera le panel 2.
 
-Placez le panneau extérieur 2 sur le panneau extérieur 1, *de bons côtés ensemble*.
+Placez le panneau extérieur 2 sur le panneau extérieur 1, _de bons côtés ensemble_.
 
-Placez le panneau de base 2 sur le panneau de base 1, *de bons côtés ensemble*.
+Placez le panneau de base 2 sur le panneau de base 1, _de bons côtés ensemble_.
 
 Assurez-vous que les quatre couches de tissu sont parfaitement alignées. Vérifiez à deux reprises que vous n’avez pas mélangé des pièces de motif ou bien que vous ne les avez pas retournés par erreur.
 
-Faites correspondre les quatre couches de tissu à la partie la plus étroite, *de bons côtés ensemble*, et épinglez. Ensuite correspondez au haut et au bas de chaque panneau et à l'épingle. Enfin, épingler le reste du bord en place. Utilisez autant de broches que nécessaire pour vous assurer que les panneaux restent parfaitement alignés.
+Faites correspondre les quatre couches de tissu à la partie la plus étroite, _de bons côtés ensemble_, et épinglez. Ensuite correspondez au haut et au bas de chaque panneau et à l'épingle. Enfin, épingler le reste du bord en place. Utilisez autant de broches que nécessaire pour vous assurer que les panneaux restent parfaitement alignés.
 
 Coudre la couture.
 
@@ -52,11 +51,11 @@ Toppoint une autre couture parallèle à la première couture, permettant un peu
 
 Prenez la pièce suivante. Pour un Cathrin de 11 panneaux, ce sera le Groupe d'étude 3.
 
-Placez le panneau extérieur 3 sur le panneau extérieur 2, *de bons côtés ensemble*.
+Placez le panneau extérieur 3 sur le panneau extérieur 2, _de bons côtés ensemble_.
 
-Placez le panneau de base 3 sur le panneau de base 2, *de bons côtés ensemble*.
+Placez le panneau de base 3 sur le panneau de base 2, _de bons côtés ensemble_.
 
-Faites correspondre les quatre couches de tissu à la partie la plus étroite, *de bons côtés ensemble*, et épinglez. Ensuite correspondez au haut et au bas de chaque panneau et à l'épingle. Enfin, épingler le reste du bord en place. Utilisez autant de broches que nécessaire pour vous assurer que les panneaux restent parfaitement alignés.
+Faites correspondre les quatre couches de tissu à la partie la plus étroite, _de bons côtés ensemble_, et épinglez. Ensuite correspondez au haut et au bas de chaque panneau et à l'épingle. Enfin, épingler le reste du bord en place. Utilisez autant de broches que nécessaire pour vous assurer que les panneaux restent parfaitement alignés.
 
 Coudre la couture.
 
@@ -90,7 +89,7 @@ Plier la marge de couture des deux pièces à l'intérieur de sorte que la marge
 
 Coudre une autre couture à côté de la couture arêtée, ce qui laisse un peu d'espace supplémentaire, environ 2 mm, en plus de la largeur de la couture.
 
-![!\[First channel on the back\](etape 7)](step07.png)
+![![First channel on the back](etape 7)](step07.png)
 
 Marquez l'emplacement de vos grommets. (Ne les insérez pas encore. Marquez simplement le tissu où vous les placerez et assurez-vous de créer une bande adaptée à la largeur de vos grommets.)
 

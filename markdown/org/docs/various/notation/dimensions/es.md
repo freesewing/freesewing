@@ -2,7 +2,7 @@
 title: Dimensiones
 ---
 
-Cuando optas por un patrón \*\* sin papel, tu patrón vendrá con dimensiones:
+Cuando optas por un patrón ** sin papel, tu patrón vendrá con dimensiones:
 
 <Legend part="dimension">
 

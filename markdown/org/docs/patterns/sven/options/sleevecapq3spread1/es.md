@@ -10,5 +10,4 @@ en profundidad cómo se construye la manga y la influencia de las diferentes opc
 </Tip>
 
 ## Efecto de esta opción en el patrón
-
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](sven_sleevecapq3spread1_sample.svg "Efecto de esta opción en el patrón")

@@ -3,16 +3,15 @@ title: Premiers pas
 order: 100
 ---
 
-Bonjour 👋 et bienvenue à freesewing.org 🙂\
-La lecture de ce guide prendra environ 10 minutes de votre temps maintenant, ce qui vous épargnera un tas de questions plus tard, et vous assurera de tirer le meilleur parti de notre site Web.
+Hi there 👋 and welcome to freesewing.org 🙂\ Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
 
 ##### Ce que nous allons expliquer
 
--   Nous allons vous dire \[ce qu'est FreeSewing]\[1] et \[ce qu'est freesewing.org]\[2]
--   Nous allons vous parler de nos \[patrons de couture sur mesure]\[3] et de ce que nous entendons par \[*avec des seins* vs *sans seins*]\[4]
--   Nous allons couvrir les questions \[pourquoi vous avez besoin d'un compte]\[5] ce que nous entendons par \[vos personnes]\[6] ou \[vos patrons]\[7], et quand nous parlons de \[mensurations]\[8]
--   Nous enchaînerons avec \[comment vous pouvez configurer vos patrons]\[9] avec des options de design et de patron
--   Enfin, nous vous dirons \[où vous pouvez obtenir de l'aide]\[10] si vous êtes bloqué.
+-   We'll tell you [what FreeSewing is][1] and [what freesewing.org is][2]
+-   We'll tell you about our [made-to-measure sewing patterns][3] and what we mean by [*with breasts* vs *without breasts*][4]
+-   We'll cover [why you need an account][5] what we mean by [your people][6] or [your patterns][7], and we talk about [measurements][8]
+-   We'll go over [how you can configure your patterns][9] with design and pattern options
+-   Finally, we'll tell you [where you can get help][10] if you get stuck.
 
 Ça vous paraît bien ? Alors plongeons directement dans le bain :
 
@@ -27,12 +26,21 @@ Ce tutoriel est plus une référence que toute une histoire.
 
 </Tip>
 [1]: /docs/guide/what/
+
 [2]: /docs/guide/website/
+
 [3]: /docs/guide/mtm/
+
 [4]: /docs/guide/breasts/
+
 [5]: /docs/guide/account/
+
 [6]: /docs/guide/people/
+
 [7]: /docs/guide/patterns/
+
 [8]: /docs/guide/measurements/
+
 [9]: /docs/guide/options/
+
 [10]: /docs/guide/help/

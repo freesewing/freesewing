@@ -2,7 +2,7 @@
 title: Surpiqûre nervure
 ---
 
-La surpiqûre nervure est un type spécifique de *surpiqûre*. Elle est spécifique en raison de son emplacement. Faire une surpiqûre nervure signifie faire une surpiqûre juste à côté d'une couture, généralement environ 3mm ou 1/8 de pouce à côté de celle-ci.
+La surpiqûre nervure est un type spécifique de _surpiqûre_. Elle est spécifique en raison de son emplacement. Faire une surpiqûre nervure signifie faire une surpiqûre juste à côté d'une couture, généralement environ 3mm ou 1/8 de pouce à côté de celle-ci.
 
 ![Surpiqûre nervure sur un sweat à capuche Hugo de FreeSewing](edgestitching.jpg)
 

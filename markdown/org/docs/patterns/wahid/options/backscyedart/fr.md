@@ -14,5 +14,4 @@ Bien que cette pince soit utilisée pour façonner le patron, vous n'avez pas à
 </Note>
 
 ## Effet de cette option sur le patron
-
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backscyedart_sample.svg "Effet de cette option sur le patron")

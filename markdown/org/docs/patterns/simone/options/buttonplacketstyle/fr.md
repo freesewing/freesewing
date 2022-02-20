@@ -15,5 +15,4 @@ Comme il n'est possible que sur une patte *coupée*, cette option est ignorée s
 </Note>
 
 ## Effet de cette option sur le motif
-
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_buttonplacketstyle_sample.svg "Effet de cette option sur le motif")

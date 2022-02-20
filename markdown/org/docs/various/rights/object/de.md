@@ -12,3 +12,4 @@ Gehe dazu zu [/account/consent](/account/consent/) und lege deinen Einspruch in 
 Das Widerspruchsrecht an sich ist weiter gefasst, aber so ist es anwendbar für Freesewing.
 
 </Note>
+

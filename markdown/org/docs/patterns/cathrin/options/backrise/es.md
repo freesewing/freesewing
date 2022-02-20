@@ -8,6 +8,6 @@ Si aumentas la elevación de la de espalda, tu corsé se elevará en la parte tr
 
 > Dado que este es un corsé por debajo del pecho, la elevación trasera es una elección de estilo y no afectará al ajuste
 
-## Efecto de esta opción en el patrón
 
+## Efecto de esta opción en el patrón
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_backrise_sample.svg "Efecto de esta opción en el patrón")

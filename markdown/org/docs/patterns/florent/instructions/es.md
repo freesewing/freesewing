@@ -23,19 +23,15 @@ Hay varios trucos para coser oscuros, Aquí es cómo lo hago (creo que se llama 
 Donde comienza el rectángulo de la tela, cortar la costura que está en contra de este rectángulo, hasta la costura para que la costura pueda ser planchada abierta antes del rectángulo. En el área donde el dart está unido al rectángulo, ambos permisos de costura en un lado, y el rectángulo doblado en el otro lado. Capa los bordes del rectángulo. El borde contra el tejido principal es más amplio, el anterior es más pequeño
 
 #### Versión con la parte superior cortada dos veces
-
 Este dardo es más directo hacia adelante, ya que la costura es continua. Simplemente tira la costura hasta el final
 
 #### planchar la costura
-
 Es posible que tenga que marcar la franquicia de costura para presionarla plana. Utiliza un Jamón a la medida o algo redondeado debajo para ayudarte a pulsar la costura abierta manteniendo la forma agradable que acabas de crear.
 
 #### Más empalmado
-
 Dependiendo del estilo que quieras lograr, puedes juntar todas tus costuras (por máquina a mano). Sin embargo, la costura delantera será un poco complicada para la máquina (pero no imposible). De todos modos, lo pongo aquí y no te lo recordaré después de cada paso, pero básicamente, el proceso sería: empantanado, hierro, cúspide superior, Repetir en el siguiente paso.
 
 ### Paso 3: Opcional: Únete a ambas partes laterales.
-
 Esto sólo se aplica si cortas dos partes para la parte lateral. Es una costura recta. nada que decir al respecto. Hierre la costura plana, con las costuras abiertas.
 
 ### Paso 4: Únete a la parte superior
@@ -44,7 +40,7 @@ ADVERTENCIA: Habrá unos cuantos pines involucrados Alinear las escaleras y fija
 
 ![Pins](step03.jpg) ![Más pines](step04.jpg)
 
-Para el stitching, tiende a empezar desde el frente central, hacer una mitad, y luego empezar de nuevo, parte trasera del frente central para hacer la otra mitad (la parte lateral \*\*\*\* está en la parte superior para ambas unidades). Así que, si mi máquina desplaza el tejido inferior, sería un "desplazamiento simétrico" en ambos lados. Recorta las franquicias de costura cuando sea necesario, en la curva, tal vez desee recortar el permiso de costura de la parte lateral, y mejorarlo, para ayudar al proceso de planchado.
+Para el stitching, tiende a empezar desde el frente central, hacer una mitad, y luego empezar de nuevo, parte trasera del frente central para hacer la otra mitad (la parte lateral **** está en la parte superior para ambas unidades). Así que, si mi máquina desplaza el tejido inferior, sería un "desplazamiento simétrico" en ambos lados. Recorta las franquicias de costura cuando sea necesario, en la curva, tal vez desee recortar el permiso de costura de la parte lateral, y mejorarlo, para ayudar al proceso de planchado.
 
 ![Las franquicias de costura son recortadas, recortadas y presionadas abiertas](step05.jpg)
 
@@ -95,7 +91,6 @@ Pin la cinta en su lugar: Los dos pines se utilizan para distribuir la cinta por
 ![Ambos bordes de la cinta están deslizados y el borde de la tapa está empalmado](step13.jpg)
 
 ### Paso 12: Unir el lado al brillo
-
 Casi hemos terminado, y el último paso será sujetar el brillo al frente del cuerpo de la gorra. Anclar las dos partes en posición desde el exterior, girar la gorra en el lado del forro y juntar ambas partes varias veces.
 
 ![Anclarlo en su lugar](step14.jpg) ![Unirlo en su lugar, desde el lado del revestimiento](step15.jpg)
