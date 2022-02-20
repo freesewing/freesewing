@@ -453,57 +453,6 @@ function configurePatternExample(pkg, config) {
 }
 
 /**
- * Adds unit tests for patterns and plugins
- */
-function configurePkgUnitTests(type, pkg, config) {
-  // Create tests directory
-  const dest = path.join(config.repoPath, 'packages', pkg, 'tests')
-  fse.ensureDirSync(dest)
-  const source = path.join(config.repoPath, 'config', 'templates', 'tests', `${type}s`)
-  // Write templates
-  const peerdeps = peerDependencies(pkg, config, type)
-  const devdeps = devDependencies(pkg, config, type)
-  const replace = (type === 'pattern')
-    ? {
-        version,
-        pattern: pkg,
-        Pattern: capitalize(pkg),
-        peerdeps: Object.keys(peerdeps)
-          .map((dep) => dep + '@' + peerdeps[dep])
-          .join(' ')
-      }
-    : {
-        version,
-        plugin: pkg,
-        Plugin: capitalize(pkg),
-        peerdeps: Object.keys(peerdeps)
-          .map((dep) => dep + '@' + peerdeps[dep])
-          .join(' '),
-        devdeps: Object.keys(devdeps)
-          .map((dep) => dep + '@' + devdeps[dep])
-          .join(' ')
-    }
-
-  for (const file of ['shared.test.mjs']) {
-    fs.writeFileSync(
-      path.join(dest, file),
-      Mustache.render(fs.readFileSync(path.join(source, file + '.template'), 'utf-8'), replace)
-    )
-  }
-  // Add workflow file for Github actions
-  fs.writeFileSync(
-    path.join(config.repoPath, '.github', 'workflows', `tests.${pkg}.yml`),
-    Mustache.render(
-      fs.readFileSync(
-        path.join(config.repoPath, 'config', 'templates', 'workflows', `tests.${type}.yml`),
-        'utf-8'
-      ),
-      replace
-    )
-  )
-}
-
-/**
  * Puts a package.json, rollup.config.js, README.md, and CHANGELOG.md
  * into every subdirectory under the packages directory.
  * Also creates an example dir for pattern packages, and writes
@@ -537,7 +486,6 @@ function reconfigure(pkgs, config) {
     }
     const type = packageType(pkg, config)
     if (type === 'pattern') configurePatternExample(pkg, config)
-    if (['pattern', 'plugin'].indexOf(type) !== -1) configurePkgUnitTests(type, pkg, config)
   }
   fs.writeFileSync(path.join(config.repoPath, 'CHANGELOG.md'), changelog('global', config))
   console.log(chalk.yellowBright.bold('All done.'))
