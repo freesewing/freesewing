@@ -20,8 +20,8 @@ Dit zorgt voor twee stukken die een spiegelbeeld zijn van elkaar.
 
 ##### Wat als er niet voor de hand ligt?
 
-Bij het uitknippen van iets zonder een evidente *goed* kant (zoals tussenvoering), 
-wat belangrijk is, is dat je twee gespiegeld stukken knipt, in plaats van twee identieke stukken.
+When cutting out something without an obvious _good_ side (like interfacing),
+what matters is that you cut two mirrored pieces, rather than two identical ones.
 
 </Note>
 
