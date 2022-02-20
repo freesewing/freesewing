@@ -11,4 +11,3 @@ Ter referentie zijn hier de verschillende beschikbare lijndiktes:
 En dit zijn de verschillende types lijnen:
 
 <Legend part="lineStrokes" caption="The different line strokes" >
-

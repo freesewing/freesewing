@@ -20,8 +20,8 @@ This is the same technique that's used in a full-bust adjustment to fit a womens
 
 This plugin helps you by:
 
--   Storing the chest circumference in `measurements.bust`
--   Changing `measurments.chestCircumference` to the value of `measurements.highBust`
+- Storing the chest circumference in `measurements.bust`
+- Changing `measurments.chestCircumference` to the value of `measurements.highBust`
 
 </Note>
 
@@ -47,8 +47,8 @@ To learn more about extending a pattern, see [Design inheritance](/howtos/code/i
 To create a truly gender-neutral pattern — one that will adapt to breasts only if they are
 present — you can use this plugin, but you'll also need a few other things:
 
--   You'll need to mark the breast measurements as [optional measurements](/reference/api/config/optionalmeasurements)
--   You'll need to [conditionally load this plugin](/guides/plugins/conditionally-loading-build-time-plugins)
+- You'll need to mark the breast measurements as [optional measurements](/reference/api/config/optionalmeasurements)
+- You'll need to [conditionally load this plugin](/guides/plugins/conditionally-loading-build-time-plugins)
 
 You can see an example of this in [our Teagan design][3].
 

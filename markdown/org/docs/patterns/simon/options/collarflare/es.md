@@ -9,4 +9,5 @@ Esto influye en la longitud de tus consejos de cuello.
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarflare_sample.svg "Efecto de esta opción en el patrón")

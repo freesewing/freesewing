@@ -2,7 +2,7 @@
 title: Abmessungen
 ---
 
-Wenn Sie ein *-papierloses* Muster wählen, wird Ihr Muster mit Dimensionen geliefert:
+Wenn Sie ein _-papierloses_ Muster wählen, wird Ihr Muster mit Dimensionen geliefert:
 
 <Legend part="dimension">
 

@@ -1,4 +1,3 @@
-
 <Warning>
 
 ##### The key to Waralee is the waist band
@@ -12,17 +11,18 @@ In a way, Waralee is just a waist band with a long piece of fabric attached. The
 <Note>
 
 ##### Taschen sind optional
+
 Traditionell, diese Art von Hosen haben keine Taschen. Aber ich möchte mein Telefon, meine Schlüssel und Brieftasche irgendwo platzieren. Also habe ich Taschen in das Muster aufgenommen. Sie können selbst entscheiden, ob Sie sie auf Ihrer Hose haben möchten.
 
 Die Illustrationen in den nächsten Schritten zeigen die Waralee Hosen ohne Taschen. Es werden nur die Pocket Placements aus dem Muster angezeigt, um Ihnen zu helfen, sich selbst zu orientieren.
 
 ##### Wenn du Taschen willst, mache sie zuerst
+
 wenn du die Taschen herstellen willst, machen Sie sie, bevor Sie ein Stück Stoff auf die andere. Es ist einfacher, mit den noch getrennten Teilen zu arbeiten.
 
 </Note>
 
 - If desired, sew the pockets.
-
 
 <Note>
 
@@ -74,6 +74,7 @@ For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm.
 <Note>
 
 ##### You can lengthen the front ties
+
 Optionally, to make the front ties longer, extend them by your quarter waist measurement.
 
 When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
@@ -124,4 +125,3 @@ Hold the front side against your belly and wrap both strings around you and tie 
 Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
 
 If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
-

@@ -17,4 +17,5 @@ En la imagen de ejemplo, la parte superior es de 80 grados (el valor por defecto
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_collarangle_sample.svg "Efecto de esta opción en el patrón")

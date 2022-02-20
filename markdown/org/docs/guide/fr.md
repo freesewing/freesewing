@@ -7,11 +7,11 @@ Hi there 👋 and welcome to freesewing.org 🙂\ Reading this guide will take a
 
 ##### Ce que nous allons expliquer
 
--   We'll tell you [what FreeSewing is][1] and [what freesewing.org is][2]
--   We'll tell you about our [made-to-measure sewing patterns][3] and what we mean by [*with breasts* vs *without breasts*][4]
--   We'll cover [why you need an account][5] what we mean by [your people][6] or [your patterns][7], and we talk about [measurements][8]
--   We'll go over [how you can configure your patterns][9] with design and pattern options
--   Finally, we'll tell you [where you can get help][10] if you get stuck.
+- We'll tell you \[what FreeSewing is]\[1] and [what freesewing.org is][2]
+- We'll tell you about our [made-to-measure sewing patterns][3] and what we mean by [_with breasts_ vs _without breasts_][4]
+- We'll cover [why you need an account][5] what we mean by [your people][6] or [your patterns][7], and we talk about [measurements][8]
+- We'll go over [how you can configure your patterns][9] with design and pattern options
+- Finally, we'll tell you [where you can get help][10] if you get stuck.
 
 Ça vous paraît bien ? Alors plongeons directement dans le bain :
 

@@ -7,8 +7,8 @@ Genaues Maßnehmen ist essenziell, um gute Ergebnisse mit unseren Designs zu erz
 
 Wir haben ein paar Indikatoren hinzugefügt, die dir dabei helfen sollen, Fehler oder Probleme beim Maßnehmen festzustellen.
 
--   Wir zeigen dir [Abschätzungen für deine verschiedenen Maße][1] an, und heben die Maße hervor, wo sich eine Person signifikant von diesen Abschätzungen unterscheidet
--   Your models show [a graph of their body measurements][2] in comparison to our standard sizes
+- Wir zeigen dir [Abschätzungen für deine verschiedenen Maße][1] an, und heben die Maße hervor, wo sich eine Person signifikant von diesen Abschätzungen unterscheidet
+- Your models show [a graph of their body measurements][2] in comparison to our standard sizes
 
 [1]: /docs/guide/measurements/estimates/
 

@@ -1,4 +1,3 @@
-
 Bepaalt de hoeveelheid extra ruimte in de mouwkop.
 
 <Note>
@@ -11,4 +10,5 @@ Voor lichte stof of knuppels wil je weinig tot geen extra rug. Voor zwaardere ge
 </Note>
 
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_sleevecapease_sample.svg "Effect van deze optie op het patroon")

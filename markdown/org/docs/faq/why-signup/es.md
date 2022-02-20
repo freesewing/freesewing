@@ -15,7 +15,7 @@ Without a way to store your measurements, generating made-to-measure patterns wo
 Esta pregunta a menudo sugiere una desconfianza subyacente hacia
 crear una cuenta. As such, the following links may also be relevant:
 
--   Read [our privacy notice][1]
--   Learn more about [your rights][2]
+- Read \[our privacy notice]\[1]
+- Learn more about \[your rights]\[2]
 
 </Note>

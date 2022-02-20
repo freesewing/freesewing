@@ -1,4 +1,3 @@
-
 ## Etape 1: Assemblez les coutures d'épaule
 
 ![Fermer les coutures d'épaule](step01.svg)
@@ -88,6 +87,7 @@ Si vous avez une recouvreuse, ce sera parfait pour cette couture.
 <Note>
 
 ##### Méfiez-vous des différences d'entraînement
+
 En passant votre biais sous votre machine à coudre, les griffes d'entraînement tirent davantage la couche inférieure (arrière de votre biais).
 
 Dans un monde parfait, toutes les épaisseurs suivent sans problème. Mais le plus souvent, la couche supérieure (face avant de votre biais) a tendance à se traîner un peu. Cela fait que votre biais ne se plie pas bien autour du bord du tissu, mais fait des plis disgracieux.
@@ -116,6 +116,7 @@ Surveillez donc si cela se produit, et si vous le voyez, étirez la couche infé
 <Note>
 
 ##### Ne pliez qu'une seule fois, pour éviter le vrac
+
 Le maillot ne ravit pas, Vous pouvez simplement le plier une fois et le coudre, puis bien couper le tissu.
 
 </Note>

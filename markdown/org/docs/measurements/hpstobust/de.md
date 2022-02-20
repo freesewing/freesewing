@@ -6,7 +6,7 @@ title: HPS zu Brust
 
 ###### HPS: Hochpunktschulter
 
-Der *Hochpunktschulter* oder *HPS* Punkt wird als Basis für mehrere vertikale Messungen verwendet.
+Der _Hochpunktschulter_ oder _HPS_ Punkt wird als Basis für mehrere vertikale Messungen verwendet.
 Weitere Informationen zum Auffinden dieses Punktes findest du in der [HPS-Dokumentation](/docs/measurements/hps/).
 
 </Note>

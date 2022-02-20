@@ -1,4 +1,3 @@
-
 <Warning>
 
 ##### The key to Waralee is the waist band
@@ -12,17 +11,18 @@ In a way, Waralee is just a waist band with a long piece of fabric attached. The
 <Note>
 
 ##### Pockets zijn optioneel
+
 Traditioneel hebben deze broektypes geen zakken. Maar ik wil ergens mijn telefoon, sleutels en portemonnee zetten. Dus ik heb zakken in het patroon opgenomen. Je kunt voor jezelf beslissen of je ze op je broek wilt hebben.
 
 De illustraties in de volgende stappen laten de oorlogsbroek zien zonder zakken. Alleen de zakplaatsingen van het patroon worden getoond, om je te helpen jezelf te oriënteren.
 
 ##### Als je zakken wilt kun je ze eerst
+
 Als je de zakken gaat maken, laat ze eerst één stuk stof op de andere plaatsen. Het is makkelijker om met de delen te werken die nog gescheiden.
 
 </Note>
 
 - If desired, sew the pockets.
-
 
 <Note>
 
@@ -74,6 +74,7 @@ For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm.
 <Note>
 
 ##### You can lengthen the front ties
+
 Optionally, to make the front ties longer, extend them by your quarter waist measurement.
 
 When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
@@ -124,4 +125,3 @@ Hold the front side against your belly and wrap both strings around you and tie 
 Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
 
 If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
-

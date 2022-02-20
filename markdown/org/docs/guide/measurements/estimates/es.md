@@ -15,10 +15,10 @@ Esta estimación se basa en la circunstancia del cuello, por lo que no aparecer�
 ##### This is a difficult area for us to work in
 
 We want to help you get the best results, and that includes helping you spot issues with your measurements.
-Por otra parte, no queremos en modo alguno dar a entender que las mediciones de alguien están *equivocadas* de algún modo.
+Por otra parte, no queremos en modo alguno dar a entender que las mediciones de alguien están _equivocadas_ de algún modo.
 
 Somos un patrón muy incluyente de tamaño, y una cantidad desproporcionada de nuestros usuarios son personas que luchan por encontrar ropa o patrones de otras tiendas.
-Así que, por un lado, podría parecer que nos estamos configurando para fallar comparando mediciones con un conjunto de mediciones más o menos *estándar*.
+Así que, por un lado, podría parecer que nos estamos configurando para fallar comparando mediciones con un conjunto de mediciones más o menos _estándar_.
 Pero usted conoce su cuerpo. Usted sabe cuál de sus mediciones se desviará de la media.
 Y señalamos que lo hacen de alguna manera sólo es una confirmación de que ha estado mediendo correctamente.
 Por otro lado, si algo salta hacia fuera donde tienes un tamaño bastante medio, sabes que puedes revisar esas mediciones.

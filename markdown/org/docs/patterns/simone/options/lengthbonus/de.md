@@ -6,7 +6,7 @@ Wie viel Hemd möchtest du in der Lage sein, in deiner Hose zu klecken?
 
 ###### Was ist der Punkt?
 
-Das Shirt sauber in der Hose zu halten, ist der Grund, warum Sie diese zusätzliche Länge brauchen. 
+Das Shirt sauber in der Hose zu halten, ist der Grund, warum Sie diese zusätzliche Länge brauchen.
 Niemand muss wissen, dass Justin Bieber Tätowierung auf deinem unteren Rücken hat.
 
 Wenn Sie möchten, dass ein lässigeres Hemd über Ihre Hose getragen wird, wollen Sie dies senken.
@@ -14,4 +14,5 @@ Wenn Sie möchten, dass ein lässigeres Hemd über Ihre Hose getragen wird, woll
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
+
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_lengthbonus_sample.svg "Effekt dieser Option auf das Schnittmuster")

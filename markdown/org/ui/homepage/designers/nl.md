@@ -1,20 +1,21 @@
-- - -
-- - -
+***
+
+***
 
 #### Wat is parametrisch ontwerp?
 
 Parametrisch ontwerp verwijst naar het gebruik van parameters of variabelen om het resultaat van een bepaald ontwerp binnen de regels te manipuleren.
 
-In naaipatronen, de *parameters* zijn wat door de gebruiker wordt aangeboden: hun metingen en opties die ze hebben geselecteerd.  
-De *regels* van het ontwerp zijn wat jij als ontwerper maakt.
+In naaipatronen, de _parameters_ zijn wat door de gebruiker wordt aangeboden: hun metingen en opties die ze hebben geselecteerd.\
+De _regels_ van het ontwerp zijn wat jij als ontwerper maakt.
 
 #### Wat betekent dat voor de ontwerpers?
 
-Bij het tekenen of tekenen van patronen het is gebruikelijk om te beginnen met een *fit model* (of *ress form*). De metingen van het fit model worden gebruikt als input in het oorspronkelijke ontwerp.
+Bij het tekenen of tekenen van patronen het is gebruikelijk om te beginnen met een _fit model_ (of _ress form_). De metingen van het fit model worden gebruikt als input in het oorspronkelijke ontwerp.
 
 Het aanpassen van het patroon voor een ander model is een vervelende taak, daarom worden patronen omhoog en omlaag beoordeeld om verschillende maten te dekken.
 
-Maar in een parametrisch naaipatroon, aanpassing aan verschillende maten of modellen *werkt gewoon*.
+Maar in een parametrisch naaipatroon, aanpassing aan verschillende maten of modellen _werkt gewoon_.
 
 #### Wat kan FreeSewing voor mij doen?
 

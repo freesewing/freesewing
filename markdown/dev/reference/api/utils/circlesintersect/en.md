@@ -14,13 +14,13 @@ array | false utils.circlesIntersect(
 
 Finds the intersections between two circles described by their center point and radius.
 
-The 5th and last parameter controls the *sorting* of the found intersections.
+The 5th and last parameter controls the _sorting_ of the found intersections.
 When this returns 2 intersections, you can choose how they are ordered in the returned array:
 
 Set sort to:
 
--   `x` : The point with the lowest X-coordinate will go first (left to right)
--   `y` : The point with the lowest Y-coordinate will go first (top to bottom)
+- `x` : The point with the lowest X-coordinate will go first (left to right)
+- `y` : The point with the lowest Y-coordinate will go first (top to bottom)
 
 <Example part="utils_circlesintersect">
 A Utils.circlesIntersect() example

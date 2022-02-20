@@ -17,4 +17,3 @@ Het doel van de tussenvoering is je vlinderdas de structuur te geven die je wil.
 Het is goed om met de tussenvoering te experimenteren op een restje stof, vooral met de kleefbare soort. Je wilt ervoor zorgen dat de constructie die je leuk vindt voordat je deze vastlegt aan je patroonstukken.
 
 Hoewel het patroon zegt tussenvoering op alle delen te gebruiken kan je kiezen om dit maar aan één kant (of zelfs geen kant) te doen, afhankelijk van de dikte en structuur van je stof.
-

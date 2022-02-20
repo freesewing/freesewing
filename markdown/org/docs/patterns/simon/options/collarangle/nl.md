@@ -15,4 +15,5 @@ In dit voorbeeld is de bovenste versie 80° (de standaard) en de onderste 110°.
 </Note>
 
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_collarangle_sample.svg "Effect van deze optie op het patroon")

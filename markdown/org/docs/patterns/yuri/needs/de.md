@@ -1,4 +1,3 @@
-
 Um Yuri zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
@@ -11,7 +10,7 @@ Um Yuri zu erstellen, benötigst du Folgendes:
 
 Wie bei allen Strickwaren und Stretchgeweben wird dir ein Serger/Overlock das Leben erleichtern.
 
-Wenn Sie nicht eines davon haben, verzweifeln Sie nicht. Sie brauchen es nicht wirklich. 
+Wenn Sie nicht eines davon haben, verzweifeln Sie nicht. Sie brauchen es nicht wirklich.
 Da keines der Nähte ausgedehnt wird, kann man dieses Muster einfach mit einer regelmässigen geraden Nähte nähen.
 
 </Note>

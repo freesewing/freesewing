@@ -23,6 +23,6 @@ order: 20
 
 Estos datos se almacenan para cualquier persona que se suscriba a nuestro boletín de noticias.
 
-Para las personas con una cuenta en el sitio web que permiten la suscripción al boletín en su configuración de cuenta, no almacenamos datos personales adicionales ya que ya tenemos su correo electrónico en su [cuenta de datos][1].
+Para las personas con una cuenta en el sitio web que permiten la suscripción al boletín en su configuración de cuenta, no almacenamos datos personales adicionales ya que ya tenemos su correo electrónico en su \[cuenta de datos]\[1].
 
 </Note>

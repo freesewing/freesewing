@@ -8,6 +8,6 @@ Si vous augmentez le dos, votre corset se lèvera vers le haut à l'arrière.
 
 > As this is an underbust corset, the back rise is a style choice and won't affect the fit
 
-
 ## Effet de cette option sur le motif
+
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_backrise_sample.svg "Effet de cette option sur le motif")

@@ -16,8 +16,8 @@ FreeSewing pattern, and their role is to store coordinates.
 
 Each point must have:
 
--   A **X-coordinate**
--   A **Y-coordinate**
+- A **X-coordinate**
+- A **Y-coordinate**
 
 Together, these coordinates determine the location of the point in the 2-dimensional plane we're drawing on.
 

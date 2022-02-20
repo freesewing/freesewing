@@ -22,8 +22,8 @@ export default function(part) {
 }
 ```
 
-So far, we've kept to the *// Design pattern here* area, but now we're going to work on
-the area under *// Complete?*
+So far, we've kept to the _// Design pattern here_ area, but now we're going to work on
+the area under _// Complete?_
 
 <Note>
 
@@ -122,7 +122,7 @@ However, for future refefence, `sa` is a variable that you can get from `part.sh
 just like `complete`. But instead of `true` or `false` it will hold the amount of seam allowance
 in mm.
 
-Note that you can still do `if (sa)` because zero is *falsy*.
+Note that you can still do `if (sa)` because zero is _falsy_.
 
 We won't be adding seam allowance, but we will be doing something that is essentially the same.
 Rather than draw an outline outside our bib to indicate the seam allowance, we'll draw one within
@@ -170,10 +170,10 @@ points.scalebox = points.title.shift(-90, 55)
 macro("scalebox", { at: points.scalebox })
 ```
 
-And with that, our pattern is now *complete*:
+And with that, our pattern is now _complete_:
 
 <Example pattern="tutorial" part="step11">
 We used attributes to add color, dashes, text on a path and even opacity
 </Example>
 
-We're not done yet though. There's one more thing the user can ask for: a *paperless* pattern.
+We're not done yet though. There's one more thing the user can ask for: a _paperless_ pattern.

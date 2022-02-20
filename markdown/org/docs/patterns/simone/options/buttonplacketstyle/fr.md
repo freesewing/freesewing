@@ -10,9 +10,10 @@ La patte de boutonnage à gorge cachée est plus facile, et a un très beau rend
 
 <Note>
 
-Comme il n'est possible que sur une patte *coupée*, cette option est ignorée si vous choisissez une patte séparée.
+Comme il n'est possible que sur une patte _coupée_, cette option est ignorée si vous choisissez une patte séparée.
 
 </Note>
 
 ## Effet de cette option sur le motif
+
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_buttonplacketstyle_sample.svg "Effet de cette option sur le motif")

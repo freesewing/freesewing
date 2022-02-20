@@ -1,5 +1,5 @@
 Sportscoats are typically made from a heavier wool, often with some texture or pattern in the weave.
-In general, they are made in *busier* fabrics.
+In general, they are made in _busier_ fabrics.
 
 Style purists will argue that sportscoats should never be made out of suiting fabric, as a sportscoat
 is not a suit jacket. You can tell them go feck off and do whatever you want, it's your jacket.

@@ -11,4 +11,3 @@ Hier sind die verschiedenen verfügbaren Linienbreiten:
 Und das sind die verschiedenen Strichstile:
 
 <Legend part="lineStrokes" caption="The different line strokes" >
-

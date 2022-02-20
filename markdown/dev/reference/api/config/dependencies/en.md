@@ -33,8 +33,8 @@ dependencies: {
 
 In this example:
 
--   The `front` part depends on the `back` part
--   The `sleeveplacket` part depends on the `sleeve` and `cuff` parts.
+- The `front` part depends on the `back` part
+- The `sleeveplacket` part depends on the `sleeve` and `cuff` parts.
 
 <Tip>
 

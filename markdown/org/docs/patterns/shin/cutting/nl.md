@@ -3,6 +3,7 @@
 - Knip **1 tailleband**
 
 ## Opmerkingen
+
 - Om minder papier te verbruiken wordt de tailleband niet helemaal geprint, aangezien het gewoon een lange rechthoek is. Dus kijk uit voor de aangegeven lengte en knip een rechthoek van dat formaat.
 - De zoomwaarde is twee keer de standaard naadwaarde.
 
@@ -14,6 +15,6 @@ Hier is een typische layout:
 
 <Tip>
 
-De [patroonnotatie handleiding][1] legt alle verschillende markeringen en lijnen op je patroon uit.
+De \[patroonnotatie handleiding]\[1] legt alle verschillende markeringen en lijnen op je patroon uit.
 
 </Tip>

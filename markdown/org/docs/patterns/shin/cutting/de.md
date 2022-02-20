@@ -3,6 +3,7 @@
 - Schneide **1 Taillenband**
 
 ## Achtung
+
 - Um Papier zu sparen, ist das Taillenband nicht vollständig auf das Muster gedruckt, da es nur ein langes Rechteck ist. Suchen Sie also nach der Längenanzeige und schneiden Sie ein Rechteck dieser Größe.
 - Die Saumzulage ist doppelt so hoch wie die Standardnahtleistung.
 
@@ -14,6 +15,6 @@ Unten ist ein typisches Layout:
 
 <Tip>
 
-Die [Schnittmuster-Notation][1] erklärt alle verschiedenen Markierungen und Linien auf deinem Schnittbogen.
+Die \[Schnittmuster-Notation]\[1] erklärt alle verschiedenen Markierungen und Linien auf deinem Schnittbogen.
 
 </Tip>

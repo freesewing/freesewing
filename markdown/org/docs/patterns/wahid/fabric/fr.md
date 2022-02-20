@@ -7,5 +7,3 @@ Ces tissus sont généralement en laine, mais vous pouvez aussi être un peu plu
 Vous avez cependant besoin d'un peu de poids. Le Denim est très bien, contrairement au coton léger.
 
 </Note>
-
-

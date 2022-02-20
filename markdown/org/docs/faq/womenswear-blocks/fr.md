@@ -2,7 +2,7 @@
 title: Mais pourquoi donc publier des patrons de base de vêtements féminins ? Ils sont [insérez un cliché ici].
 ---
 
-Cette question revient de temps à autres. L'expression varie, mais on peut résumer le fond de la pensée comme *mais pourquoi publier cette idiotie, ça ne marche pas du tout*.
+Cette question revient de temps à autres. L'expression varie, mais on peut résumer le fond de la pensée comme _mais pourquoi publier cette idiotie, ça ne marche pas du tout_.
 
 Commençons par dire que ce n'est pas faux. À la fois [Breanna](/designs/breanna/) et [Bella](/designs/bella/) présentent de sérieuses lacunes.
 

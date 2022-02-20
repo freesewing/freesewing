@@ -10,9 +10,10 @@ Sin fisuras es menos trabajo y se ve genial.
 
 <Note>
 
-Ya que solo es posible en una placket *corta-on*, esta opción se ignora si elige una placa separada del botón.
+Ya que solo es posible en una placket _corta-on_, esta opción se ignora si elige una placa separada del botón.
 
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_buttonplacketstyle_sample.svg "Efecto de esta opción en el patrón")

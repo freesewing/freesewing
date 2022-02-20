@@ -2,7 +2,7 @@
 title: Indicador lineal y cortado
 ---
 
-Las grietas, una línea que indica el grano de tela ** — se ven así:
+Las grietas, una línea que indica el grano de tela \*\* — se ven así:
 
 <Legend part="grainline">
 

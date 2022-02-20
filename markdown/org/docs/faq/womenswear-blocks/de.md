@@ -2,7 +2,7 @@
 title: Warum veröffentlicht ihr überhaupt Grundschnitte für Damenkleidung? Sie sind [hier starke Meinung einfügen].
 ---
 
-Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber die Stimmung kann zusammengefasst werden als *warum überhaupt diesen Müll veröffentlichen, es funktioniert absolut nicht*.
+Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber die Stimmung kann zusammengefasst werden als _warum überhaupt diesen Müll veröffentlichen, es funktioniert absolut nicht_.
 
 Lass mich damit anfangen, dass du da nicht falsch liegst. Sowohl [Breanna](/designs/breanna/) als auch [Bella](/designs/bella/) weisen gravierende Mängel auf.
 

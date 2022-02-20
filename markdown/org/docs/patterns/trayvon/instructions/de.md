@@ -1,9 +1,8 @@
-
 <Tip>
 
 ###### Nur der Tipp
 
-ist der empfindlichste Teil der Krawatte. 
+ist der empfindlichste Teil der Krawatte.
 Wenn du noch nie eine Bindung gemacht hast Ich empfehle Ihnen, ein paar Krawattenspitzen im Schrottgewebe zu machen, bevor Sie Schere und Nadeln zu Ihrem schönen Krawattengewebe nehmen.
 
 Um Tipps zu üben führen führen Sie Konstruktionen Schritt 1 bis 4 ein paar Male, bis Sie den Hang davon.
@@ -117,9 +116,9 @@ Die Naht, in der der Stoff mit dem Krawattenfutter trifft, sitzt nicht am Rand d
 Schließen Sie die Schnittstellenspitze (Teil 1) und den Interfacing Schwanz (Teil 2) zusammen auf der nicht punktuellen Seite, passend zur Note.
 
 > **Or don't** To be honest, I never join the interfacing. Ich lasse nur beide Hälften ohne Anhang.
-> 
+>
 > Auf diese Weise können Sie nie die Länge Ihrer Bindung falsch halten und Sie können die Schnittstellen einfach übereinander schieben. Darüber hinaus erzeugt es weniger Massen in der Mitte und es ist weniger Arbeit.
-> 
+>
 > Also kannst du diesen Schritt einfach überspringen, es ist was ich tue.
 
 ### Schritt 10: Schließe dich dem Stoff an
@@ -171,9 +170,9 @@ Wenn Sie die eine Seite abgeschlossen haben, klappen Sie die andere Seite, und D
 Schließlich, falten Sie die obere Ebene entlang der Mitte der Krawatte, und drücken Sie an Ort und Stelle. Dieses Mal machen Sie eine scharfe Frechheit entlang der Mitte der Krawatte.
 
 > Um den Unterschied zwischen den beiden letzten Falten zu klären, Ich habe eine dunkle Linie in das Bild eingefügt, die den Rand des Stoffes markiert.
-> 
+>
 > Wie Sie sehen, falten wir zum ersten Mal den Stoff zurück, und er erstreckt sich über die Mitte der Krawatte.
-> 
+>
 > Beim zweiten Mal falten wir sie wieder in der Mitte, dem Ort, an dem wir sie nähen.
 
 ### Schritt 14: Bereite die Schleife vor
@@ -193,7 +192,7 @@ Drücken Sie schließlich Ihre Schleife offen, damit die Naht in der Mitte sitzt
 Nähen Sie mit einem Rutschstich Ihren Krawatten entlang der Rückenlänge.
 
 > Ihr Rutschstich sollte nur den Stoff auf der Rückseite fangen. Refrain von der Ausführung durch die Krawatten-Schnittstelle.
-> 
+>
 > Seien Sie vorsichtig, wenn Sie den Stich zu tief, es könnte auf der Vorderseite zeigen und zerstören Sie Ihre Krawatte.
 
 Achten Sie darauf, dass Sie in Ihre Schleife gleiten, etwa 1/5 der Krawatte Länge, beginnend von der Spitze.

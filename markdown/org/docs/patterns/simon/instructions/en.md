@@ -48,8 +48,8 @@ Place both parts of your cuff (one with interfacing, one without) together with 
 
 > **Ensure you**
 >
-> -   Do not sew together the side that we will attach to the sleeve later
-> -   Stop at the seam allowance distance from the edge on the sleeve side
+> - Do not sew together the side that we will attach to the sleeve later
+> - Stop at the seam allowance distance from the edge on the sleeve side
 
 #### Trim seam allowance
 
@@ -282,9 +282,9 @@ Place your front with the good side down, and press the seam allowance to the bu
 
 Your placket has a bunch of lines on it, so let's first clarify what they are:
 
--   The buttonhole line has long dashes with buttonholes on it. It marks where the buttonholes should go
--   The two fold lines have long dashes and sit at an equal distance right and left of the buttonhole line
--   The two+two sew lines are dotted lines that sit at an equal distance of each fold line
+- The buttonhole line has long dashes with buttonholes on it. It marks where the buttonholes should go
+- The two fold lines have long dashes and sit at an equal distance right and left of the buttonhole line
+- The two+two sew lines are dotted lines that sit at an equal distance of each fold line
 
 #### Trim back seam allowance
 
@@ -388,17 +388,17 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
 ![Press the cuff guard](13b.png)
 ![Edge-stitch the cuff guard in place](13c.png)
 
--   Place your sleeve with the good side down, and your cuff guard on top, also with the good side down.
--   Align the edge of your cuff guard (aka sleeve placket underlap) with the cut in your sleeve, on the side shortest to the side seam.
--   Now sew along the fold line marked on the cuff guard, closest to the edge.
+- Place your sleeve with the good side down, and your cuff guard on top, also with the good side down.
+- Align the edge of your cuff guard (aka sleeve placket underlap) with the cut in your sleeve, on the side shortest to the side seam.
+- Now sew along the fold line marked on the cuff guard, closest to the edge.
 
 > If during cutting out your pattern pieces you had not cut into your sleeve on the line where the sleeve placket needs to be put in, you need to do that first.
 
--   Fold over the cuff guard, and press down this seam.
--   Turn your sleeve over with the good side up, and bring your cuff guard through the slit in your sleeve.
--   Fold it twice on the lines so that the unfinished seam is tucked inwards.
--   Make your folds so that the upper fold sits ever so slightly further than the seam you already made.
--   Press everything down, and then edge-stitch the cuff guard in place.
+- Fold over the cuff guard, and press down this seam.
+- Turn your sleeve over with the good side up, and bring your cuff guard through the slit in your sleeve.
+- Fold it twice on the lines so that the unfinished seam is tucked inwards.
+- Make your folds so that the upper fold sits ever so slightly further than the seam you already made.
+- Press everything down, and then edge-stitch the cuff guard in place.
 
 #### Fold and press the placket
 
@@ -406,10 +406,10 @@ Since you've just pressed these shoulder seams, everything should lie nice and f
 
 Origami time! We're going to fold the sleeve placket overlap using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
 
--   First, fold the outer edges of the placket inwards.
--   Next, fold the entire thing in half.
--   Then, fold down both tips into a nice pointy shape.
--   Now give it a final good press.
+- First, fold the outer edges of the placket inwards.
+- Next, fold the entire thing in half.
+- Then, fold down both tips into a nice pointy shape.
+- Now give it a final good press.
 
 #### Pin placket in place
 
@@ -463,9 +463,9 @@ Now place your sleeve on top with the good side down, matching the top of the sl
 
 You now need to pin the sleeve to the armhole. To do so, make sure to:
 
--   Match the start and end of the sleevehead to the start and end of the armhole
--   Match the notches on the sleevehead to the notches on the back and fronts
--   Distribute the sleevecap ease between the notches as shown
+- Match the start and end of the sleevehead to the start and end of the armhole
+- Match the notches on the sleevehead to the notches on the back and fronts
+- Distribute the sleevecap ease between the notches as shown
 
 #### Distribute sleevecap ease
 

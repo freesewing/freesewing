@@ -7,7 +7,7 @@ Achten Sie auf das Innere des Stoffes. Sweatshirt-Stoffe kommen in Schleife und 
 <Note>
 
 Sie müssen keine Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, von modischem Neopren (aka scuba) bis hin zu einer augenblicklicheren Wahl wie zerkleinerter Velour (aka Velvet).
- 
+
 Oder wenn du die Klasse aufgegeben hast, kannst du nach Vlies gehen.
 
 </Note>

@@ -6,6 +6,6 @@ Wie hoch soll das Korsett an der Vorderseite aufsteigen.
 
 > Diese Option erlaubt auch negative Werte. Sie werden dazu führen, dass die Vorderseite des Zentrums gesenkt wird.
 
-
 ## Effekt dieser Option auf das Schnittmuster
+
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](cathrin_frontrise_sample.svg "Effekt dieser Option auf das Schnittmuster")

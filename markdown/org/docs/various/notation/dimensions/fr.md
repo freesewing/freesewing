@@ -2,7 +2,7 @@
 title: Dimensions
 ---
 
-Lorsque vous optez pour un patron *sans papier* , votre patron se fourni avec des dimensions :
+Lorsque vous optez pour un patron _sans papier_ , votre patron se fourni avec des dimensions :
 
 <Legend part="dimension">
 

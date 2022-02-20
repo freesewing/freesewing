@@ -28,7 +28,7 @@ Wanneer je een FreeSewing Patroon wordt, geef je meer dan geld. Voor mij is de h
 
 ##### De waarde van jullie geld
 
-Het gaat niet *enkel* om het geld. Maar dat wil niet zeggen dat geld niet belangrijk is. Integendeel.
+Het gaat niet _enkel_ om het geld. Maar dat wil niet zeggen dat geld niet belangrijk is. Integendeel.
 
 Geld inzamelen door iets te doen wat ik graag doe, en het dan doorgeven aan een goed doel, is wat mij op twee oren doet slapen.
 
@@ -54,7 +54,7 @@ Het enige wat me altijd herinnert dat de mensheid deze mensen niet volledig heef
 
 Ik kan geen enkel symbool bedenken dat ons eraan herinnert dat niet alles verloren is en dat er nog steeds goede mensen zijn.
 
-Het is ook een van de weinige organisaties die het wereldwijde bereik hebben om daarheen te gaan waar het het hardst nodig is. We zijn eraan gewend dat ze werkten in door armoede getroffen regio's, maar toen de COVID-19 pandemie onze gezondheidszorgstelsels aan het afbrokkelen was, *MSF* stapte op het bord, zet hun teams in West-Europa in in de VS en waar de behoefte het hardst was.
+Het is ook een van de weinige organisaties die het wereldwijde bereik hebben om daarheen te gaan waar het het hardst nodig is. We zijn eraan gewend dat ze werkten in door armoede getroffen regio's, maar toen de COVID-19 pandemie onze gezondheidszorgstelsels aan het afbrokkelen was, _MSF_ stapte op het bord, zet hun teams in West-Europa in in de VS en waar de behoefte het hardst was.
 
 Ik hoop dat dit de keuze van Médecins Sans Frontières/Doctors Zonder Grenzen uitlegt als liefdadigheid van FreeSewing. En ik hoop dat u samen met ons de wereld wat beter zult maken.
 

@@ -1,9 +1,10 @@
-- - -
-- - -
+***
+
+***
 
 #### Patrones de costura hechos a tus mediciones
 
-Todos nuestros patrones están *hechos a medida*. No sólo calificado o bajo, sino redactado de acuerdo con sus especificaciones exactas, tal como lo haría en papel.
+Todos nuestros patrones están _hechos a medida_. No sólo calificado o bajo, sino redactado de acuerdo con sus especificaciones exactas, tal como lo haría en papel.
 
 #### Empaquetado con opciones más vista previa en vivo
 

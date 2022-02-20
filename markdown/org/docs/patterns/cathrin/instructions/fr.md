@@ -7,6 +7,7 @@ Ces instructions ne sont qu'une seule façon. Grâce à cette méthode, je recom
 Les fabricants de corsets débutants devraient lire les tutoriels écrits par [Sidney Eileen](http://www.sidneyeileen.com), qui montrent plusieurs méthodes de construction différentes. [Foundations Revealed](https://www.foundationsrevealed.com) est un site paywall pour les créateurs de corseaux, avec plusieurs articles exceptionnels gratuits pour les non-membres.
 
 #### Vérifiez le tutoriel original
+
 Ce modèle est basé sur [ce tutoriel de Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin a également [cet article informatif sur la création de corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) sur son blog que vous pourriez trouver utile.
 
 </Note>
@@ -89,7 +90,7 @@ Plier la marge de couture des deux pièces à l'intérieur de sorte que la marge
 
 Coudre une autre couture à côté de la couture arêtée, ce qui laisse un peu d'espace supplémentaire, environ 2 mm, en plus de la largeur de la couture.
 
-![![First channel on the back](etape 7)](step07.png)
+![!\[First channel on the back\](etape 7)](step07.png)
 
 Marquez l'emplacement de vos grommets. (Ne les insérez pas encore. Marquez simplement le tissu où vous les placerez et assurez-vous de créer une bande adaptée à la largeur de vos grommets.)
 

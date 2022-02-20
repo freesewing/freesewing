@@ -3,6 +3,7 @@
 - Couper **1 bande de taille**
 
 ## Avertissements
+
 - Pour économiser du papier, la ceinture n'est pas entièrement imprimée sur le patron car c'est juste un long rectangle. Cherchez donc l'indicateur de longueur et découpez un rectangle de cette taille.
 - Le montant de l'ourlet est le double de la marge de couture standard.
 
@@ -14,6 +15,6 @@ Ci-dessous est une mise en page typique du brouillon :
 
 <Tip>
 
-Le [guide de notation des motifs][1] explique tous les marquages et lignes différents de votre brouillon.
+Le \[guide de notation des motifs]\[1] explique tous les marquages et lignes différents de votre brouillon.
 
 </Tip>

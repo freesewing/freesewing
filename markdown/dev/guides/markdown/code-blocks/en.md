@@ -38,11 +38,11 @@ let me = 'you'
 
 The following language codes are supported:
 
--   `js` for Javascript code
--   `markdown` for Markdown
--   `html` for HTML
--   `svg` for SVG
--   `bash` for Bash or shell scripts
--   `mdx` for MDX
--   `jsx` for JSX
--   `json` for JSON
+- `js` for Javascript code
+- `markdown` for Markdown
+- `html` for HTML
+- `svg` for SVG
+- `bash` for Bash or shell scripts
+- `mdx` for MDX
+- `jsx` for JSX
+- `json` for JSON

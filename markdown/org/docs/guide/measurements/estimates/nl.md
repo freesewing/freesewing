@@ -15,10 +15,10 @@ Deze schatting is gebaseerd op je nekomtrek, dus dit zal niet worden weergegeven
 ##### This is a difficult area for us to work in
 
 We want to help you get the best results, and that includes helping you spot issues with your measurements.
-Aan de andere kant willen we op geen enkele manier impliceren dat iemands metingen op de een of andere manier *verkeerd* zijn.
+Aan de andere kant willen we op geen enkele manier impliceren dat iemands metingen op de een of andere manier _verkeerd_ zijn.
 
 Wij zijn een zeer omvangrijk model en een onevenredig groot deel van onze gebruikers zijn mensen die moeite hebben om kleding of patronen te vinden uit andere buitentjes.
-Dus aan de ene kant het lijkt erop dat we onszelf voor een mislukking opzetten door de metingen te vergelijken met een set meer of minder *standaard* metingen.
+Dus aan de ene kant het lijkt erop dat we onszelf voor een mislukking opzetten door de metingen te vergelijken met een set meer of minder _standaard_ metingen.
 Maar je kent je lichaam. U weet welke van uw metingen afwijken van het gemiddelde.
 En we wijzen erop dat ze dat wel doen, is slechts een bevestiging dat je het goed hebt gemeten.
 Aan de andere kant weet je dat als er iets springt waar je een redelijk gemiddelde maat hebt, je die metingen nog eens dubbel moet controleren.

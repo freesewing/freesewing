@@ -47,8 +47,8 @@ Leg beide delen van je manchet (één met tussenvoering, één zonder) op elkaar
 
 > **Ensure you**
 >
-> -   Laat de kant die later aan de mouw bevestigd wordt open
-> -   Stop aan de naadwaarde van de rand die aan de mouw bevestigd wordt
+> - Laat de kant die later aan de mouw bevestigd wordt open
+> - Stop aan de naadwaarde van de rand die aan de mouw bevestigd wordt
 
 #### Knip naadwaarde bij
 
@@ -278,9 +278,9 @@ Leg je voorpand met de goede kant naar beneden, en strijk de naadwaarde naar het
 
 Er staan een hoop lijnen op het knopenpat, dus laat ons eerst eens kijken wat die betekenen:
 
--   De knoopsgatenlijn heeft is een lange stippellijn met knoopsgaten op. Ze geeft aan waar de knoopsgaten moeten komen
--   De twee vouwlijnen zijn lange stippellijnen en zitten op gelijke afstand rechts en links van de knoopsgatenlijn
--   De twee+twee stiklijnen zijn stippellijntjes die op gelijke afstand van elke vouwlijn zitten
+- De knoopsgatenlijn heeft is een lange stippellijn met knoopsgaten op. Ze geeft aan waar de knoopsgaten moeten komen
+- De twee vouwlijnen zijn lange stippellijnen en zitten op gelijke afstand rechts en links van de knoopsgatenlijn
+- De twee+twee stiklijnen zijn stippellijntjes die op gelijke afstand van elke vouwlijn zitten
 
 #### Knip naadwaarde bij
 
@@ -378,17 +378,17 @@ Aangezien je deze schoudernaden gestreken hebt zou alles mooi plat moeten liggen
 
 ![Stik de mouwsplitreep](13a.png) ![Strijk de mouwsplitreep](13b.png) ![Stik de mouwsplitreep door](13c.png)
 
--   Leg je mouw met de goede kant naar beneden, en de mouwsplitreep bovenop, ook met de goede kant naar beneden.
--   Leg de rand van de mouwsplitreep (de onderlap van het mouwsplit) gelijk met de knip in de mouw, aan de kant het dichtst bij de zijnaad.
--   Stik nu op de vouwlijn die op de mouwsplitreep aangeduid is, het dichtst bij de rand.
+- Leg je mouw met de goede kant naar beneden, en de mouwsplitreep bovenop, ook met de goede kant naar beneden.
+- Leg de rand van de mouwsplitreep (de onderlap van het mouwsplit) gelijk met de knip in de mouw, aan de kant het dichtst bij de zijnaad.
+- Stik nu op de vouwlijn die op de mouwsplitreep aangeduid is, het dichtst bij de rand.
 
 > Als je bij het uitknippen van je patroondelen het mouwsplit nog niet ingeknipt had volgens de aangegeven lijn, moet je dat eerst doen.
 
--   Plooi de mouwsplitreep om, en strijk deze naad.
--   Leg je mouw met de goede kant naar boven, en haal de mouwsplitreep door de knip in de mouw.
--   Plooi twee keer op de aangegeven lijnen zodat de naadwaarde ingepakt zit.
--   Make your folds so that the upper fold sits ever so slightly further than the seam you already made.
--   Strijk alles goed plat, en stik de mouwsplitreep door aan de zijkant, door alle lagen heen.
+- Plooi de mouwsplitreep om, en strijk deze naad.
+- Leg je mouw met de goede kant naar boven, en haal de mouwsplitreep door de knip in de mouw.
+- Plooi twee keer op de aangegeven lijnen zodat de naadwaarde ingepakt zit.
+- Make your folds so that the upper fold sits ever so slightly further than the seam you already made.
+- Strijk alles goed plat, en stik de mouwsplitreep door aan de zijkant, door alle lagen heen.
 
 #### Plooi en strijk de mouwsplitbies
 
@@ -396,10 +396,10 @@ Aangezien je deze schoudernaden gestreken hebt zou alles mooi plat moeten liggen
 
 Tijd voor origami! We gaan de mouwsplitbies plooien, met de aangegeven vouwlijnen als gids. Dit is veel makkelijker als je elke plooi strijkt voor je de volgende maakt.
 
--   Plooi eerst de buitenste randen van de mouwsplitbies naar binnen.
--   Next, fold the entire thing in half.
--   Plooi daarna de twee hoekjes tot een mooie punt.
--   Strijk alles nog eens grondig.
+- Plooi eerst de buitenste randen van de mouwsplitbies naar binnen.
+- Next, fold the entire thing in half.
+- Plooi daarna de twee hoekjes tot een mooie punt.
+- Strijk alles nog eens grondig.
 
 #### Speld de mouwsplitbies
 
@@ -451,9 +451,9 @@ Now place your sleeve on top with the good side down, matching the top of the sl
 
 You now need to pin the sleeve to the armhole. To do so, make sure to:
 
--   Het begin en het einde van de mouwkop overeenkomen met het begin en het einde van het armsgat
--   De merktekens op de mouwkop overeenkomen met die op de voorpanden en het rugpand
--   De extra stof in de mouwkop tussen de merktekens verdeeld wordt, zoals getoond
+- Het begin en het einde van de mouwkop overeenkomen met het begin en het einde van het armsgat
+- De merktekens op de mouwkop overeenkomen met die op de voorpanden en het rugpand
+- De extra stof in de mouwkop tussen de merktekens verdeeld wordt, zoals getoond
 
 #### Distribute sleevecap ease
 

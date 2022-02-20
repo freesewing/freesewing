@@ -11,4 +11,5 @@ No hacer que el ancho del nudo sea mayor que el ancho de la punta
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](trayvon_knotwidth_sample.svg "Efecto de esta opción en el patrón")

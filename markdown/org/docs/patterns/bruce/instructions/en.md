@@ -73,9 +73,9 @@ After you have joined the first inset and the fronts, continue with the second o
 
 With the fronts and insets joined together, you are left with 3 parts:
 
--   The joined insets and fronts
--   The joined sides and back
--   The elastic
+- The joined insets and fronts
+- The joined sides and back
+- The elastic
 
 ### Step 5: Close the fronts dart
 

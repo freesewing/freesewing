@@ -2,7 +2,7 @@
 title: Afmetingen
 ---
 
-Wanneer je een *papierloos* patroon kiest, komt je patroon in de vorm van een set afmetingen:
+Wanneer je een _papierloos_ patroon kiest, komt je patroon in de vorm van een set afmetingen:
 
 <Legend part="dimension">
 

@@ -140,9 +140,9 @@ Ahora vamos a coser a mano a lo largo de los bordes de lapel del frente, y a lo 
 
 Ten en cuenta que:
 
--   La cinta a lo largo de la línea de rollo debe colocarse dentro de la línea de rollo.
--   La cinta a lo largo de la línea de rollo debe ser aproximadamente medio centímetro más corta que la distancia que se recorre. La ligera tensión que esto crea ayuda al lapel a rodar bien y al contorno al cuerpo.
--   La cinta a lo largo del borde del lapel debe colocarse dentro de la línea de costura
+- La cinta a lo largo de la línea de rollo debe colocarse dentro de la línea de rollo.
+- La cinta a lo largo de la línea de rollo debe ser aproximadamente medio centímetro más corta que la distancia que se recorre. La ligera tensión que esto crea ayuda al lapel a rodar bien y al contorno al cuerpo.
+- La cinta a lo largo del borde del lapel debe colocarse dentro de la línea de costura
 
 > ##### No coser a través de tu tela
 >

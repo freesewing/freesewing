@@ -1,5 +1,6 @@
-- - -
-- - -
+***
+
+***
 
 [De `freesewing` organisatie op Github](https://github.com/freesewing/) bevat al onze repositories en broncode.
 

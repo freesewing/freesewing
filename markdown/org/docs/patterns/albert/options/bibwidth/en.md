@@ -1,4 +1,4 @@
-Controls the width of the *bib* part of your apron.
+Controls the width of the _bib_ part of your apron.
 
 ## Effect of this option on the pattern
 

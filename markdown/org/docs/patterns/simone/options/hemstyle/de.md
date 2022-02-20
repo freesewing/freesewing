@@ -2,9 +2,9 @@
 
 Welcher Stil der Saum Linie möchtest du?
 
--   Gerade
--   Baseball
--   Schräg
+- Gerade
+- Baseball
+- Schräg
 
 ## Effekt dieser Option auf das Schnittmuster
 

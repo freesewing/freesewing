@@ -13,13 +13,13 @@ that you should take into account while developing your pattern. They are:
 ## Complete
 
 The [complete](/reference/api/settings#complete) setting is a boolean that is either true or false.
-Its goal is to determine whether we should draft a *complete* pattern, or merely the outline.
+Its goal is to determine whether we should draft a _complete_ pattern, or merely the outline.
 
 ## Paperless
 
 The [paperless](/reference/api/settings#paperless) setting is a boolean that is either true or false.
 
-A *paperless* pattern is a pattern that has extra dimensions so users can trace the
+A _paperless_ pattern is a pattern that has extra dimensions so users can trace the
 paper on fabric or paper without having the need to print it.
 
 ## Seam allowance

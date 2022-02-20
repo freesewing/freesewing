@@ -10,9 +10,10 @@ Nahtlos ist weniger Arbeit, und es sieht großartig aus.
 
 <Note>
 
-Da nahtlos nur bei einem *cut-on* Platzhalter möglich ist, wird diese Option ignoriert, wenn Sie einen separaten Button wählen.
+Da nahtlos nur bei einem _cut-on_ Platzhalter möglich ist, wird diese Option ignoriert, wenn Sie einen separaten Button wählen.
 
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
+
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttonholeplacketstyle_sample.svg "Effekt dieser Option auf das Schnittmuster")

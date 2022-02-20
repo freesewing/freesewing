@@ -2,10 +2,10 @@ Four different bow tie styles!
 
 Benjamin allows you to make four different bow ties.
 
--   Contemporary Diamond
--   Traditional Butterfly
--   Classic Square
--   Whimsical Wide Square
+- Contemporary Diamond
+- Traditional Butterfly
+- Classic Square
+- Whimsical Wide Square
 
 ## Effect of this option on the pattern
 

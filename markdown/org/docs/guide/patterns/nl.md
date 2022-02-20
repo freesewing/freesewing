@@ -13,10 +13,10 @@ Je kunt zoveel patronen opslaan als je wilt.
 
 ##### Patrons vs Designs
 
-Als je op zoek was naar *patronen* zou je ze misschien hebben gevonden onder *designs*.
+Als je op zoek was naar _patronen_ zou je ze misschien hebben gevonden onder _designs_.
 It's not a super important distinction, but it helps to understand that:
 
--   **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
--   **Pattern**: The result of generating one of those styles into a pattern. We hebben duizenden patronen voor onze gebruikers opgeslagen, en sommige misschien van u
+- **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
+- **Pattern**: The result of generating one of those styles into a pattern. We hebben duizenden patronen voor onze gebruikers opgeslagen, en sommige misschien van u
 
 </Tip>

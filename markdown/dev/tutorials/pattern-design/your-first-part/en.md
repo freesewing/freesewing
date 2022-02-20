@@ -3,7 +3,7 @@ title: Your first part
 order: 120
 ---
 
-Much like garments themselves, patterns are made up of *parts*.
+Much like garments themselves, patterns are made up of _parts_.
 
 Most patterns will have multiple parts. A sleeve, a back part, the collar, and so on.
 Our pattern is very simple, and only has one part: the bib.
@@ -14,7 +14,7 @@ button in your browser, you'll get to see it:
 
 ![The default pattern with its box part](./step1.png)
 
-Since we only need one part, we'll rename this *box* part, and call it *bib*.
+Since we only need one part, we'll rename this _box_ part, and call it _bib_.
 
 ## Rename the box part to bib
 
@@ -59,7 +59,7 @@ Pattern.prototype.draftBib = draftBib
 
 ###### Always use draftPartname
 
-FreeSewing will expect for each part to find a method named Draft*Partname*.
+FreeSewing will expect for each part to find a method named Draft_Partname_.
 
 If you have a part named `sleeve` you should have a method called `draftSleeve()` that drafts that part.
 

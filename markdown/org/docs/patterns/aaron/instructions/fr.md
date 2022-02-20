@@ -2,13 +2,13 @@
 
 ![Fermer les coutures latérales et les coutures d'épaule](step01.png)
 
-Put front and back on top of each other with *good sides together*. Cousez les coutures latérales et les coutures d'épaules. Si vous avez une surjeteuse, c'est un bon moment pour l'utiliser. Si ce n'est pas le cas, finissez vos coutures autrement.
+Put front and back on top of each other with _good sides together_. Cousez les coutures latérales et les coutures d'épaules. Si vous avez une surjeteuse, c'est un bon moment pour l'utiliser. Si ce n'est pas le cas, finissez vos coutures autrement.
 
 ## Étape 2 : Faire l'ourlet
 
 ![Faire l'ourlet](step02.png)
 
-Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilisez-la. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
+Pliez l'ourlet vers le haut, et cousez-le. Si vous avez une recouvreuse, utilisez-la. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
 
 <Note>
 
@@ -52,8 +52,8 @@ C'est la seule partie de la fabrication de ce A-shirt qui nécessite un peu de p
 
 La première chose à faire est de décider où nous allons démarrer/arrêter notre biais. Voici ce que je suggère :
 
--   Pour les emmanchures : à la couture latérale. Cela cachera notre couture sous le bras
--   Pour l'encolure : à l'arrière, au milieu. Vous pourriez vouloir marquer ceci avec une broche
+- Pour les emmanchures : à la couture latérale. Cela cachera notre couture sous le bras
+- Pour l'encolure : à l'arrière, au milieu. Vous pourriez vouloir marquer ceci avec une broche
 
 ### Placer (démarrer) votre biais
 

@@ -2,7 +2,7 @@
 title: Draadrichting en aanduiding van de stofvouw
 ---
 
-Draadrichting - een lijn die de *draadrichting van de stof* aangeeft - ziet er zo uit:
+Draadrichting - een lijn die de _draadrichting van de stof_ aangeeft - ziet er zo uit:
 
 <Legend part="grainline">
 

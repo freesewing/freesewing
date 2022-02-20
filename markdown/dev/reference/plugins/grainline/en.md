@@ -3,7 +3,7 @@ title: "@freesewing/plugin-grainline"
 ---
 
 The **@freesewing/plugin-grainline** plugin provides [the grainline
-macro](/reference/macros/grainline/) which adds a *grainline* indicator
+macro](/reference/macros/grainline/) which adds a _grainline_ indicator
 to your design.
 
 <Example part="plugin_grainline">An example of the grainline macro</Example>

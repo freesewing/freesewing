@@ -17,4 +17,3 @@ Die Hauptfunktion der Einlage ist es, deiner Fliege die Struktur zu geben, die d
 Es ist eine gute Idee, etwas mit der Einlage auf einem Stoffrest herumzuexperimentieren, besonders bei der Bügelvariante. Du möchtest sichergehen, dass du die Struktur bekommst, die du haben willst, bevor du sie auf deinen Schnittteilen verewigst.
 
 Auch wenn das Schnittmuster für alle Teile eine Einlage fordert, recht es bei dickem oder steifem Stoff eventuell, wenn du nur eine oder gar keine Seite mit Einlage versiehst.
-

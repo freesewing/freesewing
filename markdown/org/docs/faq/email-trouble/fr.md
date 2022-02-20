@@ -12,10 +12,10 @@ Essayez d'utiliser une adresse mail différente, ou [contactez-nous](https://dis
 
 In France, several E-mail providers share the same filtering:
 
--   free.fr
--   laposte.net
--   organge.fr
--   sfr.fr
+- free.fr
+- laposte.net
+- organge.fr
+- sfr.fr
 
 They are all known to cause issues with deliveries.
 

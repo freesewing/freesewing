@@ -11,7 +11,7 @@ you can generate patterns in the browser with a few lines of Javascript.
 ##### Use FreeSewing.org if you just want a pattern
 
 These instructions are intended for people who want to generate
-their own patterns. If you *just want a sewing pattern* you can
+their own patterns. If you _just want a sewing pattern_ you can
 get all our designs on [FreeSewing.org](https://FreeSewing.org/),
 our website for makers.
 
@@ -21,11 +21,11 @@ our website for makers.
 
 To generate a pattern, you will need to:
 
--   Instantiate the pattern (`new ...`)
--   Pass it the settings and measurements you want to use (`{ ... }`)
--   Load the theme plugin (using `use()`)
--   Draft the pattern (using `draft()`)
--   Render it to SVG  (using `render()`)
+- Instantiate the pattern (`new ...`)
+- Pass it the settings and measurements you want to use (`{ ... }`)
+- Load the theme plugin (using `use()`)
+- Draft the pattern (using `draft()`)
+- Render it to SVG  (using `render()`)
 
 Which can be done as a one-liner since `use()`, `draft()` and
 `render()` are all chainable, as shown below.

@@ -11,4 +11,5 @@ Cette option est ignorée avec l'option de cravate carrée. Les nœud papillon c
 </Note>
 
 ## Effet de cette option sur le motif
+
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_tipwidth_sample.svg "Effet de cette option sur le motif")

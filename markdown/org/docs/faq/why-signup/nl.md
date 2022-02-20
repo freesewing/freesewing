@@ -14,7 +14,7 @@ Als we geen manier hadden om je maten op te slaan, zou het hopeloos onpraktisch 
 
 Deze vraag wijst vaak op een onderliggend wantrouwen tegenover het aanmaken van een account. As such, the following links may also be relevant:
 
--   Read [our privacy notice][1]
--   Learn more about [your rights][2]
+- Read \[our privacy notice]\[1]
+- Learn more about \[your rights]\[2]
 
 </Note>

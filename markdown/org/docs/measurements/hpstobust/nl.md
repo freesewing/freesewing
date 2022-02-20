@@ -6,7 +6,7 @@ title: HPS tot buste
 
 ###### HPS: hoogste punt schouder
 
-Het *hoogste punten* of *HPS* punt wordt gebruikt als basis voor verschillende verticale metingen.
+Het _hoogste punten_ of _HPS_ punt wordt gebruikt als basis voor verschillende verticale metingen.
 Raadpleeg [de hps documentatie](/docs/measurements/hps/) voor informatie over hoe je dit punt kunt vinden.
 
 </Note>

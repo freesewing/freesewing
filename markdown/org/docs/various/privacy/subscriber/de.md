@@ -23,6 +23,6 @@ order: 20
 
 Diese Daten werden für jede Person gespeichert, die unseren Newsletter abonniert.
 
-Für Personen, die ein Konto auf der Website haben, und die in ihren Kontoeinstellungen das Newsletter-Abonnement aktivieren, speichern wir keine zusätzlichen persönlichen Daten, da ihre E-Mail-Adresse bereits in den [Kontodaten][1] bei uns hinterlegt ist.
+Für Personen, die ein Konto auf der Website haben, und die in ihren Kontoeinstellungen das Newsletter-Abonnement aktivieren, speichern wir keine zusätzlichen persönlichen Daten, da ihre E-Mail-Adresse bereits in den \[Kontodaten]\[1] bei uns hinterlegt ist.
 
 </Note>

@@ -15,7 +15,7 @@ inject: {
 }
 ```
 
-The `front` and `back` parts will be *injected* with the `base` part. As a result, both
+The `front` and `back` parts will be _injected_ with the `base` part. As a result, both
 the `front` and `back` parts will be instantiated with a cloned copy of all the points, paths,
 and snippets of the `base` part.
 

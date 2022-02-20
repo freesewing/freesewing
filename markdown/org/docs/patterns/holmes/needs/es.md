@@ -13,10 +13,11 @@ Para hacer Holmes, necesitarás lo siguiente:
 
 <Note>
 
-Dependiendo del estilo, los lazos y botones son opcionales.  
-- Si está haciendo Botellas de Ojo de Botón puede omitir los vínculos.  
-- Si está haciendo Tie Ear Flaps puede omitir el botón.  
-- Los empates también se pueden hacer con tela si lo prefieres ([ver Corte de Holmes](/docs/patrones/holmes/corting/))  
+Dependiendo del estilo, los lazos y botones son opcionales.
+
+- Si está haciendo Botellas de Ojo de Botón puede omitir los vínculos.
+- Si está haciendo Tie Ear Flaps puede omitir el botón.
+- Los empates también se pueden hacer con tela si lo prefieres ([ver Corte de Holmes](/docs/patrones/holmes/corting/))
 - También puedes usar diferentes anchura y escribir ribbons para los lazos si lo prefieres.
 
 </Note>

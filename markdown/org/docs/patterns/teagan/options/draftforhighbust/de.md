@@ -1,4 +1,3 @@
-
 Choose this option to draft Teagan to your high bust measurement, rather than your full chest circumference.
 
 Diese Option ist speziell für Brüste gedacht. Enabling it will draft Teagan to your high bust measurement and let ease and stretch fit your breasts.
@@ -14,4 +13,5 @@ Diese Option hat keine Auswirkung, wenn keine hohe Büstenmessung verfügbar ist
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
+
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](teagan_draftforhighbust_sample.svg "Effekt dieser Option auf das Schnittmuster")

@@ -19,9 +19,9 @@ Leg je voorpanden met de goede kant naar beneden, en je tussenvoering bovenop.
 Strijk de tussenvoering vast.
 
 > **Neem je tijd**
-> 
+>
 > Strijk dit niet gewoon even om ermee klaar te zijn, je moet de tussenvoering echt op de stof persen zodat ze goed vastkleeft.
-> 
+>
 > Zet je strijkijzer neer en zet er 10 seconden lang druk op voor je opschuift naar het volgende stukje.
 
 ### Stap 2: Bevestig het beleg aan de voering
@@ -35,6 +35,7 @@ Leg je beleg voorpand en voering met de goede kanten op elkaar. Speld de randen 
 Stik.
 
 #### Strijk de naadwaarde open
+
 Strijk de naadwaarde tussen beleg en voering open.
 
 ### Stap 3: Sluit alle nepen
@@ -48,6 +49,7 @@ Plooi je rugpand met de goede kanten op elkaar, en stik de achterste neep.
 > Vergeet niet hetzelfde te doen voor de voering
 
 #### Sluit de voorste nepen
+
 Plooi je voorpand (en de tussenvoering die eraan kleeft) met de goede kanten op elkaar, en stik de voorste neep.
 
 ### Stap 4: Strijk alle nepen
@@ -55,9 +57,11 @@ Plooi je voorpand (en de tussenvoering die eraan kleeft) met de goede kanten op 
 ![Strijk alle nepen](04a.png)
 
 #### Strijk de voorste nepen
+
 Knip de nepen open en strijk ze dan open.
 
 #### Strijk de achterste nepen
+
 Als je de rugnepen openknipt, strijk ze dan open. Indien je ze niet openknipt, strijk ze dan opzij.
 
 > Vergeet niet hetzelfde te doen voor de voering
@@ -73,6 +77,7 @@ Leg je zakdeel neer met de goede kant omhoog, en je paspel bovenop met de goede 
 Leg de rechte kant van het zakdeel gelijk met de kant van de paspel die geen tussenvoering heeft, en stik ze samen met de standaard naadwaarde.
 
 #### Strijk de naad open
+
 Strijk deze naad open wanneer je klaar bent.
 
 #### Markeer waar je zak moet komen
@@ -92,7 +97,7 @@ Als je de vier hoeken van die rechthoek nog niet aangeduid hebt, zou je dat nu m
 Leg je voorpand neer met de goede kant naar omhoog. We gaan de paspel aan de onderste lijn van de zakmarkering bevestigen, en het beleg aan de bovenste lijn.
 
 > Als je nog nooit een paspelzak gemaakt hebt kan het een beetje vreemd lijken om de zak aan de buitenkant van het kledingstuk te bevestigen. Zakken zitten toch aan de binnenkant?
-> 
+>
 > Rustig blijven, de zak komt uiteindelijk aan de binnenkant terecht
 
 Zowel je paspel als je beleg zak hebben een hulplijn. Deze lijn moet overeenkomen met de lange randen van je zakmarkering.
@@ -248,6 +253,7 @@ Plooi nu de voering tot net voor de rand van het armsgat en speld ze vast.
 Gebruik een blinde steek om de voering rond het hele armsgat aan de buitenstof te naaien.
 
 ### Stap 11: Werk de zoom af
+
 Weet je nog, die opening uit stap 9? Tijd om die dicht te maken.
 
 Gebruik een blinde steek om de voering met de hand aan de buitenstof te naaien en de zoom te sluiten.

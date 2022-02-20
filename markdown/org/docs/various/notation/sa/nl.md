@@ -9,4 +9,3 @@ Naadwaarde wordt aangegeven door een stippellijn, met dezelfde dikte en kleur al
 Note that the corners of the seam allowance are trimmed, and not extended:
 
 <Legend part="sa"> A trimmed seam allowance corner </Legend>
-

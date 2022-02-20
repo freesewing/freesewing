@@ -1,4 +1,3 @@
-
 Para hacer Yuri, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
@@ -11,7 +10,7 @@ Para hacer Yuri, necesitarás lo siguiente:
 
 Como con todas las telas elásticas, una remalladora te hará la vida más fácil.
 
-Si no tienes una no te desesperes. Realmente no la necesitas. 
+Si no tienes una no te desesperes. Realmente no la necesitas.
 Debido a que ninguna de las costuras se estira, usted sólo puede coser este patrón con una stitch recta regular.
 
 </Note>

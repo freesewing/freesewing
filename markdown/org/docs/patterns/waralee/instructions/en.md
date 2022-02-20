@@ -22,7 +22,7 @@ If you're going to make the pockets, make them before putting one piece of fabri
 
 </Note>
 
--   If desired, sew the pockets.
+- If desired, sew the pockets.
 
 <Note>
 
@@ -40,8 +40,8 @@ Explain how to sew the pockets more.
 
 ![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
 
--   Hem the sides
--   Hem the bottom.
+- Hem the sides
+- Hem the bottom.
 
 <Note>
 
@@ -55,15 +55,15 @@ You can use whatever method works best for you. In the version I first made I ju
 
 Now you get to sew the two pants parts together.
 
--   Lay the two pants parts on top of one another with *good sides together* and sew the seam along the cutout.
--   *Finish* this seam and press it.
+- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
+- _Finish_ this seam and press it.
 
 ### Step 4: Prepare the four strings
 
 The strings are just long tubes of fabric.
 
--   Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
--   Cut out four strips of fabric that are that long and 5cm (2”) wide.
+- Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
+- Cut out four strips of fabric that are that long and 5cm (2”) wide.
 
 <Tip>
 
@@ -85,9 +85,9 @@ If your material is delicate or flimsy, you can add some interfacing to this to 
 
 </Note>
 
--   Fold them in half along the long side, *good sides together*.
--   Stitch the long side and one of the short sides,
--   Turn the tie right side out.
+- Fold them in half along the long side, _good sides together_.
+- Stitch the long side and one of the short sides,
+- Turn the tie right side out.
 
 <Tip>
 
@@ -103,10 +103,10 @@ This can be made easier by taking a piece of twine longer than the strips. Lay t
 
 Now it is time to sew the waist band.
 
--   If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
--   Fold the seam allowance in, and then fold along the waist band line. (red)
--   Insert one of the strings you made in the previous step on each side.
--   Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
+- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
+- Fold the seam allowance in, and then fold along the waist band line. (red)
+- Insert one of the strings you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
 
 <Warning>
 

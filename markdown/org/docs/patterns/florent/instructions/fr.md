@@ -23,15 +23,19 @@ Il y a plusieurs astuces pour coudre des fléchettes, Voici comment je le fais (
 Lorsque le rectangle de tissu commence, coupez la marge de couture qui est contre ce rectangle, jusqu'à la couture de sorte que la couture puisse être remontée à plat avant le rectangle . Sur la zone où la fléchette est cousue avec le rectangle, repasser les deux coutures d'un côté et le rectangle plié de l'autre côté. Coupez les bords du rectangle. Le bord contre le tissu principal est plus large, celui ci-dessus est plus petit
 
 #### Version avec la partie supérieure coupée deux fois
+
 Ce dart est plus droit vers l'avant puisque la couture est continue. Collez simplement la couture tout au long du chemin
 
 #### Repousser la couture
+
 Il se peut que vous deviez enfoncer la marge de couture pour la presser à plat. Utilisez un Ham tailleur ou quelque chose d'arrondi sous pour vous aider à appuyer sur la couture ouverte tout en gardant la belle forme que vous venez de créer.
 
 #### Ajustement du plus haut
+
 Selon le style que vous voulez obtenir, vous pouvez broder toutes vos coutures (par machine à la main). Cependant, la couture avant sera un peu difficile à faire avec la machine (mais pas impossible). Quoi qu'il en soit, je l'ai mis ici et je ne vous le rappellerai pas après chaque étape, mais en gros, le processus serait: Stitch, Fer, Point supérieur, Répéter à l'étape suivante.
 
 ### Étape 3 : Optionnel: Rejoignez les deux parties latérales.
+
 Cela ne s'applique que si vous coupez deux parties pour la partie latérale. C'est une couture droite. rien à dire à ce sujet. Repasser la couture à plat, avec les autorisations de couture ouvertes.
 
 ### Étape 4 : Rejoignez le haut sur le côté
@@ -91,6 +95,7 @@ Diviser la bande en deux avec deux broches
 ![Les deux bords du ruban sont cousus, et le bord du bouchon est cousu en haut](step13.jpg)
 
 ### Étape 12 : broyer le côté au bord
+
 Nous sommes presque terminés, et la dernière étape sera de fixer le dessus du bord à l'avant du corps de la casquette. Épingler les deux parties en position de l'extérieur, tourner le bouchon sur le côté de la doublure et coudre les deux parties plusieurs fois.
 
 ![Épingler en place](step14.jpg) ![Faire le coudre en place, depuis le côté de la doublure](step15.jpg)

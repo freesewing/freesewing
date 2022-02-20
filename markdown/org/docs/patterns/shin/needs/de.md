@@ -5,7 +5,7 @@ Um Shin zu erstellen, benötigst du Folgendes:
 - zwei Ösen und einen Kordelzug
 
 > ## Ein Serger/Overlock ist schön, aber optional
-> 
+>
 > Wie bei allen Stretch-Stoffen wird dir ein Serger/Overlock das Leben erleichtern.
-> 
+>
 > Wenn du keine hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt. Für Dehnungsnähte kann man eine andere Technik wie Zickzackstich, Zwillingsnadel oder Gummifaden verwenden.

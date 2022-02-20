@@ -7,8 +7,8 @@ Each part will have this margin applied. The default is `2mm`.
 
 This means that:
 
--   At the edge of the SVG, the margin will be `margin * 1` (2mm by default)
--   Between parts, the margin will be `margin * 2` (4mm by default)
+- At the edge of the SVG, the margin will be `margin * 1` (2mm by default)
+- Between parts, the margin will be `margin * 2` (4mm by default)
 
 Note that setting the margin to zero (or below) will cause parts to overlap.
 

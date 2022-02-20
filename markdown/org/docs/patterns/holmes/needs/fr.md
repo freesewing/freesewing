@@ -13,10 +13,11 @@ Pour faire des Holmes, vous aurez besoin des éléments suivants :
 
 <Note>
 
-Selon le style, les cravates et les boutons sont optionnels.  
-- Si vous fabriquez des clapets d'oreille pour trou de bouton, vous pouvez omettre les cravates.  
-- Si vous faites des lames de l'oreille attachée, vous pouvez omettre le bouton.  
-- Les cravates peuvent également être fabriquées à partir de tissu si vous préférez ([voir Découpe des creuses](/docs/patterns/holmes/cutting/))  
+Selon le style, les cravates et les boutons sont optionnels.
+
+- Si vous fabriquez des clapets d'oreille pour trou de bouton, vous pouvez omettre les cravates.
+- Si vous faites des lames de l'oreille attachée, vous pouvez omettre le bouton.
+- Les cravates peuvent également être fabriquées à partir de tissu si vous préférez ([voir Découpe des creuses](/docs/patterns/holmes/cutting/))
 - Vous pouvez également utiliser des rubans de largeur et de type différents pour les cravates si vous préférez.
 
 </Note>

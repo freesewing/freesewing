@@ -1,4 +1,5 @@
 ## Tie fabric
+
 Die Fliegen, die du in Geschäften findest, bestehen typischerweise aus Seide oder einer Art Seidenimitation aus Polyester. Deswegen ist es wohl keine Überraschung, dass dies gute Optionen sind.
 
 Im Allgemeinen wollen Sie etwas mit guter Drape, damit Ihre Krawatte schön hängt. Auch hier kann es hilfreich sein, dass Sie Ihre Krawatte auf Voreingenommenheit reduzieren.
@@ -10,6 +11,7 @@ Darüber hinaus ist Seiden- und Seiden-Nachahmung rutschig und schwierig zu bear
 Stellen Sie sicher, dass Sie einen Stoff auswählen, der seine Form nicht einfach verliert. Du möchtest, dass deine Krawatte scharf aussieht und nicht saggy.
 
 ## Tie Futter
+
 Das Futter der Krawatte ist das Bit, das an der Spitze verwendet wird, um die Rückseite zu verdecken. Wenn Sie sich nicht sicher sind, was ich meine, schauen Sie auf die Rückseite der Spitze einer bestehenden Krawatte. Sehen Sie, dass rechteckige Flecken von Stoff können Sie dort zu sehen? Das ist die Krawatte.
 
 Dein Krawattenfutter wird einen zusätzlichen Stoff innerhalb eines Teils deiner Krawatte hinzufügen. Daher ist es wichtig, eine Menge zu vermeiden. Geh etwas dünn, auch wenn du einen dickeren Stoff verwendest.
@@ -19,6 +21,7 @@ Vergewissern Sie sich, dass Ihr Futter mindestens so gut ist wie Ihr Krawattenge
 Wenn Sie Zweifel haben, gehen Sie für Imitation Seide. Achten Sie darauf, dass Sie etwas auswählen, das ein schönes Match oder Kontrast zu Ihrem Krawattengewebe ist.
 
 ## Bindungsschnittstelle
+
 Ihre Bindungsschnittstelle ist das Skelett Ihrer Krawatte. Es ist der Teil, der in der Mitte sitzt und den Sie nur sehen werden, wenn Sie Ihre Krawatte bauen.
 
 Die Bindestriche kann bekanntermaßen schwer zu bekommen sein. Tie interfacing can be notoriously hard to get. The best tie interfacing is soft, fuzzy woven lambswool, but I have yet to walk into a fabric store that carries this.

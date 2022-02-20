@@ -1,7 +1,7 @@
-
 ### Main Fabric
 
 A circle skirt is a very versatile garment and can be made from a variety of fabric. It all depends on your intended use and preferred style.
+
 - If you wish for an everday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
 - If you are looking for something more formal you may want to try **Suiting Fabrics**.
 - If you want something warm for the winter you can try **Wools**.
@@ -12,7 +12,7 @@ Basically any fabric can be used to make a circle skirt you just need to find on
 
 <Tip>
 
-Keep in mind the weight, drape and body of the fabric. Do you want the skirt to hang? or do you want it to swoosh? do you want it to be rigid or flowy? 
+Keep in mind the weight, drape and body of the fabric. Do you want the skirt to hang? or do you want it to swoosh? do you want it to be rigid or flowy?
 Another thing to look out for is gathering, if you are making a gathered Sandy you will need to make sure your fabric can gather nicely or be pleated if you prefer.
 Circle skirts can look very different dependant on these things and whether you are making a full, half or quarter circle skirt.
 

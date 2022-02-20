@@ -1,6 +1,8 @@
-- - -
+***
+
 title: Bella What you need
-- - -
+
+***
 
 Para hacer Bella, necesitarás lo siguiente:
 
@@ -19,4 +21,3 @@ A veces también se llaman trampas, aunque los puristas argumentarán que un blo
 Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
 
 </Note>
-

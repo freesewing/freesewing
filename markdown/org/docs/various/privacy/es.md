@@ -10,10 +10,10 @@ Estamos seguros de que demostrará nuestro compromiso con la privacidad.
 
 Para mayor claridad, hemos dividido esto en cuatro tipos diferentes de roles:
 
--   For **visitors of our website**, we store **[visitor data](/docs/various/privacy/visitor/)**
--   For **subscribers to our newsletter**, we store **[subscriber data](/docs/various/privacy/subscriber/)**
--   For **users with an account** on our website, we store **[account data](/docs/various/privacy/account/)**
--   For **users with an account that contains people**, we store **[people data](/docs/various/privacy/people/)**
+- For **visitors of our website**, we store **[visitor data](/docs/various/privacy/visitor/)**
+- For **subscribers to our newsletter**, we store **[subscriber data](/docs/various/privacy/subscriber/)**
+- For **users with an account** on our website, we store **[account data](/docs/various/privacy/account/)**
+- For **users with an account that contains people**, we store **[people data](/docs/various/privacy/people/)**
 
 Estas son las secciones relevantes:
 
@@ -40,8 +40,8 @@ A more comprehensive overview of this document's history is [available on GitHub
 
 ##### Ver también
 
--   [Tus derechos][2]
--   [Tu consentimiento][3]
+- [Tus derechos][2]
+- [Tu consentimiento][3]
 
 [2]: /docs/various/right/
 

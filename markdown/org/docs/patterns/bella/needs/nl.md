@@ -1,6 +1,8 @@
-- - -
+***
+
 title: Bella What you need
-- - -
+
+***
 
 To make Bella, you will need the following:
 
@@ -19,4 +21,3 @@ Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee
 Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>
-

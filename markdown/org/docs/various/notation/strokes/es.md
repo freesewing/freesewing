@@ -11,4 +11,3 @@ Para referencia, aquí están los diferentes anchos de línea disponibles:
 Y estos son los diferentes estilos de trazo:
 
 <Legend part="lineStrokes" caption="The different line strokes" >
-

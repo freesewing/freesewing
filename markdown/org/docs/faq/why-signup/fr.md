@@ -14,7 +14,7 @@ Sans conservation de vos mesures en mémoire, la génération de patrons sur mes
 
 Cette question suggère souvent une méfiance liée à la création d'un compte. As such, the following links may also be relevant:
 
--   Read [our privacy notice][1]
--   Learn more about [your rights][2]
+- Read \[our privacy notice]\[1]
+- Learn more about \[your rights]\[2]
 
 </Note>

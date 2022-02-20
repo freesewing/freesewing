@@ -1,8 +1,5 @@
-- - -
-- - -
+***
 
-
+***
 
 <PatternMeasurements pattern='hortensia' />
-
-

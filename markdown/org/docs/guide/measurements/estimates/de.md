@@ -15,10 +15,10 @@ Diese Abschätzung basiert auf deinem Halsumfang, daher wird sie erst angezeigt,
 ##### This is a difficult area for us to work in
 
 We want to help you get the best results, and that includes helping you spot issues with your measurements.
-Aber natürlich wollen wir niemals andeuten, dass die Maße einer Person *falsch* sind.
+Aber natürlich wollen wir niemals andeuten, dass die Maße einer Person _falsch_ sind.
 
 Wir sind eine extrem größeninklusive Plattform für Schnittmuster, und ein sehr hoher Anteil unserer Nutzer sind Menschen, die Schwierigkeiten haben, Kleidung oder Schnittmuster bei anderen Anbietern zu finden.
-Es könnte also so aussehen, als wären wir von vornherein zum Scheitern verurteilt, weil wir Maße mit einem Satz an mehr oder weniger *Standard*maßen vergleichen.
+Es könnte also so aussehen, als wären wir von vornherein zum Scheitern verurteilt, weil wir Maße mit einem Satz an mehr oder weniger _Standard_maßen vergleichen.
 Aber du kennst deinen Körper. Du weißt, welches deiner Maße vom Durchschnitt abweicht.
 Und dass wir darauf hinweisen, dass sie es tun, ist in gewisser Weise nur eine Bestätigung dafür, dass du richtig gemessen hast.
 Wenn andererseits etwas hervorsticht, wo du ziemlich durchschnittliche Maße hast, weißt du, dass du diese Messung vermutlich überprüfen solltest.

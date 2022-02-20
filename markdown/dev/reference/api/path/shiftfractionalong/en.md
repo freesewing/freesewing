@@ -45,7 +45,7 @@ snippets.x2 = new Snippet("notch", points.x2);
 
 ##### The second parameter is optional
 
-The second parameter controls the precision by which the path will be *walked*.
+The second parameter controls the precision by which the path will be _walked_.
 By default, we'll divide it into 25 steps per mm.
 
 If you don't need that precision, you can pass a lower number.

@@ -7,7 +7,7 @@ Faites attention à l'intérieur du tissu. Les tissus de Sweatshirt sont en bouc
 <Note>
 
 Vous n'avez pas à utiliser du tissu sweat. D'autres options sont disponibles, de la néoprène à la mode (aka le scuba) à un choix plus poilu comme le velour stretch (aka crushed velour en anglais).
- 
+
 Ou si vous avez renoncé à l'élégance, vous pouvez opter pour le molleton ou la polaire.
 
 </Note>

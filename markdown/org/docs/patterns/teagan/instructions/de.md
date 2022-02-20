@@ -1,4 +1,3 @@
-
 ## Schritt 1: Schließe die Schulternähte
 
 ![Schulternähte schließen](step01.svg)
@@ -88,6 +87,7 @@ Wenn Sie eine Coverlock Maschine haben, wäre das perfekt für diese Naht.
 <Note>
 
 ##### Vorsicht vor dem ungleichen Feed
+
 als Feed für deine Bindung durch deine Nähmaschine, die Futterhunde ziehen die untere Schicht (hinten der Bindung) vorwärts.
 
 In einer perfekten Welt folgen alle Ebenen reibungslos. In den meisten Fällen hinkt die obere Ebene (vor der Bindung) ein bisschen hinterher. Dadurch wird Ihre Bindung nicht sauber am Stoffrand gefaltet, sondern hässliche Falten erzeugt.
@@ -116,6 +116,7 @@ Auf der Innenseite Ihres T-Shirts die Strickbinde direkt außerhalb der Naht zur
 <Note>
 
 ##### Nur einmal falten, um Masse zu vermeiden
+
 Knitwear nicht schwenken, so können Sie diese einfach einmal falten und nach unten nähen, dann sauber den Stoff zurückschneiden.
 
 </Note>

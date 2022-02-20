@@ -19,14 +19,14 @@ npx create-freesewing-pattern
 
 This will load a few dependencies, and then ask you the following questions:
 
--   **Language**: Use the arrow keys to select the language of your choice
--   **Pattern name**: Enter `tutorial`
--   **description**: Enter `The FreeSewing tutorial`
--   **Pattern type**: Use the arrow key to select `Pattern`
--   **Department**: Use the arrow keys to select `Accessories`
--   **Author**: Enter your GitHub username
--   **GitHub repository**: This will be prefilled for you, so just hit Enter
--   **Package manager**: Use the arrow to choose. Pick `npm` if you're not sure.
+- **Language**: Use the arrow keys to select the language of your choice
+- **Pattern name**: Enter `tutorial`
+- **description**: Enter `The FreeSewing tutorial`
+- **Pattern type**: Use the arrow key to select `Pattern`
+- **Department**: Use the arrow keys to select `Accessories`
+- **Author**: Enter your GitHub username
+- **GitHub repository**: This will be prefilled for you, so just hit Enter
+- **Package manager**: Use the arrow to choose. Pick `npm` if you're not sure.
 
 After you've answered these questions, the default template will be copied, after which all dependencies will be installed.
 

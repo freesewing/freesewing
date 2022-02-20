@@ -8,7 +8,7 @@
 
 Wenn du auf der Suche nach unserem Gesichtsmasken-Schnittmuster bist, folge diesem Link:
 
--   [Schnittmuster für Gesichtsmasken und Anleitung](/blog/facemask-frenzy)
+- [Schnittmuster für Gesichtsmasken und Anleitung](/blog/facemask-frenzy)
 
 ##### Mitwirkendentreffen
 

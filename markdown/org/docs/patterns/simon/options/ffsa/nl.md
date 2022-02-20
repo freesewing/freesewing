@@ -4,6 +4,6 @@ The armhole and side seams on the shirt are flat-felled seams, and those require
 
 This option controls the amount of flat-felled seam allowance as a factor of the regular seam allowance.
 
-
 ## Effect van deze optie op het patroon
+
 ![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_ffsa_sample.svg "Effect van deze optie op het patroon")

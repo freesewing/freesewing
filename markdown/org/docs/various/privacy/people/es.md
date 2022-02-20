@@ -24,8 +24,6 @@ order: 40
 - Nunca compartimos datos personales del modelo
 - Publicamos un conjunto abierto de mediciones, que contiene datos totalmente anónimos.
 
-
 <Note>
 Estos datos se almacenan para cualquier persona con una cuenta en nuestro sitio web que contenga una o más personas.
 </Note>
-

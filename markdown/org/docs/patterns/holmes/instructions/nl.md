@@ -10,13 +10,13 @@ title: Holmes Constructie
 <Tip>
 
 Draadmarkering maakt het mogelijk om de naadlijn aan zowel de rechterals de verkeerde kant te zien.
-  
+
 </Tip>
 
 <Note>
 
 Zelfs als je de kroon aan het gezicht geeft, wil je de oorklappen misschien niet aankijken als je wilt dat ze minder rigide zijn bij het aan banden leggen.
-  
+
 </Note>
 
 <Warning>
@@ -37,7 +37,7 @@ Deze instructies gaan ervan uit dat je naadlijnen hebt gemarkeerd. Ze kunnen moe
 <Note>
 
 Afhankelijk van je naadwaarde wil je misschien naden bijknippen terwijl je bulk gaat verminderen.
-  
+
 </Note>
 
 ### Stap 3: De ar-Flaps
@@ -56,13 +56,13 @@ Afhankelijk van je naadwaarde wil je misschien naden bijknippen terwijl je bulk 
 <Tip>
 
 Als je onzeker bent over de lengte van je stropdassen duurt 1 meter (39") en knip ze in de helft. Gebruik deze helft als de stropdassen in de bovenstaande instructies. De stropdassen zijn aan het einde af, zodat je de lengte dan kunt aanpassen.
-  
+
 </Tip>
 
 <Note>
 
-De lengtes hierboven zijn aanbevelingen, dus voel je vrij om zo lang of zo kort te gaan als je wilt met de banden.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
+De lengtes hierboven zijn aanbevelingen, dus voel je vrij om zo lang of zo kort te gaan als je wilt met de banden.\
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
 
 </Note>
 
@@ -85,7 +85,7 @@ De oorklappen moeten lang genoeg zijn om de bovenkant van het piek te overschrij
 
 <Note>
 
-**For both Ear Flaps with Ties and Button Holes**  
+**For both Ear Flaps with Ties and Button Holes**
 
 It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
 
@@ -114,7 +114,7 @@ Wees voorzichtig met de warmte van een ijzer wanneer je bepaalde invoegmateriale
 
 <Note>
 
-Als je liever zou zien dat je tijdelijk de bezoeker bevestigt, dan moet je anders naaien en een naald door het materiaal doen hangen. Zorg ervoor dat het bij het verwijderen of toepassen geen schade toebrengt aan de stof van je hoed. 
+Als je liever zou zien dat je tijdelijk de bezoeker bevestigt, dan moet je anders naaien en een naald door het materiaal doen hangen. Zorg ervoor dat het bij het verwijderen of toepassen geen schade toebrengt aan de stof van je hoed.
 
 </Note>
 
@@ -170,7 +170,7 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 
 <Note>
 
-**For both Assembly and Lining Methods** 
+**For both Assembly and Lining Methods**
 
 You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. Het is gewoon of je de bezoeker liever onderduikt, of dat de oor flaps onderduikt, zoals in de instructies.
 
@@ -178,7 +178,7 @@ You can attach the visors on first, just make sure the visors are under the ear 
 
 <Tip>
 
-**Voor zowel de Buurderij als de Lining methoden**  
+**Voor zowel de Buurderij als de Lining methoden**
 
 Heb je problemen met de curves van de bezoekers, stik een stiksel 1/8" (3mm) van de drieglijn in de naadwaarde van de bezoeker en knip er aan vast. Dit zou het makkelijker moeten maken om de bezoeker vorm te geven. Zorg ervoor dat je deze stiksel en de clips verbergt wanneer je de voering bevestigt.
 
@@ -186,7 +186,7 @@ Heb je problemen met de curves van de bezoekers, stik een stiksel 1/8" (3mm) van
 
 <Warning>
 
-**Voor zowel de Buurderij als de montagemogelijkheden**  
+**Voor zowel de Buurderij als de montagemogelijkheden**
 
 De instructies van de Buurderij en de Ling worden geschreven met een 6 Panelled Holmes in het achterhoofd. Je kunt de plaatsing van bezoekers en stukjes oor verschillend vinden voor andere gegenummerde broekzakken. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
@@ -212,7 +212,7 @@ Als je je stropdassen niet hebt geknipt bij het bouwen van de oorvlakken, is het
 <Note>
 
 Om te bepalen op welke manier je de dassen wilt vouwen, is het mogelijk dat het makkelijker is om de oorvezels eerst vast te naaien. Over het algemeen wil je dat de vouw aan de onderkant van de das ligt, maar zoals altijd is het persoonlijke voorkeur.
-  
+
 </Note>
 
 ### Stap 7: Knop
@@ -225,7 +225,7 @@ Tenzij je de knoopsgatenvlakken doet hoef je geen knop aan te naaien, maar het k
 
 <Note>
 
-Hoewel het zeker facultatief is, vind je misschien dat er een knop ontbreekt bij de hoed om het uiterlijk af te maken. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. Neem dit permanent toe als het is. 
+Hoewel het zeker facultatief is, vind je misschien dat er een knop ontbreekt bij de hoed om het uiterlijk af te maken. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. Neem dit permanent toe als het is.
 Terwijl een gedekte knop wordt aanbevolen, kunt u elke knop gebruiken die u wilt, voel je vrij om te experimenteren!
 
 </Note>
@@ -236,7 +236,7 @@ Dat is het! Je bent allemaal klaar. Geniet nu van de wereld in je geweldige nieu
 
 <Note>
 
-Vergeet niet dat deze instructies slechts richtlijnen zijn, dus maak je geen zorgen als je de hoed anders wilt bouwen.  
+Vergeet niet dat deze instructies slechts richtlijnen zijn, dus maak je geen zorgen als je de hoed anders wilt bouwen.\
 De diagrammen moeten nog gemaakt worden voor dit patroon, dus in de tussentijd als je hulp nodig hebt. bekijk de YouTube video die dit patroon inspireerde:
 
 </Note>

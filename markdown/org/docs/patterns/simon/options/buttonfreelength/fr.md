@@ -16,4 +16,5 @@ Si vous voulez avoir des boutons en dessous de votre ceinture, vous pouvez. Vous
 </Note>
 
 ## Effet de cette option sur le motif
+
 ![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_buttonfreelength_sample.svg "Effet de cette option sur le motif")

@@ -2,13 +2,13 @@
 
 ![Cerrar las costuras de los lados y los hombros](step01.png)
 
-Put front and back on top of each other with *good sides together*. Cose las costuras laterales y las costuras cortas de los arriba de los tirantes. Si tienes una remalladora, este es un buen momento para usarla. Si no, haz las costuras de otra forma.
+Put front and back on top of each other with _good sides together_. Cose las costuras laterales y las costuras cortas de los arriba de los tirantes. Si tienes una remalladora, este es un buen momento para usarla. Si no, haz las costuras de otra forma.
 
 ## Paso 2: Termina el dobladillo
 
 ![Termina el dobladillo](step02.png)
 
-Dobla el borde hacia arriba y cóselo. Si tienes una remalladora con coverlock, úsala. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
+Dobla el borde hacia arriba y cóselo. Si tienes una remalladora con coverlock, úsala. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
 
 <Note>
 
@@ -52,8 +52,8 @@ Esta es la única parte de hacer esta camisa que requiere un poco de práctica. 
 
 Lo primero que tenemos que hacer es decidir dónde vamos a empezar/detener nuestro vinculante. Esto es lo que sugiero:
 
--   Para los orificios de armadura: en la costura lateral. Esto ocultará nuestra costura bajo el brazo
--   Para la apertura del cuello: el centro de la parte trasera del cuello. Puede que quieras marcar esto con un pin
+- Para los orificios de armadura: en la costura lateral. Esto ocultará nuestra costura bajo el brazo
+- Para la apertura del cuello: el centro de la parte trasera del cuello. Puede que quieras marcar esto con un pin
 
 ### Colocar (el inicio de) tu vinculación
 

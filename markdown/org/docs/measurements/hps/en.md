@@ -2,7 +2,7 @@
 title: High Point Shoulder (HPS)
 ---
 
-The *high point shoulder* or *HPS* point is used as the base for several vertical measurements.
+The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
 
 The HPS is where your shoulder seam would meet your neck.
 The point is situated where your neck meets your shoulder.

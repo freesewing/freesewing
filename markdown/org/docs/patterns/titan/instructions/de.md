@@ -15,7 +15,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 - Join the inseam (the seam the runs along the inside of your legs) of the front and back.
 - Du hast jetzt ein Bein. Wiederhole die Schritte für das andere Bein, **und stelle dabei sicher, dass die beiden Beine Spiegelbilder voneinander sind**.
 - Turn one leg with the good side in, and the other with the good side out.
-- Now tuck the *good side out* into the *good side in* leg, so that they have their _good sides together_.
+- Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
 - Align and sew the cross seam.
 
 <Note>
@@ -38,16 +38,17 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 <Tip>
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.  
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 
 </Tip>
 
 <Note>
-  
-Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look.  
+
+Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look.\
 For instance:
+
 - Add a front closure
 - Add pockets
 - Change the pant length

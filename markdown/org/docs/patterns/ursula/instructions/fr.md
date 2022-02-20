@@ -42,7 +42,7 @@ Sortez les undies du côté droit. Toutes les coutures de gusset doivent être f
 
 Épingler le côté couture les bons côtés ensemble. Coudre les coutures latérales à votre couture en utilisant un sergeur ou une couture en zigzag.
 
-![![Sew the side seams](etape 7)](step07.png)
+![!\[Sew the side seams\](etape 7)](step07.png)
 
 <Note>
 

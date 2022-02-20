@@ -2,7 +2,7 @@
 title: "Waar wordt met of zonder borsten over gesproken?"
 ---
 
-Some people get confused by the terms *with breasts* and *without breasts*.
+Some people get confused by the terms _with breasts_ and _without breasts_.
 
 We gebruiken deze termen als een genderomvattende manier om ons af te vragen of iemand wel of geen borsten heeft.
 
@@ -10,9 +10,9 @@ We gebruiken deze termen als een genderomvattende manier om ons af te vragen of 
 
 Bijna elk kledingbedrijf heeft twee hoofdcategorieën voor zijn kledingwijze: mensontering en vrouwmoeder. Deze kledingontwerpen zijn meestal gebaseerd op het ideale of gemiddelde lichaam. Meaning, for womenswear, the designer will likely make a garment for a body with breasts, narrow shoulders, a smaller waist and wide hips.
 
-These characteristics are generally thought of as *the typical characteristics of a woman's body*. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
+These characteristics are generally thought of as _the typical characteristics of a woman's body_. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
 
-We do not want to exclude anyone and we think that *body shape ≠ gender*. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
+We do not want to exclude anyone and we think that _body shape ≠ gender_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
 
 ##### Hoe het van toepassing is op patronen
 

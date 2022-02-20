@@ -7,6 +7,7 @@ te maken. Deze instructies zijn slechts één manier. Met deze methode raad ik a
 Beginnende korsettenmakers zouden de tutorials van [Sidney Eileen](http://www.sidneyeileen.com), die verschillende bouwmethodes toont, moeten lezen. [Foundations Revealed](https://www.foundationsrevealed.com) is een paywall site voor corset makers, met enkele gratis uitzonderlijke artikelen voor niet-leden.
 
 #### Bekijk de originele tutorial
+
 Dit patroon is gebaseerd op [deze tutorial van Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin heeft ook [dit informatieve bericht over het maken van korsets](https://katafalk.wordpress.com/2009/05/05/03how-i-sew-korsets/) op haar blog, die je misschien nuttig vindt.
 
 </Note>

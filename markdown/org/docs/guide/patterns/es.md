@@ -13,10 +13,10 @@ Puedes guardar tantos patrones como quieras.
 
 ##### Patrones vs Deseo
 
-Si viniste a este sitio buscando *patrones* puede haberlos encontrado bajo *diseños*.
+Si viniste a este sitio buscando _patrones_ puede haberlos encontrado bajo _diseños_.
 It's not a super important distinction, but it helps to understand that:
 
--   **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
--   **Pattern**: The result of generating one of those styles into a pattern. Tenemos miles de patrones almacenados para nuestros usuarios, y algunos pueden ser tuyos
+- **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
+- **Pattern**: The result of generating one of those styles into a pattern. Tenemos miles de patrones almacenados para nuestros usuarios, y algunos pueden ser tuyos
 
 </Tip>

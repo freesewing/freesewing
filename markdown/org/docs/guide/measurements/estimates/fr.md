@@ -15,7 +15,7 @@ Cette estimation est basée sur votre circonférence du cou et n'apparaîtra don
 ##### This is a difficult area for us to work in
 
 We want to help you get the best results, and that includes helping you spot issues with your measurements.
-D'un autre côté, nous ne voulons en aucun cas impliquer que les mesures de quelqu'un sont *erronées* d'une manière ou d'une autre.
+D'un autre côté, nous ne voulons en aucun cas impliquer que les mesures de quelqu'un sont _erronées_ d'une manière ou d'une autre.
 
 Nous sommes une boutique de patrons qui se veut destiné pour toutes les tailles, et une grande quantité de nos utilisateurs sont des personnes qui luttent pour trouver des vêtements ou des patrons.
 Donc d'une part. il peut sembler que nous nous mettons en échecs en comparant les mesures à un ensemble de mesures plus ou moins standards.

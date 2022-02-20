@@ -8,7 +8,7 @@ Make sure to use a stretch stitch
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.  
+When making a reversible top the second colour will be refered to as the lining fabric.\
 The notches in this pattern act more like dots so **do not** clip them to mark them.
 
 </Note>
@@ -50,7 +50,7 @@ The notches in this pattern act more like dots so **do not** clip them to mark t
 
 <Tip>
 
-If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.  
+If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.\
 If you are having trouble turning the cups you can try one of these methods:
 
 - Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
@@ -59,7 +59,7 @@ If you are having trouble turning the cups you can try one of these methods:
 </Tip>
 <Note>
 
-Whilst certainly optional it is recommended to _edgestitch_ the top and sides of the cups but the bottom is entirely optional.  
+Whilst certainly optional it is recommended to _edgestitch_ the top and sides of the cups but the bottom is entirely optional.
 
 </Note>
 
@@ -75,7 +75,7 @@ Whilst certainly optional it is recommended to _edgestitch_ the top and sides of
 
 <Tip>
 
-The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.  
+The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.\
 There are also notches on either side of the band piece's midpoint to help give you an idea of how much to gather by.
 
 </Tip>
@@ -85,7 +85,7 @@ There are also notches on either side of the band piece's midpoint to help give 
 
 <Note>
 
-You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the otuer notches and lay their fronts pass the midpoint with the left on top.  
+You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the otuer notches and lay their fronts pass the midpoint with the left on top.
 
 </Note>
 
@@ -125,7 +125,4 @@ You only need to do this step if making the band tie variant.
 
 ### Step 5: Enjoy!
 
-Hooray, your Bee Bikini Top is finished! 
-
-
-
+Hooray, your Bee Bikini Top is finished!

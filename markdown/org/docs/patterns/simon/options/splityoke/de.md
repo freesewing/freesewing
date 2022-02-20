@@ -13,4 +13,5 @@ Es ist ein bisschen mehr Arbeit, aber es erlaubt es Ihnen, die Kornlinie untersc
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
+
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_splityoke_sample.svg "Effekt dieser Option auf das Schnittmuster")

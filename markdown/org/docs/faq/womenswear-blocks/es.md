@@ -2,7 +2,7 @@
 title: '¿Por qué te molestas en publicar corpiños de mujer? Son [insertar convicción fuerte aquí].'
 ---
 
-Esta pregunta aparece de vez en cuando. Las palabras cambian, pero la idea se puede resumir como *por qué molestarse en publicar esta basura, no funciona*.
+Esta pregunta aparece de vez en cuando. Las palabras cambian, pero la idea se puede resumir como _por qué molestarse en publicar esta basura, no funciona_.
 
 Os digo, algo de razón hay. Tanto [Breanna](/designs/breanna/) como [Bella](/designs/bella/) tienen defectos importantes.
 
