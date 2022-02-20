@@ -28,7 +28,7 @@ As Bent is a block it does not have any closures. So the instructions below will
 
 <Note>
 
-You may need to ease/gather the sleeves to fit.  
+You may need to ease/gather the sleeves to fit.\
 You may need to leave the bottom of one of the sleeve seams open to put the garment on.
 
 </Note>
@@ -45,20 +45,21 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 - Repeat until you are happy.
 
 <Tip>
-  
-If you do not have someone to help with pinning alterations, you can use a dressform to pin any alterations that are hard to do on person. Just remember to try it on after to make sure it fits you.  
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.  
+If you do not have someone to help with pinning alterations, you can use a dressform to pin any alterations that are hard to do on person. Just remember to try it on after to make sure it fits you.
+
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
- 
+
 </Tip>
 <Note>
-  
-Remember to treat Bent as a basis rather than a final product, so adjust what you need to get the desired look.  
+
+Remember to treat Bent as a basis rather than a final product, so adjust what you need to get the desired look.\
 For instance:
+
 - Change the neck line
-- Add/change the closure allowances  
+- Add/change the closure allowances
 - Alter the hem style
 - Add a collar
 
