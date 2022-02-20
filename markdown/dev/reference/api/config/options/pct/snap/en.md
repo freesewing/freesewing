@@ -16,7 +16,7 @@ Your snapped percentage option should be a plain object with these properties:
 -   `min` : The minimum percentage that's allowed
 -   `max` : The maximum percentage that's allowed
 -   `snap`: Holds the snap configuration (see [Snap configuration](#))
--   `toAbs`: a method returning the **millimeter value** of the option ([see `toAbs()`](toabs))
+-   `toAbs`: a method returning the **millimeter value** of the option ([see `toAbs()`][toabs])
 -   `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
 
 ## Snap configuration
@@ -234,8 +234,6 @@ is available everywhere, but we've changed as little as possible in the example
 to clarify the difference.
 
 </Note>
-
-[fromabs]: /reference/api/config/options/pct/fromabs
 
 [toabs]: /reference/api/config/options/pct/toabs
 
