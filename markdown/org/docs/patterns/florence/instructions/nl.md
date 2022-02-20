@@ -1,7 +1,6 @@
-
 ### Stap 1: Sluit de midden naad
 
-Sluit de (meest) gebogen naad die het midden van ons masker vormt door beide helften van het masker op elkaar te plaatsen met de goede kant van de stof tegen elkaar.
+Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
 
 ![Bevestig de middennaad](step1.svg)
 
@@ -28,11 +27,11 @@ Aangezien dit een gebogen naad is, zal het niet plat liggen. Maar je kunt het we
 
 Nu gaan we de binnenstof stikken aan de buitenstof (main), en plak de linten allemaal in één stap.
 
- - Leg je voering naar beneden met de goede kant omhoog.
- - Plaats dan twee linten in de hoeken van één kant (rechts in ons voorbeeld) zodat ze een beetje uit het mouw pieken. maar het lint breidt zich naar binnen uit.
- - Leg nu de hoofdstof bovenop met de goede kant stad. Je zou nu beide lagen van je masker bovenop elkaar moeten hebben met *goede kanten op elkaar* en twee boordjes die er tussen liggen
- - Speld door linten en lagen om ze op hun plaats te houden
- - Doe nu hetzelfde aan de andere kant
+- Leg je voering naar beneden met de goede kant omhoog.
+- Plaats dan twee linten in de hoeken van één kant (rechts in ons voorbeeld) zodat ze een beetje uit het mouw pieken. maar het lint breidt zich naar binnen uit.
+- Leg nu de hoofdstof bovenop met de goede kant stad. You should now have both layers of your mask on top of each other with _good sides together_ and two ribbons sandwiched between them
+- Speld door linten en lagen om ze op hun plaats te houden
+- Doe nu hetzelfde aan de andere kant
 
 <Tip>
 
@@ -66,7 +65,7 @@ Dus als je daar niet te veel over doet, kan je het overslaan.
 
 </Note>
 
-Nu dat ons masker met de goede kant naar buiten zit is het tijd om te persen.  Zorg eerst dat waar de opening zit aan de zijkant je de naadwaarde netjes naar binnen vouwt, zodat bij het persen alles netjes plat ligt.
+Nu dat ons masker met de goede kant naar buiten zit is het tijd om te persen.  Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
 
 ### Stap 6: Sluit de zijkant van het masker, en skik helemaal rondom
 
@@ -74,7 +73,7 @@ Nu dat ons masker met de goede kant naar buiten zit is het tijd om te persen.  Z
 
 Nu is het tijd om de kant van ons masker te sluiten dat we openstonden om het binnen te draaien.
 
-We gaan de opening niet alleen sluiten, maar ook rond het hele masker om wat extra stabiliteit te geven en de voering achteraan te houden.
+We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
 
 Zorg er voor dat de naadwaarde aan de opening aan de zijjant netjes naar binnen is gevouwd, stik dan helemaal rond het masker, net naast het randje.
 
@@ -83,4 +82,3 @@ Zorg er voor dat de naadwaarde aan de opening aan de zijjant netjes naar binnen 
 Dat is het, je bent klaar! Je kunt nu je masker dragen.
 
 Maak nog beter, zodat je ook andere maskers kunt geven.
-
