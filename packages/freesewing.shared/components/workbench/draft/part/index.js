@@ -6,8 +6,8 @@ import { getProps } from '../utils'
 const XrayPart = props => {
   // Don't bother if this is the only part on display
   if (props.gist.only && props.gist.only.length === 1) return null
-  const i = props.gist.xray?.reveal
-    ? Object.keys(props.gist.xray.reveal).indexOf(props.partName)%10
+  const i = props.gist._state?.xray?.reveal
+    ? Object.keys(props.gist._state?.xray.reveal).indexOf(props.partName)%10
     : 0
   const { topLeft, bottomRight } = props.part
 
@@ -40,7 +40,11 @@ const Part = props => {
   return (
     <g {...getProps(part)} id={`part-${partName}`}>
       {grid}
-      {props.gist?.xray?.reveal?.[partName] && <XrayPart {...props} />}
+      {
+        props.gist?._state?.xray?.enabled &&
+        props.gist?._state?.xray?.reveal?.[partName]
+        && <XrayPart {...props} />
+      }
       {Object.keys(part.paths).map((pathName) => (
         <Path
           key={pathName}

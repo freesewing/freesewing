@@ -12,7 +12,7 @@ const PrintLayoutSettings = props => {
     <div className="flex flex-row gap-4 justify-center">
       <PageSizePicker {...props} />
       <OrientationPicker {...props} />
-      <pre>{JSON.stringify(props.gist._state, null ,2)}</pre>
+      <pre>{JSON.stringify(props.gist, null ,2)}</pre>
     </div>
   )
 }

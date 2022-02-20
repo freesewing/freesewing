@@ -6,7 +6,7 @@ const ResetXray = props =>  {
 
   return (
     <Li>
-      <SumButton onClick={() => props.updateGist(['xray'], { enabled: true })}>
+      <SumButton onClick={() => props.updateGist(['_state', 'xray'], { enabled: true })}>
         <SumDiv>
           <Deg />
           <span>{ t(`reset`) }</span>

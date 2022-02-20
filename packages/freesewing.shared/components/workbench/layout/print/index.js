@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import Settings from './settings'
 import Draft from '../draft'
@@ -9,6 +10,14 @@ const addPages = (gist) => {
 
 
 const PrintLayout = props => {
+
+  useEffect(() => {
+    if (props.gist?._state?.xray?.enabled) props.updateGist(
+      ['_state', 'xray', 'enabled'],
+      false
+    )
+  }, [])
+
   const { t } = useTranslation(['workbench'])
 
   const draft = new props.pattern(props.gist).use(pluginBuilder(
