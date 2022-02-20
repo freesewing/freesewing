@@ -24,7 +24,6 @@ Coudre la dart avant à côté, en prenant soin d'avoir l'arrêt de dart à l'ex
 
 Une fois que les fléchettes avant sont fermées, coupez la fléchette au dos. Vous ne serez pas en mesure de le couper tout au long de la route, mais c'est bien. Appuyez sur ouvrir les fléchettes où elles sont coupées ouvertes, et appuyez sur le reste sur le côté. Faites attention à n'appuyer que sur le dos. Une pression à partir de l'avant marquera probablement votre tissu.
 
-
 ### Construire la poche de poitrine
 
 ![Appliquer une interface fusible à l'arrière de la poche thoracique](basteChestPocket.svg)
@@ -54,6 +53,7 @@ Sur la ligne supérieure de votre poche de soudure bâclée, marquez 0,5cm à l'
 Plier le double de la couture avec les bons côtés ensemble, et fermer les côtés (coudre les coutures latérales).
 
 #### Ajuster la marge de couture, tourner et appuyer sur
+
 Couper les droits de couture sur les côtés et limiter en particulier la marge de couture vers le coin pour éviter les encombrements.
 
 Retournez à l'intérieur de sorte que le bon côté est sorti et presse.
@@ -106,7 +106,6 @@ Enfin, fermez le sac de poche en couturant les côtés. Faites cela en plaçant 
 
 Collez la poche de poitrine fermée pendant que nous fabriquons la veste.
 
-
 ### Préparer les devants
 
 ![Préparer la toile pour les façades](prepareCanvas.svg)
@@ -125,7 +124,7 @@ Découpez la toile de la poitrine. Alignez-le le long de la ligne de rouleau et 
 
 Désormais, bâtissez la toile avant et la pièce de la poitrine sur votre devant. Gardez à l'esprit que la toile n'a pas de marge de couture.
 
-> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later. You don't want your canvas to get caught in the seams.
+> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\ You don't want your canvas to get caught in the seams.
 
 #### Coupez vos genoux
 
@@ -141,9 +140,9 @@ Nous allons maintenant coudre à la main du ruban de couture le long des bords d
 
 Gardez à l'esprit que :
 
- - Le ruban le long de la ligne de rouleau doit être placé à l'intérieur de la ligne de roulement.
- - Le ruban le long de la ligne de rouleau devrait être environ un demi-centimètre plus court que la distance qu'il couvre. La légère tension que cela crée aide le roulement de la patte de façon agréable et le contour de votre corps.
- - Le ruban le long du bord de la bordure doit être placé à l'intérieur de la ligne de couture
+- Le ruban le long de la ligne de rouleau doit être placé à l'intérieur de la ligne de roulement.
+- Le ruban le long de la ligne de rouleau devrait être environ un demi-centimètre plus court que la distance qu'il couvre. La légère tension que cela crée aide le roulement de la patte de façon agréable et le contour de votre corps.
+- Le ruban le long du bord de la bordure doit être placé à l'intérieur de la ligne de couture
 
 > ##### Ne pas coudre à travers votre tissu
 > 
@@ -159,9 +158,9 @@ Gardez à l'esprit que :
 
 ![Fermer les côtés](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down. Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Place your front with the good side up, and your side on it with the good side down.\ Align the front/side seams, pin them in place if you feel like it, and sew them togther.
 
-Place this down with the good side up, and place your back on top with the good side down. Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Place this down with the good side up, and place your back on top with the good side down.\ Align the back/side seams, pin them in place if you feel like it, and sew them togther.
 
 > Assurez-vous que la toile ne soit pas prise dans la couture.
 
