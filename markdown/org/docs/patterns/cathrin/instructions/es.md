@@ -6,8 +6,9 @@ Estas instrucciones son sólo una vía. Con este método, recomiendo el uso de u
 
 Los creadores de corset principiantes deberían leer los tutoriales escritos por [Sidney Eileen](http://www.sidneyeileen.com), que demuestra varios métodos de construcción diferentes. [Foundations Revealed](https://www.foundationsrevealed.com) es un sitio de paywall para los creadores de corsets, con varios artículos excepcionales gratuitos para los no miembros.
 
-#### Consulta el tutorial original
-Este patrón está basado en [este tutorial de Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin también tiene [esta publicación informativa sobre la creación de corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) en su blog que tal vez te parezca útil.
+#### Check the original tutorial
+
+This pattern is based on [this tutorial by Cathrin Alen](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/). Cathrin también tiene [esta publicación informativa sobre la creación de corsets](https://katafalk.wordpress.com/2009/05/03/how-i-sew-corsets/) en su blog que tal vez te parezca útil.
 
 </Note>
 
