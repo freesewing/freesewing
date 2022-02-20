@@ -5,16 +5,15 @@
 
 La conception paramétrique fait référence à l'utilisation de paramètres ou de variables pour manipuler le résultat d'un design donné selon ses règles.
 
-Dans les patrons de couture, les *paramčtres* sont ce qui est fourni par l'utilisateur : Leurs mensurations et les options qu'ils ont sélectionnées.  
-Les *règles* du design sont celles que vous, le designer, avez déterminées.
+In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.\ The _rules_ of the design are what you, the designer, make them.
 
 #### Qu'est-ce que cela signifie pour les designers ?
 
-Lors de la conception de patrons ou de vêtements, il est courant de commencer avec un *mannequin de couture*. Les mesures du mannequin sont utilisées comme données d'entrée dans la conception initiale.
+When drafting or designing patterns or garments, it is common practice to start with a _fit model_ (or _dress form_). Les mesures du mannequin sont utilisées comme données d'entrée dans la conception initiale.
 
 Adapter le patron pour un modèle différent est une tâche fastidieuse, c'est pourquoi les patrons sont gradés vers le haut et vers le bas pour couvrir des tailles différentes.
 
-Mais dans un patron de couture paramétrique, s'adapter à différentes tailles ou modèles *fonctionne simplement*.
+But in a parametric sewing pattern, adapting to different sizes or models _just works_.
 
 #### Que peut faire FreeSewing pour moi ?
 
