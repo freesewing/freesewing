@@ -17,7 +17,7 @@ Instead, embrace percentages as options.
 ##### Use the antperson tests
 
 To check how well your pattern scales, you can
-use the *antperson* test by sampling the pattern for 2 models:
+use the _antperson_ test by sampling the pattern for 2 models:
 
 -   A model with measurements of avarage person (the person)
 -   A model with measurements 1/10th of an average person (the ant)

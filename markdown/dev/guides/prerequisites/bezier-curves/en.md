@@ -21,13 +21,13 @@ In FreeSewing, we use so-called cubic Bézier curves which have:
 An example of a Bézier curve drawn by the Path.curve() method
 </Example>
 
-Bézier curves and their *handles* or *control points* are surprisingly intuitive.
+Bézier curves and their _handles_ or _control points_ are surprisingly intuitive.
 The following illustration does a great job at explaining how they are constructed:
 
 ![How Bézier curves are constructed](bezier.gif)
 
 You don't need understand the mathematics behind Bézier Curves.
-As long as you intuitively *get* how the control points influence the curve, you're good to go.
+As long as you intuitively _get_ how the control points influence the curve, you're good to go.
 
 <Note>
 

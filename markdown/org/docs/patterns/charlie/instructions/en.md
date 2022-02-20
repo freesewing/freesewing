@@ -2,7 +2,7 @@
 
 First thing we're going to do is close the waist dart on the back panel.
 
-To do so, fold the back panel double with *good sides together* making sure to match both sides of the dart on top of each other.
+To do so, fold the back panel double with _good sides together_ making sure to match both sides of the dart on top of each other.
 
 Now sew the dart close, making sure to use a small stitch length, and to sew all the way to the end of the dart, even a couple of stitches off the fabric.
 
@@ -28,7 +28,7 @@ the instructions) but it's a very typical finish for chinos, and makes it easier
 
 ### Attach the back pocket facing to the pocket bag
 
-Join the back pocket facing to the pocket bag by placing them with *good sides together* and sewing along the longest of the non-curved seams of the facing.
+Join the back pocket facing to the pocket bag by placing them with _good sides together_ and sewing along the longest of the non-curved seams of the facing.
 
 When you're done, press the seam allowance to the side of the pocket bag.
 
@@ -52,7 +52,7 @@ You should overlock/serge the sides of the pocketbag so they don't ravel.
 
 <Tip>
 
-If you don't have a *serger* you can always use a zig-zag stitch instead.
+If you don't have a _serger_ you can always use a zig-zag stitch instead.
 
 </Tip>
 
@@ -74,7 +74,7 @@ The front pockets are a little unusual because they have the appearance of class
 
 We have two front pocket bags, that each have two pieces of facing to attach to them.
 
-Align them with *good sides together* (\*) and sew the facing in place.
+Align them with _good sides together_ (\*) and sew the facing in place.
 
 <Note>
 
@@ -204,7 +204,7 @@ It's one of those best practices you ignore at your own peril.
 <Tip>
 
 Take extra care to carefully align the seams where both legs have their back and front panels joined together.
-Doing so will ensure your cross seam results with a perfectly aligned *cross* where 4 pattern parts meet each other in a single point.
+Doing so will ensure your cross seam results with a perfectly aligned _cross_ where 4 pattern parts meet each other in a single point.
 
 Getting it just right is one of those things you'll end up cherishing each time you wear these.
 
@@ -371,7 +371,7 @@ At the start and end of the waistband, you'll need to tuck in some more seam all
 
 ### Sew the waistband close
 
-Now with the good side up, sew exactly in the seam that was sewn before (so called *stitch in the ditch*).
+Now with the good side up, sew exactly in the seam that was sewn before (so called _stitch in the ditch_).
 
 This will catch the back of the waistband which we've made to extend slightly further, and lock all the seam allowance inside.
 

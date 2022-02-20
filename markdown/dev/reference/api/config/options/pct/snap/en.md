@@ -4,7 +4,7 @@ title: Snapped percentage options
 
 Snapped percentage options are a hybrid between [list options][list] and
 [percentage options][pct]. By combining traits of both, they create a
-sort of *smart list option* that will select the most appropriate value
+sort of _smart list option_ that will select the most appropriate value
 from the list, and also allow a pure parametric value if no close match
 is found.
 
@@ -28,7 +28,7 @@ There are three different scenarios:
 
 ### snap holds a number
 
-When `snap` holds a number, the option will be *snapped* to a
+When `snap` holds a number, the option will be _snapped_ to a
 multiple of this value.
 
 In the example below, the absolute value of this option will be set to a multiple of `7`
@@ -54,7 +54,7 @@ of all possible inputs.
 
 ### snap holds an array of numbers
 
-When snap holds an array of numbers, the option will be *snapped* to one of
+When snap holds an array of numbers, the option will be _snapped_ to one of
 the numbers unless it's further away than half the distance to its closest neighbor.
 
 In the example below, if the absolute value returned by `toAbs()` is in the
@@ -151,9 +151,9 @@ We combine approaches A and B and configure a snapped percentage option
 with:
 
 -   A percentage based on `waistToFloor`
--   Our list of standard elastic widths as *snaps*
+-   Our list of standard elastic widths as _snaps_
 
-For typical humans, our options will *snap* to the closest match in our
+For typical humans, our options will _snap_ to the closest match in our
 list and behave just like Approach A (with a list option).
 
 For dolls and giants, the option will revert to the parametric value and

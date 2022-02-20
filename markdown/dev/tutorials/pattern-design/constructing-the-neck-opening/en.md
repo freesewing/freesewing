@@ -62,7 +62,7 @@ points.rightCp1 = points.right
   .shift(90, points.bottom.dy(points.right)/2)
 ```
 
--   We're adding a point named `rightCp1`, which will become the *control point* of the right part
+-   We're adding a point named `rightCp1`, which will become the _control point_ of the right part
 -   Instead of using the Point constructor, we're calling the `Point.shift()` method on an existing point
 -   It takes two arguments: The angle to shift towards, and the distance
 -   You can see that we're shifting 90 degrees (that means up) but the distance uses another method

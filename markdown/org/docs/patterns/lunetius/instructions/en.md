@@ -36,4 +36,4 @@ On the machine, a straight stitch is a good option, but if you have a blind hem 
 
 ### Step 3: Enjoy!
 
-That's it you are all done! Now take a *fibula* (a brooch, pin or clasp) to fasten your cloak over your right shoulder (that is how the Romans did it, you can of course also take the left shoulder, or the middle, or whatever you prefer) and enjoy looking dramatic.
+That's it you are all done! Now take a _fibula_ (a brooch, pin or clasp) to fasten your cloak over your right shoulder (that is how the Romans did it, you can of course also take the left shoulder, or the middle, or whatever you prefer) and enjoy looking dramatic.

@@ -32,7 +32,7 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 -   Draw a curve from shoulder to bottom of armhole.
 -   Cut along this curve and discard the lower parts.
 -   Separate out the pieces back into their front and side pieces.
--   These are now you \**Front and Side shoulder* parts.
+-   These are now you \*_Front and Side shoulder_ parts.
 
 ##### Back shoulder
 

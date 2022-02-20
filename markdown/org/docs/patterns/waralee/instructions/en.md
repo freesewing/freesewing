@@ -55,8 +55,8 @@ You can use whatever method works best for you. In the version I first made I ju
 
 Now you get to sew the two pants parts together.
 
--   Lay the two pants parts on top of one another with *good sides together* and sew the seam along the cutout.
--   *Finish* this seam and press it.
+-   Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
+-   _Finish_ this seam and press it.
 
 ### Step 4: Prepare the four strings
 
@@ -85,7 +85,7 @@ If your material is delicate or flimsy, you can add some interfacing to this to 
 
 </Note>
 
--   Fold them in half along the long side, *good sides together*.
+-   Fold them in half along the long side, _good sides together_.
 -   Stitch the long side and one of the short sides,
 -   Turn the tie right side out.
 

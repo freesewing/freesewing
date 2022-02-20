@@ -3,7 +3,7 @@ title: "@freesewing/plugin-dimension"
 ---
 
 The **@freesewing/plugin-dimension** plugin provides a variety of macros
-to facilitate adding *dimensions* to your design. By *dimensions* we mean
+to facilitate adding _dimensions_ to your design. By _dimensions_ we mean
 the indicators for distance that are added to patterns
 in [paperless mode](/reference/api/settings/paperless).
 

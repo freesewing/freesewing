@@ -30,7 +30,7 @@ Our [plugin bundle](/reference/plugins/bundle/) bundles build-time plugins that 
 A plugin is a run-time plugin if it can be added after instantiating your pattern.
 Think of it as a plugin to be used in the front-end.
 
-Run-time plugins are not a dependecy of the pattern. They just *add something* to it.
+Run-time plugins are not a dependecy of the pattern. They just _add something_ to it.
 
 Our [theme plugin](/reference/plugins/theme/) is a good example of a run-time plugin.
 If it's missing, your pattern will still work, it just won't look pretty.

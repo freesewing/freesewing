@@ -3,7 +3,7 @@ title: Adding options
 order: 140
 ---
 
-You know what your bib should look like, and you have the *head* measurement
+You know what your bib should look like, and you have the _head_ measurement
 to work with. But there's still a number of choices you have to make:
 
 -   How large should the neck opening be?

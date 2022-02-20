@@ -77,7 +77,7 @@ web, both in writen form, and on video. If you do get stuck, you can always reac
 
 ### Step 2: The zipper
 
--   With *good sides together*, sew the seam that has the zipper leaving the top open for the zipper.
+-   With _good sides together_, sew the seam that has the zipper leaving the top open for the zipper.
 -   Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
 
 <Note>
@@ -88,8 +88,8 @@ If using a different closure, construct it during this step.
 
 ### Step 3: Sew the side seams
 
--   With *good sides together*, sew up both the side seams.
--   With *good sides together*, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
+-   With _good sides together_, sew up both the side seams.
+-   With _good sides together_, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
 
 ### Step 4: The lining (Optional)
 
@@ -116,17 +116,17 @@ If you prefer to insert the zipper with the main and lining fabric as one, you w
 
 -   Face lengthwise half of the waistband.
 -   Press a fold the waistband in half lengthwise.
--   With *good sides together* sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
+-   With _good sides together_ sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
 -   Press the waistband up and away from the skirt.
 -   Press the remaining waistband seam allowances to the inside of the waistband.
 -   Fold and press the waistband to the inside along fold line.
--   *Stitch in the ditch* to secure the waistband.
--   *Slipstitch* or *Whipstitch* the gap in the waistband that goes over the zipper seam
+-   _Stitch in the ditch_ to secure the waistband.
+-   _Slipstitch_ or _Whipstitch_ the gap in the waistband that goes over the zipper seam
 -   Construct your preferred choice of closure where the waistband overlaps.
 
 <Note>
 
-Alternatively you can *Edgestitch* the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.\
+Alternatively you can _Edgestitch_ the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.\
 The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
 
 </Note>
@@ -139,7 +139,7 @@ This step is only needed if you have not lined your skirt as the hem and vents w
 -   Construct the vents with your preferred method
 -   Press under the hem allowances of the skirt.
 -   If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
--   Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. This comes down to how you want the finished product to look.
+-   Secure the hem in place with your preferred method. For instance you can sew from the outside or _Slipstitch_ from the inside. This comes down to how you want the finished product to look.
 
 <Tip>
 

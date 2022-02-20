@@ -11,7 +11,7 @@ and the range of options we provided.
 
 ###### No more grading
 
-FreeSewing patterns are *made-to-measure*, which means that you don't need to
+FreeSewing patterns are _made-to-measure_, which means that you don't need to
 grade your pattern to provide a range of sizes. You should sample your pattern
 for different measurements and options to see how well it adapts.
 
@@ -87,13 +87,13 @@ If we test it, we can see that it works as intended. But there's one thing that 
 Making the bib wider shortens the length from the bottom of the neck opening to the bottom of the bib.
 Thereby making the bib shorter when it's worn.
 
-Even if the *total length* of the bib stays the same, the *useable length* shortens when the bib is made wider.
+Even if the _total length_ of the bib stays the same, the _useable length_ shortens when the bib is made wider.
 Users will not expect this, so it's something that we should fix in our pattern.
 
 <Note>
 
-Adjusting the pattern to make the `widthRatio` not influence the *useable length* of the bib is not
-covered in this tutorial. It is left *as an exercise to the reader*.
+Adjusting the pattern to make the `widthRatio` not influence the _useable length_ of the bib is not
+covered in this tutorial. It is left _as an exercise to the reader_.
 
 </Note>
 
@@ -137,7 +137,7 @@ Your bib with the head circumference measurement sampled </Example>
 ## Testing models
 
 Whereas testing a measurement will only vary one individual measurement, testing models will
-draft your pattern for different sets of measurments, which we refer to as *models*.
+draft your pattern for different sets of measurments, which we refer to as _models_.
 
 On the surface, the result below is the same as our measurement test. But that is because our bib
 only uses one measurement. So testing that one measurement ends up being the same as testing a complete
@@ -173,16 +173,16 @@ Your bib sampled for a range of baby sizes </Example>
 
 ## The antperson test
 
-A special case of model testing is the so-called *antperson test*.
-It drafts your pattern with a set of *typical* measurements , and then drafts it again
-with measurements that are 1/10th of those *typical* measurements.
+A special case of model testing is the so-called _antperson test_.
+It drafts your pattern with a set of _typical_ measurements , and then drafts it again
+with measurements that are 1/10th of those _typical_ measurements.
 
 It is named after [the cartoon character](https://en.wikipedia.org/wiki/Ant-Man_\(film\)) who can shrink,
 yet somehow his suit still fits.
 
 The purpose of the antperson test is to bring out areas in your pattern where you made assumptions
 that will not properly scale.
-Many drafting books will tell you to *add 3cm there* or *measure 2 inch to the right*. Those instructions
+Many drafting books will tell you to _add 3cm there_ or _measure 2 inch to the right_. Those instructions
 don't scale, and you should avoid them.
 
 The best patterns will pass the antperson test with 2 patterns exactly the same, where one will simply be 1/10th the scale of the other.

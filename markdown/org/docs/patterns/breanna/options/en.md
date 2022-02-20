@@ -12,7 +12,7 @@ sleevecap is drafted makes it easy to understand what all the individual options
 
 ### The bounding box
 
-The *bounding box* of the sleevecap is a rectangle that is as wide as the sleeve, and
+The _bounding box_ of the sleevecap is a rectangle that is as wide as the sleeve, and
 as high as the sleevecap. Inside this box, we will construct our sleevecap later.
 
 ![The Breanna sleevecap](sleevecap.svg)
@@ -59,7 +59,7 @@ be changed to lie more to the right or the left, rather than smack in the middle
 ![Controlling the inflection points](sleevecapinflection.svg)
 
 With points 1, 2, 3, and 4 in place, we have a box to draw our sleevecap in. Now it's time to
-map out our *inflection points*. These are points 5 and 6 on our drawing, and their placement
+map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement
 is determined by the following 4 options:
 
 -   [Sleevecap back X](/docs/patterns/breanna/options/sleevecapbackfactorx) : Controls the horizontal placement of point 5
@@ -79,10 +79,10 @@ are instrumental in creating the points that always lie on the sleevecap: the an
 ![Controlling the anchor points](sleevecapanchor.svg)
 
 Ultimately, our sleevecap will be the combination of 5 curves. In addition to points 1 and 2,
-the four *anchor points* that are marked in orange in our example will be the start/finish of
+the four _anchor points_ that are marked in orange in our example will be the start/finish of
 those curves.
 
-The points are *offset* perpendicular from the middle of a line between the two anchor points
+The points are _offset_ perpendicular from the middle of a line between the two anchor points
 surrounding them. The offset for each point is controlled by these 4 options:
 
 -   [Sleevecap Q1 offset](/docs/patterns/breanna/options/sleevecapq1offset) : Controls the offset perpendicular to the line from points 2 to 6
@@ -107,7 +107,7 @@ control each quarter individually.
 We now have all the start and end points to draw the 5 curves that will make up our sleevecaps.
 What we're missing are the control points
 (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more
-about how curves are constructed). These are determined by the so-called *spread*.
+about how curves are constructed). These are determined by the so-called _spread_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option
 to control the spread upwards, and downwards:

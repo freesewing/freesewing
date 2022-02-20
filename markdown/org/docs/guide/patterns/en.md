@@ -17,7 +17,7 @@ You can save as many patterns as you like.
 
 ##### Patterns vs Designs
 
-If you came to this site looking for *patterns* you might have found them under *designs*.
+If you came to this site looking for _patterns_ you might have found them under _designs_.
 It's not a super important distinction, but it helps to understand that:
 
 -   **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all

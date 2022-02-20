@@ -1,4 +1,4 @@
-Walburga consists of two parts, a *front* and a *back* piece.
+Walburga consists of two parts, a _front_ and a _back_ piece.
 
 <Tip>
 
@@ -6,8 +6,8 @@ Apart from the cutout for the neck opening, front and back are identical. It is 
 
 </Tip>
 
--   cut *1 front*, *on the fold*
--   cut *1 back*, *on the fold*
+-   cut _1 front_, _on the fold_
+-   cut _1 back_, _on the fold_
 
 ### On Historical Accuracy
 

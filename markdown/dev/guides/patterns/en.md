@@ -19,7 +19,7 @@ If we look at our image, it can be divided into three areas:
 
 -   The left area with the **settings**  box
 -   The middle area with the **Pattern** box and everything in it
--   The right area with the **draft** box and the *SVG* and *React* logos
+-   The right area with the **draft** box and the _SVG_ and _React_ logos
 
 Let's take a closer look at everything that is contained within our central **Pattern** box:
 
@@ -27,7 +27,7 @@ Let's take a closer look at everything that is contained within our central **Pa
 
 <Note>
 
-The left and right parts are all about how to integrate FreeSewing in your *frontend*.
+The left and right parts are all about how to integrate FreeSewing in your _frontend_.
 In other words, how you'll plug it into your website, or online store, or a mobile
 application.
 

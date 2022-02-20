@@ -25,7 +25,7 @@ let {
 } = part.shorthand()
 ```
 
-The idea behind *paperless patterns* is that users don't need to print your
+The idea behind _paperless patterns_ is that users don't need to print your
 pattern in order to use it.
 Instead, we include dimensions on the pattern that allows them to transfer
 the pattern directly onto fabric, or onto an intermediate medium such as tracing paper.
@@ -81,7 +81,7 @@ if (paperless) {
 }
 ```
 
-There's a lot going on, but it's mostly repetition. To see what that did to your pattern, you have to enable *paperless mode* in your developing environment; you can find the option under *Pattern options* on the right. Let's look at the end result, and discuss:
+There's a lot going on, but it's mostly repetition. To see what that did to your pattern, you have to enable _paperless mode_ in your developing environment; you can find the option under _Pattern options_ on the right. Let's look at the end result, and discuss:
 
 <Example pattern="tutorial" part="bib" settings_paperless="true">
 Your paperless bib

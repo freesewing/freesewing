@@ -8,7 +8,7 @@ After using the [shorthand](/howtos/code/shorthand/) call,
 `Snippet` contains the path constructor, while `snippets` is a reference to `part.snippets`,
 which is where you should store your paths.
 
-Things will now *just work* when you do this:
+Things will now _just work_ when you do this:
 
 ```js
 snippets.logo = new Snippet('logo', points.logoAnchor);

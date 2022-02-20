@@ -96,7 +96,7 @@ The length of your knit binding depends on the amount it needs to be stretched. 
 ### Do not do this
 
 There are a bunch of tutorials out on the internet that show you how to sew on knit binding.
-Many of those suggest something like *make the neck binding 90% of the length of the seam you are attaching it to* (the percentage varies).
+Many of those suggest something like _make the neck binding 90% of the length of the seam you are attaching it to_ (the percentage varies).
 
 This idea is that you cut your binding, join its edges, and then sew it in the opening. That is (in my opinion) no good.
 

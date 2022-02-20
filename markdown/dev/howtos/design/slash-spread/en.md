@@ -12,7 +12,7 @@ about: Slash and spread is easy enough on paper, here's how to do it in code
 
 </Note>
 
-When we *slash and spread* a pattern, we cut out a triangle, and then rotate it
+When we _slash and spread_ a pattern, we cut out a triangle, and then rotate it
 around the tip of the triangle.
 
 And that's exactly what we do in code. We just need to know:

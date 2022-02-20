@@ -17,7 +17,7 @@ in [our i18n plugin](/reference/plugins/i18n/).
 
 ## Understanding the insertText hook
 
-When we say that *this hook is called when text is about to be inserted*, that is a simplified view.
+When we say that _this hook is called when text is about to be inserted_, that is a simplified view.
 In reality, this hook is called:
 
 -   For every value set on data-text

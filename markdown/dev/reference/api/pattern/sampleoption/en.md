@@ -2,7 +2,7 @@
 title: Pattern.sampleOption()
 ---
 
-A pattern's `sampleOption()` method will *sample* a given option,
+A pattern's `sampleOption()` method will _sample_ a given option,
 which means to draft it in different iterations while adjusting the input value
 of the given option.
 The practical implementation varies based on [the type of option](/config/options/):

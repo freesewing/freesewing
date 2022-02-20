@@ -34,13 +34,13 @@ options: {
 ##### What's wrong with millimeter options?
 
 Millimeter options do not scale.
-Parametric design is the *raison d'être* of FreeSewing and that core belief
+Parametric design is the _raison d'être_ of FreeSewing and that core belief
 that things should seamlessly adapt goes out the window when you use a `mm`
 option because now you have a value that will not change based on the
 input measurements.
 
-You could argue that it's fine because *you can just lower the option*
-but that breaks the principle of *sensible defaults* (aka no surprises).
+You could argue that it's fine because _you can just lower the option_
+but that breaks the principle of _sensible defaults_ (aka no surprises).
 The fact that you can sidestep the bullet does not mean you're not creating
 a footgun.
 

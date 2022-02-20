@@ -1,6 +1,6 @@
 ### Step 1: Join center seam
 
-Join the curved seam that is center of our mask by placing the *good sides together* and sewing them in place.
+Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
 
 ![Join the center seam](step1.svg)
 
@@ -34,7 +34,7 @@ and attach the ribbons all in one step.
 -   Then, place two ribbons on the corners of one side (right in our example) so that
     they peak out just a bit from the mask, but the ribbon extends inwards.
 -   Now place the main fabric on top of this with the good side town.
-    You should now have both layers of your mask on top of each other with *good sides together* and
+    You should now have both layers of your mask on top of each other with _good sides together_ and
     two ribbons sandwiched between them
 -   Pin through ribbons and layers to keep them in place
 -   Now do the same on the other side

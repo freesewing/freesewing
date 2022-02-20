@@ -12,7 +12,7 @@ In this particular case, there's a lot of video material available, but it was o
 
 Many of the steps below are to be repeated for both trouser legs.
 
-That is not always mentioned because life is short and continuously writing *Do not forget to do this for both trouser legs* gets tired really soon.
+That is not always mentioned because life is short and continuously writing _Do not forget to do this for both trouser legs_ gets tired really soon.
 
 </Note>
 
@@ -562,7 +562,7 @@ Before we finalize the waistband, we're going to trim back some of its seam allo
 
 ![Press and baste the waistband lining](step49.png)
 
-The waistband lining will be sewn from the front of the trousers on top of the seam that joins the waistband to the trousers (so called *stitch in the ditch*).
+The waistband lining will be sewn from the front of the trousers on top of the seam that joins the waistband to the trousers (so called _stitch in the ditch_).
 
 Doing so will catch the lining and secure it in place. However, since we'll be sewing this from the good side, the lining will lie beneath all other layers, and we won't see what we're doing.
 

@@ -20,7 +20,7 @@ Go ahead and read those, we'll wait.
 
 ## Good to know
 
-With that out of the way, here's a few more things that are *good to know*:
+With that out of the way, here's a few more things that are _good to know_:
 
 -   Nobody gets paid to work on/for FreeSewing. We are a 100% volunteer organisation.
 -   We have patrons who support us financially, but all the money that comes in goes to charity —

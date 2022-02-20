@@ -1,11 +1,11 @@
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. To ***Finish*** seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+This pattern can be sewn with or with out a overlocker/serger. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
 
 ##### Finishing Method 1
 
 -   Press open the seam allowances.
--   Then on the good side, ***Edgestitch*** 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+-   Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
 -   On the wrong side trim the seam allowances close to the edgestitching.
 
 ##### Finishing Method 2
@@ -24,17 +24,17 @@ If using a overlocker/serger you can sew seams which need fininshing in one go r
 ## Step 1: Attaching the Gussets
 
 -   With the good sides together, sew the gussets to the front panels along the side seams.
--   ***Finish*** seams.
+-   _**Finish**_ seams.
 
 ## Step 2:  Sew the Shoulder Seams
 
 -   With good sides together, sew the front pieces to the back along the shoulder seams.
--   ***Finish*** seams.
+-   _**Finish**_ seams.
 
 ## Step 3: Attach the Sleeves
 
 -   With good sides together, matching back notch to back notch and front notch to front notch, sew the sleeves to the body.
--   ***Finish*** seams.
+-   _**Finish**_ seams.
 
 <Note>
 
@@ -61,7 +61,7 @@ This is just one hemming method, if you prefer another way go for it.
 ## Step 5: Close the Sides
 
 -   With good sides together, matching shoulder seams, start at the sleeve edge and sew the sleeve together than sew the gusset and back together.
--   ***Finish*** seams.
+-   _**Finish**_ seams.
 -   Repeat for remaining sleeve and side opening.
 
 ## Step 6: Hem the Raw Edges
@@ -76,7 +76,7 @@ Follow this step twice, once for the outer hood and once for the lining hood.
 -   With good sides together, sew the long edge of the Hood Centre to the outer edge of one of the Hood Sides.
 -   With good sides together, sew the remaining long edge of the Hood Centre to the outer edge of the other Hood Side.
 -   Press the seam allowances open.
--   ***Finish*** seams.
+-   _**Finish**_ seams.
 
 <Note>
 
@@ -86,9 +86,9 @@ It is recommended to use **Finishing Method 1** for this step regardless of whet
 
 ## Step 8: Join Inside and Outside Hood
 
--   With *good sides together*, pin the Outside and Lining Hoods together matching the seams.
+-   With _good sides together_, pin the Outside and Lining Hoods together matching the seams.
 -   Sew the pinned edge together.
--   Trim the seam allowance to 1cm (3/8 inch) if your chosen seam allowance is bigger and you have not used and overlocker/serger. Otherwise *do not* trim the seam.
+-   Trim the seam allowance to 1cm (3/8 inch) if your chosen seam allowance is bigger and you have not used and overlocker/serger. Otherwise _do not_ trim the seam.
 -   Turn the hood good sides out and press the outer edge flat.
 -   On the outside Topstitch along the edge of the hood, about 1.5 - 2cm (5/8 - 3/4 inch) from the edge. Ensure that your topstiching encloses but does not go through the seam allowance of the outer hood edge. This will create a decorative rim, with the enclosed seam allowance making the rim a bit poofy.
 -   With raw edges together, overcast the bottom of the hood. You can either do this with an overlocker/serger or a ziz-zag or overcast stitch on a regular machine.

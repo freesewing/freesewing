@@ -15,7 +15,7 @@ array | false utils.lineIntersectsCircle(
 Finds the intersection between a line segment from point `from` to point `to`
 and a circle with its center at point `center` and a radius of `radius` mm.
 
-The 5th and last parameter controls the *sorting* of the found intersections.
+The 5th and last parameter controls the _sorting_ of the found intersections.
 When this returns 2 intersections, you can choose how they are ordered in the returned array:
 
 Set sort to:

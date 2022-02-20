@@ -45,7 +45,7 @@ This is the boilerplate of our `draftBib` method. It takes the part as an argume
 
 <Note>
 
-If you're new to JavaScript, and don't intuitively *get this*, stick with it. It will become second nature soon enough.
+If you're new to JavaScript, and don't intuitively _get this_, stick with it. It will become second nature soon enough.
 
 </Note>
 
@@ -61,7 +61,7 @@ let {
 ```
 
 This is FreeSewing's **shorthand** method. It returns an object with a bunch of handy helpers
-and you use JavaScript's *object destructuring* to only get what you need.
+and you use JavaScript's _object destructuring_ to only get what you need.
 
 The example above makes the following variables available:
 
@@ -75,9 +75,9 @@ These will make it possible for you to draw points and paths easily.
 The following three variables are also needed to create a full-fledged FreeSewing pattern; their function and usage will
 be covered in detail [later on in this tutorial](/tutorials/pattern-design/completing-your-pattern/):
 
--   `complete`: create a *complete* pattern (or not)
--   `sa`: include *seam allowance* (or not)
--   `paperless`: allow the pattern to be *paperless*
+-   `complete`: create a _complete_ pattern (or not)
+-   `sa`: include _seam allowance_ (or not)
+-   `paperless`: allow the pattern to be _paperless_
 
 For now, we only need these so that the pattern skeleton compiles properly.
 

@@ -15,7 +15,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 -   Join the inseam (the seam the runs along the inside of your legs) of the front and back.
 -   You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
 -   Turn one leg with the good side in, and the other with the good side out.
--   Now tuck the *good side out* into the *good side in* leg, so that they have their *good sides together*.
+-   Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
 -   Align and sew the cross seam.
 
 <Note>

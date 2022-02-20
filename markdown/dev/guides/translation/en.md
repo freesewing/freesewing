@@ -79,7 +79,7 @@ expect to find the same structure, the same amount of headings, paragraphs and s
 
 ### Strapi
 
-Strapi ([strapi.io](https://strapi.io/)) is a so-called *headless content management system (CMS)*.
+Strapi ([strapi.io](https://strapi.io/)) is a so-called _headless content management system (CMS)_.
 Headless just means that we load the content from it via an API, rather than have it be part of our
 website like a classic CMS (eg. Wordpress).
 

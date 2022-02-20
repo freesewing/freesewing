@@ -36,14 +36,14 @@ The notches in this pattern act more like dots so **do not** clip them to mark t
 
 #### Band Tie Variant
 
--   With raw edges and main fabric together, *baste* one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
+-   With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
 -   With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
 -   Sew the lining to the main cup between notches along the front, top and side seams, making sure not to catch the neck tie and to reinforce the stitch at the notches.
--   (Optional) Fold to the wrong side and *edgestitch* the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
+-   (Optional) Fold to the wrong side and _edgestitch_ the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
 -   With good sides together, sew the lining to the main fabric along the bottom, leaving a gap between the side notches making sure to reinforce the stitch at the either end.
 -   Trim the seam allowances of the sewn edges whilst leaving the seam allowance between the notches. Clip the corners. You may also need to clip the curved seams.
 -   Turn inside out by pulling the neck tie through one of the gaps. Press.
--   (Optional) *edgestitch* the top, sides and bottom of the cup leaving the gaps between the notches open.
+-   (Optional) _edgestitch_ the top, sides and bottom of the cup leaving the gaps between the notches open.
 -   Stitch along casing line to create band channel.
 
 <Note>Repeat this for the other cup</Note>
@@ -53,23 +53,23 @@ The notches in this pattern act more like dots so **do not** clip them to mark t
 If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.\
 If you are having trouble turning the cups you can try one of these methods:
 
--   Create a 2.5cm (1") gap in the front or side seam and turn throught that, either *slipstitch*-ing the gap closed or *edgestitch*-ing it closed during Step 7.
--   Widen one of the existing gaps and turn through that. Then when turned *edgestitch* or *slipstitch* the widened part closed.
+-   Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
+-   Widen one of the existing gaps and turn through that. Then when turned _edgestitch_ or _slipstitch_ the widened part closed.
 
 </Tip>
 <Note>
 
-Whilst certainly optional it is recommended to *edgestitch* the top and sides of the cups but the bottom is entirely optional.
+Whilst certainly optional it is recommended to _edgestitch_ the top and sides of the cups but the bottom is entirely optional.
 
 </Note>
 
 #### Cross Back Ties Variant
 
--   With raw edges and main fabric together, *baste* one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
+-   With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
 -   With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
 -   Sew the lining to the main cup along the front, top and side seams, making sure not to catch the neck tie.
 -   Turn the cups right side out and press.
--   (Optional) *edgestitch* the top and sides of the cups.
+-   (Optional) _edgestitch_ the top and sides of the cups.
 -   Sew a line of basting stitches along the bottom of the cups, just inside the seamline.
 -   Gather cups along the basting stitches.
 

@@ -11,7 +11,7 @@ you can generate patterns in the browser with a few lines of Javascript.
 ##### Use FreeSewing.org if you just want a pattern
 
 These instructions are intended for people who want to generate
-their own patterns. If you *just want a sewing pattern* you can
+their own patterns. If you _just want a sewing pattern_ you can
 get all our designs on [FreeSewing.org](https://FreeSewing.org/),
 our website for makers.
 

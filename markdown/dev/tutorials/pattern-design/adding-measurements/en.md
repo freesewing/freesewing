@@ -3,13 +3,13 @@ title: Adding measurements
 order: 130
 ---
 
-FreeSewing is all about *made-to-measure* sewing patterns;
+FreeSewing is all about _made-to-measure_ sewing patterns;
 we are going to draft our pattern according to the measurements provided to us.
 
 Which begs the question, which measurements?
 
 It is you, as the pattern designer, who decides which measurements are required to draft your pattern.
-For our bib, the only measurement we need is the baby's *head circumference*.
+For our bib, the only measurement we need is the baby's _head circumference_.
 
 So let's add it as a required measurement.
 

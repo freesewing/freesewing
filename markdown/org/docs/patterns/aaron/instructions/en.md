@@ -2,14 +2,14 @@
 
 ![Close the side and shoulder seams](step01.png)
 
-Put front and back on top of each other with *good sides together*.
+Put front and back on top of each other with _good sides together_.
 Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Step 2: Finish hem
 
 ![Finish the hem](step02.png)
 
-Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
+Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
 
 <Note>
 

@@ -9,11 +9,11 @@ title: Albert Construction
 -   Press the seam allowance of the sides and bottom to the wrong side.
 -   On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
 -   Pin the pocket to the front using the guides.
--   *Edgestitch* the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
+-   _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
 
 <Tip>
 
-If you have trouble catching the top hem we suggest to either *Baste* close to the hem edge first, and use that as a guide when stitching on the right side or pin the hem edge down from the right side making sure the pins are parallel to the top edge and use them as a guide.
+If you have trouble catching the top hem we suggest to either _Baste_ close to the hem edge first, and use that as a guide when stitching on the right side or pin the hem edge down from the right side making sure the pins are parallel to the top edge and use them as a guide.
 
 </Tip>
 

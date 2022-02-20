@@ -2,7 +2,7 @@
 title: Pattern.sampleMeasurement()
 ---
 
-A pattern's `sampleMeasurement()` method will *sample* a given measurement,
+A pattern's `sampleMeasurement()` method will _sample_ a given measurement,
 which means to draft it in different iterations while adjusting the input value
 of the given measurement.
 In practice, it will draft 10 iterations of the pattern

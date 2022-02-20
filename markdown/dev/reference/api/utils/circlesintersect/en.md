@@ -14,7 +14,7 @@ array | false utils.circlesIntersect(
 
 Finds the intersections between two circles described by their center point and radius.
 
-The 5th and last parameter controls the *sorting* of the found intersections.
+The 5th and last parameter controls the _sorting_ of the found intersections.
 When this returns 2 intersections, you can choose how they are ordered in the returned array:
 
 Set sort to:

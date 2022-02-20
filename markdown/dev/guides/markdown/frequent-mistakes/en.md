@@ -7,7 +7,7 @@ Some things to keep in mind when working in Markdown are:
 
 ## Use remark-jargon for glossary terms
 
-There is no need to add a *glossary* section to documentation.
+There is no need to add a _glossary_ section to documentation.
 We use a plugin called [remark-jargon][rj] to explain terms.
 Information can be found at the link.
 

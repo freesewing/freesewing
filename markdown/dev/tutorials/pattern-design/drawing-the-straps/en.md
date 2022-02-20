@@ -124,5 +124,5 @@ it doesn't look much different. We'll use some other classes later that will mak
 
 </Note> 
 
-It's looking pretty good. But those sharp corners at the bottom don't exactly say *baby* do they?
+It's looking pretty good. But those sharp corners at the bottom don't exactly say _baby_ do they?
 Let's fix that.

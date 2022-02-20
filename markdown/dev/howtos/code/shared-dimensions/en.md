@@ -48,7 +48,7 @@ import { dimensions } from './shared'
 
 <Note>
 
-Since our shared dimension method is a so-called *named export* we need to
+Since our shared dimension method is a so-called _named export_ we need to
 import it with the syntax you see above.
 
 </Note>

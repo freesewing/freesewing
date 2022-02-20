@@ -2,7 +2,7 @@
 title: Pattern.sample()
 ---
 
-A pattern's `sample()` method will *sample* the pattern which means
+A pattern's `sample()` method will _sample_ the pattern which means
 to draft it in different iterations while adjusting the input settings.
 Under the hood, this method will call one of
 [Pattern.sampleOption()](/reference/apu/pattern/sampleoption),

@@ -15,7 +15,7 @@ array | false utils.beamIntersectsCircle(
 Finds the intersection between an endless line through points `point1` and `point2`
 and a circle with its center at point `center` and a radius of `radius` mm.
 
-The 5th and last parameter controls the *sorting* of the found intersections.
+The 5th and last parameter controls the _sorting_ of the found intersections.
 This will (almost) always return 2 intersections, and you can choose how
 they are ordered in the returned array:
 
