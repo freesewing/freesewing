@@ -12,6 +12,7 @@ import theme from 'pkgs/plugin-theme/src/index.js'
 import Measurements from 'shared/components/workbench/measurements/index.js'
 import LabDraft from 'shared/components/workbench/draft/index.js'
 import LabSample from 'shared/components/workbench/sample.js'
+import ExportDraft from 'shared/components/workbench/export.js'
 import GistAsJson from 'shared/components/workbench/json.js'
 import GistAsYaml from 'shared/components/workbench/yaml.js'
 import DraftEvents from 'shared/components/workbench/events.js'
@@ -20,7 +21,7 @@ const views = {
   measurements: Measurements,
   draft: LabDraft,
   test: LabSample,
-  export: () => <p>TODO</p>,
+  export: ExportDraft,
   events: DraftEvents,
   yaml: GistAsYaml,
   json: GistAsJson,

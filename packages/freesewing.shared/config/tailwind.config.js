@@ -17,10 +17,5 @@ module.exports = {
     utils: true,
     logs: true,
     rtl: false,
-  },
-  theme: {
-    extend: {
-      colors: require('daisyui/colors'),
-    },
-  },
+  }
 }

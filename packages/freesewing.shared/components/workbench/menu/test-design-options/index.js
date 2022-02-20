@@ -5,12 +5,12 @@ import { Ul, Details, TopSummary, TopSumTitle } from 'shared/components/workbenc
 import { useTranslation } from 'next-i18next'
 
 const DesignOptions = props => {
-  const { t } = useTranslation(['workbench'])
+  const { t } = useTranslation(['app'])
 
   return (
     <Details open>
       <TopSummary icon={<OptionsIcon />}>
-        <TopSumTitle>{t('designOptions')}</TopSumTitle>
+        <TopSumTitle>{t('app:designOptions')}</TopSumTitle>
         <Chevron />
       </TopSummary>
       <Ul className="pl-5 list-inside">

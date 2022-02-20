@@ -1,3 +1,5 @@
+import { SizeMe } from 'react-sizeme'
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 import svgattrPlugin from '@freesewing/plugin-svgattr'
 import { useTranslation } from 'next-i18next'
 
@@ -8,7 +10,7 @@ const LabSample = ({ gist, draft }) => {
   if (gist.sample) {
     try {
       draft.use(svgattrPlugin, {
-        class: 'freesewing'
+        class: 'freesewing pattern max-h-screen'
       })
       draft.sample()
       svg = draft.render()
@@ -26,10 +28,7 @@ const LabSample = ({ gist, draft }) => {
   return (
     <>
       <h2>{title}</h2>
-      <div
-        className="freesewing pattern"
-        dangerouslySetInnerHTML={{ __html: svg }}
-      />
+      <div className="freesewing pattern" dangerouslySetInnerHTML={{__html: svg}} />
     </>
   )
 }
