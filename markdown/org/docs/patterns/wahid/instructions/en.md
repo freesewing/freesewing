@@ -143,10 +143,10 @@ Fold them back making sure you to keep your pocket opening a clean rectangle, an
 
 #### Bring the pocket welt to the back, fold and press
 
-![Bring the pocket welt to the front, fold and press](05i.png)
-![Bring the pocket welt to the front, fold and press](05j.png)
+![Bring the pocket welt to the back, fold and press](05i.png)
+![Bring the pocket welt to the back, fold and press](05j.png)
 
-Flip the pocket welt with the attache pocket back tot he back side.
+Flip the pocket welt with the attached pocket back tot he back side.
 
 Fold your welt down at the point where it reaches the top of the pocket. The welt should cover the entire pocket opening.
 
