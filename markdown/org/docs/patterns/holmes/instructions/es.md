@@ -10,13 +10,13 @@ title: Construcción de Holmes
 <Tip>
 
 La marca de hilos permite ver la línea de costura tanto en el lado derecho como en el incorrecto.
-  
+
 </Tip>
 
 <Note>
 
 Incluso si usted se enfrenta a la corona puede que no quiera enfrentarse a las aletas auriculares si quiere que sean menos rígidas cuando se atan.
-  
+
 </Note>
 
 <Warning>
@@ -37,7 +37,7 @@ Estas instrucciones asumen que has marcado tus líneas de costura. Pueden ser m�
 <Note>
 
 Dependiendo de su franquicia de costura puede que desee recortar costuras a medida que vaya a reducir el granel.
-  
+
 </Note>
 
 ### Paso 3: Las flaps auriculares
@@ -56,13 +56,13 @@ Dependiendo de su franquicia de costura puede que desee recortar costuras a medi
 <Tip>
 
 If you are uncertain about the length you want for you ties take 1 metre (39") of ribbon and cut in half. Utilice estas mitades como los lazos en las instrucciones anteriores. Los lazos están terminados al final para que puedas ajustar las longitudes entonces.
-  
+
 </Tip>
 
 <Note>
 
-Las longitudes anteriores son recomendaciones, así que siéntete libre de ir tan largo o corto como quieras con los vínculos.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
+The lengths above are recommendations so feel free to go as long or as short as you like with the ties.\
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
 
 </Note>
 
@@ -85,7 +85,7 @@ Las aletas auditivas tendrán que ser lo suficientemente largas para pasar por e
 
 <Note>
 
-**For both Ear Flaps with Ties and Button Holes**  
+**For both Ear Flaps with Ties and Button Holes**
 
 It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
 
@@ -114,7 +114,7 @@ Tenga cuidado con el calor de un hierro cuando utilice ciertos materiales de ins
 
 <Note>
 
-If preferred you can temporarily attach the bill insert another way that does not require hand sewing and putting a needle through the material. Asegúrate de que no daña tu tela de sombrero al remover o aplicar. 
+If preferred you can temporarily attach the bill insert another way that does not require hand sewing and putting a needle through the material. Asegúrate de que no daña tu tela de sombrero al remover o aplicar.
 
 </Note>
 
@@ -170,7 +170,7 @@ Una vez más, hay dos métodos para el montaje final y el revestimiento. Lea amb
 
 <Note>
 
-**For both Assembly and Lining Methods** 
+**For both Assembly and Lining Methods**
 
 You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. It is simply whether you prefer the bills to be underneath or prefer the ear flaps to be underneath like in the instructions.
 
@@ -178,17 +178,17 @@ You can attach the visors on first, just make sure the visors are under the ear 
 
 <Tip>
 
-**For both Assembly and Lining Methods**  
+**For both Assembly and Lining Methods**
 
-If you are having trouble dealing with the curves of the bills, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the bill and clip to it. This should make it easier to bend the bill to shape. Simplemente asegúrese de ocultar este stitching y los clips al adjuntar el forraje.
+If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. This should make it easier to bend the bill to shape. Simplemente asegúrese de ocultar este stitching y los clips al adjuntar el forraje.
 
 </Tip>
 
 <Warning>
 
-**Tanto para los métodos de ensamblaje como para los de estiramiento**  
+**For both Assembly and Lining Methods**
 
-Las instrucciones de ensamblaje y aprendizaje están escritas teniendo en cuenta los 6 hoyos panelados. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
@@ -212,7 +212,7 @@ Si no cortaron sus lazos cuando construyeron los tapones de los oídos, ahora es
 <Note>
 
 Para determinar cuál es la forma en que quieres doblar los lazos, te resultará más fácil atar las aletas de los oídos primero. Generalmente quieres que el pliegue esté en la parte inferior de los lazos pero como siempre es preferencia personal.
-  
+
 </Note>
 
 ### Paso 7: Botón
@@ -225,7 +225,7 @@ A menos que esté haciendo las aletas de ojo de botón, no tiene que coser un bo
 
 <Note>
 
-Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently. 
+Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently.
 Mientras que un botón cubierto está cubierto puedes usar cualquier botón que desees, ¡siéntete libre de experimentar!
 
 </Note>
@@ -236,8 +236,8 @@ Mientras que un botón cubierto está cubierto puedes usar cualquier botón que 
 
 <Note>
 
-Recuerde que estas instrucciones son sólo directrices así que no te preocupes si quieres construir el sombrero de manera diferente.  
-Los diagramas todavía están por hacer para este patrón, así que mientras tanto si necesita ayuda visual, ver el video de YouTube que inspiró este patrón:
+Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.\
+The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
 
 </Note>
 
