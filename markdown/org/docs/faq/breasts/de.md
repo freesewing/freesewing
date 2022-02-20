@@ -2,7 +2,7 @@
 title: "Was soll das ganze Gerede über mit oder ohne Brüsten?"
 ---
 
-Some people get confused by the terms *with breasts* and *without breasts*.
+Some people get confused by the terms _with breasts_ and _without breasts_.
 
 Wir verwenden diese Begriffe, um auf Gender-inklusive Art und Weise zu fragen, ob eine Person Brüste hat oder nicht.
 
@@ -10,9 +10,9 @@ Wir verwenden diese Begriffe, um auf Gender-inklusive Art und Weise zu fragen, o
 
 Fast jede Bekleidungsfirma hat zwei Hauptkategorien für ihre Kleidung: Herrenbekleidung und Damenbekleidung. Diese Designs basieren in der Regel auf dem idealen oder durchschnittlichen Körper. Meaning, for womenswear, the designer will likely make a garment for a body with breasts, narrow shoulders, a smaller waist and wide hips.
 
-These characteristics are generally thought of as *the typical characteristics of a woman's body*. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
+These characteristics are generally thought of as _the typical characteristics of a woman's body_. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
 
-We do not want to exclude anyone and we think that *body shape ≠ gender*. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
+We do not want to exclude anyone and we think that _body shape ≠ gender_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
 
 ##### Schnittmuster betreffend
 
