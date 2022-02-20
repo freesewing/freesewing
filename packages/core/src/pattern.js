@@ -698,6 +698,8 @@ Pattern.prototype.getRenderProps = function () {
   svg.runHooks('preRender')
 
   this.pack()
+  // Run post-layout hook
+  this.runHooks('postLayout')
   let props = { svg }
   props.width = this.width
   props.height = this.height
