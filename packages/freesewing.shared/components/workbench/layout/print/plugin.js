@@ -68,7 +68,8 @@ const pagesPlugin = (size='a4', orientation='portrait') => ({
         }
         y += h
       }
-      this.pages = { cols, rows, count: (cols+1)*(rows+1) }
+      // Store page count in part
+      this.pages = { cols, rows, count: cols*rows }
     }
   }
 })

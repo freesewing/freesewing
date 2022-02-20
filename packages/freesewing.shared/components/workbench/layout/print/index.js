@@ -43,7 +43,7 @@ const PrintLayout = props => {
         }
       </h2>
       <div className="m-4">
-        <Settings {...props} />
+        <Settings {...props} draft={draft}/>
       </div>
       <Draft
         draft={draft}
