@@ -3,7 +3,7 @@
 
 #### Naaipatronen gemaakt op uw metingen
 
-Al onze patronen zijn *op maat*. Niet alleen nagekeken of beneden, maar ook daadwerkelijk getekend volgens de precieze specificaties, zoals u op papier zou doen.
+All our patterns are _made-to-measure_. Niet alleen nagekeken of beneden, maar ook daadwerkelijk getekend volgens de precieze specificaties, zoals u op papier zou doen.
 
 #### Volgestampt met opties plus live preview
 
