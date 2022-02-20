@@ -5,7 +5,7 @@ order: 350
 
 Sobald du einen Account hast, kannst du damit anfangen, Körpermaße hinzuzufügen. Aber das wirft schnell die Frage auf: Was, wenn du ein Schnittmuster für dich haben willst, aber auch für deine/n Partner/in?
 
-Deswegen haben wir *Personen*.
+That's why we have _people_.
 
 Du kannst eine Person anlegen und dann die Maße dieser Person hinzufügen. Jetzt kannst du Schnittmuster für diese Person generieren, die auf ihren Maßen beruhen.
 
