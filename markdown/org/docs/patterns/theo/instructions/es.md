@@ -1,4 +1,3 @@
-
 <Note>
 
 ¿Texto un poco seco para ti? Intento que los videos estén disponibles como parte de la documentación de patrones.
@@ -11,7 +10,7 @@ En este caso en particular, hay un montón de material de vídeo disponible, per
 
 <Note>
 
-Muchos de los pasos siguientes deben repetirse para las patas de los pantalones. 
+Muchos de los pasos siguientes deben repetirse para las patas de los pantalones.
 
 Esto no siempre se menciona porque la vida es corta y escribir continuamente _No olvide hacer esto para ambas patas de pantalón_ se cansa muy pronto.
 
@@ -49,7 +48,7 @@ Construye los bolsillos de doble soldadura en la parte posterior de tus pantalon
 
 ###### Bolsillos de doble soldadura
 
-Construir un bolsillo de doble soldadura es una técnica que se utiliza es diferente de la ropa. 
+Construir un bolsillo de doble soldadura es una técnica que se utiliza es diferente de la ropa.
 Por eso lo he sujetado en su propia página de documentación.
 
 Hay documentación escrita y una serie de vídeo que muestra cómo hacerlo, así que incluso si nunca has hecho pockets de soldadura antes, estarás bien.
@@ -218,8 +217,8 @@ Tome su zip y ábrelo (descomprimirlo). Ahora dale la vuelta para que se sienta 
 
 Alínea tu zip con la costura de cromo como se muestra en la ilustración. Tome en cuenta lo siguiente:
 
- - El final de tu zip debería sentarse en la parte superior de tus pantalones donde comenzará tu cintura. Sin embargo, asegúrese de recordar que allí hay permisos de costura así que no lo alinee con la parte superior del piete delantero, pero reste 1 cm de costura permitida.
- - Alinear el zip con la costura del croll. No te importa el borde del zip, ya que vienen en diferentes anchuras. En cambio, asegúrese de que puede coser junto a los dientes del zip dentro de la costura de la pieza delantera.
+- El final de tu zip debería sentarse en la parte superior de tus pantalones donde comenzará tu cintura. Sin embargo, asegúrese de recordar que allí hay permisos de costura así que no lo alinee con la parte superior del piete delantero, pero reste 1 cm de costura permitida.
+- Alinear el zip con la costura del croll. No te importa el borde del zip, ya que vienen en diferentes anchuras. En cambio, asegúrese de que puede coser junto a los dientes del zip dentro de la costura de la pieza delantera.
 
 Anclar el zip en su lugar con unos pocos pines perpendiculares a su zip (como se muestra). En otras palabras, no se fije a lo largo del zip, sino a través del zip.
 
@@ -424,6 +423,7 @@ Da la espalda a tus pantalones y coloque cuidadosamente una pierna en su tabla d
 Cuando tenga buen aspecto, presione las líneas de pliegue de la pierna, delante de la espalda. Repita para la otra pierna.
 
 Dale una prensa firme porque quieres que los pliegues sigan estando allí después de lavar los pantalones (para que puedas ver dónde pulsarlos de nuevo).
+
 > En la industria, los productos químicos se aplican a lo largo de la línea de pliegues antes de que se presione juntos. Algunos tailors usan algún tipo de martillo y yunque de madera para golpear las fibras en un pliegue permanente.
 
 Dependiendo de tu tejido, tu pliegue puede durar más tiempo, pero en última instancia, Usted no puede esperar tener un pliegue que pueda soportar unos pocos lavabos sin ser reaplicado.
@@ -502,11 +502,11 @@ Dicho esto, aquí está qué hacer para hacer un bucle de cinturón estándar:
 
 Encuentra la pieza del patrón del bucle de la cinta, una pequeña pieza rectangular de la tela. Debería haber 8 de ellas, y éstas se convertirán en tus bucles de cinturón. Para cada uno de ellos, dar estos pasos:
 
- - Zig-zag (o serge) a lo largo de los bordes más largos del rectángulo
- - Doblar un lado hacia atrás a lo largo de la longitud, y presionar
- - Doble el otro lado hacia atrás, a lo largo de la longitud, y presiona
- - Coser a lo largo de la parte trasera del bucle de la cinta para que los lados doblados permanezcan en su lugar, pero las stitches no se muestran en la parte frontal
- - Dale una buena prensa final cuando hayas terminado
+- Zig-zag (o serge) a lo largo de los bordes más largos del rectángulo
+- Doblar un lado hacia atrás a lo largo de la longitud, y presionar
+- Doble el otro lado hacia atrás, a lo largo de la longitud, y presiona
+- Coser a lo largo de la parte trasera del bucle de la cinta para que los lados doblados permanezcan en su lugar, pero las stitches no se muestran en la parte frontal
+- Dale una buena prensa final cuando hayas terminado
 
 > Si bien la anchura de los bucles de la cinta no es tan importante, es importante asegurarse de que son todos del mismo ancho.
 > 
@@ -627,4 +627,5 @@ Con el hem bien presionado, simplemente coser a mano la parte trasera doblada ha
 > Si bien hay alternativas de máquina, no son tan limpias (ranura ciega) o probablemente no son accesibles para el alcantarillado doméstico (maquinaria de corte ciego industrial).
 
 ### Paso 56: Recorte, limpia y presiona
+
 Recorta cualquier hilo o basura sueltos que queden, y da a tus pantalones una buena prensa final.
