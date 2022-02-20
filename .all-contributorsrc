@@ -804,6 +804,15 @@
       "contributions": [
         "question"
       ]
+    },
+    {
+      "login": "mesil",
+      "name": "mesil",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14284175?v=4",
+      "profile": "https://github.com/Mesil",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true
