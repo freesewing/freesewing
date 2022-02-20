@@ -1,4 +1,3 @@
-
 ##### Du tissu principal
 
 - Partie **1**: **2 x** _avec de bons côtés ensemble_.
