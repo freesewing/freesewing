@@ -15,10 +15,10 @@ Cette estimation est basée sur votre circonférence du cou et n'apparaîtra don
 ##### This is a difficult area for us to work in
 
 We want to help you get the best results, and that includes helping you spot issues with your measurements.
-D'un autre côté, nous ne voulons en aucun cas impliquer que les mesures de quelqu'un sont *erronées* d'une manière ou d'une autre.
+On the other hand, we in no way want to imply that someone's measurements are _wrong_ somehow.
 
 Nous sommes une boutique de patrons qui se veut destiné pour toutes les tailles, et une grande quantité de nos utilisateurs sont des personnes qui luttent pour trouver des vêtements ou des patrons.
-Donc d'une part. il peut sembler que nous nous mettons en échecs en comparant les mesures à un ensemble de mesures plus ou moins standards.
+So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less _standard_ measurements.
 Mais vous connaissez votre corps. Vous savez laquelle de vos mesures s'écarte de la moyenne.
 Et nous signalons que ce n'est d'une certaine manière que la confirmation que vous avez mesuré correctement.
 D'un autre côté, si une mesure s'éloigne là où vous êtes plutôt dans la moyenne, alors vous savez que vous devez vérifier cette mesure.

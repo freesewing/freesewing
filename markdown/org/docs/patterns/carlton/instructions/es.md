@@ -1,9 +1,9 @@
-
 ### Step 1: Draft and Cut the missing Lining and Facing Parts
 
 Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
 
 #### Drafting
+
 ##### Front facing and Front lining
 
 - Trace off of **Front** part.
@@ -20,8 +20,8 @@ The button and pocket markings are not needed for these parts so feel free not t
 </Note>
 
 <Warning>
-  
-Don't forget the seam allowance for these pieces when cutting if you are making these parts nett! 
+
+Don't forget the seam allowance for these pieces when cutting if you are making these parts nett!
 
 </Warning>
 

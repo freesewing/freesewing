@@ -3,7 +3,7 @@
 
 #### Des patrons de couture faits à vos mesures
 
-Toutes nos patrons sont *sur-mesure*. Non seulement gradés en tailles plus ou moins grandes, mais sont réellement élaborés selon vos propres attentes, tel que vous l'auriez sur papier.
+All our patterns are _made-to-measure_. Non seulement gradés en tailles plus ou moins grandes, mais sont réellement élaborés selon vos propres attentes, tel que vous l'auriez sur papier.
 
 #### Prévu avec plusieurs options plus un aperçu en direct
 

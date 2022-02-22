@@ -2,7 +2,7 @@
 title: Abmessungen
 ---
 
-Wenn Sie ein *-papierloses* Muster wählen, wird Ihr Muster mit Dimensionen geliefert:
+When you opt for a _paperless_ pattern, your pattern will come with dimensions:
 
 <Legend part="dimension">
 

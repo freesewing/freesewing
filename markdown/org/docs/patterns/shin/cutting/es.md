@@ -3,6 +3,7 @@
 - Corta **1 cintura**
 
 ## Cañadas
+
 - Para ahorrar papel, la cintura no se imprime completamente en el patrón, ya que es un rectángulo largo. Así que busque el indicador de longitud, y corte un rectángulo de ese tamaño.
 - La franquicia del hem es el doble de la franquicia estándar de costura.
 

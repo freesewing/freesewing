@@ -1,4 +1,3 @@
-
 ## Schritt 1: Nähe den hinteren Abnäher
 
 Als erstes werden wir den Taillendart auf der Rückseite schließen.
@@ -53,7 +52,7 @@ Du solltest die Seiten des Taschenbeutels übersperren/austreten, damit sie nich
 
 <Tip>
 
-Wenn du keine _Overlock/Serger_ hast, kannst du stattdessen immer einen Zick-Zack-Zack-Stich verwenden. 
+Wenn du keine _Overlock/Serger_ hast, kannst du stattdessen immer einen Zick-Zack-Zack-Stich verwenden.
 
 </Tip>
 
@@ -263,7 +262,6 @@ Vielleicht solltest du diese zuerst einfügen, um sicher zu gehen, dass sie sch�
 
 Nähen Sie nun die andere Seite des Reißverschlusses. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
-
 ### Beende die Kreuznaht
 
 Nähen Sie das letzte Stück der Kreuznaht bis zur höchsten Fliegenpunkte.
@@ -300,10 +298,10 @@ Schneiden Sie schließlich Ihre Längenschleifen in 8 gleiche Teile ab, um 8 Gur
 
 Wir werden unsere Gürtelschleifen entlang der Taille teilen:
 
- - 2 in der Mitte hinten, die jeweils ein bisschen von der Mitte beiseite gesetzt, so dass es eine kleine Lücke zwischen ihnen.
- - 1 über dem Rückendart auf jeder Seite
- - 1 an jeder Seite mehr oder weniger wo die Seitennaht die Taille treffen würde, wenn sie gerade nach oben ging
- - 1 auf jeder Seite von der Mitte vorne. Nicht zu nah beieinander, so dass es keinen Platz für Gürtelschnallen gibt, aber auch nicht zu weit, so dass es nicht seltsam aussieht
+- 2 in der Mitte hinten, die jeweils ein bisschen von der Mitte beiseite gesetzt, so dass es eine kleine Lücke zwischen ihnen.
+- 1 über dem Rückendart auf jeder Seite
+- 1 an jeder Seite mehr oder weniger wo die Seitennaht die Taille treffen würde, wenn sie gerade nach oben ging
+- 1 auf jeder Seite von der Mitte vorne. Nicht zu nah beieinander, so dass es keinen Platz für Gürtelschnallen gibt, aber auch nicht zu weit, so dass es nicht seltsam aussieht
 
 Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 

@@ -2,7 +2,7 @@
 title: Getreide- und Faltenanzeige
 ---
 
-Körnlinien – eine Linie, die das *Stoffkorn* anzeigt – sehen folgendermaßen aus:
+Grainlines — a line that indicates the _fabric grain_ — look like this:
 
 <Legend part="grainline">
 

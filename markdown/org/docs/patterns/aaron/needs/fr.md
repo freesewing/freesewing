@@ -1,7 +1,7 @@
 Pour réaliser Aaron, vous aurez besoin de :
 
--   [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
--   About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
+- [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
+- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
 
 <Note>
 

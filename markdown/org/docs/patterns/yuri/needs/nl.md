@@ -1,4 +1,3 @@
-
 Om Yuri te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
@@ -11,7 +10,7 @@ Om Yuri te maken heb je het volgende nodig:
 
 Zoals met alle breitwear en stretch stoffen zal een serger/overlock het leven makkelijker maken.
 
-Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. 
+Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig.
 Omdat geen van de naden uitgerokken is, kan je gewoon dit patroon stikken met een rechte steek.
 
 </Note>

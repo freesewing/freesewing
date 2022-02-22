@@ -35,6 +35,7 @@ Coloque su frente y revestimiento con buenos lados juntos. Anclar los bordes del
 Los espolvorean juntos.
 
 #### Pulse abrir costura
+
 Pulse abrir la franquicia de costura entre la cara y el revestimiento.
 
 ### Paso 3: Cerrar todos los darts
@@ -48,6 +49,7 @@ Doblar la espalda con buenos lados y coser el dardo.
 > No te olvides de hacer lo mismo para el revestimiento
 
 #### Cerrar dardos frontales
+
 Doblar la parte delantera (y la intersección se fusionó con ella) con buenos lados juntos, y coser la parte delantera.
 
 ### Paso 4: Presione todos los darts
@@ -55,9 +57,11 @@ Doblar la parte delantera (y la intersección se fusionó con ella) con buenos l
 ![Pulsa todos los darts](04a.png)
 
 #### Presiona los dardos frontales
+
 Una vez cortado abierto, presione las artes frontales abiertas.
 
 #### Presiona el reverso de los dardos
+
 Si cortas las tinieblas, pulsa abrirlas. Si no es así, preséntalos al lado.
 
 > No te olvides de hacer lo mismo para el revestimiento
@@ -73,6 +77,7 @@ Coloque su bolsa de bolsillo abajo con el buen costado, y su bolsillo se soltó 
 Alinear el lado derecho de la bolsa con el lado de la soldadura que no tiene interfaces, y coser juntos en la costura estándar.
 
 #### Presione costura abierta
+
 Cuando haya terminado, presione Abrir esta costura.
 
 #### Marca a dónde tiene que ir tu bolsillo
@@ -137,9 +142,9 @@ Doblarlos asegurándote de mantener tu bolsillo abriendo un rectángulo limpio y
 
 #### Trae la soldadura del bolsillo a la espalda, pliega y presiona
 
-![Trae la soldadura del bolsillo a la parte delantera, plegable y presiona](05i.png) ![Trae la soldadura del bolsillo a la parte delantera, plegable y presiona](05j.png)
+![Bring the pocket welt to the back, fold and press](05i.png) ![Bring the pocket welt to the back, fold and press](05j.png)
 
-Invierte la soldadura del bolsillo con el bolsillo de atrás de la parte trasera.
+Flip the pocket welt with the attached pocket back tot he back side.
 
 Doblar su soldadura en el punto donde llega a la parte superior del bolsillo. La soldadura debe cubrir toda la abertura del bolsillo.
 
@@ -248,6 +253,7 @@ Ahora doblar el revestimiento un poco antes del borde del orificio y sujetarlo h
 Utilice un trozo de deslizamiento para coser a mano el forro a la tela a lo largo del orificio.
 
 ### Paso 11: Termina la lluvia
+
 Remember that gap we didn't close in step 9? Time to close it. Es hora de cerrarlo.
 
 Utilice un deslizamiento para coser a mano el forro a la tela y cerrar el sombrero.

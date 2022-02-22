@@ -33,7 +33,7 @@ Una vez que los dardos delanteros están cerrados, cortar abre el dardo en la es
 Aplique un pedazo rectangular de intersección ligero fusible alrededor de la zona del bolsillo para que se extienda unos pocos cm en todas las direcciones.
 
 > ##### No estamos usando fusible en todo el frente
->
+> 
 > Los escudos son típicamente hechos de telas algo más pesadas. That, and the fact that I prefer to use canvas rather than fusible interfacing, means that I don't interface the front with fusible.
 
 #### Marca el contorno de la soldadura del cofre, marca los extremos de la línea superior
@@ -124,7 +124,7 @@ Corta el pedazo del lienzo del pecho. Alinear a lo largo de la línea de rollos 
 
 Ahora golpea el lienzo delantero y la pieza de pecho en tu frente. Tenga en cuenta que el lienzo no tiene permisos de costura.
 
-> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later. You don't want your canvas to get caught in the seams.
+> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\ You don't want your canvas to get caught in the seams.
 
 #### Une tus lámparas
 
@@ -140,16 +140,16 @@ Ahora vamos a coser a mano a lo largo de los bordes de lapel del frente, y a lo 
 
 Ten en cuenta que:
 
--   La cinta a lo largo de la línea de rollo debe colocarse dentro de la línea de rollo.
--   La cinta a lo largo de la línea de rollo debe ser aproximadamente medio centímetro más corta que la distancia que se recorre. La ligera tensión que esto crea ayuda al lapel a rodar bien y al contorno al cuerpo.
--   La cinta a lo largo del borde del lapel debe colocarse dentro de la línea de costura
+- La cinta a lo largo de la línea de rollo debe colocarse dentro de la línea de rollo.
+- La cinta a lo largo de la línea de rollo debe ser aproximadamente medio centímetro más corta que la distancia que se recorre. La ligera tensión que esto crea ayuda al lapel a rodar bien y al contorno al cuerpo.
+- La cinta a lo largo del borde del lapel debe colocarse dentro de la línea de costura
 
 > ##### No coser a través de tu tela
->
+> 
 > While sewing the tape to your front, avoid pushing your needle all the way through your fabric so that your stitches will show on the front.
->
+> 
 > Al mismo tiempo, tampoco debería asegurar la cinta sólo a su lienzo. Instead, you should try to catch a few threads of your fabric on every stitch, so that the tape is secured in place, yet the stitches don't show at the front.
->
+> 
 > Esto es menos un problema por encima del punto de ruptura de su lapel donde la tela estará en la parte trasera del lapel.
 
 ### Cerrar el cuerpo
@@ -158,16 +158,16 @@ Ten en cuenta que:
 
 ![Cerrar los lados](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down. Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Place your front with the good side up, and your side on it with the good side down.\ Align the front/side seams, pin them in place if you feel like it, and sew them togther.
 
-Place this down with the good side up, and place your back on top with the good side down. Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Place this down with the good side up, and place your back on top with the good side down.\ Align the back/side seams, pin them in place if you feel like it, and sew them togther.
 
 > Asegúrese de que el lienzo no sea capturado en la costura.
 
 > ##### Nota para los ventiladores de coser
->
+> 
 > Si tiene una doble ventana, esta costura contendrá la ventana.
->
+> 
 > Pase la parte descendente de la costura lateral/trasera y la parte lateral que forma la ventana. No coser a la baja después de eso.
 
 #### Cerrar la costura trasera

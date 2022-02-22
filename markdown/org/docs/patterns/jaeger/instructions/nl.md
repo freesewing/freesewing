@@ -24,7 +24,6 @@ Stik de voorste neep dicht, let op dat de neep bovenaan op de juiste hoogte stop
 
 Zodra de voorste nepen dichtgestikt zijn, knip je ze open aan de achterkant. Je zal niet helemaal tot in de punt kunnen knippen, maar dat is ok. Strijk de nepen open waar ze opengeknipt zijn, en strijk de rest opzij. Strijk alleen op de achterkant. Strijken op de voorkant kan sporen achterlaten op je stof.
 
-
 ### Maak de borstzak
 
 ![Kleef tussenvoering op de achterkant van de borstzak](basteChestPocket.svg)
@@ -54,6 +53,7 @@ Vertrek vanaf de bovenste lijn van je gedriegde paspelzak, en markeer vanaf de h
 Vouw de paspel dubbel met de goede kanten op elkaar, en sluit de zijkanten (naai de zijnaden).
 
 #### Knip naadwaarde bij, keer en strijk
+
 Knip de naadwaarde aan de zijkant bij, vooran aan de hoekjes, om bulk te voorkomen.
 
 Keer naar de goede kant en strijk plat.
@@ -106,7 +106,6 @@ Als laatste sluit je de binnenzak door de zijkanten dicht te stikken. Doe die do
 
 Drieg de bortzak dicht terwijl je de rest van het jasje maakt.
 
-
 ### Bereid de voorpanden voor
 
 ![Bereid het haardoek voor voor de voorpanden](prepareCanvas.svg)
@@ -125,8 +124,7 @@ Knip het borststuk uit. Leg het langs de rollijn, en drieg op z'n plek op het vo
 
 Drieg nu de voorpanden in haardoek en het borststuk aan je voorpand. Denk eraan dat het haardoek geen naadwaarde heeft.
 
-> Drieg het net voorbij de naadlijn zodat je het uit de weg kan plooien wanneer je deze naden stikt.   
-> Je wil niet dat je haardoek mee in de naad zit.
+> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\ You don't want your canvas to get caught in the seams.
 
 #### Pikeer je revers
 
@@ -142,9 +140,9 @@ Nu gaan we met dunne keperband met de hand langs de rand van de revers naaien, a
 
 Onthoud:
 
- - Het lint langs de breuklijn moet binnen de breuklijn geplaatst worden.
- - Het lint langs de breuklijn moet ongeveer een halve centimeter korter zijn dan de afstand die het moet overbruggen. De lichte spanning op het lint zorgt dat de revers mooi rollen en zich naar je lichaam vormen.
- - Het lint langs de rand van de revers valt binnen de stiklijn
+- Het lint langs de breuklijn moet binnen de breuklijn geplaatst worden.
+- Het lint langs de breuklijn moet ongeveer een halve centimeter korter zijn dan de afstand die het moet overbruggen. De lichte spanning op het lint zorgt dat de revers mooi rollen en zich naar je lichaam vormen.
+- Het lint langs de rand van de revers valt binnen de stiklijn
 
 > ##### Naai niet door je stof
 > 
@@ -160,11 +158,9 @@ Onthoud:
 
 ![Sluit de zijnaden](closeSides.svg)
 
-Leg je voorpanden neer met de goede kant omhoog, en je zijpanden erop met de goede kant omlaag.  
-Leg de voor- en zijnaden gelijk, speld ze eventueel samen en stik.
+Place your front with the good side up, and your side on it with the good side down.\ Align the front/side seams, pin them in place if you feel like it, and sew them togther.
 
-Leg dit neer met de goede kant omhoog, en leg je rugpand hierop met de goede kant naar beneden.  
-Leg de rug- en zijnaden gelijk, speld ze eventueel samen en stik.
+Place this down with the good side up, and place your back on top with the good side down.\ Align the back/side seams, pin them in place if you feel like it, and sew them togther.
 
 > Let op dat het haardoek niet mee vastgestikt wordt.
 

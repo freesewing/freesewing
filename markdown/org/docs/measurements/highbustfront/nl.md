@@ -4,5 +4,4 @@ title: Hoge buste vooraan
 
 De maat van de **hoge bustenfront** is het voorste deel van je **hoge busten** meting: je borstomtrek gemeten onder je armen, boven het grootste deel van je bust.
 
-Om je hoge bustenfront te meten pak de lintmeter rond je borst net onder je armen en meet van de zijkant (naad) langs je borsten naar de andere kant (naad).\
-Je kunt deze misschien niet horizontaal houden (parallel aan de verdieping), maar dat is ok.
+To measure your high bust front, wrap the tape measure around your chest just under your arms and measure from the side (seam) across your breasts to the other side (seam).\ You might not be able to keep it horizontal (parallel to the floor), but that's ok.

@@ -3,7 +3,6 @@ title: Hoe we jouw accountgegevens gebruiken
 order: 30
 ---
 
-
 ##### Welke persoonlijke gegevens bewaren we?
 
 - Je e-mailadres
@@ -27,4 +26,3 @@ order: 30
 <Note>
 Deze gegevens worden opgeslagen voor iedereen met een account op onze website.
 </Note>
-

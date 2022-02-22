@@ -10,9 +10,10 @@ Sin fisuras es menos trabajo y se ve genial.
 
 <Note>
 
-Ya que sólo es posible en una placket *corta-on*, esta opción se ignora si elige una placa separada del orificio del botón.
+As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a seperate buttonhole placket.
 
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_buttonholeplacketstyle_sample.svg "Efecto de esta opción en el patrón")

@@ -1,4 +1,3 @@
-
 <Note>
 
 Le texte est un peu concis pour vous ? J'essaie de rendre les vidéos disponibles comme partie intégrante de la documentation du patron.
@@ -11,7 +10,7 @@ Dans ce cas particulier, il y a beaucoup de matériel vidéo disponible, mais il
 
 <Note>
 
-La plupart des étapes ci-dessous doivent être répétées pour les deux pantalons. 
+La plupart des étapes ci-dessous doivent être répétées pour les deux pantalons.
 
 Cela n'est pas toujours mentionné parce que la vie est courte et l'écriture continue _N'oubliez pas de le faire pour les deux pantalons_ se fatigue très bientôt.
 
@@ -49,7 +48,7 @@ Construisez les deux poches à l'arrière de votre pantalon, y compris le sac de
 
 ###### Poches double coulissantes
 
-Construire une double poche soudée est une technique qui est utilisée pour différents vêtements. 
+Construire une double poche soudée est une technique qui est utilisée pour différents vêtements.
 C'est pourquoi je l'ai branché dans sa propre page de documentation.
 
 Il y a à la fois une documentation écrite et une série vidéo qui vous montre comment le faire, donc même si vous n'avez jamais fait de poches de soudage avant, vous serez bien.
@@ -218,8 +217,8 @@ Prenez votre zip et ouvrez-le (décompresser). Maintenant, retournez-le pour qu'
 
 Alignez votre zip avec la couture de crotch comme indiqué dans l'illustration. Prendre en compte les éléments suivants :
 
- - La fin de votre glissière devrait se poser au sommet de votre pantalon où commencera votre ceinture. Cependant, n'oubliez pas qu'il y a une marge de couture là-bas, ne l'alignez donc pas avec le haut de la pièce avant, mais soustrayez une marge de couture de 1 cm.
- - Alignez le zip avec la couture crochée. Ne vous inquiétez pas le bord de la zip, comme ils viennent en différentes largeurs. Au lieu de cela, assurez-vous que vous pouvez coudre à côté des dents de la glissière dans la couture de la pièce avant.
+- La fin de votre glissière devrait se poser au sommet de votre pantalon où commencera votre ceinture. Cependant, n'oubliez pas qu'il y a une marge de couture là-bas, ne l'alignez donc pas avec le haut de la pièce avant, mais soustrayez une marge de couture de 1 cm.
+- Alignez le zip avec la couture crochée. Ne vous inquiétez pas le bord de la zip, comme ils viennent en différentes largeurs. Au lieu de cela, assurez-vous que vous pouvez coudre à côté des dents de la glissière dans la couture de la pièce avant.
 
 Épingler le zip en place avec quelques broches perpendiculaires à votre zip (comme montré). En d'autres termes, ne pinglez pas le long du zip, mais de l'autre côté du zip.
 
@@ -424,6 +423,7 @@ Sortez vos pantalons du bon côté, et placez soigneusement une jambe sur votre 
 Quand il est beau, appuyez sur les lignes de pli dans votre jambe, devant un dos. Répétez pour l'autre jambe.
 
 Donnez-lui une presse ferme parce que vous voulez que les plis soient toujours là après avoir lavé votre pantalon (pour voir où les appuyer à nouveau).
+
 > Dans l'industrie, les produits chimiques sont appliqués le long de la ligne de pli avant d'être pressés ensemble. Certains tailleurs utilisent une sorte de marteau et d'enclume en bois pour frapper les fibres dans un creux permanent.
 
 Selon votre tissu, votre pli peut durer plus longtemps, mais en fin de compte, vous ne pouvez pas vous attendre à avoir un pli qui peut résister à quelques lavages sans être réappliqué.
@@ -502,11 +502,11 @@ Cela dit, voici ce qu'il faut faire pour faire une boucle de ceinture standard:
 
 Trouvez la partie de motif de la boucle de la ceinture, un petit morceau de tissu rectangulaire. Il devrait y en avoir 8, et ceux-ci deviendront vos boucles de ceinture. Pour chacun d'eux, prenez ces mesures :
 
- - Zig-zag (ou serge) le long des bords les plus longs du rectangle
- - Replier un côté sur la longueur et appuyer sur
- - Plier le dos de l'autre côté le long de la longueur et appuyer sur
- - Coudre à la main le long de la boucle de la ceinture pour que les côtés pliés restent en place, mais les points ne s'affichent pas à l'avant
- - Donnez-lui une dernière bonne pression lorsque vous avez terminé
+- Zig-zag (ou serge) le long des bords les plus longs du rectangle
+- Replier un côté sur la longueur et appuyer sur
+- Plier le dos de l'autre côté le long de la longueur et appuyer sur
+- Coudre à la main le long de la boucle de la ceinture pour que les côtés pliés restent en place, mais les points ne s'affichent pas à l'avant
+- Donnez-lui une dernière bonne pression lorsque vous avez terminé
 
 > Même si la largeur des boucles de votre ceinture n'est pas si importante, il importe de s'assurer qu'elles sont toutes de la même largeur.
 > 
@@ -627,4 +627,5 @@ Avec l'ourlet bien enfoncé, cousez simplement à la main la partie arrière pli
 > Bien qu'il y ait des alternatives à la machine, elles ne sont pas aussi propres (point d'ourlets aveugles) ou probablement pas accessibles aux égouts de la maison (machine à ourlets industriels).
 
 ### Étape 56 : Couper, nettoyer et appuyer sur
+
 Couper tous les fils lâches ou les bâtons qui restent, et donner à votre pantalon une bonne presse finale.

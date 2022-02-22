@@ -1,7 +1,6 @@
-
 ### Étape 1 : Coudre la couture centrale
 
-Placer les deux pièces du tissu destiné à l'extérieur du masque endroit contre endroit, et les coudre ensemble sur le côté courbe, qui sera au milieu de notre masque *endroit contre endroit*.
+Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
 
 ![Coudre la couture centrale](step1.svg)
 
@@ -28,11 +27,11 @@ Comme il s'agit d'une couture courbe, elle ne sera pas complètement plate. Mais
 
 Maintenant nous allons coudre ensemble le tissu intérieur (doublure) et le tissu extérieur, et les liens, en une seule étape.
 
- - Placez votre doublure sur l'envers.
- - Ensuite, placez deux liens aux coins d'un des côtés (à droite dans notre exemple) afin qu'ils sortent juste un peu du masque, le reste des liens étant maintenu à l'intérieur.
- - Maintenant, placez dessus le tissu extérieur, sur l'endroit. Vous devriez maintenant avoir les deux épaisseurs de votre masque l'une sur l'autre *endroit contre endroit* avec deux liens pris en sandwich
- - Épingler les liens et les épaisseurs de tissu ensemble
- - Maintenant, faites la même chose de l'autre côté
+- Placez votre doublure sur l'envers.
+- Ensuite, placez deux liens aux coins d'un des côtés (à droite dans notre exemple) afin qu'ils sortent juste un peu du masque, le reste des liens étant maintenu à l'intérieur.
+- Maintenant, placez dessus le tissu extérieur, sur l'endroit. You should now have both layers of your mask on top of each other with _good sides together_ and two ribbons sandwiched between them
+- Épingler les liens et les épaisseurs de tissu ensemble
+- Maintenant, faites la même chose de l'autre côté
 
 <Tip>
 
@@ -64,7 +63,7 @@ Donc, si le look n'est pas une préoccupation pour vous, n'hésitez pas à la sa
 
 </Note>
 
-Maintenant que le masque est presque terminé, il est temps de le repasser. Au préalable, sur le côté laissé ouvert, replier la marge de couture à l'intérieur, et repasser le pli.
+Maintenant que le masque est presque terminé, il est temps de le repasser. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
 
 ### Étape 6: Fermer l'ouverture et surpiquer les bords
 
@@ -72,7 +71,7 @@ Maintenant que le masque est presque terminé, il est temps de le repasser. Au p
 
 Maintenant, il est temps de fermer notre masque sur le côté laissé ouvert.
 
-Nous n'allons pas seulement fermer l'ouverture, mais aussi surpiquer tout le pourtour du masque pour le stabiliser et maintenir la doublure à l'arrière.
+We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
 
 Assurez-vous que les bords du côté ouvert sont bien repliés à l'intérieur, puis surpiquez tout le pourtour du masque.
 
@@ -81,4 +80,3 @@ Assurez-vous que les bords du côté ouvert sont bien repliés à l'intérieur, 
 Voilà, vous avez fini ! Vous pouvez maintenant porter votre masque.
 
 Ou encore mieux, faites-en une série, pour pouvoir en donner aux autres.
-

@@ -100,8 +100,8 @@ La valeur qu'ils représentent montre à quel point la mesure s'écarte des prop
 
 Ces indicateurs ont un double objectif :
 
--   Aidez vous à repérer des erreurs dans vos mesures (vous savez mieux où se trouvent vos aberrants)
--   Aidez vous à anticiper où notre logiciel pourrait avoir du mal à trouver de bons résultats
+- Aidez vous à repérer des erreurs dans vos mesures (vous savez mieux où se trouvent vos aberrants)
+- Aidez vous à anticiper où notre logiciel pourrait avoir du mal à trouver de bons résultats
 
 <Note>
 

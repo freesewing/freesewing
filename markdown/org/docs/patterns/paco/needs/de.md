@@ -1,4 +1,3 @@
-
 Um Paco zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
@@ -7,5 +6,3 @@ Um Paco zu erstellen, benötigst du Folgendes:
 - Ein wenig Schnittstellen für die Taschenschweißungen (nur erforderlich, wenn Sie sich für die Rückentaschen entschieden haben)
 - Eine Zeichenkette und zwei Ösen (optional)
 - Genug flache elastische Taille und Manschetten
-
-

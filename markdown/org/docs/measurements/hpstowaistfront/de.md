@@ -4,9 +4,9 @@ title: HPS zu Taille vorne
 
 <Note>
 
-###### HPS: Hochpunktschulter
+###### HPS: high point shoulder
 
-Der *Hochpunktschulter* oder *HPS* Punkt wird als Basis für mehrere vertikale Messungen verwendet.
+The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
 Weitere Informationen zum Auffinden dieses Punktes findest du in der [HPS-Dokumentation](/docs/measurements/hps/).
 
 </Note>

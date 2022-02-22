@@ -1,4 +1,3 @@
-
 ##### De tela principal
 
 - Parte **1**: **2 x** _con buenos lados juntos_.

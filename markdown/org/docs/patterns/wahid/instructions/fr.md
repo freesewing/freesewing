@@ -35,6 +35,7 @@ Placez votre parementure avant et votre doublure endroit contre endroit. Épingl
 Les coudre ensemble.
 
 #### Repasser sur la marge de couture ouverte
+
 Repassez pour ouvrir les marges de couture entre la parementure et la doublure.
 
 ### Étape 3 : Fermer toutes les pinces
@@ -48,6 +49,7 @@ Repliez le dos endroit contre endroit et cousez la pince dos.
 > N'oubliez pas de faire la même chose pour la doublure
 
 #### Fermer les pinces devant
+
 Repliez votre devant (avec son entoilage thermocollé) endroit contre endroit, et cousez la pince avant.
 
 ### Étape 4 : Repasser toutes les pinces
@@ -55,9 +57,11 @@ Repliez votre devant (avec son entoilage thermocollé) endroit contre endroit, e
 ![Repasser les pinces](04a.png)
 
 #### Repasser les pinces de devant
+
 Une fois coupées ouvertes, Repassez sur les pinces avant ouvertes.
 
 #### Repasser les pinces dos
+
 Si vous coupez les pinces dos, repassez pour les ouvrir. Si ce n'est pas le cas, repassez vers le côté.
 
 > N'oubliez pas de faire la même chose pour la doublure
@@ -73,6 +77,7 @@ Placez votre fond de poche avec l'endroit vers le haut, et votre passepoil de po
 Alignez le côté droit du fond avec le côté du passepoil qui n'a pas d'entoilage, et les coudre ensemble avec la marge de couture standard.
 
 #### Repasser pour ouvrir la couture
+
 Lorsque vous avez terminé, repassez sur cette couture avec les marges ouvertes.
 
 #### Marquer l'emplacement de votre poche
@@ -137,9 +142,9 @@ Repliez-les en vous assurant de garder votre poche en ouvrant un rectangle propr
 
 #### Retourner le passepoil/rabat vers l'arrière, le plier et le repasser
 
-![Retourner le passepoil/rabat vers l'avant, le plier et le repasser](05i.png) ![Retourner le passepoil/rabat vers l'avant, le plier et le repasser](05j.png)
+![Bring the pocket welt to the back, fold and press](05i.png) ![Bring the pocket welt to the back, fold and press](05j.png)
 
-Retournez le passepoil de poche avec la poche attachée vers le côté arrière.
+Flip the pocket welt with the attached pocket back tot he back side.
 
 Pliez votre passepoil au point où il atteint le sommet de la poche. Le passepoil doit couvrir la totalité de l'ouverture de poche.
 
@@ -248,6 +253,7 @@ Maintenant, pliez votre doublure un peu en retrait du bord de l'emmanchure et é
 Utilisez un point de couture glissée pour coudre à la main la doublure sur le tissu le long de l'emmanchure.
 
 ### Étape 11 : Terminer l'ourlet
+
 Vous vous souvenez que nous n'avons pas fermé l'ouverture laissée à l'étape 9 ? Il est temps de la fermer.
 
 Utilisez un point de couture glissée pour coudre à la main la doublure sur le tissu et ainsi fermer l'ouverture.

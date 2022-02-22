@@ -24,8 +24,6 @@ order: 40
 - We delen nooit persoonlijke modelgegevens
 - We publiceren een open gegevensset van afmetingen, met volledig anonieme gegevens.
 
-
 <Note>
 Deze gegevens worden opgeslagen voor iedereen met een account op onze website die een of meer mensen bevat.
 </Note>
-

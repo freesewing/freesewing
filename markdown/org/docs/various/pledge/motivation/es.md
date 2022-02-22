@@ -15,8 +15,7 @@ No sé si estás familiarizado con la frase **noblesse oblige** , pero esencialm
 
 Estoy privilegiado y, por lo tanto, tengo responsabilidades. Tengo la suerte de haber nacido en Europa Occidental, de tener un buen trabajo y un techo sobre mi cabeza.
 
-¿Puedo utilizar el dinero? Sí, podría.  
-¿Necesito dinero? No lo hago.
+¿Puedo utilizar el dinero? Yes I could.\ Do I need the money? No lo hago.
 
 ##### El valor de su apoyo
 
@@ -28,7 +27,7 @@ Cuando te conviertes en un Patrón FreeSewing te das más que dinero. Para mí, 
 
 ##### El valor de tu dinero
 
-No sólo ** sobre el dinero. Pero eso no significa que el dinero no sea importante. Muy al contrario.
+It is not _just_ about the money. Pero eso no significa que el dinero no sea importante. Muy al contrario.
 
 Aumentar el dinero haciendo algo que me encanta y luego pasarlo a la caridad me permite dormir por la noche.
 
@@ -37,6 +36,7 @@ Podría ser voluntario en una cocina de sopa o enseñar a los niños desfavoreci
 Por eso todo el dinero recaudado a través de FreeSewing va a la caridad. Esto hace que este proyecto no sólo sea divertido de hacer, sino también socialmente responsable. And I need that to convince myself that yes, it's OK to spend all my time doing this, because FreeSewing is a force for good.
 
 ##### La caridad no es sexy
+
 Esta es la parte complicada: la gente da menos una vez que sabe que el dinero va a la caridad. Ojalá no fuera el caso, pero lo es.
 
 Así que presentamos [nuestras opciones de suscripción](/community/join) como lo verías en un sitio con fines de lucro. Parece más intuitivo de esta manera, y también funciona mejor.
@@ -49,13 +49,12 @@ Hay mucha miseria en el mundo. Mientras veo las noticias, a menudo siento mi fe 
 
 Sin embargo, de alguna manera, dondequiera que golpee la crisis, hay una bandera familiar que da esperanza y ayuda. No es la bandera de las Naciones Unidas, ni es la bandera de estrella, ni el azul y el oro de la Unión Europea.
 
-Lo único que siempre me recuerda que la humanidad no ha abandonado completamente a estas personas es ver volar el estandarte de M&eacute;decins Sans Fronti&egrave;res/médicos sin fronteras. A veces precariamente, entre las ruinas de sus hospitales bombardeados, pero siempre allí.
+The one thing that always reminds me that humanity has not completely forsaken these people is to see the banner of Médecins Sans Frontières/Doctors Without Borders fly. A veces precariamente, entre las ruinas de sus hospitales bombardeados, pero siempre allí.
 
 No puedo pensar en un solo símbolo que nos recuerde que no todo está perdido, y todavía hay gente buena por ahí.
 
 También es una de las pocas organizaciones que tiene el alcance global para ir y ayudar allí donde más se necesita. Estamos acostumbrados a que trabajen en regiones afectadas por la enfermedad, pero cuando la pandemia COVID-19 arrancó a nuestros sistemas de salud a astutos, _MSF_ aumentó a la plancha, desplegando sus equipos en Europa Occidental en Estados Unidos, y en cualquier lugar donde la necesidad era más acuta.
 
-Espero que esto explique la elección de M&eacute;decins Sans Fronti&egrave;res/Doctores Sin Fronteras como la caridad de la elección de FreeSewing. Y espero que se unan a nosotros para hacer el mundo un poco mejor.
+I hope that this explains the choice of Médecins Sans Frontières/Doctors Without Borders as FreeSewing's charity of choice. Y espero que se unan a nosotros para hacer el mundo un poco mejor.
 
 Así que estoy feliz de hacer [esta promesa](/docs/various/pledge/).
-

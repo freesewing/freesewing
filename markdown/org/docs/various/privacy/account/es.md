@@ -3,7 +3,6 @@ title: Cómo usamos los datos de tu cuenta
 order: 30
 ---
 
-
 ##### ¿Qué datos personales almacenamos?
 
 - Su dirección de correo electrónico
@@ -27,4 +26,3 @@ order: 30
 <Note>
 Estos datos se almacenan para cualquier persona con una cuenta en nuestro sitio web.
 </Note>
-

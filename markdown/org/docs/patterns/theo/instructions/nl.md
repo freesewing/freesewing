@@ -1,4 +1,3 @@
-
 <Note>
 
 Tekst een beetje te droog voor je? Ik probeer video's beschikbaar te maken als deel van de documentatie.
@@ -11,7 +10,7 @@ In dit geval is er een hoop videomateriaal beschikbaar, maar dit is origineel op
 
 <Note>
 
-Veel van de stappen hieronder worden herhaald voor beide broekspijpen. 
+Veel van de stappen hieronder worden herhaald voor beide broekspijpen.
 
 Dat wordt niet altijd vermeld omdat het leven kort is en het continu schrijven van _Do niet vergeet om dit voor beide broekspijpen_ te doen, snel genoeg wordt.
 
@@ -49,7 +48,7 @@ Maak de dubbele paspelzakken aan de achterkant van je broek, inclusief de broekz
 
 ###### Dubbele paspelzakken
 
-Het maken van een dubbele paspelzak is een techniek die wordt gebruikt zijn verschillende kledingstukken. 
+Het maken van een dubbele paspelzak is een techniek die wordt gebruikt zijn verschillende kledingstukken.
 Daarom heb ik er een aparte pagina met documentatie voor gemaakt.
 
 Er is zowel geschreven documentatie en een reeks video's die je tonen hoe dit werkt, dus zelfs als je nog nooit paspelzakken gemaakt hebt komt het wel in orde.
@@ -218,8 +217,8 @@ Neem je rits en open ze. Keer ze nu om zodat ze met de goede kant naar beneden l
 
 Leg je rits gelijk met de kruisnaad zoals in de illustratie. Hou het volgende in gedachten:
 
- - Het einde van je rits zou aan de bovenrand van je broek moeten zitten, waar je tailleband begint. Denk er wel aan dat daar nog naadwaarde zit, dus leg het einde niet exact samen met de rand, maar 1 cm lager.
- - Leg de rits gelijk met de kruisnaad. Let niet op de rand van de rits, aangezien deze in verschillende breedtes bestaan. Zorg in de plaats dat je naast de tandjes van de rits kan stikken en binnen de naadwaarde van het voorpand blijven.
+- Het einde van je rits zou aan de bovenrand van je broek moeten zitten, waar je tailleband begint. Denk er wel aan dat daar nog naadwaarde zit, dus leg het einde niet exact samen met de rand, maar 1 cm lager.
+- Leg de rits gelijk met de kruisnaad. Let niet op de rand van de rits, aangezien deze in verschillende breedtes bestaan. Zorg in de plaats dat je naast de tandjes van de rits kan stikken en binnen de naadwaarde van het voorpand blijven.
 
 Speld de rits vast met een paar spelden haaks op de rits (zoals getoond). In andere woorden, speld niet langs de rits, maar door de rits.
 
@@ -424,6 +423,7 @@ Keer je broek naar de goede kant, en leg voorzichtig één broekspijp op de stri
 Als dit er goed uit ziet, strijk je de plooien in je broekspijp, aan de voor- en achterkant. Herhaal voor de andere broekspijp.
 
 Strijk het grondig, je wil namelijk dat deze plooien zichtbaar blijven na het wassen (zodat je ze er weer in kan strijken).
+
 > In de kledingindustrie gebruikt men chemische stoffen langs de vouwlijn voor ze gestreken wordt. Sommige kleermakers gebruiken een houten hamer en aambeeld om de vezels in een permanente plooi te timmeren.
 
 Afhankelijk van je stof kan je plooi langer blijven, maar uiteindelijk kan je niet verwachten dat een plooi langer dan een paar wasbeurten meegaat.
@@ -502,11 +502,11 @@ Los daarvan is dit de standaard manier om een riemlusje te maken:
 
 Vind het patroondeel voor de riemlus, een klein rechthoekig stuk stof. Hiervan zou je er 8 moeten hebben, en dit worden je riemlusjes. Voor elke lus volg je deze stappen:
 
- - Zigzag (of lock) langs de lange randen van de rechthoek
- - Plooi één kant terug in de lengte, en strijk
- - Plooi de andere kant terug, in de lengte, en strijk
- - Naai met de hand langs de achterkant van het lusje zodat de geplooide randen op hun plek blijven, maar de steken vooraan niet zichtbaar zijn
- - Strijk nog eens goed als je klaar bent
+- Zigzag (of lock) langs de lange randen van de rechthoek
+- Plooi één kant terug in de lengte, en strijk
+- Plooi de andere kant terug, in de lengte, en strijk
+- Naai met de hand langs de achterkant van het lusje zodat de geplooide randen op hun plek blijven, maar de steken vooraan niet zichtbaar zijn
+- Strijk nog eens goed als je klaar bent
 
 > De exacte breedte van je lusjes is niet zo belangrijk, maar het is wel belangrijk dat ze allemaal even breed zijn.
 > 
@@ -627,4 +627,5 @@ Als de zoom netjes gestreken is, naai het teruggeplooide deel dan vast aan de bi
 > Er bestaan manieren om dit met de naaimachine te dien, maar deze zijn niet zo netjes (blindzoomsteek), of niet toegankelijk voor gewone stervelingen (industriele blindzoommachine).
 
 ### Stap 56: Knip bij, ruim op en strijk
+
 Knip alle losse draadjes of driegdraadjes die overblijven bij, en strijk je broek nog eens grondig.

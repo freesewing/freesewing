@@ -1,7 +1,6 @@
-
 ### Paso 1: Une la costura central
 
-Une la costura curvada en el centro de nuestra mascarilla colocando los *derechos juntos* y cosiéndolos.
+Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
 
 ![Une la costura central](step1.svg)
 
@@ -28,11 +27,11 @@ Como ésta es una costura curvada, no quedará plana. Pero se puede acercar la p
 
 Ahora coseremos la tela interior (forro) a la tela exterior (principal), y uniremos las cintas en un solo paso.
 
- - Pon el forro hacia abajo con el lado derecho hacia arriba.
- - Luego, pon dos cintas en las esquinas de un lado (como en nuestro ejemplo) para que sobresalgan un poco de la mascarilla, pero la cinta se extiende hacia dentro.
- - Ahora pon la tela principal encima con el derecho hacia abajo. Ahora deberías tener ambas capas de tu mascarilla una encima de la otra con *derecho juntos* y dos cintas enrolladas entre ellas
- - Pon alfileres a través de las cintas y las capas de tela para mantenerlas en su lugar
- - Ahora haz lo mismo en el otro lado
+- Pon el forro hacia abajo con el lado derecho hacia arriba.
+- Luego, pon dos cintas en las esquinas de un lado (como en nuestro ejemplo) para que sobresalgan un poco de la mascarilla, pero la cinta se extiende hacia dentro.
+- Ahora pon la tela principal encima con el derecho hacia abajo. You should now have both layers of your mask on top of each other with _good sides together_ and two ribbons sandwiched between them
+- Pon alfileres a través de las cintas y las capas de tela para mantenerlas en su lugar
+- Ahora haz lo mismo en el otro lado
 
 <Tip>
 
@@ -65,7 +64,7 @@ Así que si te da igual, siéntete libre de saltártelo.
 
 </Note>
 
-Ahora que la mascarilla está terminada, es hora de plancharla. Antes de hacerlo, asegúrate de plegar el margen de costura del lado que dejamos abierto hacia adentro, para que lo planchemos como si estuviera cosido.
+Ahora que la mascarilla está terminada, es hora de plancharla. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
 
 ### Paso 6: Cierra el lado abierto de la máscara y cose alrededor del borde
 
@@ -73,7 +72,7 @@ Ahora que la mascarilla está terminada, es hora de plancharla. Antes de hacerlo
 
 Ahora es el momento de cerrar el lado de nuestra mascarilla que dejamos abierto para girarla hacia fuera.
 
-No vamos a cerrar simplemente la apertura, sino que además coseremos el borde alrededor de toda la mascarilla para darle algo de estabilidad adicional, y mantener el forro en la parte trasera.
+We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
 
 Asegúrate de que el lado abierto esté plegado de forma clara en el interior, y luego cose alrededor de toda la máscara.
 
@@ -82,4 +81,3 @@ Asegúrate de que el lado abierto esté plegado de forma clara en el interior, y
 ¡Eso es todo! Ahora puedes ponerte tu máscara.
 
 Aún mejor, haz un montón para que también puedas darles mascarillas a otros.
-

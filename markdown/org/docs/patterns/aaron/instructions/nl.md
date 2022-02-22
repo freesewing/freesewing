@@ -2,13 +2,13 @@
 
 ![Sluit de zij-en schoudernaden](step01.png)
 
-Put front and back on top of each other with *good sides together*. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Put front and back on top of each other with _good sides together_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Stap 2: Werk de zoom af
 
 ![Werk de zoom af](step02.png)
 
-Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. If not, use a *twin needle* or *zig-zag stitch* to keep the seam stretchable.
+Vouw de zoom naar boven en stik door langs de goede kant. Als je een coverlock hebt is dit het moment om hem te gebruiken. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
 
 <Note>
 
@@ -52,8 +52,8 @@ Dit is het enige onderdeel van dit hemdje waar wat oefening voor vereist is. Gee
 
 Het eerste dat we moeten doen is beslissen waar de bies gaat starten en stoppen. Dit zou ik suggereren:
 
--   Voor de armsgaten: aan de zijnaad. Zo zit de naad verstopt onder je arm
--   Voor de halsopening: middenachter aan je nek. Misschien wil je dit markeren met een pin
+- Voor de armsgaten: aan de zijnaad. Zo zit de naad verstopt onder je arm
+- Voor de halsopening: middenachter aan je nek. Misschien wil je dit markeren met een pin
 
 ### Positioneer (het begin van) je bies
 

@@ -20,8 +20,8 @@ Dies gibt Ihnen zwei Teile, die Spiegelbilder voneinander sind.
 
 ##### Was passiert, wenn es keine offensichtliche gute Seite gibt?
 
-Beim Ausschneiden von etwas ohne offensichtliche *gut* Seite (wie Schnittstellen), 
-Wichtig ist, dass du zwei gespiegelte Teile geschnitten hast und nicht zwei identische.
+When cutting out something without an obvious _good_ side (like interfacing),
+what matters is that you cut two mirrored pieces, rather than two identical ones.
 
 </Note>
 

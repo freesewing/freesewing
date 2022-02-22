@@ -35,6 +35,7 @@ Platzieren Sie Ihre Front und Futter mit guten Seiten zusammen. Nähen Sie die K
 Nähen Sie sie zusammen.
 
 #### Öffne Naht drücken
+
 Drücken Sie die Naht zwischen Auflage und Verkleidung.
 
 ### Schritt 3: Alle Darts schließen
@@ -48,6 +49,7 @@ Falte deinen Rücken mit guten Seiten zusammen und nähe den Rückendart.
 > Vergiss nicht, dasselbe für das Futter zu tun
 
 #### Front-Darts schließen
+
 Falte deine Vorderseite (und die Schnittstelle, die mit ihr verbunden ist) mit guten Seiten zusammen, und nähe den Vorderdart.
 
 ### Schritt 4: Drücken Sie alle Darts
@@ -55,9 +57,11 @@ Falte deine Vorderseite (und die Schnittstelle, die mit ihr verbunden ist) mit g
 ![Alle Darts drücken](04a.png)
 
 #### Drag & Drop
+
 Nach dem Ausschnitt öffnen, drücken Sie die Front Darts öffnen.
 
 #### Dart nach hinten drücken
+
 Wenn Sie die Rückendarten öffnen, drücken Sie sie offen. Wenn nicht, drücken Sie sie zur Seite.
 
 > Vergiss nicht, dasselbe für das Futter zu tun
@@ -73,6 +77,7 @@ Legen Sie Ihre Tasche mit der guten Seite nach unten und Ihre Taschenwelt mit de
 Die geradlinige Seite der Tasche mit der Seite der Welt ausrichten, die keine Schnittstelle hat, und nähen sie zusammen mit der Standardnahtzugabe.
 
 #### Drücke Naht offen
+
 Wenn Sie fertig sind, drücken Sie diese Naht öffnen.
 
 #### Markieren, wohin deine Tasche gehen muss
@@ -137,9 +142,9 @@ Falte sie zurück, um sicherzustellen, dass deine Tasche ein sauberes Rechteck �
 
 #### Bring die Taschenwelt auf den Rücken, falten und drücken
 
-![Bring die Taschenwelt nach vorne, falten und drücken](05i.png) ![Bring die Taschenwelt nach vorne, falten und drücken](05j.png)
+![Bring the pocket welt to the back, fold and press](05i.png) ![Bring the pocket welt to the back, fold and press](05j.png)
 
-Drehen Sie die Tasche Welt mit der Attache Tasche zurück tot die er hinten.
+Flip the pocket welt with the attached pocket back tot he back side.
 
 Falte deine Welt an der Stelle, an der sie die Spitze der Tasche erreicht. Die Welt sollte die gesamte Taschenöffnung abdecken.
 
@@ -248,6 +253,7 @@ falten Sie nun das Futter ein bisschen vor dem Rand des Armlochs zurück und pin
 Benutzen Sie einen Hausschuh, um das Futter an den Stoff entlang des Armlochs zu nähen.
 
 ### Schritt 11: Beende den Saum
+
 Denken Sie daran, dass wir in Schritt 9 nicht geschlossen haben? Es ist Zeit, es zu schließen.
 
 Benutzen Sie einen Slipstitch, um das Futter mit der Hand zu nähen und den Saum zu schließen.

@@ -8,9 +8,9 @@ Due to the different styles and configurations of Penelope, we will first go ove
 
 ### Voering
 
-Potlood rokken zijn klein. Dit beperkt je beweging een beetje. Meer nog, wanneer je probeert te gaan zitten, zal de rok zich misschien van je taille proberen te trekken, of, als je een back-up hebt, blijf redelijk hoog op je bum. Door de rok te drinken kan het een stuk makkelijker rond je curves bewegen, waardoor je makkelijker kunt bewegen.
+Potlood rokken zijn klein. Dit beperkt je beweging een beetje. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Door de rok te drinken kan het een stuk makkelijker rond je curves bewegen, waardoor je makkelijker kunt bewegen.
 
-Het toevoegen van de voering kan worden gedaan door een wat korter voor- en achterpand te maken, dat wat extra stof in het midden heeft. De extra stof maakt het makkelijker voor de voering om te bewegen. Eén centimeter voor elk van de voor- en achterpand is genoeg. Je kunt een kuisplooi maken voor- en achterpand, of de extra stof toevoegen waar de nepen zijn. Je hoeft geen nepen in de voering te stikken. Alleen een plooi op de neep positie zal goed zijn.
+Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. Eén centimeter voor elk van de voor- en achterpand is genoeg. Je kunt een kuisplooi maken voor- en achterpand, of de extra stof toevoegen waar de nepen zijn. Je hoeft geen nepen in de voering te stikken. Alleen een plooi op de neep positie zal goed zijn.
 
 ### Tailleband
 
@@ -24,11 +24,11 @@ Traditionally, an invisible zipper is used in a pencil skirt but a regular zippe
 
 ### Vuur
 
-Een split achter is optioneel met Peneloptie. Het stelt je in staat om veel makkelijker te lopen dan als je de rok zonder de rok maakt. De vent heeft ook invloed op waar de rits zich zal bevinden. Als je kiest voor geen split staat de standaard ritslocatie op de zijkant naad, en de achterkant wordt aangevouwen. Met de vent, moet er een naad zitten in het rugpand en de rits zit aan die naad.
+Een split achter is optioneel met Peneloptie. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. Als je kiest voor geen split staat de standaard ritslocatie op de zijkant naad, en de achterkant wordt aangevouwen. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
 
 ### Nepen
 
-Nepen worden gebruikt om het verschil tussen je taille en zitvlak te compenseren. Afhankelijk van dit verschil kunnen er twee nepen zijn, één neep of helemaal geen nepen. Meer nepen zorgen voor een potentieel betere pasvorm. Maar als de hoeveelheid stof die de neep krijgt te klein wordt, zal het aantal nepen afnemen. Anders zou het erg moeilijk zijn om de nepen te stikken, en ze zouden waarschijnlijk nogal onzichtbaar worden. Sommige van het verschil zal worden genomen door de zijnaad en als het verschil klein is, worden er geen nepen aan de voor- en achterkant toegevoegd.
+Nepen worden gebruikt om het verschil tussen je taille en zitvlak te compenseren. Afhankelijk van dit verschil kunnen er twee nepen zijn, één neep of helemaal geen nepen. Meer nepen zorgen voor een potentieel betere pasvorm. Maar als de hoeveelheid stof die de neep krijgt te klein wordt, zal het aantal nepen afnemen. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
 
 ## Constructie
 
@@ -44,15 +44,15 @@ web, both in writen form, and on video. If you do get stuck, you can always reac
 
 ### Step 1: Darts
 
--   Sew all the darts.
--   Press the darts towards the back.
-    -   For the back piece(s), that means you press the darts towards eachother.
-    -   For the front piece, that means you press the darts towards the side seams.
+- Sew all the darts.
+- Press the darts towards the back.
+  - For the back piece(s), that means you press the darts towards eachother.
+  - For the front piece, that means you press the darts towards the side seams.
 
 ### Step 2: The zipper
 
--   With *good sides together*, sew the seam that has the zipper leaving the top open for the zipper.
--   Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
+- With _good sides together_, sew the seam that has the zipper leaving the top open for the zipper.
+- Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
 
 <Note>
 
@@ -62,17 +62,17 @@ If using a different closure, construct it during this step.
 
 ### Step 3: Sew the side seams
 
--   With *good sides together*, sew up both the side seams.
--   With *good sides together*, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
+- With _good sides together_, sew up both the side seams.
+- With _good sides together_, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
 
 ### Step 4: The lining (Optional)
 
 You can skip this step if not making a lining.
 
--   Follow Step 1 - 4 to construct the lining with the following changes:
-    -   Adjust the darts to compensate for the extra 'ease' in the lining pieces.
-    -   Do not include the zipper but leave the opening in the zipper seam.
--   Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
+- Follow Step 1 - 4 to construct the lining with the following changes:
+  - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
+  - Do not include the zipper but leave the opening in the zipper seam.
+- Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
 
 <Note>
 
@@ -88,19 +88,19 @@ If you prefer to insert the zipper with the main and lining fabric as one, you w
 
 ### Step 5: The waistband
 
--   Face lengthwise half of the waistband.
--   Press a fold the waistband in half lengthwise.
--   With *good sides together* sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
--   Press the waistband up and away from the skirt.
--   Press the remaining waistband seam allowances to the inside of the waistband.
--   Fold and press the waistband to the inside along fold line.
--   *Stitch in the ditch* to secure the waistband.
--   *Slipstitch* or *Whipstitch* the gap in the waistband that goes over the zipper seam
--   Construct your preferred choice of closure where the waistband overlaps.
+- Face lengthwise half of the waistband.
+- Press a fold the waistband in half lengthwise.
+- With _good sides together_ sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
+- Press the waistband up and away from the skirt.
+- Press the remaining waistband seam allowances to the inside of the waistband.
+- Fold and press the waistband to the inside along fold line.
+- _Stitch in the ditch_ to secure the waistband.
+- _Slipstitch_ or _Whipstitch_ the gap in the waistband that goes over the zipper seam
+- Construct your preferred choice of closure where the waistband overlaps.
 
 <Note>
 
-Alternatively you can *Edgestitch* the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.\
+Alternatively you can _Edgestitch_ the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.\
 The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
 
 </Note>
@@ -109,11 +109,11 @@ The closure can be a button and buttonhole, snaps or simple dress hooks. It's re
 
 This step is only needed if you have not lined your skirt as the hem and vents would have been taken care of in that step.
 
--   If desired, face the hem and vents.
--   Construct the vents with your preferred method
--   Press under the hem allowances of the skirt.
--   If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
--   Secure the hem in place with your preferred method. For instance you can sew from the outside or *Slipstitch* from the inside. This comes down to how you want the finished product to look.
+- If desired, face the hem and vents.
+- Construct the vents with your preferred method
+- Press under the hem allowances of the skirt.
+- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
+- Secure the hem in place with your preferred method. For instance you can sew from the outside or _Slipstitch_ from the inside. This comes down to how you want the finished product to look.
 
 <Tip>
 
@@ -123,4 +123,4 @@ If the seam allowances are big enough you can sew the hems as narrow hems. This 
 
 ### Step 7: Enjoy!
 
--   Now all that's left to do is to enjoy you new skirt!
+- Now all that's left to do is to enjoy you new skirt!

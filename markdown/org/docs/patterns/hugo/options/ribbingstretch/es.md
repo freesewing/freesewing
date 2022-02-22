@@ -6,10 +6,11 @@ Si usted elige el 90% (por ejemplo) por cada 10 cm de ribbing, sólo borraremos 
 
 <Note>
 
-Si no estás seguro de qué escoger, lo mejor es tomar la costilla que vas a usar ver cuánto de ella 
-necesitas estirar para llegar a 10 cm con un estiramiento *bueno*.
+If you're not sure what to pick, best is to take the ribbing you are going to use see how much of it
+you need to stretch out to get to 10 cm with a _good_ stretch.
 
 </Note>
 
 ## Efecto de esta opción en el patrón
+
 ![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hugo_ribbingstretch_sample.svg "Efecto de esta opción en el patrón")

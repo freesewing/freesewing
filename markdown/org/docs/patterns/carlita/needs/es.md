@@ -1,4 +1,3 @@
-
 To make Carlita, you will need the following:
 
 - Basic sewing supplies

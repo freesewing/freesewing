@@ -100,8 +100,8 @@ El valor que representan muestra hasta qué punto la medición se desvia de las 
 
 Estos indicadores tienen un doble propósito:
 
--   Ayúdanos a detectar errores en tus mediciones (sabes mejor dónde están tus externos)
--   Ayúdanos a anticipar donde nuestro software podría tener problemas para obtener buenos resultados
+- Ayúdanos a detectar errores en tus mediciones (sabes mejor dónde están tus externos)
+- Ayúdanos a anticipar donde nuestro software podría tener problemas para obtener buenos resultados
 
 <Note>
 

@@ -5,16 +5,15 @@
 
 Parametrisch ontwerp verwijst naar het gebruik van parameters of variabelen om het resultaat van een bepaald ontwerp binnen de regels te manipuleren.
 
-In naaipatronen, de *parameters* zijn wat door de gebruiker wordt aangeboden: hun metingen en opties die ze hebben geselecteerd.  
-De *regels* van het ontwerp zijn wat jij als ontwerper maakt.
+In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.\ The _rules_ of the design are what you, the designer, make them.
 
 #### Wat betekent dat voor de ontwerpers?
 
-Bij het tekenen of tekenen van patronen het is gebruikelijk om te beginnen met een *fit model* (of *ress form*). De metingen van het fit model worden gebruikt als input in het oorspronkelijke ontwerp.
+When drafting or designing patterns or garments, it is common practice to start with a _fit model_ (or _dress form_). De metingen van het fit model worden gebruikt als input in het oorspronkelijke ontwerp.
 
 Het aanpassen van het patroon voor een ander model is een vervelende taak, daarom worden patronen omhoog en omlaag beoordeeld om verschillende maten te dekken.
 
-Maar in een parametrisch naaipatroon, aanpassing aan verschillende maten of modellen *werkt gewoon*.
+But in a parametric sewing pattern, adapting to different sizes or models _just works_.
 
 #### Wat kan FreeSewing voor mij doen?
 

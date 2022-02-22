@@ -1,4 +1,4 @@
-Sportscoats sind typischerweise aus einer schwereren Wolle gefertigt, oft mit etwas Textur oder Muster im Web. Im Allgemeinen werden sie in *Busier* Stoffen hergestellt.
+Sportscoats sind typischerweise aus einer schwereren Wolle gefertigt, oft mit etwas Textur oder Muster im Web. In general, they are made in _busier_ fabrics.
 
 Style purists will argue that sportscoats should never be made out of suiting fabric, as a sportscoat is not a suit jacket. Du kannst ihnen sagen, dass sie raus gehen und tun, was du willst, es ist deine Jacke.
 

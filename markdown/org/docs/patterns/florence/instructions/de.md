@@ -1,7 +1,6 @@
-
 ### Schritt 1: Füge die Mittelnaht zusammen
 
-Füge die gekrümmte Naht, die die Mitte unserer Maske bildet, zusammen, indem du die *guten Seiten* zusammenlegst und vernähst.
+Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
 
 ![Füge die Mittelnaht zusammen](step1.svg)
 
@@ -28,11 +27,11 @@ Da es sich um eine gekrümmte Naht handelt, wird sie nicht flach liegen. Aber du
 
 Nun werden wir den inneren (Futter) an den äußeren (Haupt) Stoff nähen und die Bänder in einem Schritt anbringen.
 
- - Lege deinen Futterstoff mit der guten Seite nach oben vor dich hin.
- - Lege dann zwei Bänder an den Ecken einer Seite (in unserem Beispiel rechts) so an, dass sie ein wenig aus der Maske herausragen, das Band aber nach innen verläuft.
- - Lege nun den Hauptstoff mit der guten Seiten nach unten darauf. Du solltest nun beide Schichten deiner Maske übereinander haben mit den *rechten Seiten zusammen* und zwei Bänder, die zwischen ihnen eingeklemmt sind
- - Pinne alle Schichten und Bänder aneinander, um sie an Ort und Stelle zu halten
- - Jetzt mache das Gleiche auf der anderen Seite
+- Lege deinen Futterstoff mit der guten Seite nach oben vor dich hin.
+- Lege dann zwei Bänder an den Ecken einer Seite (in unserem Beispiel rechts) so an, dass sie ein wenig aus der Maske herausragen, das Band aber nach innen verläuft.
+- Lege nun den Hauptstoff mit der guten Seiten nach unten darauf. You should now have both layers of your mask on top of each other with _good sides together_ and two ribbons sandwiched between them
+- Pinne alle Schichten und Bänder aneinander, um sie an Ort und Stelle zu halten
+- Jetzt mache das Gleiche auf der anderen Seite
 
 <Tip>
 
@@ -64,7 +63,7 @@ Wenn dir das also nicht allzu viel ausmacht, kannst du es gerne überspringen.
 
 </Note>
 
-Nun, da die Maske so ist, wie sie sein sollte, ist es an der Zeit, sie zu bügeln. Bevor du dies tust, stelle sicher, dass du die Nahtzugabe der Seite faltest, die wir nach innen offen gelassen haben, so dass wir sie flach drücken, als ob sie genäht wäre.
+Nun, da die Maske so ist, wie sie sein sollte, ist es an der Zeit, sie zu bügeln. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
 
 ### Schritt 6: Schließe die offene Seite der Maske und nähe an der Kante um den Rand herum
 
@@ -72,7 +71,7 @@ Nun, da die Maske so ist, wie sie sein sollte, ist es an der Zeit, sie zu bügel
 
 Jetzt ist es an der Zeit, die Seite unserer Maske zu schließen, die wir offen gelassen haben, um sie von innen nach außen zu drehen.
 
-Wir werden nicht nur die Öffnung verschließen, sondern auch die gesamte Maske mit Kantenstichen versehen, um unserer Maske eine zusätzliche Stabilität zu verleihen und das Futter im hinteren Bereich zu erhalten.
+We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
 
 Achte darauf, dass die offene Seite ordentlich nach innen gefaltet wird, und nähe dann um die gesamte Maske herum.
 
@@ -81,4 +80,3 @@ Achte darauf, dass die offene Seite ordentlich nach innen gefaltet wird, und nä
 Das war's, du bist fertig! Du kannst jetzt deine Maske tragen.
 
 Noch besser: Mache ein paar mehr, damit du anderen auch Masken geben kannst.
-

@@ -1,10 +1,10 @@
 Bruce se compose d'un dos, et de deux côtés, des intestins et des devants.
 
- - **Tissu principal**
-   - Couper **1 dos** au pli
-   - Couper **2 faces**
-   - Couper **2 inserts**
-   - Couper **2 côtés**
+- **Tissu principal**
+  - Couper **1 dos** au pli
+  - Couper **2 faces**
+  - Couper **2 inserts**
+  - Couper **2 côtés**
 
 <Warning>
 
@@ -13,5 +13,3 @@ Bruce se compose d'un dos, et de deux côtés, des intestins et des devants.
 - **devant** : Coupez **deux fois**
 
 </Warning>
-
-
