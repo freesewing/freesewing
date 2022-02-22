@@ -1,4 +1,3 @@
-
 <Note>
 
 Text ein bisschen trocken für dich? Ich versuche, Videos als Teil der Musterdokumentation zur Verfügung zu stellen.
@@ -11,7 +10,7 @@ In diesem speziellen Fall gibt es eine Menge Videomaterial, aber es wurde urspr�
 
 <Note>
 
-Viele der folgenden Schritte sind für beide Hosenbeine zu wiederholen. 
+Viele der folgenden Schritte sind für beide Hosenbeine zu wiederholen.
 
 Das ist nicht immer erwähnt, weil das Leben kurz ist und ständig schreiben _Vergessen Sie nicht, dies für beide Hosenbeine_ wird sehr bald müde.
 
@@ -49,7 +48,7 @@ Bauen Sie die doppelten Taschen auf der Rückseite Ihrer Hose, einschließlich d
 
 ###### Doppelte Taschen
 
-Eine doppelte Tasche zu bauen ist eine Technik, die verwendet wird ist verschiedene Kleidungen. 
+Eine doppelte Tasche zu bauen ist eine Technik, die verwendet wird ist verschiedene Kleidungen.
 Aus diesem Grund habe ich es in eine eigene Dokumentationsseite verzweigt.
 
 Es gibt sowohl schriftliche Dokumentation als auch eine Videoserie, die Ihnen zeigt, wie Sie es machen können so auch wenn Sie noch nie Welttaschen gemacht haben, sind Sie in Ordnung.
@@ -218,8 +217,8 @@ Nehmen Sie Ihre Zip-Datei und öffnen Sie sie (entpacken Sie dies). Nun drehen S
 
 Richten Sie Ihren Reißverschluss mit der Schnitt Naht aus, wie in der Abbildung gezeigt. Folgendes berücksichtigen:
 
- - Das Ende deiner Reißverschluss sollte ganz oben auf deiner Hose sitzen, wo dein Taillenband beginnt. Achten Sie jedoch darauf, daran zu denken, dass es dort Nahtzuschüsse gibt so richten Sie es nicht mit dem oberen Teil des vorderen Stücks aus, sondern ziehen Sie 1cm Nahtzug.
- - Passen Sie die Reißverschluss mit der Schneidnaht an. Haben Sie nichts gegen den Rand der Reißverschluss, da sie in verschiedenen Breiten kommen. Stellen Sie stattdessen sicher, dass Sie neben den Zähnen der Reißverschluss innerhalb der Naht des vorderen Stückes nähen können.
+- Das Ende deiner Reißverschluss sollte ganz oben auf deiner Hose sitzen, wo dein Taillenband beginnt. Achten Sie jedoch darauf, daran zu denken, dass es dort Nahtzuschüsse gibt so richten Sie es nicht mit dem oberen Teil des vorderen Stücks aus, sondern ziehen Sie 1cm Nahtzug.
+- Passen Sie die Reißverschluss mit der Schneidnaht an. Haben Sie nichts gegen den Rand der Reißverschluss, da sie in verschiedenen Breiten kommen. Stellen Sie stattdessen sicher, dass Sie neben den Zähnen der Reißverschluss innerhalb der Naht des vorderen Stückes nähen können.
 
 Pinnen Sie den Reißverschluss mit ein paar senkrechten Pins zu Ihrem Reißverschluss an (wie angezeigt). Mit anderen Worten: Pin nicht entlang der zip, sondern über die zip.
 
@@ -424,6 +423,7 @@ Schalte deine Hose gut aus und legen Sie sorgfältig ein Bein auf Ihrem Bügelbr
 Wenn es gut aussieht, drücken Sie die Falten in Ihrem Bein, vorne eine Rückseite. Wiederholen für das andere Bein.
 
 Geben Sie ihm eine feste Presse, weil Sie wollen, dass die Falten noch da sind, nachdem Sie Ihre Hose waschen (so können Sie sehen, wo Sie sie erneut drücken).
+
 > In der Industrie werden Chemikalien entlang der Schmelzlinie aufgetragen, bevor sie zusammengepresst werden. Einige Schneider verwenden eine Art Holzhammer und Amboss, um die Fasern in einer permanenten Spur zu schlagen.
 
 Abhängig von deinem Stoff kann deine Fräse länger dauern, aber letztendlich Sie können nicht erwarten, eine Spur zu haben, die ein paar Waschen widerstehen kann, ohne erneut angewendet zu werden.
@@ -502,11 +502,11 @@ Dies vorausgeschickt, hier ist, was zu tun ist, um eine Standard-Gurtschleife zu
 
 Finden Sie das Bandschleifenmuster Teil, ein kleines rechteckiges Stück Stoff. Es sollte 8 davon geben, und diese werden zu deinen Gürtelschleifen. Für jeden von ihnen machen Sie folgende Schritte:
 
- - Zig-Zag (oder Serge) entlang der längsten Kanten des Rechtecks
- - Falte eine Seite entlang der Länge zurück und drücke
- - Falte die andere Seite zurück, entlang der Länge und drücke
- - Handnähen entlang der Rückseite der Gurtschleife, so dass die gefalteten Seiten an Ort bleiben aber die Nähte zeigen nicht vorne
- - Gib ihm eine letzte gute Presse, wenn du fertig bist
+- Zig-Zag (oder Serge) entlang der längsten Kanten des Rechtecks
+- Falte eine Seite entlang der Länge zurück und drücke
+- Falte die andere Seite zurück, entlang der Länge und drücke
+- Handnähen entlang der Rückseite der Gurtschleife, so dass die gefalteten Seiten an Ort bleiben aber die Nähte zeigen nicht vorne
+- Gib ihm eine letzte gute Presse, wenn du fertig bist
 
 > Obwohl die Breite Ihrer Bandschleifen nicht so wichtig ist, ist es wichtig, dass sie alle gleich breit sind.
 > 
@@ -627,4 +627,5 @@ Wenn der Saum sauber gedrückt wird, nähen Sie einfach den gefalteten hinteren 
 > Es gibt zwar Maschinenalternativen, aber sie sind nicht so sauber (Blindsticht) oder wahrscheinlich nicht zugänglich für die Hauskanalisation (industrielle Blindhemmmaschine).
 
 ### Schritt 56: Trimmen, bereinigen und drücken
+
 Schneiden Sie die verbleibenden losen Fäden oder Backen und geben Sie Ihren Hosen eine gute Abschlusspresse.

@@ -1,21 +1,21 @@
- - **Tissu principal**
-   - Couper **1 pourboire**
-   - Couper **1 queue**
- - **Tissu de doublure**
-   - Couper **1 pourboire**
-   - Couper **1 queue de doublure**
-   - Couper **1 boucle**
- - **Entoilage**
-   - Couper **1 fond d'interfaçage**
-   - Couper **1 queue interfacée**
+- **Tissu principal**
+  - Couper **1 pourboire**
+  - Couper **1 queue**
+- **Tissu de doublure**
+  - Couper **1 pourboire**
+  - Couper **1 queue de doublure**
+  - Couper **1 boucle**
+- **Entoilage**
+  - Couper **1 fond d'interfaçage**
+  - Couper **1 queue interfacée**
 
 <Warning>
 
-###### Avertissement
+###### Caveat
 
- - Il n'y a pas de marge de couture sur les pièces **interface** et sur la **boucle**
- - Le **lining** **tip** et **tail** ont seulement une marge de couture à la pointe
- - Le **tissu** **tip** et **tail** n'ont qu'une marge de couture à la pointe et au centre
+- There is no seam allowance on the **interfacing** parts and the **loop**
+- The **lining** **tip** and **tail** have only seam allowance at the tip
+- The **fabric** **tip** and **tail** have only seam allowance at the tip and center
 
 </Warning>
 
@@ -34,5 +34,3 @@ Cela étant dit, beaucoup de liens sont coupés, car cela donne le meilleur rés
 Si tout cela semble très confus, puis-je suggérer de lire la page d'aide sur [le droit fil de tissu](/docs/sewing/fabric-grain).
 
 </Tip>
-
-

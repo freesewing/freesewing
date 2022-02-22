@@ -2,9 +2,9 @@
 title: Aan de stofvouw
 ---
 
-Wanneer je een symmetrisch patroondeel hebt kan het dat de instructies zeggen dat je het *aan de stofvouw* moet knippen.
+When you have a pattern piece that is symmetric, the instructions might tell you that it is to be cut _on the fold_.
 
-Dit betekent dat slechts de helft van het patroondeel is afgedrukt, en je moet het uitknippen door je stof aan te vouwen, en leg de lijn die _aan de stofvouw_ is gelijk aan de vouw lijn aangegeven op het patroon.
+This means that only half the pattern piece is printed, and you should cut it out by folding your fabric, and aligning the line that is _on the fold_ with the fold line indicated on the pattern.
 
 De vouwlijn wordt aangegeven met een dubbele pijl zoals in dit voorbeeld:
 
@@ -15,4 +15,3 @@ De vouwlijn wordt aangegeven met een dubbele pijl zoals in dit voorbeeld:
 For an overview of all indicators on your pattern, refer to the [pattern notation guide](/docs/various/notation/)
 
 </Tip>
-

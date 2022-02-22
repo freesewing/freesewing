@@ -13,9 +13,9 @@ title: Cornelius Construction
 - _Baste_ the top and side of the pocket bags to the front seam allowances mathcing notches.
 
 <Note>
-  
+
 Going forward the pockets and fronts will just be referred to as the fronts.
-  
+
 </Note>
 
 ### Step 2: The Fly
@@ -46,8 +46,8 @@ When sewing the left flap down on the outside, you may find it best to make a te
 </Tip>
 
 <Note>
-  
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
+
+If you wish to orientate the fly the other way change the left to right and right to left in the steps above.\
 If wanting something more historical than omit the zipper and make a buttonhole fly instead.
 
 </Note>
@@ -94,7 +94,7 @@ If you are worried about a draft you can create a triangle piece of fabric that 
 
 <Note>
 
-If you are worried about a draft you will need to construct plackets for the leg slits.  
+If you are worried about a draft you will need to construct plackets for the leg slits.
 
 </Note>
 

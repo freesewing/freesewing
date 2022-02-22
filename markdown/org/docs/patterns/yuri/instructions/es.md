@@ -1,12 +1,12 @@
 <Note>
 
-Este patrón se puede coser con o con un overlocker/serger. Para ***Finalizar*** costuras sin un overlocker/serger puedes usar tu método preferido o uno de los siguientes métodos:
+Este patrón se puede coser con o con un overlocker/serger. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
 
-### Terminar Método 1
+##### Finishing Method 1
 
-- Pulsa Abrir las permisos de costura. 
-- Luego por el lado bueno, ***Edgestitch*** 3mm (1/8 pulgadas) de distancia o más cerca de ambos lados de la costura capturando las cuotas de costura debajo.
-- En el lado equivocado recortar las franquicias de costura cerca de la edgestión. 
+- Press open the seam allowances.
+- Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- En el lado equivocado recortar las franquicias de costura cerca de la edgestión.
 
 ##### Método de finalización 2
 
@@ -17,29 +17,29 @@ Este patrón se puede coser con o con un overlocker/serger. Para ***Finalizar***
 
 <Tip>
 
-Si usas un overlocker/serger puedes coser costuras que necesitan fininshing en una sola vía, en lugar de coser la costura convencionalmente y terminarla. 
-  
+Si usas un overlocker/serger puedes coser costuras que necesitan fininshing en una sola vía, en lugar de coser la costura convencionalmente y terminarla.
+
 </Tip>
 
 ## Step 1: Attaching the Gussets
 
 - Con los buenos lados juntos, coser las chispas a los paneles frontales a lo largo de las costuras laterales.
-- ***Finaliza*** costuras.
+- _**Finish**_ seams.
 
 ## Paso 2: Acercar las Costuras del Hombro
 
 - Con buenos lados juntos, coser las piezas delanteras a la espalda a lo largo de las costuras del hombro.
-- ***Finaliza*** costuras.
+- _**Finish**_ seams.
 
 ## Paso 3: Adjunta las Mangas
 
 - Con buenos lados juntos, emparejar el mueble de espalda y el mueble delantero al mueble delantero, coser las mangas al cuerpo.
-- ***Finaliza*** costuras.
+- _**Finish**_ seams.
 
 <Note>
 
 On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Se recomienda hacer esto una doble muñeca al cortar sus piezas para facilitar la diferencia de la parte trasera desde el frente.
-  
+
 </Note>
 
 ## Paso 4: Mangas
@@ -53,15 +53,15 @@ On the pattern the back notch is marked as a cross-notch (see [our pattern notat
 <Note>
 
 Si prefieres cortarte las mangas después de coser las costuras, puedes hacer este paso después del **paso 5**.
-Puedes saltar la sobrefundición si usas una doble aguja, una máquina de cubierta o si deseas dejar el borde crudo cuando te lo hizo. 
+Puedes saltar la sobrefundición si usas una doble aguja, una máquina de cubierta o si deseas dejar el borde crudo cuando te lo hizo.
 Este es sólo un método de hemming, si se prefiere otro camino a seguir.
-  
+
 </Note>
 
 ## Paso 5: Cerrar los lados
 
 - Con buenos lados juntos, emparejar costuras de hombro, empezar en el borde de la manga y coser la manga juntos que coser el chorro y volver juntos.
-- ***Finaliza*** costuras.
+- _**Finish**_ seams.
 - Repetir para la manga restante y la apertura lateral.
 
 ## Paso 6: Hem los bordes raudales
@@ -76,28 +76,28 @@ Siga este paso dos veces, una para el capucha exterior y otra para el capó reve
 - Con buenos lados juntos, coser el largo borde del Centro de Madera hasta el borde exterior de una de las laderas de Madera.
 - Con buenos lados juntos, coser el largo borde restante del Centro de Madera al borde exterior del otro lado de la Madera.
 - Pulse la costura abierta.
-- ***Finaliza*** costuras.
+- _**Finish**_ seams.
 
 <Note>
 
 Se recomienda utilizar **Método de finalización 1** para este paso, independientemente de si está usando un overlocker/serger.
-  
+
 </Note>
 
 ## Paso 8: Únete a la madera interior y exterior
 
 - Con _lados buenos juntos_, enlaza el exterior y Maderas Luminosas juntas que coinciden con las costuras.
 - Dibuja juntos el borde fijado.
-- Recorta la franquicia de costura a 1cm (3/8 pulgadas) si tu franquicia de costura elegida es mayor y no has utilizado ni sobrevendedor/sarga. De lo contrario *no cortes* la costura.
+- Recorta la franquicia de costura a 1cm (3/8 pulgadas) si tu franquicia de costura elegida es mayor y no has utilizado ni sobrevendedor/sarga. Otherwise _do not_ trim the seam.
 - Da la vuelta a los lados de la campana y presiona el borde exterior plano.
 - En el exterior Topstitch a lo largo del borde de la capa, alrededor de 1,5 - 2cm (5/8 - 3/4 pulgadas) del borde. Asegúrese de que el revestimiento se enciende pero no pasa por la costura del borde exterior de la capucha. Esto creará un rin decorativo, con la posibilidad de costura cerrada haciendo el rin un poco poofy.
 - Con bordes crudos juntos, sobrehilan el fondo del capó. Puede hacerlo con un overlocker/serger o un ziz-zag o overcast stitch en una máquina normal.
 
 <Note>
-  
+
 Al pulsar usted quiere asegurarse de que la tela externa se pliega un poco hacia el interior. Esto ayudará a evitar que el revestimiento salga de la capucha cuando se agote la tapa.
 Si no desea tener la lluvia decorativa, puede que todavía quiera enganchar el revestimiento para que no llegue a su punto más alto.
-  
+
 </Note>
 
 ## Paso 9: Preparando una banda ancha para la madera (opcional)
@@ -106,10 +106,10 @@ Si no desea tener la lluvia decorativa, puede que todavía quiera enganchar el r
 - Press under 1cm (3/8 inch) allowance on the short sides.
 
 <Note>
-  
+
 Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
 You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
-  
+
 </Note>
 
 ## Paso 10: Adjunta la Capucha
@@ -124,16 +124,16 @@ You can also make a folded band so the neckband does not have a raw edge but thi
 - Recortar el exceso de unión desde el interior.
 
 <Warning>
-  
+
 Si usas un overlocker/serger para sujetar la capa, es posible que quieras colocar áreas grandes primero con un stitch derecho como la parte delantera como un overlocker/serger puede tener problemas para coser estas partes.
-  
+
 </Warning>
 
 <Note>
-  
+
 If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
-If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch). 
-  
+If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch).
+
 </Note>
 
 ## Paso 11: botones y agujeros
@@ -146,4 +146,3 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 ## Paso 12: Ta-daaa
 
 ¡Disfruta de tu Yuri!
-

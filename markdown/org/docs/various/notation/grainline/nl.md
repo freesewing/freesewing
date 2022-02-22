@@ -2,7 +2,7 @@
 title: Draadrichting en aanduiding van de stofvouw
 ---
 
-Draadrichting - een lijn die de *draadrichting van de stof* aangeeft - ziet er zo uit:
+Grainlines — a line that indicates the _fabric grain_ — look like this:
 
 <Legend part="grainline">
 

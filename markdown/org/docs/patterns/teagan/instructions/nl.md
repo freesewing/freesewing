@@ -1,4 +1,3 @@
-
 ## Stap 1: Sluit de schoudernaden
 
 ![Sluit de schoudernaden](step01.svg)
@@ -87,8 +86,9 @@ Als je een coverlock hebt is dit ook een perfect moment om die te gebruiken.
 
 <Note>
 
-##### Pas op voor de oneven feed
-Als je je bies via je naaimachine, de feed honden trekken de onderste laag (achterkant van je binding) vooruit.
+##### Beware of the uneven feed
+
+As your feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
 
 In een ideale wereld zouden alle lagen gelijkmatig volgen. Maar meestal blijft de bovenste laag (de voorkant van je bies) wat achter. Dit zorgt dat je bies niet helemaal recht rond de randjes geplooid ligt, en lelijke rimpels maakt.
 
@@ -115,7 +115,8 @@ Knip de bies bij aan de binnenkant van je T-shirt, net buiten de naad om ze af t
 
 <Note>
 
-##### Slechts eenmaal vouw vouw om bulk
-te voorkomen wordt niet ravel, dus je kan dit gewoon een keer omplooien en vaststikken, en dan de stof netjes bijknippen.
+##### Fold only once, to avoid bulk
+
+Knitwear doesn’t ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 </Note>

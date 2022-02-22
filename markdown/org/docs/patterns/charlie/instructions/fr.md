@@ -1,4 +1,3 @@
-
 ## Étape 1 : Fermer la dart arrière
 
 La première chose que nous allons faire est de fermer la ceinture sur le panneau arrière.
@@ -53,7 +52,7 @@ Vous devriez surverrouiller/serrer les côtés du sac de poche pour qu'ils ne se
 
 <Tip>
 
-Si vous n'avez pas de _serger_, vous pouvez toujours utiliser un point zig-zag à la place. 
+Si vous n'avez pas de _serger_, vous pouvez toujours utiliser un point zig-zag à la place.
 
 </Tip>
 
@@ -263,7 +262,6 @@ Vous pourriez vouloir baster cette première fois pour vous assurer qu'elle est 
 
 Coudre ensuite l'autre côté de la fermeture à la mouche. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
-
 ### Terminer la couture de croix
 
 Coudre le dernier morceau de la couture de croix jusqu'à l'encoche la plus haute.
@@ -300,10 +298,10 @@ Enfin, coupez votre bande de courroies de longueur en 8 parties égales pour fai
 
 Nous allons diviser nos boucles de ceinture le long de la taille :
 
- - 2 au centre arrière, chacun mis de côté un peu du centre donc il y a un petit écart entre eux.
- - 1 au-dessus du dard arrière de chaque côté
- - 1 de chaque côté plus ou moins où la couture latérale frapperait la taille si elle était droite vers le haut
- - 1 de chaque côté à partir du centre devant. Pas trop près les uns des autres donc il n'y a pas de place pour les boucles de ceinture, mais pas trop loin non plus, donc ça ne semble pas bizarre
+- 2 au centre arrière, chacun mis de côté un peu du centre donc il y a un petit écart entre eux.
+- 1 au-dessus du dard arrière de chaque côté
+- 1 de chaque côté plus ou moins où la couture latérale frapperait la taille si elle était droite vers le haut
+- 1 de chaque côté à partir du centre devant. Pas trop près les uns des autres donc il n'y a pas de place pour les boucles de ceinture, mais pas trop loin non plus, donc ça ne semble pas bizarre
 
 Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 

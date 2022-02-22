@@ -1,4 +1,3 @@
-
 ## Paso 1: Cierra las costuras del hombro
 
 ![Cerrar las costuras del hombro](step01.svg)
@@ -87,8 +86,9 @@ Si usted tiene una máquina de cierre, eso sería perfecto para esta costura.
 
 <Note>
 
-##### Cuidado con el alimento desigual
-Como tu alimento tu vinculación a través de tu máquina de coser, los perros de alimentación tirarán hacia adelante la capa inferior (parte trasera de su enlazamiento).
+##### Beware of the uneven feed
+
+As your feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
 
 En un mundo perfecto, todas las capas seguirán sin problemas. Pero la mayoría de las veces la capa superior (frontal de su enlace) tiende a retrasarse un poco. Esto hace que su unión no se pliega bien alrededor del borde del tejido, sino que haga tortillas feas.
 
@@ -115,7 +115,8 @@ En el interior de tu camiseta, recorta el enrollado justo fuera de tu costura pa
 
 <Note>
 
-##### Doblar solo una vez, para evitar el grueso
-El brillo no se cuelga, así que puede doblar esto una vez y coser la tela, luego recortar la tela.
+##### Fold only once, to avoid bulk
+
+Knitwear doesn’t ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 </Note>

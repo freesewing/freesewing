@@ -1,4 +1,3 @@
-
 Om Paco te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
@@ -7,5 +6,3 @@ Om Paco te maken heb je het volgende nodig:
 - Een beetje tussenvoering voor de paspels (alleen nodig als je voor achterzakken kopen)
 - Een koordje voor de taille en twee metalen ogen (optioneel)
 - Genoeg brede platte elastiek voor je taille en enkelboorden
-
-

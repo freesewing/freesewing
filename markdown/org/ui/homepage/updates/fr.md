@@ -7,8 +7,7 @@
 
 Si vous cherchez notre modèle de masque, suivez ce lien :
 
- - [Patron de masque et instructions](/blog/facemask-frenzy)
-
+- [Patron de masque et instructions](/blog/facemask-frenzy)
 
 ##### Appels des contributeurs
 
@@ -21,4 +20,3 @@ Tous les appels peuvent être rejoints via [Discord](https://discord.freesewing.
 Nous avons déplacé nos salons de discussion de Discord. Notre ancien chat sur Gitter est obsolète.
 
 Vous pouvez nous rejoindre sur https://discord.freesewing.org, ou utiliser cette invitation Discord in-app : https://discord.gg/YDV4GvU
-

@@ -10,13 +10,13 @@ title: Holmes-Bau
 <Tip>
 
 Die Markierung des Threads erlaubt es, die Nahtlinie sowohl auf der rechten als auch auf der falschen Seite zu sehen.
-  
+
 </Tip>
 
 <Note>
 
 Selbst wenn man sich der Krone gegenübersieht, möchte man den Ohrklappen vielleicht nicht zuschauen, wenn man möchte, dass sie beim Anschließen weniger starr sind.
-  
+
 </Note>
 
 <Warning>
@@ -37,7 +37,7 @@ Diese Anweisungen gehen davon aus, dass Sie Ihre Nahtlinien markiert haben. Sie 
 <Note>
 
 Je nach Zulage der Naht können Sie Nähte schneiden wollen, während Sie gehen, um die Menge zu reduzieren.
-  
+
 </Note>
 
 ### Schritt 3: Die Ohrenklappen
@@ -56,13 +56,13 @@ Je nach Zulage der Naht können Sie Nähte schneiden wollen, während Sie gehen,
 <Tip>
 
 If you are uncertain about the length you want for you ties take 1 metre (39") of ribbon and cut in half. Verwenden Sie diese Hälften als die Verbindungen in den obigen Anweisungen. Die Bindungen sind am Ende fertig, so dass Sie die Längen dann anpassen können.
-  
+
 </Tip>
 
 <Note>
 
-Die oben genannten Längen sind Empfehlungen, so fühlen Sie sich frei zu gehen so lange oder so kurz wie Sie wollen mit den Krawatten.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.  
+The lengths above are recommendations so feel free to go as long or as short as you like with the ties.\
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
 
 </Note>
 
@@ -85,7 +85,7 @@ Die Ohrklappen müssen lang genug sein, um über die Spitze zu gehen, so dass si
 
 <Note>
 
-**For both Ear Flaps with Ties and Button Holes**  
+**For both Ear Flaps with Ties and Button Holes**
 
 It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
 
@@ -114,7 +114,7 @@ Seien Sie vorsichtig mit der Hitze eines Eisens, wenn Sie bestimmte Beilagen ver
 
 <Note>
 
-If preferred you can temporarily attach the bill insert another way that does not require hand sewing and putting a needle through the material. Vergewissern Sie sich, dass es Ihren Hutgewebe nicht beschädigt, wenn Sie ihn entfernen oder anwenden. 
+If preferred you can temporarily attach the bill insert another way that does not require hand sewing and putting a needle through the material. Vergewissern Sie sich, dass es Ihren Hutgewebe nicht beschädigt, wenn Sie ihn entfernen oder anwenden.
 
 </Note>
 
@@ -170,7 +170,7 @@ Wieder einmal gibt es zwei Methoden für Endmontage und Verkleidung. Lesen Sie b
 
 <Note>
 
-**For both Assembly and Lining Methods** 
+**For both Assembly and Lining Methods**
 
 You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. It is simply whether you prefer the bills to be underneath or prefer the ear flaps to be underneath like in the instructions.
 
@@ -178,17 +178,17 @@ You can attach the visors on first, just make sure the visors are under the ear 
 
 <Tip>
 
-**For both Assembly and Lining Methods**  
+**For both Assembly and Lining Methods**
 
-If you are having trouble dealing with the curves of the bills, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the bill and clip to it. This should make it easier to bend the bill to shape. Achten Sie einfach darauf, diese Nähte und die Clips beim Anbringen des Futters zu verbergen.
+If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. This should make it easier to bend the bill to shape. Achten Sie einfach darauf, diese Nähte und die Clips beim Anbringen des Futters zu verbergen.
 
 </Tip>
 
 <Warning>
 
-**For both Assembly and Lining Methods**  
+**For both Assembly and Lining Methods**
 
-Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. Sie können feststellen, dass die Platzierung von Visoren und Ohrklappenteilen für andere nummerierte Holmes unterschiedlich ist. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Assembly and Lining instructions are written with a 6 panelled Holmes in mind. Sie können feststellen, dass die Platzierung von Visoren und Ohrklappenteilen für andere nummerierte Holmes unterschiedlich ist. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
 
 </Warning>
 
@@ -212,7 +212,7 @@ Wenn Sie Ihre Verbindungen beim Bau der Ohrklappen nicht abgeschnitten haben, is
 <Note>
 
 Um zu bestimmen, wie man die Bindungen falten will, kann es einfacher sein, zuerst die Ohrklappen zu befestigen. Im Allgemeinen möchten Sie, dass die Falte auf der Unterseite der Bindungen steht, aber wie immer ist es die persönliche Präferenz.
-  
+
 </Note>
 
 ### Schritt 7: Button
@@ -225,7 +225,7 @@ Wenn du nicht die Buttonhole Ohrenklappen machst, musst du keinen Knopf einnähe
 
 <Note>
 
-Sicherlich optional, können Sie feststellen, dass ein Knopf fehlt, um das Aussehen zu beenden. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently. 
+Sicherlich optional, können Sie feststellen, dass ein Knopf fehlt, um das Aussehen zu beenden. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently.
 Während ein überdachter Button empfohlen wird, kannst du jeden gewünschten Button verwenden, kannst du es probieren!
 
 </Note>
@@ -236,8 +236,8 @@ Das war's! Sie sind fertig. Genießen Sie jetzt die Welt in Ihrem wunderbaren ne
 
 <Note>
 
-Denken Sie daran, dass diese Anweisungen nur Richtlinien sind, also machen Sie sich keine Sorgen, wenn Sie den Hut anders konstruieren möchten.  
-Die Diagramme müssen noch für dieses Muster erstellt werden, also in der Zwischenzeit, wenn Sie eine visuelle Hilfe benötigen schaue dir das YouTube-Video an, das dieses Muster inspiriert hat:
+Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.\
+The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
 
 </Note>
 

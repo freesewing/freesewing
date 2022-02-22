@@ -1,4 +1,3 @@
-
 ## Paso 1: Cierra el dardo trasero
 
 Lo primero que vamos a hacer es cerrar la densa cintura en el panel trasero.
@@ -53,7 +52,7 @@ Deberías overlock/serge los lados de la bolsa para que no se cuelgan.
 
 <Tip>
 
-Si no tienes un _serger_ siempre puedes usar un zig-zag en su lugar. 
+Si no tienes un _serger_ siempre puedes usar un zig-zag en su lugar.
 
 </Tip>
 
@@ -264,7 +263,6 @@ Quizás quieras bastar esto primero para asegurarte de que es muy paralelo al zi
 
 Ahora coser el otro lado del cipper a la mosca. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
 
-
 ### Termina la costura cruzada
 
 Difunde el último trozo de la costura de la cruz hasta la altura más alta de la mosca.
@@ -301,10 +299,10 @@ Por último, cortar los bucles de la correa de longitud en 8 partes iguales para
 
 Vamos a dividir nuestros bucles de cinturón a lo largo de la cintura:
 
- - 2 en el centro de vuelta, cada uno de ellos apartado un poco del centro, así que hay un pequeño hueco entre ellos.
- - 1 sobre el dardo trasero de cada lado
- - 1 en cada lado más o menos donde la costura lateral golpearía la cintura si subiera recto
- - 1 en cada lado desde el frente central. No está demasiado cerca unos de otros, así que no hay espacio para los cubos de cinta, pero tampoco demasiado lejos, por lo que no parece extraño
+- 2 en el centro de vuelta, cada uno de ellos apartado un poco del centro, así que hay un pequeño hueco entre ellos.
+- 1 sobre el dardo trasero de cada lado
+- 1 en cada lado más o menos donde la costura lateral golpearía la cintura si subiera recto
+- 1 en cada lado desde el frente central. No está demasiado cerca unos de otros, así que no hay espacio para los cubos de cinta, pero tampoco demasiado lejos, por lo que no parece extraño
 
 Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 

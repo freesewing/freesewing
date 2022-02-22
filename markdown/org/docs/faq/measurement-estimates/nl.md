@@ -100,8 +100,8 @@ De waarde die ze vertegenwoordigen toont hoe ver de meting afwijkt van de verhou
 
 Deze indicatoren dienen een tweeledig doel:
 
--   Help je fouten te vinden in je metingen (je weet het beste waar je buitenstaanders zijn)
--   Help je te anticiperen op waar onze software moeite zou kunnen hebben met goede resultaten
+- Help je fouten te vinden in je metingen (je weet het beste waar je buitenstaanders zijn)
+- Help je te anticiperen op waar onze software moeite zou kunnen hebben met goede resultaten
 
 <Note>
 

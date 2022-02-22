@@ -1,4 +1,4 @@
-Bepaalt de lengte van het *slabbet* deel van je schort.
+Bepaalt de lengte van het _slabbet_ deel van je schort.
 
 ## Effect van deze optie op het patroon
 

@@ -24,7 +24,6 @@ Nähen Sie den Vorderdart und achten Sie darauf, dass der Dart Stopp am richtige
 
 Sobald die Vorderdarte geschlossen sind, schneiden Sie den Dart auf der Rückseite. Man kann es nicht bis zur Spitze schneiden, aber das ist in Ordnung. Drücken Sie die Dilts öffnen, wo sie geschnitten werden, und drücken Sie den Rest zur Seite. Achten Sie darauf, nur von der Rückseite zu drücken. Drücken von der Vorderseite wird wahrscheinlich dein Gewebe markieren.
 
-
 ### Baue die Brusttasche
 
 ![Verwundbare Schnittstelle auf die Rückseite der Brusttasche anwenden](basteChestPocket.svg)
@@ -54,6 +53,7 @@ Markieren Sie auf der obersten Linie Ihrer Basiswelttasche 0,5 cm nach innen von
 Falten Sie die Welt mit den guten Seiten zusammen und schließen Sie die Seiten (nähen Sie die Seitennaht).
 
 #### Nahtzugabe, drehen und drücken
+
 Schneiden Sie die Nahtzuschläge an den Seiten und vor allem die Nahtzuweisung in die Ecke zu begrenzen, um Schüttgut zu vermeiden.
 
 Drehen Sie sich aus, damit die gute Seite draußen ist und drücken Sie.
@@ -106,7 +106,6 @@ Schließen Sie schließlich die Tasche durch Nähen der Seiten. Tun Sie dies, in
 
 Füllen Sie die Brusttasche geschlossen, während wir die Jacke konturieren.
 
-
 ### Die Fronten vorbereiten
 
 ![Leinwand für die Fronten vorbereiten](prepareCanvas.svg)
@@ -125,7 +124,7 @@ Zerschneiden Sie das Stück der Brust Leine. Entlang der Rollenlinie ausrichten 
 
 Nimm nun die Frontseite und das Bruststück auf deine Vorderseite. Beachten Sie, dass die Leinwand keine Naht hat.
 
-> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later. You don't want your canvas to get caught in the seams.
+> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\ You don't want your canvas to get caught in the seams.
 
 #### Halten Sie Ihre Lapels fest
 
@@ -141,9 +140,9 @@ Jetzt werden wir das Klebeband an den Rändern der Vorderseite und an der Rollen
 
 Denken Sie daran, dass:
 
- - Das Band entlang der Rollenlinie sollte innerhalb der Rollenlinie platziert werden.
- - Das Band entlang der Rollenlinie sollte etwa einen halben Zentimeter kürzer sein als die Distanz, die es umspannt. Die leichte Spannung, die dadurch entsteht, hilft der Lupe angenehm zu rollen und die Kontur zu Ihrem Körper.
- - Das Klebeband am Rand der Lupe sollte innerhalb der Nahtlinie platziert werden
+- Das Band entlang der Rollenlinie sollte innerhalb der Rollenlinie platziert werden.
+- Das Band entlang der Rollenlinie sollte etwa einen halben Zentimeter kürzer sein als die Distanz, die es umspannt. Die leichte Spannung, die dadurch entsteht, hilft der Lupe angenehm zu rollen und die Kontur zu Ihrem Körper.
+- Das Klebeband am Rand der Lupe sollte innerhalb der Nahtlinie platziert werden
 
 > ##### Nicht durch deinen Stoff nähen
 > 
@@ -159,9 +158,9 @@ Denken Sie daran, dass:
 
 ![Seiten schließen](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down. Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Place your front with the good side up, and your side on it with the good side down.\ Align the front/side seams, pin them in place if you feel like it, and sew them togther.
 
-Place this down with the good side up, and place your back on top with the good side down. Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Place this down with the good side up, and place your back on top with the good side down.\ Align the back/side seams, pin them in place if you feel like it, and sew them togther.
 
 > Vergewissern Sie sich, dass die Leinwand nicht in der Naht gefangen wird.
 

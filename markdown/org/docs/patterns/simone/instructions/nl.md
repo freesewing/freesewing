@@ -6,6 +6,6 @@
 
 <Note>
 
-Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](docs/patterns/simon/instructions) to finish your Simone :) 
+Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](docs/patterns/simon/instructions) to finish your Simone :)
 
 </Note>

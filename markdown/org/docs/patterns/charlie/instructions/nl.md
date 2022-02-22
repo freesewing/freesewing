@@ -1,4 +1,3 @@
-
 ## Stap 1: Sluit de neep op de rug
 
 Eerst gaan we de neep van de taille op de achterkant sluiten.
@@ -53,7 +52,7 @@ Je zou de zijkanten van het zakdeel moeten oververgrendelen/verstoppen zodat ze 
 
 <Tip>
 
-Als je geen _serger_ hebt, kun je in plaats daarvan een zigzagsteek gebruiken. 
+Als je geen _serger_ hebt, kun je in plaats daarvan een zigzagsteek gebruiken.
 
 </Tip>
 
@@ -263,7 +262,6 @@ Misschien wil je dit eerst driegen om ervoor te zorgen dat het aardig parallel i
 
 Stik nu de andere kant van de rits aan het gulpdeel. Zorg ervoor dat het goed uitgelijkt zodat wanneer de broek wordt gesloten, de rits verborgen is.
 
-
 ### Werk de kruisnaad af
 
 Stik het laatste stukje van de kruisnaad tot aan de hoogste gulpbok.
@@ -300,10 +298,10 @@ Knip ten slotte de lengte van de riemlusjes in 8 gelijke delen om 8 riemlusjes t
 
 We gaan onze riemlusjes verdelen langs de taille:
 
- - 2 aan de middenrug, elke zet een beetje apart van het midden, dus er is een kleine opening tussen hen.
- - 1 boven de achterste neep op elke zijde
- - 1 aan elke kant min of meer waar de zijnaad de taille zou raken als het recht omhoog zou gaan
- - 1 op elke kant van het middenvoorpand. Niet te dicht bij elkaar dus er is geen plaats voor gordels, maar ook niet te ver dus het ziet er niet raar uit
+- 2 aan de middenrug, elke zet een beetje apart van het midden, dus er is een kleine opening tussen hen.
+- 1 boven de achterste neep op elke zijde
+- 1 aan elke kant min of meer waar de zijnaad de taille zou raken als het recht omhoog zou gaan
+- 1 op elke kant van het middenvoorpand. Niet te dicht bij elkaar dus er is geen plaats voor gordels, maar ook niet te ver dus het ziet er niet raar uit
 
 Place the belt loop at these places with their good side down (against the good side of the fabric of your trousers, and the top aligned with the waist) Sew this down in the seam allowance of the waist, making sure that they are perpendicular to the waistband.
 

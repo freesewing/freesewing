@@ -35,6 +35,7 @@ Leg je beleg voorpand en voering met de goede kanten op elkaar. Speld de randen 
 Stik.
 
 #### Strijk de naadwaarde open
+
 Strijk de naadwaarde tussen beleg en voering open.
 
 ### Stap 3: Sluit alle nepen
@@ -48,6 +49,7 @@ Plooi je rugpand met de goede kanten op elkaar, en stik de achterste neep.
 > Vergeet niet hetzelfde te doen voor de voering
 
 #### Sluit de voorste nepen
+
 Plooi je voorpand (en de tussenvoering die eraan kleeft) met de goede kanten op elkaar, en stik de voorste neep.
 
 ### Stap 4: Strijk alle nepen
@@ -55,9 +57,11 @@ Plooi je voorpand (en de tussenvoering die eraan kleeft) met de goede kanten op 
 ![Strijk alle nepen](04a.png)
 
 #### Strijk de voorste nepen
+
 Knip de nepen open en strijk ze dan open.
 
 #### Strijk de achterste nepen
+
 Als je de rugnepen openknipt, strijk ze dan open. Indien je ze niet openknipt, strijk ze dan opzij.
 
 > Vergeet niet hetzelfde te doen voor de voering
@@ -73,6 +77,7 @@ Leg je zakdeel neer met de goede kant omhoog, en je paspel bovenop met de goede 
 Leg de rechte kant van het zakdeel gelijk met de kant van de paspel die geen tussenvoering heeft, en stik ze samen met de standaard naadwaarde.
 
 #### Strijk de naad open
+
 Strijk deze naad open wanneer je klaar bent.
 
 #### Markeer waar je zak moet komen
@@ -137,9 +142,9 @@ Plooi ze terug, en let op dat je zakopening een mooie rechthoek blijft, en strij
 
 #### Keer de paspel naar de achterkant, plooi en strijk
 
-![Keer de paspel naar de achterkant, plooi en strijk](05i.png) ![Keer de paspel naar de achterkant, plooi en strijk](05j.png)
+![Bring the pocket welt to the back, fold and press](05i.png) ![Bring the pocket welt to the back, fold and press](05j.png)
 
-Keer de paspel met het bevestigde zakdeel naar de achterkant van de stof.
+Flip the pocket welt with the attached pocket back tot he back side.
 
 Plooi je paspel om aan het punt waar hij de bovenrand van de zakopening raakt. De paspel zou de hele zakopening moeten bedekken.
 
@@ -248,6 +253,7 @@ Plooi nu de voering tot net voor de rand van het armsgat en speld ze vast.
 Gebruik een blinde steek om de voering rond het hele armsgat aan de buitenstof te naaien.
 
 ### Stap 11: Werk de zoom af
+
 Weet je nog, die opening uit stap 9? Tijd om die dicht te maken.
 
 Gebruik een blinde steek om de voering met de hand aan de buitenstof te naaien en de zoom te sluiten.

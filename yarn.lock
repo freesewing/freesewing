@@ -933,15 +933,15 @@
     "@babel/plugin-transform-react-jsx" "^7.16.7"
 
 "@babel/plugin-transform-react-jsx@^7.14.9", "@babel/plugin-transform-react-jsx@^7.16.7":
-  version "7.16.7"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.16.7.tgz#86a6a220552afd0e4e1f0388a68a372be7add0d4"
-  integrity sha512-8D16ye66fxiE8m890w0BpPpngG9o9OVBBy0gH2E+2AR7qMR2ZpTYJEqLxAsoroenMId0p/wMW+Blc0meDgu0Ag==
+  version "7.17.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.17.3.tgz#eac1565da176ccb1a715dae0b4609858808008c1"
+  integrity sha512-9tjBm4O07f7mzKSIlEmPdiE6ub7kfIe6Cd+w+oQebpATfTQMAgW+YOuWxogbKVTulA+MEO7byMeIUtQ1z+z+ZQ==
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.16.7"
     "@babel/helper-module-imports" "^7.16.7"
     "@babel/helper-plugin-utils" "^7.16.7"
     "@babel/plugin-syntax-jsx" "^7.16.7"
-    "@babel/types" "^7.16.7"
+    "@babel/types" "^7.17.0"
 
 "@babel/plugin-transform-react-pure-annotations@^7.16.7":
   version "7.16.7"
@@ -3416,10 +3416,10 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.0.tgz#73713399399b34aa5a01771fb73272b55b22c314"
   integrity sha512-nrIgY6t17FQ9xxwH3jj0a6EOiQ/WDHUos35Hghtr+SWN/ntHIQ7UpuvSi0vaLzZVHQWaDupKI+liO5vANcDeTQ==
 
-"@next/eslint-plugin-next@12.0.10":
-  version "12.0.10"
-  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-12.0.10.tgz#521ab5d05a89e818528668df8a3edb8f9df2c547"
-  integrity sha512-PbGRnV5HGSfRGLjf8uTh1MaWgLwnjKjWiGVjK752ifITJbZ28/5AmLAFT2shDYeux8BHgpgVll5QXu7GN3YLFw==
+"@next/eslint-plugin-next@12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-12.1.0.tgz#32586a11378b3ffa5a93ac40a3c44ad99d70e95a"
+  integrity sha512-WFiyvSM2G5cQmh32t/SiQuJ+I2O+FHVlK/RFw5b1565O2kEM/36EXncjt88Pa+X5oSc+1SS+tWxowWJd1lqI+g==
   dependencies:
     glob "7.1.7"
 
@@ -9526,9 +9526,9 @@ d@1, d@^1.0.1:
     type "^1.0.1"
 
 daisyui@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.0.6.tgz#fc509180b4cbaacf834b2da7c369586fe31331f4"
-  integrity sha512-Ub5hdGXEvyOEW5RfSEZjSEOGYZhxZ7+EVS9EjkYq9cV4qxe0l6eSl92ira5b0MrL5hR16Ntx981Hg7qbYMnljg==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.1.0.tgz#89f6318e67227bfe5d30664e548e23048b2d7cd3"
+  integrity sha512-DaIx6MdeVj6gzKXOwVAVm10JRsrGRM9RR8n5jcpCLHyhXnvOiBtL+bk/OIzOoRDDlnxdRWqdUaVwOzS90ABE0g==
   dependencies:
     color "^4.2"
     tailwindcss "^3.0"
@@ -10878,12 +10878,12 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-next@12.0.10:
-  version "12.0.10"
-  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-12.0.10.tgz#f201f8f4514018f7ef46f454f56b81cf5c790379"
-  integrity sha512-l1er6mwSo1bltjLwmd71p5BdT6k/NQxV1n4lKZI6xt3MDMrq7ChUBr+EecxOry8GC/rCRUtPpH8Ygs0BJc5YLg==
+eslint-config-next@12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-12.1.0.tgz#8ace680dc5207e6ab6c915f3989adec122f582e7"
+  integrity sha512-tBhuUgoDITcdcM7xFvensi9I5WTI4dnvH4ETGRg1U8ZKpXrZsWQFdOKIDzR3RLP5HR3xXrLviaMM4c3zVoE/pA==
   dependencies:
-    "@next/eslint-plugin-next" "12.0.10"
+    "@next/eslint-plugin-next" "12.1.0"
     "@rushstack/eslint-patch" "^1.0.8"
     "@typescript-eslint/parser" "^5.0.0"
     eslint-import-resolver-node "^0.3.4"
@@ -11530,9 +11530,9 @@ express-logging@^1.1.1:
     on-headers "^1.0.0"
 
 express-rate-limit@^6.2.0:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-6.2.1.tgz#4a7619634fb24417ae723ad2ac3707b38e2e1c64"
-  integrity sha512-22ovnpEiKR5iAMXDOQ7A6aOvb078JLvoHGlyrrWBl3PeJ34coyakaviPelj4Nc8d+yDoVIWYmaUNP5aYT4ICDQ==
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/express-rate-limit/-/express-rate-limit-6.3.0.tgz#253387ce4d36c9c2cc77c7c676068deb36cc0821"
+  integrity sha512-932Io1VGKjM3ppi7xW9sb1J5nVkEJSUiOtHw2oE+JyHks1e+AXuOBSXbJKM0mcXwEnW1TibJibQ455Ow1YFjfg==
 
 express@4.17.2, express@^4.17.1:
   version "4.17.2"
@@ -26546,9 +26546,9 @@ tiny-warning@^1.0.0, tiny-warning@^1.0.2, tiny-warning@^1.0.3:
   integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
 tlds@^1.221.1:
-  version "1.229.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.229.0.tgz#fd02585a234669d47a7f1752c87f100a34feba60"
-  integrity sha512-yZCodKInN+BPGUyYgKHsodJ2FVWRjW/fYx6rKCAT/e24BBJd8FcxWgKD0aBgk+7uQ/88h/fmRTd4Nvzxf3313A==
+  version "1.230.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.230.0.tgz#9c836528c4062e565b3b58bfaef83d99e09c113d"
+  integrity sha512-QFuY6JBWZt2bZXlapjqsojul5dv9xfo7Uc8wTUlctJOuF+BS/ICni2f4x7MFiT7muUVmcKC1LvGnU4GWhYO0PQ==
 
 tmp-promise@^3.0.2:
   version "3.0.3"
