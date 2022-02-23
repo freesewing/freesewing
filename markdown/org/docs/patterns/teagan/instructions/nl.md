@@ -14,7 +14,7 @@ Optioneel: In een draaiknop kun je ervoor kiezen om de schoudernaden te versterk
 ![Zet de mouwen in](step02.svg)
 
 - Leg je aan elkaar bevestigde voor- en achterpand neer met de goede kant naar boven.
-- Identificeer de voor- en achterkanten van elke mouw. (Dit is hoe je de linker mouw van rechts scheidt.) Op het patroondeel van je papier staat de voorkant van de mouw aan de linkerkant.
+- Identificeer de voor- en achterkanten van elke mouw. (Dit is hoe je de linker mouw van rechts scheidt.) On your paper pattern piece, the front side of the sleeve is to the right.
 - Leg een mouw bovenop de voor- en achterkant, met de goede kant naar beneden.
 - Leg de bovenkant van de mouwkop gelijk met de schoudernaad. Zorg dat de voor- en achterkant van de mouw gelijk staan met de voor- en achterpanden van je shirt.
 - Speld de mouw op z'n plaats langs het hele armsgat. Er is een beetje extra stof in de mouwkop, wat betekent dat de mouwkop iets langer is dan het armsgat. Verbeter het bovenste deel van de mouwkop tijdens het spelden.
