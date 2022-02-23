@@ -14,7 +14,7 @@ Optionnel: Dans un tricot drapier, vous pouvez choisir de renforcer les coutures
 ![Mettre dans les manches](step02.svg)
 
 - Placez le devant et le dos maintenant fixés avec le bon côté vers le haut.
-- Identifiez les côtés avant et arrière de chacune de vos manches. (C'est ainsi que vous séparez la manche gauche de la droite.) Sur votre patron de papier, le côté avant de la manche se trouve à gauche.
+- Identifiez les côtés avant et arrière de chacune de vos manches. (C'est ainsi que vous séparez la manche gauche de la droite.) On your paper pattern piece, the front side of the sleeve is to the right.
 - Placez une manche sur le devant et le dos, avec le bon côté vers le bas.
 - Alignez le haut de la tête de manche avec la couture de l'épaule. Assurez-vous que l'avant et l'arrière de la manche sont alignés avec les pièces avant et arrière de votre chemise.
 - Épingler la manche en place le long de toute l'armurière. Il y a un peu de tête de manche facile, ce qui signifie que la tête de manche est un peu plus longue que la manche. Facilité dans la partie supérieure de la tête de manche en épinglant.
