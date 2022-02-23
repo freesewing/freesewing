@@ -35,7 +35,7 @@ export default function (part) {
   // Complete pattern?
   if (complete) {
     points.title = points.gridAnchor.clone()
-    macro('title', { at: points.title, nr: 2, title: 'back' })
+    macro('title', { at: points.title, nr: 2, title: 'sleeve' })
     macro('grainline', {
       from: new Point(points.top.x, points.hemLeft.y),
       to: points.top,
