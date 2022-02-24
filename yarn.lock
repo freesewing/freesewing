@@ -18711,9 +18711,9 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
 netlify-cli@^9.4.0:
-  version "9.7.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-9.7.0.tgz#fc3dab945d0fc9d66796c67499adeb990f45fd7b"
-  integrity sha512-vbL3y8NuFWTwh+BQ3fsMW8t1zLw3lMpw+SN4SuElhedNyTnu7d7sFFlsJFz98QnHF4a3M/gYECpatMT0f5m7GA==
+  version "9.8.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-9.8.0.tgz#18f291b8684b6378a77ae0a9bf96e49759264971"
+  integrity sha512-maiuihwWvV6BZ97IujFrDqdnViOsj7MbsV13cotDOn7e4v2Xhx9PibvZP/Fo5d6Uw8X5Iarst33RY6OSTrg0BQ==
   dependencies:
     "@netlify/build" "^26.3.5"
     "@netlify/config" "^17.0.12"
@@ -21873,7 +21873,7 @@ raw-body@2.3.3:
     iconv-lite "0.4.23"
     unpipe "1.0.0"
 
-raw-body@2.4.2, raw-body@^2.2.0, raw-body@^2.4.1:
+raw-body@2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.4.2.tgz#baf3e9c21eebced59dd6533ac872b71f7b61cb32"
   integrity sha512-RPMAFUJP19WIet/99ngh6Iv8fzAbqum4Li7AD6DtGaW2RpMB/11xDoalPiJMTbu6I3hkbMVkATvZrqb9EEqeeQ==
@@ -21883,7 +21883,7 @@ raw-body@2.4.2, raw-body@^2.2.0, raw-body@^2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-raw-body@2.4.3:
+raw-body@2.4.3, raw-body@^2.2.0, raw-body@^2.4.1:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.4.3.tgz#8f80305d11c2a0a545c2d9d89d7a0286fcead43c"
   integrity sha512-UlTNLIcu0uzb4D2f4WltY6cVjLi+/jEN4lgEUj3E04tpMDpUlkBo/eSn6zou9hum2VMNpCCUone0O0WeJim07g==
