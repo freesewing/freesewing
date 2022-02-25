@@ -58,7 +58,7 @@ export default function Pattern(config = { options: {} }) {
   this.width = 0 // Will be set after render
   this.height = 0 // Will be set after render
   this.is = '' // Will be set when drafting/sampling
-  //this.debug = true // Will be set when applying settings
+  this.autoLayout = {} // Will hold auto-generated layout
 
   this.store = new Store(this.raise) // Store for sharing data across parts
   this.parts = {} // Parts container
@@ -508,8 +508,13 @@ Pattern.prototype.pack = function () {
   if (this.settings.layout === true) {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
+      this.autoLayout[bin.id] = { move: {} }
       let part = this.parts[bin.id]
-      if (bin.x !== 0 || bin.y !== 0) part.attr('transform', `translate(${bin.x}, ${bin.y})`)
+      if (bin.x !== 0 || bin.y !== 0) {
+        part.attr('transform', `translate(${bin.x}, ${bin.y})`)
+        this.autoLayout[bin.id].move = { x: bin.x, y: bin.y }
+      }
+      else this.autoLayout[bin.id].move = { x: 0, y: 0 }
     }
     this.width = size.width
     this.height = size.height
@@ -703,6 +708,7 @@ Pattern.prototype.getRenderProps = function () {
   let props = { svg }
   props.width = this.width
   props.height = this.height
+  props.autoLayout = this.autoLayout
   props.settings = this.settings
   props.events = {
     debug: this.events.debug,
