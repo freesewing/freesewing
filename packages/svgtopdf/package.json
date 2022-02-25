@@ -40,7 +40,7 @@
     ]
   },
   "dependencies": {
-    "body-parser": "1.19.1",
+    "body-parser": "1.19.2",
     "cors": "2.8.5",
     "express": "4.17.3",
     "express-rate-limit": "^6.2.0",
