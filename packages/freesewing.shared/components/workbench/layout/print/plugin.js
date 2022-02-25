@@ -51,10 +51,10 @@ const pagesPlugin = (size='a4', orientation='portrait') => ({
           points[`_pages__row${row}-col${col}-bl`] = new Point(x,y+h)
           points[`_pages__row${row}-col${col}-circle`] = new Point(x+w/2,y+h/2-24)
             .attr('data-circle', 42)
-            .attr('data-circle-class', 'stroke-4xl muted')
+            .attr('data-circle-class', 'stroke-4xl muted fabric')
           points[`_pages__row${row}-col${col}-text`] = new Point(x+w/2,y+h/2)
             .attr('data-text', `${count}`)
-            .attr('data-text-class', 'text-4xl center bold muted')
+            .attr('data-text-class', 'text-4xl center bold muted fill-fabric')
 
           paths[`_pages__row${row}-col${col}`] = new Path()
             .move(points[`_pages__row${row}-col${col}-tl`])

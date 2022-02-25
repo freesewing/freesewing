@@ -5,6 +5,7 @@ import PrintIcon from 'shared/components/icons/print'
 import RightIcon from 'shared/components/icons/right'
 
 const PrintLayoutSettings = props => {
+  if (!props.draft?.parts?.pages?.pages) return null
   const settingsProps = {
     gist: props.gist,
     updateGist: props.updateGist

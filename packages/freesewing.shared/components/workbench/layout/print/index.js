@@ -48,6 +48,7 @@ const PrintLayout = props => {
       <Draft
         draft={draft}
         gist={props.gist}
+        updateGist={props.updateGist}
         patternProps={patternProps}
         bgProps={bgProps}
       />
