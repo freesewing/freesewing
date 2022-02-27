@@ -139,6 +139,8 @@ export default (part) => {
       points.cfNeck,
       points.cbNeck,
       points.neckCp2,
+      points.armholePitch,
+      points.armholePitchCp2,
       points.frontArmholePitch,
       points.frontArmholePitchCp2,
       points.shoulderCp1,
