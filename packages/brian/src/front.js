@@ -85,8 +85,8 @@ export default (part) => {
     points.s3ArmholeSplit = utils.curveIntersectsY(
       points.shoulder,
       points.mirroredShoulderCp1,
-      points.mirroredFrontArmholePitchCp2,
-      points.mirroredFrontArmholePitch,
+      points.mirroredArmholePitchCp2,
+      points.mirroredArmholePitch,
       store.get('s3ArmholeMax') * options.s3Armhole + points.shoulder.y
     )
     paths.frontArmhole = new Path()
@@ -97,8 +97,8 @@ export default (part) => {
           .move(points.shoulder)
           .curve(
             points.mirroredShoulderCp1,
-            points.mirroredFrontArmholePitchCp2,
-            points.mirroredFrontArmholePitch
+            points.mirroredArmholePitchCp2,
+            points.mirroredArmholePitch
           )
           .split(points.s3ArmholeSplit)[0]
       )
