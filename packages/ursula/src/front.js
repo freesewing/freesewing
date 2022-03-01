@@ -24,15 +24,31 @@ export default function (part) {
 
   // Create points
 
+  // side seam is on a line from upper leg to seat to hips (optional?) to waist
   points.frontWaistMid = new Point(measurements.seat / 4, 0)
   points.frontWaistLeft = new Point(
     measurements.seat / 4 - (measurements.waist / 4) * store.get('xScale'),
     0
   )
-  points.frontHipLeft = new Point(
+  points.frontSeatLeft = new Point(
     measurements.seat / 4 - (measurements.seat / 4) * store.get('xScale'),
     measurements.waistToSeat
-  ) // Consider renaming from "hip" to "seat"
+  )
+   points.frontUpperLegLeft = new Point(
+	measurements.seat / 4 - (measurements.seat / 4) * store.get('xScale'), // assume same circ. as seat
+	measurements.waistToUpperLeg)
+ points.frontHipLeft = new Point(
+    measurements.seat / 4 - (measurements.hips / 4) * store.get('xScale'),
+	measurements.waistToHips)
+	
+	// use these points to define an invisible path
+  paths.sideLeft = new Path()
+	.move(points.frontUpperLegLeft)
+	.line(points.frontSeatLeft)
+ 	.line(points.frontHipLeft)
+	.line(points.frontWaistLeft)
+    .setRender(false) // only show when debugging	
+	
   points.frontGussetLeft = new Point(
     measurements.seat / 4 - (measurements.waist * options.gussetWidth * store.get('xScale')) / 1.2,
     measurements.waistToUpperLeg
@@ -41,32 +57,20 @@ export default function (part) {
 
   /* Flip points to right side */
   points.frontGussetRight = points.frontGussetLeft.flipX(points.frontWaistMid)
-  points.frontHipRight = points.frontHipLeft.flipX(points.frontWaistMid)
+  points.frontHipRight = points.frontSeatLeft.flipX(points.frontWaistMid)
   points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
 
-  /* Waist band is based on waist at top, hip at bottom */
-  points.frontWaistBandLeft = points.frontHipLeft.shiftFractionTowards(
-    points.frontWaistLeft,
-    options.rise
-  )
+  /* Waist band is somewhere on the sideLeft path */
+  points.frontWaistBandLeft = paths.sideLeft.shiftFractionAlong(options.rise)
   points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid)
   points.frontWaistBandMid = points.frontWaistBandLeft
     .shiftFractionTowards(points.frontWaistBandRight, 0.5)
     .shift(270, measurements.waistToUpperLeg * options.frontDip) /* Waist band dip */
 
-  /* Leg opening is based on waist band and hip */
-  //  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(points.frontWaistBandLeft, options.legOpening) // Waist band side point
-  //  points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band side point
-
-  ///////////// Replace the point it's shifting towards with a beamsIntersect() of the
-  ///////////// side (frontWaistLeft and frontHipLeft) and the lowest point of the waistband (backWaistBandMid
-  ///////////// and backWaistBandLeftCp1 should work)
-  ///////////// or maybe beamIntersectsY() of backWaistBandMid.y  ??
-
-  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(
-    points.frontWaistBandLeft,
-    options.legOpening
-  ) // Waist band low point
+  /* Leg opening is also on the sideLeft path, and cannot be higher than rise */
+  store.set('adjustedLegOpening',Math.min(options.legOpening,options.rise)) // TODO: account for rise having a different domain
+  
+  points.frontLegOpeningLeft = paths.sideLeft.shiftFractionAlong(store.get('adjustedLegOpening'))
   points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band low point
 
   /* Middle point for label */
@@ -83,7 +87,7 @@ export default function (part) {
     points.frontGussetLeft.dy(points.frontLegOpeningLeft) / 3
   )
   points.frontGussetLeftCp1 = points.frontGussetLeft
-    //    .shift(270, points.frontGussetLeft.dy(points.frontHipLeft) * 4 * options.taperToGusset); // Consider changing this so it's relative
+    //    .shift(270, points.frontGussetLeft.dy(points.frontSeatLeft) * 4 * options.taperToGusset); // Consider changing this so it's relative
     .shift(270, points.frontGussetLeft.dy(points.frontWaistBandMid) * options.taperToGusset)
 
   /* Control point for waistband dip */
