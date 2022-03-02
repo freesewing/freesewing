@@ -3040,18 +3040,18 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@^26.3.8":
-  version "26.3.8"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-26.3.8.tgz#b2b40a56ed4dc4309a3c153eb944d476187a4551"
-  integrity sha512-ys7E8GfN2VaWAADa78mHaEU6l1K53CjpG3ci9FOthT/2RoIhf3gTVa+l4eiSVNwQprONMtbBOllE/gTDmUg0kw==
+"@netlify/build@^26.3.12":
+  version "26.3.12"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-26.3.12.tgz#f1721545951459f58ef1d9f6ef009facda9c3ca2"
+  integrity sha512-xZfCck6jmJi/r36t/4Vwlbtc9Q4SekQorkMfRkp7auUvixVVTzS50P8i5Uov1BYtO9dEgcVBU0HvwSHsjtpSfQ==
   dependencies:
     "@bugsnag/js" "^7.0.0"
     "@netlify/cache-utils" "^4.0.0"
     "@netlify/config" "^17.0.0"
     "@netlify/functions-utils" "^4.0.0"
     "@netlify/git-utils" "^4.0.0"
-    "@netlify/plugin-edge-handlers" "^3.0.6"
-    "@netlify/plugins-list" "^6.13.1"
+    "@netlify/plugin-edge-handlers" "^3.0.7"
+    "@netlify/plugins-list" "^6.14.0"
     "@netlify/run-utils" "^4.0.0"
     "@netlify/zip-it-and-ship-it" "5.9.0"
     "@sindresorhus/slugify" "^2.0.0"
@@ -3114,10 +3114,10 @@
     path-exists "^4.0.0"
     readdirp "^3.4.0"
 
-"@netlify/config@^17.0.0", "@netlify/config@^17.0.15":
-  version "17.0.15"
-  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-17.0.15.tgz#c58c244d026b80e716c7d9646e065192693de424"
-  integrity sha512-ShEMw5C5PrfC4M3rdcFTdN9Phj3bsPbE8fpy2LdHUEdjEGnNo26frxq3Nh+suLsVvLZ1zWY7yoCQcT+6McerIw==
+"@netlify/config@^17.0.0", "@netlify/config@^17.0.16":
+  version "17.0.16"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-17.0.16.tgz#234dcb080cd709ba715342a02acfbcbb439594ff"
+  integrity sha512-MajIdbsdOVpI59zayMY/9S4XrO0gVWXvl7r5iEFoSnzuloJlN/Ws0GFOSL9FqJEH8Fh1lafOIMPCugRxWhdJ6g==
   dependencies:
     chalk "^5.0.0"
     cron-parser "^4.1.0"
@@ -3134,7 +3134,7 @@
     map-obj "^5.0.0"
     netlify "^11.0.0"
     netlify-headers-parser "^6.0.2"
-    netlify-redirect-parser "13.0.4"
+    netlify-redirect-parser "13.0.5"
     omit.js "^2.0.2"
     p-locate "^6.0.0"
     path-exists "^5.0.0"
@@ -3266,10 +3266,10 @@
   resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-2.8.0.tgz#e59537ae9aa8342c2aa64952d42e5e089c8422f4"
   integrity sha512-lfNB/QYDgaP07pwm/nWEaWPvRAAGyhxvJqNzvxMijc7A4uwquMjlbYve8yYyd0LJXPwgBpGobwiQj5RA76xzUQ==
 
-"@netlify/plugin-edge-handlers@^3.0.6":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-edge-handlers/-/plugin-edge-handlers-3.0.6.tgz#4e4f918872904d8fff9f41cf932664fd8559973a"
-  integrity sha512-wf9556qv5lEzuZuj3X5XIbhLerOipcrTNybGFSuDRN4bIRrpWDfap+fGiZI2D+EyEXWvkQDNaEHc64AH9H8Siw==
+"@netlify/plugin-edge-handlers@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-edge-handlers/-/plugin-edge-handlers-3.0.7.tgz#c78be3ae44bbba8473bab4da6660c1486b3f7a1d"
+  integrity sha512-ThceMAZ7M0k6WVcZwszVh9qozZKveQCnmQtWZW69Qf+g1pGHFkGIt9Vclt5op+Dd8bIdk0kcu1NnX9Ll7eZL1w==
   dependencies:
     "@babel/core" "^7.11.4"
     "@babel/preset-env" "^7.11.5"
@@ -3287,10 +3287,10 @@
     rollup-plugin-node-polyfills "^0.2.1"
     rollup-plugin-terser "^7.0.2"
 
-"@netlify/plugins-list@^6.13.1":
-  version "6.13.1"
-  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-6.13.1.tgz#e2858689e1e6c3b643ec45fc91bc280ffb15f3ef"
-  integrity sha512-xduwI/S1GreiDfYV6hALaMIlk31zBgutPfKBEhad8x6ZogJiB8GO2egiAQ4qvAv1APmJaGzPJE5TN2VWr9pGvQ==
+"@netlify/plugins-list@^6.14.0", "@netlify/plugins-list@^6.15.0":
+  version "6.15.0"
+  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-6.15.0.tgz#bd63473f76e76ff81f13236cd91a98c70890c9d6"
+  integrity sha512-CGvHVRS+IInm+dyn8qEGrADsFiWY/HC8z+taIPQ9d7sZlNr3ShtXHq5fdHVHGH2A9WDVeh8+Xan87196KyE3IQ==
 
 "@netlify/routing-local-proxy-darwin-arm64@^0.34.1":
   version "0.34.1"
@@ -18682,16 +18682,16 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
 netlify-cli@^9.4.0:
-  version "9.8.3"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-9.8.3.tgz#360b7fd628a0b96845dd03944dca54ab2c2fa654"
-  integrity sha512-dsu5HHSAi/E1lkxK3sGsu6EeDYmSRK1UA1xzvorgsg2YeFqJjxKAdD9cIuOvALjhf4TGLJuXbwCZjr3Vi8RigA==
+  version "9.10.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-9.10.0.tgz#2c796a2934c1c6a9bef09f6fd7d5755b5219a6a5"
+  integrity sha512-/0N6+cpIpistJPRp1pFr4Gp+XoOGJoORNNaKWLAO5/EQ7RulKyw87YuhLU9vflxOQQEDSb48zt9t8luZnJN5lw==
   dependencies:
-    "@netlify/build" "^26.3.8"
-    "@netlify/config" "^17.0.15"
+    "@netlify/build" "^26.3.12"
+    "@netlify/config" "^17.0.16"
     "@netlify/framework-info" "^9.0.2"
     "@netlify/local-functions-proxy" "^1.1.1"
-    "@netlify/plugin-edge-handlers" "^3.0.6"
-    "@netlify/plugins-list" "^6.13.1"
+    "@netlify/plugin-edge-handlers" "^3.0.7"
+    "@netlify/plugins-list" "^6.15.0"
     "@netlify/routing-local-proxy" "^0.34.1"
     "@netlify/zip-it-and-ship-it" "^5.9.0"
     "@octokit/rest" "^18.0.0"
@@ -18759,7 +18759,7 @@ netlify-cli@^9.4.0:
     netlify "^11.0.0"
     netlify-headers-parser "^6.0.2"
     netlify-onegraph-internal "0.0.50"
-    netlify-redirect-parser "^13.0.4"
+    netlify-redirect-parser "^13.0.5"
     netlify-redirector "^0.2.1"
     node-fetch "^2.6.0"
     node-version-alias "^1.0.1"
@@ -18815,10 +18815,10 @@ netlify-onegraph-internal@0.0.50:
     node-fetch "^2.6.0"
     uuid "^8.3.2"
 
-netlify-redirect-parser@13.0.4, netlify-redirect-parser@^13.0.4:
-  version "13.0.4"
-  resolved "https://registry.yarnpkg.com/netlify-redirect-parser/-/netlify-redirect-parser-13.0.4.tgz#9b96388881ab3ca5084f61d2d15e9dc54230d27d"
-  integrity sha512-Dg3JACJTcMwjof4FzeV9yDl6BgWkIIoBBfZxBjV2PNv9+QRYb1bOE7k4jx4HA9TTwzNQCJCdfJqmIqtR/w3Qrg==
+netlify-redirect-parser@13.0.5, netlify-redirect-parser@^13.0.5:
+  version "13.0.5"
+  resolved "https://registry.yarnpkg.com/netlify-redirect-parser/-/netlify-redirect-parser-13.0.5.tgz#f627a303d58e2cafde2d82f7e8582f89e0ebedb2"
+  integrity sha512-Q5YEQu9YLItP38VzmzJRZ+dP4HTnK0i4Reczq+AC4UDGGEcf9JkyUC8f9YgCoamtMPjX3Qb+o+7lF1vYztH/UQ==
   dependencies:
     filter-obj "^3.0.0"
     is-plain-obj "^4.0.0"
