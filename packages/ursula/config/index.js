@@ -20,10 +20,11 @@ export default {
     'sewing pattern',
   ],
   optionGroups: {
-    fit: ['fabricStretch', 'gussetWidth', 'gussetLength', 'elasticStretch'],
+    fit: ['fabricStretch', 'elasticStretch', 'useCrossSeam', 'gussetWidth', 'gussetLength'],
     style: ['rise', 'legOpening', 'frontDip', 'backDip', 'taperToGusset', 'backExposure'],
   },
-  measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg','hips','waistToHips'], // Potentially useful: 'hips', 'waistToHips'
+  optionalMeasurements: ['crossSeam','crossSeamFront'],
+  measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg','hips','waistToHips'], 
   dependencies: {
     back: 'front',
     gusset: 'back',
@@ -48,5 +49,6 @@ export default {
     taperToGusset: { pct: 70, min: 5, max: 100 },
     backExposure: { pct: 20, min: -30, max: 90 },
     elasticStretch: { pct: 8, min: 5, max: 15 },
+	useCrossSeam: { bool: true },
   },
 }

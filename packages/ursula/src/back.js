@@ -29,15 +29,19 @@ export default function (part) {
     store.get('sideSeamHip').x / options.backToFrontWidth,
     store.get('sideSeamHip').y
   )
+  
+  // back height is given by (estimated) cross seam, minus front and gusset lengths
+  var backHeight
+  backHeight = store.get('crossSeam') - store.get('frontHeight') - options.gussetLength * measurements.seat
   points.backGussetLeft = new Point(
     measurements.seat / 4 -
       ((measurements.waist * options.gussetWidth * store.get('xScale')) / options.gussetRatio) *
         options.backToFrontWidth,
-    measurements.waistToUpperLeg * options.backToFrontLength
+    backHeight
   )
   points.backGussetMid = new Point(
     measurements.seat / 4,
-    measurements.waistToUpperLeg * options.backToFrontLength
+    backHeight
   )
 
   points.backGussetRight = points.backGussetLeft.flipX(points.backWaistMid)
