@@ -110,7 +110,7 @@ components:
     '@material-ui/core': *matui-core
     '@material-ui/icons': *matui-icons
     '@material-ui/lab': *matui-lab
-    'prismjs': '^1.23.0'
+    'prismjs': '^1.25.0'
     'react-markdown': '^6.0.2'
     'file-saver': '^2.0.5'
     'yaml': &yaml '^1.10.2'
