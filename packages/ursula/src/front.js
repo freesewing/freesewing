@@ -24,17 +24,17 @@ export default function (part) {
   
   // determine height of front part: use cross seam (and cross seam front) if selected and available
   if (options.useCrossSeam && measurements.crossSeam) {
-	store.set('crossSeam',measurements.crossSeam)
+    store.set('crossSeam',measurements.crossSeam)
   } else { // use original approximation: front and back are roughly waistToUpperLeg high, plus gusset length
-	  store.set('crossSeam',measurements.waistToUpperLeg * (1 + options.backToFrontLength) + options.gussetLength * measurements.seat)
+    store.set('crossSeam',measurements.waistToUpperLeg * (1 + options.backToFrontLength) + options.gussetLength * measurements.seat)
   }
   // optionally use crossSeamFront to determine relative length of front and back
   if (options.useCrossSeam && measurements.crossSeamFront) { // subtract half the gusset length from cross seam front
     store.set('frontHeight',measurements.crossSeamFront - measurements.seat*0.5*options.gussetLength)
   } else { // subtract gusset length, divide by roughly 2
-	store.set('frontHeight',(store.get('crossSeam') - options.gussetLength * measurements.seat)/(1 + options.backToFrontLength))
+    store.set('frontHeight',(store.get('crossSeam') - options.gussetLength * measurements.seat)/(1 + options.backToFrontLength))
   }
-	  
+    
 
   // Create points
 
@@ -48,21 +48,21 @@ export default function (part) {
     measurements.seat / 4 - (measurements.seat / 4) * store.get('xScale'),
     measurements.waistToSeat
   )
-   points.frontUpperLegLeft = new Point(
-	measurements.seat / 4 - (measurements.seat / 4) * store.get('xScale'), // assume same circ. as seat
-	measurements.waistToUpperLeg)
+  points.frontUpperLegLeft = new Point(
+    measurements.seat / 4 - (measurements.seat / 4) * store.get('xScale'), // assume same circ. as seat
+    measurements.waistToUpperLeg)
  points.frontHipLeft = new Point(
     measurements.seat / 4 - (measurements.hips / 4) * store.get('xScale'),
-	measurements.waistToHips)
-	
-	// use these points to define an invisible path
+    measurements.waistToHips)
+  
+  // use these points to define an invisible path
   paths.sideLeft = new Path()
-	.move(points.frontUpperLegLeft)
-	.line(points.frontSeatLeft)
- 	.line(points.frontHipLeft)
-	.line(points.frontWaistLeft)
-    .setRender(false) // only show when debugging	
-	
+    .move(points.frontUpperLegLeft)
+    .line(points.frontSeatLeft)
+    .line(points.frontHipLeft)
+    .line(points.frontWaistLeft)
+    .setRender(false) // only show when debugging  
+  
   // gusset width uses modified xScale (barely stretches) and depends on waistToUpperLeg - least sensitive to girth
   points.frontGussetLeft = new Point(
     measurements.seat / 4 - (measurements.waistToSeat * options.gussetWidth * (1 + store.get('xScale'))/2) * 2.2,
