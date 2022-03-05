@@ -8,9 +8,9 @@ We gebruiken deze termen als een genderomvattende manier om ons af te vragen of 
 
 ##### Zoals het van toepassing is op lichamen
 
-Bijna elk kledingbedrijf heeft twee hoofdcategorieën voor zijn kledingwijze: mensontering en vrouwmoeder. Deze kledingontwerpen zijn meestal gebaseerd op het ideale of gemiddelde lichaam. Meaning, for womenswear, the designer will likely make a garment for a body with breasts, narrow shoulders, a smaller waist and wide hips.
+Bijna elk kledingbedrijf heeft twee hoofdcategorieën voor zijn kledingwijze: mensontering en vrouwmoeder. Deze kledingontwerpen zijn meestal gebaseerd op het ideale of gemiddelde lichaam. Wat betekent, voor vrouwenkleren zal de ontwerper waarschijnlijk een kledingstuk maken voor een lichaam met borsten, smalle schouders, een kleine taille en brede heupen.
 
-These characteristics are generally thought of as _the typical characteristics of a woman's body_. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
+Deze eigenschappen worden vaak gezien als _de typische eigenschappen van het vrouwelijk lichaam_. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
 
 We do not want to exclude anyone and we think that _body shape ≠ gender_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
 
