@@ -2,7 +2,7 @@
 title: "Waar wordt met of zonder borsten over gesproken?"
 ---
 
-Some people get confused by the terms _with breasts_ and _without breasts_.
+Voor sommige mensen zijn de termen _met borsten_ en _zonder borsten_ verwarrend.
 
 We gebruiken deze termen als een genderomvattende manier om ons af te vragen of iemand wel of geen borsten heeft.
 
