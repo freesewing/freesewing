@@ -4,7 +4,7 @@ title: Links delen
 
 Laat de wereld weten over FreeSewing. U kunt linken naar een specifieke pagina of naar de homepage: https://freesewing.org/
 
-You can use the images below, and make sure to [use the relevant hashtags](/community/hashtags/).
+Je kan de afbeeldingen hieronder gebruiken en zorg ervoor dat je [de relevante hashtags gebruikt](/community/hashtags/).
 
 <img src="/share/en.wide.png" alt="Wij zijn FreeSewing" style="max-height: 25vh;" class="shadow" />
 
