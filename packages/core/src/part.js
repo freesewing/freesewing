@@ -17,6 +17,7 @@ function Part() {
   this.height = false
   this.render = true
   this.utils = utils
+  this.layout = { move: { x: 0, y:0 }}
 
   this.Point = Point
   this.Path = Path
@@ -123,7 +124,11 @@ Part.prototype.stack = function () {
   if (this.topLeft !== false) return this
   else this.boundary()
   if (this.topLeft.x == 0 && this.topLeft.y == 0) return this
-  else this.attr('transform', `translate(${this.topLeft.x * -1}, ${this.topLeft.y * -1})`)
+  else {
+    this.attr('transform', `translate(${this.topLeft.x * -1}, ${this.topLeft.y * -1})`)
+    this.layout.move.x = this.topLeft.x * -1
+    this.layout.move.y = this.topLeft.y * -1
+  }
 
   return this
 }
