@@ -20,4 +20,4 @@ Iedereen kan welk patroon dan ook maken op onze site, zolang ze maar de benodigd
 
 ##### Hoe het van toepassing is op bindende waarden
 
-Als je gebonden bent, gebruik dan de **zonder borsten** patronen en gebruik het cirumference van je gebonden kist als [borstmaat](/docs/measurements/chest/)
+Als je een binder draagt, gebruik dan de **zonder borsten** patronen en gebruik de omtrek van je borstkas terwijl je je binder draagt als [borstmaat](/docs/measurements/chest/)
