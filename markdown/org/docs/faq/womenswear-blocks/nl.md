@@ -12,11 +12,11 @@ Maar een deel van de mensen hebben er goede resultaten mee gekregen. Ik heb vers
 
 Wat ik wil zeggen is, we halen ze niet weg, omdat ze in sommige gevallen werken. Maar niet in alle gevallen, wat frustrerend kan zijn.
 
-Ik doe niet alsof ik weet hoe ik voor vrouwen moet ontwerpen. But I do get questions all the time about adding more womenswear to freesewing.org, and that starts with a well-designed block.
+Ik doe niet alsof ik weet hoe ik voor vrouwen moet ontwerpen. Maar ik krijg wel voortdurend vragen om meer vrouwenkleding toe te voegen aan freesewing.org en dat begint met een goed ontworpen blokpatroon.
 
-I have long waited for somebody to step forward to take this on themselves. Alas, I've been waiting in vain. Since the fastest way to get a question answered on the internet is to answer it yourself incorrectly, I set out to create these blocks.
+Ik heb lang gewacht tot iemand dit zelf ging doen. Helaas heb ik voor niets gewacht. Aangezien de snelste manier om een vraag beantwoord te krijgen op het internet is om het zelf verkeerd te beantwoorden, heb ik deze blokpatronen gemaakt.
 
-So if you think you can do better, I hereby formally invite you to work together to design the womenswear block that you think/know to be the best one out there.
+Dus als jij denkt dat je het beter kunt doen, nodig ik je hierbij formeel uit om samen te werken om het dames blokpatroon te maken waarvan jij denkt/weet dat het het allerbeste is.
 
 I gladly offer my services to code/implement your design/vision, so that the entire sewing community can benefit from it.
 
