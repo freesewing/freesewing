@@ -29,7 +29,7 @@ const PrintLayout = props => {
     draft.draft()
     patternProps = draft.getRenderProps()
   } catch(err) {
-    console.log(err)
+    console.log(err, props.gist)
   }
   const bgProps = { fill: "url(#page)" }
 

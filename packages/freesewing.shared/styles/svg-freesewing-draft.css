@@ -61,6 +61,34 @@ svg.freesewing.pattern {
   .muted {
     opacity: 0.15;
   }
+  /* layout rectangles */
+  .layout-rect {
+    fill: var(--pattern-canvas);
+    fill-opacity: 0.05;
+  }
+  .layout-rect:hover {
+    fill: var(--pattern-lining);
+    fill-opacity: 0.15;
+  }
+  .layout-rect.move:hover {
+    cursor: move;
+  }
+  .layout-rect.rotate:hover {
+    cursor: crosshair;
+  }
+  .svg-layout-button > rect.button {
+    fill: var(--pattern-note);
+    fill-opacity: 0.3;
+    stroke: none;
+  }
+  .svg-layout-button:hover > rect {
+    fill: var(--pattern-lining);
+    stroke: none;
+    fill-opacity: 1;
+  }
+  .svg-layout-button:hover {
+    cursor: pointer;
+  }
 
   /* Developer view */
   g.develop.point {

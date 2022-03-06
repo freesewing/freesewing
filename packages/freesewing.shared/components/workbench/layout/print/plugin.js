@@ -1,4 +1,3 @@
-
 const name = 'Pages Plugin'
 const version = '1.0.0'
 const sizes = {
@@ -11,10 +10,6 @@ const sizes = {
   tabloid: [ 279.4, 431.8 ],
 }
 
-const drawPage = (x, y, size, orientation) => {
-//
-}
-
 const pagesPlugin = (size='a4', orientation='portrait') => ({
   name,
   version,
@@ -24,6 +19,10 @@ const pagesPlugin = (size='a4', orientation='portrait') => ({
       pattern.parts.pages = pattern.Part('pages')
       // Keep part out of layout
       pattern.parts.pages.layout = false
+      // But add the part to the autoLayout property
+      pattern.autoLayout.parts.pages = {
+        move: { x: 0, y: 0 }
+      }
       // Add pages
       const { macro } = pattern.parts.pages.shorthand()
       const { height, width } = pattern
@@ -70,6 +69,7 @@ const pagesPlugin = (size='a4', orientation='portrait') => ({
       }
       // Store page count in part
       this.pages = { cols, rows, count: cols*rows }
+
     }
   }
 })

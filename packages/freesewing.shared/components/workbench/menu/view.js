@@ -58,6 +58,11 @@ const View = props => {
       title: t('editThing', { thing: 'YAML' }),
       onClick: () => props.updateGist(['_state', 'view'], 'edit')
     },
+    {
+      name: 'clear',
+      title: t('clearThing', { thing: 'YAML' }),
+      onClick: () => props.setGist(null)
+    },
   ]
 
   return (
