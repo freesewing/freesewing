@@ -1,27 +1,27 @@
 ---
-title: Why do you even publish womenswear blocks? They are [insert strong opinion here].
+title: Waarom zou je überhaupt dames blokpatronen maken? Ze zijn [sterke mening hier].
 ---
 
-This question comes up every now and then. The wording varies, but the sentiment can be summarized as _why even publish this garbage, it doesn't work at all_.
+Deze vraag komt af en toe op. De verwoording varieert, maar het sentiment kan samengevat worden als _waarom zou je deze troep überhaupt publiceren, het werkt voor geen meter_.
 
-Let me start by saying that you are not wrong. Both [Breanna](/designs/breanna/) and [Bella](/designs/bella/) have serious shortcomings.
+Laat ik beginnen door te zeggen dat je het niet verkeerd hebt. Beide [Breanna](/designs/breanna/) en [Bella](/designs/bella/) hebben ernstige tekortkomingen.
 
-I myself ([joost](/makers/joostdecock/)) am painfully aware of them, and I have toyed with the idea of retracting these patterns altogether.
+Ikzelf ([joost](/makers/joostdecock/)) ben pijnlijk bewust hiervan en ik heb overwogen om deze patronen algeheel te herroepen.
 
-But there's a subset of people who get good results with them. I've seen several good looking makes based on Bella, and Breanna seems to be popular with people making doll clothes for some reason.
+Maar een deel van de mensen hebben er goede resultaten mee gekregen. Ik heb verschillende goeduitziende creaties gezien gebaseerd op Bella en om een of andere reden blijkt Breanna populair te zijn met mensen die poppenkleren maken.
 
-What I'm saying is, we're not removing them because they work in some cases. Not in all cases though, which can be frustrating.
+Wat ik wil zeggen is, we halen ze niet weg, omdat ze in sommige gevallen werken. Maar niet in alle gevallen, wat frustrerend kan zijn.
 
-I don't pretend to know how to draft for women. But I do get questions all the time about adding more womenswear to freesewing.org, and that starts with a well-designed block.
+Ik doe niet alsof ik weet hoe ik voor vrouwen moet ontwerpen. Maar ik krijg wel voortdurend vragen om meer vrouwenkleding toe te voegen aan freesewing.org en dat begint met een goed ontworpen blokpatroon.
 
-I have long waited for somebody to step forward to take this on themselves. Alas, I've been waiting in vain. Since the fastest way to get a question answered on the internet is to answer it yourself incorrectly, I set out to create these blocks.
+Ik heb lang gewacht tot iemand dit zelf ging doen. Helaas heb ik voor niets gewacht. Aangezien de snelste manier om een vraag beantwoord te krijgen op het internet is om het zelf verkeerd te beantwoorden, heb ik deze blokpatronen gemaakt.
 
-So if you think you can do better, I hereby formally invite you to work together to design the womenswear block that you think/know to be the best one out there.
+Dus als jij denkt dat je het beter kunt doen, nodig ik je hierbij formeel uit om samen te werken om het dames blokpatroon te maken waarvan jij denkt/weet dat het het allerbeste is.
 
-I gladly offer my services to code/implement your design/vision, so that the entire sewing community can benefit from it.
+Ik bied graag mijn hulp aan om je ontwerp/visie te implementeren/coderen, zodat de hele naai community ervan kan profiteren.
 
-You can reach me at joost at freesewing.org, we also have [an active community on Discord](https://discord.freesewing.org/).
+Je kan me bereiken op joost op freesewing.org, we hebben ook [een actieve community op Discord](https://discord.freesewing.org/).
 
-I hope to hear from you soon.
+Ik hoor graag van je.
 
 joost
