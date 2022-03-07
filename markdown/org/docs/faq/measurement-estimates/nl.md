@@ -2,7 +2,7 @@
 title: Wat zijn die symbolen naast mijn metingen?
 ---
 
-You might have noticed these kind of icons next to your measurements: <Gauge val={0} theme='light' />
+Je hebt misschien deze symbolen gezien naast je afmetingen: <Gauge val={0} theme='light' />
 
 De waarde die ze vertegenwoordigen toont hoe ver de meting afwijkt van de verhoudingen waarmee we onze ontwerpen testen met:
 
