@@ -23,8 +23,7 @@ Maar je kent je lichaam. U weet welke van uw metingen afwijken van het gemiddeld
 En we wijzen erop dat ze dat wel doen, is slechts een bevestiging dat je het goed hebt gemeten.
 Aan de andere kant weet je dat als er iets springt waar je een redelijk gemiddelde maat hebt, je die metingen nog eens dubbel moet controleren.
 
-Last but not least, while we try to provide guidance about measurements to help spot mistakes,
-we never exclude anyone based on size or measurement.
+Tenslotte, alhoewel we hulp proberen te geven over afmetingen zodat je fouten kan vinden, zullen we nooit iemand buitensluiten gebaseerd op maat of afmetingen.
 Ongeacht wat je naar ons gooit, zullen we een patroon voor je tekenen, of (onze software zal dat proberen) die uitproberen.
 
 </Note>
