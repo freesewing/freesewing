@@ -36,7 +36,10 @@ export default (part) => {
       from: points.slantTop,
       to: new Point(points.slantTop.x, points.facingDirection.y),
     })
-    snippets.notch = new Snippet('notch', points.facingDirection)
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['facingDirection', 'slantTopNotch', 'slantBottomNotch']
+    })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa', true)
   }
