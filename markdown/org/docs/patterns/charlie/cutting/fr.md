@@ -4,7 +4,7 @@
 - Partie **2**: **2 x** _avec de bons côtés ensemble_.
 - Partie **4**: **4 x**
 - Partie **6**: **2 x**
-- Partie **8**: **2 x** 2 _avec de bons côtés ensemble_
+- Part **8**: **4 x** (2 pairs _with good sides together_)
 - Partie **9**: **2 x** _avec de bons côtés ensemble_
 - Partie **10**: **1 x** sur le pli
 - Partie **11**: **1 x** si vous créez une ceinture droite
