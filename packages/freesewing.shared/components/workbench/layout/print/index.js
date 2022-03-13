@@ -4,11 +4,6 @@ import Settings from './settings'
 import Draft from '../draft'
 import pluginBuilder from './plugin'
 
-const addPages = (gist) => {
-  const pages = []
-}
-
-
 const PrintLayout = props => {
 
   useEffect(() => {

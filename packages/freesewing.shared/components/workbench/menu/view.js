@@ -35,7 +35,6 @@ const View = props => {
     {
       name: 'export',
       title: t('exportThing', { thing: props.pattern.config.name }),
-      title: t('export'),
       onClick: () => props.updateGist(['_state', 'view'], 'export')
     },
     {

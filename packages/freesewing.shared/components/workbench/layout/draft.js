@@ -81,7 +81,6 @@ import Snippet from '../draft/snippet'
 import { getProps } from '../draft/utils'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
-import { event } from 'd3-dispatch'
 
 const Buttons = ({ transform, flip, rotate, setRotate, resetPart }) => {
   const letter = 'F'
@@ -136,7 +135,7 @@ const generateTransform = (x, y, rot, flipX, flipY, part) => {
     'scale(-1, 1)',
     `translate(${center.x * -1 + 2 * dx}, ${center.y})`
   )
-  if (flipX) transforms.push(
+  if (flipY) transforms.push(
     `translate(${center.x * -1}, ${center.y * -1})`,
     'scale(1, -1)',
     `translate(${center.x}, ${center.y * -1 + 2 * dy})`,
@@ -153,7 +152,7 @@ const Part = props => {
   const partLayout= layout.parts[name]
 
   // Don't just assume this makes sense
-  if (typeof layout?.parts?.[name]?.move?.x === 'undefined') return null
+  if (typeof layout.parts.[name].move?.x === 'undefined') return null
 
   // Use a ref for direct DOM manipulation
   const partRef = useRef(null)
@@ -175,7 +174,7 @@ const Part = props => {
   let rotation = partLayout.rotate || 0
   let flipX = partLayout.flipX ? true : false
   let flipY = partLayout.flipY ? true : false
-  let rotStart = { x: 0, y: 0 }
+  let rotStart
   let partRect
 
   const center = {
@@ -184,7 +183,6 @@ const Part = props => {
   }
   const handleDrag = drag()
     .subject(function() {
-      const me = select(this);
       return { x: translateX, y: translateY }
     })
     .on('start', function(event) {
@@ -305,7 +303,7 @@ const Part = props => {
 }
 
 const Draft = props => {
-  const { patternProps, gist, app, updateGist, unsetGist, bgProps={} } = props
+  const { patternProps, gist, app, bgProps={} } = props
   const { layout=false } = gist
 
   useEffect(() => {

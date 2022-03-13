@@ -41,7 +41,7 @@ const Xray = props => {
           <Reset {...props} />
           {
             props.gist?._state?.xray?.parts &&
-            Object.keys(props.gist._state?.xray.parts).map(partName => <List {...props} partName={partName} />)
+            Object.keys(props.gist._state.xray.parts).map(partName => <List {...props} partName={partName} />)
           }
         </Ul>
       )}
