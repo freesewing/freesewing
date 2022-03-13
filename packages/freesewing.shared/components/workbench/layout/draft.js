@@ -152,7 +152,7 @@ const Part = props => {
   const partLayout= layout.parts[name]
 
   // Don't just assume this makes sense
-  if (typeof layout.parts.[name].move?.x === 'undefined') return null
+  if (typeof layout.parts[name].move?.x === 'undefined') return null
 
   // Use a ref for direct DOM manipulation
   const partRef = useRef(null)
@@ -303,7 +303,7 @@ const Part = props => {
 }
 
 const Draft = props => {
-  const { patternProps, gist, app, bgProps={} } = props
+  const { patternProps, gist, updateGist ,app, bgProps={} } = props
   const { layout=false } = gist
 
   useEffect(() => {
@@ -404,8 +404,6 @@ const Draft = props => {
               layout,
               app,
               gist,
-              updateGist,
-              unsetGist,
               updateLayout,
             }}/>
           )))}
