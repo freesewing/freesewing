@@ -166,7 +166,7 @@ const Part = props => {
     handleDrag(select(partRef.current))
   }, [rotate])
 
-  // These are kepts as vars because re-rendering on drag would kill performance
+  // These are kept as vars because re-rendering on drag would kill performance
   // Managing the difference between re-render and direct DOM updates makes this
   // whole thing a bit tricky to wrap your head around
   let translateX = partLayout.move.x
