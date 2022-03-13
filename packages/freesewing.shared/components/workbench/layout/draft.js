@@ -148,7 +148,7 @@ const generateTransform = (x, y, rot, flipX, flipY, part) => {
 }
 
 const Part = props => {
-  const { layout, gist, updateGist, name, part } = props
+  const { layout, gist, name, part } = props
   const partLayout= layout.parts[name]
 
   // Don't just assume this makes sense
@@ -174,7 +174,6 @@ const Part = props => {
   let rotation = partLayout.rotate || 0
   let flipX = partLayout.flipX ? true : false
   let flipY = partLayout.flipY ? true : false
-  let rotStart
   let partRect
 
   const center = {
@@ -186,7 +185,6 @@ const Part = props => {
       return { x: translateX, y: translateY }
     })
     .on('start', function(event) {
-      rotStart = { x: event.x, y: event.y }
       partRect = partRef.current.getBoundingClientRect()
     })
     .on('drag', function(event) {
