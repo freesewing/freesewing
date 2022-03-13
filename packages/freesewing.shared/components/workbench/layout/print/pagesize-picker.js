@@ -5,7 +5,6 @@ import Popout from 'shared/components/popout'
 
 const sizes = ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid']
 
-
 const PageSizePicker = ({ gist, updateGist }) => {
   const { t } = useTranslation(['workbench'])
   const setSize = size => {
