@@ -2,7 +2,6 @@ import PageSizeIcon from 'shared/components/icons/page-size'
 import { useTranslation } from 'next-i18next'
 import Popout from 'shared/components/popout'
 
-
 const sizes = ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid']
 
 const PageSizePicker = ({ gist, updateGist }) => {
