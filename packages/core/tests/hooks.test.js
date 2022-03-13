@@ -7,6 +7,7 @@ it("Should contain all hooks", () => {
   let test = {
     preDraft: [],
     postDraft: [],
+    postLayout: [],
     preSample: [],
     postSample: [],
     preRender: [],
