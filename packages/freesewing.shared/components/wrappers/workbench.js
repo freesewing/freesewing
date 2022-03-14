@@ -16,11 +16,15 @@ import ExportDraft from 'shared/components/workbench/export.js'
 import GistAsJson from 'shared/components/workbench/json.js'
 import GistAsYaml from 'shared/components/workbench/yaml.js'
 import DraftEvents from 'shared/components/workbench/events.js'
+import CutLayout from 'shared/components/workbench/layout/cut'
+import PrintLayout from 'shared/components/workbench/layout/print'
 
 const views = {
   measurements: Measurements,
   draft: LabDraft,
   test: LabSample,
+  printingLayout: PrintLayout,
+  cuttingLayout: CutLayout,
   export: ExportDraft,
   events: DraftEvents,
   yaml: GistAsYaml,

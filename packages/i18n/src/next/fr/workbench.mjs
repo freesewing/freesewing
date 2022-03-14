@@ -3,7 +3,8 @@
  * All edits will be overwritten on the next (pre)build
  */
 const workbench = {
-  "testThing": "test {thing}"
+  "designOptions": "Design options",
+  "testThing": "Test {thing}"
 }
 
 export default workbench

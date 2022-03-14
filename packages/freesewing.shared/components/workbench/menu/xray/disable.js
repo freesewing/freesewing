@@ -6,7 +6,7 @@ const DisableXray = props => {
 
   return (
     <Li>
-      <SumButton onClick={() => props.updateGist(['xray', 'enabled'], false)}>
+      <SumButton onClick={() => props.updateGist(['_state', 'xray', 'enabled'], false)}>
         <SumDiv>
           <Deg />
           <span>

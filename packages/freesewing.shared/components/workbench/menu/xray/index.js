@@ -12,7 +12,7 @@ const Xray = props => {
   return (
     <Details open>
       <TopSummary icon={<XrayIcon />}>
-        {props.gist?.xray?.enabled
+        {props.gist?._state?.xray?.enabled
           ? (
             <>
               <span className={`grow ${linkClasses} hover:cursor-resize font-bold uppercase`}>
@@ -24,7 +24,7 @@ const Xray = props => {
             <>
             <button
               className={`grow ${linkClasses} hover:cursor-resize uppercase font-bold text-left`}
-              onClick={() => props.updateGist(['xray', 'enabled'], true)}
+              onClick={() => props.updateGist(['_state', 'xray', 'enabled'], true)}
             >
               {t('settings:xray.t')}
             </button>
@@ -35,13 +35,13 @@ const Xray = props => {
           )
         }
       </TopSummary>
-      {props.gist?.xray?.enabled && (
+      {props.gist?._state?.xray?.enabled && (
         <Ul>
           <Disable {...props} />
           <Reset {...props} />
           {
-            props.gist?.xray?.parts &&
-            Object.keys(props.gist.xray.parts).map(partName => <List {...props} partName={partName} />)
+            props.gist?._state?.xray?.parts &&
+            Object.keys(props.gist._state.xray.parts).map(partName => <List {...props} partName={partName} />)
           }
         </Ul>
       )}

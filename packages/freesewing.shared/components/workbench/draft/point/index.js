@@ -6,7 +6,7 @@ const RevealPoint = props => {
   const r = 15 * props.gist.scale
   const { x, y } = props.point
   const { topLeft, bottomRight } = props.part
-  const i = Object.keys(props.gist.xray.reveal[props.partName].points).indexOf(props.pointName)%10
+  const i = Object.keys(props.gist._state.xray.reveal[props.partName].points).indexOf(props.pointName)%10
   const classes = `stroke-sm stroke-color-${i} stroke-dashed`
   return (
     <g>
@@ -93,7 +93,7 @@ const ActiveXrayPoint = props => {
   const r = 15 * props.gist.scale
   const { x, y } = props.point
   const { topLeft, bottomRight } = props.part
-  const i = Object.keys(props.gist.xray.parts[props.partName].points).indexOf(props.pointName)%10
+  const i = Object.keys(props.gist._state.xray.parts[props.partName].points).indexOf(props.pointName)%10
   const classes = `stroke-sm stroke-color-${i} stroke-dashed`
   const posProps = {
     id,
@@ -117,12 +117,12 @@ const PassiveXrayPoint = props => (
       cy={props.point.y}
       r={7.5 * props.gist.scale}
       className="opacity-0 stroke-lining fill-lining hover:opacity-25 hover:cursor-pointer"
-      onClick={props.gist.xray?.parts?.[props.partName]?.points?.[props.pointName]
+      onClick={props.gist._state.xray?.parts?.[props.partName]?.points?.[props.pointName]
         ? () => props.unsetGist(
-          ['xray', 'parts', props.partName, 'points', props.pointName]
+          ['_state', 'xray', 'parts', props.partName, 'points', props.pointName]
         )
         : () => props.updateGist(
-          ['xray', 'parts', props.partName, 'points', props.pointName],
+          ['_state', 'xray', 'parts', props.partName, 'points', props.pointName],
           1
         )
       }
@@ -134,14 +134,16 @@ const PassiveXrayPoint = props => (
 const Point = props => {
   const { point, pointName, partName, gist } = props
   const output = []
-  // Passive indication for points
-  if (gist.xray) output.push(<PassiveXrayPoint {...props} key={'xp-' + pointName} />)
-  // Active indication for points (point that have been clicked on)
-  if (gist.xray?.parts?.[partName]?.points?.[pointName])
-    output.push(<ActiveXrayPoint {...props} key={'rp-' + pointName} />)
-  // Reveal (based on clicking the seach icon in sidebar
-  if (gist.xray?.reveal?.[partName]?.points?.[pointName])
-    output.push(<RevealPoint {...props} key={'rp-' + pointName} />)
+  if (gist._state?.xray?.enabled) {
+    // Passive indication for points
+    output.push(<PassiveXrayPoint {...props} key={'xp-' + pointName} />)
+    // Active indication for points (point that have been clicked on)
+    if (gist._state?.xray?.parts?.[partName]?.points?.[pointName])
+      output.push(<ActiveXrayPoint {...props} key={'rp-' + pointName} />)
+    // Reveal (based on clicking the seach icon in sidebar
+    if (gist._state?.xray?.reveal?.[partName]?.points?.[pointName])
+      output.push(<RevealPoint {...props} key={'rp-' + pointName} />)
+  }
   // Render text
   if (point.attributes && point.attributes.get('data-text'))
     output.push(<Text {...props} key={'point-' + pointName} />)

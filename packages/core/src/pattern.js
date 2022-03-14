@@ -58,7 +58,7 @@ export default function Pattern(config = { options: {} }) {
   this.width = 0 // Will be set after render
   this.height = 0 // Will be set after render
   this.is = '' // Will be set when drafting/sampling
-  //this.debug = true // Will be set when applying settings
+  this.autoLayout = { parts: {} } // Will hold auto-generated layout
 
   this.store = new Store(this.raise) // Store for sharing data across parts
   this.parts = {} // Parts container
@@ -508,8 +508,18 @@ Pattern.prototype.pack = function () {
   if (this.settings.layout === true) {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
+      this.autoLayout.parts[bin.id] = { move: {} }
       let part = this.parts[bin.id]
-      if (bin.x !== 0 || bin.y !== 0) part.attr('transform', `translate(${bin.x}, ${bin.y})`)
+      if (bin.x !== 0 || bin.y !== 0) {
+        part.attr('transform', `translate(${bin.x}, ${bin.y})`)
+        this.autoLayout.parts[bin.id].move = {
+          x: bin.x + part.layout.move.x,
+          y: bin.y + part.layout.move.y }
+      }
+      else this.autoLayout.parts[bin.id].move = {
+        x: part.layout.move.x,
+        y: part.layout.move.y,
+      }
     }
     this.width = size.width
     this.height = size.height
@@ -517,39 +527,42 @@ Pattern.prototype.pack = function () {
     this.width = this.settings.layout.width
     this.height = this.settings.layout.height
     for (let partId of Object.keys(this.settings.layout.parts)) {
-      let transforms = this.settings.layout.parts[partId]
-      // Moving
-      if (typeof transforms.move === 'object') {
-        this.parts[partId].attributes.set(
-          'transform',
-          'translate(' + transforms.move.x + ', ' + transforms.move.y + ')'
+      // Some parts are added by late-stage plugins
+      if (this.parts[partId]) {
+        let transforms = this.settings.layout.parts[partId]
+        // Moving
+        if (typeof transforms.move === 'object') {
+          this.parts[partId].attributes.set(
+            'transform',
+            'translate(' + transforms.move.x + ', ' + transforms.move.y + ')'
+          )
+        }
+        // Mirrorring
+        let center = this.parts[partId].topLeft.shiftFractionTowards(
+          this.parts[partId].bottomRight,
+          0.5
         )
-      }
-      // Mirrorring
-      let center = this.parts[partId].topLeft.shiftFractionTowards(
-        this.parts[partId].bottomRight,
-        0.5
-      )
-      let anchor = { x: 0, y: 0 }
-      if (transforms.flipX) {
-        let dx = anchor.x - center.x
-        let transform = `translate(${center.x * -1}, ${center.y * -1})`
-        transform += ' scale(-1, 1)'
-        transform += ` translate(${center.x * -1 + 2 * dx}, ${center.y})`
-        this.parts[partId].attributes.add('transform', transform)
-      }
-      if (transforms.flipY) {
-        let dy = anchor.y - center.y
-        let transform = `translate(${center.x * -1}, ${center.y * -1})`
-        transform += ' scale(1, -1)'
-        transform += ` translate(${center.x}, ${center.y * -1 + 2 * dy})`
-        this.parts[partId].attributes.add('transform', transform)
-      }
-      if (transforms.rotate) {
-        let transform = `rotate(${transforms.rotate}, ${center.x - anchor.x}, ${
-          center.y - anchor.y
-        })`
-        this.parts[partId].attributes.add('transform', transform)
+        let anchor = { x: 0, y: 0 }
+        if (transforms.flipX) {
+          let dx = anchor.x - center.x
+          let transform = `translate(${center.x * -1}, ${center.y * -1})`
+          transform += ' scale(-1, 1)'
+          transform += ` translate(${center.x * -1 + 2 * dx}, ${center.y})`
+          this.parts[partId].attributes.add('transform', transform)
+        }
+        if (transforms.flipY) {
+          let dy = anchor.y - center.y
+          let transform = `translate(${center.x * -1}, ${center.y * -1})`
+          transform += ' scale(1, -1)'
+          transform += ` translate(${center.x}, ${center.y * -1 + 2 * dy})`
+          this.parts[partId].attributes.add('transform', transform)
+        }
+        if (transforms.rotate) {
+          let transform = `rotate(${transforms.rotate}, ${center.x - anchor.x}, ${
+            center.y - anchor.y
+          })`
+          this.parts[partId].attributes.add('transform', transform)
+        }
       }
     }
   }
@@ -698,9 +711,12 @@ Pattern.prototype.getRenderProps = function () {
   svg.runHooks('preRender')
 
   this.pack()
+  // Run post-layout hook
+  this.runHooks('postLayout')
   let props = { svg }
   props.width = this.width
   props.height = this.height
+  props.autoLayout = this.autoLayout
   props.settings = this.settings
   props.events = {
     debug: this.events.debug,

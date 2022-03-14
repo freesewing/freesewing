@@ -5,6 +5,7 @@ export default function Hooks() {
     preSample: [],
     postSample: [],
     preRender: [],
+    postLayout: [],
     postRender: [],
     insertText: [],
   }

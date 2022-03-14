@@ -14,6 +14,9 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",
+    "d3-dispatch": "^3.0.1",
+    "d3-drag": "^3.0.0",
+    "d3-selection": "^3.0.0",
     "daisyui": "^2.0.6",
     "file-saver": "^2.0.5",
     "highlight.js": "^11.4.0",
