@@ -7,6 +7,7 @@ import unset from 'lodash.unset'
 import defaultSettings from 'shared/components/workbench/default-settings.js'
 import DraftError from 'shared/components/workbench/draft/error.js'
 import theme from 'pkgs/plugin-theme/src/index.js'
+import preloaders from 'shared/components/workbench/preload.js'
 
 // Views
 import Measurements from 'shared/components/workbench/measurements/index.js'
@@ -57,7 +58,7 @@ const hasRequiredMeasurements = (pattern, gist) => {
  * keeping the gist state, which will trickly down
  * to all workbench subcomponents
  */
-const WorkbenchWrapper = ({ app, pattern }) => {
+const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
 
   // State for gist
   const [gist, setGist] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
@@ -70,6 +71,14 @@ const WorkbenchWrapper = ({ app, pattern }) => {
       && !hasRequiredMeasurements(pattern, gist)
     ) updateGist(['_state', 'view'], 'measurements')
   })
+
+  // If we need to preload the gist, do so
+  useEffect(async () => {
+    if (preload && from && preloaders[from]) {
+      const g = await preloaders[from](preload, pattern)
+      // FIXME: Continue here
+    }
+  }, [preload, from])
 
   // Helper methods to manage the gist state
   const updateGist = (path, content) => {

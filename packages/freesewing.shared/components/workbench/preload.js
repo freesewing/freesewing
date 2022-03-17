@@ -1,0 +1,28 @@
+import yaml from 'js-yaml'
+import axios from 'axios'
+
+const preload = {
+  github: async (id, pattern) => {
+    let result
+    try {
+      result = await axios.get(`https://api.github.com/gists/${id}`)
+    }
+    catch (err) {
+      console.log(err)
+      return [false, 'An unexpected error occured']
+    }
+
+    if (result.data.files['pattern.yaml'].content) {
+      let g = yaml.load(result.data.files['pattern.yaml'].content)
+      if (g.design !== pattern.config.name) return [
+        false, `You tried loading a configuration for ${g.design} into a ${design} development environment`
+      ]
+
+      return g
+    }
+    else return [false, 'This gist does not seem to be a valid pattern configuration']
+  }
+}
+
+export default preload
+
