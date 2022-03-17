@@ -9514,9 +9514,9 @@ d@1, d@^1.0.1:
     type "^1.0.1"
 
 daisyui@^2.0.6:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.4.0.tgz#37f191217968aca6f5d82512ea9b5d23c5a8e2a1"
-  integrity sha512-a03h5h+qQ70MohTiZW4FIf7+fs0mG0irhagImFMoVxPXTklI/p7Pys0sfgJEPOEcBLPX2LD7IO1sDw1PkLrERg==
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.9.0.tgz#08cb0320f0f2a56606266e245dcfe32595546d04"
+  integrity sha512-jYIFqwOi8JTUnNBJQafuMdGaYk5hpF42PKjWY9kF+humfGyLh8iKAscMUDbkLY3Sd+PRIFam7SUYXAzsdGwy7Q==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
