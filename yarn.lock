@@ -18329,10 +18329,10 @@ mongodb-connection-string-url@^2.4.1:
     "@types/whatwg-url" "^8.2.1"
     whatwg-url "^11.0.0"
 
-mongodb-memory-server-core@8.4.0:
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-8.4.0.tgz#1a9c7cb0ee9bfea2613985240865392a22689333"
-  integrity sha512-xagSOsx+E1ZxT5j4BMci8U3qAHG7o4PGLiwUDavTF6aKTPEAXVQZE8VNR/0Z1cl0nXSOoOO65XhqNSKM7svXng==
+mongodb-memory-server-core@8.4.1:
+  version "8.4.1"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-8.4.1.tgz#3cb853b104c80202e558e5aaea722c5ff3db3134"
+  integrity sha512-AbyqsDKEEW2mulK70Twn+qN3yso082vozYg97OmFoRTtVD94m7Uq2PxnAnKrG5fKXX/TSnWZFyRZA6dmjZyPug==
   dependencies:
     "@types/tmp" "^0.2.3"
     async-mutex "^0.3.2"
@@ -18352,11 +18352,11 @@ mongodb-memory-server-core@8.4.0:
     yauzl "^2.10.0"
 
 mongodb-memory-server@^8.3.0:
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-8.4.0.tgz#254ed7f116353a7e4bd5205c1aef80ef8aa4c606"
-  integrity sha512-DHMSxQuUtg84z4V6jpyinHsn2AnKzxTZ10AAnodRw8xdiz/a0byCqLkHRfQXGSywCMz9/x/l46YLLDpRfhQ2hQ==
+  version "8.4.1"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-8.4.1.tgz#d52634fbb0b671b4cde95d2720dbfa6c554b2791"
+  integrity sha512-TNdGbxFaYedFEQaxqvl9EMpL5RRj4yf09xGQ3MltWcvxvi0n9e7US7Q9eWp9+APn6lEzOxSEom1xYfGuqAPpQw==
   dependencies:
-    mongodb-memory-server-core "8.4.0"
+    mongodb-memory-server-core "8.4.1"
     tslib "^2.3.1"
 
 mongodb@3.6.2:
