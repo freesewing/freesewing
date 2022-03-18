@@ -61,10 +61,7 @@ export default function (part) {
   // Create control points
 
   /* Control point for waistband dip */
-  points.backWaistBandLeftCp1 = new Point(
-    points.backWaistBandRight.x / 3,
-    points.backWaistBandMid.y
-  )
+  points.backWaistBandLeftCp1 = points.backWaistBandMid.shift(0,points.backWaistBandMid.dx(points.backWaistBandLeft) / 3 )  
 
   /* Flip points to right side */
   points.backWaistBandRightCp1 = points.backWaistBandLeftCp1.flipX(points.backWaistMid)

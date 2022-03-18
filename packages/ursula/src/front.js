@@ -106,10 +106,8 @@ export default function (part) {
     .shift(270, points.frontGussetLeft.dy(points.frontWaistBandMid) * options.taperToGusset)
 
   /* Control point for waistband dip */
-  points.frontWaistBandLeftCp1 = new Point(
-    points.frontWaistBandRight.x / 3,
-    points.frontWaistBandMid.y
-  )
+  points.frontWaistBandLeftCp1 = points.frontWaistBandMid.shift(0,points.frontWaistBandMid.dx(points.frontWaistBandLeft) / 3 )
+
 
   /* Flip control points to right side */
   points.frontGussetRightCp1 = points.frontGussetLeftCp1.flipX(points.frontWaistMid)
