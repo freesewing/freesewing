@@ -152,7 +152,7 @@ const Part = props => {
   const partLayout= layout.parts[name]
 
   // Don't just assume this makes sense
-  if (typeof layout.parts[name].move?.x === 'undefined') return null
+  if (typeof layout.parts?.[name]?.move?.x === 'undefined') return null
 
   // Use a ref for direct DOM manipulation
   const partRef = useRef(null)

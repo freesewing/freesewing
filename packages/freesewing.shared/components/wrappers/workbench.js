@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu/index.js'
@@ -62,6 +62,7 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
 
   // State for gist
   const [gist, setGist] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
+  const [messages, setMessages] = useState([])
 
   // If we don't have the required measurements,
   // force view to measurements
@@ -76,7 +77,7 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
   useEffect(async () => {
     if (preload && from && preloaders[from]) {
       const g = await preloaders[from](preload, pattern)
-      // FIXME: Continue here
+      setGist({ ...gist, ...g.settings })
     }
   }, [preload, from])
 
@@ -90,6 +91,17 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
     const newGist = {...gist}
     unset(newGist, path)
     setGist(newGist)
+  }
+  // Helper methods to handle messages
+  const feedback = {
+    add: msg => {
+      const newMsgs = [...messages]
+      if (Array.isArray(msg)) newMsgs.push(...msg)
+      else newMsgs.push(msg)
+      setMessages(newMsgs)
+    },
+    set: setMessages,
+    clear: () => setMessages([]),
   }
 
   // Generate the draft here so we can pass it down
@@ -107,7 +119,7 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
   }
 
   // Props to pass down
-  const componentProps = { app, pattern, gist, updateGist, unsetGist, setGist, draft }
+  const componentProps = { app, pattern, gist, updateGist, unsetGist, setGist, draft, feedback }
   // Required props for layout
   const layoutProps = {
     app: app,
@@ -121,6 +133,7 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
     : views.welcome
 
   return  <Layout {...layoutProps}>
+            {messages}
             <Component {...componentProps} />
           </Layout>
 }

@@ -15,7 +15,7 @@ const preload = {
     if (result.data.files['pattern.yaml'].content) {
       let g = yaml.load(result.data.files['pattern.yaml'].content)
       if (g.design !== pattern.config.name) return [
-        false, `You tried loading a configuration for ${g.design} into a ${design} development environment`
+        false, `You tried loading a configuration for ${g.design} into a ${pattern.config.name} development environment`
       ]
 
       return g
