@@ -83,7 +83,8 @@ export default function (part) {
     .shift(270, measurements.waistToUpperLeg * options.frontDip) /* Waist band dip */
 
   /* Leg opening is also on the sideLeft path, and cannot be higher than rise */
-  store.set('adjustedLegOpening',Math.min(options.legOpening,options.rise)) // TODO: account for rise having a different domain
+  /* Minimum side seam length is defined as 3.5% of the sideLeft path (which is at least waistToUpperLeg long) */
+  store.set('adjustedLegOpening',Math.min(options.legOpening,options.rise - 0.035)) // TODO: account for rise having a different domain
   
   points.frontLegOpeningLeft = paths.sideLeft.shiftFractionAlong(store.get('adjustedLegOpening'))
   points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band low point
