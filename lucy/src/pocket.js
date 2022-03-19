@@ -2,11 +2,15 @@ export default function (part) {
   const { options, Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
     part.shorthand()
 
-  const w = 500 * options.size
+
+    //pocket seams here 
+  let pocketLength = 800 * options.length
+  let pocketWidth = 500 * options.width
+
   points.topLeft = new Point(0, 0)
-  points.topRight = new Point(w, 0)
-  points.bottomLeft = new Point(0, w / 2)
-  points.bottomRight = new Point(w, w / 2)
+  points.topRight = new Point(pocketWidth, 0)
+  points.bottomLeft = new Point(0, pocketLength)
+  points.bottomRight = new Point(pocketWidth, pocketLength)
 
   paths.seam = new Path()
     .move(points.topLeft)
