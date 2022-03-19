@@ -268,7 +268,7 @@ const Workbench = ({
           ...gist.settings,
           embed: true
         }).use(svgattrPlugin, {
-          class: 'freesewing draft'
+          class: 'freesewing pattern draft'
         })
         try {
           pattern.sample()
