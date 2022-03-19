@@ -4,7 +4,7 @@ const Svg = ({
   embed = true,
   design = false,
   language = 'en',
-  className = 'freesewing draft',
+  className = 'freesewing pattern draft',
   style = {},
   viewBox = false,
   width,
