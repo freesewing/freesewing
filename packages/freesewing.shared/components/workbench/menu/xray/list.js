@@ -17,7 +17,7 @@ const XrayList = props => {
 
   const title = t(`parts:${props.partName}`) + ` (${props.partName})`
 
-  const part = props.gist.xray.parts[props.partName]
+  const part = props.gist._state.xray.parts[props.partName]
 
   // Is this the only part on display?
   const only = (
@@ -47,7 +47,7 @@ const XrayList = props => {
           </button>
           <button
             className="text-accent px-3 hover:text-secondary-focus"
-            onClick={() => props.unsetGist(['xray', 'parts', props.partName])}
+            onClick={() => props.unsetGist(['_state', 'xray', 'parts', props.partName])}
           >
             <ClearIcon />
           </button>
@@ -63,7 +63,7 @@ const XrayList = props => {
                   </SumDiv>
                   <button
                     className="text-accent px-3 hover:text-secondary-focus"
-                    onClick={() => props.unsetGist(['xray', 'parts', props.partName, type])}
+                    onClick={() => props.unsetGist(['_state', 'xray', 'parts', props.partName, type])}
                   >
                     <ClearIcon />
                   </button>
@@ -81,16 +81,16 @@ const XrayList = props => {
                             </SumDiv>
                             <button
                               className={`px-3 hover:text-secondary-focus"
-                                ${props.gist.xray?.reveal?.[props.partName]?.[type]?.[id]
+                                ${props.gist._state?.xray?.reveal?.[props.partName]?.[type]?.[id]
                                   ? 'text-accent'
                                   : 'text-secondary'
                                 }`}
-                              onClick={props.gist.xray?.reveal?.[props.partName]?.[type]?.[id]
+                              onClick={props.gist._state?.xray?.reveal?.[props.partName]?.[type]?.[id]
                                 ? () => props.unsetGist(
-                                  ['xray', 'reveal', props.partName, type, id]
+                                  ['_state', 'xray', 'reveal', props.partName, type, id]
                                 )
                                 : () => props.updateGist(
-                                  ['xray', 'reveal', props.partName, type, id],
+                                  ['_state', 'xray', 'reveal', props.partName, type, id],
                                   id
                                 )
                               }
@@ -100,8 +100,8 @@ const XrayList = props => {
                             <button
                               className="text-accent px-3 hover:text-secondary-focus"
                               onClick={() => {
-                                props.unsetGist(['xray', 'parts', props.partName, type, id])
-                                props.unsetGist(['xray', 'reveal', props.partName, type, id])
+                                props.unsetGist(['_state', 'xray', 'parts', props.partName, type, id])
+                                props.unsetGist(['_state', 'xray', 'reveal', props.partName, type, id])
                               }}
                             >
                               <ClearIcon />

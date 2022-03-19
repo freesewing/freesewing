@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu/index.js'
@@ -7,6 +7,7 @@ import unset from 'lodash.unset'
 import defaultSettings from 'shared/components/workbench/default-settings.js'
 import DraftError from 'shared/components/workbench/draft/error.js'
 import theme from 'pkgs/plugin-theme/src/index.js'
+import preloaders from 'shared/components/workbench/preload.js'
 
 // Views
 import Measurements from 'shared/components/workbench/measurements/index.js'
@@ -16,11 +17,15 @@ import ExportDraft from 'shared/components/workbench/export.js'
 import GistAsJson from 'shared/components/workbench/json.js'
 import GistAsYaml from 'shared/components/workbench/yaml.js'
 import DraftEvents from 'shared/components/workbench/events.js'
+import CutLayout from 'shared/components/workbench/layout/cut'
+import PrintLayout from 'shared/components/workbench/layout/print'
 
 const views = {
   measurements: Measurements,
   draft: LabDraft,
   test: LabSample,
+  printingLayout: PrintLayout,
+  cuttingLayout: CutLayout,
   export: ExportDraft,
   events: DraftEvents,
   yaml: GistAsYaml,
@@ -53,10 +58,11 @@ const hasRequiredMeasurements = (pattern, gist) => {
  * keeping the gist state, which will trickly down
  * to all workbench subcomponents
  */
-const WorkbenchWrapper = ({ app, pattern }) => {
+const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
 
   // State for gist
   const [gist, setGist] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
+  const [messages, setMessages] = useState([])
 
   // If we don't have the required measurements,
   // force view to measurements
@@ -66,6 +72,14 @@ const WorkbenchWrapper = ({ app, pattern }) => {
       && !hasRequiredMeasurements(pattern, gist)
     ) updateGist(['_state', 'view'], 'measurements')
   })
+
+  // If we need to preload the gist, do so
+  useEffect(async () => {
+    if (preload && from && preloaders[from]) {
+      const g = await preloaders[from](preload, pattern)
+      setGist({ ...gist, ...g.settings })
+    }
+  }, [preload, from])
 
   // Helper methods to manage the gist state
   const updateGist = (path, content) => {
@@ -77,6 +91,17 @@ const WorkbenchWrapper = ({ app, pattern }) => {
     const newGist = {...gist}
     unset(newGist, path)
     setGist(newGist)
+  }
+  // Helper methods to handle messages
+  const feedback = {
+    add: msg => {
+      const newMsgs = [...messages]
+      if (Array.isArray(msg)) newMsgs.push(...msg)
+      else newMsgs.push(msg)
+      setMessages(newMsgs)
+    },
+    set: setMessages,
+    clear: () => setMessages([]),
   }
 
   // Generate the draft here so we can pass it down
@@ -94,7 +119,7 @@ const WorkbenchWrapper = ({ app, pattern }) => {
   }
 
   // Props to pass down
-  const componentProps = { app, pattern, gist, updateGist, unsetGist, setGist, draft }
+  const componentProps = { app, pattern, gist, updateGist, unsetGist, setGist, draft, feedback }
   // Required props for layout
   const layoutProps = {
     app: app,
@@ -108,6 +133,7 @@ const WorkbenchWrapper = ({ app, pattern }) => {
     : views.welcome
 
   return  <Layout {...layoutProps}>
+            {messages}
             <Component {...componentProps} />
           </Layout>
 }

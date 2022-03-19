@@ -21,8 +21,20 @@ const View = props => {
       onClick: () => props.updateGist(['_state', 'view'], 'test')
     },
     {
+      name: 'printingLayout',
+      title: t('layoutThing', { thing: props.pattern.config.name })
+       + ': ' + t('forPrinting'),
+      onClick: () => props.updateGist(['_state', 'view'], 'printingLayout')
+    },
+    {
+      name: 'cuttingLayout',
+      title: t('layoutThing', { thing: props.pattern.config.name })
+       + ': ' + t('forCutting'),
+      onClick: () => props.updateGist(['_state', 'view'], 'cuttingLayout')
+    },
+    {
       name: 'export',
-      title: t('export'),
+      title: t('exportThing', { thing: props.pattern.config.name }),
       onClick: () => props.updateGist(['_state', 'view'], 'export')
     },
     {
@@ -39,6 +51,16 @@ const View = props => {
       name: 'json',
       title: t('JSON'),
       onClick: () => props.updateGist(['_state', 'view'], 'json')
+    },
+    {
+      name: 'edit',
+      title: t('editThing', { thing: 'YAML' }),
+      onClick: () => props.updateGist(['_state', 'view'], 'edit')
+    },
+    {
+      name: 'clear',
+      title: t('clearThing', { thing: 'YAML' }),
+      onClick: () => props.setGist(null)
     },
   ]
 

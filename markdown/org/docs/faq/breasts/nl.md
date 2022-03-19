@@ -2,22 +2,22 @@
 title: "Waar wordt met of zonder borsten over gesproken?"
 ---
 
-Some people get confused by the terms _with breasts_ and _without breasts_.
+Voor sommige mensen zijn de termen _met borsten_ en _zonder borsten_ verwarrend.
 
 We gebruiken deze termen als een genderomvattende manier om ons af te vragen of iemand wel of geen borsten heeft.
 
 ##### Zoals het van toepassing is op lichamen
 
-Bijna elk kledingbedrijf heeft twee hoofdcategorieën voor zijn kledingwijze: mensontering en vrouwmoeder. Deze kledingontwerpen zijn meestal gebaseerd op het ideale of gemiddelde lichaam. Meaning, for womenswear, the designer will likely make a garment for a body with breasts, narrow shoulders, a smaller waist and wide hips.
+Bijna elk kledingbedrijf heeft twee hoofdcategorieën voor zijn kledingwijze: mensontering en vrouwmoeder. Deze kledingontwerpen zijn meestal gebaseerd op het ideale of gemiddelde lichaam. Wat betekent, voor vrouwenkleren zal de ontwerper waarschijnlijk een kledingstuk maken voor een lichaam met borsten, smalle schouders, een kleine taille en brede heupen.
 
-These characteristics are generally thought of as _the typical characteristics of a woman's body_. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
+Deze eigenschappen worden vaak gezien als _de typische eigenschappen van het vrouwelijk lichaam_. Wij zijn echter van mening dat het het beste is om hiervan uit de buurt te blijven: geen enkel lichaam is gemiddeld en we willen een genderinclusieve omgeving maken.
 
-We do not want to exclude anyone and we think that _body shape ≠ gender_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
+We willen niemand buitensluiten en we geloven dat _lichaam ≠ geslacht_. Daarom gebruiken we de termen **met borsten** en ** zonder borsten**, simpelweg om te vragen of iemand borsten heeft of niet.
 
 ##### Hoe het van toepassing is op patronen
 
-Any user can draft any pattern on our site, as long as they provide the required measurements. Voor sommige patronen zijn metingen die alleen relevant zijn als je borsten hebt.
+Iedereen kan welk patroon dan ook maken op onze site, zolang ze maar de benodigde afmetingen geven. Voor sommige patronen zijn metingen die alleen relevant zijn als je borsten hebt.
 
 ##### Hoe het van toepassing is op bindende waarden
 
-Als je gebonden bent, gebruik dan de **zonder borsten** patronen en gebruik het cirumference van je gebonden kist als [borstmaat](/docs/measurements/chest/)
+Als je een binder draagt, gebruik dan de **zonder borsten** patronen en gebruik de omtrek van je borstkas terwijl je je binder draagt als [borstmaat](/docs/measurements/chest/)

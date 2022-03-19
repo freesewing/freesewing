@@ -66,7 +66,7 @@ module.exports = {
   '--code-font-weight-property': 'bold',
 
   '--pattern-bg': colors.lime['900'],
-  '--pattern-fabric': colors.neutral['700'],
+  '--pattern-fabric': colors.neutral['400'],
   '--pattern-lining': colors.emerald['500'],
   '--pattern-interfacing': colors.neutral['400'],
   '--pattern-canvas': colors.amber['600'],

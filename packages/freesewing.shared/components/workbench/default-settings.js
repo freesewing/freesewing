@@ -11,7 +11,6 @@ const defaultSettings = {
   renderer: 'react',
   embed: true,
   debug: true,
-  xray: false,
 }
 
 export default defaultSettings

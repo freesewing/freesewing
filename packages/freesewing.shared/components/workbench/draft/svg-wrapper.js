@@ -40,14 +40,10 @@ const SvgWrapper = props => {
             <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
             <g>
               {Object.keys(patternProps.parts).map((name) => (
-                <Part
+                <Part {...{ app, gist, updateGist, unsetGist }}
                   key={name}
                   partName={name}
                   part={patternProps.parts[name]}
-                  app={app}
-                  gist={gist}
-                  updateGist={updateGist}
-                  unsetGist={unsetGist}
                 />
               ))}
             </g>

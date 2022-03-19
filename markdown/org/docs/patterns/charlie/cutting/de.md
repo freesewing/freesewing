@@ -4,7 +4,7 @@
 - Teil **2**: **2 x** _mit guten Seiten zusammen_.
 - Teil **4**: **4 x**
 - Teil **6**: **2 x**
-- Teil **8**: **2 x** 2 _mit guten Seiten zusammen_
+- Part **8**: **4 x** (2 pairs _with good sides together_)
 - Teil **9**: **2 x** _mit guten Seiten zusammen_
 - Teil **10**: **1 x** auf der Falte
 - Teil **11**: **1 x** wenn eine geradlinige Taille hergestellt wird

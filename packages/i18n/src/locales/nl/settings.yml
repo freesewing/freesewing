@@ -30,8 +30,8 @@ debug:
   title: Debug
   description: Schakel debug in om extra informatie te krijgen over hoe je patroon tot stand kwam
 scale:
-  title: Scale
-  description: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
+  title: Schaal
+  description: Bepaalt de totale lijnbreedte, lettergrootte en andere elementen die niet schalen met de metingen van het patroon
 renderer:
   title: Render engine
   description: Controls how the pattern is rendered (drawn) on the screen
