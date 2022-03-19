@@ -12,6 +12,24 @@ export default function (part) {
   points.bottomLeft = new Point(0, pocketLength)
   points.bottomRight = new Point(pocketWidth, pocketLength)
 
+  //center point
+  points.center = new Point(pocketWidth / 2, 0)
+
+  //slit end 
+ points.middle = new Point(pocketWidth / 2, pocketLength / 2)
+ 
+
+ paths.slit = new Path()
+  .move(points.center)
+  .line(points.middle)
+  .line(points.center)
+  .close()
+  .attr("class", "various dashed")
+
+  
+ 
+
+
   paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
@@ -23,7 +41,7 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.7)
     snippets.logo = new Snippet('logo', points.logo)
     points.text = points.logo
       .shift(-90, pocketWidth / 2)
