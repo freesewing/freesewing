@@ -102,9 +102,10 @@ export default function (part) {
     180,
     points.frontGussetLeft.dy(points.frontLegOpeningLeft) / 3
   )
+  
+  /* Control point above gusset moves higher as taperToGusset (= front exposure) increases, but is limited by both the leg opening (allow minimal arching only) and the rise (leg opening must not intersect the waist band) */
   points.frontGussetLeftCp1 = points.frontGussetLeft
-    //    .shift(270, points.frontGussetLeft.dy(points.frontSeatLeft) * 4 * options.taperToGusset); // Consider changing this so it's relative
-    .shift(270, points.frontGussetLeft.dy(points.frontWaistBandMid) * options.taperToGusset)
+    .shift(270, Math.max(Math.max(points.frontGussetLeft.dy(points.frontWaistMid) * options.taperToGusset / 2,points.frontGussetLeft.dy(points.frontLegOpeningLeft) * 2),points.frontGussetLeft.dy(points.frontWaistBandMid)))
 
   /* Control point for waistband dip */
   points.frontWaistBandLeftCp1 = points.frontWaistBandMid.shift(0,points.frontWaistBandMid.dx(points.frontWaistBandLeft) / 3 )
