@@ -22,14 +22,15 @@ export default {
     'sewing pattern',
   ],
   optionGroups: {
-    fit: ['size'],
+    fit: ['length', 'width'],
   },
   measurements: [],
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ['box'],
+  parts: ['pocket'],
   options: {
-    size: { pct: 50, min: 10, max: 100 },
+    length: { pct: 50, min: 10, max: 100 },
+    width: { pct: 50, min: 10, max: 100 }, 
   },
 }
