@@ -8,9 +8,9 @@ export default function (part) {
   let pocketWidth = 500 * options.width
 
   points.topLeft = new Point(0, 0)
-  points.topRight = new Point(pocketLength, 0)
-  points.bottomLeft = new Point(0, pocketWidth)
-  points.bottomRight = new Point(pocketLength, pocketWidth)
+  points.topRight = new Point(pocketWidth, 0)
+  points.bottomLeft = new Point(0, pocketLength)
+  points.bottomRight = new Point(pocketWidth, pocketLength)
 
   paths.seam = new Path()
     .move(points.topLeft)
