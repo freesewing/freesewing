@@ -95,29 +95,31 @@ export default function (part) {
     points.backGussetRight = points.backGussetLeft.flipX(points.backWaistMid)
   } else {
     /* If back exposure is low and flares out to cover more */
+    store.set('adjustedBackExposure',options.backExposure * store.get('adjustedLegOpening')) // flare depends on leg opening
     /* This controls the hip bit */
     points.backLegOpeningLeftCp1 = points.backLegOpeningLeft.shift(
-      -45,
-      points.backWaistBandMid.x / 8
-    )
+      -45,store.get('adjustedBackExposure') * points.backWaistBandMid.dx(points.backWaistBandLeft))
     /* This controls the taper to gusset */
-    points.backGussetLeftCp1 = points.backGussetLeft.shift(115, points.backWaistBandMid.x / 8)
-    /* This adds a new point in the middle of the back coverage */
-    points.backFlare = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.5)
+    points.backGussetLeftCp1 = points.backGussetLeft.shift(115, store.get('adjustedBackExposure') * points.backWaistBandMid.dx(points.backWaistBandLeft))
+	
+	/* center of the flare and its control points are on a line parallel to the backGussetLeft to backLegOpeningLeft line
+	* first, define the points on that line */
+	points.backFlare = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.5)
+    // points.backFlareCp1 = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.5 - store.get('adjustedBackExposure'))
+	points.backFlareCp1 = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.7)
+	points.backFlareCp2 = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.3)
+	/* then shift all three points outward */
     points.backFlareLeft = points.backFlare.shift(
-      215,
-      (-points.backWaistBandMid.x / 2) * options.backExposure
-    )
+      215,(points.backWaistBandMid.dx(points.backWaistBandLeft)) * store.get('adjustedBackExposure') * 2 )
+	points.backFlareLeftCp1 = points.backFlareCp1.shift(
+      215,(points.backWaistBandMid.dx(points.backWaistBandLeft)) * store.get('adjustedBackExposure') * 2 )
+	points.backFlareLeftCp2 = points.backFlareCp2.shift(
+      215,(points.backWaistBandMid.dx(points.backWaistBandLeft)) * store.get('adjustedBackExposure') * 2 )
+	
+	
+    /* Flip points to the right */
+    
     points.backFlareRight = points.backFlareLeft.flipX(points.backWaistBandMid)
-    /* This controls the flare */
-    points.backFlareLeftCp1 = points.backFlareLeft.shift(
-      115,
-      points.backWaistBandMid.x / 5 //-150*options.backExposure
-    )
-    points.backFlareLeftCp2 = points.backFlareLeft.shift(
-      295,
-      points.backWaistBandMid.x / 5 //-150*options.backExposure
-    )
     points.backFlareRightCp1 = points.backFlareLeftCp1.flipX(points.backWaistMid)
     points.backFlareRightCp2 = points.backFlareLeftCp2.flipX(points.backWaistMid)
   }
