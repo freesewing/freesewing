@@ -16,7 +16,12 @@ export default function (part) {
   points.center = new Point(pocketWidth / 2, 0)
 
   //slit end 
- points.middle = new Point(pocketWidth / 2, pocketLength / 2)
+ points.middle = new Point(pocketWidth / 2, pocketLength * 0,4375) 
+  
+ //top 
+
+ points.centerRight = points.center.shiftOutwards(points.topRight, pocketWidth * 0,7)
+ points.centerLeft = points.center.shiftOutwards(points.topLeft, pocketWidth * 0,7)
  
 
  paths.slit = new Path()
