@@ -4,8 +4,8 @@ export default function (part) {
 
 
     //pocket seams here 
-  let pocketLength = 800 * options.length
-  let pocketWidth = 500 * options.width
+  let pocketLength = (800 * options.length)
+  let pocketWidth = (500 * options.width)
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pocketWidth, 0)
@@ -16,12 +16,12 @@ export default function (part) {
   points.center = new Point((pocketWidth / 2), 0)
 
   //slit end 
- points.middle = points.center.shift(270,(pocketLength*0,525)) 
+ points.middle = points.center.shift(270,(pocketLength*0.525)) 
   
  //top 
 
- points.centerRight = points.center.shift(0, (pocketWidth * 0,35))
- points.centerLeft = points.center.shift(180, (pocketWidth * 0,35))
+ points.centerRight = points.center.shift(0, pocketWidth * 0.25)
+ points.centerLeft = points.center.shift(180, pocketWidth * 0.25)
  
 
  paths.slit = new Path()
