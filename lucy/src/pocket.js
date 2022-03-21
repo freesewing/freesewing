@@ -16,7 +16,7 @@ export default function (part) {
   points.center = new Point(pocketWidth / 2, 0)
 
   //slit end 
- points.middle = new Point(pocketWidth / 2, pocketLength * 0,4375) 
+ points.middle = points.middle.shift(90, pocketLength * 0,525) 
   
  //top 
 
@@ -29,18 +29,18 @@ export default function (part) {
   .line(points.middle)
   .line(points.center)
   .close()
-  .attr("class", "various dashed")
+  .attr("class", "dashed")
 
   
  
 
 
   paths.seam = new Path()
-    .move(points.topLeft)
+    .move(points.centerLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
+    .line(points.centerRight)
+    .line(points.centerLeft)
     .close()
     .attr('class', 'fabric')
 
