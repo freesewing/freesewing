@@ -70,6 +70,11 @@ export default function (part) {
       to: points.topRight,
       x: points.topRight.x + sa + 15,
     })
+    macro('hd', {
+      from: points.centerLeft,
+      to: points.centerRight,
+      y: points.topLeft.y + sa + 15,
+    })
   }
 
   return part
