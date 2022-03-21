@@ -16,7 +16,7 @@ export default function (part) {
   points.center = new Point(pocketWidth / 2, 0)
 
   //slit end 
- points.middle = points.middle.shift(90, pocketLength * 0,525) 
+ points.middle = points.center.shift(90, pocketLength * 0,525) 
   
  //top 
 
