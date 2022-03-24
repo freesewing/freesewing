@@ -1,13 +1,33 @@
 import Markdown from 'react-markdown'
 
-const eventBlock = events => events.join("  \n")
+// Markdown wrapper to suppress creation of P tags
+const Md = ({ children }) => <Markdown components={{ p: props => props.children }}>{children}</Markdown>
+
+const renderEvent = evt => Array.isArray(evt)
+  ? <Md>{evt[0]}</Md>
+  : typeof evt === 'object'
+  ? JSON.stringify(evt, null, 2)
+  : <Md>{evt}</Md>
 
 const EventGroup = ({ type='info', events=[] }) => events.length > 0 ? (
   <div className="">
     <h3 className="capitalize" id={`events-${type}`}>{type}</h3>
-    <div className="mdx ml-2">
-      <Markdown>{eventBlock(events)}</Markdown>
-    </div>
+    <table className="table w-full mdx">
+      <thead>
+        <tr>
+          <th className="text-right w-16">#</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        {events.map((evt, i) => (
+          <tr key={i} className="leading-1 hover:bg-base-200 hover:bg-opacity-40">
+            <td className="text-right p-1 pr-4 font-bold opacity-80 text-accent">{i}</td>
+            <td className="p-1 pl-4">{renderEvent(evt)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   </div>
 ) : null
 

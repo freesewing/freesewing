@@ -29,7 +29,7 @@ const LabDraft = props => {
   return (
     <>
       {(!patternProps || patternProps.events.error.length > 0)
-        ? <Error draft={draft} patternProps={patternProps} updateGist={updateGist} />
+        ? <Error {...{ draft, patternProps, updateGist }} />
         : null
       }
       <SvgWrapper {...{ draft, patternProps, gist, updateGist, unsetGist, app, feedback }} />
