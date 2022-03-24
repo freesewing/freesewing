@@ -49,7 +49,7 @@ const Error = ({ draft, patternProps, error, updateGist }) => {
           <button disabled={!share} className="btn btn-primary">Report this</button>
         </p>
         <p>
-          If you rather not share any info, or investigate the problem yourself, you can do so:
+          If you prefer not to share any info, or want to investigate the problem yourself, you can do so:
         </p>
         <ul className="list-disc list-inside ml-4 text-xl">
             <li>
