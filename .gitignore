@@ -72,6 +72,7 @@ packages/freesewing.lab/public/locales/fr/*.json
 packages/freesewing.lab/public/locales/nl/*.json
 
 packages/freesewing.lab/lib
+packages/freesewing.lab/pages
 
 # dependencies
 node_modules
