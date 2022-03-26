@@ -6,9 +6,10 @@ import patterns from 'site/patterns.json'
 // Locale and translation
 import { useTranslation } from 'next-i18next'
 import { capitalize } from 'shared/utils'
+import useVersion from 'site/hooks/useVersion.js'
 
 // Initial navigation
-const initialNavigation = (t) => {
+const initialNavigation = (t, version) => {
   const base = {
     accessories: {
       __title: t('accessoryPatterns'),
@@ -41,7 +42,7 @@ const initialNavigation = (t) => {
         __title: capitalize(design),
         __order: design,
         __linktitle: capitalize(design),
-        __slug: `${type}/${design}`
+        __slug: `v/${version}/${design}`
       }
     }
   }
@@ -50,6 +51,9 @@ const initialNavigation = (t) => {
 }
 
 function useApp(full = true) {
+
+  // Version
+  const version = useVersion()
 
   // Locale (aka language)
   const { t } = useTranslation(['app'])
@@ -65,7 +69,7 @@ function useApp(full = true) {
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(initialNavigation(t))
+  const [navigation, setNavigation] = useState(initialNavigation(t, version))
   const [slug, setSlug] = useState('/')
   const [pattern, setPattern] = useState(false)
   const [loading, setLoading] = useState(false)

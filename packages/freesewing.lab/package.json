@@ -54,5 +54,6 @@
   },
   "engines": {
     "node": ">=14.18.1"
-  }
+  },
+  "browserslist": [ "last 2 versions" ]
 }

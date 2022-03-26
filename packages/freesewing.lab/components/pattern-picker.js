@@ -2,9 +2,12 @@ import React from 'react'
 import DesignIcon from 'shared/components/icons/design.js'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
+import useVersion from 'site/hooks/useVersion.js'
+import { formatVersionUri } from './version-picker.js'
 
 const PatternPicker = ({ app }) => {
   const { t } = useTranslation(['common'])
+  const version = useVersion()
 
   return (
       <div className="dropdown">
@@ -27,7 +30,7 @@ const PatternPicker = ({ app }) => {
               </li>
               {app.patterns[section].map(pattern => (
                 <li key={pattern}>
-                  <Link href={`/${section}/${pattern}`}>
+                  <Link href={formatVersionUri(version, pattern)}>
                     <button className="btn btn-ghost">
                       <span className="text-base-content">
                         {pattern}
