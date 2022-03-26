@@ -89,7 +89,6 @@ export async function getStaticProps({ locale }) {
 const l = 'prebuild'
 export const prebuildLab = async (site) => {
   const promises = []
-  const allVersions = {}
   // Load config
   const versions = JSON.parse(await fs.readFile(
     path.resolve('..', 'freesewing.lab', 'versions.json'),
@@ -128,55 +127,57 @@ export const prebuildLab = async (site) => {
         )
       )
 
-      // Download published versions from unpkg
-      allVersions[design] = []
-      for (const version of versions) {
-        // Assume that if the file is on disk, it's good to go (caching)
-        const file = path.resolve('..', `freesewing.lab`, 'lib', version, `${design}.mjs`)
-        let cached
-        try {
-          const result = await fs.access(file)
-          cached = true
-        }
-        catch(err) {
-          cached = false
-        }
-        if (!cached) {
-          await fs.mkdir(path.resolve('..', `freesewing.lab`, 'lib', version), { recursive: true })
-          await fs.mkdir(path.resolve('..', `freesewing.lab`, 'pages', 'v', version), { recursive: true })
-          const code = (await loadFromUnpkg(design, version))
-          if (code) {
-            promises.push(
-              fs.writeFile(
-                path.resolve('..', `freesewing.lab`, 'lib', version, `${design}.mjs`),
-                code
-              ),
-              fs.writeFile(
-                path.resolve('..', `freesewing.lab`, 'pages', 'v', version, `${design}.js`),
-                versionedPageTemplate(design, version)
-              ),
-            )
-            allVersions[design].push(version)
-          } else console.log(`No ${version} for ${design}`)
+      if (process.env.BUILD_ALL_VERSIONS) {
+        // Download published versions from unpkg
+        for (const version of versions) {
+          // Assume that if the file is on disk, it's good to go (caching)
+          const file = path.resolve('..', `freesewing.lab`, 'lib', version, `${design}.mjs`)
+          let cached
+          try {
+            const result = await fs.access(file)
+            cached = true
+          }
+          catch(err) {
+            cached = false
+          }
+          if (!cached) {
+            await fs.mkdir(path.resolve('..', `freesewing.lab`, 'lib', version), { recursive: true })
+            await fs.mkdir(path.resolve('..', `freesewing.lab`, 'pages', 'v', version), { recursive: true })
+            const code = (await loadFromUnpkg(design, version))
+            if (code) {
+              promises.push(
+                fs.writeFile(
+                  path.resolve('..', `freesewing.lab`, 'lib', version, `${design}.mjs`),
+                  code
+                ),
+                fs.writeFile(
+                  path.resolve('..', `freesewing.lab`, 'pages', 'v', version, `${design}.js`),
+                  versionedPageTemplate(design, version)
+                ),
+              )
+            } else console.log(`No ${version} for ${design}`)
+          }
         }
       }
     }
   }
 
-  // Also add version overview pages
-  for (const version of versions) {
-    // Assume that if the file is on disk, it's good to go (caching)
-    const page = path.resolve('..', `freesewing.lab`, 'pages', 'v', version, 'index.js')
-    let cached
-    try {
-      await fs.access(page)
-      cached = true
+  if (process.env.BUILD_ALL_VERSIONS) {
+    // Also add version overview pages
+    for (const version of versions) {
+      // Assume that if the file is on disk, it's good to go (caching)
+      const page = path.resolve('..', `freesewing.lab`, 'pages', 'v', version, 'index.js')
+      let cached
+      try {
+        await fs.access(page)
+        cached = true
+      }
+      catch(err) {
+        cached = false
+      }
+      // Create page if it's not there already
+      if (!cached) promises.push(fs.writeFile(page, versionOverviewPage(version)))
     }
-    catch(err) {
-      cached = false
-    }
-    // Create page if it's not there already
-    if (!cached) promises.push(fs.writeFile(page, versionOverviewPage(version)))
   }
 
   await Promise.all(promises)
