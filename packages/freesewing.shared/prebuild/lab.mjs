@@ -132,10 +132,10 @@ export const prebuildLab = async (site) => {
       allVersions[design] = []
       for (const version of versions) {
         // Assume that if the file is on disk, it's good to go (caching)
-        const file = path.resolve('..', `freesewing.lab`, 'lib', design, `${version}.js`)
+        const file = path.resolve('..', `freesewing.lab`, 'lib', version, `${design}.mjs`)
         let cached
         try {
-          await fs.access(file)
+          const result = await fs.access(file)
           cached = true
         }
         catch(err) {
