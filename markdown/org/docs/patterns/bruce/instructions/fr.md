@@ -1,12 +1,16 @@
+- - -
+title: "Bruce boxer briefs: Sewing Instructions"
+- - -
+
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
 
 ### Étape 1 : Assembler le dos et le premier côté
 
-![Assembler le dos et le premier côté](step01.png)
+![Join back to first side](step01.png)
 
-Alignez le côté du dos (pièce 1) avec le côté (pièce 3) endroit contre endroit. Comme le côté (pièce 3) est symétrique, vous ne pouvez pas vous tromper.
+Align the side of the back (piece 1) with the side (piece 3) making sure to put the good sides together. Since the side (piece 3) is symmetric, you can't go wrong.
 
-Assemblez-les ensemble à la surjeteuse, en tenant compte d'une marge de couture de 1 cm. Placez donc l'aiguille extérieure de votre surjeteuse à 1cm du bord de votre tissu.
+Serge them together, taking into account that the seam allowance is 1cm. So aim the outside needle of your serger 1cm from the edge of your fabric.
 
 > Pour ceux dont la mesure métrique n'est pas la tasse de thé : 1 cm correspond à 3/8 pouce.
 
@@ -14,33 +18,33 @@ Assemblez-les ensemble à la surjeteuse, en tenant compte d'une marge de couture
 
 ### Étape 2 : Assembler le dos et le second côté
 
-![Assembler le dos et le second côté](step02.png)
+![Join back to second side](step02.png)
 
-Alignez l'autre côté du dos (pièce 1) avec le second côté (pièce 3) endroit contre endroit. Comme le côté (pièce 3) est symétrique, vous ne pouvez pas vous tromper.
+Align the other side of the back (piece 1) with the second side (piece 3) making sure to put the good sides together. Since the side (piece 3) is symmetric, you can't go wrong.
 
-Assemblez-les ensemble à la surjeteuse, comme précédemment.
+Serge them together, as you did on the other side.
 
 > Le dos et les côtés sont maintenant assemblés. Mettez-les de côté pour l'instant.
 
 ### Étape 3 : Assembler le premier insert et les devants
 
-![Commencer à une extrémité](step03-a.png) ![Maintenez les pièces alignées au fur et à mesure que vous avancez](step03-b.png) ![Jusqu'à ce que vous atteigniez l'autre bout](step03-c.png)
+![Start at one end](step03-a.png) ![Continue to align the pieces as you move on](step03-b.png) ![Until you reach the other end](step03-c.png)
 
-Assemblez l'insert (pièce 4) avec les devants (pièce 2) à la surjeteuse sur leurs bords courbes.
+Joining the inset (piece 4) with the fronts (piece 2) requires you to serge them together across their curvy edges.
 
 > Rappelez-vous que vous avez deux devants. Vous devez les mettre l'un sur l'autre et les traiter comme une seule pièce à double épaisseur.
 
-Face à une couture aussi délicate, vous pourriez être tenté d'épingler ou de bâtir, mais ne le faites pas. Cela rendrait la couture plus difficile.
+Faced with a tricky seam like this, you might reach for your pins or basting thread, but don't. Pinning or basting this will make it harder to sew.
 
-Au lieu de cela, commencez en haut de la couture courbe, en alignant les pièces comme illustré, et en les assemblant à la surjeteuse lentement sur quelques cm.
+Instead, start at the top of the curved seam, aligning the pieces as shown, and slowly serge them together a few cm.
 
-Au fur et à mesure que vous avancez, maintenez les deux bords du tissu l'un sur l'autre.
+As you move along, manipulate the fabric to make sure both edges stay on top of each other as you feed them through your serger.
 
-Lorsque vous maintenez les bords du tissu alignés, vous risquez d'étirer un côté plus que l'autre. Le repère sur le bord courbe peut vous aider à éviter cela.
+As you manipulate the fabric to get it aligned properly, it's easy to stretch one part more than the other. The notch in the curved edge can help you make sure you're keeping things even.
 
-Après le repère, les choses seront plus faciles. Ce serait également un bon moment pour comparer la longueur restante des coutures courbes. Si l'une est un peu plus longue que l'autre, étirez un peu la plus courte jusqu'à ce qu'elles correspondent.
+Once you've passed the notch, things will get easier. This would also be a good time to compare the remaining length of the curved seams. If one is a bit longer than the other, simply stretch the shorter one until they match up.
 
-Si la différence est trop grande, laissez-la tout simplement. It will get cut off when we do the crotchseam.
+If the difference is too big however, just leave it. It will get cut off when we do the crotchseam.
 
 <Note>
 
@@ -61,11 +65,11 @@ Cousez les pinces du devant séparément et retourner le tout à l'intérieur, e
 
 ### Étape 4 : Assembler le second insert et les devants
 
-![Assembler le second insert et les devants](step03-d.png)
+![Join second inset and fronts](step03-d.png)
 
-Après avoir assemblé le premier insert et les devants, continuez avec le second.
+After you have joined the first inset and the fronts, continue with the second one.
 
-Avec les devant et les inserts assemblés ensemble, vous avez 3 parties :
+With the fronts and insets joined together, you are left with 3 parts:
 
 - L'ensemble inserts + devants
 - L'ensemble côtés + dos
@@ -73,11 +77,11 @@ Avec les devant et les inserts assemblés ensemble, vous avez 3 parties :
 
 ### Étape 5 : Fermer la pince frontale
 
-![Étape : Fermer la pince frontale](step05.png)
+![Close the fronts dart](step05.png)
 
-Pliez les devants deux fois le long de la ligne frontale centrale, en alignant les bords du V.
+Fold the fronts double along the center fronts line, so that the tusks at the bottom line up.
 
-Piquez les côtés du V à la surjeteuse pour refermer la pince frontale. Pour un meilleur résultat, commencez par le haut de la couture (où le tissu est plié) et travaillez vers le bas.
+Serge the sides of the tusks to close the fronts dart. For best results, start at the top of the seam (where the fabric is folded) and work your way to the bottom.
 
 <Tip>
 
@@ -90,7 +94,7 @@ Ne pas avoir de couture apparente dans cette zone sera plus confortable.
 
 ### Étape 6 : Optionnel: Surpiquer
 
-![Boxer avec (à gauche) et sans surpiqûre](step06.jpg)
+![Boxers with (left) and without topstitching](step06.jpg)
 
 <Note>
 
@@ -99,9 +103,9 @@ Ce peut être joli avec un tissu uni, mais pas nécessairement avec un imprimé,
 
 </Note>
 
-Si vous voulez surpiquer les coutures faites à la surjeteuse, faites le maintenant.
+If you want to topstitch your serged seams for visual effect, you should do so now.
 
-Si vous surpiquez, faites-le pour chaque couture, en vous assurant d'utiliser un point de couture extensible. Vous pouvez utiliser un point zig-zag ou une double aiguille si vous n'avez pas de point overlock ou de règlage spécial point extensible.
+If you topstitch, simply do it for every seam, making sure to do so with a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stitch setting.
 
 <Tip>
 
@@ -113,29 +117,29 @@ La couture s’arrête à mi-chemin (là où se termine la pince), mais votre su
 
 ### Étape 7 : Assembler le premier côté et les devants
 
-![Assemblez le premier côté et les devants](step07.png)
+![Join the first side to the fronts](step07.png)
 
-Alignez le bord latéral du premier côté avec le bord constitué des fronts+inset (bons côtés ensemble, comme d'habitude) et serrez-les ensemble.
+Align the side edge of the first side with the edge made up of the fronts+inset (good sides together as usual) and serge them together.
 
 ### Étape 8 : Assembler le second côté et les devants
 
-![Assembler le second côté et les devants](step08.png)
+![Join the second side to the fronts](step08.png)
 
-Faites la même chose pour le second côté.
+Do the same for the second side.
 
 ### Étape 9 : Optionnel: Surpiquer
 
-![Boxer avec (à gauche) et sans surpiqûre](step06.jpg)
+![Boxers with (left) and without topstitching](step06.jpg)
 
-Si vous avez surpiqué précédemment, faites maintenant la même chose pour les coutures réalisées aux étapes 7 et 8.
+If you've topstitched before, make sure to do the same now for the seams you made in step 7 and 8.
 
 ### Étape 10 : Terminer la fourche
 
-![Terminez la fourche](step10.png)
+![Finish the crotchseam](step10.png)
 
-Nous allons maintenant coudre ensemble à la surjeteuse l'arche arrière du boxer et celle du devant, constituée des devants et des inserts.
+We will now serge the arched opening in the back part to the front parts of the boxers, made up of the fronts and insets.
 
-Aidez vous des repères dos. Il y a un repère pour les milieux, les deux autres repères devant correspondre à la jointure des devants avec les inserts.
+The notches on the back piece will help you. There's the center notch, and the other two notches should match up with where the fronts and inset pieces are joined.
 
 <Tip>
 
@@ -147,9 +151,9 @@ Prenez votre temps, et soyez **très attentif** à l'endroit où votre surjeteus
 
 ### Étape 11: Faire l'ourlet de la première jambe
 
-![Faites l'ourlet de la première jambe](step11.png)
+![Hem the first leg](step11.png)
 
-Il est temps de faire les ourlets. Procédez comme vous le feriez pour n'importe quel autre tissu extensible. Utilisez un point extensible. Vous pouvez utiliser un point zig-zag ou une double aiguille si vous n'avez pas de point overlock ou de règlage spécial point extensible.
+Time to hem the legs. Hem them as you would do any other stretchy knit. Go for a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stich setting.
 
 <Note>
 
@@ -161,15 +165,15 @@ Ou mieux: épinglez les ourlets des deux jambes et ne cousez que lorsque l'aspec
 
 ### Étape 12: Faire l'ourlet de la seconde jambe
 
-![Faites l'ourlet de la seconde jambe](step12.png)
+![Hem the second leg](step12.png)
 
-Vous avez compris.
+You know it makes sense.
 
 ### Étape 13 : Faire une boucle avec votre élastique
 
-![Faites une boucle avec votre élastique](step13.png)
+![Make your elastic into a loop](step13.png)
 
-Cousez les deux extrémités de votre élastique ensemble endroit contre endroit.
+Sew both ends of your elastic together with good sides together.
 
 <Note>
 
@@ -182,13 +186,13 @@ Marquez l'endroit où les bords se rejoignent, ajoutez une marge de couture de 2
 
 ### Étape 14 : Fixer l'élastique à la taille
 
-![Fixez l'élastique à la taille](step14.png)
+![Attach elastic to waist](step14.png)
 
-Fixez l'élastique à la taille.
+Attach the elastic to the waist.
 
-A faire endroit contre endroit si vous utilisez un point extensible ou une double aiguille sur une machine à coudre conventionnelle.
+Do so good sides together if you're using a flexible stitch or twin needle on a conventional sewing machine.
 
-Si vous utilisez un point overlock, placez l'élastique sur l'endroit, en haut du boxer.
+If you're using a coverlock, put the elastic on top of the good side of the fabric.
 
 <Tip>
 
@@ -203,6 +207,6 @@ Lors de la couture, étirez l'élastique et tissez ensemble entre chaque ensembl
 
 ### Étape 15 : Dégarnir et nettoyer
 
-![Yeh ! Vous l'avez fait](step15.png)
+![Yay! You've made it](step15.png)
 
-Coupez tout tissu excédentaire au niveau de l'élastique ou des ourlets et tous les fils qui dépassent.
+Trim any excess fabric you might have at elastic or hem, and any loose threads.
