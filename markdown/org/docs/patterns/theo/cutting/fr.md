@@ -1,3 +1,7 @@
+- - -
+title: "Theo trousers: Cutting Instructions"
+- - -
+
 - **Tissu principal**
   - Couper **2 dos** avec de bons côtés ensemble
   - Couper **2 front(s)** avec de bons côtés ensemble
