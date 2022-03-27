@@ -1,6 +1,10 @@
-Le but de notre masque est d'arrêter les gouttelettes. Il faut donc chercher un tissu qui répond à ce besoin. Encore une fois, vous devez pouvoir respirer à travers votre masque, donc nous voulons un tissu qui respire, mais qui ne laisse pas passer les gouttelettes.
+- - -
+title: "Florence face mask: Fabric Options"
+- - -
 
-De plus, nous voulons que l'intérieur soit de contact agréable sur notre peau. Je suggère donc ici un coton ou une viscose. Pour le tissu extérieur, encore un coton ou un lainage à maille dense.
+The goal of our mask is to stop droplets. So you want to go for something that filters those out. Then again, you need to be able to breath through your mask, so we want fabric that breathes, without letting droplets through.
+
+In addition, we want the inside to be comfortable on our skin. So here I'd suggest a tightly woven cotton or viscose/rayon. For the outter fabric, cotton again, or a tightly woven wool.
 
 <Note>
 
