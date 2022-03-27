@@ -1,3 +1,7 @@
+- - -
+title: "Waralee wrap pants: Cutting Instructions"
+- - -
+
 <Note>
 
 Waralee consists of two mirrored pieces of fabric.
