@@ -1,5 +1,5 @@
 ---
-title: Coupage des creux
+title: "Holmes deerstalker hat: Cutting Instructions"
 ---
 
 The **gore** pattern piece needs to be cut on the fold to create a whole piece.
