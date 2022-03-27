@@ -1,7 +1,11 @@
-![Courbe de manche](./sleevebend.svg)
+- - -
+title: "Sleeve bend"
+- - -
 
-L'angle de la manche au coude.
+![Sleeve bend](./sleevebend.svg)
 
+The angle of the sleeve at the elbow.
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_sleevebend_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_sleevebend_sample.svg "Effect of this option on the pattern")
