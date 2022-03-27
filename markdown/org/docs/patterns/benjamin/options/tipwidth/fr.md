@@ -1,6 +1,10 @@
-![Nœuds papillons Larges et Fins](tipwidth.svg)
+- - -
+title: "Tip width"
+- - -
 
-Vous pouvez faire des nœud papillon hauts ou fins. Cette option vous permet de changer la taille verticale des extrémités du nœud. Faites-les plus grand pour être plus flamboyant, ou petit pour un style plus discret.
+![Bow ties Wide and Narrow](tipwidth.svg)
+
+You can make BIG bow ties, or small ones. This option allows you to change the vertical size of the bows. Make them larger to be more flamboyant, or small for a more subdued style.
 
 <Note>
 
@@ -11,4 +15,5 @@ Cette option est ignorée avec l'option de cravate carrée. Les nœud papillon c
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_tipwidth_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_tipwidth_sample.svg "Effect of this option on the pattern")
