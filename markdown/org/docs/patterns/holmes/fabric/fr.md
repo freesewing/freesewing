@@ -1,5 +1,5 @@
 ---
-title: Options de l'étoffe des Holmes
+title: "Holmes deerstalker hat: Fabric Options"
 ---
 
 ### Tissu principal
