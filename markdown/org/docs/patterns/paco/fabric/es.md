@@ -1,19 +1,20 @@
+- - -
+title: "Paco pants: Fabric Options"
+- - -
 
-Estos funcionan mejor en un tejido más ligero con un drape relativamente bueno.
+These work best in a lighter fabric with relatively good drape.
 
-Un algodón ligero o chambray son especialmente adecuados.  
-Rayon o jerea también funcionará, pero le dará un aspecto más casual.
+A light cotton, or chambray are particularly well-suited.\ Rayon or jersey will work too, but will give it a more casual-look.
 
-Para el efecto opuesto, menos casual y más estilo, puede considerar una mezcla de seda o lana ligera.
+For the opposite effect, less casual and more style, you can consider a silk blend or light wool.
 
 <Tip>
 
 ###### Algunas cosas para evitar
 
-Resiste la tentación para hacer estas en lino. 
+Resiste la tentación para hacer estas en lino.
 Mientras que la ropa de cama es el go-to de los días calurosos de verano, No lo recomiendo para estos pantalones
-ya que vienen con cinturas/tazas elasticadas, lo que significa infierno. 
+ya que vienen con cinturas/tazas elasticadas, lo que significa infierno.
 Utilice uno de los otros diseños con una cintura equipada si desea pantalones de lino.
 
-También evita elegir una tela con mucho estiramiento, ya que complicará las cosas cuando estés instalando el elástico.
-</Tip>
+También evita elegir una tela con mucho estiramiento, ya que complicará las cosas cuando estés instalando el elástico. </Tip>
