@@ -1,3 +1,7 @@
+- - -
+title: "Aaron A-Shirt: Cutting Instructions"
+- - -
+
 - Couper **1 dos** au pli
 - Couper **1 devant** au pli
 - Couper **3 bandes** pour l'ouverture du cou et l'emmanchure
