@@ -1,5 +1,5 @@
 ---
-title: Bee What you need
+title: "What you need"
 ---
 
 To make Bee, you will need the following:

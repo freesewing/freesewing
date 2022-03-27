@@ -1,3 +1,7 @@
+---
+title: "What you need"
+---
+
 To make Aaron, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)

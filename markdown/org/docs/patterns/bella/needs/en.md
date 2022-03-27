@@ -1,5 +1,5 @@
 ---
-title: Bella What you need
+title: "What you need"
 ---
 
 To make Bella, you will need the following:

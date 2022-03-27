@@ -1,3 +1,7 @@
+---
+title: "What you need"
+---
+
 To make Waralee, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)

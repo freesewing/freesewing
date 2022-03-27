@@ -1,3 +1,7 @@
+---
+title: "What you need"
+---
+
 To make Hortensia, you will need the following:
 
 - Basic sewing supplies

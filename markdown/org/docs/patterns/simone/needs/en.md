@@ -1,3 +1,7 @@
+---
+title: Holmes What you need
+---
+
 <Note>
 
 Simone is our [Simon pattern](/designs/simon/) adapted for breasts.

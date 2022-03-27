@@ -1,3 +1,7 @@
+---
+title: "What you need"
+---
+
 To make Titan, you will need the following:
 
 - Basic sewing supplies

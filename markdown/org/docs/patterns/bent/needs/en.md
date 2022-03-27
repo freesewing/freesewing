@@ -1,5 +1,5 @@
 ---
-title: Bent What you need
+title: "What you need"
 ---
 
 To make Bent, you will need the following:

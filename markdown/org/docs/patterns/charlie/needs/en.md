@@ -1,3 +1,7 @@
+---
+title: "What you need"
+---
+
 To make Charlie, you will need the following:
 
 - Basic sewing supplies

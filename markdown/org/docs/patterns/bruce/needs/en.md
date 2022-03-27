@@ -1,3 +1,7 @@
+---
+title: "What you need"
+---
+
 To make Bruce, you will need the following:
 
 - Basic sewing supplies
