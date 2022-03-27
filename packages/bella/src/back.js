@@ -21,8 +21,8 @@ export default function (part) {
   points.cbNeckCp1 = new Point(points.hps.x * 0.8, points.cbNeck.y)
   let slope = measurements.shoulderSlope * options.shoulderSlopeBack * -1
   points.shoulder = utils.beamsIntersect(
-    new Point((measurements.shoulderToShoulder * options.shoulderToShoulderCorrection) / 2, 0),
-    new Point((measurements.shoulderToShoulder * options.shoulderToShoulderCorrection) / 2, 100),
+    new Point((measurements.shoulderToShoulder * (1+options.shoulderToShoulderEase)) / 2, 0),
+    new Point((measurements.shoulderToShoulder * (1+options.shoulderToShoulderEase)) / 2, 100),
     points.hps,
     points.hps.shift(slope, 85)
   )
