@@ -1,3 +1,7 @@
+- - -
+title: "Jaeger jacket: Cutting Instructions"
+- - -
+
 - **Tissu principal**
   - Couper **2 faces** (partie 1)
   - Couper **2 faces avant** (rechercher la frontière face/doublure sur la partie avant)
