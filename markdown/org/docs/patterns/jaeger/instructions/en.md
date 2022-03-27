@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Jaeger jacket: Sewing Instructions"
 ---
 
 <Note>

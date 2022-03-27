@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Wahid waistcoat: Sewing Instructions"
 ---
 
 ### Step 1: Fuse interfacing

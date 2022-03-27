@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Teagan T-shirt: Sewing Instructions"
 ---
 
 ## Step 1: Close the shoulder seams

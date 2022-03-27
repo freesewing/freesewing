@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Simon shirt: Sewing Instructions"
 ---
 
 <Tip>

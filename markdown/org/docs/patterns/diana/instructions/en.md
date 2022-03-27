@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Diana draped top: Sewing Instructions"
 ---
 
 ### Step 1: Finish the back neckline

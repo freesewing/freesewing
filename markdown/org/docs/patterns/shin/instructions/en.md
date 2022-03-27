@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Shin swim trunks: Sewing Instructions"
 ---
 
 > ### Images coming soon

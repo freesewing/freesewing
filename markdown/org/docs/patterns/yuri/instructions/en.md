@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Yuri hoodie: Sewing Instructions"
 ---
 
 <Note>

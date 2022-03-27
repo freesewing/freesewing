@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Waralee wrap pants: Sewing Instructions"
 ---
 
 <Warning>

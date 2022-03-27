@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Lunetius Lacerna: Sewing Instructions"
 ---
 
 <Note>

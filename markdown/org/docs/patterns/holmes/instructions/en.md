@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Holmes deerstalker hat: Sewing Instructions"
 ---
 
 ### Step 1: Prepping the Pieces

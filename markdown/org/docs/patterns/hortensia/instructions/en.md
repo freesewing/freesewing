@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Hortensia handbag: Sewing Instructions"
 ---
 
 ### (Optional) Step 1: Face the main fabric

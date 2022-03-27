@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Sandy circle skirt: Sewing Instructions"
 ---
 
 <Warning>

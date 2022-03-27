@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Bee bikini top: Sewing Instructions"
 ---
 
 <Warning>

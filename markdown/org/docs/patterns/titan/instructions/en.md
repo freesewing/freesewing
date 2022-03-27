@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Titan trouser block: Sewing Instructions"
 ---
 
 <Note>

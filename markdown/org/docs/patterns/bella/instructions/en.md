@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Bella body block: Sewing Instructions"
 ---
 
 <Note>

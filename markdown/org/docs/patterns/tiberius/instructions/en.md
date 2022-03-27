@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Tiberius Tunica: Sewing Instructions"
 ---
 
 <Note>

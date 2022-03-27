@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Penelope pencil skirt: Sewing Instructions"
 ---
 
 <Note>

@@ -1,5 +1,5 @@
 ---
-title: Sewing Instructions
+title: "Ursula undies: Sewing Instructions"
 ---
 
 ### Step 1: Sew the front to the first gusset piece
