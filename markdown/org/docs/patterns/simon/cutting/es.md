@@ -1,3 +1,7 @@
+- - -
+title: "Simon shirt: Cutting Instructions"
+- - -
+
 - **Tela principal**
   - Cortar **1 frente izquierdo**
   - Corta **1 placket de botón** (solo si optó por un posicionamiento de botón separado)
