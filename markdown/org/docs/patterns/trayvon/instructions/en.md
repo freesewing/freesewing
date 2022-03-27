@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Tip>
 
 ###### Just the tip

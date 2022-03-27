@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 ### Step 1: Join center seam
 
 Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.

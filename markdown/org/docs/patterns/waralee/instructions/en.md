@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Warning>
 
 ##### The key to Waralee is the waist band

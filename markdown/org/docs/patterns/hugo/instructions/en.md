@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Note>
 
 ###### Documentation under construction

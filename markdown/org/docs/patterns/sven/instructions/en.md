@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 ### Step 1: Close shoulder seams
 
 - Place the back and front on top of each other with the good sides toghether.

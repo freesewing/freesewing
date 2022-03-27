@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Note>
 
 ###### Jaeger documentation is under construction

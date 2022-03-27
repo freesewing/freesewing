@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Note>
 
 ###### Titan is a block, not a pattern

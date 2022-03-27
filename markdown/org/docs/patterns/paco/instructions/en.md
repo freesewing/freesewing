@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Tip>
 
 ##### A note on seam finishes

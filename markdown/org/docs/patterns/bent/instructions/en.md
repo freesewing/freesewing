@@ -1,5 +1,5 @@
 ---
-title: Bent Construction
+title: Sewing Instructions
 ---
 
 <Note>

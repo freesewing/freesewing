@@ -1,5 +1,5 @@
 ---
-title: Cornelius Construction
+title: Sewing Instructions
 ---
 
 ### Step 1: The Front Pockets

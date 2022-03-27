@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 ### Step 1: Finish the back neckline
 
 - Cut a strip of main fabric the length of your back neckline, and around 3 cm wide.

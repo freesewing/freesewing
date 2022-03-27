@@ -1,5 +1,5 @@
 ---
-title: Holmes Construction
+title: Sewing Instructions
 ---
 
 ### Step 1: Prepping the Pieces

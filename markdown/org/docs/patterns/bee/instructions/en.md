@@ -1,5 +1,5 @@
 ---
-title: Bee Construction
+title: Sewing Instructions
 ---
 
 <Warning>

@@ -1,5 +1,5 @@
 ---
-title: Albert Construction
+title: Sewing Instructions
 ---
 
 ### Step 1: The Pocket

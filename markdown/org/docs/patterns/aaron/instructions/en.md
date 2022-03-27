@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 ## Step 1: Close seams
 
 ![Close the side and shoulder seams](step01.png)

@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 ## Step 1: Close the shoulder seams
 
 ![Close the shoulder seams](step01.svg)

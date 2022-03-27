@@ -1,5 +1,5 @@
 ---
-title: Construction
+title: Sewing Instructions
 ---
 
 ### Step 1: Fuse interfacing

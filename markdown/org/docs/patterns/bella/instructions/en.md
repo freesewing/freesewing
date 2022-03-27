@@ -1,5 +1,5 @@
 ---
-title: Bella Construction
+title: Sewing Instructions
 ---
 
 <Note>

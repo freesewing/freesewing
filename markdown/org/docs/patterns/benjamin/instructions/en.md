@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 ## Notes and tips
 
 ### Precision

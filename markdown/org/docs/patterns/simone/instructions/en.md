@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 ### Step 1: Bust Darts
 
 - Close the Front bust darts.

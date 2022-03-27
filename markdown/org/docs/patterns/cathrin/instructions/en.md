@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Note>
 
 #### There are many ways to construct a corset

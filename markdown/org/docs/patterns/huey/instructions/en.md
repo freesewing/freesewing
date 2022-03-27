@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Note>
 
 This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.

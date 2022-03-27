@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 ## Step 1: Close the back dart
 
 First thing we're going to do is close the waist dart on the back panel.

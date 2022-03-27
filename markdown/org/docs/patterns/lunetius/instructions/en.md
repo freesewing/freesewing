@@ -1,5 +1,5 @@
 ---
-title: Instructions
+title: Sewing Instructions
 ---
 
 <Note>

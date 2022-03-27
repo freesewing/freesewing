@@ -1,3 +1,7 @@
+---
+title: Sewing Instructions
+---
+
 <Warning>
 
 Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
