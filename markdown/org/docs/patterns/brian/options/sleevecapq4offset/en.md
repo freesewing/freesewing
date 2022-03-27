@@ -1,3 +1,7 @@
+---
+title: Sleevecap Q4 offset
+---
+
 ![The offset in the fourth quarter of the sleevecap](./sleevecapq4offset.svg)
 
 This option controls the offset in the fourth quadrant of the sleevecap.

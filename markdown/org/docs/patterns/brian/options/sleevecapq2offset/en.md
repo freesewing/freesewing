@@ -1,3 +1,7 @@
+---
+title: Sleevecap Q2 offset
+---
+
 ![The offset in the second quarter of the sleevecap](./sleevecapq2offset.svg)
 
 This option controls the offset in the second quadrant of the sleevecap.

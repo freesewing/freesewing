@@ -1,3 +1,7 @@
+---
+title: Sleevecap Q4 downward spread
+---
+
 ![The upward spread in the fourth quadrant of the sleevecap](./sleevecapq4spread1.svg)
 
 This option controls the upward spread in the fourth quadrant of the sleevecap.

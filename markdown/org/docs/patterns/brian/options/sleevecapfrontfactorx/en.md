@@ -1,3 +1,7 @@
+---
+title: Sleevecap front X
+---
+
 ![The horizontal location of the front inflection point](./sleevecapfrontfactorx.svg)
 
 This option controls the horizontal placement of the sleevecap inflection point at the front of the sleeve.

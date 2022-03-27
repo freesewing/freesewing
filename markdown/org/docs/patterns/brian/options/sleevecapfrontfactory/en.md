@@ -1,3 +1,7 @@
+---
+title: Sleevecap front Y
+---
+
 ![The vertical location of the front inflection point](./sleevecapfrontfactory.svg)
 
 This option controls the vertical placement of the sleevecap inflection point at the front of the sleeve.
