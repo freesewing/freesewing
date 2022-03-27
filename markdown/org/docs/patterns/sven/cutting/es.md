@@ -1,4 +1,8 @@
-Sven es un patrón muy sencillo, y consiste en dos partes principales más algunas tiras para el cuello y el encuadernado del brazo.
+- - -
+title: "Sven sweatshirt: Cutting Instructions"
+- - -
+
+Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
 
 - **Tela principal**
   - Corta **1 trasero** al lomo
