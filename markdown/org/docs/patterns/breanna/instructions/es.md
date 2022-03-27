@@ -1,3 +1,7 @@
+- - -
+title: "Breanna body block: Sewing Instructions"
+- - -
+
 <Note>
 
 ###### Breanna es un bloque, no un patrón
