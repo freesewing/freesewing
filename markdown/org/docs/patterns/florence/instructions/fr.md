@@ -1,8 +1,12 @@
+- - -
+title: "Florence face mask: Sewing Instructions"
+- - -
+
 ### Étape 1 : Coudre la couture centrale
 
 Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
 
-![Coudre la couture centrale](step1.svg)
+![Join the center seam](step1.svg)
 
 <Note>Répétez cette étape pour le tissu destiné à l'intérieur du masque (doublure).</Note>
 
@@ -15,17 +19,17 @@ Donc, si le look n'est pas une préoccupation pour vous, n'hésitez pas à la sa
 
 </Note>
 
-Repassez la couture centrale ouverte pour qu'elle soit bien plate.
+Press the seam allowance on the center seam open so the seam lies nice and flat.
 
-Comme il s'agit d'une couture courbe, elle ne sera pas complètement plate. Mais vous pouvez vous en approcher en repassant d'abord la moitié d'un côté, puis la seconde moitié de l'autre côté. Vous pouvez également utiliser un jambon de tailleur ou un coussin pour presser.
+As this is a curved seam, it won't lay flat. But you can approach it with your iron from one side, then do the second half from the other side. Alternatively, you can use a tailor's ham or cushion to press.
 
 <Note>Répétez cette étape pour le tissu destiné à l'intérieur du masque (doublure).</Note>
 
 ### Étape 3 : Coudre ensemble l'extérieur et la doublure
 
-![Assemblez le tissus extérieur et la doublure](step3.svg)
+![Join the inner to the outer fabric](step3.svg)
 
-Maintenant nous allons coudre ensemble le tissu intérieur (doublure) et le tissu extérieur, et les liens, en une seule étape.
+Now we will sew the inner (lining) fabric to the outer (main) fabric, and attach the ribbons all in one step.
 
 - Placez votre doublure sur l'envers.
 - Ensuite, placez deux liens aux coins d'un des côtés (à droite dans notre exemple) afin qu'ils sortent juste un peu du masque, le reste des liens étant maintenu à l'intérieur.
@@ -39,7 +43,7 @@ Avec un peu de pratique, vous n'aurez plus besoin d'épingler les liens.
 
 </Tip>
 
-Maintenant cousez autour du masque, en veillant à laisser un côté ouvert pour pouvoir retourner le masque par la suite.
+Now sew around the mask, making sure to leave one side open so we can turn the mask inside-out later.
 
 <Warning>
 
@@ -50,9 +54,9 @@ Faites les passer à travers l'ouverture que vous laissez d'un côté, ou regrou
 
 ### Étape 4 : Retourner le masque
 
-Votre masque est actuellement à l'envers donc le retourner signifiera que nous le mettrons en le tissu principal à l'extérieur.
+Actually, your mask is inside-out now, so turning it inside out will mean we get it outside-out, or regular.
 
-Il suffit de retourner le masque en passant par le côté laissé ouvert et en tirant délicatement.
+Just reach in through the side your left open and carefully pull the mask through to turn it.
 
 ### Étape 5 (facultative) : Repasser le masque
 
@@ -63,20 +67,20 @@ Donc, si le look n'est pas une préoccupation pour vous, n'hésitez pas à la sa
 
 </Note>
 
-Maintenant que le masque est presque terminé, il est temps de le repasser. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
+Now that the mask is as it should be, it's time to press it. Before doing so, make sure to fold the seam allowance of the side we left open inwards, so that we press it flat as if it was sewn.
 
 ### Étape 6: Fermer l'ouverture et surpiquer les bords
 
-![Surpiquez autour du masque](step6.svg)
+![Edge-stitch around the mask](step6.svg)
 
-Maintenant, il est temps de fermer notre masque sur le côté laissé ouvert.
+Now it's time to close the side of our mask the we left open to turn it inside out.
 
 We are not merely going to close the opening, but also edge-stitch around the entire mask to give our mask some extra stability, and keep the lining at the back.
 
-Assurez-vous que les bords du côté ouvert sont bien repliés à l'intérieur, puis surpiquez tout le pourtour du masque.
+Make sure the open side is folded neatly inside, then edge-stitch around the entire mask.
 
 ### Étape 7 : Mettez votre masque ou faites-en une série
 
-Voilà, vous avez fini ! Vous pouvez maintenant porter votre masque.
+That's it, you're done! You can now wear your mask.
 
-Ou encore mieux, faites-en une série, pour pouvoir en donner aux autres.
+Even better, make a bunch so you can give others masks too.
