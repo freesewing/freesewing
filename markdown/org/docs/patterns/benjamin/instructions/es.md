@@ -1,23 +1,27 @@
+- - -
+title: "Benjamin bow tie: Sewing Instructions"
+- - -
+
 ## Notas y consejos
 
 ### Precisión
 
-Dado que una corbata de arco es un elemento bastante pequeño, la precisión con la costura es clave para un buen resultado. Cualquier ligera diferencia entre la parte superior e inferior del arco se destacará. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
+Since a bow tie is a rather small item, precission with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
 
 ### Presione sabiamente
 
-Más adelante en las etapas de construcción, se le pedirá que pruebe su tejido. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
+Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
-Es una buena idea intentar presionar algunos restos de tela antes de empezar. This will allow you to figure out what is a good heat setting for the fabric you are using.
+It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
 ### Eligiendo tu grano
 
-Este patrón incluye una línea de grano. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
+This pattern includes a grain line. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
 
 <Note>
 
-Si todo esto suena muy confundido, podría sugerir leer la página de ayuda 
-en [Fabric grain](/docs/sewing/tel-grain).
+If this all sounds very confusing, might I suggest reading the help
+page on [Fabric grain](/docs/sewing/fabric-grain).
 
 </Note>
 
@@ -25,103 +29,102 @@ en [Fabric grain](/docs/sewing/tel-grain).
 
 This pattern allows you to make a bow tie that is the right length for a certain neck size. It can also make one that has a ribbon and hardware that makes the bow tie adjustable to different neck sizes. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
 
-Estos ribbons se pueden encontrar en las mejores haberdasherías o pueden ser pedidos en línea.
+These ribbons can be found in the better haberdasheries or can be ordered online.
 
 ### Margen de costura
 
 Since the bow tie is constructed with the right sides of the fabric against each other, the whole thing will have to be turned inside out. You probably want to consider using a small seam allowance of 6mm (¼ inch) to reduce the bulk.
 
-
 ## Construcción
 
 ### Paso 1: Aplicar interfaz
 
-Aplicar interfaz a todas las partes donde sientes que es necesario.
+Apply interfacing to all parts where you feel it's needed.
 
 ### Sin cinta de ajuste
 
 #### Paso 2: Empuje el nudo a la banda de cuello
 
-Coloque la parte de la banda de cuello en la parte del nudo de la corbata del arco, los lados derecho juntos. Alinear los extremos de ambas partes. Ahora coser a lo largo del extremo para unirse a las partes.
+Put the collar band part on the bow tie knot part, right sides together. Align the ends of both parts. Now sew across the end to join the parts.
 
-![Difunde la banda de cuello al nudo](step12.png)
+![Sew the collar band to the knot](step12.png)
 
-Hacer esto para cada extremo en ambas bandas de cuello.
+Do this for each end on both collar bands.
 
-Pulse Abrir todas las costuras.
+Press open all the seams.
 
-Ahora tienen dos idénticos lazos de un solo lado con un solo lado.
+You now have two identical single sided bow ties.
 
 #### Paso 3: Unirse a ambos lados
 
-![Difunde ambos lados juntos](step13.png)
+![Sew both sides together](step13.png)
 
-Diga ambos lados que usted hizo sobre el otro, derecha juntos juntos. Sew all along, but leaving an area of 5cm open in the middle of the collar band. Through this opening we will turn the bow tie right side out.
+Lay both the sides you made on top of each other, right sides together. Sew all along, but leaving an area of 5cm open in the middle of the collar band. Through this opening we will turn the bow tie right side out.
 
 #### Paso 4: girando
 
-![Permiso de costura de clip](step14.png)
+![Clip seam allowance](step14.png)
 
 Clip the seam allowance back in the usual spots and make little cuts to allow for a smooth curves.
 
-Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two sides right-side-out through the little opening. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. Este puede ser un procedimiento tedioso. Take your time and be gentle. Es fácil empujar demasiado duro y rasgar las cintas o tejidos.
+Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two sides right-side-out through the little opening. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. This can be a tedious procedure. Take your time and be gentle. It's easy to push too hard and rip stitches or fabric.
 
 Once you have the tie right side out, make sure you push all the corners and sides out before giving it a good press.
 
 #### Paso 5: Cerrando
 
-![Cerrando la corbata del arco](step15.png)
+![Closing the bow tie](step15.png)
 
-Now all that is left is closing the litle hole we used to turn the bow tie right side out. Puedes hacer esto a mano con una banda de deslizamiento, o una banda de escalera. O puede usar la máquina y doblar a la derecha en el borde de la banda. Since this will normally be hidden by the collar of your shirt, it will not be all that obvious.
+Now all that is left is closing the litle hole we used to turn the bow tie right side out. You can do this by hand with a slip stitch, or a ladder stitch. Or you can use the machine and stitch right at the edge of the band. Since this will normally be hidden by the collar of your shirt, it will not be all that obvious.
 
-Ahora dale una última prensa y admira su trabajo.
+Now give it one last press and admire your work.
 
 ### Con cinta de ajuste
 
 #### Paso 2: Adjuntar la cinta
 
-![Difunde la cinta en la parte 1](step22.png)
+![Sew the ribbon to part 1](step22.png)
 
-The first thing to do is to sew the adjustment ribbon to the shortest of the bow parts. La cinta debe ser de 290mm de largo. If it is different, you have to make sure that you align it such that the ribbon and short bow piece together are as long as the long bow piece.
+The first thing to do is to sew the adjustment ribbon to the shortest of the bow parts. The ribbon should be 290mm long. If it is different, you have to make sure that you align it such that the ribbon and short bow piece together are as long as the long bow piece.
 
-Coloque juntos los lados derecho de la pieza de arco corto y la cinta.
+Put right sides of the short bow piece and the ribbon together.
 
-Ahora coser a lo largo del extremo para unirse a las partes.
+Now sew across the end to join the parts.
 
 #### Paso 3: Unirse a ambos lados
 
-![Difunde ambos lados juntos](step23.png)
+![Sew both sides together](step23.png)
 
-Diga ambas partes del arco medio encima de la otra, ambos lados derecho juntos. And lay the long bow on top of the ribbon and short bow part, also rights sides together.
+Lay both the parts of the medium bow on top of each other, right sides together. And lay the long bow on top of the ribbon and short bow part, also rights sides together.
 
-Difusión de todos , pero dejar los extremos cortos abiertos. Through these openings we will turn the bow tie parts right side out.
+Sew all along, but leave the short ends open. Through these openings we will turn the bow tie parts right side out.
 
 #### Paso 4: girando
 
-![Permiso de costura de clip](step14.png)
+![Clip seam allowance](step14.png)
 
 Clip the seam allowance back in the usual spots and make little cuts to allow for a smooth curves.
 
-Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two parts right-side-out through the ends. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. Este puede ser un procedimiento tedioso. Take your time and be gentle. Es fácil empujar demasiado duro y rasgar las cintas o tejidos.
+Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two parts right-side-out through the ends. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. This can be a tedious procedure. Take your time and be gentle. It's easy to push too hard and rip stitches or fabric.
 
 Once you have the part right side out, make sure you push all the corners and sides out before giving it a good press.
 
-Hágalo con ambas partes.
+Do this with both parts.
 
 #### Paso 5: Añadir hardware
 
-Ahora tenemos que añadir las dos piezas de hardware que hacen que la corbata del arco sea ajustable. La pieza de aspecto ovalado se unirá a la pieza sin el ribbon de ajuste. Y la pieza con el anexo en forma de T irá por la parte con la ribbon.
+Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval looking piece will be attached to the part without the adjustment ribbon. And the piece with the T shaped attachment will go on the part with the ribbon.
 
-Primero hacer la parte sin el ribbon. This is because the fabric tail of the ribbon piece will have to go through the oval part before sewing on its hardware. Si lo haces en la otra secuencia, es posible que no puedas alimentarlo.
+First do the part without the ribbon. This is because the fabric tail of the ribbon piece will have to go through the oval part before sewing on its hardware. If you would do it in the other sequence, you may not be able to feed it through.
 
-Para terminar los finales, vamos a doblar la tela en tres pasos:
+To finish the ends, we're going to fold the fabric in three steps:
 
-![Tres pasos para doblar, un paso para coser](step25.png)
+![Three steps to fold, one step to sew](step25.png)
 
-Primero doblamos el lado en un ángulo. Then we fold the end over by just a small seam allowance, something like 5mm. Luego lo redoblamos de nuevo, por cerca de 1cm. Finalmente nos pegamos el anillo ovalado bajo este último pliegue y empatar a través.
+First we fold the side in under an angle. Then we fold the end over by just a small seam allowance, something like 5mm. Then we fold it over again, for about 1cm. Finally we stick the oval ring under this last fold and stitch across.
 
-Ahora alimentan la pieza de cinta a través de la parte ovalada y la terminan de la misma manera.
+Now feed the ribbon piece through the oval part and finish it the same way.
 
-¡Gana la T en uno de los agujeros de ajuste y tu corbata de arco se hace!
+Hook the T in one of the adjustment holes and your bow tie is done!
 
-![Buen trabajo!](finished.gif)
+![Good job!](finished.gif)
