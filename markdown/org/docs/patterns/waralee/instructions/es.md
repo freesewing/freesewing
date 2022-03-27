@@ -1,3 +1,7 @@
+- - -
+title: "Waralee wrap pants: Sewing Instructions"
+- - -
+
 <Warning>
 
 ##### The key to Waralee is the waist band
