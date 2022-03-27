@@ -1,4 +1,8 @@
-Bruce se compone de una espalda y dos lados, insets y frontales.
+- - -
+title: "Bruce boxer briefs: Cutting Instructions"
+- - -
+
+Bruce consists of a back, and two sides, insets and fronts.
 
 - **Tela principal**
   - Corta **1 trasero** al lomo
