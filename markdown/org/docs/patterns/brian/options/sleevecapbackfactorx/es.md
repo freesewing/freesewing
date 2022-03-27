@@ -1,6 +1,11 @@
-![La posición horizontal del punto de inflexión trasero](./sleevecapbackfactorx.svg)
+- - -
+title: "Sleevecap back X"
+- - -
 
-Esta opción controla la colocación horizontal del punto de inflexión de manga en la parte posterior de la manga.
+---
+![The horizontal location of the back inflection point](./sleevecapbackfactorx.svg)
+
+This option controls the horizontal placement of the sleevecap inflection point at the back of the sleeve.
 
 <Tip>
 
@@ -10,4 +15,5 @@ en profundidad cómo se construye la manga y la influencia de las diferentes opc
 </Tip>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](brian_sleevecapbackfactorx_sample.svg "Efecto de esta opción en el patrón")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapbackfactorx_sample.svg "Effect of this option on the pattern")
