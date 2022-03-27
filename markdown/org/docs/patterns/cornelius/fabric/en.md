@@ -1,5 +1,5 @@
 ---
-title: Cornelius Fabric options
+title: Fabric options
 ---
 
 ### Main Fabric

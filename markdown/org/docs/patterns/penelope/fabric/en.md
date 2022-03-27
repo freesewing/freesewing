@@ -1,3 +1,7 @@
+---
+title: Fabric options
+---
+
 ### Main Fabric
 
 A pencil skirt is a rather formal cut, and most commonly is made in a suiting material. In other words, a **fine wool**.

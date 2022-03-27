@@ -1,3 +1,7 @@
+---
+title: Fabric options
+---
+
 <Note>
 
 Simone is our [Simon pattern](/designs/simon/) adapted for breasts.

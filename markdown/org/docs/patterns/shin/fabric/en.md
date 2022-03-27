@@ -1,3 +1,7 @@
+---
+title: Fabric options
+---
+
 Swim trunks should be made out of a material with stretch that is suitable for being in the water.
 
 Typically, this falls apart in a few categories:

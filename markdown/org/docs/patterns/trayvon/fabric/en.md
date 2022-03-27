@@ -1,3 +1,7 @@
+---
+title: Fabric options
+---
+
 ## Tie fabric
 
 The ties you find in the store are typically made out of silk or some imitation silk poly. So it will come as no surprise that those are good options.

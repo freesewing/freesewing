@@ -1,5 +1,5 @@
 ---
-title: Bee Fabric options
+title: Fabric options
 ---
 
 ### Main and Lining Fabric

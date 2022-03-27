@@ -1,5 +1,5 @@
 ---
-title: Holmes Fabric options
+title: Fabric options
 ---
 
 ### Main Fabric

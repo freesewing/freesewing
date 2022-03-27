@@ -1,3 +1,7 @@
+---
+title: Fabric options
+---
+
 The bow ties you find in the store are typically make out of silk or some imitation silk poly.
 So it will come as no surprise that those are good options. Any type of fabric that you like
 the pattern or looks of can become a candidate for a bow tie. The only real limitation is

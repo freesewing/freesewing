@@ -1,3 +1,7 @@
+---
+title: Fabric options
+---
+
 These work best in a lighter fabric with relatively good drape.
 
 A light cotton, or chambray are particularly well-suited.\
