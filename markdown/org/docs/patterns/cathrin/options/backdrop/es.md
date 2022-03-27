@@ -1,7 +1,11 @@
-![La opción de retroceso en la Catedral](./backdrop.svg)
+- - -
+title: "Back drop"
+- - -
 
-Esta opción determina hasta qué punto la parte trasera del centro será bajada en la parte inferior de su corsete.
+![The back drop option on Cathrin](./backdrop.svg)
 
+This option determines how far the center back will be lowered at the bottom of your corset.
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_backdrop_sample.svg "Efecto de esta opción en el patrón")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backdrop_sample.svg "Effect of this option on the pattern")
