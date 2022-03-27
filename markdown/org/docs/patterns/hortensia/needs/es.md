@@ -1,3 +1,7 @@
+- - -
+title: "Hortensia handbag: What You Need"
+- - -
+
 To make Hortensia, you will need the following:
 
 - Basic sewing supplies
