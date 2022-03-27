@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 <Note>
 
 Waralee consists of two mirrored pieces of fabric.

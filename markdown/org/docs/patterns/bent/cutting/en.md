@@ -1,5 +1,5 @@
 ---
-title: Bent Cutting
+title: Cutting instructions
 ---
 
 **Main fabric**

@@ -1,5 +1,5 @@
 ---
-title: Cutting 
+title: Cutting instructions
 ---
 
 - Cut **1 lacerna** part on the fold

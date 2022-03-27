@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - **Main fabric**
   - Cut **2 front(s)** with _good sides together_
   - Cut **2 back(s)** with _good sides together_

@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 ##### From main fabric
 
 - Part **1**: **2 x** _with good sides together_.

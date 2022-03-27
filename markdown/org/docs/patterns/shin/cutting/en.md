@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - Cut **2 backs** with good sides together
 - Cut **4 fronts** 2 x 2 with good sides together
 - Cut **1 waistband**

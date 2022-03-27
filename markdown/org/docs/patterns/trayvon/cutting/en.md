@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - **Main fabric**
   - Cut **1 tip**
   - Cut **1 tail**

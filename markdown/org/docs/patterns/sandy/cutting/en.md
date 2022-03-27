@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 <Note>
 
 If not using seamless follow the default list, If using seamless follow the seamless list.

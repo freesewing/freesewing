@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 Ursula consists of a front, a back, and a lined gusset.
 
 - **Main fabric**

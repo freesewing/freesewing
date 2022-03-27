@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 <Tip>
 
 ###### Cut out only what you need

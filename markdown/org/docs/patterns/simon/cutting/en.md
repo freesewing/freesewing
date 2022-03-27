@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - **Main fabric**
   - Cut **1 front left**
   - Cut **1 button placket** (only if you opted for a separate button placket)

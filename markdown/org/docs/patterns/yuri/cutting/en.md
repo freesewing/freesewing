@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - Cut **2 fronts** with _good sides together_
 - Cut **1 back** _on the fold_
 - Cut **2 sleeves** with _good sides together_

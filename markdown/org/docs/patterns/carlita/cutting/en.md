@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 <Note>
 
 Certain parts have to be drafted off of the existing parts. How to draft these are provided in the [instructions](/docs/patterns/carlita/instructions).

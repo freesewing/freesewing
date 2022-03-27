@@ -1,5 +1,5 @@
 ---
-title: Cutting
+title: Cutting instructions
 ---
 
 Depending on how much fabric is available, you might want to cut two top and or side parts, hence the instructions on the pattern itself.

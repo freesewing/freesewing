@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - **Main fabric**
   - Cut **2 fronts** (part 1)
   - Cut **2 front facings** (look for the facing/lining boundary on the front part)

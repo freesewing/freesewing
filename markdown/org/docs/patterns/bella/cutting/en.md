@@ -1,5 +1,5 @@
 ---
-title: Bella Cutting
+title: Cutting instructions
 ---
 
 **Main fabric**

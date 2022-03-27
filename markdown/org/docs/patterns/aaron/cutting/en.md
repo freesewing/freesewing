@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - Cut **1 back** on the fold
 - Cut **1 front** on the fold
 - Cut **3 strips** for neck opening and armhole binding

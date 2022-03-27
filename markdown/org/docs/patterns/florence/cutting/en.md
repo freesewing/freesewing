@@ -1,5 +1,5 @@
 ---
-title: Cutting
+title: Cutting instructions
 ---
 
 Florence only has one part, the _mask_. This is half of the mask, so we will need two of them.

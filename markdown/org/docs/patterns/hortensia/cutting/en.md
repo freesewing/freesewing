@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 ### Materials
 
 - **Main fabric**

@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - **Main fabric**
   - Cut **1 front** on the fold
   - Cut **1 back** on the fold

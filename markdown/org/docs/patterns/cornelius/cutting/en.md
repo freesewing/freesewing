@@ -1,5 +1,5 @@
 ---
-title: Cornelius Cutting
+title: Cutting instructions
 ---
 
 ### Materials

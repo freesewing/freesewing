@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 Cut 1 core fabric and 1 outer fabric of the center panel, making sure to cut on the fold.
 
 Cut 2 core and 2 outer of each side panel with _good sides together_.

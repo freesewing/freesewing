@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 - Cut 1 back on the fold.
 - Cut 1 front on the fold.
 - Cut 2 sleeves _with good sides together_

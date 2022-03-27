@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 Bruce consists of a back, and two sides, insets and fronts.
 
 - **Main fabric**

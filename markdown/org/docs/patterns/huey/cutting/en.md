@@ -1,3 +1,7 @@
+---
+title: Cutting instructions
+---
+
 **Main fabric**
 
 - Cut **2 front** parts
