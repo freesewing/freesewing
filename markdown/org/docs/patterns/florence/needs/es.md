@@ -1,5 +1,5 @@
 ---
-title: Lo que necesitas
+title: "Florence face mask: What You Need"
 ---
 
 Para hacer una máscara de Florencia, necesitarás lo siguiente:
