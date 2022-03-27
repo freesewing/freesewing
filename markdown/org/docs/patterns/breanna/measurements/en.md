@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Breanna body block: Required Measurements"
 ---
 
 <PatternMeasurements pattern='breanna' />

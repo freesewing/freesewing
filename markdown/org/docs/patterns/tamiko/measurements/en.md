@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Tamiko top: Required Measurements"
 ---
 
 <PatternMeasurements pattern='tamiko' />

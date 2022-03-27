@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Bent body Block: Required Measurements"
 ---
 
 <PatternMeasurements pattern='bent' />

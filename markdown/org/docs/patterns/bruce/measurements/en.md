@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Bruce boxer briefs: Required Measurements"
 ---
 
 <PatternMeasurements pattern='bruce' />

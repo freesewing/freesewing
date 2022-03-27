@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Trayvon tie: Required Measurements"
 ---
 
 <PatternMeasurements pattern='trayvon' />

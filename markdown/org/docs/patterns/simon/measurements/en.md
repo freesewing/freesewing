@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Simon shirt: Required Measurements"
 ---
 
 <PatternMeasurements pattern='simon' />

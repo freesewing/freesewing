@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Walburga Wappenrock: Required Measurements"
 ---
 
 <PatternMeasurements pattern='walburga' />

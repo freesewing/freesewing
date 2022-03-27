@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Yuri hoodie: Required Measurements"
 ---
 
 <PatternMeasurements pattern='yuri' />

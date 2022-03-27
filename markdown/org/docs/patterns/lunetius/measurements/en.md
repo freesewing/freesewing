@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Lunetius Lacerna: Required Measurements"
 ---
 
 <PatternMeasurements pattern='lunetius' />

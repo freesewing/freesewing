@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Paco pants: Required Measurements"
 ---
 
 <PatternMeasurements pattern='paco' />
