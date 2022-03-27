@@ -1,6 +1,10 @@
+- - -
+title: "Teagan T-shirt: Sewing Instructions"
+- - -
+
 ## Paso 1: Cierra las costuras del hombro
 
-![Cerrar las costuras del hombro](step01.svg)
+![Close the shoulder seams](step01.svg)
 
 - Coloca el frente y la parte trasera sobre el otro con [buenos lados juntos](/docs/sewing/good-sides-together). Alinear las costuras del hombro.
 - Servir las costuras del hombro o unirlas con un zigzag estrecho (~2 mm) en la costura estándar.
@@ -11,7 +15,7 @@ Opcional: En un tejedor más apretado, puede optar por reforzar las costuras del
 
 ## Paso 2: Establecer en mangas
 
-![Establecer en mangas](step02.svg)
+![Set in sleeves](step02.svg)
 
 - Coloca tu ahora unido frente y atrás con el lado bueno arriba.
 - Identifique los lados delanteros y traseros de cada una de sus mangas. (Así es como separas la manga izquierda de la derecha.) On your paper pattern piece, the front side of the sleeve is to the right.
@@ -39,7 +43,7 @@ Este es el paso más complejo para hacer la camisa de Teagan, pero sólo requier
 
 ### Colocar (el inicio de) tu vinculación
 
-![Coloca tu vinculación](step03a.svg)
+![Place your binding](step03a.svg)
 
 - Pon tu camisa abajo con la parte trasera buena arriba, y coloque su tira de unión en la parte superior con el lado bueno hacia abajo (como en los lados buenos juntos). Su unión debe comenzar en la parte central de la parte trasera del cuello.
 - Alínea el largo borde de tu tira con el borde de tu tela para que la tira se encuentre en la parte superior de la tela (no en la abertura). Coloque la esquina en su punto de partida.
@@ -47,14 +51,14 @@ Este es el paso más complejo para hacer la camisa de Teagan, pero sólo requier
 
 ### Marcar enlace en su lugar
 
-![Marcar enlace en su lugar](step03b.svg)
+![Sew binding in place](step03b.svg)
 
 - Coloque su pie más presor de 3 cm a lo largo del encuadernado para que una cola de 3 cm quede desenterrada. Esto nos ayudará a unirnos a los fines de lo vinculante más adelante. Luego, coser a 1,5 cm del borde alrededor del cuello, estirando la unión suavemente a medida que codes.  (Nota: esta no es la costura estándar.)
 - Dejar de coser 3 cm antes del final, dejando una cola como lo hicimos al principio.
 
 ### Marcar y coser extremos de enlace
 
-![Finales de encuadernación](step03c.svg)
+![Sew binding ends](step03c.svg)
 
 - Con alrededor de 6 cm para ir antes de completar nuestro círculo, es hora de coser los extremos de la unión juntos.
 - Tome uno de los bordes, y lo estire a lo largo de los 3 cm separándolo del punto de partida como lo haría mientras coser. En el encuadernador, marque donde el enlace alcanzó el punto de partida. Haga lo mismo con el otro extremo.
@@ -66,13 +70,13 @@ Este es el paso más complejo para hacer la camisa de Teagan, pero sólo requier
 
 </Note>
 
-![Finalizar enlace](step03d.svg)
+![Finish binding](step03d.svg)
 
 - Ahora que los extremos de la unión están unidos, es hora de terminar los últimos 6 cm de encuadernación. Manténgalo abajo, permaneciendo a 1,5 cm del borde como lo hiciste antes.
 
 ### Doble unión de tejidos a la espalda y coser
 
-![Navegar por enlace](step03e.svg)
+![Sew down binding](step03e.svg)
 
 - Doblar tu tela de unión alrededor de la tela de tu camisa hacia la espalda. Así es como lo costaremos.
 - Mientras que la tela está doblada en la parte delantera (ocultando el borde de la tela en el proceso), no hay necesidad de eso en la parte trasera. Simplemente recortaremos el borde más tarde, dado que el nudo no se cuelga. Si tuviésemos que doblar la tela también en la espalda, sólo añadiríamos granel.
@@ -99,7 +103,7 @@ En el interior de tu camiseta, recorta el enrollado justo fuera de tu costura pa
 
 ## Paso 4: Cierre las costuras y mangas laterales
 
-![Cerrar costuras y mangas](step04.svg)
+![Close the side seams and sleeves](step04.svg)
 
 - Doble tu camisa de Teagan doble en las costuras de hombro con buenos lados juntos.
 - Alinear las costuras y mangas laterales y fijarlas juntos.
@@ -108,7 +112,7 @@ En el interior de tu camiseta, recorta el enrollado justo fuera de tu costura pa
 
 ## Paso 5: Termina el corte y mangas
 
-![Terminar el corte y mangas](step05.svg)
+![Finish hem and sleeves](step05.svg)
 
 - Doblar la sombra hacia arriba, hacia el interior, y coser. Si tienes una cubierta, úsala. Si no es así, utilice una aguja gemela o una stitch zig-zag para mantener la costura estirable.
 - Repita por el cabo de cada manga.
