@@ -1,9 +1,13 @@
-![L'option d'emmanchure sur Aaron](./armholedrop.svg)
+- - -
+title: "Armhole drop"
+- - -
 
-De combien abaisser l'arrondi du bas de l'emmanchure par défaut.
+![The armhole drop option on Aaron](./armholedrop.svg)
+
+How much to lower the armhole below the default amount.
 
 > Cette option permet également des valeurs négatives. Il va de soi que cela réduira la hauteur de l'emmanchure dans ce cas.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_armholedrop_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_armholedrop_sample.svg "Effect of this option on the pattern")
