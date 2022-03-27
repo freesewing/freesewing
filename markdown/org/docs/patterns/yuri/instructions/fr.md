@@ -1,3 +1,7 @@
+- - -
+title: "Yuri hoodie: Sewing Instructions"
+- - -
+
 <Note>
 
 Ce patron peut être cousu avec ou avec une surjeteuse. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
@@ -71,7 +75,7 @@ Il ne s'agit là que d'une méthode d'ourlet, si vous préférez une autre faço
 
 ## Étape 7 : Préparer la doublure et l'extérieur de la capuche
 
-Suivez cette étape deux fois, une fois pour la capuche extérieure et une fois pour la doublure de la capuche.
+Follow this step twice, once for the outer hood and once for the lining hood.
 
 - Endroit contre endroit, coudre le bord long du centre de la capuche vers le bord extérieur des côtés de la capuche.
 - Endroit contre endroit, coudre le bord long restant du centre de la capuche vers le bord extérieur de l'autre côté de la capuche.
@@ -145,4 +149,4 @@ Si vous n'utilisez pas de bande d'encolure vous voudrez finir la couture avec **
 
 ## Etape 12 : Ta-daaa
 
-Profitez de votre Yuri!
+Enjoy your Yuri!
