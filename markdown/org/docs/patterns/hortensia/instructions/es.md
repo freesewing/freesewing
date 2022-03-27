@@ -1,3 +1,7 @@
+- - -
+title: "Hortensia handbag: Sewing Instructions"
+- - -
+
 ### (Optional) Step 1: Face the main fabric
 
 - If needed, Interface your main fabric pieces.
