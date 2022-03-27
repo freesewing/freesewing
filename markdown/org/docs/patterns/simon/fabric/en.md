@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Simon shirt: Fabric Options"
 ---
 
 Any fabric shop that is worth your business should have a shirting section.

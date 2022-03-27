@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Waralee wrap pants: Fabric Options"
 ---
 
 ### Main Fabric

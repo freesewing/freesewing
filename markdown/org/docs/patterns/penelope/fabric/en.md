@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Penelope pencil skirt: Fabric Options"
 ---
 
 ### Main Fabric

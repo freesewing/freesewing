@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Holmes deerstalker hat: Fabric Options"
 ---
 
 ### Main Fabric

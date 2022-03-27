@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Carlita coat: Fabric Options"
 ---
 
 ### Main Fabric

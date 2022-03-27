@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Florence face mask: Fabric Options"
 ---
 
 The goal of our mask is to stop droplets. So you want to go for something that filters those out.

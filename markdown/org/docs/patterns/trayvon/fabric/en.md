@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Trayvon tie: Fabric Options"
 ---
 
 ## Tie fabric

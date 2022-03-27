@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Albert apron: Fabric Options"
 ---
 
 An apron works best with a fabric that is sturdy, tightly woven, and easy to clean.

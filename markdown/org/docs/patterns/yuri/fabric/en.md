@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Yuri hoodie: Fabric Options"
 ---
 
 You may find a dedicated sweatshirt/tracksuit fabric section in your fabric store of choice. If you don't, just head for the knitwear section and look for a thicker comfortable knit fabric.

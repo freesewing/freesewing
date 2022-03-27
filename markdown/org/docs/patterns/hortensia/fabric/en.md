@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Hortensia handbag: Fabric Options"
 ---
 
 ### Main Fabric

@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Sandy circle skirt: Fabric Options"
 ---
 
 ### Main Fabric

@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Benjamin bow tie: Fabric Options"
 ---
 
 The bow ties you find in the store are typically make out of silk or some imitation silk poly.

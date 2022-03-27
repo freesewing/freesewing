@@ -1,5 +1,5 @@
 ---
-title: Fabric options
+title: "Bee bikini top: Fabric Options"
 ---
 
 ### Main and Lining Fabric
