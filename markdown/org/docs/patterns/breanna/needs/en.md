@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Breanna body block: What You Need"
 ---
 
 To make Breanna, you will need the following:

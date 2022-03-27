@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Yuri hoodie: What You Need"
 ---
 
 To make Yuri, you will need the following:

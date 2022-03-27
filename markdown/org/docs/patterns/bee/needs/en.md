@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Bee bikini top: What You Need"
 ---
 
 To make Bee, you will need the following:

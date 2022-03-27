@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Holmes deerstalker hat: What You Need"
 ---
 
 To make Holmes, you will need the following:

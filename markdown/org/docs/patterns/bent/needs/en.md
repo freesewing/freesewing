@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Bent body Block: What You Need"
 ---
 
 To make Bent, you will need the following:

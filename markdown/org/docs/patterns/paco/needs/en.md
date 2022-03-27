@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Paco pants: What You Need"
 ---
 
 To make Paco, you will need the following:

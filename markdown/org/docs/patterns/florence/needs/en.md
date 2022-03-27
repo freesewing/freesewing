@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Florence face mask: What You Need"
 ---
 
 To make a Florence face mask, you will need the following:

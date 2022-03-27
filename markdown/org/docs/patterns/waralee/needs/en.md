@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Waralee wrap pants: What You Need"
 ---
 
 To make Waralee, you will need the following:

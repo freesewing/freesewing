@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Trayvon tie: What You Need"
 ---
 
 To make Trayvon, you will need the following:

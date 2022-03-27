@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Florent flat cap: What You Need"
 ---
 
 To make Florent, you will need the following:

@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Charlie chinos: What You Need"
 ---
 
 To make Charlie, you will need the following:

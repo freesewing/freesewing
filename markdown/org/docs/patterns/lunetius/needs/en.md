@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Lunetius Lacerna: What You Need"
 ---
 
 To make Lunetius, you will need the following:

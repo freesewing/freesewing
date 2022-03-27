@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Huey hoodie: What You Need"
 ---
 
 To make Huey, you will need the following:

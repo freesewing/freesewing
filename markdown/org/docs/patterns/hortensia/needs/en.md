@@ -1,5 +1,5 @@
 ---
-title: "What you need"
+title: "Hortensia handbag: What You Need"
 ---
 
 To make Hortensia, you will need the following:
