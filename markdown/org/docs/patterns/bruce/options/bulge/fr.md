@@ -1,11 +1,15 @@
-![L'option galbe pour Bruce](./bulge.svg)
+- - -
+title: "Bulge"
+- - -
 
-Combien d'aisance voulez-vous pour la poche frontale ?
+![The bulge option on Bruce](./bulge.svg)
 
-Cette option augmentera la pince avant, créant ainsi plus de place à l'avant.
+How much room do you want in the front pouch?
+
+This option will increase the front dart, thereby creating more room in the front.
 
 > Si c'est de l'aisance verticale que vous voulez, voir l'option **hauteur**
 
-
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_bulge_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_bulge_sample.svg "Effect of this option on the pattern")
