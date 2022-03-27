@@ -1,5 +1,5 @@
 ---
-title: Opciones de tela de Holmes
+title: "Holmes deerstalker hat: Fabric Options"
 ---
 
 ### Tela principal
