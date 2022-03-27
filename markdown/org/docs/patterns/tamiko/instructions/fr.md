@@ -1,6 +1,10 @@
+- - -
+title: "Tamiko top: Sewing Instructions"
+- - -
+
 ### Étape 1 : Terminer la couture des armoiries
 
-![Rincez la couture de l'armures](step03.png)
+![Finsh the armhole seam](step03.png)
 
 - Finish the armhole seam with a narrow hem.
 
