@@ -21,7 +21,7 @@ export default function (part) {
   points.hpsCp2 = new Point(points.hps.x, points.cfNeck.y / 2)
   let slope = measurements.shoulderSlope * (2 - options.shoulderSlopeBack) * -1
   let xShoulder =
-    ((measurements.shoulderToShoulder * options.shoulderToShoulderCorrection) / 2) *
+    ((measurements.shoulderToShoulder * (1+options.shoulderToShoulderEase)) / 2) *
     options.frontShoulderWidth
   points.shoulder = utils.beamsIntersect(
     new Point(xShoulder, 0),
