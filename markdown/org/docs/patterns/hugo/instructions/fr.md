@@ -1,3 +1,7 @@
+- - -
+title: "Hugo hoodie: Sewing Instructions"
+- - -
+
 <Note>
 
 ###### Documentation under construction
@@ -11,9 +15,9 @@ Maintenant, la mauvaise nouvelle : Les instructions écrites pour Hugo ne sont p
 
 ## Vidéo
 
-Le texte est un peu concis pour vous ? J'essaie de rendre les vidéos disponibles comme partie intégrante de la documentation du patron.
+Text a bit dry for you? I try to make videos available as part of the pattern documentation.
 
-Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche du début à la fin :
+This 6-episode series shows you how to make your hoodie start to finish:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
