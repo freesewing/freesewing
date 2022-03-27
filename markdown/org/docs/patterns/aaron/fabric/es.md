@@ -1,6 +1,10 @@
-Una camisa A es esencialmente ropa interior. Y en esa capacidad, usted quiere algo que es confortable, se siente bien en su piel y respira.
+- - -
+title: "Aaron A-Shirt: Fabric Options"
+- - -
 
-Algodón con un toque de algo estirado, tal vez rayon, o un buen tejido. Le sugiero que vaya a la tienda de tejidos y se sienta un poco.
+An A-shirt is essentially underwear. And in that capacity, you want something that is comfortable, feels nice on your skin and breaths.
+
+Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest you go to the fabric store and feel around a bit.
 
 <Note>
 
