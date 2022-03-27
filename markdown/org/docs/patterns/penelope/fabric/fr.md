@@ -1,3 +1,6 @@
+- - -
+title: "Penelope pencil skirt: Fabric Options"
+- - -
 
 ### Main Fabric
 
@@ -7,4 +10,4 @@ Using a fabric with some stretch will make it easier to get a comfortable fit an
 
 ### Lining Fabric
 
-The lining fabric needs to be light, and allow the body to slide over it easily. You also don't want something to thick as this will be constricting. **Silky** fabrics are the go to choice as they are lightweight and slippery. 
+The lining fabric needs to be light, and allow the body to slide over it easily. You also don't want something to thick as this will be constricting. **Silky** fabrics are the go to choice as they are lightweight and slippery.
