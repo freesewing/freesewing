@@ -1,4 +1,8 @@
-Para hacer Ursula, necesitarás lo siguiente:
+- - -
+title: "Ursula undies: What You Need"
+- - -
+
+To make Ursula, you will need the following:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
 - About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/ursula/fabric))
