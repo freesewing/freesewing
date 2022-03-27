@@ -1,6 +1,10 @@
-![Le décalage ascendant du premier quadrant de la tête de manche](./sleevecapq1spread2.svg)
+- - -
+title: "Sleevecap Q1 upward spread"
+- - -
 
-Cette option contrôle le décalage ascendant dans le premier quadrant de la tête de manche.
+![The upward spread in the first quadrant of the sleevecap](./sleevecapq1spread2.svg)
+
+This option controls the upward spread in the first quadrant of the sleevecap.
 
 <Tip>
 
@@ -9,4 +13,5 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapq1spread2_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapq1spread2_sample.svg "Effect of this option on the pattern")
