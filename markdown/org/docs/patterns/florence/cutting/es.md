@@ -1,5 +1,5 @@
 ---
-title: Corte
+title: "Florence face mask: Cutting Instructions"
 ---
 
 Florence only has one part, the _mask_. Ésto es la mitad de la máscara, así que necesitaremos dos. Además, queremos una capa experior y un forro, así que necesitaremos cuatro en total:
