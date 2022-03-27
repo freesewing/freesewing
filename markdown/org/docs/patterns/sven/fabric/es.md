@@ -1,4 +1,7 @@
-Sven puede ser cualquier sudadera que quieras ser. Desde tejidos hasta tejidos o incluso submarinismo, No puedes ir mal mientras te pegas con algo que tiene un poco de peso.
+- - -
+title: "Sven sweatshirt: Fabric Options"
+- - -
 
-Echa un vistazo a [los escaparates de Sven](/showcase/pattern/sven) para inspiración.
+Sven can be any sweatshirt you want it to be. From wovens to knit or even scuba, you can't really go wrong as long as you stick with something that has a bit of weight to it.
 
+Have a look at [the Sven showcases](/showcase/pattern/sven) for inspiration.
