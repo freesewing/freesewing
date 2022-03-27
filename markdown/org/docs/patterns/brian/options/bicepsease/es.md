@@ -1,7 +1,11 @@
-![El factor de facilidad de los biceps en Brian](./bicepsease.svg)
+- - -
+title: "Biceps ease"
+- - -
 
-La cantidad de facilidad en su brazo superior.
+![The biceps ease factor on Brian](./bicepsease.svg)
 
+The amount of ease at your upper arm.
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](brian_bicepsease_sample.svg "Efecto de esta opción en el patrón")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_bicepsease_sample.svg "Effect of this option on the pattern")
