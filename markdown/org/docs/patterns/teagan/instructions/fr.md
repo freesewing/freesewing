@@ -1,6 +1,10 @@
+- - -
+title: "Teagan T-shirt: Sewing Instructions"
+- - -
+
 ## Etape 1: Assemblez les coutures d'épaule
 
-![Fermer les coutures d'épaule](step01.svg)
+![Close the shoulder seams](step01.svg)
 
 - Placez l'avant et l'arrière les uns sur les autres avec [bons côtés ensemble](/docs/sewing/good-sides-together). Alignez les coutures des épaules.
 - Préparez les coutures des épaules ou coupez-les avec un point de zigzag étroit (~2 mm) à la couture standard.
@@ -11,7 +15,7 @@ Optionnel: Dans un tricot drapier, vous pouvez choisir de renforcer les coutures
 
 ## Étape 2 : Mettre dans les manches
 
-![Mettre dans les manches](step02.svg)
+![Set in sleeves](step02.svg)
 
 - Placez le devant et le dos maintenant fixés avec le bon côté vers le haut.
 - Identifiez les côtés avant et arrière de chacune de vos manches. (C'est ainsi que vous séparez la manche gauche de la droite.) On your paper pattern piece, the front side of the sleeve is to the right.
@@ -39,7 +43,7 @@ Il s'agit de l'étape la plus complexe dans la fabrication du T-shirt Teagan, ma
 
 ### Placer (démarrer) votre biais
 
-![Placez votre liaison](step03a.svg)
+![Place your binding](step03a.svg)
 
 - Mettez votre T-shirt vers le bas avec le bon côté du dos vers le haut, et placez votre bande de reliure sur le dessus avec le bon côté vers le bas (comme dans les bons côtés ensemble). Votre liaison devrait commencer au centre de l'encolure de l'encolure.
 - Alignez le bord long de votre bande avec le bord de votre tissu, de sorte que la bande se trouve sur le tissu (pas dans l'ouverture). Placez le coin sur votre point de départ.
@@ -47,14 +51,14 @@ Il s'agit de l'étape la plus complexe dans la fabrication du T-shirt Teagan, ma
 
 ### Coudre le biais bien positionné
 
-![Coudre le biais bien positionné](step03b.svg)
+![Sew binding in place](step03b.svg)
 
 - Placez le pied de votre presseur 3 cm le long de la corde de fixation, de sorte qu'une queue de 3 cm sera laissée sans coutures. Cela nous aidera à nous joindre plus tard à la fin de la liaison. Ensuite cousez 1,5 cm du bord autour de l'encolure en tirant doucement la reliure au moment de la couture.  (Note: ce n'est pas l'allocation standard de couture.)
 - Arrêtez de coudre 3 cm avant la fin, laissant une queue comme nous l'avons fait au début.
 
 ### Marquer et coudre les extrémités de liaison
 
-![Coudre fin de liaison](step03c.svg)
+![Sew binding ends](step03c.svg)
 
 - Avec environ 6cm de gauche avant de terminer notre cercle, il est temps de coudre les extrémités de la liaison ensemble.
 - Prenez l'un des bords et étirez-le le le long des 3 cm en le séparant du point de départ comme vous le feriez lors de la couture. En ce qui concerne la liaison, marque où la liaison a atteint le point de départ. Faites la même chose pour l'autre extrémité.
@@ -66,13 +70,13 @@ Il s'agit de l'étape la plus complexe dans la fabrication du T-shirt Teagan, ma
 
 </Note>
 
-![Terminer la liaison](step03d.svg)
+![Finish binding](step03d.svg)
 
 - Maintenant que vos extrémités de reliure sont réunies, il est temps de terminer les 6 dernières cm de liaison. Cousez-les en restant à 1,5cm du bord comme vous l'avez fait auparavant.
 
 ### Plier le tricot à l'arrière et coudre vers le bas
 
-![Coudre la liaison](step03e.svg)
+![Sew down binding](step03e.svg)
 
 - Pliez votre tissu de reliure autour du tissu de votre T-shirt au dos. C'est ainsi que nous allons le coudre.
 - Alors que le tissu est plié deux fois à l'avant (cachant le bord du tissu dans le processus), il n'y a pas besoin de cela à l'arrière. Nous allons simplement couper le bord plus tard, étant donné que le tricot ne ravira pas. Si nous devions replier le tissu à l'arrière également, cela ne ferait qu'ajouter de l'épaisseur.
@@ -99,7 +103,7 @@ Surveillez donc si cela se produit, et si vous le voyez, étirez la couche infé
 
 ## Étape 4 : Fermer les coutures latérales et les manches
 
-![Fermer les coutures latérales et les manches](step04.svg)
+![Close the side seams and sleeves](step04.svg)
 
 - Pliez votre T-shirt Teagan double à l'épaule avec de bons côtés ensemble.
 - Alignez les coutures latérales et les manches et fixez-les ensemble.
@@ -108,7 +112,7 @@ Surveillez donc si cela se produit, et si vous le voyez, étirez la couche infé
 
 ## Étape 5 : Terminer les ourlets et les manches
 
-![Terminer les ourlets et les manches](step05.svg)
+![Finish hem and sleeves](step05.svg)
 
 - Repliez l'ourlet vers l'intérieur, et courez-le vers le haut. Si vous avez une recouvreuse, utilisez-la. Dans le cas contraire, utilisez une aiguille jumelle ou un point de zig-zag pour garder la couture tendue.
 - Répéter l'ourlet sur chaque manche.
