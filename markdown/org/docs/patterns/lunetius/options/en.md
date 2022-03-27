@@ -1,5 +1,5 @@
 ---
-title: Design Options
+title: "Lunetius Lacerna: Design Options"
 ---
 
 <PatternOptions pattern='lunetius' />
