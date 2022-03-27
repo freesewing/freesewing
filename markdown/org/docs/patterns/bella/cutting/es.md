@@ -1,5 +1,5 @@
 - - -
-title: Bella Cutting
+title: "Bella body block: Cutting Instructions"
 - - -
 
 **Tela principal**
