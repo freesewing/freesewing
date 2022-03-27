@@ -1,3 +1,7 @@
+- - -
+title: "Carlita coat: What You Need"
+- - -
+
 To make Carlita, you will need the following:
 
 - Basic sewing supplies
