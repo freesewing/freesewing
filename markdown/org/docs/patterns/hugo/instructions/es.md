@@ -1,3 +1,7 @@
+- - -
+title: "Hugo hoodie: Sewing Instructions"
+- - -
+
 <Note>
 
 ###### Documentation under construction
@@ -11,9 +15,9 @@ Ahora las malas noticias: Las instrucciones escritas para Hugo todavía no está
 
 ## Vídeo
 
-¿Texto un poco seco para ti? Intento que los videos estén disponibles como parte de la documentación de patrones.
+Text a bit dry for you? I try to make videos available as part of the pattern documentation.
 
-Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a terminar:
+This 6-episode series shows you how to make your hoodie start to finish:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
