@@ -1,4 +1,8 @@
-Para hacer Theodore, necesitarás lo siguiente:
+- - -
+title: "Theo trousers: What You Need"
+- - -
+
+To make Theodore, you will need the following:
 
 - Suministros básicos de costura
 - About 2 meters (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/theo/fabric))
