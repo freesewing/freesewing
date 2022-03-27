@@ -1,3 +1,7 @@
+- - -
+title: "Jaeger jacket: Cutting Instructions"
+- - -
+
 - **Tela principal**
   - Cortar **2 frentes** (parte 1)
   - Corta **2 fachadas frontales** (busca el límite de fachada/revestimiento en la parte delantera)
