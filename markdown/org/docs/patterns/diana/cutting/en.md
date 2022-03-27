@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Diana draped top: Cutting Instructions"
 ---
 
 - Cut **1 back** on the fold

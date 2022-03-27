@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Titan trouser block: Cutting Instructions"
 ---
 
 **Main fabric**

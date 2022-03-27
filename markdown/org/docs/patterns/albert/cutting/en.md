@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Albert apron: Cutting Instructions"
 ---
 
 - Cut **1 front** on the fold

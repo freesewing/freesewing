@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Hortensia handbag: Cutting Instructions"
 ---
 
 ### Materials

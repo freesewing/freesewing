@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Shin swim trunks: Cutting Instructions"
 ---
 
 - Cut **2 backs** with good sides together

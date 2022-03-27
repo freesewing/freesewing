@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Sandy circle skirt: Cutting Instructions"
 ---
 
 <Note>

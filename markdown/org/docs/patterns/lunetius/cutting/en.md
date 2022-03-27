@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Lunetius Lacerna: Cutting Instructions"
 ---
 
 - Cut **1 lacerna** part on the fold

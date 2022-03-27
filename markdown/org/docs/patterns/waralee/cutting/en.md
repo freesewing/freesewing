@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Waralee wrap pants: Cutting Instructions"
 ---
 
 <Note>

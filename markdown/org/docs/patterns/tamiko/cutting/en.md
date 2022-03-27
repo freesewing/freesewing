@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Tamiko top: Cutting Instructions"
 ---
 
 - **Main fabric**

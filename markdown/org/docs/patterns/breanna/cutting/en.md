@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Breanna body block: Cutting Instructions"
 ---
 
 **Main fabric**

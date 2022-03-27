@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Walburga Wappenrock: Cutting Instructions"
 ---
 
 Walburga consists of two parts, a _front_ and a _back_ piece.

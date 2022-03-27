@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Bent body Block: Cutting Instructions"
 ---
 
 **Main fabric**

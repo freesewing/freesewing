@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Charlie chinos: Cutting Instructions"
 ---
 
 ##### From main fabric

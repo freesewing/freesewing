@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Brian body block: Cutting Instructions"
 ---
 
 **Main fabric**

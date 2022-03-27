@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Bee bikini top: Cutting Instructions"
 ---
 
 There are three variations of this pattern. **One Colour**, which is where the bikini top is made out of one colour. **Two Colours**, where the bikini top is made reversible by using two colours, and **Cross Back Tie Variant**, where the neck ties tie in the back replacing the band tie.

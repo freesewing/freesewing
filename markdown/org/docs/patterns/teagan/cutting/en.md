@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Teagan T-shirt: Cutting Instructions"
 ---
 
 - Cut 1 back on the fold.

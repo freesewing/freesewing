@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Benjamin bow tie: Cutting Instructions"
 ---
 
 Benjamin is a rather simple pattern, but your options will determine what

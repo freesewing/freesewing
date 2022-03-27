@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Aaron A-Shirt: Cutting Instructions"
 ---
 
 - Cut **1 back** on the fold

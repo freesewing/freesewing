@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Holmes deerstalker hat: Cutting Instructions"
 ---
 
 The **crown** pattern piece needs to be cut on the fold to create a whole piece.

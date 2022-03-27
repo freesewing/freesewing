@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Theo trousers: Cutting Instructions"
 ---
 
 - **Main fabric**

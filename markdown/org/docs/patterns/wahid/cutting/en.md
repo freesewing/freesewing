@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Wahid waistcoat: Cutting Instructions"
 ---
 
 - **Main fabric**

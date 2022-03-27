@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Huey hoodie: Cutting Instructions"
 ---
 
 **Main fabric**

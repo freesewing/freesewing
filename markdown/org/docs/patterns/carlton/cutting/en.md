@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Carlton coat: Cutting Instructions"
 ---
 
 <Note>

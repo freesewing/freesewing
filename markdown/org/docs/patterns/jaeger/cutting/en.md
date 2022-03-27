@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Jaeger jacket: Cutting Instructions"
 ---
 
 - **Main fabric**

@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Cathrin corset: Cutting Instructions"
 ---
 
 Cut 1 core fabric and 1 outer fabric of the center panel, making sure to cut on the fold.

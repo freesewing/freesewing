@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Carlita coat: Cutting Instructions"
 ---
 
 <Note>

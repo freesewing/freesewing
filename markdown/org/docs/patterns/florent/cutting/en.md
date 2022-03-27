@@ -1,5 +1,5 @@
 ---
-title: Cutting instructions
+title: "Florent flat cap: Cutting Instructions"
 ---
 
 Depending on how much fabric is available, you might want to cut two top and or side parts, hence the instructions on the pattern itself.
