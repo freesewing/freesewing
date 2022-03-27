@@ -1,14 +1,18 @@
+- - -
+title: "Aaron A-Shirt: Sewing Instructions"
+- - -
+
 ## Paso 1: Cerrar costuras
 
-![Cerrar las costuras de los lados y los hombros](step01.png)
+![Close the side and shoulder seams](step01.png)
 
-Put front and back on top of each other with _good sides together_. Cose las costuras laterales y las costuras cortas de los arriba de los tirantes. Si tienes una remalladora, este es un buen momento para usarla. Si no, haz las costuras de otra forma.
+Put front and back on top of each other with _good sides together_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
 
 ## Paso 2: Termina el dobladillo
 
-![Termina el dobladillo](step02.png)
+![Finish the hem](step02.png)
 
-Dobla el borde hacia arriba y cóselo. Si tienes una remalladora con coverlock, úsala. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
+Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
 
 <Note>
 
@@ -38,7 +42,7 @@ En cualquier caso, cuanto menos afiladas sean las curvas, más fácil será. As�
 
 </Note>
 
-We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. Hay una diferencia, y se explica [aquí](/docs/sewing/knit-binding)).
+We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There's a difference, and it's explained [here](/docs/sewing/knit-binding)).
 
 <Note>
 
@@ -48,28 +52,28 @@ Esta es la única parte de hacer esta camisa que requiere un poco de práctica. 
 
 ### Elige tu lugar
 
-![Aplicando enlace de knit](step03a.png)
+![Applying knit binding](step03a.png)
 
-Lo primero que tenemos que hacer es decidir dónde vamos a empezar/detener nuestro vinculante. Esto es lo que sugiero:
+The first thing we need to do is decide where we are going to start/stop our binding. Here's what I suggest:
 
 - Para los orificios de armadura: en la costura lateral. Esto ocultará nuestra costura bajo el brazo
 - Para la apertura del cuello: el centro de la parte trasera del cuello. Puede que quieras marcar esto con un pin
 
 ### Colocar (el inicio de) tu vinculación
 
-![Colocar (el inicio de) tu vinculación](step03b.png)
+![Place (the start of) your binding](step03b.png)
 
-Pon tu camisa A-abajo con el lado bueno, y coloque su tira de unión en la parte superior con el lado bueno hacia abajo (como en los lados buenos juntos).
+Put your A-shirt down with the good side up, and place your binding strip on top of it with the good side down (as in, good sides together).
 
-Alínea el largo borde de tu tira con el borde de tu tela para que la tira se encuentre en la parte superior de la tela (no en la abertura). Coloque la esquina en su punto de partida.
+Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
 
-Ahora desplaza tu tira de unión de 1 cm más allá de tu punto de partida. Este pequeño extra garantizará que podamos unirnos a los dos fines más adelante.
+Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
 
 ### Asegúrate de saber dónde coser
 
-![Asegúrate de saber dónde coser](step03c.png)
+![Make sure you know where to sew](step03c.png)
 
-Vamos a coser a 1,5 cm del borde. Así que tenga cuidado, porque no se trata de la franquicia de costura estándar.
+We are going to sew 1.5cm from the edge. So be careful because this is not the standard seam allowance.
 
 <Tip>
 
@@ -79,59 +83,59 @@ Entonces todo lo que tienes que hacer es mantener alineado el borde de tu tela c
 
 </Tip>
 
-Además, no estamos empezando en nuestro punto de partida, pero nos saltamos la primera 3cm. Necesitaremos esta sala de pelucas más tarde para unirnos a los extremos de nuestra vinculación.
+Also, we are not starting at our start point, but we skip the first 3cm. We'll need this wiggle room later to join the ends of our binding.
 
 ### Marcar enlace en su lugar
 
-![Marcar enlace en su lugar](step03d.png)
+![Sew binding in place](step03d.png)
 
-Mantenga su unión en su lugar mientras estira suavemente el encuadernador, pero no la tela. Asegúrate de no coser los últimos 3 cm pero déjalos, como hiciste al comienzo.
+Sew your binding in place while gently stretching the binding, but not the fabric. Make sure not to sew the last 3cm but leave them, just as you did at the start.
 
-Es posible que necesites practicar un poco para tener el colmillo.
+You might need to practice a bit to get the hang of it.
 
 > Asegúrate de estirar más tu unión cuando estés tomando una curva más nítida. Lee mis notas sobre [enlace de tejidos](/docs/sewing/knit-binding) para más información.
 
 ### Marcar como enlace
 
-![Unirse al enlace termina](step03e.png)
+![Joining the binding ends](step03e.png)
 
-Con alrededor de 6 cm para ir antes de completar nuestro círculo, es hora de coser los extremos de la unión juntos.
+With about 6cm left to go before we complete our circle, it's time to sew the ends of the binding together.
 
-![Marcar como enlace](step03f.png)
+![Mark binding ends](step03f.png)
 
-Tome uno de los bordes y lo estire a lo largo de los 3 cm separándola desde el punto de partida como lo haría mientras se coser.
+Take one of the edges, and stretch it along the 3cm seperating it from the start point as you would while sewing.
 
-Marque el enlace donde llegue al punto de partida. Haga lo mismo con el otro extremo.
+Mark the binding where it reaches the start point. Do the same for the other end.
 
 ### El encuadernado finaliza juntos
 
-![Únete al final del enlace](step03g.png)
+![Join the ends of the binding](step03g.png)
 
-Doblar tu camisa de cualquier manera te hace más fácil colocar ambos extremos de unión con buenos lados juntos, alineando las marcas. Consume a ellos juntos en la marca.
+Fold your A-shirt in whatever way makes it easier for you to place both binding ends with good sides together, aligning the marks. Sew them together on the mark.
 
 > 6 cm no es mucho, pero debe ser suficiente para conseguir que ambos bordes cómodamente debajo de su máquina de coser para coser togther.
 
 ### Terminar los últimos 6 cm de encuadernado
 
-![El encuadernado finaliza juntos](step03h.png)
+![Sew binding ends together](step03h.png)
 
-Ahora que los extremos de la unión están unidos, es hora de terminar los últimos 6 cm de encuadernación. Manténgalo abajo, permaneciendo a 1,5 cm del borde como lo hiciste antes.
+Now that your binding ends are joined together, it's time to finish the last 6cm of binding. Sew it down, staying 1.5cm from the edge as you did before.
 
 ## Paso 4: Doble unión de tejidos a la espalda y coser
 
 ### Doblar tu unión sobre el borde de la tela hacia atrás
 
-![Doble unión de tejidos a la espalda](step04a.png)
+![Fold knit binding to the back](step04a.png)
 
-Doblar tu tela de unión alrededor de la tela de tu camisa A-hacia la espalda. Así es como lo costaremos.
+Fold your binding fabric around the fabric of your A-shirt to the back. This is how we'll sew it down.
 
 > Mientras que la tela está doblada en la parte delantera (ocultando el borde de la tela en el proceso) no hay necesidad de eso en la parte trasera. Nos limitaremos a recortar el borde más tarde, dado que el nudo no se cuelga. Si tuviésemos que doblar la tela también en la espalda, sólo añadiríamos granel.
 
 ### Explora tu vinculación
 
-![Marca la unión de tejidos](step04b.png)
+![Sew the knit binding down](step04b.png)
 
-Desde el lado derecho de tu tejido, coser a lo largo del borde interior de tu unión (más alejado del borde), asegurándose de capturar el enlace en la espalda en el proceso.
+From the right side of your fabric, sew along the inner edge of your binding (furthest from the edge), making sure to catch the binding at the back in the process.
 
 <Note>
 
@@ -139,7 +143,7 @@ Si tienes una máquina de cierre, eso sería perfecto para esta costura
 
 </Note>
 
-Tendrás que, una vez más, estirar tu vinculación un poco mientras haces esto. Pero esta vez, hay una advertencia adicional para mirar.
+You'll have to, once again, stretch your binding a bit while doing this. But this time, there's an extra caveat to look out for.
 
 <Note>
 
@@ -157,9 +161,9 @@ Así que ten cuidado con esto, y si ves que sucede, estira la capa inferior un p
 
 ## Paso 5: Recortar unión de tejidos en el interior
 
-![Recortar unión de tejidos en el interior](step05.png)
+![Trim back knit binding on the inside](step05.png)
 
-En el interior de tu camiseta, recorta el enganche contra tu costura para acabar.
+On the inside of your A-shirt, trim back the knit binding against your seam to finish up.
 
 <Note>
 
@@ -167,4 +171,4 @@ Ten cuidado de no cortar un agujero en tu camiseta. Me ha ocurrido esto en más 
 
 </Note>
 
-![Ya está, ya has terminado 👍](finished.gif)
+![That's it, you're done 👍](finished.gif)
