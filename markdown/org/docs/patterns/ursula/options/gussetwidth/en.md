@@ -1,3 +1,7 @@
+---
+title: "Gusset width"
+---
+
 This options controls the width of the gusset.
 
 ## Effect of this option on the pattern

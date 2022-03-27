@@ -1,3 +1,7 @@
+---
+title: "Secondary bust dart length"
+---
+
 The length of the secondary bust dart.
 
 ## Effect of this option on the pattern

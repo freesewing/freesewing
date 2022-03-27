@@ -1,3 +1,7 @@
+---
+title: "Collar stand curve"
+---
+
 ![Collarstand curve](collarstandcurve.svg)
 
 How much the collar stand curves up at the edges.

@@ -1,3 +1,7 @@
+---
+title: "Front inset"
+---
+
 ![Front inset](frontinset.svg)
 
 How far do you want your waistcoat armhole to curve inwards on the front?

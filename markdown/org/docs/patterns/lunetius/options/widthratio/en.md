@@ -1,3 +1,7 @@
+---
+title: "Width ratio"
+---
+
 Controls the width of the garment
 
 ## Effect of this option on the pattern

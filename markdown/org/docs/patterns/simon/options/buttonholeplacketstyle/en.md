@@ -1,3 +1,7 @@
+---
+title: "Buttonhole placket style"
+---
+
 ![Buttonhole placket style](buttonholeplacketstyle.svg)
 
 Do you want classic buttonhole placket, or a seamless one (sometimes called French style)?

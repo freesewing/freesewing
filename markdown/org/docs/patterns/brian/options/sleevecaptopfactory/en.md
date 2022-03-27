@@ -1,5 +1,7 @@
 ---
-title: Sleevecap top Y
+title: "Sleevecap top Y"
+---
+
 ---
 
 ![The vertical location of the sleevecap top](./sleevecaptopfactory.svg)

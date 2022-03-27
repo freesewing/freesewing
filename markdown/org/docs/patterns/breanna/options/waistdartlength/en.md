@@ -1,3 +1,7 @@
+---
+title: "Waist dart length"
+---
+
 The length of the back waist dart.
 
 ## Effect of this option on the pattern

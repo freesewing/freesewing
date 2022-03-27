@@ -1,3 +1,7 @@
+---
+title: "Front darts"
+---
+
 Whether to include front waist darts or not.
 
 ## Effect of this option on the pattern

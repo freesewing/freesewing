@@ -1,5 +1,7 @@
 ---
-title: Cuff width
+title: "Cuff width"
+---
+
 ---
 
 Controls the width of the cuff.

@@ -1,3 +1,7 @@
+---
+title: "Back scye dart"
+---
+
 ![Back scye dart](backscyedart.svg)
 
 This pattern comes with a default 0.5 cm scye dart (think armhole dart) on the back.

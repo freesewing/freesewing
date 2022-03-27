@@ -1,3 +1,7 @@
+---
+title: "Back pockets"
+---
+
 Whether to include back pockets, yes or no.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Gusset length"
+---
+
 This option controls the length of the gusset.
 
 ## Effect of this option on the pattern

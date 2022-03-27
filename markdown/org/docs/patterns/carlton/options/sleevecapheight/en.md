@@ -1,3 +1,7 @@
+---
+title: "Sleevecap height"
+---
+
 This factor controls the height of the sleevecap.
 
 ## Effect of this option on the pattern

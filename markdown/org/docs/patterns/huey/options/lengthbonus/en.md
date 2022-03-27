@@ -1,3 +1,7 @@
+---
+title: "Length bonus"
+---
+
 The amount to lengthen the garment by. A negative value will shorten it.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Neckline curvature"
+---
+
 Controls the curvature of the neck opening.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Length bonus"
+---
+
 ![Length bonus](lengthbonus.svg)
 
 How much shirt do you want to be able to tuck in your trousers?

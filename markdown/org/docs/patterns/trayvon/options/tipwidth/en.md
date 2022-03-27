@@ -1,3 +1,7 @@
+---
+title: "Tip width"
+---
+
 ![Tip width](tipwidth.svg)
 
 The tip width is the width at the tip of the tie.

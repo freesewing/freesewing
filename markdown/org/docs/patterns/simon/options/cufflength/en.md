@@ -1,3 +1,7 @@
+---
+title: "Cuff length"
+---
+
 ![Cuff length](cufflength.svg)
 
 The length of your cuffs.

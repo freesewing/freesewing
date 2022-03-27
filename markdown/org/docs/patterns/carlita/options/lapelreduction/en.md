@@ -1,3 +1,7 @@
+---
+title: "Lapel reduction"
+---
+
 Controls how much the lapel tip goes inwards.
 
 It is common to have the edge of the lapels not be entirely straight, but rather

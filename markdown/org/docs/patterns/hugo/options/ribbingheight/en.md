@@ -1,3 +1,7 @@
+---
+title: "Ribbing height"
+---
+
 The height of the ribbing at the hem and cuffs.
 
 ## Effect of this option on the pattern

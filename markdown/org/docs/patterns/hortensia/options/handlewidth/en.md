@@ -1,3 +1,7 @@
+---
+title: "Handle width"
+---
+
 Controls the width of the handle.
 
 <Tip>

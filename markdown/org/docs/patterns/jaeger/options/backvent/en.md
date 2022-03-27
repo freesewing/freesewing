@@ -1,3 +1,7 @@
+---
+title: "Back vent"
+---
+
 ![Back vent](backvent.svg)
 
 How do you like your back vents?

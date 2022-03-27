@@ -1,3 +1,7 @@
+---
+title: "Collar gap"
+---
+
 ![Collar gap](collargap.svg)
 
 Distance the collar sits apart when closed.

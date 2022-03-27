@@ -1,3 +1,7 @@
+---
+title: "Length"
+---
+
 Choose from the different length styles
 
 ## Effect of this option on the pattern

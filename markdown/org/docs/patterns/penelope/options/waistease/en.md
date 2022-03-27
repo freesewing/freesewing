@@ -1,3 +1,7 @@
+---
+title: "Waist ease"
+---
+
 The amount of ease at the waist.
 
 ## Effect of this option on the pattern

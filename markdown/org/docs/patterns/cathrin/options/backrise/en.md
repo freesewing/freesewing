@@ -1,3 +1,7 @@
+---
+title: "Back rise"
+---
+
 ![The back rise option on Cathrin](./backrise.svg)
 
 How high do you want the corset to rise at the back, relative to the underbust height?

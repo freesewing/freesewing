@@ -1,3 +1,7 @@
+---
+title: "Neckline depth"
+---
+
 Controls the depth of the neck opening.
 
 ## Effect of this option on the pattern

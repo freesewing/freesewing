@@ -1,3 +1,7 @@
+---
+title: "Collar roll"
+---
+
 ![Collar roll](collarroll.svg)
 
 How much the collar is taller than the collar stand at center back.

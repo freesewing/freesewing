@@ -1,3 +1,7 @@
+---
+title: "Neckline width"
+---
+
 Controls the width of the neck opening.
 
 ## Effect of this option on the pattern

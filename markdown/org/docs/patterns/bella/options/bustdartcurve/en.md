@@ -1,5 +1,7 @@
 ---
-title: Bust dart curve
+title: "Bust dart curve"
+---
+
 ---
 
 ![The effect of the bust dart curve option on the pattern](sample.png)

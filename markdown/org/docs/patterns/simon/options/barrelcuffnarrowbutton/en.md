@@ -1,3 +1,7 @@
+---
+title: "Cuff narrow button"
+---
+
 ![Barrel cuff narrow button](./barrelcuffnarrowbutton.svg)
 
 Do you want an extra button to button up your cuff more tightly?

@@ -1,3 +1,7 @@
+---
+title: "Back armhole shape"
+---
+
 ![The back armhole shape option on Aaron](./backlinebend.svg)
 
 Determines the bend of the armhole at the back. In other words, the amount the arm opening is cut-out on your back.

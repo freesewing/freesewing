@@ -1,5 +1,7 @@
 ---
-title: Chest ease
+title: "Chest ease"
+---
+
 ---
 
 ![The effect of the chest ease option on the pattern](sample.png)

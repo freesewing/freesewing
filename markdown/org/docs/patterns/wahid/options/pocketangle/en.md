@@ -1,3 +1,7 @@
+---
+title: "Pocket angle"
+---
+
 Controls the angle of the pocket slant.
 
 ## Effect of this option on the pattern

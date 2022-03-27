@@ -1,3 +1,7 @@
+---
+title: "Length bonus"
+---
+
 Allows variation of the length of the garment
 
 ## Effect of this option on the pattern

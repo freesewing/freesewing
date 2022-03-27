@@ -1,3 +1,7 @@
+---
+title: "Size of the hem"
+---
+
 The size of the hem.
 
 ## Effect of this option on the pattern

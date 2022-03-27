@@ -1,3 +1,7 @@
+---
+title: "Adjustment ribbon"
+---
+
 ![Traditional or adjustable](adjustmentribbon.svg)
 
 With Benjamin, you can make a traditional fixed size bow tie. And you can

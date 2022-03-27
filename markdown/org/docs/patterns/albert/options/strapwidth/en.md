@@ -1,3 +1,7 @@
+---
+title: "Strap width"
+---
+
 Controls the width of the straps on your apron.
 
 ## Effect of this option on the pattern

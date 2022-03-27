@@ -1,3 +1,7 @@
+---
+title: "Sleevecap ease"
+---
+
 How much sleevecap ease do you want?
 
 > #### What's the point?

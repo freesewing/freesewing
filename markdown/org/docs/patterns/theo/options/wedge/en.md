@@ -1,3 +1,7 @@
+---
+title: "Wedge"
+---
+
 Controls the length of the crossseam.
 
 ## Effect of this option on the pattern

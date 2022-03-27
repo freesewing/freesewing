@@ -1,3 +1,7 @@
+---
+title: "Sleeve vent length"
+---
+
 Controls the length of the sleeve vent.
 
 ## Effect of this option on the pattern

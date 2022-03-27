@@ -1,3 +1,7 @@
+---
+title: "Tip width"
+---
+
 ![Bow ties Wide and Narrow](tipwidth.svg)
 
 You can make BIG bow ties, or small ones. This option allows you to change the vertical size of the bows. Make

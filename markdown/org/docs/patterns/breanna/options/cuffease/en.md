@@ -1,3 +1,7 @@
+---
+title: "Cuff ease"
+---
+
 This option controls the ease at your wrist.
 
 ## Effect of this option on the pattern

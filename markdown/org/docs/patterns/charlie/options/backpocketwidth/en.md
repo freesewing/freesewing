@@ -1,3 +1,7 @@
+---
+title: "Back pocket width"
+---
+
 Constrols the width of the back pockets.
 
 ## Effect of this option on the pattern

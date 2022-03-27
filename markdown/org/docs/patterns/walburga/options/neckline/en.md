@@ -1,3 +1,7 @@
+---
+title: "Neckline"
+---
+
 Controls whether or not to draft a neck opening
 
 ## Effect of this option on the pattern

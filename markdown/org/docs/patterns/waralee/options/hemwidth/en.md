@@ -1,3 +1,7 @@
+---
+title: "Hem size"
+---
+
 Size of the hem at the bottom of the pants
 
 ## Effect of this option on the pattern

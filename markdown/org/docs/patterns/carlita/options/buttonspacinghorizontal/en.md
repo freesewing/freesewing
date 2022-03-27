@@ -1,3 +1,7 @@
+---
+title: "Horizontal button spacing"
+---
+
 Controls how far the double rows of front buttons are set apart.
 
 ## Effect of this option on the pattern

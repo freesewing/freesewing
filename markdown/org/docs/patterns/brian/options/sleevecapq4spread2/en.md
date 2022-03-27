@@ -1,5 +1,7 @@
 ---
-title: Sleevecap Q4 upward spread
+title: "Sleevecap Q4 downward spread"
+---
+
 ---
 
 ![The downward spread in the fourth quadrant of the sleevecap](./sleevecapq4spread2.svg)

@@ -1,3 +1,7 @@
+---
+title: "Cross seam angle"
+---
+
 Controls the angle of the cross seam curve.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Armhole drop"
+---
+
 Controls the depth of the armhole
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Leg balance"
+---
+
 Controls the proportion between the front and back part of the legs.
 
 The back of the trouser legs are always wider than the front. This controls by how much.

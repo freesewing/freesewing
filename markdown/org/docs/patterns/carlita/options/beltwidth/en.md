@@ -1,3 +1,7 @@
+---
+title: "Belt width"
+---
+
 Controls the width of the belt at the back.
 
 ## Effect of this option on the pattern

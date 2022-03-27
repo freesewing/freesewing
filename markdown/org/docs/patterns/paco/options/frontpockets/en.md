@@ -1,3 +1,7 @@
+---
+title: "Front pockets"
+---
+
 Whether to include front pockets (on the side seam) or not.
 
 ## Effect of this option on the pattern

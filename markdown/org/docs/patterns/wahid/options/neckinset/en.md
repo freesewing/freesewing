@@ -1,3 +1,7 @@
+---
+title: "Neck inset"
+---
+
 ![Neck inset](neckinset.svg)
 
 How far do you want your waistcoat to sit away from your collar on your shoulder seam? The default is 2cm.

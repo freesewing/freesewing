@@ -1,3 +1,7 @@
+---
+title: "Inner pocket width"
+---
+
 The width of the inner pocket.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Flat-felled seam allowace"
+---
+
 Controls the amount of seam allowance on flat-felled seams.
 
 The armhole and side seams on the shirt are flat-felled seams, and those require extra seam allowance.

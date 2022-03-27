@@ -1,3 +1,7 @@
+---
+title: "Cuff style"
+---
+
 ![Cuff style](cuffstyle.svg)
 
 What style of cuff do you want?

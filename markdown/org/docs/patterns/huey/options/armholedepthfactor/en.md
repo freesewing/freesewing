@@ -1,3 +1,7 @@
+---
+title: "Armhole depth factor"
+---
+
 This option controls the depth of the armhole.
 
 ## Effect of this option on the pattern

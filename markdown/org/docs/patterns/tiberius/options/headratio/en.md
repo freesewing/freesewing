@@ -1,3 +1,7 @@
+---
+title: "Head ratio"
+---
+
 Controls the size of the head opening
 
 ## Effect of this option on the pattern

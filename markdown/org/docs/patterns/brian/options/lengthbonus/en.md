@@ -1,3 +1,7 @@
+---
+title: "Length bonus"
+---
+
 ![The length bonus option on Brian](./lengthbonus.svg)
 
 This option controls how far the block extend below your hips.

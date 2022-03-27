@@ -1,3 +1,7 @@
+---
+title: "Collar spread"
+---
+
 The collar spread controls how the collar drapes over the shoulders
 
 ## Effect of this option on the pattern

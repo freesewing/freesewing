@@ -1,3 +1,7 @@
+---
+title: "Pocket height"
+---
+
 Controls the height/depth of the pockets.
 
 ## Effect of this option on the pattern

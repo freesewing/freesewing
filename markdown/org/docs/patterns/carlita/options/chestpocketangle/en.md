@@ -1,3 +1,7 @@
+---
+title: "Chest pocket angle"
+---
+
 Controls the slant of the chest pocket.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Front scye dart"
+---
+
 This pattern comes with a default 1 cm scye dart (think armhole dart) at the front.
 
 You can increase or decrease the dart to influence the armhole.

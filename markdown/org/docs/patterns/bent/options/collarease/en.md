@@ -1,3 +1,7 @@
+---
+title: "Collar ease"
+---
+
 The amount of ease at your neck/collar.
 
 ## Effect of this option on the pattern
