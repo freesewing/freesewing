@@ -1,3 +1,7 @@
+- - -
+title: "Hortensia handbag: Cutting Instructions"
+- - -
+
 ### Materials
 
 - **Main fabric**
