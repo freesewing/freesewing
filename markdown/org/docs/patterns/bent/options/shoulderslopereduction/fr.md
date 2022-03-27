@@ -1,8 +1,11 @@
+- - -
+title: "Shoulder slope reduction"
+- - -
 
-Ce patron s'adapte à la pente d'épaule en tenant compte de la mesure de la pente des épaules.
+This pattern adapts to sloped shoulder by taking the shoulder slope measurment into account.
 
-Cependant, pour les vestes ou les manteaux, vous pouvez créer plus de place sur les épaules afin de permettre des épaulettes. Cette option vous permet de créer de la place supplémentaire sur les épaules en réduisant la pente des épaules.
-
+However, for jackets or coats, you may want to create more room at the shoulders to allow for shoulder pads. This option lets you create extra room at the shoulders by reducing the amount the shoulders are sloped.
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bent_shoulderslopereduction_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_shoulderslopereduction_sample.svg "Effect of this option on the pattern")
