@@ -1,3 +1,7 @@
+- - -
+title: "Sven sweatshirt: Sewing Instructions"
+- - -
+
 ### Paso 1: Cerrar costuras del hombro
 
 - Coloque la parte trasera y la parte delantera sobre la otra con los buenos lados toghether.
