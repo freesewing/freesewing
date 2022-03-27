@@ -1,5 +1,7 @@
 ---
-title: Style de bracelet
+title: "Style de bracelet"
+---
+
 ---
 
 Ce patron supporte trois styles de bracelet différents :
