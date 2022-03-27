@@ -1,3 +1,7 @@
+- - -
+title: "Shin swim trunks: Cutting Instructions"
+- - -
+
 - Corta **2 espaldas** con buenos lados juntos
 - Corta **4 frontales** 2 x 2 con buenos lados juntos
 - Corta **1 cintura**
@@ -7,11 +11,11 @@
 - Para ahorrar papel, la cintura no se imprime completamente en el patrón, ya que es un rectángulo largo. Así que busque el indicador de longitud, y corte un rectángulo de ese tamaño.
 - La franquicia del hem es el doble de la franquicia estándar de costura.
 
-Shin es un patrón muy simple, y consiste en dos partes principales más la cintura.
+Shin is a very simply pattern, and consists of two main parts plus the waistband.
 
-Debajo hay un diseño de borrador típico:
+Below is a typical draft layout:
 
-![Un borrador típico de Shin](layout.svg)
+![A typical Shin draft](layout.svg)
 
 <Tip>
 
