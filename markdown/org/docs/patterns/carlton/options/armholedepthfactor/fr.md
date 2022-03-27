@@ -1,7 +1,11 @@
-![Hauteur de l'emmanchure](./armholedepthfactor.svg)
+- - -
+title: "Armhole depth factor"
+- - -
 
-Ceci contrôle la profondeur de l'emmanchure qui à son tour influe sur la largeur du tête de manche.
+![Armhole depth factor](./armholedepthfactor.svg)
 
+This controls the depth of the armhole, which in turn influences the sleevecap width.
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_armholedepthfactor_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_armholedepthfactor_sample.svg "Effect of this option on the pattern")
