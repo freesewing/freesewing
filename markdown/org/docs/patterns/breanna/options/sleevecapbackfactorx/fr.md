@@ -1,6 +1,10 @@
-![L'emplacement horizontal du point d'inflexion dos](./sleevecapbackfactorx.svg)
+- - -
+title: "Sleevecap back X"
+- - -
 
-Cette option contrôle la position horizontale du point d'inflexion de la tête de manche à l'arrière de la manche.
+![The horizontal location of the back inflection point](./sleevecapbackfactorx.svg)
+
+This option controls the horizontal placement of the sleevecap inflection point at the back of the sleeve.
 
 <Tip>
 
@@ -9,4 +13,5 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapbackfactorx_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapbackfactorx_sample.svg "Effect of this option on the pattern")
