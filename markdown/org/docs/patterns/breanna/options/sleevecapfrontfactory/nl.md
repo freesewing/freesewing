@@ -1,6 +1,10 @@
-![De verticale locatie van het tussenpunt vooraan](./sleevecapfrontfactory.svg)
+- - -
+title: "Sleevecap front Y"
+- - -
 
-Deze optie bepaalt de verticale plaatsing van het tussenpunt aan de voorkant van de mouw.
+![The vertical location of the front inflection point](./sleevecapfrontfactory.svg)
+
+This option controls the vertical placement of the sleevecap inflection point at the front of the sleeve.
 
 <Tip>
 
@@ -10,4 +14,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](breanna_sleevecapfrontfactory_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapfrontfactory_sample.svg "Effect of this option on the pattern")
