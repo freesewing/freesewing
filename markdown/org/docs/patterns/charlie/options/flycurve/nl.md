@@ -1,6 +1,9 @@
+- - -
+title: "Fly curve"
+- - -
 
-Dit controleert de kromming van de vlieg J-naad.
-
+This controls the curvature of the fly's J-seam.
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_flycurve_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_flycurve_sample.svg "Effect of this option on the pattern")
