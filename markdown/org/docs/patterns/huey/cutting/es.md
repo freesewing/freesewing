@@ -1,3 +1,7 @@
+- - -
+title: "Huey hoodie: Cutting Instructions"
+- - -
+
 **Main fabric**
 
 - Cut **2 front** parts
