@@ -68,7 +68,6 @@ export default function Pattern(config = { options: {} }) {
   this.Snippet = Snippet // Snippet constructor
   this.Attributes = Attributes // Attributes constructor
 
-
   if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
   if (typeof this.config.inject === 'undefined') this.config.inject = {}
   if (typeof this.config.hide === 'undefined') this.config.hide = []
@@ -514,12 +513,13 @@ Pattern.prototype.pack = function () {
         part.attr('transform', `translate(${bin.x}, ${bin.y})`)
         this.autoLayout.parts[bin.id].move = {
           x: bin.x + part.layout.move.x,
-          y: bin.y + part.layout.move.y }
-      }
-      else this.autoLayout.parts[bin.id].move = {
-        x: part.layout.move.x,
-        y: part.layout.move.y,
-      }
+          y: bin.y + part.layout.move.y,
+        }
+      } else
+        this.autoLayout.parts[bin.id].move = {
+          x: part.layout.move.x,
+          y: part.layout.move.y,
+        }
     }
     this.width = size.width
     this.height = size.height

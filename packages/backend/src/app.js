@@ -25,7 +25,7 @@ export const connectToDb = () => {
       console.log(chalk.red('Could not connect to the database. Exiting now...'), err)
       process.exit()
     })
-};
+}
 
 export const startApp = () => {
   // Verify configuration
@@ -45,11 +45,7 @@ export const startApp = () => {
 
   // Catch-all route (Load index.html once instead of at every request)
   const index = fs.readFileSync(path.resolve(__dirname, 'landing', 'index.html'))
-  app.get('/', async (req, res) => res
-    .set('Content-Type', 'text/html')
-    .status(200)
-    .send(index)
-  )
+  app.get('/', async (req, res) => res.set('Content-Type', 'text/html').status(200).send(index))
 
   const port = process.env.PORT || 3000
 
@@ -59,6 +55,5 @@ export const startApp = () => {
     console.log(chalk.green(`> listening on port ${port}`))
   })
 
-  return app;
-};
-
+  return app
+}

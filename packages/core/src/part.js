@@ -17,7 +17,7 @@ function Part() {
   this.height = false
   this.render = true
   this.utils = utils
-  this.layout = { move: { x: 0, y:0 }}
+  this.layout = { move: { x: 0, y: 0 } }
 
   this.Point = Point
   this.Path = Path

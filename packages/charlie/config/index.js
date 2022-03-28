@@ -84,7 +84,7 @@ export default {
     waistband: ['titanBack', 'titanFront', 'front', 'back'],
     waistbandCurved: ['titanBack', 'titanFront', 'front', 'back'],
     beltLoops: 'waistband',
-    backPocket: 'back'
+    backPocket: 'back',
   },
   options: {
     // Constants (from Titan)

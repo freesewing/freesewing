@@ -126,7 +126,7 @@ export default (part) => {
       macro('banner', {
         path: 'saFrench',
         text: 'flatFelledSeamAllowance',
-        repeat: 30
+        repeat: 30,
       })
       paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
       paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')

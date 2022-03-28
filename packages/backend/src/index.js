@@ -1,8 +1,7 @@
 import { connectToDb, startApp } from './app'
 
-connectToDb();
+connectToDb()
 
-const app = startApp();
+const app = startApp()
 
-export default app;
-
+export default app

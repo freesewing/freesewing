@@ -17,19 +17,14 @@ const sizes = ['full', 'a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid']
 // Load form.html once instead of at every request)
 const form = fs.readFileSync(path.resolve(__dirname, 'form.html'))
 
-app.get('/', async (req, res) => res
-  .set('Content-Type', 'text/html')
-  .status(200)
-  .send(form)
-)
+app.get('/', async (req, res) => res.set('Content-Type', 'text/html').status(200).send(form))
 
 const rateLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   max: 50, // Limit to 50 requests per window (15m)
   standardHeaders: true,
-  legacyHeaders: false
+  legacyHeaders: false,
 })
-
 
 app.post('/', rateLimiter, async (req, res) => {
   let form = new formidable.IncomingForm()
@@ -40,10 +35,7 @@ app.post('/', rateLimiter, async (req, res) => {
       formats.indexOf(fields.format) === -1 ||
       sizes.indexOf(fields.size) === -1
     )
-      return res
-        .set('Content-Type', 'text/html')
-        .status(200)
-        .send(form)
+      return res.set('Content-Type', 'text/html').status(200).send(form)
     let upload = files.svg.path
     let cmd
     if (fields.size === 'full') {

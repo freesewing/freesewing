@@ -25,12 +25,12 @@ export default function (so) {
 
   // Metric size in mm / display value and imperial size in mm / display value for each scale index.
   const sizes = [
-    [10, "1cm",   25.4 * 0.375, '⅜″'],
-    [13, "1.3cm", 25.4 * 0.5,   '½″'],
-    [16, "1.6cm", 25.4 * 0.625, '⅝″'],
-    [19, "1.9cm", 25.4 * 0.75,  '¾″'],
-    [22, "2.2cm", 25.4 * 0.875, '⅞″'],
-    [25, "2.5cm", 25.4 * 1,     '1″'],
+    [10, '1cm', 25.4 * 0.375, '⅜″'],
+    [13, '1.3cm', 25.4 * 0.5, '½″'],
+    [16, '1.6cm', 25.4 * 0.625, '⅝″'],
+    [19, '1.9cm', 25.4 * 0.75, '¾″'],
+    [22, '2.2cm', 25.4 * 0.875, '⅞″'],
+    [25, '2.5cm', 25.4 * 1, '1″'],
   ]
   const m = sizes[scaleIndex][0] / 2
   const i = sizes[scaleIndex][2] / 2

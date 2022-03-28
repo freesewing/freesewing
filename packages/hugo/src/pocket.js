@@ -16,10 +16,7 @@ export default function (part) {
   paths.saBase = new Path()
     .move(points.cfRibbing)
     .line(points.pocketHem)
-    .join(paths.seam
-      .split(points.pocketCf)
-      .shift()
-    )
+    .join(paths.seam.split(points.pocketCf).shift())
     .setRender(false)
 
   store.set('facingWidth', points.pocketHem.dist(points.pocketTip) / 2)
@@ -54,11 +51,8 @@ export default function (part) {
     points.title = points.cfRibbing.shiftFractionTowards(points.pocketTop, 0.5)
     macro('title', { at: points.title, nr: 4, title: 'pocket' })
     if (sa) {
-      paths.sa = paths.saBase.offset(sa)
-        .line(points.pocketCf)
-        .move(points.cfRibbing)
-      paths.sa.line(paths.sa.start())
-        .attr('class', 'fabric sa')
+      paths.sa = paths.saBase.offset(sa).line(points.pocketCf).move(points.cfRibbing)
+      paths.sa.line(paths.sa.start()).attr('class', 'fabric sa')
     }
   }
 

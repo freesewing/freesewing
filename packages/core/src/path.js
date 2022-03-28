@@ -130,9 +130,7 @@ Path.prototype.attr = function (name, value, overwrite = false) {
       'Called `Path.attr(name, value, overwrite=false)` but `name` is undefined or false'
     )
   if (typeof value === 'undefined')
-    this.raise.warning(
-      'Called `Path.attr(name, value, overwrite=false)` but `value` is undefined'
-    )
+    this.raise.warning('Called `Path.attr(name, value, overwrite=false)` but `value` is undefined')
   if (overwrite)
     this.raise.debug(
       `Overwriting \`Path.attribute.${name}\` with ${value} (was: ${this.attributes.get(name)})`

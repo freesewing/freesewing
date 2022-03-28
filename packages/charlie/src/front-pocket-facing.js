@@ -38,7 +38,7 @@ export default (part) => {
     })
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['facingDirection', 'slantTopNotch', 'slantBottomNotch']
+      on: ['facingDirection', 'slantTopNotch', 'slantBottomNotch'],
     })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa', true)
