@@ -1,3 +1,7 @@
+- - -
+title: "Sandy circle skirt: Cutting Instructions"
+- - -
+
 <Note>
 
 If not using seamless follow the default list, If using seamless follow the seamless list.
