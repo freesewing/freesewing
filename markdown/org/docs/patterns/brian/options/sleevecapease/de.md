@@ -1,5 +1,10 @@
+- - -
+title: "Sleevecap ease"
+- - -
 
-Bestimmt die Menge der Ärmel Leichtigkeit.
+---
+
+This option determines the amount of ease at the sleevecap.
 
 <Note>
 
@@ -11,4 +16,5 @@ Für leichten Stoff oder Stricken wollen Sie wenig bis keine Ärmel leicht. Für
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_sleevecapease_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapease_sample.svg "Effect of this option on the pattern")
