@@ -1,5 +1,7 @@
 ---
-title: Manschettenstil
+title: "Manschettenstil"
+---
+
 ---
 
 Dieses Muster unterstützt drei verschiedene Manschettenstile:
