@@ -1,3 +1,7 @@
+- - -
+title: "Sandy circle skirt: Sewing Instructions"
+- - -
+
 <Warning>
 
 Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
@@ -88,7 +92,7 @@ There are many ways to hem/face the bottom of a skirt, If you have a prefered me
 
 ### Schritt 6: Viel Spaß!
 
-Du bist fertig! Now go enjoy your wonderful new skirt!
+You are all done! Now go enjoy your wonderful new skirt!
 
 ## Sandy with no closure (seamless/elasticated waistband)
 
@@ -143,7 +147,7 @@ There are many ways to hem/face the bottom of a skirt, If you have a prefered me
 
 ### Schritt 4: Viel Spaß!
 
-Du bist fertig! Now go enjoy your wonderfully seamless skirt!
+You all done! Now go enjoy your wonderfully seamless skirt!
 
 <Note>
 
