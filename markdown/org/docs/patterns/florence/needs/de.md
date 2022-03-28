@@ -1,5 +1,5 @@
 ---
-title: Was du brauchst
+title: "Florence face mask: What You Need"
 ---
 
 Um eine Florence-Gesichtsmaske zu erstellen, brauchst du Folgendes:
