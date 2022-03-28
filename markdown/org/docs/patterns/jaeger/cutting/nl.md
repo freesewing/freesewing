@@ -1,3 +1,7 @@
+- - -
+title: "Jaeger jacket: Cutting Instructions"
+- - -
+
 - **Buitenstof**
   - Knip **2 voorpanden** (deel 1)
   - Knip **2 belegdelen voor** (kijk naar de lijn die het voorpand verdeelt in beleg/voering)
