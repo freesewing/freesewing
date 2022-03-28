@@ -1,5 +1,5 @@
 ---
-title: Holmes Stoffen opties
+title: "Holmes deerstalker hat: Fabric Options"
 ---
 
 ### Hoofd stof
