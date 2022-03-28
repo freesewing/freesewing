@@ -1,4 +1,8 @@
-Um Shin zu erstellen, benötigst du Folgendes:
+- - -
+title: "Shin swim trunks: What You Need"
+- - -
+
+To make Shin, you will need the following:
 
 - Grundlegendes Nähzubehör
 - About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))

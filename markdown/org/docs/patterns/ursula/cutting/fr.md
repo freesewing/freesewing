@@ -1,4 +1,8 @@
-Ursula se compose d'un front, d'un dos et d'un gusset doublé.
+- - -
+title: "Ursula undies: Cutting Instructions"
+- - -
+
+Ursula consists of a front, a back, and a lined gusset.
 
 - **Tissu principal**
   - Couper **1 front**

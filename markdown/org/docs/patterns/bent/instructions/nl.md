@@ -1,5 +1,5 @@
 - - -
-title: Bent Construction
+title: "Bent body Block: Sewing Instructions"
 - - -
 
 <Note>

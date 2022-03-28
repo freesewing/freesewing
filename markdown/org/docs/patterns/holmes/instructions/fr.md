@@ -1,5 +1,5 @@
 ---
-title: Construction de Holmes
+title: "Holmes deerstalker hat: Sewing Instructions"
 ---
 
 ### Étape 1 : Préparation des morceaux

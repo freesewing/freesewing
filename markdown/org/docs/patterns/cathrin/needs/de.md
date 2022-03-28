@@ -1,10 +1,14 @@
-Korsetts sind einfacher zu konstruieren als sie scheinen, aber sie benötigen mehrere Spezialartikel und Werkzeuge.
+- - -
+title: "Cathrin corset: What You Need"
+- - -
 
-Du wirst BONING brauchen. Historische Korsetts benutzten Walknochen um Korsetts zu festigen. Moderne Korsettenhersteller verwenden Stahl. Sie können Stahlknochen entweder als Flachstahl oder als Spiralstahl erhalten - Recherche machen da verschiedene Korsetten und Korsettenhersteller ihre eigenen Präferenzen haben. Plastikknochen sind auch eine billigere Option.
+Corsets are easier to construct than they seem, however they need several specialist items and tools.
 
-Du findest eine gute Anleitung zu anderen Werkzeugen unter [Foundations Revealed](https://foundationsrevealed.com/).
+You will need BONING. Historic corsets used whale bone to stiffen corsets. Modern corset makers use steel. You can get steel bones either as flat steel and spiral steel - do research, as different types of corset and different corset makers have their own preferences. Plastic bones are also a cheaper option.
 
-Mustervorrätliste:
+You can find a good guide to other tools at [Foundations Revealed](https://foundationsrevealed.com/).
+
+Sample supplies list:
 
 - About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
 - About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))

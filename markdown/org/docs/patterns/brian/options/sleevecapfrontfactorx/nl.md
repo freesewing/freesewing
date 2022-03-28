@@ -1,6 +1,12 @@
-![De horizontale locatie van het tussenpunt](./sleevecapfrontfactorx.svg)
+- - -
+title: "Sleevecap front X"
+- - -
 
-Deze optie bepaalt de horizontale plaatsing van het tussenpunt aan de voorkant van de mouw.
+---
+
+![The horizontal location of the front inflection point](./sleevecapfrontfactorx.svg)
+
+This option controls the horizontal placement of the sleevecap inflection point at the front of the sleeve.
 
 <Tip>
 
@@ -10,4 +16,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](brian_sleevecapfrontfactorx_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapfrontfactorx_sample.svg "Effect of this option on the pattern")

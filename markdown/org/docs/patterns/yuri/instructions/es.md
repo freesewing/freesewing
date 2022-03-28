@@ -1,3 +1,7 @@
+- - -
+title: "Yuri hoodie: Sewing Instructions"
+- - -
+
 <Note>
 
 Este patrón se puede coser con o con un overlocker/serger. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
@@ -71,7 +75,7 @@ Este es sólo un método de hemming, si se prefiere otro camino a seguir.
 
 ## Paso 7: Preparar Madera Terminal y Exterior
 
-Siga este paso dos veces, una para el capucha exterior y otra para el capó revestido.
+Follow this step twice, once for the outer hood and once for the lining hood.
 
 - Con buenos lados juntos, coser el largo borde del Centro de Madera hasta el borde exterior de una de las laderas de Madera.
 - Con buenos lados juntos, coser el largo borde restante del Centro de Madera al borde exterior del otro lado de la Madera.
@@ -145,4 +149,4 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 
 ## Paso 12: Ta-daaa
 
-¡Disfruta de tu Yuri!
+Enjoy your Yuri!

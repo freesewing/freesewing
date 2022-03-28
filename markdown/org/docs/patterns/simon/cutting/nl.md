@@ -1,3 +1,7 @@
+- - -
+title: "Simon shirt: Cutting Instructions"
+- - -
+
 - **Buitenstof**
   - Knip **1 linkervoorpand**
   - Knip **1 knopenpat** (enkel als je voor een apart knopenpat koos)

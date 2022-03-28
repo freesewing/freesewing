@@ -1,6 +1,10 @@
-![De optie voor de stretch factor van Aaron](./stretchfactor.svg)
+- - -
+title: "Stretch"
+- - -
 
-Hoe ver rekt je stof uit?  Kies 0% als je stof geen stretch heeft.
+![The stretch factor option on Aaron](./stretchfactor.svg)
+
+How much does your fabric stretch?  Choose 0% if your fabric does not stretch.
 
 > ##### Deze optie heeft alleen impact op de horizontale richting van de stretch.
 > 
@@ -8,4 +12,4 @@ Hoe ver rekt je stof uit?  Kies 0% als je stof geen stretch heeft.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_stretchfactor_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_stretchfactor_sample.svg "Effect of this option on the pattern")

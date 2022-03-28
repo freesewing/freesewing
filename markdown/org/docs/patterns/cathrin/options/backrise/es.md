@@ -1,13 +1,17 @@
-![La opción espalda elevada en Cathrin](./backrise.svg)
+- - -
+title: "Back rise"
+- - -
 
-¿Qué tan alto quieres que el corsé se levante en la espalda, en relación a la altura bajo el pecho?
+![The back rise option on Cathrin](./backrise.svg)
 
-Cero significa que la altura de la parte de atrás permanecerá horizontal en el nivel bajo el pecho. En otras palabras, la parte trasera será más o menos de la misma altura que la cinta de tu sujetador.
+How high do you want the corset to rise at the back, relative to the underbust height?
 
-Si aumentas la elevación de la de espalda, tu corsé se elevará en la parte trasera.
+Zero means that the backline will stay horizontal at the level of your underbust. In other words, the back will be somewhat the same height as your bra strap.
+
+If you increase the back rise, your corset will rise upwards at the back.
 
 > Dado que este es un corsé por debajo del pecho, la elevación trasera es una elección de estilo y no afectará al ajuste
 
-
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](cathrin_backrise_sample.svg "Efecto de esta opción en el patrón")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_backrise_sample.svg "Effect of this option on the pattern")

@@ -1,4 +1,8 @@
-Para hacer Sven, necesitarás lo siguiente:
+- - -
+title: "Sven sweatshirt: What You Need"
+- - -
+
+To make Sven, you will need the following:
 
 - Suministros básicos de costura
 - About 1.75 meters (1.9 yards) of a suitable fabric ([see Fabric options](#fabric-options))

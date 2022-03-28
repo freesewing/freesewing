@@ -1,5 +1,5 @@
 ---
-title: Bent Cutting
+title: "Bent body Block: Cutting Instructions"
 ---
 
 **Tela principal**

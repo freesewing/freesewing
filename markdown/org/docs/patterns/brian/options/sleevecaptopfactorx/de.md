@@ -1,6 +1,12 @@
-![Die horizontale Position der Ärmel oben](./sleevecaptopfactorx.svg)
+- - -
+title: "Sleevecap top X"
+- - -
 
-Diese Option steuert die horizontale Platzierung der Ärmel oben.
+---
+
+![The horizontal location of the sleevecap top](./sleevecaptopfactorx.svg)
+
+This option controls the horizontal placement of the sleevecap top.
 
 <Tip>
 
@@ -9,4 +15,5 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 </Tip>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_sleevecaptopfactorx_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecaptopfactorx_sample.svg "Effect of this option on the pattern")

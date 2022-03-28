@@ -1,3 +1,7 @@
+- - -
+title: "Jaeger jacket: Cutting Instructions"
+- - -
+
 - **Oberstoff**
   - **2 Fronten schneiden** (Teil 1)
   - Schneiden Sie **2 Frontverkleidungen** (schauen Sie nach der Verkleidung/Außengrenze auf dem vorderen Teil)

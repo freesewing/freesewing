@@ -1,6 +1,12 @@
-![Le décalage ascendant du deuxième quadrant de la tête de manche](./sleevecapq2spread2.svg)
+- - -
+title: "Sleevecap Q2 upward spread"
+- - -
 
-Cette option contrôle le décalage ascendant dans le deuxième quadrant de la tête de manche.
+---
+
+![The upward spread in the second quadrant of the sleevecap](./sleevecapq2spread2.svg)
+
+This option controls the upward spread in the second quadrant of the sleevecap.
 
 <Tip>
 
@@ -9,4 +15,5 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapq2spread2_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapq2spread2_sample.svg "Effect of this option on the pattern")

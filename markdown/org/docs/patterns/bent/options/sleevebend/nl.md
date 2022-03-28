@@ -1,6 +1,9 @@
+- - -
+title: "Sleeve bend"
+- - -
 
-De hoek waarmee de mouw buigt aan de elleboog.
-
+The angle by which the sleeve bends at the elbow.
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bent_sleevebend_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_sleevebend_sample.svg "Effect of this option on the pattern")

@@ -1,3 +1,7 @@
+- - -
+title: "Wahid waistcoat: Cutting Instructions"
+- - -
+
 - **Tissu principal**
   - Couper **2 devant(s)** _endroit contre endroit_
   - Couper **2 dos** _endroit contre endroit_

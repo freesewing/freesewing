@@ -1,3 +1,7 @@
+- - -
+title: "Hugo hoodie: Cutting Instructions"
+- - -
+
 - **Oberstoff**
   - **1 Front** auf die Falte schneiden
   - **1 zurück** auf die Falte schneiden

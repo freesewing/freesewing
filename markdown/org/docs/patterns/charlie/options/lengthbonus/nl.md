@@ -1,5 +1,8 @@
+- - -
+title: "Length bonus"
+- - -
 
-Bepaalt de lengte van de gehele broek, wat in wezen de lengte van de benen betekent.
+Controls the length of the entire trousers, which essentially means the length of the legs.
 
 <Note>
 
@@ -11,4 +14,5 @@ de broek zal langer moeten zijn dan dit om de vloer daadwerkelijk te raken.
 </Note>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_lengthbonus_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_lengthbonus_sample.svg "Effect of this option on the pattern")

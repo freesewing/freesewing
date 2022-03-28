@@ -1,6 +1,10 @@
+- - -
+title: "Tamiko top: Sewing Instructions"
+- - -
+
 ### Schritt 1: Beende die Rüstungsnaht
 
-![Finsche die Rüstungsnaht](step03.png)
+![Finsh the armhole seam](step03.png)
 
 - Finish the armhole seam with a narrow hem.
 
@@ -19,4 +23,4 @@ Auf diese Weise kann sich dein Oberteil nicht umdrehen, während wir es beenden.
 
 ### Schritt 3: Viel Spaß!
 
-Habe nun viel Spaß mit deinem neuen Oberteil und den dazugehörigen Zero-Waste-Eigenschaften!
+Now enjoy your new top and it's zero waste properties!

@@ -1,9 +1,13 @@
-![La opción de bonus de longitud en Aaron](./lengthbonus.svg)
+- - -
+title: "Length bonus"
+- - -
 
-Cuánto más largo que la longitud predeterminada para hacer la parte superior.
+![The length bonus option on Aaron](./lengthbonus.svg)
+
+How much longer than the default length to make your top.
 
 > Esta opción permite valores negativos, que acortarán/recortarán la parte superior.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](aaron_lengthbonus_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_lengthbonus_sample.svg "Effect of this option on the pattern")

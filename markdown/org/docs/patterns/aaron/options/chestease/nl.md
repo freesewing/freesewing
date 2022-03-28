@@ -1,8 +1,12 @@
-![De optie voor overwijdte aan de borst bij Aaron](./chestease.svg)
+- - -
+title: "Chest ease"
+- - -
 
-Hoeveel ruimte wil je rond je borstkas?
+![The chest ease option on Aaron](./chestease.svg)
 
-De waarde die je hier geeft wordt toegevoegd aan je borstomtrek bij het tekenen van het patroon.
+How much room do you want at the chest?
+
+Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
 
 > Aangezien het hemdje geen mouwen heeft heb je niet veel extra ruimte nodig. Als je te veel toevoegt riskeer je te eindigen met gapende armsgaten.
 
@@ -12,4 +16,4 @@ De waarde die je hier geeft wordt toegevoegd aan je borstomtrek bij het tekenen 
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_chestease_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_chestease_sample.svg "Effect of this option on the pattern")

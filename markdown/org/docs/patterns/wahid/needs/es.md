@@ -1,4 +1,8 @@
-Para hacer Wahid, necesitarás lo siguiente:
+- - -
+title: "Wahid waistcoat: What You Need"
+- - -
+
+To make Wahid, you will need the following:
 
 - Suministros básicos de costura
 - About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/wahid/fabric))

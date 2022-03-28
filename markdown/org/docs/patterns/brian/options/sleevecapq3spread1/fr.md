@@ -1,6 +1,12 @@
-![Le décalage ascendant du troisième quadrant de la tête de manche](./sleevecapq3spread1.svg)
+- - -
+title: "Sleevecap Q3 upward spread"
+- - -
 
-Cette option contrôle le décalage ascendant dans le troisième quadrant de la tête de manche.
+---
+
+![The upward spread in the thrid quadrant of the sleevecap](./sleevecapq3spread1.svg)
+
+This option controls the upward spread in the third quadrant of the sleevecap.
 
 <Tip>
 
@@ -9,4 +15,5 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapq3spread1_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapq3spread1_sample.svg "Effect of this option on the pattern")

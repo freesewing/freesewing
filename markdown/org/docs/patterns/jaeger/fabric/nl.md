@@ -1,5 +1,9 @@
-Dit type jasjes worden vaak gemaakt van een zwaardere wol, meestal met wat textuur of een ingeweven patroon. In general, they are made in _busier_ fabrics.
+- - -
+title: "Jaeger jacket: Fabric Options"
+- - -
 
-Style purists will argue that sportscoats should never be made out of suiting fabric, as a sportscoat is not a suit jacket. Je kan hen vertellen dat ze hun regels mogen steken waar de zon niet schijnt, het is jouw jasje.
+Sportscoats are typically made from a heavier wool, often with some texture or pattern in the weave. In general, they are made in _busier_ fabrics.
 
-Let wel, Jaeger maken gaat wat tijd kosten. Doe jezelf een plezier en kies iets moois voor je uiteindelijke versie. (want eerst ga je een toile maken, toch?)
+Style purists will argue that sportscoats should never be made out of suiting fabric, as a sportscoat is not a suit jacket. You can tell them go feck off and do whatever you want, it's your jacket.
+
+However, making Jaeger is going to take some time. Do yourself a favour and get something nice for the final project. (because you will be making a muslin, right?)

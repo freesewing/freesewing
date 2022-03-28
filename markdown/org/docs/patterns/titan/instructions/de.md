@@ -1,3 +1,7 @@
+- - -
+title: "Titan trouser block: Sewing Instructions"
+- - -
+
 <Note>
 
 ###### Titan ist ein Grundschnitt, kein Schnittmuster

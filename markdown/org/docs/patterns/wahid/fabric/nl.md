@@ -1,11 +1,13 @@
-Alle pakstoffen zijn een goede keuze voor je gilets. Elke stoffenwinkel die de moeite is zou een afdeling met pakstoffen moeten hebben. Je kan binnenwandelen, vragen waar de stoffen voor kostuums zijn, en iets kiezen dat je mooi vindt.
+- - -
+title: "Wahid waistcoat: Fabric Options"
+- - -
 
-Deze stoffen zijn gewoonlijk van wol, maar je kan ook wat creatiever zijn en iets anders kiezen.
+All suiting fabrics are a great choice for your waistcoats. Any fabric shop that's worth your business should have a suiting section. You can just walk in, ask where you can find the fabric for suits, and pick out something you like.
+
+These fabrics are typically wool, but you can also be a bit more creative and go for something else.
 
 <Note>
 
 Je stof heeft wel wat gewicht nodig. Denim is ok, een licht katoentje niet.
 
 </Note>
-
-

@@ -1,48 +1,52 @@
+- - -
+title: "Ursula undies: Sewing Instructions"
+- - -
+
 ### Étape 1 : Coudre le devant à la première pièce de la rafale
 
-Placez l'une des pièces scintillantes sur la pièce avant, _de bons côtés ensemble_, afin que les coutures de crotte soient alignées. Épingler ou badigeonner à la marge de couture.
+Place one of the gusset pieces on the front piece, _good sides together_, so that the crotch seams are aligned. Pin or baste at the seam allowance.
 
-![Coudre le devant à la première pièce du jeu](step01.png)
+![Sew the front to the first gusset piece](step01.png)
 
 ### Étape 2 : Ouvrir à plat
 
-Ouvrir l'appartement. Vous pouvez appuyer si vous le souhaitez, mais qui presse les sous-vêtements ?
+Open flat. You can press if you want to, but who presses underwear?
 
-![Ouvrir à plat](step02.png)
+![Open flat](step02.png)
 
 ### Étape 3 : Coudre le dos à la première pièce de gusset
 
-Placez le verso sur le gusset, les bons côtés ensemble. Épingler ou badigeonner à la marge de couture.
+Place the back piece on the gusset, good sides together. Pin or baste at the seam allowance.
 
-![Coudre le dos à la première pièce en rafale](step03.png)
+![Sew the back to the first gusset piece](step03.png)
 
 ### Étape 4 : Ouvrir à plat
 
-Ouvrir l'appartement.
+Open flat.
 
-![Ouvrir à plat](step04.png)
+![Open flat](step04.png)
 
 ## Étape 5 : Attachez la deuxième pièce de gusset
 
-Sortez les pièces avant et arrière du chemin en les roulant au centre.
+Get the front and back pieces out of the way by rolling them to the center.
 
-Placez la deuxième pièce de bon gusset ensemble sur le dessus de sorte qu'elle soit alignée avec la première pièce en rafale. Les pièces avant et arrière roulées devraient être sandwichées entre vos morceaux de gusset.
+Place the second gusset piece good sides together on top so that it lines up with the first gusset piece. The rolled-up front and back pieces should be sandwiched between your gusset pieces.
 
-Coudre les coutures avant et arrière à votre couture à l'aide d'un sergeur ou d'une couture en zigzag.
+Sew the front and back gusset seams at your seam allowance using a serger or a zigzag stitch.
 
-![Attacher la deuxième pièce de gusset](step05.png)
+![Attach the second gusset piece](step05.png)
 
 ## Étape 6 : Sortir du côté droit
 
-Sortez les undies du côté droit. Toutes les coutures de gusset doivent être fermées.
+Turn the undies right side out. All gusset seams should be enclosed.
 
-![Sortir du côté droit](step06.png)
+![Turn right side out](step06.png)
 
 ### Étape 7: Coudre les coutures latérales
 
-Épingler le côté couture les bons côtés ensemble. Coudre les coutures latérales à votre couture en utilisant un sergeur ou une couture en zigzag.
+Pin the side seams good sides together. Sew the side seams at your seam allowance using a serger or a zigzag stitch.
 
-![![Sew the side seams](etape 7)](step07.png)
+![Sew the side seams](step07.png)
 
 <Note>
 
@@ -52,30 +56,30 @@ Bon travail ! Techniquement, vous pouvez laisser les bords bruts car les tissus 
 
 ### Étape 8 : Préparer l'élastique
 
-Chevauchez les bords de chaque pièce d'élastique par votre marge de couture et coupez ensemble. Vous devriez avoir trois pièces élastiques : une pour la ceinture et deux pour les jambes.
+Overlap the edges of each piece of elastic by your seam allowance and stitch together. You should have three elastic pieces: one for the waistband and two for the legs.
 
-Pour assurer que vous étirez l'élastique uniformément, divisez l'élastique en quatre quarts et marquez les points avec des épingles ou de la craie. Faites la même chose avec la taille et les ouvertures des jambes, marquant les points de quart.
+To ensure that you stretch the elastic evenly, divide the elastic into four quarters and mark the points with pins or chalk. Do the same to the waist and leg openings, marking the quarter points.
 
-![Préparer l'élastique](step08.png)
+![Prepare elastic](step08.png)
 
-![Quart des ouvertures](step08b.png)
+![Quarter the openings](step08b.png)
 
 ### Étape 9 : Coudre l'élastique à l'extérieur du vêtement
 
-Epingler l'élastique à la taille et les ouvertures des jambes sur le bon côté du tissu, en vous assurant d'aligner les marquages des trimestres. Si votre élastique a un bord décoratif, Assurez-vous d'aligner le bord ordinaire (pas le bord décoratif) de l'élastique sur le bord du tissu. Le bord décoratif devrait être orienté vers le vêtement, pas loin de lui.
+Pin the elastic to the waist and leg openings on the good side of the fabric, ensuring that you line up the quarter markings. If your elastic has a decorative edge, make sure that you line up the plain edge (not the decorative edge) of the elastic to the edge of the fabric. The decorative edge should be pointing towards the garment, not away from it.
 
-Coudre l'élastique au vêtement à l'aide d'un point de couture en zigzag. Vous devrez étirer légèrement l'élastique comme vous le faites coudre pour le rendre plat contre le tissu. Évitez d’étirer le tissu lui-même.
+Sew the elastic to the garment using a zigzag stitch. You will have to stretch the elastic slightly as you sew to make it lay flat against the fabric. Avoid stretching the fabric itself.
 
-![Coudre l'élastique à l'extérieur du vêtement](step09.png)
+![Sew elastic to the outside of the garment](step09.png)
 
-Épargnez tout tissu excédentaire qui provoque en vrac ou qui sort de l’élastique.
+Trim away any excess fabric that causes bulk or sticks out from the elastic.
 
 ### Étape 10 : Pliez l'élastique et courez-le à nouveau
 
-Pliez l'élastique et le tissu à l'intérieur, enfermant le bord brut du tissu sous l'élastique. Vous devriez regarder l'extérieur de l'ondium, un bord plié avec un peu de l'élastique en train de décoller. Coudre en utilisant un point en zigzag.
+Fold the elastic and fabric to the inside, enclosing the raw edge of the fabric under the elastic. You should be looking at the outside of the undies, a folded edge with a bit of the elastic peeking out. Sew using a zigzag stitch.
 
-![Replier l'élastique et la coudre à nouveau](step10.png)
+![Fold the elastic in and sew it down again](step10.png)
 
-Répétez ces étapes pour chacune des ouvertures de la taille et des jambes.
+Repeat these steps for each of the waist and leg openings.
 
-Vous avez réussi !
+You did it!

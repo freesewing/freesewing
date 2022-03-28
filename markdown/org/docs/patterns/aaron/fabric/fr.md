@@ -1,6 +1,10 @@
-Un débardeur ou marcel est essentiellement porté en sous-vêtement. Dans ce cas, vous voulez quelque chose qui soit confortable, agréable sur votre peau et respirant.
+- - -
+title: "Aaron A-Shirt: Fabric Options"
+- - -
 
-Coton avec un soupçon d’élasticité, peut-être un jersey, ou un tricot fin. Je vous suggère d'aller dans un magasin de tissus et de tester le toucher les tissus.
+An A-shirt is essentially underwear. And in that capacity, you want something that is comfortable, feels nice on your skin and breaths.
+
+Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest you go to the fabric store and feel around a bit.
 
 <Note>
 

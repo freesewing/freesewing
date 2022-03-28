@@ -1,4 +1,8 @@
-Pour fabriquer Charlie, vous aurez besoin des éléments suivants :
+- - -
+title: "Charlie chinos: What You Need"
+- - -
+
+To make Charlie, you will need the following:
 
 - Fourniture de base pour la couture
 - About 1.5 meters (1.7 yards) of a suitable fabric ([see Fabric options](/docs/patterns/charlie/fabric))

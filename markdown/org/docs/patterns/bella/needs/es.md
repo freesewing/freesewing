@@ -1,5 +1,5 @@
 - - -
-title: Bella What you need
+title: "Bella body block: What You Need"
 - - -
 
 Para hacer Bella, necesitarás lo siguiente:

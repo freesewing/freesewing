@@ -1,5 +1,5 @@
 - - -
-title: Bella Fabric options
+title: "Bella body block: Fabric Options"
 - - -
 
 If you are making a default Bella to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Bella with.
@@ -16,4 +16,3 @@ Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee
 Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>
-

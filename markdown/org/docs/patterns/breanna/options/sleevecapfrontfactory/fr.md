@@ -1,6 +1,10 @@
-![L'emplacement vertical du point d'inflexion avant](./sleevecapfrontfactory.svg)
+- - -
+title: "Sleevecap front Y"
+- - -
 
-Cette option contrôle la position verticale du point d'inflexion de la tête de manche sur le devant de la manche.
+![The vertical location of the front inflection point](./sleevecapfrontfactory.svg)
+
+This option controls the vertical placement of the sleevecap inflection point at the front of the sleeve.
 
 <Tip>
 
@@ -9,4 +13,5 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapfrontfactory_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapfrontfactory_sample.svg "Effect of this option on the pattern")

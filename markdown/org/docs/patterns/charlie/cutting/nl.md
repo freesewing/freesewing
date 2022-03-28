@@ -1,3 +1,7 @@
+- - -
+title: "Charlie chinos: Cutting Instructions"
+- - -
+
 ##### Van buitenste stof
 
 - Deel **1**: **2 x** _met de goede kanten op elkaar_.

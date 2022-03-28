@@ -1,3 +1,7 @@
+- - -
+title: "Sven sweatshirt: Sewing Instructions"
+- - -
+
 ### Étape 1 : Fermer les coutures d'épaule
 
 - Placez le dos et l'avant sur les deux côtés avec le bon toghether.

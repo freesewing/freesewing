@@ -1,5 +1,5 @@
 ---
-title: Ce dont vous avez besoin
+title: "Florence face mask: What You Need"
 ---
 
 Pour créer un masque Florence, vous aurez besoin du matériel suivant :

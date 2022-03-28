@@ -1,3 +1,7 @@
+- - -
+title: "Yuri hoodie: Sewing Instructions"
+- - -
+
 <Note>
 
 Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
@@ -71,7 +75,7 @@ Dies ist nur eine Hemmungsmethode, wenn Sie lieber einen anderen Weg gehen.
 
 ## Schritt 7: Vorbereiten von Lining und Außenkapuze
 
-Folgen Sie diesem Schritt zweimal, einmal für die Außenhaube und einmal für die Verkleidungshaube.
+Follow this step twice, once for the outer hood and once for the lining hood.
 
 - Mit guten Seiten zusammen, nähen Sie den langen Rand des Hood-Zentrums an den äußeren Rand einer der Hood-Sides.
 - Mit guten Seiten zusammen nähen Sie den verbleibenden langen Rand des Hood-Zentrums an den äußeren Rand der anderen Hood Side.
@@ -145,4 +149,4 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 
 ## Schritt 12: Ta-daaa
 
-Genieße deine/n Yuri!
+Enjoy your Yuri!

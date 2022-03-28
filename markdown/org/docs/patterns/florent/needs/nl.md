@@ -1,5 +1,5 @@
 ---
-title: Wat je nodig hebt
+title: "Florent flat cap: What You Need"
 ---
 
 Om Florent te maken heb je het volgende nodig:

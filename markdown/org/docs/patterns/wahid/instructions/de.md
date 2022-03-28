@@ -1,22 +1,26 @@
+- - -
+title: "Wahid waistcoat: Sewing Instructions"
+- - -
+
 ### Schritt 1: Sicherungsschnittstelle
 
 #### Druckschnittstelle zu Taschenwelten
 
-![Druckschnittstelle zu Taschenwelten](01a.png)
+![Press interfacing to pocket welts](01a.png)
 
-Platzieren Sie Ihre Taschenwelt mit der guten Seite nach unten und Ihrer Taschenschnittstelle nach oben.
+Place your pocket welt with the good side down, and your pocket interfacing on top.
 
-Die Schnittstelle ist ein bisschen kürzer als die Welle, also achten Sie darauf, die Seite, die die Hilfezeile auf der Seite markiert hat, auszurichten.
+The interfacing is a bit shorter than the welt, so make sure to align the side that has the help line marked on it.
 
-Drücken Sie für jede Tasche auf die schlechte Seite der Taschenwelle.
+For each pocket, press the interfacing piece to the bad side of the pocket welt.
 
 #### Druckschnittstelle an Fronten
 
-![Drücken Sie die Schnittstelle zu Taschenfronten](01b.png)
+![Press interfacing to pocket fronts](01b.png)
 
-Platzieren Sie Ihre Vorderseite mit der guten Seite nach unten und Ihre Schnittstelle nach oben.
+Place your front with the good side down, and your interfacing on top.
 
-Drücken Sie die Schnittstelle an der Stelle.
+Press the interfacing in place.
 
 > **Nehmen Sie sich Zeit**
 > 
@@ -28,41 +32,41 @@ Drücken Sie die Schnittstelle an der Stelle.
 
 #### Nähen nach Futter
 
-![Nähen nach Futter](02a.png)
+![Sew facing to lining](02a.png)
 
-Platzieren Sie Ihre Front und Futter mit guten Seiten zusammen. Nähen Sie die Kanten der Verkleidung/Verkleidungsgrenze.
+Place your front facing and lining with good sides together. Pin the edges of the facing/lining boundary in place.
 
-Nähen Sie sie zusammen.
+Sew them together.
 
 #### Öffne Naht drücken
 
-Drücken Sie die Naht zwischen Auflage und Verkleidung.
+Press open the seam allowance between facing and lining.
 
 ### Schritt 3: Alle Darts schließen
 
-![Alle Darts schließen](03a.png)
+![Close all darts](03a.png)
 
 #### Rückwärtsmuster schließen
 
-Falte deinen Rücken mit guten Seiten zusammen und nähe den Rückendart.
+Fold your back with good sides together, and sew the back dart.
 
 > Vergiss nicht, dasselbe für das Futter zu tun
 
 #### Front-Darts schließen
 
-Falte deine Vorderseite (und die Schnittstelle, die mit ihr verbunden ist) mit guten Seiten zusammen, und nähe den Vorderdart.
+Fold your front (and the interfacing fused to it) with good sides together, and sew the front dart.
 
 ### Schritt 4: Drücken Sie alle Darts
 
-![Alle Darts drücken](04a.png)
+![Press all darts](04a.png)
 
 #### Drag & Drop
 
-Nach dem Ausschnitt öffnen, drücken Sie die Front Darts öffnen.
+Once cut open, press the front darts open.
 
 #### Dart nach hinten drücken
 
-Wenn Sie die Rückendarten öffnen, drücken Sie sie offen. Wenn nicht, drücken Sie sie zur Seite.
+If you cut open the back darts, press them open. If not, press them to the side.
 
 > Vergiss nicht, dasselbe für das Futter zu tun
 
@@ -70,75 +74,75 @@ Wenn Sie die Rückendarten öffnen, drücken Sie sie offen. Wenn nicht, drücken
 
 #### Befestige die Tasche an die Taschenwelt
 
-![Befestige die Tasche an die Taschenwelt](05a.png)
+![Attach the pocket bag to the pocket welt](05a.png)
 
-Legen Sie Ihre Tasche mit der guten Seite nach unten und Ihre Taschenwelt mit der guten Seite darauf auf.
+Place your pocket bag down with the good side up, and your pocket welt on top of it with the good side down.
 
-Die geradlinige Seite der Tasche mit der Seite der Welt ausrichten, die keine Schnittstelle hat, und nähen sie zusammen mit der Standardnahtzugabe.
+Align the straight side of the bag with the side of the welt that has no interfacing, and sew them together at the standard seam allowance.
 
 #### Drücke Naht offen
 
-Wenn Sie fertig sind, drücken Sie diese Naht öffnen.
+When you are done, press open this seam.
 
 #### Markieren, wohin deine Tasche gehen muss
 
-![Markieren, wohin deine Tasche gehen muss](05a.png)
+![Mark where your pocket needs to go](05a.png)
 
-Ihr Frontmusterstück hat eine Helpline um zu zeigen, wohin die Welttasche gehen soll. Es sind zwei halbe Rechtecke, die zusammengeführt wurden, als du den Dart geschlossen hast, um die Form deiner Welttasche zu formen.
+Your front pattern piece has a helpline on it to show where the welt pocket should go. It's two half rectangles that got joined together when you closed the dart to form the shape of your welt pocket.
 
-Wenn du die vier Ecken dieses Rechtecks noch nicht markiert hast, solltest du das jetzt tun.
+If you haven't marked the four corners of that rectangle yet, you should do so now.
 
 > Die Tasche sitzt in einem leichten Winkel auf deinem Muster. Vorwärts, in den Abbildungen werde ich die Tasche gerade ziehen, da das die Dinge einfacher macht.
 
 #### Taschenwelt und Tasche anhängen
 
-![Taschenwelt und Tasche anhängen](05c.png) ![Taschenwelt und Tasche anhängen](05d.png)
+![Attach pocket welt and pocket facing](05c.png) ![Attach pocket welt and pocket facing](05d.png)
 
-Platzieren Sie Ihr Frontstück mit der guten Seite. Wir werden die Welt an die untere Linie Ihrer Taschenumrissenumrissenlinie anschließen und die Verkleidung an der oberen Linie.
+Place your front piece down with the good side up. We're going to attach the welt to the bottom line of your pocket outline, and the facing to the top line.
 
 > Wenn Sie noch nie eine Welttasche gemacht haben, kann es ein bisschen kontraintuitiv sein, die Tasche an der Außenseite des Kleidungsstücks zu befestigen. Tasche sollte auf der Innenseite, nicht wahr?
 > 
 > Entspannen, die Tasche landet auf der Innenseite
 
-Sowohl Ihre Taschenwelt als auch Ihre Tasche nach oben haben eine Hilfestellung. Diese Linie muss den langen Kanten Ihrer Tasche entsprechen.
+Both your pocket welt and your pocket facing have a help line on them. That line needs to line up with the long edges of your pocket.
 
-Platzieren Sie die Taschenwelt unten und die Tasche nach oben, beide mit ihrer guten Seite.
+Place the pocket welt at the bottom, and the pocket facing on the top, both with their good side down.
 
-Richten Sie ihre Helpline sorgfältig auf den Taschenumrissen aus. Sie sollten jetzt nebeneinander sitzen und sich in der Mitte der Tasche aneinander stoßen.
+Carefully align their helpline on the pocket outline. They should now sit side by side, and just bump into each other at the middle of your pocket.
 
-Nähen Sie nun entlang der Helpline, die den langen Rand Ihrer Tasche markiert.
+Now sew along the helpline which marks the long edge of your pocket.
 
 > Es ist wichtig, dass die Linien, die Sie nähen, jetzt die langen Kanten eines perfekten Rechtecks bilden. Dies bestimmt die Form Ihrer Tasche, wenn Sie also eine Zeile länger als die andere machen oder wenn sie nicht parallel oder falsch ausgerichtet sind, sieht die Tasche schlecht aus.
 
 #### Die Tasche öffnen
 
-![Die Tasche öffnen](05c.png)
+![Cut open the pocket](05c.png)
 
-Zeit, die Tasche sorgfältig zu öffnen. Beginnen Sie in der Mitte der Tasche und schneiden Sie entlang der längsten Kanten zur Seite.
+Time to carefully cut open the pocket. Start in the middle of the pocket, and cut towards along the longest edges towards the side.
 
-An den Kanten Ihrer Tasche müssen Sie aufhören, die Mitte zu öffnen und stattdessen gegen das Ende Ihrer Linie von Nähten unter 45 Grad zu schneiden.
+At the edges of your pocket you need to stop cutting open the center and instead cut towards the end of your line of stitches under 45 degrees.
 
 > Dieses kleine Dreieck, das Sie am Ende schneiden, ist wichtig. Achten Sie darauf, dass Sie genau so abschneiden, wie Sie bis zum Ende der Nähte schneiden sollten, ohne in die Nähte zu schneiden.
 
 #### Öffne die Naht
 
-![Öffne die Naht](05c.png)
+![Press open the seam allowance](05c.png)
 
-Drücken Sie die Naht entlang der langen Kanten der Tasche zu öffnen.
+Press open the seam allowance along the long edges of your pocket.
 
 #### Bring die Tasche nach hinten und drücke
 
-![Bring die Tasche nach hinten und drücke](05g.png)
+![Bring the pocket facing to the back and press](05g.png)
 
-Die Tasche nach hinten drehen und nach unten drücken.
+Flip the pocket facing to the back side and press it down.
 
 #### Drücke die Dreiecke an den kurzen Seiten nach unten
 
-![Drücke die Dreiecke an den kurzen Seiten nach unten](05h.png)
+![Press down the triangles at the short sides](05h.png)
 
-Bewegen Sie Ihre Tasche von der Hand, um die kleinen Traingles an der Seite Ihrer Tasche aufzudecken.
+Move your pocket facing out of the way to reveal those little traingles at the side of your pocket.
 
-Falte sie zurück, um sicherzustellen, dass deine Tasche ein sauberes Rechteck öffnet, und drücke sie herunter.
+Fold them back making sure you to keep your pocket opening a clean rectangle, and press them down.
 
 #### Bring die Taschenwelt auf den Rücken, falten und drücken
 
@@ -146,57 +150,57 @@ Falte sie zurück, um sicherzustellen, dass deine Tasche ein sauberes Rechteck �
 
 Flip the pocket welt with the attached pocket back tot he back side.
 
-Falte deine Welt an der Stelle, an der sie die Spitze der Tasche erreicht. Die Welt sollte die gesamte Taschenöffnung abdecken.
+Fold your welt down at the point where it reaches the top of the pocket. The welt should cover the entire pocket opening.
 
 > Die Illustration zeigt dies von hinten an, da es einfacher ist zu sehen, was auf diese Weise geschieht. Allerdings sollten Sie von vorne überprüfen, um sicherzustellen, dass Ihre Tasche gut aussieht.
 
 #### Dreiecke der Tasche nach unten
 
-![Dreiecke der Tasche nach unten](05k.png)
+![Sew down the pocket triangles](05k.png)
 
-Legen Sie Ihre Vorderseite mit der guten Seite nach oben und stellen Sie sicher, dass die Tasche und Welt flach liegen.
+Put your front down with the good side up and make sure the pocket facing and welt lie flat.
 
-Falte deine Vorderseite vertikal am Rand deiner Tasche und zeige das kleine Dreieck an der kurzen Seite deiner Taschenöffnung auf.
+Fold your front over vertically at the edge of your pocket to reveal that little triangle at the short side of your pocket opening.
 
-Nähen Sie dieses Dreieck durch Nähen direkt neben der Falte und Taschenkante.
+Sew this triangle down by sewing right next to the fold, and pocket edge.
 
 #### Tasche schließen
 
-![Tasche schließen](05l.png)
+![Close the pocket bag](05l.png)
 
-Nähen Sie Ihre Tasche mit der Tasche an die Tasche, um Ihre Tasche zu beenden.
+Sew your pocket facing to the pocket bag to finish your pocket.
 
 > Das sollte selbstverständlich sein, aber achten Sie darauf, dass Sie Ihre Tasche nicht an die Vorderseite Ihrer Weste nähen.
 
 #### Drücke deine fertige Tasche
 
-![Drücke deine fertige Tasche](05m.png)
+![Press your completed pocket](05m.png)
 
-Wenn du fertig bist, gib deiner Tasche eine gute Abschlussprüfung.
+When you're done, give your pocket a good final press.
 
 ### Schritt 6: Mitte der Naht
 
-![Nähen und drücken Sie die Mitte-Hinter-Naht](06a.png)
+![Sew and press the center back seam](06a.png)
 
-Legen Sie Ihre beiden hinteren Stücke mit ihrer guten Seite zusammen und nähen Sie die Mitte nach hinten.
+Put your two back pieces with their good side together and sew the center back seam.
 
-Wenn du fertig bist, drücke diese Naht öffnen.
+When you're done, press open this seam.
 
 > Vergiss nicht, dasselbe für das Futter zu tun
 
 ### Schritt 7: An Fronten zurücktreten
 
-![An Fronten zurücktreten](07a.png)
+![Join back to fronts](07a.png)
 
-Legen Sie den Rücken nach unten mit der guten Seite nach oben und legen Sie Ihre Fronten mit der guten Seite. Die Seitennaht, Pin und Nähte ausrichten.
+Put your back down with the good side up and put your fronts on it with the good side down. Align the side seams, pin and sew.
 
-Wenn du fertig bist, drücke diese Nähte öffnen.
+When you're done, press open these seams.
 
 ### Schritt 8: Trete den Schultern bei
 
-![Trete den Schultern bei](08a.png)
+![Join the shoulders](08a.png)
 
-Die Schulternaht ausrichten, nähen und die Naht öffnen.
+Align the shoulder seams, sew them, and press open the seam allowance.
 
 > Vergiss nicht, dasselbe für das Futter zu tun
 
@@ -204,88 +208,88 @@ Die Schulternaht ausrichten, nähen und die Naht öffnen.
 
 #### Gleitfutter in den Waschnack
 
-![Wischen in die Weste](09a.png)
+![Slide lining into the waistcoat](09a.png)
 
-Legen Sie Ihr Futter in die Weste, gute Seiten zusammen. Mit anderen Worten, die Weste sollte die gute und schlechte Seite haben. Das Futter sollte die schlechte Seite in und gute Seite haben.
+Place your lining in your waistcoat, good sides together. In other words, the waistcoat should have the good side in and bad side out. The lining should have the bad side in and good side out.
 
 #### Futter an Stoff anheften
 
-![Nähen an Stoff](09b.png)
+![Pin linng to fabric](09b.png)
 
-Legen Sie das Futter mit der Gewebekante an und befestigen Sie es an der Stelle.
+Align the lining with the fabric edge, and pin it in place.
 
-Beginnen Sie mit der Mitte nach hinten, und folgen Sie der Halslinie nach unten der vorderen Schließung. Bearbeite dich um den Saum herum, aber hinterlasse eine 15 cm tiefe Lücke in der Mitte.
+Start at center back, and follow the neckline down the front closure. Work your way around the hem, but leave about a 15cm gap at the center back.
 
 #### Futter für Stoff nähen
 
-![Nähen zum Stoff](09c.png)
+![Sew linng to fabric](09c.png)
 
-Das Futter ist sauber angehängt, Nähfutter und Gewebe sind zusammengesetzt.
+With your lining pinned neatly in place, sew lining and fabric together.
 
-Vergessen Sie nicht, dass 15 cm Lücke in der Mitte zurück zu lassen.
+Do not forget to leave that 15cm gap at the center back.
 
 #### Weste drehen und Kanten drücken
 
-![Weste drehen und Kanten drücken](09d.png)
+![Turn waistcoat and press edgess](09d.png)
 
-Erreiche durch die Lücke, die du links am Saum geöffnet hast, und drehe deine Weste.
+Reach through the gap you left open at the hem, and turn your waistcoat.
 
-Drücken Sie die Kanten, die Sie gerade genäht haben, und stellen Sie sicher, dass Sie den Stoff ein bisschen rollen, damit das Futter immer versteckt ist.
+Press the edges you've just sewn, making sure to roll the fabric a bit so that the lining is always hidden.
 
 ### Schritt 10: Beende die Armlöcher
 
 #### Nähte die Stoffnaht zurück
 
-![Nähte die Stoffnaht zurück](10a.png)
+![Pin back the fabric seam allowance](10a.png)
 
-Entlang des Armlochs die Naht der Weste rücken. Halten Sie dabei Ihr Futter aus dem Weg.
+All along the armhole, pin back the seam allowance of your waistcoat fabric. While doing so, keep your lining out of the way.
 
 #### Verkleidung nach unten anheften
 
-![Verkleidung nach unten anheften](10b.png)
+![Pin down lining](10b.png)
 
-falten Sie nun das Futter ein bisschen vor dem Rand des Armlochs zurück und pinnen es nach unten.
+Now fold back your lining a bit before the edge of the armhole and pin it down.
 
 #### Handnähen Sie das Futter für den Stoff
 
-![Handgenähtes Futter für die Farbric](10c.png)
+![Hand-sew teh lining to the farbric](10c.png)
 
-Benutzen Sie einen Hausschuh, um das Futter an den Stoff entlang des Armlochs zu nähen.
+Use a slipstitch to hand-sew the lining to the fabric all along the armhole.
 
 ### Schritt 11: Beende den Saum
 
-Denken Sie daran, dass wir in Schritt 9 nicht geschlossen haben? Es ist Zeit, es zu schließen.
+Remember that gap we didn't close in step 9? Time to close it.
 
-Benutzen Sie einen Slipstitch, um das Futter mit der Hand zu nähen und den Saum zu schließen.
+Use a slipstitch to hand-sew the lining to the fabric and close the hem.
 
 ### Schritt 12: Erstelle die Schaltflächen
 
-![Erstelle die Buttonlöcher](12a.png)
+![Make the buttonholes](12a.png)
 
-Falls du das noch nicht getan hast, übertrage die Buttonloch-Platzierung von deinem Muster auf deinen Stoff.
+If you haven't done so yet, transfer the buttonhole placement from your pattern onto your fabric.
 
-Mach diese Knopflöcher.
+Make those buttonholes.
 
 ### Schritt 13: Füge die Tasten hinzu
 
-![Buttons anhängen](13a.png)
+![Attach the buttons](13a.png)
 
-Legen Sie die Weste geschlossen an und übertragen Sie die Position Ihrer Buttonlöcher auf die Tastenseite.
+Pin your waistcoat closed and transfer the location of your buttonholes to the button side.
 
-Nähen Sie diese Schaltflächen.
+Sew on those buttons.
 
 > Sie können auch die Position der Tasten aus dem Muster übertragen. Das Übertragen der Tastenlöcher sichert Ihnen jedoch, dass sich die Tasten und Tasten aneinander anordnen werden. auch wenn Ihr Knopfloch je so leicht abgestellt ist/sind.
 
 ### Schritt 14: Optional: Nähen Sie die Kanten
 
-![Du kannst optional die Kanten deiner Weste pflücken](14a.png)
+![You can optionally pick-stitch the edges of your waistcoat](14a.png)
 
-Wenn Sie möchten, können Sie sich um die Kanten Ihrer Weste heften.
+If you'd like, you can pick-stitch around the edges of your waistcoat.
 
-Das Nähen muss von Hand erfolgen. Sie führen einen einfachen Heftstich ein paar mm von den Kanten Ihrer Weste aus, lassen aber nur für ein paar Fäden Ihre Nähtfläche. Sie haben es sicherlich als Finish auf Anzug Jacken gesehen.
+Pick-stitching needs to be done by hand. You run a simple stitch a few mm from the edges of your waistcoat, but only let your stitches surface for a few threads. You've certainly seen it as a finish on suit jackets.
 
 > Sie können den Faden mit der gleichen Farbe pflücken oder eine kontrastierende Farbe verwenden, wenn Sie sich kühn fühlen.
 
 > Während das Nähen ein unverwechselbares Aussehen verleiht, verriegelt es auch den Stoff an das Futter/Gesicht, was verhindert, dass sich die Dinge umdrehen.
 
-Danach solltest du wahrscheinlich deine Weste bügeln.
+After this, you probably want to iron your waistcoat.

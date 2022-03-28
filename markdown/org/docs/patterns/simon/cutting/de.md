@@ -1,3 +1,7 @@
+- - -
+title: "Simon shirt: Cutting Instructions"
+- - -
+
 - **Oberstoff**
   - **1 Front links schneiden**
   - **1 Knopf-Platzierung schneiden** (nur, wenn Sie sich für einen separaten Tastenplacker entschieden haben)

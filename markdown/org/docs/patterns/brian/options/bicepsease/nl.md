@@ -1,7 +1,11 @@
-![De factor voor biceps overwijdte bij Brian](./bicepsease.svg)
+- - -
+title: "Biceps ease"
+- - -
 
-De hoeveelheid overwijdte aan je bovenarm.
+![The biceps ease factor on Brian](./bicepsease.svg)
 
+The amount of ease at your upper arm.
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](brian_bicepsease_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_bicepsease_sample.svg "Effect of this option on the pattern")

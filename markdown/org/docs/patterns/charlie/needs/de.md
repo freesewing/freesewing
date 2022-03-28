@@ -1,4 +1,8 @@
-Um Charlie zu erstellen, benötigst du Folgendes:
+- - -
+title: "Charlie chinos: What You Need"
+- - -
+
+To make Charlie, you will need the following:
 
 - Grundlegendes Nähzubehör
 - About 1.5 meters (1.7 yards) of a suitable fabric ([see Fabric options](/docs/patterns/charlie/fabric))

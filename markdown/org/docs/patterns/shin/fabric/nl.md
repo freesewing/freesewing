@@ -1,6 +1,10 @@
-Een zwembroek zou gemaakt moeten worden uit elastisch materiaal dat tegen zout of chloor kan.
+- - -
+title: "Shin swim trunks: Fabric Options"
+- - -
 
-Gewoonlijk valt dit onder te verdelen in een aantal categorieën:
+Swim trunks should be made out of a material with stretch that is suitable for being in the water.
+
+Typically, this falls apart in a few categories:
 
 - Nylon gemengd met elasthaan, spandex of lycra is zacht en elastisch. Dit wordt voor de meeste commerciële zwemkledij gebruikt.
 - Polyester gemengd met PBT (polybutyleen terephthalaat) is minder zacht, maar bestand tegen chloor en zout water. Dit wordt vaak voor competitiebadpakken gebruikt.

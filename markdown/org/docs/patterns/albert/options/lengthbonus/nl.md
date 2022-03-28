@@ -1,6 +1,9 @@
+- - -
+title: "Length bonus"
+- - -
 
-Hoeveel langer dan de standaard lengte is om je apen te maken.
-
+How much longer than the default length to make your apron.
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](albert_lengthbonus_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](albert_lengthbonus_sample.svg "Effect of this option on the pattern")

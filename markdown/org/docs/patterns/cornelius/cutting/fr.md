@@ -1,5 +1,5 @@
 - - -
-title: Cornelius Cutting
+title: "Cornelius cycling breeches: Cutting Instructions"
 - - -
 
 ### Matériaux

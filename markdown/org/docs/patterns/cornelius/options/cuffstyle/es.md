@@ -1,5 +1,7 @@
 ---
-title: Estilo del puño
+title: "Estilo del puño"
+---
+
 ---
 
 Este patrón soporta tres estilos de corte diferentes:

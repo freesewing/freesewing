@@ -1,3 +1,7 @@
+- - -
+title: "Penelope pencil skirt: Cutting Instructions"
+- - -
+
 <Note>
 
 The number of back parts depends on whether you want a vent, or have moved the zipper to the back seam.\

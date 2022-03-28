@@ -1,3 +1,7 @@
+- - -
+title: "Brian body block: Sewing Instructions"
+- - -
+
 <Note>
 
 ###### Brian es un bloque, no un patrón

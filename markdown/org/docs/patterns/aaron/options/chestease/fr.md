@@ -1,8 +1,12 @@
-![L'option d'aisance de la poitrine sur Aaron](./chestease.svg)
+- - -
+title: "Chest ease"
+- - -
 
-Combien d'aisance voulez-vous pour le buste ?
+![The chest ease option on Aaron](./chestease.svg)
 
-Quelle que soit la valeur que vous choisissez, la valeur sera simplement ajoutée à votre mesure de tour de poitrine lors de la génération du patron.
+How much room do you want at the chest?
+
+Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
 
 > Étant donné qu'un maillot de corps n'a pas de bras, une petite aisance de poitrine offre déjà un bon confort. Ajoutez-en trop, et vous finirez avec des emmanchures béantes.
 
@@ -12,4 +16,4 @@ Quelle que soit la valeur que vous choisissez, la valeur sera simplement ajouté
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_chestease_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_chestease_sample.svg "Effect of this option on the pattern")

@@ -1,6 +1,12 @@
-![De compensatie in het derde kwartaal van de mouwkop](./sleevecapq3offset.svg)
+- - -
+title: "Sleevecap Q3 offset"
+- - -
 
-Deze optie bepaalt de offset in de derde quadrant van de mouwkop.
+---
+
+![The offset in the third quarter of the sleevecap](./sleevecapq3offset.svg)
+
+This option controls the offset in the third quadrant of the sleevecap.
 
 <Tip>
 
@@ -10,4 +16,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](brian_sleevecapq3offset_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapq3offset_sample.svg "Effect of this option on the pattern")

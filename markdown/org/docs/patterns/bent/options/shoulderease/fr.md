@@ -1,6 +1,9 @@
+- - -
+title: "Shoulder ease"
+- - -
 
-La quantité d'aisance entre les épaules. Lorsque vous fabriquez un manteau ou une veste, vous voulez prévoir plus d'aisance pour pouvoir porter des épaisseurs sous le manteau/la veste.
-
+The amount of ease across the shoulders. When making a coat or jacket, you want to foresee more ease so one can wear layers under the coat/jacket.
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bent_shoulderease_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_shoulderease_sample.svg "Effect of this option on the pattern")

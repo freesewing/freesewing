@@ -1,5 +1,5 @@
 ---
-title: Coupe
+title: "Florent flat cap: Cutting Instructions"
 ---
 
 Selon la quantité de tissu disponible, il est possible de couper deux parties supérieures ou latérales, d'où les instructions sur le patron lui-même. Attention : Le motif inclut les limites de couture sur la partie supérieure donc si vous le coupez sur pli, ne les incluez pas !

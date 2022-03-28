@@ -1,3 +1,7 @@
+- - -
+title: "Yuri hoodie: Sewing Instructions"
+- - -
+
 <Note>
 
 Dit patroon kan met of met een overlocker/overlock worden gestikt. To _**Finish**_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
@@ -71,7 +75,7 @@ Dit is slechts één zoommethode, als je de voorkeur geeft aan een andere manier
 
 ## Stap 7: Bereid voedsel en kap voor
 
-Volg deze stap twee keer, één keer voor de buitenste kap en één keer voor de voering kap.
+Follow this step twice, once for the outer hood and once for the lining hood.
 
 - Stik de lange rand van het kap aan de buitenrand van een van de kap aan elkaar.
 - Stik de resterende lange rand van het kap centrum aan de buitenrand van de andere kap aan elkaar.
@@ -145,4 +149,4 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 
 ## Stap 12: Ta-daaa
 
-Geniet van je Yuri!
+Enjoy your Yuri!

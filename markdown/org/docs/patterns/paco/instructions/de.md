@@ -1,3 +1,7 @@
+- - -
+title: "Paco pants: Sewing Instructions"
+- - -
+
 <Tip>
 
 ##### Eine Notiz über die Naht endet
@@ -10,14 +14,13 @@ die rohen Kanten zu umhüllen.
 Für diese Anweisungen gehen wir davon aus, dass Sie einen Serger für die Naht verwenden, aber wir
 bieten auch Alternativen an. Weitere Optionen für die Bearbeitung von Nähten beinhalten das Schneiden von
 Scheren mit rosa Scheren Das Nähen eines Zick-Zick-Zack am Rand der Naht, um ihn vor dem Ausziehen zu bewahren oder mit
-Bänder zu binden.
- </Tip>
+Bänder zu binden. </Tip>
 
 ## Schritt 1: Baue die hinteren Taschen
 
-Planen Sie den Einsatz von Welttaschen in die Rückseite Ihrer Paco Hosen? Das ist großartig! Dies ist wohl der schwierigste Teil, und wir werden es zuerst schaffen. If not, you can skip ahead to the next step, preparing the front pockets.
+Are you planning to insert welt pockets in the back of your Paco pants? Is so, awesome! This is arguably the trickiest part, and we'll accomplish it first. If not, you can skip ahead to the next step, preparing the front pockets.
 
-Bauen Sie die Taschen auf der Rückseite Ihrer Hose, einschließlich der Tasche Tasche.
+Construct the welt pockets at the back of your trousers, including the pocket bag.
 
 <Tip>
 
@@ -37,23 +40,24 @@ Sie noch nie Welttaschen gemacht haben, sind Sie in Ordnung.
 Does it need a note to that effect? --->
 
 ## Schritt 2: Bereiten Sie die Vordertaschen vor
-Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. Die Außennaht der Beine entlang der Außennaht dient genau diesem Zweck.
 
-Wenn Sie einen Server, servieren Sie die geschwungenen Kanten Ihrer Taschen. Then, serge along the long edges of the pocket flaps.
+Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. The flap along the outside seam of each leg is for just this purpose.
 
-![Vordere Taschen mit Servierkanten](step02.svg)
+If you are using a serger, serge the curved edges of your pocket pieces. Then, serge along the long edges of the pocket flaps.
+
+![Front pockets with serged edges](step02.svg)
 
 ## Schritt 3: Taschen an Hosen anhängen
 
-With [good sides together](https://freesewing.org/docs/sewing/good-sides-together/), line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the front leg. Nähen zusammen. Wiederholen für das zweite Bein.
+With [good sides together](https://freesewing.org/docs/sewing/good-sides-together/), line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the front leg. Sew together. Repeat for second leg.
 
-![Taschen genäht auf Vorderhose](step03.svg)
+![Pockets sewn to front pants](step03.svg)
 
-Jetzt machen Sie das Gleiche mit den Hinterbeinen. With good sides together, line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the back leg. Before sewing, make sure that your left leg front and back are attached to one pocket, and your right leg front and back are attached to the other. Nähen zusammen.
+Now do the same with the back legs. With good sides together, line up the markings on the edge of the pocket bag with the ends of the flap along the outside seam of the back leg. Before sewing, make sure that your left leg front and back are attached to one pocket, and your right leg front and back are attached to the other. Sew together.
 
-Drücken Sie alle Nähte auf die Hose (weg von der Tasche).
+Press all seams toward the pants (away from the pocket bag).
 
-![Gedrückte Taschen](step03b.svg)
+![Pressed pockets](step03b.svg)
 
 <Note>
 
@@ -62,33 +66,33 @@ unterstichen um die Klappen und Taschen so zu befestigen, wie Sie sie gedrückt 
 
 </Note>
 
-![Unterstickte Taschen](step03c.svg)
+![Understitched pockets](step03c.svg)
 
 ## Schritt 4: Bereiten Sie die Seitennaht und Tasche vor
 
-Sie sollten jetzt zwei große Stücke haben, jedes mit einem Vorder- und Rückenbein, das an einer Tasche befestigt ist.
+You should now have two big pieces, each with a front and back leg attached by a pocket.
 
-Nehmen Sie eines der Stücke und platzieren Sie die Vorder- und Rückseite gut nebeneinander. Align the outer side seam, so that the side seam of the leg pieces match up, and the pocket bag edges are aligned, with good sides together.
+Take one of the pieces, and place the front and back leg good sides together. Align the outer side seam, so that the side seam of the leg pieces match up, and the pocket bag edges are aligned, with good sides together.
 
 ## Schritt 5: Nähte die Seitennaht
 
-Sie nähen zwei Nähte, um die Seitennähte zu nähen, während Sie die Taschen offen lassen.
+You'll sew two separate seams to stitch up your side seams while leaving your pockets open.
 
-Beginnen Sie an der Spitze der Beinstücke. Nähen Sie entlang der Seitennaht, Schwenken, wenn Sie die Tasche zu erreichen. Sie können hier auch Ihre Nahtlänge verkürzen, um die Ecke der Taschenöffnung zu verstärken. Folgen Sie der Seitennaht, drehen Sie wieder und enden Sie an der Spitze der Tasche.
+Start at the top of the leg pieces. Sew along the side seam, pivoting as you reach the pocket bag. You can also shorten your stitch length here to reinforce the corner of the pocket opening. Follow the side seam, pivoting again and ending at the top of the pocket.
 
-Als nächstes schließen Sie den Untergrund der Tasche und nähen den Rest der Seitennaht. Start at the bottom edge of the pocket bag, sewing along the bottom of the pocket, then pivoting when you get to the side seam of the pants. You can use a shorter stitch length for the first few stitches on the side seam, to reinforce the bottom of the pocket opening. Nähen Sie den ganzen Weg nach unten die Beinseitennaht.
+Next, you'll close the bottom of the pocket bag and stitch the rest of the side seam. Start at the bottom edge of the pocket bag, sewing along the bottom of the pocket, then pivoting when you get to the side seam of the pants. You can use a shorter stitch length for the first few stitches on the side seam, to reinforce the bottom of the pocket opening. Sew all the way down the leg side seam.
 
-Wiederholen für das zweite Bein.
+Repeat for second leg.
 
-![Seitenbein aufgenäht](step05.svg)
+![Sewn up side leg](step05.svg)
 
 ## Schritt 6: Beende die Seitennaht
 
-Die Fertigstellung dieser Nähte erfordert eine gewisse Delikatesse vor allem um die Hosentaschen herum.
+Finishing these seams requires a touch of delicacy, especially around the tops of the pockets.
 
 It would be difficult to finish the top part of the side seam with a serger, so we'll use a zig-zag stitch. Starting at the top of the side seam, zig-zag stitch along the raw edge of the seam allowance, pivoting around the pocket opening. Continue the zig-zag stitch up the side of the pocket, unless you've serged your pockets already (in which case you can stop when you reach the pocket).
 
-Die untere Öffnung der Tasche ist eine enge Ecke. To finish the seam around this corner, zig-zag stitch the raw edge of the seam allowance, starting where it joins the pocket, pivoting at the corner and continuing about 5 cm (2 in.) down the side seam. You can continue finishing the side seam with a zig-zag stitch all the way down. Alternatively, you can serge the side seam, making sure to stop the line of serger stitches a little ways from the pocket.
+The bottom opening of the pocket is a tight corner. To finish the seam around this corner, zig-zag stitch the raw edge of the seam allowance, starting where it joins the pocket, pivoting at the corner and continuing about 5 cm (2 in.) down the side seam. You can continue finishing the side seam with a zig-zag stitch all the way down. Alternatively, you can serge the side seam, making sure to stop the line of serger stitches a little ways from the pocket.
 
 <Note>
 
@@ -97,11 +101,11 @@ aufzulösen, wenn sie unsicher bleiben.
 
 </Note>
 
-Wiederholen für das zweite Bein.
+Repeat for second leg.
 
-![Zig-Zag gestickte Seitennaht](step06.svg)
+![Zig-zag stitched side seams](step06.svg)
 
-Drücken Sie die Seitennaht auf die Vorderseite.
+Press the side seams toward the front.
 
 <Note>
 
@@ -123,21 +127,21 @@ verstärken, direkt außerhalb der Taschenöffnungen.
 
 ## Schritt 7: Ankertasche zum Taillen
 
-Die Taschen in Paco sind an der Taille verankert. This means that you can put things in your pockets without them becoming unsightly bump that’s just dangling around in your trouser leg.
+The pockets in Paco are anchored at the waist. This means that you can put things in your pockets without them becoming unsightly bump that’s just dangling around in your trouser leg.
 
-To anchor each pocket, align the top of the pocket with the mark along the waistline of your pattern. Nähen Sie eine Linie von Bastnähten innerhalb Ihrer Nahtzugabe, um die Tasche an der Stelle zu halten.
+To anchor each pocket, align the top of the pocket with the mark along the waistline of your pattern. Sew a line of basting stitches inside your seam allowance to hold the pocket in place.
 
-![Verortete Taschentaschen mit basted Naht](step07.svg)
+![Anchored pocket bags showing basted seam](step07.svg)
 
 ## Schritt 8: Nähen und beenden Sie die Inneams
 
-Richten Sie die Inseams mit guten Seiten zusammen und nähen Sie dann die Inseams. Finish the seams the same way you finished the side seams. Drücken Sie InNaht auf die Rückseite.
+Align the inseams with good sides together, then sew up the inseams. Finish the seams the same way you finished the side seams. Press inseams to the back.
 
-![Inseam nähen](step08.svg)
+![Sewn up inseam](step08.svg)
 
 ## Schritt 9: Nähen und Fertigstellen der Schrittnaht
 
-To attach the individual legs, flip one leg good side out (it doesn't matter which leg), then place it inside the other leg, good sides together. You should now have what looks like just one pant leg, with wrong sides visible. Align the center front, center back, and inseams of each leg, then pin along the length of the crotch seam. Nähen und fertig die Schrittnaht.
+To attach the individual legs, flip one leg good side out (it doesn't matter which leg), then place it inside the other leg, good sides together. You should now have what looks like just one pant leg, with wrong sides visible. Align the center front, center back, and inseams of each leg, then pin along the length of the crotch seam. Sew and finish the crotch seam.
 
 <Note>
 
@@ -146,12 +150,13 @@ auf die Rückseite zu drücken, wenn sie durch die Maschine eingespeist werden.
 
 </Note>
 
-![Crotchnaht](step09.svg)
+![Crotch seam](step09.svg)
 
 ## Schritt 10: Stellen Sie die Ösen für die Zeichenfolge ein (optional)
-Markieren Sie die Mitte Ihrer Taillenlänge. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
 
-Ein bisschen nach links und rechts davon können Sie zwei Ösen hinzufügen, um eine Zeichenfolge durchzulassen. Da deine Paco Hosen im Hüftgurt elastisches Band haben, ist dies ein schönes Detail, jedoch ist es nicht notwendig.
+Mark the middle of your waistband length. Fold one of your waistband pieces double, and mark the middle of the width (do not take the seam allowance into account).
+
+A bit to the left and right of this, you can add two eyelets to pass a drawstring through. Because your Paco pants have elastic in the waistband, as well, this is a nice detail, but is not required.
 
 <Tip>
 
@@ -162,30 +167,33 @@ hinter diesen Ösen hinzufügen. Ein bisschen Schnittstellen oder ein übrig ble
 
 </Tip>
 
-![Bund mit Ösen](step10.svg)
+![Waistband with eyelets](step10.svg)
 
 ## Schritt 11: Bereiten Sie die Taille elastisch vor
-Es gibt keine Zauberformel für die Länge Ihrer Elastik. So you wrap it around your waist and pull it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
 
-Markieren Sie diese Länge, schneiden Sie die elastische und verbinden Sie die beiden Enden zusammen.
+There’s no magic formula for the length of your elastic. So you wrap it around your waist and pull it tight until you get a good fit. Paco is cut to sit at the high hip, so make sure your elastic is long enough to sit comfortably at the high hip.
 
-![Elastisch verbunden mit einer Reihe von Zick-Zack-Nähten](step11.svg)
+Mark this length, cut the elastic, and join the two ends together.
+
+![Elastic joined with a series of zig-zag stitches](step11.svg)
 
 ## Schritt 12: Betrete die Taille
-Platzieren Sie die beiden Taillenbänder gut an den Seiten und richten Sie die kurzen Kanten aus. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
-![Taillenband Stücke beigetreten](step12.svg)
+Place the two waistband pieces good sides together, and align the short edges. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
-Falten Sie die Taille doppelt entlang der Länge, mit guten Seiten aus, und drücken Sie sie. This fold will be the top of your waistband.
+![Joined waistband pieces](step12.svg)
+
+Fold the waistband double along the length, with good sides out, and press. This fold will be the top of your waistband.
 
 ## Schritt 13: Hänge die Taille an
 
-Sie haben zwei Optionen zum Befestigen Ihrer Taillenband. One is a bit simpler, but leaves an exposed seam on the inside. Der andere ist ein bisschen getrunkener, aber er schließt die rohen Kanten Ihres Stoffes ein.
+You have two options for attaching your waistband. One is a bit simpler, but leaves an exposed seam on the inside. The other is a bit more fiddly, but it encloses the raw edges of your fabric.
 
 ### Die einfachere Methode
-Halten Sie Ihre Taille gefaltet doppelt, und legen Sie die elastische Innenseite. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
 
-Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin-Platz.
+Keep your waistband folded double, and place the elastic inside. Make sure to align the place where the elastic is joined with the back of the waistband (opposite the eyelets).
+
+Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin in place.
 
 <Tip>
 
@@ -196,77 +204,79 @@ nicht die Innenseite Ihrer Taille.
 
 </Tip>
 
-Als nächstes richten Sie die Mittenstützen und den Pin in der Mitte nach Bedarf mit zusätzlichen Pins um die Taille aus.
+Next, align the center backs and pin in place, adding additional pins around the waistband as needed.
 
-Nähen Sie die Taille an die Hose, so nah wie möglich an der Elastik, aber nicht in die Elastik.
+Sew the waistband to the pants, as close to the the elastic as you can, but don’t sew into the elastic.
 
-![Bund genäht mit einfacher Methode](step13.svg)
+![Waistband sewn with simple method](step13.svg)
 
 It’s fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
 
-Entfernen Sie alle Blasenstiche von den Hosentaschen.
+Remove any basting stitches from the tops of the pocket bags.
 
-Beenden Sie die Naht mit einem Serger oder einer anderen Methode.
+Finish the seam with a serger or other method.
 
 ### Die beigefügte Nahtmethode
 
-Öffne die Baille. You will still be able to see the fold along its length, but you will be working with each side of the waistband individually.
+Open the waistband. You will still be able to see the fold along its length, but you will be working with each side of the waistband individually.
 
-Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin-Platz.
+Find the center front of your waistband (easy if there are eyelets, if not just fold it double), and align that with the center front seam of your pants. Make sure that your waistband is outside of your pants, with good sides together. Pin in place.
 
 <Tip>
 
 ##### Mind your eyelets
+
 To make sure your eyelets will end up on the outside, make sure they are closer to the top of your
 waistband, above the fold, for now.
 
 </Tip>
 
-![Öffnungsband-Näht zu Hosen](step13b.svg)
+![Open waistband sewn to pants](step13b.svg)
 
-Als nächstes richten Sie die Mitte der Taille mit der Mitte hinten Naht aus. Pin-Platz. Then, add additional pins around the waistband as needed.
+Next, align the center back of your waistband with the center back seam. Pin in place. Then, add additional pins around the waistband as needed.
 
-Nähen Sie die Taille an die Hose.
+Sew the waistband to the pants.
 
-Drücke die Taille nach oben. Press the seam allowance in on the opposite side of the waistband, maintaining the fold along the center of the waistband.
+Press the waistband up. Press the seam allowance in on the opposite side of the waistband, maintaining the fold along the center of the waistband.
 
-Die Taille neu einklappen und die Hälfte des Taillenbandes nach innen drehen. Pin so that the seam allowance on the inside is just below the seam joining the waistband to the pants, and pin in place around the waistband. Von außen sticht man im Graben und fängt dabei die innere Taille.
+Refold the waistband, turning half the waistband to the inside. Pin so that the seam allowance on the inside is just below the seam joining the waistband to the pants, and pin in place around the waistband. From the outside, stitch in the ditch, catching the inner waistband as you go.
 
 <!--- Probably put a note here about stitching in the ditch? --->
 
-![Bund genäht mit geschlossenen Nähten](step13c.svg)
+![Waistband sewn with enclosed seams](step13c.svg)
 
 ## Schritt 14: Bereiten Sie die Manschette elastisch vor
 
 As you did with the waistband elastic, wrap the elastic for your cuff around your ankle and pull it tight until you get a good fit.
 
-Markieren Sie diese Länge, schneiden Sie die elastische und verbinden Sie die beiden Enden zusammen. Wiederholen für die andere Manschette elastisch.
+Mark this length, cut the elastic, and join the two ends together. Repeat for the other cuff elastic.
 
-![Elastisch verbunden mit Zick-Zack-Nähen](step14.svg)
+![Elastic joined with zig-zag stitching](step14.svg)
 
 ## Schritt 15: Join the Manschetten
-Fräsen Sie jede Manschette mit guten Seiten zusammen und richten Sie die kurzen Kanten aus. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
-![Geleitete Manschetten](step15.svg)
+Fold each cuff with good sides together, aligning the short edges. For each cuff, sew the short edges together, then press open. These will be inside the cuff, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
-Falten Sie jede Manschette doppelt entlang der Länge, mit guten Seiten aus, und drücken Sie sie. This fold will be the bottom of your cuffs.
+![Joined cuffs](step15.svg)
+
+Fold each cuff double along the length, with good sides out, and press. This fold will be the bottom of your cuffs.
 
 ## Schritt 16: Füge die Manschetten hinzu
 
-Sie werden Ihre Manschetten auf die gleiche Weise anbringen, wie Sie die Taille befestigt haben. As with the waistband, there are two options - a simpler choice, and a choice without exposed seams on the inside.
+You will attach your cuffs the same way that you attached the waistband. As with the waistband, there are two options - a simpler choice, and a choice without exposed seams on the inside.
 
 <Note>
 
- Wenn Ihre Nähmaschine ein abnehmbares Bett hat (normalerweise entfernt, um den "freien Arm" für das Nähen von
- Ärmelschellen auszusetzen), Dies wird das Nähen der Manschetten erleichtern.
+If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
+sleeve cuffs), this will make sewing the cuffs easier.
 
  </Note>
 
 ### Die einfachere Methode
 
-Halten Sie Ihre Manschetten doppelt, und legen Sie die elastische Innenseite.
+Keep your cuffs folded double, and place the elastic inside.
 
-Die Naht in der Manschette mit dem Inseam der Hose ausrichten. Make sure that your cuff is outside of your pants, with good sides together. Nähen Sie den Rest des Weges um die Manschette an.
+Align the seam in the cuff with the inseam of the pants. Make sure that your cuff is outside of your pants, with good sides together. Pin in place, then pin the rest of the way around the cuff.
 
 <Tip>
 
@@ -280,39 +290,39 @@ genug ist.
 
 </Tip>
 
-Nähen Sie die Manschette auf die Hose Öffnung, so nah wie möglich an der elastischen wie möglich, aber nicht in die Elastik.
+Sew the cuff to the pants opening, as close to the the elastic as you can, but don’t sew into the elastic.
 
-![Schnitte genäht mit einfacher Methode](step16.svg)
+![Cuffs sewn with simple method](step16.svg)
 
-Beenden Sie die Naht mit einem Serger oder einer anderen Methode.
+Finish the seam with a serger or other method.
 
 ### Die beigefügte Nahtmethode
 
-Öffne die Manschette. You will still be able to see the fold along its length, but you will be working with each side of the cuff individually.
+Open the cuff. You will still be able to see the fold along its length, but you will be working with each side of the cuff individually.
 
-Die Naht in der Manschette mit dem Inseam der Hose ausrichten. Make sure that your cuff is outside of your pants, with good sides together. Nähen Sie den Rest des Weges um die Manschette an.
+Align the seam in the cuff with the inseam of the pants. Make sure that your cuff is outside of your pants, with good sides together. Pin in place, then pin the rest of the way around the cuff.
 
-Nähen Sie die Manschette an die Hose.
+Sew the cuff to the pants.
 
-![Nähen der offenen Manschetten zu den Hosen](step16b.svg)
+![Sewing the open cuffs to the pants](step16b.svg)
 
-Drücken Sie die Manschette weg von der Hose. Press the seam allowance in on the opposite side of the cuff, maintaining the fold along the center of the cuff.
+Press the cuff away from the pants. Press the seam allowance in on the opposite side of the cuff, maintaining the fold along the center of the cuff.
 
-Die Manschette neu einklappen und die Hälfte der Manschette nach innen drehen. Pin so that the seam allowance on the inside is just past the seam joining the cuff to the pants, and pin in place around the cuff. From the outside, stitch in the ditch, catching the inner cuff as you go.
+Refold the cuff, turning half the cuff to the inside. Pin so that the seam allowance on the inside is just past the seam joining the cuff to the pants, and pin in place around the cuff. From the outside, stitch in the ditch, catching the inner cuff as you go.
 
-![Nähte Manschetten mit geschlossenen Nähten](step16c.svg)
+![Cuffs sewn with enclosed seams](step16c.svg)
 
 ## Schritt 17: Nähen der Manschetten und der Taille (optional)
 
-Wenn Sie eine breitere Manschette elastisch haben, können Sie eine horizontale Linie auf halbem Weg nach oben stecken. This will hold your elastic in place and help keep it from folding or twisting. Make sure to stretch the elastic evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic, you risk lumpy gathers and a leg opening too narrow to get your foot through.)
+If you have wider cuff elastic, you may want to stitch a horizontal line halfway up the cuff. This will hold your elastic in place and help keep it from folding or twisting. Make sure to stretch the elastic evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic, you risk lumpy gathers and a leg opening too narrow to get your foot through.)
 
 <!--- You could also do a zig-zag stitch here, but I think straight probably looks nicer? --->
 
 If you like the look, you can also sew more than one line of stitches, evenly spaced between the top and bottom of the cuff.
 
-Das Gleiche können Sie auch für die Taille tun.
+You can do the same for the waistband.
 
-![Bund und Manschetten mit dekorativem Heften](step17.svg)
+![Waistband and cuffs with decorative stitching](step17.svg)
 
 <Note>
 
@@ -322,6 +332,7 @@ unter den Ösen lassen Sie einen Kanal breit genug für Ihre Zeichenkette.
 </Note>
 
 ## Schritt 18: Thread eine Zeichenfolge um die Taille herum (optional)
+
 If you put eyelets in your waistband, thread a drawstring through one eyelet, around the waist, and out of the other eyelet.
 
 <Note>
@@ -332,9 +343,10 @@ wird leichter durch den Stoff manövrieren, und er wird die Zeichenfolge mitzieh
 
 </Note>
 
-![Paco mit Zeichenkette verbunden](step18.svg)
+![Paco threaded with drawstring](step18.svg)
 
 ## Schritt 19: Genießen Sie Ihre Paco Hose!
-Du hast es getan! Wie geht's!
+
+You did it! Way to go!
 
 <!--- Maybe we want to put a fun gif here? --->

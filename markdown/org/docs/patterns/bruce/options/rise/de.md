@@ -1,9 +1,13 @@
-![Die Aufstiegsoption auf Bruce](./rise.svg)
+- - -
+title: "Rise"
+- - -
 
-Diese Option steuert die Überhöhe der Taille.
+![The rise option on Bruce](./rise.svg)
+
+This option controls the overal height of the waist.
 
 > Je höher der Aufstieg, desto höher deine Taille.
 
-
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bruce_rise_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_rise_sample.svg "Effect of this option on the pattern")
