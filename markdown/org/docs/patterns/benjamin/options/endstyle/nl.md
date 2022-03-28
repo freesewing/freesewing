@@ -1,6 +1,10 @@
-![Drie verschillende puntjes](endstyle.svg)
+- - -
+title: "End style"
+- - -
 
-Naast vier verschillende knoopwijzen kan elke stijl individueel gemaakt worden met drie verschillende punten:
+![Three different tip shapes](endstyle.svg)
+
+In addition to having four different bow tie styles, each style can be individualized with three different tip options:
 
 - Recht
 - Puntig
@@ -8,4 +12,4 @@ Naast vier verschillende knoopwijzen kan elke stijl individueel gemaakt worden m
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](benjamin_endstyle_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_endstyle_sample.svg "Effect of this option on the pattern")
