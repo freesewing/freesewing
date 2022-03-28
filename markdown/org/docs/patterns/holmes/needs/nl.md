@@ -1,5 +1,5 @@
 ---
-title: Houdt wat je nodig hebt
+title: "Holmes deerstalker hat: What You Need"
 ---
 
 Om Holmes te maken heb je het volgende nodig:
