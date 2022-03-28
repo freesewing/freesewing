@@ -52,7 +52,6 @@ export default {
     shoulderSlopeBack: 1.23,
     neckWidthBack: 0.197,
     neckWidthFront: 0.17,
-    // shoulderToShoulderCorrection: 0.995,
     backDartLocation: 0.145,
     backCenterWaistReduction: 0.35,
     collarFactor: 0.19,
