@@ -109,7 +109,6 @@ hardship, then you should [join us and become a patron](https://freesewing.org/c
  - 💻 Makers website: [freesewing.org](https://freesewing.org)
  - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
  - 💬 Chat: On Discord via [discord.freesewing.org](https://discord.freesewing.org/)
- - ✅ Todo list/Kanban board: On Github via [todo.freesewing.org](https://todo.freesewing.org/)
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
 
@@ -124,6 +123,17 @@ Our [chatrooms on Discord](https://discord.freesewing.org/) are the best place t
 share your feedback, or just hang out.
 
 If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
+
+## Sponsors 🥰
+
+FreeSewing is hosted by these awesome companies
+
+| Logo | Name | Description |
+| ==== | ==== | =========== |
+| <img src="https://freesewing.dev/brands/algolia.svg" style="max-width: 200px;" /> | Search powered by [Algolia](https://www.algolia.com/) |
+| <img src="https://freesewing.dev/brands/bugsnag.svg" style="max-width: 200px;" /> | Error Handling by [BugSnag](https://www.bugsnag.com/) |
+| <img src="https://freesewing.dev/brands/crowdin.svg" style="max-width: 200px;" /> | Translation powered by [Crowdin](https://www.crowdin.com/) |
+| <img src="https://raw.githubusercontent.com/abumalick/powered-by-vercel/master/powered-by-vercel.svg" style="max-width: 200px;" /> | Hosting & Builds powered by [Vercel](https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss) |
 
 
 ## Contributors ✨
