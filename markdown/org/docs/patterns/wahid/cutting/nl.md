@@ -1,3 +1,7 @@
+- - -
+title: "Wahid waistcoat: Cutting Instructions"
+- - -
+
 - **Buitenstof**
   - Knip **2 voorpanden** met _goede kanten op elkaar_
   - Knip **2 rugpanden** met _goede kanten op elkaar_
