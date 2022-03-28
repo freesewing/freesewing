@@ -1,17 +1,21 @@
+- - -
+title: "Leg balance"
+- - -
 
-Bepaalt de verhouding tussen de voor- en achterkant van de broekspijpen.
+Controls the proportion between the front and back part of the legs.
 
-De achterkant van de broekspijpen zijn altijd breder dan de voorkant. Hoeveel controleert dit dan?
+The back of the trouser legs are always wider than the front. This controls by how much.
 
 <Note>
 
-Door dit te verhogen wordt het beenpaneel voor de voorkant.  
-Dit zorgt ervoor dat de drager er meer skinny uitziet.
+Increasing this will make the front leg panel narrower.\
+This makes the wearer look more skinny.
 
-Deze truc wordt vaak gebruikt in damesspijkerbroek 
-(nu weet je waarom je geen damesspijkerspijkers kunt vinden met functionele voorzakken).
+This trick is often used in womenswear jeans
+(now you know why you can't find womenswear jeans with functional front pockets).
 
 </Note>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_legbalance_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_legbalance_sample.svg "Effect of this option on the pattern")
