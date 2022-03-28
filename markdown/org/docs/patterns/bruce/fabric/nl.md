@@ -1,7 +1,9 @@
-Je hebt een elastische stof nodig voor dit patroon. Liefst iets dat comfortabel is en zacht aanvoelt, en de huid laat ademen.
+- - -
+title: "Bruce boxer briefs: Fabric Options"
+- - -
 
-Ik vind persoonlijk dat niets beter werkt dan rayon (viscosejersey) voor dit patroon, alhoewel je ook een andere vezel kan gebruiken, zolang het maar jersey is.
+You need a stretchy fabric for this pattern. Preferable something that is comfortable and soft to the touch, while allowing the skin to breathe.
 
-Bij twijfel, kies dan rayon.
+I personally think that nothing can beat rayon for this pattern, although you can do with some other knit too, like jersey.
 
-
+When in doubt, go for rayon.
