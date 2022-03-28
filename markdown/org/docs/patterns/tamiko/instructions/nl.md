@@ -1,6 +1,10 @@
+- - -
+title: "Tamiko top: Sewing Instructions"
+- - -
+
 ### Stap 1: werk het armsgat af
 
-![Werk het armsgat af](step03.png)
+![Finsh the armhole seam](step03.png)
 
 - Finish the armhole seam with a narrow hem.
 
