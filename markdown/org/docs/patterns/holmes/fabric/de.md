@@ -1,5 +1,5 @@
 ---
-title: Optionen für Holmes Stoff
+title: "Holmes deerstalker hat: Fabric Options"
 ---
 
 ### Hauptstoff
