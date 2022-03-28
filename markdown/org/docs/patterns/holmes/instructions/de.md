@@ -1,5 +1,5 @@
 ---
-title: Holmes-Bau
+title: "Holmes deerstalker hat: Sewing Instructions"
 ---
 
 ### Schritt 1: Vorbereitung der Teile
