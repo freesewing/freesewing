@@ -1,4 +1,8 @@
-Benjamin is een vrij eenvoudig patroon, maar je opties bepalen wat uitgesneden moet worden. Hieronder zijn twee typische lay-outs.
+- - -
+title: "Benjamin bow tie: Cutting Instructions"
+- - -
+
+Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Below are two typical layouts.
 
 ## Zonder aanpaslintje
 
