@@ -1,3 +1,7 @@
+- - -
+title: "Jaeger jacket: Sewing Instructions"
+- - -
+
 <Note>
 
 ###### Jaeger Dokumentation ist im Bau
@@ -10,27 +14,27 @@ Diese Dokumentation ist noch nicht fertig.
 
 ### Front-Dart schließen
 
-![Front-Dart schließen](closeFrontDarts.svg)
+![Close the front darts](closeFrontDarts.svg)
 
 #### Doppelte falten
 
-Klappen Sie das vordere Doppelte mit den guten Seiten zusammen und polieren Sie es nach unten, so dass die Falte in der Mitte des Vorderdartes sauber ist.
+Fold the front double with the good sides together and pin it down so the fold is neatly in the middle of the front dart.
 
 #### Nähen Dart
 
-Nähen Sie den Vorderdart und achten Sie darauf, dass der Dart Stopp am richtigen oberen Ende. Die Unterseite ist nicht so wichtig, da sie von den Taschen abgedeckt wird. Aber das obere Ende des Darts wird deutlich sichtbar sein, Also stellen Sie bitte sicher, dass sie auf beiden Seiten in der gleichen Höhe endet.
+Sew the front dart close, taking care to have the dart stop at the correct top end. The bottom is not that important as it will be covered by the pockets. But the top end of the dart will be clearly visible, so please make sure to have it end at the same height at both sides.
 
 #### Öffnen und drücken
 
-Sobald die Vorderdarte geschlossen sind, schneiden Sie den Dart auf der Rückseite. Man kann es nicht bis zur Spitze schneiden, aber das ist in Ordnung. Drücken Sie die Dilts öffnen, wo sie geschnitten werden, und drücken Sie den Rest zur Seite. Achten Sie darauf, nur von der Rückseite zu drücken. Drücken von der Vorderseite wird wahrscheinlich dein Gewebe markieren.
+Once the front darts are closed, cut open the dart at the back. You won't be able to cut it open all the way to the tip, but that's fine. Press open the darts where they are cut open, and press the rest to the side. Take care to only press from the back. Pressing from the front will likely mark your fabric.
 
 ### Baue die Brusttasche
 
-![Verwundbare Schnittstelle auf die Rückseite der Brusttasche anwenden](basteChestPocket.svg)
+![Apply fusible interfacing to the back of the chest pocket](basteChestPocket.svg)
 
 #### Verwundbare Schnittstelle anwenden
 
-Verwenden Sie ein rechteckiges Stück leichtes Interface um die Brusttasche herum, so dass es sich ein paar cm in alle Richtungen erstreckt.
+Apply a rectangular piece of light fusible interfacing around the chest pocket area so that it extends a few cm in all directions.
 
 > ##### Wir verwenden nicht fusible auf der ganzen Front
 > 
@@ -40,95 +44,95 @@ Verwenden Sie ein rechteckiges Stück leichtes Interface um die Brusttasche heru
 
 With the fusible in place, thread a needle and baste around the chest pocket to transfer the markings to the good side of the fabric.
 
-Diese Tasche unterscheidet sich von einer traditionellen Welttasche. Die Welt erstreckt sich über die Taschenöffnung. Dies versteckt die Taschentasche ohne Verkleidung. Der obere Teil der Öffnung ist auch kleiner als die Schweißnähte, so dass man sie schließen kann.
+This pocket differs from a traditional welt pocket. The welt extends above the pocket opening. This hides the pocket bag without the need for facings. The top part of the opening is also smaller than the welt, allowing you to slip-stitch it closed.
 
-Markieren Sie auf der obersten Linie Ihrer Basiswelttasche 0,5 cm nach innen von den Ecken der oberen Linie.
+On the top line of your basted welt pocket, mark 0.5cm inwards from the corners of the top line.
 
 > Diese Punkte sind Noten auf dem vorderen Teil deines Musters.
 
-![Schließe die Truhe Taschenwelt](foldChestPocketWelt.svg)
+![Close the chest pocket welt](foldChestPocketWelt.svg)
 
 #### Falten, drücken und nähen der Seitennaht der Welt
 
-Falten Sie die Welt mit den guten Seiten zusammen und schließen Sie die Seiten (nähen Sie die Seitennaht).
+Fold the welt double with the good sides together, and close the sides (sew the side seams).
 
 #### Nahtzugabe, drehen und drücken
 
-Schneiden Sie die Nahtzuschläge an den Seiten und vor allem die Nahtzuweisung in die Ecke zu begrenzen, um Schüttgut zu vermeiden.
+Trim the seam allowances on the sides and especially limit the seam allowance towards the corner to avoid bulk.
 
-Drehen Sie sich aus, damit die gute Seite draußen ist und drücken Sie.
+Turn inside out so the good side is out and press.
 
 > Achten Sie darauf, nicht zu überdrücken, da Sie von der guten Seite des Stoffes drücken.
 
 #### Füge die untere Linie der Welt ein, damit du weißt, wo du nähen solltest
 
-Fügen Sie einen Heftführer am unteren Ende der Welt ein, um die Welt-/Naht-Grenze zu markieren. Dies ist die Linie, die später eingenäht werden soll.
+Baste a stitching guide at the bottom of the welt to mark the welt/seam allowance boundary. This will be the line to sew on later.
 
 #### Nähen Sie die Welt nach vorne
 
-![Bringe die Brusttasche an die Vorderseite](attachChestPocketWelt.svg)
+![Attach the chest pocket welt to the front](attachChestPocketWelt.svg)
 
-Legen Sie die Welt nach unten auf die gute Seite der Vorderseite mit der gefalteten Seite nach unten, und nähen Sie nach unten. Achten Sie darauf, dass Sie anhalten und genau am Rand der Linie starten, auf der Sie basieren.
+Place welt down on good side of front with the folded side downwards, and sew to bottom line. Make sure to stop and start exactly at the edge of the line you basted.
 
 #### Nähe die Brusttasche nach vorne
 
-![Bringe die Brusttasche an die Vorderseite](attachChestPocketBag.svg)
+![Attach the chest pocket bag to the front](attachChestPocketBag.svg)
 
-Legen Sie die Tasche auf der Vorderseite. Die Vorderseite mit guter seite, aber die Tasche mit schlechter seite. Achten Sie darauf, die längste Seite der Brusttasche auf der höchsten Seite der Brusttasche zu haben.
+Place the pocket bag down on the front. The front with good side up, but the pocket bag with bad side up. Make sure to have the longest side of the chest pocket bag on the highest side of the chest pocket.
 
 > Nur geschwemmte Brusttaschen haben eine höhere und untere Seite.
 
-Nähen Sie dies an Stelle entlang der oberen Linie. Remember this should be shorter than the bottom row of stitches to attach the welt, since you marked 0.5cm inwards from the corners.
+Sew this in place along the top line. Remember this should be shorter than the bottom row of stitches to attach the welt, since you marked 0.5cm inwards from the corners.
 
 > Da die Tasche in der Regel ein rutschiger Stoff ist, sollten Sie ihn vor dem Nähen anheften oder einstoßen.
 
 #### Öffnen, drehen und drücken der Brust ausschneiden
 
-![Drücke die Brusttasche](pressChestPocket.svg) Nun schneiden Sie Ihre Welt in der Mitte der beiden Nahtlinien. Schneiden Sie nicht an die Kante, sondern erstellen Sie dort eine dreimalige Form.
+![Press the chest pocket](pressChestPocket.svg) Now cut open your welt in the middle of both seamlines. Don't cut to the edge, but create a trianngular shape there.
 
-Drehen Sie die Tasche und die Welt auf die Rückseite, indem Sie beide durch die gerade erstellte Öffnung passieren.
+Flip the pocket bag and welt to the backside by passing both of them through the opening you just created.
 
-Hol dir alles um schön und flach zu legen und zu drücken.
+Get everything to lay nice and flat, and press.
 
-Nun bringen Sie die Welt nur auf die Vorderseite und lassen Sie sie schön und flach liegen. Drücke erneut von der Rückseite.
+Now, bring the welt only to the front and get it to lie nice and flat. Press again from the back.
 
 > Widerstehen Sie dem Drang, dies von vornherein zu drücken.
 
 #### Beende die Brusttasche
 
-![Beende die Brusttasche](finishChestPocket.svg)
+![Finish the chest pocket](finishChestPocket.svg)
 
 On the backside, fold the pocket bag double and sew it to the pocket welt below the existing seamline of the welt.
 
-Gewinde eine Nadel und beende die Brusttasche in der Hand, indem du die Seiten der Welt auf die Frontplatte abneigst (lass deine Stitches nicht vorne zeigen).
+Thread a needle and hand-finish the chest pocket by sewing down the sides of the welt to the front panel (don't let your stitches show on the front).
 
-Schließen Sie schließlich die Tasche durch Nähen der Seiten. Tun Sie dies, indem Sie die Vorderseite mit der guten Seite nach oben. Dann falten Sie über jede Seite und nähen Sie die Tasche. Beim Nähen dieser Seiten, achten Sie darauf, diese dreieckigen kleinen Stücke der Öffnung zu fangen. Dies stärkt die Taschenöffnung.
+Finally, close the pocket bag by sewing the sides. Do this by placing the front down with the good side up. Then fold over each side and sew the pocket bag. While sewing these sides, make sure to catch those triangular little pieces of the opening. This will reinforce the pocket opening.
 
-Füllen Sie die Brusttasche geschlossen, während wir die Jacke konturieren.
+Baste the chest pocket closed while we contruct the jacket.
 
 ### Die Fronten vorbereiten
 
-![Leinwand für die Fronten vorbereiten](prepareCanvas.svg)
+![Prepare the canvas for the fronts](prepareCanvas.svg)
 
-Schneiden Sie das vordere Leinenstück in einer hellen und geschmeidigen Leinwand auf der Voreinstellung aus. Ausschneiden Sie die gesamte Front.
+Cut out the front canvas piece in a light and supple canvas placed on the bias. Cut out the entire front.
 
-Schneiden Sie den Vorderdart aus und schließen Sie ihn mit einem Zick-Zack-Näht, damit sich die Leinwand nicht überlappt.
+Cut out the front dart and close it with a zig-zag stitch, making sure not to let the canvas overlap.
 
-Zerschneiden Sie das Stück der Brust Leine. Entlang der Rollenlinie ausrichten und auf der Vorderseite auf dem Leinwand platzieren.
+Cut out the chest canvas piece. Align it along the roll line, and baste it in place on front canvas piece.
 
 > Das Bruststück ist auf dem vorderen Teil Ihres Musters markiert.
 
 #### Leinwand an die Fronten einfügen
 
-![Padstitching, du liebst das Stoff, richtig?](padAndTape.svg)
+![Pad-stitching, you love that stuff, right?](padAndTape.svg)
 
-Nimm nun die Frontseite und das Bruststück auf deine Vorderseite. Beachten Sie, dass die Leinwand keine Naht hat.
+Now baste the front canvas and chest piece to your front. Keep in mind that the canvas has no seam allowance.
 
 > Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\ You don't want your canvas to get caught in the seams.
 
 #### Halten Sie Ihre Lapels fest
 
-Zeit, sich wie ein echter Schneider zu fühlen, und Pad-stich diese Lapels.
+Time to feel like a real tailor, and pad-stitch those lapels.
 
 Make sure to make the stitches a bit smaller towards the lapel tip, to make sure it lies flat against the chest, curling a bit inward instead of outward.
 
@@ -136,9 +140,9 @@ Make sure to make the stitches a bit smaller towards the lapel tip, to make sure
 
 #### Klebeband den Rand und die Rollenlinie
 
-Jetzt werden wir das Klebeband an den Rändern der Vorderseite und an der Rollenlinie handnähen. Dies wird auch die Leinwand an der Vorderseite hier und da sicherstellen.
+Now we are going to hand-sew tailor tape along the lapel edges of the front, and along the roll line. This will also secure the canvas to the front here and there.
 
-Denken Sie daran, dass:
+Keep in mind that:
 
 - Das Band entlang der Rollenlinie sollte innerhalb der Rollenlinie platziert werden.
 - Das Band entlang der Rollenlinie sollte etwa einen halben Zentimeter kürzer sein als die Distanz, die es umspannt. Die leichte Spannung, die dadurch entsteht, hilft der Lupe angenehm zu rollen und die Kontur zu Ihrem Körper.
@@ -156,7 +160,7 @@ Denken Sie daran, dass:
 
 #### Seitennaht schließen
 
-![Seiten schließen](closeSides.svg)
+![Close the sides](closeSides.svg)
 
 Place your front with the good side up, and your side on it with the good side down.\ Align the front/side seams, pin them in place if you feel like it, and sew them togther.
 
@@ -172,9 +176,9 @@ Place this down with the good side up, and place your back on top with the good 
 
 #### Rückennaht schließen
 
-![Rückennaht schließen](closeBack.svg)
+![Close the back seam](closeBack.svg)
 
-Ihre beiden Halbjacken zusammen mit den guten Seiten und schließen Sie die Rückennaht.
+Aling your two half-jackets with the good sides together, and close the back seam.
 
 <Note>
 
@@ -189,11 +193,11 @@ Nähen Sie danach nicht nach unten.
 
 #### Schulternähte schließen
 
-![Schulternähte schließen](closeShoulders.svg)
+![Close the shoulder seams](closeShoulders.svg)
 
-Nähen Sie die Schulternähte mit guten Seiten zusammen und nähen Sie sie zusammen.
+Align the shoulder seams with good sides together, and sew them together.
 
-Vergewissern Sie sich, dass die Leinwand nicht in der Naht gefangen wird.
+Make sure the canvas does not get caught in the seam.
 
 <Note>
 
