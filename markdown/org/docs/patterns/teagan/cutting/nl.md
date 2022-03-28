@@ -1,3 +1,7 @@
+- - -
+title: "Teagan T-shirt: Cutting Instructions"
+- - -
+
 - Knip 1 achteraan de stofvouw.
 - Knip 1 voorpand aan de stofvouw.
 - Knip 2 mouwen _met de goede kanten op elkaar_
