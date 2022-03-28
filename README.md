@@ -126,8 +126,7 @@ If you want to report a problem, please [create an issue](https://github.com/fre
 
 ## Sponsors 🥰
 
-FreeSewing is hosted by these awesome companies:
-
+Shout-out to these awesome companies who sponsor FreeSewing:
 
 | Logo | Name | Description |
 |:----:| ---- | ----------- |
