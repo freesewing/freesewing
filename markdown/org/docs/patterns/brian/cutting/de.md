@@ -1,10 +1,14 @@
-**Oberstoff**
+- - -
+title: "Brian body block: Cutting Instructions"
+- - -
+
+**Main fabric**
 
 - Schneide **1 Vorderteil** im Stoffbruch.
 - Cut **1 Back** part on the fold.
 - Schneide **2 Ärmel**.
 
-Diese Anleitung ist nur für den Brian-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
+These cutting instructions are just for the default Brian block. Adjust your cutting accordingly if you have/are making changes to the block.
 
 <Tip>
 
