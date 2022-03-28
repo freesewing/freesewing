@@ -1,48 +1,52 @@
+- - -
+title: "Ursula undies: Sewing Instructions"
+- - -
+
 ### Stap 1: Stik het voorpand aan het eerste zweefstuk
 
-Leg een van de zweefstukken op het voorpand, _goede kanten op elkaar_, zodat de kruisnaden op één lijn staan. Speld of drieg aan de naadwaarde.
+Place one of the gusset pieces on the front piece, _good sides together_, so that the crotch seams are aligned. Pin or baste at the seam allowance.
 
-![Stik het voorpand aan het eerste zweefstuk](step01.png)
+![Sew the front to the first gusset piece](step01.png)
 
 ### Stap 2: Open plat
 
-Vlak openen. Je kunt drukken als je wilt, maar wie strijkt er onderweers?
+Open flat. You can press if you want to, but who presses underwear?
 
-![Vlak openen](step02.png)
+![Open flat](step02.png)
 
 ### Stap 3: Stik het rugpand aan het eerste zweefstuk
 
-Leg het rugpand op de glans, met de goede kanten op elkaar. Speld of drieg aan de naadwaarde.
+Place the back piece on the gusset, good sides together. Pin or baste at the seam allowance.
 
-![Stik de achterkant aan het eerste zweefstuk](step03.png)
+![Sew the back to the first gusset piece](step03.png)
 
 ### Stap 4: Open plat
 
-Vlak openen.
+Open flat.
 
-![Vlak openen](step04.png)
+![Open flat](step04.png)
 
 ## Stap 5: Bevestig het tweede gussetstuk
 
-Haal de voor- en achterpanden uit de weg door ze naar het midden te rollen.
+Get the front and back pieces out of the way by rolling them to the center.
 
-Leg de tweede zweefstuk met goede kanten op elkaar op de boven, zodat het lijnt met het eerste zweefstuk. De voor- en achterpanden van de roll-up stukken moeten tussen de stukken gesorteerd worden.
+Place the second gusset piece good sides together on top so that it lines up with the first gusset piece. The rolled-up front and back pieces should be sandwiched between your gusset pieces.
 
-Stik de voor- en achterste naden aan de naadwaarde met behulp van een overlock of een zigzagsteek.
+Sew the front and back gusset seams at your seam allowance using a serger or a zigzag stitch.
 
-![Bevestig het tweede gussetstuk](step05.png)
+![Attach the second gusset piece](step05.png)
 
 ## Stap 6: Draai de rechterkant uit
 
-Keer de troeven naar buiten. Alle gussetnaden moeten omzeild worden.
+Turn the undies right side out. All gusset seams should be enclosed.
 
-![Draai de rechterkant uit](step06.png)
+![Turn right side out](step06.png)
 
 ### Stap 7: Stik de zijnaden
 
-Speld de zijnaad de goede kanten op elkaar. Stik de zijnaden aan de naadwaarde met een overlock of een zigzagsteek.
+Pin the side seams good sides together. Sew the side seams at your seam allowance using a serger or a zigzag stitch.
 
-![Stik de zijnaden](step07.png)
+![Sew the side seams](step07.png)
 
 <Note>
 
@@ -52,30 +56,30 @@ Goed gedaan! Technisch gezien kan je de randen onbewerkte verlaten omdat jersey 
 
 ### Stap 8: Bereid elastiek voor
 
-Vervang de randen van elk stuk elastiek met de naadwaarde en stik samen. Je zou drie elastische stukken moeten hebben: één voor de tailleband en twee voor de benen.
+Overlap the edges of each piece of elastic by your seam allowance and stitch together. You should have three elastic pieces: one for the waistband and two for the legs.
 
-Deel het elastiek in vier kwartalen en markeer de punten met spelden of hoeken om het elastiek gelijk te maken. Doe hetzelfde voor de opening van de taille en de broekspijp, en markeer de kwart punten.
+To ensure that you stretch the elastic evenly, divide the elastic into four quarters and mark the points with pins or chalk. Do the same to the waist and leg openings, marking the quarter points.
 
-![Bereid elastiek voor](step08.png)
+![Prepare elastic](step08.png)
 
-![Kwart de openingen](step08b.png)
+![Quarter the openings](step08b.png)
 
 ### Stap 9: Stik elastiek aan de buitenkant van het kledingstuk
 
-Speld de elastiek aan de opening van de taille en de broekspijp aan de goede kant van de stof, zorg ervoor dat je de kwartaalmarkeringen oprijdt. Als je elastiek een decoratieve rand heeft, zorg ervoor dat je de rand van de naad (niet de decoratieve rand) van de elastiek naar de rand van de stof voert. De decoratieve rand moet naar het kledingstuk wijzen, niet weg.
+Pin the elastic to the waist and leg openings on the good side of the fabric, ensuring that you line up the quarter markings. If your elastic has a decorative edge, make sure that you line up the plain edge (not the decorative edge) of the elastic to the edge of the fabric. The decorative edge should be pointing towards the garment, not away from it.
 
-Stik het elastiek aan het kledingstuk door een zigzagsteek. Je zal het elastische beetje moeten rekken als je stik om hem plat tegen de stof te laten leggen. Vermijd de stof zelf uit te rekken.
+Sew the elastic to the garment using a zigzag stitch. You will have to stretch the elastic slightly as you sew to make it lay flat against the fabric. Avoid stretching the fabric itself.
 
-![Stik elastiek aan de buitenkant van het kledingstuk](step09.png)
+![Sew elastic to the outside of the garment](step09.png)
 
-Knip alle overtollige stof weg die bulk of plakt uit het elastisch voorkomt.
+Trim away any excess fabric that causes bulk or sticks out from the elastic.
 
 ### Stap 10: Plooi het elastiek en stik het weer vast
 
-Plooi de elastiek en de stof naar de binnenkant en sluit de onafgewerkte rand van de stof onder de elastiek. Je zou naar de buitenzijde moeten kijken, een geplooide rand met een beetje elastische korte uitstraling. Stik met een zigzagsteek.
+Fold the elastic and fabric to the inside, enclosing the raw edge of the fabric under the elastic. You should be looking at the outside of the undies, a folded edge with a bit of the elastic peeking out. Sew using a zigzag stitch.
 
-![Plooi het elastiek en stik het opnieuw vast](step10.png)
+![Fold the elastic in and sew it down again](step10.png)
 
-Herhaal deze stappen voor elk van de taille- en beenopeningen.
+Repeat these steps for each of the waist and leg openings.
 
-Het is je gelukt!
+You did it!
