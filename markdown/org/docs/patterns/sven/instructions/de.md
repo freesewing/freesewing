@@ -1,3 +1,7 @@
+- - -
+title: "Sven sweatshirt: Sewing Instructions"
+- - -
+
 ### Schritt 1: Schulternähte schließen
 
 - Legen Sie den Rücken und die Vorderseite auf einander mit den guten Seiten toghether.
