@@ -1,6 +1,9 @@
+- - -
+title: "Strap length"
+- - -
 
-Steuert die Länge der Riemen an deiner Schürze.
-
+Controls the length of the straps on your apron.
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](albert_chestdepth_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](albert_chestdepth_sample.svg "Effect of this option on the pattern")
