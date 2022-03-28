@@ -1,7 +1,11 @@
-![Rugwijdte factor](./acrossbackfactor.svg)
+- - -
+title: "Across back factor"
+- - -
 
-Geeft controle over de breedte van je rug als een factor van je schouder tot schouder maat
+![Across back factor](./acrossbackfactor.svg)
 
+Controls your across back width as a factor of your shoulder to shoulder measurement
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlton_acrossbackfactor_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_acrossbackfactor_sample.svg "Effect of this option on the pattern")
