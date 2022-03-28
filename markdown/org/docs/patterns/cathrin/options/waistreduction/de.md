@@ -1,7 +1,11 @@
-![Die Taillenreduzierung auf Kathrin](./waistreduction.svg)
+- - -
+title: "Waist reduction"
+- - -
 
-Der Betrag, den Sie möchten, dass das Korsett kleiner ist als Ihre natürliche Taille. Mit anderen Worten: Wie viel soll es dich drängen?
+![The waist reduction option on Cathrin](./waistreduction.svg)
 
+The amount you want the corset to be smaller than your natural waist. In other words, how much do you want it to squeeze you.
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](cathrin_waistreduction_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_waistreduction_sample.svg "Effect of this option on the pattern")
