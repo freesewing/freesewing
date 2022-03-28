@@ -1,4 +1,8 @@
-Om Charlie te maken heb je het volgende nodig:
+- - -
+title: "Charlie chinos: What You Need"
+- - -
+
+To make Charlie, you will need the following:
 
 - Basis naaimateriaal
 - About 1.5 meters (1.7 yards) of a suitable fabric ([see Fabric options](/docs/patterns/charlie/fabric))
