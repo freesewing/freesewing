@@ -1,6 +1,9 @@
+- - -
+title: "Vertical ease"
+- - -
 
-La cantidad de facilidad para distribuir a lo largo de la ropa.
-
+The amount of ease to distribute along the length of the garment.
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](breanna_verticalease_sample.svg "Efecto de esta opción en el patrón")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_verticalease_sample.svg "Effect of this option on the pattern")
