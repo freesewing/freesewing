@@ -126,14 +126,15 @@ If you want to report a problem, please [create an issue](https://github.com/fre
 
 ## Sponsors 🥰
 
-FreeSewing is hosted by these awesome companies
+FreeSewing is hosted by these awesome companies:
+
 
 | Logo | Name | Description |
-| ==== | ==== | =========== |
-| <img src="https://freesewing.dev/brands/algolia.svg" style="max-width: 200px;" /> | Search powered by [Algolia](https://www.algolia.com/) |
-| <img src="https://freesewing.dev/brands/bugsnag.svg" style="max-width: 200px;" /> | Error Handling by [BugSnag](https://www.bugsnag.com/) |
-| <img src="https://freesewing.dev/brands/crowdin.svg" style="max-width: 200px;" /> | Translation powered by [Crowdin](https://www.crowdin.com/) |
-| <img src="https://raw.githubusercontent.com/abumalick/powered-by-vercel/master/powered-by-vercel.svg" style="max-width: 200px;" /> | Hosting & Builds powered by [Vercel](https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss) |
+|:----:| ---- | ----------- |
+| <img src="https://freesewing.dev/brands/algolia.svg" style="height: 32px;" /> | [Algolia](https://www.algolia.com/) | **Search** powered by [**Algolia**](https://www.algolia.com/) |
+| <img src="https://freesewing.dev/brands/bugsnag.svg" style="height: 44px;" /> | [BugSnag](https://www.bugsnag.com/) | **Error Handling** by [**BugSnag**](https://www.bugsnag.com/) |
+| <img src="https://crowdin.com/images/crowdin-logo.svg" style="height: 44px;" /> | [Crowdin](https://www.crowdin.com/) | **Translation** powered by [**Crowdin**](https://www.crowdin.com/) |
+| <img src="https://raw.githubusercontent.com/abumalick/powered-by-vercel/master/powered-by-vercel.svg" style="max-width: 200px;" /> | [Vercel](https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss) | **Hosting** & **Builds** powered by [**Vercel**](https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss) |
 
 
 ## Contributors ✨
