@@ -74,7 +74,7 @@ export async function getStaticProps({ params, locale }) {
         ...mdxMeta[params.mdxslug.join('/')],
       },
       params,
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations('en')),
     }
   }
 }

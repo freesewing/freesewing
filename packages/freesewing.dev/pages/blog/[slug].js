@@ -110,7 +110,7 @@ export const getStaticProps = async (props) => {
       post,
       author,
       slug: `blog/${props.params.slug}`,
-      ...(await serverSideTranslations(props.locale)),
+      ...(await serverSideTranslations('en')),
     }
   }
 }

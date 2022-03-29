@@ -81,7 +81,7 @@ export default BlogIndexPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations('en')),
     }
   }
 }
