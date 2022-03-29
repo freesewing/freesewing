@@ -1,3 +1,7 @@
+- - -
+title: "Collar flare"
+- - -
+
 Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
 
 - Increase this option to increase the fall length.
@@ -5,4 +9,4 @@ Controls the flare of the collar by altering the fall length (between the neck a
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_collarflare_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_collarflare_sample.svg "Effect of this option on the pattern")

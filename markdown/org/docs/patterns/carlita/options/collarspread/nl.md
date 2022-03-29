@@ -1,3 +1,7 @@
+- - -
+title: "Collar spread"
+- - -
+
 Controls the distance between the points of the collar.
 
 - Increase this option to spread the collar out and towards the shoulder.
@@ -5,4 +9,4 @@ Controls the distance between the points of the collar.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlita_collarspread_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_collarspread_sample.svg "Effect of this option on the pattern")

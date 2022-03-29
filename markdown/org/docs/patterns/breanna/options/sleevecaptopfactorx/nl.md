@@ -1,6 +1,10 @@
-![De horizontale locatie van de bovenkant van de mouwkop](./sleevecaptopfactorx.svg)
+- - -
+title: "Sleevecap top X"
+- - -
 
-Deze optie bepaalt de horizontale plaatsing van de bovenkant van de mouwkop.
+![The horizontal location of the sleevecap top](./sleevecaptopfactorx.svg)
+
+This option controls the horizontal placement of the sleevecap top.
 
 <Tip>
 
@@ -10,4 +14,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](breanna_sleevecaptopfactorx_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecaptopfactorx_sample.svg "Effect of this option on the pattern")

@@ -7,7 +7,7 @@ patternType: Tipo de patrón
 patternCreated: Tu esqueleto de patrón ha sido creado en
 runTheseCommands: Para empezar, ejecuta este comando
 startRollup: En una terminal, inicia el paquete de rollup en modo reloj
-startWebpack: 'Entrará en la carpeta "ejemplo" e iniciará el entorno de desarrollo.'
+startWebpack: "Entrará en la carpeta \"ejemplo\" e iniciará el entorno de desarrollo."
 devDocsAvailableAt: Documentación para desarrolladores está disponible en
 talkToUs: Para preguntas, comentarios o sugerencias, únete a nuestro servidor de Discord
 draftYourPattern: Traza tu patrón

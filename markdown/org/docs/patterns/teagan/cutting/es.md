@@ -1,3 +1,7 @@
+- - -
+title: "Teagan T-shirt: Cutting Instructions"
+- - -
+
 - Cortar 1 atrás en el pliegue.
 - Cortar 1 frente en el pliegue.
 - Corta 2 mangas _con buenos lados juntos_
