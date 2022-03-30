@@ -747,12 +747,26 @@ Path.prototype.split = function (point) {
   if (point instanceof Point !== true)
     this.raise.error('Called `Path.split(point)` but `point` is not a `Point` object')
   let divided = this.divide()
-  let firstHalf = false
-  let secondHalf = false
+  let firstHalf = []
+  let secondHalf = []
   for (let pi = 0; pi < divided.length; pi++) {
     let path = divided[pi]
     if (path.ops[1].type === 'line') {
-      if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
+      if (path.ops[0].to.sitsRoughlyOn(point)) {
+        secondHalf.push(new Path(this.debug)
+          .withRaise(this.raise)
+          .move(path.ops[0].to)
+          .line(path.ops[1].to)
+        )
+      }
+      else if (path.ops[1].to.sitsRoughlyOn(point)) {
+        firstHalf.push(new Path(this.debug)
+          .withRaise(this.raise)
+          .move(path.ops[0].to)
+          .line(path.ops[1].to)
+        )
+      }
+      else if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
         firstHalf = divided.slice(0, pi)
         firstHalf.push(new Path(this.debug).withRaise(this.raise).move(path.ops[0].to).line(point))
         pi++
@@ -762,43 +776,59 @@ Path.prototype.split = function (point) {
         )
       }
     } else if (path.ops[1].type === 'curve') {
-      let t = pointOnCurve(path.ops[0].to, path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to, point)
-      if (t !== false) {
-        let curve = new Bezier(
-          { x: path.ops[0].to.x, y: path.ops[0].to.y },
-          { x: path.ops[1].cp1.x, y: path.ops[1].cp1.y },
-          { x: path.ops[1].cp2.x, y: path.ops[1].cp2.y },
-          { x: path.ops[1].to.x, y: path.ops[1].to.y }
+      if (path.ops[0].to.sitsRoughlyOn(point)) {
+        secondHalf.push(new Path(this.debug)
+          .withRaise(this.raise)
+          .move(path.ops[0].to)
+          .curve(path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to)
         )
-        let split = curve.split(t)
-        firstHalf = divided.slice(0, pi)
-        firstHalf.push(
-          new Path(this.debug)
-            .withRaise(this.raise)
-            .move(new Point(split.left.points[0].x, split.left.points[0].y))
-            .curve(
-              new Point(split.left.points[1].x, split.left.points[1].y),
-              new Point(split.left.points[2].x, split.left.points[2].y),
-              new Point(split.left.points[3].x, split.left.points[3].y)
-            )
+      }
+      else if (path.ops[1].to.sitsRoughlyOn(point)) {
+        firstHalf.push(new Path(this.debug)
+          .withRaise(this.raise)
+          .move(path.ops[0].to)
+          .curve(path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to)
         )
-        pi++
-        secondHalf = divided.slice(pi)
-        secondHalf.unshift(
-          new Path(this.debug)
-            .withRaise(this.raise)
-            .move(new Point(split.right.points[0].x, split.right.points[0].y))
-            .curve(
-              new Point(split.right.points[1].x, split.right.points[1].y),
-              new Point(split.right.points[2].x, split.right.points[2].y),
-              new Point(split.right.points[3].x, split.right.points[3].y)
-            )
-        )
+      }
+      else {
+        let t = pointOnCurve(path.ops[0].to, path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to, point)
+        if (t !== false) {
+          let curve = new Bezier(
+            { x: path.ops[0].to.x, y: path.ops[0].to.y },
+            { x: path.ops[1].cp1.x, y: path.ops[1].cp1.y },
+            { x: path.ops[1].cp2.x, y: path.ops[1].cp2.y },
+            { x: path.ops[1].to.x, y: path.ops[1].to.y }
+          )
+          let split = curve.split(t)
+          firstHalf = divided.slice(0, pi)
+          firstHalf.push(
+            new Path(this.debug)
+              .withRaise(this.raise)
+              .move(new Point(split.left.points[0].x, split.left.points[0].y))
+              .curve(
+                new Point(split.left.points[1].x, split.left.points[1].y),
+                new Point(split.left.points[2].x, split.left.points[2].y),
+                new Point(split.left.points[3].x, split.left.points[3].y)
+              )
+          )
+          pi++
+          secondHalf = divided.slice(pi)
+          secondHalf.unshift(
+            new Path(this.debug)
+              .withRaise(this.raise)
+              .move(new Point(split.right.points[0].x, split.right.points[0].y))
+              .curve(
+                new Point(split.right.points[1].x, split.right.points[1].y),
+                new Point(split.right.points[2].x, split.right.points[2].y),
+                new Point(split.right.points[3].x, split.right.points[3].y)
+              )
+          )
+        }
       }
     }
   }
-  if (firstHalf) firstHalf = joinPaths(firstHalf, false, this.raise)
-  if (secondHalf) secondHalf = joinPaths(secondHalf, false, this.raise)
+  if (firstHalf.length > 0) firstHalf = joinPaths(firstHalf, false, this.raise)
+  if (secondHalf.length > 0) secondHalf = joinPaths(secondHalf, false, this.raise)
 
   return [firstHalf, secondHalf]
 }
