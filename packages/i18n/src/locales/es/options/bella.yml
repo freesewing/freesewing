@@ -53,3 +53,6 @@ frontShoulderWidth:
 highBustWidth:
   title: Ancho de bust alto
   description: Le permite ajustar el ancho del polvo alto en la parte frontal
+shoulderToShoulderEase:
+  title: Shoulder to Shoulder ease
+  description: Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
