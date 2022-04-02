@@ -53,3 +53,6 @@ frontShoulderWidth:
 highBustWidth:
   title: Oberbrustweite
   description: Erlaubt es dir die Oberbrustweite vorne zu optimieren
+shoulderToShoulderEase:
+  title: Shoulder to Shoulder ease
+  description: Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
