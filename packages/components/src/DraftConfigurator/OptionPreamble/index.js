@@ -18,7 +18,7 @@ const OptionPreamble = ({
   expanded,
   toggleExpanded,
   reset,
-  designReset
+  patternReset
 }) => {
   const styles = {
     container: {
@@ -79,7 +79,7 @@ const OptionPreamble = ({
                 aria-label={resetDesignLabel}
                 color="primary"
                 disabled={value === designDflt ? true : false}
-                onClick={designReset}
+                onClick={patternReset}
                 className="mini-icon-btn pattern"
               >
                 <ResetIcon />
