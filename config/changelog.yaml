@@ -1,3 +1,14 @@
+Unreleased:
+
+  Fixed:
+    brian:
+      - Adde both front and back armhole pitch points
+        Closes [#2057](https://github.com/freesewing/freesewing/issues/2057)
+
+    components:
+      - Fix restore of pattern defaults in draft configurator
+        Closes [#1932](https://github.com/freesewing/freesewing/issues/1932)
+
 2.20.7:
   date: 2022-02-20
 
