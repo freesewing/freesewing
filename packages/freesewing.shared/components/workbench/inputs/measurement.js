@@ -24,10 +24,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const update = evt => {
     setVal(evt.target.value)
     const ok = isValid(evt.target.value)
-    if (ok) {
-      setValid(true)
-      updateMeasurements(evt.target.value*10, m)
-    } else setValid(false)
+    if (ok) updateMeasurements(evt.target.value*10, m)
   }
 
   const [val, setVal] = useState(gist?.measurements?.[m] || '')
