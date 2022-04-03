@@ -58,6 +58,11 @@ export default (part) => {
       store.get('shoulderEase') / 2,
     points.shoulder.y + points.shoulder.dy(points.armhole) / 2
   )
+  // Set both an front and back armhole pitch point
+  // but keep 'armholePitch' for backwards compatibility
+  points.backArmholePitch = points.armholePitch.clone()
+  points.frontArmholePitch = points.armholePitch.clone() // will be overwritten below
+  // Armhole hollow
   points._tmp1 = new Point(points.armholePitch.x, points.armhole.y)
   points._tmp2 = points._tmp1.shift(45, 10)
   points._tmp3 = utils.beamsIntersect(
@@ -80,10 +85,14 @@ export default (part) => {
     -90,
     points.armholePitch.dy(points.armholeHollow) / 2
   )
+  points.backArmholePitchCp1 = points.armholePitchCp1.clone()
+  points.frontArmholePitchCp1 = points.armholePitchCp1.clone() // will be overwritten below
   points.armholePitchCp2 = points.armholePitch.shift(
     90,
     points.shoulder.dy(points.armholePitch) / 2
   )
+  points.backArmholePitchCp2 = points.armholePitchCp2.clone()
+  points.frontArmholePitchCp2 = points.armholePitchCp2.clone() // will be overwritten below
   points.shoulderCp1 = points.shoulder
     .shiftTowards(points.neck, points.shoulder.dy(points.armholePitch) / 5)
     .rotate(90, points.shoulder)
