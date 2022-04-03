@@ -21,7 +21,7 @@ export default {
     style: ['s3Collar', 's3Armhole'],
     advanced: [
       'acrossBackFactor',
-      'armholeDepthFactor',
+      'armholeHeight',
       'backNeckCutout',
       'frontArmholeDeeper',
       'shoulderSlopeReduction',
@@ -29,6 +29,7 @@ export default {
       {
         sleevecap: [
           'sleevecapEase',
+          'sleevecapHeight',
           'sleevecapTopFactorX',
           'sleevecapTopFactorY',
           'sleevecapBackFactorX',
@@ -60,6 +61,7 @@ export default {
     'shoulderSlope',
     'shoulderToShoulder',
     'shoulderToWrist',
+    'waistToArmhole',
     'wrist',
   ],
   dependencies: {
@@ -82,7 +84,7 @@ export default {
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100 },
-    armholeDepthFactor: { pct: 60, min: 50, max: 70 },
+    armholeHeight: { pct: 90, min: 70, max: 110 },
     backNeckCutout: { pct: 5, min: 2, max: 8 },
     bicepsEase: { pct: 15, min: 0, max: 50 },
     chestEase: { pct: 8, min: -4, max: 20 },
@@ -96,6 +98,7 @@ export default {
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },
     sleevecapEase: { pct: 0, min: 0, max: 10 },
+    sleevecapHeight: { pct: 80, min: 60, max: 100 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
     sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
     sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
@@ -116,5 +119,9 @@ export default {
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+
+    // Deprecated, but kept for backwards compatibility
+    armholeDepthFactor: { pct: 60, min: 50, max: 70 },
+
   },
 }

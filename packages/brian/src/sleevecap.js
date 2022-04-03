@@ -19,11 +19,7 @@ function draftSleevecap(part, run) {
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
     90,
-    options.sleevecapTopFactorY *
-      (measurements.biceps *
-        (1 + options.bicepsEase) *
-        options.armholeDepthFactor *
-        store.get('sleeveFactor'))
+    store.get('armholeHeight') * options.sleevecapHeight
   )
 
   // Left and right biceps points, limit impact of sleeveFactor to 25%

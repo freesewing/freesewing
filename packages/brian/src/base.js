@@ -32,11 +32,11 @@ export default (part) => {
     new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), -100),
     new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), 100)
   )
-  // Determine armhole depth and cbShoulder independent of shoulder slope reduction
   points.cbShoulder = new Point(0, points.shoulder.y)
+  // Armhole depth is controlled by measurments.waistToArmhole and options.armholeHeight
   points.cbArmhole = new Point(
     0,
-    points.shoulder.y + measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
+    points.cbWaist.y - (measurements.waistToArmhole * options.armholeHeight)
   )
 
   // Now take shoulder slope reduction into account
@@ -96,6 +96,8 @@ export default (part) => {
   points.shoulderCp1 = points.shoulder
     .shiftTowards(points.neck, points.shoulder.dy(points.armholePitch) / 5)
     .rotate(90, points.shoulder)
+
+  store.set('armholeHeight', points.shoulder.dy(points.armhole))
 
   // Neck opening (back)
   points._tmp4 = points.neck.shiftTowards(points.shoulder, 10).rotate(-90, points.neck)

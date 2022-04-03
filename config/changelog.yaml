@@ -1,5 +1,20 @@
 Unreleased:
 
+  Added:
+    utils:
+      - The `waistToArmhole` measurement is new in the neckstimate method
+    models:
+      - The `waistToArmhole` measurement is new
+
+  Changed:
+    brian:
+      - Brian now uses the `waistToArmhole` measurement to calculate the armhole depth
+      - Brian has a new `armholeHeight` option that controls the height of the armhole
+
+  Deprecated:
+    brian:
+      - The `armholeDepthFactor` option is no longer used, but keps in config for backwards compatibility
+
   Fixed:
     brian:
       - Adde both front and back armhole pitch points
