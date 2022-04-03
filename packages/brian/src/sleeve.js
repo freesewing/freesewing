@@ -44,7 +44,13 @@ export default (part) => {
     points.logo = points.centerBiceps.shiftFractionTowards(points.centerWrist, 0.3)
     snippets.logo = new Snippet('logo', points.logo)
     macro('title', { at: points.centerBiceps, nr: 3, title: 'sleeve' })
-    macro('grainline', { from: points.centerWrist, to: points.centerBiceps })
+    macro('grainline', {
+      from: points.centerWrist,
+      to: new Point(
+        points.centerBiceps.x,
+        points.capQ2.y
+      )
+    })
     points.scaleboxAnchor = points.scalebox = points.centerBiceps.shiftFractionTowards(
       points.centerWrist,
       0.5
