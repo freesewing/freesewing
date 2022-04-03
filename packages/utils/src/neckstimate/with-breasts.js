@@ -39,6 +39,7 @@ export default complete({
   upperLeg: 570,
   waist: 750,
   waistBack: 380,
+  waistToArmhole: 17,
   waistToFloor: 1050,
   waistToHips: 125,
   waistToKnee: 600,
