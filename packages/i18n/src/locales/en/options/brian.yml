@@ -54,6 +54,10 @@ shoulderSlopeReduction:
   title: Shoulder slope reduction
   description: The amount by which the shoulder slope is reduced to allow for shoulder padding.
 
+sleeveBulge:
+  title: Sleeve bulge
+  description: Constrols how much the sleeve bulges out along the biceps.
+
 sleeveLengthBonus:
   title: Sleeve length bonus
   description: The amount to lengthen the sleeve. A negative value will shorten it.

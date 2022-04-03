@@ -1,6 +1,8 @@
 Unreleased:
 
   Added:
+    brian:
+      - Added the sleeveBulge option
     utils:
       - The `waistToArmhole` measurement is new in the neckstimate method
     models:

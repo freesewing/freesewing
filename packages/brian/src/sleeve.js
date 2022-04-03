@@ -25,13 +25,24 @@ export default (part) => {
   points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
   points.sleeveTip = paths.sleevecap.shiftFractionAlong(0.5)
 
+  // Allow sleeve to bulge out
+  points.bicepsLeftWrist = new Point(points.bicepsLeft.x, points.wristLeft.y)
+  points.bicepsLeftCp = points.bicepsLeft.shiftFractionTowards(points.bicepsLeftWrist, options.sleeveBulge)
+  points.bicepsRightWrist = new Point(points.bicepsRight.x, points.wristRight.y)
+  points.bicepsRightCp = points.bicepsRight.shiftFractionTowards(points.bicepsRightWrist, options.sleeveBulge)
+
   // Paths
   paths.sleevecap.render = false
-  paths.seam = new Path()
-    .move(points.bicepsLeft)
-    .move(points.wristLeft)
-    .move(points.wristRight)
+  paths.seam = new Path().move(points.bicepsLeft)
+  if (options.sleeveBulge > 0) paths.seam = paths.seam
+    .curve_(points.bicepsLeftCp, points.wristLeft)
+    .line(points.wristRight)
+    ._curve(points.bicepsRightCp, points.bicepsRight)
+  else paths.seam = paths.seam
+    .line(points.wristLeft)
+    .line(points.wristRight)
     .line(points.bicepsRight)
+  paths.seam = paths.seam
     .join(paths.sleevecap)
     .close()
     .attr('class', 'fabric')

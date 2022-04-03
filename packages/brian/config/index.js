@@ -25,6 +25,7 @@ export default {
       'backNeckCutout',
       'frontArmholeDeeper',
       'shoulderSlopeReduction',
+      'sleeveBulge',
       'sleeveWidthGuarantee',
       {
         sleevecap: [
@@ -97,6 +98,7 @@ export default {
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },
+    sleeveBulge: { pct: 0, min: 0, max: 75 },
     sleevecapEase: { pct: 0, min: 0, max: 10 },
     sleevecapHeight: { pct: 80, min: 60, max: 100 },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
