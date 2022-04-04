@@ -33,6 +33,7 @@ const measurements = {
   "upperLeg": "Upper leg circumference",
   "waist": "Waist circumference",
   "waistBack": "Waist back",
+  "waistToArmhole": "Waist to armhole",
   "waistToFloor": "Waist to floor",
   "waistToHips": "Waist to hips",
   "waistToKnee": "Waist to knee",

@@ -7,6 +7,8 @@ const workbench = {
   "forPrinting": "For printing",
   "forCutting": "For cutting",
   "layoutThing": "Layout {thing}",
+  "pageSize": "Page size",
+  "startBySelectingAThing": "Start by selecting a {thing}",
   "testThing": "Test {thing}"
 }
 
