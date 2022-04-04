@@ -33,6 +33,7 @@ const measurements = {
   "upperLeg": "Tour de cuisse",
   "waist": "Tour de taille",
   "waistBack": "Taille arrière",
+  "waistToArmhole": "Waist to armhole",
   "waistToFloor": "Hauteur de taille",
   "waistToHips": "Hauteur taille hanches",
   "waistToKnee": "Hauteur taille genou",

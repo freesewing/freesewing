@@ -33,6 +33,7 @@ const measurements = {
   "upperLeg": "Bovenbeenomtrek",
   "waist": "Omtrek taille",
   "waistBack": "Taille achter",
+  "waistToArmhole": "Waist to armhole",
   "waistToFloor": "Taille tot vloer",
   "waistToHips": "Taille tot heupen",
   "waistToKnee": "Taille tot knie",

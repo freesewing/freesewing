@@ -21,9 +21,9 @@ const optiongroups = {
   "frontPockets": "Voorzakken",
   "waistband": "Tailleband",
   "fly": "Vliegen",
-  "bellaDarts": "Bella darts",
-  "bellaArmhole": "Bella armhole",
-  "bellaAdvanced": "Bella advanced",
+  "bellaDarts": "Bella figuurnaden",
+  "bellaArmhole": "Bella armsgat",
+  "bellaAdvanced": "Bella geavanceerd",
   "clavi": "Clavi"
 }
 
