@@ -1,8 +1,8 @@
 ---
-designOptions: Design options
-forPrinting: For printing
-forCutting: For cutting
+designOptions: Designoptionen
+forPrinting: Zum Drucken
+forCutting: Zum Schneiden
 layoutThing: 'Layout {thing}'
-pageSize: Page size
-startBySelectingAThing: 'Start by selecting a {thing}'
-testThing: 'Test {thing}'
+pageSize: Seitengröße
+startBySelectingAThing: 'Beginnen Sie mit der Auswahl eines {thing}'
+testThing: '{thing} testen'
