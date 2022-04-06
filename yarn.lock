@@ -1691,9 +1691,9 @@
   integrity sha512-uC8u1ps5IWn+SIuLiyw+o4RFz1UzofqLebBQRqrvVa1y3x21LaV6se6x0kezRyIN8QCtBfKfTvdXN2g4A2bzJg==
 
 "@fontsource/roboto-mono@latest":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/roboto-mono/-/roboto-mono-4.5.3.tgz#04b9969707b10a53511780b0f686d9d0c233a082"
-  integrity sha512-ELuIIUBo1kq2hFmOXjWv9o2VbM22Pct2F0T+D8f5T0MxDKIqkh0m1JMs9bbTzMjc+wVvyJ6LU5EiNkO26kLlKA==
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto-mono/-/roboto-mono-4.5.5.tgz#cf80fc625d4fabe82ecb3661be19026e46c674cf"
+  integrity sha512-krIslwmFMjDHtbSVKZLC6+PM6dOvw26OTm7rE7CrniJ4q5Lbfffx67RAlDI3ee0LsG6gIJd/JXBeUm+RgUsPqg==
 
 "@fontsource/ubuntu@latest":
   version "4.5.6"
