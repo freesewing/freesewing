@@ -13,16 +13,16 @@ topDepth:
   description: Kontrolliert, wie weit sich der Bikini-Cup nach oben erstreckt
 bottomCupDepth:
   title: Untere Tiefe
-  description: Steuert, wie weit sich der Bikini-Cup nach unten erstreckt
+  description: Kontrolliert, wie weit sich der Bikini-Cup nach unten erstreckt
 sideDepth:
-  title: Side depth
-  description: Steuert, wie weit sich der Bikini-Cup zur Seite erstreckt
+  title: Seitliche Tiefe
+  description: Kontrolliert, wie weit sich der Bikini-Cup zur Seite erstreckt
 sideCurve:
   title: Seitliche Kurve
-  description: Steuert die Krümmung der Seite des Bikini-Cups
+  description: Kontrolliert die Krümmung der Seite des Bikini-Cups
 frontCurve:
   title: Vordere Kurve
-  description: Steuert die Krümmung der Vorderseite des Bikini-Cups
+  description: Kontrolliert die Krümmung der Vorderseite des Bikini-Cups
 bellaGuide:
   title: Bella anzeigen
   description: Zeigt die Umrisse des Bella-Grundschnittes an, auf dem Bee basiert
@@ -31,10 +31,10 @@ ties:
   description: Sollen Bänder hinzugefügt werden, ja oder nein
 bandTieWidth:
   title: Breite des Brustbandes
-  description: Steuert die Breite des Bandes um deinen Brustkorb
+  description: Kontrolliert die Breite des Bandes um deinen Brustkorb
 bandTieLength:
   title: Länge des Brustbandes
-  description: Steuert die Länge des Bandes um deinen Brustkorb
+  description: Kontrolliert die Länge des Bandes um deinen Brustkorb
 bandTieEnds:
   title: Enden des Brustbandes
   description: Möchtest du gerade oder spitze Enden des Brustbandes?
@@ -58,7 +58,7 @@ crossBackTies:
   description: Möchtest du die Version von Bee mit gekreuzten Rückenträgern?
 bandLength:
   title: Länge der gekreuzten Rückenträger
-  description: Steuert die Länge Brustbandes für die Variante von Bee mit gekreuzten Rückenträgern
+  description: Kontrolliert die Länge Brustbandes für die Variante von Bee mit gekreuzten Rückenträgern
 backDartHeight:
   title: Höhe der Rückenabnäher (Bella)
   description: Kontrolliert die Höhe der Rückenabnäher des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
