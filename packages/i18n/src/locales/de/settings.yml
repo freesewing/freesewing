@@ -36,6 +36,6 @@ renderer:
   title: Render engine
   description: Legt fest, wie das Muster auf dem Bildschirm gerendert (gezeichnet) wird
 xray:
-  title: X-ray
+  title: Röntgen
   description: Mit FreeSewings Röntgenmodus unter die Haube schauen
 
