@@ -7,28 +7,28 @@ waistEase:
   description: Kontrolliert die Taillenzugabe des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 bustSpanEase:
   title: Büstenumfang leicht
-  description: Controls the bust span ease in the underlying Bella block Bee is based on
+  description: Kontrolliert die Zugabe des Abstandes der Brustpunkte des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 topDepth:
   title: Top Depth
-  description: Controls how far the bikini cup extends upwards
+  description: Steuert, wie weit sich der Bikini-Cup nach oben erstreckt
 bottomCupDepth:
   title: Bottom depth
-  description: Controls how far the bikini cup extends downwards
+  description: Steuert, wie weit sich der Bikini-Cup nach unten erstreckt
 sideDepth:
   title: Side depth
-  description: Controls how far the bikini cup extends towards the side
+  description: Steuert, wie weit sich der Bikini-Cup zur Seite erstreckt
 sideCurve:
-  title: Side curve
-  description: Controls the curvature of the side of the bikini cup
+  title: Seitliche Kurve
+  description: Steuert die Krümmung der Seite des Bikini-Cups
 frontCurve:
-  title: Front curve
-  description: Controls the curvature of the front of the bikini cup
+  title: Vordere Kurve
+  description: Steuert die Krümmung der Vorderseite des Bikini-Cups
 bellaGuide:
-  title: Show Bella
-  description: Shows the outline of the Bella block Bee is based on
+  title: Bella anzeigen
+  description: Zeigt die Umrisse des Bella-Grundschnittes an, auf dem Bee basiert
 ties:
-  title: Ties
-  description: Whether to includes ties, yes or no
+  title: Bänder
+  description: Sollen Bänder hinzugefügt werden, ja oder nein
 bandTieWidth:
   title: Band (chest) tie width
   description: Controls the width of the ties around your chest
