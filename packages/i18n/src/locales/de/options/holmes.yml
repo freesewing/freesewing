@@ -21,8 +21,8 @@ earWidth:
   title: Breite der Ohrklappen
   description: Steuert die Breite der Ohrklappen
 buttonhole:
-  title: Buttonhole guide
-  description: Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+  title: Führung für das Knopfloch
+  description: Fügt der Ohrklappe einen Knopfloch hinzu, um die Variante mit Knopflochs zu entwerfen
 visorLength:
-  title: Visor length
-  description: Controls the length of the visor
+  title: Länge des Mützenschirmes
+  description: Steuert die Länge des Mützenschirms
