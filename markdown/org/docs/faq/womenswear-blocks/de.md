@@ -2,11 +2,11 @@
 title: Warum veröffentlicht ihr überhaupt Grundschnitte für Damenkleidung? Sie sind [hier starke Meinung einfügen].
 ---
 
-Diese Frage stellt sich von Zeit zu Zeit. The wording varies, but the sentiment can be summarized as _why even publish this garbage, it doesn't work at all_.
+Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber die allgemeine Stimmung kann zusammengefasst werden als _"warum diesen Müll überhaupt veröffentlichen, es funktioniert doch absolut nicht"_.
 
 Lass mich damit anfangen, dass du da nicht falsch liegst. Sowohl [Breanna](/designs/breanna/) als auch [Bella](/designs/bella/) weisen gravierende Mängel auf.
 
-I myself ([joost](/makers/joostdecock/)) am painfully aware of them, and I have toyed with the idea of retracting these patterns altogether.
+Ich selbst ([Joost](/makers/joostdecock/)) bin mir dessen schmerzlichst bewusst, und habe häufiger in Erwägung gezogen, diese Schnittmuster vollständig zurückzuziehen.
 
 Aber es gibt eine Teilmenge von Leuten, die mit ihnen gute Ergebnisse erzielen. Ich habe mehrere gut aussehende Kreationen gesehen, die auf Bella basieren, und Breanna scheint aus irgendeinem Grund bei Leuten beliebt zu sein, die Puppenkleidung nähen.
 
