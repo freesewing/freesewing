@@ -9,11 +9,11 @@ bustSpanEase:
   title: Zugabe seitlicher Brustbereich
   description: "Steuert die Größe der (horizontalen) Zugabe, zu deinem seitlichen Brustbereich, \nwenn Brustpunkt berechnet wird."
 shoulderToShoulderEase:
-  title: Shoulder to Shoulder ease
-  description: Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
+  title: Zugabe des Schulterabstandes
+  description: Kontrolliert die Menge an Zugabe zwischen deinen Schultern. Liegt inital bei -0,5%, da Bella ein Grundschnitt erfüllt, welcher in der Branche verwendet wird.
 fullChestEaseReduction:
-  title: Full chest ease reduction
-  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+  title: Verringerung der Brustumfangszugabe
+  description: Ermöglicht es dir den Spielraum an der Brust zu verringern, um dort einen engeren Sitz zu ermöglichen
 backDartHeight:
   title: Höhe Rückenabnäher
   description: Steuert die Höhe des Rückenabnähers
