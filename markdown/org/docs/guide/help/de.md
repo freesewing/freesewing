@@ -3,6 +3,6 @@ title: Hilfe erhalten
 order: 999
 ---
 
-If you get stuck or have questions, you can [join us on Discord](https://discord.freesewing.org/) where there's always somebody around to offer help.
+Falls du nicht weiterkommst oder Fragen hast, kannst du uns gerne [auf Discord Gesellschaft leisten](https://discord.freesewing.org/), dort ist immer jemand zum Helfen da.
 
-Altenatively, you can check out some of the other places [where you can find us](/community/where/).
+Alternativ kannst du dir einige der anderen Orte ansehen, [an denen wir zu finden sind](/community/where/).
