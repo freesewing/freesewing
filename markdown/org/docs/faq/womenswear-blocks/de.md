@@ -16,7 +16,7 @@ Ich gebe nicht vor zu wissen, wie man Schnittmuster für Frauen entwirft. Aber i
 
 Ich habe lange darauf gewartet, dass sich jemand anderes bereit erklärt und diese Aufgabe auf sich nimmt. Leider warte ich immer noch vergebens. Da der schnellste Weg Antwort auf eine Frage im Internet zu finden ist, sie selber falsch zu beantworten, habe ich mich entschlossen diese Grundschnitte zu erstellen.
 
-Wenn du also denkst, das du das besser hinbekommen würdest, lade ich dich hiermit offiziell ein, zusammen einen Damenkleidungsgrundschnitt zu erstellen, von dem du denkst/weißt, dass es der beste ist, den es da draußen gibt.
+Wenn du also denkst, dass du das besser hinbekommen würdest, lade ich dich hiermit offiziell ein, zusammen einen Damenkleidungsgrundschnitt zu erstellen, von dem du denkst/weißt, dass es der beste ist, den es da draußen gibt.
 
 Ich biete dir sehr gerne meine Dienste an, um dein Design / deine Vision im Code umzusetzen, sodass die gesamte Nähcommunity davon profitieren kann.
 
