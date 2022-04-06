@@ -30,32 +30,32 @@ ties:
   title: Bänder
   description: Sollen Bänder hinzugefügt werden, ja oder nein
 bandTieWidth:
-  title: Band (chest) tie width
-  description: Controls the width of the ties around your chest
+  title: Breite des Brustbandes
+  description: Steuert die Breite des Bandes um deinen Brustkorb
 bandTieLength:
-  title: Band (chest) tie length
-  description: Controls the length of the ties around your chest
+  title: Länge des Brustbandes
+  description: Steuert die Länge des Bandes um deinen Brustkorb
 bandTieEnds:
-  title: Band (chest) tie ends
-  description: Whether you like straight or pointy ends on the ties around your chest
+  title: Enden des Brustbandes
+  description: Möchtest du gerade oder spitze Enden des Brustbandes?
 bandTieColours:
-  title: Band (chest) tie length colours
-  description: Whether you want single color ties around your chest, or dual-coloured ones
+  title: Farben des Brustbandes
+  description: Möchtest du ein- oder mehrfarbige Brustbänder?
 neckTieWidth:
-  title: Neck tie width
-  description: Controls the width of the ties around your chest
+  title: Breite des Nackenbandes
+  description: Steuert die Breite des Bandes im Nacken
 neckTieLength:
-  title: Neck tie length
-  description: Controls the length of the ties around your chest
+  title: Länge des Nackenbandes
+  description: Steuert die Länge des Bandes im Nacken
 neckTieEnds:
-  title: Neck tie ends
-  description: Whether you like straight or pointy ends on the ties around your chest
+  title: Enden des Nackenbandes
+  description: Möchtest du gerade oder spitze Enden des Nackenbandes?
 neckTieColours:
-  title: Neck tie colours
-  description: Whether you want single color ties around your chest, or dual-coloured ones
+  title: Farben des Nackenbandes
+  description: Möchtest du ein- oder mehrfarbige Nackenbänder?
 crossBackTies:
-  title: Cross back ties
-  description: Whether you'd like to use the cross back tie variation of Bee
+  title: Gekreuzte Rückenbänder
+  description: Möchtest du die Version von Bee mit gekreuzten Rückenträgern?
 bandLength:
   title: Band Length (Cross back ties)
   description: Controls the length of the band around your chest for the cross back ties variation of Bee
