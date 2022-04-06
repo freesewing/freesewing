@@ -1,10 +1,10 @@
 ---
 chestEase:
   title: Brustzugabe
-  description: Controls the chest ease in the underlying Bella block Bee is based on
+  description: Kontrolliert die Brustzugabe des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 waistEase:
   title: Taillenzugabe
-  description: Controls the waist ease in the underlying Bella block Bee is based on
+  description: Kontrolliert die Taillenzugabe des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 bustSpanEase:
   title: Büstenumfang leicht
   description: Controls the bust span ease in the underlying Bella block Bee is based on
