@@ -9,10 +9,10 @@ bustSpanEase:
   title: Büstenumfang leicht
   description: Kontrolliert die Zugabe des Abstandes der Brustpunkte des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 topDepth:
-  title: Top Depth
-  description: Steuert, wie weit sich der Bikini-Cup nach oben erstreckt
+  title: Obere Tiefe
+  description: Kontrolliert, wie weit sich der Bikini-Cup nach oben erstreckt
 bottomCupDepth:
-  title: Bottom depth
+  title: Untere Tiefe
   description: Steuert, wie weit sich der Bikini-Cup nach unten erstreckt
 sideDepth:
   title: Side depth
@@ -42,35 +42,35 @@ bandTieColours:
   title: Farben des Brustbandes
   description: Möchtest du ein- oder mehrfarbige Brustbänder?
 neckTieWidth:
-  title: Breite des Nackenbandes
-  description: Steuert die Breite des Bandes im Nacken
+  title: Breite des Nackenträgers
+  description: Steuert die Breite des Nackenträgers
 neckTieLength:
-  title: Länge des Nackenbandes
-  description: Steuert die Länge des Bandes im Nacken
+  title: Länge des Nackenträgers
+  description: Steuert die Länge des Nackenträgers
 neckTieEnds:
-  title: Enden des Nackenbandes
-  description: Möchtest du gerade oder spitze Enden des Nackenbandes?
+  title: Enden des Nackenträgers
+  description: Möchtest du gerade oder spitze Enden des Nackenträgers?
 neckTieColours:
-  title: Farben des Nackenbandes
-  description: Möchtest du ein- oder mehrfarbige Nackenbänder?
+  title: Farben des Nackenträgers
+  description: Möchtest du ein- oder mehrfarbige Nackenträger?
 crossBackTies:
-  title: Gekreuzte Rückenbänder
+  title: Gekreuzte Rückenträger
   description: Möchtest du die Version von Bee mit gekreuzten Rückenträgern?
 bandLength:
-  title: Band Length (Cross back ties)
-  description: Controls the length of the band around your chest for the cross back ties variation of Bee
+  title: Länge der gekreuzten Rückenträger
+  description: Steuert die Länge Brustbandes für die Variante von Bee mit gekreuzten Rückenträgern
 backDartHeight:
-  title: Back dart height (Bella)
-  description: Controls the back dart height in the underlying Bella block Bee is based on
+  title: Höhe der Rückenabnäher (Bella)
+  description: Kontrolliert die Höhe der Rückenabnäher des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 armholeDepth:
-  title: Armhole depth (Bella)
-  description: Controls the armhole depth in the underlying Bella block Bee is based on
+  title: Tiefen des Armloches (Bella)
+  description: Kontrolliert die Tiefe des Armloches des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 frontArmholePitchDepth:
   title: Front armhole pitch depth (Bella)
   description: Controls the front armhole pitch depth in the underlying Bella block Bee is based on
 frontShoulderWidth:
-  title: Front shoulder width (Bella)
-  description: Controls the front shoulder width in the underlying Bella block Bee is based on
+  title: Vordere Schulterbreite (Bella)
+  description: Kontrolliert die vordere Schulterbreite des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 highBustWidth:
-  title: High bust width (Bella)
-  description: Controls the high bust width in the underlying Bella block Bee is based on
+  title: Hohe Brustweite (Bella)
+  description: Kontrolliert die hohe Brustbreite des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
