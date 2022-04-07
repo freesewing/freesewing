@@ -8,9 +8,9 @@ title: Doppelpaspeltaschen
 
 ## Lerne Paspeln mit David Page Coffin
 
-The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
+In der Ausgabe des [Seamwork Magazine](https://www.seamwork.com/) von November 2015 gibt es einen Abschnitt betitelt [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt), in welchem Coffin dich durch die Konstruktion einer Paspeltasche führt.
 
-David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
+David hat verschiedene Bücher über Hosen- und Hemdenentwürfe geschrieben, gibt online Nähkurse und bietet Workshops in den Vereinigten Staaten und anderen Ländern an.
 
 David ist ein Freund der Website, und so viel besser darin, dies zu erklären, als ich es jemals könnte.
 
