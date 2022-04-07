@@ -12,11 +12,11 @@ Fast jede Bekleidungsfirma hat zwei Hauptkategorien für ihre Kleidung: Herrenbe
 
 Diese Eigenschaften werden im Allgemeinen als _die typischen Merkmale eines Frauenkörpers_ angesehen. Wir glauben jedoch, dass wir uns hiervon fernhalten sollten: kein Körper ist durchschnittlich und wir wollen eine Umgebung schaffen, in der alle Gender miteinbezogen werden.
 
-We do not want to exclude anyone and we think that _body shape ≠ gender_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
+Wir wollen keine Person ausschließen und wir sind der Überzeugung, dass _Körperform ≠ Gender_. Daher benutzen wir die Begriffe **mit Brüsten** und **ohne Brüste**, einfach um zu erfragen, ob eine Person Brustgewebe hat oder nicht.
 
-##### Schnittmuster betreffend
+##### Wie sich das auf das Schnittmuster auswirkt
 
-Any user can draft any pattern on our site, as long as they provide the required measurements. Das enthält für einige Schnitte Maße, die nur relevant sind, wenn eine Person Brüste hat.
+Jede/r Nutzer/in kann jedes Schnittmuster auf unserer Seite erstellen, sofern die benötigten Maße bereitgestellt werden. Einige Schnitte enthalten Maße, die nur relevant sind, wenn eine Person Brüste hat.
 
 ##### Binding betreffend
 
