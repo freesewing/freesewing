@@ -2,6 +2,6 @@
 title: Taille bis Knie
 ---
 
-Die **Taille zum Knien** ist die Messung aus der Taille nach unten in das Knie, gemessen an der Seite deines Körpers.
+Das **Taille bis Knie** Maß ist die Messung von derTaille nach unten bis zum Knie, gemessen an der Seite deines Körpers.
 
-Um deine **Taille zum Knien zu messen,**, die Höhe der Taille und des Knie zu bestimmen und den vertikalen Abstand zwischen ihnen zu messen. Achte darauf, an der Seite deines Körpers zu messen.
+Um den Abstand von der **Taille zum Knien zu messen,**, bestimme die Höhe von Taille und Knie und miss den vertikalen Abstand zwischen ihnen. Achte darauf, an der Seite deines Körpers zu messen.
