@@ -6,7 +6,7 @@ waistEase:
   title: Taillenzugabe
   description: Kontrolliert die Taillenzugabe des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 bustSpanEase:
-  title: Büstenumfang leicht
+  title: Zugabe im Abstand der Brustpunkte
   description: Kontrolliert die Zugabe des Abstandes der Brustpunkte des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 topDepth:
   title: Obere Tiefe
