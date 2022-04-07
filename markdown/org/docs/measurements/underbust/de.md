@@ -1,8 +1,8 @@
 ---
-title: Unterbrustweite
+title: Unterbrustumfang
 ---
 
-Die **Unterbrust** Messung ist der Umfang deines Brustkorbes, ohne deine Brüste zu berücksichtigen.
+Der **Unterbrustumfang** ist der Umfang deines Brustkorbes, ohne deine Brüste zu berücksichtigen.
 
 Um deinen **Unterbrustumfang** zu messen, wickele das Bandmaß unterhalb deiner Brüste um deinen Brustkorb, dort wo dein BH-Band sitzt.
 
