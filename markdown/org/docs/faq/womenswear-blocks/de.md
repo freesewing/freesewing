@@ -2,7 +2,7 @@
 title: Warum veröffentlicht ihr überhaupt Grundschnitte für Damenkleidung? Sie sind [hier starke Meinung einfügen].
 ---
 
-Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber die allgemeine Stimmung kann zusammengefasst werden als _"warum diesen Müll überhaupt veröffentlichen, es funktioniert doch absolut nicht"_.
+Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber die allgemeine Stimmung kann als _"warum diesen Müll überhaupt veröffentlichen, es funktioniert doch absolut nicht"_, zusammengefasst werden.
 
 Lass mich damit anfangen, dass du da nicht falsch liegst. Sowohl [Breanna](/designs/breanna/) als auch [Bella](/designs/bella/) weisen gravierende Mängel auf.
 
@@ -16,7 +16,7 @@ Ich gebe nicht vor zu wissen, wie man Schnittmuster für Frauen entwirft. Aber i
 
 Ich habe lange darauf gewartet, dass sich jemand anderes bereit erklärt und diese Aufgabe auf sich nimmt. Leider warte ich immer noch vergebens. Da der schnellste Weg Antwort auf eine Frage im Internet zu finden ist, sie selber falsch zu beantworten, habe ich mich entschlossen diese Grundschnitte zu erstellen.
 
-Wenn du also denkst, dass du das besser hinbekommen würdest, lade ich dich hiermit offiziell ein, zusammen einen Damenkleidungsgrundschnitt zu erstellen, von dem du denkst/weißt, dass es der beste ist, den es da draußen gibt.
+Wenn du also denkst, dass du das besser hinbekommen würdest, lade ich dich hiermit offiziell ein, zusammen einen Damenkleidungsgrundschnitt zu erstellen, von dem du denkst/weißt, dass es der Beste ist, den es da draußen gibt.
 
 Ich biete dir sehr gerne meine Dienste an, um dein Design / deine Vision im Code umzusetzen, sodass die gesamte Nähcommunity davon profitieren kann.
 
