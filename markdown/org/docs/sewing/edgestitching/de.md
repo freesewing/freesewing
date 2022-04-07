@@ -6,10 +6,10 @@ Edgestitching is a speficic type of _topstitching_. It is specific because of it
 
 ![Edgestitching on a FreeSewing Hugo Hoodie](edgestitching.jpg)
 
-Edgestitching can be used to reinforce seams, to keep material in place by sewing down seam allowance or lining, and for decorative effect.
+Das Absteppen von Nähten verstärkt die Naht, sorgt dafür, dass Nahtzugaben oder Futter nicht verrutscht und hat einen dekorativen Effekt.
 
 <Tip>
 
-For best results, use a sewing needle for optimized for topstitching
+Um die besten Ergebnisse zu erzielen, verwende eine Steppnadel.
 
 </Tip>
