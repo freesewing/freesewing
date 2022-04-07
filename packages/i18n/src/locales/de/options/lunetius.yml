@@ -9,8 +9,8 @@ length:
   title: Länge
   description: Wähle zwischen verschiedenen Längenarten
   options:
-    toKnee: Knielang
-    toBelowKnee: Wadenlang
-    toHips: Hüftlang
-    toUpperLeg: Oberschenkellang
-    toFloor: Bodenlang
+    toKnee: Knie
+    toBelowKnee: Unter dem Knie
+    toHips: Hüfte
+    toUpperLeg: Unter der Hüfte
+    toFloor: Boden
