@@ -66,8 +66,8 @@ armholeDepth:
   title: Tiefen des Armloches (Bella)
   description: Kontrolliert die Tiefe des Armloches des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 frontArmholePitchDepth:
-  title: Front armhole pitch depth (Bella)
-  description: Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+  title: Tiefe des vorderen Armlochdrehpunktes (Bella)
+  description: Kontrolliert die Tiefe des vorderen Armlochdrehpunktes des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 frontShoulderWidth:
   title: Vordere Schulterbreite (Bella)
   description: Kontrolliert die vordere Schulterbreite des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
