@@ -2,8 +2,8 @@
 title: Taille bis Boden
 ---
 
-Die **Taille zum Boden** ist die Messung von der Taille bis zum Boden.
+Das **Taille zum Boden** Maß ist die Messung von der Taille bis zum Boden.
 
-To measure your waist to floor measurement, locate the height of your waist, and measure how high it is from the floor.
+Um den Abstand von der Taille zum Boden zu messen, lege die Höhe deiner Taille fest und miss wie weit diese vom Boden entfernt ist.
 
 Es ist oft am einfachsten, an der Seite des Körpers zu messen.
