@@ -4,5 +4,5 @@ forPrinting: Zum Drucken
 forCutting: Zum Schneiden
 layoutThing: 'Layout {thing}'
 pageSize: Seitengröße
-startBySelectingAThing: 'Beginnen Sie mit der Auswahl eines {thing}'
+startBySelectingAThing: 'Beginne mit der Auswahl eines {thing}'
 testThing: '{thing} testen'
