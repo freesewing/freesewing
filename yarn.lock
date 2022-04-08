@@ -1686,9 +1686,9 @@
     tslib "^2.0.1"
 
 "@fontsource/permanent-marker@latest":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/permanent-marker/-/permanent-marker-4.5.1.tgz#c420628cda35f6e241f279b71732125262991955"
-  integrity sha512-uC8u1ps5IWn+SIuLiyw+o4RFz1UzofqLebBQRqrvVa1y3x21LaV6se6x0kezRyIN8QCtBfKfTvdXN2g4A2bzJg==
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/permanent-marker/-/permanent-marker-4.5.3.tgz#54f1f4fb507751b43e2e9ec7c9cded1b2f5aa78b"
+  integrity sha512-MZRp9jkgPPX26heyezLh9CMI7OXoIwCBY4QqJjVyQTWYfuOmTdZoav7kuHNkMHDUSaFiuVVT0Kh0Hf4phLVxsQ==
 
 "@fontsource/roboto-mono@latest":
   version "4.5.5"
