@@ -2,9 +2,9 @@
 title: Was sind diese Symbole neben meinen Maßen?
 ---
 
-You might have noticed these kind of icons next to your measurements: <Gauge val={0} theme='light' />
+Dir sind vielleicht diese Symbole neben deinen Maßen aufgefallen:<Gauge val={0} theme='light' />
 
-Diese Symbole zeigen einen Wert an, der zeigt, wie sehr die Maße von den Proportionen abweichen, mit denen wir unsere Designs testen:
+Diese Symbole zeigen einen Wert an, der darstellt, wie sehr die Maße von den Proportionen abweichen, mit denen wir unsere Designs testen:
 
 <table spaces-before="0">
   <tr>

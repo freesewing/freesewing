@@ -3,7 +3,7 @@ armholeDrop:
   title: Armlochabsenkung
   description: Senkt das Armloch um diesen Wert. Negative Werte erhöhen es.
 backlineBend:
-  title: Armlochform hinten
+  title: Hintere Armlochform
   description: Bestimmt die Form / Krümmung der Rückseite der Armlöcher.
 hipsEase:
   title: Bequemlichkeitszugabe Hüfte

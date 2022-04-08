@@ -1,11 +1,11 @@
 ---
-title: Taille-Schritt
+title: Vorderer Taille-Schritt Abstand
 ---
 
-Die **Kreuznaht vorne** ist der vordere Teil der [Kreuznaht](/docs/measurements/crossseam/) Messung.
+Der **vordere Taillen-Schritt-Abstand** ist der vordere Teil der [Taille-Schritt-Taille](/docs/measurements/crossseam/) Messung.
 
-Um Ihre **Quernaht vorne** zu messen, binden Sie einen String um Ihre Taille. Then, measure down from the center front of your waist until the spot that is:
+Um deinen **vorderen Taille-Schritt-Abstand** zu messen, binde dir einen Faden um deine Taille. Miss dann von der vorderen Mitte deiner Taille bis zu einem dieser Punkte:
 
-- Wo die Gabelung eines eng angebrachten Paares von Hosen sitzen würde
+- Wo die Gabelung einer eng angebrachten Hose sitzen würde
 - Die Basis deines Skrotums
-- Irgendwo in Richtung Vorderseite deines Perineums
+- Irgendwo im Bereich vor deinem Damm

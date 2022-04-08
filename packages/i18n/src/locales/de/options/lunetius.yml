@@ -7,10 +7,10 @@ widthRatio:
   description: Steuert die Breite des Kleidungsstückes
 length:
   title: Länge
-  description: Choose from the different length styles
+  description: Wähle zwischen verschiedenen Längenarten
   options:
-    toKnee: On the knee
-    toBelowKnee: Below the knee
-    toHips: On the hips
-    toUpperLeg: Below the hips
-    toFloor: Zum Boden
+    toKnee: Knie
+    toBelowKnee: Unter dem Knie
+    toHips: Hüfte
+    toUpperLeg: On the thigh
+    toFloor: Boden

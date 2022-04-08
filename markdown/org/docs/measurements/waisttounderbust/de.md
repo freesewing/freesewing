@@ -2,6 +2,6 @@
 title: Taille bis Unterbrustweite
 ---
 
-Die **Taille zum Unterbrechen** ist die Messung von deiner Taille nach oben hin zu deiner Unterbruchverbindung (wo sich dein BH befindet).
+**Taille zur Unterbrust** ist die Messung von deiner Taille nach oben hin zur Unterbrust (wo dein BH-Band liegt).
 
-Um deine **Taille zu unterbrechen**zu messen, suche die Höhe der Taille und des Unterbruchs und misst den vertikalen Abstand zwischen ihnen. Achte darauf, an der Seite deines Körpers zu messen.
+Um deinen **Taille zur Unterbrust Abstand **zu messen, bestimme die Höhe der Taille und der Unterbrust und miss den vertikalen Abstand zwischen diesen. Achte darauf, an der Seite deines Körpers zu messen.

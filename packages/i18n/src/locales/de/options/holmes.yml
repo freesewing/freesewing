@@ -4,25 +4,25 @@ headEase:
   description: Bequemlichkeits-/Bewegungszugabe zum Umfang deines Kopfes.
 lengthRatio:
   title: Längenverhältnis
-  description: Controls the length of the crown and ear flaps
+  description: Kontrolliert die Länge der Hutkrone und Ohrklappen
 gores:
-  title: Number of gores
-  description: The number of gores used to construct the crown
+  title: Anzahl der Keile
+  description: Anzahl der Keile, die die Hutkrone zu bilden
 visorAngle:
-  title: Visor angle
-  description: The arc angle used to draft the inner curve of the visor
+  title: Winkel des Mützenschirms
+  description: Winkel, der die innere Kurve des Mützenschirms beschreibt
 visorWidth:
-  title: Visor width
-  description: Controls the width of the visor
+  title: Breite des Mützenschirms
+  description: Steuert die Breite des Mützenschirms
 earLength:
-  title: Ear flap length
-  description: Controls the length of the ear flaps independently from the crown pieces
+  title: Länge der Ohrklappen
+  description: Steuert die Länge der Ohrklappen unabhängig von den Kronenstücken
 earWidth:
-  title: Ear flap width
-  description: Controls the width of the ear flaps
+  title: Breite der Ohrklappen
+  description: Steuert die Breite der Ohrklappen
 buttonhole:
-  title: Buttonhole guide
-  description: Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+  title: Führung für das Knopfloch
+  description: Fügt der Ohrklappe einen Knopfloch hinzu, um die Variante mit Knopflochs zu entwerfen
 visorLength:
-  title: Visor length
-  description: Controls the length of the visor
+  title: Länge des Mützenschirmes
+  description: Steuert die Länge des Mützenschirms

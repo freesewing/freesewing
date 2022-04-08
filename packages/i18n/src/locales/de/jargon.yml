@@ -18,8 +18,8 @@ ease:
   term: Zugabe
   description: "Siehe <a href='/docs/sewing/ease/'>Zugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 edgestitch:
-  term: edgestitch
-  description: "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: Nähte absteppen
+  description: "Siehe <a href='/docs/sewing/edgestitching/'>Nähte absteppen</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
 fabricGrain:
   term: Fadenlauf
   description: "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenlauf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
