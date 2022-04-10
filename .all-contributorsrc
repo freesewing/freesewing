@@ -813,6 +813,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "SoneaTheBest",
+      "name": "SoneaTheBest",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64635425?v=4",
+      "profile": "https://github.com/SoneaTheBest",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "skipCi": true
