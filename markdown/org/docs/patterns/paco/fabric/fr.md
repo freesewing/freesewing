@@ -17,4 +17,6 @@ Tant que le lin est le point de départ pour les chauds jours d'été, Je ne le 
 car ils sont livrés avec une taille/poignets élastiques, ce qui signifie un enfer ride.
 Utilisez un autre design avec une taille ajustée si vous voulez un pantalon de linge.
 
-Évitez également de ramasser un tissu avec beaucoup d'extension, car cela compliquera les choses lorsque vous installez l'élastique. </Tip>
+Évitez également de ramasser un tissu avec beaucoup d'extension, car cela compliquera les choses lorsque vous installez l'élastique. 
+
+</Tip>

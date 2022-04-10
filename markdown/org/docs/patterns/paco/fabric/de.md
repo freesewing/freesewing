@@ -17,4 +17,6 @@ Während Leinen ist das Go-to für heiße Sommertage Ich empfehle es nicht für 
 , da sie mit einer elastischen Taille oder Manschetten ausgestattet sind, was die Faltenhaut bedeutet.
 Verwenden Sie eines der anderen Designs mit einer eingebauten Taille, wenn Sie möchten, Leinenhose.
 
-Vermeiden Sie auch die Auswahl eines Stoffes mit einer Menge Stretch, denn es wird die Dinge komplizieren, wenn Sie die elastischen installieren. </Tip>
+Vermeiden Sie auch die Auswahl eines Stoffes mit einer Menge Stretch, denn es wird die Dinge komplizieren, wenn Sie die elastischen installieren. 
+
+</Tip>

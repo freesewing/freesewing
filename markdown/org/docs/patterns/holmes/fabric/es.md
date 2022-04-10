@@ -4,7 +4,13 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Tela principal
 
-Para la tela principal de tu sombrero, un tejido grueso funcionará mejor para mantener la forma, pero si quieres ir por una tela más ligera puedes interactuar para darle más cuerpo. Generalmente quieres usar **Lanas** de peso de recubrimiento, pero puedes experimentar con diferentes pesos y tejidos con la interfaz relevante. <Note> Una cosa divertida para probar es el algodón impreso. Simplemente doblar la tela principal para que cada pieza sea de doble espesor. Then interface it with a **Medium Firm Interfacing**. </Note>
+Para la tela principal de tu sombrero, un tejido grueso funcionará mejor para mantener la forma, pero si quieres ir por una tela más ligera puedes interactuar para darle más cuerpo. Generalmente quieres usar **Lanas** de peso de recubrimiento, pero puedes experimentar con diferentes pesos y tejidos con la interfaz relevante. 
+
+<Note> 
+
+Una cosa divertida para probar es el algodón impreso. Simplemente doblar la tela principal para que cada pieza sea de doble espesor. Then interface it with a **Medium Firm Interfacing**. 
+
+</Note>
 
 ### Tela fina
 

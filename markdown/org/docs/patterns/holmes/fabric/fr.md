@@ -4,7 +4,13 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Tissu principal
 
-Pour le tissu principal de votre chapeau, un tissu épais fonctionnera mieux pour tenir la forme, mais si vous voulez aller pour un tissu plus léger, vous pouvez l'interfacer pour lui donner plus de corps. Généralement, vous voulez utiliser **laines** de poids de revêtement mais vous pouvez expérimenter avec différents poids et tissus avec l'interface pertinente. <Note> Une chose amusante à essayer est le coton imprimé. Il suffit de doubler le tissu principal pour que chaque pièce soit en double épaisseur. Then interface it with a **Medium Firm Interfacing**. </Note>
+Pour le tissu principal de votre chapeau, un tissu épais fonctionnera mieux pour tenir la forme, mais si vous voulez aller pour un tissu plus léger, vous pouvez l'interfacer pour lui donner plus de corps. Généralement, vous voulez utiliser **laines** de poids de revêtement mais vous pouvez expérimenter avec différents poids et tissus avec l'interface pertinente. 
+
+<Note> 
+
+Une chose amusante à essayer est le coton imprimé. Il suffit de doubler le tissu principal pour que chaque pièce soit en double épaisseur. Then interface it with a **Medium Firm Interfacing**. 
+
+</Note>
 
 ### Tissu de rangement
 

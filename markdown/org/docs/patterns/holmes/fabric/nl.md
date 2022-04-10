@@ -4,7 +4,13 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Hoofd stof
 
-Voor de buitenstof van je hoed, een dikke stof werkt het beste om de vorm vast te houden, maar als je wilt gaan voor een lichtere stof, kan je hem ook gebruiken om hem meer lichaam te geven. Over het algemeen wil je **Wools** gebruiken van coating gewicht, maar je kunt experimenteren met verschillende gewichten en stoffen met de relevante interfacing. <Note> Een leuk ding om te proberen is katoen bedrukt. Gewoon de hoofdstof verdubbelen, zodat elk stuk een dubbele dikte is. Then interface it with a **Medium Firm Interfacing**. </Note>
+Voor de buitenstof van je hoed, een dikke stof werkt het beste om de vorm vast te houden, maar als je wilt gaan voor een lichtere stof, kan je hem ook gebruiken om hem meer lichaam te geven. Over het algemeen wil je **Wools** gebruiken van coating gewicht, maar je kunt experimenteren met verschillende gewichten en stoffen met de relevante interfacing. 
+
+<Note> 
+
+Een leuk ding om te proberen is katoen bedrukt. Gewoon de hoofdstof verdubbelen, zodat elk stuk een dubbele dikte is. Then interface it with a **Medium Firm Interfacing**. 
+
+</Note>
 
 ### Voetstof
 
