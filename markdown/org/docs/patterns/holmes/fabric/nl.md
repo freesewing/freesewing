@@ -4,7 +4,13 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Hoofd stof
 
-Voor de buitenstof van je hoed, een dikke stof werkt het beste om de vorm vast te houden, maar als je wilt gaan voor een lichtere stof, kan je hem ook gebruiken om hem meer lichaam te geven. Over het algemeen wil je **Wools** gebruiken van coating gewicht, maar je kunt experimenteren met verschillende gewichten en stoffen met de relevante interfacing. <Note> Een leuk ding om te proberen is katoen bedrukt. Gewoon de hoofdstof verdubbelen, zodat elk stuk een dubbele dikte is. Then interface it with a **Medium Firm Interfacing**. </Note>
+For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+
+<Note>
+
+A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
+
+</Note>
 
 ### Voetstof
 
@@ -16,7 +22,7 @@ Afhankelijk van de dikte van je hoofdstof en hoe goed het de vorm behoudt die je
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Zorg ervoor dat u natuurlijke vezels gebruikt.
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
 
 </Note>
 
@@ -26,6 +32,6 @@ Voor de bezoeker wil je een firma maar weinig materiaal. Je kunt het ook probere
 
 <Note>
 
-Vergeet het niet. Dit zijn allemaal aanbevelingen. Als je iets anders wilt gebruiken, ga dan ervoor!
+Just remember. All of these are recommendations. If you want to use something different go for it!
 
 </Note>
