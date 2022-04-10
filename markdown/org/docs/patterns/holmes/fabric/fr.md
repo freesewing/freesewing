@@ -4,7 +4,13 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Tissu principal
 
-Pour le tissu principal de votre chapeau, un tissu épais fonctionnera mieux pour tenir la forme, mais si vous voulez aller pour un tissu plus léger, vous pouvez l'interfacer pour lui donner plus de corps. Généralement, vous voulez utiliser **laines** de poids de revêtement mais vous pouvez expérimenter avec différents poids et tissus avec l'interface pertinente. <Note> Une chose amusante à essayer est le coton imprimé. Il suffit de doubler le tissu principal pour que chaque pièce soit en double épaisseur. Then interface it with a **Medium Firm Interfacing**. </Note>
+For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+
+<Note>
+
+A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
+
+</Note>
 
 ### Tissu de rangement
 
@@ -16,7 +22,7 @@ Selon l'épaisseur de votre tissu principal et la façon dont il conserve sa for
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Assurez-vous d'utiliser des fibres naturelles.
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
 
 </Note>
 
@@ -26,6 +32,6 @@ For the bill insert you want a firm but thin material. Vous pouvez essayer aussi
 
 <Note>
 
-Rappelez-vous. Toutes ces recommandations sont des recommandations. Si vous voulez utiliser quelque chose de différent, allez !
+Just remember. All of these are recommendations. If you want to use something different go for it!
 
 </Note>
