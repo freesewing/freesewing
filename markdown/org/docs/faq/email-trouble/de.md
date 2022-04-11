@@ -8,7 +8,7 @@ Versuche es entweder mit einer anderen E-Mail-Adresse, oder [melde dich bei uns]
 
 <Note>
 
-##### Nutzer in Frankreich werden eher mit diesem Problem konfrontiert
+##### Nutzer in Frankreich werden eher mit folgendem Problem konfrontiert
 
 In Frankreich haben einige E-Mail Provider dieselben Filtereinstellungen:
 
