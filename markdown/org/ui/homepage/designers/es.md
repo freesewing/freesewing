@@ -5,7 +5,8 @@
 
 Parametric design refers to the use of parameters or variables to manipulate the outcome of a given design within its rules.
 
-In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.\ The _rules_ of the design are what you, the designer, make them.
+In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.\
+The _rules_ of the design are what you, the designer, make them.
 
 #### ¿Qué significa eso para los diseñadores?
 

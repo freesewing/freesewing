@@ -22,7 +22,7 @@ Selon l'épaisseur de votre tissu principal et la façon dont il conserve sa for
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Assurez-vous d'utiliser des fibres naturelles.
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
 
 </Note>
 
@@ -32,6 +32,6 @@ For the bill insert you want a firm but thin material. Vous pouvez essayer aussi
 
 <Note>
 
-Rappelez-vous. Toutes ces recommandations sont des recommandations. Si vous voulez utiliser quelque chose de différent, allez !
+Just remember. All of these are recommendations. If you want to use something different go for it!
 
 </Note>

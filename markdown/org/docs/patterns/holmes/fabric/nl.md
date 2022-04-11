@@ -22,7 +22,7 @@ Afhankelijk van de dikte van je hoofdstof en hoe goed het de vorm behoudt die je
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Zorg ervoor dat u natuurlijke vezels gebruikt.
+If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
 
 </Note>
 
@@ -32,6 +32,6 @@ Voor de bezoeker wil je een firma maar weinig materiaal. Je kunt het ook probere
 
 <Note>
 
-Vergeet het niet. Dit zijn allemaal aanbevelingen. Als je iets anders wilt gebruiken, ga dan ervoor!
+Just remember. All of these are recommendations. If you want to use something different go for it!
 
 </Note>
