@@ -22,6 +22,6 @@ Ich biete dir sehr gerne meine Dienste an, um dein Design / deine Vision im Code
 
 Du kannst mich unter joost at freesewing.org erreichen, und wir haben auch [eine aktive Community auf Discord](https://discord.freesewing.org/).
 
-Ich hoffe sehr, bald von dir zu hören.
+Ich hoffe sehr bald von dir zu hören.
 
 joost
