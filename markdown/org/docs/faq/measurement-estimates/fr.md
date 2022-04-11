@@ -2,7 +2,7 @@
 title: Quels sont ces symboles à côté de mes mesures?
 ---
 
-You might have noticed these kind of icons next to your measurements: <Gauge val={0} theme='light' />
+Vous avez peut-être remarqué ce type d'icônes à côté de vos mesures : <Gauge val={0} theme='light' />
 
 La valeur qu'ils représentent montre à quel point la mesure s'écarte des proportions avec lesquelles nous testons nos conceptions :
 
