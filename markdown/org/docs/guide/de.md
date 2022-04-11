@@ -7,8 +7,8 @@ Hallo 👋 und willkommen bei freesewing.org 🙂 Das Lesen dieser Anleitung nim
 
 ##### Was wir dir erklären werden
 
-- Wir werden dir erklären, [was FreeSewing][1] und [freesewing.org][2] ist
-- Wir erzählen dir von unseren [maßgeschneiderten Schnittmustern][3] und was wir mit [_mit Brüsten_ und _ohne Brüste_][4] meinen
+- Wir werden dir erklären, was [FreeSewing][1] und [freesewing.org][2] ist
+- Wir erzählen dir von unseren [maßgeschneiderten Schnittmustern][3] und was wir unter [_mit Brüsten_ und _ohne Brüste_][4] verstehen
 - Wir behandeln, [warum du einen Account brauchst][5], was wir unter [deine Personen][6] oder [deine Schnittmuster][7] verstehen und wir sprechen über [Maße][8]
 - Wir befassen uns damit, [wie du deine Schnittmuster mit Design- und Schnittmusteroptionen konfigurieren][9] kannst
 - Schlussendlich erklären wir dir, [wo du Hilfe finden kannst,][10] solltest du einmal nicht weiterkommen.
