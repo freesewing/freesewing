@@ -8,11 +8,11 @@ Wir verwenden diese Begriffe, um auf Gender-inklusive Art und Weise zu fragen, o
 
 ##### Körper betreffend
 
-Fast jede Bekleidungsfirma hat zwei Hauptkategorien für ihre Kleidung: Herrenbekleidung und Damenbekleidung. Diese Designs basieren in der Regel auf dem idealen oder durchschnittlichen Körper. Das heißt, dass für Damenbekleidung ein Kleidungsstück designt wird, das wahrscheinlich auf einem Körper mit Brüsten, schmalen Schultern, einer schmalleren Taille und breiten Hüften zugeschnitten ist.
+Fast jede Bekleidungsfirma hat zwei Hauptkategorien für ihre Kleidung: Herrenbekleidung und Damenbekleidung. Diese Designs basieren in der Regel auf dem idealen oder durchschnittlichen Körper. Das heißt, dass für Damenbekleidung ein Kleidungsstück designt wird, das wahrscheinlich auf einen Körper mit Brüsten, schmalen Schultern, einer schmalleren Taille und breiten Hüften zugeschnitten ist.
 
-Diese Eigenschaften werden im Allgemeinen als _die typischen Merkmale eines Frauenkörpers_ angesehen. Wir glauben jedoch, dass wir uns hiervon fernhalten sollten: kein Körper ist durchschnittlich und wir wollen eine Umgebung schaffen, in der alle Gender miteinbezogen werden.
+Diese Eigenschaften werden im Allgemeinen als _die typischen Merkmale eines Frauenkörpers_ angesehen. Wir glauben jedoch, dass wir uns hiervon fernhalten sollten: kein Körper ist durchschnittlich und wir wollen eine Umgebung schaffen, in der alle Geschlechtsidentitäten miteinbezogen werden.
 
-Wir wollen keine Person ausschließen und wir sind der Überzeugung, dass _Körperform ≠ Gender_. Daher benutzen wir die Begriffe **mit Brüsten** und **ohne Brüste**, einfach um zu erfragen, ob eine Person Brustgewebe hat oder nicht.
+Wir wollen keine Person ausschließen und wir sind der Überzeugung, dass _Körperform ≠ Geschlechtsidentität_. Daher benutzen wir die Begriffe **mit Brüsten** und **ohne Brüste**, einfach um zu erfragen, ob eine Person Brustgewebe hat oder nicht.
 
 ##### Wie sich das auf das Schnittmuster auswirkt
 
