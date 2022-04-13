@@ -15829,10 +15829,10 @@ kareem@2.3.2:
   resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.2.tgz#78c4508894985b8d38a0dc15e1a8e11078f2ca93"
   integrity sha512-STHz9P7X2L4Kwn72fA4rGyqyXdmrMSdxqHx9IXon/FXluXieaFA6KJ2upcHAHxQPQ0LeM/OjLrhFxifHewOALQ==
 
-kareem@2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.4.tgz#b38c436fb4758775d919b2828b4009db59b52694"
-  integrity sha512-Vcrt8lcpVl0s8ePx634BxwRqmFo+5DcOhlmNadehxreMTIQi/9hOL/B3hZQQbK5DgMS7Lem3xABXV7/S3jy+7g==
+kareem@2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.5.tgz#111fe9dbab754c8ed88b7a2360e2680cec1420ca"
+  integrity sha512-qxCyQtp3ioawkiRNQr/v8xw9KIviMSSNmy+63Wubj7KmMn3g7noRXIZB4vPCAP+ETi2SR8eH6CvmlKZuGpoHOg==
 
 keep-func-props@^4.0.0:
   version "4.0.1"
@@ -18486,12 +18486,12 @@ mongoose-long@^0.3.2:
   integrity sha512-5gTjPH6HUmtNhamv8MPwExWo01Z4d9CT5njZlupqqbmxzMXTbDOgCuP/jnK+9SV0Fs7nuyYlXv7pJ/nA2pAAuA==
 
 "mongoose@3.8.* || >=4", mongoose@^6.1.8:
-  version "6.2.8"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.2.8.tgz#96fe81ff51a4c588fe810a0c06d7155d0e75e83d"
-  integrity sha512-Wq6HG0sOJEQHp5YqMlxrnf93vBFwdY2zlAwqI97EPPSt69kiVV21pTv4cDanrCNWi4upG8ajQ/p9jpDjcECjkQ==
+  version "6.2.10"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.2.10.tgz#ba401b710d7b877453389d4ad7347c272e8ff794"
+  integrity sha512-Yp+6UH5M0AlxAVGdC2/Deq0St+2qW73oKCnhJDr83bOZ12eflTLTT5uQF0p6KzvtFj86XWbq/7ApvO4yW6h1sA==
   dependencies:
     bson "^4.2.2"
-    kareem "2.3.4"
+    kareem "2.3.5"
     mongodb "4.3.1"
     mpath "0.8.4"
     mquery "4.0.2"
