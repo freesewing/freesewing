@@ -27,7 +27,7 @@ There are the five option types that an aspiring pattern designer should be
 familiar with:
 
 1. [**boolean** options][bool] are for yes/no choices
-2. [**counter** options][counter] are for integer values
+2. [**counter** options][count] are for integer values
 3. [**degree** options][deg] are for degrees
 4. [**list** options][list] are for a list of possible choices
 5. [**percentage** options][pct] are for percentages
