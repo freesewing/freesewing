@@ -1,10 +1,10 @@
 ---
-title: "undefined"
+title: "Full chest reduction (Bella)"
 ---
 
 ---
 
-Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+Controls the full chest reduction in the underlying Bella block Bee is based on
 
 ## Effect of this option on the pattern
 
