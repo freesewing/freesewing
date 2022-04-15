@@ -31,7 +31,7 @@
     "lodash.set": "^4.3.2",
     "netlify-cli": "^9.4.0",
     "next": "latest",
-    "next-i18next": "^10.2.0",
+    "next-i18next": "^11.0.0",
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
     "react-instantsearch-dom": "^6.18.0",
