@@ -71,6 +71,9 @@ frontArmholePitchDepth:
 frontShoulderWidth:
   title: Largeur de l'épaule devant (Bella)
   description: Contrôle la largeur de l'épaule avant dans le bloc de Bella sur lequel est basé le patron Bee
+fullChestEaseReduction:
+  title: Full chest reduction (Bella)
+  description: Controls the full chest reduction in the underlying Bella block Bee is based on
 highBustWidth:
   title: Largeur du tour de buste supérieur (Bella)
   description: Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee
