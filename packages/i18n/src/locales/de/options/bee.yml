@@ -71,6 +71,9 @@ frontArmholePitchDepth:
 frontShoulderWidth:
   title: Vordere Schulterbreite (Bella)
   description: Kontrolliert die vordere Schulterbreite des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
+fullChestEaseReduction:
+  title: Full chest reduction (Bella)
+  description: Controls the full chest reduction in the underlying Bella block Bee is based on
 highBustWidth:
   title: Hohe Brustweite (Bella)
   description: Kontrolliert die hohe Brustbreite des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
