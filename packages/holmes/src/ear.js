@@ -33,7 +33,7 @@ export default function (part) {
 	.setRender(false)
   paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom)
   .setRender(false)
-  paths.seam = paths.saBase.join(paths.hem).close()
+  paths.seam = paths.saBase.join(paths.hemBase).close()
   // Complete?
   if (complete) {
     macro('grainline', { from: points.top, to: new Point(0, points.bottom.y) })
