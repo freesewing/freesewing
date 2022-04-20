@@ -6216,9 +6216,9 @@ autoprefixer@^9.8.6:
     postcss-value-parser "^4.1.0"
 
 ava@^4.0.1:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/ava/-/ava-4.1.0.tgz#a8e2fb84f17ff7b2b40b389103f677edf11351b9"
-  integrity sha512-QD6MBWHzagAwb9vxduXzVWx6Q77DUHLxvIebSY6+enL+Ri6KzSZYj0IBOFifA26wfpJPZnWKLUh3vwx1LyVh/g==
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/ava/-/ava-4.2.0.tgz#50c954cb32fd433b01d1e8245ea2f5cfb6e4412d"
+  integrity sha512-96N/rH2ZlBjoh18CsjH3zfo/rzukkRoqNK7R/Z3MLRrqu6cRRf+i4Zwna7ZRYEIl55yF1BKh/nSPCZWqoXfPJA==
   dependencies:
     acorn "^8.7.0"
     acorn-walk "^8.2.0"
