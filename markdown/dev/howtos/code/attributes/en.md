@@ -27,7 +27,7 @@ points.message = new Point(0,0)
 <Note>
 
 In this example, we're using attributes to add text to our pattern.
-The [adding-text](/concepts/adding-text) documentation explains this in detail.
+The [adding-text](/howtos/code/adding-text) documentation explains this in detail.
 
 </Note>
 

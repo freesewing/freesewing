@@ -14,7 +14,7 @@ FreeSewing supports the following types of drawing operations:
 
 - The **move** operation moves our virtual pen but does not draw anything.
 - The **line** operation draws a straight line
-- The **curve** operation draws a [Bézier curve](/guides/overview/about/beziercurves/)
+- The **curve** operation draws a [Bézier curve](/guides/prerequisites/bezier-curves)
 - The **close** operation closes the path
 
 To crucial thing to keep in mind is that, with the exception of the **move** operation,
