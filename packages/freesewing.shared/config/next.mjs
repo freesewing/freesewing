@@ -52,7 +52,6 @@ const config = (site, remarkPlugins=[]) => ({
     // YAML support
     config.module.rules.push({
       test: /\.ya?ml$/,
-      type: 'json',
       use: 'yaml-loader'
     })
 
