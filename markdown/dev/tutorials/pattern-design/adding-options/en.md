@@ -41,7 +41,7 @@ Can you guess what it means?
 <Note>
 
 There are different types of options, but percentages are the most common ones.
-They are all documented [in the API docs](/reference/config/options).
+They are all documented [in the API docs](/reference/api/config/options).
 
 </Note>
 
