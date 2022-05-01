@@ -822,6 +822,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "jackseye",
+      "name": "jackseye",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27834526?v=4",
+      "profile": "https://github.com/jackseye",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true
