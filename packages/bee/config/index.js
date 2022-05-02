@@ -1,5 +1,4 @@
 import pkg from '../package.json'
-import freesewing from '@freesewing/core'
 
 export default {
   name: 'bee',
