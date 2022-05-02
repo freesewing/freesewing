@@ -1,6 +1,5 @@
 import pkg from '../package.json'
 import freesewing from '@freesewing/core'
-const { pctBasedOn } = freesewing
 
 export default {
   name: 'bee',
