@@ -41,8 +41,10 @@ export default function (part) {
 
   paths.seam = new Path()
     .move(points.centerLeft)
+    .move(points.taperLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
+    .line(points.taperRight)
     .line(points.centerRight)
     .line(points.centerLeft)
     .close()
