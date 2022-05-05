@@ -41,6 +41,7 @@ import draftPlugin_gore from './plugin_gore'
 import draftPlugin_grainline from './plugin_grainline'
 import draftPlugin_logo from './plugin_logo'
 import draftPlugin_mirror from './plugin_mirror'
+import draftPlugin_notches from './plugin_notches'
 import draftPlugin_round from './plugin_round'
 import draftPlugin_sprinkle from './plugin_sprinkle'
 import draftPlugin_scalebox from './plugin_scalebox'
@@ -138,6 +139,7 @@ let methods = {
   draftPlugin_grainline,
   draftPlugin_logo,
   draftPlugin_mirror,
+  draftPlugin_notches,
   draftPlugin_round,
   draftPlugin_scalebox,
   draftPlugin_sprinkle,

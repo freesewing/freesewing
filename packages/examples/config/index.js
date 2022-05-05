@@ -54,6 +54,7 @@ export default {
     'plugin_grainline',
     'plugin_logo',
     'plugin_mirror',
+    'plugin_notches',
     'plugin_round',
     'plugin_scalebox',
     'plugin_sprinkle',
