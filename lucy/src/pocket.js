@@ -20,10 +20,14 @@ export default function (part) {
   
  //top 
 
- points.centerRight = points.center.shift(0, pocketWidth * 0.25)
+  points.centerRight = points.center.shift(0, pocketWidth * 0.25)
  points.centerLeft = points.center.shift(180, pocketWidth * 0.25)
  
+ //taper point 
+ points.taperRight = new Point(pocketWidth, pocketLength * 0.4375)
+ points.taperLeft = new Point(0, pocketlength * 0.4375)
 
+ //path
  paths.slit = new Path()
   .move(points.center)
   .line(points.middle)
