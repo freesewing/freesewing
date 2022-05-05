@@ -4,7 +4,7 @@ for: developers
 about: Shows you how to create dependencies between pattern parts
 ---
 
-Part dependencies are set in the [pattern configuration](/reference/config), and
+Part dependencies are set in the [pattern configuration](/reference/api/config), and
 control the order in which parts are drawn. FreeSewing will make sure
 that before drafting a part, it will first draft all its dependencies.
 

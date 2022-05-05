@@ -146,10 +146,10 @@ export default (part) => {
       paths.pleats.attr('class', 'dotted')
     }
     macro('title', { at: points.centerBiceps, nr: 5, title: 'sleeve' })
-    macro('grainline', { from: points.cuffMid, to: new Point(
-        points.cuffMid.x,
-        points.sleeveTip.y
-    ) })
+    macro('grainline', {
+      from: points.cuffMid,
+      to: new Point(points.cuffMid.x, points.sleeveTip.y),
+    })
 
     if (sa) {
       paths.sa = paths.frenchBase.offset(sa * options.ffsa)
@@ -162,7 +162,7 @@ export default (part) => {
       macro('banner', {
         path: 'frenchSa',
         text: 'flatFelledSeamAllowance',
-        repeat: 30
+        repeat: 30,
       })
     }
   }

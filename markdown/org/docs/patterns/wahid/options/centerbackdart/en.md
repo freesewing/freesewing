@@ -1,3 +1,7 @@
+---
+title: "Center back dart"
+---
+
 ![Centerback dart](centerbackdart.svg)
 
 Since nobody has a perfectly straight back, this pattern tapers in with 0.5 cm at the center back of your neck.

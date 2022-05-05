@@ -1,3 +1,7 @@
+---
+title: "Waist band width"
+---
+
 The width of the waist band.
 
 ## Effect of this option on the pattern

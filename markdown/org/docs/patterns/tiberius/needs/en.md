@@ -1,3 +1,7 @@
+---
+title: "Tiberius Tunica: What You Need"
+---
+
 To make Tiberius, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)

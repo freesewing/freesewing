@@ -1,3 +1,7 @@
+---
+title: "Buttonhole placket fold width"
+---
+
 ![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
 
 The width of the fold on a classic style buttonhole placket.

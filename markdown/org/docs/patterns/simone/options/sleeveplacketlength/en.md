@@ -1,3 +1,7 @@
+---
+title: "Sleeve placket length"
+---
+
 ![Sleeve placket length](sleeveplacketlength.svg)
 
 How long do you want the sleeve placket to be?

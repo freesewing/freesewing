@@ -1,5 +1,5 @@
 ---
-title: Albert Construction
+title: "Albert apron: Sewing Instructions"
 ---
 
 ### Step 1: The Pocket

@@ -1,5 +1,7 @@
 ---
-title: Front armhole pitch depth
+title: "Front armhole pitch depth"
+---
+
 ---
 
 ![The effect of the front armhole pitch depth option on the pattern](sample.png)

@@ -1,9 +1,13 @@
-![De optie voor de diepte van de halslijn bij Aaron](./necklinedrop.svg)
+- - -
+title: "Neckline drop"
+- - -
 
-Bepaalt hoeveel lager de halslijn is dan de standaard.
+![The neckline drop option on Aaron](./necklinedrop.svg)
+
+Determines how much to lower the neckline of the top beyond the default.
 
 > Hogere waarden maken de halslijn lager, wat resulteert in meer decolleté.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_necklinedrop_sample.svg "Effect van deze optie op het patroon")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_necklinedrop_sample.svg "Effect of this option on the pattern")

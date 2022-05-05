@@ -1,3 +1,7 @@
+---
+title: "Cuff ease"
+---
+
 ![Cuff ease](cuffease.svg)
 
 Determines how much the cuff is larger than your wrist.

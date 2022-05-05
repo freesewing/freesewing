@@ -21,8 +21,8 @@ export default function (part) {
   points.cbNeckCp1 = new Point(points.hps.x * 0.8, points.cbNeck.y)
   let slope = measurements.shoulderSlope * options.shoulderSlopeBack * -1
   points.shoulder = utils.beamsIntersect(
-    new Point((measurements.shoulderToShoulder * options.shoulderToShoulderCorrection) / 2, 0),
-    new Point((measurements.shoulderToShoulder * options.shoulderToShoulderCorrection) / 2, 100),
+    new Point((measurements.shoulderToShoulder * (1 + options.shoulderToShoulderEase)) / 2, 0),
+    new Point((measurements.shoulderToShoulder * (1 + options.shoulderToShoulderEase)) / 2, 100),
     points.hps,
     points.hps.shift(slope, 85)
   )
@@ -112,14 +112,6 @@ export default function (part) {
   }
 
   // Store the back width at bust level
-  points.bustSide = utils.curveIntersectsY(
-    points.waistSide,
-    points.waistSideCp2,
-    points.armhole,
-    points.armhole,
-    measurements.hpsToBust
-  )
-  if (!points.bustSide) raise.error('Could not find bust height in side seam of back part')
   points.bustCenter = utils.curveIntersectsY(
     points.cbNeck,
     points.cbNeckCp2,
@@ -128,21 +120,47 @@ export default function (part) {
     measurements.hpsToBust
   )
   if (!points.bustCenter) raise.error('Could not find bust height in center seam of back part')
-  points.bustDartLeft = utils.curveIntersectsY(
-    points.dartBottomLeft,
-    points.dartLeftCp,
-    points.dartTip,
-    points.dartTip,
-    measurements.hpsToBust
-  )
+  if (points.bustCenter.y < points.armhole.y) {
+    points.sideArmhole = points.armhole.clone()
+    let sideArmholeTemp = new Path()
+      .move(points.armhole)
+      .curve(points.armhole, points.waistSideCp2, points.waistSide)
+      .shiftAlong(10)
+    points.sideArmhole = sideArmholeTemp.shiftOutwards(points.armhole, 100)
+    points.bustSide = utils.beamIntersectsY(
+      points.armhole,
+      points.sideArmhole,
+      measurements.hpsToBust
+    )
+  } else {
+    points.bustSide = utils.curveIntersectsY(
+      points.waistSide,
+      points.waistSideCp2,
+      points.armhole,
+      points.armhole,
+      measurements.hpsToBust
+    )
+  }
+  if (!points.bustSide) raise.error('Could not find bust height in side seam of back part')
+  if (points.bustCenter.y < points.dartTip.y) {
+    points.bustDartLeft = points.bustCenter.clone()
+    points.bustDartLeft.x = points.dartTip.x
+  } else {
+    points.bustDartLeft = utils.curveIntersectsY(
+      points.dartBottomLeft,
+      points.dartLeftCp,
+      points.dartTip,
+      points.dartTip,
+      measurements.hpsToBust
+    )
+  }
   if (!points.bustDartLeft) raise.error('Could not find bust height in back dart')
   points.bustDartRight = points.bustDartLeft.flipX(points.dartTip)
+  // Store things we'll need in the front parts
   store.set(
     'bustWidthBack',
     points.bustCenter.dx(points.bustDartLeft) + points.bustDartRight.dx(points.bustSide)
   )
-
-  // Store things we'll need in the front parts
   store.set(
     'sideSeamLength',
     new Path().move(points.waistSide).curve_(points.waistSideCp2, points.armhole).length()
@@ -290,6 +308,8 @@ export default function (part) {
         to: points.armhole,
         y: points.hps.y - sa - 60,
       })
+
+      macro('ld', { from: points.hps, to: points.shoulder, d: 10 })
     }
   }
 

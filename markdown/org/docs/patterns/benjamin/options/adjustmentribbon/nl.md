@@ -1,6 +1,10 @@
-![Traditioneel of aanpasbaar](adjustmentribbon.svg)
+- - -
+title: "Adjustment ribbon"
+- - -
 
-Met Benjamine kan je een traditionele vlinderdas van vaste grootte maken. Of je kan er één maken met een aanpaslintje. Dit zijn lintjes en hardware die je toelaten de halsomtrek van de vlinderdas aan te passen. Heel handig als je hemden hebt met verschillende halsmaten, of als sommige hemden een grotere halsopening hebben.
+![Traditional or adjustable](adjustmentribbon.svg)
+
+With Benjamin, you can make a traditional fixed size bow tie. And you can make one that incorporates an adjustment ribbon. These are ribbons and pieces of hardware that allow you to change the neck size of the bow tie. Very handy when you have shirts with different neck sizes, or if you have different ease in the collar for some.
 
 <Tip>
 
@@ -9,4 +13,5 @@ Dit is een geweldige optie als je een vlinderdas aan iemand cadeau wil doen.
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](benjamin_adjustmentribbon_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_adjustmentribbon_sample.svg "Effect of this option on the pattern")

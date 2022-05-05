@@ -1,3 +1,7 @@
+- - -
+title: "Sven sweatshirt: Sewing Instructions"
+- - -
+
 ### Stap 1: Sluit de schoudernaden
 
 - Leg het voorpand op het rugpand met de juiste kanten tegen elkaar.

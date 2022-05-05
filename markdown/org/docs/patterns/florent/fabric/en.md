@@ -1,5 +1,5 @@
 ---
-title:Fabric options
+title: "Florent flat cap: Fabric Options"
 ---
 
 For the main fabric of your cap, a thick fabric will shape better, but if you go for a lighter fabric, you can interface it to give it more body.

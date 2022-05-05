@@ -1,3 +1,7 @@
+---
+title: "Chest ease"
+---
+
 The amount of ease at your chest.
 
 ## Effect of this option on the pattern

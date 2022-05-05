@@ -94,6 +94,10 @@ frontShoulderWidth:
   title: Front shoulder width (Bella)
   description: Controls the front shoulder width in the underlying Bella block Bee is based on
 
+fullChestEaseReduction:
+  title: Full chest reduction (Bella)
+  description: Controls the full chest reduction in the underlying Bella block Bee is based on
+
 highBustWidth:
   title: High bust width (Bella)
   description: Controls the high bust width in the underlying Bella block Bee is based on

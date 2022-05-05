@@ -50,7 +50,7 @@ paths.flb.attr('data-text', 'facingLiningBoundary')
 
 <Tip>
 
-Refer to [the sprinkle macro documentation](/reference/macros/sprinkle/) for details on how
+Refer to [the sprinkle macro documentation](/reference/api/macros/sprinkle/) for details on how
 to use this macro
 
 </Tip>

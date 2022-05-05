@@ -1,3 +1,7 @@
+- - -
+title: "Simon shirt: Cutting Instructions"
+- - -
+
 - **Tissu principal**
   - Couper **1 devant gauche**
   - Couper **1 patte de boutonnage (côté boutons)** (seulement si vous avez choisi une patte de boutonnage séparée)

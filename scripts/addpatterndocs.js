@@ -22,12 +22,14 @@ const subpages = [
 ]
 
 const patternDocsPage = pattern => `---
+title: "Fixme"
 ---
 
 <PatternDocs pattern='${pattern}' />
 
 `
 const fixme = `---
+title: "Fixme"
 ---
 
 <Fixme>
@@ -40,6 +42,7 @@ Sorry for the inconvenience.
 `
 
 const component = (comp, pattern) => `---
+title: "Fixme"
 ---
 
 <Pattern${capitalize(comp)} pattern='${pattern}' />

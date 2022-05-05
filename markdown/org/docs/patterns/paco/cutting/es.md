@@ -1,3 +1,7 @@
+- - -
+title: "Paco pants: Cutting Instructions"
+- - -
+
 <Tip>
 
 ###### Cut out only what you need

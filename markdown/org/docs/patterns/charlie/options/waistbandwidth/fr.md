@@ -1,7 +1,10 @@
 - - -
+title: "Waistband width"
 - - -
-Contrôle la largeur de la ceinture.
 
+
+Controls the width of the waistband.
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_waistbandwidth_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_waistbandwidth_sample.svg "Effect of this option on the pattern")

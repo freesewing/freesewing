@@ -1,7 +1,7 @@
 ---
-title: Taille-Schritt-Taille
+title: Taille-Schritt-Taille Maß
 ---
 
-Die **Kreuznaht** wird von der Taillenlinie vorne durch die Beine auf die Rückseite gemessen.
+Das Maß **Taille-Schritt-Taille** wird von der Taille zwischen den Beinen hindurch zum Rücken gemessen.
 
-Um Ihre **Quernaht** zu messen, binden Sie einen String um Ihre Taille. Then, measure down from the center front of your waist going through your legs back up to the back until you meet the string at your waist.
+Um dein **Taille-Schritt-Taille-Maß** zu messen, binde dir einen Faden um deine Taille. Miss dann den Abstand von der vorderen Mitte deiner Taille durch die Beine hindurch zurück zum Taillenfaden am Rücken.

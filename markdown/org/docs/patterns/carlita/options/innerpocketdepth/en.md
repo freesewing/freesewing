@@ -1,3 +1,7 @@
+---
+title: "Inner pocket depth"
+---
+
 Controls the depth of the inner pocket.
 
 ## Effect of this option on the pattern

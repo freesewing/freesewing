@@ -1,3 +1,7 @@
+---
+title: "Waralee wrap pants: What You Need"
+---
+
 To make Waralee, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)

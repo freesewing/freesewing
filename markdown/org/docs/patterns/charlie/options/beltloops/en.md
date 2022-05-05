@@ -1,3 +1,7 @@
+---
+title: "Belt loops"
+---
+
 Constrol how many beltloops we'll generate.
 
 ## Effect of this option on the pattern

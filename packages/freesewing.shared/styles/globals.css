@@ -23,7 +23,7 @@
   .mdx a:hover { @apply text-secondary-focus decoration-2 decoration-current }
   .mdx ul { @apply pl-4 list-disc list-inside text-base-content }
   .mdx ol { @apply pl-4 list-decimal list-inside text-base-content }
-  .mdx code { @apply bg-base-200 px-2 py-0.5 rounded }
+  .mdx code { @apply bg-accent bg-opacity-10 px-2 rounded text-accent }
   .mdx pre code { @apply bg-inherit }
   .mdx span.icon.icon-link:before {
     content: '#';

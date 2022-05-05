@@ -1,5 +1,7 @@
 ---
-title: Back armhole curvature
+title: "Back armhole curvature"
+---
+
 ---
 
 ![The effect of the back armhole curvature option on the pattern](sample.png)

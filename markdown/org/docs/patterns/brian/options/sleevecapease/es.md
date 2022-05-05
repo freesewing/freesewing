@@ -1,5 +1,10 @@
+- - -
+title: "Sleevecap ease"
+- - -
 
-Determina la cantidad de facilidad de manga.
+---
+
+This option determines the amount of ease at the sleevecap.
 
 <Note>
 
@@ -11,4 +16,5 @@ Para tejidos ligeros o tejidos, usted quiere poco a ningún manga fácil. Para t
 </Note>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](brian_sleevecapease_sample.svg "Efecto de esta opción en el patrón")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapease_sample.svg "Effect of this option on the pattern")

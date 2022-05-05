@@ -1,3 +1,7 @@
+- - -
+title: "Walburga Wappenrock: Sewing Instructions"
+- - -
+
 <Note>
 
 Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Te haces.

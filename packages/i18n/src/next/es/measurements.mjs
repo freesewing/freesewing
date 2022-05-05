@@ -33,6 +33,7 @@ const measurements = {
   "upperLeg": "Contorno de alto de pierna",
   "waist": "Circunferencia de Waist",
   "waistBack": "Volver",
+  "waistToArmhole": "Waist to armhole",
   "waistToFloor": "Llave al suelo",
   "waistToHips": "Espera a caderas",
   "waistToKnee": "Espera a rodilla",

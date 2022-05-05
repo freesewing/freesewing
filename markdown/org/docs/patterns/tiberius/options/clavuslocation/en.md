@@ -1,3 +1,7 @@
+---
+title: "Clavus location"
+---
+
 Controls the location of the clavi
 
 ## Effect of this option on the pattern

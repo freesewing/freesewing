@@ -4,4 +4,4 @@ title: Handgelenksumfang
 
 Der **Handgelenkumfang** ist der Umfang deines Handgelenks.
 
-Um deinen **Handgelenkumfang**zu messen, führe das Bandmaß um deinen Handgelenk herum aus, wo dein Arm deine Hand verbindet.
+Um deinen **Handgelenkumfang**zu messen, führe das Maßband um deinen Handgelenk herum, dort wo dein Arm sich mit deiner Hand verbindet.

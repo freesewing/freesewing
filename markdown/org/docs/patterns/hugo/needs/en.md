@@ -1,3 +1,7 @@
+---
+title: "Hugo hoodie: What You Need"
+---
+
 To make Hugo, you will need the following:
 
 - Basic sewing supplies

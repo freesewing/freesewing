@@ -1,3 +1,7 @@
+---
+title: "Number of buttons"
+---
+
 Controls the amount of buttons.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Hugo hoodie: Sewing Instructions"
+---
+
 <Note>
 
 ###### Documentation under construction

@@ -4,13 +4,12 @@ import Pattern from './pattern'
 const hide = () => false
 
 export default function Design(config, plugins = false, conditionalPlugins = false) {
-
   // Add default hide() method to config.options
   for (const option in config.options) {
     if (typeof config.options[option] === 'object') {
       config.options[option] = {
         hide,
-        ...config.options[option]
+        ...config.options[option],
       }
     }
   }

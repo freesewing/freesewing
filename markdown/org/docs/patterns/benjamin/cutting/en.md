@@ -1,3 +1,7 @@
+---
+title: "Benjamin bow tie: Cutting Instructions"
+---
+
 Benjamin is a rather simple pattern, but your options will determine what
 needs to be cut out. Below are two typical layouts.
 

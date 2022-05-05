@@ -1,5 +1,5 @@
 ---
-title: Wat je nodig hebt
+title: "Florence face mask: What You Need"
 ---
 
 Om een Florence masker te maken heb je het volgende nodig:

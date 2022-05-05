@@ -8,15 +8,15 @@ Versuche es entweder mit einer anderen E-Mail-Adresse, oder [melde dich bei uns]
 
 <Note>
 
-##### Users in France are more likely to run into this problem
+##### Nutzer in Frankreich werden eher mit folgendem Problem konfrontiert
 
-In France, several E-mail providers share the same filtering:
+In Frankreich haben einige E-Mail Provider dieselben Filtereinstellungen:
 
-- free.fr
-- laposte.net
-- organge.fr
-- sfr.fr
+ - free.fr
+ - laposte.net
+ - organge.fr
+ - sfr.fr
 
-They are all known to cause issues with deliveries.
+Hier gibt es bekannte Probleme und die E-Mails kommen nicht an.
 
 </Note>

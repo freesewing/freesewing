@@ -1,3 +1,7 @@
+---
+title: "Seat ease"
+---
+
 Controls the amount of ease at your seat/bum.
 
 ## Effect of this option on the pattern

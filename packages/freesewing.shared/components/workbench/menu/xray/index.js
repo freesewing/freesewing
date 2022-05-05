@@ -1,5 +1,6 @@
 import XrayIcon from 'shared/components/icons/xray.js'
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
+import Log from './log.js'
 import Reset from './reset.js'
 import Disable from './disable.js'
 import List from './list.js'
@@ -38,6 +39,7 @@ const Xray = props => {
       {props.gist?._state?.xray?.enabled && (
         <Ul>
           <Disable {...props} />
+          <Log {...props} />
           <Reset {...props} />
           {
             props.gist?._state?.xray?.parts &&

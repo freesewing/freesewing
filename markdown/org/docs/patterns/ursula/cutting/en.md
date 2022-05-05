@@ -1,3 +1,7 @@
+---
+title: "Ursula undies: Cutting Instructions"
+---
+
 Ursula consists of a front, a back, and a lined gusset.
 
 - **Main fabric**

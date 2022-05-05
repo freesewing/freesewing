@@ -1,3 +1,7 @@
+---
+title: "Head ease"
+---
+
 The amount of ease around your head.
 
 ## Effect of this option on the pattern

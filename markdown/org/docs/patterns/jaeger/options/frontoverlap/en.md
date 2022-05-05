@@ -1,3 +1,7 @@
+---
+title: "Front overlap"
+---
+
 How far the fabric extends beyond the button closure.
 
 ## Effect of this option on the pattern

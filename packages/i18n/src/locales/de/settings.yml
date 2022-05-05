@@ -33,9 +33,9 @@ scale:
   title: Beschriftungsgröße
   description: "Steuert die allgemeine Linienbreite, Schriftgröße und andere Elementgrößen, \nbeeinflusst jedoch nicht den Maßstab des Schnittmusters selbst"
 renderer:
-  title: Render engine
-  description: Controls how the pattern is rendered (drawn) on the screen
+  title: Render Engine
+  description: Legt fest, wie das Muster auf dem Bildschirm gerendert (gezeichnet) wird
 xray:
-  title: X-ray
-  description: Look under the hood with FreeSewing's X-ray mode
+  title: Röntgen
+  description: Mit FreeSewings Röntgenmodus unter die Haube schauen
 

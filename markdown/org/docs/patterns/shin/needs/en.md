@@ -1,3 +1,7 @@
+---
+title: "Shin swim trunks: What You Need"
+---
+
 To make Shin, you will need the following:
 
 - Basic sewing supplies

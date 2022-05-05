@@ -1,3 +1,7 @@
+---
+title: "Front pocket"
+---
+
 Whether to include a front pocket or not
 
 ## Effect of this option on the pattern

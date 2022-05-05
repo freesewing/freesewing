@@ -1,5 +1,5 @@
 ---
-title: Holmes Constructie
+title: "Holmes deerstalker hat: Sewing Instructions"
 ---
 
 ### Stap 1: Voorbereiden van de stukjes

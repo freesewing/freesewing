@@ -38,7 +38,7 @@ export default {
     advanced: [
       { bellaDarts: ['backDartHeight'] },
       { bellaArmhole: ['armholeDepth', 'frontArmholePitchDepth'] },
-      { bellaAdvanced: ['frontShoulderWidth', 'fullChestEaseReduction', 'highBustWidth'] },
+      { bellaAdvanced: ['frontShoulderWidth', 'fullChestEaseReduction', 'highBustWidth', 'shoulderToShoulderEase'] },
     ],
   },
   measurements: [
@@ -78,7 +78,6 @@ export default {
     shoulderSlopeBack: 1.23,
     neckWidthBack: 0.197,
     neckWidthFront: 0.17,
-    shoulderToShoulderCorrection: 0.995,
     backDartLocation: 0.145,
     backCenterWaistReduction: 0.35,
     collarFactor: 0.19,
@@ -97,6 +96,7 @@ export default {
     chestEase: { pct: 11, min: 5, max: 20 },
     bustSpanEase: { pct: 10, min: 0, max: 20 },
     //Bella Advanced
+    shoulderToShoulderEase: { pct: -0.5, min: -1, max: 5 },
     backDartHeight: { pct: 46, min: 38, max: 54 },
     armholeDepth: { pct: 44, min: 38, max: 46 },
     frontArmholePitchDepth: { pct: 29, max: 31, min: 27 },

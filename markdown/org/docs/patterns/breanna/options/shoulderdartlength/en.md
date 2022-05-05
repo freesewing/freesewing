@@ -1,3 +1,7 @@
+---
+title: "Shoulder dart length"
+---
+
 The length of the back shoulder dart.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,7 @@
+---
+title: "Fly curve"
+---
+
 This controls the curvature of the fly's J-seam.
 
 ## Effect of this option on the pattern

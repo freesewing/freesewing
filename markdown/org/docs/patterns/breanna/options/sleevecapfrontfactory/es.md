@@ -1,6 +1,10 @@
-![La posición vertical del punto de inflexión frontal](./sleevecapfrontfactory.svg)
+- - -
+title: "Sleevecap front Y"
+- - -
 
-Esta opción controla la colocación vertical del punto de inflexión de manga en la parte frontal de la manga.
+![The vertical location of the front inflection point](./sleevecapfrontfactory.svg)
+
+This option controls the vertical placement of the sleevecap inflection point at the front of the sleeve.
 
 <Tip>
 
@@ -10,4 +14,5 @@ en profundidad cómo se construye la manga y la influencia de las diferentes opc
 </Tip>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](breanna_sleevecapfrontfactory_sample.svg "Efecto de esta opción en el patrón")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapfrontfactory_sample.svg "Effect of this option on the pattern")

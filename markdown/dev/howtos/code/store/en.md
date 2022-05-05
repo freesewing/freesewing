@@ -30,4 +30,4 @@ export default function(part) {
 ```
 
 In a case like this, the order in which parts are drafted becomes important, so you
-should reflect that in the [pattern configuration](/reference/config/).
+should reflect that in the [pattern configuration](/reference/api/config/).

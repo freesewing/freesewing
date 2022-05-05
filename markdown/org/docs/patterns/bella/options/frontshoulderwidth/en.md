@@ -1,5 +1,7 @@
 ---
-title: Front shoulder width
+title: "Front shoulder width"
+---
+
 ---
 
 ![The effect of the front shoulder width option on the pattern](sample.png)

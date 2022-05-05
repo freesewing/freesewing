@@ -1,3 +1,7 @@
+---
+title: "Cuff button rows"
+---
+
 ![Cuff button rows](cuffbuttonrows.svg)
 
 Do you want a single button on your barrelcuff, or two?

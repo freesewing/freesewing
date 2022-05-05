@@ -1,3 +1,7 @@
+---
+title: "Back pocket depth"
+---
+
 Controls the depth of the back pocket bag.
 
 ## Effect of this option on the pattern

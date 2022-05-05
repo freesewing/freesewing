@@ -1,3 +1,7 @@
+---
+title: "Diana draped top: Fabric Options"
+---
+
 This top works best in one of these two scenarios:
 
 - Use a stretch fabric, and chose minimal ease

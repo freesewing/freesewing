@@ -9,7 +9,7 @@ The pattern configuration holds important information about the pattern
 
 </Example>
 
-A pattern's [configuration](/reference/config/) is created by the pattern designer
+A pattern's [configuration](/reference/api/config/) is created by the pattern designer
 and details a number of important things about the pattern, like:
 
 - The **measurements** that are required to draft the pattern

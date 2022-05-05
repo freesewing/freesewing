@@ -1,3 +1,7 @@
+---
+title: "Simon shirt: Sewing Instructions"
+---
+
 <Tip>
 
 ##### Follow the sew-along with Kelly and Julian

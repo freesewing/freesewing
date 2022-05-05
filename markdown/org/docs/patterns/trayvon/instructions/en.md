@@ -1,3 +1,7 @@
+---
+title: "Trayvon tie: Sewing Instructions"
+---
+
 <Tip>
 
 ###### Just the tip

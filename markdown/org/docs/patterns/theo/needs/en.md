@@ -1,3 +1,7 @@
+---
+title: "Theo trousers: What You Need"
+---
+
 To make Theodore, you will need the following:
 
 - Basic sewing supplies

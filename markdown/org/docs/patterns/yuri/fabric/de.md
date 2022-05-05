@@ -1,14 +1,17 @@
-In einem Stoffgeschäft deiner Wahl findest du eine spezielle Sweatshirt-/Tracksuit Stoffabteilung. Wenn nicht, schaue einfach nach der Strickwarensektion und suche nach einem dickeren und bequemen Strickstoff.
+- - -
+title: "Yuri hoodie: Fabric Options"
+- - -
 
-Was die Fasern betrifft kannst du dich komplett für Baumwolle entscheiden oder eine Poly- oder Acryl-Baumwoll-Mischung nehmen.
+You may find a dedicated sweatshirt/tracksuit fabric section in your fabric store of choice. If you don't, just head for the knitwear section and look for a thicker comfortable knit fabric.
 
-Achte auf die Innenseite des Stoffes. Sweatshirt-Stoffe kommen in loopback und zurückgebürstet. Wenn du dieses OMG-es-fühlt-sich-so-weich-an-auf-meiner-Haut Gefühl haben willst, wähle gebürstet.
+As far as fibers go, you can go all cotton, or opt for a poly or acryl cotton blend.
+
+Make sure to pay attention to the inside of the fabric. Sweatshirt fabrics come in loopback and brushed back. If you want that OMG-it-feels-so-soft-on-my-skin feeling, go for brushed.
 
 <Note>
 
 Du musst keinen Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, vom modischen Neopren (aka scuba) bis hin zu einer exzentrischen Wahl wie gebrochener Velour (aka Samt).
- 
+
 Oder wenn du deine Klasse aufgegeben hast, kannst du nach Fleece greifen.
 
 </Note>
-

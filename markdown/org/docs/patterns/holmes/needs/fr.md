@@ -1,5 +1,5 @@
 ---
-title: Holmes ce dont vous avez besoin
+title: "Holmes deerstalker hat: What You Need"
 ---
 
 Pour faire des Holmes, vous aurez besoin des éléments suivants :

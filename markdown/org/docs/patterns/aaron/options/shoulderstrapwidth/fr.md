@@ -1,7 +1,11 @@
-![L'option de largeur de bretelles sur Aaron](./shoulderstrapwidth.svg)
+- - -
+title: "Shoulderstrap width"
+- - -
 
-Détermine la largeur des bretelles.
+![The shoulder strap width option on Aaron](./shoulderstrapwidth.svg)
+
+Determines the width of the shoulder straps.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_shoulderstrapwidth_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_shoulderstrapwidth_sample.svg "Effect of this option on the pattern")

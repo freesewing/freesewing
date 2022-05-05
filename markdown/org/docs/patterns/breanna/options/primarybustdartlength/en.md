@@ -1,3 +1,7 @@
+---
+title: "Bust dart length"
+---
+
 The length of the primary bust dart.
 
 ## Effect of this option on the pattern

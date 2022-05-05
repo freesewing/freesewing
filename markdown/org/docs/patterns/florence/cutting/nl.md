@@ -1,5 +1,5 @@
 ---
-title: Knippen
+title: "Florence face mask: Cutting Instructions"
 ---
 
 Florence only has one part, the _mask_. Dit is de helft van het masker, dus zullen we er twee nodig hebben. Daarnaast willen we een buitenste en binnenste laag van stof zodat we er in totaal vier nodig hebben:

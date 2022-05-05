@@ -1,3 +1,7 @@
+---
+title: "Ankle/Hem elastic width"
+---
+
 If you're using an elasticated hem at the ankle, use this to set the width
 of the elastic you'll use.
 

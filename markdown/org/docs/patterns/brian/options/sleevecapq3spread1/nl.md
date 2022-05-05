@@ -1,6 +1,12 @@
-![De opwaartse spreiding in de thrid quadrant van de mouwkop](./sleevecapq3spread1.svg)
+- - -
+title: "Sleevecap Q3 upward spread"
+- - -
 
-Deze optie controleert de opwaartse spreiding in de derde quadrant van de mouwkop.
+---
+
+![The upward spread in the thrid quadrant of the sleevecap](./sleevecapq3spread1.svg)
+
+This option controls the upward spread in the third quadrant of the sleevecap.
 
 <Tip>
 
@@ -10,4 +16,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](brian_sleevecapq3spread1_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapq3spread1_sample.svg "Effect of this option on the pattern")

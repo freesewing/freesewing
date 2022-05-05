@@ -1,3 +1,7 @@
+---
+title: "Back opening"
+---
+
 Controls the amount of opening at the back of your apron.
 
 ## Effect of this option on the pattern

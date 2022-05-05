@@ -1,3 +1,7 @@
+---
+title: "Penelope pencil skirt: What You Need"
+---
+
 To make Penelope, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)

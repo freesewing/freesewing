@@ -1,3 +1,7 @@
+- - -
+title: "Theo trousers: Cutting Instructions"
+- - -
+
 - **Tela principal**
   - Corta **2 atrás(s)** con buenos lados juntos
   - Corta **2 frente(s)** con buenos lados juntos

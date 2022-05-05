@@ -1,3 +1,7 @@
+---
+title: "Wahid waistcoat: Sewing Instructions"
+---
+
 ### Step 1: Fuse interfacing
 
 #### Press interfacing to pocket welts

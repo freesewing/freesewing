@@ -1,3 +1,7 @@
+---
+title: "Elastic width"
+---
+
 > #### What's the point?
 >
 > This option is closely linked to the **rise** option that determines how high your swim trunks will rise on your waist.

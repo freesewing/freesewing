@@ -1,6 +1,10 @@
+- - -
+title: "Tamiko top: Sewing Instructions"
+- - -
+
 ### Paso 1: Termina la costura del orificio
 
-![Encender la costura del orificio](step03.png)
+![Finsh the armhole seam](step03.png)
 
 - Finish the armhole seam with a narrow hem.
 

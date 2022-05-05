@@ -1,4 +1,8 @@
-**Tela principal**
+- - -
+title: "Brian body block: Cutting Instructions"
+- - -
+
+**Main fabric**
 
 - Cut **1 Front** part on the fold.
 - Cut **1 Back** part on the fold.

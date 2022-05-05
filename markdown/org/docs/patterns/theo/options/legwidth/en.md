@@ -1,3 +1,7 @@
+---
+title: "Leg width"
+---
+
 Controls the width of the legs.
 
 <Note>

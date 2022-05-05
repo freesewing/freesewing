@@ -1,4 +1,5 @@
 ---
+title: "Breanna body block: Design Options"
 ---
 
 <PatternOptions pattern='breanna' />

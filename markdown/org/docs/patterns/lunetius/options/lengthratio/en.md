@@ -1,3 +1,7 @@
+---
+title: "Length ratio"
+---
+
 Controls the length of the garment
 
 ## Effect of this option on the pattern

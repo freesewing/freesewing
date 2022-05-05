@@ -1,5 +1,5 @@
 ---
-title: Cornelius Fabric options
+title: "Cornelius cycling breeches: Fabric Options"
 ---
 
 ### Main Fabric

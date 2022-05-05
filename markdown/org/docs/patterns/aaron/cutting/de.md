@@ -1,3 +1,7 @@
+- - -
+title: "Aaron A-Shirt: Cutting Instructions"
+- - -
+
 - Schneide **1 Rückenteil** im Stoffbruch
 - Schneide **1 Vorderteil** im Stoffbruch
 - Schneide **3 Streifen** für Halsöffnung und Armlochbindung

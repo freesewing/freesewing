@@ -1,5 +1,5 @@
 ---
-title: Taille bis Hüfte
+title: Taille zur Hüfte
 ---
 
-The **waist to hips** measurement is measured from your waist down to the top of your hip bone (where your trousers sit). Miss dies an der Seite deines Körpers aus.
+Das **Taille zur Hüfte ** Maß wird von deiner Taille bis zur Oberkante deines Hüftknochens gemessen (dort wo deine Hose sitzt). Miss dies an der Seite deines Körpers aus.

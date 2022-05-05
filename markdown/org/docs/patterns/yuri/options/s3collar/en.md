@@ -1,3 +1,7 @@
+---
+title: "Shoulder seam shift: collar side"
+---
+
 Controls the shoulder seam location on the collar side.
 
 - Increase this option to shift the shoulder seam forward on the collar side

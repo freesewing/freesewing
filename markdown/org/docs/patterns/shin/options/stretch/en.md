@@ -1,3 +1,7 @@
+---
+title: "Stretch"
+---
+
 The amount of overal (horizontal) stretch.
 
 ## Effect of this option on the pattern

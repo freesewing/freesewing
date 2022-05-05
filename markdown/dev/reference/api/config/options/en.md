@@ -129,7 +129,7 @@ to determine whether an option should be shown or not.
 
 [const]: /reference/api/config/options/const
 
-[count]: /reference/api/config/options/count
+[count]: /reference/api/config/options/counter
 
 [deg]: /reference/api/config/options/deg
 

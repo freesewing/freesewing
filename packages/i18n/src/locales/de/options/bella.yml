@@ -8,9 +8,12 @@ waistEase:
 bustSpanEase:
   title: Zugabe seitlicher Brustbereich
   description: "Steuert die Größe der (horizontalen) Zugabe, zu deinem seitlichen Brustbereich, \nwenn Brustpunkt berechnet wird."
+shoulderToShoulderEase:
+  title: Zugabe des Schulterabstandes
+  description: Kontrolliert die Menge an Zugabe zwischen deinen Schultern. Liegt inital bei -0,5%, da Bella ein Grundschnitt erfüllt, welcher in der Branche verwendet wird.
 fullChestEaseReduction:
-  title: Full chest ease reduction
-  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+  title: Verringerung der Brustumfangszugabe
+  description: Ermöglicht es dir den Spielraum an der Brust zu verringern, um dort einen engeren Sitz zu ermöglichen
 backDartHeight:
   title: Höhe Rückenabnäher
   description: Steuert die Höhe des Rückenabnähers
@@ -28,7 +31,7 @@ armholeDepth:
   description: Steuert die Tiefe des Armloches
 backArmholeSlant:
   title: Hintere Armlochschiebung
-  description: Das Rüstungsloch dreht sich leicht um seinen Pitchpunkt
+  description: Dreht das Armloch leicht in seinem Drehpunkt
 frontArmholeCurvature:
   title: Vordere Armlochkrümmung
   description: Steuert wie tief das Armloch nach vorne unten ausgeschnitten ist
@@ -36,16 +39,16 @@ backArmholeCurvature:
   title: Hintere Armlochkrümmung
   description: Steuert wie tief das Armloch nach hinten unten ausgeschnitten ist
 frontArmholePitchDepth:
-  title: Front-Armloch-Tiefe
+  title: Vordere Armlochtiefe
   description: Stellt die horizontale Position des Vorderarmlochpunktes fest
 backArmholePitchDepth:
   title: Rückenarmloch-Tiefe
   description: Stellt die horizontale Position des Rückenlochpunktes fest
 backNeckCutout:
   title: Ausschnitt im Nacken
-  description: Steuert wie tief die Halsöffnung auf der Rückseite abgesogen wird
+  description: Steuert, wie tief der Nackenausschnit am Rücken ausfällt
 backHemSlope:
-  title: Hinterer Saum Hang
+  title: Neigung des hinteren Saumes
   description: Steuert den Hang des Saum auf der Rückseite
 frontShoulderWidth:
   title: Vordere Schulterbreite

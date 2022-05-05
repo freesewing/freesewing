@@ -1,3 +1,7 @@
+---
+title: "Biceps ease"
+---
+
 The amount of ease at your upper arm.
 
 ## Effect of this option on the pattern

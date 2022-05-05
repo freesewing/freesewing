@@ -1,3 +1,7 @@
+---
+title: "Seamless full circle"
+---
+
 ![Seamless full circle](seamlessfullcircle.svg)
 
 Select 'yes' for a seamless circle, which is cut on a double fold.

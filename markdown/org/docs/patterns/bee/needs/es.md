@@ -1,5 +1,5 @@
 ---
-title: Bee Qué necesitas
+title: "Bee bikini top: What You Need"
 ---
 
 Para hacer Bee, necesitarás lo siguiente:

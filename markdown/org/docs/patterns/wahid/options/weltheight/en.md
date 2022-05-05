@@ -1,3 +1,7 @@
+---
+title: "Welt height"
+---
+
 Controls the height of the pocket welts.
 
 ## Effect of this option on the pattern

@@ -1,3 +1,9 @@
+---
+title: "Sleevecap back Y"
+---
+
+---
+
 ![The vertical location of the back inflection point](./sleevecapbackfactory.svg)
 
 This option controls the vertical placement of the sleevecap inflection point at the back of the sleeve.

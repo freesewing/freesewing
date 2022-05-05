@@ -1,5 +1,7 @@
 ---
-title: Armhole depth
+title: "Armhole depth"
+---
+
 ---
 
 ![The effect of the armhole depth option on the pattern](sample.png)

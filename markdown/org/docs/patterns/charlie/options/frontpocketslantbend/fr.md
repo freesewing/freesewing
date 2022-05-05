@@ -1,6 +1,9 @@
+- - -
+title: "Front pocket slant bend"
+- - -
 
-Contrôle le rayon par lequel on arrondit la poche enfoncée à l'extérieur.
-
+Controls the radius by which we round the pocket slant into the outseam.
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_frontpocketslantbend_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantbend_sample.svg "Effect of this option on the pattern")

@@ -1,5 +1,5 @@
 ---
-title: Holmes Knippen
+title: "Holmes deerstalker hat: Cutting Instructions"
 ---
 
 Het **kroon** patroonstuk moet geknipt worden aan de stofvouw om een heel stuk te maken.

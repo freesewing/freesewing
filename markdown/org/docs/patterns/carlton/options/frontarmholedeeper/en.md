@@ -1,3 +1,7 @@
+---
+title: "Front armhole extra cutout"
+---
+
 Controls how much the front of the armhole is cut deeper into the garment than the back.
 
 Since the human shoulder is more rounded at the front of the body, the sleeve(cap) is more

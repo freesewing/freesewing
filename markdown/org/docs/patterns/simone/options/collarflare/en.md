@@ -1,3 +1,7 @@
+---
+title: "Collar flare"
+---
+
 ![Collar flare](collarflare.svg)
 
 How much the collar flares out (at the collar edge side), rather than being straight.

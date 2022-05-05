@@ -1,7 +1,11 @@
-![De optie voor stretch bij Bruce](./stretch.svg)
+- - -
+title: "Stretch"
+- - -
 
-De hoeveelheid (horizontaal) stretch.
+![The stretch option on Bruce](./stretch.svg)
 
+The amount of overall (horizontal) stretch.
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bruce_stretch_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](bruce_stretch_sample.svg "Effect of this option on the pattern")

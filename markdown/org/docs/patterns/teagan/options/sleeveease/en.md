@@ -1,3 +1,7 @@
+---
+title: "Sleeve ease"
+---
+
 Controls the amount of ease at the sleeve/your arm.
 
 ## Effect of this option on the pattern

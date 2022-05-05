@@ -1,3 +1,7 @@
+---
+title: "Cuff ease"
+---
+
 The amount of ease at your cuff/wrist.
 
 ## Effect of this option on the pattern

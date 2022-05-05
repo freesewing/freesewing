@@ -2,14 +2,14 @@
 title: Edgestitching
 ---
 
-Edgestitching is a speficic type of _topstitching_. It is specific because of its location. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
+Edgestitching is a speficic type of _topstitching_. It is specific because of its location. Hierbei wird je nach Abstand zur Naht unter anderem das knappkantige (ca. 3mm bzw. 1/8 inch), oder auch das füßchenbreite (Nähfußkante als Abstandhalter) Absteppen unterschieden.
 
 ![Edgestitching on a FreeSewing Hugo Hoodie](edgestitching.jpg)
 
-Edgestitching can be used to reinforce seams, to keep material in place by sewing down seam allowance or lining, and for decorative effect.
+Das Absteppen von Nähten verstärkt die Naht, sorgt dafür, dass Nahtzugaben oder Futter nicht verrutscht und hat einen dekorativen Effekt.
 
 <Tip>
 
-For best results, use a sewing needle for optimized for topstitching
+Um die besten Ergebnisse zu erzielen, verwende eine Steppnadel.
 
 </Tip>

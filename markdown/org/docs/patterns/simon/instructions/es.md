@@ -1,3 +1,7 @@
+- - -
+title: "Simon shirt: Sewing Instructions"
+- - -
+
 <Tip>
 
 ##### Siga la costura junto con Kelly y Julian
@@ -13,13 +17,13 @@ site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboo
 
 ### Paso 1: Fusionar interfaz
 
-![Interfaz de corte fundido](1a.png) ![Fuse collar interfacing](1b.png)
+![Fuse cuff interfacing](1a.png) ![Fuse collar interfacing](1b.png)
 
 #### Interfaz de prensa a tazas
 
-Para hacer dos tacos, has cortado tu pieza de corte cuatro veces en tela y dos veces en interfaz.
+To make two cuffs, you have cut out your cuff piece four times in fabric, and twice in interfacing.
 
-Para cada tazón, presione la pieza de enganche hacia el lado malo de la pieza.
+For each cuff, press the interfacing piece to the bad side of the cuff piece.
 
 > Si el interior y el exterior de tu taza son el mismo tejido, no importa a qué pieza de corte lo pulsas.
 > 
@@ -33,17 +37,17 @@ Para cada tazón, presione la pieza de enganche hacia el lado malo de la pieza.
 
 #### Press interfacing to collar, undercollar and collar stand
 
-Para hacer tu collar, tienes que cortar un collar, un collar y dos soportes de collar. Todo esto tanto en tela como en interfaces.
+To make your collar, you need to cut one undercollar, one collar, and two collar stands. All of this both in fabric and interfacing.
 
-Para cada picoteo, presione la pieza de enlace hacia el lado malo.
+For each piece, press the interfacing piece to the bad side.
 
 ### Paso 2: Prepara los cuffs
 
 #### Difunde juntos
 
-![Difundir los cortes juntos](2a.png)
+![Sew the cuffs together](2a.png)
 
-Coloque ambas partes del corte (una con interfaces, otra sin interfaz) junto con los lados buenos, y coser juntos en la costura estándar.
+Place both parts of your cuff (one with interfacing, one without) together with the good sides, and sew them together at the standard seam allowance.
 
 > **Ensure you**
 > 
@@ -52,13 +56,13 @@ Coloque ambas partes del corte (una con interfaces, otra sin interfaz) junto con
 
 #### Recortar permisos de costura
 
-![Recortar la costura](2b.png)
+![Trim the seam allowance](2b.png)
 
 Before we flip your cuff over, we need to trim back the seam allowance to remove bulk.
 
 #### Presione la costura posterior
 
-![Presione la costura posterior](2c.png)
+![Press back seam allowance](2c.png)
 
 Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
 
@@ -66,13 +70,13 @@ Fold back the seam allowances on each side of the cuff where the cuff attaches t
 
 #### Da la vuelta y presiona
 
-![Da la vuelta y presiona](2d.png)
+![Turn the cuff around and press](2d.png)
 
-Invierte el coño con los lados buenos, y dale una buena prensa.
+Flip your cuff with the good sides out, and give it a good press.
 
 > When pressing your cuffs, make sure to roll the seam a bit to the backside of the cuff to guarantee that the inner fabric of the cuff is not visible.
 
-Ahora puedes dejar tus cortes a un lado, los adjuntaremos más tarde.
+You can now put your cuffs aside, we'll attach them later.
 
 ### Paso 3: Prepara el cuello
 
@@ -80,19 +84,19 @@ Ahora puedes dejar tus cortes a un lado, los adjuntaremos más tarde.
 
 ![Sew collar and undercollar together](3a.png)
 
-Coloque ambas partes de cuello junto con los lados buenos, y coser juntos en la costura estándar.
+Place both collar parts together with the good sides, and sew them together at the standard seam allowance.
 
 #### Recortar permisos de costura
 
-![Recortar la costura](3b.png)
+![Trim the seam allowance](3b.png)
 
 Before we flip your collar over, we need to trim back the seam allowance to remove bulk.
 
 #### Gira el collar y presiona
 
-![Girar el cuello y pulsar](3c.png)
+![Turn the collar and press](3c.png)
 
-Voltee el cuello con los lados buenos, obtenga esos consejos tan puntiagudos como sea posible, y le dé una buena prensa.
+Flip your collar with the good sides out, get those tips as pointy as possible, and give it a good press.
 
 > Cuando presione el cuello, recuerde que el guante inferior es un poco más estrecho.
 > 
@@ -100,9 +104,9 @@ Voltee el cuello con los lados buenos, obtenga esos consejos tan puntiagudos com
 
 #### Cuello de empate
 
-![Unir el cuello](3d.png)
+![Top-stitch the collar](3d.png)
 
-Mezclar a lo largo del borde del cuello. Esto bloquea la costura y hace un aspecto crujiente.
+Top-stitch along the edge of the collar. This locks down the seam allowance and makes for a crisp look.
 
 > Qué tan lejos de la parte superior del borde es una elección de estilo. A menudo es un poco menor que la franquicia de costura estándar. Echa un vistazo a algunas camisetas existentes para hacerte una idea.
 
@@ -110,11 +114,11 @@ Mezclar a lo largo del borde del cuello. Esto bloquea la costura y hace un aspec
 
 #### Coloca el cuello entre los soportes de cuello y baste en su lugar
 
-![Coloca el cuello entre los soportes de cuello y baste en su lugar](4a.png)
+![Place collar between collar stands and baste in place](4a.png)
 
-Marque el punto medio de su cuello y su cuello esté con un pin. El punto medio de cada stand de cuello está en realidad ligeramente fuera de centro, ya que un extremo es más largo que el otro. En cambio, se encuentra el punto medio entre las dos notas.
+Mark the middle point of your collar and your collar stands with a pin. The middle point of each collar stand is actually slightly off-center since one end is longer than the other. Instead, find the middle point between the two notches.
 
-Primero coloca un soporte de cuello con el lado bueno, luego tu cuello con el guante hacia arriba (y el lado no coser en la parte superior), y finalmente el segundo cuello con el lado bueno abajo.
+First place a collar stand with the good side up, then your collar with the undercollar facing up (and the non-sewn side at the top), and finally the second collar stand with the good side down.
 
 Your collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
 
@@ -122,25 +126,25 @@ Your collar should sit between your two collar stands, and the middles (where yo
 > 
 > Para alinear todo esto, vamos a bastarlo juntos, en lugar de fijarlo. Tu cuello es una parte importante de tu camiseta, así que vale la pena degustar esto.
 
-Primero, sustituya los pines marcando el medio por un pin que engancha todas las partes juntos.
+First, replace the pins marking the middle with a pin that pins all parts together.
 
-Ahora, comience a tocar desde este alfiler y trabaje hasta el rincón del cuello, asegurándose de alinear ambos bordes de la tela.
+Now, start basting from this pin and work your way to the corner of the collar, making sure to align both edges of the fabric.
 
-Cuando llegues a la esquina de tu cuello, sigue bajando y golpeando el final de ambas paradas de cuello juntos.
+When you reach the corner of your collar, keep going and baste the end of both collar stands together.
 
-When you've done one side, start from your pin in the middle again and do the other side. Cuando termines de cocido, puedes sacar el pin.
+When you've done one side, start from your pin in the middle again and do the other side. When you're done basting, you can take out the pin.
 
 #### Difunde tu cuello hasta los stands de cuello
 
-![Difunde tu cuello hasta los stands de cuello](4b.png)
+![Sew your collar to the collar stands](4b.png)
 
-Diviértete en el borde de tu quiosco de cuello respetando la franquicia de costura estándar.
+Sew along the edge of your collar stand, respecting the standard seam allowance.
 
 > Asegúrate de parar 2cm antes del borde (dos veces la franquicia estándar de costura) ya que en el siguiente paso vamos a doblar la franquicia de costura y tenemos que dejar los soportes de cuello lo suficientemente separados para deslizar la camisa entre ellos más adelante.
 
 #### Doble hacia atrás y presiona la franquicia de costura
 
-Doblar la costura de su cuello en el lado no coser y presionarlo hacia abajo.
+Fold back the seam allowance of your collar stand on the non-sewn side and press it down.
 
 > En la parte central, pulsar hacia abajo la franquicia de costura será fácil. Pero hacia las puntas de su cuello, hacerlo será complicado sin pulsar pliegues en su cuello.
 > 
@@ -148,65 +152,65 @@ Doblar la costura de su cuello en el lado no coser y presionarlo hacia abajo.
 
 #### Da la vuelta al collar y presiona
 
-![Gira el collar y presiona](4c.png)
+![Turn collar and press](4c.png)
 
-Invierte tu pie de cuello con los lados buenos, y dale una buena prensa. Asegúrate de mantener la franquicia de costura en el stand de cuello doblada hacia dentro.
+Flip your collar stand with the good sides out, and give it a good press. Make sure to keep the seam allowance on the collar stand folded inwards.
 
-Ahora puedes dejar tu cuello a un lado, lo adjuntaremos más tarde.
+You can now put your collar aside, we'll attach it later.
 
 ### Paso 5: Opcional: Empuje en su etiqueta
 
-![Difunde en tu etiqueta](5.png)
+![Sew in your label](5.png)
 
-Nuestro siguiente paso es adjuntarlo. Pero el yugo es un buen lugar para poner tu etiqueta. Así que si quieres hacer eso, podríamos empezar con eso.
+Our next step is to attach the yoke. But the yoke is a great place to put your label. So if you'd like to do that, we might as well start with that.
 
-Elige un yoque, y puedes coser tu etiqueta en el centro (en el lado bueno).
+Pick one yoke, and you can sew your label on it in the center (on the good side).
 
 ### Paso 6: Únete a la espalda
 
-![Únete al yokes hacia atrás](6a.png) ![Presione el yugo](6a.png)
+![Join the yokes to the back](6a.png) ![Press the yoke](6a.png)
 
-Coloque un yugo con el lado bueno arriba. Por encima de eso, coloque la espalda con el lado bueno, alineando la costura donde se debe sujetar al yugo.
+Place one yoke with the good side up. On top of that, place your back with the good side up, aligning the seam where it needs to be attached to the yoke.
 
-Por último, coloque su segundo yugo en la parte superior de la espalda, pero con el lado bueno abajo.
+Finally, place your second yoke on top of the back, but with the good side down.
 
 Your back should now be sandwiched between the good sides of your two yokes.
 
-Si ese es el caso, coser en su lugar a lo largo de la costura/yuga, asegurándose de respetar la costura permitida.
+If that's the case, sew them in place along the back/yoke seam, making sure to respect the seam allowance.
 
 > Si ha añadido una etiqueta en el paso 1, asegúrese de poner el yugo con la etiqueta en el lado malo de la espalda.
 
-Cuando hayas terminado, no olvides darle una buena prensa para que la costura sea plana.
+When you're done, don't forget to give it a good press to make the seam lie flat.
 
 ### Paso 7: Enrollar el yugo
 
-![Encender el yugo](7.png)
+![Edge-stitch the yoke](7.png)
 
-Con tus yemas pegados a la espalda, vamos a doblar a lo largo de la costura que acabamos de hacer, en el lado del yugo.
+With your yokes attached to the back, we are going to edge-stitch along the seam we just made, on the yoke side.
 
 > Doble el yugo interior fuera del camino. Our edge stitching will catch the outer yoke, back and all the seam allowances, but not the inner yoke.
 
-Sólo coser justo al lado de la costura uniendo el yugo exterior a la espalda.
+Just sew right next to the seam joining the outer yoke to the back.
 
 > Encender los bordes es como la parte superior, pero justo al lado de la costura
 
 ### Paso 8: Cierra los dardos traseros
 
-![Doblar la espalda con buenos lados juntos para cerrar los dardos](8a.png) ![Difundir los dardos](8b.png) ![Presiona darts hacia las costuras laterales](8c.png)
+![Fold the back with good sides together to close the darts](8a.png) ![Sew the darts](8b.png) ![Press darts towards the side seams](8c.png)
 
 > Dependiendo de sus mediciones, es posible que su patrón no tenga dardos atrás. En ese caso, pasemos al siguiente paso.
 
-Tu patrón puede o no tener miedo de atrás. Si los tiene, debería cerrarlos ahora.
+Your pattern may or may not have back darts. If it has them, you should close them now.
 
-Coloca la espalda hacia abajo con el buen lado arriba, y llévalo desde la costura lateral para que el pliegue pase de la parte superior a la parte inferior del dardo.
+Place your back down with the good side up, and fold it back from the side seam so the fold runs from the top to the bottom of your dart.
 
-Haga lo mismo con el otro dardo, para que ambos lados se doblen.
+Do the same for the other dart, so that both sides are folded back.
 
-Siéntete libre de pulsar suavemente en este pliegue, te ayudará a coser bien los oscuros.
+Feel free to gently press in this crease, it will help you to neatly sew the darts.
 
-Diviértete a través de la línea marcando el dardo para cerrar las tinieblas. Ten cuidado de asegurarte de que la parte superior e inferior de tus dardos estén exactamente donde tienen que estar. Si un dardo se sienta más alto que el otro, se verá mal.
+Sew across the line marking the dart to close the darts. Be careful to make sure the top and bottom of your darts are precisely where they need to be. If one dart sits higher than the other, it will look bad.
 
-Cuando haya terminado, no olvide darle una buena prensa. Presione la tela extra del dardo hacia las costuras laterales.
+When you're done, don't forget to give it a good press. Press the extra fabric of the dart towards the side seams.
 
 ### Paso 9: Prepara la posición del botón
 
@@ -214,39 +218,39 @@ Cuando haya terminado, no olvide darle una buena prensa. Presione la tela extra 
 
 #### Difusión en la placket de botones
 
-![Difusión en la placket de botones](9a.png)
+![Sew on the button placket](9a.png)
 
-Si ha elegido un botón separado, coser en la parte frontal derecha.
+If you have chosen a separate button placket, sew it to the Front Right piece.
 
-Coloca la parte delantera derecha (pieza 1) abajo con el lado bueno arriba, y coloque el Button Placket (pieza 1b) en la parte superior con el lado bueno, asegurándose de alinear la costura.
+Place the Front Right (piece 1) down with the good side up, and place the Button Placket (piece 1b) on top of it with the good side down, making sure to align the seam.
 
-Lo conserva en su lugar con la posibilidad de costura predeterminada.
+Sew it in place with the default seam allowance.
 
 #### Presione el permiso de costura al lado del placket
 
-Coloque su frente con el lado bueno abajo, y presione el permiso de costura en el lado de la placet.
+Place your front with the good side down, and press the seam allowance to the button placket side.
 
 #### Plegar la placket de botones
 
-![Plegar la placket de botones](9b.png)
+![Fold the button placket](9b.png)
 
-Ahora, plíquese sobre la placket del botón en la primera línea de plegado y presione este pliegue en su lugar.
+Now, fold over the button placket on the first fold line, and press this fold in place.
 
-Luego, doblar la placa otra vez, asegurándose de que la tela se extienda justo más allá de la costura que une tu placket al frente.
+Then, fold the placket over again, making sure to have the fabric extend just beyond the seam that joins your placket to the front.
 
-Cuando estés feliz, presiona la placa plegada.
+When you're happy, press the folded placket.
 
 #### Navegar por la placa plegada
 
-![Navegar por la placa plegada](9c.png)
+![Sew down the folded placket](9c.png)
 
 > Este es el enfoque clásico. Si ha elegido el estilo de placket sin costuras, no tiene que hacer esto.
 > 
 > En lugar de coser la placa, simplemente déjala doblada. Los pliegues se asegurarán cuando sujetemos los botones más tarde.
 
-Desde el lado bueno de la camiseta, coser la placa plegada cruzando la zanja.
+From the good side of your shirt, sew down the folded placket by stitching in the ditch.
 
-Para ello, coser exactamente encima de su costura anterior. Since you folded the fabric of your placket a bit past this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
+To do so, sew exactly on top of your earlier seam. Since you folded the fabric of your placket a bit past this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
 
 ### Paso 10: Prepara el conjunto de posición del botón
 
@@ -256,17 +260,17 @@ Para ello, coser exactamente encima de su costura anterior. Since you folded the
 
 ![Sew on the buttonhole placket](10a.png)
 
-Si ha elegido una placa separada del botón, coser en la parte frontal izquierda.
+If you have chosen a separate buttonhole placket, sew it to the Front Left piece.
 
-Coloca la parte delantera izquierda (pieza 2) abajo con el lado bueno arriba, y coloque el buzón (pieza 2b) en la parte superior con el lado bueno, asegurándose de alinear la costura.
+Place the Front Left (piece 2) down with the good side up, and place the Buttonhole Placket (piece 2b) on top of it with the good side down, making sure to align the seam.
 
-Lo conserva en su lugar con la posibilidad de costura predeterminada.
+Sew it in place with the default seam allowance.
 
-Cuando haya terminado, no olvide darle una buena prensa. Presione la costura hacia el lado de la placa.
+When you're done, don't forget to give it a good press. Press the seam allowance towards the placket side.
 
 #### Presione el permiso de costura al lado del placket
 
-Coloque su frente con el lado bueno abajo, y presione el permiso de costura en el lado de la placeta del orificio.
+Place your front with the good side down, and press the seam allowance to the buttonhole placket side.
 
 #### Entendiendo un clásico conjunto de agujero de botón
 
@@ -274,9 +278,9 @@ Coloque su frente con el lado bueno abajo, y presione el permiso de costura en e
 > 
 > Los siguientes pasos son para una placa clásica de agujero de botón.
 
-![Entendiendo un clásico conjunto de agujero de botón](10b.png)
+![Understanding a classic buttonhole placket](10b.png)
 
-Tu placket tiene un montón de líneas en él, así que primero aclaremos cuáles son:
+Your placket has a bunch of lines on it, so let's first clarify what they are:
 
 - La línea del agujero del botón tiene guiones largos con agujeros de botones en ella. Marca a dónde deben ir los agujeros de los botones
 - Las dos líneas plegables tienen guiones largos y se sientan a una distancia igual a la derecha e izquierda de la línea del orificio del botón
@@ -286,39 +290,39 @@ Tu placket tiene un montón de líneas en él, así que primero aclaremos cuále
 
 > Si ha elegido una placa para crecer, esto no es aplicable.
 
-![Recortar la costura posterior](10c.png)
+![Trim back seam allowance](10c.png)
 
-La franquicia de costura de donde coser la placa del orificio en la parte delantera debe caber dentro de la placa doblada.
+The seam allowance of where you sewed your buttonhole placket to your front should fit inside your folded placket.
 
-Para eso, recorte la franquicia de costura para que no se extienda más allá de la primera línea plegable de la placket.
+For that, trim back the seam allowance so that it doesn't extend beyond the first fold line on the placket.
 
 #### Plegar la placket del agujero del botón
 
-![Plegar la placket del agujero del botón](10d.png) ![Volver a doblar la placket del orificio](10e.png)
+![Fold the buttonhole placket](10d.png) ![Fold the buttonhole placket again](10e.png)
 
-Doblar la placa en la primera línea plegable. Presione el pliegue en su lugar.
+Fold the placket on the first fold line. Press the fold in place.
 
-Después, doblar la parte que acabas de doblar de nuevo, esta vez en la segunda línea doblada. Presione este pliegue también en su lugar.
+Then, fold the part you just folded again, this time on the second fold line. Press this fold in place too.
 
 > Cuando tu placket esté plegado y presionado, coloca unos cuantos pines a lo largo de la longitud de tu placket para evitar que las cosas cambien de lugar
 
 #### Mantiene la placa del agujero del botón
 
-![Divertido en la primera línea](10f.png) ![Divertido en la segunda línea](10g.png)
+![Sew on the first line](10f.png) ![Sew on the second line](10g.png)
 
-En la primera línea de coser, más cercana al borde.
+Sew on the first sew line, closest to the edge.
 
-Luego, voltee la camisa para que el lado bueno esté arriba, y tu placket esté arriba también. Luego coser en la segunda línea de coser.
+Then, flip your shirt over so that the good side is up, and your placket is up too. Then sew on the second sew line.
 
 > Estas dos líneas de la parte superior siempre serán visibles, así que asegúrate de mantenerlas bien claras
 
 #### Pulsar la placket del botón
 
-![Pulsar la placket del botón](10h.png)
+![Press the buttonhole placket](10h.png)
 
-Enhorabuena, has hecho una placa clásica de agujero de botón.
+Congratulations, you made a classic buttonhole placket.
 
-Ahora presione a ese bebé. Sabes que quieres.
+Now press that baby. You know you want to.
 
 ### Paso 11: Cierra las costuras del hombro
 
@@ -330,23 +334,23 @@ Ahora presione a ese bebé. Sabes que quieres.
 
 #### Anclar el frente al yugo exterior
 
-![Anclar el frente al yugo exterior](11a.png) ![Anclar el frente al yugo exterior](11b.png)
+![Pin the fronts to the outside yoke](11a.png) ![Pin the fronts to the outside yoke](11b.png)
 
-Coloque la espalda hacia abajo con el buen lado hacia arriba, pero tenga cuidado de doblar el yugo interior hacia abajo (como se ilustra por la línea punteada.
+Place your back down with the good side up, but be careful to fold the inner yoke downward (as illustrated by the dotted line.
 
-Coloca tus frentes en la espalda, con los buenos lados hacia abajo. Pin frente al yugo en la costura del hombro, buenos lados juntos.
+Place your fronts on your back, with the good sides down. Pin fronts to the yoke at the shoulder seam, good sides together.
 
 #### Rellenar, rodar y girar la camiseta, alfilar y coser tu costura
 
-![Rolla tu desplazamiento entre los yugos](11c.png)
+![Roll your shift up between the yokes](11c.png)
 
-Arriba la espalda y los frentes comenzando por el sombrero. Róllalas en un saludo claro hacia arriba hasta que puedas ver todo el giro hacia abajo.
+Roll up your back and fronts starting at the hem. Roll them into a neat sausage upwards until you can see the entire turned down yoke.
 
-Ahora, puede voltear el yugo interior sobre su salvamento enrollado para alinear las costuras del hombro con el otro yugo y frentes.
+Now, you can flip the inner yoke over your rolled sausage to align the shoulder seams with the other yoke and fronts.
 
-Anclarlos en su lugar, y luego coser las costuras del hombro, Asegúrate de mantener tu salvamento (o relleno de burritos) fuera del camino para que no se quede atrapado en la costura.
+Pin them in place, and then sew the shoulder seams, making sure to keep your sausage (or burrito stuffing) out of the way so it doesn't get caught in the seam.
 
-![Coincide con las muñecas](11e.png)
+![Match the notches](11e.png)
 
 > Asegúrese de alinear la línea de costura real. Debido a los ángulos desiguales en la apertura del cuello, el borde de la tela es a menudo más largo en un lado que en el otro.
 > 
@@ -354,21 +358,21 @@ Anclarlos en su lugar, y luego coser las costuras del hombro, Asegúrate de mant
 
 #### Voltear hacia fuera a través de la apertura del cuello
 
-Cuando hayas cosido ambas costuras de hombro, alcance a través de la apertura del cuello, y retire la parte trasera y frontal para salir de tu burrito.
+When you've sewn both shoulder seams, reach in through the neck opening, and pull out the back and front parts to inside-out your burrito.
 
 #### Presione las costuras del hombro
 
-![Presione las costuras del hombro](11d.png)
+![Press the shoulder seams](11d.png)
 
-Has hecho todo este trabajo, así que ahora asegúrate de que parezca súper afilado dándole una buena prensa. Asegúrate de que la franquicia de costura entre tu yugo es agradable y plana para eso.
+You did all this work, so now make sure you make it look super sharp by giving it a good press. Make sure that the seam allowance between your yokes lies nice and flat for that.
 
 ### Paso 12: Une el borde de las costuras del hombro del yugo
 
-![Enchufe las costuras del hombro del yugo](12.png)
+![Edge-stitch the shoulder seams of the yoke](12.png)
 
-De la misma manera que hemos empacado la costura inferior del yugo en el paso 3, vamos a doblar el yugo también en las costuras del hombro.
+Just as we've edge-stitched the bottom seam of the yoke in Step 3, we're going to edge-stitch the yoke at the shoulder seams too.
 
-Como acabas de presionar estas costuras de hombro, todo debería ser agradable y plano, y sólo tienes que correr una stitch justo al lado de la costura.
+Since you've just pressed these shoulder seams, everything should lie nice and flat, and you just need to run a stitch right next to the seam.
 
 > Asegúrate de enganchar en la parte del yugo, donde cogerás toda la franquicia de costura, y no en la parte delantera.
 
@@ -376,7 +380,7 @@ Como acabas de presionar estas costuras de hombro, todo debería ser agradable y
 
 #### Difunde en la guardia de corte
 
-![Difunde en la guardia de corte](13a.png) ![Presione el guardia de corte](13b.png) ![Unir el guardia de corte en su lugar](13c.png)
+![Sew in the cuff guard](13a.png) ![Press the cuff guard](13b.png) ![Edge-stitch the cuff guard in place](13c.png)
 
 - Coloca tu manga con el lado bueno hacia abajo, y tu guardia de taza en la parte superior, también con el lado bueno hacia abajo.
 - Alínea el borde de tu guardia de taza (parte inferior de placket de manga) con el corte en la manga, en el lado más corto a la costura lateral.
@@ -392,9 +396,9 @@ Como acabas de presionar estas costuras de hombro, todo debería ser agradable y
 
 #### Plegar y pulsar el placket
 
-![Plegar y pulsar el placket](13d.png)
+![Fold and press the placket](13d.png)
 
-¡Hora del originami! Vamos a doblar la superposición de la placa de manga usando las líneas de plegado marcadas como nuestra guía. Esto será mucho más fácil si pulsas entre cada doblez.
+Origami time! We're going to fold the sleeve placket overlap using the marked fold lines as our guide. This will be a lot easier if you press between each fold.
 
 - Primero, doblar los bordes externos de la placeta hacia dentro.
 - Next, fold the entire thing in half.

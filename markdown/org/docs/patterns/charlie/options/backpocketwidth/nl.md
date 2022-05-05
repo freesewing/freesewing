@@ -1,6 +1,9 @@
+- - -
+title: "Back pocket width"
+- - -
 
-Breedte van de achterzakken.
-
+Constrols the width of the back pockets.
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_backpocketwidth_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpocketwidth_sample.svg "Effect of this option on the pattern")

@@ -45,15 +45,16 @@ Some packages need more than one dependency. Carlton, for example, is based on B
 You can use the power of robots to install the needed dependencies if you work in a clone of the [freesewing monorepo](https://github.com/freesewing/freesewing).
 
 - First, clone the monorepo (or your fork of it) to your local machine.
+- If you haven't already, now is also a good time to create a feature branch so that you don't work directly in the `develop`-branch of the git-repository: `git checkout -b mycoolnewpattern` (adjust name accordingly).
 - Go to the root and run `yarn kickstart`. This will take a while, so grab a coffee and come back later.
 - Once that is done, edit the file `config/descriptions.yaml` to include the name and description of your new pattern (take care to start the description with `A FreeSewing pattern`).
 - Create a folder for your new pattern in `packages`.
 - Run `yarn reconfigure`. This will read the changes in `config/descriptions.yaml` and create the needed files in your new folder.
-- If you haven't already, now is also a good time to create a feature branch so that you don't work directly in the `develop`-branch of the git-repository: `git checkout -b mycoolnewpattern` (adjust name accordingly).
 - You can now start the actual pattern design work (i.e. editing and adding `src` and `config` files for your pattern.
 - For dependencies, configure them in `config/dependencies.yaml`.
 - Run `yarn reconfigure` again, and the magic will make sure that your `package.json` is updated accordingly.
 - You can set yourself as an author in `config/exceptions.yaml`, and - you guessed it - run `yarn reconfigure` again.
+- To spin up the development environment, you also need to run `npm install` (or `yarn install`) in the `example`-folder of any pattern you want to work on. (This is because the neccessary `node_modules`-folder is excluded from the git-repository.)
 
 Now you can work on extending existing patterns into something new and exciting. And the best part about using this method is that making a pull request will be much easier once you're done developing your new pattern.
 

@@ -1,3 +1,7 @@
+---
+title: "Chest pocket depth"
+---
+
 Controls the depth of the chest pocket.
 
 ## Effect of this option on the pattern

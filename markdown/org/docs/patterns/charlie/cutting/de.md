@@ -1,3 +1,7 @@
+- - -
+title: "Charlie chinos: Cutting Instructions"
+- - -
+
 ##### Von Hauptstoff
 
 - Teil **1**: **2 x** _mit guten Seiten zusammen_.

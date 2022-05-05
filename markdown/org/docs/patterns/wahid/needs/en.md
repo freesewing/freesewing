@@ -1,3 +1,7 @@
+---
+title: "Wahid waistcoat: What You Need"
+---
+
 To make Wahid, you will need the following:
 
 - Basic sewing supplies

@@ -1,3 +1,7 @@
+---
+title: "Collar stand width"
+---
+
 ![Collarstand width](collarstandwidth.svg)
 
 The height of your collar stand.

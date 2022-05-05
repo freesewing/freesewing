@@ -1,3 +1,7 @@
+---
+title: "Leg opening"
+---
+
 This option controls how high the leg is cut-out.
 
 ## Effect of this option on the pattern

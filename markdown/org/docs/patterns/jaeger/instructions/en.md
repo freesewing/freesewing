@@ -1,3 +1,7 @@
+---
+title: "Jaeger jacket: Sewing Instructions"
+---
+
 <Note>
 
 ###### Jaeger documentation is under construction

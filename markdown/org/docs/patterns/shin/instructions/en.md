@@ -1,3 +1,7 @@
+---
+title: "Shin swim trunks: Sewing Instructions"
+---
+
 > ### Images coming soon
 >
 > These instructions are a work in progress, and we haven't created the illustrations yet.

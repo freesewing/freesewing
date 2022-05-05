@@ -123,7 +123,7 @@ addThing: Ajouter {thing}
 newThing: Nouveau {thing}
 newPatternForModel: 'Nouveau {pattern} pour {model}'
 noChanges: Pas de changement
-no: "Non" #Keep in quotes or it will evaluate to false
+no: 'Non' #Keep in quotes or it will evaluate to false
 noPasswordPolicy: Nous n'appliquons pas de politique sur les mots de passe
 noSeamAllowance: Marges de couture non-comprises
 notAllOfThisContentIsAvailableInLanguage: Tout ce contenu n'est pas disponible en français
@@ -224,7 +224,7 @@ whatIsThis: Qu'est-ce que c'est ?
 withBreasts: Avec des seins
 withoutBreasts: Sans seins
 yay: Yeh !
-yes: "Oui" #Keep in quotes or it will evaluate to true
+yes: 'Oui' #Keep in quotes or it will evaluate to true
 youAreAPatron: Vous êtes un mécène
 youAreNotAPatron: Vous n'êtes pas mécène
 youAreNotLoggedIn: Vous n'êtes pas connecté

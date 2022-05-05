@@ -1,3 +1,7 @@
+---
+title: "Force width"
+---
+
 Apply width settings regardless of constraints
 
 ## Effect of this option on the pattern

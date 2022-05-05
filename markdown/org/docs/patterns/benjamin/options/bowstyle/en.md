@@ -1,3 +1,7 @@
+---
+title: "Bow style"
+---
+
 Four different bow tie styles!
 
 Benjamin allows you to make four different bow ties.

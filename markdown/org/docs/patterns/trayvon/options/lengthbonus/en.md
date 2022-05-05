@@ -1,3 +1,7 @@
+---
+title: "Length bonus"
+---
+
 Adds extra length to the tie.
 
 ## Effect of this option on the pattern

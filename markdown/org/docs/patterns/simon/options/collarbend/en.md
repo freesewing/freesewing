@@ -1,3 +1,7 @@
+---
+title: "Collar bend"
+---
+
 ![Collar bend](collarbend.svg)
 
 How much the collar bends (on the collar stand side), rather than being straight.

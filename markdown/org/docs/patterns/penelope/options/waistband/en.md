@@ -1,3 +1,7 @@
+---
+title: "Waist band"
+---
+
 Adds a waistband to the pattern.
 
 ## Effect of this option on the pattern

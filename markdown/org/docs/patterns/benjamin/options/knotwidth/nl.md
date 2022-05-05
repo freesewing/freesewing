@@ -1,8 +1,12 @@
-![Breedte knoop](knotwidth.svg)
+- - -
+title: "Knot width"
+- - -
 
-De breedte van de knoop is de breedte in het midden van de vlinderdas, waar je de knoop maakt.
+![Knot width](knotwidth.svg)
 
-Hoe breed je vlinderdas is in het midden heeft invloed op de knoop. Groter werkt beter bij grote vlinderdassen.
+The knot width is the width in the middle of the bow tie, where you make the knot.
+
+How wide your bow tie is in the middle will influence the tie knot. Bigger works better with larger bow ties.
 
 <Note>
 
@@ -11,4 +15,5 @@ Bij de vierkante vlinderdas bepaalt deze waarde ook de breedte van de punten
 </Note>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](benjamin_knotwidth_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_knotwidth_sample.svg "Effect of this option on the pattern")

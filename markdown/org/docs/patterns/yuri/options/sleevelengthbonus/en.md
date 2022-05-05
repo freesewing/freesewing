@@ -1,3 +1,7 @@
+---
+title: "Sleeve length bonus"
+---
+
 This option controls how to lengthen the sleeves.
 
 ## Effect of this option on the pattern

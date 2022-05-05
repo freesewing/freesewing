@@ -9,6 +9,8 @@ const o_bella = {
   "waistEase.d": "Controla la cantidad de facilidad en tu cintura",
   "bustSpanEase.t": "Facilidad de la expansión del polvo",
   "bustSpanEase.d": "Controla la cantidad de facilidad (horizontal) que se agrega a tu superficie de busto al ubicar el punto de busto.",
+  "shoulderToShoulderEase.t": "Shoulder to Shoulder ease",
+  "shoulderToShoulderEase.d": "Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.",
   "fullChestEaseReduction.t": "Full chest ease reduction",
   "fullChestEaseReduction.d": "Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area",
   "backDartHeight.t": "Altura del dart trasero",

@@ -1,3 +1,7 @@
+---
+title: "Fabric stretch"
+---
+
 Adjust this option for more or less stretchy fabrics.
 
 ## Effect of this option on the pattern

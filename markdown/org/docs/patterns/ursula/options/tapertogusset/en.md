@@ -1,3 +1,7 @@
+---
+title: "Front exposure"
+---
+
 This option controls the amount of exposed skin on the front.
 
 ## Effect of this option on the pattern

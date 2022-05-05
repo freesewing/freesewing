@@ -1,3 +1,7 @@
+---
+title: "Charlie chinos: Cutting Instructions"
+---
+
 ##### From main fabric
 
 - Part **1**: **2 x** _with good sides together_.

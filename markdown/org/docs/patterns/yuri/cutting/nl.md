@@ -1,3 +1,7 @@
+- - -
+title: "Yuri hoodie: Cutting Instructions"
+- - -
+
 - Knip **2 voorpanden** met _goede kanten op elkaar_
 - Knip **1 rugpand** _aan de stofvouw_
 - Knip **2 mouwen** met _goede kanten op elkaar_

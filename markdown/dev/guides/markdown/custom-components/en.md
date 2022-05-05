@@ -14,7 +14,7 @@ Below is a list of custom components you can use in our Markdown content:
 ## Example
 
 <Example part="plugin_buttons">
-  Example of the snippets provided by [the buttons plugin](/reference/plugings/buttons)
+  Example of the snippets provided by [the buttons plugin](/reference/plugins/buttons)
 </Example>
 
 Use **Example** to embed an example (a part of our `examples` pattern) that is used to

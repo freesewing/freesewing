@@ -1,3 +1,7 @@
+---
+title: "Sleeve width guarantee"
+---
+
 We first draft the arm opening, then we draft a sleeve to fit it.
 
 When all goes well, the sleeve fits perfectly, and this option is not relevant.

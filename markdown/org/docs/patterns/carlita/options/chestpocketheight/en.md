@@ -1,3 +1,7 @@
+---
+title: "Chest pocket height"
+---
+
 Controls the height/size of the chest pocket.
 
 ## Effect of this option on the pattern

@@ -2,6 +2,6 @@
 title: Taillenweite hinten
 ---
 
-Die **Taille zurück** ist der hintere Teil deines Taillenumfangs.
+Die **hintere Taillenweite** ist der hintere Teil deines Taillenumfangs.
 
-To measure your **waist back**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal. Dann messen Sie die Länge von einer Seite über dem Rücken zur anderen.
+Um die **hintere Taillenweite** zu messen, lege das Maßband um den engsten Teil deiner Taille herum und achte darauf, es horizontal zu halten. Miss dann die Länge von einer Seite der Taille (dort wo eine Naht sitzen würde) über den Rücken zur anderen Seite.

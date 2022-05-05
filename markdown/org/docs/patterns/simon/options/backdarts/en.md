@@ -1,5 +1,7 @@
 ---
-title: Back darts
+title: "Back darts"
+---
+
 ---
 
 By default, the pattern will add back darts when they are needed.

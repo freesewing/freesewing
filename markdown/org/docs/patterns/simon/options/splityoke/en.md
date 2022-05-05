@@ -1,3 +1,7 @@
+---
+title: "Split yoke"
+---
+
 ![Split yoke](splityoke.svg)
 
 Do you want a split yoke?

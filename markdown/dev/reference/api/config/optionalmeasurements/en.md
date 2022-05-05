@@ -3,7 +3,7 @@ title: optionalMeasurements
 ---
 
 The `optionalMeasurements` key in the pattern configuration file allows
-you to configure measurments that are optional to draft the pattern.
+you to configure measurements that are optional to draft the pattern.
 
 ## Structure
 

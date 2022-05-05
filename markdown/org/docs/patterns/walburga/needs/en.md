@@ -1,3 +1,7 @@
+---
+title: "Walburga Wappenrock: What You Need"
+---
+
 To make Walburga, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)

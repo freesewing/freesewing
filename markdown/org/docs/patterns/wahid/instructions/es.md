@@ -1,22 +1,26 @@
+- - -
+title: "Wahid waistcoat: Sewing Instructions"
+- - -
+
 ### Paso 1: Fusionar interfaz
 
 #### Interfaz de prensa para soldaduras de bolsillo
 
-![Interfaz de prensa para soldaduras de bolsillo](01a.png)
+![Press interfacing to pocket welts](01a.png)
 
-Coloca tu soldadura de pocket con el lado bueno hacia abajo, y tu pocket interface arriba.
+Place your pocket welt with the good side down, and your pocket interfacing on top.
 
-La interfaz es un poco más corta que la soldada, así que asegúrese de alinear el lado que tiene la línea de ayuda marcada en ella.
+The interfacing is a bit shorter than the welt, so make sure to align the side that has the help line marked on it.
 
-Para cada bolsillo, presione la pieza de enlace al lado malo de la soldadura del bolsillo.
+For each pocket, press the interfacing piece to the bad side of the pocket welt.
 
 #### Interfaz de prensa para frontales
 
-![Interfaz de prensa para las frontales del bolsillo](01b.png)
+![Press interfacing to pocket fronts](01b.png)
 
-Coloca tu frente con el buen lado hacia abajo, y tu interfaz en la parte superior.
+Place your front with the good side down, and your interfacing on top.
 
-Presione la interfaz en su lugar.
+Press the interfacing in place.
 
 > **Tómate tu tiempo**
 > 
@@ -28,41 +32,41 @@ Presione la interfaz en su lugar.
 
 #### Marca hacia el revestimiento
 
-![Marca hacia el revestimiento](02a.png)
+![Sew facing to lining](02a.png)
 
-Coloque su frente y revestimiento con buenos lados juntos. Anclar los bordes del límite de fachada/revestimiento en su lugar.
+Place your front facing and lining with good sides together. Pin the edges of the facing/lining boundary in place.
 
-Los espolvorean juntos.
+Sew them together.
 
 #### Pulse abrir costura
 
-Pulse abrir la franquicia de costura entre la cara y el revestimiento.
+Press open the seam allowance between facing and lining.
 
 ### Paso 3: Cerrar todos los darts
 
-![Cerrar todos los darts](03a.png)
+![Close all darts](03a.png)
 
 #### Cerrar dardos
 
-Doblar la espalda con buenos lados y coser el dardo.
+Fold your back with good sides together, and sew the back dart.
 
 > No te olvides de hacer lo mismo para el revestimiento
 
 #### Cerrar dardos frontales
 
-Doblar la parte delantera (y la intersección se fusionó con ella) con buenos lados juntos, y coser la parte delantera.
+Fold your front (and the interfacing fused to it) with good sides together, and sew the front dart.
 
 ### Paso 4: Presione todos los darts
 
-![Pulsa todos los darts](04a.png)
+![Press all darts](04a.png)
 
 #### Presiona los dardos frontales
 
-Una vez cortado abierto, presione las artes frontales abiertas.
+Once cut open, press the front darts open.
 
 #### Presiona el reverso de los dardos
 
-Si cortas las tinieblas, pulsa abrirlas. Si no es así, preséntalos al lado.
+If you cut open the back darts, press them open. If not, press them to the side.
 
 > No te olvides de hacer lo mismo para el revestimiento
 
@@ -70,75 +74,75 @@ Si cortas las tinieblas, pulsa abrirlas. Si no es así, preséntalos al lado.
 
 #### Adjuntar la bolsa de bolsillo a la soldadura del bolsillo
 
-![Adjuntar la bolsa de bolsillo a la soldadura del bolsillo](05a.png)
+![Attach the pocket bag to the pocket welt](05a.png)
 
-Coloque su bolsa de bolsillo abajo con el buen costado, y su bolsillo se soltó en la parte superior con el lado bueno abajo.
+Place your pocket bag down with the good side up, and your pocket welt on top of it with the good side down.
 
-Alinear el lado derecho de la bolsa con el lado de la soldadura que no tiene interfaces, y coser juntos en la costura estándar.
+Align the straight side of the bag with the side of the welt that has no interfacing, and sew them together at the standard seam allowance.
 
 #### Presione costura abierta
 
-Cuando haya terminado, presione Abrir esta costura.
+When you are done, press open this seam.
 
 #### Marca a dónde tiene que ir tu bolsillo
 
-![Marca a dónde tiene que ir tu bolsillo](05a.png)
+![Mark where your pocket needs to go](05a.png)
 
-Su pieza de patrón frontal tiene una línea de ayuda en ella para mostrar a dónde debe ir el bolsillo de soldadura. Son dos mitad rectángulos que se unieron cuando cerraste el dardo para formar la forma de tu bolsillo de soldadura.
+Your front pattern piece has a helpline on it to show where the welt pocket should go. It's two half rectangles that got joined together when you closed the dart to form the shape of your welt pocket.
 
-Si aún no has marcado las cuatro esquinas de ese rectángulo, deberías hacerlo ahora.
+If you haven't marked the four corners of that rectangle yet, you should do so now.
 
 > El bolsillo se sienta bajo un pequeño ángulo en tu patrón. Siguiendo adelante, en las ilustraciones, dibujaré el bolsillo recto como que hace las cosas más fáciles.
 
 #### Adjuntar soldadura de pocket y mirar al pocket
 
-![Adjuntar soldadura de pocket y mirar al pocket](05c.png) ![Adjuntar soldadura de pocket y mirar al pocket](05d.png)
+![Attach pocket welt and pocket facing](05c.png) ![Attach pocket welt and pocket facing](05d.png)
 
-Coloca tu parte delantera abajo con el buen lado arriba. Vamos a conectar la soldadura al fondo de tu contorno de bolsillo y la cara a la línea superior.
+Place your front piece down with the good side up. We're going to attach the welt to the bottom line of your pocket outline, and the facing to the top line.
 
 > Si nunca has hecho un bolsillo de soldadura antes, puede ser un poco contraintuitivo para colocar el bolsillo en el exterior de la prenda. Pocket debe estar en el interior, ¿verdad?
 > 
 > Relajar, el bolsillo terminará en el interior
 
-Tanto tu soldadura de pocket como tu cara de pocket tienen una línea de ayuda en ellos. Esa línea necesita alinearse con los bordes largos de su bolsillo.
+Both your pocket welt and your pocket facing have a help line on them. That line needs to line up with the long edges of your pocket.
 
-Coloque la soldadura del bolsillo en el fondo, y el bolsillo mirando en la parte superior, ambos con su buena cara hacia abajo.
+Place the pocket welt at the bottom, and the pocket facing on the top, both with their good side down.
 
-Alinear cuidadosamente su línea de ayuda en el contorno del bolsillo. Ahora deberían sentarse codo con codo y simplemente meterse en el medio de tu bolsillo.
+Carefully align their helpline on the pocket outline. They should now sit side by side, and just bump into each other at the middle of your pocket.
 
-Ahora coser a lo largo de la línea de ayuda que marca el largo borde de tu bolsillo.
+Now sew along the helpline which marks the long edge of your pocket.
 
 > Es importante que las líneas que coser ahora formen los bordes largos de un rectángulo perfecto. Esto determinará la forma de tu bolsillo, así que si haces una línea más larga que la otra, o si no son paralelos o mal alineados, el bolsillo se verá mal.
 
 #### Cortar el bolsillo
 
-![Cortar el bolsillo](05c.png)
+![Cut open the pocket](05c.png)
 
-Es hora de cortar cuidadosamente el bolsillo. Empezar en el centro del bolsillo y cortar hacia los bordes más largos hacia el lado.
+Time to carefully cut open the pocket. Start in the middle of the pocket, and cut towards along the longest edges towards the side.
 
-En los bordes de su bolsillo usted necesita dejar de cortar el centro y en su lugar cortar hacia el final de su línea de stitches menores de 45 grados.
+At the edges of your pocket you need to stop cutting open the center and instead cut towards the end of your line of stitches under 45 degrees.
 
 > Este pequeño triángulo que cortas al final es importante. Asegúrate de apuntar cuidadosamente, ya que deberías cortar hasta el final de tus piernas, sin cortar en las piernas.
 
 #### Pulse abrir la costura
 
-![Pulse abrir la costura](05c.png)
+![Press open the seam allowance](05c.png)
 
-Pulse abrir la costura a lo largo de los bordes largos de su bolsillo.
+Press open the seam allowance along the long edges of your pocket.
 
 #### Trae el bolsillo hacia la parte trasera y presiona
 
-![Trae el bolsillo hacia la parte trasera y presiona](05g.png)
+![Bring the pocket facing to the back and press](05g.png)
 
-Girar el bolsillo hacia la parte trasera y presionarlo hacia abajo.
+Flip the pocket facing to the back side and press it down.
 
 #### Pulsa abajo los triángulos en los lados cortos
 
-![Pulsa abajo los triángulos en los lados cortos](05h.png)
+![Press down the triangles at the short sides](05h.png)
 
-Mueva su bolsillo hacia fuera del camino para revelar esos pequeños trajes al lado de su bolsillo.
+Move your pocket facing out of the way to reveal those little traingles at the side of your pocket.
 
-Doblarlos asegurándote de mantener tu bolsillo abriendo un rectángulo limpio y presionándolos hacia abajo.
+Fold them back making sure you to keep your pocket opening a clean rectangle, and press them down.
 
 #### Trae la soldadura del bolsillo a la espalda, pliega y presiona
 
@@ -146,57 +150,57 @@ Doblarlos asegurándote de mantener tu bolsillo abriendo un rectángulo limpio y
 
 Flip the pocket welt with the attached pocket back tot he back side.
 
-Doblar su soldadura en el punto donde llega a la parte superior del bolsillo. La soldadura debe cubrir toda la abertura del bolsillo.
+Fold your welt down at the point where it reaches the top of the pocket. The welt should cover the entire pocket opening.
 
 > La ilustración lo muestra desde la espalda ya que es más fácil ver lo que está pasando de esta manera. Sin embargo, debería comprobar desde el frente para asegurarse de que su pocket de soldadura se ve bien.
 
 #### Navega por los triángulos del bolsillo
 
-![Navega por los triángulos del bolsillo](05k.png)
+![Sew down the pocket triangles](05k.png)
 
-Ponga la parte delantera con el lado bueno arriba y asegúrese de que la cara del bolsillo y la soldadura están planas.
+Put your front down with the good side up and make sure the pocket facing and welt lie flat.
 
-Doblar tu frente verticalmente al borde de tu bolsillo para revelar ese pequeño triángulo en el lado corto de tu bolsillo.
+Fold your front over vertically at the edge of your pocket to reveal that little triangle at the short side of your pocket opening.
 
-Mantenga este triángulo abajo coser justo al lado del pliegue, y el borde del bolsillo.
+Sew this triangle down by sewing right next to the fold, and pocket edge.
 
 #### Cerrar la bolsa de bolsa
 
-![Cerrar la bolsa de bolsa](05l.png)
+![Close the pocket bag](05l.png)
 
-Mantenga su bolsillo mirando a la bolsa de bolsillo para terminar su bolso.
+Sew your pocket facing to the pocket bag to finish your pocket.
 
 > Esto debe ser evidente, pero tenga cuidado de no coser su bolsa de bolsillo en la parte delantera de su cintura.
 
 #### Presione su bolsillo completado
 
-![Presione su bolsillo completado](05m.png)
+![Press your completed pocket](05m.png)
 
-Cuando hayas terminado, dale a tu bolsillo una buena prensa final.
+When you're done, give your pocket a good final press.
 
 ### Paso 6: Centrar costura trasera
 
-![Difunde y presiona la costura trasera del centro](06a.png)
+![Sew and press the center back seam](06a.png)
 
-Coloque sus dos trozos traseros con su lado bueno y coser la costura trasera del centro.
+Put your two back pieces with their good side together and sew the center back seam.
 
-Cuando hayas terminado, presiona Abrir esta costura.
+When you're done, press open this seam.
 
 > No te olvides de hacer lo mismo para el revestimiento
 
 ### Paso 7: Unirse a los frentes
 
-![Unirse a los frentes](07a.png)
+![Join back to fronts](07a.png)
 
-Ponga la espalda con el lado bueno arriba y ponga sus frentes en ella con el lado bueno abajo. Alinear las costuras laterales, el pin y la costura.
+Put your back down with the good side up and put your fronts on it with the good side down. Align the side seams, pin and sew.
 
-Cuando hayas terminado, presiona Abrir estas costuras.
+When you're done, press open these seams.
 
 ### Paso 8: Únete a los hombros
 
-![Únete a los hombros](08a.png)
+![Join the shoulders](08a.png)
 
-Alínea la costura del hombro, coser y presionar abrir la costura.
+Align the shoulder seams, sew them, and press open the seam allowance.
 
 > No te olvides de hacer lo mismo para el revestimiento
 
@@ -204,88 +208,88 @@ Alínea la costura del hombro, coser y presionar abrir la costura.
 
 #### Desliza el revestimiento en el lavabo
 
-![Desliza el revestimiento en la capa de cintura](09a.png)
+![Slide lining into the waistcoat](09a.png)
 
-Coloque el revestimiento en la cintura, los lados buenos juntos. En otras palabras, la capa de cintura debe tener el lado bueno dentro y el lado malo. El revestimiento debe tener el lado malo dentro y hacia fuera.
+Place your lining in your waistcoat, good sides together. In other words, the waistcoat should have the good side in and bad side out. The lining should have the bad side in and good side out.
 
 #### Fijar forro a tela
 
-![Fijar linng a tela](09b.png)
+![Pin linng to fabric](09b.png)
 
-Alinear el revestimiento con el borde de la tela, y fijarlo en su lugar.
+Align the lining with the fabric edge, and pin it in place.
 
-Empiece en el centro de atrás y siga la línea del cuello por el cierre delantero. Trabaja tu camino alrededor del sombrero, pero deja alrededor de un espacio de 15 cm en el centro de la espalda.
+Start at center back, and follow the neckline down the front closure. Work your way around the hem, but leave about a 15cm gap at the center back.
 
 #### Manejar el revestimiento a la tela
 
-![Difundir linng a la tela](09c.png)
+![Sew linng to fabric](09c.png)
 
-Con su forro anclado bien en su lugar, revestimiento de coser y tejido juntos.
+With your lining pinned neatly in place, sew lining and fabric together.
 
-No olvide dejar ese hueco de 15 cm en la parte trasera del centro.
+Do not forget to leave that 15cm gap at the center back.
 
 #### Girar cinturón y pulsar bordes
 
-![Gira cintura y presiona el borde](09d.png)
+![Turn waistcoat and press edgess](09d.png)
 
-Alcanza el hueco que dejaste abierto en el sombrero y gira tu cinturón.
+Reach through the gap you left open at the hem, and turn your waistcoat.
 
-Presione los bordes que acaba de coser, asegurándose de rodar el tejido un poco para que el revestimiento esté siempre oculto.
+Press the edges you've just sewn, making sure to roll the fabric a bit so that the lining is always hidden.
 
 ### Paso 10: Termina los orificios
 
 #### Anclar atrás la posibilidad de costura de la tela
 
-![Anclar atrás la posibilidad de costura de la tela](10a.png)
+![Pin back the fabric seam allowance](10a.png)
 
-A lo largo del orificio de armadura, enganchar la costura de su tela de cintura. Mientras lo haga, mantén tu alineación fuera de lugar.
+All along the armhole, pin back the seam allowance of your waistcoat fabric. While doing so, keep your lining out of the way.
 
 #### Anclar línea hacia abajo
 
-![Anclar línea hacia abajo](10b.png)
+![Pin down lining](10b.png)
 
-Ahora doblar el revestimiento un poco antes del borde del orificio y sujetarlo hacia abajo.
+Now fold back your lining a bit before the edge of the armhole and pin it down.
 
 #### Coser a mano el revestimiento de la tela
 
-![Forrado a mano de la farbrica](10c.png)
+![Hand-sew teh lining to the farbric](10c.png)
 
-Utilice un trozo de deslizamiento para coser a mano el forro a la tela a lo largo del orificio.
+Use a slipstitch to hand-sew the lining to the fabric all along the armhole.
 
 ### Paso 11: Termina la lluvia
 
-Remember that gap we didn't close in step 9? Time to close it. Es hora de cerrarlo.
+Remember that gap we didn't close in step 9? Time to close it.
 
-Utilice un deslizamiento para coser a mano el forro a la tela y cerrar el sombrero.
+Use a slipstitch to hand-sew the lining to the fabric and close the hem.
 
 ### Paso 12: Hacer los agujeros de botones
 
-![Hacer los agujeros de botones](12a.png)
+![Make the buttonholes](12a.png)
 
-Si aún no lo ha hecho, transfiera la colocación del orificio del botón de su patrón a su tejido.
+If you haven't done so yet, transfer the buttonhole placement from your pattern onto your fabric.
 
-Hacer esos agujeros de botón.
+Make those buttonholes.
 
 ### Paso 13: Adjuntar los botones
 
-![Adjuntar los botones](13a.png)
+![Attach the buttons](13a.png)
 
-Anclar la capa de cintura cerrada y transferir la ubicación de los agujeros de los botones al lado del botón.
+Pin your waistcoat closed and transfer the location of your buttonholes to the button side.
 
-Difusión en esos botones.
+Sew on those buttons.
 
 > También puedes transferir la ubicación de los botones desde el patrón. Sin embargo, la transferencia de los agujeros de botones que acabas de hacer te reconoce que los botones y agujeros de botones se alinearán, incluso si su(s) botón(es) está/están tan ligeramente apagados.
 
 ### Paso 14: Opcional: unir los bordes
 
-![Opcionalmente puedes unir los bordes de tu cintura](14a.png)
+![You can optionally pick-stitch the edges of your waistcoat](14a.png)
 
-Si lo deseas, puedes coger los bordes de tu cintura.
+If you'd like, you can pick-stitch around the edges of your waistcoat.
 
-La recolección debe hacerse a mano. Corres un simple empate a unos pocos mm de los bordes de tu cinturón, pero sólo deja que tus pedazos superen para unos pocos temas. Ciertamente lo has visto como un acabado en jaquetas de traje.
+Pick-stitching needs to be done by hand. You run a simple stitch a few mm from the edges of your waistcoat, but only let your stitches surface for a few threads. You've certainly seen it as a finish on suit jackets.
 
 > Si te sientes valiente, puedes cogerla con el hilo del mismo color, o usar un color de contraste si te sientes audaz.
 
 > Al mismo tiempo que el enganche añade un aspecto distintivo, también bloquea tu tejido a tu revestimiento/revestimiento que evita que las cosas cambien de lugar.
 
-Después de esto, probablemente quieras planchar tu cinturón.
+After this, you probably want to iron your waistcoat.

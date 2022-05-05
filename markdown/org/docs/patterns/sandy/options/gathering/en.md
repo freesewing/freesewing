@@ -1,3 +1,7 @@
+---
+title: "Gathering"
+---
+
 ![Gathering](gathering.svg)
 
 The percent by which the top of the skirt is longer than the bottom of the waistband.

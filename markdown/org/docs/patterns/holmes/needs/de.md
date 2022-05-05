@@ -1,5 +1,5 @@
 ---
-title: Holmes Was du brauchst
+title: "Holmes deerstalker hat: What You Need"
 ---
 
 Um Holmes zu erstellen, benötigst du Folgendes:

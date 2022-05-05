@@ -1,3 +1,7 @@
+---
+title: "Zipper size"
+---
+
 What size zipper the pattern uses to draft.
 
 This determines how wide the zipper panel will be by inserting the zipper size into the panel.

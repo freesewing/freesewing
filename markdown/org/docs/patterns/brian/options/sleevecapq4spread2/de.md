@@ -1,6 +1,12 @@
-![Die Abwärtsverteilung im vierten Viertel der Ärmel](./sleevecapq4spread2.svg)
+- - -
+title: "Sleevecap Q4 downward spread"
+- - -
 
-Diese Option steuert die Abwärtsverteilung im vierten Quadranten der Ärmel.
+---
+
+![The downward spread in the fourth quadrant of the sleevecap](./sleevecapq4spread2.svg)
+
+This option controls the downward spread in the fourth quadrant of the sleevecap.
 
 <Tip>
 
@@ -9,4 +15,5 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 </Tip>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_sleevecapq4spread2_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_sleevecapq4spread2_sample.svg "Effect of this option on the pattern")

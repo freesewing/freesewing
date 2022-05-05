@@ -6,4 +6,4 @@ Der Skalierungsfaktor kann dazu verwendet werden, um alles, was nicht das eigent
 
 Diese Skalierungsmöglichkeit wurde eigens dafür erstellt, um bessere Lesbarkeit von Schnittmustern für Puppen oder anderen Fällen zu ermöglichen, wo Text und Markierungen zu groß im Vergleich zum Schnittmuster werden würden.
 
-You need to enable _Expert mode_ after which you can find the scale setting under _Advanced_.
+Um die Skalierung zu ändern, musst du zunächst den _Expertenmodus_ aktivieren, dort findest du dann die Skalierungseinstellung unter _Fortgeschritten_.

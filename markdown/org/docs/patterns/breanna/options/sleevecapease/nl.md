@@ -1,5 +1,8 @@
+- - -
+title: "Sleevecap ease"
+- - -
 
-Bepaalt de hoeveelheid extra ruimte in de mouwkop.
+Determines the amount of sleevecap ease.
 
 <Note>
 
@@ -11,4 +14,5 @@ Voor lichte stof of knuppels wil je weinig tot geen extra rug. Voor zwaardere ge
 </Note>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](breanna_sleevecapease_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapease_sample.svg "Effect of this option on the pattern")

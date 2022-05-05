@@ -1,3 +1,7 @@
+---
+title: "Hips ease"
+---
+
 The amount of ease at your hips.
 
 ## Effect of this option on the pattern

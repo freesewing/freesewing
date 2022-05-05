@@ -1,3 +1,7 @@
+---
+title: "Leg reduction"
+---
+
 The amount to further reduce the stretch at the (upper) legs.
 
 > #### What's the point?

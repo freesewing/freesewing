@@ -1,3 +1,7 @@
+---
+title: "Armhole drop"
+---
+
 ![The armhole drop option on Aaron](./armholedrop.svg)
 
 How much to lower the armhole below the default amount.

@@ -1,76 +1,79 @@
 ---
 chestEase:
   title: Brustzugabe
-  description: Controls the chest ease in the underlying Bella block Bee is based on
+  description: Kontrolliert die Brustzugabe des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 waistEase:
   title: Taillenzugabe
-  description: Controls the waist ease in the underlying Bella block Bee is based on
+  description: Kontrolliert die Taillenzugabe des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 bustSpanEase:
-  title: Büstenumfang leicht
-  description: Controls the bust span ease in the underlying Bella block Bee is based on
+  title: Zugabe im Abstand der Brustpunkte
+  description: Kontrolliert die Zugabe des Abstandes der Brustpunkte des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 topDepth:
-  title: Top Depth
-  description: Controls how far the bikini cup extends upwards
+  title: Obere Tiefe
+  description: Kontrolliert, wie weit sich der Bikini-Cup nach oben erstreckt
 bottomCupDepth:
-  title: Bottom depth
-  description: Controls how far the bikini cup extends downwards
+  title: Untere Tiefe
+  description: Kontrolliert, wie weit sich der Bikini-Cup nach unten erstreckt
 sideDepth:
-  title: Side depth
-  description: Controls how far the bikini cup extends towards the side
+  title: Seitliche Tiefe
+  description: Kontrolliert, wie weit sich der Bikini-Cup zur Seite erstreckt
 sideCurve:
-  title: Side curve
-  description: Controls the curvature of the side of the bikini cup
+  title: Seitliche Kurve
+  description: Kontrolliert die Krümmung der Seite des Bikini-Cups
 frontCurve:
-  title: Front curve
-  description: Controls the curvature of the front of the bikini cup
+  title: Vordere Kurve
+  description: Kontrolliert die Krümmung der Vorderseite des Bikini-Cups
 bellaGuide:
-  title: Show Bella
-  description: Shows the outline of the Bella block Bee is based on
+  title: Bella anzeigen
+  description: Zeigt die Umrisse des Bella-Grundschnittes an, auf dem Bee basiert
 ties:
-  title: Ties
-  description: Whether to includes ties, yes or no
+  title: Bänder
+  description: Sollen Bänder hinzugefügt werden, ja oder nein
 bandTieWidth:
-  title: Band (chest) tie width
-  description: Controls the width of the ties around your chest
+  title: Breite des Brustbandes
+  description: Kontrolliert die Breite des Bandes um deinen Brustkorb
 bandTieLength:
-  title: Band (chest) tie length
-  description: Controls the length of the ties around your chest
+  title: Länge des Brustbandes
+  description: Kontrolliert die Länge des Bandes um deinen Brustkorb
 bandTieEnds:
-  title: Band (chest) tie ends
-  description: Whether you like straight or pointy ends on the ties around your chest
+  title: Enden des Brustbandes
+  description: Möchtest du gerade oder spitze Enden des Brustbandes?
 bandTieColours:
-  title: Band (chest) tie length colours
-  description: Whether you want single color ties around your chest, or dual-coloured ones
+  title: Farben des Brustbandes
+  description: Möchtest du ein- oder mehrfarbige Brustbänder?
 neckTieWidth:
-  title: Neck tie width
-  description: Controls the width of the ties around your chest
+  title: Breite des Nackenträgers
+  description: Steuert die Breite des Nackenträgers
 neckTieLength:
-  title: Neck tie length
-  description: Controls the length of the ties around your chest
+  title: Länge des Nackenträgers
+  description: Steuert die Länge des Nackenträgers
 neckTieEnds:
-  title: Neck tie ends
-  description: Whether you like straight or pointy ends on the ties around your chest
+  title: Enden des Nackenträgers
+  description: Möchtest du gerade oder spitze Enden des Nackenträgers?
 neckTieColours:
-  title: Neck tie colours
-  description: Whether you want single color ties around your chest, or dual-coloured ones
+  title: Farben des Nackenträgers
+  description: Möchtest du ein- oder mehrfarbige Nackenträger?
 crossBackTies:
-  title: Cross back ties
-  description: Whether you'd like to use the cross back tie variation of Bee
+  title: Gekreuzte Rückenträger
+  description: Möchtest du die Version von Bee mit gekreuzten Rückenträgern?
 bandLength:
-  title: Band Length (Cross back ties)
-  description: Controls the length of the band around your chest for the cross back ties variation of Bee
+  title: Länge der gekreuzten Rückenträger
+  description: Kontrolliert die Länge Brustbandes für die Variante von Bee mit gekreuzten Rückenträgern
 backDartHeight:
-  title: Back dart height (Bella)
-  description: Controls the back dart height in the underlying Bella block Bee is based on
+  title: Höhe der Rückenabnäher (Bella)
+  description: Kontrolliert die Höhe der Rückenabnäher des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 armholeDepth:
-  title: Armhole depth (Bella)
-  description: Controls the armhole depth in the underlying Bella block Bee is based on
+  title: Tiefen des Armloches (Bella)
+  description: Kontrolliert die Tiefe des Armloches des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 frontArmholePitchDepth:
-  title: Front armhole pitch depth (Bella)
-  description: Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+  title: Tiefe des vorderen Armlochdrehpunktes (Bella)
+  description: Kontrolliert die Tiefe des vorderen Armlochdrehpunktes des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 frontShoulderWidth:
-  title: Front shoulder width (Bella)
-  description: Controls the front shoulder width in the underlying Bella block Bee is based on
+  title: Vordere Schulterbreite (Bella)
+  description: Kontrolliert die vordere Schulterbreite des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
+fullChestEaseReduction:
+  title: Full chest reduction (Bella)
+  description: Controls the full chest reduction in the underlying Bella block Bee is based on
 highBustWidth:
-  title: High bust width (Bella)
-  description: Controls the high bust width in the underlying Bella block Bee is based on
+  title: Hohe Brustweite (Bella)
+  description: Kontrolliert die hohe Brustbreite des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert

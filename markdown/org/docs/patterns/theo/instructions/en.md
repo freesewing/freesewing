@@ -1,3 +1,7 @@
+---
+title: "Theo trousers: Sewing Instructions"
+---
+
 <Note>
 
 Text a bit dry for you? I try to make videos available as part of the pattern documentation.

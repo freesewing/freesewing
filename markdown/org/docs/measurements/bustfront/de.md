@@ -1,7 +1,7 @@
 ---
-title: Oberweite vorne
+title: Vordere Oberweite
 ---
 
-Die **Oberweite vorne** ist der vordere Teil deines Brustumfangs.
+Die **vordere Oberweite** ist der vordere Teil deines Brustumfangs.
 
-To measure your bust front, run the tape measure horizontally accross the fullest part of your chest, starting at the side (seam) on one side, across your breasts to the side (seam) on the other side.
+Um deine vordere Oberweite zu messen, führe das Maßband horizontal über den vollsten Teil deiner Brust, beginnend auf der einen Seite (wo eine Naht sitzen würde) über die Brust, zur anderen Seite.

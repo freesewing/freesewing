@@ -1,3 +1,7 @@
+---
+title: "Pocket location"
+---
+
 Controls the location of the pockets.
 
 ## Effect of this option on the pattern

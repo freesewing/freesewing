@@ -1,3 +1,7 @@
+---
+title: "Waist balance"
+---
+
 Controls the distribution of fabric between front and back parts at the waist.
 
 It is somewhat in vogue to draft a larger back panel these days.

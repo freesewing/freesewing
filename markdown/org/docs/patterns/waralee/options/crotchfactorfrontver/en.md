@@ -1,3 +1,7 @@
+---
+title: "Front Crotch Factor Vertical"
+---
+
 Used to move the curve of the crotch in the front vertically
 
 ## Effect of this option on the pattern

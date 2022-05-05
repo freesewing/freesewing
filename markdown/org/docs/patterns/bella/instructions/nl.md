@@ -1,5 +1,5 @@
 - - -
-title: Bella Construction
+title: "Bella body block: Sewing Instructions"
 - - -
 
 <Note>

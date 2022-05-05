@@ -1,3 +1,7 @@
+---
+title: "Paco pants: Fabric Options"
+---
+
 These work best in a lighter fabric with relatively good drape.
 
 A light cotton, or chambray are particularly well-suited.\
@@ -14,4 +18,6 @@ While linen is the go-to for hot summer days, I would not recommend it for these
 as they come with an elasticated waist/cuffs, which means wrinkle hell.
 Use one of out other designs with a fitted waist if you want linen pants.
 
-Also avoid picking a fabric with a lot of stretch, for it will complicate matters when you're installing the elastic. </Tip>
+Also avoid picking a fabric with a lot of stretch, for it will complicate matters when you're installing the elastic. 
+
+</Tip>

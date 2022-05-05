@@ -1,3 +1,7 @@
+---
+title: "Fly length"
+---
+
 Constrols the length of the fly.
 
 ## Effect of this option on the pattern

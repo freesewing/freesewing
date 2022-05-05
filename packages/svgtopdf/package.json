@@ -40,7 +40,7 @@
     ]
   },
   "dependencies": {
-    "body-parser": "1.19.2",
+    "body-parser": "1.20.0",
     "cors": "2.8.5",
     "express": "4.17.3",
     "express-rate-limit": "^6.2.0",
@@ -51,6 +51,6 @@
   "devDependencies": {
     "@freesewing/prettier-config": "latest",
     "backpack-core": "^0.8.4",
-    "nodemon": "2.0.15"
+    "nodemon": "2.0.16"
   }
 }

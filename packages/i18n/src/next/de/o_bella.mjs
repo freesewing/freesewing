@@ -9,6 +9,8 @@ const o_bella = {
   "waistEase.d": "Steuert die Menge an Leichtigkeit in deiner Taille",
   "bustSpanEase.t": "Zugabe seitlicher Brustbereich",
   "bustSpanEase.d": "Steuert die Größe der (horizontalen) Zugabe, zu deinem seitlichen Brustbereich, \nwenn Brustpunkt berechnet wird.",
+  "shoulderToShoulderEase.t": "Shoulder to Shoulder ease",
+  "shoulderToShoulderEase.d": "Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.",
   "fullChestEaseReduction.t": "Full chest ease reduction",
   "fullChestEaseReduction.d": "Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area",
   "backDartHeight.t": "Höhe Rückenabnäher",

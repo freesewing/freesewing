@@ -1,3 +1,7 @@
+---
+title: "Back pocket horizontal placement"
+---
+
 Controls the horizontal placement of the back pockets.
 
 In other words, more towards the outseam, and this wider apart.

@@ -1,8 +1,11 @@
+- - -
+title: "Grainline position"
+- - -
 
-Bepaalt de positie van de draadrichting.
+Controls the position of the grainline.
 
-Je kunt dit gebruiken om de draadrichting naar binnen of naar buiten te verplaatsen als dat beter werkt voor je lichaam.
-
+You can use this to shift the grainline inward or outward if that works better for your body.
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_grainlineposition_sample.svg "Effect van deze optie op het patroon")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_grainlineposition_sample.svg "Effect of this option on the pattern")

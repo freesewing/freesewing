@@ -1,7 +1,11 @@
-![L'aisance au biceps pour Brian](./bicepsease.svg)
+- - -
+title: "Biceps ease"
+- - -
 
-L'aisance en haut du bras.
+![The biceps ease factor on Brian](./bicepsease.svg)
 
+The amount of ease at your upper arm.
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_bicepsease_sample.svg "Effet de cette option sur le motif")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](brian_bicepsease_sample.svg "Effect of this option on the pattern")

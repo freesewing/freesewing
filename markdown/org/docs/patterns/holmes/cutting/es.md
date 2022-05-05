@@ -1,5 +1,5 @@
 ---
-title: Corte de Holmes
+title: "Holmes deerstalker hat: Cutting Instructions"
 ---
 
 The **gore** pattern piece needs to be cut on the fold to create a whole piece.

@@ -1,3 +1,7 @@
+---
+title: "Hem curve"
+---
+
 ![Hem curve](hemcurve.svg)
 
 How much do you want the hem to curve upwards?

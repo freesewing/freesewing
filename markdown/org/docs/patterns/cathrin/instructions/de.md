@@ -1,3 +1,7 @@
+- - -
+title: "Cathrin corset: Sewing Instructions"
+- - -
+
 <Note>
 
 #### Es gibt viele Möglichkeiten, ein Korsett zu konstruieren
@@ -14,104 +18,104 @@ This pattern is based on [this tutorial by Cathrin Alen](https://katafalk.wordpr
 
 ## Schritt 1: Nähen der Knochenkanäle in der Mitte vorne
 
-![Platziere äußere Panel 1 auf Core Panel 1, schlechte Seiten zusammen](step01.png)
+![Place outer Panel 1 on core Panel 1, bad sides together](step01.png)
 
-Beginnen Sie mit den Vorderteilen in der Mitte. Für einen 11 Panel Cathrin wird dies Panel 1 sein. Platzieren Sie das äußere Panel 1 auf dem Kernpanel 1, schlechte Seiten zusammen.
+Start with the center front pieces. For an 11-panel Cathrin, this will be Panel 1. Place the outer Panel 1 on the core Panel 1, bad sides together.
 
-Mit einer kleinen Nähbreite (ich setze Mine auf „2“), nähen Sie eine Linie gerade in der Mitte vorne. Dann Nähen Sie zwei Knochenkanäle zu beiden Seiten, so dass ein bisschen mehr Platz, etwa 2mm, zusätzlich zur Breite Ihrer Knochen.
+With a small stitch width (I set mine to “2”), sew a line straight down the center front. Then sew two boning channels to either side, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
 
 ## Schritt 2: Füge das erste Seitenpanel hinzu
 
-![Panel 2 anhängen](step02.png)
+![Attach Panel 2](step02.png)
 
-Nimm das nächste Stück. Für einen Cathrin mit 11 Panels wird dies Panel 2 sein.
+Take the next piece. For an 11-panel Cathrin, this will be Panel 2.
 
-Platzieren Sie das äußere Panel 2 auf der äußeren Leiste 1, _gute Seiten zusammen_.
+Place the outer Panel 2 on the outer Panel 1, _good sides together_.
 
-Platzieren Sie das Core Panel 2 auf dem Core Panel 1, _gute Seiten zusammen_.
+Place the core Panel 2 on the core Panel 1, _good sides together_.
 
-Vergewissern Sie sich, dass die vier Schichten des Stoff perfekt sind. Überprüfen Sie doppelt, ob Sie keine Musterstücke vermischt oder versehentlich gekippt haben.
+Ensure that the four layers of fabric line up perfectly. Double check that you haven’t mixed up pattern pieces or flipped any over by mistake.
 
-Passen Sie die vier Stoffschichten im engsten Teil an, _gute Seiten zusammen_, und pin. Dann passen Sie oben und unten auf jeder Platte und Pin. Schließlich den Rest der Kante anpinnen. Verwenden Sie so viele Pins wie nötig, um sicherzustellen, dass die Platten perfekt aufeinander abgestimmt bleiben.
+Match up the four layers of fabric at the narrowest part, _good sides together_, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
 
-Nähen Sie die Naht.
+Sew the seam.
 
 ## Schritt 3: Nähen Sie den Knochenkanal
 
-![Flach- und Nähkanal drücken](step03.png)
+![Press flat and sew boning channel](step03.png)
 
-Drücken Sie beide Schichten des Paneels 2 weg vom Zentrum, mit Hilfe des Eisens, um das Material zu erleichtern, in dem die Nähte kurven.
+Press both layers of Panel 2 away from the center, using the iron to ease the material where the seams curve.
 
-Edgestitch rechts an der gefalteten Kante, nur 1-2 mm von der Nahtlinie. Langsam nähen und die Nähung im Auge behalten, um zu gewährleisten, dass die Distanz auch zu jeder Zeit gehalten wird. Der Zweck dieser Topstitch-Linie ist es, Stress von der Verbindungsnaht zu lindern.
+Edgestitch right along the folded edge, just 1-2mm from the seam line. Sew slowly and keep an eye on the stitching to ensure that the distance is kept even at all times. The purpose of adding this topstitch line is to relieve some stress from the connecting seam.
 
-Topstitch eine weitere Naht parallel zur ersten Naht, so dass ein bisschen mehr Platz, etwa 3 mm zusätzlich zur Breite des Knochens.
+Topstitch another seam parallel to the first seam, allowing a bit of extra space, about 3mm, in addition to the width of your boning.
 
 ## Schritt 4: Füge das nächste Panel hinzu
 
-![Panel 3 anhängen](step04.png)
+![Attach Panel 3](step04.png)
 
-Nimm das nächste Stück. Für einen 11 Panel Cathrin wird dies Panel 3 sein.
+Take the next piece. For an 11-panel Cathrin, this will be Panel 3.
 
-Platzieren Sie das äußere Panel 3 auf der äußeren Leiste 2, _gute Seiten zusammen_.
+Place the outer Panel 3 on the outer Panel 2, _good sides together_.
 
-Platzieren Sie das Core Panel 3 auf dem Core Panel 2, _gute Seiten zusammen_.
+Place the core Panel 3 on the core Panel 2, _good sides together_.
 
-Passen Sie die vier Stoffschichten im engsten Teil an, _gute Seiten zusammen_, und pin. Dann passen Sie oben und unten auf jeder Platte und Pin. Schließlich den Rest der Kante anpinnen. Verwenden Sie so viele Pins wie nötig, um sicherzustellen, dass die Platten perfekt aufeinander abgestimmt bleiben.
+Match up the four layers of fabric at the narrowest part, _good sides together_, and pin. Then match the top and bottom of each panel and pin. Finally, pin the rest of the edge in place. Use as many pins as needed to make sure the panels stay perfectly aligned.
 
-Nähen Sie die Naht.
+Sew the seam.
 
 ## Schritt 5: Ein weiterer Knochenkanal nähen
 
-![Flach- und Nähkanal drücken](step05.png)
+![Press flat and sew boning channel](step05.png)
 
-Drücken Sie beide Schichten des Paneels 3 weg vom Zentrum, mit Hilfe des Eisens, um das Material, wo die Nähte Kurve zu erleichtern.
+Press both layers of Panel 3 away from the center, using the iron to ease the material where the seams curve.
 
-Edgestitch rechts an der gefalteten Kante, nur 1-2 mm von der Nahtlinie.
+Edgestitch right along the folded edge, just 1-2mm from the seam line.
 
-Topstitch eine weitere Naht parallel zur ersten Naht, so dass ein bisschen mehr Platz, etwa 2mm zusätzlich zur Breite des Knochens.
+Topstitch another seam parallel to the first seam, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
 
-Dieser neue Knochenkanal sollte genauso aussehen wie der, den Sie mit Paneel 2 an Panel 1 angebracht haben.
+This new boning channel should look just like the one you made attaching Panel 2 to Panel 1.
 
 ## Schritt 6: Anhängen der Seitenleiste fortsetzen
 
-Fügen Sie die Paneele weiter an und erstellen Sie einen Knochenkanal in jeder Naht. Greifen Sie Panel 4 zu Panel, Panel 5 zu Panel 4, und schließlich Panel 6 zu Panel 5.
+Continue attaching panels, creating a boning channel in each seam. Attach Panel 4 to Panel, Panel 5 to Panel 4, and finally Panel 6 to Panel 5.
 
-![Alle Panels auf einer Seite](step06.png)
+![All panels on one side](step06.png)
 
-Wiederholen Sie diese Schritte auf der anderen Seite.
+Repeat these steps on the other side.
 
-![Alle Panels auf beiden Seiten](step06b.png)
+![All panels on both sides](step06b.png)
 
 ## Schritt 7: Fertige das Korsett zurück
 
-Wenn alle Ihre Paneele angeschlossen sind, arbeiten Sie mit den flachen Seiten jedes Paneels 6.
+With all of your panels connected, you’re working with the flat sides of each Panel 6.
 
-Falten Sie die Nahtgenehmigung für beide Teile nach innen, so dass die Nahtzuweisung versteckt ist. Drücken Sie flach, dann obere Stich in der Nähe der Kante.
+Fold the seam allowance of both pieces inward so that the seam allowance is hidden. Press flat, then top stitch close to the edge.
 
-Topstitch eine weitere Naht neben der Kantennaht, die ein wenig mehr Platz lässt, etwa 2 mm zusätzlich zur Breite des Knochens.
+Topstitch another seam next to the edgestitched seam, allowing a bit of extra space, about 2mm, in addition to the width of your boning.
 
-![Erster Kanal auf der Rückseite](step07.png)
+![First channel on the back](step07.png)
 
-Markiere die Standorte deiner Stummme. (Fügen Sie sie noch nicht ein. Markiere einfach den Stoff, wo du sie platzierst, und stelle sicher, dass du einen Streifen erstellst, der für die Breite deiner Gromme geeignet ist.)
+Mark the locations of your grommets. (Don’t insert them yet. Just mark the fabric where you’ll place them, and make sure you’re creating a strip suited to the width of your grommets.)
 
-Top Stich auf der gegenüberliegenden Seite der Grommet Markierungen, Dann verschieben und sticken Sie eine weitere Naht parallel zur aufgesteppten Naht und lassen Sie wieder genügend Platz für den Knochen.
+Top stitch on the opposite side of the grommet markings, then shift and topstitch another seam parallel to the topstitched seam, again leaving enough space for the boning.
 
-![Grommet Streifen und zweiter Kanal](step07b.png)
+![Grommet strip and second channel](step07b.png)
 
-Wiederholen auf der anderen Seite.
+Repeat on the other side.
 
 ## Step 8: Insert boning
 
-Füge Knochen in allen Kanälen ein.
+Insert boning in all of the channels.
 
 ## Schritt 9: Oben und unten binden
 
-Verwenden Sie Bias-Band oder Band, um die oberen und unteren Kanten des Korsetts zu binden.
+Use bias tape or ribbon to bind the top and bottom edges of the corset.
 
 ## Schritt 10: Legen Sie die Grommets fest
 
-Legen Sie die Grommets in den Positionen fest, die Sie zuvor markiert haben.
+Set the grommets in the locations you marked earlier.
 
 ## Schritt 11: Lasse das Korsett
 
-Du bist fertig!
+You’re done!

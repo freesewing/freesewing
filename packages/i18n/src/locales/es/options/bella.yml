@@ -8,6 +8,9 @@ waistEase:
 bustSpanEase:
   title: Facilidad de la expansión del polvo
   description: Controla la cantidad de facilidad (horizontal) que se agrega a tu superficie de busto al ubicar el punto de busto.
+shoulderToShoulderEase:
+  title: Shoulder to Shoulder ease
+  description: Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
 fullChestEaseReduction:
   title: Full chest ease reduction
   description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area

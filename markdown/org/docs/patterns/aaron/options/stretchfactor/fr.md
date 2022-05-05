@@ -1,6 +1,10 @@
-![L'option du taux d'élasticité sur Aaron](./stretchfactor.svg)
+- - -
+title: "Stretch"
+- - -
 
-Quel est le taux d’élasticité de votre tissu ?  Choisissez 0% si votre tissu n'est pas du tout extensible.
+![The stretch factor option on Aaron](./stretchfactor.svg)
+
+How much does your fabric stretch?  Choose 0% if your fabric does not stretch.
 
 > ##### Cette option ne concerne que l'élasticité horizontale (dans la largeur) uniquement.
 > 
@@ -8,4 +12,4 @@ Quel est le taux d’élasticité de votre tissu ?  Choisissez 0% si votre tissu
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_stretchfactor_sample.svg "Effet de cette option sur le motif")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_stretchfactor_sample.svg "Effect of this option on the pattern")

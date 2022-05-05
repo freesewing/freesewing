@@ -1,3 +1,9 @@
+---
+title: "Sleevecap top Y"
+---
+
+---
+
 ![The vertical location of the sleevecap top](./sleevecaptopfactory.svg)
 
 This option controls the vertical placement of the sleevecap top.

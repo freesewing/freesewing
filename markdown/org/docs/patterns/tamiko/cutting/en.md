@@ -1,3 +1,7 @@
+---
+title: "Tamiko top: Cutting Instructions"
+---
+
 - **Main fabric**
   - Cut **1 Tamiko top** on the fold
 

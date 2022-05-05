@@ -1,48 +1,52 @@
+- - -
+title: "Ursula undies: Sewing Instructions"
+- - -
+
 ### Paso 1: Agarra la parte frontal a la primera pieza de chispa
 
-Coloca una de las piezas de chispa en la parte delantera _lados buenos juntos_, de modo que las costuras de los croquis estén alineadas. Fijar o bastar en la costura de la costura.
+Place one of the gusset pieces on the front piece, _good sides together_, so that the crotch seams are aligned. Pin or baste at the seam allowance.
 
-![Difundir el frente a la primera pieza de chispa](step01.png)
+![Sew the front to the first gusset piece](step01.png)
 
 ### Paso 2: Abrir plano
 
-Abrir plano. Puedes pulsar si quieres, pero ¿quién presiona el interior?
+Open flat. You can press if you want to, but who presses underwear?
 
-![Abrir plano](step02.png)
+![Open flat](step02.png)
 
 ### Paso 3: Pase la espalda a la primera pieza de chispa
 
-Coloque la parte trasera en el chorro de chorro juntos. Fijar o bastar en la costura de la costura.
+Place the back piece on the gusset, good sides together. Pin or baste at the seam allowance.
 
-![Lleva la espalda a la primera pieza de chispa](step03.png)
+![Sew the back to the first gusset piece](step03.png)
 
 ### Paso 4: Abrir plano
 
-Abrir plano.
+Open flat.
 
-![Abrir plano](step04.png)
+![Open flat](step04.png)
 
 ## Paso 5: Adjuntar la segunda pieza de chispa
 
-Saca las piezas delanteras y traseras haciéndolas girar hacia el centro.
+Get the front and back pieces out of the way by rolling them to the center.
 
-Coloque la segunda pieza de chispa bien juntos en la parte superior para que se alinee con la primera pieza de chispa. Las piezas enrolladas del frontal y de la parte trasera deben ser sándwicked entre tus rebanadas.
+Place the second gusset piece good sides together on top so that it lines up with the first gusset piece. The rolled-up front and back pieces should be sandwiched between your gusset pieces.
 
-Ponga las costuras de la parte frontal y trasera en su franquicia de costura usando un serger o un zigzag stitch.
+Sew the front and back gusset seams at your seam allowance using a serger or a zigzag stitch.
 
-![Adjuntar la segunda pieza de chispa](step05.png)
+![Attach the second gusset piece](step05.png)
 
 ## Paso 6: Girar a la derecha
 
-Gire a los unidos a la derecha. Todas las costuras de gusset deben estar adjuntas.
+Turn the undies right side out. All gusset seams should be enclosed.
 
-![Girar a la derecha](step06.png)
+![Turn right side out](step06.png)
 
 ### Paso 7: Aplasta las costuras del lado
 
-Anclar el lado costura buenos lados juntos. Ponga las costuras en su costura usando un serger o un zigzag stitch.
+Pin the side seams good sides together. Sew the side seams at your seam allowance using a serger or a zigzag stitch.
 
-![Difundir costuras laterales](step07.png)
+![Sew the side seams](step07.png)
 
 <Note>
 
@@ -52,30 +56,30 @@ Anclar el lado costura buenos lados juntos. Ponga las costuras en su costura usa
 
 ### Paso 8: Preparar elástico
 
-Sobrepasa los bordes de cada pieza de elástico por su franquicia de costura y junta juntos. Deberías tener tres piezas elásticas: una para la cintura y dos para las piernas.
+Overlap the edges of each piece of elastic by your seam allowance and stitch together. You should have three elastic pieces: one for the waistband and two for the legs.
 
-Para asegurar que se estire el elástico uniformemente, divida el elástico en cuatro trimestres y marque los puntos con pines o chalco. Haz lo mismo con las aberturas de cintura y piernas, marcando los puntos de cuarto.
+To ensure that you stretch the elastic evenly, divide the elastic into four quarters and mark the points with pins or chalk. Do the same to the waist and leg openings, marking the quarter points.
 
-![Preparar elástico](step08.png)
+![Prepare elastic](step08.png)
 
-![Retirar las aperturas](step08b.png)
+![Quarter the openings](step08b.png)
 
 ### Paso 9: Empuñadura elástica al exterior de la ropa
 
-Pin el elástico a la cintura y a las aberturas de las piernas en el lado bueno del tejido, asegurando que se alinean las marcas trimestrales. Si tu elástico tiene un borde decorativo, Asegúrese de alinear el borde plano (no el borde decorativo) del elástico al borde de la tela. El borde decorativo debe estar apuntando hacia la prenda, no lejos de ella.
+Pin the elastic to the waist and leg openings on the good side of the fabric, ensuring that you line up the quarter markings. If your elastic has a decorative edge, make sure that you line up the plain edge (not the decorative edge) of the elastic to the edge of the fabric. The decorative edge should be pointing towards the garment, not away from it.
 
-Difunde el elástico a la prenda usando un zigzag stitch. Tendrás que estirar un poco el elástico a medida que coser para que quede plana contra la tela. Evite estirar el tejido en sí.
+Sew the elastic to the garment using a zigzag stitch. You will have to stretch the elastic slightly as you sew to make it lay flat against the fabric. Avoid stretching the fabric itself.
 
-![Difunde elástico al exterior de la ropa](step09.png)
+![Sew elastic to the outside of the garment](step09.png)
 
-Recorta cualquier tejido sobrante que cause granel o salga de la elástica.
+Trim away any excess fabric that causes bulk or sticks out from the elastic.
 
 ### Paso 10: Doblar el elástico y coser de nuevo
 
-Doblar el elástico y la tela al interior, encerrando el borde crudo de la tela bajo la elástica. Usted debería mirar el exterior de los undies, un borde plegado con un poco de la elástica mirando. Difunde usando un zigzag stitch.
+Fold the elastic and fabric to the inside, enclosing the raw edge of the fabric under the elastic. You should be looking at the outside of the undies, a folded edge with a bit of the elastic peeking out. Sew using a zigzag stitch.
 
-![Doblar el elástico y coser de nuevo](step10.png)
+![Fold the elastic in and sew it down again](step10.png)
 
-Repita estos pasos para cada una de las aberturas de cintura y piernas.
+Repeat these steps for each of the waist and leg openings.
 
-¡Lo ha conseguido!
+You did it!

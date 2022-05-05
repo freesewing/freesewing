@@ -1,3 +1,7 @@
+---
+title: "Yuri hoodie: What You Need"
+---
+
 To make Yuri, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)

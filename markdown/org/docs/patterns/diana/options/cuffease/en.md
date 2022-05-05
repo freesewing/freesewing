@@ -1,5 +1,7 @@
 ---
-title: Cuff ease
+title: "Cuff ease"
+---
+
 ---
 
 The amount of ease at your wrist.

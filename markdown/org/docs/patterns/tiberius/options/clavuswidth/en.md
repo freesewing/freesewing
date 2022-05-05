@@ -1,3 +1,7 @@
+---
+title: "Clavus width"
+---
+
 Controls the width of the clavi
 
 ## Effect of this option on the pattern

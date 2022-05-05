@@ -1,5 +1,5 @@
 ---
-title: Construction
+title: "Florent flat cap: Sewing Instructions"
 ---
 
 ### Step 1: Fuse interfacing
