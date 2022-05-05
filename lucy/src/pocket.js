@@ -24,8 +24,8 @@ export default function (part) {
  points.centerLeft = points.center.shift(180, pocketWidth * 0.25)
  
  //taper point 
- points.taperRight = new Point(pocketWidth, pocketLength * 0.4375)
- points.taperLeft = new Point(0, pocketlength * 0.4375)
+ points.taperRight = new Point(pocketWidth, (pocketLength * 0.4375))
+ points.taperLeft = new Point(0, (pocketLength * 0.4375))
 
  //path
  paths.slit = new Path()
@@ -41,7 +41,7 @@ export default function (part) {
 
   paths.seam = new Path()
     .move(points.centerLeft)
-    .move(points.taperLeft)
+    .line(points.taperLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
     .line(points.taperRight)
