@@ -35,18 +35,7 @@ export default function (part) {
  points.rightCp1 = points.bottomRight.shiftTowards(points.taperRight, 50)
  points.rightCp2 = points.bottomRight.shiftTowards(points.bottomLeft, 50)
 
- //path
- 
- //rounding left corner
 
- paths.leftCorner = new Path()
-  .move(points.leftCp1)
-  .curve_(points.bottomLeft, points.leftCp2)
- 
- paths.rightCorner = new Path()
-  .move(points.rightCp1)
-  .curve_(points.bottomRight, points.rightCp2)
- 
   paths.slit = new Path()
   .move(points.center)
   .line(points.middle)
@@ -54,21 +43,18 @@ export default function (part) {
   .close()
   .attr("class", "dashed")
 
-  
- 
-
-
   paths.seam = new Path()
     .move(points.centerLeft)
     .line(points.taperLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
+    .line(points.leftCp1)
+    .curve_(points.bottomLeft, points.leftCp2)
+    .line(points.rightCp2)
+    .curve_(points.bottomRight, points.rightCp1)
     .line(points.taperRight)
     .line(points.centerRight)
-    .line(points.centerLeft)
     .close()
-    .attr('class', 'fabric')
-
+  
+    
   // Complete?
   if (complete) {
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.6)
