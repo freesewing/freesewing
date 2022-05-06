@@ -40,8 +40,7 @@ export default function (part) {
   .move(points.center)
   .line(points.middle)
   .line(points.center)
-  .close()
-  .attr("class", "dashed")
+  .attr("class", "path fabric dashed")
 
   paths.seam = new Path()
     .move(points.centerLeft)
@@ -57,12 +56,14 @@ export default function (part) {
     
   // Complete?
   if (complete) {
-    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.6)
+    points.logo = points.center.shiftOutwards(points.middle, pocketWidth / 5)
     snippets.logo = new Snippet('logo', points.logo)
-    points.text = points.logo
-      .shift(pocketLength *0.7, pocketWidth / 2)
-      .attr('data-text', 'hello')
-      .attr('data-text-class', 'center')
+    
+    points.scalebox = points.logo
+      .shift(270, pocketWidth / 5)
+    
+      macro("scalebox", { at: points.scalebox })  
+    
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
