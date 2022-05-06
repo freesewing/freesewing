@@ -27,6 +27,11 @@ export default function (part) {
  points.taperRight = new Point(pocketWidth, (pocketLength * 0.4375))
  points.taperLeft = new Point(0, (pocketLength * 0.4375))
 
+ //control points curve
+
+ points.LeftCp1 = points.bottomLeft.shift(90, points.bottomLeft.dy(points.bottomRight)/10)
+ points.LeftCp2 = points.bottomLeft.shift(180, points.bottomLeft.dy(points.bottomRight)/10)
+
  //path
  paths.slit = new Path()
   .move(points.center)
@@ -52,10 +57,10 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.7)
+    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.6)
     snippets.logo = new Snippet('logo', points.logo)
     points.text = points.logo
-      .shift(-90, pocketWidth / 2)
+      .shift(pocketLength *0.7, pocketWidth / 2)
       .attr('data-text', 'hello')
       .attr('data-text-class', 'center')
 
