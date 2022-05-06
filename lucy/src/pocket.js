@@ -29,10 +29,19 @@ export default function (part) {
 
  //control points curve
 
- points.LeftCp1 = points.bottomLeft.shift(90, points.bottomLeft.dy(points.bottomRight)/10)
- points.LeftCp2 = points.bottomLeft.shift(180, points.bottomLeft.dy(points.bottomRight)/10)
+ points.LeftCp1 = points.bottomLeft.shiftTowards(points.taperLeft, 50)
+ points.LeftCp2 = points.bottomLeft.shiftTowards(points.bottomRight, 50)
 
  //path
+ 
+ //rounding left corner
+
+ paths.leftCorner = new Path()
+  .move(points.LeftCp1)
+  .curve_(points.bottomLeft, points.LeftCp2)
+ 
+ 
+ 
  paths.slit = new Path()
   .move(points.center)
   .line(points.middle)
