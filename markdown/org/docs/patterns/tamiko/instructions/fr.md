@@ -6,7 +6,7 @@ title: "Tamiko top: Sewing Instructions"
 
 ![Finsh the armhole seam](step03.png)
 
-- Finish the armhole seam with a narrow hem.
+- Terminez la couture de la manche avec un ourlet étroit.
 
 ### Étape 2 : Terminer le haut
 
