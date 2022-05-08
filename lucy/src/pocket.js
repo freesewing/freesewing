@@ -6,7 +6,7 @@ export default function (part) {
     //pocket seams here 
   let pocketLength = (800 * options.length)
   let pocketWidth = (500 * options.width)
-  let pocketEdge =(1 * options.edge)
+  let pocketEdge = (options.edge)
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pocketWidth, 0)
@@ -21,8 +21,8 @@ export default function (part) {
   
  //top 
 
- points.centerRight = points.center.shift(0, pocketWidth * pocketEdge)
- points.centerLeft = points.center.shift(180, pocketWidth * pocketEdge)
+ points.centerRight = points.center.shift(0, (pocketWidth * pocketEdge))
+ points.centerLeft = points.center.shift(180, (pocketWidth * pocketEdge))
  
  //taper point 
  points.taperRight = new Point(pocketWidth, (pocketLength * 0.4375))
@@ -86,6 +86,11 @@ export default function (part) {
       from: points.centerLeft,
       to: points.centerRight,
       y: points.topLeft.y + sa + 15,
+    })
+    macro('vd', {
+      from: points.center,
+      to: points.pointMiddle,
+      y: points.center.x + sa + 15,
     })
   }
 
