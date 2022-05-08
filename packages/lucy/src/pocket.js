@@ -89,7 +89,7 @@ export default function (part) {
     })
     macro('vd', {
       from: points.center,
-      to: points.pointMiddle,
+      to: points.middle,
       y: points.center.x + sa + 15,
     })
   }
