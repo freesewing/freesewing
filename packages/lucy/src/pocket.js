@@ -40,7 +40,6 @@ export default function (part) {
   paths.slit = new Path()
   .move(points.center)
   .line(points.middle)
-  .line(points.center)
   .attr("class", "path fabric dashed")
 
   paths.seam = new Path()
