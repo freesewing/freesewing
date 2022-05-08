@@ -28,7 +28,7 @@ export default {
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ['box'],
+  parts: ['pocket'],
   options: {
     width: { pct: 50, min: 30, max: 100 },
     length: {pct: 50, min: 30, max:100},
