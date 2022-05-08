@@ -32,6 +32,6 @@ export default {
   options: {
     length: { pct: 50, min: 10, max: 100 },
     width: { pct: 50, min: 10, max: 100 }, 
-    edge: { pct: 25, min: 20, max: 50 },
+    edge: { pct: 25, min: 20, max: 40 },
   },
 }
