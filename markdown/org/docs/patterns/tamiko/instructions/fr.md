@@ -2,7 +2,7 @@
 title: "Tamiko top: Sewing Instructions"
 - - -
 
-### Étape 1 : Terminer la couture des armoiries
+### Étape 1 : Terminer l'emmanchure
 
 ![Étape : Terminer la couture de la manche](step03.png)
 
@@ -14,8 +14,8 @@ title: "Tamiko top: Sewing Instructions"
 
 <Note>
 
-Comme votre dessus est plié, c'est une bonne idée de relier les deux moitiés.
-De cette façon, votre top ne peut pas se déplacer pendant que nous le finissons.
+Comme votre top est plié, c'est une bonne idée d'épingler les deux moitiés ensemble.
+Comme ça, votre top ne va pas bouger pendant que nous le finissons.
 
 </Note>
 
