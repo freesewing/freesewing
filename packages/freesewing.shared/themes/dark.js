@@ -34,11 +34,12 @@ module.exports = {
   '--btn-error-content': colors.neutral[50],
 
   '--theme-gradient': `repeating-linear-gradient(
-    -45deg,
-    ${colors.neutral[300]},
-    ${colors.neutral[300]} 10px,
-    ${colors.neutral[800]} 10px,
-    ${colors.neutral[800]} 20px
+    90deg,
+    ${colors.violet[900]},
+    ${colors.violet[900]} 40%,
+    ${colors.pink[700]} 65%,
+    ${colors.violet[600]} 90%,
+    ${colors.violet[900]} 100%
   )`,
 
   '--code-background-color': '#111',

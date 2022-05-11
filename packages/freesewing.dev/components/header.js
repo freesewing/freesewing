@@ -46,6 +46,8 @@ const Header = ({ app, setSearch }) => {
         z-30
         transition-transform
         ${show ? '': 'fixed top-0 left-0 -translate-y-20'}
+        drop-shadow-xl
+        ${app.loading ? "theme-gradient loading" : ""}
       `}>
         <div className="max-w-6xl m-auto">
           <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
@@ -115,10 +117,6 @@ const Header = ({ app, setSearch }) => {
             </div>
           </div>
         </div>
-        <div className={`
-          theme-gradient h-1 w-full z-10 relative -mb-1
-          ${app.loading ? 'loading' : ''}
-        `}></div>
       </header>
   )
 }

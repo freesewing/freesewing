@@ -212,7 +212,7 @@
 }
 .theme-gradient.loading {
   animation-name: MOVE-BG;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   margin-top: 0;
@@ -223,7 +223,7 @@
      background-position-x: 0;
    }
    to {
-     background-position-x: -300px;
+     background-position-x: -200vw;
    }
 }
 
