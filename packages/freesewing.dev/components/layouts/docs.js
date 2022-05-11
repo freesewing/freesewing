@@ -103,7 +103,7 @@ const DefaultLayout = ({
             ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
             md:flex md:sticky md:flex-row-reverse
             md:relative md:transform-none
-            px-8 pt-24
+            px-8 py-24
 
             md:w-40
             lg:w-1/2 lg:min-w-80 lg:pr-2 lg:border-r-2
@@ -113,10 +113,10 @@ const DefaultLayout = ({
             <PrimaryNavigation app={app} active={slug}/>
           </aside>
 
-          <section className="md:py-36 max-w-2/3">
+          <section className="py-28 md:py-36 max-w-2/3">
             <div>
               {title && (
-                <div className="px-0 xl:pl-8 2xl:pl-16">
+                <div className="px-8 xl:pl-8 2xl:pl-16">
                   <Breadcrumbs app={app} slug={slug} title={title} />
                   <PageTitle app={app} slug={slug} title={title} />
                 </div>
