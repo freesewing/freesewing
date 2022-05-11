@@ -19,11 +19,11 @@ const force = [
 
 // List of icons matched to top-level slug
 const icons = {
-  blog: <RssIcon />,
-  tutorials: <TutorialIcon />,
-  guides: <GuideIcon />,
-  howtos: <HelpIcon />,
-  reference: <DocsIcon />
+  blog: (className='') => <RssIcon className={className}/>,
+  tutorials: (className='') => <TutorialIcon className={className}/>,
+  guides: (className='') => <GuideIcon className={className}/>,
+  howtos: (className='') => <HelpIcon className={className}/>,
+  reference: (className='') => <DocsIcon className={className}/>
 }
 
 /* helper method to order nav entries */
@@ -33,7 +33,7 @@ const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
 // Exported for re-use
 export const Chevron = ({w=8, m=2}) => <svg className={`
     fill-current opacity-75 w-${w} h-${w} mr-${m}
-    details-toggle hover:text-secondary sm:hover:text-secondary-focus
+    details-toggle hover:text-secondary sm:hover:text-secondary
   `}
   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
   <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
@@ -47,9 +47,9 @@ const currentChildren = current => Object.values(order(current))
 // Exported for re-use
 export const linkClasses = `text-lg lg:text-xl
   py-1
-  text-base-content sm:text-neutral-content
+  text-base-content sm:text-base-content
   hover:text-secondary
-  sm:hover:text-secondary-focus
+  sm:hover:text-secondary
 `
 
 // Figure out whether a page is on the path to the active page
@@ -76,7 +76,7 @@ const SubLevel = ({ nodes={}, active }) => (
               flex flex-row
               px-2
               text-base-content
-              sm:text-neutral-content
+              sm:text-base-content
               hover:cursor-row-resize
               items-center
             `}>
@@ -86,16 +86,16 @@ const SubLevel = ({ nodes={}, active }) => (
                   ${linkClasses}
                   hover:cursor-pointer
                   hover:border-secondary
-                  sm:hover:border-secondary-focus
+                  sm:hover:border-secondary
                   ${child.__slug === active
-                    ? 'text-secondary border-secondary sm:text-secondary-focus sm:border-secondary-focus'
-                    : 'text-base-content sm:text-neutral-content'
+                    ? 'text-secondary border-secondary sm:text-secondary sm:border-secondary'
+                    : 'text-base-content sm:text-base-content'
                   }
                 `}>
                   <span className={`
                     text-3xl mr-2 inline-block p-0 leading-3
                     ${child.__slug === active
-                      ? 'text-secondary sm:text-secondary-focus translate-y-1'
+                      ? 'text-secondary sm:text-secondary translate-y-1'
                       : 'translate-y-3'
                     }
                   `}>
@@ -120,15 +120,15 @@ const SubLevel = ({ nodes={}, active }) => (
               ${linkClasses}
               hover:cursor-pointer
               hover:border-secondary
-              sm:hover:border-secondary-focus
+              sm:hover:border-secondary
               ${child.__slug === active
-                ? 'text-secondary border-secondary sm:text-secondary-focus sm:border-secondary-focus'
-                : 'text-base-content sm:text-neutral-content'
+                ? 'text-secondary border-secondary sm:text-secondary sm:border-secondary'
+                : 'text-base-content sm:text-base-content'
               }`}>
               <span className={`
                 text-3xl mr-2 inline-block p-0 leading-3
                 ${child.__slug === active
-                  ? 'text-secondary sm:text-secondary-focus translate-y-1'
+                  ? 'text-secondary sm:text-secondary translate-y-1'
                   : 'translate-y-3'
                 }
               `}>
@@ -154,15 +154,15 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
       hover:cursor-row-resize
       p-2
       text-base-content
-      sm:text-neutral-content
+      sm:text-base-content
       items-center
     `}>
-      <span className="text-secondary-focus">{icon}</span>
+      <span className="text-secondary">{icon}</span>
       <Link href={`/${slug}`}>
         <a className={`
           grow ${linkClasses} hover:cursor-pointer
           ${slug === active
-            ? 'text-secondary sm:text-secondary-focus'
+            ? 'text-secondary sm:text-secondary'
             : ''
           }`}
         >
@@ -175,12 +175,15 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
   </details>
 )
 
-const Navigation = ({ app, active }) => {
+const Navigation = ({ app, active, className='' }) => {
   if (!app.navigation) return null
   const output = []
   for (const page of order(app.navigation)) output.push(<TopLevel
     key={page.__slug}
-    icon={icons[page.__slug] || <span className="text-3xl mr-2 translate-y-3 inline-block p-0 leading-3">&deg;</span>}
+    icon={icons[page.__slug]
+      ? icons[page.__slug]('w-6 h-6')
+      : <span className="text-3xl mr-2 translate-y-3 inline-block p-0 leading-3">&deg;</span>
+    }
     title={page.__title}
     slug={page.__slug}
     hasChildren={keepClosed.indexOf(page.__slug) === -1}
@@ -189,13 +192,39 @@ const Navigation = ({ app, active }) => {
     active={active}
   />)
 
-  return <div className='pb-20'>{output}</div>
+  return <div className={`pb-20 ${className}`}>{output}</div>
+}
+
+const Icons = ({ app, active, className='' }) => {
+  if (!app.navigation) return null
+  const output = []
+  for (const page of order(app.navigation)) {
+    output.push(
+      <li key={page.__slug} className="py-4">
+        <Link href={`/${page.__slug}`}>
+          <a
+            className={`grow ${linkClasses} hover:cursor-pointer flex flex-col items-center`}
+            title={page.__title}
+          >
+            {icons[page.__slug]
+              ? icons[page.__slug]('w-14 h-14')
+              : <HelpIcon />
+            }
+            <span className='font-bold'>{page.__title}</span>
+          </a>
+        </Link>
+      </li>
+    )
+  }
+
+  return <ul className={`flex flex-col items-center ${className}`}>{output}</ul>
 }
 
 const PrimaryMenu = ({ app, active }) => (
-  <nav className="sm:max-w-lg grow mb-12">
-    <ThemePicker app={app} className="w-full sm:hidden"/>
-    <Navigation app={app} active={active} />
+  <nav className="mb-12">
+    <ThemePicker app={app} className="w-full md:hidden"/>
+    <Icons app={app} className="hidden md:block lg:hidden"/>
+    <Navigation app={app} active={active} className="md:hidden lg:block"/>
   </nav>
 )
 

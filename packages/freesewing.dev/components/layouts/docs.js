@@ -60,25 +60,6 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
   )
 }
 
-const asideClasses = `
-  fixed top-0 right-0
-  pt-28
-  sm:pt-8 sm:mt-16
-  pb-4 px-2
-  sm:relative sm:transform-none
-  h-screen w-screen
-  bg-base-100
-  sm:bg-base-50
-  sm:flex
-  sm:sticky
-  overflow-y-scroll
-  z-20
-  bg-base-100 text-base-content
-  transition-all
-  xl:w-1/4
-`
-
-
 const DefaultLayout = ({
   app,
   title=false,
@@ -111,89 +92,48 @@ const DefaultLayout = ({
     bg-base-100
     `}>
       <Header app={app} setSearch={setSearch} />
-      <main className="grow bg-base-100">
+      <main className="grow">
         <div className="m-auto flex flex-row justify-center">
 
           <aside className={`
-            ${asideClasses}
+            fixed top-0 right-0 h-screen w-screen
+            overflow-y-auto z-20
+            bg-base-100 text-base-content md:bg-base-50
+            transition-all
             ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
-            sm:flex-row-reverse
-            ${workbench && collapsePrimaryNav
-              ? 'sm:px-0 sm:w-16'
-              : 'sm:px-1 md:px-4 lg:px-8'
-            }
-            w-96
+            md:flex md:sticky md:flex-row-reverse
+            md:relative md:transform-none
+            px-8 pt-24
+
+            md:w-40
+            lg:w-1/2 lg:min-w-80 lg:pr-2 lg:border-r-2
+            xl:w-1/3 xl:min-w-80 xl:pr-2 xl:border-0
+            2xl:min-w-96 2xl:pr-8
           `}>
-            {workbench && (
-              <div className={`hidden sm:flex`}>
-                <button
-                  className="text-secondary-focus h-full px-2 pl-4 hover:animate-pulse"
-                  onClick={() => setCollapsePrimaryNav(!collapsePrimaryNav)}
-                >
-                  {collapsePrimaryNav
-                    ? <><Right /><Right /><Right /></>
-                    : <><Left /><Left /><Left /></>
-                  }
-                </button>
-              </div>
-            )}
             <PrimaryNavigation app={app} active={slug}/>
           </aside>
 
-          <div className="p-0 m-0 bg-base-100">
-            <section className={`
-              p-4 pt-24 sm:pt-28
-              sm:px-1 md:px-4 lg:px-8
-              ${workbench && collapsePrimaryNav
-                ? ''
-                : 'max-w-7xl'
-              }
-            `}>
-              <div>
-                {title && (
-                  <>
-                    <Breadcrumbs app={app} slug={slug} title={title} />
-                    <PageTitle app={app} slug={slug} title={title} />
-                  </>
-                )}
-                {children}
-              </div>
-            </section>
-          </div>
+          <section className="md:py-36 max-w-2/3">
+            <div>
+              {title && (
+                <div className="px-0 xl:pl-8 2xl:pl-16">
+                  <Breadcrumbs app={app} slug={slug} title={title} />
+                  <PageTitle app={app} slug={slug} title={title} />
+                </div>
+              )}
+              {children}
+            </div>
+          </section>
 
         </div>
 
-        {workbench && AltMenu && (
-          <aside className={`
-            ${asideClasses}
-            ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
-            sm:flex-row
-            ${collapseAltMenu
-              ? 'sm:px-0 sm:w-16'
-              : 'sm:px-1 md:px-4 lg:px-8 sm:w-[38.2%]'
-            }
-          `}>
-            <div className={`hidden sm:flex`}>
-              <button
-                className="text-secondary-focus h-full px-2 pr-4 hover:animate-pulse"
-                onClick={() => setCollapseAltMenu(!collapseAltMenu)}
-              >
-                {collapseAltMenu
-                  ? <><Left /><Left /><Left /></>
-                  : <><Right /><Right /><Right /></>
-                }
-              </button>
-            </div>
-            {AltMenu}
-          </aside>
-        )}
       </main>
       {!noSearch && search && (
         <>
         <div className={`
           fixed w-full max-h-screen bg-base-100 top-0 z-30 pt-0 pb-16 px-8
-          sm:rounded-lg sm:top-24
-          sm:max-w-xl sm:m-auto sm:inset-x-12
+          md:rounded-lg md:top-24
+          md:max-w-xl md:m-auto md:inset-x-12
           md:max-w-2xl
           lg:max-w-4xl
         `}>

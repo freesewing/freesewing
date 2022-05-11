@@ -35,6 +35,12 @@
   .mdx a[aria-hidden="true"] {
     text-decoration: none;
   }
+  /* Watch out of P tags in the toc list */
+  .mdx-toc ul li p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
 
   /* FreeSewing SVG output styles */
   .fs-stroke-fabric      { stroke: var(--pattern-fabric); }
