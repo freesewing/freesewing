@@ -23,7 +23,7 @@ const MdxPage = props => {
    * active state
    */
   return (
-    <Page app={app} {...props.page} layout="docs">
+    <Page app={app} {...props.page}>
       <Head>
         <meta property="og:title" content={props.page.title} key="title" />
         <meta property="og:type" content="article" key='type' />

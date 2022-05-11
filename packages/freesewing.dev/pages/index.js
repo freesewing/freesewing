@@ -1,15 +1,15 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Robot from 'shared/components/robot'
+import Layout from 'site/components/layouts/bare'
 
 const HomePage = (props) => {
   const app = useApp()
   return (
-    <Page app={app} title="Welcome to FreeSewing.dev">
+    <Page app={app} title="Welcome to FreeSewing.dev" layout={Layout}>
       <Head>
         <meta property="og:title" content="FreeSewing.dev" key="title" />
         <meta property="og:type" content="article" key='type' />
@@ -23,7 +23,31 @@ const HomePage = (props) => {
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
-      <div className="max-w-screen-md">
+        <section
+          style={{
+            backgroundImage: "url('/img/splash.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: '50% 50%',
+            minHeight: '100vh'
+          }}
+          className="mt-4 mb-8 shadow drop-shadow-lg lg:mt-8 lg:mb-20 w-full"
+        >
+          <div className="mx-auto max-w-4xl px-8 py-12 lg:py-36">
+            <h1
+              className="text-8xl font-black lg:text-8xl"
+              style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
+            >
+              FreeSewing<span className="font-light">.dev</span>
+            </h1>
+            <h2
+              className="w-2/3 text-2xl lg:max-w-xl lg:text-4xl xl:pr-0"
+              style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
+            >
+              Documentation for FreeSewing contributors & developers
+            </h2>
+          </div>
+        </section>
+      <div>
         <p>
           FreeSewing.dev hosts documentation for contributors and developers alike.
           <br />

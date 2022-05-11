@@ -57,22 +57,10 @@ const DefaultLayout = ({ app, title=false, children=[] }) => {
   const router = useRouter()
   const slug = router.asPath.slice(1)
 
-  return (
-    <div className="m-auto flex flex-row justify-center">
-      <Aside app={app} slug={slug} />
-      <section className="py-28 md:py-36 max-w-2/3">
-        <div>
-          {title && (
-            <div className="px-8 xl:pl-8 2xl:pl-16">
-              <Breadcrumbs app={app} slug={slug} title={title} />
-              <PageTitle app={app} slug={slug} title={title} />
-            </div>
-          )}
-          {children}
-        </div>
-      </section>
-    </div>
-  )
+  return [
+    <Aside app={app} slug={slug} mobileOnly />,
+    children
+  ]
 }
 
 export default DefaultLayout

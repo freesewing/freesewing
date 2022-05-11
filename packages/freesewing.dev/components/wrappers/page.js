@@ -3,6 +3,7 @@ import { useSwipeable } from 'react-swipeable'
 import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
 // Layouts components
+import LayoutWrapper from 'site/components/wrappers/layout'
 import Docs from 'site/components/layouts/docs'
 
 const layouts = {
@@ -14,7 +15,7 @@ const PageWrapper= ({
   title="FIXME: No title set",
   noSearch=false,
   app=false,
-  layout=false,
+  layout=Docs,
   children=[]
 }) => {
 
@@ -44,7 +45,7 @@ const PageWrapper= ({
     noSearch: noSearch,
   }
 
-  const Layout = layouts[layout]
+  const Layout = layout
 
   return (
     <div
@@ -53,10 +54,12 @@ const PageWrapper= ({
       data-theme={app.theme}
       key={app.theme} // Thiis forces the data-theme update
     >
-      {layout
-        ? <Layout {...childProps}>{children}</Layout>
-        : children
-      }
+      <LayoutWrapper {...childProps}>
+        {Layout
+          ? <Layout {...childProps}>{children}</Layout>
+          : children
+        }
+      </LayoutWrapper>
     </div>
   )
 }
