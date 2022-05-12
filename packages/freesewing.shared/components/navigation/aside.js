@@ -10,11 +10,11 @@ const Aside = ({ app, slug, mobileOnly=false }) => (
     md:flex md:sticky md:flex-row-reverse
     md:relative md:transform-none
     px-8 py-24
-
-    md:w-40
-    lg:w-1/2 lg:min-w-80 lg:pr-2 lg:border-r-2
-    xl:w-1/3 xl:min-w-80 xl:pr-2 xl:border-0
-    2xl:min-w-96 2xl:pr-8
+    shrink-0
+    md:w-24 md:px-2 md:justify-center
+    lg:w-max lg:pr-2 lg:border-r-2
+    xl:w-max xl:border-0
+    2xl:pr-8
     ${mobileOnly ? 'block md:hidden' : ''}
   `}>
     <PrimaryNavigation app={app} active={slug}/>

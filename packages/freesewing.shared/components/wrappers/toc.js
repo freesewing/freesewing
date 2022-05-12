@@ -29,6 +29,7 @@ const TocWrapper = ({toc, app}) => {
     <div className={`
       mdx mdx-toc text-base-content text-lg lg:text-xl
       sticky top-8 max-h-screen overflow-y-auto
+      max-w-prose
       md:border-l-4 md:pl-4 md:mb-8 md:border-base-200
     `}
     >

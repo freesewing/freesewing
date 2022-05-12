@@ -60,7 +60,7 @@ const DefaultLayout = ({ app, title=false, children=[] }) => {
   return (
     <div className="m-auto flex flex-row justify-center">
       <Aside app={app} slug={slug} />
-      <section className="py-28 md:py-36 max-w-2/3">
+      <section className="py-28 md:py-36">
         <div>
           {title && (
             <div className="px-8 xl:pl-8 2xl:pl-16">
