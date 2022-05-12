@@ -195,17 +195,21 @@ const Navigation = ({ app, active, className='' }) => {
   return <div className={`pb-20 ${className}`}>{output}</div>
 }
 
-const Icons = ({ app, active, className='' }) => {
+export const Icons = ({
+  app, active,
+  ulClasses='',
+  liClasses='',
+  linkClasses=`grow text-lg lg:text-xl py-1 text-base-content sm:text-base-content
+  hover:text-secondary sm:hover:text-secondary hover:cursor-pointer
+  flex flex-col items-center`
+}) => {
   if (!app.navigation) return null
   const output = []
   for (const page of order(app.navigation)) {
     output.push(
-      <li key={page.__slug} className="py-4">
+      <li key={page.__slug} className={liClasses}>
         <Link href={`/${page.__slug}`}>
-          <a
-            className={`grow ${linkClasses} hover:cursor-pointer flex flex-col items-center`}
-            title={page.__title}
-          >
+          <a className={linkClasses} title={page.__title}>
             {icons[page.__slug]
               ? icons[page.__slug]('w-14 h-14')
               : <HelpIcon />
@@ -217,13 +221,13 @@ const Icons = ({ app, active, className='' }) => {
     )
   }
 
-  return <ul className={`flex flex-col items-center ${className}`}>{output}</ul>
+  return <ul className={ulClasses}>{output}</ul>
 }
 
 const PrimaryMenu = ({ app, active }) => (
   <nav className="mb-12">
     <ThemePicker app={app} className="w-full md:hidden"/>
-    <Icons app={app} className="hidden md:block lg:hidden"/>
+    <Icons app={app} ulClasses="hidden md:block lg:hidden flex flex-col items-center"/>
     <Navigation app={app} active={active} className="md:hidden lg:block"/>
   </nav>
 )
