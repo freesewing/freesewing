@@ -57,10 +57,12 @@ const DefaultLayout = ({ app, title=false, children=[] }) => {
   const router = useRouter()
   const slug = router.asPath.slice(1)
 
-  return [
-    <Aside app={app} slug={slug} mobileOnly />,
-    children
-  ]
+  return (
+    <>
+      <Aside app={app} slug={slug} mobileOnly />
+      {children}
+    </>
+  )
 }
 
 export default DefaultLayout
