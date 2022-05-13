@@ -6,6 +6,10 @@ import TutorialIcon from 'shared/components/icons/tutorial.js'
 import GuideIcon from 'shared/components/icons/guide.js'
 import HelpIcon from 'shared/components/icons/help.js'
 import DocsIcon from 'shared/components/icons/docs.js'
+import DesignIcon from 'shared/components/icons/design.js'
+import BoxIcon from 'shared/components/icons/box.js'
+import OptionsIcon from 'shared/components/icons/options.js'
+import CogIcon from 'shared/components/icons/cog.js'
 
 // Don't show children for blog and showcase posts
 const keepClosed = ['blog', 'showcase', ]
@@ -23,7 +27,11 @@ const icons = {
   tutorials: (className='') => <TutorialIcon className={className}/>,
   guides: (className='') => <GuideIcon className={className}/>,
   howtos: (className='') => <HelpIcon className={className}/>,
-  reference: (className='') => <DocsIcon className={className}/>
+  reference: (className='') => <DocsIcon className={className}/>,
+  accessories: (className='') => <TutorialIcon className={className}/>,
+  blocks: (className='') => <BoxIcon className={className}/>,
+  garments: (className='') => <DesignIcon className={className}/>,
+  utilities: (className='') => <CogIcon className={className}/>,
 }
 
 /* helper method to order nav entries */

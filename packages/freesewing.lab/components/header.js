@@ -47,7 +47,9 @@ const Header = ({ app }) => {
         w-full
         z-30
         transition-transform
+        drop-shadow-xl
         ${show ? '': 'fixed top-0 left-0 -translate-y-20'}
+        ${app.loading ? "theme-gradient loading" : ""}
       `}>
         <div className="max-w-6xl m-auto">
           <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
@@ -72,13 +74,8 @@ const Header = ({ app }) => {
             </div>
             <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">
-                <a className="flex flex-column items-center">
-                  <Logo size={36} fill="currentColor" stroke={false} />
-                </a>
-              </Link>
-              <Link href="/">
-                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12">
-                  lab.freesewing.dev
+                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12 font-normal lowercase text-2xl">
+                  lab.<span className="font-black px-1 normal-case">FreeSewing</span>.dev
                 </a>
               </Link>
             </div>
@@ -88,7 +85,6 @@ const Header = ({ app }) => {
             </div>
           </div>
         </div>
-        <div className={`theme-gradient h-1 w-full z-10 relative -mb-1 ${app.loading ? 'loading' : ''}`}></div>
       </header>
   )
 }
