@@ -27,7 +27,7 @@ const icons = {
   utilities: (className='') => <CogIcon className={className}/>,
 }
 
-const Section = ({ section, version, patterns, t }) => {
+const Section = ({ section, version, patterns }) => {
   const { t } = useTranslation(['patterns'])
   return patterns.map(design => (
     <Link href={formatVersionUri(version, design)}>
