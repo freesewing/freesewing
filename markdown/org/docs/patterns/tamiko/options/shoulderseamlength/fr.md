@@ -1,5 +1,5 @@
 
-La longueur de la couture d'épaule, en tant que facteur de la mesure d'épaule à épaule.
+La longueur de la couture d'épaule, en fonction de la mensuration d'épaule à épaule.
 
 
 ## Effet de cette option sur le motif
