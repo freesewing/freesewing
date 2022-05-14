@@ -59,7 +59,7 @@ const Header = ({ app }) => {
                 text-neutral-content bg-transparent
                 border border-transparent
                 hover:bg-transparent hover:border-base-100
-                sm:hidden
+                md:hidden
                 h-12
               `}
               onClick={app.togglePrimaryMenu}>
@@ -68,7 +68,7 @@ const Header = ({ app }) => {
                   : <><MenuIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Right />swipe</span></>
                 }
             </button>
-            <div className="hidden sm:flex flex-row items-center">
+            <div className="hidden md:flex flex-row items-center">
               <PatternPicker app={app} />
               <VersionPicker app={app} />
             </div>
@@ -79,7 +79,7 @@ const Header = ({ app }) => {
                 </a>
               </Link>
             </div>
-            <div className="hidden sm:flex flex-row items-center">
+            <div className="hidden md:flex flex-row items-center">
               <ThemePicker app={app} />
               <LocalePicker app={app} />
             </div>

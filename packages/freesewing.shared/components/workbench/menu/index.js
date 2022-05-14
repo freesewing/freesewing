@@ -24,7 +24,7 @@ export const NoSumDiv = props => (
     hover:cursor-resize
     hover:border-secondary
     sm:hover:border-secondary-focus
-    text-base-content sm:text-neutral-content
+    text-base-content sm:text-base-content
   `}>{props.children}</div>
 )
 export const SumDiv = props => (
@@ -34,7 +34,7 @@ export const SumDiv = props => (
     hover:cursor-resize
     hover:border-secondary
     sm:hover:border-secondary-focus
-    text-base-content sm:text-neutral-content
+    text-base-content sm:text-base-content
   `}>{props.children}</div>
 )
 export const Summary = props => (
@@ -42,7 +42,7 @@ export const Summary = props => (
     flex flex-row
     px-2
     text-base-content
-    sm:text-neutral-content
+    sm:text-base-content
     hover:cursor-row-resize
     items-center
   `}>{props.children}</summary>
@@ -53,7 +53,7 @@ export const TopSummary = props => (
     hover:cursor-row-resize
     p-2
     text-base-content
-    sm:text-neutral-content
+    sm:text-base-content
     items-center
   `}>
     <span className="text-secondary-focus mr-4">{props.icon || null}</span>
@@ -67,7 +67,7 @@ export const SumButton = props => (
     w-full justify-between
     text-left
     text-base-content
-    sm:text-neutral-content
+    sm:text-base-content
     hover:cursor-pointer
     items-center
     mr-4
@@ -84,7 +84,7 @@ export const SecText = props => props.raw
 
 const WorkbenchMenu = props => {
   return (
-    <nav className="smmax-w-96 grow mb-12">
+    <nav className="grow mb-12">
       <ViewMenu {...props} />
       {props.gist?._state?.view === 'draft' && (
         <>

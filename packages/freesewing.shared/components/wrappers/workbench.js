@@ -55,10 +55,10 @@ const hasRequiredMeasurements = (pattern, gist) => {
 
 /*
  * This component wraps the workbench and is in charge of
- * keeping the gist state, which will trickly down
+ * keeping the gist state, which will trickle down
  * to all workbench subcomponents
  */
-const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
+const WorkbenchWrapper = ({ app, pattern, preload=false, from=false, layout=false }) => {
 
   // State for gist
   const [gist, setGist] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
@@ -128,14 +128,19 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
     AltMenu: <Menu {...componentProps }/>
   }
 
+  // Layout to use
+  const LayoutComponent = layout
+    ? layout
+    : Layout
+
   const Component = views[gist?._state?.view]
     ? views[gist._state.view]
     : views.welcome
 
-  return  <Layout {...layoutProps}>
+  return  <LayoutComponent {...layoutProps}>
             {messages}
             <Component {...componentProps} />
-          </Layout>
+          </LayoutComponent>
 }
 
 export default WorkbenchWrapper

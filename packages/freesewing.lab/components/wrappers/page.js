@@ -4,18 +4,13 @@ import { useRouter } from 'next/router'
 import { useHotkeys } from 'react-hotkeys-hook'
 // Layouts components
 import LayoutWrapper from 'site/components/wrappers/layout'
-import Docs from 'site/components/layouts/docs'
-
-const layouts = {
-  docs: Docs,
-}
 
 /* This component should wrap all page content */
 const PageWrapper= ({
   title="FIXME: No title set",
   noSearch=false,
   app=false,
-  layout=Docs,
+  layout=false,
   children=[]
 }) => {
 

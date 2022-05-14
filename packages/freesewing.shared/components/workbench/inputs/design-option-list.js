@@ -36,7 +36,7 @@ const DesignOptionList = props => {
                   ? choice === dflt
                     ? 'text-secondary'
                     : 'text-accent'
-                  : 'text-neutral-content'
+                  : 'text-base-content'
                 }
               `}
             >
@@ -56,7 +56,7 @@ const DesignOptionList = props => {
           disabled={val === dflt}
           onClick={reset}
         >
-          <span className={val===dflt ? 'text-neutral' : 'text-accent'}><ClearIcon /></span>
+          <span className={val===dflt ? 'text-base' : 'text-accent'}><ClearIcon /></span>
         </button>
       </div>
     </div>

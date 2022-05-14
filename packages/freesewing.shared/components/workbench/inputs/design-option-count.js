@@ -6,9 +6,9 @@ import { useTranslation } from 'next-i18next'
 const EditCount = props => (
   <div className="form-control mb-2 w-full">
     <label className="label">
-      <span className="label-text text-neutral-content">{props.min}</span>
-      <span className="label-text font-bold text-neutral-content">{props.value}</span>
-      <span className="label-text text-neutral-content">{props.max}</span>
+      <span className="label-text text-base-content">{props.min}</span>
+      <span className="label-text font-bold text-base-content">{props.value}</span>
+      <span className="label-text text-base-content">{props.max}</span>
     </label>
     <label className="input-group input-group-sm">
       <input
@@ -19,7 +19,7 @@ const EditCount = props => (
         value={props.value}
         onChange={props.handleChange}
       />
-      <span className="text-neutral-content font-bold">#</span>
+      <span className="text-base-content font-bold">#</span>
     </label>
   </div>
 )

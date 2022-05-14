@@ -71,7 +71,7 @@ const View = props => {
         hover:cursor-row-resize
         p-2
         text-base-content
-        sm:text-neutral-content
+        sm:text-base-content
         items-center
       `}>
         <span className="text-secondary-focus mr-4"><MenuIcon /></span>
@@ -93,7 +93,7 @@ const View = props => {
               capitalize
               ${entry.name === props.gist?._state?.view
                 ? 'text-secondary border-secondary sm:text-secondary-focus sm:border-secondary-focus'
-                : 'text-base-content sm:text-neutral-content'
+                : 'text-base-content sm:text-base-content'
               }
             `} onClick={entry.onClick}>
               <span className={`
