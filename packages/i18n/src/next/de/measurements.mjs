@@ -33,7 +33,7 @@ const measurements = {
   "upperLeg": "Oberschenkelumfang",
   "waist": "Taillenweite",
   "waistBack": "Taillenweite hinten",
-  "waistToArmhole": "Waist to armhole",
+  "waistToArmhole": "Taille zu Armloch",
   "waistToFloor": "Taille bis Boden",
   "waistToHips": "Taille bis Hüfte",
   "waistToKnee": "Taille bis Knie",

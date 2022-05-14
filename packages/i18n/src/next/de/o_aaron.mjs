@@ -5,7 +5,7 @@
 const o_aaron = {
   "armholeDrop.t": "Armlochabsenkung",
   "armholeDrop.d": "Senkt das Armloch um diesen Wert. Negative Werte erhöhen es.",
-  "backlineBend.t": "Armlochform hinten",
+  "backlineBend.t": "Hintere Armlochform",
   "backlineBend.d": "Bestimmt die Form / Krümmung der Rückseite der Armlöcher.",
   "hipsEase.t": "Bequemlichkeitszugabe Hüfte",
   "hipsEase.d": "Die Menge an Bequemlichkeits-/Bewegungszugabe an deinen Hüften.",

@@ -50,8 +50,5 @@
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1",
     "yaml-loader": "^0.8.0"
-  },
-  "engines": {
-    "node": ">=14.18.1"
   }
 }

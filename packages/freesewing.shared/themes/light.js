@@ -131,11 +131,12 @@ module.exports = {
   * This is used as a border & loading indicator
   */
   '--theme-gradient': `repeating-linear-gradient(
-    -45deg,
-    ${colors.neutral[900]} 0,
-    ${colors.neutral[900]} 10px,
-    ${colors.neutral[50]} 10px,
-    ${colors.neutral[50]} 20px
+    90deg,
+    ${colors.violet[600]} 0,
+    ${colors.violet[500]} 30%,
+    ${colors.yellow[500]} 50%,
+    ${colors.purple[500]} 75%,
+    ${colors.violet[600]} 100%
   )`,
 
   /* CODE HIGHLIGHTING COLORS
