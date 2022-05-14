@@ -8,7 +8,6 @@ import HelpIcon from 'shared/components/icons/help.js'
 import DocsIcon from 'shared/components/icons/docs.js'
 import DesignIcon from 'shared/components/icons/design.js'
 import BoxIcon from 'shared/components/icons/box.js'
-import OptionsIcon from 'shared/components/icons/options.js'
 import CogIcon from 'shared/components/icons/cog.js'
 
 // Don't show children for blog and showcase posts

@@ -6,14 +6,14 @@ import Logo from 'shared/components/logos/freesewing.js'
 import Aside from 'shared/components/navigation/aside'
 import get from 'lodash.get'
 
-const PageTitle = ({ app, slug, title }) => {
+export const PageTitle = ({ app, slug, title }) => {
   if (title) return <h1>{title}</h1>
   if (slug) return <h1>{get(app.navigation, slug.split('/')).__title}</h1>
 
   return <h1>FIXME: This page has no title</h1>
 }
 
-const Breadcrumbs = ({ app, slug=false, title }) => {
+export const Breadcrumbs = ({ app, slug=false, title }) => {
   if (!slug) return null
   const crumbs = []
   const chunks = slug.split('/')

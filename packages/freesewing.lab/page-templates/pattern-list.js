@@ -1,10 +1,15 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import Link from 'next/link'
-import About from 'site/components/about.js'
 import { useTranslation } from 'next-i18next'
 import { defaultVersion, formatVersionTitle, formatVersionUri } from 'site/components/version-picker.js'
+import TutorialIcon from 'shared/components/icons/tutorial.js'
+import DesignIcon from 'shared/components/icons/design.js'
+import BoxIcon from 'shared/components/icons/box.js'
+import CogIcon from 'shared/components/icons/cog.js'
+import Layout from 'site/components/layouts/bare'
+import { PageTitle, Breadcrumbs } from 'site/components/wrappers/layout'
 
 const links = (section, list, version) => list.map(design => (
   <li key={design} className="">
@@ -14,13 +19,21 @@ const links = (section, list, version) => list.map(design => (
   </li>
 ))
 
-const PatternListPageTemplate = ({ sections=false, version=false }) => {
+const icons = {
+  accessories: (className='') => <TutorialIcon className={className}/>,
+  blocks: (className='') => <BoxIcon className={className}/>,
+  garments: (className='') => <DesignIcon className={className}/>,
+  utilities: (className='') => <CogIcon className={className}/>,
+}
+
+const PatternListPageTemplate = ({ section='garments', version=false }) => {
   const app = useApp()
-  const { t } = useTranslation(['app'])
-  if (sections === false) sections = Object.keys(app.patterns)
+  const { t } = useTranslation(['app', 'patterns'])
+
+  const title = app.navigation[section].__title
 
   return (
-    <Page app={app} title={`FreeSewing Lab: ${formatVersionTitle(version)}`}>
+    <Page app={app} title={`FreeSewing Lab: ${formatVersionTitle(version)}`} layout={Layout}>
       <Head>
         <meta property="og:title" content="lab.FreeSewing.dev" key="title" />
         <meta property="og:type" content="article" key='type' />
@@ -34,19 +47,34 @@ const PatternListPageTemplate = ({ sections=false, version=false }) => {
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="lab.freesewing.dev" key='site' />
       </Head>
-      <div className="max-w-screen-md">
-        {Object.keys(app.navigation).map(section => {
-          if (sections.indexOf(section) !== -1) return (
-            <div key={section}>
-              <h2>{t(app.navigation[section].__title)}</h2>
-              <ul className="flex flex-row flex-wrap gap-2">
-                {links(section, app.patterns[section], version)}
-              </ul>
-            </div>
-          )
-          else return null
-        })}
-        <About />
+      <div className="max-w-7xl m-auto py-20 md:py-36 min-h-screen">
+        <section className="px-8">
+          <PageTitle app={app} slug={'/'+section} title={title} />
+          <div className="flex flex-row flex-wrap gap-4 items-center justify-center my-8">
+            {app.patterns[section].map(design => (
+              <Link href={formatVersionUri(version, design)}>
+                <a className={`
+                  text-secondary border rounded-lg
+                  flex flex-col gap-1 px-4 py-2 grow justify-between text-2xl
+                  md:text-4xl
+                  lg:text-4xl
+                  xl:text-6xl
+                  2xl:text-7xl
+                  hover:border hover:border-secondary hover:bg-secondary hover:bg-opacity-10
+                  shadow
+                `}>
+                  <div className="flex flex-row items-center justify-items-start w-full">
+                    <span className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold grow capitalize">
+                      {t(`patterns:${design}.t`)}
+                    </span>
+                    {icons[section]("w-12 h-12 md:h-20 md:w-20 xl:w-32 xl:h-32 shrink-0")}
+                  </div>
+                    <span className="text-xl md:text-2xl xl:text-3xl pb-2 xl:pb-4 2xl:text-4xl">{t(`patterns:${design}.d`)}</span>
+                </a>
+              </Link>
+            ))}
+          </div>
+        </section>
       </div>
     </Page>
   )
