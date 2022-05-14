@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
-import ThemePicker from 'shared/components/theme-picker.js'
 import RssIcon from 'shared/components/icons/rss.js'
 import TutorialIcon from 'shared/components/icons/tutorial.js'
 import GuideIcon from 'shared/components/icons/guide.js'
@@ -231,11 +230,12 @@ export const Icons = ({
   return <ul className={ulClasses}>{output}</ul>
 }
 
-const PrimaryMenu = ({ app, active }) => (
+const PrimaryMenu = ({ app, active, before=[], after=[] }) => (
   <nav className="mb-12">
-    <ThemePicker app={app} className="w-full md:hidden"/>
+    {before}
     <Icons app={app} ulClasses="hidden md:block lg:hidden flex flex-col items-center"/>
     <Navigation app={app} active={active} className="md:hidden lg:block"/>
+    {after}
   </nav>
 )
 

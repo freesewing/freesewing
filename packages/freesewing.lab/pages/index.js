@@ -33,7 +33,7 @@ const HomePage = (props) => {
           }}
           className="m-0 p-0 shadow drop-shadow-lg w-full mb-8"
         >
-          <div className="mx-auto px-8 flex flex-col items-center justify-center min-h-screen lg:min-h-0 lg:py-96">
+          <div className="mx-auto px-8 flex flex-col items-center justify-center min-h-screen py-24 lg:min-h-0 lg:py-96">
             <div className="flex flex-col items-end max-w-4xl">
               <h1
                 className={`
@@ -76,7 +76,7 @@ const HomePage = (props) => {
             </div>
             <Icons app={app}  active='/'
               ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
-              liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-24"
+              liClasses="text-neutral-content w-1/2 my-4 lg:mx-2 lg:w-24"
               linkClasses={`
                 text-lg lg:text-xl py-1 text-secondary text-center
                 hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer

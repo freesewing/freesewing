@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Logo from 'shared/components/logos/freesewing.js'
 import Aside from 'shared/components/navigation/aside'
 import get from 'lodash.get'
+import { BeforeNav } from './lab'
 
 const PageTitle = ({ app, slug, title }) => {
   if (title) return <h1>{title}</h1>
@@ -56,10 +57,10 @@ const Breadcrumbs = ({ app, slug=false, title }) => {
 const DefaultLayout = ({ app, title=false, children=[] }) => {
   const router = useRouter()
   const slug = router.asPath.slice(1)
-
+console.log(BeforeNav)
   return (
     <>
-      <Aside app={app} slug={slug} mobileOnly />
+      <Aside app={app} slug={slug} before={<BeforeNav app={app}/>} mobileOnly />
       {children}
     </>
   )

@@ -1,3 +1,21 @@
+import ThemePicker from 'shared/components/theme-picker.js'
+import LocalePicker from 'shared/components/locale-picker.js'
+import PatternPicker from 'site/components/pattern-picker.js'
+import VersionPicker from 'site/components/version-picker.js'
+
+export const BeforeNav = ({ app }) => (
+  <>
+    <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2">
+      <ThemePicker app={app} />
+      <LocalePicker app={app} />
+    </div>
+    <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2">
+      <PatternPicker app={app} />
+      <VersionPicker app={app} />
+    </div>
+  </>
+)
+
 const LabLayout = ({ app, AltMenu, children=[] }) => (
   <div className="py-24 lg:py-36 flex flex-row">
     <div className="w-full px-8">
@@ -24,6 +42,7 @@ const LabLayout = ({ app, AltMenu, children=[] }) => (
       lg:w-96
       shrink-0
     `}>
+      <BeforeNav app={app}/>
       {AltMenu}
     </aside>
   </div>

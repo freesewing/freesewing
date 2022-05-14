@@ -1,6 +1,6 @@
 import PrimaryNavigation from './primary'
 
-const Aside = ({ app, slug, mobileOnly=false }) => (
+const Aside = ({ app, slug, mobileOnly=false, before=[], after=[]}) => (
   <aside className={`
     fixed top-0 right-0 h-screen w-screen
     overflow-y-auto z-20
@@ -17,7 +17,9 @@ const Aside = ({ app, slug, mobileOnly=false }) => (
     2xl:pr-8
     ${mobileOnly ? 'block md:hidden' : ''}
   `}>
+    {before}
     <PrimaryNavigation app={app} active={slug}/>
+    {after}
   </aside>
 )
 

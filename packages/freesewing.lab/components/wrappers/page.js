@@ -8,7 +8,6 @@ import LayoutWrapper from 'site/components/wrappers/layout'
 /* This component should wrap all page content */
 const PageWrapper= ({
   title="FIXME: No title set",
-  noSearch=false,
   app=false,
   layout=false,
   children=[]
@@ -25,19 +24,9 @@ const PageWrapper= ({
 
   useEffect(() => app.setSlug(slug), [slug])
 
-  // Trigger search with Ctrl+k
-  useHotkeys('ctrl+k', (evt) => {
-    evt.preventDefault()
-    setSearch(true)
-  })
-
-  const [search, setSearch] = useState(false)
-
   const childProps = {
     app: app,
     title: title,
-    search, setSearch, toggleSearch: () => setSearch(!search),
-    noSearch: noSearch,
   }
 
   const Layout = layout
