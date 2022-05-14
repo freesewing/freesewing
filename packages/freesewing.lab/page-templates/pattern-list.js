@@ -1,3 +1,4 @@
+import React from 'react'
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
@@ -26,11 +27,39 @@ const icons = {
   utilities: (className='') => <CogIcon className={className}/>,
 }
 
-const PatternListPageTemplate = ({ section='garments', version=false }) => {
-  const app = useApp()
-  const { t } = useTranslation(['app', 'patterns'])
+const Section = ({ section, version, patterns, t }) => {
+  const { t } = useTranslation(['patterns'])
+  return patterns.map(design => (
+    <Link href={formatVersionUri(version, design)}>
+      <a className={`
+        text-secondary border rounded-lg
+        flex flex-col gap-1 px-4 py-2 grow justify-between text-2xl
+        md:text-4xl
+        lg:text-4xl
+        xl:text-6xl
+        2xl:text-7xl
+        hover:border hover:border-secondary hover:bg-secondary hover:bg-opacity-10
+        shadow
+      `}>
+        <div className="flex flex-row items-center justify-items-start w-full">
+          <span className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold grow capitalize">
+            {t(`patterns:${design}.t`)}
+          </span>
+          {icons[section]("w-12 h-12 md:h-20 md:w-20 xl:w-32 xl:h-32 shrink-0")}
+        </div>
+          <span className="text-xl md:text-2xl xl:text-3xl pb-2 xl:pb-4 2xl:text-4xl">{t(`patterns:${design}.d`)}</span>
+      </a>
+    </Link>
+  ))
+}
 
-  const title = app.navigation[section].__title
+const PatternListPageTemplate = ({ section=false, version=false }) => {
+  const app = useApp()
+  const { t } = useTranslation(['app'])
+
+  const title = section
+    ? app.navigation[section].__title
+    : t('designs')
 
   return (
     <Page app={app} title={`FreeSewing Lab: ${formatVersionTitle(version)}`} layout={Layout}>
@@ -50,30 +79,21 @@ const PatternListPageTemplate = ({ section='garments', version=false }) => {
       <div className="max-w-7xl m-auto py-20 md:py-36 min-h-screen">
         <section className="px-8">
           <PageTitle app={app} slug={'/'+section} title={title} />
-          <div className="flex flex-row flex-wrap gap-4 items-center justify-center my-8">
-            {app.patterns[section].map(design => (
-              <Link href={formatVersionUri(version, design)}>
-                <a className={`
-                  text-secondary border rounded-lg
-                  flex flex-col gap-1 px-4 py-2 grow justify-between text-2xl
-                  md:text-4xl
-                  lg:text-4xl
-                  xl:text-6xl
-                  2xl:text-7xl
-                  hover:border hover:border-secondary hover:bg-secondary hover:bg-opacity-10
-                  shadow
-                `}>
-                  <div className="flex flex-row items-center justify-items-start w-full">
-                    <span className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold grow capitalize">
-                      {t(`patterns:${design}.t`)}
-                    </span>
-                    {icons[section]("w-12 h-12 md:h-20 md:w-20 xl:w-32 xl:h-32 shrink-0")}
+            {section
+              ? (
+                <div className="flex flex-row flex-wrap gap-4 items-center justify-center my-8">
+                  <Section section={section} version={version} patterns={app.patterns[section]} />
+                </div>
+              )
+              : Object.keys(app.patterns).map(section => (
+                <div key={section} className="mb-12">
+                  <h2 className="pb-0">{app.navigation[section].__title}</h2>
+                  <div className="flex flex-row flex-wrap gap-4 items-center justify-center my-8">
+                    <Section {...{section, version}} patterns={app.patterns[section]} />
                   </div>
-                    <span className="text-xl md:text-2xl xl:text-3xl pb-2 xl:pb-4 2xl:text-4xl">{t(`patterns:${design}.d`)}</span>
-                </a>
-              </Link>
-            ))}
-          </div>
+                </div>
+              ))
+            }
         </section>
       </div>
     </Page>
@@ -81,3 +101,5 @@ const PatternListPageTemplate = ({ section='garments', version=false }) => {
 }
 
 export default PatternListPageTemplate
+
+
