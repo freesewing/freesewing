@@ -6,6 +6,7 @@
     "dev": "next dev -p 3002",
     "develop": "next dev -p 3002",
     "prebuild": "cd ../utils && npm run build && cd - && SITE=lab node ../freesewing.shared/prebuild/index.mjs",
+    "cibuild": "yarn prebuild && next build",
     "build": "next build",
     "export": "yarn prebuild && next build && next export",
     "start": "next start -p 3002",
