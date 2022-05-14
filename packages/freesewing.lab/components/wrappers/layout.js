@@ -64,7 +64,7 @@ const LayoutWrapper = ({ app, title=false, children=[] }) => {
   const startNavigation = () => {
     app.startLoading()
     // Force close of menu on mobile if it is open
-    if (app.primaryNavigation) app.setPrimaryNavigation(false)
+    if (app.primaryMenu) app.setPrimaryMenu(false)
   }
 
   const router = useRouter()

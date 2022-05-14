@@ -86,6 +86,8 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false, layout=fals
     const newGist = {...gist}
     set(newGist, path, content)
     setGist(newGist)
+    // Force close of menu on mobile if it is open
+    if (app.primaryMenu) app.setPrimaryMenu(false)
   }
   const unsetGist = (path) => {
     const newGist = {...gist}
