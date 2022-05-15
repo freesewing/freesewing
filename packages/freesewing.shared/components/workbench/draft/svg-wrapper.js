@@ -15,7 +15,7 @@ import Part from './part'
  * where the browser will render this as zero width and height.
  *
  * To avoid that, we use the SizeMe which will report the size of the
- * grandparent element, and then we wraper our SVG in a div that we
+ * grandparent element, and then we wrap our SVG in a div that we
  * set to this size. This will cause the SVG to fill in that entire
  * space, and the pan and zoom to adapt to this size.
  *
@@ -32,6 +32,7 @@ const SvgWrapper = props => {
     <TransformWrapper
       minScale={0.1}
       centerZoomedOut={true}
+      wheel={{ activationKeys: ['Control'] }}
     >
       <TransformComponent>
         <div style={{ width: size.width+'px', }}>
