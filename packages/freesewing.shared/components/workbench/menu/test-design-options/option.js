@@ -42,7 +42,8 @@ const Option = props => {
         {
           type: 'option',
           option: props.option
-        }
+        },
+        true // Close navigation on mobile
       )}>
         <SumDiv active={active}>
           <span className={`
