@@ -38,9 +38,9 @@ See first list item for an example.
 
 [yt]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
-## Make sure your links lead where they think you do
+## Make sure your links lead where you think they do
 
-### Lining within the same website
+### Linking within the same website
 
 When you are linking within freesewing.dev or freesewing.org you can use a relative link from
 the site root.\
@@ -65,7 +65,7 @@ to the filename. For example:
 This is [a picture of a banana](banana.jpg)
 ```
 
-## Avoid ambiguity when lising a number of steps
+## Avoid ambiguity when listing a number of steps
 
 If you're writing documentation that involves steps, please do not mix levels
 of steps. Steps written out in documentation are there to facilitate brainless
@@ -124,7 +124,7 @@ Lorem ipsum dolor sit amet,
 sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
 ```
 
-## Don't be shy to ask a friend
+## Don't be afraid to ask for help!
 
 Learning a new language can be intimidating, whether its Javascript, Norse or
 Markdown but everyone in the Freesewing community is glad you're here and
