@@ -159,7 +159,7 @@ module.exports = {
   /*
     * These variables are used to style the highlighted tokens themselves
     */
-  '--code-color-keyword': colors.pink['400'],
+  '--code-color-keyword': colors.yellow['500'],
   '--code-font-weight-keyword': 'bold',
   '--code-color-entity': colors.violet['400'],
   '--code-font-weight-entity': 'bold',
@@ -169,7 +169,7 @@ module.exports = {
   '--code-color-variable': colors.indigo['400'],
   '--code-color-comment': colors.neutral['400'],
   '--code-color-tag': colors.green['400'],
-  '--code-color-property': 'inherit',
+  '--code-color-property': colors.yellow['200'],
   '--code-font-weight-property': 'bold',
 
   /* FREESEWING PATTERN THEMEING

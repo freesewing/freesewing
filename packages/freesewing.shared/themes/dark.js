@@ -51,7 +51,7 @@ module.exports = {
   '--code-border-width': 2,
   '--code-outer-padding': '0 0.5rem',
   '--code-inner-padding': '1rem',
-  '--code-color-keyword': colors.pink['400'],
+  '--code-color-keyword': colors.yellow['500'],
   '--code-font-weight-keyword': 'bold',
   '--code-color-entity': colors.violet['400'],
   '--code-font-weight-entity': 'bold',
