@@ -16,6 +16,7 @@ import gdpr from "./gdpr.mjs"
 import i18n from "./i18n.mjs"
 import intro from "./intro.mjs"
 import jargon from "./jargon.mjs"
+import lab from "./lab.mjs"
 import measurements from "./measurements.mjs"
 import optiongroups from "./optiongroups.mjs"
 import o_aaron from "./o_aaron.mjs"
@@ -79,6 +80,7 @@ const allNamespaces = {
   i18n,
   intro,
   jargon,
+  lab,
   measurements,
   optiongroups,
   o_aaron,

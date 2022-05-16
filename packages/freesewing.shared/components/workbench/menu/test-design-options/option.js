@@ -9,7 +9,7 @@ const SumButton = props => (
     w-full justify-between
     text-left
     text-base-content
-    sm:text-neutral-content
+    sm:text-base-content
     hover:cursor-pointer
     items-center
     mr-4
@@ -22,7 +22,7 @@ const SumDiv = (props) => (
     hover:cursor-resize
     hover:border-secondary
     sm:hover:border-secondary-focus
-    text-base-content sm:text-neutral-content
+    text-base-content sm:text-base-content
     ${props.active && 'border-secondary-focus'}
 
   `}>{props.children}</div>
@@ -42,7 +42,8 @@ const Option = props => {
         {
           type: 'option',
           option: props.option
-        }
+        },
+        true // Close navigation on mobile
       )}>
         <SumDiv active={active}>
           <span className={`

@@ -89,6 +89,7 @@ export async function getStaticProps({ locale }) {
 const l = 'prebuild'
 export const prebuildLab = async (site) => {
   const promises = []
+  const availableVersions = {}
   // Load config
   const versions = JSON.parse(await fs.readFile(
     path.resolve('..', 'freesewing.lab', 'versions.json'),
@@ -130,6 +131,7 @@ export const prebuildLab = async (site) => {
       if (process.env.BUILD_ALL_VERSIONS) {
         // Download published versions from unpkg
         for (const version of versions) {
+          if (typeof availableVersions[version] === 'undefined') availableVersions[version] = new Set()
           // Assume that if the file is on disk, it's good to go (caching)
           const file = path.resolve('..', `freesewing.lab`, 'lib', version, `${design}.mjs`)
           let cached
@@ -145,6 +147,7 @@ export const prebuildLab = async (site) => {
             await fs.mkdir(path.resolve('..', `freesewing.lab`, 'pages', 'v', version), { recursive: true })
             const code = (await loadFromUnpkg(design, version))
             if (code) {
+              availableVersions[version].add(design)
               promises.push(
                 fs.writeFile(
                   path.resolve('..', `freesewing.lab`, 'lib', version, `${design}.mjs`),
@@ -156,6 +159,8 @@ export const prebuildLab = async (site) => {
                 ),
               )
             } else console.log(`No ${version} for ${design}`)
+          } else {
+            availableVersions[version].add(design)
           }
         }
       }
@@ -163,6 +168,15 @@ export const prebuildLab = async (site) => {
   }
 
   if (process.env.BUILD_ALL_VERSIONS) {
+    // Write available versions file
+    const av = {}
+    for (const [v, set] of Object.entries(availableVersions)) av[v] = [...set].sort()
+    promises.push(
+      fs.writeFile(
+        path.resolve('..', `freesewing.lab`, 'available-versions.json'),
+        JSON.stringify(av, null, 2)
+      )
+    )
     // Also add version overview pages
     for (const version of versions) {
       // Assume that if the file is on disk, it's good to go (caching)

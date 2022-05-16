@@ -17,7 +17,7 @@ const Highlight = (props) => {
     : 'txt'
 
   const preProps = {
-    className: `language-${language} hljs text-base lg:text-lg whitespace-pre-wrap break-words`
+    className: `language-${language} hljs text-base lg:text-lg whitespace-pre-wrap break-all`
   }
   if (props.raw) preProps.dangerouslySetInnerHTML = { __html: props.raw }
 

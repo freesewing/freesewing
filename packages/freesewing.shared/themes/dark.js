@@ -34,11 +34,12 @@ module.exports = {
   '--btn-error-content': colors.neutral[50],
 
   '--theme-gradient': `repeating-linear-gradient(
-    -45deg,
-    ${colors.neutral[300]},
-    ${colors.neutral[300]} 10px,
-    ${colors.neutral[800]} 10px,
-    ${colors.neutral[800]} 20px
+    90deg,
+    ${colors.violet[900]},
+    ${colors.violet[900]} 40%,
+    ${colors.pink[700]} 65%,
+    ${colors.violet[600]} 90%,
+    ${colors.violet[900]} 100%
   )`,
 
   '--code-background-color': '#111',
@@ -50,7 +51,7 @@ module.exports = {
   '--code-border-width': 2,
   '--code-outer-padding': '0 0.5rem',
   '--code-inner-padding': '1rem',
-  '--code-color-keyword': colors.pink['400'],
+  '--code-color-keyword': colors.yellow['500'],
   '--code-font-weight-keyword': 'bold',
   '--code-color-entity': colors.violet['400'],
   '--code-font-weight-entity': 'bold',

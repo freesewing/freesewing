@@ -1,5 +1,5 @@
 
-L'angle par lequel le vêtement sort de votre poitrine vers le bas.
+L'angle par lequel le vêtement s'évase de votre poitrine vers le bas.
 
 
 ## Effet de cette option sur le motif

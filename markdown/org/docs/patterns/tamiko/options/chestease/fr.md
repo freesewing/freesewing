@@ -1,5 +1,5 @@
 
-La quantité d'aisance à votre poitrine.
+L'aisance au niveau de la poitrine.
 
 
 ## Effet de cette option sur le motif

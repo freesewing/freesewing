@@ -7,9 +7,9 @@ import { useTranslation } from 'next-i18next'
 const EditOption = props => (
   <div className="form-control mb-2 w-full">
     <label className="label">
-      <span className="label-text text-neutral-content">{props.min}{props.suffix}</span>
-      <span className="label-text font-bold text-neutral-content">{props.value}{props.suffix}</span>
-      <span className="label-text text-neutral-content">{props.max}{props.suffix}</span>
+      <span className="label-text text-base-content">{props.min}{props.suffix}</span>
+      <span className="label-text font-bold text-base-content">{props.value}{props.suffix}</span>
+      <span className="label-text text-base-content">{props.max}{props.suffix}</span>
     </label>
     <label className="input-group input-group-sm">
       <input
@@ -20,7 +20,7 @@ const EditOption = props => (
         value={props.value}
         onChange={props.handleChange}
       />
-      <span className="text-neutral-content font-bold">{props.suffix}</span>
+      <span className="text-base-content font-bold">{props.suffix}</span>
     </label>
   </div>
 )
@@ -51,7 +51,7 @@ const DesignOptionPctDeg = props => {
 
   return (
     <div className="py-4 mx-6 border-l-2 pl-2">
-      <p className="m-0 p-0 px-2 mb-2 text-neutral-content opacity-60 italic">
+      <p className="m-0 p-0 px-2 mb-2 text-base-content opacity-60 italic">
         {props.ot(`${props.option}.d`)}
       </p>
       <div className="flex flex-row justify-between">

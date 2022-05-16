@@ -25,10 +25,10 @@ const settings = {
   "debug.d": "Debuggen aktivieren, um zusätzliche Informationen dazu zu erhalten, wie dein Schnittmuster erstellt wurde",
   "scale.t": "Beschriftungsgröße",
   "scale.d": "Steuert die allgemeine Linienbreite, Schriftgröße und andere Elementgrößen, \nbeeinflusst jedoch nicht den Maßstab des Schnittmusters selbst",
-  "renderer.t": "Render engine",
-  "renderer.d": "Controls how the pattern is rendered (drawn) on the screen",
-  "xray.t": "X-ray",
-  "xray.d": "Look under the hood with FreeSewing's X-ray mode"
+  "renderer.t": "Render Engine",
+  "renderer.d": "Legt fest, wie das Muster auf dem Bildschirm gerendert (gezeichnet) wird",
+  "xray.t": "Röntgen",
+  "xray.d": "Mit FreeSewings Röntgenmodus unter die Haube schauen"
 }
 
 export default settings

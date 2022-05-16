@@ -131,11 +131,12 @@ module.exports = {
   * This is used as a border & loading indicator
   */
   '--theme-gradient': `repeating-linear-gradient(
-    -45deg,
-    ${colors.neutral[900]} 0,
-    ${colors.neutral[900]} 10px,
-    ${colors.neutral[50]} 10px,
-    ${colors.neutral[50]} 20px
+    90deg,
+    ${colors.violet[600]} 0,
+    ${colors.violet[500]} 30%,
+    ${colors.yellow[500]} 50%,
+    ${colors.purple[500]} 75%,
+    ${colors.violet[600]} 100%
   )`,
 
   /* CODE HIGHLIGHTING COLORS
@@ -158,7 +159,7 @@ module.exports = {
   /*
     * These variables are used to style the highlighted tokens themselves
     */
-  '--code-color-keyword': colors.pink['400'],
+  '--code-color-keyword': colors.yellow['500'],
   '--code-font-weight-keyword': 'bold',
   '--code-color-entity': colors.violet['400'],
   '--code-font-weight-entity': 'bold',
@@ -168,7 +169,7 @@ module.exports = {
   '--code-color-variable': colors.indigo['400'],
   '--code-color-comment': colors.neutral['400'],
   '--code-color-tag': colors.green['400'],
-  '--code-color-property': 'inherit',
+  '--code-color-property': colors.yellow['200'],
   '--code-font-weight-property': 'bold',
 
   /* FREESEWING PATTERN THEMEING

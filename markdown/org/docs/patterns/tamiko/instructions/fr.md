@@ -2,25 +2,25 @@
 title: "Tamiko top: Sewing Instructions"
 - - -
 
-### Étape 1 : Terminer la couture des armoiries
+### Étape 1 : Terminer l'emmanchure
 
-![Finsh the armhole seam](step03.png)
+![Étape : Terminer la couture de la manche](step03.png)
 
-- Finish the armhole seam with a narrow hem.
+- Terminez la couture de la manche avec un ourlet étroit.
 
 ### Étape 2 : Terminer le haut
 
-![Sew the three seamlines that are marked on your draft](step04.png)
+![Coudre les trois lignes de couture qui sont marquées sur votre patron](step04.png)
 
 <Note>
 
-Comme votre dessus est plié, c'est une bonne idée de relier les deux moitiés.
-De cette façon, votre top ne peut pas se déplacer pendant que nous le finissons.
+Comme votre top est plié, c'est une bonne idée d'épingler les deux moitiés ensemble.
+Comme ça, votre top ne va pas bouger pendant que nous le finissons.
 
 </Note>
 
-- Sew the three seamlines that are marked on your draft. F-H, C and I-J in the diagram, represented by lines and notches on the pattern.
+- Coudre les trois lignes de couture qui sont marquées sur votre patron. F-H, C et I-J dans le diagramme, représentés par des lignes et des encoches sur le modèle.
 
 ### Step 3: Enjoy!
 
-Now enjoy your new top and it's zero waste properties!
+Vous pouvez maintenant enfiler votre nouveau top, qui a généré zéro déchets!

@@ -216,7 +216,7 @@ export default (part) => {
   points.kneeOutCp1 = points.kneeOut.shift(90, points.fork.dy(points.knee) / 3)
   points.seatOutCp1 = points.seatOut.shift(
     90,
-    measurements.waistToHips + absoluteOptions.waistbandWidth
+    measurements.waistToHips * options.waistHeight + absoluteOptions.waistbandWidth
   )
   points.seatOutCp2 = points.seatOut.shift(-90, points.seatOut.dy(points.knee) / 3)
 

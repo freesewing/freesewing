@@ -1,15 +1,16 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import Link from 'next/link'
-import Script from 'next/script'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Layout from 'site/components/layouts/bare'
+import Navigation, { Icons } from 'shared/components/navigation/primary'
 
 const HomePage = (props) => {
   const app = useApp()
   return (
-    <Page app={app} title="Welcome to FreeSewing.dev">
+    <Page app={app} title="Welcome to FreeSewing.dev" layout={Layout}>
       <Head>
         <meta property="og:title" content="FreeSewing.dev" key="title" />
         <meta property="og:type" content="article" key='type' />
@@ -23,85 +24,60 @@ const HomePage = (props) => {
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
-      <Script src="/sw.js"></Script>
-      <div className="max-w-screen-md">
-        <p>
-          FreeSewing.dev hosts documentation for contributors and developers alike.
-          <br />
-          For our maker site, and to try our platform, go
-          to <a
-            href="https://freesewing.org/"
-            title="Go to FreeSewing.org"
-            className="text-secondary font-bold"
-          >freesewing.org</a>.
-        </p>
-        <h2 className="mt-8">What is FreeSewing?</h2>
-        <div className="theme-gradient p-1 -mt-2 mb-2 "></div>
-        <p className="text-2xl sm:text-3xl">
-          FreeSewing is an open source platform for made-to-measure sewing patterns.
-        </p>
-        <p className="text-xl sm:text-2xl">
-          <b>@freeSewing/core</b> is a Javascript library for 2D parametric design
-        </p>
-        <p>
-          It has a primary focus is on sewing patterns,
-          but can be utilized for a variety of similar 2D design tasks.
-        </p>
-
-        <h2 className='mt-8'>How can I try it out?</h2>
-        <div className="theme-gradient p-1 -mt-2 mb-2 "></div>
-        <p className="text-2xl sm:text-3xl">
-          You can try it <Link
-            href="/howtos/environments/browser">
-              <a className="text-secondary">in the browser</a>
-            </Link>, <Link
-            href="/howtos/environments/node">
-              <a className="text-secondary">in NodeJS</a>
-            </Link>,
-          or on any Javascript runtime.
-        </p>
-        <p className="text-xl sm:text-2xl">
-          The includes Deno, AWS Lamba, Cloudflare workers, Vercel Edge functions, Netlify functions, and so on.
-        </p>
-        <p>
-          Or save yourself the trouble, and check <a
-            href="https://freesewing.org/"
-            title="Go to FreeSewing.org"
-            className="text-secondary font-bold"
-          >freesewing.org</a> for a showcase of our software.
-        </p>
-
-        <h2 className='mt-8'>
-          You son of a bitch, I&apos;m in
-          <sup>
-            <a
-              href="https://www.youtube.com/watch?v=nKxvDYHkfSY"
-              className="text-secondary"
-            >*</a>
-          </sup>
-        </h2>
-        <div className="theme-gradient p-1 -mt-2 mb-2 "></div>
-        <p className="text-2xl sm:text-3xl">
-          We are an <a
-            href="https://allcontributors.org/"
-            className="text-secondary"
-          >all-contributors</a> project
-          and welcome all contributions.
-        </p>
-        <p className="text-xl sm:text-2xl">
-          <a
-            href="https://discord.freesewing.org/"
-            className="text-secondary"
-          >Come say hi on Discord</a>,
-          or check out <Link
-              href="/howtos/ways-to-contribute"><a
-              className="text-secondary">ways to contribute</a>
-          </Link> to get inspired.
-        </p>
-        <p>
-          Last but certainly not least, you can also support FreeSewing financially:
-        </p>
-
+        <section
+          style={{
+            backgroundImage: "url('/img/splash.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: '40% 50%',
+          }}
+          className="m-0 p-0 shadow drop-shadow-lg w-full mb-8"
+        >
+          <div className="mx-auto px-8 flex flex-col items-center justify-center min-h-screen lg:min-h-0 lg:py-96">
+            <div className="flex flex-col items-end max-w-4xl">
+              <h1
+                className={`
+                  text-4xl font-black text-right px-4
+                  sm:text-6xl
+                  md:text-7xl px-6
+                  lg:px-8
+                  bg-secondary
+                  `}
+                style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
+              >
+                FreeSewing
+                <span className="font-light">.dev</span>
+              </h1>
+              <h2
+                className={`
+                  text-right text-2xl mr-0
+                  sm:text-3xl
+                  md:text-4xl
+                  lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
+                style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
+              >
+                Documentation for FreeSewing contributors & developers
+              </h2>
+            </div>
+            <Icons app={app}  active='/'
+              ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
+              liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-24"
+              linkClasses={`
+                text-lg lg:text-xl py-1 text-secondary
+                hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
+                flex flex-col items-center capitalize`}
+            />
+            <p className="text-neutral-content text-center mt-8">
+              To learn more about FreeSewing and try our platform
+              go to <a
+                href="https://freesewing.org/"
+                title="Go to FreeSewing.org"
+                className="text-secondary font-bold"
+              >freesewing.org</a>
+            </p>
+          </div>
+        </section>
+      <div>
+      <div className="max-w-7xl m-auto my-32">
         <div className="bg-cover bg-neutral w-full bg-center rounded-lg shadow p-4 "
           style={{backgroundImage: "url(/support.jpg)"}}
         >
@@ -116,8 +92,25 @@ const HomePage = (props) => {
           </p>
           <a role="button" className="btn btn-accent btn-wide ml-4 mb-8" href="https://freesewing.org/patrons/join">Become a Patron</a>
         </div>
+      </div>
+      <div className="max-w-7xl m-auto my-32">
+        <div className="px-8 text-base-content">
+          <Icons app={app}
+            active='/'
+            ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
+            liClasses="w-1/3 my-4 lg:mx-2 lg:w-24"
+            linkClasses={`
+              text-lg lg:text-xl py-1 text-base-content
+              hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
+              flex flex-col items-center capitalize`}
+          />
+        </div>
+      </div>
+      <div className="max-w-xl m-auto my-32">
         <HelpUs slug='/' />
       </div>
+    </div>
+
     </Page>
   )
 }

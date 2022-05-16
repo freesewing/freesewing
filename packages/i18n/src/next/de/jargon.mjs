@@ -9,7 +9,7 @@ const jargon = {
   "darts.d": "<a href='/docs/sewing/darts/'>Abnäher</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>",
   "doubleWeltPockets.d": "Siehe <a href='/docs/sewing/double-welt-pockets/'>Doppelpaspeltasche</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>",
   "ease.d": "Siehe <a href='/docs/sewing/ease/'>Zugabe</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>",
-  "edgestitch.d": "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>",
+  "edgestitch.d": "Siehe <a href='/docs/sewing/edgestitching/'>Nähte absteppen</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>",
   "fabricGrain.d": "Siehe <a href='/docs/sewing/fabric-grain/'>Fadenlauf</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>",
   "goodSidesTogether.d": "Siehe <a href='/docs/sewing/good-sides-together/'>rechts auf rechts</a> in der <a href='/docs/sewing/'>Dokumentation zum Nähen</a>",
   "onTheFold.d": "Siehe <a href='/docs/sewing/on-the-fold/'>Im Stoffbruch</a> in der <a href='/docs/sewing/'>Dokumentation zum Nähen</a>",

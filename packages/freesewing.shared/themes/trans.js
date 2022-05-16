@@ -14,7 +14,7 @@ module.exports = {
   'primary': pink,
   'primary-focus': blue,
   'primary-content': colors.neutral['900'],
-  'secondary': blue,
+  'secondary': colors.sky['500'],
   'secondary-focus': pink,
   'secondary-content': colors.neutral['900'],
 
@@ -32,17 +32,17 @@ module.exports = {
   'error': colors.red['600'],
 
   '--theme-gradient': `repeating-linear-gradient(
-    -45deg,
+    90deg,
     #77cbf9,
-    #77cbf9 20px,
-    #ecadb9 20px,
-    #ecadb9 40px,
-    ${colors.neutral['50']} 40px,
-    ${colors.neutral['50']} 60px,
-    #ecadb9 60px,
-    #ecadb9 80px,
-    #77cbf9 80px,
-    #77cbf9 100px
+    #77cbf9 20%,
+    #ecadb9 20%,
+    #ecadb9 40%,
+    ${colors.neutral['50']} 40%,
+    ${colors.neutral['50']} 60%,
+    #ecadb9 60%,
+    #ecadb9 80%,
+    #77cbf9 80%,
+    #77cbf9 100%
   )`,
 
   '--code-background-color': colors.neutral['800'],
