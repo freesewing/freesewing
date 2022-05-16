@@ -124,7 +124,7 @@ Lorem ipsum dolor sit amet,
 sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
 ```
 
-## Don't be afraid to ask for help!
+## Don't be shy to ask a friend
 
 Learning a new language can be intimidating, whether its Javascript, Norse or
 Markdown but everyone in the Freesewing community is glad you're here and
