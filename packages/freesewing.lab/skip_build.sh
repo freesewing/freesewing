@@ -32,14 +32,14 @@ for d in ../*/ ; do
   if [[ "$skip" = "0" ]]; then
     src="${d}src"
     config="${d}config"
-    if `git diff HEAD^ HEAD $src`; then
+    if `git diff HEAD^ HEAD --quiet $src`; then
       # We have local changes, go ahead and build
-      echo "✅ - Changed detected in $src  Let's build this thing"
+      echo "✅ - Changed detected in $src, let's build this thing"
       exit 1;
     fi
-    if `git diff HEAD^ HEAD $config`; then
+    if `git diff HEAD^ HEAD --quiet $config`; then
       # We have local changes, go ahead and build
-      echo "✅ - Changed detected in $config  Let's build this thing"
+      echo "✅ - Changed detected in $config, let's build this thing"
       exit 1;
     fi
   fi
@@ -50,11 +50,11 @@ if \
   git diff --quiet HEAD^ HEAD  . \
   ; then
   # We have local changes, go ahead and build
-  echo "✅ - Changed detected; Let's build this thing"
+  echo "✅ - Changed detected in lab, let's build this thing"
   exit 1;
 else
   # No changes, do not waste time building this commit
-  echo "🛑 - No changes detected; Let's just not"
+  echo "🛑 - No changes detected, let's just not"
   exit 0;
 fi
 
