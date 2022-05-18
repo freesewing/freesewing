@@ -1,3 +1,7 @@
+- - -
+title: "Collar roll"
+- - -
+
 ![Omval kraag](collarroll.svg)
 
 Hoeveel hoger de kraag is dan de kraagstaander aan de middenrug.
@@ -13,4 +17,5 @@ Door dit getal te verhogen maak je de kraag niet hoger (gebruik daarvoor de hoog
 </Note>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_collarroll_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_collarroll_sample.svg "Effect of this option on the pattern")
