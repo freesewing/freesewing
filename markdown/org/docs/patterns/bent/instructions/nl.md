@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bent body Block: Sewing Instructions"
-- - -
+---
 
 <Note>
 

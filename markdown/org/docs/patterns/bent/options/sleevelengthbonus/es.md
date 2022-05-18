@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length bonus"
-- - -
+---
 
 The amount to extend the sleeve beyond the length of the sleeve in the base block.
 

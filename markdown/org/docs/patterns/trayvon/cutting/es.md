@@ -1,6 +1,6 @@
-- - -
+---
 title: "Trayvon tie: Cutting Instructions"
-- - -
+---
 
 - **Tela principal**
   - Corta **1 consejo**

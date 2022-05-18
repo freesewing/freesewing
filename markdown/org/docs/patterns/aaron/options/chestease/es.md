@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![The chest ease option on Aaron](./chestease.svg)
 

@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 Ons Instagram-account is [@freesewing_org](https://instagram.com/freesewing_org).  
 Volg ons voor updates op nieuwe patroonreleases, maken van de community en andere nieuws.

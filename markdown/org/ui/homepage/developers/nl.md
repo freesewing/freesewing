@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 #### Eigenaardig hoe dit werkt?
 

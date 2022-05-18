@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 Du kannst dich an [r/freesewing](https://www.reddit.com/r/freesewing/) auf Reddit wenden, wenn du Leute aus der Community treffen möchtest.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Paco pants: Sewing Instructions"
-- - -
+---
 
 <Tip>
 

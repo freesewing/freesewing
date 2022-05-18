@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist height"
-- - -
+---
 
 Controls the height of the waist, where:
 

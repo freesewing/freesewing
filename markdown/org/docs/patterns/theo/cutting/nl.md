@@ -1,6 +1,6 @@
-- - -
+---
 title: "Theo trousers: Cutting Instructions"
-- - -
+---
 
 - **Buitenstof**
   - Knip **2 achterpanden** met de goede kanten op elkaar

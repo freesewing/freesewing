@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simon shirt: Cutting Instructions"
-- - -
+---
 
 - **Oberstoff**
   - **1 Front links schneiden**

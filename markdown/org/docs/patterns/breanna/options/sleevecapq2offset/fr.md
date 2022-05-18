@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q2 offset"
-- - -
+---
 
 ![The offset in the second quarter of the sleevecap](./sleevecapq2offset.svg)
 

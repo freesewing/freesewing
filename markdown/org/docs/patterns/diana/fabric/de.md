@@ -1,6 +1,6 @@
-- - -
+---
 title: "Diana draped top: Fabric Options"
-- - -
+---
 
 This top works best in one of these two scenarios:
 

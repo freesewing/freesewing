@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: Cutting Instructions"
-- - -
+---
 
 - **Buitenstof**
   - Knip **2 voorpanden** (deel 1)

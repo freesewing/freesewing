@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Fabric Options"
-- - -
+---
 
 The obvious choice for Charlie chinos, is [chino fabric](https://en.wikipedia.org/wiki/Chino_cloth), which is a cotton twill fabric. These days it's often sold as a blend to a little bit of stretch, which is optional.
 

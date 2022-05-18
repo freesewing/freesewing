@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: Fabric Options"
-- - -
+---
 
 Sportscoats are typically made from a heavier wool, often with some texture or pattern in the weave. In general, they are made in _busier_ fabrics.
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Florence face mask: Fabric Options"
-- - -
+---
 
 The goal of our mask is to stop droplets. So you want to go for something that filters those out. Then again, you need to be able to breath through your mask, so we want fabric that breathes, without letting droplets through.
 

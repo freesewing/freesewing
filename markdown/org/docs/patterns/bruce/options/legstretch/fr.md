@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg stretch"
-- - -
+---
 
 ![The leg stretch option on Bruce](./legstretch.svg)
 

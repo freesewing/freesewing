@@ -1,6 +1,6 @@
-- - -
+---
 title: "Benjamin bow tie: What You Need"
-- - -
+---
 
 To make Benjamin, you will need the following:
 

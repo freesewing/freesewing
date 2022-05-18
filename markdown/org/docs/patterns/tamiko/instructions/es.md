@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: Sewing Instructions"
-- - -
+---
 
 ### Paso 1: Termina la costura del orificio
 

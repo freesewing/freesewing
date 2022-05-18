@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 ##### [¿Nuevo aquí?][1]
 [Revisa nuestra guía de inicio][1]

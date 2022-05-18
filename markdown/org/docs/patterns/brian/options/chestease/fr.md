@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 ![The chest ease factor on Brian](./chestease.svg)
 

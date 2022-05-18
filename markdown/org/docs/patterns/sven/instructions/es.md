@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sven sweatshirt: Sewing Instructions"
-- - -
+---
 
 ### Paso 1: Cerrar costuras del hombro
 

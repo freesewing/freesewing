@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wahid waistcoat: Cutting Instructions"
-- - -
+---
 
 - **Tela principal**
   - Corta **2 frente(s)** con _lados buenos juntos_

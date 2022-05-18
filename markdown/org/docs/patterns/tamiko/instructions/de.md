@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: Sewing Instructions"
-- - -
+---
 
 ### Schritt 1: Beende die Rüstungsnaht
 

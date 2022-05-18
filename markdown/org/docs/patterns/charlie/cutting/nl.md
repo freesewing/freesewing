@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Cutting Instructions"
-- - -
+---
 
 ##### Van buitenste stof
 

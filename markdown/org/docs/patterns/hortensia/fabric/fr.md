@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hortensia handbag: Fabric Options"
-- - -
+---
 
 ### Main Fabric
 

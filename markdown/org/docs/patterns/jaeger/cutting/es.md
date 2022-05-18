@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: Cutting Instructions"
-- - -
+---
 
 - **Tela principal**
   - Cortar **2 frentes** (parte 1)

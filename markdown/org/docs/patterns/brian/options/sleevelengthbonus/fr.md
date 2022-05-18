@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length bonus"
-- - -
+---
 
 ![The sleeve length bonus option on Brian](./sleevelengthbonus.svg)
 

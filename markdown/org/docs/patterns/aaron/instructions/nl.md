@@ -1,6 +1,6 @@
-- - -
+---
 title: "Aaron A-Shirt: Sewing Instructions"
-- - -
+---
 
 ## Stap 1: Sluit de naden
 

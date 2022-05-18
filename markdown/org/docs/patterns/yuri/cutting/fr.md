@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: Cutting Instructions"
-- - -
+---
 
 - Couper **2 devants** _endroit contre endroit_
 - Couper **1 dos** _au pli_

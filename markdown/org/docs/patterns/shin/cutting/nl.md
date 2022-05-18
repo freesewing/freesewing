@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: Cutting Instructions"
-- - -
+---
 
 - Knip **2 rugpanden** met de goede kanten op elkaar
 - Knip **4 voorpanden** 2 x 2 met de goede kanten op elkaar

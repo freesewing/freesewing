@@ -1,6 +1,6 @@
-- - -
+---
 title: "Aaron A-Shirt: Cutting Instructions"
-- - -
+---
 
 - Corta **1 trasero** al lomo
 - Corta **1 delantero** al lomo

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bella body block: What You Need"
-- - -
+---
 
 To make Bella, you will need the following:
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hugo hoodie: Cutting Instructions"
-- - -
+---
 
 - **Tela principal**
   - Corta **1 delantero** al lomo

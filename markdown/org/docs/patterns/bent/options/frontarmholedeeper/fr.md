@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front armhole extra cutout"
-- - -
+---
 
 How much the armhole is cut out deeper at the front, than the back.
 

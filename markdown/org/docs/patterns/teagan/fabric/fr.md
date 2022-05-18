@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Fabric Options"
-- - -
+---
 
 The Teagan T-shirt is designed as a close-fitting tee and is best suited to knit fabrics with some stretch, such as jersey. Cotton knits are often an easy-to-sew option for those new to knits. Rayon knits generally will have a bit more drape and are more slippery to sew.
 

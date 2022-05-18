@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Sewing Instructions"
-- - -
+---
 
 ## Stap 1: Sluit de neep op de rug
 

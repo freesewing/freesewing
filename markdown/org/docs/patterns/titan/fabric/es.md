@@ -1,6 +1,6 @@
-- - -
+---
 title: "Titan trouser block: Fabric Options"
-- - -
+---
 
 If you are making a default Titan to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Titan with.
 

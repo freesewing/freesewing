@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: Cutting Instructions"
-- - -
+---
 
 - **Tissu principal**
   - Couper **1 Tamiko dessus** sur le pli

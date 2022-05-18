@@ -1,6 +1,6 @@
-- - -
+---
 title: "Benjamin bow tie: Fabric Options"
-- - -
+---
 
 The bow ties you find in the store are typically make out of silk or some imitation silk poly. So it will come as no surprise that those are good options. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. With some thicker fabrics, this will be a difficult proposition.
 
