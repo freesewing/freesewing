@@ -113,7 +113,7 @@ export const prebuildMdx = async(site) => {
               : meta.data.title
           }
         } else {
-          console.log('Failed to extract meta info from:', slug)
+          console.log(`[${lang}] Failed to extract meta info from: ${slug}`)
           if (meta.messages.length > 0) console.log(meta.messages)
         }
       }
