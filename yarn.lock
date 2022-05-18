@@ -8534,7 +8534,7 @@ color@^3.1.3:
     color-convert "^1.9.3"
     color-string "^1.6.0"
 
-color@^4.2, color@^4.2.3:
+color@^4.0.1, color@^4.2, color@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
   integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
@@ -19083,12 +19083,7 @@ node-abi@^3.3.0:
   dependencies:
     semver "^7.3.5"
 
-node-addon-api@^3.1.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-3.2.1.tgz#81325e0a2117789c0128dab65e7e38f07ceba161"
-  integrity sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A==
-
-node-addon-api@^4.3.0:
+node-addon-api@^4.0.0, node-addon-api@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-4.3.0.tgz#52a1a0b475193e0928e98e0426a0d1254782b77f"
   integrity sha512-73sE9+3UaLYYFmDsFZnqCInzPyh3MqIwZO9cw58yIqAZhONrrabrYyYe3TuIqtIiOuTXVhsGau8hcrhhwSsDIQ==
@@ -21418,7 +21413,7 @@ postcss@^8.0.2, postcss@^8.1.7, postcss@^8.3.5, postcss@^8.4.12, postcss@^8.4.4,
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-prebuild-install@^6.1.1:
+prebuild-install@^6.1.4:
   version "6.1.4"
   resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-6.1.4.tgz#ae3c0142ad611d58570b89af4986088a4937e00f"
   integrity sha512-Z4vpywnK1lBg+zdPCVCsKq0xO66eEV9rWo2zrROGGiRS4JtueBOdlB1FnY8lcy7JsUud/Q3ijUxyWN26Ika0vQ==
@@ -24638,15 +24633,15 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@0.28.1:
-  version "0.28.1"
-  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.28.1.tgz#9d7bbce1ca95b2c27482243cd4839c62ef40b0b7"
-  integrity sha512-4mCGMEN4ntaVuFGwHx7FvkJQkIgbI+S+F9a3bI7ugdvKjPr4sF7/ibvlRKhJyzhoQi+ODM+XYY1de8xs7MHbfA==
+sharp@0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.29.0.tgz#1fa302bd5f60292138c823aa0905609f64d710ba"
+  integrity sha512-mdN1Up0eN+SwyForPls59dWO0nx64J1XRQYy5ZiKSADAccGYCB10UAGJHSVG9VObzJdhHqrVJzQcq6gx8USyoA==
   dependencies:
-    color "^3.1.3"
+    color "^4.0.1"
     detect-libc "^1.0.3"
-    node-addon-api "^3.1.0"
-    prebuild-install "^6.1.1"
+    node-addon-api "^4.0.0"
+    prebuild-install "^6.1.4"
     semver "^7.3.5"
     simple-get "^3.1.0"
     tar-fs "^2.1.1"
@@ -25551,6 +25546,38 @@ strapi-helper-plugin@3.6.10:
     styled-components "^5.2.3"
     whatwg-fetch "^3.6.2"
 
+strapi-helper-plugin@3.6.10:
+  version "3.6.10"
+  resolved "https://registry.yarnpkg.com/strapi-helper-plugin/-/strapi-helper-plugin-3.6.10.tgz#c4b18b797b826aabdc731573381820238245b5b3"
+  integrity sha512-u+jfDv69Y9ogEeAzJtB99OEvBUpMexbhuwhuHgzQBZMqTUaRswVYMXL2LKGCaabmcbt+0dsD3SmDbx/pLdRD0g==
+  dependencies:
+    "@buffetjs/core" "3.3.8"
+    "@buffetjs/custom" "3.3.8"
+    "@buffetjs/hooks" "3.3.8"
+    "@buffetjs/icons" "3.3.8"
+    "@buffetjs/styles" "3.3.8"
+    "@buffetjs/utils" "3.3.8"
+    "@fortawesome/fontawesome-free" "^5.15.2"
+    "@fortawesome/fontawesome-svg-core" "^1.2.35"
+    "@fortawesome/free-brands-svg-icons" "^5.15.2"
+    "@fortawesome/free-solid-svg-icons" "^5.15.3"
+    "@fortawesome/react-fontawesome" "^0.1.14"
+    bootstrap "^4.6.0"
+    classnames "^2.3.1"
+    immutable "^3.8.2"
+    invariant "^2.2.1"
+    lodash "4.17.21"
+    moment "^2.29.1"
+    react "^16.14.0"
+    react-dom "^16.9.0"
+    react-helmet "^6.1.0"
+    react-intl "4.5.0"
+    react-router "^5.2.0"
+    react-router-dom "^5.0.0"
+    reactstrap "8.4.1"
+    styled-components "^5.2.3"
+    whatwg-fetch "^3.6.2"
+
 strapi-helper-plugin@3.6.8:
   version "3.6.8"
   resolved "https://registry.yarnpkg.com/strapi-helper-plugin/-/strapi-helper-plugin-3.6.8.tgz#29a6ff49ef1fe5021d9a24e566a375d357f450ae"
@@ -25711,10 +25738,10 @@ strapi-plugin-i18n@3.6.10:
     pluralize "8.0.0"
     strapi-utils "3.6.10"
 
-strapi-plugin-upload@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-upload/-/strapi-plugin-upload-3.6.8.tgz#5bc02fb299ccc62a909b273b2f51aedf607c7032"
-  integrity sha512-uVNwtJP7yMqSn02VG7zuECRqdRWQyaZ9G9Wac/+p3GyPXAnzTiitBNMWgWnkZFO/LAulrSvIF2w3IMBIrJfIpw==
+strapi-plugin-upload@3.6.10:
+  version "3.6.10"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-upload/-/strapi-plugin-upload-3.6.10.tgz#53298b44fcea2e37b1172db957d030d163c52a29"
+  integrity sha512-2+lbfPBaTrYFXT4yhloXq5qQfKHoFx/MDmm/wIzBJWbOvj2KKO1fRZxPBaQjJ54kk+A9/GsuoFbnUNVwmsNp4g==
   dependencies:
     "@buffetjs/core" "3.3.8"
     "@buffetjs/custom" "3.3.8"
@@ -25739,10 +25766,10 @@ strapi-plugin-upload@3.6.8:
     react-router "^5.2.0"
     react-router-dom "^5.0.0"
     reactstrap "8.4.1"
-    sharp "0.28.1"
-    strapi-helper-plugin "3.6.8"
-    strapi-provider-upload-local "3.6.8"
-    strapi-utils "3.6.8"
+    sharp "0.29.0"
+    strapi-helper-plugin "3.6.10"
+    strapi-provider-upload-local "3.6.10"
+    strapi-utils "3.6.10"
     stream-to-array "^2.3.0"
     uuid "^3.2.1"
 
@@ -25786,10 +25813,10 @@ strapi-provider-email-sendmail@3.6.8:
     sendmail "^1.6.1"
     strapi-utils "3.6.8"
 
-strapi-provider-upload-local@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.6.8.tgz#4666269e96f2ae878f366ae091d09ea69fb0237b"
-  integrity sha512-GkedrjO+T4DN649Ak0SMSS5Vdta0AoZRt9+IWLO9TGLZ7hjtIjnB60kGf0fQKspIhbS7DUqtwuzQAXTd8fXJOg==
+strapi-provider-upload-local@3.6.10:
+  version "3.6.10"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.6.10.tgz#9a608d00d594dc98134e5ece2b5bc81b5a834512"
+  integrity sha512-ssS3Hiefh5GBUuw1HdcJXbc68yQcm/+D+j6myzIkxNBO2IqI1QvZ8XEfz3UoXcc5Op9I4BmNJtYOrvsJRr5qyg==
 
 strapi-utils@3.6.10:
   version "3.6.10"
