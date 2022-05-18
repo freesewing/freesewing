@@ -1,3 +1,7 @@
+- - -
+title: "Hem style"
+- - -
+
 ![Style d'ourlet](hemstyle.svg)
 
 Quel style de ligne d'ourlet voulez-vous ?
@@ -8,4 +12,4 @@ Quel style de ligne d'ourlet voulez-vous ?
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_hemstyle_sample.svg "Effet de cette option sur le motif")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_hemstyle_sample.svg "Effect of this option on the pattern")
