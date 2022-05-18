@@ -4,11 +4,11 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Tissu principal
 
-Pour le tissu principal de votre chapeau, un tissu épais fonctionnera mieux pour tenir la forme, mais si vous voulez aller pour un tissu plus léger, vous pouvez l'interfacer pour lui donner plus de corps. Généralement, vous voulez utiliser **laines** de poids de revêtement mais vous pouvez expérimenter avec différents poids et tissus avec l'interface pertinente. 
+For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
-<Note> 
+<Note>
 
-Une chose amusante à essayer est le coton imprimé. Il suffit de doubler le tissu principal pour que chaque pièce soit en double épaisseur. Then interface it with a **Medium Firm Interfacing**. 
+A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
 
 </Note>
 
