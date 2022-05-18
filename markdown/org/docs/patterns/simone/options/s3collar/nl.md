@@ -1,5 +1,7 @@
 - - -
+title: "Shoulder seam shift: collar side"
 - - -
+
 
 Bepaalt de locatie van de schoudernaad aan de kant van de kraag.
 
@@ -8,4 +10,4 @@ Bepaalt de locatie van de schoudernaad aan de kant van de kraag.
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_s3collar_sample.svg "Effect van deze optie op het patroon")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_s3collar_sample.svg "Effect of this option on the pattern")
