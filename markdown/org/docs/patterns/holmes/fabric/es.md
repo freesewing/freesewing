@@ -4,11 +4,11 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Tela principal
 
-Para la tela principal de tu sombrero, un tejido grueso funcionará mejor para mantener la forma, pero si quieres ir por una tela más ligera puedes interactuar para darle más cuerpo. Generalmente quieres usar **Lanas** de peso de recubrimiento, pero puedes experimentar con diferentes pesos y tejidos con la interfaz relevante. 
+For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
-<Note> 
+<Note>
 
-Una cosa divertida para probar es el algodón impreso. Simplemente doblar la tela principal para que cada pieza sea de doble espesor. Then interface it with a **Medium Firm Interfacing**. 
+A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
 
 </Note>
 
