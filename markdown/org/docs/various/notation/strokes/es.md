@@ -6,17 +6,9 @@ Los diseñadores pueden, si lo eligen, sobreescribir el ancho de línea por defe
 
 Para referencia, aquí están los diferentes anchos de línea disponibles:
 
-<Legend part="lineWidths">
-
-The different line widths
-
-</Legend>
+<Legend part="lineWidths" caption="The different line widths" >
 
 Y estos son los diferentes estilos de trazo:
 
-<Legend part="lineStrokes">
-
-The different line strokes
-
-</Legend>
+<Legend part="lineStrokes" caption="The different line strokes" >
 
