@@ -1,3 +1,7 @@
+- - -
+title: "Biceps ease"
+- - -
+
 ![Overwijdte biceps](./bicepsease.svg)
 
 Hoeveel wijder dan je bovenarmomtrek wil je dat de mouw is?
@@ -19,4 +23,5 @@ We proberen je keuze hier te respecteren, maar onze prioriteit is zorgen dat de 
 </Warning>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_bicepsease_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_bicepsease_sample.svg "Effect of this option on the pattern")
