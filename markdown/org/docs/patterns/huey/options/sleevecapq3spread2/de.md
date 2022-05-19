@@ -1,3 +1,7 @@
+- - -
+title: "Sleevecap Q3 downward spread"
+- - -
+
 ![Die Abwärtsverteilung im dritten Quadranten der Ärmel](./sleevecapq3spread2.svg)
 
 Diese Option steuert die Abwärtsverteilung im dritten Quadranten der Ärmel.
@@ -9,4 +13,5 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 </Tip>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_sleevecapq3spread2_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_sleevecapq3spread2_sample.svg "Effect of this option on the pattern")

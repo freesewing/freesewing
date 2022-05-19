@@ -19,4 +19,3 @@ Y estos son los diferentes estilos de trazo:
 The different line strokes
 
 </Legend>
-

@@ -1,3 +1,7 @@
+- - -
+title: "Collar stand width"
+- - -
+
 ![Largeur de la surface de la surface](collarstandwidth.svg)
 
 La hauteur du pied de votre col.
@@ -9,4 +13,5 @@ C'est le paramètre principal pour modifier la hauteur globale de votre collier.
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collarstandwidth_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collarstandwidth_sample.svg "Effect of this option on the pattern")

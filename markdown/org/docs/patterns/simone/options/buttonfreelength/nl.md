@@ -1,3 +1,7 @@
+- - -
+title: "Button free length"
+- - -
+
 ![Lengte knooploos stuk](./buttonfreelength.svg)
 
 Hoe ver voor je tailleband wil je dat je laatste knoop zit?
@@ -9,11 +13,14 @@ Hoe ver voor je tailleband wil je dat je laatste knoop zit?
 Knopen voorbij je tailleband wordt door velen als vervelend ervaren.
 Ze zitten vast in je riem, en maken toiletpauzes onnodig lastig.
 
-De laatste knoop zit standaard 1 cm boven je tailleband, maar deze optie staat je toe de knoop verder naar boven te schuiven voor hemden die je met hogere broeken wil dragen.
+By default, the last button sits 1cm above your waistband,
+but this option allows you to move it further upwards for that shirt you are going to wear with those high-waisted trousers.
 
-Als je knopen onder je tailleband wil kan dat ook. Dan moet je hier een negatieve waarde invoeren, zolang ze binnen de beschikbare lengtebonus valt.
+Als je knopen onder je tailleband wil kan dat ook. You should enter a negative value here,
+making sure it's within the length bonus you have available.
 
 </Note>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_buttonfreelength_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_buttonfreelength_sample.svg "Effect of this option on the pattern")

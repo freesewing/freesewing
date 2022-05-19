@@ -1,3 +1,7 @@
+- - -
+title: "Shoulder seam shift: armhole side"
+- - -
+
 Contrôle l'emplacement de la couture des épaules sur le côté du bras.
 
 - Augmentez cette option pour déplacer la couture de l'épaule vers l'avant sur le côté de l'emmanchure

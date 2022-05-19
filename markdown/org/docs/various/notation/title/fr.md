@@ -15,4 +15,3 @@ Exemple de titre
 Lorsque vous générez un patron sur freesewing.org, le titre inclura également le nom de la personne pour laquelle le patron a été conçu.
 
 </Note>
-

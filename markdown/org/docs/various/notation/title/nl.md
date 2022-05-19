@@ -15,4 +15,3 @@ Example of a title
 Wanneer je een patroon genereert op freesewing.org bevat de titel ook de naam van de persoon waar je het patroon voor gemaakt hebt.
 
 </Note>
-

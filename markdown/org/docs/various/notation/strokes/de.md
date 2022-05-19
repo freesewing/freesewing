@@ -19,4 +19,3 @@ Und das sind die verschiedenen Strichstile:
 The different line strokes
 
 </Legend>
-

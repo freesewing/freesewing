@@ -4,11 +4,11 @@ title: "Holmes deerstalker hat: Fabric Options"
 
 ### Hauptstoff
 
-Für den Hauptstoff deines Hutes Ein dicker Stoff wird am besten funktionieren, um die Form zu halten, aber wenn du einen leichteren Stoff suchen möchtest, kannst du ihn so einstellen, dass er mehr Körper erhält. Normalerweise möchten Sie **Wolle** mit Beschichtungsgewicht verwenden, aber Sie können mit verschiedenen Gewichten und Stoffen mit der entsprechenden Schnittstelle experimentieren. 
+For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **Wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
 
-<Note> 
+<Note>
 
-Eine lustige Sache zu versuchen, ist die Baumwolle. Verdoppeln Sie einfach den Hauptstoff, so dass jedes Stück ist doppelte Dicke. Then interface it with a **Medium Firm Interfacing**. 
+A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **Medium Firm Interfacing**.
 
 </Note>
 

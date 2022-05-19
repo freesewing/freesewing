@@ -14,4 +14,4 @@ Les surjeteuses utilisent plusieurs fils et aiguilles pour non seulement faire l
 > 
 > Une autre confusion est ajoutée par le fait que certaines machines à coudre ont un point de surjet qui imite le rôle d'une surjeteuse.
 > 
-> Pour éviter tout cela, j'utilise le terme surjeteuse pour faire référence à la machine dédiée. 
+> Pour éviter tout cela, j'utilise le terme surjeteuse pour faire référence à la machine dédiée.
