@@ -1,7 +1,11 @@
+- - -
+title: "Number of buttons"
+- - -
+
 ![Boutons](buttons.svg)
 
 Combien de boutons voulez-vous ?
 
-
 ## Effet de cette option sur le patron
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_buttons_sample.svg "Effet de cette option sur le patron")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_buttons_sample.svg "Effect of this option on the pattern")
