@@ -2,8 +2,8 @@
 title: Beheer uw abonnement in uw account
 ---
 
-Als geregistreerde gebruiker kunt u [uw nieuwsbriefinstellingen beheren in uw account][1].
+As a registered user, you can [manage your newsletter settings in your account][1].
 
-Als je een ander e-mailadres wilt registreren als het e-mailadres dat gekoppeld is aan je account, kun je dit hieronder doen.
+If you'd like to sign up a different email address as the one linked to your account, you can do so below.
 
 [1]: /account/settings/newsletter/
