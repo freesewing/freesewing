@@ -1,6 +1,6 @@
----
+- - -
 title: "Shin swim trunks: Cutting Instructions"
----
+- - -
 
 - Couper **2 dos** avec de bons côtés ensemble
 - Couper **4 fronts** 2 x 2 avec de bons côtés ensemble
