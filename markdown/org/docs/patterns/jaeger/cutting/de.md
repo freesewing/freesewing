@@ -1,6 +1,6 @@
----
+- - -
 title: "Jaeger jacket: Cutting Instructions"
----
+- - -
 
 - **Oberstoff**
   - **2 Fronten schneiden** (Teil 1)

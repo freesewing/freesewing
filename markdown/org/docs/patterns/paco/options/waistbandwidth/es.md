@@ -1,6 +1,7 @@
----
+- - -
 title: "Waistband width"
----
+- - -
+
 
 Controla la anchura de la cinturilla.
 

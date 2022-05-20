@@ -1,6 +1,7 @@
----
+- - -
 title: "Shoulder seam shift: armhole side"
----
+- - -
+
 
 Bepaalt de locatie van de schoudernaad op het armsgat.
 

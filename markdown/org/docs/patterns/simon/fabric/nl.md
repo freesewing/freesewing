@@ -1,6 +1,6 @@
----
+- - -
 title: "Simon shirt: Fabric Options"
----
+- - -
 
 Any fabric shop that is worth your business should have a shirting section. You can just walk in, ask where you can find the shirting, and pick out something you like.
 

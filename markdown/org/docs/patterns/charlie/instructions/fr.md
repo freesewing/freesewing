@@ -1,6 +1,6 @@
----
+- - -
 title: "Charlie chinos: Sewing Instructions"
----
+- - -
 
 ## Étape 1 : Fermer la dart arrière
 

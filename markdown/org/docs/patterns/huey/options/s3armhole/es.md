@@ -1,6 +1,7 @@
----
+- - -
 title: "Shoulder seam shift: armhole side"
----
+- - -
+
 
 Controla la ubicación de la costura del hombro en el lado del orificio.
 

@@ -1,6 +1,6 @@
----
+- - -
 title: "Aaron A-Shirt: Sewing Instructions"
----
+- - -
 
 ## Étape 1 : Faire les coutures d'assemblage
 
