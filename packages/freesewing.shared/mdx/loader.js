@@ -55,7 +55,7 @@ const mdxLoader = async (language, site, slug) => {
         ]
       ],
       rehypePlugins: [
-        rehypeHighlight,
+        [rehypeHighlight, { plainText: ['dot', 'http'] }],
         rehypeSlug,
         rehypeAutolinkHeadings,
       ],

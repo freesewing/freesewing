@@ -11,6 +11,120 @@ typically require a lot more complexity.
 
 Below is a list of custom components you can use in our Markdown content:
 
+## Dot
+
+<Dot>
+```dot
+rankdir="LR"
+compound=true
+subgraph cluster_pem {
+  label="I am a box"
+  fontsize=24
+  color="oc-gray"
+  style="dashed"
+  api [label="Backend API" shape="box3d" style="dashed" color="oc-teal"]
+  strapi [label="Strapi" shape="box3d" style="dashed" color="oc-teal"]
+  db [label="Database" shape="cylinder" style="dashed" color="oc-grape"]
+  api -> db
+  strapi -> db
+}
+
+frontend [label="FreeSewing\nFrontend" shape="component" color="oc-violet"]
+user [label="User" shape="egg" color="oc-blue-2" style="filled"]
+extra [label="I am an example" shape="box" color="oc-pink-2"]
+dot [label="Me too!" shape="plaintext"]
+
+extra -> dot
+dot -> db [lhead=cluster_pem dir=back]
+frontend -> api
+frontend -> strapi [color="oc-indigo"]
+user -> frontend
+
+```
+An example graph using the **Dot** custom component
+</Dot>
+
+Use **Dot** to add a [Graphviz](https://graphviz.org/) graph written in
+the [Dot graph description language](*https://en.wikipedia.org/wiki/DOT_(graph_description_language)).
+
+It is a way to include diagrams as code, making them easier to maintain and diff than
+creating graphic files by hand. These diagrams also support dark mode, translation a and
+consistent color scheme. Highly recommended when you want to clarify concepts with a little
+back-of-the-napkin sketch.
+
+<Tip>
+The dot language takes some getting used to, but you can hone your skills or try it out
+on [sketchviz.com](https://sketchviz.com/).
+</Tip>
+
+### Default or plain
+
+By default, the graph will have a hand-drawn look and matching font. 
+Documentation can be boring, and this helps with that as well as making
+the subject matter more approachable (I hope).
+
+That being said, you can disable this by setting the `plain` prop on
+the custom component:
+
+```md
+<Dot plain>...</Dot>
+```
+
+Which yields this result:
+
+<Dot plain>
+```dot
+rankdir="LR"
+compound=true
+subgraph cluster_pem {
+  label="I am a box"
+  fontsize=24
+  color="oc-gray"
+  style="dashed"
+  api [label="Backend API" shape="box3d" style="dashed" color="oc-teal"]
+  strapi [label="Strapi" shape="box3d" style="dashed" color="oc-teal"]
+  db [label="Database" shape="cylinder" style="dashed" color="oc-grape"]
+  api -> db
+  strapi -> db
+}
+
+frontend [label="FreeSewing\nFrontend" shape="component" color="oc-violet"]
+user [label="User" shape="egg" color="oc-blue-2" style="filled"]
+extra [label="I am an example" shape="box" color="oc-pink-2"]
+dot [label="Me too!" shape="plaintext"]
+
+extra -> dot
+dot -> db [lhead=cluster_pem dir=back]
+frontend -> api
+frontend -> strapi [color="oc-indigo"]
+user -> frontend
+
+```
+An example graph using the **Dot** custom component
+</Dot>
+
+### Help with colors
+
+Colors make everything prettier, but dot expects you to specify them as you would in
+HTML, and juggling all those hex-codes becomes a chore.
+
+This custom component makes it easy to use [the open-color color
+scheme](https://yeun.github.io/open-color/) by using the following color names:
+
+- `oc-[color]` will use the `oc-[color]-5` midtone that's suitable for both light and
+dark mode. Eg: `oc-violet`
+- `oc-[color]-[shade]` allows you to control the lightness. Eg: `oc-violet-200`
+
+<Note>
+If you specify no color, graphviz will revert to `#000000` (black). This custom
+component will also override that with `currentColor` so that the default also
+works in dark mode
+</Note>
+
+### Translation
+
+<Fixme>Not yet implemented</Fixme>
+
 ## Example
 
 <Example part="plugin_buttons">

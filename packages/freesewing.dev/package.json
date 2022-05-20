@@ -41,7 +41,9 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.20.7"
+    "remark-jargon": "^2.20.7",
+    "roughjs": "^4.5.2",
+    "viz.js": "^2.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

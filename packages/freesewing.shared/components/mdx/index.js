@@ -4,6 +4,7 @@ import YouTube from './youtube.js'
 import Figure from './figure.js'
 import ReadMore from './read-more.js'
 import Example from './example/index.js'
+import Dot from './dot.js'
 import examples from '@freesewing/examples'
 import rendertest from '@freesewing/rendertest'
 import tutorial from '@freesewing/tutorial'
@@ -26,6 +27,7 @@ const mdxCustomComponents = (app) => ({
   YouTube,
   pre: props => <Highlight {...props} />,
   img: Figure,
+  Dot,
 })
 
 export default mdxCustomComponents
