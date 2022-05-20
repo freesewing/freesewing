@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg width"
-- - -
+---
 
 Bepaalt de breedte van de broekspijpen.
 

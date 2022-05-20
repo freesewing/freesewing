@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg width"
-- - -
+---
 
 Controla la anchura de la pernera.
 

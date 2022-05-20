@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gusset width"
-- - -
+---
 
 Diese Option steuert die Breite des Zwickels.
 

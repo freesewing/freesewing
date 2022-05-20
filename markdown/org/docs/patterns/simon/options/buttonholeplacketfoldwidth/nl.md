@@ -1,6 +1,6 @@
-- - -
+---
 title: "Buttonhole placket fold width"
-- - -
+---
 
 ![Breedte vouw knoopsgatenpat](buttonholeplacketfoldwidth.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Lapel start"
-- - -
+---
 
 ![Start revers](lapelstart.svg)
 

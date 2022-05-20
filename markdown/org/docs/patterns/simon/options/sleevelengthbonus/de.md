@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length bonus"
-- - -
+---
 
 ![Ärmel Längenzugabe](sleevelengthbonus.svg)
 

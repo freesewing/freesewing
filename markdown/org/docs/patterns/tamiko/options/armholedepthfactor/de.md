@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole depth factor"
-- - -
+---
 
 Steuert die Tiefe deines Armlochs als Faktor der Schultermessung.
 

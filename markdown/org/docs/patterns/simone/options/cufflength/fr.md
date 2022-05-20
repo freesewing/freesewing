@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff length"
-- - -
+---
 
 ![Longueur de poignet](cufflength.svg)
 

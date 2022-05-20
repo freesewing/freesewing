@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve placket length"
-- - -
+---
 
 ![Lengte mouwsplit](sleeveplacketlength.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff button rows"
-- - -
+---
 
 ![Rijen knopen op manchet](cuffbuttonrows.svg)
 

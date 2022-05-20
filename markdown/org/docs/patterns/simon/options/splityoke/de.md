@@ -1,6 +1,6 @@
-- - -
+---
 title: "Split yoke"
-- - -
+---
 
 ![Geteilte Passe](splityoke.svg)
 

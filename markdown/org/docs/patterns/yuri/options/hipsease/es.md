@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hips ease"
-- - -
+---
 
 La cantidad de holgura en la cadera.
 

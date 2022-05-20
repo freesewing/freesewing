@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist ease"
-- - -
+---
 
 ![Holgura de cintura](waistease.svg)
 

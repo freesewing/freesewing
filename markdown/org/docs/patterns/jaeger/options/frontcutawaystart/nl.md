@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front cutaway start"
-- - -
+---
 
 ![Start uitsnijding vooraan](frontcutawaystart.svg)
 

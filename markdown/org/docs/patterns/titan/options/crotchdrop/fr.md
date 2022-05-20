@@ -1,6 +1,6 @@
-- - -
+---
 title: "Crotch drop"
-- - -
+---
 
 Contrôle à quel point la croche est abaissée.
 

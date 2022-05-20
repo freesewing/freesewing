@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap ease"
-- - -
+---
 
 ![Extra ruimte mouwkop](sleevecapease.svg)
 

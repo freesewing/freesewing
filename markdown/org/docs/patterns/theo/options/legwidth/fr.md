@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg width"
-- - -
+---
 
 Contrôle la largeur des jambes.
 

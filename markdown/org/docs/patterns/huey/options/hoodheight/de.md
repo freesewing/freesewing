@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hood height"
-- - -
+---
 
 ![Kapuzenhöhe](./hoodheight.svg)
 

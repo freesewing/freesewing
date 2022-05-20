@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap back X"
-- - -
+---
 
 ![La posición horizontal del punto de inflexión trasero](./sleevecapbackfactorx.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hem curve"
-- - -
+---
 
 ![Curva del dobladillo](hemcurve.svg)
 

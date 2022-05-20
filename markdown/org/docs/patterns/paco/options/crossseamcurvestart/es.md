@@ -1,6 +1,6 @@
-- - -
+---
 title: "Start of the cross seam curve"
-- - -
+---
 
 Controla el inicio de la curva de costura cruzada.
 

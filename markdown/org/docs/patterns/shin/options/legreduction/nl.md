@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg reduction"
-- - -
+---
 
 Hoeveel smaller de (boven)benen moeten worden.
 

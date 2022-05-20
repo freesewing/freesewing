@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hips ease"
-- - -
+---
 
 ![Overwijdte heup](hipsease.svg)
 

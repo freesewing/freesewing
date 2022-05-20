@@ -1,6 +1,6 @@
-- - -
+---
 title: "Extra top button"
-- - -
+---
 
 ![Extra knoop bovenaan](extratopbutton.svg)
 

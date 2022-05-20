@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cross seam bend"
-- - -
+---
 
 Bepaalt de curve van de kruisnaad
 

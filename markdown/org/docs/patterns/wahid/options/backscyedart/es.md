@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back scye dart"
-- - -
+---
 
 ![Pinza posterior de la sisa](backscyedart.svg)
 

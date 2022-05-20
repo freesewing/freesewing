@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg reduction"
-- - -
+---
 
 La cantidad para reducir aún más el estiramiento en las patas (superior).
 

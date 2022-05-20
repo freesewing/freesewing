@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar stand width"
-- - -
+---
 
 ![Largeur de la surface de la surface](collarstandwidth.svg)
 

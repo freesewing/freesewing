@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pocket"
-- - -
+---
 
 Si se añade un bolsillo delantero o no
 

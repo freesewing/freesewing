@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole drop"
-- - -
+---
 
 Bepaalt de diepte van het armsgat
 

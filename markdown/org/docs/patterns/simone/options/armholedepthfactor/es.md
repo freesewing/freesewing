@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole depth factor"
-- - -
+---
 
 ![Factor de profundidad de la sisa](./armholedepthfactor.svg)
 

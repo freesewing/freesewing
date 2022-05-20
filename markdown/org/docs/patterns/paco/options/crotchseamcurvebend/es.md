@@ -1,6 +1,6 @@
-- - -
+---
 title: "Crotch seam bend"
-- - -
+---
 
 Controla la curvatura de la costura de la costra, que influye en el encaje de su cosecha.
 

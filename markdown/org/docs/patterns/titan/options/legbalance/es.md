@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg balance"
-- - -
+---
 
 Controla la proporción entre la parte frontal y trasera de las piernas.
 

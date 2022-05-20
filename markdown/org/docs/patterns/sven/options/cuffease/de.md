@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff ease"
-- - -
+---
 
 ![Manschette Zugabe](cuffease.svg)
 

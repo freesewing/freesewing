@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline curvature"
-- - -
+---
 
 Steuert die Krümmung der Halsöffnung.
 

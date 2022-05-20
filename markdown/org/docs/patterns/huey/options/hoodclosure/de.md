@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hood closure"
-- - -
+---
 
 ![Kapuzenverschluss](./hoodclosure.svg)
 

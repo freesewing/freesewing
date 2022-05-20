@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist Band"
-- - -
+---
 
 Größe des Taillenbundes
 

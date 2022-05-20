@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length bonus"
-- - -
+---
 
 Voegt extra lengte toe aan de das.
 

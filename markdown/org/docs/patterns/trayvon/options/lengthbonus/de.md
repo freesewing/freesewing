@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length bonus"
-- - -
+---
 
 Fügt der Krawatte zusätzliche Länge hinzu.
 

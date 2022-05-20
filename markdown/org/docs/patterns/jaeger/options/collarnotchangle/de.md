@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar notch angle"
-- - -
+---
 
 ![Kragenwinkel](collarnotchangle.svg)
 

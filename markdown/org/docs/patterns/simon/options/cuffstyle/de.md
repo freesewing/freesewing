@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff style"
-- - -
+---
 
 ![Manschettenstil](cuffstyle.svg)
 

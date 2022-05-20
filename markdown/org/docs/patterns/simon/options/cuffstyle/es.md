@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff style"
-- - -
+---
 
 ![Estilo del puño](cuffstyle.svg)
 

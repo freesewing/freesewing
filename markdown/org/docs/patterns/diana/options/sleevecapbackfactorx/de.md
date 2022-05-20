@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap back X"
-- - -
+---
 
 ![Die horizontale Position des Rückenbiegepunkts](./sleevecapbackfactorx.svg)
 

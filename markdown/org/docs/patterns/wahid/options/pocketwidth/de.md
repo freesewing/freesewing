@@ -1,6 +1,6 @@
-- - -
+---
 title: "Pocket width"
-- - -
+---
 
 Steuert die Breite der Taschen.
 

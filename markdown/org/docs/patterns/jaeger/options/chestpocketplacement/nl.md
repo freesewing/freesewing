@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest pocket placement"
-- - -
+---
 
 ![Plaatsting borstzak](chestpocketplacement.svg)
 

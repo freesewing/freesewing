@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap top Y"
-- - -
+---
 
 ![Die vertikale Position der Ärmelhaube](./sleevecaptopfactory.svg)
 

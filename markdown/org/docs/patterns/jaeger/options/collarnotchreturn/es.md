@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar notch return"
-- - -
+---
 
 ![Cuello muesca retorno](collarnotchreturn.svg)
 

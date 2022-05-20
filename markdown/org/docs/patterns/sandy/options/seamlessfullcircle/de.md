@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seamless full circle"
-- - -
+---
 
 ![Nahtloser Vollkreis](seamlessfullcircle.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff narrow button"
-- - -
+---
 
 ![Botón estrecho de corte de cañón](./barrelcuffnarrowbutton.svg)
 

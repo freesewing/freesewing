@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pockets"
-- - -
+---
 
 Si l'on doit inclure des poches avant (sur la couture latérale) ou non.
 

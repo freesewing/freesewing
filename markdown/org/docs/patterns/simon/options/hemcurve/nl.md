@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hem curve"
-- - -
+---
 
 ![Curve zoom](hemcurve.svg)
 

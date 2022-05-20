@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q2 upward spread"
-- - -
+---
 
 ![De opwaartse spreiding in de tweede quadrant van de mouwkop](./sleevecapq2spread2.svg)
 

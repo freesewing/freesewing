@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap ease"
-- - -
+---
 
 ![Aisance tête de manche](sleevecapease.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Circle ratio"
-- - -
+---
 
 ![Porcentaje de círculo](circleratio.svg)
 

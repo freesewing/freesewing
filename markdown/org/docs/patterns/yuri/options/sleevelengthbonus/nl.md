@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length bonus"
-- - -
+---
 
 Deze optie bepaalt hoe de mouwen verlengd worden.
 

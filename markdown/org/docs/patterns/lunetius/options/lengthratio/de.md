@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length ratio"
-- - -
+---
 
 Steuert die Länge des Kleidungsstückes
 

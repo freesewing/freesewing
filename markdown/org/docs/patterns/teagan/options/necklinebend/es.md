@@ -1,6 +1,6 @@
-- - -
+---
 title: "Neckline curvature"
-- - -
+---
 
 Controla la curvatura de la apertura del cuello.
 

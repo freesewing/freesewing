@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q3 offset"
-- - -
+---
 
 ![Der Versatz im dritten Quartal der Ärmel](./sleevecapq3offset.svg)
 

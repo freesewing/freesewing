@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hood depth"
-- - -
+---
 
 ![Capuchon diepte](./hooddepth.svg)
 

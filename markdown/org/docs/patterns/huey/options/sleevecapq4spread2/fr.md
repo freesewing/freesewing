@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q4 downward spread"
-- - -
+---
 
 ![Le décalage descendant du quatrième quadrant de la tête de manche](./sleevecapq4spread2.svg)
 

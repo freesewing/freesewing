@@ -1,6 +1,6 @@
-- - -
+---
 title: "Armhole depth factor"
-- - -
+---
 
 ![Diepte armsgat factor](armholedepthfactor.svg)
 

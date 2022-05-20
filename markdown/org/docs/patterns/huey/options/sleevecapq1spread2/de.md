@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap Q1 upward spread"
-- - -
+---
 
 ![Die Aufwärtsverteilung im ersten Quadranten der Ärmel](./sleevecapq1spread2.svg)
 

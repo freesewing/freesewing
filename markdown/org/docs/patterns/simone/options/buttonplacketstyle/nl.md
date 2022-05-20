@@ -1,6 +1,6 @@
-- - -
+---
 title: "Button placket style"
-- - -
+---
 
 ![Stijl knopenpat](buttonplacketstyle.svg)
 

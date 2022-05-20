@@ -1,6 +1,6 @@
-- - -
+---
 title: "Front pockets"
-- - -
+---
 
 Voorzakken aan de voorkant (aan de zijnaad) of niet.
 

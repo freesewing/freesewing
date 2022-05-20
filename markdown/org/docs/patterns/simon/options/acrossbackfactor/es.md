@@ -1,6 +1,6 @@
-- - -
+---
 title: "Across back factor"
-- - -
+---
 
 ![Factor de ancho de espalda](./acrossbackfactor.svg)
 

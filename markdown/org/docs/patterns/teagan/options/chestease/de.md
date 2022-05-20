@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 Steuert die Menge an Leichtigkeit an der Brust
 

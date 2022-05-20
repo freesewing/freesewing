@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back Crotch Factor Horizontal"
-- - -
+---
 
 Wird benutzt um die Kurze des hinteren Schritts horizontal zu verschieben
 

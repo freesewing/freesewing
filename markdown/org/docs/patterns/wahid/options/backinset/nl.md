@@ -1,6 +1,6 @@
-- - -
+---
 title: "Back inset"
-- - -
+---
 
 ![Insnede rug](backinset.svg)
 

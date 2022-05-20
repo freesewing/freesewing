@@ -1,6 +1,6 @@
-- - -
+---
 title: "Elastic width"
-- - -
+---
 
 > #### Was ist der Punkt?
 > 

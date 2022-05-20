@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar gap"
-- - -
+---
 
 ![Espaciado del cuello](collargap.svg)
 

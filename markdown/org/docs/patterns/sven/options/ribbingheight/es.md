@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ribbing height"
-- - -
+---
 
 ![Altura de tejido acanalado](ribbingheight.svg)
 

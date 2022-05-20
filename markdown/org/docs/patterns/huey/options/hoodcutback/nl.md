@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hood cutback"
-- - -
+---
 
 ![Capuchon inkorting](./hoodcutback.svg)
 

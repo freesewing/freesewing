@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar gap"
-- - -
+---
 
 ![Afstand kraag](collargap.svg)
 

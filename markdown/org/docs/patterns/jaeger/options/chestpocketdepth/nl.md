@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest pocket depth"
-- - -
+---
 
 Bepaalt de diepte van de borstzak.
 

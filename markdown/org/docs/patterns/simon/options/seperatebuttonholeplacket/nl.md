@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seperate buttonhole placket"
-- - -
+---
 
 ![Apart knoopsgatenpat](seperatebuttonholeplacket.svg)
 

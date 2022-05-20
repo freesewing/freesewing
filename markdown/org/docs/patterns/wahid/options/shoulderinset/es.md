@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder inset"
-- - -
+---
 
 ![Inserción de hombro](shoulderinset.svg)
 

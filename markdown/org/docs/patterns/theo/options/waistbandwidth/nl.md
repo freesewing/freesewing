@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waistband width"
-- - -
+---
 
 ![Breedte tailleband](waistbandwidth.svg)
 

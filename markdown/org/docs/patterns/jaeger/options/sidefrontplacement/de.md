@@ -1,6 +1,6 @@
-- - -
+---
 title: "Side/Front placement"
-- - -
+---
 
 ![Seitenfront Platzierung](sidefrontplacement.svg)
 

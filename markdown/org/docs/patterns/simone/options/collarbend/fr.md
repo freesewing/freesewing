@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar bend"
-- - -
+---
 
 ![Courbure du col](collarbend.svg)
 

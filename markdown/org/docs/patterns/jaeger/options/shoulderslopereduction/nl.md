@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder slope reduction"
-- - -
+---
 
 ![Reductie schouderhelling](shoulderslopereduction.svg)
 

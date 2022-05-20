@@ -1,6 +1,6 @@
-- - -
+---
 title: "Fit the knee"
-- - -
+---
 
 Controla la anchura de la pernera.
 

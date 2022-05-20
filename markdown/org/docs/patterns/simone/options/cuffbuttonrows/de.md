@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff button rows"
-- - -
+---
 
 ![Manschettenknopfreihen](cuffbuttonrows.svg)
 

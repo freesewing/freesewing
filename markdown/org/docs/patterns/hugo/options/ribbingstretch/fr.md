@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ribbing stretch"
-- - -
+---
 
 ![Ribbing stretch on Hugo](./ribbingstretch.svg)
 

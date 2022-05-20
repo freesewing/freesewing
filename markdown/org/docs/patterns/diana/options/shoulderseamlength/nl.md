@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder seam length"
-- - -
+---
 
 ![De optie voor de lengte van de schoudernaad bij Diana](./shoulderseamlength.svg)
 

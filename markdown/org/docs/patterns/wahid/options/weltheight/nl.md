@@ -1,6 +1,6 @@
-- - -
+---
 title: "Welt height"
-- - -
+---
 
 Bepaalt de hoogte van de paspels.
 

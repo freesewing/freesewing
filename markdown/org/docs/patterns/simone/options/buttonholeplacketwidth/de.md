@@ -1,6 +1,6 @@
-- - -
+---
 title: "Buttonhole placket width"
-- - -
+---
 
 ![Knopflochleiste Breite](buttonholeplacketwidth.svg)
 

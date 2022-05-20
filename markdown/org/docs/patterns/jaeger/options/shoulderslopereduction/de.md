@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shoulder slope reduction"
-- - -
+---
 
 ![Verringerung der Schulterneigung](shoulderslopereduction.svg)
 

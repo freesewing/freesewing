@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest ease"
-- - -
+---
 
 Esta opción controla la holgura en el pecho.
 

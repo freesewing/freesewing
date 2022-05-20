@@ -1,6 +1,6 @@
-- - -
+---
 title: "Stretch"
-- - -
+---
 
 La cantidad de estiramiento total (horizontal).
 

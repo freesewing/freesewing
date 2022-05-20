@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist height"
-- - -
+---
 
 Bepaalt de hoogte van de taille, waarbij:
 

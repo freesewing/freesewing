@@ -1,6 +1,6 @@
-- - -
+---
 title: "Leg reduction"
-- - -
+---
 
 Der Betrag, um die Streckung an den obersten Beinen weiter zu reduzieren.
 

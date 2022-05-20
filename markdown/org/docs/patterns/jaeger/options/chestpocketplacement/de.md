@@ -1,6 +1,6 @@
-- - -
+---
 title: "Chest pocket placement"
-- - -
+---
 
 ![Platzierung der Brusttasche](chestpocketplacement.svg)
 

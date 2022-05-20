@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve vent width"
-- - -
+---
 
 Controla el ancho de la válvula de manga.
 

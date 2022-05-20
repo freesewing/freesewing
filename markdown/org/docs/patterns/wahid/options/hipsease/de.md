@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hips ease"
-- - -
+---
 
 ![Zugabe Hüfte](hipsease.svg)
 

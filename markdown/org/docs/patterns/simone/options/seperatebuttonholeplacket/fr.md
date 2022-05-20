@@ -1,6 +1,6 @@
-- - -
+---
 title: "Seperate buttonhole placket"
-- - -
+---
 
 ![Gorge (Patte de boutonnières) séparée](seperatebuttonholeplacket.svg)
 

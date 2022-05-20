@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar stand width"
-- - -
+---
 
 ![Ancho del soporte](collarstandwidth.svg)
 

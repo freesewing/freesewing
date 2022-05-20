@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar height"
-- - -
+---
 
 ![Kragenhöhe](collarheight.svg)
 

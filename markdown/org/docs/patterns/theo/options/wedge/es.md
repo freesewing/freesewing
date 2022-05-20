@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wedge"
-- - -
+---
 
 Controla la longitud de la costura transversal.
 

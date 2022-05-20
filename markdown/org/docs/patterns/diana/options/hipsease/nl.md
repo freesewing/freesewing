@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hips ease"
-- - -
+---
 
 ![De optie voor overwijdte heupen van Diana](./hipsease.svg)
 

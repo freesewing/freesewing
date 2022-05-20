@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleevecap top X"
-- - -
+---
 
 ![La ubicación horizontal de la parte superior de manga](./sleevecaptopfactorx.svg)
 

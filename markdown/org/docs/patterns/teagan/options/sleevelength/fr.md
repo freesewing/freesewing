@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve length"
-- - -
+---
 
 Contrôle la longueur des manches.
 

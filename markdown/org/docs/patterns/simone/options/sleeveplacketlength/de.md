@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sleeve placket length"
-- - -
+---
 
 ![Ärmelleistenlänge](sleeveplacketlength.svg)
 

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Roll-line collar height"
-- - -
+---
 
 ![Rollenlinie Kragenhöhe](rolllinecollarheight.svg)
 

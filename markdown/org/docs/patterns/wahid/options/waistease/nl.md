@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waist ease"
-- - -
+---
 
 ![Overwijdte taille](waistease.svg)
 

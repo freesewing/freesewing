@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cuff narrow button"
-- - -
+---
 
 ![Klassieke manchet smalle knoop](./barrelcuffnarrowbutton.svg)
 

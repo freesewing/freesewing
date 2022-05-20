@@ -1,6 +1,6 @@
-- - -
+---
 title: "Collar height"
-- - -
+---
 
 ![Hoogte kraag](collarheight.svg)
 

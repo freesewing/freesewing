@@ -1,6 +1,6 @@
-- - -
+---
 title: "Gathering"
-- - -
+---
 
 ![Fruncido](gathering.svg)
 

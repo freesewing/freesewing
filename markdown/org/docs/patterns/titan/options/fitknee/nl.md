@@ -1,6 +1,6 @@
-- - -
+---
 title: "Fit the knee"
-- - -
+---
 
 Bepaalt de breedte van de broekspijpen.
 

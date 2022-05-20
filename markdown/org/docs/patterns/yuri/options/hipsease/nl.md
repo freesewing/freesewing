@@ -1,6 +1,6 @@
-- - -
+---
 title: "Hips ease"
-- - -
+---
 
 De hoeveelheid overwijdte aan je heupen.
 

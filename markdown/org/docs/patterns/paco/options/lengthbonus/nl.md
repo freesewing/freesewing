@@ -1,6 +1,6 @@
-- - -
+---
 title: "Length bonus"
-- - -
+---
 
 Bepaalt de lengte van de gehele broek, wat in wezen de lengte van de benen betekent.
 

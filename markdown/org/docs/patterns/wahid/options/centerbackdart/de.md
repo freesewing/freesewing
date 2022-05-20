@@ -1,6 +1,6 @@
-- - -
+---
 title: "Center back dart"
-- - -
+---
 
 ![Zentrierter Dart](centerbackdart.svg)
 
