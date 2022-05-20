@@ -1,5 +1,7 @@
----
-title: Head ease
+- - -
+title: "Head ease"
+- - -
+
 ---
 
 La quantité d'aisance autour de la tête.
