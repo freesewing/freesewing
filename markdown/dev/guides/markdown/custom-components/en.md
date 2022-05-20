@@ -59,38 +59,6 @@ The dot language takes some getting used to, but you can hone your skills or try
 on [sketchviz.com](https://sketchviz.com/).
 </Tip>
 
-### Default or plain
-
-By default, the graph will have a hand-drawn look and matching font. 
-Documentation can be boring, and this helps with that as well as making
-the subject matter more approachable (I hope).
-
-That being said, you can disable this by setting the `plain` prop on
-the custom component:
-
-```md
-<Dot plain>...</Dot>
-```
-
-Which does away with all the quirkyness:
-
-<Dot plain>
-```dot
-rankdir="LR"
-compound=true
-
-box1 [label="Plain" shape="box" color="oc-orange"]
-box2 [label="Boring!" shape="egg" color="oc-indigo"]
-box3 [label="Bleh" shape="box3d" color="oc-green"]
-
-box1 -> box2
-box1 -> box3 [dir=back style="dashed" label="Not a fan of this style"]
-box2 -> box3 
-
-```
-An example graph using the **Dot** custom component
-</Dot>
-
 ### Using colors
 
 Colors make everything prettier, but dot expects you to specify them as you would in
