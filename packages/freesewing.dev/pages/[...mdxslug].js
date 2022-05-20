@@ -44,7 +44,7 @@ const MdxPage = props => {
           </div>
         )}
         <div className="px-0 xl:pl-8 2xl:pl-16">
-          <MdxWrapper mdx={props.mdx} app={app}/>
+          <MdxWrapper mdx={props.mdx} app={app} />
           <HelpUs mdx slug={`/${props.page.slug}`} />
         </div>
       </div>

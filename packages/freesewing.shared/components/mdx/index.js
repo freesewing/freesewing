@@ -10,7 +10,7 @@ import rendertest from '@freesewing/rendertest'
 import tutorial from '@freesewing/tutorial'
 
 
-const mdxCustomComponents = (app) => ({
+const mdxCustomComponents = (app, t) => ({
   // Custom components
   Example: props => <Example
     {...props}

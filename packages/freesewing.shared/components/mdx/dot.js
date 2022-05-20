@@ -4,7 +4,7 @@ import { Module, render } from 'viz.js/full.render.js'
 import coarse from './dot-rough.js'
 import Popout from 'shared/components/popout'
 import oc from 'open-color'
-//import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next'
 
 // Some regex voodoo to allow people to use open-color
 // colors like oc-orange-5 and make it 'just work'
@@ -18,30 +18,25 @@ const colorDot = dot => dot
 
 // More regex voodoo to handle translation
 // Looking for prefix i18n: and terminated by ther space of "
-// FIXME: Handle translation
-//const regexC = /i18n:([^ "]+)/g
-//const getTranslation = (a, b, t) => {
-//  console.log({a,b}, t('aboutFreesewing'), t)
-//  return t('aboutFreesewing')
-//}
-//const i18nDot = (dot, t) => dot.replace(regexC, (a,b) => getTranslation(a, b, t))
+const regexC = /i18n:([^ "]+)/g
+const i18nDot = (dot, t) => dot.replace(regexC, (a,b) => t(b))
 
 
 const Dot = props => {
 
-  //const { t } = useTranslation(['base'])
+  const { t } = useTranslation(['app'])
   const { plain=false } = props
 
   const wrapDot = dot => {
     if (dot.slice(0,7) === 'digraph') return dot
 
     return plain
-    ? `digraph G { bgcolor=transparent; ${colorDot(dot)} }`
+    ? `digraph G { bgcolor=transparent; ${i18nDot(colorDot(dot), t)} }`
     : `digraph G {
   graph [fontname = "Indie Flower"];
   node [fontname = "Indie Flower"];
   edge [fontname = "Indie Flower"];
-  bgcolor=transparent; ${colorDot(dot)} }`
+  bgcolor=transparent; ${i18nDot(colorDot(dot), t)} }`
   }
 
   // Extract code/caption from props

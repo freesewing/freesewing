@@ -15,7 +15,7 @@ import customComponents from 'shared/components/mdx'
 // Previous-Next navigation
 import PrevNext from '../mdx/prev-next'
 
-const MdxWrapper = ({mdx, app, components={}}) => {
+const MdxWrapper = ({mdx, app, t, components={}}) => {
 
   const [mdxModule, setMdxModule] = useState()
 
@@ -31,7 +31,7 @@ const MdxWrapper = ({mdx, app, components={}}) => {
    * extra components via props
    */
   const allComponents = {
-    ...customComponents(app),
+    ...customComponents(app, t),
     ...components
   }
 

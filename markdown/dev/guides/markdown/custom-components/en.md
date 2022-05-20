@@ -33,8 +33,10 @@ frontend [label="FreeSewing\nFrontend" shape="component" color="oc-violet"]
 user [label="User" shape="egg" color="oc-blue-2" style="filled"]
 extra [label="I am an example" shape="box" color="oc-pink-2"]
 dot [label="Me too!" shape="plaintext"]
+i18n [label="i18n:docs" shape="signature" color="oc-red"] 
 
 extra -> dot
+extra -> i18n
 dot -> db [lhead=cluster_pem dir=back]
 frontend -> api
 frontend -> strapi [color="oc-indigo"]
@@ -70,40 +72,26 @@ the custom component:
 <Dot plain>...</Dot>
 ```
 
-Which yields this result:
+Which does away with all the quirkyness:
 
 <Dot plain>
 ```dot
 rankdir="LR"
 compound=true
-subgraph cluster_pem {
-  label="I am a box"
-  fontsize=24
-  color="oc-gray"
-  style="dashed"
-  api [label="Backend API" shape="box3d" style="dashed" color="oc-teal"]
-  strapi [label="Strapi" shape="box3d" style="dashed" color="oc-teal"]
-  db [label="Database" shape="cylinder" style="dashed" color="oc-grape"]
-  api -> db
-  strapi -> db
-}
 
-frontend [label="FreeSewing\nFrontend" shape="component" color="oc-violet"]
-user [label="User" shape="egg" color="oc-blue-2" style="filled"]
-extra [label="I am an example" shape="box" color="oc-pink-2"]
-dot [label="Me too!" shape="plaintext"]
+box1 [label="Plain" shape="box" color="oc-orange"]
+box2 [label="Boring!" shape="egg" color="oc-indigo"]
+box3 [label="Bleh" shape="box3d" color="oc-green"]
 
-extra -> dot
-dot -> db [lhead=cluster_pem dir=back]
-frontend -> api
-frontend -> strapi [color="oc-indigo"]
-user -> frontend
+box1 -> box2
+box1 -> box3 [dir=back style="dashed" label="Not a fan of this style"]
+box2 -> box3 
 
 ```
 An example graph using the **Dot** custom component
 </Dot>
 
-### Help with colors
+### Using colors
 
 Colors make everything prettier, but dot expects you to specify them as you would in
 HTML, and juggling all those hex-codes becomes a chore.
@@ -121,9 +109,14 @@ component will also override that with `currentColor` so that the default also
 works in dark mode
 </Note>
 
-### Translation
+### Using translation
 
-<Fixme>Not yet implemented</Fixme>
+While freesewing.dev is only available in English, you can also use this on
+freesewing.org which uses translation. 
+
+You can use the `i18n:` prefix followed by the translation key. For example
+`i18n:docs` will look up the `docs` key in the default namespace. Whereas
+`i18n:errors:example` will lookup the `example` keys in the `errors` namespace.
 
 ## Example
 
