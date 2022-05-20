@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# .env
+.env
+
 # Specifics
 export
 packages/plugin-theme/src/bundle.css.js

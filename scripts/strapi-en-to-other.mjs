@@ -1,8 +1,8 @@
+import 'dotenv/config'
 import axios from 'axios'
 
 const strapiHost = 'https://posts.freesewing.org'
 const languages = ['en', 'de', 'fr', 'es', 'nl']
-const token = "include your JWT token here (steal it from your browser after logging in to strapi)"
 
 const uris = {
   showcaseposts: `${strapiHost}/showcaseposts?_limit=-1`,
@@ -40,9 +40,30 @@ const suffix = {
  */
 
 /*
+ * We need to login and get the JWT token
+ */
+const login = async () => {
+  let result
+  const data = {
+    email: process.env.FS_STRAPI_USERNAME,
+    password: process.env.FS_STRAPI_PASSWORD,
+  }
+  try {
+    result = await axios.post(`${strapiHost}/admin/login`, data)
+    if (result?.data?.data?.token) return result.data.data.token
+  }
+  catch(err) {
+    console.log(err)
+    return false
+  }
+
+  return false
+}
+
+/*
  * Helper method for Authorization header
  */
-const bearer = () => ({
+const bearer = token => ({
   headers: { Authorization: 'Bearer ' + token }
 })
 
@@ -73,7 +94,7 @@ const getContent = async (type) => {
 /*
  * Adds translations for a showcase post
  */
-const addShowcasepostTranslations = item => {
+const addShowcasepostTranslations = (item, token) => {
   const promises = []
   for (const lang of languages) {
     if (lang !== 'en') {
@@ -86,8 +107,9 @@ const addShowcasepostTranslations = item => {
             title: `${item.content.title} [${suffix[lang]}]`,
             body: item.content.body,
             caption: item.content.caption,
+            translated: false,
           },
-          bearer()
+          bearer(token)
         )
         .then(res => {
         })
@@ -105,7 +127,7 @@ const addShowcasepostTranslations = item => {
 /*
  * Adds translations for a blog post
  */
-const addBlogpostTranslations = item => {
+const addBlogpostTranslations = (item, token) => {
   const promises = []
   for (const lang of languages) {
     if (lang !== 'en') {
@@ -119,8 +141,9 @@ const addBlogpostTranslations = item => {
             linktitle: item.content.linktitle,
             body: item.content.body,
             caption: item.content.caption,
+            translated: false,
           },
-          bearer()
+          bearer(token)
         )
         .then(res => {
         })
@@ -138,7 +161,7 @@ const addBlogpostTranslations = item => {
 /*
  * Adds translations for an author item
  */
-const addAuthorTranslations = item => {
+const addAuthorTranslations = (item, token) => {
   const promises = []
   for (const lang of languages) {
     if (lang !== 'en') {
@@ -150,7 +173,7 @@ const addAuthorTranslations = item => {
             locale: lang,
             about: item.content.about
           },
-          bearer()
+          bearer(token)
         )
         .then(res => {
         })
@@ -168,7 +191,7 @@ const addAuthorTranslations = item => {
 /*
  * Adds translations for a maker item
  */
-const addMakerTranslations = item => {
+const addMakerTranslations = (item, token) => {
   const promises = []
   for (const lang of languages) {
     if (lang !== 'en') {
@@ -180,7 +203,7 @@ const addMakerTranslations = item => {
             locale: lang,
             about: item.content.about
           },
-          bearer()
+          bearer(token)
         )
         .then(res => {
         })
@@ -198,23 +221,37 @@ const addMakerTranslations = item => {
 /*
  * One method to call that will add translations
  */
-const addTranslations = async (type, content) => {
-  if (type === 'showcaseposts') return await addShowcasepostTranslations(content)
-  if (type === 'blogposts') return await addBlogpostTranslations(content)
-  if (type === 'makers') return await addMakerTranslations(content)
-  if (type === 'authors') return await addAuthorTranslations(content)
+const addTranslations = async (type, content, token) => {
+  if (type === 'showcaseposts') return await addShowcasepostTranslations(content, token)
+  if (type === 'blogposts') return await addBlogpostTranslations(content, token)
+  if (type === 'makers') return await addMakerTranslations(content, token)
+  if (type === 'authors') return await addAuthorTranslations(content, token)
 
   return false
 }
 
 const getToWork = async () => {
+  if (!process.env.FS_STRAPI_USERNAME || !process.env.FS_STRAPI_PASSWORD) {
+    console.log(`
+    You need to set the following environment variables to run this script:
+
+     - FS_STRAPI_USERNAME
+     - FS_STRAPi_PASSWORD
+    `)
+    process.exit()
+  }
+  const token = await login()
+  if (!token) {
+    console.log('Failed to login to strapi')
+    process.exit()
+  }
   const content = {}
   const translations = languages.length - 1
   for (const type of Object.keys(uris)) {
     console.log(`Loading ${type} from Strapi`)
     content[type] = await getContent(type)
     for (const item of Object.values(content[type])) {
-      await addTranslations(type, item)
+      await addTranslations(type, item, token)
     }
   }
 
