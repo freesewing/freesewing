@@ -1,5 +1,7 @@
----
-title: Head ease
+- - -
+title: "Head ease"
+- - -
+
 ---
 
 La cantidad de facilidad alrededor de tu cabeza.
