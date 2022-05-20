@@ -1,6 +1,5 @@
 import path from 'path'
 import fs from 'fs'
-import i18nConfig from '../config/i18n.config.mjs'
 import rdir from 'recursive-readdir'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
@@ -91,7 +90,7 @@ export const prebuildMdx = async(site) => {
 
   // Loop over locales
   const pages = {}
-  for (const lang of (site === 'dev' ? ['en'] : i18nConfig.locales)) {
+  for (const lang of (site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de'])) {
 
     console.log(`  - Language: ${lang}`)
 

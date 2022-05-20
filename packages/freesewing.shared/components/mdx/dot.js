@@ -59,10 +59,9 @@ const Dot = props => {
       // Strip width/height so it's responsive
       svgRef.current.children[0].attributes.width.value = ""
       svgRef.current.children[0].attributes.height.value = ""
-      // Set style for theme support
-      svgRef.current.children[0].setAttribute('stroke', "currentColor")
+      // Add class for specific styling
+      svgRef.current.children[0].setAttribute('class', "no-fs")
     })
-
   }, [dot])
 
   return (
@@ -80,7 +79,7 @@ const Dot = props => {
           ref={svgRef}
           onClick={() => setZoom(!zoom)}
           className={zoom
-            ? 'svg-zoom non-fs-svg'
+            ? 'svg-zoom non-fs-svg text-base-content'
             : "dot shadow p-2 rounded -mt-8 hover:cursor-zoom-in text-base-content non-fs-svg"
           }
           dangerouslySetInnerHTML={{__html: svg}}
