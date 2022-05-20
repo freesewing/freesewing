@@ -1,6 +1,6 @@
----
+- - -
 title: "Simon shirt: Sewing Instructions"
----
+- - -
 
 <Tip>
 
