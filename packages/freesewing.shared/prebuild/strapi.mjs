@@ -80,6 +80,7 @@ export const prebuildStrapi = async(site) => {
       posts[lang][type] = await getPosts(type, site, lang)
       // Extract list of authors
       for (const [slug, post] of Object.entries(posts[lang][type])) {
+        if (!post.author?.slug) console.log(post)
         authors[type][post.author.slug] = post.author
         posts[lang][type][slug].author = post.author.slug
       }
