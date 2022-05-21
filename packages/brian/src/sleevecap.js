@@ -122,8 +122,9 @@ function draftSleevecap(part, run) {
     .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
     .curve(points.capQ4Cp2, points.bicepsLeft, points.bicepsLeft)
 
-  // Store sleevecap length
+  // Store sleevecap length & height
   store.set('sleevecapLength', paths.sleevecap.length())
+  store.set('sleevecapHeight', paths.sleevecap.edge('bottom').x - paths.sleevecap.edge('top').x)
   if (run === 0) {
     let armholeLength = store.get('frontArmholeLength') + store.get('backArmholeLength')
     let sleevecapEase = armholeLength * options.sleevecapEase
