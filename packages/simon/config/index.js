@@ -71,17 +71,6 @@ const config = {
     ],
   },
   measurements: [
-    'biceps',
-    'chest',
-    'hpsToWaistBack',
-    'waistToHips',
-    'neck',
-    'shoulderSlope',
-    'shoulderToShoulder',
-    'shoulderToWrist',
-    'wrist',
-  ],
-  measurements: [
     ...Brian.config.measurements,
     'waist',
     'hips',
