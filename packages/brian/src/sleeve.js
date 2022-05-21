@@ -15,15 +15,17 @@ export default (part) => {
     macro,
   } = part.shorthand()
 
+  // Determine the sleeve length
+  const len = measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
+  points.sleeveTip = paths.sleevecap.edge('top')
+  points.top = new Point(0, points.sleeveTip.y)
+  points.bottom = points.top.shift(-90, len)
+
   // Wrist
   let top = paths.sleevecap.bbox().topLeft.y
-  points.centerWrist = new Point(
-    0,
-    top + measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
-  )
+  points.centerWrist = points.bottom.clone()
   points.wristRight = points.centerWrist.shift(0, (measurements.wrist * (1 + options.cuffEase)) / 2)
   points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
-  points.sleeveTip = paths.sleevecap.shiftFractionAlong(0.5)
 
   // Paths
   paths.sleevecap.render = false
