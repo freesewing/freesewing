@@ -1,6 +1,7 @@
 import pkg from '../package.json'
+import Brian from '@freesewing/brian'
 
-export default {
+const config = {
   name: 'teagan',
   version: pkg.version,
   design: 'Joost De Cock',
@@ -8,52 +9,14 @@ export default {
   department: 'tops',
   type: 'pattern',
   difficulty: 2,
-  cut: {
-    front: [1, 'onFold'],
-    back: [1, 'onFold'],
-    sleeve: 2,
-  },
   optionGroups: {
     fit: ['chestEase', 'hipsEase', 'sleeveEase', 'draftForHighBust'],
     style: ['necklineWidth', 'necklineDepth', 'necklineBend', 'lengthBonus', 'sleeveLength'],
-    advanced: [
-      'acrossBackFactor',
-      'armholeDepthFactor',
-      'backNeckCutout',
-      {
-        sleevecap: [
-          'sleevecapEase',
-          'sleevecapTopFactorX',
-          'sleevecapTopFactorY',
-          'sleevecapBackFactorX',
-          'sleevecapBackFactorY',
-          'sleevecapFrontFactorX',
-          'sleevecapFrontFactorY',
-          'sleevecapQ1Offset',
-          'sleevecapQ2Offset',
-          'sleevecapQ3Offset',
-          'sleevecapQ4Offset',
-          'sleevecapQ1Spread1',
-          'sleevecapQ1Spread2',
-          'sleevecapQ2Spread1',
-          'sleevecapQ2Spread2',
-          'sleevecapQ3Spread1',
-          'sleevecapQ3Spread2',
-          'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2',
-        ],
-      },
-    ],
+    advanced: Brian.config.optionGroups.advanced,
   },
   measurements: [
-    'biceps',
-    'chest',
+    ...Brian.config.measurements,
     'hips',
-    'hpsToWaistBack',
-    'neck',
-    'shoulderSlope',
-    'shoulderToShoulder',
-    'waistToHips',
     'waist',
   ],
   optionalMeasurements: ['highBust'],
@@ -70,52 +33,30 @@ export default {
   },
   hide: ['base', 'sleevecap'],
   options: {
+    ...Brian.config.options,
+
     // Constants
-    brianFitCollar: false,
-    brianFitSleeve: true,
     bicepsEase: 0.05,
-    collarFactor: 4.8,
     shoulderEase: 0,
     collarEase: 0,
     shoulderSlopeReduction: 0,
     sleeveWidthGuarantee: 0.85,
     frontArmholeDeeper: 0.005,
 
-    // Boolean
-    draftForHighBust: { bool: false },
-
-    // Percentages
+    // Brian overrides
     chestEase: { pct: 12, min: 5, max: 25 },
+    sleeveLength: { pct: 30, min: 20, max: 100 },
+    lengthBonus: { pct: 5, min: -20, max: 60 },
+    backNeckCutout: { pct: 8, min: 4, max: 12 },
+
+    // Teagan specific
+    draftForHighBust: { bool: false },
     hipsEase: { pct: 18, min: 8, max: 30 },
     sleeveEase: { pct: 15, min: 5, max: 35 },
-    sleeveLength: { pct: 30, min: 20, max: 100 },
     necklineDepth: { pct: 25, min: 20, max: 40 },
     necklineWidth: { pct: 30, min: 10, max: 50 },
     necklineBend: { pct: 30, min: 0, max: 70 },
-    lengthBonus: { pct: 5, min: -20, max: 60 },
-    acrossBackFactor: { pct: 97, min: 93, max: 100 },
-    armholeDepthFactor: { pct: 65, min: 60, max: 70 },
-    backNeckCutout: { pct: 8, min: 4, max: 12 },
-
-    // Sleevecap (from brian)
-    sleevecapEase: { pct: 0, min: 0, max: 5 },
-    sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
-    sleevecapTopFactorY: { pct: 35, min: 30, max: 40 },
-    sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
-    sleevecapBackFactorY: { pct: 33, min: 30, max: 65 },
-    sleevecapFrontFactorX: { pct: 53, min: 35, max: 65 },
-    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65 },
-    sleevecapQ1Offset: { pct: 2, min: 0, max: 7 },
-    sleevecapQ2Offset: { pct: 3.5, min: 0, max: 7 },
-    sleevecapQ3Offset: { pct: 3, min: 0, max: 7 },
-    sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
-    sleevecapQ1Spread1: { pct: 6, min: 4, max: 20 },
-    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20 },
-    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20 },
-    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20 },
-    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20 },
-    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
-    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
-    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
   },
 }
+
+export default config
