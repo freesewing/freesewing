@@ -23,6 +23,19 @@ export default (part) => {
   for (const s in snippets) delete snippets[s]
   macro('scalebox', false)
 
+  // Determine the sleeve length
+  const len = measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
+  paths.sleevecap = new Path()
+    .move(points.bicepsRight)
+    ._curve(points.capQ1Cp1, points.capQ1)
+    .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
+    .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
+    .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
+    .curve_(points.capQ4Cp2, points.bicepsLeft)
+    .setRender(false)
+  points.top = new Point(0, paths.sleevecap.edge('top').y)
+  points.bottom = points.top.shift(-90, len)
+
   // Sleeve width depends on cuff style
   let width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
   if (
@@ -31,11 +44,11 @@ export default (part) => {
     options.cuffStyle === 'angledFrenchCuff'
   )
     width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap * 1.5)
-  points.wristRight.x = width / 2
-  points.wristLeft.x = width / -2
   const cuffLength = measurements.shoulderToWrist * options.cuffLength
-  points.wristRight = points.wristRight.shift(90, cuffLength)
-  points.wristLeft = points.wristLeft.shift(90, cuffLength)
+  points.wristRight = points.bottom
+    .shift(0, width / 2)
+    .shift(90, cuffLength)
+  points.wristLeft = points.wristRight.flipX()
 
   points.cuffMid = new Point(0, points.wristLeft.y)
   points.cuffLeftMid = points.cuffMid.shiftFractionTowards(points.wristLeft, 0.5)
