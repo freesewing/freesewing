@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/snapseries",
-  "version": "2.20.7",
+  "version": "2.20.8",
   "description": "A FreeSewing package for common values for snapped percentage options",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -34,9 +34,6 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "start": "rollup -c -w"
   },
-  "peerDependencies": {},
-  "dependencies": {},
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

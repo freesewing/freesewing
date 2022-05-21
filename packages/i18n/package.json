@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/i18n",
-  "version": "2.20.7",
+  "version": "2.20.8",
   "description": "Translations for the FreeSewing project",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -37,7 +37,6 @@
   "peerDependencies": {
     "@freesewing/pattern-info": "^2.20.7"
   },
-  "dependencies": {},
   "devDependencies": {
     "js-yaml": "^4.1.0"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/css-theme",
-  "version": "2.20.7",
+  "version": "2.20.8",
   "description": "A CSS theme for FreeSewing web UIs",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -32,14 +32,12 @@
     "start": "rollup -c -w",
     "watch": "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css"
   },
-  "peerDependencies": {},
   "dependencies": {
-    "open-color": "^1.7.0",
     "@fontsource/permanent-marker": "latest",
     "@fontsource/roboto-mono": "latest",
-    "@fontsource/ubuntu": "latest"
+    "@fontsource/ubuntu": "latest",
+    "open-color": "^1.7.0"
   },
-  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

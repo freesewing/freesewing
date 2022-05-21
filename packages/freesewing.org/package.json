@@ -1,6 +1,6 @@
 {
   "name": "freesewing.org",
-  "version": "2.20.7",
+  "version": "2.20.8",
   "private": true,
   "scripts": {
     "dev": "SITE=org node ../freesewing.shared/prebuild/index.mjs && next dev -p 3002",
@@ -38,7 +38,7 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.20.7"
+    "remark-jargon": "^2.20.8"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
