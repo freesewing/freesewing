@@ -38,7 +38,7 @@ Path.prototype.setRender = function (render = true) {
 /** Adds a move operation to Point to */
 Path.prototype.move = function (to) {
   if (to instanceof Point !== true)
-    this.raise.warning('Called `Path.rotate(to)` but `to` is not a `Point` object')
+    this.raise.warning('Called `Path.move(to)` but `to` is not a `Point` object')
   this.ops.push({ type: 'move', to })
 
   return this
