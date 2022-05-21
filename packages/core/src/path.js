@@ -218,7 +218,7 @@ Path.prototype.end = function () {
 
 /** Finds the bounding box of a path */
 Path.prototype.boundary = function () {
-  if (this.topLeft) return this // Cached
+  if (this.topOp) return this // Cached
 
   let current
   let topLeft = new Point(Infinity, Infinity)
