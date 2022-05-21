@@ -17,13 +17,12 @@ export default (part) => {
 
   // Determine the sleeve length
   const len = measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
-  points.sleeveTip = paths.sleevecap.edge('top')
-  points.top = new Point(0, points.sleeveTip.y)
-  points.bottom = points.top.shift(-90, len)
+  points.sleeveTip = paths.sleevecap.edge('top') // Can be out of center
+  points.sleeveTop = new Point(0, points.sleeveTip.y) // Always in center
 
   // Wrist
   let top = paths.sleevecap.bbox().topLeft.y
-  points.centerWrist = points.bottom.clone()
+  points.centerWrist = points.sleeveTop.shift(-90, len)
   points.wristRight = points.centerWrist.shift(0, (measurements.wrist * (1 + options.cuffEase)) / 2)
   points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
 
