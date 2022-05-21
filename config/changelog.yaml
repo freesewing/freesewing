@@ -1,4 +1,8 @@
 Unreleased:
+
+2.20.8:
+  date: 2022-05-21
+
   Added:
     brian:
       - Set `sleevecapHeight` value in store
@@ -6,17 +10,39 @@ Unreleased:
   Changed:
     brian:
       - Better defaults for sleevecap and armhole depth
+    huey:
+      - Better defaults for sleevecap and armhole depth
+      - Huey now extends the Brian config
     simon:
       - Better defaults for sleevecap and armhole depth
       - Slightly higher collar vs collar stand
+      - Simon now extends the Brian config
+    simone:
+      - Better defaults for sleevecap and armhole depth
+      - Slightly higher collar vs collar stand
+      - Simone now extends the Simon config
+    sven:
+      - Better defaults for sleevecap and armhole depth
+      - Sven now extends the Brian config
+    teagan:
+      - Better defaults for sleevecap and armhole depth
+      - Teagan now extends the Brian config
+    yuri:
+      - Better defaults for sleevecap and armhole depth
+      - Yuri now extends the Brian config
 
   Fixed:
     brian:
       - Adde both front and back armhole pitch points
         Closes [#2057](https://github.com/freesewing/freesewing/issues/2057)
+      - Fixed issue with the sleeve length
+    core:
+      - Fixed warning message when moving to a non-existing point
+      - Fixed incorrect decision in Path.boundary()
     simon:
-      - Keep better track of the sleeve length
-
+      - Fixed issue with the sleeve length
+    simone:
+      - Fixed issue with the sleeve length
     components:
       - Fix restore of pattern defaults in draft configurator
         Closes [#1932](https://github.com/freesewing/freesewing/issues/1932)
