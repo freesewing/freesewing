@@ -35,6 +35,9 @@
     "cibuild_step2": "node src/prebuild.js && rollup -c",
     "prebuild": "node src/prebuild.js"
   },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "dist/*",
     "README.md",

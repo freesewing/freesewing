@@ -35,8 +35,9 @@
     "prebuild": "node src/prebuild.mjs"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "^2.20.7"
+    "@freesewing/pattern-info": "^2.20.8"
   },
+  "dependencies": {},
   "devDependencies": {
     "js-yaml": "^4.1.0"
   },

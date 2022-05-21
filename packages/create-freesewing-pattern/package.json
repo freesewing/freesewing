@@ -28,9 +28,8 @@
     "start": "rollup -c -w",
     "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
   },
+  "peerDependencies": {},
   "dependencies": {
-    "@freesewing/i18n": "^2.20.8",
-    "@freesewing/pattern-info": "^2.20.8",
     "chalk": "^4.1.1",
     "commander": "^9.0.0",
     "conf": "^10.0.1",
@@ -47,8 +46,11 @@
     "p-each-series": "^2.2.0",
     "parse-git-config": "^3.0.0",
     "validate-npm-package-name": "^3.0.0",
-    "which": "^2.0.2"
+    "which": "^2.0.2",
+    "@freesewing/i18n": "^2.20.8",
+    "@freesewing/pattern-info": "^2.20.8"
   },
+  "devDependencies": {},
   "files": [
     "lib",
     "template",

@@ -41,6 +41,7 @@
     "report": "BABEL_ENV=production nyc report --reporter=html",
     "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
   },
+  "peerDependencies": {},
   "dependencies": {
     "bezier-js": "^4.1.1",
     "bin-pack": "^1.0.2",

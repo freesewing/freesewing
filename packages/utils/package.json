@@ -34,9 +34,11 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "axios": "^0.25.0",
-    "tlds": "^1.221.1"
+    "tlds": "^1.221.1",
+    "axios": "^0.25.0"
   },
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "backend/*",
     "camelCase/*",

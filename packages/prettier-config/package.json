@@ -20,6 +20,9 @@
   "scripts": {
     "build": "echo \"prettier-config: No build required\" && exit 0"
   },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
   "files": [
     "index.json",
     "package.json"

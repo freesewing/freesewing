@@ -1,6 +1,13 @@
 # Change log for: @freesewing/sven
 
 
+## 2.20.8 (2022-05-21)
+
+### Changed
+
+ - Better defaults for sleevecap and armhole depth
+ - Sven now extends the Brian config
+
 ## 2.20.0 (2022-01-24)
 
 ### Changed
