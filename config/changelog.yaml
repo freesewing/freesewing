@@ -1,9 +1,21 @@
 Unreleased:
+  Added:
+    brian:
+      - Set `sleevecapHeight` value in store
+
+  Changed:
+    brian:
+      - Better defaults for sleevecap and armhole depth
+    simon:
+      - Better defaults for sleevecap and armhole depth
+      - Slightly higher collar vs collar stand
 
   Fixed:
     brian:
       - Adde both front and back armhole pitch points
         Closes [#2057](https://github.com/freesewing/freesewing/issues/2057)
+    simon:
+      - Keep better track of the sleeve length
 
     components:
       - Fix restore of pattern defaults in draft configurator
