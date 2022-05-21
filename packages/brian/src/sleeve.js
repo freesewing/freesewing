@@ -1,5 +1,5 @@
 export default (part) => {
-  let {
+  const {
     store,
     sa,
     measurements,
@@ -16,15 +16,15 @@ export default (part) => {
   } = part.shorthand()
 
   // Determine the sleeve length
-  const len = measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
-  points.sleeveTip = paths.sleevecap.edge('top') // Can be out of center
+  store.set('sleeveLength', measurements.shoulderToWrist * (1 + options.sleeveLengthBonus))
+  points.sleeveTip = paths.sleevecap.edge('top')
   points.sleeveTop = new Point(0, points.sleeveTip.y) // Always in center
 
   // Wrist
-  let top = paths.sleevecap.bbox().topLeft.y
-  points.centerWrist = points.sleeveTop.shift(-90, len)
+  points.centerWrist = points.sleeveTop.shift(-90, store.get('sleeveLength'))
   points.wristRight = points.centerWrist.shift(0, (measurements.wrist * (1 + options.cuffEase)) / 2)
   points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
+
 
   // Paths
   paths.sleevecap.render = false
