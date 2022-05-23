@@ -72,6 +72,7 @@ export const prebuildStrapi = async(site) => {
   const posts = {}
   const authors = {}
   for (const type of types) {
+    console.log(`${type}:`)
     authors[type] = {}
     // Loop over locales
     for (const lang of (site === 'dev' ? ['en'] : ['en', 'es', 'de', 'fr', 'nl'])) {
@@ -80,9 +81,15 @@ export const prebuildStrapi = async(site) => {
       posts[lang][type] = await getPosts(type, site, lang)
       // Extract list of authors
       for (const [slug, post] of Object.entries(posts[lang][type])) {
-        if (!post.author?.slug) console.log(post)
-        authors[type][post.author.slug] = post.author
-        posts[lang][type][slug].author = post.author.slug
+        if (type === 'blog') {
+          if (!post.author?.id) console.log(post)
+          authors[type][post.author.slug] = post.author
+          posts[lang][type][slug].author = post.author.slug
+        } else {
+          if (!post.maker?.id) console.log(post)
+          authors[type][post.maker.displayname] = post.maker
+          posts[lang][type][slug].maker = post.maker.dispayname
+        }
       }
       // Write to disc, one file for the index page, one file for each post
       fs.writeFileSync(
