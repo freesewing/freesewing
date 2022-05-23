@@ -68,7 +68,7 @@
     "form-data": "^4.0.0",
     "formidable": "2.0.1",
     "jsonwebtoken": "8.5.1",
-    "jszip": "3.9.1",
+    "jszip": "3.10.0",
     "mdast-util-to-string": "2",
     "mocha": "^8.3.2",
     "mongodb-memory-server": "^8.3.0",
