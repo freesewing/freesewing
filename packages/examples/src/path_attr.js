@@ -10,7 +10,7 @@ export default (part) => {
     .move(points.B)
     .curve(points.BCp2, points.CCp1, points.C)
     .attr('class', 'canvas')
-    .attr('data-text', 'freesewingIsMadeByJoostDeCockAndContributors')
+    .attr('data-text', 'supportFreesewingBecomeAPatron')
     .attr('data-text-class', 'text-xs center')
 
   return part
