@@ -40,7 +40,7 @@
     "strapi-plugin-users-permissions": "3.6.8",
     "strapi-plugin-email": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
-    "strapi-plugin-i18n": "3.6.8",
+    "strapi-plugin-i18n": "3.6.10",
     "strapi-connector-mongoose": "3.6.10"
   },
   "devDependencies": {},
