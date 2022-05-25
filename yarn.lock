@@ -25283,10 +25283,10 @@ stdout-stream@^1.4.0:
   dependencies:
     readable-stream "^2.0.1"
 
-strapi-admin@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.yarnpkg.com/strapi-admin/-/strapi-admin-3.6.8.tgz#0000f07c8004c7110b49abb1757f50ab9d751a92"
-  integrity sha512-LqOzAE27eJZAfCgW1KQipESfL2PMumej5CS8dBdu+PHMsn270gKdZceA4vLBYix5OkkNnsKcioTzK1/uyWYpdg==
+strapi-admin@3.6.10:
+  version "3.6.10"
+  resolved "https://registry.yarnpkg.com/strapi-admin/-/strapi-admin-3.6.10.tgz#fd0252ced1306568a20b95196922157edde4d7f5"
+  integrity sha512-Q8InzFDEWwjk/AGVGMFXJKrupaWCBSnl92MacXpCa1qwrmuIrKYory1Vfqno5UJfNp8RJf6NFD8oEUwZrqmBOg==
   dependencies:
     "@babel/core" "^7.14.0"
     "@babel/plugin-proposal-async-generator-functions" "^7.13.15"
@@ -25375,8 +25375,8 @@ strapi-admin@3.6.8:
     sanitize.css "^4.1.0"
     semver "7.3.5"
     sift "13.5.0"
-    strapi-helper-plugin "3.6.8"
-    strapi-utils "3.6.8"
+    strapi-helper-plugin "3.6.10"
+    strapi-utils "3.6.10"
     style-loader "^0.23.1"
     styled-components "^5.2.3"
     terser-webpack-plugin "^1.2.3"
