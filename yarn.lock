@@ -25663,15 +25663,15 @@ strapi-plugin-email@3.6.8:
     strapi-provider-email-sendmail "3.6.8"
     strapi-utils "3.6.8"
 
-strapi-plugin-i18n@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-i18n/-/strapi-plugin-i18n-3.6.8.tgz#2e4d7f96923defa3525204846ccafbb9f15d1b11"
-  integrity sha512-741hMHEJQ+Yji5TPxTkw32PZnfp692LjeQjPzROWIPHD8JZ3nG7xpbaF/cUsV86jOCveeBV76oHutI5qBWn3rA==
+strapi-plugin-i18n@3.6.10:
+  version "3.6.10"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-i18n/-/strapi-plugin-i18n-3.6.10.tgz#e3eb4b8d28c6102b6d58aac1186bfe16ef14691f"
+  integrity sha512-uM2dTf/R66OeveOyQYySr4IejMcOute7xkVm6PHcl9++2RR4WFjNuT11G0oFWvJs+lmmQc7DqlegRwx+ou+TUg==
   dependencies:
     lodash "4.17.21"
     p-map "4.0.0"
     pluralize "8.0.0"
-    strapi-utils "3.6.8"
+    strapi-utils "3.6.10"
 
 strapi-plugin-upload@3.6.8:
   version "3.6.8"
