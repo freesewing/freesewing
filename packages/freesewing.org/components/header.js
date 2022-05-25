@@ -46,6 +46,8 @@ const Header = ({ app, setSearch }) => {
         z-30
         transition-transform
         ${show ? '': 'fixed top-0 left-0 -translate-y-20'}
+        drop-shadow-xl
+        ${app.loading ? "theme-gradient loading" : ""}
       `}>
         <div className="max-w-6xl m-auto">
           <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
@@ -55,23 +57,38 @@ const Header = ({ app, setSearch }) => {
                 text-neutral-content bg-transparent
                 border border-transparent
                 hover:bg-transparent hover:border-base-100
-                sm:hidden
+                md:hidden
                 h-12
               `}
               onClick={app.togglePrimaryMenu}>
                 {app.primaryMenu
-                  ? <><CloseIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Left />swipe</span></>
-                  : <><MenuIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Right />swipe</span></>
+                  ? (
+                    <>
+                      <CloseIcon />
+                      <span className="opacity-50 pl-2 flex flex-row items-center gap-1">
+                        <Left />
+                        swipe
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <MenuIcon />
+                      <span className="opacity-50 pl-2 flex flex-row items-center gap-1">
+                        <Right />
+                        swipe
+                      </span>
+                    </>
+                  )
                 }
             </button>
-            <div className="flex flex-row gap-2 sm:hidden">
+            <div className="flex flex-row gap-2 md:hidden">
               <button className="btn btn-sm btn h-12 px-12" onClick={() => setSearch(true)}>
                 <SearchIcon />
               </button>
             </div>
             <button className={`
               btn btn-sm h-12
-              hidden sm:flex
+              hidden md:flex
               flex-row gap-1 mr-4 w-64 px-2
               bg-base-100 text-base-content
               hover:bg-base-100 hover:text-base-content
@@ -90,17 +107,16 @@ const Header = ({ app, setSearch }) => {
                 </a>
               </Link>
               <Link href="/">
-                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12">
-                  freesewing.dev
+                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12 font-normal lowercase text-2xl">
+                  <span className="font-black px-1 normal-case">FreeSewing</span>.org
                 </a>
               </Link>
             </div>
-            <div className="hidden sm:flex flex-row items-center">
+            <div className="hidden md:flex flex-row items-center">
               <ThemePicker app={app} />
             </div>
           </div>
         </div>
-        <div className={`theme-gradient h-1 w-full z-10 relative -mb-1 ${app.loading ? 'loading' : ''}`}></div>
       </header>
   )
 }

@@ -19,7 +19,7 @@ const config = {
     // YAML support
     config.module.rules.push({
       test: /\.ya?ml$/,
-      type: 'json',
+      type: 'yaml',
       use: 'yaml-loader'
     })
 

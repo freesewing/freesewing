@@ -1,37 +1,86 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
+import Link from 'next/link'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+import Layout from 'site/components/layouts/bare'
+import Navigation, { Icons } from 'shared/components/navigation/primary'
 
 const HomePage = (props) => {
   const app = useApp()
+  const { t, i18n } = useTranslation(['ograph'])
+  const { language } = i18n
+
   return (
-    <Page app={app} title="Welcome to FreeSewing.org">
+    <Page app={app} title="Welcome to FreeSewing.org" layout={Layout}>
       <Head>
         <meta property="og:title" content="FreeSewing.org" key="title" />
         <meta property="og:type" content="article" key='type' />
-        <meta property="og:description" content="Made-to-measure sewing patterns. Free and Open Source" key='description' />
+        <meta property="og:description" content={t('og:orgDesc')} key='description' />
         <meta property="og:article:author" content='Joost De Cock' key='author' />
-        <meta property="og:image" content="https://canary.backend.freesewing.org/og-img/en/org/" key='image' />
+        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/${language}/org/`} key='image' />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://freesewing.org/" key='url' />
-        <meta property="og:locale" content="en_US" key='locale' />
+        <meta property="og:locale" content={language} key='locale' />
         <meta property="og:site_name" content="freesewing.org" key='site' />
       </Head>
-      <div className="max-w-screen-md">
-        <p>
-          FreeSewing.dev hosts documentation for contributors and developers alike.
-          <br />
-          For our maker site, and to try our platform, go
-          to <a
-            href="https://freesewing.org/"
-            title="Go to FreeSewing.org"
-            className="text-secondary font-bold"
-          >freesewing.org</a>.
-        </p>
-
+        <section
+          style={{
+            backgroundImage: "url('/img/splash.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: '40% 50%',
+          }}
+          className="m-0 p-0 shadow drop-shadow-lg w-full mb-8"
+        >
+          <div className="mx-auto px-8 flex flex-col items-center justify-center min-h-screen lg:min-h-0 lg:py-96">
+            <div className="flex flex-col items-end max-w-4xl">
+              <h1
+                className={`
+                  text-4xl font-black text-right px-4
+                  sm:text-6xl
+                  md:text-7xl px-6
+                  lg:px-8
+                  bg-primary
+                  `}
+                style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
+              >
+                FreeSewing
+                <span className="font-light">.org</span>
+              </h1>
+              <h2
+                className={`
+                  text-right text-2xl mr-0
+                  sm:text-3xl
+                  md:text-4xl
+                  lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
+                style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
+                dangerouslySetInnerHTML={{ __html: t('orgDescription')}}
+              />
+            </div>
+            <Icons app={app}  active='/'
+              ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
+              liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-24"
+              linkClasses={`
+                text-lg lg:text-xl py-1 text-secondary
+                hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
+                flex flex-col items-center capitalize`}
+            />
+            <p className="text-neutral-content text-center mt-8">
+              To learn more about FreeSewing and try our platform
+              go to <a
+                href="https://freesewing.org/"
+                title="Go to FreeSewing.org"
+                className="text-secondary font-bold"
+              >freesewing.org</a>
+            </p>
+          </div>
+        </section>
+      <div>
+      <div className="max-w-7xl m-auto my-32">
         <div className="bg-cover bg-neutral w-full bg-center rounded-lg shadow p-4 "
           style={{backgroundImage: "url(/support.jpg)"}}
         >
@@ -46,10 +95,36 @@ const HomePage = (props) => {
           </p>
           <a role="button" className="btn btn-accent btn-wide ml-4 mb-8" href="https://freesewing.org/patrons/join">Become a Patron</a>
         </div>
+      </div>
+      <div className="max-w-7xl m-auto my-32">
+        <div className="px-8 text-base-content">
+          <Icons app={app}
+            active='/'
+            ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
+            liClasses="w-1/3 my-4 lg:mx-2 lg:w-24"
+            linkClasses={`
+              text-lg lg:text-xl py-1 text-base-content
+              hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
+              flex flex-col items-center capitalize`}
+          />
+        </div>
+      </div>
+      <div className="max-w-xl m-auto my-32">
         <HelpUs slug='/' />
       </div>
+    </div>
+
     </Page>
   )
 }
 
 export default HomePage
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations('en')),
+    }
+  }
+}
+

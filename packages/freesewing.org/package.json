@@ -3,8 +3,8 @@
   "version": "2.20.8",
   "private": true,
   "scripts": {
-    "dev": "SITE=org node ../freesewing.shared/prebuild/index.mjs && next dev -p 3002",
-    "develop": "SITE=org node ../freesewing.shared/prebuild/index.mjs && next dev -p 3002",
+    "dev": "SITE=org next dev -p 3002",
+    "develop": "SITE=org next dev -p 3002",
     "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.mjs",
     "build": "next build",
     "export": "yarn prebuild && next build && next export",
