@@ -10,9 +10,10 @@ import BoxIcon from 'shared/components/icons/box.js'
 import CogIcon from 'shared/components/icons/cog.js'
 import UserIcon from 'shared/components/icons/user.js'
 import CommunityIcon from 'shared/components/icons/community.js'
+import ShowcaseIcon from 'shared/components/icons/camera.js'
 
 // Don't show children for blog and showcase posts
-const keepClosed = ['blog', 'showcase', ]
+const keepClosed = ['blog', 'showcase' ]
 
 // TODO: For now we force tailwind to pickup these styles
 // At some point this should 'just work' though, but let's not worry about it now
@@ -34,7 +35,7 @@ const icons = {
   guides: (className='') => <GuideIcon className={className}/>,
   howtos: (className='') => <HelpIcon className={className}/>,
   reference: (className='') => <DocsIcon className={className}/>,
-  showcase: (className='') => <DocsIcon className={className}/>,
+  showcase: (className='') => <ShowcaseIcon className={className}/>,
   tutorials: (className='') => <TutorialIcon className={className}/>,
   utilities: (className='') => <CogIcon className={className}/>,
 }
