@@ -10,11 +10,11 @@ import { useTranslation } from 'next-i18next'
 /*
  * Helper method for a simple navigation item
  */
-const simpleNav = (term, t, lng, prefix='') => ({
+const simpleNav = (term, t, lng, prefix='', order='') => ({
   __title: t(term, { lng }),
   __linktitle: t(term, { lng }),
   __slug: prefix+term,
-  __order: t(term, { lng })
+  __order: order+t(term, { lng })
 })
 
 /*
@@ -22,7 +22,7 @@ const simpleNav = (term, t, lng, prefix='') => ({
  * Static means not mdx, not strapi
  */
 const staticNavigation = (t, lang) => ({
-  designs: simpleNav('designs', t, lang),
+  designs: simpleNav('designs', t, lang, '', 'A'),
   community: simpleNav('community', t, lang),
   account: simpleNav('account', t, lang),
 })
@@ -30,10 +30,22 @@ const staticNavigation = (t, lang) => ({
 /*
  * Merges prebuild navigation with the static navigation
  */
-const buildNavigation = (lang, t) => ({
-  ...prebuildNavigation[lang],
-  ...staticNavigation(t, lang),
-})
+const buildNavigation = (lang, t) => {
+  const nav = {
+    ...prebuildNavigation[lang],
+    ...staticNavigation(t, lang),
+  }
+
+  // Set top-level order
+  nav.designs.__order = 'a'
+  nav.showcase.__order = 'b'
+  nav.docs.__order = 'c'
+  nav.community.__order = 'd'
+  nav.blog.__order = 'e'
+  nav.account.__order = 'f'
+
+  return nav
+}
 
 /*
  * The actual hook
