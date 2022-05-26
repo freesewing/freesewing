@@ -27,14 +27,14 @@ export const prebuildNavigation = (mdxPages, strapiPosts, site) => {
     }
 
     // Handle strapi content
-    for (const type in strapiPosts[lang]) {
+    for (const type in strapiPosts) {
       set(nav, [lang, type], {
         __title: type,
         __linktitle: type,
         __slug: type,
         __order: type,
       })
-      for (const [slug, page] of Object.entries(strapiPosts[lang][type])) {
+      for (const [slug, page] of Object.entries(strapiPosts[type][lang])) {
         const chunks = slug.split('/')
         set(nav, [lang, type, ...chunks], {
           __title: page.title,
