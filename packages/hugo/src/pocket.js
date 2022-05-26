@@ -13,10 +13,12 @@ export default function (part) {
     .attr('class', 'fabric', true)
   paths.seam.render = true
 
-  paths.saBase = new Path()
+  paths.saBase =  new Path()
     .move(points.cfRibbing)
     .line(points.pocketHem)
-    .join(paths.seam.split(points.pocketCf).shift())
+    .line(points.pocketTip)
+    ._curve(points.pocketTopCp, points.pocketTop)
+    .line(points.pocketCf)
     .setRender(false)
 
   store.set('facingWidth', points.pocketHem.dist(points.pocketTip) / 2)

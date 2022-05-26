@@ -1,5 +1,8 @@
 Unreleased:
-  Added:
+  Fixed:
+    hugo:
+      - Fix incorrect seam allowance
+        Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
 
 2.20.8:
   date: 2022-05-21
