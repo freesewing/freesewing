@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sven sweatshirt: Sewing Instructions"
-- - -
+---
 
 ### Stap 1: Sluit de schoudernaden
 

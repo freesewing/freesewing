@@ -47,7 +47,9 @@ const Header = ({ app }) => {
         w-full
         z-30
         transition-transform
+        drop-shadow-xl
         ${show ? '': 'fixed top-0 left-0 -translate-y-20'}
+        ${app.loading ? "theme-gradient loading" : ""}
       `}>
         <div className="max-w-6xl m-auto">
           <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
@@ -57,7 +59,7 @@ const Header = ({ app }) => {
                 text-neutral-content bg-transparent
                 border border-transparent
                 hover:bg-transparent hover:border-base-100
-                sm:hidden
+                md:hidden
                 h-12
               `}
               onClick={app.togglePrimaryMenu}>
@@ -66,29 +68,23 @@ const Header = ({ app }) => {
                   : <><MenuIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Right />swipe</span></>
                 }
             </button>
-            <div className="hidden sm:flex flex-row items-center">
+            <div className="hidden md:flex flex-row items-center">
               <PatternPicker app={app} />
               <VersionPicker app={app} />
             </div>
             <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">
-                <a className="flex flex-column items-center">
-                  <Logo size={36} fill="currentColor" stroke={false} />
-                </a>
-              </Link>
-              <Link href="/">
-                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12">
-                  lab.freesewing.dev
+                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12 font-normal lowercase text-2xl">
+                  lab.<span className="font-black px-1 normal-case">FreeSewing</span>.dev
                 </a>
               </Link>
             </div>
-            <div className="hidden sm:flex flex-row items-center">
+            <div className="hidden md:flex flex-row items-center">
               <ThemePicker app={app} />
               <LocalePicker app={app} />
             </div>
           </div>
         </div>
-        <div className={`theme-gradient h-1 w-full z-10 relative -mb-1 ${app.loading ? 'loading' : ''}`}></div>
       </header>
   )
 }

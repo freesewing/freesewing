@@ -1,5 +1,8 @@
-![Bouton supplémentaire pour poignet classique](./barrelcuffnarrowbutton.svg)
+---
+title: "Cuff narrow button"
+---
 
+![Bouton supplémentaire pour poignet classique](./barrelcuffnarrowbutton.svg)
 
 Voulez-vous un bouton en plus pour que le boutonnage de votre poignet soit plus serré ?
 
@@ -12,4 +15,5 @@ Cela ne s'applique qu'aux poignets classiques. Donc si vous avez choisi un poign
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_barrelcuffnarrowbutton_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")

@@ -1,13 +1,13 @@
 // See: https://github.com/isaachinman/next-i18next
 
-const i18n = {
+const i18n = (locales = ['en', 'de', 'es', 'fr', 'nl']) => ({
   defaultLocale: 'en',
-  locales: ['en', 'de', 'es', 'fr', 'nl'],
+  locales,
   defaultNS: 'app',
   interpolation: {
     prefix: '{',
     suffix: '}',
   }
-}
+})
 
 export default i18n

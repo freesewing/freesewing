@@ -28,7 +28,7 @@ Pattern.prototype.draftSleeveBase = function (part) {
 }
 
 // Attach draft methods from Simon
-let simonParts = [
+const simonParts = [
   'Back',
   'Front',
   'FrontRight',
@@ -44,7 +44,7 @@ let simonParts = [
   'Cuff',
 ]
 
-for (let Part of simonParts) {
+for (const Part of simonParts) {
   Pattern.prototype[`draft${Part}`] = function (part) {
     let simon = new Simon(this.settings)
     return simon[`draft${Part}`](part)

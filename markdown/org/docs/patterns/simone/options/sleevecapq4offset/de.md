@@ -1,3 +1,7 @@
+---
+title: "Sleevecap Q4 offset"
+---
+
 ![Der Versatz im vierten Quartal der Ärmel](./sleevecapq4offset.svg)
 
 Diese Option steuert den Versatz im vierten Quadranten der Ärmel.
@@ -9,4 +13,5 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 </Tip>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_sleevecapq4offset_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_sleevecapq4offset_sample.svg "Effect of this option on the pattern")

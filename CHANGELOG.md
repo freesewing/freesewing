@@ -1,6 +1,92 @@
 # Change log for: FreeSewing (global)
 
 
+## Unreleased
+
+
+## 2.20.8 (2022-05-21)
+
+### brian
+
+#### Added
+
+ - Set `sleevecapHeight` value in store
+
+#### Changed
+
+ - Better defaults for sleevecap and armhole depth
+
+#### Fixed
+
+ - Adde both front and back armhole pitch points Closes [#2057](https://github.com/freesewing/freesewing/issues/2057)
+ - Fixed issue with the sleeve length
+
+### components
+
+#### Fixed
+
+ - Fix restore of pattern defaults in draft configurator Closes [#1932](https://github.com/freesewing/freesewing/issues/1932)
+
+### core
+
+#### Fixed
+
+ - Fixed warning message when moving to a non-existing point
+ - Fixed incorrect decision in Path.boundary()
+
+### huey
+
+#### Changed
+
+ - Better defaults for sleevecap and armhole depth
+ - Huey now extends the Brian config
+
+### simon
+
+#### Changed
+
+ - Better defaults for sleevecap and armhole depth
+ - Slightly higher collar vs collar stand
+ - Simon now extends the Brian config
+
+#### Fixed
+
+ - Fixed issue with the sleeve length
+
+### simone
+
+#### Changed
+
+ - Better defaults for sleevecap and armhole depth
+ - Slightly higher collar vs collar stand
+ - Simone now extends the Simon config
+
+#### Fixed
+
+ - Fixed issue with the sleeve length
+
+### sven
+
+#### Changed
+
+ - Better defaults for sleevecap and armhole depth
+ - Sven now extends the Brian config
+
+### teagan
+
+#### Changed
+
+ - Better defaults for sleevecap and armhole depth
+ - Teagan now extends the Brian config
+
+### yuri
+
+#### Changed
+
+ - Better defaults for sleevecap and armhole depth
+ - Yuri now extends the Brian config
+
+
 ## 2.20.7 (2022-02-20)
 
 ### components

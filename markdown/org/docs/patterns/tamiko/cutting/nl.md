@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: Cutting Instructions"
-- - -
+---
 
 - **Buitenstof**
   - Knip **1 Tamiko top** aan de stofvouw

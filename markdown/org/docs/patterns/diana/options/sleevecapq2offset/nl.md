@@ -1,3 +1,7 @@
+---
+title: "Sleevecap Q2 offset"
+---
+
 ![De compensatie in het tweede kwartaal van de mouwkop](./sleevecapq2offset.svg)
 
 Deze optie bepaalt de offset in de tweede quadrant van de mouwkop.
@@ -10,4 +14,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_sleevecapq2offset_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_sleevecapq2offset_sample.svg "Effect of this option on the pattern")

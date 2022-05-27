@@ -1,5 +1,8 @@
-![Botón estrecho de corte de cañón](./barrelcuffnarrowbutton.svg)
+---
+title: "Cuff narrow button"
+---
 
+![Botón estrecho de corte de cañón](./barrelcuffnarrowbutton.svg)
 
 ¿Quieres un botón adicional para subir el corte más fuertemente?
 
@@ -12,4 +15,5 @@ Esto sólo se aplica a los barriles. Así que si eliges un corte francés como e
 </Note>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_barrelcuffnarrowbutton_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")

@@ -1,9 +1,9 @@
-- - -
-- - -
+---
+---
 
 #### Neugierig, wie das hier funktioniert?
 
-FreeSewing ist in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) geschrieben. Unsere [Core Library](https://www.npmjs.com/package/@freesewing/core) und [Schnittmuster](/patterns) sind sowohl für [NodeJS](https://nodejs.org/) als auch den Browser verfügbar.
+FreeSewing ist in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) geschrieben. Our [core library](https://www.npmjs.com/package/@freesewing/core) and [patterns](/patterns) are available both for [NodeJS](https://nodejs.org/) and the browser.
 
 Unsere Webseiten werden mit [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) erstellt und freundlicherweise von [Netlify](https://www.netlify.com/) gehostet.
 
@@ -19,10 +19,9 @@ Unsere [Entwicklerdokumentation](https://freesewing.dev) ist unter [freesewing.d
 
 #### Willst du mithelfen?
 
-Klasse ❤️   
-Am schnellsten geht das, indem du [uns auf Discord besuchst](https://discord.freesewing.org/) -- dort hängen auch die ganzen anderen Mitwirkenden ab.
+Awesome ❤️\
+The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
 
 Wenn du dir nicht sicher bist, wie du mitwirken kannst, schau dir die verschiedenen [Möglichkeiten zum Mitwirken](https://freesewing.dev/howtos/ways-to-contribute) an, du wirst sehen, dass es sicher etwas gibt, wo du helfen kannst.
 
 Wir haben auch konkrete Anleitungen für [Übersetzer/-innen](https://freesewing.dev/guides/translation) und [Redakteur/-innen](https://freesewing.dev/howtos/editors).
-

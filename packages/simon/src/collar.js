@@ -16,7 +16,7 @@ export default (part) => {
 
   const draft = function (tweak = 1) {
     const length = measurements.neck * (1 + options.collarEase - options.collarGap) * tweak
-    const width = store.get('collarStandWidth') * (1 + options.collarRoll)
+    const width = store.get('collarStandWidth') * 1.2 * (1 + options.collarRoll)
 
     // Draft right side
     points.topMid = new Point(0, 0)

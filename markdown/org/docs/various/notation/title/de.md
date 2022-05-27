@@ -15,4 +15,3 @@ Example of a title
 Wenn Sie ein Muster auf freesewing.org generieren, wird der Titel auch den Namen der Person enthalten, für die das Muster erstellt wurde.
 
 </Note>
-

@@ -1,3 +1,6 @@
+---
+title: "Draft for high bust"
+---
 
 Choose this option to draft Teagan to your high bust measurement, rather than your full chest circumference.
 
@@ -14,4 +17,5 @@ Cette option n'a aucun effet lorsqu'il n'y a pas de mesure de poitrine élevée 
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_draftforhighbust_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_draftforhighbust_sample.svg "Effect of this option on the pattern")

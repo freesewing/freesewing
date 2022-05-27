@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Sewing Instructions"
-- - -
+---
 
 ## Stap 1: Sluit de schoudernaden
 

@@ -1,3 +1,7 @@
+---
+title: "Collar roll"
+---
+
 ![Repli du col](collarroll.svg)
 
 Combien le collier est plus grand que le collier au centre du dos.
@@ -13,4 +17,5 @@ Augmenter cela ne fait pas augmenter le collier (utiliser la hauteur du collier 
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarroll_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarroll_sample.svg "Effect of this option on the pattern")

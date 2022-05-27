@@ -1,3 +1,7 @@
+---
+title: "Center back dart"
+---
+
 ![Centroretroceso](centerbackdart.svg)
 
 Puesto que nadie tiene una perfectamente recta, este patrón se atenúa con 0,5 cm en la parte central de la parte trasera del cuello.
@@ -16,4 +20,5 @@ Técnicamente esto no es un dardo, pero no estaba seguro de cómo llamarlo. Suge
 </Note>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_centerbackdart_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")

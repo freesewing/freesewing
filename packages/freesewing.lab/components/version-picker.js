@@ -24,10 +24,10 @@ const PatternPicker = ({ app }) => {
   const version = useVersion()
 
   return (
-      <div className="dropdown">
+      <div className="dropdown w-full md:w-auto">
         <div tabIndex="0" className={`
-          m-0 btn btn-neutral flex flex-row gap-2
-          sm:btn-ghost
+          m-0 btn btn-neutral flex flex-row gap-2 btn-outline
+          md:btn-ghost
           hover:bg-neutral hover:border-neutral-content
         `}>
           <VersionsIcon />

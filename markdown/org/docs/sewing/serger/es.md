@@ -14,4 +14,4 @@ Los sargentos utilizan múltiples hilos y agujas para no sólo hacer la costura,
 > 
 > Se añade más confusión por el hecho de que algunas máquinas de coser tienen un desbordamiento que imita el papel de un serger.
 > 
-> Para evitar todo esto, utilizo serger para referirse a la máquina dedicada. 
+> Para evitar todo esto, utilizo serger para referirse a la máquina dedicada.

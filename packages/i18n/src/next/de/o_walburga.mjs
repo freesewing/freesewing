@@ -3,18 +3,18 @@
  * All edits will be overwritten on the next (pre)build
  */
 const o_walburga = {
-  "headRatio.t": "Head ratio",
-  "headRatio.d": "Controls the size of the head opening",
+  "headRatio.t": "Kopfgrößenverhältnis",
+  "headRatio.d": "Steuert die Größe der Kopföffnung",
   "lengthBonus.t": "Längenzugabe",
-  "lengthBonus.d": "Allows variation of the length of the garment",
+  "lengthBonus.d": "Erlaubt Variation der Länge des Kleidungsstücks",
   "widthBonus.t": "Breitenzugabe",
-  "widthBonus.d": "Allows variation of the width of the garment",
+  "widthBonus.d": "Erlaubt Variation der Breite des Kleidungsstücks",
   "length.t": "Länge",
   "length.d": "Steuert die Länge des Kleidungsstückes",
-  "neckoRatio.t": "Neck opening shape",
-  "neckoRatio.d": "controls the shape of the neck opening",
-  "neckline.t": "Neckline",
-  "neckline.d": "Controls whether or not to draft a neck opening"
+  "neckoRatio.t": "Form des Halsausschnittes",
+  "neckoRatio.d": "Steuert die Form des Halsausschnittes",
+  "neckline.t": "Halsausschnitt",
+  "neckline.d": "Bestimmt, ob ein Halsausschnit erstellt werden soll oder nicht"
 }
 
 export default o_walburga

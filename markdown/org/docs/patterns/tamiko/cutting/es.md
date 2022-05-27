@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: Cutting Instructions"
-- - -
+---
 
 - **Tela principal**
   - Corta **1 Tamiko superior** en el pliegue

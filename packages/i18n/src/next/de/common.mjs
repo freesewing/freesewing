@@ -3,9 +3,9 @@
  * All edits will be overwritten on the next (pre)build
  */
 const common = {
-  "designs": "Designs",
-  "sloganCome": "Come for the sewing patterns",
-  "sloganStay": "Stay for the community"
+  "designs": "Entwurf",
+  "sloganCome": "Komm für die Schnittmuster",
+  "sloganStay": "Bleib für die Community"
 }
 
 export default common

@@ -1,6 +1,8 @@
+---
+title: "Start of the cross seam curve"
+---
 
 Controla el inicio de la curva de costura cruzada.
-
 
 <Note>
 
@@ -14,4 +16,5 @@ La gente con un álbum redondo puede querer bajar esto para crear un poco más (
 </Note>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](titan_crossseamcurvestart_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](titan_crossseamcurvestart_sample.svg "Effect of this option on the pattern")

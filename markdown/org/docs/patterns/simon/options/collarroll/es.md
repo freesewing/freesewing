@@ -1,3 +1,7 @@
+---
+title: "Collar roll"
+---
+
 ![Vuelta del cuello](collarroll.svg)
 
 Cuánto el cuello es más alto que el cuello se encuentra en el centro de la espalda.
@@ -15,4 +19,5 @@ Incrementar esto no hace que el cuello sea más alto (use la altura del cuello p
 </Note>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarroll_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_collarroll_sample.svg "Effect of this option on the pattern")

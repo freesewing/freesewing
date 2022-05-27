@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/i18n",
-  "version": "2.20.7",
+  "version": "2.20.8",
   "description": "Translations for the FreeSewing project",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,7 +35,7 @@
     "prebuild": "node src/prebuild.mjs"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "^2.20.7"
+    "@freesewing/pattern-info": "^2.20.8"
   },
   "dependencies": {},
   "devDependencies": {

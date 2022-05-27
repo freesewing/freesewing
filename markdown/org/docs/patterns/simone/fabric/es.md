@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simone shirt: Fabric Options"
-- - -
+---
 
 <Note>
 

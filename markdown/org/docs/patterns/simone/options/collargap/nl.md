@@ -1,3 +1,7 @@
+---
+title: "Collar gap"
+---
+
 ![Afstand kraag](collargap.svg)
 
 Hoe ver de kraag uit elkaar zit als hij gesloten is.
@@ -9,4 +13,5 @@ Dit is meestal een stijlkeuze, maar een bredere kraagopening (samen met de hoek 
 </Note>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_collargap_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_collargap_sample.svg "Effect of this option on the pattern")

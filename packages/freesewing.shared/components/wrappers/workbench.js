@@ -55,10 +55,10 @@ const hasRequiredMeasurements = (pattern, gist) => {
 
 /*
  * This component wraps the workbench and is in charge of
- * keeping the gist state, which will trickly down
+ * keeping the gist state, which will trickle down
  * to all workbench subcomponents
  */
-const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
+const WorkbenchWrapper = ({ app, pattern, preload=false, from=false, layout=false }) => {
 
   // State for gist
   const [gist, setGist] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
@@ -82,10 +82,12 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
   }, [preload, from])
 
   // Helper methods to manage the gist state
-  const updateGist = (path, content) => {
+  const updateGist = (path, content, closeNav=false) => {
     const newGist = {...gist}
     set(newGist, path, content)
     setGist(newGist)
+    // Force close of menu on mobile if it is open
+    if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
   }
   const unsetGist = (path) => {
     const newGist = {...gist}
@@ -128,14 +130,19 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
     AltMenu: <Menu {...componentProps }/>
   }
 
+  // Layout to use
+  const LayoutComponent = layout
+    ? layout
+    : Layout
+
   const Component = views[gist?._state?.view]
     ? views[gist._state.view]
     : views.welcome
 
-  return  <Layout {...layoutProps}>
+  return  <LayoutComponent {...layoutProps}>
             {messages}
             <Component {...componentProps} />
-          </Layout>
+          </LayoutComponent>
 }
 
 export default WorkbenchWrapper

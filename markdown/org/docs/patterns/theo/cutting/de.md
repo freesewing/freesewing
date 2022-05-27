@@ -1,6 +1,6 @@
-- - -
+---
 title: "Theo trousers: Cutting Instructions"
-- - -
+---
 
 - **Oberstoff**
   - **2 rücke(n)** mit guten Seiten zusammen schneiden

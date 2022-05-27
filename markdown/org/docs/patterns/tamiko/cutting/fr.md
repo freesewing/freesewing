@@ -1,11 +1,11 @@
-- - -
+---
 title: "Tamiko top: Cutting Instructions"
-- - -
+---
 
 - **Tissu principal**
   - Couper **1 Tamiko dessus** sur le pli
 
-Tamiko is a zero-waste pattern. It's a rectangle that's cut out on the fold. Not more than that. There's only one part to this top, we will simply refer to it at the **Tamiko top**. It needs to be cut on the fold along the bottom.
+Le Tamiko est un modèle zéro déchets. C'est un rectangle découpé sur la pliure. Rien de plus. C'est un modèle en une seule pièce, que nous appellerons simplement le **Tamiko top**. Elle doit être coupée sur la pliure, le long du bas.
 
 <Note>
 

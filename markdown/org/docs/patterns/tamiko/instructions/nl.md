@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: Sewing Instructions"
-- - -
+---
 
 ### Stap 1: werk het armsgat af
 

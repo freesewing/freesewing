@@ -1,3 +1,7 @@
+---
+title: "Sleevecap Q3 upward spread"
+---
+
 ![De opwaartse spreiding in de thrid quadrant van de mouwkop](./sleevecapq3spread1.svg)
 
 Deze optie controleert de opwaartse spreiding in de derde quadrant van de mouwkop.
@@ -10,4 +14,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_sleevecapq3spread1_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](diana_sleevecapq3spread1_sample.svg "Effect of this option on the pattern")

@@ -1,3 +1,7 @@
+---
+title: "Back scye dart"
+---
+
 ![Pinza posterior de la sisa](backscyedart.svg)
 
 Este patrón viene con un dart de guinda por defecto de 0,5 cm (piense en la oscuridad del orificio) en la parte trasera. Puedes aumentar o disminuir el dardo para influir en el agujero de armadura.
@@ -16,4 +20,5 @@ Mientras que este dardo se utiliza para dar forma al patrón, no es necesario co
 </Note>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_backscyedart_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_backscyedart_sample.svg "Effect of this option on the pattern")

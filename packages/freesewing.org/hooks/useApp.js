@@ -2,12 +2,58 @@ import { useState } from 'react'
 import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
-// Translation
-//import { en } from '@freesewing/i18n'
 // Prebuild navigation
 import prebuildNavigation from 'site/prebuild/navigation.js'
+// Translation
+import { useTranslation } from 'next-i18next'
 
+/*
+ * Helper method for a simple navigation item
+ */
+const simpleNav = (term, t, lng, prefix='', order='') => ({
+  __title: t(term, { lng }),
+  __linktitle: t(term, { lng }),
+  __slug: prefix+term,
+  __order: order+t(term, { lng })
+})
+
+/*
+ * Generated the static navigation
+ * Static means not mdx, not strapi
+ */
+const staticNavigation = (t, lang) => ({
+  designs: simpleNav('designs', t, lang, '', 'A'),
+  community: simpleNav('community', t, lang),
+  account: simpleNav('account', t, lang),
+})
+
+/*
+ * Merges prebuild navigation with the static navigation
+ */
+const buildNavigation = (lang, t) => {
+  const nav = {
+    ...prebuildNavigation[lang],
+    ...staticNavigation(t, lang),
+  }
+
+  // Set top-level order
+  nav.designs.__order = 'a'
+  nav.showcase.__order = 'b'
+  nav.docs.__order = 'c'
+  nav.community.__order = 'd'
+  nav.blog.__order = 'e'
+  nav.account.__order = 'f'
+
+  return nav
+}
+
+/*
+ * The actual hook
+ */
 function useApp(full = true) {
+
+  // Load translation method
+  const { t } = useTranslation()
 
   // User color scheme preference
   const prefersDarkMode = (typeof window !== 'undefined' && typeof  window.matchMedia === 'function')
@@ -21,7 +67,7 @@ function useApp(full = true) {
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(prebuildNavigation[language])
+  const [navigation, setNavigation] = useState(buildNavigation(language, t))
   const [slug, setSlug] = useState('/')
   const [loading, setLoading] = useState(false)
 

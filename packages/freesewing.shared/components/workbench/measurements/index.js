@@ -48,8 +48,7 @@ const WorkbenchMeasurements = ({ app, pattern, gist, updateGist }) => {
       <h1>
         <span className='capitalize mr-4 opacity-70'>
           {pattern.config.name}:
-        </span>
-        {t('measurements')}
+        </span> {t('measurements')}
       </h1>
       <details open className="my-2">
         <summary><h2 className="inline pl-1">{t('cfp:preloadMeasurements')}</h2></summary>

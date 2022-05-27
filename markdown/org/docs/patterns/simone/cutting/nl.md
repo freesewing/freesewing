@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simone shirt: Cutting Instructions"
-- - -
+---
 
 <Note>
 

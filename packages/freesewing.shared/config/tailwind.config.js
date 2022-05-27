@@ -7,6 +7,7 @@ module.exports = {
     './pages/**/*.js',
     './components/*.js',
     './components/**/*.js',
+    './page-templates/*.js',
     '../freesewing.shared/components/**/*.js',
   ],
   plugins: [require('daisyui'), require('tailwindcss/nesting')],

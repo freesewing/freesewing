@@ -1,3 +1,7 @@
+---
+title: "Chest ease"
+---
+
 ![Aisance de poitrine](chestease.svg)
 
 Combien d'aisance voulez-vous pour le buste ?
@@ -9,4 +13,5 @@ Combien d'aisance voulez-vous pour le buste ?
 </Note>
 
 ## Effet de cette option sur le patron
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_chestease_sample.svg "Effet de cette option sur le patron")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_chestease_sample.svg "Effect of this option on the pattern")

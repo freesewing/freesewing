@@ -1,3 +1,7 @@
+---
+title: "Sleevecap back Y"
+---
+
 ![La position verticale du point de flexion arrière](./sleevecapbackfactory.svg)
 
 Cette option contrôle la position verticale du point de flexion du tête de manche à l'arrière de la manche.
@@ -10,4 +14,5 @@ en profondeur sur la façon dont le chapeau de manche est construit et l'influen
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_sleevecapbackfactory_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_sleevecapbackfactory_sample.svg "Effect of this option on the pattern")

@@ -1,9 +1,9 @@
-- - -
-- - -
+---
+---
 
 #### Eigenaardig hoe dit werkt?
 
-FreeSewing is geschreven in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Onze [core library](https://www.npmjs.com/package/@freesewing/core) en [patronen](/patterns) zijn beschikbaar voor [NodeJS](https://nodejs.org/) en de browser.
+FreeSewing is geschreven in [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Our [core library](https://www.npmjs.com/package/@freesewing/core) and [patterns](/patterns) are available both for [NodeJS](https://nodejs.org/) and the browser.
 
 Onze websites zijn gebouwd met [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) en vriendelijk gehost door [Netlify](https://www.netlify.com/).
 
@@ -19,10 +19,9 @@ Onze [documentatie over ontwikkelaars](https://freesewing.dev) is beschikbaar op
 
 #### Wil je meehelpen?
 
-Geweldig ❤️   
-Het snelste wat je kunt doen is [join ons op Discord](https://discord.freesewing.org/) waar alle andere bijdragers samenkomen.
+Awesome ❤️\
+The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
 
 Als je niet zeker weet hoe je zou kunnen bijdragen, bekijk dan [manieren om bij te dragen](https://freesewing.dev/howtos/ways-to-contribute), je zult zeker zien dat je iets kunt doen om te helpen.
 
 We hebben ook specifieke documentatie voor [vertalers](https://freesewing.dev/guides/translation) en [editors](https://freesewing.dev/howtos/editors).
-

@@ -1,5 +1,8 @@
-![Schalenmanschette schmal Taste](./barrelcuffnarrowbutton.svg)
+---
+title: "Cuff narrow button"
+---
 
+![Schalenmanschette schmal Taste](./barrelcuffnarrowbutton.svg)
 
 Möchtest du mit einem zusätzlichen Knopf die Manschette fester hochdrücken?
 
@@ -12,4 +15,5 @@ Dies gilt nur für Fässer. Wenn Sie also eine französische Manschette als Mans
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_barrelcuffnarrowbutton_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_barrelcuffnarrowbutton_sample.svg "Effect of this option on the pattern")

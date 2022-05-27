@@ -24,7 +24,7 @@ const social = {
 
 const Footer = ({ app }) => (
   <footer className="bg-neutral">
-    <div className={`theme-gradient h-1 w-full relative ${app.loading ? 'loading' : ''}`}></div>
+    <div className={`theme-gradient h-14 ${app.loading ? 'loading' : ''}`} />
     <div className="p-4 py-16 flex flex-row bg-neutral -mt-1 z-0 gap-8 flex-wrap justify-around text-neutral-content">
       <div className="w-64 mt-2">
         <div className="px-4 mb-4"><CreativeCommonsLogo /></div>
@@ -159,6 +159,7 @@ const Footer = ({ app }) => (
       </a>
     </div>
 
+    <div className={`theme-gradient h-14 ${app.loading ? 'loading' : ''}`} />
   </footer>
 )
 

@@ -1,3 +1,7 @@
+---
+title: "Sleevecap Q1 downward spread"
+---
+
 ![De neerwaartse spreiding in de eerste quadrant van de mouwkop](./sleevecapq1downwardspread.svg)
 
 Deze optie controleert de neerwaartse spreiding in de eerste quadrant van de mouwkop.
@@ -10,4 +14,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sven_sleevecapq1spread1_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](sven_sleevecapq1spread1_sample.svg "Effect of this option on the pattern")

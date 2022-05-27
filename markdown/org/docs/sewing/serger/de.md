@@ -14,4 +14,4 @@ Serger verwenden mehrere Fäden und Nadeln, um nicht nur die Naht zu machen, son
 > 
 > Weitere Verwirrung entsteht durch die Tatsache, dass einige Nähmaschinen einen Überschlussstich haben, der die Rolle eines Sergers nachahmt.
 > 
-> Um all dies zu vermeiden, verwende ich Serger, um auf die dedizierte Maschine zu verweisen. 
+> Um all dies zu vermeiden, verwende ich Serger, um auf die dedizierte Maschine zu verweisen.

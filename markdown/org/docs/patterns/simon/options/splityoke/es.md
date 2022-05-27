@@ -1,3 +1,7 @@
+---
+title: "Split yoke"
+---
+
 ![Canesú partido](splityoke.svg)
 
 ¿Quiere dividir?
@@ -15,4 +19,5 @@ Es un poco más de trabajo, pero te permite alinear la línea de grano de forma 
 </Note>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_splityoke_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_splityoke_sample.svg "Effect of this option on the pattern")

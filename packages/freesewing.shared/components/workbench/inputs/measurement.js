@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
+import { isDegreeMeasurement } from '../../../config/measurements'
 
 /*
  * This is a single input for a measurements
@@ -13,6 +14,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
+  const factor = isDegreeMeasurement(m) ? 1 : 10
 
   const isValValid = val => (typeof val === 'undefined' || val === '')
       ? null
@@ -24,16 +26,13 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const update = evt => {
     setVal(evt.target.value)
     const ok = isValid(evt.target.value)
-    if (ok) {
-      setValid(true)
-      updateMeasurements(evt.target.value*10, m)
-    } else setValid(false)
+    if (ok) updateMeasurements(evt.target.value*factor, m)
   }
 
   const [val, setVal] = useState(gist?.measurements?.[m] || '')
 
   useEffect(() => {
-    if (gist?.measurements?.[m]) setVal(gist.measurements[m]/10)
+    if (gist?.measurements?.[m]) setVal(gist.measurements[m]/factor)
   }, [gist])
 
   if (!m) return null
@@ -78,7 +77,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
           ${valid === true && 'bg-success text-neutral-content'}
           ${valid === null && 'bg-base-200 text-base-content'}
        `}>
-          cm
+        {isDegreeMeasurement(m) ? '° ' : 'cm'}
         </span>
       </label>
     </div>

@@ -1,3 +1,7 @@
+---
+title: "Center back dart"
+---
+
 ![Pince milieu dos](centerbackdart.svg)
 
 Étant donné que personne n'a un dos parfaitement droit, ce patron est prévu avec une pince de 0,5 cm au centre du cou.
@@ -14,4 +18,5 @@ Techniquement, ce n'est pas une pince, mais je ne savais pas comment l'appeler a
 </Note>
 
 ## Effet de cette option sur le patron
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_centerbackdart_sample.svg "Effet de cette option sur le patron")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")

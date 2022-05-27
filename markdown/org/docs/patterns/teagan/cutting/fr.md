@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Cutting Instructions"
-- - -
+---
 
 - Coupez 1 dos sur le pli.
 - Couper 1 avant sur le pli.

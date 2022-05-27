@@ -1,3 +1,7 @@
+---
+title: "Center back dart"
+---
+
 ![Zentrierter Dart](centerbackdart.svg)
 
 Da niemand einen perfekt geradlinigen Rücken hat, ist dieses Muster mit 0,5 cm in der Mitte des Halsrückens erhältlich.
@@ -14,4 +18,5 @@ Technisch gesehen ist dies kein Dart, aber ich wusste nicht, wie man es sonst ne
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_centerbackdart_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")

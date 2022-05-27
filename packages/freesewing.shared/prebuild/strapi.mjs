@@ -2,7 +2,6 @@ import path from 'path'
 import fs from 'fs'
 import axios from 'axios'
 import { strapiHost } from '../config/freesewing.mjs'
-import i18nConfig from '../config/i18n.config.mjs'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
 import remarkCompiler from 'remark-stringify'
@@ -70,24 +69,40 @@ export const prebuildStrapi = async(site) => {
   const types = ['blog']
   if (site === 'org') types.push('showcase')
 
+  // Languages
+  const languages = (site === 'dev')
+      ? [ 'en' ]
+      : ['en', 'es', 'de', 'fr', 'nl']
+
   const posts = {}
   const authors = {}
+
   for (const type of types) {
+    console.log(`${type}:`)
+    posts[type] = {}
     authors[type] = {}
     // Loop over locales
-    for (const lang of (site === 'dev' ? ['en'] : i18nConfig.locales)) {
-      posts[lang] = {}
+    for (const lang of (site === 'dev' ? ['en'] : ['en', 'es', 'de', 'fr', 'nl'])) {
+      authors[type][lang] = {}
+      posts[type][lang] = {}
       console.log(`  - Language: ${lang}`)
-      posts[lang][type] = await getPosts(type, site, lang)
+      posts[type][lang] = await getPosts(type, site, lang)
       // Extract list of authors
-      for (const [slug, post] of Object.entries(posts[lang][type])) {
-        authors[type][post.author.slug] = post.author
-        posts[lang][type][slug].author = post.author.slug
+      for (const [slug, post] of Object.entries(posts[type][lang])) {
+        if (type === 'blog') {
+          if (!post.author?.id) console.log(post)
+          authors[type][lang][post.author.slug] = post.author
+          posts[type][lang][slug].author = post.author.slug
+        } else {
+          if (!post.maker?.id) console.log(post)
+          authors[type][lang][post.maker.slug] = post.maker
+          posts[type][lang][slug].maker = post.maker.slug
+        }
       }
       // Write to disc, one file for the index page, one file for each post
       fs.writeFileSync(
         path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.${type}.${lang}.js`),
-        `export const posts = ${JSON.stringify(Object.values(posts[lang][type]).map(post => ({
+        `export const posts = ${JSON.stringify(Object.values(posts[type][lang]).map(post => ({
           title: post.title,
           date: post.date,
           slug: post.slug,
@@ -95,16 +110,16 @@ export const prebuildStrapi = async(site) => {
           img: post.image?.formats?.large?.url || 'https://posts.freesewing.org/uploads/logo_8401e711e4.png'
         })), null, 2)}`
       )
-      for (const [slug, post] of Object.entries(posts[lang][type])) {
+      for (const [slug, post] of Object.entries(posts[type][lang])) {
         fs.writeFileSync(
           path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.${type}.${lang}.${slug}.json`),
           JSON.stringify(post, null, 2)
         )
       }
       // Write to disc, one file per author
-      for (const [name, author] of Object.entries(authors[type])) {
+      for (const [slug, author] of Object.entries(authors[type][lang])) {
         fs.writeFileSync(
-          path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.authors.${type}.${lang}.${name}.json`),
+          path.resolve('..', `freesewing.${site}`, 'prebuild', `strapi.authors.${type}.${lang}.${slug}.json`),
           JSON.stringify({
             slug: author.slug,
             name: author.name,

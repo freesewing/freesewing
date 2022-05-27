@@ -1,6 +1,6 @@
 {
   "name": "freesewing.dev",
-  "version": "2.20.7",
+  "version": "2.20.8",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3002",
@@ -41,7 +41,9 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.20.7"
+    "remark-jargon": "^2.20.8",
+    "roughjs": "^4.5.2",
+    "viz.js": "^2.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
@@ -50,8 +52,5 @@
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1",
     "yaml-loader": "^0.8.0"
-  },
-  "engines": {
-    "node": ">=14.18.1"
   }
 }

@@ -14,4 +14,4 @@ Overlockmachines gebruiken meerdere draden en naden om niet enkel de naad de naa
 > 
 > Verdere verwarring wordt veroorzaakt door het feit dat sommige naaimachines een overlocksteek hebben die een serger imiteert.
 > 
-> Om dit soort verwarring te vermijden gebruik ik 'serger' om naar deze specifieke machine te verwijzen. 
+> Om dit soort verwarring te vermijden gebruik ik 'serger' om naar deze specifieke machine te verwijzen.

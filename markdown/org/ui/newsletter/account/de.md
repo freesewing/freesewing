@@ -2,8 +2,8 @@
 title: Verwalte dein Abonnement in deinem Account
 ---
 
-Als registrierte/r Benutzer/in kannst du [deine Newsletter-Einstellungen in deinem Account verwalten][1].
+As a registered user, you can [manage your newsletter settings in your account][1].
 
-Wenn du den Newsletter an eine andere E-Mail-Adresse bekommen möchtest als die, die mit deinem Account verknüpft ist, kannst du dies hier unten angeben.
+If you'd like to sign up a different email address as the one linked to your account, you can do so below.
 
 [1]: /account/settings/newsletter/

@@ -1,3 +1,7 @@
+---
+title: "Sleevecap Q2 offset"
+---
+
 ![Le décalage au deuxième trimestre de la tête de manche](./sleevecapq2offset.svg)
 
 Cette option permet de contrôler le décalage dans le deuxième quadrant de la tête de manche.
@@ -10,4 +14,5 @@ en profondeur sur la façon dont le chapeau de manche est construit et l'influen
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_sleevecapq2offset_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_sleevecapq2offset_sample.svg "Effect of this option on the pattern")

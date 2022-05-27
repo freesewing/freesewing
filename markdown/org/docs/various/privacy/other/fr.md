@@ -8,7 +8,6 @@ Si nous décelons une violation des systèmes de sécurité, nous vous en inform
 
 Si vous pensez que vos données personnelles ont été compromises, veuillez contacter joost@joost.at.
 
-
 ##### Prestataires de services
 
 Notre hébergeur gère nos systèmes centraux pour nous. Cela inclut l'hébergement, le stockage et la sauvegarde.
@@ -26,4 +25,3 @@ Jusqu'à présent, nous n'avons reçu aucune demande de la part des forces de l'
 ##### Utilisation par les mineurs de moins de 16 ans
 
 Pour des raisons juridiques, vous devez avoir au moins 16 ans pour utiliser Freesewing.
-

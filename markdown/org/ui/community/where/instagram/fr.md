@@ -1,7 +1,7 @@
-- - -
-- - -
+---
+---
 
-Notre compte Instagram est [@freesewing_org](https://instagram.com/freesewing_org).  
-Suivez-nous pour des mises à jour sur les nouveaux patrons, les réalisations de la communauté, et d'autres nouvelles.
+Our Instagram account is [@freesewing\_org](https://instagram.com/freesewing_org).\
+Follow us for updates on new pattern releases, makes from the community, and other news.
 
-Lors de la publication de vos réalisations sur Instagram, merci de nous mentionner afin que nous puissions re-poster, et d'utiliser [nos hashtags](/community/hashtags/).
+When posting your makes in Instagram, please mention us so we can re-post, and use [our hashtags](/community/hashtags/).

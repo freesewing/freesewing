@@ -24,7 +24,7 @@ const social = {
 
 const Footer = ({ app }) => (
   <footer className="bg-neutral">
-    <div className={`theme-gradient h-1 w-full relative ${app.loading ? 'loading' : ''}`}></div>
+    <div className={`theme-gradient h-14 ${app.loading ? 'loading' : ''}`} />
     <div className="p-4 py-16 flex flex-row bg-neutral -mt-1 z-0 gap-8 flex-wrap justify-around text-neutral-content">
       <div className="w-64 mt-2">
         <div className="px-4 mb-4"><CreativeCommonsLogo /></div>
@@ -141,24 +141,25 @@ const Footer = ({ app }) => (
 
     <p className="text-center text-neutral-content text-sm px-2">
       <span
-        className="px-1 text-lg font-bold block sm:inline">FreeSewing</span> is hosted by these <span
+        className="px-1 text-lg font-bold block sm:inline">FreeSewing</span> is sponsored by these <span
       className="text-accent font-bold text-lg px-1 block sm:inline">awesome companies</span>
     </p>
     <div className="p-4 py-16 flex flex-row bg-neutral -mt-2 z-0 gap-8 flex-wrap justify-center items-center text-neutral-content">
       <a title="Search powered by Algolia" href="https://www.algolia.com/">
         <img src="/brands/algolia.svg" className="w-64 mx-12 sm:mx-4" alt="Search powered by Algolia"/>
       </a>
+      <a title="Error handling by Bugsnag" href="https://www.bugsnag.com/">
+        <img src="/brands/bugsnag.svg" className="h-32 mx-12 sm:mx-4" alt="Error handling by bugsnag" />
+      </a>
       <a title="Translation powered by Crowdin" href="https://www.crowdin.com/">
         <img src="/brands/crowdin.svg" className="w-64 mx-12 sm:mx-4" alt="Translation powered by Crowdin" />
       </a>
-      <a title="Deploys & hosting by Netlify" href="https://www.netlify.com/">
-        <img src="/brands/netlify.svg" className="w-44 mx-12 sm:mx-4" alt="Deploys & hosting by Netlify" />
-      </a>
-      <a title="Error handling by Bugsnag" href="https://www.bugsnag.com/">
-        <img src="/brands/bugsnag.svg" className="h-36 mx-12 sm:mx-4" alt="Error handling by bugsnag" />
+      <a title="Builds & hosting by Vercel" href="https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss">
+        <img src="/brands/vercel.svg" className="w-64 mx-12 sm:mx-4" alt="Builds & Hosting by Vercel" />
       </a>
     </div>
 
+    <div className={`theme-gradient h-14 ${app.loading ? 'loading' : ''}`} />
   </footer>
 )
 

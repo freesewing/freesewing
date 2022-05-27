@@ -1,6 +1,5 @@
 import path from 'path'
 import fs from 'fs'
-import i18nConfig from '../config/i18n.config.mjs'
 import rdir from 'recursive-readdir'
 import { unified } from 'unified'
 import remarkParser from 'remark-parse'
@@ -10,6 +9,18 @@ import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import { readSync } from 'to-vfile'
 import yaml from 'js-yaml'
 
+/*
+ * There's an issue in crowdin where it changes the frontmatter marker:
+ * ---
+ * into this:
+ * - - -
+ * which breaks stuff. So this method takes the input and replaces all
+ * - - - with ---
+ */
+const fixCrowdinBugs = md => {
+  md.value = md.value.split("- - -\n").join("---\n")
+  return md
+}
 
 /*
  * Helper method to get a list of MDX files in a folder.
@@ -63,12 +74,11 @@ const mdxMetaInfo = async file => {
   let result
   try {
     result = await unified()
-      //.use(remarkMdx)
       .use(remarkParser)
       .use(remarkCompiler)
       .use(remarkFrontmatter)
       .use(remarkFrontmatterExtractor, { yaml: yaml.load })
-      .process(readSync(file))
+      .process(fixCrowdinBugs(readSync(file, { encoding: 'utf-8' })))
   }
   catch (err) {
     console.log(err)
@@ -91,7 +101,7 @@ export const prebuildMdx = async(site) => {
 
   // Loop over locales
   const pages = {}
-  for (const lang of (site === 'dev' ? ['en'] : i18nConfig.locales)) {
+  for (const lang of (site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de'])) {
 
     console.log(`  - Language: ${lang}`)
 
@@ -113,8 +123,13 @@ export const prebuildMdx = async(site) => {
               : meta.data.title
           }
         } else {
-          console.log('Failed to extract meta info from:', slug)
-          if (meta.messages.length > 0) console.log(meta.messages)
+          if (pages.en[slug]) {
+            console.log(`⚠️l Falling back to EN metadata for ${slug}`)
+            pages[lang][slug] = pages.en[slug]
+          } else {
+            console.log(`❌ [${lang}] Failed to extract meta info from: ${slug}`)
+            if (meta.messages.length > 0) console.log(meta.messages)
+          }
         }
       }
     }

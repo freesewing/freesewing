@@ -51,6 +51,8 @@ const o_bee = {
   "frontArmholePitchDepth.d": "Contrôle la profondeur du point pivot de l'emmanchure avant dans le bloc Bella sur lequel est basé le patron Bee",
   "frontShoulderWidth.t": "Largeur de l'épaule devant (Bella)",
   "frontShoulderWidth.d": "Contrôle la largeur de l'épaule avant dans le bloc de Bella sur lequel est basé le patron Bee",
+  "fullChestEaseReduction.t": "Full chest reduction (Bella)",
+  "fullChestEaseReduction.d": "Controls the full chest reduction in the underlying Bella block Bee is based on",
   "highBustWidth.t": "Largeur du tour de buste supérieur (Bella)",
   "highBustWidth.d": "Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee"
 }
