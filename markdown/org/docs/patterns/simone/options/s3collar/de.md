@@ -1,6 +1,7 @@
----
+- - -
 title: "Shoulder seam shift: collar side"
----
+- - -
+
 
 Steuert die Position der Schulternaht auf der Kragenseite.
 
