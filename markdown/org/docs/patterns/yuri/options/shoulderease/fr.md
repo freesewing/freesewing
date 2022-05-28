@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder ease"
----
+- - -
 
 Contrôle l'aisance sur la mesure épaule à épaule.
 
