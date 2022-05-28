@@ -18,6 +18,7 @@ import intro from "./intro.mjs"
 import jargon from "./jargon.mjs"
 import lab from "./lab.mjs"
 import measurements from "./measurements.mjs"
+import ograph from "./ograph.mjs"
 import optiongroups from "./optiongroups.mjs"
 import o_aaron from "./o_aaron.mjs"
 import o_albert from "./o_albert.mjs"
@@ -82,6 +83,7 @@ const allNamespaces = {
   jargon,
   lab,
   measurements,
+  ograph,
   optiongroups,
   o_aaron,
   o_albert,
