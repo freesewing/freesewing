@@ -1,6 +1,6 @@
----
+- - -
 title: "Hips ease"
----
+- - -
 
 ![L'option de facilité des hanches sur Diana](./hipsease.svg)
 
