@@ -1,6 +1,6 @@
----
+- - -
 title: "Waistband shape"
----
+- - -
 
 ![Forme de ceinture](waistbandshape.svg)
 
