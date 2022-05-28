@@ -1,6 +1,6 @@
----
+- - -
 title: "Chest ease"
----
+- - -
 
 ![L'option d'assouplissement de la poitrine sur Diana](./chestease.svg)
 
