@@ -1,6 +1,6 @@
----
+- - -
 title: "Front pocket placement"
----
+- - -
 
 ![Emplacement des poches avant](frontpocketplacement.svg)
 
