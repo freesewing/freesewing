@@ -1,6 +1,6 @@
----
+- - -
 title: "Sleeve placket width"
----
+- - -
 
 ![Largeur de la patte de manche](sleeveplacketwidth.svg)
 
