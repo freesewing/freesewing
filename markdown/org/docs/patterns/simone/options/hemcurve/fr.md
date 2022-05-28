@@ -1,6 +1,6 @@
----
+- - -
 title: "Hem curve"
----
+- - -
 
 ![Courbe de l'ourlet](hemcurve.svg)
 
