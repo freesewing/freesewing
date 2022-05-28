@@ -1,6 +1,6 @@
----
+- - -
 title: "Tamiko top: Fabric Options"
----
+- - -
 
 This pattern has a lot of unfinished edges, so you need something that does not ravel. Et vous voulez quelque chose avec un joli drapé.
 
