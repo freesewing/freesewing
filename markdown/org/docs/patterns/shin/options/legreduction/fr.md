@@ -1,6 +1,6 @@
----
+- - -
 title: "Leg reduction"
----
+- - -
 
 La quantité de réduction supplémentaire de l’étirement aux jambes (supérieures).
 
