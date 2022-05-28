@@ -1,6 +1,6 @@
----
+- - -
 title: "Neckline drop"
----
+- - -
 
 ![Profondeur d'encolure](necklinedrop.svg)
 
