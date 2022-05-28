@@ -2,3 +2,4 @@
 title: Dokumentation
 ---
 
+<ReadMore />
