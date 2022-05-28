@@ -1,0 +1,57 @@
+{
+  "accessories": [
+    "florence",
+    "hortensia",
+    "florent",
+    "holmes",
+    "trayvon"
+  ],
+  "blocks": [
+    "bella",
+    "bent",
+    "brian",
+    "titan"
+  ],
+  "garments": [
+    "aaron",
+    "albert",
+    "bee",
+    "benjamin",
+    "breanna",
+    "bruce",
+    "carlita",
+    "carlton",
+    "cathrin",
+    "charlie",
+    "cornelius",
+    "diana",
+    "huey",
+    "hugo",
+    "jaeger",
+    "lunetius",
+    "paco",
+    "penelope",
+    "sandy",
+    "shin",
+    "simon",
+    "simone",
+    "sven",
+    "tamiko",
+    "teagan",
+    "theo",
+    "tiberius",
+    "ursula",
+    "wahid",
+    "walburga",
+    "waralee",
+    "yuri"
+  ],
+  "utilities": [
+    "examples",
+    "legend",
+    "plugintest",
+    "rendertest",
+    "tutorial"
+  ]
+}
+
