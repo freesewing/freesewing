@@ -14,6 +14,7 @@ import email from "./email.mjs"
 import errors from "./errors.mjs"
 import filter from "./filter.mjs"
 import gdpr from "./gdpr.mjs"
+import homepage from "./homepage.mjs"
 import i18n from "./i18n.mjs"
 import intro from "./intro.mjs"
 import jargon from "./jargon.mjs"
@@ -80,6 +81,7 @@ const allNamespaces = {
   errors,
   filter,
   gdpr,
+  homepage,
   i18n,
   intro,
   jargon,
