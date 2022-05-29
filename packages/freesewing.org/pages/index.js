@@ -7,25 +7,25 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
 import Navigation, { Icons } from 'shared/components/navigation/primary'
+import DownIcon from 'shared/components/icons/down.js'
 
 const HomePage = (props) => {
   const app = useApp()
-  const { t, i18n } = useTranslation(['ograph'])
-  const { language } = i18n
+  const { t } = useTranslation(['homepage', 'ograph'])
 
   return (
     <Page app={app} title="Welcome to FreeSewing.org" layout={Layout}>
       <Head>
         <meta property="og:title" content="FreeSewing.org" key="title" />
         <meta property="og:type" content="article" key='type' />
-        <meta property="og:description" content={t('og:orgDesc')} key='description' />
+        <meta property="og:description" content={t('ograph:orgDesc')} key='description' />
         <meta property="og:article:author" content='Joost De Cock' key='author' />
-        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/${language}/org/`} key='image' />
+        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/${app.locale}/org/`} key='image' />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://freesewing.org/" key='url' />
-        <meta property="og:locale" content={language} key='locale' />
+        <meta property="og:locale" content={app.locale} key='locale' />
         <meta property="og:site_name" content="freesewing.org" key='site' />
       </Head>
         <section
@@ -36,8 +36,8 @@ const HomePage = (props) => {
           }}
           className="m-0 p-0 shadow drop-shadow-lg w-full mb-8"
         >
-          <div className="mx-auto px-8 flex flex-col items-center justify-around min-h-screen">
-            <span>test</span>
+          <div className="mx-auto px-8 flex flex-col items-center justify-between min-h-screen">
+            <span>&nbsp;</span>
             <div>
               <div className="flex flex-col items-end max-w-4xl">
                 <h1
@@ -60,7 +60,7 @@ const HomePage = (props) => {
                     md:text-4xl
                     lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
                   style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
-                  dangerouslySetInnerHTML={{ __html: t('orgDescription')}}
+                  dangerouslySetInnerHTML={{ __html: t('ograph:orgDescription')}}
                 />
               </div>
               <Icons app={app}  active='/'
@@ -72,14 +72,10 @@ const HomePage = (props) => {
                   flex flex-col items-center capitalize`}
               />
             </div>
-            <p className="text-neutral-content text-center mt-8">
-              To learn more about FreeSewing and try our platform
-              go to <a
-                href="https://freesewing.org/"
-                title="Go to FreeSewing.org"
-                className="text-secondary font-bold"
-              >freesewing.org</a>
-            </p>
+            <div className="text-neutral-content text-center mt-8 text-center">
+              {t('scrollDownToLearnMore')}
+              <DownIcon className="w-24 h-24 animate-bounce w-full m-auto mt-8"/>
+            </div>
           </div>
         </section>
       <div>
@@ -126,7 +122,7 @@ export default HomePage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations('en')),
+      ...(await serverSideTranslations(locale)),
     }
   }
 }

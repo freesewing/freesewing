@@ -5,6 +5,7 @@ import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Prebuild navigation
 import prebuildNavigation from 'site/prebuild/navigation.js'
 // Translation
+import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
 /*
@@ -53,6 +54,7 @@ const buildNavigation = (lang, t) => {
 function useApp(full = true) {
 
   // Load translation method
+  const locale = useRouter().locale
   const { t } = useTranslation()
 
   // User color scheme preference
@@ -63,11 +65,10 @@ function useApp(full = true) {
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useLocalStorage('theme', prefersDarkMode ? 'dark' : 'light')
-  const [language, setLanguage] = useLocalStorage('language', 'en')
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(buildNavigation(language, t))
+  const [navigation, setNavigation] = useState(buildNavigation(locale, t))
   const [slug, setSlug] = useState('/')
   const [loading, setLoading] = useState(false)
 
@@ -88,10 +89,12 @@ function useApp(full = true) {
 
   return {
     // Static vars
-    site: 'dev',
+    site: 'org',
+
+    // i18n
+    locale,
 
     // State
-    language,
     loading,
     navigation,
     primaryMenu,
@@ -99,7 +102,6 @@ function useApp(full = true) {
     theme,
 
     // State setters
-    setLanguage,
     setLoading,
     setNavigation,
     setPrimaryMenu,
