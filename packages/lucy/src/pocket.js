@@ -4,9 +4,10 @@ export default function (part) {
 
 
     //pocket seams here 
-  let pocketLength = (800 * options.length)
-  let pocketWidth = (500 * options.width)
-  let pocketEdge = (options.edge)
+  let pocketLength = 800 * options.length
+  let pocketWidth = 500 * options.width
+  let pocketEdge = options.edge
+
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pocketWidth, 0)
