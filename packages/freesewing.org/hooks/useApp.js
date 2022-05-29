@@ -45,6 +45,16 @@ const buildNavigation = (lang, t) => {
   nav.blog.__order = 'e'
   nav.account.__order = 'f'
 
+  // Translation top-level strapi pages
+  nav.showcase.__title = t('showcase')
+  nav.showcase.__linktitle = t('showcase')
+  nav.blog.__title = t('blog')
+  nav.blog.__linktitle = t('blog')
+
+  // Translation top-level strapi pages
+  nav.community.__title = t('community')
+  nav.community.__linktitle = t('community')
+
   return nav
 }
 

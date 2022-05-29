@@ -1,7 +1,7 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
-import HelpUs from 'site/components/help-us.js'
+import Popout from 'shared/components/popout.js'
 import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
@@ -60,8 +60,13 @@ const HomePage = (props) => {
                     md:text-4xl
                     lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
                   style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
-                  dangerouslySetInnerHTML={{ __html: t('ograph:orgDescription')}}
-                />
+                >
+                  <div>{t('common:sloganCome')}</div>
+                  <div className="inline-block mt-2">
+                    {t('common:sloganStay')}
+                    <div className="theme-gradient h-2" />
+                  </div>
+                </h2>
               </div>
               <Icons app={app}  active='/'
                 ulClasses="flex flex-row flex-wrap mt-8 justify-between w-full max-w-7xl"
@@ -79,21 +84,8 @@ const HomePage = (props) => {
           </div>
         </section>
       <div>
-      <div className="max-w-7xl m-auto my-32">
-        <div className="bg-cover bg-neutral w-full bg-center rounded-lg shadow p-4 "
-          style={{backgroundImage: "url(/support.jpg)"}}
-        >
-          <h2 className="text-neutral-content p-4 text-4xl font-bold sm:font-light sm:text-6xl drop-shadow">Support FreeSewing</h2>
-          <p className="text-neutral-content p-4 font-bold max-w-md text-lg">
-            FreeSewing is fuelled by a voluntary subscription model
-          </p>
-          <p className="text-neutral-content p-4 font-bold max-w-md text-lg">
-            If you think what we do is worthwhile,
-            and if you can spare a few coins each month without hardship,
-            please support our work
-          </p>
-          <a role="button" className="btn btn-accent btn-wide ml-4 mb-8" href="https://freesewing.org/patrons/join">Become a Patron</a>
-        </div>
+      <div className="max-w-xl m-auto my-32">
+        <Popout fixme>Create homepage</Popout>
       </div>
       <div className="max-w-7xl m-auto my-32">
         <div className="px-8 text-base-content">
@@ -107,9 +99,6 @@ const HomePage = (props) => {
               flex flex-col items-center capitalize`}
           />
         </div>
-      </div>
-      <div className="max-w-xl m-auto my-32">
-        <HelpUs slug='/' />
       </div>
     </div>
 
