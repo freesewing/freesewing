@@ -39,11 +39,6 @@ export default function (part) {
 
 
 
-  paths.slit = new Path()
-  .move(points.center)
-  .line(points.middle)
-  .attr("class", "path fabric dashed")
-
   paths.seam = new Path()
     .move(points.centerLeft)
     .line(points.taperLeft)
@@ -54,18 +49,22 @@ export default function (part) {
     .line(points.taperRight)
     .line(points.centerRight)
     .close()
-  
     
   // Complete?
   if (complete) {
+  
+  paths.slit = new Path()
+  .move(points.center)
+  .line(points.middle)
+  .attr("class", "path fabric dashed")
+  
     points.logo = points.center.shiftOutwards(points.middle, pocketWidth / 5)
     snippets.logo = new Snippet('logo', points.logo)
     
     points.scalebox = points.logo
       .shift(270, pocketWidth / 5)
       macro("scalebox", { at: points.scalebox })  
-    
-
+      
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
