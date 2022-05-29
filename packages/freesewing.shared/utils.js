@@ -76,3 +76,21 @@ export const optionType = option => {
 
 export const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
 
+export const strapiImage = (img, sizes=['thumbnail', 'xlarge', 'large', 'medium', 'small', 'xsmall']) => {
+  const image = {
+    caption: img.caption,
+    w: img.width,
+    h: img.height,
+    url: img.url,
+    sizes: {}
+  }
+  for (const size of sizes) {
+    if (img.formats[size]) image.sizes[size] = {
+      w: img.formats[size].width,
+      h: img.formats[size].width,
+      url: img.formats[size].url,
+    }
+  }
+
+  return image
+}
