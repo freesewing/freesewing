@@ -17,7 +17,7 @@ import yaml from 'js-yaml'
  * which breaks stuff. So this method takes the input and replaces all
  * - - - with ---
  */
-const fixCrowdinBugs = md => {
+export const fixCrowdinBugs = md => {
   md.value = md.value.split("- - -\n").join("---\n")
   return md
 }
@@ -49,7 +49,8 @@ export const getMdxFileList = async (folder, lang) => {
   for (const file of allFiles) {
     if (
       file.slice(-5) === `${lang}.md` &&
-      file.indexOf('/ui/') === -1
+      file.indexOf('/ui/') === -1 &&
+      file.indexOf('/uimd/') === -1
     ) files.push(file)
   }
 
@@ -59,7 +60,7 @@ export const getMdxFileList = async (folder, lang) => {
 /*
  * Helper method to get the website slug (path) from the file path
  */
-const fileToSlug = (file, site, lang) => (file.slice(-6) === `/${lang}.md`)
+export const fileToSlug = (file, site, lang) => (file.slice(-6) === `/${lang}.md`)
   ? file.split(`/markdown/${site}/`).pop().slice(0, -6)
   : false
 

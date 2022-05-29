@@ -6,6 +6,7 @@
     "dev": "SITE=org next dev -p 3002",
     "develop": "SITE=org next dev -p 3002",
     "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.mjs",
+    "i18n": "SITE=org node ../freesewing.shared/prebuild/i18n-only.mjs",
     "build": "next build",
     "export": "yarn prebuild && next build && next export",
     "start": "next start -p 3002",
