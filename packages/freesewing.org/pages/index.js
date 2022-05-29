@@ -36,39 +36,42 @@ const HomePage = (props) => {
           }}
           className="m-0 p-0 shadow drop-shadow-lg w-full mb-8"
         >
-          <div className="mx-auto px-8 flex flex-col items-center justify-center min-h-screen lg:min-h-0 lg:py-96">
-            <div className="flex flex-col items-end max-w-4xl">
-              <h1
-                className={`
-                  text-4xl font-black text-right px-4
-                  sm:text-6xl
-                  md:text-7xl px-6
-                  lg:px-8
-                  bg-primary
-                  `}
-                style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
-              >
-                FreeSewing
-                <span className="font-light">.org</span>
-              </h1>
-              <h2
-                className={`
-                  text-right text-2xl mr-0
-                  sm:text-3xl
-                  md:text-4xl
-                  lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
-                style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
-                dangerouslySetInnerHTML={{ __html: t('orgDescription')}}
+          <div className="mx-auto px-8 flex flex-col items-center justify-around min-h-screen">
+            <span>test</span>
+            <div>
+              <div className="flex flex-col items-end max-w-4xl">
+                <h1
+                  className={`
+                    text-4xl font-black text-right px-4
+                    sm:text-6xl
+                    md:text-7xl px-6
+                    lg:px-8
+                    bg-primary
+                    `}
+                  style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
+                >
+                  FreeSewing
+                  <span className="font-light">.org</span>
+                </h1>
+                <h2
+                  className={`
+                    text-right text-2xl mr-0
+                    sm:text-3xl
+                    md:text-4xl
+                    lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
+                  style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
+                  dangerouslySetInnerHTML={{ __html: t('orgDescription')}}
+                />
+              </div>
+              <Icons app={app}  active='/'
+                ulClasses="flex flex-row flex-wrap mt-8 justify-between w-full max-w-7xl"
+                liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-40"
+                linkClasses={`
+                  text-lg lg:text-xl py-1 text-secondary
+                  hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
+                  flex flex-col items-center capitalize`}
               />
             </div>
-            <Icons app={app}  active='/'
-              ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
-              liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-24"
-              linkClasses={`
-                text-lg lg:text-xl py-1 text-secondary
-                hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
-                flex flex-col items-center capitalize`}
-            />
             <p className="text-neutral-content text-center mt-8">
               To learn more about FreeSewing and try our platform
               go to <a

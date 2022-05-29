@@ -1,10 +1,13 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import mdxMeta from 'site/prebuild/mdx.en.js'
 import mdxLoader from 'shared/mdx/loader'
 import MdxWrapper from 'shared/components/wrappers/mdx'
+import TocWrapper from 'shared/components/wrappers/toc'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import components from 'site/components/mdx/index.js'
 
 const MdxPage = props => {
 
@@ -27,16 +30,24 @@ const MdxPage = props => {
         <meta property="og:type" content="article" key='type' />
         <meta property="og:description" content={props.intro} key='type' />
         <meta property="og:article:author" content='Joost De Cock' key='author' />
-        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/en/org/${props.page.slug}`} key='image' />
+        <meta property="og:image" content={`https://canary.backend.freesewing.org/og-img/en/dev/${props.page.slug}`} key='image' />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`https://freesewing.org/${props.page.slug}`} key='url' />
+        <meta property="og:url" content={`https://freesewing.dev/${props.page.slug}`} key='url' />
         <meta property="og:locale" content="en_US" key='locale' />
-        <meta property="og:site_name" content="freesewing.org" key='site' />
+        <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
-      <MdxWrapper mdx={props.mdx} app={app}/>
-      <HelpUs mdx slug={`/${props.page.slug}`} />
+      <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end px-8 xl:px-0">
+        {props.toc && (
+          <div className="mb-8 px-0 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
+            <TocWrapper toc={props.toc} app={app}/>
+          </div>
+        )}
+        <div className="px-0 xl:pl-8 2xl:pl-16">
+          <MdxWrapper mdx={props.mdx} app={app} components={components} />
+        </div>
+      </div>
     </Page>
   )
 }
@@ -58,13 +69,14 @@ export default MdxPage
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
 
-  const { mdx, intro } = await mdxLoader('en', 'org', params.mdxslug.join('/'))
+  const { mdx, intro, toc } = await mdxLoader('en', 'org', params.mdxslug.join('/'))
 
   return {
     props: {
       mdx,
+      toc,
       intro: intro.join(' '),
       page: {
         slug: params.mdxslug.join('/'),
@@ -72,7 +84,8 @@ export async function getStaticProps({ params }) {
         slugArray: params.mdxslug,
         ...mdxMeta[params.mdxslug.join('/')],
       },
-      params
+      params,
+      ...(await serverSideTranslations('en')),
     }
   }
 }
@@ -94,3 +107,4 @@ export async function getStaticPaths() {
     fallback: false
   }
 }
+

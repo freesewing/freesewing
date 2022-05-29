@@ -9,6 +9,7 @@ import common from "./common.mjs"
 import themes from "./themes.mjs"
 import workbench from "./workbench.mjs"
 import cty from "./cty.mjs"
+import docs from "./docs.mjs"
 import email from "./email.mjs"
 import errors from "./errors.mjs"
 import filter from "./filter.mjs"
@@ -74,6 +75,7 @@ const allNamespaces = {
   themes,
   workbench,
   cty,
+  docs,
   email,
   errors,
   filter,

@@ -2,6 +2,7 @@ import account from './account.yaml'
 import app from './app.yaml'
 import cfp from './cfp.yaml'
 import cty from './cty.yaml'
+import docs from './docs.yaml'
 import email from './email.yaml'
 import errors from './errors.yaml'
 import filter from './filter.yml'
@@ -25,6 +26,7 @@ const topics = {
   app,
   cfp,
   cty,
+  docs,
   email,
   errors,
   filter,
