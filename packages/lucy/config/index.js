@@ -22,7 +22,7 @@ export default {
     'sewing pattern',
   ],
   optionGroups: {
-    fit: ['width', 'length', 'edge' ],
+    style: ['width', 'length', 'edge' ],
   },
   measurements: [],
   dependencies: {},
