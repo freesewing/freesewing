@@ -31,11 +31,12 @@ export default function (part) {
 
  //control points curve
 
- points.leftCp1 = points.bottomLeft.shiftTowards(points.taperLeft, 50)
- points.leftCp2 = points.bottomLeft.shiftTowards(points.bottomRight, 50)
+ points.leftCp1 = points.bottomLeft.shiftFractionTowards(points.taperLeft, 2 / 7)
+ points.leftCp2 = points.bottomLeft.shiftFractionTowards(points.bottomRight, 0.2)
 
- points.rightCp1 = points.bottomRight.shiftTowards(points.taperRight, 50)
- points.rightCp2 = points.bottomRight.shiftTowards(points.bottomLeft, 50)
+ points.rightCp1 = points.bottomRight.shiftFractionTowards(points.taperRight, 2 / 7)
+ points.rightCp2 = points.bottomRight.shiftFractionTowards(points.bottomLeft, 0.2)
+
 
 
   paths.slit = new Path()
