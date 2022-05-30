@@ -8,6 +8,8 @@ const currentChildren = current => Object.values(order(current))
   .filter(entry => (typeof entry === 'object'))
 
 const ReadMore = props => {
+  // Don't bother if we don't have the navigation tree in app
+  if (!props.app) return null
 
   const root = get(props.app.navigation, props.slug.split('/'))
   const list = []
