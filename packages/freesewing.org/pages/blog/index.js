@@ -1,4 +1,4 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Link from 'next/link'
 import TimeAgo from 'react-timeago'
@@ -18,12 +18,12 @@ const Preview = ({ app, post }) => (
           backgroundSize: 'cover',
         }}>
           <div className="grow"></div>
-          <div className="text-right mb-8">
+          <div className="text-right mb-3 lg:mb-8">
             <div className={`
-              bg-neutral text-neutral-content
-              bg-opacity-90
-              px-8 text-right
-              py-4
+              bg-neutral text-neutral-content bg-opacity-90 text-right
+              px-4 py-1
+              lg:px-8 lg:py-4
+
             `}>
               <h5 className={`
                 text-neutral-content
@@ -55,7 +55,7 @@ const BlogIndexPage = (props) => {
 
   return (
     <Page app={app} title={t('blog')} slug='blog'>
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 px-8">
         {props.posts.map(post => <Preview app={app} post={post} key={post.slug}/>)
         }
       </div>

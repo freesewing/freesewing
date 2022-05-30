@@ -1,4 +1,4 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import TimeAgo from 'react-timeago'
 import MdxWrapper from 'shared/components/wrappers/mdx'
@@ -68,7 +68,7 @@ const PostPage = ({ post, author }) => {
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
-      <article className="mb-12">
+      <article className="mb-12 px-8">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
           <span><TimeAgo date={post.date} /> [{post.date}]</span>
           <span>
