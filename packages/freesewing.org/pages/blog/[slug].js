@@ -98,7 +98,6 @@ const PostPage = ({ post, author }) => {
           <Author author={author} />
         </div>
       </article>
-      <pre>{JSON.stringify(author, null ,2)}</pre>
     </Page>
   )
 }
