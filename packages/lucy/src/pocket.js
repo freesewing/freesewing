@@ -4,9 +4,10 @@ export default function (part) {
 
 
     //pocket seams here 
-  let pocketLength = (800 * options.length)
-  let pocketWidth = (500 * options.width)
-  let pocketEdge = (options.edge)
+  let pocketLength = 800 * options.length
+  let pocketWidth = 500 * options.width
+  let pocketEdge = options.edge
+
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pocketWidth, 0)
@@ -30,17 +31,13 @@ export default function (part) {
 
  //control points curve
 
- points.leftCp1 = points.bottomLeft.shiftTowards(points.taperLeft, 50)
- points.leftCp2 = points.bottomLeft.shiftTowards(points.bottomRight, 50)
+ points.leftCp1 = points.bottomLeft.shiftFractionTowards(points.taperLeft, 2 / 7)
+ points.leftCp2 = points.bottomLeft.shiftFractionTowards(points.bottomRight, 0.2)
 
- points.rightCp1 = points.bottomRight.shiftTowards(points.taperRight, 50)
- points.rightCp2 = points.bottomRight.shiftTowards(points.bottomLeft, 50)
+ points.rightCp1 = points.bottomRight.shiftFractionTowards(points.taperRight, 2 / 7)
+ points.rightCp2 = points.bottomRight.shiftFractionTowards(points.bottomLeft, 0.2)
 
 
-  paths.slit = new Path()
-  .move(points.center)
-  .line(points.middle)
-  .attr("class", "path fabric dashed")
 
   paths.seam = new Path()
     .move(points.centerLeft)
@@ -52,18 +49,22 @@ export default function (part) {
     .line(points.taperRight)
     .line(points.centerRight)
     .close()
-  
     
   // Complete?
   if (complete) {
+  
+  paths.slit = new Path()
+  .move(points.center)
+  .line(points.middle)
+  .attr("class", "path fabric dashed")
+  
     points.logo = points.center.shiftOutwards(points.middle, pocketWidth / 5)
     snippets.logo = new Snippet('logo', points.logo)
     
     points.scalebox = points.logo
       .shift(270, pocketWidth / 5)
       macro("scalebox", { at: points.scalebox })  
-    
-
+      
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

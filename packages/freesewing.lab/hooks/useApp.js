@@ -2,7 +2,7 @@ import { useState } from 'react'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Patterns
-import patterns from 'site/patterns.json'
+import patterns from 'shared/config/designs.json'
 // Locale and translation
 import { useTranslation } from 'next-i18next'
 import { capitalize } from 'shared/utils'

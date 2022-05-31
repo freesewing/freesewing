@@ -9,7 +9,6 @@ import gdpr from './gdpr.yaml'
 import i18n from './i18n.yaml'
 import intro from './intro.yaml'
 import measurements from './measurements.yaml'
-import lab from './lab.yaml'
 import options from './options/'
 import optiongroups from './optiongroups.yaml'
 import parts from './parts.yaml'
@@ -32,7 +31,6 @@ const topics = {
   i18n,
   intro,
   measurements,
-  lab,
   options,
   optiongroups,
   parts,

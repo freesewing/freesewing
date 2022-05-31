@@ -6,6 +6,9 @@ import account from "./account.mjs"
 import app from "./app.mjs"
 import cfp from "./cfp.mjs"
 import common from "./common.mjs"
+import homepage from "./homepage.mjs"
+import patrons from "./patrons.mjs"
+import posts from "./posts.mjs"
 import themes from "./themes.mjs"
 import workbench from "./workbench.mjs"
 import cty from "./cty.mjs"
@@ -18,6 +21,7 @@ import intro from "./intro.mjs"
 import jargon from "./jargon.mjs"
 import lab from "./lab.mjs"
 import measurements from "./measurements.mjs"
+import ograph from "./ograph.mjs"
 import optiongroups from "./optiongroups.mjs"
 import o_aaron from "./o_aaron.mjs"
 import o_albert from "./o_albert.mjs"
@@ -70,6 +74,9 @@ const allNamespaces = {
   app,
   cfp,
   common,
+  homepage,
+  patrons,
+  posts,
   themes,
   workbench,
   cty,
@@ -82,6 +89,7 @@ const allNamespaces = {
   jargon,
   lab,
   measurements,
+  ograph,
   optiongroups,
   o_aaron,
   o_albert,

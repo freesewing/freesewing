@@ -6,6 +6,10 @@ import account from "./account.mjs"
 import app from "./app.mjs"
 import cfp from "./cfp.mjs"
 import common from "./common.mjs"
+import homepage from "./homepage.mjs"
+import ograph from "./ograph.mjs"
+import patrons from "./patrons.mjs"
+import posts from "./posts.mjs"
 import themes from "./themes.mjs"
 import workbench from "./workbench.mjs"
 import cty from "./cty.mjs"
@@ -70,6 +74,10 @@ const allNamespaces = {
   app,
   cfp,
   common,
+  homepage,
+  ograph,
+  patrons,
+  posts,
   themes,
   workbench,
   cty,
