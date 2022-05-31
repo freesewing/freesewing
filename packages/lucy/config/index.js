@@ -22,7 +22,7 @@ export default {
     'sewing pattern',
   ],
   optionGroups: {
-    style: ['width', 'length', 'edge' ],
+    style: ['width', 'length', 'edge'],
   },
   measurements: [],
   dependencies: {},
@@ -31,7 +31,7 @@ export default {
   parts: ['pocket'],
   options: {
     width: { pct: 50, min: 30, max: 100 },
-    length: {pct: 50, min: 30, max:100},
+    length: { pct: 50, min: 30, max: 100 },
     edge: { pct: 25, min: 20, max: 50 },
   },
 }
