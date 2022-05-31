@@ -62,7 +62,7 @@ const PostPage = ({ post, maker }) => {
     app.getBreadcrumb('showcase'),
     [ post.title ]
   ]
-  console.log(crumbs)
+
   return (
     <Page app={app} title={post.title} crumbs={crumbs} >
       <article className="mb-12 px-8 max-w-7xl">
