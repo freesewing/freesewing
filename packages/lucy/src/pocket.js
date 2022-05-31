@@ -41,6 +41,7 @@ export default function (part) {
     .curve_(points.bottomRight, points.rightCp1)
     .line(points.taperRight)
     .line(points.centerRight)
+    .line(points.centerLeft)
     .close()
 
   // Complete?
