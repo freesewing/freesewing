@@ -10,12 +10,7 @@ const config = {
   type: 'pattern',
   difficulty: 4,
   optionGroups: {
-    fit: [
-      ...Brian.config.optionGroups.fit,
-      'waistEase',
-      'hipsEase',
-      'roundBack',
-    ],
+    fit: [...Brian.config.optionGroups.fit, 'waistEase', 'hipsEase', 'roundBack'],
     style: [
       ...Brian.config.optionGroups.style,
       'hemStyle',
@@ -70,11 +65,7 @@ const config = {
       'ffsa',
     ],
   },
-  measurements: [
-    ...Brian.config.measurements,
-    'waist',
-    'hips',
-  ],
+  measurements: [...Brian.config.measurements, 'waist', 'hips'],
   dependencies: {
     sleeveBase: ['frontBase', 'backBase', 'back'],
     sleeve: ['sleeveBase', 'front', 'back'],
