@@ -37,11 +37,7 @@ export default {
     ],
     advanced: Brian.config.optionGroups.advanced,
   },
-  measurements: [
-    ...Brian.config.measurements,
-    'head',
-    'hips',
-  ],
+  measurements: [...Brian.config.measurements, 'head', 'hips'],
   dependencies: {
     backBase: 'base',
     frontBase: 'backBase',
