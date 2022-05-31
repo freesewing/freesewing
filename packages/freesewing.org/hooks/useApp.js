@@ -106,7 +106,7 @@ function useApp(full = true) {
   /*
    * Helper method to construct breadcrumb from navigation structure
    */
-  const getBreadcrumb = slug => ({ title: get(navigation, slug).__title, slug })
+  const getBreadcrumb = slug => ([ get(navigation, slug).__title, `/${slug}` ])
 
   return {
     // Static vars

@@ -15,7 +15,7 @@ const Breadcrumbs = ({ crumbs=[], title }) => (
       <React.Fragment key={crumb[1]}>
         <li className="text-base-content px-2">&raquo;</li>
         <li>
-          {crumb[2]
+          {crumb[1]
             ?  (
               <Link href={crumb[1]}>
                 <a title={crumb[0]} className="text-secondary hover:text-secondary-focus">
