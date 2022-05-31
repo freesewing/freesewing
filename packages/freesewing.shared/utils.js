@@ -87,10 +87,23 @@ export const strapiImage = (img, sizes=['thumbnail', 'xlarge', 'large', 'medium'
   for (const size of sizes) {
     if (img.formats[size]) image.sizes[size] = {
       w: img.formats[size].width,
-      h: img.formats[size].width,
+      h: img.formats[size].height,
       url: img.formats[size].url,
     }
   }
+
+  // Some images only have a small original, and thus no (resized) sizes
+  // In that case, return the original for the requested size
+  if (Object.keys(image.sizes).length < 1) {
+    for (const size of sizes) {
+      image.sizes[size] = {
+        w: img.width,
+        h: img.height,
+        url: img.url,
+      }
+    }
+  }
+  console.log({image, img, sizes})
 
   return image
 }
