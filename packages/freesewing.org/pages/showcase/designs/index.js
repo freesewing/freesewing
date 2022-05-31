@@ -8,7 +8,7 @@ import { strapiImage } from 'shared/utils.js'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-export const PreviewTile = ({ img, slug, title }) => (
+const PreviewTile = ({ img, slug, title }) => (
   <div
     style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
     className={`
@@ -19,10 +19,7 @@ export const PreviewTile = ({ img, slug, title }) => (
     `}
   >
     <Link href={`/showcase/${slug}`}>
-      <a className={`
-        w-42 h-42 block
-        md:w-56 md:h-56
-        `} title={title}/>
+      <a className="w-36 h-36 block" title={title}/>
     </Link>
   </div>
 )
@@ -49,7 +46,6 @@ const DesignPosts = ({ design, posts }) => {
     </div>
   )
 }
-
 const ShowcaseIndexPage = (props) => {
   const app = useApp()
   const { t } = useTranslation()
