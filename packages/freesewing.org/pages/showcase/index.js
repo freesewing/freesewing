@@ -15,6 +15,7 @@ const PreviewTile = ({ img, slug, title }) => (
       rounded-full inline-block border-base-100 shrink-0
       w-42 h-42 -ml-8 border-8
       md:w-56 md:h-56 md:-ml-12
+      theme-gradient
     `}
   >
     <Link href={`/showcase/${slug}`}>
