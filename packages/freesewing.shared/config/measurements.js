@@ -41,10 +41,7 @@ export const measurements = [
 ]
 
 /* A list of measurments that are degrees (rather than mm) */
-export const degreeMeasurements = [
-  'shoulderSlope'
-]
+export const degreeMeasurements = ['shoulderSlope']
 
 /* Helper method to determine whether a measurement uses degrees */
-export const isDegreeMeasurement = measie => (degreeMeasurements.indexOf(measie) !== -1)
-
+export const isDegreeMeasurement = (measie) => degreeMeasurements.indexOf(measie) !== -1
