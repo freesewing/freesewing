@@ -111,6 +111,8 @@ packageJson:
       - jargon
       - gatsby
       - gatsby-plugin
+  lucy:
+    author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
   plugin-gore:
