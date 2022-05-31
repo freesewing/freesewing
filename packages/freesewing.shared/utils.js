@@ -103,7 +103,6 @@ export const strapiImage = (img, sizes=['thumbnail', 'xlarge', 'large', 'medium'
       }
     }
   }
-  console.log({image, img, sizes})
 
   return image
 }
