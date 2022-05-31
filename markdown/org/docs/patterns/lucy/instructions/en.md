@@ -1,5 +1,5 @@
 ---
-title: "Lucy: Sewing Instructions"
+title: "Lucy exterior pocket: Sewing Instructions"
 ---
 
 <Note>
