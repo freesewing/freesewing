@@ -128,7 +128,6 @@ export async function getStaticProps({ params, locale }) {
         slug,
         ...(await mdxCompiler(post.body)),
         title: post.title,
-        linktitle: post.linktitle,
         date: post.date,
         caption: post.caption,
         image: {
@@ -151,7 +150,7 @@ export async function getStaticProps({ params, locale }) {
 
 export const getStaticPaths = async () => {
   const paths = await fetch(
-    `${strapiHost}/blogposts?_locale=en&dev_ne=true`
+    `${strapiHost}/blogposts?_locale=en&dev_ne=true&_limit=-1`
   )
   .then(response => response.json())
   .then(data => data.map(post => ({ params: { slug: post.slug } })))
