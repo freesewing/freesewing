@@ -1,3 +1,5 @@
+import get from 'lodash.get'
+
 // Generic rounding method
 export const round = (val, decimals=1) => Math.round(val*Math.pow(10, decimals))/Math.pow(10, decimals)
 
@@ -106,3 +108,17 @@ export const strapiImage = (img, sizes=['thumbnail', 'xlarge', 'large', 'medium'
 
   return image
 }
+
+export const getCrumbs = (app, slug=false, title) => {
+  if (!slug) return null
+  const crumbs = []
+  const chunks = slug.split('/')
+  for (const i in chunks) {
+    const j = parseInt(i)+parseInt(1)
+    const page = get(app.navigation, chunks.slice(0,j))
+    if (page) crumbs.push([page.__linktitle, '/'+chunks.slice(0,j).join('/'), (j < chunks.length)])
+  }
+
+  return crumbs
+}
+

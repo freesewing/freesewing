@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import get from 'lodash.get'
 import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
@@ -97,6 +98,16 @@ function useApp(full = true) {
     setNavigation(set(navigation, path, content))
   }
 
+  /*
+   * Helper method to get title from navigation structure
+   */
+  const getTitle = slug => get(navigation, slug).__title
+
+  /*
+   * Helper method to construct breadcrumb from navigation structure
+   */
+  const getBreadcrumb = slug => ({ title: get(navigation, slug).__title, slug })
+
   return {
     // Static vars
     site: 'org',
@@ -123,6 +134,10 @@ function useApp(full = true) {
 
     // State handlers
     togglePrimaryMenu,
+
+    // Navigation
+    getTitle,
+    getBreadcrumb,
   }
 }
 
