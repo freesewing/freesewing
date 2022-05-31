@@ -1,39 +1,22 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import Link from 'next/link'
-import PageLink from 'shared/components/page-link.js'
 import TimeAgo from 'react-timeago'
+import MdxWrapper from 'shared/components/wrappers/mdx'
+import mdxCompiler from 'shared/mdx/compiler'
+import Markdown from 'react-markdown'
+import Head from 'next/head'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
 import { strapiImage } from 'shared/utils.js'
 import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
-export const PreviewTile = ({ img, slug, title }) => (
-  <div
-    style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
-    className={`
-      rounded-full inline-block border-base-100 shrink-0
-      w-42 h-42 -ml-8 border-8
-      md:w-56 md:h-56 md:-ml-12
-      theme-gradient
-    `}
-  >
-    <Link href={`/showcase/${slug}`}>
-      <a className={`
-        w-42 h-42 block
-        md:w-56 md:h-56
-        `} title={title}/>
-    </Link>
-  </div>
-)
+import designs from 'shared/config/designs.json'
+import { PreviewTile } from '../index.js'
+import PageLink from 'shared/components/page-link.js'
 
 const DesignPosts = ({ design, posts }) => {
   const { t } = useTranslation(['patterns'])
   return (
     <div className='py-8'>
-      <h2 className="bg-clip-text bg-success m-0">
-        <PageLink href={`/showcase/designs/${design}`} txt={t(`${design}.t`)} />
-      </h2>
       <div className={`
         flex flex-row overflow-visible
         -mr-8 pl-8
@@ -50,9 +33,9 @@ const DesignPosts = ({ design, posts }) => {
   )
 }
 
-const ShowcaseIndexPage = (props) => {
+const DesignIndexPage = (props) => {
   const app = useApp()
-  const { t } = useTranslation()
+  const { t } = useTranslation(['common', 'patterns'])
 
   const designs = {}
   for (const post of props.posts) {
@@ -63,7 +46,7 @@ const ShowcaseIndexPage = (props) => {
   }
 
   return (
-    <Page app={app} title={t('showcase')} slug='showcase'>
+    <Page app={app} title={t('showcase')+': '+t(`patterns:${props.design}.t`)} slug='showcase'>
       <div className={`
         px-8 2xl:pl-16 overflow-visible overscroll-x-hidden
         max-w-sm
@@ -72,14 +55,26 @@ const ShowcaseIndexPage = (props) => {
         xl:max-w-3xl
         2xl:max-w-7xl
       `}>
-        {Object.keys(designs).sort().map(design => <DesignPosts
-          key={design} design={design} posts={designs[design]} />)}
+        <div className='py-8' >
+          <div className={`
+            flex flex-row flex-wrap
+            -mr-8 pl-8
+            md:-mr-12 md:pl-12
+          `}>
+          {props.posts.map(post => <PreviewTile
+            img={`${strapiHost}${post?.image?.sizes?.medium?.url}`}
+            slug={post.slug}
+            title={post.title}
+            key={post.slug}
+          />)}
+          </div>
+        </div>
       </div>
     </Page>
   )
 }
 
-export default ShowcaseIndexPage
+export default DesignIndexPage
 
 /*
  * getStaticProps() is used to fetch data at build-time.
@@ -92,16 +87,21 @@ export default ShowcaseIndexPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ params, locale }) {
-
-  const posts = await fetch(
-    `${strapiHost}/showcaseposts?_locale=${locale}&_sort=date:DESC&_limit=-1`
-  )
+  const { design } = params
+  // Strapi filtering syntax
+  const url = `${strapiHost}/showcaseposts?_locale=${locale}&_sort=date:DESC` +
+    `&_where[_or][0][design1_eq]=${design}` +
+    `&_where[_or][1][design2_eq]=${design}` +
+    `&_where[_or][2][design3_eq]=${design}` +
+    `&_limit=-1`
+  const posts = await fetch(url)
   .then(response => response.json())
   .then(data => data)
   .catch(err => console.log(err))
 
   return {
     props: {
+      design,
       posts: posts.map(post => {
         const designs = [post.design1]
         if (post.design2 && post.design2.length > 2) designs.push(post.design2)
@@ -117,6 +117,20 @@ export async function getStaticProps({ params, locale }) {
       }),
       ...(await serverSideTranslations(locale)),
     }
+  }
+}
+
+export const getStaticPaths = async () => {
+
+  const paths = [
+    ...designs.accessories,
+    ...designs.blocks,
+    ...designs.garments
+  ].map( design => ({ params: { design } }))
+
+  return {
+    paths,
+    fallback: false,
   }
 }
 

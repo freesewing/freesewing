@@ -5,6 +5,7 @@ import MdxWrapper from 'shared/components/wrappers/mdx'
 import mdxCompiler from 'shared/mdx/compiler'
 import Markdown from 'react-markdown'
 import Head from 'next/head'
+import PageLink from 'shared/components/page-link.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
 import { strapiImage } from 'shared/utils.js'
@@ -68,15 +69,19 @@ const PostPage = ({ post, maker }) => {
     <Page app={app} title={post.title} crumbs={crumbs} >
       <article className="mb-12 px-8 max-w-7xl">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
-          <span><TimeAgo date={post.date} /> [{post.date}]</span>
-          <span>
+          <div><TimeAgo date={post.date} /> [{post.date}]</div>
+          <div>{post.designs.map(design => (
+            <PageLink href={`/showcase/designs/${design}`}
+            txt={design} key={design} className="px-2 capitalize" />
+          ))}</div>
+          <div>
             By <a
               href="#maker"
               className="text-secondary hover:text-secondary-focus"
             >
               {maker.displayname || 'FIXME: No displayname'}
             </a>
-          </span>
+          </div>
         </div>
         <figure>
           <img
@@ -120,6 +125,10 @@ export async function getStaticProps({ params, locale }) {
   .then(data => data[0])
   .catch(err => console.log(err))
 
+  const designs = [post.design1]
+  if (post.design2 && post.design2.length > 2) designs.push(post.design2)
+  if (post.design3 && post.design3.length > 2) designs.push(post.design3)
+
   return {
     props: {
       post: {
@@ -133,6 +142,7 @@ export async function getStaticProps({ params, locale }) {
           h: post.image.height,
           url: post.image.url
         },
+        designs,
       },
       maker: {
         displayname: post.maker.displayname,
