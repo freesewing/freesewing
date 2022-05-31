@@ -25,7 +25,6 @@ export default (part) => {
   points.wristRight = points.centerWrist.shift(0, (measurements.wrist * (1 + options.cuffEase)) / 2)
   points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
 
-
   // Paths
   paths.sleevecap.render = false
   paths.seam = new Path()
