@@ -96,7 +96,7 @@ export const prebuildLab = async (site) => {
     'utf-8'
   ))
   const patterns = JSON.parse(await fs.readFile(
-    path.resolve('..', 'freesewing.lab', 'patterns.json'),
+    path.resolve('..', 'freesewing.shared', 'config', 'designs.json'),
     'utf-8'
   ))
   const plugins = JSON.parse(await fs.readFile(
