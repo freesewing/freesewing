@@ -28,14 +28,15 @@ const values = {
   bool: props => {
     const { t } = useTranslation(['app'])
     const dflt = props.pattern.config.options[props.option].bool
-    const current = props.gist?.options?.[props.option]
+    let current = props.gist?.options?.[props.option]
+    current = current === undefined ? dflt : current;
     return (
       <span className={
         (dflt==current || typeof current === 'undefined')
           ? 'text-secondary-focus'
           : 'text-accent'
       }>
-        {props.gist?.options?.[props.option]
+        {current
           ? t('yes')
           : t('no')
         }
@@ -69,7 +70,7 @@ const values = {
   },
   constant: props => {
     return <p>No constant val yet</p>
-  },
+  }
 }
 
 const Tmp = props => <p>not yet</p>
@@ -86,18 +87,23 @@ const inputs = {
 
 const Option = props => {
   const { t } = useTranslation([`o_${props.pattern.config.name}`])
-  const type = optionType(props.pattern.config.options[props.option])
+  const opt = props.pattern.config.options[props.option];
+  const type = getOptionType(opt)
   const Input = inputs[type]
   const Value = values[type]
+  const hide = opt.hide && opt.hide(props.draft.settings.options);
 
   const toggleBoolean = () => {
-    const dflt = props.pattern.config.options[props.option].bool
+    const dflt = opt.bool
     const current = props.gist?.options?.[props.option]
     if (typeof current === 'undefined')
       props.updateGist(['options', props.option], !dflt)
     else props.unsetGist(['options', props.option])
   }
 
+  if (hide) {
+    return <Li></Li>
+  }
   return (type === 'bool')
     ? (
       <Li>
