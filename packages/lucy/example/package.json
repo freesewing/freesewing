@@ -1,7 +1,7 @@
 {
   "name": "lucy",
   "homepage": "https://lucy.freesewing.dev/",
-  "version": "2.20.7",
+  "version": "",
   "private": true,
   "dependencies": {
     "@fontsource/permanent-marker": "latest",
@@ -22,7 +22,7 @@
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^v4.0.0-alpha.57",
-    "prismjs": "1.23.0",
+    "prismjs": "1.25.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-intl": "^5.18.0",
@@ -47,6 +47,7 @@
     "defaults"
   ],
   "devDependencies": {
+    "babel-plugin-prismjs": "2.0.1",
     "react-error-overlay": "6.0.9"
   },
   "resolutions": {
