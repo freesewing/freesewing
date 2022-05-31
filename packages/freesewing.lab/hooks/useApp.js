@@ -6,6 +6,7 @@ import patterns from 'shared/config/designs.json'
 // Locale and translation
 import { useTranslation } from 'next-i18next'
 import { capitalize } from 'shared/utils'
+import { formatVersionUri } from '../components/version-picker.js'
 import useVersion from 'site/hooks/useVersion.js'
 
 // Initial navigation
@@ -42,7 +43,7 @@ const initialNavigation = (t, version) => {
         __title: capitalize(design),
         __order: design,
         __linktitle: capitalize(design),
-        __slug: `v/${version}/${design}`
+        __slug: formatVersionUri(version,design)
       }
     }
   }

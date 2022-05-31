@@ -20,7 +20,7 @@ const PatternPicker = ({ app }) => {
           <span>{t('designs')}</span>
         </div>
         <ul tabIndex="0" className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 overflow-y-scroll navdrop">
-          {Object.keys(app.patterns).map(section => (
+          {Object.keys(app.navigation).map(section => (
             <React.Fragment key={section}>
               <li className={`
                 capitalize font-bold text-base-content text-center
@@ -28,17 +28,18 @@ const PatternPicker = ({ app }) => {
               `}>
                   {t(app.navigation[section].__title)}
               </li>
-              {app.patterns[section].map(pattern => (
+              {Object.keys(app.navigation[section]).filter((p)=>!p.startsWith('__')).map(pattern => {
+                return (
                 <li key={pattern}>
-                  <Link href={formatVersionUri(version, pattern)}>
+                  <Link href={app.navigation[section][pattern].__slug}>
                     <button className="btn btn-ghost">
                       <span className="text-base-content">
-                        {pattern}
+                        {app.navigation[section][pattern].__title}
                       </span>
                     </button>
                   </Link>
                 </li>
-              ))}
+              )})}
             </React.Fragment>
           ))}
         </ul>
