@@ -9,6 +9,7 @@ import common from "./common.mjs"
 import homepage from "./homepage.mjs"
 import ograph from "./ograph.mjs"
 import patrons from "./patrons.mjs"
+import posts from "./posts.mjs"
 import themes from "./themes.mjs"
 import workbench from "./workbench.mjs"
 import cty from "./cty.mjs"
@@ -76,6 +77,7 @@ const allNamespaces = {
   homepage,
   ograph,
   patrons,
+  posts,
   themes,
   workbench,
   cty,
