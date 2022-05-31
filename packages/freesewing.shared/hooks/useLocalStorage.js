@@ -1,19 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 // See: https://usehooks.com/useLocalStorage/
 
 function useLocalStorage(key, initialValue) {
   const prefix = 'fs_'
-  const [storedValue, setStoredValue] = useState(() => {
-    if (typeof window === 'undefined') return initialValue // SSR has no window object
-    try {
-      const item = window.localStorage.getItem(prefix + key)
-      return item ? JSON.parse(item) : initialValue
-    } catch (error) {
-      console.log(error)
-      return initialValue
-    }
-  })
+  const [storedValue, setStoredValue] = useState(initialValue);
+  const [ready, setReady] = useState(false);
 
   const setValue = (value) => {
     if (typeof window === 'undefined') return null // SSR has no window object
@@ -26,7 +18,15 @@ function useLocalStorage(key, initialValue) {
     }
   }
 
-  return [storedValue, setValue]
+  useEffect(() => {
+    const item = window.localStorage.getItem(prefix + key)
+    if (item) {
+      setValue(item ? JSON.parse(item) : initialValue);
+    }
+    setReady(true);
+  }, [])
+
+  return [storedValue, setValue, ready]
 }
 
 export default useLocalStorage
