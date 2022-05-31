@@ -1,3 +1,5 @@
+import get from 'lodash.get'
+
 // Generic rounding method
 export const round = (val, decimals=1) => Math.round(val*Math.pow(10, decimals))/Math.pow(10, decimals)
 
@@ -75,4 +77,48 @@ export const optionType = option => {
 }
 
 export const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
+
+export const strapiImage = (img, sizes=['thumbnail', 'xlarge', 'large', 'medium', 'small', 'xsmall']) => {
+  const image = {
+    caption: img?.caption || '',
+    w: img.width,
+    h: img.height,
+    url: img.url,
+    sizes: {}
+  }
+  for (const size of sizes) {
+    if (img.formats[size]) image.sizes[size] = {
+      w: img.formats[size].width,
+      h: img.formats[size].height,
+      url: img.formats[size].url,
+    }
+  }
+
+  // Some images only have a small original, and thus no (resized) sizes
+  // In that case, return the original for the requested size
+  if (Object.keys(image.sizes).length < 1) {
+    for (const size of sizes) {
+      image.sizes[size] = {
+        w: img.width,
+        h: img.height,
+        url: img.url,
+      }
+    }
+  }
+
+  return image
+}
+
+export const getCrumbs = (app, slug=false, title) => {
+  if (!slug) return null
+  const crumbs = []
+  const chunks = slug.split('/')
+  for (const i in chunks) {
+    const j = parseInt(i)+parseInt(1)
+    const page = get(app.navigation, chunks.slice(0,j))
+    if (page) crumbs.push([page.__linktitle, '/'+chunks.slice(0,j).join('/'), (j < chunks.length)])
+  }
+
+  return crumbs
+}
 

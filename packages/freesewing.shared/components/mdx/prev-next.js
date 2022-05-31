@@ -1,6 +1,8 @@
 import get from 'lodash.get'
 import orderBy from 'lodash.orderby'
 import Link from 'next/link'
+import LeftIcon from 'shared/components/icons/left.js'
+import RightIcon from 'shared/components/icons/right.js'
 
 // helper method to order nav entries
 const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
@@ -72,8 +74,8 @@ const next = app => {
 
 const renderPrevious = node => node
   ? (
-    <div>
-      <span className="mr-2 text-3xl leading-3 opacity-60">&#x025C3;</span>
+    <div className="flex flex-row gap-2 items-center">
+      <LeftIcon className="w-8 h-8"/>
       <Link href={'/'+node.__slug}>
         <a className="text-secondary">{node.__linktitle}</a>
       </Link>
@@ -82,18 +84,18 @@ const renderPrevious = node => node
 
 const renderNext = node => node
   ? (
-    <div>
+    <div className="flex flex-row gap-2 items-center">
       <Link href={'/'+node.__slug}>
-        <a>{node.__linktitle}</a>
+        <a className="text-right">{node.__linktitle}</a>
       </Link>
-      <span className="ml-2 text-3xl leading-3 opacity-60">&#x025B9;</span>
+      <RightIcon className="w-8 h-8"/>
     </div>
   ) : <span></span>
 
 const PrevNext = ({ app }) => {
 
   return (
-    <div className="flex flex-row justify-between border-t mt-12 py-2">
+    <div className="flex flex-row justify-between border-t mt-12 py-2 gap-8">
       {renderPrevious(previous(app))}
       {renderNext(next(app))}
     </div>

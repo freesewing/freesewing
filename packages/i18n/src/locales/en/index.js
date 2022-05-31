@@ -2,7 +2,6 @@ import account from './account.yaml'
 import app from './app.yaml'
 import cfp from './cfp.yaml'
 import cty from './cty.yaml'
-import docs from './docs.yaml'
 import email from './email.yaml'
 import errors from './errors.yaml'
 import filter from './filter.yml'
@@ -10,7 +9,6 @@ import gdpr from './gdpr.yaml'
 import i18n from './i18n.yaml'
 import intro from './intro.yaml'
 import measurements from './measurements.yaml'
-import lab from './lab.yaml'
 import options from './options/'
 import optiongroups from './optiongroups.yaml'
 import parts from './parts.yaml'
@@ -26,7 +24,6 @@ const topics = {
   app,
   cfp,
   cty,
-  docs,
   email,
   errors,
   filter,
@@ -34,7 +31,6 @@ const topics = {
   i18n,
   intro,
   measurements,
-  lab,
   options,
   optiongroups,
   parts,
