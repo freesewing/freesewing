@@ -12,7 +12,7 @@ const Breadcrumbs = ({ crumbs=[], title }) => (
       </Link>
     </li>
     {crumbs.map(crumb => (
-      <React.Fragment key={crumb[1]}>
+      <React.Fragment key={crumb[1]+crumb[0]}>
         <li className="text-base-content px-2">&raquo;</li>
         <li>
           {crumb[1]
