@@ -7,10 +7,7 @@ const config = {
   version: pkg.version,
   optionGroups: {
     ...Simon.config.optionGroups,
-    style: [
-      ...Simon.config.optionGroups.style,
-      'contour',
-    ],
+    style: [...Simon.config.optionGroups.style, 'contour'],
     advanced: [
       ...Simon.config.optionGroups.advanced,
       'bustDartAngle',
@@ -18,12 +15,7 @@ const config = {
       'frontDartLength',
     ],
   },
-  measurements: [
-    ...Simon.config.measurements,
-    'bustSpan',
-    'highBust',
-    'hpsToBust',
-  ],
+  measurements: [...Simon.config.measurements, 'bustSpan', 'highBust', 'hpsToBust'],
   inject: {
     ...Simon.config.inject,
     fbaFront: 'front',
@@ -33,10 +25,7 @@ const config = {
     buttonholePlacket: 'fbaFront',
     sleeveBase: 'fbaFront',
   },
-  hide: [
-    ...Simon.config.hide,
-    'fbaFront'
-  ],
+  hide: [...Simon.config.hide, 'fbaFront'],
   options: {
     ...Simon.config.options,
 
