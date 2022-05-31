@@ -45,8 +45,14 @@ const DesignIndexPage = (props) => {
     }
   }
 
+  const crumbs = [
+    app.getBreadcrumb('showcase'),
+    [ t('designs'), '/showcase/designs' ],
+    [ t(`patterns:${props.design}.t`) ]
+  ]
+
   return (
-    <Page app={app} title={t('showcase')+': '+t(`patterns:${props.design}.t`)} slug='showcase'>
+    <Page app={app} title={t('showcase')+': '+t(`patterns:${props.design}.t`)} crumbs={crumbs}>
       <div className={`
         px-8 2xl:pl-16 overflow-visible overscroll-x-hidden
         max-w-sm
