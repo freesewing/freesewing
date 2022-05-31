@@ -1,7 +1,11 @@
+import { configs } from 'shared/designs/index.js'
+import { useTranslation } from 'next-i18next'
+import orderBy from 'lodash.orderby'
+import PageLink from 'shared/components/page-link.js'
 
 const PatternMeasurements = (props) => {
-  return null
-  const intl = useIntl()
+  const { t } = useTranslation(['measurements'])
+
   const sortMeasurements = (measurements) => {
     if (typeof measurements === 'undefined') return []
     let sorted = []
@@ -17,16 +21,30 @@ const PatternMeasurements = (props) => {
     return sorted
   }
 
+  const measurements = {}
+  for (const m of configs[props.pattern].measurements) {
+    measurements[m] = {
+      title: t(`measurements.${m}`),
+      required: true
+    }
+  }
+  for (const m of configs[props.pattern].measurements || []) {
+    measurements[m] = {
+      name: m,
+      title: t(`measurements:${m}`),
+      required: false
+    }
+  }
+
+
   return (
-    <ul className="links">
-      {sortMeasurements(measurements[props.pattern]).map((m) => (
-        <li key={m}>
-          <Link to={'/docs/measurements/' + m.toLowerCase()}>
-            <FormattedMessage id={'measurements.' + m} />
-          </Link>
+    <ol className="list-inside ml-8 my-4">
+      {orderBy(measurements, ['title'], ['asc']).map(m => (
+        <li key={m.name}>
+          <PageLink href={'/docs/measurements/' + m.name.toLowerCase()} txt={m.title} />
         </li>
       ))}
-    </ul>
+    </ol>
   )
 }
 
