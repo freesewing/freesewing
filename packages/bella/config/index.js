@@ -19,7 +19,13 @@ export default {
       'frontArmholePitchDepth',
       'backArmholePitchDepth',
     ],
-    advanced: ['backNeckCutout', 'backHemSlope', 'frontShoulderWidth', 'highBustWidth', 'shoulderToShoulderEase'],
+    advanced: [
+      'backNeckCutout',
+      'backHemSlope',
+      'frontShoulderWidth',
+      'highBustWidth',
+      'shoulderToShoulderEase',
+    ],
   },
   measurements: [
     'highBust',
