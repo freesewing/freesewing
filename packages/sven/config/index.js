@@ -10,25 +10,11 @@ export default {
   type: 'pattern',
   difficulty: 3,
   optionGroups: {
-    fit: [
-      ...Brian.config.optionGroups.fit,
-      'hipsEase',
-    ],
-    style: [
-      ...Brian.config.optionGroups.fit,
-      'ribbing',
-      'ribbingHeight',
-    ],
-    advanced: [
-      ...Brian.config.optionGroups.advanced,
-      'ribbingStretch',
-    ],
+    fit: [...Brian.config.optionGroups.fit, 'hipsEase'],
+    style: [...Brian.config.optionGroups.fit, 'ribbing', 'ribbingHeight'],
+    advanced: [...Brian.config.optionGroups.advanced, 'ribbingStretch'],
   },
-  measurements: [
-    ...Brian.config.measurements,
-    'hips',
-    'waist',
-  ],
+  measurements: [...Brian.config.measurements, 'hips', 'waist'],
   dependencies: {
     frontBase: 'base',
     backBase: 'base',
