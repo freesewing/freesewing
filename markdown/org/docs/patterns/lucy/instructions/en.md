@@ -8,7 +8,7 @@ Lucy can be sewn by hand or by machine as you prefer.
 - Put the two pocket pieces together and stitch around the outside edge with your preferred seam allowance
 - Bind the outside edge
 
-#For the top edge and the pocket ties
+# For the top edge and the pocket ties
 
 _either_
 
