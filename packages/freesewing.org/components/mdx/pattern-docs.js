@@ -5,11 +5,12 @@ import { getConfig } from 'shared/designs/index.js'
 import Popout from 'shared/components/popout.js'
 import { useTranslation } from 'next-i18next'
 import DesignTeaser from 'site/components/designs/teaser.js'
-//import PatternOptions from './pattern-options'
-//import PatternMeasurements from './pattern-measurements'
+import PatternOptions from './pattern-options'
+import PatternMeasurements from './pattern-measurements'
+import DocsLink from 'shared/components/docs-link'
 
 const PatternDocs = ({ pattern=false }) => {
-  const { t } = useTranslation(['docs'])
+  const { t } = useTranslation(['common'])
 
   if (!pattern) return <p>Please specify a pattern prop when using the PatternDocs component</p>
 
@@ -27,108 +28,33 @@ const PatternDocs = ({ pattern=false }) => {
           <DesignTeaser design={pattern} />
         </Popout>
       )}
-      <pre>{JSON.stringify(config, null ,2)}</pre>
-    </>
-  )
 
-  return (
-    <>
-      {config.deprecated && (
-        <Popout note>
-          <h5>{capitalize(pattern)} is deprecated</h5>
-          <p>
-            We recommend{' '}
-            <Link to={`/designs/${info[props.pattern].deprecated}/`}>
-              {capitalize(info[props.pattern].deprecated)}
-            </Link>{' '}
-            instead.
-          </p>
-        </Popout>
-      )}
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          justifyContent: 'space-between',
-          marginTop: '1rem',
-        }}
+      <button className="btn btn-primary btn-large btn-contained"
+        href={`/create/${pattern}`}
       >
-        <p>
-          <FormattedMessage id={'patterns.' + props.pattern + '.description'} />
-        </p>
-        <div>
-          <Button
-            style={{ marginRight: '1rem' }}
-            color="primary"
-            variant="contained"
-            size="large"
-            href={'/create/' + props.pattern + '/'}
-          >
-            <PlayIcon style={{ marginRight: '1rem' }} />
-            <FormattedMessage
-              id="app.newThing"
-              values={{
-                thing: [capitalize(props.pattern), ' ', <FormattedMessage id={`app.pattern`} />],
-              }}
-            />
-          </Button>
-          <p>
-            <Hashtag
-              tag={`FreeSewing${capitalize(props.pattern)}`}
-              title={`${capitalize(props.pattern)} Hashtag`}
-            />
-          </p>
-        </div>
-      </div>
-      <h2>
-        <FormattedMessage id="app.patternInstructions" />
-      </h2>
+        {t('newThing', { thing: pattern })}
+      </button>
+      <p>{t(`patterns.${pattern}.description`)}</p>
+
+      <PatternMeasurements pattern={pattern}
+        before={<h2>{t('common:requiredMeasurements')}</h2>} />
+
+      <PatternOptions pattern={pattern}
+        before={<h2>{t('common:patternOptions')}</h2>} />
+
+      <h2>{t('common:patternInstructions')}</h2>
       <ul className="links">
         <li>
-          <Link to={'/docs/patterns/' + props.pattern + '/cutting/'}>
-            {capitalize(props.pattern)} &raquo; <FormattedMessage id="app.cutting" />
-          </Link>
+          <DocsLink slug={`docs/patterns/${pattern}/needs`} />
         </li>
         <li>
-          <Link to={'/docs/patterns/' + props.pattern + '/fabric/'}>
-            {capitalize(props.pattern)} &raquo; <FormattedMessage id="app.fabricOptions" />
-          </Link>
+          <DocsLink slug={`docs/patterns/${pattern}/fabric`} />
         </li>
         <li>
-          <Link to={'/docs/patterns/' + props.pattern + '/instructions/'}>
-            {capitalize(props.pattern)} &raquo; <FormattedMessage id="app.instructions" />
-          </Link>
+          <DocsLink slug={`docs/patterns/${pattern}/cutting`} />
         </li>
         <li>
-          <Link to={'/docs/patterns/' + props.pattern + '/needs/'}>
-            {capitalize(props.pattern)} &raquo; <FormattedMessage id="app.whatYouNeed" />
-          </Link>
-        </li>
-      </ul>
-      <h2>
-        <FormattedMessage id="app.patternOptions" />
-      </h2>
-      <PatternOptions pattern={props.pattern} />
-      {measurements[props.pattern].length > 0 ? (
-        <>
-          <h2>
-            <FormattedMessage id="app.requiredMeasurements" />
-          </h2>
-          <PatternMeasurements pattern={props.pattern} app={props.app} />
-        </>
-      ) : null}
-      <h2>
-        <FormattedMessage id="app.examples" />
-      </h2>
-      <p>
-        <FormattedMessage id="intro.txt-showcase" />:
-      </p>
-      <ul className="links">
-        <li>
-          <Link to={'/showcase/designs/' + props.pattern}>
-            <FormattedMessage id="app.showcase" /> / {capitalize(props.pattern)}
-          </Link>
+          <DocsLink slug={`docs/patterns/${pattern}/instructions`} />
         </li>
       </ul>
     </>
