@@ -48,8 +48,5 @@
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1"
-  },
-  "engines": {
-    "node": ">=14.18.1"
   }
 }
