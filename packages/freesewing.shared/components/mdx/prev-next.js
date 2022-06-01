@@ -29,7 +29,7 @@ const previous = app => {
     let next = false
     for (const node of aside.reverse()) {
       if (next) return node
-      if (node.__slug === app.slug) next = true
+      if (node?.__slug && node.__slug === app.slug) next = true
     }
   }
 
@@ -39,7 +39,7 @@ const previous = app => {
     let next = false
     for (const node of up.reverse()) {
       if (next) return node
-      if (node.__slug === app.slug.slice(0, node.__slug.length)) next = true
+      if (node?.__slug && node.__slug === app.slug.slice(0, node.__slug.length)) next = true
     }
   }
   return false
@@ -56,7 +56,7 @@ const next = app => {
     let next = false
     for (const node of aside) {
       if (next) return node
-      if (node.__slug === app.slug) next = true
+      if (node?.__slug && node.__slug === app.slug) next = true
     }
   }
 
@@ -66,7 +66,7 @@ const next = app => {
     let next = false
     for (const node of up) {
       if (next) return node
-      if (node.__slug === app.slug.slice(0, node.__slug.length)) next = true
+      if (node?.__slug && node.__slug === app.slug.slice(0, node.__slug.length)) next = true
     }
   }
   return false
@@ -76,7 +76,7 @@ const renderPrevious = node => node
   ? (
     <div className="flex flex-row gap-2 items-center">
       <LeftIcon className="w-8 h-8"/>
-      <Link href={'/'+node.__slug}>
+      <Link href={'/'+node?.__slug}>
         <a className="text-secondary">{node.__linktitle}</a>
       </Link>
     </div>
@@ -85,7 +85,7 @@ const renderPrevious = node => node
 const renderNext = node => node
   ? (
     <div className="flex flex-row gap-2 items-center">
-      <Link href={'/'+node.__slug}>
+      <Link href={'/'+node?.__slug}>
         <a className="text-right">{node.__linktitle}</a>
       </Link>
       <RightIcon className="w-8 h-8"/>
