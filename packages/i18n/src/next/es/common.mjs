@@ -8,6 +8,9 @@ const common = {
   "community": "Comunidad",
   "designs": "Diseños",
   "docs": "Documentación",
+  "patternInstructions": "Intrucciones de los patrones",
+  "patternOptions": "Opciones del patrón",
+  "requiredMeasurements": "Medidas requeridas",
   "showcase": "Escaparate",
   "sloganCome": "Ven por los patrones de costura",
   "sloganStay": "Quédate por la comunidad"

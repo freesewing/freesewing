@@ -8,6 +8,9 @@ const common = {
   "community": "Community",
   "designs": "Entwurf",
   "docs": "Dokumentation",
+  "patternInstructions": "Anleitungen für das Schnittmuster",
+  "patternOptions": "Schnittmusteroptionen",
+  "requiredMeasurements": "Erforderliche Maße",
   "showcase": "Galerie",
   "sloganCome": "Komm für die Schnittmuster",
   "sloganStay": "Bleib für die Community"

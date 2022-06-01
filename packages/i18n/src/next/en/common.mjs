@@ -8,6 +8,9 @@ const common = {
   "commumity": "Community",
   "designs": "Designs",
   "docs": "Documentation",
+  "patternInstructions": "Pattern instructions",
+  "patternOptions": "Pattern options",
+  "requiredMeasurements": "Required measurements",
   "showcase": "Showcase",
   "sloganCome": "Come for the sewing patterns",
   "sloganStay": "Stay for the community"
