@@ -41,7 +41,7 @@ vous n'avez jamais fait de poches soudées auparavant, vous allez vous passer.
 <Comment by="TangerineShark">
 
 One tricky bit, this documentation is for double welts, but this is I think a single welt?
-Does it need a note to that effect?
+Does it need a note to that effect? 
 
 </Comment>
 
@@ -249,7 +249,7 @@ Refold the waistband, turning half the waistband to the inside. Pin so that the 
 
 <Comment by="TangerineShark">
 
-Probably put a note here about stitching in the ditch?
+Probably put a note here about stitching in the ditch? 
 
 </Comment>
 
