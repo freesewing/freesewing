@@ -4,9 +4,15 @@ title: "Sleeve length bonus"
 
 The amount to extend the sleeve beyond the length of the sleeve in the base block.
 
-> #### Dies soll nicht Null sein<
-> 
-> Setting this to zero will make the sleeve length the same as the base length of the Bent block, which is certainly too short for a coat. Bitte beachten Sie den Standardwert und verwenden Sie dies als Grundlage, um den Ärmel zu verlängern oder zu verkürzen.
+<Note>
+
+#### This is not supposed to be zero
+
+Setting this to zero will make the sleeve length the same as the base length of the Bent block,
+which is certainly too short for a coat.
+Bitte beachten Sie den Standardwert und verwenden Sie dies als Grundlage, um den Ärmel zu verlängern oder zu verkürzen.
+
+</Note>
 
 ## Effekt dieser Option auf das Schnittmuster
 
