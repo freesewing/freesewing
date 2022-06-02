@@ -8,7 +8,7 @@ Lucy can be sewn by hand or by machine as you prefer.
 
 </Note>
 
-### Step 1: Constructing the Pocket Bag
+## Step 1: Constructing the Pocket Bag
 
 - *Bind* the pocket slit.
 - With *wrong sides together* stitch the two pocket pieces together around the outside.
@@ -20,11 +20,11 @@ If you prefer you can *french seam* the outer edges of the pocket bag together.
 
 </Note>
 
-### Step 2: Binding the top edge and ties.
+## Step 2: Binding the top edge and ties.
 
 There are two methods for binding the top edge. One is to create a loop and the other is to bind with the ties. Read through both methods carefully and decide which one you wish to use.
 
-#### Create a loop
+### Create a loop
 
 - Cut a piece of binding the length of the top edge + seam allowance.
 - Fold under the short edges of the binging and stitch in place.
@@ -38,12 +38,12 @@ To make sure the binding is long enough, instead of cutting the binding down you
 
 </Tip>
 
-#### Bind with the ties
+### Bind with the ties
 
 - Use a piece of tape as binding and tie, attach the pocket bag to the centre of the tape.
 - *Bind* the top edge of the pocket bag whilst leaving the remainder of tape free.
 - *Finish* the tape ends.
 
-### Step 3: Enjoy!
+## Step 3: Enjoy!
 
 That's it! You're all done! Now go stuff your new pockets to the brim!
