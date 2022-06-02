@@ -27,7 +27,11 @@ Optional: In a drapier knit, you may choose to reinforce the shoulder seams by s
 
 ## Step 3: Sew knit binding to the neck opening.
 
-<!--- Tawni is also writing up additional instructions for installing a V-neck --->
+<Comment by="TangerineShark">
+
+Tawni is also writing up additional instructions for installing a V-neck
+
+</Comment>
 
 <Tip>
 

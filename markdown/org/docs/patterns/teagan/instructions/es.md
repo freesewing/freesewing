@@ -27,7 +27,11 @@ Opcional: En un tejedor más apretado, puede optar por reforzar las costuras del
 
 ## Paso 3: Mezclar el tejido en la abertura del cuello.
 
-<!--- Tawni is also writing up additional instructions for installing a V-neck --->
+<Comment by="TangerineShark">
+
+Tawni is also writing up additional instructions for installing a V-neck
+
+</Comment>
 
 <Tip>
 

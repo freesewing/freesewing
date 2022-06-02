@@ -38,8 +38,12 @@ nunca has hecho pockets de soldadura antes, estarás bien.
 
 </Tip>
 
-<!--- One tricky bit, this documentation is for double welts, but this is I think a single welt?
-Does it need a note to that effect? --->
+<Comment by="TangerineShark">
+
+One tricky bit, this documentation is for double welts, but this is I think a single welt?
+Does it need a note to that effect?
+
+</Comment>
 
 ## Paso 2: Prepara los pockets frontales
 
@@ -243,7 +247,11 @@ Press the waistband up. Press the seam allowance in on the opposite side of the 
 
 Refold the waistband, turning half the waistband to the inside. Pin so that the seam allowance on the inside is just below the seam joining the waistband to the pants, and pin in place around the waistband. From the outside, stitch in the ditch, catching the inner waistband as you go.
 
-<!--- Probably put a note here about stitching in the ditch? --->
+<Comment by="TangerineShark">
+
+Probably put a note here about stitching in the ditch? 
+
+</Comment>
 
 ![Waistband sewn with enclosed seams](step13c.svg)
 
@@ -318,7 +326,11 @@ Refold the cuff, turning half the cuff to the inside. Pin so that the seam allow
 
 If you have wider cuff elastic, you may want to stitch a horizontal line halfway up the cuff. This will hold your elastic in place and help keep it from folding or twisting. Make sure to stretch the elastic evenly as you sew, so that it gathers the fabric evenly. (If you sew without stretching the elastic, you risk lumpy gathers and a leg opening too narrow to get your foot through.)
 
-<!--- You could also do a zig-zag stitch here, but I think straight probably looks nicer? --->
+<Comment by="TangerineShark">
+
+You could also do a zig-zag stitch here, but I think straight probably looks nicer? 
+
+</Comment>
 
 If you like the look, you can also sew more than one line of stitches, evenly spaced between the top and bottom of the cuff.
 
@@ -351,4 +363,8 @@ será más fácil de maniobrar a través de la tela, y arrasará la cuerda de di
 
 You did it! Way to go!
 
-<!--- Maybe we want to put a fun gif here? --->
+<Comment by="TangerineShark">
+
+Maybe we want to put a fun gif here?
+
+</Comment>
