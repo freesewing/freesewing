@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { getConfig } from 'shared/designs/index.js'
 import Popout from 'shared/components/popout.js'
 import { useTranslation } from 'next-i18next'
-import DesignTeaser from 'site/components/designs/teaser.js'
+import Design from 'site/components/design.js'
 import PatternOptions from './pattern-options'
 import PatternMeasurements from './pattern-measurements'
 import DocsLink from 'shared/components/docs-link'
@@ -25,7 +25,7 @@ const PatternDocs = ({ pattern=false }) => {
           <p>
             {t('weRecommendThingInstead', { thing: capitalize(config.deprecated)})}
           </p>
-          <DesignTeaser design={pattern} />
+          <Design design={pattern} />
         </Popout>
       )}
 
