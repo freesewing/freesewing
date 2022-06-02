@@ -6,6 +6,7 @@
     "dev": "SITE=org next dev -p 3002",
     "develop": "SITE=org next dev -p 3002",
     "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.mjs",
+    "i18n": "SITE=org node ../freesewing.shared/prebuild/i18n-only.mjs",
     "build": "next build",
     "export": "yarn prebuild && next build && next export",
     "start": "next start -p 3002",
@@ -23,6 +24,7 @@
     "@tailwindcss/typography": "^0.5.0",
     "algoliasearch": "^4.11.0",
     "daisyui": "^2.0.6",
+    "front-matter": "^4.0.2",
     "lodash.get": "^4.4.2",
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
@@ -46,8 +48,5 @@
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1"
-  },
-  "engines": {
-    "node": ">=14.18.1"
   }
 }

@@ -16,6 +16,7 @@ const PageWrapper= ({
   noSearch=false,
   app=false,
   layout=Docs,
+  crumbs=false,
   children=[]
 }) => {
 
@@ -41,6 +42,7 @@ const PageWrapper= ({
   const childProps = {
     app: app,
     title: title,
+    crumbs: crumbs,
     search, setSearch, toggleSearch: () => setSearch(!search),
     noSearch: noSearch,
   }

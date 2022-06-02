@@ -1,8 +1,9 @@
 //  Accessories
 import florence        from "@freesewing/florence"
-import hortensia       from "@freesewing/hortensia"
 import florent         from "@freesewing/florent"
 import holmes          from "@freesewing/holmes"
+import hortensia       from "@freesewing/hortensia"
+import lucy            from "@freesewing/lucy"
 import trayvon         from "@freesewing/trayvon"
 
 // Blocks
@@ -55,9 +56,10 @@ import tutorial        from "@freesewing/examples"
 export const designs = {
   // Accessories
   florence,
-  hortensia,
   florent,
   holmes,
+  hortensia,
+  lucy,
   trayvon,
   // Blocks
   bella,
@@ -104,6 +106,9 @@ export const designs = {
   rendertest,
   tutorial,
 }
+
+export const configs = {}
+for (const d in designs) configs[d] = designs[d].config
 
 export const getDesign = design => designs[design] || false
 

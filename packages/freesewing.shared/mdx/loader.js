@@ -16,6 +16,8 @@ import smartypants from 'remark-smartypants'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
+// Simple frontmatter extractor
+import frontmatter from 'front-matter'
 /*
  * Summary: Loads markdown from disk and compiles it as MDX.
  *
@@ -73,7 +75,7 @@ const mdxLoader = async (language, site, slug) => {
         smartypants,
         [
           mdxPluginToc,
-          { language: 'en' }
+          { language }
         ]
       ],
       rehypePlugins: [
@@ -82,7 +84,7 @@ const mdxLoader = async (language, site, slug) => {
     })
   )
 
-  return {mdx, intro, toc}
+  return { mdx, intro, toc, frontmatter: frontmatter(md)?.attributes }
 }
 
 export default mdxLoader

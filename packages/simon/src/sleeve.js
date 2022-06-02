@@ -45,9 +45,7 @@ export default (part) => {
   )
     width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap * 1.5)
   const cuffLength = measurements.shoulderToWrist * options.cuffLength
-  points.wristRight = points.bottom
-    .shift(0, width / 2)
-    .shift(90, cuffLength)
+  points.wristRight = points.bottom.shift(0, width / 2).shift(90, cuffLength)
   points.wristLeft = points.wristRight.flipX()
 
   points.cuffMid = new Point(0, points.wristLeft.y)

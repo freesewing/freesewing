@@ -15,6 +15,8 @@ import customComponents from 'shared/components/mdx'
 // Previous-Next navigation
 import PrevNext from '../mdx/prev-next'
 
+const Null = (props) => null
+
 const MdxWrapper = ({mdx, app, t, components={}}) => {
 
   const [mdxModule, setMdxModule] = useState()
@@ -36,14 +38,15 @@ const MdxWrapper = ({mdx, app, t, components={}}) => {
   }
 
   // React component for MDX content
-  const MdxContent = mdxModule ? mdxModule.default : Fragment
+  const MdxContent = mdxModule ? mdxModule.default : Null
 
-  return (
-    <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-lg lg:text-xl">
-      {mdxModule && <MdxContent components={allComponents}/>}
-      <PrevNext app={app} />
-    </div>
-  )
+  return app
+    ? (
+      <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-lg lg:text-xl">
+        {mdxModule && <MdxContent components={allComponents}/>}
+        <PrevNext app={app} />
+      </div>
+    ) : <MdxContent components={allComponents}/>
 }
 
 export default MdxWrapper

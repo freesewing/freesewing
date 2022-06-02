@@ -64,6 +64,9 @@ hugo:
 jaeger:
   description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
   title: Jaeger jacket
+lucy:
+  description: Lucy is a historical pocket that you can tie around your waist.
+  title: Lucy tie-on pocket
 lunetius:
   description: Lunetius is a lacerna, a historical Roman cloak
   title: Lunetius Lacerna

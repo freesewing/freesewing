@@ -753,20 +753,14 @@ Path.prototype.split = function (point) {
     let path = divided[pi]
     if (path.ops[1].type === 'line') {
       if (path.ops[0].to.sitsRoughlyOn(point)) {
-        secondHalf.push(new Path(this.debug)
-          .withRaise(this.raise)
-          .move(path.ops[0].to)
-          .line(path.ops[1].to)
+        secondHalf.push(
+          new Path(this.debug).withRaise(this.raise).move(path.ops[0].to).line(path.ops[1].to)
         )
-      }
-      else if (path.ops[1].to.sitsRoughlyOn(point)) {
-        firstHalf.push(new Path(this.debug)
-          .withRaise(this.raise)
-          .move(path.ops[0].to)
-          .line(path.ops[1].to)
+      } else if (path.ops[1].to.sitsRoughlyOn(point)) {
+        firstHalf.push(
+          new Path(this.debug).withRaise(this.raise).move(path.ops[0].to).line(path.ops[1].to)
         )
-      }
-      else if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
+      } else if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
         firstHalf = divided.slice(0, pi)
         firstHalf.push(new Path(this.debug).withRaise(this.raise).move(path.ops[0].to).line(point))
         pi++
@@ -777,21 +771,27 @@ Path.prototype.split = function (point) {
       }
     } else if (path.ops[1].type === 'curve') {
       if (path.ops[0].to.sitsRoughlyOn(point)) {
-        secondHalf.push(new Path(this.debug)
-          .withRaise(this.raise)
-          .move(path.ops[0].to)
-          .curve(path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to)
+        secondHalf.push(
+          new Path(this.debug)
+            .withRaise(this.raise)
+            .move(path.ops[0].to)
+            .curve(path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to)
         )
-      }
-      else if (path.ops[1].to.sitsRoughlyOn(point)) {
-        firstHalf.push(new Path(this.debug)
-          .withRaise(this.raise)
-          .move(path.ops[0].to)
-          .curve(path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to)
+      } else if (path.ops[1].to.sitsRoughlyOn(point)) {
+        firstHalf.push(
+          new Path(this.debug)
+            .withRaise(this.raise)
+            .move(path.ops[0].to)
+            .curve(path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to)
         )
-      }
-      else {
-        let t = pointOnCurve(path.ops[0].to, path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to, point)
+      } else {
+        let t = pointOnCurve(
+          path.ops[0].to,
+          path.ops[1].cp1,
+          path.ops[1].cp2,
+          path.ops[1].to,
+          point
+        )
         if (t !== false) {
           let curve = new Bezier(
             { x: path.ops[0].to.x, y: path.ops[0].to.y },

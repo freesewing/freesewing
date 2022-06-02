@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import get from 'lodash.get'
 import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Prebuild navigation
 import prebuildNavigation from 'site/prebuild/navigation.js'
 // Translation
+import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
 /*
@@ -44,6 +46,16 @@ const buildNavigation = (lang, t) => {
   nav.blog.__order = 'e'
   nav.account.__order = 'f'
 
+  // Translation top-level strapi pages
+  nav.showcase.__title = t('showcase')
+  nav.showcase.__linktitle = t('showcase')
+  nav.blog.__title = t('blog')
+  nav.blog.__linktitle = t('blog')
+
+  // Translation top-level strapi pages
+  nav.community.__title = t('community')
+  nav.community.__linktitle = t('community')
+
   return nav
 }
 
@@ -53,6 +65,7 @@ const buildNavigation = (lang, t) => {
 function useApp(full = true) {
 
   // Load translation method
+  const locale = useRouter().locale
   const { t } = useTranslation()
 
   // User color scheme preference
@@ -63,11 +76,10 @@ function useApp(full = true) {
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
   const [theme, setTheme] = useLocalStorage('theme', prefersDarkMode ? 'dark' : 'light')
-  const [language, setLanguage] = useLocalStorage('language', 'en')
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(buildNavigation(language, t))
+  const [navigation, setNavigation] = useState(buildNavigation(locale, t))
   const [slug, setSlug] = useState('/')
   const [loading, setLoading] = useState(false)
 
@@ -86,12 +98,24 @@ function useApp(full = true) {
     setNavigation(set(navigation, path, content))
   }
 
+  /*
+   * Helper method to get title from navigation structure
+   */
+  const getTitle = slug => get(navigation, slug).__title
+
+  /*
+   * Helper method to construct breadcrumb from navigation structure
+   */
+  const getBreadcrumb = slug => ([ get(navigation, slug).__title, `/${slug}` ])
+
   return {
     // Static vars
-    site: 'dev',
+    site: 'org',
+
+    // i18n
+    locale,
 
     // State
-    language,
     loading,
     navigation,
     primaryMenu,
@@ -99,7 +123,6 @@ function useApp(full = true) {
     theme,
 
     // State setters
-    setLanguage,
     setLoading,
     setNavigation,
     setPrimaryMenu,
@@ -111,6 +134,10 @@ function useApp(full = true) {
 
     // State handlers
     togglePrimaryMenu,
+
+    // Navigation
+    getTitle,
+    getBreadcrumb,
   }
 }
 

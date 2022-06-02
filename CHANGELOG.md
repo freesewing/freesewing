@@ -3,6 +3,12 @@
 
 ## Unreleased
 
+### hugo
+
+#### Fixed
+
+ - Fix incorrect seam allowance Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
+
 
 ## 2.20.8 (2022-05-21)
 

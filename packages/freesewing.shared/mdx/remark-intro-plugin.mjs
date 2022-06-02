@@ -30,7 +30,7 @@ export const remarkIntroPlugin = (opts={}) => {
   const { intro=[] } = opts
 
   // Check to see whether the node has frontmatter
-  const hasFrontmatter = node => (node.children[0].type === 'yaml')
+  const hasFrontmatter = node => (node?.children?.[0]?.type === 'yaml')
 
   // Pulls text out of a paragraph
   const extractIntro = node => {

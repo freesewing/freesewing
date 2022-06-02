@@ -48,12 +48,12 @@ export default function (part) {
       nr: 3,
       title: 'waistband',
     })
-  points.grainlineFrom = points.bottomLeft.shiftFractionTowards(points.bottomRight,1/8)
-	points.grainlineTo = new Point(points.grainlineFrom.x, points.topLeft.y)
-	macro("grainline", {
-  from: points.grainlineFrom,
-  to: points.grainlineTo,
-})
+    points.grainlineFrom = points.bottomLeft.shiftFractionTowards(points.bottomRight, 1 / 8)
+    points.grainlineTo = new Point(points.grainlineFrom.x, points.topLeft.y)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
     if (sa) {
       paths.sa = new Path()
         .move(points.topLeft)

@@ -13,7 +13,7 @@ export default function (part) {
     .attr('class', 'fabric', true)
   paths.seam.render = true
 
-  paths.saBase =  new Path()
+  paths.saBase = new Path()
     .move(points.cfRibbing)
     .line(points.pocketHem)
     .line(points.pocketTip)

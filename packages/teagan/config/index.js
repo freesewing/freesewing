@@ -14,11 +14,7 @@ const config = {
     style: ['necklineWidth', 'necklineDepth', 'necklineBend', 'lengthBonus', 'sleeveLength'],
     advanced: Brian.config.optionGroups.advanced,
   },
-  measurements: [
-    ...Brian.config.measurements,
-    'hips',
-    'waist',
-  ],
+  measurements: [...Brian.config.measurements, 'hips', 'waist'],
   optionalMeasurements: ['highBust'],
   dependencies: {
     front: 'base',

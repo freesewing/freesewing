@@ -38,7 +38,14 @@ export default {
     advanced: [
       { bellaDarts: ['backDartHeight'] },
       { bellaArmhole: ['armholeDepth', 'frontArmholePitchDepth'] },
-      { bellaAdvanced: ['frontShoulderWidth', 'fullChestEaseReduction', 'highBustWidth', 'shoulderToShoulderEase'] },
+      {
+        bellaAdvanced: [
+          'frontShoulderWidth',
+          'fullChestEaseReduction',
+          'highBustWidth',
+          'shoulderToShoulderEase',
+        ],
+      },
     ],
   },
   measurements: [

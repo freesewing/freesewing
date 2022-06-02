@@ -1,6 +1,5 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import mdxMeta from 'site/prebuild/mdx.en.js'
 import mdxLoader from 'shared/mdx/loader'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import TocWrapper from 'shared/components/wrappers/toc'
@@ -8,6 +7,8 @@ import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import components from 'site/components/mdx/index.js'
+// MDX paths
+import mdxPaths from 'site/prebuild/mdx.paths.js'
 
 const MdxPage = props => {
 
@@ -71,7 +72,8 @@ export default MdxPage
  */
 export async function getStaticProps({ params, locale }) {
 
-  const { mdx, intro, toc } = await mdxLoader('en', 'org', params.mdxslug.join('/'))
+  const { mdx, intro, toc, frontmatter } = await mdxLoader(locale, 'org', params.mdxslug.join('/'))
+  const { title='FIXME: Please give this page a title' } = frontmatter
 
   return {
     props: {
@@ -82,10 +84,13 @@ export async function getStaticProps({ params, locale }) {
         slug: params.mdxslug.join('/'),
         path: '/' + params.mdxslug.join('/'),
         slugArray: params.mdxslug,
-        ...mdxMeta[params.mdxslug.join('/')],
+        title,
+        order: frontmatter.order
+          ? frontmatter.order+title
+          : title
       },
       params,
-      ...(await serverSideTranslations('en')),
+      ...(await serverSideTranslations(locale)),
     }
   }
 }
@@ -96,14 +101,19 @@ export async function getStaticProps({ params, locale }) {
  *
  * On this page, it is returning a list of routes (think URLs) for all
  * the mdx (markdown) content.
- * That list comes from mdxMeta, which is build in the prebuild step
- * and contains paths, titles, and intro for all markdown.
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticPaths() {
+
   return {
-    paths: Object.keys(mdxMeta).map(slug => '/'+slug),
+    paths: [
+      ...mdxPaths.map(key => `/${key}`),
+      ...mdxPaths.map(key => `/es/${key}`),
+      ...mdxPaths.map(key => `/de/${key}`),
+      ...mdxPaths.map(key => `/fr/${key}`),
+      ...mdxPaths.map(key => `/nl/${key}`),
+    ],
     fallback: false
   }
 }

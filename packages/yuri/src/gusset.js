@@ -38,16 +38,13 @@ export default function (part) {
     points.logo = points.title.shift(-75, 100)
     snippets.logo = new Snippet('logo', points.logo)
     if (sa) {
-      paths.saBase = new Path()
-        .move(points.right)
-        .line(points.top)
-        .setRender(false)
+      paths.saBase = new Path().move(points.right).line(points.top).setRender(false)
       paths.sa = paths.curve
         .offset(3 * sa)
         .join(paths.saBase.offset(sa))
         .line(points.top)
         .close()
-        .attr('class','fabric sa')
+        .attr('class', 'fabric sa')
     }
   }
 

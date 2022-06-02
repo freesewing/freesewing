@@ -11,17 +11,9 @@ const config = {
   difficulty: 3,
   optionGroups: {
     ...Brian.config.optionGroups,
-    fit: [
-      ...Brian.config.optionGroups.fit,
-      'hipsEase'
-    ],
+    fit: [...Brian.config.optionGroups.fit, 'hipsEase'],
   },
-  measurements: [
-    ...Brian.config.measurements,
-    'head',
-    'hips',
-    'hpsToBust',
-  ],
+  measurements: [...Brian.config.measurements, 'head', 'hips', 'hpsToBust'],
   dependencies: {
     backBase: 'base',
     frontBase: 'backBase',
