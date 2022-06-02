@@ -1,6 +1,6 @@
----
+- - -
 title: "Waist ease"
----
+- - -
 
 L'ampleur d'aisance à votre taille.
 

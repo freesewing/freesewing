@@ -1,6 +1,7 @@
----
+- - -
 title: "Shoulder seam shift: collar side"
----
+- - -
+
 
 Controla la ubicación de la costura del hombro en el lado del cuello.
 

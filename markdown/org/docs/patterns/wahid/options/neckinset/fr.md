@@ -1,6 +1,6 @@
----
+- - -
 title: "Neck inset"
----
+- - -
 
 ![Échancrure cou](neckinset.svg)
 

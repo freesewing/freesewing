@@ -1,6 +1,6 @@
----
+- - -
 title: "Front pocket radius"
----
+- - -
 
 The radius by which the front pocket is rounded.
 

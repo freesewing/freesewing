@@ -1,6 +1,6 @@
----
+- - -
 title: "Number of buttons"
----
+- - -
 
 Contrôle la quantité de boutons.
 

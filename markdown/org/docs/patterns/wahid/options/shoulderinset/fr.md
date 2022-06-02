@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder inset"
----
+- - -
 
 ![Largeur d'épaule](shoulderinset.svg)
 

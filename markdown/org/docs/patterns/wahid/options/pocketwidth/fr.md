@@ -1,6 +1,6 @@
----
+- - -
 title: "Pocket width"
----
+- - -
 
 Contrôle la largeur des poches.
 

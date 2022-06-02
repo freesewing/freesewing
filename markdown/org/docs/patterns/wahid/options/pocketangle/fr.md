@@ -1,6 +1,6 @@
----
+- - -
 title: "Pocket angle"
----
+- - -
 
 Contrôle l'angle d'inclinaison de la poche.
 

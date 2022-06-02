@@ -1,6 +1,6 @@
----
+- - -
 title: "Heel ease"
----
+- - -
 
 Cela contrôle la quantité d'aisance au instep, ou talon.
 

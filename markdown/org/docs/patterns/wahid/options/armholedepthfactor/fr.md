@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole depth factor"
----
+- - -
 
 Cette option contrôle la profondeur de l'emmanchure.
 

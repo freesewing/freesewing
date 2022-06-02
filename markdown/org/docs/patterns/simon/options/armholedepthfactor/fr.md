@@ -1,6 +1,6 @@
----
+- - -
 title: "Armhole depth factor"
----
+- - -
 
 ![Hauteur de l'emmanchure](./armholedepthfactor.svg)
 

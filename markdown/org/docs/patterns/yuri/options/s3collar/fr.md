@@ -1,6 +1,6 @@
----
+- - -
 title: "Shoulder seam shift: collar side"
----
+- - -
 
 Contrôle l'emplacement de la couture des épaules sur le côté du col.
 

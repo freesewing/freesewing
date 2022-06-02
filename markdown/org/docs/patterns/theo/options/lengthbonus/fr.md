@@ -1,6 +1,6 @@
----
+- - -
 title: "Length bonus"
----
+- - -
 
 ![Supplément de longueur](lengthbonus.svg)
 

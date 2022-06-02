@@ -1,6 +1,6 @@
----
+- - -
 title: "Cuff ease"
----
+- - -
 
 Cette option contrôle l'aisance au niveau des poignets.
 

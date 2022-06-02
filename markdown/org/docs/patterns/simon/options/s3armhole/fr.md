@@ -1,6 +1,7 @@
----
+- - -
 title: "Shoulder seam shift: armhole side"
----
+- - -
+
 
 Contrôle l'emplacement de la couture des épaules sur le côté du bras.
 

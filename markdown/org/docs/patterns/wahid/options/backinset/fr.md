@@ -1,6 +1,6 @@
----
+- - -
 title: "Back inset"
----
+- - -
 
 ![Échancrure emmanchure arrière](backinset.svg)
 

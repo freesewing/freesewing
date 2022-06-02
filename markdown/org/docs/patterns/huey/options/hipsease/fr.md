@@ -1,6 +1,6 @@
----
+- - -
 title: "Hips ease"
----
+- - -
 
 ![Aisance des hanches](./hipsease.svg)
 
