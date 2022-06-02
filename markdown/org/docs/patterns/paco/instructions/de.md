@@ -249,7 +249,7 @@ Refold the waistband, turning half the waistband to the inside. Pin so that the 
 
 <Comment by="TangerineShark">
 
-Probably put a note here about stitching in the ditch?
+Probably put a note here about stitching in the ditch? 
 
 </Comment>
 
