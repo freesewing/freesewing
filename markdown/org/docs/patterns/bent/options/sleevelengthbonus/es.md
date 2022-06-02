@@ -4,9 +4,13 @@ title: "Sleeve length bonus"
 
 The amount to extend the sleeve beyond the length of the sleeve in the base block.
 
-> #### Esto no debe ser cero<
-> 
-> Setting this to zero will make the sleeve length the same as the base length of the Bent block, which is certainly too short for a coat. Tenga en cuenta el valor por defecto y utilice esto como base para alargar o acortar la manga.
+<Note>
+
+#### Esto no debe ser cero<
+
+Setting this to zero will make the sleeve length the same as the base length of the Bent block, which is certainly too short for a coat. Tenga en cuenta el valor por defecto y utilice esto como base para alargar o acortar la manga.
+
+</Note>
 
 ## Efecto de esta opción en el patrón
 
