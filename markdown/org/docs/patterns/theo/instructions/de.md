@@ -69,7 +69,11 @@ If you are going to line your trousers (it's optional), you'll need to finish th
 
 Note that you only need to do this for those edges of your lining that are not caught in a seam. In other words, only the bottom edge of your lining.
 
-> Wenn Sie keine rosa Scheren haben, können Sie eine weitere Oberfläche wie eine Zick-Zack-Nähte auftragen oder einen Serger verwenden. Jedoch sind rotierende Scheren am besten für dieses Szenario, da sie keine Menge hinzufügen, was wichtig ist, weil wir vermeiden wollen, dass der Rand der Futter einen Bumpf in Ihrer Hose bildet.
+<Tip>
+
+Wenn Sie keine rosa Scheren haben, können Sie eine weitere Oberfläche wie eine Zick-Zack-Nähte auftragen oder einen Serger verwenden. Jedoch sind rotierende Scheren am besten für dieses Szenario, da sie keine Menge hinzufügen, was wichtig ist, weil wir vermeiden wollen, dass der Rand der Futter einen Bumpf in Ihrer Hose bildet.
+
+</Tip>
 
 ### Schritt 5: Schneiden Sie Teile für die Vordertasche
 
@@ -85,7 +89,11 @@ Now trim back the front piece (it should lie on the bottom) 3cm outwards from th
 
 Finally, trim back your lining so that it stops 0.5 cm short of reaching the edge of your front.
 
-> Das Futter ist etwas kürzer geschnitten, so dass, wenn es zurückgefaltet wird, es nicht angezeigt wird. Aber es ist wirklich nicht so wichtig, es genau 0,5 cm kürzer zu bekommen.
+<Tip>
+
+Das Futter ist etwas kürzer geschnitten, so dass, wenn es zurückgefaltet wird, es nicht angezeigt wird. Aber es ist wirklich nicht so wichtig, es genau 0,5 cm kürzer zu bekommen.
+
+</Tip>
 
 ### Schritt 6: Rückwärts und Nähen vor der Tasche schräg
 
@@ -97,9 +105,17 @@ You are going to sew along the pocket slant, but make sure to flip everything ov
 
 Topstitch a 0.5 cm from the fold, making sure to keep it parallel and not stretch your fabric.
 
-> Diese Aufsteckung wird immer angezeigt, also stellen Sie sicher, dass Sie die Fadenfarbe anpassen und sie hübsch machen.
+<Tip>
 
-> Um zu verhindern, dass Ihre Taschen ausgebeutet werden, können Sie ein Stück nicht dehnbares Band zwischen dem Faltband platzieren. Beim Nähen fängt man auch dieses Band, so dass die Tasche nicht ausgeht.
+Diese Aufsteckung wird immer angezeigt, also stellen Sie sicher, dass Sie die Fadenfarbe anpassen und sie hübsch machen.
+
+</Tip>
+
+<Tip>
+ 
+Um zu verhindern, dass Ihre Taschen ausgebeutet werden, können Sie ein Stück nicht dehnbares Band zwischen dem Faltband platzieren. Beim Nähen fängt man auch dieses Band, so dass die Tasche nicht ausgeht.
+
+</Tip>
 
 ### Schritt 7: Rand in der Vordertasche beenden
 
@@ -115,9 +131,13 @@ Zig-zag the edge of the folded-back front piece to finish it and secure it to th
 
 When you're done, place front piece, lining and pocket bag flat, and give it a good press.
 
-> Vielleicht ist dies ein guter Zeitpunkt, um Sie daran zu erinnern, dass jeder Schritt bis dahin für beide Beine getan werden musste.
-> 
-> Es ist nur eine freundliche Erinnerung, die nächsten Schritte müssen auch für beide Beine gemacht werden.
+<Tip>
+  
+Vielleicht ist dies ein guter Zeitpunkt, um Sie daran zu erinnern, dass jeder Schritt bis dahin für beide Beine getan werden musste.
+
+Es ist nur eine freundliche Erinnerung, die nächsten Schritte müssen auch für beide Beine gemacht werden.
+
+</Tip>
 
 ### Schritt 9: Befestige Seitenteil an Tasche
 
@@ -139,13 +159,16 @@ Pin all pieces together making sure to stay about the bottom curve of the pocket
 
 When everything is pinned together, fold away the front piece and lining, and close the bottom curve of the pocket bag.
 
-> Nähen Sie die Kurve der Tasche bis zu dem Punkt, an dem sie das Seitenteil erreicht hat
+<Tip>
 
-> Sie können die Tasche auf verschiedene Arten bearbeiten, einschließlich:
-> 
-> - Serviere die Seiten zusammen
-> - Beende die Kante mit Vorlaufband
-> - Nähen Sie die Seiten zusammen und beenden Sie die Kante mit einer Zick-Zack-Sticke
+Sew to bottom curve of the pocket bag up until the point where it reached the side piece
+
+You can finish the pocket bag in a number of ways, including:
+ - Serge the sides together
+ - Finish the edge with bias tape
+ - Sew the sides together and finish the edge with a zig-zag stitch
+
+</Tip>
 
 ### Schritt 11: Drücke die Vordertasche
 
@@ -165,7 +188,11 @@ Pin the pocket down to the front piece along the slant and the edges of the pock
 
 Before we are going to sew the side seams, finish the side edges by serging or running a zig-zag stitch along the sides of your front and back pieces, making sure to stay within the foreseen seam allowance.
 
-> Achten Sie darauf, die Auskleidungs- und Taschentaschenkanten zu berücksichtigen, da dies verhindert, dass sich die Dinge umdrehen, wenn wir die Seitennaht nähen.
+<Tip>
+
+Achten Sie darauf, die Auskleidungs- und Taschentaschenkanten zu berücksichtigen, da dies verhindert, dass sich die Dinge umdrehen, wenn wir die Seitennaht nähen.
+
+</Tip>
 
 ### Schritt 14: Nähte die Seitennaht
 
@@ -175,7 +202,11 @@ Place the front and back of each leg on top of each other, with the good sides t
 
 Align the side seam, more precisely the side seam on the outside, where there is no crotch curve.
 
-> Du kannst die Stücke anpinnen, um sicherzustellen, dass die Dinge beim Nähen dieser langen Naht an Ort und Stelle bleiben
+<Tip>
+
+You can pin the pieces together to make sure things stay in place while sewing this lengthy seam.
+
+</Tip>
 
 Sew the seam, starting from the waistband along the entire side of your trousers.
 
@@ -187,7 +218,11 @@ Press open the seam allowance along the side seams. Do so from the back, and rep
 
 Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
 
-> Eine schöne flache Seitennaht sieht großartig aus, also nehmen Sie sich Zeit, um es richtig zu machen.
+<Tip>
+ 
+Eine schöne flache Seitennaht sieht großartig aus, also nehmen Sie sich Zeit, um es richtig zu machen.
+
+</Tip>
 
 ### Schritt 16: Nähen Fliegenschild um Teil zu fliegen
 
@@ -197,13 +232,21 @@ Place your fly piece on the fly shield with the good sides together, and align t
 
 Sew along the curved edge, taking account the standard 1cm seam allowance, to join the two pieces together.
 
-> Wenn Ihr Futter überhaupt eine Dehnung hat, versuchen Sie es ein bisschen zu strecken, während Sie die Kurve nähen. Dadurch wird es leichter, das Futter später ohne Falten flach zu legen.
+<Tip>
+
+Wenn Ihr Futter überhaupt eine Dehnung hat, versuchen Sie es ein bisschen zu strecken, während Sie die Kurve nähen. Dadurch wird es leichter, das Futter später ohne Falten flach zu legen.
+
+</Tip>
 
 ### Schritt 17: Drücke den Fliegenschild
 
 ![Press the fly shield](step17.png)
 
-> Bevor Sie Ihr Fliegenteil herunterdrücken, stellen Sie sicher, dass Sie die Naht ein bisschen rollen, damit Ihr Hosenfutter ein bisschen weiter sitzt, und das Futter beginnt nur etwa 2mm von der Kante. Dadurch wird verhindert, dass sich das Futter am Rand ausspuckt.
+<Tip>
+
+Bevor Sie Ihr Fliegenteil herunterdrücken, stellen Sie sicher, dass Sie die Naht ein bisschen rollen, damit Ihr Hosenfutter ein bisschen weiter sitzt, und das Futter beginnt nur etwa 2mm von der Kante. Dadurch wird verhindert, dass sich das Futter am Rand ausspuckt.
+
+</Tip>
 
 After you have sewed fly piece and fly shield together, turn them inside out and press the seam you just made.
 
@@ -211,9 +254,13 @@ After you have sewed fly piece and fly shield together, turn them inside out and
 
 ![Pin zip to right front piece](step18.png)
 
-> Schritte 18 bis 21 führen alle zu einer einzigen Heftreihe, die deine Reißverschluss nach vorne näht, beim Anbringen des Fliegenteils und fliegen Sie Schild in einem Weg.
-> 
-> Dies ist die schwierigste Naht im gesamten Bauprozess so nehme ich mir meine Zeit zu erklären und dies vor dem Nähen zu veranschaulichen.
+<Tip>
+
+Schritte 18 bis 21 führen alle zu einer einzigen Heftreihe, die deine Reißverschluss nach vorne näht, beim Anbringen des Fliegenteils und fliegen Sie Schild in einem Weg.
+
+Dies ist die schwierigste Naht im gesamten Bauprozess so nehme ich mir meine Zeit zu erklären und dies vor dem Nähen zu veranschaulichen.
+
+</Tip>
 
 Place your front piece for the right leg with the good side up. So that lining and front pocket bag sit underneath and lie flat.
 
@@ -226,7 +273,11 @@ Align your zip with the crotch seam as shown in the illustration. Take the follo
 
 Pin the zip in place with a few pins perpendicular to your zip (as shown). In other words, don't pin along the zip, but across the zip.
 
-> Wenn Sie sich nicht sicher sind, ob Ihre Zip-Datei platziert wurde, stellen Sie sie so nah wie möglich an die Kante. Das bedeutet nur, dass Ihre Zip-Datei etwas länger unter der Fliege verklebt ist, so dass sie sicher nicht angezeigt wird.
+<Tip>
+
+Wenn Sie sich nicht sicher sind, ob Ihre Zip-Datei platziert wurde, stellen Sie sie so nah wie möglich an die Kante. Das bedeutet nur, dass Ihre Zip-Datei etwas länger unter der Fliege verklebt ist, so dass sie sicher nicht angezeigt wird.
+
+</Tip>
 
 ### Schritt 19: Fliegenschild zum Reißen anpinnen
 
@@ -236,11 +287,19 @@ Take the fly shield/fly piece that you assembled in step 16 & 17, and place it w
 
 Flip aside the top lining layer, and align the slightly curved edge of the fabric (where it is not sewn to the lining) with the edge of the fabric of your front piece.
 
-> Zur Klarheit, welche Seite des Fliegenschildes, der aufgesteckt werden soll, wird oben auf der Abbildung angezeigt, auf einer kleineren Skala.
+<Tip>
+
+Zur Klarheit, welche Seite des Fliegenschildes, der aufgesteckt werden soll, wird oben auf der Abbildung angezeigt, auf einer kleineren Skala.
+
+</Tip>
 
 Pin this layer in place with a few pins perpendicular to your zip (as shown in red). Make sure you catch all layers underneath, including the zip. This way, you can remove your pins from the step before (shown in green) when done.
 
-> Wenn Sie das alles gut halten, können Sie die Futter zurückfallen lassen und alles zusammen anpinnen, wie im nächsten Schritt gezeigt. Das ist etwas schneller, aber eher anfällig für Fehler, da sich die Dinge leichter bewegen können.
+<Tip>
+
+Wenn Sie das alles gut halten, können Sie die Futter zurückfallen lassen und alles zusammen anpinnen, wie im nächsten Schritt gezeigt. Das ist etwas schneller, aber eher anfällig für Fehler, da sich die Dinge leichter bewegen können.
+
+</Tip>
 
 ### Schritt 20: Fliegenschild entlang der Reißverschluss anpinnen
 
@@ -267,7 +326,11 @@ Pin this down, and remove your previous pins.
 
 Now you can sew along the double folded fly piece. This will fix the front, zip, fly shield and fly piece all in place.
 
-> Sie werden an Ihrer Zippe nähen, also stellen Sie sicher, dass Sie Ihren Zipper Fuß dafür installieren.
+<Tip>
+
+Sie werden an Ihrer Zippe nähen, also stellen Sie sicher, dass Sie Ihren Zipper Fuß dafür installieren.
+
+</Tip>
 
 ### Schritt 23: Fliege zurück und drücke
 
@@ -283,7 +346,11 @@ Apply bias tape to the edge with the large curve of your second fly piece.
 
 Press the finished edge flat when you're done.
 
-> Bias Tape ist eine Möglichkeit, eine Naht zu beenden. Wenn Sie sich nicht sicher sind, was es ist oder wie es anzuwenden ist, lassen Sie es mich wissen.
+<Tip>
+
+Bias Tape ist eine Möglichkeit, eine Naht zu beenden. Wenn Sie sich nicht sicher sind, was es ist oder wie es anzuwenden ist, lassen Sie es mich wissen.
+
+</Tip>
 
 ### Schritt 25: Pin und Nähen Fliegenteil zu Schneidnaht
 
@@ -293,7 +360,11 @@ Place the left leg with the good side up. Place the second fly piece on top with
 
 Pin the fly piece in place, then sew it in place along the crotch seam.
 
-> Wenn Sie das Nähen an der Stelle, achten Sie darauf, dass die Vorderseite Futter.
+<Tip>
+
+Wenn Sie das Nähen an der Stelle, achten Sie darauf, dass die Vorderseite Futter.
+
+</Tip>
 
 Press the finished edge flat when you're done.
 
@@ -319,15 +390,23 @@ With the crotch seams aligned, pin the zip along the edge of the fly piece with 
 
 Make sure to pin the fly only to the fly piece. Not to any other layers underneath.
 
-> Ich finde es einfacher, die Reißverschluss durch alle Ebenen zu pinnen, und dann, wenn sie sicher ist, fügen Sie zusätzliche Pins an, die sie nur zum Fliegenteil anpinnen. Wenn das erledigt ist, können Sie die Pins entfernen, die durch alle Ebenen gehen.
+<Tip>
+
+Ich finde es einfacher, die Reißverschluss durch alle Ebenen zu pinnen, und dann, wenn sie sicher ist, fügen Sie zusätzliche Pins an, die sie nur zum Fliegenteil anpinnen. Wenn das erledigt ist, können Sie die Pins entfernen, die durch alle Ebenen gehen.
+
+</Tip>
 
 Last but not least, sew along the zip with your zipper foot to attach it to the fly piece.
 
-> Bei der Angleichung der Zip-Datei sollten Sie folgendes beachten:
-> 
-> - Die Reißverschluss sollte mit der guten Seite nach unten gesetzt werden
-> - Die Reißverschluss sollte sich ein bisschen vom Rand deines Fliegenteils zurücklehnen
-> - Stelle sicher, dass du den oberen Teil der Reißverschluss mit der anderen Reißhalle auf dem rechten Bein ausrichtest
+<Tip>
+
+When aligning the zip, make sure to take the following into account:
+
+ - The zip should be placed with the good side down
+ - The zip should sit a bit back from the edge of your fly piece
+ - Make sure to align the top of the zip with the other zip half on the right leg
+
+</Tip>
 
 ### Schritt 28: Zig-zag die Reißverschlusskante zum Fliegenteil
 
@@ -343,7 +422,11 @@ Place both fly pieces together, and move the front pieces out of the way.
 
 Use a bar-tack to join them together at the bottom of the zip. Sew on both edges of the zip, and get as close to the zip as you can.
 
-> Wenn dein Reißverschluss zu lang ist, kannst du ihn unter die Balkenschale schneiden.
+<Tip>
+
+Wenn dein Reißverschluss zu lang ist, kannst du ihn unter die Balkenschale schneiden.
+
+</Tip>
 
 ### Schritt 30: Treibernaht beitreten
 
@@ -360,7 +443,11 @@ You'll need to get the fly shields out of the way, so if you've pinned through a
 
 Sew the crotch seam, starting at the cross-seam point, and going up to your horizontal pin.
 
-> Ich finde diesen Schritt schwer zu erklären und schwer zu veranschaulichen. Ich hoffe, es macht Sinn, wenn du deine Fliege betrachtest. Wenn nicht, überprüfen Sie die Video-Anweisungen.
+<Tip>
+
+Ich finde diesen Schritt schwer zu erklären und schwer zu veranschaulichen. Ich hoffe, es macht Sinn, wenn du deine Fliege betrachtest. Wenn nicht, überprüfen Sie die Video-Anweisungen.
+
+</Tip>
 
 ### Schritt 31: Fliege geschlossen pin und Fliegenkurve einfügen
 
@@ -416,7 +503,11 @@ Now, put the leg that has the good side out (the normal leg) into the leg that h
 
 This way, the good sides of both legs will sit against each other, and this is how you should sew the cross seam.
 
-> Achten Sie darauf, dass Ihr Bein nicht im anderen Bein verdreht wird. Wenn Sie Zweifel haben, drehen Sie das innere Bein nach außen wieder aus, nachdem Sie die Quernaht angeheftet haben, um sicherzustellen, dass es in Ordnung ist.
+<Tip>
+
+Achten Sie darauf, dass Ihr Bein nicht im anderen Bein verdreht wird. Wenn Sie Zweifel haben, drehen Sie das innere Bein nach außen wieder aus, nachdem Sie die Quernaht angeheftet haben, um sicherzustellen, dass es in Ordnung ist.
+
+</Tip>
 
 Pin the cross-seam in place, and then sew it close, starting at the side of the fly, and making sure to respect the seam allowance.
 
@@ -432,11 +523,19 @@ When it's looking good, press the crease lines in your leg, front a back. Repeat
 
 Give it a firm press because you want the pleats to still be there after you wash your trousers (so you can see where to press them again).
 
-> In der Industrie werden Chemikalien entlang der Schmelzlinie aufgetragen, bevor sie zusammengepresst werden. Einige Schneider verwenden eine Art Holzhammer und Amboss, um die Fasern in einer permanenten Spur zu schlagen.
+<Tip>
+
+In der Industrie werden Chemikalien entlang der Schmelzlinie aufgetragen, bevor sie zusammengepresst werden. Einige Schneider verwenden eine Art Holzhammer und Amboss, um die Fasern in einer permanenten Spur zu schlagen.
+
+</Tip>
 
 Depending on your fabric, your crease might last longer, but ultimately, you can't expect to have a crease that can withstand a few washes without being reapplied.
 
-> Vielleicht ist das eine Selbstverständlichkeit, aber es gibt auch noch eine andere Option: Drücken Sie nicht die Brücke. Das verleiht Ihrer Hose einen informelleren Look.
+<Tip>
+
+Vielleicht ist das eine Selbstverständlichkeit, aber es gibt auch noch eine andere Option: Drücken Sie nicht die Brücke. Das verleiht Ihrer Hose einen informelleren Look.
+
+</Tip>
 
 ### Schritt 38: Verbindung zur Taille
 
@@ -462,7 +561,11 @@ Place your waistband on the waistband lining, good sides together, so that the w
 
 Align the edge, and pin them together.
 
-> Wir werden am Rand der Schnittstelle nähen, aber wir nähen ca. 3mm oder 1/8 Zoll von der eigentlichen Schnittkante. Dadurch wird verhindert, dass das Futter später von vorne sichtbar wird.
+<Tip>
+
+Wir werden am Rand der Schnittstelle nähen, aber wir nähen ca. 3mm oder 1/8 Zoll von der eigentlichen Schnittkante. Dadurch wird verhindert, dass das Futter später von vorne sichtbar wird.
+
+</Tip>
 
 On one side of the waistband, end with a curve and then go down vertically along the edge of the waistband interfacing. Check the illustration to make sure you do it on the correct side.
 
@@ -484,7 +587,11 @@ Pin the edge of your waistband (the side you did not sew the lining to) to the t
 
 Tuck the edge of your fly into the end of the waistband with the curved corner. On the other end of the waistband, it will be longer. In other words, your waistband will overlap here.
 
-> Achten Sie darauf, die vertikale Ausrichtung des Taillenbandes an der Reißverschlüsse anzupassen. Bei geschlossenem Reißverschluss sollten beide Seiten der Taille in gleicher Höhe sitzen. Dies ist leicht zu verpassen, wenn Sie es nicht überprüfen.
+<Tip>
+
+Achten Sie darauf, die vertikale Ausrichtung des Taillenbandes an der Reißverschlüsse anzupassen. Bei geschlossenem Reißverschluss sollten beide Seiten der Taille in gleicher Höhe sitzen. Dies ist leicht zu verpassen, wenn Sie es nicht überprüfen.
+
+</Tip>
 
 ### Schritt 43: Nähen Bund zu Hose
 
@@ -516,11 +623,15 @@ Find the belt loop pattern part, a small rectangular piece of fabric. There shou
 - Handnähen entlang der Rückseite der Gurtschleife, so dass die gefalteten Seiten an Ort bleiben aber die Nähte zeigen nicht vorne
 - Gib ihm eine letzte gute Presse, wenn du fertig bist
 
-> Obwohl die Breite Ihrer Bandschleifen nicht so wichtig ist, ist es wichtig, dass sie alle gleich breit sind.
-> 
-> Um eine gleichmäßige Breite zu erleichtern, können Sie Ihre Gürtelschleifen um einen Kartonstreifen falten dickes Papier, oder Kunststoff der gewünschten Bandbreite.
-> 
-> Dieser Streifen kann Ihnen auch beim Nähen der Hand helfen. Halten Sie es in Ihrer Gürtelschleife und es wird verhindern, dass Ihre Nadel durch alle Schichten durchbricht und Ihr Faden wird nicht an der Vorderseite angezeigt.
+<Tip>
+
+Obwohl die Breite Ihrer Bandschleifen nicht so wichtig ist, ist es wichtig, dass sie alle gleich breit sind.
+
+Um eine gleichmäßige Breite zu erleichtern, können Sie Ihre Gürtelschleifen um einen Kartonstreifen falten dickes Papier, oder Kunststoff der gewünschten Bandbreite.
+
+Dieser Streifen kann Ihnen auch beim Nähen der Hand helfen. Halten Sie es in Ihrer Gürtelschleife und es wird verhindern, dass Ihre Nadel durch alle Schichten durchbricht und Ihr Faden wird nicht an der Vorderseite angezeigt.
+
+</Tip>
 
 ### Schritt 46: Füge die Bandschleifen an: Unten
 
@@ -532,11 +643,15 @@ Place the good side of the belt loop down on the good side of the trousers (good
 
 Then, zig zag the edge of the belt loop to the trousers.
 
-> Dabei ist es wichtig, die Weste aus dem Weg zu räumen. Achten Sie darauf, die Gürtelschleifen nur an Ihre Hose zu befestigen und nicht an das Bauchbandfutter.
+<Tip>
 
-> Du hast 8 Bandschleifen, also musst du sie um deinen Bund verteilen. Werfen Sie einen Blick auf ein bestehendes Paar, wenn Sie unsicher sind, wie Sie dies tun.
-> 
-> Achten Sie darauf, dass Sie Gurthaufen in der Nähe der Mitte hinten platzieren und nicht zu nah zueinander an der Vorderseite (für Gürtelschnallen).
+Dabei ist es wichtig, die Weste aus dem Weg zu räumen. Achten Sie darauf, die Gürtelschleifen nur an Ihre Hose zu befestigen und nicht an das Bauchbandfutter.
+
+Du hast 8 Bandschleifen, also musst du sie um deinen Bund verteilen. Werfen Sie einen Blick auf ein bestehendes Paar, wenn Sie unsicher sind, wie Sie dies tun.
+
+Achten Sie darauf, dass Sie Gurthaufen in der Nähe der Mitte hinten platzieren und nicht zu nah zueinander an der Vorderseite (für Gürtelschnallen).
+
+</Tip>
 
 ### Schritt 47: Taillenband
 
@@ -554,11 +669,16 @@ This will be a lot simpler to understand if you have a look at the relevant vide
 
 Before we finalize the waistband, we're going to trim back some of its seam allowance.
 
-> **About seam allowance grading** When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
-> 
-> Die Schicht, die der guten Seite des Kleidungsstückes am nächsten liegt, sollte die längste sein, also von dort zurück schneiden.
-> 
-> Dadurch wird es weniger wahrscheinlich, dass die Konturen der Nahtzuweisung von der guten Seite aus sichtbar sind.
+<Tip>
+
+**About seam allowance grading**
+When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
+
+Die Schicht, die der guten Seite des Kleidungsstückes am nächsten liegt, sollte die längste sein, also von dort zurück schneiden.
+
+Dadurch wird es weniger wahrscheinlich, dass die Konturen der Nahtzuweisung von der guten Seite aus sichtbar sind.
+
+</Tip>
 
 ### Schritt 49: Die Taille drücken und einfügen
 
@@ -576,7 +696,11 @@ To make sure things look pretty, the distance between the top of our waistband a
 
 When you're happy with how it looks, baste the lining in place just next to the seam joining the waistband and trousers.
 
-> Es ist am besten, sich neben der Naht, und nicht wirklich in der Naht. Dies wird es viel einfacher machen, deine Bast zu entfernen, wenn wir im letzten Schritt genäht haben.
+<Tip>
+
+Es ist am besten, sich neben der Naht, und nicht wirklich in der Naht. Dies wird es viel einfacher machen, deine Bast zu entfernen, wenn wir im letzten Schritt genäht haben.
+
+</Tip>
 
 ### Schritt 50: Nähen Sie das Taillenband
 
@@ -592,9 +716,13 @@ With your waistband and lining properly secured, it's time to attach the top of 
 
 Sew them in place just as you did at the bottom. That is, use a bar tack or close zig-zag to attach them, then zig-zag over the end to secure it.
 
-> Nähen Sie nicht die Oberseite der Gurtschleifen. Sie müssen den Fuß Ihrer Nähmaschine unter der Gürtelschleife bearbeiten, damit Sie nur das hintere Teil nähen.
+<Tip>
 
-> Fühlen Sie sich frei, die Länge Ihrer Gürtelschleifen nach dem Trennen und vor dem Zick-Zack-Ende zurückzudrehen da sie zu lang sein könnten.
+Nähen Sie nicht die Oberseite der Gurtschleifen. Sie müssen den Fuß Ihrer Nähmaschine unter der Gürtelschleife bearbeiten, damit Sie nur das hintere Teil nähen.
+
+Fühlen Sie sich frei, die Länge Ihrer Gürtelschleifen nach dem Trennen und vor dem Zick-Zack-Ende zurückzudrehen da sie zu lang sein könnten.
+
+</Tip>
 
 ### Schritt 52: Beende den Beinrand
 
@@ -602,15 +730,23 @@ Sew them in place just as you did at the bottom. That is, use a bar tack or clos
 
 Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
 
-> Dies wäre auch ein guter Zeitpunkt, um Ihre Hose zu probieren und genau zu markieren, wie lange Sie wollen, nachdem sie gehemmt sind.
+<Tip>
+ 
+Dies wäre auch ein guter Zeitpunkt, um Ihre Hose zu probieren und genau zu markieren, wie lange Sie wollen, nachdem sie gehemmt sind.
+
+</Tip>
 
 ### Schritt 53: (Optional) Nähen in einem Saum Band
 
 ![Optionally sew in a hem ribbon](step53.png)
 
-> Das Saum Band ist ein Band, das auf der Innenseite deiner Hose sitzt. An der Stelle, wo Ihr Saum zurückklappt, muss der Stoff eine Menge Missbrauch aus dem Stoßen in Schuhe und andere Dinge nehmen.
-> 
-> Das Einlegen eines Balles in den Saum schützt Ihren Stoff in gewissem Maße und ist eine saubere Oberfläche.
+<Tip>
+
+Das Saum Band ist ein Band, das auf der Innenseite deiner Hose sitzt. An der Stelle, wo Ihr Saum zurückklappt, muss der Stoff eine Menge Missbrauch aus dem Stoßen in Schuhe und andere Dinge nehmen.
+
+Das Einlegen eines Balles in den Saum schützt Ihren Stoff in gewissem Maße und ist eine saubere Oberfläche.
+
+</Tip>
 
 Mark the hemline on your trousers (good side out).
 
@@ -622,7 +758,11 @@ Place the ribbon as shown in the illustration making sure that it extends a few 
 
 Fold back the trouser legs at the hemline, and press the hem.
 
-> Wenn du in einem Saum Bänder genäht hast, wird das Band ein paar mm unterhalb der Saum Linie verlängern und so den Stoff am Saum schützen.
+<Tip>
+
+Wenn du in einem Saum Bänder genäht hast, wird das Band ein paar mm unterhalb der Saum Linie verlängern und so den Stoff am Saum schützen.
+
+</Tip>
 
 ### Schritt 55: Hem die Beine
 
@@ -630,10 +770,15 @@ Fold back the trouser legs at the hemline, and press the hem.
 
 With the hem neatly pressed, simply hand-sew the folded back part to the inside of your trousers.
 
-> Hemming wird von Hand gemacht, weil es wichtig ist, dass die Nähte nicht auf der Vorderseite zeigen. Wenn also der Saum von Hand genäht wird, schiebe deine Nadel nicht durch den Stoff, aber fangen Sie nur ein paar Fäden, damit Ihre Stiche nicht auf der Vorderseite angezeigt werden
-> 
-> Es gibt zwar Maschinenalternativen, aber sie sind nicht so sauber (Blindsticht) oder wahrscheinlich nicht zugänglich für die Hauskanalisation (industrielle Blindhemmmaschine).
+<Tip>
+
+Hemming wird von Hand gemacht, weil es wichtig ist, dass die Nähte nicht auf der Vorderseite zeigen. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
+
+While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
+
+</Tip>
 
 ### Schritt 56: Trimmen, bereinigen und drücken
 
 Trim any loose threads or basting that remains, and give your trousers a good final press.
+

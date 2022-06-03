@@ -41,7 +41,7 @@ nunca has hecho pockets de soldadura antes, estarás bien.
 <Comment by="TangerineShark">
 
 One tricky bit, this documentation is for double welts, but this is I think a single welt?
-Does it need a note to that effect?
+Does it need a note to that effect? 
 
 </Comment>
 
@@ -328,7 +328,7 @@ If you have wider cuff elastic, you may want to stitch a horizontal line halfway
 
 <Comment by="TangerineShark">
 
-You could also do a zig-zag stitch here, but I think straight probably looks nicer? 
+You could also do a zig-zag stitch here, but I think straight probably looks nicer?
 
 </Comment>
 
