@@ -311,7 +311,8 @@ When you are done, remove your earlier perpendicular pins.
 
 ### Étape 21 : Plier sur le bouclier de la mouche et épingler vers le bas
 
-![Fold over fly shield and pin down](step21a.png) ![Fold over fly shield and pin down](step21b.png)
+![FOld over fly shield and pin down](step21a.png)
+![FOld over fly shield and pin down](step21b.png)
 
 Flip everything over so that your fly shield lies at the bottom.
 
@@ -379,7 +380,9 @@ Give it a good press from the back.
 
 ### Étape 27: Épingler et coudre le zip à la pièce de vol
 
-![Place both legs on top of eachother](step27a.png) ![Pin the zip along the edge](step27b.png) ![Sew in place](step27c.png)
+![Place both legs on top of eachother](step27a.png)
+![Pin the zip along the edge](step27b.png) 
+![Sew in place](step27c.png) 
 
 Place the right leg down with the good side up. Place the leg on top of it with the good side down.
 
@@ -427,7 +430,8 @@ Si votre zip est trop long, vous pouvez le couper en dessous de la barre.
 
 ### Étape 30: Joindre la couture de crotch
 
-![Join crotch seam](step30a.png) ![Join crotch seam](step30b.png)
+![Join crotch seam](step30a.png)
+![Join crotch seam](step30b.png) 
 
 Place both fronts with the good sides up. They are now joined by the fly.
 
