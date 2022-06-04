@@ -36,7 +36,7 @@ const HomePage = (props) => {
           }}
           className="m-0 p-0 shadow drop-shadow-lg w-full mb-8"
         >
-          <div className="mx-auto px-8 flex flex-col items-center justify-between min-h-screen">
+          <div className="mx-auto px-8 pt-20 flex flex-col items-center justify-between min-h-screen">
             <span>&nbsp;</span>
             <div>
               <div className="flex flex-col items-end max-w-4xl">
@@ -47,6 +47,7 @@ const HomePage = (props) => {
                     md:text-7xl px-6
                     lg:px-8
                     bg-primary
+                    bg-opacity-80
                     `}
                   style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
                 >
@@ -55,7 +56,7 @@ const HomePage = (props) => {
                 </h1>
                 <h2
                   className={`
-                    text-right text-2xl mr-0
+                    text-right text-xl mr-0
                     sm:text-3xl
                     md:text-4xl
                     lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
@@ -64,22 +65,24 @@ const HomePage = (props) => {
                   <div>{t('common:sloganCome')}</div>
                   <div className="inline-block mt-2">
                     {t('common:sloganStay')}
-                    <div className="theme-gradient h-2" />
+                    <div className="theme-gradient h-1 lg:h-2" />
                   </div>
                 </h2>
               </div>
               <Icons app={app}  active='/'
-                ulClasses="flex flex-row flex-wrap mt-8 justify-between w-full max-w-7xl"
-                liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-40"
+                ulClasses="flex flex-row flex-wrap mt-4 sm:mt-8 justify-between w-full max-w-7xl"
+                liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-40 overflow-clip"
                 linkClasses={`
-                  text-lg lg:text-xl py-1 text-secondary
+                  text-sm sm:text-xl lg:text-xl py-1 text-secondary
                   hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
                   flex flex-col items-center capitalize`}
+                linkStyle={{ textShadow: '2px 2px 2px #000, -2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000',
+                }}
               />
             </div>
             <div className="text-neutral-content text-center mt-8 text-center">
               {t('scrollDownToLearnMore')}
-              <DownIcon className="w-24 h-24 animate-bounce w-full m-auto mt-8"/>
+              <DownIcon className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 animate-bounce w-full m-auto mt-8"/>
             </div>
           </div>
         </section>
@@ -91,10 +94,10 @@ const HomePage = (props) => {
         <div className="px-8 text-base-content">
           <Icons app={app}
             active='/'
-            ulClasses="flex flex-row flex-wrap mt-8 justify-around w-full max-w-6xl"
-            liClasses="w-1/3 my-4 lg:mx-2 lg:w-24"
+            ulClasses="flex flex-row flex-wrap mt-4 sm:mt-8 justify-between w-full max-w-7xl"
+            liClasses="text-neutral-content w-1/3 my-4 lg:mx-2 lg:w-40 overflow-clip"
             linkClasses={`
-              text-lg lg:text-xl py-1 text-base-content
+              text-sm sm:text-xl lg:text-xl py-1 text-base-content
               hover:text-secondary sm:hover:text-secondary-focus hover:cursor-pointer
               flex flex-col items-center capitalize`}
           />
