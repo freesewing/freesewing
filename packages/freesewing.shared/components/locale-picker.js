@@ -4,19 +4,21 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 
-const LocalePicker = ({ app }) => {
+const LocalePicker = ({ app, iconOnly=false }) => {
   const { t } = useTranslation(['locales'])
   const router = useRouter()
 
   return (
-    <div className="dropdown w-full md:w-auto">
-      <div tabIndex="0" className={`
-        m-0 btn btn-neutral flex flex-row gap-2 btn-outline
-        md:btn-ghost
-        hover:bg-neutral hover:border-neutral-content
-      `}>
+    <div className="dropdown dropdown-end w-auto">
+      <div tabIndex="0" className={ iconOnly
+        ? 'btn btn-sm'
+        : `m-0 btn btn-neutral flex flex-row gap-2 btn-outline
+          md:btn-ghost
+          hover:bg-neutral hover:border-neutral-content
+        `
+      }>
         <LocaleIcon />
-        <span>{t(router.locale)}</span>
+      {!iconOnly && <span>{t(router.locale)}</span>}
       </div>
       <ul tabIndex="0" className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
         {router.locales.map(locale => (

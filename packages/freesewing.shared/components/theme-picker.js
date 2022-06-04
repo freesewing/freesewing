@@ -2,18 +2,20 @@ import themes from 'shared/themes/index.js'
 import ThemeIcon from 'shared/components/icons/theme.js'
 import { useTranslation } from 'next-i18next'
 
-const ThemePicker = ({ app, className }) => {
+const ThemePicker = ({ app, className, iconOnly=false }) => {
   const { t } = useTranslation(['themes'])
 
   return (
-      <div className={`dropdown ${className} w-full md:w-auto`}>
-        <div tabIndex="0" className={`
-          m-0 btn btn-neutral flex flex-row gap-2 btn-outline
-          md:btn-ghost
-          hover:bg-neutral hover:border-neutral-content
-        `}>
+      <div className={`dropdown dropdown-end ${className} w-auto`}>
+        <div tabIndex="0" className={iconOnly
+         ? `btn btn-sm`
+         : `m-0 btn btn-neutral flex flex-row gap-2 btn-outline
+            md:btn-ghost
+            hover:bg-neutral hover:border-neutral-content
+          `}
+        >
           <ThemeIcon />
-          <span>{t(`${app.theme}Theme`)}</span>
+          {!iconOnly && <span>{t(`${app.theme}Theme`)}</span>}
         </div>
         <ul
           tabIndex="0"

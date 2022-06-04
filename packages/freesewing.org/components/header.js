@@ -82,10 +82,12 @@ const Header = ({ app, setSearch }) => {
                   )
                 }
             </button>
-            <div className="flex flex-row gap-2 md:hidden">
-              <button className="btn btn-sm btn h-12 px-12" onClick={() => setSearch(true)}>
+            <div className="flex flex-row items-center md:hidden pr-4">
+              <button onClick={() => setSearch(true)} className="btn btn-sm">
                 <SearchIcon />
               </button>
+              <ThemePicker app={app} iconOnly />
+              <LocalePicker app={app} iconOnly />
             </div>
             <button className={`
               btn btn-sm h-12
