@@ -216,7 +216,7 @@
 
 /* Theme gradient */
 .theme-gradient {
-  background: var(--theme-gradient);
+  background-image: var(--theme-gradient);
 }
 .theme-gradient.loading {
   animation-name: MOVE-BG;

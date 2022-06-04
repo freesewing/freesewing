@@ -215,7 +215,8 @@ export const Icons = ({
   liClasses='',
   linkClasses=`grow text-lg lg:text-xl py-1 text-base-content sm:text-base-content
   hover:text-secondary sm:hover:text-secondary hover:cursor-pointer
-  flex flex-col items-center`
+  flex flex-col items-center`,
+  linkStyle={}
 }) => {
   if (!app.navigation) return null
   const output = []
@@ -223,7 +224,7 @@ export const Icons = ({
     output.push(
       <li key={page.__slug} className={liClasses}>
         <Link href={`/${page.__slug}`}>
-          <a className={linkClasses} title={page.__title}>
+          <a className={linkClasses} title={page.__title} style={linkStyle}>
             {icons[page.__slug]
               ? icons[page.__slug]('w-14 h-14')
               : <HelpIcon />

@@ -7,6 +7,7 @@ import CcByLogo from 'shared/components/logos/cc-by.js'
 import { useTranslation } from 'next-i18next'
 import PageLink from 'shared/components/page-link'
 import DocsLink from 'shared/components/docs-link'
+import PinkedRibbon from 'shared/components/pinked-ribbon.js'
 
 // Classes
 const link = "text-secondary font-bold hover:pointer hover:underline px-1"
@@ -180,7 +181,7 @@ const Footer = ({ app }) => {
 
   return (
     <footer className="bg-neutral">
-      <div className={`theme-gradient h-14 ${app.loading ? 'loading' : ''}`} />
+      <PinkedRibbon loading={app.loading} theme={app.theme} />
       <div className="p-4 py-16 flex flex-row bg-neutral -mt-1 z-0 gap-8 flex-wrap justify-around text-neutral-content">
         <div className="w-64 mt-2">
           <div className="px-4 mb-4"><CreativeCommonsLogo /></div>
@@ -315,8 +316,6 @@ const Footer = ({ app }) => {
         <br />
         [ <DocsLink slug="docs/various/pledge" /> ]
       </p>
-
-      <div className={`theme-gradient h-14 ${app.loading ? 'loading' : ''}`} />
     </footer>
   )
 }
