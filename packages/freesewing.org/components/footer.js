@@ -8,6 +8,7 @@ import { useTranslation } from 'next-i18next'
 import PageLink from 'shared/components/page-link'
 import DocsLink from 'shared/components/docs-link'
 import PinkedRibbon from 'shared/components/pinked-ribbon.js'
+import Worm from 'shared/components/worm.js'
 
 // Classes
 const link = "text-secondary font-bold hover:pointer hover:underline px-1"
@@ -262,34 +263,22 @@ const Footer = ({ app }) => {
         {translations.contributors[app.locale]}
       </p>
       <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
-        {contributors.map(person => (
-          <a title={person.name} href={person.profile} className="m-auto" key={person.profile+person.name}>
-            <img
-              src={person.avatar_url} alt={`Avatar of ${person.name}`}
-              className="w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-secondary hover:border-accent"
-            />
-          </a>
-        ))}
+        <Worm list={contributors.map(item => ({
+          img: item.avatar_url,
+          title: item.name,
+          slug: item.profile
+        }))} />
       </div>
 
       <p className="text-center text-neutral-content text-sm px-2">
         {translations.patrons[app.locale]}
       </p>
       <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
-        {patrons.map(person => (
-          <a
-            title={person.name}
-            href={`https://freesewing.org/users/${person.username}`}
-            className="m-auto"
-            key={person.username}
-          >
-            <img
-              src={person.img}
-              alt={`Avatar of ${person.name}`}
-              className="w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-secondary hover:border-accent"
-            />
-          </a>
-        ))}
+        <Worm list={patrons.map(item => ({
+          img: item.img,
+          title: item.name,
+          slug: item.username
+        }))} />
       </div>
 
       <p className="text-center text-neutral-content text-sm px-2">
