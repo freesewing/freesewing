@@ -14,14 +14,16 @@ const DesignsPage = (props) => {
   const app = useApp()
   const { t } = useTranslation()
 
+  const allDesigns = [
+    ...designs.accessories,
+    ...designs.blocks,
+    ...designs.garments,
+  ]
+
   return (
     <Page app={app} title={t('designs')}>
       <div className="flex flex-row flex-wrap gap-4">
-      {Object.keys(designs).map(type => (
-        <div key={type}>
-          {designs[type].map(design => <Design key={design} design={design} />)}
-        </div>
-      ))}
+        {allDesigns.map(design => <Design key={design} design={design} />)}
       </div>
     </Page>
   )
