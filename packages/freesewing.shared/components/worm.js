@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
-const PreviewTile = ({ img, slug, title }) => (
+const linkClasses = "w-12 h-12 md:w-14 md:h-14 xl:w-20 xl:h-20 inline-block"
+
+const PreviewTile = ({ img, slug, title, href=false }) => (
   <div
     style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
     className={`
@@ -11,9 +13,10 @@ const PreviewTile = ({ img, slug, title }) => (
       mb-2 xl:mb-4
     `}
   >
-    <Link href={`/showcase/${slug}`}>
-      <a className="w-12 h-12 block" title={title}/>
-    </Link>
+    {href
+      ? <a href={href} title={title} className={linkClasses}/>
+      : <Link href={slug}><a title={title} className={linkClasses}/></Link>
+    }
   </div>
 )
 

@@ -266,7 +266,7 @@ const Footer = ({ app }) => {
         <Worm list={contributors.map(item => ({
           img: item.avatar_url,
           title: item.name,
-          slug: item.profile
+          href: item.profile
         }))} />
       </div>
 
@@ -277,7 +277,7 @@ const Footer = ({ app }) => {
         <Worm list={patrons.map(item => ({
           img: item.img,
           title: item.name,
-          slug: item.username
+          slug: `/users/${item.username}`
         }))} />
       </div>
 
