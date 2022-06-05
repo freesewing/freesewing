@@ -19,4 +19,11 @@ module.exports = {
     logs: true,
     rtl: false,
   },
+  theme: {
+    extend: {
+      aspectRatio: {
+        '9/16': '9 / 16'
+      }
+    }
+  }
 }
