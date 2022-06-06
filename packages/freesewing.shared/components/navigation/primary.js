@@ -207,7 +207,8 @@ export const Icons = ({
   liClasses='',
   linkClasses=`grow text-lg lg:text-xl py-1 text-base-content sm:text-base-content
   hover:text-secondary sm:hover:text-secondary hover:cursor-pointer
-  flex flex-col items-center`
+  flex flex-col items-center`,
+  linkStyle={}
 }) => {
   if (!app.navigation) return null
   const output = []
