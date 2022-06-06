@@ -106,15 +106,17 @@ export async function getStaticProps({ params, locale }) {
  */
 export async function getStaticPaths() {
 
+  const somePaths = mdxPaths.filter(path => (path.split('/').length < 5))
+
   return {
     paths: [
-      ...mdxPaths.map(key => `/${key}`),
-      ...mdxPaths.map(key => `/es/${key}`),
-      ...mdxPaths.map(key => `/de/${key}`),
-      ...mdxPaths.map(key => `/fr/${key}`),
-      ...mdxPaths.map(key => `/nl/${key}`),
+      ...somePaths.map(key => `/${key}`),
+      ...somePaths.map(key => `/es/${key}`),
+      ...somePaths.map(key => `/de/${key}`),
+      ...somePaths.map(key => `/fr/${key}`),
+      ...somePaths.map(key => `/nl/${key}`),
     ],
-    fallback: false
+    fallback: 'blocking'
   }
 }
 
