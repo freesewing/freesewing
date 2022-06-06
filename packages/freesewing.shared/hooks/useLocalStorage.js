@@ -23,7 +23,7 @@ function useLocalStorage(key, initialValue) {
   useEffect(() => {
     const item = window.localStorage.getItem(prefix + key)
     if (item) {
-      setValue(item ? JSON.parse(item) : initialValue);
+      setValue(JSON.parse(item));
     }
     setReady(true);
   }, [])

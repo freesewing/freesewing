@@ -1,5 +1,5 @@
 import useLocalStorage from 'shared/hooks/useLocalStorage';
-import { useState, useEffect } from 'react'
+import {useEffect } from 'react'
 
 function useTheme() {
   // make a local storage item for the theme
