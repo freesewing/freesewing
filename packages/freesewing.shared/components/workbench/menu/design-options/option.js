@@ -1,5 +1,5 @@
 import { Chevron } from 'shared/components/navigation/primary.js'
-import { formatMm, formatPercentage, optionType } from 'shared/utils.js'
+import { optionType } from 'shared/utils.js'
 import { Li, Ul, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 import {values} from 'shared/components/workbench/menu/design-options/option-value';
