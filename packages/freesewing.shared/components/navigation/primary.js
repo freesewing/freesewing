@@ -214,8 +214,8 @@ export const Icons = ({
   for (const page of order(app.navigation)) {
     output.push(
       <li key={page.__slug} className={liClasses}>
-        <Link href={`${page.__slug}`}>
-          <a className={linkClasses} title={page.__title}>
+        <Link href={`/${page.__slug}`}>
+          <a className={linkClasses} title={page.__title} style={linkStyle}>
             {icons[page.__slug]
               ? icons[page.__slug]('w-14 h-14')
               : <HelpIcon />
