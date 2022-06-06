@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 
 // See: https://usehooks.com/useLocalStorage/
-
 function useLocalStorage(key, initialValue) {
   const prefix = 'fs_'
   const [storedValue, setStoredValue] = useState(initialValue);
