@@ -8,12 +8,9 @@ import DocsIcon from 'shared/components/icons/docs.js'
 import DesignIcon from 'shared/components/icons/design.js'
 import BoxIcon from 'shared/components/icons/box.js'
 import CogIcon from 'shared/components/icons/cog.js'
-import UserIcon from 'shared/components/icons/user.js'
-import CommunityIcon from 'shared/components/icons/community.js'
-import ShowcaseIcon from 'shared/components/icons/camera.js'
 
 // Don't show children for blog and showcase posts
-const keepClosed = ['blog', 'showcase' ]
+const keepClosed = ['blog', 'showcase', ]
 
 // TODO: For now we force tailwind to pickup these styles
 // At some point this should 'just work' though, but let's not worry about it now
@@ -24,19 +21,14 @@ const force = [
 
 // List of icons matched to top-level slug
 const icons = {
-  accessories: (className='') => <TutorialIcon className={className}/>,
-  account: (className='') => <UserIcon className={className}/>,
-  blocks: (className='') => <BoxIcon className={className}/>,
   blog: (className='') => <RssIcon className={className}/>,
-  community: (className='') => <CommunityIcon className={className}/>,
-  designs: (className='') => <DesignIcon className={className}/>,
-  docs: (className='') => <DocsIcon className={className}/>,
-  garments: (className='') => <DesignIcon className={className}/>,
+  tutorials: (className='') => <TutorialIcon className={className}/>,
   guides: (className='') => <GuideIcon className={className}/>,
   howtos: (className='') => <HelpIcon className={className}/>,
   reference: (className='') => <DocsIcon className={className}/>,
-  showcase: (className='') => <ShowcaseIcon className={className}/>,
-  tutorials: (className='') => <TutorialIcon className={className}/>,
+  accessories: (className='') => <TutorialIcon className={className}/>,
+  blocks: (className='') => <BoxIcon className={className}/>,
+  garments: (className='') => <DesignIcon className={className}/>,
   utilities: (className='') => <CogIcon className={className}/>,
 }
 
@@ -94,7 +86,7 @@ const SubLevel = ({ nodes={}, active }) => (
               hover:cursor-row-resize
               items-center
             `}>
-              <Link href={`/${child.__slug}`}>
+              <Link href={`${child.__slug}`}>
                 <a title={child.__title} className={`
                   grow pl-2 border-l-2
                   ${linkClasses}
@@ -127,7 +119,7 @@ const SubLevel = ({ nodes={}, active }) => (
         </li>
       ) : (
         <li className='pl-2 flex flex-row items-center' key={child.__slug}>
-          <Link href={`/${child.__slug}`} title={child.__title}>
+          <Link href={`${child.__slug}`} title={child.__title}>
             <a className={`
               pl-2 border-l-2
               grow
@@ -172,7 +164,7 @@ const TopLevel = ({ icon, title, nav, current, slug, hasChildren=false, active }
       items-center
     `}>
       <span className="text-secondary">{icon}</span>
-      <Link href={`/${slug}`}>
+      <Link href={`${slug}`}>
         <a className={`
           grow ${linkClasses} hover:cursor-pointer
           ${slug === active
@@ -223,7 +215,7 @@ export const Icons = ({
   for (const page of order(app.navigation)) {
     output.push(
       <li key={page.__slug} className={liClasses}>
-        <Link href={`/${page.__slug}`}>
+        <Link href={`${page.__slug}`}>
           <a className={linkClasses} title={page.__title} style={linkStyle}>
             {icons[page.__slug]
               ? icons[page.__slug]('w-14 h-14')
