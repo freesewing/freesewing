@@ -54,7 +54,7 @@ const PageWrapper= ({
       ref={swipeHandlers.ref}
       onMouseDown={swipeHandlers.onMouseDown}
       data-theme={app.theme}
-      key={app.theme} // Thiis forces the data-theme update
+      key={app.theme} // This forces the data-theme update
     >
       <LayoutWrapper {...childProps}>
         {Layout
