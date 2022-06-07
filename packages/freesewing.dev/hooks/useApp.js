@@ -2,6 +2,7 @@ import { useState } from 'react'
 import set from 'lodash.set'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
+import useTheme from 'shared/hooks/useTheme'
 // Prebuild navigation
 import prebuildNavigation from 'site/prebuild/navigation.js'
 
@@ -9,14 +10,9 @@ function useApp(full = true) {
   // No translation for freesewing.dev
   const language = 'en'
 
-  // User color scheme preference
-  const prefersDarkMode = (typeof window !== 'undefined' && typeof  window.matchMedia === 'function')
-    ? window.matchMedia(`(prefers-color-scheme: dark`).matches
-    : null
-
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
-  const [theme, setTheme] = useLocalStorage('theme', prefersDarkMode ? 'dark' : 'light')
+  const [theme, setTheme] = useTheme();
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
