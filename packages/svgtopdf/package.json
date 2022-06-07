@@ -46,7 +46,7 @@
     "express-rate-limit": "^6.2.0",
     "formidable": "2.0.1",
     "rimraf": "3.0.2",
-    "shell-exec": "1.0.2"
+    "shell-exec": "1.1.2"
   },
   "devDependencies": {
     "@freesewing/prettier-config": "latest",
