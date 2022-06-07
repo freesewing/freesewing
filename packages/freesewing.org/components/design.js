@@ -29,13 +29,6 @@ const Design = ({ design }) => {
     code="Anonymous",
     difficulty=3,
   } = configs[design]
-  const designer = configs[design].design || "Anonymous"
-  const people = new Set()
-  for (const contrib of ['design', 'code']) {
-    if (Array.isArray(configs[design][contrib])) {
-      for (const person of configs[design][contrib]) people.add(person)
-    } else people.add(configs[design][contrib])
-  }
 
   const [examples, setExamples] = useState([])
 
@@ -45,7 +38,7 @@ const Design = ({ design }) => {
       `&_where[_or][0][design1_eq]=${design}` +
       `&_where[_or][1][design2_eq]=${design}` +
       `&_where[_or][2][design3_eq]=${design}` +
-      `&_limit=6`
+      `&_limit=5`
     await fetch(url)
       .then(response => response.json())
       .then(data => setExamples(data.map(post => ({
@@ -59,8 +52,7 @@ const Design = ({ design }) => {
   return (
     <div className={`
       my-8
-      aspect-[9/16]
-      w-96
+      w-full sm:w-96
       shadow-lg
       border
       rounded-lg
@@ -68,12 +60,8 @@ const Design = ({ design }) => {
       text-center
       overflow-clip
       relative
-      `} style={{
-      backgroundImage: `url('/img/designs/${design}.png')`,
-      backgroundSize: 'contain',
-      backgroundPosition: '50% 50%',
-      backgroundRepeat: 'no-repeat',
-    }}>
+      `}
+    >
       {/* Link over the entire card */}
       <Link href={`/designs/${design}`}>
         <a className="absolute top-0 right-0 w-full h-full" title={t(`${design}.t`)} />
@@ -86,21 +74,20 @@ const Design = ({ design }) => {
           <Difficulty score={difficulty} />
         </div>
       </div>
-      {/* People who did the Design/Code */}
-      <div className="flex flex-row items-center justify-start max-w-2/3 pt-2 pl-1">
-        <span className="text-base-content font-sm talic ml-2 p-2 bg-base-100 rounded-lg bg-opacity-60 p-0 m-0 px-1">
-          {[...people].map(person => person).join(' / ')}
-        </span>
-      </div>
-      <div className="grow"></div>
-      <div className="bg-neutral bg-opacity-50 p-4 text-neutral-content" style={{
-        textShadow: "1px 1px 2px black",
-        color: 'white'
+      <h6 className="text-base-content m-0 pt-4 pl-4 text-left capitalize">{design}</h6>
+      <div className={`grow aspect-[9/16] -mt-4
+        `} style={{
+        backgroundImage: `url('/img/designs/${design}.png')`,
+        backgroundSize: 'contain',
+        backgroundPosition: '50% 50%',
+        backgroundRepeat: 'no-repeat',
       }}>
-        <h2 className="text-neutral-content m-0 p-0">{t(`${design}.t`)}</h2>
-        <div className="text-neutral-content m-0 p-0 font-bold text-lg">{t(`${design}.d`)}</div>
       </div>
-      <div className="my-4 z-10">
+      <div className="px-4 text-base-content">
+        <h2 className="text-base-content m-0 p-0 z-30">{t(`${design}.t`)}</h2>
+        <div className="text-base-content m-0 p-0 font-bold text-lg">{t(`${design}.d`)}</div>
+      </div>
+      <div className="py-4 z-10">
         <Worm list={examples} fixed/>
       </div>
     </div>
