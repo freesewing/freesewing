@@ -13,8 +13,8 @@ export default function (part) {
     complete,
     paperless,
     macro,
+    utils,
   } = part.shorthand()
-
 
   let body01_02d = 117.67274991262845 * options.size
   let body02_03d = 124.91298035032229 * options.size
@@ -22,67 +22,67 @@ export default function (part) {
   let body03_04d = 255.92397474640785 * options.size
   let body04_05d = 201.01260719168837 * options.size
   let body05_06d = 134.89080971660005 * options.size
-  let body06_07d =  49.03860703568160 * options.size
+  let body06_07d = 49.0386070356816 * options.size
   let body07_08d = 225.86340480918992 * options.size
-  let body08_09d =  66.84760000179512 * options.size
-  let body09_10d =  40.72782003741420 * options.size
-  let body10_11d =  23.78799421977402 * options.size
-  let body11_12d =  57.68530918700182 * options.size
-  let body12_13d =  98.06623978209830 * options.size
-  let body13_14d =  91.32736600274856 * options.size
-  let body14_15d = 295.10977066828880 * options.size
-  let body15_16d = 209.42633350581770 * options.size
+  let body08_09d = 66.84760000179512 * options.size
+  let body09_10d = 40.7278200374142 * options.size
+  let body10_11d = 23.78799421977402 * options.size
+  let body11_12d = 57.68530918700182 * options.size
+  let body12_13d = 98.0662397820983 * options.size
+  let body13_14d = 91.32736600274856 * options.size
+  let body14_15d = 295.1097706682888 * options.size
+  let body15_16d = 209.4263335058177 * options.size
   let body16_17d = 152.51537318250902 * options.size
   let body17_18d = 255.15294373571314 * options.size
-  let body18_19d =  71.90453921693678 * options.size
-  let body19_01d =  61.33021195137026 * options.size
+  let body18_19d = 71.90453921693678 * options.size
+  let body19_01d = 61.33021195137026 * options.size
 
-  let body01cp1d =  42.13103487929059 * options.size
-  body01cp1d     =  32.13103487929059 * options.size
-  let body01cp2d =  23.72518967258217 * options.size
-  let body02cp1d =  44.99353642469105 * options.size
-  let body02cp2d =  42.33568754608812 * options.size
-  let body03cp1d =  62.59332758369697 * options.size
-  let body03cp2d =  40.89285869195256 * options.size
+  let body01cp1d = 42.13103487929059 * options.size
+  body01cp1d = 32.13103487929059 * options.size
+  let body01cp2d = 23.72518967258217 * options.size
+  let body02cp1d = 44.99353642469105 * options.size
+  let body02cp2d = 42.33568754608812 * options.size
+  let body03cp1d = 62.59332758369697 * options.size
+  let body03cp2d = 40.89285869195256 * options.size
   let body04cp1d = 176.21501525125487 * options.size
   let body04cp2d = 130.11389715553065 * options.size
-  let body05cp1d =  29.56689479806765 * options.size
+  let body05cp1d = 29.56689479806765 * options.size
   let body05cp2d = 104.66860665930352 * options.size
-  let body06cp1d =   8.03497915367552 * options.size
-  let body06cp2d =  34.57808908832297 * options.size
-  let body07cp1d =  89.11908088619404 * options.size
-  let body07cp2d =  25.54827831772624 * options.size
-  let body08cp1d =  41.24120086757895 * options.size
+  let body06cp1d = 8.03497915367552 * options.size
+  let body06cp2d = 34.57808908832297 * options.size
+  let body07cp1d = 89.11908088619404 * options.size
+  let body07cp2d = 25.54827831772624 * options.size
+  let body08cp1d = 41.24120086757895 * options.size
   let body08cp2d = 158.23693200387828 * options.size
-  let body09cp1d =   4.87663090668135 * options.size
-  let body09cp2d =  25.76988630165065 * options.size
-  let body10cp1d =   4.13950105689086 * options.size
-  let body10cp2d =  13.27508493381490 * options.size
-  let body11cp1d =  17.66659910678904 * options.size
-  let body11cp2d =  17.66533107530116 * options.size
-  let body12cp1d =  14.46914569005365 * options.size
-  let body12cp2d =  39.51915145850176 * options.size
-  let body13cp1d =  35.66832366400192 * options.size
-  let body13cp2d =  48.53828530139895 * options.size
-  let body14cp1d =  77.26036056089820 * options.size
-  let body14cp2d =  37.42741381661305 * options.size
-  let body15cp1d =  74.89746640634775 * options.size
+  let body09cp1d = 4.87663090668135 * options.size
+  let body09cp2d = 25.76988630165065 * options.size
+  let body10cp1d = 4.13950105689086 * options.size
+  let body10cp2d = 13.2750849338149 * options.size
+  let body11cp1d = 17.66659910678904 * options.size
+  let body11cp2d = 17.66533107530116 * options.size
+  let body12cp1d = 14.46914569005365 * options.size
+  let body12cp2d = 39.51915145850176 * options.size
+  let body13cp1d = 35.66832366400192 * options.size
+  let body13cp2d = 48.53828530139895 * options.size
+  let body14cp1d = 77.2603605608982 * options.size
+  let body14cp2d = 37.42741381661305 * options.size
+  let body15cp1d = 74.89746640634775 * options.size
   let body15cp2d = 101.16048880857042 * options.size
-  let body16cp1d =  36.21092864039804 * options.size
-  let body16cp2d =  63.69410844026312 * options.size
-  let body17cp1d =  97.90988675818191 * options.size
-  let body17cp2d =  62.08991689477443 * options.size
-  let body18cp1d =  22.74982929606286 * options.size
-  let body18cp2d =  16.57960183478481 * options.size
-  let body19cp1d =  23.95674278778315 * options.size
-  let body19cp2d =  24.49741270011998 * options.size
+  let body16cp1d = 36.21092864039804 * options.size
+  let body16cp2d = 63.69410844026312 * options.size
+  let body17cp1d = 97.90988675818191 * options.size
+  let body17cp2d = 62.08991689477443 * options.size
+  let body18cp1d = 22.74982929606286 * options.size
+  let body18cp2d = 16.57960183478481 * options.size
+  let body19cp1d = 23.95674278778315 * options.size
+  let body19cp2d = 24.49741270011998 * options.size
 
-  let eyeBigDist = 180.18315182058507 *options.size
-  let eyeSmallDist = 2.3629811679317316 *options.size
+  let eyeBigDist = 180.18315182058507 * options.size
+  let eyeSmallDist = 2.3629811679317316 * options.size
 
-  let gillLength = 41.01907104018812 *options.size
+  let gillLength = 41.01907104018812 * options.size
 
-/*
+  /*
   let body01_02a = 350.1382392835908
   let body02_03a = 219.2280235992150
   let body03_04a = 339.6914424367389
@@ -149,71 +149,71 @@ export default function (part) {
 */
 
   let body01_02a = 170.1382393
-let body02_03a = 39.2280236
-let body03_04a = 159.6914424
-let body04_05a = 147.5949161
-let body05_06a = 128.0581973
-let body06_07a = 253.6604388
-let body07_08a = 225.7462208
-let body08_09a = 157.5894683
-let body09_10a = 125.1280145
-let body10_11a = 242.0485099
-let body11_12a = 211.5926663
-let body12_13a = 171.354716
-let body13_14a = 245.2915054
-let body14_15a = 326.7578209
-let body15_16a = 359.0692249
-let body16_17a = 353.6138832
-let body17_18a = 2.546389668
-let body18_19a = 348.3450181
-let body19_01a = 59.63482522
+  let body02_03a = 39.2280236
+  let body03_04a = 159.6914424
+  let body04_05a = 147.5949161
+  let body05_06a = 128.0581973
+  let body06_07a = 253.6604388
+  let body07_08a = 225.7462208
+  let body08_09a = 157.5894683
+  let body09_10a = 125.1280145
+  let body10_11a = 242.0485099
+  let body11_12a = 211.5926663
+  let body12_13a = 171.354716
+  let body13_14a = 245.2915054
+  let body14_15a = 326.7578209
+  let body15_16a = 359.0692249
+  let body16_17a = 353.6138832
+  let body17_18a = 2.546389668
+  let body18_19a = 348.3450181
+  let body19_01a = 59.63482522
 
-let body01cp1a = 161.5263465
-let body01cp2a = 255.6503959
-let body02cp1a = 31.95354992
-// let body02cp2a = 359.48842
-// let body02cp2a = 2.48842
-let body02cp2a = 10
+  let body01cp1a = 161.5263465
+  let body01cp2a = 255.6503959
+  let body02cp1a = 31.95354992
+  // let body02cp2a = 359.48842
+  // let body02cp2a = 2.48842
+  let body02cp2a = 10
 
-let body03cp1a = 142.8538439
-let body03cp2a = 225.3745028
-let body04cp1a = 169.1071046
-let body04cp2a = 350.7775897
-let body05cp1a = 105.1596015
-let body05cp2a = 288.5890112
-let body06cp1a = 221.1852544
-let body06cp2a = 344.141322
-let body07cp1a = 267.2041495
-let body07cp2a = 87.03164984
-let body08cp1a = 177.4386949
-let body08cp2a = 358.5040423
-let body09cp1a = 119.4140746
-let body09cp2a = 299.4139506
-let body10cp1a = 219.0878163
-let body10cp2a = 311.9955535
-let body11cp1a = 251.2799387
-let body11cp2a = 71.28196954
-let body12cp1a = 175.0877187
-let body12cp2a = 355.087783
-let body13cp1a = 260.2392636
-let body13cp2a = 351.4909474
-let body14cp1a = 320.929847
-let body14cp2a = 56.95148863
-let body15cp1a = 22.55298719
-let body15cp2a = 153.1212844
-let body16cp1a = 13.89041491
-let body16cp2a = 141.0219905
-let body17cp1a = 11.04287338
-let body17cp2a = 138.4852424
-let body18cp1a = 356.968813
-let body18cp2a = 178.1542839
-let body19cp1a = 51.33608313
-let body19cp2a = 158.5586388
+  let body03cp1a = 142.8538439
+  let body03cp2a = 225.3745028
+  let body04cp1a = 169.1071046
+  let body04cp2a = 350.7775897
+  let body05cp1a = 105.1596015
+  let body05cp2a = 288.5890112
+  let body06cp1a = 221.1852544
+  let body06cp2a = 344.141322
+  let body07cp1a = 267.2041495
+  let body07cp2a = 87.03164984
+  let body08cp1a = 177.4386949
+  let body08cp2a = 358.5040423
+  let body09cp1a = 119.4140746
+  let body09cp2a = 299.4139506
+  let body10cp1a = 219.0878163
+  let body10cp2a = 311.9955535
+  let body11cp1a = 251.2799387
+  let body11cp2a = 71.28196954
+  let body12cp1a = 175.0877187
+  let body12cp2a = 355.087783
+  let body13cp1a = 260.2392636
+  let body13cp2a = 351.4909474
+  let body14cp1a = 320.929847
+  let body14cp2a = 56.95148863
+  let body15cp1a = 22.55298719
+  let body15cp2a = 153.1212844
+  let body16cp1a = 13.89041491
+  let body16cp2a = 141.0219905
+  let body17cp1a = 11.04287338
+  let body17cp2a = 138.4852424
+  let body18cp1a = 356.968813
+  let body18cp2a = 178.1542839
+  let body19cp1a = 51.33608313
+  let body19cp2a = 158.5586388
 
-let eyeBigAngle = 184.8499937
-let eyeSmallAngle = 151.2656912
+  let eyeBigAngle = 184.8499937
+  let eyeSmallAngle = 151.2656912
 
-let gillAngle = 103.9416747
+  let gillAngle = 103.9416747
 
   points.body01 = new Point(0, 0)
   points.body02 = points.body01.shift(body01_02a, body01_02d)
@@ -288,10 +288,6 @@ let gillAngle = 103.9416747
     points.body01.angle(points.body01cp2) + 90 * (-1 + options.nosePointiness),
     points.body01.angle(points.body02) - 5
   )
-  console.log({pointiness: options.nosePointiness})
-  console.log({pointiness_a: points.body01.angle(points.body01cp2)})
-  console.log({pointiness_a: points.body01.angle(points.body01cp2) +90 * (-1 + options.nosePointiness)})
-  console.log({pointiness_m: points.body01.angle(points.body02) - 5})
 
   points.body01cp1 = points.body01.shift(body01cp1a, body01cp1d)
 
@@ -316,9 +312,6 @@ let gillAngle = 103.9416747
   )
 
   // Tail adjustment:
-  console.log(points.body13.angle(points.body13cp1) - points.body13.angle(points.body14))
-  console.log(points.body14.angle(points.body13) - points.body14.angle(points.body14cp2))
-
   let tailCpAngle =
     (points.body13.angle(points.body13cp1) -
       points.body13.angle(points.body14) +
@@ -333,21 +326,25 @@ let gillAngle = 103.9416747
     body13cp1d
   )
 
-  points.eyeBig = points.body01.shift( eyeBigAngle, eyeBigDist )
-  points.eyeSmall = points.eyeBig.shift( eyeSmallAngle, eyeSmallDist *(-2+(options.aggressive ? 0 : 1)))
+  points.eyeBig = points.body01.shift(eyeBigAngle, eyeBigDist)
+  points.eyeSmall = points.eyeBig.shift(
+    eyeSmallAngle,
+    eyeSmallDist * (-2 + (options.aggressive ? 0 : 1))
+  )
+
+  // Feeding:
+
 
   let c = 0.55191502449351
   let eyeBigX = 18.7757 * options.size
   let eyeBigY = 11.6262 * options.size
   points.eyeBigT = points.eyeBig.shift(90, eyeBigY / 2)
-  points.eyeBigB = points.eyeBig.shift(270, eyeBigY / 2).shift(
-    0,
-    options.aggressive ? eyeBigX / 3 : 0
-  )
-  points.eyeBigR = points.eyeBig.shift(0, eyeBigX / 2).shift(
-    270,
-    options.aggressive ? eyeBigY / 3 : 0
-  )
+  points.eyeBigB = points.eyeBig
+    .shift(270, eyeBigY / 2)
+    .shift(0, options.aggressive ? eyeBigX / 3 : 0)
+  points.eyeBigR = points.eyeBig
+    .shift(0, eyeBigX / 2)
+    .shift(270, options.aggressive ? eyeBigY / 3 : 0)
   points.eyeBigL = points.eyeBig.shift(180, eyeBigX / 2)
   points.eyeBigTcp1 = points.eyeBigT.shift(0, (eyeBigY / 2) * c)
   points.eyeBigTcp2 = points.eyeBigT.shift(180, (eyeBigY / 2) * c)
@@ -365,8 +362,8 @@ let gillAngle = 103.9416747
     .curve(points.eyeBigBcp2, points.eyeBigRcp1, points.eyeBigR)
     .curve(points.eyeBigRcp2, points.eyeBigTcp1, points.eyeBigT)
 
-  let eyeSmallX = 1.87089 * options.size *((options.aggressive ? 1.5 : 1))
-  let eyeSmallY = 1.5368 * options.size *((options.aggressive ? 1.5 : 1))
+  let eyeSmallX = 1.87089 * options.size * (options.aggressive ? 1.5 : 1)
+  let eyeSmallY = 1.5368 * options.size * (options.aggressive ? 1.5 : 1)
   points.eyeSmallT = points.eyeSmall.shift(270, eyeSmallY / 2)
   points.eyeSmallB = points.eyeSmall.shift(90, eyeSmallY / 2)
   points.eyeSmallR = points.eyeSmall.shift(0, eyeSmallX / 2)
@@ -408,48 +405,72 @@ let gillAngle = 103.9416747
     .curve(points.body17cp1, points.body18cp2, points.body18)
     .curve(points.body18cp1, points.body19cp2, points.body19)
     .curve(points.body19cp1, points.body01cp2, points.body01)
+    .close()
 
-  
   let gillPath = new Path()
     .move(points.body17)
     .curve(points.body17cp1, points.body18cp2, points.body18)
-  points.gill1s = gillPath.shiftFractionAlong(0.018)
-  points.gill2s = gillPath.shiftFractionAlong(0.08 * 1 + 0.018)
-  points.gill3s = gillPath.shiftFractionAlong(0.08 * 2 + 0.018)
-  points.gill4s = gillPath.shiftFractionAlong(0.08 * 3 + 0.018)
-  points.gill5s = gillPath.shiftFractionAlong(0.08 * 4 + 0.018)
-  points.gill1e = points.gill1s.shift(gillAngle, gillLength *(1 +(0 * 0.08)))
-  points.gill2e = points.gill2s.shift(gillAngle, gillLength *(1 +(1 * 0.08)))
-  points.gill3e = points.gill3s.shift(gillAngle, gillLength *(1 +(2 * 0.08)))
-  points.gill4e = points.gill4s.shift(gillAngle, gillLength *(1 +(3 * 0.08)))
-  points.gill5e = points.gill5s.shift(gillAngle, gillLength *(1 +(4 * 0.08)))
+  points.gill1start = gillPath.shiftFractionAlong(0.018)
+  points.gill2start = gillPath.shiftFractionAlong(0.08 * 1 + 0.018)
+  points.gill3start = gillPath.shiftFractionAlong(0.08 * 2 + 0.018)
+  points.gill4start = gillPath.shiftFractionAlong(0.08 * 3 + 0.018)
+  points.gill5start = gillPath.shiftFractionAlong(0.08 * 4 + 0.018)
+  points.gill1end = points.gill1start.shift(gillAngle, gillLength * (1 + 0 * 0.08))
+  points.gill2end = points.gill2start.shift(gillAngle, gillLength * (1 + 1 * 0.08))
+  points.gill3end = points.gill3start.shift(gillAngle, gillLength * (1 + 2 * 0.08))
+  points.gill4end = points.gill4start.shift(gillAngle, gillLength * (1 + 3 * 0.08))
+  points.gill5end = points.gill5start.shift(gillAngle, gillLength * (1 + 4 * 0.08))
 
-  paths.gill1 = new Path().move(points.gill1s).line(points.gill1e)
-  paths.gill2 = new Path().move(points.gill2s).line(points.gill2e)
-  paths.gill3 = new Path().move(points.gill3s).line(points.gill3e)
-  paths.gill4 = new Path().move(points.gill4s).line(points.gill4e)
-  paths.gill5 = new Path().move(points.gill5s).line(points.gill5e)
+  paths.gill1 = new Path().move(points.gill1start).line(points.gill1end)
+  paths.gill2 = new Path().move(points.gill2start).line(points.gill2end)
+  paths.gill3 = new Path().move(points.gill3start).line(points.gill3end)
+  paths.gill4 = new Path().move(points.gill4start).line(points.gill4end)
+  paths.gill5 = new Path().move(points.gill5start).line(points.gill5end)
 
-  store.set( 'tailWidth', points.body13.dist( points.body14 ) )
-  store.set( 'tailCpAngle', points.body13.angle(points.body13cp1) - points.body13.angle(points.body14) )
-  store.set( 'tailCpDist', body13cp1d )
+  store.set('tailWidth', points.body13.dist(points.body14))
+  store.set(
+    'tailCpAngle',
+    points.body13.angle(points.body13cp1) - points.body13.angle(points.body14)
+  )
+  store.set('tailCpDist', body13cp1d)
 
-  store.set( 'topFinOpening', points.body16.dist( points.body17 ))
-  store.set( 'topFinOpeningLength', (new Path().move(points.body16).curve(points.body16cp1, points.body17cp2, points.body17)).length())
+  store.set('topFinOpening', points.body16.dist(points.body17))
+  store.set(
+    'topFinOpeningLength',
+    new Path().move(points.body16).curve(points.body16cp1, points.body17cp2, points.body17).length()
+  )
 
-  store.set( 'faceTopLength', (new Path().move(points.body17).curve(points.body17cp1, points.body18cp2, points.body18).curve(points.body18cp1, points.body19cp2, points.body19)).length())
+  store.set(
+    'faceTopLength',
+    new Path()
+      .move(points.body17)
+      .curve(points.body17cp1, points.body18cp2, points.body18)
+      .curve(points.body18cp1, points.body19cp2, points.body19)
+      .length()
+  )
 
-  store.set( 'bellyLength', (new Path().move(points.body17).curve(points.body17cp1, points.body18cp2, points.body18).curve(points.body18cp1, points.body19cp2, points.body19)).length())
-  store.set( 'bellyTailLength', (new Path().move(points.body15).curve(points.body15cp1, points.body16cp2, points.body16)).length())
+  store.set(
+    'bellyLength',
+    new Path()
+      .move(points.body17)
+      .curve(points.body17cp1, points.body18cp2, points.body18)
+      .curve(points.body18cp1, points.body19cp2, points.body19)
+      .length()
+  )
+  store.set(
+    'bellyTailLength',
+    new Path().move(points.body15).curve(points.body15cp1, points.body16cp2, points.body16).length()
+  )
 
   // Complete?
   if (complete) {
     points.bodyTailSnippet = new Path()
-    .move(points.body13)
-    .curve(points.body13cp1, points.body14cp2, points.body14)
-    .shiftFractionAlong(0.25)
+      .move(points.body13)
+      .curve(points.body13cp1, points.body14cp2, points.body14)
+      .shiftFractionAlong(0.25)
     snippets.bodyTail = new Snippet('bnotch', points.bodyTailSnippet)
-    if( sa ) {
+    if (sa) {
+      // paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
 
@@ -458,6 +479,102 @@ let gillAngle = 103.9416747
       to: points.body01,
       d: -5,
     })
+
+    points.titleAnchor = points.body04.shiftFractionTowards( points.body17, 0.4 )
+    points.logoAnchor = points.body06.shiftFractionTowards( points.body16, 0.6 )
+    
+    if( options.size < 0.35 ) {
+      points.scaleboxAnchor = new Point( points.body06.x -60 -sa, points.body11.y -35 -sa )
+    } else {
+      points.scaleboxAnchor = points.titleAnchor.shiftFractionTowards( points.body14, 0.5 )
+    }
+    snippets.logo = new Snippet('logo', points.logoAnchor).attr( 'data-scale', options.size > 1 ? 1 : options.size )
+
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 1,
+      title: 'body',
+      scale: options.size,
+    })
+
+    if (paperless) {
+      macro('hd', {
+        from: points.body14,
+        to: points.body15,
+        y: points.body19.y +sa +10,
+      })
+      macro('hd', {
+        from: points.body15,
+        to: points.body16,
+        y: points.body19.y +sa +10,
+      })
+      macro('hd', {
+        from: points.body16,
+        to: points.body17,
+        y: points.body19.y +sa +10,
+      })
+      macro('hd', {
+        from: points.body17,
+        to: points.body19,
+        y: points.body19.y +sa +10,
+      })
+      macro('hd', {
+        from: points.body19,
+        to: points.body01,
+        y: points.body19.y +sa +10,
+      })
+      macro('hd', {
+        from: points.gill1start,
+        to: points.gill5start,
+        y: points.body19.y +sa +20,
+      })
+
+      macro('hd', {
+        from: points.body14,
+        to: points.body13,
+        y: points.body06.y -sa -5,
+      })
+      macro('hd', {
+        from: points.body13,
+        to: points.body10,
+        y: points.body06.y -sa -5,
+      })
+      macro('hd', {
+        from: points.body10,
+        to: points.body06,
+        y: points.body06.y -sa -5,
+      })
+      points.finCurve = utils.beamsIntersect( points.body05, points.body05cp2, points.body04, points.body04cp1 )
+      macro('hd', {
+        from: points.body06,
+        to: points.finCurve,
+        y: points.body06.y -sa -5,
+      })
+      macro('hd', {
+        from: points.finCurve,
+        to: points.body03,
+        y: points.body06.y -sa -5,
+      })
+      macro('hd', {
+        from: points.body03,
+        to: points.body01,
+        y: points.body06.y -sa -5,
+      })
+      macro('hd', {
+        from: points.body02,
+        to: points.body03,
+        y: points.body06.y -sa +10,
+      })
+      macro('hd', {
+        from: points.body02,
+        to: points.body01,
+        y: points.body06.y -sa +20,
+      })
+
+
+    } else {
+      macro('scalebox', { at: points.scaleboxAnchor })
+    }
   }
 
   return part

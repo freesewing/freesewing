@@ -65,6 +65,12 @@ export default function (part) {
   points.belly03 = points.belly02.shift(belly02_03a, belly02_03d)
   points.belly04 = points.belly03.shift(belly03_04a, belly03_04d)
   points.belly05 = points.belly10.shift(belly10_05a, belly10_05d)
+
+  points.belly01.y = points.belly01.y *(1.1 -(options.hungry /5))
+  points.belly02.y = points.belly02.y *(1.1 -(options.hungry /5))
+  points.belly03.y = points.belly03.y *(1.1 -(options.hungry /5))
+  points.belly04.y = points.belly04.y *(1.1 -(options.hungry /5))
+
   points.belly01cp1 = points.belly01.shift(belly01cp1a, belly01cp1d)
   points.belly02cp1 = points.belly02.shift(belly02cp1a, belly02cp1d)
   points.belly03cp1 = points.belly03.shift(belly03cp1a, belly03cp1d)
@@ -77,20 +83,10 @@ export default function (part) {
   points.belly05cp2 = points.belly05.shift(belly05cp2a, belly05cp2d)
   points.belly10cp1 = points.belly10.shift(belly10cp2a, belly10cp2d)
 
-  console.log({ belly10_05d: points.belly10.dist(points.belly05) })
-
   let mouthPartLength =
     store.get('aboveMouthBottomLength') -
     store.get('mouthTopLength') +
     store.get('mouthBottomLength')
-
-  console.log({ calc: mouthPartLength })
-  console.log({
-    actual: new Path()
-      .move(points.belly01)
-      .curve(points.belly01cp1, points.belly02cp2, points.belly02)
-      .length(),
-  })
 
   let diff = 0
   let iteration = 0
@@ -109,13 +105,6 @@ export default function (part) {
   } while ((diff < -1 || diff > 1) && iteration < 100)
 
   let bellyTailLength = store.get('bellyTailLength')
-  console.log({ bellyTailLength: store.get('bellyTailLength') })
-  console.log({
-    first: new Path()
-      .move(points.belly03)
-      .curve(points.belly03cp1, points.belly04cp2, points.belly04)
-      .length(),
-  })
 
   diff = 0
   iteration = 0
@@ -134,14 +123,7 @@ export default function (part) {
         .curve(points.belly03cp1, points.belly04cp2, points.belly04)
         .length()
 
-        console.log({
-          actual: new Path()
-            .move(points.belly03)
-            .curve(points.belly03cp1, points.belly04cp2, points.belly04)
-            .length(),
-        })
   } while ((diff < -1 || diff > 1) && iteration < 100)
-
 
   points.belly05cp1 = points.belly05cp2.flipY()
   points.belly06 = points.belly04.flipY()
@@ -179,23 +161,20 @@ export default function (part) {
       .curve(points.belly02cp1, points.belly03cp2, points.belly03)
       .length()
   )
-  console.log({ bellyFinLength: store.get('bellyFinLength') })
-
-  points.bellyMouthSnippet1 = new Path()
-    .move(points.belly01)
-    .curve(points.belly01cp1, points.belly02cp2, points.belly02)
-    .shiftAlong(store.get('mouthBottomLength'))
-  points.bellyMouthSnippet2 = points.bellyMouthSnippet1.flipY()
-
-  console.log({ aboveMouthSnippet: points.aboveMouthSnippet })
-
-  snippets.mouth1 = new Snippet('bnotch', points.bellyMouthSnippet1)
-  snippets.mouth2 = new Snippet('bnotch', points.bellyMouthSnippet2)
 
   // Complete?
   if (complete) {
+    points.bellyMouthSnippet1 = new Path()
+      .move(points.belly01)
+      .curve(points.belly01cp1, points.belly02cp2, points.belly02)
+      .shiftAlong(store.get('mouthBottomLength'))
+    points.bellyMouthSnippet2 = points.bellyMouthSnippet1.flipY()
+  
+    snippets.mouth1 = new Snippet('bnotch', points.bellyMouthSnippet1)
+    snippets.mouth2 = new Snippet('bnotch', points.bellyMouthSnippet2)
+  
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
     }
   }
 

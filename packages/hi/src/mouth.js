@@ -44,26 +44,13 @@ export default function (part) {
   points.mouth04cp1 = points.mouth02cp2.flipX()
   points.mouth03cp1 = points.mouth03cp2.flipX()
 
-  console.log({ mouth01_02d: points.mouth01.dist(points.mouth02) })
-  console.log({ mouth01_02a: points.mouth01.angle(points.mouth02) })
-  console.log({ mouth01_03d: points.mouth01.dist(points.mouth03) })
-  console.log({ mouth01_03a: points.mouth01.angle(points.mouth03) })
-
-  console.log({ mouth01cp1d: points.mouth01.dist(points.mouth01cp1) })
-  console.log({ mouth01cp1a: points.mouth01.angle(points.mouth01cp1) })
-  console.log({ mouth02cp1d: points.mouth02.dist(points.mouth02cp1) })
-  console.log({ mouth02cp2d: points.mouth02.dist(points.mouth02cp2) })
-  console.log({ mouth02cp1a: points.mouth02.angle(points.mouth02cp1) })
-  console.log({ mouth02cp2a: points.mouth02.angle(points.mouth02cp2) })
-  console.log({ mouth03cp2d: points.mouth03.dist(points.mouth03cp2) })
-  console.log({ mouth03cp2a: points.mouth03.angle(points.mouth03cp2) })
-
   paths.seam = new Path()
     .move(points.mouth01)
     .curve(points.mouth01cp2, points.mouth04cp1, points.mouth04)
     .curve(points.mouth04cp2, points.mouth03cp1, points.mouth03)
     .curve(points.mouth03cp2, points.mouth02cp1, points.mouth02)
     .curve(points.mouth02cp2, points.mouth01cp1, points.mouth01)
+    .close()
 
   store.set(
     'mouthTopLength',
@@ -104,6 +91,7 @@ export default function (part) {
     snippets.mouthlowerTeeth2 = new Snippet('bnotch', points.mouthlowerTeeth2)
     snippets.mouthMidTop = new Snippet('bnotch', points.mouth01)
     snippets.mouthMidBottom = new Snippet('bnotch', points.mouth03)
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

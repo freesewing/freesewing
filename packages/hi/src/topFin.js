@@ -15,7 +15,6 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-   
   let topFinOpening = store.get('topFinOpening')
   let topFinOpeningLength = store.get('topFinOpeningLength')
 
@@ -49,6 +48,7 @@ export default function (part) {
     points.topFin02cp2 = points.topFin02.shift(topFin02cp2a, topFin02cp2d)
     points.topFin03cp1 = points.topFin03.shift(topFin03cp1a, topFin03cp1d)
     points.topFin03cp2 = points.topFin03.shift(topFin03cp2a, topFin03cp2d)
+
     diff =
       topFinOpeningLength -
       new Path()
@@ -60,22 +60,12 @@ export default function (part) {
     iteration++
   } while ((diff < -1 || diff > 1) && iteration < 100)
 
-  console.log({ iteration: iteration })
-
-    paths.seam = new Path()
+  paths.seam = new Path()
     .move(points.topFin01)
     .curve(points.topFin01cp2, points.topFin03cp1, points.topFin03)
     .curve(points.topFin03cp2, points.topFin02cp1, points.topFin02)
     .curve(points.topFin02cp2, points.topFin01cp1, points.topFin01)
     .close()
-
-  console.log({ topFinLength1: store.get('topFinOpeningLength') })
-  console.log({
-    topFinLength2: new Path()
-      .move(points.topFin03)
-      .curve(points.topFin03cp1, points.topFin01cp2, points.topFin01)
-      .length(),
-  })
 
   store.set(
     'topFinCircumference',
@@ -85,14 +75,6 @@ export default function (part) {
       .curve(points.topFin02cp1, points.topFin03cp2, points.topFin03)
       .length()
   )
-
-  console.log({
-    topFinCirc: new Path()
-      .move(points.topFin01)
-      .curve(points.topFin01cp1, points.topFin02cp2, points.topFin02)
-      .curve(points.topFin02cp1, points.topFin03cp2, points.topFin03)
-      .length(),
-  })
 
   // Complete?
   if (complete) {

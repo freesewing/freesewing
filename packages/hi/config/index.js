@@ -9,7 +9,7 @@ export default {
   type: 'pattern',
   difficulty: 4,
   optionGroups: {
-    style: ['size','nosePointiness','aggressive'],
+    style: ['size','hungry','nosePointiness','aggressive'],
   },
   measurements: ['neck'],
   parts: ['body','tail','aboveMouth','belly','topFin','bottomFin','mouth','lowerTeeth','upperTeeth'],
@@ -24,8 +24,9 @@ export default {
   inject: {},
   hide: [],
   options: {
+    size: {pct: 100, min: 5, max: 500 },
+    hungry: {pct: 50, min: 0, max: 100 },
     nosePointiness: {pct: 0, min: -5,max: +10},
     aggressive: {bool: false},
-    size: {pct: 33, min: 5, max: 500 },
   },
 }

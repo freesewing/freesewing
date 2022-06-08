@@ -15,7 +15,6 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  
   let aboveMouth01_02d = 266.7238454769277 * options.size
   let aboveMouth01_02a = 353.4089695458119
   let aboveMouth02_03d = 28.348200101593726 * options.size
@@ -30,7 +29,6 @@ export default function (part) {
   let aboveMouth03cp1a = 197.87876803095696
   let aboveMouth04cp2d = 66.94005927693816 * options.size
   let aboveMouth04cp2a = 308.8121959753343
-
   
   let faceTopLength = store.get('faceTopLength')
 
@@ -46,6 +44,7 @@ export default function (part) {
     points.aboveMouth02cp2 = points.aboveMouth02.shift(aboveMouth02cp2a, aboveMouth02cp2d)
     points.aboveMouth03cp1 = points.aboveMouth03.shift(aboveMouth03cp1a, aboveMouth03cp1d)
     points.aboveMouth04cp2 = points.aboveMouth04.shift(aboveMouth04cp2a, aboveMouth04cp2d)
+    
     diff =
       faceTopLength -
       new Path()
@@ -58,8 +57,6 @@ export default function (part) {
     iteration++
   } while ((diff < -1 || diff > 1) && iteration < 100)
 
-  console.log({ iteration: iteration })
-
   paths.seam = new Path()
     .move(points.aboveMouth01)
     .line(points.aboveMouth04)
@@ -67,14 +64,6 @@ export default function (part) {
     .line(points.aboveMouth02)
     .curve(points.aboveMouth02cp2, points.aboveMouth01cp1, points.aboveMouth01)
     .close()
-
-  console.log({ faceTopLength1: store.get('faceTopLength') })
-  console.log({
-    faceTopLength2: new Path()
-      .move(points.aboveMouth03)
-      .curve(points.aboveMouth03cp1, points.aboveMouth04cp2, points.aboveMouth04)
-      .length(),
-  })
 
   store.set(
     'aboveMouthTopLength',
@@ -91,20 +80,15 @@ export default function (part) {
       .length()
   )
   store.set('aboveMouthFinLength', points.aboveMouth02.dist(points.aboveMouth03))
-  console.log({ aboveMouthFinLength: store.get('aboveMouthFinLength') })
-
-  console.log({ mouthTopLength: store.get('mouthTopLength') })
-
-  points.aboveMouthSnippet = new Path()
-    .move(points.aboveMouth01)
-    .curve(points.aboveMouth01cp1, points.aboveMouth02cp2, points.aboveMouth02)
-    .shiftAlong(store.get('mouthTopLength'))
-  console.log({ aboveMouthSnippet: points.aboveMouthSnippet })
-
-  snippets.mouth = new Snippet('bnotch', points.aboveMouthSnippet)
-
+  
   // Complete?
   if (complete) {
+    points.aboveMouthSnippet = new Path()
+      .move(points.aboveMouth01)
+      .curve(points.aboveMouth01cp1, points.aboveMouth02cp2, points.aboveMouth02)
+      .shiftAlong(store.get('mouthTopLength'))
+    snippets.mouth = new Snippet('bnotch', points.aboveMouthSnippet)
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

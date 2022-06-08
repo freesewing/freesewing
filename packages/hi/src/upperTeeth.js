@@ -17,22 +17,6 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  points.upperTeeth01 = new Point(149.3, 278.667)
-  points.upperTeeth01cp1 = new Point(197.492, 209.499)
-  points.upperTeeth02cp2 = new Point(239.637, 204.963)
-  points.upperTeeth02 = new Point(257.968, 204.963)
-  points.upperTeeth02cp1 = new Point(275.166, 204.773)
-  points.upperTeeth03cp2 = new Point(323.357, 210.254)
-  points.upperTeeth03 = new Point(366.26, 279.236)
-
-  console.log({ upperTeeth01_02d: points.upperTeeth01.dist(points.upperTeeth02) })
-  console.log({ upperTeeth01_02a: points.upperTeeth01.angle(points.upperTeeth02) })
-
-  console.log({ upperTeeth01cp1d: points.upperTeeth01.dist(points.upperTeeth01cp1) })
-  console.log({ upperTeeth01cp1a: points.upperTeeth01.angle(points.upperTeeth01cp1) })
-  console.log({ upperTeeth02cp2d: points.upperTeeth02.dist(points.upperTeeth02cp2) })
-  console.log({ upperTeeth02cp2a: points.upperTeeth02.angle(points.upperTeeth02cp2) })
-
   let upperTeeth01_02d = 131.305041182736 * options.size
   let upperTeeth01_02a = 34.147056946748805 + 180
   let upperTeeth02cp1d = 84.30113337316406 * options.size

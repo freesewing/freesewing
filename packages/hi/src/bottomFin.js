@@ -15,7 +15,6 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-
   let bottomFin01_02d = 250.63638754690027 * options.size
   let bottomFin01_02a = 119.34849371430543
   let bottomFin01_03d = 137.70322741678933 * options.size
@@ -36,9 +35,6 @@ export default function (part) {
   let finLength = store.get('aboveMouthFinLength') + store.get('bellyFinLength')
   let finCircumference = store.get('topFinCircumference')
 
-  console.log({ bellyFinLength: store.get('bellyFinLength') })
-  console.log({ finCircumference: store.get('topFinCircumference') })
-
   let diff = 0
   let iteration = 0
   do {
@@ -52,6 +48,7 @@ export default function (part) {
     points.bottomFin02cp2 = points.bottomFin02.shift(bottomFin02cp2a, bottomFin02cp2d)
     points.bottomFin03cp1 = points.bottomFin03.shift(bottomFin03cp1a, bottomFin03cp1d)
     points.bottomFin03cp2 = points.bottomFin03.shift(bottomFin03cp2a, bottomFin03cp2d)
+
     diff =
       finLength -
       new Path()
@@ -77,6 +74,7 @@ export default function (part) {
     points.bottomFin02cp2 = points.bottomFin02.shift(bottomFin02cp2a, bottomFin02cp2d)
     points.bottomFin03cp1 = points.bottomFin03.shift(bottomFin03cp1a, bottomFin03cp1d)
     points.bottomFin03cp2 = points.bottomFin03.shift(bottomFin03cp2a, bottomFin03cp2d)
+
     diff =
       finCircumference -
       new Path()
@@ -89,16 +87,6 @@ export default function (part) {
     iteration++
   } while ((diff < -1 || diff > 1) && iteration < 100)
 
-  console.log({ iteration2: iteration })
-
-  console.log({ finLength: finLength })
-  console.log({
-    actual: new Path()
-      .move(points.bottomFin03)
-      .curve(points.bottomFin03cp1, points.bottomFin01cp2, points.bottomFin01)
-      .length(),
-  })
-  
   paths.seam = new Path()
     .move(points.bottomFin01)
     .curve(points.bottomFin01cp1, points.bottomFin02cp2, points.bottomFin02)
@@ -106,22 +94,14 @@ export default function (part) {
     .curve(points.bottomFin03cp1, points.bottomFin01cp2, points.bottomFin01)
     .close()
 
-  console.log({
-    bottomFinCirc: new Path()
-      .move(points.bottomFin01)
-      .curve(points.bottomFin01cp1, points.bottomFin02cp2, points.bottomFin02)
-      .curve(points.bottomFin02cp1, points.bottomFin03cp2, points.bottomFin03)
-      .length(),
-  })
-
-  points.bottomFinSnippet = new Path()
-    .move(points.bottomFin01)
-    .curve(points.bottomFin01cp2, points.bottomFin03cp1, points.bottomFin03)
-    .shiftAlong(store.get('aboveMouthFinLength'))
-  snippets.bottomFin = new Snippet('bnotch', points.bottomFinSnippet)
-
   // Complete?
   if (complete) {
+    points.bottomFinSnippet = new Path()
+      .move(points.bottomFin01)
+      .curve(points.bottomFin01cp2, points.bottomFin03cp1, points.bottomFin03)
+      .shiftAlong(store.get('aboveMouthFinLength'))
+    snippets.bottomFin = new Snippet('bnotch', points.bottomFinSnippet)
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
