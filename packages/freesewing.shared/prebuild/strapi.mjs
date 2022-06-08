@@ -43,10 +43,10 @@ export const getPosts = async (type, site, lang) => {
     res = await axios.get(buildUrl(type, site, lang))
   }
   catch (err) {
-    console.log(err)
+    console.log(`⚠️  Failed to load ${type} posts [${lang}]`)
   }
   const posts = {}
-  for (const post of res.data) {
+  for (const post of res?.data || []) {
     const intro = await postIntro(`---\n---\n\n${post.body}`)
     posts[post.slug] = { ...post, intro: intro.data.intro }
   }
