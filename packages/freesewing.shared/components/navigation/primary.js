@@ -8,6 +8,9 @@ import DocsIcon from 'shared/components/icons/docs.js'
 import DesignIcon from 'shared/components/icons/design.js'
 import BoxIcon from 'shared/components/icons/box.js'
 import CogIcon from 'shared/components/icons/cog.js'
+import UserIcon from 'shared/components/icons/user.js'
+import CommunityIcon from 'shared/components/icons/community.js'
+import ShowcaseIcon from 'shared/components/icons/camera.js'
 
 // Don't show children for blog and showcase posts
 const keepClosed = ['blog', 'showcase', ]
@@ -21,14 +24,19 @@ const force = [
 
 // List of icons matched to top-level slug
 const icons = {
+  accessories: (className='') => <TutorialIcon className={className}/>,
+  account: (className='') => <UserIcon className={className}/>,
+  blocks: (className='') => <BoxIcon className={className}/>,
   blog: (className='') => <RssIcon className={className}/>,
-  tutorials: (className='') => <TutorialIcon className={className}/>,
+  community: (className='') => <CommunityIcon className={className}/>,
+  designs: (className='') => <DesignIcon className={className}/>,
+  docs: (className='') => <DocsIcon className={className}/>,
+  garments: (className='') => <DesignIcon className={className}/>,
   guides: (className='') => <GuideIcon className={className}/>,
   howtos: (className='') => <HelpIcon className={className}/>,
   reference: (className='') => <DocsIcon className={className}/>,
-  accessories: (className='') => <TutorialIcon className={className}/>,
-  blocks: (className='') => <BoxIcon className={className}/>,
-  garments: (className='') => <DesignIcon className={className}/>,
+  showcase: (className='') => <ShowcaseIcon className={className}/>,
+  tutorials: (className='') => <TutorialIcon className={className}/>,
   utilities: (className='') => <CogIcon className={className}/>,
 }
 
