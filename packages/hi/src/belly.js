@@ -120,11 +120,11 @@ export default function (part) {
   diff = 0
   iteration = 0
   do {
-    points.belly04.x -= diff
-    points.belly04cp1.x -= diff
-    points.belly04cp2.x -= diff
-    points.belly05.x -= diff
-    points.belly05cp2.x -= diff
+    points.belly04.x += diff
+    points.belly04cp1.x += diff
+    points.belly04cp2.x += diff
+    points.belly05.x += diff
+    points.belly05cp2.x += diff
 
     iteration++
     diff =
@@ -133,14 +133,15 @@ export default function (part) {
         .move(points.belly03)
         .curve(points.belly03cp1, points.belly04cp2, points.belly04)
         .length()
+
+        console.log({
+          actual: new Path()
+            .move(points.belly03)
+            .curve(points.belly03cp1, points.belly04cp2, points.belly04)
+            .length(),
+        })
   } while ((diff < -1 || diff > 1) && iteration < 100)
 
-  console.log({
-    actual: new Path()
-      .move(points.belly03)
-      .curve(points.belly03cp1, points.belly04cp2, points.belly04)
-      .length(),
-  })
 
   points.belly05cp1 = points.belly05cp2.flipY()
   points.belly06 = points.belly04.flipY()

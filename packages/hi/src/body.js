@@ -171,7 +171,7 @@ let body19_01a = 59.63482522
 let body01cp1a = 161.5263465
 let body01cp2a = 255.6503959
 let body02cp1a = 31.95354992
-//let body02cp2a = 359.48842
+// let body02cp2a = 359.48842
 // let body02cp2a = 2.48842
 let body02cp2a = 10
 
@@ -444,6 +444,11 @@ let gillAngle = 103.9416747
 
   // Complete?
   if (complete) {
+    points.bodyTailSnippet = new Path()
+    .move(points.body13)
+    .curve(points.body13cp1, points.body14cp2, points.body14)
+    .shiftFractionAlong(0.25)
+    snippets.bodyTail = new Snippet('bnotch', points.bodyTailSnippet)
     if( sa ) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

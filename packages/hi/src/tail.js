@@ -84,6 +84,11 @@ export default function (part) {
 
   // Complete?
   if (complete) {
+    points.tailSnippet = new Path()
+    .move(points.tail01)
+    .curve(points.tail01cp2, points.tail05cp1, points.tail05)
+    .shiftFractionAlong(0.25)
+    snippets.tail = new Snippet('bnotch', points.tailSnippet)
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

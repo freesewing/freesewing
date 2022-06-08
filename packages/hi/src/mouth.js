@@ -80,11 +80,30 @@ export default function (part) {
       .length()
   )
 
-  snippets.mouthMidTop = new Snippet('bnotch', points.mouth01)
-  snippets.mouthMidBottom = new Snippet('bnotch', points.mouth03)
-
   // Complete?
   if (complete) {
+    points.mouthUpperTeeth1 = new Path()
+      .move(points.mouth01)
+      .curve(points.mouth01cp1, points.mouth02cp2, points.mouth02)
+      .shiftAlong(store.get('upperTeethLength') / 2)
+    points.mouthUpperTeeth2 = new Path()
+      .move(points.mouth01)
+      .curve(points.mouth01cp2, points.mouth04cp1, points.mouth04)
+      .shiftAlong(store.get('upperTeethLength') / 2)
+    snippets.mouthUpperTeeth1 = new Snippet('bnotch', points.mouthUpperTeeth1)
+    snippets.mouthUpperTeeth2 = new Snippet('bnotch', points.mouthUpperTeeth2)
+    points.mouthlowerTeeth1 = new Path()
+      .move(points.mouth03)
+      .curve(points.mouth03cp1, points.mouth04cp2, points.mouth04)
+      .shiftAlong(store.get('lowerTeethLength') / 2)
+    points.mouthlowerTeeth2 = new Path()
+      .move(points.mouth03)
+      .curve(points.mouth03cp2, points.mouth02cp1, points.mouth02)
+      .shiftAlong(store.get('lowerTeethLength') / 2)
+    snippets.mouthlowerTeeth1 = new Snippet('bnotch', points.mouthlowerTeeth1)
+    snippets.mouthlowerTeeth2 = new Snippet('bnotch', points.mouthlowerTeeth2)
+    snippets.mouthMidTop = new Snippet('bnotch', points.mouth01)
+    snippets.mouthMidBottom = new Snippet('bnotch', points.mouth03)
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
