@@ -1,6 +1,4 @@
 import Logo from 'shared/components/logos/freesewing.js'
-import contributors from 'site/prebuild/allcontributors.js'
-import patrons from 'site/prebuild/patrons.js'
 import OsiLogo from 'shared/components/logos/osi.js'
 import CreativeCommonsLogo from 'shared/components/logos/cc.js'
 import CcByLogo from 'shared/components/logos/cc-by.js'
@@ -76,50 +74,6 @@ const translations = {
           >beschikbaar op Github</a> onder <a href="https://opensource.org/licenses/MIT"
           className={link}>de MIT licentie</a>
         </span>,
-  },
-  contributors: {
-    en: <>
-          <span className={freesewing}>FreeSewing</span> is made by these <span
-          className={accent}>wonderful contributors</span>
-        </>,
-    de: <>
-          <span className={freesewing}>FreeSewing</span> wird van diesen <span
-          className={accent}>wunderbaren Mitwirkende</span> gemacht
-        </>,
-    es: <>
-          <span className={freesewing}>FreeSewing</span> es hecho por estas <span
-          className={accent}>maravillosxs contribuyente</span>
-        </>,
-    fr: <>
-          <span className={freesewing}>FreeSewing</span> est fait par ces <span
-          className={accent}>merveilleux contributeurs</span>
-        </>,
-    nl: <>
-          <span className={freesewing}>FreeSewing</span> wordt gemaakt door deze <span
-          className={accent}>wonderbaarlijke medewerkers</span>
-        </>,
-  },
-  patrons: {
-    en: <>
-          <span className={freesewing}>FreeSewing</span> is supported by these <span
-          className={accent}>generous patrons</span>
-        </>,
-    de: <>
-          <span className={freesewing}>FreeSewing</span> wird von diesen <span
-          className={accent}>großzügigen Gönnern</span> unterstützt
-        </>,
-    es: <>
-          <span className={freesewing}>FreeSewing</span> cuenta con el apoyo de estos <span
-          className={accent}>generosos patrocinadores</span>
-        </>,
-    fr: <>
-          <span className={freesewing}>FreeSewing</span> est soutenu par ces <span
-          className={accent}>généreux mécènes</span>
-        </>,
-    nl: <>
-          <span className={freesewing}>FreeSewing</span> wordt ondersteund door deze <span
-          className={accent}>gulle patrons</span>
-        </>,
   },
   sponsors: {
     en: <>
@@ -258,27 +212,6 @@ const Footer = ({ app }) => {
             {t('sloganStay')}
           </p>
         </div>
-      </div>
-      <p className="text-center text-neutral-content text-sm px-2">
-        {translations.contributors[app.locale]}
-      </p>
-      <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
-        <Worm list={contributors.map(item => ({
-          img: item.avatar_url,
-          title: item.name,
-          href: item.profile
-        }))} />
-      </div>
-
-      <p className="text-center text-neutral-content text-sm px-2">
-        {translations.patrons[app.locale]}
-      </p>
-      <div className="p-4 pb-16 flex flex-row bg-neutral -mt-2 z-0 gap-1 lg:gap-2 flex-wrap justify-around text-neutral-content lg:px-24">
-        <Worm list={patrons.map(item => ({
-          img: item.img,
-          title: item.name,
-          slug: `/users/${item.username}`
-        }))} />
       </div>
 
       <p className="text-center text-neutral-content text-sm px-2">

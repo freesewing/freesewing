@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 const linkClasses = fixed => fixed
-  ? `w-16 aspect-square block`
-  : "w-12 md:w-14 xl:w-20 aspect-square block"
+  ? `w-16 h-16 aspect-square block`
+  : "w-12 h-12 md:w-14 md:h-14 xl:w-20 xl:h-20 aspect-square block"
 
 const PreviewTile = ({ img, slug, title, href=false, fixed=false }) => (
   <div
