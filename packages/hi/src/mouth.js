@@ -92,6 +92,43 @@ export default function (part) {
     snippets.mouthMidTop = new Snippet('bnotch', points.mouth01)
     snippets.mouthMidBottom = new Snippet('bnotch', points.mouth03)
 
+    points.titleAnchor = points.mouth01.shiftFractionTowards(points.mouth02, 0.23)
+    points.logoAnchor = points.mouth01.shiftFractionTowards(points.mouth04, 0.3)
+
+    snippets.logo = new Snippet('logo', points.logoAnchor).attr(
+      'data-scale',
+      (options.size > 1 ? 1 : options.size) / 2
+    )
+
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 4,
+      title: 'mouth',
+      scale: options.size / 2,
+    })
+
+    if (paperless) {
+      macro('hd', {
+        from: points.mouth03,
+        to: points.mouth02,
+        y: points.mouth02.y + sa + 10,
+      })
+      macro('hd', {
+        from: points.mouth04,
+        to: points.mouth03,
+        y: points.mouth02.y + sa + 10,
+      })
+      macro('vd', {
+        from: points.mouth04,
+        to: points.mouth03,
+        x: points.mouth04.x - sa - 10,
+      })
+      macro('vd', {
+        from: points.mouth03,
+        to: points.mouth01,
+        x: points.mouth04.x - sa - 10,
+      })
+    }
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

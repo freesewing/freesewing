@@ -15,7 +15,6 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  
   let tail01_02d = 192.0129724628 * options.size
   let tail01_02a = 53.242955551234914
   let tail01_03d = 115.38057785000036 * options.size
@@ -85,10 +84,104 @@ export default function (part) {
   // Complete?
   if (complete) {
     points.tailSnippet = new Path()
-    .move(points.tail01)
-    .curve(points.tail01cp2, points.tail05cp1, points.tail05)
-    .shiftFractionAlong(0.25)
+      .move(points.tail01)
+      .curve(points.tail01cp2, points.tail05cp1, points.tail05)
+      .shiftFractionAlong(0.25)
     snippets.tail = new Snippet('bnotch', points.tailSnippet)
+
+    points.titleAnchor = points.tail03.shiftFractionTowards(points.tail01, 0.4)
+    points.logoAnchor = points.tail03.shiftFractionTowards(points.tail05, 0.5)
+
+    snippets.logo = new Snippet('logo', points.logoAnchor).attr(
+      'data-scale',
+      options.size > 1 ? 1 : options.size
+    )
+
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 3,
+      title: 'tail',
+      scale: options.size,
+    })
+
+    if (paperless) {
+      points.tailLeft = new Path()
+        .move(points.tail03)
+        .curve(points.tail03cp1, points.tail04cp2, points.tail04)
+        .curve(points.tail04cp1, points.tail05cp2, points.tail05)
+        .edge('left')
+      points.tailRight = new Path()
+        .move(points.tail01)
+        .curve(points.tail01cp1, points.tail02cp2, points.tail02)
+        .curve(points.tail02cp1, points.tail03cp2, points.tail03)
+        .edge('right')
+      points.tailTopLeft = new Path()
+        .move(points.tail03)
+        .curve(points.tail03cp1, points.tail04cp2, points.tail04)
+        .curve(points.tail04cp1, points.tail05cp2, points.tail05)
+        .edge('top')
+      points.tailTopRight = new Path()
+        .move(points.tail01)
+        .curve(points.tail01cp1, points.tail02cp2, points.tail02)
+        .curve(points.tail02cp1, points.tail03cp2, points.tail03)
+        .edge('top')
+      macro('hd', {
+        from: points.tailLeft,
+        to: points.tail05,
+        y: points.tail01.y + sa + 10,
+      })
+      macro('hd', {
+        from: points.tail05,
+        to: points.tail01,
+        y: points.tail01.y + sa + 10,
+      })
+      macro('hd', {
+        from: points.tail01,
+        to: points.tailRight,
+        y: points.tail01.y + sa + 10,
+      })
+      macro('hd', {
+        from: points.tailLeft,
+        to: points.tail03,
+        y: points.tailTopLeft.y - sa - 10,
+      })
+      macro('hd', {
+        from: points.tail03,
+        to: points.tailRight,
+        y: points.tailTopRight.y - sa - 10,
+      })
+      macro('vd', {
+        from: points.tailTopLeft,
+        to: points.tail03,
+        x: points.tail03.x - 20,
+      })
+      macro('vd', {
+        from: points.tail05,
+        to: points.tailTopLeft,
+        x: points.tailLeft.x - sa - 20,
+      })
+      macro('vd', {
+        from: points.tailTopRight,
+        to: points.tail01,
+        x: points.tailRight.x + sa + 20,
+      })
+      macro('vd', {
+        from: points.tail01,
+        to: points.tailTopRight,
+        x: points.tail03.x + 20,
+      })
+      macro('vd', {
+        from: points.tail03,
+        to: points.tail01,
+        x: points.tail01.x + 20,
+      })
+      macro('vd', {
+        from: points.tail05,
+        to: points.tail03,
+        x: points.tail05.x - 20,
+      })
+    }
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

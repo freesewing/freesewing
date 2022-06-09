@@ -329,11 +329,10 @@ export default function (part) {
   points.eyeBig = points.body01.shift(eyeBigAngle, eyeBigDist)
   points.eyeSmall = points.eyeBig.shift(
     eyeSmallAngle,
-    eyeSmallDist * (-2 + (options.aggressive ? 0 : 1))
+    eyeSmallDist * (-0.5 + (options.aggressive ? 0 : 1))
   )
 
   // Feeding:
-
 
   let c = 0.55191502449351
   let eyeBigX = 18.7757 * options.size
@@ -384,10 +383,8 @@ export default function (part) {
     .curve(points.eyeSmallBcp2, points.eyeSmallRcp1, points.eyeSmallR)
     .curve(points.eyeSmallRcp2, points.eyeSmallTcp1, points.eyeSmallT)
 
-  paths.seam = new Path()
-    .move(points.body01)
-    .curve(points.body01cp1, points.body02cp2, points.body02)
-    .curve(points.body02cp1, points.body03cp2, points.body03)
+  paths.allButDart = new Path()
+    .move(points.body03)
     .curve(points.body03cp1, points.body04cp2, points.body04)
     .curve(points.body04cp1, points.body05cp2, points.body05)
     .curve(points.body05cp1, points.body06cp2, points.body06)
@@ -405,7 +402,15 @@ export default function (part) {
     .curve(points.body17cp1, points.body18cp2, points.body18)
     .curve(points.body18cp1, points.body19cp2, points.body19)
     .curve(points.body19cp1, points.body01cp2, points.body01)
+    .setRender(false)
+
+  paths.seam = new Path()
+    .move(points.body01)
+    .curve(points.body01cp1, points.body02cp2, points.body02)
+    .curve(points.body02cp1, points.body03cp2, points.body03)
+    .join(paths.allButDart)
     .close()
+    .setRender(true)
 
   let gillPath = new Path()
     .move(points.body17)
@@ -471,7 +476,7 @@ export default function (part) {
     snippets.bodyTail = new Snippet('bnotch', points.bodyTailSnippet)
     if (sa) {
       // paths.sa = paths.seam.offset(sa).trim().attr('class', 'fabric sa')
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.allButDart.close().offset(sa).attr('class', 'fabric sa')
     }
 
     macro('ld', {
@@ -480,15 +485,18 @@ export default function (part) {
       d: -5,
     })
 
-    points.titleAnchor = points.body04.shiftFractionTowards( points.body17, 0.4 )
-    points.logoAnchor = points.body06.shiftFractionTowards( points.body16, 0.6 )
-    
-    if( options.size < 0.35 ) {
-      points.scaleboxAnchor = new Point( points.body06.x -60 -sa, points.body11.y -35 -sa )
+    points.titleAnchor = points.body04.shiftFractionTowards(points.body17, 0.4)
+    points.logoAnchor = points.body06.shiftFractionTowards(points.body16, 0.6)
+
+    if (options.size < 0.35) {
+      points.scaleboxAnchor = new Point(points.body06.x - 60 - sa, points.body11.y - 35 - sa)
     } else {
-      points.scaleboxAnchor = points.titleAnchor.shiftFractionTowards( points.body14, 0.5 )
+      points.scaleboxAnchor = points.titleAnchor.shiftFractionTowards(points.body14, 0.5)
     }
-    snippets.logo = new Snippet('logo', points.logoAnchor).attr( 'data-scale', options.size > 1 ? 1 : options.size )
+    snippets.logo = new Snippet('logo', points.logoAnchor).attr(
+      'data-scale',
+      options.size > 1 ? 1 : options.size
+    )
 
     macro('title', {
       at: points.titleAnchor,
@@ -501,77 +509,161 @@ export default function (part) {
       macro('hd', {
         from: points.body14,
         to: points.body15,
-        y: points.body19.y +sa +10,
+        y: points.body19.y + sa + 10,
       })
       macro('hd', {
         from: points.body15,
         to: points.body16,
-        y: points.body19.y +sa +10,
+        y: points.body19.y + sa + 10,
       })
       macro('hd', {
         from: points.body16,
         to: points.body17,
-        y: points.body19.y +sa +10,
+        y: points.body19.y + sa + 10,
       })
       macro('hd', {
         from: points.body17,
         to: points.body19,
-        y: points.body19.y +sa +10,
+        y: points.body19.y + sa + 10,
       })
       macro('hd', {
         from: points.body19,
         to: points.body01,
-        y: points.body19.y +sa +10,
+        y: points.body19.y + sa + 10,
+        noStartMarker: true,
+        noEndMarker: true,
       })
       macro('hd', {
         from: points.gill1start,
         to: points.gill5start,
-        y: points.body19.y +sa +20,
+        y: points.body19.y + sa + 20,
+      })
+      macro('hd', {
+        from: points.eyeBig,
+        to: points.body19,
+        y: points.body19.y + sa + 20,
+      })
+      macro('hd', {
+        from: points.eyeBigL,
+        to: points.eyeBigR,
+        y: points.eyeBigT.y - 10,
+        noStartMarker: true,
+        noEndMarker: true,
       })
 
       macro('hd', {
         from: points.body14,
         to: points.body13,
-        y: points.body06.y -sa -5,
+        y: points.body06.y - sa - 5,
       })
       macro('hd', {
         from: points.body13,
         to: points.body10,
-        y: points.body06.y -sa -5,
+        y: points.body06.y - sa - 5,
       })
       macro('hd', {
         from: points.body10,
         to: points.body06,
-        y: points.body06.y -sa -5,
+        y: points.body06.y - sa - 5,
       })
-      points.finCurve = utils.beamsIntersect( points.body05, points.body05cp2, points.body04, points.body04cp1 )
+      points.finCurve = utils.beamsIntersect(
+        points.body05,
+        points.body05cp2,
+        points.body04,
+        points.body04cp1
+      )
       macro('hd', {
         from: points.body06,
         to: points.finCurve,
-        y: points.body06.y -sa -5,
+        y: points.body06.y - sa - 5,
       })
       macro('hd', {
         from: points.finCurve,
         to: points.body03,
-        y: points.body06.y -sa -5,
+        y: points.body06.y - sa - 5,
       })
       macro('hd', {
         from: points.body03,
         to: points.body01,
-        y: points.body06.y -sa -5,
+        y: points.body06.y - sa - 5,
+        noStartMarker: true,
+        noEndMarker: true,
       })
       macro('hd', {
         from: points.body02,
         to: points.body03,
-        y: points.body06.y -sa +10,
+        y: points.body06.y - sa + 10,
       })
       macro('hd', {
         from: points.body02,
         to: points.body01,
-        y: points.body06.y -sa +20,
+        y: points.body06.y - sa + 20,
       })
 
-
+      macro('vd', {
+        from: points.body19,
+        to: points.body14,
+        x: points.body14.x - sa - 10,
+      })
+      macro('vd', {
+        from: points.body15,
+        to: points.body14,
+        x: points.body14.x - sa - 20,
+      })
+      macro('vd', {
+        from: points.body14,
+        to: points.body13,
+        x: points.body14.x - sa - 20,
+      })
+      macro('vd', {
+        from: points.body14,
+        to: points.body10,
+        x: points.body14.x - sa - 30,
+      })
+      macro('vd', {
+        from: points.body14,
+        to: points.body08,
+        x: points.body14.x - sa - 10,
+      })
+      macro('vd', {
+        from: points.body10,
+        to: points.body06,
+        x: points.body14.x - sa - 30,
+      })
+      macro('vd', {
+        from: points.body01,
+        to: points.body19,
+        x: points.body01.x + sa + 10,
+      })
+      macro('vd', {
+        from: points.body02,
+        to: points.body19,
+        x: points.body01.x + sa + 20,
+      })
+      macro('vd', {
+        from: points.body03,
+        to: points.body01,
+        x: points.body01.x + sa + 10,
+      })
+      macro('vd', {
+        from: points.finCurve,
+        to: points.body02,
+        x: points.body01.x + sa + 20,
+      })
+      macro('vd', {
+        from: points.body06,
+        to: points.finCurve,
+        x: points.body01.x + sa + 20,
+      })
+      if (options.size > 0.4) {
+        macro('vd', {
+          from: points.gill5end,
+          to: points.gill5start,
+          x: points.gill5start.x + 5,
+          noStartMarker: true,
+          noEndMarker: true,
+        })
+      }
     } else {
       macro('scalebox', { at: points.scaleboxAnchor })
     }

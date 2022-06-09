@@ -46,6 +46,49 @@ export default function (part) {
   // Complete?
   if (complete) {
     snippets.upperTeeth = new Snippet('bnotch', points.upperTeeth01)
+
+    points.titleAnchor = points.upperTeeth02.shiftFractionTowards(points.upperTeeth03, 0.5).shiftFractionTowards(points.upperTeeth01, 0.5)
+
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 6,
+      title: 'upperTeeth',
+      scale: options.size / 2,
+    })
+
+    if (paperless) {
+      macro('hd', {
+        from: points.upperTeeth01,
+        to: points.upperTeeth03,
+        y: points.upperTeeth02.y + sa + 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('hd', {
+        from: points.upperTeeth02,
+        to: points.upperTeeth01,
+        y: points.upperTeeth02.y + sa + 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('vd', {
+        from: points.upperTeeth02,
+        to: points.upperTeeth01,
+        x: points.upperTeeth02.x - sa - 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      console.log({path:paths.teeth})
+      console.log({point:paths.teeth.edge('top')})
+      macro('vd', {
+        from: points.upperTeeth01, 
+        to: paths.teeth.edge('top'),
+        x: points.upperTeeth02.x - sa - 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+    }
+
     if (sa) {
       let pSA = paths.seam.offset(sa)
       paths.sa = new Path()

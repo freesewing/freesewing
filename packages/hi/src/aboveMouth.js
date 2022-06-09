@@ -29,7 +29,7 @@ export default function (part) {
   let aboveMouth03cp1a = 197.87876803095696
   let aboveMouth04cp2d = 66.94005927693816 * options.size
   let aboveMouth04cp2a = 308.8121959753343
-  
+
   let faceTopLength = store.get('faceTopLength')
 
   let diff = 0
@@ -44,7 +44,7 @@ export default function (part) {
     points.aboveMouth02cp2 = points.aboveMouth02.shift(aboveMouth02cp2a, aboveMouth02cp2d)
     points.aboveMouth03cp1 = points.aboveMouth03.shift(aboveMouth03cp1a, aboveMouth03cp1d)
     points.aboveMouth04cp2 = points.aboveMouth04.shift(aboveMouth04cp2a, aboveMouth04cp2d)
-    
+
     diff =
       faceTopLength -
       new Path()
@@ -80,7 +80,7 @@ export default function (part) {
       .length()
   )
   store.set('aboveMouthFinLength', points.aboveMouth02.dist(points.aboveMouth03))
-  
+
   // Complete?
   if (complete) {
     points.aboveMouthSnippet = new Path()
@@ -88,6 +88,80 @@ export default function (part) {
       .curve(points.aboveMouth01cp1, points.aboveMouth02cp2, points.aboveMouth02)
       .shiftAlong(store.get('mouthTopLength'))
     snippets.mouth = new Snippet('bnotch', points.aboveMouthSnippet)
+
+    points.titleAnchor = points.aboveMouth04.shiftFractionTowards(points.aboveMouth01cp1, 0.5)
+    points.logoAnchor = points.aboveMouth01cp1.shiftFractionTowards(points.aboveMouth02cp2, 0.5)
+
+    snippets.logo = new Snippet('logo', points.logoAnchor).attr(
+      'data-scale',
+      (options.size > 1 ? 1 : options.size) / 4
+    )
+
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 5,
+      title: 'aboveMouth',
+      scale: options.size / 2,
+    })
+
+    if (paperless) {
+      macro('hd', {
+        from: points.aboveMouth04,
+        to: points.aboveMouth01,
+        y: points.aboveMouth01.y - sa - 10,
+      })
+      macro('hd', {
+        from: points.aboveMouth01,
+        to: points.aboveMouth02,
+        y: points.aboveMouth01.y - sa - 10,
+      })
+      macro('hd', {
+        from: points.aboveMouthSnippet,
+        to: points.aboveMouth02,
+        y: points.aboveMouth01.y,
+      })
+      macro('vd', {
+        from: points.aboveMouth04,
+        to: points.aboveMouth01,
+        x: points.aboveMouth04.x - sa - 15,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      points.aboveMouthBottom = paths.seam.edge('bottom')
+      points.aboveMouthTop = new Path()
+        .move(points.aboveMouth01)
+        .curve(points.aboveMouth01cp1, points.aboveMouth02cp2, points.aboveMouth02)
+        .edge('bottom')
+
+      macro('vd', {
+        from: points.aboveMouthBottom,
+        to: points.aboveMouth04,
+        x: points.aboveMouth04.x - sa - 15,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('vd', {
+        from: points.aboveMouthBottom,
+        to: points.aboveMouthTop,
+        x: points.aboveMouth04.x - sa,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('vd', {
+        from: points.aboveMouth02,
+        to: points.aboveMouth03,
+        x: points.aboveMouth02.x + sa + 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('vd', {
+        from: points.aboveMouth03,
+        to: points.aboveMouthBottom,
+        x: points.aboveMouth02.x + sa + 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+    }
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
