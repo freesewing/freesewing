@@ -69,7 +69,7 @@ const PostPage = ({ post, author }) => {
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
-      <article className="mb-12 px-8">
+      <article className="mb-12 px-8 xl:pl-8 2xl:pl-16 max-w-7xl">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
           <span><TimeAgo date={post.date} /> [{post.date}]</span>
           <span>
