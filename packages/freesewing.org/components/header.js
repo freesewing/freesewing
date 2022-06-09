@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Logo from 'shared/components/logos/freesewing.js'
+import FreeSewingIcon from 'shared/components/icons/freesewing.js'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
@@ -106,7 +106,7 @@ const Header = ({ app, setSearch }) => {
             <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">
                 <a className="flex flex-column items-center">
-                  <Logo size={36} fill="currentColor" stroke={false} />
+                  <FreeSewingIcon className="h-10 w-10"/>
                 </a>
               </Link>
               <Link href="/">
