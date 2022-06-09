@@ -11,7 +11,7 @@ export default {
   optionGroups: {
     style: ['size','hungry','nosePointiness','aggressive'],
   },
-  measurements: ['neck'],
+  measurements: [],
   parts: ['body','tail','aboveMouth','belly','topFin','bottomFin','mouth','lowerTeeth','upperTeeth'],
   dependencies: {
     tail: 'body',

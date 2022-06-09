@@ -181,6 +181,13 @@ export default function (part) {
     snippets.mouth1 = new Snippet('bnotch', points.bellyMouthSnippet1)
     snippets.mouth2 = new Snippet('bnotch', points.bellyMouthSnippet2)
 
+    points.grainlineFrom = new Point( points.belly10.x, points.belly02.y *.7 )
+    points.grainlineTo = new Point( points.belly05.x, points.belly02.y *.7 )
+    macro("grainline", {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
+
     if (paperless) {
       macro('hd', {
         from: points.belly01,
