@@ -59,7 +59,7 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.5",
     "@commitlint/cli": "^16.0.2",
-    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/config-conventional": "^17.0.2",
     "@fontsource/permanent-marker": "latest",
     "@fontsource/roboto-mono": "latest",
     "@fontsource/ubuntu": "latest",
