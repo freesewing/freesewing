@@ -21,7 +21,7 @@ module.exports = {
 
   'neutral': colors.neutral['900'],
   'neutral-focus': colors.neutral['700'],
-  'neutral-content': colors.neutral['200'],
+  'neutral-content': colors.yellow['50'],
 
   'info': colors.pink['400'],
   'success': colors.green['600'],
