@@ -1,13 +1,13 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/benjamin"
-  title="@freesewing/benjamin on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/benjamin.svg"
-  alt="@freesewing/benjamin on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/hi"
+  title="@freesewing/hi on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/hi.svg"
+  alt="@freesewing/hi on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/benjamin.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/hi.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -15,10 +15,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Abenjamin"
-  title="Open issues tagged pkg:benjamin"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:benjamin.svg?label=Issues"
-  alt="Open issues tagged pkg:benjamin"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Ahi"
+  title="Open issues tagged pkg:hi"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:hi.svg?label=Issues"
+  alt="Open issues tagged pkg:hi"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
@@ -46,7 +46,7 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/benjamin
+# @freesewing/hi
 
 A FreeSewing pattern for a bow tie
 
@@ -57,7 +57,7 @@ A FreeSewing pattern for a bow tie
 This repository is our *monorepo* 
 holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
 
-This folder holds: @freesewing/benjamin
+This folder holds: @freesewing/hi
 
 ## About FreeSewing 💀
 

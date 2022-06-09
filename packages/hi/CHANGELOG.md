@@ -1,4 +1,4 @@
-# Change log for: @freesewing/benjamin
+# Change log for: @freesewing/hi
 
 
 ## 2.20.0 (2022-01-24)
