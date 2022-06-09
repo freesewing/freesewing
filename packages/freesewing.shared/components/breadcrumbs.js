@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import Logo from 'shared/components/logos/freesewing.js'
+import FreeSewingIcon from 'shared/components/icons/freesewing.js'
 
 const Breadcrumbs = ({ crumbs=[], title }) => (
   <ul className="flex flex-row flex-wrap gap-2 font-bold">
     <li>
       <Link href="/">
         <a title="FreeSewing" className="text-base-content">
-          <Logo size={24} fill="currentColor" stroke={false}/>
+          <FreeSewingIcon />
         </a>
       </Link>
     </li>

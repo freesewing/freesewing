@@ -8,6 +8,11 @@ import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const strapi = "https://posts.freesewing.org"
+const textShadow = {
+  style: {
+    textShadow: "1px 1px 1px #000000, -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 2px 2px 1px #000000"
+  }
+}
 
 const Preview = ({ app, post }) => (
   <div className="shadow rounded-lg">
@@ -20,25 +25,27 @@ const Preview = ({ app, post }) => (
           <div className="grow"></div>
           <div className="text-right mb-3 lg:mb-8">
             <div className={`
-              bg-neutral text-neutral-content bg-opacity-90 text-right
+              bg-neutral text-neutral-content bg-opacity-40 text-right
               px-4 py-1
               lg:px-8 lg:py-4
 
             `}>
               <h5 className={`
                 text-neutral-content
-                text-xl font-normal
-                md:text-2xl md:font-light
+                text-xl font-bold
+                md:text-2xl md:font-normal
                 xl:text-3xl
-              `}>
+              `} {...textShadow}
+              >
                 {post.title}
               </h5>
               <p className={`
+                hidden md:block
                 m-0 p-1 -mt-2
                 text-neutral-content
                 leading-normal text-sm font-normal
                 opacity-70
-              `}>
+              `}{ ...textShadow}>
                 <TimeAgo date={post.date} /> by <strong>{post.author}</strong>
               </p>
             </div>
@@ -55,7 +62,7 @@ const BlogIndexPage = (props) => {
 
   return (
     <Page app={app} title={t('blog')} slug='blog'>
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 px-8 max-w-7xl">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 max-w-7xl">
         {props.posts.map(post => <Preview app={app} post={post} key={post.slug}/>)
         }
       </div>

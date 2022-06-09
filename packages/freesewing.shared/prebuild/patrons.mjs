@@ -11,19 +11,25 @@ export const prebuildPatrons = async(site) => {
   console.log()
   console.log(`Prebuilding patron list for freesewing.${site}`)
 
-  const patrons = await axios.get('https://backend.freesewing.org/patrons')
-  if (patrons?.data) {
-    const list = [
+  let patrons
+  try {
+    patrons = await axios.get('https://backend.freesewing.org/patrons')
+  }
+  catch (err) {
+    console.log(`⚠️  Failed to load patron list`)
+  }
+
+  const list = patrons?.data
+    ? [
       ...patrons.data['2'].map(p => ({hande: p.handle, username: p.username, img: p.pictureUris.s })),
       ...patrons.data['4'].map(p => ({hande: p.handle, username: p.username, img: p.pictureUris.s })),
       ...patrons.data['8'].map(p => ({hande: p.handle, username: p.username, img: p.pictureUris.s })),
-    ]
+    ] : []
 
-    // Write to json
-    fs.writeFileSync(
-      path.resolve('..', `freesewing.${site}`, 'prebuild', `patrons.js`),
-      `export default ${JSON.stringify(list, null ,2)}`
-    )
-  }
+  // Write to json
+  fs.writeFileSync(
+    path.resolve('..', `freesewing.${site}`, 'prebuild', `patrons.js`),
+    `export default ${JSON.stringify(list, null ,2)}`
+  )
 }
 

@@ -1,5 +1,6 @@
 import Popout from 'shared/components/popout'
-import Modal from 'shared/components/modal'
+import Lightbox from 'shared/components/lightbox'
+import ImageWrapper from 'shared/components/wrappers/img.js'
 
 const Figure = props => {
 
@@ -11,15 +12,17 @@ const Figure = props => {
 
   return (
     <figure className="block my-4">
-      <Modal>
-        <img
-          src={props?.src}
-          alt={props?.alt || ''}
-          title={title || ''}
-          className="m-auto max-h-full max-w-full"
-        />
+      <Lightbox>
+        <ImageWrapper>
+          <img
+            src={props?.src}
+            alt={props?.alt || ''}
+            title={title || ''}
+            className="m-auto"
+          />
+        </ImageWrapper>
         {title
-          ? <figcaption className="text-center italic text-base-content mt-1">{title}</figcaption>
+          ? <figcaption className="text-center italic mt-1">{title}</figcaption>
           : (
             <Popout fixme>
               <h5>This image does not have an alt of title specified</h5>
@@ -27,7 +30,7 @@ const Figure = props => {
             </Popout>
           )
         }
-      </Modal>
+      </Lightbox>
     </figure>
   )
 }

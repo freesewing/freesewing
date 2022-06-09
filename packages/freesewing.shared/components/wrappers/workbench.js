@@ -61,24 +61,27 @@ const hasRequiredMeasurements = (pattern, gist) => {
 const WorkbenchWrapper = ({ app, pattern, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const [gist, setGist] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
+  const [gist, setGist, ready] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
   const [messages, setMessages] = useState([])
 
   // If we don't have the required measurements,
   // force view to measurements
   useEffect(() => {
     if (
-      gist?._state?.view !== 'measurements'
+      ready && gist?._state?.view !== 'measurements'
       && !hasRequiredMeasurements(pattern, gist)
     ) updateGist(['_state', 'view'], 'measurements')
-  })
+  }, [ready])
 
   // If we need to preload the gist, do so
-  useEffect(async () => {
-    if (preload && from && preloaders[from]) {
-      const g = await preloaders[from](preload, pattern)
-      setGist({ ...gist, ...g.settings })
+  useEffect(() => {
+    const doPreload = async () => {
+      if (preload && from && preloaders[from]) {
+        const g = await preloaders[from](preload, pattern)
+        setGist({ ...gist, ...g.settings })
+      }
     }
+    doPreload();
   }, [preload, from])
 
   // Helper methods to manage the gist state

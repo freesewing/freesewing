@@ -13,7 +13,7 @@ export const PreviewTile = ({ img, slug, title }) => (
     style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
     className={`
       rounded-full inline-block border-base-100 shrink-0
-      w-42 h-42 -ml-8 border-8
+      w-40 h-40 -ml-8 border-8
       md:w-56 md:h-56 md:-ml-12
       theme-gradient
     `}
@@ -30,9 +30,11 @@ export const PreviewTile = ({ img, slug, title }) => (
 const DesignPosts = ({ design, posts }) => {
   const { t } = useTranslation(['patterns'])
   return (
-    <div className='py-8'>
-      <h2 className="bg-clip-text bg-success m-0">
-        <PageLink href={`/showcase/designs/${design}`} txt={t(`${design}.t`)} />
+    <div className='py-2'>
+      <h2>
+        <Link href={`/showcase/designs/${design}`}>
+          <a className="hover:text-secondary-focus hover:underline">{t(`${design}.t`)}</a>
+        </Link>
       </h2>
       <div className={`
         flex flex-row overflow-visible
@@ -64,6 +66,15 @@ const ShowcaseIndexPage = (props) => {
 
   return (
     <Page app={app} title={t('showcase')} slug='showcase'>
+      <div className="max-w-4xl m-auto text-center px-8">
+        <ul className="flex flex-row flex-wrap gap-4 items-center justify-center leading-tight text-xl">
+          {Object.keys(designs).sort().map(design => (
+            <li key={design}>
+              <PageLink href={`/showcase/design/${design}`} txt={design} className="capitalize" />
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className={`
         px-8 2xl:pl-16 overflow-visible overscroll-x-hidden
         max-w-sm

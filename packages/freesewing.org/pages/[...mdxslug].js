@@ -39,13 +39,13 @@ const MdxPage = props => {
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
-      <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end px-8 xl:px-0">
+      <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
         {props.toc && (
-          <div className="mb-8 px-0 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
+          <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
             <TocWrapper toc={props.toc} app={app}/>
           </div>
         )}
-        <div className="px-0 xl:pl-8 2xl:pl-16">
+        <div className="xl:pl-8 2xl:pl-16">
           <MdxWrapper mdx={props.mdx} app={app} components={components} />
         </div>
       </div>

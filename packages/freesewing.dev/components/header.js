@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Logo from 'shared/components/logos/freesewing.js'
+import FreeSewingIcon from 'shared/components/icons/freesewing.js'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
@@ -81,10 +81,11 @@ const Header = ({ app, setSearch }) => {
                   )
                 }
             </button>
-            <div className="flex flex-row gap-2 md:hidden">
-              <button className="btn btn-sm btn h-12 px-12" onClick={() => setSearch(true)}>
+            <div className="flex flex-row items-center md:hidden pr-4">
+              <button onClick={() => setSearch(true)} className="btn btn-sm">
                 <SearchIcon />
               </button>
+              <ThemePicker app={app} iconOnly />
             </div>
             <button className={`
               btn btn-sm h-12
@@ -103,12 +104,12 @@ const Header = ({ app, setSearch }) => {
             <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">
                 <a className="flex flex-column items-center">
-                  <Logo size={36} fill="currentColor" stroke={false} />
+                  <FreeSewingIcon className="h-10 w-10"/>
                 </a>
               </Link>
               <Link href="/">
-                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12">
-                  freesewing.dev
+                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12 font-normal lowercase text-2xl">
+                  <span className="font-black px-1 normal-case">FreeSewing</span>.dev
                 </a>
               </Link>
             </div>

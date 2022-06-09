@@ -35,6 +35,7 @@ export default {
     'path_intersectsy',
     'path_join',
     'path_length',
+    'path_noop',
     'path_offset',
     'path_reverse',
     'path_shiftalong',

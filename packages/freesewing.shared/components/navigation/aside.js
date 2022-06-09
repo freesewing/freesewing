@@ -12,8 +12,8 @@ const Aside = ({ app, slug, mobileOnly=false, before=[], after=[]}) => (
     px-8 py-24
     shrink-0
     md:w-24 md:px-2 md:justify-center
-    lg:w-max lg:pr-2 lg:border-r-2
-    xl:w-max xl:border-0
+    lg:w-96 lg:pr-2 lg:border-r-2
+    xl:w-lg xl:border-0
     2xl:pr-8
     ${mobileOnly ? 'block md:hidden' : ''}
   `}>

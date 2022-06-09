@@ -21,6 +21,7 @@ import draftPath_intersectsx from './path_intersectsx'
 import draftPath_intersectsy from './path_intersectsy'
 import draftPath_join from './path_join'
 import draftPath_length from './path_length'
+import draftPath_noop from './path_noop'
 import draftPath_offset from './path_offset'
 import draftPath_reverse from './path_reverse'
 import draftPath_shiftalong from './path_shiftalong'
@@ -120,6 +121,7 @@ let methods = {
   draftPath_intersectsy,
   draftPath_join,
   draftPath_length,
+  draftPath_noop,
   draftPath_offset,
   draftPath_reverse,
   draftPath_shiftalong,

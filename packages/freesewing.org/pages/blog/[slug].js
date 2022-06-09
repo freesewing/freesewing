@@ -5,7 +5,8 @@ import MdxWrapper from 'shared/components/wrappers/mdx'
 import mdxCompiler from 'shared/mdx/compiler'
 import Markdown from 'react-markdown'
 import Head from 'next/head'
-import Modal from 'shared/components/modal.js'
+import Lightbox from 'shared/components/lightbox.js'
+import ImageWrapper from 'shared/components/wrappers/img.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
 import { strapiImage } from 'shared/utils.js'
@@ -69,7 +70,7 @@ const PostPage = ({ post, author }) => {
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
-      <article className="mb-12 px-8">
+      <article className="mb-12">
         <div className="flex flex-row justify-between text-sm mb-1 mt-2">
           <span><TimeAgo date={post.date} /> [{post.date}]</span>
           <span>
@@ -82,17 +83,19 @@ const PostPage = ({ post, author }) => {
           </span>
         </div>
         <figure>
-          <Modal>
-            <img
-              src={`${strapiHost}${post.image.url}`}
-              alt={post.caption}
-              className="shadow m-auto"
-            />
+          <Lightbox>
+            <ImageWrapper>
+              <img
+                src={`${strapiHost}${post.image.url}`}
+                alt={post.caption}
+                className="shadow m-auto"
+              />
+            </ImageWrapper>
             <figcaption
-              className="text-center mb-8 prose m-auto"
+              className="text-center mb-8 prose m-auto mt-1"
               dangerouslySetInnerHTML={{__html: post.caption}}
             />
-          </Modal>
+          </Lightbox>
         </figure>
         <div className="strapi prose lg:prose-lg mb-12 m-auto">
           <MdxWrapper mdx={post.mdx} app={app} />

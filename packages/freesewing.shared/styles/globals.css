@@ -235,6 +235,12 @@
    }
 }
 
+/* Lightbox */
+.lightbox img {
+  max-width: calc(100vw - 6rem);
+  max-height: calc(100vh - 6rem);
+}
+
 /* Style for navigation */
 details { user-select: none; }
 details > summary > svg.details-toggle {

@@ -6,7 +6,9 @@ import patterns from 'shared/config/designs.json'
 // Locale and translation
 import { useTranslation } from 'next-i18next'
 import { capitalize } from 'shared/utils'
+import { formatVersionUri } from '../components/version-picker.js'
 import useVersion from 'site/hooks/useVersion.js'
+import useTheme from 'shared/hooks/useTheme'
 
 // Initial navigation
 const initialNavigation = (t, version) => {
@@ -42,7 +44,7 @@ const initialNavigation = (t, version) => {
         __title: capitalize(design),
         __order: design,
         __linktitle: capitalize(design),
-        __slug: `v/${version}/${design}`
+        __slug: formatVersionUri(version,design)
       }
     }
   }
@@ -58,14 +60,9 @@ function useApp(full = true) {
   // Locale (aka language)
   const { t } = useTranslation(['app'])
 
-  // User color scheme preference
-  const prefersDarkMode = (typeof window !== 'undefined' && typeof  window.matchMedia === 'function')
-    ? window.matchMedia(`(prefers-color-scheme: dark`).matches
-    : null
-
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })
-  const [theme, setTheme] = useLocalStorage('theme', prefersDarkMode ? 'dark' : 'light')
+  const [theme, setTheme] = useTheme();
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
