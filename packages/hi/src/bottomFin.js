@@ -132,21 +132,28 @@ export default function (part) {
       macro('hd', {
         from: points.bottomFin03,
         to: points.bottomFin01,
-        y: points.bottomFin01.y + sa + 10,
+        y: points.bottomFin01.y + sa + 20,
       })
       macro('hd', {
-        from: points.bottomFin03,
-        to: points.bottomFinTop,
+        from: points.bottomFinTop,
+        to: points.bottomFin01,
         y: points.bottomFinTop.y - sa - 10,
-        noStartMarker: true,
-        noEndMarker: true,
+        // id: 'smallTop',
+        // noStartMarker: true,
+        // noEndMarker: true,
+      })
+      macro('hd', {
+        from: points.bottomFinInsideLeft,
+        to: points.bottomFin01,
+        y: points.bottomFin03.y + sa + 20,
+        // id: 'smallBottom',
+        // noStartMarker: true,
+        // noEndMarker: true,
       })
       macro('hd', {
         from: points.bottomFin03,
-        to: points.bottomFinInsideLeft,
+        to: points.bottomFinSnippet,
         y: points.bottomFin03.y + sa + 10,
-        noStartMarker: true,
-        noEndMarker: true,
       })
       macro('vd', {
         from: points.bottomFin03,
@@ -159,12 +166,18 @@ export default function (part) {
         x: points.bottomFin01.x +sa + 20,
       })
       macro('vd', {
-        from: points.bottomFinInsideBottom,
-        to: points.bottomFin01,
+        from: points.bottomFinTop,
+        to: points.bottomFinInsideBottom,
         x: points.bottomFin01.x +sa + 10,
-        noStartMarker: true,
-        noEndMarker: true,
+        // id: 'smallRight',
+        // noStartMarker: true,
+        // noEndMarker: true,
       })
+      // if( options.size < 1.5 ) {
+      //   paths.smallTop.attr('data-text-class', 'text-xs')
+      //   paths.smallBottom.attr('data-text-class', 'text-xs')
+      //   paths.smallRight.attr('data-text-class', 'text-xs')
+      // }
     }
 
     if (sa) {

@@ -102,25 +102,28 @@ export default function (part) {
       points.topFinInsideTop = tempPath.edge('top')
       let tempPoint = tempPath.shiftFractionAlong(0.5)
       points.topFinInsideBottom = tempPath.split(tempPoint)[0].edge('bottom')
+      points.topFinRight = paths.seam.edge('right')
 
       macro('hd', {
         from: points.topFin01,
-        to: points.topFin03,
+        to: points.topFinRight,
         y: points.topFin01.y - sa - 10,
-        noStartMarker: true,
-        noEndMarker: true,
+        // id: 'smallTop',
+        // noStartMarker: true,
+        // noEndMarker: true,
       })
       macro('hd', {
         from: points.topFin03,
-        to: paths.seam.edge('right'),
-        y: points.topFin03.y + sa + 10,
+        to: points.topFinRight,
+        y: points.topFin03.y + sa + 20,
       })
       macro('hd', {
         from: points.topFinLeft,
-        to: points.topFin03,
+        to: points.topFinRight,
         y: points.topFin03.y + sa + 10,
-        noStartMarker: true,
-        noEndMarker: true,
+        // id: 'smallBottom',
+        // noStartMarker: true,
+        // noEndMarker: true,
       })
       macro('vd', {
         from: points.topFin03,
@@ -137,7 +140,11 @@ export default function (part) {
         to: points.topFin01,
         x: points.topFinLeft.x -sa - 20,
       })
-    }
+    }      
+    // if( options.size < 1.5 ) {
+    //   paths.smallTop.attr('data-text-class', 'text-xs')
+    //   paths.smallBottom.attr('data-text-class', 'text-xs')
+    // }
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
