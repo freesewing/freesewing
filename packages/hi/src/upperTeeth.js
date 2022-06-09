@@ -51,7 +51,7 @@ export default function (part) {
 
     macro('title', {
       at: points.titleAnchor,
-      nr: 6,
+      nr: 8,
       title: 'upperTeeth',
       scale: options.size / 2,
     })

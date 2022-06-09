@@ -78,6 +78,67 @@ export default function (part) {
 
   // Complete?
   if (complete) {
+
+    points.titleAnchor = points.topFin01.shiftFractionTowards(points.topFin02, 0.4)
+    points.logoAnchor = points.titleAnchor.shiftFractionTowards(points.topFin03, 0.5)
+
+    snippets.logo = new Snippet('logo', points.logoAnchor).attr(
+      'data-scale',
+      options.size > 1 ? 1 : (options.size /2)
+    )
+
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 7,
+      title: 'topFin',
+      scale: options.size,
+    })
+
+    if (paperless) {
+      points.topFinLeft = paths.seam.edge('left')
+      let tempPath = new Path()
+        .move(points.topFin02)
+        .curve(points.topFin02cp1, points.topFin03cp2, points.topFin03)
+      points.topFinInsideTop = tempPath.edge('top')
+      let tempPoint = tempPath.shiftFractionAlong(0.5)
+      points.topFinInsideBottom = tempPath.split(tempPoint)[0].edge('bottom')
+
+      macro('hd', {
+        from: points.topFin01,
+        to: points.topFin03,
+        y: points.topFin01.y - sa - 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('hd', {
+        from: points.topFin03,
+        to: paths.seam.edge('right'),
+        y: points.topFin03.y + sa + 10,
+      })
+      macro('hd', {
+        from: points.topFinLeft,
+        to: points.topFin03,
+        y: points.topFin03.y + sa + 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('vd', {
+        from: points.topFin03,
+        to: points.topFin01,
+        x: points.topFinLeft.x - sa - 10,
+      })
+      macro('vd', {
+        from: points.topFin01,
+        to: points.topFinInsideBottom,
+        x: points.topFin02.x +sa + 10,
+      })
+      macro('vd', {
+        from: points.topFinInsideTop,
+        to: points.topFin01,
+        x: points.topFinLeft.x -sa - 20,
+      })
+    }
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }

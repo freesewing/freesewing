@@ -102,6 +102,71 @@ export default function (part) {
       .shiftAlong(store.get('aboveMouthFinLength'))
     snippets.bottomFin = new Snippet('bnotch', points.bottomFinSnippet)
 
+    points.titleAnchor = points.bottomFin02.shiftFractionTowards(points.bottomFin01, 0.4)
+    points.logoAnchor = points.titleAnchor.shiftFractionTowards(points.bottomFin03, 0.5)
+
+    snippets.logo = new Snippet('logo', points.logoAnchor).attr(
+      'data-scale',
+      options.size > 1 ? 1 : (options.size /2)
+    )
+
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 6,
+      title: 'bottomFin',
+      scale: options.size,
+    })
+
+    if (paperless) {
+      points.bottomFinTop = paths.seam.edge('top')
+      let tempPath = new Path()
+        .move(points.bottomFin03)
+        .curve(points.bottomFin03cp2, points.bottomFin02cp1, points.bottomFin02)
+      let tempPoint = tempPath.shiftFractionAlong(0.8)
+      points.bottomFinInsideLeft = tempPath.split(tempPoint)[0].edge('right')
+      tempPath = new Path()
+        .move(points.bottomFin01)
+        .curve(points.bottomFin01cp2, points.bottomFin03cp1, points.bottomFin03)
+      points.bottomFinInsideBottom = tempPath.edge('top')
+
+      macro('hd', {
+        from: points.bottomFin03,
+        to: points.bottomFin01,
+        y: points.bottomFin01.y + sa + 10,
+      })
+      macro('hd', {
+        from: points.bottomFin03,
+        to: points.bottomFinTop,
+        y: points.bottomFinTop.y - sa - 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('hd', {
+        from: points.bottomFin03,
+        to: points.bottomFinInsideLeft,
+        y: points.bottomFin03.y + sa + 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('vd', {
+        from: points.bottomFin03,
+        to: points.bottomFinTop,
+        x: points.bottomFin03.x - sa - 10,
+      })
+      macro('vd', {
+        from: points.bottomFinTop,
+        to: points.bottomFin01,
+        x: points.bottomFin01.x +sa + 20,
+      })
+      macro('vd', {
+        from: points.bottomFinInsideBottom,
+        to: points.bottomFin01,
+        x: points.bottomFin01.x +sa + 10,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+    }
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
