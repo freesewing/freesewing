@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Logo from 'shared/components/logos/freesewing.js'
 import Aside from 'shared/components/navigation/aside'
 import get from 'lodash.get'
-import ThemePicker from 'shared/components/theme-picker'
 
 const PageTitle = ({ app, slug, title }) => {
   if (title) return <h1>{title}</h1>
@@ -60,7 +59,7 @@ const DefaultLayout = ({ app, title=false, children=[] }) => {
 
   return (
     <div className="m-auto flex flex-row justify-center">
-      <Aside app={app} slug={slug} before={<ThemePicker app={app}/>}/>
+      <Aside app={app} slug={slug} />
       <section className="py-28 md:py-36">
         <div>
           {title && (
