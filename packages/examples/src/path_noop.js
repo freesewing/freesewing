@@ -1,5 +1,5 @@
 export default (part) => {
-  let { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
+  const { Point, points, Path, paths } = part.shorthand()
 
   points.left = new Point(10,10)
   points.dartLeft = new Point(40, 10)
