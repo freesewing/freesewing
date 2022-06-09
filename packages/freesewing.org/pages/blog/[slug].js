@@ -5,7 +5,8 @@ import MdxWrapper from 'shared/components/wrappers/mdx'
 import mdxCompiler from 'shared/mdx/compiler'
 import Markdown from 'react-markdown'
 import Head from 'next/head'
-import Modal from 'shared/components/modal.js'
+import Lightbox from 'shared/components/lightbox.js'
+import ImageWrapper from 'shared/components/wrappers/img.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
 import { strapiImage } from 'shared/utils.js'
@@ -82,17 +83,19 @@ const PostPage = ({ post, author }) => {
           </span>
         </div>
         <figure>
-          <Modal>
-            <img
-              src={`${strapiHost}${post.image.url}`}
-              alt={post.caption}
-              className="shadow m-auto"
-            />
+          <Lightbox>
+            <ImageWrapper>
+              <img
+                src={`${strapiHost}${post.image.url}`}
+                alt={post.caption}
+                className="shadow m-auto"
+              />
+            </ImageWrapper>
             <figcaption
               className="text-center mb-8 prose m-auto mt-1"
               dangerouslySetInnerHTML={{__html: post.caption}}
             />
-          </Modal>
+          </Lightbox>
         </figure>
         <div className="strapi prose lg:prose-lg mb-12 m-auto">
           <MdxWrapper mdx={post.mdx} app={app} />

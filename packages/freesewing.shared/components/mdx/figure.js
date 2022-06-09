@@ -1,5 +1,6 @@
 import Popout from 'shared/components/popout'
-import Modal from 'shared/components/modal'
+import Lightbox from 'shared/components/lightbox'
+import ImageWrapper from 'shared/components/wrappers/img.js'
 
 const Figure = props => {
 
@@ -11,17 +12,15 @@ const Figure = props => {
 
   return (
     <figure className="block my-4">
-      <Modal>
-        <img
-          src={props?.src}
-          alt={props?.alt || ''}
-          title={title || ''}
-          className="m-auto"
-          style={{
-            maxHeight: "calc(100vh - 6rem)",
-            maxWidth: "calc(100vw - 6rem)",
-          }}
-        />
+      <Lightbox>
+        <ImageWrapper>
+          <img
+            src={props?.src}
+            alt={props?.alt || ''}
+            title={title || ''}
+            className="m-auto"
+          />
+        </ImageWrapper>
         {title
           ? <figcaption className="text-center italic mt-1">{title}</figcaption>
           : (
@@ -31,7 +30,7 @@ const Figure = props => {
             </Popout>
           )
         }
-      </Modal>
+      </Lightbox>
     </figure>
   )
 }

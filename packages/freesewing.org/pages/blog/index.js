@@ -62,7 +62,7 @@ const BlogIndexPage = (props) => {
 
   return (
     <Page app={app} title={t('blog')} slug='blog'>
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 px-8 max-w-7xl">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 max-w-7xl">
         {props.posts.map(post => <Preview app={app} post={post} key={post.slug}/>)
         }
       </div>
