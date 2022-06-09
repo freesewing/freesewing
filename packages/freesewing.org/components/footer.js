@@ -131,12 +131,30 @@ const translations = {
 
 const icon = { className: "w-20 h-20" }
 const social = {
-  Discord: [ <DiscordIcon {...icon}/>, 'https://discord.freesewing.org/' ],
-  Instagram: [ <InstagramIcon {...icon}/>, 'https://instagram.com/freesewing_org' ],
-  Facebook: [ <FacebookIcon {...icon}/>, 'https://www.facebook.com/groups/627769821272714/' ],
-  Github: [ <GithubIcon {...icon} />, 'https://github.com/freesewing' ],
-  Reddit: [ <RedditIcon {...icon} />, 'https://www.reddit.com/r/freesewing/' ],
-  Twitter: [ <TwitterIcon {...icon} />, 'https://twitter.com/freesewing_org' ],
+  Discord: {
+    icon: <DiscordIcon {...icon}/>,
+    href: 'https://discord.freesewing.org/'
+  },
+  Instagram: {
+    icon: <InstagramIcon {...icon}/>,
+    href: 'https://instagram.com/freesewing_org'
+  },
+  Facebook: {
+    icon: <FacebookIcon {...icon}/>,
+    href: 'https://www.facebook.com/groups/627769821272714/'
+  },
+  Github: {
+    icon: <GithubIcon {...icon} />,
+    href: 'https://github.com/freesewing'
+  },
+  Reddit: {
+    icon: <RedditIcon {...icon} />,
+    href: 'https://www.reddit.com/r/freesewing/'
+  },
+  Twitter: {
+    icon: <TwitterIcon {...icon} />,
+    href: 'https://twitter.com/freesewing_org'
+  }
 }
 
 
@@ -172,9 +190,9 @@ const Footer = ({ app, full=false }) => {
           {/* Social icons */}
           <div className="w-full sm:w-auto flex flex-row flex-wrap gap-8 items-center justify-center">
             {Object.keys(social).map(item => (
-              <Link key={item} href={social[item][1]}>
+              <Link key={item} href={social[item].href}>
                 <a className="hover:text-secondary-focus hover:-mt-2 transition-all" title={item}>
-                  {social[item][0]}
+                  {social[item].icon}
                 </a>
               </Link>
             ))}
