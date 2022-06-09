@@ -1,7 +1,7 @@
 import themes from 'shared/themes/runtime.js'
 
 const svg = (color, d, shadowShift) => `url('data:image/svg+xml;base64,` +
-  new Buffer(`<svg
+  Buffer.from(`<svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     stroke="none"

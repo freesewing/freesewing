@@ -16,10 +16,14 @@ const Figure = props => {
           src={props?.src}
           alt={props?.alt || ''}
           title={title || ''}
-          className="m-auto max-h-full max-w-full"
+          className="m-auto"
+          style={{
+            maxHeight: "calc(100vh - 6rem)",
+            maxWidth: "calc(100vw - 6rem)",
+          }}
         />
         {title
-          ? <figcaption className="text-center italic text-base-content mt-1">{title}</figcaption>
+          ? <figcaption className="text-center italic mt-1">{title}</figcaption>
           : (
             <Popout fixme>
               <h5>This image does not have an alt of title specified</h5>
