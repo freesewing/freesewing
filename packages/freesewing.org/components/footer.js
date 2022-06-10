@@ -169,15 +169,15 @@ const Footer = ({ app, full=false }) => {
         {/* First col - CC & MIT */}
         <div className="max-w-md mb-20 order-1 mt-20 2xl:mt-0">
           <div className="max-w-md m-auto">
-            <div><CreativeCommonsLogo className="w-80 m-auto"/></div>
+            <div><CreativeCommonsLogo className="w-64 sm:w-80 m-auto"/></div>
             <div className="flex flex-row gap-2 justify-center items-center mt-8">
-              <CcByLogo className="w-16"/>
+              <CcByLogo className="w-12 sm:w-16"/>
               <p className="text-neutral-content text-right basis-3/4">
                 {translations.cc[app.locale]}
               </p>
             </div>
             <div className="flex flex-row gap-2 justify-center items-center mt-4">
-                <OsiLogo className="w-16"/>
+                <OsiLogo className="w-12 sm:w-16"/>
               <p className="text-neutral-content text-right basis-3/4">
                 {translations.mit[app.locale]}
               </p>
