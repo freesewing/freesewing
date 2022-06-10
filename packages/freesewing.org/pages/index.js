@@ -87,7 +87,7 @@ const HomePage = (props) => {
           </div>
         </section>
       <div>
-      <div className="max-w-xl m-auto my-32">
+      <div className="max-w-xl m-auto my-32 px-6">
         <Popout fixme>Create homepage</Popout>
       </div>
       <div className="max-w-7xl m-auto my-32">
