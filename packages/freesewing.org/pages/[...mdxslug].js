@@ -45,9 +45,7 @@ const MdxPage = props => {
             <TocWrapper toc={props.toc} app={app}/>
           </div>
         )}
-        <div className="xl:pl-8 2xl:pl-16">
-          <MdxWrapper mdx={props.mdx} app={app} components={components} />
-        </div>
+        <MdxWrapper mdx={props.mdx} app={app} components={components} />
       </div>
     </Page>
   )

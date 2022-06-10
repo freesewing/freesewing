@@ -37,10 +37,10 @@ const DesignPosts = ({ design, posts }) => {
         </Link>
       </h2>
       <div className={`
-        flex flex-row overflow-visible
-        -mr-8 pl-8
+        flex flex-row overflow-cli
+        pl-8
         md:-mr-12 md:pl-12
-      `}>
+      `} style={{maxWidth: "calc(100vw - 3rem)"}}>
       {posts.slice(0, 10).map(post => <PreviewTile
         img={`${strapiHost}${post?.image?.sizes?.medium?.url}`}
         slug={post.slug}
@@ -66,17 +66,18 @@ const ShowcaseIndexPage = (props) => {
 
   return (
     <Page app={app} title={t('showcase')} slug='showcase'>
-      <div className="max-w-4xl m-auto text-center px-8">
+      <div className="max-w-4xl m-auto text-center">
         <ul className="flex flex-row flex-wrap gap-4 items-center justify-center leading-tight text-xl">
           {Object.keys(designs).sort().map(design => (
             <li key={design}>
-              <PageLink href={`/showcase/design/${design}`} txt={design} className="capitalize" />
+              <PageLink href={`/showcase/designs/${design}`} txt={design} className="capitalize" />
             </li>
           ))}
         </ul>
       </div>
       <div className={`
-        px-8 2xl:pl-16 overflow-visible overscroll-x-hidden
+        2xl:pl-16 overflow-visible overflow-x-hidden
+        -mr-6
         max-w-sm
         md:max-w-md
         lg:max-w-lg

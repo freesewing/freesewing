@@ -6,10 +6,10 @@ const Aside = ({ app, slug, mobileOnly=false, before=[], after=[]}) => (
     overflow-y-auto z-20
     bg-base-100 text-base-content md:bg-base-50
     transition-all
-    ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
+    ${app.primaryMenu ? '' : 'translate-x-[-120%]'} transition-transform
     md:flex md:sticky md:flex-row-reverse
     md:relative md:transform-none
-    px-8 py-24
+    px-6 py-24
     shrink-0
     md:w-24 md:px-2 md:justify-center
     lg:w-96 lg:pr-2 lg:border-r-2
