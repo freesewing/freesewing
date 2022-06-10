@@ -159,11 +159,17 @@ export const getStaticPaths = async () => {
     `${strapiHost}/blogposts?_locale=en&dev_ne=true&_limit=-1`
   )
   .then(response => response.json())
-  .then(data => data.map(post => ({ params: { slug: post.slug } })))
+  .then(data => data.map(post => `/blog/${post.slug}`))
   .catch(err => console.log(err))
 
   return {
-    paths,
+    paths: [
+      ...paths,
+      ...paths.map(p => `/de${p}`),
+      ...paths.map(p => `/es${p}`),
+      ...paths.map(p => `/fr${p}`),
+      ...paths.map(p => `/nl${p}`),
+    ],
     fallback: false,
   }
 }

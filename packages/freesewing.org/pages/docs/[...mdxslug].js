@@ -70,7 +70,11 @@ export default MdxPage
  */
 export async function getStaticProps({ params, locale }) {
 
-  const { mdx, intro, toc, frontmatter } = await mdxLoader(locale, 'org', params.mdxslug.join('/'))
+  const { mdx, intro, toc, frontmatter } = await mdxLoader(
+    locale,
+    'org',
+    ['docs', ...params.mdxslug].join('/')
+  )
   const { title='FIXME: Please give this page a title' } = frontmatter
 
   return {
@@ -104,7 +108,9 @@ export async function getStaticProps({ params, locale }) {
  */
 export async function getStaticPaths() {
 
-  const somePaths = mdxPaths.filter(path => (path.split('/').length < 5))
+  const somePaths = mdxPaths
+    .filter(path => (path.split('/').length < 5))
+    .filter(path => (path !== 'docs'))
 
   return {
     paths: [
