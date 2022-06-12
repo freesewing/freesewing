@@ -1,11 +1,5 @@
-# Change log for: @freesewing/snapseries
+# Change log for: @freesewing/config-helpers
 
-
-## 2.19.0 (2021-10-17)
-
-### Added
-
- - Initial release of `@freesewing/snapseries` wich holds commonly used series of snap values for percentage options
 
 
 This is the **initial release**, and the start of this change log.
