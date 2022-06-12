@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("./dist");
+let freesewing = require("../dist/index.js");
 
 it("Should create a snippet", () => {
   let snip1 = new freesewing.Snippet("test", new freesewing.Point(12, 34));

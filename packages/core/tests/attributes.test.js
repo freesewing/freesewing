@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const Point = require("./dist").Point;
+const Point = require("../dist/index.js").Point;
 
 const newAttr = () => new Point(0, 0).attributes;
 

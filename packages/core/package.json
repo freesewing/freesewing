@@ -29,8 +29,8 @@
   "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
+    "build": "node build.js",
+    "cibuild_step1": "node build.js",
     "test": "BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js",
     "pubtest": "npm publish --registry http://localhost:6662",
     "pubforce": "npm publish",
@@ -48,6 +48,7 @@
     "hooks": "^0.3.2"
   },
   "devDependencies": {
+    "esbuild": "^0.14.43",
     "nyc": "^15.1.0"
   },
   "files": [
