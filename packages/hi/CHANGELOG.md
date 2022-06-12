@@ -1,43 +1,6 @@
 # Change log for: @freesewing/hi
 
-
-## 2.20.0 (2022-01-24)
-
-### Changed
-
- - Switched to default import for version from package.json
-
-## 2.16.1 (2021-05-30)
-
-### Changed
-
- - Changed `department` setting in config in line with new grouping
-
-## 2.8.1 (2020-08-16)
-
-### Fixed
-
- - Fixed issue with (length of) band
-
-## 2.8.0 (2020-08-10)
-
-### Fixed
-
- - Fix for incorrect length of the ribbon
-
-## 2.7.0 (2020-07-12)
-
-### Changed
-
- - Removed `Circumference` suffix from measurement names
-
-## 2.0.2 (2019-09-06)
-
-### Fixed
-
- - Added bandLength option to fit optiongroup (it was missing)
-
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2022-06-12)
 
 ### Added
 
