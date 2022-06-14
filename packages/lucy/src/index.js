@@ -4,9 +4,13 @@ import config from '../config'
 import draftPocket from './pocket'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Lucy = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftPocket = draftPocket
+Lucy.prototype.draftPocket = draftPocket
 
-export default Pattern
+// Named exports
+export { config, Lucy }
+
+// Default export
+export default Lucy
