@@ -1,20 +1,20 @@
-import pkg from '../package.json'
-import Brian from '@freesewing/brian'
+import { version } from '../package.json'
+import { config as brianConfig } from '@freesewing/brian'
 
 export default {
+  version,
   name: 'sven',
-  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
   type: 'pattern',
   difficulty: 3,
   optionGroups: {
-    fit: [...Brian.config.optionGroups.fit, 'hipsEase'],
-    style: [...Brian.config.optionGroups.fit, 'ribbing', 'ribbingHeight'],
-    advanced: [...Brian.config.optionGroups.advanced, 'ribbingStretch'],
+    fit: [...brianConfig.optionGroups.fit, 'hipsEase'],
+    style: [...brianConfig.optionGroups.fit, 'ribbing', 'ribbingHeight'],
+    advanced: [...brianConfig.optionGroups.advanced, 'ribbingStretch'],
   },
-  measurements: [...Brian.config.measurements, 'hips', 'waist'],
+  measurements: [...brianConfig.measurements, 'hips', 'waist'],
   dependencies: {
     frontBase: 'base',
     backBase: 'base',
@@ -32,7 +32,7 @@ export default {
   parts: ['cuff', 'waistband'],
   hide: ['base', 'frontBase', 'backBase', 'sleeveBase'],
   options: {
-    ...Brian.config.options,
+    ...brianConfig.options,
 
     // Constants
     waistEase: 0.08,

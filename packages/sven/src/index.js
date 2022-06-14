@@ -9,26 +9,30 @@ import draftCuff from './cuff'
 import draftWaistband from './waistband'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Sven = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = function (part) {
+Sven.prototype.draftBase = function (part) {
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFrontBase = function (part) {
+Sven.prototype.draftFrontBase = function (part) {
   return new Brian(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBackBase = function (part) {
+Sven.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
-Pattern.prototype.draftSleeveBase = function (part) {
+Sven.prototype.draftSleeveBase = function (part) {
   let brian = new Brian(this.settings)
   return brian.draftSleeve(brian.draftSleevecap(part))
 }
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftBack = draftFront
-Pattern.prototype.draftSleeve = draftSleeve
-Pattern.prototype.draftCuff = draftCuff
-Pattern.prototype.draftWaistband = draftWaistband
+Sven.prototype.draftFront = draftFront
+Sven.prototype.draftBack = draftFront
+Sven.prototype.draftSleeve = draftSleeve
+Sven.prototype.draftCuff = draftCuff
+Sven.prototype.draftWaistband = draftWaistband
 
-export default Pattern
+// Named exports
+export { config, Sven }
+
+// Default export
+export default Sven
