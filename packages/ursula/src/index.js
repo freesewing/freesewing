@@ -7,12 +7,16 @@ import draftGusset from './gusset'
 import draftElastic from './elastic'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Ursula = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftBack = draftBack
-Pattern.prototype.draftGusset = draftGusset
-Pattern.prototype.draftElastic = draftElastic
+Ursula.prototype.draftFront = draftFront
+Ursula.prototype.draftBack = draftBack
+Ursula.prototype.draftGusset = draftGusset
+Ursula.prototype.draftElastic = draftElastic
 
-export default Pattern
+// Named exports
+export { config, Ursula }
+
+// Default export
+export default Ursula
