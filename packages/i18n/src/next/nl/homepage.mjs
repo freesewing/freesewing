@@ -3,7 +3,7 @@
  * All edits will be overwritten on the next (pre)build
  */
 const homepage = {
-  "scrollDownToLearnMore": "Scroll om meer te weten over FreeSewing en het gratis uit te proberen"
+  "scrollDownToLearnMore": "Scroll down to learn more about FreeSewing and try it for free"
 }
 
 export default homepage

@@ -24,13 +24,12 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
+    "build": "node build.js",
+    "mbuild": "NO_MINIFY=1 node build.js",
+    "vbuild": "VERBOSE=1 node build.js",
+    "cibuild_step1": "node build.js",
     "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
     "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
     "prebuild": "node src/prebuild.mjs"
   },
@@ -39,6 +38,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "esbuild": "^0.14.43",
+    "esbuild-plugin-yaml": "^0.0.1",
     "js-yaml": "^4.1.0"
   },
   "files": [
@@ -51,10 +52,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }
