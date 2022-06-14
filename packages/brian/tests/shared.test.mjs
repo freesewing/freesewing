@@ -3,7 +3,7 @@
 import chai from 'chai'
 import models from '@freesewing/models'
 import patterns from '@freesewing/pattern-info'
-import Brian from '../dist/index.mjs'
+import Brian from './dist/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/patterns/config.mjs'
