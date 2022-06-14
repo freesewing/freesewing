@@ -9,13 +9,17 @@ import draftBow3 from './bow3'
 import draftRibbon from './ribbon'
 
 // Create new design
-const benjamin = new freesewing.Design(config, plugins)
+const Benjamin = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-benjamin.prototype.draftBase = draftBase
-benjamin.prototype.draftBow1 = draftBow1
-benjamin.prototype.draftBow2 = draftBow2
-benjamin.prototype.draftBow3 = draftBow3
-benjamin.prototype.draftRibbon = draftRibbon
+Benjamin.prototype.draftBase = draftBase
+Benjamin.prototype.draftBow1 = draftBow1
+Benjamin.prototype.draftBow2 = draftBow2
+Benjamin.prototype.draftBow3 = draftBow3
+Benjamin.prototype.draftRibbon = draftRibbon
 
-export default benjamin
+// Named exports
+export { config, Benjamin }
+
+// Default export
+export default Benjamin
