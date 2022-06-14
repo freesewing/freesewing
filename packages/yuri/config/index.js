@@ -1,19 +1,19 @@
-import pkg from '../package.json'
-import Brian from '@freesewing/brian'
+import { version } from '../package.json'
+import { config as brianConfig } from '@freesewing/brian'
 
 const config = {
+  version,
   name: 'yuri',
-  version: pkg.version,
   design: 'Hellgy',
   code: 'Biou',
   department: 'tops',
   type: 'pattern',
   difficulty: 3,
   optionGroups: {
-    ...Brian.config.optionGroups,
-    fit: [...Brian.config.optionGroups.fit, 'hipsEase'],
+    ...brianConfig.optionGroups,
+    fit: [...brianConfig.optionGroups.fit, 'hipsEase'],
   },
-  measurements: [...Brian.config.measurements, 'head', 'hips', 'hpsToBust'],
+  measurements: [...brianConfig.measurements, 'head', 'hips', 'hpsToBust'],
   dependencies: {
     backBase: 'base',
     frontBase: 'backBase',
@@ -37,7 +37,7 @@ const config = {
   hide: ['base', 'sleevecap', 'backBase', 'frontBase', 'sleeveBase'],
   parts: ['gusset', 'hoodSide', 'hoodCenter'],
   options: {
-    ...Brian.config.options,
+    ...brianConfig.options,
 
     // Brian overrides
     collarEase: { pct: 20, min: 10, max: 30 },
