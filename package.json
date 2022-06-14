@@ -85,6 +85,8 @@
     "codecov": "^3.7.2",
     "cross-env": "^7.0.2",
     "deep-freeze": "^0.0.1",
+    "esbuild": "^0.14.43",
+    "esbuild-plugin-yaml": "^0.0.1",
     "esm": "^3.2.25",
     "file-saver": "^2.0.2",
     "fs-extra": "^10.0.0",
