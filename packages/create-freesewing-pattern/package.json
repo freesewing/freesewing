@@ -20,14 +20,6 @@
     "react"
   ],
   "main": "index.js",
-  "scripts": {
-    "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
-    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
-    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
-  },
   "peerDependencies": {},
   "dependencies": {
     "chalk": "^4.1.1",
@@ -64,11 +56,8 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   },
   "bin": {
     "create-freesewing-pattern": "index.js"
