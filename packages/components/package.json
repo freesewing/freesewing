@@ -19,16 +19,14 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
+    "clean": "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Legend && rimraf LineDrawing && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf Spinner &&rimraf withGist && rimraf withLanguage && rimraf withStorage && rimraf Workbench",
+    "build": "node build.js",
+    "mbuild": "NO_MINIFY=1 node build.js",
+    "vbuild": "VERBOSE=1 node build.js",
+    "cibuild_step1": "node build.js",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
     "storybook": "start-storybook -p 6663",
-    "cibuild_step2": "rollup -c",
     "watch": "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs"
   },
   "peerDependencies": {
@@ -85,10 +83,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }

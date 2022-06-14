@@ -21,7 +21,7 @@ import Xport from './Export'
 import axios from 'axios'
 import yaml from 'yaml'
 import Footer from './Footer'
-import sass from './style.scss'
+import css from './style.css'
 
 const extraTranslations = {}
 
@@ -321,7 +321,7 @@ const Workbench = ({
     <MuiThemeProvider theme={createTheme(themes[theme])}>
       <style>
         {`:root { --freesewing-pattern-scale: ${gist.settings.scale || 1}; }`}
-        {sass}
+        {css}
       </style>
       <div
         className={
