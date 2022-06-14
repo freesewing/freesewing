@@ -8,4 +8,4 @@ Typically, this falls apart in a few categories:
 
 - Nylon gemengd met elasthaan, spandex of lycra is zacht en elastisch. Dit wordt voor de meeste commerciële zwemkledij gebruikt.
 - Polyester gemengd met PBT (polybutyleen terephthalaat) is minder zacht, maar bestand tegen chloor en zout water. Dit wordt vaak voor competitiebadpakken gebruikt.
-- Neopreen, ook gekend als scuba, is zwaarder en minder elastisch. Hier worden duikpakken van gemaakt.
+- Neoprene, also known as scuba, is heavier and less stretchy. Hier worden duikpakken van gemaakt.
