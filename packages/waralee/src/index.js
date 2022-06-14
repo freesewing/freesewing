@@ -10,15 +10,19 @@ import draftFacings from './facings'
 import draftMini from './mini'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Waralee = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftPantsproto = draftPantsproto
-Pattern.prototype.draftPants = draftPants
-Pattern.prototype.draftCutout = draftCutout
-Pattern.prototype.draftPocket = draftPocket
-Pattern.prototype.draftBackPocket = draftBackPocket
-Pattern.prototype.draftFacings = draftFacings
-Pattern.prototype.draftMini = draftMini
+Waralee.prototype.draftPantsproto = draftPantsproto
+Waralee.prototype.draftPants = draftPants
+Waralee.prototype.draftCutout = draftCutout
+Waralee.prototype.draftPocket = draftPocket
+Waralee.prototype.draftBackPocket = draftBackPocket
+Waralee.prototype.draftFacings = draftFacings
+Waralee.prototype.draftMini = draftMini
 
-export default Pattern
+// Named exports
+export { config, Waralee }
+
+// Default export
+export default Waralee
