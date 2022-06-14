@@ -21,10 +21,10 @@ import draftLineStrokes from './linestrokes'
 import draftSizes from './sizes'
 
 // Create design
-const Pattern = new freesewing.Design(config, [plugins, buttonsPlugin])
+const Legend = new freesewing.Design(config, [plugins, buttonsPlugin])
 
 // Attach draft methods to prototype
-let methods = {
+const methods = {
   draftFabricLines,
   draftSaLines,
   draftOtherLines,
@@ -43,6 +43,10 @@ let methods = {
   draftSizes,
 }
 
-for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m]
+for (const m of Object.keys(methods)) Legend.prototype[m] = methods[m]
 
-export default Pattern
+// Named exports
+export { config, Legend }
+
+// Default export
+export default Legend
