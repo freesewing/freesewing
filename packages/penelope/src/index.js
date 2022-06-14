@@ -6,11 +6,15 @@ import draftBack from './back'
 import draftWaistband from './waistband'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Penelope = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftBack = draftBack
-Pattern.prototype.draftWaistband = draftWaistband
+Penelope.prototype.draftFront = draftFront
+Penelope.prototype.draftBack = draftBack
+Penelope.prototype.draftWaistband = draftWaistband
 
-export default Pattern
+// Named exports
+export { config, Penelope }
+
+// Default export
+export default Penelope
