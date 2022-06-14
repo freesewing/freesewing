@@ -6,10 +6,14 @@ import draftFront from './front'
 import draftBack from './back'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Walburga = new freesewing.Design(config, plugins)
 
-Pattern.prototype.draftBase = draftBase
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftBack = draftBack
+Walburga.prototype.draftBase = draftBase
+Walburga.prototype.draftFront = draftFront
+Walburga.prototype.draftBack = draftBack
 
-export default Pattern
+// Named exports
+export { config, Walburga }
+
+// Default export
+export default Walburga
