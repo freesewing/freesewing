@@ -9,13 +9,17 @@ import draftBrimTop from './brimtop'
 import draftBrimInterfacing from './briminterfacing'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Florent = new freesewing.Design(config, plugins)
 
 // Attachdraft methods to prototype
-Pattern.prototype.draftTop = draftTop
-Pattern.prototype.draftSide = draftSide
-Pattern.prototype.draftBrimBottom = draftBrimBottom
-Pattern.prototype.draftBrimTop = draftBrimTop
-Pattern.prototype.draftBrimInterfacing = draftBrimInterfacing
+Florent.prototype.draftTop = draftTop
+Florent.prototype.draftSide = draftSide
+Florent.prototype.draftBrimBottom = draftBrimBottom
+Florent.prototype.draftBrimTop = draftBrimTop
+Florent.prototype.draftBrimInterfacing = draftBrimInterfacing
 
-export default Pattern
+// Named exports
+export { config, Florent }
+
+// Default export
+export default Florent
