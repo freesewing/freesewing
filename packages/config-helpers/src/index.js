@@ -49,3 +49,12 @@ export function pctBasedOn(measurement) {
   }
 }
 
+// Default export
+export default {
+  elastics,
+  zippers,
+  smallsteps,
+  steps,
+  bigsteps,
+  pctBasedOn,
+}

@@ -15,19 +15,29 @@ const options = {
   banner: { js: banner },
   bundle: true,
   entryPoints: ['src/index.js'],
-  minify: true,
+  external: ["@freesewing"],
+  metafile: process.env.VERBOSE ? true : false,
+  minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,
 }
 
 // Different formats
 const formats = {
+  cjs: "dist/index.js",
   esm: "dist/index.mjs",
-  cjs: "dist/index.js"
 }
 
 // Let esbuild generate different formats
-for (const [format, outfile] of Object.entries(formats)) esbuild
-  .build({ ...options, outfile, format })
-  .catch(() => process.exit(1))
+let result
+(async () => {
+  for (const [format, outfile] of Object.entries(formats)) {
+    result = await esbuild
+    .build({ ...options, outfile, format })
+    .catch(() => process.exit(1))
+  }
 
-
+  if (process.env.VERBOSE) {
+    const info = await esbuild.analyzeMetafile(result.metafile)
+    console.log(info)
+  }
+})()
