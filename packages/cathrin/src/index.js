@@ -12,16 +12,20 @@ import draftPanel5 from './panel5'
 import draftPanel6 from './panel6'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Cathrin = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = draftBase
-Pattern.prototype.draftPanels = draftPanels
-Pattern.prototype.draftPanel1 = draftPanel1
-Pattern.prototype.draftPanel2 = draftPanel2
-Pattern.prototype.draftPanel3 = draftPanel3
-Pattern.prototype.draftPanel4 = draftPanel4
-Pattern.prototype.draftPanel5 = draftPanel5
-Pattern.prototype.draftPanel6 = draftPanel6
+Cathrin.prototype.draftBase = draftBase
+Cathrin.prototype.draftPanels = draftPanels
+Cathrin.prototype.draftPanel1 = draftPanel1
+Cathrin.prototype.draftPanel2 = draftPanel2
+Cathrin.prototype.draftPanel3 = draftPanel3
+Cathrin.prototype.draftPanel4 = draftPanel4
+Cathrin.prototype.draftPanel5 = draftPanel5
+Cathrin.prototype.draftPanel6 = draftPanel6
 
-export default Pattern
+// Named exports
+export { config, Cathrin }
+
+// Default export
+export default Cathrin
