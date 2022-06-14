@@ -7,24 +7,28 @@ import draftFront from './front'
 import draftSleeve from './sleeve'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Diana = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = function (part) {
+Diana.prototype.draftBase = function (part) {
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFrontBase = function (part) {
+Diana.prototype.draftFrontBase = function (part) {
   return new Brian(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBackBase = function (part) {
+Diana.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
-Pattern.prototype.draftSleeveBase = function (part) {
+Diana.prototype.draftSleeveBase = function (part) {
   let brian = new Brian(this.settings)
   return brian.draftSleeve(brian.draftSleevecap(part))
 }
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftBack = draftFront
-Pattern.prototype.draftSleeve = draftSleeve
+Diana.prototype.draftFront = draftFront
+Diana.prototype.draftBack = draftFront
+Diana.prototype.draftSleeve = draftSleeve
 
-export default Pattern
+// Named exports
+export { config, Diana }
+
+// Default export
+export default Diana
