@@ -3,6 +3,7 @@ import { config as brianConfig } from '@freesewing/brian'
 
 const config = {
   version,
+  name: 'teagan',
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
