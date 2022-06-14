@@ -28,10 +28,10 @@ customReadme:
   - freesewing.shared
   - freesewing.org
   - svgtopdf
-customRollup:
+customBuild:
   - backend
   - components
-  - core
+  - create-freesewing-pattern
   - css-theme
   - freesewing.dev
   - freesewing.lab
@@ -43,13 +43,8 @@ customRollup:
   - remark-jargon
   - strapi
   - svgtopdf
+  - plugin-bundle
   - utils
-namedExports:
-  - css-theme
-  - models
-  - pattern-info
-  - mui-theme
-  - snapseries
 packageJson:
   backend:
     private: true
@@ -97,7 +92,11 @@ packageJson:
     module: '!'
   freesewing.dev:
     private: true
+  freesewing.lab:
+    private: true
   freesewing.org:
+    private: true
+  freesewing.shared:
     private: true
   holmes:
     author: AlfaLyr (https://github.com/alfalyr)

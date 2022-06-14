@@ -4,8 +4,3 @@
 *.yml
 *.md
 
-
-# More auto-generated code
-packages/*/example/public/*
-packages/*/example/src/*
-packages/*/tests/*.js
