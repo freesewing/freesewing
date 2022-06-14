@@ -138,6 +138,7 @@ const optionalMeasurements = {}
 const versions = {}
 const info = {}
 for (let pattern of Object.keys(patterns)) {
+  if (typeof patterns[pattern] === 'undefined') console.log({pattern})
   options[pattern] = patternOptions(patterns[pattern])
   optionGroups[pattern] = patterns[pattern].optionGroups
   parts[pattern] = patternParts(patterns[pattern])

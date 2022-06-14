@@ -26,13 +26,12 @@
   "module": "dist/index.mjs",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "rollup -c",
+    "build": "node build.js",
+    "mbuild": "NO_MINIFY=1 node build.js",
+    "vbuild": "VERBOSE=1 node build.js",
     "test": "echo \"pattern-info: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
-    "cibuild_step2": "node src/prebuild.js && rollup -c",
+    "cibuild_step2": "node build.js",
     "prebuild": "node src/prebuild.js"
   },
   "peerDependencies": {},
@@ -48,10 +47,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "named"
   }
 }
