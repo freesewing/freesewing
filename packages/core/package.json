@@ -30,12 +30,11 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "node build.js",
+    "mbuild": "NO_MINIFY=1 node build.js",
+    "vbuild": "VERBOSE=1 node build.js",
     "cibuild_step1": "node build.js",
     "test": "BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
     "testonly": "BABEL_ENV=production npx mocha tests/*.test.js",
     "testci": "BABEL_ENV=production npx mocha tests/*.test.js --require @babel/register --reporter ../../tests/reporters/terse.js",
     "report": "BABEL_ENV=production nyc report --reporter=html",
@@ -48,7 +47,6 @@
     "hooks": "^0.3.2"
   },
   "devDependencies": {
-    "esbuild": "^0.14.43",
     "nyc": "^15.1.0"
   },
   "files": [
@@ -61,10 +59,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }
