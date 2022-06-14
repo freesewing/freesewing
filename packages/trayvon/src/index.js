@@ -11,15 +11,19 @@ import draftLiningTail from './liningtail'
 import draftLoop from './loop'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Trayvon = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftInterfacingTip = (part) => draftInterfacingTip(part)
-Pattern.prototype.draftInterfacingTail = (part) => draftInterfacingTail(part)
-Pattern.prototype.draftFabricTip = (part) => draftFabricTip(part)
-Pattern.prototype.draftFabricTail = (part) => draftFabricTail(part)
-Pattern.prototype.draftLiningTip = (part) => draftLiningTip(part)
-Pattern.prototype.draftLiningTail = (part) => draftLiningTail(part)
-Pattern.prototype.draftLoop = (part) => draftLoop(part)
+Trayvon.prototype.draftInterfacingTip = (part) => draftInterfacingTip(part)
+Trayvon.prototype.draftInterfacingTail = (part) => draftInterfacingTail(part)
+Trayvon.prototype.draftFabricTip = (part) => draftFabricTip(part)
+Trayvon.prototype.draftFabricTail = (part) => draftFabricTail(part)
+Trayvon.prototype.draftLiningTip = (part) => draftLiningTip(part)
+Trayvon.prototype.draftLiningTail = (part) => draftLiningTail(part)
+Trayvon.prototype.draftLoop = (part) => draftLoop(part)
 
-export default Pattern
+// Named exports
+export { config, Trayvon }
+
+// Default export
+export default Trayvon
