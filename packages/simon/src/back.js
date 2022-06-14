@@ -99,7 +99,10 @@ export default (part) => {
   points.armholeYokeSplit = paths.backArmhole.intersectsY(points.cbYoke.y).pop()
   const [back, yoke] = paths.backArmhole.split(points.armholeYokeSplit)
   paths.backArmholeYoke = yoke.setRender(false)
-  paths.backArmholeBack = back.setRender(false)
+  // For 1/10 dolls with breasts, this path becomes non-existing so we put a dummy here
+  paths.backArmholeBack = back.attributes
+    ? back.setRender(false)
+    : new Path().move(points.armholeYokeSplit).line(points.armholeYokeSplit).setRender(false)
 
   // We'll re-use this
   const armholeToPitch = new Path()
