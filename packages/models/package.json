@@ -24,13 +24,13 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf dist",
     "build": "node build.js",
-    "mbuild": "NO_MINIFY=1 node build.js",
-    "vbuild": "VERBOSE=1 node build.js",
     "cibuild_step1": "node build.js",
+    "clean": "rimraf dist",
+    "mbuild": "NO_MINIFY=1 node build.js",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "echo \"models: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
+    "vbuild": "VERBOSE=1 node build.js"
   },
   "peerDependencies": {
     "@freesewing/utils": "^2.20.8"

@@ -28,17 +28,17 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf dist",
     "build": "node build.js",
-    "mbuild": "NO_MINIFY=1 node build.js",
-    "vbuild": "VERBOSE=1 node build.js",
     "cibuild_step1": "node build.js",
-    "test": "BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js",
+    "clean": "rimraf dist",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "testonly": "BABEL_ENV=production npx mocha tests/*.test.js",
-    "testci": "BABEL_ENV=production npx mocha tests/*.test.js --require @babel/register --reporter ../../tests/reporters/terse.js",
+    "test": "BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js",
+    "vbuild": "VERBOSE=1 node build.js",
+    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
     "report": "BABEL_ENV=production nyc report --reporter=html",
-    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
+    "testci": "BABEL_ENV=production npx mocha tests/*.test.js --require @babel/register --reporter ../../tests/reporters/terse.js",
+    "testonly": "BABEL_ENV=production npx mocha tests/*.test.js"
   },
   "peerDependencies": {},
   "dependencies": {

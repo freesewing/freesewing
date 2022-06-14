@@ -28,15 +28,15 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "clean": "rimraf dist",
     "build": "node build.js",
-    "mbuild": "NO_MINIFY=1 node build.js",
-    "vbuild": "VERBOSE=1 node build.js",
     "cibuild_step1": "node build.js",
-    "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
+    "clean": "rimraf dist",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
-    "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'"
+    "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
+    "vbuild": "VERBOSE=1 node build.js",
+    "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'",
+    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
     "@freesewing/core": "^2.20.8"
@@ -45,8 +45,6 @@
   "devDependencies": {
     "mocha": "^9.1.1",
     "chai": "^4.2.0",
-    "@babel/core": "^7.11.0",
-    "@babel/register": "^7.10.5",
     "@freesewing/plugin-banner": "^2.20.8",
     "@freesewing/plugin-buttons": "^2.20.8",
     "@freesewing/plugin-cutonfold": "^2.20.8",

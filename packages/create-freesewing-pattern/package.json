@@ -20,6 +20,9 @@
     "react"
   ],
   "main": "index.js",
+  "scripts": {
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -"
+  },
   "peerDependencies": {},
   "dependencies": {
     "chalk": "^4.1.1",

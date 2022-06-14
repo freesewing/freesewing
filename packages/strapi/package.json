@@ -50,5 +50,6 @@
     "node": ">=14.0.0",
     "npm": ">=6"
   },
-  "private": true
+  "private": true,
+  "rollup": {}
 }
