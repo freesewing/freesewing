@@ -7,7 +7,7 @@ const config = {
   name: 'simone',
   optionGroups: {
     ...simonConfig.optionGroups,
-    style: [...simonConfig.optionGroups.style, 'contour'],
+    style: [...simonConfig.optionGroups.style, 'frontDarts', 'contour'],
     advanced: [
       ...simonConfig.optionGroups.advanced,
       'bustDartAngle',
@@ -35,6 +35,7 @@ const config = {
     // Simone specific
     bustDartAngle: { deg: 10, min: 0, max: 20 },
     bustDartLength: { pct: 80, min: 50, max: 90 },
+    frontDarts: { bool: false },
     frontDartLength: { pct: 45, min: 30, max: 60 },
     contour: { pct: 50, min: 30, max: 75 },
   },
