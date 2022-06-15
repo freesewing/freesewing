@@ -17,6 +17,7 @@ const charlie = require('@freesewing/charlie').config
 const cornelius = require('@freesewing/cornelius').config
 const florent = require('@freesewing/florent').config
 const florence = require('@freesewing/florence').config
+const hi = require('@freesewing/hi').config
 const holmes = require('@freesewing/holmes').config
 const hortensia = require('@freesewing/hortensia').config
 const huey = require('@freesewing/huey').config
@@ -37,6 +38,7 @@ const theo = require('@freesewing/theo').config
 const tiberius = require('@freesewing/tiberius').config
 const titan = require('@freesewing/titan').config
 const trayvon = require('@freesewing/trayvon').config
+const unice = require('@freesewing/unice').config
 const ursula = require('@freesewing/ursula').config
 const wahid = require('@freesewing/wahid').config
 const walburga = require('@freesewing/walburga').config
@@ -61,6 +63,7 @@ const patterns = {
   cornelius,
   florent,
   florence,
+  hi,
   holmes,
   hortensia,
   huey,
@@ -81,6 +84,7 @@ const patterns = {
   tiberius,
   titan,
   trayvon,
+  unice,
   ursula,
   wahid,
   walburga,
