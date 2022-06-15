@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bartack",
-  "version": "2.20.8",
+  "version": "2.21.0-alpha.0",
   "description": "A FreeSewing plugin to add bartacks to your pattern",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -38,7 +38,7 @@
     "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.20.8"
+    "@freesewing/core": "^2.21.0-alpha.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -52,7 +52,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=14.0.0",
