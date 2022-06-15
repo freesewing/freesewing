@@ -12,16 +12,20 @@ import draftLowerTeeth from './lowerTeeth'
 import draftUpperTeeth from './upperTeeth'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Hi = new freesewing.Design(config, plugins)
 
-Pattern.prototype.draftBody = draftBody
-Pattern.prototype.draftTail = draftTail
-Pattern.prototype.draftMouth = draftMouth
-Pattern.prototype.draftAboveMouth = draftAboveMouth
-Pattern.prototype.draftBelly = draftBelly
-Pattern.prototype.draftTopFin = draftTopFin
-Pattern.prototype.draftBottomFin = draftBottomFin
-Pattern.prototype.draftLowerTeeth = draftLowerTeeth
-Pattern.prototype.draftUpperTeeth = draftUpperTeeth
+Hi.prototype.draftBody = draftBody
+Hi.prototype.draftTail = draftTail
+Hi.prototype.draftMouth = draftMouth
+Hi.prototype.draftAboveMouth = draftAboveMouth
+Hi.prototype.draftBelly = draftBelly
+Hi.prototype.draftTopFin = draftTopFin
+Hi.prototype.draftBottomFin = draftBottomFin
+Hi.prototype.draftLowerTeeth = draftLowerTeeth
+Hi.prototype.draftUpperTeeth = draftUpperTeeth
 
-export default Pattern
+// Named exports
+export { config, Hi }
+
+// Default export
+export default Hi
