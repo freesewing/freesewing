@@ -46,38 +46,34 @@ export default function (part) {
   )
   points.ex1CFlipped = points.ex1C.flipX()
   points.ex2CFlipped = points.ex2C.flipX()
-
-  paths.seam = new Path()
-    .move(points.in2Flipped)
-    .curve(points.in2CFlipped, points.in1CFlipped, points.in1)
-    .curve(points.in1C, points.in2C, points.in2)
-    .curve(points.ex2C, points.ex1C, points.ex1)
-    .curve(points.ex1CFlipped, points.ex2CFlipped, points.in2Flipped)
-    .close()
+  
+paths.saInner = new Path ()
+.move(points.in2)
+.curve(points.in2C, points.in1C, points.in1)
+.curve(points.in1CFlipped, points.in2CFlipped, points.in2Flipped)
+.setRender(false)
+  
+paths.saOuter = new Path()
+.move(points.in2Flipped)
+.curve(points.ex2CFlipped, points.ex1CFlipped, points.ex1)
+.curve(points.ex1C, points.ex2C, points.in2)
+.setRender(false)
+  
+paths.seam = paths.saOuter.join(paths.saInner).close()
   // Complete?
   if (complete) {
     macro('grainline', { from: points.in1, to: points.ex1 })
     macro('title', { at: points.ex1.shift(45, 20), nr: 2, title: 'visor', scale: 0.4 })
 
     if (sa) {
-      paths.saInner = new Path()
-        .move(points.in2Flipped)
-        .curve(points.in2CFlipped, points.in1CFlipped, points.in1)
-        .curve(points.in1C, points.in2C, points.in2)
-        .offset(sa * -2)
-        .attr('class', 'fabric sa')
-      points.sa1 = new Point(points.in2Flipped.x - sa, paths.saInner.start().y)
-      points.sa2 = new Point(points.in2.x + sa, paths.saInner.start().y)
-      paths.sa = new Path()
-        .move(points.in2)
-        .curve(points.ex2C, points.ex1C, points.ex1)
-        .curve(points.ex1CFlipped, points.ex2CFlipped, points.in2Flipped)
-        .offset(sa * -1)
-        .line(points.sa1)
-        .join(paths.saInner)
-        .line(points.sa2)
-        .close()
-        .attr('class', 'fabric sa')
+	points.sa1 = new Point(points.in2.x + sa, paths.saInner.offset(sa*2).start().y)
+	points.sa2 = points.sa1.flipX(points.in1)
+	paths.sa = paths.saOuter.offset(sa)
+	.line(points.sa1)
+	.join(paths	.saInner.offset(sa * 2))
+	.line(points.sa2)
+	.close()
+	.attr('class', 'fabric sa')
     }
 
     // Paperless?
