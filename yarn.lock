@@ -3557,14 +3557,14 @@
     unixify "^1.0.0"
     yargs "^16.0.0"
 
-"@netlify/zip-it-and-ship-it@^5.10.0":
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-5.10.0.tgz#ec97d92da788318a42499e147d19c2707b7856cd"
-  integrity sha512-A8CyBm5fvrSObAMOfu62+ycfYlxhdrG/Gf9OF9bg2eWXY+BtQWG7OUnmg/QPykhU3uVNXFrX7psQ5kBa04/x5w==
+"@netlify/zip-it-and-ship-it@^5.10.1":
+  version "5.10.2"
+  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-5.10.2.tgz#dc43e4d0f7121e065be76b9753fed0bd50a4c2b8"
+  integrity sha512-aKKIaCxM0G0aU1YfK/epZ2XN1LOMxFtQ/tsIfYZIM69fAgkTyEJ0FeLS7jeTEjPl+t+k1pdqAZiHTxDFs6gbQA==
   dependencies:
     "@babel/parser" "7.16.8"
     "@netlify/esbuild" "0.14.25"
-    "@vercel/nft" "^0.19.0"
+    "@vercel/nft" "^0.20.0"
     archiver "^5.3.0"
     common-path-prefix "^3.0.0"
     cp-file "^9.0.0"
@@ -5227,10 +5227,10 @@
     resolve-from "^5.0.0"
     rollup-pluginutils "^2.8.2"
 
-"@vercel/nft@^0.19.0":
-  version "0.19.1"
-  resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-0.19.1.tgz#dcd3c20d7ef14d2050244e7d5edcfecc7303dd46"
-  integrity sha512-klR5oN7S3WJsZz0r6Xsq7o8YlFEyU3/00VmlpZzIPVFzKfbcEjXo/sVR5lQBUqNKuOzhcbxaFtzW9aOyHjmPYA==
+"@vercel/nft@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-0.20.0.tgz#43b1027599f9041b27b9f6ed132f632c53bc7ea1"
+  integrity sha512-+lxsJP/sG4E8UkhfrJC6evkLLfUpZrjXxqEdunr3Q9kiECi8JYBGz6B5EpU1+MmeNnRoSphLcLh/1tI998ye4w==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.5"
     acorn "^8.6.0"
@@ -19262,9 +19262,9 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
 netlify-cli@^10.3.3:
-  version "10.5.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.5.0.tgz#f18300e4f7823589cfe032de259a0b2bc82ed943"
-  integrity sha512-MMM/1RWUExl07bMGqVRhEURMhHu1WO8XrkzfIirSSf78vZHallSr5HdcwZvrizieTeumn8WSOnuwajFMji0Ptw==
+  version "10.5.1"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.5.1.tgz#a882c295654cc11b31f160efd764512886665beb"
+  integrity sha512-4WCcWDPXt2BEWm0kxelUSZhjixAQj9QUff6GamgtLwb/JSoD5blvVYddhaZfPGGz/K0ddIpf1n6fNTJuQhADcg==
   dependencies:
     "@netlify/build" "^27.1.3"
     "@netlify/config" "^18.0.1"
@@ -19272,7 +19272,7 @@ netlify-cli@^10.3.3:
     "@netlify/framework-info" "^9.0.2"
     "@netlify/local-functions-proxy" "^1.1.1"
     "@netlify/plugins-list" "^6.27.0"
-    "@netlify/zip-it-and-ship-it" "^5.10.0"
+    "@netlify/zip-it-and-ship-it" "^5.10.1"
     "@octokit/rest" "^18.0.0"
     "@sindresorhus/slugify" "^1.1.0"
     ansi-escapes "^5.0.0"
