@@ -1,61 +1,19 @@
-import pkg from '../package.json'
+import { version } from '../package.json'
+import { config as brianConfig } from '@freesewing/brian'
 
-export default {
+const config = {
+  version,
   name: 'yuri',
-  version: pkg.version,
   design: 'Hellgy',
   code: 'Biou',
   department: 'tops',
   type: 'pattern',
   difficulty: 3,
   optionGroups: {
-    fit: ['bicepsEase', 'chestEase', 'cuffEase', 'collarEase', 'shoulderEase', 'hipsEase'],
-    style: ['lengthBonus', 'sleeveLengthBonus', 's3Collar', 's3Armhole'],
-    advanced: [
-      'acrossBackFactor',
-      'armholeDepthFactor',
-      'backNeckCutout',
-      'frontArmholeDeeper',
-      'sleeveWidthGuarantee',
-      {
-        sleevecap: [
-          'sleevecapEase',
-          'sleevecapTopFactorX',
-          'sleevecapTopFactorY',
-          'sleevecapBackFactorX',
-          'sleevecapBackFactorY',
-          'sleevecapFrontFactorX',
-          'sleevecapFrontFactorY',
-          'sleevecapQ1Offset',
-          'sleevecapQ2Offset',
-          'sleevecapQ3Offset',
-          'sleevecapQ4Offset',
-          'sleevecapQ1Spread1',
-          'sleevecapQ1Spread2',
-          'sleevecapQ2Spread1',
-          'sleevecapQ2Spread2',
-          'sleevecapQ3Spread1',
-          'sleevecapQ3Spread2',
-          'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2',
-        ],
-      },
-    ],
+    ...brianConfig.optionGroups,
+    fit: [...brianConfig.optionGroups.fit, 'hipsEase'],
   },
-  measurements: [
-    'biceps',
-    'chest',
-    'head',
-    'hips',
-    'hpsToWaistBack',
-    'waistToHips',
-    'neck',
-    'shoulderSlope',
-    'shoulderToShoulder',
-    'shoulderToWrist',
-    'wrist',
-    'hpsToBust',
-  ],
+  measurements: [...brianConfig.measurements, 'head', 'hips', 'hpsToBust'],
   dependencies: {
     backBase: 'base',
     frontBase: 'backBase',
@@ -79,49 +37,17 @@ export default {
   hide: ['base', 'sleevecap', 'backBase', 'frontBase', 'sleeveBase'],
   parts: ['gusset', 'hoodSide', 'hoodCenter'],
   options: {
-    // Constants
-    brianFitSleeve: true,
-    brianFitCollar: true,
-    collarFactor: 4.8,
-    shoulderSlopeReduction: 0,
+    ...brianConfig.options,
 
-    // Options inherited from Brian
-    acrossBackFactor: { pct: 97, min: 93, max: 100 },
-    armholeDepthFactor: { pct: 65, min: 50, max: 70 },
-    backNeckCutout: { pct: 5, min: 2, max: 8 },
-    bicepsEase: { pct: 8, min: 0, max: 20 },
-    chestEase: { pct: 8, min: -4, max: 20 },
+    // Brian overrides
     collarEase: { pct: 20, min: 10, max: 30 },
     cuffEase: { pct: 30, min: 20, max: 60 },
-    frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
     lengthBonus: { pct: 10, min: 5, max: 15 },
-    shoulderEase: { pct: 0.5, min: -2, max: 6 },
-    // s3 is short for Shoulder Seam Shift
-    s3Collar: { pct: 0, min: -100, max: 100 },
-    s3Armhole: { pct: 0, min: -100, max: 100 },
     sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
-    sleevecapEase: { pct: 0, min: 0, max: 10 },
-    sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
-    sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
-    sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
-    sleevecapBackFactorY: { pct: 33, min: 30, max: 65 },
-    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
-    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65 },
-    sleevecapQ1Offset: { pct: 3, min: 0, max: 7 },
-    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7 },
-    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7 },
-    sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
-    sleevecapQ1Spread1: { pct: 6, min: 4, max: 20 },
-    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20 },
-    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20 },
-    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20 },
-    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20 },
-    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
-    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
-    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
-    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
 
-    // Options specific to Yuri
+    // Yuri specific
     hipsEase: { pct: 0, min: 0, max: 10 },
   },
 }
+
+export default config

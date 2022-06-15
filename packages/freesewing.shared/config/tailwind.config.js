@@ -7,6 +7,7 @@ module.exports = {
     './pages/**/*.js',
     './components/*.js',
     './components/**/*.js',
+    './page-templates/*.js',
     '../freesewing.shared/components/**/*.js',
   ],
   plugins: [require('daisyui'), require('tailwindcss/nesting')],
@@ -17,5 +18,12 @@ module.exports = {
     utils: true,
     logs: true,
     rtl: false,
+  },
+  theme: {
+    extend: {
+      aspectRatio: {
+        '9/16': '9 / 16'
+      }
+    }
   }
 }

@@ -4,9 +4,15 @@ title: "Sleeve length bonus"
 
 The amount to extend the sleeve beyond the length of the sleeve in the base block.
 
-> #### Dit mag niet nul zijn<
-> 
-> Dit op nul zetten maakt de mouwlengte dezelfde als de basislengte van de Bent basisvorm, wat zeker te kort is voor een jas. Let op de standaardwaarde en gebruik dat als basis om de mouw korter of langer te maken.
+<Note>
+
+#### This is not supposed to be zero
+
+Setting this to zero will make the sleeve length the same as the base length of the Bent block,
+which is certainly too short for a coat.
+Let op de standaardwaarde en gebruik dat als basis om de mouw korter of langer te maken.
+
+</Note>
 
 ## Effect van deze optie op het patroon
 

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/i18n",
-  "version": "2.20.7",
+  "version": "2.21.0-alpha.0",
   "description": "Translations for the FreeSewing project",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -23,19 +23,18 @@
   ],
   "main": "dist/index.js",
   "scripts": {
+    "build": "node build.js",
+    "cibuild_step1": "node build.js",
     "clean": "rimraf dist",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
-    "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
-    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
-    "prebuild": "node src/prebuild.mjs"
+    "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
+    "vbuild": "VERBOSE=1 node build.js",
+    "prebuild": "node src/prebuild.mjs",
+    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/pattern-info": "^2.20.7"
+    "@freesewing/pattern-info": "^2.21.0-alpha.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -48,13 +47,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }

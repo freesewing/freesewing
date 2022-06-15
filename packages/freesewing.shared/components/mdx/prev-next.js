@@ -1,6 +1,8 @@
 import get from 'lodash.get'
 import orderBy from 'lodash.orderby'
 import Link from 'next/link'
+import LeftIcon from 'shared/components/icons/left.js'
+import RightIcon from 'shared/components/icons/right.js'
 
 // helper method to order nav entries
 const order = obj => orderBy(obj, ['__order', '__title'], ['asc', 'asc'])
@@ -27,7 +29,7 @@ const previous = app => {
     let next = false
     for (const node of aside.reverse()) {
       if (next) return node
-      if (node.__slug === app.slug) next = true
+      if (node?.__slug && node.__slug === app.slug) next = true
     }
   }
 
@@ -37,7 +39,7 @@ const previous = app => {
     let next = false
     for (const node of up.reverse()) {
       if (next) return node
-      if (node.__slug === app.slug.slice(0, node.__slug.length)) next = true
+      if (node?.__slug && node.__slug === app.slug.slice(0, node.__slug.length)) next = true
     }
   }
   return false
@@ -54,7 +56,7 @@ const next = app => {
     let next = false
     for (const node of aside) {
       if (next) return node
-      if (node.__slug === app.slug) next = true
+      if (node?.__slug && node.__slug === app.slug) next = true
     }
   }
 
@@ -64,7 +66,7 @@ const next = app => {
     let next = false
     for (const node of up) {
       if (next) return node
-      if (node.__slug === app.slug.slice(0, node.__slug.length)) next = true
+      if (node?.__slug && node.__slug === app.slug.slice(0, node.__slug.length)) next = true
     }
   }
   return false
@@ -72,9 +74,9 @@ const next = app => {
 
 const renderPrevious = node => node
   ? (
-    <div>
-      <span className="mr-2 text-3xl leading-3 opacity-60">&#x025C3;</span>
-      <Link href={'/'+node.__slug}>
+    <div className="flex flex-row gap-2 items-center">
+      <LeftIcon className="w-8 h-8"/>
+      <Link href={'/'+node?.__slug}>
         <a className="text-secondary">{node.__linktitle}</a>
       </Link>
     </div>
@@ -82,18 +84,18 @@ const renderPrevious = node => node
 
 const renderNext = node => node
   ? (
-    <div>
-      <Link href={'/'+node.__slug}>
-        <a>{node.__linktitle}</a>
+    <div className="flex flex-row gap-2 items-center">
+      <Link href={'/'+node?.__slug}>
+        <a className="text-right">{node.__linktitle}</a>
       </Link>
-      <span className="ml-2 text-3xl leading-3 opacity-60">&#x025B9;</span>
+      <RightIcon className="w-8 h-8"/>
     </div>
   ) : <span></span>
 
 const PrevNext = ({ app }) => {
 
   return (
-    <div className="flex flex-row justify-between border-t mt-12 py-2">
+    <div className="flex flex-row justify-between border-t mt-12 py-2 gap-8">
       {renderPrevious(previous(app))}
       {renderNext(next(app))}
     </div>

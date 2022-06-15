@@ -3,11 +3,11 @@
  * All edits will be overwritten on the next (pre)build
  */
 const themes = {
-  "lightTheme": "Light Theme",
-  "darkTheme": "Dark Theme",
-  "hax0rTheme": "Hax0r Theme",
-  "lgbtqTheme": "LGBTQ Theme",
-  "transTheme": "Trans Theme"
+  "lightTheme": "Helles Thema",
+  "darkTheme": "Dunkles Thema",
+  "hax0rTheme": "Hax0r Thema",
+  "lgbtqTheme": "LGBTQ Thema",
+  "transTheme": "Trans Thema"
 }
 
 export default themes

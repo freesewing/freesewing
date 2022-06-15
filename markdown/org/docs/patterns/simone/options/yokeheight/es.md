@@ -1,3 +1,7 @@
+- - -
+title: "Yoke height"
+- - -
+
 Controls the height of the yoke seam.
 
 - Increase this option to lower the height and lengthen the yoke

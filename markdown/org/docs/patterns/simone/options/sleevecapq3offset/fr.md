@@ -1,3 +1,7 @@
+- - -
+title: "Sleevecap Q3 offset"
+- - -
+
 ![Le décalage du troisième quadrant de la tête de manche](./sleevecapq3offset.svg)
 
 Cette option contrôle le décalage dans le troisième quadrant de la tête de manche.
@@ -9,4 +13,5 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 </Tip>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_sleevecapq3offset_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_sleevecapq3offset_sample.svg "Effect of this option on the pattern")

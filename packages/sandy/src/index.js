@@ -6,10 +6,14 @@ import draftSkirt from './skirt'
 import draftWaistband from './waistband'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Sandy = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftSkirt = (part) => draftSkirt(part)
-Pattern.prototype.draftWaistband = (part) => draftWaistband(part)
+Sandy.prototype.draftSkirt = (part) => draftSkirt(part)
+Sandy.prototype.draftWaistband = (part) => draftWaistband(part)
 
-export default Pattern
+// Named exports
+export { config, Sandy }
+
+// Default export
+export default Sandy

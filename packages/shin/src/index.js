@@ -7,11 +7,15 @@ import draftFront from './front'
 import draftWaistband from './waistband'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Shin = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBack = draftBack
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftWaistband = draftWaistband
+Shin.prototype.draftBack = draftBack
+Shin.prototype.draftFront = draftFront
+Shin.prototype.draftWaistband = draftWaistband
 
-export default Pattern
+// Named exports
+export { config, Shin }
+
+// Default export
+export default Shin

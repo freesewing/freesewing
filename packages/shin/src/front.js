@@ -120,6 +120,12 @@ export default function (part) {
       nr: 2,
       title: 'front',
     })
+    points.grainlineFrom = points.seatCb.shift(180, 30)
+    points.grainlineTo = points.hipCb.shift(180, 30)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
     if (sa) {
       paths.sa = paths.hemBase
         .offset(3 * sa)

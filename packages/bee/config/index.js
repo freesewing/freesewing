@@ -1,8 +1,10 @@
-import pkg from '../package.json'
+import { version } from '../package.json'
+import configHelpers from '@freesewing/config-helpers'
+const { pctBasedOn } = configHelpers
 
 export default {
+  version,
   name: 'bee',
-  version: pkg.version,
   design: 'PrudenceRabbit',
   code: 'bobgeorgethe3rd',
   department: 'tops',
@@ -36,7 +38,14 @@ export default {
     advanced: [
       { bellaDarts: ['backDartHeight'] },
       { bellaArmhole: ['armholeDepth', 'frontArmholePitchDepth'] },
-      { bellaAdvanced: ['frontShoulderWidth', 'fullChestEaseReduction', 'highBustWidth', 'shoulderToShoulderEase'] },
+      {
+        bellaAdvanced: [
+          'frontShoulderWidth',
+          'fullChestEaseReduction',
+          'highBustWidth',
+          'shoulderToShoulderEase',
+        ],
+      },
     ],
   },
   measurements: [

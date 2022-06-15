@@ -1,22 +1,21 @@
 import React from 'react'
-import { strings } from '@freesewing/i18n'
+import { useTranslation } from 'next-i18next'
 
 const Text = (props) => {
-  let text = []
+  const { t } = useTranslation(['plugin'])
+  const text = []
   // Handle translation
   let translated = ''
   for (let string of props.point.attributes.getAsArray('data-text')) {
-    if (strings[props.language]['plugin.' + string])
-      translated += strings[props.language]['plugin.' + string]
-    else translated += string.toString().replace(/&quot;/g, '"')
-    translated += ' '
+      translated += t(string)
+      translated += ' '
   }
   // Handle muti-line text
   if (translated.indexOf('\n') !== -1) {
     let key = 0
-    let lines = translated.split('\n')
+    const lines = translated.split('\n')
     text.push(<tspan key={'tspan-' + key}>{lines.shift()}</tspan>)
-    for (let line of lines) {
+    for (const line of lines) {
       key++
       text.push(
         <tspan

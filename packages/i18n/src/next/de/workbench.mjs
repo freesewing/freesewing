@@ -3,13 +3,13 @@
  * All edits will be overwritten on the next (pre)build
  */
 const workbench = {
-  "designOptions": "Design options",
-  "forPrinting": "For printing",
-  "forCutting": "For cutting",
+  "designOptions": "Designoptionen",
+  "forPrinting": "Zum Drucken",
+  "forCutting": "Zum Schneiden",
   "layoutThing": "Layout {thing}",
-  "pageSize": "Page size",
-  "startBySelectingAThing": "Start by selecting a {thing}",
-  "testThing": "Test {thing}"
+  "pageSize": "Seitengröße",
+  "startBySelectingAThing": "Beginne mit der Auswahl eines {thing}",
+  "testThing": "{thing} testen"
 }
 
 export default workbench

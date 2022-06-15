@@ -13,24 +13,28 @@ import draftPocketWelt from './pocketwelt'
 import draftPocketWeltInterfacing from './pocketweltinterfacing'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Paco = new freesewing.Design(config, plugins)
 
 // Attach Titan draft methods to prototype
-Pattern.prototype.draftTitanBack = function (part) {
+Paco.prototype.draftTitanBack = function (part) {
   return new Titan(this.settings).draftBack(part)
 }
-Pattern.prototype.draftTitanFront = function (part) {
+Paco.prototype.draftTitanFront = function (part) {
   return new Titan(this.settings).draftFront(part)
 }
 
 // Attach own draft methods to prototype
-Pattern.prototype.draftBack = (part) => draftBack(part)
-Pattern.prototype.draftFront = (part) => draftFront(part)
-Pattern.prototype.draftWaistband = (part) => draftWaistband(part)
-Pattern.prototype.draftCuff = (part) => draftCuff(part)
-Pattern.prototype.draftPocketBagFront = (part) => draftPocketBagFront(part)
-Pattern.prototype.draftPocketBagBack = (part) => draftPocketBagBack(part)
-Pattern.prototype.draftPocketWelt = (part) => draftPocketWelt(part)
-Pattern.prototype.draftPocketWeltInterfacing = (part) => draftPocketWeltInterfacing(part)
+Paco.prototype.draftBack = (part) => draftBack(part)
+Paco.prototype.draftFront = (part) => draftFront(part)
+Paco.prototype.draftWaistband = (part) => draftWaistband(part)
+Paco.prototype.draftCuff = (part) => draftCuff(part)
+Paco.prototype.draftPocketBagFront = (part) => draftPocketBagFront(part)
+Paco.prototype.draftPocketBagBack = (part) => draftPocketBagBack(part)
+Paco.prototype.draftPocketWelt = (part) => draftPocketWelt(part)
+Paco.prototype.draftPocketWeltInterfacing = (part) => draftPocketWeltInterfacing(part)
 
-export default Pattern
+// Named exports
+export { config, Paco }
+
+// Default export
+export default Paco

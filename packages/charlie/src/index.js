@@ -21,28 +21,32 @@ import draftFlyExtension from './fly-extension'
 import draftBeltLoops from './beltloops'
 
 // Create design
-const Pattern = new freesewing.Design(config, [plugins, mirrorPlugin, buttonsPlugin, bartackPlugin])
+const Charlie = new freesewing.Design(config, [plugins, mirrorPlugin, buttonsPlugin, bartackPlugin])
 
 // Attach titan draft methods to prototype
 for (let p of ['Front', 'Back']) {
-  Pattern.prototype[`draftTitan${p}`] = function (part) {
+  Charlie.prototype[`draftTitan${p}`] = function (part) {
     return new Titan(this.settings)[`draft${p}`](part)
   }
 }
 
 // Attach charlie draft methods to prototype
-Pattern.prototype.draftBack = (part) => draftBack(part)
-Pattern.prototype.draftFront = (part) => draftFront(part)
-Pattern.prototype.draftWaistband = (part) => draftWaistband(part)
-Pattern.prototype.draftWaistbandCurved = (part) => draftWaistbandCurved(part)
-Pattern.prototype.draftFrontPocket = (part) => draftFrontPocket(part)
-Pattern.prototype.draftFrontPocketFacing = (part) => draftFrontPocketFacing(part)
-Pattern.prototype.draftBackPocket = (part) => draftBackPocket(part)
-Pattern.prototype.draftBackPocketFacing = (part) => draftBackPocketFacing(part)
-Pattern.prototype.draftBackPocketInterfacing = (part) => draftBackPocketInterfacing(part)
-Pattern.prototype.draftBackPocketJet = (part) => draftBackPocketJet(part)
-Pattern.prototype.draftFlyFacing = (part) => draftFlyFacing(part)
-Pattern.prototype.draftFlyExtension = (part) => draftFlyExtension(part)
-Pattern.prototype.draftBeltLoops = (part) => draftBeltLoops(part)
+Charlie.prototype.draftBack = (part) => draftBack(part)
+Charlie.prototype.draftFront = (part) => draftFront(part)
+Charlie.prototype.draftWaistband = (part) => draftWaistband(part)
+Charlie.prototype.draftWaistbandCurved = (part) => draftWaistbandCurved(part)
+Charlie.prototype.draftFrontPocket = (part) => draftFrontPocket(part)
+Charlie.prototype.draftFrontPocketFacing = (part) => draftFrontPocketFacing(part)
+Charlie.prototype.draftBackPocket = (part) => draftBackPocket(part)
+Charlie.prototype.draftBackPocketFacing = (part) => draftBackPocketFacing(part)
+Charlie.prototype.draftBackPocketInterfacing = (part) => draftBackPocketInterfacing(part)
+Charlie.prototype.draftBackPocketJet = (part) => draftBackPocketJet(part)
+Charlie.prototype.draftFlyFacing = (part) => draftFlyFacing(part)
+Charlie.prototype.draftFlyExtension = (part) => draftFlyExtension(part)
+Charlie.prototype.draftBeltLoops = (part) => draftBeltLoops(part)
 
-export default Pattern
+// Named exports
+export { config, Charlie }
+
+// Default export
+export default Charlie

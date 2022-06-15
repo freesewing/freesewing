@@ -1,6 +1,6 @@
 {
   "name": "freesewing.shared",
-  "version": "2.20.7",
+  "version": "2.21.0-alpha.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3002",
@@ -18,10 +18,13 @@
     "d3-drag": "^3.0.0",
     "d3-selection": "^3.0.0",
     "daisyui": "^2.0.6",
+    "feed": "^4.2.2",
     "file-saver": "^2.0.5",
+    "front-matter": "^4.0.2",
     "highlight.js": "^11.4.0",
     "lodash.orderby": "^4.6.0",
     "lodash.unset": "^4.5.2",
+    "mdast-util-toc": "^6.1.0",
     "react-markdown": "^8.0.0",
     "react-sizeme": "^3.0.2",
     "react-timeago": "^6.2.1",

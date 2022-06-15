@@ -8,7 +8,7 @@ const o_lunetius = {
   "widthRatio.t": "Breitenverhältnis",
   "widthRatio.d": "Steuert die Breite des Kleidungsstückes",
   "length.t": "Länge",
-  "length.d": "Choose from the different length styles"
+  "length.d": "Wähle zwischen verschiedenen Längenarten"
 }
 
 export default o_lunetius

@@ -74,8 +74,9 @@ const asideClasses = `
   overflow-y-scroll
   z-20
   bg-base-100 text-base-content
-  sm:bg-neutral sm:bg-opacity-95 sm:text-neutral-content
-  transition-all `
+  transition-all
+  xl:w-1/4
+`
 
 
 const DefaultLayout = ({
@@ -110,53 +111,58 @@ const DefaultLayout = ({
     bg-base-100
     `}>
       <Header app={app} setSearch={setSearch} />
-      <main className={`
-        grow flex flex-row
-        gap-2
-        ${!workbench ? 'lg:gap-8 xl:gap-16' : ''}
-      `}>
-        <aside className={`
-          ${asideClasses}
-          ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
-          sm:flex-row-reverse
-          ${workbench && collapsePrimaryNav
-            ? 'sm:px-0 sm:w-16'
-            : 'sm:px-1 md:px-4 lg:px-8 sm:w-[38.2%]'
-          }
-        `}>
-          {workbench && (
-            <div className={`hidden sm:flex`}>
-              <button
-                className="text-secondary-focus h-full px-2 pl-4 hover:animate-pulse"
-                onClick={() => setCollapsePrimaryNav(!collapsePrimaryNav)}
-              >
-                {collapsePrimaryNav
-                  ? <><Right /><Right /><Right /></>
-                  : <><Left /><Left /><Left /></>
-                }
-              </button>
-            </div>
-          )}
-          <PrimaryNavigation app={app} active={slug}/>
-        </aside>
-        <section className={`
-          p-4 pt-24 sm:pt-28 w-full
-          sm:px-1 md:px-4 lg:px-8
-          ${workbench && collapsePrimaryNav
-            ? ''
-            : 'max-w-61.8%'
-          }
-        `}>
-          <div className={workbench ? '' : "max-w-5xl"}>
-            {title && (
-              <>
-                <Breadcrumbs app={app} slug={slug} title={title} />
-                <PageTitle app={app} slug={slug} title={title} />
-              </>
+      <main className="grow bg-base-100">
+        <div className="m-auto flex flex-row justify-center">
+
+          <aside className={`
+            ${asideClasses}
+            ${app.primaryMenu ? '' : 'translate-x-[-100%]'} transition-transform
+            sm:flex-row-reverse
+            ${workbench && collapsePrimaryNav
+              ? 'sm:px-0 sm:w-16'
+              : 'sm:px-1 md:px-4 lg:px-8'
+            }
+            w-96
+          `}>
+            {workbench && (
+              <div className={`hidden sm:flex`}>
+                <button
+                  className="text-secondary-focus h-full px-2 pl-4 hover:animate-pulse"
+                  onClick={() => setCollapsePrimaryNav(!collapsePrimaryNav)}
+                >
+                  {collapsePrimaryNav
+                    ? <><Right /><Right /><Right /></>
+                    : <><Left /><Left /><Left /></>
+                  }
+                </button>
+              </div>
             )}
-            {children}
+            <PrimaryNavigation app={app} active={slug}/>
+          </aside>
+
+          <div className="p-0 m-0 bg-base-100">
+            <section className={`
+              p-4 pt-24 sm:pt-28
+              sm:px-1 md:px-4 lg:px-8
+              ${workbench && collapsePrimaryNav
+                ? ''
+                : 'max-w-7xl'
+              }
+            `}>
+              <div>
+                {title && (
+                  <>
+                    <Breadcrumbs app={app} slug={slug} title={title} />
+                    <PageTitle app={app} slug={slug} title={title} />
+                  </>
+                )}
+                {children}
+              </div>
+            </section>
           </div>
-        </section>
+
+        </div>
+
         {workbench && AltMenu && (
           <aside className={`
             ${asideClasses}

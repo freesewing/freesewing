@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const freesewing = require("./dist");
+const freesewing = require("../dist/index.js");
 const round = freesewing.utils.round;
 
 it("Should offset a line", () => {

@@ -2,7 +2,7 @@
 title: Wir haben hierfür ein Github-Issue erstellt
 ---
 
-Du kannst dieses Issue abonnieren oder dort einen Kommentar hinterlassen, um uns mehr über das Problem zu berichten.  
-Dafür brauchst du aber einen (kostenlosen) GitHub-Account.
+You can subscribe to this issue, or comment on it if you'd like to share more information.\
+Doing so requires a Github account, but they are free.
 
 **Tip:** Ein aktives Issue -- eines mit Abonnenten oder Kommentaren -- bekommt mehr Aufmerksamkeit.

@@ -1,10 +1,154 @@
 Unreleased:
 
+  Added:
+    config-helpers:
+      - This new package replaces the previous snapseries package
+        and adds extra helper methods for pattern config such as
+        `pctBasedOn()` which was previously exported by core
+
+  Changed:
+    aaron: &esbuild
+      - Migrated from Rollup to Esbuild for all builds
+    albert: *esbuild
+    bee: *esbuild
+    bella: *esbuild
+    benjamin: *esbuild
+    bent: *esbuild
+    breanna: *esbuild
+    brian: *esbuild
+    bruce: *esbuild
+    carlita: *esbuild
+    carlton: *esbuild
+    cathrin: *esbuild
+    charlie: *esbuild
+    components: *esbuild
+    core:
+      - Migrated from Rollup to Esbuild for all builds
+      - The `pctBasedOn()` helper method for pattern config was moved to config-helpers
+        We did not make this a breaking change since it's only used internally.
+    cornelius: *esbuild
+    diana: *esbuild
+    examples: *esbuild
+    florence: *esbuild
+    florent: *esbuild
+    gatsby-remark-jargon: *esbuild
+    holmes: *esbuild
+    hortensia: *esbuild
+    huey: *esbuild
+    hugo: *esbuild
+    i18n: *esbuild
+    jaeger: *esbuild
+    legend: *esbuild
+    lucy: *esbuild
+    lunetius: *esbuild
+    models: *esbuild
+    mui-theme: *esbuild
+    paco: *esbuild
+    pattern-info: *esbuild
+    penelope: *esbuild
+    plugin-banner: *esbuild
+    plugin-bartack: *esbuild
+    plugin-bundle: *esbuild
+    plugin-bust: *esbuild
+    plugin-buttons: *esbuild
+    plugin-cutonfold: *esbuild
+    plugin-dimension: *esbuild
+    plugin-export-dxf: *esbuild
+    plugin-flip: *esbuild
+    plugin-gore: *esbuild
+    plugin-grainline: *esbuild
+    plugin-i18n: *esbuild
+    plugin-logo: *esbuild
+    plugin-measurements: *esbuild
+    plugin-mirror: *esbuild
+    plugin-notches: *esbuild
+    plugin-round: *esbuild
+    plugin-scalebox: *esbuild
+    plugin-sprinkle: *esbuild
+    plugin-svgattr: *esbuild
+    plugintest: *esbuild
+    plugin-theme: *esbuild
+    plugin-title: *esbuild
+    plugin-validate: *esbuild
+    plugin-versionfree-svg: *esbuild
+    remark-jargon: *esbuild
+    rendertest: *esbuild
+    sandy: *esbuild
+    shin: *esbuild
+    simon: *esbuild
+    simone: *esbuild
+    sven: *esbuild
+    tamiko: *esbuild
+    teagan: *esbuild
+    theo: *esbuild
+    tiberius: *esbuild
+    titan: *esbuild
+    trayvon: *esbuild
+    tutorial: *esbuild
+    ursula: *esbuild
+    utils: *esbuild
+    wahid: *esbuild
+    walburga: *esbuild
+    waralee: *esbuild
+    yuri: *esbuild
+
+  Fixed:
+    hugo:
+      - Fix incorrect seam allowance
+        Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
+    i18n:
+      - Added missing lab namespace for English
+    simon:
+      - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
+    simone:
+      - Added the frontdarts option back after it was (accidentally) removed
+      - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
+    teagan:
+      - Added missing name to config file
+
+2.20.8:
+  date: 2022-05-21
+
+  Added:
+    brian:
+      - Set `sleevecapHeight` value in store
+
+  Changed:
+    brian:
+      - Better defaults for sleevecap and armhole depth
+    huey:
+      - Better defaults for sleevecap and armhole depth
+      - Huey now extends the Brian config
+    simon:
+      - Better defaults for sleevecap and armhole depth
+      - Slightly higher collar vs collar stand
+      - Simon now extends the Brian config
+    simone:
+      - Better defaults for sleevecap and armhole depth
+      - Slightly higher collar vs collar stand
+      - Simone now extends the Simon config
+    sven:
+      - Better defaults for sleevecap and armhole depth
+      - Sven now extends the Brian config
+    teagan:
+      - Better defaults for sleevecap and armhole depth
+      - Teagan now extends the Brian config
+    yuri:
+      - Better defaults for sleevecap and armhole depth
+      - Yuri now extends the Brian config
+
   Fixed:
     brian:
       - Adde both front and back armhole pitch points
         Closes [#2057](https://github.com/freesewing/freesewing/issues/2057)
-
+      - Fixed issue with the sleeve length
+    core:
+      - Fixed warning message when moving to a non-existing point
+      - Fixed incorrect decision in Path.boundary()
+    simon:
+      - Fixed issue with the sleeve length
+    simone:
+      - Fixed issue with the sleeve length
     components:
       - Fix restore of pattern defaults in draft configurator
         Closes [#1932](https://github.com/freesewing/freesewing/issues/1932)

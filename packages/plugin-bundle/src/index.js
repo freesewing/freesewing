@@ -15,7 +15,7 @@ import sprinkle from '@freesewing/plugin-sprinkle'
 import measurements from '@freesewing/plugin-measurements'
 import pkg from '../package.json'
 
-const bundle = [
+const bundledPlugins = [
   banner,
   bartack,
   buttons,
@@ -34,7 +34,7 @@ const bundle = [
 
 function bundleHooks() {
   let hooks = {}
-  for (let plugin of bundle) {
+  for (let plugin of bundledPlugins) {
     for (let i in plugin.hooks) {
       if (typeof hooks[i] === 'undefined') hooks[i] = []
       let hook = plugin.hooks[i]
@@ -50,16 +50,38 @@ function bundleHooks() {
 
 function bundleMacros() {
   let macros = {}
-  for (let plugin of bundle) {
+  for (let plugin of bundledPlugins) {
     for (let i in plugin.macros) macros[i] = plugin.macros[i]
   }
 
   return macros
 }
 
-export default {
+const bundle = {
   name: pkg.name,
   version: pkg.version,
   hooks: bundleHooks(),
   macros: bundleMacros(),
 }
+
+// Named exports
+export {
+  banner,
+  bartack,
+  buttons,
+  cutonfold,
+  dimension,
+  grainline,
+  logo,
+  mirror,
+  notches,
+  title,
+  scalebox,
+  round,
+  sprinkle,
+  measurements,
+  bundle
+}
+
+// Default export
+export default bundle

@@ -1,4 +1,5 @@
 import CopyToClipboard from 'shared/components/copy-to-clipboard'
+import Dot from './dot.js'
 
 const names = {
   js: 'javascript',
@@ -10,14 +11,15 @@ const names = {
 
 const Highlight = (props) => {
 
-  const language = props.language
-    ? props.language
-    : props.children
-    ? props.children.props.className.split('-').pop()
-    : 'txt'
+  let language = 'txt'
+  if (props.language) language = props.language
+  if (props.children?.props?.className) {
+    language = props.children.props.className.split('-').pop()
+  }
+  if (language === 'dot') return <Dot>{props.children}</Dot>
 
   const preProps = {
-    className: `language-${language} hljs text-base lg:text-lg whitespace-pre-wrap break-words`
+    className: `language-${language} hljs text-base lg:text-lg whitespace-pre-wrap break-all`
   }
   if (props.raw) preProps.dangerouslySetInnerHTML = { __html: props.raw }
 

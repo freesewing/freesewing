@@ -1,7 +1,8 @@
 import chai from 'chai'
 import freesewing from '@freesewing/core'
 import plugin from '../dist/index.mjs'
-import { strings } from '@freesewing/i18n'
+import i18n from '@freesewing/i18n'
+const strings = i18n.strings
 
 const expect = chai.expect
 

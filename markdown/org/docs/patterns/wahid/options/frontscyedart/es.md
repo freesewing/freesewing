@@ -1,3 +1,6 @@
+- - -
+title: "Front scye dart"
+- - -
 
 Este patrón viene con un dart de guinda predeterminado de 1 cm (piense en la oscuridad del orificio) en el frente.
 
@@ -9,6 +12,6 @@ Puedes aumentar o disminuir el dardo para influir en el agujero de armadura.
 
 > Mientras que este dardo se utiliza para dar forma al patrón, no es necesario coser el dardo porque está incorporado en el dardo.
 
-
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_frontscyedart_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](wahid_frontscyedart_sample.svg "Effect of this option on the pattern")

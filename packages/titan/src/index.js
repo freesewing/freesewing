@@ -6,10 +6,14 @@ import draftBack from './back'
 import draftFront from './front'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Titan = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBack = (part) => draftBack(part)
-Pattern.prototype.draftFront = (part) => draftFront(part)
+Titan.prototype.draftBack = (part) => draftBack(part)
+Titan.prototype.draftFront = (part) => draftFront(part)
 
-export default Pattern
+// Named exports
+export { config, Titan }
+
+// Default export
+export default Titan

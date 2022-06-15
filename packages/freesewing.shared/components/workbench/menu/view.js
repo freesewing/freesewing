@@ -8,54 +8,54 @@ const View = props => {
     {
       name: 'measurements',
       title: t('measurements'),
-      onClick: () => props.updateGist(['_state', 'view'], 'measurements')
+      onClick: () => props.updateGist(['_state', 'view'], 'measurements', true)
     },
     {
       name: 'draft',
       title: t('draftPattern', { pattern: props.pattern.config.name }),
-      onClick: () => props.updateGist(['_state', 'view'], 'draft')
+      onClick: () => props.updateGist(['_state', 'view'], 'draft', true)
     },
     {
       name: 'test',
       title: t('testPattern', { pattern: props.pattern.config.name }),
-      onClick: () => props.updateGist(['_state', 'view'], 'test')
+      onClick: () => props.updateGist(['_state', 'view'], 'test', true)
     },
     {
       name: 'printingLayout',
       title: t('layoutThing', { thing: props.pattern.config.name })
        + ': ' + t('forPrinting'),
-      onClick: () => props.updateGist(['_state', 'view'], 'printingLayout')
+      onClick: () => props.updateGist(['_state', 'view'], 'printingLayout', true)
     },
     {
       name: 'cuttingLayout',
       title: t('layoutThing', { thing: props.pattern.config.name })
        + ': ' + t('forCutting'),
-      onClick: () => props.updateGist(['_state', 'view'], 'cuttingLayout')
+      onClick: () => props.updateGist(['_state', 'view'], 'cuttingLayout', true)
     },
     {
       name: 'export',
       title: t('exportThing', { thing: props.pattern.config.name }),
-      onClick: () => props.updateGist(['_state', 'view'], 'export')
+      onClick: () => props.updateGist(['_state', 'view'], 'export', true)
     },
     {
       name: 'events',
       title: t('events'),
-      onClick: () => props.updateGist(['_state', 'view'], 'events')
+      onClick: () => props.updateGist(['_state', 'view'], 'events', true)
     },
     {
       name: 'yaml',
       title: t('YAML'),
-      onClick: () => props.updateGist(['_state', 'view'], 'yaml')
+      onClick: () => props.updateGist(['_state', 'view'], 'yaml', true)
     },
     {
       name: 'json',
       title: t('JSON'),
-      onClick: () => props.updateGist(['_state', 'view'], 'json')
+      onClick: () => props.updateGist(['_state', 'view'], 'json', true)
     },
     {
       name: 'edit',
       title: t('editThing', { thing: 'YAML' }),
-      onClick: () => props.updateGist(['_state', 'view'], 'edit')
+      onClick: () => props.updateGist(['_state', 'view'], 'edit', true)
     },
     {
       name: 'clear',
@@ -71,7 +71,7 @@ const View = props => {
         hover:cursor-row-resize
         p-2
         text-base-content
-        sm:text-neutral-content
+        sm:text-base-content
         items-center
       `}>
         <span className="text-secondary-focus mr-4"><MenuIcon /></span>
@@ -93,7 +93,7 @@ const View = props => {
               capitalize
               ${entry.name === props.gist?._state?.view
                 ? 'text-secondary border-secondary sm:text-secondary-focus sm:border-secondary-focus'
-                : 'text-base-content sm:text-neutral-content'
+                : 'text-base-content sm:text-base-content'
               }
             `} onClick={entry.onClick}>
               <span className={`

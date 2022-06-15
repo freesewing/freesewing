@@ -41,7 +41,7 @@ Thankfully, there's macros that can help you with that, specifically:
 - The `ld` macro adds a linear dimension
 - The `pd` macro adds a path dimension that follows a given path
 
-<Note> The documentation, as always, holds [all the information about the macros](/reference/macros/). </Note>
+<Note> The documentation, as always, holds [all the information about the macros](/reference/api/macros/). </Note>
 
 Let's look at the code:
 

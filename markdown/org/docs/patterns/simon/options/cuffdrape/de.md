@@ -1,3 +1,7 @@
+- - -
+title: "Cuff drape"
+- - -
+
 ![Manschette drapieren](cuffdrape.svg)
 
 Wie sehr das Ende des Ärmels ist größer als der Handgelenk.
@@ -13,4 +17,4 @@ Das Drape wird mit Falten in die Manschette gearbeitet.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_cuffdrape_sample.svg "Effekt dieser Option auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_cuffdrape_sample.svg "Effect of this option on the pattern")

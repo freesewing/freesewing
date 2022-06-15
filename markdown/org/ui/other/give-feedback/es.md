@@ -11,4 +11,3 @@ Nos encantaría escuchar tu opinión sobre lo que te gusta (u odias) de FreeSewi
 Por favor [únete a nuestra sala de chat](https://discord.freesewing.org/) y comparte tus pensamientos.
 
 </Note>
-

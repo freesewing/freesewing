@@ -28,10 +28,10 @@ customReadme:
   - freesewing.shared
   - freesewing.org
   - svgtopdf
-customRollup:
+customBuild:
   - backend
   - components
-  - core
+  - create-freesewing-pattern
   - css-theme
   - freesewing.dev
   - freesewing.lab
@@ -39,17 +39,13 @@ customRollup:
   - freesewing.org
   - gatsby-remark-jargon
   - i18n
+  - models
   - prettier-config
   - remark-jargon
   - strapi
   - svgtopdf
+  - plugin-bundle
   - utils
-namedExports:
-  - css-theme
-  - models
-  - pattern-info
-  - mui-theme
-  - snapseries
 packageJson:
   backend:
     private: true
@@ -97,8 +93,14 @@ packageJson:
     module: '!'
   freesewing.dev:
     private: true
+  freesewing.lab:
+    private: true
   freesewing.org:
     private: true
+  freesewing.shared:
+    private: true
+  hi:
+    author: woutervdub (https://github.com/woutervdub)
   holmes:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
@@ -111,6 +113,8 @@ packageJson:
       - jargon
       - gatsby
       - gatsby-plugin
+  lucy:
+    author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
   plugin-gore:

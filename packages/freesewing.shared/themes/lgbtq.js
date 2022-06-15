@@ -21,7 +21,7 @@ module.exports = {
 
   'neutral': colors.neutral['900'],
   'neutral-focus': colors.neutral['700'],
-  'neutral-content': colors.neutral['200'],
+  'neutral-content': colors.yellow['50'],
 
   'info': colors.pink['400'],
   'success': colors.green['600'],
@@ -29,19 +29,19 @@ module.exports = {
   'error': colors.red['600'],
 
   '--theme-gradient': `repeating-linear-gradient(
-    -45deg,
-    ${colors.red[500]},
-    ${colors.red[500]} 20px,
-    ${colors.orange[500]} 20px,
-    ${colors.orange[500]} 40px,
-    ${colors.yellow[400]} 40px,
-    ${colors.yellow[400]} 60px,
-    ${colors.green[500]} 60px,
-    ${colors.green[500]} 80px,
-    ${colors.blue[500]} 80px,
-    ${colors.blue[500]} 100px,
-    ${colors.violet[500]} 100px,
-    ${colors.violet[500]} 120px
+     90deg,
+     ${colors.red[500]},
+     ${colors.red[500]} 16.66%,
+     ${colors.orange[500]} 16.66%,
+     ${colors.orange[500]} 33.33%,
+     ${colors.yellow[400]} 33.33%,
+     ${colors.yellow[400]} 50%,
+     ${colors.green[500]} 50%,
+     ${colors.green[500]} 66.66%,
+     ${colors.blue[500]} 66.66%,
+     ${colors.blue[500]} 83.33%,
+     ${colors.violet[500]} 83.33%,
+     ${colors.violet[500]} 100%
   )`,
 
   '--code-background-color': colors.neutral['800'],

@@ -1,11 +1,12 @@
 {
   "name": "freesewing.lab",
-  "version": "2.20.7",
+  "version": "2.21.0-alpha.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3002",
     "develop": "next dev -p 3002",
     "prebuild": "cd ../utils && npm run build && cd - && SITE=lab node ../freesewing.shared/prebuild/index.mjs",
+    "cibuild": "yarn prebuild && next build",
     "build": "next build",
     "export": "yarn prebuild && next build && next export",
     "start": "next start -p 3002",
@@ -29,7 +30,7 @@
     "lodash.get": "^4.4.2",
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
-    "netlify-cli": "^9.4.0",
+    "netlify-cli": "^10.3.3",
     "next": "latest",
     "next-i18next": "^11.0.0",
     "react-copy-to-clipboard": "^5.0.4",
@@ -43,17 +44,16 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.20.7"
+    "remark-jargon": "^2.21.0-alpha.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "eslint-config-next": "12.1.5",
+    "eslint-config-next": "12.1.6",
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1"
   },
-  "engines": {
-    "node": ">=14.18.1"
-  },
-  "browserslist": [ "last 2 versions" ]
+  "browserslist": [
+    "last 2 versions"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-i18n",
-  "version": "2.20.7",
+  "version": "2.21.0-alpha.0",
   "description": "A FreeSewing plugin for pattern translation",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -27,32 +27,23 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
+    "build": "node build.js",
+    "cibuild_step1": "node build.js",
     "clean": "rimraf dist",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
-    "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
-    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
-    "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'"
+    "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
+    "vbuild": "VERBOSE=1 node build.js",
+    "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'",
+    "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.20.7"
+    "@freesewing/core": "^2.21.0-alpha.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "^9.1.1",
-    "chai": "^4.2.0",
-    "@babel/core": "^7.11.0",
-    "@babel/register": "^7.10.5",
-    "rollup": "^2.50.6",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "chai": "^4.2.0"
   },
   "files": [
     "dist/*",
@@ -61,13 +52,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }

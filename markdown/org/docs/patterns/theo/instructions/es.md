@@ -69,7 +69,11 @@ If you are going to line your trousers (it's optional), you'll need to finish th
 
 Note that you only need to do this for those edges of your lining that are not caught in a seam. In other words, only the bottom edge of your lining.
 
-> Si no tienes escarchas pellizcas, puedes aplicar otro acabado como un zig-zag o usar un serger. Sin embargo, los fragmentos rosados son los mejores para este escenario porque no añaden ningún grueso, que es importante porque queremos evitar el borde del revestimiento haciendo un bache en sus pantalones.
+<Tip>
+
+Si no tienes escarchas pellizcas, puedes aplicar otro acabado como un zig-zag o usar un serger. Sin embargo, los fragmentos rosados son los mejores para este escenario porque no añaden ningún grueso, que es importante porque queremos evitar el borde del revestimiento haciendo un bache en sus pantalones.
+
+</Tip>
 
 ### Paso 5: Recortar piezas para slant del bolsillo frontal
 
@@ -85,7 +89,11 @@ Now trim back the front piece (it should lie on the bottom) 3cm outwards from th
 
 Finally, trim back your lining so that it stops 0.5 cm short of reaching the edge of your front.
 
-> El revestimiento es un poco más corto de modo que cuando se dobla, no se muestra. Pero realmente no es tan importante conseguir exactamente 0,5 cm más corto.
+<Tip>
+
+El revestimiento es un poco más corto de modo que cuando se dobla, no se muestra. Pero realmente no es tan importante conseguir exactamente 0,5 cm más corto.
+
+</Tip>
 
 ### Paso 6: Doble hacia atrás y coser slant del bolsillo frontal
 
@@ -97,9 +105,17 @@ You are going to sew along the pocket slant, but make sure to flip everything ov
 
 Topstitch a 0.5 cm from the fold, making sure to keep it parallel and not stretch your fabric.
 
-> Esta parte superior estará siempre en el espectáculo, así que asegúrese de coincidir con el color del hilo y hacerlo bonito.
+<Tip>
 
-> Para evitar que sus bolsillos salgan corriendo, puede colocar una pieza de cinta sin estirar entre el pliegue. Cuando se une, también se capturará esta cinta, evitando que el bolsillo salga.
+Esta parte superior estará siempre en el espectáculo, así que asegúrese de coincidir con el color del hilo y hacerlo bonito.
+
+</Tip>
+
+<Tip>
+ 
+Para evitar que sus bolsillos salgan corriendo, puede colocar una pieza de cinta sin estirar entre el pliegue. Cuando se une, también se capturará esta cinta, evitando que el bolsillo salga.
+
+</Tip>
 
 ### Paso 7: Finalizar borde dentro del bolsillo frontal
 
@@ -115,9 +131,13 @@ Zig-zag the edge of the folded-back front piece to finish it and secure it to th
 
 When you're done, place front piece, lining and pocket bag flat, and give it a good press.
 
-> Puede que sea un buen momento para recordarles que cada paso hasta este punto tenía que hacerse por ambas piernas.
-> 
-> Es sólo un recordatorio amistoso, los siguientes pasos deben hacerse también para ambas piernas.
+<Tip>
+  
+Puede que sea un buen momento para recordarles que cada paso hasta este punto tenía que hacerse por ambas piernas.
+
+Es sólo un recordatorio amistoso, los siguientes pasos deben hacerse también para ambas piernas.
+
+</Tip>
 
 ### Paso 9: Adjuntar pieza lateral a bolsa de bolsa
 
@@ -139,13 +159,16 @@ Pin all pieces together making sure to stay about the bottom curve of the pocket
 
 When everything is pinned together, fold away the front piece and lining, and close the bottom curve of the pocket bag.
 
-> Subir a la curva inferior de la bolsa de bolsa hasta el punto en que alcanzó la pieza lateral
+<Tip>
 
-> Puedes terminar la bolsa de bolsillo de varias maneras, incluyendo:
-> 
-> - Servir juntos a los lados
-> - Termina el borde con cintura sesgada
-> - Difunde los lados juntos y termina el borde con una unión zig-zag
+Sew to bottom curve of the pocket bag up until the point where it reached the side piece
+
+You can finish the pocket bag in a number of ways, including:
+ - Serge the sides together
+ - Finish the edge with bias tape
+ - Sew the sides together and finish the edge with a zig-zag stitch
+
+</Tip>
 
 ### Paso 11: Presione el bolsillo frontal
 
@@ -165,7 +188,11 @@ Pin the pocket down to the front piece along the slant and the edges of the pock
 
 Before we are going to sew the side seams, finish the side edges by serging or running a zig-zag stitch along the sides of your front and back pieces, making sure to stay within the foreseen seam allowance.
 
-> Asegúrese de incluir los bordes de la bolsa de forro y bolsa, ya que esto evitará que las cosas cambien cuando coser las costuras laterales.
+<Tip>
+
+Asegúrese de incluir los bordes de la bolsa de forro y bolsa, ya que esto evitará que las cosas cambien cuando coser las costuras laterales.
+
+</Tip>
 
 ### Paso 14: Aplasta las costuras del lado
 
@@ -175,7 +202,11 @@ Place the front and back of each leg on top of each other, with the good sides t
 
 Align the side seam, more precisely the side seam on the outside, where there is no crotch curve.
 
-> Puedes fijar las piezas juntas para asegurar que las cosas permanezcan en su lugar mientras cores esta costura larga
+<Tip>
+
+You can pin the pieces together to make sure things stay in place while sewing this lengthy seam.
+
+</Tip>
 
 Sew the seam, starting from the waistband along the entire side of your trousers.
 
@@ -187,7 +218,11 @@ Press open the seam allowance along the side seams. Do so from the back, and rep
 
 Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
 
-> Una costura lateral plana agradable se ve grande, así que tómate tu tiempo para hacerlo bien.
+<Tip>
+ 
+Una costura lateral plana agradable se ve grande, así que tómate tu tiempo para hacerlo bien.
+
+</Tip>
 
 ### Paso 16: Escudo de mosca para volar
 
@@ -197,13 +232,21 @@ Place your fly piece on the fly shield with the good sides together, and align t
 
 Sew along the curved edge, taking account the standard 1cm seam allowance, to join the two pieces together.
 
-> Si su revestimiento tiene algún estiramiento en él en absoluto, trate de estirarlo un poco mientras coser la curva. Esto hará más fácil conseguir que el revestimiento quede plano, sin enrollar más adelante.
+<Tip>
+
+Si su revestimiento tiene algún estiramiento en él en absoluto, trate de estirarlo un poco mientras coser la curva. Esto hará más fácil conseguir que el revestimiento quede plano, sin enrollar más adelante.
+
+</Tip>
 
 ### Paso 17: Presione el escudo de vuelo
 
 ![Press the fly shield](step17.png)
 
-> Antes de apretar el tubo de la mosca, asegúrese de rodar un poco la costura para que su tela de revestimiento de pantalones se sienta un poco más, y el revestimiento sólo comienza alrededor de 2 mm del borde. Esto evitará que el revestimiento se repita en el borde.
+<Tip>
+
+Antes de apretar el tubo de la mosca, asegúrese de rodar un poco la costura para que su tela de revestimiento de pantalones se sienta un poco más, y el revestimiento sólo comienza alrededor de 2 mm del borde. Esto evitará que el revestimiento se repita en el borde.
+
+</Tip>
 
 After you have sewed fly piece and fly shield together, turn them inside out and press the seam you just made.
 
@@ -211,9 +254,13 @@ After you have sewed fly piece and fly shield together, turn them inside out and
 
 ![Pin zip to right front piece](step18.png)
 
-> Pasos 18 a 21 todos conducen a una sola fila de stitching que coser tu zip al frente, al unir la pieza de mosca y el escudo de mosca de una vez.
-> 
-> Esta es la costura más difícil de hacer en todo el proceso de construcción. así que me tomo mi tiempo para explicar e ilustrar esto antes de empezar a coser.
+<Tip>
+
+Pasos 18 a 21 todos conducen a una sola fila de stitching que coser tu zip al frente, al unir la pieza de mosca y el escudo de mosca de una vez.
+
+Esta es la costura más difícil de hacer en todo el proceso de construcción. así que me tomo mi tiempo para explicar e ilustrar esto antes de empezar a coser.
+
+</Tip>
 
 Place your front piece for the right leg with the good side up. So that lining and front pocket bag sit underneath and lie flat.
 
@@ -226,7 +273,11 @@ Align your zip with the crotch seam as shown in the illustration. Take the follo
 
 Pin the zip in place with a few pins perpendicular to your zip (as shown). In other words, don't pin along the zip, but across the zip.
 
-> Si no está seguro de la colocación de su zip, póngalo lo más cerca posible del borde. Hacerlo sólo significará que su zip está un poco más lejos bajo la mosca, por lo que ciertamente no está en el espectáculo.
+<Tip>
+
+Si no está seguro de la colocación de su zip, póngalo lo más cerca posible del borde. Hacerlo sólo significará que su zip está un poco más lejos bajo la mosca, por lo que ciertamente no está en el espectáculo.
+
+</Tip>
 
 ### Paso 19: Anclar escudo de mosca a zip
 
@@ -236,11 +287,19 @@ Take the fly shield/fly piece that you assembled in step 16 & 17, and place it w
 
 Flip aside the top lining layer, and align the slightly curved edge of the fabric (where it is not sewn to the lining) with the edge of the fabric of your front piece.
 
-> Para mayor claridad, en la parte superior de la ilustración se muestra qué lado del escudo de moscas que debería estar enfrentado en una escala menor.
+<Tip>
+
+Para mayor claridad, en la parte superior de la ilustración se muestra qué lado del escudo de moscas que debería estar enfrentado en una escala menor.
+
+</Tip>
 
 Pin this layer in place with a few pins perpendicular to your zip (as shown in red). Make sure you catch all layers underneath, including the zip. This way, you can remove your pins from the step before (shown in green) when done.
 
-> Si te sientes cómodo manteniendo todo esto en su lugar, puedes dejar que el revestimiento caiga y anclarlo todo, como se muestra en el siguiente paso. Eso es algo más rápido, pero más propenso a errores ya que las cosas pueden cambiar más fácilmente.
+<Tip>
+
+Si te sientes cómodo manteniendo todo esto en su lugar, puedes dejar que el revestimiento caiga y anclarlo todo, como se muestra en el siguiente paso. Eso es algo más rápido, pero más propenso a errores ya que las cosas pueden cambiar más fácilmente.
+
+</Tip>
 
 ### Paso 20: Pin fly shield in place along zip
 
@@ -252,7 +311,8 @@ When you are done, remove your earlier perpendicular pins.
 
 ### Paso 21: Plegar sobre escudo de mosca y anclar abajo
 
-![FOld over fly shield and pin down](step21a.png) {.fs-row2} ![FOld over fly shield and pin down](step21b.png) {.fs-row2}
+![FOld over fly shield and pin down](step21a.png) 
+![FOld over fly shield and pin down](step21b.png)
 
 Flip everything over so that your fly shield lies at the bottom.
 
@@ -266,7 +326,11 @@ Pin this down, and remove your previous pins.
 
 Now you can sew along the double folded fly piece. This will fix the front, zip, fly shield and fly piece all in place.
 
-> Estarás cosiendo a lo largo de tu zip, así que asegúrate de instalar tu pie zipper para esto.
+<Tip>
+
+Estarás cosiendo a lo largo de tu zip, así que asegúrate de instalar tu pie zipper para esto.
+
+</Tip>
 
 ### Paso 23: Volar hacia atrás y presionar
 
@@ -282,7 +346,11 @@ Apply bias tape to the edge with the large curve of your second fly piece.
 
 Press the finished edge flat when you're done.
 
-> Bias tinta es una manera de terminar una costura. Si no está seguro de qué es o cómo aplicarlo, háganoslo saber.
+<Tip>
+
+Bias tinta es una manera de terminar una costura. Si no está seguro de qué es o cómo aplicarlo, háganoslo saber.
+
+</Tip>
 
 ### Paso 25: Pin y coser pieza de mosca a costura de cromo
 
@@ -292,7 +360,11 @@ Place the left leg with the good side up. Place the second fly piece on top with
 
 Pin the fly piece in place, then sew it in place along the crotch seam.
 
-> Cuando coja esto en su lugar, asegúrese de atrapar el revestimiento delantero.
+<Tip>
+
+Cuando coja esto en su lugar, asegúrese de atrapar el revestimiento delantero.
+
+</Tip>
 
 Press the finished edge flat when you're done.
 
@@ -308,7 +380,9 @@ Give it a good press from the back.
 
 ### Paso 27: Anclar y coser zip para volar
 
-![Place both legs on top of eachother](step27a.png) {.fs-row3} ![Pin the zip along the edge](step27b.png) {.fs-row3} ![Sew in place](step27c.png) {.fs-row3}
+![Place both legs on top of eachother](step27a.png) 
+![Pin the zip along the edge](step27b.png) 
+![Sew in place](step27c.png) 
 
 Place the right leg down with the good side up. Place the leg on top of it with the good side down.
 
@@ -316,15 +390,23 @@ With the crotch seams aligned, pin the zip along the edge of the fly piece with 
 
 Make sure to pin the fly only to the fly piece. Not to any other layers underneath.
 
-> Encuentro más fácil fijar el zip a través de todas las capas, y luego, cuando esté seguro en su lugar añada pines extra que lo anclan a la pieza de mosca solamente. Cuando haya terminado, puede quitar los pines que atraviesan todas las capas.
+<Tip>
+
+Encuentro más fácil fijar el zip a través de todas las capas, y luego, cuando esté seguro en su lugar añada pines extra que lo anclan a la pieza de mosca solamente. Cuando haya terminado, puede quitar los pines que atraviesan todas las capas.
+
+</Tip>
 
 Last but not least, sew along the zip with your zipper foot to attach it to the fly piece.
 
-> Al alinear el zip, asegúrese de tener en cuenta lo siguiente:
-> 
-> - El zip debe colocarse con el lado bueno abajo
-> - El zip debería sentarse un poco atrás desde el borde de su pieza de mosca
-> - Asegúrate de alinear la parte superior del zip con la otra mitad zip en la pierna derecha
+<Tip>
+
+When aligning the zip, make sure to take the following into account:
+
+ - The zip should be placed with the good side down
+ - The zip should sit a bit back from the edge of your fly piece
+ - Make sure to align the top of the zip with the other zip half on the right leg
+
+</Tip>
 
 ### Paso 28: Zig-zag el borde zip de la pieza de mosca
 
@@ -340,11 +422,16 @@ Place both fly pieces together, and move the front pieces out of the way.
 
 Use a bar-tack to join them together at the bottom of the zip. Sew on both edges of the zip, and get as close to the zip as you can.
 
-> Si tu zip es demasiado largo, puedes recortarlo debajo de la barra-ataques.
+<Tip>
+
+Si tu zip es demasiado largo, puedes recortarlo debajo de la barra-ataques.
+
+</Tip>
 
 ### Paso 30: Únete a coberturas
 
-![Join crotch seam](step30a.png) {.fs-row2} ![Join crotch seam](step30b.png) {.fs-row2}
+![Join crotch seam](step30a.png) 
+![Join crotch seam](step30b.png)
 
 Place both fronts with the good sides up. They are now joined by the fly.
 
@@ -356,7 +443,11 @@ You'll need to get the fly shields out of the way, so if you've pinned through a
 
 Sew the crotch seam, starting at the cross-seam point, and going up to your horizontal pin.
 
-> Me resulta difícil explicar este paso, y difícil de ilustrar. Espero que tenga sentido cuando estés mirando a tu vuela. Si no es así, compruebe las instrucciones de vídeo.
+<Tip>
+
+Me resulta difícil explicar este paso, y difícil de ilustrar. Espero que tenga sentido cuando estés mirando a tu vuela. Si no es así, compruebe las instrucciones de vídeo.
+
+</Tip>
 
 ### Paso 31: Encender la curva de mosca cerrada y bastar
 
@@ -412,7 +503,11 @@ Now, put the leg that has the good side out (the normal leg) into the leg that h
 
 This way, the good sides of both legs will sit against each other, and this is how you should sew the cross seam.
 
-> Tenga cuidado de que su pierna no se torne dentro de la otra pierna. Cuando esté en duda, vuelva a salir de la pierna de dentro, después de que haya fijado la costura cruzada para asegurarse de que todo está bien.
+<Tip>
+
+Tenga cuidado de que su pierna no se torne dentro de la otra pierna. Cuando esté en duda, vuelva a salir de la pierna de dentro, después de que haya fijado la costura cruzada para asegurarse de que todo está bien.
+
+</Tip>
 
 Pin the cross-seam in place, and then sew it close, starting at the side of the fly, and making sure to respect the seam allowance.
 
@@ -428,11 +523,19 @@ When it's looking good, press the crease lines in your leg, front a back. Repeat
 
 Give it a firm press because you want the pleats to still be there after you wash your trousers (so you can see where to press them again).
 
-> En la industria, los productos químicos se aplican a lo largo de la línea de pliegues antes de que se presione juntos. Algunos tailors usan algún tipo de martillo y yunque de madera para golpear las fibras en un pliegue permanente.
+<Tip>
+
+En la industria, los productos químicos se aplican a lo largo de la línea de pliegues antes de que se presione juntos. Algunos tailors usan algún tipo de martillo y yunque de madera para golpear las fibras en un pliegue permanente.
+
+</Tip>
 
 Depending on your fabric, your crease might last longer, but ultimately, you can't expect to have a crease that can withstand a few washes without being reapplied.
 
-> Tal vez esto no hace falta decirlo, pero también hay otra opción: No presiones el pliegue. Esto le da a sus pantalones un aspecto más informal.
+<Tip>
+
+Tal vez esto no hace falta decirlo, pero también hay otra opción: No presiones el pliegue. Esto le da a sus pantalones un aspecto más informal.
+
+</Tip>
 
 ### Paso 38: Fusionar interfaz a la cintura
 
@@ -458,7 +561,11 @@ Place your waistband on the waistband lining, good sides together, so that the w
 
 Align the edge, and pin them together.
 
-> Vamos a coser a lo largo del borde de la interfaz, pero vamos a coser alrededor de 3mm o 1/8 pulgadas del borde de la interfaz. Esto evitará que el revestimiento sea visible desde el frente más adelante.
+<Tip>
+
+Vamos a coser a lo largo del borde de la interfaz, pero vamos a coser alrededor de 3mm o 1/8 pulgadas del borde de la interfaz. Esto evitará que el revestimiento sea visible desde el frente más adelante.
+
+</Tip>
 
 On one side of the waistband, end with a curve and then go down vertically along the edge of the waistband interfacing. Check the illustration to make sure you do it on the correct side.
 
@@ -480,7 +587,11 @@ Pin the edge of your waistband (the side you did not sew the lining to) to the t
 
 Tuck the edge of your fly into the end of the waistband with the curved corner. On the other end of the waistband, it will be longer. In other words, your waistband will overlap here.
 
-> Tenga cuidado de emparejar la alineación vertical de la cintura en el zip. Con el zip cerrado, ambos lados de la cintura deben sentarse a una altura igual. Esto es fácil de perder si no lo compruebas.
+<Tip>
+
+Tenga cuidado de emparejar la alineación vertical de la cintura en el zip. Con el zip cerrado, ambos lados de la cintura deben sentarse a una altura igual. Esto es fácil de perder si no lo compruebas.
+
+</Tip>
 
 ### Paso 43: Pierde cintura a pantalones
 
@@ -512,11 +623,15 @@ Find the belt loop pattern part, a small rectangular piece of fabric. There shou
 - Coser a lo largo de la parte trasera del bucle de la cinta para que los lados doblados permanezcan en su lugar, pero las stitches no se muestran en la parte frontal
 - Dale una buena prensa final cuando hayas terminado
 
-> Si bien la anchura de los bucles de la cinta no es tan importante, es importante asegurarse de que son todos del mismo ancho.
-> 
-> Para hacer más fácil tener una anchura consistente, puedes doblar los bucles de la cinta alrededor de una tira de cartón, papel grueso, o plástico de la anchura del bucle de la correa deseada.
-> 
-> Esta tira también puede ayudarle con la costura de la mano. Manténgalo en el bucle de la cinta y evitará que tu aguja perfore a través de todas las capas y tu hilo no se mostrará en la parte delantera.
+<Tip>
+
+Si bien la anchura de los bucles de la cinta no es tan importante, es importante asegurarse de que son todos del mismo ancho.
+
+Para hacer más fácil tener una anchura consistente, puedes doblar los bucles de la cinta alrededor de una tira de cartón, papel grueso, o plástico de la anchura del bucle de la correa deseada.
+
+Esta tira también puede ayudarle con la costura de la mano. Manténgalo en el bucle de la cinta y evitará que tu aguja perfore a través de todas las capas y tu hilo no se mostrará en la parte delantera.
+
+</Tip>
 
 ### Paso 46: Adjuntar los bucles de la cinta: Tomás
 
@@ -528,11 +643,15 @@ Place the good side of the belt loop down on the good side of the trousers (good
 
 Then, zig zag the edge of the belt loop to the trousers.
 
-> Es importante sacar la cintura del camino mientras lo hace. Asegúrate de sujetar los bucles de la correa sólo a tus pantalones y no al revestimiento de la banda de cintura.
+<Tip>
 
-> Tienes 8 bucles de cinturón, así que tienes que distribuirlos alrededor de tu cintura. Echa un vistazo a un par existente si no estás seguro de cómo hacer esto.
-> 
-> Asegúrese de colocar aros de cinta cerca del centro de la espalda y no demasiado cerca en la parte delantera (para los cubos de cinta).
+Es importante sacar la cintura del camino mientras lo hace. Asegúrate de sujetar los bucles de la correa sólo a tus pantalones y no al revestimiento de la banda de cintura.
+
+Tienes 8 bucles de cinturón, así que tienes que distribuirlos alrededor de tu cintura. Echa un vistazo a un par existente si no estás seguro de cómo hacer esto.
+
+Asegúrese de colocar aros de cinta cerca del centro de la espalda y no demasiado cerca en la parte delantera (para los cubos de cinta).
+
+</Tip>
 
 ### Paso 47: Waistband frente
 
@@ -550,11 +669,16 @@ This will be a lot simpler to understand if you have a look at the relevant vide
 
 Before we finalize the waistband, we're going to trim back some of its seam allowance.
 
-> **About seam allowance grading** When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
-> 
-> La capa que se encuentra más cercana al lado bueno de la prenda debe ser la más larga, así que recorta desde allí.
-> 
-> Hacerlo hará menos probable que el contorno de la franquicia de costura sea visible desde el lado bueno.
+<Tip>
+
+**About seam allowance grading**
+When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
+
+La capa que se encuentra más cercana al lado bueno de la prenda debe ser la más larga, así que recorta desde allí.
+
+Hacerlo hará menos probable que el contorno de la franquicia de costura sea visible desde el lado bueno.
+
+</Tip>
 
 ### Paso 49: Presione y funda el revestimiento de cintura
 
@@ -572,7 +696,11 @@ To make sure things look pretty, the distance between the top of our waistband a
 
 When you're happy with how it looks, baste the lining in place just next to the seam joining the waistband and trousers.
 
-> Es mejor bastar al lado de la costura, y en realidad no en la costura. Esto hará que sea mucho más fácil remover tu cocimiento cuando hayamos cosido en el último paso.
+<Tip>
+
+Es mejor bastar al lado de la costura, y en realidad no en la costura. Esto hará que sea mucho más fácil remover tu cocimiento cuando hayamos cosido en el último paso.
+
+</Tip>
 
 ### Paso 50: Aplasta el revestimiento de cintura en su lugar
 
@@ -588,9 +716,13 @@ With your waistband and lining properly secured, it's time to attach the top of 
 
 Sew them in place just as you did at the bottom. That is, use a bar tack or close zig-zag to attach them, then zig-zag over the end to secure it.
 
-> No coser por la parte superior de los bucles de cinturón. Tendrás que trabajar el pie de tu máquina de coser bajo el ciclo de la cinta para que sólo cores la pieza que se pliegue.
+<Tip>
 
-> Siéntete libre de recortar la longitud de tus bucles de cinturón después de tocar el bar y antes de zig-zag el final de ellos, como podrían ser demasiado largos.
+No coser por la parte superior de los bucles de cinturón. Tendrás que trabajar el pie de tu máquina de coser bajo el ciclo de la cinta para que sólo cores la pieza que se pliegue.
+
+Siéntete libre de recortar la longitud de tus bucles de cinturón después de tocar el bar y antes de zig-zag el final de ellos, como podrían ser demasiado largos.
+
+</Tip>
 
 ### Paso 52: Termina el borde de las piernas
 
@@ -598,15 +730,23 @@ Sew them in place just as you did at the bottom. That is, use a bar tack or clos
 
 Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
 
-> También sería un buen momento para probar con tus pantalones y marcar exactamente cuánto tiempo quieres que sean después de que se hemten.
+<Tip>
+ 
+También sería un buen momento para probar con tus pantalones y marcar exactamente cuánto tiempo quieres que sean después de que se hemten.
+
+</Tip>
 
 ### Paso 53: (opcional) Mezclado en una cinta de hem
 
 ![Optionally sew in a hem ribbon](step53.png)
 
-> La cinta de hem es una cinta que se sienta en el interior de su pantalón. En el lugar en el que tu húmeda se pliega hacia atrás, la tela tiene que sufrir un gran abuso, desde golpes a zapatos y otras cosas.
-> 
-> La colocación de una cinta dentro del tubo protege en cierta medida su tejido, y es un buen acabado.
+<Tip>
+
+La cinta de hem es una cinta que se sienta en el interior de su pantalón. En el lugar en el que tu húmeda se pliega hacia atrás, la tela tiene que sufrir un gran abuso, desde golpes a zapatos y otras cosas.
+
+La colocación de una cinta dentro del tubo protege en cierta medida su tejido, y es un buen acabado.
+
+</Tip>
 
 Mark the hemline on your trousers (good side out).
 
@@ -618,7 +758,11 @@ Place the ribbon as shown in the illustration making sure that it extends a few 
 
 Fold back the trouser legs at the hemline, and press the hem.
 
-> Si has cosido en un rifón de hem , la cinta se extenderá unos pocos mm por debajo de la línea de llave, protegiendo así la tela del tubo.
+<Tip>
+
+Si has cosido en un rifón de hem , la cinta se extenderá unos pocos mm por debajo de la línea de llave, protegiendo así la tela del tubo.
+
+</Tip>
 
 ### Paso 55: Hem las piernas
 
@@ -626,10 +770,15 @@ Fold back the trouser legs at the hemline, and press the hem.
 
 With the hem neatly pressed, simply hand-sew the folded back part to the inside of your trousers.
 
-> Hemming se hace a mano porque es importante que las stitches no se muestren en el frente. Así que al coser a mano el sombrero, no empuje tu aguja a través del tejido, pero coge algunos hilos para que tus stitches no se muestren en la parte delantera
-> 
-> Si bien hay alternativas de máquina, no son tan limpias (ranura ciega) o probablemente no son accesibles para el alcantarillado doméstico (maquinaria de corte ciego industrial).
+<Tip>
+
+Hemming se hace a mano porque es importante que las stitches no se muestren en el frente. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
+
+While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
+
+</Tip>
 
 ### Paso 56: Recorte, limpia y presiona
 
 Trim any loose threads or basting that remains, and give your trousers a good final press.
+

@@ -36,11 +36,10 @@ module.exports = {
   '--rounded-btn': '0',
 
   '--theme-gradient': `repeating-linear-gradient(
-    -45deg,
-    ${colors.lime['700']},
-    ${colors.lime['700']} 15px,
-    ${bg} 15px,
-    ${bg} 30px
+    90deg,
+    ${colors.lime['900']},
+    ${colors.lime['500']} 50%,
+    ${colors.lime['900']} 100%
   )`,
 
   '--code-background-color': '#002407',

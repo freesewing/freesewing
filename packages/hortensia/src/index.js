@@ -10,14 +10,18 @@ import draftSidepanelreinforcement from './sidepanelreinforcement'
 import draftStrap from './strap'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Hortensia = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftSidepanel = draftSidepanel
-Pattern.prototype.draftStrap = draftStrap
-Pattern.prototype.draftBottompanel = draftBottompanel
-Pattern.prototype.draftFrontpanel = draftFrontpanel
-Pattern.prototype.draftZipperpanel = draftZipperpanel
-Pattern.prototype.draftSidepanelreinforcement = draftSidepanelreinforcement
+Hortensia.prototype.draftSidepanel = draftSidepanel
+Hortensia.prototype.draftStrap = draftStrap
+Hortensia.prototype.draftBottompanel = draftBottompanel
+Hortensia.prototype.draftFrontpanel = draftFrontpanel
+Hortensia.prototype.draftZipperpanel = draftZipperpanel
+Hortensia.prototype.draftSidepanelreinforcement = draftSidepanelreinforcement
 
-export default Pattern
+// Named exports
+export { config, Hortensia }
+
+// Default export
+export default Hortensia

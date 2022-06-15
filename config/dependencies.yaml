@@ -3,49 +3,16 @@ _types:
     peer:
       '@freesewing/core': &freesewing '^{{version}}'
       '@freesewing/plugin-bundle': *freesewing
+      '@freesewing/config-helpers': *freesewing
     dev:
-      'react': &react '^17.0.2'
-      'react-dom': &react-dom '^17.0.2'
-      '@babel/plugin-proposal-class-properties': '^7.13.0'
-      '@freesewing/components': *freesewing
-      '@freesewing/css-theme': *freesewing
-      '@freesewing/i18n': *freesewing
-      '@freesewing/mui-theme': *freesewing
-      '@freesewing/plugin-bust': *freesewing
-      '@freesewing/plugin-buttons': *freesewing
-      '@freesewing/plugin-flip': *freesewing
-      '@freesewing/utils': *freesewing
-      'react-scripts': '^5.0.0'
-      'webpack': '^5.67.0'
-      'rollup': '^2.66.1'
-      '@rollup/plugin-babel': '^5.3.0'
-      '@rollup/plugin-commonjs': '^21.0.1'
-      '@rollup/plugin-json': '^4.1.0'
-      '@rollup/plugin-node-resolve': '^13.1.3'
-      'rollup-plugin-peer-deps-external': '^2.2.4'
-      '@material-ui/core': &matui-core '^4.12.3'
-      '@material-ui/icons': &matui-icons '^4.11.2'
-      '@material-ui/lab': &matui-lab '^v4.0.0-alpha.60'
-      'axios': &axios '^0.25.0'
-      'react-intl': &react-intl '^5.24.4'
-      'prop-types': '^15.8.1'
       'mocha': &mocha '^9.1.1'
       'chai': &chai '^4.2.0'
-      '@babel/register': &babelregister '^7.10.5'
   plugin:
     peer:
       '@freesewing/core': *freesewing
     dev:
       'mocha': *mocha
       'chai': *chai
-      '@babel/core': '^7.11.0'
-      '@babel/register': *babelregister
-      'rollup': '^2.50.6'
-      '@rollup/plugin-babel': '^5.3.0'
-      '@rollup/plugin-commonjs': '^21.0.1'
-      '@rollup/plugin-json': '^4.1.0'
-      '@rollup/plugin-node-resolve': '^13.0.0'
-      'rollup-plugin-peer-deps-external': '^2.2.4'
 aaron:
   peer:
     '@freesewing/brian': *freesewing
@@ -80,7 +47,6 @@ charlie:
   peer:
     '@freesewing/plugin-bartack': *freesewing
     '@freesewing/plugin-mirror': *freesewing
-    '@freesewing/snapseries': *freesewing
     '@freesewing/titan': *freesewing
 css-theme:
   _:
@@ -90,8 +56,8 @@ css-theme:
     '@fontsource/ubuntu': &ubuntu 'latest'
 components:
   peer:
-    'axios': *axios
-    'react': *react
+    'axios': &axios '^0.25.0'
+    'react': &react '^17.0.2'
     '@freesewing/pattern-info': *freesewing
     '@freesewing/mui-theme': *freesewing
     '@freesewing/css-theme': *freesewing
@@ -106,10 +72,10 @@ components:
     '@fontsource/ubuntu': *ubuntu
     '@freesewing/i18n': *freesewing
     '@freesewing/utils': *freesewing
-    'react-intl': *react-intl
-    '@material-ui/core': *matui-core
-    '@material-ui/icons': *matui-icons
-    '@material-ui/lab': *matui-lab
+    'react-intl': &react-intl '^5.24.4'
+    '@material-ui/core': &matui-core '^4.12.3'
+    '@material-ui/icons': &matui-icons '^4.11.2'
+    '@material-ui/lab': &matui-lab '^v4.0.0-alpha.60'
     'prismjs': '^1.25.0'
     'react-markdown': '^6.0.2'
     'file-saver': '^2.0.5'
@@ -181,13 +147,12 @@ mui-theme:
   peer:
     '@material-ui/core': *matui-core
     'react': *react
-    'react-dom': *react-dom
+    'react-dom': '^17.0.2'
 legend:
   peer:
     '@freesewing/plugin-buttons': *freesewing
 paco:
   peer:
-    '@freesewing/snapseries': *freesewing
     '@freesewing/titan': *freesewing
 plugin-bundle:
   dev:
@@ -235,12 +200,6 @@ remark-jargon:
   peer:
     'remark': '^13.0.0'
     'remark-html': '^13.0.1'
-sandy:
-  peer:
-    '@freesewing/snapseries': *freesewing
-shin:
-  peer:
-    '@freesewing/snapseries': *freesewing
 simon:
   peer:
     '@freesewing/brian': *freesewing
@@ -255,7 +214,7 @@ simone:
     '@freesewing/plugin-bust': *freesewing
 strapi:
   _:
-    strapi: &strapi '3.6.8'
+    strapi: &strapi '3.6.10'
     strapi-admin: *strapi
     strapi-utils: *strapi
     strapi-plugin-content-type-builder: *strapi
@@ -272,12 +231,6 @@ teagan:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
-titan:
-  peer:
-    '@freesewing/snapseries': *freesewing
-trayvon:
-  peer:
-    '@freesewing/snapseries': *freesewing
 utils:
   peer:
     'tlds': '^1.221.1'

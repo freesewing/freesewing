@@ -10,11 +10,14 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkCopyLinkedFiles from 'remark-copy-linked-files'
 import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
+import mdxPluginToc from './mdx-plugin-toc.mjs'
 import smartypants from 'remark-smartypants'
 // Rehype plugins we want to use
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
+// Simple frontmatter extractor
+import frontmatter from 'front-matter'
 /*
  * Summary: Loads markdown from disk and compiles it as MDX.
  *
@@ -54,14 +57,34 @@ const mdxLoader = async (language, site, slug) => {
         ]
       ],
       rehypePlugins: [
-        rehypeHighlight,
+        [rehypeHighlight, { plainText: ['dot', 'http'] }],
         rehypeSlug,
         rehypeAutolinkHeadings,
       ],
     })
   )
 
-  return {mdx, intro}
+  // This is not ideal as we're adding a second pass but for now it will do
+  // See: https://github.com/remarkjs/remark-toc/issues/37
+  const toc = String(
+    await compile(md, {
+      outputFormat: 'function-body',
+      remarkPlugins: [
+        remarkFrontmatter,
+        remarkGfm,
+        smartypants,
+        [
+          mdxPluginToc,
+          { language }
+        ]
+      ],
+      rehypePlugins: [
+        rehypeSlug,
+      ],
+    })
+  )
+
+  return { mdx, intro, toc, frontmatter: frontmatter(md)?.attributes }
 }
 
 export default mdxLoader

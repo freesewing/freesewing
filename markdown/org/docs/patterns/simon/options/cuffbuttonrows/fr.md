@@ -1,3 +1,7 @@
+- - -
+title: "Cuff button rows"
+- - -
+
 ![Rangée de boutons de manchette](cuffbuttonrows.svg)
 
 Voulez-vous un seul bouton sur votre barreau, ou deux?
@@ -9,4 +13,5 @@ Cela ne s'applique qu'aux poignets classiques. Donc si vous avez choisi un poign
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cuffbuttonrows_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cuffbuttonrows_sample.svg "Effect of this option on the pattern")

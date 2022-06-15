@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("./dist");
+let freesewing = require("../dist/index.js");
 
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();

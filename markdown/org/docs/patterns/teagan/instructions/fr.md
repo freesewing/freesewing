@@ -27,7 +27,11 @@ Optionnel: Dans un tricot drapier, vous pouvez choisir de renforcer les coutures
 
 ## Étape 3 : Coudre le tricot à l'encolure.
 
-<!--- Tawni is also writing up additional instructions for installing a V-neck --->
+<Comment by="TangerineShark">
+
+Tawni is also writing up additional instructions for installing a V-neck
+
+</Comment>
 
 <Tip>
 

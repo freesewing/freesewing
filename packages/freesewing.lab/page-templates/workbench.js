@@ -1,7 +1,8 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import WorkbenchWrapper from 'shared/components/wrappers/workbench.js'
 import { useRouter } from 'next/router'
+import Layout from 'site/components/layouts/lab'
 
 const WorkbenchPage = ({ pattern }) => {
   const app = useApp()
@@ -9,8 +10,8 @@ const WorkbenchPage = ({ pattern }) => {
   const { preload, from } = router.query
 
   return (
-    <Page app={app} noLayout>
-      <WorkbenchWrapper {...{ app, pattern, preload, from }} />
+    <Page app={app}>
+      <WorkbenchWrapper {...{ app, pattern, preload, from }} layout={Layout} />
     </Page>
   )
 }

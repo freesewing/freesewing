@@ -1,11 +1,11 @@
-import pkg from '../package.json'
-import { smallsteps } from '@freesewing/snapseries'
+import { version } from '../package.json'
 import freesewing from '@freesewing/core'
-const { pctBasedOn } = freesewing
+import configHelpers from '@freesewing/config-helpers'
+const { smallsteps, pctBasedOn } = configHelpers
 
 export default {
+  version,
   name: 'trayvon',
-  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'accessories',

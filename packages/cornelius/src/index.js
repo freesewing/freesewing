@@ -13,18 +13,22 @@ import draftZipperguard from './zipperguard'
 // import draftPlacket from './placket'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Cornelius = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftFrontpoints = draftFrontpoints
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftBack = draftBack
-Pattern.prototype.draftLegband = draftLegband
-Pattern.prototype.draftLegbandkeystone = draftLegbandkeystone
-Pattern.prototype.draftWaistband = draftWaistband
-Pattern.prototype.draftPocketfacing = draftPocketfacing
-Pattern.prototype.draftPocket = draftPocket
-Pattern.prototype.draftZipperguard = draftZipperguard
-// Pattern.prototype.draftPlacket = draftPlacket
+Cornelius.prototype.draftFrontpoints = draftFrontpoints
+Cornelius.prototype.draftFront = draftFront
+Cornelius.prototype.draftBack = draftBack
+Cornelius.prototype.draftLegband = draftLegband
+Cornelius.prototype.draftLegbandkeystone = draftLegbandkeystone
+Cornelius.prototype.draftWaistband = draftWaistband
+Cornelius.prototype.draftPocketfacing = draftPocketfacing
+Cornelius.prototype.draftPocket = draftPocket
+Cornelius.prototype.draftZipperguard = draftZipperguard
+// Cornelius.prototype.draftPlacket = draftPlacket
 
-export default Pattern
+// Named exports
+export { config, Cornelius }
+
+// Default export
+export default Cornelius

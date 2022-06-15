@@ -1,8 +1,10 @@
-import pkg from '../package.json'
+import { version } from '../package.json'
+import configHelpers from '@freesewing/config-helpers'
+const { pctBasedOn } = configHelpers
 
-export default (core) => ({
+export default {
+  version,
   name: 'aaron',
-  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -55,7 +57,7 @@ export default (core) => ({
     // Percentages
     armholeDrop: { pct: 10, min: 0, max: 75 },
     backlineBend: { pct: 50, min: 25, max: 100 },
-    chestEase: { pct: 8, min: 0, max: 20, ...core.pctBasedOn('chest') },
+    chestEase: { pct: 8, min: 0, max: 20, ...pctBasedOn('chest') },
     hipsEase: { pct: 8, min: 0, max: 20 },
     lengthBonus: { pct: 10, min: -20, max: 60 },
     necklineBend: { pct: 100, min: 40, max: 100 },
@@ -64,4 +66,4 @@ export default (core) => ({
     shoulderStrapWidth: { pct: 15, min: 10, max: 40 },
     shoulderStrapPlacement: { pct: 40, min: 20, max: 80 },
   },
-})
+}

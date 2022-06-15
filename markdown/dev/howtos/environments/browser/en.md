@@ -87,6 +87,6 @@ Below is a complete example.
 ## Dependencies
 
 If you compare this example with [our NodeJS
-example](/reference/howtos/nodejs) you'll notice that you do not
+example](/howtos/environments/nodejs) you'll notice that you do not
 need to worry about loading any dependencies. Not even `@freesewing/core`
 is loaded, because Skypack will pull in all dependencies for you.

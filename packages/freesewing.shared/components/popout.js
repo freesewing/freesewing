@@ -41,7 +41,7 @@ const Popout = (props) => {
 
   return props.compact
     ? (
-      <div className={`relative my-4 bg-${color} bg-opacity-5 ${className}`}>
+      <div className={`relative my-4 bg-${color} bg-opacity-5 ${className} -ml-6 -mr-6 sm:m-0`}>
         <div className={`
           border-y-4 sm:border-0 sm:border-l-4 px-4
           shadow text-base border-${color}
@@ -61,7 +61,7 @@ const Popout = (props) => {
       </div>
     )
     : (
-      <div className={`relative my-8 bg-${color} bg-opacity-5 ${className}`}>
+      <div className={`relative my-8 bg-${color} bg-opacity-5 ${className} -ml-6 -mr-6 sm:m-0`}>
         <div className={`
           border-y-4 sm:border-0 sm:border-l-4 px-6 sm:px-8 py-4 sm:py-2
           shadow text-base border-${color}
@@ -73,7 +73,7 @@ const Popout = (props) => {
                 {type === 'comment' && <> by <b>{props.by}</b></>}
               </span>
             </div>
-            {!props?.noHide && (
+            {props?.hideable && (
               <button
                 onClick={() => setHide(true)}
                 className="hover:text-secondary"

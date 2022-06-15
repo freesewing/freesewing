@@ -27,7 +27,11 @@ Optional: In einem Drapierstrick können Sie die Schulternähte durch das Nähen
 
 ## Schritt 3: Nähen Strickbindung an die Halsöffnung.
 
-<!--- Tawni is also writing up additional instructions for installing a V-neck --->
+<Comment by="TangerineShark">
+
+Tawni is also writing up additional instructions for installing a V-neck
+
+</Comment>
 
 <Tip>
 

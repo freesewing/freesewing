@@ -1,11 +1,11 @@
-import pkg from '../package.json'
-import { elastics } from '@freesewing/snapseries'
+import { version } from '../package.json'
 import freesewing from '@freesewing/core'
-const { pctBasedOn } = freesewing
+import configHelpers from '@freesewing/config-helpers'
+const { elastics, pctBasedOn } = configHelpers
 
 export default {
+  version,
   name: 'shin',
-  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'swimwear',

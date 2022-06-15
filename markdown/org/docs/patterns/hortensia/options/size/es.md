@@ -1,3 +1,7 @@
+- - -
+title: "Size"
+- - -
+
 Controls the overall size of the handbag.
 
 Rather than using measurements, Hortensia's size is determined by scaling fixed values.

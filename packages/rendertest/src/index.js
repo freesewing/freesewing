@@ -13,17 +13,21 @@ import draftSnippets from './snippets.js'
 import draftMacros from './macros.js'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Rendertest = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftDemo = (part) => draftDemo(part)
-Pattern.prototype.draftCircles = (part) => draftCircles(part)
-Pattern.prototype.draftColors = (part) => draftColors(part)
-Pattern.prototype.draftWidths = (part) => draftWidths(part)
-Pattern.prototype.draftStyles = (part) => draftStyles(part)
-Pattern.prototype.draftCombos = (part) => draftCombos(part)
-Pattern.prototype.draftText = (part) => draftText(part)
-Pattern.prototype.draftSnippets = (part) => draftSnippets(part)
-Pattern.prototype.draftMacros = (part) => draftMacros(part)
+Rendertest.prototype.draftDemo = (part) => draftDemo(part)
+Rendertest.prototype.draftCircles = (part) => draftCircles(part)
+Rendertest.prototype.draftColors = (part) => draftColors(part)
+Rendertest.prototype.draftWidths = (part) => draftWidths(part)
+Rendertest.prototype.draftStyles = (part) => draftStyles(part)
+Rendertest.prototype.draftCombos = (part) => draftCombos(part)
+Rendertest.prototype.draftText = (part) => draftText(part)
+Rendertest.prototype.draftSnippets = (part) => draftSnippets(part)
+Rendertest.prototype.draftMacros = (part) => draftMacros(part)
 
-export default Pattern
+// Named exports
+export { config, Rendertest }
+
+// Default export
+export default Rendertest

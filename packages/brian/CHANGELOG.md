@@ -1,6 +1,21 @@
 # Change log for: @freesewing/brian
 
 
+## 2.20.8 (2022-05-21)
+
+### Added
+
+ - Set `sleevecapHeight` value in store
+
+### Changed
+
+ - Better defaults for sleevecap and armhole depth
+
+### Fixed
+
+ - Adde both front and back armhole pitch points Closes [#2057](https://github.com/freesewing/freesewing/issues/2057)
+ - Fixed issue with the sleeve length
+
 ## 2.20.0 (2022-01-24)
 
 ### Changed

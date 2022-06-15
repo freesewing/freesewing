@@ -1,3 +1,7 @@
+- - -
+title: "Sleevecap top Y"
+- - -
+
 ![La posición vertical de la parte superior de manga](./sleevecaptopfactory.svg)
 
 Esta opción controla la colocación vertical de la parte superior de la manga.
@@ -10,4 +14,5 @@ en profundidad cómo se construye la manga y la influencia de las diferentes opc
 </Tip>
 
 ## Efecto de esta opción en el patrón
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](diana_sleevecaptopfactory_sample.svg "Efecto de esta opción en el patrón")
+
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](diana_sleevecaptopfactory_sample.svg "Effect of this option on the pattern")

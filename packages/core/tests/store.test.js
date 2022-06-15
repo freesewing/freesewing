@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("./dist");
+let freesewing = require("../dist/index.js");
 
 let pattern = new freesewing.Pattern();
 let store = pattern.store;

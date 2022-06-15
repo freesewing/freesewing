@@ -9,8 +9,10 @@ Hoffentlich sind unsere Schnittmuster leicht zu verstehen, aber wenn du auf etwa
 
 <Tip>
 
-##### Mögliche kleine Unterschiede zwischen Vorschau und Endergebnis
+##### Might vary slightly between preview and final result
 
-Aus überraschend komplexen Gründen könnte es sein, dass sich Schriftarten und Farben in der Online-Darstellung von denen in den heruntergeladenen PDFs oder SVGs unterscheiden.
+For reasons that are surprisingly complex, there might be slight
+differences in fonts and colors between how a pattern looks online
+and how it looks as a downloaded PDF or SVG.
 
 </Tip>

@@ -1,8 +1,9 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import mdxMeta from 'site/prebuild/mdx.en.js'
 import mdxLoader from 'shared/mdx/loader'
 import MdxWrapper from 'shared/components/wrappers/mdx'
+import TocWrapper from 'shared/components/wrappers/toc'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -36,8 +37,17 @@ const MdxPage = props => {
         <meta property="og:locale" content="en_US" key='locale' />
         <meta property="og:site_name" content="freesewing.dev" key='site' />
       </Head>
-      <MdxWrapper mdx={props.mdx} app={app}/>
-      <HelpUs mdx slug={`/${props.page.slug}`} />
+      <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end px-8 xl:px-0">
+        {props.toc && (
+          <div className="mb-8 px-0 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
+            <TocWrapper toc={props.toc} app={app}/>
+          </div>
+        )}
+        <div className="px-0 xl:pl-8 2xl:pl-16">
+          <MdxWrapper mdx={props.mdx} app={app} />
+          <HelpUs mdx slug={`/${props.page.slug}`} />
+        </div>
+      </div>
     </Page>
   )
 }
@@ -61,11 +71,12 @@ export default MdxPage
  */
 export async function getStaticProps({ params, locale }) {
 
-  const { mdx, intro } = await mdxLoader('en', 'dev', params.mdxslug.join('/'))
+  const { mdx, intro, toc } = await mdxLoader('en', 'dev', params.mdxslug.join('/'))
 
   return {
     props: {
       mdx,
+      toc,
       intro: intro.join(' '),
       page: {
         slug: params.mdxslug.join('/'),

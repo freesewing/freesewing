@@ -27,7 +27,11 @@ Optioneel: In een draaiknop kun je ervoor kiezen om de schoudernaden te versterk
 
 ## Stap 3: Stik de bies aan de halsopening.
 
-<!--- Tawni is also writing up additional instructions for installing a V-neck --->
+<Comment by="TangerineShark">
+
+Tawni is also writing up additional instructions for installing a V-neck
+
+</Comment>
 
 <Tip>
 

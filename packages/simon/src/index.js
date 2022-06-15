@@ -20,34 +20,38 @@ import draftSleevePlacketOverlap from './sleeveplacket-overlap'
 import draftCuff from './cuff'
 
 // Create design
-const Pattern = new freesewing.Design(config, [plugins, flipPlugin, buttonPlugin])
+const Simon = new freesewing.Design(config, [plugins, flipPlugin, buttonPlugin])
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = function (part) {
+Simon.prototype.draftBase = function (part) {
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFrontBase = function (part) {
+Simon.prototype.draftFrontBase = function (part) {
   return new Brian(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBackBase = function (part) {
+Simon.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
-Pattern.prototype.draftSleeveBase = function (part) {
+Simon.prototype.draftSleeveBase = function (part) {
   const brian = new Brian(this.settings)
   return brian.draftSleeve(brian.draftSleevecap(part))
 }
-Pattern.prototype.draftBack = draftBack
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftFrontRight = draftFrontRight
-Pattern.prototype.draftButtonPlacket = draftButtonPlacket
-Pattern.prototype.draftFrontLeft = draftFrontLeft
-Pattern.prototype.draftButtonholePlacket = draftButtonholePlacket
-Pattern.prototype.draftYoke = draftYoke
-Pattern.prototype.draftSleeve = draftSleeve
-Pattern.prototype.draftCollarStand = draftCollarStand
-Pattern.prototype.draftCollar = draftCollar
-Pattern.prototype.draftSleevePlacketUnderlap = draftSleevePlacketUnderlap
-Pattern.prototype.draftSleevePlacketOverlap = draftSleevePlacketOverlap
-Pattern.prototype.draftCuff = draftCuff
+Simon.prototype.draftBack = draftBack
+Simon.prototype.draftFront = draftFront
+Simon.prototype.draftFrontRight = draftFrontRight
+Simon.prototype.draftButtonPlacket = draftButtonPlacket
+Simon.prototype.draftFrontLeft = draftFrontLeft
+Simon.prototype.draftButtonholePlacket = draftButtonholePlacket
+Simon.prototype.draftYoke = draftYoke
+Simon.prototype.draftSleeve = draftSleeve
+Simon.prototype.draftCollarStand = draftCollarStand
+Simon.prototype.draftCollar = draftCollar
+Simon.prototype.draftSleevePlacketUnderlap = draftSleevePlacketUnderlap
+Simon.prototype.draftSleevePlacketOverlap = draftSleevePlacketOverlap
+Simon.prototype.draftCuff = draftCuff
 
-export default Pattern
+// Named exports
+export { config, Simon }
+
+// Default export
+export default Simon

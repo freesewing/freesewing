@@ -1,3 +1,7 @@
+- - -
+title: "Split yoke"
+- - -
+
 ![Empiècement dos à couture médiane ("split yoke")](splityoke.svg)
 
 Voulez vous un split yoke ?
@@ -13,4 +17,5 @@ C'est un peu plus de travail, mais cela vous permet d'aligner le droit-fil diff�
 </Note>
 
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_splityoke_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_splityoke_sample.svg "Effect of this option on the pattern")

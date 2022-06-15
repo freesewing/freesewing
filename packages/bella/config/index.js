@@ -1,8 +1,8 @@
-import pkg from '../package.json'
+import { version } from '../package.json'
 
 export default {
+  version,
   name: 'bella',
-  version: pkg.version,
   design: 'Bella Incognito',
   code: 'Joost De Cock',
   department: 'tops',
@@ -19,7 +19,13 @@ export default {
       'frontArmholePitchDepth',
       'backArmholePitchDepth',
     ],
-    advanced: ['backNeckCutout', 'backHemSlope', 'frontShoulderWidth', 'highBustWidth', 'shoulderToShoulderEase'],
+    advanced: [
+      'backNeckCutout',
+      'backHemSlope',
+      'frontShoulderWidth',
+      'highBustWidth',
+      'shoulderToShoulderEase',
+    ],
   },
   measurements: [
     'highBust',

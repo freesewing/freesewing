@@ -1,3 +1,6 @@
+- - -
+title: "Waist balance"
+- - -
 
 Contrôle la répartition du tissu entre les parties avant et arrière à la taille.
 
@@ -7,7 +10,6 @@ The side effect of shifting the side seam forward is that it's easy to get into 
 
 Cette option vous permet de contrôler ce solde.
 
-
-
 ## Effet de cette option sur le motif
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_waistbalance_sample.svg "Effet de cette option sur le motif")
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_waistbalance_sample.svg "Effect of this option on the pattern")

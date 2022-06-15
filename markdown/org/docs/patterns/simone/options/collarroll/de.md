@@ -1,3 +1,7 @@
+- - -
+title: "Collar roll"
+- - -
+
 ![Kragenrolle](collarroll.svg)
 
 Wie hoch der Kragen ist höher als der Kragen im Zentrum hinten.
@@ -13,4 +17,5 @@ Dies erhöht den Kragen nicht (verwenden Sie dafür die Kragenhöhe), sondern f�
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_collarroll_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_collarroll_sample.svg "Effect of this option on the pattern")

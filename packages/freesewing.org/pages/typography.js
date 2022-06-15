@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Popout from 'shared/components/popout.js'
 

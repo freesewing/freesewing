@@ -21,6 +21,7 @@ import draftPath_intersectsx from './path_intersectsx'
 import draftPath_intersectsy from './path_intersectsy'
 import draftPath_join from './path_join'
 import draftPath_length from './path_length'
+import draftPath_noop from './path_noop'
 import draftPath_offset from './path_offset'
 import draftPath_reverse from './path_reverse'
 import draftPath_shiftalong from './path_shiftalong'
@@ -41,6 +42,7 @@ import draftPlugin_gore from './plugin_gore'
 import draftPlugin_grainline from './plugin_grainline'
 import draftPlugin_logo from './plugin_logo'
 import draftPlugin_mirror from './plugin_mirror'
+import draftPlugin_notches from './plugin_notches'
 import draftPlugin_round from './plugin_round'
 import draftPlugin_sprinkle from './plugin_sprinkle'
 import draftPlugin_scalebox from './plugin_scalebox'
@@ -98,10 +100,10 @@ import draftDocs_overview from './docs_overview'
 import draftDocs_coords from './docs_coords'
 
 // Create design
-const Pattern = new freesewing.Design(config, [pluginBundle, gorePlugin, mirrorPlugin])
+const Examples = new freesewing.Design(config, [pluginBundle, gorePlugin, mirrorPlugin])
 
 // Attach draft methods to prototype
-let methods = {
+const methods = {
   draftPath_move,
   draftPath_line,
   draftPath_curve,
@@ -119,6 +121,7 @@ let methods = {
   draftPath_intersectsy,
   draftPath_join,
   draftPath_length,
+  draftPath_noop,
   draftPath_offset,
   draftPath_reverse,
   draftPath_shiftalong,
@@ -138,6 +141,7 @@ let methods = {
   draftPlugin_grainline,
   draftPlugin_logo,
   draftPlugin_mirror,
+  draftPlugin_notches,
   draftPlugin_round,
   draftPlugin_scalebox,
   draftPlugin_sprinkle,
@@ -191,6 +195,11 @@ let methods = {
   draftDocs_coords,
 }
 
-for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m]
+for (let m of Object.keys(methods)) Examples.prototype[m] = methods[m]
 
-export default Pattern
+// Named exports
+export { config, Examples }
+
+// Default export
+export default Examples
+

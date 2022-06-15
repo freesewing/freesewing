@@ -1,8 +1,8 @@
-import pkg from '../package.json'
+import { version } from '../package.json'
 
 export default {
+  version,
   name: 'waralee',
-  version: pkg.version,
   beta: true,
   design: 'Wouter Van Wageningen',
   code: 'Wouter Van Wageningen',

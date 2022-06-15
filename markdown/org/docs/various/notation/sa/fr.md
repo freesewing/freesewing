@@ -9,4 +9,3 @@ La marge de couture est indiquée par une ligne pointillée, qui a la même larg
 Notez que les angles de la marge de couture sont coupés, et non prolongés :
 
 <Legend part="sa"> Un coin de marge de couture coupé </Legend>
-

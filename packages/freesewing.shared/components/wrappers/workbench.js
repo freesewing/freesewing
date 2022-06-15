@@ -55,37 +55,42 @@ const hasRequiredMeasurements = (pattern, gist) => {
 
 /*
  * This component wraps the workbench and is in charge of
- * keeping the gist state, which will trickly down
+ * keeping the gist state, which will trickle down
  * to all workbench subcomponents
  */
-const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
+const WorkbenchWrapper = ({ app, pattern, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const [gist, setGist] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
+  const [gist, setGist, ready] = useLocalStorage(`${pattern.config.name}_gist`, defaultGist(pattern, app.locale))
   const [messages, setMessages] = useState([])
 
   // If we don't have the required measurements,
   // force view to measurements
   useEffect(() => {
     if (
-      gist?._state?.view !== 'measurements'
+      ready && gist?._state?.view !== 'measurements'
       && !hasRequiredMeasurements(pattern, gist)
     ) updateGist(['_state', 'view'], 'measurements')
-  })
+  }, [ready])
 
   // If we need to preload the gist, do so
-  useEffect(async () => {
-    if (preload && from && preloaders[from]) {
-      const g = await preloaders[from](preload, pattern)
-      setGist({ ...gist, ...g.settings })
+  useEffect(() => {
+    const doPreload = async () => {
+      if (preload && from && preloaders[from]) {
+        const g = await preloaders[from](preload, pattern)
+        setGist({ ...gist, ...g.settings })
+      }
     }
+    doPreload();
   }, [preload, from])
 
   // Helper methods to manage the gist state
-  const updateGist = (path, content) => {
+  const updateGist = (path, content, closeNav=false) => {
     const newGist = {...gist}
     set(newGist, path, content)
     setGist(newGist)
+    // Force close of menu on mobile if it is open
+    if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
   }
   const unsetGist = (path) => {
     const newGist = {...gist}
@@ -128,14 +133,19 @@ const WorkbenchWrapper = ({ app, pattern, preload=false, from=false }) => {
     AltMenu: <Menu {...componentProps }/>
   }
 
+  // Layout to use
+  const LayoutComponent = layout
+    ? layout
+    : Layout
+
   const Component = views[gist?._state?.view]
     ? views[gist._state.view]
     : views.welcome
 
-  return  <Layout {...layoutProps}>
+  return  <LayoutComponent {...layoutProps}>
             {messages}
             <Component {...componentProps} />
-          </Layout>
+          </LayoutComponent>
 }
 
 export default WorkbenchWrapper

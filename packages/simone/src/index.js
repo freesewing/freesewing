@@ -10,25 +10,25 @@ import config from '../config'
 import draftFbaFront from './fba-front'
 
 // Create design
-const Pattern = new freesewing.Design(config, [plugins, flipPlugin, buttonPlugin, bustPlugin])
+const Simone = new freesewing.Design(config, [plugins, flipPlugin, buttonPlugin, bustPlugin])
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = function (part) {
+Simone.prototype.draftBase = function (part) {
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftFrontBase = function (part) {
+Simone.prototype.draftFrontBase = function (part) {
   return new Brian(this.settings).draftFront(part)
 }
-Pattern.prototype.draftBackBase = function (part) {
+Simone.prototype.draftBackBase = function (part) {
   return new Brian(this.settings).draftBack(part)
 }
-Pattern.prototype.draftSleeveBase = function (part) {
+Simone.prototype.draftSleeveBase = function (part) {
   let brian = new Brian(this.settings)
   return brian.draftSleeve(brian.draftSleevecap(part))
 }
 
 // Attach draft methods from Simon
-let simonParts = [
+const simonParts = [
   'Back',
   'Front',
   'FrontRight',
@@ -44,13 +44,17 @@ let simonParts = [
   'Cuff',
 ]
 
-for (let Part of simonParts) {
-  Pattern.prototype[`draft${Part}`] = function (part) {
+for (const Part of simonParts) {
+  Simone.prototype[`draft${Part}`] = function (part) {
     let simon = new Simon(this.settings)
     return simon[`draft${Part}`](part)
   }
 }
 
-Pattern.prototype.draftFbaFront = draftFbaFront
+Simone.prototype.draftFbaFront = draftFbaFront
 
-export default Pattern
+// Named exports
+export { config, Simone }
+
+// Default export
+export default Simone

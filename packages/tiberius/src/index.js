@@ -4,8 +4,12 @@ import config from '../config'
 import draftTunica from './tunica'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Tiberius = new freesewing.Design(config, plugins)
 
-Pattern.prototype.draftTunica = draftTunica
+Tiberius.prototype.draftTunica = draftTunica
 
-export default Pattern
+// Named exports
+export { config, Tiberius }
+
+// Default export
+export default Tiberius

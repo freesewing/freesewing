@@ -1,35 +1,24 @@
-import pkg from '../package.json'
+import { version } from '../package.json'
+import Brian from '@freesewing/brian'
 
-export default {
+const config = {
+  version,
   name: 'simon',
-  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
   type: 'pattern',
   difficulty: 4,
   optionGroups: {
-    fit: [
-      'chestEase',
-      'collarEase',
-      'bicepsEase',
-      'cuffEase',
-      'shoulderEase',
-      'lengthBonus',
-      'sleeveLengthBonus',
-      'waistEase',
-      'hipsEase',
-      'roundBack',
-    ],
+    fit: [...Brian.config.optionGroups.fit, 'waistEase', 'hipsEase', 'roundBack'],
     style: [
+      ...Brian.config.optionGroups.style,
       'hemStyle',
       'hemCurve',
       'boxPleat',
       'backDarts',
       'splitYoke',
       'yokeHeight',
-      's3Collar',
-      's3Armhole',
       {
         closure: [
           'extraTopButton',
@@ -69,54 +58,14 @@ export default {
       },
     ],
     advanced: [
-      'acrossBackFactor',
-      'armholeDepthFactor',
-      'backNeckCutout',
-      'frontArmholeDeeper',
-      'shoulderSlopeReduction',
-      'sleeveWidthGuarantee',
+      ...Brian.config.optionGroups.advanced,
       'boxPleatWidth',
       'boxPleatFold',
       'backDartShaping',
       'ffsa',
-      {
-        sleevecap: [
-          'sleevecapEase',
-          'sleevecapTopFactorX',
-          'sleevecapTopFactorY',
-          'sleevecapBackFactorX',
-          'sleevecapBackFactorY',
-          'sleevecapFrontFactorX',
-          'sleevecapFrontFactorY',
-          'sleevecapQ1Offset',
-          'sleevecapQ2Offset',
-          'sleevecapQ3Offset',
-          'sleevecapQ4Offset',
-          'sleevecapQ1Spread1',
-          'sleevecapQ1Spread2',
-          'sleevecapQ2Spread1',
-          'sleevecapQ2Spread2',
-          'sleevecapQ3Spread1',
-          'sleevecapQ3Spread2',
-          'sleevecapQ4Spread1',
-          'sleevecapQ4Spread2',
-        ],
-      },
     ],
   },
-  measurements: [
-    'biceps',
-    'chest',
-    'hpsToWaistBack',
-    'waist',
-    'waistToHips',
-    'neck',
-    'shoulderSlope',
-    'shoulderToShoulder',
-    'hips',
-    'shoulderToWrist',
-    'wrist',
-  ],
+  measurements: [...Brian.config.measurements, 'waist', 'hips'],
   dependencies: {
     sleeveBase: ['frontBase', 'backBase', 'back'],
     sleeve: ['sleeveBase', 'front', 'back'],
@@ -145,35 +94,61 @@ export default {
   parts: ['collarStand', 'collar', 'sleevePlacketUnderlap', 'sleevePlacketOverlap', 'cuff'],
   hide: ['base', 'frontBase', 'front', 'backBase', 'sleeveBase'],
   options: {
-    // Constants
+    ...Brian.config.options,
+
+    // Constants | Cannot be changed
     collarFactor: 5,
-    brianFitCollar: true,
-    brianFitSleeve: true,
     cuffOverlap: 0.15,
     frenchCuffRoundFactor: 0.05,
 
-    // Booleans
-    extraTopButton: { bool: true },
-    splitYoke: { bool: false },
-    barrelCuffNarrowButton: { bool: true },
-    seperateButtonPlacket: { bool: false },
-    seperateButtonholePlacket: { bool: false },
+    // Back
+    backDarts: {
+      list: ['auto', 'never', 'always'],
+      dflt: 'auto',
+    },
+    backDartShaping: { pct: 25, min: 5, max: 75 },
+    boxPleat: { bool: false },
+    boxPleatFold: { pct: 15, min: 10, max: 20 },
+    boxPleatWidth: { pct: 7, min: 4, max: 10 },
+    roundBack: { pct: 0, min: 0, max: 10 },
 
-    // Lists
-    hemStyle: {
-      list: ['straight', 'baseball', 'slashed'],
-      dflt: 'straight',
-    },
-    buttonPlacketStyle: {
-      list: ['classic', 'seamless'],
-      dflt: 'classic',
-      hide: (options) => options.seperateButtonPlacket,
-    },
+    // Buttons
+    buttonFreeLength: { pct: 2, min: 0, max: 15 },
     buttonholePlacketStyle: {
       list: ['classic', 'seamless'],
       dflt: 'seamless',
       hide: (options) => options.seperateButtonholePlacket,
     },
+    buttonholePlacketWidth: { pct: 8, min: 4, max: 12 },
+    buttonholePlacketFoldWidth: { pct: 16, min: 8, max: 24 },
+    buttonPlacketStyle: {
+      list: ['classic', 'seamless'],
+      dflt: 'classic',
+      hide: (options) => options.seperateButtonPlacket,
+    },
+    buttonPlacketWidth: { pct: 5, min: 2, max: 8 },
+    extraTopButton: { bool: true },
+    seperateButtonPlacket: { bool: false },
+    seperateButtonholePlacket: { bool: false },
+
+    // Collar
+    collarAngle: { deg: 85, min: 60, max: 130 },
+    collarBend: { pct: 3.5, min: 0, max: 10 },
+    collarFlare: { deg: 3.5, min: 0, max: 10 },
+    collarGap: { pct: 2.5, min: 0, max: 6 },
+    collarRoll: { pct: 3, min: 0, max: 6 },
+
+    // Collar stand
+    collarStandBend: { deg: 3, min: 0, max: 5 },
+    collarStandCurve: { deg: 2, min: 0, max: 5 },
+    collarStandWidth: { pct: 8, min: 3, max: 13 },
+
+    // Cuffs
+    barrelCuffNarrowButton: { bool: true },
+    cuffButtonRows: { count: 1, min: 1, max: 2 },
+    cuffDrape: { pct: 5, min: 0, max: 10 },
+    cuffEase: { pct: 20, min: 10, max: 40 },
+    cuffLength: { pct: 10, min: 3, max: 15 },
     cuffStyle: {
       list: [
         'roundedBarrelCuff',
@@ -185,81 +160,33 @@ export default {
       ],
       dflt: 'angledBarrelCuff',
     },
-    backDarts: {
-      list: ['auto', 'never', 'always'],
-      dflt: 'auto',
-    },
 
-    // Bool
-    boxPleat: { bool: false },
-    // Counters
-    buttons: { count: 7, min: 4, max: 12 },
-    cuffButtonRows: { count: 1, min: 1, max: 2 },
-
-    // Angles
-    collarAngle: { deg: 85, min: 60, max: 130 },
-    collarStandBend: { deg: 3, min: 0, max: 5 },
-    collarStandCurve: { deg: 2, min: 0, max: 5 },
-    collarFlare: { deg: 4, min: 0, max: 10 },
-
-    // Used to be millimeter (now pct)
-    buttonPlacketWidth: { pct: 5, min: 2, max: 8 },
-    buttonholePlacketWidth: { pct: 8, min: 4, max: 12 },
-    buttonholePlacketFoldWidth: { pct: 16, min: 8, max: 24 },
-    collarStandWidth: { pct: 8, min: 3, max: 13 },
-    sleevePlacketWidth: { pct: 13, min: 8, max: 18 },
-    boxPleatWidth: { pct: 7, min: 4, max: 10 },
-    boxPleatFold: { pct: 15, min: 10, max: 20 },
-
-    // Percentages
-    acrossBackFactor: { pct: 97, min: 93, max: 100 },
-    armholeDepthFactor: { pct: 60, min: 50, max: 70 },
-    backNeckCutout: { pct: 5, min: 2, max: 8 },
-    bicepsEase: { pct: 15, min: 10, max: 35 },
-    buttonFreeLength: { pct: 2, min: 0, max: 15 },
-    chestEase: { pct: 15, min: 10, max: 35 },
-    collarBend: { pct: 5, min: 0, max: 10 },
-    collarEase: { pct: 3.5, min: 2, max: 10 },
-    collarGap: { pct: 3, min: 0, max: 6 },
-    collarRoll: { pct: 3, min: 0, max: 6 },
-    cuffDrape: { pct: 5, min: 0, max: 10 },
-    cuffEase: { pct: 20, min: 10, max: 40 },
-    cuffLength: { pct: 10, min: 3, max: 15 },
-    frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5 },
+    // Hem & hips
     hemCurve: { pct: 50, min: 25, max: 100 },
+    hemStyle: {
+      list: ['straight', 'baseball', 'slashed'],
+      dflt: 'straight',
+    },
     hipsEase: { pct: 15, min: 10, max: 35 },
     lengthBonus: { pct: 25, min: -4, max: 60 },
-    roundBack: { pct: 0, min: 0, max: 10 },
+
+    // Shoulders
     shoulderEase: { pct: 2, min: 0, max: 15 },
-    shoulderSlopeReduction: { pct: 0, min: 0, max: 8 },
+    splitYoke: { bool: false },
     yokeHeight: { pct: 55, min: 10, max: 90 },
-    // s3 is short for Shoulder Seam Shift
-    s3Collar: { pct: 0, min: -100, max: 100 },
-    s3Armhole: { pct: 0, min: -100, max: 100 },
-    ffsa: { pct: 150, min: 100, max: 200 },
-    sleevecapEase: { pct: 0, min: 0, max: 3 },
-    sleevecapTopFactorX: { pct: 50, min: 25, max: 75 },
-    sleevecapTopFactorY: { pct: 100, min: 35, max: 165 },
-    sleevecapBackFactorX: { pct: 60, min: 35, max: 65 },
-    sleevecapBackFactorY: { pct: 33, min: 30, max: 65 },
-    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65 },
-    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65 },
-    sleevecapQ1Offset: { pct: 5, min: 3, max: 7 },
-    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7 },
-    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7 },
-    sleevecapQ4Offset: { pct: 1, min: 0, max: 7 },
-    sleevecapQ1Spread1: { pct: 6, min: 4, max: 20 },
-    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20 },
-    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20 },
-    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20 },
-    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20 },
-    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20 },
-    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
-    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
-    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+
+    // Sleeve
+    sleeveLengthBonus: { pct: 3.5, min: -40, max: 10 },
     sleevePlacketLength: { pct: 25, min: 15, max: 35 },
+    sleevePlacketWidth: { pct: 13, min: 8, max: 18 },
+
+    // Waist
+    buttons: { count: 7, min: 4, max: 12 },
     waistEase: { pct: 15, min: 10, max: 35 },
-    backDartShaping: { pct: 25, min: 5, max: 75 },
+
+    // Various
+    ffsa: { pct: 150, min: 100, max: 200 }, // Flat-felled seam allowance
   },
 }
+
+export default config

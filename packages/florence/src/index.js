@@ -5,9 +5,13 @@ import config from '../config'
 import draftMask from './mask'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Florence = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftMask = draftMask
+Florence.prototype.draftMask = draftMask
 
-export default Pattern
+// Named exports
+export { config, Florence }
+
+// Default export
+export default Florence

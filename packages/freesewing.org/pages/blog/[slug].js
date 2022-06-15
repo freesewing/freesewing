@@ -1,12 +1,16 @@
-import Page from 'shared/components/wrappers/page.js'
+import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import strapiLoader from 'shared/strapi/loader'
-import { posts } from 'site/prebuild/strapi.blog.en.js'
 import TimeAgo from 'react-timeago'
 import MdxWrapper from 'shared/components/wrappers/mdx'
+import mdxCompiler from 'shared/mdx/compiler'
 import Markdown from 'react-markdown'
 import Head from 'next/head'
-import HelpUs from 'site/components/help-us.js'
+import Lightbox from 'shared/components/lightbox.js'
+import ImageWrapper from 'shared/components/wrappers/img.js'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { strapiHost } from 'shared/config/freesewing.mjs'
+import { strapiImage } from 'shared/utils.js'
+import { useTranslation } from 'next-i18next'
 
 const strapi = "https://posts.freesewing.org"
 
@@ -18,7 +22,7 @@ const Author = ({ author }) => (
           w-lg bg-cover bg-center rounded-full aspect-square
           hidden lg:block
         `}
-        style={{backgroundImage: `url(${strapi}${author?.img})`}}
+        style={{backgroundImage: `url(${strapiHost}${author?.image?.sizes?.small?.url})`}}
       >
       </div>
     </div>
@@ -26,10 +30,10 @@ const Author = ({ author }) => (
     <div className="theme-gradient p-2 rounded-full aspect-square w-40 h-40 lg:hidden m-auto">
       <img
         className={`block w-full h-full mx-auto rounded-full`}
-        src={`${strapi}${author?.img}`}
+        src={`${strapiHost}${author?.image?.sizes.small.url}`}
         alt={author?.displayname}
-        width={author?.picture?.width}
-        height={author?.picture?.height}
+        width={author?.image?.sizes.small.w}
+        height={author?.image?.sizes.small.h}
       />
     </div>
     <div className={`
@@ -42,7 +46,7 @@ const Author = ({ author }) => (
         <span className="text-sm pl-2 opacity-70">Wrote this</span>
       </p>
       <div className="prose mdx">
-        <Markdown>{author?.about}</Markdown>
+        <MdxWrapper mdx={author?.mdx} />
       </div>
     </div>
   </div>
@@ -79,15 +83,19 @@ const PostPage = ({ post, author }) => {
           </span>
         </div>
         <figure>
-          <img
-            src={`${strapi}${post.image.formats.large.url}`}
-            alt={post.caption}
-            className="shadow m-auto"
-          />
-          <figcaption
-            className="text-center mb-8 prose m-auto"
-            dangerouslySetInnerHTML={{__html: post.caption}}
-          />
+          <Lightbox>
+            <ImageWrapper>
+              <img
+                src={`${strapiHost}${post.image.url}`}
+                alt={post.caption}
+                className="shadow m-auto"
+              />
+            </ImageWrapper>
+            <figcaption
+              className="text-center mb-8 prose m-auto mt-1"
+              dangerouslySetInnerHTML={{__html: post.caption}}
+            />
+          </Lightbox>
         </figure>
         <div className="strapi prose lg:prose-lg mb-12 m-auto">
           <MdxWrapper mdx={post.mdx} app={app} />
@@ -95,28 +103,76 @@ const PostPage = ({ post, author }) => {
         <div className="max-w-prose text-lg lg:text-xl">
           <Author author={author} />
         </div>
-        <HelpUs blog slug={`/blog/${post.slug}`} />
       </article>
     </Page>
   )
 }
 
-export const getStaticProps = async (props) => {
-  const { post, author } = await strapiLoader('en', 'dev', 'blog', props.params.slug)
+/*
+ * getStaticProps() is used to fetch data at build-time.
+ *
+ * On this page, it is loading the blog content from strapi.
+ *
+ * This, in combination with getStaticPaths() below means this
+ * page will be used to render/generate all blog content.
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
+export async function getStaticProps({ params, locale }) {
 
-  return { props: { post, author, slug: `blog/${props.params.slug}` } }
+  const { slug } = params
+  const post = await fetch(
+    `${strapiHost}/blogposts?_locale=${locale}&dev_ne=true&slug_eq=${slug}`
+  )
+  .then(response => response.json())
+  .then(data => data[0])
+  .catch(err => console.log(err))
+
+  return {
+    props: {
+      post: {
+        slug,
+        ...(await mdxCompiler(post.body)),
+        title: post.title,
+        date: post.date,
+        caption: post.caption,
+        image: {
+          w: post.image.width,
+          h: post.image.height,
+          url: post.image.url
+        },
+      },
+      author: {
+        displayname: post.author.displayname,
+        slug: post.author.slug,
+        about: post.author.about,
+        image: strapiImage(post.author.picture, ['small']),
+        ...(await mdxCompiler(post.author.about)),
+      },
+      ...(await serverSideTranslations(locale)),
+    }
+  }
 }
 
 export const getStaticPaths = async () => {
-  const paths = []
-  for (const post of posts) paths.push({
-    params: {slug: post.slug}
-  })
+  const paths = await fetch(
+    `${strapiHost}/blogposts?_locale=en&dev_ne=true&_limit=-1`
+  )
+  .then(response => response.json())
+  .then(data => data.map(post => `/blog/${post.slug}`))
+  .catch(err => console.log(err))
 
   return {
-    paths,
+    paths: [
+      ...paths,
+      ...paths.map(p => `/de${p}`),
+      ...paths.map(p => `/es${p}`),
+      ...paths.map(p => `/fr${p}`),
+      ...paths.map(p => `/nl${p}`),
+    ],
     fallback: false,
   }
 }
 
 export default PostPage
+

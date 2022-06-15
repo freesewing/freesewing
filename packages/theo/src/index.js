@@ -21,25 +21,29 @@ import draftBackPocketInterfacing from './back-pocket-interfacing'
 import draftBeltLoop from './belt-loop'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Theo = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBack = (part) => draftBack(part)
-Pattern.prototype.draftFront = (part) => draftFront(part)
-Pattern.prototype.draftWaistbandInterfacingLeft = (part) => draftWaistbandInterfacingLeft(part)
-Pattern.prototype.draftWaistbandInterfacingRight = (part) => draftWaistbandInterfacingRight(part)
-Pattern.prototype.draftWaistbandLiningLeft = (part) => draftWaistbandLiningLeft(part)
-Pattern.prototype.draftWaistbandLiningRight = (part) => draftWaistbandLiningRight(part)
-Pattern.prototype.draftWaistbandLeft = (part) => draftWaistbandLeft(part)
-Pattern.prototype.draftWaistbandRight = (part) => draftWaistbandRight(part)
-Pattern.prototype.draftFlyPiece = (part) => draftFlyPiece(part)
-Pattern.prototype.draftFlyShield = (part) => draftFlyShield(part)
-Pattern.prototype.draftSidePiece = (part) => draftSidePiece(part)
-Pattern.prototype.draftFrontPocketBag = (part) => draftFrontPocketBag(part)
-Pattern.prototype.draftBackInnerPocketBag = (part) => draftBackInnerPocketBag(part)
-Pattern.prototype.draftBackOuterPocketBag = (part) => draftBackOuterPocketBag(part)
-Pattern.prototype.draftBackPocketFacing = (part) => draftBackPocketFacing(part)
-Pattern.prototype.draftBackPocketInterfacing = (part) => draftBackPocketInterfacing(part)
-Pattern.prototype.draftBeltLoop = (part) => draftBeltLoop(part)
+Theo.prototype.draftBack = (part) => draftBack(part)
+Theo.prototype.draftFront = (part) => draftFront(part)
+Theo.prototype.draftWaistbandInterfacingLeft = (part) => draftWaistbandInterfacingLeft(part)
+Theo.prototype.draftWaistbandInterfacingRight = (part) => draftWaistbandInterfacingRight(part)
+Theo.prototype.draftWaistbandLiningLeft = (part) => draftWaistbandLiningLeft(part)
+Theo.prototype.draftWaistbandLiningRight = (part) => draftWaistbandLiningRight(part)
+Theo.prototype.draftWaistbandLeft = (part) => draftWaistbandLeft(part)
+Theo.prototype.draftWaistbandRight = (part) => draftWaistbandRight(part)
+Theo.prototype.draftFlyPiece = (part) => draftFlyPiece(part)
+Theo.prototype.draftFlyShield = (part) => draftFlyShield(part)
+Theo.prototype.draftSidePiece = (part) => draftSidePiece(part)
+Theo.prototype.draftFrontPocketBag = (part) => draftFrontPocketBag(part)
+Theo.prototype.draftBackInnerPocketBag = (part) => draftBackInnerPocketBag(part)
+Theo.prototype.draftBackOuterPocketBag = (part) => draftBackOuterPocketBag(part)
+Theo.prototype.draftBackPocketFacing = (part) => draftBackPocketFacing(part)
+Theo.prototype.draftBackPocketInterfacing = (part) => draftBackPocketInterfacing(part)
+Theo.prototype.draftBeltLoop = (part) => draftBeltLoop(part)
 
-export default Pattern
+// Named exports
+export { config, Theo }
+
+// Default export
+export default Theo

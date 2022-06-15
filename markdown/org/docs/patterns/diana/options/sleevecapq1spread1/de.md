@@ -1,6 +1,10 @@
-![Die Abwärtsverteilung im ersten Quadranten der Ärmel](./sleevecapq1downwardspread.svg)
+- - -
+title: "Sleevecap Q1 downward spread"
+- - -
 
-Diese Option steuert die Abwärtsverteilung im ersten Quadranten der Ärmel.
+![The downward spread in the first quadrant of the sleevecap](./sleevecapq1downwardspread.svg)
+
+This option controls the downward spread in the first quadrant of the sleevecap.
 
 <Tip>
 
@@ -9,4 +13,5 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 </Tip>
 
 ## Effekt dieser Option auf das Schnittmuster
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](diana_sleevecapq1spread1_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](diana_sleevecapq1spread1_sample.svg "Effect of this option on the pattern")

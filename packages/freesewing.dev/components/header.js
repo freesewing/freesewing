@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Logo from 'shared/components/logos/freesewing.js'
+import FreeSewingIcon from 'shared/components/icons/freesewing.js'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
@@ -46,6 +46,8 @@ const Header = ({ app, setSearch }) => {
         z-30
         transition-transform
         ${show ? '': 'fixed top-0 left-0 -translate-y-20'}
+        drop-shadow-xl
+        ${app.loading ? "theme-gradient loading" : ""}
       `}>
         <div className="max-w-6xl m-auto">
           <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
@@ -55,7 +57,7 @@ const Header = ({ app, setSearch }) => {
                 text-neutral-content bg-transparent
                 border border-transparent
                 hover:bg-transparent hover:border-base-100
-                sm:hidden
+                md:hidden
                 h-12
               `}
               onClick={app.togglePrimaryMenu}>
@@ -79,14 +81,15 @@ const Header = ({ app, setSearch }) => {
                   )
                 }
             </button>
-            <div className="flex flex-row gap-2 sm:hidden">
-              <button className="btn btn-sm btn h-12 px-12" onClick={() => setSearch(true)}>
+            <div className="flex flex-row items-center md:hidden pr-4">
+              <button onClick={() => setSearch(true)} className="btn btn-sm">
                 <SearchIcon />
               </button>
+              <ThemePicker app={app} iconOnly />
             </div>
             <button className={`
               btn btn-sm h-12
-              hidden sm:flex
+              hidden md:flex
               flex-row gap-1 mr-4 w-64 px-2
               bg-base-100 text-base-content
               hover:bg-base-100 hover:text-base-content
@@ -101,24 +104,20 @@ const Header = ({ app, setSearch }) => {
             <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">
                 <a className="flex flex-column items-center">
-                  <Logo size={36} fill="currentColor" stroke={false} />
+                  <FreeSewingIcon className="h-10 w-10"/>
                 </a>
               </Link>
               <Link href="/">
-                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12">
-                  freesewing.dev
+                <a role="button" className="btn btn-link btn-sm text-neutral-content h-12 font-normal lowercase text-2xl">
+                  <span className="font-black px-1 normal-case">FreeSewing</span>.dev
                 </a>
               </Link>
             </div>
-            <div className="hidden sm:flex flex-row items-center">
+            <div className="hidden md:flex flex-row items-center">
               <ThemePicker app={app} />
             </div>
           </div>
         </div>
-        <div className={`
-          theme-gradient h-1 w-full z-10 relative -mb-1
-          ${app.loading ? 'loading' : ''}
-        `}></div>
       </header>
   )
 }

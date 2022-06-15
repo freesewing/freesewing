@@ -2,13 +2,13 @@
 title: "@freesewing/plugin-notches"
 ---
 
-The **@freesewing/plugin-notces** plugin provides the following [snippets](/reference/api/snippets):
+The **@freesewing/plugin-notches** plugin provides the following [snippets](/reference/api/snippets):
 
 - [notch](/reference/api/snippets/notch)
 - [bnotch](/reference/api/snippets/bnotch)
 
 <Example part="plugin_notches">
-An example of the button, buttonhole, buttonhole-start, buttonhole-end, snap-stud, and snap-socket snippets
+An example of the notch and bnotch snippets
 </Example>
 
 <Tip>

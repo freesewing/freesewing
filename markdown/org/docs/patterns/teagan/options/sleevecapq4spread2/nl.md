@@ -1,3 +1,7 @@
+- - -
+title: "Sleevecap Q4 downward spread"
+- - -
+
 ![De neerwaartse spreiding in het vierde quadrant van de mouwkop](./sleevecapq4spread2.svg)
 
 Deze optie controleert de neerwaartse spreiding in de vierde quadrant van de mouwkop.
@@ -10,4 +14,5 @@ kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties o
 </Tip>
 
 ## Effect van deze optie op het patroon
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_sleevecapq4spread2_sample.svg "Effect van deze optie op het patroon")
+
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_sleevecapq4spread2_sample.svg "Effect of this option on the pattern")

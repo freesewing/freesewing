@@ -1,6 +1,18 @@
 # Change log for: @freesewing/simone
 
 
+## 2.20.8 (2022-05-21)
+
+### Changed
+
+ - Better defaults for sleevecap and armhole depth
+ - Slightly higher collar vs collar stand
+ - Simone now extends the Simon config
+
+### Fixed
+
+ - Fixed issue with the sleeve length
+
 ## 2.20.5 (2022-02-17)
 
 ### Fixed

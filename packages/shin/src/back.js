@@ -117,7 +117,13 @@ export default function (part) {
       nr: 1,
       title: 'back',
     })
-    macro('scalebox', { at: new Point(points.legSide.x + 80, points.legSide.y - 40) })
+    macro('scalebox', { at: new Point(points.legSide.x + 100, points.legSide.y - 40) })
+    points.grainlineFrom = points.legSide.shift(0, 15)
+    points.grainlineTo = points.hipSide.shift(0, 15)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
     if (sa) {
       paths.sa = paths.hemBase
         .offset(3 * sa)

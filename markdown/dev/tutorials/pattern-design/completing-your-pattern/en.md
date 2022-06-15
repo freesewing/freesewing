@@ -99,7 +99,7 @@ snippets.logo = new Snippet("logo", points.logo)
 
 <Note>
 
-You can find all possible snippets in [our documentation](/reference/snippets/).
+You can find all possible snippets in [our documentation](/reference/api/snippet/).
 
 </Note>
 
@@ -140,7 +140,7 @@ The `path.offset()` method makes it trivial to add seam allowance, since it will
 a path parallel to the given path at the distance you pass it. 9 times out of 10, you'll be using it as `path.offset(sa)`.
 
 Note that we're also using the attributes again, to change the look of the line, and add text to it,
-as explained in [Adding text](/concepts/adding-text).
+as explained in [Adding text](/howtos/code/adding-text).
 
 ## Scalebox and title
 

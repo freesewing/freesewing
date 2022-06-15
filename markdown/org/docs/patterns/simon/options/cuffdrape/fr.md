@@ -1,3 +1,7 @@
+- - -
+title: "Cuff drape"
+- - -
+
 ![Drapé du bas de manche](cuffdrape.svg)
 
 Combien la fin de la manche est plus large que le poignet.
@@ -13,4 +17,4 @@ Le drapé sera travaillé dans le manche avec des plis.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cuffdrape_sample.svg "Effet de cette option sur le motif")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cuffdrape_sample.svg "Effect of this option on the pattern")

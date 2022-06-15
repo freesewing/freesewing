@@ -16,20 +16,24 @@ import draftStep10 from './step10'
 import draftStep11 from './step11'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Tutorial = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftBib = draftBib
-Pattern.prototype.draftStep1 = draftStep1
-Pattern.prototype.draftStep2 = draftStep2
-Pattern.prototype.draftStep3 = draftStep3
-Pattern.prototype.draftStep4 = draftStep4
-Pattern.prototype.draftStep5 = draftStep5
-Pattern.prototype.draftStep6 = draftStep6
-Pattern.prototype.draftStep7 = draftStep7
-Pattern.prototype.draftStep8 = draftStep8
-Pattern.prototype.draftStep9 = draftStep9
-Pattern.prototype.draftStep10 = draftStep10
-Pattern.prototype.draftStep11 = draftStep11
+Tutorial.prototype.draftBib = draftBib
+Tutorial.prototype.draftStep1 = draftStep1
+Tutorial.prototype.draftStep2 = draftStep2
+Tutorial.prototype.draftStep3 = draftStep3
+Tutorial.prototype.draftStep4 = draftStep4
+Tutorial.prototype.draftStep5 = draftStep5
+Tutorial.prototype.draftStep6 = draftStep6
+Tutorial.prototype.draftStep7 = draftStep7
+Tutorial.prototype.draftStep8 = draftStep8
+Tutorial.prototype.draftStep9 = draftStep9
+Tutorial.prototype.draftStep10 = draftStep10
+Tutorial.prototype.draftStep11 = draftStep11
 
-export default Pattern
+// Named exports
+export { config, Tutorial }
+
+// Default export
+export default Tutorial

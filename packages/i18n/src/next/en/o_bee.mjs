@@ -51,6 +51,8 @@ const o_bee = {
   "frontArmholePitchDepth.d": "Controls the front armhole pitch depth in the underlying Bella block Bee is based on",
   "frontShoulderWidth.t": "Front shoulder width (Bella)",
   "frontShoulderWidth.d": "Controls the front shoulder width in the underlying Bella block Bee is based on",
+  "fullChestEaseReduction.t": "Full chest reduction (Bella)",
+  "fullChestEaseReduction.d": "Controls the full chest reduction in the underlying Bella block Bee is based on",
   "highBustWidth.t": "High bust width (Bella)",
   "highBustWidth.d": "Controls the high bust width in the underlying Bella block Bee is based on"
 }
