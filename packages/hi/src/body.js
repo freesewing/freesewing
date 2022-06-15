@@ -467,6 +467,9 @@ export default function (part) {
     new Path().move(points.body15).curve(points.body15cp1, points.body16cp2, points.body16).length()
   )
 
+  // Reduce precision as size goes up coz performance
+  store.set('tolerance', (options.size < 1) ? 1 : options.size*100)
+
   // Complete?
   if (complete) {
     points.bodyTailSnippet = new Path()
