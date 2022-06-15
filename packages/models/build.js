@@ -15,7 +15,7 @@ const options = {
   banner: { js: banner },
   bundle: true,
   entryPoints: ['src/index.js'],
-  external: ["@freesewing"],
+//  external: ["@freesewing"],
   metafile: process.env.VERBOSE ? true : false,
   minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,

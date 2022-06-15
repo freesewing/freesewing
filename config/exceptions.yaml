@@ -39,6 +39,7 @@ customBuild:
   - freesewing.org
   - gatsby-remark-jargon
   - i18n
+  - models
   - prettier-config
   - remark-jargon
   - strapi
