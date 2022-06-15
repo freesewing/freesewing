@@ -144,6 +144,10 @@ packageJson:
   svgtopdf:
     private: true
   tiberius: *starf
+  unice:
+    author: Anna Puk (https://github.com/anna-puk)
+  ursula:
+    author: Natalia Sayang (https://github.com/nataliasayang)
   utils:
     # react-scripts doesn't handle .mjs files correctly
     module: '!'
