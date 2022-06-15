@@ -99,6 +99,8 @@ packageJson:
     private: true
   freesewing.shared:
     private: true
+  hi:
+    author: woutervdub (https://github.com/woutervdub)
   holmes:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
