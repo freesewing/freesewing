@@ -133,8 +133,6 @@ export default function (part) {
   var frontHeightReduced
   frontHeightReduced = frontHeightBelow + store.get('frontHeightAbove')
 
-  console.log({fabricStretchY: options.fabricStretchY, storedYScale: store.get('yScale'), storedYScaleReduced: store.get('yScaleReduced'), frontHeight: store.get('frontHeight'), frontHeightReduced: frontHeightReduced})
-
   // gusset width uses modified xScale (barely stretches) and depends on waistToUpperLeg - least sensitive to girth
   points.frontGussetLeft = new Point(
     measurements.seat / 4 - (measurements.waistToSeat * options.gussetWidth * store.get('xScaleReduced')) * 2.2,

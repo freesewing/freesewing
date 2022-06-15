@@ -1,16 +1,16 @@
-import pkg from '../package.json'
-import Ursula from '@freesewing/ursula'
+import { version } from '../package.json'
+import { config as ursulaConfig } from '@freesewing/ursula'
 
 const design = ['Anna Puk', 'Natalia Sayang']
 
 const config = {
-  ...Ursula.config,
+  ...ursulaConfig,
+  version,
   design,
   code: design,
-  version: pkg.version,
   name: 'unice',
   inject: {
-    ...Ursula.config.inject,
+    ...ursulaConfig.inject,
     front: 'ursulaFront',
     back: 'ursulaBack',
     gusset: 'ursulaGusset',
@@ -20,7 +20,7 @@ const config = {
   optionalMeasurements: ['crossSeam','crossSeamFront'],
   measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg','hips','waistToHips'],
   optionGroups: {
-    ...Ursula.config.optionGroups,
+    ...ursulaConfig.optionGroups,
     fit: [
       'fabricStretchX',
       'fabricStretchY',
@@ -32,7 +32,7 @@ const config = {
     ],
   },
   options: {
-    ...Ursula.options,
+    ...ursulaConfig.options,
     gussetShift: 0.015, // fraction of seat circumference - could be an advanced option?
     gussetWidth: { pct: 7.2, min: 2, max: 12 }, // Gusset width in relation to waist-to-upperleg
     fabricStretchX: { pct: 15, min: 0, max: 100 }, // horizontal stretch (range set wide for beta testing)
