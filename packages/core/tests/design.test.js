@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("./dist");
+let freesewing = require("../dist/index.js");
 
 it("Design constructor should return pattern constructor", () => {
   let design = new freesewing.Design({

@@ -1,9 +1,9 @@
-import pkg from '../package.json'
-import Brian from '@freesewing/brian'
+import { version } from '../package.json'
+import { config as brianConfig } from '@freesewing/brian'
 
 const config = {
+  version,
   name: 'teagan',
-  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -12,9 +12,9 @@ const config = {
   optionGroups: {
     fit: ['chestEase', 'hipsEase', 'sleeveEase', 'draftForHighBust'],
     style: ['necklineWidth', 'necklineDepth', 'necklineBend', 'lengthBonus', 'sleeveLength'],
-    advanced: Brian.config.optionGroups.advanced,
+    advanced: brianConfig.optionGroups.advanced,
   },
-  measurements: [...Brian.config.measurements, 'hips', 'waist'],
+  measurements: [...brianConfig.measurements, 'hips', 'waist'],
   optionalMeasurements: ['highBust'],
   dependencies: {
     front: 'base',
@@ -29,7 +29,7 @@ const config = {
   },
   hide: ['base', 'sleevecap'],
   options: {
-    ...Brian.config.options,
+    ...brianConfig.options,
 
     // Constants
     bicepsEase: 0.05,

@@ -54,7 +54,7 @@ const DesignIndexPage = (props) => {
   return (
     <Page app={app} title={t('showcase')+': '+t(`patterns:${props.design}.t`)} crumbs={crumbs}>
       <div className={`
-        px-8 2xl:pl-16 overflow-visible overscroll-x-hidden
+        2xl:pl-16 overflow-visible overscroll-x-hidden
         max-w-sm
         md:max-w-md
         lg:max-w-lg

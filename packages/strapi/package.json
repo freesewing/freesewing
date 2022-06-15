@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/strapi",
-  "version": "2.20.8",
+  "version": "2.21.0-alpha.0",
   "description": "Freesewing's Strapi instance",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://posts.freesewing.org/",
@@ -47,9 +47,9 @@
   "files": [],
   "publishConfig": {},
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
   },
-  "rollup": {},
-  "private": true
+  "private": true,
+  "rollup": {}
 }

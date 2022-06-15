@@ -74,6 +74,9 @@ packages/freesewing.lab/public/locales/de/*.json
 packages/freesewing.lab/public/locales/fr/*.json
 packages/freesewing.lab/public/locales/nl/*.json
 
+packages/freesewing.org/public/feeds/*
+packages/freesewing.dev/public/feeds/*
+
 packages/freesewing.lab/lib
 packages/freesewing.lab/pages
 

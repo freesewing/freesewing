@@ -3,7 +3,7 @@ const render = require("./fixtures/render.js");
 const expect = require("chai").expect;
 const chai = require("chai");
 chai.use(require("chai-string"));
-const freesewing = require("./dist");
+const freesewing = require("../dist/index.js");
 const round = freesewing.utils.round;
 
 it("Svg constructor should initialize object", () => {

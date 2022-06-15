@@ -14,10 +14,8 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
-    "watch": "rollup -c -w",
-    "start": "rollup -c -w",
-    "cibuild_step1": "rollup -c",
-    "build": "rollup -c",
+    "cibuild_step1": "node build.js",
+    "build": "node build.js",
     "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
     "publish": "npm run build && npm publish --access public"
   },
@@ -27,13 +25,10 @@
   "files": ["dist/*", "README.md", "package.json"],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }

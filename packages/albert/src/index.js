@@ -6,8 +6,8 @@ import draftStrap from './strap'
 import draftPocket from './pocket'
 
 const crossBox = {
-  //name,
-  //version,
+  name: 'crossbox',
+  version: config.version,
   macros: {
     crossBox: function (so) {
       let id = this.getId()
@@ -63,11 +63,15 @@ const crossBox = {
 }
 
 // Create new design
-const Pattern = new freesewing.Design(config, [plugins, crossBox])
+const Albert = new freesewing.Design(config, [plugins, crossBox])
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftStrap = draftStrap
-Pattern.prototype.draftPocket = draftPocket
+Albert.prototype.draftFront = draftFront
+Albert.prototype.draftStrap = draftStrap
+Albert.prototype.draftPocket = draftPocket
 
-export default Pattern
+// Named exports
+export { config, Albert }
+
+// Default export
+export default Albert

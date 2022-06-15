@@ -1,6 +1,6 @@
 {
   "name": "freesewing.org",
-  "version": "2.20.8",
+  "version": "2.21.0-alpha.0",
   "private": true,
   "scripts": {
     "dev": "SITE=org next dev -p 3002",
@@ -40,7 +40,7 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.20.8"
+    "remark-jargon": "^2.21.0-alpha.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

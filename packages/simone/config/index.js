@@ -1,23 +1,23 @@
-import pkg from '../package.json'
-import Simon from '@freesewing/simon'
+import { version } from '../package.json'
+import { config as simonConfig } from '@freesewing/simon'
 
 const config = {
-  ...Simon.config,
+  version,
+  ...simonConfig,
   name: 'simone',
-  version: pkg.version,
   optionGroups: {
-    ...Simon.config.optionGroups,
-    style: [...Simon.config.optionGroups.style, 'contour'],
+    ...simonConfig.optionGroups,
+    style: [...simonConfig.optionGroups.style, 'frontDarts', 'contour'],
     advanced: [
-      ...Simon.config.optionGroups.advanced,
+      ...simonConfig.optionGroups.advanced,
       'bustDartAngle',
       'bustDartLength',
       'frontDartLength',
     ],
   },
-  measurements: [...Simon.config.measurements, 'bustSpan', 'highBust', 'hpsToBust'],
+  measurements: [...simonConfig.measurements, 'bustSpan', 'highBust', 'hpsToBust'],
   inject: {
-    ...Simon.config.inject,
+    ...simonConfig.inject,
     fbaFront: 'front',
     frontRight: 'fbaFront',
     frontLeft: 'fbaFront',
@@ -25,9 +25,9 @@ const config = {
     buttonholePlacket: 'fbaFront',
     sleeveBase: 'fbaFront',
   },
-  hide: [...Simon.config.hide, 'fbaFront'],
+  hide: [...simonConfig.hide, 'fbaFront'],
   options: {
-    ...Simon.config.options,
+    ...simonConfig.options,
 
     // Constants
     minimalDartShaping: 5,
@@ -35,6 +35,7 @@ const config = {
     // Simone specific
     bustDartAngle: { deg: 10, min: 0, max: 20 },
     bustDartLength: { pct: 80, min: 50, max: 90 },
+    frontDarts: { bool: false },
     frontDartLength: { pct: 45, min: 30, max: 60 },
     contour: { pct: 50, min: 30, max: 75 },
   },

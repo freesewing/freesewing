@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/utils",
-  "version": "2.20.8",
+  "version": "2.21.0-alpha.0",
   "description": "A collection of utilities shared across freesewing projects",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -24,14 +24,13 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rimraf dist",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
-    "test": "echo \"utils: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
+    "build": "node build.js",
+    "cibuild_step1": "node build.js",
+    "clean": "rimraf backend && rimraf camelCase && rimraf capitalize && rimraf cloneObject && rimraf convertSize && rimraf defaultGist && rimraf defaultSa && rimraf formatImperial && rimraf formatMm && rimraf isDegMeasurement && rimraf measurementAsMm && rimraf measurementDiffers && rimraf neckstimate && rimraf optionDefault && rimraf optionType && rimraf roundMm && rimraf roundMmDown && rimraf roundMmUp && rimraf sliderStep && rimraf smallestImperialStep && rimraf storage && rimraf tiler && rimraf validateEmail && rimraf validateTld",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w"
+    "test": "echo \"utils: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "vbuild": "VERBOSE=1 node build.js"
   },
   "peerDependencies": {
     "tlds": "^1.221.1",
@@ -67,13 +66,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }

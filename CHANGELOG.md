@@ -3,11 +3,513 @@
 
 ## Unreleased
 
+### aaron
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### albert
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### bee
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### bella
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### benjamin
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### bent
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### breanna
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### brian
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### bruce
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### carlita
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### carlton
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### cathrin
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### charlie
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### components
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### config-helpers
+
+#### Added
+
+ - This new package replaces the previous snapseries package and adds extra helper methods for pattern config such as `pctBasedOn()` which was previously exported by core
+
+### core
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+ - The `pctBasedOn()` helper method for pattern config was moved to config-helpers We did not make this a breaking change since it's only used internally.
+
+### cornelius
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### diana
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### examples
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### florence
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### florent
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### gatsby-remark-jargon
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### holmes
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### hortensia
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### huey
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ### hugo
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
 
 #### Fixed
 
  - Fix incorrect seam allowance Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
+
+### i18n
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Added missing lab namespace for English
+
+### jaeger
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### legend
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### lucy
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### lunetius
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### models
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### mui-theme
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### paco
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### pattern-info
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### penelope
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-banner
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-bartack
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-bundle
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-bust
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-buttons
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-cutonfold
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-dimension
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-export-dxf
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-flip
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-gore
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-grainline
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-i18n
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-logo
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-measurements
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-mirror
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-notches
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-round
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-scalebox
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-sprinkle
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-svgattr
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-theme
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-title
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-validate
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-versionfree-svg
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugintest
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### remark-jargon
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### rendertest
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### sandy
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### shin
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### simon
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
+
+### simone
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Added the frontdarts option back after it was (accidentally) removed
+ - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
+
+### sven
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### tamiko
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### teagan
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Added missing name to config file
+
+### theo
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### tiberius
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### titan
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### trayvon
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### tutorial
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### ursula
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### utils
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### wahid
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### walburga
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### waralee
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### yuri
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
 
 
 ## 2.20.8 (2022-05-21)
@@ -1173,12 +1675,6 @@
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
  - Fix issue with armhole introduced with the S3 options in Brian Closes
-
-### snapseries
-
-#### Added
-
- - Initial release of `@freesewing/snapseries` wich holds commonly used series of snap values for percentage options
 
 ### theo
 

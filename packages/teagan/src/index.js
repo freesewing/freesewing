@@ -21,19 +21,23 @@ const condition = (settings = false) =>
     : false
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins, { plugin, condition })
+const Teagan = new freesewing.Design(config, plugins, { plugin, condition })
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = function (part) {
+Teagan.prototype.draftBase = function (part) {
   // Getting the base part from Brian
   return new Brian(this.settings).draftBase(part)
 }
-Pattern.prototype.draftSleevecap = function (part) {
+Teagan.prototype.draftSleevecap = function (part) {
   // Getting the sleevecap part from Brian
   return new Brian(this.settings).draftSleevecap(part)
 }
-Pattern.prototype.draftFront = (part) => draftFront(part)
-Pattern.prototype.draftBack = (part) => draftBack(part)
-Pattern.prototype.draftSleeve = (part) => draftSleeve(part)
+Teagan.prototype.draftFront = (part) => draftFront(part)
+Teagan.prototype.draftBack = (part) => draftBack(part)
+Teagan.prototype.draftSleeve = (part) => draftSleeve(part)
 
-export default Pattern
+// Named exports
+export { config, Teagan }
+
+// Default export
+export default Teagan

@@ -9,6 +9,7 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkFrontmatterExtractor from 'remark-extract-frontmatter'
 import yaml from 'yaml'
 import { remarkIntroPlugin } from '../mdx/remark-intro-plugin.mjs'
+import { writeFeed } from './feed.mjs'
 
 
 /*
@@ -59,7 +60,7 @@ export const getPosts = async (type, site, lang) => {
 /*
  * Main method that does what needs doing
  */
-export const prebuildStrapi = async(site) => {
+export const prebuildStrapi = async (site) => {
 
   // Say hi
   console.log()
@@ -129,6 +130,9 @@ export const prebuildStrapi = async(site) => {
           }, null, 2)
         )
       }
+
+      // Create RSS/Atom/JSON feeds
+      await writeFeed(site, type, lang, Object.values(posts[type][lang]))
     }
   }
 

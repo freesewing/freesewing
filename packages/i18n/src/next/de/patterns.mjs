@@ -47,6 +47,8 @@ const patterns = {
   "hugo.d": "Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.",
   "jaeger.t": "Jaeger, das Sakko",
   "jaeger.d": "Jaeger ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.",
+  "lucy.t": "Lucy tie-on pocket",
+  "lucy.d": "Lucy is a historical pocket that you can tie around your waist.",
   "lunetius.t": "Lunetius, die Lacerna",
   "lunetius.d": "Lunetius ist eine Lacerna, ein historischer römischer Mantel",
   "paco.t": "Paco, die Hose",

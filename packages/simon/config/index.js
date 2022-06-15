@@ -1,9 +1,9 @@
-import pkg from '../package.json'
+import { version } from '../package.json'
 import Brian from '@freesewing/brian'
 
 const config = {
+  version,
   name: 'simon',
-  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',

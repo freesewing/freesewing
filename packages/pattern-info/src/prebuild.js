@@ -22,6 +22,7 @@ const hortensia = require('@freesewing/hortensia').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
 const jaeger = require('@freesewing/jaeger').config
+const lucy = require('@freesewing/lucy').config
 const lunetius = require('@freesewing/lunetius').config
 const paco = require('@freesewing/paco').config
 const penelope = require('@freesewing/penelope').config
@@ -65,6 +66,7 @@ const patterns = {
   huey,
   hugo,
   jaeger,
+  lucy,
   lunetius,
   paco,
   penelope,
@@ -138,6 +140,7 @@ const optionalMeasurements = {}
 const versions = {}
 const info = {}
 for (let pattern of Object.keys(patterns)) {
+  if (typeof patterns[pattern] === 'undefined') console.log({pattern})
   options[pattern] = patternOptions(patterns[pattern])
   optionGroups[pattern] = patterns[pattern].optionGroups
   parts[pattern] = patternParts(patterns[pattern])

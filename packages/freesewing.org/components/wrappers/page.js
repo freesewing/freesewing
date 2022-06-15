@@ -5,6 +5,8 @@ import { useHotkeys } from 'react-hotkeys-hook'
 // Layouts components
 import LayoutWrapper from 'site/components/wrappers/layout'
 import Docs from 'site/components/layouts/docs'
+// Add feeds
+import Feeds from 'site/components/feeds.js'
 
 const layouts = {
   docs: Docs,
@@ -56,6 +58,7 @@ const PageWrapper= ({
       data-theme={app.theme}
       key={app.theme} // This forces the data-theme update
     >
+      <Feeds lang={app.locale} />
       <LayoutWrapper {...childProps}>
         {Layout
           ? <Layout {...childProps}>{children}</Layout>

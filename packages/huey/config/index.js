@@ -1,9 +1,9 @@
-import pkg from '../package.json'
-import Brian from '@freesewing/brian'
+import { version } from '../package.json'
+import { config as brianConfig } from '@freesewing/brian'
 
 export default {
+  version,
   name: 'huey',
-  version: pkg.version,
   design: 'Joost De Cock',
   code: 'Joost De Cock',
   department: 'tops',
@@ -35,9 +35,9 @@ export default {
       's3Collar',
       's3Armhole',
     ],
-    advanced: Brian.config.optionGroups.advanced,
+    advanced: brianConfig.optionGroups.advanced,
   },
-  measurements: [...Brian.config.measurements, 'head', 'hips'],
+  measurements: [...brianConfig.measurements, 'head', 'hips'],
   dependencies: {
     backBase: 'base',
     frontBase: 'backBase',
@@ -61,7 +61,7 @@ export default {
   hide: ['base', 'sleevecap', 'backBase', 'frontBase', 'sleeveBase'],
   parts: ['hood', 'waistband', 'cuff'],
   options: {
-    ...Brian.config.options,
+    ...brianConfig.options,
 
     // Specific to Huey
     ribbing: { bool: true },

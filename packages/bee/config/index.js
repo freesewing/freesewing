@@ -1,10 +1,10 @@
-import pkg from '../package.json'
-import freesewing from '@freesewing/core'
-const { pctBasedOn } = freesewing
+import { version } from '../package.json'
+import configHelpers from '@freesewing/config-helpers'
+const { pctBasedOn } = configHelpers
 
 export default {
+  version,
   name: 'bee',
-  version: pkg.version,
   design: 'PrudenceRabbit',
   code: 'bobgeorgethe3rd',
   department: 'tops',

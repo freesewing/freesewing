@@ -24,9 +24,9 @@ const config = {
   exceptions: readConfigFile('exceptions.yaml'),
   templates: {
     pkg: readTemplateFile('package.dflt.json'),
-    rollup: readTemplateFile('rollup.config.dflt.js'),
     changelog: readTemplateFile('changelog.dflt.md'),
-    readme: readTemplateFile('readme.dflt.md')
+    readme: readTemplateFile('readme.dflt.md'),
+    build: readTemplateFile('build.dflt.js'),
   }
 }
 
@@ -52,35 +52,6 @@ process.exit()
  */
 function readTemplateFile(file) {
   return fs.readFileSync(path.join(repoPath, 'config', 'templates', file), 'utf-8')
-}
-
-/**
- * Reads a pattern example file
- */
-function readExampleFile(file, subdir = false) {
-  return fs.readFileSync(
-    subdir
-      ? path.join(
-          repoPath,
-          'packages',
-          'create-freesewing-pattern',
-          'template',
-          'default',
-          'example',
-          file
-        )
-      : path.join(
-          repoPath,
-          'packages',
-          'create-freesewing-pattern',
-          'template',
-          'default',
-          'example',
-          subdir,
-          file
-        ),
-    'utf-8'
-  )
 }
 
 /**
@@ -230,9 +201,6 @@ function packageConfig(pkg, config) {
     for (let key of Object.keys(config.exceptions.packageJson[pkg])) {
       if (config.exceptions.packageJson[pkg][key] === '!') delete pkgConf[key]
     }
-  }
-  if (config.exceptions.namedExports.indexOf(pkg) !== -1) {
-    pkgConf.rollup.exports = 'named'
   }
 
   return pkgConf
@@ -407,57 +375,9 @@ function validate(pkgs, config) {
 }
 
 /**
- * Creates and 'example' directory for patterns,
- * same result as what gets done by create-freesewing-pattern.
- */
-function configurePatternExample(pkg, config) {
-  // Create example dir structure
-  let source = path.join(
-    config.repoPath,
-    'packages',
-    'create-freesewing-pattern',
-    'template',
-    'freesewing',
-    'example'
-  )
-  let dest = path.join(config.repoPath, 'packages', pkg, 'example')
-  fse.ensureDirSync(path.join(dest, 'src'))
-  fse.ensureDirSync(path.join(dest, 'public'))
-  // Copy files
-  for (let file of ['.babelrc', '.env'])
-    fs.copyFileSync(path.join(source, file), path.join(dest, file))
-  for (let file of ['index.js', 'serviceWorker.js', 'layout.css'])
-    fs.copyFileSync(path.join(source, 'src', file), path.join(dest, 'src', file))
-  fs.copyFileSync(
-    path.join(source, 'public', 'favicon.ico'),
-    path.join(dest, 'public', 'favicon.ico')
-  )
-  // Write templates
-  let replace = {
-    name: pkg,
-    version,
-    author: 'freesewing',
-    yarn: true,
-    language: 'en'
-  }
-  for (let file of ['package.json', 'README.md', 'netlify.toml']) {
-    let template = handlebars.compile(fs.readFileSync(path.join(source, file), 'utf-8'))
-    fs.writeFileSync(path.join(dest, file), template(replace))
-  }
-  for (let file of ['index.html', 'manifest.json', 'layout.css']) {
-    let template = handlebars.compile(fs.readFileSync(path.join(source, 'public', file), 'utf-8'))
-    fs.writeFileSync(path.join(dest, 'public', file), template(replace))
-  }
-  let template = handlebars.compile(fs.readFileSync(path.join(source, 'src', 'App.js'), 'utf-8'))
-  fs.writeFileSync(path.join(dest, 'src', 'App.js'), template(replace))
-}
-
-/**
- * Puts a package.json, rollup.config.js, README.md, and CHANGELOG.md
+ * Puts a package.json, build.js, README.md, and CHANGELOG.md
  * into every subdirectory under the packages directory.
- * Also creates an example dir for pattern packages, and writes
- * the global CHANGELOG.md.
- * New: Adds unit tests for patterns
+ * Also adds unit tests for patterns, and writes the global CHANGELOG.md.
  */
 function reconfigure(pkgs, config) {
   for (const pkg of pkgs) {
@@ -469,10 +389,10 @@ function reconfigure(pkgs, config) {
         JSON.stringify(pkgConfig, null, 2) + '\n'
       )
     }
-    if (config.exceptions.customRollup.indexOf(pkg) === -1) {
+    if (config.exceptions.customBuild.indexOf(pkg) === -1) {
       fs.writeFileSync(
-        path.join(config.repoPath, 'packages', pkg, 'rollup.config.js'),
-        config.templates.rollup
+        path.join(config.repoPath, 'packages', pkg, 'build.js'),
+        config.templates.build
       )
     }
     if (config.exceptions.customReadme.indexOf(pkg) === -1) {
@@ -485,7 +405,6 @@ function reconfigure(pkgs, config) {
       )
     }
     const type = packageType(pkg, config)
-    if (type === 'pattern') configurePatternExample(pkg, config)
   }
   fs.writeFileSync(path.join(config.repoPath, 'CHANGELOG.md'), changelog('global', config))
   console.log(chalk.yellowBright.bold('All done.'))

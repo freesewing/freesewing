@@ -4,9 +4,13 @@ import config from '../config'
 import draftLacerna from './lacerna'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Lunetius = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-Pattern.prototype.draftLacerna = draftLacerna
+Lunetius.prototype.draftLacerna = draftLacerna
 
-export default Pattern
+// Named exports
+export { config, Lunetius }
+
+// Default export
+export default Lunetius

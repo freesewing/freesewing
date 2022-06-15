@@ -16,10 +16,18 @@ const config = {
   i18n: i18nConfig.i18n,
   pageExtensions: [ 'js' ],
   webpack: (config, options) => {
+
     // Aliases
     config.resolve.alias.shared = path.resolve('../freesewing.shared/')
     config.resolve.alias.site = path.resolve(`.`)
     config.resolve.alias.pkgs = path.resolve(`../`)
+
+    // Suppress warnings about importing version from package.json
+    // We'll deal with it in v3 of FreeSewing
+    config.ignoreWarnings = [
+      /only default export is available soon/
+    ]
+
     // This forces webpack to load the code from source, rather than compiled bundle
     for (const pkg of pkgs) {
       config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../${pkg}/src/index.js`)

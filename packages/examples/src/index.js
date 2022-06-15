@@ -100,10 +100,10 @@ import draftDocs_overview from './docs_overview'
 import draftDocs_coords from './docs_coords'
 
 // Create design
-const Pattern = new freesewing.Design(config, [pluginBundle, gorePlugin, mirrorPlugin])
+const Examples = new freesewing.Design(config, [pluginBundle, gorePlugin, mirrorPlugin])
 
 // Attach draft methods to prototype
-let methods = {
+const methods = {
   draftPath_move,
   draftPath_line,
   draftPath_curve,
@@ -195,6 +195,11 @@ let methods = {
   draftDocs_coords,
 }
 
-for (let m of Object.keys(methods)) Pattern.prototype[m] = methods[m]
+for (let m of Object.keys(methods)) Examples.prototype[m] = methods[m]
 
-export default Pattern
+// Named exports
+export { config, Examples }
+
+// Default export
+export default Examples
+

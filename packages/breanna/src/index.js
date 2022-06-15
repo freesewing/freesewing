@@ -10,14 +10,18 @@ import draftSleevecap from './sleevecap'
 import draftSleeve from './sleeve'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Breanna = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBase = draftBase
-Pattern.prototype.draftBack = draftBack
-Pattern.prototype.draftFrontBase = draftFrontBase
-Pattern.prototype.draftFront = draftFront
-Pattern.prototype.draftSleevecap = draftSleevecap
-Pattern.prototype.draftSleeve = draftSleeve
+Breanna.prototype.draftBase = draftBase
+Breanna.prototype.draftBack = draftBack
+Breanna.prototype.draftFrontBase = draftFrontBase
+Breanna.prototype.draftFront = draftFront
+Breanna.prototype.draftSleevecap = draftSleevecap
+Breanna.prototype.draftSleeve = draftSleeve
 
-export default Pattern
+// Named exports
+export { config, Breanna }
+
+// Default export
+export default Breanna

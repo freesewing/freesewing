@@ -7,11 +7,15 @@ import draftFrontSideDart from './front-side-dart'
 //import draftFrontShoulderDart from './front-shoulder-dart'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Bella = new freesewing.Design(config, plugins)
 
 // Attach draft methods to prototype
-Pattern.prototype.draftBack = (part) => draftBack(part)
-Pattern.prototype.draftFrontSideDart = (part) => draftFrontSideDart(part)
-//Pattern.prototype.draftFrontShoulderDart = (part) => draftFrontShoulderDart(part)
+Bella.prototype.draftBack = (part) => draftBack(part)
+Bella.prototype.draftFrontSideDart = (part) => draftFrontSideDart(part)
+//Bella.prototype.draftFrontShoulderDart = (part) => draftFrontShoulderDart(part)
 
-export default Pattern
+// Named exports
+export { config, Bella }
+
+// Default export
+export default Bella
