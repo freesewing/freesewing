@@ -26,11 +26,14 @@ export default function (part) {
   points.bottomFlipped = points.bottom.flipX()
   points.bottomC = points.bottom.shift(90, points.bottom.y - points.bottom.x)
   points.bottomCFlipped = points.bottomC.flipX()
-  paths.seam = new Path()
+  paths.saBase = new Path()
     .move(points.bottom)
     .curve(points.bottomC, points.topC, points.top)
     .curve(points.topCFlipped, points.bottomCFlipped, points.bottomFlipped)
-  paths.hem = new Path().move(points.bottomFlipped).line(points.bottom)
+	.setRender(false)
+  paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom)
+  .setRender(false)
+  paths.seam = paths.saBase.join(paths.hemBase).close()
   // Complete?
   if (complete) {
     macro('grainline', { from: points.top, to: new Point(0, points.bottom.y) })
@@ -45,9 +48,9 @@ export default function (part) {
       snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr('data-scale', 2)
     }
     if (sa) {
-      paths.sa = paths.seam
+      paths.sa = paths.saBase
         .offset(sa)
-        .join(paths.hem.offset(sa * 2))
+        .join(paths.hemBase.offset(sa * 2))
         .attr('class', 'fabric sa')
         .close()
     }

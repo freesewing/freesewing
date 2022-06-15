@@ -37,7 +37,7 @@ export default {
         metric: [6, 13, 19, 25, 32, 38, 44, 50],
         imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1, 44.45, 50.8],
       },
-      ...pctBasedOn('head'),
+      toAbs: (pct, { measurements }) => measurements.head * pct,
     },
     lengthRatio: { pct: 55, min: 40, max: 60 },
     gores: { count: 6, min: 4, max: 20 },
