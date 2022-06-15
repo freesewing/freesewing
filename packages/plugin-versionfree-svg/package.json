@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-versionfree-svg",
-  "version": "2.21.0-alpha.0",
+  "version": "2.21.0-rc.0",
   "description": "A FreeSewing plugin to keep version info out of your SVG to allow easy diffs across versions",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -38,7 +38,7 @@
     "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.21.0-alpha.0"
+    "@freesewing/core": "^2.21.0-rc.0"
   },
   "dependencies": {},
   "devDependencies": {

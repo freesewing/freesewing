@@ -1,10 +1,5 @@
 # Change log for: @freesewing/hi
 
-## 2.0.0 (2022-06-12)
-
-### Added
-
- - Initial release
 
 
 This is the **initial release**, and the start of this change log.
