@@ -1,4 +1,4 @@
-import neckstimate from '@freesewing/utils/neckstimate'
+import neckstimate from './neckstimate'
 import measurements from './measurements'
 import sizes from './sizes'
 

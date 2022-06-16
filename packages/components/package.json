@@ -20,13 +20,13 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "node build.js",
-    "cibuild_step1": "node build.js",
     "clean": "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Legend && rimraf LineDrawing && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf Spinner && rimraf withGist && rimraf withLanguage && rimraf withStorage && rimraf Workbench",
     "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "vbuild": "VERBOSE=1 node build.js",
-    "storybook": "start-storybook -p 6663"
+    "storybook": "start-storybook -p 6663",
+    "cibuild_step5": "node build.js"
   },
   "peerDependencies": {
     "axios": "^0.25.0",

@@ -1,5 +1,5 @@
 _types:
-  pattern:
+  design:
     peer:
       '@freesewing/core': &freesewing '^{{version}}'
       '@freesewing/plugin-bundle': *freesewing

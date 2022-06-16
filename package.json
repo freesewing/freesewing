@@ -14,13 +14,15 @@
   "homepage": "https://freesewing.org/",
   "license": "MIT",
   "scripts": {
+    "new": "node --experimental-json-modules scripts/add-software.mjs",
     "kickstart": "npx lerna bootstrap && yarn buildall",
     "clean": "rimraf dist",
     "test": "lerna run test",
     "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
-    "reconfigure": "all-contributors generate && node scripts/reconfigure.js",
+    "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
-    "buildall": "lerna run cibuild_step1 && lerna run cibuild_step2",
+    "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5",
+    "build": "yarn buildall",
     "testall": "node scripts/testall.js",
     "release": "lerna exec --no-bail -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
@@ -126,7 +128,10 @@
     "yaml": "^1.10.2"
   },
   "workspaces": [
-    "packages/*"
+    "designs/*",
+    "packages/*",
+    "plugins/*",
+    "sites/*"
   ],
   "version": "0.0.0",
   "dependencies": {
