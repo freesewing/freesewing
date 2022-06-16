@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { useTranslation } from 'next-i18next'
 import { isDegreeMeasurement } from '../../../config/measurements'
-import measurementAsMm from 'pkgs/utils/measurementAsMm'
-import formatMm from 'pkgs/utils/formatMm'
+import measurementAsMm from 'pkgs/utils/src/measurementAsMm'
+import formatMm from 'pkgs/utils/src/formatMm'
 
 /*
  * This is a single input for a measurements
@@ -16,7 +16,9 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
-  const isDegree = isDegreeMeasurement(m)
+
+  const isDegree = isDegreeMeasurement(m);
+  const factor = useMemo(() => (isDegree ? 1 : (gist.units == 'imperial' ? 25.4 : 10)), [gist.units])
 
   const isValValid = val => (typeof val === 'undefined' || val === '')
       ? null
@@ -25,52 +27,45 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
     ? isValValid(val)
     : isValValid(newVal)
 
-  const [val, setVal] = useState(formatMm(gist?.measurements?.[m], gist.units, false) || '')
+  const [val, setVal] = useState(gist?.measurements?.[m] / factor || '')
 
   // keep a single reference to a debounce timer
   const debounceTimeout = useRef(null);
 
-  // this callback will track to current gist values
-  const cb = useCallback((evt) => {
-    let evtVal = evt.target.value;
-    // cleat the timeout reference
-    debounceTimeout.current = null;
-
-    let useVal = isDegree ? evtVal : measurementAsMm(evtVal, gist.units);
-    const ok = isValid(useVal)
-    // only set to the gist if it's valid
-    if (ok) {
-      updateMeasurements(useVal, m)
-    }
-  }, [gist]);
-
   // onChange
-  const update = (evt) => {
+  const update = useCallback((evt) => {
     evt.stopPropagation();
     let evtVal = evt.target.value;
     // set Val immediately so that the input reflects it
     setVal(evtVal)
 
-    // debounce the rest of the callback
-    if (debounceTimeout.current !== null) { clearTimeout(debounceTimeout.current);
+    let useVal = isDegree ? evtVal : measurementAsMm(evtVal, gist.units);
+    const ok = isValid(useVal)
+    // only set to the gist if it's valid
+    if (ok) {
+      // debounce in case it's still changing
+    if (debounceTimeout.current !== null) { clearTimeout(debounceTimeout.current); }
+      debounceTimeout.current = setTimeout(() => {
+         // clear the timeout reference
+        debounceTimeout.current = null;
+        updateMeasurements(useVal, m)
+      }, 500);
     }
-    debounceTimeout.current = setTimeout(() => {
-      cb(evt)
-    }, 500);
-  }
+  }, [gist.units])
 
   // use this for better update efficiency
   const memoVal = useMemo(() => gist?.measurements[m], [gist])
   // track validity against the value and the units
-  const valid = useMemo(() => isValid(measurementAsMm(val, gist.units)), [val, gist.units])
+  const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist.units)), [val, gist.units])
 
-  // hook to update the value when the gist changes
+  // hook to update the value or format when the gist changes
   useEffect(() => {
-    if (memoVal) {
-      let gistVal = isDegree ? memoVal : formatMm(memoVal, gist.units, false);
-      setVal(gistVal)
-    }
-  }, [memoVal, gist.units])
+      // set the value to the proper value and format
+      if (memoVal) {
+        let gistVal = +(memoVal / factor).toFixed(2);
+        setVal(gistVal)
+      }
+  }, [memoVal, factor])
 
   // cleanup
   useEffect(() => clearTimeout(debounceTimeout.current), [])
