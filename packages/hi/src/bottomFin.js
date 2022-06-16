@@ -58,8 +58,7 @@ export default function (part) {
 
     bottomFin01_03d = bottomFin01_03d + diff
     iteration++
-  } while ((diff < -1 || diff > 1) && iteration < 100)
-  console.log({ iteration1: iteration })
+  } while (Math.abs(diff) > store.get('tolerance') && iteration < 100)
 
   diff = 0
   iteration = 0
@@ -85,7 +84,7 @@ export default function (part) {
 
     bottomFin01_02d = bottomFin01_02d + diff
     iteration++
-  } while ((diff < -1 || diff > 1) && iteration < 100)
+  } while (Math.abs(diff) > store.get('tolerance') && iteration < 100)
 
   paths.seam = new Path()
     .move(points.bottomFin01)

@@ -1,5 +1,5 @@
 export default function (part) {
-  let {
+  const {
     store,
     sa,
     Point,
@@ -55,7 +55,7 @@ export default function (part) {
     aboveMouth01_02d = aboveMouth01_02d + diff
     aboveMouth01_04d = aboveMouth01_04d + diff
     iteration++
-  } while ((diff < -1 || diff > 1) && iteration < 100)
+  } while (Math.abs(diff) > store.get('tolerance') && iteration < 100)
 
   paths.seam = new Path()
     .move(points.aboveMouth01)
