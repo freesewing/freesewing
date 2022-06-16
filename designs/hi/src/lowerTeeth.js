@@ -1,7 +1,7 @@
 import { createTeeth } from './teeth.js'
 
 export default function (part) {
-  let {
+  const {
     store,
     sa,
     Point,
@@ -21,16 +21,22 @@ export default function (part) {
   let lowerTeeth01_02a = 25.414236606099728 + 180
   let lowerTeeth02cp1d = 47.74891452755759 * options.size
   let lowerTeeth02cp1a = 42.59332849750379
-  let lowerTeeth01cp2d = 17.774046078481962 * options.size
+  let lowerTeeth01cp2d = 27.774046078481962 * options.size
   let lowerTeeth01cp2a = 180
 
   points.lowerTeeth01 = new Point(0, 0)
   points.lowerTeeth02 = points.lowerTeeth01.shift(lowerTeeth01_02a, lowerTeeth01_02d)
   points.lowerTeeth01cp2 = points.lowerTeeth01.shift(lowerTeeth01cp2a, lowerTeeth01cp2d)
   points.lowerTeeth02cp1 = points.lowerTeeth02.shift(lowerTeeth02cp1a, lowerTeeth02cp1d)
+  // Make seam symmetric to optimize generating teeth
+  points.lowerTeeth02cp1 = points.lowerTeeth02.shiftTowards(
+    points.lowerTeeth02cp1,
+    points.lowerTeeth01cp2.dist(points.lowerTeeth01)
+  )
   points.lowerTeeth03 = points.lowerTeeth02.flipX()
   points.lowerTeeth01cp1 = points.lowerTeeth01cp2.flipX()
   points.lowerTeeth03cp2 = points.lowerTeeth02cp1.flipX()
+
 
   paths.seam = new Path()
     .move(points.lowerTeeth02)
@@ -39,9 +45,17 @@ export default function (part) {
 
   store.set('lowerTeethLength', paths.seam.length())
 
-  paths.teeth = new Path().move(paths.seam.start())
-
-  createTeeth(paths.seam, 16 * options.size, 8 * options.size, 10, options.aggressive, paths.teeth)
+  paths.teeth = createTeeth(
+    [ // Array holding the points for half a mouth (bezier, not path)
+      points.lowerTeeth02, // start
+      points.lowerTeeth02cp1, // cp1
+      points.lowerTeeth01cp2, // cp2
+      points.lowerTeeth01, // end
+    ],
+    10, // number of teeth
+    16, // size
+    part
+  )
 
   // Complete?
   if (complete) {
@@ -78,10 +92,8 @@ export default function (part) {
         noStartMarker: true,
         noEndMarker: true,
       })
-      console.log({path:paths.teeth})
-      console.log({point:paths.teeth.edge('top')})
       macro('vd', {
-        from: points.lowerTeeth01, 
+        from: points.lowerTeeth01,
         to: paths.teeth.edge('top'),
         x: points.lowerTeeth02.x - sa - 10,
         noStartMarker: true,

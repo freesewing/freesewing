@@ -58,7 +58,7 @@ export default function (part) {
 
     topFinOpening = topFinOpening + diff
     iteration++
-  } while ((diff < -1 || diff > 1) && iteration < 100)
+  } while (Math.abs(diff) > store.get('tolerance') && iteration < 100)
 
   paths.seam = new Path()
     .move(points.topFin01)
@@ -140,7 +140,7 @@ export default function (part) {
         to: points.topFin01,
         x: points.topFinLeft.x -sa - 20,
       })
-    }      
+    }
     // if( options.size < 1.5 ) {
     //   paths.smallTop.attr('data-text-class', 'text-xs')
     //   paths.smallBottom.attr('data-text-class', 'text-xs')

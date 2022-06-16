@@ -102,7 +102,7 @@ export default function (part) {
         .move(points.belly01)
         .curve(points.belly01cp1, points.belly02cp2, points.belly02)
         .length()
-  } while ((diff < -1 || diff > 1) && iteration < 100)
+  } while (Math.abs(diff) > store.get('tolerance') && iteration < 100)
 
   let bellyTailLength = store.get('bellyTailLength')
 
@@ -122,7 +122,7 @@ export default function (part) {
         .move(points.belly03)
         .curve(points.belly03cp1, points.belly04cp2, points.belly04)
         .length()
-  } while ((diff < -1 || diff > 1) && iteration < 100)
+  } while (Math.abs(diff) > store.get('tolerance') && iteration < 100)
 
   points.belly05cp1 = points.belly05cp2.flipY()
   points.belly06 = points.belly04.flipY()
