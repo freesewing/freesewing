@@ -36,7 +36,6 @@
     "vbuild": "VERBOSE=1 node build.js",
     "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'",
     "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
-    "cibuild_step1": "node build.js",
     "cibuild_step2": "node build.js"
   },
   "peerDependencies": {
