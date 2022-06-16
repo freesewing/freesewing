@@ -26,7 +26,7 @@
     "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "vbuild": "VERBOSE=1 node build.js",
     "storybook": "start-storybook -p 6663",
-    "cibuild_step5": "node build.js"
+    "cibuild_step6": "node build.js"
   },
   "peerDependencies": {
     "axios": "^0.25.0",
