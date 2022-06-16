@@ -35,7 +35,7 @@
     "vbuild": "VERBOSE=1 node build.js",
     "prettier": "npx prettier --write 'src/*.js' 'config/*.js'",
     "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
-    "cibuild_step4": "node build.js"
+    "cibuild_step5": "node build.js"
   },
   "peerDependencies": {
     "@freesewing/core": "^2.21.0-rc.0",

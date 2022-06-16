@@ -7,8 +7,8 @@ import { designs, plugins, packages, software  } from './software/index.mjs'
  */
 
 const first = [ 'core', 'config-helpers', 'remark-jargon' ]
-const blocks = [ 'brian', 'titan', 'bella', 'breanna', 'bent' ]
-const extend = [ 'carlita', 'simone', 'unice' ]
+const blocks = [ 'brian', 'titan', 'bella', 'breanna' ]
+const extended = [ 'bent', 'simon', 'carlton', 'ursula' ]
 
 export const buildOrder = [
 
@@ -24,13 +24,13 @@ export const buildOrder = [
   // Then build all FreeSewing designs that are blocks
   blocks,
 
-  // Then build all designs, but not the ones that extend a non-block
-  Object.keys(designs).filter(id => [...blocks, ...extend].indexOf(id) === -1),
+  // Then build all FreeSewing designs that are further extended
+  extended,
 
-  // Finally build the rest and designs that extend other non-block designs
-  [
-    ...extend,
-    ...Object.keys(packages).filter(id => first.indexOf(id) === -1),
-  ]
+  // Then build all remaining designs
+  Object.keys(designs).filter(id => [...blocks, ...extended].indexOf(id) === -1),
+
+  // Finally build the rest of the packages
+  Object.keys(packages).filter(id => first.indexOf(id) === -1),
 ]
 

@@ -31,7 +31,7 @@
     "vbuild": "VERBOSE=1 node build.js",
     "prebuild": "node src/prebuild.mjs",
     "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
-    "cibuild_step5": "node build.js"
+    "cibuild_step6": "node build.js"
   },
   "peerDependencies": {
     "@freesewing/pattern-info": "^2.21.0-rc.0"

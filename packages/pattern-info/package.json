@@ -27,7 +27,7 @@
     "test": "echo \"pattern-info: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "vbuild": "VERBOSE=1 node build.js",
     "prebuild": "node src/prebuild.js",
-    "cibuild_step5": "node src/prebuild.js && node build.js"
+    "cibuild_step6": "node src/prebuild.js && node build.js"
   },
   "peerDependencies": {},
   "dependencies": {},
