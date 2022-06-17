@@ -54,7 +54,8 @@ export default function (part) {
       points.upperTeeth01, // end
     ],
     14, // number of teeth
-    14, // size
+    9 * options.size, // start size
+    18 * options.size, // end size
     part
   )
   //createTeeth(paths.seam, 18 * options.size, 9 * options.size, 15, options.aggressive, paths.teeth)
