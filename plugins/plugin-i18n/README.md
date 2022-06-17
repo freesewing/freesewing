@@ -59,6 +59,12 @@ holding [all our NPM packages](https://freesewing.dev/reference/packages/).
 
 This folder holds: @freesewing/plugin-i18n
 
+If you're not entirely sure what to do or how to start, type this command:
+
+```
+npm run tips
+```
+
 ## About FreeSewing 💀
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
