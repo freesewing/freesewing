@@ -94,14 +94,14 @@ export default function (part) {
 
     snippets.logo = new Snippet('logo', points.logoAnchor).attr(
       'data-scale',
-      options.size > 1 ? 1 : options.size
+      (options.size > 1 ? 1 : options.size) / 2
     )
 
     macro('title', {
       at: points.titleAnchor,
       nr: 3,
       title: 'tail',
-      scale: options.size,
+      scale: (options.size > 1 ? 1 : options.size) / 2,
     })
 
     if (paperless) {

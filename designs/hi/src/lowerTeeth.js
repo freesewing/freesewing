@@ -62,7 +62,7 @@ export default function (part) {
   if (complete) {
     snippets.lowerTeeth = new Snippet('bnotch', points.lowerTeeth01)
 
-    points.titleAnchor = points.lowerTeeth02.shiftFractionTowards(points.lowerTeeth03, 0.5).shiftFractionTowards(points.lowerTeeth01, 0.5)
+    points.titleAnchor = points.lowerTeeth02.shiftFractionTowards(points.lowerTeeth03, 0.5) //.shiftFractionTowards(points.lowerTeeth01, 0.5)
 
     macro('title', {
       at: points.titleAnchor,

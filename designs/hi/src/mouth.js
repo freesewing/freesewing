@@ -92,7 +92,7 @@ export default function (part) {
     snippets.mouthMidTop = new Snippet('bnotch', points.mouth01)
     snippets.mouthMidBottom = new Snippet('bnotch', points.mouth03)
 
-    points.titleAnchor = points.mouth01.shiftFractionTowards(points.mouth02, 0.23)
+    points.titleAnchor = points.mouth01.shiftFractionTowards(points.mouth02, 0.33)
     points.logoAnchor = points.mouth01.shiftFractionTowards(points.mouth04, 0.3)
 
     snippets.logo = new Snippet('logo', points.logoAnchor).attr(
@@ -104,7 +104,7 @@ export default function (part) {
       at: points.titleAnchor,
       nr: 4,
       title: 'mouth',
-      scale: options.size / 2,
+      scale: (options.size > 1 ? 1 : options.size) / 2,
     })
 
     if (paperless) {

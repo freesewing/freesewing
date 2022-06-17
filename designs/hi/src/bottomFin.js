@@ -101,19 +101,19 @@ export default function (part) {
       .shiftAlong(store.get('aboveMouthFinLength'))
     snippets.bottomFin = new Snippet('bnotch', points.bottomFinSnippet)
 
-    points.titleAnchor = points.bottomFin02.shiftFractionTowards(points.bottomFin01, 0.4)
-    points.logoAnchor = points.titleAnchor.shiftFractionTowards(points.bottomFin03, 0.5)
+    points.titleAnchor = points.bottomFin02.shiftFractionTowards(points.bottomFin01, 0.4).shiftFractionTowards(points.bottomFin03, 0.1)
+    points.logoAnchor = points.titleAnchor.shiftFractionTowards(points.bottomFin03, 0.4)
 
     snippets.logo = new Snippet('logo', points.logoAnchor).attr(
       'data-scale',
-      options.size > 1 ? 1 : (options.size /2)
+      (options.size > 1 ? 1 : options.size) / 2
     )
 
     macro('title', {
       at: points.titleAnchor,
       nr: 6,
       title: 'bottomFin',
-      scale: options.size,
+      scale: (options.size > 1 ? 1 : options.size) / 2,
     })
 
     if (paperless) {
