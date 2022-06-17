@@ -15,6 +15,7 @@
   "license": "MIT",
   "scripts": {
     "new": "node --experimental-json-modules scripts/add-software.mjs",
+    "lab": "cd sites/lab && yarn start",
     "kickstart": "npx lerna bootstrap && yarn buildall",
     "clean": "rimraf dist",
     "test": "lerna run test",

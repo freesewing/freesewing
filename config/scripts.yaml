@@ -5,6 +5,7 @@ _:
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
   test: &notests 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
   vbuild: 'VERBOSE=1 node build.js'
+  lab: "cd ../../sites/lab && yarn start"
 _types:
   design:
     prettier: "npx prettier --write 'src/*.js' 'config/*.js'"

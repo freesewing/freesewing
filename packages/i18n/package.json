@@ -29,6 +29,7 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register",
     "vbuild": "VERBOSE=1 node build.js",
+    "lab": "cd ../../sites/lab && yarn start",
     "prebuild": "node src/prebuild.mjs",
     "testci": "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js",
     "cibuild_step6": "node build.js"
