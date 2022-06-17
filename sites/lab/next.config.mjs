@@ -10,6 +10,8 @@ const getDirectories = source =>
 
 const pkgs = getDirectories(path.resolve(`../`))
 
+let greeting = false
+
 const config = {
   experimental: {
     externalDir: true,
@@ -52,6 +54,23 @@ const config = {
     for (const pkg of ['core', 'config-helpers', 'i18n', 'models']) {
       config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../../packages/${pkg}/src/index.js`)
     }
+
+    if (!greeting) {
+      greeting = true
+      console.log(`
+
+   ___            ___             _
+  | __| _ ___ ___/ __| _____ __ _(_)_ _  __ _
+  | _| '_/ -_) -_)__ \\/ -_) V  V / | ' \\/ _\` |
+  |_||_| \\___\\___|___/\\___|\\_/\\_/|_|_||_\\__, |
+    Come for the sewing patterns        |___/
+      Stay for the community
+
+  Welcome to the FreeSewing lab
+  Open your browser at: http://localhost:8000/
+
+  `)}
+
 
     return config
   }

@@ -1,6 +1,7 @@
 import MenuIcon from 'shared/components/icons/menu.js'
 import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
 import { useTranslation } from 'next-i18next'
+import defaultSettings from '../default-settings'
 
 const View = props => {
   const { t } = useTranslation(['app'])
@@ -60,7 +61,7 @@ const View = props => {
     {
       name: 'clear',
       title: t('clearThing', { thing: 'YAML' }),
-      onClick: () => props.setGist(null)
+      onClick: () => props.setGist(defaultSettings)
     },
   ]
 
