@@ -1,12 +1,8 @@
 import chalk from 'chalk'
+import { banner } from './banner.mjs'
+
 console.clear()
-console.log(chalk.magenta.bold(`
-   ___            ___             _
-  | __| _ ___ ___/ __| _____ __ _(_)_ _  __ _
-  | _| '_/ -_) -_)__ \\/ -_) V  V / | ' \\/ _\` |
-  |_||_| \\___\\___|___/\\___|\\_/\\_/|_|_||_\\__, |
-    Come for the sewing patterns        |___/
-      Stay for the community`))
+console.log(banner)
 console.log(`
 
   ${chalk.bold.yellow('🤨 Help with our monorepo')}
@@ -15,10 +11,12 @@ console.log(`
   Welcome to our git repository 😀
   These are the most relevant folders:
 
-    👕  ${chalk.blue('designs/')} holds code for our designs
-    🔌  ${chalk.blue('plugins/')} holds code for our plugins
-    📦  ${chalk.blue('packages/')} holds code for other NPM packages
-    🔗  ${chalk.blue('sites/')} holds code for our various websites and APIs
+    👕  ${chalk.green('designs/')} holds code for our designs
+    🔌  ${chalk.green('plugins/')} holds code for our plugins
+    📦  ${chalk.green('packages/')} holds code for other NPM packages
+    🔗  ${chalk.green('sites/')} holds code for our various websites and APIs
+
+  You can show this help at any moment by running: ${chalk.blue('yarn helpme')}
 
 
   ${chalk.bold.yellow('🚀 Getting started')}

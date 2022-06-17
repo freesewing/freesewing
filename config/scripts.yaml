@@ -6,6 +6,7 @@ _:
   test: &notests 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
   vbuild: 'VERBOSE=1 node build.js'
   lab: "cd ../../sites/lab && yarn start"
+  tips: "node ../../scripts/help.mjs"
 _types:
   design:
     prettier: "npx prettier --write 'src/*.js' 'config/*.js'"

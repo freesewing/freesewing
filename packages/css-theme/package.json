@@ -29,6 +29,7 @@
     "test": "echo \"css-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
     "vbuild": "VERBOSE=1 node build.js",
     "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
     "watch": "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css",
     "cibuild_step6": "npx node-sass --output-style compressed src/theme.scss dist/theme.css"
   },
