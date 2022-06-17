@@ -16,7 +16,7 @@ console.log(`
     📦  ${chalk.green('packages/')} holds code for other NPM packages
     🔗  ${chalk.green('sites/')} holds code for our various websites and APIs
 
-  You can show this help at any moment by running: ${chalk.blue('yarn helpme')}
+  You can show this help at any moment by running: ${chalk.blue('yarn tips')}
 
 
   ${chalk.bold.yellow('🚀 Getting started')}
