@@ -126,3 +126,9 @@ scripts/verdaccio.sh
 !markdown/dev/reference/api/point/dist
 
 .test-failures.log
+package.json
+yarn.lock
+yarn.lock
+package.json
+packages/ursula/example/src/pattern
+packages/ursula/example/src/pattern
