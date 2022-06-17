@@ -4,7 +4,7 @@ import glob from 'glob'
 import yaml from 'js-yaml'
 import chalk from 'chalk'
 import mustache from 'mustache'
-import { capitalize } from '../sites/freesewing.shared/utils.mjs'
+import { capitalize } from '../sites/shared/utils.mjs'
 import conf from '../lerna.json'
 const { version } = conf
 import {

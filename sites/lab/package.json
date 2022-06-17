@@ -1,0 +1,57 @@
+{
+  "name": "freesewing.lab",
+  "version": "2.21.0-rc.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
+    "develop": "next dev -p 8000",
+    "prebuild": "SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs",
+    "cibuild": "yarn prebuild && next build",
+    "build": "next build",
+    "export": "yarn prebuild && next build && next export",
+    "start": "next start -p 3002",
+    "lint": "next lint",
+    "serve": "pm2 start npm --name 'dev' -- run start"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.5",
+    "@mdx-js/loader": "^2.0.0-rc.2",
+    "@mdx-js/mdx": "^2.0.0-rc.2",
+    "@mdx-js/react": "^2.0.0-rc.2",
+    "@mdx-js/runtime": "next",
+    "@tailwindcss/typography": "^0.5.0",
+    "algoliasearch": "^4.11.0",
+    "d3-dispatch": "^3.0.1",
+    "d3-drag": "^3.0.0",
+    "d3-selection": "^3.0.0",
+    "daisyui": "^2.0.6",
+    "lodash.get": "^4.4.2",
+    "lodash.orderby": "^4.6.0",
+    "lodash.set": "^4.3.2",
+    "netlify-cli": "^10.3.3",
+    "next": "latest",
+    "next-i18next": "^11.0.0",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-hotkeys-hook": "^3.4.4",
+    "react-instantsearch-dom": "^6.18.0",
+    "react-markdown": "^8.0.0",
+    "react-swipeable": "^6.2.0",
+    "react-timeago": "^6.2.1",
+    "rehype-highlight": "^5.0.1",
+    "rehype-sanitize": "^5.0.1",
+    "rehype-stringify": "^9.0.2",
+    "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
+    "remark-gfm": "^3.0.1",
+    "remark-jargon": "^2.21.0-rc.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "eslint-config-next": "12.1.6",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^3.0.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
