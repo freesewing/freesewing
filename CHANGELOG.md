@@ -3,11 +3,513 @@
 
 ## Unreleased
 
+### aaron
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### albert
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### bee
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### bella
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### benjamin
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### bent
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### breanna
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### brian
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### bruce
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### carlita
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### carlton
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### cathrin
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### charlie
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### cornelius
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### diana
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### examples
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### florence
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### florent
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### holmes
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### hortensia
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### huey
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ### hugo
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
 
 #### Fixed
 
  - Fix incorrect seam allowance Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
+
+### jaeger
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### legend
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### lucy
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### lunetius
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### paco
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### penelope
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugintest
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### rendertest
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### sandy
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### shin
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### simon
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
+
+### simone
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Added the frontdarts option back after it was (accidentally) removed
+ - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
+
+### sven
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### tamiko
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### teagan
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Added missing name to config file
+
+### theo
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### tiberius
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### titan
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### trayvon
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### tutorial
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### ursula
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### wahid
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### walburga
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### waralee
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### yuri
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-banner
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-bartack
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-bundle
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-bust
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-buttons
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-cutonfold
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-dimension
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-export-dxf
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-flip
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-gore
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-grainline
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-i18n
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-logo
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-measurements
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-mirror
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-notches
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-round
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-scalebox
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-sprinkle
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-svgattr
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-theme
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-title
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-validate
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### plugin-versionfree-svg
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### components
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### config-helpers
+
+#### Added
+
+ - This new package replaces the previous snapseries package and adds extra helper methods for pattern config such as `pctBasedOn()` which was previously exported by core
+
+### core
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+ - The `pctBasedOn()` helper method for pattern config was moved to config-helpers We did not make this a breaking change since it's only used internally.
+
+### gatsby-remark-jargon
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### i18n
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Added missing lab namespace for English
+
+### models
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### mui-theme
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### pattern-info
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### remark-jargon
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### utils
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
 
 
 ## 2.20.8 (2022-05-21)
@@ -26,19 +528,6 @@
 
  - Adde both front and back armhole pitch points Closes [#2057](https://github.com/freesewing/freesewing/issues/2057)
  - Fixed issue with the sleeve length
-
-### components
-
-#### Fixed
-
- - Fix restore of pattern defaults in draft configurator Closes [#1932](https://github.com/freesewing/freesewing/issues/1932)
-
-### core
-
-#### Fixed
-
- - Fixed warning message when moving to a non-existing point
- - Fixed incorrect decision in Path.boundary()
 
 ### huey
 
@@ -92,6 +581,19 @@
  - Better defaults for sleevecap and armhole depth
  - Yuri now extends the Brian config
 
+### components
+
+#### Fixed
+
+ - Fix restore of pattern defaults in draft configurator Closes [#1932](https://github.com/freesewing/freesewing/issues/1932)
+
+### core
+
+#### Fixed
+
+ - Fixed warning message when moving to a non-existing point
+ - Fixed incorrect decision in Path.boundary()
+
 
 ## 2.20.7 (2022-02-20)
 
@@ -119,18 +621,6 @@
 
 ## 2.20.5 (2022-02-17)
 
-### backend
-
-#### Fixed
-
- - Mitigate risk of denial-of-service attacks in catch-all route
-
-### core
-
-#### Fixed
-
- - Fix bug in Svg.escapeText() that only escaped the first quote
-
 ### simon
 
 #### Fixed
@@ -143,12 +633,11 @@
 
  - Fixed grainline indicator on sleeve since it was slightly off-grain
 
-### svgtopdf
+### core
 
 #### Fixed
 
- - Mitigate risk of denial-of-service attacks in / route
- - Rate-limit PDF generation endpoints
+ - Fix bug in Svg.escapeText() that only escaped the first quote
 
 
 ## 2.20.4 (2022-01-28)
@@ -162,6 +651,13 @@
 
 ## 2.20.3 (2022-01-28)
 
+### simon
+
+#### Fixed
+
+ - Properly style SA paths on cuffs and collarstand
+ - SA path on sleeve was double-drawn
+
 ### core
 
 #### Changed
@@ -174,13 +670,6 @@
 #### Fixed
 
  - Updated to react-scripts 5 to sidestep bug in error-overlay
-
-### simon
-
-#### Fixed
-
- - Properly style SA paths on cuffs and collarstand
- - SA path on sleeve was double-drawn
 
 
 ## 2.20.2 (2022-01-27)
@@ -299,34 +788,11 @@
  - Expose the `frontPocketFacing` option to the user via option groups
  - Switched to default import for version from package.json
 
-### components
-
-#### Added
-
- - Added support for `settings.scale` to Draft and Workbench components
-
-#### Fixed
-
- - Support handling of `&#160;` in text
-
-### core
-
-#### Added
-
- - Added support for `settings.scale`
-
 ### cornelius
 
 #### Changed
 
  - Switched to default import for version from package.json
-
-### css-theme
-
-#### Added
-
- - Added support for `settings.scale`
- - Included variables used by TailwindCSS themes for compatibility
 
 ### diana
 
@@ -381,12 +847,6 @@
 
  - Switched to default import for version from package.json
 
-### i18n
-
-#### Fixed
-
- - Fixed issue that was causing plugin translations to always be in English
-
 ### jaeger
 
 #### Changed
@@ -417,80 +877,6 @@
 #### Changed
 
  - Switched to default import for version from package.json
-
-### plugin-banner
-
-#### Changed
-
- - Changed the default options
- - Now part of `@freesewing/plugin-bundle`
-
-### plugin-bartack
-
-#### Changed
-
- - Now part of `@freesewing/plugin-bundle`
-
-#### Fixed
-
- - Fixed issue with `bartackFractionAlong` macro
- - Handle start and endpoints being the same in `bartackFractionAlong`
- - Support start and endpoints being reversed in `bartackFractionAlong`
-
-### plugin-bundle
-
-#### Changed
-
- - plugin-banner is now part of plugin-bundle
- - plugin-bartack is now part of plugin-bundle
-
-### plugin-cutonfold
-
-#### Added
-
- - Support for scale setting
-
-### plugin-dimension
-
-#### Fixed
-
- - Support hiding start/end markers on path dimensions (pd macro)
-
-### plugin-flip
-
-#### Added
-
- - Added support for flipping around the Y-axis
-
-### plugin-gore
-
-#### Changed
-
- - The `goreNumber` property of the gore macro has been renamed to `gores`
- - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
-
-### plugin-grainline
-
-#### Added
-
- - Added support for custom text
-
-### plugin-sprinkle
-
-#### Added
-
- - Added support for `scale` to scale all sprinkled snippets
- - Added support for `rotate` to rotate all sprinkled snippets
-
-### plugin-title
-
-#### Added
-
- - Added support for `settings.scale`
-
-#### Removed
-
- - Removed rendering of config.cut as it's not used
 
 ### plugintest
 
@@ -614,6 +1000,109 @@
 
  - Switched to default import for version from package.json
 
+### plugin-banner
+
+#### Changed
+
+ - Changed the default options
+ - Now part of `@freesewing/plugin-bundle`
+
+### plugin-bartack
+
+#### Changed
+
+ - Now part of `@freesewing/plugin-bundle`
+
+#### Fixed
+
+ - Fixed issue with `bartackFractionAlong` macro
+ - Handle start and endpoints being the same in `bartackFractionAlong`
+ - Support start and endpoints being reversed in `bartackFractionAlong`
+
+### plugin-bundle
+
+#### Changed
+
+ - plugin-banner is now part of plugin-bundle
+ - plugin-bartack is now part of plugin-bundle
+
+### plugin-cutonfold
+
+#### Added
+
+ - Support for scale setting
+
+### plugin-dimension
+
+#### Fixed
+
+ - Support hiding start/end markers on path dimensions (pd macro)
+
+### plugin-flip
+
+#### Added
+
+ - Added support for flipping around the Y-axis
+
+### plugin-gore
+
+#### Changed
+
+ - The `goreNumber` property of the gore macro has been renamed to `gores`
+ - Using `goreNumber` is now deprecated in favor of `gore` and will be removed in the next majot version
+
+### plugin-grainline
+
+#### Added
+
+ - Added support for custom text
+
+### plugin-sprinkle
+
+#### Added
+
+ - Added support for `scale` to scale all sprinkled snippets
+ - Added support for `rotate` to rotate all sprinkled snippets
+
+### plugin-title
+
+#### Added
+
+ - Added support for `settings.scale`
+
+#### Removed
+
+ - Removed rendering of config.cut as it's not used
+
+### components
+
+#### Added
+
+ - Added support for `settings.scale` to Draft and Workbench components
+
+#### Fixed
+
+ - Support handling of `&#160;` in text
+
+### core
+
+#### Added
+
+ - Added support for `settings.scale`
+
+### css-theme
+
+#### Added
+
+ - Added support for `settings.scale`
+ - Included variables used by TailwindCSS themes for compatibility
+
+### i18n
+
+#### Fixed
+
+ - Fixed issue that was causing plugin translations to always be in English
+
 
 ## 2.19.9 (2022-01-09)
 
@@ -626,12 +1115,6 @@
 
 ## 2.19.8 (2022-01-08)
 
-### core
-
-#### Fixed
-
- - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
-
 ### simon
 
 #### Fixed
@@ -643,6 +1126,12 @@
 #### Fixed
 
  - Fix dependency configuration Fixes [#1334](https://github.com/freesewing/freesewing/issues/1334)
+
+### core
+
+#### Fixed
+
+ - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
 
 
 ## 2.19.7 (2022-01-06)
@@ -669,18 +1158,11 @@
 
 ## 2.19.6 (2021-12-29)
 
-### core
+### rendertest
 
-#### Added
+#### Changed
 
- - Added the new attributes.setIfUnset() method
- - Added the new `scale` setting
-
-### create-freesewing-pattern
-
-#### Fixed
-
- - Fix axios version conflict
+ - Updated the rendertest pattern to be more concise
 
 ### plugin-banner
 
@@ -846,11 +1328,18 @@
 
  - Added (esm) unit tests
 
-### rendertest
+### core
 
-#### Changed
+#### Added
 
- - Updated the rendertest pattern to be more concise
+ - Added the new attributes.setIfUnset() method
+ - Added the new `scale` setting
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Fix axios version conflict
 
 
 ## 2.19.5 (2021-11-13)
@@ -865,12 +1354,6 @@
 
  - Fix issue where a very low waist caused the fly to be incorrectly drawn This only happens at unrealistic waist heights, so I changed the option minimum value instead. Closes [#1486](https://github.com/freesewing/freesewing/issues/1486)
 
-### core
-
-#### Fixed
-
- - Fixed a copy-paste error that caused the `absoluteOptions` shorthand property to be a proxy for the regular options object instead. Note that this bug (and proxying in general) only occurs in debug mode.
-
 ### penelope
 
 #### Changed
@@ -883,6 +1366,12 @@
 #### Fixed
 
  - Fix seam allowance on back, gusset and hood center parts Closes [#1464](https://github.com/freesewing/freesewing/issues/1464)
+
+### core
+
+#### Fixed
+
+ - Fixed a copy-paste error that caused the `absoluteOptions` shorthand property to be a proxy for the regular options object instead. Note that this bug (and proxying in general) only occurs in debug mode.
 
 
 ## 2.19.4 (2021-11-09)
@@ -928,13 +1417,6 @@
 
 ## 2.19.2 (2021-11-02)
 
-### components
-
-#### Added
-
- - Added linedrawing for Tiberius
- - Added linedrawing for Walburga
-
 ### cornelius
 
 #### Fixed
@@ -976,6 +1458,13 @@
 #### Changed
 
  - Migrated the `knotWidth` and `tipWidth` options from mm to snapped pct
+
+### components
+
+#### Added
+
+ - Added linedrawing for Tiberius
+ - Added linedrawing for Walburga
 
 
 ## 2.19.1 (2021-10-23)
@@ -1028,31 +1517,6 @@
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1313](https://github.com/freesewing/freesewing/issues/1313)
 
-### components
-
-#### Added
-
- - Added Bee linedrawing
-
-#### Changed
-
- - Added measurements for dolls & giants to Workbench measurments selector
- - Added sampling for dolls & giants to Workbench tests
-
-#### Fixed
-
- - Added missing linedrawing for Yuri
-
-### core
-
-#### Added
-
- - Added support for snapped percentage options See https://github.com/freesewing/freesewing/discussions/1331
-
-#### Changed
-
- - Pattern.on() is now chainable as it returns the Pattern object
-
 ### holmes
 
 #### Added
@@ -1076,13 +1540,6 @@
 #### Changed
 
  - Changed the `handleWidth` option type from `mm` to `pct`
-
-### i18n
-
-#### Fixed
-
- - Fixed bug in resolving of shared pattern options
- - Removed optional chaining which broke node v12 support
 
 ### jaeger
 
@@ -1112,15 +1569,6 @@
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1316](https://github.com/freesewing/freesewing/issues/1316)
 
-### pattern-info
-
-#### Changed
-
- - Added Bee pattern
- - Added Lunetius pattern
- - Added Tiberius pattern
- - Added Walburga pattern
-
 ### penelope
 
 #### Changed
@@ -1133,13 +1581,6 @@
 #### Fixed
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1320](https://github.com/freesewing/freesewing/issues/1316)
-
-### plugin-versionfree-svg
-
-#### Added
-
- - This is a plugin to strip (FreeSewing) versdion info out of the SVG to allow you to diff your SVG output between FreeSewing versions
- - Initial release
 
 ### simon
 
@@ -1174,12 +1615,6 @@
  - Support drafting of non-human measurements (dolls & giants) Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
  - Fix issue with armhole introduced with the S3 options in Brian Closes
 
-### snapseries
-
-#### Added
-
- - Initial release of `@freesewing/snapseries` wich holds commonly used series of snap values for percentage options
-
 ### theo
 
 #### Changed
@@ -1200,14 +1635,56 @@
  - Walburga is a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment
  - Initial release
 
+### plugin-versionfree-svg
 
-## 2.18.0 (2021-09-09)
+#### Added
 
-### core
+ - This is a plugin to strip (FreeSewing) versdion info out of the SVG to allow you to diff your SVG output between FreeSewing versions
+ - Initial release
+
+### components
+
+#### Added
+
+ - Added Bee linedrawing
+
+#### Changed
+
+ - Added measurements for dolls & giants to Workbench measurments selector
+ - Added sampling for dolls & giants to Workbench tests
 
 #### Fixed
 
- - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
+ - Added missing linedrawing for Yuri
+
+### core
+
+#### Added
+
+ - Added support for snapped percentage options See https://github.com/freesewing/freesewing/discussions/1331
+
+#### Changed
+
+ - Pattern.on() is now chainable as it returns the Pattern object
+
+### i18n
+
+#### Fixed
+
+ - Fixed bug in resolving of shared pattern options
+ - Removed optional chaining which broke node v12 support
+
+### pattern-info
+
+#### Changed
+
+ - Added Bee pattern
+ - Added Lunetius pattern
+ - Added Tiberius pattern
+ - Added Walburga pattern
+
+
+## 2.18.0 (2021-09-09)
 
 ### holmes
 
@@ -1220,16 +1697,6 @@
 #### Fixed
 
  - Replace cut-on-fold indicator on pocket with a regular grainline indicator Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
-
-### i18n
-
-#### Added
-
- - Added translations for Yuri
-
-#### Fixed
-
- - Added optional chaining so missing options always lead to clear error message
 
 ### simon
 
@@ -1255,6 +1722,22 @@
 #### Added
 
  - Initial release of Yuri, a fancy zipless cardigan based on the Huey & Hugo hoodies
+
+### core
+
+#### Fixed
+
+ - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
+
+### i18n
+
+#### Added
+
+ - Added translations for Yuri
+
+#### Fixed
+
+ - Added optional chaining so missing options always lead to clear error message
 
 
 ## 2.17.4 (2021-08-20)
@@ -1283,18 +1766,6 @@
 
 ## 2.17.2 (2021-08-15)
 
-### i18n
-
-#### Added
-
- - Added new ffsa option for simon & simone
-
-### models
-
-#### Added
-
- - Added the new `bustPointToUnderbust` measurement for future bikini pattern
-
 ### simon
 
 #### Added
@@ -1306,6 +1777,18 @@
 #### Added
 
  - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
+### i18n
+
+#### Added
+
+ - Added new ffsa option for simon & simone
+
+### models
+
+#### Added
+
+ - Added the new `bustPointToUnderbust` measurement for future bikini pattern
 
 
 ## 2.17.1 (2021-07-14)
@@ -1355,32 +1838,6 @@
 
  - Add `@freesewing/plugin-mirror` as peer dependency
 
-### components
-
-#### Added
-
- - Added Reddit icon to Icon component
- - Added Ursula linedrawing to Linedrawings
-
-#### Changed
-
- - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
- - Changed antman references to antperson
-
-#### Removed
-
- - Removed Gitter icon from Icon component
-
-#### Fixed
-
- - Correctly load saved value for mm options See [#1136](https://github.com/freesewing/freesewing/issues/1136)
-
-### core
-
-#### Fixed
-
- - Fix a bug in `path.shiftAlong` where no point is returned if the distance to shift is a fraction of one step (1/25mm) into a new path segment See [#1140](https://github.com/freesewing/freesewing/issues/1140)
-
 ### diana
 
 #### Changed
@@ -1399,12 +1856,6 @@
 
  - Set brian `s3` options as constants
 
-### i18n
-
-#### Changed
-
- - Changed antman references to antperson
-
 ### jaeger
 
 #### Changed
@@ -1417,25 +1868,6 @@
 
  - The waistband was incorrectly using the cuff widht See [#1113](https://github.com/freesewing/freesewing/issues/1113)
  - Only draft the cuff part when it's needed See [#1113](https://github.com/freesewing/freesewing/issues/1113)
-
-### plugin-bundle
-
-#### Changed
-
- - Include plugin-buttons
- - Include plugin-mirror
-
-### plugin-buttons
-
-#### Changed
-
- - Is now included in plugin-bundle
-
-### plugin-mirror
-
-#### Changed
-
- - Is now included in plugin-bundle
 
 ### simon
 
@@ -1478,6 +1910,57 @@
 #### Added
 
  - Initial release of Ursula, a basic, highly-customizable underwear pattern
+
+### plugin-bundle
+
+#### Changed
+
+ - Include plugin-buttons
+ - Include plugin-mirror
+
+### plugin-buttons
+
+#### Changed
+
+ - Is now included in plugin-bundle
+
+### plugin-mirror
+
+#### Changed
+
+ - Is now included in plugin-bundle
+
+### components
+
+#### Added
+
+ - Added Reddit icon to Icon component
+ - Added Ursula linedrawing to Linedrawings
+
+#### Changed
+
+ - Caption should not be passed as children to Legend and Example components See https://github.com/freesewing/freesewing/issues/1043
+ - Changed antman references to antperson
+
+#### Removed
+
+ - Removed Gitter icon from Icon component
+
+#### Fixed
+
+ - Correctly load saved value for mm options See [#1136](https://github.com/freesewing/freesewing/issues/1136)
+
+### core
+
+#### Fixed
+
+ - Fix a bug in `path.shiftAlong` where no point is returned if the distance to shift is a fraction of one step (1/25mm) into a new path segment See [#1140](https://github.com/freesewing/freesewing/issues/1140)
+
+### i18n
+
+#### Changed
+
+ - Changed antman references to antperson
 
 
 ## 2.16.2 (2021-05-05)
@@ -1576,24 +2059,11 @@
 
  - Changed `department` setting in config in line with new grouping
 
-### components
-
-#### Added
-
- - Added a new `designs` icon
- - We now publish .mjs files again for the different components
-
 ### cornelius
 
 #### Changed
 
  - Changed `department` setting in config in line with new grouping
-
-### create-freesewing-pattern
-
-#### Fixed
-
- - Don't list pattern as dependency in the example package.json
 
 ### diana
 
@@ -1636,12 +2106,6 @@
 #### Changed
 
  - Changed `department` setting in config in line with new grouping
-
-### i18n
-
-#### Added
-
- - New translations for pattern filter
 
 ### jaeger
 
@@ -1721,13 +2185,6 @@
 
  - Changed `department` setting in config in line with new grouping
 
-### utils
-
-#### Changed
-
- - neckstimate now takes an extra `noRound` parameter to return the unrounded value
- - measurementDiffers takes an extra `absolute` value that can be set to false to get the non-absolute and non-rounded value
-
 ### wahid
 
 #### Changed
@@ -1740,6 +2197,32 @@
 
  - Changed `department` setting in config in line with new grouping
 
+### components
+
+#### Added
+
+ - Added a new `designs` icon
+ - We now publish .mjs files again for the different components
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Don't list pattern as dependency in the example package.json
+
+### i18n
+
+#### Added
+
+ - New translations for pattern filter
+
+### utils
+
+#### Changed
+
+ - neckstimate now takes an extra `noRound` parameter to return the unrounded value
+ - measurementDiffers takes an extra `absolute` value that can be set to false to get the non-absolute and non-rounded value
+
 
 ## 2.16.0 (2021-05-24)
 
@@ -1748,6 +2231,25 @@
 #### Fixed
 
  - Paperless dimensions don't extend to hem See [#1030](https://github.com/freesewing/freesewing/issues/1030)
+
+### florent
+
+#### Fixed
+
+ - Add missing notches See [#1015](https://github.com/freesewing/freesewing/issues/1015)
+ - Removed inherited miniscale points
+
+### huey
+
+#### Fixed
+
+ - Fix hood dependencies See [#1026](https://github.com/freesewing/freesewing/issues/1026)
+
+### jaeger
+
+#### Fixed
+
+ - Fixed third button not showing up See [#973](https://github.com/freesewing/freesewing/issues/973)
 
 ### components
 
@@ -1777,30 +2279,11 @@
 
  - Changes to code styling
 
-### florent
-
-#### Fixed
-
- - Add missing notches See [#1015](https://github.com/freesewing/freesewing/issues/1015)
- - Removed inherited miniscale points
-
-### huey
-
-#### Fixed
-
- - Fix hood dependencies See [#1026](https://github.com/freesewing/freesewing/issues/1026)
-
 ### i18n
 
 #### Changed
 
  - Changes to cfp strings
-
-### jaeger
-
-#### Fixed
-
- - Fixed third button not showing up See [#973](https://github.com/freesewing/freesewing/issues/973)
 
 
 ## 2.15.4 (2021-05-08)
@@ -1823,17 +2306,17 @@
 
 ## 2.15.2 (2021-04-28)
 
-### core
-
-#### Fixed
-
- - Path.shiftAlong takes now an optional second paramter to control the number of steps the path will be divided in per Mm (if it's a curve) default is 25 See [#976](https://github.com/freesewing/freesewing/issues/976)
-
 ### jaeger
 
 #### Fixed
 
  - Draft a third button when it's requested See [#973](https://github.com/freesewing/freesewing/issues/973)
+
+### core
+
+#### Fixed
+
+ - Path.shiftAlong takes now an optional second paramter to control the number of steps the path will be divided in per Mm (if it's a curve) default is 25 See [#976](https://github.com/freesewing/freesewing/issues/976)
 
 
 ## 2.15.1 (2021-04-24)
@@ -1848,17 +2331,17 @@
 
  - Keep `frontPocketSlantRound` and `frontPocketSlantBend` options from being zero
 
-### core
-
-#### Fixed
-
- - Fixed bug in the dependency resolved when dependecies are passed as a string See [#971](https://github.com/freesewing/freesewing/issues/971)
-
 ### simon
 
 #### Added
 
  - Added some dimensions to clarify the X value of shoulder/armhole points
+
+### core
+
+#### Fixed
+
+ - Fixed bug in the dependency resolved when dependecies are passed as a string See [#971](https://github.com/freesewing/freesewing/issues/971)
 
 
 ## 2.15.0 (2021-04-15)
@@ -1875,47 +2358,11 @@
 
  - Inital release of the Charlie Chinos pattern
 
-### components
-
-#### Added
-
- - Added charlie LineDrawing
-
-#### Changed
-
- - Show raised info above pattern in workbench
- - Round point coordinates in design UI now that they are no longer rounded in core
-
-#### Fixed
-
- - Always show design mode switch
-
-### core
-
-#### Added
-
- - The part.getId() method now takes an optional prefix argument
-
-#### Changed
-
- - Don't round coordinates internally to avoid path.split misses
-
 ### cornelius
 
 #### Fixed
 
  - Handle edge-case where splitting a path on and endpoint causes things to break
-
-### css-theme
-
-#### Added
-
- - Added the path.bartack class
-
-#### Changed
-
- - Removed old bartack styling for new plugin
- - Better example styling to prevent UI jumping
 
 ### examples
 
@@ -1923,13 +2370,6 @@
 
  - Added examples for bartack plugin
  - Added examples for new buttonhole-start/end snippets
-
-### i18n
-
-#### Added
-
- - Added translation for new Titan options
- - Added translations for Charlie
 
 ### paco
 
@@ -1939,12 +2379,26 @@
  - Added the (disabled) waistbandHeight option from Titan
  - Changed to Titan's waistbandWidth option
 
-### pattern-info
+### titan
 
 #### Added
 
- - Added Charlie
- - Info now also contains deprecated status
+ - Added the waistbandHeight option
+ - Added the crossSeamCurveAngle option
+ - Added the crotchSeamCurveAngle option
+
+#### Changed
+
+ - Crotch- and Cross seam have been redrawn using the new angle options
+ - Added waistbandWidth option
+
+#### Fixed
+
+ - Adapt seat control point when waist is dropped below the hip line
+ - Removed lingering console.log statements
+ - Configure dependencies to guarantee draft order
+ - Always keep seat control point vertically between styled waist and seat
+ - Adapt the outseam to the dropped waist in all circumstances
 
 ### plugin-buttons
 
@@ -1971,36 +2425,58 @@
 
  - Added the path.bartack class
 
-### titan
-
-#### Added
-
- - Added the waistbandHeight option
- - Added the crossSeamCurveAngle option
- - Added the crotchSeamCurveAngle option
-
-#### Changed
-
- - Crotch- and Cross seam have been redrawn using the new angle options
- - Added waistbandWidth option
-
-#### Fixed
-
- - Adapt seat control point when waist is dropped below the hip line
- - Removed lingering console.log statements
- - Configure dependencies to guarantee draft order
- - Always keep seat control point vertically between styled waist and seat
- - Adapt the outseam to the dropped waist in all circumstances
-
-
-## 2.14.0 (2021-03-07)
-
 ### components
 
 #### Added
 
- - Added Bella linedrawing
- - Added Cornelius linedrawing
+ - Added charlie LineDrawing
+
+#### Changed
+
+ - Show raised info above pattern in workbench
+ - Round point coordinates in design UI now that they are no longer rounded in core
+
+#### Fixed
+
+ - Always show design mode switch
+
+### core
+
+#### Added
+
+ - The part.getId() method now takes an optional prefix argument
+
+#### Changed
+
+ - Don't round coordinates internally to avoid path.split misses
+
+### css-theme
+
+#### Added
+
+ - Added the path.bartack class
+
+#### Changed
+
+ - Removed old bartack styling for new plugin
+ - Better example styling to prevent UI jumping
+
+### i18n
+
+#### Added
+
+ - Added translation for new Titan options
+ - Added translations for Charlie
+
+### pattern-info
+
+#### Added
+
+ - Added Charlie
+ - Info now also contains deprecated status
+
+
+## 2.14.0 (2021-03-07)
 
 ### cornelius
 
@@ -2013,6 +2489,13 @@
 #### Fixed
 
  - Replaced grainline indicator on pocket with cut-on-fold indicator
+
+### components
+
+#### Added
+
+ - Added Bella linedrawing
+ - Added Cornelius linedrawing
 
 ### i18n
 
@@ -2029,23 +2512,11 @@
 
  - Fixed issue with out-of-order execution
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - Updated chat link from gitter to discord
-
 ### paco
 
 #### Fixed
 
  - Only add paperless dimensions for pockets if we drafted pockets
-
-### pattern-info
-
-#### Fixed
-
- - Make pattern list alphabetic
 
 ### penelope
 
@@ -2064,6 +2535,18 @@
 #### Fixed
 
  - Always ensure point waistIn is created in back part
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Updated chat link from gitter to discord
+
+### pattern-info
+
+#### Fixed
+
+ - Make pattern list alphabetic
 
 
 ## 2.13.1 (2021-02-14)
@@ -2108,16 +2591,6 @@
 
  - Added notches to facilitate seam matching
 
-### components
-
-#### Added
-
- - Linedrawing for hortensia
-
-#### Fixed
-
- - Check point attributes are present before using them
-
 ### hortensia
 
 #### Added
@@ -2130,12 +2603,6 @@
 
  - Fix style of the seam allowance paths
  - Fix sleeve dependencies
-
-### i18n
-
-#### Added
-
- - Translation for Hortensia
 
 ### simone
 
@@ -2160,6 +2627,22 @@
 #### Fixed
 
  - Make sure roudEnd and roundStart points are always available
+
+### components
+
+#### Added
+
+ - Linedrawing for hortensia
+
+#### Fixed
+
+ - Check point attributes are present before using them
+
+### i18n
+
+#### Added
+
+ - Translation for Hortensia
 
 
 ## 2.12.1 (2021-01-27)
@@ -2200,12 +2683,6 @@
 
  - Added missing scalebox
 
-### components
-
-#### Fixed
-
- - Fixed links in Workbench footer
-
 ### florence
 
 #### Fixed
@@ -2243,16 +2720,6 @@
 #### Fixed
 
  - Added missing scalebox
-
-### plugin-scalebox
-
-#### Added
-
- - Now includes the miniscale macro
-
-#### Changed
-
- - Took my name off the patterns
 
 ### shin
 
@@ -2292,6 +2759,22 @@
 
  - Added missing scalebox
 
+### plugin-scalebox
+
+#### Added
+
+ - Now includes the miniscale macro
+
+#### Changed
+
+ - Took my name off the patterns
+
+### components
+
+#### Fixed
+
+ - Fixed links in Workbench footer
+
 
 ## 2.11.2 (2021-01-11)
 
@@ -2318,6 +2801,18 @@
 
 
 ## 2.11.0 (2021-01-10)
+
+### shin
+
+#### Fixed
+
+ - Removed unused lengthBonus option
+
+### plugin-notches
+
+#### Added
+
+ - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
 
 ### components
 
@@ -2359,18 +2854,6 @@
 #### Fixed
 
  - Type in Simon title
-
-### plugin-notches
-
-#### Added
-
- - Initial release. See [#757](https://github.com/freesewing/freesewing/issues/757)
-
-### shin
-
-#### Fixed
-
- - Removed unused lengthBonus option
 
 
 ## 2.10.7 (2020-11-18)
@@ -2465,6 +2948,25 @@
 
 ## 2.9.0 (2020-10-02)
 
+### teagan
+
+#### Added
+
+ - Teagan is a T-shirt pattern
+
+### plugin-dimension
+
+#### Added
+
+ - Added support for passing in the ID used to add paths to the part
+ - Added the `rmd` macro that removes dimensions
+
+### plugin-title
+
+#### Added
+
+ - Added support for cutting instructions. Closes [#500](https://github.com/freesewing/freesewing/issues/500)
+
 ### components
 
 #### Added
@@ -2510,25 +3012,6 @@
 
  - Added teagan info
 
-### plugin-dimension
-
-#### Added
-
- - Added support for passing in the ID used to add paths to the part
- - Added the `rmd` macro that removes dimensions
-
-### plugin-title
-
-#### Added
-
- - Added support for cutting instructions. Closes [#500](https://github.com/freesewing/freesewing/issues/500)
-
-### teagan
-
-#### Added
-
- - Teagan is a T-shirt pattern
-
 
 ## 2.8.1 (2020-08-16)
 
@@ -2538,17 +3021,17 @@
 
  - Fixed issue with (length of) band
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - Fixed breaking change in execa upgrade in 2.8.0
-
 ### paco
 
 #### Fixed
 
  - Added Titan as a peer dependency
+
+### create-freesewing-pattern
+
+#### Fixed
+
+ - Fixed breaking change in execa upgrade in 2.8.0
 
 
 ## 2.8.0 (2020-08-10)
@@ -2558,6 +3041,12 @@
 #### Fixed
 
  - Fix for incorrect length of the ribbon
+
+### paco
+
+#### Added
+
+ - Initial release for Paco, a pattern for summer pants
 
 ### components
 
@@ -2574,12 +3063,6 @@
 #### Fixed
 
  - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
-
-### paco
-
-#### Added
-
- - Initial release for Paco, a pattern for summer pants
 
 
 ## 2.7.2 (2020-07-29)
@@ -2611,26 +3094,6 @@
 
  - Removed unused `hipsEase` code
 
-### components
-
-#### Added
-
- - Workbench now includes events debug output and enables debug by default
-
-### core
-
-#### Added
-
- - Added new debug functionality through the use of the `raise.debug`
- - Added a new `debug` setting
- - Shorthand now proxies objects to allow debug and raise
-
-### css-theme
-
-#### Added
-
- - Added themeing for events
-
 ### hugo
 
 #### Fixed
@@ -2657,12 +3120,6 @@
 
  - Avoided loading unset ribbingHeight from store
 
-### utils
-
-#### Added
-
- - Added backend calls for creating gists/issues on Github
-
 ### wahid
 
 #### Added
@@ -2672,6 +3129,32 @@
 #### Changed
 
  - Hem radius can no longer be zero. Use teh `square` hem style for that
+
+### components
+
+#### Added
+
+ - Workbench now includes events debug output and enables debug by default
+
+### core
+
+#### Added
+
+ - Added new debug functionality through the use of the `raise.debug`
+ - Added a new `debug` setting
+ - Shorthand now proxies objects to allow debug and raise
+
+### css-theme
+
+#### Added
+
+ - Added themeing for events
+
+### utils
+
+#### Added
+
+ - Added backend calls for creating gists/issues on Github
 
 
 ## 2.7.0 (2020-07-12)
@@ -2769,42 +3252,6 @@
  - [Fixed missing points issue when changing panels option](https://github.com/freesewing/freesewing.org/issues/619)
  - Fixed panels option being a list of numbers rather than strings
 
-### components
-
-#### Added
-
- - The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)
- - Changed `models` to `people` in `sampleConfigurator`
- - The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
- - Added support for custom sample styles
- - Added Titan linedrawing
-
-#### Changed
-
- - Handle escaped quotes for React render. See [#437](https://github.com/freesewing/freesewing/issues/437)
-
-#### Fixed
-
- - Fixed bug that broke millimeter sliders
-
-### core
-
-#### Added
-
- - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
- - Added support for custom sample styles
- - Added support for raising events via `raise.[type]()` method
-
-#### Fixed
-
- - [Properly escape quotes in imperial units](https://github.com/freesewing/freesewing/issues/437)
-
-### css-theme
-
-#### Changed
-
- - Updated the width of the SVG paths of a draft to match plugin-theme
-
 ### diana
 
 #### Changed
@@ -2858,13 +3305,6 @@
  - Removed `Circumference` suffix from measurement names
  - Removed deprecated `debug()` statements
 
-### i18n
-
-#### Changed
-
- - Added translations for Titan
- - Removed `Circumference` suffix from measurement names
-
 ### jaeger
 
 #### Changed
@@ -2881,49 +3321,12 @@
  - A pattern to document the markings on our patterns
  - Initial release
 
-### models
-
-#### Changed
-
- - Models now come with the new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
- - Ported models to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
- - Removed `Circumference` suffix from measurement names
-
 ### penelope
 
 #### Changed
 
  - Ported penelope to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
  - Removed `Circumference` suffix from measurement names
-
-### plugin-bust
-
-#### Changed
-
- - Removed `Circumference` suffix from measurement names
-
-### plugin-buttons
-
-#### Changed
-
- - Snippet names are changed, `snap-male` is now `snap-stud` and `snap-female` is now `snap-socket` Changing this to avoid needless use of gender related terminology.
-
-#### Removed
-
- - Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
-
-### plugin-measurements
-
-#### Added
-
- - A FreeSewing plugin that adds measurements that can be calculated based on existing measurements
-
-### plugin-mirror
-
-#### Added
-
- - A FreeSewing plugin for mirroring points or paths
- - Initial release
 
 ### sandy
 
@@ -2997,21 +3400,6 @@
 
  - Removed `Circumference` suffix from measurement names
 
-### utils
-
-#### Added
-
- - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
- - `neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
-
-#### Changed
-
- - Changed `neckstimate` to handle new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
- - Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
- - Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
- - Removed `Circumference` suffix from measurement names
- - Added the `isDegMeasurement` method
-
 ### wahid
 
 #### Changed
@@ -3027,6 +3415,101 @@
  - Ported waralee to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
  - Removed `Circumference` suffix from measurement names
 
+### plugin-bust
+
+#### Changed
+
+ - Removed `Circumference` suffix from measurement names
+
+### plugin-buttons
+
+#### Changed
+
+ - Snippet names are changed, `snap-male` is now `snap-stud` and `snap-female` is now `snap-socket` Changing this to avoid needless use of gender related terminology.
+
+#### Removed
+
+ - Snippet `snap-male` and `snap-female` are no longer available. Use `snap-stud` and `snap-socket` instead
+
+### plugin-measurements
+
+#### Added
+
+ - A FreeSewing plugin that adds measurements that can be calculated based on existing measurements
+
+### plugin-mirror
+
+#### Added
+
+ - A FreeSewing plugin for mirroring points or paths
+ - Initial release
+
+### components
+
+#### Added
+
+ - The `sampleConfigurator` component now supports the antwoman test (in addition to the antman test)
+ - Changed `models` to `people` in `sampleConfigurator`
+ - The `Legend` component is new, it is similar to the `Example` component but only for the pattern notation legend
+ - Added support for custom sample styles
+ - Added Titan linedrawing
+
+#### Changed
+
+ - Handle escaped quotes for React render. See [#437](https://github.com/freesewing/freesewing/issues/437)
+
+#### Fixed
+
+ - Fixed bug that broke millimeter sliders
+
+### core
+
+#### Added
+
+ - Added support for injecting custom (path) styles when sampling. Closes [#380](https://github.com/freesewing/freesewing/issues/380)
+ - Added support for custom sample styles
+ - Added support for raising events via `raise.[type]()` method
+
+#### Fixed
+
+ - [Properly escape quotes in imperial units](https://github.com/freesewing/freesewing/issues/437)
+
+### css-theme
+
+#### Changed
+
+ - Updated the width of the SVG paths of a draft to match plugin-theme
+
+### i18n
+
+#### Changed
+
+ - Added translations for Titan
+ - Removed `Circumference` suffix from measurement names
+
+### models
+
+#### Changed
+
+ - Models now come with the new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+ - Ported models to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+ - Removed `Circumference` suffix from measurement names
+
+### utils
+
+#### Added
+
+ - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
+ - `neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+#### Changed
+
+ - Changed `neckstimate` to handle new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+ - Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+ - Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+ - Removed `Circumference` suffix from measurement names
+ - Added the `isDegMeasurement` method
+
 
 ## 2.6.0 (2020-05-01)
 
@@ -3035,6 +3518,41 @@
 #### Fixed
 
  - The `saBase` path is no longer being rendered
+
+### florence
+
+#### Added
+
+ - Florence is a face mask pattern
+
+#### Deprecated
+
+ - @freesewing/fu has been renamed to @freesewing/florence
+
+### hugo
+
+#### Fixed
+
+ - Render fully-sized pattern parts when complete is falsy
+ - Do not render pocket outline when complete is falsy
+ - Do not render pocket facing hint when complete is falsy
+
+### wahid
+
+#### Fixed
+
+ - Removed paths.test
+ - Do not draw the pocket outline unless complete is truthy
+ - Prevent rounded corners on pocket bag and lining to be drawn twice
+ - Closed the front seam path
+ - Draft the front lining/facing even when complete is falsy
+
+### plugin-export-dxf
+
+#### Added
+
+ - This plugin can export your pattern as DXF-ASTM
+ - Initial release
 
 ### components
 
@@ -3065,49 +3583,20 @@
 
  - New styled for updated Workbench component
 
-### florence
-
-#### Added
-
- - Florence is a face mask pattern
-
-#### Deprecated
-
- - @freesewing/fu has been renamed to @freesewing/florence
-
-### hugo
-
-#### Fixed
-
- - Render fully-sized pattern parts when complete is falsy
- - Do not render pocket outline when complete is falsy
- - Do not render pocket facing hint when complete is falsy
-
 ### i18n
 
 #### Changed
 
  - Changes to support the renaming of @freesewing/fu to @freesewing/florence
 
-### plugin-export-dxf
+
+## 2.5.0 (2020-04-05)
+
+### diana
 
 #### Added
 
- - This plugin can export your pattern as DXF-ASTM
- - Initial release
-
-### wahid
-
-#### Fixed
-
- - Removed paths.test
- - Do not draw the pocket outline unless complete is truthy
- - Prevent rounded corners on pocket bag and lining to be drawn twice
- - Closed the front seam path
- - Draft the front lining/facing even when complete is falsy
-
-
-## 2.5.0 (2020-04-05)
+ - Diana is a top with a draped neck
 
 ### css-theme
 
@@ -3118,12 +3607,6 @@
 #### Fixed
 
  - Fixed incorrect border value on active sidebar link
-
-### diana
-
-#### Added
-
- - Diana is a top with a draped neck
 
 ### i18n
 
@@ -3149,38 +3632,26 @@
 
  - Improved shape based on community feedback
 
-### utils
-
-#### Changed
-
- - neckstimate() now returns values rounded to nearest mm
-
 ### wahid
 
 #### Fixed
 
  - Check whether frontScyeDart option is zero prior to implementing it
 
+### utils
+
+#### Changed
+
+ - neckstimate() now returns values rounded to nearest mm
+
 
 ## 2.4.4 (2020-03-15)
-
-### core
-
-#### Fixed
-
- - New Svg.escapeText() method to escape text at render time, rather than at draft time This fixes the difference in the inch symbol is displayed in the React component or rendered SVG
 
 ### huey
 
 #### Fixed
 
  - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
-
-### plugin-dimension
-
-#### Changed
-
- - Don't escape inch symbol in text. Instead let Svg.escapeText() handle it at render time
 
 ### simon
 
@@ -3200,6 +3671,18 @@
 
  - The `sleevecapBackFactorY` and `sleevecapFrontFactorY` options had a minimum above the default
 
+### plugin-dimension
+
+#### Changed
+
+ - Don't escape inch symbol in text. Instead let Svg.escapeText() handle it at render time
+
+### core
+
+#### Fixed
+
+ - New Svg.escapeText() method to escape text at render time, rather than at draft time This fixes the difference in the inch symbol is displayed in the React component or rendered SVG
+
 
 ## 2.4.3 (2020-03-12)
 
@@ -3212,6 +3695,12 @@
 
 ## 2.4.2 (2020-03-08)
 
+### plugin-title
+
+#### Changed
+
+ - Added *for* to title output
+
 ### components
 
 #### Changed
@@ -3223,12 +3712,6 @@
 #### Added
 
  - Added more strings
-
-### plugin-title
-
-#### Changed
-
- - Added *for* to title output
 
 
 ## 2.4.1 (2020-03-04)
@@ -3318,44 +3801,6 @@
 
  - Removed deprecated `centerBackNeckToWaist` measurement
 
-### components
-
-#### Added
-
- - Added LineDrawing for Breanna
-
-#### Changed
-
- - DraftConfigurator has been updated to reflect frontend naming changes
- - Updated Workbench component to pass data rather than gist to DraftConfigurator
- - Term `pattern` is now `design`
- - Term `recipe` is now `pattern`
- - Term `gist` is now `data`
-
-### core
-
-#### Added
-
- - Added the `Path.noop()` method
- - Added the `Path.insop()` methods
-
-### create-freesewing-pattern
-
-#### Fixed
-
- - [#257](https://github.com/freesewing/freesewing/issues/257): Explain that pattern names are bound by the constraints of NPM package names
-
-### css-theme
-
-#### Added
-
- - Added styling for table.data
-
-#### Changed
-
- - Added new styles for the frontend changes in 2.2
- - Removed smaller fonts in ul.links
-
 ### florent
 
 #### Fixed
@@ -3378,40 +3823,11 @@
 
  - Made sure dimensions for hood center and waistband are always shown
 
-### i18n
-
-#### Added
-
- - Added translations for Breanna
-
-#### Changed
-
- - Added/Updated strings for the 2.2 frontend changes
- - Changed `Joost De Cock` to `Joost` because spam filters don't like cock
-
-#### Removed
-
- - Removed the files for homepage translation, and moved that content to markdown
- - Removed the files for editor translation, as it is no longer used
-
 ### jaeger
 
 #### Changed
 
  - Removed deprecated `centerBackNeckToWaist` measurement
-
-### models
-
-#### Changed
-
- - Extended the menswear size range to have 10 different sizes, just like womenswear
-
-### mui-theme
-
-#### Changed
-
- - Changed the light background to `#f8f9fa` rather than `#fff`
- - Changed the navbar to be light/dark based on the theme, rather than always dark
 
 ### penelope
 
@@ -3462,12 +3878,6 @@
 
  - Removed deprecated `centerBackNeckToWaist` measurement
 
-### utils
-
-#### Changed
-
- - Neckstimate now uses proportions only
-
 ### wahid
 
 #### Changed
@@ -3480,20 +3890,93 @@
 
  - Fixed tags in pattern config file
 
+### components
 
-## 2.1.9 (2020-01-18)
+#### Added
+
+ - Added LineDrawing for Breanna
+
+#### Changed
+
+ - DraftConfigurator has been updated to reflect frontend naming changes
+ - Updated Workbench component to pass data rather than gist to DraftConfigurator
+ - Term `pattern` is now `design`
+ - Term `recipe` is now `pattern`
+ - Term `gist` is now `data`
 
 ### core
 
+#### Added
+
+ - Added the `Path.noop()` method
+ - Added the `Path.insop()` methods
+
+### create-freesewing-pattern
+
 #### Fixed
 
- - [#19](https://github.com/freesewing/freesewing/issues/19): Path offset issue is now fixed in upstream bezier-js@2.4.6
+ - [#257](https://github.com/freesewing/freesewing/issues/257): Explain that pattern names are bound by the constraints of NPM package names
+
+### css-theme
+
+#### Added
+
+ - Added styling for table.data
+
+#### Changed
+
+ - Added new styles for the frontend changes in 2.2
+ - Removed smaller fonts in ul.links
+
+### i18n
+
+#### Added
+
+ - Added translations for Breanna
+
+#### Changed
+
+ - Added/Updated strings for the 2.2 frontend changes
+ - Changed `Joost De Cock` to `Joost` because spam filters don't like cock
+
+#### Removed
+
+ - Removed the files for homepage translation, and moved that content to markdown
+ - Removed the files for editor translation, as it is no longer used
+
+### models
+
+#### Changed
+
+ - Extended the menswear size range to have 10 different sizes, just like womenswear
+
+### mui-theme
+
+#### Changed
+
+ - Changed the light background to `#f8f9fa` rather than `#fff`
+ - Changed the navbar to be light/dark based on the theme, rather than always dark
+
+### utils
+
+#### Changed
+
+ - Neckstimate now uses proportions only
+
+
+## 2.1.9 (2020-01-18)
 
 ### simon
 
 #### Fixed
 
  - [#253](https://github.com/freesewing/freesewing/issues/253): Fixed type in simon sleeve causing incorrect cuff issue
+
+### core
+
+#### Fixed
+
+ - [#19](https://github.com/freesewing/freesewing/issues/19): Path offset issue is now fixed in upstream bezier-js@2.4.6
 
 
 ## 2.1.8 (2019-12-16)
@@ -3611,6 +4094,42 @@
 
 ## 2.1.0 (2019-10-06)
 
+### penelope
+
+#### Added
+
+ - Added the Penelope Pencil Skirt pattern by @woutervdub
+ - Initial release
+
+### simon
+
+#### Changed
+
+ - [#123](https://github.com/freesewing/freesewing/issues/123): Added a box pleat option to Simon
+ - Added the `backDarts` option to control the inclusion of back darts
+ - Added the `backDartsShaping` option to control the amount of shaping by the back darts
+ - Changed the defaults to slightly reduce the ease and adapt the sleevecap
+
+#### Fixed
+
+ - Fixed an issue where the store wasn't properly initialized causing hips and waist ease to be set incorrectly
+ - Added a missing paperless dimension for the waist
+ - Fixed an issue where the split yoke option was not taken into account correctly
+
+### simone
+
+#### Added
+
+ - Added the Simone shirt pattern
+ - Initial release
+
+### waralee
+
+#### Added
+
+ - Added the Waralee wrap Pants pattern by @woutervdub
+ - Initial release
+
 ### components
 
 #### Added
@@ -3652,35 +4171,6 @@
 
  - Added translations for Penelope, Waralee, and Simone
 
-### penelope
-
-#### Added
-
- - Added the Penelope Pencil Skirt pattern by @woutervdub
- - Initial release
-
-### simon
-
-#### Changed
-
- - [#123](https://github.com/freesewing/freesewing/issues/123): Added a box pleat option to Simon
- - Added the `backDarts` option to control the inclusion of back darts
- - Added the `backDartsShaping` option to control the amount of shaping by the back darts
- - Changed the defaults to slightly reduce the ease and adapt the sleevecap
-
-#### Fixed
-
- - Fixed an issue where the store wasn't properly initialized causing hips and waist ease to be set incorrectly
- - Added a missing paperless dimension for the waist
- - Fixed an issue where the split yoke option was not taken into account correctly
-
-### simone
-
-#### Added
-
- - Added the Simone shirt pattern
- - Initial release
-
 ### utils
 
 #### Added
@@ -3691,13 +4181,6 @@
 #### Fixed
 
  - Fixed an issue where optionDefault was not handling list options correctly
-
-### waralee
-
-#### Added
-
- - Added the Waralee wrap Pants pattern by @woutervdub
- - Initial release
 
 
 ## 2.0.4 (2019-09-27)
@@ -3754,6 +4237,20 @@
 
  - Added bandLength option to fit optiongroup (it was missing)
 
+### jaeger
+
+#### Fixed
+
+ - [#76](https://github.com/freesewing/freesewing.org/issues/76): Fixed a typo in Jaeger that was causing the side vent length to be wrong
+
+### simon
+
+#### Fixed
+
+ - [#100](https://github.com/freesewing/freesewing.org/issues/100): Updated simon with more sensible defaults for ease options
+ - [#102](https://github.com/freesewing/freesewing.org/issues/102): Fixed 'Snippets not defined' error when drafting a seperate button placket
+ - [#103](https://github.com/freesewing/freesewing.org/issues/103): Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance
+
 ### components
 
 #### Fixed
@@ -3785,20 +4282,6 @@
 
  - [#90](https://github.com/freesewing/freesewing/issues/90): Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo
 
-### jaeger
-
-#### Fixed
-
- - [#76](https://github.com/freesewing/freesewing.org/issues/76): Fixed a typo in Jaeger that was causing the side vent length to be wrong
-
-### simon
-
-#### Fixed
-
- - [#100](https://github.com/freesewing/freesewing.org/issues/100): Updated simon with more sensible defaults for ease options
- - [#102](https://github.com/freesewing/freesewing.org/issues/102): Fixed 'Snippets not defined' error when drafting a seperate button placket
- - [#103](https://github.com/freesewing/freesewing.org/issues/103): Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance
-
 ### utils
 
 #### Fixed
@@ -3807,6 +4290,12 @@
 
 
 ## 2.0.1 (2019-09-01)
+
+### theo
+
+#### Fixed
+
+ - [#78](https://github.com/freesewing/freesewing/issues/78): Removed inherited notches from fly shield and side piece.
 
 ### models
 
@@ -3822,12 +4311,6 @@
 #### Fixed
 
  - [#86](https://github.com/freesewing/freesewing/issues/86): The `seatCircumference` measurement was missing, thus making it unavailable on the website
-
-### theo
-
-#### Fixed
-
- - [#78](https://github.com/freesewing/freesewing/issues/78): Removed inherited notches from fly shield and side piece.
 
 ### utils
 
@@ -3886,30 +4369,6 @@
 
  - Initial release
 
-### components
-
-#### Added
-
- - Initial release
-
-### core
-
-#### Added
-
- - Initial release
-
-### create-freesewing-pattern
-
-#### Added
-
- - Initial release
-
-### css-theme
-
-#### Added
-
- - Initial release
-
 ### examples
 
 #### Added
@@ -3934,31 +4393,67 @@
 
  - Initial release
 
-### i18n
-
-#### Added
-
- - Initial release
-
 ### jaeger
 
 #### Added
 
  - Initial release
 
-### models
+### rendertest
 
 #### Added
 
  - Initial release
 
-### mui-theme
+### sandy
 
 #### Added
 
  - Initial release
 
-### pattern-info
+### shin
+
+#### Added
+
+ - Initial release
+
+### simon
+
+#### Added
+
+ - Initial release
+
+### sven
+
+#### Added
+
+ - Initial release
+
+### tamiko
+
+#### Added
+
+ - Initial release
+
+### theo
+
+#### Added
+
+ - Initial release
+
+### trayvon
+
+#### Added
+
+ - Initial release
+
+### tutorial
+
+#### Added
+
+ - Initial release
+
+### wahid
 
 #### Added
 
@@ -4066,73 +4561,61 @@
 
  - Initial release
 
+### components
+
+#### Added
+
+ - Initial release
+
+### core
+
+#### Added
+
+ - Initial release
+
+### create-freesewing-pattern
+
+#### Added
+
+ - Initial release
+
+### css-theme
+
+#### Added
+
+ - Initial release
+
+### i18n
+
+#### Added
+
+ - Initial release
+
+### models
+
+#### Added
+
+ - Initial release
+
+### mui-theme
+
+#### Added
+
+ - Initial release
+
+### pattern-info
+
+#### Added
+
+ - Initial release
+
 ### prettier-config
 
 #### Added
 
  - Initial release
 
-### rendertest
-
-#### Added
-
- - Initial release
-
-### sandy
-
-#### Added
-
- - Initial release
-
-### shin
-
-#### Added
-
- - Initial release
-
-### simon
-
-#### Added
-
- - Initial release
-
-### sven
-
-#### Added
-
- - Initial release
-
-### tamiko
-
-#### Added
-
- - Initial release
-
-### theo
-
-#### Added
-
- - Initial release
-
-### trayvon
-
-#### Added
-
- - Initial release
-
-### tutorial
-
-#### Added
-
- - Initial release
-
 ### utils
-
-#### Added
-
- - Initial release
-
-### wahid
 
 #### Added
 

@@ -1,58 +1,48 @@
 _:
+  build: 'node build.js'
   clean: 'rimraf dist'
-  build: 'rollup -c'
-  cibuild_step1: 'rollup -c'
-  test: &notests 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
-  pubtest: 'npm publish --registry http://localhost:6662'
-  pubforce: 'npm publish'
+  mbuild: 'NO_MINIFY=1 node build.js'
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
-  start: 'rollup -c -w'
+  test: &notests 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
+  vbuild: 'VERBOSE=1 node build.js'
 _types:
-  pattern:
-    netlify: 'echo "Not configured yet"'
+  design:
+    prettier: "npx prettier --write 'src/*.js' 'config/*.js'"
     test: &test 'BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register'
     testci: &testci "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
   plugin:
+    prettier: "npx prettier --write 'src/*.js' 'tests/*.mjs'"
     test: *test
     testci: *testci
-    prettier: "npx prettier --write 'src/*.js' 'tests/*.mjs'"
 create-freesewing-pattern:
-  clean: '!'
-  nodebuild: '!'
-  modulebuild: '!'
-  cibuild_step1: '!'
   build: '!'
-  test: *test
-  testci: *testci
+  cibuild_step1: '!'
+  clean: '!'
+  mbuild: '!'
+  test: '!'
+  testci: '!'
+  vbuild: '!'
 css-theme:
-  cibuild_step1: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   build: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   watch: 'npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css'
 components:
-  test: *notests
+  clean: 'rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Legend && rimraf LineDrawing && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf Spinner && rimraf withGist && rimraf withLanguage && rimraf withStorage && rimraf Workbench'
   storybook: 'start-storybook -p 6663'
-  # react-scripts doesn't handle .mjs files correctly
-  modulebuild: '!'
-  clean: 'rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench'
-  cibuild_step2: 'rollup -c'
-  build: 'rollup -c'
-  watch: 'BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs'
+  test: *notests
 core:
-  testonly: 'BABEL_ENV=production npx mocha tests/*.test.js'
+  coverage: 'BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
+  report: 'BABEL_ENV=production nyc report --reporter=html'
   test: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js'
   testci: "BABEL_ENV=production npx mocha tests/*.test.js --require @babel/register --reporter ../../tests/reporters/terse.js"
-  report: 'BABEL_ENV=production nyc report --reporter=html'
-  coverage: 'BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
+  testonly: 'BABEL_ENV=production npx mocha tests/*.test.js'
 i18n:
   # react-scripts doesn't handle .mjs files correctly
-  modulebuild: '!'
+  prebuild: 'node src/prebuild.mjs'
   test: *test
   testci: *testci
-  prebuild: 'node src/prebuild.mjs'
 pattern-info:
   cibuild_step1: '!'
-  cibuild_step2: 'node src/prebuild.js && rollup -c'
+  build: 'node src/prebuild.js && node build.js'
   prebuild: 'node src/prebuild.js'
 utils:
-  # react-scripts doesn't handle .mjs files correctly
-  modulebuild: '!'
+  clean: "rimraf backend && rimraf camelCase && rimraf capitalize && rimraf cloneObject && rimraf convertSize && rimraf defaultGist && rimraf defaultSa && rimraf formatImperial && rimraf formatMm && rimraf isDegMeasurement && rimraf measurementAsMm && rimraf measurementDiffers && rimraf neckstimate && rimraf optionDefault && rimraf optionType && rimraf roundMm && rimraf roundMmDown && rimraf roundMmUp && rimraf sliderStep && rimraf smallestImperialStep && rimraf storage && rimraf tiler && rimraf validateEmail && rimraf validateTld"

@@ -1,0 +1,42 @@
+div.workbench.theme-wrapper > div > header a.navlink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f8f9fa;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.5rem 1rem 1rem !important;
+}
+div.workbench.theme-wrapper > div > header a.navlink svg {
+  color: inherit;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 12px;
+}
+div.workbench.theme-wrapper > div > header a.navlink.theme svg {
+  transform: rotate(26deg);
+  color: #ffe066;
+}
+div.workbench.theme-wrapper > div > header a.navlink.active svg {
+  color: #51cf66;
+}
+div.workbench.theme-wrapper > div > header a.logo:hover,
+div.workbench.theme-wrapper > div > header a.navlink:hover {
+  color: #d0bfff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+div.workbench.theme-wrapper div.fill {
+  width: 100%;
+  margin: 0;
+}
+div.workbench.theme-wrapper div.fill div.inner {
+  max-width: 1200px;
+  padding: 3rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+}

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/components",
-  "version": "2.20.8",
+  "version": "2.21.0-rc.0",
   "description": "A collection of React components for FreeSewing web UIs",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -19,35 +19,32 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf withGist && rimraf withLanguage && rimraf Workbench",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
-    "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
+    "build": "node build.js",
+    "clean": "rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Legend && rimraf LineDrawing && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf Spinner && rimraf withGist && rimraf withLanguage && rimraf withStorage && rimraf Workbench",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
+    "test": "echo \"components: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "vbuild": "VERBOSE=1 node build.js",
     "storybook": "start-storybook -p 6663",
-    "cibuild_step2": "rollup -c",
-    "watch": "BABEL_ENV=production rollup -c -w -o dist/index.js -f cjs"
+    "cibuild_step6": "node build.js"
   },
   "peerDependencies": {
     "axios": "^0.25.0",
     "react": "^17.0.2",
-    "@freesewing/pattern-info": "^2.20.8",
-    "@freesewing/mui-theme": "^2.20.8",
-    "@freesewing/css-theme": "^2.20.8",
-    "@freesewing/plugin-theme": "^2.20.8",
-    "@freesewing/core": "^2.20.8",
-    "@freesewing/models": "^2.20.8",
-    "@freesewing/examples": "^2.20.8",
-    "@freesewing/rendertest": "^2.20.8",
-    "@freesewing/tutorial": "^2.20.8",
+    "@freesewing/pattern-info": "^2.21.0-rc.0",
+    "@freesewing/mui-theme": "^2.21.0-rc.0",
+    "@freesewing/css-theme": "^2.21.0-rc.0",
+    "@freesewing/plugin-theme": "^2.21.0-rc.0",
+    "@freesewing/core": "^2.21.0-rc.0",
+    "@freesewing/models": "^2.21.0-rc.0",
+    "@freesewing/examples": "^2.21.0-rc.0",
+    "@freesewing/rendertest": "^2.21.0-rc.0",
+    "@freesewing/tutorial": "^2.21.0-rc.0",
     "@fontsource/permanent-marker": "latest",
     "@fontsource/roboto-mono": "latest",
     "@fontsource/ubuntu": "latest",
-    "@freesewing/i18n": "^2.20.8",
-    "@freesewing/utils": "^2.20.8",
+    "@freesewing/i18n": "^2.21.0-rc.0",
+    "@freesewing/utils": "^2.21.0-rc.0",
     "react-intl": "^5.24.4",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -82,13 +79,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }

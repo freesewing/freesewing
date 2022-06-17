@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/mui-theme",
-  "version": "2.20.8",
+  "version": "2.21.0-rc.0",
   "description": "A Material-UI theme for FreeSewing web UIs",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -22,14 +22,13 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
+    "build": "node build.js",
     "clean": "rimraf dist",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
-    "test": "echo \"mui-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w"
+    "test": "echo \"mui-theme: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "vbuild": "VERBOSE=1 node build.js",
+    "cibuild_step6": "node build.js"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.12.3",
@@ -45,13 +44,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "named"
   }
 }
