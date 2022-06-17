@@ -53,7 +53,8 @@ export default function (part) {
       points.lowerTeeth01, // end
     ],
     10, // number of teeth
-    16, // size
+    8 * options.size, // starting size
+    16 * options.size, // ending size
     part
   )
 
