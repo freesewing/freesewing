@@ -251,4 +251,10 @@ module.exports = {
   '--pattern-stroke-3xl': "6px",
   // Pattern 4xl stroke width
   '--pattern-stroke-4xl': "8px",
+  // Pattern 5xl stroke width
+  '--pattern-stroke-5xl': "12px",
+  // Pattern 6xl stroke width
+  '--pattern-stroke-6xl': "16px",
+  // Pattern 7xl stroke width
+  '--pattern-stroke-7xl': "20px",
 }

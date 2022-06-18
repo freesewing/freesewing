@@ -8,6 +8,7 @@ import defaultSettings from 'shared/components/workbench/default-settings.js'
 import DraftError from 'shared/components/workbench/draft/error.js'
 import theme from '@freesewing/plugin-theme'
 import preloaders from 'shared/components/workbench/preload.js'
+import Modal from 'shared/components/modal'
 
 // Views
 import Measurements from 'shared/components/workbench/measurements/index.js'
@@ -63,6 +64,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   // State for gist
   const [gist, setGist, ready] = useLocalStorage(`${design.config.name}_gist`, defaultGist(design, app.locale))
   const [messages, setMessages] = useState([])
+  const [popup, setPopup] = useState(false)
 
   // If we don't have the required measurements,
   // force view to measurements
@@ -124,14 +126,16 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   }
 
   // Props to pass down
-  const componentProps = { app, design, gist, updateGist, unsetGist, setGist, draft, feedback }
+  const componentProps = { app, design, gist, updateGist, unsetGist, setGist, draft, feedback, showInfo: setPopup }
   // Required props for layout
   const layoutProps = {
     app: app,
     noSearch: true,
     workbench: true,
-    AltMenu: <Menu {...componentProps }/>
+    AltMenu: <Menu {...componentProps }/>,
+    showInfo: setPopup,
   }
+  console.log(popup)
 
   // Layout to use
   const LayoutComponent = layout
@@ -145,6 +149,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   return  <LayoutComponent {...layoutProps}>
             {messages}
             <Component {...componentProps} />
+            {popup && <Modal cancel={() => setPopup(false)}>{popup}</Modal>}
           </LayoutComponent>
 }
 

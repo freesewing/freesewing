@@ -2,6 +2,7 @@ svg.freesewing.pattern {
 
   /* Don't let the SVG surpass the parent container */
   max-width: 100%;
+  max-height: 100%;
 
   /* Reset */
   path, circle { fill: none; stroke: none; }
@@ -25,6 +26,9 @@ svg.freesewing.pattern {
   .stroke-3xl { stroke-width: calc(var(--pattern-stroke-3xl) * var(--pattern-scale)); }
   .stroke-4xl { stroke-width: calc(var(--pattern-stroke-4xl) * var(--pattern-scale)); }
   .stroke-5xl { stroke-width: calc(var(--pattern-stroke-5xl) * var(--pattern-scale)); }
+  .stroke-6xl { stroke-width: calc(var(--pattern-stroke-6xl) * var(--pattern-scale)); }
+  .stroke-7xl { stroke-width: calc(var(--pattern-stroke-7xl) * var(--pattern-scale)); }
+  .stroke-8xl { stroke-width: calc(var(--pattern-stroke-8xl) * var(--pattern-scale)); }
 
   /* Stroke dasharray utility classes */
   .sa { stroke-dasharray: 1, 3; }
