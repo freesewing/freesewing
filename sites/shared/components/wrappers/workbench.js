@@ -135,7 +135,6 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     AltMenu: <Menu {...componentProps }/>,
     showInfo: setPopup,
   }
-  console.log(popup)
 
   // Layout to use
   const LayoutComponent = layout
