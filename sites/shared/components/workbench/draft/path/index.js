@@ -32,6 +32,13 @@ const PointCircle = ({ point, size, className="stroke-neutral-content" }) => (
   />
 )
 
+const CpCircle = ({ point, className="fill-lining no-stroke" }) => (
+  <circle
+    cx={point.x} cy={point.y} r={1.5}
+    className={className}
+  />
+)
+
 const pathDimensions = (from, to, cp1=false, cp2=false, path=false) => {
   const topLeft = {
     x: (to.x < from.x) ? to.x : from.x,
@@ -401,14 +408,25 @@ const PathOp = ({ op }) => {
   else return <strong>FIXME: unknown path operation type: {op.type}</strong>
 }
 
-const XrayCurve = props => (
-  <path
-    d={props.path.asPathstring()}
-    {...getProps(props.path)}
-    className="opacity-0 stroke-4xl stroke-lining hover:opacity-25 hover:cursor-pointer"
-    onClick={(evt) => { evt.stopPropagation(); props.showInfo(curveInfo(props)) }}
-  />
-)
+const XrayCurve = props => {
+  const from = props.path.ops[0].to
+  const { cp1, cp2, to } = props.path.ops[1]
+
+  return  (
+    <>
+      <path
+        d={props.path.asPathstring()}
+        {...getProps(props.path)}
+        className="opacity-0 stroke-4xl stroke-lining hover:opacity-25 hover:cursor-pointer"
+        onClick={(evt) => { evt.stopPropagation(); props.showInfo(curveInfo(props)) }}
+      />
+      <path d={`M ${from.x},${from.y} L ${cp1.x},${cp1.y}`} className="lining dotted"/>
+      <path d={`M ${to.x},${to.y} L ${cp2.x},${cp2.y}`} className="lining dotted"/>
+    <CpCircle point={cp1} />
+    <CpCircle point={cp2} />
+    </>
+  )
+}
 
 const XrayPath = props => {
   const ops = props.path.divide()
@@ -421,7 +439,7 @@ const XrayPath = props => {
         className="opacity-0 stroke-7xl stroke-contrast hover:opacity-25 hover:cursor-pointer"
         onClick={(evt) => { evt.preventDefault(); props.showInfo(pathInfo(props)) }}
       />
-      {ops.length > 1
+      {ops.length > 0
         ? ops.map((op,i) => (op.ops[1].type === 'curve')
           ? <XrayCurve {...props} path={op} ops={ops} i={i} pathName={`${props.pathName}_test`} />
           : <XrayLine  {...props} path={op} ops={ops} i={i} pathName={`${props.pathName}_test`} />

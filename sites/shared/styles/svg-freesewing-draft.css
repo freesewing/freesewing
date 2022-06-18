@@ -39,6 +39,8 @@ svg.freesewing.pattern {
 
   /* Hidden */
   .hidden { stroke: none !important; fill: none !important; }
+  .no-stroke { stroke: none !important; }
+  .no-fill { fill: none !important; }
 
   /* Text */
   text {
