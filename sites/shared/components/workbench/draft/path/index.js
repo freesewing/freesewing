@@ -11,7 +11,7 @@ export const Tr = ({ children }) => <tr className="border border-base-300">{chil
 export const KeyTd = ({ children }) => <td className="p-3 text-right">{children}:</td>
 export const ValTd = ({ children }) => <td className="p-3">{children}</td>
 
-const TextAlongPath = ({id, size, fill="var(--pattern-note)", txt}) => (
+export const TextAlongPath = ({id, size, fill="var(--pattern-note)", txt}) => (
   <text>
     <textPath xlinkHref={`#${id}`} startOffset="50%">
       <tspan
@@ -24,7 +24,7 @@ const TextAlongPath = ({id, size, fill="var(--pattern-note)", txt}) => (
     </textPath>
   </text>
 )
-const PointCircle = ({ point, size, className="stroke-neutral-content" }) => (
+export const PointCircle = ({ point, size, className="stroke-neutral-content" }) => (
   <circle
     cx={point.x} cy={point.y} r={size/50}
     className={className}
@@ -76,7 +76,7 @@ const pathDimensions = (from, to, cp1=false, cp2=false, path=false) => {
   }
 }
 
-const Defs = () => (
+export const Defs = () => (
   <defs>
     <marker orient="auto" refY="0.0" refX="0.0" id="arrowTo" style={{overflow: 'visible'}}>
       <path className="fill-neutral-content" d="M 0,0 L -12,-4 C -10,-2 -10,2  -12, 4 z" fillOpacity="0.5"></path>
@@ -87,7 +87,7 @@ const Defs = () => (
   </defs>
 )
 
-const svgProps = {
+export const svgProps = {
   xmlns: "http://www.w3.org/2000/svg",
   xmlnsSvg: "http://www.w3.org/2000/svg",
   xmlnsXlink: "http://www.w3.org/1999/xlink",
