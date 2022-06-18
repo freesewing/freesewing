@@ -3,13 +3,13 @@ import TextOnPath from '../text-on-path'
 import { getProps } from '../utils'
 import { round } from 'shared/utils'
 
-const pointInfo = point => point
+export const pointCoords = point => point
   ? `[ ${round(point.x, 2)}, ${round(point.y, 2)} ]`
   : null
 
-const Tr = ({ children }) => <tr className="border border-base-300">{children}</tr>
-const KeyTd = ({ children }) => <td className="p-3 text-right">{children}:</td>
-const ValTd = ({ children }) => <td className="p-3">{children}</td>
+export const Tr = ({ children }) => <tr className="border border-base-300">{children}</tr>
+export const KeyTd = ({ children }) => <td className="p-3 text-right">{children}:</td>
+export const ValTd = ({ children }) => <td className="p-3">{children}</td>
 
 const TextAlongPath = ({id, size, fill="var(--pattern-note)", txt}) => (
   <text>
@@ -240,11 +240,11 @@ const lineInfo = (props) => (
         <tbody>
           <Tr>
             <KeyTd>From</KeyTd>
-            <ValTd>{pointInfo(props.path.ops[0].to)}</ValTd>
+            <ValTd>{pointCoords(props.path.ops[0].to)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>To</KeyTd>
-            <ValTd>{pointInfo(props.path.ops[1].to)}</ValTd>
+            <ValTd>{pointCoords(props.path.ops[1].to)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Length</KeyTd>
@@ -286,19 +286,19 @@ const curveInfo = (props) => (
         <tbody>
           <Tr>
             <KeyTd>From</KeyTd>
-            <ValTd>{pointInfo(props.path.ops[0].to)}</ValTd>
+            <ValTd>{pointCoords(props.path.ops[0].to)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Cp1</KeyTd>
-            <ValTd>{pointInfo(props.path.ops[1].cp1)}</ValTd>
+            <ValTd>{pointCoords(props.path.ops[1].cp1)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Cp2</KeyTd>
-            <ValTd>{pointInfo(props.path.ops[1].cp2)}</ValTd>
+            <ValTd>{pointCoords(props.path.ops[1].cp2)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>To</KeyTd>
-            <ValTd>{pointInfo(props.path.ops[1].to)}</ValTd>
+            <ValTd>{pointCoords(props.path.ops[1].to)}</ValTd>
           </Tr>
           <Tr>
             <KeyTd>Length</KeyTd>
@@ -321,7 +321,7 @@ const curveInfo = (props) => (
   </div>
 )
 
-const Attributes = ({ list }) => list
+export const Attributes = ({ list }) => list
   ? (
     <ul>
       {Object.keys(list).map(key => (
@@ -357,11 +357,11 @@ const pathInfo = (props) => {
             </Tr>
             <Tr>
               <KeyTd>Top Left</KeyTd>
-              <ValTd>{pointInfo(bbox.topLeft)}</ValTd>
+              <ValTd>{pointCoords(bbox.topLeft)}</ValTd>
             </Tr>
             <Tr>
               <KeyTd>Bottom Right</KeyTd>
-              <ValTd>{pointInfo(bbox.bottomRight)}</ValTd>
+              <ValTd>{pointCoords(bbox.bottomRight)}</ValTd>
             </Tr>
             <Tr>
               <KeyTd>Part</KeyTd>
@@ -392,15 +392,15 @@ const pathInfo = (props) => {
 }
 
 const PathOp = ({ op }) => {
-  if (op.type === 'move') return <span><strong>Move</strong> to {pointInfo(op.to)}</span>
-  else if (op.type === 'line') return <span><strong>Line</strong> to {pointInfo(op.to)}</span>
+  if (op.type === 'move') return <span><strong>Move</strong> to {pointCoords(op.to)}</span>
+  else if (op.type === 'line') return <span><strong>Line</strong> to {pointCoords(op.to)}</span>
   else if (op.type === 'curve') return (
     <span>
-      <strong>Curve</strong> to {pointInfo(op.to)}
+      <strong>Curve</strong> to {pointCoords(op.to)}
       <br />
-      Cp1: {pointInfo(op.cp1)}
+      Cp1: {pointCoords(op.cp1)}
       <br />
-      Cp2: {pointInfo(op.cp2)}
+      Cp2: {pointCoords(op.cp2)}
     </span>
   )
   else if (op.type === 'noop') return <strong>NOOP</strong>
