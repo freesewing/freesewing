@@ -29,27 +29,35 @@ const pointInfo = (props) => props.point
   ? (
     <div className="p-4 border bg-neutral bg-opacity-60 shadow rounded-lg">
       <h5 className="text-neutral-content text-center pb-4">Point info</h5>
-      <div className="flex flex-row flex-wrap">
-        <table className="border-collapse h-fit">
-          <tbody>
-            <Tr>
-              <KeyTd>Coordinates</KeyTd>
-              <ValTd>{pointCoords(props.point)}</ValTd>
-            </Tr>
-            <Tr>
-              <KeyTd>Name</KeyTd>
-              <ValTd>{props.pointName}</ValTd>
-            </Tr>
-            <Tr>
-              <KeyTd>Part</KeyTd>
-              <ValTd>{props.partName}</ValTd>
-            </Tr>
-            <Tr>
-              <KeyTd>Attributes</KeyTd>
-              <ValTd><Attributes list={props.point.attributes.list} /></ValTd>
-            </Tr>
-          </tbody>
-        </table>
+      <table className="border-collapse h-fit">
+        <tbody>
+          <Tr>
+            <KeyTd>Coordinates</KeyTd>
+            <ValTd>{pointCoords(props.point)}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Name</KeyTd>
+            <ValTd>{props.pointName}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Part</KeyTd>
+            <ValTd>{props.partName}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Attributes</KeyTd>
+            <ValTd><Attributes list={props.point.attributes.list} /></ValTd>
+          </Tr>
+        </tbody>
+      </table>
+      <div className="flex flex-col flex-wrap gap-2 mt-4">
+        <button
+          className="btn btn-success"
+          onClick={() => console.log(props.point)}
+        >console.log(point)</button>
+        <button
+          className="btn btn-success"
+          onClick={() => console.table(props.point)}
+        >console.table(point)</button>
       </div>
     </div>
   ) : null

@@ -62,18 +62,32 @@ const partInfo = (props) => {
           </Tr>
         </tbody>
       </table>
+      <div className="flex flex-row flex-wrap gap-2 mt-4">
       {props.gist?.only && props.gist.only.length > 0
         ? (
           <button
-            className="btn btn-primary btn-lg w-full mt-4"
+            className="btn btn-primary"
             onClick={() => props.unsetGist(['only'])}
           >Show all parts</button>
         ) : (
           <button
-            className="btn btn-primary btn-lg w-full mt-4"
+            className="btn btn-primary"
             onClick={() => props.updateGist(['only'], [props.partName])}
           >Show only this part</button>
         )}
+        <button
+          className="btn btn-success"
+          onClick={() => console.log(props.part)}
+        >console.log(part)</button>
+        <button
+          className="btn btn-success"
+          onClick={() => console.table(props.part.points)}
+        >console.table(part.points)</button>
+        <button
+          className="btn btn-success"
+          onClick={() => console.table(props.part.paths)}
+        >console.table(part.paths)</button>
+      </div>
     </div>
   )
 }
