@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { useTranslation } from 'next-i18next'
 import { isDegreeMeasurement } from '../../../config/measurements'
 import measurementAsMm from 'pkgs/utils/src/measurementAsMm'
-import formatMm from 'pkgs/utils/src/formatMm'
 
 /*
  * This is a single input for a measurements
@@ -18,7 +17,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const title = t(`measurements:${m}`)
 
   const isDegree = isDegreeMeasurement(m);
-  const factor = useMemo(() => (isDegree ? 1 : (gist.units == 'imperial' ? 25.4 : 10)), [gist.units])
+  const factor = useMemo(() => (isDegree ? 1 : (gist?.units == 'imperial' ? 25.4 : 10)), [gist?.units])
 
   const isValValid = val => (typeof val === 'undefined' || val === '')
       ? null
@@ -54,7 +53,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   }, [gist.units])
 
   // use this for better update efficiency
-  const memoVal = useMemo(() => gist?.measurements[m], [gist])
+  const memoVal = useMemo(() => gist?.measurements?.[m], [gist])
   // track validity against the value and the units
   const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist.units)), [val, gist.units])
 
