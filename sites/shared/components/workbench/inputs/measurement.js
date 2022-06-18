@@ -38,7 +38,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
     // set Val immediately so that the input reflects it
     setVal(evtVal)
 
-    let useVal = isDegree ? evtVal : measurementAsMm(evtVal, gist.units);
+    let useVal = isDegree ? evtVal : measurementAsMm(evtVal, gist?.units);
     const ok = isValid(useVal)
     // only set to the gist if it's valid
     if (ok) {
@@ -50,12 +50,12 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
         updateMeasurements(useVal, m)
       }, 500);
     }
-  }, [gist.units])
+  }, [gist?.units])
 
   // use this for better update efficiency
   const memoVal = useMemo(() => gist?.measurements?.[m], [gist])
   // track validity against the value and the units
-  const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist.units)), [val, gist.units])
+  const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist?.units)), [val, gist?.units])
 
   // hook to update the value or format when the gist changes
   useEffect(() => {
