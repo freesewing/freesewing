@@ -1,5 +1,49 @@
 import React from 'react'
 import { getProps } from '../utils'
+import { Tr, KeyTd, ValTd, Attributes, pointCoords } from '../path/index'
+
+const snippetInfo = (props) => {
+console.log(props.snippet)
+  return (
+    <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
+      <h5 className="text-neutral-content text-center pb-4">Snippet info</h5>
+      <table className="border-collapse h-fit">
+        <tbody>
+          <Tr>
+            <KeyTd>Def</KeyTd>
+            <ValTd>{props.snippet.def}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Anchor</KeyTd>
+            <ValTd>{props.snippet.anchor.name}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Coords</KeyTd>
+            <ValTd>{pointCoords(props.snippet.anchor)}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Coords</KeyTd>
+            <ValTd>{pointCoords(props.snippet.anchor)}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Attributes</KeyTd>
+            <ValTd><Attributes list={props.snippet.attributes.list}/></ValTd>
+          </Tr>
+        </tbody>
+      </table>
+      <div className="flex flex-col flex-wrap gap-2 mt-4">
+        <button
+          className="btn btn-success"
+          onClick={() => console.log(props.snippet)}
+        >console.log(snippet)</button>
+        <button
+          className="btn btn-success"
+          onClick={() => console.table(props.snippet)}
+        >console.table(snippet)</button>
+      </div>
+    </div>
+  )
+}
 
 const Snippet = (props) => {
   const snippetProps = {
@@ -21,7 +65,13 @@ const Snippet = (props) => {
     }
   }
 
-  return <use {...snippetProps} {...getProps(props.snippet)} />
+  return <use
+    {...snippetProps}
+    {...getProps(props.snippet)}
+    color="currentColor"
+    className="hover:cursor-pointer hover:fill-primary hover:text-secondary"
+    onClick={(evt) => { evt.stopPropagation(); props.showInfo(snippetInfo(props)) }}
+  />
 }
 
 export default Snippet

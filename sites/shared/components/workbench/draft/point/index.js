@@ -1,6 +1,7 @@
 import Text from '../text'
 import Circle from '../circle'
 import { round, formatMm } from 'shared/utils'
+import { Tr, KeyTd, ValTd, Attributes, pointCoords } from '../path/index'
 
 const RevealPoint = props => {
   const r = 15 * props.gist.scale
@@ -24,88 +25,44 @@ const RevealPoint = props => {
     </g>
   )
 }
+const pointInfo = (props) => props.point
+  ? (
+    <div className="p-4 border bg-neutral bg-opacity-60 shadow rounded-lg">
+      <h5 className="text-neutral-content text-center pb-4">Point info</h5>
+      <table className="border-collapse h-fit">
+        <tbody>
+          <Tr>
+            <KeyTd>Coordinates</KeyTd>
+            <ValTd>{pointCoords(props.point)}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Name</KeyTd>
+            <ValTd>{props.pointName}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Part</KeyTd>
+            <ValTd>{props.partName}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Attributes</KeyTd>
+            <ValTd><Attributes list={props.point.attributes.list} /></ValTd>
+          </Tr>
+        </tbody>
+      </table>
+      <div className="flex flex-col flex-wrap gap-2 mt-4">
+        <button
+          className="btn btn-success"
+          onClick={() => console.log(props.point)}
+        >console.log(point)</button>
+        <button
+          className="btn btn-success"
+          onClick={() => console.table(props.point)}
+        >console.table(point)</button>
+      </div>
+    </div>
+  ) : null
 
-// Length for the indicators
-const lead = 20
-// Length for the text on indicators
-// this is longer to prevent text from being cropped
-const longLead = 40
-
-const Coord = ({id, val, pointName}) => (
-  <text>
-    <textPath xlinkHref={`#${id}`} startOffset="50%">
-      <tspan className="center fill-note text-sm" dy={0}>
-        {round(val)}
-      </tspan>
-    </textPath>
-    <textPath xlinkHref={`#${id}`} startOffset="50%">
-      <tspan className="center fill-note text-xs" dy={5}>
-        {pointName}
-      </tspan>
-    </textPath>
-  </text>
-)
-
-const PosX = ({ id, point, scale, pointName }) => (
-  <g>
-    <path id={id+'_x'} d={`
-      M ${point.x - (point.x < 0 ? 0 : lead*scale)} ${point.y}
-      l ${lead * scale} 0
-    `}
-      className="stroke-note stroke-sm"
-      markerStart={point.x < 0 ? "url(#grainlineFrom)" : ''}
-      markerEnd={point.x < 0 ? '' : "url(#grainlineTo)"}
-    />
-    <path id={id+'_xlong'} d={`
-      M ${point.x - (point.x < 0 ? longLead/2.4*scale : longLead*scale)} ${point.y}
-      l ${longLead * scale * 1.4} 0
-    `}
-      className="hidden"
-    />
-    <Coord id={`${id}_xlong`} val={point.x} pointName={pointName}/>
-  </g>
-)
-
-
-const PosY = ({ id, point, scale, pointName }) => (
-  <g>
-    <path id={id+'_y'} d={`
-      M ${point.x} ${point.y + (point.y < 0 ? lead*scale : 0)}
-      l 0 ${lead * scale * -1}
-    `}
-      className="stroke-note stroke-sm"
-      markerStart={point.y < 0 ? '' : "url(#grainlineFrom)"}
-      markerEnd={point.y < 0 ? "url(#grainlineTo)" : ''}
-    />
-    <path id={id+'_ylong'} d={`
-      M ${point.x} ${point.y + (point.y < 0 ? longLead/1.25*scale : longLead*scale/5)}
-      l 0 ${longLead * scale * -1}
-    `}
-      className="hidden"
-    />
-    <Coord id={`${id}_ylong`} val={point.y} pointName={pointName} />
-  </g>
-)
-
-
-const ActiveXrayPoint = props => {
-  const id = `${props.partName}_${props.pointName}_xray_point`
-  const r = 15 * props.gist.scale
-  const { x, y } = props.point
-  const { topLeft, bottomRight } = props.part
-  const i = Object.keys(props.gist._state.xray.parts[props.partName].points).indexOf(props.pointName)%10
-  const classes = `stroke-sm stroke-color-${i} stroke-dashed`
-  const posProps = {
-    id,
-    point: props.point,
-    pointName: props.pointName,
-    scale: props.gist.scale,
-  }
-
-  return <g><PosX {...posProps} /><PosY {...posProps} /></g>
-}
-
-const PassiveXrayPoint = props => (
+const XrayPoint = props => (
   <g>
     <circle
       cx={props.point.x}
@@ -117,15 +74,10 @@ const PassiveXrayPoint = props => (
       cy={props.point.y}
       r={7.5 * props.gist.scale}
       className="opacity-0 stroke-lining fill-lining hover:opacity-25 hover:cursor-pointer"
-      onClick={props.gist._state.xray?.parts?.[props.partName]?.points?.[props.pointName]
-        ? () => props.unsetGist(
-          ['_state', 'xray', 'parts', props.partName, 'points', props.pointName]
-        )
-        : () => props.updateGist(
-          ['_state', 'xray', 'parts', props.partName, 'points', props.pointName],
-          1
-        )
-      }
+      onClick={(evt) => {
+        props.showInfo(pointInfo(props))
+        evt.stopPropagation();
+      }}
     />
   </g>
 )
@@ -135,11 +87,8 @@ const Point = props => {
   const { point, pointName, partName, gist } = props
   const output = []
   if (gist._state?.xray?.enabled) {
-    // Passive indication for points
-    output.push(<PassiveXrayPoint {...props} key={'xp-' + pointName} />)
-    // Active indication for points (point that have been clicked on)
-    if (gist._state?.xray?.parts?.[partName]?.points?.[pointName])
-      output.push(<ActiveXrayPoint {...props} key={'rp-' + pointName} />)
+    // Xray for points
+    output.push(<XrayPoint {...props} key={'xp-' + pointName} />)
     // Reveal (based on clicking the seach icon in sidebar
     if (gist._state?.xray?.reveal?.[partName]?.points?.[pointName])
       output.push(<RevealPoint {...props} key={'rp-' + pointName} />)

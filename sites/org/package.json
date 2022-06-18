@@ -3,11 +3,11 @@
   "version": "2.21.0-rc.0",
   "private": true,
   "scripts": {
-    "dev": "SITE=org next dev -p 3002",
-    "develop": "SITE=org next dev -p 3002",
+    "dev": "SITE=org node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
     "prebuild": "SITE=org node ../freesewing.shared/prebuild/index.mjs",
     "i18n": "SITE=org node ../freesewing.shared/prebuild/i18n-only.mjs",
     "build": "next build",
+    "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build",
     "export": "yarn prebuild && next build && next export",
     "start": "next start -p 3002",
     "lint": "next lint",

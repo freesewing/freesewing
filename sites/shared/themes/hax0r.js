@@ -1,7 +1,9 @@
 const colors = require('tailwindcss/colors')
+const light = require('./light')
 
 const bg = '#002808'
 module.exports = {
+  ...light, // Startr from defaults, so we don't miss anything
   'fontFamily': `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
   'primary': colors.lime['700'],
   'primary-focus': colors.lime['600'],

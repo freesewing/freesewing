@@ -3,6 +3,8 @@ import Path from '../path'
 import Point from '../point'
 import Snippet from '../snippet'
 import { getProps } from '../utils'
+import { round } from 'shared/utils'
+import { Tr, KeyTd, ValTd, Attributes, pointCoords } from '../path/index'
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -27,12 +29,70 @@ class ErrorBoundary extends React.Component {
   }
 }
 
+const partInfo = (props) => {
+
+  return (
+    <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
+      <h5 className="text-neutral-content text-center pb-4">Part info</h5>
+      <table className="border-collapse h-fit">
+        <tbody>
+          <Tr>
+            <KeyTd>Name</KeyTd>
+            <ValTd>{props.partName}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Width</KeyTd>
+            <ValTd>{round(props.part.width,2)}mm</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Height</KeyTd>
+            <ValTd>{round(props.part.height,2)}mm</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Top Left</KeyTd>
+            <ValTd>{pointCoords(props.part.topLeft)}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Bottom Right</KeyTd>
+            <ValTd>{pointCoords(props.part.bottomRight)}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Attributes</KeyTd>
+            <ValTd><Attributes list={props.part.attributes.list} /></ValTd>
+          </Tr>
+        </tbody>
+      </table>
+      <div className="flex flex-row flex-wrap gap-2 mt-4">
+      {props.gist?.only && props.gist.only.length > 0
+        ? (
+          <button
+            className="btn btn-primary"
+            onClick={() => props.unsetGist(['only'])}
+          >Show all parts</button>
+        ) : (
+          <button
+            className="btn btn-primary"
+            onClick={() => props.updateGist(['only'], [props.partName])}
+          >Show only this part</button>
+        )}
+        <button
+          className="btn btn-success"
+          onClick={() => console.log(props.part)}
+        >console.log(part)</button>
+        <button
+          className="btn btn-success"
+          onClick={() => console.table(props.part.points)}
+        >console.table(part.points)</button>
+        <button
+          className="btn btn-success"
+          onClick={() => console.table(props.part.paths)}
+        >console.table(part.paths)</button>
+      </div>
+    </div>
+  )
+}
+
 const XrayPart = props => {
-  // Don't bother if this is the only part on display
-  if (props.gist.only && props.gist.only.length === 1) return null
-  const i = props.gist._state?.xray?.reveal
-    ? Object.keys(props.gist._state.xray.reveal).indexOf(props.partName)%10
-    : 0
   const { topLeft, bottomRight } = props.part
 
   return (
@@ -42,7 +102,11 @@ const XrayPart = props => {
         L ${topLeft.x} ${bottomRight.y}
         L ${bottomRight.x} ${bottomRight.y}
         L ${bottomRight.x} ${topLeft.y}
-        z`} className={`fill-color-${i} opacity-10`} />
+        z
+        `} className={`peer stroke-note lashed opacity-30 hover:opacity-90 fill-fabric hover:cursor-pointer hover:stroke-mark`}
+        style={{ fillOpacity: 0}}
+        onClick={(evt) => { evt.stopPropagation(); props.showInfo(partInfo(props)) }}
+      />
     </g>
   )
 }
@@ -66,8 +130,7 @@ const Part = props => {
         {grid}
         {
           props.gist?._state?.xray?.enabled &&
-          props.gist?._state?.xray?.reveal?.[partName]
-          && <XrayPart {...props} />
+          <XrayPart {...props} />
         }
         {Object.keys(part.paths).map((pathName) => (
           <Path

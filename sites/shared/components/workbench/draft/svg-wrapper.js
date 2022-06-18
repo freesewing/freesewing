@@ -26,7 +26,7 @@ import Part from './part'
  */
 
 const SvgWrapper = props => {
-  const { patternProps, gist, app, updateGist, unsetGist } = props
+  const { patternProps, gist, app, updateGist, unsetGist, showInfo } = props
 
   return <SizeMe>{({ size }) => (
     <TransformWrapper
@@ -41,7 +41,7 @@ const SvgWrapper = props => {
             <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
             <g>
               {Object.keys(patternProps.parts).map((name) => (
-                <Part {...{ app, gist, updateGist, unsetGist }}
+                <Part {...{ app, gist, updateGist, unsetGist, showInfo }}
                   key={name}
                   partName={name}
                   part={patternProps.parts[name]}

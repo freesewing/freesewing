@@ -4,6 +4,7 @@ import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Designs
 import { designsByType } from 'config/software/index.mjs'
 // Locale and translation
+import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { capitalize } from 'shared/utils.mjs'
 import { formatVersionUri } from '../components/version-picker.js'
@@ -59,7 +60,8 @@ function useApp(full = true) {
   // Version
   const version = useVersion()
 
-  // Locale (aka language)
+  // Load translation method
+  const locale = useRouter().locale
   const { t } = useTranslation(['app'])
 
   // Persistent state
@@ -80,6 +82,9 @@ function useApp(full = true) {
     // Static vars
     site: 'lab',
     designs,
+
+    // i18n
+    locale,
 
     // State
     loading,

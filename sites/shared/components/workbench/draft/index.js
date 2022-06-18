@@ -3,7 +3,7 @@ import Error from './error.js'
 import Robot from 'shared/components/robot/index.js'
 
 const LabDraft = props => {
-  const { app, draft, design, gist, updateGist, unsetGist, feedback } = props
+  const { app, draft, design, gist, updateGist, unsetGist, showInfo, feedback } = props
 
   if (!draft) return null
 
@@ -32,7 +32,7 @@ const LabDraft = props => {
         ? <Error {...{ draft, patternProps, updateGist }} />
         : null
       }
-      <SvgWrapper {...{ draft, patternProps, gist, updateGist, unsetGist, app, feedback }} />
+      <SvgWrapper {...{ draft, patternProps, gist, updateGist, unsetGist, showInfo, app, feedback }} />
     </>
   )
 }
