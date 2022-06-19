@@ -74,6 +74,8 @@ packageJson:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
+  noble:
+    author: woutervdub (https://github.com/woutervdub)
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:

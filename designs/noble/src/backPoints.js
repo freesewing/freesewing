@@ -1,0 +1,94 @@
+export default function (part) {
+    let {
+      points,
+      Path,
+      paths,
+      options,
+      snippets,
+    } = part.shorthand()
+
+    // Hide Bella paths
+  for (let key of Object.keys(paths)) paths[key].render = false
+  for (let i in snippets) delete snippets[i]
+  //removing macros not required from Bella
+//   delete points.titleAnchor
+  delete points.__titleNr
+  delete points.__titleName
+  delete points.__titlePattern
+  delete points.scaleboxAnchor
+  delete points.__scaleboxImperialBottomLeft
+  delete points.__scaleboxMetricBottomLeft
+  delete points.__scaleboxImperialTopLeft
+  delete points.__scaleboxMetricTopLeft
+  delete points.__scaleboxImperialTopRight
+  delete points.__scaleboxMetricTopRight
+  delete points.__scaleboxImperialBottomRight
+  delete points.__scaleboxMetricBottomRight
+  delete points.__scaleboxLead
+  delete points.__scaleboxTitle
+  delete points.__scaleboxText
+  delete points.__scaleboxLink
+  delete points.__scaleboxImperial
+  delete points.__scaleboxMetric
+//   delete points.cbNeck
+//   delete points.cbWaist
+  delete points.bustDartLeft
+  delete points.bustDartLeftCp
+//   delete points.bustCenter
+//   delete points.waistCenter
+//   delete points.cbArmhole
+//   delete points.cbNeckCp2
+//   delete points.cbNeckCp1
+//   delete points.dartLeftCp
+//   delete points.dartBottomLeft
+//   delete points.dartBottomCenter
+
+  console.log('backPoints');
+  
+  points.shoulderDart = points.hps.shiftFractionTowards( points.shoulder, options.shoulderDartPosition )
+  
+  let aUp = points.dartTip.angle( points.shoulderDart )
+  let aDown = points.dartBottomRight.angle( points.dartTip )
+  let aDiff = Math.abs( aUp - aDown )
+  
+  // let dartCpAdjustment = Math.abs( options.shoulderDartPosition -.5) +.05
+  let dartCpAdjustment = aDiff /50
+  console.log({dartCpAdjustment: dartCpAdjustment });
+
+  // points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards( points.dartTip, options.upperDartLength) 
+  points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 - dartCpAdjustment) 
+  // points.shoulderDartCpDown = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 +(1-options.upperDartLength) )
+  points.shoulderDartCpDown = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 +dartCpAdjustment )
+  
+  let iLength = (new Path()
+    .move(points.dartBottomLeft)
+    .curve(points.dartLeftCp, points.shoulderDartCpDown, points.dartTip)
+    .curve(points.shoulderDartCpUp, points.shoulderDart, points.shoulderDart)).length();
+
+  let iteration = 0
+  let diff = 0
+  let angle = 0
+  do {
+    console.log({angle: points.waistSide.angle( points.dartBottomRight ) })
+    
+    angle = diff*( oLength > iLength ? -.1 : .1 )
+    
+    points.dartBottomRight = points.dartBottomRight.rotate( angle, points.waistSide )
+
+    let oLength = (new Path()
+      .move(points.shoulderDart)
+      .curve(points.shoulderDart, points.shoulderDartCpUp, points.dartTip)
+      .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)).length();
+
+    console.log({diff:diff, oLength: oLength, iLength: iLength})
+
+    diff = oLength -iLength
+    iteration ++
+
+  } while( diff < -.5 || diff > .5 && iteration < 100 )
+  if( iteration >= 100 ) {
+    raise.error('Something is not quite right here!')
+  }
+  
+  return part
+}
