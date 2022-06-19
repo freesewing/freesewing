@@ -14,7 +14,7 @@ const config = {
     externalDir: true,
   },
   i18n: i18nConfig.i18n,
-  pageExtensions: [ 'js' ],
+  pageExtensions: [ 'js', 'mjs' ],
   webpack: (config, options) => {
 
     // Aliases
