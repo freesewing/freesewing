@@ -22,7 +22,7 @@ const config = (site, remarkPlugins=[]) => ({
   experimental: {
     externalDir: true,
   },
-  pageExtensions: [ 'js', 'md' ],
+  pageExtensions: [ 'js', 'md', 'mjs' ],
   webpack: (config, options) => {
 
 		// Fixes npm packages that depend on node modules
