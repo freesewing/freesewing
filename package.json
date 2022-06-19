@@ -18,7 +18,7 @@
     "?": "node scripts/help.mjs",
     "tips": "node scripts/help.mjs",
     "lab": "cd sites/lab && yarn start",
-    "kickstart": "npx lerna bootstrap && yarn buildall",
+    "kickstart": "npx lerna bootstrap && yarn buildall && yarn tips",
     "clean": "rimraf dist",
     "test": "lerna run test",
     "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
