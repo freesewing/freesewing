@@ -1,7 +1,8 @@
 const colors = require('tailwindcss/colors')
+const light = require('./light')
 
 module.exports = {
-  'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  ...light, // Startr from defaults, so we don't miss anything
   'primary': colors.violet['700'],
   'primary-focus': colors.violet['600'],
   'primary-content': colors.violet['50'],
@@ -82,23 +83,4 @@ module.exports = {
   '--pattern-dev-5': colors.violet['500'],
   '--pattern-dev-6': colors.teal['500'],
   '--pattern-dev-7': colors.neutral['500'],
-
-  '--pattern-text-xs': '0.2rem',
-  '--pattern-text-sm': '0.3rem',
-  '--pattern-text': '0.4rem',
-  '--pattern-text-lg': '0.6rem',
-  '--pattern-text-xl': '0.8rem',
-  '--pattern-text-2xl': '1.5rem',
-  '--pattern-text-3xl': '2rem',
-  '--pattern-text-4xl': '3rem',
-
-  '--pattern-scale': '1',
-  '--pattern-stroke-xs': "0.2px",
-  '--pattern-stroke-sm': "0.4px",
-  '--pattern-stroke': "0.7px",
-  '--pattern-stroke-lg': "1.3px",
-  '--pattern-stroke-xl': "2px",
-  '--pattern-stroke-2xl': "4px",
-  '--pattern-stroke-3xl': "6px",
-  '--pattern-stroke-4xl': "8px",
 }

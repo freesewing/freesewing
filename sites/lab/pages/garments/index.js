@@ -1,5 +1,5 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import PageTemplate from 'site/page-templates/pattern-list.js'
+import PageTemplate from 'site/page-templates/design-list.js'
 
 const Page = props => <PageTemplate section='garments' />
 

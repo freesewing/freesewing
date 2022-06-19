@@ -2,6 +2,7 @@ import path from 'path'
 import { readdirSync } from 'fs'
 import i18nConfig from './next-i18next.config.js'
 import { designs, plugins, packages } from '../../config/software/index.mjs'
+import { banner } from '../../scripts/banner.mjs'
 
 const getDirectories = source =>
   readdirSync(source, { withFileTypes: true })
@@ -57,20 +58,8 @@ const config = {
 
     if (!greeting) {
       greeting = true
-      console.log(`
-
-   ___            ___             _
-  | __| _ ___ ___/ __| _____ __ _(_)_ _  __ _
-  | _| '_/ -_) -_)__ \\/ -_) V  V / | ' \\/ _\` |
-  |_||_| \\___\\___|___/\\___|\\_/\\_/|_|_||_\\__, |
-    Come for the sewing patterns        |___/
-      Stay for the community
-
-  Welcome to the FreeSewing lab
-  Open your browser at: http://localhost:8000/
-
-  `)}
-
+      console.log(banner)
+    }
 
     return config
   }

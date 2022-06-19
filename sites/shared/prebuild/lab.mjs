@@ -112,15 +112,15 @@ export const prebuildLab = async (site) => {
       await fs.mkdir(path.resolve(...pages, 'v', 'next'), { recursive: true })
       promises.push(
         fs.writeFile(
-          path.resolve(...pages, `${design}.js`),
+          path.resolve(...pages, `${design}.mjs`),
           page
         ),
         fs.writeFile(
-          path.resolve(...pages, section, `${design}.js`),
+          path.resolve(...pages, section, `${design}.mjs`),
           page
         ),
         fs.writeFile(
-          path.resolve(...pages, 'v', 'next', `${design}.js`),
+          path.resolve(...pages, 'v', 'next', `${design}.mjs`),
           page
         )
       )
@@ -151,7 +151,7 @@ export const prebuildLab = async (site) => {
                   code
                 ),
                 fs.writeFile(
-                  path.resolve('..', 'lab', 'pages', 'v', version, `${design}.js`),
+                  path.resolve('..', 'lab', 'pages', 'v', version, `${design}.mjs`),
                   versionedPageTemplate(design, version)
                 ),
               )

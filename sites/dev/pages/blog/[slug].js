@@ -9,7 +9,7 @@ import Lightbox from 'shared/components/lightbox.js'
 import ImageWrapper from 'shared/components/wrappers/img.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
-import { strapiImage } from 'shared/utils.js'
+import { strapiImage } from 'shared/utils'
 import { useTranslation } from 'next-i18next'
 
 const strapi = "https://posts.freesewing.org"
@@ -163,13 +163,7 @@ export const getStaticPaths = async () => {
   .catch(err => console.log(err))
 
   return {
-    paths: [
-      ...paths,
-      ...paths.map(p => `/de${p}`),
-      ...paths.map(p => `/es${p}`),
-      ...paths.map(p => `/fr${p}`),
-      ...paths.map(p => `/nl${p}`),
-    ],
+    paths: [ ...paths ],
     fallback: false,
   }
 }
