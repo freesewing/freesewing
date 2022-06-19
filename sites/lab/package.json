@@ -8,7 +8,8 @@
     "start": "yarn prebuild && yarn dev",
     "prebuild": "SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs",
     "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build",
-    "build": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build",
+    "build": "node --experimental-json-modules ./node_modules/.bin/next build",
+    "clean": "rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs",
     "export": "yarn prebuild && next build && next export",
     "lint": "next lint",
     "serve": "pm2 start npm --name 'dev' -- run start"
