@@ -1,8 +1,7 @@
 import chai from "chai"
-import i18nAll from "../dist/index.js"
+import { strings as i18n } from "./dist/index.mjs"
 
 const expect = chai.expect
-const i18n = i18nAll.strings
 
 const languages = [
   {

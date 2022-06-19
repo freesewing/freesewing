@@ -3,8 +3,8 @@
  * All edits will be overwritten on the next (pre)build
  */
 const patrons = {
-  "becomeAPatron": "Word mecenas",
-  "supportFreesewing": "Ondersteun FreeSewing"
+  "becomeAPatron": "Become a patron",
+  "supportFreesewing": "Support FreeSewing"
 }
 
 export default patrons

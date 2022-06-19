@@ -3,8 +3,8 @@
  * All edits will be overwritten on the next (pre)build
  */
 const posts = {
-  "xMadeThis": "{x} made this",
-  "xWroteThis": "{x} wrote this"
+  "xMadeThis": "<strong>{x}</strong> made this",
+  "xWroteThis": "<strong>{x}</strong> wrote this"
 }
 
 export default posts

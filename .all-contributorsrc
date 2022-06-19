@@ -840,6 +840,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "eriese",
+      "name": "Enoch Riese",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5298929?v=4",
+      "profile": "http://enochriese.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true

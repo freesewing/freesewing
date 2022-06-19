@@ -1,5 +1,5 @@
 const expect = require("chai").expect;
-const freesewing = require("./dist");
+const freesewing = require("../dist/index.js");
 
 const measurements = { head: 400 }
 const toAbs = (val, { measurements }) => measurements.head * val

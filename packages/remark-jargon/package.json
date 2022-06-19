@@ -1,6 +1,6 @@
 {
   "name": "remark-jargon",
-  "version": "2.20.8",
+  "version": "2.21.0-rc.0",
   "description": "A Remark plugin for jargon terms",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -15,24 +15,20 @@
   },
   "keywords": [
     "freesewing",
-    "design",
-    "diy",
-    "fashion",
-    "made to measure",
-    "parametric design",
-    "sewing"
+    "freesewing"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
+    "build": "node build.js",
     "clean": "rimraf dist",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
-    "test": "echo \"remark-jargon: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w"
+    "test": "echo \"remark-jargon: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "vbuild": "VERBOSE=1 node build.js",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "cibuild_step0": "node build.js"
   },
   "peerDependencies": {
     "remark": "^13.0.0",
@@ -49,13 +45,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }

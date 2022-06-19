@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core",
-  "version": "2.20.8",
+  "version": "2.21.0-rc.0",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -28,18 +28,19 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
+    "build": "node build.js",
     "clean": "rimraf dist",
-    "build": "rollup -c",
-    "cibuild_step1": "rollup -c",
-    "test": "BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js",
-    "pubtest": "npm publish --registry http://localhost:6662",
-    "pubforce": "npm publish",
+    "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "start": "rollup -c -w",
-    "testonly": "BABEL_ENV=production npx mocha tests/*.test.js",
-    "testci": "BABEL_ENV=production npx mocha tests/*.test.js --require @babel/register --reporter ../../tests/reporters/terse.js",
+    "test": "BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js",
+    "vbuild": "VERBOSE=1 node build.js",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
     "report": "BABEL_ENV=production nyc report --reporter=html",
-    "coverage": "BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov"
+    "testci": "BABEL_ENV=production npx mocha tests/*.test.js --require @babel/register --reporter ../../tests/reporters/terse.js",
+    "testonly": "BABEL_ENV=production npx mocha tests/*.test.js",
+    "cibuild_step0": "node build.js"
   },
   "peerDependencies": {},
   "dependencies": {
@@ -57,13 +58,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6"
-  },
-  "rollup": {
-    "exports": "default"
   }
 }

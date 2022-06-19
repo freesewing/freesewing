@@ -1,0 +1,9 @@
+{
+  "backend": "FreeSewing backend",
+  "dev": "FreeSewing website with documentation for contributors & developers",
+  "lab": "FreeSewing website to test various patterns",
+  "org": "FreeSewing website",
+  "shared": "Shared code and React components for different websites",
+  "strapi": "Freesewing's Strapi instance",
+  "svgtopdf": "FreeSewing on-demand tiler"
+}

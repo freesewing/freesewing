@@ -4,23 +4,32 @@ import Point from './point'
 import Path from './path'
 import Snippet from './snippet'
 import * as utils from './utils'
-import pkg from '../package.json'
+import { version } from '../package.json'
 
-export default {
-  version: pkg.version,
+/*
+ * Named exports will become the default in FreeSewing v3
+ */
+export {
+  version,
   Design,
   Pattern,
   Point,
   Path,
   Snippet,
   utils,
-  patterns: {},
-  plugins: {},
-  /**
-   * This pctBasedOn() method makes it easy to add the optional
-   * toAbs() and fromAbs() methods to percentage options config
-   *
-   * It was backported from the v3 roadmap into v2.
-   **/
-  pctBasedOn: utils.pctBasedOn,
+}
+// This is a helper for configuration files
+export const pctBasedOn = utils.pctBasedOn
+
+/*
+ * Default exports will be removed in FreeSewing v3
+ */
+export default {
+  version,
+  Design,
+  Pattern,
+  Point,
+  Path,
+  Snippet,
+  utils,
 }

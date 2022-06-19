@@ -3,10 +3,12 @@
 # .env
 .env
 
-# Specifics
-export
-packages/plugin-theme/src/bundle.css.js
-packages/plugin-theme/css
+# Plugins
+plugins/plugin-theme/src/bundle.css.js
+plugins/plugin-theme/css
+
+
+# Components package build artifacts
 packages/components/Blockquote
 packages/components/Draft
 packages/components/DraftConfigurator
@@ -27,8 +29,12 @@ packages/components/withGist
 packages/components/withLanguage
 packages/components/withStorage
 packages/components/Workbench
+
+# Code coverage reports
 packages/core/coverage
-packages/workbench
+packages/*/report
+
+# Utils package build artifacts
 packages/utils/backend
 packages/utils/camelCase
 packages/utils/capitalize
@@ -54,57 +60,48 @@ packages/utils/tiler
 packages/utils/validateEmail
 packages/utils/validateTld
 
-packages/*/example/yarn.lock
-packages/*/report
+# Any NPM or Yarn lock files
+designs/*/package-lock.json
+designs/*/yarn.lock
 packages/*/package-lock.json
 packages/*/yarn.lock
-packages/strapi/.cache
+plugins/*/package-lock.json
+plugins/*/yarn.lock
 
-packages/freesewing.dev/public/locales/en/*.json
+# NPM lock files for sites (we use yarn)
+sites/*/package-lock.json
 
-packages/freesewing.org/public/locales/en/*.json
-packages/freesewing.org/public/locales/es/*.json
-packages/freesewing.org/public/locales/de/*.json
-packages/freesewing.org/public/locales/fr/*.json
-packages/freesewing.org/public/locales/nl/*.json
+# Strapi cache
+sites/strapi/.cache
 
-packages/freesewing.lab/public/locales/en/*.json
-packages/freesewing.lab/public/locales/es/*.json
-packages/freesewing.lab/public/locales/de/*.json
-packages/freesewing.lab/public/locales/fr/*.json
-packages/freesewing.lab/public/locales/nl/*.json
+# Sites prebuild artifacts
+sites/*/public/locales/*/*.json
+sites/*/public/feeds/*
 
-packages/freesewing.lab/lib
-packages/freesewing.lab/pages
+# Lab auto-generated pages
+sites/lab/lib
+sites/lab/pages
 
-# dependencies
+# Node dependencies
 node_modules
 
-# build
+# Build folders
 dist
 build
+export
 
-#prebuild
+# Prebuild files
 prebuild/*.json
 
-# yarn
+# Yarn
 .yarn
 .yarnrc
 
 # NextJS
 .next
-packages/freesewing.dev/out
-packages/freesewing.lab/out
-packages/freesewing.org/out
-packages/freesewing.dev/public/mdx
-packages/freesewing.lab/public/mdx
-packages/freesewing.org/public/mdx
-packages/freesewing.dev/prebuild
-packages/freesewing.lab/prebuild
-packages/freesewing.org/prebuild
-
-# Mock registry (verdaccio)
-.registry
+sites/*/out
+sites/*/public/mdx
+sites/*/prebuild
 
 # misc
 .DS_Store
@@ -123,9 +120,6 @@ packages/i18n/sort.sh
 .gitignore
 scripts/taskrunner.sh
 scripts/verdaccio.sh
-
-# Local Netlify folder
-.netlify
 
 # Don't ignore the specific Points.dist() docs folder
 !markdown/dev/reference/api/point/dist

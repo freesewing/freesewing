@@ -5,15 +5,15 @@
 const common = {
   "account": "Account",
   "blog": "Blog",
-  "community": "Community",
+  "commumity": "Community",
   "designs": "Designs",
-  "docs": "Documentatie",
-  "patternInstructions": "Patroon instructies",
-  "patternOptions": "Patroon opties",
-  "requiredMeasurements": "Vereiste maten",
-  "showcase": "Voorbeelden",
-  "sloganCome": "Kom voor de naaipatronen",
-  "sloganStay": "Blijf voor de community"
+  "docs": "Documentation",
+  "patternInstructions": "Pattern instructions",
+  "patternOptions": "Pattern options",
+  "requiredMeasurements": "Required measurements",
+  "showcase": "Showcase",
+  "sloganCome": "Come for the sewing patterns",
+  "sloganStay": "Stay for the community"
 }
 
 export default common

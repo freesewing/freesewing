@@ -17,11 +17,13 @@ const charlie = require('@freesewing/charlie').config
 const cornelius = require('@freesewing/cornelius').config
 const florent = require('@freesewing/florent').config
 const florence = require('@freesewing/florence').config
+const hi = require('@freesewing/hi').config
 const holmes = require('@freesewing/holmes').config
 const hortensia = require('@freesewing/hortensia').config
 const huey = require('@freesewing/huey').config
 const hugo = require('@freesewing/hugo').config
 const jaeger = require('@freesewing/jaeger').config
+const lucy = require('@freesewing/lucy').config
 const lunetius = require('@freesewing/lunetius').config
 const paco = require('@freesewing/paco').config
 const penelope = require('@freesewing/penelope').config
@@ -36,6 +38,7 @@ const theo = require('@freesewing/theo').config
 const tiberius = require('@freesewing/tiberius').config
 const titan = require('@freesewing/titan').config
 const trayvon = require('@freesewing/trayvon').config
+const unice = require('@freesewing/unice').config
 const ursula = require('@freesewing/ursula').config
 const wahid = require('@freesewing/wahid').config
 const walburga = require('@freesewing/walburga').config
@@ -60,11 +63,13 @@ const patterns = {
   cornelius,
   florent,
   florence,
+  hi,
   holmes,
   hortensia,
   huey,
   hugo,
   jaeger,
+  lucy,
   lunetius,
   paco,
   penelope,
@@ -79,6 +84,7 @@ const patterns = {
   tiberius,
   titan,
   trayvon,
+  unice,
   ursula,
   wahid,
   walburga,
@@ -138,6 +144,7 @@ const optionalMeasurements = {}
 const versions = {}
 const info = {}
 for (let pattern of Object.keys(patterns)) {
+  if (typeof patterns[pattern] === 'undefined') console.log({pattern})
   options[pattern] = patternOptions(patterns[pattern])
   optionGroups[pattern] = patterns[pattern].optionGroups
   parts[pattern] = patternParts(patterns[pattern])

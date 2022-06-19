@@ -47,6 +47,8 @@ const patterns = {
   "hugo.d": "Hugo est un sweat à capuche avec des manches raglan.",
   "jaeger.t": "Veste Jaeger",
   "jaeger.d": "Jaeger est une veste de sport de style manteau avec deux boutons et des poches plaquées.",
+  "lucy.t": "Lucy tie-on pocket",
+  "lucy.d": "Lucy is a historical pocket that you can tie around your waist.",
   "lunetius.t": "Lacerne Lunetius",
   "lunetius.d": "Lunetius est une lacerne, un manteau romain historique",
   "paco.t": "Pantalon Paco",
