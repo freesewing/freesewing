@@ -12,3 +12,4 @@ Pattern.prototype.draftBody = draftBody
 Pattern.prototype.draftSleeve  = draftSleeve
 Pattern.prototype.draftGusset = draftGusset
 export default Pattern
+
