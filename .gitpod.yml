@@ -8,5 +8,3 @@ tasks:
   - before: nvm install lts/fermium && nvm use lts/fermium
   - init: yarn kickstart
   - command: yarn lab
-
-
