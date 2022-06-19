@@ -67,6 +67,8 @@ cd freesewing
 yarn kickstart
 ```
 
+If you don't want to set up a dev environment, you can [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/freesewing/freesewing), though we recommend that you fork this repo and then put `gitpod.io/#<entire-url-of-your-fork` into a browser to start up a browser-based dev environment of your own
+
 ## About FreeSewing 💀
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
