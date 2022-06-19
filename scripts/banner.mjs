@@ -20,7 +20,16 @@ red('  | __| _')+orange(' ___ ___')+yellow('/ __|')+green(' _____ _')+blue('_ _(
 red(`  | _| '_/`)+orange(' -_) -_)')+yellow('__ \\')+green('/ -_) V ')+blue(' V / |')+violet(` ' \\/ _\` |`)+nl+
 red(`  |_||_|`)+orange(` \\___\\___`)+yellow(`|___/`)+green(`\\___|\\_/`)+blue(`\\_/|_|`)+violet(`_||_\\__, |`)+nl+
 text(`    Come for the sewing patterns `)+violet(`       |___/`)+nl+
-text(`      Stay for the `)+tblue('co')+tpink('mm')+white('u')+tpink('ni')+tblue('ty')+nl
+text(`      Stay for the `)+tblue('co')+tpink('mm')+white('u')+tpink('ni')+tblue('ty')+nl +
+nl+nl+nl+
+red('   ___           ')+yellow(' ___')+blue('             _')+nl+
+red('  | __| _')+orange(' ___ ___')+yellow('/ __|')+green(' _____ _')+blue('_ _(_)')+violet('_ _  __ _')+nl+
+red(`  | _| '_/`)+orange(' -_) -_)')+yellow('__ \\')+green('/ -_) V ')+blue(' V / |')+violet(` ' \\/ _\` |`)+nl+
+red(`  |_||_|`)+orange(` \\___\\___`)+yellow(`|___/`)+green(`\\___|\\_/`)+blue(`\\_/|_|`)+violet(`_||_\\__, |`)+nl+
+text(`  `)+tblue('≡≡≡≡≡≡≡')+tpink('≡≡≡≡≡≡≡')+white('≡≡≡≡≡≡≡≡≡≡')+tpink('≡≡≡≡≡≡≡')+tblue('≡≡≡≡≡≡≡')+violet(`|___/`)+nl+
+white('  Come')+text(' for the ')+white('sewing patterns')+nl+
+white('  Stay')+text(' for the ')+
+red('c')+orange('o')+yellow('m')+green('m')+blue('u')+violet('n')+white('i')+tpink('t')+tblue('y')
 
 
 export const plainBanner = chalk.magenta.bold(`
