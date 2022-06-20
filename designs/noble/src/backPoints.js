@@ -10,8 +10,7 @@ export default function (part) {
     // Hide Bella paths
   for (let key of Object.keys(paths)) paths[key].render = false
   for (let i in snippets) delete snippets[i]
-  //removing macros not required from Bella
-//   delete points.titleAnchor
+
   delete points.__titleNr
   delete points.__titleName
   delete points.__titlePattern
@@ -30,20 +29,8 @@ export default function (part) {
   delete points.__scaleboxLink
   delete points.__scaleboxImperial
   delete points.__scaleboxMetric
-//   delete points.cbNeck
-//   delete points.cbWaist
   delete points.bustDartLeft
   delete points.bustDartLeftCp
-//   delete points.bustCenter
-//   delete points.waistCenter
-//   delete points.cbArmhole
-//   delete points.cbNeckCp2
-//   delete points.cbNeckCp1
-//   delete points.dartLeftCp
-//   delete points.dartBottomLeft
-//   delete points.dartBottomCenter
-
-  console.log('backPoints');
   
   points.shoulderDart = points.hps.shiftFractionTowards( points.shoulder, options.shoulderDartPosition )
   

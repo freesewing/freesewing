@@ -16,8 +16,6 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  console.log('Noble front outside')
-
   delete points.bustDartTop
   delete points.bustSide
   delete points.bustDartMiddle
@@ -25,8 +23,6 @@ export default function (part) {
   delete points.bustDartCpBottom
   delete points.bustB
   delete points.bustDartEdge
-
-  console.log({ part: part })
 
   if( options.dartPosition == 'shoulder' ) {
     paths.princessSeam = new Path()
@@ -72,13 +68,8 @@ export default function (part) {
     snippets.shoulderDartTip = new Snippet('notch', points.snippet)
 
     points.titleAnchor = points.waistDartRight
-<<<<<<< HEAD
       .shiftFractionTowards(points.armhole, 0.3)
       .shiftFractionTowards(points.shoulderDartOutside, 0.2)
-=======
-      // .shiftFractionTowards(points.armhole, 0.5)
-      .shiftFractionTowards(points.shoulderDartOutside, 0.3)
->>>>>>> 395a24ecd9739befb4d58a0b33c8244d6d10921b
     macro('title', {
       at: points.titleAnchor,
       nr: 2,
@@ -177,18 +168,18 @@ export default function (part) {
           x: points.sideHemInitial.x +sa + 25,
         })
       } else {
-      let pTop = paths.princessSeam.edge('top')
-      macro('hd', {
+        let pTop = paths.princessSeam.edge('top')
+        macro('hd', {
           from: pLeft,
           to: points.armholeOutsidePitchCp1,
           y: pTop.y -sa - 35,
         })
-      macro('hd', {
+        macro('hd', {
           from: pLeft,
           to: points.armholeDartOutside,
           y: pTop.y -sa - 25,
         })
-      macro('hd', {
+        macro('hd', {
           from: pLeft,
           to: pTop,
           y: pTop.y -sa - 15,
@@ -213,9 +204,7 @@ export default function (part) {
           to: points.sideHemInitial,
           x: points.sideHemInitial.x +sa + 35,
         })
-  
       }
-
     }
   }
 

@@ -108,7 +108,6 @@ export default function (part) {
         to: points.hps,
         x: points.cbNeck.x -sa - 25,
       })
-
     }
   }
   

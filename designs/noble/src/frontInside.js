@@ -16,8 +16,6 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  console.log( 'Noble front inside' )
-
   delete points.waistDartHem
   delete points.waistDartRight
   delete points.waistDartRightCp
@@ -43,12 +41,7 @@ export default function (part) {
   delete points.bustSide
   delete points.bustDartMiddle
   delete points.bustDartEdge
-  // delete points.bustDartCpBottom
-  // delete points.bustDartTop
-  // delete points.bustDartMiddle
 
-  console.log({part: part})
-  
   if( options.dartPosition == 'shoulder' ) {
     paths.insideSeam = new Path()
       .move(points.cfHem)
@@ -148,11 +141,6 @@ export default function (part) {
         })
       }
 
-      // macro('vd', {
-      //   from: points.cfHem,
-      //   to: points.waistDartTip,
-      //   x: 0 - 15,
-      // })
       macro('vd', {
         from: points.cfHem,
         to: points.armholeDartTipInside,
@@ -172,18 +160,12 @@ export default function (part) {
         from: points.cfBust,
         to: points.armholeDartTipInside,
         y: points.cfHem.y + sa + 25,
-        // y: points.shoulderDartTip.y - 15,
       })
       macro('hd', {
         from: points.cfHem,
         to: points.waistDartLeft,
         y: points.cfHem.y + sa + 15,
       })
-      // macro('hd', {
-      //   from: points.cfHem,
-      //   to: points.waistDartTip,
-      //   y: points.cfHem.y + sa + 30,
-      // })
       macro('hd', {
         from: points.cfNeck,
         to: points.hps,
@@ -191,5 +173,6 @@ export default function (part) {
       })
     }  
   }
+
   return part
 }
