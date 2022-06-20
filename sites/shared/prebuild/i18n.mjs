@@ -19,7 +19,7 @@ const writeJson = (site, locale, namespace, content) => fs.writeFileSync(
 /*
  * Main method that does what needs doing
  */
-export const prebuildI18n = async (site) => {
+export const prebuildI18n = async (site, only=false) => {
   // Iterate over locales
   for (const locale in locales) {
     // Only English for dev site
@@ -28,10 +28,12 @@ export const prebuildI18n = async (site) => {
       const loc = locales[locale]
       // Fan out into namespaces
       for (const namespace in loc) {
-        writeJson(
-          site, locale, namespace,
-          loc[namespace]
-        )
+        if (!only || only.indexOf(namespace) !== -1) {
+          writeJson(
+            site, locale, namespace,
+            loc[namespace]
+          )
+        }
       }
       writeJson(site, locale, 'locales', languages)
     }

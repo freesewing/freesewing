@@ -77,6 +77,7 @@ sites/strapi/.cache
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json
 sites/*/public/feeds/*
+packages/new-design/shared/public/locales/*/*.json
 
 # Lab auto-generated pages
 sites/lab/lib

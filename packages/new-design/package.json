@@ -1,0 +1,57 @@
+{
+  "name": "@freesewing/new-design",
+  "version": "2.21.0-rc.0",
+  "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "freesewing"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs",
+    "clean": "rimraf dist",
+    "mbuild": "NO_MINIFY=1 node build.js",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "echo \"new-design: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "vbuild": "VERBOSE=1 node build.js",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "cibuild_step6": "node build.js"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "execa": "^6.1.0",
+    "mustache": "^4.2.0",
+    "ora": "^6.1.0",
+    "prompts": "^2.4.2",
+    "recursive-readdir": "^2.2.2"
+  },
+  "devDependencies": {},
+  "files": [
+    "dist/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6"
+  }
+}
