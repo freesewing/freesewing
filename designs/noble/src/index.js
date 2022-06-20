@@ -1,7 +1,12 @@
+// import freesewing from '@freesewing/core'
+// import Bella from '@freesewing/bella'
+// import plugins from '@freesewing/plugin-bundle'
+// import config from '../config'
 import freesewing from '@freesewing/core'
 import Bella from '@freesewing/bella'
-import plugins from '@freesewing/plugin-bundle'
+import bundle from '@freesewing/plugin-bundle'
 import config from '../config'
+// Parts
 // Parts
 import draftBackPoints from './backPoints'
 import draftBackInside from './backInside'
@@ -11,7 +16,7 @@ import draftFrontInside from './frontInside'
 import draftFrontOutside from './frontOutside'
 
 // Create design
-const Pattern = new freesewing.Design(config, plugins)
+const Noble = new freesewing.Design(config, bundle)
 
 // console.log( 'bella back')
 //   measurements.highBust = (measurements.highBust == undefined || measurements.highBust == 0 ) ? measurements.chest *1.035 : measurements.highBust
@@ -23,20 +28,28 @@ const Pattern = new freesewing.Design(config, plugins)
 //   console.log({ hpsToBust : measurements.hpsToBust} )
  
 // Attach draft methods to prototype
-Pattern.prototype.draftBellaBack = function (part) {
+Noble.prototype.draftBellaBack = function (part) {
   return new Bella(this.settings).draftBack(part)
 }
-Pattern.prototype.draftBellaFrontSideDart = function (part) {
+Noble.prototype.draftBellaFrontSideDart = function (part) {
   return new Bella(this.settings).draftFrontSideDart(part)
 }
 
 // Pattern.prototype.draftFrontSideDart = (part) => draftFrontSideDart(part)
 
-Pattern.prototype.draftBackPoints = (part) => draftBackPoints(part)
-Pattern.prototype.draftBackInside = (part) => draftBackInside(part)
-Pattern.prototype.draftBackOutside = (part) => draftBackOutside(part)
-Pattern.prototype.draftFrontPoints = (part) => draftFrontPoints(part)
-Pattern.prototype.draftFrontInside = (part) => draftFrontInside(part)
-Pattern.prototype.draftFrontOutside = (part) => draftFrontOutside(part)
+// Pattern.prototype.draftBackPoints = (part) => draftBackPoints(part)
+// Pattern.prototype.draftBackInside = (part) => draftBackInside(part)
+// Pattern.prototype.draftBackOutside = (part) => draftBackOutside(part)
+// Pattern.prototype.draftFrontPoints = (part) => draftFrontPoints(part)
+// Pattern.prototype.draftFrontInside = (part) => draftFrontInside(part)
+// Pattern.prototype.draftFrontOutside = (part) => draftFrontOutside(part)
+Noble.prototype.draftBackPoints = draftBackPoints
+Noble.prototype.draftBackInside = draftBackInside
+Noble.prototype.draftBackOutside = draftBackOutside
+Noble.prototype.draftFrontPoints = draftFrontPoints
+Noble.prototype.draftFrontInside = draftFrontInside
+Noble.prototype.draftFrontOutside = draftFrontOutside
 
-export default Pattern
+export { config, Noble }
+
+export default Noble

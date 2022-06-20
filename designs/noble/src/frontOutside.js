@@ -56,8 +56,8 @@ export default function (part) {
 
   if (complete) {
     points.titleAnchor = points.waistDartRight
-      .shiftFractionTowards(points.armhole, 0.5)
-      .shiftFractionTowards(points.shoulderDartOutside, 0.2)
+      // .shiftFractionTowards(points.armhole, 0.5)
+      .shiftFractionTowards(points.shoulderDartOutside, 0.3)
     macro('title', {
       at: points.titleAnchor,
       nr: 2,

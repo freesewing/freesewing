@@ -34,7 +34,7 @@ export default function (part) {
     .attr('class', 'fabric')
   
     if (complete) {
-      points.titleAnchor = points.dartBottomRight.shiftFractionTowards( points.waistSide, .35 ).shiftFractionTowards( points.shoulder, .35 )
+      points.titleAnchor = points.dartBottomRight.shiftFractionTowards( points.waistSide, .35 ).shiftFractionTowards( points.shoulderDart, .35 )
       macro('title', {
         at: points.titleAnchor,
         nr: 4,
