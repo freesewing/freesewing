@@ -1,7 +1,11 @@
-import { version } from '../package.json'
+// import { version } from '../package.json'
 import Bella from '@freesewing/bella'
 
-const config = {
+import { version } from '../package.json'
+import configHelpers from '@freesewing/config-helpers'
+const { pctBasedOn } = configHelpers
+
+export default {
   ...Bella.config,
   name: 'noble',
   version,
@@ -106,5 +110,3 @@ const config = {
   }
 
 }
-
-export default config

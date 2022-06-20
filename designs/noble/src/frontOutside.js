@@ -72,8 +72,13 @@ export default function (part) {
     snippets.shoulderDartTip = new Snippet('notch', points.snippet)
 
     points.titleAnchor = points.waistDartRight
+<<<<<<< HEAD
       .shiftFractionTowards(points.armhole, 0.3)
       .shiftFractionTowards(points.shoulderDartOutside, 0.2)
+=======
+      // .shiftFractionTowards(points.armhole, 0.5)
+      .shiftFractionTowards(points.shoulderDartOutside, 0.3)
+>>>>>>> 395a24ecd9739befb4d58a0b33c8244d6d10921b
     macro('title', {
       at: points.titleAnchor,
       nr: 2,

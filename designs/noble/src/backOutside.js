@@ -35,9 +35,13 @@ export default function (part) {
     .attr('class', 'fabric')
   
     if (complete) {
+<<<<<<< HEAD
     snippets.dartTip = new Snippet('notch', points.dartTip)
     
     points.titleAnchor = points.dartBottomRight.shiftFractionTowards( points.waistSide, .1 ).shiftFractionTowards( points.shoulder, .3 )
+=======
+      points.titleAnchor = points.dartBottomRight.shiftFractionTowards( points.waistSide, .35 ).shiftFractionTowards( points.shoulderDart, .35 )
+>>>>>>> 395a24ecd9739befb4d58a0b33c8244d6d10921b
       macro('title', {
         at: points.titleAnchor,
         nr: 4,
