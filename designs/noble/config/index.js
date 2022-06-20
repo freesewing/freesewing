@@ -57,7 +57,7 @@ const config = {
     backOutside: 'backPoints',
     frontPoints: 'bellaBack',
     frontInside: 'frontPoints',
-    frontOutside: 'frontPoints',
+    frontOutside: ['frontPoints','frontInside'],
   },
   parts: [
     'backPoints',

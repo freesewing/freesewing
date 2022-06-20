@@ -61,6 +61,11 @@ export default function (part) {
     paths.seam = paths.insideSeam.join( new Path().move(points.cfNeck).line(points.cfHem))
       .close()
       .attr('class', 'fabric')
+
+    store.set( 'shoulderDartTipNotch', (new Path()
+      .move(points.waistDartLeft)
+      .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)).length())
+
   } else {
     paths.insideSeam = new Path()
       .move(points.cfHem)
@@ -75,9 +80,17 @@ export default function (part) {
       .close()
       .attr('class', 'fabric')
 
+    store.set( 'shoulderDartTipNotch', (new Path()
+      .move(points.waistDartLeft)
+      .curve(points.waistDartLeftCp, points.armholeDartTipCpDownInside, points.armholeDartTipInside)).length())
   }
 
   if (complete) {
+    if( options.dartPosition == 'shoulder' ) {
+      snippets.shoulderDartTip = new Snippet('notch', points.shoulderDartTip)
+    } else {
+      snippets.shoulderDartTip = new Snippet('notch', points.armholeDartTipInside)
+    }
     points.titleAnchor = new Point(points.hpsCp2.x *.75, points.cfNeckCp1.y *1.5)
     macro('title', {
       at: points.titleAnchor,
@@ -92,63 +105,91 @@ export default function (part) {
       to: points.cfHem,
       grainline: true,
     })
+
     if (sa) {
       paths.sa = paths.insideSeam.offset(sa).line(points.cfNeck).attr('class', 'fabric sa')
       paths.sa = paths.sa.move(points.cfHem).line(paths.sa.start())
     }
+
     if (paperless) {
+      let extraOffset = 0
+      if( options.dartPosition == 'shoulder' ) {
+        macro('hd', {
+          from: points.cfNeck,
+          to: points.shoulderDartInside,
+          y: points.hps.y - 25,
+        })
+        macro('vd', {
+          from: points.cfHem,
+          to: points.shoulderDartInside,
+          x: 0 -30,
+        })
+      } else {
+        extraOffset = 10
+        macro('hd', {
+          from: points.cfNeck,
+          to: points.shoulderCp1,
+          y: points.hps.y - 35,
+        })
+        macro('hd', {
+          from: points.cfNeck,
+          to: points.armholeDartInsideCp2,
+          y: points.hps.y - 25,
+        })
+        macro('vd', {
+          from: points.cfHem,
+          to: points.armholeDartInsideCp2,
+          x: 0 -20,
+        })
+        macro('vd', {
+          from: points.cfHem,
+          to: points.shoulderCp1,
+          x: 0 -40,
+        })
+      }
+
+      // macro('vd', {
+      //   from: points.cfHem,
+      //   to: points.waistDartTip,
+      //   x: 0 - 15,
+      // })
       macro('vd', {
         from: points.cfHem,
-        to: points.waistDartTip,
-        x: 0 - 15,
-      })
-      macro('vd', {
-        from: points.cfHem,
-        to: points.shoulderDartTip,
-        x: 0 - 30,
+        to: points.armholeDartTipInside,
+        x: 0 - 10,
       })
       macro('vd', {
         from: points.cfHem,
         to: points.cfNeck,
-        x: 0 - 45,
+        x: 0 - 20 -extraOffset,
       })
       macro('vd', {
         from: points.cfHem,
         to: points.hps,
-        x: 0 - 60,
-      })
-      macro('vd', {
-        from: points.hps,
-        to: points.shoulderDartInside,
-        x: points.cfNeck.x -15,
+        x: 0 - 40 -extraOffset,
       })
       macro('hd', {
         from: points.cfBust,
-        to: points.shoulderDartTip,
-        y: points.shoulderDartTip.y - 15,
-      })
-      macro('hd', {
-        from: points.cfNeck,
-        to: points.shoulderDartInside,
-        y: points.hps.y - 30,
+        to: points.armholeDartTipInside,
+        y: points.cfHem.y + sa + 25,
+        // y: points.shoulderDartTip.y - 15,
       })
       macro('hd', {
         from: points.cfHem,
         to: points.waistDartLeft,
         y: points.cfHem.y + sa + 15,
       })
-      macro('hd', {
-        from: points.cfHem,
-        to: points.waistDartTip,
-        y: points.cfHem.y + sa + 30,
-      })
+      // macro('hd', {
+      //   from: points.cfHem,
+      //   to: points.waistDartTip,
+      //   y: points.cfHem.y + sa + 30,
+      // })
       macro('hd', {
         from: points.cfNeck,
         to: points.hps,
         y: points.hps.y - sa - 15,
       })
-    }
-  }  
-  
+    }  
+  }
   return part
 }
