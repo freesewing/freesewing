@@ -16,6 +16,9 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
+  if( options.dartPosition != 'shoulder' ) {
+    return part 
+  }
   
   paths.dart = new Path()
     .move(points.shoulderDart)

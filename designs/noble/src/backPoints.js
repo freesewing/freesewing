@@ -40,11 +40,8 @@ export default function (part) {
   
   // let dartCpAdjustment = Math.abs( options.shoulderDartPosition -.5) +.05
   let dartCpAdjustment = aDiff /50
-  console.log({dartCpAdjustment: dartCpAdjustment });
 
-  // points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards( points.dartTip, options.upperDartLength) 
   points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 - dartCpAdjustment) 
-  // points.shoulderDartCpDown = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 +(1-options.upperDartLength) )
   points.shoulderDartCpDown = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 +dartCpAdjustment )
   
   let iLength = (new Path()
@@ -56,8 +53,6 @@ export default function (part) {
   let diff = 0
   let angle = 0
   do {
-    console.log({angle: points.waistSide.angle( points.dartBottomRight ) })
-    
     angle = diff*( oLength > iLength ? -.1 : .1 )
     
     points.dartBottomRight = points.dartBottomRight.rotate( angle, points.waistSide )
@@ -66,8 +61,6 @@ export default function (part) {
       .move(points.shoulderDart)
       .curve(points.shoulderDart, points.shoulderDartCpUp, points.dartTip)
       .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)).length();
-
-    console.log({diff:diff, oLength: oLength, iLength: iLength})
 
     diff = oLength -iLength
     iteration ++

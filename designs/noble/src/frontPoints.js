@@ -21,6 +21,7 @@ export default function (part) {
   // Hide Bella paths
   for (let key of Object.keys(paths)) paths[key].render = false
   for (let i in snippets) delete snippets[i]
+  
   //removing macros not required from Bella
   delete points.titleAnchor
   delete points.__titleNr
@@ -104,12 +105,18 @@ export default function (part) {
     points.armholeCp2 = armholePathOutside.ops[2].cp2.clone()
   }
 
-  paths.armholeInside = new Path()
-    .move(points.armholeDartInside)
-    .curve(points.armholeDartInsideCp2, points.armholeInsidePitchCp1, points.armholeInsidePitch)
-    .curve(points.armholeInsidePitchCp2, points.shoulderCp1, points.shoulder)
-    .setRender(false)
-    .attr('class', 'lining')
+  if( points.armholeDartInside.sitsRoughlyOn( points.armholeInsidePitch ) ) {
+    paths.armholeInside = new Path()
+      .move(points.armholeDartInside)
+      .curve(points.armholeInsidePitchCp2, points.shoulderCp1, points.shoulder)
+      .setRender(false)
+  } else {
+    paths.armholeInside = new Path()
+      .move(points.armholeDartInside)
+      .curve(points.armholeDartInsideCp2, points.armholeInsidePitchCp1, points.armholeInsidePitch)
+      .curve(points.armholeInsidePitchCp2, points.shoulderCp1, points.shoulder)
+      .setRender(false)
+  }
 
   let rotateAngle =
     points.shoulderDartInside.angle(points.bustA) - points.bustDartTop.angle(points.bustA)
@@ -165,18 +172,24 @@ export default function (part) {
   points.armholeOutsidePitch = points.armholeOutsidePitch.rotate(spreadAngle, points.bustA)
   points.armholeOutsidePitchCp1 = points.armholeOutsidePitchCp1.rotate(spreadAngle, points.bustA)
 
-  paths.armholeOutside = new Path()
-    .move(points.armholeDartOutside)
-    .curve(points.armholeDartOutsideCp1, points.armholeOutsidePitchCp2, points.armholeOutsidePitch)
-    .curve(points.armholeOutsidePitchCp1, points.armholeCp2, points.armhole)
-    .setRender(false)
-    .attr('class', 'lining')
+  if( points.armhole.sitsRoughlyOn( points.armholeOutsidePitch )  ) {
+    paths.armholeOutside = new Path()
+      .move(points.armholeDartOutside)
+      .curve(points.armholeDartOutsideCp1, points.armholeOutsidePitchCp2, points.armhole)
+      .setRender(true)
+  } else {
+    paths.armholeOutside = new Path()
+      .move(points.armholeDartOutside)
+      .curve(points.armholeDartOutsideCp1, points.armholeOutsidePitchCp2, points.armholeOutsidePitch)
+      .curve(points.armholeOutsidePitchCp1, points.armholeCp2, points.armhole)
+      .setRender(false)
+  }
+
   paths.armholeTempDart = new Path()
     .move(points.armholeDartOutside)
     ._curve(points.armholeDartCpBottom, points.armholeDartTip)
     .curve_(points.armholeDartCpTop, points.armholeDartInside)
     .setRender(false)
-    .attr('class', 'lining')
 
   points.shoulderDartTipCpDownOutside = points.shoulderDartOutside.shiftFractionTowards(
     points.bust,
@@ -205,9 +218,7 @@ export default function (part) {
   paths.armholeInsideSeam = new Path()
     .move(points.waistDartLeft)
     .curve(points.waistDartLeftCp, points.armholeDartTipCpDownInside, points.armholeDartTip)
-    // .line(points.armholeDartInside)
     .setRender(false)
-    .attr('class', 'lining')
 
   paths.sOutsideSeam = new Path()
     .move(points.waistDartRight)
@@ -236,7 +247,6 @@ export default function (part) {
   let lInside = shoulderInsideSeam.length()
   let iteration = 1
   let diff = 0
-  // points.bustAcp = points.bustA.clone()
   do {
     points.waistDartRight = points.waistDartRight.rotate(diff * 0.1, points.sideHemInitial)
 
