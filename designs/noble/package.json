@@ -1,8 +1,8 @@
 {
   "name": "@freesewing/noble",
   "version": "2.21.0-rc.0",
-  "description": "FIXME: A FreeSewing pattern that needs a description",
-  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "description": "A FreeSewing pattern for a princess seam bodice block",
+  "author": "woutervdub (https://github.com/woutervdub)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
@@ -42,7 +42,8 @@
   "peerDependencies": {
     "@freesewing/core": "^2.21.0-rc.0",
     "@freesewing/plugin-bundle": "^2.21.0-rc.0",
-    "@freesewing/config-helpers": "^2.21.0-rc.0"
+    "@freesewing/config-helpers": "^2.21.0-rc.0",
+    "@freesewing/bella": "^2.21.0-rc.0"
   },
   "dependencies": {},
   "devDependencies": {
