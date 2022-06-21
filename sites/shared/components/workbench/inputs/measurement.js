@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { useTranslation } from 'next-i18next'
 import { isDegreeMeasurement } from '../../../config/measurements'
+import measurementAsMm from 'pkgs/utils/src/measurementAsMm'
 
 /*
  * This is a single input for a measurements
@@ -14,30 +15,62 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
-  const factor = isDegreeMeasurement(m) ? 1 : 10
+
+  const isDegree = isDegreeMeasurement(m);
+  const factor = useMemo(() => (isDegree ? 1 : (gist?.units == 'imperial' ? 25.4 : 10)), [gist?.units])
 
   const isValValid = val => (typeof val === 'undefined' || val === '')
       ? null
-      : !isNaN(val)
+      : val !== false && !isNaN(val)
   const isValid = (newVal) => (typeof newVal === 'undefined')
-    ? isValValid(gist?.measurements?.[m])
+    ? isValValid(val)
     : isValValid(newVal)
 
-  const update = evt => {
-    setVal(evt.target.value)
-    const ok = isValid(evt.target.value)
-    if (ok) updateMeasurements(evt.target.value*factor, m)
-  }
+  const [val, setVal] = useState(gist?.measurements?.[m] / factor || '')
 
-  const [val, setVal] = useState(gist?.measurements?.[m] || '')
+  // keep a single reference to a debounce timer
+  const debounceTimeout = useRef(null);
 
+  // onChange
+  const update = useCallback((evt) => {
+    evt.stopPropagation();
+    let evtVal = evt.target.value;
+    // set Val immediately so that the input reflects it
+    setVal(evtVal)
+
+    let useVal = isDegree ? evtVal : measurementAsMm(evtVal, gist?.units);
+    const ok = isValid(useVal)
+    // only set to the gist if it's valid
+    if (ok) {
+      // debounce in case it's still changing
+    if (debounceTimeout.current !== null) { clearTimeout(debounceTimeout.current); }
+      debounceTimeout.current = setTimeout(() => {
+         // clear the timeout reference
+        debounceTimeout.current = null;
+        updateMeasurements(useVal, m)
+      }, 500);
+    }
+  }, [gist?.units])
+
+  // use this for better update efficiency
+  const memoVal = useMemo(() => gist?.measurements?.[m], [gist])
+  // track validity against the value and the units
+  const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist?.units)), [val, gist?.units])
+
+  // hook to update the value or format when the gist changes
   useEffect(() => {
-    if (gist?.measurements?.[m]) setVal(gist.measurements[m]/factor)
-  }, [gist])
+      // set the value to the proper value and format
+      if (memoVal) {
+        let gistVal = +(memoVal / factor).toFixed(2);
+        setVal(gistVal)
+      }
+  }, [memoVal, factor])
+
+  // cleanup
+  useEffect(() => clearTimeout(debounceTimeout.current), [])
 
   if (!m) return null
 
-  const valid = isValid()
   return (
     <div className="form-control mb-2" key={`wrap-${m}`}>
       <label className="label">
@@ -58,26 +91,26 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
           placeholder={title}
           className={`
             input input-lg input-bordered grow text-base-content border-r-0
-            ${isValid() === false && 'input-error'}
-            ${isValid() === true && 'input-success'}
+            ${valid === false && 'input-error'}
+            ${valid === true && 'input-success'}
           `}
           value={val}
           onChange={update}
         />
         <span role="img" className={`bg-transparent border-y
-          ${isValid() === false && 'border-error text-neutral-content'}
-          ${isValid() === true && 'border-success text-neutral-content'}
-          ${isValid() === null && 'border-base-200 text-base-content'}
+          ${valid === false && 'border-error text-neutral-content'}
+          ${valid === true && 'border-success text-neutral-content'}
+          ${valid === null && 'border-base-200 text-base-content'}
        `}>
-          {(isValid() === true) && '👍'}
-          {(isValid() === false) && '🤔'}
+          {(valid === true) && '👍'}
+          {(valid === false) && '🤔'}
         </span>
         <span className={`
           ${valid === false && 'bg-error text-neutral-content'}
           ${valid === true && 'bg-success text-neutral-content'}
           ${valid === null && 'bg-base-200 text-base-content'}
        `}>
-        {isDegreeMeasurement(m) ? '° ' : 'cm'}
+        {isDegree ? '° ' : gist.units == 'metric' ? 'cm' : 'in'}
         </span>
       </label>
     </div>

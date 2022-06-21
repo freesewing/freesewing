@@ -7724,10 +7724,10 @@ bser@2.1.1:
   dependencies:
     node-int64 "^0.4.0"
 
-bson@*, bson@^4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/bson/-/bson-4.6.2.tgz#3241c79d23d225b86ab6d2bc268b803d8a5fd444"
-  integrity sha512-VeJKHShcu1b/ugl0QiujlVuBepab714X9nNyBdA1kfekuDGecxgpTA2Z6nYbagrWFeiIyzSWIOzju3lhj+RNyQ==
+bson@*, bson@^4.6.2, bson@^4.6.3:
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/bson/-/bson-4.6.4.tgz#e66d4a334f1ab230dfcfb9ec4ea9091476dd372e"
+  integrity sha512-TdQ3FzguAu5HKPPlr0kYQCyrYUYh8tFM+CMTpxjNzVzxeiJY00Rtuj3LXLHSgiGvmaWlZ8PE+4KyM2thqE38pQ==
   dependencies:
     buffer "^5.6.0"
 
@@ -16424,10 +16424,10 @@ kareem@2.3.2:
   resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.2.tgz#78c4508894985b8d38a0dc15e1a8e11078f2ca93"
   integrity sha512-STHz9P7X2L4Kwn72fA4rGyqyXdmrMSdxqHx9IXon/FXluXieaFA6KJ2upcHAHxQPQ0LeM/OjLrhFxifHewOALQ==
 
-kareem@2.3.5:
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.3.5.tgz#111fe9dbab754c8ed88b7a2360e2680cec1420ca"
-  integrity sha512-qxCyQtp3ioawkiRNQr/v8xw9KIviMSSNmy+63Wubj7KmMn3g7noRXIZB4vPCAP+ETi2SR8eH6CvmlKZuGpoHOg==
+kareem@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.4.1.tgz#7d81ec518204a48c1cb16554af126806c3cd82b0"
+  integrity sha512-aJ9opVoXroQUPfovYP5kaj2lM7Jn02Gw13bL0lg9v0V7SaUc0qavPs0Eue7d2DcC3NjqI6QAUElXNsuZSeM+EA==
 
 keep-func-props@^4.0.0:
   version "4.0.1"
@@ -19062,12 +19062,12 @@ mongodb@3.7.3:
   optionalDependencies:
     saslprep "^1.0.0"
 
-mongodb@4.5.0, mongodb@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-4.5.0.tgz#d74c2008567b606dccef220f62a44cd7b934eb92"
-  integrity sha512-A2l8MjEpKojnhbCM0MK3+UOGUSGvTNNSv7AkP1fsT7tkambrkkqN/5F2y+PhzsV0Nbv58u04TETpkaSEdI2zKA==
+mongodb@4.7.0, mongodb@^4.5.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-4.7.0.tgz#99f7323271d93659067695b60e7b4efee2de9bf0"
+  integrity sha512-HhVar6hsUeMAVlIbwQwWtV36iyjKd9qdhY+s4wcU8K6TOj4Q331iiMy+FoPuxEntDIijTYWivwFJkLv8q/ZgvA==
   dependencies:
-    bson "^4.6.2"
+    bson "^4.6.3"
     denque "^2.0.1"
     mongodb-connection-string-url "^2.5.2"
     socks "^2.6.2"
@@ -19112,13 +19112,13 @@ mongoose-long@^0.3.2:
   integrity sha512-5gTjPH6HUmtNhamv8MPwExWo01Z4d9CT5njZlupqqbmxzMXTbDOgCuP/jnK+9SV0Fs7nuyYlXv7pJ/nA2pAAuA==
 
 "mongoose@3.8.* || >=4", mongoose@^6.1.8:
-  version "6.3.6"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.3.6.tgz#a0e0fa3f87a78d390d9d286ac3f5f16a0c7c776f"
-  integrity sha512-/Cixfo+bA32EHQ5Y7sxMj5ZOXFiAFlvA3X4mFruUET9OsbJZfstg4n2FzxovX8Q7EcoQ7Ry1bnOp9AeXtodF7w==
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.4.0.tgz#22d6ab436bdf444b833e92faaa53e47b734c15c6"
+  integrity sha512-eBDrueap1Zx3qFrcYylTiqTFlL5iTEaYAxoDF1MSRdipwAzChQRMJve+vxHtxPhI2q5tmf9RYHfZwXfTUHPd3g==
   dependencies:
     bson "^4.6.2"
-    kareem "2.3.5"
-    mongodb "4.5.0"
+    kareem "2.4.1"
+    mongodb "4.7.0"
     mpath "0.9.0"
     mquery "4.0.3"
     ms "2.1.3"
@@ -22806,10 +22806,10 @@ react-input-autosize@^3.0.0:
   dependencies:
     prop-types "^15.5.8"
 
-react-instantsearch-core@6.27.0:
-  version "6.27.0"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.27.0.tgz#4a1e32bbddb347fda5f440be680e74c5c7481e4a"
-  integrity sha512-InjSaw6WlIp9dqkJX/NqBeBMQ8tz5ghfpDPWyKBOLo6ijjOYD5qK8bkBehWoceI5+MHMpGq37TIrNUok3XLeAQ==
+react-instantsearch-core@6.28.0:
+  version "6.28.0"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.28.0.tgz#c1aa480583e5f807b17bffd61442ff82bf94573c"
+  integrity sha512-wj35Vr+CNif1t2nLHq+MgEL9qRImauFCR9bsjKBYHuH5XcW9GJr8JqGvCSSTPVcljM+AxgU+PFzLe++bPVabpQ==
   dependencies:
     "@babel/runtime" "^7.1.2"
     algoliasearch-helper "^3.8.2"
@@ -22817,16 +22817,16 @@ react-instantsearch-core@6.27.0:
     react-fast-compare "^3.0.0"
 
 react-instantsearch-dom@^6.18.0:
-  version "6.27.0"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.27.0.tgz#8e712c09704b2711ee312e340d19b2c426951838"
-  integrity sha512-QDSMFso7rVaglQlbc3Ffn5hP2cM4ukjK5SAF043bLX4KoQlKKZqsCDPzo/SMo6wjIZDRsVmADjP7OgLWi0pFqA==
+  version "6.28.0"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.28.0.tgz#96d969b999bf6e1fa0df369e1dabe96d0f828179"
+  integrity sha512-iYCwUX7ToN5Ut5BN2c5zyzIUl8HQd2YxAVO4jtnoaYA++7+dwfPTYEktELD0T99HStGM1tb7e5aQ1lJj/7hK9g==
   dependencies:
     "@babel/runtime" "^7.1.2"
     algoliasearch-helper "^3.8.2"
     classnames "^2.2.5"
     prop-types "^15.6.2"
     react-fast-compare "^3.0.0"
-    react-instantsearch-core "6.27.0"
+    react-instantsearch-core "6.28.0"
 
 react-intl@4.5.0:
   version "4.5.0"

@@ -1,6 +1,10 @@
 const measurementAsMm = (value, units = "metric") => {
   if (typeof value === "number")
     return value * (units === "imperial" ? 25.4 : 10);
+
+  if (value.endsWith('.'))
+    return false;
+
   if (units === "metric") {
     value = Number(value);
     if (isNaN(value)) return false;
