@@ -45,7 +45,7 @@ export default function (part) {
 
   points.shoulderDartInside = points.hps.shiftFractionTowards(
     points.shoulder,
-    options.shoulderDartPosition
+    (options.dartPosition == 'shoulder' ? options.shoulderDartPosition : .5)
   )
   points.orgShoulder = points.shoulder.clone()
   points.orgArmhole = points.armhole.clone()
@@ -176,7 +176,7 @@ export default function (part) {
     paths.armholeOutside = new Path()
       .move(points.armholeDartOutside)
       .curve(points.armholeDartOutsideCp1, points.armholeOutsidePitchCp2, points.armhole)
-      .setRender(true)
+      .setRender(false)
   } else {
     paths.armholeOutside = new Path()
       .move(points.armholeDartOutside)
