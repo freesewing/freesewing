@@ -1,5 +1,7 @@
 export default function (part) {
   let { options, Point, points, store, utils, units, sa, paperless, macro } = part.shorthand()
+  
+  console.log('start elastic')
 
   // Stretch utility method
   store.set('elasticScale', utils.stretchToScale(options.elasticStretch))

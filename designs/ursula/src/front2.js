@@ -28,6 +28,8 @@ snippets.waist0 = new Snippet("notch", points.waist0);
 snippets.leg0L = new Snippet("notch", points.leg0L);
 snippets.leg0R = new Snippet("notch", points.leg0R);
 
+console.log('static markers')
+
 if (store.get('numWaistMarkersFront') > 1) {
   // frontWaistBandLength extends from right to left, so use (0.5 - waistMarkerFrac)
   points.waist1R = paths.frontWaistBand.shiftFractionAlong(0.5 - store.get('waistMarkerFrac'));

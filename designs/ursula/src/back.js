@@ -17,6 +17,8 @@ export default function (part) {
   } = part.shorthand()
 
   // Design pattern here
+  
+  console.log('start back')
 
   // Create points
 

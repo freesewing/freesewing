@@ -16,7 +16,7 @@ export default function (part) {
     macro,
   } = part.shorthand()
   
-console.log('bla')
+console.log('start back2')
 
 points.waist2 = points.backWaistBandMid;
 

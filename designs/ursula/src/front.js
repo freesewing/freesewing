@@ -15,6 +15,8 @@ export default function (part) {
     paperless,
     macro,
   } = part.shorthand()
+  
+  console.log('start front')
 
   // Stretch utility method
 

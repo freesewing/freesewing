@@ -15,6 +15,8 @@ export default function (part) {
     paperless,
     macro,
   } = part.shorthand()
+  
+  console.log('start gusset2')
 
 // draw markers to indicate elastic distribution
 if (store.get('numLegMarkersFront') < 1 & store.get('numLegMarkersGusset') > 0) {
