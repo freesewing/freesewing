@@ -4,7 +4,7 @@ import Setting from './setting.js'
 import { Ul, Details, TopSummary, TopSumTitle } from '../index.js'
 import { useTranslation } from 'next-i18next'
 
-const settings = {
+export const settings = {
   paperless: {
     dflt: false,
   },
