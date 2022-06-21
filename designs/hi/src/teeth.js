@@ -7,7 +7,7 @@ const { Bezier } = utils
  * So this method was optimized by @joostdeock to use the underlying
  * Bezier object * rather than the higher-level path object
  */
-export function createTeeth(pnts, toothCount, toothSize, part) {
+export function createTeeth(pnts, toothCount, toothStartSize, toothEndSize, part) {
 
   // Deconstruct what we need from the part via shorthand()
   const { Path, points, Point, options } = part.shorthand()
@@ -28,12 +28,15 @@ export function createTeeth(pnts, toothCount, toothSize, part) {
   // Get a lookup table (LUT) of points along the Bezier
   const lut = halfMouth.getLUT(toothCount + 2)
 
+  // Get size increase for each tooth
+  const sizeIncrease = (toothEndSize -toothStartSize) /toothCount
+
   // Iterating over our LUT where p holds a number ID that we'll
   // use to 'look back' to the other side of the tooth
   for (const p in lut) {
 
     // Tooth size varies across the curve
-    const size = (toothSize*options.size) + (toothSize*options.size) * p/15
+    const size = toothStartSize +(sizeIncrease *(p-1))
 
     // Coordinates from the LUT
     const { x, y } = lut[p]
