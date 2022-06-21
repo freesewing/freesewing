@@ -9,6 +9,7 @@ customBuild:
   - gatsby-remark-jargon
   - i18n
   - models
+  - new-design
   - prettier-config
   - remark-jargon
   - plugin-bundle
