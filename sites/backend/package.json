@@ -70,7 +70,7 @@
     "jsonwebtoken": "8.5.1",
     "jszip": "3.10.0",
     "mdast-util-to-string": "2",
-    "mocha": "^8.3.2",
+    "mocha": "^10.0.0",
     "mongodb-memory-server": "^8.3.0",
     "mongoose": "^6.1.8",
     "mongoose-bcrypt": "^1.8.1",
