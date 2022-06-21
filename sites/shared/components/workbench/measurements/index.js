@@ -5,6 +5,8 @@ import nonHuman from './non-human.js'
 import WithBreastsIcon from 'shared/components/icons/with-breasts.js'
 import WithoutBreastsIcon from 'shared/components/icons/without-breasts.js'
 import { useTranslation } from 'next-i18next'
+import Setting from '../menu/core-settings/setting';
+import {settings} from '../menu/core-settings/index';
 
 const groups = {
   people: {
@@ -70,7 +72,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist }) => {
                             {icons[type]}
                             {t('size')}&nbsp;
                             { group === 'people'
-                              ? m.slice(-2)
+                              ? m.replace('size', '')
                               : m
                             }
                           </button>
@@ -87,6 +89,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist }) => {
 
       <details className="my-2">
         <summary><h2 className="inline pl-2">{t('cfp:enterMeasurements')}</h2></summary>
+        <Setting key={'units'} setting={'units'} config={settings.units} updateGist={updateGist} {...inputProps} />
         <div className="ml-2 pl-4 border-l-2">
           {design.config.measurements && (
             <>

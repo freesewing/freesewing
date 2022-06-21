@@ -79,19 +79,19 @@ export default function (part) {
   // Complete?
   if (complete) {
 
-    points.titleAnchor = points.topFin01.shiftFractionTowards(points.topFin02, 0.4)
-    points.logoAnchor = points.titleAnchor.shiftFractionTowards(points.topFin03, 0.5)
+    points.titleAnchor = points.topFin01.shiftFractionTowards(points.topFin02, 0.5).shiftFractionTowards(points.topFin03, 0.1)
+    points.logoAnchor = points.titleAnchor.shiftFractionTowards(points.topFin03, 0.4)
 
     snippets.logo = new Snippet('logo', points.logoAnchor).attr(
       'data-scale',
-      options.size > 1 ? 1 : (options.size /2)
+      (options.size > 1 ? 1 : options.size) / 2
     )
 
     macro('title', {
       at: points.titleAnchor,
       nr: 7,
       title: 'topFin',
-      scale: options.size,
+      scale: (options.size > 1 ? 1 : options.size) / 2,
     })
 
     if (paperless) {

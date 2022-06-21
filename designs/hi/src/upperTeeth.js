@@ -18,11 +18,11 @@ export default function (part) {
   } = part.shorthand()
 
   let upperTeeth01_02d = 131.305041182736 * options.size
-  let upperTeeth01_02a = 34.147056946748805 + 180
+  let upperTeeth01_02a = 34.147056946748805 
   let upperTeeth02cp1d = 64.30113337316406 * options.size
-  let upperTeeth02cp1a = 55.1335930733262
+  let upperTeeth02cp1a = 55.1335930733262 +180
   let upperTeeth01cp2d = 48.331000000000017 * options.size
-  let upperTeeth01cp2a = 180
+  let upperTeeth01cp2a = 0 
 
   points.upperTeeth01 = new Point(0, 0)
   points.upperTeeth02 = points.upperTeeth01.shift(upperTeeth01_02a, upperTeeth01_02d)
@@ -48,13 +48,14 @@ export default function (part) {
 
   paths.teeth = createTeeth(
     [ // Array holding the points for half a mouth (bezier, not path)
-      points.upperTeeth02, // start
-      points.upperTeeth02cp1, // cp1
-      points.upperTeeth01cp2, // cp2
-      points.upperTeeth01, // end
+      points.upperTeeth03, // end
+      points.upperTeeth03cp2, // cp2
+      points.upperTeeth01cp1, // cp1
+      points.upperTeeth01, // start
     ],
     14, // number of teeth
-    14, // size
+    9 * options.size, // start size
+    18 * options.size, // end size
     part
   )
   //createTeeth(paths.seam, 18 * options.size, 9 * options.size, 15, options.aggressive, paths.teeth)
@@ -104,12 +105,12 @@ export default function (part) {
     }
 
     if (sa) {
-      let pSA = paths.seam.offset(sa)
+      let pSA = paths.seam.reverse().offset(sa)
       paths.sa = new Path()
-        .move(paths.seam.start())
+        .move(paths.seam.end())
         .line(pSA.start())
         .join(pSA)
-        .line(paths.seam.end())
+        .line(paths.seam.start())
         .attr('class', 'fabric sa')
     }
   }
