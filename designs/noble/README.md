@@ -1,25 +1,25 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/core"
-  title="@freesewing/core on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/core.svg"
-  alt="@freesewing/core on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/noble"
+  title="@freesewing/noble on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/noble.svg"
+  alt="@freesewing/noble on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/core.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/noble.svg?label=License"
   alt="License: MIT"/>
-  </a><a 
+  </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
   title="Code quality on DeepScan"
-  ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg" 
-  alt="DeepScan grade"
-  ></a> <a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen"
-  title="Open issues tagged pkg:aaron"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing.svg?label=Issues"
-  alt="Open issues"/>
-  </a><a 
+  ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
+  alt="Code quality on DeepScan"/>
+  </a><a
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Anoble"
+  title="Open issues tagged pkg:noble"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:noble.svg?label=Issues"
+  alt="Open issues tagged pkg:noble"/>
+  </a><a
   href="#contributors-"
   title="All Contributors"
   ><img src="https://img.shields.io/badge/all_contributors-90-pink.svg"
@@ -30,7 +30,7 @@
   ><img src="https://img.shields.io/badge/%F3%A0%80%A0-Follow%20us-blue.svg?logo=twitter&logoColor=white&logoWidth=15"
   alt="Follow @freesewing_org on Twitter"/>
   </a><a
-  href="https://discord.freesewing.org"
+  href="https://chat.freesewing.org"
   title="Chat with us on Discord"
   ><img src="https://img.shields.io/discord/698854858052075530?label=Chat%20on%20Discord"
   alt="Chat with us on Discord"/>
@@ -46,25 +46,23 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
+# @freesewing/noble
+
+FIXME: A FreeSewing pattern that needs a description
+
+
+
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).
+This repository is our *monorepo* 
+holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
 
-## Get involved with FreeSewing v3 🚀
+This folder holds: @freesewing/noble
 
-Check out [out v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278) to
-see what we've planning. And we are open to ideas/suggestions for what you would like to
-see in our mext major release.
+If you're not entirely sure what to do or how to start, type this command:
 
-## Getting started ⚡ 
-
-As this is a monorepo. You'll need [NodeJS v14](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
-Once you have those, clone (or fork) this repo and run `yarn kickstart`:
-
-```bash
-git clone git@github.com:freesewing/freesewing.git
-cd freesewing
-yarn kickstart
+```
+npm run tips
 ```
 
 ## About FreeSewing 💀
@@ -120,10 +118,11 @@ See [the license file](https://github.com/freesewing/freesewing/blob/develop/LIC
 
 ## Where to get help 🤯
 
-Our [chatrooms on Discord](https://discord.freesewing.org/) are the best place to ask questions,
+Our [chatrooms on Discord](https://chat.freesewing.org/) are the best place to ask questions,
 share your feedback, or just hang out.
 
 If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
+
 
 
 ## Contributors ✨
@@ -258,3 +257,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
