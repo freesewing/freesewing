@@ -42,6 +42,13 @@ i18n:
   prebuild: 'node src/prebuild.mjs'
   test: *test
   testci: *testci
+new-design:
+  build: '!'
+  mbuild: '!'
+  test: '!'
+  testci: '!'
+  vbuild: '!'
+  cibuild_step6: "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs"
 pattern-info:
   cibuild_step1: '!'
   build: 'node src/prebuild.js && node build.js'

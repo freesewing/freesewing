@@ -1,0 +1,45 @@
+{
+  "name": "@freesewing/new-design",
+  "version": "2.21.0-rc.0",
+  "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "freesewing"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "clean": "rimraf dist",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "cibuild_step6": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "dist/*",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6"
+  }
+}

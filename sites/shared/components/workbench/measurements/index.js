@@ -1,6 +1,6 @@
 import React from 'react'
 import MeasurementInput from '../inputs/measurement.js'
-import { withBreasts, withoutBreasts } from 'pkgs/models/src/index.js'
+import { withBreasts, withoutBreasts } from '@freesewing/models'
 import nonHuman from './non-human.js'
 import WithBreastsIcon from 'shared/components/icons/with-breasts.js'
 import WithoutBreastsIcon from 'shared/components/icons/without-breasts.js'
