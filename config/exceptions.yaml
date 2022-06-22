@@ -79,6 +79,7 @@ packageJson:
     files:
       - README.md
       - package.json
+      - dist/*
       - lib/**/*
       - shared/**/*
       - templates/**/*

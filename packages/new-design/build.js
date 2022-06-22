@@ -15,16 +15,16 @@ const options = {
   banner: { js: banner },
   bundle: true,
   entryPoints: ['index.mjs'],
-  external: ["@freesewing"],
+  external: [],
   metafile: process.env.VERBOSE ? true : false,
   minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,
+  platform: "node",
 }
 
 // Different formats
 const formats = {
   cjs: "dist/index.js",
-  esm: "dist/index.mjs",
 }
 
 // Let esbuild generate different formats
