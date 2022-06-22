@@ -7,6 +7,8 @@ import WithoutBreastsIcon from 'shared/components/icons/without-breasts.js'
 import { useTranslation } from 'next-i18next'
 import Setting from '../menu/core-settings/setting';
 import {settings} from '../menu/core-settings/index';
+import Popout from 'shared/components/popout'
+import Code from 'shared/components/code'
 
 const groups = {
   people: {
@@ -52,6 +54,11 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist }) => {
           {design.config.name}:
         </span> {t('measurements')}
       </h1>
+      <Popout fixme>
+        <h5>Debug for issue <a href="https://github.com/freesewing/freesewing/issues/2281">#2281</a></h5>
+        <p>Current value of <Code>gist.measurements</Code></p>
+        <pre>{JSON.stringify(gist.measurements, null ,2)}</pre>
+      </Popout>
       <details open className="my-2">
         <summary><h2 className="inline pl-1">{t('cfp:preloadMeasurements')}</h2></summary>
         <div className="ml-2 pl-4 border-l-2">

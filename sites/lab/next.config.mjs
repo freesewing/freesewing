@@ -55,6 +55,8 @@ const config = {
     for (const pkg of ['core', 'config-helpers', 'i18n', 'models']) {
       config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../../packages/${pkg}/src/index.js`)
     }
+    // @freesewing/snapseries is replaced by @freesewing/config-helpers
+    config.resolve.alias[`@freesewing/snapseries`] = path.resolve(`../../packages/config-helpers/src/index.js`)
 
     if (!greeting) {
       greeting = true

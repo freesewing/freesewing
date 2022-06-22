@@ -1,15 +1,24 @@
 import Markdown from 'react-markdown'
+import { formatMm } from 'shared/utils'
 
 // Markdown wrapper to suppress creation of P tags
 const Md = ({ children }) => <Markdown components={{ p: props => props.children }}>{children}</Markdown>
 
-const renderEvent = evt => Array.isArray(evt)
-  ? <Md>{evt[0]}</Md>
-  : typeof evt === 'object'
-  ? JSON.stringify(evt, null, 2)
-  : <Md>{evt}</Md>
+const Event = ({ evt, units }) => {
+  console.log(units)
+  if (Array.isArray(evt)) {
+    if (evt[1]?.mm) return <span dangerouslySetInnerHTML={{
+      __html: `${evt[0]}: <strong>${formatMm(evt[1].mm, units, 'html')}</strong>`
+    }}/>
+    else return evt.map(e => <Event evt={e} key={e} />)
+  }
 
-const EventGroup = ({ type='info', events=[] }) => events.length > 0 ? (
+  if (typeof evt === 'string') return <Md>{evt}</Md>
+
+  return <Md>Note a recognized event: {JSON.stringify(evt, null ,2)}</Md>
+}
+
+const EventGroup = ({ type='info', events=[], units='metric' }) => events.length > 0 ? (
   <div className="">
     <h3 className="capitalize" id={`events-${type}`}>{type}</h3>
     <table className="table w-full mdx">
@@ -23,7 +32,7 @@ const EventGroup = ({ type='info', events=[] }) => events.length > 0 ? (
         {events.map((evt, i) => (
           <tr key={i} className="leading-1 hover:bg-base-200 hover:bg-opacity-40">
             <td className="text-right p-1 pr-4 font-bold opacity-80 text-accent">{i}</td>
-            <td className="p-1 pl-4">{renderEvent(evt)}</td>
+            <td className="p-1 pl-4"><Event evt={evt} units={units}/></td>
           </tr>
         ))}
       </tbody>
@@ -56,7 +65,7 @@ const Events = props => props?.draft?.events
             )
           )}
         </ul>
-        {order.map(type => <EventGroup type={type} events={props.draft.events[type]} />)}
+        {order.map(type => <EventGroup type={type} events={props.draft.events[type]} units={props.gist.units}/>)}
       </div>
     </div>
   ) : null

@@ -53,7 +53,9 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
   }, [gist?.units])
 
   // use this for better update efficiency
-  const memoVal = useMemo(() => gist?.measurements?.[m], [gist])
+  // FIXME: This breaks gist updates.
+  // See: https://github.com/freesewing/freesewing/issues/2281
+  const memoVal = gist?.measurements?.[m] //useMemo(() => gist?.measurements?.[m], [gist])
   // track validity against the value and the units
   const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist?.units)), [val, gist?.units])
 

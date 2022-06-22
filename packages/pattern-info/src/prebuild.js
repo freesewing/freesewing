@@ -6,6 +6,7 @@ const bee = require('@freesewing/bee').config
 const bella = require('@freesewing/bella').config
 const benjamin = require('@freesewing/benjamin').config
 const bent = require('@freesewing/bent').config
+const bob = require('@freesewing/bob').config
 const brian = require('@freesewing/brian').config
 const breanna = require('@freesewing/breanna').config
 const diana = require('@freesewing/diana').config
@@ -53,6 +54,7 @@ const patterns = {
   bella,
   benjamin,
   bent,
+  bob,
   brian,
   breanna,
   diana,

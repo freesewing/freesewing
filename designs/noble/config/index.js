@@ -17,7 +17,7 @@ export default {
   optionGroups: {
     type: ['dartPosition'],
     fit: ['chestEase', 'waistEase', 'bustSpanEase'],
-    darts: ['backDartHeight', 'waistDartLength', 'shoulderDartPosition','upperDartLength','dartOutsideCP','armholeDartPosition'],
+    darts: ['backDartHeight', 'waistDartLength', 'shoulderDartPosition','upperDartLength','armholeDartPosition'],
     armhole: [
       'armholeDepth',
       'backArmholeSlant',
@@ -102,9 +102,9 @@ export default {
     bustDartLength: { pct: 90, min: 75, max: 100 },
     waistDartLength: { pct: 90, min: 75, max: 95 },
     bustDartCurve: { pct: 100, min: 0, max: 100 },
-    shoulderDartPosition: { pct: 50, min: 10, max: 90, hide: function(settings) {(settings.options.dartPosition != 'shoulder')} },
+    shoulderDartPosition: { pct: 50, min: 10, max: 90, hide: (settings) => (settings.options?.dartPosition != 'shoulder') },
     upperDartLength: { pct: 90, min: 80, max: 95 },
-    armholeDartPosition: { pct: 50, min: 10, max: 90, hide: function(settings) {(settings.options.dartPosition != 'shoulder')} },
+    armholeDartPosition: { pct: 50, min: 10, max: 90, hide: (settings) => (settings.options?.dartPosition != 'shoulder') },
     dartPosition: { dflt: 'shoulder', list: ['shoulder','armhole'] },
   }
 

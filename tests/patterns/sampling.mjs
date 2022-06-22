@@ -45,7 +45,7 @@ export const testPatternSampling = (design, Pattern, expect, models, patterns) =
      * Sample different measurements
      */
     it('Sample different measurements:' , () => true)
-    for (let measurement of Pattern.config.measurements) {
+    for (let measurement of Pattern.config.measurements || []) {
       it(`  Sample ${measurement}:` , () => {
         expect(doesItSample(new Pattern({
           sample: {

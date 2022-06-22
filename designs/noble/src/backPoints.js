@@ -31,44 +31,48 @@ export default function (part) {
   delete points.__scaleboxMetric
   delete points.bustDartLeft
   delete points.bustDartLeftCp
-  
+
   points.shoulderDart = points.hps.shiftFractionTowards( points.shoulder, options.shoulderDartPosition )
-  
+
   let aUp = points.dartTip.angle( points.shoulderDart )
   let aDown = points.dartBottomRight.angle( points.dartTip )
   let aDiff = Math.abs( aUp - aDown )
-  
+
   // let dartCpAdjustment = Math.abs( options.shoulderDartPosition -.5) +.05
   let dartCpAdjustment = aDiff /50
 
-  points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 - dartCpAdjustment) 
+  points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 - dartCpAdjustment)
   points.shoulderDartCpDown = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 +dartCpAdjustment )
-  
-  let iLength = (new Path()
-    .move(points.dartBottomLeft)
-    .curve(points.dartLeftCp, points.shoulderDartCpDown, points.dartTip)
-    .curve(points.shoulderDartCpUp, points.shoulderDart, points.shoulderDart)).length();
+
+  const length = {
+    i: new Path()
+      .move(points.dartBottomLeft)
+      .curve(points.dartLeftCp, points.shoulderDartCpDown, points.dartTip)
+      .curve(points.shoulderDartCpUp, points.shoulderDart, points.shoulderDart)
+      .length()
+  }
 
   let iteration = 0
   let diff = 0
   let angle = 0
   do {
-    angle = diff*( oLength > iLength ? -.1 : .1 )
-    
+    if (length?.o) angle = diff*( length.o > length.i ? -.1 : .1 )
+
     points.dartBottomRight = points.dartBottomRight.rotate( angle, points.waistSide )
 
-    let oLength = (new Path()
+    length.o = new Path()
       .move(points.shoulderDart)
       .curve(points.shoulderDart, points.shoulderDartCpUp, points.dartTip)
-      .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)).length();
+      .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)
+      .length()
 
-    diff = oLength -iLength
+    diff = length.o - length.i
     iteration ++
 
   } while( diff < -.5 || diff > .5 && iteration < 100 )
   if( iteration >= 100 ) {
     raise.error('Something is not quite right here!')
   }
-  
+
   return part
 }

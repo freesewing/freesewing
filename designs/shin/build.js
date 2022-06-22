@@ -46,6 +46,8 @@ let result
   await esbuild
   .build({
     ...options,
+    minify: false,
+    sourcemap: false,
     outfile: 'tests/dist/index.mjs',
     format: 'esm',
     external: [],
