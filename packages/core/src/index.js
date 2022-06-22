@@ -32,4 +32,5 @@ export default {
   Path,
   Snippet,
   utils,
+  pctBasedOn,
 }
