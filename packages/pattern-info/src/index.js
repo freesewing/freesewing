@@ -93,4 +93,4 @@ export const withoutBreasts = [
   'yuri',
 ]
 
-export const withBreasts = ['bee', 'bella', 'breanna', 'cathrin', 'carlita', 'diana', 'simone']
+export const withBreasts = ['bee', 'bella', 'breanna', 'cathrin', 'carlita', 'diana', 'noble', 'simone']
