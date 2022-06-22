@@ -170,30 +170,31 @@ export default function (part) {
   /* Store lengths for use in elastic */
 
   if (options.backExposure >= 0) {
-    store.set(
-      'backLegOpeningLength',
-      new Path()
+    paths.backLegOpening = new Path()
+							 
+				
         .move(points.backGussetRight)
         .curve(points.backGussetRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
-        .length()
-    )
+        .setRender(false)
+	 
   } else {
-    store.set(
-      'backLegOpeningLength',
-      new Path()
+    paths.backLegOpening = new Path()
+							 
+				
         .move(points.backGussetRight)
         .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
         .curve(points.backFlareRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
-    )
+        .setRender(false)
   }
+  store.set('backLegOpeningLength',paths.backLegOpening.length())
 
-  store.set(
-    'backWaistBandLength',
-    new Path()
+  paths.backWaistBand = new Path()
+						  
+			  
       .move(points.backWaistBandRight)
       .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
-      .length()
-  )
+      .setRender(false)
+  store.set('backWaistBandLength',paths.backWaistBand.length())
 
   // Complete?
   if (complete) {
