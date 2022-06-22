@@ -17,7 +17,7 @@ export default {
   optionGroups: {
     type: ['dartPosition'],
     fit: ['chestEase', 'waistEase', 'bustSpanEase'],
-    darts: ['backDartHeight', 'waistDartLength', 'shoulderDartPosition','upperDartLength','dartOutsideCP','armholeDartPosition'],
+    darts: ['backDartHeight', 'waistDartLength', 'shoulderDartPosition','upperDartLength','armholeDartPosition'],
     armhole: [
       'armholeDepth',
       'backArmholeSlant',
