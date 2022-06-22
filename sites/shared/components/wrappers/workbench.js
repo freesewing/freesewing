@@ -1,11 +1,7 @@
 import { useEffect, useState, useMemo,} from 'react'
-import useLocalStorage from 'shared/hooks/useLocalStorage'
 import {useGist} from 'shared/hooks/useGist'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu/index.js'
-import set from 'lodash.set'
-import unset from 'lodash.unset'
-import defaultSettings from 'shared/components/workbench/default-settings.js'
 import DraftError from 'shared/components/workbench/draft/error.js'
 import theme from '@freesewing/plugin-theme'
 import preloaders from 'shared/components/workbench/preload.js'
@@ -100,7 +96,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   // Generate the draft here so we can pass it down
   let draft = false
-  if (['draft', 'events', 'test'].indexOf(gist?._state?.view) !== -1) {
+  if (['draft', 'events', 'test'].indexOf(gist._state?.view) !== -1) {
     draft = new design(gist)
     if (gist.renderer === 'svg') draft.use(theme)
     try {
@@ -128,7 +124,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     ? layout
     : Layout
 
-  const Component = views[gist?._state?.view]
+  const Component = views[gist._state?.view]
     ? views[gist._state.view]
     : views.welcome
 

@@ -42,7 +42,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist }) => {
   }
 
   // Save us some typing
-  const inputProps = useMemo(() => ({ app, updateMeasurements, gist }), [app, updateMeasurements, gist])
+  const inputProps = useMemo(() => ({ app, updateMeasurements, gist }), [app, gist])
 
   return (
     <div className="m-auto max-w-2xl">
