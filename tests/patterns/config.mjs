@@ -113,7 +113,7 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
      *  Ensure required measurements are known measurements
      */
     it('Required measurements:', () => true)
-    for (let measurement of pattern.config.measurements) {
+    for (let measurement of pattern.config.measurements || []) {
       it(`  - '${measurement}' should be a known measurement`, () => {
         expect(
           models.measurements[breasts ? 'womenswear' : 'menswear'].indexOf(measurement)
