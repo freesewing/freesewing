@@ -5,7 +5,7 @@ _types:
       '@freesewing/plugin-bundle': *freesewing
       '@freesewing/config-helpers': *freesewing
     dev:
-      'mocha': &mocha '^9.1.1'
+      'mocha': &mocha '^10.0.0'
       'chai': &chai '^4.2.0'
   plugin:
     peer:
@@ -149,7 +149,7 @@ mui-theme:
     'react': *react
     'react-dom': '^17.0.2'
 noble:
-  peer: 
+  peer:
     '@freesewing/bella': *freesewing
 legend:
   peer:

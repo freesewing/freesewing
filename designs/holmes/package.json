@@ -49,7 +49,7 @@
     "@freesewing/plugin-gore": "^2.21.0-rc.0"
   },
   "devDependencies": {
-    "mocha": "^9.1.1",
+    "mocha": "^10.0.0",
     "chai": "^4.2.0"
   },
   "files": [
