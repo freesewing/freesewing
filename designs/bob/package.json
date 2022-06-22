@@ -1,7 +1,7 @@
 {
   "name": "@freesewing/bob",
   "version": "2.21.0-rc.0",
-  "description": "FIXME: A FreeSewing pattern that needs a description",
+  "description": "A FreeSewing pattern for a bib",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
