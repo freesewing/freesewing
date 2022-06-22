@@ -104,8 +104,8 @@ export default {
     bustDartCurve: { pct: 100, min: 0, max: 100 },
     upperDartLength: { pct: 90, min: 80, max: 95 },
     dartPosition: { dflt: 'shoulder', list: ['shoulder','armhole'] },
-    shoulderDartPosition: { pct: 50, min: 10, max: 90, hide: (options) => (options.dartPosition != 'shoulder') },
-    armholeDartPosition: { pct: 50, min: 10, max: 90, hide: (options) => (options.dartPosition == 'shoulder') },
+    shoulderDartPosition: { pct: 50, min: 10, max: 90, hide: ({options}) => (options.dartPosition != 'shoulder') },
+    armholeDartPosition: { pct: 50, min: 10, max: 90, hide: ({options}) => (options.dartPosition == 'shoulder') },
   }
 
 }
