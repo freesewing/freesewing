@@ -55,8 +55,7 @@
   },
   "files": [
     "dist/*",
-    "README.md",
-    "package.json"
+    "README.md"
   ],
   "publishConfig": {
     "access": "public",

@@ -20,28 +20,25 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
+    "build": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs",
     "clean": "rimraf dist",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "build": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs",
     "cibuild_step6": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs"
   },
   "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},
   "files": [
-    "dist/*",
     "README.md",
     "package.json",
     "lib/**/*",
     "shared/**/*",
     "templates/**/*",
-    "index.mjs"
+    "index.mjs",
+    "package.json"
   ],
-  "bin": {
-    "@freesewing/new-design": "index.mjs"
-  },
   "publishConfig": {
     "access": "public",
     "tag": "next"
@@ -49,5 +46,8 @@
   "engines": {
     "node": ">=14.0.0",
     "npm": ">=6"
+  },
+  "bin": {
+    "@freesewing/new-design": "index.mjs"
   }
 }
