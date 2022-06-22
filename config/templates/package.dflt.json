@@ -22,7 +22,7 @@
   "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},
-  "files": ["dist/*", "README.md", "package.json"],
+  "files": ["dist/*", "README.md"],
   "publishConfig": {
     "access": "public",
     "tag": "next"

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/cornelius",
-  "version": "2.21.0-rc.0",
+  "version": "2.21.0-rc.1",
   "description": "A FreeSewing pattern for cycling breeches, based on the Keystone drafting system",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -40,9 +40,9 @@
     "cibuild_step5": "node build.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.21.0-rc.0",
-    "@freesewing/plugin-bundle": "^2.21.0-rc.0",
-    "@freesewing/config-helpers": "^2.21.0-rc.0"
+    "@freesewing/core": "^2.21.0-rc.1",
+    "@freesewing/plugin-bundle": "^2.21.0-rc.1",
+    "@freesewing/config-helpers": "^2.21.0-rc.1"
   },
   "dependencies": {},
   "devDependencies": {
@@ -51,8 +51,7 @@
   },
   "files": [
     "dist/*",
-    "README.md",
-    "package.json"
+    "README.md"
   ],
   "publishConfig": {
     "access": "public",

@@ -117,14 +117,14 @@ const config = {
     buttonholePlacketStyle: {
       list: ['classic', 'seamless'],
       dflt: 'seamless',
-      hide: (options) => options.seperateButtonholePlacket,
+      hide: ({ options }) => options.seperateButtonholePlacket,
     },
     buttonholePlacketWidth: { pct: 8, min: 4, max: 12 },
     buttonholePlacketFoldWidth: { pct: 16, min: 8, max: 24 },
     buttonPlacketStyle: {
       list: ['classic', 'seamless'],
       dflt: 'classic',
-      hide: (options) => options.seperateButtonPlacket,
+      hide: ({ options }) => options.seperateButtonPlacket,
     },
     buttonPlacketWidth: { pct: 5, min: 2, max: 8 },
     extraTopButton: { bool: true },
