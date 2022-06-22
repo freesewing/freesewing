@@ -43,7 +43,7 @@ i18n:
   test: *test
   testci: *testci
 new-design:
-  build: '!'
+  build: "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs"
   mbuild: '!'
   test: '!'
   testci: '!'

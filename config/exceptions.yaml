@@ -75,6 +75,18 @@ packageJson:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
+  new-design:
+    files:
+      - README.md
+      - package.json
+      - lib/**/*
+      - shared/**/*
+      - templates/**/*
+      - index.mjs
+      - package.json
+    bin:
+      "@freesewing/new-design": "index.mjs"
+
   noble:
     author: woutervdub (https://github.com/woutervdub)
   plugin-gore:

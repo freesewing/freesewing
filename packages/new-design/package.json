@@ -24,6 +24,7 @@
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
+    "build": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs",
     "cibuild_step6": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs"
   },
   "peerDependencies": {},
@@ -32,8 +33,15 @@
   "files": [
     "dist/*",
     "README.md",
-    "package.json"
+    "package.json",
+    "lib/**/*",
+    "shared/**/*",
+    "templates/**/*",
+    "index.mjs"
   ],
+  "bin": {
+    "@freesewing/new-design": "index.mjs"
+  },
   "publishConfig": {
     "access": "public",
     "tag": "next"
