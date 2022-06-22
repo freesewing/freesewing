@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-buttons",
-  "version": "2.21.0-rc.0",
+  "version": "2.21.0-rc.1",
   "description": "A FreeSewing plugin that provides button, buttonhole, and snap snippets",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -40,7 +40,7 @@
     "cibuild_step1": "node build.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.21.0-rc.0"
+    "@freesewing/core": "^2.21.0-rc.1"
   },
   "dependencies": {},
   "devDependencies": {

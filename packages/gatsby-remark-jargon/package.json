@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-jargon",
-  "version": "2.21.0-rc.0",
+  "version": "2.21.0-rc.1",
   "description": "A gatsby-transformer-remark sub-plugin for jargon terms",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -35,7 +35,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "remark-jargon": "^2.21.0-rc.0"
+    "remark-jargon": "^2.21.0-rc.1"
   },
   "devDependencies": {},
   "files": [

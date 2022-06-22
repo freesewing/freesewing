@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/strapi",
-  "version": "2.21.0-rc.0",
+  "version": "2.21.0-rc.1",
   "description": "Freesewing's Strapi instance",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://posts.freesewing.org/",
@@ -30,20 +30,18 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "peerDependencies": {},
   "dependencies": {
     "strapi": "3.6.10",
     "strapi-admin": "3.6.10",
-    "strapi-utils": "3.6.10",
-    "strapi-plugin-content-type-builder": "3.6.10",
+    "strapi-connector-mongoose": "3.6.10",
     "strapi-plugin-content-manager": "3.6.10",
-    "strapi-plugin-users-permissions": "3.6.10",
+    "strapi-plugin-content-type-builder": "3.6.10",
     "strapi-plugin-email": "3.6.10",
-    "strapi-plugin-upload": "3.6.10",
     "strapi-plugin-i18n": "3.6.10",
-    "strapi-connector-mongoose": "3.6.10"
+    "strapi-plugin-upload": "3.6.10",
+    "strapi-plugin-users-permissions": "3.6.10",
+    "strapi-utils": "3.6.10"
   },
-  "devDependencies": {},
   "files": [],
   "publishConfig": {},
   "engines": {
