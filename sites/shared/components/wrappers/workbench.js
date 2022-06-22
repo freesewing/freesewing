@@ -47,7 +47,7 @@ const defaultGist = (design, locale='en') => {
 }
 
 const hasRequiredMeasurements = (design, gist) => {
-  for (const m of design.config.measurements) {
+  for (const m of design.config.measurements || []) {
     if (!gist?.measurements?.[m]) return false
   }
 
