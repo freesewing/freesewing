@@ -10,7 +10,7 @@ function useTheme() {
     if (ready && storedTheme === undefined) {
       const prefersDarkMode = (typeof window !== 'undefined' && typeof window.matchMedia === 'function')
         ? window.matchMedia(`(prefers-color-scheme: dark`).matches
-        : null
+        : undefined
 
       setStoredTheme(prefersDarkMode ? 'dark' : 'light')
     }
