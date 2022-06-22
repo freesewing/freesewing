@@ -10,50 +10,31 @@ import DesignIcon from 'shared/components/icons/design.js'
 import BoxIcon from 'shared/components/icons/box.js'
 import CogIcon from 'shared/components/icons/cog.js'
 import Layout from 'site/components/layouts/bare'
+import Popout from 'shared/components/popout'
 import { PageTitle, Breadcrumbs } from 'site/components/wrappers/layout'
+import availableVersions from 'site/available-versions.json'
 
-const links = (section, list, version) => list.map(design => (
-  <li key={design} className="">
-    <Link href={formatVersionUri(version, design)}>
-      <a className="text-secondary text-xl capitalize">{design}</a>
-    </Link>
-  </li>
-))
-
-export const default_icons = {
-  accessories: (className='') => <TutorialIcon className={className}/>,
-  blocks: (className='') => <BoxIcon className={className}/>,
-  garments: (className='') => <DesignIcon className={className}/>,
-  utilities: (className='') => <CogIcon className={className}/>,
-}
-
-const Section = ({ section, version, patterns, icons }) => {
+const DesignLinks = ({ list, prefix='', version=false }) => {
   const { t } = useTranslation(['patterns'])
-  return patterns.map(design => (
-    <Link href={design.__slug} key={design.__order}>
-      <a className={`
-        text-secondary border rounded-lg
-        flex flex-col gap-1 px-4 py-2 grow justify-between text-2xl
-        md:text-4xl
-        lg:text-4xl
-        xl:text-6xl
-        2xl:text-7xl
-        hover:border hover:border-secondary hover:bg-secondary hover:bg-opacity-10
-        shadow
-      `}>
-        <div className="flex flex-row items-center justify-items-start w-full">
-          <span className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-bold grow capitalize">
-            {design.__title}
-          </span>
-          {icons[section] && icons[section]("w-12 h-12 md:h-20 md:w-20 xl:w-32 xl:h-32 shrink-0")}
-        </div>
-          <span className="text-xl md:text-2xl xl:text-3xl pb-2 xl:pb-4 2xl:text-4xl">{t(`patterns:${design.__order}.d`)}</span>
-      </a>
-    </Link>
-  ))
+
+  return (
+    <ul className="flex flex-col flex-wrap gap-2">
+      {list.map( d => (
+        <li key={d} className="p-2">
+          <Link href={`${prefix}/${d}`}>
+            <a className="capitalize text-xl p-4 font-bold text-secondary hover:text-secondary-focus hover:underline">
+              {t(`patterns:${d}.t`)}
+              <br />
+              <span className="text-lg font-normal p-4 text-base-content">{t(`patterns:${d}.d`)}</span>
+            </a>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
 }
 
-const PatternListPageTemplate = ({ section=false, version=false, icons=default_icons }) => {
+const PatternListPageTemplate = ({ section=false, version=false }) => {
   const app = useApp()
   const { t } = useTranslation(['app'])
 
@@ -61,40 +42,44 @@ const PatternListPageTemplate = ({ section=false, version=false, icons=default_i
     ? app.navigation[section].__title
     : t('designs')
 
-  const sectionPatterns = section ? Object.values(app.navigation[section]).filter((o)=> typeof o == 'object') : [];
+  const sectionDesigns = (section=false, version=false) => {
+    if (!section) {
+      const all = []
+      if (!version || version === 'next') {
+        for (const section in app.designs) all.push(...app.designs[section])
+        return all
+      }
+      else if (availableVersions[version]) return availableVersions[version]
+    } else {
+      if (!version || version === 'next') return app.designs[section]
+      else if (availableVersions[version]) return  availableVersions[version]
+    }
+
+    return []
+  }
 
   return (
     <Page app={app} title={`FreeSewing Lab: ${formatVersionTitle(version)}`} layout={Layout}>
-      <Head>
-        <meta property="og:title" content="lab.FreeSewing.dev" key="title" />
-        <meta property="og:type" content="article" key='type' />
-        <meta property="og:description" content="The FreeSewing lab is an online test environment for all our patterns" key='description' />
-        <meta property="og:article:author" content='Joost De Cock' key='author' />
-        <meta property="og:image" content="https://canary.backend.freesewing.org/og-img/en/lab/" key='image' />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://lab.freesewing.dev/" key='url' />
-        <meta property="og:locale" content="en_US" key='locale' />
-        <meta property="og:site_name" content="lab.freesewing.dev" key='site' />
-      </Head>
       <div className="max-w-7xl m-auto py-20 md:py-36 min-h-screen">
         <section className="px-8">
           <PageTitle app={app} slug={section ? app.navigation[section].__slug : '/' } title={title} />
-            { section
+            {version && version !== 'next'
               ? (
-                <div className="flex flex-row flex-wrap gap-4 items-center justify-center my-8">
-                  <Section section={section} version={version} patterns={sectionPatterns} icons={icons} />
-                </div>
+                  <ul className="flex flex-col flex-wrap gap-2">
+                    {availableVersions[version].map( d => (
+                      <li key={d} className="p-2">
+                        <Link href={`/v/${version}/${d}`}>
+                          <a className="capitalize text-xl p-4 font-bold text-secondary hover:text-secondary-focus hover:underline">
+                            {t(`patterns:${d}.t`)}
+                            <br />
+                            <span className="text-lg font-normal p-4 text-base-content">{t(`patterns:${d}.d`)}</span>
+                          </a>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
               )
-              : Object.keys(app.patterns).map(section => (
-                <div key={section} className="mb-12">
-                  <h2 className="pb-0">{app.navigation[section].__title}</h2>
-                  <div className="flex flex-row flex-wrap gap-4 items-center justify-center my-8">
-                    <Section {...{section, version, icons}} patterns={sectionPatterns} />
-                  </div>
-                </div>
-              ))
+              : <DesignLinks list={sectionDesigns(section)} />
             }
         </section>
       </div>
