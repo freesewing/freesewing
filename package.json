@@ -78,7 +78,7 @@
     "@svgr/rollup": "^6.2.0",
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.18",
-    "@types/react": "^17.0.38",
+    "@types/react": "^18.0.8",
     "all-contributors-cli": "^6.20.0",
     "ava": "^4.0.1",
     "axios": "^0.25.0",
