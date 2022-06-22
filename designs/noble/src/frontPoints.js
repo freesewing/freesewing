@@ -195,7 +195,6 @@ export default function (part) {
     points.bust,
     1 + (1 - options.upperDartLength) + (1 - options.waistDartLength) * dartRatio
   )
-  // points.shoulderDartTipCpDownOutside = points.shoulderDartTipCpDownOutside.rotate( options.dartOutsideCP *10, points.shoulderDartOutside )
 
   points.shoulderDartTipCpDownInside = points.shoulderDartInside.shiftFractionTowards(
     points.shoulderDartTip,
