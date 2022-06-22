@@ -32,7 +32,6 @@ export const list = [
   'jaeger',
   'lucy',
   'lunetius',
-  'noble',
   'paco',
   'penelope',
   'sandy',
@@ -94,4 +93,4 @@ export const withoutBreasts = [
   'yuri',
 ]
 
-export const withBreasts = ['bee', 'bella', 'breanna', 'cathrin', 'carlita', 'diana', 'noble', 'simone']
+export const withBreasts = ['bee', 'bella', 'breanna', 'cathrin', 'carlita', 'diana', 'simone']
