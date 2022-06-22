@@ -11,7 +11,7 @@ const Option = props => {
   const type = optionType(opt)
   const Input = inputs[type]
   const Value = values[type]
-  const hide = opt.hide && opt.hide(props.draft.settings.options);
+  const hide = opt.hide && opt.hide(props.draft.settings);
 
   if (hide) {
     return <Li></Li>
