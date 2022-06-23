@@ -3,9 +3,9 @@ import Error from './error.js'
 import Robot from 'shared/components/robot/index.js'
 
 const LabDraft = props => {
-  const { app, draft, design, gist, updateGist, unsetGist, showInfo, feedback } = props
+  const { app, draft, design, gist, updateGist, unsetGist, showInfo, feedback, hasRequiredMeasurements } = props
 
-  if (!draft) return null
+  if (!draft || !hasRequiredMeasurements) return null
 
   // Render as SVG
   if (gist?.renderer === 'svg') {
