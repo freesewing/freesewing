@@ -16,14 +16,19 @@ const defaultGist = (design, locale='en') => {
   return gist
 }
 
+// generate the gist state and its handlers
 export function useGist(design, app) {
+	// get the localstorage state and setter
 	const [gist, _setGist, gistReady] = useLocalStorage(`${design.config.name}_gist`, defaultGist(design, app.locale));
 
 
+	/** apply new gist values onto existing gist */
 	const setGist = (newGist) => {
+		// setters that are passed a function always use the latest state value, so these don't need to be memoized
 		_setGist((gistState) => ({...gistState, ...newGist}))
 	}
 
+	/** update a single gist value */
 	const updateGist = (path, value) => {
 		_setGist((gistState) => {
 			const newGist = {...gistState};
@@ -32,6 +37,7 @@ export function useGist(design, app) {
 		})
 	}
 
+	/** unset a single gist value */
 	const unsetGist = (path) => {
     _setGist((gistState) => {
     	const newGist = {... gistState};
@@ -40,10 +46,12 @@ export function useGist(design, app) {
     })
   }
 
+  /** replace the entire gist with the given gist */
   const replaceGist = (newGist) => {
   	_setGist(newGist);
   }
 
+  /** reset to the default gist */
   const clearGist = () => {
   	replaceGist(defaultGist(design, gist.locale))
   }
