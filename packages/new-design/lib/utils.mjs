@@ -107,7 +107,16 @@ const copyTemplate = async (config, choices) => {
 
   // Template files
   for (const from of config.files.template) {
-    const to = join(config.dest, from.slice(config.source.template.length -7))
+    /*
+     * We can't include a package.json file in the templates
+     * because doing so will prevent NPM from including those folders
+     * in our package. So we use _package.json, and if we see that we
+     * rename it here to package.json
+     */
+    let to = join(config.dest, from.slice(config.source.template.length -7))
+    if (to.slice(-13) === '_package.json') {
+      to = to.slice(0, -13) + 'package.json'
+    }
     if (!dirs[to]) await ensureDir(to)
     if ([ 'config.js', 'kage.json'].indexOf(from.slice(-9)) !== -1) {
       // Template out file rather than coy it
