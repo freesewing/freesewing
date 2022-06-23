@@ -1,7 +1,6 @@
 import path from 'path'
 import chalk from 'chalk'
-import commander from 'commander'
-import { banner } from '../../../scripts/banner.mjs'
+import { banner } from './banner.mjs'
 import {
   checkNodeVersion,
   getChoices,

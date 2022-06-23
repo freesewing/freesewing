@@ -1,4 +1,4 @@
-export default function (part) {
+export default (part) => {
   const {
     Point, points,
     Path, paths,

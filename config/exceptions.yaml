@@ -76,6 +76,8 @@ packageJson:
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
   new-design:
+    bin:
+      "@freesewing/new-design": "dist/index.js"
     files:
       - README.md
       - package.json
@@ -85,8 +87,7 @@ packageJson:
       - templates/**/*
       - index.mjs
       - package.json
-    bin:
-      "@freesewing/new-design": "index.mjs"
+    module: '!'
 
   noble:
     author: woutervdub (https://github.com/woutervdub)
