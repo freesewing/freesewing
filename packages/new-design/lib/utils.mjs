@@ -174,9 +174,12 @@ const initGitRepo = async (config, choices) => {
 const showTips = (config, choices) => console.log(`
   All done 🤓 Your new design ${chalk.yellow.bold(choices.name)} was initialized in: ${chalk.green.bold(config.dest)}
 
+  The code for your design is in the ${chalk.yellow.bold('design')} folder.
+  The other files and folders are the development environment. You can safely ignore those.
+
   To start your development environment, follow these three steps:
 
-    1) Start by entering the directory: ${chalk.blue('cd ' + config.dest)}
+    1) Start by entering the directory: ${chalk.blue.bold('cd ' + config.dest)}
     2) Then run this command: ${chalk.blue.bold((choices.manager === 'yarn' ? 'yarn dev' : 'npm run dev'))}
     3) Now open your browser and navigate to ${chalk.green('http://localhost:8000/')}
 

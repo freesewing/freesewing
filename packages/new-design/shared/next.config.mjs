@@ -18,7 +18,7 @@ const config = {
     // Aliases
     config.resolve.alias.shared = path.resolve('./shared/')
     config.resolve.alias.site = path.resolve('./lab/')
-    config.resolve.alias.design = path.resolve('./')
+    config.resolve.alias.design = path.resolve('./design/')
 
     return config
   }
