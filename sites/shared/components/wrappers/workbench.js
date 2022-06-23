@@ -47,7 +47,7 @@ const hasRequiredMeasurementsMethod = (design, gist) => {
 const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const [gist, setGist, gistReady] = useGist(design, app);
+  const {gist, setGist, unsetGist, clearGist, gistReady} = useGist(design, app);
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
 
@@ -79,10 +79,6 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     // Force close of menu on mobile if it is open
     if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
   }, [app])
-
-  const unsetGist = (path) => {
-    setGist({path, type: 'unset'})
-  }
 
   // Helper methods to handle messages
   const feedback = {
@@ -118,6 +114,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     updateGist,
     unsetGist,
     setGist,
+    clearGist,
     draft,
     feedback,
     gistReady,

@@ -61,7 +61,7 @@ const View = props => {
     {
       name: 'clear',
       title: t('clearThing', { thing: 'YAML' }),
-      onClick: () => props.setGist(defaultSettings)
+      onClick: () => props.clearGist()
     },
   ]
 

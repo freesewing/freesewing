@@ -25,6 +25,9 @@ function reducer(gistState, {path, value, type='set'}) {
 		case 'unset' :
 			unset(newGist, path);
 			break;
+		case 'merge' :
+			Object.assign(newGist, value);
+			break;
 		default:
 			set(newGist, path, value);
 	}
@@ -32,5 +35,19 @@ function reducer(gistState, {path, value, type='set'}) {
 }
 
 export function useGist(design, app) {
-	return useLocalStorage(`${design.config.name}_gist`, defaultGist(design, app.locale), reducer);
+	const [gist, setGist, gistReady] = useLocalStorage(`${design.config.name}_gist`, defaultGist(design, app.locale), reducer);
+
+	const unsetGist = (path) => {
+    setGist({path, type: 'unset'})
+  }
+
+  const replaceGist = (newGist) => {
+  	setGist({type: 'replace', value: newGist});
+  }
+
+  const clearGist = () => {
+  	replaceGist(defaultGist(design, gist.locale))
+  }
+
+  return {gist, setGist, unsetGist, replaceGist, clearGist, gistReady};
 }
