@@ -11,25 +11,26 @@ import measurementAsMm from '@freesewing/utils/measurementAsMm'
  * m holds the measurement name. It's just so long to type
  * measurement and I always have some typo in it because dyslexia.
  */
-const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
+const MeasurementInput = ({ m, gist, app, updateMeasurements, focus }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
 
   const isDegree = isDegreeMeasurement(m);
-  const factor = useMemo(() => (isDegree ? 1 : (gist?.units == 'imperial' ? 25.4 : 10)), [gist?.units])
+  const factor = useMemo(() => (isDegree ? 1 : (gist.units == 'imperial' ? 25.4 : 10)), [gist.units])
 
   const isValValid = val => (typeof val === 'undefined' || val === '')
       ? null
-      : val !== false && !isNaN(val)
+      : val != false && !isNaN(val)
   const isValid = (newVal) => (typeof newVal === 'undefined')
     ? isValValid(val)
     : isValValid(newVal)
 
-  const [val, setVal] = useState(gist?.measurements?.[m] / factor || '')
+  const [val, setVal] = useState(gist.measurements?.[m] / factor || '')
 
   // keep a single reference to a debounce timer
   const debounceTimeout = useRef(null);
+  const input = useRef(null);
 
   // onChange
   const update = useCallback((evt) => {
@@ -38,7 +39,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
     // set Val immediately so that the input reflects it
     setVal(evtVal)
 
-    let useVal = isDegree ? evtVal : measurementAsMm(evtVal, gist?.units);
+    let useVal = isDegree ? evtVal : measurementAsMm(evtVal, gist.units);
     const ok = isValid(useVal)
     // only set to the gist if it's valid
     if (ok) {
@@ -50,14 +51,14 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
         updateMeasurements(useVal, m)
       }, 500);
     }
-  }, [gist?.units])
+  }, [gist.units])
 
   // use this for better update efficiency
   // FIXME: This breaks gist updates.
   // See: https://github.com/freesewing/freesewing/issues/2281
-  const memoVal = gist?.measurements?.[m] //useMemo(() => gist?.measurements?.[m], [gist])
+  const memoVal = useMemo(() => gist.measurements?.[m], [gist])
   // track validity against the value and the units
-  const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist?.units)), [val, gist?.units])
+  const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist.units)), [val, gist.units])
 
   // hook to update the value or format when the gist changes
   useEffect(() => {
@@ -68,8 +69,17 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
       }
   }, [memoVal, factor])
 
+  // focus when prompted by parent
+  useEffect(() => {
+    if (focus) {
+      input.current.focus();
+    }
+  }, [focus])
+
   // cleanup
-  useEffect(() => clearTimeout(debounceTimeout.current), [])
+  useEffect(() => {
+    clearTimeout(debounceTimeout.current)
+  }, [])
 
   if (!m) return null
 
@@ -89,6 +99,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
       <label className="input-group input-group-lg">
         <input
           key={`input-${m}`}
+          ref={input}
           type="text"
           placeholder={title}
           className={`

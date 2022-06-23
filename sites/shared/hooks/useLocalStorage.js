@@ -1,36 +1,35 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useReducer } from 'react'
 
 // See: https://usehooks.com/useLocalStorage/
-function useLocalStorage(key, initialValue) {
+function useLocalStorage(key, initialValue, reducer) {
   const prefix = 'fs_'
-  const [storedValue, setStoredValue] = useState(initialValue);
+  const [storedValue, setStoredValue] = typeof reducer == 'function' ? useReducer(reducer, initialValue) : useState(initialValue);
   // use this to track whether it's mounted. useful for doing other effects outside this hook
   const [ready, setReady] = useState(false);
   const readyInternal = useRef(false);
+  const setValue = setStoredValue
 
-  const setValue = function (value) {
-    if (!readyInternal.current) {
-      return null
+  // set to localstorage every time the storedValue changes
+  useEffect(() => {
+    if (readyInternal.current) {
+      window.localStorage.setItem(prefix + key, JSON.stringify(storedValue))
     }
-
-    try {
-      const valueToStore = value instanceof Function ? value(storedValue) : value
-      setStoredValue(valueToStore)
-      window.localStorage.setItem(prefix + key, JSON.stringify(valueToStore))
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  }, [storedValue])
 
   // get the item from localstorage after the component has mounted. empty brackets mean it runs one time
   useEffect(() => {
     readyInternal.current = true;
     const item = window.localStorage.getItem(prefix + key)
+    let valueToSet = storedValue;
     if (item) {
-      setValue(JSON.parse(item));
-    } else if (storedValue) {
-      setValue(storedValue)
+      valueToSet = JSON.parse(item)
     }
+
+    if (reducer) {
+      valueToSet = {value: valueToSet, type: 'replace'}
+    }
+
+    setValue(valueToSet)
     setReady(true);
   }, [])
 
