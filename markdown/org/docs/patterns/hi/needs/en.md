@@ -17,5 +17,4 @@ This list is based on a default Hi and you may need less or more fabric dependan
 
 For instance a 500% Hi will need 5 meters (1 meter x 500%  = 5 meters) and a 50% Hi will need 0.5 meters (1 meter x 50% = 0.5 meters).
 
-
 </Note>
