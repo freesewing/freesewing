@@ -1,11 +1,16 @@
 import Markdown from 'react-markdown'
 import { formatMm } from 'shared/utils'
 
+const Error = ({err}) => (
+  <code className="block">
+    {err.toString()}
+  </code>
+)
+
 // Markdown wrapper to suppress creation of P tags
 const Md = ({ children }) => <Markdown components={{ p: props => props.children }}>{children}</Markdown>
 
 const Event = ({ evt, units }) => {
-  console.log(units)
   if (Array.isArray(evt)) {
     if (evt[1]?.mm) return <span dangerouslySetInnerHTML={{
       __html: `${evt[0]}: <strong>${formatMm(evt[1].mm, units, 'html')}</strong>`
@@ -13,7 +18,8 @@ const Event = ({ evt, units }) => {
     else return evt.map(e => <Event evt={e} key={e} />)
   }
 
-  if (typeof evt === 'string') return <Md>{evt}</Md>
+  else if (evt.message) return <Error err={evt} />
+  else if (typeof evt === 'string') return <Md>{evt}</Md>
 
   return <Md>Note a recognized event: {JSON.stringify(evt, null ,2)}</Md>
 }
