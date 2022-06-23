@@ -170,6 +170,28 @@ const initGitRepo = async (config, choices) => {
   )
 }
 
+// Tips
+const showTips = (config, choices) => console.log(`
+  All done 🤓 Your new design ${chalk.yellow.bold(choices.name)} was initialized in: ${chalk.green.bold(config.dest)}
+
+  To start your development environment, follow these three steps:
+
+    1) Start by entering the directory: ${chalk.blue('cd ' + config.dest)}
+    2) Then run this command: ${chalk.blue.bold((choices.manager === 'yarn' ? 'yarn dev' : 'npm run dev'))}
+    3) Now open your browser and navigate to ${chalk.green('http://localhost:8000/')}
+
+  ${chalk.bold.yellow('🤔 More info & help')}
+  ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
+
+  FreeSewing's documentation for developers is available at: ${chalk.green('https://freesewing.dev/')}
+
+  Our community is on Discord: ${chalk.green('https://discord.freesewing.dev/')}
+  The ${chalk.bold('development-help')} channel is a good place to ask for help if you get stuck
+
+
+  Happy hacking 🤓
+`)
+
 
 // Creates the environment based on the user's choices
 export const createEnvironment = async (choices) => {
@@ -235,5 +257,7 @@ export const createEnvironment = async (choices) => {
     }
   )
 
+  // All done. Show tips
+  showTips(config, choices)
 }
 

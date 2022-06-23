@@ -36,7 +36,7 @@ export default (part) => {
     // Add some text
     points.text = points.logo
       .shift(-90, w / 8)
-      .attr('data-text', 'hello')
+      .attr('data-text', 'FreeSewing')
       .attr('data-text-class', 'center')
 
     if (sa) {
