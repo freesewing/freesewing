@@ -9,7 +9,7 @@ const defaultGist = (design, locale='en') => {
   design: design.config.name,
   version: design.config.version,
   ...defaultSettings,
-  _state: {view: 'measurements'}
+  _state: {view: 'draft'}
   }
   if (locale) gist.locale = locale
 
