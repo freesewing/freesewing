@@ -109,8 +109,8 @@ const copyTemplate = async (config, choices) => {
   for (const from of config.files.template) {
     const to = join(config.dest, from.slice(config.source.template.length -7))
     if (!dirs[to]) await ensureDir(to)
-    if (extname(from) === '.json') {
-      // Template out package.json
+    if ([ 'config.js', 'kage.json'].indexOf(from.slice(-9)) !== -1) {
+      // Template out file rather than coy it
       const src = await readFile(from, 'utf-8')
       promises.push(
         writeFile(to, mustache.render(src, { name: choices.name }))
@@ -218,44 +218,52 @@ export const createEnvironment = async (choices) => {
   console.log()
 
   // Copy/Template files
-  await oraPromise(
-    copyTemplate(config, choices),
-    {
-      text: chalk.white.bold('🟨⬜⬜⬜  Copying template files')+chalk.white.dim('   |  Just a moment'),
-      successText: chalk.white.bold('🟩⬜⬜⬜  Copied template files'),
-      failText: chalk.white.bold(' ⚠️   Failed to copy template files'),
-    }
-  )
+  try {
+    await oraPromise(
+      copyTemplate(config, choices),
+      {
+        text: chalk.white.bold('🟨⬜⬜⬜  Copying template files')+chalk.white.dim('   |  Just a moment'),
+        successText: chalk.white.bold('🟩⬜⬜⬜  Copied template files'),
+        failText: chalk.white.bold('🟥⬜⬜⬜  Failed to copy template files  |  Development environment will not function'),
+      }
+    )
+  } catch (err) { /* no feedback here */ }
 
   // Install dependencies
-  await oraPromise(
-    installDependencies(config, choices),
-    {
-      text: chalk.white.bold('🟩🟨⬜⬜  Installing dependencies')+chalk.white.dim('  |  Please wait, this will take a while'),
-      successText: chalk.white.bold('🟩🟩⬜⬜  Installed dependencies'),
-      failText: chalk.white.bold('  ⚠️   Failed to install dependencies'),
-    }
-  )
+  try {
+    await oraPromise(
+      installDependencies(config, choices),
+      {
+        text: chalk.white.bold('🟩🟨⬜⬜  Installing dependencies')+chalk.white.dim('  |  Please wait, this will take a while'),
+        successText: chalk.white.bold('🟩🟩⬜⬜  Installed dependencies'),
+        failText: chalk.white.bold('🟩🟥⬜⬜  Failed to install dependencies  |  Development environment will not function'),
+      }
+    )
+  } catch (err) { /* no feedback here */ }
 
   // Fetch web components
-  await oraPromise(
-    downloadLabFiles(config),
-    {
-      text: chalk.white.bold('🟩🟩🟨⬜  Downloading web components')+chalk.white.dim('  |  Almost there'),
-      successText: chalk.white.bold('🟩🟩🟩⬜  Downloaded web components'),
-      failText: chalk.white.bold('  ⚠️   Failed to download web components'),
-    }
-  )
+  try {
+    await oraPromise(
+      downloadLabFiles(config),
+      {
+        text: chalk.white.bold('🟩🟩🟨⬜  Downloading web components')+chalk.white.dim('  |  Almost there'),
+        successText: chalk.white.bold('🟩🟩🟩⬜  Downloaded web components'),
+        failText: chalk.white.bold('🟩🟩🟥⬜  Failed to download web components  |  Development environment will not function'),
+      }
+    )
+  } catch (err) { /* no feedback here */ }
 
   // Initialize git repository
-  await oraPromise(
-    initGitRepo(config, choices),
-    {
-      text: chalk.white.bold('🟩🟩🟩⬜  Initializing git repository')+chalk.white.dim('  |  You have git, right?'),
-      successText: chalk.white.bold('🟩🟩🟩🟩  Initialized git repository'),
-      failText: chalk.white.bold('  ⚠️   Failed to initialize git repository')+chalk.white.dim('  |  This does not stop you from developing your design'),
-    }
-  )
+  try {
+    await oraPromise(
+      initGitRepo(config, choices),
+      {
+        text: chalk.white.bold('🟩🟩🟩⬜  Initializing git repository')+chalk.white.dim('  |  You have git, right?'),
+        successText: chalk.white.bold('🟩🟩🟩🟩  Initialized git repository'),
+        failText: chalk.white.bold('🟩🟩🟩🟥  Failed to initialize git repository')+chalk.white.dim('  |  This does not stop you from developing your design'),
+      }
+    )
+  } catch (err) { /* no git no worries */ }
 
   // All done. Show tips
   showTips(config, choices)
