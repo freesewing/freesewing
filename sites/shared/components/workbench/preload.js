@@ -14,12 +14,15 @@ const preload = {
 
     if (result.data.files['pattern.yaml'].content) {
       let g = yaml.load(result.data.files['pattern.yaml'].content)
-      if (g.design !== pattern.config.name) return [
+
+      if (g.design !== undefined && g.design !== pattern.config.name) return [
         false, `You tried loading a configuration for ${g.design} into a ${pattern.config.name} development environment`
       ]
 
       return g
     }
+
+    // TODO notify people of these errors
     else return [false, 'This gist does not seem to be a valid pattern configuration']
   }
 }
