@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react'
+import React, {useMemo, useEffect, useState} from 'react'
 import MeasurementInput from '../inputs/measurement.js'
 import { withBreasts, withoutBreasts } from '@freesewing/models'
 import nonHuman from './non-human.js'
@@ -27,7 +27,7 @@ const icons = {
   without: <WithoutBreastsIcon />,
 }
 
-const WorkbenchMeasurements = ({ app, design, gist, updateGist }) => {
+const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => {
   const { t } = useTranslation(['app', 'cfp'])
 
   // Method to handle measurement updates
@@ -40,6 +40,20 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist }) => {
       updateGist(['measurements', m], value)
     }
   }
+
+  const [firstInvalid, setFirstInvalid] = useState(undefined)
+
+  useEffect(() => {
+    if (!gistReady) { return }
+    for (const m of design.config?.measurements || []) {
+      if (!gist?.measurements?.[m]) {
+        setFirstInvalid(m);
+        return;
+      }
+
+      setFirstInvalid(undefined)
+    }
+  }, [gistReady])
 
   // Save us some typing
   const inputProps = useMemo(() => ({ app, updateMeasurements, gist }), [app, gist])
@@ -86,7 +100,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist }) => {
         </div>
       </details>
 
-      <details className="my-2">
+      <details open className="my-2">
         <summary><h2 className="inline pl-2">{t('cfp:enterMeasurements')}</h2></summary>
         <Setting key={'units'} setting={'units'} config={settings.units} updateGist={updateGist} {...inputProps} />
         <div className="ml-2 pl-4 border-l-2">
@@ -94,7 +108,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist }) => {
             <>
               <h3>{t('requiredMeasurements')}</h3>
               {design.config.measurements.map(m => (
-                <MeasurementInput key={m} m={m} {...inputProps} />
+                <MeasurementInput key={m} m={m} focus={m == firstInvalid} {...inputProps} />
               ))}
             </>
           )}

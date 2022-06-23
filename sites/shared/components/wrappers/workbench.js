@@ -47,7 +47,7 @@ const hasRequiredMeasurements = (design, gist) => {
 const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const [gist, setGist, ready] = useGist(design, app);
+  const [gist, setGist, gistReady] = useGist(design, app);
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
 
@@ -55,10 +55,10 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   // force view to measurements
   useEffect(() => {
     if (
-      ready && gist._state?.view !== 'measurements'
+      gistReady && gist._state?.view !== 'measurements'
       && !hasRequiredMeasurements(design, gist)
     ) updateGist(['_state', 'view'], 'measurements')
-  }, [ready, gist._state.view])
+  }, [gistReady, gist._state.view])
 
   // If we need to preload the gist, do so
   useEffect(() => {
@@ -109,7 +109,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   }
 
   // Props to pass down
-  const componentProps = { app, design, gist, updateGist, unsetGist, setGist, draft, feedback, showInfo: setPopup }
+  const componentProps = { app, design, gist, updateGist, unsetGist, setGist, draft, feedback, gistReady, showInfo: setPopup }
   // Required props for layout
   const layoutProps = {
     app: app,

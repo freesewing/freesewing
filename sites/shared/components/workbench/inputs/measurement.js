@@ -11,7 +11,7 @@ import measurementAsMm from 'pkgs/utils/src/measurementAsMm'
  * m holds the measurement name. It's just so long to type
  * measurement and I always have some typo in it because dyslexia.
  */
-const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
+const MeasurementInput = ({ m, gist, app, updateMeasurements, focus }) => {
   const { t } = useTranslation(['app', 'measurements'])
   const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
@@ -30,6 +30,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
 
   // keep a single reference to a debounce timer
   const debounceTimeout = useRef(null);
+  const input = useRef(null);
 
   // onChange
   const update = useCallback((evt) => {
@@ -68,8 +69,17 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
       }
   }, [memoVal, factor])
 
+  // focus when prompted by parent
+  useEffect(() => {
+    if (focus) {
+      input.current.focus();
+    }
+  }, [focus])
+
   // cleanup
-  useEffect(() => clearTimeout(debounceTimeout.current), [])
+  useEffect(() => {
+    clearTimeout(debounceTimeout.current)
+  }, [])
 
   if (!m) return null
 
@@ -89,6 +99,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements }) => {
       <label className="input-group input-group-lg">
         <input
           key={`input-${m}`}
+          ref={input}
           type="text"
           placeholder={title}
           className={`
