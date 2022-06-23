@@ -15,11 +15,8 @@ const CoreSettingMm = props => {
 
     setValue(newVal)
     if (props.gist.sa) props.setGist({
-      type: 'merge',
-      value: {
-        saMm: newVal,
-        sa: newVal,
-      }
+      saMm: newVal,
+      sa: newVal,
     })
     else props.updateGist(['saMm'], newVal)
   }

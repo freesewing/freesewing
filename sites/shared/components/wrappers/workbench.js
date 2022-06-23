@@ -47,7 +47,7 @@ const hasRequiredMeasurementsMethod = (design, gist) => {
 const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const {gist, setGist, unsetGist, clearGist, gistReady} = useGist(design, app);
+  const {gist, setGist, unsetGist, clearGist, updateGist, gistReady} = useGist(design, app);
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
 
@@ -67,15 +67,15 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     const doPreload = async () => {
       if (preload && from && preloaders[from]) {
         const g = await preloaders[from](preload, design)
-        setGist({value: { ...gist, ...g.settings }, type: 'replace'})
+        setGist({...g.settings})
       }
     }
     doPreload();
   }, [preload, from])
 
   // Helper methods to manage the gist state
-  const updateGist = useMemo(() => (path, value, closeNav=false) => {
-    setGist({path, value})
+  const updateWBGist = useMemo(() => (path, value, closeNav=false) => {
+    updateGist(path, value)
     // Force close of menu on mobile if it is open
     if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
   }, [app])
@@ -111,7 +111,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     app,
     design,
     gist,
-    updateGist,
+    updateGist: updateWBGist,
     unsetGist,
     setGist,
     clearGist,

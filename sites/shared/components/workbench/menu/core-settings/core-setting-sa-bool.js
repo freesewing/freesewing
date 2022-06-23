@@ -9,11 +9,8 @@ const CoreSettingSaBool = props => {
 
   const toggle = () => {
     props.setGist({
-      type: 'merge',
-      value: {
-        saBool: !value,
-        sa: value ? 0 : props.gist.saMm
-      }
+      saBool: !value,
+      sa: value ? 0 : props.gist.saMm
     })
     setValue(!value)
   }

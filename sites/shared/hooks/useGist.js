@@ -16,38 +16,37 @@ const defaultGist = (design, locale='en') => {
   return gist
 }
 
-function reducer(gistState, {path, value, type='set'}) {
-	const newGist = {... gistState};
-
-	switch(type) {
-		case 'replace' :
-			return value;
-		case 'unset' :
-			unset(newGist, path);
-			break;
-		case 'merge' :
-			Object.assign(newGist, value);
-			break;
-		default:
-			set(newGist, path, value);
-	}
-	return newGist;
-}
-
 export function useGist(design, app) {
-	const [gist, setGist, gistReady] = useLocalStorage(`${design.config.name}_gist`, defaultGist(design, app.locale), reducer);
+	const [gist, _setGist, gistReady] = useLocalStorage(`${design.config.name}_gist`, defaultGist(design, app.locale));
+
+
+	const setGist = (newGist) => {
+		_setGist((gistState) => ({...gistState, ...newGist}))
+	}
+
+	const updateGist = (path, value) => {
+		_setGist((gistState) => {
+			const newGist = {...gistState};
+			set(newGist, path, value);
+			return newGist;
+		})
+	}
 
 	const unsetGist = (path) => {
-    setGist({path, type: 'unset'})
+    _setGist((gistState) => {
+    	const newGist = {... gistState};
+    	unset(newGist, path);
+    	return newGist;
+    })
   }
 
   const replaceGist = (newGist) => {
-  	setGist({type: 'replace', value: newGist});
+  	_setGist(newGist);
   }
 
   const clearGist = () => {
   	replaceGist(defaultGist(design, gist.locale))
   }
 
-  return {gist, setGist, unsetGist, replaceGist, clearGist, gistReady};
+  return {gist, setGist, unsetGist, replaceGist, clearGist, gistReady, updateGist};
 }
