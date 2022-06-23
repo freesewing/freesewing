@@ -148,6 +148,15 @@ mui-theme:
     '@material-ui/core': *matui-core
     'react': *react
     'react-dom': '^17.0.2'
+new-design:
+  _:
+    "axios": "^0.27.2"
+    "chalk": "^5.0.1"
+    "execa": "^6.1.0"
+    "mustache": "^4.2.0"
+    "ora": "^6.1.0"
+    "prompts": "^2.4.2"
+    "recursive-readdir": "^2.2.2"
 noble:
   peer:
     '@freesewing/bella': *freesewing

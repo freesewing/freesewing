@@ -8,7 +8,14 @@ import prompts from 'prompts'
 import {oraPromise} from 'ora'
 import { execa } from 'execa'
 import axios from 'axios'
+import { fileURLToPath } from 'url';
 
+// Current working directory
+const cwd = __dirname
+  ? __dirname
+  : dirname(fileURLToPath(import.meta.url))
+
+console.log({cwd})
 const nl = "\n"
 const tab = "  "
 const nlt = nl+tab
@@ -93,15 +100,15 @@ const copyTemplate = async (config, choices) => {
 
   // Copy shared files
   for (const from of config.files.shared) {
-    const to = config.dest + from.slice(config.source.shared.length)
+    // FIXME: Explain the -7
+    const to = join(config.dest, from.slice(config.source.shared.length - 7))
     if (!dirs[to]) await ensureDir(to)
-    console.log(to)
     promises.push(copyFile(from, to))
   }
 
   // Template files
   for (const from of config.files.template) {
-    const to = config.dest + from.slice(config.source.template.length)
+    const to = join(config.dest, from.slice(config.source.template.length -7))
     if (!dirs[to]) await ensureDir(to)
     if (extname(from) === '.json') {
       // Template out package.json
@@ -131,7 +138,6 @@ const installDependencies = async (config, choices) => await execa(
 
 // Helper method to download web environment
 const downloadLabFiles = async (config) => {
-  const base = 'https://raw.githubusercontent.com'
   const promises = []
   for (const dir in config.fetch) {
     for (const file of config.fetch[dir]) {
@@ -139,9 +145,8 @@ const downloadLabFiles = async (config) => {
         ? join(config.dest, file)
         : join(config.dest, file.to)
       if (!dirs[to]) await ensureDir(to)
-      console.log(to)
       promises.push(
-        axios.get(`${base}/${config.repo}/${config.branch}/${dir}/${typeof file === 'string' ? file : file.from}`)
+        axios.get(`${config.fileUri}/${config.repo}/${config.branch}/${dir}/${typeof file === 'string' ? file : file.from}`)
         .catch(err => console.log(err))
         .then(res => promises.push(writeFile(to, res.data)))
       )
@@ -157,13 +162,13 @@ const downloadLabFiles = async (config) => {
 export const createEnvironment = async (choices) => {
 
   // Store directories for re-use
-  config.cwd = process.cwd()
+  config.cwd = cwd,
   config.source = {
-    root: dirname(process.argv[1]),
-    template: dirname(process.argv[1]) + `/templates/from-${choices.template}`,
-    shared: dirname(process.argv[1]) + `/shared`
+    root: cwd,
+    template: cwd + `/../templates/from-${choices.template}`,
+    shared: cwd + `/../shared`
   }
-  config.dest = join(config.cwd, choices.name)
+  config.dest = join(process.cwd(), choices.name)
 
   // Create target directory
   await mkdir(config.dest, { recursive: true })
@@ -175,18 +180,33 @@ export const createEnvironment = async (choices) => {
   }
 
   // Copy/Template files
-  await copyTemplate(config, choices)
+  await oraPromise(
+    copyTemplate(config, choices),
+    {
+      text: chalk.white.bold(' 🟨⬜⬜  Copying template files')+chalk.white.dim('   |  Just a moment'),
+      successText: chalk.white.bold(' 🟩⬜⬜  Copied template files'),
+      failText: chalk.white.bold(' 🟥⬜⬜  Failed to copy template files'),
+    }
+  )
 
   // Install dependencies
   await oraPromise(
     installDependencies(config, choices),
-    chalk.white.bold('Installing dependencies')+chalk.white.dim(' (This will take a while)')
+    {
+      text: chalk.white.bold(' 🟩🟨⬜  Installing dependencies')+chalk.white.dim('  |  Please wait, this will take a while'),
+      successText: chalk.white.bold(' 🟩🟩⬜  Installed dependencies'),
+      failText: chalk.white.bold(' 🟩🟥⬜  Failed to install dependencies'),
+    }
   )
 
   // Fetch web components
   await oraPromise(
     downloadLabFiles(config),
-    chalk.white.bold('Downloading web components')+chalk.white.dim(' (This too will take a while)')
+    {
+      text: chalk.white.bold(' 🟩🟩🟨  Downloading web components')+chalk.white.dim('  |  Almost there'),
+      successText: chalk.white.bold(' 🟩🟩🟩  Downloaded web components'),
+      failText: chalk.white.bold(' 🟩🟩🟥  Failed to download web components'),
+    }
   )
 
 }

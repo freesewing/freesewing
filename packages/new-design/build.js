@@ -17,8 +17,8 @@ const options = {
   entryPoints: ['index.mjs'],
   external: [],
   metafile: process.env.VERBOSE ? true : false,
-  minify: process.env.NO_MINIFY ? false : true,
-  sourcemap: true,
+  minify: false, //process.env.NO_MINIFY ? false : true,
+  sourcemap: false,
   platform: "node",
 }
 

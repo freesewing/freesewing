@@ -1,5 +1,6 @@
 export const config = {
   node: 14, // Minimum node version
+  fileUri: 'https://raw.githubusercontent.com',
   repo: 'freesewing/freesewing', // Repository to download from
   branch: 'develop', // Branch to download from
   i18n: [
@@ -32,6 +33,7 @@ export const config = {
       "shared/config/postcss.config.js",
       "shared/config/tailwind.config.js",
       "shared/prebuild/contributors.mjs",
+      "shared/hooks/useGist.js",
       "shared/hooks/useLocalStorage.js",
       "shared/hooks/useTheme.js",
       "shared/styles/code.css",
