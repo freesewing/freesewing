@@ -54,8 +54,8 @@ const Error = ({ draft, patternProps, error, updateGist }) => {
         <ul className="list-disc list-inside ml-4 text-xl">
             <li>
               Check the <button className="btn-link" onClick={() => updateGist(['_state', 'view'], 'events')}>
-              <strong>{patternProps.events.error.length} errors</strong> and <strong>
-              {patternProps.events.warning.length} warnings</strong></button>
+              <strong>{patternProps?.events?.error?.length} errors</strong> and <strong>
+              {patternProps?.events?.warning?.length} warnings</strong></button>
             </li>
             <li>Check the partially rendered pattern below to see which areas are problematic</li>
         </ul>
