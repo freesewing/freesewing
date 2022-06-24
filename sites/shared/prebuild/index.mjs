@@ -6,7 +6,7 @@ import { prebuildPatrons } from './patrons.mjs'
 import { prebuildI18n } from './i18n.mjs'
 import { prebuildLab } from './lab.mjs'
 
-const SITE = process.env.SITE
+const SITE = process.env.SITE || 'lab'
 
 const run = async () => {
   if (SITE !== 'lab') {
