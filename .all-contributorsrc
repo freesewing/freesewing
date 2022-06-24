@@ -849,6 +849,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "anna-puk",
+      "name": "anna-puk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100537439?v=4",
+      "profile": "https://github.com/anna-puk",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true
