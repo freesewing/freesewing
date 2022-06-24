@@ -15,7 +15,9 @@ Unreleased:
     benjamin: *esbuild
     bent: *esbuild
     breanna: *esbuild
-    brian: *esbuild
+    brian:
+      - Migrated from Rollup to Esbuild for all builds
+      - Slightly increased the default neck ease
     bruce: *esbuild
     carlita: *esbuild
     carlton: *esbuild
