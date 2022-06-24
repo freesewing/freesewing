@@ -9,7 +9,6 @@ const CoreSettingSaBool = props => {
 
   const toggle = () => {
     props.setGist({
-      ...props.gist,
       saBool: !value,
       sa: value ? 0 : props.gist.saMm
     })

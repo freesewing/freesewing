@@ -43,12 +43,11 @@ i18n:
   test: *test
   testci: *testci
 new-design:
-  prebuild: "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs && cp ../../scripts/banner.mjs ./lib"
+  build: "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs && cp ../../scripts/banner.mjs ./lib && node build.js"
   mbuild: '!'
   test: '!'
   testci: '!'
   vbuild: '!'
-  cibuild_step6: "yarn build"
 pattern-info:
   cibuild_step1: '!'
   build: 'node src/prebuild.js && node build.js'

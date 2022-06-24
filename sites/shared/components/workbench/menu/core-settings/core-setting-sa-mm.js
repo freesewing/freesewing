@@ -15,7 +15,6 @@ const CoreSettingMm = props => {
 
     setValue(newVal)
     if (props.gist.sa) props.setGist({
-      ...props.gist,
       saMm: newVal,
       sa: newVal,
     })

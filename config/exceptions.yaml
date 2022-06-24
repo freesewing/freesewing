@@ -76,8 +76,6 @@ packageJson:
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
   new-design:
-    bin:
-      "@freesewing/new-design": "dist/index.js"
     files:
       - README.md
       - package.json
