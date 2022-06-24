@@ -67,11 +67,11 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     const doPreload = async () => {
       if (preload && from && preloaders[from]) {
         const g = await preloaders[from](preload, design)
-        setGist({...g.settings})
+        setGist({...gist, ...g.settings})
       }
     }
     doPreload();
-  }, [preload, from])
+  }, [preload, from, gist])
 
   // Helper methods to manage the gist state
   const updateWBGist = useMemo(() => (path, value, closeNav=false) => {
