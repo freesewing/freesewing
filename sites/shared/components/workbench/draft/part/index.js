@@ -112,7 +112,7 @@ const XrayPart = props => {
 }
 
 const Part = props => {
-  const { partName, part, app, gist, updateGist } = props
+  const { partName, part, app, gist } = props
 
   const grid = gist.paperless ? (
     <rect
