@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import TextOnPath from '../text-on-path'
 import { getProps } from '../utils'
-import { round } from 'shared/utils'
+import { round, formatMm } from 'shared/utils'
+import RawSpan from 'shared/components/raw-span'
 
 export const pointCoords = point => point
   ? `[ ${round(point.x, 2)}, ${round(point.y, 2)} ]`
@@ -115,11 +116,11 @@ const Line = (props) => {
       <path id={`${id}_x`} {...xyProps}
         d={`M ${topLeft.x},${bottomRight.y} L ${bottomRight.x},${bottomRight.y}`}
       />
-      <TextAlongPath id={`${id}_x`} size={size/18} txt={round(bottomRight.x - topLeft.x, 2)+'mm'} />
+      <TextAlongPath id={`${id}_x`} size={size/18} txt={formatMm(bottomRight.x - topLeft.x, props.gist.units, 'notags')} />
       <path id={`${id}_y`} {...xyProps}
         d={`M ${topLeft.x},${bottomRight.y} L ${topLeft.x},${topLeft.y}`}
       />
-      <TextAlongPath id={`${id}_y`} size={size/18} txt={round(bottomRight.y - topLeft.y, 2)+'mm'} />
+      <TextAlongPath id={`${id}_y`} size={size/18} txt={formatMm(bottomRight.y - topLeft.y, props.gist.units, 'notags')} />
       <path
         id={id}
         d={`M ${from.x},${from.y} L ${to.x},${to.y}`}
@@ -127,7 +128,7 @@ const Line = (props) => {
         strokeLinecap="round"
         strokeWidth={(size/100)}
       />
-      <TextAlongPath id={id} size={size/18} txt={round(props.path.length(), 2)+'mm'} />
+      <TextAlongPath id={id} size={size/18} txt={formatMm(props.path.length(), props.gist.units, 'notags')} />
       <PointCircle point={from} size={size} />
       <PointCircle point={to} size={size} />
     </svg>
@@ -163,11 +164,11 @@ const Curve = (props) => {
       <path id={`${id}_x`} {...xyProps}
         d={`M ${bbox.topLeft.x},${bbox.bottomRight.y} L ${bbox.bottomRight.x},${bbox.bottomRight.y}`}
       />
-      <TextAlongPath id={`${id}_x`} size={size/18} txt={round(bbox.bottomRight.x - bbox.topLeft.x, 2)+'mm'} />
+      <TextAlongPath id={`${id}_x`} size={size/18} txt={formatMm(bbox.bottomRight.x - bbox.topLeft.x, props.gist.units, 'notags')} />
       <path id={`${id}_y`} {...xyProps}
         d={`M ${bbox.topLeft.x},${bbox.bottomRight.y} L ${bbox.topLeft.x},${bbox.topLeft.y}`}
       />
-      <TextAlongPath id={`${id}_y`} size={size/18} txt={round(bbox.bottomRight.y - bbox.topLeft.y, 2)+'mm'} />
+      <TextAlongPath id={`${id}_y`} size={size/18} txt={formatMm(bbox.bottomRight.y - bbox.topLeft.y, props.gist.units, 'notags')} />
       <path id={`${id}_cp1`} {...cpProps} d={`M ${from.x},${from.y} L ${cp1.x},${cp1.y}`} />
       <PointCircle point={cp1} size={size} className="stroke-success" />
       <path id={`${id}_cp2`} {...cpProps} d={`M ${to.x},${to.y} L ${cp2.x},${cp2.y}`} />
@@ -180,7 +181,7 @@ const Curve = (props) => {
         strokeLinecap="round"
         strokeWidth={(size/100)}
       />
-      <TextAlongPath id={id} size={size/18} txt={round(props.path.length(), 2)+'mm'} />
+      <TextAlongPath id={id} size={size/18} txt={formatMm(props.path.length(), props.gist.units, 'notags')} />
       <PointCircle point={from} size={size} />
       <PointCircle point={to} size={size} />
     </svg>
@@ -213,11 +214,11 @@ const MiniPath = props => {
       <path id={`${id}_x`} {...xyProps}
         d={`M ${bbox.topLeft.x},${bbox.bottomRight.y} L ${bbox.bottomRight.x},${bbox.bottomRight.y}`}
       />
-      <TextAlongPath id={`${id}_x`} size={size/18} txt={round(bbox.bottomRight.x - bbox.topLeft.x, 2)+'mm'} />
+      <TextAlongPath id={`${id}_x`} size={size/18} txt={formatMm(bbox.bottomRight.x - bbox.topLeft.x, props.gist.units, 'notags')} />
       <path id={`${id}_y`} {...xyProps}
         d={`M ${bbox.topLeft.x},${bbox.bottomRight.y} L ${bbox.topLeft.x},${bbox.topLeft.y}`}
       />
-      <TextAlongPath id={`${id}_y`} size={size/18} txt={round(bbox.bottomRight.y - bbox.topLeft.y, 2)+'mm'} />
+      <TextAlongPath id={`${id}_y`} size={size/18} txt={formatMm(bbox.bottomRight.y - bbox.topLeft.y, props.gist.units, 'notags')} />
       <path
         id={id}
         d={props.path.asPathstring()}
@@ -226,7 +227,7 @@ const MiniPath = props => {
         strokeLinecap="round"
         strokeWidth={(size/100)}
       />
-      <TextAlongPath id={id} size={size/18} txt={round(props.path.length(), 2)+'mm'} />
+      <TextAlongPath id={id} size={size/18} txt={formatMm(props.path.length(), props.gist.units, 'notags')} />
       <XrayPath {...props} />)
     </svg>
   )
@@ -248,7 +249,19 @@ const lineInfo = (props) => (
           </Tr>
           <Tr>
             <KeyTd>Length</KeyTd>
-            <ValTd>{round(props.path.length(), 2)}mm</ValTd>
+            <ValTd>{formatMm(props.path.length(), props.gist.units, 'notags')}</ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Width</KeyTd>
+            <ValTd>
+              <RawSpan html={formatMm(Math.abs(props.path.ops[0].to.dx(props.path.ops[1].to)), props.gist.units)} />
+            </ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Height</KeyTd>
+            <ValTd>
+              <RawSpan html={formatMm(Math.abs(props.path.ops[0].to.dy(props.path.ops[1].to)), props.gist.units)} />
+            </ValTd>
           </Tr>
           <Tr>
             <KeyTd>Part</KeyTd>
@@ -302,7 +315,21 @@ const curveInfo = (props) => (
           </Tr>
           <Tr>
             <KeyTd>Length</KeyTd>
-            <ValTd>{round(props.path.length(), 2)}mm</ValTd>
+            <ValTd>
+              <RawSpan html={formatMm(props.path.length(), props.gist.units)}/>
+            </ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Width</KeyTd>
+            <ValTd>
+              <RawSpan html={formatMm(Math.abs(props.path.ops[0].to.dx(props.path.ops[1].to)), props.gist.units)}/>
+            </ValTd>
+          </Tr>
+          <Tr>
+            <KeyTd>Height</KeyTd>
+            <ValTd>
+              <RawSpan html={formatMm(Math.abs(props.path.ops[0].to.dy(props.path.ops[1].to)), props.gist.units)}/>
+            </ValTd>
           </Tr>
           <Tr>
             <KeyTd>Part</KeyTd>
@@ -346,15 +373,21 @@ export const pathInfo = (props) => {
               </Tr>
               <Tr>
                 <KeyTd>Length</KeyTd>
-                <ValTd>{round(props.path.length(), 2)}mm</ValTd>
+                <ValTd>
+                  <RawSpan html={formatMm(props.path.length(), props.gist.units)} />
+                </ValTd>
               </Tr>
               <Tr>
                 <KeyTd>Width</KeyTd>
-                <ValTd>{round(bbox.bottomRight.x - bbox.topLeft.x, 2)}mm</ValTd>
+                <ValTd>
+                  <RawSpan html={formatMm(Math.abs(bbox.bottomRight.x - bbox.topLeft.x), props.gist.units)} />
+                </ValTd>
               </Tr>
               <Tr>
                 <KeyTd>Height</KeyTd>
-                <ValTd>{round(bbox.bottomRight.y - bbox.topLeft.y, 2)}mm</ValTd>
+                <ValTd>
+                  <RawSpan html={formatMm(Math.abs(bbox.bottomRight.y - bbox.topLeft.y), props.gist.units)} />
+                </ValTd>
               </Tr>
               <Tr>
                 <KeyTd>Top Left</KeyTd>
