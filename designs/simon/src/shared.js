@@ -44,7 +44,8 @@ export const addButtonHoles = (part, origin) => addButtons(part, origin, 'button
 export const draftBarrelCuff = (part) => {
   const { store, points, measurements, options, Point } = part.shorthand()
   const height = measurements.shoulderToWrist * options.cuffLength
-  const width = measurements.wrist * (1 + options.cuffEase + options.cuffOverlap)
+  const realWidth = measurements.wrist * (1 + options.cuffEase)
+  const width = realWidth * (1 + options.cuffOverlap)
   store.set('cuffHeight', height)
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width, 0)
