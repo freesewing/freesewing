@@ -62,6 +62,7 @@
 #### Changed
 
  - Migrated from Rollup to Esbuild for all builds
+ - Slightly increased the default neck ease
 
 ### titan
 
