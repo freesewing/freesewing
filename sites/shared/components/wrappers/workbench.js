@@ -47,7 +47,7 @@ const hasRequiredMeasurementsMethod = (design, gist) => {
 const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const {gist, setGist, unsetGist, clearGist, updateGist, gistReady} = useGist(design, app);
+  const {gist, setGist, unsetGist, updateGist, gistReady} = useGist(design, app);
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
 
@@ -114,7 +114,6 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     updateGist: updateWBGist,
     unsetGist,
     setGist,
-    clearGist,
     draft,
     feedback,
     gistReady,

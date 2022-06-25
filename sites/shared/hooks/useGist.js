@@ -4,7 +4,7 @@ import unset from 'lodash.unset'
 import defaultSettings from 'shared/components/workbench/default-settings.js'
 
 // Generates a default design gist to start from
-const defaultGist = (design, locale='en') => {
+export const defaultGist = (design, locale='en') => {
   const gist = {
   design: design.config.name,
   version: design.config.version,
@@ -39,10 +39,5 @@ export function useGist(design, app) {
     })
   }
 
-  /** reset to the default gist */
-  const clearGist = () => {
-  	setGist(defaultGist(design, gist.locale))
-  }
-
-  return {gist, setGist, unsetGist, clearGist, gistReady, updateGist};
+  return {gist, setGist, unsetGist, gistReady, updateGist};
 }
