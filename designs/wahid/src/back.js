@@ -111,7 +111,7 @@ export default (part) => {
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)
-        .join(paths.hemBase.offset(sa * 3))
+        .join(paths.hemBase.offset(sa * 1))
         .close()
         .attr('class', 'fabric sa')
     }
