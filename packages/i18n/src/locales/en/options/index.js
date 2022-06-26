@@ -38,6 +38,7 @@ import lunetius from './lunetius.yml'
 import tiberius from './tiberius.yml'
 import walburga from './walburga.yml'
 import bee from './bee.yml'
+import hi from 'hi.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -83,6 +84,7 @@ let patterns = {
   tiberius,
   walburga,
   bee,
+  hi,
 }
 
 let options = {}

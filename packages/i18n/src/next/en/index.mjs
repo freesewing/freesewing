@@ -41,6 +41,7 @@ import o_cornelius from "./o_cornelius.mjs"
 import o_diana from "./o_diana.mjs"
 import o_florence from "./o_florence.mjs"
 import o_florent from "./o_florent.mjs"
+import o_hi from "./o_hi.mjs"
 import o_holmes from "./o_holmes.mjs"
 import o_hortensia from "./o_hortensia.mjs"
 import o_huey from "./o_huey.mjs"
@@ -110,6 +111,7 @@ const allNamespaces = {
   o_diana,
   o_florence,
   o_florent,
+  o_hi,
   o_holmes,
   o_hortensia,
   o_huey,

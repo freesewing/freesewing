@@ -13,7 +13,8 @@ const common = {
   "requiredMeasurements": "Required measurements",
   "showcase": "Showcase",
   "sloganCome": "Come for the sewing patterns",
-  "sloganStay": "Stay for the community"
+  "sloganStay": "Stay for the community",
+  "support": "Support"
 }
 
 export default common
