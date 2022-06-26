@@ -1,12 +1,13 @@
 const fs = require('fs')
 const path = require('path')
 const core = require('../packages/core/dist')
-const theme = require('../packages/plugin-theme/dist')
+const theme = require('../plugins/plugin-theme/dist')
 const pi = require('../packages/pattern-info/dist')
 const models = require('../packages/models/dist')
 const wb32 = models.withBreasts.size32
 const i18n = require('../packages/i18n/dist')
-const capitalize = require('../packages/utils/capitalize')
+let capitalize = require('../packages/utils/capitalize/index.js')
+capitalize = capitalize.default
 
 const missing = []
 const lacking = []
