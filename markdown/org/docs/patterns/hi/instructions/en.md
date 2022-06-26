@@ -1,5 +1,5 @@
 ---
-title: "Hi shark plush toy: Sewing Instructions"
+title: "Hi the shark: Sewing Instructions"
 ---
 
 ## Notes and tips

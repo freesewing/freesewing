@@ -1,5 +1,5 @@
 ---
-title: "Hi shark plush toy: Fabric Options"
+title: "Hi the shark: Fabric Options"
 ---
 
 This plush toy is intended to have two different coloured fabrics, one for 
