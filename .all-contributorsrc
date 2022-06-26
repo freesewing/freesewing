@@ -858,6 +858,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "arigrayzel",
+      "name": "Ari Grayzel-student",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33040950?v=4",
+      "profile": "https://github.com/arigrayzel",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true
