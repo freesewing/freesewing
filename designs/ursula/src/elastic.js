@@ -1,8 +1,6 @@
 export default function (part) {
   let { options, Point, points, store, utils, units, sa, paperless, macro } = part.shorthand()
   
-  console.log('start elastic')
-
   // Stretch utility method
   store.set('elasticScale', utils.stretchToScale(options.elasticStretch))
 
@@ -31,8 +29,6 @@ export default function (part) {
     })
   }
   
-  console.log('elastic complete')
-  
   // determine where the markers should be drawn
   
   // waist band: start at center front
@@ -53,42 +49,59 @@ export default function (part) {
   // markers on front part
   if (store.get('frontLegOpeningLength') / legOpeningLength < 0.25 ) {
     store.set('numLegMarkersFront',0); // side seam only (count markers per leg opening)
-  } else {
+  } else if (store.get('frontLegOpeningLength') / legOpeningLength < 0.5 ){
     store.set('numLegMarkersFront',1);
     store.set('legMarker1Frac',0.25 * legOpeningLength / store.get('frontLegOpeningLength'));
-  }
-  if (store.get('frontLegOpeningLength') / legOpeningLength >= 0.5 ) {
+  } else {
     // seems unlikely: front leg opening is at least 50% of total
     store.set('numLegMarkersFront',2);
+    store.set('legMarker1Frac',0.25 * legOpeningLength / store.get('frontLegOpeningLength'));
     store.set('legMarker2Frac',0.5 * legOpeningLength / store.get('frontLegOpeningLength'));
   }  
   
   // markers on gusset
-  store.set('numLegMarkersGusset',0)
   if (store.get('frontLegOpeningLength') / legOpeningLength < 0.25 & 
-    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength > 0.25) {
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength > 0.25) & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength < 0.5) {
     store.set('numLegMarkersGusset',1);
     store.set('legMarker1Frac', (0.25 * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
-  }
-  if (store.get('frontLegOpeningLength') / legOpeningLength < 0.5 & 
-    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength >= 0.5) {
-    // place second marker on gusset
-    store.set('numLegMarkersGusset',1 + store.get('numLegMarkersGusset'));
-    store.set('legMarker2Frac', (0.5 * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
-  }    
-  if (store.get('frontLegOpeningLength') / legOpeningLength < 0.75 & 
+  } else if (store.get('frontLegOpeningLength') / legOpeningLength < 0.25 & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength >= 0.25) & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength < 0.75) {
+    store.set('numLegMarkersGusset',2);
+    store.set('legMarker1Frac', (0.25 * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
+    store.set('legMarker2Frac', (0.5  * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
+  } else if (store.get('frontLegOpeningLength') / legOpeningLength < 0.25 & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength >= 0.25) & 
     (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength >= 0.75) {
-    // place second marker on gusset
-    store.set('numLegMarkersGusset',1 + store.get('numLegMarkersGusset'));
+    store.set('numLegMarkersGusset',3);
+    store.set('legMarker1Frac', (0.25 * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
+    store.set('legMarker2Frac', (0.5  * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
     store.set('legMarker3Frac', (0.75 * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
-  }        
+  } else if (store.get('frontLegOpeningLength') / legOpeningLength < 0.5 & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength >= 0.5) & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength < 0.75) {
+    store.set('numLegMarkersGusset',1);
+    store.set('legMarker2Frac', (0.5  * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
+  } else if (store.get('frontLegOpeningLength') / legOpeningLength < 0.5 & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength >= 0.5) & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength >= 0.75) {
+    store.set('numLegMarkersGusset',2);
+    store.set('legMarker2Frac', (0.5  * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
+  } else if (store.get('frontLegOpeningLength') / legOpeningLength < 0.75 & 
+    (store.get('frontLegOpeningLength') + store.get('gussetSideLength')) / legOpeningLength >= 0.75) {
+    store.set('numLegMarkersGusset',1);
+    store.set('legMarker3Frac', (0.75 * legOpeningLength - store.get('frontLegOpeningLength')) / store.get('gussetSideLength'))
+  } else {
+    store.set('numLegMarkersGusset',0)     
+  }
   
   // markers on back part
   if (store.get('backLegOpeningLength') / legOpeningLength > 0.25 ) {
     store.set('legMarker3Frac',0.25 * legOpeningLength / store.get('backLegOpeningLength'));
-  }
-  if (store.get('backLegOpeningLength') / legOpeningLength > 0.5 ) {
+  } else if (store.get('backLegOpeningLength') / legOpeningLength > 0.5 ) {
     store.set('legMarker2Frac',0.5 * legOpeningLength / store.get('backLegOpeningLength'));
+    store.set('legMarker3Frac',0.25 * legOpeningLength / store.get('backLegOpeningLength'));
   }  
   
 

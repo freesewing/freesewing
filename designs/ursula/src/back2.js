@@ -16,8 +16,6 @@ export default function (part) {
     macro,
   } = part.shorthand()
   
-console.log('start back2')
-
 points.waist2 = points.backWaistBandMid;
 
 points.leg4L = points.backLegOpeningLeft;
@@ -26,8 +24,6 @@ points.leg4R = points.leg4L.flipX(points.backWaistMid);
 snippets.waist2 = new Snippet("notch", points.waist2);
 snippets.leg4L = new Snippet("notch", points.leg4L);
 snippets.leg4R = new Snippet("notch", points.leg4R);
-
-console.log('store',store)
 
 if (store.get('numWaistMarkersFront') < 3) {
   // backWaistBand extends from right to left, so use (0.5 - waistMarkerFrac)
@@ -38,8 +34,6 @@ if (store.get('numWaistMarkersFront') < 3) {
   snippets.waist1R = new Snippet("notch", points.waist1R);
 }  
 
-console.log('bla')
-
 if (store.get('numLegMarkersFront') + store.get('numLegMarkersGusset') < 2) {
   // draw second marker, on back
   // use (1 - frac) because the path is drawn from gusset to waist
@@ -49,7 +43,6 @@ if (store.get('numLegMarkersFront') + store.get('numLegMarkersGusset') < 2) {
   snippets.leg2L = new Snippet("notch", points.leg2L);
   snippets.leg2R = new Snippet("notch", points.leg2R);  
 }  
-console.log('bla')
 
 if (store.get('numLegMarkersFront') + store.get('numLegMarkersGusset') < 3) {
   // draw third marker, on back

@@ -18,8 +18,6 @@ export default function (part) {
 
   // Design pattern here
   
-  console.log('start back')
-
   // Create points
 
   points.backWaistMid = new Point(measurements.seat / 4, 0)
@@ -169,18 +167,13 @@ export default function (part) {
 
   /* Store lengths for use in elastic */
 
-  if (options.backExposure >= 0) {
-    paths.backLegOpening = new Path()
-							 
-				
+  paths.backLegOpening = ((options.backExposure >= 0)
+  ? new Path()
         .move(points.backGussetRight)
         .curve(points.backGussetRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
         .setRender(false)
 	 
-  } else {
-    paths.backLegOpening = new Path()
-							 
-				
+  : new Path()
         .move(points.backGussetRight)
         .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
         .curve(points.backFlareRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
@@ -189,8 +182,6 @@ export default function (part) {
   store.set('backLegOpeningLength',paths.backLegOpening.length())
 
   paths.backWaistBand = new Path()
-						  
-			  
       .move(points.backWaistBandRight)
       .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
       .setRender(false)

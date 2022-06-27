@@ -15,8 +15,6 @@ export default function (part) {
     paperless,
     macro,
   } = part.shorthand()
-  
-console.log('start front2')
 
 // draw markers to indicate elastic distribution
 points.waist0 = points.frontWaistBandMid;
@@ -27,8 +25,6 @@ points.leg0R = points.leg0L.flipX(points.frontWaistMid);
 snippets.waist0 = new Snippet("notch", points.waist0);
 snippets.leg0L = new Snippet("notch", points.leg0L);
 snippets.leg0R = new Snippet("notch", points.leg0R);
-
-console.log('static markers')
 
 if (store.get('numWaistMarkersFront') > 1) {
   // frontWaistBandLength extends from right to left, so use (0.5 - waistMarkerFrac)
@@ -56,8 +52,6 @@ if (store.get('numLegMarkersFront') > 1) {
   snippets.leg2L = new Snippet("notch", points.leg2L);
   snippets.leg2R = new Snippet("notch", points.leg2R);  
 }
-
-console.log('markers along paths')
 
   return part
 }
