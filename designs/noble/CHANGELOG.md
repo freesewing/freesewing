@@ -1,6 +1,12 @@
 # Change log for: @freesewing/noble
 
 
+## 2.21.0 (2022-06-27)
+
+### Added
+
+ - Noble is a body block with prince(ss) seams
+
 
 This is the **initial release**, and the start of this change log.
 

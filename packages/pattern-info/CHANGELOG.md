@@ -1,6 +1,12 @@
 # Change log for: @freesewing/pattern-info
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ## 2.19.0 (2021-10-17)
 
 ### Changed

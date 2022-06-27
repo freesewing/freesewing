@@ -1,6 +1,16 @@
 # Change log for: @freesewing/i18n
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### Fixed
+
+ - Added missing lab namespace for English
+
 ## 2.20.2 (2022-01-27)
 
 ### Fixed

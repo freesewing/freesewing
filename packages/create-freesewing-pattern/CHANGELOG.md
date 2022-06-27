@@ -1,6 +1,12 @@
 # Change log for: create-freesewing-pattern
 
 
+## 2.21.0 (2022-06-27)
+
+### Deprecated
+
+ - This package is deprecated. Please use `npx @freesewing/new-design`
+
 ## 2.20.4 (2022-01-28)
 
 ### Fixed

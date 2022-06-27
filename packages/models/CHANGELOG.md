@@ -1,6 +1,12 @@
 # Change log for: @freesewing/models
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ## 2.17.2 (2021-08-15)
 
 ### Added

@@ -1,6 +1,16 @@
 # Change log for: @freesewing/teagan
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### Fixed
+
+ - Added missing name to config file
+
 ## 2.20.8 (2022-05-21)
 
 ### Changed
