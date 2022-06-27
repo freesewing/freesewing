@@ -1,6 +1,8 @@
 ---
-title: "Fixme"
+title: "Lucy tie-on pocket: Required measurements"
 ---
 
-<PatternMeasurements pattern='lucy' />
+<Note>
+Luci does not require any measurements
+</Note>
 
