@@ -1,11 +1,10 @@
 ---
-title: "Fixme"
+title: "Unice undies: Instructions"
 ---
 
-<Fixme>
+<Note>
 
-This documentation page is yet to be written.
+Please refer to [the Ursula instructions](/docs/patterns/ursula/instructions) as 
+Ursula's construction is identical to Unice.
 
-Sorry for the inconvenience.
-
-</Fixme>
+</Note>

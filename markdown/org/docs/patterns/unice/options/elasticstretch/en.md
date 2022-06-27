@@ -1,8 +1,9 @@
 ---
-title: undefined
+title: "Elastic stretch"
 ---
 
-undefined
+Adjust this option for more or less stretchy elastic.
+
 
 
 ## Effect of this option on the pattern

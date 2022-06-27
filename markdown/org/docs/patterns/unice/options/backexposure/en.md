@@ -1,8 +1,9 @@
 ---
-title: undefined
+title: "Back exposure"
 ---
 
-undefined
+This option controls the amount of exposed skin on the back.
+
 
 
 ## Effect of this option on the pattern

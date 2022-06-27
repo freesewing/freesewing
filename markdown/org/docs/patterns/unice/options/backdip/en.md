@@ -1,8 +1,9 @@
 ---
-title: undefined
+title: "Back waist dip"
 ---
 
-undefined
+This option controls how much the back waist curves (revealing more or less skin).
+
 
 
 ## Effect of this option on the pattern

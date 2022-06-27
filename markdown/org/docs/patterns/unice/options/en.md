@@ -1,5 +1,5 @@
 ---
-title: "Fixme"
+title: "Unice undies: Design options"
 ---
 
 <PatternOptions pattern='unice' />

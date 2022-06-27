@@ -1,8 +1,9 @@
 ---
-title: undefined
+title: "Fabric stretch Y"
 ---
 
-undefined
+Controls the stretch in vertical direction.
+
 
 
 ## Effect of this option on the pattern

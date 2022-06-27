@@ -1,8 +1,9 @@
 ---
-title: undefined
+title: "Rise"
 ---
 
-undefined
+This options controls the height of the waist.
+
 
 
 ## Effect of this option on the pattern
