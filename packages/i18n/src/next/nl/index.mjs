@@ -50,6 +50,7 @@ import o_hugo from "./o_hugo.mjs"
 import o_jaeger from "./o_jaeger.mjs"
 import o_lucy from "./o_lucy.mjs"
 import o_lunetius from "./o_lunetius.mjs"
+import o_noble from "./o_noble.mjs"
 import o_paco from "./o_paco.mjs"
 import o_penelope from "./o_penelope.mjs"
 import o_sandy from "./o_sandy.mjs"
@@ -123,6 +124,7 @@ const allNamespaces = {
   o_jaeger,
   o_lucy,
   o_lunetius,
+  o_noble,
   o_paco,
   o_penelope,
   o_sandy,
