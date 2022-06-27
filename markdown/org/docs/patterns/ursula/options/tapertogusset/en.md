@@ -1,8 +1,8 @@
 ---
-title: "Front exposure"
+title: "Taper to gusset"
 ---
 
-This option controls the amount of exposed skin on the front.
+Controls how much the front will curve inwards to meet the gusset.
 
 ## Effect of this option on the pattern
 
