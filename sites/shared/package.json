@@ -1,6 +1,6 @@
 {
   "name": "freesewing.shared",
-  "version": "2.21.0-rc.2",
+  "version": "2.21.0-rc.3",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3002",

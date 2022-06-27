@@ -12,6 +12,15 @@ const createLibrary = require('./create-library')
 const promptLibraryParams = require('./prompt-library-params')
 
 module.exports = async () => {
+  // Warn about deprecation
+  console.log(`
+⚠️  ${chalk.yellow('create-freesewing-pattern is deprecated')}
+
+Please use ${chalk.blue('@freesewing/new-design')} instead:
+
+${chalk.green.bold('npx @freesewing/new-design')}
+
+`)
   // Check node version
   const node_version = process.version.slice(1).split('.')[0]
   if (parseInt(node_version) < 10 && process.argv.indexOf('--skip-version-check') === -1)

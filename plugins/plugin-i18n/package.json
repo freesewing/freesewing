@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-i18n",
-  "version": "2.21.0-rc.2",
+  "version": "2.21.0-rc.3",
   "description": "A FreeSewing plugin for pattern translation",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -40,7 +40,7 @@
     "cibuild_step1": "node build.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.21.0-rc.2"
+    "@freesewing/core": "^2.21.0-rc.3"
   },
   "dependencies": {},
   "devDependencies": {
