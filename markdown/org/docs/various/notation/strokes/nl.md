@@ -7,15 +7,12 @@ Ontwerpers kunnen, als ze willen, een andere lijndikte of vorm van lijn kiezen d
 Ter referentie zijn hier de verschillende beschikbare lijndiktes:
 
 <Legend part="lineWidths">
-
 The different line widths
-
 </Legend>
 
 En dit zijn de verschillende types lijnen:
 
 <Legend part="lineStrokes">
-
 The different line strokes
-
 </Legend>
+
