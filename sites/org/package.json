@@ -1,6 +1,6 @@
 {
   "name": "freesewing.org",
-  "version": "2.21.0-rc.3",
+  "version": "2.21.0",
   "private": true,
   "scripts": {
     "dev": "SITE=org node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
@@ -40,7 +40,7 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.21.0-rc.3"
+    "remark-jargon": "^2.21.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

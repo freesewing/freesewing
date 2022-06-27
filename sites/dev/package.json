@@ -1,6 +1,6 @@
 {
   "name": "freesewing.dev",
-  "version": "2.21.0-rc.3",
+  "version": "2.21.0",
   "private": true,
   "scripts": {
     "dev": "node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
@@ -40,7 +40,7 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.21.0-rc.3",
+    "remark-jargon": "^2.21.0",
     "roughjs": "^4.5.2",
     "viz.js": "^2.1.2"
   },
