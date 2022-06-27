@@ -12,6 +12,7 @@ export default {
     fit: ['neckRatio', 'widthRatio', 'lengthRatio'],
     size: ['headSize'],
   },
+  measurements: [],
   optionalMeasurements: ['head'],
   parts: ['bib'],
   options: {
