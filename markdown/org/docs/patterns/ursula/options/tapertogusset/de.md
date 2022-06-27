@@ -1,8 +1,8 @@
 - - -
-title: "Front exposure"
+title: "Taper to gusset"
 - - -
 
-Diese Option steuert die Menge an freigelegter Haut auf der vorderen Seite.
+Controls how much the front will curve inwards to meet the gusset.
 
 ## Effekt dieser Option auf das Schnittmuster
 
