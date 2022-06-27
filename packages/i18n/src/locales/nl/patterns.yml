@@ -77,6 +77,9 @@ lucy:
 lunetius:
   description: Lunetius is a lacerna, a historical Roman cloak
   title: Lunetius Lacerna
+noble:
+  description: Noble is a body block with prince(ess) seams
+  title: Noble body block
 paco:
   description: Paco is een casual maar stijlvolle zomerbroek.
   title: Paco broek

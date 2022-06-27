@@ -77,6 +77,9 @@ lucy:
 lunetius:
   description: Lunetius est une lacerne, un manteau romain historique
   title: Lacerne Lunetius
+noble:
+  description: Noble is a body block with prince(ess) seams
+  title: Noble body block
 paco:
   description: Paco est un pantalon d'été décontracté mais élégant.
   title: Pantalon Paco

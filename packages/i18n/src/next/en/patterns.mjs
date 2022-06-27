@@ -55,6 +55,8 @@ const patterns = {
   "lucy.d": "Lucy is a historical pocket that you can tie around your waist.",
   "lunetius.t": "Lunetius Lacerna",
   "lunetius.d": "Lunetius is a lacerna, a historical Roman cloak",
+  "noble.t": "Noble body block",
+  "noble.d": "Noble is a body block with prince(ess) seams",
   "paco.t": "Paco pants",
   "paco.d": "Paco are casual yet stylish summer pants.",
   "penelope.t": "Penelope pencil skirt",
