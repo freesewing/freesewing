@@ -4,7 +4,7 @@
  */
 const o_noble = {
   "dartPosition.t": "Dart position",
-  "dartPosition.d": null,
+  "dartPosition.d": "Controls whether to split at the shoulder or armhole",
   "chestEase.t": "Chest ease",
   "chestEase.d": "Controls the amount of ease at the chest",
   "waistEase.t": "Waist ease",

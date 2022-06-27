@@ -1,5 +1,5 @@
 dartPosition:
-  description:
+  description: Controls whether to split at the shoulder or armhole
   title: Dart position
 chestEase:
   description: Controls the amount of ease at the chest
