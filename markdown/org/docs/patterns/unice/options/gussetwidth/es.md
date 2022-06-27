@@ -1,9 +1,10 @@
-- - -
+---
 title: "Gusset width"
-- - -
+---
 
-Esta opción controla el ancho del set de ráfagas.
+This options controls the width of the gusset.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](ursula_gussetwidth_sample.svg "Effect of this option on the pattern")
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_gussetwidth_sample.svg "Effect of this option on the pattern")
