@@ -13,13 +13,14 @@
 const fs = require('fs')
 const path = require('path')
 const core = require('../packages/core/dist')
-const theme = require('../plugins/plugin-theme/dist')
 const pi = require('../packages/pattern-info/dist')
 const models = require('../packages/models/dist')
 const wb32 = models.withBreasts.size32
 const noVersions = require('../plugins/plugin-versionfree-svg')
 let capitalize = require('../packages/utils/capitalize/index.js')
 capitalize = capitalize.default
+let theme = require('../plugins/plugin-theme/dist')
+theme = theme.default
 
 const image = (pattern, option) => `
 
@@ -34,7 +35,7 @@ const insertImage = (file, pattern, option) => {
 
 const createImages = () => {
   for (const pattern of pi.list) {
-    if (pattern === 'unice') {
+    if (true || pattern === 'unice') {
       const Pattern = require(`../designs/${pattern}/dist/index.js`)[capitalize(pattern)]
       for (const option of pi.options[pattern]) {
         const p = new Pattern({
