@@ -1,9 +1,10 @@
-- - -
+---
 title: "Gusset length"
-- - -
+---
 
-Cette option contrôle la longueur du gusset.
+This option controls the length of the gusset.
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](ursula_gussetlength_sample.svg "Effect of this option on the pattern")
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_gussetlength_sample.svg "Effect of this option on the pattern")
