@@ -350,6 +350,7 @@ Part.prototype.shorthand = function () {
   return shorthand
 }
 
+/** generate the transform attributes needed for the given part */
 export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   const center = {
     x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
