@@ -1,6 +1,12 @@
 # Change log for: @freesewing/pattern-info
 
 
+## 2.21.1 (2022-06-28)
+
+### Fixed
+
+ - Added Noble to the list
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed
