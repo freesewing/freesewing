@@ -1,9 +1,10 @@
-- - -
+---
 title: "Rise"
-- - -
+---
 
-Esta opción controla la altura de la cintura.
+This options controls the height of the waist.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](ursula_rise_sample.svg "Effect of this option on the pattern")
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_rise_sample.svg "Effect of this option on the pattern")

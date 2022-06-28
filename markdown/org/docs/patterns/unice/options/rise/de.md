@@ -1,9 +1,10 @@
-- - -
+---
 title: "Rise"
-- - -
+---
 
-Diese Option steuert die Höhe der Taille.
+This options controls the height of the waist.
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](ursula_rise_sample.svg "Effect of this option on the pattern")
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_rise_sample.svg "Effect of this option on the pattern")

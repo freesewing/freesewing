@@ -1,8 +1,8 @@
 - - -
-title: "Front exposure"
+title: "Taper to gusset"
 - - -
 
-Esta opción controla la cantidad de piel expuesta en la parte delantera.
+Controls how much the front will curve inwards to meet the gusset.
 
 ## Efecto de esta opción en el patrón
 
