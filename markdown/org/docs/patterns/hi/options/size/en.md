@@ -1,5 +1,5 @@
 ---
-title: "Hi the shark: Size"
+title: "Size"
 ---
 
 Hi can be made in different sizes. The default is about a meter in length.
