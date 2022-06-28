@@ -1,6 +1,13 @@
 Unreleased:
   Added:
 
+2.21.1:
+  date: 2022-06-28
+
+  Fixed:
+    pattern-info:
+      - Added Noble to the list
+
 2.21.0:
   date: 2022-06-27
 
