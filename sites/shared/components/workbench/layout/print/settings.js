@@ -2,15 +2,26 @@ import PageSizePicker from './pagesize-picker'
 import OrientationPicker from './orientation-picker'
 import PrintIcon from 'shared/components/icons/print'
 import RightIcon from 'shared/components/icons/right'
+import { useTranslation } from 'next-i18next'
 
 const PrintLayoutSettings = props => {
   if (!props.draft?.parts?.pages?.pages) return null
   const { cols, rows, count } = props.draft.parts.pages.pages
+  const { t } = useTranslation(['workbench'])
 
   return (
     <div className="flex flex-row gap-8 justify-center">
       <PageSizePicker {...props} />
       <OrientationPicker {...props} />
+      <button
+        key="reset"
+        onClick={() => props.unsetGist('layout')}
+        className="btn btn-primary"
+      >
+        <span className="capitalize">
+          {t('reset')}
+        </span>
+      </button>
       <div className="flex flex-row font-bold items-center px-0 text-xl">
         <PrintIcon />
         <span className="ml-2">{count}</span>

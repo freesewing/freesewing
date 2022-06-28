@@ -46,6 +46,7 @@ const PrintLayout = props => {
         updateGist={props.updateGist}
         patternProps={patternProps}
         bgProps={bgProps}
+        gistReady={props.gistReady}
       />
     </div>
   )

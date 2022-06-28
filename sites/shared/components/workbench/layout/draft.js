@@ -78,6 +78,7 @@ import Defs from '../draft/defs'
 import Path from '../draft/path'
 import Point from '../draft/point'
 import Snippet from '../draft/snippet'
+import {PartInner} from '../draft/part'
 import { getProps } from '../draft/utils'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
@@ -119,10 +120,10 @@ const angle = (pointA, pointB) => {
 }
 
 const generateTransform = (x, y, rot, flipX, flipY, part) => {
-  const anchor = {
-    x: 0,
-    y: 0
-  }
+  // const anchor = {
+  //   x: 0,
+  //   y: 0
+  // }
   const center = {
     x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
     y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
@@ -141,15 +142,16 @@ const generateTransform = (x, y, rot, flipX, flipY, part) => {
     `translate(${center.x}, ${center.y * -1 + 2 * dy})`,
   )
   if (rot) transforms.push(
-    `rotate(${rot}, ${center.x - anchor.x}, ${center.y - anchor.y})`
+    `rotate(${rot}, ${center.x}, ${center.y})`
   )
 
   return transforms.join(' ')
 }
 
 const Part = props => {
-  const { layout, gist, name, part } = props
-  const partLayout= layout.parts[name]
+  const { layout, gist, name, part} = props
+
+  const partLayout = layout.parts[name]
 
   // Don't just assume this makes sense
   if (typeof layout.parts?.[name]?.move?.x === 'undefined') return null
@@ -164,14 +166,16 @@ const Part = props => {
   // Initialize drag handler
   useEffect(() => {
     handleDrag(select(partRef.current))
-  }, [rotate])
+  }, [rotate, layout])
 
   // These are kept as vars because re-rendering on drag would kill performance
   // Managing the difference between re-render and direct DOM updates makes this
   // whole thing a bit tricky to wrap your head around
   let translateX = partLayout.move.x
   let translateY = partLayout.move.y
-  let rotation = partLayout.rotate || 0
+  let partRotation = partLayout.rotate || 0;
+  let rotation = partRotation;
+  let startRotation = 0;
   let flipX = partLayout.flipX ? true : false
   let flipY = partLayout.flipY ? true : false
   let partRect
@@ -180,21 +184,32 @@ const Part = props => {
     x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
     y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
   }
+
+  const getRotation = (event) => angle(center, { x:event.x, y: event.y });
+
   const handleDrag = drag()
     .subject(function() {
       return { x: translateX, y: translateY }
     })
     .on('start', function(event) {
       partRect = partRef.current.getBoundingClientRect()
+      console.log(layout.parts[name].rotate, partLayout.rotate);
+      partRotation = partLayout.rotate || 0;
+      startRotation = getRotation(event);
     })
     .on('drag', function(event) {
-      if (rotate) rotation = angle(partRect, { x:event.x, y: event.y }) * -1
+      if (rotate) {
+        let newRotation = startRotation - getRotation(event);
+        if (flipX) newRotation *= -1
+        if (flipY) newRotation *= -1
+        rotation = partRotation + newRotation
+      }
       else {
         translateX = event.x
         translateY = event.y
       }
       const me = select(this);
-      me.attr('transform', generateTransform(translateX, translateY, rotation, flipX, flipY, part))
+      me.attr('transform', generateTransform(translateX, translateY, rotation, flipX, flipY, part));
     })
     .on('end', function(event) {
       updateLayout()
@@ -229,17 +244,6 @@ const Part = props => {
     updateLayout()
   }
 
-  const grid = gist.paperless ? (
-    <rect
-      x={part.topLeft.x}
-      y={part.topLeft.y}
-      width={part.width}
-      height={part.height}
-      className="grid"
-      fill={'url(#grid-' + eame + ')'}
-    />
-  ) : null
-
   return (
     <g
       {...getProps(part)}
@@ -247,40 +251,8 @@ const Part = props => {
       ref={props.name === 'pages' ? null : partRef}
       onClick={toggleDragRotate}
     >
-      {grid}
-      {
-        props.gist?._state?.xray?.enabled &&
-        props.gist?._state?.xray?.reveal?.[name]
-        && <XrayPart {...props} />
-      }
-      {Object.keys(part.paths).map((pathName) => (
-        <Path
-          key={pathName}
-          pathName={pathName}
-          path={part.paths[pathName]}
-          topLeft={props.part.topLeft}
-          bottomRight={props.part.bottomRight}
-          {...props}
-        />
-      ))}
-      {Object.keys(props.part.points).map((pointName) => (
-        <Point
-          key={pointName}
-          pointName={pointName}
-          point={props.part.points[pointName]}
-          topLeft={props.part.topLeft}
-          bottomRight={props.part.bottomRight}
-          {...props}
-        />
-      ))}
-      {Object.keys(props.part.snippets).map((snippetName) => (
-        <Snippet
-          key={snippetName}
-          snippetName={snippetName}
-          snippet={props.part.snippets[snippetName]}
-          {...props}
-        />
-      ))}
+      {PartInner(props)}
+      {props.name !== 'pages' && <>
       <text x={center.x} y={center.y} ref={centerRef} />
       <rect
         x={part.topLeft.x}
@@ -289,18 +261,20 @@ const Part = props => {
         height={part.height}
         className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
       />
-      {props.name !== 'pages' && <Buttons
+      <Buttons
         transform={`translate(${part.topLeft.x + part.width/2}, ${part.topLeft.y + part.height/2})`}
         flip={flip}
         rotate={rotate}
         setRotate={setRotate}
         resetPart={resetPart}
-       />}
+       />
+      </>}
     </g>
   )
 }
 
 const Draft = props => {
+  if (!props.gistReady) {return null}
   const { patternProps, gist, updateGist ,app, bgProps={} } = props
   const { layout=false } = gist
 
@@ -322,7 +296,8 @@ const Draft = props => {
   // Helper method to update part layout and re-calculate width * height
   const updateLayout = (name, config) => {
     // Start creating new layout
-    const newLayout = {...layout}
+    const oldLayout = {...layout } || false;
+    const newLayout = {...oldLayout}
     newLayout.parts[name] = config
     newLayout.width = layout.width
     newLayout.height = layout.height
