@@ -142,6 +142,7 @@
     "handlebars": "^4.7.7",
     "jsonfile": "^6.1.0",
     "postcss": "^8.4.5",
+    "rehype-format": "^4.0.1",
     "remark-cli": "^10.0.1",
     "remark-frontmatter": "^4.0.1",
     "remark-lint-emphasis-marker": "^3.1.1",

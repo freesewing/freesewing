@@ -1,15 +1,21 @@
-const fs = require('fs')
-const axios = require('axios')
-const unified = require('unified')
-const markdown = require('remark-parse')
-const remark2rehype = require('remark-rehype')
-const format = require('rehype-format')
-const html = require('rehype-stringify')
-const mustache = require('mustache')
-const nodemailer = require('nodemailer')
-const testers = require('./testers')
+import fs from 'fs'
+import path from 'path'
+import axios from 'axios'
+import { unified } from 'unified'
+import markdown from 'remark-parse'
+import remark2rehype from 'remark-rehype'
+import format from 'rehype-format'
+import html from 'rehype-stringify'
+import mustache from 'mustache'
+import nodemailer from 'nodemailer'
+import { testers } from '../config/newsletter-testers.mjs'
+import { fileURLToPath } from 'url';
 
-const backend = process.env.FS_BACKEND
+// Current working directory
+const cwd = path.dirname(fileURLToPath(import.meta.url))
+
+
+const backend = "https://backend.freesewing.org/"
 
 const asHtml = async (text) => {
   let content = await unified().use(markdown).use(remark2rehype).use(format).use(html).process(text)
@@ -37,8 +43,16 @@ const getSubscribers = async (test = true) => {
 }
 
 const send = async (test = true) => {
-  const template = fs.readFileSync(`${__dirname}/../templates/newsletter.html`, 'utf8')
-  const text = fs.readFileSync(`${__dirname}/../newsletter/${process.env.NL_EDITION}/en.md`, 'utf8')
+  const template = fs.readFileSync(`${cwd}/../config/templates/newsletter.html`, 'utf8')
+  let edition
+  try {
+    edition = await axios.get(`https://posts.freesewing.org/newsletters?slug_eq=${process.env.NL_EDITION}`, 'utf8')
+  } catch (err) {
+    console.log(err)
+    process.exit()
+  }
+  const text = edition.body
+
   const subscribers = await getSubscribers(test)
   const content = await asHtml(text)
   const inject = { content }
@@ -82,7 +96,7 @@ const send = async (test = true) => {
 const sendTest = () => send(true)
 const sendReal = () => send(false)
 
-module.exports = {
+export {
   sendTest,
   sendReal,
 }

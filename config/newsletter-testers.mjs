@@ -1,4 +1,4 @@
-module.exports = [
+export const testers = [
   {
     email: 'joost@joost.at',
     ehash: 'asefsdfsdfsdlfsllehash',
