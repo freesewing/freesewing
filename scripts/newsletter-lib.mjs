@@ -18,9 +18,9 @@ const cwd = path.dirname(fileURLToPath(import.meta.url))
 const backend = "https://backend.freesewing.org/"
 
 const asHtml = async (text) => {
-  let content = await unified().use(markdown).use(remark2rehype).use(format).use(html).process(text)
+  const content = await unified().use(markdown).use(remark2rehype).use(format).use(html).process(text)
 
-  return content.contents
+  return content.value
 }
 
 const getToken = async () => {
@@ -51,7 +51,7 @@ const send = async (test = true) => {
     console.log(err)
     process.exit()
   }
-  const text = edition.body
+  const text = edition.data[0].body
 
   const subscribers = await getSubscribers(test)
   const content = await asHtml(text)
