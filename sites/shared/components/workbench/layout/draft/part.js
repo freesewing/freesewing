@@ -73,6 +73,11 @@ const Part = props => {
   // State variable to switch between moving or rotating the part
   const [rotate, setRotate] = useState(false)
 
+  // update the layout on mount
+  useEffect(() => {
+    if (partRef.current) updateLayout()
+  }, [partRef])
+
   // Initialize drag handler
   useEffect(() => {
     handleDrag(select(partRef.current))
@@ -87,7 +92,7 @@ const Part = props => {
   let rotation = partRotation;
   let flipX = partLayout.flipX ? true : false
   let flipY = partLayout.flipY ? true : false
-  let partRect
+  // let partRect
 
   const center = {
     x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
@@ -101,7 +106,7 @@ const Part = props => {
       return rotate ? { x: event.x, y: event.y } : {x: translateX, y: translateY}
     })
     .on('start', function(event) {
-      partRect = partRef.current.getBoundingClientRect()
+      // partRect = partRef.current.getBoundingClientRect()
     })
     .on('drag', function(event) {
       if (rotate) {
@@ -132,6 +137,10 @@ const Part = props => {
     setRotate(!rotate)
   }
   const updateLayout = () => {
+    const partRect = partRef.current.getBoundingClientRect();
+    const tl = {x: partRect.left, y: partRect.top};
+    const br = {x: partRect.right, y: partRect.bottom};
+
     props.updateLayout(name, {
       move: {
         x: translateX,
@@ -139,7 +148,9 @@ const Part = props => {
       },
       rotate: rotation,
       flipX,
-      flipY
+      flipY,
+      tl,
+      br
     })
   }
 

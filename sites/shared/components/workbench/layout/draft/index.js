@@ -83,6 +83,8 @@ const Draft = props => {
   const { patternProps, gist, updateGist ,app, bgProps={} } = props
   const { layout=false } = gist
 
+  const svgRef = useRef(null);
+
   useEffect(() => {
     if (!layout) {
       // On the initial draft, core does the layout, so we set the layout to the auto-layout
@@ -102,58 +104,39 @@ const Draft = props => {
   const updateLayout = (name, config) => {
     // Start creating new layout
     const newLayout = {...layout}
+    const matrix = svgRef.current.getScreenCTM().inverse();
+
+    // convert topLeft and bottom right from DOM coordinates to svg coordinates
+    if (config.tl) {
+      config.tl = DOMPointReadOnly.fromPoint(config.tl).matrixTransform(matrix)
+      config.br = DOMPointReadOnly.fromPoint(config.br).matrixTransform(matrix);
+    }
     newLayout.parts[name] = config
-    newLayout.width = layout.width
-    newLayout.height = layout.height
+
     // Pattern topLeft and bottomRight
-    let topLeft = { x: 0, y: 0 }
-    let bottomRight = { x: 0, y: 0 }
+    let topLeft = {x: 0, y: 0}
+    let bottomRight = {x: 0, y: 0}
     for (const [pname, part] of Object.entries(patternProps.parts)) {
+      let partLayout = newLayout.parts[pname];
       // Pages part does not have its topLeft and bottomRight set by core since it's added post-draft
-      if (part.topLeft) {
-        // Find topLeft (tl) and bottomRight (br) of this part
-        const tl = {
-          x: part.topLeft.x + newLayout.parts[pname].move.x,
-          y: part.topLeft.y + newLayout.parts[pname].move.y
-        }
-        const br = {
-          x: part.bottomRight.x + newLayout.parts[pname].move.x,
-          y: part.bottomRight.y + newLayout.parts[pname].move.y
-        }
-        // Handle rotate
-        if (newLayout.parts[pname].rotate) {
-          // Angle to the corners
-          const center = {
-            x: part.topLeft.x + part.width/2,
-            y: part.topLeft.x + part.height/2,
-          }
-          const corners = {
-            tl: part.topLeft,
-            br: part.bottomRight,
-          }
-          const angles = {}
-          for (const corner in corners) angles[corner] = angle(center, corners[corner])
-          const delta = {}
-          const rotation = newLayout.parts[pname].rotate
-          for (const corner in corners) {
-            delta[corner] = {
-              x: part.width/2 * (Math.cos(angles[corner]) - Math.cos(angles[corner] + rotation)),
-              y: part.height/2 * (Math.sin(angles[corner]) - Math.sin(angles[corner] + rotation))
-            }
-          }
-          if (delta.br.x > 0) br.x += delta.br.x
-          if (delta.br.y > 0) br.y += delta.br.y
-          if (delta.tl.x < 0) tl.x -= delta.tl.x
-          if (delta.tl.y < 0) tl.y -= delta.tl.y
-        }
-        if (tl.x < topLeft.x) topLeft.x = tl.x
-        if (tl.y < topLeft.y) topLeft.y = tl.y
-        if (br.x > bottomRight.x) bottomRight.x = br.x
-        if (br.y > bottomRight.y) bottomRight.y = br.y
+      if (partLayout.tl) {
+        // set the pattern extremes
+        topLeft.x = Math.min(topLeft.x, partLayout.tl.x)
+        topLeft.y = Math.min(topLeft.y, partLayout.tl.y)
+        bottomRight.x = Math.max(bottomRight.x, partLayout.br.x)
+        bottomRight.y = Math.max(bottomRight.y, partLayout.br.y);
       }
     }
+
+    // move the pages to the top left corner of the viewBox
+    // newLayout.parts.pages.move.x = Math.min(0, topLeft.x);
+    // newLayout.parts.pages.move.y = Math.min(0, topLeft.y)
+
     newLayout.width = bottomRight.x - topLeft.x
     newLayout.height = bottomRight.y - topLeft.y
+    newLayout.bottomRight = bottomRight
+    newLayout.topLeft = topLeft
+    console.log(newLayout.topLeft, newLayout.bottomRight);
     updateGist(['layout'], newLayout)
   }
 
@@ -165,7 +148,7 @@ const Draft = props => {
 
   return (
     <div className="my-8 w-11/12 m-auto border-2 border-dotted border-base-content shadow">
-      <Svg {...patternProps} embed={gist.embed}>
+      <Svg {...patternProps} embed={gist.embed} ref={svgRef} viewBox={layout.topLeft ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.bottomRight.x} ${layout.bottomRight.y}` :  false}>
         <Defs {...patternProps} />
         <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
         <g>
