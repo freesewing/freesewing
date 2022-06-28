@@ -120,10 +120,6 @@ const angle = (pointA, pointB) => {
 }
 
 const generateTransform = (x, y, rot, flipX, flipY, part) => {
-  // const anchor = {
-  //   x: 0,
-  //   y: 0
-  // }
   const center = {
     x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
     y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
@@ -175,7 +171,6 @@ const Part = props => {
   let translateY = partLayout.move.y
   let partRotation = partLayout.rotate || 0;
   let rotation = partRotation;
-  let startRotation = 0;
   let flipX = partLayout.flipX ? true : false
   let flipY = partLayout.flipY ? true : false
   let partRect
@@ -185,21 +180,18 @@ const Part = props => {
     y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
   }
 
-  const getRotation = (event) => angle(center, { x:event.x, y: event.y });
+  const getRotation = (event) => angle(center, event.subject) - angle(center, { x:event.x, y: event.y });
 
   const handleDrag = drag()
-    .subject(function() {
-      return { x: translateX, y: translateY }
+    .subject(function(event) {
+      return rotate ? { x: event.x, y: event.y } : {x: translateX, y: translateY}
     })
     .on('start', function(event) {
       partRect = partRef.current.getBoundingClientRect()
-      console.log(layout.parts[name].rotate, partLayout.rotate);
-      partRotation = partLayout.rotate || 0;
-      startRotation = getRotation(event);
     })
     .on('drag', function(event) {
       if (rotate) {
-        let newRotation = startRotation - getRotation(event);
+        let newRotation = getRotation(event);
         if (flipX) newRotation *= -1
         if (flipY) newRotation *= -1
         rotation = partRotation + newRotation
