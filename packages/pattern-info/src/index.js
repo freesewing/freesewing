@@ -33,6 +33,7 @@ export const list = [
   'jaeger',
   'lucy',
   'lunetius',
+  'noble',
   'paco',
   'penelope',
   'sandy',

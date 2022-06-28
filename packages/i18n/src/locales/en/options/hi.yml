@@ -3,8 +3,8 @@ hungry:
   description: Changes the mouth shape to convey Hi is hungry
 
 nosePointiness:
-  title: node pointiness
-  description: Controls how pointing Hi's nose is
+  title: Nose pointiness
+  description: Controls how pointy Hi's nose is
 
 aggressive:
   title: Aggressive
