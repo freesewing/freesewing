@@ -17,6 +17,9 @@ benjamin:
 bent:
   description: Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.
   title: Patron de base Bent
+bob:
+  description: This is the bib that you can create by following our design tutorial
+  title: Bob the bib
 breanna:
   description: Breanna est un bloc corporel de base pour les personnes qui ont un sein.
   title: Haut Breanna
@@ -50,6 +53,9 @@ florent:
 florence:
   description: 'Florence est un masque facial.'
   title: Masque Florence
+hi:
+  description: The world's friendliest shark
+  title: Hi the shark
 holmes:
   description: 'Pour un cosplay Sherlock Holmes, ou juste un joli manteau.'
   title: Casquette de détective Holmes
@@ -71,6 +77,9 @@ lucy:
 lunetius:
   description: Lunetius est une lacerne, un manteau romain historique
   title: Lacerne Lunetius
+noble:
+  description: Noble is a body block with prince(ess) seams
+  title: Noble body block
 paco:
   description: Paco est un pantalon d'été décontracté mais élégant.
   title: Pantalon Paco
@@ -110,6 +119,9 @@ titan:
 trayvon:
   description: Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.
   title: Cravate Trayvon
+unice:
+  description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
+  title: Unice undies
 ursula:
   description: Ursula est un motif basique et hautement personnalisable.
   title: Unités d'Ursula

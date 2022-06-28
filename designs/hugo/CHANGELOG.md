@@ -1,6 +1,16 @@
 # Change log for: @freesewing/hugo
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### Fixed
+
+ - Fix incorrect seam allowance Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
+
 ## 2.20.1 (2022-01-27)
 
 ### Fixed

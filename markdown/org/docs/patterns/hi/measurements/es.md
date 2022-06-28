@@ -2,4 +2,7 @@
 title: "Hi shark plush toy: Required Measurements"
 ---
 
-<PatternMeasurements pattern='hi' />
+<Note>
+Hi does not require any measurements
+</Note>
+

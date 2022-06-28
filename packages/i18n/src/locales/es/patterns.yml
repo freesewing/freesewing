@@ -17,6 +17,9 @@ benjamin:
 bent:
   description: Este patrón base con mangas de dos partes es la base de nuestros patrones de chaqueta y abrigo.
   title: Bent, patrón base de chaqueta
+bob:
+  description: This is the bib that you can create by following our design tutorial
+  title: Bob the bib
 breanna:
   description: Breanna es un patrón base de torso para personas con pechos.
   title: Breanna, patrón base de torso con pechos
@@ -50,6 +53,9 @@ florent:
 florence:
   description: 'Florence es una mascarilla.'
   title: Máscara de Florencia
+hi:
+  description: The world's friendliest shark
+  title: Hi the shark
 holmes:
   description: 'Para un cosplay de Sherlock Holmes o simplemente un sombrero bonito.'
   title: Holmes, sombrero deerstalker o cervadora
@@ -71,6 +77,9 @@ lucy:
 lunetius:
   description: Lunetius es una lacerna, una capa histórica romana
   title: Lunetius, lacerna
+noble:
+  description: Noble is a body block with prince(ess) seams
+  title: Noble body block
 paco:
   description: Paco son pantalones de verano casual pero con estilo.
   title: Paco, pantalones largos
@@ -110,6 +119,9 @@ titan:
 trayvon:
   description: Trayvon es una corbata que no repara en gastos para un resultado profesional.
   title: Trayvon, corbata
+unice:
+  description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
+  title: Unice undies
 ursula:
   description: Ursula es un patrón básico de braguitas altamente personalizable.
   title: Ursula, braguitas

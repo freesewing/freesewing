@@ -4,7 +4,9 @@
  */
 const patrons = {
   "becomeAPatron": "Become a patron",
-  "supportFreesewing": "Support FreeSewing"
+  "supportFreesewing": "Support FreeSewing",
+  "patronLead": "FreeSewing is fuelled by a voluntary subscription model",
+  "patronPitch": "If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work"
 }
 
 export default patrons

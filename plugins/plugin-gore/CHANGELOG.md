@@ -1,6 +1,12 @@
 # Change log for: @freesewing/plugin-gore
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ## 2.20.0 (2022-01-24)
 
 ### Changed

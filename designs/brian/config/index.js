@@ -86,7 +86,7 @@ export default {
     backNeckCutout: { pct: 5, min: 2, max: 8 },
     bicepsEase: { pct: 15, min: 0, max: 50 },
     chestEase: { pct: 15, min: -4, max: 35 },
-    collarEase: { pct: 3.5, min: 0, max: 10 },
+    collarEase: { pct: 5, min: 0, max: 10 },
     cuffEase: { pct: 20, min: 0, max: 200 },
     frontArmholeDeeper: { pct: 0.2, min: 0, max: 0.5 },
     lengthBonus: { pct: 0, min: -4, max: 60 },

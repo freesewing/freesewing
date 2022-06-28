@@ -54,6 +54,7 @@ export const config = {
       "shared/components/page-link.js",
       "shared/components/pinked-ribbon.js",
       "shared/components/popout.js",
+      "shared/components/raw-span.js",
       "shared/components/theme-picker.js",
       "shared/components/web-link.js",
       "shared/components/yaml.js",

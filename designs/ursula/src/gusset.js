@@ -26,13 +26,11 @@ export default function (part) {
   points.frontMidMid = points.gussetCp1.shiftFractionTowards(points.gussetCp2, 0.5)
 
   /* Store lengths for use in elastic */
-  store.set(
-    'gussetSideLength',
-    new Path()
+  paths.gussetLegOpening = new Path()
       .move(points.backGussetRight)
       .curve(points.backGussetRight, points.gussetCp2, points.frontGussetRight)
-      .length()
-  )
+      .setRender(false)  
+  store.set('gussetSideLength',paths.gussetLegOpening.length())
 
   // Draw paths
   paths.seam = new Path()

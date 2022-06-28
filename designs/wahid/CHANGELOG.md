@@ -1,6 +1,16 @@
 # Change log for: @freesewing/wahid
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### Fixed
+
+ - Change hem allowance to standard SA
+
 ## 2.20.0 (2022-01-24)
 
 ### Changed

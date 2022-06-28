@@ -1,5 +1,5 @@
 ---
-title: "Hi shark plush toy: Fabric Options"
+title: "Hi the shark: Fabric Options"
 ---
 
 This plush toy is intended to have two different coloured fabrics, one for the upper body, and one for the belly. The mouth should probably have its own colour fabric. Most plush toys have some sort of a faux fur fabric.

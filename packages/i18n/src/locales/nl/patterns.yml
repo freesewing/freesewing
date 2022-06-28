@@ -17,6 +17,9 @@ benjamin:
 bent:
   description: Dit patroon met tweedelige mouw is de basis voor onze jassen- en jasjespatronen.
   title: Bent Basisvorm
+bob:
+  description: This is the bib that you can create by following our design tutorial
+  title: Bob the bib
 breanna:
   description: Breanna is een basislichaam voor mensen met borsten.
   title: Breanna basispatroon
@@ -50,6 +53,9 @@ florent:
 florence:
   description: 'Florence is een mondmasker.'
   title: Florence mondmasker
+hi:
+  description: The world's friendliest shark
+  title: Hi the shark
 holmes:
   description: 'Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt.'
   title: Holmes deerstanker hoed
@@ -71,6 +77,9 @@ lucy:
 lunetius:
   description: Lunetius is a lacerna, a historical Roman cloak
   title: Lunetius Lacerna
+noble:
+  description: Noble is a body block with prince(ess) seams
+  title: Noble body block
 paco:
   description: Paco is een casual maar stijlvolle zomerbroek.
   title: Paco broek
@@ -110,6 +119,9 @@ titan:
 trayvon:
   description: Trayvon is een das zoals het hoort, voor een professioneel resultaat.
   title: Trayvon das
+unice:
+  description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
+  title: Unice undies
 ursula:
   description: Ursula is een fundamenteel, zeer aanpasbaar ondergoed patroon.
   title: Ursula undies

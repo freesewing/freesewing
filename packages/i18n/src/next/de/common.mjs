@@ -13,7 +13,8 @@ const common = {
   "requiredMeasurements": "Required measurements",
   "showcase": "Showcase",
   "sloganCome": "Komm für die Schnittmuster",
-  "sloganStay": "Bleib für die Community"
+  "sloganStay": "Bleib für die Community",
+  "support": "Support"
 }
 
 export default common

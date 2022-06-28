@@ -1,6 +1,12 @@
 # Change log for: @freesewing/bee
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ## 2.20.1 (2022-01-27)
 
 ### Changed

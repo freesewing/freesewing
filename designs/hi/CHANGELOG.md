@@ -1,6 +1,12 @@
 # Change log for: @freesewing/hi
 
 
+## 2.21.0 (2022-06-27)
+
+### Added
+
+ - Hi is a new desing for a shark plushy
+
 
 This is the **initial release**, and the start of this change log.
 

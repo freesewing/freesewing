@@ -16,6 +16,9 @@ benjamin:
 bent:
   description: This two-part sleeve block is the basis of our coat and jacket patterns.
   title: Bent body Block
+bob:
+  description: This is the bib that you can create by following our design tutorial
+  title: Bob the bib
 breanna:
   description: Breanna is a basic body block for people with breasts.
   title: Breanna body block
@@ -49,6 +52,9 @@ florent:
 florence:
   description: 'Florence is a face mask.'
   title: Florence face mask
+hi:
+  description: The world's friendliest shark
+  title: Hi the shark
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat.'
   title: Holmes deerstalker hat
@@ -70,6 +76,9 @@ lucy:
 lunetius:
   description: Lunetius is a lacerna, a historical Roman cloak
   title: Lunetius Lacerna
+noble:
+  description: Noble is a body block with prince(ess) seams
+  title: Noble body block
 paco:
   description: Paco are casual yet stylish summer pants.
   title: Paco pants
@@ -109,6 +118,9 @@ titan:
 trayvon:
   description: Trayvon is a tie that cuts no corners for a professional result.
   title: Trayvon tie
+unice:
+  description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
+  title: Unice undies
 ursula:
   description: Ursula is a basic, highly-customizable underwear pattern.
   title: Ursula undies

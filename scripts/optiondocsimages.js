@@ -13,11 +13,14 @@
 const fs = require('fs')
 const path = require('path')
 const core = require('../packages/core/dist')
-const theme = require('../packages/plugin-theme/dist')
 const pi = require('../packages/pattern-info/dist')
 const models = require('../packages/models/dist')
 const wb32 = models.withBreasts.size32
-const noVersions = require('../packages/plugin-versionfree-svg')
+const noVersions = require('../plugins/plugin-versionfree-svg')
+let capitalize = require('../packages/utils/capitalize/index.js')
+capitalize = capitalize.default
+let theme = require('../plugins/plugin-theme/dist')
+theme = theme.default
 
 const image = (pattern, option) => `
 
@@ -32,24 +35,31 @@ const insertImage = (file, pattern, option) => {
 
 const createImages = () => {
   for (const pattern of pi.list) {
-    const Pattern = require(`../packages/${pattern}/dist`)
-    for (const option of pi.options[pattern]) {
-      const p = new Pattern({
-        measurements: wb32,
-        settings: {
-          idPrefix: `${pattern}_${option}`,
-          embed: true,
+    if (true || pattern === 'unice') {
+      const Pattern = require(`../designs/${pattern}/dist/index.js`)[capitalize(pattern)]
+      for (const option of pi.options[pattern]) {
+        const p = new Pattern({
+          measurements: wb32,
+          settings: {
+            idPrefix: `${pattern}_${option}`,
+            embed: true,
+          }
+        }).use(theme).use(noVersions)
+        const file = path.join('markdown', 'org', 'docs', 'patterns', pattern, 'options', option.toLowerCase(), `${pattern}_${option.toLowerCase()}_sample.svg`)
+        try {
+          const svg = p.sampleOption(option).render()
+          fs.writeFileSync(path.join(__dirname, '..', file), svg)
+          insertImage(
+            path.join('markdown', 'org', 'docs', 'patterns', pattern, 'options', option.toLowerCase(), 'en.md'),
+            pattern,
+            option
+          )
+          console.log('✅ '+file)
+        } catch (err) {
+          console.log('⚠️  '+file)
+          console.log(err)
         }
-      }).use(theme).use(noVersions)
-      const file = path.join('markdown', 'org', 'docs', 'patterns', pattern, 'options', option.toLowerCase(), `${pattern}_${option.toLowerCase()}_sample.svg`)
-      console.log(file)
-      const svg = p.sampleOption(option).render()
-      fs.writeFileSync(path.join(__dirname, '..', file), svg)
-      insertImage(
-        path.join('markdown', 'org', 'docs', 'patterns', pattern, 'options', option.toLowerCase(), 'en.md'),
-        pattern,
-        option
-      )
+      }
     }
   }
 }

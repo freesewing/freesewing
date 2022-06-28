@@ -1,6 +1,12 @@
 # Change log for: @freesewing/mui-theme
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ## 2.2.0 (2020-02-22)
 
 ### Changed

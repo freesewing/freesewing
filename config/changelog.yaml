@@ -1,10 +1,31 @@
 Unreleased:
+  Added:
+
+2.21.1:
+  date: 2022-06-28
+
+  Fixed:
+    pattern-info:
+      - Added Noble to the list
+
+2.21.0:
+  date: 2022-06-27
 
   Added:
     config-helpers:
       - This new package replaces the previous snapseries package
         and adds extra helper methods for pattern config such as
         `pctBasedOn()` which was previously exported by core
+    hi:
+      - Hi is a new desing for a shark plushy
+    unice:
+      - Unice is an underwear pattern
+    lucy:
+      - Lucy is a pattern for a historical tie-on pocket
+    bob:
+      - Bob is a pattern for a bib, the same one that's used in our design tutorial
+    noble:
+      - Noble is a body block with prince(ss) seams
 
   Changed:
     aaron: &esbuild
@@ -15,7 +36,9 @@ Unreleased:
     benjamin: *esbuild
     bent: *esbuild
     breanna: *esbuild
-    brian: *esbuild
+    brian:
+      - Migrated from Rollup to Esbuild for all builds
+      - Slightly increased the default neck ease
     bruce: *esbuild
     carlita: *esbuild
     carlton: *esbuild
@@ -75,8 +98,13 @@ Unreleased:
     rendertest: *esbuild
     sandy: *esbuild
     shin: *esbuild
-    simon: *esbuild
-    simone: *esbuild
+    simon:
+      - Migrated from Rollup to Esbuild for all builds
+      - More accurately determine the cuff width
+      - Corrected the hide() signature in the config
+    simone:
+      - Migrated from Rollup to Esbuild for all builds
+      - More accurately determine the cuff width
     sven: *esbuild
     tamiko: *esbuild
     teagan: *esbuild
@@ -92,6 +120,12 @@ Unreleased:
     waralee: *esbuild
     yuri: *esbuild
 
+  Deprecated:
+    create-freesewing-pattern:
+      - This package is deprecated. Please use `npx @freesewing/new-design`
+    snap-series:
+      - The package is deprecated in favor of `@freesewing/config-helpers`
+
   Fixed:
     hugo:
       - Fix incorrect seam allowance
@@ -105,6 +139,8 @@ Unreleased:
       - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
     teagan:
       - Added missing name to config file
+    wahid:
+      - Change hem allowance to standard SA
 
 2.20.8:
   date: 2022-05-21

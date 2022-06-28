@@ -1,6 +1,18 @@
 # Change log for: @freesewing/simon
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+ - More accurately determine the cuff width
+ - Corrected the hide() signature in the config
+
+### Fixed
+
+ - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
+
 ## 2.20.8 (2022-05-21)
 
 ### Changed

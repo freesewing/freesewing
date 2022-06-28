@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" class="freesewing" width="4015.04mm" height="3727.44mm" viewBox="0 0 4015.0375679750146 3727.443537950359"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="2.21.0-rc.2" freesewing:plugin-banner="2.21.0-rc.2" freesewing:plugin-bartack="2.21.0-rc.2" freesewing:plugin-buttons="2.21.0-rc.2" freesewing:plugin-cutonfold="2.21.0-rc.2" freesewing:plugin-dimension="2.21.0-rc.2" freesewing:plugin-grainline="2.21.0-rc.2" freesewing:plugin-logo="2.21.0-rc.2" freesewing:plugin-mirror="2.21.0-rc.2" freesewing:plugin-notches="2.21.0-rc.2" freesewing:plugin-title="2.21.0-rc.2" freesewing:plugin-scalebox="2.21.0-rc.2" freesewing:plugin-round="2.21.0-rc.2" freesewing:plugin-sprinkle="2.21.0-rc.2" freesewing:plugin-measurements="2.21.0-rc.2" class="freesewing" freesewing:plugin-theme="2.21.0-rc.2" width="3997.47mm" height="3718.58mm" viewBox="0 0 3997.468705071411 3718.581904173493"
 >
 <style type="text/css"> <![CDATA[ 
 text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baseline:reset-size}text.title-name{font-size:7pt;font-weight:500;text-anchor:middle;dominant-baseline:reset-size}text.title-pattern{font-size:4pt;font-weight:500;dominant-baseline:reset-size;text-anchor:middle;font-style:italic}
-svg.freesewing path,svg.freesewing circle,svg.freesewing rect{fill:none;stroke:none}svg.freesewing path,svg.freesewing circle{stroke:#000;stroke-opacity:1;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round}svg.freesewing .fabric{stroke-width:0.6;stroke:#212121}svg.freesewing .lining{stroke-width:0.6;stroke:#ff5b77}svg.freesewing .interfacing{stroke-width:0.6;stroke:#64b5f6}svg.freesewing .canvas{stroke-width:0.6;stroke:#ff9000}svg.freesewing .various{stroke-width:0.6;stroke:#4caf50}svg.freesewing .note{stroke-width:0.4;stroke:#dd60dd}svg.freesewing .mark{stroke-width:0.4;stroke:blue}svg.freesewing .contrast{stroke-width:0.8;stroke:red}svg.freesewing .stroke-xs{stroke-width:0.1}svg.freesewing .stroke-sm{stroke-width:0.2}svg.freesewing .stroke-lg{stroke-width:0.6}svg.freesewing .stroke-xl{stroke-width:1}svg.freesewing .stroke-xxl{stroke-width:2}svg.freesewing .sa{stroke-dasharray:0.4, 0.8}svg.freesewing .help{stroke-width:0.2;stroke-dasharray:15, 1.5, 1, 1.5}svg.freesewing .dotted{stroke-dasharray:0.4, 0.8}svg.freesewing .dashed{stroke-dasharray:1, 1.5}svg.freesewing .lashed{stroke-dasharray:6, 6}svg.freesewing .hidden{stroke:none;fill:none}svg.freesewing .fill-fabric{fill:#212121}svg.freesewing .fill-lining{fill:#ff5b77}svg.freesewing .fill-interfacing{fill:#64b5f6}svg.freesewing .fill-canvas{fill:#ff9000}svg.freesewing .fill-various{fill:#4caf50}svg.freesewing .fill-note{fill:#dd69dd}svg.freesewing .fill-mark{fill:blue}svg.freesewing .fill-contrast{fill:red}svg.freesewing text{font-size:5px;font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;fill:#000;text-anchor:start;font-weight:200;dominant-baseline:ideographic}svg.freesewing .text-xs{font-size:3px}svg.freesewing .text-sm{font-size:4px}svg.freesewing .text-lg{font-size:7px}svg.freesewing .text-xl{font-size:9px}svg.freesewing .text-xxl{font-size:12px}svg.freesewing .center{text-anchor:middle}svg.freesewing .right{text-anchor:end}svg.freesewing path.bartack{stroke-width:2;stroke:#fd7e14;stroke-linecap:butt}
-svg.freesewing path.grid{fill:none;stroke:#555;stroke-width:0.3}svg.freesewing path.gridline{stroke:#555;stroke-width:0.2}svg.freesewing path.gridline-lg{stroke:#777;stroke-width:0.2;stroke-dasharray:1.5,1.5}svg.freesewing path.gridline-sm{stroke:#999;stroke-width:0.1}svg.freesewing path.gridline-xs{stroke:#999;stroke-width:0.1;stroke-dasharray:0.5,0.5}svg.freesewing path.gridbox{fill:url(#grid)}
-svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{stroke-width:1.5;fill:rgba(0,0,0,0.1)}
+  /* Sample classes */
+  svg.freesewing path.sample {
+    stroke-width: 0.75
+  }
+  svg.freesewing path.sample-focus {
+    stroke-width: 1.5; fill: rgba(0,0,0,0.1)
+  }
+
+  /* Paperless grid */
+  svg.freesewing path.grid {
+    fill: none;
+    stroke: #555;
+    stroke-width: 0.3;
+  }
+  svg.freesewing path.gridline {
+    stroke: #555;
+    stroke-width: 0.2;
+  }
+  svg.freesewing path.gridline-lg {
+    stroke: #777;
+    stroke-width: 0.2;
+    stroke-dasharray: 1.5,1.5;
+  }
+  svg.freesewing path.gridline-sm {
+    stroke: #999;
+    stroke-width: 0.1;
+  }
+  svg.freesewing path.gridline-xs {
+    stroke: #999;
+    stroke-width: 0.1;
+    stroke-dasharray: 0.5,0.5;
+  }
+  svg.freesewing path.gridbox {
+    fill: url(#grid);
+  }
 
   /* Reset */
   svg.freesewing path,
@@ -70,8 +102,15 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
   svg.freesewing .stroke-xl {
     stroke-width: 1;
   }
-  svg.freesewing .stroke-xxl {
+  svg.freesewing .stroke-xxl,
+  svg.freesewing .stroke-2xl {
     stroke-width: 2;
+  }
+  svg.freesewing .stroke-3xl {
+    stroke-width: 3;
+  }
+  svg.freesewing .stroke-4xl {
+    stroke-width: 4;
   }
 
   svg.freesewing .sa {
@@ -249,218 +288,218 @@ svg.freesewing path.sample{stroke-width:0.75}svg.freesewing path.sample-focus{st
 <g id="fs-container">
 
 <!-- Start of group #fs-part-front -->
-<g id="fs-part-front"  transform="translate(-1.5377508002760578, -124.06961533175904) translate(0, 1857.2206500139555)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-1" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-2" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-3" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-4" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-5" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-6" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-7" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-8" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-9" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-10" d="M 244.07,1041.26 C 244.07,473.59 306.7,333.56 331.38,283.76 C 277.62,257.86 252.56,264.24 235.6,189.91 L 221.03,126.07 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 19.87,404.46 65.68,567.2 65.68,1041.26 z" />
+<g id="fs-part-front"  transform="translate(-2.070900450002986, -124.47857004520972) translate(0, 1852.996440084154)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-1" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-2" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-3" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-4" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-5" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-6" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-7" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-8" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-9" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-10" d="M 244.07,1041.3 C 244.07,473.63 306.7,333.56 331.38,283.8 C 277.62,257.89 252.56,264.26 235.61,189.93 L 221.14,126.48 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 21.27,409.56 65.68,574.54 65.68,1041.3 z" />
 </g>
 <!-- end of group #fs-part-front -->
 
 <!-- Start of group #fs-part-back -->
-<g id="fs-part-back"  transform="translate(344.60163492136724, -131.2600381934933) translate(0, 940.9806882074488)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-11" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-12" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-13" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-14" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-15" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-16" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-17" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-18" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-19" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-20" d="M -44.04,1045.5 C -44.04,695.2 -27.27,470.51 -13,329.25 C -9.59,296.5 -3.18,275.92 12.49,246.95 L 61.23,156.84 C 61.23,156.84 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<g id="fs-part-back"  transform="translate(344.60163492136724, -131.2600381934933) translate(0, 936.7564782776474)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-11" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-12" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-13" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-14" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-15" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-16" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-17" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-18" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-19" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-20" d="M -44.04,1045.5 C -44.04,671.71 -24.95,440.93 -10.17,301.94 C -7.09,273.65 -1.03,256.16 14,231.99 L 60.74,156.8 C 60.74,156.8 -61.97,151.01 -99.21,142.38 L -112.58,200.08 L -117,141.01 C -155.11,143.86 -208.95,142.49 -246.04,133.26 L -262.87,200.91 C -275.46,251.54 -298.58,270.12 -342.6,279.48 C -333.28,323.64 -285.4,477.83 -285.4,1045.5 z" />
 </g>
 <!-- end of group #fs-part-back -->
 
 <!-- Start of group #fs-part-waistband -->
-<g id="fs-part-waistband"  transform="translate(2, 2) translate(0, 2776.410448615673)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-21" d="M 0,0 L 60,0 L 60,947.03 L 0,947.03 z" />
+<g id="fs-part-waistband"  transform="translate(2, 2) translate(0, 2771.8213104275837)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-21" d="M 0,0 L 60,0 L 60,942.76 L 0,942.76 z" />
 </g>
 <!-- end of group #fs-part-waistband -->
 
 <!-- Start of group #fs-part-waistbandCurved -->
-<g id="fs-part-waistbandCurved"  transform="translate(273.1090104298851, 938.9806882074483)">
-<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-22" d="M 3628.84,-904.77 C 3702.62,-608.84 3739.93,-304.99 3739.93,0" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-23" d="M 3739.93,0 C 3739.93,-304.99 3702.62,-608.84 3628.84,-904.77 L 3620.81,-936.98 L 3591.7,-929.72 L 3599.73,-897.51 C 3672.92,-603.95 3709.93,-302.55 3709.93,0 L 3739.93,0 z" />
-<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-24" d="M 1651.08,-877.9 C 1794.8,-607.59 1869.96,-306.14 1869.96,0" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-25" d="M 1869.96,0 C 1869.96,-306.14 1794.8,-607.59 1651.08,-877.9 L 1635.5,-907.21 L 1609.01,-893.12 L 1624.59,-863.81 C 1766.01,-597.84 1839.96,-301.23 1839.96,0 L 1869.96,0 z" />
-<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-26" d="M 926.44,-834.17 C 1132.57,-605.23 1246.64,-308.07 1246.64,0" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-27" d="M 1246.64,0 C 1246.64,-308.07 1132.57,-605.23 926.44,-834.17 L 904.22,-858.84 L 881.93,-838.76 L 904.14,-814.09 C 1105.32,-590.66 1216.64,-300.66 1216.64,0 L 1246.64,0 z" />
-<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-28" d="M 522.84,-775.14 C 780.52,-601.33 934.98,-310.82 934.98,0" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-29" d="M 934.98,0 C 934.98,-310.82 780.52,-601.33 522.84,-775.14 L 495.31,-793.7 L 478.54,-768.83 L 506.06,-750.26 C 755.48,-582.03 904.98,-300.85 904.98,0 L 934.98,0 z" />
-<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-30" d="M 255.83,-702.88 C 551.31,-595.33 747.99,-314.45 747.99,0" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-31" d="M 747.99,0 C 747.99,-314.45 551.31,-595.33 255.83,-702.88 L 224.63,-714.23 L 214.37,-686.04 L 245.57,-674.69 C 529.2,-571.45 717.99,-301.84 717.99,0 L 747.99,0 z" />
-<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-32" d="M 65.15,-619.91 C 382.43,-586.56 623.32,-319.03 623.32,0" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-33" d="M 623.32,0 C 623.32,-319.03 382.43,-586.56 65.15,-619.91 L 32.14,-623.38 L 29,-593.54 L 62.02,-590.07 C 364.03,-558.33 593.32,-303.67 593.32,0 L 623.32,0 z" />
-<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-34" d="M -74.36,-529.08 C 247.13,-574.26 534.28,-324.64 534.28,0" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-35" d="M 534.28,0 C 534.28,-324.64 247.13,-574.26 -74.36,-529.08 L -107.23,-524.46 L -103.05,-494.75 L -70.18,-499.37 C 233.25,-542.01 504.28,-306.42 504.28,0 L 534.28,0 z" />
-<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-36" d="M -175.13,-433.45 C 132.17,-557.6 467.49,-331.43 467.49,0" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-37" d="M 467.49,0 C 467.49,-331.43 132.17,-557.6 -175.13,-433.45 L -205.9,-421.01 L -194.67,-393.2 L -163.89,-405.63 C 123.69,-521.82 437.49,-310.16 437.49,0 L 467.49,0 z" />
-<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-38" d="M -244.25,-336.19 C 30.43,-535.76 415.55,-339.53 415.55,0" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-39" d="M 415.55,0 C 415.55,-339.53 30.43,-535.76 -244.25,-336.19 L -271.11,-316.67 L -253.48,-292.4 L -226.62,-311.91 C 28.24,-497.08 385.55,-315.02 385.55,0 L 415.55,0 z" />
+<g id="fs-part-waistbandCurved"  transform="translate(271.80555130417866, 934.7564782776469)">
+<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-22" d="M 3613.05,-900.84 C 3686.52,-606.19 3723.66,-303.67 3723.66,0" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-23" d="M 3723.66,0 C 3723.66,-303.67 3686.52,-606.19 3613.05,-900.84 L 3605.1,-932.76 L 3575.99,-925.5 L 3583.95,-893.58 C 3656.82,-601.31 3693.66,-301.22 3693.66,0 L 3723.66,0 z" />
+<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-24" d="M 1643.9,-874.08 C 1787,-604.95 1861.83,-304.81 1861.83,0" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-25" d="M 1861.83,0 C 1861.83,-304.81 1787,-604.95 1643.9,-874.08 L 1628.46,-903.12 L 1601.97,-889.04 L 1617.41,-859.99 C 1758.2,-595.2 1831.83,-299.89 1831.83,0 L 1861.83,0 z" />
+<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-26" d="M 922.41,-830.54 C 1127.65,-602.59 1241.22,-306.73 1241.22,0" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-27" d="M 1241.22,0 C 1241.22,-306.73 1127.65,-602.59 922.41,-830.54 L 900.39,-854.99 L 878.1,-834.91 L 900.11,-810.47 C 1100.39,-588.03 1211.22,-299.32 1211.22,0 L 1241.22,0 z" />
+<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-28" d="M 520.56,-771.76 C 777.12,-598.71 930.92,-309.47 930.92,0" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-29" d="M 930.92,0 C 930.92,-309.47 777.12,-598.71 520.56,-771.76 L 493.29,-790.16 L 476.51,-765.29 L 503.79,-746.89 C 752.08,-579.42 900.92,-299.5 900.92,0 L 930.92,0 z" />
+<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-30" d="M 254.71,-699.82 C 548.92,-592.74 744.73,-313.08 744.73,0" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-31" d="M 744.73,0 C 744.73,-313.08 548.92,-592.74 254.71,-699.82 L 223.8,-711.07 L 213.54,-682.88 L 244.45,-671.63 C 526.8,-568.86 714.73,-300.47 714.73,0 L 744.73,0 z" />
+<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-32" d="M 64.87,-617.21 C 380.77,-584.01 620.61,-317.64 620.61,0" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-33" d="M 620.61,0 C 620.61,-317.64 380.77,-584.01 64.87,-617.21 L 32.15,-620.65 L 29.02,-590.81 L 61.74,-587.38 C 362.37,-555.78 590.61,-302.29 590.61,0 L 620.61,0 z" />
+<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-34" d="M -74.03,-526.77 C 246.05,-571.76 531.95,-323.23 531.95,0" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-35" d="M 531.95,0 C 531.95,-323.23 246.05,-571.76 -74.03,-526.77 L -106.61,-522.2 L -102.44,-492.49 L -69.86,-497.07 C 232.18,-539.52 501.95,-305 501.95,0 L 531.95,0 z" />
+<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-36" d="M -174.36,-431.57 C 131.59,-555.18 465.46,-329.98 465.46,0" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-37" d="M 465.46,0 C 465.46,-329.98 131.59,-555.18 -174.36,-431.57 L -204.87,-419.24 L -193.63,-391.43 L -163.13,-403.75 C 123.11,-519.4 435.46,-308.72 435.46,0 L 465.46,0 z" />
+<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-38" d="M -243.19,-334.72 C 30.3,-533.43 413.74,-338.05 413.74,0" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-39" d="M 413.74,0 C 413.74,-338.05 30.3,-533.43 -243.19,-334.72 L -269.81,-315.39 L -252.17,-291.12 L -225.56,-310.45 C 28.1,-494.75 383.74,-313.54 383.74,0 L 413.74,0 z" />
 </g>
 <!-- end of group #fs-part-waistbandCurved -->
 
+<!-- Start of group #fs-part-beltLoops -->
+<g id="fs-part-beltLoops"  transform="translate(2, 2) translate(331.3069040658895, 1852.996440084154)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-40" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-41" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-42" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-43" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-44" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-45" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-46" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-47" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-48" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-49" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
+</g>
+<!-- end of group #fs-part-beltLoops -->
+
+<!-- Start of group #fs-part-backPocket -->
+<g id="fs-part-backPocket"  transform="translate(79.56759494033487, 58.41279632024354) translate(407.338194775259, 936.7564782776474)">
+<path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-50" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-51" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-52" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-53" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-54" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-55" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-56" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-57" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-58" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+<path  class="lining" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-59" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
+</g>
+<!-- end of group #fs-part-backPocket -->
+
 <!-- Start of group #fs-part-frontPocket -->
-<g id="fs-part-frontPocket"  transform="translate(-9.863459690468456, -132.74680837989968) translate(566.9687744156957, 940.9806882074488)">
-<path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-40" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-41" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-42" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-43" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-44" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-45" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-46" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-47" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-48" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-49" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-50" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-51" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-52" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-53" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-54" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-55" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-56" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-57" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
-<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-58" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68" />
-<path  class="lining" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-59" d="M 146.84,134.75 L 96.97,140.58 L 11.86,328.56 C 21.02,350.07 42.19,369.68 95.51,369.68 L 174.32,369.68 L 146.84,134.75 z" />
+<g id="fs-part-frontPocket"  transform="translate(-10.180914146570817, -133.06395544055925) translate(566.4733846559287, 936.7564782776474)">
+<path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-60" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-61" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-62" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-63" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-64" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-65" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-66" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-67" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-68" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-69" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-70" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-71" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-72" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-73" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-74" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-75" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-76" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-77" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
+<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-78" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45" />
+<path  class="lining" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-79" d="M 147.62,135.06 L 98.2,140.84 L 12.18,331.73 C 20.93,352.1 41.5,369.45 95.82,369.45 L 174.99,369.45 L 147.62,135.06 z" />
 </g>
 <!-- end of group #fs-part-frontPocket -->
 
 <!-- Start of group #fs-part-frontPocketFacing -->
-<g id="fs-part-frontPocketFacing"  transform="translate(-1.5377508002760578, -138.57981037337203) translate(733.42693096946, 940.9806882074488)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-60" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-61" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-62" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-63" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-64" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-65" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-66" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-67" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-68" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-69" d="M 96.97,140.58 L 56.17,145.35 L 17.31,225.8 C 4.82,251.66 1.39,269.81 4.76,298.33 C 5.85,307.56 7.49,318.28 11.86,328.56 L 96.97,140.58 z" />
+<g id="fs-part-frontPocketFacing"  transform="translate(-2.070900450002986, -138.83524228965535) translate(733.2835787864974, 936.7564782776474)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-80" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-81" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-82" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-83" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-84" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-85" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-86" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-87" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-88" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-89" d="M 98.2,140.84 L 57.76,145.56 L 17.97,228.53 C 5.18,255.2 1.77,273.91 5.48,303.26 C 6.64,312.47 8.18,322.42 12.18,331.73 L 98.2,140.84 z" />
 </g>
 <!-- end of group #fs-part-frontPocketFacing -->
 
-<!-- Start of group #fs-part-backPocket -->
-<g id="fs-part-backPocket"  transform="translate(79.56759494033487, 58.41279632024354) translate(407.83358453502603, 940.9806882074488)">
-<path  class="lining" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-70" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-71" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-72" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-73" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-74" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-75" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-76" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-77" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-78" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-<path  class="lining" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-79" d="M 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,282.06 L 77.57,282.06 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 z" />
-</g>
-<!-- end of group #fs-part-backPocket -->
-
 <!-- Start of group #fs-part-backPocketFacing -->
-<g id="fs-part-backPocketFacing"  transform="translate(79.56759494033487, 58.41279632024354) translate(830.8626071161996, 940.9806882074488)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-80" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-81" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-82" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-83" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-84" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-85" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-86" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-87" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-88" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-89" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<g id="fs-part-backPocketFacing"  transform="translate(79.56759494033487, 58.41279632024354) translate(831.4110231414007, 936.7564782776474)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-90" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-91" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-92" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-93" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-94" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-95" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-96" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-97" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-98" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-99" d="M 77.57,36.94 L 77.57,0 C 77.57,-28.21 64.64,-56.41 64.64,-56.41 L -64.64,-56.41 C -64.64,-56.41 -77.57,-28.21 -77.57,0 L -77.57,36.94 z" />
 </g>
 <!-- end of group #fs-part-backPocketFacing -->
 
 <!-- Start of group #fs-part-backPocketInterfacing -->
-<g id="fs-part-backPocketInterfacing"  transform="translate(79.56759494033487, 16.774779988635217) translate(989.9977969968693, 940.9806882074488)">
-<path  class="interfacing" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-90" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-91" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-92" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-93" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-94" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-95" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-96" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-97" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-98" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
-<path  class="interfacing" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-99" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<g id="fs-part-backPocketInterfacing"  transform="translate(79.56759494033487, 16.774779988635217) translate(990.5462130220704, 936.7564782776474)">
+<path  class="interfacing" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-100" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-101" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-102" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-103" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-104" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-105" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-106" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-107" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-108" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
+<path  class="interfacing" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-109" d="M -77.57,-14.77 L -77.57,36.94 L 77.57,36.94 L 77.57,-14.77 L -77.57,-14.77 z" />
 </g>
 <!-- end of group #fs-part-backPocketInterfacing -->
 
 <!-- Start of group #fs-part-backPocketJet -->
-<g id="fs-part-backPocketJet"  transform="translate(79.56759494033487, -3.909911995454088) translate(1149.132986877539, 940.9806882074488)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-100" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-101" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-102" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-103" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-104" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-105" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-106" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-107" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-108" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-109" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<g id="fs-part-backPocketJet"  transform="translate(79.56759494033487, -3.909911995454088) translate(1149.6814029027403, 936.7564782776474)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-110" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-111" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-112" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-113" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-114" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-115" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-116" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-117" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-118" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-119" d="M -77.57,5.91 L -77.57,36.94 L 77.57,36.94 L 77.57,5.91 L -77.57,5.91 z" />
 </g>
 <!-- end of group #fs-part-backPocketJet -->
 
 <!-- Start of group #fs-part-flyFacing -->
-<g id="fs-part-flyFacing"  transform="translate(-186.05684863998977, -124.06961533175904) translate(407.83358453502603, 1283.45746612891)">
-<path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-110" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-111" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-112" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-113" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-114" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-115" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-116" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-117" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-118" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-119" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-120" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-121" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-122" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-123" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-124" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-125" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-126" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-127" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
-<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-128" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-129" d="M 266.68,252.68 C 253.17,241.66 243.5,224.55 235.6,189.91 L 221.03,126.07 L 188.06,129.93 L 207.01,212.98 C 214.93,247.66 231.63,258.77 266.68,252.68 z" />
+<g id="fs-part-flyFacing"  transform="translate(-186.46581252906591, -124.47857004520972) translate(407.338194775259, 1279.2332561991086)">
+<path  style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-120" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-121" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-122" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-123" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-124" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-125" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-126" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-127" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-128" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-129" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-130" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-131" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-132" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-133" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-134" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-135" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-136" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-137" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
+<path  style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-138" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-139" d="M 266.68,252.71 C 253.17,241.68 243.51,224.57 235.61,189.93 L 221.14,126.48 L 188.47,130.29 L 207.38,213.25 C 215.24,247.72 231.84,258.77 266.68,252.71 z" />
 </g>
 <!-- end of group #fs-part-flyFacing -->
 
 <!-- Start of group #fs-part-flyExtension -->
-<g id="fs-part-flyExtension"  transform="translate(-186.05684863998974, -127.92614557537706) translate(407.83358453502603, 1415.6541958615217)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-130" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-131" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-132" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-133" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-134" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-135" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-136" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-137" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-138" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-139" d="M 188.06,264.52 L 237.4,267.1 C 226.68,253.35 221.06,234.51 221.06,198.98 L 221.06,133.5 L 188.06,129.93 L 188.06,264.52 z" />
+<g id="fs-part-flyExtension"  transform="translate(-186.46581252906591, -128.29429688758734) translate(407.338194775259, 1411.0384512834314)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-140" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-141" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-142" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-143" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-144" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-145" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-146" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-147" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-148" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-149" d="M 188.47,264.48 L 237.5,267.03 C 226.79,253.28 221.17,234.45 221.17,198.91 L 221.17,133.84 L 188.47,130.29 L 188.47,264.48 z" />
 </g>
 <!-- end of group #fs-part-flyExtension -->
-
-<!-- Start of group #fs-part-beltLoops -->
-<g id="fs-part-beltLoops"  transform="translate(2, 2) translate(331.84528101833297, 1857.2206500139555)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-140" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-141" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-142" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-143" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-144" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-145" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-146" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-147" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-148" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-149" d="M 0,0 L 0,600 L 21,600 L 21,0 L 0,0 z" />
-</g>
-<!-- end of group #fs-part-beltLoops -->
 </g>
 <!-- end of group #fs-container -->
 </svg>

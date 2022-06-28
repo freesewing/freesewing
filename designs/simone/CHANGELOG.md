@@ -1,6 +1,18 @@
 # Change log for: @freesewing/simone
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+ - More accurately determine the cuff width
+
+### Fixed
+
+ - Added the frontdarts option back after it was (accidentally) removed
+ - Handle edge-case for 1/10 dolls with breasts where path split would yield empty half
+
 ## 2.20.8 (2022-05-21)
 
 ### Changed

@@ -38,6 +38,11 @@ import lunetius from './lunetius.yml'
 import tiberius from './tiberius.yml'
 import walburga from './walburga.yml'
 import bee from './bee.yml'
+import hi from 'hi.yml'
+import unice from 'unice.yml'
+import lucy from 'lucy.yml'
+import bob from 'bob.yml'
+import noble from 'noble.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -83,6 +88,11 @@ let patterns = {
   tiberius,
   walburga,
   bee,
+  hi,
+  unice,
+  lucy,
+  bob,
+  noble,
 }
 
 let options = {}

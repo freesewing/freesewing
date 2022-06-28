@@ -1,5 +1,5 @@
 ---
-title: "Bella body block: Design Options"
+title: "Noble body block: Design Options"
 ---
 
-<PatternOptions pattern='bella' />
+<PatternOptions pattern='noble' />

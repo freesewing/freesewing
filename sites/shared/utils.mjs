@@ -12,8 +12,11 @@ export const roundMm = (val, units) => {
 // Formatting for imperial values
 export const formatImperial = (neg, inch, numo = false, deno = false, format = 'html') => {
   if (format === 'html') {
-    if (numo) return `<span>${neg}${inch}&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub></span>`
-    else return `<span>${neg}${inch}</span>`
+    if (numo) return `<span>${neg}${inch}"&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub></span>`
+    else return `<span>${neg}${inch}"</span>`
+  } else if (format === 'notags') {
+    if (numo) return `${neg}${inch}" ${numo}/${deno}`
+    else return `${neg}${inch}"`
   } else {
     if (numo) return `${neg}${inch} ${numo}/${deno}`
     else return `${neg}${inch}`
@@ -21,6 +24,7 @@ export const formatImperial = (neg, inch, numo = false, deno = false, format = '
 }
 
 // Format a value in mm based on the user's units
+// Format can be html, notags, or anything else which will only return numbers
 export const formatMm = (val, units, format = 'html') => {
   val = roundMm(val)
   if (units === 'imperial') {
@@ -38,26 +42,24 @@ export const formatMm = (val, units, format = 'html') => {
       inches = Math.floor(fraction)
       rest = fraction - inches
     }
-    let suffix = ''
-    if (format === 'html') suffix = '"'
     let fraction128 = Math.round(rest * 128)
     if (fraction128 == 0) return formatImperial(negative, inches, false, false, format)
     if (fraction128 % 64 == 0)
-      return formatImperial(negative, inches, fraction128 / 64, 2, format) + suffix
+      return formatImperial(negative, inches, fraction128 / 64, 2, format)
     if (fraction128 % 32 == 0)
-      return formatImperial(negative, inches, fraction128 / 32, 4, format) + suffix
+      return formatImperial(negative, inches, fraction128 / 32, 4, format)
     if (fraction128 % 16 == 0)
-      return formatImperial(negative, inches, fraction128 / 16, 8, format) + suffix
+      return formatImperial(negative, inches, fraction128 / 16, 8, format)
     if (fraction128 % 8 == 0)
-      return formatImperial(negative, inches, fraction128 / 8, 16, format) + suffix
+      return formatImperial(negative, inches, fraction128 / 8, 16, format)
     if (fraction128 % 4 == 0)
-      return formatImperial(negative, inches, fraction128 / 4, 32, format) + suffix
+      return formatImperial(negative, inches, fraction128 / 4, 32, format)
     if (fraction128 % 2 == 0)
-      return formatImperial(negative, inches, fraction128 / 2, 64, format) + suffix
+      return formatImperial(negative, inches, fraction128 / 2, 64, format)
 
-    return negative + Math.round(fraction * 100) / 100 + suffix
+    return negative + Math.round(fraction * 100) / 100 + '"'
   } else {
-    if (format === 'html') return roundMm(val / 10) + 'cm'
+    if (format === 'html' || format === 'notags') return roundMm(val / 10) + 'cm'
     else return roundMm(val / 10)
   }
 }

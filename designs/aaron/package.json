@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/aaron",
-  "version": "2.21.0-rc.1",
+  "version": "2.21.1",
   "description": "A FreeSewing pattern for a A-shirt or tank top",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -40,10 +40,10 @@
     "cibuild_step5": "node build.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.21.0-rc.1",
-    "@freesewing/plugin-bundle": "^2.21.0-rc.1",
-    "@freesewing/config-helpers": "^2.21.0-rc.1",
-    "@freesewing/brian": "^2.21.0-rc.1"
+    "@freesewing/core": "^2.21.1",
+    "@freesewing/plugin-bundle": "^2.21.1",
+    "@freesewing/config-helpers": "^2.21.1",
+    "@freesewing/brian": "^2.21.1"
   },
   "dependencies": {},
   "devDependencies": {
@@ -56,7 +56,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=14.0.0",

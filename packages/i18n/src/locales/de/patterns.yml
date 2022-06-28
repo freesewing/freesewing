@@ -17,6 +17,9 @@ benjamin:
 bent:
   description: Dieser zweiteilige Ärmel-Grundschnitt ist die Grundlage für unsere Mäntel- und Jackenschnitte.
   title: Bent, ein Grundschnitt
+bob:
+  description: This is the bib that you can create by following our design tutorial
+  title: Bob the bib
 breanna:
   description: Breanna ist ein Grundschnitt für Personen mit Brüsten.
   title: Breanna, ein Grundschnitt
@@ -50,6 +53,9 @@ florent:
 florence:
   description: 'Florence ist ein Mundschutz.'
   title: Florence, der Mundschutz
+hi:
+  description: The world's friendliest shark
+  title: Hi the shark
 holmes:
   description: 'Für Sherlock Holmes-Cosplay oder einfach nur als niedlicher Hut.'
   title: Holmes Deerstalker-Hut
@@ -71,6 +77,9 @@ lucy:
 lunetius:
   description: Lunetius ist eine Lacerna, ein historischer römischer Mantel
   title: Lunetius, die Lacerna
+noble:
+  description: Noble is a body block with prince(ess) seams
+  title: Noble body block
 paco:
   description: Paco ist eine lässige, aber stilvolle Sommerhose.
   title: Paco, die Hose
@@ -110,6 +119,9 @@ titan:
 trayvon:
   description: Trayvon ist eine Krawatte, die für ein professionelles Ergebnis an keiner Ecke spart.
   title: Trayvon, die Krawatte
+unice:
+  description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
+  title: Unice undies
 ursula:
   description: Ursula ist ein elementares, stark anpassbares Schnittmuster für Unterwäsche.
   title: Ursula, die Unterwäsche

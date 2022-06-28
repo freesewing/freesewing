@@ -1,6 +1,12 @@
 # Change log for: gatsby-remark-jargon
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ## 2.1.1 (2019-10-13)
 
 ### Added

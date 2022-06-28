@@ -1,6 +1,12 @@
 # Change log for: @freesewing/utils
 
 
+## 2.21.0 (2022-06-27)
+
+### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ## 2.17.3 (2021-08-16)
 
 ### Fixed
