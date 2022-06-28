@@ -1,9 +1,10 @@
-- - -
+---
 title: "Leg opening"
-- - -
+---
 
-Diese Option legt fest, wie hoch das Bein ausgeschnitten ist.
+This option controls how high the leg is cut-out.
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](ursula_legopening_sample.svg "Effect of this option on the pattern")
+
+## Effect of this option on the pattern
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_legopening_sample.svg "Effect of this option on the pattern")

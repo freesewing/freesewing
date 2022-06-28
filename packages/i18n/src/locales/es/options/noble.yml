@@ -29,7 +29,7 @@ armholeDepth:
   description: Controls the depth of the armhole
   title: Armhole depth
 backArmholeSlant:
-  description:  Controls the slant of the armhole at the back
+  description: Controls the slant of the armhole at the back
   title: Back armhole slant
 backArmholeCurvature:
   description: Controls how deep the armhole is scooped out at the back

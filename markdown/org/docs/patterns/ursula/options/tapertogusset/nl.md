@@ -1,8 +1,8 @@
 - - -
-title: "Front exposure"
+title: "Taper to gusset"
 - - -
 
-Deze optie bepaalt het aantal blootgestelde huid op de voorkant.
+Controls how much the front will curve inwards to meet the gusset.
 
 ## Effect van deze optie op het patroon
 
