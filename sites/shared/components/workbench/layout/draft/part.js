@@ -2,6 +2,7 @@ import Path from '../../draft/path'
 import Point from '../../draft/point'
 import Snippet from '../../draft/snippet'
 import {PartInner} from '../../draft/part'
+import {generatePartTransform} from '@freesewing/core/src/part'
 import { getProps, angle } from '../../draft/utils'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
@@ -34,22 +35,18 @@ const Buttons = ({ transform, flip, rotate, setRotate, resetPart }) => {
 }
 
 const generateTransform = (x, y, rot, flipX, flipY, part) => {
-  const center = {
-    x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
-    y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
-  }
-  const dx = part.topLeft.x - center.x
-  const dy = part.topLeft.y - center.y
+  // const center = {
+  //   x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
+  //   y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
+  // }
+  // const dx = part.topLeft.x - center.x
+  // const dy = part.topLeft.y - center.y
   const transforms = [`translate(${x},${y})`]
   if (flipX) transforms.push(
-    `translate(${center.x * -1}, ${center.y * -1})`,
     'scale(-1, 1)',
-    `translate(${center.x * -1 + 2 * dx}, ${center.y})`
   )
   if (flipY) transforms.push(
-    `translate(${center.x * -1}, ${center.y * -1})`,
     'scale(1, -1)',
-    `translate(${center.x}, ${center.y * -1 + 2 * dy})`,
   )
   if (rot) transforms.push(
     `rotate(${rot}, ${center.x}, ${center.y})`
@@ -119,8 +116,13 @@ const Part = props => {
         translateX = event.x
         translateY = event.y
       }
+
+      const transforms = generatePartTransform(translateX, translateY, rotation, flipX, flipY, part);
+      console.log(transforms)
       const me = select(this);
-      me.attr('transform', generateTransform(translateX, translateY, rotation, flipX, flipY, part));
+      for (var t in transforms) {
+        me.attr(t, transforms[t])
+      }
     })
     .on('end', function(event) {
       updateLayout()
@@ -167,6 +169,7 @@ const Part = props => {
       id={`part-${name}`}
       ref={props.name === 'pages' ? null : partRef}
       onClick={toggleDragRotate}
+      transform-origin={`${center.x} ${center.y}`}
     >
       {PartInner(props)}
       {props.name !== 'pages' && <>
