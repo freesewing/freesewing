@@ -128,7 +128,7 @@ export const PartInner = props => {
   return (<>
     {grid}
     {
-      props.gist?._state?.xray?.enabled &&
+      gist._state?.xray?.enabled &&
       <XrayPart {...props} />
     }
     {Object.keys(part.paths).map((pathName) => (
