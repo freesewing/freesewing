@@ -43,9 +43,6 @@
  *  I've sort of left it at this because I'm starting to wonder if we should perhaps re-think
  *  how custom layouts are supported in the core. And I would like to discuss this with the core team.
  */
-import Path from '../../draft/path'
-import Point from '../../draft/point'
-import Snippet from '../../draft/snippet'
 import {PartInner} from '../../draft/part'
 import {generatePartTransform} from '@freesewing/core/src/part'
 import { getProps, angle } from '../../draft/utils'
@@ -81,12 +78,12 @@ const Buttons = ({ transform, flip, rotate, setRotate, resetPart }) => {
 }
 
 const Part = props => {
-  const { layout, gist, name, part} = props
+  const { layout, name, part} = props
 
-  const partLayout = layout.parts[name]
+  const partLayout = layout.parts?.[name]
 
   // Don't just assume this makes sense
-  if (typeof layout.parts?.[name]?.move?.x === 'undefined') return null
+  if (typeof partLayout?.move?.x === 'undefined') return null
 
   // Use a ref for direct DOM manipulation
   const partRef = useRef(null)
