@@ -11,7 +11,7 @@ To make Hi, you will need the following:
 - Small piece of fabric for eyes
 - Suitable, unraveling, fabric for the teeth
 - Stuffing
-- Topstiching (thick) thread for gills
+- Topstiching thread (thick thread) for gills
 
 <Note>
 
