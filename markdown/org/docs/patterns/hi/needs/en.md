@@ -8,8 +8,10 @@ To make Hi, you will need the following:
 - About 1 meter (1.1 yards) of a suitable fabric (Upper body) ([see Hi Fabric options](/docs/patterns/hi/fabric/))
 - About 0.5 meters (0.6 yards) of a suitable fabric (Belly) ([see Hi Fabric options](/docs/patterns/hi/fabric/))
 - Small piece for the mouth
+- Small piece of fabric for eyes
 - Suitable, unraveling, fabric for the teeth
 - Stuffing
+- Topstiching (thick) thread for gills
 
 <Note>
 
