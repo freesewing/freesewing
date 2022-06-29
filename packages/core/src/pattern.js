@@ -530,39 +530,7 @@ Pattern.prototype.pack = function () {
       // Some parts are added by late-stage plugins
       if (this.parts[partId]) {
         let transforms = this.settings.layout.parts[partId]
-        // Moving
-        if (typeof transforms.move === 'object') {
-          this.parts[partId].attributes.set(
-            'transform',
-            'translate(' + transforms.move.x + ', ' + transforms.move.y + ')'
-          )
-        }
-        // Mirrorring
-        let center = this.parts[partId].topLeft.shiftFractionTowards(
-          this.parts[partId].bottomRight,
-          0.5
-        )
-        let anchor = { x: 0, y: 0 }
-        if (transforms.flipX) {
-          let dx = anchor.x - center.x
-          let transform = `translate(${center.x * -1}, ${center.y * -1})`
-          transform += ' scale(-1, 1)'
-          transform += ` translate(${center.x * -1 + 2 * dx}, ${center.y})`
-          this.parts[partId].attributes.add('transform', transform)
-        }
-        if (transforms.flipY) {
-          let dy = anchor.y - center.y
-          let transform = `translate(${center.x * -1}, ${center.y * -1})`
-          transform += ' scale(1, -1)'
-          transform += ` translate(${center.x}, ${center.y * -1 + 2 * dy})`
-          this.parts[partId].attributes.add('transform', transform)
-        }
-        if (transforms.rotate) {
-          let transform = `rotate(${transforms.rotate}, ${center.x - anchor.x}, ${
-            center.y - anchor.y
-          })`
-          this.parts[partId].attributes.add('transform', transform)
-        }
+        this.parts[partId].generateTransform(transforms);
       }
     }
   }

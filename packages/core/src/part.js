@@ -350,4 +350,37 @@ Part.prototype.shorthand = function () {
   return shorthand
 }
 
+/** generate the transform attributes needed for the given part */
+export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
+  const center = {
+    x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
+    y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
+  }
+
+  const transforms = [`translate(${x},${y})`]
+  if (flipX) transforms.push(
+    'scale(-1, 1)',
+  )
+  if (flipY) transforms.push(
+    'scale(1, -1)',
+  )
+  if (rotate) transforms.push(
+    `rotate(${rotate})`
+  )
+
+  return {
+    transform: transforms.join(' '),
+    'transform-origin': `${center.x} ${center.y}`
+  }
+}
+
+Part.prototype.generateTransform = function(transforms) {
+  const {move, rotate, flipX, flipY} = transforms;
+  const generated = generatePartTransform(move.x, move.y, rotate, flipX, flipY, this);
+
+  for (var t in generated) {
+    this.attr(t, generated[t], true);
+  }
+}
+
 export default Part

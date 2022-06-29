@@ -111,7 +111,7 @@ const XrayPart = props => {
   )
 }
 
-const Part = props => {
+export const PartInner = props => {
   const { partName, part, app, gist } = props
 
   const grid = gist.paperless ? (
@@ -125,42 +125,48 @@ const Part = props => {
     />
   ) : null
 
+  return (<>
+    {grid}
+    {
+      gist._state?.xray?.enabled &&
+      <XrayPart {...props} />
+    }
+    {Object.keys(part.paths).map((pathName) => (
+      <Path
+        key={pathName}
+        pathName={pathName}
+        path={part.paths[pathName]}
+        topLeft={props.part.topLeft}
+        bottomRight={props.part.bottomRight}
+        {...props}
+      />
+    ))}
+    {Object.keys(props.part.points).map((pointName) => (
+      <Point
+        key={pointName}
+        pointName={pointName}
+        point={props.part.points[pointName]}
+        topLeft={props.part.topLeft}
+        bottomRight={props.part.bottomRight}
+        {...props}
+      />
+    ))}
+    {Object.keys(props.part.snippets).map((snippetName) => (
+      <Snippet
+        key={snippetName}
+        snippetName={snippetName}
+        snippet={props.part.snippets[snippetName]}
+        {...props}
+      />
+    ))}
+  </>)
+}
+
+const Part = props => {
+  const { partName, part} = props
   return (
       <g {...getProps(part)} id={`part-${partName}`}>
-        {grid}
-        {
-          props.gist?._state?.xray?.enabled &&
-          <XrayPart {...props} />
-        }
-        {Object.keys(part.paths).map((pathName) => (
-          <Path
-            key={pathName}
-            pathName={pathName}
-            path={part.paths[pathName]}
-            topLeft={props.part.topLeft}
-            bottomRight={props.part.bottomRight}
-            {...props}
-          />
-        ))}
-        {Object.keys(props.part.points).map((pointName) => (
-          <Point
-            key={pointName}
-            pointName={pointName}
-            point={props.part.points[pointName]}
-            topLeft={props.part.topLeft}
-            bottomRight={props.part.bottomRight}
-            {...props}
-          />
-        ))}
-        {Object.keys(props.part.snippets).map((snippetName) => (
-          <Snippet
-            key={snippetName}
-            snippetName={snippetName}
-            snippet={props.part.snippets[snippetName]}
-            {...props}
-          />
-        ))}
-        {focus}
+        {PartInner(props)}
       </g>
   )
 }

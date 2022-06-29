@@ -1,6 +1,6 @@
-import React from 'react'
+import {forwardRef} from 'react'
 
-const Svg = ({
+const Svg = forwardRef(({
   embed = true,
   develop = false,
   locale = 'en',
@@ -10,7 +10,7 @@ const Svg = ({
   width,
   height,
   children
-}) => {
+}, ref) => {
   if (width < 1) width = 1000
   if (height < 1) height = 1000
   let attributes = {
@@ -29,7 +29,7 @@ const Svg = ({
   }
   if (develop) attributes.className += ' develop'
 
-  return <svg {...attributes}>{children}</svg>
-}
+  return <svg {...attributes} ref={ref}>{children}</svg>
+})
 
 export default Svg

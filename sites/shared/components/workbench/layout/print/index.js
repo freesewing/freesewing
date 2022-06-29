@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import Settings from './settings'
-import Draft from '../draft'
+import Draft from '../draft/index'
 import pluginBuilder from './plugin'
 
 const PrintLayout = props => {
@@ -46,6 +46,7 @@ const PrintLayout = props => {
         updateGist={props.updateGist}
         patternProps={patternProps}
         bgProps={bgProps}
+        gistReady={props.gistReady}
       />
     </div>
   )
