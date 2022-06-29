@@ -89,7 +89,7 @@
     "yaml": "^1.10.2"
   },
   "devDependencies": {
-    "backpack-core": "0.7.0",
+    "backpack-core": "0.8.4",
     "prettier": "^2.3.1"
   }
 }
