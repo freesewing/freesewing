@@ -10,7 +10,7 @@ When you're using fabric with some stretch in it, it is a good idea to stabilize
 
 ## Step 1: The eyes
 
-- Cut pieces of black fabric the size of the eye on the body pieces.
+- Cut pieces of black fabric the size of the eyes on the body pieces.
 - Stabilise the fabric with a bit of interfacing.
 - With white thread, either by hand or machine *bar tack* the pupils onto the eyes like eyelets.
 
