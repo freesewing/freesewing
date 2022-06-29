@@ -30,7 +30,7 @@ You may need to leave an opening in the front cross seam so you can pin yourself
 
 <Tip>
 
-If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
+If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
 
 </Tip>
 
