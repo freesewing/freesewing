@@ -1,5 +1,7 @@
 Unreleased:
-  Added:
+  Fixed:
+    config-helpers:
+      - Guard against missing measurements in toAbs()
 
 2.21.1:
   date: 2022-06-28
