@@ -5,16 +5,16 @@ title: "Noble body block: Cutting Instructions"
 **Main fabric**
 
 - Cut **1 Front Inside** part on the fold.
-- Cut **2 Front Outside** part.
+- Cut **2 Front Outside** parts.
 
 ### Shoulder dart
 
-- Cut **2 Back Inside** part.
-- Cut **2 Back Outside** part.
+- Cut **2 Back Inside** parts.
+- Cut **2 Back Outside** parts.
 
 ### Armhole dart
 
-- Cut **2 Back** part.
+- Cut **2 Back** parts.
 
 These cutting instructions are just for the default Noble block. Adjust your cutting accordingly if you have/are making changes to the block.
 
