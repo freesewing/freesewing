@@ -47,7 +47,7 @@ const hasRequiredMeasurementsMethod = (design, gist) => {
 const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const {gist, setGist, unsetGist, clearGist, updateGist, gistReady} = useGist(design, app);
+  const {gist, setGist, unsetGist, updateGist, gistReady} = useGist(design, app);
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
 
@@ -67,11 +67,11 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     const doPreload = async () => {
       if (preload && from && preloaders[from]) {
         const g = await preloaders[from](preload, design)
-        setGist({...g.settings})
+        setGist({...gist, ...g.settings})
       }
     }
     doPreload();
-  }, [preload, from])
+  }, [preload, from, gist])
 
   // Helper methods to manage the gist state
   const updateWBGist = useMemo(() => (path, value, closeNav=false) => {
@@ -114,7 +114,6 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     updateGist: updateWBGist,
     unsetGist,
     setGist,
-    clearGist,
     draft,
     feedback,
     gistReady,
