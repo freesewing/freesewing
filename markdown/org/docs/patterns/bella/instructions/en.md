@@ -17,12 +17,12 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 - Close the front bust and waist darts.
 - Close the back darts.
-- Sew the front to the backs at the shoulders good sides together.
-- Sew the front to the backs at the side seams good sides together.
+- Sew the front to the backs at the shoulders _good sides together_.
+- Sew the front to the backs at the side seams _good sides together_.
 
 <Tip>
 
-If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
+If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
 
 </Tip>
 

@@ -21,20 +21,21 @@ As Bent is a block it does not have any closures. So the instructions below will
 
 ### Step 1: Mock-up Construction
 
-- Sew the fronts to the back at the shoulder seams good sides together.
-- Sew the fronts to the back at the side seams good sides together.
-- Sew the under sleeves to the top sleeves good sides together along the side seams.
-- Attach the sleeves to the body, good sides together and sew them in the round.
+- Sew the fronts to the back at the shoulder seams _good sides together_.
+- Sew the fronts to the back at the side seams _good sides together_.
+- Sew the under sleeves to the top sleeves _good sides together_ along the side seams.
+- Attach the sleeves to the body, _good sides together_ and sew them in the round.
 
 <Note>
 
-You may need to ease/gather the sleeves to fit.\
+You may need to ease/gather the sleeves to fit.
+  
 You may need to leave the bottom of one of the sleeve seams open to put the garment on.
 
 </Note>
 <Tip>
 
-If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
+If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
 
 </Tip>
 

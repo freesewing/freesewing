@@ -30,7 +30,7 @@ You may need to leave an opening in the front cross seam so you can pin yourself
 
 <Tip>
 
-If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
+If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
 
 </Tip>
 
@@ -50,7 +50,7 @@ Sometimes you may need to wear the mock-up for an extended amount of time to get
 
 <Note>
 
-Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look.\
+Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look. 
 For instance:
 
 - Add a front closure

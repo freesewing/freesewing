@@ -17,9 +17,9 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 - Close the front darts.
 - Close the back darts.
-- Sew the front to the backs at the shoulders good sides together.
-- Matching notches, sew the sleeves to the shoulder good sides together.
-- Sew the side seams good sides together.
+- Sew the front to the backs at the shoulders _good sides together_.
+- Matching notches, sew the sleeves to the shoulder _good sides together_.
+- Sew the side seams *good sides together*.
 
 <Note>
 
@@ -29,7 +29,7 @@ You may need to leave the bottom of sleeve side seams open to put the garment on
 
 <Tip>
 
-If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
+If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
 
 </Tip>
 

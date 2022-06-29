@@ -17,11 +17,11 @@ Noble is based on the Bella body block
 
 ### Step 1: Mock-up Construction
 
-- Sew the front inside to the front outside, good sides together.
+- Sew the front inside to the front outside, _good sides together_.
 
 ### Shoulder seam
 
-- Sew the back inside to the back outside, good sides together.
+- Sew the back inside to the back outside, _good sides together_.
 
 ### Armhole seam
 
@@ -29,12 +29,12 @@ Noble is based on the Bella body block
 
 ### Both
 
-- Sew the front to the backs at the shoulders, good sides together.
-- Sew the front to the backs at the side seams, good sides together.
+- Sew the front to the backs at the shoulders, _good sides together_.
+- Sew the front to the backs at the side seams, _good sides together_.
 
 <Tip>
 
-If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
+If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
 
 </Tip>
 
@@ -61,7 +61,8 @@ For instance:
 
 - Change the neck line
 - Add/change the closure allowances
-- Alter the dart placements
+- Alter the princess seam placements
+- Alter the back dart placements.
 - Add a collar
 
 It is all up to you! Experiment and go forth!
