@@ -60,7 +60,12 @@ const Draft = props => {
 
   return (
     <div className="my-8 w-11/12 m-auto border-2 border-dotted border-base-content shadow">
-      <Svg {...patternProps} embed={gist.embed} ref={svgRef} viewBox={layout.topLeft ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.width} ${layout.height}` :  false}>
+      <Svg {...patternProps}
+        embed={gist.embed}
+        ref={svgRef}
+        viewBox={layout.topLeft ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.width} ${layout.height}` :  false}
+        style={{maxHeight: '100vh'}}
+      >
         <Defs {...patternProps} />
         <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
         <g>
