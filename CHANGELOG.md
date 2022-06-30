@@ -4,6 +4,29 @@
 ## Unreleased
 
 
+## 2.21.2 (2022-06-30)
+
+### simon
+
+#### Changed
+
+ - Decreased default collar ease
+ - Increased default yoke height
+
+### simone
+
+#### Changed
+
+ - Decreased default collar ease
+ - Increased default yoke height
+
+### ursula
+
+#### Added
+
+ - Added markers for elastics
+
+
 ## 2.21.1 (2022-06-28)
 
 ### pattern-info

@@ -1,7 +1,25 @@
 Unreleased:
+  Added:
+
+2.21.2:
+  date: 2022-06-30
+
+  Added:
+    ursula:
+      - Added markers for elastics
+
+  Changed:
+    simon:
+      - Decreased default collar ease
+      - Increased default yoke height
+    simone:
+      - Decreased default collar ease
+      - Increased default yoke height
+
   Fixed:
-    config-helpers:
-      - Guard against missing measurements in toAbs()
+    remark-jaron:
+      - Roll-back upgrade to ESM only unist-dist-visit
+        Closes [#2342](https://github.com/freesewing/freesewing/issues/2342)
 
 2.21.1:
   date: 2022-06-28
