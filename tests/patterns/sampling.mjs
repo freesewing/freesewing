@@ -14,7 +14,7 @@ import { nonHumanMeasurements } from './non-human-measurements.mjs'
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']
 
-export const testPatternSampling = (design, Pattern, expect, models, patterns) => {
+export const testPatternSampling = (design, Pattern, expect, models, patterns, log=false) => {
   // Load non-human measurements
   const nonHuman = nonHumanMeasurements(models)
 
@@ -53,7 +53,7 @@ export const testPatternSampling = (design, Pattern, expect, models, patterns) =
             measurement
           },
           measurements
-        }))).to.equal(true)
+        }), log)).to.equal(true)
       })
     }
   }
@@ -64,6 +64,7 @@ export const testPatternSampling = (design, Pattern, expect, models, patterns) =
      */
     it('Sample different options:' , () => true)
     for (let option in Pattern.config.options) {
+      if (typeof Pattern.config.options[option] === 'object') {
       it(`  Sample ${option}:` , () => {
         expect(doesItSample(new Pattern({
           sample: {
@@ -71,8 +72,9 @@ export const testPatternSampling = (design, Pattern, expect, models, patterns) =
             option
           },
           measurements
-        }))).to.equal(true)
+        }), log)).to.equal(true)
       })
+      }
     }
   }
 
@@ -87,7 +89,7 @@ export const testPatternSampling = (design, Pattern, expect, models, patterns) =
           models: ourModels,
         },
         measurements
-      }))).to.equal(true)
+      }), log)).to.equal(true)
     })
   }
 
@@ -104,7 +106,7 @@ export const testPatternSampling = (design, Pattern, expect, models, patterns) =
               models: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'][type]
             },
             measurements
-          }))).to.equal(true)
+          }), log)).to.equal(true)
         })
       }
     }
