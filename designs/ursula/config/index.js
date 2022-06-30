@@ -33,12 +33,12 @@ export default {
     gusset2: 'elastic',
   },
   inject: {
-  front2: "front",
-  back2: "back",
-  gusset2: "gusset",
+    front2: 'front',
+    back2: 'back',
+    gusset2: 'gusset',
   },
-  hide: ['front','back','gusset'],
-  parts: ['front', 'back', 'gusset', 'elastic','front2','back2','gusset2'],
+  hide: ['front', 'back', 'gusset'],
+  parts: ['front', 'back', 'gusset', 'elastic', 'front2', 'back2', 'gusset2'],
   //Constants
   options: {
     backToFrontLength: 1.15, // Maybe include this in advanced options?

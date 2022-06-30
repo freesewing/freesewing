@@ -27,10 +27,10 @@ export default function (part) {
 
   /* Store lengths for use in elastic */
   paths.gussetLegOpening = new Path()
-      .move(points.backGussetRight)
-      .curve(points.backGussetRight, points.gussetCp2, points.frontGussetRight)
-      .setRender(false)  
-  store.set('gussetSideLength',paths.gussetLegOpening.length())
+    .move(points.backGussetRight)
+    .curve(points.backGussetRight, points.gussetCp2, points.frontGussetRight)
+    .setRender(false)
+  store.set('gussetSideLength', paths.gussetLegOpening.length())
 
   // Draw paths
   paths.seam = new Path()
