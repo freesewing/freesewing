@@ -1,6 +1,13 @@
 # Change log for: @freesewing/simone
 
 
+## 2.21.2 (2022-06-30)
+
+### Changed
+
+ - Decreased default collar ease
+ - Increased default yoke height
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

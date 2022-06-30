@@ -1,6 +1,12 @@
 # Change log for: @freesewing/ursula
 
 
+## 2.21.2 (2022-06-30)
+
+### Added
+
+ - Added markers for elastics
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed
