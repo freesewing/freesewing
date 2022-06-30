@@ -132,6 +132,7 @@ const config = {
     seperateButtonholePlacket: { bool: false },
 
     // Collar
+    collarEase: { pct: 2, min: 0, max: 10 },
     collarAngle: { deg: 85, min: 60, max: 130 },
     collarBend: { pct: 3.5, min: 0, max: 10 },
     collarFlare: { deg: 3.5, min: 0, max: 10 },
@@ -173,7 +174,7 @@ const config = {
     // Shoulders
     shoulderEase: { pct: 2, min: 0, max: 15 },
     splitYoke: { bool: false },
-    yokeHeight: { pct: 55, min: 10, max: 90 },
+    yokeHeight: { pct: 70, min: 40, max: 90 },
 
     // Sleeve
     sleeveLengthBonus: { pct: 3.5, min: -40, max: 10 },
