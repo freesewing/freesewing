@@ -72,7 +72,7 @@ components:
     '@fontsource/ubuntu': *ubuntu
     '@freesewing/i18n': *freesewing
     '@freesewing/utils': *freesewing
-    'react-intl': &react-intl '^5.24.4'
+    'react-intl': &react-intl '^5.25.1'
     '@material-ui/core': &matui-core '^4.12.3'
     '@material-ui/icons': &matui-icons '^4.11.2'
     '@material-ui/lab': &matui-lab '^v4.0.0-alpha.60'
@@ -208,7 +208,7 @@ react-pattern:
     '@freesewing/i18n': *freesewing
 remark-jargon:
   _:
-    'unist-util-visit': '^4.0.0'
+    'unist-util-visit': '^2.0.3'
   peer:
     'remark': '^13.0.0'
     'remark-html': '^13.0.1'
