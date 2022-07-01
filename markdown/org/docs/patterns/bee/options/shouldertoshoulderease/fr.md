@@ -1,8 +1,10 @@
 ---
-title: undefined
+title: "Shoulder to Shoulder ease (Bella)"
 ---
 
-undefined
+---
+
+Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on.
 
 
 ## Effect of this option on the pattern
