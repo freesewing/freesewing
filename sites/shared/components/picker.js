@@ -2,9 +2,9 @@ import {useRef, forwardRef} from 'react'
 import { Menu } from '@headlessui/react'
 import Link from 'next/link'
 
-const Picker = ({Icon, className, selectedItem, iconOnly=false, children}) => {
+export const Picker = ({Icon, className, title, iconOnly=false, children, isStatic=false}) => {
 
-	return (<Menu as="div" className={`dropdown dropdown-end ${className} w-auto`}>
+	return (<Menu as="div" className={`dropdown dropdown-end w-auto`}>
 		<Menu.Button className={iconOnly
 			? `btn btn-sm`
 			: `m-0 btn btn-neutral flex flex-row gap-2 btn-outline
@@ -13,15 +13,13 @@ const Picker = ({Icon, className, selectedItem, iconOnly=false, children}) => {
 			`}
 			aria-label="Choose Theme">
 			<Icon />
-			{!iconOnly && <span>{selectedItem}</span>}
+			{!iconOnly && <span>{title}</span>}
 			</Menu.Button>
-		<Menu.Items as="ul" className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+		<Menu.Items as="ul" className={`p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 ${className}`} static={isStatic}>
 		 {children}
 		</Menu.Items>
 	</Menu>)
 }
-
-export default Picker
 
 const itemClass = (active) => "btn btn-ghost " + (active ? 'bg-base-200' : '')
 
