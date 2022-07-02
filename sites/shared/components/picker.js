@@ -7,9 +7,8 @@ export const Picker = ({Icon, className, title, iconOnly=false, children, isStat
 	return (<Menu as="div" className={`dropdown dropdown-end w-auto`}>
 		<Menu.Button className={iconOnly
 			? `btn btn-sm`
-			: `m-0 btn btn-neutral flex flex-row gap-2 btn-outline
-			md:btn-ghost
-			hover:bg-neutral hover:border-neutral-content
+			: `m-0 btn btn-neutral flex flex-row gap-2
+			hover:bg-neutral-content hover:border-neutral-content hover:text-neutral
 			`}
 			aria-label="Choose Theme">
 			<Icon />

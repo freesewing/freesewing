@@ -68,7 +68,7 @@ const Header = ({ app }) => {
                   : <><MenuIcon /><span className="opacity-50 pl-2 flex flex-row items-center gap-1"><Right />swipe</span></>
                 }
             </button>
-            <div className="hidden md:flex flex-row items-center">
+            <div className="hidden md:flex flex-row items-center gap-2">
               <PatternPicker app={app} />
               <VersionPicker app={app} />
             </div>
@@ -79,7 +79,7 @@ const Header = ({ app }) => {
                 </a>
               </Link>
             </div>
-            <div className="hidden md:flex flex-row items-center">
+            <div className="hidden md:flex flex-row items-center gap-2">
               <ThemePicker app={app} />
               <LocalePicker app={app} />
             </div>
