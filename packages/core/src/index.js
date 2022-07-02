@@ -18,8 +18,12 @@ export {
   Snippet,
   utils,
 }
+
 // This is a helper for configuration files
 export const pctBasedOn = utils.pctBasedOn
+
+// This is a helper for manual layouts
+export const generatePartTransform = utils.generatePartTransform
 
 /*
  * Default exports will be removed in FreeSewing v3
