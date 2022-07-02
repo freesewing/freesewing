@@ -43,6 +43,13 @@
     padding: 0;
     display: inline;
   }
+  /* Keep p tags in lists inline */
+  .mdx ul li p,
+  .mdx ol li p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
   /* Prevent inline code style from applying to code blocks */
   .mdx code.hljs {
     color: inherit;
