@@ -1,6 +1,6 @@
 ---
 title: Getting started on Mac
-order: 20
+order: 25
 for: developers
 icons: 
   - start

@@ -18,10 +18,16 @@ for different measurements and options to see how well it adapts.
 </Tip>
 
 If testing your pattern sounds like a lot of work, you're in luck. FreeSewing can do it
-for you. Click the **Test your pattern** button in the top navigation bar of your
-development environment, and you'll see a number of choices on the right:
+for you. Click the **Test Design** link in the sidebar under the **View** title.
 
-- Test pattern options
+<Fixme>
+The new development environment does not yet support all tests.
+Update these docs when that's completed
+</Fixme>
+
+You have a number of ways to test your pattern:
+
+- Test design options
 - Test measurements
 - Test models
 

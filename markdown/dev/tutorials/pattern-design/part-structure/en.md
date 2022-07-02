@@ -4,11 +4,11 @@ order: 150
 ---
 
 Let's get rid of the example box first.
-Open `src/bib.js` and make sure it looks like this:
+Open `design/src/bib.js` and make sure it looks like this:
 
 ```js
 export default function(part) {
-  let { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
+  const { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
   // Design pattern here
 
   // Complete?

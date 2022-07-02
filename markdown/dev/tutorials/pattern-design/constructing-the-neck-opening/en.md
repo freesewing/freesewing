@@ -14,7 +14,7 @@ to our measurements and options to do so. For this, you first update the shortha
 to indicate you also want access to `measurements` and `options`:
 
 ```js
-let {
+const {
   Point,
   points,
   Path,

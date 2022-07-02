@@ -9,7 +9,7 @@ Most patterns will have multiple parts. A sleeve, a back part, the collar, and s
 Our pattern is very simple, and only has one part: the bib.
 
 The pattern that's been created for us also just has one part to get you started.
-It's called **box** and it draws a box. If you click on the **Draft your pattern**
+It's called **box** and it draws a box. If you click on the **To your design**
 button in your browser, you'll get to see it:
 
 ![The default pattern with its box part](./step1.png)
@@ -18,11 +18,11 @@ Since we only need one part, we'll rename this _box_ part, and call it _bib_.
 
 ## Rename the box part to bib
 
-First, update the configuration file in `config/index.js`.
+First, update the configuration file in `design/config.js`.
 Update the **parts** array with `bib`, rather than `box`:
 
 ```js
-parts: ["bib"],
+parts: ['bib'],
 ```
 
 <Note>
@@ -33,9 +33,9 @@ This will (temporarily) cause en error to appear in your development environment
 
 </Note>
 
-When that's done, rename the `src/box.js` file into `src/bib.js`.
+When that's done, rename the `design/src/box.js` file into `design/src/bib.js`.
 
-Then, in the `src/index.js` file, change the import accordingly:
+Then, in the `design/src/index.js` file, change the import accordingly:
 
 ```js
 // Change this line
@@ -45,14 +45,14 @@ Then, in the `src/index.js` file, change the import accordingly:
 import draftBib from "./bib"
 ```
 
-Finally, still in the `src/index.js` file, update the draftmethod:
+Finally, still in the `design/src/index.js` file, update the draft method:
 
 ```js
 // Change this line
-//Pattern.prototype.draftBox = draftBox
+//Design.prototype.draftBox = draftBox
 
 // Into this
-Pattern.prototype.draftBib = draftBib
+Design.prototype.draftBib = draftBib
 ```
 
 <Tip>
