@@ -6,6 +6,10 @@ import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from 'site/components/layouts/bare'
 import Navigation, { Icons } from 'shared/components/navigation/primary'
+import Highlight from 'shared/components/mdx/highlight'
+import Popout from 'shared/components/popout'
+import WebLink from 'shared/components/web-link'
+import Code from 'shared/components/code'
 
 const HomePage = (props) => {
   const app = useApp()
@@ -77,6 +81,55 @@ const HomePage = (props) => {
           </div>
         </section>
       <div>
+      <div className="max-w-7xl m-auto my-32">
+        <h2>TL;DR</h2>
+        <div className="flex flex-row flex-wrap gap-4 justify-between">
+          <div className="max-w-xl">
+            <h3>To go fast, go alone</h3>
+            <p>All you need is <strong>NodeJS</strong>; Then run:</p>
+            <Highlight language="js">
+              npx @freesewing/new-design
+            </Highlight>
+            <p>This command will setup our stand-alone development environment for you</p>
+            <Popout tip compact>
+              Use this if you want to do your own thing, and not contribute to FreeSewing
+            </Popout>
+          </div>
+          <div className="max-w-xl">
+            <h3>To go far, go together</h3>
+            <p>
+              First, <WebLink
+                href="https://github.com/freesewing/freesewing/fork"
+                txt="fork our monorepo"
+              />, then run:
+            </p>
+            <Highlight language="shell">
+              git clone {`<url to your fork>`}
+              <br />
+              cd freesewing
+              <br />
+              yarn kickstart
+            </Highlight>
+            <p>
+              These commands will clone your fork of <WebLink
+                href="https://github.com/freesewing/freesewing"
+                txt="the freesewing/freesewing repository on Github"
+              /> and set it up for development.
+            </p>
+            <Popout tip compact>
+              Use this if you want to contribute to FreeSewing, for the betterment of all involved
+            </Popout>
+            <Popout note>
+              <ul className="list-inside list-disc">
+                <li>You need <WebLink href="https://yarnpkg.com/" txt="yarn"/> to work with our monorepo</li>
+                <li>
+                  Clone the URL to your own fork:
+                  <Code>{`https://github.com/your-username-here/freesewing`}</Code></li>
+              </ul>
+            </Popout>
+          </div>
+        </div>
+      </div>
       <div className="max-w-7xl m-auto my-32">
         <div className="bg-cover bg-neutral w-full bg-center rounded-lg shadow p-4 "
           style={{backgroundImage: "url(/support.jpg)"}}
