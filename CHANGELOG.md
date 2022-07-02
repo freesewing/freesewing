@@ -8,6 +8,10 @@
 
 ### new-design
 
+#### Changed
+
+ - We're now loading content from the main branch by default
+
 #### Fixed
 
  - Add bin entry to package.json

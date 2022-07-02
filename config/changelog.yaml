@@ -4,6 +4,10 @@ Unreleased:
 2.21.3:
   date: 2022-07-03
 
+  Changed:
+    new-design:
+      - We're now loading content from the main branch by default
+
   Fixed:
     new-design:
       - Add bin entry to package.json

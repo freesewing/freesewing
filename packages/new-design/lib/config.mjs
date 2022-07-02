@@ -1,8 +1,8 @@
 export const config = {
   node: 14, // Minimum node version
   fileUri: 'https://raw.githubusercontent.com',
-  repo: 'freesewing/freesewing', // Repository to download from
-  branch: 'develop', // Branch to download from
+  repo: process.env.FS_REPO || 'freesewing/freesewing', // Repository to download from
+  branch: process.env.FS_BRANCH || 'main', // Branch to download from
   i18n: [
     'account',
     'common',
