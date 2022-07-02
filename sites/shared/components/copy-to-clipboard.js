@@ -3,9 +3,11 @@ import { useState } from 'react'
 import CopyIcon from 'shared/components/icons/copy.js'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 
-const strip = html => new DOMParser()
-  .parseFromString(html, 'text/html')
-  .body.textContent || ""
+const strip = html => (typeof DOMParser === 'undefined')
+  ? html
+  : new DOMParser()
+    .parseFromString(html, 'text/html')
+    .body.textContent || ""
 
 
 const CopyToClipboardIcon = ({ content }) => {
