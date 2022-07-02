@@ -71,7 +71,7 @@ const send = async (test = true) => {
     // you can use this if loop to start just after the last
     // successful delivery
     if (i > 0) {
-      let unsub = `${backend}unsubscribe/${sub.ehash}`
+      let unsub = `${backend}newsletter/unsubscribe/${sub.ehash}`
       inject.unsubscribe = unsub
       let body = mustache.render(template, inject)
       console.log(`${i}/${subs} Sending to ${sub.email}`)
