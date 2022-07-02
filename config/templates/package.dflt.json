@@ -25,7 +25,7 @@
   "files": ["dist/*", "README.md"],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=14.0.0",

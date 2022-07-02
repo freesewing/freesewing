@@ -6,6 +6,12 @@
 
 ## 2.21.3 (2022-07-03)
 
+### core
+
+#### Changed
+
+ - Make generatePartTransform a named export
+
 ### new-design
 
 #### Changed

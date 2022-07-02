@@ -46,6 +46,7 @@
     "@freesewing/plugin-i18n": "latest",
     "@freesewing/utils": "latest",
     "@freesewing/models": "latest",
+    "@headlessui/react": "^1.6.5",
     "js-yaml": "^4.1.0",
     "file-saver": "^2.0.5",
     "axios": "^0.27.2",

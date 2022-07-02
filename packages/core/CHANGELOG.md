@@ -1,6 +1,12 @@
 # Change log for: @freesewing/core
 
 
+## 2.21.3 (2022-07-03)
+
+### Changed
+
+ - Make generatePartTransform a named export
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

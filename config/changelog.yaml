@@ -5,6 +5,8 @@ Unreleased:
   date: 2022-07-03
 
   Changed:
+    core:
+      - Make generatePartTransform a named export
     new-design:
       - We're now loading content from the main branch by default
 
