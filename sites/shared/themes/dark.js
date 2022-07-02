@@ -16,7 +16,7 @@ module.exports = {
   'accent-content': colors.pink['50'],
 
   'neutral': '#000000', // Dark as my soul
-  'neutral-focus': colors.neutral['800'],
+  'neutral-focus': colors.neutral['300'],
   'neutral-content': colors.neutral['50'],
 
   'base-100': colors.neutral['900'],
