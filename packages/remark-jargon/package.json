@@ -1,6 +1,6 @@
 {
   "name": "remark-jargon",
-  "version": "2.21.3-rc.0",
+  "version": "2.21.3",
   "description": "A Remark plugin for jargon terms",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -44,7 +44,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=14.0.0",

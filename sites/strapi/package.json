@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/strapi",
-  "version": "2.21.2",
+  "version": "2.21.3",
   "description": "Freesewing's Strapi instance",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://posts.freesewing.org/",

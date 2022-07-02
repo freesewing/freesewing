@@ -1,6 +1,6 @@
 {
   "name": "freesewing.dev",
-  "version": "2.21.2",
+  "version": "2.21.3",
   "private": true,
   "scripts": {
     "dev": "node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
@@ -9,7 +9,7 @@
     "build": "node --experimental-json-modules ./node_modules/.bin/next build",
     "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build",
     "export": "yarn prebuild && next build && next export && node scripts/algolia.mjs",
-    "start": "next start -p 3002",
+    "start": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
     "lint": "next lint",
     "serve": "pm2 start npm --name 'dev' -- run start"
   },
@@ -40,7 +40,7 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.21.2",
+    "remark-jargon": "^2.21.3",
     "roughjs": "^4.5.2",
     "viz.js": "^2.1.2"
   },

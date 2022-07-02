@@ -1,6 +1,6 @@
 {
   "name": "freesewing.lab",
-  "version": "2.21.2",
+  "version": "2.21.3",
   "private": true,
   "scripts": {
     "dev": "node --experimental-json-modules ../../node_modules/.bin/next dev -p 8000",
@@ -43,7 +43,7 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.21.2"
+    "remark-jargon": "^2.21.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
