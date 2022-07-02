@@ -1,6 +1,12 @@
 # Change log for: @freesewing/new-design
 
 
+## 2.21.3 (2022-07-03)
+
+### Fixed
+
+ - Add bin entry to package.json
+
 
 This is the **initial release**, and the start of this change log.
 

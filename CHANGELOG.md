@@ -4,6 +4,15 @@
 ## Unreleased
 
 
+## 2.21.3 (2022-07-03)
+
+### new-design
+
+#### Fixed
+
+ - Add bin entry to package.json
+
+
 ## 2.21.2 (2022-06-30)
 
 ### simon

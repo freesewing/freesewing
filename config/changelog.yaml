@@ -1,6 +1,13 @@
 Unreleased:
   Added:
 
+2.21.3:
+  date: 2022-07-03
+
+  Fixed:
+    new-design:
+      - Add bin entry to package.json
+
 2.21.2:
   date: 2022-06-30
 
