@@ -214,6 +214,11 @@
   color: var(--btn-error-content);
 }
 
+/* fix focus styling for outline buttons */
+.btn-outline:focus {
+  @apply border-base-content bg-base-content text-base-100;
+}
+
 /* Theme gradient */
 .theme-gradient {
   background-image: var(--theme-gradient);

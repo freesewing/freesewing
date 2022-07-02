@@ -79,7 +79,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
                       {Object.keys(groups[group][type]).map((m) => (
                         <li key={`${m}-${type}-${group}`} className="">
                           <button
-                            className="flex flex-row btn btn-outline"
+                            className="flex flex-row btn btn-outline:focus-visible btn-outline"
                             onClick={() => updateMeasurements(groups[group][type][m], false)}
                           >
                             {icons[type]}
