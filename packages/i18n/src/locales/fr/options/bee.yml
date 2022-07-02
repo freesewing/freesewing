@@ -77,3 +77,6 @@ fullChestEaseReduction:
 highBustWidth:
   title: Largeur du tour de buste supérieur (Bella)
   description: Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee
+shoulderToShoulderEase:
+  title: Shoulder to Shoulder ease (Bella)
+  description: Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on
