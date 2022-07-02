@@ -28,11 +28,10 @@ const PatternPicker = ({ app }) => {
         </li>
         {Object.keys(app.navigation[section]).filter((p)=>!p.startsWith('__')).map(pattern => {
           const patternProps = {
-            href: app.navigation[section][pattern].__slug,
-            key: pattern
+            href: app.navigation[section][pattern].__slug
           }
 
-          return (<PickerLink {...patternProps} >
+          return (<PickerLink {...patternProps} key={pattern}>
             <span className="sr-only">{sectionTitle}</span> {app.navigation[section][pattern].__title}
           </PickerLink>)
         })}
