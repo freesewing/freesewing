@@ -25,7 +25,8 @@ const PatternPicker = ({ app }) => {
 
   const pickerProps = {
     title: formatVersionTitle(version),
-    Icon: VersionsIcon
+    Icon: VersionsIcon,
+    ariaLabel: t('versionPicker')
   }
 
   return (<Picker {...pickerProps}>

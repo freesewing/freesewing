@@ -2,7 +2,6 @@ import themes from 'shared/themes/index.js'
 import ThemeIcon from 'shared/components/icons/theme.js'
 import { useTranslation } from 'next-i18next'
 import {Picker, PickerButton} from './picker';
-import { Menu } from '@headlessui/react'
 
 const ThemePicker = ({ app, className, iconOnly=false }) => {
   const { t } = useTranslation(['themes'])
@@ -16,7 +15,8 @@ const ThemePicker = ({ app, className, iconOnly=false }) => {
     className,
     iconOnly,
     Icon: ThemeIcon,
-    title: t(`${app.theme}Theme`)
+    title: t(`${app.theme}Theme`),
+    ariaLabel: t('themesPicker')
   }
   return (<Picker {...pickerProps}>
     {Object.keys(themes).map(theme => (

@@ -3,8 +3,11 @@ import DesignIcon from 'shared/components/icons/design'
 import { useTranslation } from 'next-i18next'
 import {Picker, PickerLink} from 'shared/components/picker'
 
+
 const PatternPicker = ({ app }) => {
   const { t } = useTranslation(['common'])
+
+  const sectionPatterns = (section) => Object.keys(app.navigation[section]).filter((p)=>!p.startsWith('__'))
 
   const pickerProps = {
     Icon: DesignIcon,
@@ -14,19 +17,17 @@ const PatternPicker = ({ app }) => {
 
   return (<Picker {...pickerProps}>
     {Object.keys(app.navigation).map(section => {
-      const sectionProps = {
-        selectedItem: t(app.navigation[section].__title),
-        isStatic: true
-      }
       const sectionTitle = t(app.navigation[section].__title);
+
       {return (<React.Fragment key={section}>
         <li className={`
           capitalize font-bold text-base-content text-center
           opacity-50 border-b2 my-2 border-base-content
-          `} {...sectionProps}>
+          `}>
           {sectionTitle}
         </li>
-        {Object.keys(app.navigation[section]).filter((p)=>!p.startsWith('__')).map(pattern => {
+
+        {sectionPatterns(section).map(pattern => {
           const patternProps = {
             href: app.navigation[section][pattern].__slug
           }

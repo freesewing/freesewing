@@ -58,7 +58,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   // force view to measurements
   useEffect(() => {
     if (!gistReady) return
-    if (gistReady && gist._state?.view !== 'measurements'
+    if (gist._state?.view !== 'measurements'
       && !hasRequiredMeasurements
     ) updateGist(['_state', 'view'], 'measurements')
   }, [gistReady, gist._state?.view, hasRequiredMeasurements])
