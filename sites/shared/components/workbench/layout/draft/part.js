@@ -44,7 +44,7 @@
  *  how custom layouts are supported in the core. And I would like to discuss this with the core team.
  */
 import {PartInner} from '../../draft/part'
-import {generatePartTransform} from '@freesewing/core/src/part'
+import { generatePartTransform } from '@freesewing/core'
 import { getProps, angle } from '../../draft/utils'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
