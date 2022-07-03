@@ -24,7 +24,7 @@
     "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
     "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
-    "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6",
+    "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
     "build": "yarn buildall",
     "testall": "node scripts/testall.js",
     "release": "lerna exec --no-bail -- npm publish",
