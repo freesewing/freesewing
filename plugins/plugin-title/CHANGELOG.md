@@ -1,13 +1,13 @@
 # Change log for: @freesewing/plugin-title
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Added
 
@@ -17,7 +17,7 @@
 
  - Removed rendering of config.cut as it's not used
 
-## 2.19.6 (2021-12-29)
+## 2.19.6 (2021-12-28)
 
 ### Added
 
@@ -27,19 +27,19 @@
 
  - Add utility classes and CSS variables for better styling support
 
-## 2.9.0 (2020-10-02)
+## 2.9.0 (2020-10-01)
 
 ### Added
 
  - Added support for cutting instructions. Closes [#500](https://github.com/freesewing/freesewing/issues/500)
 
-## 2.4.2 (2020-03-08)
+## 2.4.2 (2020-03-07)
 
 ### Changed
 
  - Added *for* to title output
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

@@ -1,13 +1,13 @@
 # Change log for: remark-jargon
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.1.1 (2019-10-13)
+## 2.1.1 (2019-10-12)
 
 ### Added
 

@@ -1,25 +1,25 @@
 # Change log for: @freesewing/plugin-cutonfold
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Added
 
  - Support for scale setting
 
-## 2.19.6 (2021-12-29)
+## 2.19.6 (2021-12-28)
 
 ### Added
 
  - Added (esm) unit tests
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

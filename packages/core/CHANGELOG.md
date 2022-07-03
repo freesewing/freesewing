@@ -1,65 +1,65 @@
 # Change log for: @freesewing/core
 
 
-## 2.21.3 (2022-07-03)
+## 2.21.3 (2022-07-02)
 
 ### Changed
 
  - Make generatePartTransform a named export
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
  - The `pctBasedOn()` helper method for pattern config was moved to config-helpers We did not make this a breaking change since it's only used internally.
 
-## 2.20.8 (2022-05-21)
+## 2.20.8 (2022-05-20)
 
 ### Fixed
 
  - Fixed warning message when moving to a non-existing point
  - Fixed incorrect decision in Path.boundary()
 
-## 2.20.5 (2022-02-17)
+## 2.20.5 (2022-02-16)
 
 ### Fixed
 
  - Fix bug in Svg.escapeText() that only escaped the first quote
 
-## 2.20.3 (2022-01-28)
+## 2.20.3 (2022-01-27)
 
 ### Changed
 
  - Setting Path.render() no longer raises an info message
  - Always raise debug, but only store it whend debug is enabled
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Added
 
  - Added support for `settings.scale`
 
-## 2.19.8 (2022-01-08)
+## 2.19.8 (2022-01-07)
 
 ### Fixed
 
  - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
 
-## 2.19.6 (2021-12-29)
+## 2.19.6 (2021-12-28)
 
 ### Added
 
  - Added the new attributes.setIfUnset() method
  - Added the new `scale` setting
 
-## 2.19.5 (2021-11-13)
+## 2.19.5 (2021-11-12)
 
 ### Fixed
 
  - Fixed a copy-paste error that caused the `absoluteOptions` shorthand property to be a proxy for the regular options object instead. Note that this bug (and proxying in general) only occurs in debug mode.
 
-## 2.19.0 (2021-10-17)
+## 2.19.0 (2021-10-16)
 
 ### Added
 
@@ -69,37 +69,37 @@
 
  - Pattern.on() is now chainable as it returns the Pattern object
 
-## 2.18.0 (2021-09-09)
+## 2.18.0 (2021-09-08)
 
 ### Fixed
 
  - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
 
-## 2.17.1 (2021-07-14)
+## 2.17.1 (2021-07-13)
 
 ### Fixed
 
  - Fixed edge case in utils.beamsIntersect() when line is almost vertical See [#1206](https://github.com/freesewing/freesewing/issues/1206)
 
-## 2.17.0 (2021-07-01)
+## 2.17.0 (2021-06-30)
 
 ### Fixed
 
  - Fix a bug in `path.shiftAlong` where no point is returned if the distance to shift is a fraction of one step (1/25mm) into a new path segment See [#1140](https://github.com/freesewing/freesewing/issues/1140)
 
-## 2.15.2 (2021-04-28)
+## 2.15.2 (2021-04-27)
 
 ### Fixed
 
  - Path.shiftAlong takes now an optional second paramter to control the number of steps the path will be divided in per Mm (if it's a curve) default is 25 See [#976](https://github.com/freesewing/freesewing/issues/976)
 
-## 2.15.1 (2021-04-24)
+## 2.15.1 (2021-04-23)
 
 ### Fixed
 
  - Fixed bug in the dependency resolved when dependecies are passed as a string See [#971](https://github.com/freesewing/freesewing/issues/971)
 
-## 2.15.0 (2021-04-15)
+## 2.15.0 (2021-04-14)
 
 ### Added
 
@@ -109,25 +109,25 @@
 
  - Don't round coordinates internally to avoid path.split misses
 
-## 2.10.3 (2020-11-08)
+## 2.10.3 (2020-11-07)
 
 ### Changed
 
  - Renderprops now includes SVG with preRender hook applied
 
-## 2.10.2 (2020-11-07)
+## 2.10.2 (2020-11-06)
 
 ### Fixed
 
  - Fixed bundled bezier-js version
 
-## 2.10.1 (2020-11-07)
+## 2.10.1 (2020-11-06)
 
 ### Changed
 
  - Switched to bezier-js v3
 
-## 2.9.0 (2020-10-02)
+## 2.9.0 (2020-10-01)
 
 ### Added
 
@@ -135,19 +135,19 @@
  - Added the `info` type to raised events
  - Added support for conditional loading of plugins
 
-## 2.8.0 (2020-08-10)
+## 2.8.0 (2020-08-09)
 
 ### Fixed
 
  - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
 
-## 2.7.2 (2020-07-29)
+## 2.7.2 (2020-07-28)
 
 ### Fixed
 
  - Fixed wrong return value in debug message from Path
 
-## 2.7.1 (2020-07-24)
+## 2.7.1 (2020-07-23)
 
 ### Added
 
@@ -155,7 +155,7 @@
  - Added a new `debug` setting
  - Shorthand now proxies objects to allow debug and raise
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Added
 
@@ -167,39 +167,39 @@
 
  - [Properly escape quotes in imperial units](https://github.com/freesewing/freesewing/issues/437)
 
-## 2.6.0 (2020-05-01)
+## 2.6.0 (2020-04-30)
 
 ### Changed
 
  - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
  - We no longer set the plugin configuration/data object to fall in `pattern.use()`
 
-## 2.4.4 (2020-03-15)
+## 2.4.4 (2020-03-14)
 
 ### Fixed
 
  - New Svg.escapeText() method to escape text at render time, rather than at draft time This fixes the difference in the inch symbol is displayed in the React component or rendered SVG
 
-## 2.2.0 (2020-02-22)
+## 2.2.0 (2020-02-21)
 
 ### Added
 
  - Added the `Path.noop()` method
  - Added the `Path.insop()` methods
 
-## 2.1.9 (2020-01-18)
+## 2.1.9 (2020-01-17)
 
 ### Fixed
 
  - [#19](https://github.com/freesewing/freesewing/issues/19): Path offset issue is now fixed in upstream bezier-js@2.4.6
 
-## 2.1.0 (2019-10-06)
+## 2.1.0 (2019-10-05)
 
 ### Changed
 
  - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

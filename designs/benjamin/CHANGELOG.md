@@ -1,49 +1,49 @@
 # Change log for: @freesewing/benjamin
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.8.1 (2020-08-16)
+## 2.8.1 (2020-08-15)
 
 ### Fixed
 
  - Fixed issue with (length of) band
 
-## 2.8.0 (2020-08-10)
+## 2.8.0 (2020-08-09)
 
 ### Fixed
 
  - Fix for incorrect length of the ribbon
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Changed
 
  - Removed `Circumference` suffix from measurement names
 
-## 2.0.2 (2019-09-06)
+## 2.0.2 (2019-09-05)
 
 ### Fixed
 
  - Added bandLength option to fit optiongroup (it was missing)
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

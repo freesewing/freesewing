@@ -4,7 +4,7 @@
 ## Unreleased
 
 
-## 2.21.3 (2022-07-03)
+## 2.21.3 (2022-07-02)
 
 ### core
 
@@ -23,7 +23,7 @@
  - Add bin entry to package.json
 
 
-## 2.21.2 (2022-06-30)
+## 2.21.2 (2022-06-29)
 
 ### simon
 
@@ -46,7 +46,7 @@
  - Added markers for elastics
 
 
-## 2.21.1 (2022-06-28)
+## 2.21.1 (2022-06-27)
 
 ### pattern-info
 
@@ -55,7 +55,7 @@
  - Added Noble to the list
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### benjamin
 
@@ -608,7 +608,7 @@
  - Migrated from Rollup to Esbuild for all builds
 
 
-## 2.20.8 (2022-05-21)
+## 2.20.8 (2022-05-20)
 
 ### brian
 
@@ -691,7 +691,7 @@
  - Fixed incorrect decision in Path.boundary()
 
 
-## 2.20.7 (2022-02-20)
+## 2.20.7 (2022-02-19)
 
 ### components
 
@@ -700,7 +700,7 @@
  - Type-check for optionalMeasurements key in gist Closes [#1918](https://github.com/freesewing/freesewing/issues/1918)
 
 
-## 2.20.6 (2022-02-17)
+## 2.20.6 (2022-02-16)
 
 ### components
 
@@ -715,7 +715,7 @@
  - Set units on fontsizes to support scale setting
 
 
-## 2.20.5 (2022-02-17)
+## 2.20.5 (2022-02-16)
 
 ### simon
 
@@ -736,7 +736,7 @@
  - Fix bug in Svg.escapeText() that only escaped the first quote
 
 
-## 2.20.4 (2022-01-28)
+## 2.20.4 (2022-01-27)
 
 ### create-freesewing-pattern
 
@@ -745,7 +745,7 @@
  - Downgraded back to react-scripts 4 because 5 has a regression bug
 
 
-## 2.20.3 (2022-01-28)
+## 2.20.3 (2022-01-27)
 
 ### simon
 
@@ -768,7 +768,7 @@
  - Updated to react-scripts 5 to sidestep bug in error-overlay
 
 
-## 2.20.2 (2022-01-27)
+## 2.20.2 (2022-01-26)
 
 ### i18n
 
@@ -777,7 +777,7 @@
  - Patterns options were always in English due to symlinks being used
 
 
-## 2.20.1 (2022-01-27)
+## 2.20.1 (2022-01-26)
 
 ### bee
 
@@ -798,7 +798,7 @@
  - Remove debug outline when enabling box pleat setting
 
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### benjamin
 
@@ -1200,7 +1200,7 @@
  - Fixed issue that was causing plugin translations to always be in English
 
 
-## 2.19.9 (2022-01-09)
+## 2.19.9 (2022-01-08)
 
 ### simon
 
@@ -1209,7 +1209,7 @@
  - Fix incorrectly alliegned fabric match line. Move to CF instead [Fixed by @nicholasdower in
 
 
-## 2.19.8 (2022-01-08)
+## 2.19.8 (2022-01-07)
 
 ### simon
 
@@ -1230,7 +1230,7 @@
  - Remove CSS var in SVG to preserve styling Fixes [#1606](https://github.com/freesewing/freesewing/issues/1606)
 
 
-## 2.19.7 (2022-01-06)
+## 2.19.7 (2022-01-05)
 
 ### brian
 
@@ -1252,7 +1252,7 @@
  - Correctly place sleevecap notches Closes [#1602](https://github.com/freesewing/freesewing/issues/1602)
 
 
-## 2.19.6 (2021-12-29)
+## 2.19.6 (2021-12-28)
 
 ### rendertest
 
@@ -1438,7 +1438,7 @@
  - Fix axios version conflict
 
 
-## 2.19.5 (2021-11-13)
+## 2.19.5 (2021-11-12)
 
 ### charlie
 
@@ -1470,7 +1470,7 @@
  - Fixed a copy-paste error that caused the `absoluteOptions` shorthand property to be a proxy for the regular options object instead. Note that this bug (and proxying in general) only occurs in debug mode.
 
 
-## 2.19.4 (2021-11-09)
+## 2.19.4 (2021-11-08)
 
 ### titan
 
@@ -1498,7 +1498,7 @@
  - Fix dependencies when only drafting a front Closes [#1445](https://github.com/freesewing/freesewing/issues/1445)
 
 
-## 2.19.3 (2021-11-05)
+## 2.19.3 (2021-11-04)
 
 ### charlie
 
@@ -1511,7 +1511,7 @@
  - Worked around ESM issue by adding snapseries as local dependency
 
 
-## 2.19.2 (2021-11-02)
+## 2.19.2 (2021-11-01)
 
 ### holmes
 
@@ -1563,7 +1563,7 @@
  - Added linedrawing for Walburga
 
 
-## 2.19.1 (2021-10-23)
+## 2.19.1 (2021-10-22)
 
 ### hortensia
 
@@ -1594,7 +1594,7 @@
  - Fixed incorrect value for `brianFitCollar` resulting in incorrect collar fit Closes [#1411](https://github.com/freesewing/freesewing/issues/1411)
 
 
-## 2.19.0 (2021-10-17)
+## 2.19.0 (2021-10-16)
 
 ### holmes
 
@@ -1780,7 +1780,7 @@
  - Added Walburga pattern
 
 
-## 2.18.0 (2021-09-09)
+## 2.18.0 (2021-09-08)
 
 ### holmes
 
@@ -1836,7 +1836,7 @@
  - Added optional chaining so missing options always lead to clear error message
 
 
-## 2.17.4 (2021-08-20)
+## 2.17.4 (2021-08-19)
 
 ### simon
 
@@ -1845,7 +1845,7 @@
  - Fixed typo that caused paperless to error
 
 
-## 2.17.3 (2021-08-16)
+## 2.17.3 (2021-08-15)
 
 ### i18n
 
@@ -1860,7 +1860,7 @@
  - Added missing `bustPointToUnderbust` measurement to `neckstimate`
 
 
-## 2.17.2 (2021-08-15)
+## 2.17.2 (2021-08-14)
 
 ### simon
 
@@ -1887,7 +1887,7 @@
  - Added the new `bustPointToUnderbust` measurement for future bikini pattern
 
 
-## 2.17.1 (2021-07-14)
+## 2.17.1 (2021-07-13)
 
 ### core
 
@@ -1902,7 +1902,7 @@
  - Updated department to new range of options See [#1207](https://github.com/freesewing/freesewing/pull/1207)
 
 
-## 2.17.0 (2021-07-01)
+## 2.17.0 (2021-06-30)
 
 ### bent
 
@@ -2059,7 +2059,7 @@
  - Changed antman references to antperson
 
 
-## 2.16.2 (2021-05-05)
+## 2.16.2 (2021-05-04)
 
 ### components
 
@@ -2081,7 +2081,7 @@
  - String updates
 
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### benjamin
 
@@ -2320,7 +2320,7 @@
  - measurementDiffers takes an extra `absolute` value that can be set to false to get the non-absolute and non-rounded value
 
 
-## 2.16.0 (2021-05-24)
+## 2.16.0 (2021-05-23)
 
 ### florent
 
@@ -2382,7 +2382,7 @@
  - Changes to cfp strings
 
 
-## 2.15.4 (2021-05-08)
+## 2.15.4 (2021-05-07)
 
 ### bella
 
@@ -2391,7 +2391,7 @@
  - Fixed incorrect part dependencies See [#1002](https://github.com/freesewing/freesewing/issues/1002)
 
 
-## 2.15.3 (2021-05-05)
+## 2.15.3 (2021-05-04)
 
 ### shin
 
@@ -2400,7 +2400,7 @@
  - Fixed issue where a legReduction of zero broke the draft See [#997](https://github.com/freesewing/freesewing/issues/997)
 
 
-## 2.15.2 (2021-04-28)
+## 2.15.2 (2021-04-27)
 
 ### jaeger
 
@@ -2415,7 +2415,7 @@
  - Path.shiftAlong takes now an optional second paramter to control the number of steps the path will be divided in per Mm (if it's a curve) default is 25 See [#976](https://github.com/freesewing/freesewing/issues/976)
 
 
-## 2.15.1 (2021-04-24)
+## 2.15.1 (2021-04-23)
 
 ### charlie
 
@@ -2440,7 +2440,7 @@
  - Fixed bug in the dependency resolved when dependecies are passed as a string See [#971](https://github.com/freesewing/freesewing/issues/971)
 
 
-## 2.15.0 (2021-04-15)
+## 2.15.0 (2021-04-14)
 
 ### bella
 
@@ -2572,7 +2572,7 @@
  - Info now also contains deprecated status
 
 
-## 2.14.0 (2021-03-07)
+## 2.14.0 (2021-03-06)
 
 ### cornelius
 
@@ -2600,7 +2600,7 @@
  - Added translations for Cornelius
 
 
-## 2.13.2 (2021-02-21)
+## 2.13.2 (2021-02-20)
 
 ### bella
 
@@ -2645,7 +2645,7 @@
  - Make pattern list alphabetic
 
 
-## 2.13.1 (2021-02-14)
+## 2.13.1 (2021-02-13)
 
 ### hortensia
 
@@ -2666,7 +2666,7 @@
  - Pass pattern handle to tiler
 
 
-## 2.13.0 (2021-02-13)
+## 2.13.0 (2021-02-12)
 
 ### hortensia
 
@@ -2741,7 +2741,7 @@
  - Translation for Hortensia
 
 
-## 2.12.1 (2021-01-27)
+## 2.12.1 (2021-01-26)
 
 ### create-freesewing-pattern
 
@@ -2750,7 +2750,7 @@
  - Fixed missing dependency
 
 
-## 2.12.0 (2021-01-19)
+## 2.12.0 (2021-01-18)
 
 ### bella
 
@@ -2759,7 +2759,7 @@
  - Initial release of this body block for womenswear
 
 
-## 2.11.3 (2021-01-16)
+## 2.11.3 (2021-01-15)
 
 ### florence
 
@@ -2872,7 +2872,7 @@
  - Fixed links in Workbench footer
 
 
-## 2.11.2 (2021-01-11)
+## 2.11.2 (2021-01-10)
 
 ### brian
 
@@ -2887,7 +2887,7 @@
  - Fixed links in Workbench footer
 
 
-## 2.11.1 (2021-01-11)
+## 2.11.1 (2021-01-10)
 
 ### create-freesewing-pattern
 
@@ -2896,7 +2896,7 @@
  - Fixed issue with node-sass, see [#778](https://github.com/freesewing/freesewing/issues/778) and [#779](https://github.com/freesewing/freesewing/issues/779)
 
 
-## 2.11.0 (2021-01-10)
+## 2.11.0 (2021-01-09)
 
 ### shin
 
@@ -2952,7 +2952,7 @@
  - Type in Simon title
 
 
-## 2.10.7 (2020-11-18)
+## 2.10.7 (2020-11-17)
 
 ### simon
 
@@ -2961,7 +2961,7 @@
  - Yoke dart did not affect sleevecap length. See [#687](https://github.com/freesewing/freesewing/issues/687)
 
 
-## 2.10.6 (2020-11-15)
+## 2.10.6 (2020-11-14)
 
 ### components
 
@@ -2970,7 +2970,7 @@
  - Workbench now supports loading a pattern configuration from a (github) gist
 
 
-## 2.10.5 (2020-11-14)
+## 2.10.5 (2020-11-13)
 
 ### i18n
 
@@ -2979,7 +2979,7 @@
  - Added missing `cty.` translations to non-English language files
 
 
-## 2.10.4 (2020-11-13)
+## 2.10.4 (2020-11-12)
 
 ### titan
 
@@ -2988,7 +2988,7 @@
  - Issue with incorrectly named point
 
 
-## 2.10.3 (2020-11-08)
+## 2.10.3 (2020-11-07)
 
 ### components
 
@@ -3003,7 +3003,7 @@
  - Renderprops now includes SVG with preRender hook applied
 
 
-## 2.10.2 (2020-11-07)
+## 2.10.2 (2020-11-06)
 
 ### core
 
@@ -3012,7 +3012,7 @@
  - Fixed bundled bezier-js version
 
 
-## 2.10.1 (2020-11-07)
+## 2.10.1 (2020-11-06)
 
 ### components
 
@@ -3033,7 +3033,7 @@
  - Removed unused CSS code
 
 
-## 2.10.0 (2020-10-17)
+## 2.10.0 (2020-10-16)
 
 ### albert
 
@@ -3042,7 +3042,7 @@
  - Albert is an apron pattern
 
 
-## 2.9.0 (2020-10-02)
+## 2.9.0 (2020-10-01)
 
 ### teagan
 
@@ -3109,7 +3109,7 @@
  - Added teagan info
 
 
-## 2.8.1 (2020-08-16)
+## 2.8.1 (2020-08-15)
 
 ### benjamin
 
@@ -3130,7 +3130,7 @@
  - Fixed breaking change in execa upgrade in 2.8.0
 
 
-## 2.8.0 (2020-08-10)
+## 2.8.0 (2020-08-09)
 
 ### benjamin
 
@@ -3161,7 +3161,7 @@
  - Fix an edge case in utils.pointOnCurve for perfect horizontal curves
 
 
-## 2.7.2 (2020-07-29)
+## 2.7.2 (2020-07-28)
 
 ### core
 
@@ -3170,7 +3170,7 @@
  - Fixed wrong return value in debug message from Path
 
 
-## 2.7.1 (2020-07-24)
+## 2.7.1 (2020-07-23)
 
 ### aaron
 
@@ -3253,7 +3253,7 @@
  - Added backend calls for creating gists/issues on Github
 
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### benjamin
 
@@ -3607,7 +3607,7 @@
  - Added the `isDegMeasurement` method
 
 
-## 2.6.0 (2020-05-01)
+## 2.6.0 (2020-04-30)
 
 ### florence
 
@@ -3686,7 +3686,7 @@
  - Changes to support the renaming of @freesewing/fu to @freesewing/florence
 
 
-## 2.5.0 (2020-04-05)
+## 2.5.0 (2020-04-04)
 
 ### diana
 
@@ -3711,7 +3711,7 @@
  - title, description, and options for Dianna
 
 
-## 2.4.6 (2020-03-23)
+## 2.4.6 (2020-03-22)
 
 ### i18n
 
@@ -3720,7 +3720,7 @@
  - Fixed an bug in the i18n package
 
 
-## 2.4.5 (2020-03-19)
+## 2.4.5 (2020-03-18)
 
 ### florence
 
@@ -3741,7 +3741,7 @@
  - neckstimate() now returns values rounded to nearest mm
 
 
-## 2.4.4 (2020-03-15)
+## 2.4.4 (2020-03-14)
 
 ### huey
 
@@ -3780,7 +3780,7 @@
  - New Svg.escapeText() method to escape text at render time, rather than at draft time This fixes the difference in the inch symbol is displayed in the React component or rendered SVG
 
 
-## 2.4.3 (2020-03-12)
+## 2.4.3 (2020-03-11)
 
 ### i18n
 
@@ -3789,7 +3789,7 @@
  - Added more translations
 
 
-## 2.4.2 (2020-03-08)
+## 2.4.2 (2020-03-07)
 
 ### plugin-title
 
@@ -3810,7 +3810,7 @@
  - Added more strings
 
 
-## 2.4.1 (2020-03-04)
+## 2.4.1 (2020-03-03)
 
 ### components
 
@@ -3825,7 +3825,7 @@
  - [#542](https://github.com/freesewing/freesewing.org/issues/542): Prevent neckstimate from throwing when getting an unexpected measurement 
 
 
-## 2.4.0 (2020-02-29)
+## 2.4.0 (2020-02-28)
 
 ### florence
 
@@ -3835,7 +3835,7 @@
  - Initial release
 
 
-## 2.3.0 (2020-02-23)
+## 2.3.0 (2020-02-22)
 
 ### holmes
 
@@ -3852,7 +3852,7 @@
  - Initial release
 
 
-## 2.2.0 (2020-02-22)
+## 2.2.0 (2020-02-21)
 
 ### florent
 
@@ -4060,7 +4060,7 @@
  - Neckstimate now uses proportions only
 
 
-## 2.1.9 (2020-01-18)
+## 2.1.9 (2020-01-17)
 
 ### simon
 
@@ -4075,7 +4075,7 @@
  - [#19](https://github.com/freesewing/freesewing/issues/19): Path offset issue is now fixed in upstream bezier-js@2.4.6
 
 
-## 2.1.8 (2019-12-16)
+## 2.1.8 (2019-12-15)
 
 ### simon
 
@@ -4084,7 +4084,7 @@
  - [#416](https://github.com/freesewing/freesewing.org/issues/416): Fixed bug in simon sleeve
 
 
-## 2.1.7 (2019-12-15)
+## 2.1.7 (2019-12-14)
 
 ### carlton
 
@@ -4094,7 +4094,7 @@
  - Re-numbered tail as part 5
 
 
-## 2.1.6 (2019-11-24)
+## 2.1.6 (2019-11-23)
 
 ### utils
 
@@ -4103,7 +4103,7 @@
  - [#317](https://github.com/freesewing/freesewing.org/issues/317): Fixed bug where format was not passed to formatImperial
 
 
-## 2.1.5 (2019-11-19)
+## 2.1.5 (2019-11-18)
 
 ### plugin-dimension
 
@@ -4112,7 +4112,7 @@
  - Fixed issue where inch marks where breaking SVG because of unescaped double quotes
 
 
-## 2.1.4 (2019-11-01)
+## 2.1.4 (2019-10-31)
 
 ### components
 
@@ -4125,7 +4125,7 @@
  - The Ogol component has been removed as it wasn't used
 
 
-## 2.1.3 (2019-10-18)
+## 2.1.3 (2019-10-17)
 
 ### i18n
 
@@ -4144,7 +4144,7 @@
  - [#250](https://github.com/freesewing/freesewing.org/issues/250): Model page stays empty with pre 2.0 model data: Error: 'neckstimate() requires a valid measurement name as second parameter. (received underBust)'
 
 
-## 2.1.2 (2019-10-14)
+## 2.1.2 (2019-10-13)
 
 ### i18n
 
@@ -4153,7 +4153,7 @@
  - Fixed issue where symlinks were causing all languages to export English strings
 
 
-## 2.1.1 (2019-10-13)
+## 2.1.1 (2019-10-12)
 
 ### components
 
@@ -4188,7 +4188,7 @@
  - Fixed an issue with the formatMm method not adding units
 
 
-## 2.1.0 (2019-10-06)
+## 2.1.0 (2019-10-05)
 
 ### penelope
 
@@ -4279,7 +4279,7 @@
  - Fixed an issue where optionDefault was not handling list options correctly
 
 
-## 2.0.4 (2019-09-27)
+## 2.0.4 (2019-09-26)
 
 ### carlton
 
@@ -4298,7 +4298,7 @@
  - [#104](https://github.com/freesewing/freesewing/issues/104): Fixed incorrect embed setting on Workbench pattern export
 
 
-## 2.0.3 (2019-09-15)
+## 2.0.3 (2019-09-14)
 
 ### bruce
 
@@ -4325,7 +4325,7 @@
  - Fix measurementDiffers to pass breasts parameter to neckstimate
 
 
-## 2.0.2 (2019-09-06)
+## 2.0.2 (2019-09-05)
 
 ### benjamin
 
@@ -4385,7 +4385,7 @@
  - Removed lingering debug statement in formatImperial
 
 
-## 2.0.1 (2019-09-01)
+## 2.0.1 (2019-08-31)
 
 ### theo
 
@@ -4415,7 +4415,7 @@
  - The `measurementDiffers` method is new.
 
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### benjamin
 

@@ -1,32 +1,32 @@
 # Change log for: @freesewing/breanna
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.13.0 (2021-02-13)
+## 2.13.0 (2021-02-12)
 
 ### Fixed
 
  - Try harder to find the intersection point for the scyedart
  - Define missing y variable in paperless branch
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Changed
 
@@ -35,7 +35,7 @@
  - Removed `Circumference` suffix from measurement names
  - Removed deprecated `debug()` statements
 
-## 2.2.0 (2020-02-22)
+## 2.2.0 (2020-02-21)
 
 ### Added
 

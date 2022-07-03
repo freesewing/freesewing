@@ -1,33 +1,33 @@
 # Change log for: @freesewing/plugin-bundle
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - plugin-banner is now part of plugin-bundle
  - plugin-bartack is now part of plugin-bundle
 
-## 2.19.6 (2021-12-29)
+## 2.19.6 (2021-12-28)
 
 ### Added
 
  - Added (esm) unit tests
 
-## 2.17.0 (2021-07-01)
+## 2.17.0 (2021-06-30)
 
 ### Changed
 
  - Include plugin-buttons
  - Include plugin-mirror
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

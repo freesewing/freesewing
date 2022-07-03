@@ -6,7 +6,7 @@ import { designs, plugins, packages, software  } from './software/index.mjs'
  * order. This file takes care of that
  */
 
-const first = [ 'core', 'config-helpers', 'remark-jargon', 'pattern-info' ]
+const first = [ 'core', 'config-helpers', 'remark-jargon']
 const blocks = [ 'brian', 'titan', 'bella', 'breanna' ]
 const extended = [ 'bent', 'simon', 'carlton', 'ursula' ]
 
@@ -29,6 +29,8 @@ export const buildOrder = [
 
   // Then build all remaining designs
   Object.keys(designs).filter(id => [...blocks, ...extended].indexOf(id) === -1),
+
+  ['pattern-info'],
 
   // Finally build the rest of the packages
   Object.keys(packages).filter(id => first.indexOf(id) === -1),

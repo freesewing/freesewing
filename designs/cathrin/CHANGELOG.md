@@ -1,25 +1,25 @@
 # Change log for: @freesewing/cathrin
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Changed
 
@@ -33,7 +33,7 @@
  - [Fixed missing points issue when changing panels option](https://github.com/freesewing/freesewing.org/issues/619)
  - Fixed panels option being a list of numbers rather than strings
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

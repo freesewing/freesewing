@@ -1,7 +1,7 @@
 # Change log for: @freesewing/hugo
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
@@ -11,57 +11,57 @@
 
  - Fix incorrect seam allowance Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
 
-## 2.20.1 (2022-01-27)
+## 2.20.1 (2022-01-26)
 
 ### Fixed
 
  - Seam allowance on pocket is incorrectly marked for cut-on-fold Closes [#1731](https://github.com/freesewing/freesewing/issues/1731)
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.17.0 (2021-07-01)
+## 2.17.0 (2021-06-30)
 
 ### Changed
 
  - Set brian `s3` options as constants
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.14.0 (2021-03-07)
+## 2.14.0 (2021-03-06)
 
 ### Fixed
 
  - Replaced grainline indicator on pocket with cut-on-fold indicator
 
-## 2.13.0 (2021-02-13)
+## 2.13.0 (2021-02-12)
 
 ### Fixed
 
  - Fix style of the seam allowance paths
  - Fix sleeve dependencies
 
-## 2.11.3 (2021-01-16)
+## 2.11.3 (2021-01-15)
 
 ### Fixed
 
  - Removed inherited notches
 
-## 2.7.1 (2020-07-24)
+## 2.7.1 (2020-07-23)
 
 ### Fixed
 
  - Set missing option `brianFitCollar` to `false`
  - Adding missing control point to front neck opening
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Added
 
@@ -74,7 +74,7 @@
  - Removed `Circumference` suffix from measurement names
  - Removed deprecated `debug()` statements
 
-## 2.6.0 (2020-05-01)
+## 2.6.0 (2020-04-30)
 
 ### Fixed
 
@@ -82,7 +82,7 @@
  - Do not render pocket outline when complete is falsy
  - Do not render pocket facing hint when complete is falsy
 
-## 2.2.0 (2020-02-22)
+## 2.2.0 (2020-02-21)
 
 ### Changed
 
@@ -92,7 +92,7 @@
 
  - Made sure dimensions for hood center and waistband are always shown
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

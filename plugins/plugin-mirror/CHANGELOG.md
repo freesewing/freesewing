@@ -1,25 +1,25 @@
 # Change log for: @freesewing/plugin-mirror
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.19.6 (2021-12-29)
+## 2.19.6 (2021-12-28)
 
 ### Added
 
  - Added (esm) unit tests
 
-## 2.17.0 (2021-07-01)
+## 2.17.0 (2021-06-30)
 
 ### Changed
 
  - Is now included in plugin-bundle
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Added
 

@@ -1,26 +1,26 @@
 # Change log for: @freesewing/penelope
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.19.5 (2021-11-13)
+## 2.19.5 (2021-11-12)
 
 ### Changed
 
  - Increased maximum for the `waistEase` option
  - Increased maximum for the `seatEase` options
 
-## 2.19.0 (2021-10-17)
+## 2.19.0 (2021-10-16)
 
 ### Changed
 
@@ -33,32 +33,32 @@
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1320](https://github.com/freesewing/freesewing/issues/1316)
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.13.2 (2021-02-21)
+## 2.13.2 (2021-02-20)
 
 ### Fixed
 
  - Fixed issue in shape part
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Changed
 
  - Ported penelope to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
  - Removed `Circumference` suffix from measurement names
 
-## 2.2.0 (2020-02-22)
+## 2.2.0 (2020-02-21)
 
 ### Fixed
 
  - Fixed tags in pattern config file
 
-## 2.1.0 (2019-10-06)
+## 2.1.0 (2019-10-05)
 
 ### Added
 

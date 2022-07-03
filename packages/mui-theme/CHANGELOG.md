@@ -1,20 +1,20 @@
 # Change log for: @freesewing/mui-theme
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.2.0 (2020-02-22)
+## 2.2.0 (2020-02-21)
 
 ### Changed
 
  - Changed the light background to `#f8f9fa` rather than `#fff`
  - Changed the navbar to be light/dark based on the theme, rather than always dark
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

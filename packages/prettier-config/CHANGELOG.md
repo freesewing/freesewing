@@ -1,7 +1,7 @@
 # Change log for: @freesewing/prettier-config
 
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

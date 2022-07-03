@@ -1,7 +1,7 @@
 # Change log for: @freesewing/teagan
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
@@ -11,27 +11,27 @@
 
  - Added missing name to config file
 
-## 2.20.8 (2022-05-21)
+## 2.20.8 (2022-05-20)
 
 ### Changed
 
  - Better defaults for sleevecap and armhole depth
  - Teagan now extends the Brian config
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Lock the `frontArmholeDeeper` option to a static value
  - Switched to default import for version from package.json
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.9.0 (2020-10-02)
+## 2.9.0 (2020-10-01)
 
 ### Added
 

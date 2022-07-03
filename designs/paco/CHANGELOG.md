@@ -1,27 +1,27 @@
 # Change log for: @freesewing/paco
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Hide the `frontPocketFlapSize` from the user
  - Switched to default import for version from package.json
 
-## 2.19.4 (2021-11-09)
+## 2.19.4 (2021-11-08)
 
 ### Fixed
 
  - Make paperless markings available when detail is disabled Closes [#1400](https://github.com/freesewing/freesewing/issues/1401)
  - Make pocket flaps properly parametric Closes [#1401](https://github.com/freesewing/freesewing/issues/1401)
 
-## 2.19.0 (2021-10-17)
+## 2.19.0 (2021-10-16)
 
 ### Changed
 
@@ -32,20 +32,20 @@
 
  - Support drafting of non-human measurements (dolls & giants) Closes [#1316](https://github.com/freesewing/freesewing/issues/1316)
 
-## 2.17.0 (2021-07-01)
+## 2.17.0 (2021-06-30)
 
 ### Fixed
 
  - The waistband was incorrectly using the cuff widht See [#1113](https://github.com/freesewing/freesewing/issues/1113)
  - Only draft the cuff part when it's needed See [#1113](https://github.com/freesewing/freesewing/issues/1113)
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.15.0 (2021-04-15)
+## 2.15.0 (2021-04-14)
 
 ### Changed
 
@@ -53,19 +53,19 @@
  - Added the (disabled) waistbandHeight option from Titan
  - Changed to Titan's waistbandWidth option
 
-## 2.13.2 (2021-02-21)
+## 2.13.2 (2021-02-20)
 
 ### Fixed
 
  - Only add paperless dimensions for pockets if we drafted pockets
 
-## 2.8.1 (2020-08-16)
+## 2.8.1 (2020-08-15)
 
 ### Fixed
 
  - Added Titan as a peer dependency
 
-## 2.8.0 (2020-08-10)
+## 2.8.0 (2020-08-09)
 
 ### Added
 

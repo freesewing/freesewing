@@ -1,19 +1,19 @@
 # Change log for: @freesewing/plugin-versionfree-svg
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.19.6 (2021-12-29)
+## 2.19.6 (2021-12-28)
 
 ### Added
 
  - Added (esm) unit tests
 
-## 2.19.0 (2021-10-17)
+## 2.19.0 (2021-10-16)
 
 ### Added
 

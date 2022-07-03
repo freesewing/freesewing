@@ -1,26 +1,26 @@
 # Change log for: @freesewing/rendertest
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Restructured the pattern to allow inclusion of individual parts in Example component
  - Switched to default import for version from package.json
 
-## 2.19.6 (2021-12-29)
+## 2.19.6 (2021-12-28)
 
 ### Changed
 
  - Updated the rendertest pattern to be more concise
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

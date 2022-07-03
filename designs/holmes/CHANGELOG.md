@@ -1,25 +1,25 @@
 # Change log for: @freesewing/holmes
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.19.2 (2021-11-02)
+## 2.19.2 (2021-11-01)
 
 ### Fixed
 
  - Fixed SA to use twice the SA value on hem allowance
 
-## 2.19.0 (2021-10-17)
+## 2.19.0 (2021-10-16)
 
 ### Added
 
@@ -37,31 +37,31 @@
  - _Ear_ has been changed to _Ear flap_
  - Added hem allowance at the hem, rather than standard seam allowance
 
-## 2.18.0 (2021-09-09)
+## 2.18.0 (2021-09-08)
 
 ### Fixed
 
  - The `brimWidth` option is not a percent option, allowing the pattern to scale properly
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.11.3 (2021-01-16)
+## 2.11.3 (2021-01-15)
 
 ### Fixed
 
  - Added missing scalebox
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Changed
 
  - Removed `Circumference` suffix from measurement names
 
-## 2.3.0 (2020-02-23)
+## 2.3.0 (2020-02-22)
 
 ### Added
 

@@ -1,31 +1,31 @@
 # Change log for: @freesewing/albert
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.11.3 (2021-01-16)
+## 2.11.3 (2021-01-15)
 
 ### Fixed
 
  - Added missing scalebox
 
-## 2.10.0 (2020-10-17)
+## 2.10.0 (2020-10-16)
 
 ### Added
 

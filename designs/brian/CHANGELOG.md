@@ -1,14 +1,14 @@
 # Change log for: @freesewing/brian
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
  - Slightly increased the default neck ease
 
-## 2.20.8 (2022-05-21)
+## 2.20.8 (2022-05-20)
 
 ### Added
 
@@ -23,44 +23,44 @@
  - Adde both front and back armhole pitch points Closes [#2057](https://github.com/freesewing/freesewing/issues/2057)
  - Fixed issue with the sleeve length
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.19.7 (2022-01-06)
+## 2.19.7 (2022-01-05)
 
 ### Changed
 
  - Always calculate sleevecap notch from armhole rather than shoulder
  - Default for `sleevecapEase` option is now `0`
 
-## 2.17.0 (2021-07-01)
+## 2.17.0 (2021-06-30)
 
 ### Added
 
  - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.16.0 (2021-05-24)
+## 2.16.0 (2021-05-23)
 
 ### Fixed
 
  - Paperless dimensions don't extend to hem See [#1030](https://github.com/freesewing/freesewing/issues/1030)
 
-## 2.11.2 (2021-01-11)
+## 2.11.2 (2021-01-10)
 
 ### Added
 
  - Marked waistline on Brian. Closes [#782](https://github.com/freesewing/freesewing/issues/782)
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Changed
 
@@ -70,13 +70,13 @@
  - Removed `Circumference` suffix from measurement names
  - Removed deprecated `debug()` statements
 
-## 2.6.0 (2020-05-01)
+## 2.6.0 (2020-04-30)
 
 ### Fixed
 
  - The `saBase` path is no longer being rendered
 
-## 2.2.0 (2020-02-22)
+## 2.2.0 (2020-02-21)
 
 ### Changed
 
@@ -84,7 +84,7 @@
  - Removed deprecated `centerBackNeckToWaist` measurement
  - The `neck` point has been renamed to `hps`
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

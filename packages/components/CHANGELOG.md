@@ -1,31 +1,31 @@
 # Change log for: @freesewing/components
 
 
-## 2.21.0 (2022-06-27)
+## 2.21.0 (2022-06-26)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.8 (2022-05-21)
+## 2.20.8 (2022-05-20)
 
 ### Fixed
 
  - Fix restore of pattern defaults in draft configurator Closes [#1932](https://github.com/freesewing/freesewing/issues/1932)
 
-## 2.20.7 (2022-02-20)
+## 2.20.7 (2022-02-19)
 
 ### Fixed
 
  - Type-check for optionalMeasurements key in gist Closes [#1918](https://github.com/freesewing/freesewing/issues/1918)
 
-## 2.20.6 (2022-02-17)
+## 2.20.6 (2022-02-16)
 
 ### Fixed
 
  - Handle unset props.pattern in DraftConfigurator option.hide check
 
-## 2.20.0 (2022-01-24)
+## 2.20.0 (2022-01-23)
 
 ### Added
 
@@ -35,14 +35,14 @@
 
  - Support handling of `&#160;` in text
 
-## 2.19.2 (2021-11-02)
+## 2.19.2 (2021-11-01)
 
 ### Added
 
  - Added linedrawing for Tiberius
  - Added linedrawing for Walburga
 
-## 2.19.0 (2021-10-17)
+## 2.19.0 (2021-10-16)
 
 ### Added
 
@@ -57,7 +57,7 @@
 
  - Added missing linedrawing for Yuri
 
-## 2.17.0 (2021-07-01)
+## 2.17.0 (2021-06-30)
 
 ### Added
 
@@ -77,20 +77,20 @@
 
  - Correctly load saved value for mm options See [#1136](https://github.com/freesewing/freesewing/issues/1136)
 
-## 2.16.2 (2021-05-05)
+## 2.16.2 (2021-05-04)
 
 ### Fixed
 
  - Don't publish ESM modules as it causes issues with react-intl See [#1079](https://github.com/freesewing/freesewing/issues/1079)
 
-## 2.16.1 (2021-05-30)
+## 2.16.1 (2021-05-29)
 
 ### Added
 
  - Added a new `designs` icon
  - We now publish .mjs files again for the different components
 
-## 2.16.0 (2021-05-24)
+## 2.16.0 (2021-05-23)
 
 ### Changed
 
@@ -101,7 +101,7 @@
  - Added rollup sass plugin
  - Updated for new major version of react-markdown
 
-## 2.15.0 (2021-04-15)
+## 2.15.0 (2021-04-14)
 
 ### Added
 
@@ -116,14 +116,14 @@
 
  - Always show design mode switch
 
-## 2.14.0 (2021-03-07)
+## 2.14.0 (2021-03-06)
 
 ### Added
 
  - Added Bella linedrawing
  - Added Cornelius linedrawing
 
-## 2.13.0 (2021-02-13)
+## 2.13.0 (2021-02-12)
 
 ### Added
 
@@ -133,19 +133,19 @@
 
  - Check point attributes are present before using them
 
-## 2.11.3 (2021-01-16)
+## 2.11.3 (2021-01-15)
 
 ### Fixed
 
  - Fixed links in Workbench footer
 
-## 2.11.2 (2021-01-11)
+## 2.11.2 (2021-01-10)
 
 ### Fixed
 
  - Fixed links in Workbench footer
 
-## 2.11.0 (2021-01-10)
+## 2.11.0 (2021-01-09)
 
 ### Added
 
@@ -164,32 +164,32 @@
  - Include basic themeing in Example component
  - Updated the note and tip icons
 
-## 2.10.6 (2020-11-15)
+## 2.10.6 (2020-11-14)
 
 ### Added
 
  - Workbench now supports loading a pattern configuration from a (github) gist
 
-## 2.10.3 (2020-11-08)
+## 2.10.3 (2020-11-07)
 
 ### Changed
 
  - Draft component now supports snippets in the same way as the render method
 
-## 2.10.1 (2020-11-07)
+## 2.10.1 (2020-11-06)
 
 ### Changed
 
  - Changes to workbench
 
-## 2.9.0 (2020-10-02)
+## 2.9.0 (2020-10-01)
 
 ### Added
 
  - Added Teagan line drawing
  - Added Discord icon in Icon component
 
-## 2.8.0 (2020-08-10)
+## 2.8.0 (2020-08-09)
 
 ### Added
 
@@ -199,13 +199,13 @@
 
  - Removed the `Footer` component
 
-## 2.7.1 (2020-07-24)
+## 2.7.1 (2020-07-23)
 
 ### Added
 
  - Workbench now includes events debug output and enables debug by default
 
-## 2.7.0 (2020-07-12)
+## 2.7.0 (2020-07-11)
 
 ### Added
 
@@ -223,7 +223,7 @@
 
  - Fixed bug that broke millimeter sliders
 
-## 2.6.0 (2020-05-01)
+## 2.6.0 (2020-04-30)
 
 ### Added
 
@@ -233,19 +233,19 @@
  - Refactor to remove prop-types dependency
  - Reworked the withLanguage component to allow adding translations at run-time
 
-## 2.4.2 (2020-03-08)
+## 2.4.2 (2020-03-07)
 
 ### Changed
 
  - Don't load docs in DraftConfigurator
 
-## 2.4.1 (2020-03-04)
+## 2.4.1 (2020-03-03)
 
 ### Fixed
 
  - Fixed `updatePatternData` props issue in the Workbench component
 
-## 2.2.0 (2020-02-22)
+## 2.2.0 (2020-02-21)
 
 ### Added
 
@@ -259,7 +259,7 @@
  - Term `recipe` is now `pattern`
  - Term `gist` is now `data`
 
-## 2.1.4 (2019-11-01)
+## 2.1.4 (2019-10-31)
 
 ### Deprecated
 
@@ -269,13 +269,13 @@
 
  - The Ogol component has been removed as it wasn't used
 
-## 2.1.1 (2019-10-13)
+## 2.1.1 (2019-10-12)
 
 ### Added
 
  - Added the fixme type Blockquote component
 
-## 2.1.0 (2019-10-06)
+## 2.1.0 (2019-10-05)
 
 ### Added
 
@@ -292,7 +292,7 @@
  - Fixed conflicting key values in React components
  - Fixed issue with display of list options in Draftconfigurator
 
-## 2.0.4 (2019-09-27)
+## 2.0.4 (2019-09-26)
 
 ### Added
 
@@ -302,13 +302,13 @@
 
  - [#104](https://github.com/freesewing/freesewing/issues/104): Fixed incorrect embed setting on Workbench pattern export
 
-## 2.0.3 (2019-09-15)
+## 2.0.3 (2019-09-14)
 
 ### Changed
 
  - Tweaked DraftConfigurator tags to match CSS rules after frontend upgrade to react-intl v3
 
-## 2.0.2 (2019-09-06)
+## 2.0.2 (2019-09-05)
 
 ### Fixed
 
@@ -317,7 +317,7 @@
  - DraftConfigurator now properly styles pattern options 3 levels deep
  - [#105](https://github.com/freesewing/freesewing.org/issues/105): Moved state change in render loop to useEffect
 
-## 2.0.0 (2019-08-25)
+## 2.0.0 (2019-08-24)
 
 ### Added
 

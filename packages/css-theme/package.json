@@ -31,7 +31,7 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "watch": "npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css",
-    "cibuild_step6": "npx node-sass --output-style compressed src/theme.scss dist/theme.css"
+    "cibuild_step7": "npx node-sass --output-style compressed src/theme.scss dist/theme.css"
   },
   "peerDependencies": {},
   "dependencies": {
