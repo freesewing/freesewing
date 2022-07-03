@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { useTranslation } from 'next-i18next'
 import { isDegreeMeasurement } from '../../../config/measurements'
-import measurementAsMm from '@freesewing/utils/measurementAsMm'
+import { measurementAsMm } from 'shared/utils'
 
 /*
  * This is a single input for a measurements

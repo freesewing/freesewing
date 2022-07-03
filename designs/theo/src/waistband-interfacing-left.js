@@ -4,7 +4,7 @@ export default function (part) {
     points,
     Path,
     paths,
-    options,
+    absoluteOptions,
     complete,
     paperless,
     measurements,
@@ -14,7 +14,7 @@ export default function (part) {
   } = part.shorthand()
 
   points[0] = new Point(0, 0)
-  points[2] = new Point(options.waistbandWidth, measurements.hips / 2 + 60)
+  points[2] = new Point(absoluteOptions.waistbandWidth, measurements.hips / 2 + 60)
   points[1] = new Point(points[2].x, points[0].y)
   points[3] = new Point(points[0].x, points[2].y)
 

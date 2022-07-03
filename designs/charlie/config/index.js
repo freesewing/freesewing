@@ -71,7 +71,7 @@ export default {
     frontPocketFacing: 'frontPocket',
     backPocketFacing: 'backPocket',
     backPocketInterfacing: 'backPocket',
-    backPocketJet: 'backPocketFacing',
+    backPocketWelt: 'backPocketFacing',
     flyFacing: 'front',
     flyExtension: 'flyFacing',
   },

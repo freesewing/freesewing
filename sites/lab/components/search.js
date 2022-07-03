@@ -1,1 +1,3 @@
-export default () => null
+const noSearch = () => null
+
+export default noSearch

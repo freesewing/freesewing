@@ -6,13 +6,13 @@ export default (part) => {
   for (let id in paths) delete paths[id]
   delete snippets.logo
 
-  const jetHeight = points.bottomRight.x / 5
+  const weltHeight = points.bottomRight.x / 5
   points.bottomLeft = points.curveStartLeft.shift(-90, points.rightNotch.x / 1.75)
   points.bottomRight = points.bottomLeft.flipX()
-  points.midLeft = points.bottomLeft.shift(90, jetHeight)
-  points.midRight = points.bottomRight.shift(90, jetHeight)
-  points.topLeft = points.bottomLeft.shift(90, jetHeight * 2)
-  points.topRight = points.bottomRight.shift(90, jetHeight * 2)
+  points.midLeft = points.bottomLeft.shift(90, weltHeight)
+  points.midRight = points.bottomRight.shift(90, weltHeight)
+  points.topLeft = points.bottomLeft.shift(90, weltHeight * 2)
+  points.topRight = points.bottomRight.shift(90, weltHeight * 2)
   points.leftNotch = new Point(points.leftNotch.x, points.midRight.y)
   points.rightNotch = points.leftNotch.flipX()
 
@@ -34,7 +34,7 @@ export default (part) => {
     macro('title', {
       at: points.titleAnchor,
       nr: 4,
-      title: 'backPocketJet',
+      title: 'backPocketWelt',
       scale: 0.5,
     })
     points.grainlineTop = points.topLeft.shiftFractionTowards(points.topRight, 0.15)
