@@ -15,7 +15,7 @@ import draftFrontPocketFacing from './front-pocket-facing'
 import draftBackPocket from './back-pocket'
 import draftBackPocketFacing from './back-pocket-facing'
 import draftBackPocketInterfacing from './back-pocket-interfacing'
-import draftBackPocketJet from './back-pocket-jet'
+import draftBackPocketWelt from './back-pocket-welt'
 import draftFlyFacing from './fly-facing'
 import draftFlyExtension from './fly-extension'
 import draftBeltLoops from './beltloops'
@@ -40,7 +40,7 @@ Charlie.prototype.draftFrontPocketFacing = (part) => draftFrontPocketFacing(part
 Charlie.prototype.draftBackPocket = (part) => draftBackPocket(part)
 Charlie.prototype.draftBackPocketFacing = (part) => draftBackPocketFacing(part)
 Charlie.prototype.draftBackPocketInterfacing = (part) => draftBackPocketInterfacing(part)
-Charlie.prototype.draftBackPocketJet = (part) => draftBackPocketJet(part)
+Charlie.prototype.draftBackPocketWelt = (part) => draftBackPocketWelt(part)
 Charlie.prototype.draftFlyFacing = (part) => draftFlyFacing(part)
 Charlie.prototype.draftFlyExtension = (part) => draftFlyExtension(part)
 Charlie.prototype.draftBeltLoops = (part) => draftBeltLoops(part)

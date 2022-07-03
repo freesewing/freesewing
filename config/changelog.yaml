@@ -1,5 +1,7 @@
 Unreleased:
   Changed:
+    charlie:
+      - Renamed back pocket jet to back pocket welt
     theo:
       - migrated `waistbandWidth` option from `mm` to snapped `pct` option
 
