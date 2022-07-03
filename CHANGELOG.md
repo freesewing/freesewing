@@ -3,8 +3,20 @@
 
 ## Unreleased
 
+### charlie
 
-## 2.21.3 (2022-07-02)
+#### Changed
+
+ - Renamed back pocket jet to back pocket welt
+
+### theo
+
+#### Changed
+
+ - migrated `waistbandWidth` option from `mm` to snapped `pct` option
+
+
+## 2.21.3 (2022-07-01)
 
 ### core
 

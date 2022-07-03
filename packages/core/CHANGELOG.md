@@ -1,7 +1,7 @@
 # Change log for: @freesewing/core
 
 
-## 2.21.3 (2022-07-02)
+## 2.21.3 (2022-07-01)
 
 ### Changed
 

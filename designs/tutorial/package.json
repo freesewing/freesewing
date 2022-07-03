@@ -47,8 +47,7 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "^10.0.0",
-    "chai": "^4.2.0",
-    "@freesewing/models": "^2.21.3"
+    "chai": "^4.2.0"
   },
   "files": [
     "dist/*",
