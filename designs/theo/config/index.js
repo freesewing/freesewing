@@ -1,4 +1,6 @@
 import { version } from '../package.json'
+import configHelpers from '@freesewing/config-helpers'
+const { steps, pctBasedOn } = configHelpers
 
 export default {
   version,
@@ -34,7 +36,8 @@ export default {
     // Constants
 
     // Millimeter
-    waistbandWidth: { mm: 40, min: 5, max: 80 },
+    //waistbandWidth: { mm: 40, min: 5, max: 80 },
+    waistbandWidth: { pct: 3, min: 2, max: 6, snap: steps, ...pctBasedOn('waistToFloor') },
 
     // Percentages
     legWidth: { pct: 10, min: 0, max: 30 },

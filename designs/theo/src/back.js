@@ -1,11 +1,12 @@
 export default function (part) {
-  let {
+  const {
     store,
     sa,
     Point,
     points,
     Path,
     paths,
+    absoluteOptions,
     options,
     complete,
     paperless,
@@ -45,7 +46,7 @@ export default function (part) {
   points[0] = new Point(0, 0)
   points[1] = new Point(
     0,
-    measurements.crotchDepth - measurements.waistToHips - options.waistbandWidth
+    measurements.crotchDepth - measurements.waistToHips - absoluteOptions.waistbandWidth
   )
   points[2] = new Point(0, points[1].y + measurements.inseam + store.get('lengthBonus'))
   points[201] = points[2].shift(-90, 10)

@@ -1,7 +1,7 @@
 export default function (part) {
-  let { options, Point, points, Path, paths, complete, paperless, macro } = part.shorthand()
+  let { absoluteOptions, Point, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
-  let height = options.waistbandWidth + 30
+  let height = absoluteOptions.waistbandWidth + 30
   let width = (height - 30) / 2
 
   points.topRight = new Point(width / 2, 0)
