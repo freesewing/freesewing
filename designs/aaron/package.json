@@ -43,7 +43,8 @@
     "@freesewing/core": "^2.21.3",
     "@freesewing/plugin-bundle": "^2.21.3",
     "@freesewing/config-helpers": "^2.21.3",
-    "@freesewing/brian": "^2.21.3"
+    "@freesewing/brian": "^2.21.3",
+    "@freesewing/models": "^2.21.3"
   },
   "dependencies": {},
   "devDependencies": {
