@@ -9,6 +9,7 @@ import { designs, plugins, packages, software  } from './software/index.mjs'
 const first = [ 'core', 'config-helpers', 'remark-jargon']
 const blocks = [ 'brian', 'titan', 'bella', 'breanna' ]
 const extended = [ 'bent', 'simon', 'carlton', 'ursula' ]
+const beforePkgs = ['pattern-info']
 
 export const buildOrder = [
 
@@ -30,9 +31,9 @@ export const buildOrder = [
   // Then build all remaining designs
   Object.keys(designs).filter(id => [...blocks, ...extended].indexOf(id) === -1),
 
-  ['pattern-info'],
+  beforePkgs,
 
   // Finally build the rest of the packages
-  Object.keys(packages).filter(id => first.indexOf(id) === -1),
+  Object.keys(packages).filter(id => first.indexOf(id) === -1 && beforePkgs.indexOf(id) === -1),
 ]
 

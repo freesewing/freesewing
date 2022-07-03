@@ -29,8 +29,7 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "prebuild": "node src/prebuild.js",
-    "cibuild_step6": "node src/prebuild.js && node build.js",
-    "cibuild_step7": "node src/prebuild.js && node build.js"
+    "cibuild_step6": "node src/prebuild.js && node build.js"
   },
   "peerDependencies": {},
   "dependencies": {},
