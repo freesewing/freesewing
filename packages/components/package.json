@@ -28,7 +28,7 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "storybook": "start-storybook -p 6663",
-    "cibuild_step7": "node build.js"
+    "cibuild_step6": "node build.js"
   },
   "peerDependencies": {
     "axios": "^0.25.0",
