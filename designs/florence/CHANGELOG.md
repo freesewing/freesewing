@@ -1,37 +1,37 @@
 # Change log for: @freesewing/florence
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.16.1 (2021-05-29)
+## 2.16.1 (2021-05-30)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.11.3 (2021-01-15)
+## 2.11.3 (2021-01-16)
 
 ### Fixed
 
  - Added missing scalebox
 
-## 2.7.0 (2020-07-11)
+## 2.7.0 (2020-07-12)
 
 ### Changed
 
  - Removed `Circumference` suffix from measurement names
 
-## 2.6.0 (2020-04-30)
+## 2.6.0 (2020-05-01)
 
 ### Added
 
@@ -41,13 +41,13 @@
 
  - @freesewing/fu has been renamed to @freesewing/florence
 
-## 2.4.5 (2020-03-18)
+## 2.4.5 (2020-03-19)
 
 ### Changed
 
  - Improved shape based on community feedback
 
-## 2.4.0 (2020-02-28)
+## 2.4.0 (2020-02-29)
 
 ### Added
 

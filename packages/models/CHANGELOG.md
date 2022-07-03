@@ -1,19 +1,19 @@
 # Change log for: @freesewing/models
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.17.2 (2021-08-14)
+## 2.17.2 (2021-08-15)
 
 ### Added
 
  - Added the new `bustPointToUnderbust` measurement for future bikini pattern
 
-## 2.7.0 (2020-07-11)
+## 2.7.0 (2020-07-12)
 
 ### Changed
 
@@ -21,13 +21,13 @@
  - Ported models to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
  - Removed `Circumference` suffix from measurement names
 
-## 2.2.0 (2020-02-21)
+## 2.2.0 (2020-02-22)
 
 ### Changed
 
  - Extended the menswear size range to have 10 different sizes, just like womenswear
 
-## 2.0.1 (2019-08-31)
+## 2.0.1 (2019-09-01)
 
 ### Added
 
@@ -42,7 +42,7 @@
 
  - [#86](https://github.com/freesewing/freesewing/issues/86): The `seatCircumference` measurement was missing, thus making it unavailable on the website
 
-## 2.0.0 (2019-08-24)
+## 2.0.0 (2019-08-25)
 
 ### Added
 

@@ -1,13 +1,13 @@
 # Change log for: @freesewing/plugin-scalebox
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.19.6 (2021-12-28)
+## 2.19.6 (2021-12-29)
 
 ### Added
 
@@ -17,7 +17,7 @@
 
  - Add utility classes and CSS variables for better styling support
 
-## 2.11.3 (2021-01-15)
+## 2.11.3 (2021-01-16)
 
 ### Added
 
@@ -27,7 +27,7 @@
 
  - Took my name off the patterns
 
-## 2.0.0 (2019-08-24)
+## 2.0.0 (2019-08-25)
 
 ### Added
 

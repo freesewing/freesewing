@@ -1,32 +1,32 @@
 # Change log for: @freesewing/diana
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
  - Expose the `cuffEase` option to the user via option groups
  - Switched to default import for version from package.json
 
-## 2.17.0 (2021-06-30)
+## 2.17.0 (2021-07-01)
 
 ### Changed
 
  - Set brian `s3` options as constants
 
-## 2.16.1 (2021-05-29)
+## 2.16.1 (2021-05-30)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.7.0 (2020-07-11)
+## 2.7.0 (2020-07-12)
 
 ### Changed
 
@@ -34,7 +34,7 @@
  - Ported diana to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
  - Removed `Circumference` suffix from measurement names
 
-## 2.5.0 (2020-04-04)
+## 2.5.0 (2020-04-05)
 
 ### Added
 

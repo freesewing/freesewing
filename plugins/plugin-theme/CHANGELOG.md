@@ -1,25 +1,25 @@
 # Change log for: @freesewing/plugin-theme
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.19.6 (2021-12-28)
+## 2.19.6 (2021-12-29)
 
 ### Added
 
  - Added (esm) unit tests
 
-## 2.15.0 (2021-04-14)
+## 2.15.0 (2021-04-15)
 
 ### Added
 
  - Added the path.bartack class
 
-## 2.0.0 (2019-08-24)
+## 2.0.0 (2019-08-25)
 
 ### Added
 

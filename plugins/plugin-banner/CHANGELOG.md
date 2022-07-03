@@ -1,26 +1,26 @@
 # Change log for: @freesewing/plugin-banner
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
  - Changed the default options
  - Now part of `@freesewing/plugin-bundle`
 
-## 2.19.6 (2021-12-28)
+## 2.19.6 (2021-12-29)
 
 ### Added
 
  - Added (esm) unit tests
 
-## 2.0.0 (2019-08-24)
+## 2.0.0 (2019-08-25)
 
 ### Added
 

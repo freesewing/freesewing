@@ -1,13 +1,13 @@
 # Change log for: @freesewing/plugin-bartack
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
@@ -19,7 +19,7 @@
  - Handle start and endpoints being the same in `bartackFractionAlong`
  - Support start and endpoints being reversed in `bartackFractionAlong`
 
-## 2.19.6 (2021-12-28)
+## 2.19.6 (2021-12-29)
 
 ### Added
 

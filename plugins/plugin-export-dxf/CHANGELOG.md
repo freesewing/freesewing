@@ -1,19 +1,19 @@
 # Change log for: @freesewing/plugin-export-dxf
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.19.6 (2021-12-28)
+## 2.19.6 (2021-12-29)
 
 ### Added
 
  - Added (esm) unit tests
 
-## 2.6.0 (2020-04-30)
+## 2.6.0 (2020-05-01)
 
 ### Added
 

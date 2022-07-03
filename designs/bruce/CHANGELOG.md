@@ -1,43 +1,43 @@
 # Change log for: @freesewing/bruce
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.16.1 (2021-05-29)
+## 2.16.1 (2021-05-30)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.13.0 (2021-02-12)
+## 2.13.0 (2021-02-13)
 
 ### Fixed
 
  - Added notches to facilitate seam matching
 
-## 2.11.3 (2021-01-15)
+## 2.11.3 (2021-01-16)
 
 ### Fixed
 
  - Added missing scalebox
 
-## 2.7.1 (2020-07-23)
+## 2.7.1 (2020-07-24)
 
 ### Fixed
 
  - Fixed a check for an undefined value in the store
 
-## 2.7.0 (2020-07-11)
+## 2.7.0 (2020-07-12)
 
 ### Changed
 
@@ -49,13 +49,13 @@
 
  - Sampling some options would not work in Bruce because the code shared across patterns would only run once. That's fixed now.
 
-## 2.0.3 (2019-09-14)
+## 2.0.3 (2019-09-15)
 
 ### Fixed
 
  - [#106](https://github.com/freesewing/freesewing/issues/106): Fix incorrect hem allowance
 
-## 2.0.0 (2019-08-24)
+## 2.0.0 (2019-08-25)
 
 ### Added
 

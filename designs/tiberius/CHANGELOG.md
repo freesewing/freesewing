@@ -1,19 +1,19 @@
 # Change log for: @freesewing/tiberius
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.19.0 (2021-10-16)
+## 2.19.0 (2021-10-17)
 
 ### Added
 

@@ -1,13 +1,13 @@
 # Change log for: @freesewing/examples
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Added
 
@@ -17,14 +17,14 @@
 
  - Switched to default import for version from package.json
 
-## 2.15.0 (2021-04-14)
+## 2.15.0 (2021-04-15)
 
 ### Added
 
  - Added examples for bartack plugin
  - Added examples for new buttonhole-start/end snippets
 
-## 2.0.0 (2019-08-24)
+## 2.0.0 (2019-08-25)
 
 ### Added
 

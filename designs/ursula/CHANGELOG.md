@@ -1,25 +1,25 @@
 # Change log for: @freesewing/ursula
 
 
-## 2.21.2 (2022-06-29)
+## 2.21.2 (2022-06-30)
 
 ### Added
 
  - Added markers for elastics
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.17.0 (2021-06-30)
+## 2.17.0 (2021-07-01)
 
 ### Added
 

@@ -1,7 +1,7 @@
 # Change log for: @freesewing/wahid
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
@@ -11,39 +11,39 @@
 
  - Change hem allowance to standard SA
 
-## 2.20.0 (2022-01-23)
+## 2.20.0 (2022-01-24)
 
 ### Changed
 
  - Switched to default import for version from package.json
 
-## 2.18.0 (2021-09-08)
+## 2.18.0 (2021-09-09)
 
 ### Fixed
 
  - Close Seam Allowance path of front lining Closes [#1267](https://github.com/freesewing/freesewing/issues/1267)
  - Support a zero value for the `backScyeDart` option
 
-## 2.16.1 (2021-05-29)
+## 2.16.1 (2021-05-30)
 
 ### Changed
 
  - Changed `department` setting in config in line with new grouping
 
-## 2.13.0 (2021-02-12)
+## 2.13.0 (2021-02-13)
 
 ### Fixed
 
  - Make sure roudEnd and roundStart points are always available
 
-## 2.11.3 (2021-01-15)
+## 2.11.3 (2021-01-16)
 
 ### Fixed
 
  - Added missing scalebox
  - Proper styling for SA on front and back
 
-## 2.7.1 (2020-07-23)
+## 2.7.1 (2020-07-24)
 
 ### Added
 
@@ -53,7 +53,7 @@
 
  - Hem radius can no longer be zero. Use teh `square` hem style for that
 
-## 2.7.0 (2020-07-11)
+## 2.7.0 (2020-07-12)
 
 ### Changed
 
@@ -61,7 +61,7 @@
  - Removed `Circumference` suffix from measurement names
  - Removed `wrist` and `shoulderToWrist` as required measurements
 
-## 2.6.0 (2020-04-30)
+## 2.6.0 (2020-05-01)
 
 ### Fixed
 
@@ -71,19 +71,19 @@
  - Closed the front seam path
  - Draft the front lining/facing even when complete is falsy
 
-## 2.4.5 (2020-03-18)
+## 2.4.5 (2020-03-19)
 
 ### Fixed
 
  - Check whether frontScyeDart option is zero prior to implementing it
 
-## 2.2.0 (2020-02-21)
+## 2.2.0 (2020-02-22)
 
 ### Changed
 
  - Removed deprecated `centerBackNeckToWaist` measurement
 
-## 2.0.0 (2019-08-24)
+## 2.0.0 (2019-08-25)
 
 ### Added
 

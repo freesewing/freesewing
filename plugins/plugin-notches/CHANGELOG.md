@@ -1,19 +1,19 @@
 # Change log for: @freesewing/plugin-notches
 
 
-## 2.21.0 (2022-06-26)
+## 2.21.0 (2022-06-27)
 
 ### Changed
 
  - Migrated from Rollup to Esbuild for all builds
 
-## 2.19.6 (2021-12-28)
+## 2.19.6 (2021-12-29)
 
 ### Added
 
  - Added (esm) unit tests
 
-## 2.11.0 (2021-01-09)
+## 2.11.0 (2021-01-10)
 
 ### Added
 
