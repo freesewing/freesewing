@@ -5,18 +5,18 @@
 
 ##### COVID-19: Patrón de la máscara
 
-Si estás buscando nuestro patrón de facemask, sigue este enlace:
+Si estás buscando nuestro patrón de mascarilla, sigue este enlace:
 
-- [Patrón de máscara e instrucciones](/blog/facemask-frenzy)
+- [Patrón de mascarilla e instrucciones](/blog/facemask-frenzy)
 
-##### Llamadas de colaborador
+##### Llamadas a colaboradores
 
-Recientemente, comenzamos a organizar llamadas de colaboradores. Cualquiera que tenga interés en FreeSewing es bienvenido a unirse.
+Recientemente, hemos empezado a organizar llamadas a colaboradores. Cualquiera que tenga interés en FreeSewing es bienvenide a unirse.
 
-All calls can be joined via [Discord](https://discord.freesewing.org/). Consulta [el programa de llamadas](/community/calls/) para obtener más información sobre las próximas llamadas.
+Todas las llamadas pueden responderse uniéndose a [Discord](https://discord.freesewing.org/). Consulta [el programa de llamadas](/community/calls/) para obtener más información sobre las próximas llamadas.
 
-##### Nos hemos movido a Discord
+##### Nos hemos trasladado a Discord
 
-Hemos trasladado nuestras salas de chat de a Discord. Nuestro chat heredado en Gitter está obsoleto.
+Hemos trasladado nuestras salas de chat a Discord. Nuestro chat heredado en Gitter está obsoleto.
 
-Puedes unirte a nosotros en https://discord.freesewing.org, o usar esta invitación in-app de Discord: https://discord.gg/YDV4GvU
+Puedes unirte a nosotros en https://discord.freesewing.org o usar esta invitación dentro de la app de Discord: https://discord.gg/YDV4GvU
