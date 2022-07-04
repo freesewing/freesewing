@@ -248,6 +248,10 @@ function packageJson(pkg) {
   }
   pkgConf.keywords = pkgConf.keywords.concat(keywords(pkg))
   pkgConf.scripts = scripts(pkg)
+  if (repo.exceptions.skipTests.indexOf(pkg.name) !== -1) {
+    pkgConf.scripts.test = `echo "skipping tests for ${pkg.name}"`
+    pkgConf.scripts.testci = `echo "skipping tests for ${pkg.name}"`
+  }
   pkgConf.dependencies = dependencies('_', pkg)
   pkgConf.devDependencies = dependencies('dev', pkg)
   pkgConf.peerDependencies = dependencies('peer', pkg)

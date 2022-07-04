@@ -14,6 +14,8 @@ customBuild:
   - remark-jargon
   - plugin-bundle
   - utils
+skipTests:
+  - theo
 packageJson:
   bee:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
