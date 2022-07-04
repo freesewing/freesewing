@@ -10,7 +10,6 @@ const config = {
   code: design,
   name: 'unice',
   inject: {
-    ...ursulaConfig.inject,
     front: 'ursulaFront',
     back: 'ursulaBack',
     gusset: 'ursulaGusset',
@@ -30,6 +29,10 @@ const config = {
       'gussetWidth',
       'gussetLength'
     ],
+  },
+  dependencies: {
+    back: 'front',
+    gusset: 'back',
   },
   options: {
     ...ursulaConfig.options,
