@@ -3,7 +3,7 @@
 
 #### ¿Cómo funciona esto curiosamente?
 
-FreeSewing está escrito en [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Our [core library](https://www.npmjs.com/package/@freesewing/core) and [patterns](/patterns) are available both for [NodeJS](https://nodejs.org/) and the browser.
+FreeSewing está escrito en [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). Nuestra [librería principal](https://www.npmjs.com/package/@freesewing/core) y [patrones](/patterns) están disponibles tanto para [NodeJS](https://nodejs.org/) como para el navegador.
 
 Our websites are built with [Gatsby](https://www.gatsbyjs.com/)/[React](https://reactjs.org/) and kindly hosted by [Netlify](https://www.netlify.com/).
 
