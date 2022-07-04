@@ -20,6 +20,16 @@ for (const name of ['Back', 'Front', 'Gusset']) {
 Unice.prototype.draftElastic = function (part) {
   return new Ursula(this.settings).draftElastic(part)
 }
+Unice.prototype.draftFront2 = function (part) {
+  return new Ursula(this.settings).draftFront2(part)
+}
+Unice.prototype.draftBack2 = function (part) {
+  return new Ursula(this.settings).draftBack2(part)
+}
+Unice.prototype.draftGusset2 = function (part) {
+  return new Ursula(this.settings).draftGusset2(part)
+}
+
 
 // Attach our own draft methods to the prototype
 Unice.prototype.draftFront = draftFront

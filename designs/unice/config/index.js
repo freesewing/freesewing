@@ -15,7 +15,7 @@ const config = {
     gusset: 'ursulaGusset',
   },
   hide: ['ursulaBack', 'ursulaFront', 'ursulaGusset'],
-  parts: [],
+  parts: ['front','back','gusset','elastic','front2','back2','gusset2'],
   optionalMeasurements: ['crossSeam','crossSeamFront'],
   measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg','hips','waistToHips'],
   optionGroups: {
@@ -33,6 +33,10 @@ const config = {
   dependencies: {
     back: 'front',
     gusset: 'back',
+    elastic: 'gusset',
+    front2: 'elastic',
+    back2: 'elastic',
+    gusset2: 'elastic',
   },
   options: {
     ...ursulaConfig.options,
