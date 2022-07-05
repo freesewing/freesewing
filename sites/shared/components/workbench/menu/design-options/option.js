@@ -11,9 +11,9 @@ const Option = props => {
   const type = optionType(opt)
   const Input = inputs[type]
   const Value = values[type]
-  const hide = opt.hide && opt.hide(props.draft.settings);
+  const hide = opt.hide && opt.hide(props.draft.settings.options);
 
-  if (hide) return <Li></Li>
+  if (hide) return null
 
   if (type === 'bool') {
     const toggleBoolean = () => {
