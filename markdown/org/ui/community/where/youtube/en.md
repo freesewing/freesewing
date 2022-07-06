@@ -6,4 +6,4 @@ Make sure to subscribe to
 for our in-depth tutorials that walk you through our patterns.
 
 We also publish other tutorials there on how to work with the platform
-and develop pattern for it.
+and develop patterns for it.
