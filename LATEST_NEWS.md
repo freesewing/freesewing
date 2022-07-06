@@ -7,7 +7,7 @@ Check the meetings voice/video channel.
 
 ##### New designs: Hi, Noble, and Unice
 
-Check the new designs, [Hi](/designs/hi), [Noble](/designs/noble), and [Unice](/unice).
+Check the new designs, [Hi](/designs/hi), [Noble](/designs/noble), and [Unice](/designs/unice).
 
 ##### Check out where FreeSewing is heading
 
