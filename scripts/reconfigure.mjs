@@ -12,6 +12,7 @@ import {
   publishedTypes as types
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
+import rootPackageJson from '../package.json'
 
 // Working directory
 const cwd = process.cwd()
@@ -83,7 +84,7 @@ for (const pkg of Object.values(software)) {
     changelog(pkg, repo)
   )
 }
-log.write(chalk.green(" All done\n"))
+log.write(chalk.green(" Done\n"))
 
 // Step 3: Generate overall CHANGELOG.md
 fs.writeFileSync(
@@ -91,15 +92,24 @@ fs.writeFileSync(
   changelog('global', repo)
 )
 
-
-
 // Step 6: Generate build script for published software
+log.write(chalk.blueBright('Generating buildall node script...'))
+const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`);
+const buildAllCommand = buildSteps.join(' && ');
+const newRootPkgJson = {...rootPackageJson};
+newRootPkgJson.scripts.buildall = buildAllCommand;
+fs.writeFileSync(
+  path.join(repo.path, 'package.json'),
+  JSON.stringify(newRootPkgJson, null, 2) + '\n'
+)
+log.write(chalk.green(" Done\n"))
 
 // Step 7: Generate tests for designs and plugins
 
 
 
 // All done
+log.write(chalk.green(" All done\n"))
 process.exit()
 
 /*
@@ -238,6 +248,10 @@ function packageJson(pkg) {
   }
   pkgConf.keywords = pkgConf.keywords.concat(keywords(pkg))
   pkgConf.scripts = scripts(pkg)
+  if (repo.exceptions.skipTests.indexOf(pkg.name) !== -1) {
+    pkgConf.scripts.test = `echo "skipping tests for ${pkg.name}"`
+    pkgConf.scripts.testci = `echo "skipping tests for ${pkg.name}"`
+  }
   pkgConf.dependencies = dependencies('_', pkg)
   pkgConf.devDependencies = dependencies('dev', pkg)
   pkgConf.peerDependencies = dependencies('peer', pkg)
@@ -393,9 +407,9 @@ function packageChangelog(pkgName) {
 
 function formatDate(date) {
   let d = new Date(date),
-    month = '' + (d.getMonth() + 1),
-    day = '' + d.getDate(),
-    year = d.getFullYear()
+    month = '' + (d.getUTCMonth() + 1),
+    day = '' + d.getUTCDate(),
+    year = d.getUTCFullYear()
 
   if (month.length < 2) month = '0' + month
   if (day.length < 2) day = '0' + day
