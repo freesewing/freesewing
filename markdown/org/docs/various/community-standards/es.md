@@ -8,13 +8,13 @@ Gracias por ser parte de la comunidad freesewing. Cuando se comprometa con nosot
 
 No podemos aceptar comentarios que sean ofensivos en sí mismos o claramente ofensivos para los demás.
 
-We ask you to avoid obscenities and other insulting language, to show respect for fellow users, public figures and the fundamental principles we hopefully all share.
+Te pedimos que evites obscenidades y otro lenguaje insultante, que muestres respeto por los demás usuarios. figuras públicas y los principios fundamentales que, esperamos, todos compartimos.
 
-Without wanting to be exhaustive, that means no racism, xenophobia, calls to violence, discrimination based on religion, ethnic origin, gender, age, body shape, language, ….
+Sin ser una lista exhaustiva, eso significa que no toleraremos racismo, xenofobia, exaltación de la violencia, discriminación basada en la religión, origen étnico, género, edad, forma del cuerpo, idioma…
 
 ##### No enviar spam
 
-We encourage you to post comments that stick to the subject and would appreciate it if you refrain from posting advertisements (for your businesses, blogs or websites, etc).
+Te animamos a publicar comentarios que se adhieran al tema de costura y te agradeceríamos que no publiques anuncios (de tus negocios, blogs o sitios web, etc.).
 
 Está bien publicar enlaces a información relevante en otros sitios web, pero el correo no deseado y otros elementos fuera de tema serán eliminados.
 
