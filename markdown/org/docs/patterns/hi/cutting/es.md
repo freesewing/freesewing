@@ -1,14 +1,17 @@
 ---
-title: "Hi shark plush toy: Cutting Instructions"
+title: "Hi, tiburón: instrucciones de corte"
 ---
 
-- **Main fabric**
-  - Cut **2 Body (color 1)**
-  - Cut **1 Belly (color 2)**
-  - Cut **2 Tail (color 1)**
-  - Cut **1 Mouth (color 3)**
-  - Cut **2 Above Mouth (color 2)**
-  - Cut **2 Top Fin (color 1)**
-  - Cut **2 Bottom Fin (color 1)**
-  - Cut **1 Upper Teeth (fabric 2)**
-  - Cut **1 Lower Teeth (fabric 2)**
+- **Color 1 (Parte superior del cuerpo; Tradicionalmente azul)**
+  - Corta **2 Cuerpo**
+  - Corta **2 Cola**
+  - Corta **2 Aleta Superior**
+  - Corta **2 Aleta inferior**
+- **Color 2 (Barriga; Tradicionalmente blanco)**
+  - Corta **1 Barriga**
+  - Corta **2 Parte Sobre la Boca**
+- **Color 3 (Boca; tradicionalmente rosa)**
+  - Corta **1 Boca**
+- **Color 4 (Dientes; tradicionalmente blancos)**
+  - Corta **1 Dientes Superiores**
+  - Corta **1 Dientes inferiores**
