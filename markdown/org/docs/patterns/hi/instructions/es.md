@@ -1,28 +1,39 @@
 ---
-title: "Hi the shark: Sewing Instructions"
+title: "Tiburón Hi: Instrucciones de costura"
 ---
 
-## Notes and tips
+<Tip>
 
-When you're using fabric with some stretch in it, it is a good idea to stabilize the seams that go along the whole body, and between the body and the belly, with some stabilizing ribbon.
+Cuando estés usando tela algo elástica, es una buena idea estabilizar las costuras que van a lo largo del cuerpo y entre el cuerpo y la barriga con algún tipo de cinta estabilizante.
 
-### Body
+</Tip>
 
-Sew the darts on the front of the body closed. Trim away any excess fabric. Sew the tail pieces to the body, matching the notches. Sew the topFin pieces to the body. Sew both parts together, leaving an area below the tail open for stuffing the shark later.
+## Paso 1: Parte superior del cuerpo
 
-### Belly
+- Cierra las pinzas de la parte delantera del cuerpo. Corta el cualquier exceso de tela que quede.
+- Con *los lados buenos juntos* cose las piezas de la cola a las del cuerpo, haciendo coincidir las marcas.
+- Con las *lados buenos juntos* une las piezas de la aleta superior a las del cuerpo.
+- Con *lados buenos juntos* coser las dos piezas del cuerpo por las partes delantera, superior, alrededor de la cola y bajo la cola, dejando un hueco bajo la cola para darle la vuelta y meter el relleno al tiburón más adelante.
 
-Sew the two aboveMouth pieces together along the larger straight side. Sew the teeth to the mouth, matching notches. Sew the darts on the belly, trim away any excess fabric. Sew the aboveMouth pieces to the mouth, matching notches. Sew all of this to the belly piece, matching notches. Sew the bottomFin pieces to the belly, matching notches.
+## Paso 2: La barriga
 
-### Completing
+- Con los *lados buenos juntos*, cose las dos piezas que van sobre la boca juntas sobre el lado recto más largo.
+- Cose las piezas de los dientes a la boca, de forma que coincidan las marcas del patrón, y asegurándote de que los dientes apuntan hacia el centro de la boca. Estas piezas se tratarán como una a partir de ahora.
+- Cose las pinzas en la barriga, corta cualquier exceso de tela resultante.
+- With *good sides together* sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
+- With *good sides together* sew the joined mouth and aboveMouth to the belly piece, matching notches.
+- With *good sides together* sew the bottomFin pieces to the belly, matching notches.
 
-Sew the belly to the body, matching the front, back, and fins.
+## Step 3: Final Assembly
 
-### Filling
+- With *good sides together* sew the belly to the body, matching the front, back, and fins.
+- Turn though the gap left below the tail.
 
-Fill the plush toy with stuffing through the opening you left in the tail. Make sure to fill the tail and fins well before adding too much stuffing in the body itself.
+## Step 4: Stuffing
 
-Close the toy by hand stitching.
+- Fill the plush toy with stuffing through the opening you left below the tail, making sure to fill the tail and fins well before adding too much stuffing in the body itself.
+- *Slipsticth* or *whipstitch* the opening closed.
 
+## Step 5: Enjoy!
 
-
+That's it you are all done now go adventure the oceans with your new Hi!
