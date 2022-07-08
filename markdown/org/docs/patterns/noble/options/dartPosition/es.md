@@ -2,4 +2,4 @@
 title: "Posición de la pinza"
 ---
 
-The **Dart position** option controls whether to create the princess seam at the shoulder or armhole.
+La opción de **posición de la pinza** controla si crear el corte princesa en el hombro o la sisa.
