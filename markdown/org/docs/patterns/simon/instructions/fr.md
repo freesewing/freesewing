@@ -545,7 +545,7 @@ Now, from the bad side of the fabric, sew the seam allowance down just at the ed
 
 Important here is to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
 
-> It is more important to keep an even distance from the sleeve seam than to sew exactly at the edge of the fold. Idéalement, le pli est censé être aussi à distance constante de la couture, mais si ce n'est pas le cas, assurez-vous juste de coudre parallèlement à la couture de manche. Même si cela implique de s'écarter un peu du bord plié.
+> Il est plus important de rester à la même distance de la couture de manche que de coudre exactement au bord du pli. Idéalement, le pli est censé être aussi à distance constante de la couture, mais si ce n'est pas le cas, assurez-vous juste de coudre parallèlement à la couture de manche. Même si cela implique de s'écarter un peu du bord plié.
 
 #### Repasser la couture plate rabattue
 
