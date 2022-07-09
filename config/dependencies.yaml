@@ -16,6 +16,7 @@ _types:
 aaron:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 bee:
   peer:
     '@freesewing/bella': *freesewing
@@ -129,6 +130,7 @@ huey:
 hugo:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 i18n:
   dev:
     'js-yaml': '^4.1.0'

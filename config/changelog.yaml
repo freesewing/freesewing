@@ -1,5 +1,7 @@
 Unreleased:
   Added:
+    aaron:
+      - Support drafting for high bust
     hugo:
       - Support drafting for high bust
         Closes [#802](https://github.com/freesewing/freesewing/issues/802)

@@ -11,7 +11,7 @@ export default {
   type: 'pattern',
   difficulty: 2,
   optionGroups: {
-    fit: ['chestEase', 'hipsEase', 'stretchFactor'],
+    fit: ['chestEase', 'hipsEase', 'stretchFactor', 'draftForHighBust'],
     style: [
       'armholeDrop',
       'backlineBend',
@@ -65,5 +65,8 @@ export default {
     stretchFactor: { pct: 5, min: 0, max: 15 },
     shoulderStrapWidth: { pct: 15, min: 10, max: 40 },
     shoulderStrapPlacement: { pct: 40, min: 20, max: 80 },
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }
