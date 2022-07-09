@@ -12,7 +12,7 @@ export default (part) => {
     .line(points.dartHipLeft)
     .curve(points.dartHipLeftCpTop, points.dartWaistLeftCpBottom, points.dartWaistLeft)
     .curve_(points.dartWaistLeftCpTop, points.dartTop)
-    .curve_(points.flbCp, points.flbTop)
+    .curve(points.flbCp, points.flbCpTop, points.flbTop)
     .line(points.neck)
     .curve(points.neckCp2, points.closureTopCp1, points.closureTop)
   if (options.hemStyle === 'classic') {

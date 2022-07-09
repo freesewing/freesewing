@@ -208,7 +208,8 @@ export default (part) => {
 
   // Facing/Lining boundary (flb)
   points.flbTop = points.neck.shiftFractionTowards(points.shoulder, 0.5)
-  points.flbCp = points.dartTop.shift(90, points.dartTop.dist(points.flbTop) / 2)
+  points.flbCp = points.dartTop.shift(-90, points.armholePitch.dy(points.flbTop) / 2)
+  points.flbCpTop = points.flbTop.shiftTowards(points.neck, points.flbTop.dy(points.armholePitch)).rotate(90, points.flbTop)
 
   // Seam line
   delete paths.cutonfold
@@ -274,11 +275,9 @@ export default (part) => {
     }
 
     // Facing/Lining boundary (flb)
-    points.flbTop = points.neck.shiftFractionTowards(points.shoulder, 0.5)
-    points.flbCp = points.dartTop.shift(90, points.dartTop.dist(points.flbTop) / 2)
     paths.flbFacing = new Path()
       .move(points.dartTop)
-      .curve_(points.flbCp, points.flbTop)
+      .curve(points.flbCp, points.flbCpTop, points.flbTop)
       .attr('class', 'fabric')
     paths.flbLining = paths.flbFacing.clone().attr('class', 'lining dashed')
 

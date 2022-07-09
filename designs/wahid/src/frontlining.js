@@ -15,7 +15,7 @@ export default (part) => {
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.flbTop)
-    ._curve(points.flbCp, points.dartTop)
+    .curve(points.flbCpTop, points.flbCp, points.dartTop)
     ._curve(points.dartWaistRightCpTop, points.dartWaistRight)
     .curve(points.dartWaistRightCpBottom, points.dartHipRightCpTop, points.dartHipRight)
     .line(points.dartEnd)

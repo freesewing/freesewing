@@ -11,6 +11,9 @@ Unreleased:
     brian:
       - Make s3 options sticky to zero below 10% to avoid path split issues.
         Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
+    wahid:
+      - Prevent facing/lining overlap when shoulders get very narrow
+        fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
 
 2.21.3:
   date: 2022-07-02
