@@ -18,6 +18,7 @@ export default {
       'lengthBonus',
       'sleeveLengthBonus',
       'sleeveBend',
+      'draftForHighBust',
     ],
     style: ['s3Collar', 's3Armhole'],
     advanced: [
@@ -81,5 +82,8 @@ export default {
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }
