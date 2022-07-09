@@ -21,6 +21,7 @@ export default {
       'lengthBonus',
       'shoulderEase',
       'waistEase',
+      'draftForHighBust',
     ],
     sleeves: ['sleeveBend', 'sleeveLengthBonus', 'sleeveVentLength', 'sleeveVentWidth'],
     advanced: [
@@ -87,6 +88,7 @@ export default {
     'shoulderToWrist',
     'wrist',
   ],
+  optionalMeasurements: [ 'highBust' ],
   dependencies: {
     bentBack: 'bentBase',
     bentFront: 'bentBack',
@@ -237,5 +239,8 @@ export default {
       list: ['1', '2', '3'],
       dflt: '2',
     },
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }
