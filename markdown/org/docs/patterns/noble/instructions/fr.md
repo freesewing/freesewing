@@ -64,6 +64,9 @@ For instance:
 - Alter the dart placements
 - Add a collar
 
+It is all up to you!
+- Add a collar
+
 It is all up to you! Experiment and go forth!
 
 </Note>
