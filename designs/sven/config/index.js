@@ -15,6 +15,7 @@ export default {
     advanced: [...brianConfig.optionGroups.advanced, 'ribbingStretch'],
   },
   measurements: [...brianConfig.measurements, 'hips', 'waist'],
+  optionalMeasurements: brianConfig.optionalMeasurements,
   dependencies: {
     frontBase: 'base',
     backBase: 'base',
