@@ -7,6 +7,11 @@ Unreleased:
     theo:
       - migrated `waistbandWidth` option from `mm` to snapped `pct` option
 
+  Fixed:
+    brian:
+      - Make s3 options sticky to zero below 10% to avoid path split issues.
+        Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
+
 2.21.3:
   date: 2022-07-02
 
