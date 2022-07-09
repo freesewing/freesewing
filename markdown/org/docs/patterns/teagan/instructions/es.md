@@ -18,7 +18,7 @@ Opcional: En un tejedor más apretado, puede optar por reforzar las costuras del
 ![Set in sleeves](step02.svg)
 
 - Coloca tu ahora unido frente y atrás con el lado bueno arriba.
-- Identifique los lados delanteros y traseros de cada una de sus mangas. (Así es como separas la manga izquierda de la derecha.) On your paper pattern piece, the front side of the sleeve is to the right.
+- Identifique los lados delanteros y traseros de cada una de sus mangas. (Así es como separas la manga izquierda de la derecha.) (Así es como separas la manga izquierda de la derecha.) On your paper pattern piece, the front side of the sleeve is to the right.
 - Coloque una manga en la parte superior de la parte frontal y trasera, con el lado bueno abajo.
 - Alínea la parte superior de la manga con la costura del hombro. Asegúrate de que la parte delantera y trasera de la manga esté alineada con las partes delanteras y traseras de tu camiseta.
 - Pin manga en su lugar a lo largo de todo el orificio. Hay un poco de facilidad de mangas, lo que significa que la cabeza de manga es un poco más larga que el orificio. Eche en la parte superior de la cabeza de manga mientras se pincha.
