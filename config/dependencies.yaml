@@ -31,6 +31,7 @@ breanna:
 brian:
   peer:
     '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 carlita:
   peer:
     '@freesewing/brian': *freesewing
