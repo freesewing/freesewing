@@ -99,6 +99,5 @@ export default {
 
     // draft for high bust
     draftForHighBust: { bool: false },
-
   },
 }

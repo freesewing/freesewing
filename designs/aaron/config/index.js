@@ -32,6 +32,7 @@ export default {
     'shoulderToShoulder',
     'hips',
   ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     front: 'base',
     back: 'front',

@@ -74,6 +74,7 @@ export default {
     'waistToSeat',
     'seat',
   ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     bentBack: 'bentBase',
     bentFront: 'bentBack',

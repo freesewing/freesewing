@@ -63,6 +63,7 @@ export default {
     'shoulderToWrist',
     'wrist',
   ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     back: 'base',
     front: 'back',
