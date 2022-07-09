@@ -38,6 +38,9 @@ vous n'avez jamais fait de poches soudées auparavant, vous allez vous passer.
 
 </Tip>
 
+<!--- One tricky bit, this documentation is for double welts, but this is I think a single welt?
+Does it need a note to that effect? --->
+
 ## Étape 2 : Préparez les poches avant
 
 Your pockets are cut from a lining material, which can save on weight and bulk, but also means that you'll want to hide them a little bit inside the side seam, so the lining doesn't show. The flap along the outside seam of each leg is for just this purpose.
