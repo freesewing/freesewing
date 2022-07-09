@@ -8,32 +8,57 @@ When you're using fabric with some stretch in it, it is a good idea to stabilize
 
 </Tip>
 
-## Step 1: The Upper body
+## Step 1: The eyes
 
-- Sew the darts on the front of the bodys closed. Trim away any excess fabric.
+- Cut pieces of black fabric the size of the eyes on the body pieces.
+- Stabilise the fabric with a bit of interfacing.
+- With white thread, either by hand or machine *bar tack* the pupils onto the eyes like eyelets.
+
+<Tip>
+
+If stitching the pupil by machine you may find it easier to use either the eyelet function or a buttonholer that does eyelets if one of those are available to you. If not you may find it best to hand stitch the pupil for better control and neatness.
+
+</Tip>
+
+- With orange thread, *bar tack* around the edge of the eyes.
+- If the fabric you are using frays, fray check the edges.
+
+<Note>
+
+The colour choice are up to you but these are the recommended colours.
+
+If you wish to make an embroidered eye we recommended to make it an embroidery patch rather than embroidering directly on the fabric itself as screwing up will not result in a larger quantity of fabric being wasted.
+
+</Note>
+
+## Step 2: The Upper body
+
+- Using topstiching thread (thick thread), go back and forth several times along the gill lines of the body pieces.
+- *Edgestitch* the eyes to the bodys, matching the thread colour of the outer bar tacks.
+- Sew the darts on the front of the body closed. Trim away any excess fabric.
 - With *good sides together* sew the tail pieces to the bodys, matching notches.
-- With *good sides together* sew the topFin pieces to the bodys.
-- With *good sides together* sew the bodys together along the front, top, around the tail and below the tail, leaving a gap open below the tail for turning and stuffing the shark later.
+- Sew the tail pieces to the body, matching the notches. Sew the topFin pieces to the body.
+- Sew the belly to the body, matching the front, back, and fins.
 
-## Step 2: The Belly
+## Step 3: The Belly
 
-- With *good sides together* sew the two aboveMouth pieces together along the larger straight edge.
-- Sew the teeth pieces to the mouth, matching notches and making sure the teeth face towards the centre of the mouth. These will now be treated as one.
+- Sew the two aboveMouth pieces together along the larger straight side.
+- Sew the teeth to the mouth, matching notches. These will now be treated as one.
 - Sew the darts on the belly, trim away any excess fabric.
 - With *good sides together* sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
-- With *good sides together* sew the joined mouth and aboveMouth to the belly piece, matching notches.
-- With *good sides together* sew the bottomFin pieces to the belly, matching notches.
+- Sew the aboveMouth pieces to the mouth, matching notches. Sew all of this to the belly piece, matching notches.
+- Sew the bottomFin pieces to the belly, matching notches.
 
-## Step 3: Final Assembly
+## Step 4: Final Assembly
 
 - With *good sides together* sew the belly to the body, matching the front, back, and fins.
 - Turn though the gap left below the tail.
 
-## Step 4: Stuffing
+## Step 5: Stuffing
 
-- Fill the plush toy with stuffing through the opening you left below the tail, making sure to fill the tail and fins well before adding too much stuffing in the body itself.
+- Fill the plush toy with stuffing through the opening you left in the tail. Make sure to fill the tail and fins well before adding too much stuffing in the body itself.
 - *Slipsticth* or *whipstitch* the opening closed.
 
-## Step 5: Enjoy!
+## Step 6: Enjoy!
 
 That's it you are all done now go adventure the oceans with your new Hi!
