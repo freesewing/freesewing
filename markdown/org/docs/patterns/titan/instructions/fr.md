@@ -59,6 +59,15 @@ For instance:
 - Change the pant width
 - Add a waistband
 
+It is all up to you! 
+For instance:
+
+- Add a front closure
+- Add pockets
+- Change the pant length
+- Change the pant width
+- Add a waistband
+
 It is all up to you! Experiment and go forth!
 
 </Note>
