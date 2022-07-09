@@ -8,7 +8,7 @@ fabricStretchY:
 
 adjustStretch:
   title: Adjust stretch
-  description: This option you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is
+  description: This option allows you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is
 
 useCrossSeam:
   title: Use crossseam
