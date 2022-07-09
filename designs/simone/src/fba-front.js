@@ -1,5 +1,5 @@
 export default (part) => {
-  let {
+  const {
     measurements,
     Point,
     points,
@@ -12,6 +12,7 @@ export default (part) => {
     utils,
     sa,
     complete,
+    raise
   } = part.shorthand()
 
   /*
@@ -31,6 +32,16 @@ export default (part) => {
    *
    */
   const FBA = ((1 + options.chestEase) * (measurements.bust - measurements.highBust)) / 2
+  /*
+   * If the FBA is negative, that means the high bust measurement is higher than the
+   * front bust. That's not uncommon for people who don't have much breast tissue but
+   * it generates a negative dart which is confusing and incorrect. So in that case, just
+   * return the original part from simon
+   */
+  if (FBA < 0) {
+    raise.info('No FBA required, using unaltered Simon front')
+    return part
+  }
 
   /*
    * Locate bust point

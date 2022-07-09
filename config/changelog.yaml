@@ -11,6 +11,9 @@ Unreleased:
     brian:
       - Make s3 options sticky to zero below 10% to avoid path split issues.
         Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
+    simone:
+      - Don't do a negative FBA from there's no need for an FBA
+        Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
     wahid:
       - Prevent facing/lining overlap when shoulders get very narrow
         fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
