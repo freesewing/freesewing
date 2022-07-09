@@ -32,7 +32,7 @@ You can cut the Pocket and backPocket parts out of a lining fabric if you prefer
 
 <Tip>
 
-Pattern part 2 is just for when you want to make the pants without printing everything.
+Guardar un árbol.
 Dado que esto es sólo un par de rectángulos (con un lado inclinado), sólo puedes usar una regla para cortar la parte principal. A continuación, utiliza la Parte 2 para cortar la parte del croupier. Guardar un árbol.
 
 Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
