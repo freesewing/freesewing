@@ -131,6 +131,7 @@ holmes:
 huey:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 hugo:
   peer:
     '@freesewing/brian': *freesewing
