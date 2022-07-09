@@ -258,7 +258,7 @@ Use a slipstitch to hand-sew the lining to the fabric all along the armhole.
 
 ### Paso 11: Termina la lluvia
 
-Remember that gap we didn't close in step 9? Time to close it.
+Remember that gap we didn't close in step 9? Time to close it. Time to close it.
 
 Use a slipstitch to hand-sew the lining to the fabric and close the hem.
 
