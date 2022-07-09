@@ -1,5 +1,6 @@
 import freesewing from '@freesewing/core'
 import plugins from '@freesewing/plugin-bundle'
+import plugin from '@freesewing/plugin-bust' // Note: conditional plugin
 import Brian from '@freesewing/brian'
 import config from '../config'
 // Parts
@@ -10,8 +11,20 @@ import draftGusset from './gusset'
 import draftHoodSide from './hoodside'
 import draftHoodCenter from './hoodcenter'
 
-// Create new design
-const Yuri = new freesewing.Design(config, plugins)
+/* Check to see whether we should load the bust plugin
+ * Only of the `draftForHighBust` options is set
+ * AND the highBust measurement is available
+ */
+const condition = (settings = false) =>
+  settings &&
+  settings.options &&
+  settings.options.draftForHighBust &&
+  settings.measurements.highBust
+    ? true
+    : false
+
+// Create design
+const Yuri = new freesewing.Design(config, plugins, { plugin, condition })
 
 // Attach draft methods from Brian to prototype
 Yuri.prototype.draftBase = function (part) {

@@ -14,6 +14,7 @@ const config = {
     fit: [...brianConfig.optionGroups.fit, 'hipsEase'],
   },
   measurements: [...brianConfig.measurements, 'head', 'hips', 'hpsToBust'],
+  optionalMeasurements: [ 'highBust' ],
   dependencies: {
     backBase: 'base',
     frontBase: 'backBase',
