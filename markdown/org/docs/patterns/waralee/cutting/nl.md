@@ -32,7 +32,7 @@ You can cut the Pocket and backPocket parts out of a lining fabric if you prefer
 
 <Tip>
 
-Pattern part 2 is just for when you want to make the pants without printing everything.
+Sla een boom op.
 Aangezien dit slechts een paar rechthoeken is (met een schuine kant), kun je gewoon een liniaal gebruiken om het hoofddeel uit te knippen. Dan gebruik je deel 2 om het kruisje te knippen. Sla een boom op.
 
 Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
