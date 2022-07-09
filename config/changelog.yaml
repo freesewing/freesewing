@@ -2,6 +2,8 @@ Unreleased:
   Changed:
     charlie:
       - Renamed back pocket jet to back pocket welt
+    paco:
+      - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
     theo:
       - migrated `waistbandWidth` option from `mm` to snapped `pct` option
 

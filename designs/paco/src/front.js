@@ -187,12 +187,13 @@ export default function (part) {
     }
 
     if (sa) {
-      let waistIn = points.styleWaistIn || points.waistIn
-      let waistOut = points.styleWaistOut || points.waistOut
-      let hemSa = options.elasticatedHem ? sa : 4 * sa
+      const waistIn = points.styleWaistIn || points.waistIn
+      const waistOut = points.styleWaistOut || points.waistOut
+      const hemSa = options.elasticatedHem ? sa : 4 * sa
       paths.sa = drawOutseam()
         .offset(sa)
-        .join(new Path().move(points.floorOut).line(points.floorIn).offset(hemSa))
+        .line(points.floorOut.shift(180, sa).shift(-90, hemSa))
+        .line(points.floorIn.shift(0, sa).shift(-90, hemSa))
         .join(drawInseam().offset(sa))
         .join(
           new Path()
