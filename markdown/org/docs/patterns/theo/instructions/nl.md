@@ -311,8 +311,7 @@ When you are done, remove your earlier perpendicular pins.
 
 ### Stap 21: Plooi het gulpbeleg om en speld het neer
 
-![FOld over fly shield and pin down](step21a.png) 
-![FOld over fly shield and pin down](step21b.png) 
+![FOld over fly shield and pin down](step21a.png) ![FOld over fly shield and pin down](step21b.png)
 
 Flip everything over so that your fly shield lies at the bottom.
 
@@ -380,9 +379,7 @@ Give it a good press from the back.
 
 ### Stap 27: Speld en stik de rits aan het gulpdeel
 
-![Place both legs on top of eachother](step27a.png) 
-![Pin the zip along the edge](step27b.png)
-![Sew in place](step27c.png) 
+![Place both legs on top of eachother](step27a.png) ![Pin the zip along the edge](step27b.png) ![Sew in place](step27c.png)
 
 Place the right leg down with the good side up. Place the leg on top of it with the good side down.
 
@@ -430,8 +427,7 @@ Als je rits te lang is kan je ze onder de trensen bijknippen.
 
 ### Stap 30: Sluit de kruisnaad
 
-![Join crotch seam](step30a.png) 
-![Join crotch seam](step30b.png)
+![Join crotch seam](step30a.png) ![Join crotch seam](step30b.png)
 
 Place both fronts with the good sides up. They are now joined by the fly.
 
