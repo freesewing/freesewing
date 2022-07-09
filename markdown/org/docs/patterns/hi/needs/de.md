@@ -5,11 +5,13 @@ title: "Hi the shark: What You Need"
 To make Hi, you will need the following:
 
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (Upper body) ([see Hi Fabric options](/docs/patterns/hi/fabric/))
-- About 0.5 meters (0.6 yards) of a suitable fabric (Belly) ([see Hi Fabric options](/docs/patterns/hi/fabric/))
+- About 1 meters of a suitable fabric in color 1 (body)
+- About 0.5 meters of a suitable fabric in color 2 (belly)
 - Small piece for the mouth
+- Small piece of fabric for eyes
 - Suitable, unraveling, fabric for the teeth
 - Stuffing
+- Topstiching thread (thick thread) for gills
 
 <Note>
 
