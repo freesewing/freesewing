@@ -32,7 +32,7 @@ You can cut the Pocket and backPocket parts out of a lining fabric if you prefer
 
 <Tip>
 
-Pattern part 2 is just for when you want to make the pants without printing everything.
+Einen Baum speichern.
 Da es sich dabei nur um ein paar Rechtecke handelt (mit einer geschlitzten Seite) kann man den Hauptteil einfach mit einem Lineal ausschneiden. Dann verwenden Sie Teil 2, um das Crotch zu schneiden. Einen Baum speichern.
 
 Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
