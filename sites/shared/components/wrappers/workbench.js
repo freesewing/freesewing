@@ -39,6 +39,12 @@ const hasRequiredMeasurementsMethod = (design, gist) => {
   return true
 }
 
+const doPreload = async (preload, from, design, gist, setGist, setPreloaded) => {
+  const g = await preloaders[from](preload, design)
+  setPreloaded(preload)
+  setGist({ ...gist, ...g.settings })
+}
+
 /*
  * This component wraps the workbench and is in charge of
  * keeping the gist state, which will trickle down
@@ -50,6 +56,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   const {gist, setGist, unsetGist, updateGist, gistReady} = useGist(design, app);
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
+  const [preloaded, setPreloaded] = useState(false)
 
   // We'll use this in more than one location
   const hasRequiredMeasurements = hasRequiredMeasurementsMethod(design, gist)
@@ -65,14 +72,15 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   // If we need to preload the gist, do so
   useEffect(() => {
-    const doPreload = async () => {
-      if (preload && from && preloaders[from]) {
-        const g = await preloaders[from](preload, design)
-        setGist({...gist, ...g.settings})
-      }
+    if (
+      preload &&
+      preload !== preloaded &&
+      from &&
+      preloaders[from]
+    ) {
+        doPreload(preload, from, design, gist, setGist, setPreloaded)
     }
-    doPreload();
-  }, [preload, from, gist])
+  }, [preload, preloaded, from, design])
 
   // Helper methods to manage the gist state
   const updateWBGist = useMemo(() => (path, value, closeNav=false) => {
