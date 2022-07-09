@@ -10,7 +10,7 @@ on:
       - labeled
 jobs:
   add-comment:
-    if: github.event.label.name == ':pause: nextjs-only'
+    if: github.event.label.name == 'nextjs-only'
     runs-on: ubuntu-latest
     permissions:
       issues: write
