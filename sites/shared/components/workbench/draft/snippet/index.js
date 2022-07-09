@@ -3,7 +3,7 @@ import { getProps } from '../utils'
 import { Tr, KeyTd, ValTd, Attributes, pointCoords } from '../path/index'
 
 const snippetInfo = (props) => {
-console.log(props.snippet)
+
   return (
     <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
       <h5 className="text-neutral-content text-center pb-4">Snippet info</h5>
@@ -46,6 +46,7 @@ console.log(props.snippet)
 }
 
 const Snippet = (props) => {
+  if (!props.snippet?.anchor) return null
   const snippetProps = {
     xlinkHref: '#' + props.snippet.def,
     x: props.snippet.anchor.x,
