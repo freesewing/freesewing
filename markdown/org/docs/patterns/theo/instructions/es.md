@@ -311,8 +311,7 @@ When you are done, remove your earlier perpendicular pins.
 
 ### Paso 21: Plegar sobre escudo de mosca y anclar abajo
 
-![FOld over fly shield and pin down](step21a.png) 
-![FOld over fly shield and pin down](step21b.png)
+![FOld over fly shield and pin down](step21a.png) ![FOld over fly shield and pin down](step21b.png)
 
 Flip everything over so that your fly shield lies at the bottom.
 
@@ -380,9 +379,7 @@ Give it a good press from the back.
 
 ### Paso 27: Anclar y coser zip para volar
 
-![Place both legs on top of eachother](step27a.png) 
-![Pin the zip along the edge](step27b.png) 
-![Sew in place](step27c.png) 
+![Place both legs on top of eachother](step27a.png) ![Pin the zip along the edge](step27b.png) ![Sew in place](step27c.png)
 
 Place the right leg down with the good side up. Place the leg on top of it with the good side down.
 
@@ -430,8 +427,7 @@ Si tu zip es demasiado largo, puedes recortarlo debajo de la barra-ataques.
 
 ### Paso 30: Únete a coberturas
 
-![Join crotch seam](step30a.png) 
-![Join crotch seam](step30b.png)
+![Join crotch seam](step30a.png) ![Join crotch seam](step30b.png)
 
 Place both fronts with the good sides up. They are now joined by the fly.
 
@@ -575,7 +571,7 @@ On one side of the waistband, end with a curve and then go down vertically along
 
 Before pressing the waistband, make sure to roll over the fabric around the edge of the interfacing.
 
-Remember that in the previous step your sewed 3mm from the interfacing edge? You need to make the fold around the edge of the interfacing so that the actual seam sits 3mm more inwards.
+Remember that in the previous step your sewed 3mm from the interfacing edge? Remember that in the previous step your sewed 3mm from the interfacing edge? You need to make the fold around the edge of the interfacing so that the actual seam sits 3mm more inwards.
 
 This will make sure that our lining fabric is never on display from the front of your trousers.
 
