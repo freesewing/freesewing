@@ -244,6 +244,9 @@ sven:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
+tamiko:
+  peer:
+    '@freesewing/plugin-bust': *freesewing
 teagan:
   peer:
     '@freesewing/brian': *freesewing
