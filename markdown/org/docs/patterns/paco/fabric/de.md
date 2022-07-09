@@ -21,4 +21,3 @@ Verwenden Sie eines der anderen Designs mit einer eingebauten Taille, wenn Sie m
 Vermeiden Sie auch die Auswahl eines Stoffes mit einer Menge Stretch, denn es wird die Dinge komplizieren, wenn Sie die elastischen installieren. 
 
 </Tip>
-
