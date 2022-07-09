@@ -18,6 +18,7 @@ export default {
       'backScyeDart',
       'frontScyeDart',
       'centerBackDart',
+      'draftForHighBust',
     ],
     style: [
       'pocketLocation',
@@ -42,6 +43,7 @@ export default {
     'shoulderToShoulder',
     'waist',
   ],
+  optionalMeasurements: [ 'highBust' ],
   dependencies: {
     backBlock: 'base',
     frontBlock: 'backBlock',
@@ -106,5 +108,8 @@ export default {
     shoulderInset: { pct: 10, min: 0, max: 20 },
     neckInset: { pct: 5, min: 0, max: 10 },
     pocketAngle: { deg: 5, min: 0, max: 5 },
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }

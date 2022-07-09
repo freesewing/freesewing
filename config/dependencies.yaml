@@ -258,7 +258,7 @@ utils:
 wahid:
   peer:
     '@freesewing/brian': *freesewing
-    '@freesewing/plugin-round': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 yuri:
   peer:
     '@freesewing/brian': *freesewing

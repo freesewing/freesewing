@@ -1,8 +1,7 @@
 import freesewing from '@freesewing/core'
 import Brian from '@freesewing/brian'
 import plugins from '@freesewing/plugin-bundle'
-import round from '@freesewing/plugin-round'
-import buttons from '@freesewing/plugin-buttons'
+import plugin from '@freesewing/plugin-bust' // Note: conditional plugin
 import config from '../config'
 // Parts
 import draftFront from './front'
@@ -27,8 +26,20 @@ const wristPlugin = {
   },
 }
 
-// Create pattern
-const Wahid = new freesewing.Design(config, [plugins, round, buttons, wristPlugin])
+/* Check to see whether we should load the bust plugin
+ * Only of the `draftForHighBust` options is set
+ * AND the highBust measurement is available
+ */
+const condition = (settings = false) =>
+  settings &&
+  settings.options &&
+  settings.options.draftForHighBust &&
+  settings.measurements.highBust
+    ? true
+    : false
+
+// Create design
+const Wahid = new freesewing.Design(config, [plugins, wristPlugin], { plugin, condition })
 
 // Parts we're getting from Brian
 Wahid.prototype.draftBase = function (part) {
