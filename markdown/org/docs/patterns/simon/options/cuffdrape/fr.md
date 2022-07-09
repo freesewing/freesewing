@@ -9,7 +9,7 @@ Combien la fin de la manche est plus large que le poignet.
 <Note>
 
 Cela change un peu l'apparence de la manche.
-More drape makes the sleeve wider and gives you a more _blousy_ effect, whereas less drape makes the sleeve more narrow.
+Le drapé sera travaillé dans le manche avec des plis.
 
 Le drapé sera travaillé dans le manche avec des plis.
 
