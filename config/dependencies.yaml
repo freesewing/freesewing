@@ -46,6 +46,7 @@ carlton:
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 charlie:
   peer:
     '@freesewing/plugin-bartack': *freesewing
