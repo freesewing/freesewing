@@ -11,4 +11,4 @@ assignees: ''
 - Relevant section: If a specific section needs to be updated and you are unable to provide an anchor link, what's the heading or area of interest?
 - Suggested content: Do you have any changes you'd like to suggest to improve the documentation?
 
-Looking to tackle this issue? Check out our [documentation for editors](https://freesewing.dev/editors/) to learn how to contribute updates.
+Looking to tackle this issue? Check out our [markdown guide](https://freesewing.dev/guides/markdown) to learn how to format documentation.
