@@ -15,8 +15,7 @@ Ich weiß nicht, ob du mit dem Satz **Noblesse oblige** vertraut bist, aber das 
 
 Ich bin privilegiert, und damit habe ich Verantwortung. Ich habe das große Glück, in Westeuropa geboren zu sein, einen guten Job und ein Dach über dem Kopf zu haben.
 
-Könnte ich das Geld gebrauchen? Yes I could.\
-Do I need the money? Nein, tue ich nicht.
+Könnte ich das Geld gebrauchen? Nein, tue ich nicht. Nein, tue ich nicht.
 
 ##### Der Wert deiner Unterstützung
 
