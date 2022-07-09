@@ -8,7 +8,7 @@ title: "Bruce boxer briefs: Sewing Instructions"
 
 ![Join back to first side](step01.png)
 
-Align the side of the back (piece 1) with the side (piece 3) making sure to put the good sides together. The side (piece 3) is not symmetric, so make be careful to correctly match them.
+Align the side of the back (piece 1) with the side (piece 3) making sure to put the good sides together. Since the side (piece 3) is symmetric, you can't go wrong.
 
 <Tip>
 If you look at the part 3 (the side) with the text so you can read it, then then left side should be attached to the back,
@@ -213,6 +213,6 @@ Al coser, estira elástica y teje juntos entre cada conjunto de pines quitando l
 
 ### Paso 15: Recortar y limpiar
 
-![Yay! You've made it](step15.png)
+![Yay! Yay! You've made it](step15.png)
 
 Trim any excess fabric you might have at elastic or hem, and any loose threads.
