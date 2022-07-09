@@ -6,4 +6,3 @@ files:
     translation: /packages/i18n/src/locales/%two_letters_code%/**/%original_file_name%
   - source: /markdown/org/**/en.md
     translation: /markdown/org/**/%two_letters_code%.md
-
