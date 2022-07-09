@@ -42,7 +42,7 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 <Tip>
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. etc. Things like these are signs of where the pattern may need adjusting.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 
@@ -53,7 +53,8 @@ Sometimes you may need to wear the mock-up for an extended amount of time to get
 Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look.\
 For instance:
 
-- Add a front closure
+- 
+Add a front closure
 - Add pockets
 - Change the pant length
 - Change the pant width
