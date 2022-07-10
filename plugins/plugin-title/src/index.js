@@ -43,8 +43,6 @@ export default {
       so.scale = so.scale * this.context.settings.scale
       let overwrite = true
       if (so.append) overwrite = false
-      let prefix = ''
-      if (so.prefix) prefix = so.prefix
       this.points[`_${prefix}_titleNr`] = so.at
         .clone()
         .attr('data-text', so.nr, overwrite)
