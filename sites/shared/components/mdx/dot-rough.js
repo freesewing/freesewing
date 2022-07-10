@@ -86,7 +86,7 @@ const coarse = (svg, options) => {
   const children = svg.querySelectorAll('circle, rect, ellipse, line, polygon, polyline, path')
   for(let i = 0; i < children.length; i += 1) {
     const original = noBlack(children[i]);
-    const params = [];
+    let params = [];
     let shapeType;
 
     switch(original.tagName) {
