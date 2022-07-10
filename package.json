@@ -19,7 +19,7 @@
     "tips": "node scripts/help.mjs",
     "lab": "cd sites/lab && yarn start",
     "kickstart": "npx lerna bootstrap && yarn buildall && yarn tips",
-    "clean": "rimraf dist",
+    "cleanall": "lerna run clean",
     "test": "lerna run test",
     "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
     "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
