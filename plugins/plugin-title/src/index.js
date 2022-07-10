@@ -14,6 +14,21 @@ export default {
   },
   macros: {
     title: function (so) {
+      let prefix = ''
+      if (so.prefix) prefix = so.prefix
+
+      // Passing `false` will remove the title
+      if (so === false) {
+        for (const id of [
+          `_${prefix}_titleNr`,
+          `_${prefix}_titleName`,
+          `_${prefix}_titlePattern`,
+          `_${prefix}_titleFor`,
+        ])
+          delete this.points[id]
+        return true
+      }
+
       const transform = function (anchor) {
         const cx = anchor.x - so.scale * anchor.x
         const cy = anchor.y - so.scale * anchor.y
