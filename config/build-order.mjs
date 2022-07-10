@@ -1,4 +1,4 @@
-import { designs, plugins, packages, software  } from './software/index.mjs'
+import { designs, plugins, packages  } from './software/index.mjs'
 
 /*
  * As this monorepo has interlocking dependencies
