@@ -22,25 +22,8 @@ export default function (part) {
   for (let i in paths) delete paths[i]
   for (let i in snippets) delete snippets[i]
   //removing macros not required from Bella
-  delete points.titleAnchor
-  delete points.__titleNr
-  delete points.__titleName
-  delete points.__titlePattern
-  delete points.scaleboxAnchor
-  delete points.__scaleboxImperialBottomLeft
-  delete points.__scaleboxMetricBottomLeft
-  delete points.__scaleboxImperialTopLeft
-  delete points.__scaleboxMetricTopLeft
-  delete points.__scaleboxImperialTopRight
-  delete points.__scaleboxMetricTopRight
-  delete points.__scaleboxImperialBottomRight
-  delete points.__scaleboxMetricBottomRight
-  delete points.__scaleboxLead
-  delete points.__scaleboxTitle
-  delete points.__scaleboxText
-  delete points.__scaleboxLink
-  delete points.__scaleboxImperial
-  delete points.__scaleboxMetric
+  macro('title', false)
+  macro('scalebox', false)
   //bella alterations
   points.sideHemNew = points.armhole.shiftOutwards(
     points.bustDartTop,
