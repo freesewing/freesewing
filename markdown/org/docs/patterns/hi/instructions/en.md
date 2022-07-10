@@ -12,7 +12,7 @@ When you're using fabric with some stretch in it, it is a good idea to stabilize
 
 - Cut pieces of black fabric the size of the eyes on the body pieces.
 - Stabilise the fabric with a bit of interfacing.
-- With white thread, either by hand or machine *bar tack* the pupils onto the eyes like eyelets.
+- With white thread, either by hand or machine _bar tack_ the pupils onto the eyes like eyelets.
 
 <Tip>
 
@@ -20,7 +20,7 @@ If stitching the pupil by machine you may find it easier to use either the eyele
 
 </Tip>
 
-- With orange thread, *bar tack* around the edge of the eyes.
+- With orange thread, _bar tack_ around the edge of the eyes.
 - If the fabric you are using frays, fray check the edges.
 
 <Note>
@@ -34,30 +34,30 @@ If you wish to make an embroidered eye we recommended to make it an embroidery p
 ## Step 2: The Upper body
 
 - Using topstiching thread (thick thread), go back and forth several times along the gill lines of the body pieces.
-- *Edgestitch* the eyes to the bodys, matching the thread colour of the outer bar tacks.
+- _Edgestitch_ the eyes to the bodys, matching the thread colour of the outer bar tacks.
 - Sew the darts on the front of the bodys closed. Trim away any excess fabric.
-- With *good sides together* sew the tail pieces to the bodys, matching notches.
-- With *good sides together* sew the topFin pieces to the bodys.
-- With *good sides together* sew the bodys together along the front, top, around the tail and below the tail, leaving a gap open below the tail for turning and stuffing the shark later.
+- With _good sides together_ sew the tail pieces to the bodys, matching notches.
+- With _good sides together_ sew the topFin pieces to the bodys.
+- With _good sides together_ sew the bodys together along the front, top, around the tail and below the tail, leaving a gap open below the tail for turning and stuffing the shark later.
 
 ## Step 3: The Belly
 
-- With *good sides together* sew the two aboveMouth pieces together along the larger straight edge.
+- With _good sides together_ sew the two aboveMouth pieces together along the larger straight edge.
 - Sew the teeth pieces to the mouth, matching notches and making sure the teeth face towards the centre of the mouth. These will now be treated as one.
 - Sew the darts on the belly, trim away any excess fabric.
-- With *good sides together* sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
-- With *good sides together* sew the joined mouth and aboveMouth to the belly piece, matching notches.
-- With *good sides together* sew the bottomFin pieces to the belly, matching notches.
+- With _good sides together_ sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
+- With _good sides together_ sew the joined mouth and aboveMouth to the belly piece, matching notches.
+- With _good sides together_ sew the bottomFin pieces to the belly, matching notches.
 
 ## Step 4: Final Assembly
 
-- With *good sides together* sew the belly to the body, matching the front, back, and fins.
+- With _good sides together_ sew the belly to the body, matching the front, back, and fins.
 - Turn though the gap left below the tail.
 
 ## Step 5: Stuffing
 
 - Fill the plush toy with stuffing through the opening you left below the tail, making sure to fill the tail and fins well before adding too much stuffing in the body itself. 
-- *Slipsticth* or *whipstitch* the opening closed.
+- _Slipsticth_ or _whipstitch_ the opening closed.
 
 ## Step 6: Enjoy!
 

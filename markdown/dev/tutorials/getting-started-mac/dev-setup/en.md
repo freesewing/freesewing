@@ -105,7 +105,7 @@ Use `From scratch` unless you want to start from our of our blocks:
 
 
 #### What name to use
-This will become the name of your design. Stick to [a-z] here to avoid problems.
+This will become the name of your design. Stick to \[a-z\] here to avoid problems.
 
 If you're not certain what to pick, just mash some keys, it doesn't matter.
 

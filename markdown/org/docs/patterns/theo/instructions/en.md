@@ -164,9 +164,10 @@ When everything is pinned together, fold away the front piece and lining, and cl
 Sew to bottom curve of the pocket bag up until the point where it reached the side piece
 
 You can finish the pocket bag in a number of ways, including:
- - Serge the sides together
- - Finish the edge with bias tape
- - Sew the sides together and finish the edge with a zig-zag stitch
+
+- Serge the sides together
+- Finish the edge with bias tape
+- Sew the sides together and finish the edge with a zig-zag stitch
 
 </Tip>
 
@@ -403,9 +404,9 @@ Last but not least, sew along the zip with your zipper foot to attach it to the 
 
 When aligning the zip, make sure to take the following into account:
 
- - The zip should be placed with the good side down
- - The zip should sit a bit back from the edge of your fly piece
- - Make sure to align the top of the zip with the other zip half on the right leg
+- The zip should be placed with the good side down
+- The zip should sit a bit back from the edge of your fly piece
+- Make sure to align the top of the zip with the other zip half on the right leg
 
 </Tip>
 

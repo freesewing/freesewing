@@ -14,6 +14,7 @@ Below is a list of custom components you can use in our Markdown content:
 ## Dot
 
 <Dot>
+
 ```dot
 rankdir="LR"
 compound=true
@@ -43,11 +44,12 @@ frontend -> strapi [color="oc-indigo"]
 user -> frontend
 
 ```
+
 An example graph using the **Dot** custom component
 </Dot>
 
 Use **Dot** to add a [Graphviz](https://graphviz.org/) graph written in
-the [Dot graph description language](*https://en.wikipedia.org/wiki/DOT_(graph_description_language)).
+the [Dot graph description language](https://en.wikipedia.org/wiki/DOT_(graph_description_language)).
 
 It is a way to include diagrams as code, making them easier to maintain and diff than
 creating graphic files by hand. These diagrams also support dark mode, translation a and
