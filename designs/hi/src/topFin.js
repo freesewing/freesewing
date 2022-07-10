@@ -1,5 +1,5 @@
 export default function (part) {
-  let {
+  const {
     store,
     sa,
     Point,
@@ -9,7 +9,6 @@ export default function (part) {
     Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro,
@@ -20,7 +19,7 @@ export default function (part) {
 
   let topFin01_02d = 256.9537569065251 * options.size
   let topFin01_02a = 325.46697637215823
-  let topFin01_03d = 149.5416276819869 * options.size
+  //let topFin01_03d = 149.5416276819869 * options.size
   let topFin01_03a = 275.4353725228365
   let topFin01cp1d = 178.52481158058 * options.size
   let topFin01cp2d = 27.240286624072077 * options.size

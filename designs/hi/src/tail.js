@@ -1,5 +1,5 @@
 export default function (part) {
-  let {
+  const {
     store,
     sa,
     Point,
@@ -9,7 +9,6 @@ export default function (part) {
     Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro,
