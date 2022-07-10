@@ -83,7 +83,8 @@ packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
 
 # Translation files for NextJS
-/home/joost/git/freesewing/packages/i18n/src/next/*/*.mjs
+# Remove this after we move to Node 16 and deprecate pattern-info
+#/home/joost/git/freesewing/packages/i18n/src/next/*/*.mjs
 
 # Lab auto-generated pages
 sites/lab/lib
