@@ -135,7 +135,7 @@ export default function (part) {
 
   // gusset width uses modified xScale (barely stretches) and depends on waistToUpperLeg - least sensitive to girth
   points.frontGussetLeft = new Point(
-    measurements.seat / 4 - (measurements.waistToSeat * options.gussetWidth * store.get('xScaleReduced')) * 2.2,
+    measurements.seat / 4 - (measurements.waistToUpperLeg * options.gussetWidth * store.get('xScaleReduced')) * 1.9,
     frontHeightReduced
   )
   points.frontGussetMid = new Point(measurements.seat / 4, frontHeightReduced)

@@ -19,7 +19,6 @@ export default function (part) {
   // Design pattern here
 
   // Create points
-return part
   points.backWaistMid = new Point(measurements.seat / 4, 0)
   points.backWaistBandLeft = new Point(
     store.get('sideSeamWaist').x / options.backToFrontWidth,
@@ -43,9 +42,7 @@ return part
   const backHeightReduced = backHeightBelow + backHeightAbove
 
   points.backGussetLeft = new Point(
-    measurements.seat / 4 -
-      ((measurements.waist * options.gussetWidth * store.get('xScale')) / options.gussetRatio) *
-        options.backToFrontWidth,
+    measurements.seat / 4 - (measurements.waistToUpperLeg * options.gussetWidth * store.get('xScaleReduced')) * 1.9 / options.gussetRatio,
     backHeightReduced
   )
   points.backGussetMid = new Point(
