@@ -32,7 +32,7 @@ You can cut the Pocket and backPocket parts out of a lining fabric if you prefer
 
 <Tip>
 
-Pattern part 2 is just for when you want to make the pants without printing everything.
+Enregistrer une arborescence.
 Comme il ne s'agit que de quelques rectangles (avec un côté incliné), vous pouvez simplement utiliser une règle pour couper la partie principale. Ensuite, vous utilisez la partie 2 pour couper la partie crochée. Enregistrer une arborescence.
 
 Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.

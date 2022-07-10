@@ -9,7 +9,7 @@ Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. To _**Fi
 ##### Finishing Method 1
 
 - Press open the seam allowances.
-- Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+Then on the good side, _**Edgestitch**_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
 - Auf der falschen Seite die Nahtzuschläge in der Nähe des Kantenstichens abschneiden.
 
 ##### Fertigstellungsmethode 2

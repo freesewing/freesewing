@@ -36,7 +36,7 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Cosas como estas son signos de que el patrón puede necesitar ajustes.
+Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. etc. Cosas como estas son signos de que el patrón puede necesitar ajustes.
 
 Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
 

@@ -28,6 +28,8 @@ As Bent is a block it does not have any closures. So the instructions below will
 
 <Note>
 
+You may need to ease/gather the sleeves to fit.
+  
 You may need to ease/gather the sleeves to fit.\
 You may need to leave the bottom of one of the sleeve seams open to put the garment on.
 
