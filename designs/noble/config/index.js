@@ -2,8 +2,6 @@
 import Bella from '@freesewing/bella'
 
 import { version } from '../package.json'
-import configHelpers from '@freesewing/config-helpers'
-const { pctBasedOn } = configHelpers
 
 export default {
   ...Bella.config,

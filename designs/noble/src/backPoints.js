@@ -1,13 +1,13 @@
 export default function (part) {
-    let {
-      points,
-      Path,
-      paths,
-      options,
-      snippets,
-    } = part.shorthand()
+  const {
+    points,
+    Path,
+    paths,
+    options,
+    snippets,
+  } = part.shorthand()
 
-    // Hide Bella paths
+  // Hide Bella paths
   for (let key of Object.keys(paths)) paths[key].render = false
   for (let i in snippets) delete snippets[i]
 
