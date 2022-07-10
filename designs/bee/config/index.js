@@ -121,7 +121,7 @@ export default {
         metric: [6, 13, 19, 25, 32, 38],
         imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1],
       },
-      toAbs: (pct, { measurements }) => measurements.bustSpan * pct,
+      ...pctBasedOn('bustSpan'),
     },
     neckTieLength: { pct: 80, min: 70, max: 100 },
     neckTieEnds: { dflt: 'straight', list: ['straight', 'pointed'] },
