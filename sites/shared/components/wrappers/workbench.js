@@ -18,6 +18,8 @@ import DraftEvents from 'shared/components/workbench/events.js'
 import CutLayout from 'shared/components/workbench/layout/cut'
 import PrintLayout from 'shared/components/workbench/layout/print'
 
+import ErrorBoundary from 'shared/components/error-boundary';
+
 const views = {
   measurements: Measurements,
   draft: LabDraft,
@@ -151,8 +153,10 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   return  <LayoutComponent {...layoutProps}>
             {messages}
-            <Component {...componentProps} />
-            {popup && <Modal cancel={() => setPopup(false)}>{popup}</Modal>}
+            <ErrorBoundary gist={gist}>
+              <Component {...componentProps} />
+              {popup && <Modal cancel={() => setPopup(false)}>{popup}</Modal>}
+            </ErrorBoundary>
           </LayoutComponent>
 }
 

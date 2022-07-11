@@ -11,9 +11,14 @@ const Option = props => {
   const type = optionType(opt)
   const Input = inputs[type]
   const Value = values[type]
-  const hide = opt.hide && opt.hide(props.draft.settings.options);
 
-  if (hide) return null
+  try {
+    const hide = opt.hide && opt.hide(props.draft.settings);
+
+    if (hide) return null
+  } catch(e) {
+    console.warn(`error occurred in hide method for ${ props.option}, so we'll just show it`, e)
+  }
 
   if (type === 'bool') {
     const toggleBoolean = () => {
