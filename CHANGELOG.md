@@ -3,17 +3,53 @@
 
 ## Unreleased
 
+### brian
+
+#### Fixed
+
+ - Make s3 options sticky to zero below 10% to avoid path split issues. Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
+
+### aaron
+
+#### Added
+
+ - Support drafting for high bust
+
 ### charlie
 
 #### Changed
 
  - Renamed back pocket jet to back pocket welt
 
+### hugo
+
+#### Added
+
+ - Support drafting for high bust Closes [#802](https://github.com/freesewing/freesewing/issues/802)
+
+### paco
+
+#### Changed
+
+ - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
+
+### simone
+
+#### Fixed
+
+ - Don't do a negative FBA from there's no need for an FBA Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
+
 ### theo
 
 #### Changed
 
  - migrated `waistbandWidth` option from `mm` to snapped `pct` option
+
+### wahid
+
+#### Fixed
+
+ - Prevent facing/lining overlap when shoulders get very narrow fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
 
 
 ## 2.21.3 (2022-07-02)
