@@ -19,7 +19,7 @@
     "major": "npm version major -m ':bookmark: v%s' && npm run build",
     "test": "SEND_TEST_EMAILS=0 ./node_modules/.bin/mocha tests/index.js",
     "testall": "SEND_TEST_EMAILS=1 ./node_modules/.bin/mocha tests/index.js",
-    "testci": "babel-node --presets '@babel/preset-env' scripts/testci.js",
+    "testci_IGNORE": "babel-node --presets '@babel/preset-env' scripts/testci.js",
     "clean": "rimraf dist",
     "prettier": "npx prettier --write 'src/**' 'tests/**'",
     "lint": "eslint --fix \"src/*.js\"",
