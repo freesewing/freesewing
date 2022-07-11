@@ -51,6 +51,6 @@
   "devDependencies": {
     "@freesewing/prettier-config": "latest",
     "backpack-core": "^0.8.4",
-    "nodemon": "2.0.18"
+    "nodemon": "2.0.19"
   }
 }
