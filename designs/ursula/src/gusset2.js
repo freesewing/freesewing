@@ -1,13 +1,10 @@
 export default function (part) {
   const {
-    Point,
-    Path,
     points,
     paths,
     Snippet,
     snippets,
     store,
-    utils,
   } = part.shorthand()
 
   // draw markers to indicate elastic distribution

@@ -1,5 +1,4 @@
 import path from 'path'
-import { readdirSync } from 'fs'
 import i18nConfig from './next-i18next.config.js'
 import { designs, plugins } from '../../config/software/index.mjs'
 import { banner } from '../../scripts/banner.mjs'

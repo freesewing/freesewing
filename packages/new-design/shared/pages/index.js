@@ -6,12 +6,8 @@ import { useTranslation } from 'next-i18next'
 import FsIcon from 'shared/components/icons/freesewing'
 import Link from 'next/link'
 import Popout from 'shared/components/popout'
-import LocaleIcon from 'shared/components/icons/i18n.js'
 import { useRouter } from 'next/router'
 import themes from 'shared/themes/index.js'
-
-const fsd = `<a class="text-secondary hover:text-secondary-focus"
-href="https://freesewing.dev">freesewing.dev</a>`
 
 const translations = {
   sade: {

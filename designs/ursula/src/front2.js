@@ -5,8 +5,6 @@ export default function (part) {
     Snippet,
     snippets,
     store,
-    paperless,
-    macro,
   } = part.shorthand()
 
   // draw markers to indicate elastic distribution
