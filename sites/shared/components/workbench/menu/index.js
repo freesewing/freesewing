@@ -4,7 +4,6 @@ import DesignOptions from './design-options'
 import CoreSettings from './core-settings'
 import Xray from './xray'
 import TestDesignOptions from './test-design-options'
-import ErrorBoundary from 'shared/components/error-boundary'
 
 export const Ul = props => <ul className="pl-5 list-inside">{props.children}</ul>
 export const Li = props => (
@@ -87,7 +86,6 @@ const WorkbenchMenu = props => {
   return (
     <nav className="grow mb-12">
       <ViewMenu {...props} />
-      <ErrorBoundary>
         {props.gist?._state?.view === 'draft' && (
           <>
             <DesignOptions {...props} />
@@ -96,7 +94,6 @@ const WorkbenchMenu = props => {
           </>
         )}
         {props.gist?._state?.view === 'test' && <TestDesignOptions {...props} />}
-      </ErrorBoundary>
     </nav>
   )
 }

@@ -18,14 +18,14 @@ const Draft = props => {
         ...patternProps.autoLayout,
         width: patternProps.width,
         height: patternProps.height
-      })
+      }, false, false)
     }
   }, [layout])
 
   if (!patternProps || !layout) return null
 
   // Helper method to update part layout and re-calculate width * height
-  const updateLayout = (name, config) => {
+  const updateLayout = (name, config, history=true) => {
     // Start creating new layout
     const newLayout = {...layout}
     newLayout.parts[name] = config
@@ -49,7 +49,7 @@ const Draft = props => {
     newLayout.height = bottomRight.y - topLeft.y
     newLayout.bottomRight = bottomRight
     newLayout.topLeft = topLeft
-    updateGist(['layout'], newLayout)
+    updateGist(['layout'], newLayout, false, history)
   }
 
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ResetButtons from './reset-buttons'
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -25,7 +26,11 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       // You can render any custom fallback UI
-      return this.props.errorView  || (<h1>Something went wrong.</h1>);
+      return (<div>
+        {this.props.errorView  || (<h1>Something went wrong.</h1>)}
+        <ResetButtons undoGist={this.props.undoGist} resetGist={this.props.resetGist} />
+      </div>)
+      return ;
     }
 
     try {
