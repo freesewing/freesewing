@@ -76,7 +76,7 @@ const Draft = props => {
           ].map(list => list.map(name => (
             <Part {...{
               key:name,
-              name,
+              partName: name,
               part: patternProps.parts[name],
               layout,
               app,
