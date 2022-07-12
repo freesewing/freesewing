@@ -99,6 +99,7 @@ const Part = props => {
 
   // Initialize drag handler
   useEffect(() => {
+    if (!partRef.current) {return}
     handleDrag(select(partRef.current))
   }, [rotate, layout])
 
@@ -163,6 +164,7 @@ const Part = props => {
     updateLayout()
   }
   const toggleDragRotate = () => {
+    if (!partRef.current) {return}
     updateLayout()
     setRotate(!rotate)
   }
@@ -200,7 +202,7 @@ const Part = props => {
     <g
       {...getProps(part)}
       id={`part-${partName}`}
-      ref={props.name === 'pages' ? null : partRef}
+      ref={partName === 'pages' ? null : partRef}
       onClick={toggleDragRotate}
       transform-origin={`${center.x} ${center.y}`}
     >
