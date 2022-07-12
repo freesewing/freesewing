@@ -87,17 +87,12 @@ export async function getStaticProps({ locale }) {
  * Main method that does what needs doing
  */
 
-const l = 'prebuild'
 export const prebuildLab = async (site) => {
   const promises = []
   const availableVersions = {}
   // Load config
   const versions = JSON.parse(await fs.readFile(
     path.resolve('..', 'lab', 'versions.json'),
-    'utf-8'
-  ))
-  const plugins = JSON.parse(await fs.readFile(
-    path.resolve('..', 'lab', 'plugins.json'),
     'utf-8'
   ))
   for (const section in designsByType) {
@@ -133,7 +128,7 @@ export const prebuildLab = async (site) => {
           const file = path.resolve('..', 'lab', 'lib', version, `${design}.mjs`)
           let cached
           try {
-            const result = await fs.access(file)
+            await fs.access(file)
             cached = true
           }
           catch(err) {

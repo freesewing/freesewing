@@ -1,4 +1,4 @@
-import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
+import { linkClasses } from 'shared/components/navigation/primary.js'
 import ViewMenu from './view.js'
 import DesignOptions from './design-options'
 import CoreSettings from './core-settings'

@@ -1,5 +1,5 @@
 import SettingsIcon from 'shared/components/icons/settings.js'
-import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
+import { Chevron } from 'shared/components/navigation/primary.js'
 import Setting from './setting.js'
 import { Ul, Details, TopSummary, TopSumTitle } from '../index.js'
 import { useTranslation } from 'next-i18next'

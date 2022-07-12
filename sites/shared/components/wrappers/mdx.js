@@ -3,7 +3,7 @@
  * method (see shared/mdx/loader.js)
  * It is NOT for wrapping plain markdown/mdx
  */
-import { useState, useEffect, Fragment } from 'react'
+import { useState, useEffect } from 'react'
 
 // See: https://mdxjs.com/guides/mdx-on-demand/
 import { run } from '@mdx-js/mdx'

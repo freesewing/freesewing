@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 
 const CoreSettingList = props => {
   const { t } = useTranslation(['settings'])
-  const { dflt, list } = props
+  const { dflt } = props
   const val = props.gist?.[props.setting]
 
   const [value, setValue] = useState(val)

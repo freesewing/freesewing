@@ -82,7 +82,7 @@ export const capitalize = string => string.charAt(0).toUpperCase() + string.slic
 
 export const strapiImage = (img, sizes=['thumbnail', 'xlarge', 'large', 'medium', 'small', 'xsmall']) => {
   const image = {
-    caption: img?.caption || '',
+    caption: img.caption || '',
     w: img.width,
     h: img.height,
     url: img.url,
