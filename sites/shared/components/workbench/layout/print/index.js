@@ -15,7 +15,7 @@ const PrintLayout = props => {
 
   const { t } = useTranslation(['workbench'])
 
-  const draft = new props.design(props.gist).use(pagesPlugin(
+  const draft = props.draft.use(pagesPlugin(
     props.gist?._state?.layout?.forPrinting?.page?.size,
     props.gist?._state?.layout?.forPrinting?.page?.orientation,
   ))

@@ -112,7 +112,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   // Generate the draft here so we can pass it down
   let draft = false
-  if (['draft', 'events', 'test'].indexOf(gist._state?.view) !== -1) {
+  if (['draft', 'events', 'test', 'cuttingLayout', 'printingLayout'].indexOf(gist._state?.view) !== -1) {
     draft = new design(gist)
     if (gist.renderer === 'svg') draft.use(theme)
     try {

@@ -16,7 +16,7 @@ const CutLayout = props => {
     )
   }, [])
 
-  const draft = new props.design(props.gist).use(cutFabricPlugin(
+  const draft = props.draft.use(cutFabricPlugin(
     props.gist?._state?.layout?.forCutting?.fabric?.width,
     props.gist?._state?.layout?.forCutting?.fabric?.height,
   )).use(mirrorOnFold)
