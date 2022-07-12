@@ -199,8 +199,7 @@ function scripts(pkg) {
   }
 
   // Enforce build order by generating the cibuild_stepX scrips
-  let i = 0
-  for (const step in buildOrder) {
+  for (let step=0; step < buildOrder.length; step++) {
     if (buildOrder[step].indexOf(pkg.name) !== -1) {
       if (runScripts.build) runScripts[`cibuild_step${step}`] = runScripts.build
     }
