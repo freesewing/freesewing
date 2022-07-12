@@ -207,7 +207,7 @@ const Part = props => {
       transform-origin={`${center.x} ${center.y}`}
     >
       {PartInner(props)}
-      {props.name !== 'pages' && <>
+      {partName !== 'pages' && <>
       <text x={center.x} y={center.y} ref={centerRef} />
       <rect
         x={part.topLeft.x}
