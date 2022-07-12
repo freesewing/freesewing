@@ -2,7 +2,6 @@ import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Link from 'next/link'
 import PageLink from 'shared/components/page-link.js'
-import TimeAgo from 'react-timeago'
 import { strapiHost } from 'shared/config/freesewing.mjs'
 import { strapiImage } from 'shared/utils.js'
 import { useTranslation } from 'next-i18next'
@@ -37,7 +36,7 @@ const DesignPosts = ({ design, posts }) => {
         md:-mr-12 md:pl-12
       `}>
       {posts.slice(0, 10).map(post => <PreviewTile
-        img={`${strapiHost}${post?.image?.sizes?.medium?.url}`}
+        img={`${strapiHost}${post.image?.sizes?.medium?.url}`}
         slug={post.slug}
         title={post.title}
         key={post.slug}

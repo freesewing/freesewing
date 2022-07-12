@@ -12,21 +12,6 @@ const colors = {
   none: '',
 }
 
-let forceTailwind = <p className="border-accent bg-accent" />
-forceTailwind += <p className="text-accent" />
-forceTailwind += <p className="border-secondary bg-secondary" />
-forceTailwind += <p className="text-secondary" />
-forceTailwind += <p className="border-error bg-error" />
-forceTailwind += <p className="text-error" />
-forceTailwind += <p className="border-warning bg-warning" />
-forceTailwind += <p className="text-warning" />
-forceTailwind += <p className="border-info bg-info" />
-forceTailwind += <p className="text-info" />
-forceTailwind += <p className="border-success bg-success" />
-forceTailwind += <p className="text-success" />
-forceTailwind += <p className="border-primary bg-primary" />
-forceTailwind += <p className="text-primary" />
-
 const Popout = (props) => {
 
   const [hide, setHide] = useState(false)
@@ -73,7 +58,7 @@ const Popout = (props) => {
                 {type === 'comment' && <> by <b>{props.by}</b></>}
               </span>
             </div>
-            {props?.hideable && (
+            {props.hideable && (
               <button
                 onClick={() => setHide(true)}
                 className="hover:text-secondary"

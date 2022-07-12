@@ -1,5 +1,4 @@
 const colors = require('tailwindcss/colors')
-const light = require('./light')
 
 const blue = '#77cbf9'
 const pink = '#ecadb9'

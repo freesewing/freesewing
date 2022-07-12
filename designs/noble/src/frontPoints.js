@@ -1,18 +1,10 @@
 export default function (part) {
-  let {
-    utils,
-    store,
-    sa,
-    Point,
+  const {
     points,
     Path,
     paths,
-    Snippet,
     snippets,
     options,
-    measurements,
-    complete,
-    paperless,
     macro,
   } = part.shorthand()
 
@@ -227,7 +219,6 @@ export default function (part) {
     .rotate(-2.5, points.shoulderDartOutside)
     .shiftFractionTowards(points.shoulderDartOutside, 0.2)
 
-  let lInside = shoulderInsideSeam.length()
   let iteration = 1
   let diff = 0
   do {

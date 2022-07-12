@@ -42,7 +42,6 @@ const loadDesign = async (design, setExamples) => {
 const Design = ({ design }) => {
   const { t } = useTranslation(['patterns'])
   const {
-    code="Anonymous",
     difficulty=3,
   } = configs[design]
 

@@ -4,7 +4,6 @@ import mdxLoader from 'shared/mdx/loader'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import TocWrapper from 'shared/components/wrappers/toc'
 import Head from 'next/head'
-import HelpUs from 'site/components/help-us.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import components from 'site/components/mdx/index.js'
 // MDX paths

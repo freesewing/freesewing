@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import { SizeMe } from 'react-sizeme'
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
-import svgattrPlugin from '@freesewing/plugin-svgattr'
 import { useTranslation } from 'next-i18next'
 import fileSaver from 'file-saver'
 import yaml from 'js-yaml'

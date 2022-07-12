@@ -2,16 +2,16 @@ import rough from 'roughjs/bundled/rough.cjs.js'
 
 const getAttributes = (element) => Array.prototype.slice.call(element.attributes)
 
-const getNum = (element, attributes) => attributes.map(attr => parseFloat(element.getAttribute(attr), 10))
+const getNum = (element, attributes) => attributes.map(attr => parseFloat(element.getAttribute(attr)))
 
-const getDiam = (element, attributes) => attributes.map(attr => 2 * parseFloat(element.getAttribute(attr), 10))
+const getDiam = (element, attributes) => attributes.map(attr => 2 * parseFloat(element.getAttribute(attr)))
 
 const getCoords = (element, attribute) => element
   .getAttribute(attribute)
   .trim()
   .split(' ')
   .filter(item => item.length > 0)
-  .map(item => item.trim().split(',').map(num => parseFloat(num, 10)))
+  .map(item => item.trim().split(',').map(num => parseFloat(num)))
 
 const getSettings = element => {
   const settings = {};
@@ -25,7 +25,7 @@ const getSettings = element => {
   }
 
   if(element.hasAttribute('stroke-width') && !element.getAttribute('stroke-width').includes('%')) {
-    settings.strokeWidth = parseFloat(element.getAttribute('stroke-width', 10));
+    settings.strokeWidth = parseFloat(element.getAttribute('stroke-width'));
   }
 
   return settings;
@@ -69,10 +69,10 @@ const coarse = (svg, options) => {
     'y2'
   ];
 
-  const flatten = () => {
+  const flatten = (...args) => {
     const rv = []
-    for(let i = 0; i < arguments.length; i++) {
-      const arr = arguments[i]
+    for(let i = 0; i < args.length; i++) {
+      const arr = args[i]
       for(let j = 0; j < arr.length; j++) {
         rv.push(arr[j])
       }

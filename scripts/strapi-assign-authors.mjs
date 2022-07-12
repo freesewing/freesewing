@@ -66,7 +66,6 @@ const bearer = token => ({
  * Exported because it's re-used by the Algolia indexing script
  */
 const getContent = async (lang, type) => {
-  const items = {}
   let res
   try {
     res = await axios.get(`${uris[type]}&_locale=${lang}`)
@@ -82,7 +81,7 @@ const getContent = async (lang, type) => {
 /*
  * Adds maker to showcase post
  */
-const addMaker = (content, lang, token, makers) => {
+const addMaker = (content, token, makers) => {
   const promises = []
   for (const item of content) {
     promises.push(axios.put(
@@ -112,7 +111,7 @@ const addAuthors = async (type, token) => {
 
   for (const lang of languages) {
     const content = await getContent(lang, type)
-    if (type === 'showcaseposts') await addMaker(content, lang, token, makers)
+    if (type === 'showcaseposts') await addMaker(content, token, makers)
   }
 
   return false
@@ -133,7 +132,6 @@ const getToWork = async () => {
     console.log('Failed to login to strapi')
     process.exit()
   }
-  const translations = languages.length - 1
   for (const type of Object.keys(uris)) {
     console.log(`Loading ${type} from Strapi`)
     await addAuthors(type, token)

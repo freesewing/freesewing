@@ -6,91 +6,65 @@ import { getProps } from '../utils'
 import { round } from 'shared/utils'
 import { Tr, KeyTd, ValTd, Attributes, pointCoords } from '../path/index'
 
-class ErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError(error) {
-    console.log(error)
-    return { hasError: true }
-  }
-  componentDidCatch(error, errorInfo) {
-    console.log(error, errorInfo)
-  }
-  render() {
-    if (this.state.hasError) {
-      console.log('in error boundary', props)
-      return <text>Something went wrong.</text>
-    }
-
-    return this.props.children
-  }
-}
-
-const partInfo = (props) => {
-
-  return (
-    <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
-      <h5 className="text-neutral-content text-center pb-4">Part info</h5>
-      <table className="border-collapse h-fit">
-        <tbody>
-          <Tr>
-            <KeyTd>Name</KeyTd>
-            <ValTd>{props.partName}</ValTd>
-          </Tr>
-          <Tr>
-            <KeyTd>Width</KeyTd>
-            <ValTd>{round(props.part.width,2)}mm</ValTd>
-          </Tr>
-          <Tr>
-            <KeyTd>Height</KeyTd>
-            <ValTd>{round(props.part.height,2)}mm</ValTd>
-          </Tr>
-          <Tr>
-            <KeyTd>Top Left</KeyTd>
-            <ValTd>{pointCoords(props.part.topLeft)}</ValTd>
-          </Tr>
-          <Tr>
-            <KeyTd>Bottom Right</KeyTd>
-            <ValTd>{pointCoords(props.part.bottomRight)}</ValTd>
-          </Tr>
-          <Tr>
-            <KeyTd>Attributes</KeyTd>
-            <ValTd><Attributes list={props.part.attributes.list} /></ValTd>
-          </Tr>
-        </tbody>
-      </table>
-      <div className="flex flex-row flex-wrap gap-2 mt-4">
-      {props.gist?.only && props.gist.only.length > 0
-        ? (
-          <button
-            className="btn btn-primary"
-            onClick={() => props.unsetGist(['only'])}
-          >Show all parts</button>
-        ) : (
-          <button
-            className="btn btn-primary"
-            onClick={() => props.updateGist(['only'], [props.partName])}
-          >Show only this part</button>
-        )}
+const partInfo = (props) => (
+  <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
+    <h5 className="text-neutral-content text-center pb-4">Part info</h5>
+    <table className="border-collapse h-fit">
+      <tbody>
+        <Tr>
+          <KeyTd>Name</KeyTd>
+          <ValTd>{props.partName}</ValTd>
+        </Tr>
+        <Tr>
+          <KeyTd>Width</KeyTd>
+          <ValTd>{round(props.part.width,2)}mm</ValTd>
+        </Tr>
+        <Tr>
+          <KeyTd>Height</KeyTd>
+          <ValTd>{round(props.part.height,2)}mm</ValTd>
+        </Tr>
+        <Tr>
+          <KeyTd>Top Left</KeyTd>
+          <ValTd>{pointCoords(props.part.topLeft)}</ValTd>
+        </Tr>
+        <Tr>
+          <KeyTd>Bottom Right</KeyTd>
+          <ValTd>{pointCoords(props.part.bottomRight)}</ValTd>
+        </Tr>
+        <Tr>
+          <KeyTd>Attributes</KeyTd>
+          <ValTd><Attributes list={props.part.attributes.list} /></ValTd>
+        </Tr>
+      </tbody>
+    </table>
+    <div className="flex flex-row flex-wrap gap-2 mt-4">
+    {props.gist?.only && props.gist.only.length > 0
+      ? (
         <button
-          className="btn btn-success"
-          onClick={() => console.log(props.part)}
-        >console.log(part)</button>
+          className="btn btn-primary"
+          onClick={() => props.unsetGist(['only'])}
+        >Show all parts</button>
+      ) : (
         <button
-          className="btn btn-success"
-          onClick={() => console.table(props.part.points)}
-        >console.table(part.points)</button>
-        <button
-          className="btn btn-success"
-          onClick={() => console.table(props.part.paths)}
-        >console.table(part.paths)</button>
-      </div>
+          className="btn btn-primary"
+          onClick={() => props.updateGist(['only'], [props.partName])}
+        >Show only this part</button>
+      )}
+      <button
+        className="btn btn-success"
+        onClick={() => console.log(props.part)}
+      >console.log(part)</button>
+      <button
+        className="btn btn-success"
+        onClick={() => console.table(props.part.points)}
+      >console.table(part.points)</button>
+      <button
+        className="btn btn-success"
+        onClick={() => console.table(props.part.paths)}
+      >console.table(part.paths)</button>
     </div>
-  )
-}
+  </div>
+)
 
 const XrayPart = props => {
   const { topLeft, bottomRight } = props.part
@@ -112,7 +86,7 @@ const XrayPart = props => {
 }
 
 export const PartInner = props => {
-  const { partName, part, app, gist } = props
+  const { partName, part, gist } = props
 
   const grid = gist.paperless ? (
     <rect

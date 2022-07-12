@@ -34,7 +34,7 @@ export default function (part) {
   let body16_17d = 152.51537318250902 * options.size
   let body17_18d = 255.15294373571314 * options.size
   let body18_19d = 71.90453921693678 * options.size
-  let body19_01d = 61.33021195137026 * options.size
+  //let body19_01d = 61.33021195137026 * options.size
 
   let body01cp1d = 32.13103487929059 * options.size
   let body01cp2d = 23.72518967258217 * options.size

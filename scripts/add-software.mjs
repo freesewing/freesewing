@@ -7,9 +7,6 @@ import mustache from 'mustache'
 import { execSync } from 'child_process'
 // Software
 import designs from '../config/software/designs.json'
-import packages from '../config/software//packages.json'
-import plugins from '../config/software//plugins.json'
-import sites from '../config/software//sites.json'
 
 const type = process.argv[2]
 

@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react'
-import Logo from 'shared/components/logos/freesewing.js'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 import DocsIcon from 'shared/components/icons/docs.js'
-import HelpIcon from 'shared/components/icons/help.js'
 import { useTranslation } from 'next-i18next'
 
 const Right = props => (

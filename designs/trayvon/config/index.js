@@ -1,5 +1,4 @@
 import { version } from '../package.json'
-import freesewing from '@freesewing/core'
 import configHelpers from '@freesewing/config-helpers'
 const { smallsteps, pctBasedOn } = configHelpers
 

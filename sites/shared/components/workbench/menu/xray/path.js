@@ -1,4 +1,4 @@
-import { Ul, Li, Details, Summary, NoSumDiv, Deg } from 'shared/components/workbench/menu'
+import { Ul, Li, NoSumDiv, Deg } from 'shared/components/workbench/menu'
 import { formatMm } from 'shared/utils'
 import Attributes from './attributes'
 import Ops from './path-ops'
