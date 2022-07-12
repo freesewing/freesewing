@@ -1,7 +1,6 @@
 import React from 'react'
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import Head from 'next/head'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { formatVersionTitle } from 'site/components/version-picker.js'
@@ -9,23 +8,19 @@ import Layout from 'site/components/layouts/bare'
 import { PageTitle } from 'site/components/wrappers/layout'
 import availableVersions from 'site/available-versions.json'
 
-const DesignLinks = ({ list, prefix='', version=false }) => {
-  const { t } = useTranslation(['patterns'])
-
-  return (
-    <ul className="flex flex-row flex-wrap ml-8">
-      {list.map( d => (
-        <li key={d} className="p-2">
-          <Link href={`${prefix}/${d}`}>
-            <a className="capitalize text-secondary hover:text-secondary-focus hover:underline">
-              {d}
-            </a>
-          </Link>
-        </li>
-      ))}
-    </ul>
-  )
-}
+const DesignLinks = ({ list, prefix='', version=false }) => (
+  <ul className="flex flex-row flex-wrap ml-8">
+    {list.map( d => (
+      <li key={d} className="p-2">
+        <Link href={`${prefix}/${d}`}>
+          <a className="capitalize text-secondary hover:text-secondary-focus hover:underline">
+            {d}
+          </a>
+        </Link>
+      </li>
+    ))}
+  </ul>
+)
 
 const VersionLinks = ({ list, prefix='', version=false, currentDesigns=[] }) => (
   <ul className="flex flex-col flex-wrap gap-2">
@@ -51,8 +46,7 @@ const VersionLinks = ({ list, prefix='', version=false, currentDesigns=[] }) => 
 )
 
 const VersionListPage = ({ section=false, version=false }) => {
-const app = useApp()
-const { t } = useTranslation(['app'])
+  const app = useApp()
 
   const currentDesigns = []
   for (const section in app.designs) currentDesigns.push(...app.designs[section])

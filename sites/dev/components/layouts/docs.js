@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 // Shared components
 import Aside from 'shared/components/navigation/aside'
 import Breadcrumbs from 'shared/components/breadcrumbs.js'

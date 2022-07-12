@@ -1,5 +1,4 @@
 import path from 'path'
-import { readdirSync } from 'fs'
 import remarkGfm from 'remark-gfm'
 import { designs, plugins } from '../../../config/software/index.mjs'
 

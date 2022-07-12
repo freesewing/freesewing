@@ -5,7 +5,6 @@ export default function (part) {
     Snippet,
     snippets,
     store,
-    utils,
   } = part.shorthand()
 
   points.waist2 = points.backWaistBandMid

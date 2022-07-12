@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { SizeMe } from 'react-sizeme'
 import { useTranslation } from 'next-i18next'
 import fileSaver from 'file-saver'
 import yaml from 'js-yaml'
