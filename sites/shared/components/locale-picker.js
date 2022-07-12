@@ -1,4 +1,3 @@
-import themes from 'shared/themes/index.js'
 import LocaleIcon from 'shared/components/icons/i18n.js'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'

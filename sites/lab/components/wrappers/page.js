@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { useRouter } from 'next/router'
-import { useHotkeys } from 'react-hotkeys-hook'
 // Layouts components
 import LayoutWrapper from 'site/components/wrappers/layout'
 

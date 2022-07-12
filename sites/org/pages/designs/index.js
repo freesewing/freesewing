@@ -1,7 +1,5 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import Popout from 'shared/components/popout.js'
-import Link from 'next/link'
 import PageLink from 'shared/components/page-link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'

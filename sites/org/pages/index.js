@@ -2,11 +2,10 @@ import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import Popout from 'shared/components/popout.js'
-import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import Layout from 'site/components/layouts/bare'
-import Navigation, { Icons } from 'shared/components/navigation/primary'
+import { Icons } from 'shared/components/navigation/primary'
 import DownIcon from 'shared/components/icons/down.js'
 
 const HomePage = (props) => {

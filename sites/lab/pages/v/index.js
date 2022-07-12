@@ -4,14 +4,9 @@ import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
-import { defaultVersion, formatVersionTitle, formatVersionUri } from 'site/components/version-picker.js'
-import TutorialIcon from 'shared/components/icons/tutorial.js'
-import DesignIcon from 'shared/components/icons/design.js'
-import BoxIcon from 'shared/components/icons/box.js'
-import CogIcon from 'shared/components/icons/cog.js'
+import { formatVersionTitle } from 'site/components/version-picker.js'
 import Layout from 'site/components/layouts/bare'
-import Popout from 'shared/components/popout'
-import { PageTitle, Breadcrumbs } from 'site/components/wrappers/layout'
+import { PageTitle } from 'site/components/wrappers/layout'
 import availableVersions from 'site/available-versions.json'
 
 const DesignLinks = ({ list, prefix='', version=false }) => {
@@ -58,10 +53,6 @@ const VersionLinks = ({ list, prefix='', version=false, currentDesigns=[] }) => 
 const VersionListPage = ({ section=false, version=false }) => {
 const app = useApp()
 const { t } = useTranslation(['app'])
-
-  const title = section
-    ? app.navigation[section].__title
-    : t('designs')
 
   const currentDesigns = []
   for (const section in app.designs) currentDesigns.push(...app.designs[section])
