@@ -15,8 +15,6 @@ import TwitterIcon from 'shared/components/icons/twitter.js'
 
 // Classes
 const link = "text-secondary font-bold hover:pointer hover:underline px-1"
-const accent = "text-accent font-bold text-lg px-1 block sm:inline"
-const freesewing = "px-1 text-lg font-bold block sm:inline"
 
 // Keep these translations in the component because they're only used here
 const translations = {

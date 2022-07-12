@@ -56,7 +56,7 @@ export default function (part) {
   let diff = 0
   let angle = 0
   do {
-    if (length?.o) angle = diff*( length.o > length.i ? -.1 : .1 )
+    if (length.o) angle = diff*( length.o > length.i ? -.1 : .1 )
 
     points.dartBottomRight = points.dartBottomRight.rotate( angle, points.waistSide )
 

@@ -1,6 +1,4 @@
 import React from 'react'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
 import Aside from 'shared/components/navigation/aside'
 
 const DocsLayout = ({ app, title=false, children=[] }) => (

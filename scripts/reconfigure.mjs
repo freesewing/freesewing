@@ -4,7 +4,6 @@ import glob from 'glob'
 import yaml from 'js-yaml'
 import chalk from 'chalk'
 import mustache from 'mustache'
-import { capitalize } from '../sites/shared/utils.mjs'
 import conf from '../lerna.json'
 const { version } = conf
 import {
@@ -81,18 +80,18 @@ for (const pkg of Object.values(software)) {
   }
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'),
-    changelog(pkg, repo)
+    changelog(pkg)
   )
 }
 log.write(chalk.green(" Done\n"))
 
-// Step 3: Generate overall CHANGELOG.md
+// Step 4: Generate overall CHANGELOG.md
 fs.writeFileSync(
   path.join(repo.path, 'CHANGELOG.md'),
-  changelog('global', repo)
+  changelog('global')
 )
 
-// Step 6: Generate build script for published software
+// Step 5: Generate build script for published software
 log.write(chalk.blueBright('Generating buildall node script...'))
 const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`);
 const buildAllCommand = buildSteps.join(' && ');
@@ -104,7 +103,7 @@ fs.writeFileSync(
 )
 log.write(chalk.green(" Done\n"))
 
-// Step 7: Generate tests for designs and plugins
+// Step 6: Generate tests for designs and plugins
 
 
 
@@ -435,38 +434,3 @@ function validate() {
   return true
 }
 
-/**
- * Puts a package.json, build.js, README.md, and CHANGELOG.md
- * into every subdirectory under the packages directory.
- * Also adds unit tests for patterns, and writes the global CHANGELOG.md.
- */
-function reconfigure(pkgs, repo) {
-  for (const pkg of pkgs) {
-    console.log(chalk.blueBright(`Reconfiguring ${pkg}`))
-    //if (repo.exceptions.customPackageJson.indexOf(pkg) === -1) {
-    //  const pkgConfig = packageConfig(pkg, repo)
-    //  fs.writeFileSync(
-    //    path.join(repo.path, 'packages', pkg, 'package.json'),
-    //    JSON.stringify(pkgConfig, null, 2) + '\n'
-    //  )
-    //}
-    //if (repo.exceptions.customBuild.indexOf(pkg) === -1) {
-    //  fs.writeFileSync(
-    //    path.join(repo.path, 'packages', pkg, 'build.js'),
-    //    repo.templates.build
-    //  )
-    //}
-    //if (repo.exceptions.customReadme.indexOf(pkg) === -1) {
-    //  fs.writeFileSync(path.join(repo.path, 'packages', pkg, 'README.md'), readme(pkg, repo))
-    //}
-    if (repo.exceptions.customChangelog.indexOf(pkg) === -1) {
-      fs.writeFileSync(
-        path.join(repo.path, 'packages', pkg, 'CHANGELOG.md'),
-        changelog(pkg, repo)
-      )
-    }
-    const type = packageType(pkg, repo)
-  }
-  fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog('global', repo))
-  console.log(chalk.yellowBright.bold('All done.'))
-}

@@ -20,10 +20,7 @@ const DefaultLayout = ({ app, title=false, crumbs=false, children=[] }) => {
           {title && (
             <>
               <Breadcrumbs title={title} crumbs={breadcrumbs} />
-              {title
-                ? <h1>{title}</h1>
-                : <h1>{app.getTitle(slug)}</h1>
-              }
+              <h1>{title}</h1>
             </>
           )}
           {children}
