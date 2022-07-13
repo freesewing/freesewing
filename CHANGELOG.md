@@ -51,6 +51,12 @@
 
  - Prevent facing/lining overlap when shoulders get very narrow fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
 
+### plugin-title
+
+#### Added
+
+ - Added support for removing the title via a macro call
+
 
 ## 2.21.3 (2022-07-02)
 
@@ -603,12 +609,6 @@
  - Migrated from Rollup to Esbuild for all builds
  - The `pctBasedOn()` helper method for pattern config was moved to config-helpers We did not make this a breaking change since it's only used internally.
 
-### create-freesewing-pattern
-
-#### Deprecated
-
- - This package is deprecated. Please use `npx @freesewing/new-design`
-
 ### gatsby-remark-jargon
 
 #### Changed
@@ -786,12 +786,6 @@
 
 ## 2.20.4 (2022-01-28)
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - Downgraded back to react-scripts 4 because 5 has a regression bug
-
 
 ## 2.20.3 (2022-01-28)
 
@@ -808,12 +802,6 @@
 
  - Setting Path.render() no longer raises an info message
  - Always raise debug, but only store it whend debug is enabled
-
-### create-freesewing-pattern
-
-#### Fixed
-
- - Updated to react-scripts 5 to sidestep bug in error-overlay
 
 
 ## 2.20.2 (2022-01-27)
@@ -1479,12 +1467,6 @@
  - Added the new attributes.setIfUnset() method
  - Added the new `scale` setting
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - Fix axios version conflict
-
 
 ## 2.19.5 (2021-11-13)
 
@@ -1943,12 +1925,6 @@
 
  - Fixed edge case in utils.beamsIntersect() when line is almost vertical See [#1206](https://github.com/freesewing/freesewing/issues/1206)
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - Updated department to new range of options See [#1207](https://github.com/freesewing/freesewing/pull/1207)
-
 
 ## 2.17.0 (2021-07-01)
 
@@ -2114,13 +2090,6 @@
 #### Fixed
 
  - Don't publish ESM modules as it causes issues with react-intl See [#1079](https://github.com/freesewing/freesewing/issues/1079)
-
-### create-freesewing-pattern
-
-#### Changed
-
- - Added .gitignore file to the template
- - Added eslint for linting
 
 ### i18n
 
@@ -2348,12 +2317,6 @@
  - Added a new `designs` icon
  - We now publish .mjs files again for the different components
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - Don't list pattern as dependency in the example package.json
-
 ### i18n
 
 #### Added
@@ -2405,17 +2368,6 @@
  - Changes to Workbench
  - Added rollup sass plugin
  - Updated for new major version of react-markdown
-
-### create-freesewing-pattern
-
-#### Changed
-
- - Migrated to React 17
- - Migrated to create-react-app/react-scripts 4
- - Migrated to Webpack 5
- - Add react-intl as dependency
- - Renamed template `default` to `freesewing`
- - Use defaults for browserlist
 
 ### css-theme
 
@@ -2680,12 +2632,6 @@
 
  - Fixed type in bustsidecode finder code
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - Updated chat link from gitter to discord
-
 ### pattern-info
 
 #### Fixed
@@ -2790,12 +2736,6 @@
 
 
 ## 2.12.1 (2021-01-27)
-
-### create-freesewing-pattern
-
-#### Added
-
- - Fixed missing dependency
 
 
 ## 2.12.0 (2021-01-19)
@@ -2936,12 +2876,6 @@
 
 
 ## 2.11.1 (2021-01-11)
-
-### create-freesewing-pattern
-
-#### Fixed
-
- - Fixed issue with node-sass, see [#778](https://github.com/freesewing/freesewing/issues/778) and [#779](https://github.com/freesewing/freesewing/issues/779)
 
 
 ## 2.11.0 (2021-01-10)
@@ -3126,12 +3060,6 @@
  - Added the `info` type to raised events
  - Added support for conditional loading of plugins
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - No longer instantiate a pattern, just to get the config
-
 ### css-theme
 
 #### Added
@@ -3170,12 +3098,6 @@
 #### Fixed
 
  - Added Titan as a peer dependency
-
-### create-freesewing-pattern
-
-#### Fixed
-
- - Fixed breaking change in execa upgrade in 2.8.0
 
 
 ## 2.8.0 (2020-08-10)
@@ -3715,12 +3637,6 @@
  - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
  - We no longer set the plugin configuration/data object to fall in `pattern.use()`
 
-### create-freesewing-pattern
-
-#### Added
-
- - [#365](https://github.com/freesewing/freesewing/issues/365): Check for node version and raise an error it is too old.
-
 ### css-theme
 
 #### Added
@@ -4055,12 +3971,6 @@
  - Added the `Path.noop()` method
  - Added the `Path.insop()` methods
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - [#257](https://github.com/freesewing/freesewing/issues/257): Explain that pattern names are bound by the constraints of NPM package names
-
 ### css-theme
 
 #### Added
@@ -4360,12 +4270,6 @@
 
  - Tweaked DraftConfigurator tags to match CSS rules after frontend upgrade to react-intl v3
 
-### create-freesewing-pattern
-
-#### Fixed
-
- - Updated example package.json to use latest tag rather than beta
-
 ### utils
 
 #### Fixed
@@ -4403,16 +4307,6 @@
  - Workbench now also lets you preload a `withBreasts` set of measurements
  - DraftConfigurator now properly styles pattern options 3 levels deep
  - [#105](https://github.com/freesewing/freesewing.org/issues/105): Moved state change in render loop to useEffect
-
-### create-freesewing-pattern
-
-#### Changed
-
- - Updated dependencies
-
-#### Fixed
-
- - Added missing `file-saver` dependency
 
 ### css-theme
 
@@ -4712,12 +4606,6 @@
  - Initial release
 
 ### core
-
-#### Added
-
- - Initial release
-
-### create-freesewing-pattern
 
 #### Added
 

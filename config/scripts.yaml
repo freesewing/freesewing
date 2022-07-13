@@ -16,14 +16,6 @@ _types:
     prettier: "npx prettier --write 'src/*.js' 'tests/*.mjs'"
     test: *test
     testci: *testci
-create-freesewing-pattern:
-  build: '!'
-  cibuild_step1: '!'
-  clean: '!'
-  mbuild: '!'
-  test: '!'
-  testci: '!'
-  vbuild: '!'
 css-theme:
   build: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   watch: 'npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css'

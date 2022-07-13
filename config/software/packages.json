@@ -2,7 +2,6 @@
   "components": "A collection of React components for FreeSewing web UIs",
   "config-helpers": "A FreeSewing package to facilitate pattern configurations",
   "core": "A library for creating made-to-measure sewing patterns",
-  "create-freesewing-pattern": "Initializer package for FreeSewing patterns: npm init FreeSewing-pattern",
   "css-theme": "A CSS theme for FreeSewing web UIs",
   "gatsby-remark-jargon": "A gatsby-transformer-remark sub-plugin for jargon terms",
   "i18n": "Translations for the FreeSewing project",
