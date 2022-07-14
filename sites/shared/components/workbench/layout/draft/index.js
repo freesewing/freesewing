@@ -36,7 +36,7 @@ const Draft = props => {
     for (const [pname, part] of Object.entries(patternProps.parts)) {
       let partLayout = newLayout.parts[pname];
       // Pages part does not have its topLeft and bottomRight set by core since it's added post-draft
-      if (partLayout.tl) {
+      if (partLayout?.tl) {
         // set the pattern extremes
         topLeft.x = Math.min(topLeft.x, partLayout.tl.x)
         topLeft.y = Math.min(topLeft.y, partLayout.tl.y)
