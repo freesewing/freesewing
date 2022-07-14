@@ -22,7 +22,7 @@ const PrintLayout = props => {
   let patternProps
   try {
     draft.draft()
-    patternProps = draft.getRenderProps()
+    patternProps = draft.getRenderProps('printLayout')
   } catch(err) {
     console.log(err, props.gist)
   }
@@ -38,7 +38,7 @@ const PrintLayout = props => {
         }
       </h2>
       <div className="m-4">
-        <Settings {...props} draft={draft}/>
+        <Settings {...props} draft={draft} layoutType="printLayout"/>
       </div>
       <Draft
         draft={draft}
@@ -48,6 +48,7 @@ const PrintLayout = props => {
         bgProps={bgProps}
         gistReady={props.gistReady}
         layoutPart="pages"
+        layoutType="printLayout"
       />
     </div>
   )

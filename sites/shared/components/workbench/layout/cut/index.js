@@ -20,15 +20,16 @@ const CutLayout = props => {
     props.gist?._state?.layout?.forCutting?.fabric?.width,
     props.gist?._state?.layout?.forCutting?.fabric?.height,
   )).use(mirrorOnFold)
+
   let patternProps
   try {
     draft.draftCutList()
-    patternProps = draft.getRenderProps()
-    patternProps.width = props.gist?._state?.layout?.forCutting?.fabric?.width
+    patternProps = draft.getRenderProps('cutLayout')
   } catch(err) {
     console.log(err, props.gist)
   }
 
+  patternProps.width = props.gist?._state?.layout?.forCutting?.fabric?.width
   let lengthsNeeded = patternProps.height / props.gist?._state?.layout?.forCutting?.fabric?.height
   if (props.gist.units == 'imperial') lengthsNeeded = valToImperialFraction(lengthsNeeded, 'none')
 
@@ -43,7 +44,7 @@ const CutLayout = props => {
         }
       </h2>
       <h3> Lengths needed: {lengthsNeeded} </h3>
-      <Settings {...props} />
+      <Settings {...props} layoutType="cutLayout"/>
       <Draft
         draft={draft}
         gist={props.gist}
@@ -53,6 +54,7 @@ const CutLayout = props => {
         bgProps={bgProps}
         layoutPart="cutFabric"
         fitLayoutPart={true}
+        layoutType="cutLayout"
       />
     </div>
   )

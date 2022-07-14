@@ -6,15 +6,14 @@ const CutLayoutSettings = props => {
   if (!props.gistReady) {return null}
   const { t } = useTranslation(['workbench'])
 
-  const { patternProps, gist, updateGist ,app, bgProps={} } = props
-  const { layout=false } = gist
+  const { gist, updateGist, unsetGist} = props
 
   return (
     <div>
       <FabricSizer gist={gist} updateGist={updateGist}/>
       <button
         key="reset"
-        onClick={() => props.unsetGist(['layout'])}
+        onClick={() => unsetGist([props.layoutType])}
         className="btn btn-primary btn-outline"
       >
         <ClearIcon className="h-6 w-6 mr-2"/>

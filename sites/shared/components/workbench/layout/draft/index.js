@@ -1,12 +1,12 @@
-import { useEffect, useRef} from 'react'
+import { useEffect, useRef,useMemo} from 'react'
 import Svg from '../../draft/svg'
 import Defs from '../../draft/defs'
 import Part from './part'
 
 const Draft = props => {
   if (!props.gistReady) {return null}
-  const { patternProps, gist, updateGist, app, bgProps={}, fitLayoutPart = false } = props
-  const { layout=false } = gist
+  const { patternProps, gist, updateGist, app, bgProps={}, fitLayoutPart = false, layoutType="printLayout" } = props
+  const layout = gist[layoutType] || false
 
   const svgRef = useRef(null);
 
@@ -14,7 +14,7 @@ const Draft = props => {
     if (!layout) {
       // On the initial draft, core does the layout, so we set the layout to the auto-layout
       // After this, core won't handle layout anymore. It's up to the user from this point onwards
-      updateGist(['layout'], {
+      updateGist([layoutType], {
         ...patternProps.autoLayout,
         width: patternProps.width,
         height: patternProps.height
@@ -22,11 +22,11 @@ const Draft = props => {
     } else {
       for (var part in patternProps.autoLayout.parts) {
         if (layout.parts[part] === undefined) {
-          updateGist(['layout', 'parts', part], patternProps.autoLayout.parts[part], false)
+          updateGist([layoutType, 'parts', part], patternProps.autoLayout.parts[part], false)
         }
       }
     }
-  }, [layout])
+  }, [layout, layoutType])
 
   if (!patternProps || !layout) return null
 
@@ -57,7 +57,7 @@ const Draft = props => {
     newLayout.height = bottomRight.y - topLeft.y
     newLayout.bottomRight = bottomRight
     newLayout.topLeft = topLeft
-    updateGist(['layout'], newLayout, history)
+    updateGist([layoutType], newLayout, history)
   }
 
 
@@ -77,7 +77,7 @@ const Draft = props => {
         <Defs {...patternProps} />
         <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
         <g>
-          <rect x="0" y="0" width={patternProps.width} height={patternProps.height} {...bgProps} />
+          <rect x="0" y="0" width={layout.width} height={layout.height} {...bgProps} />
           {[
             partList.filter(name => name === props.layoutPart),
             partList.filter(name => name !== props.layoutPart),

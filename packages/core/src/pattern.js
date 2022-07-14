@@ -20,6 +20,8 @@ export default function Pattern(config = { options: {} }) {
     margin: 2,
     scale: 1,
     layout: true,
+    cutLayout: true,
+    printLayout: true,
     debug: true,
     options: {},
     absoluteOptions: {},
@@ -508,7 +510,7 @@ Pattern.prototype.macro = function (key, method) {
 }
 
 /** Packs parts in a 2D space and sets pattern size */
-Pattern.prototype.pack = function () {
+Pattern.prototype.pack = function (layoutType="layout") {
   if (this.events.error.length > 0) {
     this.raise.warning(`One or more errors occured. Not packing pattern parts`)
     return this
@@ -522,14 +524,14 @@ Pattern.prototype.pack = function () {
       part.stack()
       let width = part.bottomRight.x - part.topLeft.x
       let height = part.bottomRight.y - part.topLeft.y
-      if (this.settings.layout === true) bins.push({ id: key, width, height })
+      if (this.settings[layoutType] === true) bins.push({ id: key, width, height })
       else {
         if (this.width < width) this.width = width
         if (this.height < height) this.height = height
       }
     }
   }
-  if (this.settings.layout === true) {
+  if (this.settings[layoutType] === true) {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
       this.autoLayout.parts[bin.id] = { move: {} }
@@ -548,13 +550,13 @@ Pattern.prototype.pack = function () {
     }
     this.width = size.width
     this.height = size.height
-  } else if (typeof this.settings.layout === 'object') {
-    this.width = this.settings.layout.width
-    this.height = this.settings.layout.height
-    for (let partId of Object.keys(this.settings.layout.parts)) {
+  } else if (typeof this.settings[layoutType] === 'object') {
+    this.width = this.settings[layoutType].width
+    this.height = this.settings[layoutType].height
+    for (let partId of Object.keys(this.settings[layoutType].parts)) {
       // Some parts are added by late-stage plugins
       if (this.parts[partId]) {
-        let transforms = this.settings.layout.parts[partId]
+        let transforms = this.settings[layoutType].parts[partId]
         this.parts[partId].generateTransform(transforms);
       }
     }
@@ -712,13 +714,13 @@ Pattern.prototype.wants = function (partName) {
 /** Returns props required to render this pattern through
  *  an external renderer (eg. a React component)
  */
-Pattern.prototype.getRenderProps = function () {
+Pattern.prototype.getRenderProps = function (layoutType='layout') {
   // Run pre-render hook
   let svg = new Svg(this)
   svg.hooks = this.hooks
   svg.runHooks('preRender')
 
-  this.pack()
+  this.pack(layoutType)
   // Run post-layout hook
   this.runHooks('postLayout')
   let props = { svg }
