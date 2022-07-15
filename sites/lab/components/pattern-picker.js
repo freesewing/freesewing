@@ -33,7 +33,7 @@ const PatternPicker = ({ app }) => {
           }
 
           return (<PickerLink {...patternProps} key={pattern}>
-            <span className="sr-only">{sectionTitle}</span> {app.navigation[section][pattern].__title}
+            <span className="sr-only" key={pattern}>{sectionTitle}</span> {app.navigation[section][pattern].__title}
           </PickerLink>)
         })}
       </React.Fragment>)}

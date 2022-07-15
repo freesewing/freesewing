@@ -10,7 +10,6 @@ export const BeforeNav = ({ app }) => (
       <LocalePicker app={app} />
     </div>
     <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2">
-      <PatternPicker app={app} />
       <VersionPicker app={app} />
     </div>
   </>
