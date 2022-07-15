@@ -89,27 +89,6 @@ core:
     'hooks': '^0.3.2'
   dev:
     'nyc': '^15.1.0'
-create-freesewing-pattern:
-  _:
-    'chalk': '^4.1.1'
-    'commander': '^9.0.0'
-    'conf': '^10.0.1'
-    'cp-file': '^9.0.0'
-    'execa': '^5.1.0'
-    'git-config-path': '^2.0.0'
-    'github-username': '^6.0.0'
-    'globby': '^11.0.3'
-    'handlebars': '^4.7.7'
-    'inquirer': '^8.0.0'
-    'make-dir': '^3.1.0'
-    'normalize-path': '^3.0.0'
-    'ora': '^5.4.1'
-    'p-each-series': '^2.2.0'
-    'parse-git-config': '^3.0.0'
-    'validate-npm-package-name': '^3.0.0'
-    'which': '^2.0.2'
-    '@freesewing/i18n': *freesewing
-    '@freesewing/pattern-info': *freesewing
 diana:
   peer:
     '@freesewing/brian': *freesewing
