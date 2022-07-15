@@ -3,9 +3,9 @@ import { Menu } from '@headlessui/react'
 import Link from 'next/link'
 
 /** an accessible dropdown menu for use by picker components */
-export const Picker = ({Icon, className, title, ariaLabel, iconOnly=false, children, ...props}) => {
+export const Picker = ({Icon, className, title, ariaLabel, iconOnly=false, children, end}) => {
 
-	return (<Menu as="div" className={`dropdown w-auto ${props.end ? 'dropdown-end' : ''}`}>
+	return (<Menu as="div" className={`dropdown w-auto ${end ? 'dropdown-end' : ''}`}>
 		<Menu.Button className={iconOnly
 			? `btn btn-sm`
 			: `m-0 btn btn-neutral flex flex-row gap-2
