@@ -84,7 +84,7 @@ export default {
         shift += 8
       }
       if (so.cutList) {
-        let cutList = this.context.config.cutList[this.name.replace(/_cutPiece\d+/, '')]
+        let cutList = this.context.config.cutList?.[(this.name || so.title || '').replace(/_cutPiece\d+/, '')]
         let cutCount = 1;
         let pairs = '';
         if (cutList) {
