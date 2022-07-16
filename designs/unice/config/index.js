@@ -32,6 +32,15 @@ const config = {
       'gussetWidth',
       'gussetLength'
     ],
+    style: [
+      'rise',
+      'legOpening',
+      'frontDip',
+      'frontCurve',
+      'backDip',
+      'taperToGusset',
+      'backExposure'
+    ],
   },
   dependencies: {
     back: 'front',
@@ -46,6 +55,7 @@ const config = {
     gussetShift: 0.015, // fraction of seat circumference - could be an advanced option?
     gussetWidth: { pct: 7.2, min: 2, max: 12 }, // Gusset width in relation to waist-to-upperleg
     gussetRatio: 0.53, // Relationship between front and back gusset widths; equivalent to 0.7 in ursula, which has an additional 1.2 * options.backToFrontWidth in the code
+    frontCurve: {pct: 0, min: 0, max: 25}, // (un)curve front part (to accommodate belly)
     fabricStretchX: { pct: 15, min: 0, max: 100 }, // horizontal stretch (range set wide for beta testing)
     fabricStretchY: {pct: 0, min: 0, max: 100 }, // vertical stretch (range set wide for beta testing)
     rise: { pct: 60, min: 30, max: 100 }, // extending rise beyond 100% would require adapting paths.sideLeft!

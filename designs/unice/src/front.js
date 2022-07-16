@@ -14,6 +14,8 @@ export default function (part) {
     sa,
     paperless,
     macro,
+    raise,
+    units
   } = part.shorthand()
   // Stretch utility method
 
@@ -80,6 +82,22 @@ export default function (part) {
     store.set('frontHeight',(store.get('crossSeam') - options.gussetLength * measurements.seat)/(1 + options.backToFrontLength))
   }
 
+  // front curve and/or front dip
+  // front curve and front dip accomplish the same goal in two different ways:
+  // goal: reduce front height at the center
+  // front dip: curve waist band (pattern part is smile-shaped)
+  // front curve: start by curving the waist band, then straigthten the part (top of pattern part is roughly horizontal)
+  // if combined: apply front curve first, then front dip
+  
+  let frontDipOrCurve1
+  let frontDipOrCurve2
+  if (options.frontCurve > 0) {
+    frontDipOrCurve1 = options.frontCurve
+    frontDipOrCurve2 = options.frontDip
+  } else {
+    frontDipOrCurve1 = options.frontDip
+    frontDipOrCurve2 = 0
+  }
 
   // Create points
 
@@ -112,20 +130,20 @@ export default function (part) {
 
   /* Waist band is somewhere on the sideLeft path */
   points.frontWaistBandLeft = paths.sideLeft.shiftFractionAlong(options.rise)
-  points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid)
+  points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid) // will be recalculated later if options.frontCurve is used
   points.frontWaistBandMid = points.frontWaistBandLeft
     .shiftFractionTowards(points.frontWaistBandRight, 0.5)
-    .shift(270, measurements.waistToUpperLeg * options.frontDip) /* Waist band dip */
+    .shift(270, measurements.waistToUpperLeg * frontDipOrCurve1 * store.get('yScaleReduced')) /* Waist band dip (or curve)*/
 
   /* Leg opening is also on the sideLeft path, and cannot be higher than rise */
   /* Minimum side seam length is defined as 3.5% of the sideLeft path (which is at least waistToUpperLeg long) */
   store.set('adjustedLegOpening',Math.min(options.legOpening,options.rise - 0.035)) // TODO: account for rise having a different domain
 
   points.frontLegOpeningLeft = paths.sideLeft.shiftFractionAlong(store.get('adjustedLegOpening'))
-  points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band low point
-
+  
   // calculate the actual front height, using yScale above and yScaleReduced below leg opening
   store.set('frontHeightAbove',points.frontWaistLeft.dy(points.frontLegOpeningLeft))
+  // NOTE: if options.frontCurve > 0, this will be adjusted further later on
 
   var frontHeightBelow
   frontHeightBelow = store.get('yScale')*(store.get('frontHeight') - store.get('frontHeightAbove')/store.get('yScaleReduced'))
@@ -140,17 +158,6 @@ export default function (part) {
   )
   points.frontGussetMid = new Point(measurements.seat / 4, frontHeightReduced)
 
-  /* Flip points to right side */
-  points.frontGussetRight = points.frontGussetLeft.flipX(points.frontWaistMid)
-  points.frontHipRight = points.frontSeatLeft.flipX(points.frontWaistMid)
-  points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
-
-  /* Middle point for label */
-  points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(
-    points.frontLegOpeningRight,
-    0.5
-  )
-
   // Create control points
 
   /* Control points for leg opening curves */
@@ -163,14 +170,54 @@ export default function (part) {
   points.frontGussetLeftCp1 = points.frontGussetLeft
     .shift(270, Math.max(Math.max(points.frontGussetLeft.dy(points.frontWaistMid) * options.taperToGusset / 2,points.frontGussetLeft.dy(points.frontLegOpeningLeft) * 2),points.frontGussetLeft.dy(points.frontWaistBandMid)))
 
+  // straighten the part (if needed)
+  let curveAsAngle
+  if (options.frontCurve > 0) {
+    // create copies of the original points
+    points.frontWaistBandLeftPreCurve = points.frontWaistBandLeft
+    points.frontLegOpeningLeftPreCurve = points.frontLegOpeningLeft
+    points.frontLegOpeningLeftCp1PreCurve = points.frontLegOpeningLeftCp1
+    
+    // convert the dip to a curve
+    curveAsAngle = points.frontWaistBandLeft.angle(points.frontWaistBandMid)
+    points.frontWaistBandLeft = points.frontWaistBandLeft.rotate(-curveAsAngle,points.frontWaistBandMid)
+    points.frontLegOpeningLeft = points.frontLegOpeningLeft.rotate(-curveAsAngle,points.frontWaistBandMid)
+    points.frontLegOpeningLeftCp1 = points.frontLegOpeningLeftCp1.rotate(-curveAsAngle,points.frontWaistBandMid)
+
+    // (ignore these two TODOs for now)
+    // TODO: recalculate the front height and portions 'above' and 'below'
+    // TODO: adjust the height of the 'below' part
+  } else {
+    curveAsAngle = 0
+  }
+  // recalculate frontWaistBandRight  
+  points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid)
+  
+
+  // if front is both curved and dipped, apply the dip
+  // frontDipOrCurve2 is zero if this isn't needed, so apply regardless of value
+  points.frontWaistBandMid = points.frontWaistBandMid.shift(270, measurements.waistToUpperLeg * frontDipOrCurve2 * store.get('yScaleReduced'))
+
   /* Control point for waistband dip */
   points.frontWaistBandLeftCp1 = points.frontWaistBandMid.shift(0,points.frontWaistBandMid.dx(points.frontWaistBandLeft) / 3 )
+  
+  // report the expected 'drop'in waist band from side to center (when worn) 
+  raise.info(['expectedDropFromWaistToCenter', units(measurements.waistToUpperLeg * (options.frontCurve + options.frontDip))])
 
-
-  /* Flip control points to right side */
+  /* Flip points to right side */
+  points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) 
+  points.frontGussetRight = points.frontGussetLeft.flipX(points.frontWaistMid)
+  points.frontHipRight = points.frontSeatLeft.flipX(points.frontWaistMid)
+  points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
   points.frontGussetRightCp1 = points.frontGussetLeftCp1.flipX(points.frontWaistMid)
   points.frontLegOpeningRightCp1 = points.frontLegOpeningLeftCp1.flipX(points.frontWaistMid)
   points.frontWaistBandRightCp1 = points.frontWaistBandLeftCp1.flipX(points.frontWaistMid)
+
+  /* Middle point for label */
+  points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(
+    points.frontLegOpeningRight,
+    0.5
+  )
 
   // Draw paths
 
