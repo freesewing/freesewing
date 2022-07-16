@@ -133,3 +133,6 @@ scripts/verdaccio.sh
 !markdown/dev/reference/api/point/dist
 
 .test-failures.log
+core.7268
+.gitignore
+sites/lab/package.json
