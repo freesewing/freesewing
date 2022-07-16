@@ -1,7 +1,3 @@
-import { useState } from 'react'
-import Robot from 'shared/components/robot/index.js'
-import Popout from 'shared/components/popout.js'
-import { useTranslation } from 'next-i18next'
 import DefaultErrorView from 'shared/components/error/view';
 
 const Error = ({ draft, patternProps, error, updateGist }) => {

@@ -3,7 +3,7 @@ import set from 'lodash.set'
 import unset from 'lodash.unset'
 import cloneDeep from 'lodash.clonedeep'
 import defaultSettings from 'shared/components/workbench/default-settings.js'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 // Generates a default design gist to start from
 export const defaultGist = (design, locale='en') => {

@@ -37,7 +37,7 @@ const hasRequiredMeasurementsMethod = (design, gist) => {
   if (design.config.measurements.length && !gist.measurements) return false
 
   for (const m of design.config.measurements || []) {
-    if (!gist?.measurements?.[m]) return false
+    if (!gist.measurements.[m]) return false
   }
 
   return true
