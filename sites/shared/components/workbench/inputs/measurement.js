@@ -11,7 +11,7 @@ import { measurementAsMm } from 'shared/utils'
  * m holds the measurement name. It's just so long to type
  * measurement and I always have some typo in it because dyslexia.
  */
-const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, showDoc=true, gistMeasurement }) => {
+const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, showDoc=true, gistMeasurement, size="lg", validate=true }) => {
   const { t } = useTranslation(['app', 'measurements'])
 
 const prefix = (app?.site === 'org') ? '' : 'https://freesewing.org'
@@ -93,32 +93,33 @@ const prefix = (app?.site === 'org') ? '' : 'https://freesewing.org'
           {t('docs')}
         </a>)}
       </label>
-      <label className="input-group input-group-lg">
+      <label className={`input-group input-group-${size}`}>
         <input
           key={`input-${m}`}
           ref={input}
           type="text"
           placeholder={title}
           className={`
-            input input-lg input-bordered grow text-base-content border-r-0
-            ${valid === false && 'input-error'}
-            ${valid === true && 'input-success'}
+            input input-${size} input-bordered grow text-base-content border-r-0
+            ${validate && valid === false && 'input-error'}
+            ${validate && valid === true && 'input-success'}
           `}
           value={val}
           onChange={update}
         />
-        <span role="img" className={`bg-transparent border-y
-          ${valid === false && 'border-error text-neutral-content'}
-          ${valid === true && 'border-success text-neutral-content'}
-          ${valid === null && 'border-base-200 text-base-content'}
-       `}>
-          {(valid === true) && '👍'}
-          {(valid === false) && '🤔'}
-        </span>
+        {validate ? (<span role="img" className={`bg-transparent border-y
+            ${valid === false && 'border-error text-neutral-content'}
+            ${valid === true && 'border-success text-neutral-content'}
+            ${valid === null && 'border-base-200 text-base-content'}
+         `}>
+            {(valid === true) && '👍'}
+            {(valid === false) && '🤔'}
+          </span>) : ''}
         <span className={`
-          ${valid === false && 'bg-error text-neutral-content'}
-          ${valid === true && 'bg-success text-neutral-content'}
-          ${valid === null && 'bg-base-200 text-base-content'}
+          ${validate === true && validate === false && 'bg-error text-neutral-content'}
+          ${validate === true && valid === true && 'bg-success text-neutral-content'}
+          ${validate === true && valid === null && 'bg-base-200 text-base-content'}
+          ${validate === false && 'bg-base-content text-base-100'}
        `}>
         {isDegree ? '° ' : gist.units == 'metric' ? 'cm' : 'in'}
         </span>

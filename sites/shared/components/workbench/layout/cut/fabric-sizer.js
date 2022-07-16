@@ -16,13 +16,21 @@ const FabricSizer = ({gist, updateGist}) => {
 		}
 	}, [])
 
+	const measurementProps = {
+		updateMeasurements: setSize,
+		showDoc: false,
+		size: 'sm',
+		validate: false,
+		gist: gist
+	}
 	return (
-		<div className="my-2 flex flex-row gap-4 justify-center items-center">
-      <h3 className="inline pl-2">{t('fabricSize')}</h3>
-      {['width', 'height'].map((m) => (
-        <MeasurementInput key={'fabric-' + m} m={m} updateMeasurements={setSize} gist={gist} gistMeasurement={gist._state?.layout?.forCutting?.fabric?.[m]} showDoc={false}/>))
-    	}
-    </div>
+
+      <div className="flex gap-4">
+      	{['fabricWidth', 'fabricHeight'].map((m) => (
+      	  <MeasurementInput key={'fabric-' + m} m={m} gistMeasurement={gist._state?.layout?.forCutting?.fabric?.[m]} {...measurementProps}/>))
+      	    	}
+      </div>
+
 	)
 }
 

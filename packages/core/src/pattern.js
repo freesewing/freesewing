@@ -269,11 +269,12 @@ Pattern.prototype.draftCutList = function() {
 
     const draftName = 'draft' + capitalize(partName)
     for (var i = 1; i < partCuts.cut; i++) {
-      cutOrder.push(partName + i)
-      this[draftName + i] = this[draftName]
+      const cutPartName = `_cutPiece${i}`
+      cutOrder.push(partName + cutPartName)
+      this[draftName + cutPartName] = this[draftName]
 
       if (partCuts.isPair && i % 2 === 1) {
-        this.autoLayout.parts[partName + i] = {flipX: true}
+        this.autoLayout.parts[partName + cutPartName] = {flipX: true}
       }
     }
 

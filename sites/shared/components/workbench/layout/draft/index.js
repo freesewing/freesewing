@@ -2,6 +2,7 @@ import { useEffect, useRef,useMemo} from 'react'
 import Svg from '../../draft/svg'
 import Defs from '../../draft/defs'
 import Part from './part'
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 
 const Draft = props => {
   if (!props.gistReady) {return null}
@@ -68,11 +69,17 @@ const Draft = props => {
 
   return (
     <div className="my-8 w-11/12 m-auto border-2 border-dotted border-base-content shadow">
+    <TransformWrapper
+      minScale={0.1}
+      centerZoomedOut={true}
+      wheel={{ activationKeys: ['Control'] }}
+    >
+      <TransformComponent>
       <Svg {...patternProps}
         embed={gist.embed}
         ref={svgRef}
         viewBox={layout.topLeft ? `${layout.topLeft.x} ${layout.topLeft.y} ${layout.width} ${layout.height}` :  false}
-        style={{maxHeight: '100vh'}}
+        style={{height: '90vh'}}
       >
         <Defs {...patternProps} />
         <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
@@ -95,6 +102,8 @@ const Draft = props => {
           )))}
         </g>
       </Svg>
+      </TransformComponent>
+    </TransformWrapper>
     </div>
   )
 }

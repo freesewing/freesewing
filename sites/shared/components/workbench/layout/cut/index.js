@@ -5,6 +5,7 @@ import Draft from '../draft/index'
 import {cutFabricPlugin} from '../print/plugin'
 import mirrorOnFold from './plugin-mirrorOnFold'
 import {valToImperialFraction} from 'shared/utils'
+import ClearIcon from 'shared/components/icons/clear'
 
 const CutLayout = props => {
   const { t } = useTranslation(['workbench'])
@@ -17,21 +18,26 @@ const CutLayout = props => {
   }, [])
 
   const draft = props.draft.use(cutFabricPlugin(
-    props.gist?._state?.layout?.forCutting?.fabric?.width,
-    props.gist?._state?.layout?.forCutting?.fabric?.height,
+    props.gist?._state?.layout?.forCutting?.fabric?.fabricWidth,
+    props.gist?._state?.layout?.forCutting?.fabric?.fabricHeight,
   )).use(mirrorOnFold)
 
   let patternProps
+  let lengthsNeeded = 0
   try {
     draft.draftCutList()
     patternProps = draft.getRenderProps('cutLayout')
+    patternProps.width = props.gist?._state?.layout?.forCutting?.fabric?.fabricWidth
+    lengthsNeeded = patternProps.height / props.gist?._state?.layout?.forCutting?.fabric?.fabricHeight
+    if (props.gist.units == 'imperial') {
+      lengthsNeeded = valToImperialFraction(lengthsNeeded, 'none')
+    } else {
+      lengthsNeeded = Math.round(lengthsNeeded * 100) / 100
+    }
   } catch(err) {
     console.log(err, props.gist)
   }
 
-  patternProps.width = props.gist?._state?.layout?.forCutting?.fabric?.width
-  let lengthsNeeded = patternProps.height / props.gist?._state?.layout?.forCutting?.fabric?.height
-  if (props.gist.units == 'imperial') lengthsNeeded = valToImperialFraction(lengthsNeeded, 'none')
 
   const bgProps = { fill: "url(#page)" }
   return (
@@ -43,8 +49,7 @@ const CutLayout = props => {
           + t('forCutting')
         }
       </h2>
-      <h3> Lengths needed: {lengthsNeeded} </h3>
-      <Settings {...props} layoutType="cutLayout"/>
+      <Settings {...props} length={lengthsNeeded} layoutType="cutLayout"/>
       <Draft
         draft={draft}
         gist={props.gist}

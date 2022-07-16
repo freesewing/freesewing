@@ -57,7 +57,7 @@ export default {
 
 					if (partCuts.cut > 1 && partCuts.isPair) {
 						for (var i = 1; i < partCuts.cut; i+=2) {
-							pattern.autoLayout.parts[partName + i].flipX = true
+							pattern.autoLayout.parts[`${partName}_cutPiece${i}`].flipX = true
 						}
 					}
 				}
