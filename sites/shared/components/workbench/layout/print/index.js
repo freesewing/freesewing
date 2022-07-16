@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import Settings from './settings'
 import Draft from '../draft/index'
-import pluginBuilder from './plugin'
+import {pagesPlugin} from './plugin'
 
 const PrintLayout = props => {
 
@@ -15,7 +15,7 @@ const PrintLayout = props => {
 
   const { t } = useTranslation(['workbench'])
 
-  const draft = new props.design(props.gist).use(pluginBuilder(
+  const draft = new props.design(props.gist).use(pagesPlugin(
     props.gist?._state?.layout?.forPrinting?.page?.size,
     props.gist?._state?.layout?.forPrinting?.page?.orientation,
   ))
@@ -47,6 +47,7 @@ const PrintLayout = props => {
         patternProps={patternProps}
         bgProps={bgProps}
         gistReady={props.gistReady}
+        layoutPart="pages"
       />
     </div>
   )

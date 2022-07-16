@@ -188,7 +188,7 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
 /**
  *  The default draft method with pre- and postDraft hooks
  */
-Pattern.prototype.draft = function () {
+Pattern.prototype.draft = function (draftOrder=this.config.draftOrder) {
   if (this.is !== 'sample') {
     this.is = 'draft'
     this.raise.debug(`Drafting pattern`)
@@ -205,7 +205,7 @@ Pattern.prototype.draft = function () {
   }
 
   this.runHooks('preDraft')
-  for (let partName of this.config.draftOrder) {
+  for (let partName of draftOrder) {
     this.raise.debug(`Creating part \`${partName}\``)
     this.parts[partName] = new this.Part(partName)
     if (typeof this.config.inject[partName] === 'string') {
@@ -253,6 +253,31 @@ Pattern.prototype.draft = function () {
   this.runHooks('postDraft')
 
   return this
+}
+
+Pattern.prototype.draftCutList = function() {
+  const cutOrder = []
+  const cutList = this.cutList();
+
+  for (let partName of this.config.draftOrder) {
+    cutOrder.push(partName)
+
+    let partCuts = cutList[partName]
+    if (!partCuts) continue
+
+    const draftName = 'draft' + capitalize(partName)
+    for (var i = 1; i < partCuts.cut; i++) {
+      cutOrder.push(partName + i)
+      this[draftName + i] = this[draftName]
+
+      if (partCuts.isPair && i % 2 === 1) {
+        this.autoLayout.parts[partName + i] = {flipX: true}
+      }
+    }
+
+  }
+
+  return this.draft(cutOrder)
 }
 
 /**
@@ -556,6 +581,21 @@ Pattern.prototype.draftOrder = function (graph = this.resolveDependencies()) {
   })
 
   return sorted
+}
+
+Pattern.prototype.cutList = function() {
+  let cutList = {}
+  for (let partName of this.config.draftOrder) {
+    let partCuts = this.config.cutList?.[partName]
+    if (!partCuts) continue
+
+    cutList[partName] = {... partCuts}
+    if (typeof partCuts.cut == 'function') {
+      cutList[partName].cut = partCuts.cut(this.settings)
+    }
+  }
+
+  return cutList
 }
 
 /** Recursively solves part dependencies for a part */

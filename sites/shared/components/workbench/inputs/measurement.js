@@ -11,9 +11,10 @@ import { measurementAsMm } from 'shared/utils'
  * m holds the measurement name. It's just so long to type
  * measurement and I always have some typo in it because dyslexia.
  */
-const MeasurementInput = ({ m, gist, app, updateMeasurements, focus }) => {
+const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, showDoc=true, gistMeasurement }) => {
   const { t } = useTranslation(['app', 'measurements'])
-  const prefix = (app.site === 'org') ? '' : 'https://freesewing.org'
+
+const prefix = (app?.site === 'org') ? '' : 'https://freesewing.org'
   const title = t(`measurements:${m}`)
 
   const isDegree = isDegreeMeasurement(m);
@@ -26,7 +27,7 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements, focus }) => {
     ? isValValid(val)
     : isValValid(newVal)
 
-  const [val, setVal] = useState(gist.measurements?.[m] / factor || '')
+  const [val, setVal] = useState(gistMeasurement && gistMeasurement / factor || '')
 
   // keep a single reference to a debounce timer
   const debounceTimeout = useRef(null);
@@ -53,21 +54,17 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements, focus }) => {
     }
   }, [gist.units])
 
-  // use this for better update efficiency
-  // FIXME: This breaks gist updates.
-  // See: https://github.com/freesewing/freesewing/issues/2281
-  const memoVal = useMemo(() => gist.measurements?.[m], [gist])
   // track validity against the value and the units
   const valid = useMemo(() => isValid(isDegree ? val : measurementAsMm(val, gist.units)), [val, gist.units])
 
   // hook to update the value or format when the gist changes
   useEffect(() => {
       // set the value to the proper value and format
-      if (memoVal) {
-        let gistVal = +(memoVal / factor).toFixed(2);
+      if (gistMeasurement) {
+        let gistVal = +(gistMeasurement / factor).toFixed(2);
         setVal(gistVal)
       }
-  }, [memoVal, factor])
+  }, [gistMeasurement, factor])
 
   // focus when prompted by parent
   useEffect(() => {
@@ -87,14 +84,14 @@ const MeasurementInput = ({ m, gist, app, updateMeasurements, focus }) => {
     <div className="form-control mb-2" key={`wrap-${m}`}>
       <label className="label">
         <span className="label-text font-bold text-xl">{title}</span>
-        <a
+        { showDoc && (<a
           href={`${prefix}/docs/measurements/${m.toLowerCase()}`}
           className="label-text-alt text-secondary hover:text-secondary-focus hover:underline"
           title={`${t('docs')}: ${t(m)}`}
           tabIndex="-1"
         >
           {t('docs')}
-        </a>
+        </a>)}
       </label>
       <label className="input-group input-group-lg">
         <input

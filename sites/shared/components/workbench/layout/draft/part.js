@@ -95,11 +95,12 @@ const Part = props => {
   // update the layout on mount
   useEffect(() => {
     if (partRef.current) updateLayout(false)
+    updateLayout()
   }, [partRef])
 
   // Initialize drag handler
   useEffect(() => {
-    if (!partRef.current) {return}
+    if (props.isLayoutPart) return
     handleDrag(select(partRef.current))
   }, [rotate, layout])
 
@@ -168,7 +169,10 @@ const Part = props => {
     updateLayout()
     setRotate(!rotate)
   }
+
   const updateLayout = (history=true) => {
+    if (!partRef.current) return
+
     const partRect = partRef.current.getBoundingClientRect();
     const matrix = partRef.current.ownerSVGElement.getScreenCTM().inverse();
 
@@ -176,7 +180,7 @@ const Part = props => {
 
     // include the new top left and bottom right to ease calculating the pattern width and height
     const tl = domToSvg({x: partRect.left, y: partRect.top});
-    const br = domToSvg({x: partRect.right, y: partRect.bottom});
+    const br = domToSvg({x: partRect.right, y: props.isLayoutPart ? 0 : partRect.bottom});
 
     props.updateLayout(partName, {
       move: {
@@ -202,12 +206,12 @@ const Part = props => {
     <g
       {...getProps(part)}
       id={`part-${partName}`}
-      ref={partName === 'pages' ? null : partRef}
+      ref={partRef}
       onClick={toggleDragRotate}
       transform-origin={`${center.x} ${center.y}`}
     >
       {PartInner(props)}
-      {partName !== 'pages' && <>
+      {!props.isLayoutPart && <>
       <text x={center.x} y={center.y} ref={centerRef} />
       <rect
         x={part.topLeft.x}

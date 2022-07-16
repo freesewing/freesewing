@@ -367,7 +367,10 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
     y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
   }
 
-  const transforms = [`translate(${x},${y})`]
+  const transforms = []
+  if (x !== undefined && y !== undefined) transforms.push(
+    `translate(${x},${y})`
+  )
   if (flipX) transforms.push(
     'scale(-1, 1)',
   )

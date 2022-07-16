@@ -5,7 +5,7 @@ import Part from './part'
 
 const Draft = props => {
   if (!props.gistReady) {return null}
-  const { patternProps, gist, updateGist ,app, bgProps={} } = props
+  const { patternProps, gist, updateGist, app, bgProps={}, fitLayoutPart = false } = props
   const { layout=false } = gist
 
   const svgRef = useRef(null);
@@ -19,6 +19,12 @@ const Draft = props => {
         width: patternProps.width,
         height: patternProps.height
       }, false)
+    } else {
+      for (var part in patternProps.autoLayout.parts) {
+        if (layout.parts[part] === undefined) {
+          updateGist(['layout', 'parts', part], patternProps.autoLayout.parts[part], false)
+        }
+      }
     }
   }, [layout])
 
@@ -34,7 +40,9 @@ const Draft = props => {
     let topLeft = {x: 0, y: 0}
     let bottomRight = {x: 0, y: 0}
     for (const [pname, part] of Object.entries(patternProps.parts)) {
+      if (pname == props.layoutPart && !fitLayoutPart) continue
       let partLayout = newLayout.parts[pname];
+
       // Pages part does not have its topLeft and bottomRight set by core since it's added post-draft
       if (partLayout?.tl) {
         // set the pattern extremes
@@ -71,8 +79,8 @@ const Draft = props => {
         <g>
           <rect x="0" y="0" width={patternProps.width} height={patternProps.height} {...bgProps} />
           {[
-            partList.filter(name => name === 'pages'),
-            partList.filter(name => name !== 'pages'),
+            partList.filter(name => name === props.layoutPart),
+            partList.filter(name => name !== props.layoutPart),
           ].map(list => list.map(name => (
             <Part {...{
               key:name,
@@ -82,6 +90,7 @@ const Draft = props => {
               app,
               gist,
               updateLayout,
+              isLayoutPart: name === props.layoutPart
             }}/>
           )))}
         </g>

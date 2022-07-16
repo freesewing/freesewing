@@ -10,30 +10,40 @@ const sizes = {
   tabloid: [ 279.4, 431.8 ],
 }
 
-const pagesPlugin = (size='a4', orientation='portrait') => ({
+export const pagesPlugin = (size='a4', orientation='portrait') => {
+  const [sheetWidth, sheetHeight] = sizes[size];
+  return basePlugin({sheetWidth, sheetHeight, orientation})
+}
+
+export const cutFabricPlugin = (sheetWidth, sheetHeight) => basePlugin({sheetWidth, sheetHeight, boundary: true, partName: "cutFabric", responsiveWidth: false})
+
+const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=false, partName="pages", responsiveWidth=true}) => ({
   name,
   version,
   hooks: {
     postLayout: function(pattern) {
       // Add part
-      pattern.parts.pages = pattern.Part('pages')
+      pattern.parts[partName] = pattern.Part(partName)
       // Keep part out of layout
-      pattern.parts.pages.layout = false
+      pattern.parts[partName].layout = false
       // But add the part to the autoLayout property
-      pattern.autoLayout.parts.pages = {
+      pattern.autoLayout.parts[partName] = {
         move: { x: 0, y: 0 }
       }
       // Add pages
-      const { macro } = pattern.parts.pages.shorthand()
-      const { height, width } = pattern
-      macro('addPages', { size, orientation, height, width })
+      const { macro } = pattern.parts[partName].shorthand()
+      let { height, width } = pattern
+      if (!responsiveWidth) width = sheetWidth;
+      macro('addPages', { size: [sheetWidth, sheetHeight], orientation, height, width })
+
+      if (boundary) pattern.parts[partName].boundary();
     }
   },
   macros: {
     addPages: function(so) {
       const ls = so.orientation === 'landscape'
-      const w = sizes[so.size][ls ? 1 : 0]
-      const h = sizes[so.size][ls ? 0 : 1]
+      const w = so.size[ls ? 1 : 0]
+      const h = so.size[ls ? 0 : 1]
       const cols = Math.ceil(so.width / w)
       const rows = Math.ceil(so.height / h)
       const { points, Point, paths, Path } = this.shorthand()
@@ -73,5 +83,3 @@ const pagesPlugin = (size='a4', orientation='portrait') => ({
     }
   }
 })
-
-export default pagesPlugin

@@ -108,7 +108,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
             <>
               <h3>{t('requiredMeasurements')}</h3>
               {design.config.measurements.map(m => (
-                <MeasurementInput key={m} m={m} focus={m == firstInvalid} {...inputProps} />
+                <MeasurementInput key={m} m={m} focus={m == firstInvalid} gistMeasurement={gist.measurements?.[m]} {...inputProps} />
               ))}
             </>
           )}
