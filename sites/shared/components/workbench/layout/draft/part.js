@@ -134,6 +134,9 @@ const Part = props => {
     .on('drag', function(event) {
       if (rotate) {
         let newRotation = getRotation(event);
+        if (event.sourceEvent.shiftKey) {
+          newRotation = Math.ceil(newRotation/15) * 15
+        }
         // reverse the rotation direction one time per flip. if we're flipped both directions, rotation will be positive again
         if (flipX) newRotation *= -1
         if (flipY) newRotation *= -1
