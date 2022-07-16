@@ -1,10 +1,7 @@
-import { useTranslation } from 'next-i18next'
 import { useEffect } from 'react'
 import MeasurementInput from 'shared/components/workbench/inputs/measurement'
 
 const FabricSizer = ({gist, updateGist}) => {
-	const { t } = useTranslation(['workbench'])
-
 	const setSize = (size, field) => {
 		updateGist(['_state', 'layout', 'forCutting', 'fabric', field], size);
 	}

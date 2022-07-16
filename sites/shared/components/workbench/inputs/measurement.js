@@ -116,7 +116,7 @@ const prefix = (app?.site === 'org') ? '' : 'https://freesewing.org'
             {(valid === false) && '🤔'}
           </span>) : ''}
         <span className={`
-          ${validate === true && validate === false && 'bg-error text-neutral-content'}
+          ${validate === true && valid === false && 'bg-error text-neutral-content'}
           ${validate === true && valid === true && 'bg-success text-neutral-content'}
           ${validate === true && valid === null && 'bg-base-200 text-base-content'}
           ${validate === false && 'bg-base-content text-base-100'}

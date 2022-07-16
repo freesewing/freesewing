@@ -30,7 +30,7 @@ export const formatMm = (val, units, format = 'html') => {
   if (units === 'imperial') {
     if (val == 0) return formatImperial('', 0, false, false, format)
     let fraction = val / 25.4
-    return valToImperialFraction(val, format);
+    return valToImperialFraction(fraction, format);
   } else {
     if (format === 'html' || format === 'notags') return roundMm(val / 10) + 'cm'
     else return roundMm(val / 10)

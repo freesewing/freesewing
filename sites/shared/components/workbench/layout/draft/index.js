@@ -1,4 +1,4 @@
-import { useEffect, useRef,useMemo} from 'react'
+import { useEffect, useRef} from 'react'
 import Svg from '../../draft/svg'
 import Defs from '../../draft/defs'
 import Part from './part'

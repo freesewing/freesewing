@@ -7,7 +7,7 @@ const CutLayoutSettings = props => {
   if (!props.gistReady) {return null}
   const { t } = useTranslation(['workbench'])
 
-  const { gist, updateGist, unsetGist, length} = props
+  const { unsetGist, length} = props
 
   return (
     <div className="my-2 flex flex-row gap-4 items-end justify-between">
