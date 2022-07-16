@@ -4,7 +4,7 @@ import useApp from 'site/hooks/useApp.js'
 import Link from 'next/link'
 import { formatVersionTitle } from 'site/components/version-picker.js'
 import Layout from 'site/components/layouts/bare'
-import { PageTitle } from 'site/components/layouts/default'
+import { PageTitle } from 'shared/components/wrappers/layout'
 import availableVersions from 'site/available-versions.json'
 
 const DesignLinks = ({ list, prefix='', version=false }) => (
