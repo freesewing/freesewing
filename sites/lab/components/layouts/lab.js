@@ -1,6 +1,5 @@
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
-import PatternPicker from 'site/components/pattern-picker.js'
 import VersionPicker from 'site/components/version-picker.js'
 
 export const BeforeNav = ({ app }) => (
