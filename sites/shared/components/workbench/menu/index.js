@@ -86,14 +86,14 @@ const WorkbenchMenu = props => {
   return (
     <nav className="grow mb-12">
       <ViewMenu {...props} />
-        {props.gist?._state?.view === 'draft' && (
-          <>
-            <DesignOptions {...props} />
-            <CoreSettings {...props} />
-            {props.gist.renderer === 'react' && <Xray {...props} />}
-          </>
-        )}
-        {props.gist?._state?.view === 'test' && <TestDesignOptions {...props} />}
+      {props.gist?._state?.view === 'draft' && (
+        <>
+          <DesignOptions {...props} />
+          <CoreSettings {...props} />
+          {props.gist.renderer === 'react' && <Xray {...props} />}
+        </>
+      )}
+      {props.gist?._state?.view === 'test' && <TestDesignOptions {...props} />}
     </nav>
   )
 }

@@ -18,7 +18,7 @@ const Draft = props => {
         ...patternProps.autoLayout,
         width: patternProps.width,
         height: patternProps.height
-      }, false, false)
+      }, false)
     }
   }, [layout])
 
@@ -49,7 +49,7 @@ const Draft = props => {
     newLayout.height = bottomRight.y - topLeft.y
     newLayout.bottomRight = bottomRight
     newLayout.topLeft = topLeft
-    updateGist(['layout'], newLayout, false, history)
+    updateGist(['layout'], newLayout, history)
   }
 
 
