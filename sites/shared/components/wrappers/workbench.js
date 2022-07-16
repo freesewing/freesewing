@@ -33,7 +33,7 @@ const views = {
 
 const hasRequiredMeasurementsMethod = (design, gist) => {
   for (const m of design.config.measurements || []) {
-    if (!gist?.measurements?.[m]) return false
+    if (!gist.measurements[m]) return false
   }
 
   return true
@@ -57,6 +57,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
   const [preloaded, setPreloaded] = useState(false)
+
 
   // We'll use this in more than one location
   const hasRequiredMeasurements = hasRequiredMeasurementsMethod(design, gist)
@@ -82,6 +83,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     }
   }, [preload, preloaded, from, design])
 
+
   // Helper methods to manage the gist state
   const updateWBGist = useMemo(() => (path, value, closeNav=false) => {
     updateGist(path, value)
@@ -100,6 +102,9 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     set: setMessages,
     clear: () => setMessages([]),
   }
+
+  // don't do anything until the gist is ready
+  if (!gistReady) {return null}
 
   // Generate the draft here so we can pass it down
   let draft = false
