@@ -1,93 +1,93 @@
 ---
 100PercentCommunity: 100% community
-100PercentFree: 100% free
+100PercentFree: 100% безкоштовно
 100PercentOpenSource: 100% open source
-aboutFreesewing: About Freesewing
-accessoryPatterns: Accessory Patterns
-account: Account
-accountCreated: Account created
-actions: Actions
-allDocumentation: All documentation
-andThatIsAwesome: And that is awesome
-applyThisLayout: Apply this layout
-areYouSureYouWantToContinue: Are you sure you want to continue?
-askForHelp: Ask for help
-automatic: Automatic
+aboutFreesewing: Про Freesewing
+accessoryPatterns: Викрійки аксесуарів
+account: Обліковий запис
+accountCreated: Обліковий запис створено
+actions: Дії
+allDocumentation: Вся документація
+andThatIsAwesome: І це чудово
+applyThisLayout: Застосувати макет
+areYouSureYouWantToContinue: Ви впевнені, що хочете продовжити?
+askForHelp: Попросити про допомогу
+automatic: Автоматично
 averagePeopleDoNotExist: "Average people don't exist"
-awesome: Awesome
-back: Back
-becauseThatWouldBeReallyHelpful: Because that would be really helpful.
-becomeAPatron: Become a patron
+awesome: Чудово
+back: Назад
+becauseThatWouldBeReallyHelpful: Тому що це було б дуже корисно.
+becomeAPatron: Стати патроном
 blockPatterns: Block/Sloper Patterns
-blog: Blog
-browseBlogposts: Browse blogposts
-browsePatterns: Browse patterns
-browseShowcases: Browse showcases
-butThatCouldChange: But that could change
-cancel: Cancel
-changePerson: Change person
-changePattern: Change pattern
-chatOnDiscord: Chat on Discord
-checkInboxClickLinkInConfirmationEmail: Now check your inbox and click the link in the confirmation Email we've sent you.
-chest: Chest
+blog: Блог
+browseBlogposts: Перегляд блог-постів
+browsePatterns: Перегляд викрійок
+browseShowcases: Перегляд показів
+butThatCouldChange: Але це може змінитися
+cancel: Скасувати
+changePerson: Змінити людину
+changePattern: Змінити викрійку
+chatOnDiscord: Чат в Discord
+checkInboxClickLinkInConfirmationEmail: Тепер перевірте поштову скриньку та перейдіть за посиланням у листі, що ми надіслали вам.
+chest: Груди
 chestInfo: Breasts require extra measurements. If this person has no breasts, irrelevant measurements will be hidden when configuring them. This has no impact on how patterns are drafted.
-chooseASize: Choose a size
-chooseAPerson: Choose a person
-chooseADesign: Choose a design
-chooseAPattern: Choose a pattern
-chooseYourOptions: Choose your options
-close: Close
-community: Community
-configureLayout: Configure layout
+chooseASize: Обрати розмір
+chooseAPerson: Обрати людину
+chooseADesign: Обрати дизайн
+chooseAPattern: Обрати викрійку
+chooseYourOptions: Обрати Ваші налаштування
+close: Закрити
+community: Спільнота
+configureLayout: Налаштування макета
 configureYourDraft: Configure your draft
-contactUs: Contact us
-contentLocaleFallback: That's why we're showing you the English version instead.
-contents: Contents
-continue: Continue
-copiedToClipboard: Copied to clipboard
-copy: Copy
-couldYouTranslateThis: Could you translate this?
+contactUs: Контакти
+contentLocaleFallback: Тому замість цього ми показуємо Вам англійську версію.
+contents: Зміст
+continue: Продовжити
+copiedToClipboard: Скопійовано в буфер обміну
+copy: Копіювати
+couldYouTranslateThis: Можете це перекласти?
 countModelsLackingForPattern: '{count} of your people lack the required measurements to draft {pattern}'
-created: Created
-custom: Custom
-customSeamAllowance: Custom seam allowance
-lightMode: Light mode
-data: Data
-darkMode: Dark mode
-default: Default
-demo: Demo
-designOptions: Design options
-designs: Designs
-docs: Documentation
-docsFooterMsg: Documentation is never finished. Hopefully we were able to answer all your questions, but if that's not the case, help is available.
-docsNotFoundMsg: We were unable to find this documentation, which typically means that it hasn't been written yet.
-docsNotFoundTitle: This documentation is missing
-documentationForDevelopers: Documentation for developers
-documentationForEditors: Documentation for editors
-documentationForTranslators: Documentation for translators
-documentationOverview: Documentation overview
+created: Створено
+custom: Налаштувати
+customSeamAllowance: Налаштувати припуски на шви
+lightMode: Світлий режим
+data: Дані
+darkMode: Темний режим
+default: За замовчуванням
+demo: Демо
+designOptions: Налаштування дизайну
+designs: Дизайни
+docs: Документація
+docsFooterMsg: Документація ніколи не завершена. Сподіваємося, ми змогли відповісти на всі Ваші запитання, але якщо це не так - можна звернутися за допомогою.
+docsNotFoundMsg: Не вдалося знайти цю документацію, що зазвичай значить, що вона ще не була написана.
+docsNotFoundTitle: Ця документація відсутня
+documentationForDevelopers: Документація для розробників
+documentationForEditors: Документація для корегувачів
+documentationForTranslators: Документація для перекладачів
+documentationOverview: Перегляд документації
 dolls: Dolls
-download: Download
-draft: Draft
-draftPattern: 'Draft {pattern}'
+download: Завантажити
+draft: Чернетка
+draftPattern: 'Створити {pattern}'
 testPattern: 'Test {pattern}'
-draftPatternForModel: 'Draft {pattern} for {model}'
-drafts: Drafts
+draftPatternForModel: 'Створити {pattern} для {model}'
+drafts: Чернетки
 draftSettings: Draft settings
-dragAndDropImageHere: Drag and drop an image here, or select one manually with the button below
-emailAddress: E-mail address
-emailWorksToo: "If you don't know your username, you can also use your E-mail address to login"
-enterEmailPickPassword: Enter your E-mail address, and pick a password
-export: Export
+dragAndDropImageHere: Перетягніть зображення сюди або виберіть власноруч, тицьнувши на кнопку знизу
+emailAddress: Електронна адреса
+emailWorksToo: "Якщо Ви не знаєте своє ім'я користувача, можна також використати свою електронну адресу для входу"
+enterEmailPickPassword: Введіть свою електронну адресу та оберіть пароль
+export: Експортувати
 exportTiledPDF: Export tiled PDF
-faq: Frequently asked questions
-fieldRemoved: '{field} removed'
-fieldSaved: '{field} saved'
-filterByPattern: Filter by pattern
-filterPatterns: Filter patterns
-forgotLoginInstructions: "If you don't remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button"
+faq: Поширені запитання
+fieldRemoved: '{field} видалено'
+fieldSaved: '{field} збережено'
+filterByPattern: Фільтрувати за викрійками
+filterPatterns: Фільтрувати викрійки
+forgotLoginInstructions: "Якщо Ви не пам'ятаєте свій пароль, напишіть знизу своє ім'я користувача чи електронну адресу та тицьніть кнопку <b>Змінити пароль</b>"
 freesewing: Freesewing
-freesewingOnGithub: Freesewing on GitHub
+freesewingOnGithub: Freesewing на GitHub
 garmentPatterns: Garment Patterns
 giants: Giants
 github: GitHub
