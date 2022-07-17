@@ -62,6 +62,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   const [popup, setPopup] = useState(false)
   const [preloaded, setPreloaded] = useState(false)
 
+
   // We'll use this in more than one location
   const hasRequiredMeasurements = hasRequiredMeasurementsMethod(design, gist)
 
@@ -86,6 +87,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     }
   }, [preload, preloaded, from, design])
 
+
   // Helper methods to manage the gist state
   const updateWBGist = useMemo(() => (path, value, closeNav=false, addToHistory=true) => {
     updateGist(path, value, addToHistory)
@@ -104,6 +106,9 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     set: setMessages,
     clear: () => setMessages([]),
   }
+
+  // don't do anything until the gist is ready
+  if (!gistReady) {return null}
 
   // Generate the draft here so we can pass it down
   let draft = false
