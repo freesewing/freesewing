@@ -84,8 +84,11 @@ svg.freesewing.pattern {
   }
   .svg-layout-button > rect.button {
     fill: var(--pattern-note);
-    fill-opacity: 0.3;
+    fill-opacity: 0.5;
     stroke: none;
+  }
+  .svg-layout-button path {
+    stroke-width: calc(var(--pattern-stroke) * 2 * var(--pattern-scale));;
   }
   .svg-layout-button:hover > rect {
     fill: var(--pattern-lining);

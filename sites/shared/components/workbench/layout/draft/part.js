@@ -49,33 +49,7 @@ import { getProps, angle } from '../../draft/utils'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
 import { useRef, useState, useEffect} from 'react'
-
-/** buttons for manipulating the part */
-const Buttons = ({ transform, flip, rotate, setRotate, resetPart }) => {
-  const letter = 'F'
-  const style = { style: {fill: 'white', fontSize: 18, fontWeight: 'bold', textAnchor: 'middle'} }
-
-  return (
-    <g transform={transform}>
-      {rotate
-        ? <circle cx="0" cy="0" r="50" className='stroke-2xl muted' />
-        : <path d="M -50, 0 l 100,0 M 0,-50 l 0,100" className="stroke-2xl muted" />
-      }
-      <g className="svg-layout-button" onClick={resetPart}>
-        <rect x="-10" y="-10" width="20" height="20" />
-        <text x="0" y="10" {...style}>{letter}</text>
-      </g>
-      <g className="svg-layout-button" onClick={() => flip('y')}>
-        <rect x="10" y="-10" width="20" height="20" className="button" />
-        <text x="20" y="10" {...style} transform="scale(1,-1)">{letter}</text>
-      </g>
-      <g className="svg-layout-button" onClick={() => flip('x')}>
-        <rect x="-30" y="-10" width="20" height="20" className="button" />
-        <text x="20" y="10" {...style} transform="scale(-1,1)">{letter}</text>
-      </g>
-    </g>
-  )
-}
+import Buttons from './buttons'
 
 const Part = props => {
   const { layout, part, partName} = props
@@ -205,6 +179,15 @@ const Part = props => {
     updateLayout()
   }
 
+  const rotate90 = (direction = 1) => {
+    // if (flipX) direction *= -1
+    // if (flipY) direction *= -1
+
+    rotation += 90 * direction
+
+    updateLayout();
+  }
+
   return (
     <g
       {...getProps(part)}
@@ -224,11 +207,12 @@ const Part = props => {
         className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
       />
       <Buttons
-        transform={`translate(${part.topLeft.x + part.width/2}, ${part.topLeft.y + part.height/2})`}
+        transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${flipX ? -1 : 1},${flipY ? -1 : 1})`}
         flip={flip}
         rotate={rotate}
         setRotate={setRotate}
         resetPart={resetPart}
+        rotate90={rotate90}
        />
       </>}
     </g>

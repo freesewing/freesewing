@@ -8,8 +8,9 @@ const FabricSizer = ({gist, updateGist}) => {
 
 	useEffect(() => {
 		if (!gist._state?.layout?.forCutting?.fabric) {
-			setSize(1000, 'width')
-			setSize(1000, 'height')
+			// #FIXME set in the current units
+			setSize(1000, 'fabricWidth')
+			setSize(1000, 'fabricHeight')
 		}
 	}, [])
 
