@@ -68,6 +68,18 @@ module.exports = {
   '--code-color-property': 'inherit',
   '--code-font-weight-property': 'bold',
 
+  '--rounded-box': '0.5rem',
+  '--rounded-btn': '0.5rem',
+  '--rounded-badge': '1.9rem',
+  '--animation-btn': '0.25s',
+  '--animation-input': '.4s',
+  '--padding-card': '2rem',
+  '--btn-text-case': 'uppercase',
+  '--navbar-padding': '.5rem',
+  '--border-btn': '1px',
+  '--focus-ring': '2px',
+  '--focus-ring-offset': '2px',
+
   '--pattern-bg': colors.neutral['50'],
   '--pattern-fabric': colors.neutral['700'],
   '--pattern-lining': colors.emerald['500'],
