@@ -30,7 +30,8 @@ export default function (partNumber, part) {
 
   let sectionWidth = (w * 2) / sections
   let neckWidth = sectionWidth * options.neckWidth
-  let legWidth = (w * options.legWidth * options.bottomTopLegRatio *3.1415 /2) * options.bottomTopLegRatio
+  let legWidth = (w * options.legWidth * options.bottomTopLegRatio *3.1415 /2) 
+  let legAdjustedWidth = legWidth * options.bottomTopLegRatio
   let legLength = ((w * 2) / 3.1415) * options.legLength
   switch (options.type) {
     case 'octopus':
@@ -47,15 +48,6 @@ export default function (partNumber, part) {
       legLength *= options.bottomLegReduction
   }
 
-  // let legSkirtWidth = store.get('legSkirtWidth')
-
-  console.log({ legSection: w })
-  console.log({ sectionWidth: sectionWidth })
-  console.log({ neckWidth: neckWidth })
-  console.log({ botlegWidth: legWidth })
-  console.log({ legLength: legLength })
-  // console.log({ legSkirtWidth: legSkirtWidth })
-
   points.legMiddle = new Point(0, 0)
 
   points.skirtLeft2 = points.legMiddle.shift(
@@ -67,36 +59,41 @@ export default function (partNumber, part) {
   }
 
   points.legMiddleCp1 = points.legMiddle.shiftFractionTowards(points.skirtLeft2,c)
-  points.skirtLeft3 = new Point(-1 *legWidth/2, points.skirtLeft2.y)
+  points.skirtLeft3 = new Point(-1 *legAdjustedWidth/2, points.skirtLeft2.y)
   points.skirtLeft = points.skirtLeft3.clone()
   let pHelper = points.skirtLeft.shift(store.get('legSkirtToTopAngle'), 10)
-  console.log({ legSkirtHip: points.skirtLeft.x})
-  console.log({ legSkirtHip: pHelper.x})
-  console.log({ legSkirtHip: legWidth/-2 })
-  console.log({ legSkirtHip: points.skirtLeft.dist(points.legMiddle) })
-  if( Math.round(pHelper.x *1000) <= Math.round(legWidth/-2 *1000) ) {
+  if( Math.round(pHelper.x *1000) <= Math.round(legAdjustedWidth/-2 *1000) ) {
     points.legTopLeft = points.skirtLeft.clone()
   } else {
     points.legTopLeft = utils.beamIntersectsX(
       points.skirtLeft,
       points.skirtLeft.shift(store.get('legSkirtToTopAngle'), 10),
-      legWidth / -2
+      legAdjustedWidth / -2
     )
   }
-  console.log({legTopLeft:points.legTopLeft})
   points.legTopLeftCp2 = points.legTopLeft.shift(90, (points.legTopLeft.y - points.skirtLeft.y) * c)
   points.legTopLeftCp1 = points.legTopLeft.shift(270, legLength / 10)
-  points.legBottomLeft = points.legTopLeft.shift(270, legLength).shift(0, legWidth / 4)
-  // points.legBottomLeftCp2 = points.legBottomLeft.shift(90, legLength / 10)
-  // points.legBottomLeftCp1 = points.legBottomLeft.shift(270, (legWidth / 4) * c)
-  // points.legBottom = points.legBottomLeft.shift(270, legWidth / 4).shift(0, legWidth / 4)
-  // points.legBottomCp2 = points.legBottom.shift(180, (legWidth / 4) * c)
-  points.legBottom = points.legTopLeft.shift(270, legLength +legWidth / 4).shift(0, legWidth / 2)
+  points.legBottomLeft = points.legTopLeft.shift(270, legLength).shift(0, legAdjustedWidth / 4)
+  points.legBottom = points.legTopLeft.shift(270, legLength +legAdjustedWidth / 4).shift(0, legAdjustedWidth / 2)
 
-  points.legBottomLeft = points.legBottom.shift(90, (legWidth/2)*(1-options.legTaper)).shift(180, (legWidth/2)*(1-options.legTaper))
+  points.legBottomLeft = points.legBottom.shift(90, (legAdjustedWidth/2)*(1-options.legTaper)).shift(180, (legAdjustedWidth/2)*(1-options.legTaper))
   points.legBottomLeftCp2 = points.legBottomLeft.shift(90, legLength / 10)
-  points.legBottomLeftCp1 = points.legBottomLeft.shift(270, (legWidth/2)*(1-options.legTaper) * c)
-  points.legBottomCp2 = points.legBottom.shift(180, (legWidth/2)*(1-options.legTaper) * c)
+  points.legBottomLeftCp1 = points.legBottomLeft.shift(270, (legAdjustedWidth/2)*(1-options.legTaper) * c)
+  points.legBottomCp2 = points.legBottom.shift(180, (legAdjustedWidth/2)*(1-options.legTaper) * c)
+
+  if (options.type == 'octopus') {
+    let pSkirtLeft = new Path()
+      .move(points.legTopLeft)
+      .curve(points.legTopLeftCp2, points.legMiddleCp1, points.legMiddle)
+
+    points.skirtLeft = points.legTopLeft.shift(
+      pSkirtLeft.shiftAlong(0.1).angle(points.legTopLeft),
+      legWidth
+    )
+    points.legTopLeft = points.legTopLeft.shift(270, legWidth * 1.6)
+    points.legTopLeftCp1 = points.legTopLeft.shift(90, legWidth / 2)
+    points.legTopLeftCp2 = points.legTopLeftCp1.clone()
+  }
 
   if (options.type == 'squid') {
     points.tentacleLeft = utils.beamIntersectsX(
@@ -114,7 +111,7 @@ export default function (partNumber, part) {
     )
 
     if (partNumber == 1) {
-      points.legBottomLeftCp1 = points.legBottomLeft.shift(270, legWidth * c)
+      points.legBottomLeftCp1 = points.legBottomLeft.shift(270, legAdjustedWidth * c)
       points.legBottom = points.legBottom.flipY(points.tentacleLeft)
       points.legBottomCp2 = points.legBottomCp2.flipY(points.tentacleLeft)
     }
@@ -185,8 +182,8 @@ export default function (partNumber, part) {
   // Complete?
   if (complete) {
     for( var i = 0; i < 4; i++ ){
-      // snippets[`legLeft${i}`] =  new Snippet('notch', points.legTopLeft.shiftFractionTowards(points.legBottomLeft, i/4))
-      // snippets[`legRight${i}`] =  new Snippet('notch', points.legTopRight.shiftFractionTowards(points.legBottomRight, i/4))
+      snippets[`legLeft${i}`] =  new Snippet('notch', points.legTopLeft.shiftFractionTowards(points.legBottomLeft, i/4))
+      snippets[`legRight${i}`] =  new Snippet('notch', points.legTopRight.shiftFractionTowards(points.legBottomRight, i/4))
     }
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)
