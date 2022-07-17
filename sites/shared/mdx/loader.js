@@ -16,6 +16,7 @@ import smartypants from 'remark-smartypants'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
+import rehypeJargon from '../../../packages/rehype-jargon/src/index.js'
 // Simple frontmatter extractor
 import frontmatter from 'front-matter'
 /*
@@ -28,7 +29,13 @@ import frontmatter from 'front-matter'
  * @link https://mdxjs.com/guides/mdx-on-demand/
  *
  */
-const mdxLoader = async (language, site, slug) => {
+
+const jargonTransform = (term, html) => `<details class="inline jargon-details">
+  <summary class="jargon-term">${term}</summary>
+  <div class="jargon-info">
+  ${html}</div></details>`
+
+const mdxLoader = async (language, site, slug, jargon) => {
 
   // TODO: Will this work on Windows?
   const md = await fs.promises.readFile(
@@ -57,6 +64,7 @@ const mdxLoader = async (language, site, slug) => {
         ]
       ],
       rehypePlugins: [
+        [rehypeJargon, { jargon, transform: jargonTransform }],
         [rehypeHighlight, { plainText: ['dot', 'http'] }],
         rehypeSlug,
         rehypeAutolinkHeadings,
