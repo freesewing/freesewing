@@ -5,7 +5,7 @@ import Path from './path'
 import Snippet from './snippet'
 import * as utils from './utils'
 import { version } from '../package.json'
-export * from './core-utils'
+import * as coreUtils from './core-utils'
 
 /*
  * Named exports will become the default in FreeSewing v3
@@ -22,6 +22,7 @@ export {
 
 // This is a helper for configuration files
 export const pctBasedOn = utils.pctBasedOn
+export const generatePartTransform = coreUtils.generatePartTransform
 
 /*
  * Default exports will be removed in FreeSewing v3
@@ -35,4 +36,5 @@ export default {
   Snippet,
   utils,
   pctBasedOn,
+  generatePartTransform
 }

@@ -1,5 +1,4 @@
 import pkg from '../package.json'
-import {getPartCutlist} from '@freesewing/core'
 
 const style = `
 text.title-nr {
@@ -85,7 +84,7 @@ export default {
         shift += 8
       }
       if (so.cutList) {
-        let cutList = getPartCutlist((this.name || so.title || '').replace(/_cutPiece\d+/, ''), this.context.config)
+        let cutList = this.cutList((this.name || so.title || '').replace(/_cutPiece\d+/, ''))
         let cutCount = 1;
         let pairs = '';
         if (cutList) {

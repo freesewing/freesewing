@@ -1,5 +1,5 @@
 import * as utils from './utils'
-import {generatePartTransform} from './core-utils'
+import {generatePartTransform, getPartCutlist} from './core-utils'
 import Point from './point'
 import Path from './path'
 import Snippet from './snippet'
@@ -358,6 +358,10 @@ Part.prototype.generateTransform = function(transforms) {
   for (var t in generated) {
     this.attr(t, generated[t], true);
   }
+}
+
+Part.prototype.cutList = function(name) {
+  return getPartCutlist(name || this.name, this.context.config, this.context.settings)
 }
 
 export default Part

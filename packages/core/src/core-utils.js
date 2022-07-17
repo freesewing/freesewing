@@ -27,10 +27,10 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   }
 }
 
-export const getPartCutlist = (partName, config) => {
+export const getPartCutlist = (partName, config, settings) => {
   let partCuts = config.cutList?.[partName]
   if (partCuts) {
-    return typeof partCuts === 'function' ? partCuts(this.settings) : {... partCuts}
+    return typeof partCuts === 'function' ? partCuts(settings) : {... partCuts}
   }
 
   return {cut: 1}

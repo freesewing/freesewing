@@ -590,7 +590,7 @@ Pattern.prototype.draftOrder = function (graph = this.resolveDependencies()) {
 Pattern.prototype.cutList = function() {
   let cutList = {}
   for (let partName of this.config.draftOrder) {
-    cutList[partName] = getPartCutlist(partName, this.config)
+    cutList[partName] = getPartCutlist(partName, this.config, this.settings)
   }
 
   return cutList
