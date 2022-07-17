@@ -191,6 +191,15 @@ export default function (partNumber, part) {
     points.sectionLeft = points.sectionLeft.shift(90, sectionHeight *octopusHeadFactor / 1.1)
     points.sectionLeftCp1 = points.sectionLeftCp1.shift(90, sectionHeight *octopusHeadFactor / 1.1)
     points.sectionLeftCp2 = points.sectionLeftCp2.shift(90, sectionHeight *octopusHeadFactor / 1.1)
+
+    let pSkirtLeft = new Path()
+    .move(points.skirtBottomLeft)
+    .curve(points.skirtBottomLeft, points.sectionBottomLeftCp1, points.sectionBottomLeft)
+
+    points.skirtBottomLeft = points.skirtBottomLeft.shift( pSkirtLeft.shiftAlong(0.1).angle(points.skirtBottomLeft), legWidth )
+    points.legTopLeft = points.legTopLeft.shift( 270, legWidth *1.6 )
+  points.legTopLeftCp1 = points.legTopLeft.shift(90, legWidth /2)
+  points.legTopLeftCp2 = points.legTopLeftCp1.clone()
   }
   if (options.type == 'squid') {
     points.skirtBottomLeft = points.legTopLeft.clone()
@@ -340,7 +349,9 @@ export default function (partNumber, part) {
       paths.skirtLeft = new Path()
         .move(points.sectionBottomLeft)
         .curve(points.sectionBottomLeftCp1, points.skirtBottomLeft, points.skirtBottomLeft)
-        .setRender(false)
+        .setRender(true)
+        .attr('class', 'stroke-xl lining')
+
       paths.skirtRight = new Path()
         .move(points.legTopRight)
         .curve(points.skirtBottomRight, points.sectionBottomRightCp2, points.sectionBottomRight)
@@ -380,7 +391,7 @@ export default function (partNumber, part) {
     .line(points.topLeft)
     .close()
     .attr('class', 'fabric')
-    .setRender(false)
+    .setRender(true)
 
   // Complete?
   if (complete) {
@@ -398,30 +409,21 @@ export default function (partNumber, part) {
     if (options.type == 'octopus') {
       points.skirtLegLeft = utils.curveIntersectsX(
         points.sectionBottomLeft,
-        points.sectionBottomLeftCp1,
+        points.sectionBottomLeftCp1, 
+        points.skirtBottomLeft, 
         points.skirtBottomLeft,
-        points.skirtBottomLeft,
-        points.sectionLeft.x
+        points.legTopLeft.x
       )
-      points.skirtLegLeftCp1 = 
-      points.skirtLegRight = utils.curveIntersectsX(
-        points.sectionBottomRight,
-        points.sectionBottomRightCp2,
-        points.skirtBottomRight,
-        points.skirtBottomRight,
-        points.sectionRight.x
-      )
-      let skirtLeftLegCp = points.legTopLeft.shiftFractionTowards(points.legTopLeftCp2, 3.85)
-      let skirtRightLegCp = points.legTopRight.shiftFractionTowards(points.legTopRightCp1, 3.85)
+      points.skirtLegRight = points.skirtLegLeft.flipX(points.sectionTop)
       paths.legLeftLine = new Path()
         .move(points.skirtLegLeft)
-        .curve(skirtLeftLegCp, skirtLeftLegCp, points.legTopLeft)
+        .line(points.legTopLeft)
         .attr('data-text', 'stitch line')
         .attr('data-text-class', 'center')
         .attr('class', 'hint dotted')
       paths.legRightLine = new Path()
         .move(points.legTopRight)
-        .curve(skirtRightLegCp, skirtRightLegCp, points.skirtLegRight)
+        .line(points.skirtLegRight)
         .attr('data-text', 'stitch line')
         .attr('data-text-class', 'center')
         .attr('class', 'hint dotted')
@@ -433,6 +435,8 @@ export default function (partNumber, part) {
 
     snippets.left = new Snippet('notch', points.sectionLeft)
     snippets.right = new Snippet('notch', points.sectionRight)
+    snippets.bottomLeft = new Snippet('notch', points.sectionBottomLeft)
+    snippets.bottomRight = new Snippet('notch', points.sectionBottomRight)
     for( var i = 0; i < 4; i++ ){
       snippets[`legLeft${i}`] =  new Snippet('notch', points.legTopLeft.shiftFractionTowards(points.legBottomLeft, i/4))
       snippets[`legRight${i}`] =  new Snippet('notch', points.legTopRight.shiftFractionTowards(points.legBottomRight, i/4))
