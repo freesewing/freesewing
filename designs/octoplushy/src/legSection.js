@@ -30,7 +30,7 @@ export default function (partNumber, part) {
 
   let sectionWidth = (w * 2) / sections
   let neckWidth = sectionWidth * options.neckWidth
-  let legWidth = (w * options.legWidth * options.bottomTopLegRatio *3.1415 /2) 
+  let legWidth = (w * options.legWidth * options.bottomTopLegRatio * 3.1415) / 2
   let legAdjustedWidth = legWidth * options.bottomTopLegRatio
   let legLength = ((w * 2) / 3.1415) * options.legLength
   switch (options.type) {
@@ -52,17 +52,25 @@ export default function (partNumber, part) {
 
   points.skirtLeft2 = points.legMiddle.shift(
     270 - 360 / sections / 2,
-    w * options.legWidth * options.bottomTopLegRatio / 2 / Math.sin(utils.deg2rad(360 / sections / 2))
+    (w * options.legWidth * options.bottomTopLegRatio) /
+      2 /
+      Math.sin(utils.deg2rad(360 / sections / 2))
   )
-  if( options.type == 'octoplushy'){
-    points.skirtLeft2 = points.skirtLeft2.shift( 90,(points.skirtLeft2.y -points.legMiddle.y) -store.get('legSkirtRadius') )
+  if (options.type == 'octoplushy') {
+    points.skirtLeft2 = points.skirtLeft2.shift(
+      90,
+      points.skirtLeft2.y - points.legMiddle.y - store.get('legSkirtRadius')
+    )
   }
 
-  points.legMiddleCp1 = points.legMiddle.shiftFractionTowards(points.skirtLeft2,c)
-  points.skirtLeft3 = new Point(-1 *legAdjustedWidth/2, points.skirtLeft2.y)
+  if (options.type == 'squid') {
+    points.skirtLeft2 = points.skirtLeft2.shift( 90, (points.skirtLeft2.y - points.legMiddle.y)/2)
+  }
+  points.legMiddleCp1 = points.legMiddle.shiftFractionTowards(points.skirtLeft2, c)
+  points.skirtLeft3 = new Point((-1 * legAdjustedWidth) / 2, points.skirtLeft2.y)
   points.skirtLeft = points.skirtLeft3.clone()
   let pHelper = points.skirtLeft.shift(store.get('legSkirtToTopAngle'), 10)
-  if( Math.round(pHelper.x *1000) <= Math.round(legAdjustedWidth/-2 *1000) ) {
+  if (Math.round(pHelper.x * 1000) <= Math.round((legAdjustedWidth / -2) * 1000)) {
     points.legTopLeft = points.skirtLeft.clone()
   } else {
     points.legTopLeft = utils.beamIntersectsX(
@@ -74,12 +82,22 @@ export default function (partNumber, part) {
   points.legTopLeftCp2 = points.legTopLeft.shift(90, (points.legTopLeft.y - points.skirtLeft.y) * c)
   points.legTopLeftCp1 = points.legTopLeft.shift(270, legLength / 10)
   points.legBottomLeft = points.legTopLeft.shift(270, legLength).shift(0, legAdjustedWidth / 4)
-  points.legBottom = points.legTopLeft.shift(270, legLength +legAdjustedWidth / 4).shift(0, legAdjustedWidth / 2)
+  points.legBottom = points.legTopLeft
+    .shift(270, legLength + legAdjustedWidth / 4)
+    .shift(0, legAdjustedWidth / 2)
 
-  points.legBottomLeft = points.legBottom.shift(90, (legAdjustedWidth/2)*(1-options.legTaper)).shift(180, (legAdjustedWidth/2)*(1-options.legTaper))
+  points.legBottomLeft = points.legBottom
+    .shift(90, (legAdjustedWidth / 2) * (1 - options.legTaper))
+    .shift(180, (legAdjustedWidth / 2) * (1 - options.legTaper))
   points.legBottomLeftCp2 = points.legBottomLeft.shift(90, legLength / 10)
-  points.legBottomLeftCp1 = points.legBottomLeft.shift(270, (legAdjustedWidth/2)*(1-options.legTaper) * c)
-  points.legBottomCp2 = points.legBottom.shift(180, (legAdjustedWidth/2)*(1-options.legTaper) * c)
+  points.legBottomLeftCp1 = points.legBottomLeft.shift(
+    270,
+    (legAdjustedWidth / 2) * (1 - options.legTaper) * c
+  )
+  points.legBottomCp2 = points.legBottom.shift(
+    180,
+    (legAdjustedWidth / 2) * (1 - options.legTaper) * c
+  )
 
   if (options.type == 'octopus') {
     let pSkirtLeft = new Path()
@@ -91,15 +109,15 @@ export default function (partNumber, part) {
       legWidth
     )
     points.legTopLeft = points.legTopLeft.shift(270, legWidth * 1.6)
-    points.legTopLeftCp1 = points.legTopLeft.shift(90, legWidth / 2)
-    points.legTopLeftCp2 = points.legTopLeftCp1.clone()
+    points.legTopLeftCp1 = points.legTopLeft.shift(270, legWidth / 2)
+    points.legTopLeftCp2 = points.legTopLeft.shift(90, legWidth / 2)
   }
 
   if (options.type == 'squid') {
     points.tentacleLeft = utils.beamIntersectsX(
       points.legBottomLeft,
       points.legBottomLeft.shift(180 + 70, 100),
-      points.skirtLeft.x - neckWidth * 1
+      -1.2 * legAdjustedWidth
     )
     points.tentacleLeftCp2 = points.tentacleLeft.shift(
       90,
@@ -150,7 +168,7 @@ export default function (partNumber, part) {
     }
   }
 
-  if( points.skirtLeft.sitsRoughlyOn(points.legTopLeft)) {
+  if (points.skirtLeft.sitsRoughlyOn(points.legTopLeft)) {
     paths.topLeft = new Path()
       .move(points.legMiddle)
       .curve(points.legMiddleCp1, points.skirtLeft, points.skirtLeft)
@@ -159,17 +177,17 @@ export default function (partNumber, part) {
       .move(points.legMiddle)
       .curve(points.legMiddleCp1, points.skirtLeft, points.skirtLeft)
       .curve(points.skirtLeft, points.legTopLeftCp2, points.legTopLeft)
-  }    
-  if( points.skirtRight.sitsRoughlyOn(points.legTopRight)) {
+  }
+  if (points.skirtRight.sitsRoughlyOn(points.legTopRight)) {
     paths.topRight = new Path()
-    .move(points.legTopRight)
-    .curve(points.skirtRight,points.legMiddleCp2,points.legMiddle)
+      .move(points.legTopRight)
+      .curve(points.skirtRight, points.legMiddleCp2, points.legMiddle)
   } else {
     paths.topRight = new Path()
-    .move(points.legTopRight)
-    .curve(points.legTopRightCp1, points.skirtRight, points.skirtRight)
-    .curve(points.skirtRight,points.legMiddleCp2,points.legMiddle)
-  }    
+      .move(points.legTopRight)
+      .curve(points.legTopRightCp1, points.skirtRight, points.skirtRight)
+      .curve(points.skirtRight, points.legMiddleCp2, points.legMiddle)
+  }
   paths.section = new Path()
     .move(points.legMiddle)
     .join(paths.topLeft)
@@ -181,10 +199,55 @@ export default function (partNumber, part) {
 
   // Complete?
   if (complete) {
-    for( var i = 0; i < 4; i++ ){
-      snippets[`legLeft${i}`] =  new Snippet('notch', points.legTopLeft.shiftFractionTowards(points.legBottomLeft, i/4))
-      snippets[`legRight${i}`] =  new Snippet('notch', points.legTopRight.shiftFractionTowards(points.legBottomRight, i/4))
+    points.logo = points.legMiddle.shiftFractionTowards(points.legBottom, 0.08)
+    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.4)
+
+    points.titleAnchor = points.legMiddle
+      .shiftFractionTowards(points.legBottom, 0.2)
+      .shift(180, sectionWidth * 0.1)
+
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 2 + partNumber * 3,
+      title: 'Leg' + (partNumber == 0 ? '' : ' (a)'),
+      rotation: 90,
+      scale: 0.3,
+    })
+
+    for (var i = 0; i < 4; i++) {
+      snippets[`legLeft${i}`] = new Snippet(
+        'notch',
+        points.legTopLeft.shiftFractionTowards(points.legBottomLeft, i / 4)
+      )
+      snippets[`legRight${i}`] = new Snippet(
+        'notch',
+        points.legTopRight.shiftFractionTowards(points.legBottomRight, i / 4)
+      )
     }
+    if (options.type == 'octopus') {
+      points.skirtLegLeft = utils.curveIntersectsX(
+        points.skirtLeft,
+        points.skirtLeft,
+        points.legMiddleCp1,
+        points.legMiddle,
+        points.legTopLeft.x
+      )
+      console.log({ skirtLegLeft: points.skirtLegLeft })
+      points.skirtLegRight = points.skirtLegLeft.flipX(points.sectionTop)
+      paths.legLeftLine = new Path()
+        .move(points.skirtLegLeft)
+        .line(points.legTopLeft)
+        .attr('data-text', 'stitch line')
+        .attr('data-text-class', 'center')
+        .attr('class', 'hint dotted')
+      paths.legRightLine = new Path()
+        .move(points.legTopRight)
+        .line(points.skirtLegRight)
+        .attr('data-text', 'stitch line')
+        .attr('data-text-class', 'center')
+        .attr('class', 'hint dotted')
+    }
+
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)
     // points.text = points.logo

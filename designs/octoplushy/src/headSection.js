@@ -30,7 +30,7 @@ export default function (partNumber, part) {
 
   let sectionWidth = (w * 2) / sections
   let neckWidth = sectionWidth * options.neckWidth
-  let legWidth = (w * options.legWidth * options.bottomTopLegRatio *3.1415 /2) 
+  let legWidth = (w * options.legWidth * options.bottomTopLegRatio * 3.1415) / 2
   let legAdjustedWidth = legWidth * options.bottomTopLegRatio
   let legLength = ((w * 2) / 3.1415) * options.legLength
   if (options.type == 'octopus') {
@@ -150,7 +150,10 @@ export default function (partNumber, part) {
       2 /
       Math.sin(utils.deg2rad(360 / sections / 2))
   )
-  points.skirtBottomLeft3 = new Point(points.sectionTop.x - legAdjustedWidth / 2, points.skirtBottomLeft2.y)
+  points.skirtBottomLeft3 = new Point(
+    points.sectionTop.x - legAdjustedWidth / 2,
+    points.skirtBottomLeft2.y
+  )
   if (options.type == 'octoplushy') {
     points.skirtBottomLeft3 = points.skirtBottomLeft3.shift(
       270,
@@ -186,7 +189,9 @@ export default function (partNumber, part) {
   )
   points.legTopLeftCp1 = points.legTopLeft.shift(270, legLength / 10)
 
-  points.legBottom = points.legTopLeft.shift(270, legLength + legAdjustedWidth / 4).shift(0, legAdjustedWidth / 2)
+  points.legBottom = points.legTopLeft
+    .shift(270, legLength + legAdjustedWidth / 4)
+    .shift(0, legAdjustedWidth / 2)
 
   points.legBottomLeft = points.legBottom
     .shift(90, (legAdjustedWidth / 2) * (1 - options.legTaper))
@@ -196,7 +201,10 @@ export default function (partNumber, part) {
     270,
     (legAdjustedWidth / 2) * (1 - options.legTaper) * c
   )
-  points.legBottomCp2 = points.legBottom.shift(180, (legAdjustedWidth / 2) * (1 - options.legTaper) * c)
+  points.legBottomCp2 = points.legBottom.shift(
+    180,
+    (legAdjustedWidth / 2) * (1 - options.legTaper) * c
+  )
 
   if (options.type == 'octopus') {
     let octopusHeadFactor = 0.7
@@ -222,8 +230,8 @@ export default function (partNumber, part) {
       legWidth
     )
     points.legTopLeft = points.legTopLeft.shift(270, legWidth * 1.6)
-    points.legTopLeftCp1 = points.legTopLeft.shift(90, legWidth / 2)
-    points.legTopLeftCp2 = points.legTopLeftCp1.clone()
+    points.legTopLeftCp1 = points.legTopLeft.shift(270, legWidth / 2)
+    points.legTopLeftCp2 = points.legTopLeft.shift(90, legWidth / 2)
   }
   if (options.type == 'squid') {
     points.skirtBottomLeft = points.legTopLeft.clone()
@@ -238,7 +246,7 @@ export default function (partNumber, part) {
     points.tentacleLeft = utils.beamIntersectsX(
       points.legBottomLeft,
       points.legBottomLeft.shift(180 + 70, 100),
-      points.sectionLeft.x - neckWidth * 1
+      -1.2 * legAdjustedWidth
     )
     points.tentacleLeftCp2 = points.tentacleLeft.shift(
       90,
@@ -373,9 +381,7 @@ export default function (partNumber, part) {
       paths.skirtLeft = new Path()
         .move(points.sectionBottomLeft)
         .curve(points.sectionBottomLeftCp1, points.skirtBottomLeft, points.skirtBottomLeft)
-        .setRender(true)
-        .attr('class', 'stroke-xl lining')
-
+        .setRender(false)
       paths.skirtRight = new Path()
         .move(points.legTopRight)
         .curve(points.skirtBottomRight, points.sectionBottomRightCp2, points.sectionBottomRight)
@@ -419,8 +425,19 @@ export default function (partNumber, part) {
 
   // Complete?
   if (complete) {
-    // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    // snippets.logo = new Snippet('logo', points.logo)
+    points.logo = points.sectionTop.shiftFractionTowards(points.sectionBottom, 0.4)
+    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
+
+    points.titleAnchor = points.sectionBottom
+      .shiftFractionTowards(points.sectionTop, 0.5)
+      .shift(180, sectionWidth * 0.2)
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 1 + partNumber * 3,
+      title: 'Head' + (partNumber == 0 ? '' : ' (a)'),
+      rotation: 90,
+      scale: 0.5,
+    })
 
     if (options.type == 'squid' && partNumber == 1) {
       paths.fold = new Path()
@@ -452,10 +469,6 @@ export default function (partNumber, part) {
         .attr('data-text-class', 'center')
         .attr('class', 'hint dotted')
     }
-    points.text = points.sectionBottom
-      .shiftFractionTowards(points.sectionTop, 0.5)
-      .attr('data-text', 'H' + (partNumber == 0 ? '' : 'a'))
-      .attr('data-text-class', 'center')
 
     snippets.left = new Snippet('notch', points.sectionLeft)
     snippets.right = new Snippet('notch', points.sectionRight)
