@@ -1,6 +1,6 @@
 ---
 accountRemoved: Обліковий запис видалено
-accountRestricted: Account restricted
+accountRestricted: Обліковий запис обмежено
 avatar: Аватар
 avatarInfo: Ваш аватар або фото профілю буде показано на сторінці Вашого профілю.
 avatarTitle: Встановіть своє зображення профілю
@@ -12,7 +12,7 @@ email: Адреса електронної пошти
 emailInfo: Адреса електронної пошти, прив'язана до вашого облікового запису, є важливою, оскільки вона буде використовуватися для відновлення доступу до вашого облікового запису, якщо ви забудете пароль. Через це зміна електронної адреси потребує підтвердження.
 emailTitle: Введіть адресу електронної пошти, яку Ви хочете прив'язати до цього облікового запису
 exportYourData: Експортуйте Ваші дані
-exportYourDataInfo: The EU's General Data Protection (GDPR) ensures your so-called <em>right to data portability</em> — the right to obtain and reuse your personal data for your own purposes, or across different services.
+exportYourDataInfo: Загальний регламент про захист даних ЄС (GDPR) забезпечує Ваше так зване <em>право на портативність даних</em> — право отримувати та повторно використовувати свої особисті дані для власних цілей, або через різні сервіси.
 exportYourDataTitle: Натисніть нижче, щоб завантажити персональні дані
 github: GitHub
 githubInfo: Якщо ви надасте своє ім'я користувача GitHub, сторінка вашого профілю буде містити посилання на ваш обліковий запис в GitHub. Інші відвідувачі зможуть переглянути Ваші внески в код, дати Вам зірочку або підписатися на Вас.
@@ -20,31 +20,31 @@ githubTitle: Заповніть своє ім'я користувача GitHub
 instagramInfo: Якщо ви надасте ім'я користувача Instagram, сторінка профілю буде містити посилання на Ваш обліковий запис в Instagram. Таким чином, відвідувачі зможуть переглянути Ваші фотографії та слідкувати за Вами.
 instagram: Instagram
 instagramTitle: Заповніть своє ім'я користувача Instagram
-languageInfo: This language choice determines in what language you will receive E-mails from freesewing. It does not determine the language of the website, which can be chosen on every page.
-language: Language
-languageTitle: Select the language of your choice
-newPassword: New password
-newsletter: Newsletter
-newsletterTitle: Would you like to receive the FreeSewing newsletter?
-newsletterInfo: Once every 3 months, we send out our newsletter with honest wholesome content. No tracking, no ads, no nonsense.
-passwordInfo: Changing your password requires your current password. Fill that in, then fill in your new password too.
-password: Password
-passwordTitle: Enter your current password, and your new password
-patronInfo: Patrons support Freesewing financially. They are loyal supporters who ensure a sustainable future for freesewing.org, our code, our patterns, and our community.
-patron: Patron
-removeYourAccountInfo: The EU's General Data Protection (GDPR) ensures your so-called <em>right to data erasure</em> — the right to have your personal data removed.
-removeYourAccount: Remove your account
+languageInfo: Даний вибір мови визначає, якою мовою ви будете отримувати електронні листи від FreeSewing. Він не визначає мову сайту, яку можна вибрати на кожній сторінці.
+language: Мова
+languageTitle: Оберіть бажану мову користування
+newPassword: Новий пароль
+newsletter: Розсилка новин
+newsletterTitle: Чи хочете Ви отримувати розсилку новин від FreeSewing?
+newsletterInfo: Раз на 3 місяці, ми надсилаємо нашу інформаційну розсилку з корисним та чесним контентом. Без відстеження, без реклами, без нісенітниць.
+passwordInfo: Зміна пароля вимагає Вашого поточного пароля. Заповніть його, потім введіть новий пароль.
+password: Пароль
+passwordTitle: Введіть поточний пароль та новий пароль
+patronInfo: Патрони фінансово підтримують FreeSewing. Вони є лояльними прихильниками, які забезпечують стійке майбутнє для freesewing.org, нашого коду, викрійок та нашої спільноти.
+patron: Патрон
+removeYourAccountInfo: Загальний регламент про захист даних ЄС (GDPR) забезпечує Ваше так зване <em>право на усунення даних</em> — право видалити Ваші персональні дані.
+removeYourAccount: Видалення облікового запису
 removeYourAccountWarning: This will remove your account, your drafts, your models, and all data we have stored for you. There is no way back from this.
-resetPasswordInfo: Enter your new password.
-resetPassword: Reset password
-resetPasswordTitle: Enter your new password
-restrictProcessingOfYourDataInfo: The EU's General Data Protection (GDPR) ensures your so-called <em>right to restrict processing</em> — the right to put a halt on the processing of your data.
-restrictProcessingOfYourData: Restrict processing of your data
-restrictProcessingWarning: While no data will be removed, this will log you out and freeze your account. Furthermore, you can not undo this on your own, but will have to contact us when you want to restore access to your account.
-reviewYourConsent: Review your consent
+resetPasswordInfo: Введіть Ваш новий пароль.
+resetPassword: Змінити пароль
+resetPasswordTitle: Введіть Ваш новий пароль
+restrictProcessingOfYourDataInfo: Загальний регламент про захист даних ЄС (GDPR) гарантує Ваші так звані <em>права на обмеження опрацювання</em> - право припиняти обробку Ваших даних.
+restrictProcessingOfYourData: Обмежити обробку ваших даних
+restrictProcessingWarning: Ваші дані не будуть видалені, проте Ви вийдете зі свого облікового запису та заморозите його. Також, Ви не можете відмінити цю дію самостійно – Вам доведеться зв'язатися з нами, якщо Ви захочете відновити доступ до свого облікового запису.
+reviewYourConsent: Переглянути вашу згоду
 socialInfo: If you provide your GitHub, Twitter, or Instagram username, your profile page will contain links to your accounts on these sites. This allows freesewing users to follow you there.<br>We are not contacting any of these sites on your behalf. This is just so that people can connect the dots and know that for example user @joost on freesewing is the same person as user @j__st on twitter.
-social: Social
-socialTitle: Let people follow you elsewhere
+social: Соціальні мережі
+socialTitle: Дозволити людям слідкувати за Вами на інших платформах
 twitterInfo: If you provide your Twitter username, your profile page will contain a link to your Twitter account, so visitors can discover your tweets, and follow you.
 twitterTitle: Fill in your Twitter username
 twitter: Twitter
@@ -56,5 +56,5 @@ usernameTitle: Please choose your username
 username: Username
 accountIsInactive: Your account is inactive
 accountNeedsActivation: Before you can login, you need to activate your account. Please check your inbox for the registration email and click the link within it.
-reloadAccount: Reload account
-reloadAccountDescription: This will reload your account data from the backend. It has the same effect as logging out, and then logging in again.
+reloadAccount: Перезавантажити обліковий запис
+reloadAccountDescription: Це перезавантажить дані Вашого облікового запису із backend. Буквально те саме, що й вийти та знову увійти.
