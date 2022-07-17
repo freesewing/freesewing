@@ -1,4 +1,5 @@
 import * as utils from './utils'
+import {generatePartTransform} from './core-utils'
 import Point from './point'
 import Path from './path'
 import Snippet from './snippet'
@@ -352,7 +353,7 @@ Part.prototype.shorthand = function () {
 
 Part.prototype.generateTransform = function(transforms) {
   const {move, rotate, flipX, flipY} = transforms;
-  const generated = utils.generatePartTransform(move?.x, move?.y, rotate, flipX, flipY, this);
+  const generated = generatePartTransform(move?.x, move?.y, rotate, flipX, flipY, this);
 
   for (var t in generated) {
     this.attr(t, generated[t], true);

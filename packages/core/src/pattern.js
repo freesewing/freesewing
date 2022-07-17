@@ -9,6 +9,7 @@ import Store from './store'
 import Hooks from './hooks'
 import Attributes from './attributes'
 import pkg from '../package.json'
+import {getPartCutlist} from './core-utils'
 
 export default function Pattern(config = { options: {} }) {
   // Default settings
@@ -589,13 +590,7 @@ Pattern.prototype.draftOrder = function (graph = this.resolveDependencies()) {
 Pattern.prototype.cutList = function() {
   let cutList = {}
   for (let partName of this.config.draftOrder) {
-    let partCuts = this.config.cutList?.[partName]
-    if (!partCuts) continue
-
-    cutList[partName] = {... partCuts}
-    if (typeof partCuts.cut == 'function') {
-      cutList[partName].cut = partCuts.cut(this.settings)
-    }
+    cutList[partName] = getPartCutlist(partName, this.config)
   }
 
   return cutList
