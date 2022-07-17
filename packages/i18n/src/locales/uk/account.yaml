@@ -1,25 +1,25 @@
 ---
-accountRemoved: Account removed
+accountRemoved: Обліковий запис видалено
 accountRestricted: Account restricted
-avatar: Avatar
-avatarInfo: Your avatar or profile picture will be shown on your profile page.
-avatarTitle: Set your profile picture
-bio: Bio
-bioInfo: This is where you can tell other freesewing users a little bit about yourself. This field supports MarkDown, so you can include links. If you have a blog, this is where you link to it so others can discover it.
-bioTitle: Write a short bio
-currentPassword: Current password
-email: E-mail address
-emailInfo: The E-mail address linked to your account is important, as it will be used to regain access to your account if you forget your password. Because of this, changing your E-mail address requires confirmation.
-emailTitle: Enter the E-mail address you want to link to this account
-exportYourData: Export your data
+avatar: Аватар
+avatarInfo: Ваш аватар або фото профілю буде показано на сторінці Вашого профілю.
+avatarTitle: Встановіть своє зображення профілю
+bio: Про мене
+bioInfo: Це місце, де Ви можете розповісти іншим користувачам Freesewing трішки про себе. Дане поле підтримує MarkDown - це робить можливим додавання посилань. Для прикладу, Ви можете додати посилання на свій блог, щоб інші могли його відвідати.
+bioTitle: Напишіть коротку біографію
+currentPassword: Поточний пароль
+email: Адреса електронної пошти
+emailInfo: Адреса електронної пошти, прив'язана до вашого облікового запису, є важливою, оскільки вона буде використовуватися для відновлення доступу до вашого облікового запису, якщо ви забудете пароль. Через це зміна електронної адреси потребує підтвердження.
+emailTitle: Введіть адресу електронної пошти, яку Ви хочете прив'язати до цього облікового запису
+exportYourData: Експортуйте Ваші дані
 exportYourDataInfo: The EU's General Data Protection (GDPR) ensures your so-called <em>right to data portability</em> — the right to obtain and reuse your personal data for your own purposes, or across different services.
-exportYourDataTitle: Click below to download your personal data
-github: Github
-githubInfo: If you provide your GitHub username, your profile page will contain a link to your Github account, so visitors can discover your code contributions, star you, or follow you.
-githubTitle: Fill in your Github username
-instagramInfo: If you provide your Instagram username, your profile page will contain a link to your Instagram account, so visitors can discover your pictures, and follow you.
+exportYourDataTitle: Натисніть нижче, щоб завантажити персональні дані
+github: GitHub
+githubInfo: Якщо ви надасте своє ім'я користувача GitHub, сторінка вашого профілю буде містити посилання на ваш обліковий запис в GitHub. Інші відвідувачі зможуть переглянути Ваші внески в код, дати Вам зірочку або підписатися на Вас.
+githubTitle: Заповніть своє ім'я користувача GitHub
+instagramInfo: Якщо ви надасте ім'я користувача Instagram, сторінка профілю буде містити посилання на Ваш обліковий запис в Instagram. Таким чином, відвідувачі зможуть переглянути Ваші фотографії та слідкувати за Вами.
 instagram: Instagram
-instagramTitle: Fill in your Instagram username
+instagramTitle: Заповніть своє ім'я користувача Instagram
 languageInfo: This language choice determines in what language you will receive E-mails from freesewing. It does not determine the language of the website, which can be chosen on every page.
 language: Language
 languageTitle: Select the language of your choice
