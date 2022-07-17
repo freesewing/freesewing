@@ -60,10 +60,10 @@ designOptions: Налаштування дизайну
 designs: Дизайни
 docs: Документація
 docsFooterMsg: Документація ніколи не завершена. Сподіваємося, ми змогли відповісти на всі Ваші запитання, але якщо це не так - можна звернутися за допомогою.
-docsNotFoundMsg: Не вдалося знайти цю документацію, що зазвичай значить, що вона ще не була написана.
+docsNotFoundMsg: Не вдалося знайти цю документацію. Це зазвичай значить, що вона ще не була написана.
 docsNotFoundTitle: Ця документація відсутня
 documentationForDevelopers: Документація для розробників
-documentationForEditors: Документація для корегувачів
+documentationForEditors: Документація для коригувачів
 documentationForTranslators: Документація для перекладачів
 documentationOverview: Перегляд документації
 dolls: Dolls
@@ -88,55 +88,55 @@ filterPatterns: Фільтрувати викрійки
 forgotLoginInstructions: "Якщо Ви не пам'ятаєте свій пароль, напишіть знизу своє ім'я користувача чи електронну адресу та тицьніть кнопку <b>Змінити пароль</b>"
 freesewing: Freesewing
 freesewingOnGithub: Freesewing на GitHub
-garmentPatterns: Garment Patterns
+garmentPatterns: Викрійки одягу
 giants: Giants
 github: GitHub
-goAheadWeWillWait: Go ahead, we'll wait.
-goodJob: Good job
-goodToSeeYouAgain: Good to see you again {user}
+goAheadWeWillWait: Продовжуйте, ми зачекаємо.
+goodJob: Молодець
+goodToSeeYouAgain: Раді бачити Вас знову, {user}
 handle: Handle
-helpUsTranslate: Help us translate
-home: Home
-howCanWeHelpYou: How can we help you?
-howToTakeMeasurements: How to take measurements
-i18n: Internationalization
-imperialUnits: Imperial units (inch)
-instagram: Instagram
+helpUsTranslate: Допоможіть нам з перекладом
+home: Головна
+howCanWeHelpYou: Як ми можемо Вам допомогти?
+howToTakeMeasurements: Як робити заміри
+i18n: Інтернаціоналізація
+imperialUnits: Імперські одиниці (дюйм)
+instagram: Інстаграм
 invalidTldMessage: '.{tld} is not a valid TLD'
-joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
-justAMoment: Just a moment
-layout: Layout
-logIn: Log in
-loginWithProvider: 'Log in with {provider}'
-logOut: Log out
+joinTheChatMsg: Ми маємо спільноту в Discord, де Ви можете поспілкуватися з привітними людьми.
+justAMoment: Зачекайте хвилинку
+layout: Макет
+logIn: Увійти
+loginWithProvider: 'Увійти через {provider}'
+logOut: Вийти
 manual: Manual
 markdownHelp: MarkDown help
-measurements: Measurements
-menu: Menu
+measurements: Заміри
+menu: Меню
 metadata: Metadata
-metricUnits: Metric units (cm)
-person: Person
-people: People
-nameInfo: A name helps to keep things apart. You can pick any name you want.
-name: Name
-addThing: Add {thing}
+metricUnits: Метричні одиниці (см)
+person: Людина
+people: Люди
+nameInfo: Назва допомагає відрізняти речі. Ви можете обрати назву, яку душа забажає.
+name: Назва
+addThing: Додати {thing}
 newThing: New {thing}
 newPatternForModel: 'New {pattern} for {model}'
-noChanges: No changes
-no: 'No' #Keep in quotes or it will evaluate to false
+noChanges: Без змін
+no: 'Ні' #Keep in quotes or it will evaluate to false
 noPasswordPolicy: We don't enforce a password policy
-noSeamAllowance: No seam allowance
-notAllOfThisContentIsAvailableInLanguage: Not all of this content is available in English
-notesInfo: These are your notes. You can write anything you want here
-notes: Notes
-ohNo: Oh no!
-oneMoreThing: One more thing
-optionalMeasurements: Optional measurements
-options: Options
-orPayPerYear: Or pay per year
-other: Other
+noSeamAllowance: Без припусків на шви
+notAllOfThisContentIsAvailableInLanguage: Не весь цей контент доступний англійською мовою
+notesInfo: Це Ваші нотатки. Ви можете писати тут все, що забажаєте
+notes: Нотатки
+ohNo: О ні!
+oneMoreThing: І ще одна річ
+optionalMeasurements: Додаткові заміри
+options: Налаштування
+orPayPerYear: Чи оплачувати щороку
+other: Інше
 otherThing: 'Other {thing}'
-ourPatrons: Our patrons
+ourPatrons: Наші патрони
 ourRevenuePledge: Our revenue pledge
 patron-2: Powder monkey
 patron-4: First mate
