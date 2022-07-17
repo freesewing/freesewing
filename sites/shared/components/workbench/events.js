@@ -1,10 +1,10 @@
 import Markdown from 'react-markdown'
 import { formatMm } from 'shared/utils'
 
-const Error = ({err}) => (
-  <code className="block">
-    {err.toString()}
-  </code>
+export const Error = ({err}) => (
+  <pre>
+    {err.stack.split(/\n/g).slice(0, 5).map((l, i) => (<code key={`error-${i}`} className={'block whitespace-pre-wrap' + (i > 0 ? ' break-all' : '')}>{l}</code>))}
+  </pre>
 )
 
 // Markdown wrapper to suppress creation of P tags

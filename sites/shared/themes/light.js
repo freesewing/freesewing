@@ -99,33 +99,6 @@ module.exports = {
   // Text color on the error button
   '--btn-error-content': colors.neutral[50],
 
-  /* VARIOUS
-  *
-  * These are additional variables to control other aspects of the theme
-  */
-  // border-radius for cards and other big elements
-  '--rounded-box': '0.5rem',
-  // border-radius for buttons and similar elements
-  '--rounded-btn': '0.5rem',
-  // border-radius for badges and other small elements
-  '--rounded-badge': '1.9rem',
-  // bounce animation time for button
-  '--animation-btn': '0.25s',
-  // bounce animation time for checkbox, toggle, etc
-  '--animation-input': '.4s',
-  // default card-body padding
-  '--padding-card': '2rem',
-  // default text case for buttons
-  '--btn-text-case': 'uppercase',
-  // default padding for navbar
-  '--navbar-padding': '.5rem',
-  // default border size for button
-  '--border-btn': '1px',
-  // focus ring size for button and inputs
-  '--focus-ring': '2px',
-  // focus ring offset size for button and inputs
-  '--focus-ring-offset': '2px',
-
   /* THEME GRADIENT
   *
   * This is used as a border & loading indicator
@@ -171,6 +144,33 @@ module.exports = {
   '--code-color-tag': colors.green['400'],
   '--code-color-property': colors.yellow['200'],
   '--code-font-weight-property': 'bold',
+
+  /* VARIOUS
+  *
+  * These are additional variables to control other aspects of the theme
+  */
+  // border-radius for cards and other big elements
+  '--rounded-box': '0.5rem',
+  // border-radius for buttons and similar elements
+  '--rounded-btn': '0.5rem',
+  // border-radius for badges and other small elements
+  '--rounded-badge': '1.9rem',
+  // bounce animation time for button
+  '--animation-btn': '0.25s',
+  // bounce animation time for checkbox, toggle, etc
+  '--animation-input': '.4s',
+  // default card-body padding
+  '--padding-card': '2rem',
+  // default text case for buttons
+  '--btn-text-case': 'uppercase',
+  // default padding for navbar
+  '--navbar-padding': '.5rem',
+  // default border size for button
+  '--border-btn': '1px',
+  // focus ring size for button and inputs
+  '--focus-ring': '2px',
+  // focus ring offset size for button and inputs
+  '--focus-ring-offset': '2px',
 
   /* FREESEWING PATTERN THEMEING
   *

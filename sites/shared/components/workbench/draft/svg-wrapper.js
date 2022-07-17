@@ -38,7 +38,7 @@ const SvgWrapper = props => {
         <div style={{ width: size.width+'px', }}>
           <Svg {...patternProps} embed={gist.embed}>
             <Defs {...patternProps} />
-            <style>{`:root { --pattern-scale: ${gist.scale || 1}}`}</style>
+            <style>{`:root { --pattern-scale: ${gist.scale || 1}} ${patternProps.svg.style}`}</style>
             <g>
               {Object.keys(patternProps.parts).map((name) => (
                 <Part {...{ app, gist, updateGist, unsetGist, showInfo }}

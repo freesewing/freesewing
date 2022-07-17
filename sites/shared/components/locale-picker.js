@@ -10,7 +10,8 @@ const LocalePicker = ({ app, iconOnly=false }) => {
   const pickerProps = {
     iconOnly,
     Icon: LocaleIcon,
-    title: t(router.locale)
+    title: t(router.locale),
+    end: true
   }
 
   return (

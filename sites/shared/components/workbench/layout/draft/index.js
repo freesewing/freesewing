@@ -18,14 +18,14 @@ const Draft = props => {
         ...patternProps.autoLayout,
         width: patternProps.width,
         height: patternProps.height
-      })
+      }, false)
     }
   }, [layout])
 
   if (!patternProps || !layout) return null
 
   // Helper method to update part layout and re-calculate width * height
-  const updateLayout = (name, config) => {
+  const updateLayout = (name, config, history=true) => {
     // Start creating new layout
     const newLayout = {...layout}
     newLayout.parts[name] = config
@@ -36,7 +36,7 @@ const Draft = props => {
     for (const [pname, part] of Object.entries(patternProps.parts)) {
       let partLayout = newLayout.parts[pname];
       // Pages part does not have its topLeft and bottomRight set by core since it's added post-draft
-      if (partLayout.tl) {
+      if (partLayout?.tl) {
         // set the pattern extremes
         topLeft.x = Math.min(topLeft.x, partLayout.tl.x)
         topLeft.y = Math.min(topLeft.y, partLayout.tl.y)
@@ -49,7 +49,7 @@ const Draft = props => {
     newLayout.height = bottomRight.y - topLeft.y
     newLayout.bottomRight = bottomRight
     newLayout.topLeft = topLeft
-    updateGist(['layout'], newLayout)
+    updateGist(['layout'], newLayout, history)
   }
 
 
