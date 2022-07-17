@@ -1,10 +1,15 @@
 const colors = require('tailwindcss/colors')
-const light = require('./light')
 
 const bg = '#002808'
-module.exports = {
-  ...light, // Startr from defaults, so we don't miss anything
+
+module.exports =  {
   'fontFamily': `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
+
+  'base-100': bg,
+  'base-200': colors.lime['900'],
+  'base-300': colors.lime['800'],
+  'base-content': colors.lime['500'],
+
   'primary': colors.lime['700'],
   'primary-focus': colors.lime['600'],
   'primary-content': colors.lime['50'],
@@ -21,11 +26,6 @@ module.exports = {
   'neutral-focus': colors.lime['600'],
   'neutral-content': colors.lime['200'],
 
-  'base-100': bg,
-  'base-200': colors.lime['900'],
-  'base-300': colors.lime['800'],
-  'base-content': colors.lime['500'],
-
   'info': colors.lime['700'],
   'success': colors.lime['700'],
   'warning': colors.lime['700'],
@@ -35,7 +35,6 @@ module.exports = {
   '--btn-success-content': colors.green[300],
   '--btn-warning-content': colors.orange[300],
   '--btn-error-content': colors.red[300],
-  '--rounded-btn': '0',
 
   '--theme-gradient': `repeating-linear-gradient(
     90deg,
@@ -65,6 +64,18 @@ module.exports = {
   '--code-color-tag': colors.lime['400'],
   '--code-color-property': colors.lime['200'],
   '--code-font-weight-property': 'bold',
+
+  '--rounded-box': '0',
+  '--rounded-btn': '0',
+  '--rounded-badge': '0',
+  '--animation-btn': '0.25s',
+  '--animation-input': '.4s',
+  '--padding-card': '2rem',
+  '--btn-text-case': 'uppercase',
+  '--navbar-padding': '.5rem',
+  '--border-btn': '1px',
+  '--focus-ring': '2px',
+  '--focus-ring-offset': '2px',
 
   '--pattern-bg': colors.lime['900'],
   '--pattern-fabric': colors.neutral['400'],
