@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 const bg = '#002808'
 
-export default {
+module.exports =  {
   'fontFamily': `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
 
   'base-100': bg,
@@ -35,7 +35,6 @@ export default {
   '--btn-success-content': colors.green[300],
   '--btn-warning-content': colors.orange[300],
   '--btn-error-content': colors.red[300],
-  '--rounded-btn': '0',
 
   '--theme-gradient': `repeating-linear-gradient(
     90deg,
