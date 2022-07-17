@@ -34,7 +34,7 @@ patronInfo: Патрони фінансово підтримують FreeSewing.
 patron: Патрон
 removeYourAccountInfo: Загальний регламент про захист даних ЄС (GDPR) забезпечує Ваше так зване <em>право на усунення даних</em> — право видалити Ваші персональні дані.
 removeYourAccount: Видалення облікового запису
-removeYourAccountWarning: This will remove your account, your drafts, your models, and all data we have stored for you. There is no way back from this.
+removeYourAccountWarning: Ця дія вилучить Ваш обліковий запис, Ваші чернетки, Ваші моделі, та всю збережену нами інформацію про Ваш обліковий запис. Жодних шляхів назад.
 resetPasswordInfo: Введіть Ваш новий пароль.
 resetPassword: Змінити пароль
 resetPasswordTitle: Введіть Ваш новий пароль
@@ -42,19 +42,19 @@ restrictProcessingOfYourDataInfo: Загальний регламент про �
 restrictProcessingOfYourData: Обмежити обробку ваших даних
 restrictProcessingWarning: Ваші дані не будуть видалені, проте Ви вийдете зі свого облікового запису та заморозите його. Також, Ви не можете відмінити цю дію самостійно – Вам доведеться зв'язатися з нами, якщо Ви захочете відновити доступ до свого облікового запису.
 reviewYourConsent: Переглянути вашу згоду
-socialInfo: If you provide your GitHub, Twitter, or Instagram username, your profile page will contain links to your accounts on these sites. This allows freesewing users to follow you there.<br>We are not contacting any of these sites on your behalf. This is just so that people can connect the dots and know that for example user @joost on freesewing is the same person as user @j__st on twitter.
+socialInfo: Якщо Ви надасте своє ім'я користувача GitHub, Twitter або Instagram, сторінка вашого профілю буде містити посилання на Ваші облікові записи на цих сайтах. Це дозволяє користувачам FreeSewing підписатися на Вас.<br>Ми не контактуємо з жодним з цих сайтів від Вашого імені. Це тільки для того, щоб люди могли розуміти, що, наприклад, користувач @joost на FreeSewing є тією самою людиною, що і користувач @j__st в Twitter.
 social: Соціальні мережі
 socialTitle: Дозволити людям слідкувати за Вами на інших платформах
-twitterInfo: If you provide your Twitter username, your profile page will contain a link to your Twitter account, so visitors can discover your tweets, and follow you.
-twitterTitle: Fill in your Twitter username
+twitterInfo: Якщо ви надасте своє ім'я користувача Twitter, сторінка вашого профілю буде містити посилання на Ваш обліковий запис у Twitter. Таким чином, відвідувачі можуть переглянути ваші твіти і слідкувати за Вами.
+twitterTitle: Заповніть своє ім'я користувача у Twitter
 twitter: Twitter
-unitsInfo: Freesewing supports both the metric system, and imperial measurements.
-unitsTitle: Please select the unit system you are most familiar with
-units: Units
-usernameInfo: Everyone starts with a randomly generated username. That isn't very personal, so you can change your username to something more you. Like your name, or <em>queenoffarts</em> or whatever.
-usernameTitle: Please choose your username
-username: Username
-accountIsInactive: Your account is inactive
-accountNeedsActivation: Before you can login, you need to activate your account. Please check your inbox for the registration email and click the link within it.
+unitsInfo: FreeSewing підтримує як метричну систему, так і імперську систему вимірювань.
+unitsTitle: Будь ласка, оберіть систему вимірювань, з якою Ви найбільш знайомі
+units: Одиниці вимірювання
+usernameInfo: Кожен користувач отримує випадково згенероване ім'я користувача. Це не дуже особисте, тому Ви можете змінити Ваше ім'я користувача на щось більш відповідне Вашій особистості. До прикладу, власне ім'я, або <em></em> або будь-що інше.
+usernameTitle: Будь ласка, oберіть ім'я користувача
+username: Ім’я користувача
+accountIsInactive: Ваш обліковий запис неактивний
+accountNeedsActivation: Перш ніж Ви зможете увійти, потрібно активувати свій обліковий запис. Будь ласка, перевірте Вашу поштову скриньку для реєстрації і натисніть на посилання у листі.
 reloadAccount: Перезавантажити обліковий запис
 reloadAccountDescription: Це перезавантажить дані Вашого облікового запису із backend. Буквально те саме, що й вийти та знову увійти.
