@@ -19,7 +19,6 @@ import rehypeSlug from 'rehype-slug'
 import rehypeJargon from '../../../packages/rehype-jargon/src/index.js'
 // Simple frontmatter extractor
 import frontmatter from 'front-matter'
-import CloseIcon from '../components/icons/close.js'
 /*
  * Summary: Loads markdown from disk and compiles it as MDX.
  *
