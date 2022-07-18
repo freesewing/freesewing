@@ -547,7 +547,7 @@ Pattern.prototype.pack = function (layoutType="layout") {
   if (!this.settings.layouts[layoutType]) {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
-      this.autoLayout.parts[bin.id] = { move: {} }
+      this.autoLayout.parts[bin.id] = this.autoLayout.parts[bin.id] || { move: {} }
       let part = this.parts[bin.id]
       if (bin.x !== 0 || bin.y !== 0) {
         part.attr('transform', `translate(${bin.x}, ${bin.y})`)
