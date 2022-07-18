@@ -14,15 +14,15 @@ draftYourPattern: Створіть Вашу викрійку
 testYourPattern: Test your pattern
 draftThing: 'Draft {thing}'
 testThing: 'Test {thing}'
-renderInBrowser: Click below to render your pattern in the browser.
+renderInBrowser: Натисніть нижче, щоб відобразити Вашу викрійку у браузері.
 weWillReRender: When you make changes, we will re-render for you.
-youCan: You can
-enterMeasurements: Enter measurements by hand
+youCan: Ви можете
+enterMeasurements: Ввести вимірювання вручну
 preloadMeasurements: Preload a set of measurements
-size: Size
+size: Розмір
 noRequiredMeasurements: This pattern has no required measurements
 howtoAddMeasurements: To require measurements, add them to the <b>measurements</b> section of the pattern's configuration file.
-seeDocsAt: Documentation on this topic is available at
+seeDocsAt: Документація по цій темі доступна за адресою
 clearDesignMode: Clear design mode
 designMode: Design mode
 exportMode: Export mode
