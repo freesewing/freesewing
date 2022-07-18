@@ -49,4 +49,4 @@ the jargon file should be `esm`.
 The value can hold HTML tags, just make sure it's valid HTML and don't go
 overboard.
 
-Note that the definition will be *italic* by default.
+Note that the definition will be _italic_ by default.
