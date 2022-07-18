@@ -1,7 +1,7 @@
 ---
 author: Автор
 githubRepo: Репозиторій GitHub
-packageManager: Package manager
+packageManager: Менеджер пакунків
 patternName: Назва викрійки
 patternType: Тип викрійки
 patternCreated: Ваш каркас викрійки створено у
@@ -11,9 +11,9 @@ startWebpack: "It will enter the 'example' folder, and start the development env
 devDocsAvailableAt: Документація для розробників доступна за адресою
 talkToUs: Для запитань, відгуків чи пропозицій, приєднуйтесь до нашого серверу в Discord
 draftYourPattern: Створіть Вашу викрійку
-testYourPattern: Test your pattern
-draftThing: 'Draft {thing}'
-testThing: 'Test {thing}'
+testYourPattern: Протестувати Вашу викрійку
+draftThing: 'Створити {thing}'
+testThing: 'Протестувати {thing}'
 renderInBrowser: Натисніть нижче, щоб відобразити Вашу викрійку у браузері.
 weWillReRender: When you make changes, we will re-render for you.
 youCan: Ви можете
@@ -23,11 +23,11 @@ size: Розмір
 noRequiredMeasurements: This pattern has no required measurements
 howtoAddMeasurements: To require measurements, add them to the <b>measurements</b> section of the pattern's configuration file.
 seeDocsAt: Документація по цій темі доступна за адресою
-clearDesignMode: Clear design mode
-designMode: Design mode
-exportMode: Export mode
-thingIsEnabled: '{thing} is enabled'
-thingIsDisabled: '{thing} is disabled'
-turnOn: Turn on
-turnOff: Turn off
-validNameWarning: "Please pick a different name as this name would cause problems.\nWe (re-)use the pattern name as the NPM package name.\nPackage names must be lowercase and cannot contain special characters.\nSo please name your pattern accordingly, like:"
+clearDesignMode: Очистити режим дизайну
+designMode: Режим дизайну
+exportMode: Режим експорту
+thingIsEnabled: '{thing} увімкнено'
+thingIsDisabled: '{thing} вимкнено'
+turnOn: Увімкнути
+turnOff: Вимкнути
+validNameWarning: "Будь ласка, оберіть іншу назву, бо дана назва може призвести до проблем.\nМи (повторно) використовуємо назву викрійки як NPM назву пакету.\nІмена пакунків повинні бути в нижньому регістрі та не можуть містити спеціальних символів.\nБудь ласка, назвіть викрійку згідно правил, наприклад:"
