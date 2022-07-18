@@ -300,7 +300,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /* Style for jargon terms */
 .jargon-term {
-  text-decoration: underline dotted hsl(var(--s));
+  text-decoration: underline 3px dotted hsl(var(--s));
   font-weight: 500;
 }
 summary.jargon-term {
@@ -313,16 +313,16 @@ summary.jargon-term {
   transform: translate(0, -0.5em);
   font-size: 75%;
   color: hsl(var(--s));
-  margin-left: 3px;
+  margin-left: -0.1rem;
 }
 .jargon-term:hover {
   position: relative;
-  text-decoration: underline solid hsl(var(--s));
+  text-decoration: underline 3px solid hsl(var(--s));
   cursor: pointer;
 }
 details.jargon-details[open] {
   border: 1px solid hsl(var(--s));
-  background: hsl(var(--s) / 0.1);
+  background: hsl(var(--s) / 0.05);
   padding: 1rem 2rem;
   margin: 1rem auto;
   border-radius: 4px;
@@ -331,6 +331,10 @@ details.jargon-details[open] summary {
   font-size: 200%;
   padding: 0.5rem 0 1rem;
   font-style: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 details.jargon-details[open] summary::after {
   display: none;
@@ -338,6 +342,15 @@ details.jargon-details[open] summary::after {
 details.jargon-details[open] .jargon-term,
 details.jargon-details[open] .jargon-term:hover {
   text-decoration: none;
+}
+details svg.jargon-close {
+  display: none;
+}
+details.jargon-details[open] svg.jargon-close {
+  display: inline;
+  border-radius: 50%;
+  padding: 0.1rem;
+  opacity: 0.6;
 }
 
 /* Fix styling for pan&zoom */

@@ -19,6 +19,7 @@ import rehypeSlug from 'rehype-slug'
 import rehypeJargon from '../../../packages/rehype-jargon/src/index.js'
 // Simple frontmatter extractor
 import frontmatter from 'front-matter'
+import CloseIcon from '../components/icons/close.js'
 /*
  * Summary: Loads markdown from disk and compiles it as MDX.
  *
@@ -31,7 +32,12 @@ import frontmatter from 'front-matter'
  */
 
 const jargonTransform = (term, html) => `<details class="inline jargon-details">
-  <summary class="jargon-term">${term}</summary>
+  <summary class="jargon-term">
+    ${term}
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 jargon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </summary>
   <div class="jargon-info">
   ${html}</div></details>`
 
