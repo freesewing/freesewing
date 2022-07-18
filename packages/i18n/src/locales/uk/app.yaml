@@ -39,7 +39,7 @@ chooseYourOptions: Обрати Ваші налаштування
 close: Закрити
 community: Спільнота
 configureLayout: Налаштування макета
-configureYourDraft: Configure your draft
+configureYourDraft: Налаштуйте свою чернетку
 contactUs: Контакти
 contentLocaleFallback: Тому замість цього ми показуємо Вам англійську версію.
 contents: Зміст
@@ -47,7 +47,7 @@ continue: Продовжити
 copiedToClipboard: Скопійовано в буфер обміну
 copy: Копіювати
 couldYouTranslateThis: Можете це перекласти?
-countModelsLackingForPattern: '{count} of your people lack the required measurements to draft {pattern}'
+countModelsLackingForPattern: '{count} Ваших людей не мають достатньо замірів для створення {pattern}'
 created: Створено
 custom: Налаштувати
 customSeamAllowance: Налаштувати припуски на шви
@@ -70,7 +70,7 @@ dolls: Dolls
 download: Завантажити
 draft: Чернетка
 draftPattern: 'Створити {pattern}'
-testPattern: 'Test {pattern}'
+testPattern: 'Протестувати {pattern}'
 draftPatternForModel: 'Створити {pattern} для {model}'
 drafts: Чернетки
 draftSettings: Draft settings
@@ -124,7 +124,7 @@ newThing: New {thing}
 newPatternForModel: 'New {pattern} for {model}'
 noChanges: Без змін
 no: 'Ні' #Keep in quotes or it will evaluate to false
-noPasswordPolicy: We don't enforce a password policy
+noPasswordPolicy: Ми не застосовуємо політику правил введення пароля
 noSeamAllowance: Без припусків на шви
 notAllOfThisContentIsAvailableInLanguage: Не весь цей контент доступний англійською мовою
 notesInfo: Це Ваші нотатки. Ви можете писати тут все, що забажаєте
@@ -141,8 +141,8 @@ ourRevenuePledge: Our revenue pledge
 patron-2: Powder monkey
 patron-4: First mate
 patron-8: Captain
-patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
-patron: Patron
+patronHelp: Якщо Ви маєте будь-які запитання чи бажаєте внести зміни до свого статусу патрона — зв'яжіться з нами, будь ласка
+patron: Патрон
 patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
 patternInstructions: Pattern instructions
