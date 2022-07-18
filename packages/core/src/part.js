@@ -364,4 +364,8 @@ Part.prototype.cutList = function(name) {
   return getPartCutlist(name || this.name, this.context.config, this.context.settings)
 }
 
+Part.prototype.isEmpty = function() {
+  return Object.keys(this.paths).length === 0 && Object.keys(this.snippets).length === 0
+}
+
 export default Part

@@ -237,7 +237,7 @@ Pattern.prototype.draftPart = function(partName) {
       ])
     }
   }
-  if (this.needs(basePart)) {
+  if (this.needs(partName)) {
     let method = 'draft' + capitalize(basePart)
     if (typeof this[method] !== 'function') {
       this.raise.error(`Method \`pattern.${method}\` is callable`)
@@ -255,7 +255,7 @@ Pattern.prototype.draftPart = function(partName) {
     }
     try {
       this.parts[partName].render =
-        this.parts[basePart].render === false ? false : this.wants(basePart)
+        this.parts[basePart].render === false ? false : this.wants(basePart) && !this.parts[basePart].isEmpty()
     } catch (err) {
       this.raise.error([`Unable to set \`render\` property on part \`${partName}\``, err])
     }
