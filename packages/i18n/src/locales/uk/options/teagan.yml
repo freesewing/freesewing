@@ -3,17 +3,17 @@ draftForHighBust:
   title: Draft for high bust
   description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
 sleeveEase:
-  title: Sleeve ease
-  description: Amount of ease of your sleeves
+  title: Свобода прилягання рукава
+  description: Змінити свободу прилягання рукавів
 sleeveLength:
-  title: Sleeve length
-  description: Controls the length of your sleeves
+  title: Довжина рукава
+  description: Змінити довжину рукавів
 necklineBend:
-  title: Neckline curvature
-  description: Controls the curvature of the neckline.
+  title: Вигин вирізу
+  description: Змінити лінію вигину вирізу.
 necklineDepth:
-  title: Neckline depth
-  description: Controls how deep the neck opening plunges down.
+  title: Глибина вирізу
+  description: Змінити параметр того, як низько знаходиться виріз.
 necklineWidth:
-  title: Neckline width
-  description: Controls the width of the neck opening.
+  title: Ширина вирізу
+  description: Змінити ширину вирізу.
