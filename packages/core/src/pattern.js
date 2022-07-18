@@ -528,7 +528,9 @@ Pattern.prototype.pack = function (layoutType="layout") {
     this.raise.warning(`One or more errors occured. Not packing pattern parts`)
     return this
   }
-  let bins = []
+  const thisLayout = this.settings.layouts[layoutType];
+  // add existing layout to bins so that new pieces can be added to the layout without resetting
+  let bins = thisLayout ? [{id: 'preLayout', width: thisLayout.width, height: thisLayout.height}] : [];
   for (let key in this.parts) {
     let part = this.parts[key]
     // Avoid multiple render calls to cause stacking of transforms
@@ -537,16 +539,20 @@ Pattern.prototype.pack = function (layoutType="layout") {
       part.stack()
       let width = part.bottomRight.x - part.topLeft.x
       let height = part.bottomRight.y - part.topLeft.y
-      if (!this.settings.layouts[layoutType]) bins.push({ id: key, width, height })
+      // if the piece hasn't been in the layout, add it to bins
+      if (!thisLayout || !thisLayout.parts[key]) bins.push({ id: key, width, height })
       else {
         if (this.width < width) this.width = width
         if (this.height < height) this.height = height
       }
     }
   }
-  if (!this.settings.layouts[layoutType]) {
+  // if there are any bins, even if there's an existing layout
+  if (bins.length) {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
+      if (bin.id === 'preLayout') continue;
+
       this.autoLayout.parts[bin.id] = this.autoLayout.parts[bin.id] || { move: {} }
       let part = this.parts[bin.id]
       if (bin.x !== 0 || bin.y !== 0) {
@@ -563,13 +569,17 @@ Pattern.prototype.pack = function (layoutType="layout") {
     }
     this.width = size.width
     this.height = size.height
-  } else if (typeof this.settings.layouts[layoutType] === 'object') {
-    this.width = this.settings.layouts[layoutType].width
-    this.height = this.settings.layouts[layoutType].height
-    for (let partId of Object.keys(this.settings.layouts[layoutType].parts)) {
+  }
+
+  // if there's an existing layout, even if we had to pack new pieces
+  if (typeof thisLayout === 'object') {
+    this.width = thisLayout.width
+    this.height = thisLayout.height
+
+    for (let partId of Object.keys(thisLayout.parts)) {
       // Some parts are added by late-stage plugins
       if (this.parts[partId]) {
-        let transforms = this.settings.layouts[layoutType].parts[partId]
+        let transforms = thisLayout.parts[partId]
         this.parts[partId].generateTransform(transforms);
       }
     }
