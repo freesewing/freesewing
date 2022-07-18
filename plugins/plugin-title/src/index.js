@@ -85,16 +85,23 @@ export default {
       }
       if (so.cutList) {
         let cutList = this.cutList((this.name || so.title || '').replace(/_cutPiece\d+/, ''))
-        let cutCount = 1;
-        let pairs = '';
+        let cutTitle = 'Cut '
         if (cutList) {
-          cutCount = cutList.isPair ? cutList.cut / 2 : cutList.cut
-          pairs = cutList.isPair ?
-            (cutCount > 1 ? ' Pairs' : ' Pair') :
-            ''
+          const pairCount = (field) => {
+            let count = cutList.isPair ? cutList[field] / 2 : cutList[field];
+            if (cutList.isPair) count += count > 1 ? ' Pairs' : ' Pair'
+            return count + ' ' + (field === 'cut' ? 'Main' : this.utils.capitalize(field))
+          }
+
+          cutTitle += pairCount('cut')
+          if (cutList.lining) cutTitle += ', ' + pairCount('lining')
+          if (cutList.interfacing) cutTitle += ', ' + pairCount('interfacing')
+        } else {
+          cutTitle += 1
         }
+
         this.points[`_${prefix}_titleCut`] = nextPoint(shift)
-            .attr('data-text', `Cut ${cutCount}${pairs}`)
+            .attr('data-text', cutTitle)
             .attr('data-text-class', 'fill-secondary')
             .attr('data-text-transform', transform(nextPoint(shift)))
 

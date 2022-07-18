@@ -10,6 +10,7 @@ import Hooks from './hooks'
 import Attributes from './attributes'
 import pkg from '../package.json'
 import {getPartCutlist} from './core-utils'
+import cloneDeep from 'lodash/clonedeep'
 
 export default function Pattern(config = { options: {} }) {
   // Default settings
@@ -209,79 +210,85 @@ Pattern.prototype.draft = function (draftOrder=this.config.draftOrder) {
 
   this.runHooks('preDraft')
   for (let partName of draftOrder) {
-    this.raise.debug(`Creating part \`${partName}\``)
-    this.parts[partName] = new this.Part(partName)
-    if (typeof this.config.inject[partName] === 'string') {
-      this.raise.debug(
-        `Injecting part \`${this.config.inject[partName]}\` into part \`${partName}\``
-      )
-      try {
-        this.parts[partName].inject(this.parts[this.config.inject[partName]])
-      } catch (err) {
-        this.raise.error([
-          `Could not inject part \`${this.config.inject[partName]}\` into part \`${partName}\``,
-          err,
-        ])
-      }
-    }
-    if (this.needs(partName)) {
-      let method = 'draft' + capitalize(partName)
-      if (typeof this[method] !== 'function') {
-        this.raise.error(`Method \`pattern.${method}\` is callable`)
-        throw new Error('Method "' + method + '" on pattern object is not callable')
-      }
-      try {
-        this.parts[partName] = this[method](this.parts[partName])
-      } catch (err) {
-        this.raise.error([`Unable to draft part \`${partName}\``, err])
-      }
-      if (typeof this.parts[partName] === 'undefined') {
-        this.raise.error(
-          `Result of \`pattern.${method}\` was \`undefined\`. Did you forget to return the \`Part\` object?`
-        )
-      }
-      try {
-        this.parts[partName].render =
-          this.parts[partName].render === false ? false : this.wants(partName)
-      } catch (err) {
-        this.raise.error([`Unable to set \`render\` property on part \`${partName}\``, err])
-      }
-    } else {
-      this.raise.debug(
-        `Part \`${partName}\` is not needed. Skipping draft and setting render to \`false\``
-      )
-      this.parts[partName].render = false
-    }
+    this.draftPart(partName)
   }
+
   this.runHooks('postDraft')
 
   return this
 }
 
+Pattern.prototype.draftPart = function(partName) {
+  let basePart = partName
+  if (Array.isArray(partName)) {
+    [partName, basePart] = partName
+  }
+
+  this.raise.debug(`Creating part \`${basePart}\``)
+  this.parts[partName] = new this.Part(partName)
+  if (typeof this.config.inject[basePart] === 'string') {
+    this.raise.debug(
+      `Injecting part \`${this.config.inject[basePart]}\` into part \`${partName}\``
+    )
+    try {
+      this.parts[partName].inject(this.parts[this.config.inject[basePart]])
+    } catch (err) {
+      this.raise.error([
+        `Could not inject part \`${this.config.inject[basePart]}\` into part \`${partName}\``,
+        err,
+      ])
+    }
+  }
+  if (this.needs(basePart)) {
+    let method = 'draft' + capitalize(basePart)
+    if (typeof this[method] !== 'function') {
+      this.raise.error(`Method \`pattern.${method}\` is callable`)
+      throw new Error('Method "' + method + '" on pattern object is not callable')
+    }
+    try {
+      this.parts[partName] = this[method](this.parts[partName])
+    } catch (err) {
+      this.raise.error([`Unable to draft part \`${partName}\``, err])
+    }
+    if (typeof this.parts[partName] === 'undefined') {
+      this.raise.error(
+        `Result of \`pattern.${method}\` was \`undefined\`. Did you forget to return the \`Part\` object?`
+      )
+    }
+    try {
+      this.parts[partName].render =
+        this.parts[basePart].render === false ? false : this.wants(basePart)
+    } catch (err) {
+      this.raise.error([`Unable to set \`render\` property on part \`${partName}\``, err])
+    }
+  } else {
+    this.raise.debug(
+      `Part \`${partName}\` is not needed. Skipping draft and setting render to \`false\``
+    )
+    this.parts[partName].render = false
+  }
+}
+
 Pattern.prototype.draftCutList = function() {
-  const cutOrder = []
   const cutList = this.cutList();
+  const cutOrder = [];
 
   for (let partName of this.config.draftOrder) {
-    cutOrder.push(partName)
-
+    cutOrder.push([partName, partName])
     let partCuts = cutList[partName]
     if (!partCuts) continue
 
-    const draftName = 'draft' + capitalize(partName)
     for (var i = 1; i < partCuts.cut; i++) {
-      const cutPartName = `_cutPiece${i}`
-      cutOrder.push(partName + cutPartName)
-      this[draftName + cutPartName] = this[draftName]
+      const cutPartName = `${partName}_cutPiece${i}`
+      cutOrder.push([cutPartName, partName])
 
       if (partCuts.isPair && i % 2 === 1) {
-        this.autoLayout.parts[partName + cutPartName] = {flipX: true}
+        this.autoLayout.parts[cutPartName] = {flipX: true}
       }
     }
-
   }
 
-  return this.draft(cutOrder)
+  this.draft(cutOrder)
 }
 
 /**
