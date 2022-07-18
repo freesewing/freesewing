@@ -1,16 +1,16 @@
 ---
-author: Author
-githubRepo: GitHub repository
+author: Автор
+githubRepo: Репозиторій GitHub
 packageManager: Package manager
-patternName: Pattern name
-patternType: Pattern type
-patternCreated: Your pattern skeleton has been created at
-runTheseCommands: To get started, run this command
+patternName: Назва викрійки
+patternType: Тип викрійки
+patternCreated: Ваш каркас викрійки створено у
+runTheseCommands: Щоб розпочати, запустіть цю команду
 startRollup: In one terminal, start the rollup bundler in watch mode
 startWebpack: "It will enter the 'example' folder, and start the development environment."
-devDocsAvailableAt: Developer documentation is available at
-talkToUs: For questions, feedback or suggestions, join our Discord server
-draftYourPattern: Draft your pattern
+devDocsAvailableAt: Документація для розробників доступна за адресою
+talkToUs: Для запитань, відгуків чи пропозицій, приєднуйтесь до нашого серверу в Discord
+draftYourPattern: Створіть Вашу викрійку
 testYourPattern: Test your pattern
 draftThing: 'Draft {thing}'
 testThing: 'Test {thing}'
