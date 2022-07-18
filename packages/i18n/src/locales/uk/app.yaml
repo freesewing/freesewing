@@ -144,25 +144,25 @@ patron-8: Captain
 patronHelp: Якщо Ви маєте будь-які запитання чи бажаєте внести зміни до свого статусу патрона — зв'яжіться з нами, будь ласка
 patron: Патрон
 patronPitch: Якщо Ви вважаєте, що ми робимо цінну роботу, та можете без труднощів відшкодувати кілька копійок щомісяця, будь ласка, підтримайте нашу працю
-patronsKeepUsAfloat: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
-patternInstructions: Pattern instructions
-patternOptions: Pattern options
-pattern: pattern
-sewingPatterns: Sewing patterns
-patterns: Patterns
-pendingConfirmation: Pending confirmation
+patronsKeepUsAfloat: Freesewing існує завдяки фінансовій підтримці наших патронів. Вони тримають цей корабель на плаву.
+patternInstructions: Інструкції до викрійок
+patternOptions: Налаштування викрійок
+pattern: викрійка
+sewingPatterns: Викрійка для шиття
+patterns: Викрійки
+pendingConfirmation: Підтвердження очікується
 perMonth: Per month
-pleaseEnterAValidEmailAddress: Please enter a valid E-mail address
-pleaseIncludeTheInformationBelow: Please include the information below
-preview: Preview
-privacyNotice: Privacy notice
+pleaseEnterAValidEmailAddress: Будь ласка, вкажіть чинну електронну адресу
+pleaseIncludeTheInformationBelow: Будь ласка, додайте відомості нижче
+preview: Попередній перегляд
+privacyNotice: Можливе порушення приватності
 proceedWithCaution: Proceed with caution
-profile: Profile
-relatedLinks: Related links
-remove: Remove
-removeThing: Remove {thing}
-reportThisOnGithub: Report this on GitHub
-requiredMeasurements: Required measurements
+profile: Обліковий запис
+relatedLinks: Споріднені посилання
+remove: Видалити
+removeThing: Видалити {thing}
+reportThisOnGithub: Повідомте про проблему на GitHub
+requiredMeasurements: Необхідні заміри
 resendActivationEmailMessage: "Fill in the E-mail address you signed up with, and we'll send you a new confirmation message."
 resendActivationEmail: Re-send activation E-mail
 resetPassword: Reset password
