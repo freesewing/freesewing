@@ -7,33 +7,30 @@ const CutLayoutSettings = props => {
   if (!props.gistReady) {return null}
   const { t } = useTranslation(['workbench'])
 
-  const { unsetGist, length, gist, updateGist} = props
+  const { unsetGist, length, gist, updateGist, draft} = props
 
   const fabricType = gist._state?.layout?.forCutting?.fabricType || 'cut'
+  const fabricTypes = []
+  Object.values(props.draft.cutList()).forEach((c) => {
+    Object.keys(c).forEach((f) => {
+      if (typeof c[f] === 'number' && fabricTypes.indexOf(f) === -1) fabricTypes.push(f)
+    })
+  })
 
   const setFabricType = (type) => updateGist(['_state', 'layout', 'forCutting', "fabricType"], type)
 
   return (
     <div className="my-2 flex flex-row gap-4 items-end justify-between">
       <FabricSizer {...props}/>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <input type="radio" name="radio-6" className="radio" onChange={() => setFabricType('cut')} checked={'cut' === fabricType} />
-          <span className="label-text">Main</span>
-        </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <input type="radio" name="radio-6" className="radio" onChange={() => setFabricType('lining')} checked={'lining' === fabricType} />
-          <span className="label-text">Lining</span>
-        </label>
-      </div>
-      <div className="form-control">
-        <label className="label cursor-pointer">
-          <input type="radio" name="radio-6" className="radio" onChange={() => setFabricType('interfacing')} checked={'interfacing' === fabricType} />
-          <span className="label-text">Interfacing</span>
-        </label>
-      </div>
+        { fabricTypes.length === 1 ? '' :
+          fabricTypes.map((f) => (<div className="form-control flex flex-row gap-1 items-center" key={f}>
+            <input type="radio" name="radio-6" className="radio" onChange={() => setFabricType(f)} checked={f === fabricType} />
+            <label className="label cursor-pointer">
+              <span className="label-text">{t(`fabricType:${f}`)}</span>
+            </label>
+          </div>))
+        }
+
       <div className="flex flex-row font-bold items-center justify-center px-0 text-xl grow"><SheetIcon/> <span>&nbsp;{length}</span> </div>
       <button
         key="reset"

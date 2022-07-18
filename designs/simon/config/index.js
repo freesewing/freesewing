@@ -108,9 +108,7 @@ const config = {
       cut: 1,
       interfacing: 1
     },
-    yoke: {
-      cut: (settings) => (settings.options.splitYoke ? 4 : 2),
-    },
+    yoke: (settings) => ({cut: settings.options.splitYoke ? 4 : 2}),
     sleeve: {
       cut: 2,
       isPair: true
