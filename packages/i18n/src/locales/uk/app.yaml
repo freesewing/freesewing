@@ -1,148 +1,148 @@
 ---
 100PercentCommunity: 100% community
-100PercentFree: 100% free
+100PercentFree: 100% безкоштовно
 100PercentOpenSource: 100% open source
-aboutFreesewing: About Freesewing
-accessoryPatterns: Accessory Patterns
-account: Account
-accountCreated: Account created
-actions: Actions
-allDocumentation: All documentation
-andThatIsAwesome: And that is awesome
-applyThisLayout: Apply this layout
-areYouSureYouWantToContinue: Are you sure you want to continue?
-askForHelp: Ask for help
-automatic: Automatic
+aboutFreesewing: Про Freesewing
+accessoryPatterns: Викрійки аксесуарів
+account: Обліковий запис
+accountCreated: Обліковий запис створено
+actions: Дії
+allDocumentation: Вся документація
+andThatIsAwesome: І це чудово
+applyThisLayout: Застосувати макет
+areYouSureYouWantToContinue: Ви впевнені, що хочете продовжити?
+askForHelp: Попросити про допомогу
+automatic: Автоматично
 averagePeopleDoNotExist: "Average people don't exist"
-awesome: Awesome
-back: Back
-becauseThatWouldBeReallyHelpful: Because that would be really helpful.
-becomeAPatron: Become a patron
+awesome: Чудово
+back: Назад
+becauseThatWouldBeReallyHelpful: Тому що це було б дуже корисно.
+becomeAPatron: Стати патроном
 blockPatterns: Block/Sloper Patterns
-blog: Blog
-browseBlogposts: Browse blogposts
-browsePatterns: Browse patterns
-browseShowcases: Browse showcases
-butThatCouldChange: But that could change
-cancel: Cancel
-changePerson: Change person
-changePattern: Change pattern
-chatOnDiscord: Chat on Discord
-checkInboxClickLinkInConfirmationEmail: Now check your inbox and click the link in the confirmation Email we've sent you.
-chest: Chest
+blog: Блог
+browseBlogposts: Перегляд блог-постів
+browsePatterns: Перегляд викрійок
+browseShowcases: Перегляд показів
+butThatCouldChange: Але це може змінитися
+cancel: Скасувати
+changePerson: Змінити людину
+changePattern: Змінити викрійку
+chatOnDiscord: Чат в Discord
+checkInboxClickLinkInConfirmationEmail: Тепер перевірте поштову скриньку та перейдіть за посиланням у листі, що ми надіслали вам.
+chest: Груди
 chestInfo: Breasts require extra measurements. If this person has no breasts, irrelevant measurements will be hidden when configuring them. This has no impact on how patterns are drafted.
-chooseASize: Choose a size
-chooseAPerson: Choose a person
-chooseADesign: Choose a design
-chooseAPattern: Choose a pattern
-chooseYourOptions: Choose your options
-close: Close
-community: Community
-configureLayout: Configure layout
-configureYourDraft: Configure your draft
-contactUs: Contact us
-contentLocaleFallback: That's why we're showing you the English version instead.
-contents: Contents
-continue: Continue
-copiedToClipboard: Copied to clipboard
-copy: Copy
-couldYouTranslateThis: Could you translate this?
-countModelsLackingForPattern: '{count} of your people lack the required measurements to draft {pattern}'
-created: Created
-custom: Custom
-customSeamAllowance: Custom seam allowance
-lightMode: Light mode
-data: Data
-darkMode: Dark mode
-default: Default
-demo: Demo
-designOptions: Design options
-designs: Designs
-docs: Documentation
-docsFooterMsg: Documentation is never finished. Hopefully we were able to answer all your questions, but if that's not the case, help is available.
-docsNotFoundMsg: We were unable to find this documentation, which typically means that it hasn't been written yet.
-docsNotFoundTitle: This documentation is missing
-documentationForDevelopers: Documentation for developers
-documentationForEditors: Documentation for editors
-documentationForTranslators: Documentation for translators
-documentationOverview: Documentation overview
+chooseASize: Обрати розмір
+chooseAPerson: Обрати людину
+chooseADesign: Обрати дизайн
+chooseAPattern: Обрати викрійку
+chooseYourOptions: Обрати Ваші налаштування
+close: Закрити
+community: Спільнота
+configureLayout: Налаштування макета
+configureYourDraft: Налаштуйте свою чернетку
+contactUs: Контакти
+contentLocaleFallback: Тому замість цього ми показуємо Вам англійську версію.
+contents: Зміст
+continue: Продовжити
+copiedToClipboard: Скопійовано в буфер обміну
+copy: Копіювати
+couldYouTranslateThis: Можете це перекласти?
+countModelsLackingForPattern: '{count} Ваших людей не мають достатньо замірів для створення {pattern}'
+created: Створено
+custom: Налаштувати
+customSeamAllowance: Налаштувати припуски на шви
+lightMode: Світлий режим
+data: Дані
+darkMode: Темний режим
+default: За замовчуванням
+demo: Демо
+designOptions: Налаштування дизайну
+designs: Дизайни
+docs: Документація
+docsFooterMsg: Документація ніколи не завершена. Сподіваємося, ми змогли відповісти на всі Ваші запитання, але якщо це не так - можна звернутися за допомогою.
+docsNotFoundMsg: Не вдалося знайти цю документацію. Це зазвичай значить, що вона ще не була написана.
+docsNotFoundTitle: Ця документація відсутня
+documentationForDevelopers: Документація для розробників
+documentationForEditors: Документація для коригувачів
+documentationForTranslators: Документація для перекладачів
+documentationOverview: Перегляд документації
 dolls: Dolls
-download: Download
-draft: Draft
-draftPattern: 'Draft {pattern}'
-testPattern: 'Test {pattern}'
-draftPatternForModel: 'Draft {pattern} for {model}'
-drafts: Drafts
+download: Завантажити
+draft: Чернетка
+draftPattern: 'Створити {pattern}'
+testPattern: 'Протестувати {pattern}'
+draftPatternForModel: 'Створити {pattern} для {model}'
+drafts: Чернетки
 draftSettings: Draft settings
-dragAndDropImageHere: Drag and drop an image here, or select one manually with the button below
-emailAddress: E-mail address
-emailWorksToo: "If you don't know your username, you can also use your E-mail address to login"
-enterEmailPickPassword: Enter your E-mail address, and pick a password
-export: Export
+dragAndDropImageHere: Перетягніть зображення сюди або виберіть власноруч, тицьнувши на кнопку знизу
+emailAddress: Електронна адреса
+emailWorksToo: "Якщо Ви не знаєте своє ім'я користувача, можна також використати свою електронну адресу для входу"
+enterEmailPickPassword: Введіть свою електронну адресу та оберіть пароль
+export: Експортувати
 exportTiledPDF: Export tiled PDF
-faq: Frequently asked questions
-fieldRemoved: '{field} removed'
-fieldSaved: '{field} saved'
-filterByPattern: Filter by pattern
-filterPatterns: Filter patterns
-forgotLoginInstructions: "If you don't remember your password, enter your username or E-mail address below and click the <b>Reset password</b> button"
+faq: Поширені запитання
+fieldRemoved: '{field} видалено'
+fieldSaved: '{field} збережено'
+filterByPattern: Фільтрувати за викрійками
+filterPatterns: Фільтрувати викрійки
+forgotLoginInstructions: "Якщо Ви не пам'ятаєте свій пароль, напишіть знизу своє ім'я користувача чи електронну адресу та тицьніть кнопку <b>Змінити пароль</b>"
 freesewing: Freesewing
-freesewingOnGithub: Freesewing on GitHub
-garmentPatterns: Garment Patterns
+freesewingOnGithub: Freesewing на GitHub
+garmentPatterns: Викрійки одягу
 giants: Giants
 github: GitHub
-goAheadWeWillWait: Go ahead, we'll wait.
-goodJob: Good job
-goodToSeeYouAgain: Good to see you again {user}
+goAheadWeWillWait: Продовжуйте, ми зачекаємо.
+goodJob: Молодець
+goodToSeeYouAgain: Раді бачити Вас знову, {user}
 handle: Handle
-helpUsTranslate: Help us translate
-home: Home
-howCanWeHelpYou: How can we help you?
-howToTakeMeasurements: How to take measurements
-i18n: Internationalization
-imperialUnits: Imperial units (inch)
-instagram: Instagram
+helpUsTranslate: Допоможіть нам з перекладом
+home: Головна
+howCanWeHelpYou: Як ми можемо Вам допомогти?
+howToTakeMeasurements: Як робити заміри
+i18n: Інтернаціоналізація
+imperialUnits: Імперські одиниці (дюйм)
+instagram: Інстаграм
 invalidTldMessage: '.{tld} is not a valid TLD'
-joinTheChatMsg: We have a community on Discord with friendly people you can chat to.
-justAMoment: Just a moment
-layout: Layout
-logIn: Log in
-loginWithProvider: 'Log in with {provider}'
-logOut: Log out
+joinTheChatMsg: Ми маємо спільноту в Discord, де Ви можете поспілкуватися з привітними людьми.
+justAMoment: Зачекайте хвилинку
+layout: Макет
+logIn: Увійти
+loginWithProvider: 'Увійти через {provider}'
+logOut: Вийти
 manual: Manual
 markdownHelp: MarkDown help
-measurements: Measurements
-menu: Menu
+measurements: Заміри
+menu: Меню
 metadata: Metadata
-metricUnits: Metric units (cm)
-person: Person
-people: People
-nameInfo: A name helps to keep things apart. You can pick any name you want.
-name: Name
-addThing: Add {thing}
+metricUnits: Метричні одиниці (см)
+person: Людина
+people: Люди
+nameInfo: Назва допомагає відрізняти речі. Ви можете обрати назву, яку душа забажає.
+name: Назва
+addThing: Додати {thing}
 newThing: New {thing}
 newPatternForModel: 'New {pattern} for {model}'
-noChanges: No changes
-no: 'No' #Keep in quotes or it will evaluate to false
-noPasswordPolicy: We don't enforce a password policy
-noSeamAllowance: No seam allowance
-notAllOfThisContentIsAvailableInLanguage: Not all of this content is available in English
-notesInfo: These are your notes. You can write anything you want here
-notes: Notes
-ohNo: Oh no!
-oneMoreThing: One more thing
-optionalMeasurements: Optional measurements
-options: Options
-orPayPerYear: Or pay per year
-other: Other
+noChanges: Без змін
+no: 'Ні' #Keep in quotes or it will evaluate to false
+noPasswordPolicy: Ми не застосовуємо політику правил введення пароля
+noSeamAllowance: Без припусків на шви
+notAllOfThisContentIsAvailableInLanguage: Не весь цей контент доступний англійською мовою
+notesInfo: Це Ваші нотатки. Ви можете писати тут все, що забажаєте
+notes: Нотатки
+ohNo: О ні!
+oneMoreThing: І ще одна річ
+optionalMeasurements: Додаткові заміри
+options: Налаштування
+orPayPerYear: Чи оплачувати щороку
+other: Інше
 otherThing: 'Other {thing}'
-ourPatrons: Our patrons
+ourPatrons: Наші патрони
 ourRevenuePledge: Our revenue pledge
 patron-2: Powder monkey
 patron-4: First mate
 patron-8: Captain
-patronHelp: If you have any questions, or would like to make changes to your Patron status, please contact us
-patron: Patron
+patronHelp: Якщо Ви маєте будь-які запитання чи бажаєте внести зміни до свого статусу патрона — зв'яжіться з нами, будь ласка
+patron: Патрон
 patronPitch: If you think what we do is worthwhile, and if you can spare a few coins each month without hardship, please support our work
 patronsKeepUsAfloat: Freesewing is made possible by the financial support of our Patrons. They keep this ship afloat.
 patternInstructions: Pattern instructions
