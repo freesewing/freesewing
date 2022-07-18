@@ -7,7 +7,7 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 const Draft = props => {
   if (!props.gistReady) {return null}
   const { patternProps, gist, updateGist, app, bgProps={}, fitLayoutPart = false, layoutType="printLayout" } = props
-  const layout = gist[layoutType] || false
+  const layout = gist.layouts?.[layoutType] || false
 
   const svgRef = useRef(null);
 
@@ -15,7 +15,7 @@ const Draft = props => {
     if (!layout) {
       // On the initial draft, core does the layout, so we set the layout to the auto-layout
       // After this, core won't handle layout anymore. It's up to the user from this point onwards
-      updateGist([layoutType], {
+      updateGist(['layouts', layoutType], {
         ...patternProps.autoLayout,
         width: patternProps.width,
         height: patternProps.height
@@ -23,7 +23,7 @@ const Draft = props => {
     } else {
       for (var part in patternProps.autoLayout.parts) {
         if (layout.parts[part] === undefined) {
-          updateGist([layoutType, 'parts', part], patternProps.autoLayout.parts[part], false)
+          updateGist(['layouts', layoutType, 'parts', part], patternProps.autoLayout.parts[part], false)
         }
       }
     }
@@ -58,7 +58,7 @@ const Draft = props => {
     newLayout.height = bottomRight.y - topLeft.y
     newLayout.bottomRight = bottomRight
     newLayout.topLeft = topLeft
-    updateGist([layoutType], newLayout, history)
+    updateGist(['layouts', layoutType], newLayout, history)
   }
 
 

@@ -1,4 +1,5 @@
 const mirrorOnFold = function(part) {
+	if (!part.render) return
 	const {paths, macro, snippets, utils, points} = part.shorthand()
 	if (!paths.cutonfold) return
 
@@ -50,18 +51,20 @@ export default {
 			Object.values(pattern.parts).forEach(part => mirrorOnFold(part))
 		},
 		postLayout: function(pattern) {
-			const cutList = pattern.cutList();
-			if (cutList) {
-				for (var partName in cutList) {
-					const partCuts = cutList[partName]
+			// const cutList = pattern.cutList();
+			// const fabricType = pattern.settings._state?.layout?.forCutting?.fabricType || 'cut'
 
-					if (partCuts.cut > 1 && partCuts.isPair) {
-						for (var i = 1; i < partCuts.cut; i+=2) {
-							pattern.autoLayout.parts[`${partName}_cutPiece${i}`].flipX = true
-						}
-					}
-				}
-			}
+			// if (cutList) {
+			// 	for (var partName in cutList) {
+			// 		const partCuts = cutList[partName]
+
+			// 		if (partCuts.cut > 1 && partCuts.isPair) {
+			// 			for (var i = 1; i < partCuts[fabricType]; i+=2) {
+			// 				pattern.autoLayout.parts[`${partName}_${fabricType}Piece${i}`].flipX = true
+			// 			}
+			// 		}
+			// 	}
+			// }
 		}
 	},
 }

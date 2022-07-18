@@ -2,7 +2,6 @@ import { useEffect, useState, useMemo,} from 'react'
 import {useGist} from 'shared/hooks/useGist'
 import Layout from 'shared/components/layouts/default'
 import Menu from 'shared/components/workbench/menu/index.js'
-import DraftError from 'shared/components/workbench/draft/error.js'
 import theme from '@freesewing/plugin-theme'
 import preloaders from 'shared/components/workbench/preload.js'
 import Modal from 'shared/components/modal'
@@ -115,13 +114,6 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   if (['draft', 'events', 'test', 'cuttingLayout', 'printingLayout'].indexOf(gist._state?.view) !== -1) {
     draft = new design(gist)
     if (gist.renderer === 'svg') draft.use(theme)
-    try {
-      if (gist._state.view !== 'test') draft.draft()
-    }
-    catch(error) {
-      console.log('Failed to draft design', error)
-      return <DraftError error={error} app={app} draft={draft} at={'draft'} />
-    }
   }
 
   // Props to pass down

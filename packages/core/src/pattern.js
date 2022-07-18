@@ -21,9 +21,7 @@ export default function Pattern(config = { options: {} }) {
     units: 'metric',
     margin: 2,
     scale: 1,
-    layout: true,
-    cutLayout: true,
-    printLayout: true,
+    layouts: {},
     debug: true,
     options: {},
     absoluteOptions: {},
@@ -269,18 +267,23 @@ Pattern.prototype.draftPart = function(partName) {
   }
 }
 
-Pattern.prototype.draftCutList = function() {
+Pattern.prototype.draftCutList = function(cutType="cut") {
   const cutList = this.cutList();
   const cutOrder = [];
+  const newParts = []
 
   for (let partName of this.config.draftOrder) {
-    cutOrder.push([partName, partName])
+    if (!this.wants(partName)) continue
     let partCuts = cutList[partName]
+    if (partCuts && !partCuts[cutType]) continue
+
+    cutOrder.push(partName)
     if (!partCuts) continue
 
-    for (var i = 1; i < partCuts.cut; i++) {
-      const cutPartName = `${partName}_cutPiece${i}`
-      cutOrder.push([cutPartName, partName])
+    for (var i = 1; i < partCuts[cutType]; i++) {
+      const cutPartName = `${partName}_${cutType}Piece${i}`
+      cutOrder.push(cutPartName)
+      newParts.push([cutPartName, partName])
 
       if (partCuts.isPair && i % 2 === 1) {
         this.autoLayout.parts[cutPartName] = {flipX: true}
@@ -288,7 +291,8 @@ Pattern.prototype.draftCutList = function() {
     }
   }
 
-  this.draft(cutOrder)
+  this.settings.only = cutOrder
+  this.draft(this.config.draftOrder.concat(newParts))
 }
 
 /**
@@ -533,14 +537,14 @@ Pattern.prototype.pack = function (layoutType="layout") {
       part.stack()
       let width = part.bottomRight.x - part.topLeft.x
       let height = part.bottomRight.y - part.topLeft.y
-      if (this.settings[layoutType] === true) bins.push({ id: key, width, height })
+      if (!this.settings.layouts[layoutType]) bins.push({ id: key, width, height })
       else {
         if (this.width < width) this.width = width
         if (this.height < height) this.height = height
       }
     }
   }
-  if (this.settings[layoutType] === true) {
+  if (!this.settings.layouts[layoutType]) {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
       this.autoLayout.parts[bin.id] = { move: {} }
@@ -559,13 +563,13 @@ Pattern.prototype.pack = function (layoutType="layout") {
     }
     this.width = size.width
     this.height = size.height
-  } else if (typeof this.settings[layoutType] === 'object') {
-    this.width = this.settings[layoutType].width
-    this.height = this.settings[layoutType].height
-    for (let partId of Object.keys(this.settings[layoutType].parts)) {
+  } else if (typeof this.settings.layouts[layoutType] === 'object') {
+    this.width = this.settings.layouts[layoutType].width
+    this.height = this.settings.layouts[layoutType].height
+    for (let partId of Object.keys(this.settings.layouts[layoutType].parts)) {
       // Some parts are added by late-stage plugins
       if (this.parts[partId]) {
-        let transforms = this.settings[layoutType].parts[partId]
+        let transforms = this.settings.layouts[layoutType].parts[partId]
         this.parts[partId].generateTransform(transforms);
       }
     }
@@ -677,6 +681,7 @@ Pattern.prototype.needs = function (partName) {
   } else if (Array.isArray(this.settings.only)) {
     for (let part of this.settings.only) {
       if (part === partName) return true
+      if (!this.config.resolvedDependencies[part]) continue
       for (let dependency of this.config.resolvedDependencies[part]) {
         if (dependency === partName) return true
       }
