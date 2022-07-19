@@ -1,7 +1,7 @@
 import yaml from 'js-yaml'
 import path from 'path'
 import rdir from 'recursive-readdir'
-import { readFile, writeFile } from 'fs/promises'
+import { readFile, writeFile, mkdir } from 'fs/promises'
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
 
@@ -166,10 +166,17 @@ ${locales
  * Writes out files
  */
 const writeFiles = async allNamespaces => {
-  const promises = []
+  const dirPromises = []
+  const filePromises = []
+
   for (const [locale, namespaces] of Object.entries(allNamespaces)) {
+    // make sure there's a folder for the locale
+    dirPromises.push(
+      mkdir(path.resolve(__dirname, 'next', locale), {recursive: true})
+    )
+
     for (const [namespace, data] of Object.entries(namespaces)) {
-      promises.push(
+      filePromises.push(
         writeFile(
           path.resolve(__dirname, 'next', locale, namespace+'.mjs', ),
           namespaceFile(namespace, data)
@@ -177,7 +184,7 @@ const writeFiles = async allNamespaces => {
       )
     }
     // Locale index files
-    promises.push(
+    filePromises.push(
       writeFile(
         path.resolve(__dirname, 'next', locale, 'index.mjs', ),
         localeFile(Object.keys(namespaces))
@@ -185,13 +192,16 @@ const writeFiles = async allNamespaces => {
     )
   }
   // Locale index files
-  promises.push(
+  filePromises.push(
     writeFile(
       path.resolve(__dirname, 'next.mjs', ),
       indexFile(Object.keys(allNamespaces), allNamespaces)
     )
   )
-  await Promise.all(promises)
+  // make the folders first
+  await Promise.all(dirPromises)
+  // write the files
+  await Promise.all(filePromises)
 
   return
 }
@@ -207,11 +217,5 @@ const build = async () => {
 }
 
 build()
-
-
-
-
-
-
 
 //export default strings
