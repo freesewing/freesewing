@@ -85,25 +85,19 @@ export default {
       }
       if (so.cutList) {
         let cutList = this.cutList((this.name || so.title || '').replace(/_cutPiece\d+/, ''))
-        let cutTitle = 'Cut '
+        const cutTitle = []
         if (cutList) {
-          const pairCount = (field) => {
-            let count = cutList.isPair ? cutList[field] / 2 : cutList[field];
-            if (cutList.isPair) count += count > 1 ? ' Pairs' : ' Pair'
-            return count + ' ' + (field === 'cut' ? 'Main' : this.utils.capitalize(field))
+          this.points[`_${prefix}_titleCut`] = nextPoint(shift)
+              .attr('data-text-class', 'fill-secondary')
+              .attr('data-text-transform', transform(nextPoint(shift)))
+              .attr('data-text', 'plugin:cut')
+
+          for (var key in cutList) {
+            if (typeof cutList[key] !== 'number') continue
+
+              this.points[`_${prefix}_titleCut`].attr('data-text', `$t(plugin:${cutList.isPair ? 'pair' : 'cutCount'}, {"count": ${cutList['cut']/(cutList.isPair ? 2 : 1)}, "fabricType": "workbench:fabricType:${'cut'}"})`)
           }
-
-          cutTitle += pairCount('cut')
-          if (cutList.lining) cutTitle += ', ' + pairCount('lining')
-          if (cutList.interfacing) cutTitle += ', ' + pairCount('interfacing')
-        } else {
-          cutTitle += 1
         }
-
-        this.points[`_${prefix}_titleCut`] = nextPoint(shift)
-            .attr('data-text', cutTitle)
-            .attr('data-text-class', 'fill-secondary')
-            .attr('data-text-transform', transform(nextPoint(shift)))
 
         shift += 8
       }

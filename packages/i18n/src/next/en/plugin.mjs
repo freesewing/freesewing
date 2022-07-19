@@ -52,7 +52,14 @@ const plugin = {
   "theWhiteInsideOfThisBoxShouldMeasure": "The inside of this box should measure",
   "supportFreesewingBecomeAPatron": "Support FreeSewing, become a Patron",
   "cut": "Cut",
-  "onFold": "On the fold"
+  "onFold": "On the fold",
+  "cutCount_zero": "",
+  "cutCount_one": " {count} $t({fabricType})",
+  "cutCount_other": " {count} $t({fabricType})",
+  "pair_zero": "",
+  "pair_one": " {count} Pair $t({fabricType})",
+  "pair_other": " {count} Pairs $t({fabricType})",
+  "cutList": "Cut{cut}"
 }
 
 export default plugin

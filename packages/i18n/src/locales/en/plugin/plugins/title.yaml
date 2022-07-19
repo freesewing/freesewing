@@ -1,2 +1,9 @@
 cut: Cut
 onFold: On the fold
+cutCount_zero: ''
+cutCount_one: ' {count} $t({fabricType})'
+cutCount_other: ' {count} $t({fabricType})'
+pair_zero: ''
+pair_one: ' {count} Pair $t({fabricType})'
+pair_other: ' {count} Pairs $t({fabricType})'
+cutList: 'Cut{cut}'
