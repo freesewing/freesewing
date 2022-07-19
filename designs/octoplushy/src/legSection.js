@@ -1,5 +1,5 @@
-import mirror from '@freesewing/plugin-mirror'
-import { Store } from '@material-ui/icons'
+// import mirror from '@freesewing/plugin-mirror'
+// import { Store } from '@material-ui/icons'
 
 export default function (partNumber, part) {
   console.log({ part: part })
@@ -64,7 +64,7 @@ export default function (partNumber, part) {
   }
 
   if (options.type == 'squid') {
-    points.skirtLeft2 = points.skirtLeft2.shift( 90, (points.skirtLeft2.y - points.legMiddle.y)/2)
+    points.skirtLeft2 = points.skirtLeft2.shift(90, (points.skirtLeft2.y - points.legMiddle.y) / 2)
   }
   points.legMiddleCp1 = points.legMiddle.shiftFractionTowards(points.skirtLeft2, c)
   points.skirtLeft3 = new Point((-1 * legAdjustedWidth) / 2, points.skirtLeft2.y)

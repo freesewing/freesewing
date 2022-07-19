@@ -425,19 +425,49 @@ export default function (partNumber, part) {
 
   // Complete?
   if (complete) {
-    points.logo = points.sectionTop.shiftFractionTowards(points.sectionBottom, 0.4)
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
+    points.logo = points.sectionTop.shiftFractionTowards(
+      points.sectionBottom,
+      options.type == 'octoplushy' ? 0.3 : 0.5
+    )
+    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.4)
 
     points.titleAnchor = points.sectionBottom
-      .shiftFractionTowards(points.sectionTop, 0.5)
+      .shiftFractionTowards(points.sectionTop, options.type == 'octoplushy' ? 0.3 : 0.4)
       .shift(180, sectionWidth * 0.2)
     macro('title', {
       at: points.titleAnchor,
       nr: 1 + partNumber * 3,
       title: 'Head' + (partNumber == 0 ? '' : ' (a)'),
       rotation: 90,
-      scale: 0.5,
+      scale: options.type == 'octoplushy' ? 0.35 : 0.5,
     })
+
+    if (options.type == 'octoplushy') {
+      points.eyeLeft = paths.sectionLeft.shiftFractionAlong(0.465)
+      points.eyeRight = points.eyeLeft.flipX(points.sectionTop)
+      snippets.eyeLeft = new Snippet('button', points.eyeLeft)
+        .attr('data-text', 'eye')
+        .attr('data-text-class', 'center')
+      snippets.eyeRight = new Snippet('button', points.eyeRight)
+        .attr('data-text', 'eye')
+        .attr('data-text-class', 'center')
+
+      points.mouthMiddle = points.sectionBottom.shiftFractionTowards(points.sectionTop, 0.45)
+      points.mouthLeft = points.mouthMiddle.shift(180, sectionWidth / 4)
+      points.mouthRight = points.mouthMiddle.shift(0, sectionWidth / 4)
+      points.mouthBottom = points.mouthMiddle.shift(270, sectionWidth / 4)
+      points.mouthLeftCp1 = points.mouthLeft.shift(270, (sectionWidth / 4) * c)
+      points.mouthRightCp2 = points.mouthRight.shift(270, (sectionWidth / 4) * c)
+      points.mouthBottomCp2 = points.mouthBottom.shift(180, (sectionWidth / 4) * c)
+      points.mouthBottomCp1 = points.mouthBottom.shift(0, (sectionWidth / 4) * c)
+      paths.mouth = new Path()
+        .move(points.mouthLeft)
+        .curve(points.mouthLeftCp1, points.mouthBottomCp2, points.mouthBottom)
+        .curve(points.mouthBottomCp1, points.mouthRightCp2, points.mouthRight)
+        .attr('data-text', 'mouth')
+        .attr('data-text-class', 'text-xs center')
+        .attr('class', 'stroke-lg')
+    }
 
     if (options.type == 'squid' && partNumber == 1) {
       paths.fold = new Path()
