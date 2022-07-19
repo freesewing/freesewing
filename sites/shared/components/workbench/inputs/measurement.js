@@ -11,11 +11,11 @@ import { measurementAsMm } from 'shared/utils'
  * m holds the measurement name. It's just so long to type
  * measurement and I always have some typo in it because dyslexia.
  */
-const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, showDoc=true, gistMeasurement, size="lg", validate=true }) => {
+const MeasurementInput = ({ m, gist, app, updateMeasurements, focus, showDoc=true, gistMeasurement, size="lg", validate=true, title=null }) => {
   const { t } = useTranslation(['app', 'measurements'])
 
 const prefix = (app?.site === 'org') ? '' : 'https://freesewing.org'
-  const title = t(`measurements:${m}`)
+  title = title || t(`measurements:${m}`)
 
   const isDegree = isDegreeMeasurement(m);
   const factor = useMemo(() => (isDegree ? 1 : (gist.units == 'imperial' ? 25.4 : 10)), [gist.units])

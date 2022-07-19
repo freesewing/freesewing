@@ -1,6 +1,7 @@
 import {FlipIconInner} from 'shared/components/icons/flip'
 import {RotateIconInner} from 'shared/components/icons/rotate'
 import {ClearIconInner} from 'shared/components/icons/clear'
+import { useTranslation } from 'next-i18next'
 
 const rectSize = 24
 
@@ -12,7 +13,7 @@ const Button = ({onClick, transform, Icon, children}) => <g className="svg-layou
 
 /** buttons for manipulating the part */
 const Buttons = ({ transform, flip, rotate, setRotate, resetPart, rotate90}) => {
-
+  const {t} = useTranslation('workbench')
   return (
     <g transform={transform} >
       {rotate
@@ -23,33 +24,33 @@ const Buttons = ({ transform, flip, rotate, setRotate, resetPart, rotate90}) => 
         onClick={resetPart}
         transform={`translate(${rectSize/-2}, ${rectSize/-2})`}
         Icon={ClearIconInner}>
-        Reset Part
+        {t('toolbar.resetPart')}
       </Button>
       <Button
         onClick={() => rotate90(-1)}
         transform={`translate(${rectSize* -2.7}, ${rectSize/-2})`}
         Icon={RotateIconInner}
         >
-        Rotate Counter-clockwise
+        {t('toolbar.rotateCCW')}
       </Button>
       <Button
         onClick={() => flip('y')}
         transform={`translate(${rectSize* 0.6}, ${rectSize/-2})`}
         Icon={() => <FlipIconInner rotate="270" />}
         >
-        Flip Vertically
+        {t('toolbar.flipY')}
       </Button>
       <Button
         onClick={() => flip('x')}
         transform={`translate(${rectSize* -1.6}, ${rectSize/-2})`}
         Icon={FlipIconInner}>
-        Flip Horizontally
+        {t('toolbar.flipX')}
       </Button>
       <Button
         onClick={() => rotate90()}
         transform={`translate(${rectSize* 1.7}, ${rectSize/-2})`}
         Icon={() => <RotateIconInner flipX={true}/>}>
-        Rotate Clockwise
+        {t('toolbar.rotateCW')}
       </Button>
     </g>
   )

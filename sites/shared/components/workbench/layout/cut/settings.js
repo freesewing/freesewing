@@ -26,7 +26,7 @@ const CutLayoutSettings = props => {
           fabricTypes.map((f) => (<div className="form-control flex flex-row gap-1 items-center" key={f}>
             <input type="radio" name="radio-6" className="radio" onChange={() => setFabricType(f)} checked={f === fabricType} />
             <label className="label cursor-pointer">
-              <span className="label-text">{t(`fabricType:${f}`)}</span>
+              <span className="label-text">{t(`fabricType.${f}`)}</span>
             </label>
           </div>))
         }
