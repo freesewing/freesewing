@@ -4100,6 +4100,11 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
+"@types/parse5@^6.0.0":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@types/parse5/-/parse5-6.0.3.tgz#705bb349e789efa06f43f128cef51240753424cb"
+  integrity sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==
+
 "@types/prop-types@*":
   version "15.7.4"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
@@ -8677,6 +8682,11 @@ entities@^2.0.0, entities@^2.2.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
+entities@^4.3.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-4.3.1.tgz#c34062a94c865c322f9d67b4384e4169bcede6a4"
+  integrity sha512-o4q/dYJlmyjP2zfnaWDUC6A3BQFmVTX+tZPezK7k0GLSU9QYCauscf5Y+qcEPzKL+EixVouYDgLQK5H9GrLpkg==
+
 entities@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.1.0.tgz#992d3129cf7df6870b96c57858c249a120f8b8b5"
@@ -11124,6 +11134,30 @@ hast-util-embedded@^2.0.0:
   dependencies:
     hast-util-is-element "^2.0.0"
 
+hast-util-from-html@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/hast-util-from-html/-/hast-util-from-html-1.0.0.tgz#f04fba30c348328ccc1ef2660261e3932441ec3a"
+  integrity sha512-tXYPhk28aMtDjGb4xNDaxtGKqlyZAEPGjN12jPCjczWppdLSrG/0r604a3FMvrd+9nV1HclILQiVqMnuPxN0WQ==
+  dependencies:
+    "@types/hast" "^2.0.0"
+    hast-util-from-parse5 "^7.0.0"
+    parse5 "^7.0.0"
+    vfile "^5.0.0"
+
+hast-util-from-parse5@^7.0.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/hast-util-from-parse5/-/hast-util-from-parse5-7.1.0.tgz#c129dd3a24dd8a867ab8a029ca47e27aa54864b7"
+  integrity sha512-m8yhANIAccpU4K6+121KpPP55sSl9/samzQSQGpb0mTExcNh2WlvjtMwSWFhg6uqD4Rr6Nfa8N6TMypQM51rzQ==
+  dependencies:
+    "@types/hast" "^2.0.0"
+    "@types/parse5" "^6.0.0"
+    "@types/unist" "^2.0.0"
+    hastscript "^7.0.0"
+    property-information "^6.0.0"
+    vfile "^5.0.0"
+    vfile-location "^4.0.0"
+    web-namespaces "^2.0.0"
+
 hast-util-has-property@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/hast-util-has-property/-/hast-util-has-property-2.0.0.tgz#c15cd6180f3e535540739fcc9787bcffb5708cae"
@@ -11157,6 +11191,13 @@ hast-util-is-element@^2.0.0:
   dependencies:
     "@types/hast" "^2.0.0"
     "@types/unist" "^2.0.0"
+
+hast-util-parse-selector@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/hast-util-parse-selector/-/hast-util-parse-selector-3.1.0.tgz#a519e27e8b61bd5a98fad494ed06131ce68d9c3f"
+  integrity sha512-AyjlI2pTAZEOeu7GeBPZhROx0RHBnydkQIXlhnFzDi0qfXTmGUWoCYZtomHbrdrheV4VFUlPcfJ6LMF5T6sQzg==
+  dependencies:
+    "@types/hast" "^2.0.0"
 
 hast-util-phrasing@^2.0.0:
   version "2.0.1"
@@ -11274,6 +11315,17 @@ hast-util-whitespace@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/hast-util-whitespace/-/hast-util-whitespace-2.0.0.tgz#4fc1086467cc1ef5ba20673cb6b03cec3a970f1c"
   integrity sha512-Pkw+xBHuV6xFeJprJe2BBEoDV+AvQySaz3pPDRUs5PNZEMQjpXJJueqrpcHIXxnWTcAGi/UOCgVShlkY6kLoqg==
+
+hastscript@^7.0.0:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/hastscript/-/hastscript-7.0.2.tgz#d811fc040817d91923448a28156463b2e40d590a"
+  integrity sha512-uA8ooUY4ipaBvKcMuPehTAB/YfFLSSzCwFSwT6ltJbocFUKH/GDHLN+tflq7lSRf9H86uOuxOFkh1KgIy3Gg2g==
+  dependencies:
+    "@types/hast" "^2.0.0"
+    comma-separated-tokens "^2.0.0"
+    hast-util-parse-selector "^3.0.0"
+    property-information "^6.0.0"
+    space-separated-tokens "^2.0.0"
 
 he@1.2.0, he@1.2.x:
   version "1.2.0"
@@ -17649,6 +17701,13 @@ parse5@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
   integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
+
+parse5@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-7.0.0.tgz#51f74a5257f5fcc536389e8c2d0b3802e1bfa91a"
+  integrity sha512-y/t8IXSPWTuRZqXc0ajH/UwDj4mnqLEbSttNbThcFhGrZuOyoyvNBO85PBp2jQa55wY9d07PBNjsK8ZP3K5U6g==
+  dependencies:
+    entities "^4.3.0"
 
 parseurl@^1.3.2, parseurl@~1.3.2, parseurl@~1.3.3:
   version "1.3.3"
@@ -24090,6 +24149,11 @@ wcwidth@^1.0.0, wcwidth@^1.0.1:
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
   dependencies:
     defaults "^1.0.3"
+
+web-namespaces@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-2.0.1.tgz#1010ff7c650eccb2592cebeeaf9a1b253fd40692"
+  integrity sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==
 
 web-streams-polyfill@^3.0.3:
   version "3.2.0"

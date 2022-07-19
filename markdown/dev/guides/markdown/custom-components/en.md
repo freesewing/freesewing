@@ -11,6 +11,20 @@ typically require a lot more complexity.
 
 Below is a list of custom components you can use in our Markdown content:
 
+## Comment
+
+<Comment by="joost">**Do** try this at home</Comment>
+
+Use a **Comment** where you want to illustrate something is a personal opinion
+or tip/advice rather than the sort of general neutral voice used throughout
+our documentation.
+
+The **Comment** component requires a `by` attribute that lists the author of the comment.
+
+```markdown
+<Comment by="joost">**Do** try this at home</Comment>
+```
+
 ## Dot
 
 <Dot>
@@ -103,20 +117,6 @@ a full list of all available parts/examples.
 <Example part="plugin_buttons">
   Example of the snippets provided by [the buttons plugin](/reference/plugings/buttons)
 </Example>
-```
-
-## Comment
-
-<Comment by="joost">**Do** try this at home</Comment>
-
-Use a **Comment** where you want to illustrate something is a personal opinion
-or tip/advice rather than the sort of general neutral voice used throughout
-our documentation.
-
-The **Comment** component requires a `by` attribute that lists the author of the comment.
-
-```markdown
-<Comment by="joost">**Do** try this at home</Comment>
 ```
 
 ## Fixme
