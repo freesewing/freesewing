@@ -11,15 +11,15 @@ fit: Fit
 pockets: Pockets
 preferences: Preferences
 sleevecap: Sleevecap
-sleeves: Sleeves
-style: Style
-backPockets: Back pockets
-frontPockets: Front pockets
-waistband: Waistband
+sleeves: Рукава
+style: Стиль
+backPockets: Задні кишені
+frontPockets: Передні кишені
+waistband: Резинка на талії
 fly: Fly
 bellaDarts: Bella darts
 bellaArmhole: Bella armhole
 bellaAdvanced: Bella advanced
 clavi: Clavi
-type: Type
-size: Size
+type: Тип
+size: Розмір

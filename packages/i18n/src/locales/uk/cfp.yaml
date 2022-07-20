@@ -1,33 +1,33 @@
 ---
-author: Author
-githubRepo: GitHub repository
-packageManager: Package manager
-patternName: Pattern name
-patternType: Pattern type
-patternCreated: Your pattern skeleton has been created at
-runTheseCommands: To get started, run this command
+author: Автор
+githubRepo: Репозиторій GitHub
+packageManager: Менеджер пакунків
+patternName: Назва викрійки
+patternType: Тип викрійки
+patternCreated: Ваш каркас викрійки створено у
+runTheseCommands: Щоб розпочати, запустіть цю команду
 startRollup: In one terminal, start the rollup bundler in watch mode
 startWebpack: "It will enter the 'example' folder, and start the development environment."
-devDocsAvailableAt: Developer documentation is available at
-talkToUs: For questions, feedback or suggestions, join our Discord server
-draftYourPattern: Draft your pattern
-testYourPattern: Test your pattern
-draftThing: 'Draft {thing}'
-testThing: 'Test {thing}'
-renderInBrowser: Click below to render your pattern in the browser.
+devDocsAvailableAt: Документація для розробників доступна за адресою
+talkToUs: Для запитань, відгуків чи пропозицій, приєднуйтесь до нашого серверу в Discord
+draftYourPattern: Створіть Вашу викрійку
+testYourPattern: Протестувати Вашу викрійку
+draftThing: 'Створити {thing}'
+testThing: 'Протестувати {thing}'
+renderInBrowser: Натисніть нижче, щоб відобразити Вашу викрійку у браузері.
 weWillReRender: When you make changes, we will re-render for you.
-youCan: You can
-enterMeasurements: Enter measurements by hand
+youCan: Ви можете
+enterMeasurements: Ввести вимірювання вручну
 preloadMeasurements: Preload a set of measurements
-size: Size
+size: Розмір
 noRequiredMeasurements: This pattern has no required measurements
 howtoAddMeasurements: To require measurements, add them to the <b>measurements</b> section of the pattern's configuration file.
-seeDocsAt: Documentation on this topic is available at
-clearDesignMode: Clear design mode
-designMode: Design mode
-exportMode: Export mode
-thingIsEnabled: '{thing} is enabled'
-thingIsDisabled: '{thing} is disabled'
-turnOn: Turn on
-turnOff: Turn off
-validNameWarning: "Please pick a different name as this name would cause problems.\nWe (re-)use the pattern name as the NPM package name.\nPackage names must be lowercase and cannot contain special characters.\nSo please name your pattern accordingly, like:"
+seeDocsAt: Документація по цій темі доступна за адресою
+clearDesignMode: Очистити режим дизайну
+designMode: Режим дизайну
+exportMode: Режим експорту
+thingIsEnabled: '{thing} увімкнено'
+thingIsDisabled: '{thing} вимкнено'
+turnOn: Увімкнути
+turnOff: Вимкнути
+validNameWarning: "Будь ласка, оберіть іншу назву, бо дана назва може призвести до проблем.\nМи (повторно) використовуємо назву викрійки як NPM назву пакету.\nІмена пакунків повинні бути в нижньому регістрі та не можуть містити спеціальних символів.\nБудь ласка, назвіть викрійку згідно правил, наприклад:"
