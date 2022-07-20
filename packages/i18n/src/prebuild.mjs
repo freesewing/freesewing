@@ -166,14 +166,11 @@ ${locales
  * Writes out files
  */
 const writeFiles = async allNamespaces => {
-  const dirPromises = []
   const filePromises = []
 
   for (const [locale, namespaces] of Object.entries(allNamespaces)) {
     // make sure there's a folder for the locale
-    dirPromises.push(
-      mkdir(path.resolve(__dirname, 'next', locale), {recursive: true})
-    )
+    await mkdir(path.resolve(__dirname, 'next', locale), {recursive: true})
 
     for (const [namespace, data] of Object.entries(namespaces)) {
       filePromises.push(
@@ -198,12 +195,9 @@ const writeFiles = async allNamespaces => {
       indexFile(Object.keys(allNamespaces), allNamespaces)
     )
   )
-  // make the folders first
-  await Promise.all(dirPromises)
-  // write the files
-  await Promise.all(filePromises)
 
-  return
+  // write the files
+  await Promise.all(filePromises).catch((e) => console.log('file', e))
 }
 
 /*
