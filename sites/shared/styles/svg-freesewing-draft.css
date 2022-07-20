@@ -90,7 +90,7 @@ svg.freesewing.pattern {
   .svg-layout-button path {
     stroke-width: calc(var(--pattern-stroke) * 2 * var(--pattern-scale));;
   }
-  .svg-layout-button:hover > rect {
+  .svg-layout-button:hover > rect.button {
     fill: var(--pattern-lining);
     stroke: none;
     fill-opacity: 1;

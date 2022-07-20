@@ -5,11 +5,18 @@ import { useTranslation } from 'next-i18next'
 
 const rectSize = 24
 
-const Button = ({onClick, transform, Icon, children}) => <g className="svg-layout-button group" onClick={onClick} transform={transform}>
+const Button = ({onClick, transform, Icon, children}) => {
+  const _onClick = (event) => {
+    event.stopPropagation();
+    onClick(event);
+  }
+
+  return <g className="svg-layout-button group" transform={transform}>
     <rect width={rectSize} height={rectSize} className="button"/>
     <Icon />
     <text className="invisible group-hover:visible">{children}</text>
-  </g>
+    <rect width={rectSize} height={rectSize} onClick={_onClick} className="fill-transparent"/>
+  </g>}
 
 /** buttons for manipulating the part */
 const Buttons = ({ transform, flip, rotate, setRotate, resetPart, rotate90}) => {
