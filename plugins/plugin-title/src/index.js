@@ -95,7 +95,7 @@ export default {
           for (var key in cutList) {
             if (typeof cutList[key] !== 'number') continue
 
-              this.points[`_${prefix}_titleCut`].attr('data-text', `$t(plugin:${cutList.isPair ? 'pair' : 'cutCount'}, {"count": ${cutList['cut']/(cutList.isPair ? 2 : 1)}, "fabricType": "workbench:fabricType:${'cut'}"})`)
+              this.points[`_${prefix}_titleCut`].attr('data-text', `$t(plugin:${cutList.isPair ? 'pair' : 'cutCount'}, {"count": ${cutList[key]/(cutList.isPair ? 2 : 1)}, "fabricType": "workbench:fabricType:${key}"})`)
           }
         }
 
