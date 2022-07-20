@@ -31,7 +31,7 @@ core:
   testonly: 'npx mocha tests/*.test.js'
 i18n:
   # react-scripts doesn't handle .mjs files correctly
-  prebuild: 'node src/prebuild.mjs'
+  prebuild: 'node scripts/prebuilder.mjs'
   test: *test
   testci: *testci
 new-design:

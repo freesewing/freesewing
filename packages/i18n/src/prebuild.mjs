@@ -108,10 +108,10 @@ const getNamespacesFromFileList = async (files, locales, only=false) => {
     let file = files[i]
 
     let loc = localeFromFileName(file);
-    if (locales.indexOf(loc) === -1) return
+    if (locales.indexOf(loc) === -1) continue
 
     let namespace = namespaceFromFile(file);
-    if (only === true && only.indexOf(namespace) === -1) return
+    if (only === true && only.indexOf(namespace) === -1) continue
 
     if (typeof namespaces[loc] === 'undefined') {
       namespaces[loc] = {}
@@ -216,12 +216,11 @@ const writeFiles = async allNamespaces => {
 export const build = async (localeFilter = () => true, only=false) => {
   const files = await getTranslationFileList()
   const locales = getLocalesFromFileList(files).filter(localeFilter)
+  console.log('building i18n for', locales)
   const namespaces = await getNamespacesFromFileList(files, locales, only)
 
   await writeFiles(namespaces)
 }
-
-build()
 
 //export default strings
 
