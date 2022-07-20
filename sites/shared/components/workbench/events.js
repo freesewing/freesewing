@@ -24,7 +24,7 @@ const Event = ({ evt, units }) => {
   return <Md>Note a recognized event: {JSON.stringify(evt, null ,2)}</Md>
 }
 
-const EventGroup = ({ type='info', events=[], units='metric' }) => events.length > 0 ? (
+export const EventGroup = ({ type='info', events=[], units='metric' }) => events.length > 0 ? (
   <div className="">
     <h3 className="capitalize" id={`events-${type}`}>{type}</h3>
     <table className="table w-full mdx">

@@ -2,11 +2,11 @@ neckRatio:
   title: Neck opening
   description: Controls the size of the neck opening relative to the bib size
 widthRatio:
-  title: Width
+  title: Ширина
   description: Controls the width of the bib
 lengthRatio:
-  title: Length
+  title: Довжина
   description: Controls the length of the bib
 headSize:
-  title: Head size
+  title: Розмір голови
   description: The head circumference you want the bib to accomodate

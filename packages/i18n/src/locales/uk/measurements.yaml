@@ -1,14 +1,14 @@
 ---
-ankle: Ankle circumference
-biceps: Biceps circumference
+ankle: Обхват щиколотки
+biceps: Обхват біцепсів
 bustFront: Bust front
 bustPointToUnderbust: Bust point to underbust
 bustSpan: Bust span
-chest: Chest circumference
+chest: Обхват грудей
 crossSeam: Cross seam
 crossSeamFront: Cross seam front
-head: Head circumference
-heel: Heel circumference
+head: Обхват голови
+heel: Обхват підйому
 highBustFront: High bust front
 highBust: High bust
 hips: Hips circumference
@@ -30,10 +30,10 @@ upperLeg: Upper leg circumference
 waist: Waist circumference
 waistBack: Waist back
 waistToArmhole: Waist to armhole
-waistToFloor: Waist to floor
+waistToFloor: Вимір від талії до підлоги
 waistToHips: Waist to hips
 waistToKnee: Waist to knee
 waistToSeat: Waist to seat
 waistToUnderbust: Waist to underbust
 waistToUpperLeg: Waist to upper leg
-wrist: Wrist circumference
+wrist: Обхват зап'ясть

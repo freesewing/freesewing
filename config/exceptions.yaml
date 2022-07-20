@@ -1,5 +1,6 @@
 noNamespace:
   - create-freesewing-pattern
+  - rehype-jargon
   - remark-jargon
   - gatsby-remark-jargon
 customBuild:
@@ -14,6 +15,7 @@ customBuild:
   - remark-jargon
   - plugin-bundle
   - utils
+  - rehype-jargon
 skipTests:
   - theo
 packageJson:

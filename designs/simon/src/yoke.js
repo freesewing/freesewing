@@ -35,20 +35,16 @@ export default (part) => {
     snippets.logo = new Snippet('logo', points.logo)
     snippets.logo.attr('data-scale', 0.8)
     if (options.splitYoke) {
-      macro('cutonfold', {
-        from: points.cbNeck,
-        to: points.cbYoke,
-        grainline: true,
-      })
       snippets.sleeveNotch = new Snippet('bnotch', points.armholePitch)
-    } else {
-      points.grainlineFrom = points.cbYoke.shift(0, 20)
-      points.grainlineTo = points.cbNeck.shift(0, 20)
-      macro('grainline', {
-        from: points.grainlineFrom,
-        to: points.grainlineTo,
-      })
     }
+
+    points.grainlineFrom = points.cbYoke.shift(0, 20)
+    points.grainlineTo = points.cbNeck.shift(0, 20)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
+
 
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')

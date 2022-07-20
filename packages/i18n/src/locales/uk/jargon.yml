@@ -1,7 +1,7 @@
 ---
 basting:
-  term: basting
-  description: "See <a href='/docs/sewing/basting/'>Basting</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: зметування
+  description: "Дивіться <a href='/docs/sewing/basting/'>Зметування</a> у <a href='/docs/sewing'>Швейна документація</a>"
 coverlock:
   term: coverlock
   description: "See <a href='/docs/sewing/coverlock/'>Coverlock</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
@@ -70,16 +70,16 @@ zigZag:
   description: "See <a href='/docs/sewing/zig-zag-stitch/'>Zig-zag stitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 freesewing:
   term: freesewing
-  description: '<b>FreeSewing</b> is an open source platform for made-to-measure sewing patterns'
+  description: '<b>FreeSewing</b> є платформою з відкритим кодом для створення швейних викрійок, які адаптуються під виміри користувача'
 patternOptions:
-  term: pattern options
-  description: 'The <b>pattern options</b> allow you to customize the design of the pattern'
+  term: налаштування викрійок
+  description: '<b>Налаштування викрійки</b> дозволяє Вам змінити дизайн викрійки за Вашими побажаннями'
 draftSettings:
-  term: draft settings
-  description: 'The <b>draft settings</b> give you control of how a pattern is generated'
+  term: налаштування чернетки
+  description: '<b>налаштування чернетки</b> надає Вам контроль над генерацією викрійки'
 patrons:
-  term: patrons
-  description: 'Patrons support Freesewing financially. They are loyal supporters who ensure a sustainable future for freesewing.org, our code, our patterns, and our community.'
+  term: патрони
+  description: 'Патрони фінансово підтримують FreeSewing. Вони є лояльними прихильниками, які забезпечують стійке майбутнє для freesewing.org, нашого коду, викрійок та нашої спільноти.'
 msf:
   term: msf
-  description: "Médecins Sans Frontières/Doctors Without Borders - See <a href='https://msf.org/'>msf.org</a>"
+  description: "Médecins Sans Frontières/Лікарі без кордонів – Більше на <a href='https://msf.org/'>msf.org</a>"
