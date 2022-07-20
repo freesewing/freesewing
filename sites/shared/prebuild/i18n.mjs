@@ -1,5 +1,3 @@
-import path from 'path'
-import fs from 'fs'
 import {build} from '../../../packages/i18n/src/prebuild.mjs'
 
 export const prebuildI18n = async(site, only=false) => {

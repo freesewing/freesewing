@@ -32,7 +32,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "unist-util-visit": "^2.0.3",
+    "unist-util-visit": "^4.1.0",
     "hast-util-from-html": "^1.0.0"
   },
   "devDependencies": {},

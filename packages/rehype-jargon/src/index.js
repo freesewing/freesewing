@@ -1,4 +1,4 @@
-import visit from 'unist-util-visit'
+import { visit } from 'unist-util-visit'
 import { fromHtml } from 'hast-util-from-html'
 
 const jargonTransform = (term, html) => `<span class="jargon-term">${term}<span class="jargon-info">${html}</span></span>`
