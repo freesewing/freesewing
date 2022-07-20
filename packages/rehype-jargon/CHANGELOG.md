@@ -1,4 +1,4 @@
-# Change log for: @freesewing/rehype-jargon
+# Change log for: rehype-jargon
 
 
 

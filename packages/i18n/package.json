@@ -33,6 +33,7 @@
     "tips": "node ../../scripts/help.mjs",
     "prebuild": "node src/prebuild.mjs",
     "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
+    "precibuild_step7": "node src/prebuild.mjs",
     "cibuild_step7": "node build.js"
   },
   "peerDependencies": {
