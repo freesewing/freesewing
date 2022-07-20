@@ -1,6 +1,6 @@
 ---
 back: Спина
-backBase: Back base
+backBase: Основа спинки
 backPocketWelt: Back pocket welt
 base: Base
 bentBack: Bent back
@@ -11,9 +11,9 @@ bentTopSleeve: Bent top sleeve
 bentUnderSleeve: Bent under sleeve
 buttonholePlacket: Buttonhole placket
 buttonPlacket: Button placket
-collar: Collar
-collarStand: Collar stand
-cuff: Cuff
+collar: Комір
+collarStand: Стоячий комір
+cuff: Манжет
 fabricTail: Fabric tail
 fabricTip: Fabric tip
 frontBase: Front base
@@ -23,36 +23,36 @@ frontLeft: Front left
 frontLining: Front lining
 frontRight: Front right
 gusset: Gusset
-hoodCenter: Hood center
-hood: Hood
-hoodSide: Hood side
+hoodCenter: Центр капюшону
+hood: Капюшон
+hoodSide: Сторона капюшону
 inset: Inset
 interfacingTail: Interfacing tail
 interfacingTip: Interfacing tip
 liningTail: Lining tail
 liningTip: Lining tip
 loop: Loop
-panel1: Panel 1
-panel2: Panel 2
-panel3: Panel 3
-panel4: Panel 4
-panel5: Panel 5
-panel6: Panel 6
-panels: Panels
+panel1: Панель 1
+panel2: Панель 2
+panel3: Панель 3
+panel4: Панель 4
+panel5: Панель 5
+panel6: Панель 6
+panels: Панель
 pocketBag: Pocket bag
 pocketFacing: Pocket facing
 pocketInterfacing: Pocket interfacing
-pocket: Pocket
+pocket: Кишеня
 pocketWelt: Pocket welt
 side: Side
 sleeveBase: Sleeve base
 sleevecap: Sleevecap
 sleevePlacketOverlap: Sleeve placket overlap
 sleevePlacketUnderlap: Sleeve placket underlap
-sleeve: Sleeve
+sleeve: Рукав
 topSleeve: Topsleeve
 top: Top
 underCollar: Under collar
 underSleeve: Undersleeve
 waistband: Waistband
-yoke: Yoke
+yoke: Кокетка

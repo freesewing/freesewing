@@ -9,11 +9,11 @@ sleeveLength:
   title: Довжина рукава
   description: Змінити довжину рукавів
 necklineBend:
-  title: Вигин вирізу
-  description: Змінити лінію вигину вирізу.
+  title: Вигін горловини
+  description: Змінити лінію вигину горловини.
 necklineDepth:
-  title: Глибина вирізу
-  description: Змінити параметр того, як низько знаходиться виріз.
+  title: Глибина горловини
+  description: Змінити параметр того, як низько знаходиться горловина.
 necklineWidth:
-  title: Ширина вирізу
-  description: Змінити ширину вирізу.
+  title: Ширина горловини
+  description: Змінити ширину горловини.

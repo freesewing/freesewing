@@ -1,133 +1,133 @@
 ---
 aaron:
-  description: Aaron is an athletic shirt or tank top.
-  title: Aaron A-Shirt
+  description: Аарон є спортивною майкою.
+  title: Майка Аарон
 albert:
-  description: Albert is an apron.
-  title: Albert apron
+  description: Альберт – це фартук.
+  title: Фартук Альберт
 bee:
-  description: Bee is a bikini top
-  title: Bee bikini top
+  description: Бі – це ліф купальника
+  title: Ліф купальника Бі
 bella:
-  description: Bella is a basic body block for people with breasts.
-  title: Bella body block
+  description: Белла є викрійкою-основою з виточками.
+  title: Викрійка-основа Белла
 benjamin:
-  description: Benjamin is a bow tie pattern with four different shape options.
-  title: Benjamin bow tie
+  description: Бенджамін – це викрійка галстука-метелика з чотирьма різними формами.
+  title: Галстук-метелик Бенджамін
 bent:
-  description: This two-part sleeve block is the basis of our coat and jacket patterns.
-  title: Bent body Block
+  description: Ця двочастинна викрійка є основою для викрійок пальто та піджаків.
+  title: Викрійка-основа Бент
 bob:
-  description: This is the bib that you can create by following our design tutorial
-  title: Bob the bib
+  description: Це нагрудник, викрійку якого ви можете самостійно створити, пройшовши нашу інструкцію з дизайну викрійок
+  title: Нагрудник Боб
 breanna:
-  description: Breanna is a basic body block for people with breasts.
-  title: Breanna body block
+  description: Бреанна – це викрійка-основа з виточками.
+  title: Викрійка-основа Бреанна
 brian:
-  description: Brian is a basic body block for people without breasts.
-  title: Brian body block
+  description: Брайан – це викрійка-основа без виточок.
+  title: Викрійка-основа Брайан
 bruce:
-  description: Bruce are comfortable yet stylish boxer briefs.
-  title: Bruce boxer briefs
+  description: Брюс – комфортні та стильні боксери.
+  title: Труси-боксери Брюс
 carlita:
-  description: 'The version for breasts of our Carlton coat, aka Sherlock Holmes coat.'
-  title: Carlita coat
+  description: 'Версія пальто Карлтон, ака пальто Шерлока Холмса, тільки зі швом Принц(есса).'
+  title: Пальто Карліта
 carlton:
-  description: 'For Sherlock Holmes cosplay, or just a really nice coat.'
-  title: Carlton coat
+  description: 'Підходить для косплею Шерлока Холмса, або просто як гарне і практичне пальто.'
+  title: Пальто Карлтон
 cathrin:
-  description: Cathrin is an underbust corset or waist trainer.
-  title: Cathrin corset
+  description: Катрін – це підгрудний корсет або тренувач талії.
+  title: Корсет Катрін
 charlie:
-  description: Charlie is a chino trouser pattern.
-  title: Charlie chinos
+  description: Чарлі – це викрійка для брюк-чіносів.
+  title: Брюки-чіноси Чарлі
 cornelius:
-  description: Cornelius are cycling breeches based on the Keystone drafting method.
-  title: Cornelius cycling breeches
+  description: Корнеліус – це бріджі для катання на велосипеді, основані на методі крою Кістон.
+  title: Бріджі для катання Корнеліус
 diana:
-  description: Diana is a top with a draped neckline.
-  title: Diana draped top
+  description: Діана – це топ з горловиною-хомутом.
+  title: Топ з горловиною-хомутом Діана
 florent:
   description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
   title: Florent flat cap
 florence:
-  description: 'Florence is a face mask.'
-  title: Florence face mask
+  description: 'Флоренс – це маска для обличчя.'
+  title: Маска Флоренс
 hi:
-  description: The world's friendliest shark
-  title: Hi the shark
+  description: Найдружелюбніша акула у світі.
+  title: Акула Куку
 holmes:
   description: 'For Sherlock Holmes cosplay or just a cute hat.'
   title: Holmes deerstalker hat
 hortensia:
-  description: 'Hortensia is a handbag.'
-  title: Hortensia handbag
+  description: 'Гортензія – це ручна сумка.'
+  title: Ручна сумка Гортензія
 huey:
-  description: Huey is a zip-up hoodie with optional front pockets.
-  title: Huey hoodie
+  description: Хьюі – це худі на блискавці з кишенями спереду (на ваш вибір).
+  title: Худі Хьюї
 hugo:
-  description: Hugo is a hooded jumper with raglan sleeves.
-  title: Hugo hoodie
+  description: Хьюго – це джампер з капюшоном та рукавами реглан.
+  title: Худі Хьюго
 jaeger:
-  description: Jaeger is a sport coat style jacket with two buttons and patch pockets.
-  title: Jaeger jacket
+  description: Джагер – це спортивний піджак з двома ґудзиками та накладними кишенями.
+  title: Піджак Джагер
 lucy:
-  description: Lucy is a historical pocket that you can tie around your waist.
-  title: Lucy tie-on pocket
+  description: Люсі – це кишеня з минулого, яку можна зав'язати на талії.
+  title: Кишеня на зав'язках Люсі
 lunetius:
-  description: Lunetius is a lacerna, a historical Roman cloak
-  title: Lunetius Lacerna
+  description: Лютінус – це ласерна, або історична накидка з Древнього Риму.
+  title: Ласерна Лютінус
 noble:
-  description: Noble is a body block with prince(ess) seams
-  title: Noble body block
+  description: Нобл – це викрійка-основа з швом принц(есса).
+  title: Викрійка-основа Нобл
 paco:
-  description: Paco are casual yet stylish summer pants.
-  title: Paco pants
+  description: Пако – це базові та стильні літні штани.
+  title: Штани Пако
 penelope:
-  description: Penelope is a pencil skirt with or without a vent in the back.
-  title: Penelope pencil skirt
+  description: Пенелопа – це спідниця-олівець з розрізом ззаду (за бажанням).
+  title: Юбка-олівець Пенелопа
 sandy:
-  description: Sandy is an adaptable circle skirt pattern.
-  title: Sandy circle skirt
+  description: Сенді – викрійка спідниці-сонце на будь-яку довжину та пишність.
+  title: Юбка-сонце Сенді
 shin:
-  description: Shin are athletic swim trunks.
-  title: Shin swim trunks
+  description: Шін – це спортивні плавки.
+  title: Плавки Шін
 simon:
-  description: Simon is a highly adaptable shirt pattern for people without breasts.
-  title: Simon shirt
+  description: Саймон – це викрійка сорочки без передніх виточок. Легко адаптується під Ваші швейні плани.
+  title: Сорочка Саймон
 simone:
-  description: Simone is simon, adapted for breasts.
-  title: Simone shirt
+  description: Сімон – це як Саймон, але з передніми виточками.
+  title: Сорочка Сімон
 sven:
-  description: Sven is a straightforward sweater.
-  title: Sven sweatshirt
+  description: Свен – це простий і прямий светр.
+  title: Светр Свен
 tamiko:
-  description: Tamiko is a zero-waste top.
-  title: Tamiko top
+  description: Таміко – це топ "Нуль відходів".
+  title: Блузка Таміко
 teagan:
-  description: Teagan is a fitted T-shirt pattern.
-  title: Teagan T-shirt
+  description: Тіган – це викрійка футболки по розміру.
+  title: Футболка Тіган
 theo:
-  description: Theo is a classic trouser pattern.
-  title: Theo trousers
+  description: Тео – це викрійка класичних штанів.
+  title: Штани Тео
 tiberius:
-  description: Tiberius is a historical Roman tunic
-  title: Tiberius Tunica
+  description: Тіберіус – це Древньоримська туніка.
+  title: Туніка Тіберіус
 titan:
-  description: Titan is a dartless trouser block.
-  title: Titan trouser block
+  description: Титан – це викрійка-основа штанів без виточок.
+  title: Викрійка-основа штанів Титан
 trayvon:
   description: Trayvon is a tie that cuts no corners for a professional result.
-  title: Trayvon tie
+  title: Галстук Трейвон
 unice:
   description: Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.
-  title: Unice undies
+  title: Труси Юніс
 ursula:
-  description: Ursula is a basic, highly-customizable underwear pattern.
-  title: Ursula undies
+  description: Урсула – це викрійка базових трусів з великою кількістю налаштувань дизайну.
+  title: Труси Урсула
 wahid:
-  description: Wahid is a classic fitted waistcoat.
-  title: Wahid waistcoat
+  description: Вахід – це класичний облягаючий жилет.
+  title: Жилет Вахід
 walburga:
   description: Walburga is a tabard/surcoat, a historical garment from medieval Europe
   title: Walburga Wappenrock
@@ -135,5 +135,5 @@ waralee:
   description: Waralee are wrap pants.
   title: Waralee wrap pants
 yuri:
-  description: Yuri is a fancy zipless cardigan based on the Huey & Hugo hoodies
-  title: Yuri hoodie
+  description: Юрі – це екстравагантний кардиган без блискавки, оснований на худі Хьюі та Хьюго.
+  title: Худі Юрі

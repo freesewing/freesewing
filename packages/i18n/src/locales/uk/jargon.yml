@@ -1,46 +1,46 @@
 ---
 basting:
   term: зметування
-  description: "Дивіться <a href='/docs/sewing/basting/'>Зметування</a> у <a href='/docs/sewing'>Швейна документація</a>"
+  description: "Дивіться <a href='/docs/sewing/basting/'>Зметування</a> у <a href='/docs/sewing'> документація до шиття</a>"
 coverlock:
-  term: coverlock
-  description: "See <a href='/docs/sewing/coverlock/'>Coverlock</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: оверлок
+  description: "Дивіться <a href='/docs/sewing/coverlock/'>Оверлок</a> у <a href='/docs/sewing'> Документація до шиття</a>"
 cutting:
-  term: cutting
-  description: "See <a href='/docs/sewing/cutting/'>Cutting</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: вирізання
+  description: "Дивіться <a href='/docs/sewing/cutting/'>Вирізання</a> у <a href='/docs/sewing'> Документація до шиття</a>"
 darts:
-  term: darts
-  description: "See <a href='/docs/sewing/darts/'>Darts</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: виточки
+  description: "Дивіться <a href='/docs/sewing/darts/'>Виточки</a> у<a href='/docs/sewing'>Документація до шиття</a>"
 doubleWeltPockets:
-  term: double welt pockets
-  description: "See <a href='/docs/sewing/double-welt-pockets/'>Double welt pockets</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: прорізна кишеня
+  description: "Дивіться <a href='/docs/sewing/double-welt-pockets/'>Прорізна кишеня</a> у<a href='/docs/sewing'>Документація до шиття</a>"
 ease:
-  term: ease
-  description: "See <a href='/docs/sewing/ease/'>Ease</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: свобода облягання
+  description: "Дивіться <a href='/docs/sewing/ease/'>Свобода облягання</a> у <a href='/docs/sewing'>Документація до шиття</a>"
 edgestitch:
-  term: edgestitch
-  description: "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: шов по краю
+  description: "Дивіться <a href='/docs/sewing/edgestitching/'>Шов по краю</a> у <a href='/docs/sewing'>Документація до шиття</a>"
 fabricGrain:
   term: fabric grain
-  description: "See <a href='/docs/sewing/fabric-grain/'>Fabric grain</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  description: "Дивіться <a href='/docs/sewing/fabric-grain/'>Нитка основа тканини</a> у <a href='/docs/sewing'>Документація до шиття</a>"
 goodSidesTogether:
-  term: good sides together
-  description: "See <a href='/docs/sewing/good-sides-together/'>Good sides together</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  term: лицьові сторони одна до одної
+  description: "Дивіться <a href='/docs/sewing/good-sides-together/'>Лицьові сторони одна до одної</a> у <a href='/docs/sewing/'>Документація до шиття</a>"
 onTheFold:
   term: on the fold
-  description: "See <a href='/docs/sewing/on-the-fold/'>On the fold</a> in the <a href='/docs/sewing/'>Sewing documentation</a>"
+  description: "Дивіться <a href='/docs/sewing/on-the-fold/'>На згині</a> у <a href='/docs/sewing/'>Документація до шиття</a>"
 hemming:
-  term: hemming
-  description: "See <a href='/docs/sewing/hemming/'>Hemming</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: підшивання краю
+  description: "Дивіться <a href='/docs/sewing/hemming/'>Підшивання краю</a> у <a href='/docs/sewing'>Документація до шиття</a>"
 jersey:
-  term: jersey
-  description: "See <a href='/docs/sewing/jersey/'>Jersey</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: джерсі
+  description: "Дивіться <a href='/docs/sewing/jersey/'>Джерсі</a> у <a href='/docs/sewing'>Документація до шиття</a>"
 knitBinding:
   term: knit binding
   description: "See <a href='/docs/sewing/knit-binding/'>Knit binding</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 knitFabric:
-  term: knit fabric
-  description: "See <a href='/docs/sewing/knit-fabric/'>Knit fabric</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: трикотаж
+  description: "Дивіться <a href='/docs/sewing/knit-fabric/'>Трикотаж</a> у <a href='/docs/sewing'> Документація до шиття</a>"
 pinning:
   term: pinning
   description: "See <a href='/docs/sewing/pinning/'>Pinning</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
@@ -63,11 +63,11 @@ trimming:
   term: trimming
   description: "See <a href='/docs/sewing/trimming/'>Trimming</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
 twinNeedle:
-  term: twin needle
-  description: "See <a href='/docs/sewing/twin-neelde/'>Twin needle</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: подвійна голка
+  description: "Дивіться <a href='/docs/sewing/twin-neelde/'>Подвійна голка</a> у <a href='/docs/sewing'>Документація до шиття</a>"
 zigZag:
-  term: zig-zag stitch
-  description: "See <a href='/docs/sewing/zig-zag-stitch/'>Zig-zag stitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: шов "Зіг-заг"
+  description: "Дивіться <a href='/docs/sewing/zig-zag-stitch/'>шов \"Зіг-заг\"</a> у<a href='/docs/sewing'>Документація до пошиття</a>"
 freesewing:
   term: freesewing
   description: '<b>FreeSewing</b> є платформою з відкритим кодом для створення швейних викрійок, які адаптуються під виміри користувача'
