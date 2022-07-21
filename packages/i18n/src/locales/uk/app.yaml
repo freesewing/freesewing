@@ -13,7 +13,7 @@ applyThisLayout: Застосувати макет
 areYouSureYouWantToContinue: Ви впевнені, що хочете продовжити?
 askForHelp: Попросити про допомогу
 automatic: Автоматично
-averagePeopleDoNotExist: "Average people don't exist"
+averagePeopleDoNotExist: "Середньостатистичних людей не існує"
 awesome: Чудово
 back: Назад
 becauseThatWouldBeReallyHelpful: Тому що це було б дуже корисно.
@@ -30,7 +30,7 @@ changePattern: Змінити викрійку
 chatOnDiscord: Чат в Discord
 checkInboxClickLinkInConfirmationEmail: Тепер перевірте поштову скриньку та перейдіть за посиланням у листі, що ми надіслали вам.
 chest: Груди
-chestInfo: Breasts require extra measurements. If this person has no breasts, irrelevant measurements will be hidden when configuring them. This has no impact on how patterns are drafted.
+chestInfo: Молочні залози потребують додатких замірів. Якщо людина не має молочних залоз, ці заміри будуть приховані. Це не впливає на створення викрійок.
 chooseASize: Обрати розмір
 chooseAPerson: Обрати людину
 chooseADesign: Обрати дизайн
@@ -137,7 +137,7 @@ orPayPerYear: Чи оплачувати щороку
 other: Інше
 otherThing: 'Ще {thing}'
 ourPatrons: Наші патрони
-ourRevenuePledge: Our revenue pledge
+ourRevenuePledge: Куди йде наш прибуток
 patron-2: Powder monkey
 patron-4: First mate
 patron-8: Капітан
@@ -172,41 +172,41 @@ restoreDesignDefaults: Скинути налаштування дизайну
 restorePatternDefaults: Скинути налаштування викрійки
 saveDraftToYourAccount: Зберегти чернетку до облікового запису
 save: Зберегти
-searchLanguageMsg: Every language has its own search index. Since not all our content is translated, you may find more result in the English search.
-searchLanguageTitle: Can't find what you're looking for?
-search: Search
-selectAPartToMoveMirrorOrRotate: Select a part to move, mirror, or rotate
-selectImage: Select image
-sendAnEmail: Send an E-mail
-settings: Settings
-sewingHelp: Sewing help
-sewingPatternsForNonAveragePeople: Sewing patterns for non-average people
-share: Share
-shareFreesewing: Share FreeSewing
-showcase: Showcase
-signUpForAFreeAccount: Sign up for a free account
-signUp: Sign up
-signupWithProvider: 'Sign up with {provider}'
-sortByField: Sort by {field}
-standardSeamAllowance: Standard seam allowance
-startOver: Start over
-startTranslatingNowOrRead: '{startTranslatingNow}, or read the {documentationForTranslators} first.'
+searchLanguageMsg: Кожна мова має власний індекс пошуку. Оскільки не весь наш контент перекладений, Ви, скоріш за все, отримаєте більше результатів англійською.
+searchLanguageTitle: Не знайшли, що шукали?
+search: Пошук
+selectAPartToMoveMirrorOrRotate: Обрати частину для переміщення, віддзеркалення або обертання
+selectImage: Вибрати зображення
+sendAnEmail: Надіслати e-mail
+settings: Налаштування
+sewingHelp: Допомога з шиттям
+sewingPatternsForNonAveragePeople: Швейні викрійки для справжніх людей
+share: Поширити
+shareFreesewing: Поширити FreeSewing
+showcase: Готові проєкти
+signUpForAFreeAccount: Реєстрація безкоштовного облікового запису
+signUp: Реєстрація
+signupWithProvider: 'Реєстрація через {provider}'
+sortByField: Сортувати за {field}
+standardSeamAllowance: Стандартні припуски на шви
+startOver: Почати знову
+startTranslatingNowOrRead: '{startTranslatingNow}, або спочатку прочитайте {documentationForTranslators}.'
 startTranslatingNow: Start translating now
-subscribe: Subscribe
-support: Support
-supportFreesewing: Support freesewing
-tellMeMore: Tell me more
-thanksForYourSupport: Thanks for your support
-thisContentIsNotAvailableInLanguage: This content is not available in English
+subscribe: Підписатися
+support: Підтримати
+supportFreesewing: Підтримати freesewing
+tellMeMore: Хочу дізнатися більше
+thanksForYourSupport: Дякуємо за Вашу підтримку
+thisContentIsNotAvailableInLanguage: Цього контенту немає англійською
 thisFieldSupportsMarkdown: This field supports Markdown
-thisPageRequiresAuthentication: This page requires authentication
-troubleLoggingIn: Trouble logging in?
+thisPageRequiresAuthentication: Ця сторінка потребує автентифікації
+troubleLoggingIn: Не вдається увійти?
 twitter: Twitter
 txt-footer: Freesewing is made by a community of contributors<br />with the financial support of our Patrons
-txt-tier2: Our most democractically priced tier. It may be less than the price of a latte, but your support means the world to us.
-txt-tier4: Subscribe to this tier and we'll send some of our much covetted freesewing swag to your home anywhere in the world.
-txt-tier8: "If you don't merely want to support us, but want to see freesewing thrive, this is the tier for you. Also: extra swag."
-txt-tiers: 'FreeSewing is fuelled by a voluntary subscription model'
+txt-tier2: Рівень з найбільш демократичною ціною. Він дешевший за філіжанку кави, але ми дуже цінуємо Вашу підтримку.
+txt-tier4: Підпишіться на цей рівень та ми доставимо наші смачнющі "булочки" до Вашого ґанку (будь-де на мапі).
+txt-tier8: "Якщо Ви хочете не лише підтримувати нас, а й бажаєте freesewing процвітання, цей рівень для Вас. Також: додаткові \"булочки\". ;)"
+txt-tiers: 'FreeSewing існує завдяки добровільній моделі підписки'
 unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
 updated: Updated
 update: Update
@@ -230,55 +230,55 @@ youAreNotAPatron: Your are not a patron
 youAreNotLoggedIn: You are not logged in
 yourRights: Your rights
 makerDocs: Maker documentation
-devDocs: Developer documentation
-slogan: A JavaScript library for made-to-measure sewing patterns
-getStarted: Get started
+devDocs: Розробницька документація
+slogan: Бібліотека JavaScript для створення швейних викрійок на базі замірів
+getStarted: Розпочати
 apiReference: API Reference
-tutorial: Tutorial
-editThisPage: Edit this page
-loginRequiredRedirect: 'You were redirected to the login page because {page} requires authentication'
-various: Various
-sewing: Sewing
-examples: Examples
+tutorial: Урок
+editThisPage: Редагувати сторінку
+loginRequiredRedirect: 'Вас було перенаправлено на сторінку входу, оскільки {page} потребує автентифікації'
+various: Різне
+sewing: Шиття
+examples: Приклади
 by: by
 years: Years
-pricing: Pricing
-createFirst: Start by creating a new pattern
-noPattern: You don't have any patterns (yet). Create a new pattern, then save it to your account.
-modelFirst: Start by adding measurements
-noModel: You haven't added any measurements (yet). FreeSewing can generate made-to-measure sewing patterns. But for that, we need measurements.
-noModel2: So the first thing you should do is add a person, and crack out your measuring tape.
-noUserBrowsingTitle: "You can't just browse all users"
-noUserBrowsingText: "We've got thousands of them. Surely you have better things to do?"
-usePatternMeasurements: 'Use the measurements of the original pattern'
-createReplica: Create a replica
-showDetails: Show details
-hideDetails: Hide details
-clickBelowToLogOut: Click below to log out
-compare: Compare
-savePattern: Save pattern
+pricing: Ціни
+createFirst: Розпочніть зі створення нової викрійки
+noPattern: Ви не маєте жодних викрійок (поки що). Створіть нову викрійку, потім збережіть її до свого облікового запису.
+modelFirst: Розпочніть з додавання замірів
+noModel: Ви не додали жодних замірів (поки що). FreeSewing може створювати швейні викрійки на базі замірів. Однак для цього нам потрібні власне заміри.
+noModel2: Розпочніть зі створення людини, після чого діставайте свою сантиметрову стрічку.
+noUserBrowsingTitle: "Ви не можете просто переглядати всіх користувачів"
+noUserBrowsingText: "У нас їх тисячі. Ви дійсно хочете витрачати свій час на це?"
+usePatternMeasurements: 'Використати заміри вихідної викрійки'
+createReplica: Створити копію
+showDetails: Показати подробиці
+hideDetails: Приховати подробиці
+clickBelowToLogOut: Тицьніть знизу для виходу
+compare: Порівняти
+savePattern: Зберегти викрійку
 recreate: Recreate
 recreateThing: Recreate {thing}
 recreateThingForPerson: Recreate {thing} for {person}
-seeYouLaterUser: See you later {user}
-exportForPrinting: Export for printing
-exportForEditing: Export for editing
-startWithNeckTitle: Start with the neck circumference
-startWithNeckDescription: Based on your neck circumference, we can help you spot mistakes in your measurements.
-whatYouNeed: What you need
-fabricOptions: Fabric options
-cutting: Cutting
-instructions: Instructions
-hide: Hide
-show: Show
-oneMomentPlease: One moment please
-loadingMagic: We are loading the magic
-estimate: Estimate
-actual: Actual
-weEstimateYM2B: 'We estimate your {measurement} to be around:'
-exportAsData: Export as data
-availablePatterns: Available patterns
-browseCollection: Browse collection
+seeYouLaterUser: До зустрічі, {user}
+exportForPrinting: Експортувати для друку
+exportForEditing: Експортувати для коригування
+startWithNeckTitle: Розпочніть з обхвату шиї
+startWithNeckDescription: Спираючись на Ваш обхват шиї, ми можемо зловити помилки в Ваших замірах.
+whatYouNeed: Що Вам потрібно
+fabricOptions: Варіанти тканини
+cutting: Вирізання
+instructions: Інструкція
+hide: Приховати
+show: Показати
+oneMomentPlease: Будь ласка, зачекайте
+loadingMagic: Ми завантажуємо магію
+estimate: Прикидка
+actual: Насправді
+weEstimateYM2B: 'Ми прикидаємо, що {measurement} дорівнює:'
+exportAsData: Експорт даних
+availablePatterns: Доступні викрійки
+browseCollection: Огляд колекції
 browseYourPatterns: Browse your patterns
 yourPatterns: Your patterns
 loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
