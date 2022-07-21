@@ -1,20 +1,20 @@
 ---
 backOpening:
-  title: Back opening
-  description: Controls the opening at the back of the apron
+  title: Відкриття спини
+  description: Контролює відкриття на задній частині фартука
 chestDepth:
-  title: Strap length
-  description: Controls the length of the straps
+  title: Довжина лямки
+  description: Контролює довжину лямки
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the apron
+  title: Додаткова довжина
+  description: Контролює довжину фартука
 bibLength:
-  title: Bib length
-  description: Controls the length of the bib
+  title: Довжина нагрудної пройми
+  description: Контролює довжину нагрудної пройми
 bibWidth:
-  title: Bib width
-  description: Controls the width of the bib
+  title: Ширина нагрудної пройми
+  description: Контролює ширину нагрудної пройми
 strapWidth:
-  title: Strap width
-  description: Controls the width of the strap
+  title: Ширина лямки
+  description: Контролює ширину лямки
 
