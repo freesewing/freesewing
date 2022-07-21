@@ -1,7 +1,7 @@
 ---
 back: Спина
 backBase: Основа спинки
-backPocketWelt: Задня прорізна кишеня
+backPocketWelt: Листочка задньої кишені
 base: База
 bentBack: Спина Бент
 bentBase: Основа Бент
@@ -12,7 +12,7 @@ bentUnderSleeve: Низ рукава Бент
 buttonholePlacket: Деталь під отвір для ґудзика
 buttonPlacket: Деталь під ґудзик
 collar: Комір
-collarStand: Стоячий комір
+collarStand: Стійка під комір
 cuff: Манжет
 fabricTail: Fabric tail
 fabricTip: Fabric tip
@@ -43,12 +43,12 @@ pocketBag: Pocket bag
 pocketFacing: Pocket facing
 pocketInterfacing: Pocket interfacing
 pocket: Кишеня
-pocketWelt: Pocket welt
+pocketWelt: Кишенькова листочка
 side: Бік
 sleeveBase: Sleeve base
 sleevecap: Окат рукава
-sleevePlacketOverlap: Sleeve placket overlap
-sleevePlacketUnderlap: Sleeve placket underlap
+sleevePlacketOverlap: Верх шліца
+sleevePlacketUnderlap: Низ шліца
 sleeve: Рукав
 topSleeve: Верх рукава
 top: Верх
