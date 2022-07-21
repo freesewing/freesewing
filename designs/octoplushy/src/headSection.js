@@ -1,5 +1,5 @@
-import mirror from '@freesewing/plugin-mirror'
-import { PostAddSharp } from '@material-ui/icons'
+// import mirror from '@freesewing/plugin-mirror'
+// import { PostAddSharp } from '@material-ui/icons'
 // import { Store } from "@material-ui/icons";
 
 export default function (partNumber, part) {
@@ -318,6 +318,7 @@ export default function (partNumber, part) {
   }
 
   if (partNumber == 0) {
+    store.set('sectionWidth', sectionWidth)
     store.set('legSkirtWidth', points.skirtBottomLeft.dist(points.skirtBottomRight))
     store.set('legSkirtRadius', points.skirtBottomLeft.y - points.skirtTopMiddle.y)
     store.set('legSkirtToTopAngle', points.skirtBottomLeft.angle(points.legTopLeft))
@@ -443,14 +444,16 @@ export default function (partNumber, part) {
     })
 
     if (options.type == 'octoplushy') {
-      points.eyeLeft = paths.sectionLeft.shiftFractionAlong(0.465)
-      points.eyeRight = points.eyeLeft.flipX(points.sectionTop)
+      points.eyeLeft = paths.sectionLeft
+        .shiftFractionAlong(0.465)
+        .attr('data-text', 'eye')
+        .attr('data-text-class', 'center')
+      points.eyeRight = points.eyeLeft
+        .flipX(points.sectionTop)
+        .attr('data-text', 'eye')
+        .attr('data-text-class', 'center')
       snippets.eyeLeft = new Snippet('button', points.eyeLeft)
-        .attr('data-text', 'eye')
-        .attr('data-text-class', 'center')
       snippets.eyeRight = new Snippet('button', points.eyeRight)
-        .attr('data-text', 'eye')
-        .attr('data-text-class', 'center')
 
       points.mouthMiddle = points.sectionBottom.shiftFractionTowards(points.sectionTop, 0.45)
       points.mouthLeft = points.mouthMiddle.shift(180, sectionWidth / 4)

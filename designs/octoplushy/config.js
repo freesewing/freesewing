@@ -14,11 +14,14 @@ export default {
   },
   measurements: [],
   dependencies: {
+    eye0: 'headSection0',
+    eye1: 'headSection0',
+    eye2: 'headSection0',
     legSection0: 'headSection0',
     legSection1: 'headSection1'},
   inject: {},
   hide: [],
-  parts: ['headSection0','headSection1','legSection0','legSection1'],
+  parts: ['headSection0','headSection1','legSection0','legSection1','eye0','eye1','eye2'],
   options: {
     sizeConstant: 200,
 
