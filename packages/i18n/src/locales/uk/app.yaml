@@ -163,15 +163,15 @@ remove: Видалити
 removeThing: Видалити {thing}
 reportThisOnGithub: Повідомте про проблему на GitHub
 requiredMeasurements: Необхідні заміри
-resendActivationEmailMessage: "Fill in the E-mail address you signed up with, and we'll send you a new confirmation message."
-resendActivationEmail: Re-send activation E-mail
-resetPassword: Reset password
-reset: Reset
-restoreDefaults: Restore defaults
-restoreDesignDefaults: Restore design defaults
-restorePatternDefaults: Restore pattern defaults
-saveDraftToYourAccount: Save draft to your account
-save: Save
+resendActivationEmailMessage: "Напишіть електронну адресу, за допомогою якої Ви зареєструвалися - ми надішлемо Вам нове повідомлення для підтвердження."
+resendActivationEmail: Повторно надіслати лист для активації
+resetPassword: Змінити пароль
+reset: Змінити
+restoreDefaults: Скидання налаштувань
+restoreDesignDefaults: Скинути налаштування дизайну
+restorePatternDefaults: Скинути налаштування викрійки
+saveDraftToYourAccount: Зберегти чернетку до облікового запису
+save: Зберегти
 searchLanguageMsg: Every language has its own search index. Since not all our content is translated, you may find more result in the English search.
 searchLanguageTitle: Can't find what you're looking for?
 search: Search
