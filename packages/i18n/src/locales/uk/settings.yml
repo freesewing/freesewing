@@ -33,9 +33,9 @@ scale:
   title: Масштаб
   description: Керує ширину контуру, кегль шрифту та інші елементи, які не масштабуються відповідно до замірів викрійки
 renderer:
-  title: Render engine
-  description: Controls how the pattern is rendered (drawn) on the screen
+  title: Двигун відтворювання
+  description: Керує відтворення викрійки на екрані
 xray:
-  title: X-ray
-  description: Look under the hood with FreeSewing's X-ray mode
+  title: Рентген
+  description: Зазирніть за лаштунки з рентгенівським режимом FreeSewing
 
