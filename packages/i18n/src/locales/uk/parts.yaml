@@ -3,56 +3,56 @@ back: Спина
 backBase: Основа спинки
 backPocketWelt: Задня прорізна кишеня
 base: База
-bentBack: Bent back
-bentBase: Bent base
-bentFront: Bent front
-bentSleeve: Bent sleeve
-bentTopSleeve: Bent top sleeve
-bentUnderSleeve: Bent under sleeve
-buttonholePlacket: Buttonhole placket
-buttonPlacket: Button placket
+bentBack: Спина Бент
+bentBase: Основа Бент
+bentFront: Перед Бент
+bentSleeve: Рукав Бент
+bentTopSleeve: Верх рукава Бент
+bentUnderSleeve: Низ рукава Бент
+buttonholePlacket: Деталь під отвір для ґудзика
+buttonPlacket: Деталь під ґудзик
 collar: Комір
 collarStand: Стоячий комір
 cuff: Манжет
 fabricTail: Fabric tail
 fabricTip: Fabric tip
-frontBase: Front base
-frontFacing: Front facing
-front: Front
-frontLeft: Front left
-frontLining: Front lining
-frontRight: Front right
-gusset: Gusset
+frontBase: Низ переду
+frontFacing: Лицьовий бік
+front: Переднє полотнище
+frontLeft: Лівий бік переду
+frontLining: Перед підкладки
+frontRight: Правий бік переду
+gusset: Ластовиця
 hoodCenter: Центр капюшону
 hood: Капюшон
 hoodSide: Сторона капюшону
-inset: Inset
+inset: Вставка
 interfacingTail: Interfacing tail
 interfacingTip: Interfacing tip
 liningTail: Lining tail
 liningTip: Lining tip
-loop: Loop
+loop: Петелька
 panel1: Панель 1
 panel2: Панель 2
 panel3: Панель 3
 panel4: Панель 4
 panel5: Панель 5
 panel6: Панель 6
-panels: Панель
+panels: Панелі
 pocketBag: Pocket bag
 pocketFacing: Pocket facing
 pocketInterfacing: Pocket interfacing
 pocket: Кишеня
 pocketWelt: Pocket welt
-side: Side
+side: Бік
 sleeveBase: Sleeve base
-sleevecap: Sleevecap
+sleevecap: Окат рукава
 sleevePlacketOverlap: Sleeve placket overlap
 sleevePlacketUnderlap: Sleeve placket underlap
 sleeve: Рукав
-topSleeve: Topsleeve
-top: Top
-underCollar: Under collar
-underSleeve: Undersleeve
+topSleeve: Верх рукава
+top: Верх
+underCollar: Підборт
+underSleeve: Низ рукава
 waistband: Резинка на талії
 yoke: Кокетка
