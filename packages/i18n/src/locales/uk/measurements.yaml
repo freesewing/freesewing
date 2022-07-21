@@ -1,39 +1,39 @@
 ---
 ankle: Обхват щиколотки
 biceps: Обхват біцепсів
-bustFront: Bust front
-bustPointToUnderbust: Bust point to underbust
-bustSpan: Bust span
+bustFront: Передній напівобхват грудей
+bustPointToUnderbust: Центр грудей до підгруддя
+bustSpan: Центр грудей
 chest: Обхват грудей
 crossSeam: Cross seam
 crossSeamFront: Cross seam front
 head: Обхват голови
 heel: Обхват підйому
-highBustFront: High bust front
-highBust: High bust
+highBustFront: Напівобхват над грудьми
+highBust: Обхват над грудьми
 hips: Hips circumference
-hpsToBust: HPS to bust
-hpsToWaistBack: HPS to waist back
-hpsToWaistFront: HPS to waist front
+hpsToBust: Від плеча до грудей
+hpsToWaistBack: Від плеча до талії ззаду
+hpsToWaistFront: Від плеча до талії спереду
 inseam: Inseam
 knee: Knee circumference
 neck: Neck circumference
 seat: Seat circumference
 seatBack: Seat back
 crotchDepth: Crotch depth
-shoulderSlope: Shoulder slope
-shoulderToElbow: Shoulder to elbow
-shoulderToShoulder: Shoulder to shoulder
-shoulderToWrist: Shoulder to wrist
-underbust: Underbust
-upperLeg: Upper leg circumference
-waist: Waist circumference
-waistBack: Waist back
-waistToArmhole: Waist to armhole
-waistToFloor: Вимір від талії до підлоги
-waistToHips: Waist to hips
-waistToKnee: Waist to knee
-waistToSeat: Waist to seat
-waistToUnderbust: Waist to underbust
-waistToUpperLeg: Waist to upper leg
+shoulderSlope: Нахил плеча
+shoulderToElbow: Від плеча до ліктя
+shoulderToShoulder: Ширина плечей
+shoulderToWrist: Від плеча до зап'ястя
+underbust: Підгруддя
+upperLeg: Обхват верху ноги
+waist: Обхват талії
+waistBack: Ширина талії ззаду
+waistToArmhole: Від талії до пройми
+waistToFloor: Від талії до підлоги
+waistToHips: Талія до кісточки таза
+waistToKnee: Талія до коліна
+waistToSeat: Від талії до стегон
+waistToUnderbust: Від талії до підгруддя
+waistToUpperLeg: Від талії до початку ноги
 wrist: Обхват зап'ясть
