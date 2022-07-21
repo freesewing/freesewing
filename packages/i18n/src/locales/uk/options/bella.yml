@@ -1,15 +1,15 @@
 ---
 chestEase:
-  title: Chest ease
-  description: Controls the amount of ease at the fullest part of your chest
+  title: Свобода облягання на грудях
+  description: Контролює свободу облягання на найбільшій частині грудей
 waistEase:
-  title: Waist ease
-  description: Controls the amount of ease at your waist
+  title: Свобода облягання на талії
+  description: Контролює свободу облягання на талії
 bustSpanEase:
-  title: Bust span ease
-  description: Controls the amount of (horizontal) ease added to your bust span when locating the bust point.
+  title: Свобода облягання центру грудей
+  description: Контролює горизонтальну свободу облягання на центрі грудей.
 shoulderToShoulderEase:
-  title: Shoulder to Shoulder ease
+  title: Свобода облягання ширини плечей
   description: Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
 fullChestEaseReduction:
   title: Full chest ease reduction
