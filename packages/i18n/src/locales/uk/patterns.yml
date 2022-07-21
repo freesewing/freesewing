@@ -12,7 +12,7 @@ bella:
   description: Белла є викрійкою-основою з виточками.
   title: Викрійка-основа Белла
 benjamin:
-  description: Бенджамін – це викрійка галстука-метелика з чотирьма різними формами.
+  description: Бенджамін – це викрійка краватки-метелика з чотирьма різними формами.
   title: Галстук-метелик Бенджамін
 bent:
   description: Ця двочастинна викрійка є основою для викрійок пальто та піджаків.
@@ -48,8 +48,8 @@ diana:
   description: Діана – це топ з горловиною-хомутом.
   title: Топ з горловиною-хомутом Діана
 florent:
-  description: 'Florent is a flat cap, a rounded cap with a small stiff brim in front.'
-  title: Florent flat cap
+  description: 'Флорент – це пласка кепка, заокруглена кепка з невеликим твердим козирцем спереду.'
+  title: Пласка кепка Флорент
 florence:
   description: 'Флоренс – це маска для обличчя.'
   title: Маска Флоренс
@@ -57,8 +57,8 @@ hi:
   description: Найдружелюбніша акула у світі.
   title: Акула Куку
 holmes:
-  description: 'For Sherlock Holmes cosplay or just a cute hat.'
-  title: Holmes deerstalker hat
+  description: 'Для косплею Шерлока Холмса, або просто як мила шапочка.'
+  title: Шапка Холмс
 hortensia:
   description: 'Гортензія – це ручна сумка.'
   title: Ручна сумка Гортензія
@@ -117,8 +117,8 @@ titan:
   description: Титан – це викрійка-основа штанів без виточок.
   title: Викрійка-основа штанів Титан
 trayvon:
-  description: Trayvon is a tie that cuts no corners for a professional result.
-  title: Галстук Трейвон
+  description: Трейвон – це краватка, яка робиться без відрізання кутів для професіонального вигляду.
+  title: Краватка Трейвон
 unice:
   description: Юніс – це варіант Урсули. Базова, багатофункціональна викрійка трусів.
   title: Труси Юніс
