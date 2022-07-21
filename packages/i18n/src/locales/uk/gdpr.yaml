@@ -9,9 +9,9 @@ consentWhyAnswer: Згідно з GDPR, обробка ваших персона
 createMyAccount: Створити обліковий запис
 furtherReading: Подальше вивчення
 modelQuestion: Чи даєте Ви згоду на обробку даних моделі?
-modelWarning: Revoking this consent will lock you out of all your model data, as well as disable functionality that depends on it.
-modelWhatAnswer: For each model their <b>measurements</b> and <b>breasts settings</b>.
-modelWhatAnswerOptional: 'Optional: A model <b>picture</b> and the <b>name</b> that you give your model.'
+modelWarning: Анулювання даної згоди зробить неможливим використання даних замірів моделі. Це також анулює функціонал вебсайту, який залежить від даної інформації.
+modelWhatAnswer: <b>Заміри</b> та <b>налаштування молочних залоз</b> кожної моделі.
+modelWhatAnswerOptional: 'За навності: <b>Зображення</b> моделі та <b>ім''я</b> моделі.'
 modelWhatQuestion: Що таке дані моделі?
 modelWhyAnswer: 'Для розробки викрійок, адаптованих під заміри <b>спеціально виміру</b>нам необхідні <b>виміри тіла</b>.'
 noConsentNoAccount: Без цієї згоди ми не можемо створити Ваш обліковий запис
@@ -23,10 +23,10 @@ profileQuestion: Чи даєте Ви згоду на обробку даних 
 profileShareAnswer: '<b>Ні</b>, ніколи.'
 profileTimingAnswer: '<b>12 місяців</b> після останнього входу в систему, або до тих пір, поки Ви не <b>видалите</b> Ваш обліковий запис або <b>скасуєте</b> дану згоду.'
 profileWarning: Відкликання згоди видалить усі Ваші данні. Це має той же ефект, що і видалення облікового запису.
-profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
-profileWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>.'
+profileWhatAnswerOptional: 'За наявності: <b>зображення облікового запису</b>, <b>біо</b>і <b>соціальні мережі</b>'
+profileWhatAnswer: 'Ваша <b>електронна адреса</b>, <b>ім''я користувача</b>і <b>пароль</b>.'
 profileWhatQuestion: Що таке дані облікового запису?
-profileWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>.'
+profileWhyAnswer: 'Щоб <b>автентифікувати</b> Вас, <b>зв''язатися</b> з Вами коли це потрібно та задля покращення нашої <b>спільноти</b>.'
 readMore: Для отримання додаткової інформації, будь ласка, прочитайте наше повідомлення про конфіденційність.
 readRights: Для отримання додаткової інформації, будь ласка, прочитайте про Ваші права.
 revokeConsent: Відкликати згоду
