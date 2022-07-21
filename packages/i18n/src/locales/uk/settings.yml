@@ -6,10 +6,10 @@ paperless:
   title: Paperless
   description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
 sa:
-  title: Seam allowance
+  title: Припуск на шов
   description: Controls the amount of seam allowance included in your pattern
 locale:
-  title: Language
+  title: Мова
   description: Determines the language used on your pattern
 only:
   title: Contents
