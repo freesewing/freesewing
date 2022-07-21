@@ -25,7 +25,7 @@ export default function (partNumber, part) {
   const c = 0.55191502449351
 
   let sectionWidth = store.get('sectionWidth')
-  let eyeSize = sectionWidth / 2
+  let eyeSize = sectionWidth / 1.5
   if (partNumber == 1) {
     eyeSize *= 0.65
   }
@@ -55,11 +55,11 @@ export default function (partNumber, part) {
       .attr('class', 'fabric')
       .setRender(true)
   } else {
-    let eyeCirc = eyeSize * Math.PI
-    let eyeBrowWidth = eyeSize * 0.75
+    let eyeBrowWidth = eyeSize * 0.375
+    let eyeCirc = (eyeSize +(eyeBrowWidth *2))* Math.PI
     points.top = new Point(0, 0)
     points.tr = points.top.shift(0, eyeCirc)
-    points.bl = points.top.shift(270, eyeBrowWidth)
+    points.bl = points.top.shift(270, eyeBrowWidth *2)
     points.bottom = points.bl.shift(0, eyeCirc)
 
     paths.eye = new Path()
@@ -84,7 +84,7 @@ export default function (partNumber, part) {
     macro('title', {
       at: points.titleAnchor,
       nr: 3 + partNumber * 3,
-      title: 'Eye' + partNumber,
+      title: 'Eye' + (partNumber == 2 ? 'brow' : partNumber ),
       scale:  0.1
     })
 
