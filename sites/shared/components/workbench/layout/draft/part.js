@@ -51,6 +51,7 @@ import { select } from 'd3-selection'
 import { useRef, useState, useEffect} from 'react'
 import Buttons from './buttons'
 
+
 const Part = props => {
   const { layout, part, partName} = props
 
@@ -205,6 +206,7 @@ const Part = props => {
         width={part.width}
         height={part.height}
         className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
+        id={`${partName}-layout-rect`}
       />
       <Buttons
         transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${flipX ? -1 : 1},${flipY ? -1 : 1})`}
@@ -213,6 +215,7 @@ const Part = props => {
         setRotate={setRotate}
         resetPart={resetPart}
         rotate90={rotate90}
+        partName={partName}
        />
       </>}
     </g>
