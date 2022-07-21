@@ -30,7 +30,7 @@ changePattern: Змінити викрійку
 chatOnDiscord: Чат в Discord
 checkInboxClickLinkInConfirmationEmail: Тепер перевірте поштову скриньку та перейдіть за посиланням у листі, що ми надіслали вам.
 chest: Груди
-chestInfo: Молочні залози потребують додатких замірів. Якщо людина не має молочних залоз, ці заміри будуть приховані. Це не впливає на створення викрійок.
+chestInfo: Молочні залози потребують додаткових замірів. Якщо людина не має молочних залоз, ці заміри будуть приховані. Це не впливає на створення викрійок.
 chooseASize: Обрати розмір
 chooseAPerson: Обрати людину
 chooseADesign: Обрати дизайн
@@ -79,7 +79,7 @@ emailAddress: Електронна адреса
 emailWorksToo: "Якщо Ви не знаєте своє ім'я користувача, можна також використати свою електронну адресу для входу"
 enterEmailPickPassword: Введіть свою електронну адресу та оберіть пароль
 export: Експортувати
-exportTiledPDF: Export tiled PDF
+exportTiledPDF: Експортувати посторінковий PDF
 faq: Поширені запитання
 fieldRemoved: '{field} видалено'
 fieldSaved: '{field} збережено'
@@ -151,7 +151,7 @@ pattern: викрійка
 sewingPatterns: Викрійка для шиття
 patterns: Викрійки
 pendingConfirmation: Підтвердження очікується
-perMonth: За місяць
+perMonth: Щомісячно
 pleaseEnterAValidEmailAddress: Будь ласка, вкажіть чинну електронну адресу
 pleaseIncludeTheInformationBelow: Будь ласка, додайте відомості нижче
 preview: Попередній перегляд
@@ -317,7 +317,7 @@ featureRequiresAccount: Ця функція вимагає обліковий з
 zoom: Масштаб
 zoomIn: Збільшити
 zoomOut: Зменшити
-zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
+zoom-txt: Перемикає між ужиманням висоти чи ширини викрійки для розміщення на Вашому екрані
 savePattern-txt: Збережіть цю викрійку в своєму обліковому записі FreeSewing
 comparePattern: Порівняти викрійку
 showPattern: Показати викрійку
@@ -333,7 +333,7 @@ emailNotReceived: Якщо Ви не отримаєте лист для акти
 error: Помилка
 info: Інформація
 warning: Увага
-debug: Debug
+debug: Налагодження
 unsubscribe: Відписатися
 slogan-come: Приходьте за викрійками
 slogan-stay: Залишайтеся заради спільноти
