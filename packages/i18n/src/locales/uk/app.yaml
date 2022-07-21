@@ -18,7 +18,7 @@ awesome: Чудово
 back: Назад
 becauseThatWouldBeReallyHelpful: Тому що це було б дуже корисно.
 becomeAPatron: Стати патроном
-blockPatterns: Block/Sloper Patterns
+blockPatterns: Викрійки-основи
 blog: Блог
 browseBlogposts: Перегляд блог-постів
 browsePatterns: Перегляд викрійок
@@ -89,7 +89,7 @@ forgotLoginInstructions: "Якщо Ви не пам'ятаєте свій пар
 freesewing: Freesewing
 freesewingOnGithub: Freesewing на GitHub
 garmentPatterns: Викрійки одягу
-giants: Giants
+giants: Велетні
 github: GitHub
 goAheadWeWillWait: Продовжуйте, ми зачекаємо.
 goodJob: Молодець
@@ -113,7 +113,7 @@ manual: Manual
 markdownHelp: MarkDown help
 measurements: Заміри
 menu: Меню
-metadata: Metadata
+metadata: Метадані
 metricUnits: Метричні одиниці (см)
 person: Людина
 people: Люди
@@ -138,7 +138,7 @@ other: Інше
 otherThing: 'Ще {thing}'
 ourPatrons: Наші патрони
 ourRevenuePledge: Куди йде наш прибуток
-patron-2: Powder monkey
+patron-2: Порохова мавпочка
 patron-4: First mate
 patron-8: Капітан
 patronHelp: Якщо Ви маєте будь-які запитання чи бажаєте внести зміни до свого статусу патрона — зв'яжіться з нами, будь ласка
@@ -198,7 +198,7 @@ supportFreesewing: Підтримати freesewing
 tellMeMore: Хочу дізнатися більше
 thanksForYourSupport: Дякуємо за Вашу підтримку
 thisContentIsNotAvailableInLanguage: Цього контенту немає англійською
-thisFieldSupportsMarkdown: This field supports Markdown
+thisFieldSupportsMarkdown: Це поле підтримує Markdown
 thisPageRequiresAuthentication: Ця сторінка потребує автентифікації
 troubleLoggingIn: Не вдається увійти?
 twitter: Twitter
@@ -240,7 +240,7 @@ loginRequiredRedirect: 'Вас було перенаправлено на сто
 various: Різне
 sewing: Шиття
 examples: Приклади
-by: by
+by: від
 years: Роки
 pricing: Ціни
 createFirst: Розпочніть зі створення нової викрійки
@@ -257,9 +257,9 @@ hideDetails: Приховати подробиці
 clickBelowToLogOut: Тицьніть знизу для виходу
 compare: Порівняти
 savePattern: Зберегти викрійку
-recreate: Recreate
-recreateThing: Recreate {thing}
-recreateThingForPerson: Recreate {thing} for {person}
+recreate: Відтворити
+recreateThing: Відтворити {thing}
+recreateThingForPerson: Відтворити {thing} для {person}
 seeYouLaterUser: До зустрічі, {user}
 exportForPrinting: Експортувати для друку
 exportForEditing: Експортувати для коригування
@@ -304,7 +304,7 @@ saveThing: 'Зберегти {thing}'
 shareThing: 'Поширити {thing}'
 link: Посилання
 cloneThing: 'Копіювати {thing}'
-cloneDescription: Створити точну копію, використовуючи заміри вихідної викрійки.
+cloneDescription: Відтворити точну копію, використовуючи заміри вихідної викрійки.
 furtherReading: Подальше вивчення
 saveAsNewPattern: Зберегти як нову викрійку
 saveAsNewPattern-txt: Збережіть цю викрійку/копію в своєму обліковому записі FreeSewing
@@ -322,8 +322,8 @@ savePattern-txt: Збережіть цю викрійку в своєму обл
 comparePattern: Порівняти викрійку
 showPattern: Показати викрійку
 comparePattern-txt: Порівняйте свою викрійку зі стандартизованими розмірами для того, щоб побачити можливі проблеми моделювання
-recreatePattern: Створити нову викрійку
-recreatePattern-txt: Оберіть іншу людину та повторно створіть викрійку для неї
+recreatePattern: Відтворити викрійку
+recreatePattern-txt: Оберіть іншу людину та відтворіть цю викрійку для неї
 editOwnPatternsOnly: Ви можете коригувати лише свої викрійки
 editOwnPatternsOnly-txt: Ви не можете скоригувати цю викрійку, бо вона не Ваша. Але Ви можете використувати її як базу для створення власної викрійки.
 updateNotes-txt: Оновлюйте нотатки до Ваших викрійок
