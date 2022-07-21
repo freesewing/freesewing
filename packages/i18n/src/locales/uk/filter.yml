@@ -1,6 +1,6 @@
 ---
 filter: Фільтр
-department: Department
+department: Категорія
 type: Тип
 tags: Теги
 code: Код
@@ -11,10 +11,10 @@ accessories: Аксесуари
 block: Основа
 pattern: Викрійка
 byPattern: Фільтрувати за викрійками
-underwear: Нижня білизна
-top: Top
-tops: Tops
-bottom: Bottom
-bottoms: Bottoms
-coats: Піджаки та куртки
+underwear: Спідня білизна
+top: Верх
+tops: Верх
+bottom: Низ
+bottoms: Низ
+coats: Верхній одяг
 swimwear: Купальні костюми
