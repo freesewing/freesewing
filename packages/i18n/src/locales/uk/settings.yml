@@ -1,9 +1,9 @@
 ---
 advanced:
-  title: Expert mode
+  title: Режим фахівця
   description: Controls whether or not to display advanced settings and pattern options
 paperless:
-  title: Paperless
+  title: Без паперу
   description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
 sa:
   title: Припуск на шов
@@ -12,25 +12,25 @@ locale:
   title: Мова
   description: Determines the language used on your pattern
 only:
-  title: Contents
+  title: Зміст
   description: Allows you to control which pattern parts will be included in your pattern
 units:
-  title: Units
+  title: Одиниці виміру
   description: Controls the units used on your pattern
 margin:
-  title: Margin
-  description: Controls the margin around pattern parts
+  title: Відступ
+  description: Контролює відступ навколо елементів викрійки
 complete:
   title: Detail
   description: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
 layout:
-  title: Layout
+  title: Макет
   description: Controls how the individual pattern parts are placed on your pattern
 debug:
-  title: Debug
+  title: Налагодження
   description: Enable debug to gain additional info about how your pattern was created
 scale:
-  title: Scale
+  title: Масштаб
   description: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
 renderer:
   title: Render engine
