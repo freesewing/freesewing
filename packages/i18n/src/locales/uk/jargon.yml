@@ -36,8 +36,8 @@ jersey:
   term: джерсі
   description: "Дивіться <a href='/docs/sewing/jersey/'>Джерсі</a> у <a href='/docs/sewing'>Документація до шиття</a>"
 knitBinding:
-  term: knit binding
-  description: "See <a href='/docs/sewing/knit-binding/'>Knit binding</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+  term: трикотажна бейка
+  description: "Дивіться <a href='/docs/sewing/knit-binding/'>Трикотажна бейка</a> у <a href='/docs/sewing'> Документація до шиття</a>"
 knitFabric:
   term: трикотаж
   description: "Дивіться <a href='/docs/sewing/knit-fabric/'>Трикотаж</a> у <a href='/docs/sewing'> Документація до шиття</a>"
