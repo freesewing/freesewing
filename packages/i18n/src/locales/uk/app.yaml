@@ -1,7 +1,7 @@
 ---
 100PercentCommunity: 100% спільнота
 100PercentFree: 100% безкоштовно
-100PercentOpenSource: 100% open source
+100PercentOpenSource: 100% відкритий код
 aboutFreesewing: Про Freesewing
 accessoryPatterns: Викрійки аксесуарів
 account: Обліковий запис
@@ -73,7 +73,7 @@ draftPattern: 'Створити {pattern}'
 testPattern: 'Протестувати {pattern}'
 draftPatternForModel: 'Створити {pattern} для {model}'
 drafts: Чернетки
-draftSettings: Draft settings
+draftSettings: Налаштування чернетки
 dragAndDropImageHere: Перетягніть зображення сюди або виберіть власноруч, тицьнувши на кнопку знизу
 emailAddress: Електронна адреса
 emailWorksToo: "Якщо Ви не знаєте своє ім'я користувача, можна також використати свою електронну адресу для входу"
@@ -120,8 +120,8 @@ people: Люди
 nameInfo: Назва допомагає відрізняти речі. Ви можете обрати назву, яку душа забажає.
 name: Назва
 addThing: Додати {thing}
-newThing: New {thing}
-newPatternForModel: 'New {pattern} for {model}'
+newThing: Створити {thing}
+newPatternForModel: 'Створити {pattern} для {model}'
 noChanges: Без змін
 no: 'Ні' #Keep in quotes or it will evaluate to false
 noPasswordPolicy: Ми не застосовуємо політику правил введення пароля
@@ -135,12 +135,12 @@ optionalMeasurements: Додаткові заміри
 options: Налаштування
 orPayPerYear: Чи оплачувати щороку
 other: Інше
-otherThing: 'Other {thing}'
+otherThing: 'Ще {thing}'
 ourPatrons: Наші патрони
 ourRevenuePledge: Our revenue pledge
 patron-2: Powder monkey
 patron-4: First mate
-patron-8: Captain
+patron-8: Капітан
 patronHelp: Якщо Ви маєте будь-які запитання чи бажаєте внести зміни до свого статусу патрона — зв'яжіться з нами, будь ласка
 patron: Патрон
 patronPitch: Якщо Ви вважаєте, що ми робимо цінну роботу, та можете без труднощів відшкодувати кілька копійок щомісяця, будь ласка, підтримайте нашу працю
@@ -151,12 +151,12 @@ pattern: викрійка
 sewingPatterns: Викрійка для шиття
 patterns: Викрійки
 pendingConfirmation: Підтвердження очікується
-perMonth: Per month
+perMonth: За місяць
 pleaseEnterAValidEmailAddress: Будь ласка, вкажіть чинну електронну адресу
 pleaseIncludeTheInformationBelow: Будь ласка, додайте відомості нижче
 preview: Попередній перегляд
 privacyNotice: Можливе порушення приватності
-proceedWithCaution: Proceed with caution
+proceedWithCaution: Продовжуйте з обережністю
 profile: Обліковий запис
 relatedLinks: Споріднені посилання
 remove: Видалити
