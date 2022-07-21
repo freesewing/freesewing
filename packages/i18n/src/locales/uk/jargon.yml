@@ -12,8 +12,8 @@ darts:
   term: виточки
   description: "Дивіться <a href='/docs/sewing/darts/'>Виточки</a> у<a href='/docs/sewing'>Документація до шиття</a>"
 doubleWeltPockets:
-  term: прорізна кишеня
-  description: "Дивіться <a href='/docs/sewing/double-welt-pockets/'>Прорізна кишеня</a> у<a href='/docs/sewing'>Документація до шиття</a>"
+  term: кишеня з подвійною листочкою
+  description: "Дивіться <a href='/docs/sewing/double-welt-pockets/'>Кишеня з подвійною листочкою</a> у<a href='/docs/sewing'>Документація до шиття</a>"
 ease:
   term: свобода облягання
   description: "Дивіться <a href='/docs/sewing/ease/'>Свобода облягання</a> у <a href='/docs/sewing'>Документація до шиття</a>"
