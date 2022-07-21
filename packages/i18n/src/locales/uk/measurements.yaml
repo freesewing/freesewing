@@ -5,22 +5,22 @@ bustFront: Передній напівобхват грудей
 bustPointToUnderbust: Центр грудей до підгруддя
 bustSpan: Центр грудей
 chest: Обхват грудей
-crossSeam: Cross seam
-crossSeamFront: Cross seam front
+crossSeam: Посадка
+crossSeamFront: Посадка спереду
 head: Обхват голови
 heel: Обхват підйому
 highBustFront: Напівобхват над грудьми
 highBust: Обхват над грудьми
-hips: Hips circumference
+hips: Обхват тазу
 hpsToBust: Від плеча до грудей
 hpsToWaistBack: Від плеча до талії ззаду
 hpsToWaistFront: Від плеча до талії спереду
-inseam: Inseam
-knee: Knee circumference
-neck: Neck circumference
-seat: Seat circumference
-seatBack: Seat back
-crotchDepth: Crotch depth
+inseam: Внутрішній шов
+knee: Обхват коліна
+neck: Обхват шиї
+seat: Обхват стегон
+seatBack: Напівобхват стегон
+crotchDepth: Висота сидіння
 shoulderSlope: Нахил плеча
 shoulderToElbow: Від плеча до ліктя
 shoulderToShoulder: Ширина плечей
