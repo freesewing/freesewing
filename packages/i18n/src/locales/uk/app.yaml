@@ -1,5 +1,5 @@
 ---
-100PercentCommunity: 100% спільнота
+100PercentCommunity: 100% спільноти
 100PercentFree: 100% безкоштовно
 100PercentOpenSource: 100% відкритий код
 aboutFreesewing: Про Freesewing
@@ -66,7 +66,7 @@ documentationForDevelopers: Документація для розробникі
 documentationForEditors: Документація для коригувачів
 documentationForTranslators: Документація для перекладачів
 documentationOverview: Перегляд документації
-dolls: Dolls
+dolls: Ляльки
 download: Завантажити
 draft: Чернетка
 draftPattern: 'Створити {pattern}'
@@ -191,7 +191,7 @@ sortByField: Сортувати за {field}
 standardSeamAllowance: Стандартні припуски на шви
 startOver: Почати знову
 startTranslatingNowOrRead: '{startTranslatingNow}, або спочатку прочитайте {documentationForTranslators}.'
-startTranslatingNow: Start translating now
+startTranslatingNow: Почни перекладати зараз
 subscribe: Підписатися
 support: Підтримати
 supportFreesewing: Підтримати freesewing
@@ -202,34 +202,34 @@ thisFieldSupportsMarkdown: This field supports Markdown
 thisPageRequiresAuthentication: Ця сторінка потребує автентифікації
 troubleLoggingIn: Не вдається увійти?
 twitter: Twitter
-txt-footer: Freesewing is made by a community of contributors<br />with the financial support of our Patrons
+txt-footer: Freesewing працює завдяки спільноті учасників<br />з фінансовою підтримкою наших патронів
 txt-tier2: Рівень з найбільш демократичною ціною. Він дешевший за філіжанку кави, але ми дуже цінуємо Вашу підтримку.
 txt-tier4: Підпишіться на цей рівень та ми доставимо наші смачнющі "булочки" до Вашого ґанку (будь-де на мапі).
 txt-tier8: "Якщо Ви хочете не лише підтримувати нас, а й бажаєте freesewing процвітання, цей рівень для Вас. Також: додаткові \"булочки\". ;)"
 txt-tiers: 'FreeSewing існує завдяки добровільній моделі підписки'
-unitsInfo: Freesewing supports both the metric system and imperial units. Simply pick which one you'd like to use here. (the default is to use the units configured in your account).
-updated: Updated
-update: Update
-userHasBeenWithUsSince: '{user} has been with us since {since}'
-users: Users
+unitsInfo: Freesewing підтримує як метричні, так й імперські одиниці вимірювання. Просто оберіть ті, яким надаєте перевагу. (Зазвичай використовуються одиниці, зазначені в Вашому обліковому записі.)
+updated: Оновлено
+update: Оновити
+userHasBeenWithUsSince: '{user} тут з {since}'
+users: Користувачі
 utilityPatterns: Utility Patterns
-weAreValidatingYourConfirmationCode: We are validating your confirmation code
-weCouldNotValidateYourConfirmationCode: We could not validate your confirmation code
-weEncounteredAProblem: We encountered a problem
-weEncourageYouToReportThis: We encourage you to report this
-welcomeAboard: Welcome aboard
-welcome: Welcome
-weNeverShareYourEmail: We'll never share your email with anyone else
-whatIsThis: What is this?
-withBreasts: With breasts
-withoutBreasts: Without breasts
-yay: Yay!
-yes: 'Yes' #Keep in quotes or it will evaluate to true
-youAreAPatron: You are a patron
-youAreNotAPatron: Your are not a patron
-youAreNotLoggedIn: You are not logged in
-yourRights: Your rights
-makerDocs: Maker documentation
+weAreValidatingYourConfirmationCode: Ми перевіряємо Ваш код підтвердження
+weCouldNotValidateYourConfirmationCode: Нам не вдалося підтвердити Ваш код
+weEncounteredAProblem: У нас виникла проблема
+weEncourageYouToReportThis: Ми будемо вдячні, якщо Ви повідомите нам про це
+welcomeAboard: Ласкаво просимо
+welcome: Вітаємо
+weNeverShareYourEmail: Ми ніколи не передамо Вашу електронну адресу третім обличчям
+whatIsThis: Що це таке?
+withBreasts: З молочними залозами
+withoutBreasts: Без молочних залоз
+yay: Ура!
+yes: '"Так"' #Keep in quotes or it will evaluate to true
+youAreAPatron: Ви патрон
+youAreNotAPatron: Ви не є патроном
+youAreNotLoggedIn: Ви не ввійшли в свій обліковий запис
+yourRights: Ваші права
+makerDocs: Ремісницька документація
 devDocs: Розробницька документація
 slogan: Бібліотека JavaScript для створення швейних викрійок на базі замірів
 getStarted: Розпочати
@@ -241,7 +241,7 @@ various: Різне
 sewing: Шиття
 examples: Приклади
 by: by
-years: Years
+years: Роки
 pricing: Ціни
 createFirst: Розпочніть зі створення нової викрійки
 noPattern: Ви не маєте жодних викрійок (поки що). Створіть нову викрійку, потім збережіть її до свого облікового запису.
@@ -279,66 +279,66 @@ weEstimateYM2B: 'Ми прикидаємо, що {measurement} дорівнює:
 exportAsData: Експорт даних
 availablePatterns: Доступні викрійки
 browseCollection: Огляд колекції
-browseYourPatterns: Browse your patterns
-yourPatterns: Your patterns
-loginNeededToSavePatternsMsg: You need to be logged in to save your patterns
-docsForContributors: Documentation for contributors
-patternDocs: Pattern documentation
-socialMedia: Social media
-create: Create
-browse: Browse
-patrons: Patrons
-scrollToTop: Scroll to top
-sitemap: Sitemap
-contributeToThing: Contribute to {thing}
-mtmIsOurJam: Made-to-measure sewing patterns is what we specialize in
-fitYouDeserve: You're really missing out if you go for standardized sizes.<br />So sign up today, and get the fit you deserve.
-supportNag: <b>Free</b>Sewing is <b>free</b>, but we'd appreciate if you would consider <a href='/patrons/join/'>supporting us</a>.
-madeToMeasure: Made-to-measure
-sizes: Sizes
-standardSizes: Standard sizes
-accountRequired: This feature requires a FreeSewing account
-size: Size
-switchToThing: 'Switch to {thing}'
-saveThing: 'Save {thing}'
-shareThing: 'Share {thing}'
-link: Link
-cloneThing: 'Clone {thing}'
-cloneDescription: Recreate an exact copy, using the measurements of the original pattern.
-furtherReading: Further reading
-saveAsNewPattern: Save As New Pattern
-saveAsNewPattern-txt: Store (a copy of) this pattern in your FreeSewing account
-exportPattern: Export pattern
-printPattern: Print pattern
-exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
-editThing: 'Edit {thing}'
-editPattern-txt: Load this pattern in the pattern editor
-featureRequiresAccount: This feature requires a FreeSewing account
-zoom: Zoom
-zoomIn: Zoom in
-zoomOut: Zoom out
+browseYourPatterns: Переглянути викрійки
+yourPatterns: Ваші викрійки
+loginNeededToSavePatternsMsg: Ви маєте увійти, аби зберігати викрійки
+docsForContributors: Документація для учасників
+patternDocs: Документація викрійок
+socialMedia: Соціальні мережі
+create: Створити
+browse: Огляд
+patrons: Патрони
+scrollToTop: Повернутися нагору
+sitemap: Мапа сайту
+contributeToThing: Долучитися до {thing}
+mtmIsOurJam: Ми спеціалізуємося в швейних викрійках на базі замірів
+fitYouDeserve: Ви обділяєте себе, обираючи стандартизовані розміри.<br />Зареєструйтеся сьогодні та отримайте крій, що личить Вам.
+supportNag: <b>Free</b>Seewing є <b>безкоштовною платформою</b>, але ми будемо вдячні, якщо Ви <a href='/patrons/join/'>підтримаєте нас</a>.
+madeToMeasure: На базі замірів
+sizes: Розміри
+standardSizes: Стандартні розміри
+accountRequired: Ця функція вимагає обліковий запис FreeSewing
+size: Розмір
+switchToThing: 'Перейти до {thing}'
+saveThing: 'Зберегти {thing}'
+shareThing: 'Поширити {thing}'
+link: Посилання
+cloneThing: 'Копіювати {thing}'
+cloneDescription: Створити точну копію, використовуючи заміри вихідної викрійки.
+furtherReading: Подальше вивчення
+saveAsNewPattern: Зберегти як нову викрійку
+saveAsNewPattern-txt: Збережіть цю викрійку/копію в своєму обліковому записі FreeSewing
+exportPattern: Експортувати викрійку
+printPattern: Роздрукувати викрійку
+exportPattern-txt: Експортувати PDF для Вашого принтера, або завантажити цю викрійку в інших форматах
+editThing: 'Коригувати {thing}'
+editPattern-txt: Відкрити цю викрійку в швейному редакторі
+featureRequiresAccount: Ця функція вимагає обліковий запис FreeSewing
+zoom: Масштаб
+zoomIn: Збільшити
+zoomOut: Зменшити
 zoom-txt: Switches between constraining the height or the width of the pattern to fit on your screen
-savePattern-txt: Store this pattern in your FreeSewing account
-comparePattern: Compare pattern
-showPattern: Show pattern
-comparePattern-txt: Compare your pattern to a range a standard sizes to review possible fitting issues
-recreatePattern: Recreate pattern
-recreatePattern-txt: Choose a different person, then recreate this pattern for that person
-editOwnPatternsOnly: You can only edit your own patterns
-editOwnPatternsOnly-txt: You cannot edit this pattern because it isn't yours. But you can use it as a baseline to create your own pattern.
-updateNotes-txt: Update the notes you keep along your pattern
-franceWarning: Beware users in France
-franceWarning-txt: Several French E-mail providers — including, free.fr, laposte.net, orange.fr, and sfr.fr — are known to routinely discard our E-mails.
-emailNotReceived: If you do not receive the activation email, please reach out so we can help you.
-error: Error
-info: Info
-warning: Warning
+savePattern-txt: Збережіть цю викрійку в своєму обліковому записі FreeSewing
+comparePattern: Порівняти викрійку
+showPattern: Показати викрійку
+comparePattern-txt: Порівняйте свою викрійку зі стандартизованими розмірами для того, щоб побачити можливі проблеми моделювання
+recreatePattern: Створити нову викрійку
+recreatePattern-txt: Оберіть іншу людину та повторно створіть викрійку для неї
+editOwnPatternsOnly: Ви можете коригувати лише свої викрійки
+editOwnPatternsOnly-txt: Ви не можете скоригувати цю викрійку, бо вона не Ваша. Але Ви можете використувати її як базу для створення власної викрійки.
+updateNotes-txt: Оновлюйте нотатки до Ваших викрійок
+franceWarning: До уваги користувачів з Франції
+franceWarning-txt: Декілька французьких провайдерів електронної пошти — включаючи free.fr, laposte.net, orange.fr та sfr.fr — відомі регулярним блокуванням наших електронних листів.
+emailNotReceived: Якщо Ви не отримаєте лист для активації, будь ласка, зв'яжіться з нами, щоб ми могли Вам допомогти.
+error: Помилка
+info: Інформація
+warning: Увага
 debug: Debug
-unsubscribe: Unsubscribe
-slogan-come: Come for the sewing patterns
-slogan-stay: Stay for the community
-lightTheme: Light Theme
-darkTheme: Dark Theme
-hax0rTheme: Hax0r Theme
-lgbtqTheme: LGBTQ Theme
-transTheme: Trans Theme
+unsubscribe: Відписатися
+slogan-come: Приходьте за викрійками
+slogan-stay: Залишайтеся заради спільноти
+lightTheme: Світла тема
+darkTheme: Темна тема
+hax0rTheme: Тема Hax0r
+lgbtqTheme: Тема ЛГБТК
+transTheme: Транс тема
