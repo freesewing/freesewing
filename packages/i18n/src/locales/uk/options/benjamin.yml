@@ -6,23 +6,23 @@ bandLength:
   title: Band length
   description: Length of the band
 tipWidth:
-  title: Tip width
-  description: Width of the tips
+  title: Ширина країв
+  description: Ширина чи висота країв бантика
 knotWidth:
-  title: Knot width
-  description: Width of the knot
+  title: Ширина вузлика
+  description: Ширина перемички (місця зав'язування краватки)
 bowLength:
-  title: Bow length
-  description: Length of the bow (when knotted)
+  title: Довжина бантика
+  description: Довжина бантика (у зав'язаному стані)
 bowStyle:
-  title: Bow style
-  description: Style of the bow
+  title: Форма бантика
+  description: Загальна форма бантика
 endStyle:
-  title: End style
-  description: Style of the bow ends
+  title: Форма стрічок
+  description: Форма стрічок під бантиком
 collarEase:
-  title: Collar ease
-  description: The amount of ease at your neck
+  title: Свобода коміра
+  description: Свобода облягання коміра навколо шиї
 ribbonWidth:
-  title: Ribbon width
-  description: Width of the ribbon
+  title: Ширина тасьми
+  description: Ширина тасьми (стрічки)
