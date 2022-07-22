@@ -1,25 +1,25 @@
 ---
 armholeDrop:
-  title: Armhole drop
-  description: Lower the armhole by this amount. Negative values will raise it.
+  title: Спуск пройми
+  description: Опускає пройму на обрану відстань. Негативний показик підіймає пройму.
 backlineBend:
-  title: Back armhole shape
-  description: Determines the shape/bend of the back of the armholes.
+  title: Задня частина пройми
+  description: Визначає форму/криву задньої частини пройми.
 hipsEase:
-  title: Hips ease
-  description: The amount of ease at your hips.
+  title: Свобода облягяння на животі
+  description: Відсоток свободи облягання на животі.
 necklineBend:
-  title: Neckline shape
-  description: Determines the shape/bend of the neckline at the front.
+  title: Форма горловини
+  description: Визначає форму/криву горловини спереду.
 necklineDrop:
-  title: Neckline drop
-  description: The amount the neck is cutout at the front.
+  title: Спуск горловини
+  description: Процент відкриття шиї спереду.
 shoulderStrapPlacement:
-  title: Shoulderstrap placement
-  description: Determines whether the shoulder strap is placed closer to the neck (lower numbers) or the shoulder (higher numbers).
+  title: Розташування лямки
+  description: Визначає розташування лямки ближче до шиї (нижчі номери) або ближче до плеча (вищі номери).
 shoulderStrapWidth:
-  title: Shoulderstrap width
-  description: The width of the shoulder straps.
+  title: Ширина лямки
+  description: Визначає ширину лямок.
 stretchFactor:
-  description: Determines the horizontal negative ease.
-  title: Stretch
+  description: Визначає горизонтальне зменшення свободи облягання.
+  title: Розтяжність
