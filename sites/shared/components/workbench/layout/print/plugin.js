@@ -1,6 +1,6 @@
 const name = 'Pages Plugin'
 const version = '1.0.0'
-const sizes = {
+export const sizes = {
   a4: [ 210, 297 ],
   a3: [ 297, 420 ],
   a2: [ 420, 594 ],
@@ -10,8 +10,10 @@ const sizes = {
   tabloid: [ 279.4, 431.8 ],
 }
 
-export const pagesPlugin = (size='a4', orientation='portrait') => {
-  const [sheetWidth, sheetHeight] = sizes[size];
+export const pagesPlugin = (size='a4', orientation='portrait', margin =10 ) => {
+  let [sheetWidth, sheetHeight] = sizes[size];
+  sheetWidth -= margin
+  sheetHeight -= margin
   return basePlugin({sheetWidth, sheetHeight, orientation})
 }
 

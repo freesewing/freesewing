@@ -3,6 +3,7 @@ import { useTranslation } from 'next-i18next'
 import Settings from './settings'
 import Draft from '../draft/index'
 import {pagesPlugin} from './plugin'
+import {handleExport} from 'shared/components/workbench/export'
 
 const PrintLayout = props => {
 
@@ -28,6 +29,10 @@ const PrintLayout = props => {
   }
   const bgProps = { fill: "url(#page)" }
 
+  const exportIt = () => {
+    handleExport('pdf', props.gist, props.design)
+  }
+
   return (
     <div>
       <h2 className="capitalize">
@@ -39,6 +44,7 @@ const PrintLayout = props => {
       </h2>
       <div className="m-4">
         <Settings {...props} draft={draft} layoutType="printLayout"/>
+        <button className="button" onClick={exportIt}>Export </button>
       </div>
       <Draft
         draft={draft}

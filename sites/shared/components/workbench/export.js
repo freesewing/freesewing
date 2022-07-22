@@ -6,6 +6,7 @@ import axios from 'axios'
 import Popout from 'shared/components/popout'
 import WebLink from 'shared/components/web-link'
 import theme from '@freesewing/plugin-theme'
+import {sizes} from './layout/print/plugin'
 import {jsPDF} from 'jspdf'
 import 'svg2pdf.js'
 
@@ -15,9 +16,9 @@ export const exports = {
   exportAsData: ['json', 'yaml', 'github gist'],
 }
 
-const handleExport = (format, gist, design, app, setLink, setFormat, setSvg, svgRef) => {
-  setLink(false)
-  setFormat(format)
+export const handleExport = (format, gist, design, app, setLink, setFormat, setSvg) => {
+  setLink && setLink(false)
+  setFormat && setFormat(format)
   if (exports.exportAsData.indexOf(format) !== -1) {
     if (format === 'json') exportJson(gist)
     else if (format === 'yaml') exportYaml(gist)
@@ -26,46 +27,57 @@ const handleExport = (format, gist, design, app, setLink, setFormat, setSvg, svg
   else {
     gist.embed=false
     let svg = ''
-    let pattern = new design(gist).use(theme)
+    let pattern = new design(gist)
+    pattern.use(theme)
     try {
       pattern.draft()
-      svg = pattern.render()
-      setSvg(svg);
+      svg = pattern.render('printLayout')
+      if (setSvg) setSvg(svg);
     } catch(err) {
       console.log(err)
     }
     if (format === 'svg') return exportSvg(gist, svg)
-    return exportPdf(gist, pattern, svg, svgRef);
-    // app.startLoading()
-    // axios.post('https://tiler.freesewing.org/api', {
-    //   svg,
-    //   format: 'pdf',
-    //   size: format === 'pdf' ? 'full' : format,
-    //   url: 'https://freesewing.org',
-    //   design: gist.design
-    // })
-    // .then(res => setLink(res.data.link))
-    // .catch(err => console.log(err))
-    // .finally(() => app.stopLoading())
+
+    const settings = format === 'pdf' ? (gist._state.layout?.forPrinting?.page || {
+        size: 'a4',
+        orientation: 'portrait',
+        margin: 10
+      }) : {
+      size: format,
+      orientation: 'portrait',
+      margin: 10
+    }
+    return exportPdf(gist, pattern, svg, settings);
   }
 }
 
-const exportPdf = async (gist, pattern, svg, svgRef) => {
-  const margin = 10;
-  const pageWidth = 215.9
-  const pageHeight = 279.4
+const exportPdf = async (gist, pattern, svg, settings) => {
+  const pageSize = sizes[settings.size]
+  const pageWidth = pageSize[settings.orientation === 'portrait' ? 0 : 1]
+  const pageHeight = pageSize[settings.orientation === 'portrait' ? 1 : 0]
+  const margin = settings.margin || 10
+
+  // const pageSettings =
+  const pdf = new jsPDF({format: [pageWidth, pageHeight], orientation: settings.orientation === 'portrait' ? 'p' : 'l'})
 
   await setTimeout(() => {}, 20)
-  const pdf = new jsPDF({format: 'letter'})
-  pdf.deletePage(1);
-  const svgElem = svgRef.current.children[0];
+  const divElem = document.createElement('div');
+  divElem.innerHTML = svg;
+
+  const svgElem = divElem.firstElementChild;
+
+  svgElem.setAttribute('width', pageWidth - 20)
+  svgElem.setAttribute('height', pageHeight - 20)
+  pdf.rect(20, 20, pageWidth - 40, pageHeight - 40, 'S')
+  await pdf.svg(svgElem, 20, 20, pageWidth - 40, pageHeight - 40)
+
   svgElem.setAttribute('width', pageWidth)
   svgElem.setAttribute('height', pageHeight)
   const wPages = Math.ceil(pattern.width/pageWidth)
   const hPages = Math.ceil(pattern.height/pageHeight)
   for (var w = 0; w < wPages; w++) {
     for (var h = 0; h < hPages; h++) {
-      pdf.addPage({format: 'letter'});
+      pdf.addPage();
       pdf.setDrawColor('CCCCCC')
       pdf.rect(margin, margin, pageWidth - margin * 2, pageHeight - margin * 2, 'S')
       svgElem.setAttribute('viewBox', `${w * (pageWidth - margin)} ${h * (pageHeight - margin)} ${pageWidth} ${pageHeight}`)
@@ -75,6 +87,7 @@ const exportPdf = async (gist, pattern, svg, svgRef) => {
 
   pdf.save(`freesewing-${gist.design || 'gist'}.pdf`)
 }
+
 const exportJson = gist => {
   const blob = new Blob([JSON.stringify(gist, null, 2)], {
     type: 'application/json;charset=utf-8'
@@ -140,7 +153,7 @@ const ExportDraft = ({ gist, design, app }) => {
           </div>
         ))}
       </div>
-      <div className="hidden" ref={svgDiv} dangerouslySetInnerHTML={{__html: svg}}></div>
+      <div ref={svgDiv} dangerouslySetInnerHTML={{__html: svg}}></div>
     </div>
   )
 }
