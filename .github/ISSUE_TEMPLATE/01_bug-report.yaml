@@ -1,0 +1,135 @@
+---
+name: 🐛 Bug report
+description: Report a problem, or something that went wrong
+title: "[bug]: "
+labels: [ "\U0001F41B bug" ]
+body:
+  - type: markdown
+    attributes:
+      value: "Bugs happen :shrug: Please complete the information below so we know what's going on :point_down:"
+  - type: textarea
+    id: desc
+    attributes:
+      label: "What seems to be the problem? 🤔"
+      description: Please provide a clear and concise description of the problem you encountered
+      placeholder: |
+        When I generate a Simone with my dimensions, the corners of the yoke appear malformed. \
+        This happens both in the lab as on freesewing.org. Seems to occur only when the `box pleat` option is enabled.
+  - type: dropdown
+    id: pkg
+    attributes:
+      label: "Design / Plugin / Package 🧐"
+      description: Do you know what design/plugin/package the bug is in?
+      multiple: true
+      options:
+        - designs/aaron
+        - designs/albert
+        - designs/bee
+        - designs/bella
+        - designs/benjamin
+        - designs/bent
+        - designs/bob
+        - designs/breanna
+        - designs/brian
+        - designs/bruce
+        - designs/carlita
+        - designs/carlton
+        - designs/cathrin
+        - designs/charlie
+        - designs/cornelius
+        - designs/diana
+        - designs/examples
+        - designs/florence
+        - designs/florent
+        - designs/hi
+        - designs/holmes
+        - designs/hortensia
+        - designs/huey
+        - designs/hugo
+        - designs/jaeger
+        - designs/legend
+        - designs/lucy
+        - designs/lunetius
+        - designs/noble
+        - designs/paco
+        - designs/penelope
+        - designs/plugintest
+        - designs/rendertest
+        - designs/sandy
+        - designs/shin
+        - designs/simon
+        - designs/simone
+        - designs/sven
+        - designs/tamiko
+        - designs/teagan
+        - designs/theo
+        - designs/tiberius
+        - designs/titan
+        - designs/trayvon
+        - designs/tutorial
+        - designs/unice
+        - designs/ursula
+        - designs/wahid
+        - designs/walburga
+        - designs/waralee
+        - designs/yuri
+        - plugins/plugin-banner
+        - plugins/plugin-bartack
+        - plugins/plugin-bundle
+        - plugins/plugin-bust
+        - plugins/plugin-buttons
+        - plugins/plugin-cutonfold
+        - plugins/plugin-dimension
+        - plugins/plugin-export-dxf
+        - plugins/plugin-flip
+        - plugins/plugin-gore
+        - plugins/plugin-grainline
+        - plugins/plugin-i18n
+        - plugins/plugin-logo
+        - plugins/plugin-measurements
+        - plugins/plugin-mirror
+        - plugins/plugin-notches
+        - plugins/plugin-round
+        - plugins/plugin-scalebox
+        - plugins/plugin-sprinkle
+        - plugins/plugin-svgattr
+        - plugins/plugin-theme
+        - plugins/plugin-title
+        - plugins/plugin-validate
+        - plugins/plugin-versionfree-svg
+        - packages/components
+        - packages/config-helpers
+        - packages/core
+        - packages/css-theme
+        - packages/gatsby-remark-jargon
+        - packages/i18n
+        - packages/models
+        - packages/mui-theme
+        - packages/new-design
+        - packages/pattern-info
+        - packages/prettier-config
+        - packages/rehype-jargon
+        - packages/remark-jargon
+        - packages/utils
+  - type: dropdown
+    id: patron
+    attributes:
+      label: Are you a FreeSewing patron? 😃 
+      description: "Patrons support us financially :pray: so they get priority"
+      options:
+        - "Yes, I am a tier-2 patron ❤️"
+        - "Yes, I am a tier-4 patron ❤️  💙"
+        - "Yes, I am a tier-8 patron ❤️  💙 💜"
+        - "No, I am not 😞"
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the issue you are facing here.
+  - type: markdown
+    attributes:
+      value: |
+        Please keep in mind that **FreeSewing is a community project** that depends on **[your support](https://freesewing.org/community/join/)**.
+---
