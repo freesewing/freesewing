@@ -1,8 +1,8 @@
 ---
 sleeveBend:
-  title: Sleeve bend
-  description: Controls the bend of the sleeve at the elbow.
+  title: Згин рукава
+  description: Керує кутом згину рукава в лікті.
 sleevecapHeight:
-  title: Sleevecap height
-  description: Controls the height of the sleevecap.
+  title: Висота окату
+  description: Керує висотою окату рукава.
 
