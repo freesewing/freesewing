@@ -1,19 +1,19 @@
 ---
 bulge:
-  title: Bulge
-  description: Increase angle to create more room in the front pouch.
+  title: Пахова вставка
+  description: Керує кутом пахової вставки для регулювання простору в передній мішковині.
 legBonus:
-  title: Leg length bonus
-  description: Extra length to add to the legs.
+  title: Додаткова довжина
+  description: Збільшує загальну довжину по нозі.
 rise:
-  title: Rise
-  description: Amount to raise the waist. A negative value will lower it.
+  title: Посадка
+  description: Керує висотою посадки на талії. Негативний показник зробить посадку нижчою.
 stretch:
-  title: Stretch
-  description: The amount of negative ease.
+  title: Еластичність
+  description: Керує негативною свободою облягання.
 legStretch:
-  title: Leg stretch
-  description: 'For best results, you want to fit your legs a bit more snugly — say no to gaping.'
+  title: Обхват ноги
+  description: 'Для найкращого результату рекомендується дещо туга посадка на нозі — ніяких пройм.'
 backRise:
-  title: Back rise
-  description: Percentage by which the waist will be raised at the back.
+  title: Посадка ззаду
+  description: Керує відсотком висоти посадки ззаду.
