@@ -1,13 +1,13 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/rehype-jargon"
-  title="@freesewing/rehype-jargon on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/rehype-jargon.svg"
-  alt="@freesewing/rehype-jargon on NPM"/>
+  href="https://www.npmjs.com/package/rehype-jargon"
+  title="rehype-jargon on NPM"
+  ><img src="https://img.shields.io/npm/v/rehype-jargon.svg"
+  alt="rehype-jargon on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/rehype-jargon.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/rehype-jargon.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -46,7 +46,7 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/rehype-jargon
+# rehype-jargon
 
 A Rehype plugin for jargon terms
 
@@ -183,7 +183,7 @@ info and instructions on how to use this plugin with [Gatsby](https://www.gatsby
 This repository is our *monorepo* 
 holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
 
-This folder holds: @freesewing/rehype-jargon
+This folder holds: rehype-jargon
 
 If you're not entirely sure what to do or how to start, type this command:
 
