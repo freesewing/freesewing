@@ -7,4 +7,4 @@ length:
   description: Контролює довжину маски
 curve:
   title: Крива
-  description: Controls the curvature of the upper edge of the face mask
+  description: Контролює вигин верхнього краю маски
