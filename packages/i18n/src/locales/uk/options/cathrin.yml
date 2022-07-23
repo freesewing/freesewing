@@ -1,15 +1,15 @@
 ---
 panels:
-  title: Number of panels
-  description: The number of panels to draft. More panels are better to fit a curvier model.
+  title: Кількість панелей
+  description: Загальна кількість панелей на викрійці. Більша кількість панелей забезпечить кращу посадку для гладких моделей.
   options:
-    '11': 11 panels
-    '13': 13 panels
+    '11': 11 панелей
+    '13': 13 панелей
 waistReduction:
-  title: Waist reduction
-  description: The amount by which you want the corset to pinch your waist.
+  title: Утягування талії
+  description: Відсоток утягування талії для бажаного ефекту.
 backOpening:
-  title: Back opening
+  title: Зріз на спині
   description: Opening at the center back closure.
 backRise:
   title: Back rise
