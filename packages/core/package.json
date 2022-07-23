@@ -32,7 +32,7 @@
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.js",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "test": "nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js",
+    "test": "nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.js",
     "vbuild": "VERBOSE=1 node build.js",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
