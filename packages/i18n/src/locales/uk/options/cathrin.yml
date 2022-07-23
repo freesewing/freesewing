@@ -10,19 +10,19 @@ waistReduction:
   description: Відсоток утягування талії для бажаного ефекту.
 backOpening:
   title: Зріз на спині
-  description: Opening at the center back closure.
+  description: Ширина відстані центрального спинного зрізу.
 backRise:
-  title: Back rise
-  description: How much the back panels rise from your arms to your center back.
+  title: Верхня посадка ззаду
+  description: Висота задніх панелей від боків до центру спини.
 backDrop:
-  title: Back drop
-  description: How much the back panels lower from your hips towards your center back. Negative values will raise the back.
+  title: Нижня посадка ззаду
+  description: Наскільки задні панелі опускаються від стегон до центру спини. Від'ємне значення підніме ці панелі вгору.
 frontRise:
-  title: Front rise
-  description: 'Rise of the front panels at center front, between your breasts. Negative values will lower them.'
+  title: Верхня посадка спереду
+  description: 'Висота передніх панелей від боків до центру між грудьми. Від''ємне значення опустить ці панелі донизу.'
 frontDrop:
-  title: Front drop
-  description: How much the front panels lower from your hips towards your center front.
+  title: Нижня посадка спереду
+  description: Наскільки передні панелі опускаються від стегон до центру тулуба.
 hipRise:
-  title: Hip rise
-  description: How much the side panels rise on your hips.
+  title: Посадка на стегнах
+  description: Наскільки високо розташовуються бокові панелі відповідно до стегон.
