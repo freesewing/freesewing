@@ -11,6 +11,7 @@ and multiple parts together typically make up a pattern.
 
 | Property | Description |
 | --------:| ----------- |
+| `attributes` | An [Attributes](/reference/api/attributes) instance holding the part's attributes |
 | `paths` | A plain object to store your paths in |
 | `points` |  A plain object to store your points in |
 | `render` |  A flag that controls whether to include the part in the render output |
