@@ -12,43 +12,43 @@ shoulderToShoulderEase:
   title: Свобода облягання ширини плечей
   description: Контролює свободу облягання ширини плечей. Початково налаштовано на -5%, бо Белла розроблена як викрійка-основа, що застосовується у швейній індустрії.
 fullChestEaseReduction:
-  title: Full chest ease reduction
-  description: Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+  title: Зменшення свободи облягання на грудях
+  description: Керує незалежним від інших параметрів зменшенням свободи облягання на грудях для (більш) тугої посадки
 backDartHeight:
-  title: Back dart height
-  description: Controls the height of the back dart
+  title: Висота спинної виточки
+  description: Керує висотою виточки на спині (більше значення зменшує висоту виточки)
 bustDartLength:
-  title: Bust dart length
-  description: Controls the length of the bust dart
+  title: Довжина грудної виточки
+  description: Керує загальною довжиною виточки на грудях
 waistDartLength:
-  title: Waist dart length
-  description: Controls the length of the waist dart
+  title: Довжина поясної виточки
+  description: Керує загальною довжиною виточки на талії
 bustDartCurve:
-  title: Bust dart curve
-  description: Controls the curvature of the bust dart
+  title: Заокруглення грудної виточки
+  description: Керує наскільки кривими є лінії виточки на грудях
 armholeDepth:
-  title: Armhole depth
-  description: Controls the depth of the armhole
+  title: Глибина пройми рукава
+  description: Керує глибиною (шириною) пройми рукава
 backArmholeSlant:
-  title: Back armhole slant
-  description: Slightly rotates the armhole around its pitch point
+  title: Нахил пройми рукава на спині
+  description: Трохи змінює нахил пройми рукава на спині, спираючись на точку збігу пройми
 frontArmholeCurvature:
-  title: Front armhole curvature
-  description: Controls how deep the armhole is scooped out at the front bottom
+  title: Заокруглення пройми рукава спереду
+  description: Керує заокругленням пройми рукава спереду
 backArmholeCurvature:
-  title: Back armhole curvature
-  description: Controls how deep the armhole is scooped out at the back bottom
+  title: Заокруглення пройми рукава ззаду
+  description: Керує заокругленням пройми рукава ззаду
 frontArmholePitchDepth:
-  title: Front armhole pitch depth
-  description: Tweaks the horizontal placement of the front armhole pitch point
+  title: Висота передньої точки збігу пройми
+  description: Налаштовує розташування передньої точки збігу по вертикалі
 backArmholePitchDepth:
-  title: Back armhole pitch depth
-  description: Tweaks the horizontal placement of the back armhole pitch point
+  title: Висота задньої точки збігу пройми
+  description: Налаштовує розташування задньої точки збігу по вертикалі
 backNeckCutout:
-  title: Back neck cutout
-  description: Controls how deep the neck opening is scooped out at at the back
+  title: Глибина горловини ззаду
+  description: Керує глибиною горловини на задньому полотнищі
 backHemSlope:
-  title: Back hem slope
+  title: Нахил заднього краю
   description: Controls the slope of the hem at the back
 frontShoulderWidth:
   title: Front shoulder width
