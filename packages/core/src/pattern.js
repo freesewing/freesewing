@@ -462,11 +462,11 @@ Pattern.prototype.sampleModels = function (models, focus = false) {
   return this
 }
 
-Pattern.prototype.render = function () {
+Pattern.prototype.render = function (layoutType="layout", forPdf) {
   this.svg = new Svg(this)
   this.svg.hooks = this.hooks
 
-  return this.pack().svg.render(this)
+  return this.pack(layoutType, forPdf).svg.render(this)
 }
 
 Pattern.prototype.on = function (hook, method, data) {
@@ -523,7 +523,7 @@ Pattern.prototype.macro = function (key, method) {
 }
 
 /** Packs parts in a 2D space and sets pattern size */
-Pattern.prototype.pack = function (layoutType="layout") {
+Pattern.prototype.pack = function (layoutType="layout", forPdf) {
   if (this.events.error.length > 0) {
     this.raise.warning(`One or more errors occured. Not packing pattern parts`)
     return this
@@ -580,7 +580,7 @@ Pattern.prototype.pack = function (layoutType="layout") {
       // Some parts are added by late-stage plugins
       if (this.parts[partId]) {
         let transforms = thisLayout.parts[partId]
-        this.parts[partId].generateTransform(transforms);
+        this.parts[partId].generateTransform(transforms, forPdf);
       }
     }
   }

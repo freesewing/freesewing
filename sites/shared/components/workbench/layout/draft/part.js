@@ -181,43 +181,48 @@ const Part = props => {
   }
 
   const rotate90 = (direction = 1) => {
-    // if (flipX) direction *= -1
-    // if (flipY) direction *= -1
+    if (flipX) direction *= -1
+    if (flipY) direction *= -1
 
     rotation += 90 * direction
 
     updateLayout();
   }
 
+  const gProps = getProps(part);
+  console.log(partName, gProps)
+
   return (
     <g
-      {...getProps(part)}
       id={`part-${partName}`}
       ref={partRef}
       onClick={toggleDragRotate}
-      transform-origin={`${center.x} ${center.y}`}
+      {...gProps}
+      // transform-origin={`${center.x} ${center.y}`}
     >
-      {PartInner(props)}
-      {!props.isLayoutPart && <>
-      <text x={center.x} y={center.y} ref={centerRef} />
-      <rect
-        x={part.topLeft.x}
-        y={part.topLeft.y}
-        width={part.width}
-        height={part.height}
-        className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
-        id={`${partName}-layout-rect`}
-      />
-      <Buttons
-        transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${flipX ? -1 : 1},${flipY ? -1 : 1})`}
-        flip={flip}
-        rotate={rotate}
-        setRotate={setRotate}
-        resetPart={resetPart}
-        rotate90={rotate90}
-        partName={partName}
-       />
-      </>}
+      <g >
+        {PartInner(props)}
+        {!props.isLayoutPart && <>
+        <text x={center.x} y={center.y} ref={centerRef} />
+        <rect
+          x={part.topLeft.x}
+          y={part.topLeft.y}
+          width={part.width}
+          height={part.height}
+          className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
+          id={`${partName}-layout-rect`}
+        />
+        <Buttons
+          transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${flipX ? -1 : 1},${flipY ? -1 : 1})`}
+          flip={flip}
+          rotate={rotate}
+          setRotate={setRotate}
+          resetPart={resetPart}
+          rotate90={rotate90}
+          partName={partName}
+         />
+        </>}
+      </g>
     </g>
   )
 }

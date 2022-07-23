@@ -26,12 +26,19 @@ export const getProps = (obj) => {
     'marker-end': 'markerEnd'
   }
   let props = {}
+
+  // let style = obj.attributes.get('style') || ''
+  // style += `transform-origin: center center`
+
+  // obj.attributes.set('style', style)
+
   for (let key in obj.attributes.list) {
     if (key === 'style') props[key] = convert(obj.attributes.get(key))
     if (Object.keys(rename).indexOf(key) !== -1) props[rename[key]] = obj.attributes.get(key)
     else if (key !== 'style') props[key] = obj.attributes.get(key)
   }
 
+  // console.log(obj, props)
   return props
 }
 

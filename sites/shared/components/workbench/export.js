@@ -10,6 +10,11 @@ import {sizes} from './layout/print/plugin'
 import {jsPDF} from 'jspdf'
 import 'svg2pdf.js'
 
+import {
+  Canvg
+} from 'canvg'
+
+
 export const exports = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid'],
   exportForEditing: ['svg', 'pdf'],
@@ -31,7 +36,7 @@ export const handleExport = (format, gist, design, app, setLink, setFormat, setS
     pattern.use(theme)
     try {
       pattern.draft()
-      svg = pattern.render('printLayout')
+      svg = pattern.render('printLayout', format === 'pdf' || exports.exportForPrinting.indexOf(format) !== -1)
       if (setSvg) setSvg(svg);
     } catch(err) {
       console.log(err)
@@ -60,7 +65,7 @@ const exportPdf = async (gist, pattern, svg, settings) => {
   // const pageSettings =
   const pdf = new jsPDF({format: [pageWidth, pageHeight], orientation: settings.orientation === 'portrait' ? 'p' : 'l'})
 
-  await setTimeout(() => {}, 20)
+  // await setTimeout(() => {}, 20)
   const divElem = document.createElement('div');
   divElem.innerHTML = svg;
 
@@ -69,6 +74,56 @@ const exportPdf = async (gist, pattern, svg, settings) => {
   svgElem.setAttribute('width', pageWidth - 20)
   svgElem.setAttribute('height', pageHeight - 20)
   pdf.rect(20, 20, pageWidth - 40, pageHeight - 40, 'S')
+
+  // var c = pdf.canvas;
+  // c.width = pageWidth - 40;
+  // c.height = pageHeight - 40;
+
+  // var ctx = c.getContext("2d");
+  // ctx.ignoreClearRect = true;
+  // ctx.fillStyle = "#ffffff";
+  // ctx.fillRect(0, 0, pageWidth - 40, pageHeight - 40);
+
+  // //load a svg snippet in the canvas with id = 'drawingArea'
+  // const options = {
+  //   ignoreMouse: true,
+  //   ignoreAnimation: true,
+  //   ignoreDimensions: true
+  // };
+  // const canvg = await Canvg.fromString(ctx, svg, options);
+  // await canvg.render(options);
+
+  // var doc = new jsPDF({
+  //   orientation: "p",
+  //   unit: "pt",
+  //   format: "c1",
+  //   floatPrecision: 3
+  // });
+
+  // var c = doc.canvas;
+  // c.width = 1000;
+  // c.height = 500;
+
+  // var ctx = doc.canvas.getContext("2d");
+  // ctx.ignoreClearRect = true;
+  // ctx.fillStyle = "#ffffff";
+  // ctx.fillRect(0, 0, 1000, 700);
+
+  // //load a svg snippet in the canvas with id = 'drawingArea'
+  // const options = {
+  //   ignoreMouse: true,
+  //   ignoreAnimation: true,
+  //   ignoreDimensions: true
+  // };
+
+  // let canvSvg = svg.replaceAll('className','class')
+  // // '<svg width="600" height="600"><text x="50" y="50">hello world!</text></svg>'
+
+  // const canvg = await Canvg.fromString(ctx, canvSvg, options);
+  // await canvg.render(options);
+  // let jpeg = c.toDataURL('image/jpg');
+
+
   await pdf.svg(svgElem, 20, 20, pageWidth - 40, pageHeight - 40)
 
   svgElem.setAttribute('width', pageWidth)
