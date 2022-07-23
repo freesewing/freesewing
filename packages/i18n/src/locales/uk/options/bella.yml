@@ -31,7 +31,7 @@ armholeDepth:
   description: Керує глибиною (шириною) пройми рукава
 backArmholeSlant:
   title: Нахил пройми рукава на спині
-  description: Трохи змінює нахил пройми рукава на спині, спираючись на точку збігу пройми
+  description: Трохи змінює нахил пройми рукава на спині відповідно до точки збігу пройми
 frontArmholeCurvature:
   title: Заокруглення пройми рукава спереду
   description: Керує заокругленням пройми рукава спереду
@@ -49,10 +49,10 @@ backNeckCutout:
   description: Керує глибиною горловини на задньому полотнищі
 backHemSlope:
   title: Нахил заднього краю
-  description: Controls the slope of the hem at the back
+  description: Керує нахилом краю на спині
 frontShoulderWidth:
-  title: Front shoulder width
-  description: Controls the narrowness of the front shoulders relative to the back
+  title: Ширина плечей спереду
+  description: Контролює ширину плечей переднього полотнища відповідно до заднього
 highBustWidth:
-  title: High bust width
-  description: Allows you to tweak the hight bust width at the front
+  title: Ширина полички
+  description: Дозволяє керувати шириною полички на ліфі
