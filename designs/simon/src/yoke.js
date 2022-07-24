@@ -29,7 +29,6 @@ export default (part) => {
     delete snippets.armholePitchNotch
     delete snippets.collarNotch
     delete snippets.shoulderNotch
-    delete snippets.shoulderNotch
     snippets.sleevecapNotch = new Snippet('notch', points.armholeYokeSplitPreBoxpleat)
     points.title = new Point(points.neck.x, points.cbYoke.y / 3)
     macro('title', { at: points.title, nr: 4, title: 'yoke', scale: 0.8 })
