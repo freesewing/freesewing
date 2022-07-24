@@ -28,32 +28,37 @@ export const handleExport = (format, gist, design, app, setLink, setFormat, setS
     if (format === 'json') exportJson(gist)
     else if (format === 'yaml') exportYaml(gist)
     else if (format === 'github gist') exportGithubGist(gist, app, setLink)
-  }
-  else {
-    gist.embed=false
-    let svg = ''
-    let pattern = new design(gist)
-    pattern.use(theme)
-    try {
-      pattern.draft()
-      svg = pattern.render('printLayout', format === 'pdf' || exports.exportForPrinting.indexOf(format) !== -1)
-      if (setSvg) setSvg(svg);
-    } catch(err) {
-      console.log(err)
-    }
-    if (format === 'svg') return exportSvg(gist, svg)
 
-    const settings = format === 'pdf' ? (gist._state.layout?.forPrinting?.page || {
-        size: 'a4',
-        orientation: 'portrait',
-        margin: 10
-      }) : {
-      size: format,
-      orientation: 'portrait',
-      margin: 10
-    }
-    return exportPdf(gist, pattern, svg, settings);
+    return
   }
+
+  gist.embed=false
+  let svg = ''
+  let pattern = new design(gist)
+  pattern.use(theme)
+
+  try {
+    pattern.draft()
+    svg = pattern.render('printLayout', format !== 'svg')
+    if (setSvg) setSvg(svg);
+
+  } catch(err) {
+    console.log(err)
+  }
+  if (format === 'svg') return exportSvg(gist, svg)
+
+  const settings = format === 'pdf' ? (gist._state.layout?.forPrinting?.page || {
+    size: 'a4',
+    orientation: 'portrait',
+    margin: 10
+  }) : {
+    size: format,
+    orientation: 'portrait',
+    margin: 10
+  }
+
+  return exportPdf(gist, pattern, svg, settings);
+
 }
 
 const exportPdf = async (gist, pattern, svg, settings) => {
@@ -61,75 +66,28 @@ const exportPdf = async (gist, pattern, svg, settings) => {
   const pageWidth = pageSize[settings.orientation === 'portrait' ? 0 : 1]
   const pageHeight = pageSize[settings.orientation === 'portrait' ? 1 : 0]
   const margin = settings.margin || 10
+  const wPages = Math.ceil(pattern.width/pageWidth)
+  const hPages = Math.ceil(pattern.height/pageHeight)
 
-  // const pageSettings =
   const pdf = new jsPDF({format: [pageWidth, pageHeight], orientation: settings.orientation === 'portrait' ? 'p' : 'l'})
 
-  // await setTimeout(() => {}, 20)
   const divElem = document.createElement('div');
   divElem.innerHTML = svg;
 
   const svgElem = divElem.firstElementChild;
 
-  svgElem.setAttribute('width', pageWidth - 20)
-  svgElem.setAttribute('height', pageHeight - 20)
-  pdf.rect(20, 20, pageWidth - 40, pageHeight - 40, 'S')
+  let coverMargin = 50
+  let coverWidth = pageWidth - coverMargin * 2
+  let coverHeight = pageHeight - coverMargin * 2
+  svgElem.setAttribute('width', coverWidth)
+  svgElem.setAttribute('height', coverHeight)
+  svgElem.setAttribute('viewBox', `0 0 ${wPages * pageWidth} ${hPages * pageHeight}`)
+  pdf.rect(coverMargin, coverMargin, coverWidth, coverHeight, 'S')
 
-  // var c = pdf.canvas;
-  // c.width = pageWidth - 40;
-  // c.height = pageHeight - 40;
-
-  // var ctx = c.getContext("2d");
-  // ctx.ignoreClearRect = true;
-  // ctx.fillStyle = "#ffffff";
-  // ctx.fillRect(0, 0, pageWidth - 40, pageHeight - 40);
-
-  // //load a svg snippet in the canvas with id = 'drawingArea'
-  // const options = {
-  //   ignoreMouse: true,
-  //   ignoreAnimation: true,
-  //   ignoreDimensions: true
-  // };
-  // const canvg = await Canvg.fromString(ctx, svg, options);
-  // await canvg.render(options);
-
-  // var doc = new jsPDF({
-  //   orientation: "p",
-  //   unit: "pt",
-  //   format: "c1",
-  //   floatPrecision: 3
-  // });
-
-  // var c = doc.canvas;
-  // c.width = 1000;
-  // c.height = 500;
-
-  // var ctx = doc.canvas.getContext("2d");
-  // ctx.ignoreClearRect = true;
-  // ctx.fillStyle = "#ffffff";
-  // ctx.fillRect(0, 0, 1000, 700);
-
-  // //load a svg snippet in the canvas with id = 'drawingArea'
-  // const options = {
-  //   ignoreMouse: true,
-  //   ignoreAnimation: true,
-  //   ignoreDimensions: true
-  // };
-
-  // let canvSvg = svg.replaceAll('className','class')
-  // // '<svg width="600" height="600"><text x="50" y="50">hello world!</text></svg>'
-
-  // const canvg = await Canvg.fromString(ctx, canvSvg, options);
-  // await canvg.render(options);
-  // let jpeg = c.toDataURL('image/jpg');
-
-
-  await pdf.svg(svgElem, 20, 20, pageWidth - 40, pageHeight - 40)
+  await pdf.svg(svgElem, {x: coverMargin, y: coverMargin})
 
   svgElem.setAttribute('width', pageWidth)
   svgElem.setAttribute('height', pageHeight)
-  const wPages = Math.ceil(pattern.width/pageWidth)
-  const hPages = Math.ceil(pattern.height/pageHeight)
   for (var w = 0; w < wPages; w++) {
     for (var h = 0; h < hPages; h++) {
       pdf.addPage();
