@@ -97,6 +97,16 @@ const Part = props => {
   /** get the delta rotation from the start of the drag event to now */
   const getRotation = (event) => angle(center, event.subject) - angle(center, { x:event.x, y: event.y });
 
+  const setTransforms = () => {
+    // get the transform attributes
+    const transforms = generatePartTransform(translateX, translateY, rotation, flipX, flipY, part);
+
+    const me = select(partRef.current);
+    for (var t in transforms) {
+      me.attr(t, transforms[t])
+    }
+  }
+
   const handleDrag = drag()
     // subject allows us to save data from the start of the event to use throughout event handing
     .subject(function(event) {
@@ -123,20 +133,14 @@ const Part = props => {
         translateY = event.y
       }
 
-      // get the transform attributes
-      const transforms = generatePartTransform(translateX, translateY, rotation, flipX, flipY, part);
-
-      const me = select(this);
-      for (var t in transforms) {
-        me.attr(t, transforms[t])
-      }
+      setTransforms()
     })
     .on('end', function(event) {
       // save to gist
       updateLayout()
     })
 
-  const resetPart = () => {
+  const resetPart = (event) => {
     rotation = 0
     flipX = 0
     flipY = 0
@@ -151,6 +155,7 @@ const Part = props => {
   const updateLayout = (history=true) => {
     if (!partRef.current) return
 
+    setTransforms()
     const partRect = partRef.current.getBoundingClientRect();
     const matrix = partRef.current.ownerSVGElement.getScreenCTM().inverse();
 
@@ -186,43 +191,37 @@ const Part = props => {
 
     rotation += 90 * direction
 
-    updateLayout();
+    updateLayout()
   }
-
-  const gProps = getProps(part);
-  console.log(partName, gProps)
 
   return (
     <g
       id={`part-${partName}`}
       ref={partRef}
       onClick={toggleDragRotate}
-      {...gProps}
-      // transform-origin={`${center.x} ${center.y}`}
+      {...getProps(part)}
     >
-      <g >
-        {PartInner(props)}
-        {!props.isLayoutPart && <>
-        <text x={center.x} y={center.y} ref={centerRef} />
-        <rect
-          x={part.topLeft.x}
-          y={part.topLeft.y}
-          width={part.width}
-          height={part.height}
-          className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
-          id={`${partName}-layout-rect`}
-        />
-        <Buttons
-          transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${flipX ? -1 : 1},${flipY ? -1 : 1})`}
-          flip={flip}
-          rotate={rotate}
-          setRotate={setRotate}
-          resetPart={resetPart}
-          rotate90={rotate90}
-          partName={partName}
-         />
-        </>}
-      </g>
+      {PartInner(props)}
+      {!props.isLayoutPart && <>
+      <text x={center.x} y={center.y} ref={centerRef} />
+      <rect
+        x={part.topLeft.x}
+        y={part.topLeft.y}
+        width={part.width}
+        height={part.height}
+        className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
+        id={`${partName}-layout-rect`}
+      />
+      <Buttons
+        transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${flipX ? -1 : 1},${flipY ? -1 : 1})`}
+        flip={flip}
+        rotate={rotate}
+        setRotate={setRotate}
+        resetPart={resetPart}
+        rotate90={rotate90}
+        partName={partName}
+       />
+      </>}
     </g>
   )
 }

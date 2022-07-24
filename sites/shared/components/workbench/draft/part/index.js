@@ -138,10 +138,9 @@ export const PartInner = props => {
 
 const Part = props => {
   const { partName, part} = props
-  const gParts = getProps(part)
-  console.log(partName, gParts)
+
   return (
-      <g id={`part-${partName}`} style={{fill: 'black'}}>
+      <g {...getProps(part)} id={`part-${partName}`}>
         {PartInner(props)}
       </g>
   )
