@@ -1,7 +1,7 @@
 ---
 backPocketHorizontalPlacement:
-  title: Back pocket horizontal placement
-  description: Controls the horizontal placement of the back pocket
+  title: Горизонтальне розміщення задньої кишені
+  description: Керує розміщенням задньої кишені по горизонталі
 backPocketVerticalPlacement:
   title: Back pocket vertical placement
   description: Controls the vertical placement of the back pocket
