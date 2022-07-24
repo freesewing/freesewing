@@ -220,6 +220,7 @@ export const build = async (localeFilter = () => true, only=false) => {
   const namespaces = await getNamespacesFromFileList(files, locales, only)
 
   await writeFiles(namespaces)
+  return namespaces
 }
 
 //export default strings
