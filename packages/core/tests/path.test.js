@@ -1106,19 +1106,26 @@ it("Should raise a warning when calling shiftAlong but distance is not a number"
 
 it("Should raise a warning when calling shiftFractionalong but fraction is not a number", () => {
   let invalid = false
-  const raise = { error: () => invalid = true }
+  const raise = {
+    error: () => invalid = true,
+    warning: () => invalid = true,
+  }
   expect(invalid).to.equal(false);
   new freesewing.Path()
     .withRaise(raise)
-    .move(new freesewing.Point(0,0))
-    .line(new freesewing.Point(10,10))
+    .move(new freesewing.Point(0,0).withRaise(raise))
+    .line(new freesewing.Point(10,10).withRaise(raise))
+    .line(new freesewing.Point(10,20).withRaise(raise))
     .shiftFractionAlong()
   expect(invalid).to.equal(true);
 });
 
 it("Should raise a warning when splitting a path on a non-point", () => {
   let invalid = false
-  const raise = { error: () => invalid = true }
+  const raise = {
+    error: () => invalid = true,
+    warning: () => invalid = true,
+  }
   const from = new freesewing.Point(0,0).withRaise(raise)
   const cp1 =  new freesewing.Point(10,0).withRaise(raise)
   const cp2 =  new freesewing.Point(90,0).withRaise(raise)
@@ -1128,18 +1135,22 @@ it("Should raise a warning when splitting a path on a non-point", () => {
     .move(from)
     .curve(cp1, cp2, to)
     .line(from)
+    .line(cp1)
   try {
     path.split()
   }
   catch (err) {
-    console.log(err)
+    expect(''+err).to.contain("TypeError: Cannot read property")
   }
   expect(invalid).to.equal(true);
 });
 
 it("Should raise a warning when splitting a path on a non-point", () => {
   let invalid = false
-  const raise = { error: () => invalid = true }
+  const raise = {
+    error: () => invalid = true,
+    warning: () => invalid = true,
+  }
   const from = new freesewing.Point(0,0).withRaise(raise)
   const cp1 =  new freesewing.Point(10,0).withRaise(raise)
   const cp2 =  new freesewing.Point(90,0).withRaise(raise)
@@ -1153,8 +1164,7 @@ it("Should raise a warning when splitting a path on a non-point", () => {
     path.split()
   }
   catch (err) {
-    console.log(err)
+    expect(''+err).to.contain("TypeError: Cannot read property")
   }
   expect(invalid).to.equal(true);
 });
-
