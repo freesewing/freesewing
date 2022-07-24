@@ -7,7 +7,7 @@ export default (part) => {
   }
 
   // Paths
-  paths.saBase = new Path().move(points.cbYoke).line(points.armholeYokeSplit)
+  paths.saBase = new Path().move(points.cbYoke).line(points.armholeYokeSplitPreBoxpleat)
   if (options.yokeHeight > 0) paths.saBase = paths.saBase.join(paths.backArmholeYoke)
   paths.saBase = paths.saBase.line(points.s3CollarSplit).join(paths.backCollar)
   if (options.splitYoke) paths.saBase = paths.saBase.line(points.cbYoke).close()
