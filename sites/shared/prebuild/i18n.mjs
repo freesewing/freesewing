@@ -2,7 +2,6 @@ import {build} from '../../../packages/i18n/src/prebuild.mjs'
 import {denyList} from '../../../packages/i18n/scripts/prebuilder.mjs'
 import fs from 'fs'
 import path from 'path'
-import {mkdir} from 'fs/promises'
 
 export const prebuildI18n = async(site, only=false) => {
   const writeJson = async (locale, namespace, content) => fs.writeFileSync(
