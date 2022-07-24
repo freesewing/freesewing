@@ -1,12 +1,12 @@
 neckRatio:
-  title: Neck opening
-  description: Controls the size of the neck opening relative to the bib size
+  title: Шийний зріз
+  description: Керує діаметром шийного зрізу відповідно до розміру слинявчика
 widthRatio:
   title: Ширина
-  description: Controls the width of the bib
+  description: Керує загальною шириною слинявчика
 lengthRatio:
   title: Довжина
-  description: Controls the length of the bib
+  description: Керує загальною довжиною слинявчика
 headSize:
   title: Розмір голови
-  description: The head circumference you want the bib to accomodate
+  description: Обхват голови, на який має налізати слинявчик

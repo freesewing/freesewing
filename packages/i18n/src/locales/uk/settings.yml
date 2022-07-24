@@ -1,41 +1,41 @@
 ---
 advanced:
-  title: Expert mode
-  description: Controls whether or not to display advanced settings and pattern options
+  title: Режим фахівця
+  description: Визначає показ додаткових налаштувань та налаштувань викрійки
 paperless:
-  title: Paperless
-  description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
+  title: Без паперу
+  description: Створює викрійку з урахуванням масштабу для перенесення на тканину чи інший матеріал без потреби друку
 sa:
-  title: Seam allowance
-  description: Controls the amount of seam allowance included in your pattern
+  title: Припуск на шов
+  description: Визначає розмір припусків на шви в Вашій викрійці
 locale:
-  title: Language
-  description: Determines the language used on your pattern
+  title: Мова
+  description: Визначає мову на викрійці
 only:
-  title: Contents
-  description: Allows you to control which pattern parts will be included in your pattern
+  title: Зміст
+  description: Дозволяє керувати тим, які елементи викрійки відображуватимуться на Вашій викрійці
 units:
-  title: Units
-  description: Controls the units used on your pattern
+  title: Одиниці виміру
+  description: Керує одиницями вимірювання на викрійці
 margin:
-  title: Margin
-  description: Controls the margin around pattern parts
+  title: Відступ
+  description: Контролює відступ навколо елементів викрійки
 complete:
-  title: Detail
-  description: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
+  title: Докладність
+  description: 'Керує докладність викрійки: відображувати повноцінну викрійку з усіма подробицями чи лише основний контур елементів викрійки'
 layout:
-  title: Layout
-  description: Controls how the individual pattern parts are placed on your pattern
+  title: Макет
+  description: Керує подальше розташування окремих елементів викрійки на матеріалі
 debug:
-  title: Debug
-  description: Enable debug to gain additional info about how your pattern was created
+  title: Налагодження
+  description: Увімкнути налагодження для отримання додаткової інформації щодо способу створення викрійки
 scale:
-  title: Scale
-  description: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
+  title: Масштаб
+  description: Керує ширину контуру, кегль шрифту та інші елементи, які не масштабуються відповідно до замірів викрійки
 renderer:
-  title: Render engine
-  description: Controls how the pattern is rendered (drawn) on the screen
+  title: Двигун відтворювання
+  description: Керує відтворення викрійки на екрані
 xray:
-  title: X-ray
-  description: Look under the hood with FreeSewing's X-ray mode
+  title: Рентген
+  description: Зазирніть за лаштунки з рентгенівським режимом FreeSewing
 

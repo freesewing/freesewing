@@ -1,32 +1,32 @@
 ---
 compliant: Freesewing.org поважає вашу конфіденційність і ваші права. Ми застосовуємо Загальний регламент про захист даних (GDPR) Європейського Союзу (ЄС).
 consent: Згода
-consentForModelData: Consent for model data
-consentForProfileData: Consent for profile data
+consentForModelData: Дозвіл на дані моделі
+consentForProfileData: Дозвіл на дані облікового запису
 consentGiven: Згода отримана
 consentNotGiven: Згода не отримана
 consentWhyAnswer: Згідно з GDPR, обробка ваших персональних даних вимагає Вашої згоди - іншими словами, Ваш дозвіл.
 createMyAccount: Створити обліковий запис
-furtherReading: Further reading
-modelQuestion: Do you give your consent to process your model data?
-modelWarning: Revoking this consent will lock you out of all your model data, as well as disable functionality that depends on it.
-modelWhatAnswer: For each model their <b>measurements</b> and <b>breasts settings</b>.
-modelWhatAnswerOptional: 'Optional: A model <b>picture</b> and the <b>name</b> that you give your model.'
-modelWhatQuestion: What is model data?
+furtherReading: Подальше вивчення
+modelQuestion: Чи даєте Ви згоду на обробку даних моделі?
+modelWarning: Анулювання даної згоди зробить неможливим використання даних замірів моделі. Це також анулює функціонал вебсайту, який залежить від даної інформації.
+modelWhatAnswer: <b>Заміри</b> та <b>налаштування молочних залоз</b> кожної моделі.
+modelWhatAnswerOptional: 'За навності: <b>Зображення</b> моделі та <b>ім''я</b> моделі.'
+modelWhatQuestion: Що таке дані моделі?
 modelWhyAnswer: 'Для розробки викрійок, адаптованих під заміри <b>спеціально виміру</b>нам необхідні <b>виміри тіла</b>.'
 noConsentNoAccount: Без цієї згоди ми не можемо створити Ваш обліковий запис
 noConsentNoPatterns: Без цієї згоди, Ви не можете створити будь-які викрійки
-noIDoNot: 'No, I do not'
-openDataInfo: This data is used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. Even though this data is anonymized, you have the right to object to this.
-openDataQuestion: Share anonymized measurements as open data
+noIDoNot: 'Ні, не даю'
+openDataInfo: Ці дані використовуються для вивчення і розуміння людського тіла в усіх його формах. Це дозволяє нам покращити наші викрійки та створювати більш підходящий до тіла одяг. Незважаючи на те, що ці дані є анонімними, Ви маєте право не давати згоду на їх обробку.
+openDataQuestion: Поділитися замірами анонімно як відкритими даними
 profileQuestion: Чи даєте Ви згоду на обробку даних Вашого облікового запису?
 profileShareAnswer: '<b>Ні</b>, ніколи.'
-profileTimingAnswer: '<b>12 months</b> after your last login, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
-profileWarning: Revoking this consent will trigger the removal of all of your data. It has the exact same affect as removing your account.
-profileWhatAnswerOptional: 'Optional: A <b>profile picture</b>, <b>bio</b>, and <b>social media accounts</b>'
-profileWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>.'
+profileTimingAnswer: '<b>12 місяців</b> після останнього входу в систему, або до тих пір, поки Ви не <b>видалите</b> Ваш обліковий запис або <b>скасуєте</b> дану згоду.'
+profileWarning: Відкликання згоди видалить усі Ваші данні. Це має той же ефект, що і видалення облікового запису.
+profileWhatAnswerOptional: 'За наявності: <b>зображення облікового запису</b>, <b>біо</b>і <b>соціальні мережі</b>'
+profileWhatAnswer: 'Ваша <b>електронна адреса</b>, <b>ім''я користувача</b>і <b>пароль</b>.'
 profileWhatQuestion: Що таке дані облікового запису?
-profileWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and build a <b>community</b>.'
+profileWhyAnswer: 'Щоб <b>автентифікувати</b> Вас, <b>зв''язатися</b> з Вами коли це потрібно та задля покращення нашої <b>спільноти</b>.'
 readMore: Для отримання додаткової інформації, будь ласка, прочитайте наше повідомлення про конфіденційність.
 readRights: Для отримання додаткової інформації, будь ласка, прочитайте про Ваші права.
 revokeConsent: Відкликати згоду

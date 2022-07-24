@@ -1,41 +1,41 @@
 ---
 shoulderDart:
-  title: Shoulder dart
-  description: Whether or not to inlude a dart at the shoulder to round the back
+  title: Плечова виточка
+  description: Додавати чи не додавати виточку на плечі для заокруглення спини
 shoulderDartSize:
-  title: Shoulder dart size
-  description: The size of the shoulder dart
+  title: Розмір плечової виточки
+  description: Ширина (розмір) плечової виточки
 shoulderDartLength:
-  title: Shoulder dart length
-  description: The length of the shoulder dart
+  title: Довжина плечової виточки
+  description: Загальна довжина плечової виточки
 waistDart:
-  title: Waist dart
-  description: Whether or not to inlude a dart at the waist to round the back
+  title: Поясна виточка
+  description: Додавати чи не додавати виточки на талії для заокруглення спини
 waistDartSize:
-  title: Waist dart size
-  description: The size of the waist dart
+  title: Розмір поясної виточки
+  description: Ширина (розмір) виточки на талії
 waistDartLength:
-  title: Waist dart length
-  description: The length of the waist dart
+  title: Довжина поясної виточки
+  description: Загальна довжина виточки на талії
 verticalEase:
-  title: Vertical ease
-  description: The amount of ease to distribute along the length of the garment
+  title: Вертикальна свобода облягання
+  description: Керує свободою облягання, що розподіляється по довжині виробу
 waistEase:
-  title: Waist ease
-  description: The amount of ease at the waist
+  title: Свобода облягання на талії
+  description: Відсоток свободи облягання на талії
 primaryBustDart:
-  title: Bust dart
-  description: Where to place the bust dart to shape the chest
+  title: Грудна виточка
+  description: Керує розташуванням виточки для формування ліфу
 primaryBustDartLength:
-  title: Bust dart length
-  description: The length of the bust dart
+  title: Довжина грудної виточки
+  description: Загальна довжина виточки на грудях
 secondaryBustDart:
-  title: Secondary bust dart
-  description: Optionally include a secondary bust dart to distribute the shaping of the chest
+  title: Вторинна грудна виточка
+  description: За бажанням можна додати вторинну виточку на грудях для подальшого формування ліфу
 secondaryBustDartLength:
-  title: Secondary bust dart length
-  description: The length of the secondary bust dart
+  title: Довжина вторинної грудної виточки
+  description: Загальна довжина вторинної виточки на грудях
 primaryBustDartShaping:
-  title: Bust darts shaping
-  description: Controls the balance between the main and secondary bust darts
+  title: Формування грудних виточок
+  description: Керує співвідношенням між головними та вторинними виточками на грудях
 
