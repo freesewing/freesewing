@@ -435,3 +435,4 @@ it("Should correctly merge settings for existing array", () => {
   expect(pattern.settings.only.length).to.equal(4);
   expect(pattern.settings.margin).to.equal(5);
 });
+
