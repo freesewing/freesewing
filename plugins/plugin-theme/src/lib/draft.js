@@ -1,4 +1,17 @@
+// FIXME surely this can be extracted from the theme in some way so as to keep things consistent?
+
 const round = value => Math.round(value * 1e2) / 1e2
+
+const colors = {
+  fabric: '#212121',
+  lining: '#10b981',
+  interfacing: '#a3a3a3',
+  canvas: '#d97706',
+  various: '#ef4444',
+  note: '#8b5cf6',
+  mark: '#3b82f6',
+  contrast: '#ec4899'
+}
 
 export default (scale) => `
   /* Reset */
@@ -22,36 +35,37 @@ export default (scale) => `
   /* Stroke classes */
   svg.freesewing .fabric {
     stroke-width: ${round(0.6*scale)};
-    stroke: #212121;
+    stroke: ${colors.fabric};
   }
   svg.freesewing .lining {
     stroke-width: ${round(0.6*scale)};
-    stroke: #ff5b77;
+    stroke: ${colors.lining};
   }
   svg.freesewing .interfacing {
     stroke-width: ${round(0.6*scale)};
-    stroke: #64b5f6;
+    stroke: ${colors.interfacing};
   }
   svg.freesewing .canvas {
     stroke-width: ${round(0.6*scale)};
-    stroke: #ff9000;
+    stroke: ${colors.canvas};
   }
   svg.freesewing .various {
     stroke-width: ${round(0.6*scale)};
-    stroke: #4caf50;
+    stroke: ${colors.various};
   }
   svg.freesewing .note {
     stroke-width: ${round(0.4*scale)};
-    stroke: #dd60dd;
+    stroke: ${colors.note};
   }
   svg.freesewing .mark {
     stroke-width: ${round(0.4*scale)};
-    stroke: blue;
+    stroke: ${colors.mark};
   }
   svg.freesewing .contrast {
     stroke-width: ${round(0.8*scale)};
-    stroke: red;
+    stroke: ${colors.contrast};
   }
+
   svg.freesewing .stroke-xs {
     stroke-width: ${round(0.1*scale)};
   }
@@ -101,28 +115,28 @@ export default (scale) => `
 
   /* Fill classes */
   svg.freesewing .fill-fabric {
-    fill: #212121;
+    fill: ${colors.fabric};
   }
   svg.freesewing .fill-lining {
-    fill: #ff5b77;
+    fill: ${colors.lining};
   }
   svg.freesewing .fill-interfacing {
-    fill: #64b5f6;
+    fill: ${colors.interfacing};
   }
   svg.freesewing .fill-canvas {
-    fill: #ff9000;
+    fill: ${colors.canvas};
   }
   svg.freesewing .fill-various {
-    fill: #4caf50;
+    fill: ${colors.various};
   }
   svg.freesewing .fill-note {
-    fill: #dd69dd;
+    fill: ${colors.note};
   }
   svg.freesewing .fill-mark {
-    fill: blue;
+    fill: ${colors.mark};
   }
   svg.freesewing .fill-contrast {
-    fill: red;
+    fill: ${colors.contrast};
   }
 
   /* Text */

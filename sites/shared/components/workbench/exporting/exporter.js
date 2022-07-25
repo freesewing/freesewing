@@ -31,7 +31,6 @@ export default class Exporter {
 	  this.wPages = Math.ceil(designSize.width/width)
   	this.hPages = Math.ceil(designSize.height/height)
 
-		// this.pdf = new jsPDF({format: [this.pageWidth, this.pageHeight], orientation: this.settings.orientation === 'portrait' ? 'p' : 'l'})
 	  this.svg.setAttribute('height', this.hPages * this.pageHeight)
 	  this.svg.setAttribute('width', this.wPages * this.pageWidth)
 	  this.svg.setAttribute('viewBox', `0 0 ${this.wPages * width} ${this.hPages * height}`)
@@ -44,11 +43,6 @@ export default class Exporter {
 	async export() {
 		await this.generateCoverPage()
 		await this.generatePages();
-	  // const width = this.svg.width.baseVal.value/5
-	  // const height = this.svg.height.baseVal.value/5
-	  // this.pdf = new jsPDF(width > height ? 'l' : 'p', 'pt', [this.pageWidth, this.pageHeight])
-
-	  // await this.pdf.svg(this.svg, { width, height })
 		this.save()
 	}
 
@@ -58,52 +52,26 @@ export default class Exporter {
 			return
 		}
 
-		let coverMargin = 5
+		let coverMargin = 100
 		let coverWidth = this.pageWidth - coverMargin * 2
 		let coverHeight = this.pageHeight - coverMargin * 2
-		// this.svg.setAttribute('preserveAspectRatio', 'xMidYMid meet')
-		// this.svg.setAttribute('width', this.pageWidth)
-		// this.svg.setAttribute('height', this.pageHeight)
-		// this.svg.setAttribute('viewBox', `0 0 ${this.wPages * this.pageWidth} ${this.hPages * this.pageHeight}`)
-		// this.svg.getBoundingClientRect() // force layout calculation
-		const width = this.svg.width.baseVal.value
-	  const height = this.svg.height.baseVal.value
+
 		await this.pdf.svg(this.svg, {width: coverWidth, height: coverHeight, x: coverMargin, y: coverMargin})
 	}
 
-
 	async generatePages() {
-		// this.svg.setAttribute('width', this.pageWidth)
-		// this.svg.setAttribute('height', this.pageHeight)
 		const width = this.svg.width.baseVal.value
 	  const height = this.svg.height.baseVal.value
-		const pageCount = 0
 		const margin = this.settings.margin * pointsPerMm
 		for (var h = 0; h < this.hPages; h++) {
 		  for (var w = 0; w < this.wPages; w++) {
-		  	pageCount++
 		    this.pdf.addPage()
-		    // this.addPageElements(pageCount, w, h)
-		    // this.svg.setAttribute('viewBox', `${w * (this.pageWidth) - this.settings.margin * (0.5 + w)} ${h * (this.pageHeight) - this.settings.margin * (0.5 + h)} ${this.pageWidth} ${this.pageHeight}`)
+
 		    await this.pdf.svg(this.svg, {x: -w * this.pageWidth + (0.5 + w) * margin, y: -h * this.pageHeight + (0.5 + h) * margin, width: width, height: height})
 		  }
 		}
-
-		console.log(pageCount)
 	}
 
-
-	safeAdd(callback) {
-		const currentDrawColor = this.pdf.getDrawColor();
-		const currentFontSize = this.pdf.getFontSize()
-		const currentTextColor = this.pdf.getTextColor();
-
-		callback();
-
-		this.pdf.setDrawColor(currentDrawColor);
-   	this.pdf.setFontSize(currentFontSize);
-   	this.pdf.setTextColor(currentTextColor);
-	}
 	save() {
 		this.pdf.save(`freesewing-${this.designName}.pdf`)
 	}
