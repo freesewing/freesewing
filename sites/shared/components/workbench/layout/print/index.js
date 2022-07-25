@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next'
 import Settings from './settings'
 import Draft from '../draft/index'
 import {pagesPlugin} from './plugin'
-import {handleExport} from 'shared/components/workbench/export'
+import {handleExport} from 'shared/components/workbench/exporting'
 
 const PrintLayout = props => {
 
@@ -20,6 +20,7 @@ const PrintLayout = props => {
     props.gist?._state?.layout?.forPrinting?.page?.size,
     props.gist?._state?.layout?.forPrinting?.page?.orientation,
   ))
+
   let patternProps
   try {
     draft.draft()

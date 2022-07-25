@@ -10,16 +10,16 @@ export const sizes = {
   tabloid: [ 279.4, 431.8 ],
 }
 
-export const pagesPlugin = (size='a4', orientation='portrait', margin =10 ) => {
+export const pagesPlugin = (size='a4', orientation='portrait', margin =10, outlineStyle = false ) => {
   let [sheetWidth, sheetHeight] = sizes[size];
   sheetWidth -= margin
   sheetHeight -= margin
-  return basePlugin({sheetWidth, sheetHeight, orientation})
+  return basePlugin({sheetWidth, sheetHeight, orientation, outlineStyle})
 }
 
 export const cutFabricPlugin = (sheetWidth, sheetHeight) => basePlugin({sheetWidth, sheetHeight, boundary: true, partName: "cutFabric", responsiveWidth: false})
 
-const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=false, partName="pages", responsiveWidth=true}) => ({
+const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=false, partName="pages", responsiveWidth=true, outlineStyle=false}) => ({
   name,
   version,
   hooks: {
@@ -56,25 +56,68 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
         x=0
         for (let col=0;col<cols;col++) {
           count++
-          points[`_pages__row${row}-col${col}-tl`] = new Point(x,y)
-          points[`_pages__row${row}-col${col}-tr`] = new Point(x+w,y)
-          points[`_pages__row${row}-col${col}-br`] = new Point(x+w,y+h)
-          points[`_pages__row${row}-col${col}-bl`] = new Point(x,y+h)
-          points[`_pages__row${row}-col${col}-circle`] = new Point(x+w/2,y+h/2-24)
+          const pageName = `_pages__row${row}-col${col}`
+          points[`${pageName}-tl`] = new Point(x,y)
+          points[`${pageName}-tr`] = new Point(x+w,y)
+          points[`${pageName}-br`] = new Point(x+w,y+h)
+          points[`${pageName}-bl`] = new Point(x,y+h)
+          points[`${pageName}-circle`] = new Point(x+w/2,y+h/2)
             .attr('data-circle', 42)
             .attr('data-circle-class', 'stroke-4xl muted fabric')
-          points[`_pages__row${row}-col${col}-text`] = new Point(x+w/2,y+h/2)
+          points[`${pageName}-text`] = new Point(x+w/2,y+h/2)
             .attr('data-text', `${count}`)
-            .attr('data-text-class', 'text-4xl center bold muted fill-fabric')
+            .attr('data-text-class', 'text-4xl center baseline-center bold muted fill-fabric')
 
-          paths[`_pages__row${row}-col${col}`] = new Path()
-            .move(points[`_pages__row${row}-col${col}-tl`])
-            .line(points[`_pages__row${row}-col${col}-bl`])
-            .line(points[`_pages__row${row}-col${col}-br`])
-            .line(points[`_pages__row${row}-col${col}-tr`])
+          paths[`${pageName}`] = new Path()
+            .move(points[`${pageName}-tl`])
+            .line(points[`${pageName}-bl`])
+            .line(points[`${pageName}-br`])
+            .line(points[`${pageName}-tr`])
             .close()
-            .attr('class', 'fill-fabric')
-            .attr('style', `stroke-opacity: 0; fill-opacity: ${(col+row)%2===0 ? 0.03 : 0.09};`)
+
+            if (!outlineStyle) {
+              paths[`${pageName}`].attr('class', 'fill-fabric')
+              .attr('style', `stroke-opacity: 0; fill-opacity: ${(col+row)%2===0 ? 0.03 : 0.09};`)
+            }
+            else {
+              paths[`${pageName}`].attr('style', 'stroke-opacity: 0.325')
+
+              if (row === 0 && col === 0) {
+                const isMetric = this.context.settings.units === 'metric'
+                const endPointDist = [(isMetric ? 10 : 25.4), 0]
+                const addRuler = (xAxis) => {
+                  const axisName = xAxis ? 'x' : 'y'
+                  const endPoint = [endPointDist[xAxis ? 0 : 1], endPointDist[xAxis ? 1 : 0]]
+                  points[`${pageName}-${axisName}-ruler-start`] = points[`${pageName}-tl`].translate(endPoint[0], endPoint[1])
+                  points[`${pageName}-${axisName}-ruler-end`] = points[`${pageName}-${axisName}-ruler-start`].translate(xAxis ? 0 : 3, xAxis ? 3 : 0)
+                  paths[`${pageName}-${axisName}-ruler`] = new Path()
+                    .move(points[`${pageName}-tl`])
+
+                  const division = isMetric ? 0.1 : 0.125
+                  for (var d = division; d < 1; d+= division) {
+                    points[`${pageName}-${axisName}-ruler-${d}-start`] = points[`${pageName}-tl`].shiftFractionTowards(points[`${pageName}-${axisName}-ruler-start`], d)
+
+                    let tick = d === 0.5 ? 2 : 1
+                    points[`${pageName}-${axisName}-ruler-${d}-end`] = points[`${pageName}-${axisName}-ruler-${d}-start`].translate(xAxis ? 0 : tick, xAxis ? tick : 0)
+
+                    paths[`${pageName}-${axisName}-ruler`]
+                      .line(points[`${pageName}-${axisName}-ruler-${d}-start`])
+                      .line(points[`${pageName}-${axisName}-ruler-${d}-end`])
+                      .line(points[`${pageName}-${axisName}-ruler-${d}-start`])
+                  }
+
+                  paths[`${pageName}-${axisName}-ruler`]
+                  .line(points[`${pageName}-${axisName}-ruler-start`])
+                  .line(points[`${pageName}-${axisName}-ruler-end`])
+                  .attr('class', 'stroke-sm')
+                  .attr('style', 'stroke-opacity: 0.325')
+                }
+
+                addRuler(true)
+                addRuler(false)
+              }
+
+            }
           x += w
         }
         y += h

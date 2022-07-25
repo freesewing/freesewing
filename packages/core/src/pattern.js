@@ -466,7 +466,10 @@ Pattern.prototype.render = function (layoutType="layout", forPdf) {
   this.svg = new Svg(this)
   this.svg.hooks = this.hooks
 
-  return this.pack(layoutType, forPdf).svg.render(this)
+  this.svg.runHooks('preRender')
+  this.pack(layoutType, forPdf)
+  this.runHooks('postLayout')
+  return this.svg.render(this)
 }
 
 Pattern.prototype.on = function (hook, method, data) {
