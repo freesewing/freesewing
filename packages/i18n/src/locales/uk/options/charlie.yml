@@ -1,16 +1,16 @@
 ---
 backPocketHorizontalPlacement:
-  title: Back pocket horizontal placement
-  description: Controls the horizontal placement of the back pocket
+  title: Горизонтальне розміщення задньої кишені
+  description: Керує розміщенням задньої кишені по горизонталі
 backPocketVerticalPlacement:
-  title: Back pocket vertical placement
-  description: Controls the vertical placement of the back pocket
+  title: Вертикальне розміщення задньої кишені
+  description: Керує розміщенням задньої кишені по вертикалі
 backPocketWidth:
-  title: Back pocket width
-  description: Controls the width of the back pocket
+  title: Ширина задньої кишені
+  description: Керує шириною задньої кишені
 backPocketDepth:
-  title: Back pocket depth
-  description: Controls the depth of the back pocket
+  title: Глибина задньої кишені
+  description: Керує глибиною задньої кишені
 backPocketFacing:
   title: Back pocket facing
   description: Controls whether or not to include facing on the back pockets

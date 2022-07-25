@@ -1,6 +1,6 @@
 ---
 centerBackDart:
-  title: Center back dart
+  title: Центральна виточка на комірі
   description: Dart at the center back of your neck to accommodate a rounded back
 sleeveVentLength:
   title: Sleeve vent length
@@ -93,8 +93,8 @@ lapelReduction:
   title: Lapel reduction
   description: How much the tip of the lapels turns inwards
 collarHeight:
-  title: Collar height
-  description: Height of the collar
+  title: Висота коміру
+  description: Контролює висоту коміру
 collarNotchDepth:
   title: Collar notch depth
   description: Depth of the collar notch
