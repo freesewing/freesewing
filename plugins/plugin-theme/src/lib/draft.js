@@ -109,6 +109,8 @@ export default (scale) => `
     stroke: none;
     fill: none;
   }
+  svg.freesewing .no-stroke { stroke: none !important; }
+  svg.freesewing .no-fill { fill: none !important; }
   svg.freesewing .muted {
     opacity: 0.15;
   }
