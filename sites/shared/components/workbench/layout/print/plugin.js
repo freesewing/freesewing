@@ -48,7 +48,7 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       const h = so.size[ls ? 0 : 1]
       const cols = Math.ceil(so.width / w)
       const rows = Math.ceil(so.height / h)
-      const { points, Point, paths, Path } = this.shorthand()
+      const { points, Point, paths, Path, macro } = this.shorthand()
       let x = 0
       let y = 0
       let count = 0
@@ -68,56 +68,27 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
             .attr('data-text', `${count}`)
             .attr('data-text-class', 'text-4xl center baseline-center bold muted fill-fabric')
 
-          paths[`${pageName}`] = new Path()
+          paths[pageName] = new Path()
             .move(points[`${pageName}-tl`])
             .line(points[`${pageName}-bl`])
             .line(points[`${pageName}-br`])
             .line(points[`${pageName}-tr`])
             .close()
 
-            if (!outlineStyle) {
-              paths[`${pageName}`].attr('class', 'fill-fabric')
-              .attr('style', `stroke-opacity: 0; fill-opacity: ${(col+row)%2===0 ? 0.03 : 0.09};`)
+          if (!outlineStyle) {
+            paths[pageName].attr('class', 'fill-fabric')
+            .attr('style', `stroke-opacity: 0; fill-opacity: ${(col+row)%2===0 ? 0.03 : 0.09};`)
+          }
+          else {
+            paths[pageName].attr('class', 'interfacing stroke-xs')
+            macro('addPageMarkers', {row, col, pageName})
+
+            if (row === 0 && col === 0) {
+              macro('addRuler', {xAxis: true, pageName})
+              macro('addRuler', {xAxis: false, pageName})
             }
-            else {
-              paths[`${pageName}`].attr('style', 'stroke-opacity: 0.325')
 
-              if (row === 0 && col === 0) {
-                const isMetric = this.context.settings.units === 'metric'
-                const endPointDist = [(isMetric ? 10 : 25.4), 0]
-                const addRuler = (xAxis) => {
-                  const axisName = xAxis ? 'x' : 'y'
-                  const endPoint = [endPointDist[xAxis ? 0 : 1], endPointDist[xAxis ? 1 : 0]]
-                  points[`${pageName}-${axisName}-ruler-start`] = points[`${pageName}-tl`].translate(endPoint[0], endPoint[1])
-                  points[`${pageName}-${axisName}-ruler-end`] = points[`${pageName}-${axisName}-ruler-start`].translate(xAxis ? 0 : 3, xAxis ? 3 : 0)
-                  paths[`${pageName}-${axisName}-ruler`] = new Path()
-                    .move(points[`${pageName}-tl`])
-
-                  const division = isMetric ? 0.1 : 0.125
-                  for (var d = division; d < 1; d+= division) {
-                    points[`${pageName}-${axisName}-ruler-${d}-start`] = points[`${pageName}-tl`].shiftFractionTowards(points[`${pageName}-${axisName}-ruler-start`], d)
-
-                    let tick = d === 0.5 ? 2 : 1
-                    points[`${pageName}-${axisName}-ruler-${d}-end`] = points[`${pageName}-${axisName}-ruler-${d}-start`].translate(xAxis ? 0 : tick, xAxis ? tick : 0)
-
-                    paths[`${pageName}-${axisName}-ruler`]
-                      .line(points[`${pageName}-${axisName}-ruler-${d}-start`])
-                      .line(points[`${pageName}-${axisName}-ruler-${d}-end`])
-                      .line(points[`${pageName}-${axisName}-ruler-${d}-start`])
-                  }
-
-                  paths[`${pageName}-${axisName}-ruler`]
-                  .line(points[`${pageName}-${axisName}-ruler-start`])
-                  .line(points[`${pageName}-${axisName}-ruler-end`])
-                  .attr('class', 'stroke-sm')
-                  .attr('style', 'stroke-opacity: 0.325')
-                }
-
-                addRuler(true)
-                addRuler(false)
-              }
-
-            }
+          }
           x += w
         }
         y += h
@@ -125,6 +96,71 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       // Store page count in part
       this.pages = { cols, rows, count: cols*rows }
 
+    },
+    addRuler({xAxis, pageName}) {
+      const { points, Point, paths, Path } = this.shorthand()
+
+      const isMetric = this.context.settings.units === 'metric'
+      const endPointDist = [(isMetric ? 10 : 25.4), 0]
+
+      const axisName = xAxis ? 'x' : 'y'
+      const endPoint = [endPointDist[xAxis ? 0 : 1], endPointDist[xAxis ? 1 : 0]]
+      points[`${pageName}-${axisName}-ruler-start`] = points[`${pageName}-tl`].translate(endPoint[0], endPoint[1])
+      points[`${pageName}-${axisName}-ruler-end`] = points[`${pageName}-${axisName}-ruler-start`].translate(xAxis ? 0 : 3, xAxis ? 3 : 0)
+      paths[`${pageName}-${axisName}-ruler`] = new Path()
+        .move(points[`${pageName}-tl`])
+
+      const division = isMetric ? 0.1 : 0.125
+      for (var d = division; d < 1; d+= division) {
+        points[`${pageName}-${axisName}-ruler-${d}-start`] = points[`${pageName}-tl`].shiftFractionTowards(points[`${pageName}-${axisName}-ruler-start`], d)
+
+        let tick = d === 0.5 ? 2 : 1
+        points[`${pageName}-${axisName}-ruler-${d}-end`] = points[`${pageName}-${axisName}-ruler-${d}-start`].translate(xAxis ? 0 : tick, xAxis ? tick : 0)
+
+        paths[`${pageName}-${axisName}-ruler`]
+          .line(points[`${pageName}-${axisName}-ruler-${d}-start`])
+          .line(points[`${pageName}-${axisName}-ruler-${d}-end`])
+          .line(points[`${pageName}-${axisName}-ruler-${d}-start`])
+      }
+
+      paths[`${pageName}-${axisName}-ruler`]
+      .line(points[`${pageName}-${axisName}-ruler-start`])
+      .line(points[`${pageName}-${axisName}-ruler-end`])
+      .attr('class', 'interfacing stroke-xs')
+    },
+    addPageMarkers({row, col, pageName}) {
+      const {macro, points} = this.shorthand()
+      if (row !== 0) macro('addPageMarker', {
+        along: [points[`${pageName}-tl`], points[`${pageName}-tr`]],
+        label: '' + row,
+        isRow: true,
+        pageName
+      })
+      if (col !== 0) macro('addPageMarker', {
+        along: [points[`${pageName}-tl`], points[`${pageName}-bl`]],
+        label: String.fromCharCode('A'.charCodeAt(0) + col - 1),
+        isRow: false,
+        pageName
+      })
+    },
+    addPageMarker({along, label, isRow, pageName}) {
+      const {points, paths, Point, Path} = this.shorthand()
+      const markerName = `${pageName}-${isRow ? 'row' : 'col'}-marker`
+      points[`${markerName}-center`] = along[0].shiftFractionTowards(along[1], 0.5)
+        .attr('data-text', label)
+        .attr('data-text-class', 'text-sm center baseline-center bold')
+      points[`${markerName}-r`] = points[`${markerName}-center`].translate(-5, 0)
+      points[`${markerName}-l`] = points[`${markerName}-center`].translate(5, 0)
+      points[`${markerName}-t`] = points[`${markerName}-center`].translate(0, -5)
+      points[`${markerName}-b`] = points[`${markerName}-center`].translate(0, 5)
+
+      paths[markerName] = new Path()
+        .move(points[`${markerName}-r`])
+        .line(points[`${markerName}-t`])
+        .line(points[`${markerName}-l`])
+        .line(points[`${markerName}-b`])
+        .close()
+        .attr('class', 'fill-interfacing interfacing')
     }
   }
 })
