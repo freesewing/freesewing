@@ -7719,14 +7719,14 @@ d3-selection@3, d3-selection@^3.0.0:
   integrity sha512-fmTRWbNMmsmWq6xJV8D19U/gw/bwrHfNXxrIN+HfZgnzqTHp9jOmKMhsTUjXOJnZOdZY9Q28y4yebKzqDKlxlQ==
 
 daisyui@^2.0.6:
-  version "2.19.1"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.19.1.tgz#0055f3727a7e5f29b279605f47d7c3de46114281"
-  integrity sha512-qExtDCp7N3F0Nlt7oVVehP1QMulbav8dXmEo66wavVxLVIf5tM4cV0F2Oi0OO0drzaez9v1LjBzk/vHMESs/lw==
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.20.0.tgz#6abeeb628912a15636bfc9e924417d985c92fa89"
+  integrity sha512-97xFBWQOXV/JCVRrGI5xranElKMmXIajDxojTQ1qoYwcWlkfFE7hY4D/NyHVIzlQb+B4xbiXhVPJM7EleRAY8g==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
     postcss-js "^4.0.0"
-    tailwindcss "^3.0"
+    tailwindcss "^3"
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
@@ -22483,7 +22483,7 @@ tailwindcss-open-variant@^1.0.0:
   resolved "https://registry.yarnpkg.com/tailwindcss-open-variant/-/tailwindcss-open-variant-1.0.0.tgz#e4555c0a0ec2a82801e563ed36b1b23e4dd04a3b"
   integrity sha512-XKw7rXUWvMKDKC62+V1z/kS0hVtTzWk6ALrOoGXC8MGAyetXIiRu/npnLGGHT1kL59Y2RZHT7Dq1C3moeTeptQ==
 
-tailwindcss@^3.0, tailwindcss@^3.0.1:
+tailwindcss@^3, tailwindcss@^3.0.1:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.1.6.tgz#bcb719357776c39e6376a8d84e9834b2b19a49f1"
   integrity sha512-7skAOY56erZAFQssT1xkpk+kWt2NrO45kORlxFPXUt3CiGsVPhH1smuH5XoDH6sGPXLyBv+zgCKA2HWBsgCytg==
