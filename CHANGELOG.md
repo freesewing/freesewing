@@ -33,6 +33,12 @@
 
  - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
 
+### simon
+
+#### Fixed
+
+ - Fix issue with boxPleat and yoke Fixes [#2400](https://github.com/freesewing/freesewing/issues/2400)
+
 ### simone
 
 #### Fixed

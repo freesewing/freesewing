@@ -1,8 +1,8 @@
 ---
 shoulderSeamLength:
-  title: Shoulder seam length
-  description: Controls the length of the shoulder seam
+  title: Довжина плечового шва
+  description: Контролює довжину плечового шва
 drapeAngle:
-  title: Drape angle
-  description: Controls the amount of drape
+  title: Кут драпірування
+  description: Контролює кількість складок
 
