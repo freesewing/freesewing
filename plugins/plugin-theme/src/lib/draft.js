@@ -95,6 +95,9 @@ export default (scale) => `
     stroke: none;
     fill: none;
   }
+  svg.freesewing .muted {
+    opacity: 0.15;
+  }
 
   /* Fill classes */
   svg.freesewing .fill-fabric {
@@ -147,10 +150,18 @@ export default (scale) => `
   svg.freesewing .text-xxl {
     font-size: ${round(12*scale)}px;
   }
+  svg.freesewing .text-4xl {
+    font-size: ${round(36*scale)}px;
+  }
 
   svg.freesewing .center {
     text-anchor: middle;
   }
+  svg.freesewing .baseline-center {
+    alignment-baseline: central;
+    dominant-baseline: central;
+  }
+
   svg.freesewing .right {
     text-anchor: end;
   }

@@ -61,6 +61,7 @@ svg.freesewing.pattern {
   .bold { font-weight: bold; }
 
   .center { text-anchor: middle; }
+  .baseline-center {dominant-baseline: central;}
   .right { text-anchor: end; }
 
   /* muted page numbers */
