@@ -27,6 +27,9 @@ export default (part) => {
   for (const id in paths) {
     if (id !== 'seam') delete part.paths[id]
   }
+  for (const i in snippets) {
+     if (i.indexOf('notch')) delete snippets[i]
+  }
   macro('flip')
   const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(

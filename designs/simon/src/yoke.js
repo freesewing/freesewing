@@ -35,9 +35,6 @@ export default (part) => {
     points.logo = points.title.shift(-90, 50)
     snippets.logo = new Snippet('logo', points.logo)
     snippets.logo.attr('data-scale', 0.8)
-    if (options.splitYoke) {
-      snippets.sleeveNotch = new Snippet('bnotch', points.armholePitch)
-    }
 
     points.grainlineFrom = points.cbYoke.shift(0, 20)
     points.grainlineTo = points.cbNeck.shift(0, 20)
