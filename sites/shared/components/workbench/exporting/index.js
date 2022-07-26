@@ -15,7 +15,8 @@ export const exports = {
   exportAsData: ['json', 'yaml', 'github gist'],
 }
 
-export const handleExport = (format, gist, design, app, setLink, setFormat, setSvg) => {
+export const handleExport = (format, gist, design, t, app, setLink, setFormat, setSvg) => {
+
   setLink && setLink(false)
   setFormat && setFormat(format)
   if (exports.exportAsData.indexOf(format) !== -1) {
@@ -30,6 +31,11 @@ export const handleExport = (format, gist, design, app, setLink, setFormat, setS
   let svg = ''
   let pattern = new design(gist)
   pattern.use(theme)
+  pattern.use({
+    hooks: {
+      insertText: (locale, text, {t}) => t(text)
+    }
+  },{t})
 
   const settings = format === 'pdf' ? (gist._state.layout?.forPrinting?.page || {
     size: 'a4',
@@ -57,12 +63,7 @@ export const handleExport = (format, gist, design, app, setLink, setFormat, setS
 
   if (format === 'svg') return exportSvg(gist, svg)
 
-  const patternSize = {
-    width: pattern.width,
-    height: pattern.height
-  }
-
-  return new PdfExporter(gist.design, patternSize, svg, settings).export();
+  return new PdfExporter(gist.design, pattern, svg, settings).export();
 }
 
 const exportJson = gist => {
@@ -122,7 +123,7 @@ const ExportDraft = ({ gist, design, app }) => {
             {exports[type].map(format => (
               <button key={format}
                 className="btn btn-primary"
-                onClick={() => handleExport(format, gist, design, app, setLink, setFormat, setSvg, svgDiv)}
+                onClick={() => handleExport(format, gist, design, t, app, setLink, setFormat, setSvg, svgDiv)}
               >
                 {type === 'exportForPrinting' ? `${format} pdf` : format }
               </button>

@@ -14,30 +14,28 @@ export default class Exporter {
 	wPages
 	hPages
 
-	constructor(designName, designSize, svg, settings) {
+	constructor(designName, pattern, svg, settings) {
+		console.log(svg)
 		this.designName = designName || 'freesewing'
-		// this.svg = svg
 		this.settings = settings
 
-		let width = sizes[settings.size][settings.orientation === 'portrait' ? 0 : 1]
-		this.pageWidth = width*pointsPerMm
-		let height = sizes[settings.size][settings.orientation === 'portrait' ? 1 : 0]
-	  this.pageHeight = height*pointsPerMm
+		let pageWidthInMm = sizes[settings.size][settings.orientation === 'portrait' ? 0 : 1]
+		this.pageWidth = pageWidthInMm*pointsPerMm
+
+		let pageHeightInMm = sizes[settings.size][settings.orientation === 'portrait' ? 1 : 0]
+	  this.pageHeight = pageHeightInMm*pointsPerMm
+
+	  this.wPages = Math.ceil(pattern.width/pageWidthInMm)
+  	this.hPages = Math.ceil(pattern.height/pageHeightInMm)
 
 		const divElem = document.createElement('div');
 	  divElem.innerHTML = svg;
-
 	  this.svg = divElem.firstElementChild;
-	  this.wPages = Math.ceil(designSize.width/width)
-  	this.hPages = Math.ceil(designSize.height/height)
-
 	  this.svg.setAttribute('height', this.hPages * this.pageHeight)
 	  this.svg.setAttribute('width', this.wPages * this.pageWidth)
-	  this.svg.setAttribute('viewBox', `0 0 ${this.wPages * width} ${this.hPages * height}`)
-		this.svg.getBoundingClientRect() // force layout calculation
+	  this.svg.setAttribute('viewBox', `0 0 ${this.wPages * pageWidthInMm} ${this.hPages * pageHeightInMm}`)
 
 		this.pdf = new jsPDF({orientation: this.settings.orientation === 'portrait' ? 'p' : 'l', unit: 'pt', format: [this.pageWidth, this.pageHeight]})
-
 	}
 
 	async export() {
@@ -62,7 +60,7 @@ export default class Exporter {
 	async generatePages() {
 		const width = this.svg.width.baseVal.value
 	  const height = this.svg.height.baseVal.value
-		const margin = this.settings.margin * pointsPerMm
+	  const margin = this.settings.margin * pointsPerMm
 		for (var h = 0; h < this.hPages; h++) {
 		  for (var w = 0; w < this.wPages; w++) {
 		    this.pdf.addPage()
