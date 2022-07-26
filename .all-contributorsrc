@@ -876,6 +876,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "SimonbJohnson",
+      "name": "SimonbJohnson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2110742?v=4",
+      "profile": "https://github.com/SimonbJohnson",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true
