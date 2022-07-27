@@ -10,6 +10,12 @@ This macro allows you to add repeating text along a path.
 
 <Example part="plugin_banner">Example of the banner macro provided by this plugin</Example>
 
+<Tip>
+
+The banner plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+</Tip>
+
 ## Installation
 
 ```sh
