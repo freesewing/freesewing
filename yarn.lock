@@ -16243,9 +16243,9 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
 netlify-cli@^10.3.3:
-  version "10.11.2"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.11.2.tgz#c3e1bf3992f12458f042ad9c3733f8dbbc9a4b28"
-  integrity sha512-gbIZfHkjwar7XuyqiVJzKgRcNp1V4s7ihpGAxh8mwYgi1Z2KMihfaImtaw2yGkp1DoHCbGAZYEt2bKXvU6BomA==
+  version "10.12.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.12.0.tgz#a8e4a5a81405644e18293c7ad57c75fab0d0f834"
+  integrity sha512-sDOb2m4zx1QfHVdw/6VaGRBPtDd62MjDVgrpStVstDb+SZCAbEJYY25avbc4T8eE9ehOAjJaYX3z8IimlUb0uA==
   dependencies:
     "@netlify/build" "^27.5.0"
     "@netlify/config" "^18.1.2"
@@ -16318,7 +16318,7 @@ netlify-cli@^10.3.3:
     multiparty "^4.2.1"
     netlify "^12.0.0"
     netlify-headers-parser "^6.0.2"
-    netlify-onegraph-internal "0.3.6"
+    netlify-onegraph-internal "0.3.8"
     netlify-redirect-parser "^13.0.5"
     netlify-redirector "^0.2.1"
     node-fetch "^2.6.0"
@@ -16367,10 +16367,10 @@ netlify-headers-parser@^6.0.2:
     path-exists "^5.0.0"
     toml "^3.0.0"
 
-netlify-onegraph-internal@0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/netlify-onegraph-internal/-/netlify-onegraph-internal-0.3.6.tgz#b1187183b51dcbc6f3d275ac5a65cd81dd8c6b0c"
-  integrity sha512-nNqCWT2jzPmqw/3/sKf1RFicL2JEFjmxXTpnIzJKt5U+bnS633cOy5pImNnfBGTd50NTNvdZ0GXMhQ7AwH16Qg==
+netlify-onegraph-internal@0.3.8:
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/netlify-onegraph-internal/-/netlify-onegraph-internal-0.3.8.tgz#cda09d3676ea7a7e2ca01f63eb0e1233024ecd18"
+  integrity sha512-ElgiJwQpXwXjHjC0Lhq2woZoJ/l62b1xUIDeg6tC3UF/pQFNIaD0aaIwphoiPfkkkbo5DVLogg9AASt2E0oONQ==
   dependencies:
     graphql "16.0.0"
     node-fetch "^2.6.0"
