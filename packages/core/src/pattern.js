@@ -462,12 +462,12 @@ Pattern.prototype.sampleModels = function (models, focus = false) {
   return this
 }
 
-Pattern.prototype.render = function (layoutType="layout", forPdf) {
+Pattern.prototype.render = function (layoutType="layout") {
   this.svg = new Svg(this)
   this.svg.hooks = this.hooks
 
   this.svg.runHooks('preRender')
-  this.pack(layoutType, forPdf)
+  this.pack(layoutType)
   this.runHooks('postLayout')
   return this.svg.render(this)
 }
@@ -583,7 +583,7 @@ Pattern.prototype.pack = function (layoutType="layout", forPdf) {
       // Some parts are added by late-stage plugins
       if (this.parts[partId]) {
         let transforms = thisLayout.parts[partId]
-        this.parts[partId].generateTransform(transforms, forPdf);
+        this.parts[partId].generateTransform(transforms);
       }
     }
   }

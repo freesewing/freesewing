@@ -87,7 +87,6 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
               macro('addRuler', {xAxis: true, pageName})
               macro('addRuler', {xAxis: false, pageName})
             }
-
           }
           x += w
         }

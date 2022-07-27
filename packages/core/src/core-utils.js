@@ -1,7 +1,7 @@
 /** Utils that are not meant to be exposed in part.shorthand().utils */
 
 /** Generates the transform attributes needed for a given part */
-export const generatePartTransform = (x, y, rotate, flipX, flipY, part, forPdf) => {
+export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
 
   const transforms = []
   let xTotal = x;
@@ -11,15 +11,13 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part, forPdf) 
     transforms.push(
       `scale(-1, 1)`,
     )
-    if (!forPdf) xTotal += part.width
-    // rotate *= -1
+    xTotal += part.width
   }
   if (flipY) {
     transforms.push(
     `scale(1, -1)`,
     )
-    if (!forPdf) yTotal += part.height
-    // rotate *=-1
+    yTotal += part.height
   }
 
 

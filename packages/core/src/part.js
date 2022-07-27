@@ -353,7 +353,7 @@ Part.prototype.shorthand = function () {
 
 Part.prototype.generateTransform = function(transforms, forPdf) {
   const {move, rotate, flipX, flipY} = transforms;
-  const generated = generatePartTransform(move?.x, move?.y, rotate, flipX, flipY, this, forPdf);
+  const generated = generatePartTransform(move?.x, move?.y, rotate, flipX, flipY, this);
 
   for (var t in generated) {
     this.attr(t, generated[t], true);
