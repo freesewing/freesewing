@@ -30,7 +30,7 @@ export const handleExport = (format, gist, design, t, app, setLink, setFormat, s
   gist.embed=false
   let svg = ''
   let pattern = new design(gist)
-  pattern.use(theme, {nest: format === 'svg'})
+  pattern.use(theme, {stripped: format !== 'svg'})
   pattern.use({
     hooks: {
       insertText: (locale, text, {t}) => t(text)

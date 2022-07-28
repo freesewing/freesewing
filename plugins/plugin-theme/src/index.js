@@ -9,12 +9,12 @@ export default {
   name: pkg.name,
   version: pkg.version,
   hooks: {
-    preRender: function (svg, data) {
+    preRender: function (svg, data = {}) {
       if (svg.attributes.get('freesewing:plugin-theme') === false) {
         svg.attributes.set('class', 'freesewing')
         svg.style += sample
         svg.style += paperless
-        svg.style += draft(svg.pattern.settings.scale, data.nest)
+        svg.style += draft(svg.pattern.settings.scale, data.stripped)
         if (svg.pattern.settings.paperless) {
           svg.pattern.settings.units === 'imperial'
             ? (svg.defs += gridImperial)
