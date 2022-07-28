@@ -16,7 +16,7 @@ export const prebuildI18n = async(site, only=false) => {
       JSON.stringify(content)
     )
 
-  const filter = site === 'dev' ? (loc => lock === 'en') : (loc => denyList.indexOf(loc) === -1)
+  const filter = site === 'dev' ? (loc => loc === 'en') : (loc => denyList.indexOf(loc) === -1)
   const locales = await build(filter, only)
 
   console.log (`copying them to ${site}`, Object.keys(locales))
