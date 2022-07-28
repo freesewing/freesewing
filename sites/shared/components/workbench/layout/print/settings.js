@@ -3,6 +3,7 @@ import OrientationPicker from './orientation-picker'
 import PrintIcon from 'shared/components/icons/print'
 import RightIcon from 'shared/components/icons/right'
 import ClearIcon from 'shared/components/icons/clear'
+import ExportIcon from 'shared/components/icons/export'
 import { useTranslation } from 'next-i18next'
 
 const PrintLayoutSettings = props => {
@@ -31,6 +32,14 @@ const PrintLayoutSettings = props => {
       >
         <ClearIcon className="h-6 w-6 mr-2"/>
         {t('reset')}
+      </button>
+      <button
+        key="export"
+        onClick={props.exportIt}
+        className="btn btn-primary btn-outline"
+      >
+        <ExportIcon className="h-6 w-6 mr-2"/>
+          {t('export')}
       </button>
     </div>
   )

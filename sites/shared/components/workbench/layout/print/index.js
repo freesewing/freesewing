@@ -44,8 +44,7 @@ const PrintLayout = props => {
         }
       </h2>
       <div className="m-4">
-        <Settings {...props} draft={draft} layoutType="printLayout"/>
-        <button className="button" onClick={exportIt}>Export </button>
+        <Settings {...{...props, exportIt}} draft={draft} layoutType="printLayout"/>
       </div>
       <Draft
         draft={draft}

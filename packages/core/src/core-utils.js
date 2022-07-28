@@ -8,16 +8,17 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   let yTotal = y;
 
   if (flipX) {
+    console.log(part)
     transforms.push(
       `scale(-1, 1)`,
     )
-    xTotal += part.width
+    xTotal += part.topLeft.x * 2 + part.width
   }
   if (flipY) {
     transforms.push(
     `scale(1, -1)`,
     )
-    yTotal += part.height
+    yTotal += part.topLeft.y * 2 + part.height
   }
 
 
