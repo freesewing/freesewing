@@ -43,7 +43,6 @@ export default {
         for (const id of [
           `_${prefix}_titleNr`,
           `_${prefix}_titleName`,
-          `_${prefix}_titleCut`,
           `_${prefix}_titlePattern`,
           `_${prefix}_titleFor`,
         ])
@@ -57,14 +56,9 @@ export default {
 
         return `matrix(${so.scale}, 0, 0, ${so.scale}, ${cx}, ${cy}) rotate(${so.rotation} ${anchor.x} ${anchor.y})`
       }
-      const nextPoint = (shiftAmt) => {
-        return so.at.shift(-90 - so.rotation, shiftAmt * so.scale)
-      }
-
       const defaults = {
         scale: 1,
         rotation: 0,
-        cutList: true,
       }
       so = { ...defaults, ...so }
       so.scale = so.scale * this.context.settings.scale
@@ -77,42 +71,26 @@ export default {
         .attr('data-text-transform', transform(so.at))
       let shift = 8
       if (so.title) {
-        this.points[`_${prefix}_titleName`] = nextPoint(shift)
+        this.points[`_${prefix}_titleName`] = so.at
+          .shift(-90 - so.rotation, shift * so.scale)
           .attr('data-text', so.title)
           .attr('data-text-class', 'text-lg fill-current font-bold')
-          .attr('data-text-transform', transform(nextPoint(13)))
+          .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, 13 * so.scale)))
         shift += 8
       }
-      if (so.cutList) {
-        let cutList = this.cutList((this.name || so.title || '').replace(/_cutPiece\d+/, ''))
-        const cutTitle = []
-        if (cutList) {
-          this.points[`_${prefix}_titleCut`] = nextPoint(shift)
-              .attr('data-text-class', 'fill-secondary')
-              .attr('data-text-transform', transform(nextPoint(shift)))
-              .attr('data-text', 'plugin:cut')
-
-          for (var key in cutList) {
-            if (typeof cutList[key] !== 'number') continue
-
-              this.points[`_${prefix}_titleCut`].attr('data-text', `$t(plugin:${cutList.isPair ? 'pair' : 'cutCount'}, {"count": ${cutList[key]/(cutList.isPair ? 2 : 1)}, "fabricType": "workbench:fabricType:${key}"})`)
-          }
-        }
-
-        shift += 8
-      }
-
-      this.points[`_${prefix}_titlePattern`] = nextPoint(shift)
+      this.points[`_${prefix}_titlePattern`] = so.at
+        .shift(-90 - so.rotation, shift * so.scale)
         .attr('data-text', this.context.config.name)
         .attr('data-text', 'v' + this.context.config.version)
         .attr('data-text-class', 'fill-note')
-        .attr('data-text-transform', transform(nextPoint(shift)))
+        .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       if (this.context.settings.metadata && this.context.settings.metadata.for) {
         shift += 8
-        this.points[`_${prefix}_titleFor`] = nextPoint()
+        this.points[`_${prefix}_titleFor`] = so.at
+          .shift(-90 - so.rotation, shift * so.scale)
           .attr('data-text', '( ' + this.context.settings.metadata.for + ' )')
           .attr('data-text-class', 'fill-current font-bold')
-          .attr('data-text-transform', transform(nextPoint(shift)))
+          .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       }
     },
   },

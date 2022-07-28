@@ -6,8 +6,8 @@ patternName: Назва викрійки
 patternType: Тип викрійки
 patternCreated: Ваш каркас викрійки створено у
 runTheseCommands: Щоб розпочати, запустіть цю команду
-startRollup: In one terminal, start the rollup bundler in watch mode
-startWebpack: "It will enter the 'example' folder, and start the development environment."
+startRollup: У одному терміналі запустіть ролап у режимі перегляду
+startWebpack: "Це відкриє папку \"приклад\" та запустить девелопмент."
 devDocsAvailableAt: Документація для розробників доступна за адресою
 talkToUs: Для запитань, відгуків чи пропозицій, приєднуйтесь до нашого серверу в Discord
 draftYourPattern: Створіть Вашу викрійку
@@ -15,13 +15,13 @@ testYourPattern: Протестувати Вашу викрійку
 draftThing: 'Створити {thing}'
 testThing: 'Протестувати {thing}'
 renderInBrowser: Натисніть нижче, щоб відобразити Вашу викрійку у браузері.
-weWillReRender: When you make changes, we will re-render for you.
+weWillReRender: Коли Ви виконаєте зміни, ми перезавантажимо зображення для Вас.
 youCan: Ви можете
 enterMeasurements: Ввести вимірювання вручну
-preloadMeasurements: Preload a set of measurements
+preloadMeasurements: Завантажити набір мірок
 size: Розмір
-noRequiredMeasurements: This pattern has no required measurements
-howtoAddMeasurements: To require measurements, add them to the <b>measurements</b> section of the pattern's configuration file.
+noRequiredMeasurements: Ця викрійка не потребує замірів
+howtoAddMeasurements: Щоб додати бажані мірки, додайте їх у секцію <b>заміри</b> у файлі конфігурації викрійки.
 seeDocsAt: Документація по цій темі доступна за адресою
 clearDesignMode: Очистити режим дизайну
 designMode: Режим дизайну

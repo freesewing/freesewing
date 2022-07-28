@@ -9,15 +9,7 @@ const workbench = {
   "layoutThing": "Layout {thing}",
   "pageSize": "Page size",
   "startBySelectingAThing": "Start by selecting a {thing}",
-  "testThing": "Test {thing}",
-  "exportThing": "Export {thing}",
-  "fabricType": {
-    "cut": "Main",
-    "interfacing": "Interfacing",
-    "lining": "Lining"
-  },
-  "fabricWidth": "{type} Fabric Width",
-  "fabricHeight": "{type} Fabric Length"
+  "testThing": "Test {thing}"
 }
 
 export default workbench
