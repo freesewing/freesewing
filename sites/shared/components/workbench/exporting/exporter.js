@@ -73,8 +73,6 @@ export default class Exporter {
 	  		pattern: pattern.height
 	  	}
 	  })
-	  // console.log(this.svg.outerHTML)
-
 	}
 
 	createPdf() {
@@ -86,7 +84,6 @@ export default class Exporter {
 		const buffers = [];
 		this.pdf.on('data', buffers.push.bind(buffers));
 		this.pdf.on('end', () => {
-		    // let pdfData = Buffer.concat(buffers);
 		    const blob = new Blob(buffers, {
 		    	type: 'application/pdf'
 		    })
@@ -102,7 +99,6 @@ export default class Exporter {
 
 	async generateCoverPage() {
 		if (!this.settings.coverPage) {
-			this.pdf.deletePage(1)
 			return
 		}
 
@@ -129,7 +125,10 @@ export default class Exporter {
 
 		for (var h = 0; h < this.hPages; h++) {
 		  for (var w = 0; w < this.wPages; w++) {
-		    this.pdf.addPage()
+		  	// if there was no cover page, the first page already exists
+		    if (this.settings.coverPage || h+w > 0) {
+		    	this.pdf.addPage()
+		    }
 
 		    let x = -w * this.pageWidth + (0.5 + w) * this.margin
 		    let y = -h * this.pageHeight + (0.5 + h) * this.margin
@@ -141,6 +140,5 @@ export default class Exporter {
 
 	save() {
 		this.pdf.end();
-		// this.pdf.save(`freesewing-${this.designName}.pdf`)
 	}
 }

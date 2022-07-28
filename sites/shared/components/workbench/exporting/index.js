@@ -15,6 +15,13 @@ export const exports = {
   exportAsData: ['json', 'yaml', 'github gist'],
 }
 
+export const defaultPdfSettings = {
+  size: 'a4',
+  orientation: 'portrait',
+  margin: 10,
+  coverPage: true
+}
+
 export const handleExport = (format, gist, design, t, app, setLink, setFormat, setSvg) => {
 
   setLink && setLink(false)
@@ -37,11 +44,9 @@ export const handleExport = (format, gist, design, t, app, setLink, setFormat, s
     }
   },{t})
 
-  const settings = gist._state.layout?.forPrinting?.page || {
-    size: 'a4',
-    orientation: 'portrait',
-    margin: 10,
-    coverPage: true
+  const settings = {
+    ...defaultPdfSettings,
+    ...(gist._state.layout?.forPrinting?.page || {})
   }
 
   if (format !== 'pdf') {

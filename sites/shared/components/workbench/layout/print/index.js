@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next'
 import Settings from './settings'
 import Draft from '../draft/index'
 import {pagesPlugin} from './plugin'
-import {handleExport} from 'shared/components/workbench/exporting'
+import {handleExport, defaultPdfSettings} from 'shared/components/workbench/exporting'
 
 const PrintLayout = props => {
 
@@ -16,7 +16,7 @@ const PrintLayout = props => {
 
   const { t } = useTranslation(['workbench'])
 
-  const layoutSettings = props.gist?._state?.layout?.forPrinting?.page || {}
+  const layoutSettings = props.gist?._state?.layout?.forPrinting?.page || defaultPdfSettings
 
   const draft = props.draft.use(pagesPlugin(
     layoutSettings.size,
