@@ -202,6 +202,10 @@ export default function (partNumber, part) {
     points.logo = points.legMiddle.shiftFractionTowards(points.legBottom, 0.08)
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.4)
 
+    points.legMiddle.attr('data-text', 'C').attr('data-text-class', 'center')
+    points.legTopLeft.attr('data-text', 'D').attr('data-text-class', 'center')
+    points.legTopRight.attr('data-text', 'D').attr('data-text-class', 'center')
+
     points.titleAnchor = points.legMiddle
       .shiftFractionTowards(points.legBottom, 0.2)
       .shift(180, sectionWidth * 0.1)
@@ -248,16 +252,44 @@ export default function (partNumber, part) {
         .attr('class', 'hint dotted')
     }
 
-    // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    // snippets.logo = new Snippet('logo', points.logo)
-    // points.text = points.logo
-    //   .shift(-90, w / 8)
-    //   .attr('data-text', partNumber)
-    //   .attr('data-text-class', 'center')
-
     if (sa) {
       paths.sa = paths.section.offset(sa).attr('class', 'fabric sa')
     }
+
+    if (paperless) {
+      // macro('hd', {
+      //   from: points.topFin01,
+      //   to: points.topFinRight,
+      //   y: points.topFin01.y - sa - 10,
+      // })
+      // macro('hd', {
+      //   from: points.topFin03,
+      //   to: points.topFinRight,
+      //   y: points.topFin03.y + sa + 20,
+      // })
+      // macro('hd', {
+      //   from: points.topFinLeft,
+      //   to: points.topFinRight,
+      //   y: points.topFin03.y + sa + 10,
+      // })
+      macro('vd', {
+        from: points.legMiddle,
+        to: points.legBottom,
+        x: points.legTopLeft.x - sa - 10,
+      })
+      console.log( {legLength: points.legMiddle.dist( points.legBottom ) })
+      // macro('vd', {
+      //   from: points.topFin01,
+      //   to: points.topFinInsideBottom,
+      //   x: points.topFin02.x +sa + 10,
+      // })
+      // macro('vd', {
+      //   from: points.topFinInsideTop,
+      //   to: points.topFin01,
+      //   x: points.topFinLeft.x -sa - 20,
+      // })
+    }
+
   }
 
   return part

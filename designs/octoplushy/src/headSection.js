@@ -422,7 +422,7 @@ export default function (partNumber, part) {
     .line(points.topLeft)
     .close()
     .attr('class', 'fabric')
-    .setRender(true)
+    .setRender(false)
 
   // Complete?
   if (complete) {
@@ -502,6 +502,9 @@ export default function (partNumber, part) {
         .attr('data-text-class', 'center')
         .attr('class', 'hint dotted')
     }
+    points.sectionTop.attr('data-text', 'A').attr('data-text-class', 'center')
+    points.legTopLeft.attr('data-text', 'B').attr('data-text-class', 'center')
+    points.legTopRight.attr('data-text', 'B').attr('data-text-class', 'center')
 
     snippets.left = new Snippet('notch', points.sectionLeft)
     snippets.right = new Snippet('notch', points.sectionRight)

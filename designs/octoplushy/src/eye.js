@@ -18,7 +18,7 @@ export default function (partNumber, part) {
   if (options.type != 'squid' && options.type != 'octopus') {
     return part
   }
-  if (partNumber > (options.type == 'squid' ? 2 : 3)) {
+  if (partNumber > (options.type == 'squid' ? 1 : 2)) {
     return part
   }
 
