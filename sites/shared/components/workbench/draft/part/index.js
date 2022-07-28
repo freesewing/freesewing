@@ -141,7 +141,7 @@ const Part = props => {
 
   return (
       <g {...getProps(part)} id={`part-${partName}`}>
-        {PartInner(props)}
+        <PartInner {...props}/>
       </g>
   )
 }

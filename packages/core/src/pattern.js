@@ -533,7 +533,8 @@ Pattern.prototype.pack = function (layoutType="layout", forPdf) {
   }
   const thisLayout = this.settings.layouts[layoutType];
   // add existing layout to bins so that new pieces can be added to the layout without resetting
-  let bins = thisLayout ? [{id: 'preLayout', width: thisLayout.width, height: thisLayout.height}] : [];
+  let thisLayoutBin = {id: 'preLayout', width: 0, height: 0}
+  let bins = [];
   for (let key in this.parts) {
     let part = this.parts[key]
     // Avoid multiple render calls to cause stacking of transforms
@@ -542,14 +543,21 @@ Pattern.prototype.pack = function (layoutType="layout", forPdf) {
       part.stack()
       let width = part.bottomRight.x - part.topLeft.x
       let height = part.bottomRight.y - part.topLeft.y
-      // if the piece hasn't been in the layout, add it to bins
-      if (!thisLayout || !thisLayout.parts[key]) bins.push({ id: key, width, height })
+      // if the piece has been in the layout, account for it in the layoutbin
+      if (thisLayout?.parts?.[key]?.br) {
+        thisLayoutBin.width = Math.max(thisLayout.parts[key].br.x, thisLayoutBin.width)
+        thisLayoutBin.height = Math.max(thisLayout.parts[key].br.y, thisLayoutBin.height)
+      }
+      // otherwise add it separately
       else {
-        if (this.width < width) this.width = width
-        if (this.height < height) this.height = height
+        bins.push({ id: key, width, height })
       }
     }
   }
+
+  // add the layoutBin to the front if it's got anything in it
+  if (thisLayoutBin.height || thisLayoutBin.width) bins.unshift(thisLayoutBin)
+
   // if there are any bins, even if there's an existing layout
   if (bins.length) {
     let size = pack(bins, { inPlace: true })
@@ -560,25 +568,24 @@ Pattern.prototype.pack = function (layoutType="layout", forPdf) {
       let part = this.parts[bin.id]
       if (bin.x !== 0 || bin.y !== 0) {
         part.attr('transform', `translate(${bin.x}, ${bin.y})`)
-        this.autoLayout.parts[bin.id].move = {
-          x: bin.x + part.layout.move.x,
-          y: bin.y + part.layout.move.y,
-        }
-      } else
-        this.autoLayout.parts[bin.id].move = {
-          x: part.layout.move.x,
-          y: part.layout.move.y,
-        }
+      }
+      this.autoLayout.parts[bin.id].move = {
+        x: bin.x + part.layout.move.x,
+        y: bin.y + part.layout.move.y,
+      }
     }
+
     this.width = size.width
     this.height = size.height
+  }
+  // if there were no bins, probably we're 0 0
+  else {
+    this.width = thisLayoutBin.width
+    this.height = thisLayoutBin.height
   }
 
   // if there's an existing layout, even if we had to pack new pieces
   if (typeof thisLayout === 'object') {
-    this.width = thisLayout.width
-    this.height = thisLayout.height
-
     for (let partId of Object.keys(thisLayout.parts)) {
       // Some parts are added by late-stage plugins
       if (this.parts[partId]) {
