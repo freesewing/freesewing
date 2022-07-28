@@ -63,6 +63,7 @@ const Part = props => {
   // Use a ref for direct DOM manipulation
   const partRef = useRef(null)
   const centerRef = useRef(null)
+  const innerRef = useRef(null)
 
   // State variable to switch between moving or rotating the part
   const [rotate, setRotate] = useState(false)
@@ -156,8 +157,8 @@ const Part = props => {
     if (!partRef.current) return
 
     setTransforms()
-    const partRect = partRef.current.getBoundingClientRect();
-    const matrix = partRef.current.ownerSVGElement.getScreenCTM().inverse();
+    const partRect = innerRef.current.getBoundingClientRect();
+    const matrix = innerRef.current.ownerSVGElement.getScreenCTM().inverse();
 
     const domToSvg = (point) => DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
 
@@ -201,7 +202,7 @@ const Part = props => {
       onClick={toggleDragRotate}
       {...getProps(part)}
     >
-      {PartInner(props)}
+      <PartInner {...props} ref={innerRef}/>
       {!props.isLayoutPart && <>
       <text x={center.x} y={center.y} ref={centerRef} />
       <rect
