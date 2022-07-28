@@ -1,6 +1,3 @@
-// import mirror from '@freesewing/plugin-mirror'
-// import { Store } from '@material-ui/icons'
-
 export default function (partNumber, part) {
   console.log({ part: part })
   const {
@@ -45,7 +42,7 @@ export default function (partNumber, part) {
       }
       break
     case 'octoplushy':
-      legLength *= options.bottomLegReduction
+      legLength *= options.bottomLegReductionPlushy
   }
 
   points.legMiddle = new Point(0, 0)
@@ -257,39 +254,61 @@ export default function (partNumber, part) {
     }
 
     if (paperless) {
-      // macro('hd', {
-      //   from: points.topFin01,
-      //   to: points.topFinRight,
-      //   y: points.topFin01.y - sa - 10,
-      // })
-      // macro('hd', {
-      //   from: points.topFin03,
-      //   to: points.topFinRight,
-      //   y: points.topFin03.y + sa + 20,
-      // })
-      // macro('hd', {
-      //   from: points.topFinLeft,
-      //   to: points.topFinRight,
-      //   y: points.topFin03.y + sa + 10,
-      // })
-      macro('vd', {
-        from: points.legMiddle,
-        to: points.legBottom,
-        x: points.legTopLeft.x - sa - 10,
+      macro('hd', {
+        from: points.legTopLeft,
+        to: points.legTopRight,
+        y: points.legMiddle.y - sa,
       })
-      console.log( {legLength: points.legMiddle.dist( points.legBottom ) })
-      // macro('vd', {
-      //   from: points.topFin01,
-      //   to: points.topFinInsideBottom,
-      //   x: points.topFin02.x +sa + 10,
-      // })
-      // macro('vd', {
-      //   from: points.topFinInsideTop,
-      //   to: points.topFin01,
-      //   x: points.topFinLeft.x -sa - 20,
-      // })
-    }
+      macro('hd', {
+        from: points.legBottomLeft,
+        to: points.legBottomRight,
+        y: points.legBottom.y + sa + 10,
+      })
 
+      macro('vd', {
+        from: points.legBottom,
+        to: points.legMiddle,
+        x: points.skirtLeft.x - sa - 20,
+      })
+
+      if (options.type == 'octopus') {
+        macro('hd', {
+          from: points.skirtLeft,
+          to: points.skirtRight,
+          y: points.skirtRight.y,
+        })
+        macro('vd', {
+          from: points.skirtLeft,
+          to: points.legMiddle,
+          x: points.skirtLeft.x - sa - 10,
+        })
+        macro('vd', {
+          from: points.legTopLeft,
+          to: points.skirtLeft,
+          x: points.skirtLeft.x - sa - 10,
+        })
+      } else {
+        macro('vd', {
+          from: points.legTopLeft,
+          to: points.legMiddle,
+          x: points.skirtLeft.x - sa - 10,
+        })
+      }
+      if (options.type == 'squid') {
+        if (partNumber == 1) {
+          macro('hd', {
+            from: points.tentacleLeft,
+            to: points.tentacleRight,
+            y: points.tentacleRight.y,
+          })
+          macro('vd', {
+            from: points.legBottom,
+            to: points.tentacleLeft,
+            x: points.tentacleLeft.x - sa - 10,
+          })
+        }
+      }
+    }
   }
 
   return part

@@ -26,14 +26,13 @@ export default function (partNumber, part) {
 
   let sectionWidth = store.get('sectionWidth')
   let eyeSize = sectionWidth / 1.5
-  let logoScale = .25
-  let titleScale = .25
+  let logoScale = 0.25
+  let titleScale = 0.25
   if (partNumber == 1) {
     eyeSize *= 0.65
-    logoScale = .15
-    titleScale = .16
+    logoScale = 0.15
+    titleScale = 0.16
   }
-
 
   if (partNumber < 2) {
     points.top = new Point(0, -1 * (eyeSize / 2))
@@ -59,20 +58,18 @@ export default function (partNumber, part) {
       .close()
       .attr('class', 'fabric')
       .setRender(true)
-    points.logo = points.top.shiftFractionTowards(
-      points.bottom,
-      0.3
-    )
+    points.logo = points.top.shiftFractionTowards(points.bottom, 0.3)
     points.titleAnchor = points.bottom
-      .shiftFractionTowards(points.top, 0.25).shift(180,eyeSize/10)
+      .shiftFractionTowards(points.top, 0.25)
+      .shift(180, eyeSize / 10)
   } else {
-    logoScale = .35
-    titleScale = .25
+    logoScale = 0.35
+    titleScale = 0.25
     let eyeBrowWidth = eyeSize * 0.375
-    let eyeCirc = (eyeSize +(eyeBrowWidth *2))* Math.PI
+    let eyeCirc = (eyeSize + eyeBrowWidth * 2) * Math.PI
     points.tl = new Point(0, 0)
     points.tr = points.tl.shift(0, eyeCirc)
-    points.bl = points.tl.shift(270, eyeBrowWidth *2)
+    points.bl = points.tl.shift(270, eyeBrowWidth * 2)
     points.br = points.bl.shift(0, eyeCirc)
 
     paths.eye = new Path()
@@ -85,46 +82,49 @@ export default function (partNumber, part) {
       .attr('class', 'fabric')
       .setRender(true)
 
-    points.logo = points.tl.shiftFractionTowards(
-      points.bl,
-      0.5
-    ).shiftFractionTowards(
-      points.br, 0.3)
-    points.titleAnchor = points.tr.shiftFractionTowards(
-      points.br,
-      0.5
-    ).shiftFractionTowards(
-      points.bl, 0.3)
+    points.logo = points.tl
+      .shiftFractionTowards(points.bl, 0.5)
+      .shiftFractionTowards(points.br, 0.3)
+    points.titleAnchor = points.tr
+      .shiftFractionTowards(points.br, 0.5)
+      .shiftFractionTowards(points.bl, 0.3)
   }
   if (complete) {
-
     snippets.logo = new Snippet('logo', points.logo).attr('data-scale', logoScale)
 
     macro('title', {
       at: points.titleAnchor,
       nr: 3 + partNumber * 3,
-      title: (partNumber == 2 ? 'eyebrow' : partNumber == 1 ? 'pupil' : 'eye' ),
-      scale:  titleScale
+      title: partNumber == 2 ? 'eyebrow' : partNumber == 1 ? 'pupil' : 'eye',
+      scale: titleScale,
     })
 
     if (sa) {
-      paths.sa = paths.eye.offset(Math.min(sa,6)).attr('class', 'fabric sa')
+      paths.sa = paths.eye.offset(Math.min(sa, 6)).attr('class', 'fabric sa')
     }
   }
 
   // Paperless?
-//   if (paperless) {
-//     macro('hd', {
-//       from: points.bottomLeft,
-//       to: points.bottomRight,
-//       y: points.bottomLeft.y + sa + 15,
-//     })
-//     macro('vd', {
-//       from: points.bottomRight,
-//       to: points.topRight,
-//       x: points.topRight.x + sa + 15,
-//     })
-//   }
+  if (paperless) {
+    if (partNumber < 2) {
+      macro('hd', {
+        from: points.left,
+        to: points.right,
+        y: points.top.y - sa,
+      })
+    } else {
+      macro('hd', {
+        from: points.tl,
+        to: points.tr,
+        y: points.tl.y - sa,
+      })
+      macro('vd', {
+        from: points.bl,
+        to: points.tl,
+        x: points.tl.x - sa,
+      })
+    }
+  }
 
   return part
 }

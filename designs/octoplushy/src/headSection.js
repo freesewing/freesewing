@@ -44,15 +44,14 @@ export default function (partNumber, part) {
   }
   let skirtWidth =
     (options.type == 'octopus' ? 2 : options.type == 'octoplushy' ? 0.7 : 1) * sectionWidth
-  // legWidth = skirtWidth > legWidth ? legWidth : skirtWidth
   skirtWidth = skirtWidth < legAdjustedWidth ? legAdjustedWidth : skirtWidth
 
-  console.log({ w: w })
-  console.log({ sectionWidth: sectionWidth })
-  console.log({ neckWidth: neckWidth })
-  console.log({ legAdjustedWidth: w * options.legWidth * options.bottomTopLegRatio })
-  console.log({ toplegWidth: legAdjustedWidth })
-  console.log({ legLength: legLength })
+  // console.log({ w: w })
+  // console.log({ sectionWidth: sectionWidth })
+  // console.log({ neckWidth: neckWidth })
+  // console.log({ legAdjustedWidth: w * options.legWidth * options.bottomTopLegRatio })
+  // console.log({ toplegWidth: legAdjustedWidth })
+  // console.log({ legLength: legLength })
 
   points.topLeft = new Point(-1 * w, -1 * h)
   points.topRight = new Point(w, -1 * h)
@@ -61,14 +60,8 @@ export default function (partNumber, part) {
   points.left = new Point(-1 * w, 0)
   points.right = new Point(w, 0)
 
-  // points.sectionTop = points.topLeft.shiftFractionTowards(points.topRight, 1 / sections / 2)
   points.sectionTop = new Point(0, -1 * h)
-  // points.sectionBottom = points.bottomLeft.shiftFractionTowards(
-  //   points.bottomRight,
-  //   1 / sections / 2
-  // )
   points.sectionBottom = new Point(0, h)
-  // let sectionMid = points.left.shiftFractionTowards(points.sectionTop, 0.5)
   points.sectionLeft = new Point((-1 * sectionWidth) / 2, 0)
   let sectionMid = points.sectionLeft.shiftFractionTowards(points.sectionTop, 0.5)
 
@@ -160,24 +153,7 @@ export default function (partNumber, part) {
       (points.skirtTopMiddle.y - points.skirtBottomLeft3.y) / 2
     )
   }
-  // points.skirtBottomLeft = points.skirtTopMiddle.shift(270 - 360 / sections / 2, skirtWidth / 2 / Math.sin(utils.deg2rad(360 / sections / 2)))
   points.skirtBottomLeft = points.skirtBottomLeft3.clone()
-  // paths.leftTemp = new Path().move(points.skirtBottomLeft).line(points.skirtBottomLeftTempCp2 )
-
-  // if (options.type == 'octopus') {
-  //   skirtWidth = 3
-  //   points.skirtBottomLeft = utils.beamIntersectsX(
-  //     points.sectionBottomLeft,
-  //     points.sectionBottomLeft.shift(180 + 45, 100),
-  //     points.sectionLeft.x - neckWidth * 1.5
-  //   )
-  // } else {
-  //   points.skirtBottomLeft = utils.beamIntersectsX(
-  //     points.sectionBottomLeft,
-  //     points.sectionBottomLeft.shift(180 + 45, 100),
-  //     points.sectionLeft.x
-  //   )
-  // }
   points.legTopLeft = utils.beamIntersectsX(
     points.skirtBottomLeft,
     points.skirtBottomLeft.shift(270 + 30, 100),
@@ -414,15 +390,15 @@ export default function (partNumber, part) {
     .close()
     .attr('class', 'fabric')
 
-  paths.seam = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .attr('class', 'fabric')
-    .setRender(false)
+  // paths.box = new Path()
+  //   .move(points.topLeft)
+  //   .line(points.bottomLeft)
+  //   .line(points.bottomRight)
+  //   .line(points.topRight)
+  //   .line(points.topLeft)
+  //   .close()
+  //   .attr('class', 'fabric')
+  //   .setRender(false)
 
   // Complete?
   if (complete) {
@@ -529,16 +505,108 @@ export default function (partNumber, part) {
   // Paperless?
   if (paperless) {
     macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      from: points.sectionLeft,
+      to: points.sectionRight,
+      y: points.sectionTop.y - sa,
+    })
+    macro('hd', {
+      from: points.legTopLeft,
+      to: points.legTopRight,
+      y: points.legTopRight.y,
+    })
+    macro('hd', {
+      from: points.legBottomLeft,
+      to: points.legBottomRight,
+      y: points.legBottom.y + sa + 10,
+    })
+
+    macro('vd', {
+      from: points.sectionTop,
+      to: points.sectionRight,
+      x: points.skirtBottomRight.x + sa + 10,
     })
     macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      from: points.sectionTop,
+      to: points.sectionBottomRight,
+      x: points.skirtBottomRight.x + sa + 20,
     })
-  }
+    macro('vd', {
+      from: points.sectionTop,
+      to: points.skirtBottomRight,
+      x: points.skirtBottomRight.x + sa + 30,
+    })
+    macro('vd', {
+      from: points.sectionTop,
+      to: points.legBottom,
+      x: points.skirtBottomRight.x + sa + 40,
+    })
 
+    if (options.type == 'octopus') {
+      macro('hd', {
+        from: points.skirtBottomLeft,
+        to: points.skirtBottomRight,
+        y: points.skirtBottomRight.y,
+      })
+      macro('vd', {
+        from: points.skirtBottomRight,
+        to: points.legTopRight,
+        x: points.skirtBottomRight.x + sa + 30,
+      })
+    }
+    if (options.type == 'squid') {
+      macro('vd', {
+        from: points.legTopLeft,
+        to: points.sectionBottomLeft,
+        x: points.legTopLeft.x - sa - 10,
+      })
+      macro('vd', {
+        from: points.sectionBottomLeft,
+        to: points.sectionMidLeft,
+        x: points.legTopLeft.x - sa - 10,
+      })
+      if (partNumber == 1) {
+        macro('hd', {
+          from: points.tentacleLeft,
+          to: points.tentacleRight,
+          y: points.tentacleRight.y,
+        })
+        macro('hd', {
+          from: points.finSeam,
+          to: points.sectionTop,
+          y: points.sectionTop.y,
+        })
+        macro('hd', {
+          from: points.finSeam,
+          to: points.finSection,
+          y: points.finSection.y,
+        })
+        macro('hd', {
+          from: points.finFold,
+          to: points.finSection,
+          y: points.finFold.y,
+        })
+        macro('vd', {
+          from: points.legBottom,
+          to: points.tentacleLeft,
+          x: points.tentacleLeft.x - sa - 10,
+        })
+        macro('vd', {
+          from: points.finSeam,
+          to: points.sectionTop,
+          x: points.finSeam.x - sa,
+        })
+        macro('vd', {
+          from: points.finFold,
+          to: points.sectionTop,
+          x: points.finSeam.x - sa - 10,
+        })
+        macro('vd', {
+          from: points.finSection,
+          to: points.sectionTop,
+          x: points.finSeam.x - sa - 20,
+        })
+      }
+    }
+  }
   return part
 }
