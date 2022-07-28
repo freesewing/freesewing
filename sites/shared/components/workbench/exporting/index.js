@@ -37,16 +37,16 @@ export const handleExport = (format, gist, design, t, app, setLink, setFormat, s
     }
   },{t})
 
-  const settings = format === 'pdf' ? (gist._state.layout?.forPrinting?.page || {
+  const settings = gist._state.layout?.forPrinting?.page || {
     size: 'a4',
     orientation: 'portrait',
-  }) : {
-    size: format,
-    orientation: 'portrait',
+    margin: 10,
+    coverPage: true
   }
-  settings.margin = 10
-  settings.coverPage = true
 
+  if (format !== 'pdf') {
+    settings.format = format
+  }
 
   try {
     if (format !== 'svg') {
@@ -99,8 +99,6 @@ const ExportDraft = ({ gist, design, app }) => {
 
   const [link, setLink] = useState(false)
   const [format, setFormat] = useState(false)
-  const [svg, setSvg] = useState(null);
-  const svgDiv = useRef(null)
 
   const { t } = useTranslation(['app'])
 
@@ -131,7 +129,6 @@ const ExportDraft = ({ gist, design, app }) => {
           </div>
         ))}
       </div>
-      <div ref={svgDiv} dangerouslySetInnerHTML={{__html: svg}}></div>
     </div>
   )
 }

@@ -16,9 +16,12 @@ const PrintLayout = props => {
 
   const { t } = useTranslation(['workbench'])
 
+  const layoutSettings = props.gist?._state?.layout?.forPrinting?.page || {}
+
   const draft = props.draft.use(pagesPlugin(
-    props.gist?._state?.layout?.forPrinting?.page?.size,
-    props.gist?._state?.layout?.forPrinting?.page?.orientation,
+    layoutSettings.size,
+    layoutSettings.orientation,
+    layoutSettings.margin
   ))
 
   let patternProps
