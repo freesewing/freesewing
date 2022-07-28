@@ -10,7 +10,6 @@ import Hooks from './hooks'
 import Attributes from './attributes'
 import pkg from '../package.json'
 import {getPartCutlist} from './core-utils'
-import cloneDeep from 'lodash/clonedeep'
 
 export default function Pattern(config = { options: {} }) {
   // Default settings
@@ -526,7 +525,7 @@ Pattern.prototype.macro = function (key, method) {
 }
 
 /** Packs parts in a 2D space and sets pattern size */
-Pattern.prototype.pack = function (layoutType="layout", forPdf) {
+Pattern.prototype.pack = function (layoutType="layout") {
   if (this.events.error.length > 0) {
     this.raise.warning(`One or more errors occured. Not packing pattern parts`)
     return this

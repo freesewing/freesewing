@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState} from 'react'
 import { useTranslation } from 'next-i18next'
 import fileSaver from 'file-saver'
 import yaml from 'js-yaml'
@@ -22,7 +22,7 @@ export const defaultPdfSettings = {
   coverPage: true
 }
 
-export const handleExport = (format, gist, design, t, app, setLink, setFormat, setSvg) => {
+export const handleExport = (format, gist, design, t, app, setLink, setFormat) => {
 
   setLink && setLink(false)
   setFormat && setFormat(format)
@@ -60,7 +60,6 @@ export const handleExport = (format, gist, design, t, app, setLink, setFormat, s
 
     pattern.draft();
     svg = pattern.render('printLayout', format !== 'svg')
-    if (setSvg) setSvg(svg);
 
   } catch(err) {
     console.log(err)
@@ -126,7 +125,7 @@ const ExportDraft = ({ gist, design, app }) => {
             {exports[type].map(format => (
               <button key={format}
                 className="btn btn-primary"
-                onClick={() => handleExport(format, gist, design, t, app, setLink, setFormat, setSvg, svgDiv)}
+                onClick={() => handleExport(format, gist, design, t, app, setLink, setFormat)}
               >
                 {type === 'exportForPrinting' ? `${format} pdf` : format }
               </button>
