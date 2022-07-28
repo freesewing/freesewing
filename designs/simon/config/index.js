@@ -94,42 +94,6 @@ const config = {
   },
   parts: ['collarStand', 'collar', 'sleevePlacketUnderlap', 'sleevePlacketOverlap', 'cuff'],
   hide: ['base', 'frontBase', 'front', 'backBase', 'sleeveBase'],
-  cutList: {
-    collarStand: {
-      cut: 2,
-      isPair: true,
-      interfacing: 2
-    },
-    collar: {
-      cut: 1,
-      interfacing: 1
-    },
-    undercollar: {
-      cut: 1,
-      interfacing: 1
-    },
-    yoke: (settings) => ({cut: settings.options.splitYoke ? 4 : 2}),
-    sleeve: {
-      cut: 2,
-      isPair: true
-    },
-    collarStand: {
-      cut: 2,
-      interfacing: 2
-    },
-    sleevePlacketUnderlap: {
-      cut: 2
-    },
-    sleevePlacketOverlap: {
-      cut: 2,
-      isPair: true
-    },
-    cuff: {
-      cut: 4,
-      isPair: true,
-      interfacing: 2
-    },
-  },
   options: {
     ...Brian.config.options,
 

@@ -52,12 +52,6 @@ export default {
     'frontSideDart',
     //   'frontShoulderDart'
   ],
-  cutList: {
-    back: {
-      cut: 2,
-      isPair: true
-    }
-  },
   options: {
     // Constants
     acrossBackFactor: 0.925,
