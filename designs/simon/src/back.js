@@ -129,6 +129,7 @@ export default (part) => {
   } else points.cbTop = points.cbYoke
 
   // Box pleat
+  points.armholeYokeSplitPreBoxpleat = points.armholeYokeSplit.clone()
   if (options.boxPleat) {
     points.boxPleatLeft = points.cbTop.shift(0, store.get('boxPleatWidth') / 2)
     points.boxPleatMid = points.boxPleatLeft.shift(0, store.get('boxPleatFold'))

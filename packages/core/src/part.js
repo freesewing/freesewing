@@ -368,4 +368,18 @@ Part.prototype.isEmpty = function() {
   return Object.keys(this.paths).length === 0 && Object.keys(this.snippets).length === 0
 }
 
+/** Chainable way to set the grain property */
+Part.prototype.setGrain = function (grain = 90) {
+  this.attributes.set('data-grain', grain)
+
+  return this
+}
+
+/** Chainable way to set the grain property */
+Part.prototype.setCut = function (cut = { count: 2, mirror: true, onFold: false }) {
+  this.attributes.set('data-cut', cut)
+
+  return this
+}
+
 export default Part

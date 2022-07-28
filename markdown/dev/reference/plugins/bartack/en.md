@@ -11,6 +11,12 @@ tight zig-zag stitches used to enforce a seam — to your design.
 
 <Example part="plugin_bartack">Example of the bartack macro provided by this plugin</Example>
 
+<Tip>
+
+The bartack plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+</Tip>
+
 ## Installation
 
 ```sh

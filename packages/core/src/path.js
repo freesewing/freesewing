@@ -35,6 +35,13 @@ Path.prototype.setRender = function (render = true) {
   return this
 }
 
+/** Chainable way to set the class property */
+Path.prototype.setClass = function (className = false) {
+  if (className) this.attributes.set('class', className)
+
+  return this
+}
+
 /** Adds a move operation to Point to */
 Path.prototype.move = function (to) {
   if (to instanceof Point !== true)

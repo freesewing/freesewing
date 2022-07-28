@@ -102,7 +102,7 @@ howToTakeMeasurements: Як робити заміри
 i18n: Інтернаціоналізація
 imperialUnits: Імперські одиниці (дюйм)
 instagram: Інстаграм
-invalidTldMessage: '.{tld} is not a valid TLD'
+invalidTldMessage: '.{tld} не є дійсним доменом верхнього рівня (TLD)'
 joinTheChatMsg: Ми маємо спільноту в Discord, де Ви можете поспілкуватися з привітними людьми.
 justAMoment: Зачекайте хвилинку
 layout: Макет

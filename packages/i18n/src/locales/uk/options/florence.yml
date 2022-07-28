@@ -1,10 +1,10 @@
 ---
 height:
-  title: Height
-  description: Controls the height of the face mask
+  title: Висота
+  description: Контролює висоту данної маски
 length:
-  title: Length
-  description: Controls the length of the face mask
+  title: Довжина
+  description: Контролює довжину маски
 curve:
-  title: Curve
-  description: Controls the curvature of the upper edge of the face mask
+  title: Крива
+  description: Контролює вигин верхнього краю маски

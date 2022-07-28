@@ -33,6 +33,13 @@
 
  - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
 
+### simon
+
+#### Fixed
+
+ - Fix issue with boxPleat and yoke Fixes [#2400](https://github.com/freesewing/freesewing/issues/2400)
+ - Removed superfluous notches in button placket, buttonhole placket, and split yoke. Fixes [#2399](https://github.com/freesewing/freesewing/issues/2399)
+
 ### simone
 
 #### Fixed
