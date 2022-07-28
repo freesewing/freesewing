@@ -31,10 +31,11 @@ export default function (part) {
 
   // back height is given by (estimated) cross seam, minus front and gusset lengths
   // this does not account for vertical stretch yet
+  // NOTE: both frontHeight and backHeight include the rise
   const backHeight = store.get('crossSeam') - store.get('frontHeight') - options.gussetLength * measurements.seat
 
   // calculate the actual back height, using yScale above and yScaleReduced below leg opening
-  const backHeightAbove = store.get('frontHeightAbove') // part above has same height front and back
+  const backHeightAbove = store.get('frontHeightAbove')
 
   let backHeightBelow
   backHeightBelow = store.get('yScale')*(backHeight - backHeightAbove/store.get('yScaleReduced'))
