@@ -1,28 +1,18 @@
-import { version } from './package.json'
+import { version } from '../package.json'
 
 export default {
   name: 'octoplushy',
-  version,
-  design: '',
-  code: '',
-  department: '',
-  type: '',
-  difficulty: 2,
-  tags: [],
+  version: version,
+  design: 'Wouter Van Wageningen',
+  code: 'Wouter Van Wageningen',
+  department: 'accessories',
+  type: 'pattern',
+  difficulty: 5,
   optionGroups: {
-    options: [
-      'size',
-      'type',
-      'legWidth',
-      'legLength',
-      'neckWidth',
-      'legTaper',
-      'bottomTopLegRatio',
-      'bottomLegReduction',
-      'bottomLegReductionPlushy',
-    ],
+    style: ['size','type','legWidth','legLength','neckWidth','legTaper','bottomTopLegRatio','bottomLegReduction','bottomLegReductionPlushy'],
   },
   measurements: [],
+  parts: ['headSection0', 'headSection1', 'legSection0', 'legSection1', 'eye0', 'eye1', 'eye2'],
   dependencies: {
     eye0: 'headSection0',
     eye1: 'headSection0',
@@ -32,10 +22,8 @@ export default {
   },
   inject: {},
   hide: [],
-  parts: ['headSection0', 'headSection1', 'legSection0', 'legSection1', 'eye0', 'eye1', 'eye2'],
   options: {
     sizeConstant: 200,
-
     size: { pct: 100, min: 5, max: 500 },
     type: { dflt: 'octoplushy', list: ['octoplushy', 'octopus', 'squid'] },
     legWidth: { pct: 15, min: 10, max: 30 },
