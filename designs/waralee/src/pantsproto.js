@@ -3,7 +3,7 @@ import { CreateCrotchPoints } from './util'
 export default function (part) {
   let { options, measurements, Point, Path, points, paths, store } = part.shorthand()
 
-  let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
+  let seatDepth = (measurements.crotchDepth /* - measurements.waistToHips */) * (1 + options.waistRaise)
   let circumference = measurements.seat
   let circumference4 = circumference / 4
   store.set('waistBand', measurements.inseam * options.waistbandWidth)

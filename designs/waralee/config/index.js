@@ -28,7 +28,7 @@ export default {
       'crotchFactorFrontVer',
     ],
   },
-  measurements: ['seat', 'inseam', 'crotchDepth', 'waistToHips'],
+  measurements: ['seat', 'inseam', 'crotchDepth', 'waistToHips', 'waist'],
   dependencies: {},
   inject: { pants: 'pantsproto', mini: 'pantsproto' },
   hide: [],

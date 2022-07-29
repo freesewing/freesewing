@@ -16,7 +16,7 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
+  let seatDepth = (measurements.crotchDepth /* - measurements.waistToHips */) * (1 + options.waistRaise) 
 
   points.mWaist = new Point(0, 0)
   points.mHip = points.mWaist.shift(270, seatDepth)
