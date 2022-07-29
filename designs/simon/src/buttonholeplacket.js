@@ -25,6 +25,9 @@ export default (part) => {
   }
 
   for (const id in paths) delete part.paths[id]
+  for (const i of ['waist', 'armholePitch', 'hips', 'armhole']) {
+    delete snippets[i + '-notch']
+  }
   const width = store.get('buttonholePlacketWidth')
   const fold = store.get('buttonholePlacketFoldWidth')
 

@@ -37,7 +37,7 @@ yarn kickstart
 
 <Comment by="joost">
 These docs assume you have git installed. 
-But if you're running Linux, you have git, right?
+But if you're running macOS, you have git, right?
 </Comment>
 
 #### Install yarn
@@ -46,7 +46,7 @@ Our repository uses yarn workspaces. So you'll need yarn to work with it.
 To install it run:
 
 ```bash
-npm i -G yarn
+npm install yarn --global
 ```
 
 #### Fork our repository
@@ -74,7 +74,7 @@ cd freesewing
 yarn kickstart
 ```
 
-Now you're ready to [start the development environment](/tutorials/getting-started-linux/dev-start).
+Now you're ready to [start the development environment](/tutorials/getting-started-mac/dev-start).
 
 ## Stand-alone development
 
@@ -87,7 +87,7 @@ npx @freesewing/new-design
 After you've answered [some questions](#questions), it will take a while to set everything up.
 When it's done, you will have a new folder with the development environent inside.
 
-Now you're ready to [start the development environment](/tutorials/getting-started-linux/dev-start).
+Now you're ready to [start the development environment](/tutorials/getting-started-mac/dev-start).
 
 <Tip compact>The folder will have the name you chose above</Tip>
 

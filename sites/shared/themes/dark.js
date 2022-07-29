@@ -1,8 +1,13 @@
 const colors = require('tailwindcss/colors')
-const light = require('./light')
 
 module.exports = {
-  ...light, // Startr from defaults, so we don't miss anything
+  'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+
+  'base-100': colors.neutral['900'],
+  'base-200': colors.neutral['700'],
+  'base-300': colors.neutral['600'],
+  'base-content': colors.neutral['300'],
+
   'primary': colors.violet['700'],
   'primary-focus': colors.violet['600'],
   'primary-content': colors.violet['50'],
@@ -18,11 +23,6 @@ module.exports = {
   'neutral': '#000000', // Dark as my soul
   'neutral-focus': colors.neutral['300'],
   'neutral-content': colors.neutral['50'],
-
-  'base-100': colors.neutral['900'],
-  'base-200': colors.neutral['700'],
-  'base-300': colors.neutral['600'],
-  'base-content': colors.neutral['300'],
 
   'info': colors.indigo['700'],
   'success': colors.green['700'],
@@ -64,6 +64,18 @@ module.exports = {
   '--code-color-tag': colors.green['600'],
   '--code-color-property': colors.yellow['200'],
   '--code-font-weight-property': 'bold',
+
+  '--rounded-box': '0.5rem',
+  '--rounded-btn': '0.5rem',
+  '--rounded-badge': '1.9rem',
+  '--animation-btn': '0.25s',
+  '--animation-input': '.4s',
+  '--padding-card': '2rem',
+  '--btn-text-case': 'uppercase',
+  '--navbar-padding': '.5rem',
+  '--border-btn': '1px',
+  '--focus-ring': '2px',
+  '--focus-ring-offset': '2px',
 
   '--pattern-bg': colors.neutral['900'],
   '--pattern-fabric': colors.neutral['300'],

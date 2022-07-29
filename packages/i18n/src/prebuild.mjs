@@ -1,7 +1,7 @@
 import yaml from 'js-yaml'
 import path from 'path'
 import rdir from 'recursive-readdir'
-import { readFile, writeFile } from 'fs/promises'
+import { readFile, writeFile, mkdir } from 'fs/promises'
 import { fileURLToPath } from 'url'
 import { dirname } from 'path'
 
@@ -34,14 +34,19 @@ const getTranslationFileList = async () => {
   return files.sort()
 }
 
+/** extracts the locale from the file name */
+const localeFromFileName = (fileName) => {
+  const split1 = fileName.split(`${path.sep}locales${path.sep}`).pop()
+  return split1.split(`${path.sep}`).shift()
+}
+
 /*
  * Figures out the list of locales from the list of files
  * (by checking how many version of aaron.yaml exist)
  */
 const getLocalesFromFileList = files => files
   .filter(file => (file.slice(-10) === 'aaron.yaml'))
-  .map(file => file.split(`${path.sep}locales${path.sep}`).pop())
-  .map(file => file.split(`${path.sep}plugin${path.sep}`).shift())
+  .map(localeFromFileName)
 
 // Helper method to see if a dir occurs in a full path
 const pathContains = (fullPath, dir) => fullPath
@@ -97,25 +102,28 @@ const loadTranslationFile = async (file) => {
  * Creates an object with namespaces and the YAML/YML files
  * that go with them
  */
-const getNamespacesFromFileList = async (files, locales) => {
+const getNamespacesFromFileList = async (files, locales, only=false) => {
   const namespaces = {}
-  for (const locale of locales) {
-    namespaces[locale] = {}
-    const locFiles = files.filter(file => (
-      file.split(`${path.sep}locales${path.sep}${locale}${path.sep}`).length > 1)
-    )
-    for (const file of locFiles) {
-      const namespace = namespaceFromFile(file)
-      if (typeof namespaces[locale][namespace] === 'undefined') {
-        namespaces[locale][namespace] = {}
-      }
-      // Spread in the result of yaml.load since
-      //console.log((await loadTranslationFile(file)))
-      // some namespaces are made up of multiple files
-      namespaces[locale][namespace] = {
-        ...namespaces[locale][namespace],
-        ...(await loadTranslationFile(file))
-      }
+  for (var i = 0; i < files.length; i++) {
+    let file = files[i]
+
+    let loc = localeFromFileName(file);
+    if (locales.indexOf(loc) === -1) continue
+
+    let namespace = namespaceFromFile(file);
+    if (only === true && only.indexOf(namespace) === -1) continue
+
+    if (typeof namespaces[loc] === 'undefined') {
+      namespaces[loc] = {}
+    }
+
+    if (typeof namespaces[loc][namespace] === 'undefined') {
+      namespaces[loc][namespace] = {}
+    }
+
+    namespaces[loc][namespace] = {
+      ...namespaces[loc][namespace],
+      ...(await loadTranslationFile(file))
     }
   }
 
@@ -166,10 +174,14 @@ ${locales
  * Writes out files
  */
 const writeFiles = async allNamespaces => {
-  const promises = []
+  const filePromises = []
+
   for (const [locale, namespaces] of Object.entries(allNamespaces)) {
+    // make sure there's a folder for the locale
+    await mkdir(path.resolve(__dirname, 'next', locale), {recursive: true})
+
     for (const [namespace, data] of Object.entries(namespaces)) {
-      promises.push(
+      filePromises.push(
         writeFile(
           path.resolve(__dirname, 'next', locale, namespace+'.mjs', ),
           namespaceFile(namespace, data)
@@ -177,7 +189,7 @@ const writeFiles = async allNamespaces => {
       )
     }
     // Locale index files
-    promises.push(
+    filePromises.push(
       writeFile(
         path.resolve(__dirname, 'next', locale, 'index.mjs', ),
         localeFile(Object.keys(namespaces))
@@ -185,13 +197,15 @@ const writeFiles = async allNamespaces => {
     )
   }
   // Locale index files
-  promises.push(
+  filePromises.push(
     writeFile(
       path.resolve(__dirname, 'next.mjs', ),
       indexFile(Object.keys(allNamespaces), allNamespaces)
     )
   )
-  await Promise.all(promises)
+
+  // write the files
+  await Promise.all(filePromises)
 
   return
 }
@@ -199,19 +213,15 @@ const writeFiles = async allNamespaces => {
 /*
  * Turns YAML translation files into JS
  */
-const build = async () => {
+export const build = async (localeFilter = () => true, only=false) => {
   const files = await getTranslationFileList()
-  const locales = getLocalesFromFileList(files)
-  const namespaces = await getNamespacesFromFileList(files, locales)
+  const locales = getLocalesFromFileList(files).filter(localeFilter)
+  console.log('building i18n for', locales)
+  const namespaces = await getNamespacesFromFileList(files, locales, only)
+
   await writeFiles(namespaces)
+  return namespaces
 }
 
-build()
-
-
-
-
-
-
-
 //export default strings
+

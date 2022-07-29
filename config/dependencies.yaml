@@ -190,9 +190,13 @@ plugintest:
 react-pattern:
   peer:
     '@freesewing/i18n': *freesewing
+rehype-jargon:
+  _:
+    'unist-util-visit': '^4.1.0'
+    'hast-util-from-html': '^1.0.0'
 remark-jargon:
   _:
-    'unist-util-visit': '^2.0.3'
+    'unist-util-visit': '^4.1.0'
   peer:
     'remark': '^13.0.0'
     'remark-html': '^13.0.1'

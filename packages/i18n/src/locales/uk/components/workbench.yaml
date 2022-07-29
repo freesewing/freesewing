@@ -1,0 +1,8 @@
+---
+designOptions: Варіанти дизайну
+forPrinting: Для друку
+forCutting: Для вирізання
+layoutThing: 'Розташувати {thing}'
+pageSize: Розмір сторінки
+startBySelectingAThing: 'Почніть з вибору {thing}'
+testThing: 'Протестувати {thing}'

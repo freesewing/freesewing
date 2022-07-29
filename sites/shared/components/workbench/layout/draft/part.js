@@ -94,7 +94,7 @@ const Part = props => {
 
   // update the layout on mount
   useEffect(() => {
-    if (partRef.current) updateLayout()
+    if (partRef.current) updateLayout(false)
   }, [partRef])
 
   // Initialize drag handler
@@ -168,7 +168,7 @@ const Part = props => {
     updateLayout()
     setRotate(!rotate)
   }
-  const updateLayout = () => {
+  const updateLayout = (history=true) => {
     const partRect = partRef.current.getBoundingClientRect();
     const matrix = partRef.current.ownerSVGElement.getScreenCTM().inverse();
 
@@ -188,7 +188,7 @@ const Part = props => {
       flipY,
       tl,
       br
-    })
+    }, history)
   }
 
   // Method to flip (mirror) the part along the X or Y axis

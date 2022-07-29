@@ -9,6 +9,7 @@ module.exports = {
     './components/**/*.js',
     './page-templates/*.js',
     '../shared/components/**/*.js',
+    '../shared/config/tailwind-force.html',
   ],
   plugins: [require('daisyui'), require('tailwindcss/nesting')],
   daisyui: {

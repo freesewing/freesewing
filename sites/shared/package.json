@@ -13,6 +13,7 @@
     "strapiqa": "node strapi/qa.mjs"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.6",
     "@tailwindcss/typography": "^0.5.0",
     "d3-dispatch": "^3.0.1",
     "d3-drag": "^3.0.0",
@@ -22,6 +23,7 @@
     "file-saver": "^2.0.5",
     "front-matter": "^4.0.2",
     "highlight.js": "^11.4.0",
+    "lodash.clonedeep": "^4.5.0",
     "lodash.orderby": "^4.6.0",
     "lodash.unset": "^4.5.2",
     "mdast-util-toc": "^6.1.0",
