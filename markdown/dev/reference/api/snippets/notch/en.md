@@ -3,7 +3,7 @@ title: notch
 ---
 
 The `notch` snippet is intended for notches and is
-provided by [plugin-theme](/reference/plugins/theme/).
+provided by [plugin-notches](/reference/plugins/notches/).
 
 ```js
 snippets.demo = new Snippet('bnotch', points.anchor)

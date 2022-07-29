@@ -867,6 +867,25 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "BenJamesBen",
+      "name": "BenJamesBen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/109869956?v=4",
+      "profile": "https://github.com/BenJamesBen",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "SimonbJohnson",
+      "name": "SimonbJohnson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2110742?v=4",
+      "profile": "https://github.com/SimonbJohnson",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true

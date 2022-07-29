@@ -13,7 +13,7 @@ export const values = {
           : 'text-accent'
       }>
         {formatPercentage(val)}
-        {props.design.config.options[props.option]?.toAbs
+        {props.design.config.options[props.option]?.toAbs && props.gist.measurements
           ? ' | ' +formatMm(props.design.config.options[props.option]?.toAbs(val, props.gist))
           : null
         }

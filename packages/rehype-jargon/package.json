@@ -1,0 +1,51 @@
+{
+  "name": "rehype-jargon",
+  "version": "2.21.3",
+  "description": "A Rehype plugin for jargon terms",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "freesewing"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "node build.js",
+    "clean": "rimraf dist",
+    "mbuild": "NO_MINIFY=1 node build.js",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "echo \"rehype-jargon: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "vbuild": "VERBOSE=1 node build.js",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "cibuild_step6": "node build.js"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "unist-util-visit": "^4.1.0",
+    "hast-util-from-html": "^1.0.0"
+  },
+  "devDependencies": {},
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6"
+  }
+}

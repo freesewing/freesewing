@@ -92,7 +92,7 @@ const DesignOptionPctDeg = props => {
       />
       <div className="flex flex-row justify-between">
         <span className={val===dflt ? 'text-secondary' : 'text-accent'}>
-          {props.design.config.options[props.option]?.toAbs
+          {props.design.config.options[props.option]?.toAbs && props.gist.measurements
             ? formatMm(props.design.config.options[props.option].toAbs(value/100, props.gist))
             : ' '
           }

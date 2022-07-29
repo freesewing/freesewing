@@ -46,7 +46,7 @@ Our repository uses yarn workspaces. So you'll need yarn to work with it.
 To install it run:
 
 ```bash
-npm i -G yarn
+npm install yarn --global
 ```
 
 #### Fork our repository

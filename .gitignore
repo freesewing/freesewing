@@ -110,6 +110,7 @@ prebuild/*.json
 sites/*/out
 sites/*/public/mdx
 sites/*/prebuild
+!sites/shared/prebuild
 
 # misc
 .DS_Store

@@ -7,7 +7,7 @@ export default (part) => {
   }
 
   // Paths
-  paths.saBase = new Path().move(points.cbYoke).line(points.armholeYokeSplit)
+  paths.saBase = new Path().move(points.cbYoke).line(points.armholeYokeSplitPreBoxpleat)
   if (options.yokeHeight > 0) paths.saBase = paths.saBase.join(paths.backArmholeYoke)
   paths.saBase = paths.saBase.line(points.s3CollarSplit).join(paths.backCollar)
   if (options.splitYoke) paths.saBase = paths.saBase.line(points.cbYoke).close()
@@ -29,26 +29,20 @@ export default (part) => {
     delete snippets.armholePitchNotch
     delete snippets.collarNotch
     delete snippets.shoulderNotch
+    snippets.sleevecapNotch = new Snippet('notch', points.armholeYokeSplitPreBoxpleat)
     points.title = new Point(points.neck.x, points.cbYoke.y / 3)
     macro('title', { at: points.title, nr: 4, title: 'yoke', scale: 0.8 })
     points.logo = points.title.shift(-90, 50)
     snippets.logo = new Snippet('logo', points.logo)
     snippets.logo.attr('data-scale', 0.8)
-    if (options.splitYoke) {
-      macro('cutonfold', {
-        from: points.cbNeck,
-        to: points.cbYoke,
-        grainline: true,
-      })
-      snippets.sleeveNotch = new Snippet('bnotch', points.armholePitch)
-    } else {
-      points.grainlineFrom = points.cbYoke.shift(0, 20)
-      points.grainlineTo = points.cbNeck.shift(0, 20)
-      macro('grainline', {
-        from: points.grainlineFrom,
-        to: points.grainlineTo,
-      })
-    }
+
+    points.grainlineFrom = points.cbYoke.shift(0, 20)
+    points.grainlineTo = points.cbNeck.shift(0, 20)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
+
 
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')

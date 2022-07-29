@@ -8,6 +8,12 @@ a number of points and/or paths around a given mirror line.
 
 <Example part="plugin_mirror">Example of the mirror plugin</Example>
 
+<Tip>
+
+The mirror plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+</Tip>
+
 ## Installation
 
 ```bash

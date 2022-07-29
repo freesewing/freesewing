@@ -18,6 +18,8 @@ import DraftEvents from 'shared/components/workbench/events.js'
 import CutLayout from 'shared/components/workbench/layout/cut'
 import PrintLayout from 'shared/components/workbench/layout/print'
 
+import ErrorBoundary from 'shared/components/error/error-boundary';
+
 const views = {
   measurements: Measurements,
   draft: LabDraft,
@@ -32,8 +34,10 @@ const views = {
 }
 
 const hasRequiredMeasurementsMethod = (design, gist) => {
+  if (design.config.measurements.length && !gist.measurements) return false
+
   for (const m of design.config.measurements || []) {
-    if (!gist?.measurements?.[m]) return false
+    if (!gist.measurements[m]) return false
   }
 
   return true
@@ -53,10 +57,11 @@ const doPreload = async (preload, from, design, gist, setGist, setPreloaded) => 
 const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const {gist, setGist, unsetGist, updateGist, gistReady} = useGist(design, app);
+  const {gist, setGist, unsetGist, updateGist, gistReady, undoGist, resetGist} = useGist(design, app);
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
   const [preloaded, setPreloaded] = useState(false)
+
 
   // We'll use this in more than one location
   const hasRequiredMeasurements = hasRequiredMeasurementsMethod(design, gist)
@@ -82,9 +87,10 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     }
   }, [preload, preloaded, from, design])
 
+
   // Helper methods to manage the gist state
-  const updateWBGist = useMemo(() => (path, value, closeNav=false) => {
-    updateGist(path, value)
+  const updateWBGist = useMemo(() => (path, value, closeNav=false, addToHistory=true) => {
+    updateGist(path, value, addToHistory)
     // Force close of menu on mobile if it is open
     if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
   }, [app])
@@ -100,6 +106,9 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     set: setMessages,
     clear: () => setMessages([]),
   }
+
+  // don't do anything until the gist is ready
+  if (!gistReady) {return null}
 
   // Generate the draft here so we can pass it down
   let draft = false
@@ -138,6 +147,12 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     showInfo: setPopup,
   }
 
+  const errorProps = {
+    undoGist,
+    resetGist,
+    gist
+  }
+
   // Layout to use
   const LayoutComponent = layout
     ? layout
@@ -149,8 +164,10 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   return  <LayoutComponent {...layoutProps}>
             {messages}
-            <Component {...componentProps} />
-            {popup && <Modal cancel={() => setPopup(false)}>{popup}</Modal>}
+            <ErrorBoundary {...errorProps}>
+              <Component {...componentProps} />
+              {popup && <Modal cancel={() => setPopup(false)}>{popup}</Modal>}
+            </ErrorBoundary>
           </LayoutComponent>
 }
 

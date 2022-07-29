@@ -1,6 +1,5 @@
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
-import PatternPicker from 'site/components/pattern-picker.js'
 import VersionPicker from 'site/components/version-picker.js'
 
 export const BeforeNav = ({ app }) => (
@@ -10,7 +9,6 @@ export const BeforeNav = ({ app }) => (
       <LocalePicker app={app} />
     </div>
     <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2">
-      <PatternPicker app={app} />
       <VersionPicker app={app} />
     </div>
   </>
