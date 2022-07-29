@@ -4,35 +4,35 @@
 export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
 
   const transforms = []
-  let xTotal = x;
-  let yTotal = y;
+  let xTotal = x || 0;
+  let yTotal = y || 0;
+  let scaleX = 1
+  let scaleY = 1
 
   if (flipX) {
-    console.log(part)
-    transforms.push(
-      `scale(-1, 1)`,
-    )
+    scaleX = -1
     xTotal += part.topLeft.x * 2 + part.width
   }
   if (flipY) {
-    transforms.push(
-    `scale(1, -1)`,
-    )
+    scaleY = -1
     yTotal += part.topLeft.y * 2 + part.height
   }
 
-
-  const center = {
-    x: part.topLeft.x + (part.bottomRight.x - part.topLeft.x)/2,
-    y: part.topLeft.y + (part.bottomRight.y - part.topLeft.y)/2,
+  if (scaleX + scaleY < 2) {
+    transforms.push(`scale(${scaleX} ${scaleY})`)
   }
 
-  if (rotate) transforms.push(
-    `rotate(${rotate} ${center.x} ${center.y})`
-  )
+  if (rotate) {
+    const center = {
+      x: part.topLeft.x + part.width/2,
+      y: part.topLeft.y + part.height/2,
+    }
 
-  if (x !== undefined && y !== undefined) transforms.unshift(
-    `translate(${xTotal},${yTotal})`
+    transforms.push(`rotate(${rotate} ${center.x} ${center.y})`)
+  }
+
+  if (xTotal > 0 || yTotal > 0) transforms.unshift(
+    `translate(${xTotal} ${yTotal})`
   )
 
   return {
@@ -42,10 +42,6 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
 }
 
 export const getPartCutlist = (partName, config, settings) => {
-  let partCuts = config.cutList?.[partName]
-  if (partCuts) {
-    return typeof partCuts === 'function' ? partCuts(settings) : {... partCuts}
-  }
-
+  // FIXME this won't be needed when cutlist is properly implemented
   return {cut: 1}
 }
