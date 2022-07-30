@@ -6,18 +6,22 @@ import draftLegSection from './legSection'
 import draftEye from './eye'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const Octoplushy = new freesewing.Design(config, plugins)
 
 // Attach the draft methods to the prototype
-// Pattern.prototype.draftHeadSection = draftHeadSection
+// Octoplushy.prototype.draftHeadSection = draftHeadSection
 for (let i = 0; i < 2; i++) {
-  Pattern.prototype[`draftHeadSection${i}`] = (part) => draftHeadSection(i, part)
+  Octoplushy.prototype[`draftHeadSection${i}`] = (part) => draftHeadSection(i, part)
 }
 for (let i = 0; i < 2; i++) {
-  Pattern.prototype[`draftLegSection${i}`] = (part) => draftLegSection(i, part)
+  Octoplushy.prototype[`draftLegSection${i}`] = (part) => draftLegSection(i, part)
 }
 for (let i = 0; i < 3; i++) {
-  Pattern.prototype[`draftEye${i}`] = (part) => draftEye(i, part)
+  Octoplushy.prototype[`draftEye${i}`] = (part) => draftEye(i, part)
 }
 
-export default Pattern
+// Named exports
+export { config, Octoplushy }
+
+// Default export
+export default Octoplushy

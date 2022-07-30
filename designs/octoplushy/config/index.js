@@ -9,10 +9,10 @@ export default {
   type: 'pattern',
   difficulty: 5,
   optionGroups: {
-    style: ['size','type','legWidth','legLength','neckWidth','legTaper','bottomTopLegRatio','bottomLegReduction','bottomLegReductionPlushy'],
+    options: ['size','type','legWidth','legLength','neckWidth','legTaper','bottomTopLegRatio','bottomLegReduction','bottomLegReductionPlushy'],
   },
-  measurements: [],
   parts: ['headSection0', 'headSection1', 'legSection0', 'legSection1', 'eye0', 'eye1', 'eye2'],
+  measurements: [],
   dependencies: {
     eye0: 'headSection0',
     eye1: 'headSection0',
