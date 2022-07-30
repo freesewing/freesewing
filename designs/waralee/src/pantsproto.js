@@ -83,7 +83,7 @@ export default function (part) {
     points.frontPocketTop = points.fWaistSide
       .shift(
         270,
-        options.frontPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
+        options.frontPocketVerticalOffset * (measurements.crotchDepth /*- measurements.waistToHips*/) +
           waistBand * 2
       )
       .shift(180, options.frontPocketHorizontalOffset * measurements.seat)
@@ -91,7 +91,7 @@ export default function (part) {
     points.frontPocketTop2 = points.frontPocketTop.shift(340, 12)
     points.frontPocketBottom = points.frontPocketTop.shift(
       250,
-      options.frontPocketSize * (measurements.crotchDepth - measurements.waistToHips)
+      options.frontPocketSize * (measurements.crotchDepth /*- measurements.waistToHips*/)
     )
     points.frontPocketBottom2 = points.frontPocketBottom.shift(340, 12)
 
@@ -109,18 +109,18 @@ export default function (part) {
       .shiftTowards(points.bWaistSide, options.backPocketHorizontalOffset * measurements.seat)
       .shift(
         270,
-        options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
+        options.backPocketVerticalOffset * (measurements.crotchDepth /*- measurements.waistToHips*/) +
           waistBand * 2
       )
     points.backPocketLeft = points.bWaistBack
       .shiftTowards(
         points.bWaistSide,
         options.backPocketHorizontalOffset * measurements.seat +
-          options.backPocketSize * (measurements.crotchDepth - measurements.waistToHips)
+          options.backPocketSize * (measurements.crotchDepth /*- measurements.waistToHips*/)
       )
       .shift(
         270,
-        options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips) +
+        options.backPocketVerticalOffset * (measurements.crotchDepth /*- measurements.waistToHips*/) +
           waistBand * 2
       )
     points.backPocketRight2 = points.backPocketRight.shift(

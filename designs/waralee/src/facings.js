@@ -11,20 +11,21 @@ export default function (part) {
     complete,
     paperless,
     macro,
+    sa
   } = part.shorthand()
 
   let frontPocketSize =
-    options.frontPocketSize * (measurements.crotchDepth - measurements.waistToHips)
+    options.frontPocketSize * (measurements.crotchDepth /*- measurements.waistToHips*/)
   let backPocketSize =
-    options.backPocketSize * (measurements.crotchDepth - measurements.waistToHips)
+    options.backPocketSize * (measurements.crotchDepth /*- measurements.waistToHips*/)
 
   points.frontTL = new Point(0, 0)
-  points.frontTR = points.frontTL.shift(0, frontPocketSize + 24)
+  points.frontTR = points.frontTL.shift(0, frontPocketSize +sa +sa)
   points.frontBL = points.frontTL.shift(270, frontPocketSize / 2)
   points.frontBR = points.frontTR.shift(270, frontPocketSize / 2)
 
   points.backTL = points.frontBL.shift(270, 50)
-  points.backTR = points.backTL.shift(0, backPocketSize + 24)
+  points.backTR = points.backTL.shift(0, backPocketSize + sa +sa)
   points.backBL = points.backTL.shift(270, backPocketSize / 2)
   points.backBR = points.backTR.shift(270, backPocketSize / 2)
 
