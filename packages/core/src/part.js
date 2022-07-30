@@ -147,8 +147,6 @@ Part.prototype.inject = function (orig) {
     for (let i in orig.points) {
       if (orig.points[i] === p) return i
     }
-
-    return false
   }
 
   for (let i in orig.points) this.points[i] = orig.points[i].clone()
