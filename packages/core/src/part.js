@@ -18,7 +18,7 @@ function Part() {
   this.render = true
   this.utils = utils
   this.layout = { move: { x: 0, y: 0 } }
-
+  this.cut = { grain: 90, materials: {} }
   this.Point = Point
   this.Path = Path
   this.Snippet = Snippet
@@ -357,20 +357,68 @@ Part.prototype.generateTransform = function(transforms) {
   }
 }
 
-/** Chainable way to set the grain property */
-Part.prototype.setGrain = function (grain = 90) {
-  this.attributes.set('data-grain', grain)
+/** Chainable way to add the cut info */
+Part.prototype.addCut = function (cut=2, material='fabric', identical=false) {
+  if (cut === false) {
+    if (this.cut.materials[material]) delete this.cut.materials[material]
+    else this.context.raise.error(`Tried to remove a material that is not set`)
+    return this
+  }
+  if (typeof this.cut.materials[material] === 'undefined') this.cut.materials[material] = {}
+  if (typeof cut !== 'number') {
+    this.context.raise.error(`Tried to set cut to a value that is not a number`)
+    return this
+  }
+  if (typeof material !== 'string') {
+    this.context.raise.error(`Tried to set material to a value that is not a string`)
+    return this
+  }
+  this.cut.materials[material].cut = cut
+  this.cut.materials[material].identical = identical
 
   return this
 }
 
-/** Chainable way to set the grain property */
-Part.prototype.setCut = function (cut = { count: 2, mirror: true, onFold: false }) {
-  this.attributes.set('data-cut', cut)
+/** Chainable way to remove (some) cut info */
+Part.prototype.removeCut = function (material=false) {
+  if (!material) {
+    this.context.raise.warning('Called part.removeCut() without any parameters. Not removing anything')
+    return this
+  }
+  if (typeof material !== 'string') {
+    this.context.raise.error(`Tried to set material to a value that is not a string`)
+    return this
+  }
+  if (this.cut.materials[material]) delete this.cut.materials[material]
+  else this.context.raise.error(`Tried to remove a material that is not set`)
 
   return this
 }
 
+/** Chainable way to add the grain info */
+Part.prototype.setGrain = function (grain=false) {
+  if (grain === false) {
+    this.context.raise.warning('Called part.setGrain() without any parameters. Not changing anything')
+    return this
+  }
+  if (typeof grain !== 'number') {
+    this.context.raise.error('Called part.setGrain() with a value that is not a number')
+    return this
+  }
+  this.cut.grain = grain
+
+  return this
+}
+
+/** Chainable way to add the cutOnFold info */
+Part.prototype.setCutOnFold = function (p1=false, p2=false) {
+  if (p1 instanceof Point && p2 instanceof Point) {
+    this.cut.cutOnFold = [p1, p2]
+  }
+  else this.context.raise.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
+
+  return this
+}
 
 
 export default Part

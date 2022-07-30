@@ -267,4 +267,12 @@ it("Should run postRender hook", () => {
   expect(pattern.render()).to.equal("test");
 });
 
+it("Should tab in and out", () => {
+  let pattern = new freesewing.Pattern()
+  pattern.render()
+  const svg = pattern.svg
+  svg.tabs = 2
+  expect(svg.tab()).to.equal('    ')
+});
+
 
