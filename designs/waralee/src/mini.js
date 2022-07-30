@@ -5,9 +5,9 @@
 export default function (part) {
   let {
     options,
-    /*measurements,
+    measurements,
     Point,
-    Path,*/
+    Path,
     points,
     paths,
     Snippet,
@@ -41,114 +41,106 @@ export default function (part) {
     .offset((-1 * store.get('hem')) / mini)
     .attr('class', 'fabric stroke-sm')
 
+  points.mWaist1 = new Point(points.mWaist.x, points.fWaistSide.y)
+  points.mWaist2 = new Point(points.mWaist.x, points.bWaistSide.y)
+
+  paths.cutOut = new Path()
+    .move(points.bWaistSide)
+    .line(points.mWaist2)
+    .line(points.mWaist1)
+    .line(points.fWaistSide)
+    .attr('class', 'help')
+
   // Complete?
   if (complete) {
-    points.logo = points.fWaistFront.shift(270, 400)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.text = points.logo
-      .shift(-90, 50)
-      .attr('data-text', 'hello')
-      .attr('data-text-class', 'center')
+    macro('scalebox', { at: points.mLeg.shift(-90, 35) })
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.seam.offset(sa /mini).attr('class', 'fabric sa')
     }
-  }
 
-  // Paperless?
-  if (paperless) {
+    points.pText1 = points.mHip.shiftFractionTowards(points.mLeg, .5)
+      .attr("data-text", "thisIsNotAPart")
+      .attr("data-text-class", "center");
+    points.pText2 = points.mHip.shiftFractionTowards(points.mLeg, .6)
+      .attr("data-text", "doNotCutFromFabric")
+      .attr("data-text-class", "center");
+    points.pText3 = points.mHip.shiftFractionTowards(points.mLeg, .7)
+      .attr("data-text", "useMeasurementsToCutFromFabric")
+      .attr("data-text-class", "center");
+
+      // Paperless?
+  // if (paperless) {
     macro('hd', {
-      from: points.fWaistSide,
-      to: points.mWaist,
-      y: points.fWaistSide.y,
-      text: part.units(points.fWaistSide.dist(points.mWaist) * mini),
-    })
-    /*
-    macro("hd", {
       from: points.fWaistFrontOverlap,
-      to: points.mWaist,
-      y: points.fWaistSide.y - sa - 15
-    });
-    macro("hd", {
-      from: points.mWaist,
-      to: points.bWaistSide,
-      y: points.bWaistSide.y
-    });
-    macro("hd", {
-      from: points.mWaist,
-      to: points.bWaistBack,
-      y: points.bWaistSide.y - sa - 15
-    });
-    macro("hd", {
-      from: points.mWaist,
-      to: points.bWaistBackOverlap,
-      y: points.bWaistSide.y - sa - 30
-    });
-    macro("vd", {
-      from: points.mWaist,
-      to: points.mHip,
-      x: points.mWaist.x
-    });
-    macro("vd", {
-      from: points.bWaistSide,
-      to: points.bWaistBack,
-      x: points.bWaistSide.x + 15
-    });
-    macro("vd", {
-      from: points.bWaistBackOverlap,
+      to: points.fWaistSide,
+      y: points.fWaistSide.y +10,
+      text: part.units(points.fWaistSide.dist(points.fWaistFrontOverlap) * mini),
+    })
+    macro('hd', {
+      from: points.fLegFrontOverlap,
       to: points.bLegBackOverlap,
-      x: points.bLegBackOverlap.x - 30
-    });
+      y: points.bLegBackOverlap.y -10,
+      text: part.units(points.fLegFrontOverlap.dist(points.bLegBackOverlap) * mini),
+    })
+    macro('hd', {
+      from: points.bWaistBack,
+      to: points.bWaistBackOverlap,
+      y: points.bWaistBackOverlap.y +20,
+      text: part.units(points.bWaistBackOverlap.dist(points.bWaistBack) * mini),
+    })
+    macro('hd', {
+      from: points.backPocketRight,
+      to: points.bWaistBackOverlap,
+      y: points.bWaistBackOverlap.y +40,
+      text: part.units((points.bWaistBackOverlap.x -points.backPocketRight.x) * mini),
+    })
+    macro('hd', {
+      from: points.fWaistFrontOverlap,
+      to: points.frontPocketBottom2,
+      y: points.frontPocketBottom2.y +20,
+      text: part.units((points.frontPocketBottom2.x -points.fWaistFrontOverlap.x) * mini),
+    })
+    macro('hd', {
+      from: points.fWaistFrontOverlap,
+      to: points.mHip,
+      y: points.mHip.y +10,
+      text: part.units((points.mHip.x -points.fWaistFrontOverlap.x) * mini),
+    })
 
-    if (options.frontPocket) {
-      macro("vd", {
-        from: points.fWaistSide,
-        to: points.frontPocketTop,
-        x: points.frontPocketTop.x
-      });
-      macro("vd", {
-        from: points.fWaistSide,
-        to: points.frontPocketBottom,
-        x: points.frontPocketBottom.x
-      });
-      macro("hd", {
-        from: points.frontPocketTop,
-        to: points.fWaistSide,
-        y: points.frontPocketTop.y
-      });
-      macro("hd", {
-        from: points.frontPocketBottom,
-        to: points.fWaistSide,
-        y: points.frontPocketBottom.y
-      });
-    }
-    if (options.backPocket) {
-      macro("vd", {
-        from: points.bWaistSide,
-        to: points.backPocketLeft,
-        x: points.backPocketLeft.x
-      });
-      macro("vd", {
-        from: points.bWaistSide,
-        to: points.backPocketRight,
-        x: points.backPocketRight.x
-      });
-      macro("hd", {
-        from: points.bWaistSide,
-        to: points.backPocketLeft,
-        y: points.backPocketLeft.y
-      });
-      macro("hd", {
-        from: points.bWaistSide,
-        to: points.backPocketRight,
-        y: points.backPocketRight.y
-      });
-    }
-    */
+    macro('vd', {
+      from: points.fWaistFrontOverlap,
+      to: points.frontPocketBottom2,
+      x: points.frontPocketBottom2.x +20,
+      text: part.units((points.frontPocketBottom2.y -points.fWaistFrontOverlap.y) * mini),
+    })
+    macro('vd', {
+      from: points.bWaistBack,
+      to: points.backPocketRight,
+      x: points.backPocketRight.x,
+      text: part.units((points.backPocketRight.y -points.bWaistBack.y) * mini),
+    })
+    macro('vd', {
+      from: points.fWaistFrontOverlap,
+      to: points.fLegFrontOverlap,
+      x: points.fLegFrontOverlap.x +10,
+      text: part.units(points.fWaistFrontOverlap.dist(points.fLegFrontOverlap) * mini),
+    })
+    macro('vd', {
+      from: points.bLegBackOverlap,
+      to: points.bWaistBackOverlap,
+      x: points.bLegBackOverlap.x -10,
+      text: part.units(points.bWaistBackOverlap.dist(points.bLegBackOverlap) * mini),
+    })
+    macro('vd', {
+      from: points.bLegBackOverlap,
+      to: points.bWaistSideTemp,
+      x: points.bWaistSideTemp.x +10,
+      text: part.units((points.bLegBackOverlap.y -points.bWaistSideTemp.y) * mini),
+    })
   }
 
-  // keep this secret for now:
-  part.render = false
+  part.render = options.showMini 
 
   return part
 }

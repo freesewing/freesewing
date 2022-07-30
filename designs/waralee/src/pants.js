@@ -116,6 +116,7 @@ export default function (part) {
       })
     }
   }
+  part.render = (options.showMini == false)
 
   return part
 }

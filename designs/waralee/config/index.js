@@ -10,6 +10,7 @@ export default {
   type: 'pattern',
   difficulty: 2,
   optionGroups: {
+    options: ['showMini'],
     fit: ['backRaise', 'waistRaise'],
     style: [
       'hemWidth',
@@ -34,7 +35,7 @@ export default {
   hide: [],
   parts: ['cutout', 'pocket', 'backPocket', 'facings'],
   options: {
-    minimizer: 5,
+    minimizer: 4,
     frontPocketVerticalOffset: 0.07,
     frontPocketHorizontalOffset: 0.18,
     frontPocketSize: 0.65,
@@ -57,5 +58,6 @@ export default {
     waistOverlap: { pct: 50, min: 10, max: 100 },
     legShortening: { pct: 25, min: -10, max: 50 },
     backRaise: { pct: 10, min: 0, max: 25 },
+    showMini: { bool: true },
   },
 }
