@@ -251,3 +251,55 @@ it("Should get the units closure to raise a debug when passing a non-number", ()
   expect(pattern.events.debug[0]).to.equal('Calling `units(value)` but `value` is not a number (`string`)')
 });
 
+it("Should generate the part transforms", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.mode = "draft";
+  let part = new pattern.Part();
+  let short = part.shorthand();
+  part.points.from = new short.Point(2, 2);
+  part.points.to = new short.Point(19, 76);
+  part.paths.test = new short.Path()
+    .move(part.points.from)
+    .line(part.points.to);
+  part.stack();
+  part.generateTransform({
+    move: {
+      x: 10,
+      y: 20
+    }
+  })
+  expect(part.attributes.list.transform.length).to.equal(1)
+  expect(part.attributes.list.transform[0]).to.equal('translate(10,20)')
+  expect(part.attributes.list['transform-origin'][0]).to.equal('10.5 39')
+});
+
+it("Should set the part grain", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.mode = "draft";
+  let part = new pattern.Part();
+  part.setGrain(666)
+  expect(part.attributes.list['data-grain'][0]).to.equal(666)
+  part.setGrain()
+  expect(part.attributes.list['data-grain'][0]).to.equal(90)
+});
+
+it("Should set the part cut", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.mode = "draft";
+  let part = new pattern.Part();
+  const cut = {
+    count: 4,
+    mirror: false,
+    onFold: true
+  }
+  const dflt = {
+    count: 2,
+    mirror: true,
+    onFold: false
+  }
+  part.setCut(cut)
+  expect(JSON.stringify(part.attributes.list['data-cut'][0])).to.equal(JSON.stringify(cut))
+  part.setCut()
+  expect(JSON.stringify(part.attributes.list['data-cut'][0])).to.equal(JSON.stringify(dflt))
+});
+

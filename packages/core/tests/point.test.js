@@ -260,7 +260,6 @@ it("Should raise a warning if rotating around what is not a point", () => {
   let invalid = false
   const raise = { warning: () => invalid = true }
   const p1 = new Point(10,10).withRaise(raise);
-  const p2 = new Point(20, 20).withRaise(raise);
   expect(invalid).to.equal(false);
   try {
     p1.rotate(45, 'a')
