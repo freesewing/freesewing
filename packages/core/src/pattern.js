@@ -584,9 +584,9 @@ Pattern.prototype.resolveDependencies = function (graph = this.config.dependenci
     let dependency = this.config.inject[i]
     if (typeof this.config.dependencies[i] === 'undefined') this.config.dependencies[i] = dependency
     else if (this.config.dependencies[i] !== dependency) {
-      if (typeof this.config.dependencies[i] === 'string')
+      if (typeof this.config.dependencies[i] === 'string') {
         this.config.dependencies[i] = [this.config.dependencies[i], dependency]
-      else if (Array.isArray(this.config.dependencies[i])) {
+      } else if (Array.isArray(this.config.dependencies[i])) {
         if (this.config.dependencies[i].indexOf(dependency) === -1)
           this.config.dependencies[i].push(dependency)
       } else {
