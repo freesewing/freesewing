@@ -376,7 +376,7 @@ it("Should raise an error when calling part.setGrain() with a value that is not 
   expect(pattern.events.error[0]).to.equal('Called part.setGrain() with a value that is not a number')
 });
 
-it("Should set the cutOnFold", () => {
+it("Should set and then remove the cutOnFold", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
   const { Point }  = part.shorthand()
@@ -385,6 +385,8 @@ it("Should set the cutOnFold", () => {
   expect(part.cut.cutOnFold[0].y).to.equal(3)
   expect(part.cut.cutOnFold[1].x).to.equal(100)
   expect(part.cut.cutOnFold[1].y).to.equal(200)
+  part.setCutOnFold(false)
+  expect(typeof part.cut.cutOnFold).to.equal('undefined')
 });
 
 it("Should raise an error when setting the cutOnFold with a non-Point value", () => {

@@ -400,7 +400,11 @@ Part.prototype.setGrain = function (grain=false) {
 }
 
 /** Chainable way to add the cutOnFold info */
-Part.prototype.setCutOnFold = function (p1=false, p2=false) {
+Part.prototype.setCutOnFold = function (p1, p2) {
+  if (p1 === false && typeof p2 === 'undefined') {
+    delete this.cut.cutOnFold
+    return this
+  }
   if (p1 instanceof Point && p2 instanceof Point) {
     this.cut.cutOnFold = [p1, p2]
   }
