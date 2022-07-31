@@ -14,40 +14,45 @@ export default {
   },
   macros: {
     cutonfold: function (so) {
+      const { points, complete } = this.shorthand()
       if (so === false) {
         delete this.points.cutonfoldFrom
         delete this.points.cutonfoldTo
         delete this.points.cutonfoldVia1
         delete this.points.cutonfoldVia2
         delete this.paths.cutonfold
+        this.setCutOnFold(false) // Restore default
         return true
       }
-      const points = this.points
       so = {
         offset: 15,
         margin: 5,
         prefix: '',
         ...so,
       }
-      points['cutonfoldFrom' + so.prefix] = so.from.shiftFractionTowards(so.to, so.margin / 100)
-      points['cutonfoldTo' + so.prefix] = so.to.shiftFractionTowards(so.from, so.margin / 100)
-      points['cutonfoldVia1' + so.prefix] = points['cutonfoldFrom' + so.prefix]
-        .shiftTowards(so.from, so.offset * this.context.settings.scale)
-        .rotate(-90, points['cutonfoldFrom' + so.prefix])
-      points['cutonfoldVia2' + so.prefix] = points['cutonfoldTo' + so.prefix]
-        .shiftTowards(so.to, so.offset * this.context.settings.scale)
-        .rotate(90, points['cutonfoldTo' + so.prefix])
-      const text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
-      this.paths['cutonfold' + so.prefix] = new this.Path()
-        .move(points['cutonfoldFrom' + so.prefix])
-        .line(points['cutonfoldVia1' + so.prefix])
-        .line(points['cutonfoldVia2' + so.prefix])
-        .line(points['cutonfoldTo' + so.prefix])
-        .attr('class', 'note')
-        .attr('marker-start', 'url(#cutonfoldFrom)')
-        .attr('marker-end', 'url(#cutonfoldTo)')
-        .attr('data-text', text)
-        .attr('data-text-class', 'center fill-note')
+      this.setCutOnFold(so.from, so.to)
+      if (so.grainline) this.setGrain(so.from.angle(so.to))
+      if (complete) {
+        points['cutonfoldFrom' + so.prefix] = so.from.shiftFractionTowards(so.to, so.margin / 100)
+        points['cutonfoldTo' + so.prefix] = so.to.shiftFractionTowards(so.from, so.margin / 100)
+        points['cutonfoldVia1' + so.prefix] = points['cutonfoldFrom' + so.prefix]
+          .shiftTowards(so.from, so.offset * this.context.settings.scale)
+          .rotate(-90, points['cutonfoldFrom' + so.prefix])
+        points['cutonfoldVia2' + so.prefix] = points['cutonfoldTo' + so.prefix]
+          .shiftTowards(so.to, so.offset * this.context.settings.scale)
+          .rotate(90, points['cutonfoldTo' + so.prefix])
+        const text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
+        this.paths['cutonfold' + so.prefix] = new this.Path()
+          .move(points['cutonfoldFrom' + so.prefix])
+          .line(points['cutonfoldVia1' + so.prefix])
+          .line(points['cutonfoldVia2' + so.prefix])
+          .line(points['cutonfoldTo' + so.prefix])
+          .attr('class', 'note')
+          .attr('marker-start', 'url(#cutonfoldFrom)')
+          .attr('marker-end', 'url(#cutonfoldTo)')
+          .attr('data-text', text)
+          .attr('data-text-class', 'center fill-note')
+      }
     },
   },
 }
