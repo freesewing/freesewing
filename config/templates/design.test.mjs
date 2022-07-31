@@ -14,7 +14,7 @@ const expect = chai.expect
 
 // Test config
 testPatternConfig(
-  "tiberius",
+  "{{name}}",
   new Pattern(),
   expect,
   models,
@@ -23,7 +23,7 @@ testPatternConfig(
 
 // Test drafting
 testPatternDrafting(
-  "tiberius",
+  "{{name}}",
   Pattern,
   expect,
   models,
@@ -32,7 +32,7 @@ testPatternDrafting(
 
 // Test sampling
 testPatternSampling(
-  "tiberius",
+  "{{name}}",
   Pattern,
   expect,
   models,
