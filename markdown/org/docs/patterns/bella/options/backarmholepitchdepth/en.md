@@ -2,7 +2,7 @@
 title: "Back armhole pitch depth"
 ---
 
----
+***
 
 ![The effect of the back armhole pitch depth option on the pattern](sample.png)
 

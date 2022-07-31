@@ -2,7 +2,7 @@
 title: "Sleevecap ease"
 ---
 
----
+***
 
 This option determines the amount of ease at the sleevecap.
 

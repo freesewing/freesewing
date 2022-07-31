@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Theo trousers: Cutting Instructions"
-- - -
+
+***
 
 - **Main fabric**
   - Cut **2 back(s)** with good sides together

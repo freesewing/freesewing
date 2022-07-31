@@ -2,7 +2,6 @@
 title: "Sleevecap back X"
 ---
 
----
 ![The horizontal location of the back inflection point](./sleevecapbackfactorx.svg)
 
 This option controls the horizontal placement of the sleevecap inflection point at the back of the sleeve.

@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Shoulder seam shift: collar side"
-- - -
+
+***
 
 Controls the shoulder seam location on the collar side.
 

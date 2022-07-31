@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Flat-felled seam allowace"
-- - -
+
+***
 
 Controls the amount of seam allowance on flat-felled seams.
 

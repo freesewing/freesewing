@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Breanna body block: Sewing Instructions"
-- - -
+
+***
 
 <Note>
 
@@ -73,4 +75,3 @@ It is all up to you! Experiment and go forth!
 It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
 
 </Note>
-

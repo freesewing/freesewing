@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Carlton coat: What You Need"
-- - -
+
+***
 
 To make Carlton, you will need the following:
 

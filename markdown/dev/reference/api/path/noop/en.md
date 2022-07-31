@@ -8,7 +8,7 @@ Path path.noop(string id)
 
 Adds a placeholder path operation.
 
-A `noop` operation does nothing, but is intended to be replaced later 
+A `noop` operation does nothing, but is intended to be replaced later
 with [`Path.insop()`](/reference/api/path/insop).
 
 <Tip compact>This is often used to insert darts into a path</Tip>

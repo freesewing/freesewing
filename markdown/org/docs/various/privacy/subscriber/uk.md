@@ -23,6 +23,6 @@ order: 20
 
 This data is stored for anybody who subscribes to our newsletter.
 
-For people with an account on the website who enable the newsletter subscription in their account settings, we store no additional personal data as we already have their email on file in their [account data][1].
+For people with an account on the website who enable the newsletter subscription in their account settings, we store no additional personal data as we already have their email on file in their \[account data]\[1].
 
 </Note>

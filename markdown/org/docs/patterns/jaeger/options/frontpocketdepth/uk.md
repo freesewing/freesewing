@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Front pocket depth"
-- - -
+
+***
 
 ![Front pocket depth](frontpocketdepth.svg)
 
