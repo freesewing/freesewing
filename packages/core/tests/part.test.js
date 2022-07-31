@@ -334,7 +334,7 @@ it("Should generate an error when removing a material that is not set (through r
   expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
 });
 
-it("Should generate an error when removing a material that is not set (through removeCut)", () => {
+it("Should generate an error when removing a material that is not a string (through removeCut)", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
   part.addCut(4, 'fabric', true)
