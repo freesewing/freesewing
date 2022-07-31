@@ -22,6 +22,7 @@ export default {
         delete this.points.grainlineFrom
         delete this.points.grainlineTo
         delete this.paths.grainline
+        this.setGrain(90) // Restoring default
         return true
       }
       so = {
@@ -29,6 +30,7 @@ export default {
         ...so,
       }
       let points = this.points
+      this.setGrain(so.from.angle(so.to))
       points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
       points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
       this.paths.grainline = new this.Path()
