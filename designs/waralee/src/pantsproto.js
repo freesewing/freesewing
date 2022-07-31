@@ -9,6 +9,7 @@ export default function (part) {
   store.set('waistBand', measurements.inseam * options.waistbandWidth)
   store.set('hem', measurements.inseam * options.hemWidth)
   let waistBand = store.get('waistBand')
+  let hem = store.get('hem')
 
   points.mWaist = new Point(0, 0)
 
@@ -43,6 +44,7 @@ export default function (part) {
   points.bLegBackOverlap = points.bLegBack.shift(0, options.waistOverlap * circumference4)
 
   points.bWaistSideTemp = points.bWaistSide.shift(0, 2) // This is a trick to make the offset() call work. Without it, the offset is crossing the cutout line.
+
   paths.waistBack = new Path()
     .move(points.bWaistBackOverlap)
     .line(points.bWaistBack)
@@ -70,6 +72,12 @@ export default function (part) {
     .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
     .curve(points.fHipCrotchCP, points.fWaistCrotchCP, points.fWaistSide)
     .setRender(false)
+  paths.cutout2 = new Path()
+    .move(points.bWaistAdjusted)
+    .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
+    .curve(points.fHipCrotchCP, points.fWaistCrotchCP, points.fWaistAdjusted)
+    .attr('class', 'lining')
+    .setRender(true)
 
   paths.seam = paths.waistFront
     .join(paths.front)

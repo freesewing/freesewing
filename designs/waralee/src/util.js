@@ -1,5 +1,7 @@
 function CreateCrotchPoints(part) {
-  let { options, measurements, points, store } = part.shorthand()
+  let { options, measurements, points, store, Path } = part.shorthand()
+
+  let hem = store.get('hem')
 
   let seatDepth = (measurements.crotchDepth /* - measurements.waistToHips */) * (1 + options.waistRaise)
   let circumference = measurements.seat
@@ -32,6 +34,21 @@ function CreateCrotchPoints(part) {
   )
 
   points.bHipSide = points.mHip.shift(0, options.crotchBack * circumference4)
+
+  points.fCutOutHip = (new Path().move(points.fWaistSide)
+  .curve(points.fWaistCrotchCP, points.fHipCrotchCP, points.mHip)).shiftAlong(measurements.waistToHips +hem)
+  points.bCutOutHip = (new Path().move(points.bWaistSide)
+  .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)).shiftAlong(measurements.waistToHips +hem)
+
+  let waistCircumferenceBack4 = (measurements.waistBack /4)
+  let waistCircumferenceFront4 = ((measurements.waist -measurements.waistBack) /4)
+
+  console.log({waistCircumferenceBack4:waistCircumferenceBack4})
+  console.log({waistCircumferenceFront4:waistCircumferenceFront4})
+
+  points.bWaistAdjusted = points.bWaistSide.shift(0, waistCircumferenceBack4 *options.backWaistAdjustment)
+  points.fWaistAdjusted = points.fWaistSide.shift(180, waistCircumferenceFront4 *options.frontWaistAdjustment)
+
 }
 
 export { CreateCrotchPoints }

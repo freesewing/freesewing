@@ -1,3 +1,4 @@
+import { PartyModeSharp } from '@material-ui/icons'
 import { CreateCrotchPoints } from './util'
 
 export default function (part) {
@@ -36,6 +37,24 @@ export default function (part) {
     .close()
     .attr('class', 'fabric')
 
+  let fPaths = (new Path().move(points.fWaistSide)
+  .curve(points.fWaistCrotchCP, points.fHipCrotchCP, points.mHip)).split(points.fCutOutHip)
+
+  points.fCutOutHipCp = fPaths[1].ops[1].cp2.shiftFractionTowards(points.fCutOutHip, 1.25)
+
+  let bPaths = (new Path().move(points.bWaistSide)
+  .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)).split(points.bCutOutHip)
+
+  points.bCutOutHipCp = bPaths[1].ops[1].cp2.shiftFractionTowards(points.bCutOutHip, 1.25)
+
+  paths.cutout2 = new Path()
+    .move(points.bWaistAdjusted)
+    .curve(points.bWaistAdjusted, points.bCutOutHipCp, points.bCutOutHip)
+    .join(bPaths[1])
+    .join(fPaths[1].reverse())
+    .curve(points.fCutOutHipCp,points.fWaistAdjusted,points.fWaistAdjusted)
+    .attr('class', 'lining')
+    .setRender(true)
   // Complete?
   if (complete) {
     points.logo = points.mWaist.shift(270, 75)
