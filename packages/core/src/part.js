@@ -194,6 +194,8 @@ Part.prototype.shorthand = function () {
     paperless,
     events: this.context.events,
     raise: this.context.raise,
+    addCut: this.addCut,
+    removeCut: this.removeCut,
   }
 
   if (this.context.settings.debug) {
