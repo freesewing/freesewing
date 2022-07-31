@@ -273,33 +273,128 @@ it("Should generate the part transforms", () => {
   expect(part.attributes.list['transform-origin'][0]).to.equal('10.5 39')
 });
 
-it("Should set the part grain", () => {
+it("Should add the part cut", () => {
   let pattern = new freesewing.Pattern();
-  pattern.settings.mode = "draft";
   let part = new pattern.Part();
-  part.setGrain(666)
-  expect(part.attributes.list['data-grain'][0]).to.equal(666)
-  part.setGrain()
-  expect(part.attributes.list['data-grain'][0]).to.equal(90)
+  part.addCut(4, 'fabric', true)
+  expect(part.cut.materials.fabric.cut).to.equal(4)
+  expect(part.cut.materials.fabric.identical).to.equal(true)
+  part.addCut()
+  expect(part.cut.materials.fabric.cut).to.equal(2)
+  expect(part.cut.materials.fabric.identical).to.equal(false)
 });
 
-it("Should set the part cut", () => {
+it("Should generate an error if cut is not a number", () => {
   let pattern = new freesewing.Pattern();
-  pattern.settings.mode = "draft";
   let part = new pattern.Part();
-  const cut = {
-    count: 4,
-    mirror: false,
-    onFold: true
-  }
-  const dflt = {
-    count: 2,
-    mirror: true,
-    onFold: false
-  }
-  part.setCut(cut)
-  expect(JSON.stringify(part.attributes.list['data-cut'][0])).to.equal(JSON.stringify(cut))
-  part.setCut()
-  expect(JSON.stringify(part.attributes.list['data-cut'][0])).to.equal(JSON.stringify(dflt))
+  part.addCut('a', 'fabric', true)
+  expect(pattern.events.error.length).to.equal(1)
+  expect(pattern.events.error[0]).to.equal('Tried to set cut to a value that is not a positive integer')
+});
+
+it("Should generate an warning if material is not a string", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.addCut(3, 4)
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to set material to a value that is not a string')
+});
+
+it("Should generate an error when removing a material that is not set (through addCut)", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.addCut(4, 'fabric', true)
+  part.addCut(false, 'lining')
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
+});
+
+it("Should remove the part cut through addCut", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.addCut(4, 'fabric', true)
+  part.addCut(false, 'fabric')
+  expect(typeof part.cut.materials.fabric).to.equal('undefined')
+});
+
+it("Should remove the part cut through removeCut", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.addCut(4, 'fabric', true)
+  part.removeCut('fabric')
+  expect(typeof part.cut.materials.fabric).to.equal('undefined')
+});
+
+it("Should generate an error when removing a material that is not set (through removeCut)", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.addCut(4, 'fabric', true)
+  part.removeCut('lining')
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
+});
+
+it("Should generate an error when removing a material that is not a string (through removeCut)", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.addCut(4, 'fabric', true)
+  part.removeCut(23)
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
+});
+
+it("Should generate a warning when calling removeCut without parameters", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.addCut(4, 'fabric', true)
+  part.removeCut()
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
+});
+
+it("Should set the part grainline", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  expect(part.cut.grain).to.equal(90)
+  part.setGrain(123)
+  expect(part.cut.grain).to.equal(123)
+});
+
+it("Should raise a warning when calling part.setGrain() without any parameters", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.setGrain()
+  expect(part.cut.grain).to.equal(false)
+});
+
+it("Should raise an error when calling part.setGrain() with a value that is not a number", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  part.setGrain('a')
+  expect(part.cut.grain).to.equal(90)
+  expect(pattern.events.error.length).to.equal(1)
+  expect(pattern.events.error[0]).to.equal('Called part.setGrain() with a value that is not a number')
+});
+
+it("Should set and then remove the cutOnFold", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  const { Point }  = part.shorthand()
+  part.setCutOnFold(new Point(2,3), new Point(100,200))
+  expect(part.cut.cutOnFold[0].x).to.equal(2)
+  expect(part.cut.cutOnFold[0].y).to.equal(3)
+  expect(part.cut.cutOnFold[1].x).to.equal(100)
+  expect(part.cut.cutOnFold[1].y).to.equal(200)
+  part.setCutOnFold(false)
+  expect(typeof part.cut.cutOnFold).to.equal('undefined')
+});
+
+it("Should raise an error when setting the cutOnFold with a non-Point value", () => {
+  let pattern = new freesewing.Pattern();
+  let part = new pattern.Part();
+  const { Point }  = part.shorthand()
+  part.setCutOnFold(new Point(2,3), 12)
+  expect(pattern.events.error.length).to.equal(1)
+  expect(pattern.events.error[0]).to.equal('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 });
 

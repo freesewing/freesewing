@@ -26,3 +26,4 @@ it("Should set an attribute", () => {
   s.attr("class", "less", true);
   expect(s.attributes.get("class")).to.equal("less");
 });
+
