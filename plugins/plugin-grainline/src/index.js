@@ -29,18 +29,20 @@ export default {
         ...dflts,
         ...so,
       }
-      let points = this.points
+      const { points, complete } = this.shorthand()
       this.setGrain(so.from.angle(so.to))
-      points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
-      points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
-      this.paths.grainline = new this.Path()
-        .move(points.grainlineFrom)
-        .line(points.grainlineTo)
-        .attr('class', 'note')
-        .attr('marker-start', 'url(#grainlineFrom)')
-        .attr('marker-end', 'url(#grainlineTo)')
-        .attr('data-text', so.text)
-        .attr('data-text-class', 'center fill-note')
+      if (complete) {
+        points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
+        points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
+        this.paths.grainline = new this.Path()
+          .move(points.grainlineFrom)
+          .line(points.grainlineTo)
+          .attr('class', 'note')
+          .attr('marker-start', 'url(#grainlineFrom)')
+          .attr('marker-end', 'url(#grainlineTo)')
+          .attr('data-text', so.text)
+          .attr('data-text-class', 'center fill-note')
+      }
     },
   },
 }
