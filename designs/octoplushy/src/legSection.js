@@ -21,11 +21,9 @@ export default function (partNumber, part) {
 
   const c = 0.55191502449351
   const w = options.sizeConstant * options.size
-  const h = options.sizeConstant * options.size * 0.5
   const sections = options.type == 'squid' ? 10 : 8
 
   let sectionWidth = (w * 2) / sections
-  let neckWidth = sectionWidth * options.neckWidth
   let legWidth = (w * options.legWidth * options.bottomTopLegRatio * 3.1415) / 2
   let legAdjustedWidth = legWidth * options.bottomTopLegRatio
   let legLength = ((w * 2) / 3.1415) * options.legLength

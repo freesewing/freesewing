@@ -42,9 +42,6 @@ export default function (partNumber, part) {
       legLength *= 1.2
     }
   }
-  let skirtWidth =
-    (options.type == 'octopus' ? 2 : options.type == 'octoplushy' ? 0.7 : 1) * sectionWidth
-  skirtWidth = skirtWidth < legAdjustedWidth ? legAdjustedWidth : skirtWidth
 
   // console.log({ w: w })
   // console.log({ sectionWidth: sectionWidth })

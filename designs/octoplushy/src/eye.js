@@ -11,7 +11,6 @@ export default function (partNumber, part) {
     sa,
     paperless,
     macro,
-    utils,
     store,
   } = part.shorthand()
 
