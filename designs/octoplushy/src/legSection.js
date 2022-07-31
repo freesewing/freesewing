@@ -1,5 +1,4 @@
 export default function (partNumber, part) {
-  console.log({ part: part })
   const {
     options,
     Point,
@@ -233,7 +232,6 @@ export default function (partNumber, part) {
         points.legMiddle,
         points.legTopLeft.x
       )
-      console.log({ skirtLegLeft: points.skirtLegLeft })
       points.skirtLegRight = points.skirtLegLeft.flipX(points.sectionTop)
       paths.legLeftLine = new Path()
         .move(points.skirtLegLeft)
