@@ -37,7 +37,8 @@ export default function (part) {
     .line(points.frontTL)
     .close()
     .attr('class', 'fabric')
-  paths.backSeam = new Path()
+    .setRender(options.frontPocket)
+    paths.backSeam = new Path()
     .move(points.backTL)
     .line(points.backBL)
     .line(points.backBR)
@@ -45,38 +46,41 @@ export default function (part) {
     .line(points.backTL)
     .close()
     .attr('class', 'fabric')
+    .setRender(options.backPocket)
 
   // Complete?
   if (complete) {
-    points.frontTitle = points.frontTL.shift(270, 50).shift(0, 50)
-    macro('title', {
-      nr: 5,
-      at: points.frontTitle.shift(0, 30),
-      title: 'frontFacing',
-      prefix: 'front',
-    })
-    points.frontLogo = points.frontTitle.shift(270, 0)
-    snippets.frontLogo = new Snippet('logo', points.frontLogo).attr('data-scale', 0.4)
-    points.frontText = points.frontLogo
-      .shift(-90, 25)
-      .attr('data-text', 'Waralee')
-      .attr('data-text-class', 'center')
-
-    points.backTitle = points.backTL.shift(270, 50).shift(0, 50)
-    macro('title', {
-      nr: 6,
-      at: points.backTitle.shift(0, 30),
-      title: 'backFacing',
-      prefix: 'back',
-    })
-    points.backLogo = points.backTitle.shift(270, 0)
-    snippets.backLogo = new Snippet('logo', points.backLogo).attr('data-scale', 0.4)
-    points.backText = points.backLogo
-      .shift(-90, 25)
-      .attr('data-text', 'Waralee')
-      .attr('data-text-class', 'center')
+    if( options.frontPocket ) {
+      points.frontTitle = points.frontTL.shift(270, 50).shift(0, 50)
+      macro('title', {
+        nr: 5,
+        at: points.frontTitle.shift(0, 30),
+        title: 'frontFacing',
+        prefix: 'front',
+      })
+      points.frontLogo = points.frontTitle.shift(270, 0)
+      snippets.frontLogo = new Snippet('logo', points.frontLogo).attr('data-scale', 0.4)
+      points.frontText = points.frontLogo
+        .shift(-90, 25)
+        .attr('data-text', 'Waralee')
+        .attr('data-text-class', 'center')
+    }
+    if( options.backPocket ) {
+      points.backTitle = points.backTL.shift(270, 50).shift(0, 50)
+      macro('title', {
+        nr: 6,
+        at: points.backTitle.shift(0, 30),
+        title: 'backFacing',
+        prefix: 'back',
+      })
+      points.backLogo = points.backTitle.shift(270, 0)
+      snippets.backLogo = new Snippet('logo', points.backLogo).attr('data-scale', 0.4)
+      points.backText = points.backLogo
+        .shift(-90, 25)
+        .attr('data-text', 'Waralee')
+        .attr('data-text-class', 'center')
+    }
   }
-
   // Paperless?
   if (paperless) {
     macro('hd', {

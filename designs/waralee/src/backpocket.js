@@ -14,6 +14,10 @@ export default function (part) {
     sa
   } = part.shorthand()
 
+  if( false == options.backPocket ) {
+    return part
+  }
+
   let pocketDepth = options.backPocketDepth
 
   points.topLeft = new Point(0, 0)

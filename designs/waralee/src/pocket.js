@@ -14,6 +14,10 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
+  if( false == options.frontPocket ) {
+    return part
+  }
+  
   let pocketDepth =
     (measurements.crotchDepth - measurements.waistToHips) * options.frontPocketDepthFactor
 

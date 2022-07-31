@@ -90,35 +90,10 @@ export default function (part) {
       text: part.units(points.bWaistBackOverlap.dist(points.bWaistBack) * mini),
     })
     macro('hd', {
-      from: points.backPocketRight,
-      to: points.bWaistBackOverlap,
-      y: points.bWaistBackOverlap.y +40,
-      text: part.units((points.bWaistBackOverlap.x -points.backPocketRight.x) * mini),
-    })
-    macro('hd', {
-      from: points.fWaistFrontOverlap,
-      to: points.frontPocketBottom2,
-      y: points.frontPocketBottom2.y +20,
-      text: part.units((points.frontPocketBottom2.x -points.fWaistFrontOverlap.x) * mini),
-    })
-    macro('hd', {
       from: points.fWaistFrontOverlap,
       to: points.mHip,
       y: points.mHip.y +10,
       text: part.units((points.mHip.x -points.fWaistFrontOverlap.x) * mini),
-    })
-
-    macro('vd', {
-      from: points.fWaistFrontOverlap,
-      to: points.frontPocketBottom2,
-      x: points.frontPocketBottom2.x +20,
-      text: part.units((points.frontPocketBottom2.y -points.fWaistFrontOverlap.y) * mini),
-    })
-    macro('vd', {
-      from: points.bWaistBack,
-      to: points.backPocketRight,
-      x: points.backPocketRight.x,
-      text: part.units((points.backPocketRight.y -points.bWaistBack.y) * mini),
     })
     macro('vd', {
       from: points.fWaistFrontOverlap,
@@ -138,6 +113,36 @@ export default function (part) {
       x: points.bWaistSideTemp.x +10,
       text: part.units((points.bLegBackOverlap.y -points.bWaistSideTemp.y) * mini),
     })
+
+    if (options.frontPocket) {
+      macro('hd', {
+        from: points.fWaistFrontOverlap,
+        to: points.frontPocketBottom2,
+        y: points.frontPocketBottom2.y +20,
+        text: part.units((points.frontPocketBottom2.x -points.fWaistFrontOverlap.x) * mini),
+      })
+      macro('vd', {
+        from: points.fWaistFrontOverlap,
+        to: points.frontPocketBottom2,
+        x: points.frontPocketBottom2.x +20,
+        text: part.units((points.frontPocketBottom2.y -points.fWaistFrontOverlap.y) * mini),
+      })
+    }
+
+    if (options.backPocket) {
+      macro('hd', {
+        from: points.backPocketRight,
+        to: points.bWaistBackOverlap,
+        y: points.bWaistBackOverlap.y +40,
+        text: part.units((points.bWaistBackOverlap.x -points.backPocketRight.x) * mini),
+      })
+      macro('vd', {
+        from: points.bWaistBack,
+        to: points.backPocketRight,
+        x: points.backPocketRight.x,
+        text: part.units((points.backPocketRight.y -points.bWaistBack.y) * mini),
+      })
+    }
   }
 
   part.render = options.showMini 
