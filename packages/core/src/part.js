@@ -361,16 +361,16 @@ Part.prototype.generateTransform = function(transforms) {
 Part.prototype.addCut = function (cut=2, material='fabric', identical=false) {
   if (cut === false) {
     if (this.cut.materials[material]) delete this.cut.materials[material]
-    else this.context.raise.error(`Tried to remove a material that is not set`)
+    else this.context.raise.warning(`Tried to remove a material that is not set`)
     return this
   }
   if (typeof this.cut.materials[material] === 'undefined') this.cut.materials[material] = {}
-  if (typeof cut !== 'number') {
-    this.context.raise.error(`Tried to set cut to a value that is not a number`)
+  if (!(Number.isInteger(cut) && cut > -1)) {
+    this.context.raise.error(`Tried to set cut to a value that is not a positive integer`)
     return this
   }
   if (typeof material !== 'string') {
-    this.context.raise.error(`Tried to set material to a value that is not a string`)
+    this.context.raise.warning(`Tried to set material to a value that is not a string`)
     return this
   }
   this.cut.materials[material].cut = cut
@@ -381,24 +381,13 @@ Part.prototype.addCut = function (cut=2, material='fabric', identical=false) {
 
 /** Chainable way to remove (some) cut info */
 Part.prototype.removeCut = function (material=false) {
-  if (!material) {
-    this.context.raise.warning('Called part.removeCut() without any parameters. Not removing anything')
-    return this
-  }
-  if (typeof material !== 'string') {
-    this.context.raise.error(`Tried to set material to a value that is not a string`)
-    return this
-  }
-  if (this.cut.materials[material]) delete this.cut.materials[material]
-  else this.context.raise.error(`Tried to remove a material that is not set`)
-
-  return this
+  return this.addCut(false, material)
 }
 
 /** Chainable way to add the grain info */
 Part.prototype.setGrain = function (grain=false) {
   if (grain === false) {
-    this.context.raise.warning('Called part.setGrain() without any parameters. Not changing anything')
+    this.cut.grain = false
     return this
   }
   if (typeof grain !== 'number') {

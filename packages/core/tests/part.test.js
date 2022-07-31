@@ -289,15 +289,15 @@ it("Should generate an error if cut is not a number", () => {
   let part = new pattern.Part();
   part.addCut('a', 'fabric', true)
   expect(pattern.events.error.length).to.equal(1)
-  expect(pattern.events.error[0]).to.equal('Tried to set cut to a value that is not a number')
+  expect(pattern.events.error[0]).to.equal('Tried to set cut to a value that is not a positive integer')
 });
 
-it("Should generate an error if material is not a string", () => {
+it("Should generate an warning if material is not a string", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
   part.addCut(3, 4)
-  expect(pattern.events.error.length).to.equal(1)
-  expect(pattern.events.error[0]).to.equal('Tried to set material to a value that is not a string')
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to set material to a value that is not a string')
 });
 
 it("Should generate an error when removing a material that is not set (through addCut)", () => {
@@ -305,8 +305,8 @@ it("Should generate an error when removing a material that is not set (through a
   let part = new pattern.Part();
   part.addCut(4, 'fabric', true)
   part.addCut(false, 'lining')
-  expect(pattern.events.error.length).to.equal(1)
-  expect(pattern.events.error[0]).to.equal('Tried to remove a material that is not set')
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
 });
 
 it("Should remove the part cut through addCut", () => {
@@ -330,8 +330,8 @@ it("Should generate an error when removing a material that is not set (through r
   let part = new pattern.Part();
   part.addCut(4, 'fabric', true)
   part.removeCut('lining')
-  expect(pattern.events.error.length).to.equal(1)
-  expect(pattern.events.error[0]).to.equal('Tried to remove a material that is not set')
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
 });
 
 it("Should generate an error when removing a material that is not set (through removeCut)", () => {
@@ -339,8 +339,8 @@ it("Should generate an error when removing a material that is not set (through r
   let part = new pattern.Part();
   part.addCut(4, 'fabric', true)
   part.removeCut(23)
-  expect(pattern.events.error.length).to.equal(1)
-  expect(pattern.events.error[0]).to.equal('Tried to set material to a value that is not a string')
+  expect(pattern.events.warning.length).to.equal(1)
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
 });
 
 it("Should generate a warning when calling removeCut without parameters", () => {
@@ -349,7 +349,7 @@ it("Should generate a warning when calling removeCut without parameters", () => 
   part.addCut(4, 'fabric', true)
   part.removeCut()
   expect(pattern.events.warning.length).to.equal(1)
-  expect(pattern.events.warning[0]).to.equal('Called part.removeCut() without any parameters. Not removing anything')
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
 });
 
 it("Should generate a warning when calling removeCut without parameters", () => {
@@ -358,7 +358,7 @@ it("Should generate a warning when calling removeCut without parameters", () => 
   part.addCut(4, 'fabric', true)
   part.removeCut()
   expect(pattern.events.warning.length).to.equal(1)
-  expect(pattern.events.warning[0]).to.equal('Called part.removeCut() without any parameters. Not removing anything')
+  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
 });
 
 it("Should set the part grainline", () => {
@@ -373,9 +373,7 @@ it("Should raise a warning when calling part.setGrain() without any parameters",
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
   part.setGrain()
-  expect(part.cut.grain).to.equal(90)
-  expect(pattern.events.warning.length).to.equal(1)
-  expect(pattern.events.warning[0]).to.equal('Called part.setGrain() without any parameters. Not changing anything')
+  expect(part.cut.grain).to.equal(false)
 });
 
 it("Should raise an error when calling part.setGrain() with a value that is not a number", () => {
