@@ -352,15 +352,6 @@ it("Should generate a warning when calling removeCut without parameters", () => 
   expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
 });
 
-it("Should generate a warning when calling removeCut without parameters", () => {
-  let pattern = new freesewing.Pattern();
-  let part = new pattern.Part();
-  part.addCut(4, 'fabric', true)
-  part.removeCut()
-  expect(pattern.events.warning.length).to.equal(1)
-  expect(pattern.events.warning[0]).to.equal('Tried to remove a material that is not set')
-});
-
 it("Should set the part grainline", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
