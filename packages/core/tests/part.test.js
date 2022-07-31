@@ -273,6 +273,7 @@ it("Should generate the part transforms", () => {
   expect(part.attributes.list['transform-origin'][0]).to.equal('10.5 39')
 });
 
+
 it("Should add the part cut", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();

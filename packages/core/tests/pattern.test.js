@@ -711,6 +711,7 @@ it("Should handle a list snapped option", () => {
   expect(freesewing.utils.round(pattern.parts.front.paths.line_10.ops[1].to.x)).to.equal(33.72);
 });
 
+
 it("Should retrieve the cutList", () => {
   const Test = new freesewing.Design({
     name: "test",
@@ -728,5 +729,4 @@ it("Should retrieve the cutList", () => {
   const list = `{"front":{"grain":90,"materials":{"lining":{"cut":4,"identical":true}}}}`
   expect(JSON.stringify(pattern.getCutList())).to.equal(list)
 });
-
 

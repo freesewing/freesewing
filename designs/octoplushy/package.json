@@ -1,0 +1,64 @@
+{
+  "name": "@freesewing/octoplushy",
+  "version": "2.21.3",
+  "description": "A FreeSewing pattern for an octopus plushy toy",
+  "author": "woutervdub (https://github.com/woutervdub)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "design",
+    "diy",
+    "fashion",
+    "made to measure",
+    "parametric design",
+    "pattern",
+    "sewing",
+    "sewing pattern"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "node build.js",
+    "clean": "rimraf dist",
+    "mbuild": "NO_MINIFY=1 node build.js",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "npx mocha tests/*.test.mjs",
+    "vbuild": "VERBOSE=1 node build.js",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "prettier": "npx prettier --write 'src/*.js' 'config/*.js'",
+    "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
+    "cibuild_step5": "node build.js"
+  },
+  "peerDependencies": {
+    "@freesewing/core": "^2.21.3",
+    "@freesewing/plugin-bundle": "^2.21.3",
+    "@freesewing/config-helpers": "^2.21.3"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "chai": "^4.2.0"
+  },
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6"
+  }
+}
