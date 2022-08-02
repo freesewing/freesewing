@@ -95,6 +95,8 @@ packageJson:
 
   noble:
     author: woutervdub (https://github.com/woutervdub)
+  octoplushy:
+    author: woutervdub (https://github.com/woutervdub)
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:

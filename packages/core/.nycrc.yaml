@@ -1,4 +1,5 @@
 exclude:
   - tests/fixtures
+  - tests
   - bin-pack
 

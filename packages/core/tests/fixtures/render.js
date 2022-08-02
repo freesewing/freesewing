@@ -333,6 +333,33 @@ var render = {
 <!-- end of group #fs-part-test -->
 </g>
 <!-- end of group #fs-container -->
+</svg>`,
+  rotatedSnippet: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="${version}" width="4mm" height="4mm" viewBox="0 0 4 4"
+>
+<style type="text/css"> <![CDATA[
+
+]]>
+</style>
+<script type="text/javascript"> <![CDATA[
+
+]]>
+</script>
+<defs>
+
+</defs>
+
+
+<!-- Start of group #fs-container -->
+<g id="fs-container">
+
+<!-- Start of group #fs-part-test -->
+<g id="fs-part-test"  transform="translate(2, 2)">
+<use x="20" y="20" xlink:href="#test" data-rotate="90" transform="translate(20, 20) scale(1) translate(-20, -20) rotate(90, 20, 20)"></use>
+</g>
+<!-- end of group #fs-part-test -->
+</g>
+<!-- end of group #fs-container -->
 </svg>`
 }
 

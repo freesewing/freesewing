@@ -203,6 +203,19 @@ it("Should render an Svg snippet", () => {
   expect(pattern.render()).to.equalIgnoreSpaces(render.snippet);
 });
 
+it("Should render a rotated Svg snippet", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.render();
+  pattern.parts.test = new pattern.Part();
+  let p = pattern.parts.test;
+  p.snippets.test = new p.Snippet(
+    "test",
+    new p.Point(20, 20),
+    "This is a snippet"
+  ).attr('data-rotate', 90)
+  expect(pattern.render()).to.equalIgnoreSpaces(render.rotatedSnippet);
+});
+
 it("Should replaced double quotes in Svg text", () => {
   const pattern = new freesewing.Pattern()
   pattern.render()
@@ -247,9 +260,19 @@ it("Should run insertText hook", () => {
 });
 
 it("Should run postRender hook", () => {
-  let pattern = new freesewing.Pattern();
+  let pattern = new freesewing.Pattern()
   pattern.on("postRender", svg => {
     svg.svg = "test";
   });
   expect(pattern.render()).to.equal("test");
 });
+
+it("Should tab in and out", () => {
+  let pattern = new freesewing.Pattern()
+  pattern.render()
+  const svg = pattern.svg
+  svg.tabs = 2
+  expect(svg.tab()).to.equal('    ')
+});
+
+
