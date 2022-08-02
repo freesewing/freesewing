@@ -11,6 +11,10 @@ To make Octoplushy, you will need the following:
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/patterns/octoplushy/options/size/). The Octopus version requires about 50% more fabric, and the squid version about 75% more.
+This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/patterns/octoplushy/options/size/). 
+
+The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/patterns/octoplushy/options/type/).
+- The Octopus version requires about 50% more fabric than the Octoplushy version.
+- The Squid version requires about 75% more fabric than the Octoplushy version.
 
 </Note>
