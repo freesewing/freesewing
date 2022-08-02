@@ -1,28 +1,28 @@
 ---
 headEase:
-  title: Head ease
-  description: The amount of ease around your head.
+  title: Свобода облягання на голові
+  description: Керує свободою облягання навколо голови.
 lengthRatio:
-  title: Length ratio
-  description: Controls the length of the crown and ear flaps
+  title: Співвідношення довжини
+  description: Керує відсотком довжини маківки та навушників
 gores:
-  title: Number of gores
-  description: The number of gores used to construct the crown
+  title: Кількість панелей
+  description: Керує кількістю панелей для побудови маківки (корони)
 visorAngle:
-  title: Visor angle
-  description: The arc angle used to draft the inner curve of the visor
+  title: Кут козирка
+  description: Кут, який використовується для побудови внутрішньої кривої козирка
 visorWidth:
-  title: Visor width
-  description: Controls the width of the visor
+  title: Ширина козирка
+  description: Керує шириною козирка
 earLength:
-  title: Ear flap length
-  description: Controls the length of the ear flaps independently from the crown pieces
+  title: Довжина навушника
+  description: Керує довжиною навушників, окремо від панелей маківки (корони)
 earWidth:
-  title: Ear flap width
-  description: Controls the width of the ear flaps
+  title: Ширина навушника
+  description: Керує шириною навушників
 buttonhole:
-  title: Buttonhole guide
-  description: Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+  title: Петля ґудзика
+  description: Додає петлю для ґудзика на навушник для створення викрійки з ґудзиком
 visorLength:
-  title: Visor length
-  description: Controls the length of the visor
+  title: Довжина козирка
+  description: Керує довжиною козирка
