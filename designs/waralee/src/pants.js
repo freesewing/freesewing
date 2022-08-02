@@ -15,19 +15,25 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-    points.logo = points.fWaistFront.shift(270, 400)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.title = points.logo.shift(-90, 50)
+    points.title = points.fWaistFront.shift(270, 400)
     macro('title', {
       nr: 1,
       at: points.title,
       title: 'pants',
     })
+
+    points.logo = points.title.shift(270, 75)
+
+    snippets.logo = new Snippet('logo', points.logo)
+
     macro('scalebox', { at: points.mHip.shift(-90, 70) })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 
+  if( options.frontPocket ) {paths.frontPocket.setRender( true )}
+  if( options.backPocket ) {paths.backPocket.setRender( true )}
+ 
   // Paperless?
   if (paperless) {
     macro('hd', {

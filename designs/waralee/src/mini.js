@@ -41,9 +41,6 @@ export default function (part) {
     .offset((-1 * store.get('hem')) / mini)
     .attr('class', 'fabric stroke-sm')
 
-  points.mWaist1 = new Point(points.mWaist.x, points.fWaistSide.y)
-  points.mWaist2 = new Point(points.mWaist.x, points.bWaistSide.y)
-
   paths.cutOut = new Path()
     .move(points.bWaistSide)
     .line(points.mWaist2)
@@ -55,6 +52,9 @@ export default function (part) {
   if (complete) {
     macro('scalebox', { at: points.mLeg.shift(-90, 35) })
 
+    if( options.frontPocket ) {paths.frontPocket.setRender( true )}
+    if( options.backPocket ) {paths.backPocket.setRender( true )}
+    
     if (sa) {
       paths.sa = paths.seam.offset(sa /mini).attr('class', 'fabric sa')
     }
