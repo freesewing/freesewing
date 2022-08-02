@@ -34,19 +34,19 @@ frontPocketDepth:
   description: Керує загальною глибиною мішковини передньої кишені
 frontPocketFacing:
   title: Зовнішня частина передньої кишені
-  description: Controls how far the pocket facing extends into the pocket bag
+  description: Керує, наскільки глибоко зовнішня частина кишені простягається по мішковині
 beltLoops:
-  title: Belt loops
-  description: Controls the amount of belt loops
+  title: Поясні петельки
+  description: Керує загальною кількістю поясних петельок
 flyCurve:
-  title: Fly curve
-  description: Controls the curvature of the fly J-seam
+  title: Крива гульфика
+  description: Керує кривою лінією гачкоподібного шва гульфика
 flyLength:
-  title: Fly length
-  description: Controls the length of the fly
+  title: Довжина гульфика
+  description: Керує загальною довжиною гульфика
 flyWidth:
-  title: Fly width
-  description: Controls how far the J-seam of offset from the fly edge
+  title: Ширина гульфика
+  description: Керує наскільки далеко гачкоподібний шов відходить від краю гульфика
 waistbandCurve:
-  title: Waistband Curve
-  description: Controls how curved the waistband is.
+  title: Крива поясу
+  description: Керує наскільки заокругленою є крива поясу.
