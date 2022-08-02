@@ -16,32 +16,17 @@ export default function (part) {
 
   paths.seam = new Path()
     .move(points.mWaist1)
-    .line(points.fWaistSide)
-    .curve(points.fWaistCrotchCP, points.fHipCrotchCP, points.mHip)
-    .curve(points.bHipCrotchCP, points.bWaistCrotchCP, points.bWaistSide)
     .line(points.mWaist2)
-    .line(points.mWaist1)
+    .line(points.bWaistSide)
+    .join(paths.backTopCutOut)
+    .join(paths.backBottomCutOut)
+    .join(paths.frontBottomCutOut)
+    .join(paths.frontTopCutOut)
     .close()
     .attr('class', 'fabric')
 
-  let fPaths = (new Path().move(points.fWaistSide)
-  .curve(points.fWaistCrotchCP, points.fHipCrotchCP, points.mHip)).split(points.fCutOutHip)
+  paths.cutout.setRender(false)
 
-  points.fCutOutHipCp = fPaths[1].ops[1].cp2.shiftFractionTowards(points.fCutOutHip, 1.25)
-
-  let bPaths = (new Path().move(points.bWaistSide)
-  .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)).split(points.bCutOutHip)
-
-  points.bCutOutHipCp = bPaths[1].ops[1].cp2.shiftFractionTowards(points.bCutOutHip, 1.25)
-
-  paths.cutout2 = new Path()
-    .move(points.bWaistAdjusted)
-    .curve(points.bWaistAdjusted, points.bCutOutHipCp, points.bCutOutHip)
-    .join(bPaths[1])
-    .join(fPaths[1].reverse())
-    .curve(points.fCutOutHipCp,points.fWaistAdjusted,points.fWaistAdjusted)
-    .attr('class', 'lining')
-    .setRender(true)
 
   // Complete?
   if (complete) {
@@ -59,9 +44,11 @@ export default function (part) {
     if (sa) {
       paths.seamAlternate = new Path()
         .move(points.bWaistSide)
-        .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
-        .curve(points.fHipCrotchCP, points.fWaistCrotchCP, points.fWaistSide)
-
+        .join(paths.backTopCutOut)
+        .join(paths.backBottomCutOut)
+        .join(paths.frontBottomCutOut)
+        .join(paths.frontTopCutOut)
+    
       paths.sa = paths.seamAlternate.offset(sa).attr('class', 'fabric sa')
     }
   }

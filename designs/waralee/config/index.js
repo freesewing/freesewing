@@ -10,7 +10,7 @@ export default {
   difficulty: 2,
   optionGroups: {
     options: ['showMini'],
-    fit: ['backRaise', 'waistRaise'],
+    fit: ['fitWaist','backRaise', 'waistRaise'],
     style: [
       'hemWidth',
       'legShortening',
@@ -71,5 +71,6 @@ export default {
     legShortening: { pct: 25, min: -10, max: 50 },
     backRaise: { pct: 10, min: 0, max: 25 },
     showMini: { bool: true },
+    fitWaist: { bool: true },
   },
 }
