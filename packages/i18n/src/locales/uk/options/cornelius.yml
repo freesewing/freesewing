@@ -1,19 +1,19 @@
 ---
 fullness:
-  title: Fullness
-  description: Controls the fullness of the breeches
+  title: Ширина ногавиць
+  description: Керує наскільки широкими є ногавиці
 waistbandBelowWaist:
-  title: Lower waistband
-  description: Percentage to move the waistband below the actual waist
+  title: Нижчий пояс
+  description: Відсоток зміщення поясу нижче природної талії
 waistReduction:
-  title: Waist reduction
-  description: Percentage to reduce the waistband
+  title: Утягування талії
+  description: Відсоток звуження поясу
 cuffWidth:
-  title: Cuff width
-  description: Width of the leg cuff
+  title: Ширина чохли
+  description: Загальна ширина чохли (манжета) на ногах
 cuffStyle:
-  title: Cuff style
-  description: Style of the leg cuff
+  title: Стиль чохли
+  description: Стиль чохли (манжета) на ногах
 bandBelowKnee:
   title: Cuff below knee
   description: Controls the cuff distance from the knee
