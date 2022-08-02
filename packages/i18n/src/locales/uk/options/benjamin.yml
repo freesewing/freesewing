@@ -3,8 +3,8 @@ adjustmentRibbon:
   title: Рихтувальна тасьма
   description: Додавати чи не додавати рихтувальну тасьму в елементи викрійки
 bandLength:
-  title: Band length
-  description: Length of the band
+  title: Довжина пояска
+  description: Загальна довжина пояска
 tipWidth:
   title: Ширина країв
   description: Ширина чи висота країв бантика
