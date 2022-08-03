@@ -1,6 +1,7 @@
 let expect = require("chai").expect;
 let freesewing = require("../dist/index.js");
 
+describe("Pattern", () => {
 it("Pattern constructor should initialize object", () => {
   let pattern = new freesewing.Pattern({
     foo: "bar",
@@ -585,12 +586,29 @@ it("Should correctly merge settings for existing array", () => {
   expect(pattern.settings.margin).to.equal(5);
 });
 
+describe('Part.prototype.draftPart', () => {
+  it('Should set render to false on a part that has nothing in it', () => {
+    const Test = new freesewing.Design({
+      name: "test",
+      parts: ['front'],
+    });
+    Test.prototype.draftFront = function(part) {
+      return part;
+    };
+    const pattern = new Test()
+    pattern.draftPart('front')
+    expect(pattern.parts.front.render).to.be.false
+  })
+})
+
 it("Should return all render props", () => {
   const Test = new freesewing.Design({
     name: "test",
     parts: ['front'],
   });
   Test.prototype.draftFront = function(part) {
+    const {paths, Path, Point} = part.shorthand()
+    paths.seam = new Path().move(new Point(0,0))
     return part;
   };
   const pattern = new Test()
@@ -602,6 +620,7 @@ it("Should return all render props", () => {
   expect(rp.parts.front.height).to.equal(4);
 });
 
+describe('Part.prototype.pack', () => {
 it("Should not pack a pattern with errors", () => {
   const pattern = new freesewing.Pattern()
   pattern.events.error.push('error')
@@ -614,16 +633,21 @@ it("Should handle custom layouts", () => {
   const Test = new freesewing.Design({ name: "test", parts: ['front'] })
   Test.prototype.draftFront = function(part) { return part }
   const pattern = new Test({
-    layout: {
-      width: 400,
-      height: 200,
-      parts: { front: { move: { x: 14, y: -202 } } }
+    layouts: {
+      layout: {
+        width: 400,
+        height: 200,
+        parts: { front: { move: { x: 14, y: -202 } } }
+      }
     }
   })
+
   pattern.pack()
   expect(pattern.width).to.equal(400)
   expect(pattern.height).to.equal(200)
 });
+
+})
 
 it("Should handle a simple snapped option", () => {
   const Test = new freesewing.Design({
@@ -729,4 +753,4 @@ it("Should retrieve the cutList", () => {
   const list = `{"front":{"grain":90,"materials":{"lining":{"cut":4,"identical":true}}}}`
   expect(JSON.stringify(pattern.getCutList())).to.equal(list)
 });
-
+})

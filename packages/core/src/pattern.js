@@ -219,9 +219,11 @@ Pattern.prototype.draft = function (draftOrder=this.config.draftOrder) {
 
 Pattern.prototype.draftPart = function(partName) {
   let basePart = partName
-  if (Array.isArray(partName)) {
-    [partName, basePart] = partName
-  }
+
+  // TODO reimplement in cutting layout
+  // if (Array.isArray(partName)) {
+  //   [partName, basePart] = partName
+  // }
 
   this.raise.debug(`Creating part \`${partName}\``)
   this.parts[partName] = new this.Part(partName)
@@ -246,6 +248,7 @@ Pattern.prototype.draftPart = function(partName) {
     }
     try {
       this.parts[partName] = this[method](this.parts[partName])
+      if (this.parts[basePart].render ) this.cutList[partName] = this.parts[basePart].cut
     } catch (err) {
       this.raise.error([`Unable to draft part \`${partName}\``, err])
     }
@@ -266,34 +269,6 @@ Pattern.prototype.draftPart = function(partName) {
     )
     this.parts[partName].render = false
   }
-}
-
-Pattern.prototype.draftCutList = function(cutType="cut") {
-  const cutList = this.cutList();
-  const cutOrder = [];
-  const newParts = []
-
-  for (let partName of this.config.draftOrder) {
-    if (!this.wants(partName)) continue
-    let partCuts = cutList[partName]
-    if (partCuts && !partCuts[cutType]) continue
-
-    cutOrder.push(partName)
-    if (!partCuts) continue
-
-    for (var i = 1; i < partCuts[cutType]; i++) {
-      const cutPartName = `${partName}_${cutType}Piece${i}`
-      cutOrder.push(cutPartName)
-      newParts.push([cutPartName, partName])
-
-      if (partCuts.isPair && i % 2 === 1) {
-        this.autoLayout.parts[cutPartName] = {flipX: true}
-      }
-    }
-  }
-
-  this.settings.only = cutOrder
-  this.draft(this.config.draftOrder.concat(newParts))
 }
 
 /**
@@ -526,15 +501,17 @@ Pattern.prototype.macro = function (key, method) {
   this.macros[key] = method
 }
 
-/** Packs parts in a 2D space and sets pattern size */
+/** FIXME after discussion about how we'll handle all the various layout needs
+ * Packs parts in a 2D space and sets pattern size */
 Pattern.prototype.pack = function (layoutType="layout") {
   if (this.events.error.length > 0) {
     this.raise.warning(`One or more errors occured. Not packing pattern parts`)
     return this
   }
   const thisLayout = this.settings.layouts[layoutType];
+  const relayout = thisLayout === undefined || thisLayout.height === undefined
   // add existing layout to bins so that new pieces can be added to the layout without resetting
-  let thisLayoutBin = {id: 'preLayout', width: 0, height: 0}
+  let thisLayoutBin = {id: 'preLayout', width: thisLayout?.width || 0, height: thisLayout?.height || 0}
   let bins = [];
   for (let key in this.parts) {
     let part = this.parts[key]
@@ -544,8 +521,9 @@ Pattern.prototype.pack = function (layoutType="layout") {
       part.stack()
       let width = part.bottomRight.x - part.topLeft.x
       let height = part.bottomRight.y - part.topLeft.y
+
       // if the piece has been in the layout, account for it in the layoutbin
-      if (thisLayout?.parts?.[key]?.br) {
+      if (relayout && thisLayout?.parts?.[key]?.br) {
         thisLayoutBin.width = Math.max(thisLayout.parts[key].br.x, thisLayoutBin.width)
         thisLayoutBin.height = Math.max(thisLayout.parts[key].br.y, thisLayoutBin.height)
       }
@@ -617,15 +595,6 @@ Pattern.prototype.draftOrder = function (graph = this.resolveDependencies()) {
   })
 
   return sorted
-}
-
-Pattern.prototype.cutList = function() {
-  let cutList = {}
-  for (let partName of this.config.draftOrder) {
-    cutList[partName] = getPartCutlist(partName, this.config, this.settings)
-  }
-
-  return cutList
 }
 
 /** Recursively solves part dependencies for a part */

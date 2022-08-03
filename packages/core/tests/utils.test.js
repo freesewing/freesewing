@@ -546,20 +546,4 @@ it("Should shoulder return two methods for pctBasedOn", () => {
   expect(result.fromAbs(12.3, { measurements })).to.equal(0.0123)
 });
 
-it("Should generate a part transform", () => {
-  let pattern = new freesewing.Pattern();
-  pattern.settings.mode = "draft";
-  let part = new pattern.Part();
-  let short = part.shorthand();
-  part.points.from = new short.Point(2, 2);
-  part.points.to = new short.Point(19, 76);
-  part.paths.test = new short.Path()
-    .move(part.points.from)
-    .line(part.points.to);
-  part.stack();
-  const transform = utils.generatePartTransform(30,60,90,true,true,part)
-  expect(transform.transform).to.equal("translate(30,60) scale(-1, 1) scale(1, -1) rotate(90)");
-  expect(transform['transform-origin']).to.equal("10.5 39")
-});
-
 
