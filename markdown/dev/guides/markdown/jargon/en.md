@@ -36,7 +36,7 @@ The file consists of key/value pairs where:
 - The **key** is the jargon term
 - The **value** is the jargon description
 
-### Tips for jaron keys
+### Tips for jargon keys
 
 The key in the jargon file should always be lowercase. That's because we
 lowercase the term before matching it.
