@@ -4,14 +4,6 @@ export default function (part) {
   let seatDepth =
     measurements.crotchDepth /* - measurements.waistToHips */ * (1 + options.waistRaise)
   let circumference = measurements.seat
-  let circumference4 = circumference / 4
-  let hem = measurements.inseam * options.hemWidth
-  let waistBand = measurements.inseam * options.waistbandWidth
-  store.set('waistBand', waistBand)
-  store.set('hem', hem)
-
-  points.mWaist = new Point(0, 0)
-
   let waist =
     typeof measurements.waist == 'undefined' || false == options.fitWaist
       ? measurements.seat
@@ -21,14 +13,25 @@ export default function (part) {
       ? waist / 2
       : measurements.waistBack
 
+  if( circumference < waist ) {circumference = waist}
+
+  let circumference4 = circumference / 4
+  let hem = measurements.inseam * options.hemWidth
+  let waistBand = measurements.inseam * options.waistbandWidth
+  store.set('waistBand', waistBand)
+  store.set('hem', hem)
+
+  points.mWaist = new Point(0, 0)
+
+
   points.mHip = points.mWaist.shift(270, seatDepth)
 
   points.fWaistSide = points.mWaist
     .shift(180, options.crotchFront * circumference4)
-    .shift(90, store.get('waistBand'))
+    .shift(90, waistBand)
   points.fWaistCrotchCP = points.fWaistSide.shift(
     270,
-    seatDepth * options.crotchFactorFrontVer + store.get('waistBand')
+    seatDepth * options.crotchFactorFrontVer +waistBand
   )
   points.fHipCrotchCP = points.mHip.shift(
     180,
@@ -39,7 +42,7 @@ export default function (part) {
 
   points.bWaistSide = points.mWaist
     .shift(0, options.crotchBack * circumference4)
-    .shift(90, store.get('waistBand'))
+    .shift(90, waistBand)
     .shift(90, options.backRaise * seatDepth)
   points.bWaistCrotchCP = points.bWaistSide.shift(270, seatDepth * options.crotchFactorBackVer)
   points.bHipCrotchCP = points.mHip.shift(
@@ -52,11 +55,11 @@ export default function (part) {
   points.fCutOutHip = new Path()
     .move(points.fWaistSide)
     .curve(points.fWaistCrotchCP, points.fHipCrotchCP, points.mHip)
-    .shiftAlong(measurements.waistToHips + hem)
+    .shiftAlong(measurements.waistToHips + waistBand)
   points.bCutOutHip = new Path()
     .move(points.bWaistSide)
     .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
-    .shiftAlong(measurements.waistToHips + hem)
+    .shiftAlong(measurements.waistToHips + waistBand)
 
   let waistSeatDifferenceBack = measurements.seat / 2 - waistBack
   let waistSeatDifferenceFront = measurements.seat / 2 - (waist - waistBack)
@@ -69,6 +72,9 @@ export default function (part) {
     180,
     waistSeatDifferenceFront * options.frontWaistAdjustment
   )
+
+  console.log({adjustmentBack: waistSeatDifferenceBack * options.backWaistAdjustment})
+  console.log({adjustmentFront: waistSeatDifferenceFront * options.frontWaistAdjustment})
 
   points.mLeg = points.mHip.shift(270, measurements.inseam * (1 - options.legShortening))
   points.fLegSide = points.mLeg.shift(180, options.crotchFront * circumference4)
@@ -138,8 +144,21 @@ export default function (part) {
     .curve(points.bWaistAdjusted, points.bCutOutHipCp2, points.bCutOutHip)
     .setRender(false)
 
-  points.fWaistSide = points.fWaistAdjusted.clone()
-  points.bWaistSide = points.bWaistAdjusted.clone()
+  points.fWaistSideHem = paths.frontTopCutOut.reverse().shiftAlong(waistBand)
+  points.fWaistSide = paths.frontTopCutOut.reverse().shiftAlong(waistBand*2).flipY(points.fWaistSideHem)
+  points.bWaistSideHem = paths.backTopCutOut.shiftAlong(waistBand)
+  points.bWaistSide = paths.backTopCutOut.shiftAlong(waistBand*2).flipY(points.bWaistSideHem)
+
+  paths.frontTopCutOut = new Path()
+    .move(points.fCutOutHip)
+    .curve(points.fCutOutHipCp1, points.fWaistAdjusted, points.fWaistSideHem)
+    .line(points.fWaistSide)
+    .setRender(false)
+  paths.backTopCutOut = new Path()
+  .move(points.bWaistSide)
+  .move(points.bWaistSideHem)
+  .curve(points.bWaistAdjusted, points.bCutOutHipCp2, points.bCutOutHip)
+  .setRender(false)
 
   paths.cutout = new Path()
     .move(points.bWaistSide)
@@ -152,7 +171,7 @@ export default function (part) {
   paths.waistBack = new Path()
     .move(points.bWaistBackOverlap)
     .line(points.bWaistBack)
-    .line(points.bWaistSideTemp) // This is a trick to make the offset() call work. Without it, the offset is crossing the cutout line.
+    // .line(points.bWaistSideTemp) // This is a trick to make the offset() call work. Without it, the offset is crossing the cutout line.
     .line(points.bWaistSide)
     .setRender(false)
   paths.waistFront = new Path()
