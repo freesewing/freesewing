@@ -2,7 +2,7 @@
 title: "Länge des Brustabnähers"
 ---
 
----
+***
 
 ![Der Effekt der Option "Bust-Dart-Länge" auf das Schnittmuster](sample.png)
 
