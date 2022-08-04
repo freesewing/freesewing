@@ -98,7 +98,7 @@ export default {
       this.points[`_${prefix}_exportDate`] = so.at
         .shift(-90 - so.rotation, shift * so.scale)
         .attr('data-text', dateformat(now, 'yyyymmdd"T"HHMMo'))
-        .attr('data-text-class', 'fill-note')
+        .attr('data-text-class', 'text-sm')
         .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
     },
   },
