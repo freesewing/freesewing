@@ -2,7 +2,7 @@
 title: "Vordere Schulterbreite"
 ---
 
----
+***
 
 ![Der Effekt der vorderen Schulterbreite auf das Schnittmuster](sample.png)
 
