@@ -67,5 +67,3 @@ The pledge is made and enforced by the FreeSewing maintainer (joost). You can re
 If you'd like to support FreeSewing, you can [do so by becoming a patron](/patrons/join/)
 
 </Tip>
-
-

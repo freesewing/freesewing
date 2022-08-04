@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Hem curve"
-- - -
+
+***
 
 ![Hem curve](hemcurve.svg)
 

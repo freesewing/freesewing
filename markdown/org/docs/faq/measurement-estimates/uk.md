@@ -11,90 +11,99 @@ The value they represent shows how far the measurement deviates from the proport
     <th>
       Icon
     </th>
-    
+
     <th>
       Description
     </th>
+
   </tr>
-  
+
   <tr>
     <td>
       <Gauge val={-6} theme='light' />
     </td>
-    
+
     <td>
       The value is <strong x-id="1">significantly lower</strong>
     </td>
+
   </tr>
-  
+
   <tr>
     <td>
       <Gauge val={-4} theme='light' />
     </td>
-    
+
     <td>
       The value is <strong x-id="1">a good bit lower</strong>
     </td>
+
   </tr>
-  
+
   <tr>
     <td>
       <Gauge val={-2} theme='light' />
     </td>
-    
+
     <td>
       The value is <strong x-id="1">a bit lower</strong>
     </td>
+
   </tr>
-  
+
   <tr>
     <td>
       <Gauge val={-1} theme='light' />
     </td>
-    
+
     <td>
       The value is <strong x-id="1">very close</strong>
     </td>
+
   </tr>
-  
+
   <tr>
     <td>
       <Gauge val={1} theme='light' />
     </td>
-    
+
     <td>
       The value is <strong x-id="1">very close</strong>
     </td>
+
   </tr>
-  
+
   <tr>
     <td>
       <Gauge val={2} theme='light' />
     </td>
-    
+
     <td>
       The value is <strong x-id="1">a bit higher</strong>
     </td>
+
   </tr>
-  
+
   <tr>
     <td>
       <Gauge val={4} theme='light' />
     </td>
-    
+
     <td>
       The value is <strong x-id="1">a good bit higher</strong>
     </td>
+
   </tr>
-  
+
   <tr>
     <td>
       <Gauge val={6} theme='light' />
     </td>
-    
+
     <td>
       The value is <strong x-id="1">significantly higher</strong>
     </td>
+
   </tr>
 </table>
 

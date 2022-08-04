@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Lapel start"
-- - -
+
+***
 
 ![Lapel start](lapelstart.svg)
 

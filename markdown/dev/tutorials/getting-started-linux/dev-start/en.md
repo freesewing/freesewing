@@ -28,8 +28,7 @@ This is all you need to work on existing designs. If you'd like to add a new des
 yarn new design
 ```
 
-Just make sure to re-start the lab afterwards with `yarn lab`
-</Tip>
+Just make sure to re-start the lab afterwards with `yarn lab` </Tip>
 
 ## Standalone development
 
@@ -39,7 +38,7 @@ If you chose `test`, you will have a `test` folder. If you chose `banana`, you'l
 The `design` subfolder holds your design's configuration file and source code.
 You can ignore all other folders and files, they are part of the development environment.
 
-To start the development environment, enter the folder hat was created 
+To start the development environment, enter the folder hat was created
 and run `npm run start` (or `yarn start` if you're using Yarn as a package manager).
 
 Then open your browser and go to http://localhost:8000

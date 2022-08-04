@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Sleeve width guarantee"
-- - -
+
+***
 
 We first draft the arm opening, then we draft a sleeve to fit it.
 

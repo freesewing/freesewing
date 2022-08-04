@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Shoulder ease"
-- - -
+
+***
 
 ![Shoulder ease](./shoulderease.svg)
 

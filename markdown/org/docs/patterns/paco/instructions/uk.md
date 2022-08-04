@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Paco pants: Sewing Instructions"
-- - -
+
+***
 
 <Tip>
 
@@ -14,7 +16,7 @@ the raw edges.
 For these instructions, we'll assume that you are using a serger for seam finishes, but we'll
 also provide alternatives. Other options for finishing seams include trimming them with pinking
 shears, stitching a zig-zag along the edge of the seam to keep it from fraying, or binding with
-bias tape. 
+bias tape.
 
 </Tip>
 

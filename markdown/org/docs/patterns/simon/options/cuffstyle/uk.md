@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Cuff style"
-- - -
+
+***
 
 ![Cuff style](cuffstyle.svg)
 

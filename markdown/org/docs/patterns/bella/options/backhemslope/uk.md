@@ -2,7 +2,7 @@
 title: "Back hem slope"
 ---
 
----
+***
 
 ![The effect of the back hem slope option on the pattern](sample.png)
 

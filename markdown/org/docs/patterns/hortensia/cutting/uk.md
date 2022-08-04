@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Hortensia handbag: Cutting Instructions"
-- - -
+
+***
 
 ### Materials
 

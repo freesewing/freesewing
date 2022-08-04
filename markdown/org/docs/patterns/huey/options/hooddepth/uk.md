@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Hood depth"
-- - -
+
+***
 
 ![Hood depth](./hooddepth.svg)
 

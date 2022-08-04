@@ -2,7 +2,7 @@
 title: "Neck tie ends"
 ---
 
----
+***
 
 Whether you like straight or pointy ends on the ties around your neck
 

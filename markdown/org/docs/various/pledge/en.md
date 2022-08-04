@@ -68,5 +68,3 @@ You can read about [his motivations for doing so on this page](/docs/various/ple
 If you'd like to support FreeSewing, you can [do so by becoming a patron](/patrons/join/)
 
 </Tip>
-
-
