@@ -2,7 +2,7 @@
 title: "Band (chest) tie length"
 - - -
 
----
+***
 
 Controla la longitud de la cinta alrededor del pecho
 
