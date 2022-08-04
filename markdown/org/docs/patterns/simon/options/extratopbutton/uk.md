@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Extra top button"
-- - -
+
+***
 
 ![Extra top button](extratopbutton.svg)
 

@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Contour"
-- - -
+
+***
 
 Controls how sharply the princess seam will correct once it's passed the fullness of your breasts.
 

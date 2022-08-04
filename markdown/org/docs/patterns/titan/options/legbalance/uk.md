@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Leg balance"
-- - -
+
+***
 
 Controls the proportion between the front and back part of the legs.
 

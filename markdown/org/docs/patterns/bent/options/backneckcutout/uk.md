@@ -1,7 +1,8 @@
-- - -
-title: "Back neck cutout"
-- - -
+***
 
+title: "Back neck cutout"
+
+***
 
 ![Back neck cutout](backneckcutout.svg)
 

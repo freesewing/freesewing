@@ -8,10 +8,9 @@ title: "Octoplushy, the plushy octopus: Sewing Instructions"
   - For Squid: Sew the eye parts together (3 = white, 6 = black) and finish their sides the best you can. Sew these to the section closest to the legs.
   - For Squid: Sew one part 4 to each of the body parts.
 - Sew both body parts together, from B to A.
-- Sew 4 parts 2 together, from D to C. 
-  - For Squid: Sew one part 5 to each, from D to C. 
+- Sew 4 parts 2 together, from D to C.
+  - For Squid: Sew one part 5 to each, from D to C.
 - Sew both leg parts together, but only along one seam from D to C. The other stays open to fill the plushy.
 - Match up the leg parts with the body parts. Sew each leg from B/D to B/D. It is easiest to sew one leg almost to the next B/D part, stop sewing, pin the next leg, and start sewing again. The bottom part (2,5) is slightly shorter than the top part of a leg, so you have to ease it in while matching it up.
 - Fill the plushy
 - Hand sew the remaining seam
-

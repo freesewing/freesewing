@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Cornelius cycling breeches: Fabric Options"
-- - -
+
+***
 
 ### Main Fabric
 

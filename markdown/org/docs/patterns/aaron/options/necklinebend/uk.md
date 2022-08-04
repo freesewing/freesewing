@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Neckline shape"
-- - -
+
+***
 
 ![The neckline shape option on Aaron](./necklinebend.svg)
 

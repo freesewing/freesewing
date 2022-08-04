@@ -1,5 +1,6 @@
-- - -
-- - -
+***
+
+***
 
 #### Sewing patterns made to your measurements
 

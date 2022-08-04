@@ -59,11 +59,10 @@ user -> frontend
 
 ```
 
-An example graph using the **Dot** custom component
-</Dot>
+An example graph using the **Dot** custom component </Dot>
 
 Use **Dot** to add a [Graphviz](https://graphviz.org/) graph written in
-the [Dot graph description language](https://en.wikipedia.org/wiki/DOT_(graph_description_language)).
+the [Dot graph description language](https://en.wikipedia.org/wiki/DOT_\(graph_description_language\)).
 
 It is a way to include diagrams as code, making them easier to maintain and diff than
 creating graphic files by hand. These diagrams also support dark mode, translation a and
@@ -84,7 +83,7 @@ This custom component makes it easy to use [the open-color color
 scheme](https://yeun.github.io/open-color/) by using the following color names:
 
 - `oc-[color]` will use the `oc-[color]-5` midtone that's suitable for both light and
-dark mode. Eg: `oc-violet`
+  dark mode. Eg: `oc-violet`
 - `oc-[color]-[shade]` allows you to control the lightness. Eg: `oc-violet-200`
 
 <Note>
@@ -96,7 +95,7 @@ works in dark mode
 ### Using translation
 
 While freesewing.dev is only available in English, you can also use this on
-freesewing.org which uses translation. 
+freesewing.org which uses translation.
 
 You can use the `i18n:` prefix followed by the translation key. For example
 `i18n:docs` will look up the `docs` key in the default namespace. Whereas

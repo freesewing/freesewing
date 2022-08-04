@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Collar stand width"
-- - -
+
+***
 
 ![Collarstand width](collarstandwidth.svg)
 

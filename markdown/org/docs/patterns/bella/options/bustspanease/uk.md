@@ -2,7 +2,7 @@
 title: "Bust span ease"
 ---
 
----
+***
 
 ![The effect of the bust span ease option on the pattern](sample.png)
 

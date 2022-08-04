@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Collar flare"
-- - -
+
+***
 
 ![Collar flare](collarflare.svg)
 

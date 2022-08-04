@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Rise"
-- - -
+
+***
 
 This option controls the overal height of the waist.
 

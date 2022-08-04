@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Back inset"
-- - -
+
+***
 
 ![Back inset](backinset.svg)
 
