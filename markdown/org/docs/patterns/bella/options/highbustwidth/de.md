@@ -2,7 +2,7 @@
 title: "Hohe Büstenbreite"
 ---
 
----
+***
 
 ![Der Effekt der Option hohe Bustbreite auf das Schnittmuster](sample.png)
 
