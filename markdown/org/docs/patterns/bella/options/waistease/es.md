@@ -2,7 +2,7 @@
 title: "Holgura de cintura"
 ---
 
----
+***
 
 ![El efecto de la opción de facilidad de cintura en el patrón](sample.png)
 
