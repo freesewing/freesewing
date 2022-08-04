@@ -12,14 +12,13 @@ import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
 
 const expect = chai.expect
 
-
 // Test config
 testPatternConfig(
   "bob",
   new Pattern(),
   expect,
   models,
-  patterns,
+  patterns
 )
 
 // Test drafting
@@ -28,8 +27,7 @@ testPatternDrafting(
   Pattern,
   expect,
   models,
-  patterns,
-  true
+  patterns
 )
 
 // Test sampling
