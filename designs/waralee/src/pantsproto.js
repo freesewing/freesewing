@@ -151,13 +151,13 @@ export default function (part) {
 
   paths.frontTopCutOut = new Path()
     .move(points.fCutOutHip)
-    .curve(points.fCutOutHipCp1, points.fWaistAdjusted, points.fWaistSideHem)
+    .curve(points.fCutOutHipCp1, points.fWaistSideHem, points.fWaistSideHem)
     .line(points.fWaistSide)
     .setRender(false)
   paths.backTopCutOut = new Path()
   .move(points.bWaistSide)
-  .move(points.bWaistSideHem)
-  .curve(points.bWaistAdjusted, points.bCutOutHipCp2, points.bCutOutHip)
+  .line(points.bWaistSideHem)
+  .curve(points.bWaistSideHem, points.bCutOutHipCp2, points.bCutOutHip)
   .setRender(false)
 
   paths.cutout = new Path()
