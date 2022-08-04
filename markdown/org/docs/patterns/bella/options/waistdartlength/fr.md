@@ -2,7 +2,7 @@
 title: "Longueur de la pince de taille"
 ---
 
----
+***
 
 ![L'effet de l'option de la longueur de la taille sur le patron](sample.png)
 
