@@ -2,7 +2,7 @@
 title: "Ausschnitt im Nacken"
 ---
 
----
+***
 
 ![Der Effekt des Rückenausschnitts auf das Schnittmuster](sample.png)
 
