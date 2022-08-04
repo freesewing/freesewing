@@ -2,7 +2,7 @@
 title: "Arrondi de l'encolure au dos"
 ---
 
----
+***
 
 ![L'effet de l'option de découpe du cou arrière sur le motif](sample.png)
 
