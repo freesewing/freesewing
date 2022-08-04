@@ -2,7 +2,7 @@
 title: "Largeur d'épaule devant"
 ---
 
----
+***
 
 ![L'effet de l'option de largeur de l'épaule avant sur le motif](sample.png)
 
