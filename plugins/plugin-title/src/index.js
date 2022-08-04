@@ -92,7 +92,7 @@ export default {
           .attr('data-text-class', 'fill-current font-bold')
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       }
-      shift += 8
+      shift += 6
       const dateformat = require('dateformat')
       const now = new Date()
       this.points[`_${prefix}_exportDate`] = so.at
