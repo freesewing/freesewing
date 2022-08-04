@@ -2,7 +2,7 @@
 title: "Hintere Armlochschiebung"
 ---
 
----
+***
 
 ![Der Effekt der Neigung des Rückens des Armlochs auf das Schnittmuster](sample.png)
 
