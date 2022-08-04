@@ -22,10 +22,6 @@ const CoreSettingSaBool = props => {
         <SumDiv>
           <Deg />
           <span>{ t('settings:sabool.t') }</span>
-          <span className="ml-4 opacity-50">
-            [ { t(`yes`) }/
-            { t(`no`) } ]
-          </span>
         </SumDiv>
         <SecText>{t(value ? 'yes' : 'no')}</SecText>
       </SumButton>
