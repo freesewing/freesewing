@@ -2,7 +2,7 @@
 title: "Front curve"
 - - -
 
----
+***
 
 Controla la curvatura de la parte lateral interior de la copa del bikini
 
