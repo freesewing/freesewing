@@ -119,6 +119,11 @@ export default function (part) {
     .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
     .split(points.bCutOutHip)
 
+  fPaths[0].setRender(false)
+  fPaths[1].setRender(false)
+  bPaths[0].setRender(false)
+  bPaths[1].setRender(false)
+
   points.fCutOutHipCp1 = fPaths[1].ops[1].cp1.shiftFractionTowards(points.fCutOutHip, 1.25)
   points.fCutOutHipCp2 = fPaths[1].ops[1].cp1.clone()
   points.mHipCp1 = fPaths[1].ops[1].cp2.clone()
@@ -199,6 +204,7 @@ export default function (part) {
     .join(paths.cutout)
     .close()
     .attr('class', 'fabric')
+    .setRender(false)
 
   if (options.frontPocket) {
     points.frontPocketTop = points.fWaistSide
@@ -265,7 +271,9 @@ export default function (part) {
       .setRender(false)
   }
 
-  // part.render = false
+  part.render = false
+
+  console.log({part:part})
 
   return part
 }

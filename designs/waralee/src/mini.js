@@ -48,6 +48,8 @@ export default function (part) {
     .line(points.fWaistSide)
     .attr('class', 'help')
 
+  paths.seam.setRender(true)
+
   // Complete?
   if (complete) {
     macro('scalebox', { at: points.mLeg.shift(-90, 35) })

@@ -16,6 +16,8 @@ export default function (part) {
   paths.legFold = paths.leg.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
   paths.backFold = paths.back.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
 
+  paths.seam.setRender(true)
+
   // Complete?
   if (complete) {
     points.title = points.fWaistFront.shift(270, 400)

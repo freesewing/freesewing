@@ -76,6 +76,7 @@ export default function (part) {
       x: points.mWaist.x + 15,
     })
   }
+  part.render = options.showMini
 
   return part
 }
