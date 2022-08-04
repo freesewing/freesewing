@@ -2,7 +2,6 @@
 title: "Shoulder seam shift: collar side"
 - - -
 
-
 Controls the shoulder seam location on the collar side.
 
 - Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del cuello
