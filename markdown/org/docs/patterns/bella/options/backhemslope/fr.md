@@ -2,7 +2,7 @@
 title: "Pente de l'ourlet dos"
 ---
 
----
+***
 
 ![L'effet de l'option de pente de l'ourlet arrière sur le motif](sample.png)
 
