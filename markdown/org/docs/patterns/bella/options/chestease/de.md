@@ -2,7 +2,7 @@
 title: "Brustumfangszugabe"
 ---
 
----
+***
 
 ![Der Effekt der Brustpflegeoption auf das Schnittmuster](sample.png)
 
