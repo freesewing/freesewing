@@ -63,6 +63,7 @@
 #### Added
 
  - Added support for removing the title via a macro call
+ - Added a render timestamp to the title
 
 
 ## 2.21.3 (2022-07-02)
