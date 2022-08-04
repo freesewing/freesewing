@@ -59,6 +59,7 @@ export default function Pattern(config = { options: {} }) {
   this.height = 0 // Will be set after render
   this.is = '' // Will be set when drafting/sampling
   this.autoLayout = { parts: {} } // Will hold auto-generated layout
+  this.cutList = {} // Will hold the cutlist
 
   this.store = new Store(this.raise) // Store for sharing data across parts
   this.parts = {} // Parts container
@@ -191,6 +192,7 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
 Pattern.prototype.draft = function () {
   if (this.is !== 'sample') {
     this.is = 'draft'
+    this.cutList = {}
     this.raise.debug(`Drafting pattern`)
   }
   // Handle snap for pct options
@@ -229,6 +231,7 @@ Pattern.prototype.draft = function () {
       }
       try {
         this.parts[partName] = this[method](this.parts[partName])
+        if (this.parts[partName].render ) this.cutList[partName] = this.parts[partName].cut
       } catch (err) {
         this.raise.error([`Unable to draft part \`${partName}\``, err])
       }
@@ -584,9 +587,9 @@ Pattern.prototype.resolveDependencies = function (graph = this.config.dependenci
     let dependency = this.config.inject[i]
     if (typeof this.config.dependencies[i] === 'undefined') this.config.dependencies[i] = dependency
     else if (this.config.dependencies[i] !== dependency) {
-      if (typeof this.config.dependencies[i] === 'string')
+      if (typeof this.config.dependencies[i] === 'string') {
         this.config.dependencies[i] = [this.config.dependencies[i], dependency]
-      else if (Array.isArray(this.config.dependencies[i])) {
+      } else if (Array.isArray(this.config.dependencies[i])) {
         if (this.config.dependencies[i].indexOf(dependency) === -1)
           this.config.dependencies[i].push(dependency)
       } else {
@@ -669,6 +672,13 @@ Pattern.prototype.wants = function (partName) {
   return true
 }
 
+/**
+ * Returns the cutList property
+ */
+Pattern.prototype.getCutList = function () {
+  return this.cutList
+}
+
 /** Returns props required to render this pattern through
  *  an external renderer (eg. a React component)
  */
@@ -692,6 +702,7 @@ Pattern.prototype.getRenderProps = function () {
     warning: this.events.warning,
     error: this.events.error,
   }
+  props.cutList = this.cutList
   props.parts = {}
   for (let p in this.parts) {
     if (this.parts[p].render) {

@@ -499,3 +499,67 @@ it("Should find intersecting beams when a line is almost vertical", () => {
   expect(round(i.y)).to.equal(400);
 });
 
+it("Should check for valid coordinate", () => {
+  expect(utils.isCoord(23423.23)).to.equal(true);
+  expect(utils.isCoord(0)).to.equal(true);
+  expect(utils.isCoord()).to.equal(false);
+  expect(utils.isCoord(null)).to.equal(false);
+  expect(utils.isCoord('hi')).to.equal(false);
+  expect(utils.isCoord(NaN)).to.equal(false);
+});
+
+it("Should return the correct sample style", () => {
+  expect(utils.sampleStyle(0, 5)).to.equal("stroke: hsl(-66, 100%, 35%);")
+  expect(utils.sampleStyle(1, 5)).to.equal("stroke: hsl(0, 100%, 35%);")
+  expect(utils.sampleStyle(2, 5)).to.equal("stroke: hsl(66, 100%, 35%);")
+  expect(utils.sampleStyle(3, 5)).to.equal("stroke: hsl(132, 100%, 35%);")
+  expect(utils.sampleStyle(4, 5)).to.equal("stroke: hsl(198, 100%, 35%);")
+});
+
+it("Should return the correct sample styles", () => {
+  const styles = [
+    "stroke: red;",
+    "stroke: blue;",
+    "stroke: green;",
+    "stroke: pink;",
+    "stroke: orange;",
+  ]
+  for (let i=0;i<5;i++) expect(utils.sampleStyle(i, 5, styles)).to.equal(styles[i])
+});
+
+it("Should convert degrees to radians", () => {
+  expect(utils.deg2rad(0)).to.equal(0);
+  expect(round(utils.deg2rad(69))).to.equal(1.2);
+});
+
+it("Should convert radians to degrees", () => {
+  expect(utils.rad2deg(0)).to.equal(0);
+  expect(round(utils.rad2deg(69))).to.equal(3953.41);
+});
+
+it("Should shoulder return two methods for pctBasedOn", () => {
+  const result = utils.pctBasedOn('chest')
+  expect(typeof result.toAbs).to.equal("function");
+  expect(typeof result.fromAbs).to.equal("function");
+  const measurements = { chest: 1000 }
+  expect(result.toAbs(0.0123, { measurements })).to.equal(12.3)
+  expect(result.fromAbs(12.3, { measurements })).to.equal(0.0123)
+});
+
+it("Should generate a part transform", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.settings.mode = "draft";
+  let part = new pattern.Part();
+  let short = part.shorthand();
+  part.points.from = new short.Point(2, 2);
+  part.points.to = new short.Point(19, 76);
+  part.paths.test = new short.Path()
+    .move(part.points.from)
+    .line(part.points.to);
+  part.stack();
+  const transform = utils.generatePartTransform(30,60,90,true,true,part)
+  expect(transform.transform).to.equal("translate(30,60) scale(-1, 1) scale(1, -1) rotate(90)");
+  expect(transform['transform-origin']).to.equal("10.5 39")
+});
+
+

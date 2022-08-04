@@ -12,41 +12,41 @@ backPocketDepth:
   title: Глибина задньої кишені
   description: Керує глибиною задньої кишені
 backPocketFacing:
-  title: Back pocket facing
-  description: Controls whether or not to include facing on the back pockets
+  title: Зовнішня частина задньої кишені
+  description: Вказує, включати чи не включати зовнішню частину задньої кишені
 frontPocketSlantDepth:
-  title: Front pocket slant depth
-  description: Controls the depth of the (front) pocket slant
+  title: Глибина пройми передньої кишені
+  description: Керує глибиною пройми передньої кишені
 frontPocketSlantWidth:
-  title: Front pocket slant width
-  description: Controls the width of the (front) pocket slant
+  title: Ширина пройми передньої кишені
+  description: Керує шириною пройми передньої кишені
 frontPocketSlantRound:
-  title: Front pocket slant round
-  description: Controls how far from the end of the slant we start rounding into the outseam
+  title: Заокруглення пройми передньої кишені
+  description: Керує, наскільки далеко від низу пройми кишені починається заокруглення до лінії талії
 frontPocketSlantBend:
-  title: Front pocket slant bend
-  description: Controls the radius by which we round the pocket slant into the outseam
+  title: Крива пройми передньої кишені
+  description: Керує радіусом заокруглення кишені до лінії талії
 frontPocketWidth:
-  title: Front pocket width
-  description: Controls the width of the front pocket bag
+  title: Ширина передньої кишені
+  description: Керує загальною шириною мішковини передньої кишені
 frontPocketDepth:
-  title: Front pocket depth
-  description: Controls the depth of the front pocket bag
+  title: Глибина передньої кишені
+  description: Керує загальною глибиною мішковини передньої кишені
 frontPocketFacing:
-  title: Front pocket facing
-  description: Controls how far the pocket facing extends into the pocket bag
+  title: Зовнішня частина передньої кишені
+  description: Керує, наскільки глибоко зовнішня частина кишені простягається по мішковині
 beltLoops:
-  title: Belt loops
-  description: Controls the amount of belt loops
+  title: Поясні петельки
+  description: Керує загальною кількістю поясних петельок
 flyCurve:
-  title: Fly curve
-  description: Controls the curvature of the fly J-seam
+  title: Крива гульфика
+  description: Керує кривою лінією гачкоподібного шва гульфика
 flyLength:
-  title: Fly length
-  description: Controls the length of the fly
+  title: Довжина гульфика
+  description: Керує загальною довжиною гульфика
 flyWidth:
-  title: Fly width
-  description: Controls how far the J-seam of offset from the fly edge
+  title: Ширина гульфика
+  description: Керує наскільки далеко гачкоподібний шов відходить від краю гульфика
 waistbandCurve:
-  title: Waistband Curve
-  description: Controls how curved the waistband is.
+  title: Крива поясу
+  description: Керує наскільки заокругленою є крива поясу.

@@ -8,7 +8,9 @@ import conf from '../lerna.json'
 const { version } = conf
 import {
   publishedSoftware as software,
-  publishedTypes as types
+  publishedTypes as types,
+  designs,
+  plugins
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json'
@@ -34,6 +36,8 @@ const repo = {
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.js'),
+    designTests: readTemplateFile('design.test.mjs'),
+    pluginTests: readTemplateFile('plugin.test.mjs')
   },
   dirs: foldersByType(),
   contributors: fs.readFileSync(path.join(cwd, 'CONTRIBUTORS.md'), 'utf-8'),
@@ -104,6 +108,18 @@ fs.writeFileSync(
 log.write(chalk.green(" Done\n"))
 
 // Step 6: Generate tests for designs and plugins
+for (const design in designs) {
+  fs.writeFileSync(
+    path.join(repo.path, 'designs', design, 'tests', 'shared.test.mjs'),
+    mustache.render(repo.templates.designTests, { name: design })
+  )
+}
+for (const plugin in plugins) {
+  fs.writeFileSync(
+    path.join(repo.path, 'plugins', plugin, 'tests', 'shared.test.mjs'),
+    repo.templates.pluginTests,
+  )
+}
 
 
 
