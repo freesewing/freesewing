@@ -2,7 +2,7 @@
 title: "Aisance à la taille"
 ---
 
----
+***
 
 ![L'effet de l'option de facilité de taille sur le patron](sample.png)
 
