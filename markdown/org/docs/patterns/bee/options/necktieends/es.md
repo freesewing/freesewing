@@ -2,7 +2,7 @@
 title: "Neck tie ends"
 - - -
 
----
+***
 
 Si prefieres que las puntas de las cintas alrededor del cuello sean planas o acaben en punta
 
