@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Front inset"
-- - -
+
+***
 
 ![Front inset](frontinset.svg)
 

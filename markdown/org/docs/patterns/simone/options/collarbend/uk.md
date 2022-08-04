@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Collar bend"
-- - -
+
+***
 
 ![Collar bend](collarbend.svg)
 

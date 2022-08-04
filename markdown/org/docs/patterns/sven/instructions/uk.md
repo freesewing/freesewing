@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Sven sweatshirt: Sewing Instructions"
-- - -
+
+***
 
 ### Step 1: Close shoulder seams
 

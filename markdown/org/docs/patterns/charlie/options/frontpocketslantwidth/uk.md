@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Front pocket slant width"
-- - -
+
+***
 
 Controls the width by which the front pocket slant cuts into the front panel.
 

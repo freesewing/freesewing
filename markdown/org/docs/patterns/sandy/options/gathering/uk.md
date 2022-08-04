@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Gathering"
-- - -
+
+***
 
 ![Gathering](gathering.svg)
 

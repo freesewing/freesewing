@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Front dart placement"
-- - -
+
+***
 
 ![Front dart placement](frontdartplacement.svg)
 

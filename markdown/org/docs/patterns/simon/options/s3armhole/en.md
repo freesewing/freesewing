@@ -2,7 +2,6 @@
 title: "Shoulder seam shift: armhole side"
 ---
 
-
 Controls the shoulder seam location on the armhole side.
 
 - Increase this option to shift the shoulder seam forward on the armhole side

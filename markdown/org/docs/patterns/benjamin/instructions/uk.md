@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Benjamin bow tie: Sewing Instructions"
-- - -
+
+***
 
 ## Notes and tips
 

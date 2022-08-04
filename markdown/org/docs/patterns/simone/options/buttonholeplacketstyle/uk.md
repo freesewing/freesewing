@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Buttonhole placket style"
-- - -
+
+***
 
 ![Buttonhole placket style](buttonholeplacketstyle.svg)
 

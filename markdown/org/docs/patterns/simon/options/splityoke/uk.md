@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Split yoke"
-- - -
+
+***
 
 ![Split yoke](splityoke.svg)
 

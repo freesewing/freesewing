@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Collar flare"
-- - -
+
+***
 
 Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
 

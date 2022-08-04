@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Aaron A-Shirt: Sewing Instructions"
-- - -
+
+***
 
 ## Step 1: Close seams
 

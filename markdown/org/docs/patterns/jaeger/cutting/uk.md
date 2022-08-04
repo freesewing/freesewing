@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Jaeger jacket: Cutting Instructions"
-- - -
+
+***
 
 - **Main fabric**
   - Cut **2 fronts** (part 1)

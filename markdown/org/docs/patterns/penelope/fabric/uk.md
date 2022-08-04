@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Penelope pencil skirt: Fabric Options"
-- - -
+
+***
 
 ### Main Fabric
 

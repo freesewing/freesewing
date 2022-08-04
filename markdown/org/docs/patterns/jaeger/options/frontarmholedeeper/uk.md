@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Front armhole extra cutout"
-- - -
+
+***
 
 Controls how much the front of the armhole is cut deeper into the garment than the back.
 

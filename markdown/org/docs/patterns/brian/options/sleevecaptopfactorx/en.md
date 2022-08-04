@@ -2,7 +2,7 @@
 title: "Sleevecap top X"
 ---
 
----
+***
 
 ![The horizontal location of the sleevecap top](./sleevecaptopfactorx.svg)
 

@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Zipper size"
-- - -
+
+***
 
 What size zipper the pattern uses to draft.
 

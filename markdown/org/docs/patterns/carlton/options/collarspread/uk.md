@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Collar spread"
-- - -
+
+***
 
 Controls the distance between the points of the collar.
 

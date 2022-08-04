@@ -19,4 +19,3 @@ If using fold over elastic (FOE) or doing knit binding, you may wish to trim awa
 As with all knitwear and stretch fabrics, a serger/overlock will make your life easier. If you do not have one of those, don't despair. You don't really need it. You can just sew Unice with a zigzag stitch.
 
 </Tip>
-

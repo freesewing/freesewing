@@ -2,7 +2,7 @@
 title: "Cuff style"
 ---
 
----
+***
 
 This pattern supports three different cuff styles:
 
