@@ -2,7 +2,7 @@
 title: "Neck tie width"
 - - -
 
----
+***
 
 Controla el ancho de las cintas alrededor del cuello
 
