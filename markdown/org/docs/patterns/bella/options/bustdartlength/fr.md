@@ -2,7 +2,7 @@
 title: "Longueur des pinces poitrine"
 ---
 
----
+***
 
 ![L'effet de l'option de la longueur de la poitrine sur le motif](sample.png)
 
