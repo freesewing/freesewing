@@ -2,7 +2,7 @@
 title: "Lope zoom achter"
 ---
 
----
+***
 
 ![Het effect van de helling van de zoom op het patroon](sample.png)
 
