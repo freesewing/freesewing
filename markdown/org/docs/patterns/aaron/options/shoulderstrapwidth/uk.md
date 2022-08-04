@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Shoulderstrap width"
-- - -
+
+***
 
 ![The shoulder strap width option on Aaron](./shoulderstrapwidth.svg)
 

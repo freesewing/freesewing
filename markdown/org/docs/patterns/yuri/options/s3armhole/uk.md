@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Shoulder seam shift: armhole side"
-- - -
+
+***
 
 Controls the shoulder seam location on the armhole side.
 

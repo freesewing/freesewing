@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Huey hoodie: Sewing Instructions"
-- - -
+
+***
 
 <Note>
 

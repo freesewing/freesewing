@@ -32,4 +32,3 @@ you can do so by passing `false` to the macro:
 ```js
 macro('grainline', false)
 ```
-

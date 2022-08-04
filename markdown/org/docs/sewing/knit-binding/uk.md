@@ -33,11 +33,11 @@ A knit band is more common, and is what you typically find on T-shirt necklines.
 A knit binding is less common, but often used on undershirts (as in, underwear). It's the more functional option.
 
 > ##### Still confused?
-> 
+>
 > Another way to distinguish them is this: Think about what happens when you decide to widen the knit binding/band.
-> 
+>
 > On a T-shirt, widening the band at the neck will make the neck opening smaller. If you want a wider band, you will have to cut a larger hole in your T-shirt.
-> 
+>
 > On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Instead, the binding will simply lay further over the undershirt main fabric.
 
 ## Why knitwear binding requires stretch

@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Trayvon tie: Fabric Options"
-- - -
+
+***
 
 ## Tie fabric
 

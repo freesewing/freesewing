@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Shoulder seam length"
-- - -
+
+***
 
 ![The shoulder seam length option on Diana](./shoulderseamlength.svg)
 

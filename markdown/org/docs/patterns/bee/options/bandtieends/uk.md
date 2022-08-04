@@ -1,8 +1,10 @@
-- - -
-title: "Band (chest) tie ends"
-- - -
+***
 
----
+title: "Band (chest) tie ends"
+
+***
+
+***
 
 Whether you like straight or pointy ends on the tie around your chest
 

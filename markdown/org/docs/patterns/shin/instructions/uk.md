@@ -1,9 +1,11 @@
-- - -
+***
+
 title: "Shin swim trunks: Sewing Instructions"
-- - -
+
+***
 
 > ### Images coming soon
-> 
+>
 > These instructions are a work in progress, and we haven't created the illustrations yet. They will be added soon.
 
 ## Step 1: Join the backs
@@ -41,7 +43,7 @@ Mark the middle of your waistband length. Fold the waistband double, and mark th
 A bit to the left and right of this, you can add two eyelets to pass a drawstring through. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### It's best to add some reinforcement
-> 
+>
 > As swimwear fabric is slippery and thin, you might want to add some reinforcement behind these eyelets. A leftover piece of denim will do just fine.
 
 ## Step 6: Prepare the elastic
@@ -61,7 +63,7 @@ Fold your waistband double along the length with good sides out, and place the e
 Align the back of your swim trunks with the place where you joined the waistband, align the edge of the waistband with the edge of the back, and pin them together. Make certain that you pin it to the bad side of the back.
 
 > ### Mind your eyelets
-> 
+>
 > If you've made eyelets in your waistband, double check that they are placed towards the outside, not the inside of your waistband.
 
 Find the front of the waistband (easy if there's eyelets, if not just fold it double) and align that with the front seam. Pin this in place too.
@@ -77,7 +79,7 @@ It's fine to not sew too close the first time around, and once your elastic is a
 Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a twin needle or zig-zag stitch to keep the seam stretchable.
 
 > ### Fold only once, to avoid bulk
-> 
+>
 > Swimwear fabric doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
 
 ## Step 10: Thread a draw string around the waist

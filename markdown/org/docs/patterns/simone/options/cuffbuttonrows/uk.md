@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Cuff button rows"
-- - -
+
+***
 
 ![Cuff button rows](cuffbuttonrows.svg)
 

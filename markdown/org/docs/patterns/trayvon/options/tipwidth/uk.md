@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Tip width"
-- - -
+
+***
 
 ![Tip width](tipwidth.svg)
 

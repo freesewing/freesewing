@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Bella body block: Cutting Instructions"
-- - -
+
+***
 
 **Main fabric**
 
