@@ -5,6 +5,9 @@ advanced:
 paperless:
   title: Papierlos
   description: Zeichnet ein Schnittmuster mit allen benötigten Dimensionen, sodass es direkt auf den Stoff oder ein anderes Medium übertragen werden kann, ohne es auszudrucken
+sabool:
+  title: Include seam allowance
+  description: Controls whether or not to include seam allowance in your pattern
 sa:
   title: Nahtzugabe
   description: Steuert die Breite der Nahtzugabe, die in deinem Schnittmuster enthalten ist

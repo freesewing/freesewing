@@ -5,6 +5,9 @@ advanced:
 paperless:
   title: Sin papel
   description: Dibuja un patrón con todas las dimensiones incluidas para que puedas transferirlo sobre tela u otro medio sin la necesidad de imprimir
+sabool:
+  title: Include seam allowance
+  description: Controls whether or not to include seam allowance in your pattern
 sa:
   title: Margen de costura
   description: Controla la cantidad de margen de costura incluido en tu patrón
