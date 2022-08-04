@@ -2,7 +2,7 @@
 title: "Lengte busteneep"
 ---
 
----
+***
 
 ![Het effect van de lengte van de neep op het patroon](sample.png)
 
