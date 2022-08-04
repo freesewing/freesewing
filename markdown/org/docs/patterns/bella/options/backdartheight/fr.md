@@ -2,7 +2,7 @@
 title: "Hauteur de pince dos"
 ---
 
----
+***
 
 ![L'effet de l'option de hauteur de la jauge arrière sur le motif](sample.png)
 
