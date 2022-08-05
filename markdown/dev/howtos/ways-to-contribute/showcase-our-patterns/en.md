@@ -42,7 +42,7 @@ Create an issue [on Github](https://github.com/freesewing/freesewing/issues/new?
 
 ### Email
 
-Email your pictures — or a link to them — to <showcase@freesewing.org>.
+Email your pictures — or a link to them — to [showcase@freesewing.org](showcase@freesewing.org).
 
 ## Tips for great pictures
 

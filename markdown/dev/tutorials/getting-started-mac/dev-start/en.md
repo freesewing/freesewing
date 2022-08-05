@@ -28,7 +28,8 @@ This is all you need to work on existing designs. If you'd like to add a new des
 yarn new design
 ```
 
-Just make sure to re-start the lab afterwards with `yarn lab` </Tip>
+Just make sure to re-start the lab afterwards with `yarn lab`
+</Tip>
 
 ## Standalone development
 

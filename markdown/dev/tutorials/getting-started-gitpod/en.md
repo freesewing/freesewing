@@ -12,4 +12,5 @@ https://gitpod.io/#https://github.com/freesewing/freesewing
 We recommend that you fork our repository so you can push changes to the repository.
 To do so, simple adapt the URL above as follows:
 
-https://gitpod.io/#url-to-your-fork </Tip>
+https://gitpod.io/#url-to-your-fork
+</Tip>

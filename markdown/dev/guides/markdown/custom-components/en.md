@@ -59,7 +59,8 @@ user -> frontend
 
 ```
 
-An example graph using the **Dot** custom component </Dot>
+An example graph using the **Dot** custom component
+</Dot>
 
 Use **Dot** to add a [Graphviz](https://graphviz.org/) graph written in
 the [Dot graph description language](https://en.wikipedia.org/wiki/DOT_\(graph_description_language\)).
