@@ -18971,10 +18971,10 @@ react-input-autosize@^3.0.0:
   dependencies:
     prop-types "^15.5.8"
 
-react-instantsearch-core@6.30.3:
-  version "6.30.3"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.30.3.tgz#10196f98f3d16204d107a719492867a0c4911f6a"
-  integrity sha512-8iz94QJ289DHmkpRh4BwrsMVQnQba74jYGwT3vQqorPPaY4JY5v/lzKxK+S+9ZyylHnDf9y3Bex01Qk5r8gNyw==
+react-instantsearch-core@6.31.0:
+  version "6.31.0"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-core/-/react-instantsearch-core-6.31.0.tgz#3a877da305e2320585c152ca73e82175ec0b5fc5"
+  integrity sha512-iHDdcVi9mh104u+HesmylsdKWvBrhV/IA+Augx4QOe4PYHVZ04Us46WEuu9XKmA0HObjPzU/6JRRVOL2KKrQXQ==
   dependencies:
     "@babel/runtime" "^7.1.2"
     algoliasearch-helper "^3.10.0"
@@ -18982,16 +18982,16 @@ react-instantsearch-core@6.30.3:
     react-fast-compare "^3.0.0"
 
 react-instantsearch-dom@^6.18.0:
-  version "6.30.3"
-  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.30.3.tgz#ab7af7100564a50515dc8d971d993335fb974c8d"
-  integrity sha512-ZIXC9ZcI/oIvWUC8GUwSNkZfSGBdlncGsgLrNXyb//w37O1b1Kbs8k4MrOK6WCM/TmLkJRPnuH0M+iSvbgNDtw==
+  version "6.31.0"
+  resolved "https://registry.yarnpkg.com/react-instantsearch-dom/-/react-instantsearch-dom-6.31.0.tgz#81a82fdc73430e9a152d2ab5a0c50352a6b41d1a"
+  integrity sha512-HMjKVHDYSlAir4A76nmEkD6e1bxC2mX3JRd0s3TMVj+VHHdRHJkMxXkegCs23Qguk8tJeZo60RvZcAz9jbuEcg==
   dependencies:
     "@babel/runtime" "^7.1.2"
     algoliasearch-helper "^3.10.0"
     classnames "^2.2.5"
     prop-types "^15.6.2"
     react-fast-compare "^3.0.0"
-    react-instantsearch-core "6.30.3"
+    react-instantsearch-core "6.31.0"
 
 react-intl@4.5.0:
   version "4.5.0"
