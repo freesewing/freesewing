@@ -5,8 +5,11 @@ advanced:
 paperless:
   title: Без паперу
   description: Створює викрійку з урахуванням масштабу для перенесення на тканину чи інший матеріал без потреби друку
+sabool:
+  title: Include seam allowance
+  description: Controls whether or not to include seam allowance in your pattern
 sa:
-  title: Припуск на шов
+  title: Seam allowance size
   description: Визначає розмір припусків на шви в Вашій викрійці
 locale:
   title: Мова
