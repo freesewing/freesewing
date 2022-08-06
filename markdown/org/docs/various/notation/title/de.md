@@ -2,7 +2,7 @@
 title: Titel
 ---
 
-Jedes Musterstück hat einen Titel, der Ihnen die Nummer und den Namen des Stücks sowie den Namen des Musters mitteilt:
+Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name and a timestamp of when the pattern was drafted:
 
 <Legend part="title">
 
