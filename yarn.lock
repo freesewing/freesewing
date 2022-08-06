@@ -16285,9 +16285,9 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
 netlify-cli@^10.3.3:
-  version "10.14.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.14.0.tgz#12e18b8be15ddcfa42098fb06752b0db3a839147"
-  integrity sha512-8o29htTBmzauZI+hmDf5JJGRYJl/Eo75TF6MKLyqdOyt0HPf4qv92sEkKs0kzY5rv24t9sxyYlQPxnvngzRISQ==
+  version "10.15.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.15.0.tgz#e8b182d92790b986e4202edd40e64715c4d97862"
+  integrity sha512-Z/aWnI/uOvW3hoXJtsCo8i62pwqEfoUJVafMr2zXdANb6XZ0OuQAEZbqbLX/PNc269GBHkkiPamsfeMepK5COQ==
   dependencies:
     "@netlify/build" "^27.8.1"
     "@netlify/config" "^18.1.2"
@@ -16360,7 +16360,7 @@ netlify-cli@^10.3.3:
     multiparty "^4.2.1"
     netlify "^12.0.0"
     netlify-headers-parser "^6.0.2"
-    netlify-onegraph-internal "0.4.1"
+    netlify-onegraph-internal "0.4.2"
     netlify-redirect-parser "^13.0.5"
     netlify-redirector "^0.2.1"
     node-fetch "^2.6.0"
@@ -16409,13 +16409,14 @@ netlify-headers-parser@^6.0.2:
     path-exists "^5.0.0"
     toml "^3.0.0"
 
-netlify-onegraph-internal@0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/netlify-onegraph-internal/-/netlify-onegraph-internal-0.4.1.tgz#4ef465da036f5e0ffb14908a6895ac4dfdf1f167"
-  integrity sha512-b+9gNOJHUeFZ9DoUDYuOLxMhtfIibEO6PZKSj3Xf5TtV9k536uX2c963kldb3VQ2HfIv9S5H5iirgkXcJfzXHw==
+netlify-onegraph-internal@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/netlify-onegraph-internal/-/netlify-onegraph-internal-0.4.2.tgz#06e41331e7f79a84dff8787b6eef2771f7a8428f"
+  integrity sha512-3TGD/s2FGjx9NcOcMPMMUxamy3IVY9O0ZZ176FuHVDmLAc5l8mj0ZNoUbhdrXfZjes62Gt6/YynCJxGShE6oUA==
   dependencies:
     graphql "16.0.0"
     node-fetch "^2.6.0"
+    rusha "^0.8.14"
     uuid "^8.3.2"
 
 netlify-redirect-parser@13.0.5, netlify-redirect-parser@^13.0.5:
@@ -20773,6 +20774,11 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   integrity sha512-ntymy489o0/QQplUDnpYAYUsO50K9SBrIVaKCWDOJzYJts0f9WH9RFJkyagebkw5+y1oi00R7ynNW/d12GBumg==
   dependencies:
     aproba "^1.1.1"
+
+rusha@^0.8.14:
+  version "0.8.14"
+  resolved "https://registry.yarnpkg.com/rusha/-/rusha-0.8.14.tgz#a977d0de9428406138b7bb90d3de5dcd024e2f68"
+  integrity sha512-cLgakCUf6PedEu15t8kbsjnwIFFR2D4RfL+W3iWFJ4iac7z4B0ZI8fxy4R3J956kAI68HclCFGL8MPoUVC3qVA==
 
 rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.6.0, rxjs@^6.6.2:
   version "6.6.7"
