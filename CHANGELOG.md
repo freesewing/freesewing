@@ -3,6 +3,12 @@
 
 ## Unreleased
 
+### breanna
+
+#### Fixed
+
+ - Fixed bug where a large shoulder slope could cause an error. Fixes [#2516](https://github.com/freesewing/freesewing/issues/2516)
+
 ### brian
 
 #### Fixed
