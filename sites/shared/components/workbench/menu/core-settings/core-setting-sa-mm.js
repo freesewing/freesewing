@@ -14,7 +14,7 @@ const CoreSettingMm = props => {
     const newVal = parseFloat(evt.target.value)
 
     setValue(newVal)
-    if (props.gist.sa) props.setGist({
+    if (props.gist.saBool) props.setGist({
       ...props.gist,
       saMm: newVal,
       sa: newVal,

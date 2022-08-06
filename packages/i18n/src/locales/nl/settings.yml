@@ -5,6 +5,9 @@ advanced:
 paperless:
   title: Papierloos
   description: Hiermee tekent u een patroon met alle afmetingen zodat u het op stof of een ander medium kunt overbrengen zonder dat u het hoeft af te drukken
+sabool:
+  title: Include seam allowance
+  description: Controls whether or not to include seam allowance in your pattern
 sa:
   title: Naadtoeslag
   description: Bepaalt de hoeveelheid naadtoeslag die is inbegrepen in uw patroon
