@@ -3,15 +3,13 @@ title: Getting started on Windows
 order: 30
 ---
 
-<Comment by='joost'> 
-### Windows support is community-only
+<Warning>
+Official support for FreeSewing is provided for Linux, Mac, and BSD-based operating systems.
+This _Getting started on Windows_ tutorial was written by FreeSewing community members and should be considered unofficial.
+However, if you encounter issues with this tutorial or require assistance with other Microsoft Windows issues, please feel free to [ask for help](/howtos/help) and our community members will be happy to assist you!
+</Warning>
 
-As FreeSewing maintainer, I provide support for FreeSewing developers on Linux,
-Mac, and BSD-based operating systems.
-
-I do not provide support for Microsoft Windows. Windows support and
-documentation is provioded by the community, if at all.  
-</Comment>
+You will first need to set up your development system either using Windows Subsystem for Linux or directly in Windows. Then, you can setup and start the FreeSewing development environment.
 
 ## Setting up a development environment using Windows Subsystem for Linux (WSL) and Visual Studio Code (VSCode)
 
@@ -124,60 +122,6 @@ this guide you have already done steps 1 and 2, you will only need to install
 the [remote development
 extension](https://aka.ms/vscode-remote/download/extension))
 
-### Setting up the FreeSewing development environment (WSL)
-
-<Warning> 
-This documentation dates back to the legacy way of setting up our
-development environment.
-
-Once you have NodeJS up and running, I recommend switching to the
-[Mac](getting-started-mac/dev-setup) or
-[Linux](/tutorials/getting-started-linux/dev-setup) guide.  
-</Warning>
-
-If you've chosen to use VSCode as your IDE open VSCode, and inside VSCode open
-the folder you wish to contain the pattern (e.g.
-`documents/my-freesewing-patterns`). Ensure VSCode Remote is active then open a
-terminal (this will automatically set your working directory to the folder open
-in VSCode) and run `npx create-freesewing-pattern`. If you are using a different
-IDE or just wish to use a bare terminal then you will need to navigate to the
-folder and run the same command.
-
-This script will prompt you for certain options. Only "Pattern name" is
-mandatory, the other prompts are optional and/or suggest sensible defaults. You
-can change all of these later. It's just to get you started. If you're not sure
-what to fill in you can stick with the defaults or leave them blank.
-
-- **Language**: Use the arrow keys to chose the language of your choice
-- **Pattern name**: This will be the name of your pattern, but also the name of
-  the folder we'll setup for you. If you're just kicking the tires, something
-  like `test` will do you fine.
-- **description**: A description of your pattern. It's not mandatory.
-- **Pattern type**: Use the arrow keys to chose either `block` or `pattern`.
-  Choose `pattern` if you're not sure what to pick.
-- **department**: Use the arrow keys to pick a department like `menswear`,
-  `womenswear` or `accessories`. This is is only relevant if you decide to
-  publish your pattern later. But by that time you will have learned how to
-  change this.
-- **Author**: You can enter your name, or leave this blank for now.
-- **GitHub repository**: You can leave this blank for now.
-- **Package manager**: Choose either `npm` or `yarn` as your package manager. If
-  you're not sure, pick `npm`.
-
-### Start the development environment (WSL)
-
-After this process completes you will be ready to run the development
-environment.
-
-Navigate to the `example` folder and run `npm start`/`yarn start` to launch the
-development environment.
-
-<Note> 
-Your browser will not automatically open if you are running the
-freesewing example application inside the WSL environment. You will need to
-navigate to the URL shown in your browser manually (your terminal may let you
-click on the link to open it).  
-</Note>
 
 ## Setting up a development environment in Windows.
 
@@ -190,7 +134,7 @@ will take you to the latest release which provides an installer you can download
 and run. Once nvm-windows is installed you will be able to continue with the
 rest of this process.
 
-### Install node
+### Install Node (and optionally Yarn)
 
 Open a Powershell terminal or command prompt. Run `nvm ls available` to show
 versions that can be installed. Choose the appropriate version (you should use
@@ -214,48 +158,66 @@ alternative package manager which makes builds faster, especially for monolithic
 projects like FreeSewing. If you'd like to install yarn run (`npm install yarn
 -g`) (optional).
 
-### Setting up the FreeSewing development environment
+## Setting up the FreeSewing development environment
 
-<Warning> 
-This documentation dates back to the legacy way of setting up our
-development environment.
+In VSCode or in a terminal, navigate to the folder you wish to contain your new patterns (e.g. `D:\Documents\my-freesewing-patterns`). Inside this directory run `npx @freesewing/new-design`.
 
-Once you have NodeJS up and running, I recommend switching to the
-[Mac](getting-started-mac/dev-setup) or
-[Linux](/tutorials/getting-started-linux/dev-setup) guide.  
-</Warning>
+After you've answered [some questions](#questions), it will take a while to set everything up.
+When it's done, you will have a new folder with the development environment inside.
 
-Open a terminal, then navigate to the folder you wish to contain the pattern
-(e.g. `D:\Documents\my-freesewing-patterns`). Inside this directory run `npx
-create-freesewing-pattern`.
+<Tip compact>The folder will have the name you chose above.</Tip>
 
-This script will prompt you for certain options. Only "Pattern name" is
-mandatory, the other prompts are optional and/or suggest sensible defaults. You
-can change all of these later. It's just to get you started. If you're not sure
-what to fill in you can stick with the defaults or leave them blank.
+<Note>
+### Questions
 
-- **Language**: Use the arrow keys to chose the language of your choice
-- **Pattern name**: This will be the name of your pattern, but also the name of
-  the folder we'll setup for you. If you're just kicking the tires, something
-  like `test` will do you fine.
-- **description**: A description of your pattern. It's not mandatory.
-- **Pattern type**: Use the arrow keys to chose either `block` or `pattern`.
-  Choose `pattern` if you're not sure what to pick.
-- **department**: Use the arrow keys to pick a department like `tops`, `bottoms`
-  or `accessories`. This is is only relevant if you decide to publish your
-  pattern later. But by that time you will have learned how to change this.
-- **Author**: You can enter your name, or leave this blank for now.
-- **GitHub repository**: You can leave this blank for now.
-- **Package manager**: Choose either `npm` or `yarn` as your package manager. If
-  you're not sure, pick `npm`.
+#### What template to use
 
-### Start the development environment
+Use `From scratch` unless you want to start from our of our blocks:
 
-After this process completes you will be ready to run the development
-environment. In the current terminal (or a new window if you prefer) you will
-need to build the package. Navigate to the folder you created during the
-previous step (whatever you provided for the "Pattern name" option) and then to
-the `example` folder inside this folder, then run `npm start` or `yarn start`
-depending on the build system you chose. This will build the pattern package
-which is used by the development instance, build the example application, and
-start a local web server instance so you can test your changes.
+- Use `Extend Brian` to start from [Brian](https://freesewing.org/designs/brian)
+- Use `Extend Bent` to start from [Bent](https://freesewing.org/designs/bent)
+- Use `Extend Bella` to start from [Bella](https://freesewing.org/designs/bella)
+- Use `Extend Breanna` to start from [Breanna](https://freesewing.org/designs/breanna)
+- Use `Extend Titan` to start from [Titan](https://freesewing.org/designs/titan)
+
+#### What name to use
+
+This will become the name of your design. Stick to \[a-z] here to avoid problems.
+
+If you're not certain what to pick, just mash some keys, it doesn't matter.
+
+#### What package manager to use
+
+Chose `npm` if you don't have `yarn` are when you're not sure what the heck `yarn` is.
+
+</Note>
+
+## Start the development environment
+
+You will have a new folder that has the name you picked for your design.
+If you chose `test`, you will have a folder named `test`.
+If you chose `banana`, you'll have a folder named `banana`.
+(Within this new folder, the `design` subfolder holds your design's configuration file and source code.
+You can ignore all other subfolders and files; they are part of the development environment.)
+
+To start the development environment, navigate to the folder that was created
+and run `npm run dev` (or `yarn dev` if you're using Yarn as a package manager).
+
+Then open your browser and go to http://localhost:8000
+
+<Tip>
+The development environment will watch for any changes you make to
+the pattern's source code or configuration.
+When you do, it will update automatically in your browser.
+</Tip>
+
+<Note>
+
+##### Yay, you're done!
+
+All you have to do now is design your pattern.
+Thankfully, we have a tutorial for that too:
+
+- [Pattern design tutorial](/tutorials/pattern-design/): A step-by-step guide to designing your first pattern
+
+</Note>
