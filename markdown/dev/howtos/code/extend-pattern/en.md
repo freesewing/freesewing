@@ -1,7 +1,5 @@
 ---
 title: Create a new design based on an existing design
-for: developers
-about: Shows how to create a variation of a pre-existing design
 ---
 
 <Note>
@@ -18,27 +16,42 @@ about: Shows how to create a variation of a pre-existing design
 
 To be able to extend existing patterns, you will have to access them on your local machine. There are two ways to do this:
 
-- add needed dependencies when using `npx create-freesewing-pattern`
+- add needed dependencies when using `npx @freesewing/new-design`
 - create your new pattern in a clone of the [freesewing monorepo](https://github.com/freesewing/freesewing)
 
-### When using `npx create-freesewing-pattern`
+### When using `npx @freesewing/new-design`
 
-If you want to use existing patterns when creating your new pattern with `npx create-freesewing-pattern`, you have to install the needed dependencies.\
-Let's say you want to extend Brian.\
-In your freshly created pattern folder, you now have to run
+If you want to use one of our blocks, you can simply pick that option when you run `npx @freesewing/new-design`.
+Doing so will set everything up for you, so you won't have to worry about a thing.
+
+If you want to extend an existing design, you'll have to do some work yourself.
+
+#### Start from scratch
+
+First step is to spin up the development environment. Pick *from scratch* when prompted:
 
 ```bash
-npm install --save @freesewing/brian
+npx @freesewing/new-design
 ```
 
-This will install Brian as a dependency, which you can then access in your pattern (see [examples](/howtos/code/extend-pattern/#examples) below on how to do that).\
-This has to be repeated for every new pattern you create.
+### Install dependencies
+
+Let's assume you want to extend **Simon**. You will first need to install it as a dependency.
+We also need to install **Brian** since Simon is based on Brian:
+
+```bash
+npm install --save @freesewing/simon @freesewing/brian
+```
+
+This will install both Simon and Brian as a dependency, which you can then access in your pattern.
 
 <Tip>
-
-Some packages need more than one dependency. Carlton, for example, is based on Bent, which in turn is based on Brian. You will have to install all dependencies in the way shown above. If something is still missing, error messages will tell you what you still need to install.
-
+If the design you extend relies on a design you did not install, error messages will tell you what you are missing
 </Tip>
+
+### Import your dependencies
+
+<Fixme>Complete this documentation</Fixme>
 
 ### Using the freesewing monorepo
 
