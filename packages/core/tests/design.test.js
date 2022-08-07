@@ -21,7 +21,7 @@ it("Design constructor should return pattern constructor", () => {
   expect(pattern.settings.options.percentage).to.equal(0.3);
 });
 
-it("Design constructor should load single plugin", () => {
+it("Design constructor should load single plugin (legacy)", () => {
   let plugin = {
     name: "example",
     version: 1,
@@ -37,7 +37,23 @@ it("Design constructor should load single plugin", () => {
   expect(pattern.hooks.preRender.length).to.equal(1);
 });
 
-it("Design constructor should load array of plugins", () => {
+it("Design constructor should load single plugin (2022)", () => {
+  let plugin = {
+    name: "example",
+    version: 1,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example", version);
+      }
+    }
+  };
+
+  let design = new freesewing.Design({plugins: plugin});
+  let pattern = new design();
+  expect(pattern.hooks.preRender.length).to.equal(1);
+});
+
+it("Design constructor should load array of plugins (legacy)", () => {
   let plugin1 = {
     name: "example1",
     version: 1,
@@ -62,7 +78,32 @@ it("Design constructor should load array of plugins", () => {
   expect(pattern.hooks.preRender.length).to.equal(2);
 });
 
-it("Design constructor should load conditional plugin", () => {
+it("Design constructor should load array of plugins (2022)", () => {
+  let plugin1 = {
+    name: "example1",
+    version: 1,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example1", version);
+      }
+    }
+  };
+  let plugin2 = {
+    name: "example2",
+    version: 2,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example2", version);
+      }
+    }
+  };
+
+  let design = new freesewing.Design( { plugins: [plugin1, plugin2] });
+  let pattern = new design();
+  expect(pattern.hooks.preRender.length).to.equal(2);
+});
+
+it("Design constructor should load conditional plugin (legacy)", () => {
   const plugin = {
     name: "example",
     version: 1,
@@ -78,7 +119,23 @@ it("Design constructor should load conditional plugin", () => {
   expect(pattern.hooks.preRender.length).to.equal(1);
 });
 
-it("Design constructor should not load conditional plugin", () => {
+it("Design constructor should load conditional plugin (2022)", () => {
+  const plugin = {
+    name: "example",
+    version: 1,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example", version);
+      }
+    }
+  };
+  const condition = () => true
+  const design = new freesewing.Design({ conditionalPlugins: { plugin, condition } });
+  const pattern = new design();
+  expect(pattern.hooks.preRender.length).to.equal(1);
+});
+
+it("Design constructor should not load conditional plugin (legacy)", () => {
   const plugin = {
     name: "example",
     version: 1,
@@ -94,7 +151,23 @@ it("Design constructor should not load conditional plugin", () => {
   expect(pattern.hooks.preRender.length).to.equal(0);
 });
 
-it("Design constructor should load multiple conditional plugins", () => {
+it("Design constructor should not load conditional plugin (2022)", () => {
+  const plugin = {
+    name: "example",
+    version: 1,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example", version);
+      }
+    }
+  };
+  const condition = () => false
+  const design = new freesewing.Design({ conditionalPlugins: { plugin, condition } });
+  const pattern = new design();
+  expect(pattern.hooks.preRender.length).to.equal(0);
+});
+
+it("Design constructor should load multiple conditional plugins (legacy)", () => {
   const plugin = {
     name: "example",
     version: 1,
@@ -110,6 +183,26 @@ it("Design constructor should load multiple conditional plugins", () => {
     { plugin, condition: condition1 },
     { plugin, condition: condition2 },
   ]);
+  const pattern = new design();
+  expect(pattern.hooks.preRender.length).to.equal(1);
+});
+
+it("Design constructor should load multiple conditional plugins (2022)", () => {
+  const plugin = {
+    name: "example",
+    version: 1,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example", version);
+      }
+    }
+  };
+  const condition1 = () => true
+  const condition2 = () => false
+  const design = new freesewing.Design({ conditionalPlugins:  [
+    { plugin, condition: condition1 },
+    { plugin, condition: condition2 },
+  ]});
   const pattern = new design();
   expect(pattern.hooks.preRender.length).to.equal(1);
 });
@@ -209,7 +302,7 @@ it("Design constructor should handle Simon", () => {
   let pattern = new design();
 });
 
-it("Design constructor should add default hide() method to options", () => {
+it("Pattern constructor should add default hide() method to options", () => {
   const design = new freesewing.Design({
     foo: "bar",
     options: {
@@ -233,3 +326,19 @@ it("Design constructor should add default hide() method to options", () => {
   expect(pattern.config.options.degree.hide()).to.be.false
   expect(pattern.config.options.withHide.hide(pattern.settings)).to.be.true
 })
+
+it("Should warn when passing plugins both as parameter and in the config", () => {
+  const design = new freesewing.Design({plugins: [{}]}, {});
+  expect(design.config.warnings.length).to.equal(2)
+  expect(design.config.warnings[0]).to.equal('Passing plugins to the Design constructor both as a second parameter and in the config is unsupported')
+  expect(design.config.warnings[1]).to.equal('Ignoring plugins passed as parameter. Only config.plugins will be used.')
+})
+
+it("Should warn when passing conditionalPlugins both as parameter and in the config", () => {
+  const design = new freesewing.Design({conditionalPlugins: [{}]}, false, {});
+  expect(design.config.warnings.length).to.equal(2)
+  expect(design.config.warnings[0]).to.equal('Passing conditionalPlugins to the Design constructor both as a third parameter and in the config is unsupported.')
+  expect(design.config.warnings[1]).to.equal('Ignoring conditionalPlugins passes as parameter. Only config.conditionalPlugins will be used.')
+})
+
+

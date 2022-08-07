@@ -19,6 +19,7 @@ it("Pattern constructor should initialize object", () => {
   expect(pattern.settings.options.percentage).to.equal(0.3);
 });
 
+
 it("Should load percentage options", () => {
   let pattern = new freesewing.Pattern({
     options: {

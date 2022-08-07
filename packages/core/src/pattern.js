@@ -11,7 +11,8 @@ import Attributes from './attributes'
 import pkg from '../package.json'
 
 export default function Pattern(config = { options: {} }) {
-  // Default settings
+
+  // Apply default settings
   this.settings = {
     complete: true,
     idPrefix: 'fs-',
@@ -25,15 +26,16 @@ export default function Pattern(config = { options: {} }) {
     absoluteOptions: {},
   }
 
-  // Events store and raise methods
+  // Object to hold events
   this.events = {
     info: [],
     warning: [],
     error: [],
     debug: [],
   }
+
+  // Raise methods - Make events and settings avialable in them
   const events = this.events
-  // Make settings available in the raise.debug method
   const settings = this.settings
   this.raise = {
     info: function (data) {
@@ -50,10 +52,13 @@ export default function Pattern(config = { options: {} }) {
       if (settings.debug) events.debug.push(data)
     },
   }
+
+  // Say hi
   this.raise.info(
     `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${pkg.version}\``
   )
 
+  // More things that go in a pattern
   this.config = config // Pattern configuration
   this.width = 0 // Will be set after render
   this.height = 0 // Will be set after render
