@@ -12,13 +12,16 @@ export default function (part) {
     .curve(paths.panel1.ops[1].cp1, paths.panel1.ops[1].cp2, paths.panel1.ops[1].to)
   points.bottomABsplit = bottom.shiftFractionAlong(0.3)
 
-  paths.panel1a = bottom
-    .split(points.bottomABsplit)[0]
+  paths.panel1a_nonfold = new Path()
+    .move(points.bottomCF)
+    .join(bottom.split(points.bottomABsplit)[0])
     .line(points.topABsplit)
     .join(top.split(points.topABsplit)[1])
-    .line(points.bottomCF)
+    .setRender(false)
+  paths.panel1a = paths.panel1a_nonfold.clone()
     .close()
     .attr('class', 'fabric')
+    .setRender(true)
   paths.panel1b = bottom
     .split(points.bottomABsplit)[1]
     .curve(points.hipsGap1Cp, points.waistGap1LeftCp1, points.waistGap1Left)
@@ -35,7 +38,11 @@ export default function (part) {
   // Complete pattern?
   if (complete) {
     if (sa) {
-      paths.saA = paths.panel1a.offset(sa).attr('class', 'fabric sa')
+      paths.saA = paths.panel1a_nonfold.offset(sa).attr('class', 'fabric sa')
+      paths.saA
+        .line(points.topCF)
+        .move(points.bottomCF)
+        .line(paths.saA.start())
       paths.saB = paths.panel1b.offset(sa).attr('class', 'fabric sa')
     }
     macro('cutonfold', {

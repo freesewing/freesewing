@@ -24,6 +24,9 @@ Unreleased:
     brian:
       - Make s3 options sticky to zero below 10% to avoid path split issues.
         Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
+    cathrin:
+      - Removed seam allowance from Part1a foldline.
+        Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
     simon:
       - Fix issue with boxPleat and yoke
         Fixes [#2400](https://github.com/freesewing/freesewing/issues/2400)
