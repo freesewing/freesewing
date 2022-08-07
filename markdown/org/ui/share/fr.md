@@ -4,7 +4,7 @@ title: Partage de liens
 
 Faites connaître FreeSewing au monde entier. Vous pouvez fournir un lien vers une page spécifique, ou vers la page d'accueil : https://fr.freesewing.org/
 
-You can use the images below, and make sure to [use the relevant hashtags](/community/hashtags/).
+Vous pouvez utiliser les images ci-dessous, et vous assurer d’[utiliser les hashtags pertinents](/community/hashtags/).
 
 <img src="/share/en.wide.png" alt="Nous sommes FreeSewing" style="max-height: 25vh;" class="shadow" />
 
