@@ -85,7 +85,7 @@ You can now put your cuffs aside, we'll attach them later.
 
 ![Sew collar and undercollar together](3a.png)
 
-Place both collar parts with the good sides together, and sew them together at the standard seam allowance.
+Place both collar parts with the _good sides together_, and sew them together at the standard seam allowance.
 
 #### Trim seam allowance
 
