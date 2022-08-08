@@ -461,9 +461,9 @@ Spread your shirt open so that both fronts and back lie flat with their good sid
 
 Now place your sleeve on top with the good side down, matching the top of the sleeve with the shoulder seam.
 
-> Be careful, your sleeve is not symmetric, so be sure to have the ⊗ notch (and cuff guard) on the back side, and the ⊙ notch on the front side.
+> Be careful, your sleeve is not symmetric, so be sure to have the back notch (⊗) and cuff guard on the back side, and the front notch (⊙) on the front side.
 >
-> Also note that the ⊗ notch on the back of your sleeve does not have a corresponding notch on the back of the shirt. That's because it should match up with the seam where your yoke joins the back.
+> Also note that the back notch (⊗) on the sleeve does not have a corresponding notch on the back of the shirt. That's because it should match up with the seam where your yoke joins the back.
 
 You now need to pin the sleeve to the armhole. To do so, make sure to:
 
