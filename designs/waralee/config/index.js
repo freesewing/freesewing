@@ -12,6 +12,7 @@ export default {
     options: ['showMini'],
     fit: ['fitWaist','backRaise', 'waistRaise'],
     style: [
+      'separateWaistband',
       'hemWidth',
       'legShortening',
       'waistOverlap',
@@ -75,5 +76,6 @@ export default {
     backRaise: { pct: 10, min: 0, max: 25 },
     showMini: { bool: true },
     fitWaist: { bool: true },
+    separateWaistband: { bool: false },
   },
 }

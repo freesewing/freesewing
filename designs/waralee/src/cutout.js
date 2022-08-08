@@ -17,7 +17,7 @@ export default function (part) {
   paths.seam = new Path()
     .move(points.mWaist1)
     .line(points.mWaist2)
-    .line(points.bWaistSide)
+    .line(options.separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
     .join(paths.backTopCutOut)
     .join(paths.backBottomCutOut)
     .join(paths.frontBottomCutOut)
@@ -43,7 +43,7 @@ export default function (part) {
 
     if (sa) {
       paths.seamAlternate = new Path()
-        .move(points.bWaistSide)
+        .move(options.separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
         .join(paths.backTopCutOut)
         .join(paths.backBottomCutOut)
         .join(paths.frontBottomCutOut)
@@ -58,12 +58,12 @@ export default function (part) {
     macro('hd', {
       from: points.fWaistSide,
       to: points.mWaist,
-      y: points.mWaist.y,
+      y: (options.separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('hd', {
       from: points.mWaist,
       to: points.bWaistSide,
-      y: points.mWaist.y,
+      y: (options.separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('vd', {
       from: points.mWaist1,

@@ -2,15 +2,17 @@ export default function (part) {
   let { options, points, Path, paths, Snippet, snippets, complete, sa, paperless, macro, store } =
     part.shorthand()
 
+  if( false == options.separateWaistband ) {
   paths.waistFoldBack = new Path()
   .move(points.bWaistSideHem)
-  .line(points.bWaistBack.shift(270, store.get('waistBand')))
-  .line(points.bWaistBackOverlap.shift(270, store.get('waistBand')))
+  .line(options.separateWaistband ? points.bWaistBackSeam : points.bWaistBackHem)
+  .line(options.separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlapHem)
     .attr('class', 'fabric stroke-sm')
   paths.waistFoldFront = new Path()
   .move(points.fWaistSideHem)
-  .line(points.fWaistFrontOverlap.shift(270, store.get('waistBand')))
+  .line(points.fWaistFrontOverlapHem)
     .attr('class', 'fabric stroke-sm')
+  }
 
   paths.frontFold = paths.front.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
   paths.legFold = paths.leg.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
@@ -41,87 +43,96 @@ export default function (part) {
  
   // Paperless?
   if (paperless) {
+    let fWaistSide = (options.separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
+    let bWaistSide = (options.separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
     macro('hd', {
-      from: points.fWaistSide,
-      to: points.mWaist,
-      y: points.fWaistSide.y,
+      from: fWaistSide,
+      to: points.mWaist1,
+      y: fWaistSide.y,
     })
     macro('hd', {
       from: points.fWaistFrontOverlap,
-      to: points.mWaist,
-      y: points.fWaistSide.y - sa - 15,
+      to: points.mWaist1,
+      y: fWaistSide.y - sa - 15,
     })
     macro('hd', {
       from: points.mWaist,
-      to: points.bWaistSide,
-      y: points.bWaistSide.y,
+      to: bWaistSide,
+      y: bWaistSide.y,
     })
     macro('hd', {
-      from: points.mWaist,
-      to: points.bWaistBack,
-      y: points.bWaistSide.y - sa - 15,
+      from: points.mWaist1,
+      to: options.separateWaistband ? points.bWaistBackSeam : points.bWaistBack,
+      y: bWaistSide.y - sa - 15,
     })
     macro('hd', {
-      from: points.mWaist,
-      to: points.bWaistBackOverlap,
-      y: points.bWaistSide.y - sa - 30,
+      from: points.mWaist1,
+      to: options.separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlap,
+      y: bWaistSide.y - sa - 30,
     })
     macro('vd', {
-      from: points.mWaist,
+      from: points.mWaist1,
       to: points.mHip,
       x: points.mWaist.x,
     })
     macro('vd', {
-      from: points.bWaistSide,
-      to: points.bWaistBack,
-      x: points.bWaistSide.x + 15,
+      from: bWaistSide,
+      to: options.separateWaistband ? points.bWaistBackSeam : points.bWaistBack,
+      x: bWaistSide.x + 15,
     })
     macro('vd', {
-      from: points.bWaistBackOverlap,
+      from: options.separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlap,
       to: points.bLegBackOverlap,
       x: points.bLegBackOverlap.x - 30,
     })
+    if( false == options.separateWaistband ) {
+      macro('vd', {
+        from: points.fWaistSide,
+        to: points.fWaistSideHem,
+        x: points.fWaistSide.x +10,
+      })
+    }
 
     if (options.frontPocket) {
       macro('vd', {
-        from: points.fWaistSide,
+        from: fWaistSide,
         to: points.frontPocketTop,
         x: points.frontPocketTop.x,
       })
       macro('vd', {
-        from: points.fWaistSide,
+        from: fWaistSide,
         to: points.frontPocketBottom,
         x: points.frontPocketBottom.x,
       })
       macro('hd', {
         from: points.frontPocketTop,
-        to: points.fWaistSide,
+        to: fWaistSide,
         y: points.frontPocketTop.y,
       })
       macro('hd', {
         from: points.frontPocketBottom,
-        to: points.fWaistSide,
+        to: fWaistSide,
         y: points.frontPocketBottom.y,
       })
     }
     if (options.backPocket) {
       macro('vd', {
-        from: points.bWaistSide,
+        from: bWaistSide,
         to: points.backPocketLeft,
         x: points.backPocketLeft.x,
       })
       macro('vd', {
-        from: points.bWaistSide,
+        from: bWaistSide,
         to: points.backPocketRight,
         x: points.backPocketRight.x,
       })
       macro('hd', {
-        from: points.bWaistSide,
+        from: bWaistSide,
         to: points.backPocketLeft,
         y: points.backPocketLeft.y,
       })
       macro('hd', {
-        from: points.bWaistSide,
+        from: bWaistSide,
         to: points.backPocketRight,
         y: points.backPocketRight.y,
       })
