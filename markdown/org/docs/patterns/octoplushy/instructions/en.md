@@ -80,10 +80,11 @@ It is easiest to sew one leg almost to the next B/D notch, stop sewing, pin the 
 Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your originial stitching to secure it.
   
 </Tip>
+
 - Turn _good sides_ out.
 - For Octopus sew along stitching lines of the legs before stuffing.
 - Stuff the plushy through the opening in the legs.
-- Hand sew the remaining seam.
+- Hand sew the opening closed.
 
 ## Step 4: Enjoy!
 
