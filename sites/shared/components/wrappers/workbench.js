@@ -118,7 +118,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     draft = new design({...gist, layout})
     if (gist.renderer === 'svg') draft.use(theme)
     try {
-      if (gist._state.view !== 'test') draft.draft()
+      if (['draft', 'events'].indexOf(gist._state.view) > -1) draft.draft()
     }
     catch(error) {
       console.log('Failed to draft design', error)
