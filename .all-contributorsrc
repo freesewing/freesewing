@@ -886,6 +886,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "joeschofield0",
+      "name": "Joe Schofield",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47668691?v=4",
+      "profile": "https://github.com/joeschofield0",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true
