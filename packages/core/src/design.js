@@ -5,7 +5,17 @@ import Pattern from './pattern'
  * So it's sort of a super-constructor
  */
 export default function Design(config, plugins = false, conditionalPlugins = false) {
-
+  // Add part options to config
+  if (!config.options) config.options = {}
+  if (config.parts) {
+    for (const partName in config.parts) {
+      if (config.parts[partName].options) {
+        for (const optionName in config.parts[partName].options) {
+          config.options[optionName] = config.parts[partName].options[optionName]
+        }
+      }
+    }
+  }
   // Ensure all options have a hide() method
   config.options = optionsWithHide(config.options)
 

@@ -1,38 +1,33 @@
+// FreeSewing core library
 import freesewing from '@freesewing/core'
-import Brian from '@freesewing/brian'
-import plugins from '@freesewing/plugin-bundle'
-import plugin from '@freesewing/plugin-bust' // Note: conditional plugin
-import config from '../config'
+// FreeSewing Plugins
+import pluginBundle from '@freesewing/plugin-bundle'
+import bustPlugin from '@freesewing/plugin-bust' // Note: conditional plugin
+// Design config & options
+import { info, measurements, optionalMeasurements } from '../config/index'
+import * as options from '../config/options'
+// Design parts
+import back from './back'
+import front from './front'
 
-// Parts
-import draftBack from './back'
-import draftFront from './front'
-
-/* Check to see whether we should load the bust plugin
- * Only of the `draftForHighBust` options is set
- * AND the highBust measurement is available
- */
-const condition = (settings = false) =>
-  settings &&
-  settings.options &&
-  settings.options.draftForHighBust &&
-  settings.measurements.highBust
-    ? true
-    : false
-
-// Create design
-const Aaron = new freesewing.Design(config, plugins, { plugin, condition })
-
-// Attach draft methods to prototype
-Aaron.prototype.draftBase = function (part) {
-  // Getting the base part from Brian
-  return new Brian(this.settings).draftBase(part)
-}
-Aaron.prototype.draftFront = (part) => draftFront(part)
-Aaron.prototype.draftBack = (part) => draftBack(part)
+// Setup design
+const Aaron = new freesewing.Design({
+  ...info,
+  measurements,
+  optionalMeasurements,
+  options: { ...options },
+  parts: { back, front },
+  plugins: pluginBundle,
+  conditionalPlugins: {
+    plugin: bustPlugin,
+    condition: (settings=false) =>
+      settings?.options?.draftForHighBust &&
+      settings?.measurements?.highBust
+      ? true : false
+  }
+})
 
 // Named exports
-export { config, Aaron }
-
+export { front, back, Aaron }
 // Default export
 export default Aaron

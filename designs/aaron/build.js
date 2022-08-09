@@ -23,17 +23,22 @@ const options = {
 
 // Different formats
 const formats = {
-  cjs: "dist/index.js",
-  esm: "dist/index.mjs",
+  cjs: "js",
+  esm: "mjs",
 }
 
 // Let esbuild generate different formats
 let result
 (async () => {
-  for (const [format, outfile] of Object.entries(formats)) {
+  for (const [format, ext] of Object.entries(formats)) {
+    // Regular build
     result = await esbuild
-    .build({ ...options, outfile, format })
-    .catch(() => process.exit(1))
+      .build({ ...options, format, outfile: `dist/index.${ext}` })
+      .catch(() => process.exit(1))
+    // Config build
+    await esbuild
+      .build({ ...options, format, outfile: `dist/config.${ext}`, entryPoints: ['config/index.js'] })
+      .catch(() => process.exit(1))
   }
 
   if (process.env.VERBOSE) {
@@ -41,11 +46,13 @@ let result
     console.log(info)
   }
 
+
   // Also build a version that has all dependencies bundled
   // This makes it easy to run tests
   await esbuild
   .build({
     ...options,
+    entryPoints: ['src/index.js'],
     minify: false,
     sourcemap: false,
     outfile: 'tests/dist/index.mjs',

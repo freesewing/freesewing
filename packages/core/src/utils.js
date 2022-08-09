@@ -384,3 +384,7 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   }
 }
 
+/*
+ * Makes sure an object passed to be attached as a part it not merely a method
+ */
+export const decoratePartDependency = (obj, name) => (typeof obj === 'function') ? { draft: obj, name } : obj
