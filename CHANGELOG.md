@@ -3,17 +3,29 @@
 
 ## Unreleased
 
+### aaron
+
+#### Added
+
+ - Support drafting for high bust
+
+### breanna
+
+#### Fixed
+
+ - Fixed bug where a large shoulder slope could cause an error. Fixes [#2516](https://github.com/freesewing/freesewing/issues/2516)
+
 ### brian
 
 #### Fixed
 
  - Make s3 options sticky to zero below 10% to avoid path split issues. Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
 
-### aaron
+### cathrin
 
-#### Added
+#### Fixed
 
- - Support drafting for high bust
+ - Removed seam allowance from Part1a foldline. Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
 
 ### charlie
 
@@ -63,6 +75,7 @@
 #### Added
 
  - Added support for removing the title via a macro call
+ - Added a render timestamp to the title
 
 
 ## 2.21.3 (2022-07-02)
