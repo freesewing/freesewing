@@ -90,6 +90,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   // Helper methods to manage the gist state
   const updateWBGist = useMemo(() => (path, value, closeNav=false, addToHistory=true) => {
+    console.warn('updating gist')
     updateGist(path, value, addToHistory)
     // Force close of menu on mobile if it is open
     if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
@@ -112,8 +113,9 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   // Generate the draft here so we can pass it down
   let draft = false
-  if (['draft', 'events', 'test'].indexOf(gist._state?.view) !== -1) {
-    draft = new design(gist)
+  if (['draft', 'events', 'test', 'printingLayout'].indexOf(gist._state?.view) !== -1) {
+    const layout = (gist._state.view === 'printingLayout' && gist.layouts?.printLayout) || gist.layout || true
+    draft = new design({...gist, layout})
     if (gist.renderer === 'svg') draft.use(theme)
     try {
       if (gist._state.view !== 'test') draft.draft()

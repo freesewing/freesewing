@@ -61,6 +61,7 @@ svg.freesewing.pattern {
   .bold { font-weight: bold; }
 
   .center { text-anchor: middle; }
+  .baseline-center {dominant-baseline: central;}
   .right { text-anchor: end; }
 
   /* muted page numbers */
@@ -84,10 +85,13 @@ svg.freesewing.pattern {
   }
   .svg-layout-button > rect.button {
     fill: var(--pattern-note);
-    fill-opacity: 0.3;
+    fill-opacity: 0.5;
     stroke: none;
   }
-  .svg-layout-button:hover > rect {
+  .svg-layout-button path {
+    stroke-width: calc(var(--pattern-stroke) * 2 * var(--pattern-scale));;
+  }
+  .svg-layout-button:hover > rect.button {
     fill: var(--pattern-lining);
     stroke: none;
     fill-opacity: 1;

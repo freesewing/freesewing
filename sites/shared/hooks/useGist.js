@@ -1,7 +1,7 @@
 import useLocalStorage from './useLocalStorage';
 import set from 'lodash.set'
 import unset from 'lodash.unset'
-import cloneDeep from 'lodash.clonedeep'
+import cloneDeep from 'lodash.cloneDeep'
 import defaultSettings from 'shared/components/workbench/default-settings.js'
 import {useState} from 'react'
 
@@ -29,7 +29,8 @@ export function useGist(design, app) {
 		let oldGist
 		_setGist((gistState) => {
 			// have to clone it or nested objects will be referenced instead of copied, which defeats the purpose
-			oldGist = cloneDeep(gistState);
+			if (addToHistory) oldGist = cloneDeep(gistState)
+
 			return typeof newGist === 'function' ? newGist(cloneDeep(gistState)) : newGist
 		})
 
