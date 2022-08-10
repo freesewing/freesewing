@@ -221,7 +221,7 @@ export default (part) => {
       to: points.grainlineBottom,
     })
     macro('scalebox', { at: points.knee })
-    points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.crossSeamCurveStart.y)
+    points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.fork.y)
     snippets.logo = new Snippet('logo', points.logoAnchor)
     points.titleAnchor = points.logoAnchor.shift(-90, 60)
     macro('title', {
