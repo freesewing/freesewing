@@ -213,7 +213,7 @@ it("Design constructor should construct basic part order", () => {
     inject: { step4: "step3" },
     parts: ["step1", "step2"]
   });
-  let pattern = new design();
+  let pattern = new design().init();
   expect(pattern.config.draftOrder[0]).to.equal("step3");
   expect(pattern.config.draftOrder[1]).to.equal("step4");
   expect(pattern.config.draftOrder[2]).to.equal("step1");
@@ -225,7 +225,7 @@ it("Design constructor should not require depencies for injected parts", () => {
     inject: { step4: "step3" },
     parts: ["step1", "step2"]
   });
-  let pattern = new design();
+  let pattern = new design().init();
   expect(pattern.config.draftOrder[0]).to.equal("step3");
   expect(pattern.config.draftOrder[1]).to.equal("step4");
   expect(pattern.config.draftOrder[2]).to.equal("step1");
@@ -237,7 +237,7 @@ it("Design constructor should handle parts and dependencies overlap", () => {
     inject: { step4: "step3" },
     parts: ["step1", "step2", "step3"]
   });
-  let pattern = new design();
+  let pattern = new design().init();
   expect(pattern.config.draftOrder[0]).to.equal("step3");
   expect(pattern.config.draftOrder[1]).to.equal("step4");
   expect(pattern.config.draftOrder[2]).to.equal("step1");
@@ -259,7 +259,7 @@ it("Design constructor discover all parts", () => {
     hide: [],
     parts: ["step1", "step2"]
   });
-  let pattern = new design();
+  let pattern = new design().init();
   expect(pattern.config.draftOrder[0]).to.equal("step3");
   expect(pattern.config.draftOrder[1]).to.equal("step4");
   expect(pattern.config.draftOrder[2]).to.equal("step5");
@@ -299,7 +299,7 @@ it("Design constructor should handle Simon", () => {
     ],
     hide: ["base", "frontBase", "front", "backBase", "sleeveBase"]
   });
-  let pattern = new design();
+  let pattern = new design().init();
 });
 
 it("Pattern constructor should add default hide() method to options", () => {
@@ -317,7 +317,7 @@ it("Pattern constructor should add default hide() method to options", () => {
     }
   })
 
-  const pattern = new design();
+  const pattern = new design().init();
   expect(typeof pattern.config.options.constant === 'number').to.be.true
   expect(typeof pattern.config.options.percentage === 'object').to.be.true
   expect(typeof pattern.config.options.degree === 'object').to.be.true

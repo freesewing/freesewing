@@ -73,13 +73,14 @@ export default function Pattern(config = { options: {} }) {
   this.Path = Path // Path constructor
   this.Snippet = Snippet // Snippet constructor
   this.Attributes = Attributes // Attributes constructor
+  this.initialized = 0 // Keep track of init calls
 
   if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
   if (typeof this.config.inject === 'undefined') this.config.inject = {}
   if (typeof this.config.hide === 'undefined') this.config.hide = []
 
   // Convert options
-  this.addOptions(this.config.options)
+  this.addOptions(config.options)
   if (this.config.parts) {
     for (const partName in this.config.parts) {
       if (this.config.parts[partName].options) this.addOptions(this.config.parts[partName].options)
@@ -115,8 +116,10 @@ export default function Pattern(config = { options: {} }) {
 
 // Converts/adds options
 Pattern.prototype.addOptions = function(options={}) {
-  for (let i in options) {
+  for (const i in options) {
+    // Add to config
     const option = options[i]
+    this.config.options[i] = option
     if (typeof option === 'object') {
       if (typeof option.pct !== 'undefined') this.settings.options[i] = option.pct / 100
       else if (typeof option.mm !== 'undefined') this.settings.options[i] = option.mm
@@ -138,28 +141,35 @@ Pattern.prototype.addOptions = function(options={}) {
   return this
 }
 
+Pattern.prototype.getConfig = function () {
+  this.init()
+  return this.config
+}
+
+
 /*
  * Defer some things that used to happen in the constructor to
  * facilitate late-stage adding of parts
  */
 Pattern.prototype.init = function () {
+  this.initialized++
   // Resolve all dependencies
   this.dependencies = this.config.dependencies
   this.inject = this.config.inject
   this.hide = this.config.hide
-  if (Array.isArray(this.config.parts)) {
-    this.resolvedDependencies = this.resolveDependencies(this.dependencies)
-  }
-  else if (typeof this.config.parts === 'object') {
+  if (typeof this.config.parts === 'object') {
     this.__parts = this.config.parts
     this.preresolveDependencies()
-    this.resolvedDependencies = this.resolveDependencies(this.dependencies)
   }
+  this.resolvedDependencies = this.resolveDependencies(this.dependencies)
+  this.config.resolvedDependencies = this.resolvedDependencies
   this.config.draftOrder = this.draftOrder(this.resolvedDependencies)
 
   // Make all parts uniform
-  for (const [key, value] of Object.entries(this.__parts)) {
-    this.__parts[key] = decoratePartDependency(value)
+  if (this.__parts) {
+    for (const [key, value] of Object.entries(this.__parts)) {
+      this.__parts[key] = decoratePartDependency(value)
+    }
   }
 
   return this
@@ -299,7 +309,7 @@ Pattern.prototype.draft = function () {
       }
       else if (typeof this[method] === 'function') {
         // Legacy way - Part is attached to the prototype
-        this.raise.warning(`Adding parts to the prototype is deprecated and will be removed in FreeSewing v4 (part: \`${partName}\`)`)
+        this.raise.warning(`Attaching part methods to the Pattern prototype is deprecated and will be removed in FreeSewing v3 (part: \`${partName}\`)`)
         try {
           this.parts[partName] = this[method](this.parts[partName])
           if (this.parts[partName].render ) this.cutList[partName] = this.parts[partName].cut

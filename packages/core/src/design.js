@@ -1,5 +1,16 @@
 import Pattern from './pattern'
 
+const addOptions = (part, config) => {
+  if (part.options) {
+    for (const optionName in part.options) {
+      config.options[optionName] = part.options[optionName]
+    }
+  }
+  if (part.from) addOptions(part.from, config)
+
+  return config
+}
+
 /*
  * The Design constructor. Returns a Pattern constructor
  * So it's sort of a super-constructor
@@ -9,11 +20,7 @@ export default function Design(config, plugins = false, conditionalPlugins = fal
   if (!config.options) config.options = {}
   if (config.parts) {
     for (const partName in config.parts) {
-      if (config.parts[partName].options) {
-        for (const optionName in config.parts[partName].options) {
-          config.options[optionName] = config.parts[partName].options[optionName]
-        }
-      }
+      config = addOptions(config.parts[partName], config)
     }
   }
   // Ensure all options have a hide() method
