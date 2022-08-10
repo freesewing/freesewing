@@ -271,7 +271,7 @@ export default (part) => {
 	}
 	macro('sprinkle', {
 	snippet: 'notch',
-	on: ['kneeInNotch', 'kneeOutNotch', 'seatOutNotch']
+	on: ['seatOutNotch', 'kneeInNotch', 'kneeOutNotch']
 	})
 	macro('sprinkle', {
 	snippet: 'bnotch',
