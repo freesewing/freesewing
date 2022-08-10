@@ -20,6 +20,10 @@ export default function (part) {
   } = part.shorthand()
 
   let mini = options.minimizer
+  let separateWaistband = options.separateWaistband
+  if ('waistband' == options.frontPocketStyle) {
+    separateWaistband = true
+  }
 
   for (var p in points) {
     points[p].x = points[p].x / mini
@@ -42,10 +46,10 @@ export default function (part) {
     .attr('class', 'fabric stroke-sm')
 
   paths.cutOut = new Path()
-    .move(options.separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+    .move(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
     .line(points.mWaist2)
     .line(points.mWaist1)
-    .line(options.separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
+    .line(separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
     .attr('class', 'help')
 
   paths.seam.setRender(true)
@@ -54,83 +58,94 @@ export default function (part) {
   if (complete) {
     macro('scalebox', { at: points.mLeg.shift(-90, 35) })
 
-    if( options.frontPocket ) {paths.frontPocket.setRender( true )}
-    if( options.backPocket ) {paths.backPocket.setRender( true )}
-    
-    if (sa) {
-      paths.sa = paths.seam.offset(sa /mini).attr('class', 'fabric sa')
+    if (options.frontPocket && 'welt' == options.frontPocketStyle) {
+      paths.frontPocket.setRender(true)
+    }
+    if (options.backPocket) {
+      paths.backPocket.setRender(true)
     }
 
-    points.pText1 = points.mHip.shiftFractionTowards(points.mLeg, .5)
-      .attr("data-text", "thisIsNotAPart")
-      .attr("data-text-class", "center");
-    points.pText2 = points.mHip.shiftFractionTowards(points.mLeg, .6)
-      .attr("data-text", "doNotCutFromFabric")
-      .attr("data-text-class", "center");
-    points.pText3 = points.mHip.shiftFractionTowards(points.mLeg, .7)
-      .attr("data-text", "useMeasurementsToCutFromFabric")
-      .attr("data-text-class", "center");
+    if (sa) {
+      paths.sa = paths.seam.offset(sa / mini).attr('class', 'fabric sa')
+    }
 
-    let fWaistSide = (options.separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
-    let fWaistFrontOverlap = (options.separateWaistband ? points.fWaistFrontOverlapSeam : points.fWaistFrontOverlap)
-    let bWaistSide = (options.separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
-    let bWaistBackOverlap = (options.separateWaistband ? points.bWaistBackOverlapSeam : points.bWaistBackOverlap)
-    
+    points.pText1 = points.mHip
+      .shiftFractionTowards(points.mLeg, 0.5)
+      .attr('data-text', 'thisIsNotAPart')
+      .attr('data-text-class', 'center')
+    points.pText2 = points.mHip
+      .shiftFractionTowards(points.mLeg, 0.6)
+      .attr('data-text', 'doNotCutFromFabric')
+      .attr('data-text-class', 'center')
+    points.pText3 = points.mHip
+      .shiftFractionTowards(points.mLeg, 0.7)
+      .attr('data-text', 'useMeasurementsToCutFromFabric')
+      .attr('data-text-class', 'center')
+
+    let fWaistSide = separateWaistband ? points.fWaistSideSeam : points.fWaistSide
+    let fWaistFrontOverlap = separateWaistband
+      ? points.fWaistFrontOverlapSeam
+      : points.fWaistFrontOverlap
+    let bWaistSide = separateWaistband ? points.bWaistSideSeam : points.bWaistSide
+    let bWaistBackOverlap = separateWaistband
+      ? points.bWaistBackOverlapSeam
+      : points.bWaistBackOverlap
+
     macro('hd', {
       from: points.fWaistFrontOverlap,
       to: fWaistSide,
-      y: fWaistSide.y +10,
+      y: fWaistSide.y + 10,
       text: part.units(fWaistSide.dist(points.fWaistFrontOverlap) * mini),
     })
     macro('hd', {
       from: points.fLegFrontOverlap,
       to: points.bLegBackOverlap,
-      y: points.bLegBackOverlap.y -10,
+      y: points.bLegBackOverlap.y - 10,
       text: part.units(points.fLegFrontOverlap.dist(points.bLegBackOverlap) * mini),
     })
     macro('hd', {
       from: points.bWaistBack,
       to: points.bWaistBackOverlap,
-      y: points.bWaistBackOverlap.y +20,
+      y: points.bWaistBackOverlap.y + 20,
       text: part.units(points.bWaistBackOverlap.dist(points.bWaistBack) * mini),
     })
     macro('hd', {
       from: points.fWaistFrontOverlap,
       to: points.mHip,
-      y: points.mHip.y +10,
-      text: part.units((points.mHip.x -points.fWaistFrontOverlap.x) * mini),
+      y: points.mHip.y + 10,
+      text: part.units((points.mHip.x - points.fWaistFrontOverlap.x) * mini),
     })
     macro('vd', {
       from: fWaistFrontOverlap,
       to: points.fLegFrontOverlap,
-      x: points.fLegFrontOverlap.x +10,
+      x: points.fLegFrontOverlap.x + 10,
       text: part.units(fWaistFrontOverlap.dist(points.fLegFrontOverlap) * mini),
     })
     macro('vd', {
       from: points.bLegBackOverlap,
       to: bWaistBackOverlap,
-      x: points.bLegBackOverlap.x -10,
+      x: points.bLegBackOverlap.x - 10,
       text: part.units(bWaistBackOverlap.dist(points.bLegBackOverlap) * mini),
     })
     macro('vd', {
       from: points.bLegBackOverlap,
       to: bWaistSide,
-      x: bWaistSide.x +10,
-      text: part.units((points.bLegBackOverlap.y -bWaistSide.y) * mini),
+      x: bWaistSide.x + 10,
+      text: part.units((points.bLegBackOverlap.y - bWaistSide.y) * mini),
     })
 
-    if (options.frontPocket) {
+    if (options.frontPocket && 'welt' == options.frontPocketStyle) {
       macro('hd', {
         from: fWaistFrontOverlap,
         to: points.frontPocketBottom2,
-        y: points.frontPocketBottom2.y +20,
-        text: part.units((points.frontPocketBottom2.x -fWaistFrontOverlap.x) * mini),
+        y: points.frontPocketBottom2.y + 20,
+        text: part.units((points.frontPocketBottom2.x - fWaistFrontOverlap.x) * mini),
       })
       macro('vd', {
         from: fWaistFrontOverlap,
         to: points.frontPocketBottom2,
-        x: points.frontPocketBottom2.x +20,
-        text: part.units((points.frontPocketBottom2.y -fWaistFrontOverlap.y) * mini),
+        x: points.frontPocketBottom2.x + 20,
+        text: part.units((points.frontPocketBottom2.y - fWaistFrontOverlap.y) * mini),
       })
     }
 
@@ -138,19 +153,19 @@ export default function (part) {
       macro('hd', {
         from: points.backPocketRight,
         to: bWaistBackOverlap,
-        y: bWaistBackOverlap.y +40,
-        text: part.units((bWaistBackOverlap.x -points.backPocketRight.x) * mini),
+        y: bWaistBackOverlap.y + 40,
+        text: part.units((bWaistBackOverlap.x - points.backPocketRight.x) * mini),
       })
       macro('vd', {
         from: bWaistBackOverlap,
         to: points.backPocketRight,
         x: points.backPocketRight.x,
-        text: part.units((points.backPocketRight.y -bWaistBackOverlap.y) * mini),
+        text: part.units((points.backPocketRight.y - bWaistBackOverlap.y) * mini),
       })
     }
   }
 
-  part.render = options.showMini 
+  part.render = options.showMini
 
   return part
 }

@@ -2,16 +2,21 @@ export default function (part) {
   let { options, points, Path, paths, Snippet, snippets, complete, sa, paperless, macro, store } =
     part.shorthand()
 
-  if( false == options.separateWaistband ) {
-  paths.waistFoldBack = new Path()
-  .move(points.bWaistSideHem)
-  .line(options.separateWaistband ? points.bWaistBackSeam : points.bWaistBackHem)
-  .line(options.separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlapHem)
-    .attr('class', 'fabric stroke-sm')
-  paths.waistFoldFront = new Path()
-  .move(points.fWaistSideHem)
-  .line(points.fWaistFrontOverlapHem)
-    .attr('class', 'fabric stroke-sm')
+  let separateWaistband = options.separateWaistband
+  if ('waistband' == options.frontPocketStyle) {
+    separateWaistband = true
+  }
+
+  if (false == separateWaistband) {
+    paths.waistFoldBack = new Path()
+      .move(points.bWaistSideHem)
+      .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBackHem)
+      .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlapHem)
+      .attr('class', 'fabric stroke-sm')
+    paths.waistFoldFront = new Path()
+      .move(points.fWaistSideHem)
+      .line(points.fWaistFrontOverlapHem)
+      .attr('class', 'fabric stroke-sm')
   }
 
   paths.frontFold = paths.front.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
@@ -38,13 +43,17 @@ export default function (part) {
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 
-  if( options.frontPocket ) {paths.frontPocket.setRender( true )}
-  if( options.backPocket ) {paths.backPocket.setRender( true )}
- 
+  if (options.frontPocket && 'welt' == options.frontPocketStyle) {
+    paths.frontPocket.setRender(true)
+  }
+  if (options.backPocket) {
+    paths.backPocket.setRender(true)
+  }
+
   // Paperless?
   if (paperless) {
-    let fWaistSide = (options.separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
-    let bWaistSide = (options.separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+    let fWaistSide = separateWaistband ? points.fWaistSideSeam : points.fWaistSide
+    let bWaistSide = separateWaistband ? points.bWaistSideSeam : points.bWaistSide
     macro('hd', {
       from: fWaistSide,
       to: points.mWaist1,
@@ -62,12 +71,12 @@ export default function (part) {
     })
     macro('hd', {
       from: points.mWaist1,
-      to: options.separateWaistband ? points.bWaistBackSeam : points.bWaistBack,
+      to: separateWaistband ? points.bWaistBackSeam : points.bWaistBack,
       y: bWaistSide.y - sa - 15,
     })
     macro('hd', {
       from: points.mWaist1,
-      to: options.separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlap,
+      to: separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlap,
       y: bWaistSide.y - sa - 30,
     })
     macro('vd', {
@@ -77,23 +86,23 @@ export default function (part) {
     })
     macro('vd', {
       from: bWaistSide,
-      to: options.separateWaistband ? points.bWaistBackSeam : points.bWaistBack,
+      to: separateWaistband ? points.bWaistBackSeam : points.bWaistBack,
       x: bWaistSide.x + 15,
     })
     macro('vd', {
-      from: options.separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlap,
+      from: separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlap,
       to: points.bLegBackOverlap,
       x: points.bLegBackOverlap.x - 30,
     })
-    if( false == options.separateWaistband ) {
+    if (false == separateWaistband) {
       macro('vd', {
         from: points.fWaistSide,
         to: points.fWaistSideHem,
-        x: points.fWaistSide.x +10,
+        x: points.fWaistSide.x + 10,
       })
     }
 
-    if (options.frontPocket) {
+    if (options.frontPocket && 'welt' == options.frontPocketStyle) {
       macro('vd', {
         from: fWaistSide,
         to: points.frontPocketTop,
@@ -115,6 +124,7 @@ export default function (part) {
         y: points.frontPocketBottom.y,
       })
     }
+
     if (options.backPocket) {
       macro('vd', {
         from: bWaistSide,
@@ -138,7 +148,8 @@ export default function (part) {
       })
     }
   }
-  part.render = (options.showMini == false)
+
+  part.render = options.showMini == false
 
   return part
 }

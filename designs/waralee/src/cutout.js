@@ -14,10 +14,15 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
+  let separateWaistband = options.separateWaistband
+  if ('waistband' == options.frontPocketStyle) {
+    separateWaistband = true
+  }
+
   paths.seam = new Path()
     .move(points.mWaist1)
     .line(points.mWaist2)
-    .line(options.separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+    .line(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
     .join(paths.backTopCutOut)
     .join(paths.backBottomCutOut)
     .join(paths.frontBottomCutOut)
@@ -26,7 +31,6 @@ export default function (part) {
     .attr('class', 'fabric')
 
   paths.cutout.setRender(false)
-
 
   // Complete?
   if (complete) {
@@ -43,12 +47,12 @@ export default function (part) {
 
     if (sa) {
       paths.seamAlternate = new Path()
-        .move(options.separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+        .move(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
         .join(paths.backTopCutOut)
         .join(paths.backBottomCutOut)
         .join(paths.frontBottomCutOut)
         .join(paths.frontTopCutOut)
-    
+
       paths.sa = paths.seamAlternate.offset(sa).attr('class', 'fabric sa')
     }
   }
@@ -58,12 +62,12 @@ export default function (part) {
     macro('hd', {
       from: points.fWaistSide,
       to: points.mWaist,
-      y: (options.separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
+      y: (separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('hd', {
       from: points.mWaist,
       to: points.bWaistSide,
-      y: (options.separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
+      y: (separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('vd', {
       from: points.mWaist1,
