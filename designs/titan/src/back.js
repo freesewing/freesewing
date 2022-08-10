@@ -238,7 +238,7 @@ export default (part) => {
 	points.hipsOutTarget = points.waistOut.shiftTowards(points.waistIn, measurements.waistToHips).rotate(90, points.waistOut)
 	points.hipsIn = utils.beamsIntersect(points.hipsOutTarget, points.hipsInTarget, points.waistIn, points.crossSeamCurveStart)
 	points.crossSeamCurveStartMid = utils.beamsIntersect(points.crossSeamCurveStart, points.crossSeamCurveStart.shift(points.waistIn.angle(points.waistOut), 1), points.waistMid, points.seatMid)
-	if (points.seatMid.y < points.crossSeamCurveStartMid){
+	if (points.seatMid.y > points.crossSeamCurveStartMid.y){
 	points.seatIn = utils.lineIntersectsCurve(points.seatMid, points.seatInTarget, points.crossSeamCurveStart, points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
 	}
 	else {
