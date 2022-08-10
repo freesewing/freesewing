@@ -295,7 +295,7 @@ export default (part) => {
       from: points.grainlineTop,
       to: points.grainlineBottom,
     })
-    points.logoAnchor = new Point(points.crotchSeamCurveStart.x / 2, points.crotchSeamCurveStart.y)
+    points.logoAnchor = new Point(points.crotchSeamCurveStart.x / 2, points.fork.y)
     snippets.logo = new Snippet('logo', points.logoAnchor)
     points.titleAnchor = points.logoAnchor.shift(-90, 60)
     macro('title', {
