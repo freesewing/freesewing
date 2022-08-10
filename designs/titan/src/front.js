@@ -348,7 +348,7 @@ export default (part) => {
 	on: ['crotchSeamCurveStart', 'seatIn', 'seatOutNotch', 'kneeInNotch', 'kneeOutNotch']
 	})
 	paths.seatline = new Path()
-	.move(points.seatOut)
+	.move(points.seatOutNotch)
 	.line(points.seatIn)
 	.attr('class', 'fabric help')
 	.attr('data-text', 'Seat Line')
