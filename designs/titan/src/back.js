@@ -230,15 +230,28 @@ export default (part) => {
       at: points.titleAnchor,
     })
 	//notches
+	points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
+	points.seatMid = points.waistMid.shiftTowards(points.waistIn, measurements.waistToSeat).rotate(90, points.waistMid)
+	points.seatInTarget = points.seatOut.shiftOutwards(points.seatMid, measurements.seat / 4)
+	points.seatOutTarget = points.seatMid.shiftTowards(points.seatOut, measurements.seat / 4)
 	points.hipsInTarget	 = points.waistIn.shiftTowards(points.waistOut, measurements.waistToHips).rotate(-90, points.waistIn)
 	points.hipsOutTarget = points.waistOut.shiftTowards(points.waistIn, measurements.waistToHips).rotate(90, points.waistOut)
 	points.hipsIn = utils.beamsIntersect(points.hipsOutTarget, points.hipsInTarget, points.waistIn, points.crossSeamCurveStart)
+	points.crossSeamCurveStartMid = utils.beamsIntersect(points.crossSeamCurveStart, points.crossSeamCurveStart.shift(points.waistIn.angle(points.waistOut), 1), points.waistMid, points.seatMid)
+	if (points.seatMid.y < points.crossSeamCurveStartMid){
+	points.seatIn = utils.lineIntersectsCurve(points.seatMid, points.seatInTarget, points.crossSeamCurveStart, points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+	}
+	else {
+	points.seatIn = utils.beamsIntersect(points.seatMid, points.seatInTarget, points.waistIn, points.crossSeamCurveStart)
+	}
 	if (options.fitKnee) {
 	if (points.waistOut.x > points.seatOut.x) {
 	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.kneeOut, points.kneeOutCp2, points.seatOut, points.waistOut)
+	points.seatOutNotch = utils.lineIntersectsCurve(points.seatMid, points.seatOutTarget, points.kneeOut, points.kneeOutCp2, points.seatOut, points.waistOut)
 	}
 	else {
 	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.seatOut, points.seatOutCp2, points.waistOut, points.waistOut)
+	points.seatOutNotch = points.seatOut
 	}
 	points.kneeOutNotch = points.kneeOut
 	points.kneeInNotch = points.kneeIn
@@ -246,22 +259,30 @@ export default (part) => {
 	else {
 	if (points.waistOut.x > points.seatOut.x) {
 	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.floorOut, points.kneeOutCp2, points.seatOut, points.waistOut)
+	points.seatOutNotch = utils.lineIntersectsCurve(points.seatMid, points.seatOutTarget, points.floorOut, points.kneeOutCp2, points.seatOut, points.waistOut)
 	points.kneeOutNotch = utils.lineIntersectsCurve(points.kneeOut, points.kneeIn.rotate(180, points.kneeOut), points.floorOut, points.kneeOutCp2, points.seatOut, points.waistOut)
 	}
 	else {
 	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.seatOut, points.seatOutCp2, points.waistOut, points.waistOut)
+	points.seatOutNotch = points.seatOut
 	points.kneeOutNotch = utils.lineIntersectsCurve(points.kneeOut, points.kneeIn.rotate(180, points.kneeOut), points.floorOut, points.kneeOutCp2, points.seatOutCp1, points.seatOut)
 	}
 	points.kneeInNotch = utils.lineIntersectsCurve(points.kneeIn, points.kneeOut.rotate(180, points.kneeIn), points.fork, points.forkCp2, points.kneeInCp1, points.floorIn)
 	}
 	macro('sprinkle', {
 	snippet: 'notch',
-	on: ['kneeInNotch', 'kneeOutNotch']
+	on: ['kneeInNotch', 'kneeOutNotch', 'seatOutNotch']
 	})
 	macro('sprinkle', {
 	snippet: 'bnotch',
-	on: ['crossSeamCurveStart',]
+	on: ['crossSeamCurveStart', 'seatIn']
 	})
+	paths.seatline = new Path()
+	.move(points.seatIn)
+	.line(points.seatOut)
+	.attr('class', 'fabric help')
+	.attr('data-text', 'Seat Line')
+	.attr('data-text-class', 'center')
 	if (measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth < measurements.waistToHips){
 	snippets.hipsIn = new Snippet('bnotch', points.hipsIn)
 	snippets.hipsOut = new Snippet('notch', points.hipsOut)
