@@ -71,6 +71,6 @@ export default {
     crotchSeamCurveAngle: { deg: 25, min: 0, max: 35 },
     waistBalance: { pct: 60, min: 30, max: 90 },
     grainlinePosition: { pct: 45, min: 30, max: 60 },
-    waistbandWidth: { pct: 3, min: 1, max: 6, snap: elastics, ...pctBasedOn('waistToFloor') },
+    waistbandWidth: { pct: 3, min: 0, max: 6, snap: elastics, ...pctBasedOn('waistToFloor') },
   },
 }
