@@ -6,7 +6,7 @@ title: "Octoplushy, the plushy octopus: Sewing Instructions"
 
 ### The Face
 
-- __Octoplushy__
+- **Octoplushy**
   - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
   - Repeat with the remaining four head parts to create a second half.
   - Use topstitching, or a long bar-tack, to make the mouth on one of the segments.
@@ -24,7 +24,7 @@ There are a couple of ways to make eyes for the Octoplushy version.
 
 </Note>
 
-- __Octopus__
+- **Octopus**
   - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
   - Repeat with the remaining four head parts to create a second half.
   - With _wrong sides_ to _good sides_ sew the pupil to eyes parts. 
@@ -41,7 +41,7 @@ Before sewing the eyebrows in half, you can stuff the eyebrows to create a more 
 
 </Note>
   
-- __Squid__
+- **Squid**
   - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
   - Repeat with the remaining four head parts to create a second half.
   - On the head (a) parts fold along the fold-line with _good sides together_.
@@ -54,13 +54,13 @@ Before sewing the eyebrows in half, you can stuff the eyebrows to create a more 
 
 ## Step 2: The Legs
 
-- __Octoplushy & Octopus__
+- **Octoplushy & Octopus**
   - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
   - Repeat with the remaining four leg parts to create a second half.
   - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for
 stuffing later. 
 
-- __Squid__
+- **Squid**
   - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
   - Repeat with the remaining four leg parts to create a second half. 
   - With _good sides together_ sew a leg (a) part to each half so you have matching halves.
