@@ -26,13 +26,17 @@ import rehypeStringify from 'rehype-stringify'
 import yaml from 'yaml'
 import { getPosts } from '../../freesewing.shared/prebuild/strapi.mjs'
 import { getMdxFileList } from '../../freesewing.shared/prebuild/mdx.mjs'
+import config from '../algolia.mjs'
 dotenv.config()
 
 /*
  * Initialize Algolia client
  */
-const client = algoliasearch(process.env.ALGOLIA_APP_ID, process.env.ALGOLIA_API_KEY)
-const index = client.initIndex(process.env.ALGOLIA_INDEX)
+const client = algoliasearch(
+  config.algolia.app,
+  process.env.ALGOLIA_API_WRITE_KEY
+)
+const index = client.initIndex(config.algolia.index)
 
 /*
  * Turn a Strapi blog post into an object ready for indexing
@@ -142,8 +146,8 @@ const indexMarkdownContent = async () => {
 
 const run = async () => {
   if (
-    (process.env.NETLIFY && process.env.CONTEXT === 'production')
-    || process.env.FORCE_ALGOLIA
+    process.env.VERCEL_ENV === 'production' ||
+    process.env.FORCE_ALGOLIA
   ) {
     await indexMarkdownContent()
     await indexStrapiContent()
