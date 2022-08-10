@@ -308,7 +308,7 @@ export default (part) => {
 	points.hipsOutTarget = points.waistOut.shiftTowards(points.waistIn, measurements.waistToHips).rotate(-90, points.waistOut)
 	points.hipsIn = utils.beamsIntersect(points.hipsOutTarget, points.hipsInTarget, points.waistIn, points.crotchSeamCurveStart)
 	if (options.fitKnee) {
-	if (points.waistOut.x > points.seatOut.x) {
+	if (points.waistOut.x < points.seatOut.x) {
 	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.waistOut, points.seatOut, points.kneeOutCp1, points.kneeOut)
 	}
 	else {
@@ -318,7 +318,7 @@ export default (part) => {
 	points.kneeInNotch = points.kneeIn
 	}
 	else {
-	if (points.waistOut.x > points.seatOut.x) {
+	if (points.waistOut.x < points.seatOut.x) {
 	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.waistOut, points.seatOut, points.kneeOutCp1, points.floorOut)
 	points.kneeOutNotch = utils.lineIntersectsCurve(points.kneeOut, points.kneeIn.rotate(180, points.kneeOut), points.waistOut, points.seatOut, points.kneeOutCp1, points.floorOut)
 	}
