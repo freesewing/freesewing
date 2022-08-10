@@ -279,7 +279,7 @@ export default (part) => {
 	})
 	paths.seatline = new Path()
 	.move(points.seatIn)
-	.line(points.seatOut)
+	.line(points.seatOutNotch)
 	.attr('class', 'fabric help')
 	.attr('data-text', 'Seat Line')
 	.attr('data-text-class', 'center')
