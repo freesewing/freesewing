@@ -303,7 +303,47 @@ export default (part) => {
       title: 'front',
       at: points.titleAnchor,
     })
-
+	//notches
+	points.hipsInTarget	 = points.waistIn.shiftTowards(points.waistOut, measurements.waistToHips).rotate(90, points.waistIn)
+	points.hipsOutTarget = points.waistOut.shiftTowards(points.waistIn, measurements.waistToHips).rotate(-90, points.waistOut)
+	points.hipsIn = utils.beamsIntersect(points.hipsOutTarget, points.hipsInTarget, points.waistIn, points.crotchSeamCurveStart)
+	if (options.fitKnee) {
+	if (points.waistOut.x > points.seatOut.x) {
+	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.waistOut, points.seatOut, points.kneeOutCp1, points.kneeOut)
+	}
+	else {
+	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.waistOut, points.waistOut, points.seatOutCp1, points.seatOut)
+	}
+	points.kneeOutNotch = points.kneeOut
+	points.kneeInNotch = points.kneeIn
+	}
+	else {
+	if (points.waistOut.x > points.seatOut.x) {
+	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.waistOut, points.seatOut, points.kneeOutCp1, points.floorOut)
+	points.kneeOutNotch = utils.lineIntersectsCurve(points.kneeOut, points.kneeIn.rotate(180, points.kneeOut), points.waistOut, points.seatOut, points.kneeOutCp1, points.floorOut)
+	}
+	else {
+	points.hipsOut = utils.lineIntersectsCurve(points.hipsOutTarget, points.hipsIn.rotate(180, points.hipsOutTarget), points.waistOut, points.waistOut, points.seatOutCp1, points.seatOut)
+	points.kneeOutNotch = utils.lineIntersectsCurve(points.kneeOut, points.kneeIn.rotate(180, points.kneeOut), points.seatOut, points.seatOutCp2, points.kneeOutCp1, points.floorOut)
+	}
+	points.kneeInNotch = utils.lineIntersectsCurve(points.kneeIn, points.kneeOut.rotate(180, points.kneeIn), points.floorIn, points.kneeInCp2, points.forkCp1, points.fork)
+	}
+	macro('sprinkle', {
+	snippet: 'notch',
+	on: ['crotchSeamCurveStart', 'kneeInNotch', 'kneeOutNotch']
+	})
+	if (measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth < measurements.waistToHips){
+	macro('sprinkle', {
+	snippet: 'notch',
+	on: ['hipsIn', 'hipsOut',]
+	})
+	paths.hipline = new Path()
+	.move(points.hipsOut)
+	.line(points.hipsIn)
+	.attr('class', 'fabric help')
+	.attr('data-text', 'Hip Line')
+	.attr('data-text-class', 'center')
+	}
     if (sa) {
       paths.saBase = drawInseam()
         .join(
