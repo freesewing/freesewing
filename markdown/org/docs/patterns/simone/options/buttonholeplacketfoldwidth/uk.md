@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Buttonhole placket fold width"
-- - -
+
+***
 
 ![Buttonhole placket fold width](buttonholeplacketfoldwidth.svg)
 

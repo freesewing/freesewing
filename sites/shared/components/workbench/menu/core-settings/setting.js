@@ -99,7 +99,6 @@ const Setting = props => {
               ? (
                 <>
                   <span>{t(`settings:sa.t`)}</span>
-                  <span className="ml-4 opacity-50">[ {t(`size`)} ]</span>
                 </>
               )
               : <span>{t(`settings:${props.setting}.t`)}</span>

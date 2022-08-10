@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Neck inset"
-- - -
+
+***
 
 ![Neck inset](neckinset.svg)
 

@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Cross seam angle"
-- - -
+
+***
 
 Controls the angle of the cross seam curve.
 

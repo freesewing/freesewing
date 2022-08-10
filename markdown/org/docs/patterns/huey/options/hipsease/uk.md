@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Hips ease"
-- - -
+
+***
 
 ![Hips ease](./hipsease.svg)
 

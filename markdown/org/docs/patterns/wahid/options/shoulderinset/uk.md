@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Shoulder inset"
-- - -
+
+***
 
 ![Shoulder inset](shoulderinset.svg)
 

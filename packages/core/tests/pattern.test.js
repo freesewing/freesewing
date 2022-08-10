@@ -725,7 +725,6 @@ it("Should retrieve the cutList", () => {
   const pattern = new Test()
   expect(JSON.stringify(pattern.getCutList())).to.equal(JSON.stringify({}))
   pattern.draft()
-  console.log(pattern.parts.front.cut)
   const list = `{"front":{"grain":90,"materials":{"lining":{"cut":4,"identical":true}}}}`
   expect(JSON.stringify(pattern.getCutList())).to.equal(list)
 });

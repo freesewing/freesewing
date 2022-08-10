@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Cross seam bend"
-- - -
+
+***
 
 Controls the curvature of the cross seam curve.
 

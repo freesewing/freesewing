@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Brian body block: Sewing Instructions"
-- - -
+
+***
 
 <Note>
 

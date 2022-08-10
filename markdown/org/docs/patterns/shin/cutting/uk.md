@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Shin swim trunks: Cutting Instructions"
-- - -
+
+***
 
 - Cut **2 backs** with good sides together
 - Cut **4 fronts** 2 x 2 with good sides together
@@ -19,6 +21,6 @@ Below is a typical draft layout:
 
 <Tip>
 
-The [pattern notation guide][1] explains all the different markings and lines on your draft.
+The \[pattern notation guide]\[1] explains all the different markings and lines on your draft.
 
 </Tip>

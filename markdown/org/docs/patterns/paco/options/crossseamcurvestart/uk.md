@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Start of the cross seam curve"
-- - -
+
+***
 
 Controls the start of the cross seam curve.
 

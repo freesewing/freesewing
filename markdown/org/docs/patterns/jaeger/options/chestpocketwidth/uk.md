@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Chest pocket width"
-- - -
+
+***
 
 ![Chest pocket width](chestpocketwidth.svg)
 

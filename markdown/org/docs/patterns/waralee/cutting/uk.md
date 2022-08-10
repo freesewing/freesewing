@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Waralee wrap pants: Cutting Instructions"
-- - -
+
+***
 
 <Note>
 
