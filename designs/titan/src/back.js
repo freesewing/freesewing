@@ -230,6 +230,7 @@ export default (part) => {
       at: points.titleAnchor,
     })
 	//notches
+  if (options.fitGuides) {
 	points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
 	points.seatMid = points.waistMid.shiftTowards(points.waistIn, measurements.waistToSeat).rotate(90, points.waistMid)
 	points.seatInTarget = points.seatOut.shiftOutwards(points.seatMid, measurements.seat / 4)
@@ -293,6 +294,7 @@ export default (part) => {
 	.attr('data-text', 'Hip Line')
 	.attr('data-text-class', 'center')
 	}
+}
     if (sa) {
       paths.saBase = drawOutseam()
         .join(
