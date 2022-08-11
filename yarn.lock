@@ -2817,10 +2817,10 @@
     validate-npm-package-name "^4.0.0"
     yargs "^17.3.1"
 
-"@netlify/edge-bundler@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@netlify/edge-bundler/-/edge-bundler-1.8.0.tgz#069eeb4b25e663661e277bb7bc80c4fda8430fa5"
-  integrity sha512-A9AqvNCpskKq1ScphTRwEP/iv0CnvUStWVfGVIrLHzzM3qegZeHJyiWUZ81CYScLceaVrj1DtQ68vNEhP+9JSA==
+"@netlify/edge-bundler@^1.12.1", "@netlify/edge-bundler@^1.8.0":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@netlify/edge-bundler/-/edge-bundler-1.12.1.tgz#43e1a573028368f807372ac4ea1f5ff100105052"
+  integrity sha512-yROvOGpapj79wJIIjtuGX/p82gZt2K8on13cTg1tfCGRrGOvE+RNSKi5XuAXpocceyDJXnEyETXsc0mdpMMdhg==
   dependencies:
     common-path-prefix "^3.0.0"
     del "^6.0.0"
@@ -2830,6 +2830,7 @@
     node-fetch "^3.1.1"
     node-stream-zip "^1.15.0"
     p-wait-for "^4.1.0"
+    path-key "^4.0.0"
     semver "^7.3.5"
     tmp-promise "^3.0.3"
     uuid "^8.3.2"
@@ -2960,10 +2961,10 @@
     "@netlify/esbuild-windows-64" "0.14.25"
     "@netlify/esbuild-windows-arm64" "0.14.25"
 
-"@netlify/framework-info@^9.1.1":
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/@netlify/framework-info/-/framework-info-9.1.1.tgz#0449f5f96737a5447546e7e9482ecf6547243c04"
-  integrity sha512-9UdZWvWJwVnlWKCDLuh2w4UpCCzNm6BENiOQL0ik//R5PU3gDoL2uLNIEyLy+LlEBA5ZACnZZKC11a7EJ6x/Jw==
+"@netlify/framework-info@^9.2.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@netlify/framework-info/-/framework-info-9.2.0.tgz#13eba68f44d0a017630d5aeed50706c80543d8bb"
+  integrity sha512-H5KgXjYXYZfWbPbUG+gPLuPZ1vxUjbN2yOb8GPpfnHV8MCn9e7Q3I/1g/rq/CC0DbupF/4rGrXbkJnbdEH7prw==
   dependencies:
     ajv "^8.0.0"
     filter-obj "^3.0.0"
@@ -3077,10 +3078,10 @@
   resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-2.11.0.tgz#0086ce3cf13976cffe8e2b01bff869dd819cadb8"
   integrity sha512-ni6R1xdR8EtH0iB8ixGt9ocuboW+Q8eN4ilTX8lfNHS6Y6Q2S+O/aB2n1BnAgv39wopeQsQ2meL9vfEePURl7w==
 
-"@netlify/plugins-list@^6.35.0", "@netlify/plugins-list@^6.36.0":
-  version "6.36.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-6.36.0.tgz#3b548ac5d03f8c8ff86f3fe27b9c1a56f3cb7d6d"
-  integrity sha512-vS4MtKF8a8kl/BFApM+BdHWc8XcUvgbqY/ywppPhplvifBAAmWmynaLzwMsYhiB3VsypSvD/4bQWsgkdPHpGiQ==
+"@netlify/plugins-list@^6.35.0", "@netlify/plugins-list@^6.37.0":
+  version "6.37.0"
+  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-6.37.0.tgz#be522d7d982285120049da47e85a584b3f0f9ec2"
+  integrity sha512-sThBWfyHQ0TEVjUCPlzrt0tTjA6MVIydE718Hqb7jR8x51nSkOrWgIQmaQaJWZsGErRPX2hW501Ajdh0eIW6Bw==
 
 "@netlify/run-utils@^4.0.0":
   version "4.0.1"
@@ -3126,10 +3127,10 @@
     unixify "^1.0.0"
     yargs "^17.0.0"
 
-"@netlify/zip-it-and-ship-it@^5.13.3":
-  version "5.13.3"
-  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-5.13.3.tgz#f1450bbb1ceb0508cb6377333613de30ad9b78e8"
-  integrity sha512-CgnJ7nIgPHbi1AnFw2oZS1LOR/Av7VIZh5QF2ifKKkJ3C9TW7w77/0X1LeFj8W7+KWKAiB4dwePO1dAdyApsSw==
+"@netlify/zip-it-and-ship-it@^5.13.4":
+  version "5.13.4"
+  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-5.13.4.tgz#e689495557e3e01837edff28c67ad48666e96c00"
+  integrity sha512-sbjgepmvZLl4BcGBY8PUkC/zcvGcJp8YdUe2hM+7d44KzGb3GTznekNaqlVfoYi0RIK3h0S49SBI+tsBiz9jgA==
   dependencies:
     "@babel/parser" "7.16.8"
     "@netlify/binary-info" "^1.0.0"
@@ -11114,10 +11115,10 @@ grant@^5.4.8:
     jwk-to-pem "^2.0.5"
     jws "^4.0.0"
 
-graphql@16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.0.0.tgz#5724f2767aefa543418e83671372117c39408c8f"
-  integrity sha512-n9NxoRfwnpYBZB/WJ7L166gyrShuZ8qYgVaX8oxVyELcJfAwkvwPt6WlYIl90WRlzqDjaNWvLmNOSnKs5llZWQ==
+graphql@16.5.0:
+  version "16.5.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.5.0.tgz#41b5c1182eaac7f3d47164fb247f61e4dfb69c85"
+  integrity sha512-qbHgh8Ix+j/qY+a/ZcJnFQ+j8ezakqPiHwPiZhV/3PgGlgf96QMBB5/f2rkiC9sgLoy/xvT6TSiaf2nTHJh5iA==
 
 growl@1.10.5:
   version "1.10.5"
@@ -16285,17 +16286,17 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
 netlify-cli@^10.3.3:
-  version "10.15.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.15.0.tgz#e8b182d92790b986e4202edd40e64715c4d97862"
-  integrity sha512-Z/aWnI/uOvW3hoXJtsCo8i62pwqEfoUJVafMr2zXdANb6XZ0OuQAEZbqbLX/PNc269GBHkkiPamsfeMepK5COQ==
+  version "10.16.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-10.16.0.tgz#e9c0856793f29526fbda30be6a9a958085c583cb"
+  integrity sha512-FS78fX40HrfGkjVCl4+yvspM4TXHw2qgfe1b5hvNbVidpEYmeDQuxA9X6MnTrmLukHFcWOiCWLfa/7ptwvqs4A==
   dependencies:
     "@netlify/build" "^27.8.1"
     "@netlify/config" "^18.1.2"
-    "@netlify/edge-bundler" "^1.8.0"
-    "@netlify/framework-info" "^9.1.1"
+    "@netlify/edge-bundler" "^1.12.1"
+    "@netlify/framework-info" "^9.2.0"
     "@netlify/local-functions-proxy" "^1.1.1"
-    "@netlify/plugins-list" "^6.36.0"
-    "@netlify/zip-it-and-ship-it" "^5.13.3"
+    "@netlify/plugins-list" "^6.37.0"
+    "@netlify/zip-it-and-ship-it" "^5.13.4"
     "@octokit/rest" "^18.0.0"
     "@sindresorhus/slugify" "^1.1.0"
     ansi-escapes "^5.0.0"
@@ -16360,7 +16361,7 @@ netlify-cli@^10.3.3:
     multiparty "^4.2.1"
     netlify "^12.0.0"
     netlify-headers-parser "^6.0.2"
-    netlify-onegraph-internal "0.4.2"
+    netlify-onegraph-internal "0.8.1"
     netlify-redirect-parser "^13.0.5"
     netlify-redirector "^0.2.1"
     node-fetch "^2.6.0"
@@ -16409,12 +16410,12 @@ netlify-headers-parser@^6.0.2:
     path-exists "^5.0.0"
     toml "^3.0.0"
 
-netlify-onegraph-internal@0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/netlify-onegraph-internal/-/netlify-onegraph-internal-0.4.2.tgz#06e41331e7f79a84dff8787b6eef2771f7a8428f"
-  integrity sha512-3TGD/s2FGjx9NcOcMPMMUxamy3IVY9O0ZZ176FuHVDmLAc5l8mj0ZNoUbhdrXfZjes62Gt6/YynCJxGShE6oUA==
+netlify-onegraph-internal@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/netlify-onegraph-internal/-/netlify-onegraph-internal-0.8.1.tgz#e1ca9dcf2b40c6c799170257f12f2498432e76a1"
+  integrity sha512-gCBwR6wOLWiiE+MMgYtx7OVIUvsNGPPP8oe0ltkYjCATcN/e/l0/z/FrRaTGPXnR8wMBp9Kibgibskr8h5dIpg==
   dependencies:
-    graphql "16.0.0"
+    graphql "16.5.0"
     node-fetch "^2.6.0"
     rusha "^0.8.14"
     uuid "^8.3.2"
