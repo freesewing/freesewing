@@ -89,8 +89,7 @@ export default function (part) {
   // front curve: start by curving the waist band, then straigthten the part (top of pattern part is roughly horizontal)
   // if combined: apply front curve first, then front dip
   
-  let frontDipOrCurve1
-  let frontDipOrCurve2
+  let frontDipOrCurve1, frontDipOrCurve2
   if (options.frontCurve > 0) {
     frontDipOrCurve1 = options.frontCurve
     frontDipOrCurve2 = options.frontDip
@@ -214,8 +213,8 @@ export default function (part) {
   /* Control point for waistband dip */
   points.frontWaistBandLeftCp1 = points.frontWaistBandMid.shift(0,points.frontWaistBandMid.dx(points.frontWaistBandLeft) / 3 )
   
-  // report the expected 'drop'in waist band from side to center (when worn) 
-  raise.info(['expectedDropFromWaistToCenter', units(measurements.waistToUpperLeg * (options.frontCurve + options.frontDip))])
+  // report the expected 'drop' in waist band from side to center (when worn) 
+  raise.info(['expectedDropFromWaistToCenterFront', units(measurements.waistToUpperLeg * (options.frontCurve + options.frontDip))])
 
   /* Flip points to right side */
   points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) 

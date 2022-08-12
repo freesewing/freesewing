@@ -14,11 +14,29 @@ export default function (part) {
     sa,
     paperless,
     macro,
+    raise,
+    units
   } = part.shorthand()
 
   // Design pattern here
+  
+  // back curve and/or back dip
+  // back curve and back dip accomplish the same goal in two different ways:
+  // goal: reduce back height at the center
+  // back dip: curve waist band (pattern part is smile-shaped)
+  // back curve: start by curving the waist band, then straigthten the part (top of pattern part is roughly horizontal)
+  // if combined: apply back curve first, then back dip
+  
+  let backDipOrCurve1, backDipOrCurve2
+  if (options.backCurve > 0) {
+    backDipOrCurve1 = options.backCurve
+    backDipOrCurve2 = options.backDip
+  } else {
+    backDipOrCurve1 = options.backDip
+    backDipOrCurve2 = 0
+  }
 
-  // Create points
+  // derive side seam from front (*before* the dip was converted into a curve)
   points.backWaistMid = new Point(measurements.seat / 4, 0)
   points.backWaistBandLeft = new Point(
     store.get('sideSeamWaist').x / options.backToFrontWidth,
@@ -28,13 +46,51 @@ export default function (part) {
     store.get('sideSeamHip').x / options.backToFrontWidth,
     store.get('sideSeamHip').y
   )
+  
+  points.backWaistBandRight = points.backWaistBandLeft.flipX(points.backWaistMid)
 
-  // back height is given by (estimated) cross seam, minus front and gusset lengths
+  points.backWaistBandMid = points.backWaistBandLeft
+    .shiftFractionTowards(points.backWaistBandRight, 0.5)
+    .shift(270, measurements.waistToUpperLeg * backDipOrCurve1 * store.get('yScaleReduced')) /* Waist band dip (or curve)*/
+    
+  // unlike front exposure (i.e. taperToGusset), curvature of the leg opening should not depend on backCurve
+  // ==> apply curvature first, then calculate control points
+  // straighten the part (if needed)
+  let curveAsAngle
+  if (options.backCurve > 0) {
+    // create copies of the original points
+    points.backWaistBandLeftPreCurve = points.backWaistBandLeft
+    points.backLegOpeningLeftPreCurve = points.backLegOpeningLeft
+    
+    // convert the dip to a curve
+    curveAsAngle = points.backWaistBandLeft.angle(points.backWaistBandMid)
+    points.backWaistBandLeft = points.backWaistBandLeft.rotate(-curveAsAngle,points.backWaistBandMid)
+    points.backLegOpeningLeft = points.backLegOpeningLeft.rotate(-curveAsAngle,points.backWaistBandMid)
+
+    // (ignore these two TODOs for now)
+    // TODO: recalculate the back height and portions 'above' and 'below'
+    // TODO: adjust the height of the 'below' part
+  } else {
+    curveAsAngle = 0
+  }
+  // recalculate backWaistBandRight  
+  points.backWaistBandRight = points.backWaistBandLeft.flipX(points.backWaistMid)
+  
+
+  // if back is both curved and dipped, apply the dip
+  // backDipOrCurve2 is zero if this isn't needed, so apply regardless of value
+  points.backWaistBandMid = points.backWaistBandMid.shift(270, measurements.waistToUpperLeg * backDipOrCurve2 * store.get('yScaleReduced'))        
+  
+  // report the expected 'drop' in waist band from side to center (when worn) 
+  raise.info(['expectedDropFromWaistToCenterBack', units(measurements.waistToUpperLeg * (options.backCurve + options.backDip))])  
+    
+  // back height is given by (estimated) cross seam, minus back and gusset lengths
   // this does not account for vertical stretch yet
   // NOTE: both frontHeight and backHeight include the rise
   const backHeight = store.get('crossSeam') - store.get('frontHeight') - options.gussetLength * measurements.seat
 
   // calculate the actual back height, using yScale above and yScaleReduced below leg opening
+  // heightAbove is same for front and back (ignoring their respective curves)
   const backHeightAbove = store.get('frontHeightAbove')
 
   let backHeightBelow
@@ -55,15 +111,6 @@ export default function (part) {
   points.backLegOpeningRight = points.backLegOpeningLeft.flipX(points.backWaistMid)
   points.backWaistBandRight = points.backWaistBandLeft.flipX(points.backWaistMid)
 
-  points.backWaistBandMid = points.backWaistBandLeft
-    .shiftFractionTowards(points.backWaistBandRight, 0.5)
-    .shift(270, measurements.waistToUpperLeg * options.backDip)
-
-  /* Middle point for label */
-  points.backMidMid = points.backLegOpeningLeft.shiftFractionTowards(
-    points.backLegOpeningRight,
-    0.5
-  )
 
   // Create control points
 
@@ -135,6 +182,12 @@ export default function (part) {
 
   points.backLegOpeningRightCp1 = points.backLegOpeningLeftCp1.flipX(points.backWaistMid)
   points.backGussetRightCp1 = points.backGussetLeftCp1.flipX(points.backWaistMid)
+
+  /* Middle point for label */
+  points.backMidMid = points.backLegOpeningLeft.shiftFractionTowards(
+    points.backLegOpeningRight,
+    0.5
+  )
 
   // Draw paths
 
