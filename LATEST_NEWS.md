@@ -1,6 +1,6 @@
-##### Next contributor call on 6 August
+##### Next contributor call on 20 August
 
-[The next contributor call](https://github.com/freesewing/freesewing/discussions/2522) is on **6 August 2022**, Lexander and Karen will host it.
+[The next contributor call](https://github.com/freesewing/freesewing/discussions) is on **20 August 2022**, Lexander and Karen will host it.
 
 The call is on [discord.freesewing.org](https://discord.freesewing.org/).
 Check the meetings voice/video channel.
