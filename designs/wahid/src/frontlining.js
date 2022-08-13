@@ -24,8 +24,8 @@ export default (part) => {
   paths.seam.close()
   if (complete) {
     //Grainline    
-    points.grainlineFromLining = new Point(points.dartEnd.x,points.dartEnd.y).shift(0,15)
-    points.grainlineToLining = new Point(points.dartEnd.x,points.dartEnd.y).shift(90,400).shift(0,15)   
+    points.grainlineFromLining = new Point(points.dartEnd.x,points.dartEnd.y).shift(90,400).shift(0,15)  
+    points.grainlineToLining =   new Point(points.dartEnd.x,points.dartEnd.y).shift(0,15)
     macro('grainline', {
     from: points.grainlineFromLining,
     to: points.grainlineToLining

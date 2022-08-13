@@ -30,8 +30,8 @@ export default (part) => {
   if (complete) {
     // Grainline
     if (options.hemStyle === 'classic') {
-    points.grainlineFromFrontFacing = new Point(points.hemTip.x, points.hemTip.y).shift(90,20)
-    points.grainlineToFrontFacing = new Point(points.hemTip.x, points.closureTop.y) 
+    points.grainlineFromFrontFacing = new Point(points.hemTip.x, points.closureTop.y)
+    points.grainlineToFrontFacing =  new Point(points.hemTip.x, points.hemTip.y).shift(90,20)
     }
     if (options.hemStyle === 'rounded') {
     points.grainlineFromFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y).shift(90,200)

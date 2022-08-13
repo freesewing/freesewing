@@ -267,12 +267,12 @@ export default (part) => {
     
      // Grainline
      if (options.hemStyle === 'classic') {
-     points.grainLineFromFront = new Point(points.hemTip.x, points.hemTip.y).shift(90,20)
-     points.grainLineToFront = new Point(points.hemTip.x, points.closureTop.y)
+     points.grainLineFromFront =  new Point(points.hemTip.x, points.closureTop.y)
+     points.grainLineToFront =new Point(points.hemTip.x, points.hemTip.y).shift(90,20)
     }
     if (options.hemStyle === 'rounded') {
-      points.grainLineFromFront = new Point(points.roundEnd.x, points.roundEnd.y).shift(90,200)
-      points.grainLineToFront = new Point(points.roundEnd.x, points.roundEnd.y) 
+      points.grainLineFromFront = new Point(points.roundEnd.x, points.roundEnd.y).shift(90,200) 
+      points.grainLineToFront = new Point(points.roundEnd.x, points.roundEnd.y)  
      
       }
     if (options.hemStyle === 'square') {
