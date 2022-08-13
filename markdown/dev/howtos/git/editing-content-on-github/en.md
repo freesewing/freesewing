@@ -31,7 +31,7 @@ The Github documentation provides a more [detailed explanation](https://docs.git
 ## Make the edits
 - Navigate to the folder containing the file that you want to edit.
 
-To help you understand how the repository is organised, here is the path to the Simone instructions: `freesewing/markdown/org/docs/patterns/simone/instructions`  This folder contains several files, one for each language.
+To help you understand how the repository is organised, here is the path to the Simone instructions: `freesewing/markdown/org/docs/patterns/simone/instructions`  This folder contains several files, one for each language.  
 ![Path to Simone instructions](simone-instructions-path.png)
 
 - Select on the file you want to update. Please only edit the English languagse files (called `en.md`), our translation software will handle the other languages. 
