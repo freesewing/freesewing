@@ -1,5 +1,5 @@
-import { constructMainDart, shapeSideSeam, dartPath } from './shared'
 
+import { constructMainDart, shapeSideSeam, dartPath } from './shared'
 export default (part) => {
   let {
     points,
@@ -17,11 +17,9 @@ export default (part) => {
     paperless,
     store,
   } = part.shorthand()
-
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   delete snippets.armholePitchNotch
-
   // Neck cutout
   points.closureTop = new Point(
     measurements.chest * options.frontOverlap * -1,
@@ -41,24 +39,19 @@ export default (part) => {
   points.armholeHollow = points.armholeHollow.shift(180, frontInset / 2)
   points.armholeHollowCp2 = points.armholeHollowCp2.shift(180, frontInset / 2)
   points.armholeHollowCp1 = points.armholeHollowCp1.shift(180, frontInset / 2)
-
   // Shoulder inset
   points.shoulder = points.shoulder.shiftTowards(points.neck, shoulderLen * options.shoulderInset)
   points.shoulderCp1 = points.shoulderCp1.shift(
     points.shoulder.angle(points.neck),
     shoulderLen * options.shoulderInset
   )
-
   // Neck inset
   points.neck = points.neck.shiftTowards(points.shoulder, shoulderLen * options.neckInset)
   points.neckCp2 = points.neck.shift(points.shoulder.angle(points.neck) + 90, shoulderLen * 0.2)
-
   // Construct main dart
   constructMainDart(part)
-
   // Shape side seam
   shapeSideSeam(part)
-
   // Hem
   if (options.hemStyle === 'classic') {
     // Construct cutaway
@@ -120,16 +113,13 @@ export default (part) => {
   // (essentially a rounded hem with radius zero
   if (!points.roundStart) points.roundStart = points.closureBottom.clone()
   if (!points.roundEnd) points.roundEnd = points.closureBottom.clone()
-
   // Add dart start and end point regardless of style or front or back
   points.dartStart = options.hemStyle === 'classic' ? points.splitDartHemLeft : points.dartHemLeft
   points.dartEnd = options.hemStyle === 'classic' ? points.splitDartHemRight : points.dartHemRight
-
   // Pockets
   let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
   let pwvh = pwh / Math.cos(utils.deg2rad(options.pocketAngle)) // Pocket welt vertical height
-
   points.pocketTopMid = points.dartWaistCenter.shiftFractionTowards(
     points.dartHipCenter,
     options.pocketLocation
@@ -156,7 +146,6 @@ export default (part) => {
   points.pocketBottomRight = points.pocketTopRight.shift(options.pocketAngle - 90, pwh)
   // Store pocket bag length
   store.set('pocketBagLength', points.pocketTopMid.dy(points.cfHem) * 0.75)
-
   if (options.frontScyeDart) {
     // Front scye dart
     points._dartWidth = points.dartTop.shiftFractionTowards(
@@ -205,12 +194,10 @@ export default (part) => {
     }
     points.armholeHollowCp1 = points.armholeHollowCp2.rotate(180, points.armholeHollow)
   }
-
   // Facing/Lining boundary (flb)
   points.flbTop = points.neck.shiftFractionTowards(points.shoulder, 0.5)
   points.flbCp = points.dartTop.shift(-90, points.armholePitch.dy(points.flbTop) / 2)
   points.flbCpTop = points.flbTop.shiftTowards(points.neck, points.flbTop.dy(points.armholePitch)).rotate(90, points.flbTop)
-
   // Seam line
   delete paths.cutonfold
   delete paths.saBase
@@ -248,7 +235,6 @@ export default (part) => {
   paths.saBase.render = false
   paths.hemBase.render = false
   paths.dart.render = false
-
   if (complete) {
     // Pocket path
     paths.pocket = new Path()
@@ -261,7 +247,6 @@ export default (part) => {
       .line(points.pocketTopRight)
       .line(points.pocketTopMidRight)
       .attr('class', 'fabric dashed')
-
     // Buttons
     points.button1 = new Point(0, points.closureTop.y + 10)
     let delta = points.button1.dist(points.lastButton) / (options.buttons - 1)
@@ -273,22 +258,39 @@ export default (part) => {
         90
       )
     }
-
     // Facing/Lining boundary (flb)
     paths.flbFacing = new Path()
       .move(points.dartTop)
       .curve(points.flbCp, points.flbCpTop, points.flbTop)
       .attr('class', 'fabric')
     paths.flbLining = paths.flbFacing.clone().attr('class', 'lining dashed')
-
+    
+     // Grainline
+     if (options.hemStyle === 'classic') {
+     points.grainLineFromFront = new Point(points.hemTip.x, points.hemTip.y).shift(90,20)
+     points.grainLineToFront = new Point(points.hemTip.x, points.closureTop.y)
+    }
+    if (options.hemStyle === 'rounded') {
+      points.grainLineFromFront = new Point(points.roundEnd.x, points.roundEnd.y).shift(90,200)
+      points.grainLineToFront = new Point(points.roundEnd.x, points.roundEnd.y) 
+     
+      }
+    if (options.hemStyle === 'square') {
+      points.grainLineFromFront = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y).shift(90,200)
+      points.grainLineToFront = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y) 
+     
+      }
+      macro('grainline', {
+        from: points.grainLineFromFront,
+        to: points.grainLineToFront
+      })
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)
         .join(paths.hemBase.offset(sa))
         .close()
-        .attr('class', 'fabric sa')
+        .attr('classF', 'fabric sa')
     }
-
     if (paperless) {
       macro('hd', {
         from: points.closureTop,
@@ -473,6 +475,5 @@ export default (part) => {
       })
     }
   }
-
   return part
 }

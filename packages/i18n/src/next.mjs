@@ -7,20 +7,17 @@ import enNamespaces from "./next/en/index.mjs"
 import esNamespaces from "./next/es/index.mjs"
 import frNamespaces from "./next/fr/index.mjs"
 import nlNamespaces from "./next/nl/index.mjs"
-import ukNamespaces from "./next/uk/index.mjs"
 
 export const de = deNamespaces
 export const en = enNamespaces
 export const es = esNamespaces
 export const fr = frNamespaces
 export const nl = nlNamespaces
-export const uk = ukNamespaces
 
 export const languages = {
   de: "Deutsch",
   en: "English",
   es: "Español",
   fr: "Français",
-  nl: "Nederlands",
-  uk: "undefined"
+  nl: "Nederlands"
 }

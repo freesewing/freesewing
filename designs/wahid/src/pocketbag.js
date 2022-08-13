@@ -1,10 +1,9 @@
+
 export default (part) => {
   let { points, Point, paths, Path, measurements, options, macro, complete, paperless, store } =
     part.shorthand()
-
   let pw = measurements.hips * options.pocketWidth // Pocket width
   let ph = store.get('pocketBagLength') // Pocket height
-
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pw + 30, 0)
   points.bottomLeft = new Point(0, ph + 10)
@@ -25,7 +24,6 @@ export default (part) => {
     render: false,
     prefix: 'roundRight',
   })
-
   paths.seam = new Path()
     .move(points.topLeft)
     .line(points.roundLeftStart)
@@ -36,7 +34,6 @@ export default (part) => {
     .line(points.topLeft)
     .close()
     .attr('class', 'lining')
-
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', {
@@ -45,7 +42,14 @@ export default (part) => {
       at: points.title,
     })
   }
-
+   //Grainline    
+   points.grainlineFromPocketBag = new Point(points.topLeft.x,points.topLeft.y).shift(0,15)
+   points.grainlineToPocketbag = new Point(points.topLeft.x,points.topLeft.y).shift(0,15).shift(-90,ph)   
+   points.grainlineToPocketbagRotated = points.grainlineToPocketbag.rotate(options.pocketAngle, points.grainlineFromPocketBag )
+   macro('grainline', {
+   from: points.grainlineFromPocketBag,
+   to: points.grainlineToPocketbagRotated
+  })
   if (paperless) {
     macro('hd', {
       from: points.bottomLeft,
@@ -58,6 +62,5 @@ export default (part) => {
       x: points.topRight.x + 15,
     })
   }
-
   return part
 }
