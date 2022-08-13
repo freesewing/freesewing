@@ -1,15 +1,15 @@
 ---
-title: Editing freesewing content on Github
+title: Editing freesewing content on GitHub
 ---
 
 ## Introduction
-This 'How to' is designed to help get you started editing content using the [Github website](https://github.com/freesewing).
+This 'How to' is designed to help get you started editing content using the [GitHub website](https://github.com/freesewing).
 
-Github  stores all the Freesewing content, it allows supporters to suggest edits, and helps the administrators to review and implement approved changes.
+GitHub stores all the Freesewing content, it allows supporters to suggest edits, and helps the administrators to review and implement approved changes.
 
-If you are new to Githbub, you will need to [create an account](https://github.com/signup?user_email=&source=form-home-signup).
+If you are new to GitHub, you will need to [create an account](https://github.com/signup?user_email=&source=form-home-signup).
 
-For info, it is also possible to make changes using the Git desktop application and/or your computer's command line; these advanced topics are beyond the scope of this 'How to'.
+For info, it is also possible to make changes using the GitHub desktop application and/or your computer's command line; these advanced topics are beyond the scope of this 'How to'.
 
 All pattern instructions and web pages (including this 'How to') are written in *Markdown*. Please see our [Markdown guide](https://freesewing.dev/guides/markdown) for more information on this.
 
@@ -19,10 +19,10 @@ For security, most contributors don't have permission to change the code.  Inste
 2. Make the edits.
 3. Save your edits and submit a *pull request* to let the admins know about your changes. This says *"hey, I made some changes. I think you might like them and consider them for inclusion into your (original) repository."*
 
-The Github documentation provides a more [detailed explanation](https://docs.github.com/en/get-started/quickstart/fork-a-repo), but this guide should be enough to help you get started.
+The GitHub documentation provides a more [detailed explanation](https://docs.github.com/en/get-started/quickstart/fork-a-repo), but this guide should be enough to help you get started.
 
 ## Fork the repository
-- On Github.com, navigate to the freesewing [repository](https://github.com/freesewing/freesewing)
+- On GitHub.com, navigate to the freesewing [repository](https://github.com/freesewing/freesewing)
 - In the top-right corner of the page, click **Fork**  
 ![Fork button](fork_button.png)
 - Click the **Create fork** button.  
@@ -55,4 +55,4 @@ Now you will create a *pull request* to let the admins know your edits are ready
 
 Congratulations - you have just submitted your first edits to the site maintainers!
 
-You can keep track of the progress of your changes in Github or in the [github-updates channel](discord-github-updates.PNG) on our Discord server.
+You can keep track of the progress of your changes in GitHub or in the [github-updates channel](discord-github-updates.PNG) on our Discord server.
