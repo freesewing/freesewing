@@ -1,4 +1,3 @@
-
 import { constructMainDart, shapeSideSeam, dartPath } from './shared'
 export default (part) => {
   let {
@@ -197,7 +196,9 @@ export default (part) => {
   // Facing/Lining boundary (flb)
   points.flbTop = points.neck.shiftFractionTowards(points.shoulder, 0.5)
   points.flbCp = points.dartTop.shift(-90, points.armholePitch.dy(points.flbTop) / 2)
-  points.flbCpTop = points.flbTop.shiftTowards(points.neck, points.flbTop.dy(points.armholePitch)).rotate(90, points.flbTop)
+  points.flbCpTop = points.flbTop
+    .shiftTowards(points.neck, points.flbTop.dy(points.armholePitch))
+    .rotate(90, points.flbTop)
   // Seam line
   delete paths.cutonfold
   delete paths.saBase
@@ -264,26 +265,27 @@ export default (part) => {
       .curve(points.flbCp, points.flbCpTop, points.flbTop)
       .attr('class', 'fabric')
     paths.flbLining = paths.flbFacing.clone().attr('class', 'lining dashed')
-    
-     // Grainline
-     if (options.hemStyle === 'classic') {
-     points.grainLineFromFront =  new Point(points.hemTip.x, points.closureTop.y)
-     points.grainLineToFront =new Point(points.hemTip.x, points.hemTip.y).shift(90,20)
+
+    // Grainline
+    if (options.hemStyle === 'classic') {
+      points.grainLineFromFront = new Point(points.hemTip.x, points.closureTop.y)
+      points.grainLineToFront = new Point(points.hemTip.x, points.hemTip.y).shift(90, 20)
     }
     if (options.hemStyle === 'rounded') {
-      points.grainLineFromFront = new Point(points.roundEnd.x, points.roundEnd.y).shift(90,200) 
-      points.grainLineToFront = new Point(points.roundEnd.x, points.roundEnd.y)  
-     
-      }
+      points.grainLineFromFront = new Point(points.roundEnd.x, points.roundEnd.y).shift(90, 200)
+      points.grainLineToFront = new Point(points.roundEnd.x, points.roundEnd.y)
+    }
     if (options.hemStyle === 'square') {
-      points.grainLineFromFront = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y).shift(90,200)
-      points.grainLineToFront = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y) 
-     
-      }
-      macro('grainline', {
-        from: points.grainLineFromFront,
-        to: points.grainLineToFront
-      })
+      points.grainLineFromFront = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y).shift(
+        90,
+        200
+      )
+      points.grainLineToFront = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y)
+    }
+    macro('grainline', {
+      from: points.grainLineFromFront,
+      to: points.grainLineToFront,
+    })
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)

@@ -1,4 +1,3 @@
-
 export default (part) => {
   let { points, Point, paths, Path, measurements, options, macro, complete, paperless, store } =
     part.shorthand()
@@ -42,13 +41,18 @@ export default (part) => {
       at: points.title,
     })
   }
-   //Grainline    
-   points.grainlineFromPocketBag = new Point(points.topLeft.x,points.topLeft.y).shift(0,15)
-   points.grainlineToPocketbag = new Point(points.topLeft.x,points.topLeft.y).shift(0,15).shift(-90,ph)   
-   points.grainlineToPocketbagRotated = points.grainlineToPocketbag.rotate(options.pocketAngle, points.grainlineFromPocketBag )
-   macro('grainline', {
-   from: points.grainlineFromPocketBag,
-   to: points.grainlineToPocketbagRotated
+  //Grainline
+  points.grainlineFromPocketBag = new Point(points.topLeft.x, points.topLeft.y).shift(0, 15)
+  points.grainlineToPocketbag = new Point(points.topLeft.x, points.topLeft.y)
+    .shift(0, 15)
+    .shift(-90, ph)
+  points.grainlineToPocketbagRotated = points.grainlineToPocketbag.rotate(
+    options.pocketAngle,
+    points.grainlineFromPocketBag
+  )
+  macro('grainline', {
+    from: points.grainlineFromPocketBag,
+    to: points.grainlineToPocketbagRotated,
   })
   if (paperless) {
     macro('hd', {

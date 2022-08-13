@@ -43,7 +43,7 @@ export default {
     'shoulderToShoulder',
     'waist',
   ],
-  optionalMeasurements: [ 'highBust' ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     backBlock: 'base',
     frontBlock: 'backBlock',

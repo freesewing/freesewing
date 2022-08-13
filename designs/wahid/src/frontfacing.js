@@ -30,25 +30,29 @@ export default (part) => {
   if (complete) {
     // Grainline
     if (options.hemStyle === 'classic') {
-    points.grainlineFromFrontFacing = new Point(points.hemTip.x, points.closureTop.y)
-    points.grainlineToFrontFacing =  new Point(points.hemTip.x, points.hemTip.y).shift(90,20)
+      points.grainlineFromFrontFacing = new Point(points.hemTip.x, points.closureTop.y)
+      points.grainlineToFrontFacing = new Point(points.hemTip.x, points.hemTip.y).shift(90, 20)
     }
     if (options.hemStyle === 'rounded') {
-    points.grainlineFromFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y).shift(90,200)
-    points.grainlineToFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y) 
- 
+      points.grainlineFromFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y).shift(
+        90,
+        200
+      )
+      points.grainlineToFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y)
     }
     if (options.hemStyle === 'square') {
-      points.grainlineFromFrontFacing = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y).shift(90,200)
-      points.grainlineToFrontFacing = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y) 
-     
-      }
-   
-      macro('grainline', {
-        from: points.grainlineFromFrontFacing,
-      to: points.grainlineToFrontFacing
-        })
-   
+      points.grainlineFromFrontFacing = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y).shift(
+        90,
+        200
+      )
+      points.grainlineToFrontFacing = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y)
+    }
+
+    macro('grainline', {
+      from: points.grainlineFromFrontFacing,
+      to: points.grainlineToFrontFacing,
+    })
+
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     points.title = new Point(points.dartWaistLeft.x / 2, points.waist.y)
     macro('title', {
@@ -56,7 +60,7 @@ export default (part) => {
       at: points.title,
       title: 'frontFacing',
     })
-    
+
     points.logo = points.closureTop.shiftFractionTowards(points.dartWaistLeft, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
   }

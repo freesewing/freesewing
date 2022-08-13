@@ -1,4 +1,3 @@
-
 export default (part) => {
   let { points, Point, paths, Path, measurements, options, macro, complete, paperless } =
     part.shorthand()
@@ -25,14 +24,19 @@ export default (part) => {
       title: 'pocketInterfacing',
       at: points.title,
     })
-    //Grainline    
-   points.grainlineFromInterfacing = new Point(points.topLeft.x,points.topLeft.y).shift(0,35)
-   points.grainlineToInterfacing = new Point(points.topLeft.x,points.topLeft.y).shift(0,35).shift(-90,pwh+20)   
-   points.grainlineToInterfacingRotated = points.grainlineToInterfacing.rotate(options.pocketAngle, points.grainlineFromInterfacing )
-   macro('grainline', {
-   from: points.grainlineFromInterfacing,
-   to: points.grainlineToInterfacingRotated
-  })
+    //Grainline
+    points.grainlineFromInterfacing = new Point(points.topLeft.x, points.topLeft.y).shift(0, 35)
+    points.grainlineToInterfacing = new Point(points.topLeft.x, points.topLeft.y)
+      .shift(0, 35)
+      .shift(-90, pwh + 20)
+    points.grainlineToInterfacingRotated = points.grainlineToInterfacing.rotate(
+      options.pocketAngle,
+      points.grainlineFromInterfacing
+    )
+    macro('grainline', {
+      from: points.grainlineFromInterfacing,
+      to: points.grainlineToInterfacingRotated,
+    })
     macro('sprinkle', {
       snippet: 'notch',
       on: ['notchLeft', 'notchRight'],
