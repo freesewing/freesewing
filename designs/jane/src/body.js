@@ -112,14 +112,56 @@ export default function (part) {
 
 
     if (sa) {
-
+      paths.sa = paths.sideseam.offset(sa).attr('class', 'fabric sa')
     }
   }
 
   // Paperless?
   if (paperless) {
+    macro('hd', {
+      from: points.topLeft,
+      to: points.topRight,
+      x: points.topLeft.x + sa + 30
+    })
 
+    macro('vd', {
+      from: points.topLeft,
+      to: points.bottomLeft,
+      x: points.topLeft.y + sa + 30
+    })
+
+    macro('vd', {
+      from: points.topLeft,
+      to: points.gorestartLeft,
+      x: points.topLeft.y + sa + 40
+    })
+
+    macro('hd', {
+      from: points.rightShoulder,
+      to: points.topRight,
+      x: points.rightShoulder.x + sa + 30
+    })
+
+    
+  macro('hd', {
+    from: points.middle,
+    to: points.neckBack,
+    x: points.middle.y + sa + 15
+  })
+
+  macro('hd', {
+    from: points.middle,
+    to: points.neckFront,
+    x: points.middle.y + sa + 25
+  })
+
+  macro('hd', {
+    from: points.middle,
+    to: points.neckLeft,
+    x: points.leftShoulder.x + sa + 30
+  })
   }
+
 
   return part
 }
