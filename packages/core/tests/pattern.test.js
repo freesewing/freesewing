@@ -723,6 +723,8 @@ it("Should retrieve the cutList", () => {
 });
 
 // 2022 style part inheritance
+// I am aware this does too much for one unit test, but this is to simplify TDD
+// we can split it up later
 it("Design constructor should resolve nested dependencies (2022)", () => {
   const partA = {
     name: "partA",
@@ -765,19 +767,35 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
       return part
     }
   }
+  const partR = { // R for runtime, which is when this wil be attached
+    name: "partR",
+    from: partA,
+    options: { optionR: { dflt: 'red', list: ['red', 'green', 'blue'] } },
+    measurements: [ 'measieR' ],
+    optionalMeasurements: [ 'optmeasieR', 'measieA' ],
+    draft: part => {
+      const { points, Point, paths, Path } = part.shorthand()
+      points.r1 = new Point(4,4)
+      points.r2 = new Point(44,44)
+      paths.r = new Path().move(points.r1).line(points.r2)
+      return part
+    }
+  }
 
-  const design = new freesewing.Design({ parts: { partC } });
-  const pattern = new design().draft()
+  const Design = new freesewing.Design({ parts: { partC } });
+  const pattern = new Design().addPart(partR).draft()
   // Measurements
-  expect(pattern.config.measurements.length).to.equal(3)
+  expect(pattern.config.measurements.length).to.equal(4)
   expect(pattern.config.measurements.indexOf('measieA') === -1).to.equal(false)
   expect(pattern.config.measurements.indexOf('measieB') === -1).to.equal(false)
   expect(pattern.config.measurements.indexOf('measieC') === -1).to.equal(false)
+  expect(pattern.config.measurements.indexOf('measieR') === -1).to.equal(false)
   // Optional measurements
-  expect(pattern.config.optionalMeasurements.length).to.equal(3)
+  expect(pattern.config.optionalMeasurements.length).to.equal(4)
   expect(pattern.config.optionalMeasurements.indexOf('optmeasieA') === -1).to.equal(false)
   expect(pattern.config.optionalMeasurements.indexOf('optmeasieB') === -1).to.equal(false)
   expect(pattern.config.optionalMeasurements.indexOf('optmeasieC') === -1).to.equal(false)
+  expect(pattern.config.optionalMeasurements.indexOf('optmeasieR') === -1).to.equal(false)
   expect(pattern.config.optionalMeasurements.indexOf('measieA') === -1).to.equal(true)
   // Options
   expect(pattern.config.options.optionA.bool).to.equal(true)
@@ -787,17 +805,23 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
   expect(pattern.config.options.optionC.deg).to.equal(5)
   expect(pattern.config.options.optionC.min).to.equal(0)
   expect(pattern.config.options.optionC.max).to.equal(15)
+  expect(pattern.config.options.optionR.dflt).to.equal('red')
+  expect(pattern.config.options.optionR.list[0]).to.equal('red')
+  expect(pattern.config.options.optionR.list[1]).to.equal('green')
+  expect(pattern.config.options.optionR.list[2]).to.equal('blue')
   // Dependencies
   expect(pattern.config.dependencies.partB[0]).to.equal('partA')
   expect(pattern.config.dependencies.partC[0]).to.equal('partB')
+  expect(pattern.config.dependencies.partR[0]).to.equal('partA')
   // Inject
   expect(pattern.config.inject.partB).to.equal('partA')
   expect(pattern.config.inject.partC).to.equal('partB')
+  expect(pattern.config.inject.partR).to.equal('partA')
   // Draft order
   expect(pattern.config.draftOrder[0]).to.equal('partA')
   expect(pattern.config.draftOrder[1]).to.equal('partB')
   expect(pattern.config.draftOrder[2]).to.equal('partC')
-  expect(pattern.config.draftOrder[2]).to.equal('partC')
+  expect(pattern.config.draftOrder[3]).to.equal('partR')
   // Points
   expect(pattern.parts.partA.points.a1.x).to.equal(1)
   expect(pattern.parts.partA.points.a1.y).to.equal(1)
@@ -811,6 +835,10 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
   expect(pattern.parts.partC.points.c1.y).to.equal(3)
   expect(pattern.parts.partC.points.c2.x).to.equal(33)
   expect(pattern.parts.partC.points.c2.y).to.equal(33)
+  expect(pattern.parts.partR.points.r1.x).to.equal(4)
+  expect(pattern.parts.partR.points.r1.y).to.equal(4)
+  expect(pattern.parts.partR.points.r2.x).to.equal(44)
+  expect(pattern.parts.partR.points.r2.y).to.equal(44)
   // Paths in partA
   expect(pattern.parts.partA.paths.a.ops[0].to.x).to.equal(1)
   expect(pattern.parts.partA.paths.a.ops[0].to.y).to.equal(1)
@@ -838,4 +866,13 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
   expect(pattern.parts.partC.paths.c.ops[0].to.y).to.equal(3)
   expect(pattern.parts.partC.paths.c.ops[1].to.x).to.equal(33)
   expect(pattern.parts.partC.paths.c.ops[1].to.y).to.equal(33)
+  // Paths in partR
+  expect(pattern.parts.partC.paths.a.ops[0].to.x).to.equal(1)
+  expect(pattern.parts.partC.paths.a.ops[0].to.y).to.equal(1)
+  expect(pattern.parts.partC.paths.a.ops[1].to.x).to.equal(11)
+  expect(pattern.parts.partC.paths.a.ops[1].to.y).to.equal(11)
+  expect(pattern.parts.partR.paths.r.ops[0].to.x).to.equal(4)
+  expect(pattern.parts.partR.paths.r.ops[0].to.y).to.equal(4)
+  expect(pattern.parts.partR.paths.r.ops[1].to.x).to.equal(44)
+  expect(pattern.parts.partR.paths.r.ops[1].to.y).to.equal(44)
 })

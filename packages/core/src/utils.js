@@ -388,3 +388,52 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
  * Makes sure an object passed to be attached as a part it not merely a method
  */
 export const decoratePartDependency = (obj, name) => (typeof obj === 'function') ? { draft: obj, name } : obj
+
+// Add part-level options
+export const addOptions = (part, config) => {
+  if (part.options) {
+    for (const optionName in part.options) {
+      config.options[optionName] = part.options[optionName]
+    }
+  }
+  if (part.from) addOptions(part.from, config)
+
+  return config
+}
+
+// Add part-level measurements
+export const addMeasurements = (part, config, list=false) => {
+  if (!list) list = config.measurements
+    ? [...config.measurements]
+    : []
+  if (part.measurements) {
+    for (const m of part.measurements) list.push(m)
+  }
+  if (part.from) addMeasurements(part.from, config, list)
+
+  // Weed out duplicates
+  config.measurements = [...new Set(list)]
+
+  return config
+}
+
+// Add part-level optional measurements
+export const addOptionalMeasurements = (part, config, list=false) => {
+  if (!list) list = config.optionalMeasurements
+    ? [...config.optionalMeasurements]
+    : []
+  if (part.optionalMeasurements) {
+    for (const m of part.optionalMeasurements) {
+      // Don't add it's a required measurement for another part
+      if (config.measurements.indexOf(m) === -1) list.push(m)
+    }
+  }
+  if (part.from) addOptionalMeasurements(part.from, config, list)
+
+  // Weed out duplicates
+  config.optionalMeasurements = [...new Set(list)]
+
+  return config
+}
+
+

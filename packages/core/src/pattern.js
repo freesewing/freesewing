@@ -1,4 +1,12 @@
-import { macroName, sampleStyle, capitalize, decoratePartDependency } from './utils'
+import {
+  macroName,
+  sampleStyle,
+  capitalize,
+  decoratePartDependency,
+  addOptions,
+  addMeasurements,
+  addOptionalMeasurements
+} from './utils.js'
 import Part from './part'
 import Point from './point'
 import Path from './path'
@@ -243,10 +251,17 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
 /*
  * Allows adding a part at run-time
  */
-Pattern.prototype.addPart = function (part, name=false, key) {
-  if (!part.draft) part = decoratePartDependency(part, givenName)
+Pattern.prototype.addPart = function (part, name=false) {
+  if (!part.draft) part = decoratePartDependency(part, name)
   if (typeof part?.draft === 'function') {
-    this.__parts[part.name] = part
+    if (part.name) {
+      this.config.parts[part.name] = part
+      // Add part options/measurements/optionalMeasurements to config
+      this.config = addOptions(part, this.config)
+      this.config = addMeasurements(part, this.config)
+      this.config = addOptionalMeasurements(part, this.config)
+    }
+    else this.raise.error(`Part must have a name`)
   }
   else this.raise.warning(`Cannot attach part ${name} because it is not a part`)
 
