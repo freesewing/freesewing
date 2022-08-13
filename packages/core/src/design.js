@@ -1,5 +1,6 @@
 import Pattern from './pattern'
 
+// Add part-level options
 const addOptions = (part, config) => {
   if (part.options) {
     for (const optionName in part.options) {
@@ -11,18 +12,58 @@ const addOptions = (part, config) => {
   return config
 }
 
+// Add part-level measurements
+const addMeasurements = (part, config, list=false) => {
+  if (!list) list = config.measurements
+    ? [...config.measurements]
+    : []
+  if (part.measurements) {
+    for (const m of part.measurements) list.push(m)
+  }
+  if (part.from) addMeasurements(part.from, config, list)
+
+  // Weed out duplicates
+  config.measurements = [...new Set(list)]
+
+  return config
+}
+
+// Add part-level optional measurements
+const addOptionalMeasurements = (part, config, list=false) => {
+  if (!list) list = config.optionalMeasurements
+    ? [...config.optionalMeasurements]
+    : []
+  if (part.optionalMeasurements) {
+    for (const m of part.optionalMeasurements) {
+      // Don't add it's a required measurement for another part
+      if (config.measurements.indexOf(m) === -1) list.push(m)
+    }
+  }
+  if (part.from) addOptionalMeasurements(part.from, config, list)
+
+  // Weed out duplicates
+  config.optionalMeasurements = [...new Set(list)]
+
+  return config
+}
+
 /*
  * The Design constructor. Returns a Pattern constructor
  * So it's sort of a super-constructor
  */
 export default function Design(config, plugins = false, conditionalPlugins = false) {
-  // Add part options to config
+  // Add part options/measurements/optionalMeasurements to config
   if (!config.options) config.options = {}
+  if (!config.measurements) config.measurements = []
+  if (!config.optionalMeasurements) config.optionalMeasurements = []
   if (config.parts) {
     for (const partName in config.parts) {
       config = addOptions(config.parts[partName], config)
+      config = addMeasurements(config.parts[partName], config)
+      config = addOptionalMeasurements(config.parts[partName], config)
     }
   }
+
   // Ensure all options have a hide() method
   config.options = optionsWithHide(config.options)
 

@@ -722,3 +722,89 @@ it("Should retrieve the cutList", () => {
   expect(JSON.stringify(pattern.getCutList())).to.equal(list)
 });
 
+// 2022 style part inheritance
+it("Design constructor should resolve nested dependencies (2022)", () => {
+  const partA = {
+    name: "partA",
+    options: { optionA: { bool: true } },
+    measurements: [ 'measieA' ],
+    optionalMeasurements: [ 'optmeasieA' ],
+    draft: part => {
+      const { points, Point, paths, Path } = part.shorthand()
+      points.a1 = new Point(1,1)
+      points.a2 = new Point(11,11)
+      paths.a = new Path()
+        .move(points.a1)
+        .line(points.a1)
+
+      return part
+    }
+  }
+  const partB = {
+    name: "partB",
+    from: partA,
+    options: { optionB: { pct: 12, min: 2, max: 20 } },
+    measurements: [ 'measieB' ],
+    optionalMeasurements: [ 'optmeasieB', 'measieA' ],
+    draft: part => {
+      const { points, Point, paths, Path } = part.shorthand()
+      points.b1 = new Point(2,2)
+      points.b2 = new Point(22,22)
+      paths.b = new Path()
+        .move(points.b1)
+        .line(points.b1)
+
+      return part
+    }
+  }
+  const partC = {
+    name: "partC",
+    from: partB,
+    options: { optionC: { deg: 5, min: 0, max: 15 } },
+    measurements: [ 'measieC' ],
+    optionalMeasurements: [ 'optmeasieC', 'measieA' ],
+    draft: part => {
+      const { points, Point, paths, Path } = part.shorthand()
+      points.c1 = new Point(3,3)
+      points.c2 = new Point(33,33)
+      paths.c = new Path()
+        .move(points.c1)
+        .line(points.c1)
+
+      return part
+    }
+  }
+
+  const design = new freesewing.Design({ parts: { partC } });
+  const pattern = new design().draft()
+  // Measurements
+  expect(pattern.config.measurements.length).to.equal(3)
+  expect(pattern.config.measurements.indexOf('measieA') === -1).to.equal(false)
+  expect(pattern.config.measurements.indexOf('measieB') === -1).to.equal(false)
+  expect(pattern.config.measurements.indexOf('measieC') === -1).to.equal(false)
+  // Optional measurements
+  expect(pattern.config.optionalMeasurements.length).to.equal(3)
+  expect(pattern.config.optionalMeasurements.indexOf('optmeasieA') === -1).to.equal(false)
+  expect(pattern.config.optionalMeasurements.indexOf('optmeasieB') === -1).to.equal(false)
+  expect(pattern.config.optionalMeasurements.indexOf('optmeasieC') === -1).to.equal(false)
+  expect(pattern.config.optionalMeasurements.indexOf('measieA') === -1).to.equal(true)
+  // Options
+  expect(pattern.config.options.optionA.bool).to.equal(true)
+  expect(pattern.config.options.optionB.pct).to.equal(12)
+  expect(pattern.config.options.optionB.min).to.equal(2)
+  expect(pattern.config.options.optionB.max).to.equal(20)
+  expect(pattern.config.options.optionC.deg).to.equal(5)
+  expect(pattern.config.options.optionC.min).to.equal(0)
+  expect(pattern.config.options.optionC.max).to.equal(15)
+  // Dependencies
+  expect(pattern.config.dependencies.partB[0]).to.equal('partA')
+  expect(pattern.config.dependencies.partC[0]).to.equal('partB')
+  // Inject
+  expect(pattern.config.inject.partB).to.equal('partA')
+  expect(pattern.config.inject.partC).to.equal('partB')
+  // Draft order
+  expect(pattern.config.draftOrder[0]).to.equal('partA')
+  expect(pattern.config.draftOrder[1]).to.equal('partB')
+  expect(pattern.config.draftOrder[2]).to.equal('partC')
+  expect(pattern.config.draftOrder[2]).to.equal('partC')
+})
