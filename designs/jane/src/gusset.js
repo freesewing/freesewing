@@ -37,12 +37,23 @@ paths.gusset = new Path()
 
 
     if (sa) {
-
+      paths.sa = paths.gusset.offset(sa).attr('class', 'fabric sa')
     }
   }
 
   // Paperless?
   if (paperless) {
+    macro('hd', {
+      from: points.gussetLeft,
+      to: points.gussetRight,
+      x: points.gussetLeft.x + sa + 30
+    })
+
+    macro('hd', {
+      from: points.gussetLeft,
+      to: points.gussetBottomLeft,
+      x: points.gussetLeft.x + sa + 30
+    })
 
   }
 
