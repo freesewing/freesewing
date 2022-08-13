@@ -733,10 +733,7 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
       const { points, Point, paths, Path } = part.shorthand()
       points.a1 = new Point(1,1)
       points.a2 = new Point(11,11)
-      paths.a = new Path()
-        .move(points.a1)
-        .line(points.a1)
-
+      paths.a = new Path().move(points.a1).line(points.a2)
       return part
     }
   }
@@ -750,10 +747,7 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
       const { points, Point, paths, Path } = part.shorthand()
       points.b1 = new Point(2,2)
       points.b2 = new Point(22,22)
-      paths.b = new Path()
-        .move(points.b1)
-        .line(points.b1)
-
+      paths.b = new Path().move(points.b1).line(points.b2)
       return part
     }
   }
@@ -767,10 +761,7 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
       const { points, Point, paths, Path } = part.shorthand()
       points.c1 = new Point(3,3)
       points.c2 = new Point(33,33)
-      paths.c = new Path()
-        .move(points.c1)
-        .line(points.c1)
-
+      paths.c = new Path().move(points.c1).line(points.c2)
       return part
     }
   }
@@ -807,4 +798,44 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
   expect(pattern.config.draftOrder[1]).to.equal('partB')
   expect(pattern.config.draftOrder[2]).to.equal('partC')
   expect(pattern.config.draftOrder[2]).to.equal('partC')
+  // Points
+  expect(pattern.parts.partA.points.a1.x).to.equal(1)
+  expect(pattern.parts.partA.points.a1.y).to.equal(1)
+  expect(pattern.parts.partA.points.a2.x).to.equal(11)
+  expect(pattern.parts.partA.points.a2.y).to.equal(11)
+  expect(pattern.parts.partB.points.b1.x).to.equal(2)
+  expect(pattern.parts.partB.points.b1.y).to.equal(2)
+  expect(pattern.parts.partB.points.b2.x).to.equal(22)
+  expect(pattern.parts.partB.points.b2.y).to.equal(22)
+  expect(pattern.parts.partC.points.c1.x).to.equal(3)
+  expect(pattern.parts.partC.points.c1.y).to.equal(3)
+  expect(pattern.parts.partC.points.c2.x).to.equal(33)
+  expect(pattern.parts.partC.points.c2.y).to.equal(33)
+  // Paths in partA
+  expect(pattern.parts.partA.paths.a.ops[0].to.x).to.equal(1)
+  expect(pattern.parts.partA.paths.a.ops[0].to.y).to.equal(1)
+  expect(pattern.parts.partA.paths.a.ops[1].to.x).to.equal(11)
+  expect(pattern.parts.partA.paths.a.ops[1].to.y).to.equal(11)
+  // Paths in partB
+  expect(pattern.parts.partB.paths.a.ops[0].to.x).to.equal(1)
+  expect(pattern.parts.partB.paths.a.ops[0].to.y).to.equal(1)
+  expect(pattern.parts.partB.paths.a.ops[1].to.x).to.equal(11)
+  expect(pattern.parts.partB.paths.a.ops[1].to.y).to.equal(11)
+  expect(pattern.parts.partB.paths.b.ops[0].to.x).to.equal(2)
+  expect(pattern.parts.partB.paths.b.ops[0].to.y).to.equal(2)
+  expect(pattern.parts.partB.paths.b.ops[1].to.x).to.equal(22)
+  expect(pattern.parts.partB.paths.b.ops[1].to.y).to.equal(22)
+  // Paths in partC
+  expect(pattern.parts.partC.paths.a.ops[0].to.x).to.equal(1)
+  expect(pattern.parts.partC.paths.a.ops[0].to.y).to.equal(1)
+  expect(pattern.parts.partC.paths.a.ops[1].to.x).to.equal(11)
+  expect(pattern.parts.partC.paths.a.ops[1].to.y).to.equal(11)
+  expect(pattern.parts.partC.paths.b.ops[0].to.x).to.equal(2)
+  expect(pattern.parts.partC.paths.b.ops[0].to.y).to.equal(2)
+  expect(pattern.parts.partC.paths.b.ops[1].to.x).to.equal(22)
+  expect(pattern.parts.partC.paths.b.ops[1].to.y).to.equal(22)
+  expect(pattern.parts.partC.paths.c.ops[0].to.x).to.equal(3)
+  expect(pattern.parts.partC.paths.c.ops[0].to.y).to.equal(3)
+  expect(pattern.parts.partC.paths.c.ops[1].to.x).to.equal(33)
+  expect(pattern.parts.partC.paths.c.ops[1].to.y).to.equal(33)
 })
