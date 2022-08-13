@@ -39,12 +39,23 @@ paths.sleeve = new Path()
 
 
     if (sa) {
-
+      paths.sa = paths.sleeve.offset(sa).attr('class', 'fabric sa')
     }
   }
 
   // Paperless?
   if (paperless) {
+    macro('hd', {
+      from: points.sleeveLeft,
+      to: points.sleeveBottomLeft,
+      x: points.sleeveLeft.x + sa + 30
+    })
+
+    macro('vd', {
+      from: points.sleeveLeft,
+      to: points.sleeveRight,
+      x: points.sleeveLeft.y + sa + 30
+    })
 
   }
 
