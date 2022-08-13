@@ -1,5 +1,5 @@
 import Pattern from './pattern'
-import { addOptions, addMeasurements, addOptionalMeasurements } from './utils.js'
+import { addPartConfig } from './utils.js'
 
 /*
  * The Design constructor. Returns a Pattern constructor
@@ -11,11 +11,7 @@ export default function Design(config, plugins = false, conditionalPlugins = fal
   if (!config.measurements) config.measurements = []
   if (!config.optionalMeasurements) config.optionalMeasurements = []
   if (config.parts) {
-    for (const partName in config.parts) {
-      config = addOptions(config.parts[partName], config)
-      config = addMeasurements(config.parts[partName], config)
-      config = addOptionalMeasurements(config.parts[partName], config)
-    }
+    for (const partName in config.parts)  config = addPartConfig(config.parts[partName], config)
   }
 
   // Ensure all options have a hide() method

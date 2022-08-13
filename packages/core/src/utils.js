@@ -390,26 +390,26 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
 export const decoratePartDependency = (obj, name) => (typeof obj === 'function') ? { draft: obj, name } : obj
 
 // Add part-level options
-export const addOptions = (part, config) => {
+const addPartOptions = (part, config) => {
   if (part.options) {
     for (const optionName in part.options) {
       config.options[optionName] = part.options[optionName]
     }
   }
-  if (part.from) addOptions(part.from, config)
+  if (part.from) addPartOptions(part.from, config)
 
   return config
 }
 
 // Add part-level measurements
-export const addMeasurements = (part, config, list=false) => {
+const addPartMeasurements = (part, config, list=false) => {
   if (!list) list = config.measurements
     ? [...config.measurements]
     : []
   if (part.measurements) {
     for (const m of part.measurements) list.push(m)
   }
-  if (part.from) addMeasurements(part.from, config, list)
+  if (part.from) addPartMeasurements(part.from, config, list)
 
   // Weed out duplicates
   config.measurements = [...new Set(list)]
@@ -418,7 +418,7 @@ export const addMeasurements = (part, config, list=false) => {
 }
 
 // Add part-level optional measurements
-export const addOptionalMeasurements = (part, config, list=false) => {
+const addPartOptionalMeasurements = (part, config, list=false) => {
   if (!list) list = config.optionalMeasurements
     ? [...config.optionalMeasurements]
     : []
@@ -428,10 +428,41 @@ export const addOptionalMeasurements = (part, config, list=false) => {
       if (config.measurements.indexOf(m) === -1) list.push(m)
     }
   }
-  if (part.from) addOptionalMeasurements(part.from, config, list)
+  if (part.from) addPartOptionalMeasurements(part.from, config, list)
 
   // Weed out duplicates
   config.optionalMeasurements = [...new Set(list)]
+
+  return config
+}
+
+
+const addDependencies = (dep, current) => {
+  // Current dependencies
+  const list = []
+  if (Array.isArray(current)) list.push(...current)
+  else if (typeof current === 'string') list.push(current)
+
+  if (Array.isArray(dep)) list.push(...dep)
+  else if (typeof dep === 'string') list.push(dep)
+
+  return [...new Set(list)]
+}
+
+// Add part-level dependencies
+export const addPartDependencies = (part, config) => {
+  if (part.after) {
+    config.dependencies[part.name] = addDependencies(config.dependencies[part.name], part.after)
+  }
+
+  return config
+}
+
+export const addPartConfig = (part, config) => {
+  config = addPartOptions(part, config)
+  config = addPartMeasurements(part, config)
+  config = addPartOptionalMeasurements(part, config)
+  config = addPartDependencies(part, config)
 
   return config
 }

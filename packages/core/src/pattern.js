@@ -3,9 +3,7 @@ import {
   sampleStyle,
   capitalize,
   decoratePartDependency,
-  addOptions,
-  addMeasurements,
-  addOptionalMeasurements
+  addPartConfig,
 } from './utils.js'
 import Part from './part'
 import Point from './point'
@@ -256,10 +254,8 @@ Pattern.prototype.addPart = function (part, name=false) {
   if (typeof part?.draft === 'function') {
     if (part.name) {
       this.config.parts[part.name] = part
-      // Add part options/measurements/optionalMeasurements to config
-      this.config = addOptions(part, this.config)
-      this.config = addMeasurements(part, this.config)
-      this.config = addOptionalMeasurements(part, this.config)
+      // Add part-level config to config
+      this.config = addPartConfig(part, this.config)
     }
     else this.raise.error(`Part must have a name`)
   }
