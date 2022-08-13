@@ -34,25 +34,27 @@ The GitHub documentation provides a more [detailed explanation](https://docs.git
 To help you understand how the repository is organised, here is the path to the Simone instructions: `freesewing/markdown/org/docs/patterns/simone/instructions`  This folder contains several files, one for each language.  
 ![Path to Simone instructions](simone-instructions-path.png)
 
-- Select on the file you want to update. Please only edit the English languagse files (called `en.md`), our translation software will handle the other languages. 
-- Click on the **Edit** button (pencil icon).
+- Select on the file you want to update. Please only edit the English language files (called `en.md`), our translation software will handle the other languages. 
+- Click on the **Edit** button.  
+![edit button image](edit-button.PNG)
 
 <Note> 
-Clicking **Preview** will show what your changes will look like.
-![Edit and preview buttons](edit-preview.png)
+Clicking **Preview** will show what your changes will look like.  
+![Edit and preview buttons](edit-preview.png)  
 </Note>
 
 ## Save your edits and submit a pull request
 When you are happy with your edits:
-- Scroll to the bottom of the page and enter a brief description of your edits. This will help us know what has changed.
-- Click the **Commit** button.  
-![Commit changes](commit-changes.png)  This is similar to saving a snapshot of your edits.
+- Scroll to the bottom of the page and enter a brief description of your edits. This will help us know what has changed.  
+- Click the **Commit changes** button. This is similar to saving a snapshot of your edits.  
+![Commit changes](commit-changes.png)
 
 Now you will create a *pull request* to let the admins know your edits are ready for review:
 - Navigate to the repository where you created your fork.
-- Above the list of files, click the *Pull request* button.  
+- Above the list of files, click the **Pull request** button.  
 ![Pull request button](pull-request-button.png)
 
 Congratulations - you have just submitted your first edits to the site maintainers!
 
-You can keep track of the progress of your changes in GitHub or in the [github-updates channel](discord-github-updates.PNG) on our Discord server.
+You can keep track of the progress of your changes in GitHub or in the [github-updates channel]([discord-github-updates](https://discord.com/channels/698854858052075530/836689608820916234) on our Discord server.  
+![github updates channel image](discord-github-updates.PNG)
