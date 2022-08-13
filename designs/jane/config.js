@@ -1,10 +1,10 @@
-import {pkg} from '../package.json'
+import { version } from './package.json'
 
 // ?? 🤔 ?? --> https://en.freesewing.dev/packages/core/config
 
 export default {
+  version: version,
   name: 'jane',
-  version: 'pkg.version',
   design: 'SeaZeeZee',
   code: 'SeaZeeZee',
   department: 'tops',
