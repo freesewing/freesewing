@@ -3,6 +3,12 @@
 
 ## Unreleased
 
+### aaron
+
+#### Added
+
+ - Support drafting for high bust
+
 ### breanna
 
 #### Fixed
@@ -15,11 +21,11 @@
 
  - Make s3 options sticky to zero below 10% to avoid path split issues. Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
 
-### aaron
+### cathrin
 
-#### Added
+#### Fixed
 
- - Support drafting for high bust
+ - Removed seam allowance from Part1a foldline. Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
 
 ### charlie
 

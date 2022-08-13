@@ -86,11 +86,11 @@ npx @freesewing/new-design
 ```
 
 After you've answered [some questions](#questions), it will take a while to set everything up.
-When it's done, you will have a new folder with the development environent inside.
+When it's done, you will have a new folder with the development environment inside.
 
 Now you're ready to [start the development environment](/tutorials/getting-started-mac/dev-start).
 
-<Tip compact>The folder will have the name you chose above</Tip>
+<Tip compact>The folder will have the name you chose above.</Tip>
 
 <Note>
 ### Questions
