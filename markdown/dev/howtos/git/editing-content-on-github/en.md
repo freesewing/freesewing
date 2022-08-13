@@ -45,12 +45,12 @@ Clicking **Preview** will show what your changes will look like.
 ## Save your edits and submit a pull request
 When you are happy with your edits:
 - Scroll to the bottom of the page and enter a brief description of your edits. This will help us know what has changed.
-- Click the **Commit** button.
+- Click the **Commit** button.  
 ![Commit changes](commit-changes.png)  This is similar to saving a snapshot of your edits.
 
 Now you will create a *pull request* to let the admins know your edits are ready for review:
 - Navigate to the repository where you created your fork.
-- Above the list of files, click the *Pull request* button.
+- Above the list of files, click the *Pull request* button.  
 ![Pull request button](pull-request-button.png)
 
 Congratulations - you have just submitted your first edits to the site maintainers!
