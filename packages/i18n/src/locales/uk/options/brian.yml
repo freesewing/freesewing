@@ -34,13 +34,13 @@ s3Armhole:
   description: Збільшіть цей показник, щоб змістити плечевий шов зі сторони пройми. Зменшення показника зміщує шов у зворотному напрямку.
 shoulderEase:
   title: Свобода облягання плеча
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.
+  description: Керує свободою облягання на плечах. Цей показник збільшує відстань від плеча до плеча для додавання додаткових шарів тканини тощо.
 shoulderSlopeReduction:
-  title: Shoulder slope reduction
-  description: The amount by which the shoulder slope is reduced to allow for shoulder padding.
+  title: Зменшення нахилу плеча
+  description: Зменшує нахил плеча для додавання плечових підкладок.
 sleeveLengthBonus:
-  title: Sleeve length bonus
-  description: The amount to lengthen the sleeve. A negative value will shorten it.
+  title: Додаткова довжина рукава
+  description: Додає довжину до рукава. Негативне значення скорочує довжину рукава.
 sleevecapEase:
   title: Sleevecap ease
   description: The amount by which the sleevecap seam is longer than the armhole seam.
