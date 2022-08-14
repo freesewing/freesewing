@@ -269,8 +269,7 @@ it("Should generate the part transforms", () => {
     }
   })
   expect(part.attributes.list.transform.length).to.equal(1)
-  expect(part.attributes.list.transform[0]).to.equal('translate(10,20)')
-  expect(part.attributes.list['transform-origin'][0]).to.equal('10.5 39')
+  expect(part.attributes.list.transform[0]).to.equal('translate(10 20)')
 });
 
 
