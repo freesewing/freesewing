@@ -1,19 +1,19 @@
 ---
 fabricStretch:
-  title: Fabric stretch
-  description: Adjust this for more or less stretchy fabrics
+  title: Еластичність тканини
+  description: Налаштуйте це для більш або менш еластичних тканин
 gussetWidth:
-  title: Gusset width
-  description: Controls the width of the gusset
+  title: Ширина ластовиці
+  description: Керує шириною ластовиці
 gussetLength:
-  title: Gusset length
-  description: Controls the length of the gusset
+  title: Довжина ластовиці
+  description: Керує довжиною ластовиці
 elasticStretch:
-  title: Elastic stretch
-  description: Adjust this for more or less stretchy elastic
+  title: Еластичність гумки
+  description: Налаштуйте це для більш або менш еластичної гумки
 rise:
-  title: Rise
-  description: Controls the height of the waist
+  title: Посадка
+  description: Керує висотою посадки
 legOpening:
   title: Leg opening
   description: Controls how high the leg is cut out
