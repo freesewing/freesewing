@@ -21,8 +21,8 @@ const fullArmhole = measurements.biceps * (1 + 0.85)
 const gussetMeasure = (fullArmhole / 2) * 0.44
 
 points.gussetLeft = new Point(0,0)
-points.gussetRight = new Point(0,gussetMeasure)
-points.gussetBottomLeft = new Point(gussetMeasure,0)
+points.gussetRight = new Point(gussetMeasure,0)
+points.gussetBottomLeft = new Point(0,gussetMeasure)
 points.gussetBottomRight = new Point(gussetMeasure,gussetMeasure)
 
 paths.gusset = new Path()
@@ -30,6 +30,7 @@ paths.gusset = new Path()
     .line(points.gussetLeft)
     .line(points.gussetBottomLeft)
     .line(points.gussetBottomRight)
+    .line(points.gussetRight)
     .close();
 
       // Complete?
