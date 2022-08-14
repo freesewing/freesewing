@@ -1,6 +1,5 @@
 let expect = require("chai").expect;
 let freesewing = require("../dist/index.js");
-/*
 it("Pattern constructor should initialize object", () => {
   let pattern = new freesewing.Pattern({
     foo: "bar",
@@ -783,7 +782,7 @@ it("Design constructor should resolve nested injections (2022)", () => {
     }
   }
 
-  const Design = new freesewing.Design({ parts: { partC } });
+  const Design = new freesewing.Design({ parts: [ partC ] });
   const pattern = new Design().addPart(partR).draft()
   // Measurements
   expect(pattern.config.measurements.length).to.equal(4)
@@ -878,7 +877,7 @@ it("Design constructor should resolve nested injections (2022)", () => {
   expect(pattern.parts.partR.paths.r.ops[1].to.x).to.equal(44)
   expect(pattern.parts.partR.paths.r.ops[1].to.y).to.equal(44)
 })
-*/
+
 it("Design constructor should resolve nested dependencies (2022)", () => {
   const partA = {
     name: "partA",
@@ -935,7 +934,7 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
       return part
     }
   }
-  const Design = new freesewing.Design({ parts: { partD } });
+  const Design = new freesewing.Design({ parts: [ partD ] });
   const pattern = new Design().draft()
   // Measurements
   expect(pattern.config.measurements.length).to.equal(4)

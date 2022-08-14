@@ -10,8 +10,13 @@ export default function Design(config, plugins = false, conditionalPlugins = fal
   if (!config.options) config.options = {}
   if (!config.measurements) config.measurements = []
   if (!config.optionalMeasurements) config.optionalMeasurements = []
-  if (config.parts) {
-    for (const partName in config.parts)  config = addPartConfig(config.parts[partName], config)
+  if (Array.isArray(config.parts)) {
+    const parts = {}
+    for (const part of config.parts) {
+      parts[part.name] = part
+      config = addPartConfig(parts[part.name], config)
+    }
+    config.parts = parts
   }
 
   // Ensure all options have a hide() method

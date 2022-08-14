@@ -758,7 +758,7 @@ Pattern.prototype.resolveDependencies = function (graph = this.dependencies) {
   // Include parts outside the dependency graph
   if (Array.isArray(this.config.parts)) {
     for (let part of this.config.parts) {
-      if (typeof this.dependencies[part] === 'undefined') this.dependencies[part] = []
+      if (typeof part === 'string' && typeof this.dependencies[part] === 'undefined') this.dependencies[part] = []
     }
   }
 
