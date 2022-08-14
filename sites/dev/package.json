@@ -7,8 +7,8 @@
     "develop": "next dev -p 3002",
     "prebuild": "SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs",
     "build": "node --experimental-json-modules ./node_modules/.bin/next build",
-    "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build",
-    "export": "yarn prebuild && next build && next export && node scripts/algolia.mjs",
+    "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build && node scripts/algolia.mjs",
+
     "start": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
     "lint": "next lint",
     "serve": "pm2 start npm --name 'dev' -- run start"
