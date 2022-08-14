@@ -23,7 +23,6 @@ const PrintLayout = props => {
   ))
 
   let patternProps
-  let layout
   try {
     // draft the pattern
     draft.draft()

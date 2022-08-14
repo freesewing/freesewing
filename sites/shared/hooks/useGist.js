@@ -1,7 +1,7 @@
 import useLocalStorage from './useLocalStorage';
 import set from 'lodash.set'
 import unset from 'lodash.unset'
-import cloneDeep from 'lodash.cloneDeep'
+import cloneDeep from 'lodash.clonedeep'
 import defaultSettings from 'shared/components/workbench/default-settings.js'
 import {useState} from 'react'
 
