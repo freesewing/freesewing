@@ -36,6 +36,13 @@ paths.gusset = new Path()
       // Complete?
   if (complete) {
 
+    points.title = points.gussetLeft.shift(300, gussetMeasure /2)
+macro("title", {
+  at: points.title,
+  nr: 3,
+  title: "Gusset"
+})
+
 
     if (sa) {
       paths.sa = paths.gusset.offset(sa).attr('class', 'fabric sa')
