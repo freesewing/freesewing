@@ -37,8 +37,21 @@ paths.sleeve = new Path()
 
       // Complete?
   if (complete) {
+    points.title = points.sleeveLeft.shift(300, sleeveLength/2)
+    macro("title", {
+      at: points.title,
+      nr: 2,
+      title: "Sleeve"
+    })
 
+    points.notch = new Point(0,sleeveWidth/2)
 
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['notch']
+    })
+
+  
     if (sa) {
       paths.sa = paths.sleeve.offset(sa).attr('class', 'fabric sa')
     }
