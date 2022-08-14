@@ -109,7 +109,7 @@ layout: Макет
 logIn: Увійти
 loginWithProvider: 'Увійти через {provider}'
 logOut: Вийти
-manual: Manual
+manual: Довідник
 markdownHelp: MarkDown help
 measurements: Заміри
 menu: Меню
@@ -233,7 +233,7 @@ makerDocs: Ремісницька документація
 devDocs: Розробницька документація
 slogan: Бібліотека JavaScript для створення швейних викрійок на базі замірів
 getStarted: Розпочати
-apiReference: API Reference
+apiReference: Референс АРІ
 tutorial: Урок
 editThisPage: Редагувати сторінку
 loginRequiredRedirect: 'Вас було перенаправлено на сторінку входу, оскільки {page} потребує автентифікації'
