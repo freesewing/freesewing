@@ -49,12 +49,15 @@ export default function (part) {
     .move(points.leftShoulder)
     .line(points.leftShoulder)
     .line(points.gorestartLeft)
+    .attr("class", "fabric dashed")
     .close();
+
 
   paths.rightGore = new Path()
     .move(points.rightShoulder)
     .line(points.gorestartRight)
     .line(points.rightShoulder)
+    .attr("class", "fabric dashed")
     .close();
 
 
@@ -70,6 +73,8 @@ export default function (part) {
   points.middleHem = points.bottomLeft.shiftTowards(points.bottomRight, widthBody /2)
 
   points.neckFront = points.middle.shiftTowards(points.middleHem, neckDepthFront)
+    .attr("data-text", "Front Neckline")
+    .attr("data-text-class", "center");
 
   points.neckCp1 = points.neckRight.shift(90, (points.neckFront.dy(points.neckRight) * 0.8))
   points.neckCp2 = points.neckFront.shift(180, (points.neckFront.dy(points.neckRight) * 0.8))
@@ -90,6 +95,8 @@ export default function (part) {
   const neckDepthBack = measurements.hpsToBust * options.neckDepthBack
 
   points.neckBack = points.middle.shiftTowards(points.neckFront, neckDepthBack)
+    .attr("data-text", "Back Neckline")
+    .attr("data-text-class", "center");
 
   points.neckBackCp1 = points.neckBack.shift(360, (points.neckFront.dy(points.neckLeft) * 0.8))
   points.neckBackCp2 = points.neckBack.shift(180, (points.neckFront.dy(points.neckRight) * 0.8))
