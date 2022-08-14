@@ -116,6 +116,15 @@ export default function (part) {
 
   // Complete?
   if (complete) {
+    points.logo = points.middle.shiftTowards(points.middleHem, lengthBody / 4)
+    snippets.logo = new Snippet("logo", points.logo)
+
+    points.title = points.logo.shiftTowards(points.middle, lengthBody / 12)
+    macro("title", {
+      at: points.title,
+      nr: 1,
+      title: "Body"
+      })
 
 
     if (sa) {
