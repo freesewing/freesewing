@@ -437,7 +437,7 @@ const addPartOptionalMeasurements = (part, config, list=false) => {
 }
 
 
-const addDependencies = (dep, current) => {
+export const mergeDependencies = (dep=[], current=[]) => {
   // Current dependencies
   const list = []
   if (Array.isArray(current)) list.push(...current)
@@ -446,13 +446,21 @@ const addDependencies = (dep, current) => {
   if (Array.isArray(dep)) list.push(...dep)
   else if (typeof dep === 'string') list.push(dep)
 
-  return [...new Set(list)]
+  // Dependencies should be parts names (string) not the object
+  const deps = []
+  for (const part of [...new Set(list)]) {
+    if (typeof part === 'object') deps.push(part.name)
+    else deps.push(part)
+  }
+
+  return deps
 }
 
 // Add part-level dependencies
 export const addPartDependencies = (part, config) => {
   if (part.after) {
-    config.dependencies[part.name] = addDependencies(config.dependencies[part.name], part.after)
+    if (typeof config.dependencies === 'undefined') config.dependencies = {}
+    config.dependencies[part.name] = mergeDependencies(config.dependencies[part.name], part.after)
   }
 
   return config
@@ -466,5 +474,4 @@ export const addPartConfig = (part, config) => {
 
   return config
 }
-
 

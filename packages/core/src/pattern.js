@@ -4,6 +4,7 @@ import {
   capitalize,
   decoratePartDependency,
   addPartConfig,
+  mergeDependencies,
 } from './utils.js'
 import Part from './part'
 import Point from './point'
@@ -215,7 +216,7 @@ function snappedOption(option, pattern) {
 // Merges settings object with this.settings
 Pattern.prototype.apply = function (settings) {
   if (typeof settings !== 'object') {
-    this.raise.warning('Pattern initialized without any settings')
+    this.raise.warning('Pattern instantiated without any settings')
     return this
   }
   for (let key of Object.keys(settings)) {
@@ -678,23 +679,57 @@ Pattern.prototype.resolveDependency = function (
   return deps
 }
 
+/** Adds a part as a simple dependency **/
+Pattern.prototype.addDependency = function (name, part, dep) {
+  this.dependencies[name] = mergeDependencies(dep.name, this.dependencies[name])
+  if (typeof this.__parts[dep.name] === 'undefined') {
+    this.__parts[dep.name] = decoratePartDependency(dep)
+    addPartConfig(this.__parts[dep.name], this.config)
+  }
+
+  return this
+}
+
+/** Filter optional measurements out of they are also required measurements */
+Pattern.prototype.filterOptionalMeasurements = function () {
+  this.config.optionalMeasurements = this.config.optionalMeasurements.filter(
+    m => this.config.measurements.indexOf(m) === -1
+  )
+
+  return this
+}
+
 /** Pre-Resolves part dependencies that are passed in 2022 style */
 Pattern.prototype.preresolveDependencies = function (count=0) {
-  const len = Object.keys(this.__parts).length
   if (!this.__parts) return
   for (const [name, part] of Object.entries(this.__parts)) {
+    // Inject (from)
     if (part.from) {
       this.inject[name] = part.from.name
       if (typeof this.__parts[part.from.name] === 'undefined') {
         this.__parts[part.from.name] = decoratePartDependency(part.from)
+        addPartConfig(this.__parts[part.from.name], this.config)
       }
     }
+    // Simple dependency (after)
+    if (part.after) {
+      if (Array.isArray(part.after)) {
+        for (const dep of part.after) this.addDependency(name, part, dep)
+      }
+      else this.addDependency(name, part, part.after)
+    }
   }
-  const newlen = Object.keys(this.__parts).length
+  // Did we discover any new dependencies?
+  const len = Object.keys(this.__parts).length
 
-  return (Object.keys(this.__parts).length > len)
-    ? this.preresolveDependencies()
-    : this
+  if (len > count) return this.preresolveDependencies(len)
+
+  for (const [name, part] of Object.entries(this.__parts)) {
+    addPartConfig(name, this.config)
+  }
+
+  // Weed out doubles
+  return this.filterOptionalMeasurements()
 }
 
 /** Resolves part dependencies into a flat array */
