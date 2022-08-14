@@ -2,7 +2,7 @@
 title: "Sleeve placket width"
 - - -
 
-![Sleeve placket width](sleeveplacketwidth.svg)
+![Ширина шліца](sleeveplacketwidth.svg)
 
 How wide do you want the sleeve placket to be?
 
