@@ -26,7 +26,7 @@ const PrintLayoutSettings = props => {
       </div>
       <button
         key="reset"
-        onClick={() => props.unsetGist(['layouts', 'printLayout'])}
+        onClick={() => props.unsetGist(['layouts', 'printingLayout'])}
         className="btn btn-primary btn-outline"
       >
         <ClearIcon className="h-6 w-6 mr-2"/>

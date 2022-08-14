@@ -369,29 +369,38 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   let scaleX = 1
   let scaleY = 1
 
+  // move the part an additional offset so it ends up in the correct spot after flipping.
+  // it will scale around the part's 0, 0, which isn't always the top left, so we need to move it over so that 0,0 lines up with topRight + topLeft
   if (flipX) {
+    xTotal += part.topLeft.x
+    xTotal += part.bottomRight.x
+    // reverse the x scale
     scaleX = -1
-    xTotal += part.topLeft.x * 2 + part.width
   }
   if (flipY) {
+    yTotal += part.topLeft.y
+    yTotal += part.bottomRight.y
     scaleY = -1
-    yTotal += part.topLeft.y * 2 + part.height
   }
 
+  // add the scaling to the transforms
   if (scaleX + scaleY < 2) {
     transforms.push(`scale(${scaleX} ${scaleY})`)
   }
 
   if (rotate) {
+    // we can put the center as the rotation origin, so get the center
     const center = {
       x: part.topLeft.x + part.width/2,
       y: part.topLeft.y + part.height/2,
     }
 
+    // add the rotation around the center to the transforms
     transforms.push(`rotate(${rotate} ${center.x} ${center.y})`)
   }
 
-  if (xTotal > 0 || yTotal > 0) transforms.unshift(
+  // put the translation before any other transforms to avoid having to make complex calculations once the matrix has been rotated or scaled
+  if (xTotal !== 0 || yTotal !== 0) transforms.unshift(
     `translate(${xTotal} ${yTotal})`
   )
 

@@ -70,6 +70,7 @@ const Part = props => {
 
   // update the layout on mount
   useEffect(() => {
+    // only update if there's a rendered part and it's not the pages or fabric part
     if (partRef.current && !props.isLayoutPart) {
       updateLayout(false)
     }
@@ -77,6 +78,7 @@ const Part = props => {
 
   // Initialize drag handler
   useEffect(() => {
+    // don't drag the pages
     if (props.isLayoutPart) return
     handleDrag(select(partRef.current))
   }, [rotate, partRef, partLayout])
@@ -124,6 +126,7 @@ const Part = props => {
 
       if (rotate) {
         let newRotation = getRotation(event);
+        // shift key to snap the rotation
         if (event.sourceEvent.shiftKey) {
           newRotation = Math.ceil(newRotation/15) * 15
         }
@@ -138,41 +141,53 @@ const Part = props => {
         translateY = event.y
       }
 
+      // a drag happened, so we should update the layout when we're done
       didDrag = true;
       setTransforms()
     })
     .on('end', function(event) {
-      // save to gist
+      // save to gist if anything actually changed
       if (didDrag) updateLayout()
 
       didDrag = false
     })
 
+  /** reset the part's transforms */
   const resetPart = (event) => {
     rotation = 0
     flipX = 0
     flipY = 0
     updateLayout()
   }
+
+  /** toggle between dragging and rotating */
   const toggleDragRotate = () => {
+    // only respond if the part should be able to drag/rotate
     if (!partRef.current || props.isLayoutPart) {return}
-    updateLayout()
+
     setRotate(!rotate)
   }
 
+  /** update the layout either locally or in the gist */
   const updateLayout = (history=true) => {
+    /** don't mess with what we don't lay out */
     if (!partRef.current || props.isLayoutPart) return
 
+    // set the transforms on the part in order to calculate from the latest position
     setTransforms()
+
+    // get the bounding box and the svg's current transform matrix
     const partRect = innerRef.current.getBoundingClientRect();
     const matrix = innerRef.current.ownerSVGElement.getScreenCTM().inverse();
 
+    // a function to convert dom space to svg space
     const domToSvg = (point) => DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
 
     // include the new top left and bottom right to ease calculating the pattern width and height
     const tl = domToSvg({x: partRect.left, y: partRect.top});
     const br = domToSvg({x: partRect.right, y: props.isLayoutPart ? 0 : partRect.bottom});
 
+    // update it on the draft component
     props.updateLayout(partName, {
       move: {
         x: translateX,
@@ -186,13 +201,14 @@ const Part = props => {
     }, history)
   }
 
-  // Method to flip (mirror) the part along the X or Y axis
+  /** Method to flip (mirror) the part along the X or Y axis */
   const flip = axis => {
     if (axis === 'x') flipX = !flipX
     else flipY = !flipY
     updateLayout()
   }
 
+  /** method to rotate 90 degrees */
   const rotate90 = (direction = 1) => {
     if (flipX) direction *= -1
     if (flipY) direction *= -1
@@ -202,6 +218,7 @@ const Part = props => {
     updateLayout()
   }
 
+  // don't render if the part is empty
   if (Object.keys(part.snippets).length === 0 && Object.keys(part.paths).length === 0) return null;
 
   return (

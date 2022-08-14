@@ -7,6 +7,8 @@ const settings = {
   "advanced.d": "Bepaalt of de geavanceerde patroonopties wel of niet getoond worden",
   "paperless.t": "Papierloos",
   "paperless.d": "Hiermee tekent u een patroon met alle afmetingen zodat u het op stof of een ander medium kunt overbrengen zonder dat u het hoeft af te drukken",
+  "sabool.t": "Include seam allowance",
+  "sabool.d": "Controls whether or not to include seam allowance in your pattern",
   "sa.t": "Naadtoeslag",
   "sa.d": "Bepaalt de hoeveelheid naadtoeslag die is inbegrepen in uw patroon",
   "locale.t": "Taal",
