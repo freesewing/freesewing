@@ -42,9 +42,13 @@ export default (part) => {
     })
   }
   //Grainline
-  points.grainlineFromPocketBag = new Point(points.topLeft.x, points.topLeft.y).shift(0, 15)
+  let grainlineVariableShift = points.topLeft.dist(points.topRight) * 0.1
+  points.grainlineFromPocketBag = new Point(points.topLeft.x, points.topLeft.y).shift(
+    0,
+    grainlineVariableShift
+  )
   points.grainlineToPocketbag = new Point(points.topLeft.x, points.topLeft.y)
-    .shift(0, 15)
+    .shift(0, grainlineVariableShift)
     .shift(-90, ph)
   points.grainlineToPocketbagRotated = points.grainlineToPocketbag.rotate(
     options.pocketAngle,

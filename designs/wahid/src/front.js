@@ -267,20 +267,21 @@ export default (part) => {
     paths.flbLining = paths.flbFacing.clone().attr('class', 'lining dashed')
 
     // Grainline
+    let grainlineVariableLength = points.closureTop.dist(points.cfHips)
     if (options.hemStyle === 'classic') {
       points.grainLineFromFront = new Point(points.hemTip.x, points.closureTop.y)
-      points.grainLineToFront = new Point(points.hemTip.x, points.hemTip.y).shift(90, 20)
+      points.grainLineToFront = new Point(points.hemTip.x, points.hemTip.y)
     }
     if (options.hemStyle === 'rounded') {
-      points.grainLineFromFront = new Point(points.roundEnd.x, points.roundEnd.y).shift(90, 200)
+      points.grainLineFromFront = new Point(points.roundEnd.x, points.roundEnd.y).shift(
+        90,
+        grainlineVariableLength
+      )
       points.grainLineToFront = new Point(points.roundEnd.x, points.roundEnd.y)
     }
     if (options.hemStyle === 'square') {
-      points.grainLineFromFront = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y).shift(
-        90,
-        200
-      )
-      points.grainLineToFront = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y)
+      points.grainLineFromFront = new Point(points.cfHips.x, points.closureTop.y)
+      points.grainLineToFront = new Point(points.cfHips.x, points.cfHips.y)
     }
     macro('grainline', {
       from: points.grainLineFromFront,
@@ -291,7 +292,7 @@ export default (part) => {
         .offset(sa)
         .join(paths.hemBase.offset(sa))
         .close()
-        .attr('classF', 'fabric sa')
+        .attr('class', 'fabric sa')
     }
     if (paperless) {
       macro('hd', {

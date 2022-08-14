@@ -29,21 +29,22 @@ export default (part) => {
   paths.seam.close().attr('class', 'fabric')
   if (complete) {
     // Grainline
+    let grainlineVariableLength = points.cfHips.dist(points.closureTop)
     if (options.hemStyle === 'classic') {
       points.grainlineFromFrontFacing = new Point(points.hemTip.x, points.closureTop.y)
-      points.grainlineToFrontFacing = new Point(points.hemTip.x, points.hemTip.y).shift(90, 20)
+      points.grainlineToFrontFacing = new Point(points.hemTip.x, points.hemTip.y)
     }
     if (options.hemStyle === 'rounded') {
       points.grainlineFromFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y).shift(
         90,
-        200
+        grainlineVariableLength
       )
       points.grainlineToFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y)
     }
     if (options.hemStyle === 'square') {
       points.grainlineFromFrontFacing = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y).shift(
         90,
-        200
+        grainlineVariableLength
       )
       points.grainlineToFrontFacing = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y)
     }
