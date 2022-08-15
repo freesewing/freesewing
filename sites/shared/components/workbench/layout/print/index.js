@@ -5,7 +5,7 @@ import Draft from '../draft/index'
 import pluginBuilder from './plugin'
 
 const PrintLayout = props => {
-
+  // disable xray
   useEffect(() => {
     if (props.gist?._state?.xray?.enabled) props.updateGist(
       ['_state', 'xray', 'enabled'],
@@ -15,12 +15,16 @@ const PrintLayout = props => {
 
   const { t } = useTranslation(['workbench'])
 
-  const draft = new props.design(props.gist).use(pluginBuilder(
+  const draft = props.draft
+  // add the pages plugin to the draft
+  draft.use(pluginBuilder(
     props.gist?._state?.layout?.forPrinting?.page?.size,
     props.gist?._state?.layout?.forPrinting?.page?.orientation,
   ))
+
   let patternProps
   try {
+    // draft the pattern
     draft.draft()
     patternProps = draft.getRenderProps()
   } catch(err) {
@@ -47,6 +51,7 @@ const PrintLayout = props => {
         patternProps={patternProps}
         bgProps={bgProps}
         gistReady={props.gistReady}
+        layoutPart="pages"
       />
     </div>
   )

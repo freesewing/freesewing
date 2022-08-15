@@ -1,4 +1,4 @@
-import React from 'react'
+import {forwardRef} from 'react'
 import Path from '../path'
 import Point from '../point'
 import Snippet from '../snippet'
@@ -85,7 +85,7 @@ const XrayPart = props => {
   )
 }
 
-export const PartInner = props => {
+export const PartInner = forwardRef((props, ref) => {
   const { partName, part, gist } = props
 
   const grid = gist.paperless ? (
@@ -99,7 +99,7 @@ export const PartInner = props => {
     />
   ) : null
 
-  return (<>
+  return (<g ref={ref}>
     {grid}
     {
       gist._state?.xray?.enabled &&
@@ -133,14 +133,15 @@ export const PartInner = props => {
         {...props}
       />
     ))}
-  </>)
-}
+  </g>)
+})
 
 const Part = props => {
   const { partName, part} = props
+
   return (
       <g {...getProps(part)} id={`part-${partName}`}>
-        {PartInner(props)}
+        <PartInner {...props}/>
       </g>
   )
 }

@@ -558,8 +558,7 @@ it("Should generate a part transform", () => {
     .line(part.points.to);
   part.stack();
   const transform = utils.generatePartTransform(30,60,90,true,true,part)
-  expect(transform.transform).to.equal("translate(30,60) scale(-1, 1) scale(1, -1) rotate(90)");
-  expect(transform['transform-origin']).to.equal("10.5 39")
+  expect(transform.transform).to.equal(`translate(${30 + part.topLeft.x + part.bottomRight.x} ${60 + part.topLeft.y + part.bottomRight.y}) scale(-1 -1) rotate(90 ${part.topLeft.x + part.width/2} ${part.topLeft.y + part.height/2})`);
 });
 
 

@@ -16,7 +16,7 @@ import GistAsJson from 'shared/components/workbench/json.js'
 import GistAsYaml from 'shared/components/workbench/yaml.js'
 import DraftEvents from 'shared/components/workbench/events.js'
 import CutLayout from 'shared/components/workbench/layout/cut'
-import PrintLayout from 'shared/components/workbench/layout/print'
+import PrintingLayout from 'shared/components/workbench/layout/print'
 
 import ErrorBoundary from 'shared/components/error/error-boundary';
 
@@ -24,7 +24,7 @@ const views = {
   measurements: Measurements,
   draft: LabDraft,
   test: LabSample,
-  printingLayout: PrintLayout,
+  printingLayout: PrintingLayout,
   cuttingLayout: CutLayout,
   export: ExportDraft,
   events: DraftEvents,
@@ -110,13 +110,20 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   // don't do anything until the gist is ready
   if (!gistReady) {return null}
 
-  // Generate the draft here so we can pass it down
+  // Generate the draft here so we can pass it down to both the view and the options menu
   let draft = false
-  if (['draft', 'events', 'test'].indexOf(gist._state?.view) !== -1) {
-    draft = new design(gist)
+  if (['draft', 'events', 'test', 'printingLayout'].indexOf(gist._state?.view) !== -1) {
+    // get the appropriate layout for the view
+    const layout = gist.layouts?.[gist._state.view] || gist.layout || true
+    // hand it separately to the design
+    draft = new design({...gist, layout})
+
+    // add theme to svg renderer
     if (gist.renderer === 'svg') draft.use(theme)
+
+    // draft it for draft and event views. Other views may add plugins, etc and we don't want to draft twice
     try {
-      if (gist._state.view !== 'test') draft.draft()
+      if (['draft', 'events'].indexOf(gist._state.view) > -1) draft.draft()
     }
     catch(error) {
       console.log('Failed to draft design', error)
