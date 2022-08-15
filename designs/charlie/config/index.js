@@ -91,6 +91,7 @@ export default {
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,
+    fitGuides: false,
     // Lock titan options
     fitKnee: true,
 
