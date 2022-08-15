@@ -48,8 +48,8 @@ let result
     ...options,
     minify: false,
     sourcemap: false,
-    outfile: 'tests/dist/index.mjs',
-    format: 'esm',
+    outfile: 'tests/dist/index.js',
+    format: 'cjs',
     external: [],
   })
   .catch(() => process.exit(1))

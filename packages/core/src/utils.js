@@ -397,6 +397,75 @@ const addPartOptions = (part, config) => {
     }
   }
   if (part.from) addPartOptions(part.from, config)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartOptions(dep, config)
+    } else addPartOptions(part.after, config)
+  }
+
+  return config
+}
+
+// Helper method for detecting a array with only strings
+const isStringArray = val => (Array.isArray(val) && val.length > 0)
+  ? val.reduce((prev=true, cur) => (prev && typeof cur === 'string'))
+  : false
+// Helper method for detecting an object
+const isObject = obj => obj && typeof obj === 'object'
+
+// Hat-tip to jhildenbiddle => https://stackoverflow.com/a/48218209
+const mergeOptionSubgroup = (...objects) => objects.reduce((prev, obj) => {
+  Object.keys(obj).forEach(key => {
+    const pVal = prev[key];
+    const oVal = obj[key];
+
+    if (Array.isArray(pVal) && Array.isArray(oVal)) {
+      prev[key] = pVal.concat(...oVal);
+    }
+    else if (isObject(pVal) && isObject(oVal)) {
+      prev[key] = mergeOptionSubgroup(pVal, oVal);
+    }
+    else {
+      prev[key] = oVal;
+    }
+  })
+
+  return prev
+}, {})
+
+const mergeOptionGroups = (cur, add) => {
+  if (isStringArray(cur) && isStringArray(add)) return [...new Set([...cur, ...add])]
+  else if (!Array.isArray(cur) && !Array.isArray(add)) return mergeOptionSubgroup(cur, add)
+  else {
+    const all = [...cur]
+    for (const entry of add) {
+      if (typeof add === 'string' && all.indexOf(entry) === -1) all.push(entry)
+      else all.push(entry)
+    }
+    return all
+  }
+
+  return cur
+}
+
+// Add part-level optionGroups
+const addPartOptionGroups = (part, config) => {
+  if (typeof config.optionGroups === 'undefined') {
+    if (part.optionGroups) config.optionGroups = part.optionGroups
+    return config
+  }
+  if (part.optionGroups) {
+    for (const group in part.optionGroups) {
+      if (typeof config.optionGroups[group] === 'undefined') config.optionGroups[group] = part.optionGroups[group]
+      else config.optionGroups[group] = mergeOptionGroups(config.optionGroups[group], part.optionGroups[group])
+    }
+  }
+  if (part.from) addPartOptionGroups(part.from, config)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartOptionGroups(dep, config)
+    } else addPartOptionGroups(part.after, config)
+  }
 
   return config
 }
@@ -410,6 +479,11 @@ const addPartMeasurements = (part, config, list=false) => {
     for (const m of part.measurements) list.push(m)
   }
   if (part.from) addPartMeasurements(part.from, config, list)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartMeasurements(dep, config, list)
+    } else addPartMeasurements(part.after, config, list)
+  }
 
   // Weed out duplicates
   config.measurements = [...new Set(list)]
@@ -429,6 +503,11 @@ const addPartOptionalMeasurements = (part, config, list=false) => {
     }
   }
   if (part.from) addPartOptionalMeasurements(part.from, config, list)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartOptionalMeasurements(dep, config, list)
+    } else addPartOptionalMeasurements(part.after, config, list)
+  }
 
   // Weed out duplicates
   config.optionalMeasurements = [...new Set(list)]
@@ -471,6 +550,7 @@ export const addPartConfig = (part, config) => {
   config = addPartMeasurements(part, config)
   config = addPartOptionalMeasurements(part, config)
   config = addPartDependencies(part, config)
+  config = addPartOptionGroups(part, config)
 
   return config
 }

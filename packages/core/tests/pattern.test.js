@@ -1,5 +1,5 @@
 let expect = require("chai").expect;
-let freesewing = require("../dist/index.js");
+let freesewing = require("./dist/index.js");
 it("Pattern constructor should initialize object", () => {
   let pattern = new freesewing.Pattern({
     foo: "bar",
@@ -1023,3 +1023,97 @@ it("Design constructor should resolve nested dependencies (2022)", () => {
   expect(pattern.parts.partD.paths.d.ops[1].to.x).to.equal(44)
   expect(pattern.parts.partD.paths.d.ops[1].to.y).to.equal(44)
 })
+it("Pattern should merge optiongroups", () => {
+  const partA = {
+    name: "partA",
+    options: { optionA: { bool: true } },
+    measurements: [ 'measieA' ],
+    optionalMeasurements: [ 'optmeasieA' ],
+    optionGroups: {
+      simple: ['simplea1', 'simplea2', 'simplea3'],
+      nested: {
+        nested1: [ 'nested1a1', 'nested1a2', 'nested1a3' ],
+      },
+      subnested: {
+        subnested1: [
+          'subnested1a1',
+          'subnested1a2',
+          'subnested1a3',
+          {
+            subsubgroup: [
+              'subsuba1',
+              'subsuba2',
+              {
+                subsubsubgroup: [ 'subsubsub1', 'simplea1' ],
+              }
+            ]
+          }
+        ]
+      }
+    },
+    draft: part => part,
+  }
+  const partB = {
+    name: "partB",
+    from: partA,
+    options: { optionB: { pct: 12, min: 2, max: 20 } },
+    measurements: [ 'measieB' ],
+    optionalMeasurements: [ 'optmeasieB', 'measieA' ],
+    optionGroups: {
+      simple: ['simpleb1', 'simpleb2', 'simpleb3'],
+      bsimple: ['bsimpleb1', 'bsimpleb2', 'bsimpleb3'],
+      nested: {
+        nested2: [ 'nested2b1', 'nested2b2', 'nested2b3' ],
+      },
+      subnested: {
+        subnested1: [
+          'subnested1b1',
+          'subnested1b2',
+          'subnested1b3',
+          {
+            subsubgroup: [
+              'subsubb1',
+              'subsubb2',
+              {
+                subsubsubgroup: [ 'bsubsubsub1', 'simplea1' ],
+              }
+            ]
+          }
+        ]
+      }
+    },
+    draft: part => part,
+  }
+  let Design, pattern
+  try {
+    Design = new freesewing.Design({ parts: [ partB ] });
+    pattern = new Design().init()
+  } catch(err) {
+    console.log(err)
+  }
+  const og = pattern.config.optionGroups
+  expect(og.simple.length).to.equal(6)
+  expect(og.simple.indexOf('simplea1') === -1).to.equal(false)
+  expect(og.simple.indexOf('simplea2') === -1).to.equal(false)
+  expect(og.simple.indexOf('simplea3') === -1).to.equal(false)
+  expect(og.simple.indexOf('simpleb1') === -1).to.equal(false)
+  expect(og.simple.indexOf('simpleb2') === -1).to.equal(false)
+  expect(og.simple.indexOf('simpleb3') === -1).to.equal(false)
+  expect(og.nested.nested1.length).to.equal(3)
+  expect(og.nested.nested1.indexOf('nested1a1') === -1).to.equal(false)
+  expect(og.nested.nested1.indexOf('nested1a2') === -1).to.equal(false)
+  expect(og.nested.nested1.indexOf('nested1a3') === -1).to.equal(false)
+  expect(og.nested.nested2.length).to.equal(3)
+  expect(og.nested.nested2.indexOf('nested2b1') === -1).to.equal(false)
+  expect(og.nested.nested2.indexOf('nested2b2') === -1).to.equal(false)
+  expect(og.nested.nested2.indexOf('nested2b3') === -1).to.equal(false)
+  expect(og.subnested.subnested1.length).to.equal(8)
+  expect(og.subnested.subnested1.indexOf('subnested1a1') === -1).to.equal(false)
+  expect(og.subnested.subnested1.indexOf('subnested1a2') === -1).to.equal(false)
+  expect(og.subnested.subnested1.indexOf('subnested1a3') === -1).to.equal(false)
+  expect(og.subnested.subnested1.indexOf('subnested1b1') === -1).to.equal(false)
+  expect(og.subnested.subnested1.indexOf('subnested1b2') === -1).to.equal(false)
+  expect(og.subnested.subnested1.indexOf('subnested1b3') === -1).to.equal(false)
+  // FIXME: Some work to be done still with deep-nesting of groups with the same name
+})
+
