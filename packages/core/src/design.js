@@ -13,8 +13,12 @@ export default function Design(config, plugins = false, conditionalPlugins = fal
   if (Array.isArray(config.parts)) {
     const parts = {}
     for (const part of config.parts) {
-      parts[part.name] = part
-      config = addPartConfig(parts[part.name], config)
+      if (typeof part === 'object') {
+        parts[part.name] = part
+        config = addPartConfig(parts[part.name], config)
+      } else if (typeof part === 'string') {
+        parts[part] = part
+      } else throw("Part should be passed as a name of part config object")
     }
     config.parts = parts
   }

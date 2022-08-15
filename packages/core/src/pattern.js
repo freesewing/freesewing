@@ -360,6 +360,8 @@ Pattern.prototype.draft = function () {
  * Handles pattern sampling
  */
 Pattern.prototype.sample = function () {
+  // Late-stage initialization
+  this.init()
   if (this.settings.sample.type === 'option') {
     return this.sampleOption(this.settings.sample.option)
   } else if (this.settings.sample.type === 'measurement') {
@@ -756,8 +758,8 @@ Pattern.prototype.resolveDependencies = function (graph = this.dependencies) {
   }
 
   // Include parts outside the dependency graph
-  if (Array.isArray(this.config.parts)) {
-    for (let part of this.config.parts) {
+  if (typeof this.config.parts === 'object') {
+    for (const part of Object.values(this.config.parts)) {
       if (typeof part === 'string' && typeof this.dependencies[part] === 'undefined') this.dependencies[part] = []
     }
   }
