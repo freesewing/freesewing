@@ -2,7 +2,8 @@ import { useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import Settings from './settings'
 import Draft from '../draft/index'
-import pluginBuilder from './plugin'
+import {pagesPlugin} from './plugin'
+import {handleExport, defaultPdfSettings} from 'shared/components/workbench/exporting'
 
 const PrintLayout = props => {
   // disable xray
@@ -15,11 +16,14 @@ const PrintLayout = props => {
 
   const { t } = useTranslation(['workbench'])
 
+  const layoutSettings = props.gist?._state?.layout?.forPrinting?.page || defaultPdfSettings
+
   const draft = props.draft
   // add the pages plugin to the draft
-  draft.use(pluginBuilder(
-    props.gist?._state?.layout?.forPrinting?.page?.size,
-    props.gist?._state?.layout?.forPrinting?.page?.orientation,
+  draft.use(pagesPlugin(
+    layoutSettings.size,
+    layoutSettings.orientation,
+    layoutSettings.margin
   ))
 
   let patternProps
@@ -32,6 +36,10 @@ const PrintLayout = props => {
   }
   const bgProps = { fill: "url(#page)" }
 
+  const exportIt = () => {
+    handleExport('pdf', props.gist, props.design, t)
+  }
+
   return (
     <div>
       <h2 className="capitalize">
@@ -42,7 +50,7 @@ const PrintLayout = props => {
         }
       </h2>
       <div className="m-4">
-        <Settings {...props} draft={draft}/>
+        <Settings {...{...props, exportIt}} draft={draft}/>
       </div>
       <Draft
         draft={draft}
