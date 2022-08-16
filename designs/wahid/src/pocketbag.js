@@ -41,22 +41,10 @@ export default (part) => {
       at: points.title,
     })
   }
-  //Grainline
-  let grainlineVariableShift = points.topLeft.dist(points.topRight) * 0.1
-  points.grainlineFromPocketBag = new Point(points.topLeft.x, points.topLeft.y).shift(
-    0,
-    grainlineVariableShift
-  )
-  points.grainlineToPocketbag = new Point(points.topLeft.x, points.topLeft.y)
-    .shift(0, grainlineVariableShift)
-    .shift(-90, ph)
-  points.grainlineToPocketbagRotated = points.grainlineToPocketbag.rotate(
-    options.pocketAngle,
-    points.grainlineFromPocketBag
-  )
+
   macro('grainline', {
-    from: points.grainlineFromPocketBag,
-    to: points.grainlineToPocketbagRotated,
+    from: points.roundLeftEnd,
+    to: new Point(points.roundLeftEnd.x, points.topLeft.y),
   })
   if (paperless) {
     macro('hd', {

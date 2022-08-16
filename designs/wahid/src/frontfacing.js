@@ -2,7 +2,7 @@ export default (part) => {
   let { points, Point, paths, Path, options, macro, snippets, Snippet, complete, sa } =
     part.shorthand()
   // Cleanup from front part
-  for (let i of Object.keys(paths)) delete paths[i]
+  for (let i of Object.keys(paths).filter((name) => name !== 'grainline')) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
   // Seam line
   paths.seam = new Path()
@@ -28,32 +28,6 @@ export default (part) => {
   }
   paths.seam.close().attr('class', 'fabric')
   if (complete) {
-    // Grainline
-    let grainlineVariableLength = points.cfHips.dist(points.closureTop)
-    if (options.hemStyle === 'classic') {
-      points.grainlineFromFrontFacing = new Point(points.hemTip.x, points.closureTop.y)
-      points.grainlineToFrontFacing = new Point(points.hemTip.x, points.hemTip.y)
-    }
-    if (options.hemStyle === 'rounded') {
-      points.grainlineFromFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y).shift(
-        90,
-        grainlineVariableLength
-      )
-      points.grainlineToFrontFacing = new Point(points.roundEnd.x, points.roundEnd.y)
-    }
-    if (options.hemStyle === 'square') {
-      points.grainlineFromFrontFacing = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y).shift(
-        90,
-        grainlineVariableLength
-      )
-      points.grainlineToFrontFacing = new Point(points.cutonfoldTo.x, points.cutonfoldTo.y)
-    }
-
-    macro('grainline', {
-      from: points.grainlineFromFrontFacing,
-      to: points.grainlineToFrontFacing,
-    })
-
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     points.title = new Point(points.dartWaistLeft.x / 2, points.waist.y)
     macro('title', {

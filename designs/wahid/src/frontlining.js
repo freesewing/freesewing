@@ -23,20 +23,11 @@ export default (part) => {
   } else paths.seam.line(points.hem)
   paths.seam.close()
   if (complete) {
-    //Grainline
-    let grainlineVariableLength = points.armhole.dist(points.hem)
-    let grainlineVariableShift = points.dartHipRightCpTop.dist(points.hipsCp2) * 0.1
-    points.grainlineFromLining = new Point(points.dartEnd.x, points.dartEnd.y)
-      .shift(90, grainlineVariableLength)
-      .shift(0, grainlineVariableShift)
-    points.grainlineToLining = new Point(points.dartEnd.x, points.dartEnd.y).shift(
-      0,
-      grainlineVariableShift
-    )
     macro('grainline', {
-      from: points.grainlineFromLining,
-      to: points.grainlineToLining,
+      from: points.flbTop,
+      to: new Point(points.flbTop.x, points.dartTop.y),
     })
+
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     points.title = points.armhole.shiftFractionTowards(points.dartTop, 0.5)
     macro('title', {

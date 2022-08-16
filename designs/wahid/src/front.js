@@ -266,26 +266,11 @@ export default (part) => {
       .attr('class', 'fabric')
     paths.flbLining = paths.flbFacing.clone().attr('class', 'lining dashed')
 
-    // Grainline
-    let grainlineVariableLength = points.closureTop.dist(points.cfHips)
-    if (options.hemStyle === 'classic') {
-      points.grainLineFromFront = new Point(points.hemTip.x, points.closureTop.y)
-      points.grainLineToFront = new Point(points.hemTip.x, points.hemTip.y)
-    }
-    if (options.hemStyle === 'rounded') {
-      points.grainLineFromFront = new Point(points.roundEnd.x, points.roundEnd.y).shift(
-        90,
-        grainlineVariableLength
-      )
-      points.grainLineToFront = new Point(points.roundEnd.x, points.roundEnd.y)
-    }
-    if (options.hemStyle === 'square') {
-      points.grainLineFromFront = new Point(points.cfHips.x, points.closureTop.y)
-      points.grainLineToFront = new Point(points.cfHips.x, points.cfHips.y)
-    }
+    //Grainline
+
     macro('grainline', {
-      from: points.grainLineFromFront,
-      to: points.grainLineToFront,
+      to: points.neck,
+      from: new Point(points.neck.x, points.cfHem.y),
     })
     if (sa) {
       paths.sa = paths.saBase
