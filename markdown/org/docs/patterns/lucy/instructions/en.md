@@ -11,7 +11,7 @@ Lucy can be sewn by hand or by machine as you prefer. When sewing by hand, you c
 ## Step 1: Constructing the Pocket
 
 - *Bind* the pocket slit.
-- With *wrong sides together* stitch the two pocket pieces together around the outside. 
+- With *wrong sides together* stitch the two pocket pieces together around the outside.
 - *Bind* the outside edge.
 
 <Note>
