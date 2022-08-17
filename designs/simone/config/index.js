@@ -7,7 +7,12 @@ const config = {
   name: 'simone',
   optionGroups: {
     ...simonConfig.optionGroups,
-    style: [...simonConfig.optionGroups.style, 'frontDarts', 'contour'],
+    style: [
+        ...simonConfig.optionGroups.style,
+        'frontDarts',
+        'contour',
+        'bustAlignedButtons',
+    ],
     advanced: [
       ...simonConfig.optionGroups.advanced,
       'bustDartAngle',
@@ -38,6 +43,9 @@ const config = {
     frontDarts: { bool: false },
     frontDartLength: { pct: 45, min: 30, max: 60 },
     contour: { pct: 50, min: 30, max: 75 },
+    bustAlignedButtons: {
+      dflt: 'Disabled',
+      list: ['Even spacing', 'Split spacing', 'Disabled'], },
   },
 }
 

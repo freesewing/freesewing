@@ -25,6 +25,7 @@ export default (part) => {
     delete snippets['cfWaist-notch']
     delete snippets['cfHips-notch']
     delete snippets['cfArmhole-notch']
+    delete snippets['cfBust-notch']
     points.edgeArmhole = new Point(points.neckEdge.x, points.armhole.y)
     points.edgeWaist = new Point(points.neckEdge.x, points.waist.y)
     points.edgeHips = new Point(points.neckEdge.x, points.hips.y)

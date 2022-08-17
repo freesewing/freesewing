@@ -25,7 +25,7 @@ export default (part) => {
   }
 
   for (const id in paths) delete part.paths[id]
-  for (const i of ['waist', 'armholePitch', 'hips', 'armhole']) {
+  for (const i of ['waist', 'armholePitch', 'hips', 'armhole', 'bust',]) {
     delete snippets[i + '-notch']
   }
   const width = store.get('buttonholePlacketWidth')
@@ -98,6 +98,12 @@ export default (part) => {
     // Notches
     snippets['cfArmhole-notch'].anchor.x = points.cfArmhole.x - fold * 2
     snippets['cfWaist-notch'].anchor.x = points.cfArmhole.x - fold * 2
+    // Not available in Simon
+    if (typeof snippets['cfBust-notch'] !== 'undefined')
+      snippets['cfBust-notch'].anchor.x = points.cfArmhole - fold * 2
+    // Not available in Simon
+    if (typeof snippets['cfHem-notch'] !== 'undefined')
+      snippets['cfHem-notch'].anchor.x = points.cfArmhole.x - fold * 2
     // This notch is not available in Simone
     if (typeof snippets['cfHips-notch'] !== 'undefined')
       snippets['cfHips-notch'].anchor.x = points.cfArmhole.x - fold * 2
