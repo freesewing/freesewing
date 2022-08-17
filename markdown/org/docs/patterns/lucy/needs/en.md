@@ -1,11 +1,18 @@
 ---
-title: "Fixme"
+title: "Lucy tie-on pocket: What You Need"
 ---
 
-<Fixme>
+To make Lucy, you will need the following:
 
-This documentation page is yet to be written.
+- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- Roughly half a meter of suitable fabric ([see Fabric options](/docs/patterns/lucy/fabric))
+- Another half a meter of fabric if using a lining
+- About 2 meters of bias binding or strips of fabric if binding the edges
 
-Sorry for the inconvenience.
+<Note>
 
-</Fixme>
+#### Piecing is Period!
+
+Pockets like these do not need to be made out of whole pieces of fabric, you can piece together scraps into a large enough piece to cut your pocket pattern out of. Neither do both sides need to be made out of the same fabric. 
+
+</Note>
