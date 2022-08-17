@@ -124,7 +124,7 @@ const basePlugin = ({
     },
     /** add a ruler to the top left corner of the page */
     addRuler({xAxis, pageName}) {
-      const { points, Point, paths, Path } = this.shorthand()
+      const { points, paths, Path } = this.shorthand()
       // arbitrary number of units for the ruler
       const rulerLength = 2
       const isMetric = this.context.settings.units === 'metric'
@@ -202,7 +202,7 @@ const basePlugin = ({
     },
     /** add a page marker for either the row of the column */
     addPageMarker({along, label, isRow, pageName}) {
-      const {points, paths, Point, Path} = this.shorthand()
+      const {points, paths, Path} = this.shorthand()
       const markerName = `${pageName}-${isRow ? 'row' : 'col'}-marker`
 
       // get a point on the center of the appropriate side

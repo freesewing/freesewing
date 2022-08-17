@@ -1,4 +1,3 @@
-import {sizes} from '../layout/print/plugin'
 import PDFDocument from 'pdfkit/js/pdfkit.standalone'
 import SVGtoPDF from 'svg-to-pdfkit'
 import fileSaver from 'file-saver'

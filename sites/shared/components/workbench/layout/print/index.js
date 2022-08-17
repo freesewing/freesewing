@@ -21,7 +21,7 @@ const PrintLayout = props => {
   // add the pages plugin to the draft
   const layoutSettings = props.gist?._state?.layout?.forPrinting?.page || defaultPdfSettings
   draft.use(pagesPlugin(
-    layoutSettings, true
+    layoutSettings
   ))
 
   let patternProps
