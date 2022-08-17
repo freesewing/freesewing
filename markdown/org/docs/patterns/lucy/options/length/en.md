@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: Length
 ---
 
-undefined
+The length option determines how long your pocket will be. 
 
 
 ## Effect of this option on the pattern
