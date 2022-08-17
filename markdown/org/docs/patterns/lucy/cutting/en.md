@@ -4,3 +4,13 @@ title: "Lucy tie-on pocket: Cutting Instructions"
 
 - Cut **2 pocket** parts
 - Cut pocket slit into **1 pocket** part
+
+#### Historical context 
+
+Tie-on pockets like Lucy were worn roughly from the mid-seventeenth (1650s) century until the end of the 19th century (1890s). They came in all shapes and sizes but Lucy is based on an 18th century example. 
+
+They were worn and used by all members of society and were mainly womens wear as men had a variety of pockets sewn into their clothing. 
+
+Pockets would be tied around the waist and could be accessed through a slit in skirts and petticoats. Where inbetween the layers the pocket would be was up to the individual. If it was hidden in between layers that would provide more security, but hinder accessibility. People who worked in trade often wore their pockets on the outside of their garments entirely, for easy access. 
+
+(Tie-on) Pockets were used alongside patch pockets, sewn in pockets, bags and other ways to carry your things. Sometimes they even had additional pockets hidden inside them! 
