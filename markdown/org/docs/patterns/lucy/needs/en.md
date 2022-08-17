@@ -8,6 +8,7 @@ To make Lucy, you will need the following:
 - Roughly half a meter of suitable fabric ([see Fabric options](/docs/patterns/lucy/fabric))
 - Another half a meter of fabric if using a lining
 - About 2 meters of bias binding or strips of fabric if binding the edges
+- A length of tape that you can tie around your waist to make the ties with
 
 <Note>
 
