@@ -137,23 +137,25 @@ export default class Exporter {
 		    for (var p in layout.parts) {
 		    	let part = this.pattern.parts[p]
 		    	// skip the pages part and any that aren't rendered
-		    	if (p === 'pages' || part.render === false) continue
+		    	if (p === 'pages' || part.render === false || part.isEmpty()) continue
 
 		    	// get the position of the part
 		    	let partLayout = layout.parts[p]
-		   		let partX = partLayout.move.x + part.topLeft.x
-		   		let partY = partLayout.move.y + part.topLeft.y
+		   		let partMinX = (partLayout.tl?.x || (partLayout.move.x + part.topLeft.x))
+		   		let partMinY = (partLayout.tl?.y || (partLayout.move.y + part.topLeft.y))
+		   		let partMaxX = (partLayout.br?.x || (partMinX + part.width))
+		   		let partMaxY = (partLayout.br?.y || (partMinY + part.height))
 
 		   		// check if the part overlaps the page extents
 		    	if (
 		    		// if the left of the part is further left than the right end of the page
-		    		partX < x + this.pageWidthInMm &&
+		    		partMinX < x + this.pageWidthInMm &&
 		    		// and the top of the part is above the bottom of the page
-		    		partY < y + this.pageHeightInMm &&
+		    		partMinY < y + this.pageHeightInMm &&
 		    		// and the right of the part is further right than the left of the page
-		    		partX + part.width > x &&
+		    		partMaxX > x &&
 		    		// and the bottom of the part is below the top to the page
-		    		partY + part.height > y
+		    		partMaxY > y
 		    		) {
 		    		// the part has content inside the page
 		    		hasContent = true;
