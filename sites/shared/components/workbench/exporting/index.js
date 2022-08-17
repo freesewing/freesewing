@@ -1,4 +1,4 @@
-import { useState} from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import fileSaver from 'file-saver'
 import yaml from 'js-yaml'
@@ -7,7 +7,7 @@ import Popout from 'shared/components/popout'
 import WebLink from 'shared/components/web-link'
 import theme from '@freesewing/plugin-theme'
 import {pagesPlugin} from '../layout/print/plugin'
-import PdfExporter from './exporter'
+import PdfExporter from './pdfExporter'
 
 export const exports = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid'],
@@ -24,8 +24,11 @@ export const defaultPdfSettings = {
 
 export const handleExport = (format, gist, design, t, app, setLink, setFormat) => {
 
+  // handle state setting if there's supposed to be any
   setLink && setLink(false)
   setFormat && setFormat(format)
+
+  // handle the data exports
   if (exports.exportAsData.indexOf(format) !== -1) {
     if (format === 'json') exportJson(gist)
     else if (format === 'yaml') exportYaml(gist)
@@ -36,8 +39,12 @@ export const handleExport = (format, gist, design, t, app, setLink, setFormat) =
 
   gist.embed=false
   let svg = ''
+
+  // make a pattern instance for export rendering
   const layout = gist.layouts?.printingLayout || gist.layout || true
   let pattern = new design({...gist, layout})
+
+  // add the theme and translation to the pattern
   pattern.use(theme, {stripped: format !== 'svg'})
   pattern.use({
     hooks: {
@@ -45,23 +52,25 @@ export const handleExport = (format, gist, design, t, app, setLink, setFormat) =
     }
   },{t})
 
+  // pdf settings
   const settings = {
     ...defaultPdfSettings,
     ...(gist._state.layout?.forPrinting?.page || {})
   }
 
+  // a specified size should override the gist one
   if (format !== 'pdf') {
     settings.size = format
   }
 
   try {
+    // add pages to pdf exports
     if (format !== 'svg') {
       pattern.use(pagesPlugin(settings, true))
     }
 
     pattern.draft();
     svg = pattern.render()
-
   } catch(err) {
     console.log(err)
   }

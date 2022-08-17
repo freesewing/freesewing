@@ -16,12 +16,12 @@ const PrintLayout = props => {
 
   const { t } = useTranslation(['workbench'])
 
-  const layoutSettings = props.gist?._state?.layout?.forPrinting?.page || defaultPdfSettings
-
   const draft = props.draft
+
   // add the pages plugin to the draft
+  const layoutSettings = props.gist?._state?.layout?.forPrinting?.page || defaultPdfSettings
   draft.use(pagesPlugin(
-    layoutSettings
+    layoutSettings, true
   ))
 
   let patternProps

@@ -10,18 +10,37 @@ export const sizes = {
   tabloid: [ 279.4, 431.8 ],
 }
 
+/** get a letter to represent an index */
 const indexLetter = (i) => String.fromCharCode('A'.charCodeAt(0) + i - 1)
 
-export const pagesPlugin = ({size='a4', orientation='portrait', margin=10}, outlineStyle = true ) => {
-  let [sheetWidth, sheetHeight] = sizes[size];
+/**
+ * A plugin to add printer pages
+ * */
+export const pagesPlugin = ({size='a4', orientation='portrait', margin=10}, printStyle = false /** should the pages be rendered for printing or for screen viewing? */ ) => {
+  const ls = orientation === 'landscape'
+  let sheetHeight = sizes[size][ls ? 1 : 0]
+  let sheetWidth = sizes[size][ls ? 0 : 1]
   sheetWidth -= margin
   sheetHeight -= margin
-  return basePlugin({sheetWidth, sheetHeight, orientation, outlineStyle})
+  return basePlugin({sheetWidth, sheetHeight, orientation, printStyle})
 }
 
-export const cutFabricPlugin = (sheetWidth, sheetHeight) => basePlugin({sheetWidth, sheetHeight, boundary: true, partName: "cutFabric", responsiveWidth: false})
-
-const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=false, partName="pages", responsiveWidth=true, outlineStyle=false}) => ({
+/**
+ * The base plugin for adding a layout helper part like pages or fabric
+ * sheetWidth: the width of the helper part
+ * sheetHeight: the height of the helper part
+ * boundary: should the helper part calculate its boundary?
+ * responsiveColumns: should the part make more columns if the pattern exceed its width? (for pages you want this, for fabric you don't)
+ * printStyle: hould the pages be rendered for printing or for screen viewing?
+ * */
+const basePlugin = ({
+  sheetWidth,
+  sheetHeight,
+  boundary=false,
+  partName="pages",
+  responsiveColumns=true,
+  printStyle=false
+}) => ({
   name,
   version,
   hooks: {
@@ -37,22 +56,21 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       // Add pages
       const { macro } = pattern.parts[partName].shorthand()
       let { height, width } = pattern
-      if (!responsiveWidth) width = sheetWidth;
+      if (!responsiveColumns) width = sheetWidth;
       if (pattern.settings.layout?.topLeft) {
         height += pattern.settings.layout.topLeft.y
-        responsiveWidth && (width += pattern.settings.layout.topLeft.x)
+        responsiveColumns && (width += pattern.settings.layout.topLeft.x)
       }
 
-      macro('addPages', { size: [sheetWidth, sheetHeight], orientation, height, width })
+      macro('addPages', { size: [sheetWidth, sheetHeight], height, width })
 
       if (boundary) pattern.parts[partName].boundary();
     }
   },
   macros: {
+    /** draft the pages */
     addPages: function(so) {
-      const ls = so.orientation === 'landscape'
-      const w = so.size[ls ? 1 : 0]
-      const h = so.size[ls ? 0 : 1]
+      const [h,w] = so.size
       const cols = Math.ceil(so.width / w)
       const rows = Math.ceil(so.height / h)
       const { points, Point, paths, Path, macro } = this.shorthand()
@@ -85,12 +103,13 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
             .line(points[`${pageName}-tr`])
             .close()
 
-          if (!outlineStyle) {
+          if (!printStyle) {
             paths[pageName].attr('class', 'fill-fabric')
             .attr('style', `stroke-opacity: 0; fill-opacity: ${(col+row)%2===0 ? 0.03 : 0.09};`)
           }
           else {
             paths[pageName].attr('class', 'interfacing stroke-xs')
+            // add markers and rulers
             macro('addPageMarkers', {row, col, pageName})
             macro('addRuler', {xAxis: true, pageName})
             macro('addRuler', {xAxis: false, pageName})
@@ -103,48 +122,71 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       this.pages = { cols, rows, count: cols*rows }
 
     },
+    /** add a ruler to the top left corner of the page */
     addRuler({xAxis, pageName}) {
       const { points, Point, paths, Path } = this.shorthand()
+      // arbitrary number of units for the ruler
       const rulerLength = 2
       const isMetric = this.context.settings.units === 'metric'
+      // distance to the end of the ruler
       const endPointDist = [(isMetric ? 10 : 25.4) * rulerLength, 0]
 
       const axisName = xAxis ? 'x' : 'y'
+      const rulerName = `${pageName}-${axisName}`
+      // start by making an endpoint for the ruler based on the axis
       const endPoint = [endPointDist[xAxis ? 0 : 1], endPointDist[xAxis ? 1 : 0]]
-      points[`${pageName}-${axisName}-ruler-start`] = points[`${pageName}-tl`].translate(endPoint[0], endPoint[1])
-      points[`${pageName}-${axisName}-ruler-end`] = points[`${pageName}-${axisName}-ruler-start`].translate(xAxis ? 0 : 3, xAxis ? 3 : 0)
+      points[`${rulerName}-ruler-end`] = points[`${pageName}-tl`].translate(endPoint[0], endPoint[1])
+      // also make a tick for the end of the ruler
+      points[`${rulerName}-ruler-tick`] = points[`${rulerName}-ruler-end`].translate(xAxis ? 0 : 3, xAxis ? 3 : 0)
+        // add a label to it
         .attr('data-text', rulerLength + (isMetric ? 'cm' : 'in'))
+        // space the text properly from the end of the line
         .attr('data-text-class', 'fill-interfacing baseline-center' +  (xAxis ? ' center' : ''))
-        .attr('data-text-id', `${pageName}-${axisName}-ruler-text`)
         .attr(`data-text-d${xAxis ? 'y' : 'x'}`, xAxis ? 5 : 3)
-      paths[`${pageName}-${axisName}-ruler`] = new Path()
+        // give the text an explicit id in case we need to hide it later
+        .attr('data-text-id', `${rulerName}-ruler-text`)
+
+      // start the path
+      paths[`${rulerName}-ruler`] = new Path()
         .move(points[`${pageName}-tl`])
-        .attr('id', `${pageName}-${axisName}-ruler`)
+        // give it an explicit id in case we need to hide it later
+        .attr('id', `${rulerName}-ruler`)
+        .attr('class', 'interfacing stroke-xs')
 
+      // get the distance between the smaller ticks on the rule
       const division = (isMetric ? 0.1 : 0.125) / rulerLength
+      // we're going to go by fraction, so we want to do this up to 1
       for (var d = division; d < 1; d+= division) {
-        points[`${pageName}-${axisName}-ruler-${d}-start`] = points[`${pageName}-tl`].shiftFractionTowards(points[`${pageName}-${axisName}-ruler-start`], d)
+        // make a start point
+        points[`${rulerName}-ruler-${d}-end`] = points[`${pageName}-tl`].shiftFractionTowards(points[`${rulerName}-ruler-end`], d)
 
+        // base tick size on whether this is a major interval or a minor one
         let tick = 1;
+        // if this tick indicates a whole unit, extra long
         if (d.toFixed(3) % (1/rulerLength) === 0) tick = 3
+        // if this tick indicates half a unit, long
         else if (d.toFixed(3) % (0.5/rulerLength) === 0) tick = 2
 
-        points[`${pageName}-${axisName}-ruler-${d}-end`] = points[`${pageName}-${axisName}-ruler-${d}-start`].translate(xAxis ? 0 : tick, xAxis ? tick : 0)
+        // make a point for the end of the tick
+        points[`${rulerName}-ruler-${d}-tick`] = points[`${rulerName}-ruler-${d}-end`].translate(xAxis ? 0 : tick, xAxis ? tick : 0)
 
-        paths[`${pageName}-${axisName}-ruler`]
-          .line(points[`${pageName}-${axisName}-ruler-${d}-start`])
-          .line(points[`${pageName}-${axisName}-ruler-${d}-end`])
-          .line(points[`${pageName}-${axisName}-ruler-${d}-start`])
+        // add the whole set to the ruler path
+        paths[`${rulerName}-ruler`]
+          .line(points[`${rulerName}-ruler-${d}-end`])
+          .line(points[`${rulerName}-ruler-${d}-tick`])
+          .line(points[`${rulerName}-ruler-${d}-end`])
       }
 
-      paths[`${pageName}-${axisName}-ruler`]
-      .line(points[`${pageName}-${axisName}-ruler-start`])
-      .line(points[`${pageName}-${axisName}-ruler-end`])
-      .attr('class', 'interfacing stroke-xs')
-
+      // add the end
+      paths[`${rulerName}-ruler`]
+      .line(points[`${rulerName}-ruler-end`])
+      .line(points[`${rulerName}-ruler-tick`])
     },
+    /** add page markers to the given page */
     addPageMarkers({row, col, pageName}) {
       const {macro, points} = this.shorthand()
+      // these markers are placed on the top and left of the page,
+      // so skip markers for the top row or leftmost column
       if (row !== 0) macro('addPageMarker', {
         along: [points[`${pageName}-tl`], points[`${pageName}-tr`]],
         label: '' + row,
@@ -158,18 +200,26 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
         pageName
       })
     },
+    /** add a page marker for either the row of the column */
     addPageMarker({along, label, isRow, pageName}) {
       const {points, paths, Point, Path} = this.shorthand()
       const markerName = `${pageName}-${isRow ? 'row' : 'col'}-marker`
+
+      // get a point on the center of the appropriate side
       points[`${markerName}-center`] = along[0].shiftFractionTowards(along[1], 0.5)
+        // add the label to it
         .attr('data-text', label)
         .attr('data-text-class', 'text-sm center baseline-center bold')
+        // give it an explicit ID in case we need to hide it later
         .attr('data-text-id', markerName + '-text')
+
+      // get points to make a diamond around the center point
       points[`${markerName}-r`] = points[`${markerName}-center`].translate(-5, 0)
       points[`${markerName}-l`] = points[`${markerName}-center`].translate(5, 0)
       points[`${markerName}-t`] = points[`${markerName}-center`].translate(0, -5)
       points[`${markerName}-b`] = points[`${markerName}-center`].translate(0, 5)
 
+      // make a path for the diamond
       paths[markerName] = new Path()
         .move(points[`${markerName}-r`])
         .line(points[`${markerName}-t`])
@@ -177,6 +227,7 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
         .line(points[`${markerName}-b`])
         .close()
         .attr('class', 'fill-interfacing interfacing')
+        // give it an explicit ID in case we need to hide it later
         .attr('id', markerName)
     }
   }
