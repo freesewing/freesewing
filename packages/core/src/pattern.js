@@ -514,15 +514,12 @@ Pattern.prototype.pack = function () {
       let part = this.parts[bin.id]
       if (bin.x !== 0 || bin.y !== 0) {
         part.attr('transform', `translate(${bin.x}, ${bin.y})`)
-        this.autoLayout.parts[bin.id].move = {
-          x: bin.x + part.layout.move.x,
-          y: bin.y + part.layout.move.y,
-        }
-      } else
-        this.autoLayout.parts[bin.id].move = {
-          x: part.layout.move.x,
-          y: part.layout.move.y,
-        }
+      }
+
+      this.autoLayout.parts[bin.id].move = {
+        x: bin.x + part.layout.move.x,
+        y: bin.y + part.layout.move.y,
+      }
     }
     this.width = size.width
     this.height = size.height

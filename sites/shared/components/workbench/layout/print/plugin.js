@@ -10,7 +10,9 @@ export const sizes = {
   tabloid: [ 279.4, 431.8 ],
 }
 
-export const pagesPlugin = (size='a4', orientation='portrait', margin =10, outlineStyle = true ) => {
+const indexLetter = (i) => String.fromCharCode('A'.charCodeAt(0) + i - 1)
+
+export const pagesPlugin = ({size='a4', orientation='portrait', margin=10}, outlineStyle = true ) => {
   let [sheetWidth, sheetHeight] = sizes[size];
   sheetWidth -= margin
   sheetHeight -= margin
@@ -36,6 +38,11 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       const { macro } = pattern.parts[partName].shorthand()
       let { height, width } = pattern
       if (!responsiveWidth) width = sheetWidth;
+      if (pattern.settings.layout?.topLeft) {
+        height += pattern.settings.layout.topLeft.y
+        responsiveWidth && (width += pattern.settings.layout.topLeft.x)
+      }
+
       macro('addPages', { size: [sheetWidth, sheetHeight], orientation, height, width })
 
       if (boundary) pattern.parts[partName].boundary();
@@ -64,11 +71,14 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
           points[`${pageName}-circle`] = new Point(x+w/2,y+h/2)
             .attr('data-circle', 42)
             .attr('data-circle-class', 'stroke-4xl muted fabric')
+            .attr('data-circle-id', `${pageName}-circle`)
           points[`${pageName}-text`] = new Point(x+w/2,y+h/2)
-            .attr('data-text', `${count}`)
+            .attr('data-text', `${indexLetter(col + 1)}${row + 1}`)
             .attr('data-text-class', 'text-4xl center baseline-center bold muted fill-fabric')
+            .attr('data-text-id', `${pageName}-text`)
 
           paths[pageName] = new Path()
+            .attr('id', pageName)
             .move(points[`${pageName}-tl`])
             .line(points[`${pageName}-bl`])
             .line(points[`${pageName}-br`])
@@ -82,11 +92,8 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
           else {
             paths[pageName].attr('class', 'interfacing stroke-xs')
             macro('addPageMarkers', {row, col, pageName})
-
-            if (row === 0 && col === 0) {
-              macro('addRuler', {xAxis: true, pageName})
-              macro('addRuler', {xAxis: false, pageName})
-            }
+            macro('addRuler', {xAxis: true, pageName})
+            macro('addRuler', {xAxis: false, pageName})
           }
           x += w
         }
@@ -107,10 +114,12 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       points[`${pageName}-${axisName}-ruler-start`] = points[`${pageName}-tl`].translate(endPoint[0], endPoint[1])
       points[`${pageName}-${axisName}-ruler-end`] = points[`${pageName}-${axisName}-ruler-start`].translate(xAxis ? 0 : 3, xAxis ? 3 : 0)
         .attr('data-text', rulerLength + (isMetric ? 'cm' : 'in'))
-        .attr('data-text-class', xAxis ? 'center baseline-center' : 'baseline-center')
+        .attr('data-text-class', 'fill-interfacing baseline-center' +  (xAxis ? ' center' : ''))
+        .attr('data-text-id', `${pageName}-${axisName}-ruler-text`)
         .attr(`data-text-d${xAxis ? 'y' : 'x'}`, xAxis ? 5 : 3)
       paths[`${pageName}-${axisName}-ruler`] = new Path()
         .move(points[`${pageName}-tl`])
+        .attr('id', `${pageName}-${axisName}-ruler`)
 
       const division = (isMetric ? 0.1 : 0.125) / rulerLength
       for (var d = division; d < 1; d+= division) {
@@ -132,6 +141,7 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       .line(points[`${pageName}-${axisName}-ruler-start`])
       .line(points[`${pageName}-${axisName}-ruler-end`])
       .attr('class', 'interfacing stroke-xs')
+
     },
     addPageMarkers({row, col, pageName}) {
       const {macro, points} = this.shorthand()
@@ -143,7 +153,7 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       })
       if (col !== 0) macro('addPageMarker', {
         along: [points[`${pageName}-tl`], points[`${pageName}-bl`]],
-        label: String.fromCharCode('A'.charCodeAt(0) + col - 1),
+        label: indexLetter(col),
         isRow: false,
         pageName
       })
@@ -154,6 +164,7 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
       points[`${markerName}-center`] = along[0].shiftFractionTowards(along[1], 0.5)
         .attr('data-text', label)
         .attr('data-text-class', 'text-sm center baseline-center bold')
+        .attr('data-text-id', markerName + '-text')
       points[`${markerName}-r`] = points[`${markerName}-center`].translate(-5, 0)
       points[`${markerName}-l`] = points[`${markerName}-center`].translate(5, 0)
       points[`${markerName}-t`] = points[`${markerName}-center`].translate(0, -5)
@@ -166,6 +177,7 @@ const basePlugin = ({sheetWidth, sheetHeight, orientation='portrait', boundary=f
         .line(points[`${markerName}-b`])
         .close()
         .attr('class', 'fill-interfacing interfacing')
+        .attr('id', markerName)
     }
   }
 })

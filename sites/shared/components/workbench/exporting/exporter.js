@@ -11,6 +11,7 @@ export default class Exporter {
 	designName
 	svg
 	settings
+	pattern
 
 	pdf
 	pageWidth
@@ -20,11 +21,13 @@ export default class Exporter {
 	hPages
 	svgWidth
 	svgHeight
+	pagesWithContent = {}
 
 
 	constructor(designName, pattern, svg, settings) {
 		this.designName = designName || 'freesewing'
 		this.settings = settings
+		this.pattern = pattern
 		this.createPdf()
 
 	  this.pageHeight = this.pdf.page.height
@@ -32,30 +35,35 @@ export default class Exporter {
 	  this.margin = this.settings.margin * pointsPerMm
 
 		let marginInMm = this.settings.margin
-		let pageWidthInPx = this.pageWidth / pointsPerMm - marginInMm
-		let pageHeightInPx = this.pageHeight / pointsPerMm - marginInMm
+		// let pageWidthInPx = this.pageWidth / pointsPerMm - marginInMm
+		// let pageHeightInPx = this.pageHeight / pointsPerMm - marginInMm
 
 		const divElem = document.createElement('div');
 	  divElem.innerHTML = svg;
 	  this.svg = divElem.firstElementChild;
 
-		this.svgWidth = this.svg.width.baseVal.valueInSpecifiedUnits
-		this.svgHeight = this.svg.height.baseVal.valueInSpecifiedUnits
+	  const viewBox = this.svg.viewBox.baseVal
+		this.svgWidth = viewBox.width + viewBox.x
+		this.svgHeight = viewBox.height + viewBox.y
 
-	  this.wPages = Math.ceil(this.svgWidth/pageWidthInPx)
-  	this.hPages = Math.ceil(this.svgHeight/pageHeightInPx)
+	  this.wPages = Math.ceil(this.svgWidth/this.pageWidthInPx)
+  	this.hPages = Math.ceil(this.svgHeight/this.pageHeightInPx)
 
 	  this.svgWidth = this.wPages * (this.pageWidth - this.margin)
 		this.svgHeight = this.hPages * (this.pageHeight - this.margin)
 
 	  this.svg.setAttribute('height', this.svgWidth + 'pt')
 	  this.svg.setAttribute('width', this.svgHeight + 'pt')
-	  this.svg.setAttribute('viewBox', `0 0 ${this.wPages * pageWidthInPx} ${this.hPages * pageHeightInPx}`)
+	  this.svg.setAttribute('viewBox', `0 0 ${this.wPages * this.pageWidthInPx} ${this.hPages * this.pageHeightInPx}`)
 	}
+
+	get pageWidthInPx() { return this.pageWidth / pointsPerMm - this.settings.margin}
+	get pageHeightInPx() { return this.pageHeight / pointsPerMm - this.settings.margin}
+
 
 	createPdf() {
 		this.pdf = new PDFDocument({
-			size: this.settings.format,
+			size: this.settings.size.toUpperCase(),
 			layout: this.settings.orientation
 		})
 
@@ -69,7 +77,59 @@ export default class Exporter {
 		});
 	}
 
+	scanPages() {
+		const layout = typeof this.pattern.settings.layout === 'object' ? this.pattern.settings.layout : this.pattern.autoLayout;
+		// const usableWidth = this.pageWidth - this.margin
+		// const usableHeight = this.pageHeight - this.margin
+
+		for (var h = 0; h < this.hPages; h++) {
+			this.pagesWithContent[h] = {}
+		  for (var w = 0; w < this.wPages; w++) {
+		    let x = w * this.pageWidthInPx
+		    let y = h * this.pageHeightInPx
+
+		    let hasContent = false
+		    for (var p in layout.parts) {
+		    	let part = this.pattern.parts[p]
+		    	if (p === 'pages' || part.render === false) continue
+
+		    	let partLayout = layout.parts[p]
+		   		let partX = partLayout.move.x + part.topLeft.x
+		   		let partY = partLayout.move.y + part.topLeft.y
+
+		    	if (
+		    		partX < x + this.pageWidthInPx &&
+		    		partX + part.width > x &&
+		    		partY < y + this.pageHeightInPx &&
+		    		partY + part.height > y
+		    		) {
+		    		hasContent = true;
+		    		break;
+		    	}
+		    }
+
+		    this.pagesWithContent[h][w] = hasContent
+		    if (!hasContent) {
+		    	let pageName = `_pages__row${h}-col${w}`
+		    	this.removeElem(pageName, 'circle', 'text')
+		    	this.removeElem(pageName + '-row-marker', 'text')
+		    	this.removeElem(pageName + '-col-marker', 'text')
+		    	this.removeElem(pageName + '-x-ruler', 'text')
+		    	this.removeElem(pageName + '-y-ruler', 'text')
+		    }
+		  }
+		}
+	}
+
+	removeElem(pathId, ...suffixes) {
+		const that = this;
+		const elem = that.svg.getElementById(pathId)
+		if (elem) elem.setAttribute('class', 'hidden')
+		suffixes.forEach((s) => that.removeElem(`${pathId}-${s}`))
+	}
+
 	async export() {
+		this.scanPages()
 		await this.generateCoverPage()
 		await this.generatePages();
 		this.save()
@@ -103,13 +163,15 @@ export default class Exporter {
 
 		for (var h = 0; h < this.hPages; h++) {
 		  for (var w = 0; w < this.wPages; w++) {
+		    let x = -w * this.pageWidth + (0.5 + w) * this.margin
+		    let y = -h * this.pageHeight + (0.5 + h) * this.margin
+
+		    if (!this.pagesWithContent[h][w]) continue;
 		  	// if there was no cover page, the first page already exists
 		    if (this.settings.coverPage || h+w > 0) {
 		    	this.pdf.addPage()
 		    }
 
-		    let x = -w * this.pageWidth + (0.5 + w) * this.margin
-		    let y = -h * this.pageHeight + (0.5 + h) * this.margin
 
 		    await SVGtoPDF(this.pdf, this.svg.outerHTML, x, y, options)
 		  }

@@ -16,7 +16,7 @@ export const exports = {
 }
 
 export const defaultPdfSettings = {
-  format: 'a4',
+  size: 'a4',
   orientation: 'portrait',
   margin: 10,
   coverPage: true
@@ -51,12 +51,12 @@ export const handleExport = (format, gist, design, t, app, setLink, setFormat) =
   }
 
   if (format !== 'pdf') {
-    settings.format = format
+    settings.size = format
   }
 
   try {
     if (format !== 'svg') {
-      pattern.use(pagesPlugin(settings.format, settings.orientation, settings.margin, true))
+      pattern.use(pagesPlugin(settings, true))
     }
 
     pattern.draft();

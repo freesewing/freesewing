@@ -21,9 +21,7 @@ const PrintLayout = props => {
   const draft = props.draft
   // add the pages plugin to the draft
   draft.use(pagesPlugin(
-    layoutSettings.size,
-    layoutSettings.orientation,
-    layoutSettings.margin
+    layoutSettings
   ))
 
   let patternProps
