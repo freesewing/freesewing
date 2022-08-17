@@ -98,7 +98,10 @@ export default (part) => {
     Snippet,
     sa,
     absoluteOptions,
+    raise,
   } = part.shorthand()
+
+  let adjustment_warning = false
 
   // Let's get to work
   points.waistX = new Point(-1 * measurements.waistBackArc * (1 + options.waistEase), 0)
@@ -171,20 +174,42 @@ export default (part) => {
   // Should we fit the cross seam?
   if (options.fitCrossSeam && options.fitCrossSeamBack) {
     let rotate = ['waistIn', 'waistOut']
+    let saved = []
     let delta = crossSeamDelta()
+    let previous_delta = delta
     let run = 0
     do {
+      previous_delta = delta
       run++
       // Remedy A: Slash and spread
-      for (const i of rotate) points[i] = points[i].rotate(delta / 15, points.seatOut)
+      for (const i of rotate) {
+        saved[i] = points[i]
+        points[i] = points[i].rotate(delta / 15, points.seatOut)
+      }
       // Remedy B: Nudge the fork inwards/outwards
+      saved.fork = points.fork
       points.fork = points.fork.shift(0, delta / 5)
+      saved.forkCp2 = points.forkCp2
       points.forkCp2 = points.crossSeamCurveCp2.rotate(-90, points.fork)
       drawCrossSeam()
       delta = crossSeamDelta()
       // Uncomment the line beloe this to see all iterations
       // paths[`try${run}`] = drawPath().attr('class', 'dotted')
-    } while (Math.abs(delta) > 1 && run < 15)
+    } while (Math.abs(delta) > 1
+        && run < 15
+        && (Math.abs(delta) < Math.abs(previous_delta)))
+    if (Math.abs(delta) > Math.abs(previous_delta)) {
+      for (const i of rotate) {
+        points[i] = saved[i]
+      }
+      points.fork = saved.fork
+      points.forkCp2 = saved.forkCp2
+    }
+    if (Math.abs(delta) > 1
+      || Math.abs(delta) > Math.abs(previous_delta)) {
+      raise.warning("Unable to adjust the back crotch seam to fit the given measurements.")
+      adjustment_warning = true
+    }
   }
 
   // Store inseam & outseam length
@@ -321,7 +346,7 @@ export default (part) => {
             points.seatOut,
             points.waistOut
           )
-          points.kneeOutNotch = utils.lineIntersectsCurve(
+          let proposed_kneeOutNotch = utils.lineIntersectsCurve(
             points.kneeOut,
             points.kneeIn.rotate(180, points.kneeOut),
             points.floorOut,
@@ -329,6 +354,20 @@ export default (part) => {
             points.seatOut,
             points.waistOut
           )
+          if (proposed_kneeOutNotch) {
+            points.kneeOutNotch = proposed_kneeOutNotch
+          } else {
+            points.kneeOutNotch = utils.lineIntersectsCurve(
+              points.kneeOut,
+              points.kneeIn,
+              points.floorOut,
+              points.kneeOutCp2,
+              points.seatOut,
+              points.waistOut
+            )
+            raise.warning("Unable to draw seamline outside the back outside knee point.")
+            adjustment_warning = true
+          }
         } else {
           points.hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
@@ -339,7 +378,7 @@ export default (part) => {
             points.waistOut
           )
           points.seatOutNotch = points.seatOut
-          points.kneeOutNotch = utils.lineIntersectsCurve(
+          let proposed_kneeOutNotch = utils.lineIntersectsCurve(
             points.kneeOut,
             points.kneeIn.rotate(180, points.kneeOut),
             points.floorOut,
@@ -347,8 +386,22 @@ export default (part) => {
             points.seatOutCp1,
             points.seatOut
           )
+          if (proposed_kneeOutNotch) {
+            points.kneeOutNotch = proposed_kneeOutNotch
+          } else {
+            points.kneeOutNotch = utils.lineIntersectsCurve(
+              points.kneeOut,
+              points.kneeIn,
+              points.floorOut,
+              points.kneeOutCp2,
+              points.seatOutCp1,
+              points.seatOut
+            )
+            raise.warning("Unable to draw seamline outside the back outside knee point.")
+            adjustment_warning = true
+          }
         }
-        points.kneeInNotch = utils.lineIntersectsCurve(
+        let proposed_kneeInNotch = utils.lineIntersectsCurve(
           points.kneeIn,
           points.kneeOut.rotate(180, points.kneeIn),
           points.fork,
@@ -356,6 +409,26 @@ export default (part) => {
           points.kneeInCp1,
           points.floorIn
         )
+        if (proposed_kneeInNotch) {
+          points.kneeInNotch = proposed_kneeInNotch
+        } else {
+          proposed_kneeInNotch = utils.lineIntersectsCurve(
+            points.kneeIn,
+            points.kneeOut,
+            points.fork,
+            points.forkCp2,
+            points.kneeInCp1,
+            points.floorIn
+          )
+          if (proposed_kneeInNotch) {
+            points_knee_InNotch = proposed_kneeInNotch
+            raise.warning("Unable to draw seamline outside the back inside knee point.")
+            adjustment_warning = true
+          } else {
+            raise.warning("Unable to determine proper kneeInNotch location.")
+            adjustment_warning = true
+          }
+        }
       }
       macro('sprinkle', {
         snippet: 'notch',
@@ -488,6 +561,11 @@ export default (part) => {
         })
       }
     }
+  }
+
+  if (adjustment_warning) {
+    raise.warning("Manual fitting/alteration of the Back pattern piece may be needed.")
+    raise.warning("Please recheck your measurements, make a test garment to check fit, and alter if necessary.")
   }
 
   return part

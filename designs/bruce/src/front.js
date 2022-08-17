@@ -36,10 +36,14 @@ export default function (part) {
     macro,
     snippets,
     Snippet,
+    raise,
   } = part.shorthand()
+
 
   // Initialize
   init(part)
+
+  let adjustment_warning = false
 
   points.topRight = new Point(store.get('hipsFront') / 2, 0)
   points.topLeft = points.topRight.flipX()
@@ -67,14 +71,36 @@ export default function (part) {
 
   // Adjust tusk length to fit inset curve
   let delta = tuskDelta(part)
+  let original_delta = delta
+  let rotation = ['rightTuskRight', 'rightTuskLeft', 'curveRightCpBottom']
+  let saved = []
+  let stop = false
+  if (Math.abs(delta) <= 1) {
+    // We are already below 1mm. No adjustment needed.
+    stop = true
+  }
   let count = 0
-  while (Math.abs(delta) > 1) {
-    // Below 1mm is good enough
+  while (!stop) {
+    original_delta = delta
+    for (const i of rotation) {
+      saved[i] = points[i]
+    }
     tweakTusk(delta, part)
     delta = tuskDelta(part)
     count++
-    if (count > 150)
-      throw 'We got stuck trying to calculate an optimal tusk length. Please report this.'
+    if (Math.abs(delta) <= 1) {
+      // Below 1mm is good enough
+      stop = true
+    } else if (Math.abs(delta) > Math.abs(original_delta) || count >= 150) {
+      raise.warning("Unable to adjust the front tusk length to fit the given measurements, after " + count  + " iterations.")
+      adjustment_warning = true
+      stop = true
+      if (Math.abs(delta) > Math.abs(original_delta)) {
+        for (const i of rotation) {
+          points[i] = saved[i]
+        }
+      }
+    }
   }
 
   // Adjust midMid to new length
@@ -268,6 +294,11 @@ export default function (part) {
         x: points.topRight.x + 30 + sa,
       })
     }
+  }
+
+  if (adjustment_warning) {
+    raise.warning("Manual fitting/alteration of the Front pattern piece may be needed.")
+    raise.warning("Please recheck your measurements, make a test garment to check fit, and alter if necessary.")
   }
 
   return part

@@ -171,7 +171,10 @@ export default (part) => {
     Snippet,
     sa,
     absoluteOptions,
+    raise,
   } = part.shorthand()
+
+  let adjustment_warning = false
 
   // Let's get to work
   points.waistX = new Point(measurements.waistFrontArc * (1 + options.waistEase), 0)
@@ -235,19 +238,39 @@ export default (part) => {
 
   if (options.fitCrossSeam && options.fitCrossSeamFront) {
     let delta = crotchSeamDelta()
+    let previous_delta = delta
     let rotate = ['waistIn', 'waistOut', 'cfWaist']
+    let saved = []
     let run = 0
     do {
+      previous_delta = delta
       run++
       // Remedy A: Slash and spread
-      for (const i of rotate) points[i] = points[i].rotate(delta / -15, points.seatOut)
+      for (const i of rotate) {
+        saved[i] = points[i]
+        points[i] = points[i].rotate(delta / -15, points.seatOut)
+      }
       // Remedy B: Nudge the fork inwards/outwards
+      saved.fork = points.fork
       points.fork = points.fork.shift(180, delta / 5)
       drawCrotchSeam()
       delta = crotchSeamDelta()
       // Uncomment the line below this to see all iterations
       // paths[`try${run}`] = drawPath().attr('class', 'dotted')
-    } while (Math.abs(delta) > 1 && run < 15)
+    } while (Math.abs(delta) > 1
+        && run < 15
+        && (Math.abs(delta) < Math.abs(previous_delta)))
+    if (Math.abs(delta) > Math.abs(previous_delta)) {
+      for (const i of rotate) {
+        points[i] = saved[i]
+      }
+      points.fork = saved.fork
+    }
+    if (Math.abs(delta) > 1
+      || Math.abs(delta) > Math.abs(previous_delta)) {
+      raise.warning("Unable to adjust the front crotch seam to fit the given measurements.")
+      adjustment_warning = true
+    }
   }
 
   // Uncomment this to see the outline prior to fitting the inseam & outseam
@@ -281,6 +304,11 @@ export default (part) => {
       points.waistIn,
       points.crotchSeamCurveStart
     )
+    if (points.styleWaistIn.y > points.crotchSeamCurveStart.y) {
+      points.crotchSeamCurveStart = points.styleWaistIn.clone()
+      raise.warning("Forced to shorten front crotch length to accommodate waistband height.")
+      adjustment_warning = true
+    }
   } else {
     points.styleWaistIn = points.waistIn.clone()
     points.styleWaistOut = points.waistOut.clone()
@@ -348,7 +376,7 @@ export default (part) => {
       }
       if (options.fitKnee) {
         if (points.waistOut.x < points.seatOut.x) {
-          points.hipsOut = utils.lineIntersectsCurve(
+          let proposed_hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
@@ -356,6 +384,20 @@ export default (part) => {
             points.kneeOutCp1,
             points.kneeOut
           )
+          if (proposed_hipsOut) {
+            points.hipsOut = proposed_hipsOut
+          } else {
+            points.hipsOut = utils.lineIntersectsCurve(
+              points.hipsOutTarget,
+              points.hipsIn,
+              points.waistOut,
+              points.seatOut,
+              points.kneeOutCp1,
+              points.kneeOut
+            )
+            raise.warning("Unable to draw seamline outside the front outside hip point.")
+            adjustment_warning = true
+          }
           points.seatOutNotch = utils.lineIntersectsCurve(
             points.seatMid,
             points.seatOutTarget,
@@ -365,7 +407,7 @@ export default (part) => {
             points.kneeOut
           )
         } else {
-          points.hipsOut = utils.lineIntersectsCurve(
+          let proposed_hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
@@ -373,13 +415,27 @@ export default (part) => {
             points.seatOutCp1,
             points.seatOut
           )
+          if (proposed_hipsOut) {
+            points.hipsOut = proposed_hipsOut
+          } else {
+            points.hipsOut = utils.lineIntersectsCurve(
+              points.hipsOutTarget,
+              points.hipsIn,
+              points.waistOut,
+              points.waistOut,
+              points.seatOutCp1,
+              points.seatOut
+            )
+            raise.warning("Unable to draw seamline outside the front outside hip point.")
+            adjustment_warning = true
+          }
           points.seatOutNotch = points.seatOut
         }
         points.kneeOutNotch = points.kneeOut
         points.kneeInNotch = points.kneeIn
       } else {
         if (points.waistOut.x < points.seatOut.x) {
-          points.hipsOut = utils.lineIntersectsCurve(
+          let proposed_hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
@@ -387,6 +443,20 @@ export default (part) => {
             points.kneeOutCp1,
             points.floorOut
           )
+          if (proposed_hipsOut) {
+            points.hipsOut = proposed_hipsOut
+          } else {
+            points.hipsOut = utils.lineIntersectsCurve(
+              points.hipsOutTarget,
+              points.hipsIn,
+              points.waistOut,
+              points.seatOut,
+              points.kneeOutCp1,
+              points.floorOut
+            )
+            raise.warning("Unable to draw seamline outside the front outside hip point.")
+            adjustment_warning = true
+          }
           points.seatOutNotch = utils.lineIntersectsCurve(
             points.seatMid,
             points.seatOutTarget,
@@ -404,7 +474,7 @@ export default (part) => {
             points.floorOut
           )
         } else {
-          points.hipsOut = utils.lineIntersectsCurve(
+          let proposed_hipsOut = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
@@ -412,6 +482,20 @@ export default (part) => {
             points.seatOutCp1,
             points.seatOut
           )
+          if (proposed_hipsOut) {
+            points.hipsOut = proposed_hipsOut
+          } else {
+            points.hipsOut = utils.lineIntersectsCurve(
+              points.hipsOutTarget,
+              points.hipsIn,
+              points.waistOut,
+              points.waistOut,
+              points.seatOutCp1,
+              points.seatOut
+            )
+            raise.warning("Unable to draw seamline outside the front outside hip point.")
+            adjustment_warning = true
+          }
           points.seatOutNotch = points.seatOut
           points.kneeOutNotch = utils.lineIntersectsCurve(
             points.kneeOut,
@@ -422,7 +506,7 @@ export default (part) => {
             points.floorOut
           )
         }
-        points.kneeInNotch = utils.lineIntersectsCurve(
+        let proposed_kneeInNotch = utils.lineIntersectsCurve(
           points.kneeIn,
           points.kneeOut.rotate(180, points.kneeIn),
           points.floorIn,
@@ -430,6 +514,26 @@ export default (part) => {
           points.forkCp1,
           points.fork
         )
+        if (proposed_kneeInNotch) {
+          points.kneeInNotch = proposed_kneeInNotch
+        } else {
+          proposed_kneeInNotch = utils.lineIntersectsCurve(
+            points.kneeIn,
+            points.kneeOut,
+            points.floorIn,
+            points.kneeInCp2,
+            points.forkCp1,
+            points.fork
+          )
+          if (proposed_kneeInNotch) {
+            points.kneeInNotch = proposed_kneeInNotch
+            raise.warning("Unable to draw seamline outside the front inside knee point.")
+            adjustment_warning = true
+          } else {
+            raise.warning("Unable to determine proper kneeInNotch location.")
+            adjustment_warning = true
+          }
+        }
       }
       macro('sprinkle', {
         snippet: 'notch',
@@ -559,6 +663,11 @@ export default (part) => {
         y: points.styleWaistIn.y - sa - 60,
       })
     }
+  }
+
+  if (adjustment_warning) {
+    raise.warning("Manual fitting/alteration of the Front pattern piece may be needed.")
+    raise.warning("Please recheck your measurements, make a test garment to check fit, and alter if necessary.")
   }
 
   return part
