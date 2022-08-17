@@ -6,10 +6,10 @@ Because pockets were worn by people in every layer of society historically what 
 
 As such when it comes to fabric options the world is your oyster. 
 
--Modern prints make fun modern pockets
--Use a plain cotton or linen for a more historical option
--have a lot of scraps? Make a patchwork pocket! 
--pockets were often a first embroidery project, so go wild if you want to
+- Modern prints make fun modern pockets
+- Use a plain cotton or linen for a more historical option
+- have a lot of scraps? Make a patchwork pocket! 
+- pockets were often a first embroidery project, so go wild if you want to
 
 The one thing to keep in mind is how stable your fabric is, if it is not very stable or you think it won’t hold very much weight, you can add a lining. 
 
