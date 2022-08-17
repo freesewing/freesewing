@@ -51,10 +51,10 @@ export default function (part) {
       .line(points.middle)
       .attr('class', 'path fabric dashed')
 
-    points.logo = points.center.shiftOutwards(points.middle, pocketWidth / 5)
+    points.logo = points.centerLeft.shift(270, pocketWidth / 3)
     snippets.logo = new Snippet('logo', points.logo)
 
-    points.scalebox = points.logo.shift(270, pocketWidth / 5)
+    points.scalebox = points.middle.shift(270, pocketWidth / 5)
     macro('scalebox', { at: points.scalebox })
 
     if (sa) {
