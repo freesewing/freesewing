@@ -17,4 +17,6 @@ Additionally, if you are handsewing your pocket it is worth picking a fabric tha
 
 Your binding doesn’t have to be the same colour as the main fabric either, you can use it to add a fun accent, or make your pocket fancier. Bias binding curves easier around any curves, but you can just as easily use strips of fabric as a more waste conscious option. 
 
+The ties can be made from self fabric, or you can use something like a twill tape instead.
+
 As always, whether you want to stick to historical practices or make something modern is entirely up to you!
