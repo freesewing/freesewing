@@ -181,7 +181,10 @@ const Part = props => {
     const matrix = innerRef.current.ownerSVGElement.getScreenCTM().inverse();
 
     // a function to convert dom space to svg space
-    const domToSvg = (point) => DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
+    const domToSvg = (point) => {
+      const {x, y} = DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
+      return {x, y}
+    }
 
     // include the new top left and bottom right to ease calculating the pattern width and height
     const tl = domToSvg({x: partRect.left, y: partRect.top});

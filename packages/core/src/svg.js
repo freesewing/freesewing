@@ -50,6 +50,7 @@ Svg.prototype.insertText = function (text) {
 Svg.prototype.render = function (pattern) {
   this.idPrefix = pattern.settings.idPrefix
   this.runHooks('preRender')
+  pattern.runHooks('postLayout')
   if (!pattern.settings.embed) {
     this.attributes.add('width', round(pattern.width) + 'mm')
     this.attributes.add('height', round(pattern.height) + 'mm')

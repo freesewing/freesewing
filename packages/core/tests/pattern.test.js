@@ -610,6 +610,23 @@ it("Should not pack a pattern with errors", () => {
   expect(pattern.events.warning[0]).to.equal('One or more errors occured. Not packing pattern parts')
 });
 
+it("Should generate an auto layout if there is no set layout", () => {
+  const Test = new freesewing.Design({ name: "test", parts: ['front'] })
+  Test.prototype.draftFront = function(part) {
+    const {Path, paths, Point} = part.shorthand()
+    paths.seam = new Path().move(new Point(0,0))
+      .line(new Point(5,5))
+    return part
+  }
+  const pattern = new Test()
+  pattern.parts.front = new pattern.Part('front')
+  pattern.draftFront(pattern.parts.front);
+  pattern.pack()
+  expect(pattern.autoLayout.parts.front).to.exist
+  expect(pattern.autoLayout.parts.front.move.y).to.equal(2)
+  expect(pattern.autoLayout.parts.front.move.x).to.equal(2)
+})
+
 it("Should handle custom layouts", () => {
   const Test = new freesewing.Design({ name: "test", parts: ['front'] })
   Test.prototype.draftFront = function(part) { return part }

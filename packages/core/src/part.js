@@ -415,5 +415,8 @@ Part.prototype.setCutOnFold = function (p1, p2) {
   return this
 }
 
+Part.prototype.isEmpty = function() {
+  return Object.keys(this.paths).length === 0 && Object.keys(this.snippets).length === 0
+}
 
 export default Part
