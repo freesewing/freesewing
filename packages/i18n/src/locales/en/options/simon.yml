@@ -26,6 +26,10 @@ boxPleatFold:
   title: Box pleat fold
   description: The amount by with the box pleat folds inwards
 
+bustAlignedButtons:
+  title: Bust-aligned buttons
+  description: Optional button spacing strategies to ensure a button at the bustline
+
 buttonPlacketStyle:
   title: Button placket style
   description: Style of the button placket.
