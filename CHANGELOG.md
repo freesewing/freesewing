@@ -3,12 +3,6 @@
 
 ## Unreleased
 
-### aaron
-
-#### Added
-
- - Support drafting for high bust
-
 ### breanna
 
 #### Fixed
@@ -20,6 +14,12 @@
 #### Fixed
 
  - Make s3 options sticky to zero below 10% to avoid path split issues. Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
+
+### aaron
+
+#### Added
+
+ - Support drafting for high bust
 
 ### cathrin
 
