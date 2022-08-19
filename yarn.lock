@@ -15916,13 +15916,13 @@ mongodb@~4.7.0:
     saslprep "^1.0.3"
 
 mongoose-bcrypt@^1.8.1:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/mongoose-bcrypt/-/mongoose-bcrypt-1.9.0.tgz#bcb371bd5633d1c3fd92948c45d3cec267a47676"
-  integrity sha512-eK2Zw2tM8YYR22g5E3v2rGYLxrVmsQfVijhTgRftsRFlGX39yyBG2KwMsByIld0fnsNlANHWDCnGwq3kzq/CrA==
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/mongoose-bcrypt/-/mongoose-bcrypt-1.10.0.tgz#c6c75e3ef74b53d28e00ff4af9a2dc0ec5f1b3b3"
+  integrity sha512-6MQ7XIgsBAdw6oDsOGU6siDEz8tgzmKV9GA/lR0m/Z/+4/X+du0xK0IR7VhpyfWFA6nzJn4EPI/0Ccc4tENUBw==
   dependencies:
     bcryptjs "^2.4.3"
-    mongoose "3.8.* || >=4"
-    semver "^7.3.2"
+    mongoose "^6.5.2"
+    semver "^7.3.7"
 
 mongoose-encryption@^2.1.0:
   version "2.1.2"
@@ -15951,19 +15951,6 @@ mongoose-long@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/mongoose-long/-/mongoose-long-0.3.2.tgz#9e38773fc93c9c5ecfea200635878593ea577fb0"
   integrity sha512-5gTjPH6HUmtNhamv8MPwExWo01Z4d9CT5njZlupqqbmxzMXTbDOgCuP/jnK+9SV0Fs7nuyYlXv7pJ/nA2pAAuA==
-
-"mongoose@3.8.* || >=4", mongoose@^6.1.8:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.5.2.tgz#630ae67c4d2576635ba1f859b2840560b27b7775"
-  integrity sha512-3CFDrSLtK2qjM1pZeZpLTUyqPRkc11Iuh74ZrwS4IwEJ3K2PqGnmyPLw7ex4Kzu37ujIMp3MAuiBlUjfrcb6hw==
-  dependencies:
-    bson "^4.6.5"
-    kareem "2.4.1"
-    mongodb "4.8.1"
-    mpath "0.9.0"
-    mquery "4.0.3"
-    ms "2.1.3"
-    sift "16.0.0"
 
 mongoose@5.10.8:
   version "5.10.8"
@@ -16001,6 +15988,19 @@ mongoose@^5.5.13:
     safe-buffer "5.2.1"
     sift "13.5.2"
     sliced "1.0.1"
+
+mongoose@^6.1.8, mongoose@^6.5.2:
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.5.2.tgz#630ae67c4d2576635ba1f859b2840560b27b7775"
+  integrity sha512-3CFDrSLtK2qjM1pZeZpLTUyqPRkc11Iuh74ZrwS4IwEJ3K2PqGnmyPLw7ex4Kzu37ujIMp3MAuiBlUjfrcb6hw==
+  dependencies:
+    bson "^4.6.5"
+    kareem "2.4.1"
+    mongodb "4.8.1"
+    mpath "0.9.0"
+    mquery "4.0.3"
+    ms "2.1.3"
+    sift "16.0.0"
 
 move-concurrently@^1.0.1:
   version "1.0.1"
