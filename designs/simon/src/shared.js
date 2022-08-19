@@ -31,8 +31,9 @@ export const addButtons = function (part, origin = 'cfNeck', snippet = 'button')
   const adjusted_len = full_len * (1 - options.buttonFreeLength)
   const total_buttons = options.buttons
 
-  switch (options.bustAlignedButtons) {
-    case 'Even spacing': {
+  const spacing_strategy = 'bustAlignedButtons' in options ? options.bustAlignedButtons : 'default'
+  switch (spacing_strategy) {
+    case 'even': {
       // Strategy: Even button spacing,
       // - Determine the correct spacing above the bustline and use that
       //   spacing for all buttons.
@@ -48,7 +49,7 @@ export const addButtons = function (part, origin = 'cfNeck', snippet = 'button')
         snippets[snippet + i] = new Snippet(snippet, points['button' + i])
       }
       break }
-    case 'Split spacing': {
+    case 'split': {
       // Strategy: Different spacings above and below.
       // - Calculate the number of buttons that should be above and below
       //   the bustline by proportion.
@@ -85,7 +86,8 @@ export const addButtons = function (part, origin = 'cfNeck', snippet = 'button')
         snippets[snippet + i] = new Snippet(snippet, points['button' + i])
       }
       break }
-    case 'Disabled':
+    case 'disabled':
+    case 'default':
     default: {
       // Strategy: The default strategy.
       // - Buttons are evenly spaced without regard to the bustline.

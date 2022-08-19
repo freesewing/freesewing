@@ -131,10 +131,6 @@ const config = {
     extraTopButton: { bool: true },
     seperateButtonPlacket: { bool: false },
     seperateButtonholePlacket: { bool: false },
-    // Not used in Simon but needed for Simone
-    bustAlignedButtons: {
-      dflt: 'Disabled',
-      list: ['Even spacing', 'Split spacing', 'Disabled'], },
 
     // Collar
     collarEase: { pct: 2, min: 0, max: 10 },

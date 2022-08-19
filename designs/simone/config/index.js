@@ -57,9 +57,10 @@ const config = {
     frontDartLength: { pct: 45, min: 30, max: 60 },
     contour: { pct: 50, min: 30, max: 75 },
     bustAlignedButtons: {
-      dflt: 'Disabled',
-      list: ['Even spacing', 'Split spacing', 'Disabled'], },
-  },
+      dflt: 'disabled',
+      list: ['even', 'split', 'disabled'],
+    },
+  }
 }
 
 export default config
