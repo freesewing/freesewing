@@ -895,6 +895,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "gregsadetsky",
+      "name": "Greg Sadetsky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1017304?v=4",
+      "profile": "https://greg.technology/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true
