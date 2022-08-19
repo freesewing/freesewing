@@ -28,7 +28,7 @@ If you want to extend an existing design, you'll have to do some work yourself.
 
 #### Start from scratch
 
-First step is to spin up the development environment. Pick *from scratch* when prompted:
+First step is to spin up the development environment. Pick _from scratch_ when prompted:
 
 ```bash
 npx @freesewing/new-design
