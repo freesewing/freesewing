@@ -11,7 +11,7 @@ Tie-on pockets like Lucy were worn roughly from the mid-seventeenth (1650s) cent
 
 They were worn and used by all members of society and were mainly womens wear as men had a variety of pockets sewn into their clothing. 
 
-Pockets would be tied around the waist and could be accessed through a slit in skirts and petticoats. Where inbetween the layers the pocket would be was up to the individual. If it was hidden in between layers that would provide more security, but hinder accessibility. People who worked in trade often wore their pockets on the outside of their garments entirely, for easy access. 
+Pockets would be tied around the waist and could be accessed through a slit in skirts and petticoats. Where the pocket would be in between the layers was up to the individual. If it was hidden in between layers that would provide more security, but hinder accessibility. People who worked in trade often wore their pockets on the outside of their garments entirely, for easy access. 
 
 (Tie-on) Pockets were used alongside patch pockets, sewn in pockets, bags and other ways to carry your things. Sometimes they even had additional pockets hidden inside them! 
 
