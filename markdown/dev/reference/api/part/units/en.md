@@ -11,7 +11,7 @@ a string that includes the user's units.
 
 ###### This method is available as shorthand
 
-You can access this units method from the [Part.shorthand](#shorthand) method:
+You can access this units method from the [Part.shorthand](/reference/api/part/shorthand) method:
 
 ```js
 let { units } = part.shorthand();
