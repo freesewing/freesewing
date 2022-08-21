@@ -8,7 +8,7 @@ about: Slash and spread is easy enough on paper, here's how to do it in code
 
 ##### See this example in our source code
 
-- [packages/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/8474477911daed3c383700ab29c9565883f16d66/packages/jaeger/src/front.js#L64)
+- [designs/jaeger/src/front.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/jaeger/src/front.js#L64)
 
 </Note>
 
