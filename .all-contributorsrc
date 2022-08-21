@@ -904,6 +904,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "nchilada",
+      "name": "Nikhil Chelliah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/692925?v=4",
+      "profile": "https://github.com/nchilada",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true
