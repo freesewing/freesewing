@@ -197,7 +197,7 @@ export default (part) => {
       // paths[`try${run}`] = drawPath().attr('class', 'dotted')
     } while (Math.abs(delta) > 1 &&
         run < 15 &&
-        Math.abs(delta) < Math.abs(previous_delta)))
+        Math.abs(delta) < Math.abs(previous_delta))
     if (Math.abs(delta) > Math.abs(previous_delta)) {
       // The rotations have started to produce worse results.
       // Revert back to the previous rotation.
@@ -397,7 +397,7 @@ export default (part) => {
             points.seatOutCp1,
             points.seatOut
           )
-          if (seamline_outside_knee {
+          if (seamline_outside_knee) {
             points.kneeOutNotch = seamline_outisde_knee
           } else {
             points.kneeOutNotch = seamline_inside_knee
