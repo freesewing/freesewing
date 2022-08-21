@@ -7,9 +7,9 @@ Your plugin will receive the Pattern object.
 
 It is triggered just before the end of either:
 
-- the [Pattern.sampleOption()](/reference/api/pattern/#sampleoption) method
-- the [Pattern.sampleMeasurement()](/reference/api/pattern/#samplemeasurement) method
-- the [Pattern.sampleModels()](/reference/api/pattern/#samplemodels) method
+- the [Pattern.sampleOption()](/reference/api/pattern/sampleoption) method
+- the [Pattern.sampleMeasurement()](/reference/api/pattern/samplemeasurement) method
+- the [Pattern.sampleModels()](/reference/api/pattern/samplemodels) method
 
 <Note>
 

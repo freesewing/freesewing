@@ -8,7 +8,7 @@ Path path.trim()
 
 Returns a new Path that is this path with overlapping parts removed.
 
-This method is typically used when [Path.offset()](#offset) caused some overlap.
+This method is typically used when [Path.offset()](/reference/api/path/offset) caused some overlap.
 
 <Warning>
 

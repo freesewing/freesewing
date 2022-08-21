@@ -34,7 +34,7 @@ Or if you chose to use Yarn as package manager:
 
 ```bash
 cd bib
-yarn start
+yarn dev
 ```
 
 Now open your browser at http://localhost:8000

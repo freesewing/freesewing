@@ -11,7 +11,7 @@ Point | false utils.beamsIntersect(
 )
 ```
 
-Finds the intersection between two endless lines (beams). Returns a [Point](#point) object
+Finds the intersection between two endless lines (beams). Returns a [Point](/reference/api/point) object
 for the intersection, or `false` if the lines don't intersect.
 
 <Example part="utils_beamsintersect">

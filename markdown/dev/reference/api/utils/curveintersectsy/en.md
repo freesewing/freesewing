@@ -14,7 +14,7 @@ array | Point | false utils.curveIntersectsY(
 Finds the point(s) where a curve intersects a given Y-value.
 
 This is a low-level variant
-of [`Path.intersectsY()`](/reference/api/path/#pathintersectsy).
+of [`Path.intersectsY()`](/reference/api/path/intersectsy).
 Instead of a path, you describe a single curve by passing the four
 points that describes it.
 

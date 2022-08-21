@@ -4,7 +4,7 @@ order: 20
 ---
 
 Build-time plugins are loaded at build time, by passing them to
-the [`freesewing.Design`](/reference/api/#design) constructor:
+the [`freesewing.Design`](/reference/api/design) constructor:
 
 ```js
 import freesewing from "@freesewing/core"
