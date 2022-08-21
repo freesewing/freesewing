@@ -71,35 +71,39 @@ export default function (part) {
 
   // Adjust tusk length to fit inset curve
   let delta = tuskDelta(part)
-  let original_delta = delta
-  let rotation = ['rightTuskRight', 'rightTuskLeft', 'curveRightCpBottom']
+  let previous_delta = delta
+  const points_to_save = ['rightTuskRight', 'rightTuskLeft',
+    'curveRightCpBottom']
   let saved = []
   let stop = false
   if (Math.abs(delta) <= 1) {
-    // We are already below 1mm. No adjustment needed.
+    // We started below the 1mm threshold. No adjustment needed.
     stop = true
   }
   let count = 0
   while (!stop) {
-    original_delta = delta
-    for (const i of rotation) {
+    for (const i of points_to_save) {
       saved[i] = points[i]
     }
+    previous_delta = delta
     tweakTusk(delta, part)
     delta = tuskDelta(part)
     count++
     if (Math.abs(delta) <= 1) {
-      // Below 1mm is good enough
+      // Below 1mm threshold is good enough.
       stop = true
-    } else if (Math.abs(delta) > Math.abs(original_delta) || count >= 150) {
-      raise.warning("Unable to adjust the front tusk length to fit the given measurements, after " + count  + " iterations.")
-      adjustment_warning = true
-      stop = true
-      if (Math.abs(delta) > Math.abs(original_delta)) {
-        for (const i of rotation) {
+    } else if (Math.abs(delta) > Math.abs(previous_delta) ||
+      count >= 150) {
+      if (Math.abs(delta) > Math.abs(previous_delta)) {
+        // The shifts have started to produce worse results.
+        // Revert back to the previous set of points.
+        for (const i of points_to_save) {
           points[i] = saved[i]
         }
       }
+      raise.warning("Unable to adjust the front tusk length to fit the given measurements, after " + count  + " iterations.")
+      adjustment_warning = true
+      stop = true
     }
   }
 

@@ -257,18 +257,20 @@ export default (part) => {
       delta = crotchSeamDelta()
       // Uncomment the line below this to see all iterations
       // paths[`try${run}`] = drawPath().attr('class', 'dotted')
-    } while (Math.abs(delta) > 1
-        && run < 15
-        && (Math.abs(delta) < Math.abs(previous_delta)))
+    } while (Math.abs(delta) > 1 &&
+        run < 15 &&
+        (Math.abs(delta) < Math.abs(previous_delta)))
     if (Math.abs(delta) > Math.abs(previous_delta)) {
+      // The rotations have started to produce worse results.
+      // Revert back to the previous rotation.
       for (const i of rotate) {
         points[i] = saved[i]
       }
       points.fork = saved.fork
     }
-    if (Math.abs(delta) > 1
-      || Math.abs(delta) > Math.abs(previous_delta)) {
-      raise.warning("Unable to adjust the front crotch seam to fit the given measurements.")
+    if (Math.abs(delta) > 1 ||
+      Math.abs(delta) > Math.abs(previous_delta)) {
+      raise.warning("Unable to adjust the front crotch seam to fit the given measurements, after " + run + " iterations.")
       adjustment_warning = true
     }
   }
@@ -304,9 +306,11 @@ export default (part) => {
       points.waistIn,
       points.crotchSeamCurveStart
     )
+    // If the waist is moved too low, the top of the crotch seam
+    // needs to be lowered to match.
     if (points.styleWaistIn.y > points.crotchSeamCurveStart.y) {
       points.crotchSeamCurveStart = points.styleWaistIn.clone()
-      raise.warning("Forced to shorten front crotch length to accommodate waistband height.")
+      raise.warning("Forced to shorten front crotch length to accommodate waist height.")
       adjustment_warning = true
     }
   } else {
@@ -376,7 +380,7 @@ export default (part) => {
       }
       if (options.fitKnee) {
         if (points.waistOut.x < points.seatOut.x) {
-          let proposed_hipsOut = utils.lineIntersectsCurve(
+          const seamline_outside_hips = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
@@ -384,17 +388,18 @@ export default (part) => {
             points.kneeOutCp1,
             points.kneeOut
           )
-          if (proposed_hipsOut) {
-            points.hipsOut = proposed_hipsOut
+          const seamline_inside_hips = utils.lineIntersectsCurve(
+            points.hipsOutTarget,
+            points.hipsIn,
+            points.waistOut,
+            points.seatOut,
+            points.kneeOutCp1,
+            points.kneeOut
+          )
+          if (seamline_outside_hips) {
+            points.hipsOut = seamline_outside_hips
           } else {
-            points.hipsOut = utils.lineIntersectsCurve(
-              points.hipsOutTarget,
-              points.hipsIn,
-              points.waistOut,
-              points.seatOut,
-              points.kneeOutCp1,
-              points.kneeOut
-            )
+            points.hipsOut = seamline_inside_hips
             raise.warning("Unable to draw seamline outside the front outside hip point.")
             adjustment_warning = true
           }
@@ -407,7 +412,7 @@ export default (part) => {
             points.kneeOut
           )
         } else {
-          let proposed_hipsOut = utils.lineIntersectsCurve(
+          const seamline_outside_hips = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
@@ -415,17 +420,18 @@ export default (part) => {
             points.seatOutCp1,
             points.seatOut
           )
-          if (proposed_hipsOut) {
-            points.hipsOut = proposed_hipsOut
+          const seamline_inside_hips = utils.lineIntersectsCurve(
+            points.hipsOutTarget,
+            points.hipsIn,
+            points.waistOut,
+            points.waistOut,
+            points.seatOutCp1,
+            points.seatOut
+          )
+          if (seamline_outside_hips) {
+            points.hipsOut = seamline_outside_hips
           } else {
-            points.hipsOut = utils.lineIntersectsCurve(
-              points.hipsOutTarget,
-              points.hipsIn,
-              points.waistOut,
-              points.waistOut,
-              points.seatOutCp1,
-              points.seatOut
-            )
+            points.hipsOut = seamline_inside_hips
             raise.warning("Unable to draw seamline outside the front outside hip point.")
             adjustment_warning = true
           }
@@ -435,7 +441,7 @@ export default (part) => {
         points.kneeInNotch = points.kneeIn
       } else {
         if (points.waistOut.x < points.seatOut.x) {
-          let proposed_hipsOut = utils.lineIntersectsCurve(
+          const seamline_outside_hips = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
@@ -443,17 +449,18 @@ export default (part) => {
             points.kneeOutCp1,
             points.floorOut
           )
-          if (proposed_hipsOut) {
-            points.hipsOut = proposed_hipsOut
+          const seamline_inside_hips = utils.lineIntersectsCurve(
+            points.hipsOutTarget,
+            points.hipsIn,
+            points.waistOut,
+            points.seatOut,
+            points.kneeOutCp1,
+            points.floorOut
+          )
+          if (seamline_outside_hips) {
+            points.hipsOut = seamline_outside_hips
           } else {
-            points.hipsOut = utils.lineIntersectsCurve(
-              points.hipsOutTarget,
-              points.hipsIn,
-              points.waistOut,
-              points.seatOut,
-              points.kneeOutCp1,
-              points.floorOut
-            )
+            points.hipsOut = seamline_inside_hips
             raise.warning("Unable to draw seamline outside the front outside hip point.")
             adjustment_warning = true
           }
@@ -474,7 +481,7 @@ export default (part) => {
             points.floorOut
           )
         } else {
-          let proposed_hipsOut = utils.lineIntersectsCurve(
+          const seamline_outside_hips = utils.lineIntersectsCurve(
             points.hipsOutTarget,
             points.hipsIn.rotate(180, points.hipsOutTarget),
             points.waistOut,
@@ -482,17 +489,18 @@ export default (part) => {
             points.seatOutCp1,
             points.seatOut
           )
-          if (proposed_hipsOut) {
-            points.hipsOut = proposed_hipsOut
+          const seamline_inside_hips = utils.lineIntersectsCurve(
+            points.hipsOutTarget,
+            points.hipsIn,
+            points.waistOut,
+            points.waistOut,
+            points.seatOutCp1,
+            points.seatOut
+          )
+          if (seamline_outside_hips) {
+            points.hipsOut = seamline_outside_hips
           } else {
-            points.hipsOut = utils.lineIntersectsCurve(
-              points.hipsOutTarget,
-              points.hipsIn,
-              points.waistOut,
-              points.waistOut,
-              points.seatOutCp1,
-              points.seatOut
-            )
+            points.hipsOut = seamline_inside_hips
             raise.warning("Unable to draw seamline outside the front outside hip point.")
             adjustment_warning = true
           }
@@ -506,7 +514,7 @@ export default (part) => {
             points.floorOut
           )
         }
-        let proposed_kneeInNotch = utils.lineIntersectsCurve(
+        const seamline_outside_knee = utils.lineIntersectsCurve(
           points.kneeIn,
           points.kneeOut.rotate(180, points.kneeIn),
           points.floorIn,
@@ -514,10 +522,7 @@ export default (part) => {
           points.forkCp1,
           points.fork
         )
-        if (proposed_kneeInNotch) {
-          points.kneeInNotch = proposed_kneeInNotch
-        } else {
-          proposed_kneeInNotch = utils.lineIntersectsCurve(
+        const seamline_inside_knee = utils.lineIntersectsCurve(
             points.kneeIn,
             points.kneeOut,
             points.floorIn,
@@ -525,14 +530,15 @@ export default (part) => {
             points.forkCp1,
             points.fork
           )
-          if (proposed_kneeInNotch) {
-            points.kneeInNotch = proposed_kneeInNotch
-            raise.warning("Unable to draw seamline outside the front inside knee point.")
-            adjustment_warning = true
-          } else {
-            raise.warning("Unable to determine proper kneeInNotch location.")
-            adjustment_warning = true
-          }
+        if (seamline_outside_knee) {
+          points.kneeInNotch = seamline_outside_knee
+        } else if (seamline_inside_knee) {
+          points.kneeInNotch = seamline_inside_knee
+          raise.warning("Unable to draw seamline outside the front inside knee point.")
+          adjustment_warning = true
+        } else {
+          raise.warning("Unable to determine proper kneeInNotch location.")
+          adjustment_warning = true
         }
       }
       macro('sprinkle', {
