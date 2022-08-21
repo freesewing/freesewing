@@ -33,7 +33,7 @@ const loadFromUnpkg = (design, version) => {
 const pageTemplate = design => `${header}
 import design from 'designs/${design}/src/index.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import PageTemplate from 'site/page-templates/workbench.js'
+import PageTemplate from 'site/page-templates/workbench'
 
 const Page = (props) => <PageTemplate {...props} design={design} version="next"/>
 export default Page

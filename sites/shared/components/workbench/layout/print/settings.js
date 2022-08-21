@@ -49,7 +49,7 @@ const PrintLayoutSettings = props => {
           <input
             type="range"
             max={50}
-            min={5}
+            min={0}
             step={1}
             onChange={setMargin}
             value={margin}

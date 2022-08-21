@@ -55,5 +55,8 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "engines": {
+    "node": "14.x"
+  }
 }

@@ -16,15 +16,55 @@ const indexLetter = (i) => String.fromCharCode('A'.charCodeAt(0) + i - 1)
 /**
  * A plugin to add printer pages
  * */
-export const pagesPlugin = ({size='a4', orientation='portrait', margin=10}, printStyle = false /** should the pages be rendered for printing or for screen viewing? */ ) => {
+export const pagesPlugin = ({
+  size='a4',
+  orientation='portrait',
+  margin=10,
+  printStyle = false, /** should the pages be rendered for printing or for screen viewing? */
+  setPatternSize = true
+}) => {
   const ls = orientation === 'landscape'
-  let sheetHeight = sizes[size][ls ? 1 : 0]
-  let sheetWidth = sizes[size][ls ? 0 : 1]
-  sheetWidth -= margin
-  sheetHeight -= margin
-  return basePlugin({sheetWidth, sheetHeight, orientation, printStyle})
+  let sheetHeight = sizes[size][ls ? 0 : 1]
+  let sheetWidth = sizes[size][ls ? 1 : 0]
+  sheetWidth -= margin * 2
+  sheetHeight -= margin * 2
+  return basePlugin({sheetWidth, sheetHeight, orientation, printStyle, setPatternSize})
 }
 
+const doScanForBlanks = (parts, layout, x, y, w, h) => {
+  let hasContent = false
+  for (var p in parts) {
+    let part = parts[p]
+    // skip the pages part and any that aren't rendered
+    if (part === this || part.render === false || part.isEmpty()) continue
+
+    // get the position of the part
+    let partLayout = layout.parts[p]
+    let partMinX = (partLayout.tl?.x || (partLayout.move.x + part.topLeft.x))
+    let partMinY = (partLayout.tl?.y || (partLayout.move.y + part.topLeft.y))
+    let partMaxX = (partLayout.br?.x || (partMinX + part.width))
+    let partMaxY = (partLayout.br?.y || (partMinY + part.height))
+
+    // check if the part overlaps the page extents
+    if (
+      // if the left of the part is further left than the right end of the page
+      partMinX < x + w &&
+      // and the top of the part is above the bottom of the page
+      partMinY < y + h &&
+      // and the right of the part is further right than the left of the page
+      partMaxX > x &&
+      // and the bottom of the part is below the top to the page
+      partMaxY > y
+      ) {
+      // the part has content inside the page
+      hasContent = true;
+      // so we stop looking
+      break;
+    }
+  }
+
+  return hasContent
+}
 /**
  * The base plugin for adding a layout helper part like pages or fabric
  * sheetWidth: the width of the helper part
@@ -39,7 +79,10 @@ const basePlugin = ({
   boundary=false,
   partName="pages",
   responsiveColumns=true,
-  printStyle=false
+  printStyle=false,
+  scanForBlanks=true,
+  renderBlanks=true,
+  setPatternSize=false
 }) => ({
   name,
   version,
@@ -62,9 +105,13 @@ const basePlugin = ({
         responsiveColumns && (width += pattern.settings.layout.topLeft.x)
       }
 
-      macro('addPages', { size: [sheetWidth, sheetHeight], height, width })
+      macro('addPages', { size: [sheetHeight,sheetWidth, ], height, width })
 
       if (boundary) pattern.parts[partName].boundary();
+      if (setPatternSize) {
+        pattern.width = sheetWidth * pattern.parts[partName].pages.cols
+        pattern.height = sheetHeight * pattern.parts[partName].pages.rows
+      }
     }
   },
   macros: {
@@ -74,13 +121,22 @@ const basePlugin = ({
       const cols = Math.ceil(so.width / w)
       const rows = Math.ceil(so.height / h)
       const { points, Point, paths, Path, macro } = this.shorthand()
-      let x = 0
-      let y = 0
       let count = 0
+      let withContent = {}
+      // get the layout from the pattern
+      const layout = typeof this.context.settings.layout === 'object' ? this.context.settings.layout : this.context.autoLayout;
       for (let row=0;row<rows;row++) {
-        x=0
+        let y = row * h
+        withContent[row] = {}
         for (let col=0;col<cols;col++) {
-          count++
+          let x = col * w
+          let hasContent = true
+          if (scanForBlanks && layout) {
+            hasContent = doScanForBlanks(this.context.parts, layout, x, y, w, h)
+            withContent[row][col] = hasContent
+            if (!renderBlanks && !hasContent) continue
+          }
+          if (hasContent) count++
           const pageName = `_pages__row${row}-col${col}`
           points[`${pageName}-tl`] = new Point(x,y)
           points[`${pageName}-tr`] = new Point(x+w,y)
@@ -114,12 +170,10 @@ const basePlugin = ({
             macro('addRuler', {xAxis: true, pageName})
             macro('addRuler', {xAxis: false, pageName})
           }
-          x += w
         }
-        y += h
       }
       // Store page count in part
-      this.pages = { cols, rows, count: cols*rows }
+      this.pages = { cols, rows, count, withContent, width: w, height: h}
 
     },
     /** add a ruler to the top left corner of the page */

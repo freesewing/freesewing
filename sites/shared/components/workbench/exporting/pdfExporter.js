@@ -13,7 +13,8 @@ const pxToPoints = (72/96);
 // multiply a mm value by this to get a pixel value
 const mmToPx = 3.77953
 // multiply a mm value by this to get a points value
-const mmToPoints = mmToPx * pxToPoints
+// const mmToPoints = mmToPx * pxToPoints
+const mmToPoints = 2.834645669291339
 
 /**
  * Freesewing's first explicit class?
@@ -30,6 +31,7 @@ export default class Exporter {
 	pattern
 	/** the pdfKit instance that is writing the document */
 	pdf
+	buffers
 
 	/** the usable width (excluding margin) of the pdf page, in points */
 	pageWidth
@@ -51,36 +53,40 @@ export default class Exporter {
 	pagesWithContent = {}
 
 
-	constructor(designName, pattern, svg, settings) {
-		// default just in case
-		this.designName = designName || 'freesewing'
+	constructor({svg, settings, pages}) {
 		this.settings = settings
-		this.pattern = pattern
-
+		this.pagesWithContent = pages.withContent;
+		this.svg = svg
 		this.createPdf()
 
 	  this.margin = this.settings.margin * mmToPoints // margin is in mm because it comes from us, so we convert it to points
-	  this.pageHeight = this.pdf.page.height - this.margin // this is in points because it comes from pdfKit
-	  this.pageWidth = this.pdf.page.width - this.margin// this is in points because it comes from pdfKit
+	  this.pageHeight = this.pdf.page.height - this.margin * 2 // this is in points because it comes from pdfKit
+	  this.pageWidth = this.pdf.page.width - this.margin * 2// this is in points because it comes from pdfKit
+	 //  console.log(pages.width * pages.cols, pages.height * pages.rows, this.pageWidth, this.pageHeight)
+		// console.log(svg)
 
 	  // we pass the svg as a string, so we need to make it a DOM element so we can manipulate it
-		const divElem = document.createElement('div');
-	  divElem.innerHTML = svg;
-	  this.svg = divElem.firstElementChild;
+		// const divElem = document.createElement('div');
+	 //  divElem.innerHTML = svg;
+	 //  this.svg = divElem.firstElementChild;
 
 	  // get the pages data
-	  const pages = this.pattern.parts.pages.pages
 	  this.columns = pages.cols
   	this.rows = pages.rows
 
   	// then set the svg's width and height in points to include all pages in full (the original svg will have been set to show only as much page as is occupied)
-	  this.svgWidth = this.columns * this.pageWidth
-		this.svgHeight = this.rows * this.pageHeight
-	  this.svg.setAttribute('height', this.svgWidth + 'pt')
-	  this.svg.setAttribute('width', this.svgHeight + 'pt')
+	  this.svgWidth = this.columns * pages.width * mmToPoints
+		this.svgHeight = this.rows * pages.height * mmToPoints
+
+		console.log(this.columns, this.rows, pages.width, pages.height, this.svgWidth, this.svgHeight)
+		console.log(svg)
+		// this.svg.replace(/width="\d+mm"/, `width="${this.svgWidth}pt"`)
+		// this.svg.replace(/height="\d+mm"/, `height="${this.svgHeight}pt"`)
+	  // this.svg.setAttribute('height', this.svgWidth + 'pt')
+	  // this.svg.setAttribute('width', this.svgHeight + 'pt')
 
 	  // set the viewbox to include all pages in full as well, this time in mm
-	  this.svg.setAttribute('viewBox', `0 0 ${this.columns * this.pageWidthInMm} ${this.rows * this.pageHeightInMm}`)
+	  // this.svg.setAttribute('viewBox', `0 0 ${this.columns * this.pageWidthInMm} ${this.rows * this.pageHeightInMm}`)
 	}
 
 	/** pdf page usable (excluding margin) width, in mm */
@@ -99,18 +105,9 @@ export default class Exporter {
 
 		// PdfKit wants to flush the buffer on each new page.
 		// We don't want to try to save the document until it's complete, so we have to manage the buffers ourselves
-		const buffers = [];
+		this.buffers = [];
 		// add new data to our buffer storage
-		this.pdf.on('data', buffers.push.bind(buffers));
-		// when the end event fires, then we save the whole thing
-		this.pdf.on('end', () => {
-			// convert buffers to a blob
-	    const blob = new Blob(buffers, {
-	    	type: 'application/pdf'
-	    })
-	    // save the blob
-			fileSaver.saveAs(blob, `freesewing-${this.designName}.pdf`)
-		});
+		this.pdf.on('data', this.buffers.push.bind(this.buffers));
 	}
 
 	/**
@@ -197,8 +194,16 @@ export default class Exporter {
 	}
 
 	/** export to pdf */
-	async export() {
-		this.scanPages()
+	async export(onComplete) {
+		// when the end event fires, then we save the whole thing
+		this.pdf.on('end', () => {
+			// convert buffers to a blob
+	    const blob = new Blob(this.buffers, {
+	    	type: 'application/pdf'
+	    })
+	    onComplete(blob)
+		});
+
 		await this.generateCoverPage()
 		await this.generatePages();
 		this.save()
@@ -218,7 +223,7 @@ export default class Exporter {
 		let coverWidth = this.pageWidth - coverMargin * 2
 
 		// add the entire pdf to the page, so that it fills the available space as best it can
-		await SVGtoPDF(this.pdf, this.svg.outerHTML, coverMargin, coverMargin, {
+		await SVGtoPDF(this.pdf, this.svg, coverMargin, coverMargin, {
 			width: coverWidth,
 			height: coverHeight,
 			assumePt: true,
@@ -234,11 +239,12 @@ export default class Exporter {
 	  	assumePt: true,
 	  	width: this.svgWidth,
 	  	height: this.svgHeight,
-	  	preserveAspectRatio: 'xMinYMin slice'
+	  	preserveAspectRatio: 'xMinYMin slice',
+	  	useCSS: true
 	  }
 
 	  // everything is offset by half a margin so that it's centered on the page
-	  const startMargin = 0.5 * this.margin
+	  const startMargin = this.margin
 		for (var h = 0; h < this.rows; h++) {
 		  for (var w = 0; w < this.columns; w++) {
 		    // skip empty pages
@@ -255,7 +261,7 @@ export default class Exporter {
 		    }
 
 		    // add the pdf to the page, offset by the page distances
-		    await SVGtoPDF(this.pdf, this.svg.outerHTML, x, y, options)
+		    await SVGtoPDF(this.pdf, this.svg, x, y, options)
 		  }
 		}
 	}

@@ -35,7 +35,7 @@ const PrintLayout = props => {
   const bgProps = { fill: "url(#page)" }
 
   const exportIt = () => {
-    handleExport('pdf', props.gist, props.design, t)
+    handleExport('pdf', props.gist, props.design, t, props.app)
   }
 
   return (
