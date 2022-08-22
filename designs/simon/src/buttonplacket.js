@@ -27,8 +27,10 @@ export default (part) => {
   for (const id in paths) {
     if (id !== 'seam') delete part.paths[id]
   }
-  for (const i in snippets) {
-     if (i.indexOf('notch')) delete snippets[i]
+  let notchesToKeep = ['cfBust-notch', 'cfArmhole-notch', 'cfWaist-notch',
+    'cfHem-notch']
+  for (const id in snippets) {
+    if (!notchesToKeep.includes(id)) delete snippets[id]
   }
   macro('flip')
   const width = store.get('buttonPlacketWidth')

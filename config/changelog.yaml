@@ -8,6 +8,10 @@ Unreleased:
     plugin-title:
       - Added support for removing the title via a macro call
       - Added a render timestamp to the title
+    simone:
+      - Added Bust-aligned buttons option and functionality.
+        Closes [#2154] (https://github.com/freesewing/freesewing/issues/2154)
+      - Added a notch at the center front bustline.
 
   Changed:
     charlie:

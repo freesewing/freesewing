@@ -22,6 +22,8 @@ export default (part) => {
   points.placketBottomOuterEdgeUnder = points.placketCfHem.shift(180, width / 2 + fold)
   points.placketTopEdge = points.placketTopOuterEdgeFold.shift(180, width)
   points.placketBottomEdge = points.placketBottomOuterEdgeFold.shift(180, width)
+  if (typeof points.cfBust !== 'undefined')
+    points.cfBust = points.cfBust.shift(180, fold * 2)
 
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).close()
 
@@ -63,6 +65,8 @@ export default (part) => {
     points.placketEdgeWaist = new Point(points.placketBottomEdge.x, points.waist.y)
     points.placketEdgeArmhole = new Point(points.placketBottomEdge.x, points.armhole.y)
     points.placketEdgeHips = new Point(points.placketBottomEdge.x, points.hips.y)
+    // Delete old cfBust location notch, so we can re-add in new location.
+    delete snippets['cfBust-notch']
     macro('sprinkle', {
       snippet: 'notch',
       on: [
@@ -83,6 +87,7 @@ export default (part) => {
         'placketBottomOuterEdgeFold',
         'placketBottomOuterEdgeOver',
         'placketBottomOuterEdgeUnder',
+        'cfBust'
       ],
     })
     delete snippets['cfWaist-notch']

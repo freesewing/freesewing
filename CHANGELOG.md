@@ -54,6 +54,11 @@
 
 ### simone
 
+#### Added
+
+ - Added Bust-aligned buttons option and functionality. Closes [#2154] (https://github.com/freesewing/freesewing/issues/2154)
+ - Added a notch at the center front bustline.
+
 #### Fixed
 
  - Don't do a negative FBA from there's no need for an FBA Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
