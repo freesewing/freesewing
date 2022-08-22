@@ -50,6 +50,8 @@
     "js-yaml": "^4.1.0",
     "file-saver": "^2.0.5",
     "axios": "^0.27.2",
+    "pdfkit": "^0.13.0",
+    "svg-to-pdfkit": "^0.1.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-sizeme": "^3.0.2",

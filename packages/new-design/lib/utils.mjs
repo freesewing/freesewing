@@ -11,9 +11,7 @@ import axios from 'axios'
 import { fileURLToPath } from 'url';
 
 // Current working directory
-const cwd = __dirname
-  ? __dirname
-  : dirname(fileURLToPath(import.meta.url))
+const cwd = dirname(fileURLToPath(import.meta.url))
 
 const nl = "\n"
 const tab = "  "
