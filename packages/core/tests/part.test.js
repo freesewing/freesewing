@@ -1,6 +1,7 @@
 let expect = require("chai").expect;
 let freesewing = require("../dist/index.js");
 
+describe('Part', () => {
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();
   let part = new pattern.Part();
@@ -269,8 +270,7 @@ it("Should generate the part transforms", () => {
     }
   })
   expect(part.attributes.list.transform.length).to.equal(1)
-  expect(part.attributes.list.transform[0]).to.equal('translate(10,20)')
-  expect(part.attributes.list['transform-origin'][0]).to.equal('10.5 39')
+  expect(part.attributes.list.transform[0]).to.equal('translate(10 20)')
 });
 
 
@@ -399,3 +399,30 @@ it("Should raise an error when setting the cutOnFold with a non-Point value", ()
   expect(pattern.events.error[0]).to.equal('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 });
 
+describe('isEmpty', () => {
+  it("Should return true if the part has no paths or snippets", () => {
+    let pattern = new freesewing.Pattern();
+    let part = new pattern.Part();
+    expect(part.isEmpty()).to.be.true
+  })
+
+  it("Should return false if the part has a path", () => {
+    let pattern = new freesewing.Pattern();
+    let part = new pattern.Part();
+    const { Path, paths }  = part.shorthand()
+    paths.seam = new Path()
+
+    expect(part.isEmpty()).to.be.false
+  })
+
+  it("Should return false if the part has a snippet", () => {
+    let pattern = new freesewing.Pattern();
+    let part = new pattern.Part();
+    const { Point, snippets, Snippet }  = part.shorthand()
+    snippets.test = new Snippet('test', new Point(0,0))
+
+    expect(part.isEmpty()).to.be.false
+  })
+})
+
+})

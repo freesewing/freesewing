@@ -7,6 +7,11 @@ Unreleased:
         Closes [#802](https://github.com/freesewing/freesewing/issues/802)
     plugin-title:
       - Added support for removing the title via a macro call
+      - Added a render timestamp to the title
+    simone:
+      - Added Bust-aligned buttons option and functionality.
+        Closes [#2154] (https://github.com/freesewing/freesewing/issues/2154)
+      - Added a notch at the center front bustline.
 
   Changed:
     charlie:
@@ -17,9 +22,15 @@ Unreleased:
       - migrated `waistbandWidth` option from `mm` to snapped `pct` option
 
   Fixed:
+    breanna:
+      - Fixed bug where a large shoulder slope could cause an error.
+        Fixes [#2516](https://github.com/freesewing/freesewing/issues/2516)
     brian:
       - Make s3 options sticky to zero below 10% to avoid path split issues.
         Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
+    cathrin:
+      - Removed seam allowance from Part1a foldline.
+        Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
     simon:
       - Fix issue with boxPleat and yoke
         Fixes [#2400](https://github.com/freesewing/freesewing/issues/2400)

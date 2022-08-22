@@ -1,11 +1,9 @@
 export default (part) => {
   let { points, Point, paths, Path, options, macro, snippets, Snippet, complete, sa } =
     part.shorthand()
-
   // Cleanup from front part
-  for (let i of Object.keys(paths)) delete paths[i]
+  for (let i of Object.keys(paths).filter((name) => name !== 'grainline')) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
-
   // Seam line
   paths.seam = new Path()
     .move(points.dartStart)
@@ -29,19 +27,17 @@ export default (part) => {
     paths.seam.line(points.closureBottom).line(points.dartHemLeft)
   }
   paths.seam.close().attr('class', 'fabric')
-
   if (complete) {
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-
     points.title = new Point(points.dartWaistLeft.x / 2, points.waist.y)
     macro('title', {
       nr: 3,
       at: points.title,
       title: 'frontFacing',
     })
+
     points.logo = points.closureTop.shiftFractionTowards(points.dartWaistLeft, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
   }
-
   return part
 }

@@ -26,7 +26,47 @@ If you're going to make the pockets, make them before putting one piece of fabri
 
 </Note>
 
-- If desired, sew the pockets.
+Both sets of pockets on Waralee are single welt pockets. These use a single piece of fabric to create a pocket opening, but are otherwise very similar to the double welt pockets shown here: [Double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets). 
+
+We'll start with the front pockets.
+- Start with all the parts, and mark the location of the pocket on the right side of the fabric.
+- Mark the pocket opening on one of the facing pieces too. This time on the wrong side of the fabric.
+- Place the facing on the fabric, right sides together. Align the corners of the pocket openings, and pin in place.
+
+Pocket lining
+- Mark the pocket opening on your pocket lining. It should be just inside the seam allowance. 
+- Align the pocket openings up on all fabric pieces, and line your pocket lining top up with the waistband. Pin or baste in place.
+
+Pocket opening
+- Using small stitches, sew the long sides of the pocket openings, catching fabric, facing, and pocket lining. Do not sew past the ends of the pocket opening.
+- Cut a slit directly between the two lines of stitching. Just before the end, split each end of the cut, snipping into each corner of the pocket opening (but not past). You should have a small V at each end of the cut.
+- Press the seams open.
+- Now push everything through the opening to the other side. Lay everything out nicely with the pocket opening open. Press the pocket opening.
+
+Constructing the welt
+- Turn the garment over, and press the bottom edge of the pocket facing under. Later, this will yield a nice, clean edgestitch.
+- Next, flip the pocket facing up, so that it covers the pocket opening. Then, fold back just enough of the facing to exactly cover the entire pocket opening. Press, and pin in place.
+
+Sewing the pocket opening in place
+- Turn the whole thing right side up, then fold back the fabric on one short side of the pocket opening, revealing a little triangle cutout and your pocket lining.
+- Sew the short edge of the pocket opening, just outside of your markings. This should secure the V-shaped cutout bits to the lining. Once you feel confident everything will look good from the right side, restitch this line a few times to secure.
+- Press.
+- To make things nice and tidy, you'll also stitch the bottom edge of the pocket facing to the pocket lining at this point. (This is why we pressed the very edge under earlier.)
+
+Finishing the pocket
+- Take your second pocket facing, and press all edges under except for one of the longer edges.
+- Lay this facing over the pocket opening, right sides together and raw edge aligned with the raw edge of the pocket lining.
+- Now, fold your pocket lining over, aligning all the edges of the pocket.
+- Pin or clip the second pocket facing to the pocket lining along the raw edges. Then flip the pocket lining back, and pin the entire edge of the facing to the pocket lining.
+- Edgestitch the facing to the pocket fabric. This will sit behind the pocket opening when everything is assembled, so that if your pocket gaps open, your fashion fabric will show in the gap.
+- Flip the pocket fabric back, aligning edges, and pin all sides of the pocket. Close the pocket as you normally do. You can use a french seam, a serger, or another method.
+
+Making everything clean and tidy
+- Flip the whole piece over so you're looking at the right side.
+- Fold back the main fabric, so you can see the little triangles on the short edge of the pocket opening.
+- Sew another line, now through all layers. You should be able to see the edge stitching line of the first facing. Stitch all the way to this line, which finishes the facing on the inside of the pocket. You want to be really close to the fold with this stitch line.
+- Now fold the fabric back on the long side of the pocket opening, where the pocket sides were stitches together. You'll see the initial stitch line of the pocket opening. Make sure all the layers of fabric are laying nicely, and stitch over this stitch line once again, now through all layers. This secures this side of the pocket to the garment fabric.
+- Flip over, press well, and admire your work. 
 
 <Note>
 
@@ -34,11 +74,11 @@ I included placements for the front pockets that will be hidden by the flaps in 
 
 </Note>
 
-<Fixme>
+Constructing the back pockets
+- The back pockets are also single welt pockets, but the pocket opening is horizontal, rather than at an angle. This means they hew much closer to the instructions for [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
+- Follow the double welt instructions, modifying the opening to have a single welt, rather than a double welt.
 
-Explain how to sew the pockets more.
-
-</Fixme>
+Congratulations! Your pockets are finished!
 
 ### Step 2: Hem the sides and bottom
 

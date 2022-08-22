@@ -56,7 +56,7 @@ If you wish to make an embroidered eye we recommended to make it an embroidery p
 
 ## Step 5: Stuffing
 
-- Fill the plush toy with stuffing through the opening you left below the tail, making sure to fill the tail and fins well before adding too much stuffing in the body itself. 
+- Fill the plush toy with stuffing through the opening you left below the tail, making sure to fill the tail and fins well before adding too much stuffing in the body itself.
 - _Slipsticth_ or _whipstitch_ the opening closed.
 
 ## Step 6: Enjoy!

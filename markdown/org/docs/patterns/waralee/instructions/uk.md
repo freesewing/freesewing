@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Waralee wrap pants: Sewing Instructions"
-- - -
+
+***
 
 <Warning>
 

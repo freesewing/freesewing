@@ -1,10 +1,8 @@
-- - -
+---
 title: "Side curve"
-- - -
+---
 
-***
-
-Controls the curvature of the side of the bikini cup
+Controls the curvature of the side of the bikini cup.
 
 ## Effect of this option on the pattern
 

@@ -3,6 +3,12 @@
 
 ## Unreleased
 
+### breanna
+
+#### Fixed
+
+ - Fixed bug where a large shoulder slope could cause an error. Fixes [#2516](https://github.com/freesewing/freesewing/issues/2516)
+
 ### brian
 
 #### Fixed
@@ -14,6 +20,12 @@
 #### Added
 
  - Support drafting for high bust
+
+### cathrin
+
+#### Fixed
+
+ - Removed seam allowance from Part1a foldline. Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
 
 ### charlie
 
@@ -42,6 +54,11 @@
 
 ### simone
 
+#### Added
+
+ - Added Bust-aligned buttons option and functionality. Closes [#2154] (https://github.com/freesewing/freesewing/issues/2154)
+ - Added a notch at the center front bustline.
+
 #### Fixed
 
  - Don't do a negative FBA from there's no need for an FBA Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
@@ -63,6 +80,7 @@
 #### Added
 
  - Added support for removing the title via a macro call
+ - Added a render timestamp to the title
 
 
 ## 2.21.3 (2022-07-02)

@@ -2,7 +2,7 @@
 title: "High bust width"
 ---
 
----
+***
 
 ![The effect of the high bust width option on the pattern](sample.png)
 

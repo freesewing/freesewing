@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Tip width"
-- - -
+
+***
 
 ![Bow ties Wide and Narrow](tipwidth.svg)
 

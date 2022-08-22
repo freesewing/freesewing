@@ -65,6 +65,11 @@ export default (part) => {
    * it's based on the model's measurements. (bust span and high point shoulder (HPS) to bust).
    * So we need to find the bust point that would end up in the right place AFTER we do the FBA
    * For this, we'll just rotate it FBARot in the other direction
+   * In other words, we are pre-rotating points.bust now, so it gets rotated
+   * back to its original position during the FBA procedure.
+   * For convenience and clarity, we're defining points.realBustPoint here.
+   * However, points.bust will eventually be identical to points.realBustPoint
+   * after the FBA procedure.
    */
   points.realBustPoint = points.bust.clone()
   points.bust = points.bust.rotate(FBARot * -1, points.armholePitch)
@@ -276,7 +281,7 @@ export default (part) => {
     'armholePitchCp1',
   ]
   for (let p of clone1) points[p] = points[`${p}_rot1`].clone()
-  let clone2 = ['hem', 'hips', 'hipsCp2', 'waistCp1', 'waist']
+  let clone2 = ['hem', 'hips', 'hipsCp2', 'waistCp1', 'waist', 'bust']
   for (let p of clone2) points[p] = points[`${p}_rot2`].clone()
   points.cfHem = new Point(points.cfHem.x, points.bustHem_rot2.y)
   points.waistCp2 = points.belowDartCpBottom_rot2.clone()
@@ -287,6 +292,7 @@ export default (part) => {
   points.cfArmhole = new Point(0, points.armhole.y)
   points.cfWaist = new Point(0, points.waist.y)
   points.cfHips = new Point(0, points.hips.y)
+  points.cfBust = new Point(0, points.bust.y)
 
   //
   // Smooth out the armhole to avoid a kink where we rotated
@@ -311,7 +317,8 @@ export default (part) => {
   for (let s in snippets) delete snippets[s]
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips', 'waist', 'bust_rot2'],
+    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips',
+         'waist', 'bust', 'cfBust',],
   })
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
   snippets.logo = new Snippet('logo', points.logo)

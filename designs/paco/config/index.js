@@ -76,6 +76,7 @@ export default {
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,
+    fitGuides: false,
     kneeEase: 0.06,
     fitKnee: false,
     frontPocketHeelRatio: 0.4,

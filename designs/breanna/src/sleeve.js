@@ -65,7 +65,9 @@ export default (part) => {
     if (q1Len === frontTarget) points.frontNotch = points.capQ1.clone()
     else if (q1Len > frontTarget) points.frontNotch = q1.shiftAlong(frontTarget)
     else {
-      let q2 = new Path().move(points.capQ1).curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
+      let q2 = new Path().move(points.capQ1)
+        .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
+        .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
       points.frontNotch = q2.shiftAlong(frontTarget - q1Len)
     }
     let q4 = new Path().move(points.bicepsLeft)._curve(points.capQ4Cp2, points.capQ4)
@@ -74,7 +76,9 @@ export default (part) => {
     if (q4Len === backTarget) points.backNotch = points.capQ4.clone()
     else if (q4Len > backTarget) points.backNotch = q4.shiftAlong(backTarget)
     else {
-      let q3 = new Path().move(points.capQ4).curve(points.capQ4Cp1, points.capQ3Cp2, points.capQ3)
+      let q3 = new Path().move(points.capQ4)
+        .curve(points.capQ4Cp1, points.capQ3Cp2, points.capQ3)
+        .curve(points.capQ3Cp1, points.capQ2Cp2, points.capQ2)
       points.backNotch = q3.shiftAlong(backTarget - q4Len)
     }
     snippets.frontNotch = new Snippet('notch', points.frontNotch)

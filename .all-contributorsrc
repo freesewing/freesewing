@@ -886,6 +886,42 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "joeschofield0",
+      "name": "Joe Schofield",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47668691?v=4",
+      "profile": "https://github.com/joeschofield0",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "gregsadetsky",
+      "name": "Greg Sadetsky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1017304?v=4",
+      "profile": "https://greg.technology/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "nchilada",
+      "name": "Nikhil Chelliah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/692925?v=4",
+      "profile": "https://github.com/nchilada",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "OysteinHoiby",
+      "name": "OysteinHoiby",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49735055?v=4",
+      "profile": "https://github.com/OysteinHoiby",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true

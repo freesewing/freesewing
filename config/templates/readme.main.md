@@ -48,7 +48,7 @@
 
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* holding [all our NPM packages](https://freesewing.dev/reference/packages/).
+This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
 
 ## Get involved with FreeSewing v3 🚀
 

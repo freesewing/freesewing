@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Lapel reduction"
-- - -
+
+***
 
 Controls how much the lapel tip goes inwards.
 

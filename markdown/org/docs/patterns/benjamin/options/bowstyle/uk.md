@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Bow style"
-- - -
+
+***
 
 Four different bow tie styles!
 

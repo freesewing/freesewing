@@ -112,7 +112,7 @@ This topstitching will always be on show, so make sure to match the thread color
 </Tip>
 
 <Tip>
- 
+
 To prevent your pockets from bagging out, you can place a piece of non-stretching ribbon in between the fold. When stitching, you will also catch this ribbon, preventing the pocket to bag out.
 
 </Tip>
@@ -132,7 +132,7 @@ Zig-zag the edge of the folded-back front piece to finish it and secure it to th
 When you're done, place front piece, lining and pocket bag flat, and give it a good press.
 
 <Tip>
-  
+
 This might be a good time to remind you that every step up to this point had to be done for both legs.
 
 It's just a friendly reminder, the next steps need to be done for both legs too.
@@ -221,7 +221,7 @@ Press open the seam allowance along the side seams. Do so from the back, and rep
 Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
 
 <Tip>
- 
+
 A nice flat side seam looks great, so take your time to get it right.
 
 </Tip>
@@ -733,7 +733,7 @@ Feel free to trim back the length of your belt loops after you bar tack and befo
 Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
 
 <Tip>
- 
+
 This would also be a good time to try on your trousers and mark exactly how long you want them to be after they are hemmed.
 
 </Tip>
@@ -783,4 +783,3 @@ While there are machine alternatives, they aren't as neat (blind hem stitch) or 
 ### Step 56: Trim, clean up, and press
 
 Trim any loose threads or basting that remains, and give your trousers a good final press.
-

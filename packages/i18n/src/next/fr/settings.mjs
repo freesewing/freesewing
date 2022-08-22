@@ -7,6 +7,8 @@ const settings = {
   "advanced.d": "Permet d'afficher ou non les paramètres avancés et les options de patron",
   "paperless.t": "Sans papier",
   "paperless.d": "Dessine un patron avec toutes les dimensions incluses afin que vous puissiez le transférer sur du tissu ou un autre support sans avoir à imprimer",
+  "sabool.t": "Include seam allowance",
+  "sabool.d": "Controls whether or not to include seam allowance in your pattern",
   "sa.t": "Marge de couture",
   "sa.d": "Contrôle la valeur de la marge de couture incluse dans votre patron",
   "locale.t": "Langue",

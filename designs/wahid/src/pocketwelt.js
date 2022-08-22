@@ -1,10 +1,8 @@
 export default (part) => {
   let { points, Point, paths, Path, measurements, options, macro, complete, paperless } =
     part.shorthand()
-
   let pw = measurements.hips * options.pocketWidth // Pocket width
   let pwh = pw * options.weltHeight // Pocket welt height
-
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pw + 30, 0)
   points.bottomLeft = new Point(0, pwh * 2 + 20)
@@ -13,7 +11,6 @@ export default (part) => {
   points.notchRight = new Point(pw + 15, 10)
   points.midLeft = new Point(0, pwh + 10)
   points.midRight = new Point(pw + 30, pwh + 10)
-
   paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
@@ -22,13 +19,31 @@ export default (part) => {
     .line(points.topLeft)
     .close()
     .attr('class', 'fabric')
-
   if (complete) {
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     macro('title', {
       nr: 5,
       title: 'pocketWelt',
       at: points.title,
+    })
+    //Grainline
+    let grainlineVariableShift = points.topLeft.dist(points.topRight) * 0.1
+
+    points.grainlineFromWelt = new Point(points.topLeft.x, points.topLeft.y).shift(
+      0,
+      grainlineVariableShift
+    )
+    points.grainlineToWelt = new Point(points.topLeft.x, points.topLeft.y)
+      .shift(0, grainlineVariableShift)
+      .shift(-90, pwh * 2 + 20)
+    points.grainlineToWeltRotated = points.grainlineToWelt.rotate(
+      options.pocketAngle,
+      points.grainlineFromWelt
+    )
+
+    macro('grainline', {
+      from: points.grainlineFromWelt,
+      to: points.grainlineToWeltRotated,
     })
     macro('sprinkle', {
       snippet: 'notch',
@@ -43,7 +58,6 @@ export default (part) => {
       .line(points.midRight)
       .attr('class', 'hint dotted')
   }
-
   if (paperless) {
     macro('hd', {
       from: points.notchLeft,
@@ -71,6 +85,5 @@ export default (part) => {
       x: points.midRight.x + 45,
     })
   }
-
   return part
 }

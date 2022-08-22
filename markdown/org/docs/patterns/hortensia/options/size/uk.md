@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Size"
-- - -
+
+***
 
 Controls the overall size of the handbag.
 

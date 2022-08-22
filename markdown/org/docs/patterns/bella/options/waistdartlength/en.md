@@ -2,7 +2,7 @@
 title: "Waist dart length"
 ---
 
----
+***
 
 ![The effect of the waist dart length option on the pattern](sample.png)
 

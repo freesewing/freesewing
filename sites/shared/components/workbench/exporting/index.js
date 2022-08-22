@@ -6,6 +6,8 @@ import axios from 'axios'
 import Popout from 'shared/components/popout'
 import WebLink from 'shared/components/web-link'
 import theme from '@freesewing/plugin-theme'
+import {pagesPlugin} from '../layout/print/plugin'
+import PdfExporter from './pdfExporter'
 
 export const exports = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid'],
@@ -13,36 +15,71 @@ export const exports = {
   exportAsData: ['json', 'yaml', 'github gist'],
 }
 
-const handleExport = (format, gist, design, app, setLink, setFormat) => {
-  setLink(false)
-  setFormat(format)
+export const defaultPdfSettings = {
+  size: 'a4',
+  orientation: 'portrait',
+  margin: 10,
+  coverPage: true
+}
+
+export const handleExport = (format, gist, design, t, app, setLink, setFormat) => {
+
+  // handle state setting if there's supposed to be any
+  setLink && setLink(false)
+  setFormat && setFormat(format)
+
+  // handle the data exports
   if (exports.exportAsData.indexOf(format) !== -1) {
     if (format === 'json') exportJson(gist)
     else if (format === 'yaml') exportYaml(gist)
     else if (format === 'github gist') exportGithubGist(gist, app, setLink)
+
+    return
   }
-  else {
-    gist.embed=false
-    let svg = ''
-    try {
-      svg = new design(gist).use(theme).draft().render()
-    } catch(err) {
-      console.log(err)
+
+  gist.embed=false
+  let svg = ''
+
+  // make a pattern instance for export rendering
+  const layout = gist.layouts?.printingLayout || gist.layout || true
+  let pattern = new design({...gist, layout})
+
+  // add the theme and translation to the pattern
+  pattern.use(theme, {stripped: format !== 'svg'})
+  pattern.use({
+    hooks: {
+      insertText: (locale, text, {t}) => t(text)
     }
-    if (format === 'svg') return exportSvg(gist, svg)
-    app.startLoading()
-    axios.post('https://tiler.freesewing.org/api', {
-      svg,
-      format: 'pdf',
-      size: format === 'pdf' ? 'full' : format,
-      url: 'https://freesewing.org',
-      design: gist.design
-    })
-    .then(res => setLink(res.data.link))
-    .catch(err => console.log(err))
-    .finally(() => app.stopLoading())
+  },{t})
+
+  // pdf settings
+  const settings = {
+    ...defaultPdfSettings,
+    ...(gist._state.layout?.forPrinting?.page || {})
   }
+
+  // a specified size should override the gist one
+  if (format !== 'pdf') {
+    settings.size = format
+  }
+
+  try {
+    // add pages to pdf exports
+    if (format !== 'svg') {
+      pattern.use(pagesPlugin(settings, true))
+    }
+
+    pattern.draft();
+    svg = pattern.render()
+  } catch(err) {
+    console.log(err)
+  }
+
+  if (format === 'svg') return exportSvg(gist, svg)
+
+  return new PdfExporter(gist.design, pattern, svg, settings).export();
 }
+
 const exportJson = gist => {
   const blob = new Blob([JSON.stringify(gist, null, 2)], {
     type: 'application/json;charset=utf-8'
@@ -98,7 +135,7 @@ const ExportDraft = ({ gist, design, app }) => {
             {exports[type].map(format => (
               <button key={format}
                 className="btn btn-primary"
-                onClick={() => handleExport(format, gist, design, app, setLink, setFormat)}
+                onClick={() => handleExport(format, gist, design, t, app, setLink, setFormat)}
               >
                 {type === 'exportForPrinting' ? `${format} pdf` : format }
               </button>

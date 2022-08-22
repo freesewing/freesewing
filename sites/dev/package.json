@@ -7,8 +7,8 @@
     "develop": "next dev -p 3002",
     "prebuild": "SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs",
     "build": "node --experimental-json-modules ./node_modules/.bin/next build",
-    "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build",
-    "export": "yarn prebuild && next build && next export && node scripts/algolia.mjs",
+    "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build && node scripts/algolia.mjs",
+
     "start": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
     "lint": "next lint",
     "serve": "pm2 start npm --name 'dev' -- run start"
@@ -25,7 +25,7 @@
     "lodash.get": "^4.4.2",
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
-    "netlify-cli": "^10.3.3",
+    "netlify-cli": "^11.3.0",
     "next": "latest",
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "eslint-config-next": "12.2.3",
+    "eslint-config-next": "12.2.5",
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1",

@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simon shirt: Sewing Instructions"
-- - -
+---
 
 <Tip>
 
@@ -26,13 +26,13 @@ To make two cuffs, you have cut out your cuff piece four times in fabric, and tw
 For each cuff, press the interfacing piece to the bad side of the cuff piece.
 
 > If the inside and outside of your cuff are the same fabric, it does not matter what cuff piece you press it to.
-> 
+>
 > However, a popular style detail is to have a different fabric for the inside of the cuff. In this case, make sure to press the interfacing to the piece that you want to be the outside of your cuff.
 
 > Depending on what cuff you have chosen, the shape of the cuff will be different.
-> 
+>
 > In the first illustration, you can see both a round barrel cuff and a French cuff as examples.
-> 
+>
 > Going forward, the round barrel cuff will be used in the illustrations, but the process is the same for the other cuffs.
 
 #### Press interfacing to collar, undercollar and collar stand
@@ -50,7 +50,7 @@ For each piece, press the interfacing piece to the bad side.
 Place both parts of your cuff (one with interfacing, one without) together with the good sides, and sew them together at the standard seam allowance.
 
 > **Ensure you**
-> 
+>
 > - Do not sew together the side that we will attach to the sleeve later
 > - Stop at the seam allowance distance from the edge on the sleeve side
 
@@ -99,7 +99,7 @@ Before we flip your collar over, we need to trim back the seam allowance to remo
 Flip your collar with the good sides out, get those tips as pointy as possible, and give it a good press.
 
 > When pressing your collar, remember that the undercollar is a bit more narrow.
-> 
+>
 > When you align the non-sewn sides, this will cause the seam to roll towards the backside of the collar to guarantee that the inner fabric of the collar is not visible.
 
 #### Top-stitch collar
@@ -123,7 +123,7 @@ First place a collar stand with the good side up, then your collar with the unde
 Your collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
 
 > The way things look will depend a little bit on your collar choices, but in general your collar is going to bend downward, and your collar stand will bend upward.
-> 
+>
 > To align this all, we are going to baste this together, rather than pin it. Your collar is an important part of your shirt, so it's worth basting this.
 
 First, replace the pins marking the middle with a pin that pins all parts together.
@@ -147,7 +147,7 @@ Sew along the edge of your collar stand, respecting the standard seam allowance.
 Fold back the seam allowance of your collar stand on the non-sewn side and press it down.
 
 > In the center part, pressing down the seam allowance will be easy. But towards the tips of your collar, doing so will be tricky without pressing folds in your collar.
-> 
+>
 > Press it as best as you can without making folds in your collar. We'll press this again after flipping the collar out.
 
 #### Turn collar stand and press
@@ -245,7 +245,7 @@ When you're happy, press the folded placket.
 ![Sew down the folded placket](9c.png)
 
 > This is the classic approach. If you have chosen the seamless Button placket style, you don't have to do this.
-> 
+>
 > Rather than sew the placket down, simply leave it folded. The folds will be secured in place when we attach the buttons later.
 
 From the good side of your shirt, sew down the folded placket by stitching in the ditch.
@@ -275,7 +275,7 @@ Place your front with the good side down, and press the seam allowance to the bu
 #### Understanding a classic buttonhole placket
 
 > If you have chosen a seamless placket, you should follow the steps of the button placket, as the construction is identical.
-> 
+>
 > The steps below are for a classic buttonhole placket.
 
 ![Understanding a classic buttonhole placket](10b.png)
@@ -327,9 +327,9 @@ Now press that baby. You know you want to.
 ### Step 11: Close the shoulder seams
 
 > **Let's stuff a burrito**
-> 
+>
 > We are going to close the shoulder seams with a technique that is commonly known as the **burrito method**.
-> 
+>
 > If you are familiar with the burrito method, you already know what to do. If not, read on for a clever way to neatly close your shirt's shoulder seams while locking all the unfinished edges out of sight.
 
 #### Pin the fronts to the outside yoke
@@ -353,7 +353,7 @@ Pin them in place, and then sew the shoulder seams, making sure to keep your sau
 ![Match the notches](11e.png)
 
 > Made sure to align the actual seam line. Due to the uneven angles at the neck opening, the fabric edge is often longer on one side than on the other.
-> 
+>
 > However, the seamlines are the same length, so make sure to match them carefully using the notches.
 
 #### Flip it inside out through the neck opening
@@ -438,7 +438,7 @@ Then, sew horizontally to the other side of the placket to finish.
 ![Aligning the fabric for a flat-felled seam](14c.png)
 
 > **Careful with the extra seam allowance for the flat-felled seam** There is extra seam allowance on the sleeve to allow for the creation of the flat-felled seam.
-> 
+>
 > As such, be careful to not align the fabric edge, but align the seam so that the sleeve sits out 1cm.
 
 #### Pin sleeve in place
@@ -600,7 +600,7 @@ Start at the center back, and place the seam allowance of your back part between
 Make sure to respect the standard seam allowance and - important - avoid any wrinkles.
 
 > While your collar stand is relatively straight, we are going to sew it to what is essentially a hole in your shirt.
-> 
+>
 > That's a bit tricky, so take extra care at those parts that are most curved: where the back joins the fronts.
 
 #### Edge-stitch collar in place
@@ -652,7 +652,7 @@ Pin your shirt closed to transfer the place of the buttonholes to the button sid
 When you've marked where buttons should go, sew them on.
 
 > Rather than mark the location of the buttons from the pattern, I prefer to transfer the location of the created buttonholes.
-> 
+>
 > This way, if a buttonhole sits a little bit out of place, the button will simply follow it.
 
 ![That's it, you're done](finished.gif)

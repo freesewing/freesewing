@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Aaron A-Shirt: What You Need"
-- - -
+
+***
 
 To make Aaron, you will need the following:
 

@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Sleeve placket width"
-- - -
+
+***
 
 ![Ширина шліца](sleeveplacketwidth.svg)
 

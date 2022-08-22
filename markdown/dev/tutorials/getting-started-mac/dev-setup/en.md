@@ -41,7 +41,8 @@ But if you're running macOS, you have git, right?
 </Comment>
 
 #### Install yarn
-Our repository uses yarn workspaces. So you'll need yarn to work with it. 
+
+Our repository uses yarn workspaces. So you'll need yarn to work with it.
 
 To install it run:
 
@@ -85,16 +86,17 @@ npx @freesewing/new-design
 ```
 
 After you've answered [some questions](#questions), it will take a while to set everything up.
-When it's done, you will have a new folder with the development environent inside.
+When it's done, you will have a new folder with the development environment inside.
 
 Now you're ready to [start the development environment](/tutorials/getting-started-mac/dev-start).
 
-<Tip compact>The folder will have the name you chose above</Tip>
+<Tip compact>The folder will have the name you chose above.</Tip>
 
 <Note>
 ### Questions
 
 #### What template to use
+
 Use `From scratch` unless you want to start from our of our blocks:
 
 - Use `Extend Brian` to start from [Brian](https://freesewing.org/designs/brian)
@@ -103,9 +105,9 @@ Use `From scratch` unless you want to start from our of our blocks:
 - Use `Extend Breanna` to start from [Breanna](https://freesewing.org/designs/breanna)
 - Use `Extend Titan` to start from [Titan](https://freesewing.org/designs/titan)
 
-
 #### What name to use
-This will become the name of your design. Stick to \[a-z\] here to avoid problems.
+
+This will become the name of your design. Stick to \[a-z] here to avoid problems.
 
 If you're not certain what to pick, just mash some keys, it doesn't matter.
 
@@ -114,5 +116,3 @@ If you're not certain what to pick, just mash some keys, it doesn't matter.
 Chose `npm` if you don't have `yarn` are when you're not sure what the heck `yarn` is.
 
 </Note>
-
-

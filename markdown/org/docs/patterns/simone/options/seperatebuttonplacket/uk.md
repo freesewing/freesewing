@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Seperate button placket"
-- - -
+
+***
 
 ![Seperate button placket](seperatebuttonplacket.svg)
 

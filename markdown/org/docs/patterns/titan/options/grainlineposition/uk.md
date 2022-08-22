@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Grainline position"
-- - -
+
+***
 
 Controls the position of the grainline.
 

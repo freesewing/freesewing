@@ -1,6 +1,8 @@
-- - -
+***
+
 title: "Wahid waistcoat: Sewing Instructions"
-- - -
+
+***
 
 ### Step 1: Fuse interfacing
 
@@ -23,9 +25,9 @@ Place your front with the good side down, and your interfacing on top.
 Press the interfacing in place.
 
 > **Take your time**
-> 
+>
 > Don't just iron this on to get it over with, you want to really press that interfacing onto your fabric so that it fuses well.
-> 
+>
 > Place your iron down and lean on it for 10 seconds or so before you move on to the next spot to repeat the process.
 
 ### Step 2: Join front facing and lining
@@ -101,7 +103,7 @@ If you haven't marked the four corners of that rectangle yet, you should do so n
 Place your front piece down with the good side up. We're going to attach the welt to the bottom line of your pocket outline, and the facing to the top line.
 
 > If you've never made a welt pocket before, it can be a bit counterintuitive to attach the pocket on the outside of the garment. Pocket should be on the inside, right?
-> 
+>
 > Relax, the pocket will end up on the inside
 
 Both your pocket welt and your pocket facing have a help line on them. That line needs to line up with the long edges of your pocket.

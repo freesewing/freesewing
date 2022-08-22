@@ -2,7 +2,7 @@
 title: "Sleevecap Q3 upward spread"
 ---
 
----
+***
 
 ![The upward spread in the thrid quadrant of the sleevecap](./sleevecapq3spread1.svg)
 

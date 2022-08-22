@@ -1,8 +1,10 @@
-- - -
-title: "Sleevecap Q4 offset"
-- - -
+***
 
----
+title: "Sleevecap Q4 offset"
+
+***
+
+***
 
 ![The offset in the fourth quarter of the sleevecap](./sleevecapq4offset.svg)
 

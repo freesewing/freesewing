@@ -34,13 +34,13 @@ Just make sure to re-start the lab afterwards with `yarn lab`
 ## Standalone development
 
 You will have a new folder that has the name you picked for your design.
-If you chose `test`, you will have a `test` folder. If you chose `banana`, you'll have a `banana` folder.
+If you chose `test`, you will have a folder named `test`.
+If you chose `banana`, you'll have a folder named `banana`.
+(Within this new folder, the `design` subfolder holds your design's configuration file and source code.
+You can ignore all other subfolders and files; they are part of the development environment.)
 
-The `design` subfolder holds your design's configuration file and source code.
-You can ignore all other folders and files, they are part of the development environment.
-
-To start the development environment, enter the folder hat was created 
-and run `npm run start` (or `yarn start` if you're using Yarn as a package manager).
+To start the development environment, enter the folder that was created
+and run `npm run dev` (or `yarn dev` if you're using Yarn as a package manager).
 
 Then open your browser and go to http://localhost:8000
 
@@ -54,7 +54,7 @@ When you do, it will update automatically in your browser.
 
 ##### Yay, you're done!
 
-All you have to do now, is design your pattern.
+All you have to do now is design your pattern.
 Thankfully, we have a tutorial for that too:
 
 - [Pattern design tutorial](/tutorials/pattern-design/): A step-by-step guide to designing your first pattern

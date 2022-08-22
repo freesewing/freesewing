@@ -9,8 +9,7 @@
 
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* 
-holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
 
 This folder holds: {{{fullname}}}
 
