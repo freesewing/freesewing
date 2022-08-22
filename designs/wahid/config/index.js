@@ -52,6 +52,7 @@ export default {
     frontFacing: 'front',
     frontLining: 'front',
     pocketBag: 'front',
+    pocketFacing: 'front',
   },
   inject: {
     backBlock: 'base',
