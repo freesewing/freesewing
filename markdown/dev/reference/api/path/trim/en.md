@@ -24,7 +24,7 @@ To limit the impact of path.trim(), follow this approach:
 - now join it to the rest of your path
 
 You can see an example of this
-[in the front part of the Bruce pattern](https://github.com/freesewing/freesewing/blob/develop/packages/bruce/src/front.js#L195).
+[in the front part of the Bruce pattern](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/bruce/src/front.js#L158).
 
 </Warning>
 

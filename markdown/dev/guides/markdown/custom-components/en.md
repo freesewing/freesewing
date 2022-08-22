@@ -110,7 +110,7 @@ You can use the `i18n:` prefix followed by the translation key. For example
 
 Use **Example** to embed an example (a part of our `examples` pattern) that is used to
 illustrate the core API documentation. Check [the examples
-source code](https://github.com/freesewing/freesewing/blob/develop/packages/examples/src/index.js) for
+source code](https://github.com/freesewing/freesewing/blob/develop/designs/examples/src/index.js) for
 a full list of all available parts/examples.
 
 ```markdown

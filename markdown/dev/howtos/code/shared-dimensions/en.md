@@ -8,8 +8,8 @@ about: Shows how to share dimensions between similar pattern parts
 
 ##### See this example in our source code
 
-- [packages/aaron/src/shared.js](https://github.com/freesewing/freesewing/blob/develop/packages/aaron/src/shared.js)
-- [packages/aaron/src/front.js](https://github.com/freesewing/freesewing/blob/72f34101792bda4d8e553c3479daa63cb461f3c5/packages/aaron/src/front.js#L160)
+- [designs/aaron/src/shared.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/aaron/src/shared.js)
+- [designs/aaron/src/front.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/aaron/src/front.js#L160)
 
 </Note>
 

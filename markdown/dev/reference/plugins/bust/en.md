@@ -77,8 +77,8 @@ import config from "../config";
 const Pattern = new freesewing.Design(config, bust);
 ```
 
-[1]: https://github.com/freesewing/freesewing/blob/develop/packages/carlita/src/index.js#L12
+[1]: https://github.com/freesewing/freesewing/blob/develop/designs/carlita/src/index.js#L12
 
-[2]: https://github.com/freesewing/freesewing/blob/develop/packages/carlton
+[2]: https://github.com/freesewing/freesewing/blob/develop/designs/carlton
 
-[3]: https://github.com/freesewing/freesewing/blob/develop/packages/teagan/src/index.js
+[3]: https://github.com/freesewing/freesewing/blob/develop/designs/teagan/src/index.js
