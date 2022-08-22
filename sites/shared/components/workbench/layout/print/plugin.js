@@ -18,17 +18,15 @@ const indexLetter = (i) => String.fromCharCode('A'.charCodeAt(0) + i - 1)
  * */
 export const pagesPlugin = ({
   size='a4',
-  orientation='portrait',
-  margin=10,
-  printStyle = false, /** should the pages be rendered for printing or for screen viewing? */
-  setPatternSize = true
+  ...settings
 }) => {
-  const ls = orientation === 'landscape'
+  const ls = settings.orientation === 'landscape'
   let sheetHeight = sizes[size][ls ? 0 : 1]
   let sheetWidth = sizes[size][ls ? 1 : 0]
-  sheetWidth -= margin * 2
-  sheetHeight -= margin * 2
-  return basePlugin({sheetWidth, sheetHeight, orientation, printStyle, setPatternSize})
+  sheetWidth -= settings.margin * 2
+  sheetHeight -= settings.margin * 2
+
+  return basePlugin({...settings, sheetWidth, sheetHeight})
 }
 
 const doScanForBlanks = (parts, layout, x, y, w, h) => {
@@ -166,7 +164,7 @@ const basePlugin = ({
           else {
             paths[pageName].attr('class', 'interfacing stroke-xs')
             // add markers and rulers
-            macro('addPageMarkers', {row, col, pageName})
+            macro('addPageMarkers', {row, col, pageName, withContent})
             macro('addRuler', {xAxis: true, pageName})
             macro('addRuler', {xAxis: false, pageName})
           }
@@ -193,7 +191,7 @@ const basePlugin = ({
       // also make a tick for the end of the ruler
       points[`${rulerName}-ruler-tick`] = points[`${rulerName}-ruler-end`].translate(xAxis ? 0 : 3, xAxis ? 3 : 0)
         // add a label to it
-        .attr('data-text', rulerLength + (isMetric ? 'cm' : 'in'))
+        .attr('data-text', rulerLength + (isMetric ? 'cm' : '"'))
         // space the text properly from the end of the line
         .attr('data-text-class', 'fill-interfacing baseline-center' +  (xAxis ? ' center' : ''))
         .attr(`data-text-d${xAxis ? 'y' : 'x'}`, xAxis ? 5 : 3)
@@ -237,17 +235,17 @@ const basePlugin = ({
       .line(points[`${rulerName}-ruler-tick`])
     },
     /** add page markers to the given page */
-    addPageMarkers({row, col, pageName}) {
+    addPageMarkers({row, col, pageName, withContent}) {
       const {macro, points} = this.shorthand()
       // these markers are placed on the top and left of the page,
       // so skip markers for the top row or leftmost column
-      if (row !== 0) macro('addPageMarker', {
+      if (row !== 0 && withContent[row-1][col]) macro('addPageMarker', {
         along: [points[`${pageName}-tl`], points[`${pageName}-tr`]],
         label: '' + row,
         isRow: true,
         pageName
       })
-      if (col !== 0) macro('addPageMarker', {
+      if (col !== 0 && withContent[row][col-1]) macro('addPageMarker', {
         along: [points[`${pageName}-tl`], points[`${pageName}-bl`]],
         label: indexLetter(col),
         isRow: false,
