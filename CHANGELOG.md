@@ -62,6 +62,7 @@
 #### Fixed
 
  - Don't do a negative FBA from there's no need for an FBA Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
+ - Duplicate config rather than mutating the imported simon config
 
 ### theo
 
@@ -74,6 +75,7 @@
 #### Fixed
 
  - Prevent facing/lining overlap when shoulders get very narrow fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
+ - Fixed dependency issue with pocketFacing part
 
 ### plugin-title
 

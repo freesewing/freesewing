@@ -3,6 +3,8 @@
  * All edits will be overwritten on the next (pre)build
  */
 const o_simone = {
+  "bustAlignedButtons.t": "Bust-aligned buttons",
+  "bustAlignedButtons.d": "Optional button spacing strategies to ensure a button at the bustline",
   "bustDartAngle.t": "Angle des pinces poitrine",
   "bustDartAngle.d": "Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas",
   "bustDartLength.t": "Longueur des pinces poitrine",

@@ -1,6 +1,6 @@
 {
   "name": "rehype-jargon",
-  "version": "2.21.3",
+  "version": "2.21.4-rc.0",
   "description": "A Rehype plugin for jargon terms",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -42,7 +42,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=14.0.0",
