@@ -8,6 +8,7 @@ import Dot from './dot.js'
 import examples from '@freesewing/examples'
 import rendertest from '@freesewing/rendertest'
 import tutorial from '@freesewing/tutorial'
+import { Tab, Tabs } from './tabs.js'
 
 
 const mdxCustomComponents = (app=false) => ({
@@ -28,6 +29,7 @@ const mdxCustomComponents = (app=false) => ({
   pre: props => <Highlight {...props} />,
   img: Figure,
   Dot,
+  table: props => <table {...props} className="mdx-table table-auto w-full">{props.children}</table>,
 })
 
 export default mdxCustomComponents
