@@ -9,7 +9,7 @@ export default {
   type: 'pattern',
   difficulty: 5,
   optionGroups: {
-    options: ['size','type','armWidth','armLength','neckWidth','armTaper','bottomTopArmRatio','bottomArmReduction','bottomArmReductionPlushy'],
+    style: ['size','type','armWidth','armLength','neckWidth','armTaper','bottomTopArmRatio','bottomArmReduction','bottomArmReductionPlushy'],
   },
   parts: ['headSection0', 'headSection1', 'armSection0', 'armSection1', 'eye0', 'eye1', 'eye2'],
   measurements: [],
