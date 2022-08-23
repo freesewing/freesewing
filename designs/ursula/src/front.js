@@ -6,8 +6,6 @@ export default function (part) {
     points,
     paths,
     measurements,
-    //    Snippet,
-    //    snippets,
     store,
     utils,
     complete,
@@ -55,9 +53,8 @@ export default function (part) {
     .shift(270, measurements.waistToUpperLeg * options.frontDip) /* Waist band dip */
 
   /* Leg opening is based on waist band and hip */
-  //  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(points.frontWaistBandLeft, options.legOpening) // Waist band side point
-  //  points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band side point
 
+  // Should this next comment section be removed? --BenF
   ///////////// Replace the point it's shifting towards with a beamsIntersect() of the
   ///////////// side (frontWaistLeft and frontHipLeft) and the lowest point of the waistband (backWaistBandMid
   ///////////// and backWaistBandLeftCp1 should work)
@@ -83,6 +80,7 @@ export default function (part) {
     points.frontGussetLeft.dy(points.frontLegOpeningLeft) / 3
   )
   points.frontGussetLeftCp1 = points.frontGussetLeft
+    // Should this next comment be removed? --BenF
     //    .shift(270, points.frontGussetLeft.dy(points.frontHipLeft) * 4 * options.taperToGusset); // Consider changing this so it's relative
     .shift(270, points.frontGussetLeft.dy(points.frontWaistBandMid) * options.taperToGusset)
 
@@ -194,6 +192,8 @@ export default function (part) {
         ),
       d: 15,
     })
+    // This commented-out vd is the front dip distance. Should it
+    // be removed? --BenF
     /*    macro('vd', {
       from: points.frontWaistBandLeft,
       to: points.frontWaistBandMid,

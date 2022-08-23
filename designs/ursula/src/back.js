@@ -6,8 +6,6 @@ export default function (part) {
     points,
     paths,
     measurements,
-    //    Snippet,
-    //    snippets,
     store,
     utils,
     complete,
