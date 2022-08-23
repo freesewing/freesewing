@@ -2711,7 +2711,7 @@
   resolved "https://registry.yarnpkg.com/@netlify/binary-info/-/binary-info-1.0.0.tgz#cd0d86fb783fb03e52067f0cd284865e57be86c8"
   integrity sha512-4wMPu9iN3/HL97QblBsBay3E1etIciR84izI3U+4iALY+JHCrI+a2jO0qbAZ/nxKoegypYEaiiqWXylm+/zfrw==
 
-"@netlify/build@^27.15.5":
+"@netlify/build@^27.15.6":
   version "27.15.6"
   resolved "https://registry.yarnpkg.com/@netlify/build/-/build-27.15.6.tgz#978609e0b9f8a12b11d59b20489ce9c333f0f5cc"
   integrity sha512-ZSah6LDAG0KwWiTUfVfL/kBie7qsUj4cMSl0D7dbTBWSRpGx8MgYjlJHP3U2PgXAgmLcc4NOciGIZD/zL4yJCA==
@@ -3079,10 +3079,10 @@
   resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-2.12.0.tgz#62e467c0c6be7bcae9349dc681e71eb393c21b2a"
   integrity sha512-1n9VvO/9qM7cRB5f7NgSNqeUrovM7j9WVAY7ZQ4LtQuXSquFmO9Fku7WrV3zAUC6v2Y62fxGyJ0fRllYz5uXLw==
 
-"@netlify/plugins-list@^6.36.0", "@netlify/plugins-list@^6.39.0":
-  version "6.39.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-6.39.0.tgz#e62105ea8d0a683bd56a70fd48bc1c76e4dc4b75"
-  integrity sha512-f8sMN7XFlQQ63km5vhg5y5+E3DXoWEoAe94YOMGlmzifZCCzPS/bEUVaQ07n+iDspy3dOIN97FHAAu0B2Jpe2Q==
+"@netlify/plugins-list@^6.36.0", "@netlify/plugins-list@^6.40.0":
+  version "6.40.0"
+  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-6.40.0.tgz#37663f3effeae08f3d9ed1dc07463c4bbd377634"
+  integrity sha512-VDYHEVS/r3eEylUNVwwF0scyV8ISMfxbz6MMl7TEpgArXOS+lYhObNAukrWcUR7aa0zf9C3jwy67zROh0M+ZdQ==
 
 "@netlify/run-utils@^4.0.0":
   version "4.0.1"
@@ -16393,16 +16393,16 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
 netlify-cli@^11.3.0:
-  version "11.3.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-11.3.0.tgz#7b90348cc14b4aaa3457a8b8532d100a68f74681"
-  integrity sha512-x7gsfc8amXW3FYaY9ArRdFK81+BuE6JzSpHqyYdLbT7VnIaatowsLHW4c19/5TiDpXGbrpGrRLmRjLsPNw6Xkg==
+  version "11.5.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-11.5.0.tgz#b4f0d7e3e05210473f6f27a65cff075d85fc2d4e"
+  integrity sha512-v3NKWkfB+Z+yFhHL7d+UHE8v0tynoHWuDkNITeThlXpLcBrmxwQHxe+xfnEpH5A2FlOEJCHS4LcT5W2GhSFkjw==
   dependencies:
-    "@netlify/build" "^27.15.5"
+    "@netlify/build" "^27.15.6"
     "@netlify/config" "^18.2.1"
     "@netlify/edge-bundler" "^1.13.0"
     "@netlify/framework-info" "^9.2.0"
     "@netlify/local-functions-proxy" "^1.1.1"
-    "@netlify/plugins-list" "^6.39.0"
+    "@netlify/plugins-list" "^6.40.0"
     "@netlify/zip-it-and-ship-it" "^5.13.5"
     "@octokit/rest" "^18.0.0"
     "@sindresorhus/slugify" "^1.1.0"
