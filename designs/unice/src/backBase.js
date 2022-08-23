@@ -32,13 +32,15 @@ export default function (part) {
 
   // back height is given by (estimated) cross seam, minus front and gusset lengths
   // this does not account for vertical stretch yet
-  const backHeight = store.get('crossSeam') - store.get('frontHeight') - options.gussetLength * measurements.seat
+  const backHeight =
+    store.get('crossSeam') - store.get('frontHeight') - options.gussetLength * measurements.seat
 
   // calculate the actual back height, using yScale above and yScaleReduced below leg opening
   const backHeightAbove = store.get('frontHeightAbove') // part above has same height front and back
 
   let backHeightBelow
-  backHeightBelow = store.get('yScale')*(backHeight - backHeightAbove/store.get('yScaleReduced'))
+  backHeightBelow =
+    store.get('yScale') * (backHeight - backHeightAbove / store.get('yScaleReduced'))
 
   const backHeightReduced = backHeightBelow + backHeightAbove
 
@@ -48,10 +50,7 @@ export default function (part) {
         options.backToFrontWidth,
     backHeightReduced
   )
-  points.backGussetMid = new Point(
-    measurements.seat / 4,
-    backHeightReduced
-  )
+  points.backGussetMid = new Point(measurements.seat / 4, backHeightReduced)
 
   points.backGussetRight = points.backGussetLeft.flipX(points.backWaistMid)
   points.backLegOpeningRight = points.backLegOpeningLeft.flipX(points.backWaistMid)
@@ -70,7 +69,10 @@ export default function (part) {
   // Create control points
 
   /* Control point for waistband dip */
-  points.backWaistBandLeftCp1 = points.backWaistBandMid.shift(0,points.backWaistBandMid.dx(points.backWaistBandLeft) / 3 )
+  points.backWaistBandLeftCp1 = points.backWaistBandMid.shift(
+    0,
+    points.backWaistBandMid.dx(points.backWaistBandLeft) / 3
+  )
 
   /* Flip points to right side */
   points.backWaistBandRightCp1 = points.backWaistBandLeftCp1.flipX(points.backWaistMid)
@@ -104,27 +106,37 @@ export default function (part) {
     points.backGussetRight = points.backGussetLeft.flipX(points.backWaistMid)
   } else {
     /* If back exposure is low and flares out to cover more */
-    store.set('adjustedBackExposure',options.backExposure * store.get('adjustedLegOpening')) // flare depends on leg opening
+    store.set('adjustedBackExposure', options.backExposure * store.get('adjustedLegOpening')) // flare depends on leg opening
     /* This controls the hip bit */
     points.backLegOpeningLeftCp1 = points.backLegOpeningLeft.shift(
-      -45,store.get('adjustedBackExposure') * points.backWaistBandMid.dx(points.backWaistBandLeft))
+      -45,
+      store.get('adjustedBackExposure') * points.backWaistBandMid.dx(points.backWaistBandLeft)
+    )
     /* This controls the taper to gusset */
-    points.backGussetLeftCp1 = points.backGussetLeft.shift(115, store.get('adjustedBackExposure') * points.backWaistBandMid.dx(points.backWaistBandLeft))
+    points.backGussetLeftCp1 = points.backGussetLeft.shift(
+      115,
+      store.get('adjustedBackExposure') * points.backWaistBandMid.dx(points.backWaistBandLeft)
+    )
 
-	/* center of the flare and its control points are on a line parallel to the backGussetLeft to backLegOpeningLeft line
-	* first, define the points on that line */
-	points.backFlare = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.5)
+    /* center of the flare and its control points are on a line parallel to the backGussetLeft to backLegOpeningLeft line
+     * first, define the points on that line */
+    points.backFlare = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.5)
     // points.backFlareCp1 = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.5 - store.get('adjustedBackExposure'))
-	points.backFlareCp1 = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.7)
-	points.backFlareCp2 = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.3)
-	/* then shift all three points outward */
+    points.backFlareCp1 = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.7)
+    points.backFlareCp2 = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.3)
+    /* then shift all three points outward */
     points.backFlareLeft = points.backFlare.shift(
-      215,(points.backWaistBandMid.dx(points.backWaistBandLeft)) * store.get('adjustedBackExposure') * 2 )
-	points.backFlareLeftCp1 = points.backFlareCp1.shift(
-      215,(points.backWaistBandMid.dx(points.backWaistBandLeft)) * store.get('adjustedBackExposure') * 2 )
-	points.backFlareLeftCp2 = points.backFlareCp2.shift(
-      215,(points.backWaistBandMid.dx(points.backWaistBandLeft)) * store.get('adjustedBackExposure') * 2 )
-
+      215,
+      points.backWaistBandMid.dx(points.backWaistBandLeft) * store.get('adjustedBackExposure') * 2
+    )
+    points.backFlareLeftCp1 = points.backFlareCp1.shift(
+      215,
+      points.backWaistBandMid.dx(points.backWaistBandLeft) * store.get('adjustedBackExposure') * 2
+    )
+    points.backFlareLeftCp2 = points.backFlareCp2.shift(
+      215,
+      points.backWaistBandMid.dx(points.backWaistBandLeft) * store.get('adjustedBackExposure') * 2
+    )
 
     /* Flip points to the right */
 
@@ -194,7 +206,7 @@ export default function (part) {
         .move(points.backGussetRight)
         .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
         .curve(points.backFlareRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
-		.length()
+        .length()
     )
   }
 

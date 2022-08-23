@@ -23,22 +23,23 @@ export default function (part) {
   // yScale: for parts which are stretched vertically but not horizontally (anything below leg opening)
   // yScaleReduced: parts which are already under horizontal stretch, which limits vertical stretch
 
-  if (options.adjustStretch) { // roughly 15% of stretch is reserved for comfort
+  if (options.adjustStretch) {
+    // roughly 15% of stretch is reserved for comfort
     // horizontal: first, 'regular' stretch (for parts that go across the body)
-    if (options.fabricStretchX < 0.30) {
+    if (options.fabricStretchX < 0.3) {
       // subtract 15, but never go below 0
-      store.set('xScale', utils.stretchToScale(Math.max(0 , options.fabricStretchX - 0.15)))
+      store.set('xScale', utils.stretchToScale(Math.max(0, options.fabricStretchX - 0.15)))
     } else {
       store.set('xScale', utils.stretchToScale(options.fabricStretchX / 2))
       // rough approximation of rule of thumb quoted in Sanne's July 29, 2021 showcase
     }
     // use half of whatever the regular stretch is (no util available, convert from stretch to fraction manually
-    store.set('xScaleReduced',(1 + store.get('xScale'))/2)
+    store.set('xScaleReduced', (1 + store.get('xScale')) / 2)
 
     // vertical:
-    if (options.fabricStretchY < 0.30) {
+    if (options.fabricStretchY < 0.3) {
       // subtract 15, but never go below 0
-      store.set('yScale', utils.stretchToScale(Math.max(0 , options.fabricStretchY - 0.15)))
+      store.set('yScale', utils.stretchToScale(Math.max(0, options.fabricStretchY - 0.15)))
     } else {
       store.set('yScale', utils.stretchToScale(options.fabricStretchY / 2))
       // rough approximation of rule of thumb quoted in Sanne's July 29, 2021 showcase
@@ -50,36 +51,52 @@ export default function (part) {
     store.set('xScaleReduced', utils.stretchToScale(options.fabricStretchX / 2))
     store.set('yScale', utils.stretchToScale(options.fabricStretchY))
   }
-  if (options.fabricStretchY < 0.20) {
-    store.set('yScaleReduced',1)
+  if (options.fabricStretchY < 0.2) {
+    store.set('yScaleReduced', 1)
   } else {
     // reduced yScale gradually increases from equivalent of stretch 0 to 5%, then cuts off (uses third-order polynomial)
     // function to approximate Sanne's guidelines given in Discord (roughly 2.5% for stretch 30-40%, 5% above that)
-    store.set('yScaleReduced', utils.stretchToScale(Math.min( 0.05, 6.25 * Math.pow(options.fabricStretchY - 0.20, 3))))
+    store.set(
+      'yScaleReduced',
+      utils.stretchToScale(Math.min(0.05, 6.25 * Math.pow(options.fabricStretchY - 0.2, 3)))
+    )
   }
 
   // // temporarily overrule yScale and yScaleReduced
   // store.set('yScale',1)
   // store.set('yScaleReduced',1)
 
-
   // // Design pattern here
 
   // determine height of front part: use cross seam (and cross seam front) if selected and available
   // NOTE: neither crossSeam not frontHeight are adjusted for (vertical) stretch
   if (options.useCrossSeam && measurements.crossSeam) {
-    store.set('crossSeam',measurements.crossSeam)
-  } else { // use original approximation: front and back are roughly waistToUpperLeg high, plus gusset length
-    store.set('crossSeam',measurements.waistToUpperLeg * (1 + options.backToFrontLength) + options.gussetLength * measurements.seat)
+    store.set('crossSeam', measurements.crossSeam)
+  } else {
+    // use original approximation: front and back are roughly waistToUpperLeg high, plus gusset length
+    store.set(
+      'crossSeam',
+      measurements.waistToUpperLeg * (1 + options.backToFrontLength) +
+        options.gussetLength * measurements.seat
+    )
   }
   // optionally use crossSeamFront to determine relative length of front and back
   // this does not account for vertical stretch yet
-  if (options.useCrossSeam && measurements.crossSeamFront) { // subtract half the gusset length from cross seam front, and an additional 3.5% of the seat circumference to move the gusset upward (to match commercial panties)
-    store.set('frontHeight',measurements.crossSeamFront - measurements.seat*(0.5*options.gussetLength + options.gussetShift))
-  } else { // subtract gusset length, divide by roughly 2
-    store.set('frontHeight',(store.get('crossSeam') - options.gussetLength * measurements.seat)/(1 + options.backToFrontLength))
+  if (options.useCrossSeam && measurements.crossSeamFront) {
+    // subtract half the gusset length from cross seam front, and an additional 3.5% of the seat circumference to move the gusset upward (to match commercial panties)
+    store.set(
+      'frontHeight',
+      measurements.crossSeamFront -
+        measurements.seat * (0.5 * options.gussetLength + options.gussetShift)
+    )
+  } else {
+    // subtract gusset length, divide by roughly 2
+    store.set(
+      'frontHeight',
+      (store.get('crossSeam') - options.gussetLength * measurements.seat) /
+        (1 + options.backToFrontLength)
+    )
   }
-
 
   // Create points
 
@@ -96,11 +113,11 @@ export default function (part) {
   points.frontUpperLegLeft = new Point(
     measurements.seat / 4 - (measurements.seat / 4) * store.get('xScale'), // assume same circ. as seat
     measurements.waistToUpperLeg * store.get('yScaleReduced')
-    )
- points.frontHipLeft = new Point(
+  )
+  points.frontHipLeft = new Point(
     measurements.seat / 4 - (measurements.hips / 4) * store.get('xScale'),
     measurements.waistToHips * store.get('yScaleReduced')
-    )
+  )
 
   // use these points to define an invisible path
   paths.sideLeft = new Path()
@@ -119,23 +136,26 @@ export default function (part) {
 
   /* Leg opening is also on the sideLeft path, and cannot be higher than rise */
   /* Minimum side seam length is defined as 3.5% of the sideLeft path (which is at least waistToUpperLeg long) */
-  store.set('adjustedLegOpening',Math.min(options.legOpening,options.rise - 0.035)) // TODO: account for rise having a different domain
+  store.set('adjustedLegOpening', Math.min(options.legOpening, options.rise - 0.035)) // TODO: account for rise having a different domain
 
   points.frontLegOpeningLeft = paths.sideLeft.shiftFractionAlong(store.get('adjustedLegOpening'))
   points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band low point
 
   // calculate the actual front height, using yScale above and yScaleReduced below leg opening
-  store.set('frontHeightAbove',points.frontWaistLeft.dy(points.frontLegOpeningLeft))
+  store.set('frontHeightAbove', points.frontWaistLeft.dy(points.frontLegOpeningLeft))
 
   var frontHeightBelow
-  frontHeightBelow = store.get('yScale')*(store.get('frontHeight') - store.get('frontHeightAbove')/store.get('yScaleReduced'))
+  frontHeightBelow =
+    store.get('yScale') *
+    (store.get('frontHeight') - store.get('frontHeightAbove') / store.get('yScaleReduced'))
 
   var frontHeightReduced
   frontHeightReduced = frontHeightBelow + store.get('frontHeightAbove')
 
   // gusset width uses modified xScale (barely stretches) and depends on waistToUpperLeg - least sensitive to girth
   points.frontGussetLeft = new Point(
-    measurements.seat / 4 - (measurements.waistToSeat * options.gussetWidth * store.get('xScaleReduced')) * 2.2,
+    measurements.seat / 4 -
+      measurements.waistToSeat * options.gussetWidth * store.get('xScaleReduced') * 2.2,
     frontHeightReduced
   )
   points.frontGussetMid = new Point(measurements.seat / 4, frontHeightReduced)
@@ -160,12 +180,22 @@ export default function (part) {
   )
 
   /* Control point above gusset moves higher as taperToGusset (= front exposure) increases, but is limited by both the leg opening (allow minimal arching only) and the rise (leg opening must not intersect the waist band) */
-  points.frontGussetLeftCp1 = points.frontGussetLeft
-    .shift(270, Math.max(Math.max(points.frontGussetLeft.dy(points.frontWaistMid) * options.taperToGusset / 2,points.frontGussetLeft.dy(points.frontLegOpeningLeft) * 2),points.frontGussetLeft.dy(points.frontWaistBandMid)))
+  points.frontGussetLeftCp1 = points.frontGussetLeft.shift(
+    270,
+    Math.max(
+      Math.max(
+        (points.frontGussetLeft.dy(points.frontWaistMid) * options.taperToGusset) / 2,
+        points.frontGussetLeft.dy(points.frontLegOpeningLeft) * 2
+      ),
+      points.frontGussetLeft.dy(points.frontWaistBandMid)
+    )
+  )
 
   /* Control point for waistband dip */
-  points.frontWaistBandLeftCp1 = points.frontWaistBandMid.shift(0,points.frontWaistBandMid.dx(points.frontWaistBandLeft) / 3 )
-
+  points.frontWaistBandLeftCp1 = points.frontWaistBandMid.shift(
+    0,
+    points.frontWaistBandMid.dx(points.frontWaistBandLeft) / 3
+  )
 
   /* Flip control points to right side */
   points.frontGussetRightCp1 = points.frontGussetLeftCp1.flipX(points.frontWaistMid)

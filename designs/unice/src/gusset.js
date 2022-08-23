@@ -3,7 +3,7 @@ export default function (part) {
     part.shorthand()
 
   var yScaleDoubleLayer
-  yScaleDoubleLayer = (1 + store.get('yScale'))/2 // double layer of fabric stretches half as much
+  yScaleDoubleLayer = (1 + store.get('yScale')) / 2 // double layer of fabric stretches half as much
 
   // Create points
   points.frontGussetLeft = new Point(store.get('frontGussetLeft').x, 0)
@@ -58,21 +58,23 @@ export default function (part) {
       title: 'gusset',
     })
     const legOpeningLength =
-    store.get('frontLegOpeningLength') +
-    store.get('backLegOpeningLength') +
-    store.get('gussetSideLength')
+      store.get('frontLegOpeningLength') +
+      store.get('backLegOpeningLength') +
+      store.get('gussetSideLength')
     //stores
     store.set('legOpeningLength', legOpeningLength)
-    const gussetNotchLength = (legOpeningLength / 2)- store.get('frontLegOpeningLength')
-        points.gussetNotchLeft = new Path()
-        .move(points.frontGussetLeft)
-        .curve_(points.gussetCp1, points.backGussetLeft)
-        .shiftAlong(gussetNotchLength)
-        points.gussetNotchRight = points.gussetNotchLeft.flipX(points.frontGussetLeft.shiftFractionTowards(points.frontGussetRight,0.5))
-        macro('sprinkle', {
-          snippet: 'notch',
-          on: ['gussetNotchLeft', 'gussetNotchRight',]
-        })
+    const gussetNotchLength = legOpeningLength / 2 - store.get('frontLegOpeningLength')
+    points.gussetNotchLeft = new Path()
+      .move(points.frontGussetLeft)
+      .curve_(points.gussetCp1, points.backGussetLeft)
+      .shiftAlong(gussetNotchLength)
+    points.gussetNotchRight = points.gussetNotchLeft.flipX(
+      points.frontGussetLeft.shiftFractionTowards(points.frontGussetRight, 0.5)
+    )
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['gussetNotchLeft', 'gussetNotchRight'],
+    })
   }
 
   // Paperless?
