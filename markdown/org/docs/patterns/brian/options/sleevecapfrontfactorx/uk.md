@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Sleevecap front X"
-
-***
+- - -
 
 ***
 
