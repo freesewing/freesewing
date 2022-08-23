@@ -2,7 +2,6 @@
 title: "Shoulder seam shift: armhole side"
 - - -
 
-
 Steuert die Position der Schulternaht auf der Armlochseite.
 
 - Erhöhe diese Option, um die SchulterNaht auf der Armlochseite vorwärts zu verschieben
