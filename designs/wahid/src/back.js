@@ -108,9 +108,11 @@ export default (part) => {
 
   if (complete) {
     //Grainline
+    points.grainlineBottom = new Point(points.logo.x/2, points.cbNeck.y)
+    points.grainlineTop = new Point(points.grainlineBottom.x, points.gridAnchor.y)
     macro('grainline', {
-      from: points.cbNeck,
-      to: points.cbHem,
+      from: points.grainlineTop,
+      to: points.grainlineBottom,
     })
     macro('scalebox', { at: new Point(points.logo.x, points.armholePitchCp2.y) })
     if (sa) {
