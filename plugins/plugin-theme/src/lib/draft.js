@@ -13,12 +13,45 @@ const colors = {
   contrast: '#ec4899'
 }
 
+const vars = `svg.freesewing {
+  --pattern-fabric: ${colors.fabric};
+  --pattern-lining: ${colors.lining};
+  --pattern-interfacing: ${colors.interfacing};
+  --pattern-canvas: ${colors.canvas};
+  --pattern-various: ${colors.various};
+  --pattern-mark: ${colors.mark};
+  --pattern-contrast: ${colors.contrast};
+  --pattern-note: ${colors.note};
+  --pattern-text-xs: 0.2rem;
+  --pattern-text-sm: 0.3rem;
+  --pattern-text: 0.4rem;
+  --pattern-text-lg: 0.6rem;
+  --pattern-text-xl: 0.8rem;
+  --pattern-text-2xl: 1.5rem;
+  --pattern-text-3xl: 2rem;
+  --pattern-text-4xl: 3rem;
+  --pattern-scale: 1;
+  --pattern-stroke-xs: 0.2px;
+  --pattern-stroke-sm: 0.4px;
+  --pattern-stroke: 0.7px;
+  --pattern-stroke-lg: 1.3px;
+  --pattern-stroke-xl: 2px;
+  --pattern-stroke-2xl: 4px;
+  --pattern-stroke-3xl: 6px;
+  --pattern-stroke-4xl: 8px;
+  --pattern-stroke-5xl: 12px;
+  --pattern-stroke-6xl: 16px;
+  --pattern-stroke-7xl: 20px;
+}`
+
 /**
  * generate a stylesheet
  * scale: the scale of the markings
  * stripped: should nested declarations be stripped out? Necessary for svgToPdfkit
  * */
 export default (scale, stripped) => `
+  ${!stripped ? vars : ''}
+
   ${!stripped ? '/* Reset */' : ''}
   ${!stripped ? 'svg.freesewing ' : ''}path,
   ${!stripped ? 'svg.freesewing ' : ''}circle,
