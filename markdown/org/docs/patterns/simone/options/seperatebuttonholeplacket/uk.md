@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Seperate buttonhole placket"
-
-***
+- - -
 
 ![Seperate buttonhole placket](seperatebuttonholeplacket.svg)
 
