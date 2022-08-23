@@ -109,7 +109,7 @@ const Header = ({ app, setSearch }) => {
               </Link>
               <Link href="/">
                 <a role="button" className="btn btn-link btn-sm text-neutral-content h-12 font-normal lowercase text-2xl">
-                  <span className="font-black px-1 normal-case">FreeSewing</span>.dev
+                  v2.<span className="font-black px-1 normal-case">FreeSewing</span>.dev
                 </a>
               </Link>
             </div>
