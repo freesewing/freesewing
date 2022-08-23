@@ -11,14 +11,23 @@ const config = {
   name: 'unice',
   inject: {
     ...ursulaConfig.inject,
-    front: 'ursulaFront',
-    back: 'ursulaBack',
+    frontBase: 'ursulaFront',
+    backBase: 'ursulaBack',
+    front: 'frontBase',
+    back: 'backBase',
     gusset: 'ursulaGusset',
   },
-  hide: ['ursulaBack', 'ursulaFront', 'ursulaGusset'],
+  hide: ['ursulaBack', 'ursulaFront', 'ursulaGusset', 'frontBase', 'backBase',],
   parts: [],
   optionalMeasurements: ['crossSeam','crossSeamFront'],
   measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg','hips','waistToHips'],
+    dependencies: {
+    backBase: 'frontBase',
+    gusset: ['frontBase', 'backBase'],
+    elastic: 'gusset',
+    front: 'gusset',
+    back: 'gusset',
+  },
   optionGroups: {
     ...ursulaConfig.optionGroups,
     fit: [

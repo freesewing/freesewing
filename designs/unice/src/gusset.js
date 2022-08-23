@@ -1,7 +1,7 @@
 export default function (part) {
   let { options, Point, Path, points, paths, measurements, store, complete, sa, paperless, macro } =
     part.shorthand()
-return part
+
   var yScaleDoubleLayer
   yScaleDoubleLayer = (1 + store.get('yScale'))/2 // double layer of fabric stretches half as much
 
@@ -57,6 +57,22 @@ return part
       nr: 3,
       title: 'gusset',
     })
+    const legOpeningLength =
+    store.get('frontLegOpeningLength') +
+    store.get('backLegOpeningLength') +
+    store.get('gussetSideLength')
+    //stores
+    store.set('legOpeningLength', legOpeningLength)
+    const gussetNotchLength = (legOpeningLength / 2)- store.get('frontLegOpeningLength')
+        points.gussetNotchLeft = new Path()
+        .move(points.frontGussetLeft)
+        .curve_(points.gussetCp1, points.backGussetLeft)
+        .shiftAlong(gussetNotchLength)
+        points.gussetNotchRight = points.gussetNotchLeft.flipX(points.frontGussetLeft.shiftFractionTowards(points.frontGussetRight,0.5))
+        macro('sprinkle', {
+          snippet: 'notch',
+          on: ['gussetNotchLeft', 'gussetNotchRight',]
+        })
   }
 
   // Paperless?

@@ -2,6 +2,8 @@ import freesewing from '@freesewing/core'
 import Ursula from '@freesewing/ursula'
 import plugins from '@freesewing/plugin-bundle'
 import config from '../config'
+import draftFrontBase from './frontBase'
+import draftBackBase from './backBase'
 import draftFront from './front'
 import draftBack from './back'
 import draftGusset from './gusset'
@@ -22,6 +24,8 @@ Unice.prototype.draftElastic = function (part) {
 }
 
 // Attach our own draft methods to the prototype
+Unice.prototype.draftFrontBase = draftFrontBase
+Unice.prototype.draftBackBase = draftBackBase
 Unice.prototype.draftFront = draftFront
 Unice.prototype.draftBack = draftBack
 Unice.prototype.draftGusset = draftGusset
