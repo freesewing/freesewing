@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Shoulderstrap placement"
-
-***
+- - -
 
 ![The shoulder strap placement option on Aaron](./shoulderstrapplacement.svg)
 
