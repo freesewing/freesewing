@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Strap length"
-
-***
+- - -
 
 Controls the length of the strap.
 
