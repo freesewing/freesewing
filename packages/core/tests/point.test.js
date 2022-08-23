@@ -225,3 +225,274 @@ it("Should translate a point", () => {
   expect(p2.x).to.equal(25);
   expect(p2.y).to.equal(70);
 });
+
+it("Should add raise methods to a point", () => {
+  const raise = () => 'hello'
+  const p1 = new Point(10, 20).withRaise(raise);
+  expect(p1.raise()).to.equal('hello');
+});
+
+it("Should raise a warning on invalid point coordinates", () => {
+  const invalid = { x: false, y: false }
+  const raiseX = { warning: () => invalid.x = true }
+  const raiseY = { warning: () => invalid.y = true }
+  const p1 = new Point('a',10).withRaise(raiseX);
+  const p2 = new Point(20, 'b').withRaise(raiseY);
+  expect(invalid.x).to.equal(false);
+  expect(invalid.y).to.equal(false);
+  p1.check()
+  p2.check()
+  expect(invalid.x).to.equal(true);
+  expect(invalid.y).to.equal(true);
+});
+
+it("Should raise a warning if rotation is not a number", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20, 20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  const p3 = p1.rotate('a', p2)
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning if rotating around what is not a point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.rotate(45, 'a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when flipX'ing around what is not a point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20, 20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.flipX('a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when flipY'ing around what is not a point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20, 20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.flipY('a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when shifting with a distance that is not a number", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.shift(0, 'a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when shifting with an angle that is not a number", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.shift('a', 12)
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when shifting towards with a distance that is not a number", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20,20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.shiftTowards(p2, 'a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when shifting towards with a target that is not a point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20,20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.shiftTowards('a', 10)
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when shifting fraction towards with a distance that is not a number", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20,20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.shiftFractionTowards(p2, 'a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when shifting a fraction towards with a target that is not a point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20,20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.shiftFractionTowards('a', 0.1)
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when shifting outowards with a distance that is not a number", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20,20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.shiftOutwards(p2, 'a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when shifting a outowards with a target that is not a point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  const p2 = new Point(20,20).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.shiftOutwards('a', 0.1)
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when translating with an X-delta that is not a number", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.translate('a', 10)
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when translating with an Y-delta that is not a number", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.translate(10, 'a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when sitsOn receives a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.sitsOn('a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when sitsRoughlyOn receives a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new Point(10,10).withRaise(raise);
+  expect(invalid).to.equal(false);
+  try {
+    p1.sitsRoughlyOn('a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should set the data-text property in a chainable way", () => {
+  const p1 = new Point(10,10).setText('hello')
+  expect(p1.attributes.get('data-text')).to.equal('hello');
+});
+
+it("Should set the data-text-class property in a chainable way", () => {
+  const p1 = new Point(10,10).setText('hello', 'fabric')
+  expect(p1.attributes.get('data-text')).to.equal('hello');
+  expect(p1.attributes.get('data-text-class')).to.equal('fabric');
+});
+
+it("Should set the data-circle property in a chainable way", () => {
+  const p1 = new Point(10,10).setCircle('20')
+  expect(p1.attributes.get('data-circle')).to.equal('20');
+});
+
+it("Should set the data-circle-class property in a chainable way", () => {
+  const p1 = new Point(10,10).setCircle('20', 'fabric')
+  expect(p1.attributes.get('data-circle')).to.equal('20');
+  expect(p1.attributes.get('data-circle-class')).to.equal('fabric');
+});
+

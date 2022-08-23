@@ -52,21 +52,6 @@ const renderOptions = (groups, pattern, t) => {
 const PatternOptions = ({ pattern, before=null, after=null }) => {
   const { t } = useTranslation([`o_${pattern}`, 'og'])
 
-  const sortOptions = (options) => {
-    if (typeof options === 'undefined') return []
-    const sorted = []
-    const translated = {}
-    for (const o of options) {
-      const translation = intl.messages['measurements.' + o] || o
-      translated[translation] = o
-    }
-    const order = Object.keys(translated)
-    order.sort()
-    for (const o of order) sorted.push(translated[o])
-
-    return sorted
-  }
-
   return (
     <div>
       {before}

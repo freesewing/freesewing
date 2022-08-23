@@ -45,9 +45,9 @@ A more comprehensive overview of this document's history is [available on GitHub
 
 [2]: /docs/various/right/
 
-[3]: /account/actions/consent/
-
 [v]: /docs/various/privacy/visitor/
+
+[3]: /account/actions/consent/
 
 [s]: /docs/various/privacy/subscriber/
 

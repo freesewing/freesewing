@@ -1,13 +1,6 @@
 import path from 'path'
-import { readdirSync } from 'fs'
 import remarkGfm from 'remark-gfm'
-import { designs, plugins, packages } from '../../../config/software/index.mjs'
-
-const getDirectories = source =>
-  readdirSync(source, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name)
-const pkgs = getDirectories(path.resolve(`../`))
+import { designs, plugins } from '../../../config/software/index.mjs'
 
 /*
  * This mehthod will return the NextJS configuration

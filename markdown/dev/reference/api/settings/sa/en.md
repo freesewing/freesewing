@@ -15,7 +15,7 @@ const pattern = new Brian({
 
 <Note>
 
-This is ignored if [settings.complete](#complete) is `false`
+This is ignored if [settings.complete](/reference/api/settings/complete) is `false`
 
 <Comment by="joost">
 Is it though?

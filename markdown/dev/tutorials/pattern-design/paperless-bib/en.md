@@ -9,7 +9,7 @@ We can get that value of the setting from the `part.shorthand()` method.
 It will be the last shorthand we will put to use:
 
 ```js
-let {
+const {
   Point,
   points,
   Path,

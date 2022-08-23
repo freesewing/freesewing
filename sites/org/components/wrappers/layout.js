@@ -25,7 +25,6 @@ const LayoutWrapper = ({
   const router = useRouter()
   router.events?.on('routeChangeStart', startNavigation)
   router.events?.on('routeChangeComplete', () => app.stopLoading())
-  const slug = router.asPath.slice(1)
   const [collapsePrimaryNav, setCollapsePrimaryNav] = useState(workbench || false)
   const [collapseAltMenu, setCollapseAltMenu] = useState(false)
 

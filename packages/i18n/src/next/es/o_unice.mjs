@@ -3,14 +3,14 @@
  * All edits will be overwritten on the next (pre)build
  */
 const o_unice = {
-  "fabricStretchX.t": "Fabric stretch (horizontal)",
-  "fabricStretchX.d": "Adjust this for more or less stretchy fabrics",
-  "fabricStretchY.t": "Fabric stretch (vertical)",
-  "fabricStretchY.d": "Adjust this for more or less stretchy fabrics",
-  "adjustStretch.t": "Adjust stretch",
-  "adjustStretch.d": "This option you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is",
-  "useCrossSeam.t": "Use crossseam",
-  "useCrossSeam.d": "When enabled, the total height of the pattern pieces combined will match the cross seam length minus the front and back rise. When disabled, the total height depends on the gusset length option."
+  "fabricStretchX.t": "Elasticidad de la tela (horizontal)",
+  "fabricStretchX.d": "Ajusta esto para telas más o menos elásticas",
+  "fabricStretchY.t": "Elasticidad de la tela (vertical)",
+  "fabricStretchY.d": "Ajusta esto para telas más o menos elásticas",
+  "adjustStretch.t": "Ajuste por elasticidad",
+  "adjustStretch.d": "En esta opción puedes poner la elasticidad total del tejido tanto en horizontal como en vertical. Cuando se deshabilita, los valores de elasticidad se usan tal cual",
+  "useCrossSeam.t": "Usa el tiro completo",
+  "useCrossSeam.d": "Cuando se habilita, la altura total de las piezas del patrón combinadas será la misma que la medida del tiro completo menos las elevaciones frontales y traseras. Cuando se deshabilita, la altura total dependerá de la opción del molde medio o pieza de refuerzo."
 }
 
 export default o_unice

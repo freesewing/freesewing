@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import TextOnPath from '../text-on-path'
 import { getProps } from '../utils'
 import { round, formatMm } from 'shared/utils'
@@ -139,7 +138,7 @@ const Curve = (props) => {
   const ops = props.path.ops
   const from = ops[0].to
   const { to, cp1, cp2 } = ops[1]
-  const { topLeft, bottomRight, w, h, size, bbox } = pathDimensions(from, to, cp1, cp2, props.path)
+  const { topLeft, w, h, size, bbox } = pathDimensions(from, to, cp1, cp2, props.path)
   const id = `${props.partName}_${props.pathName}_${props.i}`
 
   const cpProps = {
@@ -189,7 +188,6 @@ const Curve = (props) => {
 }
 
 const MiniPath = props => {
-  const ops = props.path.ops
   const bbox = props.path.boundary()
   const id = `${props.partName}_${props.pathName}_mini}`
   const w = bbox.bottomRight.x - bbox.topLeft.x
@@ -352,7 +350,7 @@ export const Attributes = ({ list }) => list
   ? (
     <ul>
       {Object.keys(list).map(key => (
-        <li><strong>{key}</strong>: {list[key]}</li>
+        <li key={key}><strong>{key}</strong>: {list[key]}</li>
       ))}
     </ul>
   ) : null

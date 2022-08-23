@@ -85,12 +85,12 @@ Point.prototype.angle = function (that) {
 
 /** Rotate this point deg around that point */
 Point.prototype.rotate = function (deg, that) {
-  this.check()
-  that.check()
   if (typeof deg !== 'number')
     this.raise.warning('Called `Point.rotate(deg,that)` but `deg` is not a number')
   if (that instanceof Point !== true)
     this.raise.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
+  this.check()
+  that.check()
   let radius = this.dist(that)
   let angle = this.angle(that)
   let x = that.x + radius * Math.cos(this.deg2rad(angle + deg)) * -1
@@ -135,6 +135,8 @@ Point.prototype.flipY = function (that = false) {
 /** Shifts this point distance in the deg direction */
 Point.prototype.shift = function (deg, distance) {
   this.check()
+  if (typeof deg !== 'number')
+    this.raise.warning('Called `Point.shift` but `deg` is not a number')
   if (typeof distance !== 'number')
     this.raise.warning('Called `Point.shift` but `distance` is not a number')
   let p = this.copy()
@@ -229,6 +231,22 @@ Point.prototype.translate = function (x, y) {
   p.y += y
 
   return p
+}
+
+/** Chainable way to set the data-text property (and optional class) */
+Point.prototype.setText = function (text = '', className=false) {
+  this.attributes.set('data-text', text)
+  if (className) this.attributes.set('data-text-class', className)
+
+  return this
+}
+
+/** Chainable way to set the data-circle property (and optional class) */
+Point.prototype.setCircle = function (radius = false, className=false) {
+  if (radius) this.attributes.set('data-circle', radius)
+  if (className) this.attributes.set('data-circle-class', className)
+
+  return this
 }
 
 export default Point

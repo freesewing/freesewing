@@ -16,7 +16,8 @@ const ThemePicker = ({ app, className, iconOnly=false }) => {
     iconOnly,
     Icon: ThemeIcon,
     title: t(`${app.theme}Theme`),
-    ariaLabel: t('themesPicker')
+    ariaLabel: t('themesPicker'),
+    end: true
   }
   return (<Picker {...pickerProps}>
     {Object.keys(themes).map(theme => (

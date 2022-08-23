@@ -2,7 +2,7 @@
 title: "Kromming armsgat achter"
 ---
 
----
+***
 
 ![Het effect van de kromming armsgat op het patroon](sample.png)
 

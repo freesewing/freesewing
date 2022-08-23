@@ -2,7 +2,7 @@
 title: "Pendiente trasera"
 ---
 
----
+***
 
 ![El efecto de la opción pendiente de la parte trasera sobre el patrón](sample.png)
 

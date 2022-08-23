@@ -1,6 +1,6 @@
 import { Chevron } from 'shared/components/navigation/primary'
 import { optionType } from 'shared/utils'
-import { Li, Ul, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
+import { Li, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 import {values} from 'shared/components/workbench/menu/design-options/option-value'
 import {inputs} from 'shared/components/workbench/menu/design-options/option-input'
@@ -11,10 +11,13 @@ const Option = props => {
   const type = optionType(opt)
   const Input = inputs[type]
   const Value = values[type]
-  const hide = opt.hide && opt.hide(props.draft.settings);
 
-  if (hide) {
-    return <Li></Li>
+  try {
+    const hide = opt.hide && opt.hide(props.draft.settings);
+
+    if (hide) return null
+  } catch(e) {
+    console.warn(`error occurred in hide method for ${ props.option}, so we'll just show it`, e)
   }
 
   if (type === 'bool') {

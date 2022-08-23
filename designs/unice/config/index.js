@@ -10,13 +10,15 @@ const config = {
   code: design,
   name: 'unice',
   inject: {
-    ...ursulaConfig.inject,
     front: 'ursulaFront',
     back: 'ursulaBack',
     gusset: 'ursulaGusset',
+    front2: 'front',
+    back2: 'back',
+    gusset2: 'gusset',    
   },
-  hide: ['ursulaBack', 'ursulaFront', 'ursulaGusset'],
-  parts: [],
+  hide: ['ursulaBack', 'ursulaFront', 'ursulaGusset','front', 'back', 'gusset'],
+  parts: ['front','back','gusset','elastic','front2','back2','gusset2'],
   optionalMeasurements: ['crossSeam','crossSeamFront'],
   measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg','hips','waistToHips'],
   optionGroups: {
@@ -30,6 +32,14 @@ const config = {
       'gussetWidth',
       'gussetLength'
     ],
+  },
+  dependencies: {
+    back: 'front',
+    gusset: 'back',
+    elastic: 'gusset',
+    front2: 'elastic',
+    back2: 'elastic',
+    gusset2: 'elastic',
   },
   options: {
     ...ursulaConfig.options,

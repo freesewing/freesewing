@@ -1,42 +1,39 @@
-import path from 'path'
+import {build} from '../../../packages/i18n/src/prebuild.mjs'
+import {denyList} from '../../../packages/i18n/scripts/prebuilder.mjs'
 import fs from 'fs'
-import { en, de, es, fr, nl, languages } from '../../../packages/i18n/src/next.mjs'
+import path from 'path'
 
-const locales = { en, de, es, fr, nl }
+export const prebuildI18n = async(site, only=false) => {
+  const writeJson = async (locale, namespace, content) => fs.writeFileSync(
+      path.resolve(
+        '..',
+        site,
+        'public',
+        'locales',
+        locale,
+        `${namespace}.json`
+      ),
+      JSON.stringify(content)
+    )
 
-const writeJson = (site, locale, namespace, content) => fs.writeFileSync(
-  path.resolve(
-    '..',
-    site,
-    'public',
-    'locales',
-    locale,
-    `${namespace}.json`
-  ),
-  JSON.stringify(content)
-)
+  const filter = site === 'dev' ? (loc => loc === 'en') : (loc => denyList.indexOf(loc) === -1)
+  const locales = await build(filter, only)
 
-/*
- * Main method that does what needs doing
- */
-export const prebuildI18n = async (site, only=false) => {
-  // Iterate over locales
+  console.log (`copying them to ${site}`, Object.keys(locales))
+
+  const languages = {}
+  Object.keys(locales).forEach(l => languages[l] = locales[l].i18n[l])
   for (const locale in locales) {
     // Only English for dev site
-    if (site !== 'dev' || locale === 'en') {
-      console.log('Generating translation files for', locale)
-      const loc = locales[locale]
-      // Fan out into namespaces
-      for (const namespace in loc) {
-        if (!only || only.indexOf(namespace) !== -1) {
-          writeJson(
-            site, locale, namespace,
-            loc[namespace]
-          )
-        }
-      }
-      writeJson(site, locale, 'locales', languages)
+    const loc = locales[locale]
+    // Fan out into namespaces
+    for (const namespace in loc) {
+      writeJson(
+        locale, namespace,
+        loc[namespace]
+      )
     }
+
+    writeJson(locale, 'locales', languages)
   }
 }
-

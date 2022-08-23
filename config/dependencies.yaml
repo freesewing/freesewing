@@ -16,6 +16,7 @@ _types:
 aaron:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 bee:
   peer:
     '@freesewing/bella': *freesewing
@@ -23,26 +24,27 @@ bent:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 breanna:
   peer:
     '@freesewing/brian': *freesewing
 brian:
   peer:
     '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 carlita:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/carlton': *freesewing
     '@freesewing/plugin-bust': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-mirror': *freesewing
 carlton:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-mirror': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 charlie:
   peer:
     '@freesewing/plugin-bartack': *freesewing
@@ -87,30 +89,10 @@ core:
     'hooks': '^0.3.2'
   dev:
     'nyc': '^15.1.0'
-create-freesewing-pattern:
-  _:
-    'chalk': '^4.1.1'
-    'commander': '^9.0.0'
-    'conf': '^10.0.1'
-    'cp-file': '^9.0.0'
-    'execa': '^5.1.0'
-    'git-config-path': '^2.0.0'
-    'github-username': '^6.0.0'
-    'globby': '^11.0.3'
-    'handlebars': '^4.7.7'
-    'inquirer': '^8.0.0'
-    'make-dir': '^3.1.0'
-    'normalize-path': '^3.0.0'
-    'ora': '^5.4.1'
-    'p-each-series': '^2.2.0'
-    'parse-git-config': '^3.0.0'
-    'validate-npm-package-name': '^3.0.0'
-    'which': '^2.0.2'
-    '@freesewing/i18n': *freesewing
-    '@freesewing/pattern-info': *freesewing
 diana:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 examples:
   peer:
     '@freesewing/plugin-mirror': *freesewing
@@ -126,9 +108,11 @@ holmes:
 huey:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 hugo:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 i18n:
   dev:
     'js-yaml': '^4.1.0'
@@ -138,7 +122,7 @@ jaeger:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-bust': *freesewing
     '@freesewing/plugin-mirror': *freesewing
 models:
   peer:
@@ -206,22 +190,25 @@ plugintest:
 react-pattern:
   peer:
     '@freesewing/i18n': *freesewing
+rehype-jargon:
+  _:
+    'unist-util-visit': '^4.1.0'
+    'hast-util-from-html': '^1.0.0'
 remark-jargon:
   _:
-    'unist-util-visit': '^2.0.3'
+    'unist-util-visit': '^4.1.0'
   peer:
     'remark': '^13.0.0'
     'remark-html': '^13.0.1'
 simon:
   peer:
     '@freesewing/brian': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
+    '@freesewing/plugin-bust': *freesewing
     '@freesewing/plugin-flip': *freesewing
 simone:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/simon': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
     '@freesewing/plugin-flip': *freesewing
     '@freesewing/plugin-bust': *freesewing
 strapi:
@@ -239,6 +226,10 @@ strapi:
 sven:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
+tamiko:
+  peer:
+    '@freesewing/plugin-bust': *freesewing
 teagan:
   peer:
     '@freesewing/brian': *freesewing
@@ -250,9 +241,9 @@ utils:
 wahid:
   peer:
     '@freesewing/brian': *freesewing
-    '@freesewing/plugin-buttons': *freesewing
-    '@freesewing/plugin-round': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 yuri:
   peer:
     '@freesewing/brian': *freesewing
+    '@freesewing/plugin-bust': *freesewing
 

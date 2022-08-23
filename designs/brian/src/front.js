@@ -23,7 +23,8 @@ export default (part) => {
   points.armholePitchCp2 = points.frontArmholePitchCp2
 
   // Adapt the shoulder line according to the relevant options
-  if (options.s3Collar === 0) {
+  // Don't bother with less than 10% as that's just asking for trouble
+  if (options.s3Collar < 0.1 && options.s3Collar > -0.1) {
     points.s3CollarSplit = points.hps
     paths.frontCollar = new Path()
       .move(points.hps)
@@ -60,7 +61,7 @@ export default (part) => {
       .join(new Path().move(points.hps).curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck))
       .setRender(false)
   }
-  if (options.s3Armhole === 0) {
+  if (options.s3Armhole < 0.1 && options.s3Armhole > -0.1) {
     points.s3ArmholeSplit = points.shoulder
     paths.frontArmhole = new Path()
       .move(points.armholePitch)

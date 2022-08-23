@@ -2,7 +2,7 @@
 title: "Diepte armsgat achteraan"
 ---
 
----
+***
 
 ![Het effect van de diepte van het armsgat op het patroon](sample.png)
 

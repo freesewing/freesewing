@@ -127,6 +127,7 @@ export default {
         '17:00',
       ],
       dflt: '06:00',
+      doNotTranslate: true,
     },
     secondaryBustDart: {
       list: [
@@ -148,6 +149,7 @@ export default {
         '17:00',
       ],
       dflt: '13:30',
+      doNotTranslate: true,
     },
 
     // Percentages

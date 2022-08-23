@@ -8,10 +8,6 @@ core:
   - patterns
   - sewing
   - sewing patterns
-create-freesewing-pattern:
-  - development
-  - initializer
-  - react
 components:
   - react
 css-theme:

@@ -5,6 +5,7 @@
 const parts = {
   "back": "Achterzijde",
   "backBase": "Basis rug",
+  "backPocketWelt": "Back pocket welt",
   "base": "Basis",
   "bentBack": "Achterzijde Bent",
   "bentBase": "Basis Bent",

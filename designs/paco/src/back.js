@@ -161,11 +161,12 @@ export default function (part) {
     }
 
     if (sa) {
-      let waistIn = points.styleWaistIn || points.waistIn
-      let hemOffset = options.elasticatedHem ? sa : 4 * sa
+      const waistIn = points.styleWaistIn || points.waistIn
+      const hemSa = options.elasticatedHem ? sa : 4 * sa
       paths.sa = drawInseam()
         .offset(sa)
-        .join(new Path().move(points.floorIn).line(points.floorOut).offset(hemOffset))
+        .line(points.floorIn.shift(180, sa).shift(-90, hemSa))
+        .line(points.floorOut.shift(0, sa).shift(-90, hemSa))
         .join(drawOutseam().offset(sa).trim())
         .join(
           new Path()

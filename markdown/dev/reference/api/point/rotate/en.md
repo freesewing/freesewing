@@ -5,7 +5,7 @@ title: Point.rotate()
 A point's `rotate()` method returns a new `Point` that has been rotated by `angle` degrees
 around the point (`center`) that you pass it.
 
-Just like the result of the [`Point.angle()`](reference/api/point/angle/) method, an angle of 0° points right, and the angle increases counterclockwise.
+Just like the result of the [`Point.angle()`](/reference/api/point/angle/) method, an angle of 0° points right, and the angle increases counterclockwise.
 
 ## Point.rotate() signature
 

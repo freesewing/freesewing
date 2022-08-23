@@ -1,6 +1,5 @@
 import React from 'react'
 import { capitalize } from 'shared/utils.js'
-import Link from 'next/link'
 import { getConfig } from 'shared/designs/index.js'
 import Popout from 'shared/components/popout.js'
 import { useTranslation } from 'next-i18next'

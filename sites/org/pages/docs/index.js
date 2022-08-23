@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import mdxLoader from 'shared/mdx/loader'
@@ -37,7 +36,7 @@ export default DocsPage
  */
 export async function getStaticProps({ params, locale }) {
 
-  const { mdx, intro, toc, frontmatter } = await mdxLoader(
+  const { mdx, frontmatter } = await mdxLoader(
     locale,
     'org',
     ['docs']

@@ -3,6 +3,8 @@
  * All edits will be overwritten on the next (pre)build
  */
 const o_simone = {
+  "bustAlignedButtons.t": "Bust-aligned buttons",
+  "bustAlignedButtons.d": "Optional button spacing strategies to ensure a button at the bustline",
   "bustDartAngle.t": "Hoek busteneep",
   "bustDartAngle.d": "Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst",
   "bustDartLength.t": "Lengte busteneep",

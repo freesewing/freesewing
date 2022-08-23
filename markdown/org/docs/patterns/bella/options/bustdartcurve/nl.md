@@ -2,7 +2,7 @@
 title: "Curve buisneep"
 ---
 
----
+***
 
 ![Het effect van de busteelcurve optie op het patroon](sample.png)
 

@@ -1,6 +1,6 @@
 {
   "name": "freesewing.lab",
-  "version": "2.21.3",
+  "version": "2.22.0-rc.0",
   "private": true,
   "scripts": {
     "dev": "node --experimental-json-modules ../../node_modules/.bin/next dev -p 8000",
@@ -15,6 +15,7 @@
     "serve": "pm2 start npm --name 'dev' -- run start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.5",
     "@mdx-js/loader": "^2.0.0-rc.2",
     "@mdx-js/mdx": "^2.0.0-rc.2",
@@ -29,9 +30,9 @@
     "lodash.get": "^4.4.2",
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
-    "netlify-cli": "^10.3.3",
+    "netlify-cli": "^11.3.0",
     "next": "latest",
-    "next-i18next": "^11.0.0",
+    "next-i18next": "^12.0.0",
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
     "react-instantsearch-dom": "^6.18.0",
@@ -43,11 +44,11 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.21.3"
+    "remark-jargon": "^2.22.0-rc.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "eslint-config-next": "12.1.6",
+    "eslint-config-next": "12.2.5",
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1"

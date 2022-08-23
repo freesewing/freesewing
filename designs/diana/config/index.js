@@ -18,6 +18,7 @@ export default {
       'hipsEase',
       'lengthBonus',
       'sleeveLengthBonus',
+      'draftForHighBust',
     ],
     style: ['drapeAngle', 'shoulderSeamLength'],
     advanced: [
@@ -63,6 +64,7 @@ export default {
     'shoulderToWrist',
     'wrist',
   ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     frontBase: 'base',
     backBase: 'base',
@@ -129,5 +131,8 @@ export default {
     sleevecapQ4Spread1: { pct: 7, min: 4, max: 20 },
     sleevecapQ4Spread2: { pct: 7, min: 4, max: 20 },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }

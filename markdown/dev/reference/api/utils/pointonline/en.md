@@ -13,7 +13,7 @@ bool utils.pointOnLine(
 
 Returns `true` if the point `check` lies on a line segment from point `from` to point `to`.
 
-The fourth parameter controls the precision. See [pointOnBeam](#utilspointonbeam).
+The fourth parameter controls the precision. See [pointOnBeam](/reference/api/utils/pointonbeam).
 
 <Example part="utils_pointonline">
 A Utils.pointOnLine() example

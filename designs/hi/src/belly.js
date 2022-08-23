@@ -9,7 +9,6 @@ export default function (part) {
     Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro,
@@ -18,13 +17,13 @@ export default function (part) {
   let belly01_02d = 224.8451041 * options.size
   let belly02_03d = 108.1988389 * options.size
   let belly03_04d = 216.7485605 * options.size
-  let belly04_05d = 164.7592153 * options.size
+  //let belly04_05d = 164.7592153 * options.size
   let belly01_10d = 129.2449198 * options.size
   let belly01_02a = 25.7020193
   let belly02_03a = 2.2164353
   let belly03_04a = 338.0869319
 
-  let belly04_05a = 198.1877729
+  //let belly04_05a = 198.1877729
   let belly01_10a = 163.4959859
   let belly10_05d = 231.4386252 * options.size
   let belly10_05a = 0
@@ -40,7 +39,7 @@ export default function (part) {
   let belly05cp1d = 48.20828587 * options.size
   // let belly05cp2d =  48.20828587 * options.size
   let belly05cp2d = 68 * options.size
-  let belly10cp1d = 45.42602302 * options.size
+  //let belly10cp1d = 45.42602302 * options.size
   // let belly10cp2d =  45.42602302 * options.size
   let belly10cp2d = 65.42602302 * options.size
 
@@ -56,7 +55,7 @@ export default function (part) {
   let belly05cp1a = 8.1545383
   // let belly05cp2a =   8.1545383
   let belly05cp2a = 5
-  let belly10cp1a = 169.9644604
+  //let belly10cp1a = 169.9644604
   let belly10cp2a = 175.9644604
 
   points.belly10 = new Point(0, 0)

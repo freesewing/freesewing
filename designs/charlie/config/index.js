@@ -71,7 +71,7 @@ export default {
     frontPocketFacing: 'frontPocket',
     backPocketFacing: 'backPocket',
     backPocketInterfacing: 'backPocket',
-    backPocketJet: 'backPocketFacing',
+    backPocketWelt: 'backPocketFacing',
     flyFacing: 'front',
     flyExtension: 'flyFacing',
   },
@@ -91,6 +91,7 @@ export default {
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,
+    fitGuides: false,
     // Lock titan options
     fitKnee: true,
 

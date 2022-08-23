@@ -21,4 +21,3 @@ Utilisez un autre design avec une taille ajustée si vous voulez un pantalon de 
 Évitez également de ramasser un tissu avec beaucoup d'extension, car cela compliquera les choses lorsque vous installez l'élastique. 
 
 </Tip>
-

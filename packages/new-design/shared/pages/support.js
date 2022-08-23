@@ -4,15 +4,14 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from 'site/components/layouts/docs'
 import { useTranslation } from 'next-i18next'
 import DiscordIcon from 'shared/components/icons/discord'
-import Popout from 'shared/components/popout'
 import GithubIcon from 'shared/components/icons/github'
 import CcIcon from 'shared/components/icons/community'
 import HeartIcon from 'shared/components/icons/heart'
 import DocsIcon from 'shared/components/icons/docs'
 
-const gh = `<a class="text-secondary hover:text-secondary-focus" 
+const gh = `<a class="text-secondary hover:text-secondary-focus"
 href="https://github.com/freesewing/freesewing">freesewing/freesewing</a>`
-const fsd = `<a class="text-secondary hover:text-secondary-focus" 
+const fsd = `<a class="text-secondary hover:text-secondary-focus"
 href="https://freesewing.dev">freesewing.dev</a>`
 
 const translations = {
@@ -23,9 +22,9 @@ const translations = {
         of gewoon een leuke tijd te spenderen met andere leden van de FreeSewing gemeenschap.`,
   },
   github: {
-    en: `For bug reports, please create an issue in the ${gh} repository on Github. 
+    en: `For bug reports, please create an issue in the ${gh} repository on Github.
           This is also where you'll find all our source code.`,
-    nl: `Een bug gevonden? Maak dan een issue aan in de ${gh} repository op Github. 
+    nl: `Een bug gevonden? Maak dan een issue aan in de ${gh} repository op Github.
          Dit is ook waar je al de FreeSewing broncode kan vinden.`,
   },
   cc: {
@@ -35,16 +34,9 @@ const translations = {
          vrijwilligers de lopende zaken bespreken. Ook de plannen voor de toekomst en groot en klein
          nieuws over FreeSewing en de gemeenschap komen aan bod.`
   },
-  cc: {
-    en: `Every two weeks, there's the FreeSewing contributor call, which is when we discuss
-        ongoing issues, future plans, and news big and small about FreeSewing and its community.`,
-    nl: `Elke twee weken is er de FreeSewing contributor call (Engelstalig), waar de FreeSewing
-         vrijwilligers de lopende zaken bespreken. Ook de plannen voor de toekomst en groot en klein
-         nieuws over FreeSewing en de gemeenschap komen aan bod.`
-  },
   docs: {
-    en: `Our documentation for developers hosted on ${fsd}. You can find guides and how-to's 
-         there, as well as reference documantation for FreeSewing's core API. 
+    en: `Our documentation for developers hosted on ${fsd}. You can find guides and how-to's
+         there, as well as reference documantation for FreeSewing's core API.
          <br /> <br />
          We stive to provide excellent documentation. So if something is not clear please, let us know.`,
     nl: `Onze documentatie voor ontwikkelaars is beschikbaar op ${fsd}. Je vindt er guides en how-to's,
@@ -75,7 +67,7 @@ const SupportPage = (props) => {
 
       <h2>Github</h2>
       <div className="flex flex-row flex-wrap gap-2">
-        <p className="max-w-3xl" 
+        <p className="max-w-3xl"
           dangerouslySetInnerHTML={{__html: translations.github[app.locale]}}/>
         <a className="btn btn-primary btn-outline btn-lg w-96"
           href="https://github.com/freesewing/freesewing">
@@ -86,7 +78,7 @@ const SupportPage = (props) => {
 
       <h2>{t('docs')}</h2>
       <div className="flex flex-row flex-wrap gap-2">
-        <p className="max-w-3xl" 
+        <p className="max-w-3xl"
           dangerouslySetInnerHTML={{__html: translations.docs[app.locale]}}/>
         <a className="btn btn-primary btn-outline btn-lg w-96"
           href="https://freesewing.dev/">
@@ -97,7 +89,7 @@ const SupportPage = (props) => {
 
       <h2>Contributor Calls</h2>
       <div className="flex flex-row flex-wrap gap-2">
-        <p className="max-w-3xl" 
+        <p className="max-w-3xl"
           dangerouslySetInnerHTML={{__html: translations.cc[app.locale]}}/>
         <a className="btn btn-primary btn-outline btn-lg w-96"
           href="https://github.com/freesewing/freesewing/discussions?discussions_q=label%3A%22%3Atv%3A+fscc%22">
@@ -111,8 +103,8 @@ const SupportPage = (props) => {
         <h2>{t('patrons:supportFreesewing')}</h2>
         <div className="flex flex-row flex-wrap gap-2">
           <div>
-            <p className="max-w-3xl">{t('patrons:patronLead')}</p> 
-            <p className="max-w-3xl">{t('patrons:patronPitch')}</p> 
+            <p className="max-w-3xl">{t('patrons:patronLead')}</p>
+            <p className="max-w-3xl">{t('patrons:patronPitch')}</p>
           </div>
           <a className="btn btn-accent btn-lg w-96">
             <HeartIcon className="fill-accent-content stroke-accent-content w-6 h-6"/>

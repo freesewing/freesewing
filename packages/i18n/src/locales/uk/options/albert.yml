@@ -1,0 +1,20 @@
+---
+backOpening:
+  title: Відкриття спини
+  description: Контролює відкриття на задній частині фартука
+chestDepth:
+  title: Довжина лямки
+  description: Контролює довжину лямки
+lengthBonus:
+  title: Додаткова довжина
+  description: Контролює довжину фартука
+bibLength:
+  title: Довжина нагрудної пройми
+  description: Контролює довжину нагрудної пройми
+bibWidth:
+  title: Ширина нагрудної пройми
+  description: Контролює ширину нагрудної пройми
+strapWidth:
+  title: Ширина лямки
+  description: Контролює ширину лямки
+

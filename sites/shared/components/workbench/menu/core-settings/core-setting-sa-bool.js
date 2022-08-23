@@ -21,11 +21,7 @@ const CoreSettingSaBool = props => {
       <SumButton onClick={toggle}>
         <SumDiv>
           <Deg />
-          <span>{ t('settings:sa.t') }</span>
-          <span className="ml-4 opacity-50">
-            [ { t(`yes`) }/
-            { t(`no`) } ]
-          </span>
+          <span>{ t('settings:sabool.t') }</span>
         </SumDiv>
         <SecText>{t(value ? 'yes' : 'no')}</SecText>
       </SumButton>

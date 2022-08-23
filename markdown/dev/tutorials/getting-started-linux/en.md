@@ -1,6 +1,6 @@
 ---
 title: Getting started on Linux
-order: 10
+order: 15
 for: developers
 icons: 
   - start

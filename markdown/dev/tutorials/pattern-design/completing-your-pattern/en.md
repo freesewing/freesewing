@@ -7,7 +7,7 @@ When we started out, we said a good part boilerplate looks like this:
 
 ```js
 export default function(part) {
-  let { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
+  const { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
   // Design pattern here
 
   // Complete?
@@ -42,7 +42,7 @@ To access the setting, we merely have to tell `part.shorthand()` that we'd like 
 While we're at it, also add `snippets` and `Snippet`, like this:
 
 ```js
-let {
+const {
   Point,
   points,
   Path,

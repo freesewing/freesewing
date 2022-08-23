@@ -1,4 +1,3 @@
-import themes from 'shared/themes/index.js'
 import LocaleIcon from 'shared/components/icons/i18n.js'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
@@ -11,7 +10,8 @@ const LocalePicker = ({ app, iconOnly=false }) => {
   const pickerProps = {
     iconOnly,
     Icon: LocaleIcon,
-    title: t(router.locale)
+    title: t(router.locale),
+    end: true
   }
 
   return (

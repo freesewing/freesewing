@@ -3,16 +3,12 @@ import useApp from 'site/hooks/useApp.js'
 import TimeAgo from 'react-timeago'
 import MdxWrapper from 'shared/components/wrappers/mdx'
 import mdxCompiler from 'shared/mdx/compiler'
-import Markdown from 'react-markdown'
-import Head from 'next/head'
 import PageLink from 'shared/components/page-link.js'
 import Lightbox from 'shared/components/lightbox.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
 import { strapiImage } from 'shared/utils.js'
 import { useTranslation } from 'next-i18next'
-
-const strapi = "https://posts.freesewing.org"
 
 const Maker = ({ maker }) => {
   const { t } = useTranslation(['posts'])

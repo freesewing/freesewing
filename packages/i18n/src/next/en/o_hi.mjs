@@ -5,8 +5,8 @@
 const o_hi = {
   "hungry.t": "Hungry",
   "hungry.d": "Changes the mouth shape to convey Hi is hungry",
-  "nosePointiness.t": "node pointiness",
-  "nosePointiness.d": "Controls how pointing Hi's nose is",
+  "nosePointiness.t": "Nose pointiness",
+  "nosePointiness.d": "Controls how pointy Hi's nose is",
   "aggressive.t": "Aggressive",
   "aggressive.d": "Give Hi pointy teeth, or not",
   "size.t": "Size",

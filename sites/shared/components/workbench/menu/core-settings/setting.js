@@ -1,5 +1,4 @@
 import { Chevron } from 'shared/components/navigation/primary'
-import PctDegOption from 'shared/components/workbench/inputs/design-option-pct-deg'
 import ListSetting from './core-setting-list'
 import OnlySetting from './core-setting-only'
 import MmSetting from './core-setting-mm'
@@ -100,7 +99,6 @@ const Setting = props => {
               ? (
                 <>
                   <span>{t(`settings:sa.t`)}</span>
-                  <span className="ml-4 opacity-50">[ {t(`size`)} ]</span>
                 </>
               )
               : <span>{t(`settings:${props.setting}.t`)}</span>

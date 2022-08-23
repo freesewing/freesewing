@@ -27,6 +27,7 @@ const jaeger = require('@freesewing/jaeger').config
 const lucy = require('@freesewing/lucy').config
 const lunetius = require('@freesewing/lunetius').config
 const noble = require('@freesewing/noble').config
+const octoplushy = require('@freesewing/octoplushy').config
 const paco = require('@freesewing/paco').config
 const penelope = require('@freesewing/penelope').config
 const sandy = require('@freesewing/sandy').config
@@ -75,6 +76,7 @@ const patterns = {
   lucy,
   lunetius,
   noble,
+  octoplushy,
   paco,
   penelope,
   sandy,

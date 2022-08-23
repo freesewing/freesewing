@@ -6,21 +6,6 @@ import PageLink from 'shared/components/page-link.js'
 const PatternMeasurements = ({ pattern, before=null, after=null }) => {
   const { t } = useTranslation(['measurements'])
 
-  const sortMeasurements = (measurements) => {
-    if (typeof measurements === 'undefined') return []
-    let sorted = []
-    let translated = {}
-    for (let m of measurements) {
-      let translation = intl.messages['measurements.' + m] || m
-      translated[translation] = m
-    }
-    let order = Object.keys(translated)
-    order.sort()
-    for (let m of order) sorted.push(translated[m])
-
-    return sorted
-  }
-
   const measurements = {}
   for (const m of configs[pattern].measurements) {
     measurements[m] = {

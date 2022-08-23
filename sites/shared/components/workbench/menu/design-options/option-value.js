@@ -13,7 +13,7 @@ export const values = {
           : 'text-accent'
       }>
         {formatPercentage(val)}
-        {props.design.config.options[props.option]?.toAbs
+        {props.design.config.options[props.option]?.toAbs && props.gist.measurements
           ? ' | ' +formatMm(props.design.config.options[props.option]?.toAbs(val, props.gist))
           : null
         }
@@ -49,9 +49,12 @@ export const values = {
     const dflt = props.design.config.options[props.option].dflt
     const current = props.gist?.options?.[props.option]
     const prefix = `${props.option}.o.`
+    const translate = props.design.config.options[props.option]?.doNotTranslate
+      ? (input) => input
+      : (input) => props.t(prefix+input)
     return (dflt==current || typeof current === 'undefined')
-      ? (<span className="text-secondary-focus">{props.t(prefix+dflt)}</span>)
-      : (<span className="text-accent">{props.t(prefix+current)}</span>)
+      ? (<span className="text-secondary-focus">{translate(dflt)}</span>)
+      : (<span className="text-accent">{translate(current)}</span>)
   },
   deg: props => {
     const dflt = props.design.config.options[props.option].deg

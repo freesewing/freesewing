@@ -2,7 +2,7 @@
 title: "Overwijdte bustenwijdte"
 ---
 
----
+***
 
 ![Het effect van de optionele bustewijdte optie op het patroon](sample.png)
 

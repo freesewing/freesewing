@@ -1,7 +1,7 @@
 # Change log for: @freesewing/new-design
 
 
-## 2.21.3 (2022-07-03)
+## 2.21.3 (2022-07-02)
 
 ### Changed
 

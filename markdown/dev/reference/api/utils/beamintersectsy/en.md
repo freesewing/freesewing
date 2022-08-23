@@ -6,7 +6,7 @@ title: beamIntersectsY()
 Point | false utils.beamIntersectsY(Point A, Point B, float Y)
 ```
 
-Finds the intersection between an endless line and a given Y-value. Returns a [Point](#point) object
+Finds the intersection between an endless line and a given Y-value. Returns a [Point](/reference/api/point) object
 for the intersection, or `false` there is no intersection.
 
 <Example part="utils_beamintersectsy">

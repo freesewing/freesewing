@@ -183,6 +183,15 @@ it("Should shift along a line", () => {
   expect(a.paths.line.shiftAlong(20).y).to.equal(20);
 });
 
+it("Should not shift along a path/line if we end up on the end point", () => {
+  let pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  let a = pattern.parts.a;
+
+  a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(10, 0));
+  expect(a.paths.line.shiftAlong(10).x).to.equal(10);
+});
+
 it("Should shift along lines", () => {
   let pattern = new freesewing.Pattern();
   pattern.parts.a = new pattern.Part();
@@ -796,3 +805,366 @@ it("Should move along a path even if it lands just on a joint", () => {
   a.points.test = a.paths.curve.shiftAlong(121.36690836797631)
   expect(a.points.test).to.be.instanceOf(a.Point)
 })
+
+it("Should add raise methods to a path", () => {
+  const raise = () => 'hello'
+  const p1 = new freesewing.Path(10, 20).withRaise(raise);
+  expect(p1.raise()).to.equal('hello');
+});
+
+it("Should add raise methods to a path", () => {
+  const raise = () => 'hello'
+  const p1 = new freesewing.Path().withRaise(raise);
+  expect(p1.raise()).to.equal('hello');
+});
+
+it("Should set render to true/false", () => {
+  const p1 = new freesewing.Path().setRender(false)
+  expect(p1.render).to.equal(false);
+});
+
+it("Should set class with setClass", () => {
+  const p1 = new freesewing.Path().setClass('fabric')
+  p1.setClass()
+  expect(p1.attributes.get('class')).to.equal('fabric');
+});
+
+it("Should raise a warning when moving to a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move('a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a line to a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  expect(invalid).to.equal(false);
+  try {
+    p1.line('a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a curve to a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  const a = new freesewing.Point(0,0)
+  const b = new freesewing.Point(10,10)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move(b).curve(a, b, 'c')
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a curve with a Cp1 that is a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  const a = new freesewing.Point(0,0)
+  const b = new freesewing.Point(10,10)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move(b).curve(a, 'x', b)
+  }
+  catch (err) {
+    expect(''+err).to.contain("check is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a curve with a Cp1 that is a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  const b = new freesewing.Point(10,10)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move(b).curve('a', b, b)
+  }
+  catch (err) {
+    expect(''+err).to.contain("copy is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a curve with a Cp2 that is a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  const b = new freesewing.Point(10,10)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move(b).curve(b, 'a', b)
+  }
+  catch (err) {
+    expect(''+err).to.contain("copy is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a _curve with a To that is a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  const b = new freesewing.Point(10,10)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move(b)._curve(b, 'a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("copy is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a _curve with a Cp2 that is a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  const b = new freesewing.Point(10,10)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move(b)._curve('a', b)
+  }
+  catch (err) {
+    expect(''+err).to.contain("copy is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a curve_ with a To that is a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  const b = new freesewing.Point(10,10)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move(b).curve_(b, 'a')
+  }
+  catch (err) {
+    expect(''+err).to.contain("copy is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when drawing a curve_ with a Cp2 that is a non-point", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const p1 = new freesewing.Path().withRaise(raise)
+  const b = new freesewing.Point(10,10)
+  expect(invalid).to.equal(false);
+  try {
+    p1.move(b).curve_('a', b)
+  }
+  catch (err) {
+    expect(''+err).to.contain("copy is not a function")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should add a noop operation", () => {
+  const p1 = new freesewing.Path().noop()
+  expect(p1.ops.length).to.equal(1);
+  expect(p1.ops[0].type).to.equal('noop');
+});
+
+it("Should handle an insop operation", () => {
+  const a = new freesewing.Point(0,0)
+  const b = new freesewing.Point(10,10)
+  const p1 = new freesewing.Path().move(a).line(b)
+  const p2 = new freesewing.Path().noop('test').insop('test', p1)
+  expect(p2.ops.length).to.equal(2);
+  expect(p1.ops[0].type).to.equal('move');
+  expect(p1.ops[1].type).to.equal('line');
+});
+
+it("Should raise a warning when an insop operation used an falsy ID", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const a = new freesewing.Point(0,0)
+  const b = new freesewing.Point(10,10)
+  const p1 = new freesewing.Path().move(a).line(b)
+  expect(invalid).to.equal(false);
+  const p2 = new freesewing.Path().withRaise(raise).noop('test').insop(false, p1)
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when an insop operation used an falsy ID", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  const a = new freesewing.Point(0,0)
+  const b = new freesewing.Point(10,10)
+  const p1 = new freesewing.Path().move(a).line(b)
+  expect(invalid).to.equal(false);
+  try {
+    new freesewing.Path().withRaise(raise).noop('test').insop('test')
+  }
+  catch (err) {
+    expect(''+err).to.contain("Cannot read property 'ops")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when setting an attribute without a name", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  expect(invalid).to.equal(false);
+  const p1 = new freesewing.Path().withRaise(raise).attr()
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when setting an attribute without a value", () => {
+  let invalid = false
+  const raise = { warning: () => invalid = true }
+  expect(invalid).to.equal(false);
+  const p1 = new freesewing.Path().withRaise(raise).attr('test')
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when calling offset without a distance", () => {
+  const pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  const { Path, Point, points, paths } = pattern.parts.a.shorthand()
+  points.a = new Point(0,0)
+  points.b = new Point(10,10)
+  paths.a = new Path().move(points.a).line(points.b)
+  paths.b = paths.a.offset()
+  expect(pattern.events.error.length).to.equal(1)
+  expect(pattern.events.error[0]).to.equal("Called `Path.offset(distance)` but `distance` is not a number")
+});
+
+it("Should raise a warning when calling join without a path", () => {
+  const pattern = new freesewing.Pattern();
+  pattern.parts.a = new pattern.Part();
+  const { Path, Point, points, paths } = pattern.parts.a.shorthand()
+  points.a = new Point(0,0)
+  points.b = new Point(10,10)
+  try {
+    paths.a = new Path().move(points.a).line(points.b).join()
+  }
+  catch (err) {
+    expect(''+err).to.contain("Cannot read property 'ops")
+  }
+  expect(pattern.events.error.length).to.equal(1)
+  expect(pattern.events.error[0]).to.equal("Called `Path.join(that)` but `that` is not a `Path` object")
+});
+
+it("Should raise a warning when calling start on a path without drawing operations", () => {
+  let invalid = false
+  const raise = { error: () => invalid = true }
+  expect(invalid).to.equal(false);
+  try {
+    new freesewing.Path().withRaise(raise).start()
+  }
+  catch (err) {
+    expect(''+err).to.contain("TypeError: Cannot read property")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when calling end on a path without drawing operations", () => {
+  let invalid = false
+  const raise = { error: () => invalid = true }
+  expect(invalid).to.equal(false);
+  try {
+    new freesewing.Path().withRaise(raise).end()
+  }
+  catch (err) {
+    expect(''+err).to.contain("TypeError: Cannot read property")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when calling shiftAlong but distance is not a number", () => {
+  let invalid = false
+  const raise = { error: () => invalid = true }
+  expect(invalid).to.equal(false);
+  new freesewing.Path()
+    .withRaise(raise)
+    .move(new freesewing.Point(0,0))
+    .line(new freesewing.Point(10,10))
+    .shiftAlong()
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when calling shiftFractionalong but fraction is not a number", () => {
+  let invalid = false
+  const raise = {
+    error: () => invalid = true,
+    warning: () => invalid = true,
+  }
+  expect(invalid).to.equal(false);
+  new freesewing.Path()
+    .withRaise(raise)
+    .move(new freesewing.Point(0,0).withRaise(raise))
+    .line(new freesewing.Point(10,10).withRaise(raise))
+    .line(new freesewing.Point(10,20).withRaise(raise))
+    .shiftFractionAlong()
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when splitting a path on a non-point", () => {
+  let invalid = false
+  const raise = {
+    error: () => invalid = true,
+    warning: () => invalid = true,
+  }
+  const from = new freesewing.Point(0,0).withRaise(raise)
+  const cp1 =  new freesewing.Point(10,0).withRaise(raise)
+  const cp2 =  new freesewing.Point(90,0).withRaise(raise)
+  const to =   new freesewing.Point(100,0).withRaise(raise)
+  const path = new freesewing.Path()
+    .withRaise(raise)
+    .move(from)
+    .curve(cp1, cp2, to)
+    .line(from)
+    .line(cp1)
+  try {
+    path.split()
+  }
+  catch (err) {
+    expect(''+err).to.contain("TypeError: Cannot read property")
+  }
+  expect(invalid).to.equal(true);
+});
+
+it("Should raise a warning when splitting a path on a non-point", () => {
+  let invalid = false
+  const raise = {
+    error: () => invalid = true,
+    warning: () => invalid = true,
+  }
+  const from = new freesewing.Point(0,0).withRaise(raise)
+  const cp1 =  new freesewing.Point(10,0).withRaise(raise)
+  const cp2 =  new freesewing.Point(90,0).withRaise(raise)
+  const to =   new freesewing.Point(100,0).withRaise(raise)
+  const path = new freesewing.Path()
+    .withRaise(raise)
+    .move(from)
+    .curve(cp1, cp2, to)
+    .line(from)
+  try {
+    path.split()
+  }
+  catch (err) {
+    expect(''+err).to.contain("TypeError: Cannot read property")
+  }
+  expect(invalid).to.equal(true);
+});

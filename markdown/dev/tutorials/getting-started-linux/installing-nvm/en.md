@@ -14,16 +14,19 @@ the node.js website, or from a package provided by your linux distribution:
 - You can easily switch between different Node versions
 - Everything gets installed in your home folder, avoiding permission problems
 
-To setup nvm, run the following command in a terminal:
+To setup nvm, [follow the install instructions in the nvm
+README](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+The TL;DR: is to run the following command in a terminal:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 If you don't have `curl` on your system, here's an alternative approach using `wget`:
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 After the script is completed, try running the following command:

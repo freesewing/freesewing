@@ -22,32 +22,34 @@ const Difficulty = ({ score=1 }) => {
   return icons
 }
 
+const loadDesign = async (design, setExamples) => {
+  // Strapi filtering syntax
+  const url = `${strapiHost}/showcaseposts?_locale=en&_sort=date:DESC` +
+    `&_where[_or][0][design1_eq]=${design}` +
+    `&_where[_or][1][design2_eq]=${design}` +
+    `&_where[_or][2][design3_eq]=${design}` +
+    `&_limit=5`
+  await fetch(url)
+    .then(response => response.json())
+    .then(data => setExamples(data.map(post => ({
+      slug: `/showcase/${post.slug}`,
+      img: `${strapiHost}${post.image.formats.thumbnail.url}`,
+      title: post.title
+    }))))
+    .catch(err => console.log(err))
+}
 
 const Design = ({ design }) => {
   const { t } = useTranslation(['patterns'])
   const {
-    code="Anonymous",
     difficulty=3,
   } = configs[design]
 
   const [examples, setExamples] = useState([])
 
-  useEffect(async () => {
-    // Strapi filtering syntax
-    const url = `${strapiHost}/showcaseposts?_locale=en&_sort=date:DESC` +
-      `&_where[_or][0][design1_eq]=${design}` +
-      `&_where[_or][1][design2_eq]=${design}` +
-      `&_where[_or][2][design3_eq]=${design}` +
-      `&_limit=5`
-    await fetch(url)
-      .then(response => response.json())
-      .then(data => setExamples(data.map(post => ({
-        slug: `/showcase/${post.slug}`,
-        img: `${strapiHost}${post.image.formats.thumbnail.url}`,
-        title: post.title
-      }))))
-      .catch(err => console.log(err))
-  }, [ design ])
+  useEffect(() => {
+    loadDesign(design, setExamples)
+  }, [ design, setExamples ])
 
   return (
     <div className={`

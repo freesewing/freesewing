@@ -1,6 +1,7 @@
 import PctDegOption from 'shared/components/workbench/inputs/design-option-pct-deg'
 import CountOption from 'shared/components/workbench/inputs/design-option-count'
 import ListOption from 'shared/components/workbench/inputs/design-option-list'
+import Popout from 'shared/components/popout'
 
 export const Tmp = props => <p>not yet</p>
 
@@ -9,6 +10,6 @@ export const inputs = {
   count: CountOption,
   deg: props => (<PctDegOption {...props} type='deg' />),
   list: ListOption,
-  mm: (<p>Mm options are not supported. Please report this.</p>),
+  mm: () => <Popout fixme compact>Mm options are deprecated. Please report this</Popout>,
   constant: Tmp,
 }

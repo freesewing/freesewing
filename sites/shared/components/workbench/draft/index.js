@@ -1,9 +1,8 @@
 import SvgWrapper from './svg-wrapper'
 import Error from './error.js'
-import Robot from 'shared/components/robot/index.js'
 
 const LabDraft = props => {
-  const { app, draft, design, gist, updateGist, unsetGist, showInfo, feedback, hasRequiredMeasurements } = props
+  const { app, draft, gist, updateGist, unsetGist, showInfo, feedback, hasRequiredMeasurements } = props
 
   if (!draft || !hasRequiredMeasurements) return null
 
@@ -28,7 +27,7 @@ const LabDraft = props => {
 
   return (
     <>
-      {(!patternProps || patternProps.events.error.length > 0)
+      {(!patternProps || patternProps.events?.error?.length > 0)
         ? <Error {...{ draft, patternProps, updateGist }} />
         : null
       }

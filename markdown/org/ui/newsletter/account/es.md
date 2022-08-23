@@ -2,8 +2,8 @@
 title: Administra tu suscripción en tu cuenta
 ---
 
-As a registered user, you can [manage your newsletter settings in your account][1].
+Como usuario registrado, puedes [gestionar la configuración de tu boletín de noticias en tu cuenta][1].
 
-If you'd like to sign up a different email address as the one linked to your account, you can do so below.
+Si quieres registrarte con una cuenta de correo diferente a la asociada en tu cuenta, lo puedes hacer más abajo.
 
 [1]: /account/settings/newsletter/

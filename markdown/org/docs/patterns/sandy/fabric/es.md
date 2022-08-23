@@ -16,7 +16,7 @@ Basically any fabric can be used to make a circle skirt you just need to find on
 
 <Tip>
 
-Keep in mind the weight, drape and body of the fabric. Do you want the skirt to hang? or do you want it to swoosh? do you want it to be rigid or flowy?
+Keep in mind the weight, drape and body of the fabric. Do you want the skirt to hang? or do you want it to swoosh? do you want it to be rigid or flowy? or do you want it to swoosh? do you want it to be rigid or flowy?
 Another thing to look out for is gathering, if you are making a gathered Sandy you will need to make sure your fabric can gather nicely or be pleated if you prefer.
 Circle skirts can look very different dependant on these things and whether you are making a full, half or quarter circle skirt.
 
@@ -24,7 +24,7 @@ Circle skirts can look very different dependant on these things and whether you 
 
 <Note>
 
-Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and see some finished Sandy's made by our wonderful community.
+Need some inspo? Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and see some finished Sandy's made by our wonderful community.
 
 </Note>
 

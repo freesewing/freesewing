@@ -2,7 +2,7 @@
 title: "Profondeur d'emmanchure"
 ---
 
----
+***
 
 ![L'effet de l'option de profondeur de blindage sur le patron](sample.png)
 

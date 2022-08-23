@@ -1,0 +1,10 @@
+---
+height:
+  title: Висота
+  description: Контролює висоту данної маски
+length:
+  title: Довжина
+  description: Контролює довжину маски
+curve:
+  title: Крива
+  description: Контролює вигин верхнього краю маски

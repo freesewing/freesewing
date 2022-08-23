@@ -76,7 +76,7 @@ const renderPrevious = node => node
   ? (
     <div className="flex flex-row gap-2 items-center">
       <LeftIcon className="w-8 h-8"/>
-      <Link href={'/'+node?.__slug}>
+      <Link href={'/'+node.__slug}>
         <a className="text-secondary">{node.__linktitle}</a>
       </Link>
     </div>
@@ -85,7 +85,7 @@ const renderPrevious = node => node
 const renderNext = node => node
   ? (
     <div className="flex flex-row gap-2 items-center">
-      <Link href={'/'+node?.__slug}>
+      <Link href={'/'+node.__slug}>
         <a className="text-right">{node.__linktitle}</a>
       </Link>
       <RightIcon className="w-8 h-8"/>

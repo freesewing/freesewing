@@ -1,6 +1,5 @@
 import { Chevron } from 'shared/components/navigation/primary'
 import { Ul, Li, Details, Summary, SumDiv, NoSumDiv, Deg } from 'shared/components/workbench/menu'
-import { round } from 'shared/utils'
 
 const XrayAttributes = ({ attr=false, t }) => {
   if (!attr || !attr.list || Object.keys(attr.list).length < 1) return null

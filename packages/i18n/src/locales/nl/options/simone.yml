@@ -1,4 +1,11 @@
 ---
+bustAlignedButtons:
+  title: Bust-aligned buttons
+  description: Optional button spacing strategies to ensure a button at the bustline
+  options:
+    even: Even spacing
+    split: Split spacing
+    disabled: Disabled
 bustDartAngle:
   title: Hoek busteneep
   description: Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst

@@ -1,31 +1,27 @@
 export default function (part) {
-  let {
-    utils,
-    store,
+  const {
     sa,
-    Point,
     points,
     Path,
     paths,
     Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro,
   } = part.shorthand()
 
   if( options.dartPosition != 'shoulder' ) {
-    return part 
+    return part
   }
-  
+
   paths.dart = new Path()
     .move(points.shoulderDart)
     .curve(points.shoulderDart, points.shoulderDartCpUp, points.dartTip)
     .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)
     .setRender(false)
-  
+
   paths.outsideSeam = new Path()
     .move(points.dartBottomRight)
     .line(points.waistSide)
@@ -36,10 +32,10 @@ export default function (part) {
     .join(paths.dart)
     .close()
     .attr('class', 'fabric')
-  
+
   if (complete) {
     snippets.dartTip = new Snippet('notch', points.dartTip)
-  
+
     points.titleAnchor = points.dartBottomRight.shiftFractionTowards( points.waistSide, .1 ).shiftFractionTowards( points.shoulder, .3 )
     macro('title', {
       at: points.titleAnchor,
@@ -120,6 +116,6 @@ export default function (part) {
       })
     }
   }
-  
+
   return part
 }

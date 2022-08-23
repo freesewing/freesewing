@@ -2,7 +2,7 @@
 title: "Schouderbreedte vooraan"
 ---
 
----
+***
 
 ![Het effect van de bovenste breedte op het patroon](sample.png)
 

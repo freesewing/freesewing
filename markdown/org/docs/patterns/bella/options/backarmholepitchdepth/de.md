@@ -2,7 +2,7 @@
 title: "Rückenarmloch-Tiefe"
 ---
 
----
+***
 
 ![Der Effekt der Option Rückenarmlochtiefe auf das Schnittmuster](sample.png)
 

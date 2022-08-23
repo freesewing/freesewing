@@ -1,6 +1,5 @@
 export default function (part) {
-  let {
-    utils,
+  const {
     store,
     sa,
     Point,
@@ -10,7 +9,6 @@ export default function (part) {
     Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro,
@@ -171,7 +169,7 @@ export default function (part) {
         to: points.hps,
         y: points.hps.y - sa - 15,
       })
-    }  
+    }
   }
 
   return part

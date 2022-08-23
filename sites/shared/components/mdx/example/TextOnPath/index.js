@@ -3,7 +3,6 @@ import { useTranslation } from 'next-i18next'
 
 const TextOnPath = (props) => {
   const { t } = useTranslation(['plugin'])
-  const text = []
   // Handle translation
   let translated = ''
   for (let string of props.path.attributes.getAsArray('data-text')) {

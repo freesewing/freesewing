@@ -8,10 +8,6 @@ import Docs from 'site/components/layouts/docs'
 // Add feeds
 import Feeds from 'site/components/feeds.js'
 
-const layouts = {
-  docs: Docs,
-}
-
 /* This component should wrap all page content */
 const PageWrapper= ({
   title="FIXME: No title set",

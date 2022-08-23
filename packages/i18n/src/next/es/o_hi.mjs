@@ -3,14 +3,14 @@
  * All edits will be overwritten on the next (pre)build
  */
 const o_hi = {
-  "hungry.t": "Hungry",
-  "hungry.d": "Changes the mouth shape to convey Hi is hungry",
-  "nosePointiness.t": "node pointiness",
-  "nosePointiness.d": "Controls how pointy Hi's nose is",
-  "aggressive.t": "Aggressive",
-  "aggressive.d": "Give Hi pointy teeth, or not",
-  "size.t": "Size",
-  "size.d": "Sharks come in all sizes, and so does Hi"
+  "hungry.t": "Hambre",
+  "hungry.d": "Cambios en la forma de la boca para expresar que Hi tiene hambre",
+  "nosePointiness.t": "Agudeza de la nariz",
+  "nosePointiness.d": "Controla cómo de puntiaguda es la nariz de Hi",
+  "aggressive.t": "Agresividad",
+  "aggressive.d": "Ponle o no dientes puntiagudos a Hi",
+  "size.t": "Tamaño",
+  "size.d": "Los tiburones vienen en todos los tamaños, y Hi también"
 }
 
 export default o_hi

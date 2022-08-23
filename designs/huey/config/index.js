@@ -18,6 +18,7 @@ export default {
       'shoulderEase',
       'hipsEase',
       'ribbingStretch',
+      'draftForHighBust',
     ],
     style: [
       'lengthBonus',
@@ -38,6 +39,7 @@ export default {
     advanced: brianConfig.optionGroups.advanced,
   },
   measurements: [...brianConfig.measurements, 'head', 'hips'],
+  optionalMeasurements: brianConfig.optionalMeasurements,
   dependencies: {
     backBase: 'base',
     frontBase: 'backBase',

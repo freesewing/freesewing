@@ -1,6 +1,6 @@
 import { config } from './config.mjs'
 import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises'
-import { join, resolve, dirname, extname } from 'path'
+import { join, dirname } from 'path'
 import mustache from 'mustache'
 import rdir from 'recursive-readdir'
 import chalk from 'chalk'
@@ -11,9 +11,7 @@ import axios from 'axios'
 import { fileURLToPath } from 'url';
 
 // Current working directory
-const cwd = __dirname
-  ? __dirname
-  : dirname(fileURLToPath(import.meta.url))
+const cwd = dirname(fileURLToPath(import.meta.url))
 
 const nl = "\n"
 const tab = "  "

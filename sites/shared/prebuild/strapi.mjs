@@ -70,11 +70,6 @@ export const prebuildStrapi = async (site) => {
   const types = ['blog']
   if (site === 'org') types.push('showcase')
 
-  // Languages
-  const languages = (site === 'dev')
-      ? [ 'en' ]
-      : ['en', 'es', 'de', 'fr', 'nl']
-
   const posts = {}
   const authors = {}
 

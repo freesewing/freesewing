@@ -2,7 +2,7 @@
 title: "Ancho del hombro frontal"
 ---
 
----
+***
 
 ![El efecto de la opción de ancho del hombro frontal en el patrón](sample.png)
 
