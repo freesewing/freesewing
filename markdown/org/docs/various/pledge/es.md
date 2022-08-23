@@ -67,5 +67,3 @@ La promesa es hecha y ejecutada por el mantenedor de FreeSewing (joost). Puedes 
 If you'd like to support FreeSewing, you can [do so by becoming a patron](/patrons/join/)
 
 </Tip>
-
-
