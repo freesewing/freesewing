@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Front pocket facing"
-
-***
+- - -
 
 Controls the boundary between the front pocket facing and pocket bag.
 
