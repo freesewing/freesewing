@@ -1,6 +1,12 @@
 # Change log for: @freesewing/yuri
 
 
+## 2.22.0 (2022-08-23)
+
+### Added
+
+ - Support drafting for high bust
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

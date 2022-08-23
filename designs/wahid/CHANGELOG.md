@@ -1,6 +1,18 @@
 # Change log for: @freesewing/wahid
 
 
+## 2.22.0 (2022-08-23)
+
+### Added
+
+ - Support drafting for high bust
+
+### Fixed
+
+ - Prevent facing/lining overlap when shoulders get very narrow fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
+ - Fixed dependency issue with pocketFacing part
+ - Added grainlines
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

@@ -1,7 +1,19 @@
 # Change log for: FreeSewing (global)
 
 
-## Unreleased
+## 2.22.0 (2022-08-23)
+
+### octoplushy
+
+#### Added
+
+ - Octoplushy is a new design for an octopus or squid plushy
+
+### bent
+
+#### Added
+
+ - Support drafting for high bust
 
 ### breanna
 
@@ -11,11 +23,27 @@
 
 ### brian
 
+#### Added
+
+ - Support drafting for high bust
+
 #### Fixed
 
  - Make s3 options sticky to zero below 10% to avoid path split issues. Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
 
+### titan
+
+#### Added
+
+ - Added additional notches to aid alignment
+
 ### aaron
+
+#### Added
+
+ - Support drafting for high bust
+
+### carlton
 
 #### Added
 
@@ -33,6 +61,18 @@
 
  - Renamed back pocket jet to back pocket welt
 
+### diana
+
+#### Added
+
+ - Support drafting for high bust
+
+### huey
+
+#### Added
+
+ - Support drafting for high bust
+
 ### hugo
 
 #### Added
@@ -45,7 +85,15 @@
 
  - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
 
+#### Fixed
+
+ - Make hem allowance taper outwards to match the leg Fixes [#2350](https://github.com/freesewing/freesewing/issues/2350)
+
 ### simon
+
+#### Added
+
+ - Support drafting for high bust
 
 #### Fixed
 
@@ -64,6 +112,24 @@
  - Don't do a negative FBA from there's no need for an FBA Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
  - Duplicate config rather than mutating the imported simon config
 
+### sven
+
+#### Added
+
+ - Support drafting for high bust
+
+### tamiko
+
+#### Added
+
+ - Support drafting for high bust
+
+### teagan
+
+#### Added
+
+ - Support drafting for high bust
+
 ### theo
 
 #### Changed
@@ -72,10 +138,21 @@
 
 ### wahid
 
+#### Added
+
+ - Support drafting for high bust
+
 #### Fixed
 
  - Prevent facing/lining overlap when shoulders get very narrow fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
  - Fixed dependency issue with pocketFacing part
+ - Added grainlines
+
+### yuri
+
+#### Added
+
+ - Support drafting for high bust
 
 ### plugin-title
 

@@ -121,6 +121,7 @@ export const config = {
       "shared/components/wrappers/toc.js",
       "shared/components/wrappers/workbench.js",
       "shared/components/mdx/index.js",
+      "shared/components/mdx/tabs.js",
       "shared/components/workbench/default-settings.js",
       "shared/components/workbench/draft/circle/index.js",
       "shared/components/workbench/draft/defs/index.js",

@@ -1,17 +1,47 @@
-Unreleased:
+2.22.0:
+  date: 2022-08-23
+
   Added:
     aaron:
+      - Support drafting for high bust
+    bent:
+      - Support drafting for high bust
+    brian:
+      - Support drafting for high bust
+    carlton:
+      - Support drafting for high bust
+    diana:
+      - Support drafting for high bust
+    huey:
       - Support drafting for high bust
     hugo:
       - Support drafting for high bust
         Closes [#802](https://github.com/freesewing/freesewing/issues/802)
+    jeager:
+      - Support drafting for high bust
+    octoplushy:
+      - Octoplushy is a new design for an octopus or squid plushy
     plugin-title:
       - Added support for removing the title via a macro call
       - Added a render timestamp to the title
+    simon:
+      - Support drafting for high bust
     simone:
       - Added Bust-aligned buttons option and functionality.
         Closes [#2154] (https://github.com/freesewing/freesewing/issues/2154)
       - Added a notch at the center front bustline.
+    sven:
+      - Support drafting for high bust
+    tamiko:
+      - Support drafting for high bust
+    teagan:
+      - Support drafting for high bust
+    titan:
+      - Added additional notches to aid alignment
+    wahid:
+      - Support drafting for high bust
+    yuri:
+      - Support drafting for high bust
 
   Changed:
     charlie:
@@ -31,6 +61,9 @@ Unreleased:
     cathrin:
       - Removed seam allowance from Part1a foldline.
         Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
+    paco:
+      - Make hem allowance taper outwards to match the leg
+        Fixes [#2350](https://github.com/freesewing/freesewing/issues/2350)
     simon:
       - Fix issue with boxPleat and yoke
         Fixes [#2400](https://github.com/freesewing/freesewing/issues/2400)
@@ -44,6 +77,7 @@ Unreleased:
       - Prevent facing/lining overlap when shoulders get very narrow
         fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
       - Fixed dependency issue with pocketFacing part
+      - Added grainlines
 
 2.21.3:
   date: 2022-07-02
