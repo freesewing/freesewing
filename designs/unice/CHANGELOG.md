@@ -1,12 +1,6 @@
 # Change log for: @freesewing/unice
 
 
-## 2.21.0 (2022-06-27)
-
-### Added
-
- - Unice is an underwear pattern
-
 
 This is the **initial release**, and the start of this change log.
 

@@ -3,7 +3,7 @@
 import chai from 'chai'
 import models from '@freesewing/models'
 import patterns from '@freesewing/pattern-info'
-import Pattern from './dist/index.mjs'
+import Unice from './dist/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/patterns/config.mjs'
@@ -12,10 +12,11 @@ import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
 
 const expect = chai.expect
 
+
 // Test config
 testPatternConfig(
-  "unice",
-  new Pattern(),
+  'unice',
+  new Unice(),
   expect,
   models,
   patterns
@@ -23,8 +24,8 @@ testPatternConfig(
 
 // Test drafting
 testPatternDrafting(
-  "unice",
-  Pattern,
+  'unice',
+  Unice,
   expect,
   models,
   patterns
@@ -32,8 +33,8 @@ testPatternDrafting(
 
 // Test sampling
 testPatternSampling(
-  "unice",
-  Pattern,
+  'unice',
+  Unice,
   expect,
   models,
   patterns

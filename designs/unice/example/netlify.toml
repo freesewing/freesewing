@@ -1,5 +1,5 @@
 [build]
-  base = "designs/unice/example"
+  base = "packages/unice/example"
   publish = "build"
   command = "npm run build"
 
