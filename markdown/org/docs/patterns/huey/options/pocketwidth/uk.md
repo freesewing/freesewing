@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Pocket width"
-
-***
+- - -
 
 ![Pocket width](./pocketwidth.svg)
 
