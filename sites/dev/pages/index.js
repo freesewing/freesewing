@@ -49,6 +49,7 @@ const HomePage = (props) => {
               >
                 FreeSewing
                 <span className="font-light">.dev</span>
+                <span className="pl-2 text-2xl text-accent">v2</span>
               </h1>
               <h2
                 className={`
@@ -58,7 +59,7 @@ const HomePage = (props) => {
                   lg:max-w-1/2 lg:text-4xl xl:pr-0 `}
                 style={{ textShadow: '1px 1px 3px #000', color: 'white' }}
               >
-                Documentation for FreeSewing contributors & developers
+                Documentation for FreeSewing <small>[v2]</small> contributors & developers
               </h2>
             </div>
             <Icons app={app}  active='/'
@@ -80,6 +81,25 @@ const HomePage = (props) => {
           </div>
         </section>
       <div>
+      <div className="m-auto max-w-prose pt-8">
+        <Popout warning>
+          <h3>This documentation is for version 2.x of FreeSewing</h3>
+          <p>
+            Documentation on this site is for version 2.x of FreeSewing.
+            For documentation on the latest and greatest (3.x) refer
+            to <WebLink
+              href="https://freesewing.dev/"
+              txt="FreeSewing.dev"
+            />.
+          </p>
+          <p className="text-center mt-4">
+            <a className="btn btn-primary" href="https://freesewing.dev/">
+              Go to the version 3 documentation instead
+            </a>
+          </p>
+
+        </Popout>
+      </div>
       <div className="max-w-7xl m-auto my-32">
         <h2>TL;DR</h2>
         <div className="flex flex-row flex-wrap gap-4 justify-between">
