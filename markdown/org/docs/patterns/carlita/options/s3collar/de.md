@@ -2,7 +2,6 @@
 title: "Shoulder seam shift: collar side"
 - - -
 
-
 Controls the shoulder seam location on the collar side.
 
 - Erhöhe diese Option, um die Schulternaht auf der Kragenseite vorwärts zu verschieben
