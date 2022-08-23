@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Penelope pencil skirt: Cutting Instructions"
-
-***
+- - -
 
 <Note>
 
