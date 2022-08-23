@@ -1,3 +1,11 @@
+2.22.1:
+  date: 2022-08-23
+
+  fixed:
+    plugin-buttons:
+      - Make markup compatible with v2
+        Closes [#2631](https://github.com/freesewing/freesewing/issues/2631)
+
 2.22.0:
   date: 2022-08-23
 

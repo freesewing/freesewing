@@ -1,6 +1,9 @@
 # Change log for: FreeSewing (global)
 
 
+## 2.22.1 (2022-08-23)
+
+
 ## 2.22.0 (2022-08-23)
 
 ### octoplushy
