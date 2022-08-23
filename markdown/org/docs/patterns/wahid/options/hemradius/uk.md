@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Hem radius"
-
-***
+- - -
 
 ![Hem radius](hemradius.svg)
 
