@@ -167,32 +167,31 @@ export default function (part) {
 
   /* Store lengths for use in elastic */
 
-  paths.backLegOpening =
-    options.backExposure >= 0
-      ? new Path()
-          .move(points.backGussetRight)
-          .curve(
-            points.backGussetRightCp1,
-            points.backLegOpeningRightCp1,
-            points.backLegOpeningRight
-          )
-          .setRender(false)
-      : new Path()
-          .move(points.backGussetRight)
-          .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
-          .curve(
-            points.backFlareRightCp1,
-            points.backLegOpeningRightCp1,
-            points.backLegOpeningRight
-          )
-          .setRender(false)
-  store.set('backLegOpeningLength', paths.backLegOpening.length())
+  if (options.backExposure >= 0) {
+    store.set(
+      'backLegOpeningLength',
+      new Path()
+        .move(points.backGussetRight)
+        .curve(points.backGussetRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
+        .length()
+    )
+  } else {
+    store.set(
+      'backLegOpeningLength',
+      new Path()
+        .move(points.backGussetRight)
+        .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
+        .curve(points.backFlareRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
+    )
+  }
 
-  paths.backWaistBand = new Path()
-    .move(points.backWaistBandRight)
-    .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
-    .setRender(false)
-  store.set('backWaistBandLength', paths.backWaistBand.length())
+  store.set(
+    'backWaistBandLength',
+    new Path()
+      .move(points.backWaistBandRight)
+      .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
+      .length()
+  )
 
   // Complete?
   if (complete) {
