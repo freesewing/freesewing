@@ -112,7 +112,7 @@ Ce surpiqûre sera toujours montré, alors assurez-vous de correspondre à la co
 </Tip>
 
 <Tip>
- 
+
 Pour empêcher vos poches de se déposer, vous pouvez placer un morceau de ruban non étirant entre le pli. Lors de la broderie, vous attraperez également ce ruban, empêchant la poche de se déposer.
 
 </Tip>
@@ -132,7 +132,7 @@ Zig-zag the edge of the folded-back front piece to finish it and secure it to th
 When you're done, place front piece, lining and pocket bag flat, and give it a good press.
 
 <Tip>
-  
+
 Ce serait peut-être un bon moment pour vous rappeler que chaque étape devait être accomplie pour les deux jambes.
 
 C'est juste un rappel amical, les prochaines étapes doivent être faites pour les deux jambes aussi.
@@ -220,7 +220,7 @@ Press open the seam allowance along the side seams. Do so from the back, and rep
 Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
 
 <Tip>
- 
+
 Une belle couture de côté plat a l'air superbe, alors prenez votre temps pour la régler.
 
 </Tip>
@@ -728,7 +728,7 @@ N’hésitez pas à couper la longueur des boucles de votre ceinture après avoi
 Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
 
 <Tip>
- 
+
 Ce serait également un bon moment pour essayer votre pantalon et marquer exactement combien de temps vous voulez qu'il soit après qu'ils soient enserrés.
 
 </Tip>
@@ -778,4 +778,3 @@ While there are machine alternatives, they aren't as neat (blind hem stitch) or 
 ### Étape 56 : Couper, nettoyer et appuyer sur
 
 Trim any loose threads or basting that remains, and give your trousers a good final press.
-
