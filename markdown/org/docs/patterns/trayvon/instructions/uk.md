@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Trayvon tie: Sewing Instructions"
-
-***
+- - -
 
 <Tip>
 
@@ -122,9 +120,9 @@ The seam where the tie fabric meets the tie lining does not sit at the edge of t
 Join Interfacing tip (piece 1) and Interfacing tail (piece 2) together on the non-pointy side, matching the notch.
 
 > **Or don't** To be honest, I never join the interfacing. I just leave both halves unattached.
->
+> 
 > This way, you can never get the length of your tie wrong, and you can just slide the interfacing parts over each other. In addition, it creates less bulk in the middle, and it's less work.
->
+> 
 > So you can just skip this step, it's what I do.
 
 ### Step 10: Join the tie fabric
@@ -176,9 +174,9 @@ When you have completed one side, fold back the other side, and steam again.
 Finally, fold back the top layer along the middle of your tie, and press in place. This time, you are making a sharp crease along the middle of the tie.
 
 > To clarify the difference between the two last folds, I have included a dark line in the image that marks the edge of the fabric, or fold.
->
+> 
 > As you can see, the first time we merely fold the fabric back, and it extends passed the center of the tie.
->
+> 
 > The second time, we fold it back again in the middle, the place where we'll sew it in place.
 
 ### Step 14: Prepare the loop
@@ -198,7 +196,7 @@ Finally, press your loop open so the seam sits in the middle, and the ends point
 Use a slip stitch to hand sew your tie all along the length of the back.
 
 > Your slip stitch should only catch the tie fabric on the back. Refrain from running it through the tie interfacing.
->
+> 
 > Be careful for is you run the stitch too deep, it might show on the front, and ruin your tie.
 
 Make sure to slide in your loop, somewhere around 1/5th of the tie length, starting from the tip.
