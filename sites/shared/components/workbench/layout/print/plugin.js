@@ -94,6 +94,8 @@ const basePlugin = ({
       pattern.autoLayout.parts[partName] = {
         move: { x: 0, y: 0 }
       }
+
+      // TODO migrate this to v3 parts adding
       // Add pages
       const { macro } = pattern.parts[partName].shorthand()
       let { height, width } = pattern
@@ -103,7 +105,9 @@ const basePlugin = ({
         responsiveColumns && (width += pattern.settings.layout.topLeft.x)
       }
 
-      macro('addPages', { size: [sheetHeight,sheetWidth, ], height, width })
+      const layout = typeof pattern.settings.layout === 'object' ? pattern.settings.layout : pattern.autoLayout
+
+      macro('addPages', { size: [sheetHeight,sheetWidth, ], height, width, layout })
 
       if (boundary) pattern.parts[partName].boundary();
       if (setPatternSize) {
@@ -122,7 +126,7 @@ const basePlugin = ({
       let count = 0
       let withContent = {}
       // get the layout from the pattern
-      const layout = typeof this.context.settings.layout === 'object' ? this.context.settings.layout : this.context.autoLayout;
+      const {layout} = so;
       for (let row=0;row<rows;row++) {
         let y = row * h
         withContent[row] = {}
@@ -131,9 +135,9 @@ const basePlugin = ({
           let hasContent = true
           if (scanForBlanks && layout) {
             hasContent = doScanForBlanks(this.context.parts, layout, x, y, w, h)
-            withContent[row][col] = hasContent
-            if (!renderBlanks && !hasContent) continue
           }
+          withContent[row][col] = hasContent
+          if (!renderBlanks && !hasContent) continue
           if (hasContent) count++
           const pageName = `_pages__row${row}-col${col}`
           points[`${pageName}-tl`] = new Point(x,y)

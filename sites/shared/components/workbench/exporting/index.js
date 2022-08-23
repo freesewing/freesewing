@@ -43,7 +43,7 @@ export const handleExport = async(format, gist, design, t, app, onComplete) => {
   const workerArgs = {format, gist, settings}
 
   if (exports.exportAsData.indexOf(format) === -1) {
-    // gist.embed=false
+    gist.embed=false
     // make a pattern instance for export rendering
     const layout = gist.layouts?.printingLayout || gist.layout || true
     let pattern = new design({...gist, layout})

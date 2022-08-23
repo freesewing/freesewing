@@ -19,7 +19,10 @@ const PrintLayout = props => {
   const draft = props.draft
 
   // add the pages plugin to the draft
-  const layoutSettings = props.gist?._state?.layout?.forPrinting?.page || defaultPdfSettings
+  const layoutSettings = {
+    ...defaultPdfSettings,
+    ...props.gist?._state?.layout?.forPrinting?.page
+  }
   draft.use(pagesPlugin(
     layoutSettings
   ))
@@ -48,7 +51,7 @@ const PrintLayout = props => {
         }
       </h2>
       <div className="m-4">
-        <Settings {...{...props, exportIt}} draft={draft}/>
+        <Settings {...{...props, exportIt, layoutSettings}} draft={draft}/>
       </div>
       <Draft
         draft={draft}

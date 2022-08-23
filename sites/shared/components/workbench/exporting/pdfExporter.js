@@ -62,13 +62,6 @@ export default class Exporter {
 	  this.margin = this.settings.margin * mmToPoints // margin is in mm because it comes from us, so we convert it to points
 	  this.pageHeight = this.pdf.page.height - this.margin * 2 // this is in points because it comes from pdfKit
 	  this.pageWidth = this.pdf.page.width - this.margin * 2// this is in points because it comes from pdfKit
-	 //  console.log(pages.width * pages.cols, pages.height * pages.rows, this.pageWidth, this.pageHeight)
-		// console.log(svg)
-
-	  // we pass the svg as a string, so we need to make it a DOM element so we can manipulate it
-		// const divElem = document.createElement('div');
-	 //  divElem.innerHTML = svg;
-	 //  this.svg = divElem.firstElementChild;
 
 	  // get the pages data
 	  this.columns = pages.cols
@@ -77,16 +70,6 @@ export default class Exporter {
   	// then set the svg's width and height in points to include all pages in full (the original svg will have been set to show only as much page as is occupied)
 	  this.svgWidth = this.columns * pages.width * mmToPoints
 		this.svgHeight = this.rows * pages.height * mmToPoints
-
-		console.log(this.columns, this.rows, pages.width, pages.height, this.svgWidth, this.svgHeight)
-		console.log(svg)
-		// this.svg.replace(/width="\d+mm"/, `width="${this.svgWidth}pt"`)
-		// this.svg.replace(/height="\d+mm"/, `height="${this.svgHeight}pt"`)
-	  // this.svg.setAttribute('height', this.svgWidth + 'pt')
-	  // this.svg.setAttribute('width', this.svgHeight + 'pt')
-
-	  // set the viewbox to include all pages in full as well, this time in mm
-	  // this.svg.setAttribute('viewBox', `0 0 ${this.columns * this.pageWidthInMm} ${this.rows * this.pageHeightInMm}`)
 	}
 
 	/** pdf page usable (excluding margin) width, in mm */
@@ -108,89 +91,6 @@ export default class Exporter {
 		this.buffers = [];
 		// add new data to our buffer storage
 		this.pdf.on('data', this.buffers.push.bind(this.buffers));
-	}
-
-	/**
-	 * Scan all the pages and remove ones that have no content.
-	 * Because we are rendering a grid of pages that fits the layout, some might not actually have anything on them.
-	 * We do not want to user to have to figure out which pages to print and which to skip, so we have to identify these pages
-	 * */
-	scanPages() {
-		// get the layout from the pattern
-		const layout = typeof this.pattern.settings.layout === 'object' ? this.pattern.settings.layout : this.pattern.autoLayout;
-
-		// go through all the rows
-		for (var h = 0; h < this.rows; h++) {
-			// make a storage for this row's pages
-			this.pagesWithContent[h] = {}
-		  for (var w = 0; w < this.columns; w++) {
-		  	// topLeft corner to the current page
-		    let x = w * this.pageWidthInMm
-		    let y = h * this.pageHeightInMm
-
-		    // assume no content
-		    let hasContent = false
-		    // look through all the parts
-		    for (var p in layout.parts) {
-		    	let part = this.pattern.parts[p]
-		    	// skip the pages part and any that aren't rendered
-		    	if (p === 'pages' || part.render === false || part.isEmpty()) continue
-
-		    	// get the position of the part
-		    	let partLayout = layout.parts[p]
-		   		let partMinX = (partLayout.tl?.x || (partLayout.move.x + part.topLeft.x))
-		   		let partMinY = (partLayout.tl?.y || (partLayout.move.y + part.topLeft.y))
-		   		let partMaxX = (partLayout.br?.x || (partMinX + part.width))
-		   		let partMaxY = (partLayout.br?.y || (partMinY + part.height))
-
-		   		// check if the part overlaps the page extents
-		    	if (
-		    		// if the left of the part is further left than the right end of the page
-		    		partMinX < x + this.pageWidthInMm &&
-		    		// and the top of the part is above the bottom of the page
-		    		partMinY < y + this.pageHeightInMm &&
-		    		// and the right of the part is further right than the left of the page
-		    		partMaxX > x &&
-		    		// and the bottom of the part is below the top to the page
-		    		partMaxY > y
-		    		) {
-		    		// the part has content inside the page
-		    		hasContent = true;
-		    		// so we stop looking
-		    		break;
-		    	}
-		    }
-
-		    // save the outcome because we will need it later
-		    this.pagesWithContent[h][w] = hasContent
-
-		    // if the page has no content, hide its various markers
-		    if (!hasContent) {
-		    	let pageName = `_pages__row${h}-col${w}`
-		    	this.hideElem(pageName, 'circle', 'text')
-		    	this.hideElem(pageName + '-row-marker', 'text')
-		    	this.hideElem(pageName + '-col-marker', 'text')
-		    	this.hideElem(pageName + '-x-ruler', 'text')
-		    	this.hideElem(pageName + '-y-ruler', 'text')
-		    }
-		  }
-		}
-	}
-
-	/**
-	 * hide an element with the given id
-	 * id: the string ID of the element to hide
-	 * suffixes: additional strings to add to the end of the id like `${id}-${suffix}`, to hide related elements
-	 * */
-	hideElem(id, ...suffixes) {
-		// keep a clean reference
-		const that = this;
-		// find the element
-		const elem = that.svg.getElementById(id)
-		// if it exists, change the class to hidden
-		if (elem) elem.setAttribute('class', 'hidden')
-		// do the same with the suffixes
-		suffixes.forEach((s) => that.hideElem(`${id}-${s}`))
 	}
 
 	/** export to pdf */
@@ -240,7 +140,6 @@ export default class Exporter {
 	  	width: this.svgWidth,
 	  	height: this.svgHeight,
 	  	preserveAspectRatio: 'xMinYMin slice',
-	  	useCSS: true
 	  }
 
 	  // everything is offset by half a margin so that it's centered on the page
