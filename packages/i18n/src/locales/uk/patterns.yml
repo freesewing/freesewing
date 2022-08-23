@@ -80,6 +80,9 @@ lunetius:
 noble:
   description: Нобл – це викрійка-основа з швом принц(есса).
   title: Викрійка-основа Нобл
+octoplushy:
+  description: A multi-armed companion for next-level hugs
+  title: Octoplushy the octopus
 paco:
   description: Пако – це базові та стильні літні штани.
   title: Штани Пако
