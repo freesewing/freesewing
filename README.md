@@ -56,6 +56,9 @@ Check out [out v3 roadmap](https://github.com/freesewing/freesewing/discussions/
 see what we've planning. And we are open to ideas/suggestions for what you would like to
 see in our mext major release.
 
+Also note that the default branch (`develop`) is dedicated to work on version 3.
+Code for version to is available in the `v2` branch.
+
 ## Getting started ⚡ 
 
 As this is a monorepo. You'll need [NodeJS v14](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
