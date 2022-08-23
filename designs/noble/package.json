@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/noble",
-  "version": "2.22.0",
+  "version": "3.0.0-alpha.0",
   "description": "A FreeSewing pattern for a princess seam bodice block",
   "author": "woutervdub (https://github.com/woutervdub)",
   "homepage": "https://freesewing.org/",
@@ -40,10 +40,10 @@
     "cibuild_step5": "node build.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.22.0",
-    "@freesewing/plugin-bundle": "^2.22.0",
-    "@freesewing/config-helpers": "^2.22.0",
-    "@freesewing/bella": "^2.22.0"
+    "@freesewing/core": "^3.0.0-alpha.0",
+    "@freesewing/plugin-bundle": "^3.0.0-alpha.0",
+    "@freesewing/config-helpers": "^3.0.0-alpha.0",
+    "@freesewing/bella": "^3.0.0-alpha.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -56,7 +56,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">=14.0.0",
