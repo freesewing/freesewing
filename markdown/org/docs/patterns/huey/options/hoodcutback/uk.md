@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Hood cutback"
-
-***
+- - -
 
 ![Hood cutback](./hoodcutback.svg)
 
