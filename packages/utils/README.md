@@ -50,6 +50,10 @@
 
 A collection of utilities shared across freesewing projects
 
+## 🚨🚨 This packages is deprecated 🚨🚨
+
+This package will not be part of FreeSewing v3.
+
 
 
 ## What am I looking at? 🤔

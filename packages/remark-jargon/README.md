@@ -50,6 +50,11 @@
 
 A Remark plugin for jargon terms
 
+## 🚨🚨 This packages is deprecated 🚨🚨
+
+This package will not be part of FreeSewing v3.
+Please use [rehype-jargon](https://www.npmjs.com/package/rehype-jargon) instead.
+
 ## About
 
 This [Remark](https://remark.js.org/) plugin allows you to use _jargon_ in your 

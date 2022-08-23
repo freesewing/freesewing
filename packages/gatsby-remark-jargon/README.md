@@ -50,6 +50,10 @@
 
 A gatsby-transformer-remark sub-plugin for jargon terms
 
+## 🚨🚨 This packages is deprecated 🚨🚨
+
+This package will not be part of FreeSewing v3.
+
 ## About
 
 This wraps the [remark-jargon](https://github.com/freesewing/freesewing/tree/develop/packages/remark-jargon) plugin

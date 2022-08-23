@@ -1,3 +1,7 @@
+## 🚨🚨 This packages is deprecated 🚨🚨
+
+This package will not be part of FreeSewing v3.
+
 ## About
 
 This plugin adds the ability to export patterns to DXF-ASTM.
