@@ -2,7 +2,6 @@
 title: "Waistband width"
 - - -
 
-
 Contrôle la largeur de la ceinture.
 
 ## Effet de cette option sur le motif
