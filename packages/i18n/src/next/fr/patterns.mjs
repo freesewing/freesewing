@@ -57,6 +57,8 @@ const patterns = {
   "lunetius.d": "Lunetius est une lacerne, un manteau romain historique",
   "noble.t": "Noble body block",
   "noble.d": "Noble is a body block with prince(ess) seams",
+  "octoplushy.t": "Octoplushy the octopus",
+  "octoplushy.d": "A multi-armed companion for next-level hugs",
   "paco.t": "Pantalon Paco",
   "paco.d": "Paco est un pantalon d'été décontracté mais élégant.",
   "penelope.t": "Jupe crayon Penelope",
