@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Simone shirt: What You Need"
-
-***
+- - -
 
 <Note>
 
