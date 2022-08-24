@@ -3,10 +3,10 @@ import SVGtoPDF from 'svg-to-pdfkit'
 import fileSaver from 'file-saver'
 import {logo} from '@freesewing/plugin-logo'
 
+/** an svg of the logo to put on the cover page */
 const logoSvg = `<svg viewBox="-22 -36 46 50">
 	<style> path {fill: none; stroke: #555555; stroke-width: 0.5} </style>
-	<defs>${logo}</defs>
-	<use xlink:href="#logo" x="0" y="0"></use>
+	${logo}
 </svg>`
 
 /**
@@ -19,7 +19,7 @@ const mmToPoints = 2.834645669291339
  * Freesewing's first explicit class?
  * handles pdf exporting
  */
-export default class Exporter {
+export default class PdfMaker {
 	/**	the svg as text to embed in the pdf */
 	svg
 	/** the document configuration */
@@ -52,24 +52,25 @@ export default class Exporter {
 		this.pagesWithContent = pages.withContent;
 		this.svg = svg
 		this.strings = strings
-		this.createPdf()
+
+		this.initPdf()
 
 	  this.margin = this.settings.margin * mmToPoints // margin is in mm because it comes from us, so we convert it to points
 	  this.pageHeight = this.pdf.page.height - this.margin * 2 // this is in points because it comes from pdfKit
-	  this.pageWidth = this.pdf.page.width - this.margin * 2// this is in points because it comes from pdfKit
+	  this.pageWidth = this.pdf.page.width - this.margin * 2 // this is in points because it comes from pdfKit
 
 	  // get the pages data
 	  this.columns = pages.cols
   	this.rows = pages.rows
 
-  	// then set the svg's width and height in points to include all pages in full (the original svg will have been set to show only as much page as is occupied)
+  	// calculate the width of the svg in points
 	  this.svgWidth = this.columns * pages.width * mmToPoints
 		this.svgHeight = this.rows * pages.height * mmToPoints
 	}
 
 
 	/** create the pdf document */
-	createPdf() {
+	initPdf() {
 		// instantiate with the correct size and orientation
 		this.pdf = new PDFDocument({
 			size: this.settings.size.toUpperCase(),
@@ -77,26 +78,33 @@ export default class Exporter {
 		})
 
 		// PdfKit wants to flush the buffer on each new page.
-		// We don't want to try to save the document until it's complete, so we have to manage the buffers ourselves
+		// We can't save directly from inside a worker, so we have to manage the buffers ourselves so we can return a blob
 		this.buffers = [];
-		// add new data to our buffer storage
+
+		// use a listener to add new data to our buffer storage
 		this.pdf.on('data', this.buffers.push.bind(this.buffers));
 	}
 
-	/** export to pdf */
-	async export(onComplete) {
-		// when the end event fires, then we save the whole thing
-		this.pdf.on('end', () => {
-			// convert buffers to a blob
-	    const blob = new Blob(this.buffers, {
-	    	type: 'application/pdf'
-	    })
-	    onComplete(blob)
-		});
-
+	/** make the pdf */
+	async makePdf() {
 		await this.generateCoverPage()
 		await this.generatePages();
-		this.save()
+	}
+
+	/** convert the pdf to a blob */
+	toBlob() {
+		return new Promise((resolve) => {
+			// have to do it this way so that the document flushes everything to buffers
+			this.pdf.on('end', () => {
+				// convert buffers to a blob
+		    resolve(new Blob(this.buffers, {
+		    	type: 'application/pdf'
+		    }))
+			});
+
+			// end the stream
+			this.pdf.end()
+		})
 	}
 
 	/** generate the cover page for the pdf */
@@ -106,7 +114,7 @@ export default class Exporter {
 			return
 		}
 
-		this.generateCoverPageTitle()
+		await this.generateCoverPageTitle()
 
 		//abitrary margin for visual space
 		let coverMargin = 85
@@ -127,7 +135,7 @@ export default class Exporter {
 		let lineLevel = 50
 		let lineStart = 50
 
-		this.pdf.fotSize(28)
+		this.pdf.fontSize(28)
 		this.pdf.text('FreeSewing', lineStart, lineLevel)
 		lineLevel += 28
 
@@ -187,10 +195,5 @@ export default class Exporter {
 		    await SVGtoPDF(this.pdf, this.svg, x, y, options)
 		  }
 		}
-	}
-
-	/** download the pdf */
-	save() {
-		this.pdf.end();
 	}
 }

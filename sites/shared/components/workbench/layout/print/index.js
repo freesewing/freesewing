@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next'
 import Settings from './settings'
 import Draft from '../draft/index'
 import {pagesPlugin} from './plugin'
-import {handleExport, defaultPdfSettings} from 'shared/components/workbench/exporting'
+import {handleExport, defaultPdfSettings} from 'shared/components/workbench/exporting/export-handler'
 import Popout from 'shared/components/popout'
 
 const PrintLayout = props => {
