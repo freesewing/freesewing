@@ -1,6 +1,5 @@
 import PDFDocument from 'pdfkit/js/pdfkit.standalone'
 import SVGtoPDF from 'svg-to-pdfkit'
-import fileSaver from 'file-saver'
 import {logo} from '@freesewing/plugin-logo'
 
 /** an svg of the logo to put on the cover page */

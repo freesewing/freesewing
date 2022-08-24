@@ -48,8 +48,5 @@
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1",
     "tailwindcss-open-variant": "^1.0.0"
-  },
-  "engines": {
-    "node": "14.x"
   }
 }
