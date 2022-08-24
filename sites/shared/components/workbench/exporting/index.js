@@ -95,6 +95,7 @@ export const handleExport = async(format, gist, design, t, app, onComplete, onEr
     } catch(err) {
       console.log(err)
       app.stopLoading();
+      onError && onError(err)
     }
 
   }
@@ -105,6 +106,7 @@ export const handleExport = async(format, gist, design, t, app, onComplete, onEr
 const ExportDraft = ({ gist, design, app }) => {
 
   const [link, setLink] = useState(false)
+  const [error, setError] = useState(false)
   const [format, setFormat] = useState(false)
 
   const { t } = useTranslation(['app'])
@@ -113,6 +115,8 @@ const ExportDraft = ({ gist, design, app }) => {
     setFormat(format)
     handleExport(format, gist, design, t, app, (e) => {
       if (e.data.link) {setLink(e.data.link)}
+    }, (e) => {
+      if (e.data.error) {setError(true)}
     })
   }
 
@@ -126,6 +130,14 @@ const ExportDraft = ({ gist, design, app }) => {
             {format}:
           </span>
           <WebLink href={link} txt={link} />
+        </Popout>
+      )}
+      {error && (
+        <Popout warning compact>
+          <span className="font-bold mr-4 uppercase text-sm">
+            {t('error')}:
+          </span>
+          {t('somethingWentWrong')}
         </Popout>
       )}
       <div className="flex flex-row flex-wrap gap-8">

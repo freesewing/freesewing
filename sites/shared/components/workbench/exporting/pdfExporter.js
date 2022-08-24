@@ -9,19 +9,10 @@ const logoSvg = `<svg viewBox="-22 -36 46 50">
 	<use xlink:href="#logo" x="0" y="0"></use>
 </svg>`
 
-console.log(logoSvg)
 /**
- * About these numbers, as they are the hardest part of all this:
  * PdfKit, the library we're using for pdf generation, uses points as a unit, so when we tell it things like where to put the svg and how big the svg is, we need those numbers to be in points
  * The svg uses mm internally, so when we do spatial reasoning inside the svg, we need to know values in mm
  * */
-
-// multiply a pixel value by this to get a points value
-const pxToPoints = (72/96);
-// multiply a mm value by this to get a pixel value
-const mmToPx = 3.77953
-// multiply a mm value by this to get a points value
-// const mmToPoints = mmToPx * pxToPoints
 const mmToPoints = 2.834645669291339
 
 /**
@@ -29,17 +20,15 @@ const mmToPoints = 2.834645669291339
  * handles pdf exporting
  */
 export default class Exporter {
-	/** the name of the design, this is used to title the exported pdf */
-	designName
-	/**	the svg element to embed in the pdf */
+	/**	the svg as text to embed in the pdf */
 	svg
 	/** the document configuration */
 	settings
-	/** the pattern instance that is being exported */
-	pattern
 	/** the pdfKit instance that is writing the document */
 	pdf
+	/** the export buffer to hold pdfKit output */
 	buffers
+	/** translated strings to add to the cover page */
 	strings
 
 	/** the usable width (excluding margin) of the pdf page, in points */
@@ -53,14 +42,10 @@ export default class Exporter {
 	/** the number of rows of pages in the svg */
 	rows
 
-	/** the width of the svg element, in points */
+	/** the width of the entire svg, in points */
 	svgWidth
-	/** the height of the svg element, in points */
+	/** the height of the entire svg, in points */
 	svgHeight
-
-	/** a dictionary to track which pages actually have anything on them */
-	pagesWithContent = {}
-
 
 	constructor({svg, settings, pages, strings}) {
 		this.settings = settings
@@ -81,11 +66,6 @@ export default class Exporter {
 	  this.svgWidth = this.columns * pages.width * mmToPoints
 		this.svgHeight = this.rows * pages.height * mmToPoints
 	}
-
-	/** pdf page usable (excluding margin) width, in mm */
-	get pageWidthInMm() { return this.pageWidth / mmToPoints }
-	/** pdf page usable (excluding margin) height, in mm */
-	get pageHeightInMm() { return this.pageHeight / mmToPoints }
 
 
 	/** create the pdf document */
@@ -126,10 +106,28 @@ export default class Exporter {
 			return
 		}
 
+		this.generateCoverPageTitle()
+
+		//abitrary margin for visual space
+		let coverMargin = 85
+		let coverHeight = this.pdf.page.height - coverMargin * 2
+		let coverWidth = this.pdf.page.width - coverMargin * 2
+
+		// add the entire pdf to the page, so that it fills the available space as best it can
+		await SVGtoPDF(this.pdf, this.svg, coverMargin, coverMargin * 1.5, {
+			width: coverWidth,
+			height: coverHeight,
+			assumePt: false,
+			// use aspect ratio to center it
+			preserveAspectRatio: 'xMidYMid meet'
+		});
+	}
+
+	async generateCoverPageTitle() {
 		let lineLevel = 50
 		let lineStart = 50
 
-		this.pdf.fontSize(28)
+		this.pdf.fotSize(28)
 		this.pdf.text('FreeSewing', lineStart, lineLevel)
 		lineLevel += 28
 
@@ -156,22 +154,6 @@ export default class Exporter {
 		this.pdf.fillColor('#888888')
 		this.pdf.fontSize(10)
 		this.pdf.text(this.strings.url, lineStart, lineLevel)
-
-
-		//abitrary margin for visual space
-		let coverMargin = 85
-
-		let coverHeight = this.pdf.page.height - coverMargin * 2
-		let coverWidth = this.pdf.page.width - coverMargin * 2
-
-		// add the entire pdf to the page, so that it fills the available space as best it can
-		await SVGtoPDF(this.pdf, this.svg, coverMargin, coverMargin * 1.5, {
-			width: coverWidth,
-			height: coverHeight,
-			assumePt: false,
-			// use aspect ratio to center it
-			preserveAspectRatio: 'xMidYMid meet'
-		});
 	}
 
 	/** generate the pages of the pdf */
