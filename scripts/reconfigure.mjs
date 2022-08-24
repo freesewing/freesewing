@@ -35,7 +35,7 @@ const repo = {
     pkg: readTemplateFile('package.dflt.json'),
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
-    build: readTemplateFile('build.dflt.js'),
+    build: readTemplateFile('build.dflt.mjs'),
     designTests: readTemplateFile('design.test.mjs'),
     pluginTests: readTemplateFile('plugin.test.mjs')
   },
@@ -78,7 +78,7 @@ for (const pkg of Object.values(software)) {
   )
   if (repo.exceptions.customBuild.indexOf(pkg.name) === -1) {
     fs.writeFileSync(
-      path.join(cwd, pkg.folder, pkg.name, 'build.js'),
+      path.join(cwd, pkg.folder, pkg.name, 'build.mjs'),
       repo.templates.build
     )
   }
