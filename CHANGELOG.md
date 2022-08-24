@@ -1,6 +1,29 @@
 # Change log for: FreeSewing (global)
 
 
+## Unreleased
+
+### global
+
+#### Removed
+
+ - The `@freesewing/components` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `@freesewing/css-theme` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `gatsby-remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `@freesewing/mui-theme` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `plugin-export-dxf` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `plugin-export-dxf` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported. Use `rehype-jargon` instead.
+ - The `@freesewing/snapseries` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `@freesewing/utils` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+
+### plugin-gore
+
+#### Breaking
+
+ - The `goreNumber` props is removed. Please use `gores` instead
+
+
 ## 2.22.0 (2022-08-23)
 
 ### octoplushy

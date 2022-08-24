@@ -1,3 +1,37 @@
+Unreleased:
+
+  Breaking:
+    all:
+      - This package is now ESM only.
+      - Dropped support for NodeJS 14.
+        NodeJS 16 or more recent is now required.
+    plugin-gore:
+      - The `goreNumber` props is removed. Please use `gores` instead
+
+  Removed:
+    global:
+      - The `@freesewing/components` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/css-theme` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `gatsby-remark-jargon` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/mui-theme` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `plugin-export-dxf` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `plugin-export-dxf` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `remark-jargon` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+        Use `rehype-jargon` instead.
+      - The `@freesewing/snapseries` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/utils` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+
+
+
 2.22.0:
   date: 2022-08-23
 

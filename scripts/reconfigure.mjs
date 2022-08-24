@@ -28,7 +28,7 @@ const repo = {
   badges: readConfigFile('badges.yaml'),
   scripts: readConfigFile('scripts.yaml'),
   changelog: readConfigFile('changelog.yaml'),
-  changetypes: ['Added', 'Changed', 'Deprecated', 'Removed', 'Fixed', 'Security'],
+  changetypes: ['Breaking', 'Added', 'Changed', 'Deprecated', 'Removed', 'Fixed', 'Security'],
   dependencies: readConfigFile('dependencies.yaml', { version }),
   exceptions: readConfigFile('exceptions.yaml'),
   templates: {
@@ -358,7 +358,7 @@ function globalChangelog() {
     markup += '\n## ' + v
     if (v !== 'Unreleased') markup += ' (' + formatDate(changes.date) + ')'
     markup += '\n\n'
-    for (let pkg in software) {
+    for (let pkg of ['global', ...Object.keys(software)]) {
       let changed = false
       for (let type of repo.changetypes) {
         if (
@@ -391,15 +391,15 @@ function packageChangelog(pkgName) {
     let changes = repo.changelog[v]
     let changed = false
     for (let type of repo.changetypes) {
-      if (
-        typeof changes[type] !== 'undefined' &&
-        changes[type] !== null &&
-        typeof changes[type][pkgName] !== 'undefined' &&
-        changes[type][pkgName] !== null
-      ) {
+      if (changes[type] && (Array.isArray(changes[type][pkgName]) || Array.isArray(changes[type].all))) {
         if (!changed) changed = ''
         changed += '\n### ' + type + '\n\n'
-        for (let change of changes[type][pkgName]) changed += ' - ' + change + '\n'
+        if (Array.isArray(changes[type][pkgName])) {
+          for (let change of changes[type][pkgName]) changed += ' - ' + change + '\n'
+        }
+        if (Array.isArray(changes[type].all)) {
+          for (let change of changes[type].all) changed += ' - ' + change + '\n'
+        }
       }
     }
     if (v !== 'Unreleased' && changed) {
