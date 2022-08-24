@@ -98,7 +98,7 @@ labelPRBasedOnFilePath:
   ":shirt: titan": [ designs/titan/* ]
   ":shirt: trayvon": [ designs/trayvon/* ]
   ":shirt: tutorial": [ designs/tutorial/* ]
-  ":shirt: unice": [ designs/unice/* ] // New
+  ":shirt: unice": [ designs/unice/* ]
   ":shirt: ursula": [ designs/ursula/* ]
   ":shirt: wahid": [ designs/wahid/* ]
   ":shirt: walburga": [ designs/walburga/* ]
