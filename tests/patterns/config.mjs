@@ -35,7 +35,7 @@ export const testPatternConfig = (design, pattern, expect, models, patterns) => 
     const chunks = pattern.config.version.split('.')
     if (chunks.length > 3) {
       expect(pattern.config.version.split('.').length).to.equal(4)
-      expect(chunks[2]).to.contain('-rc')
+      expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
     }
     else expect(pattern.config.version.split('.').length).to.equal(3)
   })
