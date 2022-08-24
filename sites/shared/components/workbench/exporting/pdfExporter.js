@@ -1,7 +1,15 @@
 import PDFDocument from 'pdfkit/js/pdfkit.standalone'
 import SVGtoPDF from 'svg-to-pdfkit'
 import fileSaver from 'file-saver'
+import {logo} from '@freesewing/plugin-logo'
 
+const logoSvg = `<svg viewBox="-22 -36 46 50">
+	<style> path {fill: none; stroke: #555555; stroke-width: 0.5} </style>
+	<defs>${logo}</defs>
+	<use xlink:href="#logo" x="0" y="0"></use>
+</svg>`
+
+console.log(logoSvg)
 /**
  * About these numbers, as they are the hardest part of all this:
  * PdfKit, the library we're using for pdf generation, uses points as a unit, so when we tell it things like where to put the svg and how big the svg is, we need those numbers to be in points
@@ -32,6 +40,7 @@ export default class Exporter {
 	/** the pdfKit instance that is writing the document */
 	pdf
 	buffers
+	strings
 
 	/** the usable width (excluding margin) of the pdf page, in points */
 	pageWidth
@@ -53,10 +62,11 @@ export default class Exporter {
 	pagesWithContent = {}
 
 
-	constructor({svg, settings, pages}) {
+	constructor({svg, settings, pages, strings}) {
 		this.settings = settings
 		this.pagesWithContent = pages.withContent;
 		this.svg = svg
+		this.strings = strings
 		this.createPdf()
 
 	  this.margin = this.settings.margin * mmToPoints // margin is in mm because it comes from us, so we convert it to points
@@ -116,17 +126,49 @@ export default class Exporter {
 			return
 		}
 
-		//abitrary margin for visual space
-		let coverMargin = 50
+		let lineLevel = 50
+		let lineStart = 50
 
-		let coverHeight = this.pageHeight - coverMargin * 2
-		let coverWidth = this.pageWidth - coverMargin * 2
+		this.pdf.fontSize(28)
+		this.pdf.text('FreeSewing', lineStart, lineLevel)
+		lineLevel += 28
+
+		this.pdf.fontSize(12)
+		this.pdf.text(this.strings.tagline, lineStart, lineLevel)
+		lineLevel += 12 + 20
+
+
+		this.pdf.fontSize(48)
+		this.pdf.text(this.strings.design, lineStart, lineLevel)
+		lineLevel += 48
+
+		await SVGtoPDF(this.pdf, logoSvg, this.pdf.page.width - lineStart - 100, lineStart, {
+			width: 100,
+			height: lineLevel - lineStart - 8,
+			preserveAspectRatio: 'xMaxYMin meet'
+		})
+
+		this.pdf.lineWidth(1)
+		this.pdf.moveTo(lineStart, lineLevel - 8)
+			.lineTo(this.pdf.page.width - lineStart, lineLevel - 8)
+			.stroke()
+
+		this.pdf.fillColor('#888888')
+		this.pdf.fontSize(10)
+		this.pdf.text(this.strings.url, lineStart, lineLevel)
+
+
+		//abitrary margin for visual space
+		let coverMargin = 85
+
+		let coverHeight = this.pdf.page.height - coverMargin * 2
+		let coverWidth = this.pdf.page.width - coverMargin * 2
 
 		// add the entire pdf to the page, so that it fills the available space as best it can
-		await SVGtoPDF(this.pdf, this.svg, coverMargin, coverMargin, {
+		await SVGtoPDF(this.pdf, this.svg, coverMargin, coverMargin * 1.5, {
 			width: coverWidth,
 			height: coverHeight,
-			assumePt: true,
+			assumePt: false,
 			// use aspect ratio to center it
 			preserveAspectRatio: 'xMidYMid meet'
 		});

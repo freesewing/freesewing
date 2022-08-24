@@ -5,14 +5,17 @@ import PdfExporter from './pdfExporter'
 addEventListener('message', async(e) => {
 	const {format, gist, svg} = e.data
 	// handle the data exports
+  try {
+    if (format === 'json') return exportJson(gist)
+  	if (format === 'yaml') return exportYaml(gist)
+  	if (format === 'github gist') return exportGithubGist(gist)
 
-  if (format === 'json') return exportJson(gist)
-	if (format === 'yaml') return exportYaml(gist)
-	if (format === 'github gist') return exportGithubGist(gist)
+    if (format === 'svg') return exportSvg(gist, svg)
 
-  if (format === 'svg') return exportSvg(gist, svg)
-
-  new PdfExporter(e.data).export(postSuccess)
+    await new PdfExporter(e.data).export(postSuccess)
+  } catch (e) {
+    postMessage({success: false, error: e})
+  }
 })
 
 const postSuccess = (blob) => {

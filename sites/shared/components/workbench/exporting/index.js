@@ -6,6 +6,7 @@ import Worker from 'web-worker';
 import fileSaver from 'file-saver'
 import theme from '@freesewing/plugin-theme'
 import {pagesPlugin} from '../layout/print/plugin'
+import {utils} from '@freesewing/core'
 
 export const exports = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'tabloid'],
@@ -20,18 +21,24 @@ export const defaultPdfSettings = {
   coverPage: true
 }
 
-export const handleExport = async(format, gist, design, t, app, onComplete) => {
+export const handleExport = async(format, gist, design, t, app, onComplete, onError) => {
   app.startLoading();
 
   const worker = new Worker(new URL('./export_worker.js', import.meta.url), {type: module});
 
   worker.addEventListener('message', e => {
-    if (e.data.blob) {
-      const fileType = exports.exportForPrinting.indexOf(format) === -1 ? format : 'pdf'
-      fileSaver.saveAs(e.data.blob, `freesewing-${gist.design || 'gist'}.${fileType}`)
+    if (e.data.success) {
+      if (e.data.blob) {
+        const fileType = exports.exportForPrinting.indexOf(format) === -1 ? format : 'pdf'
+        fileSaver.saveAs(e.data.blob, `freesewing-${gist.design || 'gist'}.${fileType}`)
+      }
+      onComplete && onComplete(e)
+    } else {
+      //FIXME notify the user of the error
+      console.log(e.data.error)
+      onError && onError(e)
     }
     app.stopLoading()
-    onComplete && onComplete(e)
   })
 
   let svg = ''
@@ -71,6 +78,12 @@ export const handleExport = async(format, gist, design, t, app, onComplete) => {
           renderBlanks: false,
           setPatternSize: true
         }))
+
+        workerArgs.strings = {
+          design: utils.capitalize(gist.design),
+          tagline: t('common:sloganCome') + '. ' + t('common:sloganStay'),
+          url: window.location.href
+        }
       }
 
       pattern.draft();
