@@ -2,7 +2,7 @@ export default function (part) {
   let { options, measurements, Point, Path, points, paths, store } = part.shorthand()
 
   let seatDepth =
-    measurements.crotchDepth /* - measurements.waistToHips */ * (1 + options.waistRaise)
+    measurements.crotchDepth /* - measurements.waistToHips */ * (1 + options.waistRaise) *options.crotchEase
   let circumference = measurements.seat
   let waist =
     typeof measurements.waist == 'undefined' || false == options.fitWaist
@@ -65,7 +65,7 @@ export default function (part) {
   points.bCutOutHip = new Path()
     .move(points.bWaistSide)
     .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
-    .shiftAlong(measurements.waistToHips + waistBand)
+    .shiftAlong(measurements.waistToHips + waistBand +(options.backRaise * seatDepth))
 
   let waistSeatDifferenceBack = measurements.seat / 2 - waistBack
   let waistSeatDifferenceFront = measurements.seat / 2 - (waist - waistBack)
