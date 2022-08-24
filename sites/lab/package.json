@@ -43,8 +43,7 @@
     "rehype-sanitize": "^5.0.1",
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
-    "remark-gfm": "^3.0.1",
-    "remark-jargon": "^3.0.0-alpha.0"
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
