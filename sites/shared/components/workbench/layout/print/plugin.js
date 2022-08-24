@@ -10,9 +10,27 @@ export const sizes = {
   tabloid: [ 279.4, 431.8 ],
 }
 
-/** get a letter to represent an index */
+/** get a letter to represent an index less than 26*/
 const indexLetter = (i) => String.fromCharCode('A'.charCodeAt(0) + i - 1)
 
+/** get a string of letters to represent an index */
+const indexStr = (i) => {
+  let index = i % 26
+  let quotient = i / 26
+  let result
+
+  if (i <= 26) {return indexLetter(i)}  //Number is within single digit bounds of our encoding letter alphabet
+
+  if (quotient >= 1) {
+      //This number was bigger than the alphabet, recursively perform this function until we're done
+      if (index === 0) {quotient--}   //Accounts for the edge case of the last letter in the dictionary string
+      result = indexStr(quotient)
+  }
+
+  if (index === 0) {index = 26}   //Accounts for the edge case of the final letter; avoids getting an empty string
+
+  return result + indexLetter(index)
+}
 /**
  * A plugin to add printer pages
  * */
@@ -145,11 +163,11 @@ const basePlugin = ({
           points[`${pageName}-br`] = new Point(x+w,y+h)
           points[`${pageName}-bl`] = new Point(x,y+h)
           points[`${pageName}-circle`] = new Point(x+w/2,y+h/2)
-            .attr('data-circle', 42)
+            .attr('data-circle', 56)
             .attr('data-circle-class', 'stroke-4xl muted fabric')
             .attr('data-circle-id', `${pageName}-circle`)
           points[`${pageName}-text`] = new Point(x+w/2,y+h/2)
-            .attr('data-text', `${indexLetter(col + 1)}${row + 1}`)
+            .attr('data-text', `${indexStr(col + 1)}${row + 1}`)
             .attr('data-text-class', 'text-4xl center baseline-center bold muted fill-fabric')
             .attr('data-text-id', `${pageName}-text`)
 
@@ -251,7 +269,7 @@ const basePlugin = ({
       })
       if (col !== 0 && withContent[row][col-1]) macro('addPageMarker', {
         along: [points[`${pageName}-tl`], points[`${pageName}-bl`]],
-        label: indexLetter(col),
+        label: indexStr(col),
         isRow: false,
         pageName
       })
