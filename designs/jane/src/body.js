@@ -21,8 +21,8 @@ export default function (part) {
           let workingHip 
       if (measurements.chest > measurements.hips) workingHip = measurements.chest / 2
       else workingHip = measurements.hips / 2
-  
-  const widthBody = workingHip * (1 + options.bodyEase)
+    
+    const widthBody = workingHip * (1 + options.bodyEase)
 
   const maxLength = ( lengthBody > (measurements.waistToFloor + measurements.hpsToWaistBack))
     ? measurements.waistToFloor + measurements.hpsToWaistBack
