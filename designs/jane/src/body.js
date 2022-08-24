@@ -18,7 +18,10 @@ export default function (part) {
   //design pattern here
   //body
   const lengthBody = (measurements.waistToKnee + measurements.hpsToWaistBack) * (1 + options.shiftLength)
-  const workingHip = measurements.hips / 2
+          let workingHip 
+      if (measurements.chest > measurements.hips) workingHip = measurements.chest / 2
+      else workingHip = measurements.hips / 2
+  
   const widthBody = workingHip * (1 + options.bodyEase)
 
   const maxLength = ( lengthBody > (measurements.waistToFloor + measurements.hpsToWaistBack))
