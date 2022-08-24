@@ -52,12 +52,6 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
-    "@fontsource/permanent-marker": "latest",
-    "@fontsource/roboto-mono": "latest",
-    "@fontsource/ubuntu": "latest",
-    "@material-ui/core": "^4.11.4",
-    "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.60",
     "@types/express": "^4.17.13",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.8",
@@ -77,29 +71,16 @@
     "lerna": "^5.1.4",
     "mocha": "^10.0.0",
     "mustache": "^4.0.1",
-    "node-sass": "^7.0.1",
     "nyc": "^15.1.0",
-    "open-color": "^1.7.0",
     "prettier": "^2.3.0",
     "pretty-quick": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-intl": "^5.17.6",
-    "react-markdown": "^6.0.2",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "rimraf": "^3.0.2",
-    "standard": "^17.0.0"
-  },
-  "workspaces": [
-    "designs/*",
-    "packages/*",
-    "plugins/*",
-    "sites/*"
-  ],
-  "version": "0.0.0",
-  "dependencies": {
+    "standard": "^17.0.0",
     "autoprefixer": "^10.4.0",
     "handlebars": "^4.7.7",
     "rehype-format": "^4.0.1",
@@ -109,5 +90,12 @@
     "remark-lint-list-item-indent": "^3.1.1",
     "remark-preset-lint-consistent": "^5.1.1",
     "remark-preset-lint-recommended": "^6.1.2"
-  }
+  },
+  "workspaces": [
+    "designs/*",
+    "packages/*",
+    "plugins/*",
+    "sites/*"
+  ],
+  "version": "0.0.0"
 }

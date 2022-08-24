@@ -1,7 +1,7 @@
-import designsByType from './designs.json'
-import packages from './packages.json'
-import plugins from './plugins.json'
-import sites from './sites.json'
+import designsByType from './designs.json' assert { type: 'json' }
+import packages from './packages.json' assert { type: 'json' }
+import plugins from './plugins.json' assert { type: 'json' }
+import sites from './sites.json' assert { type: 'json' }
 
 // Helper method to construct summary objects
 const unpack = (obj, folder) => Object.fromEntries(

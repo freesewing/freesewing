@@ -1017,7 +1017,7 @@ it("Should raise a warning when an insop operation used an falsy ID", () => {
     new freesewing.Path().withRaise(raise).noop('test').insop('test')
   }
   catch (err) {
-    expect(''+err).to.contain("Cannot read property 'ops")
+    expect(''+err).to.contain("Cannot read properties of undefined (reading 'ops')")
   }
   expect(invalid).to.equal(true);
 });
@@ -1060,7 +1060,7 @@ it("Should raise a warning when calling join without a path", () => {
     paths.a = new Path().move(points.a).line(points.b).join()
   }
   catch (err) {
-    expect(''+err).to.contain("Cannot read property 'ops")
+    expect(''+err).to.contain("Cannot read properties of undefined (reading 'ops')")
   }
   expect(pattern.events.error.length).to.equal(1)
   expect(pattern.events.error[0]).to.equal("Called `Path.join(that)` but `that` is not a `Path` object")
@@ -1074,7 +1074,7 @@ it("Should raise a warning when calling start on a path without drawing operatio
     new freesewing.Path().withRaise(raise).start()
   }
   catch (err) {
-    expect(''+err).to.contain("TypeError: Cannot read property")
+    expect(''+err).to.contain("Cannot read properties of undefined (reading 'to')")
   }
   expect(invalid).to.equal(true);
 });
@@ -1087,7 +1087,7 @@ it("Should raise a warning when calling end on a path without drawing operations
     new freesewing.Path().withRaise(raise).end()
   }
   catch (err) {
-    expect(''+err).to.contain("TypeError: Cannot read property")
+    expect(''+err).to.contain("Cannot read properties of undefined (reading 'type')")
   }
   expect(invalid).to.equal(true);
 });
@@ -1140,7 +1140,7 @@ it("Should raise a warning when splitting a path on a non-point", () => {
     path.split()
   }
   catch (err) {
-    expect(''+err).to.contain("TypeError: Cannot read property")
+    expect(''+err).to.contain("Cannot read properties of undefined (reading 'check')")
   }
   expect(invalid).to.equal(true);
 });
@@ -1164,7 +1164,7 @@ it("Should raise a warning when splitting a path on a non-point", () => {
     path.split()
   }
   catch (err) {
-    expect(''+err).to.contain("TypeError: Cannot read property")
+    expect(''+err).to.contain("Cannot read properties of undefined (reading 'check')")
   }
   expect(invalid).to.equal(true);
 });
