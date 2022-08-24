@@ -46,6 +46,8 @@ export default class PdfMaker {
 	/** the height of the entire svg, in points */
 	svgHeight
 
+	pageCount = 0
+
 	constructor({svg, settings, pages, strings}) {
 		this.settings = settings
 		this.pagesWithContent = pages.withContent;
@@ -108,26 +110,28 @@ export default class PdfMaker {
 
 	/** generate the cover page for the pdf */
 	async generateCoverPage() {
+
 		// don't make one if it's not requested
 		if (!this.settings.coverPage) {
 			return
 		}
 
-		await this.generateCoverPageTitle()
+		const headerLevel = await this.generateCoverPageTitle()
 
 		//abitrary margin for visual space
 		let coverMargin = 85
-		let coverHeight = this.pdf.page.height - coverMargin * 2
+		let coverHeight = this.pdf.page.height - coverMargin * 2 - headerLevel
 		let coverWidth = this.pdf.page.width - coverMargin * 2
 
 		// add the entire pdf to the page, so that it fills the available space as best it can
-		await SVGtoPDF(this.pdf, this.svg, coverMargin, coverMargin * 1.5, {
+		await SVGtoPDF(this.pdf, this.svg, coverMargin, headerLevel + coverMargin, {
 			width: coverWidth,
 			height: coverHeight,
 			assumePt: false,
 			// use aspect ratio to center it
 			preserveAspectRatio: 'xMidYMid meet'
 		});
+		this.pageCount++
 	}
 
 	async generateCoverPageTitle() {
@@ -161,6 +165,8 @@ export default class PdfMaker {
 		this.pdf.fillColor('#888888')
 		this.pdf.fontSize(10)
 		this.pdf.text(this.strings.url, lineStart, lineLevel)
+
+		return lineLevel
 	}
 
 	/** generate the pages of the pdf */
@@ -185,13 +191,14 @@ export default class PdfMaker {
 		    let y = -h * this.pageHeight + startMargin
 
 		  	// if there was no cover page, the first page already exists
-		    if (this.settings.coverPage || h+w > 0) {
+		    if (this.pageCount > 0) {
 		    	// otherwise make a new page
 		    	this.pdf.addPage()
 		    }
 
 		    // add the pdf to the page, offset by the page distances
 		    await SVGtoPDF(this.pdf, this.svg, x, y, options)
+		    this.pageCount++;
 		  }
 		}
 	}

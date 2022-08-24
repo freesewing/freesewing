@@ -1,6 +1,6 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import WorkbenchWrapper from 'shared/components/wrappers/workbench'
+import WorkbenchWrapper from 'shared/components/wrappers/workbench.js'
 import { useRouter } from 'next/router'
 import Layout from 'site/components/layouts/lab'
 

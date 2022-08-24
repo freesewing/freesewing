@@ -11,7 +11,7 @@ import Modal from 'shared/components/modal'
 import Measurements from 'shared/components/workbench/measurements/index.js'
 import LabDraft from 'shared/components/workbench/draft/index.js'
 import LabSample from 'shared/components/workbench/sample.js'
-import ExportDraft from 'shared/components/workbench/exporting/index'
+import ExportDraft from 'shared/components/workbench/exporting/index.js'
 import GistAsJson from 'shared/components/workbench/json.js'
 import GistAsYaml from 'shared/components/workbench/yaml.js'
 import DraftEvents from 'shared/components/workbench/events.js'
@@ -113,6 +113,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   // Generate the draft here so we can pass it down to both the view and the options menu
   let draft = false
   if (['draft', 'events', 'test', 'printingLayout'].indexOf(gist._state?.view) !== -1) {
+    gist.embed = true
     // get the appropriate layout for the view
     const layout = gist.layouts?.[gist._state.view] || gist.layout || true
     // hand it separately to the design
