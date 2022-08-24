@@ -1,9 +1,5 @@
 import pkg from '../package.json'
 
-const deprecated =
-  "The 'goreNumber' property for the gore macro is deprecated " +
-  "and will be removed in a future version. Please use 'gores' instead"
-
 export default {
   name: pkg.name,
   version: pkg.version,
@@ -12,13 +8,11 @@ export default {
   },
   macros: {
     gore: function (so) {
-      let from = so.from
-      // TODO: Drop so.goreNumber in v3, it's deprecated
-      let gores = so.gores || so.goreNumber //number of gores for the complete sphere
-      if (so.goreNumber) console.log(deprecated)
-      let radius = so.radius //radius of the sphere
-      let prefix = so.prefix
-      let extraLength = so.extraLength //the length of the straight section after a complete semisphere
+      const from = so.from
+      const gores = so.gores
+      const radius = so.radius //radius of the sphere
+      const prefix = so.prefix
+      const extraLength = so.extraLength //the length of the straight section after a complete semisphere
 
       this.points[prefix + 'p1'] = from.shift(0, (radius * Math.PI) / 2 + extraLength)
       this.points[prefix + 'Cp1'] = this.points[prefix + 'p1'].shift(

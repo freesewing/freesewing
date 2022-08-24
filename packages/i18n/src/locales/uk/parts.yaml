@@ -9,13 +9,13 @@ bentFront: Перед Бент
 bentSleeve: Рукав Бент
 bentTopSleeve: Верх рукава Бент
 bentUnderSleeve: Низ рукава Бент
-buttonholePlacket: Деталь під отвір для ґудзика
-buttonPlacket: Деталь під ґудзик
+buttonholePlacket: Шліц під отвір для ґудзика
+buttonPlacket: Шліц під ґудзик
 collar: Комір
 collarStand: Стійка під комір
 cuff: Манжет
-fabricTail: Fabric tail
-fabricTip: Fabric tip
+fabricTail: Деталь хвоста
+fabricTip: Деталь кута
 frontBase: Низ переду
 frontFacing: Лицьовий бік
 front: Переднє полотнище
@@ -27,10 +27,10 @@ hoodCenter: Центр капюшону
 hood: Капюшон
 hoodSide: Сторона капюшону
 inset: Вставка
-interfacingTail: Interfacing tail
-interfacingTip: Interfacing tip
-liningTail: Lining tail
-liningTip: Lining tip
+interfacingTail: Деблерінова деталь хвоста
+interfacingTip: Дублерінова деталь кута
+liningTail: Деталь підкладки хвоста
+liningTip: Деталь підкладки кута
 loop: Петелька
 panel1: Панель 1
 panel2: Панель 2
@@ -39,13 +39,13 @@ panel4: Панель 4
 panel5: Панель 5
 panel6: Панель 6
 panels: Панелі
-pocketBag: Pocket bag
+pocketBag: Мішковина кишені
 pocketFacing: Зовнішня частина кишені
-pocketInterfacing: Pocket interfacing
+pocketInterfacing: Деталь кишені з флізеліну
 pocket: Кишеня
 pocketWelt: Кишенькова листочка
 side: Бік
-sleeveBase: Sleeve base
+sleeveBase: Основа рукава
 sleevecap: Окат рукава
 sleevePlacketOverlap: Верх шліца
 sleevePlacketUnderlap: Низ шліца

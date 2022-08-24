@@ -35,4 +35,4 @@ const config = {
 }
 ```
 
-[aaron]: https://github.com/freesewing/freesewing/blob/develop/packages/aaron/config/index.js
+[aaron]: https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/aaron/config/index.js

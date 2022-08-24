@@ -4,7 +4,7 @@ title: "Sleeve placket length"
 
 ***
 
-![Sleeve placket length](sleeveplacketlength.svg)
+![Довжина шліца](sleeveplacketlength.svg)
 
 How long do you want the sleeve placket to be?
 

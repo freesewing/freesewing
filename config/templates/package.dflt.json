@@ -25,10 +25,10 @@
   "files": ["dist/*", "README.md"],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": ">=16.0.0",
+    "npm": ">=8"
   }
 }

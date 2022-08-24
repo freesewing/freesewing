@@ -30,25 +30,25 @@ export default function (partNumber, part) {
 
   let sectionWidth = (w * 2) / sections
   let neckWidth = sectionWidth * options.neckWidth
-  let legWidth = (w * options.legWidth * options.bottomTopLegRatio * 3.1415) / 2
-  let legAdjustedWidth = legWidth * options.bottomTopLegRatio
-  let legLength = ((w * 2) / 3.1415) * options.legLength
+  let armWidth = (w * options.armWidth * options.bottomTopArmRatio * 3.1415) / 2
+  let armAdjustedWidth = armWidth * options.bottomTopArmRatio
+  let armLength = ((w * 2) / 3.1415) * options.armLength
   if (options.type == 'octopus') {
-    legLength *= 2
+    armLength *= 2
   }
   if (options.type == 'squid') {
-    legLength *= 1.8
+    armLength *= 1.8
     if (partNumber == 1) {
-      legLength *= 1.2
+      armLength *= 1.2
     }
   }
 
   // console.log({ w: w })
   // console.log({ sectionWidth: sectionWidth })
   // console.log({ neckWidth: neckWidth })
-  // console.log({ legAdjustedWidth: w * options.legWidth * options.bottomTopLegRatio })
-  // console.log({ toplegWidth: legAdjustedWidth })
-  // console.log({ legLength: legLength })
+  // console.log({ armAdjustedWidth: w * options.armWidth * options.bottomTopArmRatio })
+  // console.log({ toparmWidth: armAdjustedWidth })
+  // console.log({ armLength: armLength })
 
   points.topLeft = new Point(-1 * w, -1 * h)
   points.topRight = new Point(w, -1 * h)
@@ -136,12 +136,12 @@ export default function (partNumber, part) {
   points.skirtTopMiddle = points.sectionBottomLeft.shift(0, neckWidth / 2).shift(270, neckWidth / 3)
   points.skirtBottomLeft2 = points.skirtTopMiddle.shift(
     270 - 360 / sections / 2,
-    (w * options.legWidth * options.bottomTopLegRatio) /
+    (w * options.armWidth * options.bottomTopArmRatio) /
       2 /
       Math.sin(utils.deg2rad(360 / sections / 2))
   )
   points.skirtBottomLeft3 = new Point(
-    points.sectionTop.x - legAdjustedWidth / 2,
+    points.sectionTop.x - armAdjustedWidth / 2,
     points.skirtBottomLeft2.y
   )
   if (options.type == 'octoplushy') {
@@ -151,32 +151,32 @@ export default function (partNumber, part) {
     )
   }
   points.skirtBottomLeft = points.skirtBottomLeft3.clone()
-  points.legTopLeft = utils.beamIntersectsX(
+  points.armTopLeft = utils.beamIntersectsX(
     points.skirtBottomLeft,
     points.skirtBottomLeft.shift(270 + 30, 100),
-    points.sectionTop.x - legAdjustedWidth / 2
+    points.sectionTop.x - armAdjustedWidth / 2
   )
-  points.legTopLeftCp2 = points.legTopLeft.shift(
+  points.armTopLeftCp2 = points.armTopLeft.shift(
     90,
-    points.skirtBottomLeft.dist(points.legTopLeft) / 2
+    points.skirtBottomLeft.dist(points.armTopLeft) / 2
   )
-  points.legTopLeftCp1 = points.legTopLeft.shift(270, legLength / 10)
+  points.armTopLeftCp1 = points.armTopLeft.shift(270, armLength / 10)
 
-  points.legBottom = points.legTopLeft
-    .shift(270, legLength + legAdjustedWidth / 4)
-    .shift(0, legAdjustedWidth / 2)
+  points.armBottom = points.armTopLeft
+    .shift(270, armLength + armAdjustedWidth / 4)
+    .shift(0, armAdjustedWidth / 2)
 
-  points.legBottomLeft = points.legBottom
-    .shift(90, (legAdjustedWidth / 2) * (1 - options.legTaper))
-    .shift(180, (legAdjustedWidth / 2) * (1 - options.legTaper))
-  points.legBottomLeftCp2 = points.legBottomLeft.shift(90, legLength / 10)
-  points.legBottomLeftCp1 = points.legBottomLeft.shift(
+  points.armBottomLeft = points.armBottom
+    .shift(90, (armAdjustedWidth / 2) * (1 - options.armTaper))
+    .shift(180, (armAdjustedWidth / 2) * (1 - options.armTaper))
+  points.armBottomLeftCp2 = points.armBottomLeft.shift(90, armLength / 10)
+  points.armBottomLeftCp1 = points.armBottomLeft.shift(
     270,
-    (legAdjustedWidth / 2) * (1 - options.legTaper) * c
+    (armAdjustedWidth / 2) * (1 - options.armTaper) * c
   )
-  points.legBottomCp2 = points.legBottom.shift(
+  points.armBottomCp2 = points.armBottom.shift(
     180,
-    (legAdjustedWidth / 2) * (1 - options.legTaper) * c
+    (armAdjustedWidth / 2) * (1 - options.armTaper) * c
   )
 
   if (options.type == 'octopus') {
@@ -200,15 +200,15 @@ export default function (partNumber, part) {
 
     points.skirtBottomLeft = points.skirtBottomLeft.shift(
       pSkirtLeft.shiftAlong(0.1).angle(points.skirtBottomLeft),
-      legWidth
+      armWidth
     )
-    points.legTopLeft = points.legTopLeft.shift(270, legWidth * 1.6)
-    points.legTopLeftCp1 = points.legTopLeft.shift(270, legWidth / 2)
-    points.legTopLeftCp2 = points.legTopLeft.shift(90, legWidth / 2)
+    points.armTopLeft = points.armTopLeft.shift(270, armWidth * 1.6)
+    points.armTopLeftCp1 = points.armTopLeft.shift(270, armWidth / 2)
+    points.armTopLeftCp2 = points.armTopLeft.shift(90, armWidth / 2)
   }
   if (options.type == 'squid') {
-    points.skirtBottomLeft = points.legTopLeft.clone()
-    points.legTopLeftCp2 = points.legTopLeft.clone()
+    points.skirtBottomLeft = points.armTopLeft.clone()
+    points.armTopLeftCp2 = points.armTopLeft.clone()
     let sectionHeight = points.sectionBottom.dist(points.sectionTop)
     points.sectionTop = points.sectionTop.shift(90, sectionHeight)
     points.sectionTopCp1 = points.sectionTopCp1.shift(90, sectionHeight)
@@ -217,23 +217,23 @@ export default function (partNumber, part) {
     points.sectionLeftCp2 = points.sectionLeftCp2.shift(90, sectionHeight / 3)
 
     points.tentacleLeft = utils.beamIntersectsX(
-      points.legBottomLeft,
-      points.legBottomLeft.shift(180 + 70, 100),
-      -1.2 * legAdjustedWidth
+      points.armBottomLeft,
+      points.armBottomLeft.shift(180 + 70, 100),
+      -1.2 * armAdjustedWidth
     )
     points.tentacleLeftCp2 = points.tentacleLeft.shift(
       90,
-      points.legBottomLeft.dist(points.tentacleLeft) / 3
+      points.armBottomLeft.dist(points.tentacleLeft) / 3
     )
     points.tentacleLeftCp1 = points.tentacleLeft.shift(
       270,
-      points.legBottomLeft.dist(points.tentacleLeft) / 3
+      points.armBottomLeft.dist(points.tentacleLeft) / 3
     )
 
     if (partNumber == 1) {
-      points.legBottomLeftCp1 = points.legBottomLeft.shift(270, legAdjustedWidth * c)
-      points.legBottom = points.legBottom.flipY(points.tentacleLeft)
-      points.legBottomCp2 = points.legBottomCp2.flipY(points.tentacleLeft)
+      points.armBottomLeftCp1 = points.armBottomLeft.shift(270, armAdjustedWidth * c)
+      points.armBottom = points.armBottom.flipY(points.tentacleLeft)
+      points.armBottomCp2 = points.armBottomCp2.flipY(points.tentacleLeft)
 
       let pLeftSection = new Path()
         .move(points.sectionLeft)
@@ -273,13 +273,13 @@ export default function (partNumber, part) {
   points.sectionBottomRight = points.sectionBottomLeft.flipX(points.sectionTop)
   points.sectionBottomRightCp2 = points.sectionBottomLeftCp1.flipX(points.sectionTop)
   points.skirtBottomRight = points.skirtBottomLeft.flipX(points.sectionTop)
-  points.legTopRightCp1 = points.legTopLeftCp2.flipX(points.sectionTop)
-  points.legTopRight = points.legTopLeft.flipX(points.sectionTop)
-  points.legTopRightCp2 = points.legTopLeftCp1.flipX(points.sectionTop)
-  points.legBottomRightCp1 = points.legBottomLeftCp2.flipX(points.sectionTop)
-  points.legBottomRight = points.legBottomLeft.flipX(points.sectionTop)
-  points.legBottomRightCp2 = points.legBottomLeftCp1.flipX(points.sectionTop)
-  points.legBottomCp1 = points.legBottomCp2.flipX(points.sectionTop)
+  points.armTopRightCp1 = points.armTopLeftCp2.flipX(points.sectionTop)
+  points.armTopRight = points.armTopLeft.flipX(points.sectionTop)
+  points.armTopRightCp2 = points.armTopLeftCp1.flipX(points.sectionTop)
+  points.armBottomRightCp1 = points.armBottomLeftCp2.flipX(points.sectionTop)
+  points.armBottomRight = points.armBottomLeft.flipX(points.sectionTop)
+  points.armBottomRightCp2 = points.armBottomLeftCp1.flipX(points.sectionTop)
+  points.armBottomCp1 = points.armBottomCp2.flipX(points.sectionTop)
 
   if (options.type == 'squid') {
     points.sectionMidRightCp1 = points.sectionMidLeftCp2.flipX(points.sectionTop)
@@ -292,15 +292,15 @@ export default function (partNumber, part) {
 
   if (partNumber == 0) {
     store.set('sectionWidth', sectionWidth)
-    store.set('legSkirtWidth', points.skirtBottomLeft.dist(points.skirtBottomRight))
-    store.set('legSkirtRadius', points.skirtBottomLeft.y - points.skirtTopMiddle.y)
-    store.set('legSkirtToTopAngle', points.skirtBottomLeft.angle(points.legTopLeft))
+    store.set('armSkirtWidth', points.skirtBottomLeft.dist(points.skirtBottomRight))
+    store.set('armSkirtRadius', points.skirtBottomLeft.y - points.skirtTopMiddle.y)
+    store.set('armSkirtToTopAngle', points.skirtBottomLeft.angle(points.armTopLeft))
   }
 
-  paths.legBottom = new Path()
-    .move(points.legBottomLeft)
-    .curve(points.legBottomLeftCp1, points.legBottomCp2, points.legBottom)
-    .curve(points.legBottomCp1, points.legBottomRightCp2, points.legBottomRight)
+  paths.armBottom = new Path()
+    .move(points.armBottomLeft)
+    .curve(points.armBottomLeftCp1, points.armBottomCp2, points.armBottom)
+    .curve(points.armBottomCp1, points.armBottomRightCp2, points.armBottomRight)
     .setRender(false)
 
   if (options.type == 'squid') {
@@ -317,11 +317,11 @@ export default function (partNumber, part) {
       .setRender(false)
     paths.skirtLeft = new Path()
       .move(points.sectionBottomLeft)
-      .curve(points.sectionBottomLeftCp1, points.legTopLeftCp2, points.legTopLeft)
+      .curve(points.sectionBottomLeftCp1, points.armTopLeftCp2, points.armTopLeft)
       .setRender(false)
     paths.skirtRight = new Path()
-      .move(points.legTopRight)
-      .curve(points.legTopRightCp1, points.sectionBottomRightCp2, points.sectionBottomRight)
+      .move(points.armTopRight)
+      .curve(points.armTopRightCp1, points.sectionBottomRightCp2, points.sectionBottomRight)
       .setRender(false)
     if (partNumber == 1) {
       paths.sectionLeft = new Path()
@@ -333,12 +333,12 @@ export default function (partNumber, part) {
         .curve(points.sectionLeftCp1, points.sectionMidLeftCp2, points.sectionMidLeft)
         .curve(points.sectionMidLeftCp1, points.sectionBottomLeftCp2, points.sectionBottomLeft)
         .setRender(false)
-      paths.legBottom = new Path()
-        .move(points.legBottomLeft)
-        .curve(points.legBottomLeftCp1, points.tentacleLeftCp2, points.tentacleLeft)
-        .curve(points.tentacleLeftCp1, points.legBottomCp2, points.legBottom)
-        .curve(points.legBottomCp1, points.tentacleRightCp2, points.tentacleRight)
-        .curve(points.tentacleRightCp1, points.legBottomRightCp2, points.legBottomRight)
+      paths.armBottom = new Path()
+        .move(points.armBottomLeft)
+        .curve(points.armBottomLeftCp1, points.tentacleLeftCp2, points.tentacleLeft)
+        .curve(points.tentacleLeftCp1, points.armBottomCp2, points.armBottom)
+        .curve(points.armBottomCp1, points.tentacleRightCp2, points.tentacleRight)
+        .curve(points.tentacleRightCp1, points.armBottomRightCp2, points.armBottomRight)
         .setRender(false)
     }
   } else {
@@ -351,24 +351,24 @@ export default function (partNumber, part) {
       .move(points.sectionBottomRight)
       .curve(points.sectionBottomRightCp1, points.sectionRightCp2, points.sectionRight)
       .setRender(false)
-    if (points.skirtBottomLeft.sitsRoughlyOn(points.legTopLeft)) {
+    if (points.skirtBottomLeft.sitsRoughlyOn(points.armTopLeft)) {
       paths.skirtLeft = new Path()
         .move(points.sectionBottomLeft)
         .curve(points.sectionBottomLeftCp1, points.skirtBottomLeft, points.skirtBottomLeft)
         .setRender(false)
       paths.skirtRight = new Path()
-        .move(points.legTopRight)
+        .move(points.armTopRight)
         .curve(points.skirtBottomRight, points.sectionBottomRightCp2, points.sectionBottomRight)
         .setRender(false)
     } else {
       paths.skirtLeft = new Path()
         .move(points.sectionBottomLeft)
         .curve(points.sectionBottomLeftCp1, points.skirtBottomLeft, points.skirtBottomLeft)
-        .curve(points.skirtBottomLeft, points.legTopLeftCp2, points.legTopLeft)
+        .curve(points.skirtBottomLeft, points.armTopLeftCp2, points.armTopLeft)
         .setRender(false)
       paths.skirtRight = new Path()
-        .move(points.legTopRight)
-        .curve(points.legTopRightCp1, points.skirtBottomRight, points.skirtBottomRight)
+        .move(points.armTopRight)
+        .curve(points.armTopRightCp1, points.skirtBottomRight, points.skirtBottomRight)
         .curve(points.skirtBottomRight, points.sectionBottomRightCp2, points.sectionBottomRight)
         .setRender(false)
     }
@@ -378,9 +378,9 @@ export default function (partNumber, part) {
     .move(points.sectionTop)
     .join(paths.sectionLeft)
     .join(paths.skirtLeft)
-    .curve(points.legTopLeftCp1, points.legBottomLeftCp2, points.legBottomLeft)
-    .join(paths.legBottom)
-    .curve(points.legBottomRightCp1, points.legTopRightCp2, points.legTopRight)
+    .curve(points.armTopLeftCp1, points.armBottomLeftCp2, points.armBottomLeft)
+    .join(paths.armBottom)
+    .curve(points.armBottomRightCp1, points.armTopRightCp2, points.armTopRight)
     .join(paths.skirtRight)
     .join(paths.sectionRight)
     .curve(points.sectionRightCp1, points.sectionTopCp2, points.sectionTop)
@@ -454,43 +454,43 @@ export default function (partNumber, part) {
         .attr('class', 'hint dotted')
     }
     if (options.type == 'octopus') {
-      points.skirtLegLeft = utils.curveIntersectsX(
+      points.skirtArmLeft = utils.curveIntersectsX(
         points.sectionBottomLeft,
         points.sectionBottomLeftCp1,
         points.skirtBottomLeft,
         points.skirtBottomLeft,
-        points.legTopLeft.x
+        points.armTopLeft.x
       )
-      points.skirtLegRight = points.skirtLegLeft.flipX(points.sectionTop)
-      paths.legLeftLine = new Path()
-        .move(points.skirtLegLeft)
-        .line(points.legTopLeft)
+      points.skirtArmRight = points.skirtArmLeft.flipX(points.sectionTop)
+      paths.armLeftLine = new Path()
+        .move(points.skirtArmLeft)
+        .line(points.armTopLeft)
         .attr('data-text', 'stitch line')
         .attr('data-text-class', 'center')
         .attr('class', 'hint dotted')
-      paths.legRightLine = new Path()
-        .move(points.legTopRight)
-        .line(points.skirtLegRight)
+      paths.armRightLine = new Path()
+        .move(points.armTopRight)
+        .line(points.skirtArmRight)
         .attr('data-text', 'stitch line')
         .attr('data-text-class', 'center')
         .attr('class', 'hint dotted')
     }
     points.sectionTop.attr('data-text', 'A').attr('data-text-class', 'center')
-    points.legTopLeft.attr('data-text', 'B').attr('data-text-class', 'center')
-    points.legTopRight.attr('data-text', 'B').attr('data-text-class', 'center')
+    points.armTopLeft.attr('data-text', 'B').attr('data-text-class', 'center')
+    points.armTopRight.attr('data-text', 'B').attr('data-text-class', 'center')
 
     snippets.left = new Snippet('notch', points.sectionLeft)
     snippets.right = new Snippet('notch', points.sectionRight)
     snippets.bottomLeft = new Snippet('notch', points.sectionBottomLeft)
     snippets.bottomRight = new Snippet('notch', points.sectionBottomRight)
     for (var i = 0; i < 4; i++) {
-      snippets[`legLeft${i}`] = new Snippet(
+      snippets[`armLeft${i}`] = new Snippet(
         'notch',
-        points.legTopLeft.shiftFractionTowards(points.legBottomLeft, i / 4)
+        points.armTopLeft.shiftFractionTowards(points.armBottomLeft, i / 4)
       )
-      snippets[`legRight${i}`] = new Snippet(
+      snippets[`armRight${i}`] = new Snippet(
         'notch',
-        points.legTopRight.shiftFractionTowards(points.legBottomRight, i / 4)
+        points.armTopRight.shiftFractionTowards(points.armBottomRight, i / 4)
       )
     }
 
@@ -507,14 +507,14 @@ export default function (partNumber, part) {
       y: points.sectionTop.y - sa,
     })
     macro('hd', {
-      from: points.legTopLeft,
-      to: points.legTopRight,
-      y: points.legTopRight.y,
+      from: points.armTopLeft,
+      to: points.armTopRight,
+      y: points.armTopRight.y,
     })
     macro('hd', {
-      from: points.legBottomLeft,
-      to: points.legBottomRight,
-      y: points.legBottom.y + sa + 10,
+      from: points.armBottomLeft,
+      to: points.armBottomRight,
+      y: points.armBottom.y + sa + 10,
     })
 
     macro('vd', {
@@ -534,7 +534,7 @@ export default function (partNumber, part) {
     })
     macro('vd', {
       from: points.sectionTop,
-      to: points.legBottom,
+      to: points.armBottom,
       x: points.skirtBottomRight.x + sa + 40,
     })
 
@@ -546,20 +546,20 @@ export default function (partNumber, part) {
       })
       macro('vd', {
         from: points.skirtBottomRight,
-        to: points.legTopRight,
+        to: points.armTopRight,
         x: points.skirtBottomRight.x + sa + 30,
       })
     }
     if (options.type == 'squid') {
       macro('vd', {
-        from: points.legTopLeft,
+        from: points.armTopLeft,
         to: points.sectionBottomLeft,
-        x: points.legTopLeft.x - sa - 10,
+        x: points.armTopLeft.x - sa - 10,
       })
       macro('vd', {
         from: points.sectionBottomLeft,
         to: points.sectionMidLeft,
-        x: points.legTopLeft.x - sa - 10,
+        x: points.armTopLeft.x - sa - 10,
       })
       if (partNumber == 1) {
         macro('hd', {
@@ -583,7 +583,7 @@ export default function (partNumber, part) {
           y: points.finFold.y,
         })
         macro('vd', {
-          from: points.legBottom,
+          from: points.armBottom,
           to: points.tentacleLeft,
           x: points.tentacleLeft.x - sa - 10,
         })

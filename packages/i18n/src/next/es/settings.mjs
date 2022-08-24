@@ -9,7 +9,7 @@ const settings = {
   "paperless.d": "Dibuja un patrón con todas las dimensiones incluidas para que puedas transferirlo sobre tela u otro medio sin la necesidad de imprimir",
   "sabool.t": "Include seam allowance",
   "sabool.d": "Controls whether or not to include seam allowance in your pattern",
-  "sa.t": "Margen de costura",
+  "sa.t": "Seam allowance size",
   "sa.d": "Controla la cantidad de margen de costura incluido en tu patrón",
   "locale.t": "Idioma",
   "locale.d": "Determina el lenguaje utilizado en tu patrón",

@@ -9,7 +9,7 @@ sabool:
   title: Include seam allowance
   description: Controls whether or not to include seam allowance in your pattern
 sa:
-  title: Naadtoeslag
+  title: Seam allowance size
   description: Bepaalt de hoeveelheid naadtoeslag die is inbegrepen in uw patroon
 locale:
   title: Taal

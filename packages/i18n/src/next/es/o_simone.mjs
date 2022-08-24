@@ -3,6 +3,8 @@
  * All edits will be overwritten on the next (pre)build
  */
 const o_simone = {
+  "bustAlignedButtons.t": "Bust-aligned buttons",
+  "bustAlignedButtons.d": "Optional button spacing strategies to ensure a button at the bustline",
   "bustDartAngle.t": "Ángulo de dardos de polvo",
   "bustDartAngle.d": "Controla el ángulo por el cual el (lado) dardos de polvo tiene pendiente descendente",
   "bustDartLength.t": "Longitud del dart del polvo",

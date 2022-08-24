@@ -1,6 +1,12 @@
 # Change log for: @freesewing/cathrin
 
 
+## 2.22.0 (2022-08-23)
+
+### Fixed
+
+ - Removed seam allowance from Part1a foldline. Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

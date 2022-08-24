@@ -2,7 +2,7 @@
 title: "Courbure de l'emmanchure arrière"
 ---
 
----
+***
 
 ![L'effet de l'option courbure du blindage arrière sur le motif](sample.png)
 

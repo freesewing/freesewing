@@ -9,7 +9,7 @@ const settings = {
   "paperless.d": "Zeichnet ein Schnittmuster mit allen benötigten Dimensionen, sodass es direkt auf den Stoff oder ein anderes Medium übertragen werden kann, ohne es auszudrucken",
   "sabool.t": "Include seam allowance",
   "sabool.d": "Controls whether or not to include seam allowance in your pattern",
-  "sa.t": "Nahtzugabe",
+  "sa.t": "Seam allowance size",
   "sa.d": "Steuert die Breite der Nahtzugabe, die in deinem Schnittmuster enthalten ist",
   "locale.t": "Sprache",
   "locale.d": "Legt die für deine Schnittmuster verwendete Sprache fest",

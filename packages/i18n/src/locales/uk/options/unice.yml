@@ -1,13 +1,13 @@
 fabricStretchX:
-  title: Fabric stretch (horizontal)
-  description: Adjust this for more or less stretchy fabrics
+  title: Еластичність тканини (горизонтальна)
+  description: Налаштуйте це для більш або менш еластичних тканин
 fabricStretchY:
-  title: Fabric stretch (vertical)
-  description: Adjust this for more or less stretchy fabrics
+  title: Еластичність тканини (вертикальна)
+  description: Налаштуйте це для більш або менш еластичних тканин
 adjustStretch:
-  title: Adjust stretch
-  description: This option allows you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is
+  title: Налаштувати розтягування
+  description: За допомогою цього параметру можна задати максимальне розтягування, яке дозволяє тканина у горизонтальному та вертикальному напрямках; Якщо параметр вимкнено, використовуються базові значення розтягування
 useCrossSeam:
-  title: Use crossseam
-  description: When enabled, the total height of the pattern pieces combined will match the cross seam length minus the front and back rise. When disabled, the total height depends on the gusset length option.
+  title: Використати довжину посадки
+  description: Якщо увімкнути, загальна висота елементів викрійки буде дорівнювати довжині посадки не включаючи переднє і заднє збільшення довжини. Якщо вимкнути, загальна висота буде залежати від параметра довжини ластовиці.
 

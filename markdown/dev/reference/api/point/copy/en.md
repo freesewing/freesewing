@@ -16,7 +16,7 @@ Point point.copy()
 ###### Copy vs clone
 
 this `Point.copy()` method will only copy the point's coordinates.
-To also copy the attributes, use [`Point.clone()`](reference/api/point/clone/) instead.
+To also copy the attributes, use [`Point.clone()`](/reference/api/point/clone/) instead.
 
 </Note>
 

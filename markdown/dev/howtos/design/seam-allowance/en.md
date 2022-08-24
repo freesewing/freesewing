@@ -8,7 +8,7 @@ about: Adding seam allowance or hem allowance is easy to do
 
 ##### See this example in our source code
 
-- [packages/bruce/src/inset.js](https://github.com/freesewing/freesewing/blob/develop/packages/bruce/src/inset.js#L34)
+- [designs/bruce/src/inset.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/bruce/src/inset.js#L32)
 
 </Note>
 

@@ -21,7 +21,7 @@ export const sharedPluginTests = plugin => {
       const chunks = plugin.version.split('.')
       if (chunks.length > 3) {
         chai.expect(plugin.version.split('.').length).to.equal(4)
-        chai.expect(chunks[2]).to.contain('-rc')
+        chai.expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
       }
       else chai.expect(plugin.version.split('.').length).to.equal(3)
     })

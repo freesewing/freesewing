@@ -6,9 +6,9 @@ title: Create a new design based on an existing design
 
 ##### See this example in our source code
 
-- [packages/aaron/config/index.js](https://github.com/freesewing/freesewing/blob/72f34101792bda4d8e553c3479daa63cb461f3c5/packages/aaron/config/index.js#L34)
-- [packages/aaron/src/index.js](https://github.com/freesewing/freesewing/blob/72f34101792bda4d8e553c3479daa63cb461f3c5/packages/aaron/src/index.js#L2)
-- [packages/carlita/src/index.js](https://github.com/freesewing/freesewing/blob/8474477911daed3c383700ab29c9565883f16d66/packages/carlita/src/index.js#L25)
+- [designs/aaron/config/index.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/aaron/config/index.js#L36)
+- [designs/aaron/src/index.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/aaron/src/index.js#L2)
+- [designs/carlita/src/index.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/carlita/src/index.js#L25)
 
 </Note>
 
@@ -28,7 +28,7 @@ If you want to extend an existing design, you'll have to do some work yourself.
 
 #### Start from scratch
 
-First step is to spin up the development environment. Pick *from scratch* when prompted:
+First step is to spin up the development environment. Pick _from scratch_ when prompted:
 
 ```bash
 npx @freesewing/new-design

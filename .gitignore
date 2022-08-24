@@ -60,7 +60,6 @@ packages/utils/tiler
 packages/utils/validateEmail
 packages/utils/validateTld
 
-
 # Any NPM or Yarn lock files
 designs/*/package-lock.json
 designs/*/yarn.lock

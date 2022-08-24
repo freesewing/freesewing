@@ -6,7 +6,6 @@
   "plugin-buttons": "A FreeSewing plugin that provides button, buttonhole, and snap snippets",
   "plugin-cutonfold": "A FreeSewing plugin to add cut-on-fold indicators on your patterns",
   "plugin-dimension": "A FreeSewing plugin to add dimensions to your (paperless) pattern",
-  "plugin-export-dxf": "A FreeSewing plugin to export your pattern as DXF-ASTM",
   "plugin-flip": "A FreeSewing plugin to flip parts horizontally",
   "plugin-gore": "A FreeSewing plugin to generate gores for a semi-sphere or dome",
   "plugin-grainline": "A FreeSewing plugin to add grainline indicators on your patterns",
@@ -21,7 +20,6 @@
   "plugin-svgattr": "A FreeSewing plugin to set SVG attributes",
   "plugin-theme": "A FreeSewing plugin that provides a default theme",
   "plugin-title": "A FreeSewing plugin to add a title to your pattern parts",
-  "plugin-validate": "A FreeSewing plugin that validates aspects of your code",
   "plugin-versionfree-svg": "A FreeSewing plugin to keep version info out of your SVG to allow easy diffs across versions"
 }
 

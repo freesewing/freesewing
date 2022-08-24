@@ -1,6 +1,12 @@
 # Change log for: @freesewing/hugo
 
 
+## 2.22.0 (2022-08-23)
+
+### Added
+
+ - Support drafting for high bust Closes [#802](https://github.com/freesewing/freesewing/issues/802)
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

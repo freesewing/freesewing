@@ -1,12 +1,12 @@
 hungry:
-  title: Hungry
-  description: Changes the mouth shape to convey Hi is hungry
+  title: Голод
+  description: Змінює форму рота, аби показати, що Ку-ку голодна
 nosePointiness:
-  title: Nose pointiness
-  description: Controls how pointy Hi's nose is
+  title: Загостреність носика
+  description: Контролює наскільки гострий носик Ку-ку матиме
 aggressive:
-  title: Aggressive
-  description: Give Hi pointy teeth, or not
+  title: Лють
+  description: Надати Ку-ку гострі зуби, чи ні
 size:
-  title: Size
-  description: Sharks come in all sizes, and so does Hi
+  title: Розмір
+  description: Акули бувають різних розмірів, і Ку-ку теж

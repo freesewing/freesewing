@@ -57,6 +57,8 @@ const patterns = {
   "lunetius.d": "Lunetius es una lacerna, una capa histórica romana",
   "noble.t": "Noble, patrón base de torso",
   "noble.d": "Noble es un patrón base de torso con corte de príncipe o princesa",
+  "octoplushy.t": "Octoplushy the octopus",
+  "octoplushy.d": "A multi-armed companion for next-level hugs",
   "paco.t": "Paco, pantalones largos",
   "paco.d": "Paco son pantalones de verano casual pero con estilo.",
   "penelope.t": "Penelope, falda de tubo",

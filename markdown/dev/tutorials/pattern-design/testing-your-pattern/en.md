@@ -31,7 +31,7 @@ You have a number of ways to test your pattern:
 - Test measurements
 - Test models
 
-The [API docs on sampling](/reference/api/pattern/#sample) have all the details on how this works, but
+The [API docs on sampling](/reference/api/pattern/sample) have all the details on how this works, but
 for now we'll just look at the end result of each of these.
 
 ## Testing pattern options

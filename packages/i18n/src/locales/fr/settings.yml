@@ -9,7 +9,7 @@ sabool:
   title: Include seam allowance
   description: Controls whether or not to include seam allowance in your pattern
 sa:
-  title: Marge de couture
+  title: Seam allowance size
   description: Contrôle la valeur de la marge de couture incluse dans votre patron
 locale:
   title: Langue

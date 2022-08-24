@@ -2,7 +2,7 @@
 title: "Hintere Armlochkrümmung"
 ---
 
----
+***
 
 ![Der Effekt der Krümmung des hinteren Armlochs auf das Schnittmuster](sample.png)
 

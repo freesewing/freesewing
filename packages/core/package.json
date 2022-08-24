@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core",
-  "version": "2.21.3",
+  "version": "3.0.0-alpha.0",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -56,10 +56,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": ">=16.0.0",
+    "npm": ">=8"
   }
 }

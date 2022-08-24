@@ -43,7 +43,7 @@ export default {
     'shoulderToShoulder',
     'waist',
   ],
-  optionalMeasurements: [ 'highBust' ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     backBlock: 'base',
     frontBlock: 'backBlock',
@@ -52,6 +52,7 @@ export default {
     frontFacing: 'front',
     frontLining: 'front',
     pocketBag: 'front',
+    pocketFacing: 'front',
   },
   inject: {
     backBlock: 'base',

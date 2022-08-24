@@ -12,19 +12,19 @@ that you should take into account while developing your pattern. They are:
 
 ## Complete
 
-The [complete](/reference/api/settings#complete) setting is a boolean that is either true or false.
+The [complete](/reference/api/settings/complete) setting is a boolean that is either true or false.
 Its goal is to determine whether we should draft a _complete_ pattern, or merely the outline.
 
 ## Paperless
 
-The [paperless](/reference/api/settings#paperless) setting is a boolean that is either true or false.
+The [paperless](/reference/api/settings/paperless) setting is a boolean that is either true or false.
 
 A _paperless_ pattern is a pattern that has extra dimensions so users can trace the
 paper on fabric or paper without having the need to print it.
 
 ## Seam allowance
 
-The [sa](/reference/api/settings#sa) setting is a number that controls the seam allowance.
+The [sa](/reference/api/settings/sa) setting is a number that controls the seam allowance.
 
 Unless `sa` is zero, you should add the requested seam allowance to your pattern.
 

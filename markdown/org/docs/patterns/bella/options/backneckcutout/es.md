@@ -2,7 +2,7 @@
 title: "Corte trasero del cuello"
 ---
 
----
+***
 
 ![El efecto de la opción de recorte del cuello trasero en el patrón](sample.png)
 

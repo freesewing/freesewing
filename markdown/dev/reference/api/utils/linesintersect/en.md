@@ -11,7 +11,7 @@ Point | false utils.linesIntersect(
 )
 ```
 
-Finds the intersection between two line segments. Returns a [Point](#point) object
+Finds the intersection between two line segments. Returns a [Point](../point) object
 for the intersection, or `false` if the lines don't intersect.
 
 <Example part="utils_linesintersect">

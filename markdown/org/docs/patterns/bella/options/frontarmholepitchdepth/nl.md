@@ -2,7 +2,7 @@
 title: "Diepte armsgat vooraan"
 ---
 
----
+***
 
 ![Het effect van de diepte van het voorste armsgat op het patroon](sample.png)
 

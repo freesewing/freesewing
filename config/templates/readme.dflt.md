@@ -7,10 +7,16 @@
 
 {{{info}}}
 
+
+> #### Note: Version 3 is a work in progress
+> 
+> We are working on a new major version (v3) but it is not ready for prime-time.
+> For production use, please refer to our v2 packages (the `latest` on NPM) 
+> or [the `v2` branch in our monorepo](https://github.com/freesewing/freesewing/tree/v2).
+
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* 
-holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
 
 This folder holds: {{{fullname}}}
 

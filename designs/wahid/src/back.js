@@ -107,6 +107,13 @@ export default (part) => {
   paths.dart.render = false
 
   if (complete) {
+    //Grainline
+    points.grainlineBottom = new Point(points.logo.x/2, points.cbNeck.y)
+    points.grainlineTop = new Point(points.grainlineBottom.x, points.gridAnchor.y)
+    macro('grainline', {
+      from: points.grainlineTop,
+      to: points.grainlineBottom,
+    })
     macro('scalebox', { at: new Point(points.logo.x, points.armholePitchCp2.y) })
     if (sa) {
       paths.sa = paths.saBase

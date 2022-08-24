@@ -1,7 +1,7 @@
 ---
 legReduction:
-  title: Leg reduction
-  description: Reduces the leg opening to prevent gaping
+  title: Зменшення радіусу штанини
+  description: Зменшує радіус штанини (шортини :) задля кращого облягання
 elasticWidth:
-  title: Elastic width
-  description: Width of the elastic at the waist
+  title: Ширина гумки
+  description: Контролює ширину гумки на талії
