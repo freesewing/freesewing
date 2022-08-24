@@ -4,7 +4,7 @@ import glob from 'glob'
 import yaml from 'js-yaml'
 import chalk from 'chalk'
 import mustache from 'mustache'
-import conf from '../lerna.json'
+import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
 import {
   publishedSoftware as software,
@@ -13,7 +13,7 @@ import {
   plugins
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
-import rootPackageJson from '../package.json'
+import rootPackageJson from '../package.json' assert { type: 'json' }
 
 // Working directory
 const cwd = process.cwd()
