@@ -406,11 +406,27 @@ describe('isEmpty', () => {
     expect(part.isEmpty()).to.be.true
   })
 
-  it("Should return false if the part has a path", () => {
+  it("Should return true if the part has paths but they have no length", () => {
     let pattern = new freesewing.Pattern();
     let part = new pattern.Part();
-    const { Path, paths }  = part.shorthand()
+    const { Path, paths, Point }  = part.shorthand()
     paths.seam = new Path()
+    expect(part.isEmpty()).to.be.true
+  })
+
+  it("Should return true if the part has paths but they don't render", () => {
+    let pattern = new freesewing.Pattern();
+    let part = new pattern.Part();
+    const { Path, paths, Point }  = part.shorthand()
+    paths.seam = new Path().move(new Point(0,0)).line(new Point(2,3)).setRender(false)
+    expect(part.isEmpty()).to.be.true
+  })
+
+  it("Should return false if the part has a path with length", () => {
+    let pattern = new freesewing.Pattern();
+    let part = new pattern.Part();
+    const { Path, paths, Point }  = part.shorthand()
+    paths.seam = new Path().move(new Point(0,0)).line(new Point(2,3))
 
     expect(part.isEmpty()).to.be.false
   })
@@ -421,6 +437,24 @@ describe('isEmpty', () => {
     const { Point, snippets, Snippet }  = part.shorthand()
     snippets.test = new Snippet('test', new Point(0,0))
 
+    expect(part.isEmpty()).to.be.false
+  })
+
+  it("Should return false if the part has a point that has text", () => {
+    let pattern = new freesewing.Pattern();
+    let part = new pattern.Part();
+    const {Point, points} = part.shorthand()
+    points.test = new Point(0,0)
+    points.test.attributes.set('data-text', 'text')
+    expect(part.isEmpty()).to.be.false
+  })
+
+  it("Should return false if the part has a point that has a circle", () => {
+    let pattern = new freesewing.Pattern();
+    let part = new pattern.Part();
+    const {Point, points} = part.shorthand()
+    points.test = new Point(0,0)
+    points.test.attributes.set('data-circle', 10)
     expect(part.isEmpty()).to.be.false
   })
 })

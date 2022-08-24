@@ -418,15 +418,15 @@ Part.prototype.setCutOnFold = function (p1, p2) {
 Part.prototype.isEmpty = function() {
   if (Object.keys(this.snippets).length > 0) return false
 
-  if (Object.keys(this.paths).length > 0) return false
-
-  for (var p in this.paths) {
-    if (paths[p].length()) return false
+  if (Object.keys(this.paths).length > 0) {
+    for (var p in this.paths) {
+      if (this.paths[p].render && this.paths[p].length()) return false
+    }
   }
 
   for (var p in this.points) {
-    if (points[p].attributes.get('data-text')) return false
-    if (points[p].attributes.get('data-circle')) return false
+    if (this.points[p].attributes.get('data-text')) return false
+    if (this.points[p].attributes.get('data-circle')) return false
   }
 
   return true
