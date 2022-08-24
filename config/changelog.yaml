@@ -22,6 +22,8 @@ Unreleased:
         While v2 versions remain available, this package is no longer supported.
       - The `plugin-export-dxf` package is not part of FreeSewing v3.
         While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/i18n` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
       - The `remark-jargon` package is not part of FreeSewing v3.
         While v2 versions remain available, this package is no longer supported.
         Use `rehype-jargon` instead.

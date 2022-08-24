@@ -1,20 +1,10 @@
 noNamespace:
-  - create-freesewing-pattern
   - rehype-jargon
-  - remark-jargon
-  - gatsby-remark-jargon
 customBuild:
-  - components
-  - create-freesewing-pattern
-  - css-theme
-  - gatsby-remark-jargon
   - i18n
-  - models
   - new-design
   - prettier-config
-  - remark-jargon
   - plugin-bundle
-  - utils
   - rehype-jargon
 skipTests:
   - theo
@@ -66,8 +56,8 @@ packageJson:
   holmes:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
-    # react-scripts doesn't handle .mjs files correctly
-    module: '!'
+    # we no longer publish this
+    private: true
   gatsby-remark-jargon:
     keywords:
       - remark
