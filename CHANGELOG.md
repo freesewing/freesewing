@@ -9,13 +9,14 @@
 
  - The `@freesewing/components` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/css-theme` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
- - The `gatsby-remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `@freesewing/i18n` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/mui-theme` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
- - The `plugin-export-dxf` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
- - The `plugin-export-dxf` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
- - The `remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported. Use `rehype-jargon` instead.
+ - The `@freesewing/pattern-info` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `@freesewing/plugin-export-dxf` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/snapseries` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/utils` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `gatsby-remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported. Use `rehype-jargon` instead.
 
 ### plugin-gore
 
@@ -228,12 +229,6 @@
 
 
 ## 2.21.1 (2022-06-28)
-
-### pattern-info
-
-#### Fixed
-
- - Added Noble to the list
 
 
 ## 2.21.0 (2022-06-27)
@@ -729,12 +724,6 @@
  - Added missing lab namespace for English
 
 ### models
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### pattern-info
 
 #### Changed
 
@@ -1810,15 +1799,6 @@
  - Fixed bug in resolving of shared pattern options
  - Removed optional chaining which broke node v12 support
 
-### pattern-info
-
-#### Changed
-
- - Added Bee pattern
- - Added Lunetius pattern
- - Added Tiberius pattern
- - Added Walburga pattern
-
 
 ## 2.18.0 (2021-09-09)
 
@@ -2485,13 +2465,6 @@
  - Added translation for new Titan options
  - Added translations for Charlie
 
-### pattern-info
-
-#### Added
-
- - Added Charlie
- - Info now also contains deprecated status
-
 
 ## 2.14.0 (2021-03-07)
 
@@ -2545,12 +2518,6 @@
 #### Fixed
 
  - Fixed type in bustsidecode finder code
-
-### pattern-info
-
-#### Fixed
-
- - Make pattern list alphabetic
 
 
 ## 2.13.1 (2021-02-14)
@@ -2895,12 +2862,6 @@
 #### Fixed
 
  - Replaced a few identical files with symlinks
-
-### pattern-info
-
-#### Added
-
- - Added teagan info
 
 
 ## 2.8.1 (2020-08-16)
@@ -4115,12 +4076,6 @@
  - Initial release
 
 ### models
-
-#### Added
-
- - Initial release
-
-### pattern-info
 
 #### Added
 

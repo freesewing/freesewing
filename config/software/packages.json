@@ -4,7 +4,6 @@
   "i18n": "Translations for the FreeSewing project",
   "models": "Body measurements data for a range of default sizes",
   "new-design": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
-  "pattern-info": "Information about available freesewing patterns",
   "prettier-config": "FreeSewing's shared configuration for prettier",
   "rehype-jargon": "A Rehype plugin for jargon terms"
 }
