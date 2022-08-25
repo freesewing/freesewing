@@ -59,6 +59,9 @@ GithubController.prototype.createIssue = function(req, res) {
       for (const user of notify) body += `@${user} `
       if (req.body.userGithub) body += `@${req.body.userGithub} `
       body += " 👋   \nRecreate this:\n\n"
+      body += `- **Lab**: 👉 https://lab.freesewing.dev/v/next/` +
+        `${req.body.design}?from=github&preload=${gist.data.id}`
+      body += "\n\n"
       body += `- **Production**: 👉 https://freesewing.org${path}`
       body += "\n\n"
       if (req.body.userHandle) body += `(user handle: ${req.body.userHandle})`
