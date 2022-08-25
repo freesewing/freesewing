@@ -7,7 +7,6 @@ import render from "./fixtures/render.mjs"
 chai.use(chaiString)
 const expect = chai.expect
 const { version } = pkg
-const round = freesewing.utils.round
 
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();

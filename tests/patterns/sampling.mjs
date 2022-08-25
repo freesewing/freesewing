@@ -1,5 +1,5 @@
 import { nonHumanMeasurements } from './non-human-measurements.mjs'
-import { measurements, withBreasts, withoutBreasts } from '@freesewing/models'
+import { withBreasts, withoutBreasts } from '@freesewing/models'
 import chai from 'chai'
 
 const expect = chai.expect

@@ -3,7 +3,7 @@ import pkg from '../package.json' assert { type: 'json' }
 const { version } = pkg
 
 export default {
-  version: pkg.version,
+  version,
   name: 'legend',
   design: 'Joost De Cock',
   code: 'Joost De Cock',
