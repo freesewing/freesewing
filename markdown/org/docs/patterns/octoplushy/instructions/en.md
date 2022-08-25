@@ -40,7 +40,7 @@ There are a couple of ways to make eyes for the Octoplushy version.
 Before sewing the eyebrows in half, you can stuff the eyebrows to create a more dramatic looking eyebrow.
 
 </Note>
-  
+
 - **Squid**
   - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
   - Repeat with the remaining four head parts to create a second half.

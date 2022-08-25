@@ -39,7 +39,8 @@
     "remark-smartypants": "^2.0.0",
     "svg-to-pdfkit": "^0.1.8",
     "to-vfile": "^7.2.2",
-    "unist-util-visit": "^4.1.0"
+    "unist-util-visit": "^4.1.0",
+    "web-worker": "^1.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

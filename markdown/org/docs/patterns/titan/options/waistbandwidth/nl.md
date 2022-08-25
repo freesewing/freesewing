@@ -2,7 +2,6 @@
 title: "Waistband width"
 - - -
 
-
 Bepaalt de breedte van de tailleband.
 
 ## Effect van deze optie op het patroon

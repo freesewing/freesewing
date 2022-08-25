@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Carlton coat: Fabric Options"
-
-***
+- - -
 
 ### Main Fabric
 

@@ -34,6 +34,9 @@ backArmholeSlant:
 backArmholeCurvature:
   description: Controls how deep the armhole is scooped out at the back
   title: Back armhole curvature
+frontArmholeCurvature:
+  title: Front armhole curvature
+  description: Controls how deep the armhole is scooped out at the front bottom
 frontArmholePitchDepth:
   description: Controls how deep the armhole curts into the front
   title: Front armhole pitch depth

@@ -17,6 +17,6 @@ Weersta aan de verleiding om deze broek in linnen te maken.
 Hoewel linnen perfect is voor hete zomerdagen zou ik het niet aanraden voor deze broek. De elastische taille en zoom betekenen een hel van rimpels en kreuken.
 Gebruik één van onze andere patronen met een aansluitende taille als je een linnen broek wil.
 
-Probeer ook stoffen met veel stretch te vermijden, dit maakt het alleen maar moeilijker om de elastiek te bevestigen. 
+Probeer ook stoffen met veel stretch te vermijden, dit maakt het alleen maar moeilijker om de elastiek te bevestigen.
 
 </Tip>

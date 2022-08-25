@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Biceps ease"
-
-***
+- - -
 
 ![Biceps ease](bicepsease.svg)
 

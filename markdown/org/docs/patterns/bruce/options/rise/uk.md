@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Rise"
-
-***
+- - -
 
 ![The rise option on Bruce](./rise.svg)
 

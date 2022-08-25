@@ -7,6 +7,8 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 const Draft = props => {
   const { draft, patternProps, gist, updateGist, app, bgProps={}, fitLayoutPart = false, layoutType="printingLayout"} = props
 
+  const svgRef = useRef(null);
+  if (!patternProps) return null
   // keep a fresh copy of the layout because we might manipulate it without saving to the gist
   let layout = draft.settings.layout === true ? {
       ...patternProps.autoLayout,
@@ -14,9 +16,7 @@ const Draft = props => {
       height: patternProps.height
     } : {...draft.settings.layout}
 
-  const svgRef = useRef(null);
 
-  if (!patternProps) return null
 
   // Helper method to update part layout and re-calculate width * height
   const updateLayout = (name, config, history=true) => {

@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Cornelius cycling breeches: Cutting Instructions"
-
-***
+- - -
 
 ### Materials
 

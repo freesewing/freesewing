@@ -112,7 +112,7 @@ Dit stiksel is altijd zichtbaar, dus zorg dat de draadkleur bij je stof past en 
 </Tip>
 
 <Tip>
- 
+
 Om te voorkomen dat je zakken uitrekken kan je een stuk niet-elastisch lint tussen de vouw stoppen. Wanneer je stikt wordt dit lint mee vastgemaakt, en zorgt het dat de zak niet uitrekt.
 
 </Tip>
@@ -132,7 +132,7 @@ Zig-zag the edge of the folded-back front piece to finish it and secure it to th
 When you're done, place front piece, lining and pocket bag flat, and give it a good press.
 
 <Tip>
-  
+
 Dit is misschien een goed moment om je nog eens te vertellen dat alle stappen tot nu toe gelden voor de twee broekspijpen.
 
 Gewoon zodat je eraan denkt, de volgende stappen moeten trouwens ook twee keer gedaan worden.
@@ -220,7 +220,7 @@ Press open the seam allowance along the side seams. Do so from the back, and rep
 Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
 
 <Tip>
- 
+
 Een mooi platte zijnaad ziet er geweldig uit, dus neem je tijd om het goed te krijgen.
 
 </Tip>
@@ -728,7 +728,7 @@ Knip de lengte van je riemlusjes gerust bij nadat je ze bevestigt, ze kunnen nam
 Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
 
 <Tip>
- 
+
 Dit is ook een goed moment om je broek te passen en te markeren hoe lang je wil dat ze is na het omzomen.
 
 </Tip>
@@ -778,4 +778,3 @@ While there are machine alternatives, they aren't as neat (blind hem stitch) or 
 ### Stap 56: Knip bij, ruim op en strijk
 
 Trim any loose threads or basting that remains, and give your trousers a good final press.
-

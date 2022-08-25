@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Front cutaway start"
-
-***
+- - -
 
 ![Front cutaway start](frontcutawaystart.svg)
 

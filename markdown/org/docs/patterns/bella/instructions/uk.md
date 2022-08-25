@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Bella body block: Sewing Instructions"
-
-***
+- - -
 
 <Note>
 

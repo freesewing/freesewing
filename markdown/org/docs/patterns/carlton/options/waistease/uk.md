@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Waist ease"
-
-***
+- - -
 
 ![Waist ease](./waistease.svg)
 

@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Walburga Wappenrock: Sewing Instructions"
-
-***
+- - -
 
 <Note>
 

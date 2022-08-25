@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Trayvon tie: Cutting Instructions"
-
-***
+- - -
 
 - **Main fabric**
   - Cut **1 tip**

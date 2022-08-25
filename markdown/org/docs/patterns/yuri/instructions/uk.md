@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Yuri hoodie: Sewing Instructions"
-
-***
+- - -
 
 <Note>
 

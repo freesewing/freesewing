@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Crotch seam angle"
-
-***
+- - -
 
 <Fixme>
 

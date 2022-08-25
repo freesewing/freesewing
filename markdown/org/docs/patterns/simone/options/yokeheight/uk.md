@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Yoke height"
-
-***
+- - -
 
 Controls the height of the yoke seam.
 

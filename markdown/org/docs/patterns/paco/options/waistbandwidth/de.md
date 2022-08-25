@@ -2,7 +2,6 @@
 title: "Waistband width"
 - - -
 
-
 Kontrolliert die Weite des Taillenbundes.
 
 ## Effekt dieser Option auf das Schnittmuster

@@ -2,7 +2,7 @@
 title: "Forme de la pince dos"
 ---
 
----
+***
 
 Contrôle la quantité de formage de la taille dans les fléchettes.
 

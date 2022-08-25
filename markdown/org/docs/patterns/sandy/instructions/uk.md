@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Sandy circle skirt: Sewing Instructions"
-
-***
+- - -
 
 <Warning>
 
