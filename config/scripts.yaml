@@ -18,9 +18,9 @@ _types:
     testci: *testci
 core:
   report: 'nyc report --reporter=html'
-  test: 'nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.js'
-  testci: "nyc --silent npx mocha tests/*.test.js --reporter ../../tests/reporters/terse.js && nyc report --reporter=json"
-  testonly: 'npx mocha tests/*.test.js'
+  test: 'nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.mjs'
+  testci: "nyc --silent npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js && nyc report --reporter=json"
+  testonly: 'npx mocha tests/*.test.mjs'
 i18n:
   prebuild: 'node scripts/prebuilder.mjs'
   test: *test

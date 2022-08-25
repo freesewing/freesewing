@@ -1,4 +1,9 @@
 import { nonHumanMeasurements } from './non-human-measurements.mjs'
+import { measurements, withBreasts, withoutBreasts } from '@freesewing/models'
+import chai from 'chai'
+
+const expect = chai.expect
+const models = { withBreasts, withoutBreasts }
 
 // Some patterns are different
 const isGarment = design => ([
@@ -18,12 +23,9 @@ const deprecated = ['theo']
  *
  * @param string me: Name of the pattern (eg 'aaron')
  * @param object Pattern: pattern constructor
- *
- * @param object expect: Imported chai.expect
- * @param object models: Imported @freesewing/models
- * @param object patterns: Imported @freesewing/pattern-info
+ * @param boolean log: Set to true to log errors
  */
-export const testPatternDrafting = (design, Pattern, expect, models, patterns, log=false) => {
+export const testPatternDrafting = (design, Pattern, log=false) => {
   // Load non-human measurements
   const nonHuman = nonHumanMeasurements(models)
 
@@ -40,11 +42,10 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
     }
   }
 
-  // Figure out whether this is a with(out)breasts pattern
-  const breasts = patterns.withBreasts.indexOf(design) === -1 ? false : true
-
-  const ourModels = models[breasts ? 'withBreasts' : 'withoutBreasts']
-  const measurements = ourModels[breasts ? 'size34' : 'size42']
+  // FIXME: Just use womenswear measurements, as they should always work
+  const breasts = true
+  const ourModels = withBreasts
+  //const measies = measurements.womenswear.size34
 
   /*
    * Draft pattern for different models
@@ -101,15 +102,13 @@ export const testPatternDrafting = (design, Pattern, expect, models, patterns, l
    * Draft parts individually
    */
   it('Draft parts individually:', () => true)
-  let parts = isGarment(design)
-    ? patterns.parts[design]
-    : Pattern.config.parts
-  for (let name of parts) {
+  const parts = Pattern.config.parts || []
+  for (const name of parts) {
     it(`  - ${name} should draft and render on its own`, () => {
       expect(
         doesItDraftAndRender(
           new Pattern({
-            measurements,
+            measurements: ourModels.size34,
             only: [name]
           }), log
         )
