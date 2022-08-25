@@ -4,7 +4,9 @@ import Point from './point'
 import Path from './path'
 import Snippet from './snippet'
 import * as utils from './utils'
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
+
+const { version } = pkg
 
 /*
  * Named exports will become the default in FreeSewing v3

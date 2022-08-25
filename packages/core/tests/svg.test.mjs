@@ -1,10 +1,13 @@
-const version = require("../package.json").version;
-const render = require("./fixtures/render.js");
-const expect = require("chai").expect;
-const chai = require("chai");
-chai.use(require("chai-string"));
-const freesewing = require("../dist/index.js");
-const round = freesewing.utils.round;
+import chai from "chai"
+import chaiString from "chai-string"
+import freesewing from "./dist/index.mjs"
+import pkg from '../package.json' assert { type: 'json' }
+import render from "./fixtures/render.mjs"
+
+chai.use(chaiString)
+const expect = chai.expect
+const { version } = pkg
+const round = freesewing.utils.round
 
 it("Svg constructor should initialize object", () => {
   let pattern = new freesewing.Pattern();

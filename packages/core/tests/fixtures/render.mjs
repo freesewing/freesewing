@@ -1,4 +1,6 @@
-var version = require('../../package.json').version
+import pkg from '../../package.json' assert { type: 'json' }
+
+const { version } = pkg
 
 var render = {
   boilerplate: `<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
@@ -363,4 +365,4 @@ var render = {
 </svg>`
 }
 
-module.exports = render
+export default render

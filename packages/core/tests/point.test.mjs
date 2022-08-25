@@ -1,7 +1,9 @@
-const expect = require("chai").expect;
-const freesewing = require("../dist/index.js");
-const Point = freesewing.Point;
-const round = freesewing.utils.round;
+import chai from "chai"
+import freesewing from "./dist/index.mjs"
+
+const expect = chai.expect
+const Point = freesewing.Point
+const round = freesewing.utils.round
 
 it("Should return point object", () => {
   let result = new Point(2, 4);

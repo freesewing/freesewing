@@ -1,7 +1,9 @@
-const expect = require("chai").expect;
-const freesewing = require("../dist/index.js");
-const utils = freesewing.utils;
-const round = utils.round;
+import chai from "chai"
+import freesewing from "./dist/index.mjs"
+
+const { expect } = chai
+const utils = freesewing.utils
+const round = utils.round
 
 it("Should return the correct macro name", () => {
   expect(utils.macroName("test")).to.equal("_macro_test");
@@ -377,8 +379,8 @@ it("Should not find intersections of this line and circle", () => {
 });
 
 it("Should find intersections between circles", () => {
-  A = new freesewing.Point(10, 10).attr("data-circle", 15);
-  B = new freesewing.Point(30, 30).attr("data-circle", 35);
+  let A = new freesewing.Point(10, 10).attr("data-circle", 15);
+  let B = new freesewing.Point(30, 30).attr("data-circle", 35);
 
   let intersections1 = freesewing.utils.circlesIntersect(
     A,
@@ -406,8 +408,8 @@ it("Should find intersections between circles", () => {
 });
 
 it("Should not find intersections between non-overlapping circles", () => {
-  A = new freesewing.Point(10, 10).attr("data-circle", 15);
-  B = new freesewing.Point(90, 90).attr("data-circle", 35);
+  let A = new freesewing.Point(10, 10).attr("data-circle", 15);
+  let B = new freesewing.Point(90, 90).attr("data-circle", 35);
 
   let intersections = freesewing.utils.circlesIntersect(
     A,
@@ -419,8 +421,8 @@ it("Should not find intersections between non-overlapping circles", () => {
 });
 
 it("Should not find intersections between contained circles", () => {
-  A = new freesewing.Point(10, 10).attr("data-circle", 15);
-  B = new freesewing.Point(10, 10).attr("data-circle", 35);
+  let A = new freesewing.Point(10, 10).attr("data-circle", 15);
+  let B = new freesewing.Point(10, 10).attr("data-circle", 35);
 
   let intersections = freesewing.utils.circlesIntersect(
     A,
@@ -432,8 +434,8 @@ it("Should not find intersections between contained circles", () => {
 });
 
 it("Should not find intersections between identical circles", () => {
-  A = new freesewing.Point(10, 10).attr("data-circle", 35);
-  B = new freesewing.Point(10, 10).attr("data-circle", 35);
+  let A = new freesewing.Point(10, 10).attr("data-circle", 35);
+  let B = new freesewing.Point(10, 10).attr("data-circle", 35);
 
   let intersections = freesewing.utils.circlesIntersect(
     A,

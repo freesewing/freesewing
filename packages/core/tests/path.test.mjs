@@ -1,6 +1,8 @@
-const expect = require("chai").expect;
-const freesewing = require("../dist/index.js");
-const round = freesewing.utils.round;
+import chai from "chai"
+import freesewing from "./dist/index.mjs"
+
+const expect = chai.expect
+const round = freesewing.utils.round
 
 it("Should offset a line", () => {
   let pattern = new freesewing.Pattern();

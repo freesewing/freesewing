@@ -1,5 +1,7 @@
-let expect = require("chai").expect;
-let freesewing = require("../dist/index.js");
+import chai from "chai"
+import freesewing from "./dist/index.mjs"
+
+const expect = chai.expect
 
 it("Should create a snippet", () => {
   let snip1 = new freesewing.Snippet("test", new freesewing.Point(12, 34));

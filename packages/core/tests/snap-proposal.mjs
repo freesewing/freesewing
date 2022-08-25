@@ -1,5 +1,7 @@
-const expect = require("chai").expect;
-const freesewing = require("../dist/index.js");
+import chai from "chai"
+import freesewing from "../dist/index.js"
+
+const expect = chai.expect
 
 const measurements = { head: 400 }
 const toAbs = (val, { measurements }) => measurements.head * val

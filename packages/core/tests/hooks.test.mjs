@@ -1,8 +1,10 @@
-let expect = require("chai").expect;
-let freesewing = require("../dist/index.js");
+import chai from "chai"
+import { Pattern } from "./dist/index.mjs"
+
+const expect = chai.expect
 
 it("Should contain all hooks", () => {
-  let pattern = new freesewing.Pattern();
+  let pattern = new Pattern();
   let h = pattern.hooks;
   let test = {
     preDraft: [],

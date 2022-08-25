@@ -1,5 +1,7 @@
-let expect = require("chai").expect;
-let freesewing = require("../dist/index.js");
+import chai from "chai"
+import freesewing from "./dist/index.mjs"
+
+const expect = chai.expect
 
 it("Pattern constructor should initialize object", () => {
   let pattern = new freesewing.Pattern({

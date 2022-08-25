@@ -1,5 +1,7 @@
-const expect = require("chai").expect;
-const Point = require("../dist/index.js").Point;
+import chai from "chai"
+import { Point } from "./dist/index.mjs"
+
+const expect = chai.expect
 
 const newAttr = () => new Point(0, 0).attributes;
 

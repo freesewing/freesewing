@@ -1,5 +1,7 @@
-let expect = require("chai").expect;
-let freesewing = require("../dist/index.js");
+import chai from "chai"
+import freesewing from "./dist/index.mjs"
+
+const expect = chai.expect
 
 describe('Part', () => {
 it("Svg constructor should initialize object", () => {
@@ -122,7 +124,7 @@ it("Should raise a warning when setting a non-Point value in points", () => {
   const part = new pattern.Part();
   const { points } = part.shorthand()
   points.a = 'banana'
-  expect(pattern.events.warning.length).to.equal(3)
+  expect(pattern.events.warning.length).to.equal(4)
   expect(pattern.events.warning[0]).to.equal('`points.a` was set with a value that is not a `Point` object')
   expect(pattern.events.warning[1]).to.equal('`points.a` was set with a `x` parameter that is not a `number`')
   expect(pattern.events.warning[2]).to.equal('`points.a` was set with a `y` parameter that is not a `number`')
@@ -134,7 +136,7 @@ it("Should raise a warning when setting a non-Snippet value in snippets", () => 
   const part = new pattern.Part();
   const { snippets } = part.shorthand()
   snippets.a = 'banana'
-  expect(pattern.events.warning.length).to.equal(3)
+  expect(pattern.events.warning.length).to.equal(4)
   expect(pattern.events.warning[0]).to.equal('`snippets.a` was set with a value that is not a `Snippet` object')
   expect(pattern.events.warning[1]).to.equal('`snippets.a` was set with a `def` parameter that is not a `string`')
   expect(pattern.events.warning[2]).to.equal('`snippets.a` was set with an `anchor` parameter that is not a `Point`')
