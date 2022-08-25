@@ -1,6 +1,8 @@
 import logo from './logo'
 import pkg from '../package.json'
 
+export {logo}
+
 export default {
   name: pkg.name,
   version: pkg.version,

@@ -113,6 +113,7 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
   // Generate the draft here so we can pass it down to both the view and the options menu
   let draft = false
   if (['draft', 'events', 'test', 'printingLayout'].indexOf(gist._state?.view) !== -1) {
+    gist.embed = true
     // get the appropriate layout for the view
     const layout = gist.layouts?.[gist._state.view] || gist.layout || true
     // hand it separately to the design
