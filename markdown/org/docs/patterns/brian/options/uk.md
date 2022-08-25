@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Brian body block: Design Options"
-
-***
+- - -
 
 <PatternOptions pattern='brian' />
 

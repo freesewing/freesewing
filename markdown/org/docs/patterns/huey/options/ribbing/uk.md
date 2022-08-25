@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Ribbing"
-
-***
+- - -
 
 ![Ribbing](./ribbing.svg)
 

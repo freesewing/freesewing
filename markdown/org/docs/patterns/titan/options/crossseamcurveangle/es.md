@@ -2,7 +2,6 @@
 title: "Cross seam angle"
 - - -
 
-
 <Fixme>
 
 Falta la documentación

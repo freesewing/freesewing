@@ -2,7 +2,7 @@
 title: "Formgebung der hinteren Abnäher"
 ---
 
----
+***
 
 Legt fest, wie viel der Taillenformung in den Hinterdarten passieren wird.
 

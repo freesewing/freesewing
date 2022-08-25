@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Seat ease"
-
-***
+- - -
 
 ![Seat ease](./seatease.svg)
 

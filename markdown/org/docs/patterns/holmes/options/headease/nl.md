@@ -2,7 +2,7 @@
 title: "Head ease"
 - - -
 
----
+***
 
 De hoeveelheid overwijdte rond je hoofd.
 

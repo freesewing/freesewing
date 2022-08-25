@@ -2,7 +2,6 @@
 title: "Shoulder seam shift: armhole side"
 - - -
 
-
 Controls the shoulder seam location on the armhole side.
 
 - Augmentez cette option pour déplacer la couture de l'épaule vers l'avant sur le côté de l'armurier

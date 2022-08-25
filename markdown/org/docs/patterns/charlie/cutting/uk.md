@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Charlie chinos: Cutting Instructions"
-
-***
+- - -
 
 ##### From main fabric
 

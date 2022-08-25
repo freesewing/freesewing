@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Sven sweatshirt: What You Need"
-
-***
+- - -
 
 To make Sven, you will need the following:
 

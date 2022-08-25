@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Back rise"
-
-***
+- - -
 
 How much extra rise do you want at the back?
 

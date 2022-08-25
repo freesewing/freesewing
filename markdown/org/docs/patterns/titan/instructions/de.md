@@ -53,7 +53,7 @@ Sometimes you may need to wear the mock-up for an extended amount of time to get
 Remember to treat Titan as a basis rather than a final product, so adjust what you need to get the desired look.\
 For instance:
 
-- 
+-
 Add a front closure
 - Add pockets
 - Change the pant length

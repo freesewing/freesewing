@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Hood angle"
-
-***
+- - -
 
 ![Hood angle](./hoodangle.svg)
 

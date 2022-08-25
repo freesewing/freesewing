@@ -2,7 +2,6 @@
 title: "Shoulder seam shift: armhole side"
 - - -
 
-
 Bepaalt de locatie van de schoudernaad op het armsgat.
 
 - Verhoog deze optie om de schoudernaad vooruit aan de zijkant van het armsgat te verplaatsen

@@ -2,7 +2,6 @@
 title: "Waistband width"
 - - -
 
-
 Controls the width of the waistband.
 
 ## Efecto de esta opción en el patrón

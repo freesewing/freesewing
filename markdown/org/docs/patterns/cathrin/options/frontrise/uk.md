@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Front rise"
-
-***
+- - -
 
 ![The front rise option on Cathrin](./frontrise.svg)
 

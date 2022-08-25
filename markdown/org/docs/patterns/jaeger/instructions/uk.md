@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Jaeger jacket: Sewing Instructions"
-
-***
+- - -
 
 <Note>
 
@@ -39,7 +37,7 @@ Once the front darts are closed, cut open the dart at the back. You won't be abl
 Apply a rectangular piece of light fusible interfacing around the chest pocket area so that it extends a few cm in all directions.
 
 > ##### We're not using fusible on the entire front
->
+> 
 > Sportcoats are typically made from somewhat heavier fabrics. That, and the fact that I prefer to use canvas rather than fusible interfacing, means that I don't interface the front with fusible.
 
 #### Baste the chest welt outline, mark top line endpoints
@@ -131,7 +129,7 @@ Cut out the chest canvas piece. Align it along the roll line, and baste it in pl
 Now baste the front canvas and chest piece to your front. Keep in mind that the canvas has no seam allowance.
 
 > Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\
-> You don't want your canvas to get caught in the seams.
+  You don't want your canvas to get caught in the seams.
 
 #### Pad-stitch your lapels
 
@@ -152,11 +150,11 @@ Keep in mind that:
 - The tape along the lapel edge should be placed inside the seam line
 
 > ##### Don't sew through your fabric
->
+> 
 > While sewing the tape to your front, avoid pushing your needle all the way through your fabric so that your stitches will show on the front.
->
+> 
 > At the same time, you should not secure the tape only to your canvas either. Instead, you should try to catch a few threads of your fabric on every stitch, so that the tape is secured in place, yet the stitches don't show at the front.
->
+> 
 > This is less of an issue above the break point of your lapel where the fabric will be on the backside of the lapel.
 
 ### Close the body
@@ -174,9 +172,9 @@ Align the back/side seams, pin them in place if you feel like it, and sew them t
 > Make sure the canvas does not get caught in the seam.
 
 > ##### Note for sewing vents
->
+> 
 > If you have a double vent, this seam will contain the vent.
->
+> 
 > Sew the downward part of the side/back seam and the sideways part that forms the vent. Do not sew downwards after that.
 
 #### Close the back seam

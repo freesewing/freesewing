@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Simon shirt: Cutting Instructions"
-
-***
+- - -
 
 - **Main fabric**
   - Cut **1 front left**

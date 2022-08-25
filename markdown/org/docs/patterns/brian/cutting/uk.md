@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Brian body block: Cutting Instructions"
-
-***
+- - -
 
 **Main fabric**
 

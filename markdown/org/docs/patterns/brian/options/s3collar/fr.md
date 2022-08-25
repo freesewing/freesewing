@@ -2,7 +2,6 @@
 title: "Shoulder seam shift: collar side"
 - - -
 
-
 Controls the shoulder seam location on the collar side.
 
 - Augmentez cette option pour déplacer la couture de l'épaule vers l'avant sur le col

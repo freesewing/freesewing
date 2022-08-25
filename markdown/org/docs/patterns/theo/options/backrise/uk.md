@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Back rise"
-
-***
+- - -
 
 ![Back rise](backrise.svg)
 

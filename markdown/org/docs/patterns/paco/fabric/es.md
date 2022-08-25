@@ -18,6 +18,6 @@ Mientras que la ropa de cama es el go-to de los días calurosos de verano, No lo
 ya que vienen con cinturas/tazas elasticadas, lo que significa infierno.
 Utilice uno de los otros diseños con una cintura equipada si desea pantalones de lino.
 
-También evita elegir una tela con mucho estiramiento, ya que complicará las cosas cuando estés instalando el elástico. 
+También evita elegir una tela con mucho estiramiento, ya que complicará las cosas cuando estés instalando el elástico.
 
 </Tip>

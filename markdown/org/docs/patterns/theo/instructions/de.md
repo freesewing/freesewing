@@ -112,7 +112,7 @@ Diese Aufsteckung wird immer angezeigt, also stellen Sie sicher, dass Sie die Fa
 </Tip>
 
 <Tip>
- 
+
 Um zu verhindern, dass Ihre Taschen ausgebeutet werden, können Sie ein Stück nicht dehnbares Band zwischen dem Faltband platzieren. Beim Nähen fängt man auch dieses Band, so dass die Tasche nicht ausgeht.
 
 </Tip>
@@ -132,7 +132,7 @@ Zig-zag the edge of the folded-back front piece to finish it and secure it to th
 When you're done, place front piece, lining and pocket bag flat, and give it a good press.
 
 <Tip>
-  
+
 Vielleicht ist dies ein guter Zeitpunkt, um Sie daran zu erinnern, dass jeder Schritt bis dahin für beide Beine getan werden musste.
 
 Es ist nur eine freundliche Erinnerung, die nächsten Schritte müssen auch für beide Beine gemacht werden.
@@ -220,7 +220,7 @@ Press open the seam allowance along the side seams. Do so from the back, and rep
 Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
 
 <Tip>
- 
+
 Eine schöne flache Seitennaht sieht großartig aus, also nehmen Sie sich Zeit, um es richtig zu machen.
 
 </Tip>
@@ -728,7 +728,7 @@ Fühlen Sie sich frei, die Länge Ihrer Gürtelschleifen nach dem Trennen und vo
 Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
 
 <Tip>
- 
+
 Dies wäre auch ein guter Zeitpunkt, um Ihre Hose zu probieren und genau zu markieren, wie lange Sie wollen, nachdem sie gehemmt sind.
 
 </Tip>
@@ -778,4 +778,3 @@ While there are machine alternatives, they aren't as neat (blind hem stitch) or 
 ### Schritt 56: Trimmen, bereinigen und drücken
 
 Trim any loose threads or basting that remains, and give your trousers a good final press.
-

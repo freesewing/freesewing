@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Sleevecap Q3 offset"
-
-***
+- - -
 
 ***
 

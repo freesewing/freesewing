@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Paco pants: Cutting Instructions"
-
-***
+- - -
 
 <Tip>
 
