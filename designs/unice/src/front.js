@@ -186,9 +186,9 @@ export default function (part) {
   let curveAsAngle
   if (options.frontCurve > 0) {
     // create copies of the original points
-    points.frontWaistBandLeftPreCurve = points.frontWaistBandLeft
-    points.frontLegOpeningLeftPreCurve = points.frontLegOpeningLeft
-    points.frontLegOpeningLeftCp1PreCurve = points.frontLegOpeningLeftCp1
+    points.frontWaistBandLeftPreCurve = points.frontWaistBandLeft.clone()
+    points.frontLegOpeningLeftPreCurve = points.frontLegOpeningLeft.clone()
+    points.frontLegOpeningLeftCp1PreCurve = points.frontLegOpeningLeftCp1.clone()
     
     // convert the dip to a curve
     curveAsAngle = points.frontWaistBandLeft.angle(points.frontWaistBandMid)
