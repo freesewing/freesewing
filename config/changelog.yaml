@@ -32,6 +32,13 @@ Unreleased:
         While v2 versions remain available, this package is no longer supported.
         Use `rehype-jargon` instead.
 
+  Fixed:
+    albert:
+      - Workaround for not finding a suitable legband radius
+
+  Changed:
+    plugin-title:
+      - Use localized date format
 
 2.22.0:
   date: 2022-08-23

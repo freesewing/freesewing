@@ -18,11 +18,23 @@
  - The `gatsby-remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported. Use `rehype-jargon` instead.
 
+### albert
+
+#### Fixed
+
+ - Workaround for not finding a suitable legband radius
+
 ### plugin-gore
 
 #### Breaking
 
  - The `goreNumber` props is removed. Please use `gores` instead
+
+### plugin-title
+
+#### Changed
+
+ - Use localized date format
 
 
 ## 2.22.0 (2022-08-23)
