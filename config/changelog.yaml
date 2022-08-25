@@ -8,6 +8,8 @@ Unreleased:
     plugin-title:
       - Added support for removing the title via a macro call
       - Added a render timestamp to the title
+    unice:
+      - Added new Front Curve and Back Curve style options.
 
   Changed:
     charlie:
@@ -16,6 +18,8 @@ Unreleased:
       - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
     theo:
       - migrated `waistbandWidth` option from `mm` to snapped `pct` option
+    unice:
+      - Updated gusset to always curve inward.
 
   Fixed:
     breanna:
@@ -35,6 +39,8 @@ Unreleased:
     simone:
       - Don't do a negative FBA from there's no need for an FBA
         Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
+    unice:
+      - Fixed bug which prevented parts from being generated as intended.
     wahid:
       - Prevent facing/lining overlap when shoulders get very narrow
         fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
