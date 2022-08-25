@@ -16,7 +16,7 @@ import smartypants from 'remark-smartypants'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
-import rehypeJargon from 'rehype-jargon/src/index.js'
+import rehypeJargon from 'rehype-jargon/dist/index.mjs'
 // Simple frontmatter extractor
 import frontmatter from 'front-matter'
 /*
