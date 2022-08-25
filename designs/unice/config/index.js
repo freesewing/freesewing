@@ -1,6 +1,7 @@
-import { version } from '../package.json'
 import { config as ursulaConfig } from '@freesewing/ursula'
+import pkg from '../package.json' assert { type: 'json' }
 
+const { version } = pkg
 const design = ['Anna Puk', 'Natalia Sayang']
 
 const config = {
@@ -15,7 +16,7 @@ const config = {
     gusset: 'ursulaGusset',
     front2: 'front',
     back2: 'back',
-    gusset2: 'gusset',    
+    gusset2: 'gusset',
   },
   hide: ['ursulaBack', 'ursulaFront', 'ursulaGusset','front', 'back', 'gusset'],
   parts: ['front','back','gusset','elastic','front2','back2','gusset2'],

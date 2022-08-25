@@ -1,5 +1,7 @@
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 import Brian from '@freesewing/brian'
+
+const { version } = pkg
 
 const config = {
   version,

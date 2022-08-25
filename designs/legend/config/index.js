@@ -1,7 +1,9 @@
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
+
+const { version } = pkg
 
 export default {
-  version,
+  version: pkg.version,
   name: 'legend',
   design: 'Joost De Cock',
   code: 'Joost De Cock',
