@@ -33,11 +33,13 @@ let result
     console.log(info)
   }
 
+
   // Also build a version that has all dependencies bundled
   // This makes it easy to run tests
   await esbuild
   .build({
     ...options,
+    entryPoints: ['src/index.js'],
     minify: false,
     sourcemap: false,
     outfile: 'tests/dist/index.mjs',

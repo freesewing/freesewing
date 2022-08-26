@@ -1,4 +1,11 @@
-import { macroName, sampleStyle, capitalize } from './utils'
+import {
+  macroName,
+  sampleStyle,
+  capitalize,
+  decoratePartDependency,
+  addPartConfig,
+  mergeDependencies,
+} from './utils.js'
 import Part from './part'
 import Point from './point'
 import Path from './path'
@@ -11,7 +18,8 @@ import Attributes from './attributes'
 import pkg from '../package.json'
 
 export default function Pattern(config = { options: {} }) {
-  // Default settings
+
+  // Apply default settings
   this.settings = {
     complete: true,
     idPrefix: 'fs-',
@@ -25,15 +33,16 @@ export default function Pattern(config = { options: {} }) {
     absoluteOptions: {},
   }
 
-  // Events store and raise methods
+  // Object to hold events
   this.events = {
     info: [],
     warning: [],
     error: [],
     debug: [],
   }
+
+  // Raise methods - Make events and settings avialable in them
   const events = this.events
-  // Make settings available in the raise.debug method
   const settings = this.settings
   this.raise = {
     info: function (data) {
@@ -50,10 +59,13 @@ export default function Pattern(config = { options: {} }) {
       if (settings.debug) events.debug.push(data)
     },
   }
+
+  // Say hi
   this.raise.info(
     `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${pkg.version}\``
   )
 
+  // More things that go in a pattern
   this.config = config // Pattern configuration
   this.width = 0 // Will be set after render
   this.height = 0 // Will be set after render
@@ -68,30 +80,17 @@ export default function Pattern(config = { options: {} }) {
   this.Path = Path // Path constructor
   this.Snippet = Snippet // Snippet constructor
   this.Attributes = Attributes // Attributes constructor
+  this.initialized = 0 // Keep track of init calls
 
   if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
   if (typeof this.config.inject === 'undefined') this.config.inject = {}
   if (typeof this.config.hide === 'undefined') this.config.hide = []
-  this.config.resolvedDependencies = this.resolveDependencies(this.config.dependencies)
-  this.config.draftOrder = this.draftOrder(this.config.resolvedDependencies)
 
   // Convert options
-  for (let i in config.options) {
-    let option = config.options[i]
-    if (typeof option === 'object') {
-      if (typeof option.pct !== 'undefined') this.settings.options[i] = option.pct / 100
-      else if (typeof option.mm !== 'undefined') this.settings.options[i] = option.mm
-      else if (typeof option.deg !== 'undefined') this.settings.options[i] = option.deg
-      else if (typeof option.count !== 'undefined') this.settings.options[i] = option.count
-      else if (typeof option.bool !== 'undefined') this.settings.options[i] = option.bool
-      else if (typeof option.dflt !== 'undefined') this.settings.options[i] = option.dflt
-      else {
-        let err = 'Unknown option type: ' + JSON.stringify(option)
-        this.raise.error(err)
-        throw new Error(err)
-      }
-    } else {
-      this.settings.options[i] = option
+  this.addOptions(config.options)
+  if (this.config.parts) {
+    for (const partName in this.config.parts) {
+      if (this.config.parts[partName].options) this.addOptions(this.config.parts[partName].options)
     }
   }
 
@@ -121,6 +120,68 @@ export default function Pattern(config = { options: {} }) {
     return part
   }
 }
+
+// Converts/adds options
+Pattern.prototype.addOptions = function(options={}) {
+  for (const i in options) {
+    // Add to config
+    const option = options[i]
+    this.config.options[i] = option
+    if (typeof option === 'object') {
+      if (typeof option.pct !== 'undefined') this.settings.options[i] = option.pct / 100
+      else if (typeof option.mm !== 'undefined') this.settings.options[i] = option.mm
+      else if (typeof option.deg !== 'undefined') this.settings.options[i] = option.deg
+      else if (typeof option.count !== 'undefined') this.settings.options[i] = option.count
+      else if (typeof option.bool !== 'undefined') this.settings.options[i] = option.bool
+      else if (typeof option.dflt !== 'undefined') this.settings.options[i] = option.dflt
+      else {
+        let err = 'Unknown option type: ' + JSON.stringify(option)
+        this.raise.error(err)
+        throw new Error(err)
+      }
+    } else {
+      this.settings.options[i] = option
+    }
+  }
+
+  // Make it chainable
+  return this
+}
+
+Pattern.prototype.getConfig = function () {
+  this.init()
+  return this.config
+}
+
+
+/*
+ * Defer some things that used to happen in the constructor to
+ * facilitate late-stage adding of parts
+ */
+Pattern.prototype.init = function () {
+  this.initialized++
+  // Resolve all dependencies
+  this.dependencies = this.config.dependencies
+  this.inject = this.config.inject
+  this.hide = this.config.hide
+  if (typeof this.config.parts === 'object') {
+    this.__parts = this.config.parts
+    this.preresolveDependencies()
+  }
+  this.resolvedDependencies = this.resolveDependencies(this.dependencies)
+  this.config.resolvedDependencies = this.resolvedDependencies
+  this.config.draftOrder = this.draftOrder(this.resolvedDependencies)
+
+  // Make all parts uniform
+  if (this.__parts) {
+    for (const [key, value] of Object.entries(this.__parts)) {
+      this.__parts[key] = decoratePartDependency(value)
+    }
+  }
+
+  return this
+}
+
 
 function snappedOption(option, pattern) {
   const conf = pattern.config.options[option]
@@ -155,7 +216,7 @@ function snappedOption(option, pattern) {
 // Merges settings object with this.settings
 Pattern.prototype.apply = function (settings) {
   if (typeof settings !== 'object') {
-    this.raise.warning('Pattern initialized without any settings')
+    this.raise.warning('Pattern instantiated without any settings')
     return this
   }
   for (let key of Object.keys(settings)) {
@@ -186,10 +247,31 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
   }
 }
 
+/*
+ * Allows adding a part at run-time
+ */
+Pattern.prototype.addPart = function (part, name=false) {
+  if (!part.draft) part = decoratePartDependency(part, name)
+  if (typeof part?.draft === 'function') {
+    if (part.name) {
+      this.config.parts[part.name] = part
+      // Add part-level config to config
+      this.config = addPartConfig(part, this.config)
+    }
+    else this.raise.error(`Part must have a name`)
+  }
+  else this.raise.warning(`Cannot attach part ${name} because it is not a part`)
+
+  return this
+}
+
 /**
  *  The default draft method with pre- and postDraft hooks
  */
 Pattern.prototype.draft = function () {
+  // Late-stage initialization
+  this.init()
+
   if (this.is !== 'sample') {
     this.is = 'draft'
     this.cutList = {}
@@ -207,33 +289,49 @@ Pattern.prototype.draft = function () {
   }
 
   this.runHooks('preDraft')
-  for (let partName of this.config.draftOrder) {
+  for (const partName of this.config.draftOrder) {
+    // Create parts
     this.raise.debug(`Creating part \`${partName}\``)
     this.parts[partName] = new this.Part(partName)
-    if (typeof this.config.inject[partName] === 'string') {
+    // Handle inject/inheritance
+    if (typeof this.inject[partName] === 'string') {
       this.raise.debug(
-        `Injecting part \`${this.config.inject[partName]}\` into part \`${partName}\``
+        `Injecting part \`${this.inject[partName]}\` into part \`${partName}\``
       )
       try {
-        this.parts[partName].inject(this.parts[this.config.inject[partName]])
+        this.parts[partName].inject(this.parts[this.inject[partName]])
       } catch (err) {
         this.raise.error([
-          `Could not inject part \`${this.config.inject[partName]}\` into part \`${partName}\``,
+          `Could not inject part \`${this.inject[partName]}\` into part \`${partName}\``,
           err,
         ])
       }
     }
     if (this.needs(partName)) {
-      let method = 'draft' + capitalize(partName)
-      if (typeof this[method] !== 'function') {
-        this.raise.error(`Method \`pattern.${method}\` is callable`)
-        throw new Error('Method "' + method + '" on pattern object is not callable')
+      // Draft part
+      const method = 'draft' + capitalize(partName)
+      if (typeof this.__parts?.[partName]?.draft === 'function') {
+        // 2022 way - Part is contained in config
+        try {
+          this.parts[partName] = this.__parts[partName].draft(this.parts[partName])
+          if (this.parts[partName].render) this.cutList[partName] = this.parts[partName].cut
+        } catch (err) {
+          this.raise.error([`Unable to draft part \`${partName}\``, err])
+        }
       }
-      try {
-        this.parts[partName] = this[method](this.parts[partName])
-        if (this.parts[partName].render ) this.cutList[partName] = this.parts[partName].cut
-      } catch (err) {
-        this.raise.error([`Unable to draft part \`${partName}\``, err])
+      else if (typeof this[method] === 'function') {
+        // Legacy way - Part is attached to the prototype
+        this.raise.warning(`Attaching part methods to the Pattern prototype is deprecated and will be removed in FreeSewing v3 (part: \`${partName}\`)`)
+        try {
+          this.parts[partName] = this[method](this.parts[partName])
+          if (this.parts[partName].render ) this.cutList[partName] = this.parts[partName].cut
+        } catch (err) {
+          this.raise.error([`Unable to draft part \`${partName}\``, err])
+        }
+      }
+      else {
+        this.raise.error(`Unable to draft pattern. Part is not available in iether legacy or 2022`)
+        throw new Error('Method "' + method + '" on pattern object is not callable')
       }
       if (typeof this.parts[partName] === 'undefined') {
         this.raise.error(
@@ -262,6 +360,8 @@ Pattern.prototype.draft = function () {
  * Handles pattern sampling
  */
 Pattern.prototype.sample = function () {
+  // Late-stage initialization
+  this.init()
   if (this.settings.sample.type === 'option') {
     return this.sampleOption(this.settings.sample.option)
   } else if (this.settings.sample.type === 'measurement') {
@@ -562,7 +662,7 @@ Pattern.prototype.draftOrder = function (graph = this.resolveDependencies()) {
 Pattern.prototype.resolveDependency = function (
   seen,
   part,
-  graph = this.config.dependencies,
+  graph = this.dependencies,
   deps = []
 ) {
   if (typeof seen[part] === 'undefined') seen[part] = true
@@ -578,33 +678,86 @@ Pattern.prototype.resolveDependency = function (
   return deps
 }
 
+/** Adds a part as a simple dependency **/
+Pattern.prototype.addDependency = function (name, part, dep) {
+  this.dependencies[name] = mergeDependencies(dep.name, this.dependencies[name])
+  if (typeof this.__parts[dep.name] === 'undefined') {
+    this.__parts[dep.name] = decoratePartDependency(dep)
+    addPartConfig(this.__parts[dep.name], this.config)
+  }
+
+  return this
+}
+
+/** Filter optional measurements out of they are also required measurements */
+Pattern.prototype.filterOptionalMeasurements = function () {
+  this.config.optionalMeasurements = this.config.optionalMeasurements.filter(
+    m => this.config.measurements.indexOf(m) === -1
+  )
+
+  return this
+}
+
+/** Pre-Resolves part dependencies that are passed in 2022 style */
+Pattern.prototype.preresolveDependencies = function (count=0) {
+  if (!this.__parts) return
+  for (const [name, part] of Object.entries(this.__parts)) {
+    // Inject (from)
+    if (part.from) {
+      this.inject[name] = part.from.name
+      if (typeof this.__parts[part.from.name] === 'undefined') {
+        this.__parts[part.from.name] = decoratePartDependency(part.from)
+        addPartConfig(this.__parts[part.from.name], this.config)
+      }
+    }
+    // Simple dependency (after)
+    if (part.after) {
+      if (Array.isArray(part.after)) {
+        for (const dep of part.after) this.addDependency(name, part, dep)
+      }
+      else this.addDependency(name, part, part.after)
+    }
+  }
+  // Did we discover any new dependencies?
+  const len = Object.keys(this.__parts).length
+
+  if (len > count) return this.preresolveDependencies(len)
+
+  for (const [name, part] of Object.entries(this.__parts)) {
+    addPartConfig(name, this.config)
+  }
+
+  // Weed out doubles
+  return this.filterOptionalMeasurements()
+}
+
 /** Resolves part dependencies into a flat array */
-Pattern.prototype.resolveDependencies = function (graph = this.config.dependencies) {
-  for (let i in this.config.inject) {
-    let dependency = this.config.inject[i]
-    if (typeof this.config.dependencies[i] === 'undefined') this.config.dependencies[i] = dependency
-    else if (this.config.dependencies[i] !== dependency) {
-      if (typeof this.config.dependencies[i] === 'string') {
-        this.config.dependencies[i] = [this.config.dependencies[i], dependency]
-      } else if (Array.isArray(this.config.dependencies[i])) {
-        if (this.config.dependencies[i].indexOf(dependency) === -1)
-          this.config.dependencies[i].push(dependency)
+Pattern.prototype.resolveDependencies = function (graph = this.dependencies) {
+  for (let i in this.inject) {
+    let dependency = this.inject[i]
+    if (typeof this.dependencies[i] === 'undefined') this.dependencies[i] = dependency
+    else if (this.dependencies[i] !== dependency) {
+      if (typeof this.dependencies[i] === 'string') {
+        this.dependencies[i] = [this.dependencies[i], dependency]
+      } else if (Array.isArray(this.dependencies[i])) {
+        if (this.dependencies[i].indexOf(dependency) === -1)
+          this.dependencies[i].push(dependency)
       } else {
         this.raise.error('Part dependencies should be a string or an array of strings')
         throw new Error('Part dependencies should be a string or an array of strings')
       }
     }
     // Parts both in the parts and dependencies array trip up the dependency resolver
-    if (Array.isArray(this.config.parts)) {
-      let pos = this.config.parts.indexOf(this.config.inject[i])
-      if (pos !== -1) this.config.parts.splice(pos, 1)
+    if (Array.isArray(this.__parts)) {
+      let pos = this.__parts.indexOf(this.inject[i])
+      if (pos !== -1) this.__parts.splice(pos, 1)
     }
   }
 
   // Include parts outside the dependency graph
-  if (Array.isArray(this.config.parts)) {
-    for (let part of this.config.parts) {
-      if (typeof this.config.dependencies[part] === 'undefined') this.config.dependencies[part] = []
+  if (typeof this.config.parts === 'object') {
+    for (const part of Object.values(this.config.parts)) {
+      if (typeof part === 'string' && typeof this.dependencies[part] === 'undefined') this.dependencies[part] = []
     }
   }
 
@@ -624,15 +777,15 @@ Pattern.prototype.needs = function (partName) {
   if (typeof this.settings.only === 'undefined' || this.settings.only === false) return true
   else if (typeof this.settings.only === 'string') {
     if (this.settings.only === partName) return true
-    if (Array.isArray(this.config.resolvedDependencies[this.settings.only])) {
-      for (let dependency of this.config.resolvedDependencies[this.settings.only]) {
+    if (Array.isArray(this.resolvedDependencies[this.settings.only])) {
+      for (let dependency of this.resolvedDependencies[this.settings.only]) {
         if (dependency === partName) return true
       }
     }
   } else if (Array.isArray(this.settings.only)) {
     for (let part of this.settings.only) {
       if (part === partName) return true
-      for (let dependency of this.config.resolvedDependencies[part]) {
+      for (let dependency of this.resolvedDependencies[part]) {
         if (dependency === partName) return true
       }
     }
@@ -643,9 +796,11 @@ Pattern.prototype.needs = function (partName) {
 
 /* Checks whether a part is hidden in the config */
 Pattern.prototype.isHidden = function (partName) {
-  if (Array.isArray(this.config.hide)) {
-    if (this.config.hide.indexOf(partName) !== -1) return true
+  if (Array.isArray(this.hide)) {
+    if (this.hide.indexOf(partName) !== -1) return true
   }
+  // 2022 style
+  if (this.__parts?.[partName]?.hide) return true
 
   return false
 }

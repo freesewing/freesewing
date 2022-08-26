@@ -1,3 +1,6 @@
+import front from './front'
+import { _sleevecap as options } from '../config/options.js'
+
 /** Calculates the differece between actual and optimal sleevecap length
  * Positive values mean sleevecap is longer than armhole
  */
@@ -136,25 +139,31 @@ function draftSleevecap(part, run) {
   }
 }
 
-export default (part) => {
-  let { store, units, options, Point, points, paths, raise } = part.shorthand()
+export default {
+  from: front,
+  name: 'sleevecap',
+  hide: true,
+  options,
+  draft: (part) => {
+    const { store, units, options, Point, points, paths, raise } = part.shorthand()
 
-  store.set('sleeveFactor', 1)
-  let run = 0
-  let delta = 0
-  do {
-    draftSleevecap(part, run)
-    delta = sleevecapDelta(store)
-    sleevecapAdjust(store)
-    run++
-    raise.debug(`Fitting Brian sleevecap. Run ${run}: delta is ${units(delta)}`)
-  } while (options.brianFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
+    store.set('sleeveFactor', 1)
+    let run = 0
+    let delta = 0
+    do {
+      draftSleevecap(part, run)
+      delta = sleevecapDelta(store)
+      sleevecapAdjust(store)
+      run++
+      raise.debug(`Fitting Brian sleevecap. Run ${run}: delta is ${units(delta)}`)
+    } while (options.brianFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
 
-  // Paths
-  paths.sleevecap.attr('class', 'fabric')
+    // Paths
+    paths.sleevecap.attr('class', 'fabric')
 
-  // Anchor point for sampling
-  points.gridAnchor = new Point(0, 0)
+    // Anchor point for sampling
+    points.gridAnchor = new Point(0, 0)
 
-  return part
+    return part
+  }
 }

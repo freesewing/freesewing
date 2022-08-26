@@ -409,3 +409,175 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
     // 'transform-origin': `${center.x} ${center.y}`
   }
 }
+
+/*
+ * Makes sure an object passed to be attached as a part it not merely a method
+ */
+export const decoratePartDependency = (obj, name) => (typeof obj === 'function') ? { draft: obj, name } : obj
+
+// Add part-level options
+const addPartOptions = (part, config) => {
+  if (part.options) {
+    for (const optionName in part.options) {
+      config.options[optionName] = part.options[optionName]
+    }
+  }
+  if (part.from) addPartOptions(part.from, config)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartOptions(dep, config)
+    } else addPartOptions(part.after, config)
+  }
+
+  return config
+}
+
+// Helper method for detecting a array with only strings
+const isStringArray = val => (Array.isArray(val) && val.length > 0)
+  ? val.reduce((prev=true, cur) => (prev && typeof cur === 'string'))
+  : false
+// Helper method for detecting an object
+const isObject = obj => obj && typeof obj === 'object'
+
+// Hat-tip to jhildenbiddle => https://stackoverflow.com/a/48218209
+const mergeOptionSubgroup = (...objects) => objects.reduce((prev, obj) => {
+  Object.keys(obj).forEach(key => {
+    const pVal = prev[key];
+    const oVal = obj[key];
+
+    if (Array.isArray(pVal) && Array.isArray(oVal)) {
+      prev[key] = pVal.concat(...oVal);
+    }
+    else if (isObject(pVal) && isObject(oVal)) {
+      prev[key] = mergeOptionSubgroup(pVal, oVal);
+    }
+    else {
+      prev[key] = oVal;
+    }
+  })
+
+  return prev
+}, {})
+
+const mergeOptionGroups = (cur, add) => {
+  if (isStringArray(cur) && isStringArray(add)) return [...new Set([...cur, ...add])]
+  else if (!Array.isArray(cur) && !Array.isArray(add)) return mergeOptionSubgroup(cur, add)
+  else {
+    const all = [...cur]
+    for (const entry of add) {
+      if (typeof add === 'string' && all.indexOf(entry) === -1) all.push(entry)
+      else all.push(entry)
+    }
+    return all
+  }
+
+  return cur
+}
+
+// Add part-level optionGroups
+const addPartOptionGroups = (part, config) => {
+  if (typeof config.optionGroups === 'undefined') {
+    if (part.optionGroups) config.optionGroups = part.optionGroups
+    return config
+  }
+  if (part.optionGroups) {
+    for (const group in part.optionGroups) {
+      if (typeof config.optionGroups[group] === 'undefined') config.optionGroups[group] = part.optionGroups[group]
+      else config.optionGroups[group] = mergeOptionGroups(config.optionGroups[group], part.optionGroups[group])
+    }
+  }
+  if (part.from) addPartOptionGroups(part.from, config)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartOptionGroups(dep, config)
+    } else addPartOptionGroups(part.after, config)
+  }
+
+  return config
+}
+
+// Add part-level measurements
+const addPartMeasurements = (part, config, list=false) => {
+  if (!list) list = config.measurements
+    ? [...config.measurements]
+    : []
+  if (part.measurements) {
+    for (const m of part.measurements) list.push(m)
+  }
+  if (part.from) addPartMeasurements(part.from, config, list)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartMeasurements(dep, config, list)
+    } else addPartMeasurements(part.after, config, list)
+  }
+
+  // Weed out duplicates
+  config.measurements = [...new Set(list)]
+
+  return config
+}
+
+// Add part-level optional measurements
+const addPartOptionalMeasurements = (part, config, list=false) => {
+  if (!list) list = config.optionalMeasurements
+    ? [...config.optionalMeasurements]
+    : []
+  if (part.optionalMeasurements) {
+    for (const m of part.optionalMeasurements) {
+      // Don't add it's a required measurement for another part
+      if (config.measurements.indexOf(m) === -1) list.push(m)
+    }
+  }
+  if (part.from) addPartOptionalMeasurements(part.from, config, list)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartOptionalMeasurements(dep, config, list)
+    } else addPartOptionalMeasurements(part.after, config, list)
+  }
+
+  // Weed out duplicates
+  config.optionalMeasurements = [...new Set(list)]
+
+  return config
+}
+
+
+export const mergeDependencies = (dep=[], current=[]) => {
+  // Current dependencies
+  const list = []
+  if (Array.isArray(current)) list.push(...current)
+  else if (typeof current === 'string') list.push(current)
+
+  if (Array.isArray(dep)) list.push(...dep)
+  else if (typeof dep === 'string') list.push(dep)
+
+  // Dependencies should be parts names (string) not the object
+  const deps = []
+  for (const part of [...new Set(list)]) {
+    if (typeof part === 'object') deps.push(part.name)
+    else deps.push(part)
+  }
+
+  return deps
+}
+
+// Add part-level dependencies
+export const addPartDependencies = (part, config) => {
+  if (part.after) {
+    if (typeof config.dependencies === 'undefined') config.dependencies = {}
+    config.dependencies[part.name] = mergeDependencies(config.dependencies[part.name], part.after)
+  }
+
+  return config
+}
+
+export const addPartConfig = (part, config) => {
+  config = addPartOptions(part, config)
+  config = addPartMeasurements(part, config)
+  config = addPartOptionalMeasurements(part, config)
+  config = addPartDependencies(part, config)
+  config = addPartOptionGroups(part, config)
+
+  return config
+}
+

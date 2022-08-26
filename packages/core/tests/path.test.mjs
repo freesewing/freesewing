@@ -1059,7 +1059,8 @@ it("Should raise a warning when calling join without a path", () => {
   points.a = new Point(0,0)
   points.b = new Point(10,10)
   try {
-    paths.a = new Path().move(points.a).line(points.b).join()
+    //paths.a = new Path().move(points.a).line(points.b).join()
+    pattern.parts.a.paths.a = new Path().move(points.a).line(points.b).join()
   }
   catch (err) {
     expect(''+err).to.contain("Cannot read properties of undefined (reading 'ops')")
