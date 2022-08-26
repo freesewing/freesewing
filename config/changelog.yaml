@@ -1,15 +1,97 @@
 Unreleased:
+
+  Breaking:
+    all:
+      - This package is now ESM only.
+      - Dropped support for NodeJS 14.
+        NodeJS 16 or more recent is now required.
+    plugin-gore:
+      - The `goreNumber` props is removed. Please use `gores` instead
+
+  Removed:
+    global:
+      - The `@freesewing/components` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/css-theme` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/i18n` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/mui-theme` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/pattern-info` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/plugin-export-dxf` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/snapseries` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/utils` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `gatsby-remark-jargon` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `remark-jargon` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+        Use `rehype-jargon` instead.
+
+  Fixed:
+    albert:
+      - Workaround for not finding a suitable legband radius
+    unice:
+      - Fixed bug which prevented parts from being generated as intended
+
+  Changed:
+    plugin-title:
+      - Use localized date format
+    unice:
+      - Updated gusset to always curve inward
+      
+  Added:
+    unice:
+      - Added new Front Curve and Back Curve style options
+
+2.22.0:
+  date: 2022-08-23
+
   Added:
     aaron:
+      - Support drafting for high bust
+    bent:
+      - Support drafting for high bust
+    brian:
+      - Support drafting for high bust
+    carlton:
+      - Support drafting for high bust
+    diana:
+      - Support drafting for high bust
+    huey:
       - Support drafting for high bust
     hugo:
       - Support drafting for high bust
         Closes [#802](https://github.com/freesewing/freesewing/issues/802)
+    jeager:
+      - Support drafting for high bust
+    octoplushy:
+      - Octoplushy is a new design for an octopus or squid plushy
     plugin-title:
       - Added support for removing the title via a macro call
       - Added a render timestamp to the title
-    unice:
-      - Added new Front Curve and Back Curve style options.
+    simon:
+      - Support drafting for high bust
+    simone:
+      - Added Bust-aligned buttons option and functionality.
+        Closes [#2154] (https://github.com/freesewing/freesewing/issues/2154)
+      - Added a notch at the center front bustline.
+    sven:
+      - Support drafting for high bust
+    tamiko:
+      - Support drafting for high bust
+    teagan:
+      - Support drafting for high bust
+    titan:
+      - Added additional notches to aid alignment
+    wahid:
+      - Support drafting for high bust
+    yuri:
+      - Support drafting for high bust
 
   Changed:
     charlie:
@@ -18,8 +100,6 @@ Unreleased:
       - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
     theo:
       - migrated `waistbandWidth` option from `mm` to snapped `pct` option
-    unice:
-      - Updated gusset to always curve inward.
 
   Fixed:
     breanna:
@@ -31,6 +111,9 @@ Unreleased:
     cathrin:
       - Removed seam allowance from Part1a foldline.
         Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
+    paco:
+      - Make hem allowance taper outwards to match the leg
+        Fixes [#2350](https://github.com/freesewing/freesewing/issues/2350)
     simon:
       - Fix issue with boxPleat and yoke
         Fixes [#2400](https://github.com/freesewing/freesewing/issues/2400)
@@ -39,11 +122,12 @@ Unreleased:
     simone:
       - Don't do a negative FBA from there's no need for an FBA
         Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
-    unice:
-      - Fixed bug which prevented parts from being generated as intended.
+      - Duplicate config rather than mutating the imported simon config
     wahid:
       - Prevent facing/lining overlap when shoulders get very narrow
         fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
+      - Fixed dependency issue with pocketFacing part
+      - Added grainlines
 
 2.21.3:
   date: 2022-07-02
@@ -2325,3 +2409,20 @@ Unreleased:
       - Initial release
     wahid:
       - Initial release
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+You have no unread notifications
