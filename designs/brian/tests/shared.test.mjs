@@ -3,9 +3,9 @@
 import { Brian } from './dist/index.mjs'
 
 // Shared tests
-import { testPatternConfig } from '../../../tests/patterns/config.mjs'
-import { testPatternDrafting } from '../../../tests/patterns/drafting.mjs'
-import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
+import { testPatternConfig } from '../../../tests/designs/config.mjs'
+import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
+import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
 testPatternConfig(Brian)

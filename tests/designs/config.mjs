@@ -1,33 +1,37 @@
 import { measurements } from '@freesewing/models'
+import designs from "../../config/software/designs.json" assert { type: 'json' }
 import chai from 'chai'
 
 const expect = chai.expect
 
-const notGarments = [
-  'rendertest',
-  'tutorial',
-  'examples',
-  'legend',
-  'plugintest',
-]
-const isGarment = design => (notGarments.indexOf(design) === -1) ? true : false
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']
+
+const getShortName = name => name.split('/').pop()
+const getFamily = design => {
+  for (const fam in designs) {
+    if (Object.keys(designs[fam]).indexOf(design) !== -1) return fam
+  }
+
+  return false
+}
 
 
 /*
  * This runs unit tests for the pattern configuration
  * It expects the following:
  *
- * @param string me: Name of the pattern (eg 'aaron')
- * @param object Pattern: Instantiated pattern object
+ * @param string Pattern: The Pattern constructor
  */
-export const testPatternConfig = (design, pattern) => {
-  const allOptiongroupOptions = []
-  it('Metadata:', () => true)
-  it(`  - 'name' should match package name`, () => {
-    expect(pattern.config.name).to.equal(design)
+export const testPatternConfig = (Pattern) => {
+  const pattern = new Pattern()
+  pattern.init()
+  it('Pattern metadata:', () => true)
+  it(`  - 'name' should be set and be a non-empty string`, () => {
+    expect(typeof pattern.config.name).to.equal('string')
+    expect(pattern.config.name.length > 1).to.be.true
   })
+  //
   it(`  - 'version' should be set and be a non-empty string`, () => {
     expect(typeof pattern.config.version).to.equal('string')
     expect(pattern.config.version.length > 1).to.be.true
@@ -40,64 +44,52 @@ export const testPatternConfig = (design, pattern) => {
     }
     else expect(pattern.config.version.split('.').length).to.equal(3)
   })
-  for (let key of ['design', 'code']) {
-    it(`  - '${key}' should be a string or array of strings`, () => {
-      if (typeof pattern.config[key] === 'string') {
-        expect(pattern.config[key].length > 1).to.be.true
-      } else {
-        for (let d of pattern.config[key]) {
-          expect(typeof d).to.equal('string')
-          expect(d.length > 1).to.be.true
-        }
-      }
+
+  it('Monorepo metadata:', () => true)
+  // Store these for re-use
+  const shortName = getShortName(pattern.config.name)
+  const family = getFamily(shortName)
+  it(`  - 'name' should be resolvable to a short name`, () => {
+    expect(typeof shortName).to.equal('string')
+    expect(shortName.length > 1).to.be.true
+  })
+  it(`  - Short name should be in a known design family`, () => {
+    expect(typeof family).to.equal('string')
+    expect(typeof designs[family]).to.equal('object')
+    expect(typeof designs[family][shortName]).to.equal('object')
+  })
+  const meta = designs[family][shortName]
+  it(`  - 'about' should be set and be a string of reasonable length`, () => {
+    expect(typeof meta.about).to.equal('string')
+    expect(meta.about.length > 15).to.be.true
+    expect(meta.about.length < 280).to.be.true
+  })
+  // Config tests for non-utility patterns only
+  if (family !== 'utilities') {
+    it(`  - 'design' should be set and be a string of reasonable length`, () => {
+      expect(typeof meta.design).to.equal('string')
+      expect(meta.design.length > 2).to.be.true
+      expect(meta.design.length < 80).to.be.true
+    })
+    it(`  - 'code' should be set and be a string of reasonable length`, () => {
+      expect(typeof meta.code).to.equal('string')
+      expect(meta.code.length > 2).to.be.true
+      expect(meta.code.length < 80).to.be.true
+    })
+    it(`  - 'department' should be set and be a string of reasonable length`, () => {
+      expect(typeof meta.code).to.equal('string')
+      expect(meta.code.length > 2).to.be.true
+      expect(meta.code.length < 80).to.be.true
+    })
+    it(`  - 'dfficulty' should be set and be a [1-5] number`, () => {
+      expect(typeof meta.difficulty).to.equal('number')
+      expect([1,2,3,4,5].indexOf(meta.difficulty) === -1).to.be.false
     })
   }
 
-  /*
-   *  Ensure optiongroup structure and content
-   */
-  it('Option groups:', () => true)
-  for (const group in pattern.config.optionGroups) {
-    for (const option of pattern.config.optionGroups[group]) {
-      if (typeof option === 'string') {
-        it(`  - '${option}' should be a valid option`, () => {
-          expect(pattern.config.options[option]).to.exist
-        })
-        allOptiongroupOptions.push(option)
-      } else {
-        for (const subgroup in option) {
-          it(`  Subgroup: ${subgroup}`, () => true)
-          for (const suboption of option[subgroup]) {
-            it(`    - '${suboption}' should be a valid option`, () => {
-              expect(pattern.config.options[suboption]).to.exist
-            })
-            allOptiongroupOptions.push(suboption)
-          }
-        }
-      }
-    }
-  }
-
-
-  // Config tests for garments only
-  if (isGarment(design)) {
-    it(`  - 'type' should be 'pattern' or 'block'`, () => {
-      expect(['pattern', 'block'].indexOf(pattern.config.type)).to.not.equal(-1)
-    })
-    it(`  - 'department' should be one of tops, bottoms, coats, swimwear, underwear, or accessories`, () => {
-      expect(
-        ['tops', 'bottoms', 'coats', 'swimwear', 'underwear', 'accessories'].indexOf(pattern.config.department)
-      ).to.not.equal(-1)
-    })
-    it(`  - 'difficulty' should be a number between 1 and 5`, () => {
-      expect(typeof pattern.config.difficulty).to.equal('number')
-      expect(pattern.config.difficulty > 0).to.be.true
-      expect(pattern.config.difficulty < 6).to.be.true
-    })
-
-    /*
-     *  Ensure required measurements are known measurements
-     */
+  if (family !== 'utilities') {
+    // Ensure required measurements are known measurements
+    // Ensure required measurements are known measurements
     it('Required measurements:', () => true)
     for (let measurement of pattern.config.measurements || []) {
       it(`  - '${measurement}' should be a known measurement`, () => {
@@ -108,26 +100,32 @@ export const testPatternConfig = (design, pattern) => {
         }
       })
     }
+    it('Optional measurements:', () => true)
+    for (let measurement of pattern.config.optionalMeasurements || []) {
+      it(`  - '${measurement}' should be a known measurement`, () => {
+        if (measurements.menswear.indexOf(measurement) !== -1) {
+          expect(measurements.menswear.indexOf(measurement)).to.not.equal(-1)
+        } else {
+          expect(measurements.womenswear.indexOf(measurement)).to.not.equal(-1)
+        }
+      })
+    }
   }
 
-  /*
-   *  Test validity of the pattern's options
-   */
+  // Test validity of the pattern's options
   it('Pattern options:', () => true)
   for (let name in pattern.config.options) {
-    let option = pattern.config.options[name]
-    let type = typeof option
+    const option = pattern.config.options[name]
+    const type = typeof option
     if (type === 'object' && typeof option.pct !== 'undefined') {
+      it(`    - If it has a 'menu' property, it should be a string`, () => {
+        if (option.menu) expect(typeof option.menu).to.equal('string')
+      })
       // Percentage option
       it(`  - '${name}' is a percentage option`, () => true)
       // Snapped options can just be hidden instead
       if (option.hidden) {
         if (option.snap) it(`  - '${name}' is a hidden snap option`, () => true)
-        else {
-          it(`    - Should be exposed in an option group`, () => {
-            expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
-          })
-        }
       }
       it(`    - Should have a default value`, () => {
         expect(typeof option.pct).to.equal('number')
@@ -141,9 +139,6 @@ export const testPatternConfig = (design, pattern) => {
     } else if (type === 'object' && typeof option.deg !== 'undefined') {
       // Degree option
       it(`  - '${name}' is a degree option`, () => true)
-      it(`    - Should be exposed in an option group`, () => {
-        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
-      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.deg).to.equal('number')
       })
@@ -156,9 +151,6 @@ export const testPatternConfig = (design, pattern) => {
     } else if (type === 'object' && typeof option.mm !== 'undefined') {
       // Millimeter option
       it(`  - '${name}' is a distance (mm) option`, () => true)
-      it(`    - Should be exposed in an option group`, () => {
-        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
-      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.mm).to.equal('number')
       })
@@ -176,9 +168,6 @@ export const testPatternConfig = (design, pattern) => {
     } else if (type === 'object' && typeof option.bool !== 'undefined') {
       // Boolean option
       it(`  - '${name}' is a boolean option`, () => true)
-      it(`    - Should be exposed in an option group`, () => {
-        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
-      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.bool).to.equal('boolean')
       })
@@ -188,9 +177,6 @@ export const testPatternConfig = (design, pattern) => {
     } else if (type === 'object' && typeof option.count !== 'undefined') {
       // Count option
       it(`  - '${name}' is a count option`, () => true)
-      it(`    - Should be exposed in an option group`, () => {
-        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
-      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.count).to.equal('number')
       })
@@ -203,9 +189,6 @@ export const testPatternConfig = (design, pattern) => {
     } else if (type === 'object' && typeof option.list !== 'undefined') {
       // List option
       it(`  - '${name}' is a list option`, () => true)
-      it(`    - Should be exposed in an option group`, () => {
-        expect(allOptiongroupOptions.indexOf(name) !== -1).to.be.true
-      })
       it(`    - Should have a default value`, () => {
         expect(typeof option.dflt).to.not.equal('undefined')
       })
@@ -223,5 +206,6 @@ export const testPatternConfig = (design, pattern) => {
       it(`  - '${name}' is a static string`, () => true)
     }
   }
+
 }
 
