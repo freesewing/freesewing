@@ -1,4 +1,4 @@
-import Attributes from './attributes'
+import Attributes from './attributes.mjs'
 
 function Snippet(def, anchor, debug = false) {
   this.def = def

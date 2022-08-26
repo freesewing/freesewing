@@ -1,6 +1,6 @@
-import Path from './path'
-import Point from './point'
 import { Bezier } from 'bezier-js'
+import Path from './path.mjs'
+import Point from './point.mjs'
 
 export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)

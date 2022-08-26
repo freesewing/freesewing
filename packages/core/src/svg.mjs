@@ -1,5 +1,5 @@
-import Attributes from './attributes'
-import { round } from './utils'
+import Attributes from './attributes.mjs'
+import { round } from './utils.mjs'
 import pkg from '../package.json'
 
 function Svg(pattern) {

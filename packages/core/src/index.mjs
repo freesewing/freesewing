@@ -1,9 +1,9 @@
-import Design from './design'
-import Pattern from './pattern'
-import Point from './point'
-import Path from './path'
-import Snippet from './snippet'
-import * as utils from './utils'
+import Design from './design.mjs'
+import Pattern from './pattern.mjs'
+import Point from './point.mjs'
+import Path from './path.mjs'
+import Snippet from './snippet.mjs'
+import * as utils from './utils.mjs'
 import pkg from '../package.json' assert { type: 'json' }
 
 const { version } = pkg

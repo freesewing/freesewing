@@ -1,5 +1,5 @@
-import Attributes from './attributes'
-import Point from './point'
+import Attributes from './attributes.mjs'
+import Point from './point.mjs'
 import { Bezier } from 'bezier-js'
 import {
   linesIntersect,
@@ -9,7 +9,7 @@ import {
   pointOnCurve,
   curveEdge,
   round,
-} from './utils'
+} from './utils.mjs'
 
 function Path(debug = false) {
   this.render = true

@@ -1,9 +1,9 @@
-import * as utils from './utils'
-import Point from './point'
-import Path from './path'
-import Snippet from './snippet'
-import Attributes from './attributes'
-import Hooks from './hooks'
+import * as utils from './utils.mjs'
+import Point from './point.mjs'
+import Path from './path.mjs'
+import Snippet from './snippet.mjs'
+import Attributes from './attributes.mjs'
+import Hooks from './hooks.mjs'
 
 function Part() {
   this.attributes = new Attributes()

@@ -1,3 +1,4 @@
+import pack from 'bin-pack'
 import {
   macroName,
   sampleStyle,
@@ -5,16 +6,15 @@ import {
   decoratePartDependency,
   addPartConfig,
   mergeDependencies,
-} from './utils.js'
-import Part from './part'
-import Point from './point'
-import Path from './path'
-import Snippet from './snippet'
-import Svg from './svg'
-import pack from 'bin-pack'
-import Store from './store'
-import Hooks from './hooks'
-import Attributes from './attributes'
+} from './utils.mjs'
+import Part from './part.mjs'
+import Point from './point.mjs'
+import Path from './path.mjs'
+import Snippet from './snippet.mjs'
+import Svg from './svg.mjs'
+import Store from './store.mjs'
+import Hooks from './hooks.mjs'
+import Attributes from './attributes.mjs'
 import pkg from '../package.json'
 
 export default function Pattern(config = { options: {} }) {

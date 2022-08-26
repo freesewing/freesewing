@@ -1,5 +1,5 @@
-import Pattern from './pattern'
-import { addPartConfig } from './utils.js'
+import Pattern from './pattern.mjs'
+import { addPartConfig } from './utils.mjs'
 
 /*
  * The Design constructor. Returns a Pattern constructor

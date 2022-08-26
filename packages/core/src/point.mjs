@@ -1,4 +1,4 @@
-import Attributes from './attributes'
+import Attributes from './attributes.mjs'
 
 function Point(x, y, debug = false) {
   this.x = x
