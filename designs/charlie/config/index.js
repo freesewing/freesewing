@@ -1,6 +1,8 @@
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 import configHelpers from '@freesewing/config-helpers'
+
 const { elastics, pctBasedOn } = configHelpers
+const { version } = pkg
 
 export default {
   version,

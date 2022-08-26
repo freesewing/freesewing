@@ -1,8 +1,5 @@
 // This file is auto-generated.
 // Changes you make will be overwritten.
-import chai from 'chai'
-import models from '@freesewing/models'
-import patterns from '@freesewing/pattern-info'
 import Pattern from './dist/index.mjs'
 
 // Shared tests
@@ -10,31 +7,11 @@ import { testPatternConfig } from '../../../tests/patterns/config.mjs'
 import { testPatternDrafting } from '../../../tests/patterns/drafting.mjs'
 import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
 
-const expect = chai.expect
-
 // Test config
-testPatternConfig(
-  "simone",
-  new Pattern(),
-  expect,
-  models,
-  patterns
-)
+testPatternConfig("simone", new Pattern())
 
 // Test drafting
-testPatternDrafting(
-  "simone",
-  Pattern,
-  expect,
-  models,
-  patterns
-)
+testPatternDrafting("simone", Pattern)
 
 // Test sampling
-testPatternSampling(
-  "simone",
-  Pattern,
-  expect,
-  models,
-  patterns
-)
+testPatternSampling( "simone", Pattern)

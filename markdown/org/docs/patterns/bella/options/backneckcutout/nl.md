@@ -2,7 +2,7 @@
 title: "Hals uitsnijding achteraan"
 ---
 
----
+***
 
 ![Het effect van de optie voor de zijkant uitknippen op het patroon](sample.png)
 

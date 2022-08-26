@@ -2,7 +2,10 @@
 title: Length ratio
 ---
 
-<Fixme>Document this option</Fixme>
+Controls the length of the bib.
+
+- Increase the percentage to lengthen the bib.
+- Decrease the percentage to shorten the bib.
 
 ## Effect of this option on the pattern
 

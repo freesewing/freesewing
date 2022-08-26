@@ -3,44 +3,44 @@ acrossBackFactor:
   title: Across back factor
   description: Controls your across back width as a factor of your shoulder to shoulder measurement.
 armholeDepthFactor:
-  title: Armhole depth factor
-  description: Controls the depth of the armhole. Higher values make a deeper armhole.
+  title: Глибина пройми
+  description: Контролює глибину пройми. Вищі показники роблять глибшу пройму.
 backNeckCutout:
-  title: Back neck cutout
-  description: How deep the neck is cut out at the back
+  title: Глибина горловини ззаду
+  description: Контролює глибину задньої частини горловини
 bicepsEase:
-  title: Biceps ease
-  description: 'The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease.'
+  title: Свобода облягання біцепсів
+  description: 'Контролює свободу облягання на верхній частині Вашої руки. Зверніть увагу, що коректне з''єднання рукава з проймою є більш пріорітетним для програми, аніж свобода облягання рукава.'
 collarEase:
-  title: Collar ease
-  description: The amount of ease around your neck
+  title: Свобода облягання коміра
+  description: Керує свободою облягання навколо шиї
 chestEase:
-  title: Chest ease
-  description: The amount of ease at your chest.
+  title: Свобода облягання на грудях
+  description: Керує свободою облягання на грудях.
 cuffEase:
-  title: Cuff ease
-  description: The amount of ease at your wrist.
+  title: Свобода облягання манжета
+  description: Керує свободою облягання на зап'ястях.
 frontArmholeDeeper:
   title: Front armhole extra cutout
   description: How much do you want the front armhole to be cut out deeper than the back.
 lengthBonus:
-  title: Length bonus
-  description: The amount to lengthen the garment. A negative value will shorten it.
+  title: Додаткова довжина
+  description: Додає довжину до виробу. Негативне значення скорочує довжину виробу.
 s3Collar:
-  title: 'Shoulder seam shift: collar side'
-  description: Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.
+  title: 'Зсув плечевого шва зі сторони коміра'
+  description: Збільшіть цей показник, щоб змістити плечевий шов зі сторони коміру. Зменшення показника зміщує шов у зворотному напрямку.
 s3Armhole:
-  title: 'Shoulder seam shift: armhole side'
-  description: Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.
+  title: 'Зсув плечевого шва зі сторони пройми'
+  description: Збільшіть цей показник, щоб змістити плечевий шов зі сторони пройми. Зменшення показника зміщує шов у зворотному напрямку.
 shoulderEase:
-  title: Shoulder ease
-  description: The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.
+  title: Свобода облягання плеча
+  description: Керує свободою облягання на плечах. Цей показник збільшує відстань від плеча до плеча для додавання додаткових шарів тканини тощо.
 shoulderSlopeReduction:
-  title: Shoulder slope reduction
-  description: The amount by which the shoulder slope is reduced to allow for shoulder padding.
+  title: Зменшення нахилу плеча
+  description: Зменшує нахил плеча для додавання плечових підкладок.
 sleeveLengthBonus:
-  title: Sleeve length bonus
-  description: The amount to lengthen the sleeve. A negative value will shorten it.
+  title: Додаткова довжина рукава
+  description: Додає довжину до рукава. Негативне значення скорочує довжину рукава.
 sleevecapEase:
   title: Sleevecap ease
   description: The amount by which the sleevecap seam is longer than the armhole seam.

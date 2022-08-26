@@ -2,7 +2,6 @@
 title: "Waistband width"
 - - -
 
-
 Controls the width of the waistband.
 
 ## Effet de cette option sur le motif

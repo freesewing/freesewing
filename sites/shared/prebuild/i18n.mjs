@@ -1,20 +1,21 @@
-import {build} from '../../../packages/i18n/src/prebuild.mjs'
-import {denyList} from '../../../packages/i18n/scripts/prebuilder.mjs'
+import { build } from '../../../packages/i18n/src/prebuild.mjs'
+import { denyList } from '../../../packages/i18n/scripts/prebuilder.mjs'
 import fs from 'fs'
 import path from 'path'
 
-export const prebuildI18n = async(site, only=false) => {
-  const writeJson = async (locale, namespace, content) => fs.writeFileSync(
-      path.resolve(
-        '..',
-        site,
-        'public',
-        'locales',
-        locale,
-        `${namespace}.json`
-      ),
-      JSON.stringify(content)
-    )
+const writeJson = async (site, locale, namespace, content) => fs.writeFileSync(
+   path.resolve(
+     '..',
+     site,
+     'public',
+     'locales',
+     locale,
+     `${namespace}.json`
+   ),
+   JSON.stringify(content)
+ )
+
+export const prebuildI18n = async (site, only=false) => {
 
   const filter = site === 'dev' ? (loc => loc === 'en') : (loc => denyList.indexOf(loc) === -1)
   const locales = await build(filter, only)
@@ -27,13 +28,7 @@ export const prebuildI18n = async(site, only=false) => {
     // Only English for dev site
     const loc = locales[locale]
     // Fan out into namespaces
-    for (const namespace in loc) {
-      writeJson(
-        locale, namespace,
-        loc[namespace]
-      )
-    }
-
-    writeJson(locale, 'locales', languages)
+    for (const namespace in loc) writeJson(site, locale, namespace, loc[namespace])
+    writeJson(site, locale, 'locales', languages)
   }
 }

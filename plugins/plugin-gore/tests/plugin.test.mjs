@@ -15,7 +15,7 @@ describe('Gore Plugin Tests', () => {
     macro('gore', {
       from:anchorPoint,
       radius:25,
-      goreNumber:4,
+      gores:4,
       extraLength:0,
       prefix:'gore'
     })
@@ -36,7 +36,7 @@ describe('Gore Plugin Tests', () => {
     macro('gore', {
       from:anchorPoint,
       radius:25,
-      goreNumber:8,
+      gores:8,
       extraLength:0,
       prefix:'gore'
     })
@@ -58,7 +58,7 @@ describe('Gore Plugin Tests', () => {
     macro('gore', {
       from:anchorPoint,
       radius:25,
-      goreNumber:4,
+      gores:4,
       extraLength:20,
       prefix:'gore'
     })
@@ -80,7 +80,7 @@ describe('Gore Plugin Tests', () => {
     macro('gore', {
       from:anchorPoint,
       radius:30,
-      goreNumber:4,
+      gores:4,
       extraLength:0,
       prefix:'gore'
     })
@@ -102,7 +102,7 @@ describe('Gore Plugin Tests', () => {
     macro('gore', {
       from:anchorPoint,
       radius:25,
-      goreNumber:4,
+      gores:4,
       extraLength:0,
       prefix:'gore'
     })

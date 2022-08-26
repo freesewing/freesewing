@@ -2,7 +2,6 @@
 title: "Waistband width"
 - - -
 
-
 Controla el ancho de la banda de cintura.
 
 ## Efecto de esta opción en el patrón

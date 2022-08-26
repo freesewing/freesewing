@@ -1,6 +1,12 @@
 # Change log for: @freesewing/charlie
 
 
+## 2.22.0 (2022-08-23)
+
+### Changed
+
+ - Renamed back pocket jet to back pocket welt
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

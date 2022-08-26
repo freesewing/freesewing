@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Cuff ease"
-
-***
+- - -
 
 ![Cuff ease](./cuffease.svg)
 

@@ -2,7 +2,7 @@
 title: "Altura del dart trasero"
 ---
 
----
+***
 
 ![El efecto de la altura del dardo posterior en el patrón](sample.png)
 

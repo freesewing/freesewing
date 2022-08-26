@@ -15,12 +15,12 @@ cuffStyle:
   title: Стиль чохли
   description: Стиль чохли (манжета) на ногах
 bandBelowKnee:
-  title: Cuff below knee
-  description: Controls the cuff distance from the knee
+  title: Чохла нижче коліна
+  description: Керує відстанню між чохлою (манжетом) та коліном
 kneeToBelow:
-  title: Cuff length
-  description: Controls the tightness of the cuff as compared to the knee
+  title: Довжина чохли
+  description: Керує свободою облягання чохли на нозі
 ventLength:
-  title: Vent length
-  description: Controls the length of the vent between knee and cuff
+  title: Довжина шліца
+  description: Керує довжиною шліца між коліном та чохлою (манжетом)
 

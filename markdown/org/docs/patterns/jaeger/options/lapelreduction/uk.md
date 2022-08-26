@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Lapel reduction"
-
-***
+- - -
 
 How much the tip of the lapels turns inwards.
 

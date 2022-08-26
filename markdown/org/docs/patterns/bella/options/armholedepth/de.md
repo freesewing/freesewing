@@ -2,7 +2,7 @@
 title: "Armlochtiefe"
 ---
 
----
+***
 
 ![Der Effekt der Option Armlochtiefe auf das Schnittmuster](sample.png)
 

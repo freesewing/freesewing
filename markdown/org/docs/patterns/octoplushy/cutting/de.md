@@ -2,16 +2,21 @@
 title: "Octoplushy, the plushy octopus: Cutting Instructions"
 ---
 
-- **Color 1 (Upper body, top of legs)**
-  - Cut **8 Part 1**
-  - **octopus only**
-    - Cut **2 Part 9**
-  - **squid only**
-    - Cut **2 Part 4**
+- **Color 1 (Upper body, top of legs & head)**
+  - **Octoplushy, Octopus & Squid**
+    - Cut **8 head** parts
+  - **Octopus only**
+    - Cut **2 eyebrow** parts
+  - **Squid only**
+    - Cut **2 head (a)** parts
+
 - **Color 2 (Belly, bottom of legs)**
-  - Cut **8 Part 2**
-  - **squid only**
-    - Cut **2 Part 5**
-- **Octopus & Squid (eyes)**
-  - Cut **2 Part 3 (white)**
-  - Cut **2 Part 6 (black)**
+  - **Octoplushy, Octopus & Squid**
+    - Cut **8 leg** parts
+  - **Squid only**
+    - Cut **2 leg (a)** parts
+
+- **Eyes Fabric**
+  - **Octopus & Squid**
+    - Cut **2 eye (white)** parts
+    - Cut **2 pupil (black)** parts

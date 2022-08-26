@@ -2,7 +2,7 @@
 title: "Profondeur du point de pivot de l'emmanchure dos"
 ---
 
----
+***
 
 ![L'effet de l'option de profondeur de la hauteur de l'armure arrière sur le motif](sample.png)
 

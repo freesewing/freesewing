@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Band (chest) tie length"
-
-***
+- - -
 
 ***
 

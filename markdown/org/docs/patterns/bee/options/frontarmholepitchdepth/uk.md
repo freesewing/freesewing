@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Front armhole pitch depth (Bella)"
-
-***
+- - -
 
 ***
 

@@ -84,7 +84,8 @@ const HomePage = (props) => {
           </a>
         </div>
       </div>
-
+      {/* here to force Tailwind inclusion of the w-8 h-8 classes */}
+      <span className="w-8 h-8" />
     </Page>
   )
 }

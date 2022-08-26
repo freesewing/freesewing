@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core",
-  "version": "2.21.3",
+  "version": "3.0.0-alpha.0",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -25,21 +25,24 @@
     "sewing",
     "sewing patterns"
   ],
-  "main": "dist/index.js",
+  "type": "module",
   "module": "dist/index.mjs",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
   "scripts": {
-    "build": "node build.js",
+    "build": "node --experimental-json-modules build.mjs",
     "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.js",
+    "mbuild": "NO_MINIFY=1 node --experimental-json-modules build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "test": "nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.js",
-    "vbuild": "VERBOSE=1 node build.js",
+    "test": "nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.mjs",
+    "vbuild": "VERBOSE=1 node --experimental-json-modules build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "report": "nyc report --reporter=html",
-    "testci": "nyc --silent npx mocha tests/*.test.js --reporter ../../tests/reporters/terse.js && nyc report --reporter=json",
-    "testonly": "npx mocha tests/*.test.js",
-    "cibuild_step0": "node build.js"
+    "testci": "nyc --silent npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js && nyc report --reporter=json",
+    "testonly": "npx mocha tests/*.test.mjs",
+    "cibuild_step0": "node --experimental-json-modules build.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
@@ -56,10 +59,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": ">=16.0.0",
+    "npm": ">=8"
   }
 }

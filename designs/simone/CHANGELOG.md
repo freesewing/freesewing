@@ -1,6 +1,18 @@
 # Change log for: @freesewing/simone
 
 
+## 2.22.0 (2022-08-23)
+
+### Added
+
+ - Added Bust-aligned buttons option and functionality. Closes [#2154] (https://github.com/freesewing/freesewing/issues/2154)
+ - Added a notch at the center front bustline.
+
+### Fixed
+
+ - Don't do a negative FBA from there's no need for an FBA Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
+ - Duplicate config rather than mutating the imported simon config
+
 ## 2.21.2 (2022-06-30)
 
 ### Changed

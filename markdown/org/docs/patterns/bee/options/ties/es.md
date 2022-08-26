@@ -2,7 +2,7 @@
 title: "Ties"
 - - -
 
----
+***
 
 Sobre si incluir cintas o no
 

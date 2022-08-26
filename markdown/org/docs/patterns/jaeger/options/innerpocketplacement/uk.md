@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Inner pocket placement"
-
-***
+- - -
 
 The location of the inner pocket.
 

@@ -1,5 +1,7 @@
-import { version } from '../package.json'
 import configHelpers from '@freesewing/config-helpers'
+import pkg from '../package.json' assert { type: 'json' }
+
+const { version } = pkg
 const { smallsteps, pctBasedOn } = configHelpers
 
 export default {

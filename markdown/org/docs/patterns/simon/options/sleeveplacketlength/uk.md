@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Sleeve placket length"
-
-***
+- - -
 
 ![Sleeve placket length](sleeveplacketlength.svg)
 

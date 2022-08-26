@@ -112,7 +112,7 @@ Esta parte superior estará siempre en el espectáculo, así que asegúrese de c
 </Tip>
 
 <Tip>
- 
+
 Para evitar que sus bolsillos salgan corriendo, puede colocar una pieza de cinta sin estirar entre el pliegue. Cuando se une, también se capturará esta cinta, evitando que el bolsillo salga.
 
 </Tip>
@@ -132,7 +132,7 @@ Zig-zag the edge of the folded-back front piece to finish it and secure it to th
 When you're done, place front piece, lining and pocket bag flat, and give it a good press.
 
 <Tip>
-  
+
 Puede que sea un buen momento para recordarles que cada paso hasta este punto tenía que hacerse por ambas piernas.
 
 Es sólo un recordatorio amistoso, los siguientes pasos deben hacerse también para ambas piernas.
@@ -220,7 +220,7 @@ Press open the seam allowance along the side seams. Do so from the back, and rep
 Take your time, making sure to use enough heat, but not too much. Use steam or spray on water for best effect.
 
 <Tip>
- 
+
 Una costura lateral plana agradable se ve grande, así que tómate tu tiempo para hacerlo bien.
 
 </Tip>
@@ -728,7 +728,7 @@ Siéntete libre de recortar la longitud de tus bucles de cinturón después de t
 Before we hem the trousers, finish the raw edge of the legs with a zig-zag stitch or serger.
 
 <Tip>
- 
+
 También sería un buen momento para probar con tus pantalones y marcar exactamente cuánto tiempo quieres que sean después de que se hemten.
 
 </Tip>
@@ -778,4 +778,3 @@ While there are machine alternatives, they aren't as neat (blind hem stitch) or 
 ### Paso 56: Recorte, limpia y presiona
 
 Trim any loose threads or basting that remains, and give your trousers a good final press.
-

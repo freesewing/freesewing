@@ -14,7 +14,7 @@ die rohen Kanten zu umhüllen.
 Für diese Anweisungen gehen wir davon aus, dass Sie einen Serger für die Naht verwenden, aber wir
 bieten auch Alternativen an. Weitere Optionen für die Bearbeitung von Nähten beinhalten das Schneiden von
 Scheren mit rosa Scheren Das Nähen eines Zick-Zick-Zack am Rand der Naht, um ihn vor dem Ausziehen zu bewahren oder mit
-Bänder zu binden. 
+Bänder zu binden.
 
 </Tip>
 

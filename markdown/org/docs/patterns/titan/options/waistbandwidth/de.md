@@ -2,7 +2,6 @@
 title: "Waistband width"
 - - -
 
-
 Steuert die Breite der Taille.
 
 ## Effekt dieser Option auf das Schnittmuster

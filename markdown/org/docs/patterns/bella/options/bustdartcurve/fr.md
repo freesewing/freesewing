@@ -2,7 +2,7 @@
 title: "Courbe de la pince poitrine"
 ---
 
----
+***
 
 ![L'effet de l'option courbe de la courbe de la poitrine sur le motif](sample.png)
 

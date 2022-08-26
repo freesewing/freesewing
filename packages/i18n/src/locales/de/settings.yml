@@ -9,7 +9,7 @@ sabool:
   title: Include seam allowance
   description: Controls whether or not to include seam allowance in your pattern
 sa:
-  title: Nahtzugabe
+  title: Seam allowance size
   description: Steuert die Breite der Nahtzugabe, die in deinem Schnittmuster enthalten ist
 locale:
   title: Sprache

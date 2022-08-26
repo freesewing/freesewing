@@ -2,7 +2,7 @@
 title: "Stijl Manchet"
 ---
 
----
+***
 
 Dit patroon ondersteunt drie verschillende manchet stijlen:
 

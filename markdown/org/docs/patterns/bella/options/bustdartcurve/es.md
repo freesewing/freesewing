@@ -2,7 +2,7 @@
 title: "Curva darda de busto"
 ---
 
----
+***
 
 ![El efecto de la opción de la curva de polvo sobre el patrón](sample.png)
 

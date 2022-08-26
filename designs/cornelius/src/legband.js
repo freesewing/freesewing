@@ -13,8 +13,8 @@ function findR(part, height, arcLength) {
     }
     diff = (a * height) / (1 - Math.cos(a / 2)) - arcLength
     iter++
-    // console.log( {iter, diff, a} );
-  } while ((diff < -0.1 || diff > 0.1) && iter < 500)
+    //console.log( {iter, diff, a} );
+  } while ((diff < -1 || diff > 1) && iter < 50)
   if (iter >= 500) {
     raise.error('Could not find the radius for the legband within 500 iterations')
   }

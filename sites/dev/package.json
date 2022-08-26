@@ -1,6 +1,6 @@
 {
   "name": "freesewing.dev",
-  "version": "2.21.3",
+  "version": "3.0.0-alpha.0",
   "private": true,
   "scripts": {
     "dev": "node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
@@ -8,13 +8,12 @@
     "prebuild": "SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs",
     "build": "node --experimental-json-modules ./node_modules/.bin/next build",
     "cibuild": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next build && node scripts/algolia.mjs",
-
     "start": "yarn prebuild && node --experimental-json-modules ./node_modules/.bin/next dev -p 8000",
     "lint": "next lint",
     "serve": "pm2 start npm --name 'dev' -- run start"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.5",
+    "@heroicons/react": "^2.0.1",
     "@mdx-js/loader": "^2.0.0-rc.2",
     "@mdx-js/mdx": "^2.0.0-rc.2",
     "@mdx-js/react": "^2.0.0-rc.2",
@@ -25,12 +24,12 @@
     "lodash.get": "^4.4.2",
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
-    "netlify-cli": "^10.3.3",
+    "netlify-cli": "^11.3.0",
     "next": "latest",
     "react-copy-to-clipboard": "^5.0.4",
     "react-hotkeys-hook": "^3.4.4",
     "react-instantsearch-dom": "^6.18.0",
-    "react-markdown": "^7.1.1",
+    "react-markdown": "^8.0.3",
     "react-swipeable": "^7.0.0",
     "react-timeago": "^7.1.0",
     "rehype-autolink-headings": "^6.1.1",
@@ -40,7 +39,6 @@
     "rehype-stringify": "^9.0.2",
     "remark-copy-linked-files": "https://github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "^3.0.1",
-    "remark-jargon": "^2.21.3",
     "roughjs": "^4.5.2",
     "viz.js": "^2.1.2"
   },

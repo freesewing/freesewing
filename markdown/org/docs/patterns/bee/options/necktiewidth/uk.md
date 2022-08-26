@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Neck tie width"
-
-***
+- - -
 
 ***
 

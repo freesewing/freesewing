@@ -2,7 +2,7 @@
 title: "Aisance de poitrine"
 ---
 
----
+***
 
 ![L'effet de l'option de facilité de poitrine sur le patron](sample.png)
 

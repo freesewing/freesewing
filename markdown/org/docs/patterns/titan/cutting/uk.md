@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Titan trouser block: Cutting Instructions"
-
-***
+- - -
 
 **Main fabric**
 

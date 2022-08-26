@@ -2,7 +2,7 @@
 title: "Inclinaison d'emmanchure dos"
 ---
 
----
+***
 
 ![L'effet de l'option de fixation du blindage arrière sur le motif](sample.png)
 

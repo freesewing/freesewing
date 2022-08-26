@@ -2,7 +2,7 @@
 title: "Band (chest) tie length colours"
 - - -
 
----
+***
 
 Sobre si quieres la cinta alrededor del pecho de un solo color o de dos colores
 

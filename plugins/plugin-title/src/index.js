@@ -60,6 +60,7 @@ export default {
         scale: 1,
         rotation: 0,
       }
+
       so = { ...defaults, ...so }
       so.scale = so.scale * this.context.settings.scale
       let overwrite = true
@@ -93,11 +94,18 @@ export default {
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       }
       shift += 6
-      const dateformat = require('dateformat')
       const now = new Date()
+      let hours = now.getHours()
+      let mins = now.getMinutes()
+      if (hours < 10) hours = `0${hours}`
+      if (mins < 10) mins = `0${mins}`
       this.points[`_${prefix}_exportDate`] = so.at
         .shift(-90 - so.rotation, shift * so.scale)
-        .attr('data-text', dateformat(now, 'yyyymmdd"T"HHMMo'))
+        .attr('data-text', now.toLocaleDateString(
+          this.context.settings.locale || 'en',
+          { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'}
+        ))
+        .attr('data-text', `@ ${hours}:${mins}`)
         .attr('data-text-class', 'text-sm')
         .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
     },

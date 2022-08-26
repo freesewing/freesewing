@@ -11,11 +11,14 @@
     "url" : "https://freesewing.org/patrons/join"
   },
   "keywords": ["freesewing"],
-  "main": "dist/index.js",
+  "type": "module",
   "module": "dist/index.mjs",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
   "scripts": {
-    "cibuild_step1": "node build.js",
-    "build": "node build.js",
+    "cibuild_step1": "node build.mjs",
+    "build": "node build.mjs",
     "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
     "publish": "npm run build && npm publish --access public"
   },
@@ -25,10 +28,10 @@
   "files": ["dist/*", "README.md"],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": ">=16.0.0",
+    "npm": ">=8"
   }
 }

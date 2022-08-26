@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Hips ease"
-
-***
+- - -
 
 ![The hips ease option on Diana](./hipsease.svg)
 

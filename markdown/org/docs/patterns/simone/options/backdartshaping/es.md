@@ -2,7 +2,7 @@
 title: "Forma de las pinzas traseras"
 ---
 
----
+***
 
 Controla cuánto de la formación de la cintura se producirá en la parte trasera.
 

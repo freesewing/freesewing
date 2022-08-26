@@ -2,7 +2,7 @@
 title: "Ribbon width"
 ---
 
----
+***
 
 Width of the ribbon
 

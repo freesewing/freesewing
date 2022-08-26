@@ -2,7 +2,6 @@
 title: "Shoulder seam shift: armhole side"
 - - -
 
-
 Controls the shoulder seam location on the armhole side.
 
 - Aumenta esta opción para desplazar la costura del hombro hacia adelante en el lado del blindaje

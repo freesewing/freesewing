@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Armhole depth (Bella)"
-
-***
+- - -
 
 ***
 

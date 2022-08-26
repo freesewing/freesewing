@@ -1,5 +1,8 @@
-import { version } from '../package.json'
 import { config as simonConfig } from '@freesewing/simon'
+import Brian from '@freesewing/brian'
+import pkg from '../package.json' assert { type: 'json' }
+
+const { version } = pkg
 
 const config = {
   version,
@@ -7,7 +10,55 @@ const config = {
   name: 'simone',
   optionGroups: {
     ...simonConfig.optionGroups,
-    style: [...simonConfig.optionGroups.style, 'frontDarts', 'contour'],
+    style: [
+      ...Brian.config.optionGroups.style,
+      'contour',
+      'hemStyle',
+      'hemCurve',
+      'boxPleat',
+      'backDarts',
+      'frontDarts',
+      'splitYoke',
+      'yokeHeight',
+      {
+        closure: [
+          'extraTopButton',
+          'buttons',
+          'seperateButtonPlacket',
+          'buttonPlacketStyle',
+          'seperateButtonholePlacket',
+          'buttonholePlacketStyle',
+          'buttonPlacketWidth',
+          'buttonholePlacketWidth',
+          'buttonholePlacketFoldWidth',
+          'buttonFreeLength',
+          'bustAlignedButtons',
+        ],
+      },
+      {
+        cuffs: [
+          'cuffStyle',
+          'barrelCuffNarrowButton',
+          'cuffButtonRows',
+          'sleevePlacketWidth',
+          'sleevePlacketLength',
+          'cuffDrape',
+          'cuffLength',
+        ],
+      },
+      {
+        collar: [
+          'collarAngle',
+          'collarStandBend',
+          'collarStandCurve',
+          'collarFlare',
+          'collarStandWidth',
+          'collarBend',
+          'collarGap',
+          'collarRoll',
+        ],
+      },
+    ],
     advanced: [
       ...simonConfig.optionGroups.advanced,
       'bustDartAngle',
@@ -38,7 +89,11 @@ const config = {
     frontDarts: { bool: false },
     frontDartLength: { pct: 45, min: 30, max: 60 },
     contour: { pct: 50, min: 30, max: 75 },
-  },
+    bustAlignedButtons: {
+      dflt: 'disabled',
+      list: ['even', 'split', 'disabled'],
+    },
+  }
 }
 
 export default config

@@ -1,19 +1,19 @@
 ---
 centerBackDart:
   title: Центральна виточка на комірі
-  description: Dart at the center back of your neck to accommodate a rounded back
+  description: Центральна шийна виточка для округлої спини
 sleeveVentLength:
-  title: Sleeve vent length
-  description: Length of the sleeve vent
+  title: Довжина вирізу рукава
+  description: Керує довжиною вирізу рукава
 sleeveVentWidth:
-  title: Sleeve vent width
-  description: Width of the sleeve vent
+  title: Ширина вирізу рукава
+  description: Керує шириною вирізу рукава
 chestShaping:
-  title: Chest shaping
+  title: Формування грудної частини
   description: Amount of shaping to accommodate for the chest curve
 frontDartPlacement:
-  title: Front dart placement
-  description: Location of the front darts
+  title: Розміщення передньої виточки
+  description: Керує розташуванням передноьої виточки
 frontOverlap:
   title: Front overlap
   description: How far the fabric extends beyond the closing buttons
@@ -21,17 +21,17 @@ sideFrontPlacement:
   title: Side/Front placement
   description: The location of the side/front boundary
 chestPocketDepth:
-  title: Chest pocket depth
-  description: The depth of the chest pocket
+  title: Глибина нагрудної кишені
+  description: Контролює глибину нагрудної кишені
 chestPocketWidth:
-  title: Chest pocket width
-  description: The width of the chest pocket
+  title: Ширина нагрудної кишені
+  description: Контролює ширину нагрудної кишені
 chestPocketPlacement:
-  title: Chest pocket placement
-  description: The location of the chest pocket
+  title: Розташування нагрудної кишені
+  description: Контролює розташування нагрудної кишені
 chestPocketAngle:
-  title: Chest pocket angle
-  description: The angle under which the chest pocket is placed
+  title: Кут нагрудної кишені
+  description: Кут нахилу, під яким розміщується нагрудна кишеня
 chestPocketWeltSize:
   title: Chest pocket welt size
   description: The size of the chest pocket welt
@@ -66,14 +66,14 @@ centerFrontHemDrop:
   title: Center front hem drop
   description: The amount by which the hem is lowered towards the center front
 backVent:
-  title: Back vent
-  description: The amount of back vents
+  title: Виріз на спині
+  description: Контролює кількість вирізів на спині
 backVentLength:
-  title: Back vent length
-  description: The length of the back vent(s)
+  title: Довжина виріз(ів) на спині
+  description: Контролює довжину виріз(ів) на спині
 buttonLength:
-  title: Button length
-  description: The distance over which buttons are spread
+  title: Довжина між ґудзиками
+  description: Керує довжиною між ґудзиками
 frontCutawayAngle:
   title: Front cutaway angle
   description: The angle under which the front is cut away towards the hem

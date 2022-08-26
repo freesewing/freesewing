@@ -2,7 +2,7 @@
 title: "Büstenumfang leicht"
 ---
 
----
+***
 
 ![Der Effekt der Bust-Spannen-Option auf das Schnittmuster](sample.png)
 

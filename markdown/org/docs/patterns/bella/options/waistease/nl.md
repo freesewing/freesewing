@@ -2,7 +2,7 @@
 title: "Overwijdte taille"
 ---
 
----
+***
 
 ![Het effect van de optie overwijdte taille op het patroon](sample.png)
 

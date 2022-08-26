@@ -1,20 +1,22 @@
 import { nonHumanMeasurements } from './non-human-measurements.mjs'
+import { withBreasts, withoutBreasts } from '@freesewing/models'
+import chai from 'chai'
+
+const expect = chai.expect
+const models = {withBreasts, withoutBreasts}
 /*
  * This runs unit tests for pattern sampling
  * It expects the following:
  *
  * @param string me: Name of the pattern (eg 'aaron')
  * @param object Pattern: pattern constructor
- *
- * @param object expect: Imported chai.expect
- * @param object models: Imported @freesewing/models
- * @param object patterns: Imported @freesewing/pattern-info
+ * @param boolean log: Set to true to log errors
  */
 
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']
 
-export const testPatternSampling = (design, Pattern, expect, models, patterns, log=false) => {
+export const testPatternSampling = (design, Pattern, log=false) => {
   // Load non-human measurements
   const nonHuman = nonHumanMeasurements(models)
 
@@ -32,8 +34,8 @@ export const testPatternSampling = (design, Pattern, expect, models, patterns, l
     }
   }
 
-  // Figure out whether this is a with(out)breasts pattern
-  const breasts = (patterns.withBreasts.indexOf(design) === -1) ? false : true
+  // FIXME: Always use breasts for now
+  const breasts = true
 
   const ourModels = models
     [breasts ? 'withBreasts' : 'withoutBreasts']

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/sven",
-  "version": "2.21.3",
+  "version": "3.0.0-alpha.0",
   "description": "A FreeSewing pattern for a straightforward sweater",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -24,27 +24,30 @@
     "sewing",
     "sewing pattern"
   ],
-  "main": "dist/index.js",
+  "type": "module",
   "module": "dist/index.mjs",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
   "scripts": {
-    "build": "node build.js",
+    "build": "node --experimental-json-modules build.mjs",
     "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.js",
+    "mbuild": "NO_MINIFY=1 node --experimental-json-modules build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "npx mocha tests/*.test.mjs",
-    "vbuild": "VERBOSE=1 node build.js",
+    "vbuild": "VERBOSE=1 node --experimental-json-modules build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "prettier": "npx prettier --write 'src/*.js' 'config/*.js'",
     "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
-    "cibuild_step5": "node build.js"
+    "cibuild_step5": "node --experimental-json-modules build.mjs"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.21.3",
-    "@freesewing/plugin-bundle": "^2.21.3",
-    "@freesewing/config-helpers": "^2.21.3",
-    "@freesewing/brian": "^2.21.3",
-    "@freesewing/plugin-bust": "^2.21.3"
+    "@freesewing/core": "^3.0.0-alpha.0",
+    "@freesewing/plugin-bundle": "^3.0.0-alpha.0",
+    "@freesewing/config-helpers": "^3.0.0-alpha.0",
+    "@freesewing/brian": "^3.0.0-alpha.0",
+    "@freesewing/plugin-bust": "^3.0.0-alpha.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -57,10 +60,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": ">=16.0.0",
+    "npm": ">=8"
   }
 }

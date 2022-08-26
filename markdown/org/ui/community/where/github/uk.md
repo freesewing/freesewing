@@ -1,6 +1,5 @@
-***
-
-***
+- - -
+- - -
 
 [The `freesewing` organisation on Github](https://github.com/freesewing/) holds all our repositories and source code.
 

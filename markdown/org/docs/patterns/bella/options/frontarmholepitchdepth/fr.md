@@ -2,7 +2,7 @@
 title: "Profondeur du point de pivot de l'emmanchure avant"
 ---
 
----
+***
 
 ![L'effet de l'option de profondeur du pas d'armure avant sur le patron](sample.png)
 

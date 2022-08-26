@@ -1,6 +1,16 @@
 # Change log for: @freesewing/paco
 
 
+## 2.22.0 (2022-08-23)
+
+### Changed
+
+ - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
+
+### Fixed
+
+ - Make hem allowance taper outwards to match the leg Fixes [#2350](https://github.com/freesewing/freesewing/issues/2350)
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

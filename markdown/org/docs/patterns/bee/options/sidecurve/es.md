@@ -2,7 +2,7 @@
 title: "Side curve"
 - - -
 
----
+***
 
 Controla la curvatura del lado exterior de la copa del bikini
 

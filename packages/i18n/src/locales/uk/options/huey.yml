@@ -1,22 +1,22 @@
 ---
 pocket:
-  title: Pocket
-  description: Whether to include a front pocket or not
+  title: Кишеня
+  description: Чи додавати кишеню спереду
 pocketHeight:
-  title: Pocket height
-  description: Controls the height of the pocket
+  title: Висота кишені
+  description: Керує висотою кишені
 hoodHeight:
-  title: Hood height
-  description: Controls the height of the hood
+  title: Висота капюшона
+  description: Керує висотою (довжиною) капюшона
 hoodCutback:
-  title: Hood cutback
-  description: Controls how far the hood opening is cut back
+  title: Пройма капюшона
+  description: Керує наскільки далеко розміщується пройма
 hoodClosure:
-  title: Hood closure
-  description: Controls how much of the hood is part of the front closure
+  title: Закриття капюшона
+  description: Керує висоту закриття капюшону під підборіддям
 hoodDepth:
-  title: Hood depth
-  description: Controls the depth of the hood
+  title: Глибина капюшона
+  description: Керує глибиною капюшона
 hoodAngle:
-  title: Hood angle
-  description: Controls the angle at which the hood is attached
+  title: Кут капюшона
+  description: Керує кут, за яким капюшон з'єднується з тулубом

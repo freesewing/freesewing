@@ -43,6 +43,7 @@ import unice from 'unice.yml'
 import lucy from 'lucy.yml'
 import bob from 'bob.yml'
 import noble from 'noble.yml'
+import octoplushy from 'octoplushy.yml'
 import { options as optionList } from '@freesewing/pattern-info'
 import shared from '../../../shared-options.yml'
 
@@ -93,6 +94,7 @@ let patterns = {
   lucy,
   bob,
   noble,
+  octoplushy,
 }
 
 let options = {}

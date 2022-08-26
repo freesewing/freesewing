@@ -67,5 +67,3 @@ De onderhouder van FreeSewing (joost) heeft de belofte gedaan en deze belofte oo
 If you'd like to support FreeSewing, you can [do so by becoming a patron](/patrons/join/)
 
 </Tip>
-
-

@@ -1,6 +1,12 @@
 # Change log for: @freesewing/octoplushy
 
 
+## 2.22.0 (2022-08-23)
+
+### Added
+
+ - Octoplushy is a new design for an octopus or squid plushy
+
 
 This is the **initial release**, and the start of this change log.
 

@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "High bust width (Bella)"
-
-***
+- - -
 
 ***
 

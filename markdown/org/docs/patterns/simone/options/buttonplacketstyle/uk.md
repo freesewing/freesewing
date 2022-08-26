@@ -1,8 +1,6 @@
-***
-
+- - -
 title: "Button placket style"
-
-***
+- - -
 
 ![Button placket style](buttonplacketstyle.svg)
 

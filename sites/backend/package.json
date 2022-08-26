@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/backend",
-  "version": "2.21.3",
+  "version": "3.0.0-alpha.0",
   "description": "The freesewing.org backend",
   "private": true,
   "main": "build/main.js",
@@ -53,8 +53,8 @@
     ]
   },
   "dependencies": {
-    "@freesewing/i18n": "^2.21.3",
-    "axios": "0.18.0",
+    "@freesewing/i18n": "^3.0.0-alpha.0",
+    "axios": "0.27.2",
     "body-parser": "1.20.0",
     "chai": "^4.3.4",
     "chai-http": "^4.3.0",
@@ -79,7 +79,7 @@
     "passport": "0.6.0",
     "passport-jwt": "4.0.0",
     "query-string": "7.1.1",
-    "remark": "13",
+    "remark": "14",
     "remark-frontmatter": "3",
     "remark-parse": "^9.0.0",
     "remark-plain-text": "^0.2.0",

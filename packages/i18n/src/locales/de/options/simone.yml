@@ -1,4 +1,11 @@
 ---
+bustAlignedButtons:
+  title: Bust-aligned buttons
+  description: Optional button spacing strategies to ensure a button at the bustline
+  options:
+    even: Even spacing
+    split: Split spacing
+    disabled: Disabled
 bustDartAngle:
   title: Winkel des Brustabnähers
   description: Kontrolliert den Winkel, in welchem der (seitliche) Brustabnäher sich nach unten neigt

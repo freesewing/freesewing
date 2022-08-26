@@ -1,6 +1,5 @@
-***
-
-***
+- - -
+- - -
 
 ##### Subscribe to our newsletter
 

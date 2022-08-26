@@ -1,7 +1,7 @@
-// import { version } from '../package.json'
 import Bella from '@freesewing/bella'
+import pkg from '../package.json' assert { type: 'json' }
 
-import { version } from '../package.json'
+const { version } = pkg
 
 export default {
   ...Bella.config,
