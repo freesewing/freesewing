@@ -7,15 +7,15 @@ import bustPlugin from '@freesewing/plugin-bust'
 import { back } from './back.mjs'
 import { front } from './front.mjs'
 import { sleeve } from './sleeve.mjs'
-// These are only here to be exported
+// Get name & version from package.json
+import { name, version } from '../package.json' assert { type: 'json' }
+// Re-export skeleton parts so peope can re-use them
 import { base } from './base.mjs'
 import { sleevecap } from './sleevecap.mjs'
-// Get version from package.json
-import { version } from '../package.json' assert { type: 'json' }
 
-// Setup design
+// Setup our new design
 const Brian = new freesewing.Design({
-  name: 'brian',
+  name,
   version,
   parts: [ back, front, sleeve ],
   plugins: pluginBundle,

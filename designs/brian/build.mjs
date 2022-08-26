@@ -19,7 +19,7 @@ const options = {
   outfile: 'dist/index.mjs',
   external: ["@freesewing"],
   metafile: process.env.VERBOSE ? true : false,
-  //minify: process.env.NO_MINIFY ? false : true,
+  minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,
 }
 
