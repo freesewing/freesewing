@@ -11,7 +11,7 @@ import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
 testPatternConfig("brian", new Pattern())
 
 // Test drafting
-testPatternDrafting("brian", Pattern)
+//testPatternDrafting("brian", Pattern)
 
 // Test sampling
-testPatternSampling( "brian", Pattern)
+//testPatternSampling( "brian", Pattern)

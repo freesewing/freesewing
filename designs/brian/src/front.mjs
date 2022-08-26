@@ -1,9 +1,9 @@
-import * as shared from './shared'
-import back from './back'
+import * as shared from './shared.mjs'
+import { back } from './back.mjs'
 
-export default {
+export const front = {
   from: back,
-  name: 'front',
+  name: 'brian.front',
   draft: (part) => {
     const {
       store,

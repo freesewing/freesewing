@@ -1,10 +1,14 @@
-import sleevecap from './sleevecap'
-import { _sleeve as options } from '../config/options.js'
+import { sleevecap } from './sleevecap.mjs'
+import { sleeveOptions as options } from './options.mjs'
 
-export default {
+export const sleeve = {
   from: sleevecap,
-  name: 'sleeve',
+  name: 'brian.sleeve',
   options,
+  measurements: [
+    'shoulderToWrist',
+    'wrist',
+  ],
   draft: (part) => {
     const {
       store,

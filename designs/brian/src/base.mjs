@@ -1,10 +1,19 @@
-import { _base as options } from '../config/options.js'
+import { baseOptions as options } from './options.mjs'
 
-
-export default {
-  name: 'base',
+export const base = {
+  name: 'brian.base',
   hide: true,
   options,
+  measurements: [
+    'biceps',
+    'chest',
+    'hpsToWaistBack',
+    'neck',
+    'shoulderToShoulder',
+    'shoulderSlope',
+    'waistToHips',
+  ],
+  optionalMeasurements: [ 'highBust' ],
   draft: (part) => {
     const {
       measurements,

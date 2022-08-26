@@ -14,7 +14,13 @@
     "bella": "A FreeSewing pattern for a womenswear bodice block",
     "bent": "A FreeSewing pattern for a menswear body block with a two-part sleeve",
     "breanna": "A FreeSewing pattern for a basic body block for womenswear",
-    "brian": "A FreeSewing pattern for a basic body block for menswear",
+    "brian": {
+      "about": "A FreeSewing pattern for a basic body block for menswear",
+      "design": "Joost De Cock",
+      "code": "Joost De Cock",
+      "department": "tops",
+      "difficulty": 3
+    },
     "noble": "A FreeSewing pattern for a princess seam bodice block",
     "titan": "A FreeSewing pattern for a unisex trouser block"
   },

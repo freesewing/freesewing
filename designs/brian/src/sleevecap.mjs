@@ -1,5 +1,5 @@
-import front from './front'
-import { _sleevecap as options } from '../config/options.js'
+import { front } from './front.mjs'
+import { sleevecapOptions as options } from './options.mjs'
 
 /** Calculates the differece between actual and optimal sleevecap length
  * Positive values mean sleevecap is longer than armhole
@@ -139,9 +139,9 @@ function draftSleevecap(part, run) {
   }
 }
 
-export default {
+export const sleevecap = {
   from: front,
-  name: 'sleevecap',
+  name: 'brian.sleevecap',
   hide: true,
   options,
   draft: (part) => {
