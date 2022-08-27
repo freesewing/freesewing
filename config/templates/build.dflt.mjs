@@ -1,20 +1,20 @@
 /* This script will build the package with esbuild */
 import esbuild from 'esbuild'
-import pkg from './package.json' assert { type: 'json' }
+import { version, name, description, author, license } from './package.json' assert { type: 'json' }
 
 // Create banner based on package info
 const banner = `/**
- * ${pkg.name} | v${pkg.version}
- * ${pkg.description}
- * (c) ${new Date().getFullYear()} ${pkg.author}
- * @license ${pkg.license}
+ * ${name} | v${version}
+ * ${description}
+ * (c) ${new Date().getFullYear()} ${author}
+ * @license ${license}
  */`
 
 // Shared esbuild options
 const options = {
   banner: { js: banner },
   bundle: true,
-  entryPoints: ['src/index.js'],
+  entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
   external: ["@freesewing"],
