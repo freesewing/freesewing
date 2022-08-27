@@ -50,7 +50,7 @@ Skip this step if you are including the zipper in the waistband.
 
 <Note>
 
-These instructions will treat the lining and skirt the same at the waist.\
+These instructions will treat the lining and skirt the same at the waist.  
 If not lining you should face the skirt when hemming later.
 
 </Note>
@@ -106,7 +106,7 @@ You are all done! Now go enjoy your wonderful new skirt!
 
 <Note>
 
-These instructions will treat the lining and skirt the same at the waist.\
+These instructions will treat the lining and skirt the same at the waist.  
 If not lining you should face the skirt when hemming later.
 
 </Note>

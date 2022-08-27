@@ -38,7 +38,7 @@ But this time around, we multiply our point coordinates with our `tweak` variabl
 Then, we compare our `target` to the result of `paths.neck.length()` which — you guessed it — returns the
 length of our neck path.
 
-If the delta is positive, our path is too long and we reduce the tweak factor.\
+If the delta is positive, our path is too long and we reduce the tweak factor.  
 If the delta is negative, our path is too short and we increase the tweak factor.
 
 We keep on doing this until `Math.abs(delta)` is less than 1. Meaning that we are within 1mm of our target value.

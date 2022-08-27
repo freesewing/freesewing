@@ -105,7 +105,7 @@ If you prefer to insert the zipper with the main and lining fabric as one, you w
 
 <Note>
 
-Alternatively you can _Edgestitch_ the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.\
+Alternatively you can _Edgestitch_ the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.  
 The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
 
 </Note>

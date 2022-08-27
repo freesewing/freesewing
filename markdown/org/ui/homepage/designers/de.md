@@ -5,7 +5,7 @@
 
 Parametrisches Design bezieht sich auf das Verwenden von Parametern oder Variablen um das Ergebnis eines bestimmten Designs innerhalb bestimmter Regeln zu beeinflussen.
 
-In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.\
+In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.  
 The _rules_ of the design are what you, the designer, make them.
 
 #### Was bedeutet das für Designer/-innen?

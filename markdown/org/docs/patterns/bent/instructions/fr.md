@@ -30,7 +30,7 @@ As Bent is a block it does not have any closures. So the instructions below will
 
 You may need to ease/gather the sleeves to fit.
 
-You may need to ease/gather the sleeves to fit.\
+You may need to ease/gather the sleeves to fit.  
 You may need to leave the bottom of one of the sleeve seams open to put the garment on.
 
 </Note>
@@ -57,7 +57,7 @@ Sometimes you may need to wear the mock-up for an extended amount of time to get
 </Tip>
 <Note>
 
-Remember to treat Bent as a basis rather than a final product, so adjust what you need to get the desired look.\
+Remember to treat Bent as a basis rather than a final product, so adjust what you need to get the desired look.  
 For instance:
 
 - Change the neck line

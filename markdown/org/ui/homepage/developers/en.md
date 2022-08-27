@@ -26,7 +26,7 @@ You'll find tutorials, how-to guides, as well as our API reference documentation
 
 #### Want to help out?
 
-Awesome ❤️\
+Awesome ❤️  
 The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
 
 If you're not sure how you could contribute, check out [ways to contribute](https://freesewing.dev/howtos/ways-to-contribute), you'll see there's certainly something you can do to help.

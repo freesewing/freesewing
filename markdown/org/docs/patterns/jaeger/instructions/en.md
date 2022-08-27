@@ -146,7 +146,7 @@ Cut out the chest canvas piece. Align it along the roll line, and baste it in pl
 
 Now baste the front canvas and chest piece to your front. Keep in mind that the canvas has no seam allowance.
 
-> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\
+> Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.  
 > You don't want your canvas to get caught in the seams.
 
 #### Pad-stitch your lapels
@@ -187,10 +187,10 @@ Keep in mind that:
 
 ![Close the sides](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down.\
+Place your front with the good side up, and your side on it with the good side down.  
 Align the front/side seams, pin them in place if you feel like it, and sew them togther.
 
-Place this down with the good side up, and place your back on top with the good side down.\
+Place this down with the good side up, and place your back on top with the good side down.  
 Align the back/side seams, pin them in place if you feel like it, and sew them togther.
 
 > Make sure the canvas does not get caught in the seam.

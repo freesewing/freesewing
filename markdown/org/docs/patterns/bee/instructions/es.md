@@ -8,7 +8,7 @@ Make sure to use a stretch stitch
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.\
+When making a reversible top the second colour will be refered to as the lining fabric.  
 The notches in this pattern act more like dots so **do not** clip them to mark them.
 
 </Note>
@@ -50,7 +50,7 @@ The notches in this pattern act more like dots so **do not** clip them to mark t
 
 <Tip>
 
-If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.\
+If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.  
 If you are having trouble turning the cups you can try one of these methods:
 
 - Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
@@ -75,7 +75,7 @@ Whilst certainly optional it is recommended to _edgestitch_ the top and sides of
 
 <Tip>
 
-The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.\
+The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.  
 There are also notches on either side of the band piece's midpoint to help give you an idea of how much to gather by.
 
 </Tip>

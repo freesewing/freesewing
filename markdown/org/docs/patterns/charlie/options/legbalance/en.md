@@ -8,7 +8,7 @@ The back of the trouser legs are always wider than the front. This controls by h
 
 <Note>
 
-Increasing this will make the front leg panel narrower.\
+Increasing this will make the front leg panel narrower.  
 This makes the wearer look more skinny.
 
 This trick is often used in womenswear jeans
