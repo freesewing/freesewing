@@ -9,11 +9,11 @@ _:
   tips: "node ../../scripts/help.mjs"
 _types:
   design:
-    prettier: "npx prettier --write 'src/*.js' 'config/*.js'"
+    prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: &test 'npx mocha tests/*.test.mjs'
     testci: &testci "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   plugin:
-    prettier: "npx prettier --write 'src/*.js' 'tests/*.mjs'"
+    prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: *test
     testci: *testci
 core:
@@ -31,7 +31,3 @@ new-design:
   test: '!'
   testci: '!'
   vbuild: '!'
-pattern-info:
-  cibuild_step1: '!'
-  build: 'node --experimental-json-modules build.mjs'
-  prebuild: 'node --experimental-json-modules src/prebuild.js'
