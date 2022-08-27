@@ -7,8 +7,8 @@ const expect = chai.expect
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']
 
-const getShortName = name => name.split('/').pop()
-const getFamily = design => {
+export const getShortName = name => name.split('/').pop()
+export const getFamily = design => {
   for (const fam in designs) {
     if (Object.keys(designs[fam]).indexOf(design) !== -1) return fam
   }

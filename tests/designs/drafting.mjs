@@ -1,18 +1,11 @@
+import designs from "../../config/software/designs.json" assert { type: 'json' }
 import { nonHumanMeasurements } from './non-human-measurements.mjs'
 import { withBreasts, withoutBreasts } from '@freesewing/models'
+import { getShortName, getFamily } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
 const models = { withBreasts, withoutBreasts }
-
-// Some patterns are different
-const isGarment = design => ([
-  'rendertest',
-  'tutorial',
-  'examples',
-  'legend',
-  'plugintest',
-].indexOf(design) === -1)
 
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']
@@ -21,11 +14,17 @@ const deprecated = ['theo']
  * This runs unit tests for pattern drafting
  * It expects the following:
  *
- * @param string me: Name of the pattern (eg 'aaron')
  * @param object Pattern: pattern constructor
  * @param boolean log: Set to true to log errors
  */
-export const testPatternDrafting = (design, Pattern, log=false) => {
+export const testPatternDrafting = (Pattern, log=false) => {
+
+  const pattern = new Pattern()
+  const config = pattern.getConfig()
+  const design = getShortName(config.name)
+  const family = getFamily(design)
+  const parts = pattern.getPartList()
+
   // Load non-human measurements
   const nonHuman = nonHumanMeasurements(models)
 
@@ -45,12 +44,11 @@ export const testPatternDrafting = (design, Pattern, log=false) => {
   // FIXME: Just use womenswear measurements, as they should always work
   const breasts = true
   const ourModels = withBreasts
-  //const measies = measurements.womenswear.size34
 
   /*
    * Draft pattern for different models
    */
-  if (isGarment(design)) {
+  if (family !== 'utilities') {
     it('Draft for humans:', () => true)
 
     for (let size in ourModels) {
@@ -102,7 +100,6 @@ export const testPatternDrafting = (design, Pattern, log=false) => {
    * Draft parts individually
    */
   it('Draft parts individually:', () => true)
-  const parts = Pattern.config.parts || []
   for (const name of parts) {
     it(`  - ${name} should draft and render on its own`, () => {
       expect(
@@ -120,7 +117,7 @@ export const testPatternDrafting = (design, Pattern, log=false) => {
    * Draft a paperless non-detailed pattern
    */
   it('Draft paperless non-detailed pattern:', () => true)
-  if (isGarment(design)) {
+  if (family !== 'utilities') {
     for (const sa of [0,10]) {
       it(`  - Drafting paperless non-detailed pattern for size-40 (${breasts ? 'with' : 'no'} breasts) sa: ${sa}`, () => {
         expect(

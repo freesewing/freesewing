@@ -1,22 +1,30 @@
+import designs from "../../config/software/designs.json" assert { type: 'json' }
 import { nonHumanMeasurements } from './non-human-measurements.mjs'
 import { withBreasts, withoutBreasts } from '@freesewing/models'
+import { getShortName, getFamily } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
-const models = {withBreasts, withoutBreasts}
-/*
- * This runs unit tests for pattern sampling
- * It expects the following:
- *
- * @param string me: Name of the pattern (eg 'aaron')
- * @param object Pattern: pattern constructor
- * @param boolean log: Set to true to log errors
- */
+const models = { withBreasts, withoutBreasts }
 
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']
 
-export const testPatternSampling = (design, Pattern, log=false) => {
+/*
+ * This runs unit tests for pattern sampling
+ * It expects the following:
+ *
+ * @param object Pattern: Pattern constructor
+ * @param boolean log: Set to true to log errors
+ */
+export const testPatternSampling = (Pattern, log=false) => {
+
+  const pattern = new Pattern()
+  const config = pattern.getConfig()
+  const design = getShortName(config.name)
+  const family = getFamily(design)
+  const parts = pattern.getPartList()
+
   // Load non-human measurements
   const nonHuman = nonHumanMeasurements(models)
 
