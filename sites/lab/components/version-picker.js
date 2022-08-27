@@ -1,7 +1,7 @@
 import React from 'react'
 import VersionsIcon from 'shared/components/icons/versions.js'
 import { useTranslation } from 'next-i18next'
-import versions from 'site/versions.json'
+import versions from 'site/versions.json' assert { type: 'json' }
 import useVersion from 'site/hooks/useVersion.js'
 import {Picker, PickerLink} from 'shared/components/picker'
 

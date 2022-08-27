@@ -1,5 +1,5 @@
 import logo from './logo'
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 
 export {logo}
 

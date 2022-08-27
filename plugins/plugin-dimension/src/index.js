@@ -1,5 +1,5 @@
 import markers from './lib/markers'
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 
 const prefix = '__paperless'
 
