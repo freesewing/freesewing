@@ -1,4 +1,4 @@
-import { version } from '../package.json'
+import { version } from '../package.json' assert { type: 'json' }
 import { config as brianConfig } from '@freesewing/brian'
 
 export default {

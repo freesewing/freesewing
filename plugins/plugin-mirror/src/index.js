@@ -1,4 +1,4 @@
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 
 const lineValues = (start, end) => {
   const { x: x1, y: y1 } = start

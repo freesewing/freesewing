@@ -8,7 +8,7 @@ import pack from 'bin-pack'
 import Store from './store'
 import Hooks from './hooks'
 import Attributes from './attributes'
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 
 export default function Pattern(config = { options: {} }) {
   // Default settings

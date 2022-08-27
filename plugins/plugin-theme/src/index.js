@@ -1,4 +1,4 @@
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 import gridMetric from './defs/grid-metric'
 import gridImperial from './defs/grid-imperial'
 import draft from './lib/draft'

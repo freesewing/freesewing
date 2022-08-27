@@ -13,7 +13,7 @@ import scalebox from '@freesewing/plugin-scalebox'
 import round from '@freesewing/plugin-round'
 import sprinkle from '@freesewing/plugin-sprinkle'
 import measurements from '@freesewing/plugin-measurements'
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 
 const bundledPlugins = [
   banner,

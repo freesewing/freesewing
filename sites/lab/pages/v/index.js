@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { formatVersionTitle } from 'site/components/version-picker.js'
 import Layout from 'site/components/layouts/bare'
 import { PageTitle } from 'shared/components/layouts/default'
-import availableVersions from 'site/available-versions.json'
+import availableVersions from 'site/available-versions.json' assert { type: 'json' }
 
 const DesignLinks = ({ list, prefix='', version=false }) => (
   <ul className="flex flex-row flex-wrap ml-8">
