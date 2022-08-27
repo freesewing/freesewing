@@ -7,10 +7,10 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig("{{name}}")
+testPatternConfig({{Name}})
 
 // Test drafting - Change the second parameter to `true` to log errors
-testPatternDrafting("{{name}}", false)
+testPatternDrafting({{Name}}, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-testPatternSampling("{{name}}", false)
+testPatternSampling({{Name}}, false)

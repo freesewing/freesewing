@@ -59,10 +59,10 @@ export const testPatternConfig = (Pattern) => {
     expect(typeof designs[family][shortName]).to.equal('object')
   })
   const meta = designs[family][shortName]
-  it(`  - 'about' should be set and be a string of reasonable length`, () => {
-    expect(typeof meta.about).to.equal('string')
-    expect(meta.about.length > 15).to.be.true
-    expect(meta.about.length < 280).to.be.true
+  it(`  - 'description' should be set and be a string of reasonable length`, () => {
+    expect(typeof meta.description).to.equal('string')
+    expect(meta.description.length > 15).to.be.true
+    expect(meta.description.length < 280).to.be.true
   })
   // Config tests for non-utility patterns only
   if (family !== 'utilities') {

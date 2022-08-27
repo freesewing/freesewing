@@ -1,13 +1,13 @@
 /* This script will build the package with esbuild */
 import esbuild from 'esbuild'
-import { version, name, description, author, license } from './package.json' assert { type: 'json' }
+import pkg from './package.json' assert { type: 'json' }
 
 // Create banner based on package info
 const banner = `/**
- * ${name} | v${version}
- * ${description}
- * (c) ${new Date().getFullYear()} ${author}
- * @license ${license}
+ * ${pkg.name} | v${pkg.version}
+ * ${pkg.description}
+ * (c) ${new Date().getFullYear()} ${pkg.author}
+ * @license ${pkg.license}
  */`
 
 // Shared esbuild options
