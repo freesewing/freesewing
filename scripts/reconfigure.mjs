@@ -14,6 +14,7 @@ import {
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
+import { capitalize } from '../sites/shared/utils.mjs'
 
 // Working directory
 const cwd = process.cwd()
@@ -111,7 +112,7 @@ log.write(chalk.green(" Done\n"))
 for (const design in designs) {
   fs.writeFileSync(
     path.join(repo.path, 'designs', design, 'tests', 'shared.test.mjs'),
-    mustache.render(repo.templates.designTests, { name: design })
+    mustache.render(repo.templates.designTests, { name: design, Name: capitalize(design) })
   )
 }
 for (const plugin in plugins) {

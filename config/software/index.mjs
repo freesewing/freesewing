@@ -5,7 +5,12 @@ import sites from './sites.json' assert { type: 'json' }
 
 // Helper method to construct summary objects
 const unpack = (obj, folder) => Object.fromEntries(
-  Object.keys(obj).map(name => [name, { name, folder, description: obj[name], type: folder.slice(0, -1) } ])
+  Object.keys(obj).map(name => [name, { name, folder, type: folder.slice(0, -1), description: obj[name] } ])
+)
+
+// Helper method to construct summary objects for designs
+const unpackDesigns = (obj, folder) => Object.fromEntries(
+  Object.keys(obj).map(name => [name, { name, folder, type: folder.slice(0, -1), ...obj[name] } ])
 )
 
 const designs = {
@@ -20,7 +25,7 @@ export { designs, designsByType, packages, plugins, sites }
 
 // All software
 export const software = {
-  ...unpack(designs, 'designs'),
+  ...unpackDesigns(designs, 'designs'),
   ...unpack(plugins, 'plugins'),
   ...unpack(packages, 'packages'),
   ...unpack(sites, 'sites'),
@@ -28,7 +33,7 @@ export const software = {
 
 // All software published on NPM
 export const publishedSoftware = {
-  ...unpack(designs, 'designs'),
+  ...unpackDesigns(designs, 'designs'),
   ...unpack(plugins, 'plugins'),
   ...unpack(packages, 'packages'),
 }
