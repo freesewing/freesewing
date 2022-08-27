@@ -15,7 +15,7 @@ import Svg from './svg.mjs'
 import Store from './store.mjs'
 import Hooks from './hooks.mjs'
 import Attributes from './attributes.mjs'
-import pkg from '../package.json'
+import { version } from '../package.json' assert { type: 'json' }
 
 export default function Pattern(config = { options: {} }) {
 
@@ -28,41 +28,45 @@ export default function Pattern(config = { options: {} }) {
     margin: 2,
     scale: 1,
     layout: true,
-    debug: true,
+    debug: false,
     options: {},
     absoluteOptions: {},
   }
 
   // Object to hold events
   this.events = {
-    info: [],
-    warning: [],
-    error: [],
     debug: [],
+    error: [],
+    info: [],
+    suggestion: [],
+    warning: [],
   }
 
   // Raise methods - Make events and settings avialable in them
   const events = this.events
   const settings = this.settings
   this.raise = {
+    debug: function (data) {
+      // Debug only if debug is active
+      if (settings.debug) events.debug.push(data)
+    },
+    error: function (data) {
+      events.error.push(data)
+    },
     info: function (data) {
+      events.info.push(data)
+    },
+    suggestion: function (data) {
       events.info.push(data)
     },
     warning: function (data) {
       events.warning.push(data)
     },
-    error: function (data) {
-      events.error.push(data)
-    },
-    debug: function (data) {
-      // Debug only if debug is active
-      if (settings.debug) events.debug.push(data)
-    },
   }
 
   // Say hi
   this.raise.info(
-    `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${pkg.version}\``
+    `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${version}\``
   )
 
   // More things that go in a pattern
@@ -72,7 +76,6 @@ export default function Pattern(config = { options: {} }) {
   this.is = '' // Will be set when drafting/sampling
   this.autoLayout = { parts: {} } // Will hold auto-generated layout
   this.cutList = {} // Will hold the cutlist
-
   this.store = new Store(this.raise) // Store for sharing data across parts
   this.parts = {} // Parts container
   this.hooks = new Hooks() // Hooks container
@@ -81,6 +84,7 @@ export default function Pattern(config = { options: {} }) {
   this.Snippet = Snippet // Snippet constructor
   this.Attributes = Attributes // Attributes constructor
   this.initialized = 0 // Keep track of init calls
+  this.macros = {} // Macros
 
   if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
   if (typeof this.config.inject === 'undefined') this.config.inject = {}
@@ -93,9 +97,6 @@ export default function Pattern(config = { options: {} }) {
       if (this.config.parts[partName].options) this.addOptions(this.config.parts[partName].options)
     }
   }
-
-  // Macros
-  this.macros = {}
 
   // Context object to add to Part closure
   const context = {
@@ -148,9 +149,16 @@ Pattern.prototype.addOptions = function(options={}) {
   return this
 }
 
+/* Utility method to get the (initialized) config */
 Pattern.prototype.getConfig = function () {
   this.init()
   return this.config
+}
+
+/* Utility method to get the (initialized) part list */
+Pattern.prototype.getPartList = function () {
+  this.init()
+  return Object.keys(this.config.parts) || []
 }
 
 
@@ -163,11 +171,8 @@ Pattern.prototype.init = function () {
   // Resolve all dependencies
   this.dependencies = this.config.dependencies
   this.inject = this.config.inject
-  this.hide = this.config.hide
-  if (typeof this.config.parts === 'object') {
-    this.__parts = this.config.parts
-    this.preresolveDependencies()
-  }
+  this.__parts = this.config.parts
+  this.preresolveDependencies()
   this.resolvedDependencies = this.resolveDependencies(this.dependencies)
   this.config.resolvedDependencies = this.resolvedDependencies
   this.config.draftOrder = this.draftOrder(this.resolvedDependencies)
@@ -250,8 +255,7 @@ Pattern.prototype.runHooks = function (hookName, data = false) {
 /*
  * Allows adding a part at run-time
  */
-Pattern.prototype.addPart = function (part, name=false) {
-  if (!part.draft) part = decoratePartDependency(part, name)
+Pattern.prototype.addPart = function (part) {
   if (typeof part?.draft === 'function') {
     if (part.name) {
       this.config.parts[part.name] = part
@@ -260,7 +264,7 @@ Pattern.prototype.addPart = function (part, name=false) {
     }
     else this.raise.error(`Part must have a name`)
   }
-  else this.raise.warning(`Cannot attach part ${name} because it is not a part`)
+  else this.raise.error(`Part must have a draft() method`)
 
   return this
 }
@@ -309,7 +313,6 @@ Pattern.prototype.draft = function () {
     }
     if (this.needs(partName)) {
       // Draft part
-      const method = 'draft' + capitalize(partName)
       if (typeof this.__parts?.[partName]?.draft === 'function') {
         // 2022 way - Part is contained in config
         try {
@@ -319,25 +322,7 @@ Pattern.prototype.draft = function () {
           this.raise.error([`Unable to draft part \`${partName}\``, err])
         }
       }
-      else if (typeof this[method] === 'function') {
-        // Legacy way - Part is attached to the prototype
-        this.raise.warning(`Attaching part methods to the Pattern prototype is deprecated and will be removed in FreeSewing v3 (part: \`${partName}\`)`)
-        try {
-          this.parts[partName] = this[method](this.parts[partName])
-          if (this.parts[partName].render ) this.cutList[partName] = this.parts[partName].cut
-        } catch (err) {
-          this.raise.error([`Unable to draft part \`${partName}\``, err])
-        }
-      }
-      else {
-        this.raise.error(`Unable to draft pattern. Part is not available in iether legacy or 2022`)
-        throw new Error('Method "' + method + '" on pattern object is not callable')
-      }
-      if (typeof this.parts[partName] === 'undefined') {
-        this.raise.error(
-          `Result of \`pattern.${method}\` was \`undefined\`. Did you forget to return the \`Part\` object?`
-        )
-      }
+      else this.raise.error(`Unable to draft pattern. Part.draft() is not callable`)
       try {
         this.parts[partName].render =
           this.parts[partName].render === false ? false : this.wants(partName)
@@ -689,7 +674,7 @@ Pattern.prototype.addDependency = function (name, part, dep) {
   return this
 }
 
-/** Filter optional measurements out of they are also required measurements */
+/** Filter optional measurements out if they are also required measurements */
 Pattern.prototype.filterOptionalMeasurements = function () {
   this.config.optionalMeasurements = this.config.optionalMeasurements.filter(
     m => this.config.measurements.indexOf(m) === -1
@@ -755,11 +740,11 @@ Pattern.prototype.resolveDependencies = function (graph = this.dependencies) {
   }
 
   // Include parts outside the dependency graph
-  if (typeof this.config.parts === 'object') {
-    for (const part of Object.values(this.config.parts)) {
-      if (typeof part === 'string' && typeof this.dependencies[part] === 'undefined') this.dependencies[part] = []
-    }
-  }
+  //if (typeof this.config.parts === 'object') {
+  //  for (const part of Object.values(this.config.parts)) {
+  //    if (typeof part === 'string' && typeof this.dependencies[part] === 'undefined') this.dependencies[part] = []
+  //  }
+  //}
 
   let resolved = {}
   let seen = {}
@@ -796,26 +781,19 @@ Pattern.prototype.needs = function (partName) {
 
 /* Checks whether a part is hidden in the config */
 Pattern.prototype.isHidden = function (partName) {
-  if (Array.isArray(this.hide)) {
-    if (this.hide.indexOf(partName) !== -1) return true
-  }
-  // 2022 style
-  if (this.__parts?.[partName]?.hide) return true
-
-  return false
+  return (this.__parts?.[partName]?.hide) ? true : false
 }
 
 /** Determines whether a part is wanted by the user
  * This depends on the 'only' setting
  */
 Pattern.prototype.wants = function (partName) {
-  if (typeof this.settings.only === 'undefined' || this.settings.only === false) {
+  if (!this.settings?.only === 'undefined' || this.settings.only === false) {
     if (this.isHidden(partName)) return false
-  } else if (typeof this.settings.only === 'string') {
-    if (this.settings.only === partName) return true
-    return false
-  } else if (Array.isArray(this.settings.only)) {
-    for (let part of this.settings.only) {
+  }
+  else if (typeof this.settings.only === 'string') return (this.settings.only === partName)
+  else if (Array.isArray(this.settings.only)) {
+    for (const part of this.settings.only) {
       if (part === partName) return true
     }
     return false
@@ -851,8 +829,8 @@ Pattern.prototype.getRenderProps = function () {
   props.events = {
     debug: this.events.debug,
     info: this.events.info,
-    warning: this.events.warning,
     error: this.events.error,
+    warning: this.events.warning,
   }
   props.cutList = this.cutList
   props.parts = {}

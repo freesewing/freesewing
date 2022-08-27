@@ -57,8 +57,8 @@ Part.prototype.getId = function (prefix = '') {
 
 /** Returns a value formatted for units provided in settings */
 Part.prototype.unitsClosure = function (value) {
-  let self = this
-  let method = function (value) {
+  const self = this
+  const method = function (value) {
     if (self.context.settings.debug && typeof value !== 'number')
       self.context.raise.debug(
         `Calling \`units(value)\` but \`value\` is not a number (\`${typeof value}\`)`
