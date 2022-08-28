@@ -1,10 +1,17 @@
-import markers from './lib/markers'
-import pkg from '../package.json'
+import { name, version } from '../package.json' assert { type: 'json' }
 
+const markers = `
+<marker orient="auto" refY="4.0" refX="0.0" id="dimensionFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="mark fill-mark" d="M 0,4 L 12,0 C 10,2 10,6  12,8 z" />
+</marker>
+<marker orient="auto" refY="4.0" refX="12.0" id="dimensionTo" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="mark fill-mark" d="M 12,4 L 0,0 C 2,2 2,6  0,8 z" />
+</marker>
+`
 const prefix = '__paperless'
 
 function drawDimension(from, to, so, self) {
-  let dimension = new self.Path()
+  const dimension = new self.Path()
     .move(from)
     .line(to)
     .attr('class', 'mark')
@@ -63,15 +70,12 @@ function lleader(so, type, self, id) {
   return point
 }
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
+export const plugin = {
+  name,
+  version,
   hooks: {
     preRender: (svg) => {
-      if (svg.attributes.get('freesewing:plugin-dimension') === false) {
-        svg.attributes.set('freesewing:plugin-dimension', pkg.version)
-        svg.defs += markers
-      }
+      if (svg.defs.indexOf(markers) === -1) svg.defs += markers
     },
   },
   macros: {
@@ -143,3 +147,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const dimensionPlugin = plugin
+export const pluginDimension = plugin
+
