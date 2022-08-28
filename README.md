@@ -104,7 +104,7 @@ people who can help you when you get stuck.
 FreeSewing is an open source project run by a community, 
 and financially supported by our patrons.
 
-If you feel what we do is worthwhile, and you can spend a few coind without
+If you feel what we do is worthwhile, and you can spend a few coins without
 hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
 
 ## Links 👩‍💻

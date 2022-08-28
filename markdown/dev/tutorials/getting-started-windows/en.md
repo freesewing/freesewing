@@ -188,7 +188,7 @@ If you're not certain what to pick, just mash some keys, it doesn't matter.
 
 #### What package manager to use
 
-Chose `npm` if you don't have `yarn` are when you're not sure what the heck `yarn` is.
+Choose `npm` if you don't have `yarn` or when you're not sure what the heck `yarn` is.
 
 </Note>
 
