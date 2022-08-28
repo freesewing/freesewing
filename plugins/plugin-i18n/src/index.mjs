@@ -1,10 +1,9 @@
-import pkg from '../package.json'
+import { name, version } from '../package.json'
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
+export const plugin = {
+  name,
+  version,
   hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-i18n', pkg.version),
     insertText: (locale, text, data) => {
       if (!data) {
         console.log(
@@ -19,3 +18,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const i18nPlugin = plugin
+export const pluginI18n = plugin
+
