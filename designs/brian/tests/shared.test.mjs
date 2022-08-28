@@ -1,5 +1,4 @@
-// This file is auto-generated.
-// Changes you make will be overwritten.
+// This file is auto-generated | Any changes you make will be overwritten.
 import { Brian } from './dist/index.mjs'
 
 // Shared tests
@@ -10,8 +9,8 @@ import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 // Test config
 testPatternConfig(Brian)
 
-// Test drafting
-//testPatternDrafting("brian", Pattern)
+// Test drafting - Change the second parameter to `true` to log errors
+testPatternDrafting(Brian, false)
 
-// Test sampling
-//testPatternSampling( "brian", Pattern)
+// Test sampling - Change the second parameter to `true` to log errors
+testPatternSampling(Brian, false)
