@@ -31,7 +31,7 @@
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node --experimental-json-modules build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "test": "echo \"models: No tests configured. Perhaps you'd like to do this?\" && exit 0",
+    "test": "npx mocha tests/*.test.mjs",
     "vbuild": "VERBOSE=1 node --experimental-json-modules build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",

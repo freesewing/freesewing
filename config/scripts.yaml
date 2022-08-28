@@ -25,6 +25,8 @@ i18n:
   prebuild: 'node scripts/prebuilder.mjs'
   test: *test
   testci: *testci
+models:
+  test: "npx mocha tests/*.test.mjs"
 new-design:
   build: "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs && cp ../../scripts/banner.mjs ./lib && node --experimental-json-modules build.mjs"
   mbuild: '!'
