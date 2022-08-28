@@ -1,10 +1,9 @@
-import pkg from '../package.json'
+import { name, version } from '../package.json' assert { type: 'json' }
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
+export const plugin = {
+  name,
+  version,
   hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-bust', pkg.version),
     preDraft: ({ settings }) => {
       if (settings.measurements) {
         if (typeof settings.measurements.bust === 'undefined') {
@@ -15,3 +14,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const bustPlugin = plugin
+export const pluginBust = plugin
+
