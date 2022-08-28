@@ -1,8 +1,8 @@
-import pkg from '../package.json'
+import { name, version } from '../package.json'
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
+export const plugin = {
+  name,
+  version,
   hooks: {
     preRender: function (svg) {
       for (const [key, val] of Object.entries(svg.attributes.list)) {
@@ -11,3 +11,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const versionfreeSvgPlugin = plugin
+export const pluginVersionfreeSvg = plugin
+
