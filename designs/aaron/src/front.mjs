@@ -1,9 +1,32 @@
-import { dimensions } from './shared'
+import { pctBasedOn } from '@freesewing/core'
 import { base } from '@freesewing/brian'
+import { dimensions } from './shared.mjs'
 
-export default {
+
+export const front = {
   from: base,
   name: 'front',
+  options: {
+    brianFitCollar: false,
+    brianFitSleeve: false,
+    acrossBackFactor: 0.97,
+    bicepsEase: 0.05,
+    shoulderEase: 0,
+    collarEase: 0,
+    frontArmholeDeeper: 0,
+    armholeDepthFactor: 0.6,
+    shoulderSlopeReduction: 0,
+    chestEase: { pct: 8, min: 0, max: 20, ...pctBasedOn('chest'), menu: 'style' },
+    draftForHighBust: { bool: false, menu: 'fit' },
+    hipsEase: { pct: 8, min: 0, max: 20, menu: 'fit' },
+    stretchFactor: { pct: 5, min: 0, max: 15, menu: 'fit' },
+    armholeDrop: { pct: 10, min: 0, max: 75, menu: 'style' },
+    lengthBonus: { pct: 10, min: -20, max: 60, menu: 'style' },
+    necklineBend: { pct: 100, min: 40, max: 100, menu: 'style' },
+    necklineDrop: { pct: 20, min: 10, max: 35, menu: 'style' },
+    shoulderStrapWidth: { pct: 15, min: 10, max: 40, menu: 'style' },
+    shoulderStrapPlacement: { pct: 40, min: 20, max: 80, menu: 'style' },
+  },
   draft: function (part) {
     const {
       utils,
@@ -172,3 +195,4 @@ export default {
     return part
   }
 }
+

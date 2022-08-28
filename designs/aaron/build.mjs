@@ -14,7 +14,7 @@ const banner = `/**
 const options = {
   banner: { js: banner },
   bundle: true,
-  entryPoints: ['src/index.js'],
+  entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
   external: ["@freesewing"],
@@ -33,13 +33,11 @@ let result
     console.log(info)
   }
 
-
   // Also build a version that has all dependencies bundled
   // This makes it easy to run tests
   await esbuild
   .build({
     ...options,
-    entryPoints: ['src/index.js'],
     minify: false,
     sourcemap: false,
     outfile: 'tests/dist/index.mjs',

@@ -1,9 +1,13 @@
-import { dimensions } from './shared'
-import front from "./front.js"
+import { dimensions } from './shared.mjs'
+import { front } from "./front.mjs"
 
-export default {
+export const back = {
   from: front,
   name: 'back',
+  options: {
+    backNeckCutout: 0.05,
+    backlineBend: { pct: 50, min: 25, max: 100 }
+  },
   draft: function (part) {
     const {
       store,
@@ -106,3 +110,4 @@ export default {
     return part
   }
 }
+

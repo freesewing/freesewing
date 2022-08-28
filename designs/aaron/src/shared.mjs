@@ -35,3 +35,4 @@ export function dimensions(macro, points, sa) {
     y: points.neck.y - sa - 45,
   })
 }
+
