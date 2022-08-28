@@ -1,19 +1,21 @@
-import markers from './markers'
-import pkg from '../package.json'
+import { name, version } from '../package.json' assert { type: 'json' }
 
-const dflts = {
-  text: 'grainline',
-}
+const markers = `
+<marker orient="auto" refY="4.0" refX="10.0" id="grainlineFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="note fill-note" d="M 0,4 L 12,0 C 10,2 10,6  12,8 z" />
+</marker>
+<marker orient="auto" refY="4.0" refX="2.0" id="grainlineTo" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="note fill-note" d="M 12,4 L 0,0 C 2,2 2,6  0,8 z" />
+</marker>`
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
+const dflts = { text: 'grainline' }
+
+export const plugin = {
+  name,
+  version,
   hooks: {
     preRender: (svg) => {
-      if (svg.attributes.get('freesewing:plugin-grainline') === false) {
-        svg.attributes.set('freesewing:plugin-grainline', pkg.version)
-        svg.defs += markers
-      }
+      if (svg.defs.indexOf(markers) === -1) svg.defs += markers
     },
   },
   macros: {
@@ -46,3 +48,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const grainlinePlugin = plugin
+export const pluginGrainline = plugin
+
