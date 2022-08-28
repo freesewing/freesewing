@@ -1,11 +1,8 @@
-import pkg from '../package.json'
+import { name, version } from '../package.json'
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
-  hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-round', pkg.version),
-  },
+export const plugin = {
+  name,
+  version,
   macros: {
     round: function (so) {
       const C = 0.55191502449
@@ -40,3 +37,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const roundPlugin = plugin
+export const pluginRound = plugin
+
