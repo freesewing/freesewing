@@ -1,11 +1,8 @@
-import pkg from '../package.json'
+import { name, version } from '../package.json' assert { type: 'json' }
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
-  hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-flip', pkg.version),
-  },
+export const plugin = {
+  name,
+  version,
   macros: {
     flip: function (so) {
       const axis = so?.axis === 'y' ? 'y' : 'x'
@@ -49,3 +46,9 @@ export default {
     },
   },
 }
+
+
+// More specifically named exports
+export const flipPlugin = plugin
+export const pluginFlip = plugin
+
