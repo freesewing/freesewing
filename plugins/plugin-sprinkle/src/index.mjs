@@ -1,11 +1,8 @@
-import pkg from '../package.json'
+import { name, version } from '../package.json'
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
-  hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-sprinkle', pkg.version),
-  },
+export const plugin = {
+  name,
+  version,
   macros: {
     sprinkle: function (so) {
       for (let pid of so.on) {
@@ -16,3 +13,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const sprinklePlugin = plugin
+export const pluginSprinkle = plugin
+
