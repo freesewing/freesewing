@@ -1,6 +1,6 @@
-import Attributes from './attributes.mjs'
+import { Attributes } from './attributes.mjs'
 
-function Point(x, y, debug = false) {
+export function Point(x, y, debug = false) {
   this.x = x
   this.y = y
   this.attributes = new Attributes()
@@ -249,4 +249,3 @@ Point.prototype.setCircle = function (radius = false, className=false) {
   return this
 }
 
-export default Point

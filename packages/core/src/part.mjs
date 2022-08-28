@@ -1,11 +1,11 @@
+import { Attributes } from './attributes.mjs'
 import * as utils from './utils.mjs'
-import Point from './point.mjs'
-import Path from './path.mjs'
-import Snippet from './snippet.mjs'
-import Attributes from './attributes.mjs'
-import Hooks from './hooks.mjs'
+import { Point } from './point.mjs'
+import { Path } from './path.mjs'
+import { Snippet } from './snippet.mjs'
+import { Hooks } from './hooks.mjs'
 
-function Part() {
+export function Part() {
   this.attributes = new Attributes()
   this.points = {}
   this.paths = {}

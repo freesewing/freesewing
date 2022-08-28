@@ -1,4 +1,4 @@
-import Pattern from './pattern.mjs'
+import { Pattern } from './pattern.mjs'
 import { addPartConfig } from './utils.mjs'
 
 
@@ -6,7 +6,7 @@ import { addPartConfig } from './utils.mjs'
  * The Design constructor. Returns a Pattern constructor
  * So it's sort of a super-constructor
  */
-export default function Design(config) {
+export function Design(config) {
 
   // Merge config with defaults
   config = {

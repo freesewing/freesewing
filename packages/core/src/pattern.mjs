@@ -1,23 +1,28 @@
+import { Attributes } from './attributes.mjs'
 import pack from 'bin-pack'
 import {
   macroName,
   sampleStyle,
   capitalize,
-  decoratePartDependency,
   addPartConfig,
   mergeDependencies,
 } from './utils.mjs'
-import Part from './part.mjs'
-import Point from './point.mjs'
-import Path from './path.mjs'
-import Snippet from './snippet.mjs'
-import Svg from './svg.mjs'
-import Store from './store.mjs'
-import Hooks from './hooks.mjs'
-import Attributes from './attributes.mjs'
+import { Part } from './part.mjs'
+import { Point } from './point.mjs'
+import { Path } from './path.mjs'
+import { Snippet } from './snippet.mjs'
+import { Svg } from './svg.mjs'
+import { Store } from './store.mjs'
+import { Hooks } from './hooks.mjs'
 import { version } from '../package.json' assert { type: 'json' }
 
-export default function Pattern(config = { options: {} }) {
+/*
+ * Makes sure an object passed to be attached as a part it not merely a method
+ */
+const decoratePartDependency = (obj, name) => (typeof obj === 'function') ? { draft: obj, name } : obj
+
+
+export function Pattern(config = { options: {} }) {
 
   // Apply default settings
   this.settings = {

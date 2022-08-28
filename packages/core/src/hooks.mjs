@@ -1,4 +1,4 @@
-export default function Hooks() {
+export function Hooks() {
   return {
     preDraft: [],
     postDraft: [],

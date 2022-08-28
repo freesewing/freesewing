@@ -1,6 +1,6 @@
-import Attributes from './attributes.mjs'
+import { Attributes } from './attributes.mjs'
 
-function Snippet(def, anchor, debug = false) {
+export function Snippet(def, anchor, debug = false) {
   this.def = def
   this.anchor = anchor
   this.attributes = new Attributes()
@@ -31,4 +31,3 @@ Snippet.prototype.clone = function () {
   return clone
 }
 
-export default Snippet

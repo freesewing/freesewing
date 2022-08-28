@@ -1,9 +1,9 @@
 import chai from "chai"
-import freesewing from "./dist/index.mjs"
+import { Pattern } from "./dist/index.mjs"
 
 const expect = chai.expect
 
-const pattern = new freesewing.Pattern();
+const pattern = new Pattern();
 const store = pattern.store;
 
 describe('Store', () => {

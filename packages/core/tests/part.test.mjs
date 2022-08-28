@@ -1,11 +1,11 @@
 import chai from "chai"
-import freesewing from "./dist/index.mjs"
+import { Pattern, Path } from "./dist/index.mjs"
 
 const expect = chai.expect
 
 describe('Part', () => {
   it("Svg constructor should initialize object", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     expect(part.paths).to.eql({});
     expect(part.snippets).to.eql({});
@@ -18,20 +18,20 @@ describe('Part', () => {
   });
 
   it("Should return a function from macroClosure", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     expect(typeof part.macroClosure()).to.equal("function");
   });
 
   it("Should not run an unknown macro", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     let macro = part.macroClosure();
     expect(macro("unknown")).to.equal(undefined);
   });
 
   it("Should register and run a macro", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let plugin = {
       name: "test",
       version: "0.1-test",
@@ -51,20 +51,20 @@ describe('Part', () => {
   });
 
   it("Should return a free ID", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     let free = part.getId();
     expect(part.getId()).to.equal("" + (parseInt(free) + 1));
   });
 
   it("Should return a function from unitsClosure", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     expect(typeof part.unitsClosure()).to.equal("function");
   });
 
   it("Should convert units", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     let units = part.unitsClosure();
     expect(units(123.456)).to.equal("12.35cm");
@@ -72,7 +72,7 @@ describe('Part', () => {
   });
 
   it("Should set part attributes", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.attr("foo", "bar");
     expect(part.attributes.get("foo")).to.equal("bar");
@@ -83,12 +83,12 @@ describe('Part', () => {
   });
 
   it("Should inject a part", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.points.a = new part.Point(12, 23);
     part.points.b = new part.Point(10, 10);
     part.points.c = new part.Point(20, 20);
-    part.paths.bar = new freesewing.Path()
+    part.paths.bar = new Path()
       .move(part.points.a)
       .line(part.points.b)
       .curve(part.points.c, part.points.b, part.points.a)
@@ -109,7 +109,7 @@ describe('Part', () => {
   });
 
   it("Should return shorthand", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.mode = "draft";
     pattern.settings.paperless = true;
     let part = new pattern.Part();
@@ -119,7 +119,7 @@ describe('Part', () => {
   });
 
   it("Should raise a warning when setting a non-Point value in points", () => {
-    const pattern = new freesewing.Pattern();
+    const pattern = new Pattern();
     pattern.settings.mode = "draft";
     const part = new pattern.Part();
     const { points } = part.shorthand()
@@ -131,7 +131,7 @@ describe('Part', () => {
   });
 
   it("Should raise a warning when setting a non-Snippet value in snippets", () => {
-    const pattern = new freesewing.Pattern();
+    const pattern = new Pattern();
     pattern.settings.mode = "draft";
     const part = new pattern.Part();
     const { snippets } = part.shorthand()
@@ -143,7 +143,7 @@ describe('Part', () => {
   });
 
   it("Should calculate the part boundary with default margin", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.mode = "draft";
     let part = new pattern.Part();
     let short = part.shorthand();
@@ -163,7 +163,7 @@ describe('Part', () => {
   });
 
   it("Should calculate the part boundary with custom margin", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.mode = "draft";
     pattern.settings.margin = 5;
     let part = new pattern.Part();
@@ -184,7 +184,7 @@ describe('Part', () => {
   });
 
   it("Should calculate the part boundary for paperless", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.mode = "draft";
     pattern.settings.margin = 5;
     pattern.settings.paperless = true;
@@ -206,7 +206,7 @@ describe('Part', () => {
   });
 
   it("Should stack a part", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.mode = "draft";
     let part = new pattern.Part();
     let short = part.shorthand();
@@ -220,7 +220,7 @@ describe('Part', () => {
   });
 
   it("Should only stack a part if needed", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.mode = "draft";
     let part = new pattern.Part();
     let short = part.shorthand();
@@ -237,7 +237,7 @@ describe('Part', () => {
 
   it("Should run hooks", () => {
     let count = 0
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     const part = new pattern.Part();
     part.hooks.preDraft = [{ method: function(p) { count++ }} ]
     part.runHooks('preDraft')
@@ -245,7 +245,7 @@ describe('Part', () => {
   });
 
   it("Should get the units closure to raise a debug when passing a non-number", () => {
-    const pattern = new freesewing.Pattern();
+    const pattern = new Pattern();
     pattern.settings.mode = "draft";
     pattern.settings.debug = true
     const part = new pattern.Part();
@@ -256,7 +256,7 @@ describe('Part', () => {
   });
 
   it("Should generate the part transforms", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.mode = "draft";
     let part = new pattern.Part();
     let short = part.shorthand();
@@ -278,7 +278,7 @@ describe('Part', () => {
 
 
   it("Should add the part cut", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut(4, 'fabric', true)
     expect(part.cut.materials.fabric.cut).to.equal(4)
@@ -289,7 +289,7 @@ describe('Part', () => {
   });
 
   it("Should generate an error if cut is not a number", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut('a', 'fabric', true)
     expect(pattern.events.error.length).to.equal(1)
@@ -297,7 +297,7 @@ describe('Part', () => {
   });
 
   it("Should generate an warning if material is not a string", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut(3, 4)
     expect(pattern.events.warning.length).to.equal(1)
@@ -305,7 +305,7 @@ describe('Part', () => {
   });
 
   it("Should generate an error when removing a material that is not set (through addCut)", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut(4, 'fabric', true)
     part.addCut(false, 'lining')
@@ -314,7 +314,7 @@ describe('Part', () => {
   });
 
   it("Should remove the part cut through addCut", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut(4, 'fabric', true)
     part.addCut(false, 'fabric')
@@ -322,7 +322,7 @@ describe('Part', () => {
   });
 
   it("Should remove the part cut through removeCut", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut(4, 'fabric', true)
     part.removeCut('fabric')
@@ -330,7 +330,7 @@ describe('Part', () => {
   });
 
   it("Should generate an error when removing a material that is not set (through removeCut)", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut(4, 'fabric', true)
     part.removeCut('lining')
@@ -339,7 +339,7 @@ describe('Part', () => {
   });
 
   it("Should generate an error when removing a material that is not a string (through removeCut)", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut(4, 'fabric', true)
     part.removeCut(23)
@@ -348,7 +348,7 @@ describe('Part', () => {
   });
 
   it("Should generate a warning when calling removeCut without parameters", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.addCut(4, 'fabric', true)
     part.removeCut()
@@ -357,7 +357,7 @@ describe('Part', () => {
   });
 
   it("Should set the part grainline", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     expect(part.cut.grain).to.equal(90)
     part.setGrain(123)
@@ -365,14 +365,14 @@ describe('Part', () => {
   });
 
   it("Should raise a warning when calling part.setGrain() without any parameters", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.setGrain()
     expect(part.cut.grain).to.equal(false)
   });
 
   it("Should raise an error when calling part.setGrain() with a value that is not a number", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     part.setGrain('a')
     expect(part.cut.grain).to.equal(90)
@@ -381,7 +381,7 @@ describe('Part', () => {
   });
 
   it("Should set and then remove the cutOnFold", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     const { Point }  = part.shorthand()
     part.setCutOnFold(new Point(2,3), new Point(100,200))
@@ -394,7 +394,7 @@ describe('Part', () => {
   });
 
   it("Should raise an error when setting the cutOnFold with a non-Point value", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     const { Point }  = part.shorthand()
     part.setCutOnFold(new Point(2,3), 12)
@@ -404,13 +404,13 @@ describe('Part', () => {
 
   describe('isEmpty', () => {
     it("Should return true if the part has no paths or snippets", () => {
-      let pattern = new freesewing.Pattern();
+      let pattern = new Pattern();
       let part = new pattern.Part();
       expect(part.isEmpty()).to.be.true
     })
 
     it("Should return true if the part has paths but they have no length", () => {
-      let pattern = new freesewing.Pattern();
+      let pattern = new Pattern();
       let part = new pattern.Part();
       const { Path, paths, Point }  = part.shorthand()
       paths.seam = new Path()
@@ -418,7 +418,7 @@ describe('Part', () => {
     })
 
     it("Should return true if the part has paths but they don't render", () => {
-      let pattern = new freesewing.Pattern();
+      let pattern = new Pattern();
       let part = new pattern.Part();
       const { Path, paths, Point }  = part.shorthand()
       paths.seam = new Path().move(new Point(0,0)).line(new Point(2,3)).setRender(false)
@@ -426,7 +426,7 @@ describe('Part', () => {
     })
 
     it("Should return false if the part has a path with length", () => {
-      let pattern = new freesewing.Pattern();
+      let pattern = new Pattern();
       let part = new pattern.Part();
       const { Path, paths, Point }  = part.shorthand()
       paths.seam = new Path().move(new Point(0,0)).line(new Point(2,3))
@@ -435,7 +435,7 @@ describe('Part', () => {
     })
 
     it("Should return false if the part has a snippet", () => {
-      let pattern = new freesewing.Pattern();
+      let pattern = new Pattern();
       let part = new pattern.Part();
       const { Point, snippets, Snippet }  = part.shorthand()
       snippets.test = new Snippet('test', new Point(0,0))
@@ -444,7 +444,7 @@ describe('Part', () => {
     })
 
     it("Should return false if the part has a point that has text", () => {
-      let pattern = new freesewing.Pattern();
+      let pattern = new Pattern();
       let part = new pattern.Part();
       const {Point, points} = part.shorthand()
       points.test = new Point(0,0)
@@ -453,7 +453,7 @@ describe('Part', () => {
     })
 
     it("Should return false if the part has a point that has a circle", () => {
-      let pattern = new freesewing.Pattern();
+      let pattern = new Pattern();
       let part = new pattern.Part();
       const {Point, points} = part.shorthand()
       points.test = new Point(0,0)

@@ -1,11 +1,11 @@
 import chai from "chai"
-import freesewing from "./dist/index.mjs"
+import { Design } from "./dist/index.mjs"
 
 const expect = chai.expect
 
 describe('Design', () => {
   it("Design constructor should return pattern constructor", () => {
-    const design = new freesewing.Design({
+    const design = new Design({
       foo: "bar",
       options: {
         constant: 2,
@@ -35,7 +35,7 @@ describe('Design', () => {
       }
     };
 
-    let design = new freesewing.Design({plugins: plugin});
+    let design = new Design({plugins: plugin});
     let pattern = new design();
     expect(pattern.hooks.preRender.length).to.equal(1);
   });
@@ -60,7 +60,7 @@ describe('Design', () => {
       }
     };
 
-    let design = new freesewing.Design( { plugins: [plugin1, plugin2] });
+    let design = new Design( { plugins: [plugin1, plugin2] });
     let pattern = new design();
     expect(pattern.hooks.preRender.length).to.equal(2);
   });
@@ -76,7 +76,7 @@ describe('Design', () => {
       }
     };
     const condition = () => true
-    const design = new freesewing.Design({ conditionalPlugins: { plugin, condition } });
+    const design = new Design({ conditionalPlugins: { plugin, condition } });
     const pattern = new design();
     expect(pattern.hooks.preRender.length).to.equal(1);
   });
@@ -92,7 +92,7 @@ describe('Design', () => {
       }
     };
     const condition = () => false
-    const design = new freesewing.Design({ conditionalPlugins: { plugin, condition } });
+    const design = new Design({ conditionalPlugins: { plugin, condition } });
     const pattern = new design();
     expect(pattern.hooks.preRender.length).to.equal(0);
   });
@@ -109,7 +109,7 @@ describe('Design', () => {
     };
     const condition1 = () => true
     const condition2 = () => false
-    const design = new freesewing.Design({ conditionalPlugins:  [
+    const design = new Design({ conditionalPlugins:  [
       { plugin, condition: condition1 },
       { plugin, condition: condition2 },
     ]});
@@ -203,7 +203,7 @@ describe('Design', () => {
   */
 
   it("Pattern constructor should add default hide() method to options", () => {
-    const design = new freesewing.Design({
+    const design = new Design({
       foo: "bar",
       options: {
         constant: 2,

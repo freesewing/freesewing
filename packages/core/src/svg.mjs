@@ -1,8 +1,8 @@
-import Attributes from './attributes.mjs'
+import { Attributes } from './attributes.mjs'
 import { round } from './utils.mjs'
-import pkg from '../package.json'
+import { version } from '../package.json'
 
-function Svg(pattern) {
+export function Svg(pattern) {
   this.openGroups = []
   this.layout = {}
   this.freeId = 0
@@ -23,7 +23,7 @@ function Svg(pattern) {
   this.attributes.add('xmlns:xlink', 'http://www.w3.org/1999/xlink')
   this.attributes.add('xml:lang', pattern.settings.locale)
   this.attributes.add('xmlns:freesewing', 'http://freesewing.org/namespaces/freesewing')
-  this.attributes.add('freesewing', pkg.version)
+  this.attributes.add('freesewing', version)
 }
 
 Svg.prototype.runHooks = function (hookName, data = false) {
@@ -312,4 +312,3 @@ Svg.prototype.getId = function () {
   return '' + this.freeId
 }
 
-export default Svg

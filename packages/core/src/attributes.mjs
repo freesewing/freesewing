@@ -1,4 +1,4 @@
-function Attributes() {
+export function Attributes() {
   this.list = {}
 }
 
@@ -103,4 +103,3 @@ Attributes.prototype.clone = function () {
   return clone
 }
 
-export default Attributes

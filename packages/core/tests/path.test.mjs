@@ -1,12 +1,11 @@
 import chai from "chai"
-import freesewing from "./dist/index.mjs"
+import { round, Pattern, Path, Point } from "./dist/index.mjs"
 
 const expect = chai.expect
-const round = freesewing.utils.round
 
 describe('Path', () => {
   it("Should offset a line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -18,7 +17,7 @@ describe('Path', () => {
   });
 
   it("Should offset a curve", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -32,7 +31,7 @@ describe('Path', () => {
   });
 
   it("Should offset a curve where cp1 = start", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -46,7 +45,7 @@ describe('Path', () => {
   });
 
   it("Should offset a curve where cp2 = end", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -61,7 +60,7 @@ describe('Path', () => {
   });
 
   it("Should throw error when offsetting line that is no line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -70,7 +69,7 @@ describe('Path', () => {
   });
 
   it("Should return the length of a line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -79,7 +78,7 @@ describe('Path', () => {
   });
 
   it("Should return the length of a curve", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -91,7 +90,7 @@ describe('Path', () => {
   });
 
   it("Should return the path start point", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -104,7 +103,7 @@ describe('Path', () => {
   });
 
   it("Should return the path end point", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -119,7 +118,7 @@ describe('Path', () => {
   });
 
   it("Should calculate that path boundary", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -135,7 +134,7 @@ describe('Path', () => {
   });
 
   it("Should clone a path", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -152,7 +151,7 @@ describe('Path', () => {
   });
 
   it("Should join paths", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -165,7 +164,7 @@ describe('Path', () => {
   });
 
   it("Should throw error when joining a closed paths", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -178,7 +177,7 @@ describe('Path', () => {
   });
 
   it("Should shift along a line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -187,7 +186,7 @@ describe('Path', () => {
   });
 
   it("Should not shift along a path/line if we end up on the end point", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -196,7 +195,7 @@ describe('Path', () => {
   });
 
   it("Should shift along lines", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -209,7 +208,7 @@ describe('Path', () => {
   });
 
   it("Should shift along curve + line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -223,7 +222,7 @@ describe('Path', () => {
   });
 
   it("Should throw error when shifting along path further than it's long", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.paths.test = new a.Path()
@@ -234,7 +233,7 @@ describe('Path', () => {
   });
 
   it("Should shift along with sufficient precision", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.paths.test = new a.Path()
@@ -246,7 +245,7 @@ describe('Path', () => {
   });
 
   it("Should shift fraction with sufficient precision", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.paths.test = new a.Path()
@@ -258,7 +257,7 @@ describe('Path', () => {
   });
 
   it("Should shift a fraction along a line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.paths.line = new a.Path()
@@ -270,7 +269,7 @@ describe('Path', () => {
   });
 
   it("Should find the bounding box of a line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let Path = pattern.parts.a.Path;
     let Point = pattern.parts.a.Point;
@@ -333,7 +332,7 @@ describe('Path', () => {
   });
 
   it("Should find the bounding box of a line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.paths.curve = new a.Path()
@@ -348,7 +347,7 @@ describe('Path', () => {
   });
 
   it("Should reverse a path", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     let test = new a.Path()
@@ -368,7 +367,7 @@ describe('Path', () => {
   });
 
   it("Should find the edges of a path", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(45, 60);
@@ -403,7 +402,7 @@ describe('Path', () => {
   });
 
   it("Should find the edges of a path for corner cases", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(-45, -60);
@@ -430,7 +429,7 @@ describe('Path', () => {
   });
 
   it("Should find the edge of a path for this edge-case", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(-109.7, 77, 12);
@@ -445,7 +444,7 @@ describe('Path', () => {
   });
 
   it("Should find where a path intersects with an X value", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(95, 50);
@@ -474,7 +473,7 @@ describe('Path', () => {
   });
 
   it("Should find where a path intersects with an Y value", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(95, 50);
@@ -499,7 +498,7 @@ describe('Path', () => {
   });
 
   it("Should throw an error when not passing a value to path.intersectsX", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.paths.test = new a.Path();
@@ -508,7 +507,7 @@ describe('Path', () => {
   });
 
   it("Should find the intersections between two paths", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(45, 60);
@@ -554,7 +553,7 @@ describe('Path', () => {
   });
 
   it("Should throw an error when running path.intersect on an identical path", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.paths.test = new a.Path();
@@ -562,7 +561,7 @@ describe('Path', () => {
   });
 
   it("Should divide a path", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(45, 60);
@@ -615,7 +614,7 @@ describe('Path', () => {
   });
 
   it("Should split a path on a curve", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(45, 60);
@@ -645,7 +644,7 @@ describe('Path', () => {
   });
 
   it("Should split a path on a line", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(45, 60);
@@ -671,7 +670,7 @@ describe('Path', () => {
   });
 
   it("Should trim a path when lines overlap", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(0, 0);
@@ -694,7 +693,7 @@ describe('Path', () => {
   });
 
   it("Should trim a path when a line overlaps with a curve", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(0, 0);
@@ -717,7 +716,7 @@ describe('Path', () => {
   });
 
   it("Should trim a path when a curves overlap", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(0, 0);
@@ -740,7 +739,7 @@ describe('Path', () => {
   });
 
   it("Should translate a path", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
     a.points.A = new a.Point(0, 0);
@@ -761,7 +760,7 @@ describe('Path', () => {
   });
 
   it("Should add a path attribute", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -774,7 +773,7 @@ describe('Path', () => {
   });
 
   it("Should overwrite a path attribute", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -790,7 +789,7 @@ describe('Path', () => {
   });
 
   it("Should move along a path even if it lands just on a joint", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     let a = pattern.parts.a;
 
@@ -811,23 +810,23 @@ describe('Path', () => {
 
   it("Should add raise methods to a path", () => {
     const raise = () => 'hello'
-    const p1 = new freesewing.Path(10, 20).withRaise(raise);
+    const p1 = new Path(10, 20).withRaise(raise);
     expect(p1.raise()).to.equal('hello');
   });
 
   it("Should add raise methods to a path", () => {
     const raise = () => 'hello'
-    const p1 = new freesewing.Path().withRaise(raise);
+    const p1 = new Path().withRaise(raise);
     expect(p1.raise()).to.equal('hello');
   });
 
   it("Should set render to true/false", () => {
-    const p1 = new freesewing.Path().setRender(false)
+    const p1 = new Path().setRender(false)
     expect(p1.render).to.equal(false);
   });
 
   it("Should set class with setClass", () => {
-    const p1 = new freesewing.Path().setClass('fabric')
+    const p1 = new Path().setClass('fabric')
     p1.setClass()
     expect(p1.attributes.get('class')).to.equal('fabric');
   });
@@ -835,7 +834,7 @@ describe('Path', () => {
   it("Should raise a warning when moving to a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
+    const p1 = new Path().withRaise(raise)
     expect(invalid).to.equal(false);
     try {
       p1.move('a')
@@ -849,7 +848,7 @@ describe('Path', () => {
   it("Should raise a warning when drawing a line to a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
+    const p1 = new Path().withRaise(raise)
     expect(invalid).to.equal(false);
     try {
       p1.line('a')
@@ -863,9 +862,9 @@ describe('Path', () => {
   it("Should raise a warning when drawing a curve to a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
-    const a = new freesewing.Point(0,0)
-    const b = new freesewing.Point(10,10)
+    const p1 = new Path().withRaise(raise)
+    const a = new Point(0,0)
+    const b = new Point(10,10)
     expect(invalid).to.equal(false);
     try {
       p1.move(b).curve(a, b, 'c')
@@ -879,9 +878,9 @@ describe('Path', () => {
   it("Should raise a warning when drawing a curve with a Cp1 that is a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
-    const a = new freesewing.Point(0,0)
-    const b = new freesewing.Point(10,10)
+    const p1 = new Path().withRaise(raise)
+    const a = new Point(0,0)
+    const b = new Point(10,10)
     expect(invalid).to.equal(false);
     try {
       p1.move(b).curve(a, 'x', b)
@@ -895,8 +894,8 @@ describe('Path', () => {
   it("Should raise a warning when drawing a curve with a Cp1 that is a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
-    const b = new freesewing.Point(10,10)
+    const p1 = new Path().withRaise(raise)
+    const b = new Point(10,10)
     expect(invalid).to.equal(false);
     try {
       p1.move(b).curve('a', b, b)
@@ -910,8 +909,8 @@ describe('Path', () => {
   it("Should raise a warning when drawing a curve with a Cp2 that is a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
-    const b = new freesewing.Point(10,10)
+    const p1 = new Path().withRaise(raise)
+    const b = new Point(10,10)
     expect(invalid).to.equal(false);
     try {
       p1.move(b).curve(b, 'a', b)
@@ -925,8 +924,8 @@ describe('Path', () => {
   it("Should raise a warning when drawing a _curve with a To that is a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
-    const b = new freesewing.Point(10,10)
+    const p1 = new Path().withRaise(raise)
+    const b = new Point(10,10)
     expect(invalid).to.equal(false);
     try {
       p1.move(b)._curve(b, 'a')
@@ -940,8 +939,8 @@ describe('Path', () => {
   it("Should raise a warning when drawing a _curve with a Cp2 that is a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
-    const b = new freesewing.Point(10,10)
+    const p1 = new Path().withRaise(raise)
+    const b = new Point(10,10)
     expect(invalid).to.equal(false);
     try {
       p1.move(b)._curve('a', b)
@@ -955,8 +954,8 @@ describe('Path', () => {
   it("Should raise a warning when drawing a curve_ with a To that is a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
-    const b = new freesewing.Point(10,10)
+    const p1 = new Path().withRaise(raise)
+    const b = new Point(10,10)
     expect(invalid).to.equal(false);
     try {
       p1.move(b).curve_(b, 'a')
@@ -970,8 +969,8 @@ describe('Path', () => {
   it("Should raise a warning when drawing a curve_ with a Cp2 that is a non-point", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const p1 = new freesewing.Path().withRaise(raise)
-    const b = new freesewing.Point(10,10)
+    const p1 = new Path().withRaise(raise)
+    const b = new Point(10,10)
     expect(invalid).to.equal(false);
     try {
       p1.move(b).curve_('a', b)
@@ -983,16 +982,16 @@ describe('Path', () => {
   });
 
   it("Should add a noop operation", () => {
-    const p1 = new freesewing.Path().noop()
+    const p1 = new Path().noop()
     expect(p1.ops.length).to.equal(1);
     expect(p1.ops[0].type).to.equal('noop');
   });
 
   it("Should handle an insop operation", () => {
-    const a = new freesewing.Point(0,0)
-    const b = new freesewing.Point(10,10)
-    const p1 = new freesewing.Path().move(a).line(b)
-    const p2 = new freesewing.Path().noop('test').insop('test', p1)
+    const a = new Point(0,0)
+    const b = new Point(10,10)
+    const p1 = new Path().move(a).line(b)
+    const p2 = new Path().noop('test').insop('test', p1)
     expect(p2.ops.length).to.equal(2);
     expect(p1.ops[0].type).to.equal('move');
     expect(p1.ops[1].type).to.equal('line');
@@ -1001,23 +1000,23 @@ describe('Path', () => {
   it("Should raise a warning when an insop operation used an falsy ID", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const a = new freesewing.Point(0,0)
-    const b = new freesewing.Point(10,10)
-    const p1 = new freesewing.Path().move(a).line(b)
+    const a = new Point(0,0)
+    const b = new Point(10,10)
+    const p1 = new Path().move(a).line(b)
     expect(invalid).to.equal(false);
-    const p2 = new freesewing.Path().withRaise(raise).noop('test').insop(false, p1)
+    const p2 = new Path().withRaise(raise).noop('test').insop(false, p1)
     expect(invalid).to.equal(true);
   });
 
   it("Should raise a warning when an insop operation used an falsy ID", () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
-    const a = new freesewing.Point(0,0)
-    const b = new freesewing.Point(10,10)
-    const p1 = new freesewing.Path().move(a).line(b)
+    const a = new Point(0,0)
+    const b = new Point(10,10)
+    const p1 = new Path().move(a).line(b)
     expect(invalid).to.equal(false);
     try {
-      new freesewing.Path().withRaise(raise).noop('test').insop('test')
+      new Path().withRaise(raise).noop('test').insop('test')
     }
     catch (err) {
       expect(''+err).to.contain("Cannot read properties of undefined (reading 'ops')")
@@ -1029,7 +1028,7 @@ describe('Path', () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
     expect(invalid).to.equal(false);
-    const p1 = new freesewing.Path().withRaise(raise).attr()
+    const p1 = new Path().withRaise(raise).attr()
     expect(invalid).to.equal(true);
   });
 
@@ -1037,12 +1036,12 @@ describe('Path', () => {
     let invalid = false
     const raise = { warning: () => invalid = true }
     expect(invalid).to.equal(false);
-    const p1 = new freesewing.Path().withRaise(raise).attr('test')
+    const p1 = new Path().withRaise(raise).attr('test')
     expect(invalid).to.equal(true);
   });
 
   it("Should raise a warning when calling offset without a distance", () => {
-    const pattern = new freesewing.Pattern();
+    const pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     const { Path, Point, points, paths } = pattern.parts.a.shorthand()
     points.a = new Point(0,0)
@@ -1054,7 +1053,7 @@ describe('Path', () => {
   });
 
   it("Should raise a warning when calling join without a path", () => {
-    const pattern = new freesewing.Pattern();
+    const pattern = new Pattern();
     pattern.parts.a = new pattern.Part();
     const { Path, Point, points, paths } = pattern.parts.a.shorthand()
     points.a = new Point(0,0)
@@ -1075,7 +1074,7 @@ describe('Path', () => {
     const raise = { error: () => invalid = true }
     expect(invalid).to.equal(false);
     try {
-      new freesewing.Path().withRaise(raise).start()
+      new Path().withRaise(raise).start()
     }
     catch (err) {
       expect(''+err).to.contain("Cannot read properties of undefined (reading 'to')")
@@ -1088,7 +1087,7 @@ describe('Path', () => {
     const raise = { error: () => invalid = true }
     expect(invalid).to.equal(false);
     try {
-      new freesewing.Path().withRaise(raise).end()
+      new Path().withRaise(raise).end()
     }
     catch (err) {
       expect(''+err).to.contain("Cannot read properties of undefined (reading 'type')")
@@ -1100,10 +1099,10 @@ describe('Path', () => {
     let invalid = false
     const raise = { error: () => invalid = true }
     expect(invalid).to.equal(false);
-    new freesewing.Path()
+    new Path()
       .withRaise(raise)
-      .move(new freesewing.Point(0,0))
-      .line(new freesewing.Point(10,10))
+      .move(new Point(0,0))
+      .line(new Point(10,10))
       .shiftAlong()
     expect(invalid).to.equal(true);
   });
@@ -1115,11 +1114,11 @@ describe('Path', () => {
       warning: () => invalid = true,
     }
     expect(invalid).to.equal(false);
-    new freesewing.Path()
+    new Path()
       .withRaise(raise)
-      .move(new freesewing.Point(0,0).withRaise(raise))
-      .line(new freesewing.Point(10,10).withRaise(raise))
-      .line(new freesewing.Point(10,20).withRaise(raise))
+      .move(new Point(0,0).withRaise(raise))
+      .line(new Point(10,10).withRaise(raise))
+      .line(new Point(10,20).withRaise(raise))
       .shiftFractionAlong()
     expect(invalid).to.equal(true);
   });
@@ -1130,11 +1129,11 @@ describe('Path', () => {
       error: () => invalid = true,
       warning: () => invalid = true,
     }
-    const from = new freesewing.Point(0,0).withRaise(raise)
-    const cp1 =  new freesewing.Point(10,0).withRaise(raise)
-    const cp2 =  new freesewing.Point(90,0).withRaise(raise)
-    const to =   new freesewing.Point(100,0).withRaise(raise)
-    const path = new freesewing.Path()
+    const from = new Point(0,0).withRaise(raise)
+    const cp1 =  new Point(10,0).withRaise(raise)
+    const cp2 =  new Point(90,0).withRaise(raise)
+    const to =   new Point(100,0).withRaise(raise)
+    const path = new Path()
       .withRaise(raise)
       .move(from)
       .curve(cp1, cp2, to)
@@ -1155,11 +1154,11 @@ describe('Path', () => {
       error: () => invalid = true,
       warning: () => invalid = true,
     }
-    const from = new freesewing.Point(0,0).withRaise(raise)
-    const cp1 =  new freesewing.Point(10,0).withRaise(raise)
-    const cp2 =  new freesewing.Point(90,0).withRaise(raise)
-    const to =   new freesewing.Point(100,0).withRaise(raise)
-    const path = new freesewing.Path()
+    const from = new Point(0,0).withRaise(raise)
+    const cp1 =  new Point(10,0).withRaise(raise)
+    const cp2 =  new Point(90,0).withRaise(raise)
+    const to =   new Point(100,0).withRaise(raise)
+    const path = new Path()
       .withRaise(raise)
       .move(from)
       .curve(cp1, cp2, to)

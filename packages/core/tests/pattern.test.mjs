@@ -1,11 +1,11 @@
 import chai from "chai"
-import freesewing from "./dist/index.mjs"
+import { round, Pattern, Design, pctBasedOn } from "./dist/index.mjs"
 
 const expect = chai.expect
 
 describe('Pattern', () => {
   it("Pattern constructor should initialize object", () => {
-    let pattern = new freesewing.Pattern({
+    let pattern = new Pattern({
       foo: "bar",
       options: {
         constant: 2,
@@ -24,7 +24,7 @@ describe('Pattern', () => {
 
 
   it("Should load percentage options", () => {
-    let pattern = new freesewing.Pattern({
+    let pattern = new Pattern({
       options: {
         test: { pct: 30 }
       }
@@ -33,7 +33,7 @@ describe('Pattern', () => {
   });
 
   it("Should load millimeter options", () => {
-    let pattern = new freesewing.Pattern({
+    let pattern = new Pattern({
       options: {
         test: { mm: 30 }
       }
@@ -42,7 +42,7 @@ describe('Pattern', () => {
   });
 
   it("Should load degree options", () => {
-    let pattern = new freesewing.Pattern({
+    let pattern = new Pattern({
       options: {
         test: { deg: 15 }
       }
@@ -51,7 +51,7 @@ describe('Pattern', () => {
   });
 
   it("Should load an array option", () => {
-    let pattern = new freesewing.Pattern({
+    let pattern = new Pattern({
       options: {
         test: { dflt: "foo" }
       }
@@ -60,7 +60,7 @@ describe('Pattern', () => {
   });
 
   it("Should load a count option", () => {
-    let pattern = new freesewing.Pattern({
+    let pattern = new Pattern({
       options: {
         test: { count: 3 }
       }
@@ -69,7 +69,7 @@ describe('Pattern', () => {
   });
 
   it("Should load a boolean option", () => {
-    let pattern = new freesewing.Pattern({
+    let pattern = new Pattern({
       options: {
         test1: { bool: false },
         test2: { bool: true }
@@ -82,7 +82,7 @@ describe('Pattern', () => {
   it("Should throw an error for an unknown option", () => {
     expect(
       () =>
-        new freesewing.Pattern({
+        new Pattern({
           options: {
             test: { foo: "bar" }
           }
@@ -91,7 +91,7 @@ describe('Pattern', () => {
   });
 
   it("Should merge settings with default settings", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let settings = {
       foo: "bar",
       deep: {
@@ -124,7 +124,7 @@ describe('Pattern', () => {
         return part;
       }
     }
-    const Test = new freesewing.Design({
+    const Test = new Design({
       name: "test",
       parts: [ back, front ],
     });
@@ -135,7 +135,7 @@ describe('Pattern', () => {
   });
 
   it("Should sample an option", () => {
-    let pattern = new freesewing.Pattern({
+    let pattern = new Pattern({
       options: {
         len: { pct: 30, min: 10 },
         bonus: 10
@@ -284,7 +284,7 @@ describe('Pattern', () => {
   */
 
   it("Should register a hook via on", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let count = 0;
     pattern._draft = () => {};
     pattern.on("preDraft", function(pattern) {
@@ -295,7 +295,7 @@ describe('Pattern', () => {
   });
 
   it("Should register a hook from a plugin", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let count = 0;
     pattern._draft = () => {};
     let plugin = {
@@ -313,7 +313,7 @@ describe('Pattern', () => {
   });
 
   it("Should register multiple methods on a single hook", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let count = 0;
     pattern._draft = () => {};
     let plugin = {
@@ -342,7 +342,7 @@ describe('Pattern', () => {
       inject: { back: "front" },
       hide: ["back"]
     };
-    const Test = new freesewing.Design(config)
+    const Test = new Design(config)
     Test.prototype.draftBack = function(part) {
       return part;
     };
@@ -369,10 +369,10 @@ describe('Pattern', () => {
       hide: ["back"]
     };
     const Test = function(settings = false) {
-      freesewing.Pattern.call(this, config);
+      Pattern.call(this, config);
       return this;
     };
-    Test.prototype = Object.create(freesewing.Pattern.prototype);
+    Test.prototype = Object.create(Pattern.prototype);
     Test.prototype.constructor = Test;
     Test.prototype.draftBack = function(part) {
       return part;
@@ -397,8 +397,8 @@ describe('Pattern', () => {
       name: "test",
       dependencies: { front: "back", side: "back", hood: "front", stripe: "hood" },
     };
-    const Test = new freesewing.Design(config)
-    Test.prototype = Object.create(freesewing.Pattern.prototype);
+    const Test = new Design(config)
+    Test.prototype = Object.create(Pattern.prototype);
     Test.prototype.constructor = Test;
     Test.prototype.draftBack = function(part) {
       return part;
@@ -432,10 +432,10 @@ describe('Pattern', () => {
       dependencies: { front: ["back"], side: ["back"], hood: ["front"], stripe: ["hood"]},
     };
     const Test = function(settings = false) {
-      freesewing.Pattern.call(this, config);
+      Pattern.call(this, config);
       return this;
     };
-    Test.prototype = Object.create(freesewing.Pattern.prototype);
+    Test.prototype = Object.create(Pattern.prototype);
     Test.prototype.constructor = Test;
     Test.prototype.draftBack = function(part) {
       return part;
@@ -470,10 +470,10 @@ describe('Pattern', () => {
       parts: ['back','front','crotch'],
     };
     const Test = function(settings = false) {
-      freesewing.Pattern.call(this, config);
+      Pattern.call(this, config);
       return this;
     };
-    Test.prototype = Object.create(freesewing.Pattern.prototype);
+    Test.prototype = Object.create(Pattern.prototype);
     Test.prototype.constructor = Test;
     Test.prototype.draftBack = function(part) {
       return part;
@@ -495,10 +495,10 @@ describe('Pattern', () => {
       parts: ['back','front','crotch'],
     };
     const Test = function(settings = false) {
-      freesewing.Pattern.call(this, config);
+      Pattern.call(this, config);
       return this;
     };
-    Test.prototype = Object.create(freesewing.Pattern.prototype);
+    Test.prototype = Object.create(Pattern.prototype);
     Test.prototype.constructor = Test;
     Test.prototype.draftBack = function(part) {
       return part;
@@ -527,10 +527,10 @@ describe('Pattern', () => {
       parts: ['back','front','crotch'],
     };
     const Test = function(settings = false) {
-      freesewing.Pattern.call(this, config);
+      Pattern.call(this, config);
       return this;
     };
-    Test.prototype = Object.create(freesewing.Pattern.prototype);
+    Test.prototype = Object.create(Pattern.prototype);
     Test.prototype.constructor = Test;
     Test.prototype.draftBack = function(part) {
       return part;
@@ -547,13 +547,13 @@ describe('Pattern', () => {
   });
 
   it("Should check whether created parts get the pattern context", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let part = new pattern.Part();
     expect(part.context.settings).to.equal(pattern.settings);
   });
 
   it("Should correctly merge settings", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     let settings = {
       complete: false,
       only: [1, 2, 3],
@@ -567,7 +567,7 @@ describe('Pattern', () => {
   });
 
   it("Should correctly merge settings for existing array", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.only = [1];
     let settings = {
       complete: false,
@@ -585,7 +585,7 @@ describe('Pattern', () => {
       name: 'front',
       draft: function(part) { return part }
     }
-    const Test = new freesewing.Design({
+    const Test = new Design({
       name: "test",
       parts: [front],
     });
@@ -599,7 +599,7 @@ describe('Pattern', () => {
   });
 
   it("Should not pack a pattern with errors", () => {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.events.error.push('error')
     pattern.pack()
     expect(pattern.events.warning.length).to.equal(1)
@@ -633,7 +633,7 @@ describe('Pattern', () => {
   */
 
   it("Should handle custom layouts", () => {
-    const Test = new freesewing.Design({ name: "test", parts: ['front'] })
+    const Test = new Design({ name: "test", parts: ['front'] })
     Test.prototype.draftFront = function(part) { return part }
     const pattern = new Test({
       layout: {
@@ -648,12 +648,12 @@ describe('Pattern', () => {
   });
 
   it("Should handle a simple snapped option", () => {
-    const Test = new freesewing.Design({
+    const Test = new Design({
       name: "test",
       parts: ['front'],
       measurements: [ 'head' ],
       options: {
-        len: { pct: 50, min: 22, max: 78, snap: 10, ...freesewing.pctBasedOn('head') }
+        len: { pct: 50, min: 22, max: 78, snap: 10, ...pctBasedOn('head') }
       }
     })
     Test.prototype.draftFront = function(part) {
@@ -691,7 +691,7 @@ describe('Pattern', () => {
   });
 
   it("Should handle a list snapped option", () => {
-    const Test = new freesewing.Design({
+    const Test = new Design({
       name: "test",
       parts: [
         {
@@ -710,7 +710,7 @@ describe('Pattern', () => {
       ],
       measurements: [ 'head' ],
       options: {
-        len: { pct: 50, min: 22, max: 78, snap: [10,14,19,28], ...freesewing.pctBasedOn('head') }
+        len: { pct: 50, min: 22, max: 78, snap: [10,14,19,28], ...pctBasedOn('head') }
       }
     })
     let pattern = new Test({
@@ -734,12 +734,12 @@ describe('Pattern', () => {
     expect(pattern.parts.front.paths.line_7.ops[1].to.x).to.equal(28);
     expect(pattern.parts.front.paths.line_8.ops[1].to.x).to.equal(28);
     expect(pattern.parts.front.paths.line_9.ops[1].to.x).to.equal(28);
-    expect(freesewing.utils.round(pattern.parts.front.paths.line_10.ops[1].to.x)).to.equal(33.72);
+    expect(round(pattern.parts.front.paths.line_10.ops[1].to.x)).to.equal(33.72);
   });
 
 
   it("Should retrieve the cutList", () => {
-    const Test = new freesewing.Design({
+    const Test = new Design({
       name: "test",
       parts: [{
         name: 'front',
@@ -818,8 +818,8 @@ describe('Pattern', () => {
       }
     }
 
-    const Design = new freesewing.Design({ parts: [ partC ] });
-    const pattern = new Design().addPart(partR).draft()
+    const design = new Design({ parts: [ partC ] });
+    const pattern = new design().addPart(partR).draft()
     // Measurements
     expect(pattern.config.measurements.length).to.equal(4)
     expect(pattern.config.measurements.indexOf('measieA') === -1).to.equal(false)
@@ -970,8 +970,8 @@ describe('Pattern', () => {
         return part
       }
     }
-    const Design = new freesewing.Design({ parts: [ partD ] });
-    const pattern = new Design().draft()
+    const design = new Design({ parts: [ partD ] });
+    const pattern = new design().draft()
     // Measurements
     expect(pattern.config.measurements.length).to.equal(4)
     expect(pattern.config.measurements.indexOf('measieA') === -1).to.equal(false)
@@ -1120,10 +1120,10 @@ describe('Pattern', () => {
       },
       draft: part => part,
     }
-    let Design, pattern
+    let design, pattern
     try {
-      Design = new freesewing.Design({ parts: [ partB ] });
-      pattern = new Design().init()
+      design = new Design({ parts: [ partB ] });
+      pattern = new design().init()
     } catch(err) {
       console.log(err)
     }

@@ -1,6 +1,6 @@
 import { Bezier } from 'bezier-js'
-import Path from './path.mjs'
-import Point from './point.mjs'
+import { Path } from './path.mjs'
+import { Point } from './point.mjs'
 
 export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
@@ -410,11 +410,6 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   }
 }
 
-/*
- * Makes sure an object passed to be attached as a part it not merely a method
- */
-export const decoratePartDependency = (obj, name) => (typeof obj === 'function') ? { draft: obj, name } : obj
-
 // Add part-level options
 const addPartOptions = (part, config) => {
   if (part.options) {
@@ -432,6 +427,7 @@ const addPartOptions = (part, config) => {
   return config
 }
 
+/*
 // Helper method for detecting a array with only strings
 const isStringArray = val => (Array.isArray(val) && val.length > 0)
   ? val.reduce((prev=true, cur) => (prev && typeof cur === 'string'))
@@ -473,7 +469,7 @@ const mergeOptionGroups = (cur, add) => {
 
   return cur
 }
-
+*/
 // Add part-level optionGroups
 const addPartOptionGroups = (part, config) => {
   if (typeof config.optionGroups === 'undefined') {

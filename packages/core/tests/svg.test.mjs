@@ -1,6 +1,6 @@
 import chai from "chai"
 import chaiString from "chai-string"
-import freesewing from "./dist/index.mjs"
+import { Pattern } from "./dist/index.mjs"
 import pkg from '../package.json' assert { type: 'json' }
 import render from "./fixtures/render.mjs"
 
@@ -10,7 +10,7 @@ const { version } = pkg
 
 describe('Svg', () => {
   it("Svg constructor should initialize object", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     let svg = pattern.svg;
     expect(svg.openGroups).to.eql([]);
@@ -37,24 +37,24 @@ describe('Svg', () => {
   });
 
   it("Should render Svg boilerplate", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate);
   });
 
   it("Should render language attribute", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.locale = "nl";
     expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplateNl);
   });
 
   it("Should render Svg boilerplate for embedding", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.settings.embed = true;
     expect(pattern.render()).to.equalIgnoreSpaces(render.embed);
   });
 
   it("Should render Svg part boilerplate", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     expect(pattern.render()).to.equalIgnoreSpaces(render.part);
@@ -63,7 +63,7 @@ describe('Svg', () => {
   });
 
   it("Should render Svg path", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -77,7 +77,7 @@ describe('Svg', () => {
     expect(pattern.render()).to.equalIgnoreSpaces(render.path);
   });
   it("Should not render Svg path when render property is false", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -93,7 +93,7 @@ describe('Svg', () => {
   });
 
   it("Should render Svg text", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -105,7 +105,7 @@ describe('Svg', () => {
   });
 
   it("Should render Svg multi-line text", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -117,7 +117,7 @@ describe('Svg', () => {
   });
 
   it("Should render Svg multi-line text with default lineheight", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -128,7 +128,7 @@ describe('Svg', () => {
   });
 
   it("Should not render text when there is none", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -137,7 +137,7 @@ describe('Svg', () => {
   });
 
   it("Should render Svg text on path", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -153,7 +153,7 @@ describe('Svg', () => {
   });
 
   it("Should render Svg text on path, center aligned", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -169,7 +169,7 @@ describe('Svg', () => {
   });
 
   it("Should render Svg text on path, right aligned", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -185,7 +185,7 @@ describe('Svg', () => {
   });
 
   it("Should render an Svg circle", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -194,7 +194,7 @@ describe('Svg', () => {
   });
 
   it("Should render an Svg snippet", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -207,7 +207,7 @@ describe('Svg', () => {
   });
 
   it("Should render a rotated Svg snippet", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -220,7 +220,7 @@ describe('Svg', () => {
   });
 
   it("Should replaced double quotes in Svg text", () => {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.render()
     expect(
       pattern.svg.escapeText('This is a "test" message')
@@ -228,7 +228,7 @@ describe('Svg', () => {
   });
 
   it("Should scale an Svg snippet", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.render();
     pattern.parts.test = new pattern.Part();
     let p = pattern.parts.test;
@@ -241,7 +241,7 @@ describe('Svg', () => {
   });
 
   it("Should run preRender hook", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.on("preRender", svg => {
       svg.attributes.set("data-hook", "preRender");
     });
@@ -250,7 +250,7 @@ describe('Svg', () => {
   });
 
   it("Should run insertText hook", () => {
-    let pattern = new freesewing.Pattern();
+    let pattern = new Pattern();
     pattern.on("insertText", (locale, text) => {
       return text.toUpperCase();
     });
@@ -263,7 +263,7 @@ describe('Svg', () => {
   });
 
   it("Should run postRender hook", () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.on("postRender", svg => {
       svg.svg = "test";
     });
@@ -271,7 +271,7 @@ describe('Svg', () => {
   });
 
   it("Should tab in and out", () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.render()
     const svg = pattern.svg
     svg.tabs = 2

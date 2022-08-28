@@ -1,5 +1,5 @@
-import Attributes from './attributes.mjs'
-import Point from './point.mjs'
+import { Attributes } from './attributes.mjs'
+import { Point } from './point.mjs'
 import { Bezier } from 'bezier-js'
 import {
   linesIntersect,
@@ -11,7 +11,7 @@ import {
   round,
 } from './utils.mjs'
 
-function Path(debug = false) {
+export function Path(debug = false) {
   this.render = true
   this.topLeft = false
   this.bottomRight = false
@@ -913,4 +913,3 @@ Path.prototype.translate = function (x, y) {
   return clone
 }
 
-export default Path

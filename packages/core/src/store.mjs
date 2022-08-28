@@ -1,4 +1,4 @@
-function Store(raise) {
+export function Store(raise) {
   this.data = new Map()
   this.raise = raise
 }
@@ -20,4 +20,3 @@ Store.prototype.get = function (key) {
   return this.data.get(key)
 }
 
-export default Store

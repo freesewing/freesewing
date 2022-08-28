@@ -1,9 +1,7 @@
 import chai from "chai"
-import freesewing from "./dist/index.mjs"
+import { round, Point } from "./dist/index.mjs"
 
 const expect = chai.expect
-const Point = freesewing.Point
-const round = freesewing.utils.round
 
 describe('Point', () => {
   it("Should return point object", () => {
