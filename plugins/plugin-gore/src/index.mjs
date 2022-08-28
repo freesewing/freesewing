@@ -1,11 +1,8 @@
-import pkg from '../package.json'
+import { name, version } from '../package.json'
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
-  hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-gore', pkg.version),
-  },
+export const plugin = {
+  name,
+  version,
   macros: {
     gore: function (so) {
       const from = so.from
@@ -59,3 +56,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const gorePlugin = plugin
+export const pluginGore = plugin
+
