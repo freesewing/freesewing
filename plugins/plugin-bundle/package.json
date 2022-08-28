@@ -39,7 +39,7 @@
     "vbuild": "VERBOSE=1 node --experimental-json-modules build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'",
+    "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
     "cibuild_step2": "node --experimental-json-modules build.mjs"
   },

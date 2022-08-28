@@ -14,7 +14,7 @@ const banner = `/**
 const options = {
   banner: { js: banner },
   bundle: true,
-  entryPoints: ['src/index.js'],
+  entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
   metafile: process.env.VERBOSE ? true : false,
