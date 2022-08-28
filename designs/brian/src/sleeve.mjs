@@ -1,10 +1,11 @@
 import { sleevecap } from './sleevecap.mjs'
-import { sleeveOptions as options } from './options.mjs'
 
 export const sleeve = {
   from: sleevecap,
   name: 'brian.sleeve',
-  options,
+  options: {
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'style' }
+  },
   measurements: [
     'shoulderToWrist',
     'wrist',

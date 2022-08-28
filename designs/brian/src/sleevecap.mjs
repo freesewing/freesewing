@@ -1,5 +1,4 @@
 import { front } from './front.mjs'
-import { sleevecapOptions as options } from './options.mjs'
 
 /** Calculates the differece between actual and optimal sleevecap length
  * Positive values mean sleevecap is longer than armhole
@@ -139,11 +138,33 @@ function draftSleevecap(part, run) {
   }
 }
 
+const menu = 'advanced.sleevecap'
 export const sleevecap = {
   from: front,
   name: 'brian.sleevecap',
   hide: true,
-  options,
+  options: {
+    sleevecapEase: { pct: 0, min: 0, max: 10, menu },
+    sleevecapTopFactorX: { pct: 50, min: 25, max: 75, menu },
+    sleevecapTopFactorY: { pct: 45, min: 35, max: 125, menu },
+    sleevecapBackFactorX: { pct: 60, min: 35, max: 65, menu },
+    sleevecapBackFactorY: { pct: 33, min: 30, max: 65, menu },
+    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65, menu },
+    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65, menu },
+    sleevecapQ1Offset: { pct: 1.7, min: 0, max: 7, menu },
+    sleevecapQ2Offset: { pct: 3.5, min: 0, max: 7, menu },
+    sleevecapQ3Offset: { pct: 2.5, min: 0, max: 7, menu },
+    sleevecapQ4Offset: { pct: 1, min: 0, max: 7, menu },
+    sleevecapQ1Spread1: { pct: 10, min: 4, max: 20, menu },
+    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20, menu },
+    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20, menu },
+    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20, menu },
+    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20, menu },
+    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20, menu },
+    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20, menu },
+    sleevecapQ4Spread2: { pct: 6.3, min: 4, max: 20, menu },
+    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100, menu: 'advanced' },
+  },
   draft: (part) => {
     const { store, units, options, Point, points, paths, raise } = part.shorthand()
 

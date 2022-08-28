@@ -1,9 +1,29 @@
-import { baseOptions as options } from './options.mjs'
-
 export const base = {
   name: 'brian.base',
   hide: true,
-  options,
+  options: {
+    // Static
+    brianFitSleeve: true,
+    brianFitCollar: true,
+    collarFactor: 4.8,
+    // Fit
+    bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    chestEase: { pct: 15, min: -4, max: 35, menu: 'fit' },
+    collarEase: { pct: 5, min: 0, max: 10, menu: 'fit' },
+    cuffEase: { pct: 20, min: 0, max: 200, menu: 'fit' },
+    draftForHighBust: { bool: false, menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    // Style
+    lengthBonus: { pct: 0, min: -4, max: 60, menu: 'style' },
+    s3Collar: { pct: 0, min: -100, max: 100, menu: 'style' },
+    s3Armhole: { pct: 0, min: -100, max: 100, menu: 'style' },
+    // Advanced
+    acrossBackFactor: { pct: 98, min: 93, max: 100, menu: 'advanced' },
+    armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
+    backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
+    frontArmholeDeeper: { pct: 0.2, min: 0, max: 0.5, menu: 'advanced' },
+    shoulderSlopeReduction: { pct: 0, min: 0, max: 80, menu: 'advanced' },
+  },
   measurements: [
     'biceps',
     'chest',
@@ -188,3 +208,4 @@ export const base = {
     return part
   }
 }
+
