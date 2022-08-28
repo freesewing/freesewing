@@ -1,15 +1,15 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Pattern } from '@freesewing/core'
+import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Title Plugin Tests', () => {
-  const pattern = new freesewing.Pattern().use(plugin)
+  const pattern = new Pattern().use(plugin)
   pattern.draft().render()
 
   it("Should run the title macro", () => {
-    let pattern = new freesewing.Pattern({ name: "testPattern", version: 99 });
+    let pattern = new Pattern({ name: "testPattern", version: 99 });
     pattern.draft = function() {};
     pattern.use(plugin);
     pattern.parts.test = new pattern.Part();
@@ -45,7 +45,7 @@ describe('Title Plugin Tests', () => {
   });
 
   it("Should run the title macro with append flag", () => {
-    let pattern = new freesewing.Pattern({ name: "testPattern", version: 99 });
+    let pattern = new Pattern({ name: "testPattern", version: 99 });
     pattern.draft = function() {};
     pattern.use(plugin);
     pattern.parts.test = new pattern.Part();
@@ -73,7 +73,7 @@ describe('Title Plugin Tests', () => {
   });
 
   it("Should run the title macro with point prefix", () => {
-    let pattern = new freesewing.Pattern({ name: "testPattern", version: 99 });
+    let pattern = new Pattern({ name: "testPattern", version: 99 });
     pattern.draft = function() {};
     pattern.use(plugin);
     pattern.parts.test = new pattern.Part();

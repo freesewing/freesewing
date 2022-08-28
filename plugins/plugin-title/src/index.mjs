@@ -1,4 +1,4 @@
-import pkg from '../package.json'
+import { name, version } from '../package.json'
 
 const style = `
 text.title-nr {
@@ -22,21 +22,17 @@ text.title-pattern {
 }
 `
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
+export const plugin = {
+  name,
+  version,
   hooks: {
     preRender: (svg) => {
-      if (svg.attributes.get('freesewing:plugin-title') === false) {
-        svg.attributes.set('freesewing:plugin-title', pkg.version)
-        svg.style += style
-      }
+      if (svg.style.indexOf(`test.title-nr`) === -1) svg.style += style
     },
   },
   macros: {
     title: function (so) {
-      let prefix = ''
-      if (so.prefix) prefix = so.prefix
+      const prefix = so.prefix || ''
 
       // Passing `false` will remove the title
       if (so === false) {
@@ -111,3 +107,8 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const titlePlugin = plugin
+export const pluginTitle = plugin
+
