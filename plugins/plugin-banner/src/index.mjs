@@ -1,14 +1,16 @@
-import pkg from '../package.json'
+import { version, name } from '../package.json' assert { type: 'json' }
 
-export default {
-  name: pkg.name,
-  version: pkg.version,
-  hooks: {
-    preRender: (svg) => svg.attributes.setIfUnset('freesewing:plugin-banner', pkg.version),
-  },
+export const plugin = {
+  name,
+  version,
   macros: {
     banner: function (so) {
-      let defaults = { text: '', dy: -1, spaces: 12, repeat: 10 }
+      const defaults = {
+        text: '',
+        dy: -1,
+        spaces: 12,
+        repeat: 10
+      }
       so = { ...defaults, ...so }
       this.paths[so.path].attr('data-text-dy', so.dy).attr('data-text-class', 'center')
       const spacer = '&#160;'.repeat(so.spaces)
@@ -18,3 +20,7 @@ export default {
     },
   },
 }
+
+// More specifically named exports
+export const bannerPlugin = plugin
+export const pluginBanner = plugin
