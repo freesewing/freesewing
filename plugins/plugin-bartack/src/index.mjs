@@ -1,5 +1,9 @@
-const name = (n, so) => `${so.prefix}${n}${so.suffix}`
+import { version, name } from '../package.json' assert { type: 'json' }
 
+// Helper method to construct prefixed/suffixed name
+const getName = (n, so) => `${so.prefix}${n}${so.suffix}`
+
+// Method that draws the actual bartack
 const drawBartack = (points, self) => {
   let path = new self.Path().move(points.path1[0])
   for (const i in points.path1) {
@@ -10,6 +14,7 @@ const drawBartack = (points, self) => {
   return path
 }
 
+// Helper method to generate the points to draw on later
 const getPoints = (path, so) => {
   let path1 = path.offset(so.width / 2)
   let path2 = path.offset(so.width / -2)
@@ -87,10 +92,45 @@ export default function bartack(so, self) {
     }
   }
 
-  self.paths[name('bartack', so)] = bartackPath(guide, so, self).attr(
-    'class',
-    'stroke-sm stroke-mark'
-  )
+  self.paths[`${so.prefix}bartack${so.suffix}`] = bartackPath(guide, so, self)
+    .attr('class', 'stroke-sm stroke-mark')
 
   return true
 }
+
+
+
+// The actual plugin
+export const plugin = {
+  name,
+  version,
+  macros: {
+    bartack: function (so) {
+      const self = this
+      return bartack(so, self)
+    },
+    bartackAlong: function (so) {
+      const self = this
+      so.bartackFractionAlong = false
+      so.bartackAlong = true
+      so.anchor = false
+      so.from = false
+      so.to = false
+      return bartack(so, self)
+    },
+    bartackFractionAlong: function (so) {
+      const self = this
+      so.bartackFractionAlong = true
+      so.bartackAlong = false
+      so.anchor = false
+      so.from = false
+      so.to = false
+      return bartack(so, self)
+    },
+  },
+}
+
+// More specifically named exports
+export const bartackPlugin = plugin
+export const pluginBartack = plugin
+
