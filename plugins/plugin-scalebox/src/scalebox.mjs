@@ -1,4 +1,4 @@
-export default function (so) {
+export function scalebox(so) {
   // Passing `false` will remove the scalebox
   if (so === false) {
     for (let id of [
@@ -182,3 +182,4 @@ export default function (so) {
     .attr('data-text', `${imperialDisplayHeight}`)
     .attr('data-text-class', 'text-xs center ')
 }
+

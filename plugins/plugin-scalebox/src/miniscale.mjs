@@ -1,4 +1,4 @@
-export default function (so) {
+export function miniscale(so) {
   // Passing `false` will remove the miniscale
   if (so === false) {
     for (let id of [

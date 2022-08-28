@@ -1,13 +1,12 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Pattern, round } from '@freesewing/core'
+import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect
-const round = freesewing.utils.round
 
 describe('Scalebox Plugin Tests', () => {
   it("Should run the default scalebox macro", () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
     const { macro } = pattern.parts.test.shorthand()
@@ -74,7 +73,7 @@ describe('Scalebox Plugin Tests', () => {
   });
 
   it("Should run the scalebox macro with rotation", () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
     const { macro } = pattern.parts.test.shorthand()
@@ -114,7 +113,7 @@ describe('Scalebox Plugin Tests', () => {
   });
 
   it("Should run the scalebox macro with default text", () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
     const { macro } = pattern.parts.test.shorthand()
@@ -134,7 +133,7 @@ describe('Scalebox Plugin Tests', () => {
   });
 
   it("Should run the scalebox macro with custom text", () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
     const { macro } = pattern.parts.test.shorthand()
@@ -157,7 +156,7 @@ describe('Scalebox Plugin Tests', () => {
   })
 
   it("Should apply scale to the scalebox macro", () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.settings.scale = 0.5
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
@@ -189,7 +188,7 @@ describe('Scalebox Plugin Tests', () => {
   });
 
   it("Should apply scale to the miniscale macro", () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.settings.scale = 0.5
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
