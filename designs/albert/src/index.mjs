@@ -1,13 +1,18 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftFront from './front'
-import draftStrap from './strap'
-import draftPocket from './pocket'
+// FreeSewing Design constructor
+import { Design } from '@freesewing/core'
+// FreeSewing Plugins
+import { pluginBundle } from '@freesewing/plugin-bundle'
+// Design parts
+import { front } from './front.mjs'
+import { pocket } from './pocket.mjs'
+import { strap } from './strap.mjs'
+// Get name & version from package.json
+import { name, version } from '../package.json'
 
+// crossbox macro
 const crossBox = {
   name: 'crossbox',
-  version: config.version,
+  version,
   macros: {
     crossBox: function (so) {
       let id = this.getId()
@@ -62,16 +67,17 @@ const crossBox = {
   },
 }
 
-// Create new design
-const Albert = new freesewing.Design(config, [plugins, crossBox])
 
-// Attach the draft methods to the prototype
-Albert.prototype.draftFront = draftFront
-Albert.prototype.draftStrap = draftStrap
-Albert.prototype.draftPocket = draftPocket
+// Setup our new design
+const Albert = new Design({
+  name,
+  version,
+  parts: [ front, pocket, strap ],
+  plugins: [ pluginBundle, crossBox ]
+})
 
 // Named exports
-export { config, Albert }
+export { front, pocket, strap, Albert }
 
-// Default export
-export default Albert
+
+
