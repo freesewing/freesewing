@@ -1,4 +1,40 @@
-// FIXME surely this can be extracted from the theme in some way so as to keep things consistent?
+export const paperless = `
+/* Paperless grid */
+svg.freesewing path.grid {
+  fill: none;
+  stroke: #555;
+  stroke-width: 0.3;
+}
+svg.freesewing path.gridline {
+  stroke: #555;
+  stroke-width: 0.2;
+}
+svg.freesewing path.gridline-lg {
+  stroke: #777;
+  stroke-width: 0.2;
+  stroke-dasharray: 1.5,1.5;
+}
+svg.freesewing path.gridline-sm {
+  stroke: #999;
+  stroke-width: 0.1;
+}
+svg.freesewing path.gridline-xs {
+  stroke: #999;
+  stroke-width: 0.1;
+  stroke-dasharray: 0.5,0.5;
+}
+svg.freesewing path.gridbox {
+  fill: url(#grid);
+}`
+export const sample = `
+/* Sample classes */
+svg.freesewing path.sample {
+  stroke-width: 0.75
+}
+svg.freesewing path.sample-focus {
+  stroke-width: 1.5; fill: rgba(0,0,0,0.1)
+}`
+
 
 const round = value => Math.round(value * 1e2) / 1e2
 
@@ -18,7 +54,7 @@ const colors = {
  * scale: the scale of the markings
  * stripped: should nested declarations be stripped out? Necessary for svgToPdfkit
  * */
-export default (scale, stripped) => `
+export const buildStylesheet = (scale, stripped) => `
   ${!stripped ? '/* Reset */' : ''}
   ${!stripped ? 'svg.freesewing ' : ''}path,
   ${!stripped ? 'svg.freesewing ' : ''}circle,
