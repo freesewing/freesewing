@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Pattern } from '@freesewing/core'
-import { bannerPlugin } from '../dist/index.mjs'
+import { bannerPlugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
