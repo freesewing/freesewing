@@ -7,10 +7,17 @@
 
 {{{info}}}
 
+
+> #### Note: this is the last v2 minor release
+> 
+> We'll be moving to a new major version (v3) so this is the last minor release.
+> We'll continue to support this while we work on v3, and backport important fixes.
+> 
+> Once v3 is out, we'll drop official support for v2.
+
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* 
-holding [all our NPM packages](https://freesewing.dev/reference/packages/).  
+This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
 
 This folder holds: {{{fullname}}}
 

@@ -2,7 +2,7 @@
 title: "Slant del orificio trasero"
 ---
 
----
+***
 
 ![El efecto de la opción de inclinación del orificio trasero sobre el patrón](sample.png)
 

@@ -2,7 +2,7 @@
 title: "Taillenzugabe"
 ---
 
----
+***
 
 ![Der Effekt der Taillenerleichterungsoption auf das Schnittmuster](sample.png)
 

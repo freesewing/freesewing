@@ -84,7 +84,7 @@ You can now put your cuffs aside, we'll attach them later.
 
 ![Sew collar and undercollar together](3a.png)
 
-Place both collar parts together with the good sides, and sew them together at the standard seam allowance.
+Place both collar parts with the _good sides together_, and sew them together at the standard seam allowance.
 
 #### Knip naadwaarde bij
 
@@ -449,9 +449,9 @@ Spread your shirt open so that both fronts and back lie flat with their good sid
 
 Now place your sleeve on top with the good side down, matching the top of the sleeve with the shoulder seam.
 
-> Let op: je mouw is niet symmetrisch, dus zorg dat de het dubbele merkteken (en de kant met het mouwsplit) aan de rug legt, en het enkele merkteken aan het voorpand.
+> Be careful, your sleeve is not symmetric, so be sure to have the back notch (⊗) and cuff guard on the back side, and the front notch (⊙) on the front side.
 > 
-> Also note that the double notch on the back of your sleeve does not have a corresponding notch on the back. That's because it should match up with the seam where your yoke joins the back.
+> Also note that the back notch (⊗) on the sleeve does not have a corresponding notch on the back of the shirt. That's because it should match up with the seam where your yoke joins the back.
 
 You now need to pin the sleeve to the armhole. To do so, make sure to:
 
@@ -501,7 +501,7 @@ You can use pins to hold this in place, but it's simpler to just press it.
 
 Now, from the bad side of the fabric, sew the seam allowance down just at the edge where it folds under the other seam allowance.
 
-Important here is to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
+Here it is important to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
 
 > Het is belangrijker om op gelijke afstand van de naad te blijven dan om exact op de rand van de plooi te stikken. In een ideale wereld zit die plooi al op een gelijke afstand, maar als dit niet zo is, zorg dan gewoon dat je stiksel tenminste gelijk is. Zelfs al betekent dit dat je een beetje van de geplooide rand afwijkt.
 
@@ -545,7 +545,7 @@ Now, from the bad side of the fabric, sew the seam allowance down just at the ed
 
 Important here is to keep an even distance from the seam of your sleeve. If you have a felling foot for your sewing machine, it will help you with that. But if not, just be careful.
 
-> It is more important to keep an even distance from the sleeve seam than to sew exactly at the edge of the fold. In een ideale wereld zit die plooi al op een gelijke afstand, maar als dit niet zo is, zorg dan gewoon dat je stiksel tenminste gelijk is. Zelfs al betekent dit dat je een beetje van de geplooide rand afwijkt.
+> Het is belangrijker om op gelijke afstand van de naad te blijven dan om exact op de rand van de plooi te stikken. In een ideale wereld zit die plooi al op een gelijke afstand, maar als dit niet zo is, zorg dan gewoon dat je stiksel tenminste gelijk is. Zelfs al betekent dit dat je een beetje van de geplooide rand afwijkt.
 
 #### Strijk de platte naad
 

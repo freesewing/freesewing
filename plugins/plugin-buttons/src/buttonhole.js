@@ -17,3 +17,4 @@ export default `
     d="M -1,0 L 1,0 L 1,10 L -1,10 z"
   />
 </g>`
+

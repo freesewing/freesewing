@@ -2,7 +2,6 @@
 title: "Back neck cutout"
 ---
 
-
 ![Back neck cutout](backneckcutout.svg)
 
 Controls how deep the neck opening is cut out in the back of the garment.

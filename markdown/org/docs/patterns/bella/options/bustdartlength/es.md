@@ -2,7 +2,7 @@
 title: "Longitud del dart del polvo"
 ---
 
----
+***
 
 ![El efecto de la opción de longitud de polvo en el patrón](sample.png)
 

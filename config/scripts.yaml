@@ -10,20 +10,12 @@ _:
 _types:
   design:
     prettier: "npx prettier --write 'src/*.js' 'config/*.js'"
-    test: &test 'BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register'
-    testci: &testci "BABEL_ENV=production npx mocha tests/*.test.mjs --require @babel/register --reporter ../../tests/reporters/terse.js"
+    test: &test 'npx mocha tests/*.test.mjs'
+    testci: &testci "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   plugin:
     prettier: "npx prettier --write 'src/*.js' 'tests/*.mjs'"
     test: *test
     testci: *testci
-create-freesewing-pattern:
-  build: '!'
-  cibuild_step1: '!'
-  clean: '!'
-  mbuild: '!'
-  test: '!'
-  testci: '!'
-  vbuild: '!'
 css-theme:
   build: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
   watch: 'npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css'
@@ -32,14 +24,13 @@ components:
   storybook: 'start-storybook -p 6663'
   test: *notests
 core:
-  coverage: 'BABEL_ENV=production nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov'
-  report: 'BABEL_ENV=production nyc report --reporter=html'
-  test: 'BABEL_ENV=production nyc -x node_modules -x tests/fixtures -x bin-pack npx mocha tests/*.test.js'
-  testci: "BABEL_ENV=production npx mocha tests/*.test.js --require @babel/register --reporter ../../tests/reporters/terse.js"
-  testonly: 'BABEL_ENV=production npx mocha tests/*.test.js'
+  report: 'nyc report --reporter=html'
+  test: 'nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.js'
+  testci: "nyc --silent npx mocha tests/*.test.js --reporter ../../tests/reporters/terse.js && nyc report --reporter=json"
+  testonly: 'npx mocha tests/*.test.js'
 i18n:
   # react-scripts doesn't handle .mjs files correctly
-  prebuild: 'node src/prebuild.mjs'
+  prebuild: 'node scripts/prebuilder.mjs'
   test: *test
   testci: *testci
 new-design:
@@ -50,7 +41,7 @@ new-design:
   vbuild: '!'
 pattern-info:
   cibuild_step1: '!'
-  build: 'node src/prebuild.js && node build.js'
+  build: 'node build.js'
   prebuild: 'node src/prebuild.js'
 utils:
   clean: "rimraf backend && rimraf camelCase && rimraf capitalize && rimraf cloneObject && rimraf convertSize && rimraf defaultGist && rimraf defaultSa && rimraf formatImperial && rimraf formatMm && rimraf isDegMeasurement && rimraf measurementAsMm && rimraf measurementDiffers && rimraf neckstimate && rimraf optionDefault && rimraf optionType && rimraf roundMm && rimraf roundMmDown && rimraf roundMmUp && rimraf sliderStep && rimraf smallestImperialStep && rimraf storage && rimraf tiler && rimraf validateEmail && rimraf validateTld"

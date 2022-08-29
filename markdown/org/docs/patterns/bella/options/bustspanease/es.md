@@ -2,7 +2,7 @@
 title: "Facilidad de la expansión del polvo"
 ---
 
----
+***
 
 ![El efecto de la opción de relajación de la expansión del polvo en el patrón](sample.png)
 

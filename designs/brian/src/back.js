@@ -20,7 +20,8 @@ export default (part) => {
 
   // Adapt the shoulder seam according to the relevant options
   // Note: s3 stands for Shoulder Seam Shift
-  if (options.s3Collar === 0) {
+  // Don't bother with less than 10% as that's just asking for trouble
+  if (options.s3Collar < 0.1 && options.s3Collar > -0.1) {
     points.s3CollarSplit = points.hps
     paths.backCollar = new Path()
       .move(points.hps)
@@ -58,7 +59,8 @@ export default (part) => {
       .reverse()
       .setRender(false)
   }
-  if (options.s3Armhole === 0) {
+  // Don't bother with less than 10% as that's just asking for trouble
+  if (options.s3Armhole < 0.1 && options.s3Armhole > -0.1) {
     points.s3ArmholeSplit = points.shoulder
     paths.backArmhole = new Path()
       .move(points.armholePitch)

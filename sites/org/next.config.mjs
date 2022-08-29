@@ -18,9 +18,9 @@ const config = {
   webpack: (config, options) => {
 
     // Aliases
-    config.resolve.alias.shared = path.resolve('../freesewing.shared/')
+    config.resolve.alias.shared = path.resolve('../shared/')
     config.resolve.alias.site = path.resolve(`.`)
-    config.resolve.alias.pkgs = path.resolve(`../`)
+    config.resolve.alias.pkgs = path.resolve(`../../packages/`)
 
     // Suppress warnings about importing version from package.json
     // We'll deal with it in v3 of FreeSewing
@@ -30,7 +30,7 @@ const config = {
 
     // This forces webpack to load the code from source, rather than compiled bundle
     for (const pkg of pkgs) {
-      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../${pkg}/src/index.js`)
+      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../../packages/${pkg}/src/index.js`)
     }
 
     return config

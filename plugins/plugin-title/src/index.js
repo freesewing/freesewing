@@ -1,5 +1,26 @@
-import style from './lib/style'
 import pkg from '../package.json'
+
+const style = `
+text.title-nr {
+  font-size: 24pt;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: reset-size;
+}
+text.title-name {
+      font-size: 7pt;
+      font-weight: 500;
+      text-anchor: middle;
+      dominant-baseline: reset-size;
+}
+text.title-pattern {
+      font-size: 4pt;
+      font-weight: 500;
+      dominant-baseline: reset-size;
+      text-anchor: middle;
+      font-style: italic;
+}
+`
 
 export default {
   name: pkg.name,
@@ -14,6 +35,21 @@ export default {
   },
   macros: {
     title: function (so) {
+      let prefix = ''
+      if (so.prefix) prefix = so.prefix
+
+      // Passing `false` will remove the title
+      if (so === false) {
+        for (const id of [
+          `_${prefix}_titleNr`,
+          `_${prefix}_titleName`,
+          `_${prefix}_titlePattern`,
+          `_${prefix}_titleFor`,
+        ])
+          delete this.points[id]
+        return true
+      }
+
       const transform = function (anchor) {
         const cx = anchor.x - so.scale * anchor.x
         const cy = anchor.y - so.scale * anchor.y
@@ -28,8 +64,6 @@ export default {
       so.scale = so.scale * this.context.settings.scale
       let overwrite = true
       if (so.append) overwrite = false
-      let prefix = ''
-      if (so.prefix) prefix = so.prefix
       this.points[`_${prefix}_titleNr`] = so.at
         .clone()
         .attr('data-text', so.nr, overwrite)
@@ -58,6 +92,14 @@ export default {
           .attr('data-text-class', 'fill-current font-bold')
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       }
+      shift += 6
+      const dateformat = require('dateformat')
+      const now = new Date()
+      this.points[`_${prefix}_exportDate`] = so.at
+        .shift(-90 - so.rotation, shift * so.scale)
+        .attr('data-text', dateformat(now, 'yyyymmdd"T"HHMMo'))
+        .attr('data-text-class', 'text-sm')
+        .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
     },
   },
 }

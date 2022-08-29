@@ -1,4 +1,11 @@
 ---
+bustAlignedButtons:
+  title: Bust-aligned buttons
+  description: Optional button spacing strategies to ensure a button at the bustline
+  options:
+    even: Even spacing
+    split: Split spacing
+    disabled: Disabled
 bustDartAngle:
   title: Angle des pinces poitrine
   description: Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas

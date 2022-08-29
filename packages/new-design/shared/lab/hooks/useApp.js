@@ -3,15 +3,12 @@ import { useState } from 'react'
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Locale and translation
 import { useRouter } from 'next/router'
-import { useTranslation } from 'next-i18next'
-import { capitalize } from 'shared/utils.mjs'
 import useTheme from 'shared/hooks/useTheme'
 
 function useApp(full = true) {
 
   // Load translation method
   const locale = useRouter().locale
-  const { t } = useTranslation(['app'])
 
   // Persistent state
   const [account, setAccount] = useLocalStorage('account', { username: false })

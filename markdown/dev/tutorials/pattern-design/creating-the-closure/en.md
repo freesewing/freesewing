@@ -16,7 +16,7 @@ Before we can use it, we have to update our `part.shorthand()` call to indicate 
 also like to make use of macros. Simply add `macro` at the end:
 
 ```js
-let {
+const {
   Point,
   points,
   Path,

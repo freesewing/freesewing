@@ -1,16 +1,13 @@
 export default function (part) {
-  let {
-    utils,
+  const {
     store,
     sa,
-    Point,
     points,
     Path,
     paths,
     Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro,
@@ -154,7 +151,7 @@ export default function (part) {
           to: points.shoulderDartOutside,
           x: pLeft.x -sa - 15,
         })
-            
+
         let pArmholeLeft = paths.armhole.edge('left')
         macro('hd', {
           from: points.waistDartRight,

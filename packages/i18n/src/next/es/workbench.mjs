@@ -3,7 +3,7 @@
  * All edits will be overwritten on the next (pre)build
  */
 const workbench = {
-  "designOptions": "Design options",
+  "designOptions": "Opciones de diseño",
   "forPrinting": "For printing",
   "forCutting": "For cutting",
   "layoutThing": "Layout {thing}",

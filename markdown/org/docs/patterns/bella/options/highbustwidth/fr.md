@@ -2,7 +2,7 @@
 title: "Largeur de buste supérieur"
 ---
 
----
+***
 
 ![L'effet de l'option de largeur de poitrine haute sur le motif](sample.png)
 

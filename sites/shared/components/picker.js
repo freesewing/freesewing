@@ -3,19 +3,19 @@ import { Menu } from '@headlessui/react'
 import Link from 'next/link'
 
 /** an accessible dropdown menu for use by picker components */
-export const Picker = ({Icon, className, title, ariaLabel, iconOnly=false, children}) => {
+export const Picker = ({Icon, className, title, ariaLabel, iconOnly=false, children, end}) => {
 
-	return (<Menu as="div" className={`dropdown dropdown-end w-auto`}>
+	return (<Menu as="div" className={`w-auto relative`}>
 		<Menu.Button className={iconOnly
 			? `btn btn-sm`
 			: `m-0 btn btn-neutral flex flex-row gap-2
-			hover:bg-neutral-content hover:border-neutral-content hover:text-neutral
+			hover:bg-neutral-focus
 			`}
 			aria-label={ariaLabel}>
 			<Icon />
 			{!iconOnly && <span>{title}</span>}
 		</Menu.Button>
-		<Menu.Items as="ul" className={`p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 ${className}`}>
+		<Menu.Items as="ul" className={`p-2 shadow menu bg-base-100 rounded-box w-52 ${className} absolute ${end ? 'right-0' : 'left-0'} top-full mt-1`}>
 		 {children}
 		</Menu.Items>
 	</Menu>)

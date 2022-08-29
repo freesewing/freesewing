@@ -15,13 +15,6 @@ import ShowcaseIcon from 'shared/components/icons/camera.js'
 // Don't show children for blog and showcase posts
 const keepClosed = ['blog', 'showcase', ]
 
-// TODO: For now we force tailwind to pickup these styles
-// At some point this should 'just work' though, but let's not worry about it now
-const force = [
-  <p className="w-6 mr-2"/>,
-  <p className="w-8 mr-3"/>
-]
-
 // List of icons matched to top-level slug
 const icons = {
   accessories: (className='') => <TutorialIcon className={className}/>,
@@ -149,7 +142,7 @@ const SubLevel = ({ nodes={}, active }) => (
                {child.__slug === active ? <>&bull;</> : <>&deg;</>}
               </span>
               <span className={child.__slug === active ? 'font-bold' : ''}>
-                {child.__linktitle}
+                {child.__linktitle || child.__title}
               </span>
             </a>
           </Link>

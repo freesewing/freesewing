@@ -1,4 +1,4 @@
-import { linkClasses, Chevron } from 'shared/components/navigation/primary.js'
+import { linkClasses } from 'shared/components/navigation/primary.js'
 import ViewMenu from './view.js'
 import DesignOptions from './design-options'
 import CoreSettings from './core-settings'
@@ -86,7 +86,7 @@ const WorkbenchMenu = props => {
   return (
     <nav className="grow mb-12">
       <ViewMenu {...props} />
-      {props.gist?._state?.view === 'draft' && (
+      {['draft', 'cuttingLayout', 'printingLayout'].indexOf(props.gist?._state?.view) > -1 && (
         <>
           <DesignOptions {...props} />
           <CoreSettings {...props} />

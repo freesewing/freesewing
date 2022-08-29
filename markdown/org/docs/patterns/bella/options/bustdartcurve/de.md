@@ -2,7 +2,7 @@
 title: "Büstendart-Kurve"
 ---
 
----
+***
 
 ![Der Effekt der Bust-Dart-Kurve auf das Schnittmuster](sample.png)
 

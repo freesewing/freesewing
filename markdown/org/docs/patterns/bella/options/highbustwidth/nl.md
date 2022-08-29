@@ -2,7 +2,7 @@
 title: "Hoge buste-breedte"
 ---
 
----
+***
 
 ![Het effect van de optie voor de hoge bustebreedte op het patroon](sample.png)
 

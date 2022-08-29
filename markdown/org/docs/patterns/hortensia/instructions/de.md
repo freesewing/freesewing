@@ -33,8 +33,8 @@ The placement of the straps are not on the pattern and need to be determined. Yo
 If using bag strap webbing instead of fabric made straps do the following,
 
 - Cut the webbing to the the length of the straps with seam allowance.
-- Press under the short edge seam allowance.
-- Attach the webbing the same way as the fabric straps.
+Press under the short edge seam allowance.
+Attach the webbing the same way as the fabric straps.
 
 </Note>
 

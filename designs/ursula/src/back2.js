@@ -1,19 +1,10 @@
 export default function (part) {
-  let {
-    options,
-    Point,
-    Path,
+  const {
     points,
     paths,
-    measurements,
     Snippet,
     snippets,
     store,
-    utils,
-    complete,
-    sa,
-    paperless,
-    macro,
   } = part.shorthand()
 
   points.waist2 = points.backWaistBandMid

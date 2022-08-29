@@ -62,6 +62,58 @@ it("Design constructor should load array of plugins", () => {
   expect(pattern.hooks.preRender.length).to.equal(2);
 });
 
+it("Design constructor should load conditional plugin", () => {
+  const plugin = {
+    name: "example",
+    version: 1,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example", version);
+      }
+    }
+  };
+  const condition = () => true
+  const design = new freesewing.Design({}, [], { plugin, condition });
+  const pattern = new design();
+  expect(pattern.hooks.preRender.length).to.equal(1);
+});
+
+it("Design constructor should not load conditional plugin", () => {
+  const plugin = {
+    name: "example",
+    version: 1,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example", version);
+      }
+    }
+  };
+  const condition = () => false
+  const design = new freesewing.Design({}, [], { plugin, condition });
+  const pattern = new design();
+  expect(pattern.hooks.preRender.length).to.equal(0);
+});
+
+it("Design constructor should load multiple conditional plugins", () => {
+  const plugin = {
+    name: "example",
+    version: 1,
+    hooks: {
+      preRender: function(svg, attributes) {
+        svg.attributes.add("freesewing:plugin-example", version);
+      }
+    }
+  };
+  const condition1 = () => true
+  const condition2 = () => false
+  const design = new freesewing.Design({}, [], [
+    { plugin, condition: condition1 },
+    { plugin, condition: condition2 },
+  ]);
+  const pattern = new design();
+  expect(pattern.hooks.preRender.length).to.equal(1);
+});
+
 it("Design constructor should construct basic part order", () => {
   let design = new freesewing.Design({
     dependencies: { step4: "step3" },

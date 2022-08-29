@@ -24,7 +24,9 @@ const optiongroups = {
   "bellaDarts": "Pinces de Bella",
   "bellaArmhole": "Emmanchure de Bella",
   "bellaAdvanced": "Bella avancé",
-  "clavi": "Bande de pourpre"
+  "clavi": "Bande de pourpre",
+  "type": "Type",
+  "size": "Size"
 }
 
 export default optiongroups

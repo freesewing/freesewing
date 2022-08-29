@@ -1,0 +1,23 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Add comment for nextjs-only tag
+on:
+  issues:
+    types:
+      - labeled
+jobs:
+  add-comment:
+    if: github.event.label.name == 'nextjs-only'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            This issue will not be considered for inclusion in the current (Gatbsy-based) freesewing.org website. It will only be considered for inclusion in the future (NextJS-based) freesewing.org website. This is because we want to migrate sooner rather than later, and all work on the legacy site slows that process down.

@@ -24,7 +24,9 @@ const optiongroups = {
   "bellaDarts": "Bella figuurnaden",
   "bellaArmhole": "Bella armsgat",
   "bellaAdvanced": "Bella geavanceerd",
-  "clavi": "Clavi"
+  "clavi": "Clavi",
+  "type": "Type",
+  "size": "Size"
 }
 
 export default optiongroups

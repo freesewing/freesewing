@@ -15,7 +15,7 @@ So let's add it as a required measurement.
 
 ## Add required measurements
 
-Open the config file at `config/index.js` and update the `measurements` array with the name of our required measurement:
+Open the config file at `design/config.js` and update the `measurements` array with the name of our required measurement:
 
 ```js
 measurements: ["head"],
@@ -38,7 +38,7 @@ This change will also get picked up by the development environment, and you'll n
 Since it's just one measurement, let's simply enter a value by hand.
 For example `38` as 38cm is a realistic head circumference measurement for a baby.
 
-Enter `38` in the box, and click on **Draft your pattern** in the top navigation bar to get back to your draft,
-which for now still looks like this:
+Enter `38` in the box, and click on **Draft Design** in the sidebar under the **View** heading.
+This brings you back to our work in progress:
 
 <Example pattern="tutorial" part="step1">Nothing has changed, yet</Example>

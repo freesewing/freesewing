@@ -1,6 +1,6 @@
 import { config } from './config.mjs'
 import { mkdir, readFile, writeFile, copyFile } from 'node:fs/promises'
-import { join, resolve, dirname, extname } from 'path'
+import { join, dirname } from 'path'
 import mustache from 'mustache'
 import rdir from 'recursive-readdir'
 import chalk from 'chalk'
@@ -14,6 +14,7 @@ import { fileURLToPath } from 'url';
 const cwd = __dirname
   ? __dirname
   : dirname(fileURLToPath(import.meta.url))
+
 
 const nl = "\n"
 const tab = "  "

@@ -31,22 +31,6 @@ const getSettings = element => {
   return settings;
 }
 
-/* Switch the default black to currentColor for dark mode support */
-const noBlack = orig => {
-  if (orig.getAttribute('stroke') === '#000000') {
-    orig.setAttribute('stroke', 'currentColor')
-  }
-  if (orig.getAttribute('fill') === '#000000') {
-    orig.setAttribute('fill', 'currentColor')
-  }
-  if (orig.getAttribute('color') === '#000000') {
-    orig.setAttribute('color', 'currentColor')
-  }
-
-  return orig
-}
-
-
 const coarse = (svg, options) => {
   const blacklist = [
     'cx',
@@ -82,10 +66,10 @@ const coarse = (svg, options) => {
 
   const rc = rough.svg(svg, options || {})
 
-  // Replace shapes
   const children = svg.querySelectorAll('circle, rect, ellipse, line, polygon, polyline, path')
+
   for(let i = 0; i < children.length; i += 1) {
-    const original = noBlack(children[i]);
+    const original = children[i];
     const params = [];
     let shapeType;
 
@@ -131,12 +115,6 @@ const coarse = (svg, options) => {
 
     original.replaceWith(replacement);
   }
-
-  // Replace text color
-  const text = svg.querySelectorAll('text')
-  for(let i = 0; i < text.length; i += 1) noBlack(text[i])
-
 }
 
 export default coarse
-

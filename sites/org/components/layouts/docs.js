@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 // Shared components
 import Aside from 'shared/components/navigation/aside'
 import ThemePicker from 'shared/components/theme-picker'
@@ -21,10 +20,7 @@ const DefaultLayout = ({ app, title=false, crumbs=false, children=[] }) => {
           {title && (
             <>
               <Breadcrumbs title={title} crumbs={breadcrumbs} />
-              {title
-                ? <h1>{title}</h1>
-                : <h1>{app.getTitle(slug)}</h1>
-              }
+              <h1>{title}</h1>
             </>
           )}
           {children}

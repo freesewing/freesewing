@@ -1,11 +1,10 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
 import Head from 'next/head'
-import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from 'site/components/layouts/bare'
 import { useTranslation } from 'next-i18next'
-import Navigation, { Icons } from 'shared/components/navigation/primary'
+import { Icons } from 'shared/components/navigation/primary'
 
 const HomePage = (props) => {
   const app = useApp()

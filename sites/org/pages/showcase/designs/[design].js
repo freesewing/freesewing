@@ -1,37 +1,11 @@
 import Page from 'site/components/wrappers/page.js'
 import useApp from 'site/hooks/useApp.js'
-import TimeAgo from 'react-timeago'
-import MdxWrapper from 'shared/components/wrappers/mdx'
-import mdxCompiler from 'shared/mdx/compiler'
-import Markdown from 'react-markdown'
-import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
 import { strapiImage } from 'shared/utils.js'
 import { useTranslation } from 'next-i18next'
 import designs from 'shared/config/designs.json'
 import { PreviewTile } from '../index.js'
-import PageLink from 'shared/components/page-link.js'
-
-const DesignPosts = ({ design, posts }) => {
-  const { t } = useTranslation(['patterns'])
-  return (
-    <div className='py-8'>
-      <div className={`
-        flex flex-row overflow-visible
-        -mr-8 pl-8
-        md:-mr-12 md:pl-12
-      `}>
-      {posts.slice(0, 10).map(post => <PreviewTile
-        img={`${strapiHost}${post?.image?.sizes?.medium?.url}`}
-        slug={post.slug}
-        title={post.title}
-        key={post.slug}
-      />)}
-      </div>
-    </div>
-  )
-}
 
 const DesignIndexPage = (props) => {
   const app = useApp()
@@ -68,7 +42,7 @@ const DesignIndexPage = (props) => {
             md:-mr-12 md:pl-12
           `}>
           {props.posts.map(post => <PreviewTile
-            img={`${strapiHost}${post?.image?.sizes?.medium?.url}`}
+            img={`${strapiHost}${post.image?.sizes?.medium?.url}`}
             slug={post.slug}
             title={post.title}
             key={post.slug}

@@ -22,7 +22,7 @@ const loadTemplate = (type, format, language='en') => {
 }
 
 const replace = (text, from, to) => {
-  for (const id in from) text = text.split(from[id]).join(to[id] || from[id])
+  for (let id=0; id < from.length; id++) text = text.split(from[id]).join(to[id] || from[id])
 
   return text
 }

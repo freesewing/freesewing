@@ -1,13 +1,13 @@
 fabricStretchX:
-  title: Fabric stretch (horizontal)
-  description: Adjust this for more or less stretchy fabrics
+  title: Elasticidad de la tela (horizontal)
+  description: Ajusta esto para telas más o menos elásticas
 fabricStretchY:
-  title: Fabric stretch (vertical)
-  description: Adjust this for more or less stretchy fabrics
+  title: Elasticidad de la tela (vertical)
+  description: Ajusta esto para telas más o menos elásticas
 adjustStretch:
-  title: Adjust stretch
-  description: This option you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is
+  title: Ajuste por elasticidad
+  description: En esta opción puedes poner la elasticidad total del tejido tanto en horizontal como en vertical. Cuando se deshabilita, los valores de elasticidad se usan tal cual
 useCrossSeam:
-  title: Use crossseam
-  description: When enabled, the total height of the pattern pieces combined will match the cross seam length minus the front and back rise. When disabled, the total height depends on the gusset length option.
+  title: Usa el tiro completo
+  description: Cuando se habilita, la altura total de las piezas del patrón combinadas será la misma que la medida del tiro completo menos las elevaciones frontales y traseras. Cuando se deshabilita, la altura total dependerá de la opción del molde medio o pieza de refuerzo.
 

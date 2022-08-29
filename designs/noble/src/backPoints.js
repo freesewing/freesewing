@@ -1,13 +1,13 @@
 export default function (part) {
-    let {
-      points,
-      Path,
-      paths,
-      options,
-      snippets,
-    } = part.shorthand()
+  const {
+    points,
+    Path,
+    paths,
+    options,
+    snippets,
+  } = part.shorthand()
 
-    // Hide Bella paths
+  // Hide Bella paths
   for (let key of Object.keys(paths)) paths[key].render = false
   for (let i in snippets) delete snippets[i]
 
@@ -56,7 +56,7 @@ export default function (part) {
   let diff = 0
   let angle = 0
   do {
-    if (length?.o) angle = diff*( length.o > length.i ? -.1 : .1 )
+    if (length.o) angle = diff*( length.o > length.i ? -.1 : .1 )
 
     points.dartBottomRight = points.dartBottomRight.rotate( angle, points.waistSide )
 

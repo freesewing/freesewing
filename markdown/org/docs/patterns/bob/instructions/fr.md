@@ -23,7 +23,6 @@ You probably want to pin or bast this prior to sewing. The two different types o
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
-
 ## Step 2: Apply bias tape
 
 Wer're going to apply bias tape as a finish around the entire edge of the bib.
@@ -44,8 +43,6 @@ Next, install the snaps on the straps, as indicated on the pattern.
 
 If you don't have or want snaps, you can also use a button + buttonhole.
 
-
 ## Step 4: You're done!
 
 That was easy 😃
-

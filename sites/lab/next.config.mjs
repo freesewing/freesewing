@@ -1,15 +1,7 @@
 import path from 'path'
-import { readdirSync } from 'fs'
 import i18nConfig from './next-i18next.config.js'
-import { designs, plugins, packages } from '../../config/software/index.mjs'
+import { designs, plugins } from '../../config/software/index.mjs'
 import { banner } from '../../scripts/banner.mjs'
-
-const getDirectories = source =>
-  readdirSync(source, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name)
-
-const pkgs = getDirectories(path.resolve(`../`))
 
 let greeting = false
 

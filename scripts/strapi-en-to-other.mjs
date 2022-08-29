@@ -246,7 +246,6 @@ const getToWork = async () => {
     process.exit()
   }
   const content = {}
-  const translations = languages.length - 1
   for (const type of Object.keys(uris)) {
     console.log(`Loading ${type} from Strapi`)
     content[type] = await getContent(type)

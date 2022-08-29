@@ -1,4 +1,11 @@
 ---
+bustAlignedButtons:
+  title: Bust-aligned buttons
+  description: Optional button spacing strategies to ensure a button at the bustline
+  options:
+    even: Even spacing
+    split: Split spacing
+    disabled: Disabled
 bustDartAngle:
   title: Ángulo de dardos de polvo
   description: Controla el ángulo por el cual el (lado) dardos de polvo tiene pendiente descendente

@@ -1,4 +1,4 @@
-import { designs, plugins, packages, software  } from './software/index.mjs'
+import { designs, plugins, packages  } from './software/index.mjs'
 
 /*
  * As this monorepo has interlocking dependencies
@@ -6,9 +6,10 @@ import { designs, plugins, packages, software  } from './software/index.mjs'
  * order. This file takes care of that
  */
 
-const first = [ 'core', 'config-helpers', 'remark-jargon' ]
+const first = [ 'core', 'config-helpers', 'remark-jargon']
 const blocks = [ 'brian', 'titan', 'bella', 'breanna' ]
 const extended = [ 'bent', 'simon', 'carlton', 'ursula' ]
+const last = ['i18n']
 
 export const buildOrder = [
 
@@ -31,6 +32,8 @@ export const buildOrder = [
   Object.keys(designs).filter(id => [...blocks, ...extended].indexOf(id) === -1),
 
   // Finally build the rest of the packages
-  Object.keys(packages).filter(id => first.indexOf(id) === -1),
+  Object.keys(packages).filter(id => first.indexOf(id) === -1 && last.indexOf(id) === -1),
+
+  last
 ]
 

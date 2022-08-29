@@ -1,5 +1,5 @@
 export default function (part) {
-  let {
+  const {
     store,
     sa,
     Point,
@@ -9,7 +9,6 @@ export default function (part) {
     Snippet,
     snippets,
     options,
-    measurements,
     complete,
     paperless,
     macro,
@@ -35,10 +34,9 @@ export default function (part) {
   let body16_17d = 152.51537318250902 * options.size
   let body17_18d = 255.15294373571314 * options.size
   let body18_19d = 71.90453921693678 * options.size
-  let body19_01d = 61.33021195137026 * options.size
+  //let body19_01d = 61.33021195137026 * options.size
 
-  let body01cp1d = 42.13103487929059 * options.size
-  body01cp1d = 32.13103487929059 * options.size
+  let body01cp1d = 32.13103487929059 * options.size
   let body01cp2d = 23.72518967258217 * options.size
   let body02cp1d = 44.99353642469105 * options.size
   let body02cp2d = 42.33568754608812 * options.size
@@ -166,7 +164,7 @@ export default function (part) {
   let body16_17a = 353.6138832
   let body17_18a = 2.546389668
   let body18_19a = 348.3450181
-  let body19_01a = 59.63482522
+  //let body19_01a = 59.63482522
 
   let body01cp1a = 161.5263465
   let body01cp2a = 255.6503959

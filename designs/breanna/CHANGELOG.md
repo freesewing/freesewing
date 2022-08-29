@@ -1,6 +1,12 @@
 # Change log for: @freesewing/breanna
 
 
+## 2.22.0 (2022-08-23)
+
+### Fixed
+
+ - Fixed bug where a large shoulder slope could cause an error. Fixes [#2516](https://github.com/freesewing/freesewing/issues/2516)
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

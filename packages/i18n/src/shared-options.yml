@@ -1,9 +1,13 @@
 aaron:
   dflt: brian
+  other:
+    draftForHighBust: teagan
 benjamin:
   dflt: brian
 bent:
   dflt: brian
+  other:
+    draftForHighBust: teagan
 breanna:
   dflt: brian
   other:
@@ -28,6 +32,7 @@ carlton:
     innerPocketWidth: jaeger
     innerPocketDepth: jaeger
     innerPocketWeltHeight: jaeger
+    draftForHighBust: teagan
 carlita:
   dflt: brian
   other:
@@ -58,6 +63,7 @@ carlita:
     chestPocketHeight: carlton
     beltWidth: carlton
     buttonSpacingHorizontal: carlton
+    draftForHighBust: teagan
 charlie:
   dflt: titan
   other:
@@ -68,6 +74,7 @@ diana:
   other:
     waistEase: breanna
     hipsEase: aaron
+    draftForHighBust: teagan
 huey:
   dflt: brian
   other:
@@ -77,11 +84,13 @@ huey:
     waistEase: simon
     hipsEase: aaron
     pocketWidth: wahid
+    draftForHighBust: teagan
 hugo:
   dflt: brian
   other:
     ribbingHeight: sven
     ribbingStretch: sven
+    draftForHighBust: teagan
 jaeger:
   dflt: brian
   other:
@@ -91,6 +100,7 @@ jaeger:
     sleevecapHeight: bent
     buttons: simon
     collarRoll: simon
+    draftForHighBust: teagan
 paco:
   dflt: titan
   other:
@@ -107,6 +117,7 @@ simon:
   dflt: brian
   other:
     hipsEase: aaron
+    draftForHighBust: teagan
 simone:
   dflt: simon
   other:
@@ -145,10 +156,15 @@ simone:
     sleevecapQ4Spread1: brian
     sleevecapQ4Spread2: brian
     sleeveWidthGuarantee: brian
+    draftForHighBust: teagan
 sven:
   dflt: brian
+  other:
+    draftForHighBust: teagan
 tamiko:
   dflt: brian
+  other:
+    draftForHighBust: teagan
 teagan:
   dflt: brian
   other:
@@ -171,8 +187,10 @@ wahid:
     waistEase: simon
     centerBackDart: jaeger
     buttons: simon
+    draftForHighBust: teagan
 yuri:
   dflt: brian
   other:
     hipsEase: hugo
+    draftForHighBust: teagan
 

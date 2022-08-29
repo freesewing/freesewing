@@ -6,8 +6,12 @@ paperless:
   title: Paperless
   description: Drafts a pattern with all dimensions included so you can transfer it on fabric or another medium without the need to print
 
+sabool:
+  title: Include seam allowance
+  description: Controls whether or not to include seam allowance in your pattern
+
 sa:
-  title: Seam allowance
+  title: Seam allowance size
   description: Controls the amount of seam allowance included in your pattern
 
 locale:

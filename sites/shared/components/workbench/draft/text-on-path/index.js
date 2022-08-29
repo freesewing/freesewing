@@ -13,7 +13,6 @@ const XrayTextOnPath = props => (
 
 const TextOnPath = (props) => {
   const { t } = useTranslation(['app'])
-  const text = []
   // Handle translation (and spaces)
   let translated = ''
   for (let string of props.path.attributes.getAsArray('data-text')) {

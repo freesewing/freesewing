@@ -20,6 +20,7 @@ export default {
       'sleeveLengthBonus',
       'waistEase',
       'seatEase',
+      'draftForHighBust',
     ],
     advanced: [
       'backNeckCutout',
@@ -73,6 +74,7 @@ export default {
     'waistToSeat',
     'seat',
   ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     bentBack: 'bentBase',
     bentFront: 'bentBack',
@@ -165,5 +167,8 @@ export default {
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100 },
     s3Armhole: { pct: 0, min: -100, max: 100 },
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }

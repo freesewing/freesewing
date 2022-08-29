@@ -66,6 +66,7 @@ const config = {
     ],
   },
   measurements: [...Brian.config.measurements, 'waist', 'hips'],
+  optionalMeasurements: [ 'highBust' ],
   dependencies: {
     sleeveBase: ['frontBase', 'backBase', 'back'],
     sleeve: ['sleeveBase', 'front', 'back'],
@@ -187,6 +188,9 @@ const config = {
 
     // Various
     ffsa: { pct: 150, min: 100, max: 200 }, // Flat-felled seam allowance
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }
 

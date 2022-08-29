@@ -35,6 +35,13 @@ Path.prototype.setRender = function (render = true) {
   return this
 }
 
+/** Chainable way to set the class property */
+Path.prototype.setClass = function (className = false) {
+  if (className) this.attributes.set('class', className)
+
+  return this
+}
+
 /** Adds a move operation to Point to */
 Path.prototype.move = function (to) {
   if (to instanceof Point !== true)
@@ -83,7 +90,7 @@ Path.prototype.curve_ = function (cp1, to) {
   if (to instanceof Point !== true)
     this.raise.warning('Called `Path.curve_(cp1, to)` but `to` is not a `Point` object')
   if (cp1 instanceof Point !== true)
-    this.raise.warning('Called `Path.curve_(cp1, to)` but `cp2` is not a `Point` object')
+    this.raise.warning('Called `Path.curve_(cp1, to)` but `cp1` is not a `Point` object')
   let cp2 = to.copy()
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
@@ -592,7 +599,6 @@ Path.prototype.edge = function (side) {
       return curveEdge(curve, side)
     }
   }
-  this.raise.error(`Unable to find \`Path.edge(side)\` for side ${side}`)
 }
 
 function edgeCurveAsBezier(op) {

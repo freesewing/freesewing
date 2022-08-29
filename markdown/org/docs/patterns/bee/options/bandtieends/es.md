@@ -2,7 +2,7 @@
 title: "Band (chest) tie ends"
 - - -
 
----
+***
 
 Si prefieres que las puntas de la cinta alrededor del pecho sean planas o acaben en punta
 

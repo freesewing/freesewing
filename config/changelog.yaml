@@ -1,8 +1,94 @@
-Unreleased:
+2.22.1:
+  date: 2022-08-23
+
+  fixed:
+    plugin-buttons:
+      - Make markup compatible with v2
+        Closes [#2631](https://github.com/freesewing/freesewing/issues/2631)
+
+2.22.0:
+  date: 2022-08-23
+
   Added:
+    aaron:
+      - Support drafting for high bust
+    bent:
+      - Support drafting for high bust
+    brian:
+      - Support drafting for high bust
+    carlton:
+      - Support drafting for high bust
+    diana:
+      - Support drafting for high bust
+    huey:
+      - Support drafting for high bust
+    hugo:
+      - Support drafting for high bust
+        Closes [#802](https://github.com/freesewing/freesewing/issues/802)
+    jeager:
+      - Support drafting for high bust
+    octoplushy:
+      - Octoplushy is a new design for an octopus or squid plushy
+    plugin-title:
+      - Added support for removing the title via a macro call
+      - Added a render timestamp to the title
+    simon:
+      - Support drafting for high bust
+    simone:
+      - Added Bust-aligned buttons option and functionality.
+        Closes [#2154] (https://github.com/freesewing/freesewing/issues/2154)
+      - Added a notch at the center front bustline.
+    sven:
+      - Support drafting for high bust
+    tamiko:
+      - Support drafting for high bust
+    teagan:
+      - Support drafting for high bust
+    titan:
+      - Added additional notches to aid alignment
+    wahid:
+      - Support drafting for high bust
+    yuri:
+      - Support drafting for high bust
+
+  Changed:
+    charlie:
+      - Renamed back pocket jet to back pocket welt
+    paco:
+      - Fix hem allowance. Closes [#2350](https://github.com/freesewing/freesewing/issues/2350)
+    theo:
+      - migrated `waistbandWidth` option from `mm` to snapped `pct` option
+
+  Fixed:
+    breanna:
+      - Fixed bug where a large shoulder slope could cause an error.
+        Fixes [#2516](https://github.com/freesewing/freesewing/issues/2516)
+    brian:
+      - Make s3 options sticky to zero below 10% to avoid path split issues.
+        Fixes [#2249](https://github.com/freesewing/freesewing/issues/2249)
+    cathrin:
+      - Removed seam allowance from Part1a foldline.
+        Fixes [#2545](https://github.com/freesewing/freesewing/issues/2545)
+    paco:
+      - Make hem allowance taper outwards to match the leg
+        Fixes [#2350](https://github.com/freesewing/freesewing/issues/2350)
+    simon:
+      - Fix issue with boxPleat and yoke
+        Fixes [#2400](https://github.com/freesewing/freesewing/issues/2400)
+      - Removed superfluous notches in button placket, buttonhole placket, and split yoke.
+        Fixes [#2399](https://github.com/freesewing/freesewing/issues/2399)
+    simone:
+      - Don't do a negative FBA from there's no need for an FBA
+        Fixes [#2121](https://github.com/freesewing/freesewing/issues/2121)
+      - Duplicate config rather than mutating the imported simon config
+    wahid:
+      - Prevent facing/lining overlap when shoulders get very narrow
+        fixes [#2233](https://github.com/freesewing/freesewing/issues/2233)
+      - Fixed dependency issue with pocketFacing part
+      - Added grainlines
 
 2.21.3:
-  date: 2022-07-03
+  date: 2022-07-02
 
   Changed:
     core:

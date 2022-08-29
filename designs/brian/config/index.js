@@ -17,6 +17,7 @@ export default {
       'shoulderEase',
       'lengthBonus',
       'sleeveLengthBonus',
+      'draftForHighBust',
     ],
     style: ['s3Collar', 's3Armhole'],
     advanced: [
@@ -62,6 +63,7 @@ export default {
     'shoulderToWrist',
     'wrist',
   ],
+  optionalMeasurements: ['highBust'],
   dependencies: {
     back: 'base',
     front: 'back',
@@ -116,5 +118,8 @@ export default {
     sleevecapQ4Spread2: { pct: 6.3, min: 4, max: 20 },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100 },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10 },
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }

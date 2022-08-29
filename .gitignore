@@ -60,7 +60,6 @@ packages/utils/tiler
 packages/utils/validateEmail
 packages/utils/validateTld
 
-
 # Any NPM or Yarn lock files
 designs/*/package-lock.json
 designs/*/yarn.lock
@@ -81,6 +80,10 @@ sites/*/public/feeds/*
 packages/new-design/shared/public/locales/*/*.json
 packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
+
+# Translation files for NextJS
+# Remove this after we move to Node 16 and deprecate pattern-info
+#/home/joost/git/freesewing/packages/i18n/src/next/*/*.mjs
 
 # Lab auto-generated pages
 sites/lab/lib
@@ -106,6 +109,7 @@ prebuild/*.json
 sites/*/out
 sites/*/public/mdx
 sites/*/prebuild
+!sites/shared/prebuild
 
 # misc
 .DS_Store
@@ -129,3 +133,7 @@ scripts/verdaccio.sh
 !markdown/dev/reference/api/point/dist
 
 .test-failures.log
+core.7268
+.gitignore
+sites/lab/package.json
+sites/lab/core.873

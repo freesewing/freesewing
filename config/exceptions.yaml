@@ -1,5 +1,6 @@
 noNamespace:
   - create-freesewing-pattern
+  - rehype-jargon
   - remark-jargon
   - gatsby-remark-jargon
 customBuild:
@@ -14,6 +15,9 @@ customBuild:
   - remark-jargon
   - plugin-bundle
   - utils
+  - rehype-jargon
+skipTests:
+  - theo
 packageJson:
   bee:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
@@ -90,6 +94,8 @@ packageJson:
     module: '!'
 
   noble:
+    author: woutervdub (https://github.com/woutervdub)
+  octoplushy:
     author: woutervdub (https://github.com/woutervdub)
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)

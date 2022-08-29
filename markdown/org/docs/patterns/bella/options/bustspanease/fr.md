@@ -2,7 +2,7 @@
 title: "Aisance de l'écart poitrine"
 ---
 
----
+***
 
 ![L'effet de l'option d'assouplissement de la poussière sur le patron](sample.png)
 

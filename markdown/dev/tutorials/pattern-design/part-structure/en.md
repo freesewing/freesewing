@@ -4,11 +4,11 @@ order: 150
 ---
 
 Let's get rid of the example box first.
-Open `src/bib.js` and make sure it looks like this:
+Open `design/src/bib.js` and make sure it looks like this:
 
 ```js
 export default function(part) {
-  let { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
+  const { Point, points, Path, paths, complete, sa, paperless } = part.shorthand()
   // Design pattern here
 
   // Complete?
@@ -84,7 +84,7 @@ For now, we only need these so that the pattern skeleton compiles properly.
 <Note>
 
 This will all become clear, but if you're curious, the API docs have all the details
-on [the Part.shorthand() method](/reference/api/part/#shorthand).
+on [the Part.shorthand() method](/reference/api/part/shorthand).
 
 </Note>
 

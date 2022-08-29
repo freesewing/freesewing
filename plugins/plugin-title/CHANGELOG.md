@@ -1,6 +1,13 @@
 # Change log for: @freesewing/plugin-title
 
 
+## 2.22.0 (2022-08-23)
+
+### Added
+
+ - Added support for removing the title via a macro call
+ - Added a render timestamp to the title
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

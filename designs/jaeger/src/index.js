@@ -1,6 +1,6 @@
 import freesewing from '@freesewing/core'
 import plugins from '@freesewing/plugin-bundle'
-import buttons from '@freesewing/plugin-buttons'
+import plugin from '@freesewing/plugin-bust' // Note: conditional plugin
 import Bent from '@freesewing/bent'
 import config from '../config'
 // Parts
@@ -21,8 +21,20 @@ import draftInnerPocketBag from './innerpocketbag'
 import draftTopSleeve from './topsleeve'
 import draftUnderSleeve from './undersleeve'
 
-// Create new design
-const Jaeger = new freesewing.Design(config, [plugins, buttons])
+/* Check to see whether we should load the bust plugin
+ * Only of the `draftForHighBust` options is set
+ * AND the highBust measurement is available
+ */
+const condition = (settings = false) =>
+  settings &&
+  settings.options &&
+  settings.options.draftForHighBust &&
+  settings.measurements.highBust
+    ? true
+    : false
+
+// Create design
+const Jaeger = new freesewing.Design(config, plugins, { plugin, condition })
 
 // Attach draft methods from Bent to prototype
 Jaeger.prototype.draftBentBase = function (part) {

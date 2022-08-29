@@ -9,7 +9,7 @@ export default {
   type: 'pattern',
   difficulty: 3,
   optionGroups: {
-    fit: ['bicepsEase', 'chestEase', 'cuffEase', 'hipsEase', 'ribbingStretch'],
+    fit: ['bicepsEase', 'chestEase', 'cuffEase', 'hipsEase', 'ribbingStretch', 'draftForHighBust'],
     style: ['lengthBonus', 'sleeveLengthBonus', 'ribbingHeight'],
     advanced: ['acrossBackFactor', 'backNeckCutout'],
   },
@@ -26,6 +26,7 @@ export default {
     'shoulderToWrist',
     'wrist',
   ],
+  optionalMeasurements: [ 'highBust' ],
   parts: ['waistband', 'cuff'],
   dependencies: {
     frontBase: 'base',
@@ -95,5 +96,8 @@ export default {
     sleeveLengthBonus: { pct: 2, min: 0, max: 10 },
     ribbingStretch: { pct: 5, min: 0, max: 10 },
     ribbingHeight: { pct: 10, min: 4, max: 20 },
+
+    // draft for high bust
+    draftForHighBust: { bool: false },
   },
 }

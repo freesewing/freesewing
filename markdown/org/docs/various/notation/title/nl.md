@@ -2,7 +2,7 @@
 title: Titels
 ---
 
-Elk patroondeel heeft een titel dat je het nummer en de naam van het deel geeft, en de naam van het patroon:
+Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name and a timestamp of when the pattern was drafted:
 
 <Legend part="title">
 

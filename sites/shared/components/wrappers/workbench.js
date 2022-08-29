@@ -11,18 +11,20 @@ import Modal from 'shared/components/modal'
 import Measurements from 'shared/components/workbench/measurements/index.js'
 import LabDraft from 'shared/components/workbench/draft/index.js'
 import LabSample from 'shared/components/workbench/sample.js'
-import ExportDraft from 'shared/components/workbench/export.js'
+import ExportDraft from 'shared/components/workbench/exporting/index.js'
 import GistAsJson from 'shared/components/workbench/json.js'
 import GistAsYaml from 'shared/components/workbench/yaml.js'
 import DraftEvents from 'shared/components/workbench/events.js'
 import CutLayout from 'shared/components/workbench/layout/cut'
-import PrintLayout from 'shared/components/workbench/layout/print'
+import PrintingLayout from 'shared/components/workbench/layout/print'
+
+import ErrorBoundary from 'shared/components/error/error-boundary';
 
 const views = {
   measurements: Measurements,
   draft: LabDraft,
   test: LabSample,
-  printingLayout: PrintLayout,
+  printingLayout: PrintingLayout,
   cuttingLayout: CutLayout,
   export: ExportDraft,
   events: DraftEvents,
@@ -32,11 +34,19 @@ const views = {
 }
 
 const hasRequiredMeasurementsMethod = (design, gist) => {
+  if (design.config.measurements.length && !gist.measurements) return false
+
   for (const m of design.config.measurements || []) {
-    if (!gist?.measurements?.[m]) return false
+    if (!gist.measurements[m]) return false
   }
 
   return true
+}
+
+const doPreload = async (preload, from, design, gist, setGist, setPreloaded) => {
+  const g = await preloaders[from](preload, design)
+  setPreloaded(preload)
+  setGist({ ...gist, ...g.settings })
 }
 
 /*
@@ -47,9 +57,11 @@ const hasRequiredMeasurementsMethod = (design, gist) => {
 const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false }) => {
 
   // State for gist
-  const {gist, setGist, unsetGist, updateGist, gistReady} = useGist(design, app);
+  const {gist, setGist, unsetGist, updateGist, gistReady, undoGist, resetGist} = useGist(design, app);
   const [messages, setMessages] = useState([])
   const [popup, setPopup] = useState(false)
+  const [preloaded, setPreloaded] = useState(false)
+
 
   // We'll use this in more than one location
   const hasRequiredMeasurements = hasRequiredMeasurementsMethod(design, gist)
@@ -65,18 +77,20 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   // If we need to preload the gist, do so
   useEffect(() => {
-    const doPreload = async () => {
-      if (preload && from && preloaders[from]) {
-        const g = await preloaders[from](preload, design)
-        setGist({...gist, ...g.settings})
-      }
+    if (
+      preload &&
+      preload !== preloaded &&
+      from &&
+      preloaders[from]
+    ) {
+        doPreload(preload, from, design, gist, setGist, setPreloaded)
     }
-    doPreload();
-  }, [preload, from, gist])
+  }, [preload, preloaded, from, design])
+
 
   // Helper methods to manage the gist state
-  const updateWBGist = useMemo(() => (path, value, closeNav=false) => {
-    updateGist(path, value)
+  const updateWBGist = useMemo(() => (path, value, closeNav=false, addToHistory=true) => {
+    updateGist(path, value, addToHistory)
     // Force close of menu on mobile if it is open
     if (closeNav && app.primaryMenu) app.setPrimaryMenu(false)
   }, [app])
@@ -93,13 +107,23 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     clear: () => setMessages([]),
   }
 
-  // Generate the draft here so we can pass it down
+  // don't do anything until the gist is ready
+  if (!gistReady) {return null}
+
+  // Generate the draft here so we can pass it down to both the view and the options menu
   let draft = false
-  if (['draft', 'events', 'test'].indexOf(gist._state?.view) !== -1) {
-    draft = new design(gist)
+  if (['draft', 'events', 'test', 'printingLayout'].indexOf(gist._state?.view) !== -1) {
+    // get the appropriate layout for the view
+    const layout = gist.layouts?.[gist._state.view] || gist.layout || true
+    // hand it separately to the design
+    draft = new design({...gist, layout})
+
+    // add theme to svg renderer
     if (gist.renderer === 'svg') draft.use(theme)
+
+    // draft it for draft and event views. Other views may add plugins, etc and we don't want to draft twice
     try {
-      if (gist._state.view !== 'test') draft.draft()
+      if (['draft', 'events'].indexOf(gist._state.view) > -1) draft.draft()
     }
     catch(error) {
       console.log('Failed to draft design', error)
@@ -130,6 +154,12 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
     showInfo: setPopup,
   }
 
+  const errorProps = {
+    undoGist,
+    resetGist,
+    gist
+  }
+
   // Layout to use
   const LayoutComponent = layout
     ? layout
@@ -141,8 +171,10 @@ const WorkbenchWrapper = ({ app, design, preload=false, from=false, layout=false
 
   return  <LayoutComponent {...layoutProps}>
             {messages}
-            <Component {...componentProps} />
-            {popup && <Modal cancel={() => setPopup(false)}>{popup}</Modal>}
+            <ErrorBoundary {...errorProps}>
+              <Component {...componentProps} />
+              {popup && <Modal cancel={() => setPopup(false)}>{popup}</Modal>}
+            </ErrorBoundary>
           </LayoutComponent>
 }
 

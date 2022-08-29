@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="2.21.0-rc.2" freesewing:plugin-banner="2.21.0-rc.2" freesewing:plugin-bartack="2.21.0-rc.2" freesewing:plugin-buttons="2.21.0-rc.2" freesewing:plugin-cutonfold="2.21.0-rc.2" freesewing:plugin-dimension="2.21.0-rc.2" freesewing:plugin-grainline="2.21.0-rc.2" freesewing:plugin-logo="2.21.0-rc.2" freesewing:plugin-mirror="2.21.0-rc.2" freesewing:plugin-notches="2.21.0-rc.2" freesewing:plugin-title="2.21.0-rc.2" freesewing:plugin-scalebox="2.21.0-rc.2" freesewing:plugin-round="2.21.0-rc.2" freesewing:plugin-sprinkle="2.21.0-rc.2" freesewing:plugin-measurements="2.21.0-rc.2" class="freesewing" freesewing:plugin-theme="2.21.0-rc.2" width="748.46mm" height="1937.65mm" viewBox="0 0 748.4609227379789 1937.648553353428"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="2.21.3" freesewing:plugin-banner="2.21.3" freesewing:plugin-bartack="2.21.3" freesewing:plugin-buttons="2.21.3" freesewing:plugin-cutonfold="2.21.3" freesewing:plugin-dimension="2.21.3" freesewing:plugin-grainline="2.21.3" freesewing:plugin-logo="2.21.3" freesewing:plugin-mirror="2.21.3" freesewing:plugin-notches="2.21.3" freesewing:plugin-title="2.21.3" freesewing:plugin-scalebox="2.21.3" freesewing:plugin-round="2.21.3" freesewing:plugin-sprinkle="2.21.3" freesewing:plugin-measurements="2.21.3" class="freesewing" freesewing:plugin-theme="2.21.3" width="748.46mm" height="1937.65mm" viewBox="0 0 748.4609227379789 1937.648553353428"
 >
 <style type="text/css"> <![CDATA[ 
-text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baseline:reset-size}text.title-name{font-size:7pt;font-weight:500;text-anchor:middle;dominant-baseline:reset-size}text.title-pattern{font-size:4pt;font-weight:500;dominant-baseline:reset-size;text-anchor:middle;font-style:italic}
+
+text.title-nr {
+  font-size: 24pt;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: reset-size;
+}
+text.title-name {
+      font-size: 7pt;
+      font-weight: 500;
+      text-anchor: middle;
+      dominant-baseline: reset-size;
+}
+text.title-pattern {
+      font-size: 4pt;
+      font-weight: 500;
+      dominant-baseline: reset-size;
+      text-anchor: middle;
+      font-style: italic;
+}
+
   /* Sample classes */
   svg.freesewing path.sample {
     stroke-width: 0.75
@@ -437,8 +457,8 @@ text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baselin
 </g>
 <!-- end of group #fs-part-backPocketInterfacing -->
 
-<!-- Start of group #fs-part-backPocketJet -->
-<g id="fs-part-backPocketJet"  transform="translate(80.8702623201328, -4.009162843438669) translate(570.7776918213822, 1512.2375375576794)">
+<!-- Start of group #fs-part-backPocketWelt -->
+<g id="fs-part-backPocketWelt"  transform="translate(80.8702623201328, -4.009162843438669) translate(570.7776918213822, 1512.2375375576794)">
 <path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-101" d="M -78.87,6.01 L -78.87,37.56 L 78.87,37.56 L 78.87,6.01 L -78.87,6.01 z" />
 <path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-102" d="M -78.15,6.01 L -78.15,37.27 L 78.15,37.27 L 78.15,6.01 L -78.15,6.01 z" />
 <path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-103" d="M -77.42,6.01 L -77.42,36.98 L 77.42,36.98 L 77.42,6.01 L -77.42,6.01 z" />
@@ -450,7 +470,7 @@ text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baselin
 <path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-109" d="M -72.85,6.01 L -72.85,35.15 L 72.85,35.15 L 72.85,6.01 L -72.85,6.01 z" />
 <path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-110" d="M -72.06,6.01 L -72.06,34.83 L 72.06,34.83 L 72.06,6.01 L -72.06,6.01 z" />
 </g>
-<!-- end of group #fs-part-backPocketJet -->
+<!-- end of group #fs-part-backPocketWelt -->
 
 <!-- Start of group #fs-part-flyFacing -->
 <g id="fs-part-flyFacing"  transform="translate(-188.90296084342924, -137.29724876282708) translate(570.7776918213822, 569.4959037406846)">

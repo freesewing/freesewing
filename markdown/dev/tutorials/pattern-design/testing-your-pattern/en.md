@@ -18,14 +18,20 @@ for different measurements and options to see how well it adapts.
 </Tip>
 
 If testing your pattern sounds like a lot of work, you're in luck. FreeSewing can do it
-for you. Click the **Test your pattern** button in the top navigation bar of your
-development environment, and you'll see a number of choices on the right:
+for you. Click the **Test Design** link in the sidebar under the **View** title.
 
-- Test pattern options
+<Fixme>
+The new development environment does not yet support all tests.
+Update these docs when that's completed
+</Fixme>
+
+You have a number of ways to test your pattern:
+
+- Test design options
 - Test measurements
 - Test models
 
-The [API docs on sampling](/reference/api/pattern/#sample) have all the details on how this works, but
+The [API docs on sampling](/reference/api/pattern/sample) have all the details on how this works, but
 for now we'll just look at the end result of each of these.
 
 ## Testing pattern options
@@ -40,7 +46,7 @@ Click on any of the options we've added to our pattern, and your bib will be dra
 The `lengthRatio` option controls the length of our bib. Testing it confirms that it only influences the length:
 
 <Example sample part="bib" pattern="tutorial" settings={{ sample: { type: "option", option: "lengthRatio" } }}>
-Your bib with the lengthRatio option sampled 
+Your bib with the lengthRatio option sampled
 </Example>
 
 ### neckRatio
@@ -53,7 +59,7 @@ Testing it confirms this. We can also see that as the neck opening gets smaller,
 further out of the way to avoid overlap:
 
 <Example sample part="bib" pattern="tutorial" settings={{ sample: { type: "option", option: "neckRatio" } }} >
-Your bib with the neckRatio option sampled 
+Your bib with the neckRatio option sampled
 </Example>
 
 ### widthRatio
@@ -76,7 +82,7 @@ covered in this tutorial. It is left _as an exercise to the reader_.
 </Note>
 
 <Example sample part="bib" pattern="tutorial" settings={{ sample: { type: "option", option: "widthRatio" } }}>
-Your bib with the widthRatio option sampled 
+Your bib with the widthRatio option sampled
 </Example>
 
 ## Testing measurements
@@ -87,7 +93,7 @@ This gives you the option to determine how any given measurement is influencing 
 For our bib, we only use one measurement, so it influences the entire pattern:
 
 <Example sample part="bib" pattern="tutorial" settings={{ sample: { type: "measurement", measurement: "head" } }}>
-Your bib with the head circumference measurement sampled 
+Your bib with the head circumference measurement sampled
 </Example>
 
 ## Testing models
@@ -103,7 +109,7 @@ But most patterns use multiple measurements, and you'll find this test gives you
 pattern will adapt to differently sized bodies.
 
 <Example sample pattern="tutorial" part="bib" settings={{ sample: { type: "models", models: { baby1: { head: 340 }, baby2: { head: 350 }, baby3: { head: 360 }, baby4: { head: 370 }, baby5: { head: 380 }, baby6: { head: 390 }, baby7: { head: 400 }, baby8: { head: 410 }, baby9: { head: 420 } } } }}>
-Your bib sampled for a range of baby sizes 
+Your bib sampled for a range of baby sizes
 </Example>
 
 ## The antperson test
@@ -123,7 +129,7 @@ don't scale, and you should avoid them.
 The best patterns will pass the antperson test with 2 patterns exactly the same, where one will simply be 1/10th the scale of the other.
 
 <Example sample pattern="tutorial" part="bib" settings={{ sample: { type: "models", models: { ant: { head: 39 }, man: { head: 390 }, } } }}>
-Congratulations, your bib passes the antperson test 
+Congratulations, your bib passes the antperson test
 </Example>
 
 When you're happy with how your pattern passes these tests, it's time to complete it.

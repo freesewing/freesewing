@@ -5,6 +5,7 @@
 const parts = {
   "back": "Back",
   "backBase": "Back base",
+  "backPocketWelt": "Back pocket welt",
   "base": "Base",
   "bentBack": "Bent back",
   "bentBase": "Bent base",

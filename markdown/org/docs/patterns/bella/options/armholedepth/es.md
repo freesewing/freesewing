@@ -2,7 +2,7 @@
 title: "Profundidad del orificio"
 ---
 
----
+***
 
 ![El efecto de la opción de profundidad del orificio sobre el patrón](sample.png)
 

@@ -17,6 +17,12 @@ It will add the following measurements:
 - `waistFrontArc` (if both `waist` and `waistBack` are provided)
 - `crossSeamBack` (if both `crossSeam` and `crossSeamFront` are available)
 
+<Tip>
+
+The measurements plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+</Tip>
+
 ## Installation
 
 ```sh

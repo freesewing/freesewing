@@ -4,7 +4,7 @@ title: Compromiso de ingresos de la costura libre
 
 La promesa de ingresos **FreeSewing** afirma que:
 
-> ## Todos los ingresos de FreeSewing serán donados a [médicos sin fronteras (MSF)](http://www.msf.org/)
+> ## Todos los ingresos de FreeSewing serán donados a [Médicos Sin Fronteras (MSF)](http://www.msf.org/)
 
 La promesa es hecha y ejecutada por el mantenedor de FreeSewing (joost). Puedes leer acerca de [sus motivaciones para hacerlo en esta página](/docs/various/pledge/motivation/).
 
@@ -22,37 +22,37 @@ La promesa es hecha y ejecutada por el mantenedor de FreeSewing (joost). Puedes 
     <tr>
       <td>2015</td>
       <td>`256,65`</td>
-      <td>Euro</td>
+      <td>Euros</td>
     </tr>
     <tr>
       <td>2016</td>
       <td>`473,50`</td>
-      <td>Euro</td>
+      <td>Euros</td>
     </tr>
     <tr>
       <td>2017</td>
       <td>`673,14`</td>
-      <td>Euro</td>
+      <td>Euros</td>
     </tr>
     <tr>
       <td>2018</td>
       <td>`3.162,14`</td>
-      <td>Euro</td>
+      <td>Euros</td>
     </tr>
     <tr>
       <td>2019</td>
       <td>`4.109,38`</td>
-      <td>Euro</td>
+      <td>Euros</td>
     </tr>
     <tr>
       <td>2020</td>
       <td>`10.736,82`</td>
-      <td>Euro</td>
+      <td>Euros</td>
     </tr>
     <tr>
       <td>2021</td>
       <td>`10.070,77`</td>
-      <td>Euro</td>
+      <td>Euros</td>
     </tr>
     <tr>
       <td>**Total**</td>

@@ -33,3 +33,12 @@ Since this is typically used on corners, the generated cut-on-fold indicator
 will not go all the way to the `to` and `from` points.
 
 </Note>
+
+## Removing the cut on fold indicator
+
+If you inherit a part with a cut on fold indicator and you'd like to remove it,
+you can do so by passing `false` to the macro:
+
+```js
+macro('cutonfold', false)
+```

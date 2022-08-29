@@ -4,7 +4,7 @@ title: "@freesewing/plugin-title"
 
 The **@freesewing/plugin-title** plugin provides [the
 title macro](/reference/api/macros/title/) which facilitates adding part titles
-to your desings.
+to your designs.
 
 <Example part="plugin_title">An example of the title macro</Example>
 

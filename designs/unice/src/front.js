@@ -202,24 +202,25 @@ export default function (part) {
 
   /* Store lengths for use in elastic */
 
-  store.set(
-    'frontLegOpeningLength',
-    new Path()
+  paths.frontLegOpening = new Path()
       .move(points.frontGussetRight)
       .curve(
         points.frontGussetRightCp1,
         points.frontLegOpeningRightCp1,
         points.frontLegOpeningRight
       )
-      .length()
-  )
-  store.set(
-    'frontWaistBandLength',
-    new Path()
+      .setRender(false)
+  store.set('frontLegOpeningLength',paths.frontLegOpening.length())
+  
+  paths.frontWaistBand = new Path()
       .move(points.frontWaistBandRight)
-      .curve(points.frontWaistBandRightCp1, points.frontWaistBandLeftCp1, points.frontWaistBandLeft)
-      .length()
-  )
+      .curve(
+        points.frontWaistBandRightCp1,
+        points.frontWaistBandLeftCp1,
+        points.frontWaistBandLeft
+      )
+      .setRender(false)
+  store.set('frontWaistBandLength',paths.frontWaistBand.length())
 
   // Complete?
   if (complete) {

@@ -49,38 +49,13 @@ import { getProps, angle } from '../../draft/utils'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'
 import { useRef, useState, useEffect} from 'react'
+import Buttons from './buttons'
 
-/** buttons for manipulating the part */
-const Buttons = ({ transform, flip, rotate, setRotate, resetPart }) => {
-  const letter = 'F'
-  const style = { style: {fill: 'white', fontSize: 18, fontWeight: 'bold', textAnchor: 'middle'} }
-
-  return (
-    <g transform={transform}>
-      {rotate
-        ? <circle cx="0" cy="0" r="50" className='stroke-2xl muted' />
-        : <path d="M -50, 0 l 100,0 M 0,-50 l 0,100" className="stroke-2xl muted" />
-      }
-      <g className="svg-layout-button" onClick={resetPart}>
-        <rect x="-10" y="-10" width="20" height="20" />
-        <text x="0" y="10" {...style}>{letter}</text>
-      </g>
-      <g className="svg-layout-button" onClick={() => flip('y')}>
-        <rect x="10" y="-10" width="20" height="20" className="button" />
-        <text x="20" y="10" {...style} transform="scale(1,-1)">{letter}</text>
-      </g>
-      <g className="svg-layout-button" onClick={() => flip('x')}>
-        <rect x="-30" y="-10" width="20" height="20" className="button" />
-        <text x="20" y="10" {...style} transform="scale(-1,1)">{letter}</text>
-      </g>
-    </g>
-  )
-}
 
 const Part = props => {
-  const { layout, name, part} = props
+  const { layout, part, partName} = props
 
-  const partLayout = layout.parts?.[name]
+  const partLayout = layout.parts?.[partName]
 
   // Don't just assume this makes sense
   if (typeof partLayout?.move?.x === 'undefined') return null
@@ -88,19 +63,25 @@ const Part = props => {
   // Use a ref for direct DOM manipulation
   const partRef = useRef(null)
   const centerRef = useRef(null)
+  const innerRef = useRef(null)
 
   // State variable to switch between moving or rotating the part
   const [rotate, setRotate] = useState(false)
 
   // update the layout on mount
   useEffect(() => {
-    if (partRef.current) updateLayout()
-  }, [partRef])
+    // only update if there's a rendered part and it's not the pages or fabric part
+    if (partRef.current && !props.isLayoutPart) {
+      updateLayout(false)
+    }
+  }, [partRef, partLayout])
 
   // Initialize drag handler
   useEffect(() => {
+    // don't drag the pages
+    if (props.isLayoutPart) return
     handleDrag(select(partRef.current))
-  }, [rotate, layout])
+  }, [rotate, partRef, partLayout])
 
   // These are kept as vars because re-rendering on drag would kill performance
   // Managing the difference between re-render and direct DOM updates makes this
@@ -120,6 +101,17 @@ const Part = props => {
   /** get the delta rotation from the start of the drag event to now */
   const getRotation = (event) => angle(center, event.subject) - angle(center, { x:event.x, y: event.y });
 
+  const setTransforms = () => {
+    // get the transform attributes
+    const transforms = generatePartTransform(translateX, translateY, rotation, flipX, flipY, part);
+
+    const me = select(partRef.current);
+    for (var t in transforms) {
+      me.attr(t, transforms[t])
+    }
+  }
+
+  let didDrag = false;
   const handleDrag = drag()
     // subject allows us to save data from the start of the event to use throughout event handing
     .subject(function(event) {
@@ -130,8 +122,14 @@ const Part = props => {
       {x: translateX, y: translateY}
     })
     .on('drag', function(event) {
+      if (!event.dx && !event.dy) return
+
       if (rotate) {
         let newRotation = getRotation(event);
+        // shift key to snap the rotation
+        if (event.sourceEvent.shiftKey) {
+          newRotation = Math.ceil(newRotation/15) * 15
+        }
         // reverse the rotation direction one time per flip. if we're flipped both directions, rotation will be positive again
         if (flipX) newRotation *= -1
         if (flipY) newRotation *= -1
@@ -143,83 +141,116 @@ const Part = props => {
         translateY = event.y
       }
 
-      // get the transform attributes
-      const transforms = generatePartTransform(translateX, translateY, rotation, flipX, flipY, part);
-
-      const me = select(this);
-      for (var t in transforms) {
-        me.attr(t, transforms[t])
-      }
+      // a drag happened, so we should update the layout when we're done
+      didDrag = true;
+      setTransforms()
     })
     .on('end', function(event) {
-      // save to gist
-      updateLayout()
+      // save to gist if anything actually changed
+      if (didDrag) updateLayout()
+
+      didDrag = false
     })
 
-  const resetPart = () => {
+  /** reset the part's transforms */
+  const resetPart = (event) => {
     rotation = 0
     flipX = 0
     flipY = 0
     updateLayout()
   }
+
+  /** toggle between dragging and rotating */
   const toggleDragRotate = () => {
-    updateLayout()
+    // only respond if the part should be able to drag/rotate
+    if (!partRef.current || props.isLayoutPart) {return}
+
     setRotate(!rotate)
   }
-  const updateLayout = () => {
-    const partRect = partRef.current.getBoundingClientRect();
-    const matrix = partRef.current.ownerSVGElement.getScreenCTM().inverse();
 
-    const domToSvg = (point) => DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
+  /** update the layout either locally or in the gist */
+  const updateLayout = (history=true) => {
+    /** don't mess with what we don't lay out */
+    if (!partRef.current || props.isLayoutPart) return
+
+    // set the transforms on the part in order to calculate from the latest position
+    setTransforms()
+
+    // get the bounding box and the svg's current transform matrix
+    const partRect = innerRef.current.getBoundingClientRect();
+    const matrix = innerRef.current.ownerSVGElement.getScreenCTM().inverse();
+
+    // a function to convert dom space to svg space
+    const domToSvg = (point) => {
+      const {x, y} = DOMPointReadOnly.fromPoint(point).matrixTransform(matrix)
+      return {x, y}
+    }
 
     // include the new top left and bottom right to ease calculating the pattern width and height
     const tl = domToSvg({x: partRect.left, y: partRect.top});
-    const br = domToSvg({x: partRect.right, y: partRect.bottom});
+    const br = domToSvg({x: partRect.right, y: props.isLayoutPart ? 0 : partRect.bottom});
 
-    props.updateLayout(name, {
+    // update it on the draft component
+    props.updateLayout(partName, {
       move: {
         x: translateX,
         y: translateY,
       },
-      rotate: rotation,
+      rotate: rotation % 360,
       flipX,
       flipY,
       tl,
       br
-    })
+    }, history)
   }
 
-  // Method to flip (mirror) the part along the X or Y axis
+  /** Method to flip (mirror) the part along the X or Y axis */
   const flip = axis => {
     if (axis === 'x') flipX = !flipX
     else flipY = !flipY
     updateLayout()
   }
 
+  /** method to rotate 90 degrees */
+  const rotate90 = (direction = 1) => {
+    if (flipX) direction *= -1
+    if (flipY) direction *= -1
+
+    rotation += 90 * direction
+
+    updateLayout()
+  }
+
+  // don't render if the part is empty
+  if (Object.keys(part.snippets).length === 0 && Object.keys(part.paths).length === 0) return null;
+
   return (
     <g
+      id={`part-${partName}`}
+      ref={partRef}
       {...getProps(part)}
-      id={`part-${name}`}
-      ref={props.name === 'pages' ? null : partRef}
-      onClick={toggleDragRotate}
-      transform-origin={`${center.x} ${center.y}`}
     >
-      {PartInner(props)}
-      {props.name !== 'pages' && <>
+      <PartInner {...props} ref={innerRef}/>
+      {!props.isLayoutPart && <>
       <text x={center.x} y={center.y} ref={centerRef} />
       <rect
+        ref={partRef}
         x={part.topLeft.x}
         y={part.topLeft.y}
         width={part.width}
         height={part.height}
         className={`layout-rect ${rotate ? 'rotate' : 'move'}`}
+        id={`${partName}-layout-rect`}
+        onClick={toggleDragRotate}
       />
       <Buttons
-        transform={`translate(${part.topLeft.x + part.width/2}, ${part.topLeft.y + part.height/2})`}
+        transform={`translate(${center.x}, ${center.y}) rotate(${-rotation}) scale(${flipX ? -1 : 1},${flipY ? -1 : 1})`}
         flip={flip}
         rotate={rotate}
         setRotate={setRotate}
         resetPart={resetPart}
+        rotate90={rotate90}
+        partName={partName}
        />
       </>}
     </g>

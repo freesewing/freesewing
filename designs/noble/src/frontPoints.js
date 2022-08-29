@@ -1,18 +1,10 @@
 export default function (part) {
-  let {
-    utils,
-    store,
-    sa,
-    Point,
+  const {
     points,
     Path,
     paths,
-    Snippet,
     snippets,
     options,
-    measurements,
-    complete,
-    paperless,
     macro,
   } = part.shorthand()
 
@@ -21,27 +13,10 @@ export default function (part) {
   // Hide Bella paths
   for (let key of Object.keys(paths)) paths[key].render = false
   for (let i in snippets) delete snippets[i]
-  
-  //removing macros not required from Bella
-  delete points.titleAnchor
-  delete points.__titleNr
-  delete points.__titleName
-  delete points.__titlePattern
-  delete points.scaleboxAnchor
-  delete points.__scaleboxImperialBottomLeft
-  delete points.__scaleboxMetricBottomLeft
-  delete points.__scaleboxImperialTopLeft
-  delete points.__scaleboxMetricTopLeft
-  delete points.__scaleboxImperialTopRight
-  delete points.__scaleboxMetricTopRight
-  delete points.__scaleboxImperialBottomRight
-  delete points.__scaleboxMetricBottomRight
-  delete points.__scaleboxLead
-  delete points.__scaleboxTitle
-  delete points.__scaleboxText
-  delete points.__scaleboxLink
-  delete points.__scaleboxImperial
-  delete points.__scaleboxMetric
+
+  // Remove macros from Bella
+  macro('title', false)
+  macro('scalebox', false)
 
   points.shoulderDartInside = points.hps.shiftFractionTowards(
     points.shoulder,
@@ -244,7 +219,6 @@ export default function (part) {
     .rotate(-2.5, points.shoulderDartOutside)
     .shiftFractionTowards(points.shoulderDartOutside, 0.2)
 
-  let lInside = shoulderInsideSeam.length()
   let iteration = 1
   let diff = 0
   do {
@@ -298,7 +272,7 @@ export default function (part) {
     points.waistDartRight,
     -1 * bCircle * points.armholeDartOutside.dist(points.armholeDartTip)
   )
-  
+
   diff = 0
   iteration = 0
   do {
@@ -325,7 +299,7 @@ export default function (part) {
       .attr('class', 'lining')
 
       diff = paths.armholeTempCircleOutside.length() - paths.armholeTempCircleInside.length()
-      iteration ++ 
+      iteration ++
   } while( (diff < -1 || diff > 1) && iteration < 200 )
   if (iteration >= 200) {
     raise.error('Something is not quite right here!')

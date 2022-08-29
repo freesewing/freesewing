@@ -1,6 +1,5 @@
 import Text from '../text'
 import Circle from '../circle'
-import { round, formatMm } from 'shared/utils'
 import { Tr, KeyTd, ValTd, Attributes, pointCoords } from '../path/index'
 
 const RevealPoint = props => {

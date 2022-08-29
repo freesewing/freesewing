@@ -129,7 +129,7 @@ Cut out the chest canvas piece. Align it along the roll line, and baste it in pl
 Now baste the front canvas and chest piece to your front. Keep in mind that the canvas has no seam allowance.
 
 > Base it a bit inwards from the seam line so you can fold it away when sewing these seams later.\
-  You don't want your canvas to get caught in the seams.
+    You don't want your canvas to get caught in the seams.
 
 #### Pikeer je revers
 

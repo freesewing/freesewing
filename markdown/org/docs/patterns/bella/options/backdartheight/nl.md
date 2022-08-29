@@ -2,7 +2,7 @@
 title: "Hoogte neep rug"
 ---
 
----
+***
 
 ![Het effect van de optie voor de hoogte achterste neep op het patroon](sample.png)
 

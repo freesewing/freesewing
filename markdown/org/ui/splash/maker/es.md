@@ -3,4 +3,4 @@
 
 ### Para creadores
 
-Todos nuestros patrones de costura están hechos a medida & libre de usar, cortesía de nuestra comunidad
+Todos nuestros patrones de costura están hechos a medida y para usar libremente, cortesía de nuestra comunidad

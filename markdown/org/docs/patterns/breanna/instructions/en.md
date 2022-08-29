@@ -19,7 +19,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 - Close the back darts.
 - Sew the front to the backs at the shoulders _good sides together_.
 - Matching notches, sew the sleeves to the shoulder _good sides together_.
-- Sew the side seams *good sides together*.
+- Sew the side seams _good sides together_.
 
 <Note>
 

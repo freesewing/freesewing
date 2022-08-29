@@ -20,7 +20,7 @@ flexible and let the user decide. All you have to do is add options to your patt
 The first option we're going to add controls the ratio between the neck opening
 and the head circumference. Let's call it `neckRatio`.
 
-Open the config file at `config/index.js` and add this to the options:
+Open the config file at `design/config.js` and add this to the options:
 
 ```js
   options: {
@@ -66,7 +66,7 @@ between their minimum and maximum values. At that time, you can still tweak thes
 
 </Note>
 
-Before you close the `config/index.js` file, make sure to update the `optionGroups` entry as follows:
+Before you close the `design/config.js` file, make sure to update the `optionGroups` entry as follows:
 
 ```js
 optionGroups: {

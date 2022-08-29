@@ -52,3 +52,7 @@ nvm use v10.22.1
 
 If you picked a version that is not installed, `nvm` will simply tell you
 and even suggest the command you should type to install it. Handy!
+
+<Note compact>
+Node 14 is required to use our monorepo [until we upgrade Strapi](https://github.com/freesewing/freesewing/issues/2351).
+</Note>

@@ -54,7 +54,9 @@ const o_bee = {
   "fullChestEaseReduction.t": "Full chest reduction (Bella)",
   "fullChestEaseReduction.d": "Controls the full chest reduction in the underlying Bella block Bee is based on",
   "highBustWidth.t": "Largeur du tour de buste supérieur (Bella)",
-  "highBustWidth.d": "Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee"
+  "highBustWidth.d": "Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee",
+  "shoulderToShoulderEase.t": "Shoulder to Shoulder ease (Bella)",
+  "shoulderToShoulderEase.d": "Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on"
 }
 
 export default o_bee

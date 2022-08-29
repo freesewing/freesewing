@@ -18,7 +18,7 @@ function Part() {
   this.render = true
   this.utils = utils
   this.layout = { move: { x: 0, y: 0 } }
-
+  this.cut = { grain: 90, materials: {} }
   this.Point = Point
   this.Path = Path
   this.Snippet = Snippet
@@ -147,8 +147,6 @@ Part.prototype.inject = function (orig) {
     for (let i in orig.points) {
       if (orig.points[i] === p) return i
     }
-
-    return false
   }
 
   for (let i in orig.points) this.points[i] = orig.points[i].clone()
@@ -196,6 +194,8 @@ Part.prototype.shorthand = function () {
     paperless,
     events: this.context.events,
     raise: this.context.raise,
+    addCut: this.addCut,
+    removeCut: this.removeCut,
   }
 
   if (this.context.settings.debug) {
@@ -357,6 +357,66 @@ Part.prototype.generateTransform = function(transforms) {
   for (var t in generated) {
     this.attr(t, generated[t], true);
   }
+}
+
+/** Chainable way to add the cut info */
+Part.prototype.addCut = function (cut=2, material='fabric', identical=false) {
+  if (cut === false) {
+    if (this.cut.materials[material]) delete this.cut.materials[material]
+    else this.context.raise.warning(`Tried to remove a material that is not set`)
+    return this
+  }
+  if (typeof this.cut.materials[material] === 'undefined') this.cut.materials[material] = {}
+  if (!(Number.isInteger(cut) && cut > -1)) {
+    this.context.raise.error(`Tried to set cut to a value that is not a positive integer`)
+    return this
+  }
+  if (typeof material !== 'string') {
+    this.context.raise.warning(`Tried to set material to a value that is not a string`)
+    return this
+  }
+  this.cut.materials[material].cut = cut
+  this.cut.materials[material].identical = identical
+
+  return this
+}
+
+/** Chainable way to remove (some) cut info */
+Part.prototype.removeCut = function (material=false) {
+  return this.addCut(false, material)
+}
+
+/** Chainable way to add the grain info */
+Part.prototype.setGrain = function (grain=false) {
+  if (grain === false) {
+    this.cut.grain = false
+    return this
+  }
+  if (typeof grain !== 'number') {
+    this.context.raise.error('Called part.setGrain() with a value that is not a number')
+    return this
+  }
+  this.cut.grain = grain
+
+  return this
+}
+
+/** Chainable way to add the cutOnFold info */
+Part.prototype.setCutOnFold = function (p1, p2) {
+  if (p1 === false && typeof p2 === 'undefined') {
+    delete this.cut.cutOnFold
+    return this
+  }
+  if (p1 instanceof Point && p2 instanceof Point) {
+    this.cut.cutOnFold = [p1, p2]
+  }
+  else this.context.raise.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
+
+  return this
+}
+
+Part.prototype.isEmpty = function() {
+  return Object.keys(this.paths).length === 0 && Object.keys(this.snippets).length === 0
 }
 
 export default Part

@@ -1,19 +1,12 @@
 import chai from 'chai'
 import freesewing from '@freesewing/core'
 import plugin from '../dist/index.mjs'
-import style from '../src/lib/style.js'
 
 const expect = chai.expect
 
 describe('Title Plugin Tests', () => {
   const pattern = new freesewing.Pattern().use(plugin)
   pattern.draft().render()
-
-  it("Should import the style", () => {
-    const patternStyle = pattern.svg.style.toString();
-    const pluginStyle = style.default;
-    expect(patternStyle).to.equal(pluginStyle);
-  });
 
   it("Should run the title macro", () => {
     let pattern = new freesewing.Pattern({ name: "testPattern", version: 99 });

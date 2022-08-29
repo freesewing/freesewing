@@ -38,4 +38,10 @@ jobs:
         run: npm run buildall
       - name: Run all tests
         run: npm run testall
-
+      - name: Upload to codecov.io
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./packages/core/coverage/coverage-final.json
+          flags: core
+          name: codecov-core
+          fail_ci_if_error: true

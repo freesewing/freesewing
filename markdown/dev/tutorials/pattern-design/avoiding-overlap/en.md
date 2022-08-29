@@ -11,7 +11,7 @@ The rest of your bib should stay as it is, so let's start by making a list of po
 to rotate:
 
 ```js
-let rotateThese = [
+const rotateThese = [
   "edgeTopLeftCp",
   "edgeTop",
   "tipRight",
@@ -34,7 +34,7 @@ Now you can rotate them. How far? Until the strap no longer overlaps:
 
 ```js
 while (points.tipRightBottomStart.x > -1) {
-  for (let p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
+  for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
 }
 ```
 

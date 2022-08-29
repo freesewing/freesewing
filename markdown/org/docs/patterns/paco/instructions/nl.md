@@ -38,6 +38,8 @@ je nog nooit paspelzakken hebt gemaakt, ben je in orde.
 
 </Tip>
 
+<!--- One tricky bit, this documentation is for double welts, but this is I think a single welt?
+Does it need a note to that effect? --->
 
 ## Stap 2: Maak de voorzakken
 

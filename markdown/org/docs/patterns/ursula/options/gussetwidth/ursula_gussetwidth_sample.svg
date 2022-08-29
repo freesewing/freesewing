@@ -1,8 +1,225 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
- xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="2.21.0-rc.2" freesewing:plugin-banner="2.21.0-rc.2" freesewing:plugin-bartack="2.21.0-rc.2" freesewing:plugin-buttons="2.21.0-rc.2" freesewing:plugin-cutonfold="2.21.0-rc.2" freesewing:plugin-dimension="2.21.0-rc.2" freesewing:plugin-grainline="2.21.0-rc.2" freesewing:plugin-logo="2.21.0-rc.2" freesewing:plugin-mirror="2.21.0-rc.2" freesewing:plugin-notches="2.21.0-rc.2" freesewing:plugin-title="2.21.0-rc.2" freesewing:plugin-scalebox="2.21.0-rc.2" freesewing:plugin-round="2.21.0-rc.2" freesewing:plugin-sprinkle="2.21.0-rc.2" freesewing:plugin-measurements="2.21.0-rc.2" width="598.69mm" height="337.9mm" viewBox="0 0 598.6903670242801 337.8999999999999"
+ xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" xmlns:freesewing="http://freesewing.org/namespaces/freesewing" freesewing="2.21.3" freesewing:plugin-banner="2.21.3" freesewing:plugin-bartack="2.21.3" freesewing:plugin-buttons="2.21.3" freesewing:plugin-cutonfold="2.21.3" freesewing:plugin-dimension="2.21.3" freesewing:plugin-grainline="2.21.3" freesewing:plugin-logo="2.21.3" freesewing:plugin-mirror="2.21.3" freesewing:plugin-notches="2.21.3" freesewing:plugin-title="2.21.3" freesewing:plugin-scalebox="2.21.3" freesewing:plugin-round="2.21.3" freesewing:plugin-sprinkle="2.21.3" freesewing:plugin-measurements="2.21.3" class="freesewing" freesewing:plugin-theme="2.21.3" width="598.69mm" height="337.9mm" viewBox="0 0 598.6903670242801 337.8999999999999"
 >
 <style type="text/css"> <![CDATA[ 
-text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baseline:reset-size}text.title-name{font-size:7pt;font-weight:500;text-anchor:middle;dominant-baseline:reset-size}text.title-pattern{font-size:4pt;font-weight:500;dominant-baseline:reset-size;text-anchor:middle;font-style:italic}
+
+text.title-nr {
+  font-size: 24pt;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: reset-size;
+}
+text.title-name {
+      font-size: 7pt;
+      font-weight: 500;
+      text-anchor: middle;
+      dominant-baseline: reset-size;
+}
+text.title-pattern {
+      font-size: 4pt;
+      font-weight: 500;
+      dominant-baseline: reset-size;
+      text-anchor: middle;
+      font-style: italic;
+}
+
+  /* Sample classes */
+  svg.freesewing path.sample {
+    stroke-width: 0.75
+  }
+  svg.freesewing path.sample-focus {
+    stroke-width: 1.5; fill: rgba(0,0,0,0.1)
+  }
+
+  /* Paperless grid */
+  svg.freesewing path.grid {
+    fill: none;
+    stroke: #555;
+    stroke-width: 0.3;
+  }
+  svg.freesewing path.gridline {
+    stroke: #555;
+    stroke-width: 0.2;
+  }
+  svg.freesewing path.gridline-lg {
+    stroke: #777;
+    stroke-width: 0.2;
+    stroke-dasharray: 1.5,1.5;
+  }
+  svg.freesewing path.gridline-sm {
+    stroke: #999;
+    stroke-width: 0.1;
+  }
+  svg.freesewing path.gridline-xs {
+    stroke: #999;
+    stroke-width: 0.1;
+    stroke-dasharray: 0.5,0.5;
+  }
+  svg.freesewing path.gridbox {
+    fill: url(#grid);
+  }
+
+  /* Reset */
+  svg.freesewing path,
+  svg.freesewing circle,
+  svg.freesewing rect {
+    fill: none;
+    stroke: none;
+  }
+
+  /* Defaults */
+  svg.freesewing path,
+  svg.freesewing circle {
+    stroke: #000;
+    stroke-opacity: 1;
+    stroke-width: 0.3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Stroke classes */
+  svg.freesewing .fabric {
+    stroke-width: 0.6;
+    stroke: #212121;
+  }
+  svg.freesewing .lining {
+    stroke-width: 0.6;
+    stroke: #ff5b77;
+  }
+  svg.freesewing .interfacing {
+    stroke-width: 0.6;
+    stroke: #64b5f6;
+  }
+  svg.freesewing .canvas {
+    stroke-width: 0.6;
+    stroke: #ff9000;
+  }
+  svg.freesewing .various {
+    stroke-width: 0.6;
+    stroke: #4caf50;
+  }
+  svg.freesewing .note {
+    stroke-width: 0.4;
+    stroke: #dd60dd;
+  }
+  svg.freesewing .mark {
+    stroke-width: 0.4;
+    stroke: blue;
+  }
+  svg.freesewing .contrast {
+    stroke-width: 0.8;
+    stroke: red;
+  }
+  svg.freesewing .stroke-xs {
+    stroke-width: 0.1;
+  }
+  svg.freesewing .stroke-sm {
+    stroke-width: 0.2;
+  }
+  svg.freesewing .stroke-lg {
+    stroke-width: 0.6;
+  }
+  svg.freesewing .stroke-xl {
+    stroke-width: 1;
+  }
+  svg.freesewing .stroke-xxl,
+  svg.freesewing .stroke-2xl {
+    stroke-width: 2;
+  }
+  svg.freesewing .stroke-3xl {
+    stroke-width: 3;
+  }
+  svg.freesewing .stroke-4xl {
+    stroke-width: 4;
+  }
+
+  svg.freesewing .sa {
+    stroke-dasharray: 0.4, 0.8;
+  }
+  svg.freesewing .help {
+    stroke-width: 0.2;
+    stroke-dasharray: 15, 1.5, 1, 1.5;
+  }
+  svg.freesewing .dotted {
+    stroke-dasharray: 0.4, 0.8;
+  }
+  svg.freesewing .dashed {
+    stroke-dasharray: 1, 1.5;
+  }
+  svg.freesewing .lashed {
+    stroke-dasharray: 6, 6;
+  }
+  svg.freesewing .hidden {
+    stroke: none;
+    fill: none;
+  }
+
+  /* Fill classes */
+  svg.freesewing .fill-fabric {
+    fill: #212121;
+  }
+  svg.freesewing .fill-lining {
+    fill: #ff5b77;
+  }
+  svg.freesewing .fill-interfacing {
+    fill: #64b5f6;
+  }
+  svg.freesewing .fill-canvas {
+    fill: #ff9000;
+  }
+  svg.freesewing .fill-various {
+    fill: #4caf50;
+  }
+  svg.freesewing .fill-note {
+    fill: #dd69dd;
+  }
+  svg.freesewing .fill-mark {
+    fill: blue;
+  }
+  svg.freesewing .fill-contrast {
+    fill: red;
+  }
+
+  /* Text */
+  svg.freesewing text {
+    font-size: 5px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+      Arial, sans-serif;
+    fill: #000;
+    text-anchor: start;
+    font-weight: 200;
+    dominant-baseline: ideographic;
+  }
+  svg.freesewing .text-xs {
+    font-size: 3px;
+  }
+  svg.freesewing .text-sm {
+    font-size: 4px;
+  }
+  svg.freesewing .text-lg {
+    font-size: 7px;
+  }
+  svg.freesewing .text-xl {
+    font-size: 9px;
+  }
+  svg.freesewing .text-xxl {
+    font-size: 12px;
+  }
+
+  svg.freesewing .center {
+    text-anchor: middle;
+  }
+  svg.freesewing .right {
+    text-anchor: end;
+  }
+
+  /* Bartack */
+  svg.freesewing path.bartack {
+    stroke-width: 2;
+    stroke: #fd7e14;
+    stroke-linecap: butt;
+  }
+
 ]]>
 </style>
 <script type="text/javascript"> <![CDATA[
@@ -90,135 +307,75 @@ text.title-nr{font-size:24pt;font-weight:700;text-anchor:middle;dominant-baselin
 <!-- Start of group #fs-container -->
 <g id="fs-container">
 
-<!-- Start of group #fs-part-front -->
-<g id="fs-part-front"  transform="translate(-43.854869565217385, -127.60000000000002) translate(0, 189.49999999999994)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-1" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 222.83,182.51 222.83,274 L 243.5,274 L 264.17,274 C 264.17,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-2" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-2"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-3" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 218.24,182.51 218.24,274 L 243.5,274 L 268.76,274 C 268.76,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-4" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-4"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-5" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 213.65,182.51 213.65,274 L 243.5,274 L 273.35,274 C 273.35,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-6" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-6"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-7" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 209.06,182.51 209.06,274 L 243.5,274 L 277.94,274 C 277.94,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-8" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-8"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-9" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 204.46,182.51 204.46,274 L 243.5,274 L 282.54,274 C 282.54,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-10" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-10"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-11" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 199.87,182.51 199.87,274 L 243.5,274 L 287.13,274 C 287.13,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-12" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-12"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-13" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 195.28,182.51 195.28,274 L 243.5,274 L 291.72,274 C 291.72,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-14" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-14"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-15" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 190.69,182.51 190.69,274 L 243.5,274 L 296.31,274 C 296.31,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-16" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-16"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-17" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 186.09,182.51 186.09,274 L 243.5,274 L 300.91,274 C 300.91,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-18" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-18"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-19" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 181.5,182.51 181.5,274 L 243.5,274 L 305.5,274 C 305.5,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-20" d="M 243.5,270.73 L 243.5,211.92" />
-<text><textPath xlink:href="#fs-20"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-</g>
-<!-- end of group #fs-part-front -->
-
-<!-- Start of group #fs-part-back -->
-<g id="fs-part-back"  transform="translate(-39.68624505928853, -127.60000000000002)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-21" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 74.25,180.38 212.32,279.37 212.32,315.1 L 243.5,315.1 L 274.68,315.1 C 274.68,279.37 412.75,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-22" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-22"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-23" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-24" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-25" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 72.52,180.38 205.39,279.37 205.39,315.1 L 243.5,315.1 L 281.61,315.1 C 281.61,279.37 414.48,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-26" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-26"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-27" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-28" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-29" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 70.79,180.38 198.47,279.37 198.47,315.1 L 243.5,315.1 L 288.53,315.1 C 288.53,279.37 416.21,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-30" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-30"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-31" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-32" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-33" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 69.06,180.38 191.54,279.37 191.54,315.1 L 243.5,315.1 L 295.46,315.1 C 295.46,279.37 417.94,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-34" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-34"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-35" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-36" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-37" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 67.33,180.38 184.61,279.37 184.61,315.1 L 243.5,315.1 L 302.39,315.1 C 302.39,279.37 419.67,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-38" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-38"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-39" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-40" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-41" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 65.59,180.38 177.68,279.37 177.68,315.1 L 243.5,315.1 L 309.32,315.1 C 309.32,279.37 421.41,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-42" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-42"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-43" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-44" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-45" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 63.86,180.38 170.75,279.37 170.75,315.1 L 243.5,315.1 L 316.25,315.1 C 316.25,279.37 423.14,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-46" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-46"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-47" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-48" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-49" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 62.13,180.38 163.83,279.37 163.83,315.1 L 243.5,315.1 L 323.17,315.1 C 323.17,279.37 424.87,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-50" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-50"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-51" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-52" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-53" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 60.4,180.38 156.9,279.37 156.9,315.1 L 243.5,315.1 L 330.1,315.1 C 330.1,279.37 426.6,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-54" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-54"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-55" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-56" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-57" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 58.67,180.38 149.97,279.37 149.97,315.1 L 243.5,315.1 L 337.03,315.1 C 337.03,279.37 428.33,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
-<path  class="note" marker-start="url(#grainlineFrom)" marker-end="url(#grainlineTo)" data-text="grainline" data-text-class="center fill-note" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-58" d="M 243.5,311.53 L 243.5,247.21" />
-<text><textPath xlink:href="#fs-58"  startOffset="50%" ><tspan  class="center fill-note">grainline</tspan></textPath>
-</text>
-<path  class="scalebox imperial fill-current" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-59" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
-<path  class="scalebox metric fill-bg" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-60" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
-</g>
-<!-- end of group #fs-part-back -->
-
-<!-- Start of group #fs-part-gusset -->
-<g id="fs-part-gusset"  transform="translate(-147.9685714285714, 2) translate(407.62750988142295, 0)">
-<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-61" d="M 222.83,0 C 235.19,61.85 212.32,123.7 212.32,123.7 L 274.68,123.7 C 274.68,123.7 251.81,61.85 264.17,0 L 222.83,0 z" />
-<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-62" d="M 218.24,0 C 229.73,61.85 205.39,123.7 205.39,123.7 L 281.61,123.7 C 281.61,123.7 257.27,61.85 268.76,0 L 218.24,0 z" />
-<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-63" d="M 213.65,0 C 224.28,61.85 198.47,123.7 198.47,123.7 L 288.53,123.7 C 288.53,123.7 262.72,61.85 273.35,0 L 213.65,0 z" />
-<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-64" d="M 209.06,0 C 218.83,61.85 191.54,123.7 191.54,123.7 L 295.46,123.7 C 295.46,123.7 268.17,61.85 277.94,0 L 209.06,0 z" />
-<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-65" d="M 204.46,0 C 213.37,61.85 184.61,123.7 184.61,123.7 L 302.39,123.7 C 302.39,123.7 273.63,61.85 282.54,0 L 204.46,0 z" />
-<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-66" d="M 199.87,0 C 207.92,61.85 177.68,123.7 177.68,123.7 L 309.32,123.7 C 309.32,123.7 279.08,61.85 287.13,0 L 199.87,0 z" />
-<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-67" d="M 195.28,0 C 202.46,61.85 170.75,123.7 170.75,123.7 L 316.25,123.7 C 316.25,123.7 284.54,61.85 291.72,0 L 195.28,0 z" />
-<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-68" d="M 190.69,0 C 197.01,61.85 163.83,123.7 163.83,123.7 L 323.17,123.7 C 323.17,123.7 289.99,61.85 296.31,0 L 190.69,0 z" />
-<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-69" d="M 186.09,0 C 191.56,61.85 156.9,123.7 156.9,123.7 L 330.1,123.7 C 330.1,123.7 295.44,61.85 300.91,0 L 186.09,0 z" />
-<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-70" d="M 181.5,0 C 186.1,61.85 149.97,123.7 149.97,123.7 L 337.03,123.7 C 337.03,123.7 300.9,61.85 305.5,0 L 181.5,0 z" />
-</g>
-<!-- end of group #fs-part-gusset -->
-
 <!-- Start of group #fs-part-elastic -->
 <g id="fs-part-elastic"  transform="translate(2, 2) translate(407.62750988142295, 127.69800000000001)">
 </g>
 <!-- end of group #fs-part-elastic -->
+
+<!-- Start of group #fs-part-front2 -->
+<g id="fs-part-front2"  transform="translate(-43.854869565217385, -127.60000000000002) translate(0, 189.49999999999994)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-1" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 222.83,182.51 222.83,274 L 243.5,274 L 264.17,274 C 264.17,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-2" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 218.24,182.51 218.24,274 L 243.5,274 L 268.76,274 C 268.76,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-3" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 213.65,182.51 213.65,274 L 243.5,274 L 273.35,274 C 273.35,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-4" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 209.06,182.51 209.06,274 L 243.5,274 L 277.94,274 C 277.94,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-5" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 204.46,182.51 204.46,274 L 243.5,274 L 282.54,274 C 282.54,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-6" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 199.87,182.51 199.87,274 L 243.5,274 L 287.13,274 C 287.13,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-7" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 195.28,182.51 195.28,274 L 243.5,274 L 291.72,274 C 291.72,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-8" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 190.69,182.51 190.69,274 L 243.5,274 L 296.31,274 C 296.31,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-9" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 186.09,182.51 186.09,274 L 243.5,274 L 300.91,274 C 300.91,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-10" d="M 243.5,143.3 C 143.05,143.3 57.86,129.6 57.86,129.6 L 45.85,180.38 C 77.06,180.38 181.5,182.51 181.5,274 L 243.5,274 L 305.5,274 C 305.5,182.51 409.94,180.38 441.15,180.38 L 429.14,129.6 C 429.14,129.6 343.95,143.3 243.5,143.3 z" />
+</g>
+<!-- end of group #fs-part-front2 -->
+
+<!-- Start of group #fs-part-back2 -->
+<g id="fs-part-back2"  transform="translate(-39.68624505928853, -127.60000000000002)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-11" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 74.25,180.38 212.32,279.37 212.32,315.1 L 243.5,315.1 L 274.68,315.1 C 274.68,279.37 412.75,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-12" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-13" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-14" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 72.52,180.38 205.39,279.37 205.39,315.1 L 243.5,315.1 L 281.61,315.1 C 281.61,279.37 414.48,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-15" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-16" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-17" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 70.79,180.38 198.47,279.37 198.47,315.1 L 243.5,315.1 L 288.53,315.1 C 288.53,279.37 416.21,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-18" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-19" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-20" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 69.06,180.38 191.54,279.37 191.54,315.1 L 243.5,315.1 L 295.46,315.1 C 295.46,279.37 417.94,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-21" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-22" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-23" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 67.33,180.38 184.61,279.37 184.61,315.1 L 243.5,315.1 L 302.39,315.1 C 302.39,279.37 419.67,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-24" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-25" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-26" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 65.59,180.38 177.68,279.37 177.68,315.1 L 243.5,315.1 L 309.32,315.1 C 309.32,279.37 421.41,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-27" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-28" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-29" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 63.86,180.38 170.75,279.37 170.75,315.1 L 243.5,315.1 L 316.25,315.1 C 316.25,279.37 423.14,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-30" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-31" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-32" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 62.13,180.38 163.83,279.37 163.83,315.1 L 243.5,315.1 L 323.17,315.1 C 323.17,279.37 424.87,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-33" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-34" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-35" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 60.4,180.38 156.9,279.37 156.9,315.1 L 243.5,315.1 L 330.1,315.1 C 330.1,279.37 426.6,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-36" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-37" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-38" d="M 243.5,136.45 C 144.8,136.45 52.6,129.6 52.6,129.6 L 41.69,180.38 C 58.67,180.38 149.97,279.37 149.97,315.1 L 243.5,315.1 L 337.03,315.1 C 337.03,279.37 428.33,180.38 445.31,180.38 L 434.4,129.6 C 434.4,129.6 342.2,136.45 243.5,136.45 z" />
+<path  class="scalebox imperial fill-current" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-39" d="M 230.8,217.68 L 230.8,243.08 L 256.2,243.08 L 256.2,217.68 z" />
+<path  class="scalebox metric fill-bg" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-40" d="M 231,217.88 L 231,242.88 L 256,242.88 L 256,217.88 z" />
+</g>
+<!-- end of group #fs-part-back2 -->
+
+<!-- Start of group #fs-part-gusset2 -->
+<g id="fs-part-gusset2"  transform="translate(-147.9685714285714, 2) translate(407.62750988142295, 0)">
+<path  class="fabric" style="stroke: hsl(0, 100%, 35%);" data-sample-run="1" data-sample-runs="10" id="fs-41" d="M 222.83,0 C 235.19,61.85 212.32,123.7 212.32,123.7 L 274.68,123.7 C 274.68,123.7 251.81,61.85 264.17,0 L 222.83,0 z" />
+<path  class="fabric" style="stroke: hsl(33, 100%, 35%);" data-sample-run="2" data-sample-runs="10" id="fs-42" d="M 218.24,0 C 229.73,61.85 205.39,123.7 205.39,123.7 L 281.61,123.7 C 281.61,123.7 257.27,61.85 268.76,0 L 218.24,0 z" />
+<path  class="fabric" style="stroke: hsl(66, 100%, 35%);" data-sample-run="3" data-sample-runs="10" id="fs-43" d="M 213.65,0 C 224.28,61.85 198.47,123.7 198.47,123.7 L 288.53,123.7 C 288.53,123.7 262.72,61.85 273.35,0 L 213.65,0 z" />
+<path  class="fabric" style="stroke: hsl(99, 100%, 35%);" data-sample-run="4" data-sample-runs="10" id="fs-44" d="M 209.06,0 C 218.83,61.85 191.54,123.7 191.54,123.7 L 295.46,123.7 C 295.46,123.7 268.17,61.85 277.94,0 L 209.06,0 z" />
+<path  class="fabric" style="stroke: hsl(132, 100%, 35%);" data-sample-run="5" data-sample-runs="10" id="fs-45" d="M 204.46,0 C 213.37,61.85 184.61,123.7 184.61,123.7 L 302.39,123.7 C 302.39,123.7 273.63,61.85 282.54,0 L 204.46,0 z" />
+<path  class="fabric" style="stroke: hsl(165, 100%, 35%);" data-sample-run="6" data-sample-runs="10" id="fs-46" d="M 199.87,0 C 207.92,61.85 177.68,123.7 177.68,123.7 L 309.32,123.7 C 309.32,123.7 279.08,61.85 287.13,0 L 199.87,0 z" />
+<path  class="fabric" style="stroke: hsl(198, 100%, 35%);" data-sample-run="7" data-sample-runs="10" id="fs-47" d="M 195.28,0 C 202.46,61.85 170.75,123.7 170.75,123.7 L 316.25,123.7 C 316.25,123.7 284.54,61.85 291.72,0 L 195.28,0 z" />
+<path  class="fabric" style="stroke: hsl(231, 100%, 35%);" data-sample-run="8" data-sample-runs="10" id="fs-48" d="M 190.69,0 C 197.01,61.85 163.83,123.7 163.83,123.7 L 323.17,123.7 C 323.17,123.7 289.99,61.85 296.31,0 L 190.69,0 z" />
+<path  class="fabric" style="stroke: hsl(264, 100%, 35%);" data-sample-run="9" data-sample-runs="10" id="fs-49" d="M 186.09,0 C 191.56,61.85 156.9,123.7 156.9,123.7 L 330.1,123.7 C 330.1,123.7 295.44,61.85 300.91,0 L 186.09,0 z" />
+<path  class="fabric" style="stroke: hsl(297, 100%, 35%);" data-sample-run="10" data-sample-runs="10" id="fs-50" d="M 181.5,0 C 186.1,61.85 149.97,123.7 149.97,123.7 L 337.03,123.7 C 337.03,123.7 300.9,61.85 305.5,0 L 181.5,0 z" />
+</g>
+<!-- end of group #fs-part-gusset2 -->
 </g>
 <!-- end of group #fs-container -->
 </svg>

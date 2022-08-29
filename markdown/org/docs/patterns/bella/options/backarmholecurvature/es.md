@@ -2,7 +2,7 @@
 title: "Curvatura del orificio trasero"
 ---
 
----
+***
 
 ![El efecto de la opción de curvatura del blindaje trasero sobre el patrón](sample.png)
 

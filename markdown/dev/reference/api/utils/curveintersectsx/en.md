@@ -14,7 +14,7 @@ array | Point | false utils.curveIntersectsX(
 Finds the point(s) where a curve intersects a given X-value.
 
 This is a low-level variant
-of [`Path.intersectsX()`](/reference/api/path/#pathintersectsx).
+of [`Path.intersectsX()`](/reference/api/path/intersectsx).
 Instead of a path, you describe a single curve by passing the four
 points that describes it.
 

@@ -3,20 +3,11 @@ import useApp from 'site/hooks/useApp.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from 'site/components/layouts/docs'
 import { useTranslation } from 'next-i18next'
-import ConfigIcon from 'shared/components/icons/settings'
-import CogIcon from 'shared/components/icons/cog'
-import HeartIcon from 'shared/components/icons/heart'
 import FsIcon from 'shared/components/icons/freesewing'
 import Link from 'next/link'
 import Popout from 'shared/components/popout'
-import LocaleIcon from 'shared/components/icons/i18n.js'
 import { useRouter } from 'next/router'
 import themes from 'shared/themes/index.js'
-
-const gh = `<a class="text-secondary hover:text-secondary-focus" 
-href="https://github.com/freesewing/freesewing">freesewing/freesewing</a>`
-const fsd = `<a class="text-secondary hover:text-secondary-focus" 
-href="https://freesewing.dev">freesewing.dev</a>`
 
 const translations = {
   sade: {
@@ -83,8 +74,8 @@ const HomePage = (props) => {
         <h2>{t('patrons:supportFreesewing')}</h2>
         <div className="flex flex-row flex-wrap gap-2">
           <div>
-            <p className="max-w-3xl">{t('patrons:patronLead')}</p> 
-            <p className="max-w-3xl">{t('patrons:patronPitch')}</p> 
+            <p className="max-w-3xl">{t('patrons:patronLead')}</p>
+            <p className="max-w-3xl">{t('patrons:patronPitch')}</p>
           </div>
           <a className="btn btn-accent btn-lg ">
             <span role='image' className="text-4xl px-4">🥰</span>
@@ -93,7 +84,8 @@ const HomePage = (props) => {
           </a>
         </div>
       </div>
-
+      {/* here to force Tailwind inclusion of the w-8 h-8 classes */}
+      <span className="w-8 h-8" />
     </Page>
   )
 }

@@ -7,6 +7,7 @@ import TocWrapper from 'shared/components/wrappers/toc'
 import Head from 'next/head'
 import HelpUs from 'site/components/help-us.js'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import jargon from 'site/jargon.mjs'
 
 const MdxPage = props => {
 
@@ -71,7 +72,7 @@ export default MdxPage
  */
 export async function getStaticProps({ params, locale }) {
 
-  const { mdx, intro, toc } = await mdxLoader('en', 'dev', params.mdxslug.join('/'))
+  const { mdx, intro, toc } = await mdxLoader('en', 'dev', params.mdxslug.join('/'), jargon)
 
   return {
     props: {

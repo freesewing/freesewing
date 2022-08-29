@@ -10,6 +10,11 @@ title: "Bruce boxer briefs: Sewing Instructions"
 
 Align the side of the back (piece 1) with the side (piece 3) making sure to put the good sides together. Since the side (piece 3) is symmetric, you can't go wrong.
 
+<Tip>
+If you look at the part 3 (the side) with the text so you can read it, then then left side should be attached to the back,
+and the right side attached to the front & inset. The notches will also help you figure it out.
+</Tip>
+
 Serge them together, taking into account that the seam allowance is 1cm. So aim the outside needle of your serger 1cm from the edge of your fabric.
 
 > Falls metrische Einheiten nicht dein Ding sind: 1cm entsprechen 3/8 inch.

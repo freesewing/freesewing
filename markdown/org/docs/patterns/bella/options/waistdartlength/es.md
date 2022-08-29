@@ -2,7 +2,7 @@
 title: "Longitud del dart de Waist"
 ---
 
----
+***
 
 ![El efecto de la opción de longitud de dardos de cintura en el patrón](sample.png)
 

@@ -78,8 +78,11 @@ lunetius:
   description: Lunetius es una lacerna, una capa histórica romana
   title: Lunetius, lacerna
 noble:
-  description: Noble is a body block with prince(ess) seams
-  title: Noble body block
+  description: Noble es un patrón base de torso con corte de príncipe o princesa
+  title: Noble, patrón base de torso
+octoplushy:
+  description: A multi-armed companion for next-level hugs
+  title: Octoplushy the octopus
 paco:
   description: Paco son pantalones de verano casual pero con estilo.
   title: Paco, pantalones largos

@@ -5,6 +5,7 @@
 const parts = {
   "back": "Rückseite",
   "backBase": "Rückseite Basis",
+  "backPocketWelt": "Back pocket welt",
   "base": "Basis",
   "bentBack": "Rückseite Bent",
   "bentBase": "Basis Bent",

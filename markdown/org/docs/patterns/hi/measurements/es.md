@@ -1,8 +1,8 @@
 ---
-title: "Hi shark plush toy: Required Measurements"
+title: "Hi, tiburón: Medidas necesarias"
 ---
 
 <Note>
-Hi does not require any measurements
+Hi no requiere de ninguna medida
 </Note>
 

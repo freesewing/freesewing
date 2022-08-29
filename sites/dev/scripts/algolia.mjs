@@ -4,11 +4,9 @@
  * content
  *
  * It expects the following environment vars to be set in a
- * .env file in the 'packages/freesewing.dev' folder:
+ * .env file in the 'sites/dev' folder:
  *
- * ALGOLIA_APP_ID -> probably MA0Y5A2PF0
- * ALGOLIA_API_KEY -> Needs permission to index/create/delete
- * ALGOLIA_INDEX -> Name of the index to index to
+ * ALGOLIA_API_WRITE_KEY -> Needs permission to index/create/delete
  *
  */
 import dotenv from 'dotenv'
@@ -24,15 +22,19 @@ import remarkRehype from 'remark-rehype'
 import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
 import yaml from 'yaml'
-import { getPosts } from '../../freesewing.shared/prebuild/strapi.mjs'
-import { getMdxFileList } from '../../freesewing.shared/prebuild/mdx.mjs'
+import { getPosts } from '../../shared/prebuild/strapi.mjs'
+import { getMdxFileList } from '../../shared/prebuild/mdx.mjs'
+import config from '../algolia.config.mjs'
 dotenv.config()
 
 /*
  * Initialize Algolia client
  */
-const client = algoliasearch(process.env.ALGOLIA_APP_ID, process.env.ALGOLIA_API_KEY)
-const index = client.initIndex(process.env.ALGOLIA_INDEX)
+const client = algoliasearch(
+  config.algolia.app,
+  process.env.ALGOLIA_API_WRITE_KEY
+)
+const index = client.initIndex(config.algolia.index)
 
 /*
  * Turn a Strapi blog post into an object ready for indexing
@@ -66,8 +68,7 @@ const transformAuthor = author => ({
 const indexStrapiContent = async () => {
 
   // Say hi
-  console.log()
-  console.log(`Indexing Strapi content to Algolia`)
+  console.log(`🗂️  Indexing Strapi content to Algolia`)
 
   const authors = {}
   const rawPosts = await getPosts('blog', 'dev', 'en')
@@ -79,12 +80,12 @@ const indexStrapiContent = async () => {
   // Index posts to Algolia
   index
     .saveObjects(Object.values(rawPosts).map(post => transformBlogpost(post)))
-    .then(({ objectIDs }) => console.log(objectIDs))
+    .then(({ objectIDs }) => null)
     .catch(err => console.log(err))
   // Index authors to Algolia
   index
     .saveObjects(Object.values(authors))
-    .then(({ objectIDs }) => console.log(objectIDs))
+    .then(({ objectIDs }) => null)
     .catch(err => console.log(err))
 }
 
@@ -115,6 +116,13 @@ const markdownLoader = async file => {
   }
 }
 
+/*
+ * Clear the index to scrub old pages
+ */
+const clearIndex = async () => {
+  console.log(`🗑️  Clearing index`)
+  await index.clearObjects()
+}
 
 
 /*
@@ -123,8 +131,7 @@ const markdownLoader = async file => {
 const indexMarkdownContent = async () => {
 
   // Say hi
-  console.log()
-  console.log(`Indexing Markdown content to Algolia`)
+  console.log(`🗂️  Indexing Markdown content to Algolia`)
 
   // Setup MDX root path
   const mdxRoot = path.resolve('..', '..', 'markdown', 'dev')
@@ -132,19 +139,23 @@ const indexMarkdownContent = async () => {
   // Get list of filenames
   const list = await getMdxFileList(mdxRoot, 'en')
   const pages = []
+
   for (const file of list) pages.push(await markdownLoader(file))
   // Index markdown to Algolia
-  index
+  await index.clearObjects()
+  await index
     .saveObjects(pages)
-    .then(({ objectIDs }) => console.log(objectIDs))
+    .then(({ objectIDs }) => null)
     .catch(err => console.log(err))
 }
 
 const run = async () => {
   if (
-    (process.env.NETLIFY && process.env.CONTEXT === 'production' && false) // disabled for now
-    || process.env.FORCE_ALGOLIA
+    process.env.VERCEL_ENV === 'production' ||
+    process.env.FORCE_ALGOLIA
   ) {
+    console.log()
+    await clearIndex()
     await indexMarkdownContent()
     await indexStrapiContent()
     console.log()

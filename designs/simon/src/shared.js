@@ -27,15 +27,84 @@ export const calculateReduction = function (part) {
 
 export const addButtons = function (part, origin = 'cfNeck', snippet = 'button') {
   const { points, options, snippets, Snippet } = part.shorthand()
-  const len = points.cfNeck.dist(points.cfHips) * (1 - options.buttonFreeLength)
-  for (let i = 1; i <= options.buttons; i++) {
-    points['button' + i] = points[origin].shift(-90, (len / options.buttons) * i)
-    snippets[snippet + i] = new Snippet(snippet, points['button' + i])
+  const full_len = points.cfNeck.dist(points.cfHips)
+  const adjusted_len = full_len * (1 - options.buttonFreeLength)
+  const total_buttons = options.buttons
+
+  const spacing_strategy = 'bustAlignedButtons' in options ? options.bustAlignedButtons : 'default'
+  switch (spacing_strategy) {
+    case 'even': {
+      // Strategy: Even button spacing,
+      // - Determine the correct spacing above the bustline and use that
+      //   spacing for all buttons.
+      // - The bottom button position is variable, and it ignores the "Button
+      //   free length" setting.
+      const top_len = points.cfNeck.dist(points.cfBust)
+      const top_percentage = top_len / full_len
+      const top_number_buttons = Math.round(total_buttons * top_percentage)
+      const top_spacing = top_len / top_number_buttons
+      const even_spacing = top_spacing
+      for (let i = 1; i <= total_buttons; i++) {
+        points['button' + i] = points[origin].shift(-90, (even_spacing * i))
+        snippets[snippet + i] = new Snippet(snippet, points['button' + i])
+      }
+      break }
+    case 'split': {
+      // Strategy: Different spacings above and below.
+      // - Calculate the number of buttons that should be above and below
+      //   the bustline by proportion.
+      // - Calculate the correct spacings to be used above and below the
+      //   bustline, adhering to the "Button free length" setting.
+      // - For the first and last bottom buttons, slightly shift their
+      //   positions to make the difference in spacings less noticeable
+      //   at the bustline.
+      const top_len = points.cfNeck.dist(points.cfBust)
+      const bot_len = adjusted_len - top_len
+      const top_percentage = top_len / adjusted_len
+      const top_number_buttons = Math.round(total_buttons * top_percentage)
+      const bot_number_buttons = total_buttons - top_number_buttons
+      const top_spacing = top_len / top_number_buttons
+      const bot_spacing = bot_len / bot_number_buttons
+      // Top buttons
+      for (let i = 1; i <= top_number_buttons; i++) {
+        points['button' + i] = points[origin].shift(-90, top_spacing * i)
+        snippets[snippet + i] = new Snippet(snippet, points['button' + i])
+      }
+      // Bottom buttons
+      const adjustment = (top_spacing - bot_spacing) / 2
+      points.currentpoint = points['cfBust'].clone()
+      for (let i = top_number_buttons + 1; i <= total_buttons; i++) {
+        points.currentpoint = points.currentpoint.shift(-90, bot_spacing)
+        if (i == top_number_buttons + 1) {
+          // Adjust first button position
+          points.currentpoint = points.currentpoint.shift(-90, adjustment)
+        } else if (i == total_buttons) {
+          // Adjust last button position in opposite direction.
+          points.currentpoint = points.currentpoint.shift(90, adjustment)
+        }
+        points['button' + i] = points.currentpoint.clone()
+        snippets[snippet + i] = new Snippet(snippet, points['button' + i])
+      }
+      break }
+    case 'disabled':
+    case 'default':
+    default: {
+      // Strategy: The default strategy.
+      // - Buttons are evenly spaced without regard to the bustline.
+      // - The "Button free length" setting is obeyed.
+      const default_spacing = adjusted_len / total_buttons
+      for (let i = 1; i <= total_buttons; i++) {
+        points['button' + i] = points[origin].shift(-90, default_spacing * i)
+        snippets[snippet + i] = new Snippet(snippet, points['button' + i])
+      }
+    }
   }
+
+  // Add optional extra top button
   if (options.extraTopButton)
     snippets['top' + snippet] = new Snippet(
       snippet,
-      points[origin].shift(-90, len / options.buttons / 2)
+      points[origin].shift(-90, adjusted_len / total_buttons / 2)
     )
 }
 
