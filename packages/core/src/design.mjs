@@ -15,7 +15,6 @@ export function Design(config) {
     measurements: [],
     optionalMeasurements: [],
     plugins: [],
-    conditionalPlugins: [],
     ...config
   }
   const parts = {}
@@ -39,14 +38,11 @@ export function Design(config) {
     Pattern.call(this, config)
 
     // Load plugins
-    if (Array.isArray(config.plugins)) for (const plugin of config.plugins) this.use(plugin)
-    else if (config.plugins) this.use(config.plugins)
-
-    // Load conditional plugins
-    if (Array.isArray(config.conditionalPlugins))
-      for (const plugin of config.conditionalPlugins) this.useIf(plugin, settings)
-    else if (config.conditionalPlugins.plugin && config.conditionalPlugins.condition)
-      this.useIf(config.conditionalPlugins, settings)
+    if (!Array.isArray(config.plugins)) config.plugins = [ config.plugins ]
+    for (const plugin of config.plugins) {
+      if (plugin.plugin && plugin.condition) this.useIf(plugin, settings)
+      else this.use(plugin)
+    }
 
     this.apply(settings)
 

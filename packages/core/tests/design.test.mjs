@@ -76,7 +76,7 @@ describe('Design', () => {
       }
     };
     const condition = () => true
-    const design = new Design({ conditionalPlugins: { plugin, condition } });
+    const design = new Design({ plugins: { plugin, condition } });
     const pattern = new design();
     expect(pattern.hooks.preRender.length).to.equal(1);
   });
@@ -92,7 +92,7 @@ describe('Design', () => {
       }
     };
     const condition = () => false
-    const design = new Design({ conditionalPlugins: { plugin, condition } });
+    const design = new Design({ plugins: { plugin, condition } });
     const pattern = new design();
     expect(pattern.hooks.preRender.length).to.equal(0);
   });
@@ -109,7 +109,7 @@ describe('Design', () => {
     };
     const condition1 = () => true
     const condition2 = () => false
-    const design = new Design({ conditionalPlugins:  [
+    const design = new Design({ plugins:  [
       { plugin, condition: condition1 },
       { plugin, condition: condition2 },
     ]});
