@@ -34,6 +34,7 @@ const repo = {
   exceptions: readConfigFile('exceptions.yaml'),
   templates: {
     pkg: readTemplateFile('package.dflt.json'),
+    pkgmjs: readTemplateFile('pkg.dflt.mjs'),
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.mjs'),
@@ -66,12 +67,16 @@ log.write(chalk.blueBright('Validating configuration...'))
 if (validate()) log.write(chalk.green(" Done\n"))
 
 
-// Step 3: Generate package.json, README, and CHANGELOG
+// Step 3: Generate package.json, pkg.mjs, README, and CHANGELOG
 log.write(chalk.blueBright('Generating package-specific files...'))
 for (const pkg of Object.values(software)) {
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'package.json'),
     JSON.stringify(packageJson(pkg), null, 2) + '\n'
+  )
+  fs.writeFileSync(
+    path.join(cwd, pkg.folder, pkg.name, 'pkg.mjs'),
+    mustache.render(repo.templates.pkgmjs, { name: fullName(pkg.name), version })
   )
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'README.md'),
