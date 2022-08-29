@@ -67,9 +67,17 @@ export const testPatternConfig = (Pattern) => {
   // Config tests for non-utility patterns only
   if (family !== 'utilities') {
     it(`  - 'design' should be set and be a string of reasonable length`, () => {
-      expect(typeof meta.design).to.equal('string')
-      expect(meta.design.length > 2).to.be.true
-      expect(meta.design.length < 80).to.be.true
+      if (Array.isArray(meta.design)) {
+        for (const person of meta.design) {
+          expect(typeof person).to.equal('string')
+          expect(person.length > 2).to.be.true
+          expect(person.length < 80).to.be.true
+        }
+      } else {
+        expect(typeof meta.design).to.equal('string')
+        expect(meta.design.length > 2).to.be.true
+        expect(meta.design.length < 80).to.be.true
+      }
     })
     it(`  - 'code' should be set and be a string of reasonable length`, () => {
       expect(typeof meta.code).to.equal('string')

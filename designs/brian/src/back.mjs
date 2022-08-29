@@ -4,7 +4,7 @@ import { base } from './base.mjs'
 export const back = {
   from: base,
   name: 'brian.back',
-  draft: (part) => {
+  draft: part => {
     const {
       store,
       sa,

@@ -3,7 +3,7 @@ import { back } from './back.mjs'
 export const frontSideDart = {
   name: 'bella.frontSideDart',
   after: back,
-  draft: function (part) {
+  draft: part => {
     const {
       store,
       sa,

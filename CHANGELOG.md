@@ -24,17 +24,145 @@
 
  - Workaround for not finding a suitable legband radius
 
+### plugin-banner
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-bartack
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-bundle
+
+#### Removed
+
+ - Named exports of the bundled plugins are no longer available
+
+### plugin-bust
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-buttons
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-cutonfold
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-dimension
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-flip
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
 ### plugin-gore
 
 #### Breaking
 
  - The `goreNumber` props is removed. Please use `gores` instead
 
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-grainline
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-i18n
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-logo
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-measurements
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-mirror
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-notches
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-round
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-scalebox
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-sprinkle
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-svgattr
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-theme
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
 ### plugin-title
 
 #### Changed
 
  - Use localized date format
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-versionfree-svg
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
 
 ## 2.22.0 (2022-08-23)
@@ -245,6 +373,12 @@
 
 ## 2.21.0 (2022-06-27)
 
+### albert
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ### benjamin
 
 #### Changed
@@ -282,6 +416,16 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### hortensia
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### lucy
+
+#### Added
+
+ - Lucy is a pattern for a historical tie-on pocket
 
 #### Changed
 
@@ -331,12 +475,6 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### aaron
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### albert
 
 #### Changed
 
@@ -407,16 +545,6 @@
  - Fix incorrect seam allowance Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
 
 ### jaeger
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### lucy
-
-#### Added
-
- - Lucy is a pattern for a historical tie-on pocket
 
 #### Changed
 
@@ -898,6 +1026,12 @@
 
 ## 2.20.0 (2022-01-24)
 
+### albert
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
 ### benjamin
 
 #### Changed
@@ -967,12 +1101,6 @@
  - Switched to default import for version from package.json
 
 ### aaron
-
-#### Changed
-
- - Switched to default import for version from package.json
-
-### albert
 
 #### Changed
 
@@ -2070,6 +2198,12 @@
 
 ## 2.16.1 (2021-05-30)
 
+### albert
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ### benjamin
 
 #### Changed
@@ -2137,12 +2271,6 @@
  - Changed `department` setting in config in line with new grouping
 
 ### aaron
-
-#### Changed
-
- - Changed `department` setting in config in line with new grouping
-
-### albert
 
 #### Changed
 
@@ -2626,6 +2754,12 @@
 
 ## 2.11.3 (2021-01-16)
 
+### albert
+
+#### Fixed
+
+ - Added missing scalebox
+
 ### florence
 
 #### Fixed
@@ -2645,12 +2779,6 @@
  - Added missing scalebox
 
 ### bent
-
-#### Fixed
-
- - Added missing scalebox
-
-### albert
 
 #### Fixed
 

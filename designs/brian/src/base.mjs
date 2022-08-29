@@ -34,7 +34,7 @@ export const base = {
     'waistToHips',
   ],
   optionalMeasurements: [ 'highBust' ],
-  draft: (part) => {
+  draft: part => {
     const {
       measurements,
       options,

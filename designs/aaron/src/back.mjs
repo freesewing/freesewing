@@ -8,7 +8,7 @@ export const back = {
     backNeckCutout: 0.05,
     backlineBend: { pct: 50, min: 25, max: 100 }
   },
-  draft: function (part) {
+  draft: part => {
     const {
       store,
       sa,

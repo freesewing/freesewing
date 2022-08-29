@@ -19,3 +19,12 @@ export const plugin = {
 export const bustPlugin = plugin
 export const pluginBust = plugin
 
+// Helper method to conditionally load this plugin
+export const withCondition = {
+  plugin,
+  condition: (settings=false) =>
+    settings?.options?.draftForHighBust &&
+    settings?.measurements?.highBust
+    ? true : false
+}
+

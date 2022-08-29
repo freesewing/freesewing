@@ -47,7 +47,7 @@ export const back = {
     frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced' },
     highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced' },
   },
-  draft: function (part) {
+  draft: part => {
     const {
       store,
       sa,

@@ -4,7 +4,7 @@ export const pocket = {
   name: 'albert.pocket',
   measurements: [ 'hpsToWaistBack', 'waistToKnee' ],
   options: { bibLength, lengthBonus },
-  draft: function (part) {
+  draft: part => {
     const {
       options,
       measurements,

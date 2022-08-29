@@ -14,7 +14,7 @@ export const front = {
     bibLength,
     lengthBonus,
   },
-  draft: function (part) {
+  draft: part => {
     const {
       options,
       measurements,

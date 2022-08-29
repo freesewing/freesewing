@@ -27,7 +27,7 @@ export const front = {
     shoulderStrapWidth: { pct: 15, min: 10, max: 40, menu: 'style' },
     shoulderStrapPlacement: { pct: 40, min: 20, max: 80, menu: 'style' },
   },
-  draft: function (part) {
+  draft: part => {
     const {
       utils,
       store,

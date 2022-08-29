@@ -165,7 +165,7 @@ export const sleevecap = {
     sleevecapQ4Spread2: { pct: 6.3, min: 4, max: 20, menu },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100, menu: 'advanced' },
   },
-  draft: (part) => {
+  draft: part => {
     const { store, units, options, Point, points, paths, raise } = part.shorthand()
 
     store.set('sleeveFactor', 1)

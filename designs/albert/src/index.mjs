@@ -1,15 +1,11 @@
-// FreeSewing Design constructor
 import { Design } from '@freesewing/core'
-// FreeSewing Plugins
+import { name, version } from '../package.json'
 import { pluginBundle } from '@freesewing/plugin-bundle'
-// Design parts
 import { front } from './front.mjs'
 import { pocket } from './pocket.mjs'
 import { strap } from './strap.mjs'
-// Get name & version from package.json
-import { name, version } from '../package.json'
 
-// crossbox macro
+// crossBox macro
 const crossBox = {
   name: 'crossbox',
   version,

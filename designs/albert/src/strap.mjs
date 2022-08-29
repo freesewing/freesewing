@@ -10,7 +10,7 @@ export const strap = {
     strapWidth,
     chestDepth: { pct: 22, min: 15, max: 90, menu: 'fit' },
   },
-  draft: function (part) {
+  draft: part => {
     const {
       options,
       measurements,

@@ -10,7 +10,7 @@ export const sleeve = {
     'shoulderToWrist',
     'wrist',
   ],
-  draft: (part) => {
+  draft: part => {
     const {
       store,
       sa,
