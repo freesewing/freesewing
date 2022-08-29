@@ -2,17 +2,15 @@ import { useState } from 'react'
 // Stores state in local storage
 import useLocalStorage from 'shared/hooks/useLocalStorage.js'
 // Designs
-import { designsByType } from 'config/software/index.mjs'
+import { designsByType } from 'prebuild/designs-by-type.mjs'
 // Locale and translation
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { capitalize } from 'shared/utils.mjs'
-import { formatVersionUri } from '../components/version-picker.js'
-import useVersion from 'site/hooks/useVersion.js'
 import useTheme from 'shared/hooks/useTheme'
 
 // Initial navigation
-const initialNavigation = (t, version) => {
+const initialNavigation = t => {
   const base = {
     accessories: {
       __title: t('accessoryDesigns'),
@@ -35,7 +33,7 @@ const initialNavigation = (t, version) => {
     for (const design in designsByType[type]) {
       base[type][design] = {
         __title: capitalize(design),
-        __slug: formatVersionUri(version,design)
+        __slug: design
       }
     }
   }
@@ -57,9 +55,6 @@ for (const type in designsByType) {
 
 function useApp(full = true) {
 
-  // Version
-  const version = useVersion()
-
   // Load translation method
   const locale = useRouter().locale
   const { t } = useTranslation(['app'])
@@ -70,7 +65,7 @@ function useApp(full = true) {
 
   // React State
   const [primaryMenu, setPrimaryMenu] = useState(false)
-  const [navigation, setNavigation] = useState(initialNavigation(t, version))
+  const [navigation, setNavigation] = useState(initialNavigation(t))
   const [slug, setSlug] = useState('/')
   const [design, setDesign] = useState(false)
   const [loading, setLoading] = useState(false)

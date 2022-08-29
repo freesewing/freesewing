@@ -3,7 +3,6 @@ import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
 import PatternPicker from 'site/components/pattern-picker.js'
-import VersionPicker from 'site/components/version-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 
@@ -69,7 +68,6 @@ const Header = ({ app }) => {
             </button>
             <div className="hidden md:flex flex-row items-center gap-2">
               <PatternPicker app={app} />
-              <VersionPicker app={app} />
             </div>
             <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">

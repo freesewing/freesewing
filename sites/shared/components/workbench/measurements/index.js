@@ -1,32 +1,32 @@
 import React, {useMemo, useEffect, useState} from 'react'
 import MeasurementInput from '../inputs/measurement.js'
-import { withBreasts, withoutBreasts } from '@freesewing/models'
+import { menswear, womenswear } from '@freesewing/models'
 import nonHuman from './non-human.js'
-import WithBreastsIcon from 'shared/components/icons/with-breasts.js'
-import WithoutBreastsIcon from 'shared/components/icons/without-breasts.js'
+import WomenswearIcon from 'shared/components/icons/womenswear.js'
+import MenswearIcon from 'shared/components/icons/menswear.js'
 import { useTranslation } from 'next-i18next'
 import Setting from '../menu/core-settings/setting';
 import {settings} from '../menu/core-settings/index';
 import { Tab, Tabs } from 'shared/components/mdx/tabs.js'
 
+
 const groups = {
-  people: {
-    with: withBreasts,
-    without: withoutBreasts,
-  },
+  people: { menswear, womenswear },
   dolls: {
-    with: nonHuman.withBreasts.dolls,
-    without: nonHuman.withoutBreasts.dolls,
+    menswear: nonHuman.menswear.dolls,
+    womenswear: nonHuman.womenswear.dolls,
   },
   giants: {
-    with: nonHuman.withBreasts.giants,
-    without: nonHuman.withoutBreasts.giants,
+    menswear: nonHuman.menswear.giants,
+    womenswear: nonHuman.womenswear.giants,
   }
 }
+
 const icons = {
-  with: <WithBreastsIcon />,
-  without: <WithoutBreastsIcon />,
+  menswear: <MenswearIcon />,
+  womenswear: <WomenswearIcon />,
 }
+
 
 const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => {
   const { t } = useTranslation(['app', 'cfp'])
@@ -72,7 +72,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
           <Tab tabId={group}>
             {Object.keys(icons).map(type => (
               <React.Fragment key={type}>
-                <h4 className="mt-4">{t(`${type}Breasts`)}</h4>
+                <h4 className="mt-4">{t(type)}</h4>
                 <ul className="flex flex-row flex-wrap gap-2">
                   {Object.keys(groups[group][type]).map((m) => (
                     <li key={`${m}-${type}-${group}`} className="">
@@ -81,9 +81,8 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
                         onClick={() => updateMeasurements(groups[group][type][m], false)}
                       >
                         {icons[type]}
-                        {t('size')}&nbsp;
                         { group === 'people'
-                          ? m.replace('size', '')
+                          ? m.slice(-2)
                           : m
                         }
                       </button>

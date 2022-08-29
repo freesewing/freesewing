@@ -1,4 +1,5 @@
 import get from 'lodash.get'
+import set from 'lodash.set'
 
 // Generic rounding method
 export const round = (val, decimals=1) => Math.round(val*Math.pow(10, decimals))/Math.pow(10, decimals)
@@ -159,3 +160,16 @@ export const measurementAsMm = (value, units = "metric") => {
   }
   return false;
 }
+
+export const optionsMenuStructure = options => {
+  if (!options) return options
+  const menu = {}
+  for (const [name, option] of Object.entries(options)) {
+    if (typeof option  === 'object') {
+      set(menu, (option.menu ? `${option.menu}.${name}` : name), optionType(option))
+    }
+  }
+
+  return menu
+}
+

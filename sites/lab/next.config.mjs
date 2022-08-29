@@ -1,6 +1,7 @@
 import path from 'path'
 import i18nConfig from './next-i18next.config.js'
-import { designs, plugins } from '../../config/software/index.mjs'
+import { designs } from './prebuild/designs.mjs'
+import { plugins } from './prebuild/plugins.mjs'
 import { banner } from '../../scripts/banner.mjs'
 
 let greeting = false
@@ -14,11 +15,11 @@ const config = {
   webpack: (config, options) => {
 
     // JSON support
-    config.module.rules.push({
-      test: /\.json$/,
-      type: 'json',
-      use: 'json-loader'
-    })
+    //config.module.rules.push({
+    //  test: /\.json$/,
+    //  type: 'json',
+    //  use: 'json-loader'
+    //})
 
     // YAML support
     config.module.rules.push({
@@ -36,7 +37,7 @@ const config = {
     // Aliases
     config.resolve.alias.shared = path.resolve('../shared/')
     config.resolve.alias.site = path.resolve('.')
-    config.resolve.alias.lib = path.resolve('./lib')
+    config.resolve.alias.prebuild = path.resolve('./prebuild')
     config.resolve.alias.config = path.resolve('../../config/')
     config.resolve.alias.designs = path.resolve('../../designs/')
     config.resolve.alias.plugins = path.resolve('../../plugins/')

@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 
 const OptionGroup = props => {
   const { t } = useTranslation(['optiongroups'])
-  const config = props.config || props.design.config.optionGroups[props.group]
+
   return (
     <Li>
       <Details>
@@ -19,10 +19,10 @@ const OptionGroup = props => {
           <Chevron />
         </Summary>
         <Ul>
-          {config.map(option =>
-            typeof option === 'string' ? <Option {...props} option={option} key={option} />
-            : Object.keys(option).map((sub) => <OptionGroup {...props} config={option[sub]} group={sub} key={sub}/>)
-          )}
+          {Object.entries(props.options).map(([option, type]) => typeof type === "string"
+            ? <Option {...props} type={type} option={option} key={option} />
+            : <OptionGroup {...props} group={option} options={type} key={option}/>)
+          }
         </Ul>
       </Details>
     </Li>

@@ -1,4 +1,4 @@
-import Json from 'shared/components/json.js'
+import Json from 'shared/components/json-highlight.js'
 
 const GistAsJson = props => (
   <div className="max-w-screen-xl m-auto">
