@@ -1,4 +1,4 @@
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 import scalebox from './scalebox'
 import miniscale from './miniscale'
 

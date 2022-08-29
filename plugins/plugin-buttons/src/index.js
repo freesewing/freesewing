@@ -1,7 +1,7 @@
 import button from './button'
 import buttonhole from './buttonhole'
 import snaps from './snaps'
-import pkg from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 
 export default {
   name: pkg.name,

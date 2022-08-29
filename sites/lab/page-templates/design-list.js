@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 import { formatVersionTitle } from 'site/components/version-picker.js'
 import Layout from 'site/components/layouts/bare'
 import { PageTitle } from 'shared/components/layouts/default'
-import availableVersions from 'site/available-versions.json'
+import availableVersions from 'site/available-versions.json' assert { type: 'json' }
 
 const DesignLinks = ({ list, prefix='', version=false }) => {
   const { t } = useTranslation(['patterns'])
