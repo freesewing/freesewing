@@ -14,7 +14,7 @@ import { Snippet } from './snippet.mjs'
 import { Svg } from './svg.mjs'
 import { Store } from './store.mjs'
 import { Hooks } from './hooks.mjs'
-import { version } from '../package.json' assert { type: 'json' }
+import { version } from '../pkg.mjs'
 
 /*
  * Makes sure an object passed to be attached as a part it not merely a method
@@ -319,7 +319,6 @@ Pattern.prototype.draft = function () {
     if (this.needs(partName)) {
       // Draft part
       if (typeof this.__parts?.[partName]?.draft === 'function') {
-        // 2022 way - Part is contained in config
         try {
           this.parts[partName] = this.__parts[partName].draft(this.parts[partName])
           if (this.parts[partName].render) this.cutList[partName] = this.parts[partName].cut
@@ -786,6 +785,10 @@ Pattern.prototype.needs = function (partName) {
 
 /* Checks whether a part is hidden in the config */
 Pattern.prototype.isHidden = function (partName) {
+  if (Array.isArray(this.settings.only)) {
+    if (this.settings.only.includes(partName)) return false
+  }
+
   return (this.__parts?.[partName]?.hide) ? true : false
 }
 
@@ -793,9 +796,7 @@ Pattern.prototype.isHidden = function (partName) {
  * This depends on the 'only' setting
  */
 Pattern.prototype.wants = function (partName) {
-  if (!this.settings?.only === 'undefined' || this.settings.only === false) {
-    if (this.isHidden(partName)) return false
-  }
+  if (this.isHidden(partName)) return false
   else if (typeof this.settings.only === 'string') return (this.settings.only === partName)
   else if (Array.isArray(this.settings.only)) {
     for (const part of this.settings.only) {

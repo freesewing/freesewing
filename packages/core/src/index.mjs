@@ -34,7 +34,7 @@ import {
   generatePartTransform,
   macroName,
 } from "./utils.mjs"
-import { version } from '../package.json' assert { type: 'json' }
+import { version } from '../pkg.mjs'
 
 // Named exports
 export {
