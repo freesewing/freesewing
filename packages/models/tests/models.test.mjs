@@ -13,14 +13,15 @@ describe('Measurements', () => {
 })
 
 for (const type in sizes) {
-  describe(`Sizes: ${type}`, () => {
-    for (const size of sizes[type]) {
-      it(`${type}${size} should have all measurements`, () => {
-        for (const m of measurements) {
-          expect(typeof all[`${type}${size}`][m]).to.equal('number');
-        }
-      })
-    }
-  })
+  for (const size of sizes[type]) {
+    describe(`${type} size ${size}`, () => {
+      for (const m of measurements) {
+        it(`${type}${size} should have the ${m} measurement`, () => {
+          expect(typeof all[`${type}${size}`][m]).to.equal('number')
+          expect(isNaN(all[`${type}${size}`][m])).to.equal(false)
+        })
+      }
+    })
+  }
 }
 

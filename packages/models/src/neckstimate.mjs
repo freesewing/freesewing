@@ -2,6 +2,7 @@
  * This completes the list of measurements with the ones
  *  we can calculate based on what we already have
  */
+/*
 function complete(m) {
   // Added by plugin-bust:
   m.bust = m.chest
@@ -19,7 +20,7 @@ function complete(m) {
 
   return m
 }
-
+*/
 
 /*
  * These are a set of measurements of an average-sized [woman, man].
@@ -29,7 +30,7 @@ function complete(m) {
  * but we are not in the business of standard sizes, so this will do.
  */
 
-const base = complete({
+const base = {
   ankle: [245, 235],
   biceps: [270, 350],
   bustFront: [480, 560], // FIXME: Estimate
@@ -65,10 +66,12 @@ const base = complete({
   waistToHips: [125, 130],
   waistToKnee: [600, 640],
   waistToSeat: [250, 270],
-  waistToUnderbust: [80, ],
+  waistToUnderbust: [80, 55], // FIXME: Estimate
   waistToUpperLeg: [285, 340],
   wrist: [165, 175],
-})
+}
+// Add auto-calculated measures
+//const full = complete(base)
 
 /*
  * Since linear measurements don't scale the same as circumference
@@ -80,8 +83,10 @@ let v = 0.65 // vertical
 const ratio = {
   // Arc measurements
   bustFront: a,
+  bustBack: a,
   bustPointToUnderbust: a,
   bustSpan: a,
+  highBustBack: a,
   highBustFront: a,
   // Circumference measurements
   ankle: c,
@@ -96,26 +101,34 @@ const ratio = {
   hpsToBust: v,
   hpsToWaistBack: v,
   hpsToWaistFront: v,
+  waistToArmhole: v,
   waistToHips: v,
   waistToKnee: v,
   waistToSeat: v,
   waistToUnderbust: v,
   waistToUpperLeg: v,
   // Other
-  seatBack: 0.6,
-  waistBack: 0.85,
   crossSeam: 0.6,
-  crossSeamFront: 0.3,
+  crossSeamFront: 0.6,
+  crossSeamBack: 0.6,
   head: 0.35,
   heel: 0.25,
   inseam: 0.25,
   knee: 0.65,
   seat: 0.6,
+  seatBack: 0.6,
+  seatBackArc: 0.6,
+  seatFront: 0.6,
+  seatFrontArc: 0.6,
   shoulderToElbow: 0.5,
   shoulderToShoulder: 0.65,
   shoulderToWrist: 0.3,
   upperLeg: 0.45,
   waist: 0.85,
+  waistBack: 0.85,
+  waistBackArc: 0.85,
+  waistFront: 0.85,
+  waistFrontArc: 0.85,
   waistToFloor: 0.4,
   wrist: 0.5
 }
@@ -143,7 +156,7 @@ export const neckstimate = (neck = false, measurement = false, breasts = false, 
   const i = breasts ? 0 : 1
 
   // Shoulder slope is in degrees. Always return the base.
-  if (measurement === 'shoulderSlope') base.shoulderSlope[i]
+  if (measurement === 'shoulderSlope') return base.shoulderSlope[i]
 
   if (!neck) throw new Error('neckstimate() requires a neck measurement in mm as first parameter')
 
