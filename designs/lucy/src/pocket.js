@@ -54,7 +54,7 @@ export default function (part) {
     points.logo = points.centerLeft.shift(270, pocketLength / 3)
     snippets.logo = new Snippet('logo', points.logo)
 
-    points.scalebox = points.middle.shift(270, pocketWidth / 5)
+    points.scalebox = points.logo.shift(270, pocketWidth / 5)
     macro('scalebox', { at: points.scalebox })
 
     if (sa) {
