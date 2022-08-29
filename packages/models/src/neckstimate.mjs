@@ -1,3 +1,4 @@
+
 /*
  * These are a set of measurements of an average-sized [woman, man].
  * We simply extrapolate for other sizes (based on neck)
@@ -5,6 +6,10 @@
  * That is almost certainly not the best sizing table you can get,
  * but we are not in the business of standard sizes, so this will do.
  */
+
+// This signifies the index in the array of a measurements' value
+export const SHEHER = 0
+export const HEHIM = 1
 
 const base = {
   ankle: [245, 235],
