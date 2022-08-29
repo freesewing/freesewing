@@ -6,7 +6,7 @@ export const back = {
   name: 'aaron.back',
   options: {
     backNeckCutout: 0.05,
-    backlineBend: { pct: 50, min: 25, max: 100 }
+    backlineBend: { pct: 50, min: 25, max: 100, menu: 'style' }
   },
   draft: part => {
     const {
