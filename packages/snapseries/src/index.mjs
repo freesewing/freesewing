@@ -1,8 +1,3 @@
-
-/*
- * Snap series
- * ==============================
- */
 // Common width for elastics
 export const elastics = {
   metric: [3.5, 5, 10, 12, 20, 25, 30, 40, 50, 60, 80, 100, 120],
@@ -38,21 +33,6 @@ export const bigsteps = {
   imperial: 12.7, // 1/2 inch
 }
 
-/*
- * Config helper methods
- * ==============================
- */
-export function pctBasedOn(measurement) {
-  return {
-    toAbs: (val, { measurements }) => measurements?.[measurement]
-      ? measurements[measurement] * val
-      : null,
-    fromAbs: (val, { measurements }) => measurements?.[measurement]
-      ? Math.round((10 * val) / measurements[measurement]) / 10
-      : null
-  }
-}
-
 // Default export
 export default {
   elastics,
@@ -60,5 +40,4 @@ export default {
   smallsteps,
   steps,
   bigsteps,
-  pctBasedOn,
 }

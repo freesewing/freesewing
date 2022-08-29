@@ -9,6 +9,7 @@
 
  - The `@freesewing/components` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/css-theme` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `@freesewing/config-helpers` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported. Use the `@freesewing/snapseries` package for various helpers for snapped percentage options. The `pctBasedOn` helper method is now available as a named export from `@freesewing/core`
  - The `@freesewing/i18n` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/mui-theme` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/pattern-info` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
@@ -839,12 +840,6 @@
 #### Changed
 
  - Migrated from Rollup to Esbuild for all builds
-
-### config-helpers
-
-#### Added
-
- - This new package replaces the previous snapseries package and adds extra helper methods for pattern config such as `pctBasedOn()` which was previously exported by core
 
 ### core
 
@@ -1921,6 +1916,12 @@
 
  - This is a plugin to strip (FreeSewing) versdion info out of the SVG to allow you to diff your SVG output between FreeSewing versions
  - Initial release
+
+### snapseries
+
+#### Added
+
+ - Initial release of `@freesewing/snapseries` wich holds commonly used series of snap values for percentage options
 
 ### core
 

@@ -14,6 +14,10 @@ Unreleased:
         While v2 versions remain available, this package is no longer supported.
       - The `@freesewing/css-theme` package is not part of FreeSewing v3.
         While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/config-helpers` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+        Use the `@freesewing/snapseries` package for various helpers for snapped percentage options.
+        The `pctBasedOn` helper method is now available as a named export from `@freesewing/core`
       - The `@freesewing/i18n` package is not part of FreeSewing v3.
         While v2 versions remain available, this package is no longer supported.
       - The `@freesewing/mui-theme` package is not part of FreeSewing v3.

@@ -1,13 +1,13 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/config-helpers"
-  title="@freesewing/config-helpers on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/config-helpers.svg"
-  alt="@freesewing/config-helpers on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/snapseries"
+  title="@freesewing/snapseries on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/snapseries.svg"
+  alt="@freesewing/snapseries on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/config-helpers.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/snapseries.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -15,10 +15,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aconfig-helpers"
-  title="Open issues tagged pkg:config-helpers"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:config-helpers.svg?label=Issues"
-  alt="Open issues tagged pkg:config-helpers"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Asnapseries"
+  title="Open issues tagged pkg:snapseries"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:snapseries.svg?label=Issues"
+  alt="Open issues tagged pkg:snapseries"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
@@ -46,9 +46,9 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/config-helpers
+# @freesewing/snapseries
 
-A FreeSewing package to facilitate pattern configurations
+A FreeSewing package to facilitate snapped percentage options in designs
 
 
 
@@ -63,7 +63,7 @@ A FreeSewing package to facilitate pattern configurations
 
 This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
 
-This folder holds: @freesewing/config-helpers
+This folder holds: @freesewing/snapseries
 
 If you're not entirely sure what to do or how to start, type this command:
 
