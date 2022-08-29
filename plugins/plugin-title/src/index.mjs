@@ -41,6 +41,7 @@ export const plugin = {
           `_${prefix}_titleName`,
           `_${prefix}_titlePattern`,
           `_${prefix}_titleFor`,
+          `_${prefix}_exportDate`,
         ])
           delete this.points[id]
         return true
