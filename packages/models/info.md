@@ -43,4 +43,5 @@ The digits in the model refer to the neck circumference in cm.
 
 - measurements: A list/array of measurement names
 - sizes: An object with `menswear` and `womenswear` keys that hold a list/array of sizes we provide
-
+- menswear: An object with the menswear models
+- womenswear: An object with the womenswear models

@@ -37,3 +37,30 @@ export const menswear48 = getMeasurements(48, false)
 export const menswear50 = getMeasurements(50, false)
 
 export { measurements }
+
+export const womenswear = {
+  womenswear28,
+  womenswear30,
+  womenswear32,
+  womenswear34,
+  womenswear36,
+  womenswear38,
+  womenswear40,
+  womenswear42,
+  womenswear44,
+  womenswear46,
+}
+
+export const menswear = {
+  menswear32,
+  menswear34,
+  menswear36,
+  menswear38,
+  menswear40,
+  menswear42,
+  menswear44,
+  menswear46,
+  menswear48,
+  menswear50,
+}
+

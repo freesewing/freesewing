@@ -1,28 +1,4 @@
 /*
- * This completes the list of measurements with the ones
- *  we can calculate based on what we already have
- */
-/*
-function complete(m) {
-  // Added by plugin-bust:
-  m.bust = m.chest
-
-  // Added by plugin-measurements:
-  m.crossSeamBack = [0,1].map(i => m.crossSeam[i] - m.crossSeamFront[i])
-  m.seatBackArc = [0,1].map(i => m.seatBack[i] / 2)
-  m.waistBackArc = [0,1].map(i => m.waistBack[i] / 2)
-  m.bustBack = [0,1].map(i => m.bust[i] - m.bustFront[i])
-  m.seatFront = [0,1].map(i => m.seat[i] - m.seatBack[i])
-  m.seatFrontArc = [0,1].map(i => m.seatFront[i] / 2)
-  m.waistFront = [0,1].map(i => m.waist[i] - m.waistBack[i])
-  m.waistFrontArc = [0,1].map(i => m.waistFront[i] / 2)
-  m.highBustBack = [0,1].map(i => m.highBust[i] - m.highBustFront[i])
-
-  return m
-}
-*/
-
-/*
  * These are a set of measurements of an average-sized [woman, man].
  * We simply extrapolate for other sizes (based on neck)
  * by keeping the same proportions.
@@ -70,8 +46,6 @@ const base = {
   waistToUpperLeg: [285, 340],
   wrist: [165, 175],
 }
-// Add auto-calculated measures
-//const full = complete(base)
 
 /*
  * Since linear measurements don't scale the same as circumference
