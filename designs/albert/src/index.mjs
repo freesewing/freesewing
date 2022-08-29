@@ -1,6 +1,6 @@
 import { Design } from '@freesewing/core'
-import { name, version } from '../package.json'
 import { pluginBundle } from '@freesewing/plugin-bundle'
+import { name, version } from '../pkg.mjs'
 import { front } from './front.mjs'
 import { pocket } from './pocket.mjs'
 import { strap } from './strap.mjs'

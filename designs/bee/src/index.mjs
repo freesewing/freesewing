@@ -1,6 +1,6 @@
 import { Design } from '@freesewing/core'
-import { name, version } from '../package.json'
 import { pluginBundle } from '@freesewing/plugin-bundle'
+import { name, version } from '../pkg.mjs'
 import { cup } from './cup.mjs'
 import { neckTie } from './neck-tie.mjs'
 import { bandTie } from './band-tie.mjs'

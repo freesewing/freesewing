@@ -1,7 +1,7 @@
 import { Design } from '@freesewing/core'
-import { name, version } from '../package.json'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
+import { name, version } from '../pkg.mjs'
 import { back } from './back.mjs'
 import { front } from './front.mjs'
 import { sleeve } from './sleeve.mjs'
