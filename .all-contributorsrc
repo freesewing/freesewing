@@ -922,6 +922,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Bart-PXL",
+      "name": "Bart",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45118788?v=4",
+      "profile": "https://github.com/Bart-PXL",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true
