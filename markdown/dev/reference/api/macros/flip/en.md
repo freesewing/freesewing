@@ -2,7 +2,7 @@
 title: flip
 ---
 
-The `flip` macro flips (mirrors) an entire part vertically around either the X-axis or the Y-axis.\
+The `flip` macro flips (mirrors) an entire part vertically around either the X-axis or the Y-axis.  
 It is provided by the [flip plugin](/reference/plugins/flip).
 
 ```js

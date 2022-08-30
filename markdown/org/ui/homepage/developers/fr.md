@@ -19,7 +19,7 @@ Notre [documentation de développeur](https://freesewing.dev) est disponible sur
 
 #### Vous souhaitez nous aider ?
 
-Awesome ❤️\
+Awesome ❤️  
 The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
 
 Si vous n'êtes pas sûr de la façon dont vous pourriez contribuer, consultez [les moyens de contribuer](https://freesewing.dev/howtos/ways-to-contribute), vous verrez qu'il y a certainement quelque chose que vous pouvez faire pour aider.

@@ -19,7 +19,7 @@ Onze [documentatie over ontwikkelaars](https://freesewing.dev) is beschikbaar op
 
 #### Wil je meehelpen?
 
-Awesome ❤️\
+Awesome ❤️  
 The fastest thing to do is [join us on Discord](https://discord.freesewing.org/) where all the other contributors hang out.
 
 Als je niet zeker weet hoe je zou kunnen bijdragen, bekijk dan [manieren om bij te dragen](https://freesewing.dev/howtos/ways-to-contribute), je zult zeker zien dat je iets kunt doen om te helpen.

@@ -2,7 +2,7 @@
 title: grainline
 ---
 
-The `grainline` macro adds a _grainline_ indicator to your pattern.\
+The `grainline` macro adds a _grainline_ indicator to your pattern.  
 It is provided by the [grainline plugin](/reference/plugins/grainline/).
 
 <Example part="plugin_grainline">

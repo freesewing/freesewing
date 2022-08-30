@@ -47,7 +47,7 @@ When sewing the left flap down on the outside, you may find it best to make a te
 
 <Note>
 
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.\
+If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
 If wanting something more historical than omit the zipper and make a buttonhole fly instead.
 
 </Note>

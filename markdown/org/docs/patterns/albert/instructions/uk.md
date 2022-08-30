@@ -19,7 +19,7 @@ If you have trouble catching the top hem we suggest to either _Baste_ close to t
 
 <Note>
 
-There are multiple ways to sew a patch pocket so use the way you prefer if you do not like this one.\
+There are multiple ways to sew a patch pocket so use the way you prefer if you do not like this one.  
 A fun thing you can do is embroider/stitch the pocket with the name of the person the apron is for or even a cute design. Just remember that aprons typically get dirty so don't go to overtop with it.
 
 </Note>
@@ -33,7 +33,7 @@ A fun thing you can do is embroider/stitch the pocket with the name of the perso
 
 <Note>
 
-It is recommended to hem the side seams before the top and bottom seams as they are narrower.\
+It is recommended to hem the side seams before the top and bottom seams as they are narrower.  
 The side seams are narrow hems simply being the seam allowance folded over twice.
 
 </Note>

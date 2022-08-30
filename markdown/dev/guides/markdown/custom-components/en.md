@@ -3,7 +3,7 @@ title: Custom components
 order: 90
 ---
 
-The way we render markdown on our websites is through the use of [MDX](https://mdxjs.com/).\
+The way we render markdown on our websites is through the use of [MDX](https://mdxjs.com/).  
 This allows us to extend Markdown with our own so-called _custom components_.
 
 Such custom components allow us to put things in Markdown content that would

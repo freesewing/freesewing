@@ -29,7 +29,7 @@ The `@freesewing/core` default export is a single object with the following prop
 
 <Note>
 
-You will typically use the `Design()` constructor.\
+You will typically use the `Design()` constructor.  
 The other constructors and utilities below are exported to facilitate unit testing.
 
 </Note>

@@ -9,7 +9,7 @@ title: "Diana draped top: Sewing Instructions"
 
 <Tip>
 
-For woven fabric make this a bias cut strip.\
+For woven fabric make this a bias cut strip.  
 For knit fabric make a strip with the stretch of the fabric running along the long edge.
 
 </Tip>

@@ -2,7 +2,7 @@
 title: sprinkle
 ---
 
-The `sprinkle` macro facilitates adding snippets to your pattern in bulk.\
+The `sprinkle` macro facilitates adding snippets to your pattern in bulk.  
 It is by the [sprinkle plugin](/reference/plugins/sprinkle).
 
 <Example part="plugin_sprinkle">

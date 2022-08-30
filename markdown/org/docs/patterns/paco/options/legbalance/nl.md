@@ -8,7 +8,7 @@ De achterkant van de broekspijpen zijn altijd breder dan de voorkant. Hoeveel co
 
 <Note>
 
-Increasing this will make the front leg panel narrower.\
+Increasing this will make the front leg panel narrower.  
 This makes the wearer look more skinny.
 
 This trick is often used in womenswear jeans

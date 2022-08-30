@@ -4,7 +4,7 @@ title: "Crotch drop"
 
 Steuert wie stark der Schneider gesenkt wird.
 
-Lowering the crotch makes for a more casual fit.\
+Lowering the crotch makes for a more casual fit.  
 A signigicantly lowered crotched can also be a style choice.
 
 ## Effekt dieser Option auf das Schnittmuster
