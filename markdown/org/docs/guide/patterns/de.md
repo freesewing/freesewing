@@ -3,7 +3,8 @@ title: Deine Schnittmuster
 order: 400
 ---
 
-Wenn du ein maßgeschneidertes Schnittmuster erstellst, kannst du es ohne Ende anpassen und in verschiedenste Formate, einschließlich PDF, exportieren. Aber es bleibt vergänglich, bis du es in deinem Account speicherst, wo es zu einem **deiner Schnittmuster** wird.
+When you generate a made-to-measure pattern, you can tweak it endlessly, and export it to a variety of formats, including PDF.  
+But it remains ephemeral until you save it to your account, so it becomes one of **your patterns**.
 
 Das Speichern deines Schnittmusters ist optional, es erlaubt dir aber, es später noch einmal aufzurufen, weitere Anpassungen vorzunehmen oder einfach das PDF noch einmal herunterzuladen.
 
