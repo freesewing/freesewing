@@ -34,7 +34,7 @@ const repo = {
   exceptions: readConfigFile('exceptions.yaml'),
   templates: {
     pkg: readTemplateFile('package.dflt.json'),
-    pkgmjs: readTemplateFile('pkg.dflt.mjs'),
+    data: readTemplateFile('data.dflt.mjs'),
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.mjs'),
@@ -75,8 +75,8 @@ for (const pkg of Object.values(software)) {
     JSON.stringify(packageJson(pkg), null, 2) + '\n'
   )
   fs.writeFileSync(
-    path.join(cwd, pkg.folder, pkg.name, 'pkg.mjs'),
-    mustache.render(repo.templates.pkgmjs, { name: fullName(pkg.name), version })
+    path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
+    mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
   )
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'README.md'),
