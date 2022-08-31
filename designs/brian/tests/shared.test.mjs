@@ -13,4 +13,4 @@ testPatternConfig(Brian)
 testPatternDrafting(Brian, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-testPatternSampling(Brian, false)
+testPatternSampling(Brian, 0)
