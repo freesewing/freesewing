@@ -567,12 +567,25 @@ export const addPartDependencies = (part, config) => {
   return config
 }
 
+// Add part-level plugins
+export const addPartPlugins = (part, config) => {
+  if (!part.plugins) return config
+  if (!Array.isArray(part.plugins)) part.plugins = [ part.plugins ]
+  for (const plugin of part.plugins) {
+    if (plugin.plugin && plugin.condition) config.plugins[plugin.plugin.name] = plugin
+    else config.plugins[plugin.name] = plugin
+  }
+
+  return config
+}
+
 export const addPartConfig = (part, config) => {
   config = addPartOptions(part, config)
   config = addPartMeasurements(part, config)
   config = addPartOptionalMeasurements(part, config)
   config = addPartDependencies(part, config)
   config = addPartOptionGroups(part, config)
+  config = addPartPlugins(part, config)
 
   return config
 }

@@ -173,6 +173,10 @@ Pattern.prototype.getPartList = function () {
  */
 Pattern.prototype.init = function () {
   this.initialized++
+  // Load plugins
+  if (this.config.plugins) {
+    for (const plugin of Object.values(this.config.plugins)) this.use(plugin)
+  }
   // Resolve all dependencies
   this.dependencies = this.config.dependencies
   this.inject = this.config.inject
@@ -522,12 +526,19 @@ Pattern.prototype.render = function () {
 }
 
 Pattern.prototype.on = function (hook, method, data) {
+  for (const added of this.hooks[hook]) {
+    // Don't add it twice
+    if (added.method === method) return this
+  }
   this.hooks[hook].push({ method, data })
 
   return this
 }
 
 Pattern.prototype.use = function (plugin, data) {
+  // Conditional plugin?
+  if (plugin.plugin && plugin.condition) return this.useIf(plugin, data)
+  // Regular plugin
   this.raise.info(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
   if (plugin.hooks) this.loadPluginHooks(plugin, data)
   if (plugin.macros) this.loadPluginMacros(plugin)

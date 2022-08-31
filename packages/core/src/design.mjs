@@ -8,12 +8,12 @@ import { addPartConfig } from './utils.mjs'
  */
 export function Design(config) {
 
-  // Merge config with defaults
+  // Initialize config with defaults
   config = {
-    parts: [],
-    options: {},
     measurements: [],
     optionalMeasurements: [],
+    options: {},
+    parts: [],
     plugins: [],
     ...config
   }
@@ -37,16 +37,7 @@ export function Design(config) {
   const pattern = function (settings) {
     Pattern.call(this, config)
 
-    // Load plugins
-    if (!Array.isArray(config.plugins)) config.plugins = [ config.plugins ]
-    for (const plugin of config.plugins) {
-      if (plugin.plugin && plugin.condition) this.useIf(plugin, settings)
-      else this.use(plugin)
-    }
-
-    this.apply(settings)
-
-    return this
+    return this.init().apply(settings)
   }
 
   // Set up inheritance
