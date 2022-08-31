@@ -1,11 +1,9 @@
 import designs from "../../config/software/designs.json" assert { type: 'json' }
-import { nonHumanMeasurements } from './non-human-measurements.mjs'
-import { withBreasts, withoutBreasts } from '@freesewing/models'
+import { adults, dolls, giants } from '@freesewing/models'
 import { getShortName, getFamily } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
-const models = { withBreasts, withoutBreasts }
 
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']
@@ -25,9 +23,6 @@ export const testPatternDrafting = (Pattern, log=false) => {
   const family = getFamily(design)
   const parts = pattern.getPartList()
 
-  // Load non-human measurements
-  const nonHuman = nonHumanMeasurements(models)
-
   // Helper method to try/catch pattern drafting
   const doesItDraftAndRender = (pattern, log=false) => {
     try {
@@ -41,64 +36,60 @@ export const testPatternDrafting = (Pattern, log=false) => {
     }
   }
 
-  // FIXME: Just use womenswear measurements, as they should always work
-  const breasts = true
-  const ourModels = withBreasts
-
   /*
    * Draft pattern for different models
    */
   if (family !== 'utilities') {
-    it('Draft for humans:', () => true)
-
-    for (let size in ourModels) {
-      it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
-        expect(
-          doesItDraftAndRender(
-            new Pattern({
-              measurements: ourModels[size]
-            }), log
-          )
-        ).to.equal(true)
-      })
-    }
+    describe('Draft for humans:', () => {
+      for (const type of ['sheher', 'hehim']) {
+        describe(type, () => {
+          for (const size in adults[type]) {
+            it(`  - Drafting for size ${size}`, () => {
+              expect(
+                doesItDraftAndRender(
+                  new Pattern({
+                    measurements: adults[type][size]
+                  }), log
+                )
+              ).to.equal(true)
+            })
+          }
+        })
+      }
+    })
 
     if (deprecated.indexOf(design) === -1) {
       // Do the same for fantastical models (dolls, giants)
-      it('Draft for dolls:', () => true)
-
-      for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls) {
-        it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
-          expect(
-            doesItDraftAndRender(
-              new Pattern({
-                measurements: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].dolls[size]
-              }), log
-            )
-          ).to.equal(true)
-        })
-      }
-
-      it('Draft for giants:', () => true)
-
-      for (let size in nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].giants) {
-        it(`  - Drafting for ${size} (${breasts ? 'with' : 'no'} breasts)`, () => {
-          expect(
-            doesItDraftAndRender(
-              new Pattern({
-                measurements: nonHuman[breasts ? 'withBreasts' : 'withoutBreasts'].giants[size]
-              }), log
-            )
-          ).to.equal(true)
+      const fams = { dolls, giants }
+      for (const family of ['dolls', 'giants']) {
+        describe(`Draft for ${family}:`, () => {
+          for (const type of ['sheher', 'hehim']) {
+            describe(type, () => {
+              for (const size in fams[family][type]) {
+                it(`  - Drafting at ${size}%`, () => {
+                  expect(
+                    doesItDraftAndRender(
+                      new Pattern({
+                        measurements: fams[family][type][size]
+                      }), log
+                    )
+                  ).to.equal(true)
+                })
+              }
+            })
+          }
         })
       }
     }
   }
+}
+
 
 
   /*
    * Draft parts individually
    */
+/*
   it('Draft parts individually:', () => true)
   for (const name of parts) {
     it(`  - ${name} should draft and render on its own`, () => {
@@ -112,10 +103,12 @@ export const testPatternDrafting = (Pattern, log=false) => {
       ).to.equal(true)
     })
   }
+  */
 
   /*
    * Draft a paperless non-detailed pattern
    */
+/*
   it('Draft paperless non-detailed pattern:', () => true)
   if (family !== 'utilities') {
     for (const sa of [0,10]) {
@@ -134,4 +127,5 @@ export const testPatternDrafting = (Pattern, log=false) => {
     }
   }
 }
+  */
 

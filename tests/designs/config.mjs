@@ -25,29 +25,29 @@ export const getFamily = design => {
  */
 export const testPatternConfig = (Pattern) => {
   const pattern = new Pattern()
-  pattern.init()
+  const config = pattern.getConfig()
   it('Pattern metadata:', () => true)
   it(`  - 'name' should be set and be a non-empty string`, () => {
-    expect(typeof pattern.config.name).to.equal('string')
-    expect(pattern.config.name.length > 1).to.be.true
+    expect(typeof config.name).to.equal('string')
+    expect(config.name.length > 1).to.be.true
   })
   //
   it(`  - 'version' should be set and be a non-empty string`, () => {
-    expect(typeof pattern.config.version).to.equal('string')
-    expect(pattern.config.version.length > 1).to.be.true
+    expect(typeof config.version).to.equal('string')
+    expect(config.version.length > 1).to.be.true
   })
   it(`  - 'version' should be a proper semantic version`, () => {
-    const chunks = pattern.config.version.split('.')
+    const chunks = config.version.split('.')
     if (chunks.length > 3) {
-      expect(pattern.config.version.split('.').length).to.equal(4)
+      expect(config.version.split('.').length).to.equal(4)
       expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
     }
-    else expect(pattern.config.version.split('.').length).to.equal(3)
+    else expect(config.version.split('.').length).to.equal(3)
   })
 
   it('Monorepo metadata:', () => true)
   // Store these for re-use
-  const shortName = getShortName(pattern.config.name)
+  const shortName = getShortName(config.name)
   const family = getFamily(shortName)
   it(`  - 'name' should be resolvable to a short name`, () => {
     expect(typeof shortName).to.equal('string')
@@ -97,33 +97,24 @@ export const testPatternConfig = (Pattern) => {
 
   if (family !== 'utilities') {
     // Ensure required measurements are known measurements
-    // Ensure required measurements are known measurements
     it('Required measurements:', () => true)
-    for (let measurement of pattern.config.measurements || []) {
+    for (const measurement of config.measurements || []) {
       it(`  - '${measurement}' should be a known measurement`, () => {
-        if (measurements.menswear.indexOf(measurement) !== -1) {
-          expect(measurements.menswear.indexOf(measurement)).to.not.equal(-1)
-        } else {
-          expect(measurements.womenswear.indexOf(measurement)).to.not.equal(-1)
-        }
+        expect(measurements.indexOf(measurement)).to.not.equal(-1)
       })
     }
     it('Optional measurements:', () => true)
-    for (let measurement of pattern.config.optionalMeasurements || []) {
+    for (let measurement of config.optionalMeasurements || []) {
       it(`  - '${measurement}' should be a known measurement`, () => {
-        if (measurements.menswear.indexOf(measurement) !== -1) {
-          expect(measurements.menswear.indexOf(measurement)).to.not.equal(-1)
-        } else {
-          expect(measurements.womenswear.indexOf(measurement)).to.not.equal(-1)
-        }
+        expect(measurements.indexOf(measurement)).to.not.equal(-1)
       })
     }
   }
 
   // Test validity of the pattern's options
   it('Pattern options:', () => true)
-  for (let name in pattern.config.options) {
-    const option = pattern.config.options[name]
+  for (const name in config.options) {
+    const option = config.options[name]
     const type = typeof option
     if (type === 'object' && typeof option.pct !== 'undefined') {
       it(`    - If it has a 'menu' property, it should be a string`, () => {
