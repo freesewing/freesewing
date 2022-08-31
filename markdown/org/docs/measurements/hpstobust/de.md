@@ -22,8 +22,10 @@ Der Sinn dieser Messung ist es, den vollsten Teil deiner Brust vertikal an deine
 ##### Sei dir bewusst, welche Hand du benutzt
 Wenn du dich selber vermisst, kann es sein, dass du das Maßband mit der Seite hälst, deren Schulter du gerade vermessen möchtest. Zum Beispiel kann es sein, dass du den Anfang des Maßbandes mit der rechten Hand an deine rechte Schulter hälst, während die linke Hand das andere Ende des Maßbandes festhält.
 Dies bedeutet jedoch, dass du durch das Heben deines Armes auf derselben Seite genau die Länge verzerrst, die du messen möchtest.
-Du denkst vielleicht, dass das keinen großen Unterschied macht, aber in der Welt der Physiologie ist alles verbunden, und so eine Kleinigkeit kann zu einer Fehlmessung von ~2,5 cm (~1 inch) führen. Wechsel einfach deine Hände durch und du wirst ein genaueres Messergebnis erhalten.
+You might not think there is a difference, but all is connected in the world of physiology, and
+doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.  
+Simply switch your hands around, and you get a more accurate measurement.
 
-Für die besten Ergebnisse hole dir (falls möglich) eine zweite Person dazu, die deine Maße für dich nimmt.
+For best results, get a second person to take your measurements (if possible).
 
 </Tip>

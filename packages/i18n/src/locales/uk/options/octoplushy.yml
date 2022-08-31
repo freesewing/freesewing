@@ -1,28 +1,28 @@
 size:
-  title: Size
-  description: Controls the overall size
+  title: Розмір
+  description: Керує загальним розміром
 type:
-  title: Type
-  description: Allows you to choose one of the variants of this design
+  title: Тип
+  description: Дозволяє обрати один з варіантів цього дизайну
 armWidth:
-  title: Arm width
-  description: Controls the width of the arms
+  title: Ширина мацальця
+  description: Керує шириною окремих мацальців (щупальців)
 armLength:
-  title: Arm width
-  description: Controls the length of the arms
+  title: Довжина мацальця
+  description: Керує довжиною окремих мацальців (щупальців)
 neckWidth:
-  title: Neck width
-  description: Determines the width at the neck
+  title: Ширина шиї
+  description: Керує шириною шиї (місця між головою та мацальцями)
 armTaper:
-  title: Arm tapering
-  description: Controls the amount by which the arms taper
+  title: Звуження мацальця
+  description: Керує звуженням мацальців до краю
 bottomTopArmRatio:
-  title: Bottom/Top arm ratio
-  description: "FIXME: No idea what this does"
+  title: Співвідношення верху/низу мацальця
+  description: "Я й гадки не маю, що воно робить"
 bottomArmReduction:
-  title: Bottom arm reduction
-  description: "FIXME: No idea what this does"
+  title: Зменшення низу мацальця
+  description: "Я й гадки не маю, що воно робить"
 bottomArmReductionPlushy:
-  title: Bottom arm reduction (plushy)
-  description: "FIXME: No idea what this does"
+  title: Зменшення низу мацальця (іграшка)
+  description: "Я й гадки не маю, що воно робить"
 

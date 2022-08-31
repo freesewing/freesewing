@@ -14,6 +14,7 @@ Wir skalieren oder gradieren keine Schnittmuster. Stattdessen erstellen wir den 
 Um ein maßgeschneidertes Schnittmuster zu erstellen, brauchst du einen Account.
 Für den/die unbedarfte/n Besucher/in, der/die über unsere Website stolpert, erzeugt das einiges an Aufwand, bevor er/sie die Website ausprobieren kann.
 
-Aus diesem Grund haben wir in Version 2.2 Standardgrößen eingeführt. Wir empfehlen diese Standardgrößen nicht für den Entwurf von Kleidungsstücken zu verwenden.
+For this reason, we've added standard sizes since version 2.2.  
+We advise against using our standard sizes for actual garment construction.
 
 </Note>
