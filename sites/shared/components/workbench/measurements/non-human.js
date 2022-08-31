@@ -1,17 +1,16 @@
-import { menswear42, womenswear34 } from '@freesewing/models'
+import { dolls, giants } from '@freesewing/models'
 
 const nonHuman = {
   menswear: {
-    dolls: {},
-    giants: {}
+    dolls: dolls.hehim,
+    giants: giants.hehim,
   },
   womenswear: {
-    dolls: {},
-    giants: {}
+    dolls: dolls.sheher,
+    giants: giants.sheher,
   }
 }
 const round = val => Math.round(val*10)/10
-
 for (let i=0.1;i<0.7;i+=0.1) {
   const name = `${Math.round(i*10)}/10`
   nonHuman.womenswear.dolls[name] = {}

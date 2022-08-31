@@ -1,7 +1,6 @@
 import React, {useMemo, useEffect, useState} from 'react'
 import MeasurementInput from '../inputs/measurement.js'
-import { menswear, womenswear } from '@freesewing/models'
-import nonHuman from './non-human.js'
+import { adults, dolls, giants } from '@freesewing/models'
 import WomenswearIcon from 'shared/components/icons/womenswear.js'
 import MenswearIcon from 'shared/components/icons/menswear.js'
 import { useTranslation } from 'next-i18next'
@@ -10,21 +9,11 @@ import {settings} from '../menu/core-settings/index';
 import { Tab, Tabs } from 'shared/components/mdx/tabs.js'
 
 
-const groups = {
-  people: { menswear, womenswear },
-  dolls: {
-    menswear: nonHuman.menswear.dolls,
-    womenswear: nonHuman.womenswear.dolls,
-  },
-  giants: {
-    menswear: nonHuman.menswear.giants,
-    womenswear: nonHuman.womenswear.giants,
-  }
-}
+const groups = { adults, dolls, giants }
 
 const icons = {
-  menswear: <MenswearIcon />,
-  womenswear: <WomenswearIcon />,
+  hehim: <MenswearIcon />,
+  sheher: <WomenswearIcon />,
 }
 
 
@@ -81,9 +70,9 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
                         onClick={() => updateMeasurements(groups[group][type][m], false)}
                       >
                         {icons[type]}
-                        { group === 'people'
-                          ? m.slice(-2)
-                          : m
+                        { group === 'adults'
+                          ? `${t('size')} ${m}`
+                          : `${m}%`
                         }
                       </button>
                     </li>
