@@ -14,7 +14,7 @@ import { Snippet } from './snippet.mjs'
 import { Svg } from './svg.mjs'
 import { Store } from './store.mjs'
 import { Hooks } from './hooks.mjs'
-import { version } from '../pkg.mjs'
+import { version } from '../data.mjs'
 
 /*
  * Makes sure an object passed to be attached as a part it not merely a method

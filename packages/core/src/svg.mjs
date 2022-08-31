@@ -1,6 +1,6 @@
 import { Attributes } from './attributes.mjs'
 import { round } from './utils.mjs'
-import { version } from '../pkg.mjs'
+import { version } from '../data.mjs'
 
 export function Svg(pattern) {
   this.openGroups = []

@@ -34,7 +34,7 @@ import {
   generatePartTransform,
   macroName,
 } from "./utils.mjs"
-import { version } from '../pkg.mjs'
+import { version } from '../data.mjs'
 
 // Named exports
 export {
@@ -46,7 +46,6 @@ export {
   Snippet,
 
   Bezier,
-  version,
   capitalize,
   beamsIntersect,
   linesIntersect,
@@ -73,6 +72,8 @@ export {
   pctBasedOn,
   generatePartTransform,
   macroName,
-  isCoord
+  isCoord,
+
+  version,
 }
 
