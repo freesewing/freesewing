@@ -3,7 +3,7 @@ import { neckTie } from './neck-tie.mjs'
 
 export const cup = {
   name: 'bee.cup',
-  from: { ...frontSideDart, hide: true },
+  from: { ...frontSideDart, hideAll: true },
   after: neckTie,
   options: {
     topDepth: { pct: 54, min: 50, max: 80, menu: 'fit' },
