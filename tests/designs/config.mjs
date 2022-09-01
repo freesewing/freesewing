@@ -26,39 +26,39 @@ export const getFamily = design => {
 export const testPatternConfig = (Pattern) => {
   const pattern = new Pattern()
   const config = pattern.getConfig()
-  it('Pattern metadata:', () => true)
+  it('Pattern data:', () => true)
   it(`  - 'name' should be set and be a non-empty string`, () => {
-    expect(typeof config.name).to.equal('string')
-    expect(config.name.length > 1).to.be.true
+    expect(typeof config.data.name).to.equal('string')
+    expect(config.data.name.length > 1).to.be.true
   })
   //
   it(`  - 'version' should be set and be a non-empty string`, () => {
-    expect(typeof config.version).to.equal('string')
-    expect(config.version.length > 1).to.be.true
+    expect(typeof config.data.version).to.equal('string')
+    expect(config.data.version.length > 1).to.be.true
   })
   it(`  - 'version' should be a proper semantic version`, () => {
-    const chunks = config.version.split('.')
+    const chunks = config.data.version.split('.')
     if (chunks.length > 3) {
-      expect(config.version.split('.').length).to.equal(4)
+      expect(config.data.version.split('.').length).to.equal(4)
       expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
     }
     else expect(config.version.split('.').length).to.equal(3)
   })
 
-  it('Monorepo metadata:', () => true)
+  it('Monorepo data:', () => true)
   // Store these for re-use
-  const shortName = getShortName(config.name)
-  const family = getFamily(shortName)
+  const name = getShortName(config.data.name)
+  const family = getFamily(name)
   it(`  - 'name' should be resolvable to a short name`, () => {
-    expect(typeof shortName).to.equal('string')
-    expect(shortName.length > 1).to.be.true
+    expect(typeof name).to.equal('string')
+    expect(name.length > 1).to.be.true
   })
   it(`  - Short name should be in a known design family`, () => {
     expect(typeof family).to.equal('string')
     expect(typeof designs[family]).to.equal('object')
-    expect(typeof designs[family][shortName]).to.equal('object')
+    expect(typeof designs[family][name]).to.equal('object')
   })
-  const meta = designs[family][shortName]
+  const meta = designs[family][name]
   it(`  - 'description' should be set and be a string of reasonable length`, () => {
     expect(typeof meta.description).to.equal('string')
     expect(meta.description.length > 15).to.be.true

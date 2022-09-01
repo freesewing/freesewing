@@ -1,6 +1,6 @@
 import designs from "../../config/software/designs.json" assert { type: 'json' }
 import { adults, dolls, giants } from '@freesewing/models'
-import { getShortName, getFamily } from './config.mjs'
+import { getFamily } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
@@ -19,7 +19,7 @@ export const testPatternSampling = (Pattern, log=false) => {
 
   const pattern = new Pattern()
   const config = pattern.getConfig()
-  const design = getShortName(config.name)
+  const design = pattern.config.data.name
   const family = getFamily(design)
   const parts = pattern.getPartList()
 
