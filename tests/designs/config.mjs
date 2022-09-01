@@ -159,7 +159,7 @@ export const testPatternConfig = (Pattern) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.mm).to.be.true
       })
-      if (deprecated.indexOf(design) === -1 && option.testIgnore !== true) {
+      if (deprecated.indexOf(name) === -1 && option.testIgnore !== true) {
         it(`    - Patterns should not use mm options`, () => {
           expect("Does not use mm").to.be.true
         })
