@@ -1,3 +1,6 @@
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { crossBox } from './index.mjs'
+
 export const bibLength = { pct: 75, min: 0, max: 90, menu: 'style' }
 export const lengthBonus = { pct: 0, min: -20, max: 25, menu: 'style' }
 export const backOpening = { pct: 10, min: 0, max: 25, menu: 'fit' }
@@ -14,6 +17,8 @@ export const front = {
     bibLength,
     lengthBonus,
   },
+//  plugins: [ pluginBundle, crossBox ],
+  plugins: [ pluginBundle ],
   draft: part => {
     const {
       options,
