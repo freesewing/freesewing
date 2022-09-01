@@ -1,14 +1,11 @@
-import { backOpening, bibWidth, bibLength, strapWidth } from './front.mjs'
+import { front } from './front.mjs'
 
 export const strap = {
   name: 'albert.strap',
-  measurements: [ 'chest', 'waist', 'hips', 'hpsToWaistBack' ],
+  after: front,
   options: {
-    backOpening,
-    bibWidth,
-    bibLength,
-    strapWidth,
     chestDepth: { pct: 22, min: 15, max: 90, menu: 'fit' },
+    strapWidth: { pct: 60, min: 20, max: 100, menu: 'style' },
   },
   draft: part => {
     const {

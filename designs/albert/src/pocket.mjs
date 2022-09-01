@@ -1,9 +1,8 @@
-import { bibLength, lengthBonus } from './front.mjs'
+import { front } from './front.mjs'
 
 export const pocket = {
   name: 'albert.pocket',
-  measurements: [ 'hpsToWaistBack', 'waistToKnee' ],
-  options: { bibLength, lengthBonus },
+  after: front,
   draft: part => {
     const {
       options,

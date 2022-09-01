@@ -1,14 +1,13 @@
 import { Design } from '@freesewing/core'
-import { pluginBundle } from '@freesewing/plugin-bundle'
-import { name, version } from '../pkg.mjs'
+import { data } from '../data.mjs'
 import { front } from './front.mjs'
 import { pocket } from './pocket.mjs'
 import { strap } from './strap.mjs'
 
 // crossBox macro
-const crossBox = {
+export const crossBox = {
   name: 'crossbox',
-  version,
+  version: data.version,
   macros: {
     crossBox: function (so) {
       let id = this.getId()
@@ -66,10 +65,8 @@ const crossBox = {
 
 // Setup our new design
 const Albert = new Design({
-  name,
-  version,
+  data,
   parts: [ front, pocket, strap ],
-  plugins: [ pluginBundle, crossBox ]
 })
 
 // Named exports
