@@ -47,6 +47,9 @@ export function Pattern(config = { options: {} }) {
     warning: [],
   }
 
+  // Keep track of loaded plugins
+  this.plugins = {}
+
   // Raise methods - Make events and settings avialable in them
   const events = this.events
   const settings = this.settings
@@ -536,6 +539,9 @@ Pattern.prototype.on = function (hook, method, data) {
 }
 
 Pattern.prototype.use = function (plugin, data) {
+  // Don't load plugins more than once
+  if (this.plugins?.[plugin.name]) return this
+  this.plugins[plugin.name] = plugin
   // Conditional plugin?
   if (plugin.plugin && plugin.condition) return this.useIf(plugin, data)
   // Regular plugin
