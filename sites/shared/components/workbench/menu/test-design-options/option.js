@@ -29,7 +29,7 @@ const SumDiv = (props) => (
 )
 
 const Option = props => {
-  const { t } = useTranslation([`o_${props.design.config.name}`, 'workbench'])
+  const { t } = useTranslation([`o_${props.design.config.data.name}`, 'workbench'])
   const active = (
     props.gist.sample?.type === 'option' &&
     props.gist.sample?.option === props.option
@@ -56,7 +56,7 @@ const Option = props => {
             {active ? <span>&bull;</span> : <span>&deg;</span>}
           </span>
           <span className={active ? 'text-secondary font-bold' : ''}>
-            {t(`o_${props.design.config.name}:${props.option}.t`)}
+            {t(`o_${props.design.config.data.name}:${props.option}.t`)}
           </span>
         </SumDiv>
       </SumButton>

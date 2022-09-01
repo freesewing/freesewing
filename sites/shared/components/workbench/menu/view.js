@@ -13,29 +13,29 @@ const View = props => {
     },
     {
       name: 'draft',
-      title: t('draftDesign', { design: props.design.config.name }),
+      title: t('draftDesign', { design: props.design.config.data.name }),
       onClick: () => props.updateGist(['_state', 'view'], 'draft', true)
     },
     {
       name: 'test',
-      title: t('testDesign', { design: props.design.config.name }),
+      title: t('testDesign', { design: props.design.config.data.name }),
       onClick: () => props.updateGist(['_state', 'view'], 'test', true)
     },
     {
       name: 'printingLayout',
-      title: t('layoutThing', { thing: props.design.config.name })
+      title: t('layoutThing', { thing: props.design.config.data.name })
        + ': ' + t('forPrinting'),
       onClick: () => props.updateGist(['_state', 'view'], 'printingLayout', true)
     },
     {
       name: 'cuttingLayout',
-      title: t('layoutThing', { thing: props.design.config.name })
+      title: t('layoutThing', { thing: props.design.config.data.name })
        + ': ' + t('forCutting'),
       onClick: () => props.updateGist(['_state', 'view'], 'cuttingLayout', true)
     },
     {
       name: 'export',
-      title: t('exportThing', { thing: props.design.config.name }),
+      title: t('exportThing', { thing: props.design.config.data.name }),
       onClick: () => props.updateGist(['_state', 'view'], 'export', true)
     },
     {

@@ -48,7 +48,7 @@ const PrintLayout = props => {
     <div>
       <h2 className="capitalize">
         {
-          t('layoutThing', { thing: props.design.config.name })
+          t('layoutThing', { thing: props.design.config.data.name })
           + ': '
           + t('forPrinting')
         }

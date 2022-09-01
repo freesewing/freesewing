@@ -52,7 +52,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
     <div className="m-auto max-w-2xl">
       <h1>
         <span className='capitalize mr-4 opacity-70'>
-          {design.config.name}:
+          {design.config.data.name}:
         </span> {t('measurements')}
       </h1>
       <h2>{t('cfp:preloadMeasurements')}</h2>

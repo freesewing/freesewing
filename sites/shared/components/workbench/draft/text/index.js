@@ -57,8 +57,8 @@ const TextSpans = ({ point, className='', style={}, onClick=null }) => {
   let text = []
   // Handle translation
   let translated = ''
-  for (let string of point.attributes.getAsArray('data-text')) {
-    translated += t(string.toString()).replace(/&quot;/g, '"') + ' '
+  for (const string of point.attributes.getAsArray('data-text')) {
+    if (string) translated += t(string.toString()).replace(/&quot;/g, '"') + ' '
   }
   // Handle muti-line text
   if (translated.indexOf('\n') !== -1) {
