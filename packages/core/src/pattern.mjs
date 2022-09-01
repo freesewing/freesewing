@@ -305,7 +305,12 @@ Pattern.prototype.draft = function () {
   }
 
   this.runHooks('preDraft')
-  for (const partName of this.config.draftOrder) {
+  // Don't forget about parts without any dependencies
+  const allParts = [...new Set([
+    ...this.config.draftOrder,
+    ...Object.keys(this.__parts)
+  ])]
+  for (const partName of allParts) {
     // Create parts
     this.raise.debug(`Creating part \`${partName}\``)
     this.parts[partName] = new this.Part(partName)
