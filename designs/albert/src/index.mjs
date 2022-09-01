@@ -1,5 +1,5 @@
 import { Design } from '@freesewing/core'
-import { name, version } from '../pkg.mjs'
+import { data } from '../data.mjs'
 import { front } from './front.mjs'
 import { pocket } from './pocket.mjs'
 import { strap } from './strap.mjs'
@@ -7,7 +7,7 @@ import { strap } from './strap.mjs'
 // crossBox macro
 export const crossBox = {
   name: 'crossbox',
-  version,
+  version: data.version,
   macros: {
     crossBox: function (so) {
       let id = this.getId()
@@ -65,8 +65,7 @@ export const crossBox = {
 
 // Setup our new design
 const Albert = new Design({
-  name,
-  version,
+  data,
   parts: [ front, pocket, strap ],
 })
 
