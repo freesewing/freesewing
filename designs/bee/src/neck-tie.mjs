@@ -1,4 +1,5 @@
 import { pctBasedOn } from '@freesewing/core'
+import { pluginBundle } from '@freesewing/plugin-bundle'
 
 export const neckTie = {
   name: 'bee.neckTie',
@@ -22,6 +23,7 @@ export const neckTie = {
     neckTieEnds: { dflt: 'straight', list: ['straight', 'pointed'], menu: 'style' },
     neckTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
   },
+  plugins: [ pluginBundle ],
   draft: part => {
     const {
       store,
