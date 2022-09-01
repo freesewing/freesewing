@@ -1,21 +1,14 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { crossBox } from './index.mjs'
 
-export const bibLength = { pct: 75, min: 0, max: 90, menu: 'style' }
-export const lengthBonus = { pct: 0, min: -20, max: 25, menu: 'style' }
-export const backOpening = { pct: 10, min: 0, max: 25, menu: 'fit' }
-export const bibWidth = { pct: 100, min: 50, max: 125, menu: 'style' }
-export const strapWidth = { pct: 60, min: 20, max: 100, menu: 'style' }
-
 export const front = {
   name: 'albert.front',
-  measurements: [ 'chest', 'hpsToWaistBack', 'waist', 'waistToKnee' ],
+  measurements: [ 'chest', 'hpsToWaistBack', 'waist', 'waistToKnee', 'hips' ],
   options: {
-    backOpening,
-    bibWidth,
-    strapWidth,
-    bibLength,
-    lengthBonus,
+    backOpening: { pct: 10, min: 0, max: 25, menu: 'fit' },
+    bibWidth: { pct: 100, min: 50, max: 125, menu: 'style' },
+    bibLength: { pct: 75, min: 0, max: 90, menu: 'style' },
+    lengthBonus: { pct: 0, min: -20, max: 25, menu: 'style' },
   },
 //  plugins: [ pluginBundle, crossBox ],
   plugins: [ pluginBundle ],
