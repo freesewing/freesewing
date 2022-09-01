@@ -153,9 +153,12 @@ export function scalebox(so) {
   // Title
   if (so.title) this.points.__scaleboxTitle.attributes.set('data-text', so.title)
   else {
+    let name = this.context.config?.data?.name || 'No Name'
+    name = name.replace('@freesewing/', '')
     this.points.__scaleboxTitle = this.points.__scaleboxTitle
-      .attr('data-text', this.context.config.name)
-      .attr('data-text', 'v' + this.context.config.version)
+      .attr('data-text', name)
+      .attr('data-text', 'v' + 
+        this.context.config?.data?.version || 'No Version')
   }
   this.points.__scaleboxTitle.attributes.add('data-text-class', 'text-lg')
   // Text
