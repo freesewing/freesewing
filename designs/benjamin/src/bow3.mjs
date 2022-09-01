@@ -1,50 +1,56 @@
-export default function (part) {
-  let { options, Point, points, Path, paths, complete, macro, sa, store, paperless } =
-    part.shorthand()
+import { base } from './base.mjs'
 
-  if (!options.adjustmentRibbon) {
-    part.render = false
-    return part
-  }
+export const bow3 = {
+  name: 'benjamin.bow3',
+  from: base,
+  draft: part => {
+    let { options, Point, points, Path, paths, complete, macro, sa, store, paperless } =
+      part.shorthand()
 
-  points.bandBottomLeft = points.bandBottomLeft.shift(180, 290)
-  points.bandTopLeft = points.bandBottomLeft.flipY()
+    if (!options.adjustmentRibbon) {
+      part.render = false
+      return part
+    }
 
-  points.grainlineStart = new Point(-290, 0)
+    points.bandBottomLeft = points.bandBottomLeft.shift(180, 290)
+    points.bandTopLeft = points.bandBottomLeft.flipY()
 
-  macro('grainline', {
-    from: points.grainlineStart,
-    to: points.tip.shift(180, 20),
-  })
+    points.grainlineStart = new Point(-290, 0)
 
-  paths.seam = new Path()
-    .move(points.bandTopLeft)
-    .line(points.bandBottomLeft)
-    .join(paths.bow)
-    .line(points.bandTopLeft)
-    .close()
-    .attr('class', 'fabric')
-    .setRender(true)
+    macro('grainline', {
+      from: points.grainlineStart,
+      to: points.tip.shift(180, 20),
+    })
 
-  if (complete) {
-    // Paperless?
-    if (paperless) {
-      macro('hd', {
-        from: points.bandBottomLeft,
-        to: points.tip2Bottom,
-        y: store.get('baseY'),
+    paths.seam = new Path()
+      .move(points.bandTopLeft)
+      .line(points.bandBottomLeft)
+      .join(paths.bow)
+      .line(points.bandTopLeft)
+      .close()
+      .attr('class', 'fabric')
+      .setRender(true)
+
+    if (complete) {
+      // Paperless?
+      if (paperless) {
+        macro('hd', {
+          from: points.bandBottomLeft,
+          to: points.tip2Bottom,
+          y: store.get('baseY'),
+        })
+      }
+      if (sa) {
+        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').setRender(true)
+      }
+      macro('title', {
+        at: points.titleAnchor,
+        nr: 3,
+        title: 'bowTie',
+        scale: store.get('tipWidth') / 75,
       })
     }
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').setRender(true)
-    }
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 3,
-      title: 'bowTie',
-      scale: store.get('tipWidth') / 75,
-    })
-  }
 
-  return part
+    return part
+  }
 }
