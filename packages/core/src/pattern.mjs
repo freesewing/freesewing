@@ -686,6 +686,10 @@ Pattern.prototype.resolveDependency = function (
 
 /** Adds a part as a simple dependency **/
 Pattern.prototype.addDependency = function (name, part, dep) {
+  if (part.hideDependencies || part.hideAll) {
+    dep.hide = true
+    dep.hideAll = true
+  }
   this.dependencies[name] = mergeDependencies(dep.name, this.dependencies[name])
   if (typeof this.__parts[dep.name] === 'undefined') {
     this.__parts[dep.name] = decoratePartDependency(dep)
@@ -713,6 +717,10 @@ Pattern.prototype.preresolveDependencies = function (count=0) {
       this.inject[name] = part.from.name
       if (typeof this.__parts[part.from.name] === 'undefined') {
         this.__parts[part.from.name] = decoratePartDependency(part.from)
+        if (part.hideDependencies || part.hideAll) {
+          this.__parts[part.from.name].hide = true
+          this.__parts[part.from.name].hideAll = true
+        }
         addPartConfig(this.__parts[part.from.name], this.config)
       }
     }
@@ -806,7 +814,10 @@ Pattern.prototype.isHidden = function (partName) {
     if (this.settings.only.includes(partName)) return false
   }
 
-  return (this.__parts?.[partName]?.hide) ? true : false
+  if (this.__parts?.[partName]?.hide) return true
+  if (this.__parts?.[partName]?.hideAll) return true
+
+  return false
 }
 
 /** Determines whether a part is wanted by the user
