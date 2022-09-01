@@ -1,7 +1,7 @@
 import { Design } from '@freesewing/core'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { gorePlugin } from '@freesewing/plugin-gore'
-import { name, version } from '../pkg.mjs'
+import { data } from '../data.mjs'
 import config from '../config/'
 
 // Path API
@@ -119,8 +119,7 @@ import { docs_coords, docs_overview } from './docs.mjs'
 
 // Setup our new design
 const Examples = new Design({
-  name,
-  version,
+  data,
   parts: [
 
     // Path API
