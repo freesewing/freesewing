@@ -76,9 +76,11 @@ export const plugin = {
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, 13 * so.scale)))
         shift += 8
       }
+      let name = this.context.config?.data?.name || 'No Name'
+      name = name.replace('@freesewing/', '')
       this.points[`_${prefix}_titlePattern`] = so.at
         .shift(-90 - so.rotation, shift * so.scale)
-        .attr('data-text', this.context.config?.data?.name || 'No Name')
+        .attr('data-text', name)
         .attr('data-text', 'v' + this.context.config?.data?.version || 'No Version')
         .attr('data-text-class', 'fill-note')
         .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
