@@ -1,3 +1,7 @@
+import { front } from './front.mjs'
+import { frontBase } from './front-base.mjs'
+import { back } from './back.mjs'
+
 /*
  * We can't simply use the Brian sleevecap here because as breasts get bigger
  * the front part of the armhole seam will get a lot longer. With the default
@@ -180,41 +184,68 @@ function redrawSleevecapFront(part, delta) {
   store.set('sleevecapLength', paths.sleevecap.length())
 }
 
-export default (part) => {
-  let { store, options, Point, points, paths } = part.shorthand()
+export const sleeveCap = {
+  name: 'breanna.sleeveCap',
+  hide: true,
+  after: [ front, frontBase, back ],
+  options: {
+    bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    sleevecapEase: { pct: 0.5, min: 0, max: 2.5, menu: 'advanced.sleevecap' },
+    sleevecapTopFactorX: { pct: 50, min: 25, max: 75, menu: 'advanced.sleevecap' },
+    sleevecapTopFactorY: { pct: 110, min: 35, max: 165, menu: 'advanced.sleevecap' },
+    sleevecapBackFactorX: { pct: 45, min: 35, max: 55, menu: 'advanced.sleevecap' },
+    sleevecapBackFactorY: { pct: 33, min: 30, max: 65, menu: 'advanced.sleevecap' },
+    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65, menu: 'advanced.sleevecap' },
+    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65, menu: 'advanced.sleevecap' },
+    sleevecapQ1Offset: { pct: 3, min: 0, max: 7, menu: 'advanced.sleevecap' },
+    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7, menu: 'advanced.sleevecap' },
+    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7, menu: 'advanced.sleevecap' },
+    sleevecapQ4Offset: { pct: 1, min: 0, max: 7, menu: 'advanced.sleevecap' },
+    sleevecapQ1Spread1: { pct: 10, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ1Spread2: { pct: 12.5, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ2Spread1: { pct: 12.5, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ2Spread2: { pct: 12.5, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ3Spread1: { pct: 12.5, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20, menu: 'advanced.sleevecap' },
+  },
+  draft: part => {
+    let { store, options, Point, points, paths } = part.shorthand()
 
-  // Step 1: sleevecap for 2 backs joined together (twoBacks = true)
-  store.set('sleeveFactor', 1)
-  let run = 0
-  do {
-    draftSleevecap(part, run)
-    sleevecapAdjust(store, true, options)
-    run++
-  } while (
-    options.breannaFitSleeve === true &&
-    run < 50 &&
-    Math.abs(sleevecapDelta(store, true, options)) > 2
-  )
+    // Step 1: sleevecap for 2 backs joined together (twoBacks = true)
+    store.set('sleeveFactor', 1)
+    let run = 0
+    do {
+      draftSleevecap(part, run)
+      sleevecapAdjust(store, true, options)
+      run++
+    } while (
+      options.breannaFitSleeve === true &&
+      run < 50 &&
+      Math.abs(sleevecapDelta(store, true, options)) > 2
+    )
 
-  //
-  let armholeLength = store.get('frontArmholeLength') + store.get('backArmholeLength')
-  let sleevecapEase = armholeLength * options.sleevecapEase
-  store.set('sleevecapEase', sleevecapEase)
-  store.set('sleevecapTarget', armholeLength + sleevecapEase)
+    //
+    let armholeLength = store.get('frontArmholeLength') + store.get('backArmholeLength')
+    let sleevecapEase = armholeLength * options.sleevecapEase
+    store.set('sleevecapEase', sleevecapEase)
+    store.set('sleevecapTarget', armholeLength + sleevecapEase)
 
-  // Step 2: sleevecap for back joined with front (twoBacks = false)
-  run = 0
-  do {
-    redrawSleevecapFront(part, sleevecapDelta(store))
-    sleevecapAdjust(store)
-    run++
-  } while (options.breannaFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
+    // Step 2: sleevecap for back joined with front (twoBacks = false)
+    run = 0
+    do {
+      redrawSleevecapFront(part, sleevecapDelta(store))
+      sleevecapAdjust(store)
+      run++
+    } while (options.breannaFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
 
-  // Paths
-  paths.sleevecap.attr('class', 'fabric')
+    // Paths
+    paths.sleevecap.attr('class', 'fabric')
 
-  // Anchor point for sampling
-  points.gridAnchor = new Point(0, 0)
+    // Anchor point for sampling
+    points.gridAnchor = new Point(0, 0)
 
-  return part
+    return part
+  }
 }

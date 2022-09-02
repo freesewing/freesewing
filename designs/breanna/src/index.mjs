@@ -1,27 +1,20 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
 // Parts
-import draftBase from './base'
-import draftBack from './back'
-import draftFrontBase from './front-base'
-import draftFront from './front'
-import draftSleevecap from './sleevecap'
-import draftSleeve from './sleeve'
+import { back } from './back.mjs'
+import { front } from './front.mjs'
+import { sleeve } from './sleeve.mjs'
+// Skeleton parts for exporting and re-use
+import { base } from './base.mjs'
+import { frontBase } from './front-base.mjs'
+import { sleeveCap } from './sleevecap.mjs'
 
-// Create design
-const Breanna = new freesewing.Design(config, plugins)
-
-// Attach draft methods to prototype
-Breanna.prototype.draftBase = draftBase
-Breanna.prototype.draftBack = draftBack
-Breanna.prototype.draftFrontBase = draftFrontBase
-Breanna.prototype.draftFront = draftFront
-Breanna.prototype.draftSleevecap = draftSleevecap
-Breanna.prototype.draftSleeve = draftSleeve
+// Setup our new design
+const Breanna = new Design({
+  data,
+  parts: [ back, front, sleeve ]
+})
 
 // Named exports
-export { config, Breanna }
+export { back, front, sleeve, base, frontBase, sleeveCap, Breanna }
 
-// Default export
-export default Breanna
