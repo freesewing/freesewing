@@ -1,19 +1,15 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftBase from './base'
-import draftFront from './front'
-import draftBack from './back'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+// Re-export skeleton parts so peope can re-use them
+import { base } from './base.mjs'
 
-// Create new design
-const Walburga = new freesewing.Design(config, plugins)
-
-Walburga.prototype.draftBase = draftBase
-Walburga.prototype.draftFront = draftFront
-Walburga.prototype.draftBack = draftBack
+// Setup our new design
+const Walburga = new Design({
+  data,
+  parts: [back, front],
+})
 
 // Named exports
-export { config, Walburga }
-
-// Default export
-export default Walburga
+export { back, front, base, Walburga }

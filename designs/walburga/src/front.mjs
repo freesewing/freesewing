@@ -1,4 +1,6 @@
-export default function (part) {
+import { base, neckline, neckoRatio } from './base.mjs'
+
+function walburgaFront(part) {
   const {
     points,
     Path,
@@ -138,4 +140,12 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'walburga.front',
+  from: base,
+  measurements: ['neck'],
+  options: { neckline, neckoRatio },
+  draft: walburgaFront,
 }

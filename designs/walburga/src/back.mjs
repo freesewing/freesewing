@@ -1,4 +1,6 @@
-export default function (part) {
+import { base } from './base.mjs'
+
+function walburgaBack(part) {
   const { points, macro, complete, snippets, Snippet } = part.shorthand()
 
   // Complete?
@@ -22,4 +24,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'walburga.back',
+  from: base,
+  draft: walburgaBack,
 }

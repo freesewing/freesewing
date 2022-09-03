@@ -1,4 +1,6 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function walburgaBase(part) {
   const {
     Point,
     points,
@@ -179,4 +181,36 @@ export default function (part) {
     }
   }
   return part
+}
+
+// These options are re-used in front
+export const neckline = { bool: true, menu: 'style' }
+export const neckoRatio = { pct: 100, min: 10, max: 190, menu: 'style' }
+
+// Part
+export const base = {
+  name: 'walburga.base',
+  measurements: [
+    'head',
+    'shoulderToShoulder',
+    'hpsToWaistBack',
+    'waistToKnee',
+    'waistToHips',
+    'waistToFloor',
+    'waistToUpperLeg',
+  ],
+  options: {
+    headRatio: { pct: 100, min: 80, max: 120, menu: 'fit' },
+    lengthBonus: { pct: 85, min: 60, max: 130, menu: 'style' },
+    widthBonus: { pct: 95, min: 50, max: 130, menu: 'style' },
+    length: {
+      list: ['toKnee', 'toMidLeg', 'toFloor'],
+      dflt: 'toKnee',
+      menu: 'style',
+    },
+    neckline,
+    neckoRatio,
+  },
+  plugins: [pluginBundle],
+  draft: walburgaBase,
 }
