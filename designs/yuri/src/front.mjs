@@ -1,6 +1,7 @@
-import { sharedDimensions } from './shared'
+import { front as brianFront } from '@freesewing/brian'
+import { sharedDimensions } from './shared.mjs'
 
-export default function (part) {
+function draft (part) {
   const {
     store,
     Point,
@@ -103,4 +104,25 @@ export default function (part) {
   if (paperless) sharedDimensions(part, 'front')
 
   return part
+}
+
+export const front = {
+  name: 'yuri.front',
+  from: {
+    ...brianFront,
+    options: {
+      ...brianFront.options,
+      // Overrides
+      collarEase: { pct: 20, min: 10, max: 30 },
+      cuffEase: { pct: 30, min: 20, max: 60 },
+      lengthBonus: { pct: 10, min: 5, max: 15 },
+      sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
+    }
+  },
+  hideDependencies: true,
+  options: {
+    hipsEase: { pct: 0, min: 0, max: 10 },
+  },
+  measurements: [ 'hips', 'hpsToBust' ],
+  draft
 }

@@ -1,4 +1,6 @@
-export default function (part) {
+import { hoodSide } from './hoodside.mjs'
+
+function draft (part) {
   const { store, sa, Point, points, Path, paths, complete, paperless, macro, units } =
     part.shorthand()
 
@@ -78,4 +80,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const hoodCenter = {
+  name: 'yuri.hoodCenter',
+  after: hoodSide,
+  draft
 }

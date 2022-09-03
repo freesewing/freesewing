@@ -1,4 +1,6 @@
-export default function (part) {
+import { back } from './back.mjs'
+
+function draft (part) {
   const { Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro, store } =
     part.shorthand()
 
@@ -75,3 +77,10 @@ export default function (part) {
 
   return part
 }
+
+export const gusset = {
+  name: 'yuri.gusset',
+  after: back,
+  draft
+}
+
