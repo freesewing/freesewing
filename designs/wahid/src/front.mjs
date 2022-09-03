@@ -1,6 +1,25 @@
-import { constructMainDart, shapeSideSeam, dartPath } from './shared'
-export default (part) => {
-  let {
+import { constructMainDart, shapeSideSeam, dartPath } from './shared.mjs'
+import { front as brianFront } from '@freesewing/brian'
+import {
+  frontOverlap,
+  necklineDrop,
+  frontStyle,
+  frontInset,
+  shoulderInset,
+  neckInset,
+  hemStyle,
+  hemRadius,
+  pocketWidth,
+  pocketAngle,
+  pocketLocation,
+  frontScyeDart,
+  buttons,
+  waistEase,
+  hipsEase,
+} from './options.mjs'
+
+function wahidFront(part) {
+  const {
     points,
     Point,
     paths,
@@ -464,4 +483,28 @@ export default (part) => {
     }
   }
   return part
+}
+
+export const front = {
+  name: 'wahid.front',
+  from: brianFront,
+  measurements: ['hips', 'waist'],
+  options: {
+    frontOverlap,
+    necklineDrop,
+    frontStyle,
+    frontInset,
+    shoulderInset,
+    neckInset,
+    hemStyle,
+    hemRadius,
+    pocketWidth,
+    pocketAngle,
+    pocketLocation,
+    frontScyeDart,
+    buttons,
+    waistEase,
+    hipsEase,
+  },
+  draft: wahidFront,
 }

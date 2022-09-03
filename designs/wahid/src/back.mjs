@@ -1,7 +1,9 @@
-import { constructMainDart, shapeSideSeam, dartPath } from './shared'
+import { constructMainDart, shapeSideSeam, dartPath } from './shared.mjs'
+import { back as brianBack } from '@freesewing/brian'
+import { backInset, shoulderInset, neckInset, centerBackDart, backScyeDart } from './options.mjs'
 
-export default (part) => {
-  let {
+function wahidBack(part) {
+  const {
     points,
     Point,
     paths,
@@ -108,7 +110,7 @@ export default (part) => {
 
   if (complete) {
     //Grainline
-    points.grainlineBottom = new Point(points.logo.x/2, points.cbNeck.y)
+    points.grainlineBottom = new Point(points.logo.x / 2, points.cbNeck.y)
     points.grainlineTop = new Point(points.grainlineBottom.x, points.gridAnchor.y)
     macro('grainline', {
       from: points.grainlineTop,
@@ -221,4 +223,18 @@ export default (part) => {
   }
 
   return part
+}
+
+export const back = {
+  name: 'wahid.back',
+  from: brianBack,
+  measurements: ['hips', 'waist'],
+  options: {
+    backInset,
+    shoulderInset,
+    neckInset,
+    centerBackDart,
+    backScyeDart,
+  },
+  draft: wahidBack,
 }

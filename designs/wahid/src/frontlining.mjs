@@ -1,4 +1,6 @@
-export default (part) => {
+import { front } from './front.mjs'
+
+function wahidFrontLining(part) {
   let { points, Point, paths, Path, options, macro, snippets, Snippet, complete, sa } =
     part.shorthand()
   // Cleanup from Brian
@@ -39,4 +41,10 @@ export default (part) => {
     snippets.logo = new Snippet('logo', points.logo)
   }
   return part
+}
+
+export const frontLining = {
+  name: 'wahid.frontLining',
+  from: front,
+  draft: wahidFrontLining,
 }

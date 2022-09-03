@@ -1,4 +1,6 @@
-export default (part) => {
+import { front } from './front.mjs'
+
+function wahidPocketbag(part) {
   let { points, Point, paths, Path, measurements, options, macro, complete, paperless, store } =
     part.shorthand()
   let pw = measurements.hips * options.pocketWidth // Pocket width
@@ -59,4 +61,10 @@ export default (part) => {
     })
   }
   return part
+}
+
+export const pocketBag = {
+  name: 'wahid.pocketbag',
+  after: front,
+  draft: wahidPocketbag,
 }

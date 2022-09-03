@@ -1,8 +1,10 @@
-export default (part) => {
-  let { points, Point, paths, Path, measurements, options, macro, complete, paperless } =
+import { pocketWidth, pocketAngle, weltHeight } from './options.mjs'
+
+function wahidPocketWelt(part) {
+  const { points, Point, paths, Path, measurements, options, macro, complete, paperless } =
     part.shorthand()
-  let pw = measurements.hips * options.pocketWidth // Pocket width
-  let pwh = pw * options.weltHeight // Pocket welt height
+  const pw = measurements.hips * options.pocketWidth // Pocket width
+  const pwh = pw * options.weltHeight // Pocket welt height
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pw + 30, 0)
   points.bottomLeft = new Point(0, pwh * 2 + 20)
@@ -86,4 +88,15 @@ export default (part) => {
     })
   }
   return part
+}
+
+export const pocketWelt = {
+  name: 'wahid.pocketWelt',
+  measurements: ['hips'],
+  options: {
+    pocketWidth,
+    pocketAngle,
+    weltHeight,
+  },
+  draft: wahidPocketWelt,
 }

@@ -1,9 +1,11 @@
-export default (part) => {
-  let { points, Point, paths, Path, measurements, options, macro, complete, paperless, store } =
+import { front } from './front.mjs'
+
+function wahidPocketFacing(part) {
+  const { points, Point, paths, Path, measurements, options, macro, complete, paperless, store } =
     part.shorthand()
-  let pw = measurements.hips * options.pocketWidth // Pocket width
-  let pwh = pw * options.weltHeight // Pocket welt height
-  let ph = store.get('pocketBagLength') + pwh // Pocket height
+  const pw = measurements.hips * options.pocketWidth // Pocket width
+  const pwh = pw * options.weltHeight // Pocket welt height
+  const ph = store.get('pocketBagLength') + pwh // Pocket height
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pw + 30, 0)
   points.bottomLeft = new Point(0, ph + 10)
@@ -82,4 +84,10 @@ export default (part) => {
     })
   }
   return part
+}
+
+export const pocketFacing = {
+  name: 'wahid.pocketFacing',
+  after: front,
+  draft: wahidPocketFacing,
 }

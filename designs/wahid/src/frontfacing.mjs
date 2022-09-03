@@ -1,5 +1,7 @@
-export default (part) => {
-  let { points, Point, paths, Path, options, macro, snippets, Snippet, complete, sa } =
+import { front } from './front.mjs'
+
+function wahidFrontFacing(part) {
+  const { points, Point, paths, Path, options, macro, snippets, Snippet, complete, sa } =
     part.shorthand()
   // Cleanup from front part
   for (let i of Object.keys(paths).filter((name) => name !== 'grainline')) delete paths[i]
@@ -40,4 +42,10 @@ export default (part) => {
     snippets.logo = new Snippet('logo', points.logo)
   }
   return part
+}
+
+export const frontFacing = {
+  name: 'wahid.frontFacing',
+  from: front,
+  draft: wahidFrontFacing,
 }
