@@ -1,5 +1,7 @@
-export default function (part) {
-  let { sa, Point, points, Path, paths, options, complete, paperless, macro, measurements } =
+import { sleevecap } from '@freesewing/brian'
+
+function teaganSleeve(part) {
+  const { sa, Point, points, Path, paths, options, complete, paperless, macro, measurements } =
     part.shorthand()
 
   let height = points.bicepsRight.x * options.sleeveLength
@@ -80,4 +82,13 @@ export default function (part) {
   }
 
   return part
+}
+
+export const sleeve = {
+  name: 'teagan.sleeve',
+  from: sleevecap,
+  options: {
+    sleeveEase: { pct: 15, min: 5, max: 35, menu: 'style' },
+  },
+  draft: teaganSleeve,
 }

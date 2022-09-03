@@ -1,5 +1,7 @@
-export default function (part) {
-  let {
+import { front } from './front.mjs'
+
+function teaganBack(part) {
+  const {
     store,
     sa,
     Point,
@@ -87,4 +89,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'teagan.back',
+  from: front,
+  draft: teaganBack,
 }

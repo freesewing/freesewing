@@ -1,5 +1,7 @@
-export default function (part) {
-  let {
+import { base } from '@freesewing/brian'
+
+function teaganFront(part) {
+  const {
     utils,
     store,
     sa,
@@ -159,4 +161,30 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'teagan.front',
+  from: base,
+  measurements: ['hips', 'waist'],
+  options: {
+    bicepsEase: 0.05,
+    shoulderEase: 0,
+    collarEase: 0,
+    shoulderSlopeReduction: 0,
+    sleeveWidthGuarantee: 0.85,
+    frontArmholeDeeper: 0.005,
+    // Brian overrides
+    chestEase: { pct: 12, min: 5, max: 25, menu: 'fit' },
+    sleeveLength: { pct: 30, min: 20, max: 100, menu: 'fit' },
+    lengthBonus: { pct: 5, min: -20, max: 60, menu: 'style' },
+    backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
+    // Teagan specific
+    draftForHighBust: { bool: false, menu: 'fit' },
+    hipsEase: { pct: 18, min: 8, max: 30, menu: 'fit' },
+    necklineDepth: { pct: 25, min: 20, max: 40, menu: 'style' },
+    necklineWidth: { pct: 30, min: 10, max: 50, menu: 'style' },
+    necklineBend: { pct: 30, min: 0, max: 70, menu: 'style' },
+  },
+  draft: teaganFront,
 }
