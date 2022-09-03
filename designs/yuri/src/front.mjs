@@ -1,7 +1,7 @@
 import { front as brianFront } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 
-function draft (part) {
+function yuriFront(part) {
   const {
     store,
     Point,
@@ -117,12 +117,12 @@ export const front = {
       cuffEase: { pct: 30, min: 20, max: 60 },
       lengthBonus: { pct: 10, min: 5, max: 15 },
       sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
-    }
+    },
   },
   hideDependencies: true,
   options: {
     hipsEase: { pct: 0, min: 0, max: 10 },
   },
-  measurements: [ 'hips', 'hpsToBust' ],
-  draft
+  measurements: ['hips', 'hpsToBust'],
+  draft: yuriFront,
 }

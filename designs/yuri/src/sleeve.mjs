@@ -1,6 +1,6 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
 
-function draft (part) {
+function yuriSleeve(part) {
   let { Point, Path, points, paths, complete, sa, paperless, macro } = part.shorthand()
 
   // Clear paths from Brian, but keep sleevecap
@@ -72,6 +72,5 @@ export const sleeve = {
   name: 'yuri.sleeve',
   from: brianSleeve,
   hideDependencies: true,
-  draft
+  draft: yuriSleeve,
 }
-

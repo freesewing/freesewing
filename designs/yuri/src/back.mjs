@@ -1,7 +1,7 @@
 import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 
-function draft (part) {
+function yuriBack(part) {
   const {
     store,
     macro,
@@ -108,13 +108,12 @@ export const back = {
       cuffEase: { pct: 30, min: 20, max: 60 },
       lengthBonus: { pct: 10, min: 5, max: 15 },
       sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
-    }
+    },
   },
   hideDependencies: true,
   options: {
     hipsEase: { pct: 0, min: 0, max: 10 },
   },
-  measurements: [ 'hips' ],
-  draft
+  measurements: ['hips'],
+  draft: yuriBack,
 }
-

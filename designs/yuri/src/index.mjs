@@ -16,10 +16,9 @@ const Yuri = new Design({
     sleeve,
     gusset,
     hoodSide,
-  //  hoodCenter
-  ]
+    //  hoodCenter
+  ],
 })
 
 // Named exports
 export { back, front, sleeve, gusset, hoodSide, hoodCenter, Yuri }
-

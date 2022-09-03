@@ -1,7 +1,7 @@
 import { back } from './back.mjs'
 import { front } from './front.mjs'
 
-function draftHoodSide (part) {
+function yuriHoodSide(part) {
   const {
     store,
     sa,
@@ -153,8 +153,7 @@ function draftHoodSide (part) {
 
 export const hoodSide = {
   name: 'yuri.hoodSide',
-  after: [ front, back ],
-  measurements: [ 'head' ],
-  draft: draftHoodSide
+  after: [front, back],
+  measurements: ['head'],
+  draft: yuriHoodSide,
 }
-

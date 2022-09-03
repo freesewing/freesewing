@@ -1,6 +1,6 @@
 import { hoodSide } from './hoodside.mjs'
 
-function draft (part) {
+function yuriHoodCenter(part) {
   const { store, sa, Point, points, Path, paths, complete, paperless, macro, units } =
     part.shorthand()
 
@@ -85,5 +85,5 @@ function draft (part) {
 export const hoodCenter = {
   name: 'yuri.hoodCenter',
   after: hoodSide,
-  draft
+  draft: yuriHoodCenter,
 }
