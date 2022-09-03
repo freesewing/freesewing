@@ -1,4 +1,6 @@
-export default (part) => {
+import { back } from './back.mjs'
+
+function titanFront(part) {
   /*
    * Helper method to draw the inseam path
    */
@@ -562,4 +564,10 @@ export default (part) => {
   }
 
   return part
+}
+
+export const front = {
+  name: 'titan.front',
+  after: back,
+  draft: titanFront,
 }

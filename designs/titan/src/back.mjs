@@ -1,4 +1,8 @@
-export default (part) => {
+import { pctBasedOn } from '@freesewing/core'
+import { elastics } from '@freesewing/snapseries'
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function titanBack(part) {
   /*
    * Helper method to draw the inseam path
    */
@@ -491,4 +495,59 @@ export default (part) => {
   }
 
   return part
+}
+
+export const back = {
+  name: 'titan.back',
+  plugins: [pluginBundle],
+  measurements: [
+    'crossSeam',
+    'crossSeamFront',
+    'knee',
+    'seat',
+    'seatBack',
+    'waist',
+    'waistBack',
+    'waistToFloor',
+    'waistToKnee',
+    'waistToHips',
+    'waistToSeat',
+    'waistToUpperLeg',
+  ],
+  options: {
+    // Constants
+    titanPaperless: true,
+    fitCrossSeam: true,
+    fitCrossSeamFront: true,
+    fitCrossSeamBack: true,
+    fitGuides: true,
+    // Fit
+    waistEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
+    seatEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
+    kneeEase: { pct: 6, min: 1, max: 25, menu: 'fit' },
+    // Style
+    waistHeight: { pct: 100, min: 0, max: 100, menu: 'style' },
+    lengthBonus: { pct: 2, min: -20, max: 10, menu: 'style' },
+    crotchDrop: { pct: 2, min: 0, max: 15, menu: 'style' },
+    fitKnee: { bool: false, menu: 'style' },
+    // Advanced
+    legBalance: { pct: 57.5, min: 52.5, max: 62.5, menu: 'advanced' },
+    crossSeamCurveStart: { pct: 85, min: 60, max: 100, menu: 'advanced' },
+    crossSeamCurveBend: { pct: 65, min: 45, max: 85, menu: 'advanced' },
+    crossSeamCurveAngle: { deg: 12, min: 0, max: 20, menu: 'advanced' },
+    crotchSeamCurveStart: { pct: 80, min: 60, max: 95, menu: 'advanced' },
+    crotchSeamCurveBend: { pct: 80, min: 45, max: 100, menu: 'advanced' },
+    crotchSeamCurveAngle: { deg: 25, min: 0, max: 35, menu: 'advanced' },
+    waistBalance: { pct: 60, min: 30, max: 90, menu: 'advanced' },
+    grainlinePosition: { pct: 45, min: 30, max: 60, menu: 'advanced' },
+    waistbandWidth: {
+      pct: 3,
+      min: 1,
+      max: 6,
+      snap: elastics,
+      ...pctBasedOn('waistToFloor'),
+      menu: 'advanced',
+    },
+  },
+  draft: titanBack,
 }
