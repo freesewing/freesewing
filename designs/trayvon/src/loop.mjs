@@ -1,5 +1,5 @@
-export default (part) => {
-  let { points, Point, paths, Path, complete, paperless, store, macro } = part.shorthand()
+function trayvonFabricLoop(part) {
+  const { points, Point, paths, Path, complete, paperless, store, macro } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(store.get('backTip') * 3.5, store.get('backTip'))
@@ -39,4 +39,9 @@ export default (part) => {
   }
 
   return part
+}
+
+export const fabricLoop = {
+  name: 'trayvon.fabricLoop',
+  draft: trayvonFabricLoop,
 }

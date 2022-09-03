@@ -1,3 +1,16 @@
+import { pctBasedOn } from '@freesewing/core'
+import { smallSteps } from '@freesewing/snapseries'
+
+export const options = {
+  tipWidth: { pct: 15, min: 5, max: 35, snap: smallSteps, ...pctBasedOn('neck'), menu: 'style' },
+  knotWidth: { pct: 8, min: 4, max: 12, snap: smallSteps, ...pctBasedOn('neck'), menu: 'style' },
+  lengthBonus: {
+    pct: 0,
+    min: -50,
+    max: 50,
+    menu: 'style',
+  },
+}
 export const calculateHelpers = (part) => {
   let { store, measurements, options, absoluteOptions } = part.shorthand()
 
