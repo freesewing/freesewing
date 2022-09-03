@@ -39,8 +39,8 @@ waistEase:
   title: Свобода облягання на талії
   description: Свобода облягання на талії.
 zipperLocation:
-  title: Zipper location
-  description: The location of the zipper.
+  title: Розташування застібки
+  description: Де розташовуватиметься застібка-блискавка.
   options:
-    backSeam: At the back seam
-    sideSeam: At the side seam
+    backSeam: У задньому шві
+    sideSeam: У боковому шві
