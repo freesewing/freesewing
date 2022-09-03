@@ -1,7 +1,17 @@
-import { CreateCrotchPoints } from './util'
+import { CreateCrotchPoints } from './util.mjs'
+import { waistRaise } from './options.mjs'
 
-export default function (part) {
-  let {
+/*
+ * We don't move this draft method under the part object
+ * because doing so changes the indentation which causes
+ * us to lose all history of changes to this method.
+ *
+ * So to maintain the history of contributions over the
+ * years, keeps this method here, and resist the urge to
+ * move it into the named export at the bottom of this file.
+ */
+function waraleeCutout(part) {
+  const {
     options,
     measurements,
     Point,
@@ -16,7 +26,7 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
+  const seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
 
   points.mWaist = new Point(0, 0)
   points.mHip = points.mWaist.shift(270, seatDepth)
@@ -82,4 +92,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const cutout = {
+  name: 'waralee.cutout',
+  measurements: ['crotchDepth', 'waistToHips'],
+  draft: waraleeCutout,
 }

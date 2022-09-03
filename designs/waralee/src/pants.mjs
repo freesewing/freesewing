@@ -1,5 +1,16 @@
-export default function (part) {
-  let { options, points, paths, Snippet, snippets, complete, sa, paperless, macro, store } =
+import { pantsProto } from './pantsproto.mjs'
+
+/*
+ * We don't move this draft method under the part object
+ * because doing so changes the indentation which causes
+ * us to lose all history of changes to this method.
+ *
+ * So to maintain the history of contributions over the
+ * years, keeps this method here, and resist the urge to
+ * move it into the named export at the bottom of this file.
+ */
+function waraleePants(part) {
+  const { options, points, paths, Snippet, snippets, complete, sa, paperless, macro, store } =
     part.shorthand()
 
   paths.waistFoldBack = paths.waistBack
@@ -118,4 +129,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const pants = {
+  name: 'waralee.pants',
+  from: pantsProto,
+  draft: waraleePants,
 }

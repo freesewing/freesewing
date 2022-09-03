@@ -1,4 +1,13 @@
-export default function (part) {
+/*
+ * We don't move this draft method under the part object
+ * because doing so changes the indentation which causes
+ * us to lose all history of changes to this method.
+ *
+ * So to maintain the history of contributions over the
+ * years, keeps this method here, and resist the urge to
+ * move it into the named export at the bottom of this file.
+ */
+function waraleeFacings(part) {
   let {
     options,
     measurements,
@@ -101,4 +110,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const facings = {
+  name: 'waralee.facings',
+  measurements: ['crotchDepth', 'waistToHips'],
+  draft: waraleeFacings,
 }

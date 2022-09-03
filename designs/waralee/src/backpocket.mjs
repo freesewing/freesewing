@@ -1,5 +1,16 @@
-export default function (part) {
-  let {
+import { backPocketDepth, backPocketSize, backPocketVerticalOffset } from './options.mjs'
+
+/*
+ * We don't move this draft method under the part object
+ * because doing so changes the indentation which causes
+ * us to lose all history of changes to this method.
+ *
+ * So to maintain the history of contributions over the
+ * years, keeps this method here, and resist the urge to
+ * move it into the named export at the bottom of this file.
+ */
+function waraleeBackPocket(part) {
+  const {
     options,
     measurements,
     Point,
@@ -13,7 +24,7 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  let pocketDepth = options.backPocketDepth
+  const pocketDepth = options.backPocketDepth
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = points.topLeft.shift(
@@ -73,4 +84,15 @@ export default function (part) {
   }
 
   return part
+}
+
+export const backPocket = {
+  name: 'waralee.backPocket',
+  measurements: ['crotchDepth', 'waistToHips'],
+  options: {
+    backPocketDepth,
+    backPocketSize,
+    backPocketVerticalOffset,
+  },
+  draft: waraleeBackPocket,
 }

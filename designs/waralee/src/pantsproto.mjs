@@ -1,14 +1,24 @@
-import { CreateCrotchPoints } from './util'
+import { CreateCrotchPoints } from './util.mjs'
+import * as options from './options.mjs'
 
-export default function (part) {
-  let { options, measurements, Point, Path, points, paths, store } = part.shorthand()
+/*
+ * We don't move this draft method under the part object
+ * because doing so changes the indentation which causes
+ * us to lose all history of changes to this method.
+ *
+ * So to maintain the history of contributions over the
+ * years, keeps this method here, and resist the urge to
+ * move it into the named export at the bottom of this file.
+ */
+function waraleePantsProto(part) {
+  const { options, measurements, Point, Path, points, paths, store } = part.shorthand()
 
-  let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
-  let circumference = measurements.seat
-  let circumference4 = circumference / 4
+  const seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
+  const circumference = measurements.seat
+  const circumference4 = circumference / 4
   store.set('waistBand', measurements.inseam * options.waistbandWidth)
   store.set('hem', measurements.inseam * options.hemWidth)
-  let waistBand = store.get('waistBand')
+  const waistBand = store.get('waistBand')
 
   points.mWaist = new Point(0, 0)
 
@@ -144,4 +154,12 @@ export default function (part) {
   part.render = false
 
   return part
+}
+
+export const pantsProto = {
+  name: 'waralee.pantsProto',
+  hide: true,
+  measurements: ['crotchDepth', 'waistToHips', 'seat', 'inseam'],
+  options,
+  draft: waraleePantsProto,
 }

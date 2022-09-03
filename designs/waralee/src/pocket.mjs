@@ -1,5 +1,14 @@
-export default function (part) {
-  let {
+/*
+ * We don't move this draft method under the part object
+ * because doing so changes the indentation which causes
+ * us to lose all history of changes to this method.
+ *
+ * So to maintain the history of contributions over the
+ * years, keeps this method here, and resist the urge to
+ * move it into the named export at the bottom of this file.
+ */
+function waraleePocket(part) {
+  const {
     options,
     measurements,
     Point,
@@ -14,7 +23,7 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  let pocketDepth =
+  const pocketDepth =
     (measurements.crotchDepth - measurements.waistToHips) * options.frontPocketDepthFactor
 
   points.topLeft = new Point(0, 0)
@@ -103,4 +112,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const pocket = {
+  name: 'waralee.pocket',
+  measurements: ['crotchDepth', 'waistToHips'],
+  draft: waraleePocket,
 }
