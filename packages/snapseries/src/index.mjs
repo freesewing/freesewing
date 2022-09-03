@@ -16,7 +16,7 @@ export const zippers = {
 }
 
 // Snap to small steps (~1mm)
-export const smallsteps = {
+export const smallSteps = {
   metric: 1,
   imperial: 0.79375, // 1/32 inch
 }
@@ -28,7 +28,7 @@ export const steps = {
 }
 
 // Snap to big steps (~10mm)
-export const bigsteps = {
+export const bigSteps = {
   metric: 10,
   imperial: 12.7, // 1/2 inch
 }
@@ -37,7 +37,7 @@ export const bigsteps = {
 export default {
   elastics,
   zippers,
-  smallsteps,
+  smallSteps,
   steps,
-  bigsteps,
+  bigSteps,
 }

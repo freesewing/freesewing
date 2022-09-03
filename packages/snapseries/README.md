@@ -48,7 +48,7 @@
 
 # @freesewing/snapseries
 
-A FreeSewing package to facilitate snapped percentage options in designs
+A series of common sizes for elastics and other series to be used with snapped percentage options
 
 
 
