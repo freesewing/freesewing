@@ -1,6 +1,6 @@
 import { base } from './base.mjs'
 
-function draft (part) {
+function draftBenjaminBow2 (part) {
   let { options, Point, points, Path, paths, complete, macro, sa, store, paperless } =
     part.shorthand()
 
@@ -54,5 +54,5 @@ function draft (part) {
 export const bow2 = {
   name: 'benjamin.bow2',
   from: base,
-  draft
+  draft: draftBenjaminBow2,
 }
