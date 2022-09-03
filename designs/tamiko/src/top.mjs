@@ -1,5 +1,8 @@
-export default function (part) {
-  let {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
+
+function tamikoTop(part) {
+  const {
     sa,
     Point,
     points,
@@ -15,19 +18,20 @@ export default function (part) {
   } = part.shorthand()
 
   // Width at shoulders
-  let shoulders = measurements.shoulderToShoulder
+  const shoulders = measurements.shoulderToShoulder
 
   // Width at chest
-  let chest = (measurements.chest / 2) * (1 + options.chestEase)
+  const chest = (measurements.chest / 2) * (1 + options.chestEase)
 
   // Length
-  let length = (1 + options.lengthBonus) * (measurements.hpsToWaistBack + measurements.waistToHips)
+  const length =
+    (1 + options.lengthBonus) * (measurements.hpsToWaistBack + measurements.waistToHips)
 
   // Armhole depth
-  let arm = shoulders * options.armholeDepthFactor
+  const arm = shoulders * options.armholeDepthFactor
 
   // Shoulder seam length
-  let shoulderseam = shoulders * options.shoulderseamLength
+  const shoulderseam = shoulders * options.shoulderseamLength
 
   // Right shoulder seam
   points.shoulderEdge = new Point(0, 0)
@@ -55,7 +59,7 @@ export default function (part) {
   points.sideEdge = points.armgapTop.shiftTowards(points.armgapBottom, length)
 
   // Rotate to reduce flare and balance garment
-  let angle = points.armgapTop.angle(points.armgapBottom) / -2
+  const angle = points.armgapTop.angle(points.armgapBottom) / -2
   points.sideBottom = points.sideBottom.rotate(angle + options.flare, points.armgapBottom)
 
   // Top edge of garment
@@ -181,4 +185,20 @@ export default function (part) {
   }
 
   return part
+}
+
+export const top = {
+  name: 'tamiko.top',
+  plugins: [pluginBundle, bustPlugin],
+  draft: tamikoTop,
+  measurements: ['shoulderToShoulder', 'chest', 'hpsToWaistBack', 'shoulderSlope', 'waistToHips'],
+  optionalMeasurements: ['highBust'],
+  options: {
+    armholeDepthFactor: { pct: 50, min: 40, max: 60, menu: 'fit' },
+    chestEase: { pct: 2, min: 1, max: 20, menu: 'fit' },
+    flare: { deg: 15, min: -10, max: 30, menu: 'style' },
+    lengthBonus: { pct: 13, min: 0, max: 60, menu: 'style' },
+    shoulderseamLength: { pct: 10, min: 5, max: 25, menu: 'style' },
+    draftForHighBust: { bool: false, menu: 'fit' },
+  },
 }
