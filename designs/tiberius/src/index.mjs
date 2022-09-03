@@ -1,15 +1,12 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftTunica from './tunica'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { tunica } from './tunica.mjs'
 
-// Create new design
-const Tiberius = new freesewing.Design(config, plugins)
-
-Tiberius.prototype.draftTunica = draftTunica
+// Setup our new design
+const Tiberius = new Design({
+  data,
+  parts: [tunica],
+})
 
 // Named exports
-export { config, Tiberius }
-
-// Default export
-export default Tiberius
+export { tunica, Tiberius }

@@ -1,4 +1,6 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function tiberiusTunica(part) {
   const {
     Point,
     points,
@@ -179,4 +181,44 @@ export default function (part) {
     }
   }
   return part
+}
+
+export const tunica = {
+  name: 'tiberius.tunica',
+  plugins: [pluginBundle],
+  measurements: [
+    'head',
+    'shoulderToElbow',
+    'shoulderToShoulder',
+    'biceps',
+    'hpsToWaistBack',
+    'waistToKnee',
+    'waist',
+    'chest',
+    'seat',
+    'hips',
+    'waistToFloor',
+    'waistToUpperLeg',
+  ],
+  options: {
+    headRatio: { pct: 100, min: 80, max: 120, menu: 'fit' },
+    armholeDrop: { pct: 110, min: 100, max: 150, menu: 'fit' },
+    lengthBonus: { pct: 90, min: 60, max: 130, menu: 'style' },
+    widthBonus: { pct: 100, min: 50, max: 130, menu: 'style' },
+    clavi: { bool: false, menu: 'style.clavi' },
+    clavusLocation: { pct: 65, min: 50, max: 80, menu: 'style.clavi' },
+    clavusWidth: { pct: 100, min: 50, max: 150, menu: 'style.clavi' },
+    length: {
+      list: ['toKnee', 'toMidLeg', 'toFloor'],
+      dflt: 'toKnee',
+      menu: 'style',
+    },
+    width: {
+      list: ['toElbow', 'toShoulder', 'toMidArm'],
+      dflt: 'toMidArm',
+      menu: 'style',
+    },
+    forceWidth: { bool: false, menu: 'advanced' },
+  },
+  draft: tiberiusTunica,
 }
