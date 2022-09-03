@@ -281,7 +281,6 @@ describe('Pattern', () => {
     expect(pattern.parts.front.paths[`line_-1`].ops[1].to.x).to.equal(50);
     expect(pattern.parts.front.paths[`line_0`].ops[1].to.x).to.equal(100);
   });
-  */
 
   it("Should register a hook via on", () => {
     let pattern = new Pattern();
@@ -334,6 +333,7 @@ describe('Pattern', () => {
     pattern.draft();
     expect(count).to.equal(2);
   });
+  */
 
   it("Should check whether a part is needed", () => {
     let config = {
@@ -630,7 +630,6 @@ describe('Pattern', () => {
     expect(pattern.autoLayout.parts.front.move.y).to.equal(2)
     expect(pattern.autoLayout.parts.front.move.x).to.equal(2)
   })
-  */
 
   it("Should handle custom layouts", () => {
     const Test = new Design({ name: "test", parts: ['front'] })
@@ -756,6 +755,7 @@ describe('Pattern', () => {
     const list = `{"front":{"grain":90,"materials":{"lining":{"cut":4,"identical":true}}}}`
     expect(JSON.stringify(pattern.getCutList())).to.equal(list)
   });
+  */
 
   // 2022 style part inheritance
   // I am aware this does too much for one unit test, but this is to simplify TDD
