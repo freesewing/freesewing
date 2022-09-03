@@ -1,26 +1,26 @@
 ---
 waistbandWidth:
-  title: Waistband width
-  description: Controls the width of the waistband.
+  title: Ширина пояса
+  description: Керує загальною шириною пояса.
 waistbandPosition:
-  title: Waistband position
-  description: Controls the position of the waistband.
+  title: Розташування пояса
+  description: Керує тим, де розташовуватиметься пояс.
 waistbandShape:
-  title: Waistband shape
-  description: Whether you want a straight or shaped waistband.
+  title: Форма пояса
+  description: Чи Ви хочете прямий прямокутний чи вигнутий пояс.
 circleRatio:
-  title: Circle ratio
-  description: The percentage of a circle you want the skirt to be.
+  title: Відсоток кола
+  description: Відсоток кола, який Ви хочете для своєї спідниці-сонця.
 waistbandOverlap:
-  title: Waistband overlap
-  description: The amount by which the waistband overlaps.
+  title: Нашаровування пояса
+  description: Відсоток, за яким пояс нашаровуватиметься на основне полотнище спідниці.
 gathering:
-  title: Gathering
-  description: The percent by which the top of the skirt is longer than the bottom of the waistband.
+  title: Збірки
+  description: Відсоток, наскільки верхівка спідниці довша за низ пояса.
 seamlessFullCircle:
-  title: Seamless full circle
-  description: Enables a seamless full circle skirt.
+  title: Безшовний повний круг
+  description: Дає змогу створити викрійку спідниці-сонця безшовним повним кругом.
 hemWidth:
-  title: Hem width
-  description: Width of the hem
+  title: Ширина краю
+  description: Загальна ширина краю
 
