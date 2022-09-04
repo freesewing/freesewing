@@ -1,4 +1,7 @@
-const draftBanner = (part) => {
+import { bannerPlugin } from '@freesewing/plugin-banner'
+import { base } from './base.mjs'
+
+const pluginBanner = (part) => {
   const { points, Point, paths, Path, macro, options } = part.shorthand()
 
   if (['banner', 'all'].indexOf(options.plugin) !== -1) {
@@ -22,4 +25,14 @@ const draftBanner = (part) => {
   return part
 }
 
-export default draftBanner
+export const banner = {
+  name: 'plugintest.banner',
+  plugins: bannerPlugin,
+  after: base,
+  options: {
+    bannerDy: { count: -1, min: -15, max: 15, menu: 'banner' },
+    bannerSpaces: { count: 10, min: 0, max: 20, menu: 'banner' },
+    bannerRepeat: { count: 10, min: 1, max: 20, menu: 'banner' },
+  },
+  draft: pluginBanner,
+}

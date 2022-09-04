@@ -1,3 +1,6 @@
+import { buttonsPlugin } from '@freesewing/plugin-buttons'
+import { base } from './base.mjs'
+
 const addThese = [
   'button',
   'buttonhole',
@@ -7,7 +10,7 @@ const addThese = [
   'snap-socket',
 ]
 
-const draftButtons = (part) => {
+const pluginButtons = (part) => {
   const { points, Point, paths, Path, snippets, Snippet, options } = part.shorthand()
 
   if (['buttons', 'all'].indexOf(options.plugin) !== -1) {
@@ -30,4 +33,13 @@ const draftButtons = (part) => {
   return part
 }
 
-export default draftButtons
+export const buttons = {
+  name: 'plugintest.buttons',
+  after: base,
+  options: {
+    buttonsScale: { pct: 100, min: 10, max: 200, menu: 'buttons' },
+    buttonsRotate: { deg: 0, min: -360, max: 360, menu: 'buttons' },
+  },
+  plugins: buttonsPlugin,
+  draft: pluginButtons,
+}

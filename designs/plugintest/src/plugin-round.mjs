@@ -1,4 +1,7 @@
-const draftRound = (part) => {
+import { roundPlugin } from '@freesewing/plugin-round'
+import { base } from './base.mjs'
+
+const pluginRound = (part) => {
   const { Point, points, Path, paths, macro, options } = part.shorthand()
 
   if (['round', 'all'].indexOf(options.plugin) !== -1) {
@@ -39,4 +42,13 @@ const draftRound = (part) => {
   return part
 }
 
-export default draftRound
+export const round = {
+  name: 'plugintest.round',
+  after: base,
+  options: {
+    roundRadius: { count: 10, min: 0, max: 50, menu: 'round' },
+    roundRender: { bool: true, menu: 'round' },
+  },
+  plugins: roundPlugin,
+  draft: pluginRound,
+}

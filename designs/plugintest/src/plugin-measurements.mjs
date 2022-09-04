@@ -1,3 +1,5 @@
+import { measurementsPlugin } from '@freesewing/plugin-measurements'
+
 const measies = [
   'seatFront',
   'seatBackArc',
@@ -9,7 +11,7 @@ const measies = [
   'crossSeamBack',
 ]
 
-const draftI18n = (part) => {
+const pluginMeasurements = (part) => {
   const { points, Point, paths, Path, measurements, options } = part.shorthand()
 
   if (['measurements', 'all'].indexOf(options.plugin) !== -1) {
@@ -26,4 +28,8 @@ const draftI18n = (part) => {
   return part
 }
 
-export default draftI18n
+export const measurements = {
+  name: 'plugintest.measurements',
+  plugins: measurementsPlugin,
+  draft: pluginMeasurements,
+}

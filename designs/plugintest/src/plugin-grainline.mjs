@@ -1,4 +1,6 @@
-const draftCutonfold = (part) => {
+import { grainlinePlugin } from '@freesewing/plugin-grainline'
+
+const pluginGrainline = (part) => {
   const { points, Point, paths, Path, options, macro } = part.shorthand()
 
   if (['grainline', 'all'].indexOf(options.plugin) !== -1) {
@@ -19,4 +21,8 @@ const draftCutonfold = (part) => {
   return part
 }
 
-export default draftCutonfold
+export const grainline = {
+  name: 'plugintest.grainline',
+  plugins: grainlinePlugin,
+  draft: pluginGrainline,
+}

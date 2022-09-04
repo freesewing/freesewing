@@ -1,4 +1,7 @@
-const draftCutonfold = (part) => {
+import { cutonfoldPlugin } from '@freesewing/plugin-cutonfold'
+import { base } from './base.mjs'
+
+const pluginCutonfold = (part) => {
   const { points, Point, paths, Path, options, macro } = part.shorthand()
 
   if (['cutonfold', 'all'].indexOf(options.plugin) !== -1) {
@@ -19,4 +22,14 @@ const draftCutonfold = (part) => {
   return part
 }
 
-export default draftCutonfold
+export const cutonfold = {
+  name: 'plugintest.cutonfold',
+  after: base,
+  options: {
+    cutonfoldMargin: { count: 5, min: 0, max: 25, menu: 'cutonfold' },
+    cutonfoldOffset: { count: 15, min: 0, max: 100, menu: 'cutonfold' },
+    cutonfoldGrainline: { bool: false, menu: 'cutonfold' },
+  },
+  plugins: cutonfoldPlugin,
+  draft: pluginCutonfold,
+}

@@ -1,4 +1,7 @@
-const draftDimension = (part) => {
+import { flipPlugin } from '@freesewing/plugin-flip'
+import { base } from './base.mjs'
+
+const pluginFlip = (part) => {
   const { points, Point, paths, Path, snippets, Snippet, options, macro } = part.shorthand()
 
   if (['flip', 'all'].indexOf(options.plugin) !== -1) {
@@ -33,4 +36,12 @@ const draftDimension = (part) => {
   return part
 }
 
-export default draftDimension
+export const flip = {
+  name: 'plugintest.flip',
+  plugins: flipPlugin,
+  after: base,
+  options: {
+    flipAxis: { dflt: 'x', list: ['x', 'y'], menu: 'flip' },
+  },
+  draft: pluginFlip,
+}

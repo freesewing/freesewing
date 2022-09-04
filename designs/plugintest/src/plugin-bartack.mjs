@@ -1,3 +1,6 @@
+import { bartackPlugin } from '@freesewing/plugin-bartack'
+import { base } from './base.mjs'
+
 const bartackOptions = (options) => ({
   angle: options.bartackAngle,
   length: options.bartackLength,
@@ -7,7 +10,7 @@ const bartackOptions = (options) => ({
   end: options.bartackEnd,
 })
 
-const draftBartack = (part) => {
+const pluginBartack = (part) => {
   const { points, Point, paths, Path, macro, options } = part.shorthand()
 
   if (['bartack', 'all'].indexOf(options.plugin) !== -1) {
@@ -54,4 +57,17 @@ const draftBartack = (part) => {
   return part
 }
 
-export default draftBartack
+export const bartack = {
+  name: 'plugintest.bartack',
+  after: base,
+  options: {
+    bartackLength: { count: 15, min: 2, max: 100, menu: 'bartack' },
+    bartackAngle: { count: 0, min: -360, max: 360, menu: 'bartack' },
+    bartackDensity: { count: 3, min: 1, max: 5, menu: 'bartack' },
+    bartackWidth: { count: 3, min: 1, max: 5, menu: 'bartack' },
+    bartackStart: { pct: 25, min: 0, max: 100, menu: 'bartack' },
+    bartackEnd: { pct: 75, min: 0, max: 100, menu: 'bartack' },
+  },
+  plugins: bartackPlugin,
+  draft: pluginBartack,
+}

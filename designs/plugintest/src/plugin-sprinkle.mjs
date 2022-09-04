@@ -1,4 +1,7 @@
-const draftScalebox = (part) => {
+import { sprinklePlugin } from '@freesewing/plugin-sprinkle'
+import { base } from './base.mjs'
+
+const pluginSprinkle = (part) => {
   const { Point, points, Path, paths, options, macro } = part.shorthand()
 
   if (['sprinkle', 'all'].indexOf(options.plugin) !== -1) {
@@ -23,4 +26,28 @@ const draftScalebox = (part) => {
   return part
 }
 
-export default draftScalebox
+export const sprinkle = {
+  name: 'plugintest.sprinkle',
+  after: base,
+  options: {
+    sprinkleScale: { pct: 100, min: 10, max: 200, menu: 'sprinkle' },
+    sprinkleRotate: { deg: 0, min: -360, max: 360, menu: 'sprinkle' },
+    sprinkleSnippet: {
+      dflt: 'bnotch',
+      list: [
+        'notch',
+        'bnotch',
+        'button',
+        'buttonhole',
+        'buttonhole-start',
+        'buttonhole-end',
+        'snap-stud',
+        'snap-socket',
+        'logo',
+      ],
+      menu: 'sprinkle'
+    },
+  },
+  plugins: sprinklePlugin,
+  draft: pluginSprinkle,
+}

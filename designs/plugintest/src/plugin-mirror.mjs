@@ -1,4 +1,7 @@
-const draftDimension = (part) => {
+import { mirrorPlugin } from '@freesewing/plugin-mirror'
+import { base } from './base.mjs'
+
+const pluginMirror = (part) => {
   const { points, Point, paths, Path, snippets, Snippet, options, macro } = part.shorthand()
 
   if (['mirror', 'all'].indexOf(options.plugin) !== -1) {
@@ -62,4 +65,13 @@ const draftDimension = (part) => {
   return part
 }
 
-export default draftDimension
+export const mirror = {
+  name: 'plugintest.mirror',
+  after: base,
+  options: {
+    mirrorLine: { dflt: 'a', list: ['a', 'b', 'none'], menu: 'mirror' },
+    mirrorClone: { bool: true, menu: 'mirror' },
+  },
+  plugins: mirrorPlugin,
+  draft: pluginMirror,
+}

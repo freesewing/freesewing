@@ -1,4 +1,7 @@
-const draftDimension = (part) => {
+import { dimensionPlugin } from '@freesewing/plugin-dimension'
+import { base } from './base.mjs'
+
+const pluginDimension = (part) => {
   const { points, Point, paths, Path, options, macro } = part.shorthand()
 
   if (['dimension', 'all'].indexOf(options.plugin) !== -1) {
@@ -58,4 +61,15 @@ const draftDimension = (part) => {
   return part
 }
 
-export default draftDimension
+export const dimension = {
+  name: 'plugintest.dimension',
+  after: base,
+  options: {
+    dimensionCustomText: { bool: false, menu: 'dimension' },
+    dimensionD: { count: 10, min: -20, max: 20, menu: 'dimension' },
+    dimensionEndMarker: { bool: true, menu: 'dimension' },
+    dimensionStartMarker: { bool: true, menu: 'dimension' },
+  },
+  plugins: dimensionPlugin,
+  draft: pluginDimension,
+}
