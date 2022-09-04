@@ -1,6 +1,7 @@
-import dimensions from './shared'
+import { sleeve } from './sleeve.mjs'
+import { dimensions } from './shared.mjs'
 
-export default function (part) {
+function draftBentTopSleeve (part) {
   let { macro, Path, points, paths, complete, paperless, snippets, Snippet, sa } = part.shorthand()
 
   // Extract seamline from sleeve
@@ -66,4 +67,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const topSleeve = {
+  name: 'bent.topSleeve',
+  from: sleeve,
+  draft: draftBentTopSleeve,
 }
