@@ -1,25 +1,16 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-// Parts
-import draftBase from './base'
-import draftBow1 from './bow1'
-import draftBow2 from './bow2'
-import draftBow3 from './bow3'
-import draftRibbon from './ribbon'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { bow1 } from './bow1.mjs'
+import { bow2 } from './bow2.mjs'
+import { bow3 } from './bow3.mjs'
+import { ribbon } from './ribbon.mjs'
 
-// Create new design
-const Benjamin = new freesewing.Design(config, plugins)
-
-// Attach draft methods to prototype
-Benjamin.prototype.draftBase = draftBase
-Benjamin.prototype.draftBow1 = draftBow1
-Benjamin.prototype.draftBow2 = draftBow2
-Benjamin.prototype.draftBow3 = draftBow3
-Benjamin.prototype.draftRibbon = draftRibbon
+// Setup our new design
+const Benjamin = new Design({
+  data,
+  parts: [ bow1, bow2, bow3, ribbon ],
+})
 
 // Named exports
-export { config, Benjamin }
+export { bow1, bow2, bow3, ribbon, Benjamin }
 
-// Default export
-export default Benjamin

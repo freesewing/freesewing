@@ -1,4 +1,6 @@
-export default function (part) {
+import { base } from './base.mjs'
+
+function draftBenjaminBow3 (part) {
   let { options, Point, points, Path, paths, complete, macro, sa, store, paperless } =
     part.shorthand()
 
@@ -47,4 +49,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const bow3 = {
+  name: 'benjamin.bow3',
+  from: base,
+  draft: draftBenjaminBow3,
 }
