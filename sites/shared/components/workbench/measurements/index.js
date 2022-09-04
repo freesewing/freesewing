@@ -47,12 +47,13 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
 
   // Save us some typing
   const inputProps = useMemo(() => ({ app, updateMeasurements, gist }), [app, gist])
+  const shortname = design.config.data.name.replace('@freesewing/', '')
 
   return (
     <div className="m-auto max-w-2xl">
       <h1>
         <span className='capitalize mr-4 opacity-70'>
-          {design.config.data.name}:
+          {shortname}:
         </span> {t('measurements')}
       </h1>
       <h2>{t('cfp:preloadMeasurements')}</h2>
