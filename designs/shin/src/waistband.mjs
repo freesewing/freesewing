@@ -1,5 +1,7 @@
-export default function (part) {
-  let {
+import { back } from './back.mjs'
+
+function shinWaistband(part) {
+  const {
     store,
     macro,
     Point,
@@ -13,7 +15,7 @@ export default function (part) {
     absoluteOptions,
   } = part.shorthand()
 
-  let height = absoluteOptions.elasticWidth * 2
+  const height = absoluteOptions.elasticWidth * 2
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, height)
   points.topMidLeft = new Point(height, 0)
@@ -83,4 +85,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const waistband = {
+  name: 'shin.waistband',
+  after: back,
+  draft: shinWaistband,
 }

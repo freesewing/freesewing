@@ -1,21 +1,14 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-// Parts
-import draftBack from './back'
-import draftFront from './front'
-import draftWaistband from './waistband'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { back } from './back.mjs'
+import { front } from './front.mjs'
+import { waistband } from './waistband.mjs'
 
-// Create new design
-const Shin = new freesewing.Design(config, plugins)
-
-// Attach draft methods to prototype
-Shin.prototype.draftBack = draftBack
-Shin.prototype.draftFront = draftFront
-Shin.prototype.draftWaistband = draftWaistband
+// Setup our new design
+const Shin = new Design({
+  data,
+  parts: [back, front, waistband],
+})
 
 // Named exports
-export { config, Shin }
-
-// Default export
-export default Shin
+export { back, front, waistband, Shin }

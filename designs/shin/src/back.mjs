@@ -1,5 +1,9 @@
-export default function (part) {
-  let {
+import { pctBasedOn } from '@freesewing/core'
+import { elastics } from '@freesewing/snapseries'
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function shinBack(part) {
+  const {
     store,
     macro,
     Point,
@@ -178,4 +182,30 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'shin.back',
+  measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
+  plugins: [pluginBundle],
+  options: {
+    frontFactor: 0.58,
+    legFrontFactor: 0.48,
+    gussetFactor: 0.0714,
+    angle: 10,
+    elasticWidth: {
+      pct: 10,
+      min: 4,
+      max: 20,
+      snap: elastics,
+      ...pctBasedOn('waistToUpperLeg'),
+      menu: 'style',
+    },
+    stretch: { pct: 20, min: 10, max: 30, menu: 'fit' },
+    bulge: { pct: 2.5, min: 0, max: 5, menu: 'fit' },
+    legReduction: { pct: 5, min: 0, max: 10, menu: 'fit' },
+    rise: { pct: 0, min: 0, max: 25, menu: 'style' },
+    backRise: { pct: 5, min: 0, max: 10, menu: 'fit' },
+  },
+  draft: shinBack,
 }

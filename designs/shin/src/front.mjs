@@ -1,5 +1,7 @@
-export default function (part) {
-  let {
+import { back } from './back.mjs'
+
+function shinFront(part) {
+  const {
     store,
     macro,
     Point,
@@ -180,4 +182,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'shin.front',
+  after: back,
+  draft: shinFront,
 }
