@@ -1,4 +1,4 @@
-export default function (part) {
+export function draftStraightWaistband(part) {
   /**
    * The straight waistband is just a rectangle with the width
    * of double the waistband width, since it will be folded

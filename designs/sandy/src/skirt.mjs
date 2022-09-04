@@ -1,6 +1,9 @@
-import draftRingSector from './shared'
+import { draftRingSector } from './shared.mjs'
+import { pctBasedOn } from '@freesewing/core'
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { elastics } from '@freesewing/snapseries'
 
-export default function (part) {
+function sandySkirt(part) {
   const {
     utils,
     store,
@@ -207,4 +210,26 @@ export default function (part) {
   }
 
   return part
+}
+
+export const skirt = {
+  name: 'sandy.skirt',
+  measurements: ['waist', 'waistToFloor', 'waistToHips', 'hips'],
+  plugins: pluginBundle,
+  options: {
+    minimumOverlap: 15, // Lower than this and we don't draw a button
+    seamlessFullCircle: { bool: false },
+    waistbandWidth: { pct: 4, min: 1, max: 8, snap: elastics, ...pctBasedOn('waistToFloor') },
+    waistbandPosition: { pct: 50, min: 0, max: 100 },
+    lengthBonus: { pct: 50, min: 10, max: 100 },
+    circleRatio: { pct: 50, min: 20, max: 100 },
+    waistbandOverlap: { pct: 3, min: 0, max: 15 },
+    gathering: { pct: 0, min: 0, max: 200 },
+    hemWidth: { pct: 2, min: 1, max: 10 },
+    waistbandShape: {
+      list: ['straight', 'curved'],
+      dflt: 'straight',
+    },
+  },
+  draft: sandySkirt,
 }

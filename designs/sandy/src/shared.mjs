@@ -1,4 +1,4 @@
-const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
+export const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
   const { utils, Point, points, Path } = part.shorthand()
 
   const roundExtended = (radius, angle = 90) => {
@@ -103,5 +103,3 @@ const draftRingSector = (part, rot, an, radIn, radEx, rotate = false) => {
     .curve(points.ex1CFlipped, points.ex2CFlipped, points.ex2Flipped)
     .close()
 }
-
-export default draftRingSector

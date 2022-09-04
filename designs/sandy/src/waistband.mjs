@@ -1,9 +1,14 @@
-import straightWaistband from './straight-waistband'
-import curvedWaistband from './curved-waistband'
+import { draftStraightWaistband } from './straight-waistband.mjs'
+import { draftCurvedWaistband } from './curved-waistband.mjs'
 
-export default (part) => {
+const sandyWaistband = (part) => {
   const { options } = part.shorthand()
 
-  if (options.waistbandShape === 'curved') return curvedWaistband(part)
-  else return straightWaistband(part)
+  if (options.waistbandShape === 'curved') return draftCurvedWaistband(part)
+  else return draftStraightWaistband(part)
+}
+
+export const waistband = {
+  name: 'sandy.waistband',
+  draft: sandyWaistband,
 }

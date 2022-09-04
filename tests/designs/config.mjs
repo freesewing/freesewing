@@ -64,22 +64,24 @@ export const testPatternConfig = (Pattern) => {
   // Config tests for non-utility patterns only
   if (family !== 'utilities') {
     it(`  - 'design' should be set and be a string of reasonable length`, () => {
-      if (Array.isArray(meta.design)) {
-        for (const person of meta.design) {
-          expect(typeof person).to.equal('string')
-          expect(person.length > 2).to.be.true
-          expect(person.length < 80).to.be.true
-        }
-      } else {
-        expect(typeof meta.design).to.equal('string')
-        expect(meta.design.length > 2).to.be.true
-        expect(meta.design.length < 80).to.be.true
+      const people = Array.isArray(meta.design)
+        ? meta.design
+        : [ meta.design ]
+      for (const person of people) {
+        expect(typeof person).to.equal('string')
+        expect(person.length > 2).to.be.true
+        expect(person.length < 80).to.be.true
       }
     })
     it(`  - 'code' should be set and be a string of reasonable length`, () => {
-      expect(typeof meta.code).to.equal('string')
-      expect(meta.code.length > 2).to.be.true
-      expect(meta.code.length < 80).to.be.true
+      const people = Array.isArray(meta.code)
+        ? meta.design
+        : [ meta.design ]
+      for (const person of people) {
+        expect(typeof person).to.equal('string')
+        expect(person.length > 2).to.be.true
+        expect(person.length < 80).to.be.true
+      }
     })
     it(`  - 'department' should be set and be a string of reasonable length`, () => {
       expect(typeof meta.code).to.equal('string')

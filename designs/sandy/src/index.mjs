@@ -1,19 +1,13 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-// Parts
-import draftSkirt from './skirt'
-import draftWaistband from './waistband'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { skirt } from './skirt.mjs'
+import { waistband } from './waistband.mjs'
 
-// Create design
-const Sandy = new freesewing.Design(config, plugins)
-
-// Attach draft methods to prototype
-Sandy.prototype.draftSkirt = (part) => draftSkirt(part)
-Sandy.prototype.draftWaistband = (part) => draftWaistband(part)
+// Setup our new design
+const Sandy = new Design({
+  data,
+  parts: [skirt, waistband],
+})
 
 // Named exports
-export { config, Sandy }
-
-// Default export
-export default Sandy
+export { skirt, waistband, Sandy }
