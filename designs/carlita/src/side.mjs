@@ -1,4 +1,6 @@
-export default function (part) {
+import { front } from './front.mjs'
+
+function draftCarlitaSide (part) {
   let { paperless, sa, snippets, Snippet, store, complete, points, macro, Point, paths, Path } =
     part.shorthand()
 
@@ -112,4 +114,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const side = {
+  name: 'carlita.side',
+  from: front,
+  draft: draftCarlitaSide,
 }
