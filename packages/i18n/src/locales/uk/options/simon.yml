@@ -1,14 +1,14 @@
 ---
 backDarts:
-  title: Back darts
-  description: Whether or not to include back darts
+  title: Виточки на спині
+  description: Чи додавати виточки на спині
   options:
-    auto: Automatic
-    always: Always
-    never: Never
+    auto: Автоматично
+    always: Завжди
+    never: Ніколи
 backDartShaping:
-  title: Back dart shaping
-  description: The amount of shaping that is done by the back darts
+  title: Форма виточок на спині
+  description: Наскільки сильно виточки на спині впливають на загальну форму
 barrelCuffNarrowButton:
   title: Cuff narrow button
   description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
