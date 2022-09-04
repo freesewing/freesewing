@@ -91,9 +91,9 @@ cuffStyle:
     roundedBarrelCuff: Заокруглений спортивний (італійський) манжет
     angledBarrelCuff: Скошений спортивний (італійський) манжет
     straightBarrelCuff: Прямий спортивний (італійський) манжет
-    roundedFrenchCuff: Заокруглений французький манжет
-    angledFrenchCuff: Скошений французький рукав
-    straightFrenchCuff: Прямий французький рукав
+    roundedFrenchCuff: Заокруглений подвійний (французький) манжет
+    angledFrenchCuff: Скоршений подвійний (французький) манжет
+    straightFrenchCuff: Прямий подвійний (французький) рукав
 extraTopButton:
   title: Додатковий верхній ґудзик
   description: Чи додавати ще один ґудзик зверху шліца.
@@ -101,36 +101,36 @@ ffsa:
   title: Flat-felled seam allowace
   description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
 hemCurve:
-  title: Hem curve
-  description: The height of the curve on a curved hem.
+  title: Крива краю
+  description: Висота кривої вигнутого краю.
 hemStyle:
-  title: Hem style
-  description: The style of the shirt hem.
+  title: Стиль краю
+  description: Стиль краю сорочки.
   options:
-    straight: Straight hem
-    baseball: Baseball hem
-    slashed: Slashed hem
+    straight: Прямий край
+    baseball: З боковими підйомами
+    slashed: З боковими вирізами
 roundBack:
-  title: Round back
-  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
+  title: Заокруглена спина
+  description: Для (більш) заокруглених спин, це налаштування збільшує довжину спини (під кокеткою). Додаткова довжина поступово зменшується від центру до боків спинного полотнища.
 seperateButtonholePlacket:
-  title: Seperate buttonhole placket
-  description: Draft a separate buttonhole placket.
+  title: Окремий дірковий шліц
+  description: Шліц для дірок додається до викрійки як окрема частина.
 seperateButtonPlacket:
-  title: Seperate button placket
-  description: Draft a separate button placket
+  title: Окремий ґудзиковий шліц
+  description: Шліц для ґудзиків додається до викрійки як окрема частина
 sleevePlacketLength:
-  title: Sleeve placket length
-  description: The length of the sleeve placket.
+  title: Довжина шліца на рукаві
+  description: Довжина шліца, що знаходиться на рукаві.
 sleevePlacketWidth:
-  title: Sleeve placket width
-  description: The width of the sleeve placket.
+  title: Ширина шліца на рукаві
+  description: Ширина шліца, що знаходиться на рукаві.
 splitYoke:
   title: Зшивна кокетка
-  description: Whether to draft a split or regular yoke.
+  description: Зшивна кокетка чи кокетка суцільного крою?
 waistEase:
-  title: Waist ease
-  description: The amount of ease at your (natural) waist.
+  title: Свобода облягання на талії
+  description: Керує свободою облягання на талії.
 yokeHeight:
-  title: Yoke height
-  description: Controls the height of the yoke
+  title: Висота кокетки
+  description: Керує висотою кокетки
