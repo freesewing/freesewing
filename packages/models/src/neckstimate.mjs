@@ -115,7 +115,7 @@ const ratio = {
 export const measurements = Object.keys(base)
 
 // This estimates a measurement based on the neck
-export const neckstimate = (neck = false, measurement = false, breasts = false, noRound=false) => {
+export const neckstimate = (neck = false, measurement = false, i=0, noRound=false) => {
 
   if (typeof base[measurement] === 'undefined') {
     console.log(
@@ -131,8 +131,6 @@ export const neckstimate = (neck = false, measurement = false, breasts = false, 
         ')'
     )
   }
-
-  const i = breasts ? 0 : 1
 
   // Shoulder slope is in degrees. Always return the base.
   if (measurement === 'shoulderSlope') return base.shoulderSlope[i]
