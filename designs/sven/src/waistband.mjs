@@ -1,7 +1,9 @@
-import { draftRibbing } from './shared'
+import { draftRibbing } from './shared.mjs'
+import { ribbing, hipsEase } from './frontback.mjs'
+import { ribbingStretch } from './cuff.mjs'
 
-export default (part) => {
-  let { measurements, sa, points, complete, paperless, macro, options } = part.shorthand()
+function svenWaistband(part) {
+  const { measurements, sa, points, complete, paperless, macro, options } = part.shorthand()
 
   if (!options.ribbing) return part
 
@@ -25,4 +27,11 @@ export default (part) => {
   }
 
   return part
+}
+
+export const waistband = {
+  name: 'sven.waistband',
+  measurements: ['hips'],
+  options: { ribbing, ribbingStretch, hipsEase },
+  draft: svenWaistband,
 }

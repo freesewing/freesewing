@@ -1,10 +1,12 @@
-import { draftRibbing } from './shared'
+import { draftRibbing } from './shared.mjs'
+import { ribbing } from './frontback.mjs'
+import { sleeve } from './sleeve.mjs'
 
-export default (part) => {
-  let { measurements, sa, points, complete, paperless, macro, options } = part.shorthand()
+function svenCuff(part) {
+  const { measurements, sa, points, complete, paperless, macro, options } = part.shorthand()
 
   if (!options.ribbing) return part
-  let length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
+  const length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
   draftRibbing(part, length)
 
   // Complete pattern?
@@ -24,4 +26,14 @@ export default (part) => {
   }
 
   return part
+}
+
+export const ribbingStretch = { pct: 15, min: 0, max: 30, menu: 'fit' }
+
+export const cuff = {
+  name: 'sven.cuff',
+  measurements: ['wrist'],
+  after: sleeve,
+  options: { ribbing, ribbingStretch },
+  draft: svenCuff,
 }

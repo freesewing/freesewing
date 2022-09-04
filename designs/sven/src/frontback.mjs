@@ -1,6 +1,19 @@
-export default (part) => {
-  let { store, measurements, sa, Point, points, Path, paths, complete, paperless, macro, options } =
-    part.shorthand()
+import { front as brianFront, back as brianBack } from '@freesewing/brian'
+
+function svenFrontBack(part) {
+  const {
+    store,
+    measurements,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    complete,
+    paperless,
+    macro,
+    options,
+  } = part.shorthand()
   let front = true
   if (typeof points.cfHem === 'undefined') front = false
 
@@ -96,4 +109,35 @@ export default (part) => {
   }
 
   return part
+}
+
+const measurements = ['hips', 'waist']
+export const hipsEase = { pct: 8, min: -4, max: 20, menu: 'fit' }
+export const ribbing = { bool: true, menu: 'style' }
+const options = {
+  waistEase: 0.08,
+  collarEase: { pct: 10, min: 5, max: 30, menu: 'fit' },
+  lengthBonus: { pct: 15, min: 0, max: 30, menu: 'style' },
+  sleeveLengthBonus: { pct: 3, min: 0, max: 10, menu: 'style' },
+  ribbingHeight: { pct: 8, min: 3, max: 15, menu: 'style' },
+  hipsEase,
+  ribbing,
+}
+
+export const front = {
+  name: 'sven.front',
+  from: brianFront,
+  options,
+  hideDependencies: true,
+  measurements,
+  draft: svenFrontBack,
+}
+
+export const back = {
+  name: 'sven.back',
+  from: brianBack,
+  options,
+  hideDependencies: true,
+  measurements,
+  draft: svenFrontBack,
 }

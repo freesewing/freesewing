@@ -1,5 +1,5 @@
 export const draftRibbing = function (part, length) {
-  let {
+  const {
     store,
     measurements,
     options,

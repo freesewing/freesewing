@@ -1,12 +1,16 @@
-export default (part) => {
-  let { store, sa, points, paths, Path, complete, paperless, macro, options } = part.shorthand()
+import { sleeve as brianSleeve } from '@freesewing/brian'
+import { ribbing, front, back } from './frontback.mjs'
+
+function svenSleeve(part) {
+  const { store, sa, points, paths, Path, complete, paperless, macro, options } = part.shorthand()
 
   if (options.ribbing) {
-    let ribbingHeight = store.get('ribbingHeight')
+    const ribbingHeight = store.get('ribbingHeight')
     points.wristLeft = points.wristLeft.shift(90, ribbingHeight)
     points.wristRight = points.wristRight.shift(90, ribbingHeight)
     points.centerWrist = points.centerWrist.shift(90, ribbingHeight)
   }
+
 
   paths.seam = new Path()
     .move(points.wristRight)
@@ -66,4 +70,16 @@ export default (part) => {
   }
 
   return part
+}
+
+export const sleeve = {
+  name: 'sven.sleeve',
+  from: brianSleeve,
+  hideDependencies: true,
+  after: [ front, back ],
+  options: {
+    ribbing,
+    cuffEase: { pct: 20, min: 0, max: 200, menu: 'fit' },
+  },
+  draft: svenSleeve,
 }
