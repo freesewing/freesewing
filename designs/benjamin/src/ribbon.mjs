@@ -1,4 +1,4 @@
-export default function (part) {
+function draftBenjaminRibbon (part) {
   let { Point, Path, measurements, store, options, complete, macro, points, paths, sa, paperless } =
     part.shorthand()
 
@@ -51,4 +51,9 @@ export default function (part) {
   }
 
   return part
+}
+
+export const ribbon = {
+  name: 'benjamin.ribbon',
+  draft: draftBenjaminRibbon,
 }
