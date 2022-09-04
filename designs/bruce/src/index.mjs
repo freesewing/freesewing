@@ -1,23 +1,16 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-// Parts
-import draftBack from './back'
-import draftSide from './side'
-import draftFront from './front'
-import draftInset from './inset'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { back } from './back.mjs'
+import { side } from './side.mjs'
+import { front } from './front.mjs'
+import { inset } from './inset.mjs'
 
 // Create design
-const Bruce = new freesewing.Design(config, plugins)
-
-// Attach draft methods to prototype
-Bruce.prototype.draftBack = (part) => draftBack(part)
-Bruce.prototype.draftSide = (part) => draftSide(part)
-Bruce.prototype.draftInset = (part) => draftInset(part)
-Bruce.prototype.draftFront = (part) => draftFront(part)
+const Bruce = new Design({
+  data,
+  parts: [ back, side, front, inset ]
+})
 
 // Named exports
-export { config, Bruce }
+export { back, side, front, inset, Bruce }
 
-// Default export
-export default Bruce

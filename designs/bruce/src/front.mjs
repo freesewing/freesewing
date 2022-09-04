@@ -1,4 +1,5 @@
-import init from './init'
+import { inset } from './inset.mjs'
+import { init } from './init.mjs'
 
 function tuskDelta(part) {
   let { Path, points, store } = part.shorthand()
@@ -22,7 +23,7 @@ function tweakTusk(delta, part) {
   points.curveRightCpBottom = points.curveRightCpBottom.shift(90, delta / factor)
 }
 
-export default function (part) {
+function draftBruceFront (part) {
   let {
     store,
     sa,
@@ -271,4 +272,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'bruce.front',
+  after: inset,
+  draft: draftBruceFront,
 }
