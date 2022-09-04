@@ -178,10 +178,6 @@ Pattern.prototype.getPartList = function () {
  */
 Pattern.prototype.init = function () {
   this.initialized++
-  // Load plugins
-  if (this.config.plugins) {
-    for (const plugin of Object.values(this.config.plugins)) this.use(plugin)
-  }
   // Resolve all dependencies
   this.dependencies = this.config.dependencies
   this.inject = this.config.inject
@@ -190,6 +186,10 @@ Pattern.prototype.init = function () {
   this.resolvedDependencies = this.resolveDependencies(this.dependencies)
   this.config.resolvedDependencies = this.resolvedDependencies
   this.config.draftOrder = this.draftOrder(this.resolvedDependencies)
+  // Load plugins
+  if (this.config.plugins) {
+    for (const plugin of Object.values(this.config.plugins)) this.use(plugin)
+  }
 
   // Make all parts uniform
   if (this.__parts) {
@@ -274,7 +274,7 @@ Pattern.prototype.addPart = function (part) {
     if (part.name) {
       this.config.parts[part.name] = part
       // Add part-level config to config
-      this.config = addPartConfig(part, this.config)
+      this.config = addPartConfig(part, this.config, this.raise)
     }
     else this.raise.error(`Part must have a name`)
   }
@@ -545,16 +545,33 @@ Pattern.prototype.on = function (hook, method, data) {
   return this
 }
 
-Pattern.prototype.use = function (plugin, data) {
-  // Don't load plugins more than once
-  if (this.plugins?.[plugin.name]) return this
+Pattern.prototype.loadPlugin = function (plugin, data, explicit=false) {
   this.plugins[plugin.name] = plugin
-  // Conditional plugin?
-  if (plugin.plugin && plugin.condition) return this.useIf(plugin, data)
-  // Regular plugin
-  this.raise.info(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
   if (plugin.hooks) this.loadPluginHooks(plugin, data)
   if (plugin.macros) this.loadPluginMacros(plugin)
+  this.raise.info(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
+
+  return this
+}
+
+
+Pattern.prototype.use = function (plugin, data) {
+  // Existing plugin - But we may still need to load it
+  // if it was previously loaded conditionally, and is now loaded explicitly
+  if (this.plugins?.[plugin.name]?.condition && !plugin.condition) {
+    this.raise.info(
+      `Plugin \`${plugin.plugin.name} was loaded conditionally earlier, but is now loaded explicitly.`
+    )
+    return this.loadPlugin(plugin, data)
+  }
+  // New plugin?
+  else if (!this.plugins?.[plugin.name]) return (plugin.plugin && plugin.condition)
+    ? this.useIf(plugin, data) // Conditional plugin
+    : this.loadPlugin(plugin, data)  // Regular plugin
+
+  this.raise.info(
+    `Plugin \`${plugin.plugin ? plugin.plugin.name : plugin.name}\` was requested, but it's already loaded. Skipping.`
+  )
 
   return this
 }
@@ -564,7 +581,7 @@ Pattern.prototype.useIf = function (plugin, settings) {
     this.raise.info(
       `Condition met: Loaded plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
     )
-    this.loadPluginHooks(plugin.plugin, plugin.data)
+    this.loadPlugin(plugin.plugin, plugin.data)
   } else {
     this.raise.info(
       `Condition not met: Skipped loading plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
@@ -693,14 +710,15 @@ Pattern.prototype.resolveDependency = function (
 
 /** Adds a part as a simple dependency **/
 Pattern.prototype.addDependency = function (name, part, dep) {
-  if (part.hideDependencies || part.hideAll) {
-    dep.hide = true
-    dep.hideAll = true
-  }
+  // FIXME: This causes issues
+  //if (part.hideDependencies || part.hideAll) {
+  //  dep.hide = true
+  //  dep.hideAll = true
+  //}
   this.dependencies[name] = mergeDependencies(dep.name, this.dependencies[name])
   if (typeof this.__parts[dep.name] === 'undefined') {
     this.__parts[dep.name] = decoratePartDependency(dep)
-    addPartConfig(this.__parts[dep.name], this.config)
+    addPartConfig(this.__parts[dep.name], this.config, this.raise)
   }
 
   return this
@@ -728,7 +746,7 @@ Pattern.prototype.preresolveDependencies = function (count=0) {
           this.__parts[part.from.name].hide = true
           this.__parts[part.from.name].hideAll = true
         }
-        addPartConfig(this.__parts[part.from.name], this.config)
+        addPartConfig(this.__parts[part.from.name], this.config, this.raise)
       }
     }
     // Simple dependency (after)
@@ -745,7 +763,7 @@ Pattern.prototype.preresolveDependencies = function (count=0) {
   if (len > count) return this.preresolveDependencies(len)
 
   for (const [name, part] of Object.entries(this.__parts)) {
-    addPartConfig(name, this.config)
+    addPartConfig(part, this.config, this.raise)
   }
 
   // Weed out doubles

@@ -15,13 +15,32 @@ export function Design(config) {
     options: {},
     parts: [],
     plugins: [],
+    // A place to store deprecation and other warnings before we even have a pattern instantiated
+    events: {
+      debug: [],
+      error: [],
+      info: [],
+      suggestion: [],
+      warning: [],
+    },
     ...config
+  }
+  const raiseEvent = function (data, type) {
+    config.events[type].push(data)
+  }
+  // Polyfill for pattern raise methods
+  const raise = {
+    debug: data => raiseEvent(`[early] `+data, 'debug'),
+    error: data => raiseEvent(`[early] `+data, 'error'),
+    info: data => raiseEvent(`[early] `+data, 'info'),
+    suggestion: data => raiseEvent(`[early] `+data, 'suggestion'),
+    warning: data => raiseEvent(`[early] `+data, 'warning'),
   }
   const parts = {}
   for (const part of config.parts) {
     if (typeof part === 'object') {
       parts[part.name] = part
-      config = addPartConfig(parts[part.name], config)
+      config = addPartConfig(parts[part.name], config, raise )
     }
     else throw("Invalid part configuration. Part is not an object")
   }
@@ -31,8 +50,6 @@ export function Design(config) {
   // Ensure all options have a hide() method and menu property
   config.options = completeOptions(config.options)
 
-  // A place to store deprecation and other warnings before we even have a pattern instantiated
-  config.warnings = []
 
   const pattern = function (settings) {
     Pattern.call(this, config)

@@ -493,18 +493,18 @@ const addPartOptionGroups = (part, config) => {
 }
 
 // Add part-level measurements
-const addPartMeasurements = (part, config, list=false) => {
+const addPartMeasurements = (part, config, raise, list=false) => {
   if (!list) list = config.measurements
     ? [...config.measurements]
     : []
   if (part.measurements) {
     for (const m of part.measurements) list.push(m)
   }
-  if (part.from) addPartMeasurements(part.from, config, list)
+  if (part.from) addPartMeasurements(part.from, config, raise, list)
   if (part.after) {
     if (Array.isArray(part.after)) {
-      for (const dep of part.after) addPartMeasurements(dep, config, list)
-    } else addPartMeasurements(part.after, config, list)
+      for (const dep of part.after) addPartMeasurements(dep, config, raise, list)
+    } else addPartMeasurements(part.after, config, raise, list)
   }
 
   // Weed out duplicates
@@ -514,7 +514,7 @@ const addPartMeasurements = (part, config, list=false) => {
 }
 
 // Add part-level optional measurements
-const addPartOptionalMeasurements = (part, config, list=false) => {
+const addPartOptionalMeasurements = (part, config, raise, list=false) => {
   if (!list) list = config.optionalMeasurements
     ? [...config.optionalMeasurements]
     : []
@@ -568,24 +568,31 @@ export const addPartDependencies = (part, config) => {
 }
 
 // Add part-level plugins
-export const addPartPlugins = (part, config) => {
+export const addPartPlugins = (part, config, raise) => {
   if (!part.plugins) return config
   if (!Array.isArray(part.plugins)) part.plugins = [ part.plugins ]
   for (const plugin of part.plugins) {
-    if (plugin.plugin && plugin.condition) config.plugins[plugin.plugin.name] = plugin
+    // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
+    if (plugin.plugin && plugin.condition) {
+      if (config.plugins[plugin.plugin.name]?.condition) {
+        raise.info(`Plugin \`${plugin.plugin.name}\` was re-requested conditionally. Overwriting earlier condition.`)
+        config.plugins[plugin.plugin.name] = plugin
+      }
+      else raise.info(`Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading bitch.`)
+  }
     else config.plugins[plugin.name] = plugin
   }
 
   return config
 }
 
-export const addPartConfig = (part, config) => {
-  config = addPartOptions(part, config)
-  config = addPartMeasurements(part, config)
-  config = addPartOptionalMeasurements(part, config)
-  config = addPartDependencies(part, config)
-  config = addPartOptionGroups(part, config)
-  config = addPartPlugins(part, config)
+export const addPartConfig = (part, config, raise) => {
+  config = addPartOptions(part, config, raise)
+  config = addPartMeasurements(part, config, raise)
+  config = addPartOptionalMeasurements(part, config, raise)
+  config = addPartDependencies(part, config, raise)
+  config = addPartOptionGroups(part, config, raise)
+  config = addPartPlugins(part, config, raise)
 
   return config
 }
