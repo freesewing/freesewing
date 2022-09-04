@@ -10,8 +10,8 @@ backDartShaping:
   title: Форма виточок на спині
   description: Наскільки сильно виточки на спині впливають на загальну форму
 barrelCuffNarrowButton:
-  title: Cuff narrow button
-  description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
+  title: Другий ґудзик на чохлі
+  description: Чи додавати другий ґудзик на чохлі/манжеті для більшого звуження. Цей варіант працює лише зі спортивним (італійським) манжетом.
 boxPleat:
   title: Box pleat
   description: Whether to include a box pleat at the back or not
