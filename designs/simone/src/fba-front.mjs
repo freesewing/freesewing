@@ -1,4 +1,7 @@
-export default (part) => {
+import { front } from '@freesewing/simon'
+import { bustPlugin } from '@freesewing/plugin-bust'
+
+function simoneFbaFront(part) {
   const {
     measurements,
     Point,
@@ -12,9 +15,8 @@ export default (part) => {
     utils,
     sa,
     complete,
-    raise
+    raise,
   } = part.shorthand()
-
   /*
    * Simone is Simon with an FBA (Full Bust Adjustment)
    * Which means that we draft simon with the high bust measurement instead
@@ -317,8 +319,17 @@ export default (part) => {
   for (let s in snippets) delete snippets[s]
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['armhole', 'armholePitch', 'cfArmhole', 'cfWaist', 'cfHem', 'hips',
-         'waist', 'bust', 'cfBust',],
+    on: [
+      'armhole',
+      'armholePitch',
+      'cfArmhole',
+      'cfWaist',
+      'cfHem',
+      'hips',
+      'waist',
+      'bust',
+      'cfBust',
+    ],
   })
   points.logo = new Point(points.armhole.x / 2, points.armhole.y)
   snippets.logo = new Snippet('logo', points.logo)
@@ -399,4 +410,27 @@ export default (part) => {
   }
 
   return part
+}
+
+export const fbaFront = {
+  name: 'simone.fbaFront',
+  from: front,
+  measurements: ['highBust'],
+  hideDependencies: true,
+  plugins: [bustPlugin],
+  options: {
+    draftForHighBust: true,
+    minimalDartShaping: 5,
+    bustDartAngle: { deg: 10, min: 0, max: 20, menu: 'advanced' },
+    bustDartLength: { pct: 80, min: 50, max: 90, menu: 'advanced' },
+    frontDarts: { bool: false, menu: 'advanced' },
+    frontDartLength: { pct: 45, min: 30, max: 60, menu: 'advanced' },
+    contour: { pct: 50, min: 30, max: 75, menu: 'style' },
+    bustAlignedButtons: {
+      dflt: 'disabled',
+      list: ['even', 'split', 'disabled'],
+      menu: 'style.closure',
+    },
+  },
+  draft: simoneFbaFront,
 }

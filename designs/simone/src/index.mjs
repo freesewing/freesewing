@@ -1,60 +1,76 @@
-import freesewing from '@freesewing/core'
-import Brian from '@freesewing/brian'
-import Simon from '@freesewing/simon'
-import plugins from '@freesewing/plugin-bundle'
-import flipPlugin from '@freesewing/plugin-flip'
-import buttonPlugin from '@freesewing/plugin-buttons'
-import bustPlugin from '@freesewing/plugin-bust'
-import config from '../config'
-// Parts
-import draftFbaFront from './fba-front'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import {
+  // We use these as-is from simon
+  back,
+  collar,
+  collarStand,
+  cuff,
+  sleeve,
+  sleevePlacketOverlap,
+  sleevePlacketUnderlap,
+  yoke,
+  // We'll update these to use simone's front as dependency
+  buttonholePlacket as simonButtonholePlacket,
+  buttonPlacket as simonButtonPlacket,
+  frontRight as simonFrontRight,
+  frontLeft as simonFrontLeft,
+} from '@freesewing/simon'
+// Re-export skeleton parts so peope can re-use them
+import { fbaFront } from './fba-front.mjs'
 
-// Create design
-const Simone = new freesewing.Design(config, [plugins, flipPlugin, buttonPlugin, bustPlugin])
-
-// Attach draft methods to prototype
-Simone.prototype.draftBase = function (part) {
-  return new Brian(this.settings).draftBase(part)
+// Update these to use simone's front as dependency
+const buttonholePlacket = {
+  ...simonButtonholePlacket,
+  from: fbaFront,
 }
-Simone.prototype.draftFrontBase = function (part) {
-  return new Brian(this.settings).draftFront(part)
+const buttonPlacket = {
+  ...simonButtonPlacket,
+  from: fbaFront,
 }
-Simone.prototype.draftBackBase = function (part) {
-  return new Brian(this.settings).draftBack(part)
+const frontRight = {
+  ...simonFrontRight,
+  from: fbaFront,
 }
-Simone.prototype.draftSleeveBase = function (part) {
-  let brian = new Brian(this.settings)
-  return brian.draftSleeve(brian.draftSleevecap(part))
-}
-
-// Attach draft methods from Simon
-const simonParts = [
-  'Back',
-  'Front',
-  'FrontRight',
-  'ButtonPlacket',
-  'FrontLeft',
-  'ButtonholePlacket',
-  'Yoke',
-  'Sleeve',
-  'CollarStand',
-  'Collar',
-  'SleevePlacketUnderlap',
-  'SleevePlacketOverlap',
-  'Cuff',
-]
-
-for (const Part of simonParts) {
-  Simone.prototype[`draft${Part}`] = function (part) {
-    let simon = new Simon(this.settings)
-    return simon[`draft${Part}`](part)
-  }
+const frontLeft = {
+  ...simonFrontLeft,
+  from: fbaFront,
 }
 
-Simone.prototype.draftFbaFront = draftFbaFront
+// Setup our new design
+const Simone = new Design({
+  data,
+  parts: [
+    fbaFront,
+    back,
+    collar,
+    collarStand,
+    cuff,
+    sleeve,
+    sleevePlacketOverlap,
+    sleevePlacketUnderlap,
+    yoke,
+    buttonholePlacket,
+    buttonPlacket,
+    frontRight,
+    frontLeft,
+  ],
+})
 
-// Named exports
-export { config, Simone }
-
-// Default export
-export default Simone
+// Export all parts to facilitate extending this pattern
+export {
+  fbaFront,
+  back,
+  collar,
+  collarStand,
+  cuff,
+  sleeve,
+  sleevePlacketOverlap,
+  sleevePlacketUnderlap,
+  yoke,
+  buttonholePlacket,
+  buttonPlacket,
+  frontRight,
+  frontLeft,
+  Simone,
+}
