@@ -63,6 +63,9 @@ export default function bartack(so, self) {
   }
   so = { ...defaults, ...so }
 
+  // Handle negative angle
+  if (so.angle < 0) so.angle = 360 + (so.angle % -360)
+
   let guide = false
 
   if (so.anchor)
