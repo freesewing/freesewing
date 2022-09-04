@@ -165,6 +165,13 @@
 
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
+### snapseries
+
+#### Breaking
+
+ - Named export `smallsteps` has been renamed to `smallSteps`
+ - Named export `bigsteps` has been renamed to `bigSteps`
+
 
 ## 2.22.0 (2022-08-23)
 

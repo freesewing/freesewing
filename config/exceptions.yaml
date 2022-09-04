@@ -43,8 +43,8 @@ packageJson:
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:
-    main: 'index.json'
-    module: '!'
+    type: "module"
+    exports: { .: "./index.json" }
     scripts: { build: 'echo "prettier-config: No build required" && exit 0' }
     keywords:
       - prettier

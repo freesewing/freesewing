@@ -7,6 +7,9 @@ Unreleased:
         NodeJS 16 or more recent is now required.
     plugin-gore:
       - The `goreNumber` props is removed. Please use `gores` instead
+    snapseries:
+      - Named export `smallsteps` has been renamed to `smallSteps`
+      - Named export `bigsteps` has been renamed to `bigSteps`
 
   Removed:
     global:
