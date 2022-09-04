@@ -1,6 +1,7 @@
-import init from './init'
+import { init } from './init.mjs'
+import { back } from './back.mjs'
 
-export default function (part) {
+function draftBruceInset (part) {
   let { store, sa, Point, points, Path, paths, complete, paperless, macro, Snippet, snippets } =
     part.shorthand()
 
@@ -91,4 +92,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const inset = {
+  name: 'bruce.inset',
+  after: back,
+  draft: draftBruceInset,
 }

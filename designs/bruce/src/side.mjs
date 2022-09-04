@@ -1,6 +1,8 @@
-import init from './init'
+import { back } from './back.mjs'
+import { front } from './front.mjs'
+import { init } from './init.mjs'
 
-export default function (part) {
+function draftBruceSide (part) {
   let {
     store,
     sa,
@@ -114,4 +116,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const side = {
+  name: 'bruce.side',
+  after: [ back, front ],
+  draft: draftBruceSide,
 }
