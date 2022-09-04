@@ -167,6 +167,7 @@ export const front = {
   name: 'teagan.front',
   from: base,
   measurements: ['hips', 'waist'],
+  hideDependencies: true,
   options: {
     bicepsEase: 0.05,
     shoulderEase: 0,
