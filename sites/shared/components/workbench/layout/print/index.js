@@ -44,11 +44,13 @@ const PrintLayout = props => {
     handleExport('pdf', props.gist, props.design, t, props.app, (e) => setError(false), (e) => setError(true))
   }
 
+  let name = props.design.config.data.name
+  name = name.replace('@freesewing/', '')
   return (
     <div>
       <h2 className="capitalize">
         {
-          t('layoutThing', { thing: props.design.config.data.name })
+          t('layoutThing', { thing: name })
           + ': '
           + t('forPrinting')
         }
