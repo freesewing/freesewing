@@ -1,6 +1,7 @@
-import { calculateRatios } from './shared'
+import { back as bentBack } from '@freesewing/bent'
+import { calculateRatios } from './shared.mjs'
 
-export default function (part) {
+function draftCarltonBack (part) {
   let {
     paperless,
     sa,
@@ -225,4 +226,21 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'carlton.back',
+  from: bentBack,
+  hideDependencies: true,
+  measurements: [
+    'chest',
+    'hpsToWaistBack',
+  ],
+  options: {
+    backPleat: 0.048,
+    beltWidth: { pct: 15, min: 10, max: 20, menu: 'style' },
+    waistEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
+    seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
+  },
+  draft: draftCarltonBack,
 }

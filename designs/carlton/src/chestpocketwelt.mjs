@@ -1,4 +1,6 @@
-export default function (part) {
+import { front } from './front.mjs'
+
+function draftCarltonChestPocketWelt (part) {
   let { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
 
   points.topLeft = new Point(0, 0)
@@ -44,4 +46,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const chestPocketWelt = {
+  name: 'carlton.chestPocketWelt',
+  after: front,
+  draft: draftCarltonChestPocketWelt,
 }

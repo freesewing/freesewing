@@ -1,6 +1,7 @@
-import { calculateRatios } from './shared'
+import { front as bentFront } from '@freesewing/bent'
+import { calculateRatios } from './shared.mjs'
 
-export default function (part) {
+function draftCarltonFront (part) {
   let {
     paperless,
     sa,
@@ -472,4 +473,38 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'carlton.front',
+  from: bentFront,
+  hideDependencies: true,
+  measurements: [
+    'waist',
+    'waistToFloor',
+    'waistToSeat',
+  ],
+  options: {
+    chestEase: { pct: 10, min: 5, max: 20, menu: 'fit' },
+    buttonSpacingHorizontal: { pct: 43.5, min: 15, max: 60, menu: 'style' },
+    length: { pct: 69, min: 35, max: 100, menu: 'style' },
+    lapelReduction: { pct: 5, min: 0, max: 10, menu: 'advanced' },
+    frontOverlap: { pct: 1.5, min: 1, max: 2, menu: 'advanced' },
+    pocketPlacementHorizontal: { pct: 11, min: 5, max: 60, menu: 'pockets' },
+    pocketPlacementVertical: { pct: 6, min: 5, max: 60, menu: 'pockets' },
+    pocketWidth: { pct: 95, min: 70, max: 120, menu: 'pockets' },
+    pocketHeight: { pct: 15, min: 0, max: 40, menu: 'pockets' },
+    pocketRadius: { pct: 20, min: 0, max: 50, menu: 'pockets' },
+    pocketFlapRadius: { pct: 15, min: 0, max: 50, menu: 'pockets' },
+    chestPocketPlacement: { pct: 55, min: 30, max: 65, menu: 'pockets' },
+    chestPocketAngle: { deg: 4, min: 0, max: 6, menu: 'pockets' },
+    chestPocketHeight: { pct: 60, min: 40, max: 80, menu: 'pockets' },
+    chestPocketWidth: { pct: 25, min: 15, max: 50, menu: 'pockets' },
+    innerPocketPlacement: { pct: 53, min: 42, max: 62, menu: 'pockets' },
+    innerPocketWidth: { pct: 50, min: 45, max: 65, menu: 'pockets' },
+    waistEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
+    seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
+    innerPocketWeltHeight: { pct: 3.5, min: 2.5, max: 5, menu: 'pockets' },
+  },
+  draft: draftCarltonFront,
 }

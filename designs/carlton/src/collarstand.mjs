@@ -1,4 +1,7 @@
-export default function (part) {
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+
+function draftCarltonCollarStand (part) {
   let { paperless, sa, store, complete, points, measurements, options, macro, Point, paths, Path } =
     part.shorthand()
 
@@ -67,4 +70,14 @@ export default function (part) {
   }
 
   return part
+}
+
+export const collarStand = {
+  name: 'carlton.collarStand',
+  after: [ front, back ],
+  options: {
+    collarHeight: { pct: 9.6, min: 8, max: 11, menu: 'collar' },
+    collarFlare: { pct: 20, min: 0, max: 40, menu: 'collar' },
+  },
+  draft: draftCarltonCollarStand,
 }

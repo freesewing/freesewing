@@ -1,10 +1,12 @@
+import { collarStand } from './collarstand.mjs'
+
 /**
  * This collar is the most difficult part about this pattern
  * That's because slash&spread is easy with paper and scissors
  * but gets complicated when doing it in code.
  */
 
-export default function (part) {
+function draftCarltonCollar (part) {
   let { paperless, sa, complete, points, options, macro, paths, Path } = part.shorthand()
 
   // We're going to slash and spread this collar. Slashing first:
@@ -242,4 +244,13 @@ export default function (part) {
   }
 
   return part
+}
+
+export const collar = {
+  name: 'carlton.collar',
+  from: collarStand,
+  options: {
+    collarSpread: { deg: 4, min: 2, max: 6, menu: 'collar' },
+  },
+  draft: draftCarltonCollar,
 }

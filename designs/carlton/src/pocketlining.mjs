@@ -1,4 +1,6 @@
-export default function (part) {
+import { pocket } from './pocket.mjs'
+
+function draftCarltonPocketLining (part) {
   let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
     part.shorthand()
 
@@ -71,4 +73,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const pocketLining = {
+  name: 'carlton.pocketLining',
+  from: pocket,
+  draft: draftCarltonPocketLining,
 }

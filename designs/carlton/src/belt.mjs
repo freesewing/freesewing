@@ -1,4 +1,6 @@
-export default function (part) {
+import { back } from './back.mjs'
+
+function draftCarltonBelt (part) {
   let { paperless, sa, snippets, Snippet, store, complete, points, macro, Point, paths, Path } =
     part.shorthand()
 
@@ -81,4 +83,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const belt = {
+  name: 'carlton.belt',
+  after: back,
+  draft: draftCarltonBelt,
 }

@@ -1,4 +1,7 @@
-export default function (part) {
+import { underSleeve as bentUnderSleeve } from '@freesewing/bent'
+import { front as bentFront } from '@freesewing/bent'
+
+function draftCarltonUnderSleeve (part) {
   let { paperless, sa, store, complete, points, measurements, options, macro, Point, paths, Path } =
     part.shorthand()
 
@@ -104,4 +107,38 @@ export default function (part) {
   }
 
   return part
+}
+
+export const underSleeve = {
+  name: 'carlton.underSleeve',
+  from: bentUnderSleeve,
+  after: bentFront,
+  hideDependencies: true,
+  measurements: [ 'shoulderToWrist' ],
+  options: {
+    cuffLength: { pct: 15, min: 10, max: 20, menu: 'style' },
+    // The remainder of options are for Bent sleeves.
+    brianFitSleeve: true,
+    brianFitCollar: true,
+    collarFactor: 4.8,
+    chestShapingMax: 5,
+    lengthBonus: 0,
+    collarEase: 0.145,
+    acrossBackFactor: { pct: 97, min: 93, max: 100, menu: 'fit' },
+    armholeDepthFactor: { pct: 65, min: 50, max: 70, menu: 'fit' },
+    bicepsEase: { pct: 20, min: 0, max: 50, menu: 'fit' },
+    cuffEase: { pct: 60, min: 30, max: 100, menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    sleeveBend: { deg: 10, min: 0, max: 20, menu: 'fit' },
+    sleeveLengthBonus: { pct: 7, min: 0, max: 20, menu: 'fit' },
+    s3Collar: { pct: 0, min: -100, max: 100, menu: 'style' },
+    s3Armhole: { pct: 0, min: -100, max: 100, menu: 'style' },
+    draftForHighBust: { bool: false, menu: 'fit' },
+    backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
+    frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5, menu: 'advanced' },
+    shoulderSlopeReduction: { pct: 12, min: 0, max: 80, menu: 'advanced' },
+    sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
+    sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
+  },
+  draft: draftCarltonUnderSleeve,
 }

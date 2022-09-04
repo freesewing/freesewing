@@ -1,4 +1,6 @@
-export default function (part) {
+import { front } from './front.mjs'
+
+function draftCarltonInnerPocketBag (part) {
   let { units, paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
     part.shorthand()
 
@@ -64,4 +66,13 @@ export default function (part) {
   }
 
   return part
+}
+
+export const innerPocketBag = {
+  name: 'carlton.innerPocketBag',
+  after: front,
+  options: {
+    innerPocketDepth: { pct: 110, min: 75, max: 140, menu: 'pockets' },
+  },
+  draft: draftCarltonInnerPocketBag,
 }

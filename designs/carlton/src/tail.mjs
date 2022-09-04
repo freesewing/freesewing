@@ -1,4 +1,7 @@
-export default function (part) {
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+
+function draftCarltonTail (part) {
   let { units, paperless, sa, store, complete, points, macro, Point, paths, Path } =
     part.shorthand()
 
@@ -116,4 +119,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const tail = {
+  name: 'carlton.tail',
+  after: [ front, back ],
+  draft: draftCarltonTail,
 }
