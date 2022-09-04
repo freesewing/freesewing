@@ -1,16 +1,9 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftPocket from './pocket'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { pocket } from './pocket.mjs'
 
-// Create new design
-const Lucy = new freesewing.Design(config, plugins)
-
-// Attach the draft methods to the prototype
-Lucy.prototype.draftPocket = draftPocket
+// Setup our new design
+const Lucy = new Design({ data, parts: [ pocket ] })
 
 // Named exports
-export { config, Lucy }
-
-// Default export
-export default Lucy
+export { pocket, Lucy }
