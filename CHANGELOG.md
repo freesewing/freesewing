@@ -302,12 +302,6 @@
 
  - Support drafting for high bust
 
-### theo
-
-#### Changed
-
- - migrated `waistbandWidth` option from `mm` to snapped `pct` option
-
 ### wahid
 
 #### Added
@@ -633,12 +627,6 @@
 #### Fixed
 
  - Added missing name to config file
-
-### theo
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
 
 ### tiberius
 
@@ -1241,12 +1229,6 @@
 #### Changed
 
  - Lock the `frontArmholeDeeper` option to a static value
- - Switched to default import for version from package.json
-
-### theo
-
-#### Changed
-
  - Switched to default import for version from package.json
 
 ### tiberius
@@ -1897,12 +1879,6 @@
  - Support drafting of non-human measurements (dolls & giants) Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
  - Fix issue with armhole introduced with the S3 options in Brian Closes
 
-### theo
-
-#### Changed
-
- - Added deprecation warning as we need to rewrite this pattern
-
 ### tiberius
 
 #### Added
@@ -1963,12 +1939,6 @@
  - Replace cut-on-fold indicator on pocket with a regular grainline indicator Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
 
 ### simon
-
-#### Fixed
-
- - Avoid paperless depending on a complete pattern
-
-### theo
 
 #### Fixed
 
@@ -2398,12 +2368,6 @@
 
  - Changed `department` setting in config in line with new grouping
 
-### theo
-
-#### Changed
-
- - Changed `department` setting in config in line with new grouping
-
 ### wahid
 
 #### Changed
@@ -2729,12 +2693,6 @@
 
  - Force bust dart intersection if not found initially
 
-### theo
-
-#### Fixed
-
- - Check for intersection returning an array
-
 ### wahid
 
 #### Fixed
@@ -2832,12 +2790,6 @@
  - Marked where to match fabric on closure
 
 ### simone
-
-#### Fixed
-
- - Cleaned up notches
-
-### theo
 
 #### Fixed
 
@@ -3345,13 +3297,6 @@
  - Ported tamiko to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
  - Removed `Circumference` suffix from measurement names
 
-### theo
-
-#### Changed
-
- - Ported theo to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
- - Removed `Circumference` suffix from measurement names
-
 ### wahid
 
 #### Changed
@@ -3735,12 +3680,6 @@
 
  - Removed deprecated `centerBackNeckToWaist` measurement
 
-### theo
-
-#### Fixed
-
- - Fixed issue with side piece
-
 ### wahid
 
 #### Changed
@@ -3953,12 +3892,6 @@
 
 ## 2.0.1 (2019-09-01)
 
-### theo
-
-#### Fixed
-
- - [#78](https://github.com/freesewing/freesewing/issues/78): Removed inherited notches from fly shield and side piece.
-
 ### models
 
 #### Added
@@ -4080,12 +4013,6 @@
  - Initial release
 
 ### tamiko
-
-#### Added
-
- - Initial release
-
-### theo
 
 #### Added
 

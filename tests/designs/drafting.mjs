@@ -5,9 +5,6 @@ import chai from 'chai'
 
 const expect = chai.expect
 
-// Some patterns are deprecated and won't support more stringent doll/giant tests
-const deprecated = ['theo']
-
 /*
  * This runs unit tests for pattern drafting
  * It expects the following:
@@ -22,7 +19,6 @@ export const testPatternDrafting = (Pattern, log=false) => {
   const design = config.data.name
   const family = getFamily(design)
   const parts = pattern.getPartList()
-
   // Helper method to try/catch pattern drafting
   const doesItDraftAndRender = (pattern, log=false) => {
     try {
@@ -58,28 +54,26 @@ export const testPatternDrafting = (Pattern, log=false) => {
       }
     })
 
-    if (deprecated.indexOf(design) === -1) {
-      // Do the same for fantastical models (dolls, giants)
-      const fams = { dolls, giants }
-      for (const family of ['dolls', 'giants']) {
-        describe(`Draft for ${family}:`, () => {
-          for (const type of ['sheher', 'hehim']) {
-            describe(type, () => {
-              for (const size in fams[family][type]) {
-                it(`  - Drafting at ${size}%`, () => {
-                  expect(
-                    doesItDraftAndRender(
-                      new Pattern({
-                        measurements: fams[family][type][size]
-                      }), log
-                    )
-                  ).to.equal(true)
-                })
-              }
-            })
-          }
-        })
-      }
+    // Do the same for fantastical models (dolls, giants)
+    const fams = { dolls, giants }
+    for (const family of ['dolls', 'giants']) {
+      describe(`Draft for ${family}:`, () => {
+        for (const type of ['sheher', 'hehim']) {
+          describe(type, () => {
+            for (const size in fams[family][type]) {
+              it(`  - Drafting at ${size}%`, () => {
+                expect(
+                  doesItDraftAndRender(
+                    new Pattern({
+                      measurements: fams[family][type][size]
+                    }), log
+                  )
+                ).to.equal(true)
+              })
+            }
+          })
+        }
+      })
     }
   }
 }

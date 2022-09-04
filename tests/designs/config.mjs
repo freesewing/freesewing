@@ -4,9 +4,6 @@ import chai from 'chai'
 
 const expect = chai.expect
 
-// Some patterns are deprecated and won't support more stringent doll/giant tests
-const deprecated = ['theo']
-
 export const getShortName = name => name.split('/').pop()
 export const getFamily = design => {
   for (const fam in designs) {
@@ -159,11 +156,9 @@ export const testPatternConfig = (Pattern) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.mm).to.be.true
       })
-      if (deprecated.indexOf(name) === -1 && option.testIgnore !== true) {
-        it(`    - Patterns should not use mm options`, () => {
-          expect("Does not use mm").to.be.true
-        })
-      }
+      it(`    - Patterns should not use mm options`, () => {
+        expect("Does not use mm").to.be.true
+      })
     } else if (type === 'object' && typeof option.bool !== 'undefined') {
       // Boolean option
       it(`  - '${name}' is a boolean option`, () => true)
