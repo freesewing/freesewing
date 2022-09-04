@@ -1,4 +1,6 @@
-export default function (part) {
+import { front } from '@freesewing/brian'
+
+function draftBentSleeve (part) {
   let { Path, paths, points, store, options } = part.shorthand()
 
   function draftSleeve(part, tweak) {
@@ -169,4 +171,51 @@ export default function (part) {
     .attr('class', 'stroke-xl interfacing')
 
   return part
+}
+
+export const sleeve = {
+  name: 'bent.sleeve',
+  after: front,
+  hide: true,
+  measurements: [
+    'biceps',
+    'chest',
+    'hpsToWaistBack',
+    'waistToHips',
+    'neck',
+    'shoulderSlope',
+    'shoulderToElbow',
+    'shoulderToShoulder',
+    'shoulderToWrist',
+    'wrist',
+  ],
+  options: {
+    // Constants
+    brianFitSleeve: true,
+    brianFitCollar: true,
+    collarFactor: 4.8,
+    // Fit
+    chestEase: { pct: 8, min: -4, max: 20, menu: 'fit' },
+    collarEase: { pct: 3.5, min: 0, max: 10, menu: 'fit' },
+    bicepsEase: { pct: 20, min: 10, max: 40, menu: 'fit' },
+    cuffEase: { pct: 40, min: 2, max: 100, menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    lengthBonus: { pct: 0, min: -4, max: 60, menu: 'fit' },
+    sleeveLengthBonus: { pct: 0, min: -20, max: 15, menu: 'fit' },
+    sleeveBend: { deg: 10, min: 0, max: 20, menu: 'fit' },
+    draftForHighBust: { bool: false, menu: 'fit' },
+    // Style
+    // s3 is short for Shoulder Seam Shift
+    s3Collar: { pct: 0, min: -100, max: 100, menu: 'style' },
+    s3Armhole: { pct: 0, min: -100, max: 100, menu: 'style' },
+    // Advanced
+    acrossBackFactor: { pct: 97, min: 93, max: 100, menu: 'advanced' },
+    armholeDepthFactor: { pct: 60, min: 50, max: 70, menu: 'advanced' },
+    backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
+    frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5, menu: 'advanced' },
+    shoulderSlopeReduction: { pct: 0, min: 0, max: 80, menu: 'advanced' },
+    sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
+    sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
+  },
+  draft: draftBentSleeve,
 }
