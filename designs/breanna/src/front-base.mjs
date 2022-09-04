@@ -1,4 +1,7 @@
-export default (part) => {
+import { base } from './base.mjs'
+import { back } from './back.mjs'
+
+function draftBreannaFrontBase (part) {
   let { points, Path, paths, Point, measurements, options, utils, store } = part.shorthand()
 
   // Fit neck
@@ -148,4 +151,12 @@ export default (part) => {
     .close()
 
   return part
+}
+
+export const frontBase = {
+  name: 'breanna.frontBase',
+  hide: true,
+  from: base,
+  after: back,
+  draft: draftBreannaFrontBase,
 }
