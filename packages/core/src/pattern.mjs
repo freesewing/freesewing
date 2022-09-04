@@ -73,8 +73,10 @@ export function Pattern(config = { options: {} }) {
   }
 
   // Say hi
+  const name = config?.data?.name || 'No Name'
+  const patversion = config?.data?.version || 'No Version'
   this.raise.info(
-    `New \`@freesewing/${config.name}:${config.version}\` pattern using \`@freesewing/core:${version}\``
+    `New \`${name}:${patversion}\` pattern using \`@freesewing/core:${version}\``
   )
 
   // More things that go in a pattern
