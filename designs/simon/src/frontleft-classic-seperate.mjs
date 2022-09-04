@@ -1,4 +1,4 @@
-export default (part) => {
+export const draftFrontLeftClassicSeperate = (part) => {
   const { utils, sa, Point, points, Path, paths, store, snippets, complete, paperless, macro } =
     part.shorthand()
 

@@ -1,4 +1,7 @@
-export default (part) => {
+import { back } from '@freesewing/brian'
+import { sleevePlacketLength } from './options.mjs'
+
+function simonSleevePlacketOverlap(part) {
   const {
     measurements,
     sa,
@@ -164,4 +167,13 @@ export default (part) => {
   }
 
   return part
+}
+
+export const sleevePlacketOverlap = {
+  name: 'simon.sleevePlacketOverlap',
+  after: back,
+  options: {
+    sleevePlacketLength,
+  },
+  draft: simonSleevePlacketOverlap,
 }

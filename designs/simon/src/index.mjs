@@ -1,3 +1,59 @@
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { back } from './back.mjs'
+import { frontRight } from './frontright.mjs'
+import { frontLeft } from './frontleft.mjs'
+import { buttonPlacket } from './buttonplacket.mjs'
+import { buttonholePlacket } from './buttonholeplacket.mjs'
+import { yoke } from './yoke.mjs'
+import { sleeve } from './sleeve.mjs'
+import { collarStand } from './collarstand.mjs'
+import { collar } from './collar.mjs'
+import { sleevePlacketUnderlap } from './sleeveplacket-underlap.mjs'
+import { sleevePlacketOverlap } from './sleeveplacket-overlap.mjs'
+import { cuff } from './cuff.mjs'
+/* Re-export skeleton part */
+import { front } from './front.mjs'
+
+// Setup our new design
+const Simon = new Design({
+  data,
+  parts: [
+    back,
+    buttonholePlacket,
+    buttonPlacket,
+    collar,
+    collarStand,
+    cuff,
+    front,
+    frontRight,
+    frontLeft,
+    sleeve,
+    sleevePlacketOverlap,
+    sleevePlacketUnderlap,
+    yoke,
+  ],
+})
+
+// Named exports
+export {
+  back,
+  buttonholePlacket,
+  buttonPlacket,
+  collar,
+  collarStand,
+  cuff,
+  front,
+  frontRight,
+  frontLeft,
+  sleeve,
+  sleevePlacketOverlap,
+  sleevePlacketUnderlap,
+  yoke,
+  Simon,
+}
+
+/*
 import freesewing from '@freesewing/core'
 import Brian from '@freesewing/brian'
 import plugins from '@freesewing/plugin-bundle'
@@ -19,10 +75,7 @@ import draftSleevePlacketUnderlap from './sleeveplacket-underlap'
 import draftSleevePlacketOverlap from './sleeveplacket-overlap'
 import draftCuff from './cuff'
 
-/* Check to see whether we should load the bust plugin
- * Only of the `draftForHighBust` options is set
- * AND the highBust measurement is available
- */
+//
 const condition = (settings = false) =>
   settings &&
   settings.options &&
@@ -67,3 +120,4 @@ export { config, Simon }
 
 // Default export
 export default Simon
+*/

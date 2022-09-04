@@ -1,6 +1,6 @@
-import { addButtonHoles } from './shared'
+import { addButtonHoles } from './shared.mjs'
 
-export default (part) => {
+export const draftFrontLeftClassicCuton = (part) => {
   const { store, sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
     part.shorthand()
 
@@ -22,8 +22,7 @@ export default (part) => {
   points.placketBottomOuterEdgeUnder = points.placketCfHem.shift(180, width / 2 + fold)
   points.placketTopEdge = points.placketTopOuterEdgeFold.shift(180, width)
   points.placketBottomEdge = points.placketBottomOuterEdgeFold.shift(180, width)
-  if (typeof points.cfBust !== 'undefined')
-    points.cfBust = points.cfBust.shift(180, fold * 2)
+  if (typeof points.cfBust !== 'undefined') points.cfBust = points.cfBust.shift(180, fold * 2)
 
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).close()
 
@@ -87,7 +86,7 @@ export default (part) => {
         'placketBottomOuterEdgeFold',
         'placketBottomOuterEdgeOver',
         'placketBottomOuterEdgeUnder',
-        'cfBust'
+        'cfBust',
       ],
     })
     delete snippets['cfWaist-notch']

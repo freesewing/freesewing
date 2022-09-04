@@ -1,7 +1,7 @@
-import { draftBarrelCuff, decorateBarrelCuff, paperlessBarrelCuff } from './shared'
+import { draftBarrelCuff, decorateBarrelCuff, paperlessBarrelCuff } from './shared.mjs'
 
-export default (part) => {
-  let { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
+export const draftRoundedBarrelCuff = (part) => {
+  const { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
   draftBarrelCuff(part)
   const height = store.get('cuffHeight')

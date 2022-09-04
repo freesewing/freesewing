@@ -1,9 +1,11 @@
-import { frontDimensions } from './shared'
-import frontLeftClassicSeperate from './frontleft-classic-seperate'
-import frontLeftClassicCuton from './frontleft-classic-cuton'
-import frontLeftSeamless from './frontleft-seamless'
+import { frontDimensions } from './shared.mjs'
+import { draftFrontLeftClassicSeperate } from './frontleft-classic-seperate.mjs'
+import { draftFrontLeftClassicCuton } from './frontleft-classic-cuton.mjs'
+import { draftFrontLeftSeamless } from './frontleft-seamless.mjs'
+import { front } from './front.mjs'
+import { buttonholePlacketStyle } from './options.mjs'
 
-export default (part) => {
+function simonFrontLeft(part) {
   const { sa, options, complete, paperless, points, macro } = part.shorthand()
 
   if (complete && paperless) {
@@ -14,14 +16,22 @@ export default (part) => {
       d: 15 + sa,
     })
   }
-
   if (options.seperateButtonholePlacket) {
-    return frontLeftClassicSeperate(part)
+    return draftFrontLeftClassicSeperate(part)
   } else if (options.buttonholePlacketStyle === 'seamless') {
-    return frontLeftSeamless(part)
+    return draftFrontLeftSeamless(part)
   } else if (options.buttonholePlacketStyle === 'classic') {
-    return frontLeftClassicCuton(part)
+    return draftFrontLeftClassicCuton(part)
   } else {
     throw `Unexpected buttonholePlacketStyle: ${options.buttonholePlacketStyle}`
   }
+}
+
+export const frontLeft = {
+  name: 'simon.frontLeft',
+  from: front,
+  options: {
+    buttonholePlacketStyle,
+  },
+  draft: simonFrontLeft,
 }

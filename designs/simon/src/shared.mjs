@@ -45,10 +45,11 @@ export const addButtons = function (part, origin = 'cfNeck', snippet = 'button')
       const top_spacing = top_len / top_number_buttons
       const even_spacing = top_spacing
       for (let i = 1; i <= total_buttons; i++) {
-        points['button' + i] = points[origin].shift(-90, (even_spacing * i))
+        points['button' + i] = points[origin].shift(-90, even_spacing * i)
         snippets[snippet + i] = new Snippet(snippet, points['button' + i])
       }
-      break }
+      break
+    }
     case 'split': {
       // Strategy: Different spacings above and below.
       // - Calculate the number of buttons that should be above and below
@@ -85,7 +86,8 @@ export const addButtons = function (part, origin = 'cfNeck', snippet = 'button')
         points['button' + i] = points.currentpoint.clone()
         snippets[snippet + i] = new Snippet(snippet, points['button' + i])
       }
-      break }
+      break
+    }
     case 'disabled':
     case 'default':
     default: {

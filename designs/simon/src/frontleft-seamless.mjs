@@ -1,6 +1,6 @@
-import { addButtonHoles } from './shared'
+import { addButtonHoles } from './shared.mjs'
 
-export default (part) => {
+export const draftFrontLeftSeamless = (part) => {
   const { sa, points, Path, paths, complete, paperless, store, macro, options } = part.shorthand()
   const width = store.get('buttonholePlacketWidth')
   points.placketCfNeck = points.cfNeck

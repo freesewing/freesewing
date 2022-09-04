@@ -1,4 +1,16 @@
-export default (part) => {
+import { front } from './front.mjs'
+import { sleeve as brianSleeve } from '@freesewing/brian'
+import {
+  cuffOverlap,
+  cuffDrape,
+  cuffEase,
+  cuffLength,
+  cuffStyle,
+  sleeveLengthBonus,
+  sleevePlacketLength,
+} from './options.mjs'
+
+function simonSleeve(part) {
   const {
     measurements,
     sa,
@@ -14,7 +26,6 @@ export default (part) => {
     Snippet,
     store,
   } = part.shorthand()
-
   // Update the back armhole notch because the one from Brian is not correct
   points.backNotch = paths.sleevecap.reverse().shiftAlong(store.get('backArmholeToArmholePitch'))
 
@@ -267,4 +278,20 @@ export default (part) => {
   }
 
   return part
+}
+
+export const sleeve = {
+  name: 'simon.sleeve',
+  from: brianSleeve,
+  hideDependencies: true,
+  options: {
+    cuffOverlap,
+    cuffDrape,
+    cuffEase,
+    cuffLength,
+    cuffStyle,
+    sleeveLengthBonus,
+    sleevePlacketLength,
+  },
+  draft: simonSleeve,
 }

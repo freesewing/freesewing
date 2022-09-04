@@ -1,4 +1,7 @@
-export default (part) => {
+import { back } from '@freesewing/brian'
+import { sleevePlacketLength } from './options.mjs'
+
+function simonSleevePlacketUnderlap(part) {
   const {
     measurements,
     sa,
@@ -99,4 +102,13 @@ export default (part) => {
   }
 
   return part
+}
+
+export const sleevePlacketUnderlap = {
+  name: 'simon.sleevePlacketUnderlap',
+  after: back,
+  options: {
+    sleevePlacketLength,
+  },
+  draft: simonSleevePlacketUnderlap,
 }

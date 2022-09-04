@@ -1,6 +1,8 @@
-import { addButtonHoles } from './shared'
+import { addButtonHoles } from './shared.mjs'
+import { front } from './front.mjs'
+import { back } from './back.mjs'
 
-export default (part) => {
+function simonButtonholePlacket(part) {
   const {
     utils,
     sa,
@@ -25,7 +27,7 @@ export default (part) => {
   }
 
   for (const id in paths) delete part.paths[id]
-  for (const i of ['waist', 'armholePitch', 'hips', 'armhole', 'bust',]) {
+  for (const i of ['waist', 'armholePitch', 'hips', 'armhole', 'bust']) {
     delete snippets[i + '-notch']
   }
   const width = store.get('buttonholePlacketWidth')
@@ -184,4 +186,11 @@ export default (part) => {
   }
 
   return part
+}
+
+export const buttonholePlacket = {
+  name: 'simon.buttonholePlacket',
+  from: front,
+  after: back,
+  draft: simonButtonholePlacket,
 }

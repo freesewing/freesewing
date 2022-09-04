@@ -1,6 +1,8 @@
-import { addButtons } from './shared'
+import { addButtons } from './shared.mjs'
+import { front } from './front.mjs'
+import { back } from './back.mjs'
 
-export default (part) => {
+function simonButtonPlacket(part) {
   const {
     utils,
     sa,
@@ -27,8 +29,7 @@ export default (part) => {
   for (const id in paths) {
     if (id !== 'seam') delete part.paths[id]
   }
-  let notchesToKeep = ['cfBust-notch', 'cfArmhole-notch', 'cfWaist-notch',
-    'cfHem-notch']
+  let notchesToKeep = ['cfBust-notch', 'cfArmhole-notch', 'cfWaist-notch', 'cfHem-notch']
   for (const id in snippets) {
     if (!notchesToKeep.includes(id)) delete snippets[id]
   }
@@ -136,4 +137,11 @@ export default (part) => {
   }
 
   return part
+}
+
+export const buttonPlacket = {
+  name: 'simon.buttonPlacket',
+  from: front,
+  after: back,
+  draft: simonButtonPlacket,
 }

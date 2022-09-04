@@ -1,9 +1,11 @@
-import { frontDimensions } from './shared'
-import frontRightClassicSeperate from './frontright-classic-seperate'
-import frontRightClassicCuton from './frontright-classic-cuton'
-import frontRightSeamless from './frontright-seamless'
+import { frontDimensions } from './shared.mjs'
+import { draftFrontRightClassicSeperate } from './frontright-classic-seperate.mjs'
+import { draftFrontRightClassicCuton } from './frontright-classic-cuton.mjs'
+import { draftFrontRightSeamless } from './frontright-seamless.mjs'
+import { front } from './front.mjs'
+import { buttonPlacketStyle } from './options.mjs'
 
-export default (part) => {
+function simonFrontRight(part) {
   const { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
   macro('flip')
   if (complete) {
@@ -24,12 +26,21 @@ export default (part) => {
   }
 
   if (options.seperateButtonPlacket) {
-    return frontRightClassicSeperate(part)
+    return draftFrontRightClassicSeperate(part)
   } else if (options.buttonPlacketStyle === 'seamless') {
-    return frontRightSeamless(part)
+    return draftFrontRightSeamless(part)
   } else if (options.buttonPlacketStyle === 'classic') {
-    return frontRightClassicCuton(part)
+    return draftFrontRightClassicCuton(part)
   } else {
     throw `Unexpected buttonPlacketStyle: ${options.buttonPlacketStyle}`
   }
+}
+
+export const frontRight = {
+  name: 'simon.frontRight',
+  from: front,
+  options: {
+    buttonPlacketStyle,
+  },
+  draft: simonFrontRight,
 }

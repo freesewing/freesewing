@@ -1,4 +1,7 @@
-export default (part) => {
+import { back } from './back.mjs'
+import { collarEase, collarStandBend, collarStandCurve, collarStandWidth } from './options.mjs'
+
+function simonCollarStand(part) {
   const {
     measurements,
     store,
@@ -220,4 +223,16 @@ export default (part) => {
   }
 
   return part
+}
+
+export const collarStand = {
+  name: 'simon.collarStand',
+  after: back,
+  options: {
+    collarEase,
+    collarStandBend,
+    collarStandCurve,
+    collarStandWidth,
+  },
+  draft: simonCollarStand,
 }

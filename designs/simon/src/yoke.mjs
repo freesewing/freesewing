@@ -1,4 +1,7 @@
-export default (part) => {
+import { back } from './back.mjs'
+import { splitYoke } from './options.mjs'
+
+function simonYoke(part) {
   const { sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options } =
     part.shorthand()
 
@@ -43,7 +46,6 @@ export default (part) => {
       to: points.grainlineTo,
     })
 
-
     if (sa) {
       paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
       if (options.splitYoke) {
@@ -87,4 +89,13 @@ export default (part) => {
   }
 
   return part
+}
+
+export const yoke = {
+  name: 'simon.yoke',
+  from: back,
+  options: {
+    splitYoke,
+  },
+  draft: simonYoke,
 }

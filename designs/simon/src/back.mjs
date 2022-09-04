@@ -1,6 +1,28 @@
-import { calculateReduction } from './shared'
+import { calculateReduction } from './shared.mjs'
+import { flipPlugin } from '@freesewing/plugin-flip'
+import { back as brianBack } from '@freesewing/brian'
+import {
+  collarFactor,
+  backDarts,
+  backDartShaping,
+  boxPleat,
+  boxPleatFold,
+  boxPleatWidth,
+  roundBack,
+  buttonholePlacketWidth,
+  buttonholePlacketFoldWidth,
+  buttonPlacketWidth,
+  hemCurve,
+  hemStyle,
+  hipsEase,
+  lengthBonus,
+  shoulderEase,
+  yokeHeight,
+  sleevePlacketWidth,
+  waistEase,
+} from './options.mjs'
 
-export default (part) => {
+function simonBack(part) {
   const {
     store,
     measurements,
@@ -368,4 +390,33 @@ export default (part) => {
   }
 
   return part
+}
+
+export const back = {
+  name: 'simon.back',
+  plugins: [flipPlugin],
+  measurements: ['waist', 'hips'],
+  hideDependencies: true,
+  from: brianBack,
+  options: {
+    collarFactor,
+    backDarts,
+    backDartShaping,
+    boxPleat,
+    boxPleatFold,
+    boxPleatWidth,
+    roundBack,
+    buttonholePlacketWidth,
+    buttonholePlacketFoldWidth,
+    buttonPlacketWidth,
+    hemCurve,
+    hemStyle,
+    hipsEase,
+    lengthBonus,
+    shoulderEase,
+    yokeHeight,
+    sleevePlacketWidth,
+    waistEase,
+  },
+  draft: simonBack,
 }

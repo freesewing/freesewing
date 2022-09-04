@@ -1,6 +1,18 @@
-import { calculateReduction } from './shared'
+import { calculateReduction } from './shared.mjs'
+import { front as brianFront } from '@freesewing/brian'
+import { back } from './back.mjs'
+import {
+  backDarts,
+  backDartShaping,
+  buttonFreeLength,
+  extraTopButton,
+  seperateButtonPlacket,
+  seperateButtonholePlacket,
+  buttons,
+  ffsa,
+} from './options.mjs'
 
-export default (part) => {
+function simonFront(part) {
   const {
     store,
     measurements,
@@ -145,4 +157,22 @@ export default (part) => {
   }
 
   return part
+}
+
+export const front = {
+  name: 'simon.front',
+  from: brianFront,
+  after: back,
+  hideAll: true,
+  options: {
+    backDarts,
+    backDartShaping,
+    buttonFreeLength,
+    extraTopButton,
+    seperateButtonPlacket,
+    seperateButtonholePlacket,
+    buttons,
+    ffsa,
+  },
+  draft: simonFront,
 }

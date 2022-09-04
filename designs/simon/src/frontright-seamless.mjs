@@ -1,6 +1,6 @@
-import { addButtons } from './shared'
+import { addButtons } from './shared.mjs'
 
-export default (part) => {
+export const draftFrontRightSeamless = (part) => {
   const { sa, store, Point, points, Path, paths, complete, paperless, macro, options } =
     part.shorthand()
 

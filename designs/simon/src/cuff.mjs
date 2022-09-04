@@ -1,24 +1,47 @@
-import straightBarrelCuff from './cuff-barrel-straight'
-import roundedBarrelCuff from './cuff-barrel-rounded'
-import angledBarrelCuff from './cuff-barrel-angled'
-import straightFrenchCuff from './cuff-french-straight'
-import angledFrenchCuff from './cuff-french-angled'
-import roundedFrenchCuff from './cuff-french-rounded'
+import { draftStraightBarrelCuff } from './cuff-barrel-straight.mjs'
+import { draftRoundedBarrelCuff } from './cuff-barrel-rounded.mjs'
+import { draftAngledBarrelCuff } from './cuff-barrel-angled.mjs'
+import { draftStraightFrenchCuff } from './cuff-french-straight.mjs'
+import { draftAngledFrenchCuff } from './cuff-french-angled.mjs'
+import { draftRoundedFrenchCuff } from './cuff-french-rounded.mjs'
+import {
+  cuffOverlap,
+  barrelCuffNarrowButton,
+  cuffButtonRows,
+  cuffDrape,
+  cuffEase,
+  cuffLength,
+  cuffStyle,
+} from './options.mjs'
 
-export default (part) => {
+const simonCuff = (part) => {
   const { options } = part.shorthand()
   switch (options.cuffStyle) {
     case 'roundedBarrelCuff':
-      return roundedBarrelCuff(part)
+      return draftRoundedBarrelCuff(part)
     case 'straightBarrelCuff':
-      return straightBarrelCuff(part)
+      return draftStraightBarrelCuff(part)
     case 'roundedFrenchCuff':
-      return roundedFrenchCuff(part)
+      return draftRoundedFrenchCuff(part)
     case 'angledFrenchCuff':
-      return angledFrenchCuff(part)
+      return draftAngledFrenchCuff(part)
     case 'straightFrenchCuff':
-      return straightFrenchCuff(part)
+      return draftStraightFrenchCuff(part)
     default:
-      return angledBarrelCuff(part)
+      return draftAngledBarrelCuff(part)
   }
+}
+
+export const cuff = {
+  name: 'simon.cuff',
+  options: {
+    cuffOverlap,
+    barrelCuffNarrowButton,
+    cuffButtonRows,
+    cuffDrape,
+    cuffEase,
+    cuffLength,
+    cuffStyle,
+  },
+  draft: simonCuff,
 }

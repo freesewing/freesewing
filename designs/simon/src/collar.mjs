@@ -1,4 +1,14 @@
-export default (part) => {
+import { back } from './back.mjs'
+import {
+  collarEase,
+  collarAngle,
+  collarBend,
+  collarFlare,
+  collarGap,
+  collarRoll,
+} from './options.mjs'
+
+function simonCollar(part) {
   const {
     store,
     measurements,
@@ -171,4 +181,18 @@ export default (part) => {
   }
 
   return part
+}
+
+export const collar = {
+  name: 'simon.collar',
+  after: back,
+  options: {
+    collarEase,
+    collarAngle,
+    collarBend,
+    collarFlare,
+    collarGap,
+    collarRoll,
+  },
+  draft: simonCollar,
 }
