@@ -8,7 +8,7 @@ import { waistband } from './waistband.mjs'
 // Setup our new design
 const Sven = new Design({
   data,
-  parts: [front, back, cuff],
+  parts: [front, back, sleeve, cuff, waistband],
 })
 
 // Named exports
