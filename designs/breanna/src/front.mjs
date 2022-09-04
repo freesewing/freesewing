@@ -1,13 +1,16 @@
-import frontWithPrimaryOnly from './front-primary-only'
-import frontWithPrimaryAt600 from './front-primary-600'
-import frontWithPrimaryAt700 from './front-primary-700'
-import frontWithPrimaryAt800 from './front-primary-800'
-import frontWithPrimaryAt1100 from './front-primary-1100'
-import frontWithPrimaryAt1130 from './front-primary-1130'
-import frontWithPrimaryAt1200 from './front-primary-1200'
-import frontWithPrimaryAt1300 from './front-primary-1300'
-import frontWithPrimaryAt1330 from './front-primary-1330'
-import frontWithPrimaryAt1400 from './front-primary-1400'
+import { frontBase } from './front-base.mjs'
+import { back } from './back.mjs'
+
+import { frontWithPrimaryOnly } from './front-primary-only.mjs'
+import { frontWithPrimaryAt600 } from './front-primary-600.mjs'
+import { frontWithPrimaryAt700 } from './front-primary-700.mjs'
+import { frontWithPrimaryAt800 } from './front-primary-800.mjs'
+import { frontWithPrimaryAt1100 } from './front-primary-1100.mjs'
+import { frontWithPrimaryAt1130 } from './front-primary-1130.mjs'
+import { frontWithPrimaryAt1200 } from './front-primary-1200.mjs'
+import { frontWithPrimaryAt1300 } from './front-primary-1300.mjs'
+import { frontWithPrimaryAt1330 } from './front-primary-1330.mjs'
+import { frontWithPrimaryAt1400 } from './front-primary-1400.mjs'
 import {
   applyBustDarts,
   getPrimaryDartRotationList,
@@ -16,9 +19,9 @@ import {
   getDartLocationsAsNumbers,
   getDartPaths,
   getSaDartPaths,
-} from './dart-utils'
+} from './dart-utils.mjs'
 
-export default (part) => {
+function draftBreannaFront (part) {
   let {
     options,
     store,
@@ -249,4 +252,11 @@ export default (part) => {
   }
 
   return part
+}
+
+export const front = {
+  name: 'breanna.front',
+  from: frontBase,
+  after: back,
+  draft: draftBreannaFront,
 }

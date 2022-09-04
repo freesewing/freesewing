@@ -1,4 +1,7 @@
-export default (part) => {
+import { base } from './base.mjs'
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function draftBreannaBack (part) {
   let {
     sa,
     points,
@@ -275,4 +278,12 @@ export default (part) => {
   }
 
   return part
+}
+
+
+export const back = {
+  from: base,
+  name: 'breanna.back',
+  plugins: [ pluginBundle ],
+  draft: draftBreannaBack,
 }

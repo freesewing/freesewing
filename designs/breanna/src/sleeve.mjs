@@ -1,4 +1,9 @@
-export default (part) => {
+import { sleeveCap } from './sleevecap.mjs'
+import { front } from './front.mjs'
+import { frontBase } from './front-base.mjs'
+import { back } from './back.mjs'
+
+function draftBreannaSleeve (part) {
   let {
     store,
     sa,
@@ -115,4 +120,19 @@ export default (part) => {
     })
   }
   return part
+}
+
+export const sleeve = {
+  name: 'breanna.sleeve',
+  from: sleeveCap,
+  after: [ front, frontBase, back ],
+  measurements: [
+    'shoulderToWrist',
+    'wrist',
+  ],
+  options: {
+    cuffEase: { pct: 20, min: 0, max: 50, menu: 'fit' },
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'style' },
+  },
+  draft: draftBreannaSleeve,
 }
