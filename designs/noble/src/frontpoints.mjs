@@ -1,12 +1,8 @@
-export default function (part) {
-  const {
-    points,
-    Path,
-    paths,
-    snippets,
-    options,
-    macro,
-  } = part.shorthand()
+import { frontSideDart as bellaFront } from '@freesewing/bella'
+import * as options from './options.mjs'
+
+function nobleFrontPoints(part) {
+  const { points, Path, paths, snippets, options, macro } = part.shorthand()
 
   const bCircle = 0.552284749831
 
@@ -20,7 +16,7 @@ export default function (part) {
 
   points.shoulderDartInside = points.hps.shiftFractionTowards(
     points.shoulder,
-    (options.dartPosition == 'shoulder' ? options.shoulderDartPosition : .5)
+    options.dartPosition == 'shoulder' ? options.shoulderDartPosition : 0.5
   )
   points.orgShoulder = points.shoulder.clone()
   points.orgArmhole = points.armhole.clone()
@@ -80,7 +76,7 @@ export default function (part) {
     points.armholeCp2 = armholePathOutside.ops[2].cp2.clone()
   }
 
-  if( points.armholeDartInside.sitsRoughlyOn( points.armholeInsidePitch ) ) {
+  if (points.armholeDartInside.sitsRoughlyOn(points.armholeInsidePitch)) {
     paths.armholeInside = new Path()
       .move(points.armholeDartInside)
       .curve(points.armholeInsidePitchCp2, points.shoulderCp1, points.shoulder)
@@ -147,7 +143,7 @@ export default function (part) {
   points.armholeOutsidePitch = points.armholeOutsidePitch.rotate(spreadAngle, points.bustA)
   points.armholeOutsidePitchCp1 = points.armholeOutsidePitchCp1.rotate(spreadAngle, points.bustA)
 
-  if( points.armhole.sitsRoughlyOn( points.armholeOutsidePitch )  ) {
+  if (points.armhole.sitsRoughlyOn(points.armholeOutsidePitch)) {
     paths.armholeOutside = new Path()
       .move(points.armholeDartOutside)
       .curve(points.armholeDartOutsideCp1, points.armholeOutsidePitchCp2, points.armhole)
@@ -155,7 +151,11 @@ export default function (part) {
   } else {
     paths.armholeOutside = new Path()
       .move(points.armholeDartOutside)
-      .curve(points.armholeDartOutsideCp1, points.armholeOutsidePitchCp2, points.armholeOutsidePitch)
+      .curve(
+        points.armholeDartOutsideCp1,
+        points.armholeOutsidePitchCp2,
+        points.armholeOutsidePitch
+      )
       .curve(points.armholeOutsidePitchCp1, points.armholeCp2, points.armhole)
       .setRender(false)
   }
@@ -277,13 +277,19 @@ export default function (part) {
   iteration = 0
   do {
     let dist = points.armholeDartTipInside.dist(points.armholeDartTipCpDownInside)
-    if( points.armholeDartTipInside.x > points.waistCircleOutsideCp1 ) {
-      points.armholeDartTipInside.x = points.armholeDartTipInside.x -.5
-      points.armholeDartTipInside.y = points.armholeDartTipInside.y +.5
+    if (points.armholeDartTipInside.x > points.waistCircleOutsideCp1) {
+      points.armholeDartTipInside.x = points.armholeDartTipInside.x - 0.5
+      points.armholeDartTipInside.y = points.armholeDartTipInside.y + 0.5
     } else {
-      points.waistCircleOutsideCp1 = points.waistCircleOutsideCp1.shiftTowards( points.waistUpDartRight, diff > 0 ? 1 :-1 )
+      points.waistCircleOutsideCp1 = points.waistCircleOutsideCp1.shiftTowards(
+        points.waistUpDartRight,
+        diff > 0 ? 1 : -1
+      )
     }
-    points.armholeDartTipCpDownInside = points.waistCircleInsideCp1.shiftOutwards(points.armholeDartTipInside, dist)
+    points.armholeDartTipCpDownInside = points.waistCircleInsideCp1.shiftOutwards(
+      points.armholeDartTipInside,
+      dist
+    )
 
     paths.armholeTempCircleOutside = new Path()
       .move(points.armholeDartOutside)
@@ -293,17 +299,29 @@ export default function (part) {
       .attr('class', 'lining')
     paths.armholeTempCircleInside = new Path()
       .move(points.armholeDartInside)
-      .curve(points.armholeCircleInsideCp1, points.waistCircleInsideCp1, points.armholeDartTipInside)
+      .curve(
+        points.armholeCircleInsideCp1,
+        points.waistCircleInsideCp1,
+        points.armholeDartTipInside
+      )
       .curve(points.armholeDartTipCpDownInside, points.waistDartLeftCp, points.waistDartLeft)
       .setRender(false)
       .attr('class', 'lining')
 
-      diff = paths.armholeTempCircleOutside.length() - paths.armholeTempCircleInside.length()
-      iteration ++
-  } while( (diff < -1 || diff > 1) && iteration < 200 )
+    diff = paths.armholeTempCircleOutside.length() - paths.armholeTempCircleInside.length()
+    iteration++
+  } while ((diff < -1 || diff > 1) && iteration < 200)
   if (iteration >= 200) {
     raise.error('Something is not quite right here!')
   }
 
   return part
+}
+
+export const frontPoints = {
+  name: 'noble.frontPoints',
+  from: bellaFront,
+  hideAll: true,
+  options,
+  draft: nobleFrontPoints,
 }

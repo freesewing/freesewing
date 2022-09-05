@@ -1,18 +1,10 @@
-export default function (part) {
-  const {
-    sa,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
+import { backPoints } from './backpoints.mjs'
 
-  if( options.dartPosition != 'shoulder' ) {
+function nobleBackOutside(part) {
+  const { sa, points, Path, paths, Snippet, snippets, options, complete, paperless, macro } =
+    part.shorthand()
+
+  if (options.dartPosition != 'shoulder') {
     return part
   }
 
@@ -36,7 +28,9 @@ export default function (part) {
   if (complete) {
     snippets.dartTip = new Snippet('notch', points.dartTip)
 
-    points.titleAnchor = points.dartBottomRight.shiftFractionTowards( points.waistSide, .1 ).shiftFractionTowards( points.shoulder, .3 )
+    points.titleAnchor = points.dartBottomRight
+      .shiftFractionTowards(points.waistSide, 0.1)
+      .shiftFractionTowards(points.shoulder, 0.3)
     macro('title', {
       at: points.titleAnchor,
       nr: 4,
@@ -45,77 +39,83 @@ export default function (part) {
     points.grainlineFrom.x = points.shoulderDart.x
     points.grainlineTo.x = points.shoulderDart.x
 
-    macro("grainline", {
+    macro('grainline', {
       from: points.grainlineFrom,
       to: points.grainlineTo,
     })
 
     if (sa) paths.sa = paths.outsideSeam.offset(sa).attr('class', 'fabric sa')
-    if( paperless ) {
+    if (paperless) {
       let pLeft = paths.dart.edge('left')
       macro('hd', {
         from: pLeft,
         to: points.waistSide,
-        y: points.waistCenter.y +sa + 15,
+        y: points.waistCenter.y + sa + 15,
       })
       macro('hd', {
         from: points.dartBottomRight,
         to: points.armhole,
-        y: points.waistCenter.y +sa + 25,
+        y: points.waistCenter.y + sa + 25,
       })
       macro('hd', {
         from: points.dartTip,
         to: points.waistSide,
-        y: points.waistCenter.y +sa + 35,
+        y: points.waistCenter.y + sa + 35,
       })
       macro('hd', {
         from: points.dartBottomRight,
         to: points.waistSide,
-        y: points.waistCenter.y +sa + 45,
+        y: points.waistCenter.y + sa + 45,
       })
       macro('hd', {
         from: pLeft,
         to: points.shoulder,
-        y: points.shoulderDart.y -sa - 15,
+        y: points.shoulderDart.y - sa - 15,
       })
       macro('hd', {
         from: points.shoulderDart,
         to: points.shoulder,
-        y: points.shoulderDart.y -sa - 25,
+        y: points.shoulderDart.y - sa - 25,
       })
       macro('hd', {
         from: points.shoulderDart,
         to: points.armhole,
-        y: points.shoulderDart.y -sa - 35,
+        y: points.shoulderDart.y - sa - 35,
       })
 
       macro('vd', {
         from: points.shoulder,
         to: points.dartTip,
-        x: points.armhole.x +sa + 15,
+        x: points.armhole.x + sa + 15,
       })
       macro('vd', {
         from: points.armhole,
         to: points.waistSide,
-        x: points.armhole.x +sa + 15,
+        x: points.armhole.x + sa + 15,
       })
       macro('vd', {
         from: points.shoulder,
         to: points.waistSide,
-        x: points.armhole.x +sa + 25,
+        x: points.armhole.x + sa + 25,
       })
       macro('vd', {
         from: points.shoulder,
         to: points.dartBottomRight,
-        x: points.armhole.x +sa + 35,
+        x: points.armhole.x + sa + 35,
       })
       macro('vd', {
         from: points.shoulderDart,
         to: points.dartBottomRight,
-        x: points.armhole.x +sa + 45,
+        x: points.armhole.x + sa + 45,
       })
     }
   }
 
   return part
+}
+
+export const backOutside = {
+  name: 'noble.backOutside',
+  from: backPoints,
+  draft: nobleBackOutside,
 }

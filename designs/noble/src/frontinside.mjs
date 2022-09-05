@@ -1,4 +1,6 @@
-export default function (part) {
+import { frontPoints } from './frontpoints.mjs'
+
+function nobleFrontInside(part) {
   const {
     store,
     sa,
@@ -40,7 +42,7 @@ export default function (part) {
   delete points.bustDartMiddle
   delete points.bustDartEdge
 
-  if( options.dartPosition == 'shoulder' ) {
+  if (options.dartPosition == 'shoulder') {
     paths.insideSeam = new Path()
       .move(points.cfHem)
       .line(points.waistDartLeft)
@@ -49,14 +51,18 @@ export default function (part) {
       .line(points.hps)
       .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
 
-    paths.seam = paths.insideSeam.join( new Path().move(points.cfNeck).line(points.cfHem))
+    paths.seam = paths.insideSeam
+      .join(new Path().move(points.cfNeck).line(points.cfHem))
       .close()
       .attr('class', 'fabric')
 
-    store.set( 'shoulderDartTipNotch', (new Path()
-      .move(points.waistDartLeft)
-      .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)).length())
-
+    store.set(
+      'shoulderDartTipNotch',
+      new Path()
+        .move(points.waistDartLeft)
+        .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)
+        .length()
+    )
   } else {
     paths.insideSeam = new Path()
       .move(points.cfHem)
@@ -67,28 +73,37 @@ export default function (part) {
       .line(points.hps)
       .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
 
-    paths.seam = paths.insideSeam.join( new Path().move(points.cfNeck).line(points.cfHem))
+    paths.seam = paths.insideSeam
+      .join(new Path().move(points.cfNeck).line(points.cfHem))
       .close()
       .attr('class', 'fabric')
 
-    store.set( 'shoulderDartTipNotch', (new Path()
-      .move(points.waistDartLeft)
-      .curve(points.waistDartLeftCp, points.armholeDartTipCpDownInside, points.armholeDartTipInside)).length())
+    store.set(
+      'shoulderDartTipNotch',
+      new Path()
+        .move(points.waistDartLeft)
+        .curve(
+          points.waistDartLeftCp,
+          points.armholeDartTipCpDownInside,
+          points.armholeDartTipInside
+        )
+        .length()
+    )
   }
 
   if (complete) {
-    if( options.dartPosition == 'shoulder' ) {
+    if (options.dartPosition == 'shoulder') {
       snippets.shoulderDartTip = new Snippet('notch', points.shoulderDartTip)
     } else {
       snippets.shoulderDartTip = new Snippet('notch', points.armholeDartTipInside)
     }
-    points.titleAnchor = new Point(points.hpsCp2.x *.75, points.cfNeckCp1.y *1.5)
+    points.titleAnchor = new Point(points.hpsCp2.x * 0.75, points.cfNeckCp1.y * 1.5)
     macro('title', {
       at: points.titleAnchor,
       nr: 1,
       title: 'Inside Front',
     })
-    points.scaleboxAnchor = points.titleAnchor.shift(-90, 90).shift(0,10)
+    points.scaleboxAnchor = points.titleAnchor.shift(-90, 90).shift(0, 10)
     macro('scalebox', { at: points.scaleboxAnchor, rotate: 270 })
 
     macro('cutonfold', {
@@ -104,7 +119,7 @@ export default function (part) {
 
     if (paperless) {
       let extraOffset = 0
-      if( options.dartPosition == 'shoulder' ) {
+      if (options.dartPosition == 'shoulder') {
         macro('hd', {
           from: points.cfNeck,
           to: points.shoulderDartInside,
@@ -113,7 +128,7 @@ export default function (part) {
         macro('vd', {
           from: points.cfHem,
           to: points.shoulderDartInside,
-          x: 0 -30,
+          x: 0 - 30,
         })
       } else {
         extraOffset = 10
@@ -130,12 +145,12 @@ export default function (part) {
         macro('vd', {
           from: points.cfHem,
           to: points.armholeDartInsideCp2,
-          x: 0 -20,
+          x: 0 - 20,
         })
         macro('vd', {
           from: points.cfHem,
           to: points.shoulderCp1,
-          x: 0 -40,
+          x: 0 - 40,
         })
       }
 
@@ -147,12 +162,12 @@ export default function (part) {
       macro('vd', {
         from: points.cfHem,
         to: points.cfNeck,
-        x: 0 - 20 -extraOffset,
+        x: 0 - 20 - extraOffset,
       })
       macro('vd', {
         from: points.cfHem,
         to: points.hps,
-        x: 0 - 40 -extraOffset,
+        x: 0 - 40 - extraOffset,
       })
       macro('hd', {
         from: points.cfBust,
@@ -173,4 +188,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const frontInside = {
+  name: 'noble.frontInside',
+  from: frontPoints,
+  draft: nobleFrontInside,
 }

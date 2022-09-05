@@ -1,11 +1,8 @@
-export default function (part) {
-  const {
-    points,
-    Path,
-    paths,
-    options,
-    snippets,
-  } = part.shorthand()
+import { back as bellaBack } from '@freesewing/bella'
+import * as options from './options.mjs'
+
+function nobleBackPoints(part) {
+  const { points, Path, paths, options, snippets } = part.shorthand()
 
   // Hide Bella paths
   for (let key of Object.keys(paths)) paths[key].render = false
@@ -32,33 +29,42 @@ export default function (part) {
   delete points.bustDartLeft
   delete points.bustDartLeftCp
 
-  points.shoulderDart = points.hps.shiftFractionTowards( points.shoulder, options.shoulderDartPosition )
+  points.shoulderDart = points.hps.shiftFractionTowards(
+    points.shoulder,
+    options.shoulderDartPosition
+  )
 
-  let aUp = points.dartTip.angle( points.shoulderDart )
-  let aDown = points.dartBottomRight.angle( points.dartTip )
-  let aDiff = Math.abs( aUp - aDown )
+  let aUp = points.dartTip.angle(points.shoulderDart)
+  let aDown = points.dartBottomRight.angle(points.dartTip)
+  let aDiff = Math.abs(aUp - aDown)
 
   // let dartCpAdjustment = Math.abs( options.shoulderDartPosition -.5) +.05
-  let dartCpAdjustment = aDiff /50
+  let dartCpAdjustment = aDiff / 50
 
-  points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 - dartCpAdjustment)
-  points.shoulderDartCpDown = points.shoulderDart.shiftFractionTowards( points.dartTip, 1 +dartCpAdjustment )
+  points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards(
+    points.dartTip,
+    1 - dartCpAdjustment
+  )
+  points.shoulderDartCpDown = points.shoulderDart.shiftFractionTowards(
+    points.dartTip,
+    1 + dartCpAdjustment
+  )
 
   const length = {
     i: new Path()
       .move(points.dartBottomLeft)
       .curve(points.dartLeftCp, points.shoulderDartCpDown, points.dartTip)
       .curve(points.shoulderDartCpUp, points.shoulderDart, points.shoulderDart)
-      .length()
+      .length(),
   }
 
   let iteration = 0
   let diff = 0
   let angle = 0
   do {
-    if (length.o) angle = diff*( length.o > length.i ? -.1 : .1 )
+    if (length.o) angle = diff * (length.o > length.i ? -0.1 : 0.1)
 
-    points.dartBottomRight = points.dartBottomRight.rotate( angle, points.waistSide )
+    points.dartBottomRight = points.dartBottomRight.rotate(angle, points.waistSide)
 
     length.o = new Path()
       .move(points.shoulderDart)
@@ -67,12 +73,19 @@ export default function (part) {
       .length()
 
     diff = length.o - length.i
-    iteration ++
-
-  } while( diff < -.5 || diff > .5 && iteration < 100 )
-  if( iteration >= 100 ) {
+    iteration++
+  } while (diff < -0.5 || (diff > 0.5 && iteration < 100))
+  if (iteration >= 100) {
     raise.error('Something is not quite right here!')
   }
 
   return part
+}
+
+export const backPoints = {
+  name: 'noble.backPoints',
+  from: bellaBack,
+  hideAll: true,
+  options,
+  draft: nobleBackPoints,
 }
