@@ -1,8 +1,4 @@
-// import mirror from '@freesewing/plugin-mirror'
-// import { PostAddSharp } from '@material-ui/icons'
-// import { Store } from "@material-ui/icons";
-
-export default function (partNumber, part) {
+function octoplushyHeadSection(partNumber, part) {
   const {
     options,
     Point,
@@ -606,4 +602,38 @@ export default function (partNumber, part) {
     }
   }
   return part
+}
+
+const options = {
+  sizeConstant: 200,
+  size: { pct: 100, min: 5, max: 500, menu: 'style' },
+  type: { dflt: 'octoplushy', list: ['octoplushy', 'octopus', 'squid'], menu: 'style' },
+  armWidth: { pct: 15, min: 10, max: 30, menu: 'style' },
+  armLength: { pct: 200, min: 100, max: 500, menu: 'style' },
+  neckWidth: { pct: 25, min: 25, max: 45, menu: 'style' },
+  armTaper: { pct: 25, min: 0, max: 50, menu: 'style' },
+  bottomTopArmRatio: { pct: 87, min: 75, max: 100, menu: 'style' },
+  bottomArmReduction: {
+    pct: 90,
+    min: 75,
+    max: 125,
+    menu: ({ options }) => (options.type == 'octoplushy' ? 'style' : false),
+  },
+  bottomArmReductionPlushy: {
+    pct: 80,
+    min: 75,
+    max: 125,
+    menu: ({ options }) => (options.type != 'octoplushy' ? 'style' : false),
+  },
+}
+
+export const headSection1 = {
+  name: 'octoplushy.headSection1',
+  options,
+  draft: (part) => octoplushyHeadSection(0, part),
+}
+export const headSection2 = {
+  name: 'octoplushy.headSection2',
+  options,
+  draft: (part) => octoplushyHeadSection(1, part),
 }

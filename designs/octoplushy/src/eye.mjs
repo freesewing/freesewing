@@ -1,4 +1,6 @@
-export default function (partNumber, part) {
+import { headSection1 } from './head.mjs'
+
+function octoplushyEye(partNumber, part) {
   const {
     options,
     Point,
@@ -126,4 +128,20 @@ export default function (partNumber, part) {
   }
 
   return part
+}
+
+export const eye1 = {
+  name: 'octoplushy.eye1',
+  after: headSection1,
+  draft: (part) => octoplushyEye(0, part),
+}
+export const eye2 = {
+  name: 'octoplushy.eye2',
+  after: headSection1,
+  draft: (part) => octoplushyEye(1, part),
+}
+export const eye3 = {
+  name: 'octoplushy.eye3',
+  after: headSection1,
+  draft: (part) => octoplushyEye(2, part),
 }

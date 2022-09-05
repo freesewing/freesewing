@@ -1,4 +1,6 @@
-export default function (partNumber, part) {
+import { headSection1, headSection2 } from './head.mjs'
+
+function octoplushyArmSection(partNumber, part) {
   const {
     options,
     Point,
@@ -308,4 +310,15 @@ export default function (partNumber, part) {
   }
 
   return part
+}
+
+export const armSection1 = {
+  name: 'octoplushy.armSection1',
+  after: headSection1,
+  draft: (part) => octoplushyArmSection(0, part),
+}
+export const armSection2 = {
+  name: 'octoplushy.armSection2',
+  after: headSection2,
+  draft: (part) => octoplushyArmSection(1, part),
 }
