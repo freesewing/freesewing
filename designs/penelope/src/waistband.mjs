@@ -1,5 +1,7 @@
-export default function (part) {
-  let {
+import { waistEase } from './shape.mjs'
+
+function penelopeWaistband(part) {
+  const {
     options,
     measurements,
     Point,
@@ -84,4 +86,15 @@ export default function (part) {
   }
 
   return part
+}
+
+export const waistband = {
+  name: 'penelope.waistband',
+  measurements: ['waist', 'waistToKnee'],
+  options: {
+    waistBandOverlap: 25,
+    waistBand: { bool: true },
+    waistBandWidth: { pct: 10, min: 5, max: 20 },
+  },
+  draft: penelopeWaistband,
 }

@@ -1,7 +1,7 @@
-import { BuildMainShape } from './shape'
+import { measurements, options, BuildMainShape } from './shape.mjs'
 
-export default function (part) {
-  let {
+function penelopeBack(part) {
+  const {
     options,
     measurements,
     /*Point,*/
@@ -133,4 +133,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'penelope.back',
+  measurements,
+  options,
+  draft: penelopeBack,
 }

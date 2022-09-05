@@ -1,6 +1,39 @@
-import { addDartToCurve, dartCalc } from './utils'
+import { addDartToCurve, dartCalc } from './utils.mjs'
 
-function BuildMainShape(part, frontPart) {
+export const measurements = ['waist', 'seat', 'waistToHips', 'waistToSeat', 'waistToKnee']
+export const waistEase = { pct: 1, min: 0, max: 8, menu: 'fit' }
+export const options = {
+  // FIXME: All of these constants mean this pattern won't scale properly :(
+  dartMaximumDifference: 300,
+  dartMinimumDifference: 180,
+  dartMinimumWidth: 6,
+  dartSideMinimum: 10,
+  dartBackControl1: 100,
+  dartBackControl2: 5,
+  dartBackControl3: 4,
+  curvePlacement: 2.4,
+  dart2offset: 32,
+  dart2factor: 0.8,
+  hipCurveDividerDown: 40,
+  hipCurveDividerUp: 3,
+  sideSeamShiftPercentage: 0.006,
+  backVentWidth: 0.1,
+  paperlessOffset: 15,
+  lengthBonus: { pct: 0, min: -50, max: 50, menu: 'style' },
+  hemBonus: { pct: 0, min: -35, max: 0, menu: 'style' },
+  hem: { pct: 2, min: 0, max: 5, menu: 'style' },
+  backVent: { bool: true, menu: 'style' },
+  backVentLength: { pct: 40, min: 5, max: 70, menu: 'style' },
+  zipperLocation: { dflt: 'backSeam', list: ['backSeam', 'sideSeam'], menu: 'style' },
+  nrOfDarts: { count: 2, min: 1, max: 2, menu: 'style' },
+  seatEase: { pct: 1, min: 0, max: 8, menu: 'fit' },
+  waistEase,
+  backDartDepthFactor: { pct: 50, min: 35, max: 70, menu: 'advanced' },
+  frontDartDepthFactor: { pct: 45, min: 30, max: 65, menu: 'advanced' },
+  dartToSideSeamFactor: { pct: 50, min: 30, max: 70, menu: 'advanced' },
+}
+
+export function BuildMainShape(part, frontPart) {
   const { sa, options, measurements, Point, Path, points, paths, store, paperless, macro } =
     part.shorthand()
 
@@ -307,5 +340,3 @@ function BuildMainShape(part, frontPart) {
     }
   }
 }
-
-export { BuildMainShape }

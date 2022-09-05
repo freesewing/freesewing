@@ -1,20 +1,14 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftFront from './front'
-import draftBack from './back'
-import draftWaistband from './waistband'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { back } from './back.mjs'
+import { front } from './front.mjs'
+import { waistband } from './waistband.mjs'
 
-// Create new design
-const Penelope = new freesewing.Design(config, plugins)
-
-// Attach the draft methods to the prototype
-Penelope.prototype.draftFront = draftFront
-Penelope.prototype.draftBack = draftBack
-Penelope.prototype.draftWaistband = draftWaistband
+// Setup our new design
+const Penelope = new Design({
+  data,
+  parts: [back, front, waistband],
+})
 
 // Named exports
-export { config, Penelope }
-
-// Default export
-export default Penelope
+export { back, front, waistband, Penelope }

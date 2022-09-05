@@ -1,7 +1,7 @@
-import { BuildMainShape } from './shape'
+import { measurements, options, BuildMainShape } from './shape.mjs'
 
-export default function (part) {
-  let { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
+function penelopeFront(part) {
+  const { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
     part.shorthand()
 
   BuildMainShape(part, true)
@@ -54,4 +54,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'penelope.front',
+  measurements,
+  options,
+  draft: penelopeFront,
 }
