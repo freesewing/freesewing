@@ -1,4 +1,6 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function draftFlorentTop (part) {
   let { paperless, sa, points, macro, Point, Path, paths, snippets, Snippet, complete, store } =
     part.shorthand()
 
@@ -208,4 +210,18 @@ export default function (part) {
   }
 
   return part
+}
+
+export const top = {
+  name: 'florent.top',
+  measurements: [ 'head' ],
+  options : {
+    // Constants
+    topSide: 0.8,
+    brim: 0,
+    // Percentages
+    headEase: { pct: 2, min: 0, max: 5, menu: 'fit' },
+  },
+  plugins: [ pluginBundle ],
+  draft: draftFlorentTop,
 }

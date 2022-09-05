@@ -1,4 +1,6 @@
-export default function (part) {
+import { brimBottom } from './brimbottom.mjs'
+
+function draftFlorentBrimTop (part) {
   let { paperless, sa, complete, points, macro, paths, Path } = part.shorthand()
 
   paths.hint = new Path()
@@ -54,4 +56,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const brimTop = {
+  name: 'florent.brimTop',
+  from: brimBottom,
+  draft: draftFlorentBrimTop,
 }
