@@ -1,4 +1,7 @@
-export default function (part) {
+import { front as titanFront } from '@freesewing/titan'
+import { back } from './back.mjs'
+
+function pacoFront(part) {
   /*
    * Helper method to draw the inseam path
    */
@@ -320,4 +323,12 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'paco.front',
+  from: titanFront,
+  after: back,
+  hideDepedencies: true,
+  draft: pacoFront,
 }

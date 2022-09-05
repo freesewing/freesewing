@@ -1,5 +1,7 @@
-export default function (part) {
-  let { store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
+import { front } from './front.mjs'
+
+function pacoCuff(part) {
+  const { store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
     part.shorthand()
   if (!options.elasticatedHem) {
     part.render = false
@@ -69,4 +71,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const cuff = {
+  name: 'paco.cuff',
+  after: front,
+  draft: pacoCuff,
 }

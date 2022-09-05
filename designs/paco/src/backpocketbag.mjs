@@ -1,5 +1,8 @@
-export default function (part) {
-  let { sa, points, Path, paths, snippets, options, complete, paperless, macro } = part.shorthand()
+import { back } from './back.mjs'
+
+function pacoBackPocketBag(part) {
+  const { sa, points, Path, paths, snippets, options, complete, paperless, macro } =
+    part.shorthand()
 
   // Don't bother of we're not drafting back pockets
   if (!options.backPockets) {
@@ -99,4 +102,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const backPocketBag = {
+  name: 'paco.backPocketBag',
+  from: back,
+  draft: pacoBackPocketBag,
 }

@@ -1,5 +1,8 @@
-export default function (part) {
-  let { sa, points, Path, paths, snippets, options, complete, paperless, macro } = part.shorthand()
+import { front } from './front.mjs'
+
+function pacoFrontPocketBag(part) {
+  const { sa, points, Path, paths, snippets, options, complete, paperless, macro } =
+    part.shorthand()
 
   // Don't bother of we're not drafting front pockets
   if (!options.frontPockets) {
@@ -95,4 +98,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const frontPocketBag = {
+  name: 'paco.frontPocketBag',
+  from: front,
+  draft: pacoFrontPocketBag,
 }

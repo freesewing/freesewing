@@ -1,4 +1,8 @@
-export default function (part) {
+import { back as titanBack } from '@freesewing/titan'
+import { pctBasedOn } from '@freesewing/core'
+import { elastics, smallSteps } from '@freesewing/snapseries'
+
+function pacoBack(part) {
   /*
    * Helper method to draw the inseam path
    */
@@ -305,4 +309,75 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'paco.back',
+  from: titanBack,
+  hideDepedencies: true,
+  options: {
+    // Constants
+    titanPaperless: false,
+    fitCrossSeam: true,
+    fitCrossSeamFront: true,
+    fitCrossSeamBack: true,
+    fitGuides: false,
+    kneeEase: 0.06,
+    fitKnee: false,
+    frontPocketHeelRatio: 0.4,
+    backPocketWaistRatio: 0.4,
+    backPocketHeightRatio: 0.4,
+    backPocketWidthRatio: 0.37,
+    // Disable this option from Titan
+    waistbandHeight: 0,
+    // Fit
+    waistEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
+    seatEase: { pct: 5, min: 0, max: 15, menu: 'fit' },
+    // Style
+    waistHeight: { pct: 5, min: 0, max: 100, menu: 'style' },
+    lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style' },
+    crotchDrop: { pct: 2, min: 0, max: 10, menu: 'style' },
+    elasticatedHem: { bool: true, menu: 'style' },
+    // Elastic
+    waistbandWidth: {
+      pct: 3,
+      min: 1,
+      max: 6,
+      snap: elastics,
+      ...pctBasedOn('waistToFloor'),
+      menu: 'elastic',
+    },
+    ankleElastic: {
+      pct: 5,
+      min: 1,
+      max: 13,
+      snap: elastics,
+      ...pctBasedOn('waistToFloor'),
+      menu: 'elastic',
+    },
+    heelEase: { pct: 5, min: 0, max: 50, menu: 'elastic' },
+    // Pockets
+    frontPockets: { bool: true, menu: 'pockets' },
+    backPockets: { bool: false, menu: 'pockets' },
+    // Not exposed to the user
+    frontPocketFlapSize: {
+      pct: 3,
+      min: 3,
+      max: 3,
+      snap: smallSteps,
+      ...pctBasedOn('waist'),
+      menu: false,
+    },
+    // Advanced
+    legBalance: { pct: 57.5, min: 52.5, max: 62.5, menu: 'advanced' },
+    crossSeamCurveStart: { pct: 85, min: 60, max: 100, menu: 'advanced' },
+    crossSeamCurveBend: { pct: 65, min: 45, max: 85, menu: 'advanced' },
+    crossSeamCurveAngle: { deg: 12, min: 0, max: 20, menu: 'advanced' },
+    crotchSeamCurveStart: { pct: 80, min: 60, max: 95, menu: 'advanced' },
+    crotchSeamCurveBend: { pct: 80, min: 45, max: 100, menu: 'advanced' },
+    crotchSeamCurveAngle: { deg: 25, min: 0, max: 35, menu: 'advanced' },
+    waistBalance: { pct: 60, min: 30, max: 90, menu: 'advanced' },
+    grainlinePosition: { pct: 45, min: 30, max: 60, menu: 'advanced' },
+  },
+  draft: pacoBack,
 }

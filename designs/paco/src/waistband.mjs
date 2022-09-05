@@ -1,5 +1,7 @@
-export default function (part) {
-  let { utils, store, sa, Point, points, Path, paths, complete, paperless, macro } =
+import { back } from './back.mjs'
+
+function pacoWaistband(part) {
+  const { utils, store, sa, Point, points, Path, paths, complete, paperless, macro } =
     part.shorthand()
 
   points.topLeft = new Point(0, 0)
@@ -84,4 +86,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const waistband = {
+  name: 'paco.waistband',
+  after: back,
+  draft: pacoWaistband,
 }

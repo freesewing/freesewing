@@ -1,5 +1,7 @@
-export default function (part) {
-  let { points, Path, paths, snippets, options, complete, paperless, macro } = part.shorthand()
+import { backPocketWelt } from './backpocketwelt.mjs'
+
+function pacoBackPocketWeltInterfacing(part) {
+  const { points, Path, paths, snippets, options, complete, paperless, macro } = part.shorthand()
 
   // Don't bother of we're not drafting back pockets
   if (!options.backPockets) {
@@ -52,4 +54,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const backPocketWeltInterfacing = {
+  name: 'paco.backPocketWeltInterfacing',
+  from: backPocketWelt,
+  draft: pacoBackPocketWeltInterfacing,
 }
