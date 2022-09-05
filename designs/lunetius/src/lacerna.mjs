@@ -1,5 +1,7 @@
-export default function (part) {
-  let {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function lunetiusLacerna(part) {
+  const {
     Point,
     points,
     Path,
@@ -151,4 +153,29 @@ export default function (part) {
   }
 
   return part
+}
+
+export const lacerna = {
+  name: 'lunetius.lacerna',
+  measurements: [
+    'waistToKnee',
+    'waistToUpperLeg',
+    'waistToFloor',
+    'hpsToWaistBack',
+    'neck',
+    'shoulderToShoulder',
+    'shoulderToElbow',
+    'waistToHips',
+  ],
+  options: {
+    lengthRatio: { pct: 105, min: 60, max: 130, menu: 'style' },
+    widthRatio: { pct: 100, min: 50, max: 130, menu: 'style' },
+    length: {
+      list: ['toKnee', 'toBelowKnee', 'toHips', 'toUpperLeg', 'toFloor'],
+      dflt: 'toBelowKnee',
+      menu: 'style',
+    },
+  },
+  plugins: pluginBundle,
+  draft: lunetiusLacerna,
 }

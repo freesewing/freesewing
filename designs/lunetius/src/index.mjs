@@ -1,16 +1,12 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftLacerna from './lacerna'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { lacerna } from './lacerna.mjs'
 
-// Create new design
-const Lunetius = new freesewing.Design(config, plugins)
-
-// Attach the draft methods to the prototype
-Lunetius.prototype.draftLacerna = draftLacerna
+// Setup our new design
+const Lunetius = new Design({
+  data,
+  parts: [lacerna],
+})
 
 // Named exports
-export { config, Lunetius }
-
-// Default export
-export default Lunetius
+export { lacerna, Lunetius }
