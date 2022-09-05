@@ -1,23 +1,23 @@
 ---
 bustAlignedButtons:
-  title: Bust-aligned buttons
-  description: Optional button spacing strategies to ensure a button at the bustline
+  title: Ґудзики на грудях
+  description: Додаткові налаштування розміщення ґудзиків відносно грудей
   options:
-    even: Even spacing
-    split: Split spacing
-    disabled: Disabled
+    even: Рівномірно розміщені
+    split: Роздільно розміщені
+    disabled: Вимкнути
 bustDartAngle:
-  title: Bust dart angle
-  description: Controls the angle by which the (side) bust dart slopes downward
+  title: Кут грудної виточки
+  description: Керує кутом, за яким бокова виточка на грудях нахиляється вниз
 bustDartLength:
-  title: Bust dart length
-  description: Controls how close the bust dart approaches the bust point
+  title: Довжина грудної виточки
+  description: Керує відстанню між кінцем грудної виточки та пипкою/центром грудей
 contour:
-  title: Contour
-  description: Controls how sharply the extra room for breasts is removed again below the chest
+  title: Силует
+  description: Керує наскільки різко крива грудей йде до талії
 frontDarts:
-  title: Front darts
-  description: Whether to include front darts or not
+  title: Передні виточки
+  description: Чи додавати виточки спереду сорочки
 frontDartLength:
-  title: Front dart length
-  description: Controls how close the front dart approaches the bust point
+  title: Довжина передніх виточок
+  description: Керує відстанню між кінцем передньої виточки та пипкою/центром грудей

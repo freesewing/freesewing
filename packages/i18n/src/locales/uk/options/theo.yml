@@ -1,7 +1,7 @@
 ---
 wedge:
-  title: Wedge
-  description: Controls the length of the cross seam
+  title: Пах
+  description: Керує довжиною центрального пахового шва
 legWidth:
-  title: Leg width
-  description: Controls the width of the legs
+  title: Ширина холоші
+  description: Керує шириною холош (штанин)
