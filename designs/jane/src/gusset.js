@@ -40,7 +40,7 @@ paths.gusset = new Path()
 macro("title", {
   at: points.title,
   nr: 3,
-  title: "Gusset"
+  title: "Sleeve Gusset"
 })
 
 
