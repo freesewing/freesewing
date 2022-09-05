@@ -13553,9 +13553,9 @@ new-find-package-json@^2.0.0:
     debug "^4.3.4"
 
 next-i18next@^12.0.0:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-12.0.0.tgz#328aa48efcc9af76d82e4fa0972b50eee6be6ebf"
-  integrity sha512-8tDySpERz+x3GNxJQUxJfR01GO77tH4wdjrZrRWXywsQCeY+660tLTomITqRocqBm2j7FY6YUI9IUFCeeNg8wA==
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-12.0.1.tgz#d20fd8a92a99edc5922a2061453db70dbc002b15"
+  integrity sha512-i1yLpOvokldjqnnkP4KfZtnbp2+DILlUvavzJ9rvCSu1Yk5w45IRAYrJfu20/0WDeWxea/ktYDmXw+z/2roo3g==
   dependencies:
     "@babel/runtime" "^7.18.9"
     "@types/hoist-non-react-statics" "^3.3.1"
