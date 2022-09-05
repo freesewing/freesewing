@@ -1,5 +1,5 @@
-export default (part) => {
-  let {
+function florenceMask(part) {
+  const {
     points,
     Point,
     paths,
@@ -130,4 +130,15 @@ export default (part) => {
   }
 
   return part
+}
+
+export const mask = {
+  name: 'florence.mask',
+  measurements: ['head'],
+  options: {
+    length: { pct: 40, min: 35, max: 45, menu: 'fit' },
+    height: { pct: 26, min: 23, max: 29, menu: 'fit' },
+    curve: { pct: 12.5, min: 10, max: 15, menu: 'fit' },
+  },
+  draft: florenceMask,
 }

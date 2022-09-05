@@ -1,17 +1,12 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-// Parts
-import draftMask from './mask'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { mask } from './mask.mjs'
 
-// Create design
-const Florence = new freesewing.Design(config, plugins)
-
-// Attach draft methods to prototype
-Florence.prototype.draftMask = draftMask
+// Setup our new design
+const Florence = new Design({
+  data,
+  parts: [mask],
+})
 
 // Named exports
-export { config, Florence }
-
-// Default export
-export default Florence
+export { mask, Florence }
