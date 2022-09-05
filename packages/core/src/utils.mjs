@@ -578,7 +578,7 @@ export const addPartPlugins = (part, config, raise) => {
         raise.info(`Plugin \`${plugin.plugin.name}\` was re-requested conditionally. Overwriting earlier condition.`)
         config.plugins[plugin.plugin.name] = plugin
       }
-      else raise.info(`Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading bitch.`)
+      else raise.info(`Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading.`)
   }
     else config.plugins[plugin.name] = plugin
   }
