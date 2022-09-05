@@ -133,6 +133,12 @@ export default function (part) {
     if (sa) {
       paths.sa = paths.sideseam.offset(sa).attr('class', 'fabric sa')
     }
+
+    macro('cutonfold', {
+      from: points.topLeft,
+      to: points.topRight,
+      grainline: true
+    })
   }
 
   // Paperless?
