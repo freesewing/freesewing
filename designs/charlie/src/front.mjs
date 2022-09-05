@@ -1,4 +1,8 @@
-export default (part) => {
+import { elastics } from '@freesewing/snapseries'
+import { pctBasedOn } from '@freesewing/core'
+import { front as titanFront } from '@freesewing/titan'
+
+function draftCharlieFront (part) {
   // Helper method to draw the outseam path
   const drawOutseam = () =>
     new Path()
@@ -344,4 +348,86 @@ export default (part) => {
   }
 
   return part
+}
+
+export const front = {
+  name: 'charlie.front',
+  from: titanFront,
+  hideDependencies: true,
+  measurements: [
+    'crossSeam',
+    'crossSeamFront',
+    'knee',
+    'seat',
+    'seatBack',
+    'waist',
+    'waistBack',
+    'waistToFloor',
+    'waistToKnee',
+    'waistToHips',
+    'waistToSeat',
+    'waistToUpperLeg',
+  ],
+  options: {
+    // Constants (from Titan)
+    titanPaperless: true,
+    fitCrossSeam: true,
+    fitCrossSeamFront: true,
+    fitCrossSeamBack: true,
+    fitGuides: false,
+    // Lock titan options
+    fitKnee: true,
+    // Charlie constants
+    waistbandReduction: 0.25, // See src/index.js
+    waistbandFactor: 0.1,
+
+    // Fit (from Titan)
+    waistEase: { pct: 1, min: 0, max: 5, menu: 'fit' },
+    seatEase: { pct: 5, min: 0, max: 10, menu: 'fit' },
+    kneeEase: { pct: 15, min: 10, max: 30, menu: 'fit' },
+
+    // Style (from Titan)
+    waistHeight: { pct: -4, min: -15, max: 40, menu: 'style' },
+    waistbandWidth: { pct: 3, min: 1, max: 6, snap: elastics,
+      ...pctBasedOn('waistToFloor'), menu: 'style' },
+    //waistbandWidth: { pct: 3.5, min: 2, max: 5 },
+    lengthBonus: { pct: 2, min: -20, max: 10, menu: 'style' },
+    crotchDrop: { pct: 2, min: 0, max: 15, menu: 'style' },
+
+    // Advanced (from Titan)
+    crossSeamCurveStart: { pct: 85, min: 60, max: 100, menu: 'advanced' },
+    crossSeamCurveBend: { pct: 65, min: 45, max: 85, menu: 'advanced' },
+    crossSeamCurveAngle: { deg: 12, min: 0, max: 20, menu: 'advanced' },
+    crotchSeamCurveStart: { pct: 80, min: 60, max: 95, menu: 'advanced' },
+    crotchSeamCurveBend: { pct: 80, min: 45, max: 100, menu: 'advanced' },
+    crotchSeamCurveAngle: { deg: 25, min: 0, max: 35, menu: 'advanced' },
+    grainlinePosition: { pct: 50, min: 30, max: 60, menu: 'advanced' },
+    legBalance: { pct: 57.5, min: 52.5, max: 62.5, menu: 'advanced' },
+    waistBalance: { pct: 55, min: 30, max: 90, menu: 'advanced' },
+
+    // Front pockets
+    frontPocketSlantDepth: { pct: 85, min: 70, max: 100,
+      menu: 'pockets.frontpockets' },
+    frontPocketSlantWidth: { pct: 25, min: 15, max: 35,
+      menu: 'pockets.frontpockets' },
+    frontPocketSlantRound: { pct: 30, min: 5, max: 50,
+      menu: 'pockets.frontpockets' },
+    frontPocketSlantBend: { pct: 25, min: 5, max: 50,
+      menu: 'pockets.frontpockets' },
+    frontPocketWidth: { pct: 55, min: 45, max: 65,
+      menu: 'pockets.frontpockets' },
+    frontPocketDepth: { pct: 100, min: 85, max: 110,
+      menu: 'pockets.frontpockets' },
+    frontPocketFacing: { pct: 45, min: 25, max: 65,
+      menu: 'pockets.frontpockets' },
+
+    // Fly
+    flyCurve: { pct: 72, min: 50, max: 100,
+      menu: 'advanced.fly' },
+    flyLength: { pct: 45, min: 30, max: 60,
+      menu: 'advanced.fly' },
+    flyWidth: { pct: 15, min: 10, max: 20,
+      menu: 'advanced.fly' },
+  },
+  draft: draftCharlieFront,
 }

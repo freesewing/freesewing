@@ -1,4 +1,6 @@
-export default (part) => {
+import { back } from './back.mjs'
+
+function draftCharlieBackPocket (part) {
   // Shorthand
   let { points, Point, paths, Path, complete, paperless, store, macro, snippets, Snippet, sa } =
     part.shorthand()
@@ -89,4 +91,10 @@ export default (part) => {
   }
 
   return part
+}
+
+export const backPocket = {
+  name: 'charlie.backPocket',
+  after: back,
+  draft: draftCharlieBackPocket,
 }

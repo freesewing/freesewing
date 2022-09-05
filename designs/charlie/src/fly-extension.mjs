@@ -1,4 +1,6 @@
-export default (part) => {
+import { flyFacing } from './fly-facing.mjs'
+
+function draftCharlieFlyExtension (part) {
   // Shorthand
   let { points, paths, Path, complete, macro, sa } = part.shorthand()
 
@@ -57,4 +59,10 @@ export default (part) => {
   }
 
   return part
+}
+
+export const flyExtension = {
+  name: 'charlie.flyExtension',
+  from: flyFacing,
+  draft: draftCharlieFlyExtension,
 }

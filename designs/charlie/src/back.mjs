@@ -1,4 +1,8 @@
-export default (part) => {
+import { back as titanBack } from '@freesewing/titan'
+import { front } from './front.mjs'
+import { front as titanFront } from '@freesewing/titan'
+
+function draftCharlieBack (part) {
   // Helper method to draw the outseam path
   const drawOutseam = () => {
     let outseam = new Path()
@@ -302,4 +306,23 @@ export default (part) => {
   }
 
   return part
+}
+
+export const back = {
+  name: 'charlie.back',
+  from: titanBack,
+  after: [ titanBack, titanFront, front ],
+  hideDependencies: true,
+  options: {
+    backPocketVerticalPlacement: { pct: 24, min: 18, max: 30,
+      menu: 'pockets.backpockets' },
+    backPocketHorizontalPlacement: { pct: 55, min: 48, max: 62,
+      menu: 'pockets.backpockets' },
+    backPocketWidth: { pct: 55, min: 50, max: 60,
+      menu: 'pockets.backpockets' },
+    backPocketDepth: { pct: 60, min: 40, max: 80,
+      menu: 'pockets.backpockets' },
+    backPocketFacing: { bool: true, menu: 'pockets.backpockets' },
+  },
+  draft: draftCharlieBack,
 }

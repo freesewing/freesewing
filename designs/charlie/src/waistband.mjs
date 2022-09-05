@@ -1,4 +1,9 @@
-export default (part) => {
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+import { front as titanFront } from '@freesewing/titan'
+import { back as titanBack } from '@freesewing/titan'
+
+function draftCharlieWaistband (part) {
   // Shorthand
   let {
     points,
@@ -134,4 +139,13 @@ export default (part) => {
   }
 
   return part
+}
+
+export const waistband = {
+  name: 'charlie.waistband',
+  after: [ titanBack, titanFront, back, front ],
+  options: {
+    waistbandCurve: { pct: 0, min: 0, max: 35, menu: 'fit' },
+  },
+  draft: draftCharlieWaistband,
 }
