@@ -1,4 +1,7 @@
-export default function (part) {
+import { pluginBust } from '@freesewing/plugin-bust'
+import { front as carltonFront } from '@freesewing/carlton'
+
+function draftCarlitaFront (part) {
   let {
     paperless,
     sa,
@@ -494,4 +497,21 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'carlita.front',
+  from: carltonFront,
+  hideDependencies: true,
+  measurements: [
+    'highBust',
+    'bustSpan',
+    'hpsToBust',
+  ],
+  plugins: [ pluginBust ],
+  options: {
+    draftForHighBust: { bool: true, hide: () => true },
+    contour: { pct: 50, min: 25, max: 75, menu: 'advanced' },
+  },
+  draft: draftCarlitaFront,
 }
