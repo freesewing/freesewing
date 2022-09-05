@@ -1,4 +1,7 @@
-export default function (part) {
+import { body } from './body.mjs'
+import { aboveMouth } from './aboveMouth.mjs'
+
+function draftHiBelly (part) {
   let {
     store,
     sa,
@@ -308,4 +311,13 @@ export default function (part) {
   }
 
   return part
+}
+
+export const belly = {
+  name: 'hi.belly',
+  after: [ body, aboveMouth ],
+  options: {
+    hungry: { pct: 50, min: 0, max: 100, menu: 'style' },
+  },
+  draft: draftHiBelly,
 }
