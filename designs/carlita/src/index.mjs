@@ -1,59 +1,40 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import bust from '@freesewing/plugin-bust'
-import Bent from '@freesewing/bent'
-import Carlton from '@freesewing/carlton'
-import config from '../config'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
 // Parts
-import draftFront from './front'
-import draftSide from './side'
+import { front } from './front.mjs'
+import { side } from './side.mjs'
+// Inherited parts
+import { back } from '@freesewing/carlton'
+import { tail } from '@freesewing/carlton'
+import { belt } from '@freesewing/carlton'
+import { topSleeve } from '@freesewing/carlton'
+import { underSleeve } from '@freesewing/carlton'
+import { collarStand } from '@freesewing/carlton'
+import { collar } from '@freesewing/carlton'
+import { cuffFacing } from '@freesewing/carlton'
+import { pocket } from '@freesewing/carlton'
+import { pocketFlap } from '@freesewing/carlton'
+import { pocketLining } from '@freesewing/carlton'
+import { chestPocketWelt } from '@freesewing/carlton'
+import { chestPocketBag } from '@freesewing/carlton'
+import { innerPocketWelt } from '@freesewing/carlton'
+import { innerPocketBag } from '@freesewing/carlton'
+import { innerPocketTab } from '@freesewing/carlton'
 
 // Create new design
-const Carlita = new freesewing.Design(config, [plugins, bust])
-
-let fromBent = ['Base', 'Front', 'Back', 'Sleeve', 'TopSleeve', 'UnderSleeve']
-
-// Attach draft methods from Bent to prototype
-for (let m of fromBent) {
-  Carlita.prototype['draftBent' + m] = function (part) {
-    return new Bent(this.settings)['draft' + m](part)
-  }
-}
-
-// Attach draft methods from Carlton to prototype
-for (let m of [
-  'draftBack',
-  'draftTail',
-  'draftTopSleeve',
-  'draftUnderSleeve',
-  'draftBelt',
-  'draftCollarStand',
-  'draftCollar',
-  'draftCuffFacing',
-  'draftPocket',
-  'draftPocketFlap',
-  'draftPocketLining',
-  'draftChestPocketWelt',
-  'draftChestPocketBag',
-  'draftInnerPocketWelt',
-  'draftInnerPocketBag',
-  'draftInnerPocketTab',
-]) {
-  Carlita.prototype[m] = function (part) {
-    return new Carlton(this.settings)[m](part)
-  }
-}
-
-Carlita.prototype.draftCarltonFront = function (part) {
-  return new Carlton(this.settings).draftFront(part)
-}
-
-// Attach own draft methods to prototype
-Carlita.prototype.draftFront = draftFront
-Carlita.prototype.draftSide = draftSide
+const Carlita = new Design({
+  data,
+  parts: [
+    front, side, back, tail, belt, topSleeve, underSleeve, collarStand,
+    collar, pocket, pocketFlap, pocketLining, chestPocketWelt,
+    chestPocketBag, innerPocketWelt, innerPocketBag, innerPocketTab,
+  ],
+})
 
 // Named exports
-export { config, Carlita }
-
-// Default export
-export default Carlita
+export {
+  front, side, back, tail, belt, topSleeve, underSleeve, collarStand,
+  collar, cuffFacing, pocket, pocketFlap, pocketLining, chestPocketWelt,
+  chestPocketBag, innerPocketWelt, innerPocketBag, innerPocketTab,
+  Carlita,
+}
