@@ -1,5 +1,8 @@
-export default function (part) {
-  let { paperless, sa, snippets, complete, points, options, macro, paths, Path } = part.shorthand()
+import { pocket } from './pocket.mjs'
+
+function jaegerPocketLining(part) {
+  const { paperless, sa, snippets, complete, points, options, macro, paths, Path } =
+    part.shorthand()
 
   // Adapt length
   points.topLeft = points.edgeLeft.flipY(points.topLeft)
@@ -66,4 +69,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const pocketLining = {
+  name: 'jaeger.pocketLining',
+  from: pocket,
+  draft: jaegerPocketLining,
 }

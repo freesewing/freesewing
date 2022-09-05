@@ -1,8 +1,10 @@
-export default function (part) {
-  let { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
+import { front } from './front.mjs'
 
-  let width = store.get('innerPocketWidth')
-  let height = store.get('innerPocketWeltHeight')
+function jaegerInnerPocketWelt(part) {
+  const { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
+
+  const width = store.get('innerPocketWidth')
+  const height = store.get('innerPocketWeltHeight')
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width, 0)
@@ -52,4 +54,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const innerPocketWelt = {
+  name: 'jaeger.innerPocketWelt',
+  after: front,
+  draft: jaegerInnerPocketWelt,
 }

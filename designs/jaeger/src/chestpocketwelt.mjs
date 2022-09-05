@@ -1,4 +1,6 @@
-export default function (part) {
+import { front } from './front.mjs'
+
+function jaegerChestPocketWelt(part) {
   let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
     part.shorthand()
 
@@ -64,4 +66,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const chestPocketWelt = {
+  name: 'jaeger.chestPocketWelt',
+  after: front,
+  draft: jaegerChestPocketWelt,
 }

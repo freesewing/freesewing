@@ -1,6 +1,22 @@
-import { backSideBoundary } from './shared'
+import { backSideBoundary } from './shared.mjs'
+import { front as bentFront } from '@freesewing/bent'
+import {
+  hipsEase,
+  waistEase,
+  centerFrontHemDrop,
+  frontPocketPlacement,
+  frontPocketWidth,
+  frontPocketDepth,
+  frontPocketRadius,
+  frontDartPlacement,
+  sideFrontPlacement,
+  rollLineCollarHeight,
+  reduceWaistStandardFraction,
+  reduceWaistDartFraction,
+  reduceHipsStandardFraction,
+} from './options.mjs'
 
-export default function (part) {
+function jaegerFrontBase(part) {
   let { store, points, utils, options, Point, paths, Path } = part.shorthand()
 
   /**
@@ -172,4 +188,27 @@ export default function (part) {
     .attr('class', 'stroke-xl facing lashed')
 
   return part
+}
+
+export const frontBase = {
+  name: 'jaeger.frontBase',
+  measurements: ['hips', 'waist'],
+  from: bentFront,
+  hideAll: true,
+  options: {
+    hipsEase,
+    waistEase,
+    centerFrontHemDrop,
+    frontPocketPlacement,
+    frontPocketWidth,
+    frontPocketDepth,
+    frontPocketRadius,
+    frontDartPlacement,
+    sideFrontPlacement,
+    rollLineCollarHeight,
+    reduceWaistStandardFraction,
+    reduceWaistDartFraction,
+    reduceHipsStandardFraction,
+  },
+  draft: jaegerFrontBase,
 }

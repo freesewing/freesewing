@@ -1,6 +1,16 @@
-import { calculateRatios, backSideBoundary } from './shared'
+import { calculateRatios, backSideBoundary } from './shared.mjs'
+import { back as bentBack } from '@freesewing/bent'
+import {
+  centerBackDart,
+  hipsEase,
+  waistEase,
+  rollLineCollarHeight,
+  reduceWaistStandardFraction,
+  reduceWaistDartFraction,
+  reduceHipsStandardFraction,
+} from './options.mjs'
 
-export default function (part) {
+function jaegerBackBase(part) {
   calculateRatios(part)
   let { store, points, measurements, options, Point, paths, Path } = part.shorthand()
 
@@ -75,4 +85,21 @@ export default function (part) {
     .attr('class', 'stroke-xl lining')
 
   return part
+}
+
+export const backBase = {
+  name: 'jaeger.backBase',
+  measurements: ['hips', 'waist'],
+  from: bentBack,
+  hideAll: true,
+  options: {
+    centerBackDart,
+    hipsEase,
+    waistEase,
+    rollLineCollarHeight,
+    reduceWaistStandardFraction,
+    reduceWaistDartFraction,
+    reduceHipsStandardFraction,
+  },
+  draft: jaegerBackBase,
 }

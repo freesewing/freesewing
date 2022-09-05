@@ -1,3 +1,5 @@
+import { collarStand } from './collarstand.mjs'
+
 /*
  * This collar would benefit from a redesign
  * but I find collar design to be rather tricky business and
@@ -5,8 +7,8 @@
  * experience, or more tailoring exprience.
  */
 
-export default function (part) {
-  let { paperless, sa, snippets, complete, points, macro, paths, Path } = part.shorthand()
+function jaegerUnderCollar(part) {
+  const { paperless, sa, snippets, complete, points, macro, paths, Path } = part.shorthand()
 
   // Clean up
   for (let i of Object.keys(paths)) delete paths[i]
@@ -92,4 +94,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const underCollar = {
+  name: 'jaeger.underCollar',
+  from: collarStand,
+  draft: jaegerUnderCollar,
 }

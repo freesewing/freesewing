@@ -1,3 +1,6 @@
+import { collarStand } from './collarstand.mjs'
+import { collarRoll } from './options.mjs'
+
 /*
  * This collar would benefit from a redesign
  * but I find collar design to be rather tricky business and
@@ -5,7 +8,7 @@
  * experience, or more tailoring exprience.
  */
 
-export default function (part) {
+function jaegerCollar(part) {
   const { paperless, sa, snippets, complete, points, options, macro, paths, Path, store } =
     part.shorthand()
 
@@ -123,4 +126,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const collar = {
+  name: 'jaeger.collar',
+  from: collarStand,
+  options: { collarRoll },
+  draft: jaegerCollar,
 }

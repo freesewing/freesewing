@@ -1,5 +1,8 @@
-export default function (part) {
-  let { paperless, sa, utils, complete, points, measurements, options, macro, paths, Path } =
+import { topSleeve as bentTopSleeve } from '@freesewing/bent'
+import { sleeveVentLength, sleeveVentWidth } from './options.mjs'
+
+function jaegerTopSleeve(part) {
+  const { paperless, sa, utils, complete, points, measurements, options, macro, paths, Path } =
     part.shorthand()
 
   // Vent
@@ -202,4 +205,12 @@ export default function (part) {
   }
 
   return part
+}
+
+export const topSleeve = {
+  name: 'jaeger.topSleeve',
+  from: bentTopSleeve,
+  hideDependencies: true,
+  options: { sleeveVentLength, sleeveVentWidth },
+  draft: jaegerTopSleeve,
 }

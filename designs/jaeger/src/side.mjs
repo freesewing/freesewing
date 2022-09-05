@@ -1,5 +1,9 @@
-export default function (part) {
-  let {
+import { frontBase } from './frontbase.mjs'
+import { backBase } from './backbase.mjs'
+import { backVent, backVentLength } from './options.mjs'
+
+function jaegerSide(part) {
+  const {
     paperless,
     sa,
     snippets,
@@ -159,4 +163,12 @@ export default function (part) {
   }
 
   return part
+}
+
+export const side = {
+  name: 'jaeger.side',
+  from: frontBase,
+  after: backBase,
+  options: { backVent, backVentLength },
+  draft: jaegerSide,
 }

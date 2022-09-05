@@ -1,5 +1,34 @@
-export default function (part) {
-  let {
+import { frontBase } from './frontbase.mjs'
+import { backBase } from './backbase.mjs'
+import {
+  frontOverlap,
+  innerPocketPlacement,
+  innerPocketWidth,
+  innerPocketDepth,
+  innerPocketWeltHeight,
+  frontCutawayAngle,
+  frontCutawayStart,
+  frontCutawayEnd,
+  hemRadius,
+  chestPocketDepth,
+  chestPocketWidth,
+  chestPocketPlacement,
+  chestPocketAngle,
+  chestPocketWeltSize,
+  lapelStart,
+  collarHeight,
+  collarNotchDepth,
+  collarNotchAngle,
+  collarNotchReturn,
+  chestShaping,
+  buttons,
+  buttonLength,
+  chestShapingMax,
+  lapelReduction,
+} from './options.mjs'
+
+function jaegerFront(part) {
+  const {
     paperless,
     sa,
     snippets,
@@ -624,4 +653,37 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'jaeger.front',
+  from: frontBase,
+  after: backBase,
+  options: {
+    frontOverlap,
+    innerPocketPlacement,
+    innerPocketWidth,
+    innerPocketDepth,
+    innerPocketWeltHeight,
+    frontCutawayAngle,
+    frontCutawayStart,
+    frontCutawayEnd,
+    hemRadius,
+    chestPocketDepth,
+    chestPocketWidth,
+    chestPocketPlacement,
+    chestPocketAngle,
+    chestPocketWeltSize,
+    lapelStart,
+    collarHeight,
+    collarNotchDepth,
+    collarNotchAngle,
+    collarNotchReturn,
+    chestShaping,
+    buttons,
+    buttonLength,
+    chestShapingMax,
+    lapelReduction,
+  },
+  draft: jaegerFront,
 }

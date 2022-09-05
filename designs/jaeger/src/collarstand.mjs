@@ -1,3 +1,7 @@
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+import { collarSpread } from './options.mjs'
+
 /*
  * This collar would benefit from a redesign
  * but I find collar design to be rather tricky business and
@@ -5,8 +9,8 @@
  * experience, or more tailoring exprience.
  */
 
-export default function (part) {
-  let {
+function jaegerCollarStand(part) {
+  const {
     paperless,
     sa,
     store,
@@ -21,7 +25,7 @@ export default function (part) {
   } = part.shorthand()
 
   // Only keep what's relevant from the front part
-  let collarPoints = [
+  const collarPoints = [
     'notch',
     'notchTip',
     'collarCorner',
@@ -33,10 +37,10 @@ export default function (part) {
     'collarCbBottom',
     'lapelBreakPoint',
   ]
-  for (let i of Object.keys(points)) {
+  for (const i of Object.keys(points)) {
     if (collarPoints.indexOf(i) === -1) delete points[i]
   }
-  for (let i of Object.keys(paths)) delete paths[i]
+  for (const i of Object.keys(paths)) delete paths[i]
 
   /**
    * Locate collarstand center back bottom point
@@ -63,7 +67,7 @@ export default function (part) {
 
   // Rotate points
   let angle = -1 * points.collarstandCbBottom.angle(points.neck)
-  for (let i of Object.keys(points)) points[i] = points[i].rotate(angle, points.neck)
+  for (const i of Object.keys(points)) points[i] = points[i].rotate(angle, points.neck)
 
   // Collarstand center back top point
   points.collarstandCbTop = points.collarstandCbBottom.shiftFractionTowards(points.collarCbTop, 0.3)
@@ -90,8 +94,8 @@ export default function (part) {
   points.leftCollarstandCbTopCp = points.collarstandCbTopCp.flipX(points.collarCbTop)
 
   // Clean up
-  for (let i of Object.keys(paths)) delete paths[i]
-  for (let i of Object.keys(snippets)) delete snippets[i]
+  for (const i of Object.keys(paths)) delete paths[i]
+  for (const i of Object.keys(snippets)) delete snippets[i]
 
   // Paths
   paths.seam = new Path()
@@ -164,4 +168,12 @@ export default function (part) {
   }
 
   return part
+}
+
+export const collarStand = {
+  name: 'jaeger.collarStand',
+  from: front,
+  after: back,
+  options: { collarSpread },
+  draft: jaegerCollarStand,
 }

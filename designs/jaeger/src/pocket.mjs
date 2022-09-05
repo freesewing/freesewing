@@ -1,9 +1,13 @@
-export default function (part) {
-  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
+import { frontBase } from './frontbase.mjs'
+import { backBase } from './backbase.mjs'
+import { pocketFoldover } from './options.mjs'
+
+function jaegerPocket(part) {
+  const { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
     part.shorthand()
 
-  let width = store.get('pocketWidth')
-  let depth = store.get('pocketDepth')
+  const width = store.get('pocketWidth')
+  const depth = store.get('pocketDepth')
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width, 0)
@@ -100,4 +104,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const pocket = {
+  name: 'jaeger.pocket',
+  after: [frontBase, backBase],
+  options: { pocketFoldover },
+  draft: jaegerPocket,
 }

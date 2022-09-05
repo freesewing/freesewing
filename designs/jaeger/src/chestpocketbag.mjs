@@ -1,11 +1,13 @@
-export default function (part) {
-  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
+import { front } from './front.mjs'
+
+function jaegerChestPocketBag(part) {
+  const { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
     part.shorthand()
 
-  let width = store.get('chestPocketWidth')
-  let welt = store.get('chestPocketWeltHeight')
-  let height = width * options.chestPocketDepth
-  let angle = options.chestPocketAngle
+  const width = store.get('chestPocketWidth')
+  const welt = store.get('chestPocketWeltHeight')
+  const height = width * options.chestPocketDepth
+  const angle = options.chestPocketAngle
 
   points.topLeft = new Point(0, 0)
   points.topRight = points.topLeft.shift(angle, width)
@@ -84,4 +86,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const chestPocketBag = {
+  name: 'jaeger.chestPocketBag',
+  after: front,
+  draft: jaegerChestPocketBag,
 }
