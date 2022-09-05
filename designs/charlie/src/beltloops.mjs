@@ -1,4 +1,6 @@
-export default (part) => {
+import { waistband } from './waistband.mjs'
+
+function draftCharlieBeltLoops (part) {
   // Shorthand
   let { store, points, Point, paths, Path, options, complete, paperless, macro, sa } =
     part.shorthand()
@@ -71,4 +73,13 @@ export default (part) => {
   }
 
   return part
+}
+
+export const beltLoops = {
+  name: 'charlie.beltLoops',
+  after: waistband,
+  options: {
+    beltLoops: { count: 8, min: 6, max: 12, menu: 'advanced' },
+  },
+  draft: draftCharlieBeltLoops,
 }

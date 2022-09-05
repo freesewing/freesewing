@@ -1,4 +1,6 @@
-export default (part) => {
+import { backPocketFacing } from './back-pocket-facing.mjs'
+
+function draftCharlieBackPocketWelt (part) {
   // Shorthand
   let { points, Point, paths, Path, complete, paperless, macro, snippets } = part.shorthand()
 
@@ -59,4 +61,10 @@ export default (part) => {
   }
 
   return part
+}
+
+export const backPocketWelt = {
+  name: 'charlie.backPocketWelt',
+  from: backPocketFacing,
+  draft: draftCharlieBackPocketWelt,
 }

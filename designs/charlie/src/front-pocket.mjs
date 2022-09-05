@@ -1,4 +1,6 @@
-export default (part) => {
+import { front } from './front.mjs'
+
+function draftCharlieFrontPocket (part) {
   // Shorthand
   let { points, paths, Path, complete, paperless, macro, snippets, Snippet, sa } = part.shorthand()
 
@@ -69,4 +71,10 @@ export default (part) => {
   }
 
   return part
+}
+
+export const frontPocket = {
+  name: 'charlie.frontPocket',
+  from: front,
+  draft: draftCharlieFrontPocket,
 }
