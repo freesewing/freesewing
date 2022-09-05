@@ -1,52 +1,52 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import buttonsPlugin from '@freesewing/plugin-buttons'
-import config from '../config/'
-// Notation examples
-import draftFabricLines from './fabriclines'
-import draftSaLines from './salines'
-import draftOtherLines from './otherlines'
-import draftSa from './sa'
-import draftNotches from './notches'
-import draftButtons from './buttons'
-import draftSnaps from './snaps'
-import draftLogo from './logo'
-import draftCutonfold from './cutonfold'
-import draftGrainline from './grainline'
-import draftDimension from './dimension'
-import draftTitle from './title'
-import draftScalebox from './scalebox'
-import draftLineWidths from './linewidths'
-import draftLineStrokes from './linestrokes'
-import draftSizes from './sizes'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { fabricLines, saLines, otherLines, lineWidths, lineStrokes } from './lines.mjs'
+import { notches } from './notches.mjs'
+import { buttons } from './buttons.mjs'
+import { snaps } from './snaps.mjs'
+import { logo } from './logo.mjs'
+import { cutonfold } from './cutonfold.mjs'
+import { grainline } from './grainline.mjs'
+import { title } from './title.mjs'
+import { scalebox } from './scalebox.mjs'
+import { textSize } from './textsize.mjs'
 
-// Create design
-const Legend = new freesewing.Design(config, [plugins, buttonsPlugin])
-
-// Attach draft methods to prototype
-const methods = {
-  draftFabricLines,
-  draftSaLines,
-  draftOtherLines,
-  draftSa,
-  draftLogo,
-  draftButtons,
-  draftSnaps,
-  draftNotches,
-  draftCutonfold,
-  draftGrainline,
-  draftDimension,
-  draftTitle,
-  draftScalebox,
-  draftLineWidths,
-  draftLineStrokes,
-  draftSizes,
-}
-
-for (const m of Object.keys(methods)) Legend.prototype[m] = methods[m]
+// Setup our new design
+const Legend = new Design({
+  data,
+  parts: [
+    fabricLines,
+    saLines,
+    otherLines,
+    lineWidths,
+    lineStrokes,
+    notches,
+    buttons,
+    snaps,
+    logo,
+    cutonfold,
+    grainline,
+    title,
+    scalebox,
+    textSize,
+  ],
+})
 
 // Named exports
-export { config, Legend }
-
-// Default export
-export default Legend
+export {
+  fabricLines,
+  saLines,
+  otherLines,
+  lineWidths,
+  lineStrokes,
+  notches,
+  buttons,
+  snaps,
+  logo,
+  cutonfold,
+  grainline,
+  title,
+  scalebox,
+  textSize,
+  Legend,
+}

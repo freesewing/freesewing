@@ -1,6 +1,7 @@
-import { box } from './shared'
+import { box } from './shared.mjs'
+import { pluginBundle } from '@freesewing/plugin-bundle'
 
-export default (part) => {
+function legendButtons(part) {
   const { points, Point, snippets, Snippet } = part.shorthand()
 
   points.a = new Point(30, 10)
@@ -12,4 +13,10 @@ export default (part) => {
   snippets.b = new Snippet('buttonhole', points.b).attr('data-rotate', 90)
 
   return box(part, 120, 30)
+}
+
+export const buttons = {
+  name: 'legend.buttons',
+  plugins: pluginBundle,
+  draft: legendButtons,
 }

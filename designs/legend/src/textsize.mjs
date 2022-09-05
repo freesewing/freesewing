@@ -1,6 +1,7 @@
-import { box } from './shared'
+import { box } from './shared.mjs'
+import { pluginBundle } from '@freesewing/plugin-bundle'
 
-export default (part) => {
+function legendTextSize(part) {
   const { points, Point, paths, Path } = part.shorthand()
 
   points.xxxs1 = new Point(0, 10)
@@ -103,4 +104,10 @@ export default (part) => {
     .attr('data-text-class', 'center text-xs')
 
   return box(part, 120, 20)
+}
+
+export const textSize = {
+  name: 'legend.textSize',
+  plugins: pluginBundle,
+  draft: legendTextSize,
 }

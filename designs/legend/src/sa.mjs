@@ -1,6 +1,7 @@
-import { box } from './shared'
+import { box } from './shared.mjs'
+import { pluginBundle } from '@freesewing/plugin-bundle'
 
-export default (part) => {
+function legendSa(part) {
   const { points, Point, paths, Path } = part.shorthand()
 
   points.a = new Point(10, 40)
@@ -18,4 +19,10 @@ export default (part) => {
   paths.sa = paths.a.offset(-10).attr('class', 'fabric sa').attr('data-text', 'seamAllowance')
 
   return box(part, 120, 60)
+}
+
+export const sa = {
+  name: 'legend.sa',
+  plugins: pluginBundle,
+  draft: legendSa,
 }
