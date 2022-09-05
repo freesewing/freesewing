@@ -44,7 +44,6 @@ export default {
     cutout: 'pantsproto',
     mini: 'pantsproto',
     pants: 'pantsproto',
-    cutout: 'pantsproto',
   },
   inject: {
     pants: 'pantsproto',

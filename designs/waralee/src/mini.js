@@ -5,16 +5,11 @@
 export default function (part) {
   let {
     options,
-    measurements,
-    Point,
     Path,
     points,
     paths,
-    Snippet,
-    snippets,
     complete,
     sa,
-    paperless,
     macro,
     store,
   } = part.shorthand()
