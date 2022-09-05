@@ -1,6 +1,8 @@
-export default function (part) {
+import { pocket } from './pocket.mjs'
+
+function hugoPocketFacing(part) {
   // Remove clutter
-  let facing = part.paths.facing
+  const facing = part.paths.facing
   part.paths = {}
 
   let { sa, points, Path, paths, complete, paperless, macro, store } = part.shorthand()
@@ -40,4 +42,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const pocketFacing = {
+  name: 'hugo.pocketFacing',
+  from: pocket,
+  draft: hugoPocketFacing,
 }

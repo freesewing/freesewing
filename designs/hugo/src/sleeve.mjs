@@ -1,5 +1,10 @@
-export default function (part) {
-  let {
+import { sleeve as brianSleeve } from '@freesewing/brian'
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+import { cuffEase, sleeveLengthBonus, ribbingHeight } from './options.mjs'
+
+function hugoSleeve(part) {
+  const {
     utils,
     store,
     sa,
@@ -214,4 +219,12 @@ export default function (part) {
     })
   }
   return part
+}
+
+export const sleeve = {
+  name: 'hugo.sleeve',
+  from: brianSleeve,
+  after: [front, back],
+  options: { cuffEase, sleeveLengthBonus, ribbingHeight },
+  draft: hugoSleeve,
 }

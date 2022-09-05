@@ -1,10 +1,25 @@
-export default function (part) {
+import { front as brianFront } from '@freesewing/brian'
+import {
+  collarEase,
+  armholeDepthFactor,
+  shoulderEase,
+  shoulderSlopeReduction,
+  frontArmholeDeeper,
+  s3Collar,
+  s3Armhole,
+  chestEase,
+  hipsEase,
+  lengthBonus,
+  ribbingHeight,
+} from './options.mjs'
+
+function hugoFront(part) {
   // Remove clutter
-  let seam = part.paths.seam
+  const seam = part.paths.seam
   part.paths = {}
   part.paths.seam = seam
 
-  let {
+  const {
     utils,
     store,
     sa,
@@ -174,4 +189,24 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'hugo.front',
+  from: brianFront,
+  measurements: ['hips', 'waistToHips'],
+  options: {
+    collarEase,
+    armholeDepthFactor,
+    shoulderEase,
+    shoulderSlopeReduction,
+    frontArmholeDeeper,
+    s3Collar,
+    s3Armhole,
+    chestEase,
+    hipsEase,
+    lengthBonus,
+    ribbingHeight,
+  },
+  draft: hugoFront,
 }

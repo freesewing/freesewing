@@ -1,6 +1,19 @@
-export default function (part) {
-  let { measurements, options, sa, Point, points, Path, paths, complete, paperless, macro, units } =
-    part.shorthand()
+import { chestEase, ribbingStretch, ribbingHeight } from './options.mjs'
+
+function hugoWaistband(part) {
+  const {
+    measurements,
+    options,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    complete,
+    paperless,
+    macro,
+    units,
+  } = part.shorthand()
 
   let width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
   let length = complete
@@ -74,4 +87,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const waistband = {
+  name: 'hugo.waistband',
+  measurements: ['waistToHips'],
+  options: { chestEase, ribbingStretch, ribbingHeight },
+  draft: hugoWaistband,
 }

@@ -1,9 +1,11 @@
-export default function (part) {
-  let { store, sa, Point, points, Path, paths, complete, paperless, macro, units } =
+import { hoodSide } from './hoodside.mjs'
+
+function hugoHoodCenter(part) {
+  const { store, sa, Point, points, Path, paths, complete, paperless, macro, units } =
     part.shorthand()
 
-  let width = store.get('hoodCenterWidth')
-  let length = complete ? width * 2.5 : store.get('hoodCenterLength')
+  const width = store.get('hoodCenterWidth')
+  const length = complete ? width * 2.5 : store.get('hoodCenterLength')
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, width)
   points.topMidLeft = new Point(width, 0)
@@ -69,4 +71,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const hoodCenter = {
+  name: 'hugo.hoodCenter',
+  after: hoodSide,
+  draft: hugoHoodCenter,
 }

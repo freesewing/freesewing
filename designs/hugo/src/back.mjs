@@ -1,10 +1,13 @@
-export default function (part) {
+import { back as brianBack } from '@freesewing/brian'
+import { front } from './front.mjs'
+
+function hugoBack(part) {
   // Remove clutter
   let seam = part.paths.seam
   part.paths = {}
   part.paths.seam = seam
 
-  let {
+  const {
     store,
     measurements,
     options,
@@ -111,4 +114,12 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'hugo.back',
+  from: brianBack,
+  measurements: ['hips'],
+  after: front,
+  draft: hugoBack,
 }

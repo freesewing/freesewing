@@ -1,4 +1,6 @@
-export default function (part) {
+import { front } from './front.mjs'
+
+function hugoPocket(part) {
   // Remove clutter
   const pocket = part.paths.pocket
   part.paths = {}
@@ -83,4 +85,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const pocket = {
+  name: 'hugo.pocket',
+  from: front,
+  draft: hugoPocket,
 }

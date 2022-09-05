@@ -1,9 +1,11 @@
-export default function (part) {
-  let { measurements, options, sa, Point, points, Path, paths, complete, paperless, macro } =
+import { cuffEase, ribbingStretch } from './options.mjs'
+
+function hugoCuff(part) {
+  const { measurements, options, sa, Point, points, Path, paths, complete, paperless, macro } =
     part.shorthand()
 
-  let width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
-  let length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
+  const width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
+  const length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, width)
@@ -47,4 +49,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const cuff = {
+  name: 'hugo.cuff',
+  measurements: ['waistToHips'],
+  options: { cuffEase, ribbingStretch },
+  draft: hugoCuff,
 }

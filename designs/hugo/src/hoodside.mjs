@@ -1,5 +1,8 @@
-export default function (part) {
-  let {
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+
+function hugoHoodSide(part) {
+  const {
     store,
     sa,
     Point,
@@ -146,4 +149,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const hoodSide = {
+  name: 'hugo.hoodSide',
+  measurements: ['head'],
+  after: [front, back],
+  draft: hugoHoodSide,
 }

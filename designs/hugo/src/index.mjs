@@ -1,3 +1,28 @@
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { back } from './back.mjs'
+import { front } from './front.mjs'
+import { sleeve } from './sleeve.mjs'
+import { pocket } from './pocket.mjs'
+import { pocketFacing } from './pocketfacing.mjs'
+import { hoodSide } from './hoodside.mjs'
+import { hoodCenter } from './hoodcenter.mjs'
+import { waistband } from './waistband.mjs'
+import { cuff } from './cuff.mjs'
+
+// Setup our new design
+const Hugo = new Design({
+  data,
+  parts: [back, front, sleeve, pocket, pocketFacing, hoodSide, hoodCenter, waistband, cuff],
+})
+
+// Named exports
+export { back, front, sleeve, pocket, pocketFacing, hoodSide, hoodCenter, waistband, cuff, Hugo }
+/*
+
+
+
+
 import freesewing from '@freesewing/core'
 import Brian from '@freesewing/brian'
 import plugins from '@freesewing/plugin-bundle'
@@ -14,10 +39,6 @@ import draftHoodCenter from './hoodcenter'
 import draftWaistband from './waistband'
 import draftCuff from './cuff'
 
-/* Check to see whether we should load the bust plugin
- * Only of the `draftForHighBust` options is set
- * AND the highBust measurement is available
- */
 const condition = (settings = false) =>
   settings &&
   settings.options &&
@@ -60,3 +81,4 @@ export { config, Hugo }
 
 // Default export
 export default Hugo
+*/
