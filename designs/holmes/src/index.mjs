@@ -1,22 +1,16 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import gorePlugin from '@freesewing/plugin-gore'
-import config from '../config'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
 
-import draftGore from './gore'
-import draftVisor from './visor'
-import draftEar from './ear'
+// Parts
+import { gore } from './gore.mjs'
+import { visor } from './visor.mjs'
+import { ear } from './ear.mjs'
 
 // Create new design
-const Holmes = new freesewing.Design(config, [plugins, gorePlugin])
-
-// Attach the draft methods to the prototype
-Holmes.prototype.draftGore = draftGore
-Holmes.prototype.draftVisor = draftVisor
-Holmes.prototype.draftEar = draftEar
+const Holmes = new Design({
+  data,
+  parts: [ gore, visor, ear ],
+})
 
 // Named exports
-export { config, Holmes }
-
-// Default export
-export default Holmes
+export { gore, visor, ear, Holmes }
