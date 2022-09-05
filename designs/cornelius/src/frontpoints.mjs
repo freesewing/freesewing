@@ -1,4 +1,4 @@
-export default function (part) {
+function draftCorneliusFrontpoints (part) {
   let { options, measurements, Point, Path, points, paths, store, raise } = part.shorthand()
 
   let halfInch = measurements.waistToKnee / 48
@@ -93,4 +93,32 @@ export default function (part) {
   )
 
   return part
+}
+
+export const frontpoints = {
+  name: 'cornelius.frontpoints',
+  hide: true,
+  measurements: [
+    'waist',
+    'hips',
+    'inseam',
+    'seat',
+    'waistToKnee',
+    'waistToHips',
+    'waistToFloor',
+    'knee',
+  ],
+  options: {
+    pctAtoO: 0.5,
+    pctAtoC: 0.25,
+    pctUtoA: 0.25,
+    pctJtoA: 0.25,
+    pctSeatAdjustment: 0.5,
+    ventLength: { pct: 70, min: 50, max: 110, menu: 'style' },
+    fullness: { pct: 0, min: 0, max: 55, menu: 'fit' },
+    waistbandBelowWaist: { pct: 5, min: 0, max: 15, menu: 'style' },
+    waistReduction: { pct: 1, min: -2, max: 10, menu: 'fit' },
+    bandBelowKnee: { pct: 25, min: 15, max: 50, menu: 'advanced' },
+  },
+  draft: draftCorneliusFrontpoints,
 }

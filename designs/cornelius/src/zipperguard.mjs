@@ -1,4 +1,6 @@
-export default function (part) {
+import { front } from './front.mjs'
+
+function draftCorneliusZipperguard (part) {
   let { Point, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
     part.shorthand()
 
@@ -67,4 +69,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const zipperguard = {
+  name: 'cornelius.zipperguard',
+  after: front,
+  draft: draftCorneliusZipperguard,
 }

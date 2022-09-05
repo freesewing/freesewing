@@ -1,3 +1,6 @@
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+
 function findR(part, height, arcLength) {
   let { raise } = part.shorthand()
 
@@ -22,7 +25,7 @@ function findR(part, height, arcLength) {
   return a * (180 / Math.PI)
 }
 
-export default function (part) {
+function draftCorneliusLegband (part) {
   let {
     options,
     Point,
@@ -186,4 +189,16 @@ export default function (part) {
   }
 
   return part
+}
+
+export const legband = {
+  name: 'cornelius.legband',
+  after: [ back, front ],
+  options: {
+    kneeToBelow: { pct: 94, min: 85, max: 110, menu: 'advanced' },
+    cuffWidth: { pct: 0, min: -50, max: 150, menu: 'style' },
+    cuffStyle: { dflt: 'elegant',
+      list: ['traditional', 'elegant', 'keystone'], menu: 'style' },
+  },
+  draft: draftCorneliusLegband,
 }

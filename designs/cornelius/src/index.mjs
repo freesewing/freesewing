@@ -1,34 +1,30 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftFrontpoints from './frontpoints'
-import draftFront from './front'
-import draftBack from './back'
-import draftLegband from './legband'
-import draftLegbandkeystone from './legbandkeystone'
-import draftWaistband from './waistband'
-import draftPocketfacing from './pocketfacing'
-import draftPocket from './pocket'
-import draftZipperguard from './zipperguard'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+// Parts
+import { frontpoints } from './frontpoints.mjs'
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+import { legband } from './legband.mjs'
+import { legbandKeystone } from './legbandkeystone.mjs'
+import { waistband } from './waistband.mjs'
+import { pocketFacing } from './pocketfacing.mjs'
+import { pocket } from './pocket.mjs'
+import { zipperguard } from './zipperguard.mjs'
 // import draftPlacket from './placket'
 
 // Create new design
-const Cornelius = new freesewing.Design(config, plugins)
-
-// Attach the draft methods to the prototype
-Cornelius.prototype.draftFrontpoints = draftFrontpoints
-Cornelius.prototype.draftFront = draftFront
-Cornelius.prototype.draftBack = draftBack
-Cornelius.prototype.draftLegband = draftLegband
-Cornelius.prototype.draftLegbandkeystone = draftLegbandkeystone
-Cornelius.prototype.draftWaistband = draftWaistband
-Cornelius.prototype.draftPocketfacing = draftPocketfacing
-Cornelius.prototype.draftPocket = draftPocket
-Cornelius.prototype.draftZipperguard = draftZipperguard
-// Cornelius.prototype.draftPlacket = draftPlacket
+const Cornelius = new Design({
+  data,
+  parts: [
+    front, back, legband, legbandKeystone, waistband, pocketFacing,
+    pocket, zipperguard,
+  ]
+})
 
 // Named exports
-export { config, Cornelius }
-
-// Default export
-export default Cornelius
+export {
+  front, back, legband, legbandKeystone, waistband, pocketFacing,
+  pocket, zipperguard,
+  frontpoints,
+  Cornelius,
+}

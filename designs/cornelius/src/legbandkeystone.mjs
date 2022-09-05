@@ -1,4 +1,7 @@
-export default function (part) {
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+
+function draftCorneliusLegbandKeystone (part) {
   let {
     options,
     measurements,
@@ -175,4 +178,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const legbandKeystone = {
+  name: 'cornelius.legbandKeystone',
+  after: [ back, front ],
+  draft: draftCorneliusLegbandKeystone,
 }
