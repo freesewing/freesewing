@@ -1,4 +1,6 @@
-export default function (part) {
+import { base } from './base.mjs'
+
+function draftCathrinPanels (part) {
   let { measurements, options, store, points, paths, Point, Path } = part.shorthand()
   let count = 1
   let bottom = new Path()
@@ -138,4 +140,11 @@ export default function (part) {
   paths.outline.render = false
 
   return part
+}
+
+export const panels = {
+  name: 'cathrin.panels',
+  from: base,
+  hide: true,
+  draft: draftCathrinPanels,
 }

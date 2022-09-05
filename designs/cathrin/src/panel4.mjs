@@ -1,4 +1,7 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { panels } from './panels.mjs'
+
+function draftCathrinPanel4 (part) {
   let { macro, sa, snippets, Snippet, points, paths, Point, complete, paperless } = part.shorthand()
 
   points.anchor = points.underbustGap3Right.clone()
@@ -72,4 +75,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const panel4 = {
+  name: 'cathrin.panel4',
+  from: panels,
+  plugins: [ pluginBundle ],
+  draft: draftCathrinPanel4,
 }

@@ -1,4 +1,4 @@
-export default function (part) {
+export function draftPanel1ab (part) {
   let { macro, utils, sa, points, paths, Point, Path, complete, paperless } = part.shorthand()
 
   points.anchor = points.topCF.clone()
