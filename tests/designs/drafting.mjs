@@ -1,5 +1,5 @@
 import designs from "../../config/software/designs.json" assert { type: 'json' }
-import { adults, dolls, giants } from '@freesewing/models'
+import { adult, doll, giant } from '@freesewing/models'
 import { getFamily } from './config.mjs'
 import chai from 'chai'
 
@@ -37,14 +37,14 @@ export const testPatternDrafting = (Pattern, log=false) => {
    */
   if (family !== 'utilities') {
     describe('Draft for humans:', () => {
-      for (const type of ['sheher', 'hehim']) {
+      for (const type of ['cisFemale', 'cisMale']) {
         describe(type, () => {
-          for (const size in adults[type]) {
+          for (const size in adult[type]) {
             it(`  - Drafting for size ${size}`, () => {
               expect(
                 doesItDraftAndRender(
                   new Pattern({
-                    measurements: adults[type][size]
+                    measurements: adult[type][size]
                   }), log
                 )
               ).to.equal(true)
@@ -54,11 +54,11 @@ export const testPatternDrafting = (Pattern, log=false) => {
       }
     })
 
-    // Do the same for fantastical models (dolls, giants)
-    const fams = { dolls, giants }
-    for (const family of ['dolls', 'giants']) {
+    // Do the same for fantastical models (doll, giant)
+    const fams = { doll, giant }
+    for (const family of ['doll', 'giant']) {
       describe(`Draft for ${family}:`, () => {
-        for (const type of ['sheher', 'hehim']) {
+        for (const type of ['cisFemale', 'cisMale']) {
           describe(type, () => {
             for (const size in fams[family][type]) {
               it(`  - Drafting at ${size}%`, () => {

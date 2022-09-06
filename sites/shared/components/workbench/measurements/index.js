@@ -1,6 +1,6 @@
 import React, {useMemo, useEffect, useState} from 'react'
 import MeasurementInput from '../inputs/measurement.js'
-import { adults, dolls, giants } from '@freesewing/models'
+import { adult, doll, giant } from '@freesewing/models'
 import WomenswearIcon from 'shared/components/icons/womenswear.js'
 import MenswearIcon from 'shared/components/icons/menswear.js'
 import { useTranslation } from 'next-i18next'
@@ -9,11 +9,11 @@ import {settings} from '../menu/core-settings/index';
 import { Tab, Tabs } from 'shared/components/mdx/tabs.js'
 
 
-const groups = { adults, dolls, giants }
+const groups = { adult, doll, giant }
 
 const icons = {
-  hehim: <MenswearIcon />,
-  sheher: <WomenswearIcon />,
+  cisFemale: <WomenswearIcon />,
+  cisMale: <MenswearIcon />,
 }
 
 
@@ -57,7 +57,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
         </span> {t('measurements')}
       </h1>
       <h2>{t('cfp:preloadMeasurements')}</h2>
-      <Tabs tabs="People, Dolls, Giants">
+      <Tabs tabs="Adults, Dolls, Giants">
         {Object.keys(groups).map(group => (
           <Tab tabId={group}>
             {Object.keys(icons).map(type => (
@@ -71,7 +71,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
                         onClick={() => updateMeasurements(groups[group][type][m], false)}
                       >
                         {icons[type]}
-                        { group === 'adults'
+                        { group === 'adult'
                           ? `${t('size')} ${m}`
                           : `${m}%`
                         }

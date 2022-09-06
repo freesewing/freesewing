@@ -8,8 +8,8 @@
  */
 
 // This signifies the index in the array of a measurements' value
-export const SHEHER = 0
-export const HEHIM = 1
+export const CISFEMALE = 0
+export const CISMALE = 1
 
 const base = {
   ankle: [245, 235],

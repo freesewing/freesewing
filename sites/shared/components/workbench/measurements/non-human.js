@@ -2,12 +2,12 @@ import { dolls, giants } from '@freesewing/models'
 
 const nonHuman = {
   menswear: {
-    dolls: dolls.hehim,
-    giants: giants.hehim,
+    dolls: dolls.cisFemale,
+    giants: giants.cisMale,
   },
   womenswear: {
-    dolls: dolls.sheher,
-    giants: giants.sheher,
+    dolls: dolls.cisFemale,
+    giants: giants.cisMale,
   }
 }
 const round = val => Math.round(val*10)/10

@@ -7,7 +7,7 @@ const { measurements, sizes } = all
 describe('Measurements', () => {
   it("Measurements should be a named export and match the sizes", () => {
     for (const m of measurements) {
-      expect(typeof all.adultsheher28[m]).to.equal('number');
+      expect(typeof all.cisFemaleAdult28[m]).to.equal('number');
     }
   })
 })
