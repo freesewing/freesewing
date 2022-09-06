@@ -1,4 +1,7 @@
-export default function (part) {
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+
+function draftHueyHood (part) {
   let {
     store,
     macro,
@@ -101,4 +104,18 @@ export default function (part) {
   }
 
   return part
+}
+
+export const hood = {
+  name: 'huey.hood',
+  after: [ front, back ],
+  measurements: [ 'head' ],
+  options: {
+    hoodHeight: { pct: 59, min: 55, max: 65, menu: 'style' },
+    hoodCutback: { pct: 10, min: 5, max: 15, menu: 'style' },
+    hoodClosure: { pct: 13.5, min: 10, max: 15, menu: 'style' },
+    hoodDepth: { pct: 8.5, min: 5, max: 12, menu: 'style' },
+    hoodAngle: { deg: 5, min: 2, max: 8, menu: 'style' },
+  },
+  draft: draftHueyHood,
 }

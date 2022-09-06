@@ -1,4 +1,4 @@
-export const sharedDimensions = function (part, s) {
+export function sharedDimensions (part, s) {
   let { macro, Point, points, sa } = part.shorthand()
 
   if (s === 'front') {
@@ -80,7 +80,7 @@ export const sharedDimensions = function (part, s) {
   })
 }
 
-export const draftRibbing = function (part, length) {
+export function draftRibbing (part, length) {
   let {
     store,
     measurements,

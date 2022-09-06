@@ -1,6 +1,8 @@
-import { sharedDimensions } from './shared'
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { back as brianBack } from '@freesewing/brian'
+import { sharedDimensions } from './shared.mjs'
 
-export default function (part) {
+function draftHueyBack (part) {
   let { store, macro, Path, Point, points, paths, complete, paperless, sa, options, measurements } =
     part.shorthand()
 
@@ -71,4 +73,18 @@ export default function (part) {
   if (paperless) sharedDimensions(part, 'back')
 
   return part
+}
+
+export const back = {
+  name: 'huey.back',
+  from: brianBack,
+  hideDependencies: true,
+  measurements: [ 'hips' ],
+  options: {
+    ribbing: { bool: true, menu: 'style' },
+    ribbingHeight: { pct: 10, min: 5, max: 15, menu: 'style' },
+    hipsEase: { pct: 8, min: 4, max: 12, menu: 'fit' },
+  },
+  plugins: [ pluginBundle ],
+  draft: draftHueyBack,
 }
