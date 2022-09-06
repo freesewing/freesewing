@@ -1,4 +1,5 @@
 import { measurements, neckstimate, CISFEMALE, CISMALE } from './neckstimate.mjs'
+import { degreeMeasurements } from '../../../config/measurements.mjs'
 
 const getMeasurements = (size, index) => {
   const all = {}
@@ -11,8 +12,10 @@ const getMeasurements = (size, index) => {
 
 const multiplyMeasurements = (factor, index) => {
   const all = {}
+  const base = (index === 0) ? '340' : '380'
   for (const m of measurements) {
-    all[m] = factor * neckstimate(index === 0 ? '340' : '380', m, index)
+    if (degreeMeasurements.indexOf(m) !== -1) all[m] = neckstimate(base, m, index) // Don't multiply degrees
+    else all[m] = factor * neckstimate(base, m, index)
   }
 
   return all
