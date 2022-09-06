@@ -12,6 +12,8 @@ import { chestPocketWelt } from './chestpocketwelt.mjs'
 import { chestPocketBag } from './chestpocketbag.mjs'
 import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
+import { innerPocketBag } from './innerpocketbag.mjs'
+import { innerPocketWelt } from './innerpocketwelt.mjs'
 
 // Setup our new design
 const Jaeger = new Design({
@@ -29,6 +31,8 @@ const Jaeger = new Design({
     chestPocketBag,
     topSleeve,
     underSleeve,
+    innerPocketBag,
+    innerPocketWelt,
   ],
 })
 
@@ -46,5 +50,7 @@ export {
   chestPocketBag,
   topSleeve,
   underSleeve,
+  innerPocketBag,
+  innerPocketWelt,
   Jaeger,
 }

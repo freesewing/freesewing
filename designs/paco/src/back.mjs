@@ -314,7 +314,7 @@ function pacoBack(part) {
 export const back = {
   name: 'paco.back',
   from: titanBack,
-  hideDepedencies: true,
+  hideDependencies: true,
   options: {
     // Constants
     titanPaperless: false,

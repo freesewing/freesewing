@@ -1,3 +1,5 @@
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
 function florenceMask(part) {
   const {
     points,
@@ -140,5 +142,6 @@ export const mask = {
     height: { pct: 26, min: 23, max: 29, menu: 'fit' },
     curve: { pct: 12.5, min: 10, max: 15, menu: 'fit' },
   },
+  plugins: [ pluginBundle ],
   draft: florenceMask,
 }

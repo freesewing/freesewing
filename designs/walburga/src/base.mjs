@@ -190,6 +190,7 @@ export const neckoRatio = { pct: 100, min: 10, max: 190, menu: 'style' }
 // Part
 export const base = {
   name: 'walburga.base',
+  hide: true,
   measurements: [
     'head',
     'shoulderToShoulder',

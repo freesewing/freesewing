@@ -228,6 +228,7 @@ function wahidBack(part) {
 export const back = {
   name: 'wahid.back',
   from: brianBack,
+  hideDependencies: true,
   measurements: ['hips', 'waist'],
   options: {
     backInset,
