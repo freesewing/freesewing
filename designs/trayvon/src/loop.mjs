@@ -45,6 +45,7 @@ function trayvonFabricLoop(part) {
 
 export const fabricLoop = {
   name: 'trayvon.fabricLoop',
+  measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   plugins: [ pluginBundle ],
   draft: trayvonFabricLoop,
 }

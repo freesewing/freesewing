@@ -110,6 +110,7 @@ function trayvonFabricTip(part) {
 
 export const fabricTail = {
   name: 'trayvon.fabricTail',
+  measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
   plugins: [ pluginBundle ],
   draft: trayvonFabricTail,
@@ -117,6 +118,7 @@ export const fabricTail = {
 
 export const fabricTip = {
   name: 'trayvon.fabricTip',
+  measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
   plugins: [ pluginBundle ],
   draft: trayvonFabricTip,

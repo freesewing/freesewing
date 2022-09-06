@@ -116,6 +116,7 @@ function trayvonLiningTip(part) {
 
 export const liningTail = {
   name: 'trayvon.liningTail',
+  measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
   plugins: [ pluginBundle ],
   draft: trayvonLiningTail,
@@ -123,6 +124,7 @@ export const liningTail = {
 
 export const liningTip = {
   name: 'trayvon.liningTip',
+  measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
   plugins: [ pluginBundle ],
   draft: trayvonLiningTip,
