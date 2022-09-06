@@ -6546,9 +6546,9 @@ d3-selection@3, d3-selection@^3.0.0:
   integrity sha512-fmTRWbNMmsmWq6xJV8D19U/gw/bwrHfNXxrIN+HfZgnzqTHp9jOmKMhsTUjXOJnZOdZY9Q28y4yebKzqDKlxlQ==
 
 daisyui@^2.0.6:
-  version "2.24.2"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.24.2.tgz#1c59c26453fcdb73b0f3664e834e903e5852484c"
-  integrity sha512-m1Z1FkkZ6Rdc81ehOjqMX6zKrUd1YReBKuowQNTNR1H3l//rbH3Gdrsx8L9w2wsxB0x+2NJCP1kGA3bbeacghQ==
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-2.25.0.tgz#9a7931cf1d8776a43ab24a41262c82af433bb283"
+  integrity sha512-tv2sFHMOCEr+3A2JOFMaFjV6O/tkXYrytCSptXU8GRS7FDCR0pUmHA/o6K+3nydor7rQ06gMyVbCDHE9WdMW0Q==
   dependencies:
     color "^4.2"
     css-selector-tokenizer "^0.8.0"
