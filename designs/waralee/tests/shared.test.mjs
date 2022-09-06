@@ -4,7 +4,7 @@ import { Waralee } from './dist/index.mjs'
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
 import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
-import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
+//import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
 testPatternConfig(Waralee)
@@ -13,4 +13,4 @@ testPatternConfig(Waralee)
 testPatternDrafting(Waralee, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-testPatternSampling(Waralee, false)
+//testPatternSampling(Waralee, false)

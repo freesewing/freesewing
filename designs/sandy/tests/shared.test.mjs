@@ -4,7 +4,7 @@ import { Sandy } from './dist/index.mjs'
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
 import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
-import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
+//import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
 testPatternConfig(Sandy)
@@ -13,4 +13,4 @@ testPatternConfig(Sandy)
 testPatternDrafting(Sandy, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-testPatternSampling(Sandy, false)
+//testPatternSampling(Sandy, false)

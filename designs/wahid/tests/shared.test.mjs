@@ -4,7 +4,7 @@ import { Wahid } from './dist/index.mjs'
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
 import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
-import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
+//import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
 testPatternConfig(Wahid)
@@ -13,4 +13,4 @@ testPatternConfig(Wahid)
 testPatternDrafting(Wahid, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
-testPatternSampling(Wahid, false)
+//testPatternSampling(Wahid, false)
