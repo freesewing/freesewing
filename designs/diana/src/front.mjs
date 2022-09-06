@@ -1,4 +1,7 @@
-export default (part) => {
+import { front as frontBase } from '@freesewing/brian'
+import { back as backBase } from '@freesewing/brian'
+
+export function draftDianaFrontOrBack (part) {
   let {
     measurements,
     sa,
@@ -157,4 +160,194 @@ export default (part) => {
   }
 
   return part
+}
+
+export const front = {
+  name: 'diana.front',
+  from: frontBase,
+  hideDependencies: true,
+  measurements: [
+    'biceps',
+    'chest',
+    'hpsToWaistBack',
+    'hips',
+    'waist',
+    'waistToHips',
+    'neck',
+    'shoulderSlope',
+    'shoulderToShoulder',
+    'shoulderToWrist',
+    'wrist',
+  ],
+  optionalMeasurements: ['highBust'],
+  options: {
+    // Constants
+    collarFactor: 5,
+    brianFitSleeve: true,
+    brianFitCollar: true,
+    collarEase: 0,
+    backNeckCutout: 0.05,
+    shoulderSlopeReduction: 0,
+    s3Collar: 0,
+    s3Armhole: 0,
+
+    // Angles
+    drapeAngle: { deg: 20, min: 10, max: 30, menu: 'style' },
+
+    // Percentages
+    acrossBackFactor: { pct: 97, min: 93, max: 100, menu: 'advanced' },
+    cuffEase: { pct: 20, min: 0, max: 30, menu: 'fit' },
+    lengthBonus: { pct: 0, min: 0, max: 50, menu: 'fit' },
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'fit' },
+    shoulderSeamLength: { pct: 35, min: 0.1, max: 60, menu: 'style' },
+
+    armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
+
+    frontArmholeDeeper: { pct: 0, min: 0, max: 1.5, menu: 'advanced' },
+
+    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    waistEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
+    hipsEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
+    chestEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
+    bicepsEase: { pct: 0, min: -5, max: 50, menu: 'fit' },
+
+    sleevecapEase: { pct: 0, min: 0, max: 10,
+      menu: 'advanced.sleevecap' },
+    sleevecapTopFactorX: { pct: 50, min: 25, max: 75,
+      menu: 'advanced.sleevecap' },
+    sleevecapTopFactorY: { pct: 100, min: 35, max: 165,
+      menu: 'advanced.sleevecap' },
+    sleevecapBackFactorX: { pct: 60, min: 35, max: 65,
+      menu: 'advanced.sleevecap' },
+    sleevecapBackFactorY: { pct: 33, min: 30, max: 65,
+      menu: 'advanced.sleevecap' },
+    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65,
+      menu: 'advanced.sleevecap' },
+    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ1Offset: { pct: 3, min: 0, max: 7,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ4Offset: { pct: 1, min: 0, max: 7,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ1Spread1: { pct: 6, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100, menu: 'advanced' },
+
+    // draft for high bust
+    draftForHighBust: { bool: false, menu: 'fit' },
+  },
+  draft: draftDianaFrontOrBack,
+}
+
+export const back = {
+  name: 'diana.back',
+  from: backBase,
+  hideDependencies: true,
+  measurements: [
+    'biceps',
+    'chest',
+    'hpsToWaistBack',
+    'hips',
+    'waist',
+    'waistToHips',
+    'neck',
+    'shoulderSlope',
+    'shoulderToShoulder',
+    'shoulderToWrist',
+    'wrist',
+  ],
+  optionalMeasurements: ['highBust'],
+  options: {
+    // Constants
+    collarFactor: 5,
+    brianFitSleeve: true,
+    brianFitCollar: true,
+    collarEase: 0,
+    backNeckCutout: 0.05,
+    shoulderSlopeReduction: 0,
+    s3Collar: 0,
+    s3Armhole: 0,
+
+    // Angles
+    drapeAngle: { deg: 20, min: 10, max: 30, menu: 'style' },
+
+    // Percentages
+    acrossBackFactor: { pct: 97, min: 93, max: 100, menu: 'advanced' },
+    cuffEase: { pct: 20, min: 0, max: 30, menu: 'fit' },
+    lengthBonus: { pct: 0, min: 0, max: 50, menu: 'fit' },
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'fit' },
+    shoulderSeamLength: { pct: 35, min: 0.1, max: 60, menu: 'style' },
+
+    armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
+
+    frontArmholeDeeper: { pct: 0, min: 0, max: 1.5, menu: 'advanced' },
+
+    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    waistEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
+    hipsEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
+    chestEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
+    bicepsEase: { pct: 0, min: -5, max: 50, menu: 'fit' },
+
+    sleevecapEase: { pct: 0, min: 0, max: 10,
+      menu: 'advanced.sleevecap' },
+    sleevecapTopFactorX: { pct: 50, min: 25, max: 75,
+      menu: 'advanced.sleevecap' },
+    sleevecapTopFactorY: { pct: 100, min: 35, max: 165,
+      menu: 'advanced.sleevecap' },
+    sleevecapBackFactorX: { pct: 60, min: 35, max: 65,
+      menu: 'advanced.sleevecap' },
+    sleevecapBackFactorY: { pct: 33, min: 30, max: 65,
+      menu: 'advanced.sleevecap' },
+    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65,
+      menu: 'advanced.sleevecap' },
+    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ1Offset: { pct: 3, min: 0, max: 7,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ4Offset: { pct: 1, min: 0, max: 7,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ1Spread1: { pct: 6, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ1Spread2: { pct: 15, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ2Spread1: { pct: 15, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ2Spread2: { pct: 10, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ3Spread1: { pct: 10, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20,
+      menu: 'advanced.sleevecap' },
+    sleeveWidthGuarantee: { pct: 90, min: 25, max: 100, menu: 'advanced' },
+
+    // draft for high bust
+    draftForHighBust: { bool: false, menu: 'fit' },
+  },
+  draft: draftDianaFrontOrBack,
 }
