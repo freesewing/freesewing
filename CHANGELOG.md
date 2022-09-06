@@ -649,12 +649,6 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
-### unice
-
-#### Added
-
- - Unice is an underwear pattern
-
 ### ursula
 
 #### Changed
