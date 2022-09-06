@@ -29,7 +29,6 @@ export default {
   dependencies: {
     back: 'front',
     gusset: 'back',
-    elastic: 'gusset',
     front2: 'elastic',
     back2: 'elastic',
     gusset2: 'elastic',
