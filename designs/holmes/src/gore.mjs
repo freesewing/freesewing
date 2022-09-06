@@ -1,4 +1,7 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { pluginGore } from '@freesewing/plugin-gore'
+
+function draftHolmesGore (part) {
   let {
     Point,
     points,
@@ -80,4 +83,22 @@ export default function (part) {
     }
   }
   return part
+}
+
+export const gore = {
+  name: 'holmes.gore',
+  measurements: [ 'head' ],
+  options: {
+    headEase: { pct: 3, min: 0, max: 9,
+      snap: {
+        metric: [6, 13, 19, 25, 32, 38, 44, 50],
+        imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1, 44.45, 50.8],
+      },
+      toAbs: (pct, { measurements }) => measurements.head * pct,
+      menu: 'fit' },
+    lengthRatio: { pct: 55, min: 40, max: 60, menu: 'style' },
+    gores: { count: 6, min: 4, max: 20, menu: 'style' },
+  },
+  plugins: [ pluginBundle, pluginGore ],
+  draft: draftHolmesGore,
 }

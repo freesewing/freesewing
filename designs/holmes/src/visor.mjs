@@ -1,4 +1,7 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { pctBasedOn } from '@freesewing/core'
+
+function draftHolmesVisor (part) {
   let {
     Point,
     points,
@@ -96,4 +99,24 @@ paths.seam = paths.saOuter.join(paths.saInner).close()
     }
   }
   return part
+}
+
+export const visor = {
+  name: 'holmes.visor',
+  measurements: [ 'head' ],
+  options: {
+    headEase: { pct: 3, min: 0, max: 9,
+      snap: {
+        metric: [6, 13, 19, 25, 32, 38, 44, 50],
+        imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1, 44.45, 50.8],
+      },
+      toAbs: (pct, { measurements }) => measurements.head * pct,
+      menu: 'fit' },
+    visorAngle: { deg: 45, min: 10, max: 90, menu: 'style' },
+    visorWidth: { pct: 5, min: 1, max: 17, snap: 5, ...pctBasedOn('head'),
+      menu: 'style' },
+    visorLength: { pct: 100, min: 80, max: 150, menu: 'advanced' },
+  },
+  plugins: [ pluginBundle ],
+  draft: draftHolmesVisor,
 }
