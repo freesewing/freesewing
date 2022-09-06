@@ -1,4 +1,6 @@
-export default function (part) {
+import { frontpoints } from './frontpoints.mjs'
+
+function draftCorneliusPocket (part) {
   let { Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
     part.shorthand()
 
@@ -143,4 +145,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const pocket = {
+  name: 'cornelius.pocket',
+  from: frontpoints,
+  draft: draftCorneliusPocket,
 }

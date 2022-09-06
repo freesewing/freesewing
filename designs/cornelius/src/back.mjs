@@ -1,3 +1,6 @@
+import { frontpoints } from './frontpoints.mjs'
+import { front } from './front.mjs'
+
 function rotateDistanceForP3(part, point, distance, center) {
   let { options, Path, points, paths, store, raise } = part.shorthand()
 
@@ -172,7 +175,7 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
   }
 }
 
-export default function (part) {
+function draftCorneliusBack (part) {
   let { options, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
     part.shorthand()
 
@@ -340,4 +343,11 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'cornelius.back',
+  from: frontpoints,
+  after: front,
+  draft: draftCorneliusBack,
 }

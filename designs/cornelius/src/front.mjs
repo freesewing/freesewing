@@ -1,4 +1,7 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { frontpoints } from './frontpoints.mjs'
+
+function draftCorneliusFront (part) {
   let { options, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
     part.shorthand()
 
@@ -228,4 +231,21 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'cornelius.front',
+  from: frontpoints,
+  options: {
+    pctZtoR: 0.35,
+    pctRtoZin: 0.75,
+    pctRtoZup: 0.25,
+    pctRtoKin: 0.75,
+    pctRtoKdown: 0.25,
+    pctKtoRout: 0.15,
+    pctKtoRup: 0.25,
+    pctKtoH: 0.7,
+  },
+  plugins: [ pluginBundle ],
+  draft: draftCorneliusFront,
 }

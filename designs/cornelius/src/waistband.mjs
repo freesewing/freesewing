@@ -1,4 +1,7 @@
-export default function (part) {
+import { front } from './front.mjs'
+import { back } from './back.mjs'
+
+function draftCorneliusWaistband (part) {
   let { Point, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
     part.shorthand()
 
@@ -70,4 +73,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const waistband = {
+  name: 'cornelius.waistband',
+  after: [ back, front ],
+  draft: draftCorneliusWaistband,
 }
