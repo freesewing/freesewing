@@ -10,7 +10,7 @@ import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 testPatternConfig(Jaeger)
 
 // Test drafting - Change the second parameter to `true` to log errors
-testPatternDrafting(Jaeger, 1)
+testPatternDrafting(Jaeger, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
 testPatternSampling(Jaeger, false)

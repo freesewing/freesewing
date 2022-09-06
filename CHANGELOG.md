@@ -25,6 +25,21 @@
 
  - Workaround for not finding a suitable legband radius
 
+### waralee
+
+#### Added
+
+ - Added *mini* version of main pants part
+ - Added new pocket options
+ - Added seperate waistband options
+ - Added bow tie placement option
+
+#### Fixed
+
+ - Fixed crotch depth issue
+ - Fixed pocket size issue
+ - Fixed waist shaping issue
+
 ### plugin-banner
 
 #### Removed
