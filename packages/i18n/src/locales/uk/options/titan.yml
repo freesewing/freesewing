@@ -10,22 +10,22 @@ lengthBonus:
   description: Керує довжиною штанів
 crotchDrop:
   title: Посадка
-  description: Lowers the crotch for a more relaxed fit
+  description: Це налаштування спускає посадку для більшої свободи облягання в області паху
 fitKnee:
-  title: Fit the knee
-  description: Fits the legs from based on the knee circumference, rather than seat circumference
+  title: Облягання коліна
+  description: Ногавиця будується на основі виміру "обхват коліна", аніж "обхват стегон"
 legBalance:
-  title: Leg balance
-  description: Controls the ratio between front and back panel of the leg
+  title: Співвідношення ногавиць
+  description: Керує співвідношенням між переднім та заднім полотнищами ногавиці
 crossSeamCurveStart:
-  title: Start of the cross seam curve
-  description: Controls how far into the cross seam we start to curve
+  title: Початок кривої посадки
+  description: Керує відстанню, після якої починається вигин посадки/повного пахового шва
 crossSeamCurveBend:
-  title: Cross seam bend
-  description: Controls the curvature of the cross seam
+  title: Вигин посадки
+  description: Керує самим вигином посадки/повного пахового шва
 crossSeamCurveAngle:
-  title: Cross seam angle
-  description: Controls the angle of the cross seam
+  title: Кут посадки
+  description: Керує кутом нахилу посадки/повного пахового шва
 crotchSeamCurveStart:
   title: Start of the crotch seam curve
   description: Controls how far into the crotch seam we start to curve
