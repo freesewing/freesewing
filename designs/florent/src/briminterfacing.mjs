@@ -1,4 +1,6 @@
-export default function (part) {
+import { brimBottom } from './brimbottom.mjs'
+
+function draftFlorentBrimInterfacing (part) {
   let { paperless, sa, complete, points, macro, paths, Path } = part.shorthand()
 
   paths.hint = paths.seam.clone().attr('class', 'dashed stroke-sm')
@@ -69,4 +71,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const brimInterfacing = {
+  name: 'florent.brimInterfacing',
+  from: brimBottom,
+  draft: draftFlorentBrimInterfacing,
 }

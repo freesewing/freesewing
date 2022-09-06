@@ -1,4 +1,6 @@
-export default function (part) {
+import { top } from './top.mjs'
+
+function draftFlorentSide (part) {
   let { store, paperless, sa, complete, points, macro, paths, Path, snippets, Snippet } =
     part.shorthand()
 
@@ -81,4 +83,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const side = {
+  name: 'florent.side',
+  from: top,
+  draft: draftFlorentSide,
 }

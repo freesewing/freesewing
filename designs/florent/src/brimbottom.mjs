@@ -1,4 +1,6 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function draftFlorentBrimBottom (part) {
   let { paperless, sa, store, complete, points, options, macro, Point, paths, Path, measurements } =
     part.shorthand()
 
@@ -79,4 +81,18 @@ export default function (part) {
   }
 
   return part
+}
+
+export const brimBottom = {
+  name: 'florent.brimBottom',
+  measurements: [ 'head' ],
+  options : {
+    // Constants
+    topSide: 0.8,
+    brim: 0,
+    // Percentages
+    headEase: { pct: 2, min: 0, max: 5, menu: 'fit' },
+  },
+  plugins: [ pluginBundle ],
+  draft: draftFlorentBrimBottom,
 }
