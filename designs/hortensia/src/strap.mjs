@@ -1,4 +1,6 @@
-export default function (part) {
+import { sidepanel } from './sidepanel.mjs'
+
+function draftHortensiaStrap (part) {
   let { store, options, Point, Path, points, paths, complete, sa, paperless, macro } =
     part.shorthand()
 
@@ -65,4 +67,14 @@ export default function (part) {
   }
 
   return part
+}
+
+export const strap = {
+  name: 'hortensia.strap',
+  after: sidepanel,
+  options: {
+    strapLength: { pct: 160, min: 75, max: 250, menu: 'style' },
+    handleWidth: { pct: 8.6, min: 4, max: 25, menu: 'style' },
+  },
+  draft: draftHortensiaStrap,
 }

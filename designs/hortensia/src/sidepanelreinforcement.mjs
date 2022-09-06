@@ -1,6 +1,7 @@
-import bottomsidepanel from './bottomsidepanel'
+import { sidepanel } from './sidepanel.mjs'
+import { bottomsidepanel } from './bottomsidepanel.mjs'
 
-export default function (part) {
+function draftHortensiaSidepanelreinforcement (part) {
   let { store, Point, Path, points, paths, complete, sa, paperless, macro } = part.shorthand()
 
   const w = store.get('width')
@@ -60,4 +61,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const sidepanelreinforcement = {
+  name: 'hortensia.sidepanelreinforcement',
+  after: sidepanel,
+  draft: draftHortensiaSidepanelreinforcement,
 }
