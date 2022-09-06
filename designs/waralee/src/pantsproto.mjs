@@ -1,3 +1,4 @@
+import { pluginBundle } from '@freesewing/plugin-bundle'
 import { CreateCrotchPoints } from './util.mjs'
 import * as options from './options.mjs'
 
@@ -161,5 +162,6 @@ export const pantsProto = {
   hide: true,
   measurements: ['crotchDepth', 'waistToHips', 'seat', 'inseam'],
   options,
+  plugins: [ pluginBundle ],
   draft: waraleePantsProto,
 }
