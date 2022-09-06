@@ -1,14 +1,5 @@
-import { backPocketDepth, backPocketSize, backPocketVerticalOffset } from './options.mjs'
+import { pantsProto } from './pantsproto.mjs'
 
-/*
- * We don't move this draft method under the part object
- * because doing so changes the indentation which causes
- * us to lose all history of changes to this method.
- *
- * So to maintain the history of contributions over the
- * years, keeps this method here, and resist the urge to
- * move it into the named export at the bottom of this file.
- */
 function waraleeBackPocket(part) {
   const {
     options,
@@ -22,25 +13,30 @@ function waraleeBackPocket(part) {
     complete,
     paperless,
     macro,
+    sa,
   } = part.shorthand()
 
-  const pocketDepth = options.backPocketDepth
+  if (false == options.backPocket) {
+    return part
+  }
+
+  let pocketDepth = options.backPocketDepth
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = points.topLeft.shift(
     270,
-    (pocketDepth + 30) * 2 +
-      options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips)
+    pocketDepth /*+ 30*/ * 2 +
+      options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
   )
 
   points.topRight = points.topLeft.shift(
     0,
-    options.backPocketSize * (measurements.crotchDepth - measurements.waistToHips) + 24
+    options.backPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/ /*+ 24*/
   )
   points.bottomRight = points.topRight.shift(
     270,
-    (pocketDepth + 30) * 2 +
-      options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips)
+    pocketDepth /*+ 30*/ * 2 +
+      options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
   )
 
   paths.seam = new Path()
@@ -67,6 +63,8 @@ function waraleeBackPocket(part) {
       .shift(-90, 25)
       .attr('data-text', 'Waralee')
       .attr('data-text-class', 'center')
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 
   // Paperless?
@@ -88,11 +86,6 @@ function waraleeBackPocket(part) {
 
 export const backPocket = {
   name: 'waralee.backPocket',
-  measurements: ['crotchDepth', 'waistToHips'],
-  options: {
-    backPocketDepth,
-    backPocketSize,
-    backPocketVerticalOffset,
-  },
+  after: pantsProto,
   draft: waraleeBackPocket,
 }

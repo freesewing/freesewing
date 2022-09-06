@@ -1,67 +1,47 @@
-import { CreateCrotchPoints } from './util.mjs'
-import { waistRaise } from './options.mjs'
+import { pantsProto } from './pantsproto.mjs'
 
-/*
- * We don't move this draft method under the part object
- * because doing so changes the indentation which causes
- * us to lose all history of changes to this method.
- *
- * So to maintain the history of contributions over the
- * years, keeps this method here, and resist the urge to
- * move it into the named export at the bottom of this file.
- */
 function waraleeCutout(part) {
-  const {
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+  const { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
+    part.shorthand()
 
-  const seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
-
-  points.mWaist = new Point(0, 0)
-  points.mHip = points.mWaist.shift(270, seatDepth)
-
-  CreateCrotchPoints(part)
-
-  points.mWaist1 = new Point(points.mWaist.x, points.fWaistSide.y)
-  points.mWaist2 = new Point(points.mWaist.x, points.bWaistSide.y)
+  let separateWaistband = options.separateWaistband
+  if ('waistband' == options.frontPocketStyle) {
+    separateWaistband = true
+  }
 
   paths.seam = new Path()
     .move(points.mWaist1)
-    .line(points.fWaistSide)
-    .curve(points.fWaistCrotchCP, points.fHipCrotchCP, points.mHip)
-    .curve(points.bHipCrotchCP, points.bWaistCrotchCP, points.bWaistSide)
     .line(points.mWaist2)
-    .line(points.mWaist1)
+    .line(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+    .join(paths.backTopCutOut)
+    .join(paths.backBottomCutOut)
+    .join(paths.frontBottomCutOut)
+    .join(paths.frontTopCutOut)
     .close()
     .attr('class', 'fabric')
 
+  paths.cutout.setRender(false)
+
   // Complete?
   if (complete) {
-    points.logo = points.mWaist.shift(270, 75)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.title = points.logo.shift(-90, 55)
+    points.title = points.mWaist.shift(270, 75)
     macro('title', {
       nr: 2,
       at: points.title,
-      title: 'cutout',
+      title: 'cutOut',
     })
+
+    points.logo = points.title.shift(270, 75)
+
+    snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
       paths.seamAlternate = new Path()
-        .move(points.bWaistSide)
-        .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
-        .curve(points.fHipCrotchCP, points.fWaistCrotchCP, points.fWaistSide)
+        .move(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+        .join(paths.backTopCutOut)
+        .join(paths.backBottomCutOut)
+        .join(paths.frontBottomCutOut)
+        .join(paths.frontTopCutOut)
 
       paths.sa = paths.seamAlternate.offset(sa).attr('class', 'fabric sa')
     }
@@ -72,12 +52,12 @@ function waraleeCutout(part) {
     macro('hd', {
       from: points.fWaistSide,
       to: points.mWaist,
-      y: points.mWaist.y,
+      y: (separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('hd', {
       from: points.mWaist,
       to: points.bWaistSide,
-      y: points.mWaist.y,
+      y: (separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('vd', {
       from: points.mWaist1,
@@ -90,12 +70,13 @@ function waraleeCutout(part) {
       x: points.mWaist.x + 15,
     })
   }
+  part.render = options.showMini
 
   return part
 }
 
 export const cutout = {
   name: 'waralee.cutout',
-  measurements: ['crotchDepth', 'waistToHips'],
+  from: pantsProto,
   draft: waraleeCutout,
 }
