@@ -224,6 +224,7 @@ function hugoSleeve(part) {
 export const sleeve = {
   name: 'hugo.sleeve',
   from: brianSleeve,
+  hideDependencies: true,
   after: [front, back],
   options: { cuffEase, sleeveLengthBonus, ribbingHeight },
   draft: hugoSleeve,
