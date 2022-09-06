@@ -79,9 +79,6 @@ export default function (part) {
     waistSeatDifferenceFront * options.frontWaistAdjustment
   )
 
-  console.log({ adjustmentBack: waistSeatDifferenceBack * options.backWaistAdjustment })
-  console.log({ adjustmentFront: waistSeatDifferenceFront * options.frontWaistAdjustment })
-
   points.mLeg = points.mHip.shift(270, measurements.inseam * (1 - options.legShortening))
   points.fLegSide = points.mLeg.shift(180, options.crotchFront * circumference4)
   points.bLegSide = points.mLeg.shift(0, options.crotchBack * circumference4)
@@ -308,8 +305,6 @@ export default function (part) {
   }
 
   part.render = false
-
-  console.log({ part: part })
 
   return part
 }

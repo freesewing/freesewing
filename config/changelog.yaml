@@ -1,3 +1,19 @@
+Unreleased:
+
+  Fixed:
+    waralee:
+      - Fixed crotch depth issue
+      - Fixed pocket size issue
+      - Fixed waist shaping issue
+
+  Added:
+    waralee:
+      - Added *mini* version of main pants part
+      - Added new pocket options
+      - Added seperate waistband options
+      - Added bow tie placement option
+
+
 2.22.1:
   date: 2022-08-23
 

@@ -1,6 +1,24 @@
 # Change log for: FreeSewing (global)
 
 
+## Unreleased
+
+### waralee
+
+#### Added
+
+ - Added *mini* version of main pants part
+ - Added new pocket options
+ - Added seperate waistband options
+ - Added bow tie placement option
+
+#### Fixed
+
+ - Fixed crotch depth issue
+ - Fixed pocket size issue
+ - Fixed waist shaping issue
+
+
 ## 2.22.1 (2022-08-23)
 
 
