@@ -1,3 +1,4 @@
+import { pluginBundle } from '@freesewing/plugin-bundle'
 import {
   calculateHelpers,
   draftTieShape,
@@ -110,11 +111,13 @@ function trayvonFabricTip(part) {
 export const fabricTail = {
   name: 'trayvon.fabricTail',
   options,
+  plugins: [ pluginBundle ],
   draft: trayvonFabricTail,
 }
 
 export const fabricTip = {
   name: 'trayvon.fabricTip',
   options,
+  plugins: [ pluginBundle ],
   draft: trayvonFabricTip,
 }

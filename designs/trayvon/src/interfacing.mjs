@@ -1,3 +1,4 @@
+import { pluginBundle } from '@freesewing/plugin-bundle'
 import { draftTieShape, tieShapeDimensions, calculateHelpers, options } from './shared.mjs'
 
 function trayvonInterfacingTail(part) {
@@ -66,10 +67,12 @@ function trayvonInterfacingTip(part) {
 export const interfacingTail = {
   name: 'trayvon.interfacingTail',
   options,
+  plugins: [ pluginBundle ],
   draft: trayvonInterfacingTail,
 }
 export const interfacingTip = {
   name: 'trayvon.interfacingTip',
   options,
+  plugins: [ pluginBundle ],
   draft: trayvonInterfacingTip,
 }

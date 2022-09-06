@@ -1,3 +1,5 @@
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
 function trayvonFabricLoop(part) {
   const { points, Point, paths, Path, complete, paperless, store, macro } = part.shorthand()
 
@@ -43,5 +45,6 @@ function trayvonFabricLoop(part) {
 
 export const fabricLoop = {
   name: 'trayvon.fabricLoop',
+  plugins: [ pluginBundle ],
   draft: trayvonFabricLoop,
 }
