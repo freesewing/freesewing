@@ -1,5 +1,7 @@
-export default function (part) {
-  let {
+import { front } from './front.mjs'
+
+function ursulaBack(part) {
+  const {
     options,
     Point,
     Path,
@@ -264,4 +266,17 @@ export default function (part) {
   }
 
   return part
+}
+
+export const back = {
+  name: 'ursula.back',
+  options: {
+    backToFrontLength: 1.15, // Maybe include this in advanced options?
+    backToFrontWidth: 1.1, // Maybe include this in advanced options?
+    gussetRatio: 0.7, // Relationship between front and back gusset widths
+    backDip: { pct: 2.5, min: -5, max: 15, menu: 'style' },
+    backExposure: { pct: 20, min: -30, max: 90, menu: 'style' },
+  },
+  after: front,
+  draft: ursulaBack,
 }

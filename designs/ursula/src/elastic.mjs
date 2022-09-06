@@ -1,15 +1,17 @@
-export default function (part) {
-  let { options, Point, points, store, utils, units, sa, paperless, macro } = part.shorthand()
+import { gusset } from './gusset.mjs'
+
+function ursulaElastic(part) {
+  const { options, Point, points, store, utils, units, sa, paperless, macro } = part.shorthand()
 
   // Stretch utility method
   store.set('elasticScale', utils.stretchToScale(options.elasticStretch))
 
   // Design pattern here
-  let legOpeningLength =
+  const legOpeningLength =
     store.get('frontLegOpeningLength') +
     store.get('backLegOpeningLength') +
     store.get('gussetSideLength')
-  let waistBandLength = store.get('frontWaistBandLength') + store.get('backWaistBandLength')
+  const waistBandLength = store.get('frontWaistBandLength') + store.get('backWaistBandLength')
 
   points.elasticInfo = new Point(0, 0)
     .attr('data-text', 'cutTwoPiecesOfElasticToFinishTheLegOpenings')
@@ -30,4 +32,13 @@ export default function (part) {
   }
 
   return part
+}
+
+export const elastic = {
+  name: 'ursula.elastic',
+  options: {
+    elasticStretch: { pct: 8, min: 5, max: 15, menu: 'fit' },
+  },
+  after: gusset,
+  draft: ursulaElastic,
 }

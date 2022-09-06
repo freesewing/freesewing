@@ -1,22 +1,15 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftFront from './front'
-import draftBack from './back'
-import draftGusset from './gusset'
-import draftElastic from './elastic'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+import { back } from './back.mjs'
+import { front } from './front.mjs'
+import { gusset } from './gusset.mjs'
+import { elastic } from './elastic.mjs'
 
-// Create new design
-const Ursula = new freesewing.Design(config, plugins)
-
-// Attach the draft methods to the prototype
-Ursula.prototype.draftFront = draftFront
-Ursula.prototype.draftBack = draftBack
-Ursula.prototype.draftGusset = draftGusset
-Ursula.prototype.draftElastic = draftElastic
+// Setup our new design
+const Ursula = new Design({
+  data,
+  parts: [back, front, gusset, elastic],
+})
 
 // Named exports
-export { config, Ursula }
-
-// Default export
-export default Ursula
+export { back, front, gusset, elastic, Ursula }

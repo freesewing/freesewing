@@ -1,6 +1,19 @@
-export default function (part) {
-  let { options, Point, Path, points, paths, measurements, store, complete, sa, paperless, macro } =
-    part.shorthand()
+import { back } from './back.mjs'
+
+function ursulaGusset(part) {
+  const {
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    measurements,
+    store,
+    complete,
+    sa,
+    paperless,
+    macro,
+  } = part.shorthand()
 
   // Create points
   points.frontGussetLeft = new Point(store.get('frontGussetLeft').x, 0)
@@ -76,4 +89,13 @@ export default function (part) {
   }
 
   return part
+}
+
+export const gusset = {
+  name: 'ursula.gusset',
+  options: {
+    gussetLength: { pct: 12.7, min: 10, max: 16, menu: 'fit' }, // Gusset length in relation to seat
+  },
+  after: back,
+  draft: ursulaGusset,
 }

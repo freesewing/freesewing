@@ -1,5 +1,5 @@
-export default function (part) {
-  let {
+function ursulaFront(part) {
+  const {
     options,
     Point,
     Path,
@@ -202,4 +202,18 @@ export default function (part) {
   }
 
   return part
+}
+
+export const front = {
+  name: 'ursula.front',
+  measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg'], // Potentially useful: 'hips', 'waistToHips'
+  options: {
+    gussetWidth: { pct: 7.2, min: 4, max: 12, menu: 'fit' }, // Gusset width in relation to seat
+    fabricStretch: { pct: 15, min: 5, max: 25, menu: 'fit' },
+    rise: { pct: 46, min: 30, max: 100, menu: 'style' },
+    legOpening: { pct: 54, min: 5, max: 85, menu: 'style' },
+    frontDip: { pct: 5.0, min: -5, max: 15, menu: 'style' },
+    taperToGusset: { pct: 70, min: 5, max: 100, menu: 'style' },
+  },
+  draft: ursulaFront,
 }
