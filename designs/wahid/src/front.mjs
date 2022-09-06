@@ -488,6 +488,7 @@ function wahidFront(part) {
 export const front = {
   name: 'wahid.front',
   from: brianFront,
+  hideDependencies: true,
   measurements: ['hips', 'waist'],
   options: {
     frontOverlap,
