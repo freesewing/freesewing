@@ -1,6 +1,8 @@
-import { sharedDimensions } from './shared'
+import { front as brianFront } from '@freesewing/brian'
+import { back } from './back.mjs'
+import { sharedDimensions } from './shared.mjs'
 
-export default function (part) {
+function draftHueyFront (part) {
   let { utils, store, Point, Path, points, paths, complete, paperless, sa, options, measurements } =
     part.shorthand()
 
@@ -84,4 +86,17 @@ export default function (part) {
   if (paperless) sharedDimensions(part, 'front')
 
   return part
+}
+
+export const front = {
+  name: 'huey.front',
+  from: brianFront,
+  after: back,
+  hideDependencies: true,
+  options: {
+    pocket: { bool: true, menu: 'style' },
+    pocketHeight: { pct: 30, min: 25, max: 35, menu: 'style' },
+    pocketWidth: { pct: 60, min: 50, max: 70, menu: 'style' },
+  },
+  draft: draftHueyFront,
 }

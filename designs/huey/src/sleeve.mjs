@@ -1,4 +1,7 @@
-export default function (part) {
+import { sleeve as brianSleeve } from '@freesewing/brian'
+import { back } from './back.mjs'
+
+function draftHueySleeve (part) {
   let { Point, Path, points, paths, store, options, complete, sa, paperless, macro } =
     part.shorthand()
 
@@ -75,4 +78,12 @@ export default function (part) {
   }
 
   return part
+}
+
+export const sleeve = {
+  name: 'huey.sleeve',
+  from: brianSleeve,
+  after: back,
+  hideDependencies: true,
+  draft: draftHueySleeve,
 }
