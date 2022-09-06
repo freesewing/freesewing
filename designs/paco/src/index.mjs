@@ -7,6 +7,7 @@ import { frontPocketBag } from './frontpocketbag.mjs'
 import { backPocketBag } from './backpocketbag.mjs'
 import { backPocketWelt } from './backpocketwelt.mjs'
 import { backPocketWeltInterfacing } from './backpocketweltinterfacing.mjs'
+import { waistband } from './waistband.mjs'
 
 // Setup our new design
 const Paco = new Design({
@@ -19,6 +20,7 @@ const Paco = new Design({
     backPocketBag,
     backPocketWelt,
     backPocketWeltInterfacing,
+    waistband,
   ],
 })
 
@@ -31,5 +33,6 @@ export {
   backPocketBag,
   backPocketWelt,
   backPocketWeltInterfacing,
+  waistband,
   Paco,
 }
