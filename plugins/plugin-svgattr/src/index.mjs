@@ -11,6 +11,8 @@ export const plugin = {
 }
 
 // More specifically named exports
-export const bannerPlugin = plugin
-export const pluginBanner = plugin
+export const svgAttrPlugin = plugin
+export const svgattrPlugin = plugin
+export const pluginSvgAttr = plugin
+export const pluginSvgattr = plugin
 
