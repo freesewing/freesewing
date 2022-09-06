@@ -21,7 +21,7 @@ const OptionGroup = props => {
         <Ul>
           {Object.entries(props.options).map(([option, type]) => typeof type === "string"
             ? <Option {...props} type={type} option={option} key={option} />
-            : <OptionGroup {...props} group={option} options={type} key={option}/>)
+            : <OptionGroup {...props} group={option} options={type} key={option} Option={Option}/>)
           }
         </Ul>
       </Details>
