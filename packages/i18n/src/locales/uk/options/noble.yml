@@ -53,9 +53,9 @@ frontShoulderWidth:
   description: Контролює, скільки ширини додається до плеча спереду
   title: Ширина плечей спереду
 highBustWidth:
-  description: Controls the widht of the high bust
+  description: Контролює ширину полички
   title: Ширина полички
 shoulderToShoulderEase:
-  description: Controls the amount of ease long the shoulder to shoulder measurement
-  title: Shoulder to shoulder ease
+  description: Контролює свободу облягання від плеча до плеча
+  title: Свобода облягання плечей
 
