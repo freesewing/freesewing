@@ -1,4 +1,6 @@
-export default function (part) {
+import { sidepanel } from './sidepanel.mjs'
+
+function draftHortensiaZipperpanel (part) {
   let { store, Point, Path, points, paths, complete, sa, paperless, macro } = part.shorthand()
 
   let z = store.get('zipperWidth')
@@ -47,4 +49,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const zipperpanel = {
+  name: 'hortensia.zipperpanel',
+  after: sidepanel,
+  draft: draftHortensiaZipperpanel,
 }

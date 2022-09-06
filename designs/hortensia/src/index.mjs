@@ -1,27 +1,25 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-// import theme from '@freesewing/plugin-theme'
-import config from '../config'
-import draftSidepanel from './sidepanel'
-import draftFrontpanel from './frontpanel'
-import draftBottompanel from './bottompanel'
-import draftZipperpanel from './zipperpanel'
-import draftSidepanelreinforcement from './sidepanelreinforcement'
-import draftStrap from './strap'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+// Parts
+import { sidepanel }  from './sidepanel.mjs'
+import { frontpanel } from './frontpanel.mjs'
+import { bottompanel } from './bottompanel.mjs'
+import { zipperpanel } from './zipperpanel.mjs'
+import { sidepanelreinforcement } from './sidepanelreinforcement.mjs'
+import { strap } from './strap.mjs'
 
 // Create new design
-const Hortensia = new freesewing.Design(config, plugins)
-
-// Attach the draft methods to the prototype
-Hortensia.prototype.draftSidepanel = draftSidepanel
-Hortensia.prototype.draftStrap = draftStrap
-Hortensia.prototype.draftBottompanel = draftBottompanel
-Hortensia.prototype.draftFrontpanel = draftFrontpanel
-Hortensia.prototype.draftZipperpanel = draftZipperpanel
-Hortensia.prototype.draftSidepanelreinforcement = draftSidepanelreinforcement
+const Hortensia = new Design({
+  data,
+  parts: [
+    sidepanel, frontpanel, bottompanel, zipperpanel,
+    sidepanelreinforcement, strap,
+  ],
+})
 
 // Named exports
-export { config, Hortensia }
-
-// Default export
-export default Hortensia
+export {
+  sidepanel, frontpanel, bottompanel, zipperpanel,
+  sidepanelreinforcement, strap,
+  Hortensia,
+}

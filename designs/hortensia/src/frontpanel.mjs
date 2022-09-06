@@ -1,4 +1,6 @@
-export default function (part) {
+import { sidepanel } from './sidepanel.mjs'
+
+function draftHortensiaFrontpanel (part) {
   let {
     store,
     options,
@@ -134,4 +136,17 @@ export default function (part) {
   }
 
   return part
+}
+
+export const frontpanel = {
+  name: 'hortensia.frontpanel',
+  after: sidepanel,
+  options: {
+    minHandleSpaceWidth: 80,
+    maxHandleSpaceWidth: 250,
+    pctHandleSpace: 50,
+    pctHandleVert: 42,
+    handleWidth: { pct: 8.6, min: 4, max: 25, menu: 'style' },
+  },
+  draft: draftHortensiaFrontpanel,
 }

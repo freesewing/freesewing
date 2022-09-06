@@ -1,4 +1,6 @@
-export default function (part) {
+import { sidepanel } from './sidepanel.mjs'
+
+function draftHortensiaBottompanel (part) {
   let {
     store,
     options,
@@ -75,4 +77,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const bottompanel = {
+  name: 'hortensia.bottompanel',
+  after: sidepanel,
+  draft: draftHortensiaBottompanel,
 }
