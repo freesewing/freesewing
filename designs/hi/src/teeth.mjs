@@ -1,5 +1,4 @@
-import { utils } from '@freesewing/core'
-const { Bezier } = utils
+import { Bezier } from '@freesewing/core'
 
 /*
  * This method generates Hi's teeth.

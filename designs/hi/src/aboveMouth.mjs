@@ -1,4 +1,7 @@
-export default function (part) {
+import { body } from './body.mjs'
+import { mouth } from './mouth.mjs'
+
+function draftHiAboveMouth (part) {
   const {
     store,
     sa,
@@ -168,4 +171,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const aboveMouth = {
+  name: 'hi.aboveMouth',
+  after: [ body, mouth ],
+  draft: draftHiAboveMouth,
 }

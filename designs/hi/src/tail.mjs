@@ -1,4 +1,6 @@
-export default function (part) {
+import { body } from './body.mjs'
+
+function draftHiTail (part) {
   const {
     store,
     sa,
@@ -187,4 +189,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const tail = {
+  name: 'hi.tail',
+  after: body,
+  draft: draftHiTail,
 }

@@ -1,4 +1,6 @@
-export default function (part) {
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function draftHiBody (part) {
   const {
     store,
     sa,
@@ -677,4 +679,15 @@ export default function (part) {
   }
 
   return part
+}
+
+export const body = {
+  name: 'hi.body',
+  options: {
+    size: { pct: 100, min: 5, max: 500, menu: 'style' },
+    nosePointiness: { pct: 0, min: -5,max: +10, menu: 'style' },
+    aggressive: { bool: false, menu: 'style' },
+  },
+  plugins: [ pluginBundle ],
+  draft: draftHiBody,
 }

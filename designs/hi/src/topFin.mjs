@@ -1,4 +1,6 @@
-export default function (part) {
+import { body } from './body.mjs'
+
+function draftHiTopFin (part) {
   const {
     store,
     sa,
@@ -151,4 +153,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const topFin = {
+  name: 'hi.topFin',
+  after: body,
+  draft: draftHiTopFin,
 }

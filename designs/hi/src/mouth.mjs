@@ -1,4 +1,7 @@
-export default function (part) {
+import { lowerTeeth } from './lowerTeeth.mjs'
+import { upperTeeth } from './upperTeeth.mjs'
+
+function draftHiMouth (part) {
   const {
     store,
     sa,
@@ -134,4 +137,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const mouth = {
+  name: 'hi.mouth',
+  after: [ lowerTeeth, upperTeeth ],
+  draft: draftHiMouth,
 }

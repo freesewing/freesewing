@@ -1,4 +1,8 @@
-export default function (part) {
+import { body } from './body.mjs'
+import { belly } from './belly.mjs'
+import { aboveMouth } from './aboveMouth.mjs'
+
+function draftHiBottomFin (part) {
   let {
     store,
     sa,
@@ -184,4 +188,10 @@ export default function (part) {
   }
 
   return part
+}
+
+export const bottomFin = {
+  name: 'hi.bottomFin',
+  after: [ body, belly, aboveMouth ],
+  draft: draftHiBottomFin,
 }
