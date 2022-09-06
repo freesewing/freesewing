@@ -39,6 +39,7 @@ let result
   .build({
     ...options,
     minify: false,
+    keepNames: true,
     sourcemap: false,
     outfile: 'tests/dist/index.mjs',
     format: 'esm',
