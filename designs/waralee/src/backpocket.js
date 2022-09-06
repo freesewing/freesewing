@@ -11,25 +11,30 @@ export default function (part) {
     complete,
     paperless,
     macro,
+    sa,
   } = part.shorthand()
+
+  if (false == options.backPocket) {
+    return part
+  }
 
   let pocketDepth = options.backPocketDepth
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = points.topLeft.shift(
     270,
-    (pocketDepth + 30) * 2 +
-      options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips)
+    pocketDepth /*+ 30*/ * 2 +
+      options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
   )
 
   points.topRight = points.topLeft.shift(
     0,
-    options.backPocketSize * (measurements.crotchDepth - measurements.waistToHips) + 24
+    options.backPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/ /*+ 24*/
   )
   points.bottomRight = points.topRight.shift(
     270,
-    (pocketDepth + 30) * 2 +
-      options.backPocketVerticalOffset * (measurements.crotchDepth - measurements.waistToHips)
+    pocketDepth /*+ 30*/ * 2 +
+      options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
   )
 
   paths.seam = new Path()
@@ -56,6 +61,8 @@ export default function (part) {
       .shift(-90, 25)
       .attr('data-text', 'Waralee')
       .attr('data-text-class', 'center')
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 
   // Paperless?

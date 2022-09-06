@@ -1,10 +1,6 @@
-import { CreateCrotchPoints } from './util'
-
 export default function (part) {
   let {
     options,
-    measurements,
-    Point,
     Path,
     points,
     paths,
@@ -16,42 +12,44 @@ export default function (part) {
     macro,
   } = part.shorthand()
 
-  let seatDepth = (measurements.crotchDepth - measurements.waistToHips) * (1 + options.waistRaise)
-
-  points.mWaist = new Point(0, 0)
-  points.mHip = points.mWaist.shift(270, seatDepth)
-
-  CreateCrotchPoints(part)
-
-  points.mWaist1 = new Point(points.mWaist.x, points.fWaistSide.y)
-  points.mWaist2 = new Point(points.mWaist.x, points.bWaistSide.y)
+  let separateWaistband = options.separateWaistband
+  if ('waistband' == options.frontPocketStyle) {
+    separateWaistband = true
+  }
 
   paths.seam = new Path()
     .move(points.mWaist1)
-    .line(points.fWaistSide)
-    .curve(points.fWaistCrotchCP, points.fHipCrotchCP, points.mHip)
-    .curve(points.bHipCrotchCP, points.bWaistCrotchCP, points.bWaistSide)
     .line(points.mWaist2)
-    .line(points.mWaist1)
+    .line(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+    .join(paths.backTopCutOut)
+    .join(paths.backBottomCutOut)
+    .join(paths.frontBottomCutOut)
+    .join(paths.frontTopCutOut)
     .close()
     .attr('class', 'fabric')
 
+  paths.cutout.setRender(false)
+
   // Complete?
   if (complete) {
-    points.logo = points.mWaist.shift(270, 75)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.title = points.logo.shift(-90, 55)
+    points.title = points.mWaist.shift(270, 75)
     macro('title', {
       nr: 2,
       at: points.title,
-      title: 'cutout',
+      title: 'cutOut',
     })
+
+    points.logo = points.title.shift(270, 75)
+
+    snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
       paths.seamAlternate = new Path()
-        .move(points.bWaistSide)
-        .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
-        .curve(points.fHipCrotchCP, points.fWaistCrotchCP, points.fWaistSide)
+        .move(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+        .join(paths.backTopCutOut)
+        .join(paths.backBottomCutOut)
+        .join(paths.frontBottomCutOut)
+        .join(paths.frontTopCutOut)
 
       paths.sa = paths.seamAlternate.offset(sa).attr('class', 'fabric sa')
     }
@@ -62,12 +60,12 @@ export default function (part) {
     macro('hd', {
       from: points.fWaistSide,
       to: points.mWaist,
-      y: points.mWaist.y,
+      y: (separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('hd', {
       from: points.mWaist,
       to: points.bWaistSide,
-      y: points.mWaist.y,
+      y: (separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('vd', {
       from: points.mWaist1,
@@ -80,6 +78,7 @@ export default function (part) {
       x: points.mWaist.x + 15,
     })
   }
+  part.render = options.showMini
 
   return part
 }
