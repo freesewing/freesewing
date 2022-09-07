@@ -1,11 +1,12 @@
 import chai from 'chai'
-import { Pattern, round } from '@freesewing/core'
+import { Design, round } from '@freesewing/core'
 import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Scalebox Plugin Tests', () => {
   it("Should run the default scalebox macro", () => {
+    const Pattern = new Design()
     const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
@@ -73,6 +74,7 @@ describe('Scalebox Plugin Tests', () => {
   });
 
   it("Should run the scalebox macro with rotation", () => {
+    const Pattern = new Design()
     const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
@@ -113,6 +115,7 @@ describe('Scalebox Plugin Tests', () => {
   });
 
   it("Should run the scalebox macro with default text", () => {
+    const Pattern = new Design({ data: { version: '1.2.3', name: 'test' }})
     const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
@@ -124,7 +127,7 @@ describe('Scalebox Plugin Tests', () => {
     expect(p.get("data-text")).to.equal("FreeSewing");
     expect(p.get("data-text-class")).to.equal("text-sm");
     p = pattern.parts.test.points.__scaleboxTitle.attributes;
-    expect(p.get("data-text")).to.equal(" vundefined");
+    expect(p.get("data-text")).to.equal("test v1.2.3");
     expect(p.get("data-text-class")).to.equal("text-lg");
     p = pattern.parts.test.points.__scaleboxText.attributes;
     expect(p.get("data-text-class")).to.equal("text-xs");
@@ -133,6 +136,7 @@ describe('Scalebox Plugin Tests', () => {
   });
 
   it("Should run the scalebox macro with custom text", () => {
+    const Pattern = new Design()
     const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part();
     pattern.parts.test.points.anchor = new pattern.Point(100, 200);
@@ -156,6 +160,7 @@ describe('Scalebox Plugin Tests', () => {
   })
 
   it("Should apply scale to the scalebox macro", () => {
+    const Pattern = new Design()
     const pattern = new Pattern().use(plugin)
     pattern.settings.scale = 0.5
     pattern.parts.test = new pattern.Part();
@@ -188,6 +193,7 @@ describe('Scalebox Plugin Tests', () => {
   });
 
   it("Should apply scale to the miniscale macro", () => {
+    const Pattern = new Design()
     const pattern = new Pattern().use(plugin)
     pattern.settings.scale = 0.5
     pattern.parts.test = new pattern.Part();

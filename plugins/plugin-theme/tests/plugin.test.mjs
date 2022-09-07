@@ -1,10 +1,11 @@
 import chai from 'chai'
-import { Pattern } from '@freesewing/core'
+import { Design } from '@freesewing/core'
 import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Theme Plugin Tests', () => {
+  const Pattern = new Design()
   const pattern = new Pattern().use(plugin)
   pattern.apply({ paperless: true })
   pattern.draft().render()

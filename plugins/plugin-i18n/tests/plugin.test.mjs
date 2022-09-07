@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Pattern } from '@freesewing/core'
+import { Design } from '@freesewing/core'
 import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect
@@ -14,6 +14,7 @@ const content = {
 
 describe('I18n Plugin Tests', () => {
   it('Should translate text on insert', () => {
+    const Pattern = new Design()
     const pattern = new Pattern().use(plugin, content)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.anchor = new pattern.Point(-12, -34).attr(

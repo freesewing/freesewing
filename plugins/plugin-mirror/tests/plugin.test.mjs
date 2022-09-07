@@ -1,10 +1,11 @@
 import chai from 'chai'
-import { Pattern } from '@freesewing/core'
+import { Design } from '@freesewing/core'
 import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Mirror Plugin Tests', () => {
+  const Pattern = new Design()
   const pattern = new Pattern().use(plugin)
   pattern.parts.test = new pattern.Part()
   pattern.parts.test.points.mirrorA = new pattern.Point(-100, -100)

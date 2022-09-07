@@ -100,10 +100,15 @@ export const plugin = {
       if (mins < 10) mins = `0${mins}`
       this.points[`_${prefix}_exportDate`] = so.at
         .shift(-90 - so.rotation, shift * so.scale)
-        .attr('data-text', now.toLocaleDateString(
-          this.context.settings.locale || 'en',
-          { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'}
-        ))
+        .attr(
+          'data-text',
+          now.toLocaleDateString(this.context.settings.locale || 'en', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+          })
+        )
         .attr('data-text', `@ ${hours}:${mins}`)
         .attr('data-text-class', 'text-sm')
         .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
@@ -114,4 +119,3 @@ export const plugin = {
 // More specifically named exports
 export const titlePlugin = plugin
 export const pluginTitle = plugin
-

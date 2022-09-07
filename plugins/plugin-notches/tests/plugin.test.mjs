@@ -1,9 +1,10 @@
 import chai from 'chai'
-import { Pattern } from '@freesewing/core'
+import { Design } from '@freesewing/core'
 import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect
 
+const Pattern = new Design()
 const pattern = new Pattern().use(plugin)
 pattern.draft().render()
 

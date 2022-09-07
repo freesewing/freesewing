@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Design, Pattern } from '@freesewing/core'
+import { Design } from '@freesewing/core'
 import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
@@ -13,6 +13,7 @@ const measurements = {
   crossSeamFront: 42
 }
 
+const Pattern = new Design()
 const pattern = new Pattern().use(plugin)
 pattern.apply({ measurements } ).draft()
 
