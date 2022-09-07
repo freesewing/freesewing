@@ -13,6 +13,8 @@ export const getFamily = design => {
   return false
 }
 
+// These are ok to use mm options
+const mmAllowed = ['rendertest']
 
 /*
  * This runs unit tests for the pattern configuration
@@ -75,18 +77,13 @@ export const testPatternConfig = (Pattern) => {
     })
     it(`  - 'code' should be set and be a string of reasonable length`, () => {
       const people = Array.isArray(meta.code)
-        ? meta.design
-        : [ meta.design ]
+        ? meta.code
+        : [ meta.code ]
       for (const person of people) {
         expect(typeof person).to.equal('string')
         expect(person.length > 2).to.be.true
         expect(person.length < 80).to.be.true
       }
-    })
-    it(`  - 'department' should be set and be a string of reasonable length`, () => {
-      expect(typeof meta.code).to.equal('string')
-      expect(meta.code.length > 2).to.be.true
-      expect(meta.code.length < 80).to.be.true
     })
     it(`  - 'dfficulty' should be set and be a [1-5] number`, () => {
       expect(typeof meta.difficulty).to.equal('number')
@@ -116,8 +113,8 @@ export const testPatternConfig = (Pattern) => {
     const option = config.options[name]
     const type = typeof option
     if (type === 'object' && typeof option.pct !== 'undefined') {
-      it(`    - If it has a 'menu' property, it should be a string`, () => {
-        if (option.menu) expect(typeof option.menu).to.equal('string')
+      it(`    - If it has a 'menu' property, it should be a string or method`, () => {
+        if (option.menu) expect(['string','function'].indexOf(typeof option.menu) === -1).to.equal(false)
       })
       // Percentage option
       it(`  - '${name}' is a percentage option`, () => true)
@@ -158,9 +155,11 @@ export const testPatternConfig = (Pattern) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.mm).to.be.true
       })
-      it(`    - Patterns should not use mm options`, () => {
-        expect("Does not use mm").to.be.true
-      })
+      if (mmAllowed.indexOf(getShortName(config.data.name)) === -1) {
+        it(`    - Patterns should not use mm options`, () => {
+          expect("Does not use mm").to.be.true
+        })
+      }
     } else if (type === 'object' && typeof option.bool !== 'undefined') {
       // Boolean option
       it(`  - '${name}' is a boolean option`, () => true)

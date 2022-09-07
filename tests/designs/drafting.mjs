@@ -1,9 +1,17 @@
 import designs from "../../config/software/designs.json" assert { type: 'json' }
 import { adult, doll, giant } from '@freesewing/models'
-import { getFamily } from './config.mjs'
+import { getFamily, getShortName } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
+
+const noSizes = [
+  'examples',
+  'rendertest',
+  'plugintest',
+  'legend',
+  'tutorial',
+]
 
 /*
  * This runs unit tests for pattern drafting
@@ -16,7 +24,7 @@ export const testPatternDrafting = (Pattern, log=false) => {
 
   const pattern = new Pattern()
   const config = pattern.getConfig()
-  const design = config.data.name
+  const design = getShortName(config.data.name)
   const family = getFamily(design)
   const parts = pattern.getPartList()
   // Helper method to try/catch pattern drafting
@@ -75,6 +83,17 @@ export const testPatternDrafting = (Pattern, log=false) => {
         }
       })
     }
+  } else {
+    // Utility pattern - Just draft them once
+    it(`  - Draft utility pattern`, () => {
+      expect(
+        doesItDraftAndRender(
+          new Pattern({
+            measurements: adult.cisFemale[34]
+          }), log
+        )
+      ).to.equal(true)
+    })
   }
 }
 
