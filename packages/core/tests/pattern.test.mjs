@@ -1079,7 +1079,6 @@ describe('Pattern', () => {
     const design = new Design({ parts: [ part ] })
     const pattern = new design();
     pattern.init()
-    console.log(pattern)
     expect(pattern.hooks.preRender.length).to.equal(1);
   });
 /*

@@ -23,7 +23,6 @@ export const demo = {
   plugins: [ pluginBundle ],
   draft: part => {
     const { store, options, Path, paths, Point } = part.shorthand()
-console.log('test')
     // Keep things in store
     store.set('y', 0)
     store.set('w', options.width)
