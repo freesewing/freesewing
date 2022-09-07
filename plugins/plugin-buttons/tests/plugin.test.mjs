@@ -1,10 +1,11 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Design } from '@freesewing/core'
+import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
-const pattern = new freesewing.Pattern().use(plugin)
+const Pattern = new Design()
+const pattern = new Pattern().use(plugin)
 pattern.draft().render()
 
 describe('Buttons Plugin Test', () => {
@@ -15,7 +16,7 @@ describe('Buttons Plugin Test', () => {
   }
 
   it('Draws a button on an anchor point', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
@@ -26,7 +27,7 @@ describe('Buttons Plugin Test', () => {
   })
 
   it('Draws a buttonhole centred on an anchor point', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
@@ -37,7 +38,7 @@ describe('Buttons Plugin Test', () => {
   })
 
   it('Draws a buttonhole starting on an anchor point', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
@@ -48,7 +49,7 @@ describe('Buttons Plugin Test', () => {
   })
 
   it('Draws a buttonhole ending on an anchor point', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
@@ -59,7 +60,7 @@ describe('Buttons Plugin Test', () => {
   })
 
   it('Draws a snap-stud on an anchor point', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
@@ -70,7 +71,7 @@ describe('Buttons Plugin Test', () => {
   })
 
   it('Draws a snap-socket on an anchor point', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     let { Point, snippets, Snippet } = pattern.parts.test.shorthand()

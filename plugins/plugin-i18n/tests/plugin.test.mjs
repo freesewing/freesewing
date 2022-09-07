@@ -1,19 +1,27 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
-import i18n from '../../../packages/i18n/dist/en/index.mjs'
+import { Design } from '@freesewing/core'
+import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect
 
+const content = {
+  strings: {
+    en: {
+      testString: 'This is a test string for the i18n plugin'
+    }
+  }
+}
+
 describe('I18n Plugin Tests', () => {
   it('Should translate text on insert', () => {
-    const pattern = new freesewing.Pattern().use(plugin, { strings: { en: i18n.plugin } })
+    const Pattern = new Design()
+    const pattern = new Pattern().use(plugin, content)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.anchor = new pattern.Point(-12, -34).attr(
       'data-text',
-      'cutTwoStripsToFinishTheArmholes'
+      'testString'
     )
     const svg = pattern.draft().render()
-    expect(svg).to.contain('Cut two strips to finish the armholes')
+    expect(svg).to.contain(content.strings.en.testString)
   })
 })

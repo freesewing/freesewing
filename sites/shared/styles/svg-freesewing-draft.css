@@ -176,7 +176,11 @@ g#bnotch circle.fill-note { fill: var(--pattern-note); }
 g#button circle.mark { stroke: var(--pattern-mark); fill: none; }
 g#button circle.fill-mark { fill: var(--pattern-mark); }
 g#button circle.no-stroke { stroke: none; }
-g#buttonhole path.mark { fill: none; stroke: var(--pattern-mark); }
+g#buttonhole path.mark,
+g#buttonhole-start path.mark,
+g#buttonhole-end path.mark {
+  fill: none; stroke: var(--pattern-mark);
+}
 
 /* Same for paperless grid, also in shadow DOM */
 rect.grid {

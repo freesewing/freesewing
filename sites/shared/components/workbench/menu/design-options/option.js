@@ -6,7 +6,7 @@ import {values} from 'shared/components/workbench/menu/design-options/option-val
 import {inputs} from 'shared/components/workbench/menu/design-options/option-input'
 
 const Option = props => {
-  const { t } = useTranslation([`o_${props.design.config.name}`])
+  const { t } = useTranslation([`o_${props.design.config.data.name}`])
   const opt = props.design.config.options[props.option];
   const type = optionType(opt)
   const Input = inputs[type]

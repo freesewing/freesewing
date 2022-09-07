@@ -14,6 +14,7 @@ import {
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
+import { capitalize } from '../sites/shared/utils.mjs'
 
 // Working directory
 const cwd = process.cwd()
@@ -33,6 +34,7 @@ const repo = {
   exceptions: readConfigFile('exceptions.yaml'),
   templates: {
     pkg: readTemplateFile('package.dflt.json'),
+    data: readTemplateFile('data.dflt.mjs'),
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.mjs'),
@@ -65,12 +67,16 @@ log.write(chalk.blueBright('Validating configuration...'))
 if (validate()) log.write(chalk.green(" Done\n"))
 
 
-// Step 3: Generate package.json, README, and CHANGELOG
+// Step 3: Generate package.json, pkg.mjs, README, and CHANGELOG
 log.write(chalk.blueBright('Generating package-specific files...'))
 for (const pkg of Object.values(software)) {
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'package.json'),
     JSON.stringify(packageJson(pkg), null, 2) + '\n'
+  )
+  fs.writeFileSync(
+    path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
+    mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
   )
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'README.md'),
@@ -111,7 +117,7 @@ log.write(chalk.green(" Done\n"))
 for (const design in designs) {
   fs.writeFileSync(
     path.join(repo.path, 'designs', design, 'tests', 'shared.test.mjs'),
-    mustache.render(repo.templates.designTests, { name: design })
+    mustache.render(repo.templates.designTests, { name: design, Name: capitalize(design) })
   )
 }
 for (const plugin in plugins) {

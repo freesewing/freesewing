@@ -1,7 +1,7 @@
 import Worker from 'web-worker';
 import fileSaver from 'file-saver'
-import theme from '@freesewing/plugin-theme'
-import {pagesPlugin} from '../layout/print/plugin'
+import { themePlugin } from '@freesewing/plugin-theme'
+import { pagesPlugin } from '../layout/print/plugin'
 import {utils} from '@freesewing/core'
 
 export const exportTypes = {
@@ -75,7 +75,7 @@ export const handleExport = async(format, gist, design, t, app, onComplete, onEr
     let pattern = new design({...gist, layout})
 
     // add the theme and translation to the pattern
-    pattern.use(theme, {stripped: format !== 'svg'})
+    pattern.use(themePlugin, {stripped: format !== 'svg'})
     pattern.use({
       hooks: {
         insertText: (locale, text, {t}) => t(text)

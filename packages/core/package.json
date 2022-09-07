@@ -31,18 +31,18 @@
     ".": "./dist/index.mjs"
   },
   "scripts": {
-    "build": "node --experimental-json-modules build.mjs",
+    "build": "node build.mjs",
     "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node --experimental-json-modules build.mjs",
+    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.mjs",
-    "vbuild": "VERBOSE=1 node --experimental-json-modules build.mjs",
+    "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "report": "nyc report --reporter=html",
     "testci": "nyc --silent npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js && nyc report --reporter=json",
     "testonly": "npx mocha tests/*.test.mjs",
-    "cibuild_step0": "node --experimental-json-modules build.mjs"
+    "cibuild_step0": "node build.mjs"
   },
   "peerDependencies": {},
   "dependencies": {

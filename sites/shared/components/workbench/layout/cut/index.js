@@ -4,11 +4,13 @@ import Settings from './settings'
 const CutLayout = props => {
   const { t } = useTranslation(['workbench'])
 
+  let name = props.design.config.data.name
+  name = name.replace('@freesewing/', '')
   return (
     <div>
       <h2 className="capitalize">
         {
-          t('layoutThing', { thing: props.design.config.name })
+          t('layoutThing', { thing: name })
           + ': '
           + t('forCutting')
         }

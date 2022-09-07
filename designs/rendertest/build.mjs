@@ -14,7 +14,7 @@ const banner = `/**
 const options = {
   banner: { js: banner },
   bundle: true,
-  entryPoints: ['src/index.js'],
+  entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
   external: ["@freesewing"],
@@ -39,6 +39,7 @@ let result
   .build({
     ...options,
     minify: false,
+    keepNames: true,
     sourcemap: false,
     outfile: 'tests/dist/index.mjs',
     format: 'esm',

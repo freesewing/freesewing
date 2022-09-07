@@ -1,6 +1,6 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Design } from '@freesewing/core'
+import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
@@ -13,8 +13,9 @@ const measurements = {
   crossSeamFront: 42
 }
 
-const pattern = new freesewing.Pattern().use(plugin)
-pattern.apply({ measurements }).draft().render()
+const Pattern = new Design()
+const pattern = new Pattern().use(plugin)
+pattern.apply({ measurements } ).draft()
 
 describe('Measurements Plugin Tests', () => {
   it('Should set the extra measurements', () => {
@@ -27,20 +28,26 @@ describe('Measurements Plugin Tests', () => {
   })
 
   it('Should calculate seatFront from seat and seatBack', function () {
-    let config = {measurements:{}}
-    const testPattern = new freesewing.Design(config,plugin)
-    let pattern = new testPattern()
-    let userMeasurements = {seat: 50, seatBack: 20}
+    const config = {measurements:{}}
+    const testPattern = new Design({
+      measurements: {},
+      plugins: [plugin]
+    })
+    const pattern = new testPattern()
+    const userMeasurements = {seat: 50, seatBack: 20}
     pattern.settings.measurements = userMeasurements
     pattern.draft()
     expect(pattern.settings.measurements.seatFront).to.equal(30)
   })
 
   it('Should calculate waistFrontArc and waistBackArc from waist and waistBack', function () {
-    let config = {measurements:{}}
-    const testPattern = new freesewing.Design(config,plugin)
-    let pattern = new testPattern()
-    let userMeasurements = {waist: 50, waistBack: 20}
+    const config = {measurements:{}}
+    const testPattern = new Design({
+      measurements: {},
+      plugins: [plugin]
+    })
+    const pattern = new testPattern()
+    const userMeasurements = {waist: 50, waistBack: 20}
     pattern.settings.measurements = userMeasurements
     pattern.draft()
     expect(pattern.settings.measurements.waistFrontArc).to.equal(15)
@@ -48,10 +55,13 @@ describe('Measurements Plugin Tests', () => {
   })
 
   it('Should calculate crossSeamBack from crossSeam and crossSeamFront', function () {
-    let config = {measurements:{}}
-    const testPattern = new freesewing.Design(config,plugin)
-    let pattern = new testPattern()
-    let userMeasurements = {crossSeam: 50, crossSeamFront: 20}
+    const config = {measurements:{}}
+    const testPattern = new Design({
+      measurements: {},
+      plugins: [plugin]
+    })
+    const pattern = new testPattern()
+    const userMeasurements = {crossSeam: 50, crossSeamFront: 20}
     pattern.settings.measurements = userMeasurements
     pattern.draft()
     expect(pattern.settings.measurements.crossSeamBack).to.equal(30)

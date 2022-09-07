@@ -9,6 +9,7 @@
 
  - The `@freesewing/components` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/css-theme` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
+ - The `@freesewing/config-helpers` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported. Use the `@freesewing/snapseries` package for various helpers for snapped percentage options. The `pctBasedOn` helper method is now available as a named export from `@freesewing/core`
  - The `@freesewing/i18n` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/mui-theme` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `@freesewing/pattern-info` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
@@ -24,17 +25,167 @@
 
  - Workaround for not finding a suitable legband radius
 
+### waralee
+
+#### Added
+
+ - Added *mini* version of main pants part
+ - Added new pocket options
+ - Added seperate waistband options
+ - Added bow tie placement option
+
+#### Fixed
+
+ - Fixed crotch depth issue
+ - Fixed pocket size issue
+ - Fixed waist shaping issue
+
+### plugin-banner
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-bartack
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-bundle
+
+#### Removed
+
+ - Named exports of the bundled plugins are no longer available
+
+### plugin-bust
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-buttons
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-cutonfold
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-dimension
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-flip
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
 ### plugin-gore
 
 #### Breaking
 
  - The `goreNumber` props is removed. Please use `gores` instead
 
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-grainline
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-i18n
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-logo
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-measurements
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-mirror
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-notches
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-round
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-scalebox
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-sprinkle
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-svgattr
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-theme
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
 ### plugin-title
 
 #### Changed
 
  - Use localized date format
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### plugin-versionfree-svg
+
+#### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+### snapseries
+
+#### Breaking
+
+ - Named export `smallsteps` has been renamed to `smallSteps`
+ - Named export `bigsteps` has been renamed to `bigSteps`
 
 
 ## 2.22.0 (2022-08-23)
@@ -166,12 +317,6 @@
 
  - Support drafting for high bust
 
-### theo
-
-#### Changed
-
- - migrated `waistbandWidth` option from `mm` to snapped `pct` option
-
 ### wahid
 
 #### Added
@@ -245,6 +390,12 @@
 
 ## 2.21.0 (2022-06-27)
 
+### albert
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 ### benjamin
 
 #### Changed
@@ -282,6 +433,16 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### hortensia
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### lucy
+
+#### Added
+
+ - Lucy is a pattern for a historical tie-on pocket
 
 #### Changed
 
@@ -331,12 +492,6 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### aaron
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### albert
 
 #### Changed
 
@@ -407,16 +562,6 @@
  - Fix incorrect seam allowance Closes [#2208](https://github.com/freesewing/freesewing/issues/2208)
 
 ### jaeger
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### lucy
-
-#### Added
-
- - Lucy is a pattern for a historical tie-on pocket
 
 #### Changed
 
@@ -498,23 +643,11 @@
 
  - Added missing name to config file
 
-### theo
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
 ### tiberius
 
 #### Changed
 
  - Migrated from Rollup to Esbuild for all builds
-
-### unice
-
-#### Added
-
- - Unice is an underwear pattern
 
 ### ursula
 
@@ -712,12 +845,6 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
-### config-helpers
-
-#### Added
-
- - This new package replaces the previous snapseries package and adds extra helper methods for pattern config such as `pctBasedOn()` which was previously exported by core
-
 ### core
 
 #### Changed
@@ -898,6 +1025,12 @@
 
 ## 2.20.0 (2022-01-24)
 
+### albert
+
+#### Changed
+
+ - Switched to default import for version from package.json
+
 ### benjamin
 
 #### Changed
@@ -967,12 +1100,6 @@
  - Switched to default import for version from package.json
 
 ### aaron
-
-#### Changed
-
- - Switched to default import for version from package.json
-
-### albert
 
 #### Changed
 
@@ -1111,12 +1238,6 @@
 #### Changed
 
  - Lock the `frontArmholeDeeper` option to a static value
- - Switched to default import for version from package.json
-
-### theo
-
-#### Changed
-
  - Switched to default import for version from package.json
 
 ### tiberius
@@ -1767,12 +1888,6 @@
  - Support drafting of non-human measurements (dolls & giants) Closes [#1318](https://github.com/freesewing/freesewing/issues/1318)
  - Fix issue with armhole introduced with the S3 options in Brian Closes
 
-### theo
-
-#### Changed
-
- - Added deprecation warning as we need to rewrite this pattern
-
 ### tiberius
 
 #### Added
@@ -1793,6 +1908,12 @@
 
  - This is a plugin to strip (FreeSewing) versdion info out of the SVG to allow you to diff your SVG output between FreeSewing versions
  - Initial release
+
+### snapseries
+
+#### Added
+
+ - Initial release of `@freesewing/snapseries` wich holds commonly used series of snap values for percentage options
 
 ### core
 
@@ -1827,12 +1948,6 @@
  - Replace cut-on-fold indicator on pocket with a regular grainline indicator Closes [#1265](https://github.com/freesewing/freesewing/issues/1265)
 
 ### simon
-
-#### Fixed
-
- - Avoid paperless depending on a complete pattern
-
-### theo
 
 #### Fixed
 
@@ -2070,6 +2185,12 @@
 
 ## 2.16.1 (2021-05-30)
 
+### albert
+
+#### Changed
+
+ - Changed `department` setting in config in line with new grouping
+
 ### benjamin
 
 #### Changed
@@ -2137,12 +2258,6 @@
  - Changed `department` setting in config in line with new grouping
 
 ### aaron
-
-#### Changed
-
- - Changed `department` setting in config in line with new grouping
-
-### albert
 
 #### Changed
 
@@ -2257,12 +2372,6 @@
  - Changed `department` setting in config in line with new grouping
 
 ### teagan
-
-#### Changed
-
- - Changed `department` setting in config in line with new grouping
-
-### theo
 
 #### Changed
 
@@ -2593,12 +2702,6 @@
 
  - Force bust dart intersection if not found initially
 
-### theo
-
-#### Fixed
-
- - Check for intersection returning an array
-
 ### wahid
 
 #### Fixed
@@ -2626,6 +2729,12 @@
 
 ## 2.11.3 (2021-01-16)
 
+### albert
+
+#### Fixed
+
+ - Added missing scalebox
+
 ### florence
 
 #### Fixed
@@ -2645,12 +2754,6 @@
  - Added missing scalebox
 
 ### bent
-
-#### Fixed
-
- - Added missing scalebox
-
-### albert
 
 #### Fixed
 
@@ -2696,12 +2799,6 @@
  - Marked where to match fabric on closure
 
 ### simone
-
-#### Fixed
-
- - Cleaned up notches
-
-### theo
 
 #### Fixed
 
@@ -3209,13 +3306,6 @@
  - Ported tamiko to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
  - Removed `Circumference` suffix from measurement names
 
-### theo
-
-#### Changed
-
- - Ported theo to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
- - Removed `Circumference` suffix from measurement names
-
 ### wahid
 
 #### Changed
@@ -3599,12 +3689,6 @@
 
  - Removed deprecated `centerBackNeckToWaist` measurement
 
-### theo
-
-#### Fixed
-
- - Fixed issue with side piece
-
 ### wahid
 
 #### Changed
@@ -3817,12 +3901,6 @@
 
 ## 2.0.1 (2019-09-01)
 
-### theo
-
-#### Fixed
-
- - [#78](https://github.com/freesewing/freesewing/issues/78): Removed inherited notches from fly shield and side piece.
-
 ### models
 
 #### Added
@@ -3944,12 +4022,6 @@
  - Initial release
 
 ### tamiko
-
-#### Added
-
- - Initial release
-
-### theo
 
 #### Added
 

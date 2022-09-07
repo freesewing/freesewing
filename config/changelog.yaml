@@ -7,6 +7,9 @@ Unreleased:
         NodeJS 16 or more recent is now required.
     plugin-gore:
       - The `goreNumber` props is removed. Please use `gores` instead
+    snapseries:
+      - Named export `smallsteps` has been renamed to `smallSteps`
+      - Named export `bigsteps` has been renamed to `bigSteps`
 
   Removed:
     global:
@@ -14,6 +17,10 @@ Unreleased:
         While v2 versions remain available, this package is no longer supported.
       - The `@freesewing/css-theme` package is not part of FreeSewing v3.
         While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/config-helpers` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+        Use the `@freesewing/snapseries` package for various helpers for snapped percentage options.
+        The `pctBasedOn` helper method is now available as a named export from `@freesewing/core`
       - The `@freesewing/i18n` package is not part of FreeSewing v3.
         While v2 versions remain available, this package is no longer supported.
       - The `@freesewing/mui-theme` package is not part of FreeSewing v3.
@@ -32,13 +39,71 @@ Unreleased:
         While v2 versions remain available, this package is no longer supported.
         Use `rehype-jargon` instead.
 
+    plugin-banner:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-bartack:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-bundle:
+      - Named exports of the bundled plugins are no longer available
+    plugin-bust:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-buttons:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-cutonfold:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-dimension:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-flip:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-gore:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-grainline:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-i18n:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-logo:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-measurements:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-mirror:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-notches:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-round:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-scalebox:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-sprinkle:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-svgattr:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-theme:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-title:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-versionfree-svg:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
+
   Fixed:
     albert:
       - Workaround for not finding a suitable legband radius
+    waralee:
+      - Fixed crotch depth issue
+      - Fixed pocket size issue
+      - Fixed waist shaping issue
 
   Changed:
     plugin-title:
       - Use localized date format
+
+  Added:
+    waralee:
+      - Added *mini* version of main pants part
+      - Added new pocket options
+      - Added seperate waistband options
+      - Added bow tie placement option
+
 
 2.22.0:
   date: 2022-08-23

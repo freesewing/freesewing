@@ -84,7 +84,6 @@
     "autoprefixer": "^10.4.0",
     "handlebars": "^4.7.7",
     "rehype-format": "^4.0.1",
-    "remark-cli": "^11.0.0",
     "remark-frontmatter": "^4.0.1",
     "remark-lint-emphasis-marker": "^3.1.1",
     "remark-lint-list-item-indent": "^3.1.1",
@@ -97,5 +96,18 @@
     "plugins/*",
     "sites/*"
   ],
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "handlebars": "^4.7.7",
+    "jsonfile": "^6.1.0",
+    "postcss": "^8.4.5",
+    "remark-cli": "^11.0.0",
+    "remark-frontmatter": "^4.0.1",
+    "remark-lint-emphasis-marker": "^3.1.1",
+    "remark-lint-list-item-indent": "^3.1.1",
+    "remark-preset-lint-consistent": "^5.1.1",
+    "remark-preset-lint-recommended": "^6.1.2",
+    "tailwindcss": "^3.0.7"
+  }
 }

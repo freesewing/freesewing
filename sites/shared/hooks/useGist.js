@@ -8,7 +8,7 @@ import {useState} from 'react'
 // Generates a default design gist to start from
 export const defaultGist = (design, locale='en') => {
   const gist = {
-  design: design.config.name,
+  design: design.config.data.name,
   version: design.config.version,
   ...defaultSettings,
   _state: {view: 'draft'}

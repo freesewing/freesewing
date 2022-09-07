@@ -1,13 +1,12 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { round, Pattern } from '@freesewing/core'
+import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
-const round = freesewing.utils.round
 
 describe('Bartack plugin Tests', () => {
   it('draws a default bartack from a point', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
@@ -33,7 +32,7 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('draws a bartack along a path', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     const from = new pattern.Point(10, 20)
@@ -61,7 +60,7 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('can be called using the bartackFractionAlong syntax', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     const from = new pattern.Point(10, 20)
@@ -91,7 +90,7 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('can be called using the bartackFractionAlong syntax', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     const from = new pattern.Point(10, 20)
@@ -121,7 +120,7 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable length', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
@@ -148,7 +147,7 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable width', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
@@ -175,7 +174,7 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable angle', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
@@ -202,7 +201,7 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable suffix', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
@@ -216,7 +215,7 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable prefix', function () {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)

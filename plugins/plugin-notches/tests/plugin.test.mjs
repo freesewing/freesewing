@@ -1,10 +1,11 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Design } from '@freesewing/core'
+import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect
 
-const pattern = new freesewing.Pattern().use(plugin)
+const Pattern = new Design()
+const pattern = new Pattern().use(plugin)
 pattern.draft().render()
 
 describe('Notches Plugin Test', () => {
@@ -17,13 +18,13 @@ describe('Notches Plugin Test', () => {
   })
 
   it("Draws a notch on an anchor point", () => {
-    let pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
-    let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
+    const { Point, snippets, Snippet } = pattern.parts.test.shorthand()
     snippets.button = new Snippet('notch', new Point(10,20))
     pattern.render()
-    let c = pattern.svg
+    const c = pattern.svg
     expect(c.layout.test.svg).to.contain('<use x="10" y="20" xlink:href="#notch"')
   })
 })

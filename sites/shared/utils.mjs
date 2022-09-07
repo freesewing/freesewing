@@ -1,4 +1,5 @@
 import get from 'lodash.get'
+import set from 'lodash.set'
 
 // Generic rounding method
 export const round = (val, decimals=1) => Math.round(val*Math.pow(10, decimals))/Math.pow(10, decimals)
@@ -159,3 +160,21 @@ export const measurementAsMm = (value, units = "metric") => {
   }
   return false;
 }
+
+
+export const optionsMenuStructure = options => {
+  if (!options) return options
+  const menu = {}
+  for (const [name, option] of Object.entries(options)) {
+    if (typeof option  === 'object') {
+      if (option.menu) set(menu, (option.menu ? `${option.menu}.${name}` : name), optionType(option))
+      else if (typeof option.menu === 'undefined') console.log(
+        `Warning: Option ${name} does not have a menu config. ` +
+        'Either configure it, or set it to falseo false to hide this option.'
+      )
+    }
+  }
+
+  return menu
+}
+

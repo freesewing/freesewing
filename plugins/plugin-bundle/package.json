@@ -31,17 +31,17 @@
     ".": "./dist/index.mjs"
   },
   "scripts": {
-    "build": "node --experimental-json-modules build.mjs",
+    "build": "node build.mjs",
     "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node --experimental-json-modules build.mjs",
+    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "npx mocha tests/*.test.mjs",
-    "vbuild": "VERBOSE=1 node --experimental-json-modules build.mjs",
+    "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "prettier": "npx prettier --write 'src/*.js' 'tests/*.mjs'",
+    "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
-    "cibuild_step2": "node --experimental-json-modules build.mjs"
+    "cibuild_step2": "node build.mjs"
   },
   "peerDependencies": {
     "@freesewing/core": "^3.0.0-alpha.0"

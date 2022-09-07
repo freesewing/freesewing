@@ -23,15 +23,15 @@
     ".": "./dist/index.mjs"
   },
   "scripts": {
-    "build": "node --experimental-json-modules build.mjs",
+    "build": "node build.mjs",
     "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node --experimental-json-modules build.mjs",
+    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "echo \"rehype-jargon: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "vbuild": "VERBOSE=1 node --experimental-json-modules build.mjs",
+    "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "cibuild_step6": "node --experimental-json-modules build.mjs"
+    "cibuild_step6": "node build.mjs"
   },
   "peerDependencies": {},
   "dependencies": {

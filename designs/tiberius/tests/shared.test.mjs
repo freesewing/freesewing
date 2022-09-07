@@ -1,17 +1,16 @@
-// This file is auto-generated.
-// Changes you make will be overwritten.
-import Pattern from './dist/index.mjs'
+// This file is auto-generated | Any changes you make will be overwritten.
+import { Tiberius } from './dist/index.mjs'
 
 // Shared tests
-import { testPatternConfig } from '../../../tests/patterns/config.mjs'
-import { testPatternDrafting } from '../../../tests/patterns/drafting.mjs'
-import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
+import { testPatternConfig } from '../../../tests/designs/config.mjs'
+import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
+//import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig("tiberius", new Pattern())
+testPatternConfig(Tiberius)
 
-// Test drafting
-testPatternDrafting("tiberius", Pattern)
+// Test drafting - Change the second parameter to `true` to log errors
+testPatternDrafting(Tiberius, false)
 
-// Test sampling
-testPatternSampling( "tiberius", Pattern)
+// Test sampling - Change the second parameter to `true` to log errors
+//testPatternSampling(Tiberius, false)

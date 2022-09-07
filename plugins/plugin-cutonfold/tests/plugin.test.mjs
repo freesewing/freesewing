@@ -1,14 +1,13 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Pattern, round } from '@freesewing/core'
+import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
-const round = freesewing.utils.round
 
 describe('Cutonfold Plugin Tests', () => {
 
   it('Should run the default cutonfold macro', () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
     pattern.parts.test.points.to = new pattern.Point(10, 220)
@@ -38,7 +37,7 @@ describe('Cutonfold Plugin Tests', () => {
   })
 
   it('Should run the cutonfold/grainline macro', () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
     pattern.parts.test.points.to = new pattern.Point(10, 230)
@@ -53,7 +52,7 @@ describe('Cutonfold Plugin Tests', () => {
   })
 
   it('Should run the cutonfold macro with configurable offset', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.draft = function() {}
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
@@ -86,7 +85,7 @@ describe('Cutonfold Plugin Tests', () => {
   })
 
   it('Should run the cutonfold macro with configurable margin', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.draft = function() {}
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()

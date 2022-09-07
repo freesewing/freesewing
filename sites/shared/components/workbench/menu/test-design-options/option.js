@@ -1,50 +1,25 @@
 import { linkClasses } from 'shared/components/navigation/primary.js'
-import { Li } from 'shared/components/workbench/menu'
+import { Li, SumButton, SumDiv } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 
-const SumButton = props => (
-  <button className={`
-    flex flex-row
-    px-2
-    w-full justify-between
-    text-left
-    text-base-content
-    sm:text-base-content
-    hover:cursor-pointer
-    items-center
-    mr-4
-  `} onClick={props.onClick}>{props.children}</button>
-)
-const SumDiv = (props) => (
-  <div className={`
-    grow pl-2 border-l-2
-    ${linkClasses}
-    hover:cursor-resize
-    hover:border-secondary
-    sm:hover:border-secondary-focus
-    text-base-content sm:text-base-content
-    ${props.active && 'border-secondary-focus'}
-
-  `}>{props.children}</div>
-)
-
 const Option = props => {
-  const { t } = useTranslation([`o_${props.design.config.name}`, 'workbench'])
+  const { t } = useTranslation([`o_${props.design.config.data.name}`, 'workbench'])
   const active = (
-    props.gist.sample?.type === 'option' &&
-    props.gist.sample?.option === props.option
+    props.sampleSettings?.type === 'option' &&
+    props.active === props.option
   )
+
+  const setSampleSettings = () => {
+    props.updateGist(
+      ['sample'],
+      props.sampleSettings,
+      true // Close navigation on mobile
+    )
+  }
 
   return (
     <Li>
-      <SumButton onClick={() => props.updateGist(
-        ['sample'],
-        {
-          type: 'option',
-          option: props.option
-        },
-        true // Close navigation on mobile
-      )}>
+      <SumButton onClick={setSampleSettings}>
         <SumDiv active={active}>
           <span className={`
             text-3xl inline-block p-0 leading-3 px-2
@@ -56,7 +31,7 @@ const Option = props => {
             {active ? <span>&bull;</span> : <span>&deg;</span>}
           </span>
           <span className={active ? 'text-secondary font-bold' : ''}>
-            {t(`o_${props.design.config.name}:${props.option}.t`)}
+            {props.label}
           </span>
         </SumDiv>
       </SumButton>

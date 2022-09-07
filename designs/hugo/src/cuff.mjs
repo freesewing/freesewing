@@ -1,0 +1,59 @@
+import { cuffEase, ribbingStretch } from './options.mjs'
+
+function hugoCuff(part) {
+  const { measurements, options, sa, Point, points, Path, paths, complete, paperless, macro } =
+    part.shorthand()
+
+  const width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
+  const length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
+
+  points.topLeft = new Point(0, 0)
+  points.bottomLeft = new Point(0, width)
+  points.topRight = new Point(length, 0)
+  points.bottomRight = new Point(length, width)
+
+  paths.seam = new Path()
+    .move(points.topLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .line(points.topRight)
+    .line(points.topLeft)
+    .close()
+    .attr('class', 'various')
+
+  // Complete pattern?
+  if (complete) {
+    if (sa) {
+      paths.sa = paths.seam.offset(sa).attr('class', 'various sa')
+    }
+    points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5)
+    macro('title', { at: points.title, nr: 9, title: 'cuff' })
+    macro('grainline', {
+      from: points.bottomLeft.shift(0, 20),
+      to: points.topLeft.shift(0, 20),
+    })
+  }
+
+  // Paperless?
+  if (paperless) {
+    macro('vd', {
+      from: points.bottomRight,
+      to: points.topRight,
+      x: points.topRight.x + sa + 15,
+    })
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomRight.y + sa + 15,
+    })
+  }
+
+  return part
+}
+
+export const cuff = {
+  name: 'hugo.cuff',
+  measurements: ['waistToHips'],
+  options: { cuffEase, ribbingStretch },
+  draft: hugoCuff,
+}

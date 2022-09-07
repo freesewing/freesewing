@@ -1,13 +1,12 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { round, Pattern } from '@freesewing/core'
+import { plugin } from './dist/index.mjs'
 
-let expect = chai.expect
-let round = freesewing.utils.round
+const expect = chai.expect
 
 describe('Gore Plugin Tests', () => {
   it('Should create a default gore', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     let anchorPoint = new pattern.Point(50,50)
     pattern.parts.test = new pattern.Part()
@@ -28,7 +27,7 @@ describe('Gore Plugin Tests', () => {
   })
 
   it('Should use a configurable number of gores', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     let anchorPoint = new pattern.Point(50,50)
     pattern.parts.test = new pattern.Part()
@@ -50,7 +49,7 @@ describe('Gore Plugin Tests', () => {
   })
 
   it('Should use a configurable extra length', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     let anchorPoint = new pattern.Point(50,50)
     pattern.parts.test = new pattern.Part()
@@ -72,7 +71,7 @@ describe('Gore Plugin Tests', () => {
   })
 
   it('Should use a configurable radius', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     let anchorPoint = new pattern.Point(50,50)
     pattern.parts.test = new pattern.Part()
@@ -94,7 +93,7 @@ describe('Gore Plugin Tests', () => {
   })
 
   it('Should generate a seam path', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     let anchorPoint = new pattern.Point(50,50)
     pattern.parts.test = new pattern.Part()

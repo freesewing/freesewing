@@ -1,14 +1,13 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Pattern, round } from '@freesewing/core'
+import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
-const round = freesewing.utils.round
 
 describe('Dimension Plugin Tests', () => {
 
   describe('Measures horizontal dimensions', function () {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
     pattern.parts.test.points.to = new pattern.Point(200, 20)
@@ -58,7 +57,7 @@ describe('Dimension Plugin Tests', () => {
   })
 
   describe('Measures vertical dimensions', () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
     pattern.parts.test.points.to = new pattern.Point(10, 200)
@@ -108,7 +107,7 @@ describe('Dimension Plugin Tests', () => {
   })
 
   describe('Measures the length of straight lines', () => {
-    const pattern = new freesewing.Pattern().use(plugin)
+    const pattern = new Pattern().use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 10)
     pattern.parts.test.points.to = new pattern.Point(100, 100)
@@ -158,7 +157,7 @@ describe('Dimension Plugin Tests', () => {
   })
 
   describe('Measures curved lines', () => {
-    const pattern = new freesewing.Pattern()
+    const pattern = new Pattern()
     pattern.draft = function () {}
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()

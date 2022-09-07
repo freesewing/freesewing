@@ -1,13 +1,13 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Pattern } from '@freesewing/core'
+import { bannerPlugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Banner Plugin Tests', () => {
 
-  const pattern = new freesewing.Pattern()
-  pattern.use(plugin).render()
+  const pattern = new Pattern()
+  pattern.use(bannerPlugin).render()
   pattern.parts.test = new pattern.Part()
   const { Point, points, Path, paths, macro } = pattern.parts.test.shorthand()
 

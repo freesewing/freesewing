@@ -1,11 +1,11 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Pattern } from '@freesewing/core'
+import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Flip Plugin Tests', () => {
-  const pattern = new freesewing.Pattern().use(plugin);
+  const pattern = new Pattern().use(plugin);
   pattern.parts.test = new pattern.Part()
   pattern.parts.test.points.from = new pattern.Point(10, 20)
   pattern.parts.test.points.to = new pattern.Point(30, 40)
@@ -44,7 +44,7 @@ describe('Flip Plugin Tests', () => {
   })
 
   it('Should flip points in a part on their vertical axis', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10,20)
@@ -58,7 +58,7 @@ describe('Flip Plugin Tests', () => {
   })
 
   it('Should flip points in a path on their vertical axis', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10,20)
@@ -82,7 +82,7 @@ describe('Flip Plugin Tests', () => {
   })
 
   it('Should flip points in snippets on their vertical axis', () => {
-    let pattern = new freesewing.Pattern()
+    let pattern = new Pattern()
     pattern.use(plugin)
     pattern.parts.test = new pattern.Part()
     let anchorPoint = new pattern.Point(40,0)

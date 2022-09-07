@@ -6,7 +6,7 @@ import { designs, plugins, packages  } from './software/index.mjs'
  * order. This file takes care of that
  */
 
-const first = [ 'core', 'config-helpers', 'remark-jargon']
+const first = [ 'core', 'config-helpers', 'remark-jargon', 'snapseries' ]
 const blocks = [ 'brian', 'titan', 'bella', 'breanna' ]
 const extended = [ 'bent', 'simon', 'carlton', 'ursula' ]
 const last = ['i18n']
