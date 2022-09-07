@@ -118,7 +118,19 @@ function simonBack(part) {
     points.s3ArmholeSplit.y + points.s3ArmholeSplit.dy(points.armholePitch) * options.yokeHeight
   )
   neverAboveCbNeck()
-  points.armholeYokeSplit = paths.backArmhole.intersectsY(points.cbYoke.y).pop()
+
+  // This split fails on 10% cisfemale doll measurements
+  // While that's a niche case, we should still handle it
+  // So we merely adapt the yoke bottom to fall at the start of the
+  // backArmhole curve
+  const armholeYokeSplitCandidate = paths.backArmhole.intersectsY(points.cbYoke.y).pop()
+  if (armholeYokeSplitCandidate) {
+    points.armholeYokeSplit = armholeYokeSplitCandidate
+  } else {
+    points.armholeYokeSplit = paths.backArmhole.start()
+    points.cbYoke.y = points.armholeYokeSplit.y
+  }
+
   const [back, yoke] = paths.backArmhole.split(points.armholeYokeSplit)
   paths.backArmholeYoke = yoke.setRender(false)
   // For 1/10 dolls with breasts, this path becomes non-existing so we put a dummy here
