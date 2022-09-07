@@ -65,5 +65,33 @@ describe('Store', () => {
     expect(pattern.store.get("test.message.warning")).to.equal("hello warning")
     expect(pattern.store.get("test.message.info")).to.equal("hello info")
   });
+
+  it("Should make top-level plugin methods available via shorthand", () => {
+    const plugin = {
+      name: 'test',
+      version: 1,
+      store: [
+        ['methodA', function(store, name, msg) {
+          store.set(['test', name, 'a'], msg)
+        }],
+        ['methodB', function(store, name, msg) {
+          store.set(['test', name, 'b'], msg)
+        }],
+      ]
+    }
+    const part = {
+      name: 'example_part',
+      draft: part => {
+        const { methodA, methodB } = part.shorthand()
+        methodA('hello A')
+        methodB('hello B')
+      }
+    }
+    const Test = new Design({plugins: [plugin], parts: [ part ]})
+    const pattern = new Test()
+    pattern.draft()
+    expect(pattern.store.get("test.example_part.a")).to.equal("hello A")
+    expect(pattern.store.get("test.example_part.b")).to.equal("hello B")
+  });
 });
 

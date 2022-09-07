@@ -197,6 +197,13 @@ Part.prototype.shorthand = function () {
     addCut: this.addCut,
     removeCut: this.removeCut,
   }
+  // Add top-level store methods and add a part name parameter
+  const partName = this.name
+  for (const [key, method] of Object.entries(this.context.store)) {
+    if (typeof method === 'function') shorthand[key] = function(...args) {
+      return method(partName, ...args)
+    }
+  }
 
   // We'll need this
   let self = this
