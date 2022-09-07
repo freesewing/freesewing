@@ -4,6 +4,7 @@
   "plugin-bundle": "An umbrella package of 8 essential FreeSewing build-time plugins",
   "plugin-bust": "A FreeSewing plugin that helps with bust-adjusting menswear patterns",
   "plugin-buttons": "A FreeSewing plugin that provides button, buttonhole, and snap snippets",
+  "plugin-cutlist": "A FreeSewing plugin to store data regarding a pattern's cutlist",
   "plugin-cutonfold": "A FreeSewing plugin to add cut-on-fold indicators on your patterns",
   "plugin-dimension": "A FreeSewing plugin to add dimensions to your (paperless) pattern",
   "plugin-flip": "A FreeSewing plugin to flip parts horizontally",
