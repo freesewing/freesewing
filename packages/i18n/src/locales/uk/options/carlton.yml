@@ -1,31 +1,31 @@
 ---
 seatEase:
-  title: Seat ease
-  description: Amount of ease around your bum
+  title: Свобода облягання на стегнах
+  description: Керує свободою облягання навколо стегон
 pocketPlacementHorizontal:
-  title: Horizontal pocket placement
-  description: The (horizontal) location of the pockets
+  title: Горизонтальне розміщення кишені
+  description: Розташування кишені (горизонтальне)
 pocketPlacementVertical:
-  title: Vertical pocket placement
-  description: The (vertical) location of the pockets
+  title: Вертикальне розміщення кишені
+  description: Розташування кишені (вертикальне)
 collarHeight:
-  title: Collar height
-  description: Height of the collar
+  title: Висота коміру
+  description: Контролює висоту коміру
 length:
-  title: Length
-  description: Total length
+  title: Довжина
+  description: Повна довжина виробу
 pocketFlapRadius:
-  title: Pocket flap radius
-  description: The amount by which the pocket flap is rounded
+  title: Радіус клапану кишені
+  description: Керує заокругленням клапану кишені
 pocketRadius:
-  title: Pocket radius
-  description: The amount by which the pocket is rounded
+  title: Радіус кишені
+  description: Контролює заокруглення кишені
 chestPocketHeight:
-  title: Chest pocket height
-  description: Height of the chest pocket
+  title: Висота нагрудної кишені
+  description: Контролює висоту нагрудної кишені
 beltWidth:
-  title: Belt width
-  description: Width of the belt
+  title: Ширина поясу
+  description: Керує висотою поясу
 buttonSpacingHorizontal:
-  title: Horizontal button spacing
-  description: Horizontal spacing of the buttons, also determines the front closure overlap
+  title: Горизонтальна відстань між ґудзиками
+  description: Керує горизонтальною відстанню між ґудзиком, також керує величиною накладання двох частин
