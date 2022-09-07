@@ -86,7 +86,7 @@ export function Pattern(config = { options: {} }) {
   this.is = '' // Will be set when drafting/sampling
   this.autoLayout = { parts: {} } // Will hold auto-generated layout
   this.cutList = {} // Will hold the cutlist
-  this.store = new Store(this.raise) // Store for sharing data across parts
+  this.store = new Store([[ 'emit', this.raise]]) // Store for sharing data across parts
   this.parts = {} // Parts container
   this.hooks = new Hooks() // Hooks container
   this.Point = Point // Point constructor
@@ -549,6 +549,7 @@ Pattern.prototype.loadPlugin = function (plugin, data, explicit=false) {
   this.plugins[plugin.name] = plugin
   if (plugin.hooks) this.loadPluginHooks(plugin, data)
   if (plugin.macros) this.loadPluginMacros(plugin)
+  if (plugin.store) this.loadPluginStoreMethods(plugin)
   this.raise.info(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
 
   return this
@@ -609,6 +610,11 @@ Pattern.prototype.loadPluginMacros = function (plugin) {
       this.macro(macro, plugin.macros[macro])
     }
   }
+}
+
+Pattern.prototype.loadPluginStoreMethods = function (plugin) {
+  if (Array.isArray(plugin.store)) this.store = this.store.extend(...plugin.store)
+  else this.raise.warning(`Plugin store methods should be an Array`)
 }
 
 Pattern.prototype.macro = function (key, method) {

@@ -35,7 +35,7 @@
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "test": "nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.mjs",
+    "test": "nyc -x node_modules -x tests -x bin-pack npx mocha tests/store.test.mjs",
     "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
@@ -48,7 +48,10 @@
   "dependencies": {
     "bezier-js": "^4.1.1",
     "bin-pack": "^1.0.2",
-    "hooks": "^0.3.2"
+    "hooks": "^0.3.2",
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2",
+    "lodash.unset": "^4.5.2"
   },
   "devDependencies": {
     "nyc": "^15.1.0"

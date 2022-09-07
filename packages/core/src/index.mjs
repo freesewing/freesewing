@@ -4,6 +4,7 @@ import { Pattern } from './pattern.mjs'
 import { Point } from './point.mjs'
 import { Path } from './path.mjs'
 import { Snippet } from './snippet.mjs'
+import { Store } from './store.mjs'
 import {
   isCoord,
   capitalize,
@@ -44,6 +45,7 @@ export {
   Point,
   Path,
   Snippet,
+  Store,
 
   Bezier,
   capitalize,
