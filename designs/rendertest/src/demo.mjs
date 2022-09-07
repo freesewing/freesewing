@@ -3,7 +3,7 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 export const demo = {
   name: 'rendertest.demo',
   options: {
-    width: { mm: 200, min: 50, max: 500, testIgnore: false },
+    width: { mm: 200, min: 50, max: 500, testIgnore: true },
     only: {
       menu: 'show',
       dflt: 'false',

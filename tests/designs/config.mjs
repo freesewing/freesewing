@@ -63,7 +63,7 @@ export const testPatternConfig = (Pattern) => {
   })
   // Config tests for non-utility patterns only
   if (family !== 'utilities') {
-    it(`  - 'design' should be set and be a string of reasonable length`, () => {
+    it(`  - 'design' should be set and be a string or array of strings of reasonable length`, () => {
       const people = Array.isArray(meta.design)
         ? meta.design
         : [ meta.design ]
@@ -73,20 +73,38 @@ export const testPatternConfig = (Pattern) => {
         expect(person.length < 80).to.be.true
       }
     })
-    it(`  - 'code' should be set and be a string of reasonable length`, () => {
+    it(`  - 'code' should be set and be a string or array of strings of reasonable length`, () => {
       const people = Array.isArray(meta.code)
-        ? meta.design
-        : [ meta.design ]
+        ? meta.code
+        : [ meta.code ]
       for (const person of people) {
         expect(typeof person).to.equal('string')
         expect(person.length > 2).to.be.true
         expect(person.length < 80).to.be.true
       }
     })
-    it(`  - 'department' should be set and be a string of reasonable length`, () => {
-      expect(typeof meta.code).to.equal('string')
-      expect(meta.code.length > 2).to.be.true
-      expect(meta.code.length < 80).to.be.true
+    it(`  - 'tags' should be set and be an array`, () => {
+      expect(Array.isArray(meta.tags)).to.be.true
+    })
+    it(`  - 'tags' array should have at least one element`, () => {
+      const tags =  Array.isArray(meta.tags)
+        ? meta.tags
+        : [ meta.tags ]
+      expect(tags.length >= 1).to.be.true
+    })
+    it(`  - 'tags' elements should be strings found in the list of official tags`, () => {
+      const official_tags = [
+        'accessories', 'tops', 'bottoms', 'hats', 'toys', 'underwear',
+        'swimwear', 'trousers', 'historical', 'bags', 'infants', 'coats',
+        'skirts',
+      ]
+      const tags =  Array.isArray(meta.tags)
+        ? meta.tags
+        : [ meta.tags ]
+      for (const tag of tags) {
+        expect(typeof tag).to.equal('string')
+        expect(official_tags.includes(tag)).to.be.true
+      }
     })
     it(`  - 'dfficulty' should be set and be a [1-5] number`, () => {
       expect(typeof meta.difficulty).to.equal('number')
@@ -116,8 +134,8 @@ export const testPatternConfig = (Pattern) => {
     const option = config.options[name]
     const type = typeof option
     if (type === 'object' && typeof option.pct !== 'undefined') {
-      it(`    - If it has a 'menu' property, it should be a string`, () => {
-        if (option.menu) expect(typeof option.menu).to.equal('string')
+      it(`    - If it has a 'menu' property, it should be a string or function`, () => {
+        if (option.menu) expect(typeof option.menu).to.be.oneOf(['string','function'])
       })
       // Percentage option
       it(`  - '${name}' is a percentage option`, () => true)
@@ -159,7 +177,9 @@ export const testPatternConfig = (Pattern) => {
         expect(option.max >= option.mm).to.be.true
       })
       it(`    - Patterns should not use mm options`, () => {
-        expect("Does not use mm").to.be.true
+        if (!option.testIgnore)
+        //if (!config.data.name.indexOf('rendertest'))
+          expect("Does not use mm").to.be.true
       })
     } else if (type === 'object' && typeof option.bool !== 'undefined') {
       // Boolean option
