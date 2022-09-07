@@ -1,27 +1,27 @@
 ---
 backScyeDart:
   title: Задня виточка пройми руки
-  description: The amount to take out in a dart at the back of the armhole.
+  description: Керує зменшенням виточки на задній частині пройми.
 frontScyeDart:
-  title: Front scye dart
-  description: The amount to take out in a dart at the front of the armhole.
+  title: Передня виточка пройми руки
+  description: Керує зменшенням виточки на передній частині пройми.
 pocketLocation:
-  title: Pocket location
-  description: Determines the placement of the pocket
+  title: Положення кишені
+  description: Керує розташуванням кишені
 pocketWidth:
-  title: Pocket width
-  description: Determines the width of the pocket
+  title: Ширина кишені
+  description: Керує шириною кишені
 weltHeight:
   title: Welt height
   description: Determines the height of the welt
 necklineDrop:
-  title: Neckline drop
-  description: Determines how low the neckline drops at the front
+  title: Спуск горловини
+  description: Керує спуском горловини зпереду
 frontStyle:
-  title: Neck opening style
-  description: Style of the neck opening
+  title: Стиль горловини
+  description: Визначає стиль горловини
 hemStyle:
-  title: Hem style
+  title: Стиль краю
   description: Style of the front hem
 hemRadius:
   title: Hem radius
