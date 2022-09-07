@@ -31,12 +31,11 @@ describe('Store', () => {
   });
 
   it("Should emit a warning when retrieving a invalid key", () => {
-    const events = []
     const warning = msg => events.push(msg)
-    const store = new Store([[ "emit.warning", warning]])
+    const store = new Store()
     store.get('nope')
-    expect(events.length).to.equal(1)
-    expect(events[0]).to.equal('Tried to access `nope` in the `store` but it is not set')
+    expect(store.get('logs.warning').length).to.equal(1)
+    expect(store.get('logs.warning')[0]).to.equal('Store.get(key) on key `nope`, which is undefined')
   });
 
   it("Should add methods to the store from a plugin", () => {
