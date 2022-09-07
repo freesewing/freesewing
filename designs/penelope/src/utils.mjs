@@ -109,8 +109,21 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
   let dartMiddle = curvePath.shiftAlong(distance)
 
   let curvePaths = curvePath.split(dartMiddle)
-  let dartLeft = curvePaths[0].reverse().shiftAlong(dartSize / 2)
-  let dartRight = curvePaths[1].shiftAlong(dartSize / 2)
+  // Fixme: These darts are too close to each other and when
+  // measurments get a certain way, they cross into each other
+  // which breaks the pattern. I've side-stepped the issue below
+  // but this needs to be handled somehow.
+  let dartLeft, dartRight
+  if (curvePaths[0].length() > dartSize / 2) {
+    dartLeft = curvePaths[0].reverse().shiftAlong(dartSize / 2)
+  } else {
+    dartLeft = curvePaths[0].start()
+  }
+  if (curvePaths[1].length() > dartSize / 2) {
+    dartRight = curvePaths[1].shiftAlong(dartSize / 2)
+  } else {
+    dartLeft = curvePaths[1].start()
+  }
 
   let distanceFactor = 0.15
   let leftCPdistance = Math.min(
