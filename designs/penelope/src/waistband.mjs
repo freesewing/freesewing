@@ -94,8 +94,8 @@ export const waistband = {
   measurements: ['waist', 'waistToKnee'],
   options: {
     waistBandOverlap: 25,
-    waistBand: { bool: true },
-    waistBandWidth: { pct: 10, min: 5, max: 20 },
+    waistBand: { bool: true, menu: 'style' },
+    waistBandWidth: { pct: 10, min: 5, max: 20, menu: 'style' },
   },
   plugins: [ pluginBundle ],
   draft: penelopeWaistband,
