@@ -25,13 +25,13 @@ crotchFactorBackHor:
   description: Робить криву шва на сідницях прямою (горизонтально)
 crotchFactorBackVer:
   title: Вертикальність посадки на сідницях
-  description: Used to move the curve of the crotch in the back vertically
+  description: Робить криву шва на сідницях прямою (вертикально)
 crotchFactorFrontHor:
-  title: Front Crotch Factor Horizontal
-  description: Used to move the curve of the crotch in the front horizontally
+  title: Горизонтальність посадки на животі
+  description: Робить криву шва на животі прямою (горизонтально)
 crotchFactorFrontVer:
-  title: Front Crotch Factor Vertical
-  description: Used to move the curve of the crotch in the front vertically
+  title: Вертикальність посадки на животі
+  description: Робить криву шва на животі прямою (вертикально)
 waistOverlap:
   title: Запах на талії
   description: Керує тим, наскільки частини штанини нашаровуються. При 0% частини зустрічаються по зовнішнім бокам, при 100% вони зустрічаються на внутрішній стороні.
