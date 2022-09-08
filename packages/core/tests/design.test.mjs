@@ -109,30 +109,5 @@ describe('Design', () => {
 
   */
 
-  it("Pattern constructor should add default hide() method to options", () => {
-    const design = new Design({
-      foo: "bar",
-      options: {
-        constant: 2,
-        percentage: { pct: 30, min: 0, max: 100 },
-        degree: { deg: 5, min: 0, max: 10 },
-        withHide: {
-          dflt: 'foo',
-          list: ['foo', 'bar'],
-          hide: ({ options }) => (options.degree < 6)
-        }
-      }
-    })
-
-    const pattern = new design().init();
-    expect(typeof pattern.config.options.constant === 'number').to.be.true
-    expect(typeof pattern.config.options.percentage === 'object').to.be.true
-    expect(typeof pattern.config.options.degree === 'object').to.be.true
-    expect(typeof pattern.config.options.withHide === 'object').to.be.true
-    expect(pattern.config.options.percentage.hide()).to.be.false
-    expect(pattern.config.options.degree.hide()).to.be.false
-    expect(pattern.config.options.withHide.hide(pattern.settings)).to.be.true
-  })
-
 })
 
