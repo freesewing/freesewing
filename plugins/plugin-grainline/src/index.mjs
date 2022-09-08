@@ -31,8 +31,11 @@ export const plugin = {
         ...dflts,
         ...so,
       }
-      const { points, complete } = this.shorthand()
-      this.setGrain(so.from.angle(so.to))
+      const { points, complete, setGrain } = this.shorthand()
+      // setGrain relies on plugin-cutlist
+      if (typeof setGrain === 'function') {
+        setGrain(so.from.angle(so.to))
+      }
       if (complete) {
         points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
         points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
