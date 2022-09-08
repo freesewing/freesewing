@@ -1,8 +1,8 @@
 - - -
-title: "Back neck cutout"
+title: "Rückenhalsausschnitt"
 - - -
 
-Controls how deep the neck opening is cut out in the back of the garment. In other words, increasing this will shift the neck opening to the back.
+Beeinflusst die Tiefe des Halsausschnitts im Rückenteil. In other words, increasing this will shift the neck opening to the back.
 
 ## Effekt dieser Option auf das Schnittmuster
 
