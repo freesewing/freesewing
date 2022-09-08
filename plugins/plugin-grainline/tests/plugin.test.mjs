@@ -1,12 +1,13 @@
 import chai from 'chai'
-import { round, Pattern } from '@freesewing/core'
+import { round, Design } from '@freesewing/core'
 import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Grainline Plugin Tests', () => {
   it('Should run the default grainline macro', () => {
-    const pattern = new Pattern().use(plugin)
+    const Pattern = new Design({ plugins: [ plugin ]})
+    const pattern = new Pattern()
     pattern.parts.test = new pattern.Part()
     pattern.parts.test.points.from = new pattern.Point(10, 20)
     pattern.parts.test.points.to = new pattern.Point(10, 230)
