@@ -32,7 +32,6 @@ export const strap = {
     */
     let apronWidth = measurements.waist * (1 - options.backOpening)
     let backOpening = apronWidth - Math.max(measurements.hips, measurements.waist)
-    let hemWidth = 3 * sa
 
     let hSpan = backOpening / 2 + bibWidth / 2
     let vSpan =
@@ -43,13 +42,15 @@ export const strap = {
     let strapWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
     let strapLength =
       Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chest * options.chestDepth
-    /*
+    let hemWidth = strapWidth
+      /*
     console.log('chestWidth ' + chestWidth)
     console.log('backOpening ' + backOpening)
     console.log('hSpan ' + hSpan)
     console.log('vSpan ' + vSpan)
     console.log('strapLength ' + strapLength)
     */
+
     points.topLeft = new Point(0, 0)
     points.topLeftHem = points.topLeft.shift(270, hemWidth)
     points.topMiddle = new Point(strapWidth, 0)
