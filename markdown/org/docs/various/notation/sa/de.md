@@ -2,9 +2,9 @@
 title: Nahtzugabe
 ---
 
-Seam allowance is indicated by a dashed line, that has the same width and color as the seam they belong to:
+Die Nahtzugabe wird durch die gestrichelte Linie angezeigt, die die gleiche Breite und Farbe hat, wie die entsprechende Nahtlinie:
 
-<Legend part="saLines"> Seam allowance for different fabric types </Legend>
+<Legend part="saLines"> Nahtzugabe für unterschiedliche Stoffarten </Legend>
 
 Note that the corners of the seam allowance are trimmed, and not extended:
 
