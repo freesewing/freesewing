@@ -1,4 +1,4 @@
-import { name, version } from '../package.json'
+import { name, version } from '../data.mjs'
 import { scalebox } from './scalebox.mjs'
 import { miniscale } from './miniscale.mjs'
 

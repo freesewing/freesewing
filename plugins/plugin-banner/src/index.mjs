@@ -1,4 +1,4 @@
-import { version, name } from '../package.json' assert { type: 'json' }
+import { version, name } from '../data.mjs'
 
 export const plugin = {
   name,

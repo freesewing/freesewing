@@ -1,4 +1,4 @@
-import { name, version } from '../package.json' assert { type: 'json' }
+import { name, version } from '../data.mjs'
 
 const markers = `
 <marker orient="auto" refY="4.0" refX="0.0" id="dimensionFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">

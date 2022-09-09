@@ -1,4 +1,4 @@
-import { name, version } from '../package.json'
+import { name, version } from '../data.mjs'
 import { sample, paperless, buildStylesheet } from './css.mjs'
 
 const grid = {
