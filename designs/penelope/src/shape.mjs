@@ -9,7 +9,7 @@ export const options = {
   dartMinimumDifference: 0.2,
   dartMinimumWidth: 0.006888,
   dartSideMinimum: 10,
-  dartBackControl1: 100,
+  dartBackControl1: 0.114,
   dartBackControl2: 5,
   dartBackControl3: 4,
   curvePlacement: 2.4,
