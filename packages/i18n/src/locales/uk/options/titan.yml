@@ -1,31 +1,31 @@
 ---
 kneeEase:
-  title: Knee ease
-  description: Controls the amout of ease at the knee
+  title: Свобода на коліні
+  description: Керує свободою облягання на коліні
 waistHeight:
-  title: Waist height
-  description: Controls the height of the waist, 100% = waist height, 0% = hip height
+  title: Висота пояса
+  description: Керує тим, як високо розташовуватиметься пояс, 100% = на талії, 0% = на кульші/тазі
 lengthBonus:
-  title: Length bonus
-  description: Controls the length of the trousers
+  title: Додаткова довжина
+  description: Керує довжиною штанів
 crotchDrop:
-  title: Crotch drop
-  description: Lowers the crotch for a more relaxed fit
+  title: Посадка
+  description: Це налаштування спускає посадку для більшої свободи облягання в області паху
 fitKnee:
-  title: Fit the knee
-  description: Fits the legs from based on the knee circumference, rather than seat circumference
+  title: Облягання коліна
+  description: Ногавиця будується на основі виміру "обхват коліна", аніж "обхват стегон"
 legBalance:
-  title: Leg balance
-  description: Controls the ratio between front and back panel of the leg
+  title: Співвідношення ногавиць
+  description: Керує співвідношенням між переднім та заднім полотнищами ногавиці
 crossSeamCurveStart:
-  title: Start of the cross seam curve
-  description: Controls how far into the cross seam we start to curve
+  title: Початок кривої посадки
+  description: Керує відстанню, після якої починається вигин посадки/повного пахового шва
 crossSeamCurveBend:
-  title: Cross seam bend
-  description: Controls the curvature of the cross seam
+  title: Вигин посадки
+  description: Керує самим вигином посадки/повного пахового шва
 crossSeamCurveAngle:
-  title: Cross seam angle
-  description: Controls the angle of the cross seam
+  title: Кут посадки
+  description: Керує кутом нахилу посадки/повного пахового шва
 crotchSeamCurveStart:
   title: Start of the crotch seam curve
   description: Controls how far into the crotch seam we start to curve
@@ -36,11 +36,11 @@ crotchSeamCurveAngle:
   title: Crotch seam angle
   description: Controls the angle of the crotch seam
 waistBalance:
-  title: Waist balance
-  description: Controls the horizontal position of the waist relative to the seat
+  title: Співвідношення пояса
+  description: Керує горизонтальним положенням пояса/талії відносно до стегон
 waistbandWidth:
-  title: Waistband width
-  description: The width of the waistband
+  title: Ширина пояса
+  description: Загальна ширина пояса
 grainlinePosition:
-  title: Grainline position
-  description: Controls the horizontal position of the leg relative to the seat
+  title: Розташування лінії зерна тканини
+  description: Керує горизонтальним положенням ногавиці відносно до стегон/посадки

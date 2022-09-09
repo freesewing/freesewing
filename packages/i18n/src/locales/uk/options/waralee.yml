@@ -1,44 +1,44 @@
 ---
 backPocket:
-  title: Back pocket
-  description: Whether to include a back pocket or not
+  title: Задня кишеня
+  description: Чи додавати кишеню ззаду
 frontPocket:
-  title: Front pocket
-  description: Whether to include a front pocket or not
+  title: Передня кишеня
+  description: Чи додавати кишеню спереду
 hemWidth:
-  title: Hem size
-  description: Size of the hem at the bottom of the pants
+  title: Розмір краю
+  description: Керує шириною краю знизу штанин
 waistbandWidth:
-  title: Waist Band
-  description: Size of the waist band
+  title: Пояс
+  description: Розмір пояса
 waistRaise:
-  title: Waist Raise
-  description: How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
+  title: Висота посадки
+  description: Визначає, наскільки високою буде посадка.
 crotchBack:
-  title: Crotch Back
-  description: The percentage of the seat circumference that the back crotch needs to occupy. This creates more or less space between the side seam and the back.
+  title: Посадка ззаду
+  description: Вільність посадки ззаду. Створює більше або менше місця між боковим швом та задом.
 crotchFront:
-  title: Crotch Front
-  description: The percentage of the seat circumference that the front crotch needs to occupy. This creates more or less space between the side seam and the front.
+  title: Посадка спереду
+  description: Вільність посадки спереду. Створює більше або менше місця між боковим швом та передом.
 crotchFactorBackHor:
-  title: Back Crotch Factor Horizontal
-  description: Used to move the curve of the crotch in the back horizontally
+  title: Горизонтальність посадки на сідницях
+  description: Робить криву шва на сідницях прямою (горизонтально)
 crotchFactorBackVer:
-  title: Back Crotch Factor Vertical
-  description: Used to move the curve of the crotch in the back vertically
+  title: Вертикальність посадки на сідницях
+  description: Робить криву шва на сідницях прямою (вертикально)
 crotchFactorFrontHor:
-  title: Front Crotch Factor Horizontal
-  description: Used to move the curve of the crotch in the front horizontally
+  title: Горизонтальність посадки на животі
+  description: Робить криву шва на животі прямою (горизонтально)
 crotchFactorFrontVer:
-  title: Front Crotch Factor Vertical
-  description: Used to move the curve of the crotch in the front vertically
+  title: Вертикальність посадки на животі
+  description: Робить криву шва на животі прямою (вертикально)
 waistOverlap:
-  title: Waist Overlap
-  description: This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back.
+  title: Запах на талії
+  description: Керує тим, наскільки частини штанини нашаровуються. При 0% частини зустрічаються по зовнішнім бокам, при 100% вони зустрічаються на внутрішній стороні.
 legShortening:
-  title: Leg Shortening
-  description: This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the more that will be taken off the length.
+  title: Довжина штанин
+  description: Керує довжиною штанин. Чим більше показник, тим коротше штанина.
 backRaise:
-  title: Back Raise
-  description: This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This seting allows you to raise this in the back if you need it for a good fit.
+  title: Посадка ззаду
+  description: Визначає наскільки високо сидять штани ззаду.
 

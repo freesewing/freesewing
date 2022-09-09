@@ -1,43 +1,43 @@
 ---
 backScyeDart:
-  title: Back scye dart
-  description: The amount to take out in a dart at the back of the armhole.
+  title: Задня виточка пройми руки
+  description: Керує зменшенням виточки на задній частині пройми.
 frontScyeDart:
-  title: Front scye dart
-  description: The amount to take out in a dart at the front of the armhole.
+  title: Передня виточка пройми руки
+  description: Керує зменшенням виточки на передній частині пройми.
 pocketLocation:
-  title: Pocket location
-  description: Determines the placement of the pocket
+  title: Положення кишені
+  description: Керує розташуванням кишені
 pocketWidth:
-  title: Pocket width
-  description: Determines the width of the pocket
+  title: Ширина кишені
+  description: Керує шириною кишені
 weltHeight:
-  title: Welt height
-  description: Determines the height of the welt
+  title: Висота листочки
+  description: Керує висотою листочки
 necklineDrop:
-  title: Neckline drop
-  description: Determines how low the neckline drops at the front
+  title: Спуск горловини
+  description: Керує спуском горловини спереду
 frontStyle:
-  title: Neck opening style
-  description: Style of the neck opening
+  title: Стиль горловини
+  description: Визначає стиль горловини
 hemStyle:
-  title: Hem style
-  description: Style of the front hem
+  title: Стиль краю
+  description: Визначає стиль переднього краю
 hemRadius:
-  title: Hem radius
-  description: Radius by which the hem is rounded
+  title: Радіус краю
+  description: Керує радіусом заокруглення краю
 backInset:
-  title: Back inset
-  description: How much the back of the armhole is cut inwards
+  title: Задній виріз рукава
+  description: Керує величиною вирізу рукава ззаду
 frontInset:
-  title: Front inset
-  description: How much the front of the armhole is cut inwards
+  title: Передній виріз рукава
+  description: Керує величиною вирізу рукава спереду
 shoulderInset:
-  title: Shoulder inset
-  description: How much the shoulder seam is cut inwards at the shoulder
+  title: Ширина плечового шва від руки
+  description: Змінює ширину плечового шва зі сторони рукава
 neckInset:
-  title: Neck inset
-  description: How much the shoulder seam is cut inwards at the neck
+  title: Ширина горловини
+  description: Змінює ширину плечового шва зі сторони шиї
 pocketAngle:
-  title: Pocket angle
-  description: Angle of the pocket slant
+  title: Кут кишені
+  description: Кут нахилу кишені

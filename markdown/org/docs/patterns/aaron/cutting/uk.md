@@ -1,17 +1,17 @@
 - - -
-title: "Aaron A-Shirt: Cutting Instructions"
+title: "Майка Аарон: Як вирізати деталі"
 - - -
 
-- Cut **1 back** on the fold
-- Cut **1 front** on the fold
+- Вирізати **1 деталь спини** на згині
+- Вирізати **1 деталь переду** на згині
 - Cut **3 strips** for neck opening and armhole binding
 
 <Warning>
 
-#### Caveats
+#### Зверніть увагу
 
-- There is no seam allowance on the armholes
-- There is no seam allowance on the neck opening
-- There is extra hem allowance at the hem
+- Пройми не мають припусків на шви
+- Горловина також не має припусків на шви
+- На краю майки не має додаткового припуску
 
 </Warning>

@@ -4,9 +4,9 @@ title: "Hugo hoodie: Sewing Instructions"
 
 <Note>
 
-###### Documentation under construction
+###### Dokumentation im Bau
 
-First the good news: There's a video series that shows how to make Hugo from start to finish.
+Erste gute Nachrichten: Es gibt eine Videoserie, die zeigt, wie man Hugo von Anfang bis Ende macht.
 Scrollen Sie nach unten, es ist eingebettet in diese Seite.
 
 Nun die schlechte Nachricht: Die schriftlichen Anweisungen für Hugo sind noch nicht vollständig.
@@ -15,9 +15,9 @@ Nun die schlechte Nachricht: Die schriftlichen Anweisungen für Hugo sind noch n
 
 ## Video
 
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+Ist der Text zu trocken für dich? Ich versuche, Videos als Teil der Musterdokumentation zur Verfügung zu stellen.
 
-This 6-episode series shows you how to make your hoodie start to finish:
+Diese 6-Episoden-Serie zeigt dir, wie du deine Hoodie zum Ende bringen kannst:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -29,7 +29,7 @@ This 6-episode series shows you how to make your hoodie start to finish:
 - Nähen Sie die Gesichtsstücke mit einem Abstand von 1cm an die Tasche an.  Nähen Sie sowohl den langen Rand als auch den kürzeren Rand am unteren Rand der Tasche.
 - Die Nahtzuweisung auf die Seitenteile sorgfältig abschneiden.
 - Drehen und drehen Sie die Gesichtsstücke gute Seiten aus.  Dann Handwalzen und drücken Sie die Nähte.
-- Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
+- Steppe mit Abstand von 0,5 cm zur Kante die obere und untere Seite der Tasche. Damit wird das Futter und die Nahtzugabe fixiert
 - Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Diese Stichlinie endet an der unteren Kantenstichlinie.
 - Abschneiden Sie den Überschuss an der Innenseite der Tasche.
 - Drücke die Kanten.
@@ -44,9 +44,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Schritt 3: Hänge die Ärmel an
 
-- The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
+- Die Seite des Ärmels mit der höheren/spitzeren Kante oben ist die Rückseite des Ärmels.  Sie ist auch durch einen doppelten Knips auf dem Schnittmuster gekennzeichnet.
 
-- Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
+- Nähe den vorderen Ärmel rechts auf rechts auf das Vorderteil. Die (einfachen) Knipse am Vorderteil und am Ärmel liegen aufeinander. Stitch the seam.  Do this for both sleeve pieces.
 
 - Um die Naht zu beenden, können Sie eine dieser Methoden verwenden:
 
