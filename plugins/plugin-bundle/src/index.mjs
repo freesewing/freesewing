@@ -12,7 +12,7 @@ import { scaleboxPlugin } from  '../../plugin-scalebox/src/index.mjs'
 import { roundPlugin } from     '../../plugin-round/src/index.mjs'
 import { sprinklePlugin } from '../../plugin-sprinkle/src/index.mjs'
 import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
-import { name, version } from '../package.json'
+import { name, version } from '../data.mjs'
 
 const bundledPlugins = [
   bannerPlugin,

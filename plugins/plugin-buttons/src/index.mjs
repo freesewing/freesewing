@@ -1,4 +1,4 @@
-import { name, version } from '../package.json' assert { type: 'json' }
+import { name, version } from '../data.mjs'
 
 const defs = [
   // button

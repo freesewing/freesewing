@@ -1,4 +1,4 @@
-import { name, version } from '../package.json'
+import { name, version } from '../data.mjs'
 
 const lineValues = (start, end) => {
   const { x: x1, y: y1 } = start

@@ -1,4 +1,4 @@
-import { version, name } from '../package.json' assert { type: 'json' }
+import { version, name } from '../data.mjs'
 
 // Helper method to construct prefixed/suffixed name
 const getName = (n, so) => `${so.prefix}${n}${so.suffix}`
