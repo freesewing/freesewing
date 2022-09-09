@@ -2,7 +2,7 @@ import { frontSideDart as bellaFront } from '@freesewing/bella'
 import * as options from './options.mjs'
 
 function nobleFrontPoints(part) {
-  const { points, Path, paths, snippets, options, macro } = part.shorthand()
+  const { points, Path, paths, snippets, options, macro, raise } = part.shorthand()
 
   const bCircle = 0.552284749831
 

@@ -2,7 +2,7 @@ import { back as bellaBack } from '@freesewing/bella'
 import * as options from './options.mjs'
 
 function nobleBackPoints(part) {
-  const { points, Path, paths, options, snippets } = part.shorthand()
+  const { points, Path, paths, options, snippets, raise } = part.shorthand()
 
   // Hide Bella paths
   for (let key of Object.keys(paths)) paths[key].render = false
