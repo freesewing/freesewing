@@ -11,7 +11,8 @@ tasks:
       # nvm use lts/fermium
       nvm install lts/gallium
       nvm use lts/gallium
-    command: yarn kickstart && yarn lab
+    # command: yarn kickstart && yarn lab
+    command: yarn lab
 
 github:
   prebuilds:
