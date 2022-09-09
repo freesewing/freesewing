@@ -200,9 +200,10 @@ Part.prototype.shorthand = function () {
   // Add top-level store methods and add a part name parameter
   const partName = this.name
   for (const [key, method] of Object.entries(this.context.store)) {
-    if (typeof method === 'function') shorthand[key] = function(...args) {
-      return method(partName, ...args)
-    }
+    if (typeof method === 'function')
+      shorthand[key] = function (...args) {
+        return method(partName, ...args)
+      }
   }
 
   // We'll need this
@@ -345,16 +346,16 @@ Part.prototype.shorthand = function () {
   return shorthand
 }
 
-Part.prototype.generateTransform = function(transforms) {
-  const {move, rotate, flipX, flipY} = transforms;
-  const generated = utils.generatePartTransform(move.x, move.y, rotate, flipX, flipY, this);
+Part.prototype.generateTransform = function (transforms) {
+  const { move, rotate, flipX, flipY } = transforms
+  const generated = utils.generatePartTransform(move.x, move.y, rotate, flipX, flipY, this)
 
   for (var t in generated) {
-    this.attr(t, generated[t], true);
+    this.attr(t, generated[t], true)
   }
 }
 
-Part.prototype.isEmpty = function() {
+Part.prototype.isEmpty = function () {
   if (Object.keys(this.snippets).length > 0) return false
 
   if (Object.keys(this.paths).length > 0) {

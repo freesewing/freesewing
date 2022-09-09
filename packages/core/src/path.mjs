@@ -912,4 +912,3 @@ Path.prototype.translate = function (x, y) {
 
   return clone
 }
-

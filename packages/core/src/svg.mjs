@@ -311,4 +311,3 @@ Svg.prototype.getId = function () {
 
   return '' + this.freeId
 }
-

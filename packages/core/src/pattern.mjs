@@ -1,6 +1,7 @@
 import { Attributes } from './attributes.mjs'
 import pack from 'bin-pack'
 import {
+  addNonEnumProp,
   macroName,
   sampleStyle,
   capitalize,
@@ -16,146 +17,108 @@ import { Store } from './store.mjs'
 import { Hooks } from './hooks.mjs'
 import { version } from '../data.mjs'
 
-/*
- * Makes sure an object passed to be attached as a part it not merely a method
- */
-const decoratePartDependency = (obj, name) => (typeof obj === 'function') ? { draft: obj, name } : obj
+export function Pattern(config) {
+  // Non-enumerable properties
+  addNonEnumProp(this, 'plugins', {})
+  addNonEnumProp(this, 'width', 0)
+  addNonEnumProp(this, 'height', 0)
+  addNonEnumProp(this, 'autoLayout', { parts: {} })
+  addNonEnumProp(this, 'is', '')
+  addNonEnumProp(this, 'hooks', new Hooks())
+  addNonEnumProp(this, 'Point', Point)
+  addNonEnumProp(this, 'Path', Path)
+  addNonEnumProp(this, 'Snippet', Snippet)
+  addNonEnumProp(this, 'Attributes', Attributes)
+  addNonEnumProp(this, 'macros', {})
+  addNonEnumProp(this, '__parts', {})
+  addNonEnumProp(this, '__inject', {})
+  addNonEnumProp(this, '__dependencies', {})
+  addNonEnumProp(this, '__resolvedDependencies', {})
+  addNonEnumProp(this, '__draftOrder', [])
+  addNonEnumProp(this, '__hide', {})
 
-
-export function Pattern(config = { options: {} }) {
-
-  // Apply default settings
-  this.settings = {
-    complete: true,
-    idPrefix: 'fs-',
-    locale: 'en',
-    units: 'metric',
-    margin: 2,
-    scale: 1,
-    layout: true,
-    debug: false,
-    options: {},
-    absoluteOptions: {},
-  }
-
-  // Object to hold events
-  this.events = {
-    debug: [],
-    error: [],
-    info: [],
-    suggestion: [],
-    warning: [],
-  }
-
-  // Keep track of loaded plugins
-  this.plugins = {}
-
-  // Raise methods - Make events and settings avialable in them
-  const events = this.events
-  const settings = this.settings
-  this.raise = {
-    debug: function (data) {
-      // Debug only if debug is active
-      if (settings.debug) events.debug.push(data)
-    },
-    error: function (data) {
-      events.error.push(data)
-    },
-    info: function (data) {
-      events.info.push(data)
-    },
-    suggestion: function (data) {
-      events.info.push(data)
-    },
-    warning: function (data) {
-      events.warning.push(data)
-    },
-  }
-
-  // Say hi
-  const name = config?.data?.name || 'No Name'
-  const patversion = config?.data?.version || 'No Version'
-  this.raise.info(
-    `New \`${name}:${patversion}\` pattern using \`@freesewing/core:${version}\``
-  )
-
-  // More things that go in a pattern
-  this.config = config // Pattern configuration
-  this.width = 0 // Will be set after render
-  this.height = 0 // Will be set after render
-  this.is = '' // Will be set when drafting/sampling
-  this.autoLayout = { parts: {} } // Will hold auto-generated layout
-  this.cutList = {} // Will hold the cutlist
-  this.store = new Store([[ 'log', this.raise]]) // Store for sharing data across parts
+  // Enumerable properties
+  this.config = config // Design config
   this.parts = {} // Parts container
-  this.hooks = new Hooks() // Hooks container
-  this.Point = Point // Point constructor
-  this.Path = Path // Path constructor
-  this.Snippet = Snippet // Snippet constructor
-  this.Attributes = Attributes // Attributes constructor
-  this.initialized = 0 // Keep track of init calls
-  this.macros = {} // Macros
+  this.store = new Store() // Store for sharing data across parts
 
-  if (typeof this.config.dependencies === 'undefined') this.config.dependencies = {}
-  if (typeof this.config.inject === 'undefined') this.config.inject = {}
-  if (typeof this.config.hide === 'undefined') this.config.hide = []
+  return this
+}
 
-  // Convert options
-  this.addOptions(config.options)
-  if (this.config.parts) {
-    for (const partName in this.config.parts) {
-      if (this.config.parts[partName].options) this.addOptions(this.config.parts[partName].options)
-    }
-  }
+/*
+ * We allow late-stage updating of the design config (adding parts for example)
+ * so we need to do the things we used to do in the contructor at a later stage.
+ * This methods does that, and resolves the design config + user settings
+ * Defer some things that used to happen in the constructor to
+ * and in doing so creating a pattern we can draft
+ */
+Pattern.prototype.init = function () {
+  // Resolve configuration
+  this.__resolveParts() // Resolves parts
+    .__resolveDependencies() // Resolves dependencies
+    .__resolveDraftOrder() // Resolves draft order
+    .__loadPlugins() // Loads plugins
+    .__filterOptionalMeasurements() // Removes required m's from optional list
+    .__loadConfigData() // Makes config data available in store
+    .__loadOptionDefaults() // Merges default options with user provided ones
 
+  // Say hello
+  this.store.log.info(
+    `New \`${this.store.get('data.name', 'No Name')}:` +
+      `${this.store.get('data.version', 'No version')}\` pattern using \`@freesewing/core:${version}\``
+  )
+  this.store.log.info(`Pattern initialized. Draft order is: ${this.__draftOrder.join(', ')}`)
+
+  return this
+}
+
+Pattern.prototype.__loadConfigData = function () {
+  if (this.config.data) this.store.set('data', this.config.data)
+
+  return this
+}
+
+Pattern.prototype.__createPartWithContext = function (name) {
   // Context object to add to Part closure
-  const context = {
+  const part = new Part()
+  part.name = name
+  part.context = {
     parts: this.parts,
     config: this.config,
     settings: this.settings,
     store: this.store,
     macros: this.macros,
-    events: this.events,
-    raise: this.raise,
   }
 
-  // Part closure
-  this.Part = function (name = false) {
-    let part = new Part()
-    part.context = context
-    for (let macro in context.macros) {
-      part[macroName(macro)] = context.macros[macro]
-    }
-    if (name) part.name = name
-
-    return part
+  for (const macro in this.macros) {
+    part[macroName(macro)] = this.macros[macro]
   }
+
+  return part
 }
 
-// Converts/adds options
-Pattern.prototype.addOptions = function(options={}) {
-  for (const i in options) {
-    // Add to config
-    const option = options[i]
-    this.config.options[i] = option
-    if (typeof option === 'object') {
-      if (typeof option.pct !== 'undefined') this.settings.options[i] = option.pct / 100
-      else if (typeof option.mm !== 'undefined') this.settings.options[i] = option.mm
-      else if (typeof option.deg !== 'undefined') this.settings.options[i] = option.deg
-      else if (typeof option.count !== 'undefined') this.settings.options[i] = option.count
-      else if (typeof option.bool !== 'undefined') this.settings.options[i] = option.bool
-      else if (typeof option.dflt !== 'undefined') this.settings.options[i] = option.dflt
-      else {
-        let err = 'Unknown option type: ' + JSON.stringify(option)
-        this.raise.error(err)
-        throw new Error(err)
-      }
-    } else {
-      this.settings.options[i] = option
+// Merges default for options with user-provided options
+Pattern.prototype.__loadOptionDefaults = function () {
+  if (Object.keys(this.config.options).length < 1) return this
+  for (const [name, option] of Object.entries(this.config.options)) {
+    // Don't overwrite user-provided settings.options
+    if (typeof this.settings.options[name] === 'undefined') {
+      if (typeof option === 'object') {
+        if (typeof option.pct !== 'undefined') this.settings.options[name] = option.pct / 100
+        else if (typeof option.mm !== 'undefined') this.settings.options[name] = option.mm
+        else if (typeof option.deg !== 'undefined') this.settings.options[name] = option.deg
+        else if (typeof option.count !== 'undefined') this.settings.options[name] = option.count
+        else if (typeof option.bool !== 'undefined') this.settings.options[name] = option.bool
+        else if (typeof option.dflt !== 'undefined') this.settings.options[name] = option.dflt
+        else {
+          let err = 'Unknown option type: ' + JSON.stringify(option)
+          this.store.log.error(err)
+          throw new Error(err)
+        }
+      } else this.settings.options[name] = option
     }
   }
 
-  // Make it chainable
   return this
 }
 
@@ -170,37 +133,6 @@ Pattern.prototype.getPartList = function () {
   this.init()
   return Object.keys(this.config.parts) || []
 }
-
-
-/*
- * Defer some things that used to happen in the constructor to
- * facilitate late-stage adding of parts
- */
-Pattern.prototype.init = function () {
-  this.initialized++
-  // Resolve all dependencies
-  this.dependencies = this.config.dependencies
-  this.inject = this.config.inject
-  this.__parts = this.config.parts
-  this.preresolveDependencies()
-  this.resolvedDependencies = this.resolveDependencies(this.dependencies)
-  this.config.resolvedDependencies = this.resolvedDependencies
-  this.config.draftOrder = this.draftOrder(this.resolvedDependencies)
-  // Load plugins
-  if (this.config.plugins) {
-    for (const plugin of Object.values(this.config.plugins)) this.use(plugin)
-  }
-
-  // Make all parts uniform
-  if (this.__parts) {
-    for (const [key, value] of Object.entries(this.__parts)) {
-      this.__parts[key] = decoratePartDependency(value)
-    }
-  }
-
-  return this
-}
-
 
 function snappedOption(option, pattern) {
   const conf = pattern.config.options[option]
@@ -232,34 +164,11 @@ function snappedOption(option, pattern) {
   return abs
 }
 
-// Merges settings object with this.settings
-Pattern.prototype.apply = function (settings) {
-  if (typeof settings !== 'object') {
-    this.raise.warning('Pattern instantiated without any settings')
-    return this
-  }
-  for (let key of Object.keys(settings)) {
-    if (Array.isArray(settings[key])) {
-      if (Array.isArray(this.settings[key])) {
-        for (let entry of settings[key]) this.settings[key].push(entry)
-      } else this.settings[key] = settings[key]
-    } else if (typeof settings[key] === 'object') {
-      this.settings[key] = {
-        ...this.settings[key],
-        ...settings[key],
-      }
-    } else this.settings[key] = settings[key]
-  }
-  if (!this.settings.debug) this.debug = false
-
-  return this
-}
-
 Pattern.prototype.runHooks = function (hookName, data = false) {
   if (data === false) data = this
   let hooks = this.hooks[hookName]
   if (hooks.length > 0) {
-    this.raise.debug(`Running \`${hookName}\` hooks`)
+    this.store.log.debug(`Running \`${hookName}\` hooks`)
     for (let hook of hooks) {
       hook.method(data, hook.data)
     }
@@ -274,11 +183,9 @@ Pattern.prototype.addPart = function (part) {
     if (part.name) {
       this.config.parts[part.name] = part
       // Add part-level config to config
-      this.config = addPartConfig(part, this.config, this.raise)
-    }
-    else this.raise.error(`Part must have a name`)
-  }
-  else this.raise.error(`Part must have a draft() method`)
+      this.config = addPartConfig(part, this.config, this.store)
+    } else this.store.log.error(`Part must have a name`)
+  } else this.store.log.error(`Part must have a draft() method`)
 
   return this
 }
@@ -293,7 +200,7 @@ Pattern.prototype.draft = function () {
   if (this.is !== 'sample') {
     this.is = 'draft'
     this.cutList = {}
-    this.raise.debug(`Drafting pattern`)
+    this.store.log.debug(`Drafting pattern`)
   }
   // Handle snap for pct options
   for (let i in this.settings.options) {
@@ -308,23 +215,18 @@ Pattern.prototype.draft = function () {
 
   this.runHooks('preDraft')
   // Don't forget about parts without any dependencies
-  const allParts = [...new Set([
-    ...this.config.draftOrder,
-    ...Object.keys(this.__parts)
-  ])]
+  const allParts = [...new Set([...this.config.draftOrder, ...Object.keys(this.__parts)])]
   for (const partName of allParts) {
     // Create parts
-    this.raise.debug(`Creating part \`${partName}\``)
-    this.parts[partName] = new this.Part(partName)
+    this.store.log.debug(`Creating part \`${partName}\``)
+    this.parts[partName] = this.__createPartWithContext(partName)
     // Handle inject/inheritance
     if (typeof this.inject[partName] === 'string') {
-      this.raise.debug(
-        `Injecting part \`${this.inject[partName]}\` into part \`${partName}\``
-      )
+      this.store.log.debug(`Injecting part \`${this.inject[partName]}\` into part \`${partName}\``)
       try {
         this.parts[partName].inject(this.parts[this.inject[partName]])
       } catch (err) {
-        this.raise.error([
+        this.store.log.error([
           `Could not inject part \`${this.inject[partName]}\` into part \`${partName}\``,
           err,
         ])
@@ -337,18 +239,17 @@ Pattern.prototype.draft = function () {
           this.parts[partName] = this.__parts[partName].draft(this.parts[partName])
           if (this.parts[partName].render) this.cutList[partName] = this.parts[partName].cut
         } catch (err) {
-          this.raise.error([`Unable to draft part \`${partName}\``, err])
+          this.store.log.error([`Unable to draft part \`${partName}\``, err])
         }
-      }
-      else this.raise.error(`Unable to draft pattern. Part.draft() is not callable`)
+      } else this.store.log.error(`Unable to draft pattern. Part.draft() is not callable`)
       try {
         this.parts[partName].render =
           this.parts[partName].render === false ? false : this.wants(partName)
       } catch (err) {
-        this.raise.error([`Unable to set \`render\` property on part \`${partName}\``, err])
+        this.store.log.error([`Unable to set \`render\` property on part \`${partName}\``, err])
       }
     } else {
-      this.raise.debug(
+      this.store.log.debug(
         `Part \`${partName}\` is not needed. Skipping draft and setting render to \`false\``
       )
       this.parts[partName].render = false
@@ -430,7 +331,7 @@ Pattern.prototype.sampleRun = function (parts, anchors, run, runs, extraClass = 
  */
 Pattern.prototype.sampleOption = function (optionName) {
   this.is = 'sample'
-  this.raise.debug(`Sampling option \`${optionName}\``)
+  this.store.log.debug(`Sampling option \`${optionName}\``)
   this.runHooks('preSample')
   let step, val
   let factor = 1
@@ -480,13 +381,13 @@ Pattern.prototype.sampleListOption = function (optionName) {
  */
 Pattern.prototype.sampleMeasurement = function (measurementName) {
   this.is = 'sample'
-  this.raise.debug(`Sampling measurement \`${measurementName}\``)
+  this.store.log.debug(`Sampling measurement \`${measurementName}\``)
   this.runHooks('preSample')
   let anchors = {}
   let parts = this.sampleParts()
   let val = this.settings.measurements[measurementName]
   if (val === undefined)
-    this.raise.error(`Cannot sample measurement \`${measurementName}\` because it's \`undefined\``)
+    this.store.log.error(`Cannot sample measurement \`${measurementName}\` because it's \`undefined\``)
   let step = val / 50
   val = val * 0.9
   for (let run = 1; run < 11; run++) {
@@ -505,7 +406,7 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
  */
 Pattern.prototype.sampleModels = function (models, focus = false) {
   this.is = 'sample'
-  this.raise.debug(`Sampling models`)
+  this.store.log.debug(`Sampling models`)
   this.runHooks('preSample')
   let anchors = {}
   let parts = this.sampleParts()
@@ -545,46 +446,53 @@ Pattern.prototype.on = function (hook, method, data) {
   return this
 }
 
-Pattern.prototype.loadPlugin = function (plugin, data, explicit=false) {
-  this.plugins[plugin.name] = plugin
-  if (plugin.hooks) this.loadPluginHooks(plugin, data)
-  if (plugin.macros) this.loadPluginMacros(plugin)
-  if (plugin.store) this.loadPluginStoreMethods(plugin)
-  this.raise.info(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
+Pattern.prototype.__loadPlugins = function () {
+  for (const plugin of this.config.plugins) this.use(plugin)
 
   return this
 }
 
+Pattern.prototype.__loadPlugin = function (plugin, data, explicit = false) {
+  this.plugins[plugin.name] = plugin
+  if (plugin.hooks) this.__loadPluginHooks(plugin, data)
+  if (plugin.macros) this.__loadPluginMacros(plugin)
+  if (plugin.store) this.__loadPluginStoreMethods(plugin)
+  this.store.log.info(`Loaded plugin \`${plugin.name}:${plugin.version}\``)
+
+  return this
+}
 
 Pattern.prototype.use = function (plugin, data) {
-  // Existing plugin - But we may still need to load it
-  // if it was previously loaded conditionally, and is now loaded explicitly
   if (this.plugins?.[plugin.name]?.condition && !plugin.condition) {
-    this.raise.info(
+    // Plugin was first loaded conditionally, and is now loaded explicitly
+    this.store.log.info(
       `Plugin \`${plugin.plugin.name} was loaded conditionally earlier, but is now loaded explicitly.`
     )
-    return this.loadPlugin(plugin, data)
+    return this.__loadPlugin(plugin, data)
   }
-  // New plugin?
-  else if (!this.plugins?.[plugin.name]) return (plugin.plugin && plugin.condition)
-    ? this.useIf(plugin, data) // Conditional plugin
-    : this.loadPlugin(plugin, data)  // Regular plugin
+  // New plugin
+  else if (!this.plugins?.[plugin.name])
+    return plugin.plugin && plugin.condition
+      ? this.__useIf(plugin, data) // Conditional plugin
+      : this.__loadPlugin(plugin, data) // Regular plugin
 
-  this.raise.info(
-    `Plugin \`${plugin.plugin ? plugin.plugin.name : plugin.name}\` was requested, but it's already loaded. Skipping.`
+  this.store.log.info(
+    `Plugin \`${
+      plugin.plugin ? plugin.plugin.name : plugin.name
+    }\` was requested, but it's already loaded. Skipping.`
   )
 
   return this
 }
 
-Pattern.prototype.useIf = function (plugin, settings) {
+Pattern.prototype.__useIf = function (plugin, settings) {
   if (plugin.condition(settings)) {
-    this.raise.info(
+    this.store.log.info(
       `Condition met: Loaded plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
     )
-    this.loadPlugin(plugin.plugin, plugin.data)
+    this.__loadPlugin(plugin.plugin, plugin.data)
   } else {
-    this.raise.info(
+    this.store.log.info(
       `Condition not met: Skipped loading plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
     )
   }
@@ -592,7 +500,7 @@ Pattern.prototype.useIf = function (plugin, settings) {
   return this
 }
 
-Pattern.prototype.loadPluginHooks = function (plugin, data) {
+Pattern.prototype.__loadPluginHooks = function (plugin, data) {
   for (let hook of Object.keys(this.hooks)) {
     if (typeof plugin.hooks[hook] === 'function') {
       this.on(hook, plugin.hooks[hook], data)
@@ -604,7 +512,7 @@ Pattern.prototype.loadPluginHooks = function (plugin, data) {
   }
 }
 
-Pattern.prototype.loadPluginMacros = function (plugin) {
+Pattern.prototype.__loadPluginMacros = function (plugin) {
   for (let macro in plugin.macros) {
     if (typeof plugin.macros[macro] === 'function') {
       this.macro(macro, plugin.macros[macro])
@@ -612,9 +520,9 @@ Pattern.prototype.loadPluginMacros = function (plugin) {
   }
 }
 
-Pattern.prototype.loadPluginStoreMethods = function (plugin) {
+Pattern.prototype.__loadPluginStoreMethods = function (plugin) {
   if (Array.isArray(plugin.store)) this.store = this.store.extend(...plugin.store)
-  else this.raise.warning(`Plugin store methods should be an Array`)
+  else this.store.log.warning(`Plugin store methods should be an Array`)
 }
 
 Pattern.prototype.macro = function (key, method) {
@@ -624,7 +532,7 @@ Pattern.prototype.macro = function (key, method) {
 /** Packs parts in a 2D space and sets pattern size */
 Pattern.prototype.pack = function () {
   if (this.events.error.length > 0) {
-    this.raise.warning(`One or more errors occured. Not packing pattern parts`)
+    this.store.log.warning(`One or more errors occured. Not packing pattern parts`)
     return this
   }
   let bins = []
@@ -666,7 +574,7 @@ Pattern.prototype.pack = function () {
       // Some parts are added by late-stage plugins
       if (this.parts[partId]) {
         let transforms = this.settings.layout.parts[partId]
-        this.parts[partId].generateTransform(transforms);
+        this.parts[partId].generateTransform(transforms)
       }
     }
   }
@@ -675,7 +583,7 @@ Pattern.prototype.pack = function () {
 }
 
 /** Determines the order to draft parts in, based on dependencies */
-Pattern.prototype.draftOrder = function (graph = this.resolveDependencies()) {
+Pattern.prototype.__resolveDraftOrder = function (graph = this.__resolvedDependencies) {
   let sorted = []
   let visited = {}
   Object.keys(graph).forEach(function visit(name, ancestors) {
@@ -691,16 +599,19 @@ Pattern.prototype.draftOrder = function (graph = this.resolveDependencies()) {
     if (sorted.indexOf(name) < 0) sorted.push(name)
   })
 
-  return sorted
+  // Don't forget about parts without dependencies
+  for (const part in this.__parts) {
+    if (sorted.indexOf(part) === -1) sorted.push(part)
+  }
+
+  this.__draftOrder = sorted
+  this.config.draftOrder = sorted
+
+  return this
 }
 
 /** Recursively solves part dependencies for a part */
-Pattern.prototype.resolveDependency = function (
-  seen,
-  part,
-  graph = this.dependencies,
-  deps = []
-) {
+Pattern.prototype.resolveDependency = function (seen, part, graph = this.dependencies, deps = []) {
   if (typeof seen[part] === 'undefined') seen[part] = true
   if (typeof graph[part] === 'string') graph[part] = [graph[part]]
   if (Array.isArray(graph[part])) {
@@ -715,103 +626,97 @@ Pattern.prototype.resolveDependency = function (
 }
 
 /** Adds a part as a simple dependency **/
-Pattern.prototype.addDependency = function (name, part, dep) {
-  // FIXME: This causes issues
-  //if (part.hideDependencies || part.hideAll) {
-  //  dep.hide = true
-  //  dep.hideAll = true
-  //}
-  this.dependencies[name] = mergeDependencies(dep.name, this.dependencies[name])
+Pattern.prototype.__addDependency = function (name, part, dep) {
+  this.__dependencies[name] = mergeDependencies(dep.name, this.__dependencies[name])
   if (typeof this.__parts[dep.name] === 'undefined') {
-    this.__parts[dep.name] = decoratePartDependency(dep)
-    addPartConfig(this.__parts[dep.name], this.config, this.raise)
+    this.config = addPartConfig(this.__parts[dep.name], this.config, this.store)
   }
 
   return this
 }
 
 /** Filter optional measurements out if they are also required measurements */
-Pattern.prototype.filterOptionalMeasurements = function () {
+Pattern.prototype.__filterOptionalMeasurements = function () {
   this.config.optionalMeasurements = this.config.optionalMeasurements.filter(
-    m => this.config.measurements.indexOf(m) === -1
+    (m) => this.config.measurements.indexOf(m) === -1
   )
 
   return this
 }
 
 /** Pre-Resolves part dependencies that are passed in 2022 style */
-Pattern.prototype.preresolveDependencies = function (count=0) {
-  if (!this.__parts) return
+Pattern.prototype.__resolveParts = function (count = 0) {
+  if (count === 0) {
+    for (const part of this.config.parts) {
+      this.__parts[part.name] = part
+    }
+  }
   for (const [name, part] of Object.entries(this.__parts)) {
     // Inject (from)
     if (part.from) {
-      this.inject[name] = part.from.name
+      this.__parts[part.from.name] = part.from
+      this.__inject[name] = part.from.name
       if (typeof this.__parts[part.from.name] === 'undefined') {
-        this.__parts[part.from.name] = decoratePartDependency(part.from)
         if (part.hideDependencies || part.hideAll) {
           this.__parts[part.from.name].hide = true
           this.__parts[part.from.name].hideAll = true
         }
-        addPartConfig(this.__parts[part.from.name], this.config, this.raise)
+        //this.config = addPartConfig(this.__parts[part.from.name], this.config, this.store)
       }
     }
     // Simple dependency (after)
     if (part.after) {
       if (Array.isArray(part.after)) {
-        for (const dep of part.after) this.addDependency(name, part, dep)
+        for (const dep of part.after) {
+          this.__parts[dep.name] = dep
+          this.__addDependency(name, part, dep)
+        }
+      } else {
+        this.__parts[part.after.name] = part.after
+        this.__addDependency(name, part, part.after)
       }
-      else this.addDependency(name, part, part.after)
     }
   }
   // Did we discover any new dependencies?
   const len = Object.keys(this.__parts).length
-
-  if (len > count) return this.preresolveDependencies(len)
+  // If so, resolve recursively
+  if (len > count) return this.__resolveParts(len)
 
   for (const [name, part] of Object.entries(this.__parts)) {
-    addPartConfig(part, this.config, this.raise)
+    this.config = addPartConfig(part, this.config, this.store)
   }
 
-  // Weed out doubles
-  return this.filterOptionalMeasurements()
+  return this
 }
 
 /** Resolves part dependencies into a flat array */
-Pattern.prototype.resolveDependencies = function (graph = this.dependencies) {
-  for (let i in this.inject) {
-    let dependency = this.inject[i]
-    if (typeof this.dependencies[i] === 'undefined') this.dependencies[i] = dependency
-    else if (this.dependencies[i] !== dependency) {
-      if (typeof this.dependencies[i] === 'string') {
-        this.dependencies[i] = [this.dependencies[i], dependency]
-      } else if (Array.isArray(this.dependencies[i])) {
-        if (this.dependencies[i].indexOf(dependency) === -1)
-          this.dependencies[i].push(dependency)
+Pattern.prototype.__resolveDependencies = function (graph = false) {
+  if (!graph) graph = this.__dependencies
+  for (const i in this.__inject) {
+    const dependency = this.__inject[i]
+    if (typeof this.__dependencies[i] === 'undefined') this.__dependencies[i] = dependency
+    else if (this.__dependencies[i] !== dependency) {
+      if (typeof this.__dependencies[i] === 'string') {
+        this.__dependencies[i] = [this.__dependencies[i], dependency]
+      } else if (Array.isArray(this.__dependencies[i])) {
+        if (this.__dependencies[i].indexOf(dependency) === -1)
+          this.__dependencies[i].push(dependency)
       } else {
-        this.raise.error('Part dependencies should be a string or an array of strings')
+        this.store.log.error('Part dependencies should be a string or an array of strings')
         throw new Error('Part dependencies should be a string or an array of strings')
       }
     }
-    // Parts both in the parts and dependencies array trip up the dependency resolver
-    if (Array.isArray(this.__parts)) {
-      let pos = this.__parts.indexOf(this.inject[i])
-      if (pos !== -1) this.__parts.splice(pos, 1)
-    }
   }
-
-  // Include parts outside the dependency graph
-  //if (typeof this.config.parts === 'object') {
-  //  for (const part of Object.values(this.config.parts)) {
-  //    if (typeof part === 'string' && typeof this.dependencies[part] === 'undefined') this.dependencies[part] = []
-  //  }
-  //}
 
   let resolved = {}
   let seen = {}
   for (let part in graph) resolved[part] = this.resolveDependency(seen, part, graph)
   for (let part in seen) if (typeof resolved[part] === 'undefined') resolved[part] = []
 
-  return resolved
+  this.__resolvedDependencies = resolved
+  this.config.resolvedDependencies = resolved
+
+  return this
 }
 
 /** Determines whether a part is needed
@@ -856,7 +761,7 @@ Pattern.prototype.isHidden = function (partName) {
  */
 Pattern.prototype.wants = function (partName) {
   if (this.isHidden(partName)) return false
-  else if (typeof this.settings.only === 'string') return (this.settings.only === partName)
+  else if (typeof this.settings.only === 'string') return this.settings.only === partName
   else if (Array.isArray(this.settings.only)) {
     for (const part of this.settings.only) {
       if (part === partName) return true
@@ -915,4 +820,23 @@ Pattern.prototype.getRenderProps = function () {
   }
 
   return props
+}
+
+// Merges settings object with default settings
+Pattern.prototype.__applySettings = function (settings) {
+  this.settings = {
+    complete: true,
+    idPrefix: 'fs-',
+    locale: 'en',
+    units: 'metric',
+    margin: 2,
+    scale: 1,
+    layout: true,
+    debug: false,
+    options: {},
+    absoluteOptions: {},
+    ...settings
+  }
+
+  return this
 }

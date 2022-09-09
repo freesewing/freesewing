@@ -1,7 +1,6 @@
 import { Pattern } from './pattern.mjs'
 import { addPartConfig } from './utils.mjs'
 
-
 /*
  * The Design constructor. Returns a Pattern constructor
  * So it's sort of a super-constructor
@@ -14,43 +13,18 @@ export function Design(config) {
     optionalMeasurements: [],
     options: {},
     parts: [],
+    data: {},
     plugins: [],
-    // A place to store deprecation and other warnings before we even have a pattern instantiated
-    events: {
-      debug: [],
-      error: [],
-      info: [],
-      suggestion: [],
-      warning: [],
-    },
     ...config
   }
-  const raiseEvent = function (data, type) {
-    config.events[type].push(data)
-  }
-  // Polyfill for pattern raise methods
-  const raise = {
-    debug: data => raiseEvent(`[early] `+data, 'debug'),
-    error: data => raiseEvent(`[early] `+data, 'error'),
-    info: data => raiseEvent(`[early] `+data, 'info'),
-    suggestion: data => raiseEvent(`[early] `+data, 'suggestion'),
-    warning: data => raiseEvent(`[early] `+data, 'warning'),
-  }
-  const parts = {}
-  for (const part of config.parts) {
-    if (typeof part === 'object') {
-      parts[part.name] = part
-      config = addPartConfig(parts[part.name], config, raise )
-    }
-    else throw("Invalid part configuration. Part is not an object")
-  }
-  // Replace config.parts with the resolved config
-  config.parts = parts
 
+  // Create the pattern constructor
   const pattern = function (settings) {
+    // Pass the design config
     Pattern.call(this, config)
 
-    return this.init().apply(settings)
+    // Pass the pattern settings
+    return this.__applySettings(settings)
   }
 
   // Set up inheritance
@@ -62,4 +36,3 @@ export function Design(config) {
 
   return pattern
 }
-

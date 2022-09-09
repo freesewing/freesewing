@@ -5,4 +5,3 @@ export function Option(config) {
 
   return this
 }
-
