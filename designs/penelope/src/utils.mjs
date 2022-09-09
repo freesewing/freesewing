@@ -23,8 +23,8 @@ function dartCalcBack(options, seatWaistDiff, waist, nrOfDarts) {
   return (
     (((waist*options.dartMinimumWidth) +
       (seatWaistDiff -
-        options.dartBackControl1 -
-        (seatWaistDiff - options.dartBackControl1) / options.dartBackControl2) /
+        (waist *options.dartBackControl1) -
+        (seatWaistDiff - (waist *options.dartBackControl1)) / options.dartBackControl2) /
         options.dartBackControl3) /
       nrOfDarts) *
     (0.5 + options.dartToSideSeamFactor)
