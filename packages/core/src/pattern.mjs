@@ -16,6 +16,7 @@ import { Svg } from './svg.mjs'
 import { Store } from './store.mjs'
 import { Hooks } from './hooks.mjs'
 import { version } from '../data.mjs'
+import { loadPatternDefaults } from './config.mjs'
 
 export function Pattern(config) {
   // Non-enumerable properties
@@ -824,19 +825,7 @@ Pattern.prototype.getRenderProps = function () {
 
 // Merges settings object with default settings
 Pattern.prototype.__applySettings = function (settings) {
-  this.settings = {
-    complete: true,
-    idPrefix: 'fs-',
-    locale: 'en',
-    units: 'metric',
-    margin: 2,
-    scale: 1,
-    layout: true,
-    debug: false,
-    options: {},
-    absoluteOptions: {},
-    ...settings
-  }
+  this.settings = { ...loadPatternDefaults(), ...settings }
 
   return this
 }

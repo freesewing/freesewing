@@ -1,5 +1,6 @@
 import { Pattern } from './pattern.mjs'
 import { addPartConfig } from './utils.mjs'
+import { loadDesignDefaults } from './config.mjs'
 
 /*
  * The Design constructor. Returns a Pattern constructor
@@ -8,15 +9,7 @@ import { addPartConfig } from './utils.mjs'
 export function Design(config) {
 
   // Initialize config with defaults
-  config = {
-    measurements: [],
-    optionalMeasurements: [],
-    options: {},
-    parts: [],
-    data: {},
-    plugins: [],
-    ...config
-  }
+  config = { ...loadDesignDefaults(), ...config }
 
   // Create the pattern constructor
   const pattern = function (settings) {
