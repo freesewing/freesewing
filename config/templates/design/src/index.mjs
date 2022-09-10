@@ -1,12 +1,13 @@
-import freesewing from '@freesewing/core'
-import plugins from '@freesewing/plugin-bundle'
-import config from '../config'
-import draftBox from './box'
+import { Design } from '@freesewing/core'
+import { data } from '../data.mjs'
+// Parts
+import { box } from './box.mjs'
 
 // Create new design
-const Pattern = new freesewing.Design(config, plugins)
+const {{capitalized_name}} = new Design({
+  data,
+  parts: [ box, ],
+})
 
-// Attach the draft methods to the prototype
-Pattern.prototype.draftBox = draftBox
-
-export default Pattern
+// Named exports
+export { box, {{capitalized_name}} }
