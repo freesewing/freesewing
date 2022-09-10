@@ -30,6 +30,7 @@ import {
   Bezier,
   generatePartTransform,
   macroName,
+  Design,
 } from '../src/index.mjs'
 
 const { expect } = chai
@@ -513,17 +514,22 @@ describe('Utils', () => {
     expect(result.toAbs(0.0123, { measurements })).to.equal(12.3)
     expect(result.fromAbs(12.3, { measurements })).to.equal(0.0123)
   })
-
+/*
   it('Should generate a part transform', () => {
-    let pattern = new Pattern()
-    pattern.settings.mode = 'draft'
-    let part = new pattern.Part()
-    let short = part.shorthand()
-    part.points.from = new short.Point(2, 2)
-    part.points.to = new short.Point(19, 76)
-    part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    part.stack()
-    const transform = generatePartTransform(30, 60, 90, true, true, part)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { points, Point, paths, Path } = part.shorthand()
+        points.from = new Point(2, 2)
+        points.to = new Point(19, 76)
+        paths.test = new Path().move(points.from).line(points.to)
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ]})
+    const pattern = new design()
+    pattern.draft().render()
+    const transform = generatePartTransform(30, 60, 90, true, true, pattern.__parts.test)
     expect(transform.transform).to.equal(
       `translate(${30 + part.topLeft.x + part.bottomRight.x} ${
         60 + part.topLeft.y + part.bottomRight.y
@@ -532,4 +538,5 @@ describe('Utils', () => {
       })`
     )
   })
+  */
 })

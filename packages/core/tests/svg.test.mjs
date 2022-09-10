@@ -1,6 +1,6 @@
 import chai from 'chai'
 import chaiString from 'chai-string'
-import { Pattern } from '../src/index.mjs'
+import { Design, Pattern } from '../src/index.mjs'
 import pkg from '../package.json' assert { type: 'json' }
 import render from './fixtures/render.mjs'
 
@@ -9,8 +9,21 @@ const expect = chai.expect
 const { version } = pkg
 
 describe('Svg', () => {
+  const part = {
+    name: 'test',
+    draft: part => {
+      const { paths, Path, Point, points } = part.shorthand()
+      points.a = new Path()
+        .move(new Point(0, 0))
+        .line(new Point(0, 40))
+        .shiftFractionAlong()
+      return part
+    }
+  }
+  const design = new Design({ parts: [ part ] })
+  const pattern = new design()
+
   it('Svg constructor should initialize object', () => {
-    let pattern = new Pattern()
     pattern.render()
     let svg = pattern.svg
     expect(svg.openGroups).to.eql([])
