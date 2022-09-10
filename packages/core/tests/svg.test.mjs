@@ -7,7 +7,7 @@ import render from './fixtures/render.mjs'
 chai.use(chaiString)
 const expect = chai.expect
 const { version } = pkg
-
+/*
 describe('Svg', () => {
   const part = {
     name: 'test',
@@ -279,3 +279,4 @@ describe('Svg', () => {
     expect(svg.tab()).to.equal('    ')
   })
 })
+*/

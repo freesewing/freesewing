@@ -237,10 +237,10 @@ Pattern.prototype.draft = function () {
       // Draft part
       if (typeof this.__parts?.[partName]?.draft === 'function') {
         try {
-          this.parts[partName] = this.__parts[partName].draft(this.parts[partName])
-          if (typeof this.parts[partName] === 'undefined') {
+          const result = this.__parts[partName].draft(this.parts[partName].shorthand())
+          if (typeof result === 'undefined') {
             this.store.log.error(`Result of drafting part ${partName} was undefined. Did you forget to return the part?`)
-          }
+          } else this.parts[partName] = result
         } catch (err) {
           this.store.log.error([`Unable to draft part \`${partName}\``, err])
         }

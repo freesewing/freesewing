@@ -7,8 +7,7 @@ describe('Path', () => {
   it('Should offset a line', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part}) => {
         paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
         paths.offset = paths.line.offset(10)
         return part
@@ -24,8 +23,7 @@ describe('Path', () => {
   it('Should offset a curve', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part }) => {
         paths.curve = new Path()
           .move(new Point(0, 0))
           .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
@@ -43,8 +41,7 @@ describe('Path', () => {
   it('Should offset a curve where cp1 = start', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part }) => {
         paths.curve = new Path()
           .move(new Point(0, 0))
           ._curve(new Point(123, 34), new Point(23, 4))
@@ -62,8 +59,7 @@ describe('Path', () => {
   it('Should offset a curve where cp2 = end', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part }) => {
         paths.curve = new Path()
           .move(new Point(0, 0))
           .curve_(new Point(40, 0), new Point(123, 34))
@@ -82,8 +78,7 @@ describe('Path', () => {
   it('Should throw error when offsetting line that is no line', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point }) => {
         paths.line = new Path()
           .move(new Point(0, 40))
           .line(new Point(0, 40))
@@ -102,8 +97,7 @@ describe('Path', () => {
   it('Should return the length of a line', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part }) => {
         paths.line = new Path()
           .move(new Point(0, 0))
           .line(new Point(40, 0))
@@ -119,8 +113,7 @@ describe('Path', () => {
   it('Should return the length of a curve', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part }) => {
         paths.curve = new Path()
           .move(new Point(0, 0))
           .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
@@ -137,8 +130,7 @@ describe('Path', () => {
   it('Should return the path start point', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part }) => {
         paths.curve = new Path()
           .move(new Point(123, 456))
           .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
@@ -156,8 +148,7 @@ describe('Path', () => {
   it('Should return the path end point', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part }) => {
         paths.curve = new Path()
           .move(new Point(123, 456))
           .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
@@ -826,8 +817,7 @@ describe('Path', () => {
   it('Should overwrite a path attribute', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point } = part.shorthand()
+      draft: ({ paths, Path, Point, part }) => {
         paths.line = new Path()
           .move(new Point(0, 0))
           .line(new Point(0, 40))
@@ -1089,8 +1079,7 @@ describe('Path', () => {
   it('Should log a warning when calling offset without a distance', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point, points } = part.shorthand()
+      draft: ({ paths, Path, Point, points }) => {
         paths.line = new Path()
           .move(new Point(0, 0))
           .line(new Point(0, 40))
@@ -1112,8 +1101,7 @@ describe('Path', () => {
   it('Should log a warning when calling join without a path', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point, points } = part.shorthand()
+      draft: ({ paths, Path, Point, points }) => {
         paths.line = new Path()
           .move(new Point(0, 0))
           .line(new Point(0, 40))
@@ -1166,8 +1154,7 @@ describe('Path', () => {
   it('Should log a warning when calling shiftFractionalong but fraction is not a number', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point, points } = part.shorthand()
+      draft: ({ paths, Path, Point, points }) => {
         points.a = new Path()
           .move(new Point(0, 0))
           .line(new Point(0, 40))
@@ -1184,8 +1171,7 @@ describe('Path', () => {
   it('Should log a warning when splitting a path on a non-point', () => {
     const part = {
       name: 'test',
-      draft: part => {
-        const { paths, Path, Point, points } = part.shorthand()
+      draft: ({ paths, Path, Point, points }) => {
         points.a = new Path()
           .move(new Point(0, 0))
           .line(new Point(0, 40))

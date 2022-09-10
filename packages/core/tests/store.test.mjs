@@ -60,8 +60,7 @@ describe('Store', () => {
     }
     const part = {
       name: 'example.part',
-      draft: (part) => {
-        const { store } = part.shorthand()
+      draft: ({ store, part }) => {
         store.test.example.warning('hello warning')
         store.test.example.info('hello info')
       },
@@ -94,10 +93,10 @@ describe('Store', () => {
     }
     const part = {
       name: 'example_part',
-      draft: (part) => {
-        const { methodA, methodB } = part.shorthand()
+      draft: ({ methodA, methodB, part }) => {
         methodA('hello A')
         methodB('hello B')
+        return part
       },
     }
     const Test = new Design({ plugins: [plugin], parts: [part] })

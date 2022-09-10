@@ -185,6 +185,7 @@ Part.prototype.shorthand = function () {
   const paperless = this.context.settings?.paperless === true ? true : false
   const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
   const shorthand = {
+    part: this,
     sa,
     scale: this.context.settings?.scale,
     store: this.context.store,

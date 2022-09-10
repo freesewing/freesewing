@@ -190,11 +190,11 @@ describe('Pattern', () => {
         options: { optionA: { bool: true } },
         measurements: ['measieA'],
         optionalMeasurements: ['optmeasieA'],
-        draft: (part) => {
-          const { points, Point, paths, Path } = part.shorthand()
+        draft: ({ points, Point, paths, Path, part }) => {
           points.a1 = new Point(1, 1)
           points.a2 = new Point(11, 11)
           paths.a = new Path().move(points.a1).line(points.a2)
+
           return part
         },
       }
@@ -204,8 +204,7 @@ describe('Pattern', () => {
         options: { optionB: { pct: 12, min: 2, max: 20 } },
         measurements: ['measieB'],
         optionalMeasurements: ['optmeasieB', 'measieA'],
-        draft: (part) => {
-          const { points, Point, paths, Path } = part.shorthand()
+        draft: ({ points, Point, paths, Path }) => {
           points.b1 = new Point(2, 2)
           points.b2 = new Point(22, 22)
           paths.b = new Path().move(points.b1).line(points.b2)
@@ -218,8 +217,7 @@ describe('Pattern', () => {
         options: { optionC: { deg: 5, min: 0, max: 15 } },
         measurements: ['measieC'],
         optionalMeasurements: ['optmeasieC', 'measieA'],
-        draft: (part) => {
-          const { points, Point, paths, Path } = part.shorthand()
+        draft: ({ points, Point, paths, Path }) => {
           points.c1 = new Point(3, 3)
           points.c2 = new Point(33, 33)
           paths.c = new Path().move(points.c1).line(points.c2)
@@ -234,8 +232,7 @@ describe('Pattern', () => {
         options: { optionR: { dflt: 'red', list: ['red', 'green', 'blue'] } },
         measurements: ['measieR'],
         optionalMeasurements: ['optmeasieR', 'measieA'],
-        draft: (part) => {
-          const { points, Point, paths, Path } = part.shorthand()
+        draft: ({ points, Point, paths, Path }) => {
           points.r1 = new Point(4, 4)
           points.r2 = new Point(44, 44)
           paths.r = new Path().move(points.r1).line(points.r2)
@@ -345,8 +342,7 @@ describe('Pattern', () => {
         options: { optionA: { bool: true } },
         measurements: ['measieA'],
         optionalMeasurements: ['optmeasieA'],
-        draft: (part) => {
-          const { points, Point, paths, Path } = part.shorthand()
+        draft: ({ points, Point, paths, Path, part }) => {
           points.a1 = new Point(1, 1)
           points.a2 = new Point(11, 11)
           paths.a = new Path().move(points.a1).line(points.a2)
@@ -359,8 +355,7 @@ describe('Pattern', () => {
         options: { optionB: { pct: 12, min: 2, max: 20 } },
         measurements: ['measieB'],
         optionalMeasurements: ['optmeasieB', 'measieA'],
-        draft: (part) => {
-          const { points, Point, paths, Path } = part.shorthand()
+        draft: ({ points, Point, paths, Path }) => {
           points.b1 = new Point(2, 2)
           points.b2 = new Point(22, 22)
           paths.b = new Path().move(points.b1).line(points.b2)
@@ -373,8 +368,7 @@ describe('Pattern', () => {
         options: { optionC: { deg: 5, min: 0, max: 15 } },
         measurements: ['measieC'],
         optionalMeasurements: ['optmeasieC', 'measieA'],
-        draft: (part) => {
-          const { points, Point, paths, Path } = part.shorthand()
+        draft: ({ points, Point, paths, Path }) => {
           points.c1 = new Point(3, 3)
           points.c2 = new Point(33, 33)
           paths.c = new Path().move(points.c1).line(points.c2)
@@ -387,8 +381,7 @@ describe('Pattern', () => {
         options: { optionD: { dflt: 'red', list: ['red', 'green', 'blue'] } },
         measurements: ['measieD'],
         optionalMeasurements: ['optmeasieD', 'measieA'],
-        draft: (part) => {
-          const { points, Point, paths, Path } = part.shorthand()
+        draft: ({ points, Point, paths, Path }) => {
           points.d1 = new Point(4, 4)
           points.d2 = new Point(44, 44)
           paths.d = new Path().move(points.d1).line(points.d2)
