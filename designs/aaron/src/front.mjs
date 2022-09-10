@@ -2,7 +2,6 @@ import { pctBasedOn } from '@freesewing/core'
 import { base } from '@freesewing/brian'
 import { dimensions } from './shared.mjs'
 
-
 export const front = {
   from: base,
   name: 'aaron.front',
@@ -44,7 +43,6 @@ export const front = {
     macro,
     part,
   }) => {
-
     // Hide Brian paths
     for (let key of Object.keys(paths)) paths[key].render = false
 
@@ -79,7 +77,10 @@ export const front = {
       points.necklineCorner,
       options.necklineBend
     )
-    points.cfNeckCp1 = points.cfNeck.shiftFractionTowards(points.necklineCorner, options.necklineBend)
+    points.cfNeckCp1 = points.cfNeck.shiftFractionTowards(
+      points.necklineCorner,
+      options.necklineBend
+    )
 
     // This will come in handy
     store.set('armholeY', points.armhole.y * (1 + options.armholeDrop))
@@ -193,6 +194,5 @@ export const front = {
     }
 
     return part
-  }
+  },
 }
-

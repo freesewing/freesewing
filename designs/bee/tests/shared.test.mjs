@@ -10,7 +10,7 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 testPatternConfig(Bee)
 
 // Test drafting - Change the second parameter to `true` to log errors
-testPatternDrafting(Bee, false)
+testPatternDrafting(Bee, true)
 
 // Test sampling - Change the second parameter to `true` to log errors
 //testPatternSampling(Bee, false)

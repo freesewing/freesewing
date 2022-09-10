@@ -391,6 +391,5 @@ export const cup = {
       }
     }
     return part
-  }
+  },
 }
-

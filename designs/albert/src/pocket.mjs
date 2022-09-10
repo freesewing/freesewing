@@ -18,7 +18,6 @@ export const pocket = {
     macro,
     part,
   }) => {
-
     let apronLength =
       measurements.hpsToWaistBack * options.bibLength +
       measurements.waistToKnee * (1 + options.lengthBonus)
@@ -87,6 +86,5 @@ export const pocket = {
     }
 
     return part
-  }
+  },
 }
-

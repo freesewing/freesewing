@@ -18,7 +18,6 @@ export const frontSideDart = {
     measurements,
     part,
   }) => {
-
     // Get to work
     points.cfNeck = new Point(0, measurements.neck * options.collarFactor)
     points.hps = new Point(measurements.neck * options.neckWidthFront, 0)
@@ -161,7 +160,10 @@ export const frontSideDart = {
       points.bust,
       options.waistDartLength
     )
-    points.waistDartLeftCp = points.waistDartLeft.shift(90, points.waistDartHem.dist(points.bust) / 2)
+    points.waistDartLeftCp = points.waistDartLeft.shift(
+      90,
+      points.waistDartHem.dist(points.bust) / 2
+    )
     points.waistDartRightCp = points.waistDartRight.shift(
       90,
       points.waistDartHem.dist(points.bust) / 2
@@ -333,6 +335,5 @@ export const frontSideDart = {
     }
 
     return part
-  }
+  },
 }
-

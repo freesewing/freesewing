@@ -49,7 +49,7 @@ export const back = {
     frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced' },
     highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: ({
     store,
     sa,
@@ -66,7 +66,6 @@ export const back = {
     log,
     part,
   }) => {
-
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
     points.hps = new Point(measurements.neck * options.neckWidthBack, 0)
@@ -107,7 +106,10 @@ export const back = {
       (reduction * (1 - options.backCenterWaistReduction * 0.5)) / 2
     )
     points.dartBottomRight = points.dartBottomLeft.rotate(180, points.dartBottomCenter)
-    points.dartLeftCp = points.dartBottomLeft.shift(90, points.dartTip.dy(points.dartBottomLeft) / 2)
+    points.dartLeftCp = points.dartBottomLeft.shift(
+      90,
+      points.dartTip.dy(points.dartBottomLeft) / 2
+    )
     points.dartRightCp = new Point(points.dartBottomRight.x, points.dartLeftCp.y)
     // Find out location of the armhole
     let armholeDepth = measurements.hpsToWaistBack * options.armholeDepth + points.shoulder.y
@@ -366,6 +368,5 @@ export const back = {
     }
 
     return part
-  }
+  },
 }
-

@@ -22,7 +22,6 @@ export const strap = {
     macro,
     part,
   }) => {
-
     let chestWidth = measurements.chest / 4
     let bibWidth = chestWidth * options.bibWidth
     /*
@@ -137,5 +136,5 @@ export const strap = {
     }
 
     return part
-  }
+  },
 }
