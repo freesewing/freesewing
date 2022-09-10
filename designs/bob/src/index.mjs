@@ -5,9 +5,8 @@ import { bib } from './bib.mjs'
 // Setup our new design
 const Bob = new Design({
   data,
-  parts: [ bib ],
+  parts: [bib],
 })
 
 //Named exports
 export { bib, Bob }
-
