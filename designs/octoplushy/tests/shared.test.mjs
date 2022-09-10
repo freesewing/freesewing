@@ -1,5 +1,5 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { Octoplushy } from './dist/index.mjs'
+import { Octoplushy } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'

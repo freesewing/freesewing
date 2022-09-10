@@ -1,5 +1,5 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { Simon } from './dist/index.mjs'
+import { Simon } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'

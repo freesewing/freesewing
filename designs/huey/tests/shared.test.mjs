@@ -1,5 +1,5 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { Huey } from './dist/index.mjs'
+import { Huey } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
