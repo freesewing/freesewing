@@ -20,4 +20,4 @@ Jede/r Nutzer/in kann jedes Schnittmuster auf unserer Seite erstellen, sofern di
 
 ##### How it applies to chest binding
 
-If you are chest binding — effectively flattening your chest — use the **without breasts** patterns, and use the cirumference of your bound chest as [chest measurement](/docs/measurements/chest/)
+Falls du einen Binder trägst, verwende die Schnittmuster für **ohne Brüste** und trage beim [Brustumfang](/docs/measurements/chest/) das Maß deiner gebundenen Brust ein
