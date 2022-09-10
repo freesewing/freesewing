@@ -1,9 +1,18 @@
 import { sleeve } from './sleeve.mjs'
 import { dimensions } from './shared.mjs'
 
-function draftBentTopSleeve (part) {
-  let { macro, Path, points, paths, complete, paperless, snippets, Snippet, sa } = part.shorthand()
-
+function draftBentTopSleeve({
+  macro,
+  Path,
+  points,
+  paths,
+  complete,
+  paperless,
+  snippets,
+  Snippet,
+  sa,
+  part,
+}) {
   // Extract seamline from sleeve
   delete paths.us
   paths.seam = paths.ts.clone().attr('class', 'fabric', true)
