@@ -27,23 +27,23 @@ export const front = {
     shoulderStrapWidth: { pct: 15, min: 10, max: 40, menu: 'style' },
     shoulderStrapPlacement: { pct: 40, min: 20, max: 80, menu: 'style' },
   },
-  draft: part => {
-    const {
-      utils,
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      Snippet,
-      snippets,
-      options,
-      measurements,
-      complete,
-      paperless,
-      macro,
-    } = part.shorthand()
+  draft: ({
+    utils,
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    options,
+    measurements,
+    complete,
+    paperless,
+    macro,
+    part,
+  }) => {
 
     // Hide Brian paths
     for (let key of Object.keys(paths)) paths[key].render = false

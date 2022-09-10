@@ -8,22 +8,22 @@ export const back = {
     backNeckCutout: 0.05,
     backlineBend: { pct: 50, min: 25, max: 100, menu: 'style' }
   },
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      utils,
-      units,
-      measurements,
-    } = part.shorthand()
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    utils,
+    units,
+    measurements,
+    part,
+  }) => {
 
     // Lower back neck a bit
     points.cbNeck.y = measurements.neck / 10
