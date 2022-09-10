@@ -31,8 +31,8 @@ export const testPatternDrafting = (Pattern, log=false) => {
   const doesItDraftAndRender = (pattern, log=false) => {
     try {
       pattern.draft().render()
-      if (pattern.events.error.length < 1) return true
-      if (log) console.log(pattern.events.error)
+      if (pattern.store.logs.error.length < 1) return true
+      if (log) console.log(pattern.store.logs.error)
       return false
     } catch (err) {
       if (log) console.log(err)
