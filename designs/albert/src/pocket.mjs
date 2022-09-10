@@ -3,21 +3,21 @@ import { front } from './front.mjs'
 export const pocket = {
   name: 'albert.pocket',
   after: front,
-  draft: part => {
-    const {
-      options,
-      measurements,
-      Point,
-      Path,
-      points,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      sa,
-      paperless,
-      macro,
-    } = part.shorthand()
+  draft: ({
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro,
+    part,
+  }) => {
 
     let apronLength =
       measurements.hpsToWaistBack * options.bibLength +

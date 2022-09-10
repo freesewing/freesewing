@@ -69,21 +69,21 @@ export const front = {
     lengthBonus: { pct: 0, min: -20, max: 25, menu: 'style' },
   },
   plugins: [ pluginBundle, crossBox ],
-  draft: part => {
-    const {
-      options,
-      measurements,
-      Point,
-      Path,
-      points,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      sa,
-      paperless,
-      macro,
-    } = part.shorthand()
+  draft: ({
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro,
+    part,
+  }) => {
 
     let chestWidth = measurements.chest / 4
     let bibWidth = chestWidth * options.bibWidth
