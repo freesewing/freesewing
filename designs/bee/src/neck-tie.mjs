@@ -24,21 +24,21 @@ export const neckTie = {
     neckTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
   },
   plugins: [ pluginBundle ],
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      measurements,
-      absoluteOptions,
-    } = part.shorthand()
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    measurements,
+    absoluteOptions,
+    part,
+  }) => {
     // neck tie
     if (!options.ties) {
       part.render = false

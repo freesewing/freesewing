@@ -19,23 +19,23 @@ export const bandTie = {
     bandTieEnds: { dflt: 'straight', list: ['straight', 'pointed'], menu: 'style' },
     bandTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
   },
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      measurements,
-      snippets,
-      Snippet,
-      absoluteOptions,
-    } = part.shorthand()
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    measurements,
+    snippets,
+    Snippet,
+    absoluteOptions,
+    part,
+  }) => {
     // band tie
     if (!options.ties) {
       if (!options.crossBackTies) {
