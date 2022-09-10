@@ -1,125 +1,180 @@
 import chai from 'chai'
-import { round, Pattern, Path, Point } from './dist/index.mjs'
+import { round, Pattern, Path, Point, Design } from '../src/index.mjs'
 
 const expect = chai.expect
 
 describe('Path', () => {
   it('Should offset a line', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40))
-    a.paths.offset = a.paths.line.offset(10)
-    pattern.render()
-    expect(a.paths.offset.bottomRight.x).to.equal(-10)
-    expect(a.paths.offset.bottomRight.y).to.equal(40)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
+        paths.offset = paths.line.offset(10)
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.parts.test.paths.offset.bottomRight.x).to.equal(-10)
+    expect(pattern.parts.test.paths.offset.bottomRight.y).to.equal(40)
   })
 
   it('Should offset a curve', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(0, 0))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(23, 4))
-    a.paths.offset = a.paths.curve.offset(10)
-    pattern.render()
-    expect(round(a.paths.offset.bottomRight.x)).to.equal(72.18)
-    expect(round(a.paths.offset.bottomRight.y)).to.equal(38.26)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.curve = new Path()
+          .move(new Point(0, 0))
+          .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
+        paths.offset = paths.curve.offset(10)
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(72.18)
+    expect(round(pattern.parts.test.paths.offset.bottomRight.y)).to.equal(38.26)
   })
 
   it('Should offset a curve where cp1 = start', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(0, 0))
-      .curve(new a.Point(0, 0), new a.Point(123, 34), new a.Point(23, 4))
-    a.paths.offset = a.paths.curve.offset(10)
-    pattern.render()
-    expect(round(a.paths.offset.bottomRight.x)).to.equal(72.63)
-    expect(round(a.paths.offset.bottomRight.y)).to.equal(26.48)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.curve = new Path()
+          .move(new Point(0, 0))
+          ._curve(new Point(123, 34), new Point(23, 4))
+        paths.offset = paths.curve.offset(10)
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(72.63)
+    expect(round(pattern.parts.test.paths.offset.bottomRight.y)).to.equal(26.48)
   })
 
   it('Should offset a curve where cp2 = end', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(0, 0))
-      .curve(new a.Point(40, 0), new a.Point(123, 34), new a.Point(123, 34))
-      .close()
-    a.paths.offset = a.paths.curve.offset(10)
-    pattern.render()
-    expect(round(a.paths.offset.bottomRight.x)).to.equal(119.26)
-    expect(round(a.paths.offset.bottomRight.y)).to.equal(43.27)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.curve = new Path()
+          .move(new Point(0, 0))
+          .curve_(new Point(40, 0), new Point(123, 34))
+        paths.offset = paths.curve.offset(10)
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(119.26)
+    expect(round(pattern.parts.test.paths.offset.bottomRight.y)).to.equal(43.27)
   })
 
+  /*
   it('Should throw error when offsetting line that is no line', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.line = new a.Path().move(new a.Point(0, 40)).line(new a.Point(0, 40))
-    expect(() => a.paths.line.offset(10)).to.throw()
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.line = new Path()
+          .move(new Point(0, 40))
+          .line(new Point(0, 40))
+        paths.offset = paths.line.offset(10)
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    console.log(pattern.store.logs)
+    expect(() => pattern.draft().render()).to.throw()
   })
+  */
 
   it('Should return the length of a line', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40))
-    expect(a.paths.line.length()).to.equal(40)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.line = new Path()
+          .move(new Point(0, 0))
+          .line(new Point(40, 0))
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.parts.test.paths.line.length()).to.equal(40)
   })
 
   it('Should return the length of a curve', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(0, 0))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(23, 4))
-      .close()
-    expect(round(a.paths.curve.length())).to.equal(145.11)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.curve = new Path()
+          .move(new Point(0, 0))
+          .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
+          .close()
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts.test.paths.curve.length())).to.equal(145.11)
   })
 
   it('Should return the path start point', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(123, 456))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(23, 4))
-      .close()
-    expect(a.paths.curve.start().x).to.equal(123)
-    expect(a.paths.curve.start().y).to.equal(456)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.curve = new Path()
+          .move(new Point(123, 456))
+          .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
+          .close()
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.parts.test.paths.curve.start().x).to.equal(123)
+    expect(pattern.parts.test.paths.curve.start().y).to.equal(456)
   })
 
   it('Should return the path end point', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(123, 456))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(23, 4))
-    expect(a.paths.curve.end().x).to.equal(23)
-    expect(a.paths.curve.end().y).to.equal(4)
-    a.paths.curve.close()
-    expect(a.paths.curve.end().x).to.equal(123)
-    expect(a.paths.curve.end().y).to.equal(456)
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.curve = new Path()
+          .move(new Point(123, 456))
+          .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
+          .close()
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.parts.test.paths.curve.end().x).to.equal(123)
+    expect(pattern.parts.test.paths.curve.end().y).to.equal(456)
   })
 
   it('Should calculate that path boundary', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.curve = new a.Path()
@@ -135,7 +190,7 @@ describe('Path', () => {
 
   it('Should clone a path', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.curve = new a.Path()
@@ -152,7 +207,7 @@ describe('Path', () => {
 
   it('Should join paths', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40))
@@ -165,7 +220,7 @@ describe('Path', () => {
 
   it('Should throw error when joining a closed paths', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40))
@@ -178,7 +233,7 @@ describe('Path', () => {
 
   it('Should shift along a line', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40))
@@ -187,7 +242,7 @@ describe('Path', () => {
 
   it('Should not shift along a path/line if we end up on the end point', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(10, 0))
@@ -196,7 +251,7 @@ describe('Path', () => {
 
   it('Should shift along lines', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.line = new a.Path()
@@ -209,7 +264,7 @@ describe('Path', () => {
 
   it('Should shift along curve + line', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.test = new a.Path()
@@ -223,7 +278,7 @@ describe('Path', () => {
 
   it("Should throw error when shifting along path further than it's long", () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.paths.test = new a.Path()
       .move(new a.Point(0, 0))
@@ -234,7 +289,7 @@ describe('Path', () => {
 
   it('Should shift along with sufficient precision', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.paths.test = new a.Path()
       .move(new a.Point(0, 0))
@@ -246,7 +301,7 @@ describe('Path', () => {
 
   it('Should shift fraction with sufficient precision', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.paths.test = new a.Path()
       .move(new a.Point(0, 0))
@@ -258,7 +313,7 @@ describe('Path', () => {
 
   it('Should shift a fraction along a line', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.paths.line = new a.Path()
       .move(new a.Point(0, 0))
@@ -270,7 +325,7 @@ describe('Path', () => {
 
   it('Should find the bounding box of a line', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let Path = pattern.parts.a.Path
     let Point = pattern.parts.a.Point
 
@@ -333,7 +388,7 @@ describe('Path', () => {
 
   it('Should find the bounding box of a line', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.paths.curve = new a.Path()
       .move(new a.Point(123, 456))
@@ -348,7 +403,7 @@ describe('Path', () => {
 
   it('Should reverse a path', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     let test = new a.Path()
       .move(new a.Point(123, 456))
@@ -368,7 +423,7 @@ describe('Path', () => {
 
   it('Should find the edges of a path', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(45, 60)
     a.points.B = new a.Point(10, 30)
@@ -403,7 +458,7 @@ describe('Path', () => {
 
   it('Should find the edges of a path for corner cases', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(-45, -60)
     a.points.B = new a.Point(45, 60)
@@ -430,7 +485,7 @@ describe('Path', () => {
 
   it('Should find the edge of a path for this edge-case', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(-109.7, 77, 12)
     a.points.B = new a.Point(-27.33, 99.19)
@@ -443,7 +498,7 @@ describe('Path', () => {
 
   it('Should find where a path intersects with an X value', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(95, 50)
     a.points.B = new a.Point(10, 30)
@@ -472,7 +527,7 @@ describe('Path', () => {
 
   it('Should find where a path intersects with an Y value', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(95, 50)
     a.points.B = new a.Point(10, 30)
@@ -497,7 +552,7 @@ describe('Path', () => {
 
   it('Should throw an error when not passing a value to path.intersectsX', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.paths.test = new a.Path()
     expect(() => a.paths.test.intersectsX()).to.throw()
@@ -506,7 +561,7 @@ describe('Path', () => {
 
   it('Should find the intersections between two paths', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(45, 60)
     a.points.B = new a.Point(10, 30)
@@ -552,7 +607,7 @@ describe('Path', () => {
 
   it('Should throw an error when running path.intersect on an identical path', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.paths.test = new a.Path()
     expect(() => a.paths.test.intersects(a.paths.test)).to.throw()
@@ -560,7 +615,7 @@ describe('Path', () => {
 
   it('Should divide a path', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(45, 60)
     a.points.B = new a.Point(10, 30)
@@ -613,7 +668,7 @@ describe('Path', () => {
 
   it('Should split a path on a curve', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(45, 60)
     a.points.B = new a.Point(10, 30)
@@ -643,7 +698,7 @@ describe('Path', () => {
 
   it('Should split a path on a line', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(45, 60)
     a.points.B = new a.Point(10, 30)
@@ -669,7 +724,7 @@ describe('Path', () => {
 
   it('Should trim a path when lines overlap', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(0, 0)
     a.points.B = new a.Point(100, 100)
@@ -692,7 +747,7 @@ describe('Path', () => {
 
   it('Should trim a path when a line overlaps with a curve', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(0, 0)
     a.points.B = new a.Point(100, 100)
@@ -715,7 +770,7 @@ describe('Path', () => {
 
   it('Should trim a path when a curves overlap', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(0, 0)
     a.points.B = new a.Point(100, 100)
@@ -738,7 +793,7 @@ describe('Path', () => {
 
   it('Should translate a path', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
     a.points.A = new a.Point(0, 0)
     a.points.B = new a.Point(100, 100)
@@ -757,7 +812,7 @@ describe('Path', () => {
 
   it('Should add a path attribute', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.line = new a.Path()
@@ -769,24 +824,30 @@ describe('Path', () => {
   })
 
   it('Should overwrite a path attribute', () => {
-    let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    let a = pattern.parts.a
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point } = part.shorthand()
+        paths.line = new Path()
+          .move(new Point(0, 0))
+          .line(new Point(0, 40))
+          .attr('class', 'foo')
+          .attr('class', 'bar')
+          .attr('class', 'overwritten', true)
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
 
-    // Paths from shorthand have the raise method
-    const { Path } = a.shorthand()
-    a.paths.line = new Path()
-      .move(new a.Point(0, 0))
-      .line(new a.Point(0, 40))
-      .attr('class', 'foo')
-      .attr('class', 'bar')
-      .attr('class', 'overwritten', true)
-    expect(a.paths.line.attributes.get('class')).to.equal('overwritten')
+    // Paths from shorthand have the log method
+    expect(pattern.parts.test.paths.line.attributes.get('class')).to.equal('overwritten')
   })
 
   it('Should move along a path even if it lands just on a joint', () => {
     let pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
+    pattern.parts.a = pattern.__createPartWithContext('a')
     let a = pattern.parts.a
 
     a.paths.curve = new a.Path()
@@ -804,16 +865,16 @@ describe('Path', () => {
     expect(a.points.test).to.be.instanceOf(a.Point)
   })
 
-  it('Should add raise methods to a path', () => {
-    const raise = () => 'hello'
-    const p1 = new Path(10, 20).withRaise(raise)
-    expect(p1.raise()).to.equal('hello')
+  it('Should add log methods to a path', () => {
+    const log = () => 'hello'
+    const p1 = new Path(10, 20).withLog(log)
+    expect(p1.log()).to.equal('hello')
   })
 
-  it('Should add raise methods to a path', () => {
-    const raise = () => 'hello'
-    const p1 = new Path().withRaise(raise)
-    expect(p1.raise()).to.equal('hello')
+  it('Should add log methods to a path', () => {
+    const log = () => 'hello'
+    const p1 = new Path().withLog(log)
+    expect(p1.log()).to.equal('hello')
   })
 
   it('Should set render to true/false', () => {
@@ -827,10 +888,10 @@ describe('Path', () => {
     expect(p1.attributes.get('class')).to.equal('fabric')
   })
 
-  it('Should raise a warning when moving to a non-point', () => {
+  it('Should log a warning when moving to a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.move('a')
@@ -840,10 +901,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a line to a non-point', () => {
+  it('Should log a warning when drawing a line to a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.line('a')
@@ -853,10 +914,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a curve to a non-point', () => {
+  it('Should log a warning when drawing a curve to a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     const a = new Point(0, 0)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -868,10 +929,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a curve with a Cp1 that is a non-point', () => {
+  it('Should log a warning when drawing a curve with a Cp1 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     const a = new Point(0, 0)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -883,10 +944,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a curve with a Cp1 that is a non-point', () => {
+  it('Should log a warning when drawing a curve with a Cp1 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -897,10 +958,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a curve with a Cp2 that is a non-point', () => {
+  it('Should log a warning when drawing a curve with a Cp2 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -911,10 +972,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a _curve with a To that is a non-point', () => {
+  it('Should log a warning when drawing a _curve with a To that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -925,10 +986,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a _curve with a Cp2 that is a non-point', () => {
+  it('Should log a warning when drawing a _curve with a Cp2 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -939,10 +1000,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a curve_ with a To that is a non-point', () => {
+  it('Should log a warning when drawing a curve_ with a To that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -953,10 +1014,10 @@ describe('Path', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when drawing a curve_ with a Cp2 that is a non-point', () => {
+  it('Should log a warning when drawing a curve_ with a Cp2 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Path().withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -983,163 +1044,159 @@ describe('Path', () => {
     expect(p1.ops[1].type).to.equal('line')
   })
 
-  it('Should raise a warning when an insop operation used an falsy ID', () => {
+  it('Should log a warning when an insop operation used an falsy ID', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
+    const log = { warning: () => (invalid = true) }
     const a = new Point(0, 0)
     const b = new Point(10, 10)
     const p1 = new Path().move(a).line(b)
     expect(invalid).to.equal(false)
-    const p2 = new Path().withRaise(raise).noop('test').insop(false, p1)
+    const p2 = new Path().withLog(log).noop('test').insop(false, p1)
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when an insop operation used an falsy ID', () => {
+  it('Should log a warning when an insop operation used an falsy ID', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
+    const log = { warning: () => (invalid = true) }
     const a = new Point(0, 0)
     const b = new Point(10, 10)
     const p1 = new Path().move(a).line(b)
     expect(invalid).to.equal(false)
     try {
-      new Path().withRaise(raise).noop('test').insop('test')
+      new Path().withLog(log).noop('test').insop('test')
     } catch (err) {
       expect('' + err).to.contain("Cannot read properties of undefined (reading 'ops')")
     }
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when setting an attribute without a name', () => {
+  it('Should log a warning when setting an attribute without a name', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
+    const log = { warning: () => (invalid = true) }
     expect(invalid).to.equal(false)
-    const p1 = new Path().withRaise(raise).attr()
+    const p1 = new Path().withLog(log).attr()
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when setting an attribute without a value', () => {
+  it('Should log a warning when setting an attribute without a value', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
+    const log = { warning: () => (invalid = true) }
     expect(invalid).to.equal(false)
-    const p1 = new Path().withRaise(raise).attr('test')
+    const p1 = new Path().withLog(log).attr('test')
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when calling offset without a distance', () => {
-    const pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    const { Path, Point, points, paths } = pattern.parts.a.shorthand()
-    points.a = new Point(0, 0)
-    points.b = new Point(10, 10)
-    paths.a = new Path().move(points.a).line(points.b)
-    paths.b = paths.a.offset()
-    expect(pattern.events.error.length).to.equal(1)
-    expect(pattern.events.error[0]).to.equal(
+  it('Should log a warning when calling offset without a distance', () => {
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point, points } = part.shorthand()
+        paths.line = new Path()
+          .move(new Point(0, 0))
+          .line(new Point(0, 40))
+          .attr('class', 'foo')
+        paths.a = new Path().move(points.a).line(points.b)
+        paths.b = paths.a.offset()
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.store.logs.error.length).to.equal(2)
+    expect(pattern.store.logs.error[0]).to.equal(
       'Called `Path.offset(distance)` but `distance` is not a number'
     )
   })
 
-  it('Should raise a warning when calling join without a path', () => {
-    const pattern = new Pattern()
-    pattern.parts.a = new pattern.Part()
-    const { Path, Point, points, paths } = pattern.parts.a.shorthand()
-    points.a = new Point(0, 0)
-    points.b = new Point(10, 10)
-    try {
-      //paths.a = new Path().move(points.a).line(points.b).join()
-      pattern.parts.a.paths.a = new Path().move(points.a).line(points.b).join()
-    } catch (err) {
-      expect('' + err).to.contain("Cannot read properties of undefined (reading 'ops')")
+  it('Should log a warning when calling join without a path', () => {
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point, points } = part.shorthand()
+        paths.line = new Path()
+          .move(new Point(0, 0))
+          .line(new Point(0, 40))
+          .attr('class', 'foo')
+        paths.a = new Path().move(points.a).line(points.b).join()
+        return part
+      }
     }
-    expect(pattern.events.error.length).to.equal(1)
-    expect(pattern.events.error[0]).to.equal(
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.store.logs.error.length).to.equal(2)
+    expect(pattern.store.logs.error[0]).to.equal(
       'Called `Path.join(that)` but `that` is not a `Path` object'
     )
   })
 
-  it('Should raise a warning when calling start on a path without drawing operations', () => {
+  it('Should log a warning when calling start on a path without drawing operations', () => {
     let invalid = false
-    const raise = { error: () => (invalid = true) }
+    const log = { error: () => (invalid = true) }
     expect(invalid).to.equal(false)
     try {
-      new Path().withRaise(raise).start()
+      new Path().withLog(log).start()
     } catch (err) {
       expect('' + err).to.contain("Cannot read properties of undefined (reading 'to')")
     }
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when calling end on a path without drawing operations', () => {
+  it('Should log a warning when calling end on a path without drawing operations', () => {
     let invalid = false
-    const raise = { error: () => (invalid = true) }
+    const log = { error: () => (invalid = true) }
     expect(invalid).to.equal(false)
     try {
-      new Path().withRaise(raise).end()
+      new Path().withLog(log).end()
     } catch (err) {
       expect('' + err).to.contain("Cannot read properties of undefined (reading 'type')")
     }
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when calling shiftAlong but distance is not a number', () => {
+  it('Should log a warning when calling shiftAlong but distance is not a number', () => {
     let invalid = false
-    const raise = { error: () => (invalid = true) }
+    const log = { error: () => (invalid = true) }
     expect(invalid).to.equal(false)
-    new Path().withRaise(raise).move(new Point(0, 0)).line(new Point(10, 10)).shiftAlong()
+    new Path().withLog(log).move(new Point(0, 0)).line(new Point(10, 10)).shiftAlong()
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when calling shiftFractionalong but fraction is not a number', () => {
-    let invalid = false
-    const raise = {
-      error: () => (invalid = true),
-      warning: () => (invalid = true),
+  it('Should log a warning when calling shiftFractionalong but fraction is not a number', () => {
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point, points } = part.shorthand()
+        points.a = new Path()
+          .move(new Point(0, 0))
+          .line(new Point(0, 40))
+          .shiftFractionAlong()
+        return part
+      }
     }
-    expect(invalid).to.equal(false)
-    new Path()
-      .withRaise(raise)
-      .move(new Point(0, 0).withRaise(raise))
-      .line(new Point(10, 10).withRaise(raise))
-      .line(new Point(10, 20).withRaise(raise))
-      .shiftFractionAlong()
-    expect(invalid).to.equal(true)
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.store.logs.error[0]).to.equal('Called `Path.shiftFractionAlong(fraction)` but `fraction` is not a number')
   })
 
-  it('Should raise a warning when splitting a path on a non-point', () => {
-    let invalid = false
-    const raise = {
-      error: () => (invalid = true),
-      warning: () => (invalid = true),
+  it('Should log a warning when splitting a path on a non-point', () => {
+    const part = {
+      name: 'test',
+      draft: part => {
+        const { paths, Path, Point, points } = part.shorthand()
+        points.a = new Path()
+          .move(new Point(0, 0))
+          .line(new Point(0, 40))
+          .split()
+        return part
+      }
     }
-    const from = new Point(0, 0).withRaise(raise)
-    const cp1 = new Point(10, 0).withRaise(raise)
-    const cp2 = new Point(90, 0).withRaise(raise)
-    const to = new Point(100, 0).withRaise(raise)
-    const path = new Path().withRaise(raise).move(from).curve(cp1, cp2, to).line(from).line(cp1)
-    try {
-      path.split()
-    } catch (err) {
-      expect('' + err).to.contain("Cannot read properties of undefined (reading 'check')")
-    }
-    expect(invalid).to.equal(true)
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.store.logs.error[0]).to.equal('Called `Path.split(point)` but `point` is not a `Point` object')
   })
 
-  it('Should raise a warning when splitting a path on a non-point', () => {
-    let invalid = false
-    const raise = {
-      error: () => (invalid = true),
-      warning: () => (invalid = true),
-    }
-    const from = new Point(0, 0).withRaise(raise)
-    const cp1 = new Point(10, 0).withRaise(raise)
-    const cp2 = new Point(90, 0).withRaise(raise)
-    const to = new Point(100, 0).withRaise(raise)
-    const path = new Path().withRaise(raise).move(from).curve(cp1, cp2, to).line(from)
-    try {
-      path.split()
-    } catch (err) {
-      expect('' + err).to.contain("Cannot read properties of undefined (reading 'check')")
-    }
-    expect(invalid).to.equal(true)
-  })
 })

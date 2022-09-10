@@ -206,7 +206,7 @@ Pattern.prototype.draft = function () {
     this.store.log.debug(`Drafting pattern`)
   }
   // Handle snap for pct options
-  for (let i in this.settings.options) {
+  for (const i in this.settings.options) {
     if (
       typeof this.config.options[i] !== 'undefined' &&
       typeof this.config.options[i].snap !== 'undefined' &&
@@ -238,7 +238,9 @@ Pattern.prototype.draft = function () {
       if (typeof this.__parts?.[partName]?.draft === 'function') {
         try {
           this.parts[partName] = this.__parts[partName].draft(this.parts[partName])
-          if (this.parts[partName].render) this.cutList[partName] = this.parts[partName].cut
+          if (typeof this.parts[partName] === 'undefined') {
+            this.store.log.error(`Result of drafting part ${partName} was undefined. Did you forget to return the part?`)
+          }
         } catch (err) {
           this.store.log.error([`Unable to draft part \`${partName}\``, err])
         }
@@ -534,7 +536,7 @@ Pattern.prototype.macro = function (key, method) {
 
 /** Packs parts in a 2D space and sets pattern size */
 Pattern.prototype.pack = function () {
-  if (this.events.error.length > 0) {
+  if (this.store.logs.error.length > 0) {
     this.store.log.warning(`One or more errors occured. Not packing pattern parts`)
     return this
   }
@@ -799,13 +801,12 @@ Pattern.prototype.getRenderProps = function () {
   props.height = this.height
   props.autoLayout = this.autoLayout
   props.settings = this.settings
-  props.events = {
-    debug: this.events.debug,
-    info: this.events.info,
-    error: this.events.error,
-    warning: this.events.warning,
+  props.logs = {
+    debug: this.store.logs.debug,
+    info: this.store.logs.info,
+    error: this.store.logs.error,
+    warning: this.store.logs.warning,
   }
-  props.cutList = this.cutList
   props.parts = {}
   for (let p in this.parts) {
     if (this.parts[p].render) {
