@@ -51,7 +51,7 @@ describe('Pattern', () => {
     })
     const pattern = new Pattern()
 
-    it('Should draft according to settings', () => {
+    it('Pattern.draft() should draft according to settings', () => {
       let count = 0
       const back = {
         name: 'back',
@@ -78,70 +78,103 @@ describe('Pattern', () => {
       pattern.draft()
       expect(count).to.equal(2)
     })
-
+  })
 
   it('Should check whether a part is needed', () => {
-    let config = {
-      name: 'test',
-      dependencies: { back: 'front', side: 'back' },
-      inject: { back: 'front' },
-      hide: ['back'],
+    const partA = {
+      name: 'test.partA',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'chest', 'waist'],
+      options: {
+        optA: { pct: 40, min: 20, max: 80 }
+      },
+      draft: () => { }
     }
-    const Test = new Design(config)
-    Test.prototype.draftBack = function (part) {
-      return part
+    const partB = {
+      name: 'test.partB',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'knee'],
+      after: partA,
+      plugins: [{
+        name: 'testPlugin',
+        hooks: {
+          preRender: () => {}
+        }
+      }],
+      options: {
+        optB: { deg: 40, min: 20, max: 80 }
+      },
+      draft: () => { }
     }
-    Test.prototype.draftFront = function (part) {
-      return part
+    const partC = {
+      name: 'test.partC',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'knee'],
+      options: {
+        optC: { pct: 20, min: 10, max: 30 }
+      },
+      draft: () => { }
     }
-
-    let pattern = new Test().init()
-    pattern.settings.only = 'back'
-    //expect(pattern.needs("back")).to.equal(true);
-    expect(pattern.needs('front')).to.equal(true)
-    //expect(pattern.needs("side")).to.equal(false);
-    //pattern.settings.only = ["back", "side"];
-    //expect(pattern.needs("back")).to.equal(true);
-    //expect(pattern.needs("front")).to.equal(true);
-    //expect(pattern.needs("side")).to.equal(true);
+    const Pattern = new Design({
+      parts: [ partA, partB, partC ]
+    })
+    const pattern = new Pattern({
+      only: [ 'test.partB' ]
+    })
+    pattern.init()
+    expect(pattern.needs('test.partA')).to.equal(true)
+    expect(pattern.needs('test.partB')).to.equal(true)
+    expect(pattern.needs('test.partC')).to.equal(false)
   })
 
   it('Should check whether a part is wanted', () => {
-    let config = {
-      name: 'test',
-      dependencies: { back: 'front', side: 'back' },
-      inject: { back: 'front' },
-      hide: ['back'],
+    const partA = {
+      name: 'test.partA',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'chest', 'waist'],
+      options: {
+        optA: { pct: 40, min: 20, max: 80 }
+      },
+      draft: () => { }
     }
-    const Test = function (settings = false) {
-      Pattern.call(this, config)
-      return this
+    const partB = {
+      name: 'test.partB',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'knee'],
+      after: partA,
+      plugins: [{
+        name: 'testPlugin',
+        hooks: {
+          preRender: () => {}
+        }
+      }],
+      options: {
+        optB: { deg: 40, min: 20, max: 80 }
+      },
+      draft: () => { }
     }
-    Test.prototype = Object.create(Pattern.prototype)
-    Test.prototype.constructor = Test
-    Test.prototype.draftBack = function (part) {
-      return part
+    const partC = {
+      name: 'test.partC',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'knee'],
+      options: {
+        optC: { pct: 20, min: 10, max: 30 }
+      },
+      draft: () => { }
     }
-    Test.prototype.draftFront = function (part) {
-      return part
-    }
-
-    let pattern = new Test()
-    pattern.settings.only = 'back'
-    expect(pattern.wants('back')).to.equal(true)
-    expect(pattern.wants('front')).to.equal(false)
-    expect(pattern.wants('side')).to.equal(false)
-    pattern.settings.only = ['back', 'side']
-    expect(pattern.wants('back')).to.equal(true)
-    expect(pattern.wants('front')).to.equal(false)
-    expect(pattern.wants('side')).to.equal(true)
+    const Pattern = new Design({
+      parts: [ partA, partB, partC ]
+    })
+    const pattern = new Pattern({
+      only: [ 'test.partB' ]
+    })
+    pattern.init()
+    expect(pattern.wants('test.partA')).to.equal(false)
+    expect(pattern.wants('test.partB')).to.equal(true)
+    expect(pattern.wants('test.partC')).to.equal(false)
   })
 
-  it('Should check whether created parts get the pattern context', () => {
-    let pattern = new Pattern()
-    let part = new pattern.Part()
-    expect(part.context.settings).to.equal(pattern.settings)
-  })
+  /*
 
   it('Should return all render props', () => {
     const front = {
@@ -173,7 +206,6 @@ describe('Pattern', () => {
     )
   })
 
-  /*
   it("Should generate an auto layout if there is no set layout", () => {
     const Test = new freesewing.Design({
       name: "test",
@@ -304,425 +336,6 @@ describe('Pattern', () => {
   });
 
 
-  it("Should retrieve the cutList", () => {
-    const Test = new Design({
-      name: "test",
-      parts: [{
-        name: 'front',
-        draft: function(part) {
-          const { addCut } = part.shorthand()
-          addCut(4, 'lining', true)
-          return part
-        }
-      }],
-    })
-    const pattern = new Test()
-    expect(JSON.stringify(pattern.getCutList())).to.equal(JSON.stringify({}))
-    pattern.draft()
-    const list = `{"front":{"grain":90,"materials":{"lining":{"cut":4,"identical":true}}}}`
-    expect(JSON.stringify(pattern.getCutList())).to.equal(list)
-  });
   */
 
-  // 2022 style part inheritance
-  // I am aware this does too much for one unit test, but this is to simplify TDD
-  // we can split it up later
-  it('Design constructor should resolve nested injections', () => {
-    const partA = {
-      name: 'partA',
-      options: { optionA: { bool: true } },
-      measurements: ['measieA'],
-      optionalMeasurements: ['optmeasieA'],
-      draft: (part) => {
-        const { points, Point, paths, Path } = part.shorthand()
-        points.a1 = new Point(1, 1)
-        points.a2 = new Point(11, 11)
-        paths.a = new Path().move(points.a1).line(points.a2)
-        return part
-      },
-    }
-    const partB = {
-      name: 'partB',
-      from: partA,
-      options: { optionB: { pct: 12, min: 2, max: 20 } },
-      measurements: ['measieB'],
-      optionalMeasurements: ['optmeasieB', 'measieA'],
-      draft: (part) => {
-        const { points, Point, paths, Path } = part.shorthand()
-        points.b1 = new Point(2, 2)
-        points.b2 = new Point(22, 22)
-        paths.b = new Path().move(points.b1).line(points.b2)
-        return part
-      },
-    }
-    const partC = {
-      name: 'partC',
-      from: partB,
-      options: { optionC: { deg: 5, min: 0, max: 15 } },
-      measurements: ['measieC'],
-      optionalMeasurements: ['optmeasieC', 'measieA'],
-      draft: (part) => {
-        const { points, Point, paths, Path } = part.shorthand()
-        points.c1 = new Point(3, 3)
-        points.c2 = new Point(33, 33)
-        paths.c = new Path().move(points.c1).line(points.c2)
-        return part
-      },
-    }
-    const partR = {
-      // R for runtime, which is when this wil be attached
-      name: 'partR',
-      from: partA,
-      after: partC,
-      options: { optionR: { dflt: 'red', list: ['red', 'green', 'blue'] } },
-      measurements: ['measieR'],
-      optionalMeasurements: ['optmeasieR', 'measieA'],
-      draft: (part) => {
-        const { points, Point, paths, Path } = part.shorthand()
-        points.r1 = new Point(4, 4)
-        points.r2 = new Point(44, 44)
-        paths.r = new Path().move(points.r1).line(points.r2)
-        return part
-      },
-    }
-
-    const design = new Design({ parts: [partC] })
-    const pattern = new design().addPart(partR).draft()
-    // Measurements
-    expect(pattern.config.measurements.length).to.equal(4)
-    expect(pattern.config.measurements.indexOf('measieA') === -1).to.equal(false)
-    expect(pattern.config.measurements.indexOf('measieB') === -1).to.equal(false)
-    expect(pattern.config.measurements.indexOf('measieC') === -1).to.equal(false)
-    expect(pattern.config.measurements.indexOf('measieR') === -1).to.equal(false)
-    // Optional measurements
-    expect(pattern.config.optionalMeasurements.length).to.equal(4)
-    expect(pattern.config.optionalMeasurements.indexOf('optmeasieA') === -1).to.equal(false)
-    expect(pattern.config.optionalMeasurements.indexOf('optmeasieB') === -1).to.equal(false)
-    expect(pattern.config.optionalMeasurements.indexOf('optmeasieC') === -1).to.equal(false)
-    expect(pattern.config.optionalMeasurements.indexOf('optmeasieR') === -1).to.equal(false)
-    expect(pattern.config.optionalMeasurements.indexOf('measieA') === -1).to.equal(true)
-    // Options
-    expect(pattern.config.options.optionA.bool).to.equal(true)
-    expect(pattern.config.options.optionB.pct).to.equal(12)
-    expect(pattern.config.options.optionB.min).to.equal(2)
-    expect(pattern.config.options.optionB.max).to.equal(20)
-    expect(pattern.config.options.optionC.deg).to.equal(5)
-    expect(pattern.config.options.optionC.min).to.equal(0)
-    expect(pattern.config.options.optionC.max).to.equal(15)
-    expect(pattern.config.options.optionR.dflt).to.equal('red')
-    expect(pattern.config.options.optionR.list[0]).to.equal('red')
-    expect(pattern.config.options.optionR.list[1]).to.equal('green')
-    expect(pattern.config.options.optionR.list[2]).to.equal('blue')
-    // Dependencies
-    expect(pattern.config.dependencies.partB[0]).to.equal('partA')
-    expect(pattern.config.dependencies.partC[0]).to.equal('partB')
-    expect(pattern.config.dependencies.partR[0]).to.equal('partC')
-    expect(pattern.config.dependencies.partR[1]).to.equal('partA')
-    // Inject
-    expect(pattern.config.inject.partB).to.equal('partA')
-    expect(pattern.config.inject.partC).to.equal('partB')
-    expect(pattern.config.inject.partR).to.equal('partA')
-    // Draft order
-    expect(pattern.config.draftOrder[0]).to.equal('partA')
-    expect(pattern.config.draftOrder[1]).to.equal('partB')
-    expect(pattern.config.draftOrder[2]).to.equal('partC')
-    expect(pattern.config.draftOrder[3]).to.equal('partR')
-    // Points
-    expect(pattern.parts.partA.points.a1.x).to.equal(1)
-    expect(pattern.parts.partA.points.a1.y).to.equal(1)
-    expect(pattern.parts.partA.points.a2.x).to.equal(11)
-    expect(pattern.parts.partA.points.a2.y).to.equal(11)
-    expect(pattern.parts.partB.points.b1.x).to.equal(2)
-    expect(pattern.parts.partB.points.b1.y).to.equal(2)
-    expect(pattern.parts.partB.points.b2.x).to.equal(22)
-    expect(pattern.parts.partB.points.b2.y).to.equal(22)
-    expect(pattern.parts.partC.points.c1.x).to.equal(3)
-    expect(pattern.parts.partC.points.c1.y).to.equal(3)
-    expect(pattern.parts.partC.points.c2.x).to.equal(33)
-    expect(pattern.parts.partC.points.c2.y).to.equal(33)
-    expect(pattern.parts.partR.points.r1.x).to.equal(4)
-    expect(pattern.parts.partR.points.r1.y).to.equal(4)
-    expect(pattern.parts.partR.points.r2.x).to.equal(44)
-    expect(pattern.parts.partR.points.r2.y).to.equal(44)
-    // Paths in partA
-    expect(pattern.parts.partA.paths.a.ops[0].to.x).to.equal(1)
-    expect(pattern.parts.partA.paths.a.ops[0].to.y).to.equal(1)
-    expect(pattern.parts.partA.paths.a.ops[1].to.x).to.equal(11)
-    expect(pattern.parts.partA.paths.a.ops[1].to.y).to.equal(11)
-    // Paths in partB
-    expect(pattern.parts.partB.paths.a.ops[0].to.x).to.equal(1)
-    expect(pattern.parts.partB.paths.a.ops[0].to.y).to.equal(1)
-    expect(pattern.parts.partB.paths.a.ops[1].to.x).to.equal(11)
-    expect(pattern.parts.partB.paths.a.ops[1].to.y).to.equal(11)
-    expect(pattern.parts.partB.paths.b.ops[0].to.x).to.equal(2)
-    expect(pattern.parts.partB.paths.b.ops[0].to.y).to.equal(2)
-    expect(pattern.parts.partB.paths.b.ops[1].to.x).to.equal(22)
-    expect(pattern.parts.partB.paths.b.ops[1].to.y).to.equal(22)
-    // Paths in partC
-    expect(pattern.parts.partC.paths.a.ops[0].to.x).to.equal(1)
-    expect(pattern.parts.partC.paths.a.ops[0].to.y).to.equal(1)
-    expect(pattern.parts.partC.paths.a.ops[1].to.x).to.equal(11)
-    expect(pattern.parts.partC.paths.a.ops[1].to.y).to.equal(11)
-    expect(pattern.parts.partC.paths.b.ops[0].to.x).to.equal(2)
-    expect(pattern.parts.partC.paths.b.ops[0].to.y).to.equal(2)
-    expect(pattern.parts.partC.paths.b.ops[1].to.x).to.equal(22)
-    expect(pattern.parts.partC.paths.b.ops[1].to.y).to.equal(22)
-    expect(pattern.parts.partC.paths.c.ops[0].to.x).to.equal(3)
-    expect(pattern.parts.partC.paths.c.ops[0].to.y).to.equal(3)
-    expect(pattern.parts.partC.paths.c.ops[1].to.x).to.equal(33)
-    expect(pattern.parts.partC.paths.c.ops[1].to.y).to.equal(33)
-    // Paths in partR
-    expect(pattern.parts.partC.paths.a.ops[0].to.x).to.equal(1)
-    expect(pattern.parts.partC.paths.a.ops[0].to.y).to.equal(1)
-    expect(pattern.parts.partC.paths.a.ops[1].to.x).to.equal(11)
-    expect(pattern.parts.partC.paths.a.ops[1].to.y).to.equal(11)
-    expect(pattern.parts.partR.paths.r.ops[0].to.x).to.equal(4)
-    expect(pattern.parts.partR.paths.r.ops[0].to.y).to.equal(4)
-    expect(pattern.parts.partR.paths.r.ops[1].to.x).to.equal(44)
-    expect(pattern.parts.partR.paths.r.ops[1].to.y).to.equal(44)
-  })
-
-  it('Design constructor should resolve nested dependencies (2022)', () => {
-    const partA = {
-      name: 'partA',
-      options: { optionA: { bool: true } },
-      measurements: ['measieA'],
-      optionalMeasurements: ['optmeasieA'],
-      draft: (part) => {
-        const { points, Point, paths, Path } = part.shorthand()
-        points.a1 = new Point(1, 1)
-        points.a2 = new Point(11, 11)
-        paths.a = new Path().move(points.a1).line(points.a2)
-        return part
-      },
-    }
-    const partB = {
-      name: 'partB',
-      from: partA,
-      options: { optionB: { pct: 12, min: 2, max: 20 } },
-      measurements: ['measieB'],
-      optionalMeasurements: ['optmeasieB', 'measieA'],
-      draft: (part) => {
-        const { points, Point, paths, Path } = part.shorthand()
-        points.b1 = new Point(2, 2)
-        points.b2 = new Point(22, 22)
-        paths.b = new Path().move(points.b1).line(points.b2)
-        return part
-      },
-    }
-    const partC = {
-      name: 'partC',
-      from: partB,
-      options: { optionC: { deg: 5, min: 0, max: 15 } },
-      measurements: ['measieC'],
-      optionalMeasurements: ['optmeasieC', 'measieA'],
-      draft: (part) => {
-        const { points, Point, paths, Path } = part.shorthand()
-        points.c1 = new Point(3, 3)
-        points.c2 = new Point(33, 33)
-        paths.c = new Path().move(points.c1).line(points.c2)
-        return part
-      },
-    }
-    const partD = {
-      name: 'partD',
-      after: partC,
-      options: { optionD: { dflt: 'red', list: ['red', 'green', 'blue'] } },
-      measurements: ['measieD'],
-      optionalMeasurements: ['optmeasieD', 'measieA'],
-      draft: (part) => {
-        const { points, Point, paths, Path } = part.shorthand()
-        points.d1 = new Point(4, 4)
-        points.d2 = new Point(44, 44)
-        paths.d = new Path().move(points.d1).line(points.d2)
-        return part
-      },
-    }
-    const design = new Design({ parts: [partD] })
-    const pattern = new design().draft()
-    // Measurements
-    expect(pattern.config.measurements.length).to.equal(4)
-    expect(pattern.config.measurements.indexOf('measieA') === -1).to.equal(false)
-    expect(pattern.config.measurements.indexOf('measieB') === -1).to.equal(false)
-    expect(pattern.config.measurements.indexOf('measieC') === -1).to.equal(false)
-    expect(pattern.config.measurements.indexOf('measieD') === -1).to.equal(false)
-    // Optional measurements
-    expect(pattern.config.optionalMeasurements.length).to.equal(4)
-    expect(pattern.config.optionalMeasurements.indexOf('optmeasieA') === -1).to.equal(false)
-    expect(pattern.config.optionalMeasurements.indexOf('optmeasieB') === -1).to.equal(false)
-    expect(pattern.config.optionalMeasurements.indexOf('optmeasieC') === -1).to.equal(false)
-    expect(pattern.config.optionalMeasurements.indexOf('optmeasieD') === -1).to.equal(false)
-    expect(pattern.config.optionalMeasurements.indexOf('measieA') === -1).to.equal(true)
-    // Options
-    expect(pattern.config.options.optionA.bool).to.equal(true)
-    expect(pattern.config.options.optionB.pct).to.equal(12)
-    expect(pattern.config.options.optionB.min).to.equal(2)
-    expect(pattern.config.options.optionB.max).to.equal(20)
-    expect(pattern.config.options.optionC.deg).to.equal(5)
-    expect(pattern.config.options.optionC.min).to.equal(0)
-    expect(pattern.config.options.optionC.max).to.equal(15)
-    expect(pattern.config.options.optionD.dflt).to.equal('red')
-    expect(pattern.config.options.optionD.list[0]).to.equal('red')
-    expect(pattern.config.options.optionD.list[1]).to.equal('green')
-    expect(pattern.config.options.optionD.list[2]).to.equal('blue')
-    // Dependencies
-    expect(pattern.config.dependencies.partB[0]).to.equal('partA')
-    expect(pattern.config.dependencies.partC[0]).to.equal('partB')
-    expect(pattern.config.dependencies.partD[0]).to.equal('partC')
-    // Inject
-    expect(pattern.config.inject.partB).to.equal('partA')
-    expect(pattern.config.inject.partC).to.equal('partB')
-    // Draft order
-    expect(pattern.config.draftOrder[0]).to.equal('partA')
-    expect(pattern.config.draftOrder[1]).to.equal('partB')
-    expect(pattern.config.draftOrder[2]).to.equal('partC')
-    expect(pattern.config.draftOrder[3]).to.equal('partD')
-    // Points
-    expect(pattern.parts.partA.points.a1.x).to.equal(1)
-    expect(pattern.parts.partA.points.a1.y).to.equal(1)
-    expect(pattern.parts.partA.points.a2.x).to.equal(11)
-    expect(pattern.parts.partA.points.a2.y).to.equal(11)
-    expect(pattern.parts.partB.points.b1.x).to.equal(2)
-    expect(pattern.parts.partB.points.b1.y).to.equal(2)
-    expect(pattern.parts.partB.points.b2.x).to.equal(22)
-    expect(pattern.parts.partB.points.b2.y).to.equal(22)
-    expect(pattern.parts.partC.points.c1.x).to.equal(3)
-    expect(pattern.parts.partC.points.c1.y).to.equal(3)
-    expect(pattern.parts.partC.points.c2.x).to.equal(33)
-    expect(pattern.parts.partC.points.c2.y).to.equal(33)
-    expect(pattern.parts.partD.points.d1.x).to.equal(4)
-    expect(pattern.parts.partD.points.d1.y).to.equal(4)
-    expect(pattern.parts.partD.points.d2.x).to.equal(44)
-    expect(pattern.parts.partD.points.d2.y).to.equal(44)
-    // Paths in partA
-    expect(pattern.parts.partA.paths.a.ops[0].to.x).to.equal(1)
-    expect(pattern.parts.partA.paths.a.ops[0].to.y).to.equal(1)
-    expect(pattern.parts.partA.paths.a.ops[1].to.x).to.equal(11)
-    expect(pattern.parts.partA.paths.a.ops[1].to.y).to.equal(11)
-    // Paths in partB
-    expect(pattern.parts.partB.paths.a.ops[0].to.x).to.equal(1)
-    expect(pattern.parts.partB.paths.a.ops[0].to.y).to.equal(1)
-    expect(pattern.parts.partB.paths.a.ops[1].to.x).to.equal(11)
-    expect(pattern.parts.partB.paths.a.ops[1].to.y).to.equal(11)
-    expect(pattern.parts.partB.paths.b.ops[0].to.x).to.equal(2)
-    expect(pattern.parts.partB.paths.b.ops[0].to.y).to.equal(2)
-    expect(pattern.parts.partB.paths.b.ops[1].to.x).to.equal(22)
-    expect(pattern.parts.partB.paths.b.ops[1].to.y).to.equal(22)
-    // Paths in partC
-    expect(pattern.parts.partC.paths.a.ops[0].to.x).to.equal(1)
-    expect(pattern.parts.partC.paths.a.ops[0].to.y).to.equal(1)
-    expect(pattern.parts.partC.paths.a.ops[1].to.x).to.equal(11)
-    expect(pattern.parts.partC.paths.a.ops[1].to.y).to.equal(11)
-    expect(pattern.parts.partC.paths.b.ops[0].to.x).to.equal(2)
-    expect(pattern.parts.partC.paths.b.ops[0].to.y).to.equal(2)
-    expect(pattern.parts.partC.paths.b.ops[1].to.x).to.equal(22)
-    expect(pattern.parts.partC.paths.b.ops[1].to.y).to.equal(22)
-    expect(pattern.parts.partC.paths.c.ops[0].to.x).to.equal(3)
-    expect(pattern.parts.partC.paths.c.ops[0].to.y).to.equal(3)
-    expect(pattern.parts.partC.paths.c.ops[1].to.x).to.equal(33)
-    expect(pattern.parts.partC.paths.c.ops[1].to.y).to.equal(33)
-    // Paths in partR
-    expect(pattern.parts.partD.paths.d.ops[0].to.x).to.equal(4)
-    expect(pattern.parts.partD.paths.d.ops[0].to.y).to.equal(4)
-    expect(pattern.parts.partD.paths.d.ops[1].to.x).to.equal(44)
-    expect(pattern.parts.partD.paths.d.ops[1].to.y).to.equal(44)
-  })
-
-  it('Pattern should load single plugin', () => {
-    const plugin = {
-      name: 'example',
-      version: 1,
-      hooks: {
-        preRender: function (svg, attributes) {
-          svg.attributes.add('freesewing:plugin-example', version)
-        },
-      },
-    }
-
-    const part = {
-      name: 'test.part',
-      plugins: plugin,
-      draft: (part) => part,
-    }
-    const design = new Design({ parts: [part] })
-    const pattern = new design()
-    pattern.init()
-    expect(pattern.hooks.preRender.length).to.equal(1)
-  })
-  /*
-  it("Design constructor should load array of plugins", () => {
-    let plugin1 = {
-      name: "example1",
-      version: 1,
-      hooks: {
-        preRender: function(svg, attributes) {
-          svg.attributes.add("freesewing:plugin-example1", version);
-        }
-      }
-    };
-    let plugin2 = {
-      name: "example2",
-      version: 2,
-      hooks: {
-        preRender: function(svg, attributes) {
-          svg.attributes.add("freesewing:plugin-example2", version);
-        }
-      }
-    };
-
-    let design = new Design( { plugins: [plugin1, plugin2] });
-    let pattern = new design();
-    expect(pattern.hooks.preRender.length).to.equal(2);
-  });
-  it("Design constructor should load conditional plugin", () => {
-    const plugin = {
-      name: "example",
-      version: 1,
-      hooks: {
-        preRender: function(svg, attributes) {
-          svg.attributes.add("freesewing:plugin-example", version);
-        }
-      }
-    };
-    const condition = () => true
-    const design = new Design({ plugins: { plugin, condition } });
-    const pattern = new design();
-    expect(pattern.hooks.preRender.length).to.equal(1);
-  });
-
-  it("Design constructor should not load conditional plugin", () => {
-    const plugin = {
-      name: "example",
-      version: 1,
-      hooks: {
-        preRender: function(svg, attributes) {
-          svg.attributes.add("freesewing:plugin-example", version);
-        }
-      }
-    };
-    const condition = () => false
-    const design = new Design({ plugins: { plugin, condition } });
-    const pattern = new design();
-    expect(pattern.hooks.preRender.length).to.equal(0);
-  });
-
-  it("Design constructor should load multiple conditional plugins", () => {
-    const plugin = {
-      name: "example",
-      version: 1,
-      hooks: {
-        preRender: function(svg, attributes) {
-          svg.attributes.add("freesewing:plugin-example", version);
-        }
-      }
-    };
-    const condition1 = () => true
-    const condition2 = () => false
-    const design = new Design({ plugins:  [
-      { plugin, condition: condition1 },
-      { plugin, condition: condition2 },
-    ]});
-    const pattern = new design();
-    expect(pattern.hooks.preRender.length).to.equal(1);
-*/
 })

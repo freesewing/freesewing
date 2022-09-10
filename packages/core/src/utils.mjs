@@ -484,7 +484,7 @@ const addPartOptionalMeasurements = (part, config, store, list = false) => {
     for (const m of part.optionalMeasurements) {
       // Don't add it's a required measurement for another part
       if (config.measurements.indexOf(m) === -1) {
-      store.log.debug(`Config resolver: Measurement __${m}__ is optional in ${part.name}`)
+        store.log.debug(`Config resolver: Measurement __${m}__ is optional in ${part.name}`)
         list.push(m)
       }
     }
@@ -538,7 +538,7 @@ export const addPartPlugins = (part, config, store) => {
 
   return {
     ...config,
-    plugins: [...new Set(Object.values(plugins))]
+    plugins: [...new Set(Object.values(plugins))],
   }
 }
 

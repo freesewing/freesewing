@@ -7,7 +7,6 @@ import { loadDesignDefaults } from './config.mjs'
  * So it's sort of a super-constructor
  */
 export function Design(config) {
-
   // Initialize config with defaults
   config = { ...loadDesignDefaults(), ...config }
 

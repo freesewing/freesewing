@@ -48,7 +48,6 @@ describe('Design', () => {
       paperless: true,
     })
     pattern.init()
-    console.log(pattern.store.logs)
     //console.log('plugins:', pattern.config.plugins)
   })
 })

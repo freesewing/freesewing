@@ -39,9 +39,9 @@ export function Pattern(config) {
   addNonEnumProp(this, '__hide', {})
 
   // Enumerable properties
-  this.config = config      // Design config
-  this.parts = {}           // Drafted parts container
-  this.store = new Store()  // Store for sharing data across parts
+  this.config = config // Design config
+  this.parts = {} // Drafted parts container
+  this.store = new Store() // Store for sharing data across parts
 
   return this
 }
@@ -66,7 +66,10 @@ Pattern.prototype.init = function () {
   // Say hello
   this.store.log.info(
     `New \`${this.store.get('data.name', 'No Name')}:` +
-      `${this.store.get('data.version', 'No version')}\` pattern using \`@freesewing/core:${version}\``
+      `${this.store.get(
+        'data.version',
+        'No version'
+      )}\` pattern using \`@freesewing/core:${version}\``
   )
   this.store.log.info(`Pattern initialized. Draft order is: ${this.__draftOrder.join(', ')}`)
 
@@ -385,7 +388,9 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
   let parts = this.sampleParts()
   let val = this.settings.measurements[measurementName]
   if (val === undefined)
-    this.store.log.error(`Cannot sample measurement \`${measurementName}\` because it's \`undefined\``)
+    this.store.log.error(
+      `Cannot sample measurement \`${measurementName}\` because it's \`undefined\``
+    )
   let step = val / 50
   val = val * 0.9
   for (let run = 1; run < 11; run++) {
@@ -722,34 +727,28 @@ Pattern.prototype.__resolveDependencies = function (graph = false) {
  * configured dependencies.
  */
 Pattern.prototype.needs = function (partName) {
-  if (typeof this.settings.only === 'undefined' || this.settings.only === false) return true
-  else if (typeof this.settings.only === 'string') {
-    if (this.settings.only === partName) return true
-    if (Array.isArray(this.resolvedDependencies[this.settings.only])) {
-      for (let dependency of this.resolvedDependencies[this.settings.only]) {
-        if (dependency === partName) return true
-      }
-    }
-  } else if (Array.isArray(this.settings.only)) {
-    for (let part of this.settings.only) {
-      if (part === partName) return true
-      for (let dependency of this.resolvedDependencies[part]) {
+
+  // If only is unset, all parts are needed
+  if (
+    typeof this.settings.only === 'undefined' ||
+    this.settings.only === false ||
+    ( Array.isArray(this.settings.only) && this.settings.only.length === 0 )
+  ) return true
+
+  // Make only to always be an array
+  const only = typeof this.settings.only === 'string'
+    ? [ this.settings.only ]
+    : this.settings.only
+
+  // Walk the only parts, checking each one for a match in its dependencies
+  for (const part of only) {
+    if (part === partName) return true
+    if (this.__resolvedDependencies[part]) {
+      for (const dependency of this.__resolvedDependencies[part]) {
         if (dependency === partName) return true
       }
     }
   }
-
-  return false
-}
-
-/* Checks whether a part is hidden in the config */
-Pattern.prototype.isHidden = function (partName) {
-  if (Array.isArray(this.settings.only)) {
-    if (this.settings.only.includes(partName)) return false
-  }
-
-  if (this.__parts?.[partName]?.hide) return true
-  if (this.__parts?.[partName]?.hideAll) return true
 
   return false
 }
@@ -758,6 +757,7 @@ Pattern.prototype.isHidden = function (partName) {
  * This depends on the 'only' setting
  */
 Pattern.prototype.wants = function (partName) {
+  // Hidden parts are not wanted
   if (this.isHidden(partName)) return false
   else if (typeof this.settings.only === 'string') return this.settings.only === partName
   else if (Array.isArray(this.settings.only)) {
@@ -770,11 +770,16 @@ Pattern.prototype.wants = function (partName) {
   return true
 }
 
-/**
- * Returns the cutList property
- */
-Pattern.prototype.getCutList = function () {
-  return this.cutList
+/* Checks whether a part is hidden in the config */
+Pattern.prototype.isHidden = function (partName) {
+  if (Array.isArray(this.settings.only)) {
+    if (this.settings.only.includes(partName)) return false
+  }
+
+  if (this.__parts?.[partName]?.hide) return true
+  if (this.__parts?.[partName]?.hideAll) return true
+
+  return false
 }
 
 /** Returns props required to render this pattern through

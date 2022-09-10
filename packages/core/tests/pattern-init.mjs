@@ -4,9 +4,7 @@ import { round, Design, Point, pctBasedOn } from '../src/index.mjs'
 const expect = chai.expect
 
 describe('Pattern', () => {
-
   describe('Pattern.constructor()', () => {
-
     it('Pattern constructor should return pattern object', () => {
       const Pattern = new Design()
       const pattern = new Pattern()
@@ -65,45 +63,45 @@ describe('Pattern', () => {
         else expect(pattern.settings[key]).to.equal(value)
       }
     })
-
   })
 
   describe('Pattern.init()', () => {
-
     const partA = {
       name: 'test.partA',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'chest', 'waist'],
+      optionalMeasurements: ['chest', 'waist'],
       options: {
-        optA: { pct: 40, min: 20, max: 80 }
+        optA: { pct: 40, min: 20, max: 80 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const partB = {
       name: 'test.partB',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'knee'],
+      optionalMeasurements: ['knee'],
       after: partA,
-      plugins: [{
-        name: 'testPlugin',
-        hooks: {
-          preRender: () => {}
-        }
-      }],
+      plugins: [
+        {
+          name: 'testPlugin',
+          hooks: {
+            preRender: () => {},
+          },
+        },
+      ],
       options: {
-        optB: { deg: 40, min: 20, max: 80 }
+        optB: { deg: 40, min: 20, max: 80 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const partC = {
       name: 'test.partC',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'knee'],
+      optionalMeasurements: ['knee'],
       from: partB,
       options: {
-        optC: { pct: 20, min: 10, max: 30 }
+        optC: { pct: 20, min: 10, max: 30 },
       },
-      draft: () => { }
+      draft: () => {},
     }
 
     const Pattern = new Design({
@@ -111,16 +109,15 @@ describe('Pattern', () => {
         name: 'test',
         version: '1.2.3',
       },
-      parts: [ partC ]
+      parts: [partC],
     })
     const pattern = new Pattern()
     pattern.init()
 
     it('Pattern.init() should resolve all measurements', () => {
-      expect([
-        ...pattern.config.measurements,
-        ...pattern.config.optionalMeasurements
-      ].length).to.equal(4)
+      expect(
+        [...pattern.config.measurements, ...pattern.config.optionalMeasurements].length
+      ).to.equal(4)
     })
 
     it('Pattern.init() should resolve required measurements', () => {
@@ -170,8 +167,12 @@ describe('Pattern', () => {
       expect(pattern.config.resolvedDependencies['test.partB'][0]).to.equal('test.partA')
       expect(Array.isArray(pattern.config.resolvedDependencies['test.partC'])).to.equal(true)
       expect(pattern.config.resolvedDependencies['test.partC'].length).to.equal(2)
-      expect(pattern.config.resolvedDependencies['test.partC'].indexOf('test.partA') !== -1).to.equal(true)
-      expect(pattern.config.resolvedDependencies['test.partC'].indexOf('test.partB') !== -1).to.equal(true)
+      expect(
+        pattern.config.resolvedDependencies['test.partC'].indexOf('test.partA') !== -1
+      ).to.equal(true)
+      expect(
+        pattern.config.resolvedDependencies['test.partC'].indexOf('test.partB') !== -1
+      ).to.equal(true)
     })
 
     it('Pattern.init() should resolve the draft order', () => {
@@ -505,88 +506,152 @@ describe('Pattern', () => {
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
 
-    it("Pattern.init() should load array of plugins", () => {
+    it('Pattern.init() should load array of plugins', () => {
       const plugin1 = {
-        name: "example1",
+        name: 'example1',
         version: 1,
         hooks: {
-          preRender: function(svg, attributes) {
-            svg.attributes.add("freesewing:plugin-example1", version);
-          }
-        }
-      };
+          preRender: function (svg, attributes) {
+            svg.attributes.add('freesewing:plugin-example1', version)
+          },
+        },
+      }
       const plugin2 = {
-        name: "example2",
+        name: 'example2',
         version: 2,
         hooks: {
-          preRender: function(svg, attributes) {
-            svg.attributes.add("freesewing:plugin-example2", version);
-          }
-        }
-      };
+          preRender: function (svg, attributes) {
+            svg.attributes.add('freesewing:plugin-example2', version)
+          },
+        },
+      }
 
-      const design = new Design( { plugins: [plugin1, plugin2] });
-      const pattern = new design();
+      const design = new Design({ plugins: [plugin1, plugin2] })
+      const pattern = new design()
       pattern.init()
-      expect(pattern.hooks.preRender.length).to.equal(2);
-    });
-    it("Pattern.init() should load conditional plugin", () => {
+      expect(pattern.hooks.preRender.length).to.equal(2)
+    })
+    it('Pattern.init() should load conditional plugin', () => {
       const plugin = {
-        name: "example",
+        name: 'example',
         version: 1,
         hooks: {
-          preRender: function(svg, attributes) {
-            svg.attributes.add("freesewing:plugin-example", version);
-          }
-        }
-      };
+          preRender: function (svg, attributes) {
+            svg.attributes.add('freesewing:plugin-example', version)
+          },
+        },
+      }
       const condition = () => true
-      const design = new Design({ plugins: [ { plugin, condition } ] });
-      const pattern = new design();
+      const design = new Design({ plugins: [{ plugin, condition }] })
+      const pattern = new design()
       pattern.init()
-      expect(pattern.hooks.preRender.length).to.equal(1);
-    });
+      expect(pattern.hooks.preRender.length).to.equal(1)
+    })
 
-    it("Pattern.init() should not load conditional plugin", () => {
+    it('Pattern.init() should not load conditional plugin', () => {
       const plugin = {
-        name: "example",
+        name: 'example',
         version: 1,
         hooks: {
-          preRender: function(svg, attributes) {
-            svg.attributes.add("freesewing:plugin-example", version);
-          }
-        }
-      };
+          preRender: function (svg, attributes) {
+            svg.attributes.add('freesewing:plugin-example', version)
+          },
+        },
+      }
       const condition = () => false
-      const design = new Design({ plugins: { plugin, condition } });
-      const pattern = new design();
-      expect(pattern.hooks.preRender.length).to.equal(0);
-    });
+      const design = new Design({ plugins: { plugin, condition } })
+      const pattern = new design()
+      expect(pattern.hooks.preRender.length).to.equal(0)
+    })
 
-    it("Pattern.init() should load multiple conditional plugins", () => {
+    it('Pattern.init() should load multiple conditional plugins', () => {
       const plugin = {
-        name: "example",
+        name: 'example',
         version: 1,
         hooks: {
-          preRender: function(svg, attributes) {
-            svg.attributes.add("freesewing:plugin-example", version);
-          }
-        }
-      };
+          preRender: function (svg, attributes) {
+            svg.attributes.add('freesewing:plugin-example', version)
+          },
+        },
+      }
       const condition1 = () => true
       const condition2 = () => false
-      const design = new Design({ plugins:  [
-        { plugin, condition: condition1 },
-        { plugin, condition: condition2 },
-      ]});
-      const pattern = new design();
+      const design = new Design({
+        plugins: [
+          { plugin, condition: condition1 },
+          { plugin, condition: condition2 },
+        ],
+      })
+      const pattern = new design()
       pattern.init()
-      expect(pattern.hooks.preRender.length).to.equal(1);
+      expect(pattern.hooks.preRender.length).to.equal(1)
     })
+
+    it('Pattern.init() should register a hook via on', () => {
+      const Pattern = new Design()
+      const pattern = new Pattern()
+      let count = 0
+      pattern.on('preDraft', function (pattern) {
+        count++
+      })
+      pattern.draft()
+      expect(count).to.equal(1)
+    })
+
+    it('Pattern.init() should register a hook from a plugin', () => {
+      const Pattern = new Design()
+      const pattern = new Pattern()
+      let count = 0
+      pattern._draft = () => {}
+      const plugin = {
+        name: 'test',
+        version: '0.1-test',
+        hooks: {
+          preDraft: function (pattern) {
+            count++
+          },
+        },
+      }
+      pattern.use(plugin)
+      pattern.draft()
+      expect(count).to.equal(1)
+    })
+
+    it("Pattern.init() should register multiple methods on a single hook", () => {
+      const plugin = {
+        name: "test",
+        version: "0.1-test",
+        hooks: {
+          preDraft: [
+            function(pattern) {
+              count++;
+            },
+            function(pattern) {
+              count++;
+            }
+          ]
+        }
+      };
+      const Pattern = new Design()
+      const pattern = new Pattern()
+      let count = 0
+      pattern._draft = () => {}
+      pattern.use(plugin)
+      pattern.draft()
+      expect(count).to.equal(2);
+    });
+
+    it('Should check whether created parts get the pattern context', () => {
+      const Pattern = new Design()
+      const pattern = new Pattern()
+      const part = pattern.__createPartWithContext('test')
+      expect(typeof part.context).to.equal('object')
+      expect(part.context.settings).to.equal(pattern.settings)
+    })
+
   })
 
   describe('Pattern.settings', () => {
-
     const part = {
       name: 'test.part',
       options: {
@@ -596,19 +661,19 @@ describe('Pattern', () => {
         deg: { deg: 2, min: 1, max: 3 },
         list: {
           dflt: 'd',
-          choices: ['a', 'b' ,'c', 'd']
+          choices: ['a', 'b', 'c', 'd'],
         },
         count: { count: 4, min: 1, max: 13 },
         bool: { bool: false },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const Pattern = new Design({
       data: {
         name: 'test',
         version: '1.2.3',
       },
-      parts: [ part ]
+      parts: [part],
     })
     const pattern = new Pattern()
     pattern.init()
@@ -641,17 +706,14 @@ describe('Pattern', () => {
       const part = {
         name: 'test.part',
         options: { unknown: { foo: 30 } },
-        draft: () => { }
+        draft: () => {},
       }
       const Pattern = new Design({
         data: { name: 'test', version: '1.2.3' },
-        parts: [ part ]
+        parts: [part],
       })
       const pattern = new Pattern()
       expect(() => pattern.init()).to.throw()
     })
-
   })
-
-
 })
