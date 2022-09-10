@@ -146,10 +146,16 @@ function validateName(name) {
 function createDesign(name, type) {
   const template = ['config', 'templates', 'design']
   const design = ['designs', name]
-  const description = 'FIXME: A FreeSewing pattern that needs a description'
+  const capitalized_name = name.charAt(0).toUpperCase() + name.slice(1)
 
   // Add to designs config file
-  designs[type][name] = description
+  designs[type][name] = {
+    description: 'A FreeSewing pattern that needs a description',
+    code: 'Coder name',
+    design: 'Designer name',
+    difficulty: 1,
+    tags: [ 'tagname', ],
+  }
   write(
     ['config', 'software', 'designs.json'],
     JSON.stringify(orderDesigns(designs), null, 2)
@@ -166,11 +172,11 @@ function createDesign(name, type) {
     { name, description }
   )
 
-  // Create config file
-    templateOut(
-    ['config', 'templates', 'design', 'config.js'],
-    ['designs', name, 'config.js'],
-    { name, description }
+  // Create index.mjs
+  templateOut(
+    [...template, 'src', 'index.mjs'],
+    [...design, 'src', 'index.mjs'],
+    { capitalized_name }
   )
 
   // Create tests file
@@ -180,7 +186,7 @@ function createDesign(name, type) {
   )
 
   // Copy source
-  for (const file of ['index.js', 'box.js']) {
+  for (const file of ['box.mjs']) {
     cp([...template, 'src', file], [...design, 'src', file])
   }
 }
