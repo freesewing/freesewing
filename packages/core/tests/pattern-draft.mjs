@@ -4,252 +4,81 @@ import { round, Pattern, Design, pctBasedOn } from '../src/index.mjs'
 const expect = chai.expect
 
 describe('Pattern', () => {
+  describe('Pattern.draft()', () => {
 
-
-  it('Should merge settings with default settings', () => {
-    let pattern = new Pattern()
-    let settings = {
-      foo: 'bar',
-      deep: {
-        free: 'ze',
-      },
-    }
-    pattern.apply(settings)
-    expect(pattern.settings.foo).to.equal('bar')
-    expect(pattern.settings.locale).to.equal('en')
-    expect(pattern.settings.margin).to.equal(2)
-    expect(pattern.settings.idPrefix).to.equal('fs-')
-    expect(pattern.settings.deep.free).to.equal('ze')
-  })
-
-  it('Should draft according to settings', () => {
-    let count = 0
-    const back = {
-      name: 'back',
-      hide: true,
-      draft: function (part) {
-        count++
-        return part
-      },
-    }
-    const front = {
-      name: 'front',
-      from: back,
-      draft: function (part) {
-        count++
-        return part
-      },
-    }
-    const Test = new Design({
-      name: 'test',
-      parts: [back, front],
-    })
-
-    const pattern = new Test()
-    pattern.draft()
-    expect(count).to.equal(2)
-  })
-
-  it('Should sample an option', () => {
-    let pattern = new Pattern({
+    const partA = {
+      name: 'test.partA',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'chest', 'waist'],
       options: {
-        len: { pct: 30, min: 10 },
-        bonus: 10,
+        optA: { pct: 40, min: 20, max: 80 }
       },
-    })
-    pattern.draft = function () {
-      pattern.parts.a = new pattern.Part()
-      pattern.parts.b = new pattern.Part()
-      let a = pattern.parts.a
-      a.points.from = new a.Point(0, 0)
-      a.points.to = new a.Point(
-        100 * a.context.settings.options.len,
-        a.context.settings.options.bonus
-      )
-      a.paths.test = new a.Path().move(a.points.from).line(a.points.to)
-      pattern.parts.b.inject(a)
+      draft: () => { }
     }
-    pattern.settings.sample = {
-      type: 'option',
-      option: 'len',
-    }
-    pattern.sample()
-    expect(pattern.parts.a.paths.test_1.render).to.equal(true)
-    expect(pattern.parts.b.paths.test_10.ops[1].to.y).to.equal(10)
-  })
-  /*
-  it("Should sample a list option", () => {
-    const front = {
-      name: 'front',
+    const partB = {
+      name: 'test.partB',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'knee'],
+      after: partA,
+      plugins: [{
+        name: 'testPlugin',
+        hooks: {
+          preRender: () => {}
+        }
+      }],
       options: {
-        len: {
-          dflt: 1,
-          list: [1,2,3]
-        }
+        optB: { deg: 40, min: 20, max: 80 }
       },
-      draft: function(part) {
-        const { Point, points, Path, paths, options } = part.shorthand()
-        points.from = new Point(0, 0);
-        points.to = new Point( 100 * options.len, 0)
-        paths.line = new Path()
-          .move(points.from)
-          .line(points.to)
-
-        return part
-      }
+      draft: () => { }
     }
-    const Test = new freesewing.Design({
-      name: "test",
-      parts: [front],
-    })
-    const pattern = new Test({
-      sample: {
-        type: 'option',
-        option: 'len'
-      }
-    })
-    pattern.sample();
-    console.log(pattern.parts)
-    expect(pattern.parts.front.paths.line_1.ops[1].to.x).to.equal(100);
-    expect(pattern.parts.front.paths.line_2.ops[1].to.x).to.equal(200);
-    expect(pattern.parts.front.paths.line_3.ops[1].to.x).to.equal(300);
-  });
-
-  it("Should sample a measurement", () => {
-    const Test = new freesewing.Design({
-      name: "test",
-      parts: ['front'],
-      measurements: ['head']
-    })
-    Test.prototype.draftFront = function(part) {
-      const { Point, points, Path, paths, measurements } = part.shorthand()
-      points.from = new Point(0, 0);
-      points.to = new Point( measurements.head, 0)
-      paths.line = new Path()
-        .move(points.from)
-        .line(points.to)
-
-      return part
-    };
-    const pattern = new Test({
-      measurements: {
-        head: 100
+    const partC = {
+      name: 'test.partC',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: [ 'knee'],
+      from: partB,
+      options: {
+        optC: { pct: 20, min: 10, max: 30 }
       },
-      sample: {
-        type: 'measurement',
-        measurement: 'head'
-      }
-    })
-    pattern.sample();
-    expect(pattern.is).to.equal('sample')
-    expect(pattern.events.debug[0]).to.equal('Sampling measurement `head`')
-    for (let i=0;i<10;i++) {
-      const j = i + 1
-      expect(pattern.parts.front.paths[`line_${j}`].ops[1].to.x).to.equal(90 + 2*i);
+      draft: () => { }
     }
-    pattern.sampleMeasurement('nope')
-    expect(pattern.events.error.length).to.equal(1)
-    expect(pattern.events.error[0]).to.equal("Cannot sample measurement `nope` because it's `undefined`")
-  });
 
-  it("Should sample models", () => {
-    const Test = new freesewing.Design({
-      name: "test",
-      parts: ['front'],
-      measurements: ['head']
+    const Pattern = new Design({
+      data: {
+        name: 'test',
+        version: '1.2.3',
+      },
+      parts: [ partC ]
     })
-    Test.prototype.draftFront = function(part) {
-      const { Point, points, Path, paths, measurements } = part.shorthand()
-      points.from = new Point(0, 0);
-      points.to = new Point( measurements.head, 0)
-      paths.line = new Path()
-        .move(points.from)
-        .line(points.to)
+    const pattern = new Pattern()
 
-      return part
-    };
-    let pattern = new Test({
-      sample: {
-        type: 'models',
-        models : {
-          a: { head: 100 },
-          b: { head: 50 },
-        }
-      }
-    })
-    pattern.sample();
-    expect(pattern.is).to.equal('sample')
-    expect(pattern.events.debug[0]).to.equal('Sampling models')
-    expect(pattern.parts.front.paths[`line_0`].ops[1].to.x).to.equal(100);
-    expect(pattern.parts.front.paths[`line_1`].ops[1].to.x).to.equal(50);
-    pattern = new Test({
-      sample: {
-        type: 'models',
-        models : {
-          a: { head: 100 },
-          b: { head: 50 },
+    it('Should draft according to settings', () => {
+      let count = 0
+      const back = {
+        name: 'back',
+        hide: true,
+        draft: function (part) {
+          count++
+          return part
         },
-        focus: 'b'
       }
+      const front = {
+        name: 'front',
+        from: back,
+        draft: function (part) {
+          count++
+          return part
+        },
+      }
+      const Test = new Design({
+        name: 'test',
+        parts: [back, front],
+      })
+
+      const pattern = new Test()
+      pattern.draft()
+      expect(count).to.equal(2)
     })
-    pattern.sample();
-    expect(pattern.is).to.equal('sample')
-    expect(pattern.parts.front.paths[`line_-1`].ops[1].to.x).to.equal(50);
-    expect(pattern.parts.front.paths[`line_0`].ops[1].to.x).to.equal(100);
-  });
 
-  it("Should register a hook via on", () => {
-    let pattern = new Pattern();
-    let count = 0;
-    pattern._draft = () => {};
-    pattern.on("preDraft", function(pattern) {
-      count++;
-    });
-    pattern.draft();
-    expect(count).to.equal(1);
-  });
-
-  it("Should register a hook from a plugin", () => {
-    let pattern = new Pattern();
-    let count = 0;
-    pattern._draft = () => {};
-    let plugin = {
-      name: "test",
-      version: "0.1-test",
-      hooks: {
-        preDraft: function(pattern) {
-          count++;
-        }
-      }
-    };
-    pattern.use(plugin);
-    pattern.draft();
-    expect(count).to.equal(1);
-  });
-
-  it("Should register multiple methods on a single hook", () => {
-    let pattern = new Pattern();
-    let count = 0;
-    pattern._draft = () => {};
-    let plugin = {
-      name: "test",
-      version: "0.1-test",
-      hooks: {
-        preDraft: [
-          function(pattern) {
-            count++;
-          },
-          function(pattern) {
-            count++;
-          }
-        ]
-      }
-    };
-    pattern.use(plugin);
-    pattern.draft();
-    expect(count).to.equal(2);
-  });
-  */
 
   it('Should check whether a part is needed', () => {
     let config = {
@@ -308,192 +137,10 @@ describe('Pattern', () => {
     expect(pattern.wants('side')).to.equal(true)
   })
 
-  it('Should correctly resolve dependencies - string version', () => {
-    let config = {
-      name: 'test',
-      dependencies: { front: 'back', side: 'back', hood: 'front', stripe: 'hood' },
-    }
-    const Test = new Design(config)
-    Test.prototype = Object.create(Pattern.prototype)
-    Test.prototype.constructor = Test
-    Test.prototype.draftBack = function (part) {
-      return part
-    }
-    Test.prototype.draftFront = function (part) {
-      return part
-    }
-
-    let pattern = new Test().init()
-    expect(pattern.config.resolvedDependencies.front.length).to.equal(1)
-    expect(pattern.config.resolvedDependencies.front[0]).to.equal('back')
-    expect(pattern.config.resolvedDependencies.side.length).to.equal(1)
-    expect(pattern.config.resolvedDependencies.side[0]).to.equal('back')
-    expect(pattern.config.resolvedDependencies.hood.length).to.equal(2)
-    expect(pattern.config.resolvedDependencies.hood[0]).to.equal('front')
-    expect(pattern.config.resolvedDependencies.hood[1]).to.equal('back')
-    expect(pattern.config.resolvedDependencies.stripe.length).to.equal(3)
-    expect(pattern.config.resolvedDependencies.stripe[0]).to.equal('hood')
-    expect(pattern.config.resolvedDependencies.stripe[1]).to.equal('front')
-    expect(pattern.config.resolvedDependencies.stripe[2]).to.equal('back')
-    expect(pattern.config.resolvedDependencies.back.length).to.equal(0)
-    expect(pattern.config.draftOrder[0]).to.equal('back')
-    expect(pattern.config.draftOrder[1]).to.equal('front')
-    expect(pattern.config.draftOrder[2]).to.equal('side')
-    expect(pattern.config.draftOrder[3]).to.equal('hood')
-  })
-
-  it('Should correctly resolve dependencies - array version', () => {
-    let config = {
-      name: 'test',
-      dependencies: { front: ['back'], side: ['back'], hood: ['front'], stripe: ['hood'] },
-    }
-    const Test = function (settings = false) {
-      Pattern.call(this, config)
-      return this
-    }
-    Test.prototype = Object.create(Pattern.prototype)
-    Test.prototype.constructor = Test
-    Test.prototype.draftBack = function (part) {
-      return part
-    }
-    Test.prototype.draftFront = function (part) {
-      return part
-    }
-
-    let pattern = new Test().init()
-    expect(pattern.config.resolvedDependencies.front.length).to.equal(1)
-    expect(pattern.config.resolvedDependencies.front[0]).to.equal('back')
-    expect(pattern.config.resolvedDependencies.side.length).to.equal(1)
-    expect(pattern.config.resolvedDependencies.side[0]).to.equal('back')
-    expect(pattern.config.resolvedDependencies.hood.length).to.equal(2)
-    expect(pattern.config.resolvedDependencies.hood[0]).to.equal('front')
-    expect(pattern.config.resolvedDependencies.hood[1]).to.equal('back')
-    expect(pattern.config.resolvedDependencies.stripe.length).to.equal(3)
-    expect(pattern.config.resolvedDependencies.stripe[0]).to.equal('hood')
-    expect(pattern.config.resolvedDependencies.stripe[1]).to.equal('front')
-    expect(pattern.config.resolvedDependencies.stripe[2]).to.equal('back')
-    expect(pattern.config.resolvedDependencies.back.length).to.equal(0)
-    expect(pattern.config.draftOrder[0]).to.equal('back')
-    expect(pattern.config.draftOrder[1]).to.equal('front')
-    expect(pattern.config.draftOrder[2]).to.equal('side')
-    expect(pattern.config.draftOrder[3]).to.equal('hood')
-  })
-
-  it('Should correctly resolve dependencies - issue #971 - working version', () => {
-    let config = {
-      name: 'test',
-      dependencies: { front: ['back'], crotch: ['front', 'back'] },
-      parts: ['back', 'front', 'crotch'],
-    }
-    const Test = function (settings = false) {
-      Pattern.call(this, config)
-      return this
-    }
-    Test.prototype = Object.create(Pattern.prototype)
-    Test.prototype.constructor = Test
-    Test.prototype.draftBack = function (part) {
-      return part
-    }
-    Test.prototype.draftFront = function (part) {
-      return part
-    }
-
-    let pattern = new Test().init()
-    expect(pattern.config.draftOrder[0]).to.equal('back')
-    expect(pattern.config.draftOrder[1]).to.equal('front')
-    expect(pattern.config.draftOrder[2]).to.equal('crotch')
-  })
-
-  it('Should correctly resolve dependencies - issue #971 - broken version', () => {
-    let config = {
-      name: 'test',
-      dependencies: { front: 'back', crotch: ['front', 'back'] },
-      parts: ['back', 'front', 'crotch'],
-    }
-    const Test = function (settings = false) {
-      Pattern.call(this, config)
-      return this
-    }
-    Test.prototype = Object.create(Pattern.prototype)
-    Test.prototype.constructor = Test
-    Test.prototype.draftBack = function (part) {
-      return part
-    }
-    Test.prototype.draftFront = function (part) {
-      return part
-    }
-
-    let pattern = new Test().init()
-    expect(pattern.config.draftOrder[0]).to.equal('back')
-    expect(pattern.config.draftOrder[1]).to.equal('front')
-    expect(pattern.config.draftOrder[2]).to.equal('crotch')
-  })
-
-  it('Should correctly resolve dependencies - Handle uncovered code path', () => {
-    let config = {
-      name: 'test',
-      dependencies: {
-        front: 'side',
-        crotch: ['front', 'back'],
-        back: 1,
-      },
-      inject: {
-        front: 'back',
-      },
-      parts: ['back', 'front', 'crotch'],
-    }
-    const Test = function (settings = false) {
-      Pattern.call(this, config)
-      return this
-    }
-    Test.prototype = Object.create(Pattern.prototype)
-    Test.prototype.constructor = Test
-    Test.prototype.draftBack = function (part) {
-      return part
-    }
-    Test.prototype.draftFront = function (part) {
-      return part
-    }
-
-    let pattern = new Test().init()
-    const deps = pattern.resolveDependencies()
-    expect(pattern.config.draftOrder[0]).to.equal('side')
-    expect(pattern.config.draftOrder[1]).to.equal('back')
-    expect(pattern.config.draftOrder[2]).to.equal('front')
-  })
-
   it('Should check whether created parts get the pattern context', () => {
     let pattern = new Pattern()
     let part = new pattern.Part()
     expect(part.context.settings).to.equal(pattern.settings)
-  })
-
-  it('Should correctly merge settings', () => {
-    let pattern = new Pattern()
-    let settings = {
-      complete: false,
-      only: [1, 2, 3],
-      margin: 5,
-    }
-    pattern.apply(settings)
-    expect(pattern.settings.complete).to.equal(false)
-    expect(pattern.settings.only[1]).to.equal(2)
-    expect(pattern.settings.margin).to.equal(5)
-    expect(pattern.settings.only.length).to.equal(3)
-  })
-
-  it('Should correctly merge settings for existing array', () => {
-    let pattern = new Pattern()
-    pattern.settings.only = [1]
-    let settings = {
-      complete: false,
-      only: [2, 3, 4],
-      margin: 5,
-    }
-    pattern.apply(settings)
-    expect(pattern.settings.complete).to.equal(false)
-    expect(pattern.settings.only.length).to.equal(4)
-    expect(pattern.settings.margin).to.equal(5)
   })
 
   it('Should return all render props', () => {

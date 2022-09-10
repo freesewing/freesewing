@@ -39,9 +39,9 @@ export function Pattern(config) {
   addNonEnumProp(this, '__hide', {})
 
   // Enumerable properties
-  this.config = config // Design config
-  this.parts = {} // Parts container
-  this.store = new Store() // Store for sharing data across parts
+  this.config = config      // Design config
+  this.parts = {}           // Drafted parts container
+  this.store = new Store()  // Store for sharing data across parts
 
   return this
 }
@@ -200,7 +200,6 @@ Pattern.prototype.draft = function () {
 
   if (this.is !== 'sample') {
     this.is = 'draft'
-    this.cutList = {}
     this.store.log.debug(`Drafting pattern`)
   }
   // Handle snap for pct options
@@ -215,17 +214,15 @@ Pattern.prototype.draft = function () {
   }
 
   this.runHooks('preDraft')
-  // Don't forget about parts without any dependencies
-  const allParts = [...new Set([...this.config.draftOrder, ...Object.keys(this.__parts)])]
-  for (const partName of allParts) {
+  for (const partName of this.config.draftOrder) {
     // Create parts
     this.store.log.debug(`Creating part \`${partName}\``)
     this.parts[partName] = this.__createPartWithContext(partName)
     // Handle inject/inheritance
-    if (typeof this.inject[partName] === 'string') {
-      this.store.log.debug(`Injecting part \`${this.inject[partName]}\` into part \`${partName}\``)
+    if (typeof this.__inject[partName] === 'string') {
+      this.store.log.debug(`Creating part \`${partName}\` from part \`${this.__inject[partName]}\``)
       try {
-        this.parts[partName].inject(this.parts[this.inject[partName]])
+        this.parts[partName].inject(this.parts[this.__inject[partName]])
       } catch (err) {
         this.store.log.error([
           `Could not inject part \`${this.inject[partName]}\` into part \`${partName}\``,
