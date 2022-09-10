@@ -1,4 +1,4 @@
-export function frontWithPrimaryAt1200 (part) {
+export function frontWithPrimaryAt1200(part) {
   let { points, Path, store } = part.shorthand()
 
   switch (store.get('secondaryBustDartLocation')) {

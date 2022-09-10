@@ -1,9 +1,17 @@
 import { base } from './base.mjs'
 import { back } from './back.mjs'
 
-function draftBreannaFrontBase (part) {
-  let { points, Path, paths, Point, measurements, options, utils, store } = part.shorthand()
-
+function draftBreannaFrontBase({
+  points,
+  Path,
+  paths,
+  Point,
+  measurements,
+  options,
+  utils,
+  store,
+  part,
+}) {
   // Fit neck
   points.cfHps = points.cbHps.clone()
   points.cfNeck = points.hps.rotate(-90, points.cfHps)
