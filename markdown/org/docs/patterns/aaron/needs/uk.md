@@ -1,11 +1,11 @@
 - - -
-title: "Aaron A-Shirt: What You Need"
+title: "Майка Аарон: Матеріали"
 - - -
 
-To make Aaron, you will need the following:
+Щоб пошити Майку Аарон, Вам потрібно:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 75 сантиметрів (0,8 ярдів) належної тканини ([див. Вибір тканини](/docs/patterns/aaron/fabric))
 
 <Note>
 
