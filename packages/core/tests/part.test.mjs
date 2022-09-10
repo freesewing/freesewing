@@ -5,6 +5,22 @@ const expect = chai.expect
 
 describe('Part', () => {
 
+  it('Shorthand should contain the part itself', () => {
+    let dp
+    const part = {
+      name: 'test',
+      draft: ({ part }) => {
+        dp = part
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ]})
+    const pattern = new design()
+    pattern.draft()
+    expect(typeof dp).to.equal('object')
+    expect(typeof dp.context).to.equal('object')
+  })
+
   it('Should return a function from macroClosure', () => {
     const pattern = new Pattern()
     const part = pattern.__createPartWithContext()
