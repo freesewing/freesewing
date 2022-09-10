@@ -4,22 +4,22 @@ import { back } from './back.mjs'
 export const front = {
   from: back,
   name: 'brian.front',
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      Snippet,
-      snippets,
-      options,
-      complete,
-      paperless,
-      macro,
-      utils,
-    } = part.shorthand()
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    options,
+    complete,
+    paperless,
+    macro,
+    utils,
+    part,
+  }) => {
 
     // Re-use points for deeper armhole at the front
     points.armholePitchCp1 = points.frontArmholePitchCp1
@@ -160,7 +160,7 @@ export const front = {
       }
 
       // Add notches if the shoulder seam is shifted
-      shared.s3Notches(part, 'notch')
+      shared.s3Notches(snippets, Snippet, points, options, 'notch')
     }
 
     // Paperless?

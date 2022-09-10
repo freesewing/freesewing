@@ -165,8 +165,7 @@ export const sleevecap = {
     sleevecapQ4Spread2: { pct: 6.3, min: 4, max: 20, menu },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100, menu: 'advanced' },
   },
-  draft: part => {
-    const { store, units, options, Point, points, paths, raise, snippets, macro } = part.shorthand()
+  draft: ({ store, units, options, Point, points, paths, log, snippets, macro, part }) => {
 
     // Clean up from fron
     for (const path in paths) delete paths[path]
@@ -181,7 +180,7 @@ export const sleevecap = {
       delta = sleevecapDelta(store)
       sleevecapAdjust(store)
       run++
-      raise.debug(`Fitting Brian sleevecap. Run ${run}: delta is ${units(delta)}`)
+      log.debug(`Fitting Brian sleevecap. Run ${run}: delta is ${units(delta)}`)
     } while (options.brianFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
 
     // Paths
