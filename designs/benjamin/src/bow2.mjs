@@ -1,9 +1,18 @@
 import { base } from './base.mjs'
 
-function draftBenjaminBow2 (part) {
-  let { options, Point, points, Path, paths, complete, macro, sa, store, paperless } =
-    part.shorthand()
-
+function draftBenjaminBow2({
+  options,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  macro,
+  sa,
+  store,
+  paperless,
+  part,
+}) {
   if (!options.adjustmentRibbon) {
     part.render = false
     return part
