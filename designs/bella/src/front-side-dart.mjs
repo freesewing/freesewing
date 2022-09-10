@@ -3,21 +3,21 @@ import { back } from './back.mjs'
 export const frontSideDart = {
   name: 'bella.frontSideDart',
   after: back,
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      utils,
-      measurements,
-    } = part.shorthand()
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    utils,
+    measurements,
+    part,
+  }) => {
 
     // Get to work
     points.cfNeck = new Point(0, measurements.neck * options.collarFactor)
