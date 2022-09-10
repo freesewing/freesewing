@@ -1,4 +1,7 @@
-export default function (part) {
+import { front as ursulaFront } from '@freesewing/ursula'
+import { elastic } from './elastic.mjs'
+
+function draftUniceFront (part) {
   let {
     options,
     Point,
@@ -6,8 +9,8 @@ export default function (part) {
     points,
     paths,
     measurements,
-    //    Snippet,
-    //    snippets,
+    Snippet,
+    snippets,
     store,
     utils,
     complete,
@@ -15,6 +18,7 @@ export default function (part) {
     paperless,
     macro,
   } = part.shorthand()
+
   // Stretch utility method
 
   // Use stretch inputs to calculate four different scale factors: horizontal/vertical and 'regular'/'reduced', depending on direction of the tension
@@ -284,5 +288,72 @@ export default function (part) {
     }) */
   }
 
+  // draw markers to indicate elastic distribution
+  points.waist0 = points.frontWaistBandMid
+
+  points.leg0L = points.frontLegOpeningLeft
+  points.leg0R = points.leg0L.flipX(points.frontWaistMid)
+
+  snippets.waist0 = new Snippet('notch', points.waist0)
+  snippets.leg0L = new Snippet('notch', points.leg0L)
+  snippets.leg0R = new Snippet('notch', points.leg0R)
+
+  if (store.get('numWaistMarkersFront') > 1) {
+    // frontWaistBandLength extends from right to left,
+    // so use (0.5 - waistMarkerFrac)
+    points.waist1R = paths.frontWaistBand.shiftFractionAlong(0.5 - store.get('waistMarkerFrac'))
+    points.waist1L = points.waist1R.flipX(points.frontWaistMid)
+
+    snippets.waist1L = new Snippet('notch', points.waist1L)
+    snippets.waist1R = new Snippet('notch', points.waist1R)
+  }
+
+  if (store.get('numLegMarkersFront') > 0) {
+    // use (1 - frac) because the path is drawn from gusset to side seam
+    points.leg1L = paths.frontLegOpening.shiftFractionAlong(1 -
+      store.get('legMarker1Frac'))
+    points.leg1R = points.leg1L.flipX(points.frontWaistMid)
+
+    snippets.leg1L = new Snippet('notch', points.leg1L)
+    snippets.leg1R = new Snippet('notch', points.leg1R)
+  }
+
+  if (store.get('numLegMarkersFront') > 1) {
+    // use (1 - frac) because the path is drawn from gusset to side seam
+    points.leg2L = paths.frontLegOpening.shiftFractionAlong(1 -
+      store.get('legMarker2Frac'))
+    points.leg2R = points.leg2L.flipX(points.frontWaistMid)
+
+    snippets.leg2L = new Snippet('notch', points.leg2L)
+    snippets.leg2R = new Snippet('notch', points.leg2R)
+  }
+
   return part
+}
+
+export const front = {
+  name: 'unice.front',
+  from: ursulaFront,
+  after: elastic,
+  hideDependencies: true,
+  measurements: [ 'hips', 'waistToHips' ],
+  optionalMeasurements: [ 'crossSeam', 'crossSeamFront' ],
+  options: {
+    // fraction of seat circumference - could be an advanced option?
+    gussetShift: 0.015,
+    // Gusset width in relation to waist-to-upperleg
+    gussetWidth: { pct: 7.2, min: 2, max: 12, menu: 'fit' },
+    // horizontal stretch (range set wide for beta testing)
+    fabricStretchX: { pct: 15, min: 0, max: 100, menu: 'fit' },
+    // vertical stretch (range set wide for beta testing)
+    fabricStretchY: {pct: 0, min: 0, max: 100, menu: 'fit' },
+    // extending rise beyond 100% would require adapting paths.sideLeft!
+    rise: { pct: 60, min: 30, max: 100, menu: 'style' },
+    legOpening: { pct: 45, min: 5, max: 85, menu: 'style' },
+    // booleans
+    useCrossSeam: { bool: true, menu: 'fit' },
+    // to not stretch fabric to the limits
+    adjustStretch: { bool: true, menu: 'fit' },
+  },
+  draft: draftUniceFront,
 }
