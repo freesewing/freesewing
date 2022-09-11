@@ -1,8 +1,19 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function draftBox (part) {
-  const { options, Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
-    part.shorthand()
+function draftBox({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   const w = 500 * options.size
   points.topLeft = new Point(0, 0)
