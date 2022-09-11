@@ -1,34 +1,34 @@
 - - -
-title: "Aaron A-Shirt: Sewing Instructions"
+title: "Майка Аарон: Інструкція з пошиття"
 - - -
 
-## Step 1: Close seams
+## Крок 1: З'єднайте деталі
 
 ![Close the side and shoulder seams](step01.png)
 
-Put front and back on top of each other with _good sides together_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Покладіть передню деталь на задню _лицьовими сторонами одна на одну_. Зшийте бокові та плечові шви. Якщо у Вас є машина-оверлок, саме час скористатися нею. Якщо у Вас її немає, обробіть припуски на шви іншим способом.
 
-## Step 2: Finish hem
+## Крок 2: Обробіть край
 
 ![Finish the hem](step02.png)
 
-Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
+Заверніть край доверху та прошийте його. Якщо у вас є коверлок, то використовуйте її. Якщо ні, скористайтеся _подвійною гілкою_ або _стібком "Зіг-заг"_, щоб край міг розтягуватися.
 
 <Note>
 
-##### Fold only once, to avoid bulk
+##### Заверніть край тільки один раз, щоб уникнути непотрібного нашарування
 
-Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+Трикотажна тканина не розпадається по краях, тому рекомендовано зігнути край один раз та пришити його. Після цього пришитий край можна акуратно підрівняти ножицями.
 
 </Note>
 
-## Step 3: Sew knit binding to the front
+## Крок 3: Пришийте трикотажну бейку до переднього краю
 
 <Note>
 
-##### About knit binding
+### # Про пов'язування
 
-If you are new to [knit binding](/docs/sewing/knit-binding), you might read [this page on the subject](/docs/sewing/knit-binding).
+Якщо Ви не працювали з [трикотажною бейкою](/docs/sewing/knit-binding), Ви можете почитати [цю сторінку з теми](/docs/sewing/knit-binding).
 
 ###### Repeat steps 3 and 4 for both armholes and the neck opening
 
