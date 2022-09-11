@@ -1,8 +1,18 @@
 import { pocketWidth, pocketAngle, weltHeight } from './options.mjs'
 
-function wahidPocketInterfacing(part) {
-  const { points, Point, paths, Path, measurements, options, macro, complete, paperless } =
-    part.shorthand()
+function wahidPocketInterfacing({
+  points,
+  Point,
+  paths,
+  Path,
+  measurements,
+  options,
+  macro,
+  complete,
+  paperless,
+  part,
+}) {
+
   const pw = measurements.hips * options.pocketWidth // Pocket width
   const pwh = pw * options.weltHeight // Pocket welt height
   points.topLeft = new Point(0, 0)

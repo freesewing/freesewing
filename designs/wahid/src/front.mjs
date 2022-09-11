@@ -18,23 +18,24 @@ import {
   hipsEase,
 } from './options.mjs'
 
-function wahidFront(part) {
-  const {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    utils,
-    macro,
-    snippets,
-    Snippet,
-    complete,
-    sa,
-    paperless,
-    store,
-  } = part.shorthand()
+function wahidFront({
+  points,
+  Point,
+  paths,
+  Path,
+  measurements,
+  options,
+  utils,
+  macro,
+  snippets,
+  Snippet,
+  complete,
+  sa,
+  paperless,
+  store,
+  part,
+}) {
+
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   delete snippets.armholePitchNotch

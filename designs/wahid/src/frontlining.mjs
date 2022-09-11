@@ -1,8 +1,19 @@
 import { front } from './front.mjs'
 
-function wahidFrontLining(part) {
-  let { points, Point, paths, Path, options, macro, snippets, Snippet, complete, sa } =
-    part.shorthand()
+function wahidFrontLining({
+  points,
+  Point,
+  paths,
+  Path,
+  options,
+  macro,
+  snippets,
+  Snippet,
+  complete,
+  sa,
+  part,
+}) {
+
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
