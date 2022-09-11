@@ -16,9 +16,9 @@ title: Навіщо ви взагалі публікуєте жіночі вик
 
 Я довго чекав, аби хтось прийшов та зробив цю роботу самостійно. Але я чекав даремно. Оскільки найшвидший спосіб отримати відповідь на запитання в інтернеті - це відповісти на нього неправильно власноруч, я почав створювати ці викрійки-основи.
 
-So if you think you can do better, I hereby formally invite you to work together to design the womenswear block that you think/know to be the best one out there.
+Отже, якщо Ви вважаєте, що можете зробити краще, я офіційно запрошую Вас для спільної праці над дизайном жіночої викрійки-основи, який, на Вашу думку, буде кращим.
 
-I gladly offer my services to code/implement your design/vision, so that the entire sewing community can benefit from it.
+Я з радістю допоможу написати код та додати Ваш дизайн чи бачення, щоб всій спільноті кравців це було на користь.
 
 You can reach me at joost at freesewing.org, we also have [an active community on Discord](https://discord.freesewing.org/).
 
