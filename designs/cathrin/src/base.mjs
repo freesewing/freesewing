@@ -1,6 +1,4 @@
-function draftCathrinBase (part) {
-  let { measurements, options, store, points, paths, Point, Path } = part.shorthand()
-
+function draftCathrinBase({ measurements, options, store, points, paths, Point, Path, part }) {
   // Where to divide our corset into panels
   if (options.panels === '11') store.set('gaps', [0.15, 0.275, 0.4, 0.6, 0.75])
   else store.set('gaps', [0.2, 0.35, 0.5, 0.65, 0.8])
@@ -94,9 +92,7 @@ function draftCathrinBase (part) {
 export const base = {
   name: 'cathrin.base',
   hide: true,
-  measurements: [
-    'underbust', 'waist', 'hips', 'waistToUnderbust', 'waistToHips',
-  ],
+  measurements: ['underbust', 'waist', 'hips', 'waistToUnderbust', 'waistToHips'],
   options: {
     waistReduction: { pct: 10, min: 2, max: 20, menu: 'fit' },
     panels: { list: ['11', '13'], dflt: '13', menu: 'fit' },
