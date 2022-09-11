@@ -14,7 +14,7 @@ title: Навіщо ви взагалі публікуєте жіночі вик
 
 Я не удаватиму, що знаю як створювати викрійки для жінок. Але люди часто звертаються до мене з проханнями додання нового жіночого одягу до freesewing.org, і це починається з якісної основи.
 
-Я довго чекав, аби хтось прийшов та зробив цю роботу самостійно. Але я чекав даремно. Since the fastest way to get a question answered on the internet is to answer it yourself incorrectly, I set out to create these blocks.
+Я довго чекав, аби хтось прийшов та зробив цю роботу самостійно. Але я чекав даремно. Оскільки найшвидший спосіб отримати відповідь на запитання в інтернеті - це відповісти на нього неправильно власноруч, я почав створювати ці викрійки-основи.
 
 So if you think you can do better, I hereby formally invite you to work together to design the womenswear block that you think/know to be the best one out there.
 
