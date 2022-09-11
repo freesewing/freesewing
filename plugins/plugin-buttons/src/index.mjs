@@ -62,9 +62,8 @@ const defs = [
     style="fill:none;stroke:#666; stroke-width:0.5;"
     d="M -1.7,-1 L -1.7,1 M 1.7,-1 L 1.7,1" id="snap-socket-lines"
   />
-</g>`
+</g>`,
 ]
-
 
 export const plugin = {
   name,
@@ -81,4 +80,3 @@ export const plugin = {
 // More specifically named exports
 export const buttonsPlugin = plugin
 export const pluginButtons = plugin
-

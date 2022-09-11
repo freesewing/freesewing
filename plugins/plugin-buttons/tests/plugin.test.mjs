@@ -16,69 +16,80 @@ describe('Buttons Plugin Test', () => {
   }
 
   it('Draws a button on an anchor point', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
-    snippets.button = new Snippet('button', new Point(10,20))
-    pattern.render()
-    let c = pattern.svg
-    expect(c.layout.test.svg).to.contain('<use x="10" y="20" xlink:href="#button"')
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, snippets, Snippet }) => {
+        points.anchor = new Point(10, 20)
+        snippets.button = new Snippet('button', points.anchor)
+      },
+    }
+    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const svg = new Pattern().draft().render()
+    expect(svg).to.contain('<use x="10" y="20" xlink:href="#button"')
   })
 
   it('Draws a buttonhole centred on an anchor point', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
-    snippets.button = new Snippet('buttonhole', new Point(10,20))
-    pattern.render()
-    let c = pattern.svg
-    expect(c.layout.test.svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole"')
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, snippets, Snippet }) => {
+        points.anchor = new Point(10, 20)
+        snippets.button = new Snippet('buttonhole', points.anchor)
+      },
+    }
+    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const svg = new Pattern().draft().render()
+    expect(svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole"')
   })
 
   it('Draws a buttonhole starting on an anchor point', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
-    snippets.button = new Snippet('buttonhole-start', new Point(10,20))
-    pattern.render()
-    let c = pattern.svg
-    expect(c.layout.test.svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole-start"')
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, snippets, Snippet }) => {
+        points.anchor = new Point(10, 20)
+        snippets.button = new Snippet('buttonhole-start', points.anchor)
+      },
+    }
+    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const svg = new Pattern().draft().render()
+    expect(svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole-start"')
   })
 
   it('Draws a buttonhole ending on an anchor point', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
-    snippets.button = new Snippet('buttonhole-end', new Point(10,20))
-    pattern.render()
-    let c = pattern.svg
-    expect(c.layout.test.svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole-end"')
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, snippets, Snippet }) => {
+        points.anchor = new Point(10, 20)
+        snippets.button = new Snippet('buttonhole-end', points.anchor)
+      },
+    }
+    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const svg = new Pattern().draft().render()
+    expect(svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole-end"')
   })
 
   it('Draws a snap-stud on an anchor point', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
-    snippets.button = new Snippet('snap-stud', new Point(10,20))
-    pattern.render()
-    let c = pattern.svg
-    expect(c.layout.test.svg).to.contain('<use x="10" y="20" xlink:href="#snap-stud"')
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, snippets, Snippet }) => {
+        points.anchor = new Point(10, 20)
+        snippets.button = new Snippet('snap-stud', points.anchor)
+      },
+    }
+    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const svg = new Pattern().draft().render()
+    expect(svg).to.contain('<use x="10" y="20" xlink:href="#snap-stud"')
   })
 
   it('Draws a snap-socket on an anchor point', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
-    snippets.button = new Snippet('snap-socket', new Point(10,20))
-    pattern.render()
-    let c = pattern.svg
-    expect(c.layout.test.svg).to.contain('<use x="10" y="20" xlink:href="#snap-socket"')
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, snippets, Snippet }) => {
+        points.anchor = new Point(10, 20)
+        snippets.button = new Snippet('snap-socket', points.anchor)
+      },
+    }
+    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const svg = new Pattern().draft().render()
+    expect(svg).to.contain('<use x="10" y="20" xlink:href="#snap-socket"')
   })
 })
-
