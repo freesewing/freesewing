@@ -2,9 +2,7 @@ import { box } from './shared.mjs'
 
 export const point_angle = {
   name: 'examples.point_angle',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.sun = new Point(10, 5)
     points.moon = points.sun.shift(-15, 70)
     points.text = points.sun
@@ -15,27 +13,23 @@ export const point_angle = {
     paths.line = new Path().move(points.sun).line(points.moon).attr('class', 'dashed')
 
     return part
-  }
+  },
 }
 
 export const point_attr = {
   name: 'examples.point_attr',
-  draft: part => {
-    const { Point, points } = part.shorthand()
-
+  draft: ({ Point, points, part }) => {
     points.anchor = new Point(100, 25)
       .attr('data-text', 'supportFreesewingBecomeAPatron')
       .attr('data-text-class', 'center')
 
     return box(part, 200, 50)
-  }
+  },
 }
 
 export const point_clone = {
   name: 'examples.point_clone',
-  draft: part => {
-    const { Point, points, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Snippet, snippets, part }) => {
     points.A = new Point(25, 25)
       .attr('data-text', 'Point A')
       .attr('data-text-class', 'text-xl')
@@ -45,28 +39,24 @@ export const point_clone = {
     snippets.x = new Snippet('notch', points.A)
 
     return box(part)
-  }
+  },
 }
 
 export const point_copy = {
   name: 'examples.point_copy',
-  draft: part => {
-    const { Point, points, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Snippet, snippets, part }) => {
     points.A = new Point(50, 25).attr('data-text', 'Point A').attr('data-text-class', 'text-xl')
     points.B = points.A.copy().attr('data-text', 'Point B')
 
     snippets.x = new Snippet('notch', points.A)
 
     return box(part)
-  }
+  },
 }
 
 export const point_dist = {
   name: 'examples.point_dist',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.from = new Point(10, 10)
     points.to = new Point(80, 70)
 
@@ -78,14 +68,12 @@ export const point_dist = {
     paths.line = new Path().move(points.from).line(points.to).attr('class', 'dashed')
 
     return part
-  }
+  },
 }
 
 export const point_dx = {
   name: 'examples.point_dx',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.from = new Point(10, 10)
     points.to = new Point(80, 70)
 
@@ -104,14 +92,12 @@ export const point_dx = {
     paths.line_dy = new Path().move(points.to).line(points.totop).attr('class', 'dashed')
 
     return part
-  }
+  },
 }
 
 export const point_dy = {
   name: 'examples.point_dy',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.from = new Point(10, 10)
     points.to = new Point(80, 70)
 
@@ -129,14 +115,12 @@ export const point_dy = {
     paths.line_dy = new Path().move(points.to).line(points.totop).attr('class', 'dashed')
 
     return part
-  }
+  },
 }
 
 export const point_flipx = {
   name: 'examples.point_flipy',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.top = new Point(50, 10)
     points.out1 = new Point(70, 30)
     points.in1 = new Point(55, 35)
@@ -178,14 +162,12 @@ export const point_flipx = {
     paths.mirror = new Path().move(points.top).line(points.bottom).attr('class', 'note dashed')
 
     return part
-  }
+  },
 }
 
 export const point_flipy = {
   name: 'examples.point_flipy',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.start = new Point(0, 50)
     points.churchTowerWallLeft = new Point(10, 50)
     points.churchTowerRoofLeft = new Point(10, 30)
@@ -253,14 +235,12 @@ export const point_flipy = {
       .attr('class', 'note dashed')
 
     return part
-  }
+  },
 }
 
 export const point_rotate = {
   name: 'examples.point_rotate',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.sun = new Point(40, 40)
     points.moon = new Point(70, 40)
     let step = 360 / 36
@@ -271,14 +251,12 @@ export const point_rotate = {
     }
 
     return part
-  }
+  },
 }
 
 export const point_shift = {
   name: 'examples.point_shift',
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     points.A = new Point(90, 40).attr('data-text', 'Point A').attr('data-text-class', 'right')
     points.B = points.A.shift(155, 70)
       .attr('data-text', 'Point B is point A shifted 7cm\nat a 155 degree angle')
@@ -291,14 +269,12 @@ export const point_shift = {
     })
 
     return box(part, 100, 45)
-  }
+  },
 }
 
 export const point_shiftfractiontowards = {
   name: 'examples.point_shiftfractiontowards',
-  draft: part => {
-    const { Point, points, Path, paths, macro } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, macro, part }) => {
     points.A = new Point(90, 70).attr('data-text', 'Point A')
     points.B = new Point(10, 10).attr('data-text', 'Point B')
     points.C = points.A.shiftFractionTowards(points.B, 0.5)
@@ -321,14 +297,12 @@ export const point_shiftfractiontowards = {
     })
 
     return part
-  }
+  },
 }
 
 export const point_shiftoutwards = {
   name: 'examples.point_shiftoutwards',
-  draft: part => {
-    const { Point, points, Path, paths, macro } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, macro, part }) => {
     points.A = new Point(90, 70).attr('data-text', 'Point A')
     points.B = new Point(30, 30).attr('data-text', 'Point B')
     points.C = points.A.shiftOutwards(points.B, 30)
@@ -344,14 +318,12 @@ export const point_shiftoutwards = {
     })
 
     return box(part, 110, 75)
-  }
+  },
 }
 
 export const point_shifttowards = {
   name: 'examples.point_shifttowards',
-  draft: part => {
-    const { Point, points, Path, paths, macro } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, macro, part }) => {
     points.A = new Point(90, 70).attr('data-text', 'Point A')
     points.B = new Point(10, 10).attr('data-text', 'Point B')
     points.C = points.A.shiftTowards(points.B, 35)
@@ -368,14 +340,12 @@ export const point_shifttowards = {
     })
 
     return box(part, 110, 80)
-  }
+  },
 }
 
 export const point_sitson = {
   name: 'examples.point_sitson',
-  draft: part => {
-    const { Point, points, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Snippet, snippets, part }) => {
     let s
     for (let i = 0; i < 10; i++) {
       points[`a${i}`] = new Point(i * 10, 40)
@@ -387,14 +357,12 @@ export const point_sitson = {
     }
 
     return box(part)
-  }
+  },
 }
 
 export const point_sitsroughlyon = {
   name: 'examples.point_sitsroughlyon',
-  draft: part => {
-    const { Point, points, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Snippet, snippets, part }) => {
     box(part)
 
     let s
@@ -408,14 +376,12 @@ export const point_sitsroughlyon = {
     }
 
     return part
-  }
+  },
 }
 
 export const point_translate = {
   name: 'examples.point_translate',
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     points.A = new Point(20, 20).attr('data-text', 'Point A')
     points.B = points.A.translate(120, 60)
       .attr('data-text', 'Point B is point A with a\ntranslate(120, 60)\ntransform applied')
@@ -431,6 +397,5 @@ export const point_translate = {
     })
 
     return box(part, 150, 85)
-  }
+  },
 }
-

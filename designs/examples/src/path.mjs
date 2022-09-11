@@ -2,9 +2,7 @@ import { box } from './shared.mjs'
 
 export const path__curve = {
   name: 'examples.path__curve',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.from = new Point(5, 20)
     points.cp2 = new Point(60, 30)
     points.to = new Point(90, 20)
@@ -16,14 +14,12 @@ export const path__curve = {
       .attr('data-text-class', 'text-sm center fill-note')
 
     return box(part, 100, 25)
-  }
+  },
 }
 
 export const path_attr = {
   name: 'examples.path_attr',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.B = new Point(10, 50)
     points.BCp2 = new Point(40, 10)
     points.C = new Point(90, 30)
@@ -37,21 +33,22 @@ export const path_attr = {
       .attr('data-text-class', 'text-xs center')
 
     return part
-  }
+  },
 }
 
 export const path_clone = {
   name: 'examples.path_clone',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
     points.C = new Point(90, 30)
     points.CCp1 = new Point(50, -30)
 
-    paths.example = new Path().move(points.A).line(points.B).curve(points.BCp2, points.CCp1, points.C)
+    paths.example = new Path()
+      .move(points.A)
+      .line(points.B)
+      .curve(points.BCp2, points.CCp1, points.C)
 
     paths.clone = paths.example
       .clone()
@@ -59,15 +56,12 @@ export const path_clone = {
       .attr('style', 'stroke-opacity: 0.5')
 
     return part
-  }
+  },
 }
-
 
 export const path_close = {
   name: 'examples.path_close',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.from = new Point(10, 20)
     points.cp2 = new Point(60, 30)
     points.to = new Point(90, 20)
@@ -81,15 +75,12 @@ export const path_close = {
       .attr('data-text-class', 'text-sm right fill-note')
 
     return box(part, 100, 25)
-  }
+  },
 }
-
 
 export const path_curve = {
   name: 'examples.path_curve',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.from = new Point(10, 20)
     points.cp1 = new Point(40, 0)
     points.cp2 = new Point(60, 30)
@@ -102,14 +93,12 @@ export const path_curve = {
       .attr('data-text-class', 'text-sm center fill-note')
 
     return box(part, 100, 25)
-  }
+  },
 }
 
 export const path_curve_ = {
   name: 'examples.path_curve_',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.from = new Point(10, 20)
     points.cp1 = new Point(40, 0)
     points.to = new Point(90, 20)
@@ -121,14 +110,12 @@ export const path_curve_ = {
       .attr('data-text-class', 'text-sm center fill-note')
 
     return box(part, 100, 25)
-  }
+  },
 }
 
 export const path_divide = {
   name: 'examples.path_divide',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.A = new Point(55, 40)
     points.B = new Point(10, 70)
     points.BCp2 = new Point(40, 20)
@@ -152,14 +139,12 @@ export const path_divide = {
     }
 
     return part
-  }
+  },
 }
 
 export const path_edge = {
   name: 'examples.path_edge',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -188,14 +173,12 @@ export const path_edge = {
       snippets[i] = new Snippet('notch', paths.demo.edge(i))
 
     return part
-  }
+  },
 }
 
 export const path_end = {
   name: 'examples.path_end',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -207,15 +190,12 @@ export const path_end = {
     snippets.end = new Snippet('notch', paths.demo.end())
 
     return part
-  }
+  },
 }
-
 
 export const path_intersects = {
   name: 'examples.path_intersects',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -248,14 +228,12 @@ export const path_intersects = {
     }
 
     return part
-  }
+  },
 }
 
 export const path_intersectsx = {
   name: 'examples.path_intersectsx',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(95, 50)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -280,14 +258,12 @@ export const path_intersectsx = {
     }
 
     return part
-  }
+  },
 }
 
 export const path_intersectsy = {
   name: 'examples.path_intersectsy',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(55, 40)
     points.B = new Point(10, 70)
     points.BCp2 = new Point(40, 20)
@@ -311,15 +287,12 @@ export const path_intersectsy = {
     }
 
     return part
-  }
+  },
 }
-
 
 export const path_join = {
   name: 'examples.path_join',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -339,21 +312,22 @@ export const path_join = {
       .attr('style', 'stroke-opacity: 0.5')
 
     return part
-  }
+  },
 }
 
 export const path_length = {
   name: 'examples.path_length',
-  draft: part => {
-    const { Point, points, Path, paths, macro } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, macro, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
     points.C = new Point(90, 30)
     points.CCp1 = new Point(50, -30)
 
-    paths.example = new Path().move(points.A).line(points.B).curve(points.BCp2, points.CCp1, points.C)
+    paths.example = new Path()
+      .move(points.A)
+      .line(points.B)
+      .curve(points.BCp2, points.CCp1, points.C)
 
     macro('pd', {
       path: paths.example,
@@ -371,14 +345,12 @@ export const path_length = {
     })
 
     return part
-  }
+  },
 }
 
 export const path_line = {
   name: 'examples.path_line',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.from = new Point(10, 10)
     points.to = new Point(90, 10)
 
@@ -389,14 +361,12 @@ export const path_line = {
       .attr('data-text-class', 'text-sm center fill-note')
 
     return box(part, 100, 15)
-  }
+  },
 }
 
 export const path_move = {
   name: 'examples.path_move',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.to = new Point(50, 10)
       .attr('data-text', 'Path.move()')
       .attr('data-text-class', 'fill-note center')
@@ -404,15 +374,13 @@ export const path_move = {
     paths.noline = new Path().move(points.to)
 
     return box(part, 100, 15)
-  }
+  },
 }
 
 export const path_noop = {
   name: 'examples.path_noop',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
-    points.left = new Point(10,10)
+  draft: ({ Point, points, Path, paths, part }) => {
+    points.left = new Point(10, 10)
     points.dartLeft = new Point(40, 10)
     points.dartTip = new Point(50, 50)
     points.dartRight = new Point(60, 10)
@@ -425,23 +393,16 @@ export const path_noop = {
       .line(points.right)
 
     paths.withDart = paths.without
-      .insop(
-        'dart',
-        new Path()
-          .line(points.dartTip)
-          .line(points.dartRight)
-      )
+      .insop('dart', new Path().line(points.dartTip).line(points.dartRight))
       .attr('style', 'stroke-width: 2px; stroke-opacity: 0.5; stroke: orange;')
 
     return part
-  }
+  },
 }
 
 export const path_offset = {
   name: 'examples.path_offset',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -466,14 +427,12 @@ export const path_offset = {
       .attr('class', 'canvas')
 
     return part
-  }
+  },
 }
 
 export const path_ops = {
   name: 'examples.path_ops',
-  draft: part => {
-    const { Point, points, Path, paths, options } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, options, part }) => {
     const textClasses = (label) =>
       options.focus === label ? 'center text-xs fill-note' : 'center text-xs'
 
@@ -522,14 +481,12 @@ export const path_ops = {
     paths.example = paths.line.join(paths.curve).join(paths._curve).join(paths.curve_).close()
 
     return part
-  }
+  },
 }
 
 export const path_reverse = {
   name: 'examples.path_reverse',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
     points.C = new Point(90, 30)
@@ -547,21 +504,22 @@ export const path_reverse = {
       .attr('data-text-class', 'text-xs fill-lining')
 
     return part
-  }
+  },
 }
 
 export const path_shiftalong = {
   name: 'examples.path_shiftalong',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
     points.C = new Point(90, 30)
     points.CCp1 = new Point(50, -30)
 
-    paths.example = new Path().move(points.A).line(points.B).curve(points.BCp2, points.CCp1, points.C)
+    paths.example = new Path()
+      .move(points.A)
+      .line(points.B)
+      .curve(points.BCp2, points.CCp1, points.C)
 
     points.x1 = paths.example
       .shiftAlong(20)
@@ -578,21 +536,22 @@ export const path_shiftalong = {
     snippets.x2 = new Snippet('notch', points.x2)
 
     return part
-  }
+  },
 }
 
 export const path_shiftfractionalong = {
   name: 'examples.path_shiftfractionalong',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
     points.C = new Point(90, 30)
     points.CCp1 = new Point(50, -30)
 
-    paths.example = new Path().move(points.A).line(points.B).curve(points.BCp2, points.CCp1, points.C)
+    paths.example = new Path()
+      .move(points.A)
+      .line(points.B)
+      .curve(points.BCp2, points.CCp1, points.C)
 
     points.x1 = paths.example
       .shiftFractionAlong(0.2)
@@ -609,14 +568,12 @@ export const path_shiftfractionalong = {
     snippets.x2 = new Snippet('notch', points.x2)
 
     return part
-  }
+  },
 }
 
 export const path_split = {
   name: 'examples.path_split',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -641,32 +598,31 @@ export const path_split = {
     }
 
     return part
-  }
+  },
 }
 
 export const path_start = {
   name: 'examples.path_start',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
     points.C = new Point(90, 30)
     points.CCp1 = new Point(50, -30)
 
-    paths.example = new Path().move(points.A).line(points.B).curve(points.BCp2, points.CCp1, points.C)
+    paths.example = new Path()
+      .move(points.A)
+      .line(points.B)
+      .curve(points.BCp2, points.CCp1, points.C)
 
     snippets.start = new Snippet('notch', paths.example.start())
     return part
-  }
+  },
 }
 
 export const path_translate = {
   name: 'examples.path_translate',
-  draft: part => {
-    const { Point, points, Path, paths, macro } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, macro, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -691,14 +647,12 @@ export const path_translate = {
     })
 
     return part
-  }
+  },
 }
 
 export const path_trim = {
   name: 'examples.path_trim',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.center = new Point(0, 0)
     points.base = new Point(0, 10)
     points.tip = new Point(0, 50)
@@ -731,6 +685,5 @@ export const path_trim = {
       .attr('class', 'various stroke-xl')
       .attr('style', 'stroke-opacity: 0.5;')
     return part
-  }
+  },
 }
-
