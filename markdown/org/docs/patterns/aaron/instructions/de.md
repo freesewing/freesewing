@@ -1,24 +1,23 @@
 - - -
-title: "Aaron A-Shirt: Sewing Instructions"
+title: "Aaron A-Shirt: Nähanweisung"
 - - -
 
 ## Schritt 1: Nähte schließen
 
-![Close the side and shoulder seams](step01.png)
+![Seiten- und Schulternähte schließen](step01.png)
 
-Put front and back on top of each other with _good sides together_. Sew the side seams and the short seams at the shoulder straps. If you have a serger, this is a good moment to use it. If not, finish your seams otherwise.
+Legen Sie Vorder- und Rückseite mit den _rechten Seiten zusammen_ übereinander. Nähe die Seitennähte zusammen und die kurzen Nähte an den Schulterträgern. Wenn du eine Overlock besitzt, ist dies ein guter Moment um sie zu verwenden. Wenn nicht, versäubere deine Nähte auf eine andere Art und Weise.
 
 ## Schritt 2: Saum versäubern
 
-![Finish the hem](step02.png)
+![Versäubere den Saum](step02.png)
 
-Fold the hem upwards, and sew it down. If you have a coverlock, use it. If not, use a _twin needle_ or _zig-zag stitch_ to keep the seam stretchable.
+Falte den Saum nach oben und nähe ihn fest. Wenn du eine Coverlock hast, verwende sie. Falls nicht, verwenden Sie eine _Zwillingsnadel_ oder _Zickzackstich_, um die Naht dehnbar zu halten.
 
 <Note>
 
-##### Fold only once, to avoid bulk
-
-Knitwear doesn't ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+Nur einmal falten, um dicke Stellen zu vermeiden.
+Jersey franst nicht aus, deshalb kann man ihen einfach umklappen und festnähen, danach die Nahtzugabe zurückschneiden.
 
 </Note>
 
@@ -42,7 +41,7 @@ So oder so, je weniger scharfe Kurven Sie haben, desto einfacher wird es sein. A
 
 </Note>
 
-We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There's a difference, and it's explained [here](/docs/sewing/knit-binding)).
+We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. Es gibt einen Unterschied, und der wird [hier](/docs/sewing/knit-binding) erklärt).
 
 <Note>
 
@@ -54,7 +53,7 @@ Dies ist der einzige Teil, um dieses A-Shirt zu machen, das ein bisschen Praxis 
 
 ![Applying knit binding](step03a.png)
 
-The first thing we need to do is decide where we are going to start/stop our binding. Here's what I suggest:
+The first thing we need to do is decide where we are going to start/stop our binding. Ich schlage folgendes vor:
 
 - Für die Armlöcher: an der Seitennaht. Dies wird unsere Naht unter dem Arm verbergen
 - Für die Halsöffnung: die Mitte des Halsrückens. Möglicherweise möchten Sie dies mit einem Pin markieren
@@ -67,13 +66,13 @@ Put your A-shirt down with the good side up, and place your binding strip on top
 
 Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
 
-Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+Schieben Sie nun das Einfassband 1cm über dan Anfangspunkt zurück. Dieser Zentimeter macht das spätere Zusammennähen der beiden Enden möglich.
 
 ### Vergewissern Sie sich, dass Sie wissen, wo Sie nähen sollen
 
 ![Make sure you know where to sew](step03c.png)
 
-We are going to sew 1.5cm from the edge. So be careful because this is not the standard seam allowance.
+Wir werden 1,5 cm von der Kante nähen. Seien Sie also vorsichtig, denn das ist nicht die reguläre Nahtzugabe.
 
 <Tip>
 
