@@ -1,9 +1,18 @@
 import { backPoints } from './backpoints.mjs'
 
-function nobleBackOutside(part) {
-  const { sa, points, Path, paths, Snippet, snippets, options, complete, paperless, macro } =
-    part.shorthand()
-
+function nobleBackOutside({
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   if (options.dartPosition != 'shoulder') {
     return part
   }

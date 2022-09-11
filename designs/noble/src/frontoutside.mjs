@@ -1,10 +1,20 @@
 import { frontPoints } from './frontpoints.mjs'
 import { frontInside } from './frontinside.mjs'
 
-function nobleFrontOutside(part) {
-  const { store, sa, points, Path, paths, Snippet, snippets, options, complete, paperless, macro } =
-    part.shorthand()
-
+function nobleFrontOutside({
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   delete points.bustDartTop
   delete points.bustSide
   delete points.bustDartMiddle
