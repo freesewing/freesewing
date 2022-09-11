@@ -1,8 +1,7 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { draftRibbing } from './shared.mjs'
 
-function draftHueyWaistband (part) {
-  let { complete, points, measurements, options, macro } = part.shorthand()
+function draftHueyWaistband({ complete, points, measurements, options, macro, part }) {
   if (!options.ribbing) return part
 
   draftRibbing(part, measurements.hips * (1 + options.hipsEase) * (1 - options.ribbingStretch))
@@ -23,6 +22,6 @@ export const waistband = {
   options: {
     ribbingStretch: { pct: 15, min: 0, max: 30, menu: 'fit' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftHueyWaistband,
 }
