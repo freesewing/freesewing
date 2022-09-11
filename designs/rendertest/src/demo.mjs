@@ -47,7 +47,7 @@ export const demo = {
     store.set('styles', ['default-style', 'dotted', 'dashed', 'lashed', 'sa', 'help', 'hidden'])
 
     // We are drafting all this in one part to control the layout
-    if (options.only === 'false' || options.only === 'colors') part = addColors(params, true)
+    if (options.only === 'false' || options.only === 'colors') addColors(params, true)
     if (options.only === 'false' || options.only === 'widths') addWidths(params, true)
     if (options.only === 'false' || options.only === 'styles') addStyles(params, true)
     if (options.only === 'false' || options.only === 'combos') addCombos(params, true)
