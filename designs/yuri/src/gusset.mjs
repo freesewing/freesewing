@@ -1,8 +1,19 @@
 import { back } from './back.mjs'
 
-function yuriGusset(part) {
-  const { Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro, store } =
-    part.shorthand()
+function yuriGusset({
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  store,
+  part,
+}) {
 
   const w = store.get('gussetLength')
   points.top = new Point(0, 0)
