@@ -9,21 +9,20 @@ import { collarSpread } from './options.mjs'
  * experience, or more tailoring exprience.
  */
 
-function jaegerCollarStand(part) {
-  const {
-    paperless,
-    sa,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    snippets,
-    paths,
-    Path,
-  } = part.shorthand()
-
+function jaegerCollarStand({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  snippets,
+  paths,
+  Path,
+  part,
+}) {
   // Only keep what's relevant from the front part
   const collarPoints = [
     'notch',

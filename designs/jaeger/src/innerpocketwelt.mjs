@@ -1,8 +1,17 @@
 import { front } from './front.mjs'
 
-function jaegerInnerPocketWelt(part) {
-  const { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
-
+function jaegerInnerPocketWelt({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   const width = store.get('innerPocketWidth')
   const height = store.get('innerPocketWeltHeight')
 

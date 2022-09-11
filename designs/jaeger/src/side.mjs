@@ -2,22 +2,21 @@ import { frontBase } from './frontbase.mjs'
 import { backBase } from './backbase.mjs'
 import { backVent, backVentLength } from './options.mjs'
 
-function jaegerSide(part) {
-  const {
-    paperless,
-    sa,
-    snippets,
-    Snippet,
-    utils,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    paths,
-    Path,
-  } = part.shorthand()
-
+function jaegerSide({
+  paperless,
+  sa,
+  snippets,
+  Snippet,
+  utils,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  paths,
+  Path,
+  part,
+}) {
   // Double back vent
   if (options.backVent === 2) {
     let ventY = points.bsHips.y - points.bsWaistCp1.dy(points.bsHips) * options.backVentLength
