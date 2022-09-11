@@ -1,9 +1,18 @@
 import { sleevecap } from '@freesewing/brian'
 
-function teaganSleeve(part) {
-  const { sa, Point, points, Path, paths, options, complete, paperless, macro, measurements } =
-    part.shorthand()
-
+function teaganSleeve({
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  options,
+  complete,
+  paperless,
+  macro,
+  measurements,
+  part,
+}) {
   let height = points.bicepsRight.x * options.sleeveLength
   let width = measurements.biceps * (1 + options.bicepsEase) * (1 + options.sleeveEase)
   if (width > points.bicepsRight.x * 2) width = points.bicepsRight.x * 2

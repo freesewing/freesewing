@@ -8,9 +8,8 @@ import { inset } from './inset.mjs'
 // Create design
 const Bruce = new Design({
   data,
-  parts: [ back, side, front, inset ]
+  parts: [back, side, front, inset],
 })
 
 // Named exports
 export { back, side, front, inset, Bruce }
-

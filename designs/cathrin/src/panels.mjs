@@ -1,7 +1,6 @@
 import { base } from './base.mjs'
 
-function draftCathrinPanels (part) {
-  let { measurements, options, store, points, paths, Point, Path } = part.shorthand()
+function draftCathrinPanels({ measurements, options, store, points, paths, Point, Path, part }) {
   let count = 1
   let bottom = new Path()
     .move(points.bottomCF)

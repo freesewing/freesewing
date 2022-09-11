@@ -1,9 +1,7 @@
 import { box } from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function legendCutonfold(part) {
-  const { points, Point, macro } = part.shorthand()
-
+function legendCutonfold({ points, Point, macro, part }) {
   points.a = new Point(10, 20)
   points.b = new Point(90, 20)
 

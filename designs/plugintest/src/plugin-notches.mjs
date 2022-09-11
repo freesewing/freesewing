@@ -2,9 +2,7 @@ import { notchesPlugin } from '@freesewing/plugin-notches'
 
 const addThese = ['notch', 'bnotch']
 
-const pluginNotches = (part) => {
-  const { points, Point, paths, Path, snippets, Snippet, options } = part.shorthand()
-
+const pluginNotches = ({ points, Point, paths, Path, snippets, Snippet, options, part }) => {
   if (['notches', 'all'].indexOf(options.plugin) !== -1) {
     let x = 10
     for (const add of addThese) {
@@ -30,4 +28,3 @@ export const notches = {
   plugins: notchesPlugin,
   draft: pluginNotches,
 }
-

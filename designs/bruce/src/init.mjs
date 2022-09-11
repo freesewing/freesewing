@@ -1,4 +1,4 @@
-export function init (part) {
+export function init(part) {
   let { store, options, measurements, utils } = part.shorthand()
 
   // Don't run this every time, except when sampling

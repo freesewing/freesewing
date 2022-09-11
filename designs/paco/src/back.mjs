@@ -2,7 +2,20 @@ import { back as titanBack } from '@freesewing/titan'
 import { pctBasedOn } from '@freesewing/core'
 import { elastics, smallSteps } from '@freesewing/snapseries'
 
-function pacoBack(part) {
+function pacoBack({
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  absoluteOptions,
+  part,
+}) {
   /*
    * Helper method to draw the inseam path
    */
@@ -44,21 +57,6 @@ function pacoBack(part) {
       .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
       .close()
   }
-
-  // Shorthand call
-  let {
-    store,
-    sa,
-    points,
-    Path,
-    paths,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-    absoluteOptions,
-  } = part.shorthand()
 
   // Adapt bottom leg width based on heel & heel ease
   let quarterHeel = (measurements.heel * (1 + options.heelEase) * options.legBalance) / 2

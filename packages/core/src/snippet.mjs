@@ -30,4 +30,3 @@ Snippet.prototype.clone = function () {
 
   return clone
 }
-

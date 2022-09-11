@@ -61,30 +61,29 @@ const crossBox = {
 
 export const front = {
   name: 'albert.front',
-  measurements: [ 'chest', 'hpsToWaistBack', 'waist', 'waistToKnee', 'hips' ],
+  measurements: ['chest', 'hpsToWaistBack', 'waist', 'waistToKnee', 'hips'],
   options: {
     backOpening: { pct: 10, min: 0, max: 25, menu: 'fit' },
     bibWidth: { pct: 100, min: 50, max: 125, menu: 'style' },
     bibLength: { pct: 75, min: 0, max: 90, menu: 'style' },
     lengthBonus: { pct: 0, min: -20, max: 25, menu: 'style' },
   },
-  plugins: [ pluginBundle, crossBox ],
-  draft: part => {
-    const {
-      options,
-      measurements,
-      Point,
-      Path,
-      points,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      sa,
-      paperless,
-      macro,
-    } = part.shorthand()
-
+  plugins: [pluginBundle, crossBox],
+  draft: ({
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro,
+    part,
+  }) => {
     let chestWidth = measurements.chest / 4
     let bibWidth = chestWidth * options.bibWidth
     let bibLength = measurements.hpsToWaistBack * options.bibLength
@@ -125,7 +124,10 @@ export const front = {
     points.pocketLeftBottom = points.pocketLeftTop.shift(270, pocketSize)
     points.pocketRightBottom = points.pocketLeftBottom.shift(0, pocketSize)
 
-    points.crossBoxTo1 = new Point(points.topRightHem.x - strapWidth, points.topRightHem.y + hemWidth)
+    points.crossBoxTo1 = new Point(
+      points.topRightHem.x - strapWidth,
+      points.topRightHem.y + hemWidth
+    )
     points.crossBoxTo2 = new Point(
       points.topRightBack.x - strapWidth,
       points.topRightBack.y + hemWidth
@@ -253,5 +255,5 @@ export const front = {
     }
 
     return part
-  }
+  },
 }

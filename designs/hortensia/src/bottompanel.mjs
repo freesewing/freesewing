@@ -1,21 +1,20 @@
 import { sidepanel } from './sidepanel.mjs'
 
-function draftHortensiaBottompanel (part) {
-  let {
-    store,
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHortensiaBottompanel({
+  store,
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   let w = store.get('bottomPanelLength')
   let h = store.get('depth')
 

@@ -1,5 +1,4 @@
-export function s3Notches(part, type) {
-  const { snippets, Snippet, points, options } = part.shorthand()
+export function s3Notches(snippets, Snippet, points, options, type) {
   if (options.s3Armhole !== 0) snippets.shoulderNotch = new Snippet(type, points.shoulder)
   if (options.s3Collar !== 0) snippets.collarNotch = new Snippet(type, points.hps)
 }

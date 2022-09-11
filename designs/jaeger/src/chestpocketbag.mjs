@@ -1,9 +1,18 @@
 import { front } from './front.mjs'
 
-function jaegerChestPocketBag(part) {
-  const { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
-    part.shorthand()
-
+function jaegerChestPocketBag({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   const width = store.get('chestPocketWidth')
   const welt = store.get('chestPocketWeltHeight')
   const height = width * options.chestPocketDepth

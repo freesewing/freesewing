@@ -13,24 +13,24 @@ export const cup = {
     frontCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     bellaGuide: { bool: false, menu: 'fit' },
   },
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      utils,
-      measurements,
-      snippets,
-      Snippet,
-      absoluteOptions,
-    } = part.shorthand()
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    utils,
+    measurements,
+    snippets,
+    Snippet,
+    absoluteOptions,
+    part,
+  }) => {
     //inherited from Bella
     let angle = store.get('bustDartAngleSide')
     //removing paths and snippets not required from Bella
@@ -391,6 +391,5 @@ export const cup = {
       }
     }
     return part
-  }
+  },
 }
-

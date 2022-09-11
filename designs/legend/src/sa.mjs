@@ -1,9 +1,7 @@
 import { box } from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function legendSa(part) {
-  const { points, Point, paths, Path } = part.shorthand()
-
+function legendSa({ points, Point, paths, Path, part }) {
   points.a = new Point(10, 40)
   points.aCp = new Point(40, 40)
   points.b = new Point(69.5, 10)

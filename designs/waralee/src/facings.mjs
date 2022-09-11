@@ -1,20 +1,20 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleeFacings(part) {
-  const {
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    sa,
-  } = part.shorthand()
+function waraleeFacings({
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  sa,
+  part,
+}) {
 
   let frontPocketSize =
     options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/

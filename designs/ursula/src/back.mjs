@@ -1,22 +1,22 @@
 import { front } from './front.mjs'
 
-function ursulaBack(part) {
-  const {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    measurements,
-    //    Snippet,
-    //    snippets,
-    store,
-    utils,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+function ursulaBack({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  measurements,
+  //  Snippet,
+  //  snippets,
+  store,
+  utils,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   // Design pattern here
 

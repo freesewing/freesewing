@@ -1,7 +1,23 @@
 import { back as titanBack } from '@freesewing/titan'
 import { front } from './front.mjs'
 
-function draftCharlieBack (part) {
+function draftCharlieBack({
+  points,
+  Point,
+  paths,
+  Path,
+  options,
+  complete,
+  paperless,
+  store,
+  macro,
+  snippets,
+  Snippet,
+  sa,
+  log,
+  units,
+  part,
+}) {
   // Helper method to draw the outseam path
   const drawOutseam = () => {
     let outseam = new Path()
@@ -28,24 +44,6 @@ function draftCharlieBack (part) {
       .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
       .curve(points.forkCp2, points.kneeInCp1, points.floorIn)
   }
-
-  // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    snippets,
-    Snippet,
-    sa,
-    raise,
-    units,
-  } = part.shorthand()
 
   // Mark back pocket
   let base = points.styleWaistIn.dist(points.styleWaistOut)
@@ -191,7 +189,7 @@ function draftCharlieBack (part) {
         .close()
         .attr('class', 'fabric sa')
     }
-    raise.info(
+    log.info(
       `Inseam height: ${units(points.fork.dy(points.floorIn))} | ` +
         `Waist: ${units((store.get('waistbandBack') + store.get('waistbandFront')) * 2)} | ` +
         `Bottom leg width: ${units((store.get('legWidthBack') + store.get('legWidthFront')) / 2)}`
@@ -313,14 +311,10 @@ export const back = {
   after: front,
   hideDependencies: true,
   options: {
-    backPocketVerticalPlacement: { pct: 24, min: 18, max: 30,
-      menu: 'pockets.backpockets' },
-    backPocketHorizontalPlacement: { pct: 55, min: 48, max: 62,
-      menu: 'pockets.backpockets' },
-    backPocketWidth: { pct: 55, min: 50, max: 60,
-      menu: 'pockets.backpockets' },
-    backPocketDepth: { pct: 60, min: 40, max: 80,
-      menu: 'pockets.backpockets' },
+    backPocketVerticalPlacement: { pct: 24, min: 18, max: 30, menu: 'pockets.backpockets' },
+    backPocketHorizontalPlacement: { pct: 55, min: 48, max: 62, menu: 'pockets.backpockets' },
+    backPocketWidth: { pct: 55, min: 50, max: 60, menu: 'pockets.backpockets' },
+    backPocketDepth: { pct: 60, min: 40, max: 80, menu: 'pockets.backpockets' },
     backPocketFacing: { bool: true, menu: 'pockets.backpockets' },
   },
   draft: draftCharlieBack,

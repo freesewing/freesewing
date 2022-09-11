@@ -5,9 +5,8 @@ import { demo } from './demo.mjs'
 // Setup our new design
 const Rendertest = new Design({
   data,
-  parts: [ demo ]
+  parts: [demo],
 })
 
 // Named exports
 export { demo, Rendertest }
-

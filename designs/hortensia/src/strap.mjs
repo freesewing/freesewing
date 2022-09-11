@@ -1,9 +1,18 @@
 import { sidepanel } from './sidepanel.mjs'
 
-function draftHortensiaStrap (part) {
-  let { store, options, Point, Path, points, paths, complete, sa, paperless, macro } =
-    part.shorthand()
-
+function draftHortensiaStrap({
+  store,
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   let w = store.get('width') * options.handleWidth
   let h = store.get('depth') * options.strapLength
   if (sa > w * 0.8) {

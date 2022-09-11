@@ -1,8 +1,18 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleeCutout(part) {
-  const { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
-    part.shorthand()
+function waraleeCutout({
+  options,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   let separateWaistband = options.separateWaistband
   if ('waistband' == options.frontPocketStyle) {

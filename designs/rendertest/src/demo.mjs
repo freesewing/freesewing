@@ -20,9 +20,9 @@ export const demo = {
       ],
     },
   },
-  plugins: [ pluginBundle ],
-  draft: part => {
-    const { store, options, Path, paths, Point } = part.shorthand()
+  plugins: [pluginBundle],
+  draft: (params) => {
+    const { store, options, Path, paths, Point, part } = params
     // Keep things in store
     store.set('y', 0)
     store.set('w', options.width)
@@ -47,14 +47,14 @@ export const demo = {
     store.set('styles', ['default-style', 'dotted', 'dashed', 'lashed', 'sa', 'help', 'hidden'])
 
     // We are drafting all this in one part to control the layout
-    if (options.only === 'false' || options.only === 'colors') part = addColors(part, true)
-    if (options.only === 'false' || options.only === 'widths') addWidths(part, true)
-    if (options.only === 'false' || options.only === 'styles') addStyles(part, true)
-    if (options.only === 'false' || options.only === 'combos') addCombos(part, true)
-    if (options.only === 'false' || options.only === 'circles') addCircles(part, true)
-    if (options.only === 'false' || options.only === 'text') addText(part, true)
-    if (options.only === 'false' || options.only === 'snippets') addSnippets(part, true)
-    if (options.only === 'false' || options.only === 'macros') addMacros(part, true)
+    if (options.only === 'false' || options.only === 'colors') addColors(params, true)
+    if (options.only === 'false' || options.only === 'widths') addWidths(params, true)
+    if (options.only === 'false' || options.only === 'styles') addStyles(params, true)
+    if (options.only === 'false' || options.only === 'combos') addCombos(params, true)
+    if (options.only === 'false' || options.only === 'circles') addCircles(params, true)
+    if (options.only === 'false' || options.only === 'text') addText(params, true)
+    if (options.only === 'false' || options.only === 'snippets') addSnippets(params, true)
+    if (options.only === 'false' || options.only === 'macros') addMacros(params, true)
 
     // Make sure no text is cut off
     paths.box = new Path()
@@ -63,12 +63,10 @@ export const demo = {
       .attr('class', 'hidden')
 
     return part
-  }
+  },
 }
 
-function addCircles(part) {
-  const { Point, points, store, options } = part.shorthand()
-
+function addCircles({ Point, points, store, options }) {
   if (options.only === 'circles') {
     let y = store.get('y')
     const w = store.get('w')
@@ -103,9 +101,7 @@ function addCircles(part) {
   return part
 }
 
-function addColors(part, demo = false) {
-  const { Point, Path, points, paths, store, options } = part.shorthand()
-
+function addColors({ Point, Path, points, paths, store, options }, demo = false) {
   if (options.only === 'colors' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -138,9 +134,7 @@ function addColors(part, demo = false) {
   return part
 }
 
-function addCombos(part, demo = false) {
-  const { Point, Path, points, paths, store, options } = part.shorthand()
-
+function addCombos({ Point, Path, points, paths, store, options }, demo = false) {
   if (options.only === 'combos' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -181,9 +175,7 @@ function addCombos(part, demo = false) {
   return part
 }
 
-function addMacros(part, demo = false) {
-  const { macro, Point, Path, points, paths, store, options } = part.shorthand()
-
+function addMacros({ macro, Point, Path, points, paths, store, options }, demo = false) {
   if (options.only === 'macros' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -273,9 +265,10 @@ function addMacros(part, demo = false) {
   return part
 }
 
-function addSnippets(part, demo = false) {
-  const { Point, Path, points, paths, snippets, Snippet, store, options } = part.shorthand()
-
+function addSnippets(
+  { Point, Path, points, paths, snippets, Snippet, store, options },
+  demo = false
+) {
   if (options.only === 'snippets' || demo) {
     let y = store.get('y')
     let w = store.get('w')
@@ -338,9 +331,7 @@ function addSnippets(part, demo = false) {
   return part
 }
 
-function addStyles(part, demo = false) {
-  const { Point, Path, points, paths, store, options } = part.shorthand()
-
+function addStyles({ Point, Path, points, paths, store, options }, demo = false) {
   if (options.only === 'styles' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -373,8 +364,7 @@ function addStyles(part, demo = false) {
   return part
 }
 
-function addText(part, demo = false) {
-  const { Point, Path, points, paths, store, options } = part.shorthand()
+function addText({ Point, Path, points, paths, store, options }, demo = false) {
   if (options.only === 'text' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -448,9 +438,7 @@ function addText(part, demo = false) {
   return part
 }
 
-function addWidths(part, demo = false) {
-  const { Point, Path, points, paths, store, options } = part.shorthand()
-
+function addWidths({ Point, Path, points, paths, store, options }, demo = false) {
   if (options.only === 'widths' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -482,4 +470,3 @@ function addWidths(part, demo = false) {
 
   return part
 }
-

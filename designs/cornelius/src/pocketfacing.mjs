@@ -1,9 +1,19 @@
 import { frontpoints } from './frontpoints.mjs'
 
-function draftCorneliusPocketFacing (part) {
-  let { Path, Point, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
-    part.shorthand()
-
+function draftCorneliusPocketFacing({
+  Path,
+  Point,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   let halfInch = store.get('halfInch')
   let waist = store.get('waist')
 

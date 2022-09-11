@@ -1,6 +1,23 @@
 import { back } from './back.mjs'
 
-function titanFront(part) {
+function titanFront({
+  points,
+  Point,
+  paths,
+  Path,
+  measurements,
+  options,
+  complete,
+  paperless,
+  store,
+  macro,
+  utils,
+  snippets,
+  Snippet,
+  sa,
+  absoluteOptions,
+  part,
+}) {
   /*
    * Helper method to draw the inseam path
    */
@@ -155,25 +172,6 @@ function titanFront(part) {
   }
   const adaptOutseam = () => adaptSeam('out')
   const adaptInseam = () => adaptSeam('in')
-
-  // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    utils,
-    snippets,
-    Snippet,
-    sa,
-    absoluteOptions,
-  } = part.shorthand()
 
   // Let's get to work
   points.waistX = new Point(measurements.waistFrontArc * (1 + options.waistEase), 0)

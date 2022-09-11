@@ -1,22 +1,21 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { bottomsidepanel } from './bottomsidepanel.mjs'
 
-function draftHortensiaSidepanel (part) {
-  let {
-    store,
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHortensiaSidepanel({
+  store,
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   const c = 0.551915024494 // circle constant
   const phi = 1.6180339887
 
@@ -225,10 +224,12 @@ export const sidepanel = {
     width: 230,
     height: 330,
     size: { pct: 50, min: 20, max: 200, menu: 'style' },
-    zipperSize: { dflt: '#5',
+    zipperSize: {
+      dflt: '#5',
       list: ['#3', '#4', '#4.5', '#5', '#6', '#8', '#10', 'Invisible'],
-      menu: 'style' },
+      menu: 'style',
+    },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftHortensiaSidepanel,
 }

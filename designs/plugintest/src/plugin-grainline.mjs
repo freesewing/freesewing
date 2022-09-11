@@ -1,8 +1,6 @@
 import { grainlinePlugin } from '@freesewing/plugin-grainline'
 
-const pluginGrainline = (part) => {
-  const { points, Point, paths, Path, options, macro } = part.shorthand()
-
+const pluginGrainline = ({ points, Point, paths, Path, options, macro, part }) => {
   if (['grainline', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(0, 0)
     points.b = new Point(200, 0)

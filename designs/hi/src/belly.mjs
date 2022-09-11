@@ -1,22 +1,21 @@
 import { body } from './body.mjs'
 import { aboveMouth } from './aboveMouth.mjs'
 
-function draftHiBelly (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiBelly({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let belly01_02d = 224.8451041 * options.size
   let belly02_03d = 108.1988389 * options.size
   let belly03_04d = 216.7485605 * options.size
@@ -183,9 +182,9 @@ function draftHiBelly (part) {
     snippets.mouth1 = new Snippet('bnotch', points.bellyMouthSnippet1)
     snippets.mouth2 = new Snippet('bnotch', points.bellyMouthSnippet2)
 
-    points.grainlineFrom = new Point( points.belly10.x, points.belly02.y *.7 )
-    points.grainlineTo = new Point( points.belly05.x, points.belly02.y *.7 )
-    macro("grainline", {
+    points.grainlineFrom = new Point(points.belly10.x, points.belly02.y * 0.7)
+    points.grainlineTo = new Point(points.belly05.x, points.belly02.y * 0.7)
+    macro('grainline', {
       from: points.grainlineFrom,
       to: points.grainlineTo,
     })
@@ -315,7 +314,7 @@ function draftHiBelly (part) {
 
 export const belly = {
   name: 'hi.belly',
-  after: [ body, aboveMouth ],
+  after: [body, aboveMouth],
   options: {
     hungry: { pct: 50, min: 0, max: 100, menu: 'style' },
   },

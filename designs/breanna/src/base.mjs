@@ -1,6 +1,4 @@
-function draftBreannaBase (part) {
-  let { store, points, Point, measurements, options, utils } = part.shorthand()
-
+function draftBreannaBase({ store, points, Point, measurements, options, utils, part }) {
   // HPS
   points.hps = new Point((measurements.neck * (1 + options.collarEase)) / options.collarFactor, 0)
 

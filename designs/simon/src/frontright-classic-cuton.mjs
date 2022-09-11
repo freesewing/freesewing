@@ -1,9 +1,19 @@
 import { addButtons } from './shared.mjs'
 
-export const draftFrontRightClassicCuton = (part) => {
-  const { store, utils, sa, Point, points, Path, paths, complete, paperless, macro, options } =
-    part.shorthand()
-
+export const draftFrontRightClassicCuton = ({
+  store,
+  utils,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  options,
+  part,
+}) => {
   const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),

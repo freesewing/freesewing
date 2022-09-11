@@ -38,21 +38,21 @@ export const base = {
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80, menu: 'advanced' },
   },
   plugins: [ pluginBundle, bustPlugin ],
-  draft: part => {
-    const {
-      measurements,
-      options,
-      store,
-      points,
-      snippets,
-      Point,
-      Snippet,
-      Path,
-      paths,
-      utils,
-      complete,
-      macro,
-    } = part.shorthand()
+  draft: ({
+    measurements,
+    options,
+    store,
+    points,
+    snippets,
+    Point,
+    Snippet,
+    Path,
+    paths,
+    utils,
+    complete,
+    macro,
+    part,
+  }) => {
 
     store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)
 

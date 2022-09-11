@@ -1,23 +1,22 @@
 import { back } from './back.mjs'
 import { collarEase, collarStandBend, collarStandCurve, collarStandWidth } from './options.mjs'
 
-function simonCollarStand(part) {
-  const {
-    measurements,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
-
+function simonCollarStand({
+  measurements,
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  options,
+  part,
+}) {
   const draft = function (tweak = 1) {
     const length = measurements.neck * (1 + options.collarEase) * tweak
     const width = store.get('collarStandWidth')

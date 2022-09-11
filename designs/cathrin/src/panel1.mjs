@@ -2,8 +2,8 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { panels } from './panels.mjs'
 import { draftPanel1ab } from './panel1ab.mjs'
 
-function draftCathrinPanel1 (part) {
-  let { macro, sa, paths, points, options, complete, paperless } = part.shorthand()
+function draftCathrinPanel1(params) {
+  const { macro, sa, paths, points, options, complete, paperless, part } = params
 
   points.anchor = points.topCF.clone()
 
@@ -14,7 +14,7 @@ function draftCathrinPanel1 (part) {
   delete paths.panel5
   delete paths.panel6
 
-  if (options.panels === '13') return draftPanel1ab(part)
+  if (options.panels === '13') return draftPanel1ab(params)
 
   // Complete pattern?
   if (complete) {
@@ -76,6 +76,6 @@ function draftCathrinPanel1 (part) {
 export const panel1 = {
   name: 'cathrin.panel1',
   from: panels,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftCathrinPanel1,
 }

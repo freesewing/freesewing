@@ -1,25 +1,24 @@
 import { base } from '@freesewing/brian'
 
-function teaganFront(part) {
-  const {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-    raise,
-    units,
-  } = part.shorthand()
-
+function teaganFront({
+  utils,
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  log,
+  units,
+  part,
+}) {
   // Hide Brian paths
   for (let key of Object.keys(paths)) paths[key].render = false
 
@@ -58,8 +57,8 @@ function teaganFront(part) {
     points.armholePitch.x
   )
 
-  // Raise info for full length
-  raise.info(['fullLengthFromHps', units(points.hps.dy(points.hem))])
+  // Log info for full length
+  log.info(['fullLengthFromHps', units(points.hps.dy(points.hem))])
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).setRender(false)

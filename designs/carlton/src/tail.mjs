@@ -1,10 +1,19 @@
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
-function draftCarltonTail (part) {
-  let { units, paperless, sa, store, complete, points, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarltonTail({
+  units,
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   let length = store.get('waistToHem') - store.get('beltWidth') / 2
 
   points.cbTop = new Point(0, 0)
@@ -123,6 +132,6 @@ function draftCarltonTail (part) {
 
 export const tail = {
   name: 'carlton.tail',
-  after: [ front, back ],
+  after: [front, back],
   draft: draftCarltonTail,
 }

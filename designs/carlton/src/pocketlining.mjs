@@ -1,9 +1,18 @@
 import { pocket } from './pocket.mjs'
 
-function draftCarltonPocketLining (part) {
-  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarltonPocketLining({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   points.topLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.75)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
   if (options.pocketRadius > 0) {

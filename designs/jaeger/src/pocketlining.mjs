@@ -1,9 +1,17 @@
 import { pocket } from './pocket.mjs'
 
-function jaegerPocketLining(part) {
-  const { paperless, sa, snippets, complete, points, options, macro, paths, Path } =
-    part.shorthand()
-
+function jaegerPocketLining({
+  paperless,
+  sa,
+  snippets,
+  complete,
+  points,
+  options,
+  macro,
+  paths,
+  Path,
+  part,
+}) {
   // Adapt length
   points.topLeft = points.edgeLeft.flipY(points.topLeft)
   points.topRight = points.edgeRight.flipY(points.topRight)

@@ -15,16 +15,19 @@ import { zipperguard } from './zipperguard.mjs'
 // Create new design
 const Cornelius = new Design({
   data,
-  parts: [
-    front, back, legband, legbandKeystone, waistband, pocketFacing,
-    pocket, zipperguard,
-  ]
+  parts: [front, back, legband, legbandKeystone, waistband, pocketFacing, pocket, zipperguard],
 })
 
 // Named exports
 export {
-  front, back, legband, legbandKeystone, waistband, pocketFacing,
-  pocket, zipperguard,
+  front,
+  back,
+  legband,
+  legbandKeystone,
+  waistband,
+  pocketFacing,
+  pocket,
+  zipperguard,
   frontpoints,
   Cornelius,
 }

@@ -1,26 +1,25 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { createTeeth } from './teeth.mjs'
 
-function draftHiUpperTeeth (part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiUpperTeeth({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let upperTeeth01_02d = 131.305041182736 * options.size
   let upperTeeth01_02a = 34.147056946748805
   let upperTeeth02cp1d = 64.30113337316406 * options.size
-  let upperTeeth02cp1a = 55.1335930733262 +180
+  let upperTeeth02cp1a = 55.1335930733262 + 180
   let upperTeeth01cp2d = 48.331000000000017 * options.size
   let upperTeeth01cp2a = 0
 
@@ -47,7 +46,8 @@ function draftHiUpperTeeth (part) {
   //paths.teeth = new Path().move(paths.seam.start())
 
   paths.teeth = createTeeth(
-    [ // Array holding the points for half a mouth (bezier, not path)
+    [
+      // Array holding the points for half a mouth (bezier, not path)
       points.upperTeeth03, // end
       points.upperTeeth03cp2, // cp2
       points.upperTeeth01cp1, // cp1
@@ -64,7 +64,9 @@ function draftHiUpperTeeth (part) {
   if (complete) {
     snippets.upperTeeth = new Snippet('bnotch', points.upperTeeth01)
 
-    points.titleAnchor = points.upperTeeth02.shiftFractionTowards(points.upperTeeth03, 0.5).shiftFractionTowards(points.upperTeeth01, 0.5)
+    points.titleAnchor = points.upperTeeth02
+      .shiftFractionTowards(points.upperTeeth03, 0.5)
+      .shiftFractionTowards(points.upperTeeth01, 0.5)
 
     macro('title', {
       at: points.titleAnchor,
@@ -120,6 +122,6 @@ function draftHiUpperTeeth (part) {
 
 export const upperTeeth = {
   name: 'hi.upperTeeth',
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftHiUpperTeeth,
 }

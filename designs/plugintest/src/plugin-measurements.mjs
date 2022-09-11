@@ -11,9 +11,7 @@ const measies = [
   'crossSeamBack',
 ]
 
-const pluginMeasurements = (part) => {
-  const { points, Point, paths, Path, measurements, options } = part.shorthand()
-
+const pluginMeasurements = ({ points, Point, paths, Path, measurements, options, part }) => {
   if (['measurements', 'all'].indexOf(options.plugin) !== -1) {
     let y = 10
     for (const m of measies) {

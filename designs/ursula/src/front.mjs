@@ -1,20 +1,22 @@
-function ursulaFront(part) {
-  const {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    measurements,
-    //    Snippet,
-    //    snippets,
-    store,
-    utils,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
+function ursulaFront({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  measurements,
+  //  Snippet,
+  //  snippets,
+  store,
+  utils,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   // Stretch utility method
 
@@ -215,5 +217,6 @@ export const front = {
     frontDip: { pct: 5.0, min: -5, max: 15, menu: 'style' },
     taperToGusset: { pct: 70, min: 5, max: 100, menu: 'style' },
   },
+  plugins: [ pluginBundle ],
   draft: ursulaFront,
 }

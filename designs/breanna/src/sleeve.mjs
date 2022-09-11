@@ -3,8 +3,8 @@ import { front } from './front.mjs'
 import { frontBase } from './front-base.mjs'
 import { back } from './back.mjs'
 
-function draftBreannaSleeve (part) {
-  let {
+function draftBreannaSleeve(params) {
+  const {
     store,
     sa,
     measurements,
@@ -18,7 +18,8 @@ function draftBreannaSleeve (part) {
     complete,
     paperless,
     macro,
-  } = part.shorthand()
+    part,
+  } = params
 
   // Wrist
   let top = paths.sleevecap.edge('topLeft').y
@@ -70,7 +71,8 @@ function draftBreannaSleeve (part) {
     if (q1Len === frontTarget) points.frontNotch = points.capQ1.clone()
     else if (q1Len > frontTarget) points.frontNotch = q1.shiftAlong(frontTarget)
     else {
-      let q2 = new Path().move(points.capQ1)
+      let q2 = new Path()
+        .move(points.capQ1)
         .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
         .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
       points.frontNotch = q2.shiftAlong(frontTarget - q1Len)
@@ -81,7 +83,8 @@ function draftBreannaSleeve (part) {
     if (q4Len === backTarget) points.backNotch = points.capQ4.clone()
     else if (q4Len > backTarget) points.backNotch = q4.shiftAlong(backTarget)
     else {
-      let q3 = new Path().move(points.capQ4)
+      let q3 = new Path()
+        .move(points.capQ4)
         .curve(points.capQ4Cp1, points.capQ3Cp2, points.capQ3)
         .curve(points.capQ3Cp1, points.capQ2Cp2, points.capQ2)
       points.backNotch = q3.shiftAlong(backTarget - q4Len)
@@ -125,11 +128,8 @@ function draftBreannaSleeve (part) {
 export const sleeve = {
   name: 'breanna.sleeve',
   from: sleeveCap,
-  after: [ front, frontBase, back ],
-  measurements: [
-    'shoulderToWrist',
-    'wrist',
-  ],
+  after: [front, frontBase, back],
+  measurements: ['shoulderToWrist', 'wrist'],
   options: {
     cuffEase: { pct: 20, min: 0, max: 50, menu: 'fit' },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'style' },

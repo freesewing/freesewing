@@ -1,8 +1,16 @@
 import { draftBarrelCuff, decorateBarrelCuff, paperlessBarrelCuff } from './shared.mjs'
 
-export const draftAngledBarrelCuff = (part) => {
-  const { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
-
+export const draftAngledBarrelCuff = ({
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  part,
+}) => {
   draftBarrelCuff(part)
   const height = store.get('cuffHeight')
 

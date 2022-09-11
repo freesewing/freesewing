@@ -1,10 +1,19 @@
 import { back } from './back.mjs'
 
-function draftCharlieBackPocket (part) {
-  // Shorthand
-  let { points, Point, paths, Path, complete, paperless, store, macro, snippets, Snippet, sa } =
-    part.shorthand()
-
+function draftCharlieBackPocket({
+  points,
+  Point,
+  paths,
+  Path,
+  complete,
+  paperless,
+  store,
+  macro,
+  snippets,
+  Snippet,
+  sa,
+  part,
+}) {
   points.leftNotch = new Point(store.get('backPocketWidth') / -2, 0)
   points.rightNotch = points.leftNotch.flipX()
   points.waistbandLeft = new Point(points.leftNotch.x, store.get('backPocketToWaistband') * -1)

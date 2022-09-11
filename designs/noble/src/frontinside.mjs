@@ -1,21 +1,20 @@
 import { frontPoints } from './frontpoints.mjs'
 
-function nobleFrontInside(part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function nobleFrontInside({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   delete points.waistDartHem
   delete points.waistDartRight
   delete points.waistDartRightCp
