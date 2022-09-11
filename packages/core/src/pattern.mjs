@@ -674,7 +674,6 @@ Pattern.prototype.__resolveParts = function (count = 0) {
     if (part.after) {
       if (Array.isArray(part.after)) {
         for (const dep of part.after) {
-          if (part.hideDependencies) dep.hide = true
           this.__parts[dep.name] = dep
           this.__addDependency(name, part, dep)
         }
