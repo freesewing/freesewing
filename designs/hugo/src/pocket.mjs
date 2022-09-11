@@ -89,5 +89,6 @@ function hugoPocket({ utils, store, sa, points, Path, paths, complete, paperless
 export const pocket = {
   name: 'hugo.pocket',
   from: front,
+  hideDependencies: true,
   draft: hugoPocket,
 }

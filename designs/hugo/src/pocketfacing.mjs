@@ -46,5 +46,6 @@ function hugoPocketFacing({ sa, points, Path, paths, complete, paperless, macro,
 export const pocketFacing = {
   name: 'hugo.pocketFacing',
   from: pocket,
+  hideDependencies: true,
   draft: hugoPocketFacing,
 }
