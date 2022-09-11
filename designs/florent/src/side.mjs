@@ -1,9 +1,18 @@
 import { top } from './top.mjs'
 
-function draftFlorentSide (part) {
-  let { store, paperless, sa, complete, points, macro, paths, Path, snippets, Snippet } =
-    part.shorthand()
-
+function draftFlorentSide({
+  store,
+  paperless,
+  sa,
+  complete,
+  points,
+  macro,
+  paths,
+  Path,
+  snippets,
+  Snippet,
+  part,
+}) {
   // Clean up
   for (let i of Object.keys(paths)) {
     if (i !== 'side') delete paths[i]

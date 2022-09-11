@@ -1,8 +1,6 @@
 import { brimBottom } from './brimbottom.mjs'
 
-function draftFlorentBrimTop (part) {
-  let { paperless, sa, complete, points, macro, paths, Path } = part.shorthand()
-
+function draftFlorentBrimTop({ paperless, sa, complete, points, macro, paths, Path, part }) {
   paths.hint = new Path()
     .move(points.tipLeft)
     .curve(points.tipLeftCp2, points.outerMidCp1, points.outerMid)
