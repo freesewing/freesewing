@@ -1,21 +1,25 @@
 import chai from 'chai'
-import { Pattern, round } from '@freesewing/core'
+import { Design, Pattern, round } from '@freesewing/core'
 import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Cutonfold Plugin Tests', () => {
-
   it('Should run the default cutonfold macro', () => {
-    const pattern = new Pattern().use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    pattern.parts.test.points.to = new pattern.Point(10, 220)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('cutonfold', {
-      from: pattern.parts.test.points.from,
-      to: pattern.parts.test.points.to,
-    })
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(10, 220)
+        macro('cutonfold', {
+          from: points.from,
+          to: points.to,
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     const c = pattern.parts.test.paths.cutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
@@ -37,33 +41,41 @@ describe('Cutonfold Plugin Tests', () => {
   })
 
   it('Should run the cutonfold/grainline macro', () => {
-    const pattern = new Pattern().use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    pattern.parts.test.points.to = new pattern.Point(10, 230)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('cutonfold', {
-      from: pattern.parts.test.points.from,
-      to: pattern.parts.test.points.to,
-      grainline: true,
-    })
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(10, 220)
+        macro('cutonfold', {
+          from: points.from,
+          to: points.to,
+          grainline: true,
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     const c = pattern.parts.test.paths.cutonfold
     expect(c.attributes.get('data-text')).to.equal('cutOnFoldAndGrainline')
   })
 
   it('Should run the cutonfold macro with configurable offset', () => {
-    let pattern = new Pattern()
-    pattern.draft = function() {}
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    pattern.parts.test.points.to = new pattern.Point(10, 220)
-    let { macro } = pattern.parts.test.shorthand()
-    macro('cutonfold', {
-      from: pattern.parts.test.points.from,
-      to: pattern.parts.test.points.to,
-      offset: 30
-    })
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(10, 220)
+        macro('cutonfold', {
+          from: points.from,
+          to: points.to,
+          offset: 30,
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test.paths.cutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
@@ -85,18 +97,21 @@ describe('Cutonfold Plugin Tests', () => {
   })
 
   it('Should run the cutonfold macro with configurable margin', () => {
-    let pattern = new Pattern()
-    pattern.draft = function() {}
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    pattern.parts.test.points.to = new pattern.Point(10, 220)
-    let { macro } = pattern.parts.test.shorthand()
-    macro('cutonfold', {
-      from: pattern.parts.test.points.from,
-      to: pattern.parts.test.points.to,
-      margin: 20
-    })
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(10, 220)
+        macro('cutonfold', {
+          from: points.from,
+          to: points.to,
+          margin: 20,
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test.paths.cutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')

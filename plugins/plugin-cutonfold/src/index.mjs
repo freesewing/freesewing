@@ -70,4 +70,3 @@ export const plugin = {
 // More specifically named exports
 export const cutonfoldPlugin = plugin
 export const pluginCutonfold = plugin
-
