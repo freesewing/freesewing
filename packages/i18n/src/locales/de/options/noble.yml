@@ -38,10 +38,10 @@ frontArmholeCurvature:
   title: Vordere Armlochkrümmung
   description: Steuert wie tief das Armloch nach vorne unten ausgeschnitten ist
 frontArmholePitchDepth:
-  description: Controls how deep the armhole curts into the front
+  description: Controls how deep the armhole cuts into the front
   title: Vordere Armlochtiefe
 backArmholePitchDepth:
-  description: Controls how deep the armhole curts into the back
+  description: Controls how deep the armhole cuts into the back
   title: Rückenarmloch-Tiefe
 backNeckCutout:
   description: Controls how deep the neck is cutout in the back
@@ -53,9 +53,9 @@ frontShoulderWidth:
   description: Controls how much width is added to the shoulder in the front
   title: Vordere Schulterbreite
 highBustWidth:
-  description: Controls the widht of the high bust
-  title: Oberbrustweite
+  description: Controls the width of the high bust
+  title: High bust width
 shoulderToShoulderEase:
-  description: Steuert die Menge an Zugabe an dem Schulter-zu-Schulter Maß
+  description: Controls the amount of ease along the shoulder to shoulder measurement
   title: Zugabe des Schulterabstandes
 
