@@ -1,20 +1,20 @@
 import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 
-function yuriBack(part) {
-  const {
-    store,
-    macro,
-    Path,
-    Point,
-    points,
-    paths,
-    complete,
-    paperless,
-    sa,
-    options,
-    measurements,
-  } = part.shorthand()
+function yuriBack({
+  store,
+  macro,
+  Path,
+  Point,
+  points,
+  paths,
+  complete,
+  paperless,
+  sa,
+  options,
+  measurements,
+  part,
+}) {
 
   // Clear paths from Brian
   for (const i in paths) {
