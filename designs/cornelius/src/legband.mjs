@@ -2,7 +2,7 @@ import { front } from './front.mjs'
 import { back } from './back.mjs'
 
 function findR(part, height, arcLength) {
-  let { raise } = part.shorthand()
+  let { log } = part.shorthand()
 
   let iter = 0
   let a = 0.5
@@ -19,7 +19,7 @@ function findR(part, height, arcLength) {
     //console.log( {iter, diff, a} );
   } while ((diff < -1 || diff > 1) && iter < 50)
   if (iter >= 500) {
-    raise.error('Could not find the radius for the legband within 500 iterations')
+    log.error('Could not find the radius for the legband within 500 iterations')
   }
 
   return a * (180 / Math.PI)
