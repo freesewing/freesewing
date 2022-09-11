@@ -1,12 +1,12 @@
 hungry:
-  title: Hungry
-  description: Changes the mouth shape to convey Hi is hungry
+  title: Hungrig
+  description: Ändert die Mundform, um zu vermitteln, dass Hi hungrig ist
 nosePointiness:
-  title: Nose pointiness
-  description: Controls how pointy Hi's nose is
+  title: Nasenspitzigkeit
+  description: Steuert, wie spitz die Nase von Hi ist
 aggressive:
-  title: Aggressive
-  description: Give Hi pointy teeth, or not
+  title: Aggressiv
+  description: Gibt Hi spitze Zähne, oder nicht
 size:
-  title: Size
-  description: Sharks come in all sizes, and so does Hi
+  title: Größe
+  description: Haie gibt es in allen Größen, und Hi genauso
