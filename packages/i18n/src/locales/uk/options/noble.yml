@@ -38,10 +38,10 @@ frontArmholeCurvature:
   title: Заокруглення пройми рукава спереду
   description: Керує формою пройми рукава спереду знизу
 frontArmholePitchDepth:
-  description: Керує виступом пройми спереду
+  description: Controls how deep the armhole cuts into the front
   title: Глибина виступу пройми зпереду
 backArmholePitchDepth:
-  description: Керує виступом пройми ззаду
+  description: Controls how deep the armhole cuts into the back
   title: Глибина виступу пройми ззаду
 backNeckCutout:
   description: Контролює глибину задньої частини горловини
@@ -53,9 +53,9 @@ frontShoulderWidth:
   description: Контролює, скільки ширини додається до плеча спереду
   title: Ширина плечей спереду
 highBustWidth:
-  description: Контролює ширину полички
-  title: Ширина полички
+  description: Controls the width of the high bust
+  title: High bust width
 shoulderToShoulderEase:
-  description: Контролює свободу облягання від плеча до плеча
+  description: Controls the amount of ease along the shoulder to shoulder measurement
   title: Свобода облягання плечей
 
