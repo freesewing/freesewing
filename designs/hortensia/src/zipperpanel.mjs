@@ -1,8 +1,17 @@
 import { sidepanel } from './sidepanel.mjs'
 
-function draftHortensiaZipperpanel (part) {
-  let { store, Point, Path, points, paths, complete, sa, paperless, macro } = part.shorthand()
-
+function draftHortensiaZipperpanel({
+  store,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   let z = store.get('zipperWidth')
   let w = (store.get('zipperPanelWidth') - z) / 2
   let h = store.get('depth')
