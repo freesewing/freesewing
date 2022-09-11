@@ -3,8 +3,15 @@ import { step4 } from './step1-4.mjs'
 export const step5 = {
   name: 'tutorial.step5',
   from: step4,
-  draft: part => {
-    const { Point, points, Path, paths, measurements, options } = part.shorthand()
+  draft: ({
+    Point,
+    points,
+    Path,
+    paths,
+    measurements,
+    options,
+    part,
+  }) => {
 
     const width = measurements.head * options.widthRatio
     const length = measurements.head * options.lengthRatio
@@ -29,8 +36,13 @@ export const step5 = {
 export const step6 = {
   name: 'tutorial.step6',
   from: step5,
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
+  draft: ({
+    Point,
+    points,
+    Path,
+    paths,
+    part,
+  }) => {
 
     points.edgeLeft = new Point(points.topLeft.x, points.left.y)
     points.edgeRight = new Point(points.topRight.x, points.right.y)
@@ -57,8 +69,12 @@ export const step6 = {
 export const step7 = {
   name: 'tutorial.step7',
   from: step6,
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
+  draft: ({
+    Point,
+    points,
+    macro,
+    part,
+  }) => {
 
     const strap = points.edgeTop.dy(points.top)
 
@@ -88,8 +104,14 @@ export const step7 = {
 export const step8 = {
   name: 'tutorial.step8',
   from: step7,
-  draft: part => {
-    const { points, Path, paths, macro } = part.shorthand()
+  draft: ({
+    points,
+    Path,
+    paths,
+    macro,
+    part,
+  }) => {
+
     const rotateThese = [
       'edgeTopLeftCp',
       'edgeTop',

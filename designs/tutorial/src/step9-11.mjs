@@ -3,8 +3,12 @@ import { step8 } from './step5-8.mjs'
 export const step9 = {
   name: 'tutorial.step9',
   from: step8,
-  draft: part => {
-    const { points, Path, paths } = part.shorthand()
+  draft: ({
+    points,
+    Path,
+    paths,
+    part,
+  }) => {
 
     points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
     points.topCp1 = points.topCp2.flipX()
@@ -46,8 +50,13 @@ export const step9 = {
 export const step10 = {
   name: 'tutorial.step10',
   from: step9,
-  draft: part => {
-    const { points, Path, paths, macro } = part.shorthand()
+  draft: ({
+    points,
+    Path,
+    paths,
+    macro,
+    part,
+  }) => {
 
     macro('round', {
       from: points.topLeft,
@@ -92,8 +101,16 @@ export const step10 = {
 export const step11 = {
   name: 'tutorial.step11',
   from: step10,
-  draft: part => {
-    const { Point, points, paths, macro, complete, snippets, Snippet } = part.shorthand()
+  draft: ({
+    Point,
+    points,
+    paths,
+    macro,
+    complete,
+    snippets,
+    Snippet,
+    part,
+  }) => {
 
     // Complete?
     if (complete) {

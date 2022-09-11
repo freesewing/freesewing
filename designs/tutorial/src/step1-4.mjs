@@ -3,9 +3,20 @@ import { configpart } from './configpart.mjs'
 export const step1 = {
   name: 'tutorial.step1',
   after: configpart,
-  draft: part => {
-    const { options, Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
-      part.shorthand()
+  draft: ({
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro,
+    part,
+  }) => {
 
     let w = 500 * options.size
     points.topLeft = new Point(0, 0)
@@ -57,8 +68,14 @@ export const step1 = {
 export const step2 = {
   name: 'tutorial.step2',
   after: configpart,
-  draft: part => {
-    const { Point, points, Path, paths, measurements } = part.shorthand()
+  draft: ({
+    Point,
+    points,
+    Path,
+    paths,
+    measurements,
+    part,
+  }) => {
 
     points.right = new Point(measurements.head / 10, 0)
     points.bottom = new Point(0, measurements.head / 12)
@@ -75,8 +92,15 @@ export const step2 = {
 export const step3 = {
   name: 'tutorial.step3',
   after: configpart,
-  draft: part => {
-    const { Point, points, Path, paths, measurements, options } = part.shorthand()
+  draft: ({
+    Point,
+    points,
+    Path,
+    paths,
+    measurements,
+    options,
+    part,
+  }) => {
 
     let tweak = 1
     let target = (measurements.head * options.neckRatio) / 4
@@ -104,8 +128,12 @@ export const step3 = {
 export const step4 = {
   name: 'tutorial.step4',
   from: step3,
-  draft: part => {
-    const { points, Path, paths } = part.shorthand()
+  draft: ({
+    points,
+    Path,
+    paths,
+    part,
+  }) => {
 
     points.rightCp2 = points.rightCp1.flipY()
     points.bottomCp1 = points.bottomCp2.flipX()
