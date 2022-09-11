@@ -7,7 +7,7 @@ import {
   options,
 } from './shared.mjs'
 
-function trayvonLiningTail(part) {
+function trayvonLiningTail(params) {
   const {
     Path,
     Snippet,
@@ -21,10 +21,10 @@ function trayvonLiningTail(part) {
     snippets,
     store,
     absoluteOptions,
-  } = part.shorthand()
+  } = params
 
-  calculateHelpers(part)
-  draftTieShape(part, store.get('backTip') * 2.5, options.knotWidth * 2.5)
+  calculateHelpers(params)
+  draftTieShape(params, store.get('backTip') * 2.5, options.knotWidth * 2.5)
 
   // Cut part short
   points.cutRight = points.tipRight.shiftTowards(points.midRight, absoluteOptions.tipWidth * 2.5)
@@ -57,10 +57,10 @@ function trayvonLiningTail(part) {
   // Paperless?
   if (paperless) tieShapeDimensions(part, true)
 
-  return part
+  return params.part
 }
 
-function trayvonLiningTip(part) {
+function trayvonLiningTip(params) {
   const {
     Path,
     Snippet,
@@ -72,10 +72,10 @@ function trayvonLiningTip(part) {
     sa,
     snippets,
     absoluteOptions,
-  } = part.shorthand()
+  } = params
 
-  calculateHelpers(part)
-  draftTieShape(part, absoluteOptions.tipWidth * 2.5, absoluteOptions.knotWidth * 2.5)
+  calculateHelpers(params)
+  draftTieShape(params, absoluteOptions.tipWidth * 2.5, absoluteOptions.knotWidth * 2.5)
 
   // Cut part short
   points.cutRight = points.tipRight.shiftTowards(points.midRight, absoluteOptions.tipWidth * 2.5)
@@ -111,14 +111,14 @@ function trayvonLiningTip(part) {
     tieShapeDimensions(part, true)
   }
 
-  return part
+  return params.part
 }
 
 export const liningTail = {
   name: 'trayvon.liningTail',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: trayvonLiningTail,
 }
 
@@ -126,6 +126,6 @@ export const liningTip = {
   name: 'trayvon.liningTip',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: trayvonLiningTip,
 }
