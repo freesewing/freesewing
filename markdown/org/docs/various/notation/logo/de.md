@@ -6,6 +6,6 @@ Einige (oder alle) Schnittmusterteile können auch das FreeSewing-Logo enthalten
 
 <Legend part="logo">
 
-The FreeSewing logo
+Das FreeSewing-Logo
 
 </Legend>
