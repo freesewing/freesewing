@@ -4,7 +4,7 @@ title: Oberschenkelumfang
 
 Der **obere Beinumfang** ist die Messung am oberen Teil deines Beines.
 
-You should measure this a bit below your crotch, refer to the illustration for guidance. Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your leg.
+Sie sollten dies ein wenig unterhalb Ihres Schrittes messen, siehe die Illustration zur Anleitung. Achte darauf, das Maßband parallel zum Boden zu halten, während du den Umfang deines Knies misst.
 
 <Tip>
 
