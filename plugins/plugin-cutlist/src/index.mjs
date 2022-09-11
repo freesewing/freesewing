@@ -9,7 +9,7 @@ export const plugin = {
     ['removeCut', removeCut],
     ['setGrain', setGrain],
     ['setCutOnFold', setCutOnFold],
-  ]
+  ],
 }
 
 // More specifically named exports
@@ -17,7 +17,7 @@ export const cutlistPlugin = plugin
 export const pluginCutlist = plugin
 
 /** Method to add the cut info */
-function addCut(store, partName, cut=2, material='fabric', identical=false) {
+function addCut(store, partName, cut = 2, material = 'fabric', identical = false) {
   if (cut === false) {
     if (material === false) store.unset(['cutlist', partName, 'materials'])
     else store.unset(['cutlist', partName, 'materials', material])
@@ -39,12 +39,12 @@ function addCut(store, partName, cut=2, material='fabric', identical=false) {
 }
 
 /** Method to remove the cut info */
-function removeCut(store, partName, material=false) {
+function removeCut(store, partName, material = false) {
   return addCut(store, partName, false, material)
 }
 
 /** Method to add the grain info */
-function setGrain(store, partName, grain=false) {
+function setGrain(store, partName, grain = false) {
   const path = ['cutlist', partName, 'grain']
   if (grain === false) return store.unset(path)
   if (typeof grain !== 'number') {
@@ -64,8 +64,8 @@ function setCutOnFold(store, partName, p1, p2) {
   }
   if (p1 instanceof Point && p2 instanceof Point) {
     store.set(path, [p1, p2])
-  }
-  else store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
+  } else
+    store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 
   return store
 }
