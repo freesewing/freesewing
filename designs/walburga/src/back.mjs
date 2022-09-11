@@ -1,7 +1,13 @@
 import { base } from './base.mjs'
 
-function walburgaBack(part) {
-  const { points, macro, complete, snippets, Snippet } = part.shorthand()
+function walburgaBack({
+  points,
+  macro,
+  complete,
+  snippets,
+  Snippet,
+  part,
+}) {
 
   // Complete?
   if (complete) {

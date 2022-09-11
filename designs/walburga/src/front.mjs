@@ -1,21 +1,21 @@
 import { base, neckline, neckoRatio } from './base.mjs'
 
-function walburgaFront(part) {
-  const {
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    sa,
-    paperless,
-    store,
-    utils,
-  } = part.shorthand()
+function walburgaFront({
+  points,
+  Path,
+  paths,
+  measurements,
+  options,
+  macro,
+  complete,
+  snippets,
+  Snippet,
+  sa,
+  paperless,
+  store,
+  utils,
+  part,
+}) {
 
   const head = store.get('hhead') * 2
   const goldenRatio = store.get('goldenRatio')
