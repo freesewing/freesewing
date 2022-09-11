@@ -56,6 +56,6 @@ highBustWidth:
   description: Controls the width of the high bust
   title: High bust width
 shoulderToShoulderEase:
-  description: Controls the amount of ease along the shoulder to shoulder measurement
+  description: Steuert die Menge an Zugabe entlang des Schulter-zu-Schulter Maßes
   title: Zugabe des Schulterabstandes
 
