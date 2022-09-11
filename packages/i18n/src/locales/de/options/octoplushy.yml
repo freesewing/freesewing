@@ -1,28 +1,28 @@
 size:
-  title: Size
-  description: Controls the overall size
+  title: Größe
+  description: Steuert die Gesamtgröße
 type:
-  title: Type
-  description: Allows you to choose one of the variants of this design
+  title: Art
+  description: Erlaubt es dir, zwischen den Varianten dieses Designs zu wählen
 armWidth:
-  title: Arm width
-  description: Controls the width of the arms
+  title: Armbreite
+  description: Steuert die Breite der Arme
 armLength:
-  title: Arm width
-  description: Controls the length of the arms
+  title: Armbreite
+  description: Steuert die Länge der Arme
 neckWidth:
-  title: Neck width
-  description: Determines the width at the neck
+  title: Halsbreite
+  description: Bestimmt die Breite am Hals
 armTaper:
-  title: Arm tapering
-  description: Controls the amount by which the arms taper
+  title: Armabschrägung
+  description: Steuert, wie stark die Arme abgeschrägt sind
 bottomTopArmRatio:
-  title: Bottom/Top arm ratio
-  description: "FIXME: No idea what this does"
+  title: Verhältnis Arme Unten/Oben
+  description: "FIXME: Keine Ahnung, was dies macht"
 bottomArmReduction:
-  title: Bottom arm reduction
-  description: "FIXME: No idea what this does"
+  title: Reduktion des unteren Arms
+  description: "FIXME: Keine Ahnung, was dies macht"
 bottomArmReductionPlushy:
-  title: Bottom arm reduction (plushy)
-  description: "FIXME: No idea what this does"
+  title: Reduktion des unteren Arms (plüschig)
+  description: "FIXME: Keine Ahnung, was dies macht"
 
