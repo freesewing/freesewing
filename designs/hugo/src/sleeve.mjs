@@ -3,24 +3,23 @@ import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { cuffEase, sleeveLengthBonus, ribbingHeight } from './options.mjs'
 
-function hugoSleeve(part) {
-  const {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function hugoSleeve({
+  utils,
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   // Top of raglan sleeve
   points.raglanTop = new Point(0, points.sleeveTip.y - store.get('shoulderLength'))
 

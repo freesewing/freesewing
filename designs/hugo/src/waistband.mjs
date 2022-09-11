@@ -1,20 +1,19 @@
 import { chestEase, ribbingStretch, ribbingHeight } from './options.mjs'
 
-function hugoWaistband(part) {
-  const {
-    measurements,
-    options,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    units,
-  } = part.shorthand()
-
+function hugoWaistband({
+  measurements,
+  options,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  units,
+  part,
+}) {
   let width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
   let length = complete
     ? width * 2.5
