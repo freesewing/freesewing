@@ -1,12 +1,12 @@
 neckRatio:
-  title: Neck opening
-  description: Controls the size of the neck opening relative to the bib size
+  title: Halsöffnung
+  description: Steuert die Größe der Halsöffnung in Relation zu der Größe des Lätzchens
 widthRatio:
-  title: Width
-  description: Controls the width of the bib
+  title: Breite
+  description: Steuert die Breite des Latzes
 lengthRatio:
-  title: Length
-  description: Controls the length of the bib
+  title: Länge
+  description: Steuert die Länge des Latzes
 headSize:
-  title: Head size
-  description: The head circumference you want the bib to accomodate
+  title: Kopfgröße
+  description: Der Kopfumfang, für den das Lätzchen passen soll
