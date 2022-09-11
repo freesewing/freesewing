@@ -26,38 +26,38 @@ title: "Майка Аарон: Інструкція з пошиття"
 
 <Note>
 
-### # Про пов'язування
+### # Про обробку трикотажними бейками
 
 Якщо Ви не працювали з [трикотажною бейкою](/docs/sewing/knit-binding), Ви можете почитати [цю сторінку з теми](/docs/sewing/knit-binding).
 
-###### Repeat steps 3 and 4 for both armholes and the neck opening
+##### Повторіть кроки 3 та 4 для пройм та горловини
 
-The procedure outlined below applies to both of the armholes as well as the neck opening. In other words, you'll have to do this three times.
+Процедура, описана нижче, застосовується і до пройм, і до горловини. Іншими словами, треба буде робити це тричі.
 
-###### Start with the simplest opening
+###### Почніть з найпростішого.
 
-I would advise you to start with whatever opening has the most uniform curvature. By default, those are the arm holes, but if you changed the pattern options (think racerback) that might not be the case.
+Краще розпочати з краю, який має найрівнішу криву. За замовчуванням - це пройми, але якщо Ви змінили налаштування викрійки (наприклад, зі спортивним типом спини), це можуть бути і не пройми.
 
-Either way, the less sharp bends you have, the easier it will be. So start with that to warm up before you do the trickier bends.
+У будь-якому випадку, чим пряміший край, тим легше. Тому ми рекомендуємо "розігрітися", перш ніж робити складніші шви.
 
 </Note>
 
-We are going to finish the arm and neck hole with [knit binding](/docs/sewing/knit-binding) (note: not a knit band. There's a difference, and it's explained [here](/docs/sewing/knit-binding)).
+Зараз ми будемо закривати пройми та горловину [трикотажною бейкою](/docs/sewing/knit-binding) (Не рібаною. Між ними є різниця, і це пояснюється [тут](/docs/sewing/knit-binding)).
 
 <Note>
 
-This is the only part of making this A-shirt that requires a bit of practice. Don't worry, all you need to do is make a couple of these and you'll be a pro in no time.
+Це єдиний крок у виготовленні майки, який потребує практики. Не хвилюйтеся - пару таких завершених пройм і Ви станете профі.
 
 </Note>
 
-### Pick your spot
+### Оберіть точку старту
 
 ![Applying knit binding](step03a.png)
 
-The first thing we need to do is decide where we are going to start/stop our binding. Here's what I suggest:
+Перше, що Вам необхідно зробити, це вирішити, де Ви почнете/зупините обробку. Ось, що ми пропонуємо:
 
-- For the armholes: at the side seam. This will hide our seam under the arm
-- For the neck opening: the center back of the neck. You might want to mark this with a pin
+- Для пройми: біля бокового шва. Це сховає шов під рукою
+- Для горловини: на центрі шиї ззаду. Ви можете відмітити точку початку булавкою
 
 ### Place (the start of) your binding
 
