@@ -8,7 +8,7 @@ armWidth:
   title: Ширина мацальця
   description: Керує шириною окремих мацальців (щупальців)
 armLength:
-  title: Довжина мацальця
+  title: Arm length
   description: Керує довжиною окремих мацальців (щупальців)
 neckWidth:
   title: Ширина шиї
