@@ -8,13 +8,13 @@ Vielen Dank, dass du Teil der FreeSewing-Community bist. Wenn du dich mit uns od
 
 Wir können keine Kommentare akzeptieren, die entweder anstößig an sich oder eindeutig anstößig für andere sind.
 
-We ask you to avoid obscenities and other insulting language, to show respect for fellow users, public figures and the fundamental principles we hopefully all share.
+Wir bitten dich, Obszönitäten und andere beleidigende Sprache zu vermeiden, um Respekt gegenüber anderen Mitnutzenden, Persönlichkeiten des öffentlichen Lebens und den Grundprinzipien, die wir hoffentlich alle teilen, zu zeigen.
 
-Without wanting to be exhaustive, that means no racism, xenophobia, calls to violence, discrimination based on religion, ethnic origin, gender, age, body shape, language, ….
+Insbesondere bedeutet dies: kein Rassismus, keine Fremdenfeindlichkeit, keine Aufrufe zu Gewalt, keine Diskriminierung aufgrund von Religion, ethnischer Herkunft, Gender, Alter, Körperform, Sprache, ….
 
 ##### Kein Spam
 
-We encourage you to post comments that stick to the subject and would appreciate it if you refrain from posting advertisements (for your businesses, blogs or websites, etc).
+Wir bitten dich in Kommentaren beim Thema zu bleiben. Werbung ist untersagt (für Unternehmen, Webseiten oder Blogs und dergleichen).
 
 Es ist in Ordnung, Links zu relevanten Inhalten auf anderen Websites zu posten, aber Spam und andere off-topic Inhalte werden entfernt.
 
