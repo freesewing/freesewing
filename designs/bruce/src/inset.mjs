@@ -1,10 +1,20 @@
 import { init } from './init.mjs'
 import { back } from './back.mjs'
 
-function draftBruceInset (part) {
-  let { store, sa, Point, points, Path, paths, complete, paperless, macro, Snippet, snippets } =
-    part.shorthand()
-
+function draftBruceInset({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  Snippet,
+  snippets,
+  part,
+}) {
   // Initialize
   init(part)
 
