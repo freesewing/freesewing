@@ -10,7 +10,7 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 testPatternConfig(Bent)
 
 // Test drafting - Change the second parameter to `true` to log errors
-testPatternDrafting(Bent, true)
+testPatternDrafting(Bent, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
 //testPatternSampling(Bent, false)
