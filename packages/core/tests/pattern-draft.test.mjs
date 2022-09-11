@@ -5,41 +5,42 @@ const expect = chai.expect
 
 describe('Pattern', () => {
   describe('Pattern.draft()', () => {
-
     const partA = {
       name: 'test.partA',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'chest', 'waist'],
+      optionalMeasurements: ['chest', 'waist'],
       options: {
-        optA: { pct: 40, min: 20, max: 80 }
+        optA: { pct: 40, min: 20, max: 80 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const partB = {
       name: 'test.partB',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'knee'],
+      optionalMeasurements: ['knee'],
       after: partA,
-      plugins: [{
-        name: 'testPlugin',
-        hooks: {
-          preRender: () => {}
-        }
-      }],
+      plugins: [
+        {
+          name: 'testPlugin',
+          hooks: {
+            preRender: () => {},
+          },
+        },
+      ],
       options: {
-        optB: { deg: 40, min: 20, max: 80 }
+        optB: { deg: 40, min: 20, max: 80 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const partC = {
       name: 'test.partC',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'knee'],
+      optionalMeasurements: ['knee'],
       from: partB,
       options: {
-        optC: { pct: 20, min: 10, max: 30 }
+        optC: { pct: 20, min: 10, max: 30 },
       },
-      draft: () => { }
+      draft: () => {},
     }
 
     const Pattern = new Design({
@@ -47,7 +48,7 @@ describe('Pattern', () => {
         name: 'test',
         version: '1.2.3',
       },
-      parts: [ partC ]
+      parts: [partC],
     })
     const pattern = new Pattern()
 
@@ -84,42 +85,44 @@ describe('Pattern', () => {
     const partA = {
       name: 'test.partA',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'chest', 'waist'],
+      optionalMeasurements: ['chest', 'waist'],
       options: {
-        optA: { pct: 40, min: 20, max: 80 }
+        optA: { pct: 40, min: 20, max: 80 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const partB = {
       name: 'test.partB',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'knee'],
+      optionalMeasurements: ['knee'],
       after: partA,
-      plugins: [{
-        name: 'testPlugin',
-        hooks: {
-          preRender: () => {}
-        }
-      }],
+      plugins: [
+        {
+          name: 'testPlugin',
+          hooks: {
+            preRender: () => {},
+          },
+        },
+      ],
       options: {
-        optB: { deg: 40, min: 20, max: 80 }
+        optB: { deg: 40, min: 20, max: 80 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const partC = {
       name: 'test.partC',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'knee'],
+      optionalMeasurements: ['knee'],
       options: {
-        optC: { pct: 20, min: 10, max: 30 }
+        optC: { pct: 20, min: 10, max: 30 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const Pattern = new Design({
-      parts: [ partA, partB, partC ]
+      parts: [partA, partB, partC],
     })
     const pattern = new Pattern({
-      only: [ 'test.partB' ]
+      only: ['test.partB'],
     })
     pattern.init()
     expect(pattern.needs('test.partA')).to.equal(true)
@@ -131,42 +134,44 @@ describe('Pattern', () => {
     const partA = {
       name: 'test.partA',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'chest', 'waist'],
+      optionalMeasurements: ['chest', 'waist'],
       options: {
-        optA: { pct: 40, min: 20, max: 80 }
+        optA: { pct: 40, min: 20, max: 80 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const partB = {
       name: 'test.partB',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'knee'],
+      optionalMeasurements: ['knee'],
       after: partA,
-      plugins: [{
-        name: 'testPlugin',
-        hooks: {
-          preRender: () => {}
-        }
-      }],
+      plugins: [
+        {
+          name: 'testPlugin',
+          hooks: {
+            preRender: () => {},
+          },
+        },
+      ],
       options: {
-        optB: { deg: 40, min: 20, max: 80 }
+        optB: { deg: 40, min: 20, max: 80 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const partC = {
       name: 'test.partC',
       measurements: ['head', 'knee'],
-      optionalMeasurements: [ 'knee'],
+      optionalMeasurements: ['knee'],
       options: {
-        optC: { pct: 20, min: 10, max: 30 }
+        optC: { pct: 20, min: 10, max: 30 },
       },
-      draft: () => { }
+      draft: () => {},
     }
     const Pattern = new Design({
-      parts: [ partA, partB, partC ]
+      parts: [partA, partB, partC],
     })
     const pattern = new Pattern({
-      only: [ 'test.partB' ]
+      only: ['test.partB'],
     })
     pattern.init()
     expect(pattern.wants('test.partA')).to.equal(false)
@@ -337,5 +342,4 @@ describe('Pattern', () => {
 
 
   */
-
 })

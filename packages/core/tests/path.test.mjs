@@ -7,13 +7,13 @@ describe('Path', () => {
   it('Should offset a line', () => {
     const part = {
       name: 'test',
-      draft: ({ paths, Path, Point, part}) => {
+      draft: ({ paths, Path, Point, part }) => {
         paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
         paths.offset = paths.line.offset(10)
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
     expect(pattern.parts.test.paths.offset.bottomRight.x).to.equal(-10)
@@ -29,9 +29,9 @@ describe('Path', () => {
           .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
         paths.offset = paths.curve.offset(10)
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
     expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(72.18)
@@ -42,14 +42,12 @@ describe('Path', () => {
     const part = {
       name: 'test',
       draft: ({ paths, Path, Point, part }) => {
-        paths.curve = new Path()
-          .move(new Point(0, 0))
-          ._curve(new Point(123, 34), new Point(23, 4))
+        paths.curve = new Path().move(new Point(0, 0))._curve(new Point(123, 34), new Point(23, 4))
         paths.offset = paths.curve.offset(10)
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
     expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(72.63)
@@ -60,14 +58,12 @@ describe('Path', () => {
     const part = {
       name: 'test',
       draft: ({ paths, Path, Point, part }) => {
-        paths.curve = new Path()
-          .move(new Point(0, 0))
-          .curve_(new Point(40, 0), new Point(123, 34))
+        paths.curve = new Path().move(new Point(0, 0)).curve_(new Point(40, 0), new Point(123, 34))
         paths.offset = paths.curve.offset(10)
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
     expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(119.26)
@@ -98,13 +94,11 @@ describe('Path', () => {
     const part = {
       name: 'test',
       draft: ({ paths, Path, Point, part }) => {
-        paths.line = new Path()
-          .move(new Point(0, 0))
-          .line(new Point(40, 0))
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(40, 0))
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
     expect(pattern.parts.test.paths.line.length()).to.equal(40)
@@ -119,9 +113,9 @@ describe('Path', () => {
           .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
           .close()
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
     expect(round(pattern.parts.test.paths.curve.length())).to.equal(145.11)
@@ -136,9 +130,9 @@ describe('Path', () => {
           .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
           .close()
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
     expect(pattern.parts.test.paths.curve.start().x).to.equal(123)
@@ -154,9 +148,9 @@ describe('Path', () => {
           .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
           .close()
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
     expect(pattern.parts.test.paths.curve.end().x).to.equal(123)
@@ -825,9 +819,9 @@ describe('Path', () => {
           .attr('class', 'bar')
           .attr('class', 'overwritten', true)
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft().render()
 
@@ -1080,16 +1074,13 @@ describe('Path', () => {
     const part = {
       name: 'test',
       draft: ({ paths, Path, Point, points }) => {
-        paths.line = new Path()
-          .move(new Point(0, 0))
-          .line(new Point(0, 40))
-          .attr('class', 'foo')
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 40)).attr('class', 'foo')
         paths.a = new Path().move(points.a).line(points.b)
         paths.b = paths.a.offset()
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
     expect(pattern.store.logs.error.length).to.equal(2)
@@ -1102,15 +1093,12 @@ describe('Path', () => {
     const part = {
       name: 'test',
       draft: ({ paths, Path, Point, points }) => {
-        paths.line = new Path()
-          .move(new Point(0, 0))
-          .line(new Point(0, 40))
-          .attr('class', 'foo')
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 40)).attr('class', 'foo')
         paths.a = new Path().move(points.a).line(points.b).join()
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
     expect(pattern.store.logs.error.length).to.equal(2)
@@ -1155,34 +1143,31 @@ describe('Path', () => {
     const part = {
       name: 'test',
       draft: ({ paths, Path, Point, points }) => {
-        points.a = new Path()
-          .move(new Point(0, 0))
-          .line(new Point(0, 40))
-          .shiftFractionAlong()
+        points.a = new Path().move(new Point(0, 0)).line(new Point(0, 40)).shiftFractionAlong()
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.store.logs.error[0]).to.equal('Called `Path.shiftFractionAlong(fraction)` but `fraction` is not a number')
+    expect(pattern.store.logs.error[0]).to.equal(
+      'Called `Path.shiftFractionAlong(fraction)` but `fraction` is not a number'
+    )
   })
 
   it('Should log a warning when splitting a path on a non-point', () => {
     const part = {
       name: 'test',
       draft: ({ paths, Path, Point, points }) => {
-        points.a = new Path()
-          .move(new Point(0, 0))
-          .line(new Point(0, 40))
-          .split()
+        points.a = new Path().move(new Point(0, 0)).line(new Point(0, 40)).split()
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.store.logs.error[0]).to.equal('Called `Path.split(point)` but `point` is not a `Point` object')
+    expect(pattern.store.logs.error[0]).to.equal(
+      'Called `Path.split(point)` but `point` is not a `Point` object'
+    )
   })
-
 })

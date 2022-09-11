@@ -21,6 +21,7 @@ export function Part() {
 
   // Enumerable properties
   this.render = true // FIXME: Replace render with hide
+  this.hide = false // FIXME: Replace render with hide
   this.attributes = new Attributes()
   this.points = {}
   this.paths = {}
@@ -323,7 +324,9 @@ Part.prototype.shorthand = function () {
   const optionsProxy = {
     get: function (options, name) {
       if (typeof options[name] === 'undefined')
-        self.context.store.log.warning(`Tried to access \`options.${name}\` but it is \`undefined\``)
+        self.context.store.log.warning(
+          `Tried to access \`options.${name}\` but it is \`undefined\``
+        )
       return Reflect.get(...arguments)
     },
     set: (options, name, value) => (self.context.settings.options[name] = value),

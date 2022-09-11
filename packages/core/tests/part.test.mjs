@@ -4,7 +4,6 @@ import { Design, Pattern, Path } from '../src/index.mjs'
 const expect = chai.expect
 
 describe('Part', () => {
-
   it('Shorthand should contain the part itself', () => {
     let dp
     const part = {
@@ -12,9 +11,9 @@ describe('Part', () => {
       draft: ({ part }) => {
         dp = part
         return part
-      }
+      },
     }
-    const design = new Design({ parts: [ part ]})
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
     expect(typeof dp).to.equal('object')
@@ -181,7 +180,7 @@ describe('Part', () => {
     expect(boundary.width).to.equal(124)
     expect(boundary.height).to.equal(400)
   })
-/*
+  /*
   it('Should stack a part', () => {
     const part = {
       name: 'test',

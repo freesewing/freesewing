@@ -13,9 +13,7 @@ import {
 } from './utils.mjs'
 
 export function Path(debug = false) {
-
   // Non-enumerable properties
-  addNonEnumProp(this, 'render', true) // FIXME: replace with hide
   //addNonEnumProp(this, 'topLeft', false)
   //addNonEnumProp(this, 'bottomRight', false)
   //addNonEnumProp(this, 'attributes', new Attributes())
@@ -28,6 +26,7 @@ export function Path(debug = false) {
   this.attributes = new Attributes()
   this.topLeft = false
   this.bottomRight = false
+  this.render = true
 }
 
 /** Adds the log method for a path not created through the proxy **/
@@ -632,9 +631,7 @@ Path.prototype.divide = function () {
       if (!op.to.sitsRoughlyOn(current))
         paths.push(new Path(this.debug).withLog(this.log).move(current).line(op.to))
     } else if (op.type === 'curve') {
-      paths.push(
-        new Path(this.debug).withLog(this.log).move(current).curve(op.cp1, op.cp2, op.to)
-      )
+      paths.push(new Path(this.debug).withLog(this.log).move(current).curve(op.cp1, op.cp2, op.to))
     } else if (op.type === 'close') {
       paths.push(new Path(this.debug).withLog(this.log).move(current).line(start))
     }
@@ -646,15 +643,13 @@ Path.prototype.divide = function () {
 
 /** Finds intersections between this path and an X value */
 Path.prototype.intersectsX = function (x) {
-  if (typeof x !== 'number')
-    this.log.error('Called `Path.intersectsX(x)` but `x` is not a number')
+  if (typeof x !== 'number') this.log.error('Called `Path.intersectsX(x)` but `x` is not a number')
   return this.intersectsAxis(x, 'x')
 }
 
 /** Finds intersections between this path and an Y value */
 Path.prototype.intersectsY = function (y) {
-  if (typeof y !== 'number')
-    this.log.error('Called `Path.intersectsX(y)` but `y` is not a number')
+  if (typeof y !== 'number') this.log.error('Called `Path.intersectsX(y)` but `y` is not a number')
   return this.intersectsAxis(y, 'y')
 }
 
@@ -781,9 +776,7 @@ Path.prototype.split = function (point) {
         firstHalf.push(new Path(this.debug).withLog(this.log).move(path.ops[0].to).line(point))
         pi++
         secondHalf = divided.slice(pi)
-        secondHalf.unshift(
-          new Path(this.debug).withLog(this.log).move(point).line(path.ops[1].to)
-        )
+        secondHalf.unshift(new Path(this.debug).withLog(this.log).move(point).line(path.ops[1].to))
       }
     } else if (path.ops[1].type === 'curve') {
       if (path.ops[0].to.sitsRoughlyOn(point)) {

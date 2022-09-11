@@ -12,9 +12,9 @@ describe('Snapped options', () => {
       name: 'test',
       options: {
         test: { pct: 30, min: 0, max: 100, snap: 12, toAbs },
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const patternA = new design({ options: { test: 0.13 }, measurements }).draft()
     const patternB = new design({ options: { test: 0.27 }, measurements }).draft()
     expect(patternA.settings.absoluteOptions.test).to.equal(60)
@@ -32,9 +32,9 @@ describe('Snapped options', () => {
           toAbs,
           snap: [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144],
         },
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const patternA = new design({ options: { test: 0.13 }, measurements }).draft()
     const patternB = new design({ options: { test: 0.27 }, measurements }).draft()
     const patternC = new design({ options: { test: 0.97 }, measurements }).draft()
@@ -57,9 +57,9 @@ describe('Snapped options', () => {
             imperial: [25.4, 50.8, 76.2, 101.6],
           },
         },
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
+    const design = new Design({ parts: [part] })
     const patternA = new design({ options: { test: 0.13 }, measurements, units: 'metric' }).draft()
     const patternB = new design({ options: { test: 0.27 }, measurements, units: 'metric' }).draft()
     const patternC = new design({ options: { test: 0.97 }, measurements, units: 'metric' }).draft()
@@ -84,13 +84,29 @@ describe('Snapped options', () => {
             imperial: [25.4, 50.8, 76.2, 101.6],
           },
         },
-      }
+      },
     }
-    const design = new Design({ parts: [ part ] })
-    const patternA = new design({ options: { test: 0.13 }, measurements, units: 'imperial' }).draft()
-    const patternB = new design({ options: { test: 0.27 }, measurements, units: 'imperial' }).draft()
-    const patternC = new design({ options: { test: 0.97 }, measurements, units: 'imperial' }).draft()
-    const patternD = new design({ options: { test: 0.01 }, measurements, units: 'imperial' }).draft()
+    const design = new Design({ parts: [part] })
+    const patternA = new design({
+      options: { test: 0.13 },
+      measurements,
+      units: 'imperial',
+    }).draft()
+    const patternB = new design({
+      options: { test: 0.27 },
+      measurements,
+      units: 'imperial',
+    }).draft()
+    const patternC = new design({
+      options: { test: 0.97 },
+      measurements,
+      units: 'imperial',
+    }).draft()
+    const patternD = new design({
+      options: { test: 0.01 },
+      measurements,
+      units: 'imperial',
+    }).draft()
     expect(patternA.settings.absoluteOptions.test).to.equal(50.8)
     expect(patternB.settings.absoluteOptions.test).to.equal(101.6)
     expect(patternC.settings.absoluteOptions.test).to.equal(388)

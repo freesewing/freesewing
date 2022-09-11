@@ -239,7 +239,9 @@ Pattern.prototype.draft = function () {
         try {
           const result = this.__parts[partName].draft(this.parts[partName].shorthand())
           if (typeof result === 'undefined') {
-            this.store.log.error(`Result of drafting part ${partName} was undefined. Did you forget to return the part?`)
+            this.store.log.error(
+              `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
+            )
           } else this.parts[partName] = result
         } catch (err) {
           this.store.log.error([`Unable to draft part \`${partName}\``, err])
@@ -657,26 +659,27 @@ Pattern.prototype.__resolveParts = function (count = 0) {
     }
   }
   for (const [name, part] of Object.entries(this.__parts)) {
+    // Hide when hideAll is set
+    if (part.hideAll) part.hide = true
     // Inject (from)
     if (part.from) {
+      if (part.hideDependencies || part.hideAll) {
+        part.from.hide = true
+        part.from.hideAll = true
+      }
       this.__parts[part.from.name] = part.from
       this.__inject[name] = part.from.name
-      if (typeof this.__parts[part.from.name] === 'undefined') {
-        if (part.hideDependencies || part.hideAll) {
-          this.__parts[part.from.name].hide = true
-          this.__parts[part.from.name].hideAll = true
-        }
-        //this.config = addPartConfig(this.__parts[part.from.name], this.config, this.store)
-      }
     }
     // Simple dependency (after)
     if (part.after) {
       if (Array.isArray(part.after)) {
         for (const dep of part.after) {
+          if (part.hideDependencies) dep.hide = true
           this.__parts[dep.name] = dep
           this.__addDependency(name, part, dep)
         }
       } else {
+        if (part.hideDependencies) part.after.hide = true
         this.__parts[part.after.name] = part.after
         this.__addDependency(name, part, part.after)
       }
@@ -729,18 +732,16 @@ Pattern.prototype.__resolveDependencies = function (graph = false) {
  * configured dependencies.
  */
 Pattern.prototype.needs = function (partName) {
-
   // If only is unset, all parts are needed
   if (
     typeof this.settings.only === 'undefined' ||
     this.settings.only === false ||
-    ( Array.isArray(this.settings.only) && this.settings.only.length === 0 )
-  ) return true
+    (Array.isArray(this.settings.only) && this.settings.only.length === 0)
+  )
+    return true
 
   // Make only to always be an array
-  const only = typeof this.settings.only === 'string'
-    ? [ this.settings.only ]
-    : this.settings.only
+  const only = typeof this.settings.only === 'string' ? [this.settings.only] : this.settings.only
 
   // Walk the only parts, checking each one for a match in its dependencies
   for (const part of only) {
@@ -777,7 +778,6 @@ Pattern.prototype.isHidden = function (partName) {
   if (Array.isArray(this.settings.only)) {
     if (this.settings.only.includes(partName)) return false
   }
-
   if (this.__parts?.[partName]?.hide) return true
   if (this.__parts?.[partName]?.hideAll) return true
 

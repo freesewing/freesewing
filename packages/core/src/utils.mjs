@@ -548,7 +548,6 @@ export const addPartConfig = (part, config, store) => {
   config = addPartOptions(part, config, store)
   config = addPartMeasurements(part, config, store)
   config = addPartOptionalMeasurements(part, config, store)
-  //config = addPartDependencies(part, config, store)
   config = addPartPlugins(part, config, store)
 
   return config

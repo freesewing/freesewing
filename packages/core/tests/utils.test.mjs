@@ -514,7 +514,7 @@ describe('Utils', () => {
     expect(result.toAbs(0.0123, { measurements })).to.equal(12.3)
     expect(result.fromAbs(12.3, { measurements })).to.equal(0.0123)
   })
-/*
+  /*
   it('Should generate a part transform', () => {
     const part = {
       name: 'test',

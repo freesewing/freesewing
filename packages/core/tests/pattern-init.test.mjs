@@ -610,29 +610,29 @@ describe('Pattern', () => {
       expect(count).to.equal(1)
     })
 
-    it("Pattern.init() should register multiple methods on a single hook", () => {
+    it('Pattern.init() should register multiple methods on a single hook', () => {
       const plugin = {
-        name: "test",
-        version: "0.1-test",
+        name: 'test',
+        version: '0.1-test',
         hooks: {
           preDraft: [
-            function(pattern) {
-              count++;
+            function (pattern) {
+              count++
             },
-            function(pattern) {
-              count++;
-            }
-          ]
-        }
-      };
+            function (pattern) {
+              count++
+            },
+          ],
+        },
+      }
       const Pattern = new Design()
       const pattern = new Pattern()
       let count = 0
       pattern._draft = () => {}
       pattern.use(plugin)
       pattern.draft()
-      expect(count).to.equal(2);
-    });
+      expect(count).to.equal(2)
+    })
 
     it('Should check whether created parts get the pattern context', () => {
       const Pattern = new Design()
@@ -660,7 +660,6 @@ describe('Pattern', () => {
       expect(Array.isArray(part.context.store.logs.warning)).to.equal(true)
       expect(Array.isArray(part.context.store.logs.error)).to.equal(true)
     })
-
   })
 
   describe('Pattern.settings', () => {
