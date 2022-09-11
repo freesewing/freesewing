@@ -1,7 +1,17 @@
 import { addButtonHoles } from './shared.mjs'
 
-export const draftFrontLeftSeamless = (part) => {
-  const { sa, points, Path, paths, complete, paperless, store, macro, options } = part.shorthand()
+export const draftFrontLeftSeamless = ({
+  sa,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  store,
+  macro,
+  options,
+  part,
+}) => {
   const width = store.get('buttonholePlacketWidth')
   points.placketCfNeck = points.cfNeck
   points.placketTopFold1 = points.cfNeck.shift(180, width / 2)

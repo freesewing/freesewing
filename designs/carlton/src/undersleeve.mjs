@@ -1,10 +1,20 @@
 import { underSleeve as bentUnderSleeve } from '@freesewing/bent'
 import { front as bentFront } from '@freesewing/bent'
 
-function draftCarltonUnderSleeve (part) {
-  let { paperless, sa, store, complete, points, measurements, options, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarltonUnderSleeve({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   // Add cuff
   let length = measurements.shoulderToWrist * options.cuffLength
   let angle = points.usWristRight.angle(points.usWristLeft)
@@ -114,7 +124,7 @@ export const underSleeve = {
   from: bentUnderSleeve,
   after: bentFront,
   hideDependencies: true,
-  measurements: [ 'shoulderToWrist' ],
+  measurements: ['shoulderToWrist'],
   options: {
     cuffLength: { pct: 15, min: 10, max: 20, menu: 'style' },
     // The remainder of options are for Bent sleeves.

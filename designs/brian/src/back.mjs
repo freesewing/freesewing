@@ -4,22 +4,21 @@ import { base } from './base.mjs'
 export const back = {
   from: base,
   name: 'brian.back',
-  draft: part => {
-    const {
-      store,
-      sa,
-      points,
-      Path,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      paperless,
-      macro,
-      options,
-      utils,
-    } = part.shorthand()
-
+  draft: ({
+    store,
+    sa,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    options,
+    utils,
+    part,
+  }) => {
     points.anchor = points.hps.clone()
 
     // Adapt the shoulder seam according to the relevant options
@@ -151,7 +150,7 @@ export const back = {
       }
 
       // Add notches if the shoulder seam is shifted
-      shared.s3Notches(part, 'bnotch')
+      shared.s3Notches(snippets, Snippet, points, options, 'bnotch')
     }
 
     // Paperless?

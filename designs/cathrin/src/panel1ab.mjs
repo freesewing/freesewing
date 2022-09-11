@@ -1,6 +1,15 @@
-export function draftPanel1ab (part) {
-  let { macro, utils, sa, points, paths, Point, Path, complete, paperless } = part.shorthand()
-
+export function draftPanel1ab({
+  macro,
+  utils,
+  sa,
+  points,
+  paths,
+  Point,
+  Path,
+  complete,
+  paperless,
+  part,
+}) {
   points.anchor = points.topCF.clone()
 
   let top = new Path()
@@ -18,10 +27,7 @@ export function draftPanel1ab (part) {
     .line(points.topABsplit)
     .join(top.split(points.topABsplit)[1])
     .setRender(false)
-  paths.panel1a = paths.panel1a_nonfold.clone()
-    .close()
-    .attr('class', 'fabric')
-    .setRender(true)
+  paths.panel1a = paths.panel1a_nonfold.clone().close().attr('class', 'fabric').setRender(true)
   paths.panel1b = bottom
     .split(points.bottomABsplit)[1]
     .curve(points.hipsGap1Cp, points.waistGap1LeftCp1, points.waistGap1Left)
@@ -39,10 +45,7 @@ export function draftPanel1ab (part) {
   if (complete) {
     if (sa) {
       paths.saA = paths.panel1a_nonfold.offset(sa).attr('class', 'fabric sa')
-      paths.saA
-        .line(points.topCF)
-        .move(points.bottomCF)
-        .line(paths.saA.start())
+      paths.saA.line(points.topCF).move(points.bottomCF).line(paths.saA.start())
       paths.saB = paths.panel1b.offset(sa).attr('class', 'fabric sa')
     }
     macro('cutonfold', {

@@ -1,7 +1,22 @@
 import { front as titanFront } from '@freesewing/titan'
 import { back } from './back.mjs'
 
-function pacoFront(part) {
+function pacoFront({
+  utils,
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  absoluteOptions,
+  part,
+}) {
   /*
    * Helper method to draw the inseam path
    */
@@ -53,22 +68,6 @@ function pacoFront(part) {
    * Helper method to calculate the outseam delta
    */
   const outseamDelta = () => drawOutseam(true).length() - store.get('pacoOutseamBack')
-
-  let {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-    absoluteOptions,
-  } = part.shorthand()
 
   // Adapt bottom leg based on heel and heel ease
   let quarterHeel = (measurements.heel * (1 + options.heelEase) * (1 - options.legBalance)) / 2

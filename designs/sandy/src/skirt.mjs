@@ -3,24 +3,23 @@ import { pctBasedOn } from '@freesewing/core'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { elastics } from '@freesewing/snapseries'
 
-function sandySkirt(part) {
-  const {
-    utils,
-    store,
-    sa,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-    absoluteOptions,
-  } = part.shorthand()
-
+function sandySkirt({
+  utils,
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  absoluteOptions,
+  part,
+}) {
   // Circumference of the top of the waistband, calculated from the waistbandPosition option
   store.set(
     'topCircumference',
@@ -219,8 +218,14 @@ export const skirt = {
   options: {
     minimumOverlap: 15, // Lower than this and we don't draw a button
     seamlessFullCircle: { bool: false, menu: 'construction' },
-    waistbandWidth: { pct: 4, min: 1, max: 8, snap: elastics,
-      ...pctBasedOn('waistToFloor'), menu: 'style' },
+    waistbandWidth: {
+      pct: 4,
+      min: 1,
+      max: 8,
+      snap: elastics,
+      ...pctBasedOn('waistToFloor'),
+      menu: 'style',
+    },
     waistbandPosition: { pct: 50, min: 0, max: 100, menu: 'fit' },
     lengthBonus: { pct: 50, min: 10, max: 100, menu: 'style' },
     circleRatio: { pct: 50, min: 20, max: 100, menu: 'style' },

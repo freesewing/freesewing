@@ -1,10 +1,20 @@
 import { back } from './back.mjs'
 import { splitYoke } from './options.mjs'
 
-function simonYoke(part) {
-  const { sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options } =
-    part.shorthand()
-
+function simonYoke({
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  options,
+  part,
+}) {
   for (const id in paths) {
     if (['backCollar', 'backArmhole', 'backArmholeYoke'].indexOf(id) === -1) delete part.paths[id]
   }

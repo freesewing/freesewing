@@ -1,23 +1,22 @@
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
-function draftHueyHood (part) {
-  let {
-    store,
-    macro,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    snippets,
-    Snippet,
-    sa,
-    options,
-    measurements,
-  } = part.shorthand()
-
+function draftHueyHood({
+  store,
+  macro,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  paperless,
+  snippets,
+  Snippet,
+  sa,
+  options,
+  measurements,
+  part,
+}) {
   let base = store.get('frontNeckSeamLength') + store.get('backNeckSeamLength')
   points.cfBottom = new Point(0, 0)
   points.cbBottom = points.cfBottom.shift(0, base).rotate(options.hoodAngle, points.cfBottom)
@@ -108,8 +107,8 @@ function draftHueyHood (part) {
 
 export const hood = {
   name: 'huey.hood',
-  after: [ front, back ],
-  measurements: [ 'head' ],
+  after: [front, back],
+  measurements: ['head'],
   options: {
     hoodHeight: { pct: 59, min: 55, max: 65, menu: 'style' },
     hoodCutback: { pct: 10, min: 5, max: 15, menu: 'style' },

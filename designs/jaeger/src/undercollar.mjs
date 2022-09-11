@@ -7,9 +7,17 @@ import { collarStand } from './collarstand.mjs'
  * experience, or more tailoring exprience.
  */
 
-function jaegerUnderCollar(part) {
-  const { paperless, sa, snippets, complete, points, macro, paths, Path } = part.shorthand()
-
+function jaegerUnderCollar({
+  paperless,
+  sa,
+  snippets,
+  complete,
+  points,
+  macro,
+  paths,
+  Path,
+  part,
+}) {
   // Clean up
   for (let i of Object.keys(paths)) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]

@@ -1,22 +1,22 @@
 import { front } from '@freesewing/simon'
 import { bustPlugin } from '@freesewing/plugin-bust'
 
-function simoneFbaFront(part) {
-  const {
-    measurements,
-    Point,
-    points,
-    Path,
-    paths,
-    macro,
-    options,
-    Snippet,
-    snippets,
-    utils,
-    sa,
-    complete,
-    raise,
-  } = part.shorthand()
+function simoneFbaFront({
+  measurements,
+  Point,
+  points,
+  Path,
+  paths,
+  macro,
+  options,
+  Snippet,
+  snippets,
+  utils,
+  sa,
+  complete,
+  log,
+  part,
+}) {
   /*
    * Simone is Simon with an FBA (Full Bust Adjustment)
    * Which means that we draft simon with the high bust measurement instead
@@ -41,7 +41,7 @@ function simoneFbaFront(part) {
    * return the original part from simon
    */
   if (FBA < 0) {
-    raise.info('No FBA required, using unaltered Simon front')
+    log.info('No FBA required, using unaltered Simon front')
     return part
   }
 

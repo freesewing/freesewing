@@ -39,7 +39,7 @@ const Plugintest = new Design({
     scalebox,
     sprinkle,
     title,
-  ]
+  ],
 })
 
 // Named exports

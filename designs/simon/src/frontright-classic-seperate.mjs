@@ -1,7 +1,16 @@
-export const draftFrontRightClassicSeperate = (part) => {
-  const { store, snippets, utils, sa, Point, points, paths, complete, paperless, macro } =
-    part.shorthand()
-
+export const draftFrontRightClassicSeperate = ({
+  store,
+  snippets,
+  utils,
+  sa,
+  Point,
+  points,
+  paths,
+  complete,
+  paperless,
+  macro,
+  part,
+}) => {
   const width = store.get('buttonPlacketWidth')
   points.placketTopIn = utils.lineIntersectsCurve(
     new Point(width / -2, points.cfNeck.y + 20),

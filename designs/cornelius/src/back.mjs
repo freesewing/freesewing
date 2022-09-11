@@ -2,7 +2,7 @@ import { frontpoints } from './frontpoints.mjs'
 import { front } from './front.mjs'
 
 function rotateDistanceForP3(part, point, distance, center) {
-  let { options, Path, points, paths, store, raise } = part.shorthand()
+  let { options, Path, points, paths, store, log } = part.shorthand()
 
   let length = store.get('insideSeam')
 
@@ -60,12 +60,12 @@ function rotateDistanceForP3(part, point, distance, center) {
   } while ((dOffset > 0.1 || dOffset < -0.1 || dLength < -0.1 || dLength > 0.1) && iteration < 100)
 
   if (iteration >= 100) {
-    raise.error('Could not find a point for "3" within 100 iterations')
+    log.error('Could not find a point for "3" within 100 iterations')
   }
 }
 
 function rotateDistanceForP4(part, point, distance, center, origin) {
-  let { options, Path, points, paths, store, raise } = part.shorthand()
+  let { options, Path, points, paths, store, log } = part.shorthand()
 
   let aCPu,
     aCPj,
@@ -171,14 +171,24 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
   } while ((dOffset > 0.1 || dOffset < -0.1 || dLength > 0.1 || dLength < -0.1) && iteration < 100)
 
   if (iteration >= 100) {
-    raise.error('Could not find a point for "4" within 100 iterations')
+    log.error('Could not find a point for "4" within 100 iterations')
   }
 }
 
-function draftCorneliusBack (part) {
-  let { options, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
-    part.shorthand()
-
+function draftCorneliusBack({
+  options,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   let tempP = null
 
   let waist = store.get('waist')

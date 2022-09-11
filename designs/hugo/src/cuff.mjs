@@ -1,9 +1,18 @@
 import { cuffEase, ribbingStretch } from './options.mjs'
 
-function hugoCuff(part) {
-  const { measurements, options, sa, Point, points, Path, paths, complete, paperless, macro } =
-    part.shorthand()
-
+function hugoCuff({
+  measurements,
+  options,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   const width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
   const length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
 

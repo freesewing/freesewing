@@ -33,8 +33,8 @@ function sleevecapAdjust(store, twoBacks = false, options = null) {
   store.set('sleeveFactor', factor)
 }
 
-function draftSleevecap(part, run) {
-  let { store, measurements, options, Point, points, Path, paths } = part.shorthand()
+function draftSleevecap(params, run) {
+  let { store, measurements, options, Point, points, Path, paths, part } = params
   // Sleeve center axis
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
@@ -153,8 +153,8 @@ function draftSleevecap(part, run) {
   }
 }
 
-function redrawSleevecapFront(part, delta) {
-  let { store, points, Path, paths } = part.shorthand()
+function redrawSleevecapFront(params, delta) {
+  let { store, points, Path, paths } = params
   let factor = points.bicepsRight.x
   for (let p of [
     'bicepsRight',
@@ -184,14 +184,14 @@ function redrawSleevecapFront(part, delta) {
   store.set('sleevecapLength', paths.sleevecap.length())
 }
 
-function draftBreannaSleevecap (part) {
-  let { store, options, Point, points, paths } = part.shorthand()
+function draftBreannaSleevecap(params) {
+  const { store, options, Point, points, paths, part } = params
 
   // Step 1: sleevecap for 2 backs joined together (twoBacks = true)
   store.set('sleeveFactor', 1)
   let run = 0
   do {
-    draftSleevecap(part, run)
+    draftSleevecap(params, run)
     sleevecapAdjust(store, true, options)
     run++
   } while (
@@ -209,7 +209,7 @@ function draftBreannaSleevecap (part) {
   // Step 2: sleevecap for back joined with front (twoBacks = false)
   run = 0
   do {
-    redrawSleevecapFront(part, sleevecapDelta(store))
+    redrawSleevecapFront(params, sleevecapDelta(store))
     sleevecapAdjust(store)
     run++
   } while (options.breannaFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
@@ -226,47 +226,28 @@ function draftBreannaSleevecap (part) {
 export const sleeveCap = {
   name: 'breanna.sleeveCap',
   hide: true,
-  after: [ front, frontBase, back ],
+  after: [front, frontBase, back],
   options: {
     bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
-    sleevecapEase: { pct: 0.5, min: 0, max: 2.5,
-      menu: 'advanced.sleevecap' },
-    sleevecapTopFactorX: { pct: 50, min: 25, max: 75,
-      menu: 'advanced.sleevecap' },
-    sleevecapTopFactorY: { pct: 110, min: 35, max: 165,
-      menu: 'advanced.sleevecap' },
-    sleevecapBackFactorX: { pct: 45, min: 35, max: 55,
-      menu: 'advanced.sleevecap' },
-    sleevecapBackFactorY: { pct: 33, min: 30, max: 65,
-      menu: 'advanced.sleevecap' },
-    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65,
-      menu: 'advanced.sleevecap' },
-    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ1Offset: { pct: 3, min: 0, max: 7,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ4Offset: { pct: 1, min: 0, max: 7,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ1Spread1: { pct: 10, min: 4, max: 20,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ1Spread2: { pct: 12.5, min: 4, max: 20,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ2Spread1: { pct: 12.5, min: 4, max: 20,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ2Spread2: { pct: 12.5, min: 4, max: 20,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ3Spread1: { pct: 12.5, min: 4, max: 20,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20,
-      menu: 'advanced.sleevecap' },
-    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20,
-      menu: 'advanced.sleevecap' },
+    sleevecapEase: { pct: 0.5, min: 0, max: 2.5, menu: 'advanced.sleevecap' },
+    sleevecapTopFactorX: { pct: 50, min: 25, max: 75, menu: 'advanced.sleevecap' },
+    sleevecapTopFactorY: { pct: 110, min: 35, max: 165, menu: 'advanced.sleevecap' },
+    sleevecapBackFactorX: { pct: 45, min: 35, max: 55, menu: 'advanced.sleevecap' },
+    sleevecapBackFactorY: { pct: 33, min: 30, max: 65, menu: 'advanced.sleevecap' },
+    sleevecapFrontFactorX: { pct: 55, min: 35, max: 65, menu: 'advanced.sleevecap' },
+    sleevecapFrontFactorY: { pct: 33, min: 30, max: 65, menu: 'advanced.sleevecap' },
+    sleevecapQ1Offset: { pct: 3, min: 0, max: 7, menu: 'advanced.sleevecap' },
+    sleevecapQ2Offset: { pct: 5.5, min: 0, max: 7, menu: 'advanced.sleevecap' },
+    sleevecapQ3Offset: { pct: 4.5, min: 0, max: 7, menu: 'advanced.sleevecap' },
+    sleevecapQ4Offset: { pct: 1, min: 0, max: 7, menu: 'advanced.sleevecap' },
+    sleevecapQ1Spread1: { pct: 10, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ1Spread2: { pct: 12.5, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ2Spread1: { pct: 12.5, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ2Spread2: { pct: 12.5, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ3Spread1: { pct: 12.5, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ3Spread2: { pct: 8, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ4Spread1: { pct: 7, min: 4, max: 20, menu: 'advanced.sleevecap' },
+    sleevecapQ4Spread2: { pct: 7, min: 4, max: 20, menu: 'advanced.sleevecap' },
   },
   draft: draftBreannaSleevecap,
 }

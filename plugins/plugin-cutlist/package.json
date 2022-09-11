@@ -1,7 +1,7 @@
 {
   "name": "@freesewing/plugin-cutlist",
   "version": "3.0.0-alpha.0",
-  "description": "A FreeSewing plugin to store a pattern's cutlist",
+  "description": "A FreeSewing plugin to store data regarding a pattern's cutlist",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",

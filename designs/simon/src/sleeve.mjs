@@ -10,22 +10,22 @@ import {
   sleevePlacketLength,
 } from './options.mjs'
 
-function simonSleeve(part) {
-  const {
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options,
-    snippets,
-    Snippet,
-    store,
-  } = part.shorthand()
+function simonSleeve({
+  measurements,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  options,
+  snippets,
+  Snippet,
+  store,
+  part,
+}) {
   // Update the back armhole notch because the one from Brian is not correct
   points.backNotch = paths.sleevecap.reverse().shiftAlong(store.get('backArmholeToArmholePitch'))
 

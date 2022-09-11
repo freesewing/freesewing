@@ -10,9 +10,7 @@ const bartackOptions = (options) => ({
   end: options.bartackEnd,
 })
 
-const pluginBartack = (part) => {
-  const { points, Point, paths, Path, macro, options } = part.shorthand()
-
+const pluginBartack = ({ points, Point, paths, Path, macro, options, part }) => {
   if (['bartack', 'all'].indexOf(options.plugin) !== -1) {
     points.bartack = new Point(0, 0)
     macro('bartack', {

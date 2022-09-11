@@ -2,9 +2,7 @@ import { box } from './shared.mjs'
 
 export const docs_coords = {
   name: 'examples.box_coords',
-  draft: part => {
-    const { Point, points, paths, Path } = part.shorthand()
-
+  draft: ({ Point, points, paths, Path, part }) => {
     points.origin = new Point(10, 10)
     points.x = new Point(100, 10)
     points.y = new Point(10, 50)
@@ -19,17 +17,15 @@ export const docs_coords = {
       .attr('marker-end', 'url(#dimensionTo)')
 
     return box(part, 100, 50)
-  }
+  },
 }
 
 export const docs_overview = {
   name: 'examples.docs_overview',
-  draft: part => {
-    const { Point, points, Path, paths, options } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, options, part }) => {
     /**
-    * Returs the value passed to it randomized with a given tolerance
-    */
+     * Returs the value passed to it randomized with a given tolerance
+     */
     const about = (value, tolerance = 5) => {
       let randomized = (tolerance / 100) * Math.random() * value
       let fixed = (1 - tolerance / 100) * value
@@ -38,20 +34,20 @@ export const docs_overview = {
     }
 
     /**
-    * like about, but also randomly makes value negative
-    * This is for degrees
-    */
+     * like about, but also randomly makes value negative
+     * This is for degrees
+     */
     const nabout = (value, tolerance = 5) => {
       if (Math.random() > 0.5) return about(value, tolerance)
       else return -1 * about(value, tolerance)
     }
 
     /**
-    * Draws a w*h box that's randomized by tolerance to give it
-    * that hand-drawn look.
-    *
-    * Returns a Path object
-    */
+     * Draws a w*h box that's randomized by tolerance to give it
+     * that hand-drawn look.
+     *
+     * Returns a Path object
+     */
     const box = (name, origin, width, height, tolerance = 10) => {
       let base = height
       if (width < height) base = width
@@ -119,9 +115,9 @@ export const docs_overview = {
     }
 
     /**
-    * Draws an arrow from to
-    * Returns a Path object
-    */
+     * Draws an arrow from to
+     * Returns a Path object
+     */
     const arrow = (name, text = '', tolerance = 10) => {
       let from = points[name + 'From']
       let to = points[name + 'To']
@@ -295,7 +291,10 @@ export const docs_overview = {
     drawBox('settings', -100, 6, 40, 20)
     drawBox('draft', 80, 3, 20, 25)
 
-    points.arrow1From = points.settingsTopRight.shiftFractionTowards(points.settingsBottomRight, 0.5)
+    points.arrow1From = points.settingsTopRight.shiftFractionTowards(
+      points.settingsBottomRight,
+      0.5
+    )
     points.arrow1To = points.PatternTopLeft.shiftFractionTowards(points.PatternBottomLeft, 0.5)
     paths.arrow1 = arrow('arrow1')
     points.arrow2From = points.PatternTopRight.shiftFractionTowards(points.PatternBottomRight, 0.5)
@@ -318,6 +317,5 @@ export const docs_overview = {
       .attr('class', 'hidden')
 
     return part
-  }
+  },
 }
-

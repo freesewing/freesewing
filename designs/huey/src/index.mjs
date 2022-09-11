@@ -12,13 +12,8 @@ import { cuff } from './cuff.mjs'
 // Create design
 const Huey = new Design({
   data,
-  parts: [
-    back, front, sleeve, pocket, hood, waistband, cuff,
-  ],
+  parts: [back, front, sleeve, pocket, hood, waistband, cuff],
 })
 
 // Named exports
-export {
-  back, front, sleeve, pocket, hood, waistband, cuff,
-  Huey,
-}
+export { back, front, sleeve, pocket, hood, waistband, cuff, Huey }

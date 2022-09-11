@@ -52,12 +52,12 @@ const order = [
   'info',
   'debug'
 ]
-const Events = props => props?.draft?.events
+const Events = props => props?.draft?.store.logs
   ? (
     <div className="max-w-screen-xl m-auto">
       <div className="flex flex-col">
         <ul className="flex flex-row row-wrap">
-          {order.map(type => (props.draft.events[type].length > 0)
+          {order.map(type => (props.draft.store.logs[type].length > 0)
             ? (
               <li key={type} className="">
                 <a href={`#events-${type}`} className={`text-secondary font-bold capitalize text-xl`}>{type}</a>
@@ -71,7 +71,7 @@ const Events = props => props?.draft?.events
             )
           )}
         </ul>
-        {order.map(type => <EventGroup type={type} events={props.draft.events[type]} units={props.gist.units}/>)}
+        {order.map(type => <EventGroup type={type} events={props.draft.store.logs[type]} units={props.gist.units}/>)}
       </div>
     </div>
   ) : null

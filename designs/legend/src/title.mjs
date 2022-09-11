@@ -1,9 +1,7 @@
 import { box } from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function legendTitle(part) {
-  const { points, Point, macro } = part.shorthand()
-
+function legendTitle({ points, Point, macro, part }) {
   points.a = new Point(30, 30)
 
   macro('title', {

@@ -1,9 +1,18 @@
 import { back } from './back.mjs'
 
-function pacoWaistband(part) {
-  const { utils, store, sa, Point, points, Path, paths, complete, paperless, macro } =
-    part.shorthand()
-
+function pacoWaistband({
+  utils,
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   points.topLeft = new Point(0, 0)
   points.midLeft = new Point(0, store.get('waistbandWidth'))
   points.bottomLeft = new Point(0, store.get('waistbandWidth') * 2)

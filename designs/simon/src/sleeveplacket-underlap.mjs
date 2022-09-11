@@ -1,23 +1,22 @@
 import { back } from '@freesewing/brian'
 import { sleevePlacketLength } from './options.mjs'
 
-function simonSleevePlacketUnderlap(part) {
-  const {
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-    store,
-  } = part.shorthand()
-
+function simonSleevePlacketUnderlap({
+  measurements,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  options,
+  store,
+  part,
+}) {
   const width = Math.min(store.get('sleevePlacketWidth') / 2, 10)
   const length = measurements.shoulderToWrist * options.sleevePlacketLength
 

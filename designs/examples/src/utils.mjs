@@ -2,9 +2,7 @@ import { box } from './shared.mjs'
 
 export const utils_beamintersectscircle = {
   name: 'examples.utils_beamintersectscircle',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(95, 45).attr('data-circle', 35).attr('data-circle-class', 'fabric')
     points.B = new Point(55, 50)
     points.C = new Point(75, 30)
@@ -45,14 +43,12 @@ export const utils_beamintersectscircle = {
     snippets.second3 = new Snippet('notch', intersections3[1])
 
     return box(part, 200, 80)
-  }
+  },
 }
 
 export const utils_beamintersectsx = {
   name: 'examples.utils_beamintersectsx',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(10, 10)
     points.B = new Point(90, 30)
 
@@ -66,14 +62,12 @@ export const utils_beamintersectsx = {
       .attr('class', 'note dashed')
 
     return part
-  }
+  },
 }
 
 export const utils_beamintersectsy = {
   name: 'examples.utils_beamintersectsy',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(10, 10)
     points.B = new Point(50, 40)
 
@@ -87,14 +81,12 @@ export const utils_beamintersectsy = {
       .attr('class', 'note dashed')
 
     return part
-  }
+  },
 }
 
 export const utils_beamsintersect = {
   name: 'examples.utils_beamsintersect',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(10, 10)
     points.B = new Point(50, 40)
     points.C = new Point(45, 20)
@@ -106,14 +98,12 @@ export const utils_beamsintersect = {
     snippets.x = new Snippet('notch', utils.beamsIntersect(points.A, points.B, points.C, points.D))
 
     return part
-  }
+  },
 }
 
 export const utils_circlesintersect = {
   name: 'examples.utils_circlesintersect',
-  draft: part => {
-    const { Point, points, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Snippet, snippets, utils, part }) => {
     points.A = new Point(10, 10).attr('data-circle', 15).attr('data-circle-class', 'fabric')
     points.B = new Point(30, 30).attr('data-circle', 35).attr('data-circle-class', 'fabric')
     points.C = new Point(90, 10).attr('data-circle', 15).attr('data-circle-class', 'various')
@@ -139,14 +129,12 @@ export const utils_circlesintersect = {
     snippets.second2 = new Snippet('notch', intersections2[1])
 
     return part
-  }
+  },
 }
 
 export const utils_curveintersectsx = {
   name: 'examples.utils_curveintersectsx',
-  draft: part => {
-    const { Point, points, Path, paths, utils, snippets, Snippet } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, utils, snippets, Snippet, part }) => {
     points.start = new Point(10, 15)
     points.cp1 = new Point(80, 10)
     points.cp2 = new Point(-50, 80)
@@ -172,14 +160,12 @@ export const utils_curveintersectsx = {
       snippets[p.y] = new Snippet('notch', p)
 
     return part
-  }
+  },
 }
 
 export const utils_curveintersectsy = {
   name: 'examples.utils_curveintersectsy',
-  draft: part => {
-    const { Point, points, Path, paths, utils, snippets, Snippet } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, utils, snippets, Snippet, part }) => {
     points.start = new Point(10, 45)
     points.cp1 = new Point(50, 10)
     points.cp2 = new Point(0, 80)
@@ -205,14 +191,12 @@ export const utils_curveintersectsy = {
       snippets[p.x] = new Snippet('notch', p)
 
     return part
-  }
+  },
 }
 
 export const utils_curvesintersect = {
   name: 'examples.utils_curvesintersect',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(10, 10)
     points.Acp = new Point(310, 40)
     points.B = new Point(110, 70)
@@ -239,14 +223,12 @@ export const utils_curvesintersect = {
     }
 
     return part
-  }
+  },
 }
 
 export const utils_lineintersectscircle = {
   name: 'examples.utils_lineintersectscircle',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(95, 45).attr('data-circle', 35).attr('data-circle-class', 'fabric')
     points.B = new Point(55, 50)
     points.C = new Point(75, 30)
@@ -286,14 +268,12 @@ export const utils_lineintersectscircle = {
     snippets.second3 = new Snippet('notch', intersections3[1])
 
     return box(part, 200, 80)
-  }
+  },
 }
 
 export const utils_lineintersectscurve = {
   name: 'examples.utils_lineintersectscurve',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(10, 10)
     points.Acp = new Point(310, 40)
     points.B = new Point(110, 70)
@@ -315,14 +295,12 @@ export const utils_lineintersectscurve = {
     }
 
     return part
-  }
+  },
 }
 
 export const utils_linesintersect = {
   name: 'examples.utils_linesintersect',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.A = new Point(10, 10)
     points.B = new Point(50, 40)
     points.C = new Point(15, 30)
@@ -334,14 +312,12 @@ export const utils_linesintersect = {
     snippets.X = new Snippet('notch', utils.linesIntersect(points.A, points.B, points.C, points.D))
 
     return part
-  }
+  },
 }
 
 export const utils_pointonbeam = {
   name: 'examples.utils_pointonbeam',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.from1 = new Point(10, 10)
     points.to1 = new Point(90, 60)
     points.from2 = new Point(10, 30)
@@ -371,14 +347,12 @@ export const utils_pointonbeam = {
     paths.lne2 = new Path().move(points.to2).line(points.b2).attr('class', 'fabric dashed')
 
     return part
-  }
+  },
 }
 
 export const utils_pointoncurve = {
   name: 'examples.utils_pointoncurve',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.start = new Point(10, 10)
     points.cp1 = new Point(90, 10)
     points.cp2 = new Point(10, 60)
@@ -403,14 +377,12 @@ export const utils_pointoncurve = {
       .attr('class', 'fabric stroke-lg')
 
     return part
-  }
+  },
 }
 
 export const utils_pointonline = {
   name: 'examples.utils_pointonline',
-  draft: part => {
-    const { Point, points, Path, paths, Snippet, snippets, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
     points.from1 = new Point(10, 10)
     points.to1 = new Point(90, 60)
     points.from2 = new Point(10, 30)
@@ -440,14 +412,12 @@ export const utils_pointonline = {
     paths.lne2 = new Path().move(points.to2).line(points.b2).attr('class', 'fabric dashed')
 
     return part
-  }
+  },
 }
 
 export const utils_splitcurve = {
   name: 'examples.utils_splitcurve',
-  draft: part => {
-    const { Point, points, Path, paths, utils } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, utils, part }) => {
     points.from = new Point(40, 10)
     points.to = new Point(40, 80)
     paths.line = new Path().move(points.from).line(points.to).attr('class', 'lining dashed')
@@ -471,6 +441,5 @@ export const utils_splitcurve = {
     }
 
     return part
-  }
+  },
 }
-

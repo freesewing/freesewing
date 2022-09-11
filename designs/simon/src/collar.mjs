@@ -8,22 +8,21 @@ import {
   collarRoll,
 } from './options.mjs'
 
-function simonCollar(part) {
-  const {
-    store,
-    measurements,
-    utils,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
-
+function simonCollar({
+  store,
+  measurements,
+  utils,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  options,
+  part,
+}) {
   const draft = function (tweak = 1) {
     const length = measurements.neck * (1 + options.collarEase - options.collarGap) * tweak
     const width = store.get('collarStandWidth') * 1.2 * (1 + options.collarRoll)

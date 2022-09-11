@@ -5,8 +5,7 @@ import { frontSideDart } from './front-side-dart.mjs'
 
 const Bella = new Design({
   data,
-  parts: [ back, frontSideDart ],
+  parts: [back, frontSideDart],
 })
 
 export { back, frontSideDart, Bella }
-

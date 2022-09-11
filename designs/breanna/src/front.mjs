@@ -21,22 +21,21 @@ import {
   getSaDartPaths,
 } from './dart-utils.mjs'
 
-function draftBreannaFront (part) {
-  let {
-    options,
-    store,
-    utils,
-    points,
-    Path,
-    paths,
-    sa,
-    complete,
-    paperless,
-    macro,
-    snippets,
-    Snippet,
-  } = part.shorthand()
-
+function draftBreannaFront({
+  options,
+  store,
+  utils,
+  points,
+  Path,
+  paths,
+  sa,
+  complete,
+  paperless,
+  macro,
+  snippets,
+  Snippet,
+  part,
+}) {
   /*
    * We're starting from front-base here, which is injected into this part
    * It has a single primary bust dart at 06:00

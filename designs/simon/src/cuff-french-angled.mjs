@@ -1,8 +1,15 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared.mjs'
 
-export const draftAngledFrenchCuff = (part) => {
-  const { store, sa, points, Path, paths, complete, paperless } = part.shorthand()
-
+export const draftAngledFrenchCuff = ({
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  part,
+}) => {
   draftFrenchCuff(part)
   const height = store.get('cuffHeight')
   points.leftAngleTopTop = points.topLeft.shift(0, height / 3)

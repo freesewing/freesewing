@@ -1,23 +1,22 @@
 import { base } from './base.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function draftBreannaBack (part) {
-  let {
-    sa,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    Point,
-    options,
-    utils,
-    store,
-  } = part.shorthand()
-
+function draftBreannaBack({
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  Point,
+  options,
+  utils,
+  store,
+  part,
+}) {
   // Shoulder dart
   if (options.shoulderDart) {
     points.shoulderDartCenter = points.hps.shiftFractionTowards(points.shoulder, 0.5)
@@ -280,10 +279,9 @@ function draftBreannaBack (part) {
   return part
 }
 
-
 export const back = {
   from: base,
   name: 'breanna.back',
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftBreannaBack,
 }

@@ -1,21 +1,20 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function tiberiusTunica(part) {
-  const {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    sa,
-    paperless,
-  } = part.shorthand()
-
+function tiberiusTunica({
+  Point,
+  points,
+  Path,
+  paths,
+  measurements,
+  options,
+  macro,
+  complete,
+  snippets,
+  Snippet,
+  sa,
+  paperless,
+  part,
+}) {
   // Handle width
   let width =
     options.width === 'toElbow'

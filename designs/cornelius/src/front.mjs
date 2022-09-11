@@ -1,10 +1,20 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { frontpoints } from './frontpoints.mjs'
 
-function draftCorneliusFront (part) {
-  let { options, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
-    part.shorthand()
-
+function draftCorneliusFront({
+  options,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   const cc = 0.551915024494 // circle constant
 
   let halfInch = store.get('halfInch')
@@ -246,6 +256,6 @@ export const front = {
     pctKtoRup: 0.25,
     pctKtoH: 0.7,
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftCorneliusFront,
 }

@@ -7,9 +7,8 @@ import { strap } from './strap.mjs'
 // Setup our new design
 const Albert = new Design({
   data,
-  parts: [ front, pocket, strap ],
+  parts: [front, pocket, strap],
 })
 
 // Named exports
 export { front, pocket, strap, Albert }
-

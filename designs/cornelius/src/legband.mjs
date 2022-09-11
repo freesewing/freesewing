@@ -2,7 +2,7 @@ import { front } from './front.mjs'
 import { back } from './back.mjs'
 
 function findR(part, height, arcLength) {
-  let { raise } = part.shorthand()
+  let { log } = part.shorthand()
 
   let iter = 0
   let a = 0.5
@@ -19,28 +19,27 @@ function findR(part, height, arcLength) {
     //console.log( {iter, diff, a} );
   } while ((diff < -1 || diff > 1) && iter < 50)
   if (iter >= 500) {
-    raise.error('Could not find the radius for the legband within 500 iterations')
+    log.error('Could not find the radius for the legband within 500 iterations')
   }
 
   return a * (180 / Math.PI)
 }
 
-function draftCorneliusLegband (part) {
-  let {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    store,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftCorneliusLegband({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   if (options.cuffStyle == 'keystone') {
     return part
   }
@@ -193,12 +192,11 @@ function draftCorneliusLegband (part) {
 
 export const legband = {
   name: 'cornelius.legband',
-  after: [ back, front ],
+  after: [back, front],
   options: {
     kneeToBelow: { pct: 94, min: 85, max: 110, menu: 'advanced' },
     cuffWidth: { pct: 0, min: -50, max: 150, menu: 'style' },
-    cuffStyle: { dflt: 'elegant',
-      list: ['traditional', 'elegant', 'keystone'], menu: 'style' },
+    cuffStyle: { dflt: 'elegant', list: ['traditional', 'elegant', 'keystone'], menu: 'style' },
   },
   draft: draftCorneliusLegband,
 }

@@ -1,9 +1,8 @@
 import { inset } from './inset.mjs'
 import { init } from './init.mjs'
 
-function tuskDelta(part) {
-  let { Path, points, store } = part.shorthand()
-  let len = new Path()
+function tuskDelta(Path, points, store) {
+  const len = new Path()
     .move(points.midRight)
     .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
     .length()
@@ -11,9 +10,7 @@ function tuskDelta(part) {
   return len - store.get('curve')
 }
 
-function tweakTusk(delta, part) {
-  let { points } = part.shorthand()
-
+function tweakTusk(delta, points) {
   let factor
   if (Math.abs(delta) > 2) factor = 3
   else factor = 5
@@ -23,22 +20,21 @@ function tweakTusk(delta, part) {
   points.curveRightCpBottom = points.curveRightCpBottom.shift(90, delta / factor)
 }
 
-function draftBruceFront (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    complete,
-    paperless,
-    macro,
-    snippets,
-    Snippet,
-  } = part.shorthand()
-
+function draftBruceFront({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  options,
+  complete,
+  paperless,
+  macro,
+  snippets,
+  Snippet,
+  part,
+}) {
   // Initialize
   init(part)
 
@@ -67,12 +63,12 @@ function draftBruceFront (part) {
   )
 
   // Adjust tusk length to fit inset curve
-  let delta = tuskDelta(part)
+  let delta = tuskDelta(Path, points, store)
   let count = 0
   while (Math.abs(delta) > 1) {
     // Below 1mm is good enough
-    tweakTusk(delta, part)
-    delta = tuskDelta(part)
+    tweakTusk(delta, points)
+    delta = tuskDelta(Path, points, store)
     count++
     if (count > 150)
       throw 'We got stuck trying to calculate an optimal tusk length. Please report this.'

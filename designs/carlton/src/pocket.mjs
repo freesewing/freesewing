@@ -1,9 +1,18 @@
 import { front } from './front.mjs'
 
-function draftCarltonPocket (part) {
-  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarltonPocket({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(store.get('pocketWidth'), store.get('pocketHeight'))
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)

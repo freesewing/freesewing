@@ -1,23 +1,22 @@
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
-function draftCorneliusLegbandKeystone (part) {
-  let {
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    store,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftCorneliusLegbandKeystone({
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   if (options.cuffStyle != 'keystone') {
     return part
   }
@@ -182,6 +181,6 @@ function draftCorneliusLegbandKeystone (part) {
 
 export const legbandKeystone = {
   name: 'cornelius.legbandKeystone',
-  after: [ back, front ],
+  after: [back, front],
   draft: draftCorneliusLegbandKeystone,
 }

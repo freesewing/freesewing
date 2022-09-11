@@ -14,21 +14,20 @@ import {
   cuffStyle,
 } from './options.mjs'
 
-const simonCuff = (part) => {
-  const { options } = part.shorthand()
-  switch (options.cuffStyle) {
+const simonCuff = (params) => {
+  switch (params.options.cuffStyle) {
     case 'roundedBarrelCuff':
-      return draftRoundedBarrelCuff(part)
+      return draftRoundedBarrelCuff(params)
     case 'straightBarrelCuff':
-      return draftStraightBarrelCuff(part)
+      return draftStraightBarrelCuff(params)
     case 'roundedFrenchCuff':
-      return draftRoundedFrenchCuff(part)
+      return draftRoundedFrenchCuff(params)
     case 'angledFrenchCuff':
-      return draftAngledFrenchCuff(part)
+      return draftAngledFrenchCuff(params)
     case 'straightFrenchCuff':
-      return draftStraightFrenchCuff(part)
+      return draftStraightFrenchCuff(params)
     default:
-      return draftAngledBarrelCuff(part)
+      return draftAngledBarrelCuff(params)
   }
 }
 

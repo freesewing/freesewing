@@ -1,10 +1,20 @@
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
-function draftCarltonCollarStand (part) {
-  let { paperless, sa, store, complete, points, measurements, options, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarltonCollarStand({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   let height = measurements.chest * options.collarHeight
   let length = store.get('frontCollarLength') + store.get('backCollarLength')
   points.topLeft = new Point(0, 0)
@@ -74,7 +84,7 @@ function draftCarltonCollarStand (part) {
 
 export const collarStand = {
   name: 'carlton.collarStand',
-  after: [ front, back ],
+  after: [front, back],
   options: {
     collarHeight: { pct: 9.6, min: 8, max: 11, menu: 'collar' },
     collarFlare: { pct: 20, min: 0, max: 40, menu: 'collar' },

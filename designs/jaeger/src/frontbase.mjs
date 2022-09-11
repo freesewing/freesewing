@@ -16,9 +16,7 @@ import {
   reduceHipsStandardFraction,
 } from './options.mjs'
 
-function jaegerFrontBase(part) {
-  let { store, points, utils, options, Point, paths, Path } = part.shorthand()
-
+function jaegerFrontBase({ store, points, utils, options, Point, paths, Path, part }) {
   /**
    * Add side part from back to front, draw front style line
    */

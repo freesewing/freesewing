@@ -3,25 +3,23 @@ import { back } from './back.mjs'
 import { front as titanFront } from '@freesewing/titan'
 import { back as titanBack } from '@freesewing/titan'
 
-function draftCharlieWaistbandCurved (part) {
-  // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    raise,
-    snippets,
-    Snippet,
-    sa,
-    units,
-  } = part.shorthand()
-
+function draftCharlieWaistbandCurved({
+  points,
+  Point,
+  paths,
+  Path,
+  options,
+  complete,
+  paperless,
+  store,
+  macro,
+  log,
+  snippets,
+  Snippet,
+  sa,
+  units,
+  part,
+}) {
   if (options.waistbandCurve == 0) {
     return part
   }
@@ -93,7 +91,7 @@ function draftCharlieWaistbandCurved (part) {
   paths.seam = paths.saBase.clone().attr('class', 'fabric').setRender(true)
 
   if (complete) {
-    raise.info(`Top of waistband: ${units(paths.waistbandTop.length())}`)
+    log.info(`Top of waistband: ${units(paths.waistbandTop.length())}`)
     macro('sprinkle', {
       snippet: 'notch',
       on: [
@@ -292,6 +290,6 @@ function draftCharlieWaistbandCurved (part) {
 
 export const waistbandCurved = {
   name: 'charlie.waistbandCurved',
-  after: [ titanBack, titanFront, front, back ],
+  after: [titanBack, titanFront, front, back],
   draft: draftCharlieWaistbandCurved,
 }

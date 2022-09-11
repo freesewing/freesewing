@@ -1,9 +1,18 @@
 import { sidepanel } from './sidepanel.mjs'
 import { bottomsidepanel } from './bottomsidepanel.mjs'
 
-function draftHortensiaSidepanelreinforcement (part) {
-  let { store, Point, Path, points, paths, complete, sa, paperless, macro } = part.shorthand()
-
+function draftHortensiaSidepanelreinforcement({
+  store,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   const w = store.get('width')
   const h = store.get('sidePanelReinforcementHeight')
   const sizeRatio = store.get('sizeRatio')

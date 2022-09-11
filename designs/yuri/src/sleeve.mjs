@@ -1,7 +1,16 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
 
-function yuriSleeve(part) {
-  let { Point, Path, points, paths, complete, sa, paperless, macro } = part.shorthand()
+function yuriSleeve({
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   // Clear paths from Brian, but keep sleevecap
   for (let p of Object.keys(paths)) {

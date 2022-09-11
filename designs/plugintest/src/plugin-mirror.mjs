@@ -1,9 +1,7 @@
 import { mirrorPlugin } from '@freesewing/plugin-mirror'
 import { base } from './base.mjs'
 
-const pluginMirror = (part) => {
-  const { points, Point, paths, Path, snippets, Snippet, options, macro } = part.shorthand()
-
+const pluginMirror = ({ points, Point, paths, Path, snippets, Snippet, options, macro, part }) => {
   if (['mirror', 'all'].indexOf(options.plugin) !== -1) {
     points.mirrorA = new Point(0, 0)
     points.mirrorB = new Point(70, 30)

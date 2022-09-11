@@ -1,7 +1,7 @@
 /**
  * This calculates a bunch of helper variables and stores them
  */
-export function calculateRatios (part) {
+export function calculateRatios(part) {
   let { store, measurements, options } = part.shorthand()
 
   // Calculate different values for reducing from chest to hips via waist

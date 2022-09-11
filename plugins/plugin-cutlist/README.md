@@ -48,7 +48,7 @@
 
 # @freesewing/plugin-cutlist
 
-A FreeSewing plugin to store a pattern&#39;s cutlist
+A FreeSewing plugin to store data regarding a pattern&#39;s cutlist
 
 
 

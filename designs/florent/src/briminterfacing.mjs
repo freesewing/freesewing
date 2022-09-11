@@ -1,8 +1,15 @@
 import { brimBottom } from './brimbottom.mjs'
 
-function draftFlorentBrimInterfacing (part) {
-  let { paperless, sa, complete, points, macro, paths, Path } = part.shorthand()
-
+function draftFlorentBrimInterfacing({
+  paperless,
+  sa,
+  complete,
+  points,
+  macro,
+  paths,
+  Path,
+  part,
+}) {
   paths.hint = paths.seam.clone().attr('class', 'dashed stroke-sm')
 
   paths.outset = new Path()

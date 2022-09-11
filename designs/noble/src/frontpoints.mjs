@@ -1,9 +1,7 @@
 import { frontSideDart as bellaFront } from '@freesewing/bella'
 import * as options from './options.mjs'
 
-function nobleFrontPoints(part) {
-  const { points, Path, paths, snippets, options, macro } = part.shorthand()
-
+function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, part }) {
   const bCircle = 0.552284749831
 
   // Hide Bella paths
@@ -264,7 +262,7 @@ function nobleFrontPoints(part) {
     iteration++
   } while ((diff > 1 || diff < -1) && iteration < 200)
   if (iteration >= 200) {
-    raise.error('Something is not quite right here!')
+    log.error('Something is not quite right here!')
   }
   points.waistDartRightCp = points.bustAcp.clone()
   points.armholeDartTipInside = points.armholeDartTip.clone()
@@ -312,7 +310,7 @@ function nobleFrontPoints(part) {
     iteration++
   } while ((diff < -1 || diff > 1) && iteration < 200)
   if (iteration >= 200) {
-    raise.error('Something is not quite right here!')
+    log.error('Something is not quite right here!')
   }
 
   return part

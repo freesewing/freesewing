@@ -1,22 +1,22 @@
-export function draftStraightWaistband(part) {
+export function draftStraightWaistband({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  absoluteOptions,
+  part,
+}) {
   /**
    * The straight waistband is just a rectangle with the width
    * of double the waistband width, since it will be folded
    */
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    absoluteOptions,
-  } = part.shorthand()
 
   // Calculate the corners of the rectangle and other auxiliar points
   points.center = new Point(0, 0)

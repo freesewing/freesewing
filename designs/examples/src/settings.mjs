@@ -1,8 +1,6 @@
 export const settings_sa = {
   name: 'examples.settings_sa',
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, path, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)
@@ -20,6 +18,5 @@ export const settings_sa = {
     paths.offset = paths.example.offset(-10).attr('class', 'fabric sa')
 
     return part
-  }
+  },
 }
-

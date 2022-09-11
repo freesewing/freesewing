@@ -4,10 +4,8 @@
  * This is to force our examples parts to a certain size
  */
 export function box(part, w = 100, h = 50) {
-  part.paths.box = new part.Path()
-    .move(new part.Point(0, 0))
-    .line(new part.Point(w, h))
-    .attr('class', 'hidden')
+  const { paths, Path, Point } = part.shorthand()
+  paths.box = new Path().move(new Point(0, 0)).line(new Point(w, h)).attr('class', 'hidden')
 
   return part
 }

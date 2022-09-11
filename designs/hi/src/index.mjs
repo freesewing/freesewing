@@ -14,15 +14,8 @@ import { upperTeeth } from './upperTeeth.mjs'
 // Create design
 const Hi = new Design({
   data,
-  parts: [
-    body, tail, mouth, aboveMouth, belly, topFin, bottomFin,
-    lowerTeeth, upperTeeth,
-  ],
+  parts: [body, tail, mouth, aboveMouth, belly, topFin, bottomFin, lowerTeeth, upperTeeth],
 })
 
 // Named exports
-export {
-  body, tail, mouth, aboveMouth, belly, topFin, bottomFin,
-  lowerTeeth, upperTeeth,
-  Hi,
-}
+export { body, tail, mouth, aboveMouth, belly, topFin, bottomFin, lowerTeeth, upperTeeth, Hi }
