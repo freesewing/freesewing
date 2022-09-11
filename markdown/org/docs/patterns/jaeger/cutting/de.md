@@ -20,14 +20,14 @@ title: "Jaeger, das Sakko: Zuschnitt"
   - Schneide **2 Seiten** (Teil 3)
   - Schneide **2 Oberärmel** (Teil 4) Hinweis: Einige Leute verwenden gerne anderes Futter für die Ärmel
   - Schneide **2 Unterärmel** (Teil 5) Hinweis: Einige Leute verwenden gerne anderes Futter für die Ärmel
-  - Schneide **2 Brusttaschenbeutel** (Teil 11)
+  - Cut **2 chest pocket bags** (part 11)
   - Schneide **2 Paspeln für die innere Tasche **
   - Schneide **2 Taschenbeutel für die innere Tasche** (Teil 13)
 - **Einlage**
   - Schneide **2 Vorderteile** im schrägen Fadenlauf (Teil 1) Hinweis: Keine Nahtzugabe hinzufügen
   - Schneide **2 Brustteile** im schrägen Fadenlauf. Halte Ausschau nach der Markierung auf dem Vorderteil. Hinweis: Keine Nahtzugabe hinzufügen
 - **Stoff für Unterkragen**
-  - Schneide **1 Unterkragen** (Teil 7)
+  - Cut **2 undercollars** (part 7)
 
 <Note>
 
@@ -46,7 +46,7 @@ Wenn du die Teile einzeln ausschneidest, musst du daran denken, dass sie Spiegel
 
 - Das Brustteil ist auf dem Vorderteil eingezeichnet.
 - Beim Schneiden der Einlage keine Nahtzugabe hinzufügen und im schrägen Fadenlauf zuschneiden.
-- Der Besatz und das Futter für das Vorderteil sind auf dem Vorderteil eingezeichnet. Sie teilen das Vorderteil entlang der Begrenzungslinie in zwei Teile. Du kannst das Schnittmuster für das Vorderteil entlang dieser Linie auseinander schneiden, nachdem du deinen Oberstoff zugeschnitten hast. Die Erweiterung für die innere Tasche ist separat aufgedruckt und du kannst sie wieder an die richtige Stelle kleben, nachdem du die Teile ausgeschnitten hast. **Vergiss nicht, an dieser Grenznaht bei sowohl dem Besatz als auch beim Futter Nahtzugabe hinzuzufügen**.
+- Der Besatz und das Futter für das Vorderteil sind auf dem Vorderteil eingezeichnet. Sie teilen das Vorderteil entlang der Begrenzungslinie in zwei Teile. Du kannst das Schnittmuster für das Vorderteil entlang dieser Linie auseinander schneiden, nachdem du deinen Oberstoff zugeschnitten hast. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the pattern piece. **Vergiss nicht, an dieser Grenznaht bei sowohl dem Besatz als auch beim Futter Nahtzugabe hinzuzufügen**.
 
 ![Übertrage den Besatz und das Futter für das Vorderteil](cuttingCaveat.svg)
 
