@@ -9,7 +9,7 @@ export const plugin = {
         text: '',
         dy: -1,
         spaces: 12,
-        repeat: 10
+        repeat: 10,
       }
       so = { ...defaults, ...so }
       this.paths[so.path].attr('data-text-dy', so.dy).attr('data-text-class', 'center')
