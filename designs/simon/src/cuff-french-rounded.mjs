@@ -1,7 +1,16 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared.mjs'
 
-export const draftRoundedFrenchCuff = (part) => {
-  const { store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
+export const draftRoundedFrenchCuff = ({
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  part,
+}) => {
   draftFrenchCuff(part)
   const height = store.get('cuffHeight')
   macro('round', {

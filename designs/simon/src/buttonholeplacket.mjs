@@ -2,23 +2,22 @@ import { addButtonHoles } from './shared.mjs'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
-function simonButtonholePlacket(part) {
-  const {
-    utils,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-    store,
-  } = part.shorthand()
-
+function simonButtonholePlacket({
+  utils,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  options,
+  store,
+  part,
+}) {
   if (!options.seperateButtonholePlacket) {
     part.paths = {}
     part.snippets = {}

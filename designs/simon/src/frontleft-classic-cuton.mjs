@@ -1,9 +1,19 @@
 import { addButtonHoles } from './shared.mjs'
 
-export const draftFrontLeftClassicCuton = (part) => {
-  const { store, sa, Point, points, Path, paths, snippets, complete, paperless, macro, options } =
-    part.shorthand()
-
+export const draftFrontLeftClassicCuton = ({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  options,
+  part,
+}) => {
   const fold = store.get('buttonholePlacketFoldWidth')
   const width = store.get('buttonholePlacketWidth')
   points.placketCfNeck = points.cfNeck.shift(180, fold * 2)

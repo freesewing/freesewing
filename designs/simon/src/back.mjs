@@ -22,23 +22,22 @@ import {
   waistEase,
 } from './options.mjs'
 
-function simonBack(part) {
-  const {
-    store,
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
-
+function simonBack({
+  store,
+  measurements,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  options,
+  part,
+}) {
   // Add pct options (that used to be mm) to the store
   store.set('buttonPlacketWidth', measurements.neck * options.buttonPlacketWidth)
   store.set('buttonholePlacketWidth', measurements.neck * options.buttonholePlacketWidth)

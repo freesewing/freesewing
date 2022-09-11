@@ -12,21 +12,20 @@ import {
   ffsa,
 } from './options.mjs'
 
-function simonFront(part) {
-  const {
-    store,
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    macro,
-    snippets,
-    options,
-  } = part.shorthand()
-
+function simonFront({
+  store,
+  measurements,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  macro,
+  snippets,
+  options,
+  part,
+}) {
   // Clean up
   for (const i in paths) {
     if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
