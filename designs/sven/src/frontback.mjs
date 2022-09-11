@@ -1,19 +1,19 @@
 import { front as brianFront, back as brianBack } from '@freesewing/brian'
 
-function svenFrontBack(part) {
-  const {
-    store,
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options,
-  } = part.shorthand()
+function svenFrontBack({
+  store,
+  measurements,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  options,
+  part,
+}) {
   let front = true
   if (typeof points.cfHem === 'undefined') front = false
 
