@@ -1,53 +1,53 @@
 - - -
-title: "Jaeger jacket: Cutting Instructions"
+title: "Jaeger, das Sakko: Zuschnitt"
 - - -
 
 - **Oberstoff**
-  - **2 Fronten schneiden** (Teil 1)
-  - Schneiden Sie **2 Frontverkleidungen** (schauen Sie nach der Verkleidung/Außengrenze auf dem vorderen Teil)
-  - **2 zurück** (Teil 2) schneiden
-  - **2 Seiten schneiden** (Teil 3)
-  - **2 Topsleeves schneiden** (Teil 4)
-  - **2 Unterärmel schneiden** (Teil 5)
-  - **1 Kragen schneiden** (Teil 6)
-  - **1 Kragenstand schneiden** (Teil 8)
-  - **2 Taschen schneiden** (Teil 9)
-  - **1 Truhe Taschenwelt schneiden** (Teil 10)
-- **futterstoff**
-  - **2 Fronten schneiden** (Teil 1)
-  - Schneiden Sie **2 Frontverkleidung** (achten Sie auf die Verkleidung/Verkleidungsgrenze auf dem vorderen Teil, und vergessen Sie nicht, die Innentasche nach der Erweiterung zu befestigen)
-  - **2 zurück** (Teil 2) schneiden
-  - **2 Seiten schneiden** (Teil 3)
-  - **2 Oberärmeln schneiden** (Teil 4) Hinweis: Einige Leute verwenden gerne andere Futter für die Ärmel
-  - **2 Unterärmel schneiden** (Teil 5) Hinweis: Einige Leute verwenden gerne andere Futter für die Ärmel
-  - **2 Brusttaschen schneiden** )(Teil 11)
-  - **2 innere Hosentaschen schneiden**
-  - **2 innere Taschen schneiden** (Teil 13)
-- **Leinwand**
-  - **2 Fronten** bei Voreinstellung (Teil 1) schneiden: Nicht Naht einschließen
-  - **2 Brustteile** auf Voreinstellung schneiden. Suchen Sie nach der Anzeige auf dem vorderen Teil. Hinweis: Nahtzuweisung nicht einschließen
-- **Unterkragen Stoff**
-  - **1 Undercollar** (Teil 7) schneiden
+  - Schneide **2 Vorderteile** (Teil 1)
+  - Schneide **2 Vorderbesatze** (halte Ausschau nach der Besatz-/Futterabgrenzung auf dem Vorderteil)
+  - Schneide **2 Rückenteile** (Teil 2)
+  - Schneide **2 Seiten** (Teil 3)
+  - Schneide **2 Oberärmel** (Teil 4)
+  - Schneide **2 Unterärmel** (Teil 5)
+  - Schneide **1 Kragen** (Teil 6)
+  - Schneide **1 Kragensteg** (Teil 8)
+  - Schneide **2 Taschen** (Teil 9)
+  - Schneide **1 Brusttaschenpaspel** (Teil 10)
+- **Futterstoff**
+  - Schneide **2 Vorderteile** (Teil 1)
+  - Schneide **2 Vorderfutter** (halte Ausschau nach der Besatz-/Futterabgrenzung auf dem Vorderteil und vergiss nicht, die Erweiterung für den Besatz der inneren Tasche anzufügen)
+  - Schneide **2 Rückenteile** (Teil 2)
+  - Schneide **2 Seiten** (Teil 3)
+  - Schneide **2 Oberärmel** (Teil 4) Hinweis: Einige Leute verwenden gerne anderes Futter für die Ärmel
+  - Schneide **2 Unterärmel** (Teil 5) Hinweis: Einige Leute verwenden gerne anderes Futter für die Ärmel
+  - Schneide **2 Brusttaschenbeutel** (Teil 11)
+  - Schneide **2 Paspeln für die innere Tasche **
+  - Schneide **2 Taschenbeutel für die innere Tasche** (Teil 13)
+- **Einlage**
+  - Schneide **2 Vorderteile** im schrägen Fadenlauf (Teil 1) Hinweis: Keine Nahtzugabe hinzufügen
+  - Schneide **2 Brustteile** im schrägen Fadenlauf. Halte Ausschau nach der Markierung auf dem Vorderteil. Hinweis: Keine Nahtzugabe hinzufügen
+- **Stoff für Unterkragen**
+  - Schneide **1 Unterkragen** (Teil 7)
 
 <Note>
 
-###### Gute Seiten zusammen, oder genaue Muster übereinstimmen?
+###### Gute Seiten zusammen, oder Stoffmuster genau aufeinander abstimmen?
 
-Wenn du zwei ausschnitst, kannst du sie [gute Seiten zusammen schneiden](/docs/sewing/good-sides-together).
-Bei der Arbeit mit Stoff mit einem Muster ziehe ich es jedoch vor, sie individuell zu schneiden, um das Muster passend zu steuern.
+Wenn du zwei Teile ausschneidest, kannst du sie [mit guten Seiten zusammen](/docs/sewing/good-sides-together) ausschneiden.
+Wenn der Stoff jedoch ein Muster hat, ziehe ich es vor, sie einzeln auszuschneiden, damit ich das Abstimmen der Muster aufeinander genau kontrollieren kann.
 
-Wenn Sie sie einzeln schneiden, denken Sie daran, dass sie Spiegelbilder voneinander sein müssen. Wenden Sie also entweder Ihr Muster oder Ihren Stoff, wenn Sie das zweite schneiden.
+Wenn du die Teile einzeln ausschneidest, musst du daran denken, dass sie Spiegelbilder voneinander sein müssen. Wende also entweder dein Schnittmuster oder deinen Stoff, wenn du das zweite Teil ausschneidest.
 
 </Note>
 
 <Warning>
 
-###### Cutting caveats
+###### Hinweise zum Zuschnitt
 
-- The chest piece is marked on the front.
-Don't include seam allowance when cutting out canvas, and cut it on bias.
-The front facing and lining is marked on the front piece. Sie teilten den vorderen Teil in zwei entlang der Grenzlinie. Sie können den vorderen Teil entlang dieser Linie schneiden, nachdem Sie die Vorderseite aus dem Hauptgewebe ausgeschnitten haben. Die Innentasche für die Fassade wird separat bedruckt und Sie können sie nach dem Schneiden wieder an der Stelle befestigen. **Vergessen Sie nicht, die Nahtzuweisung sowohl an das Gestell als auch an das Futter für diese Randnaht**.
+- Das Brustteil ist auf dem Vorderteil eingezeichnet.
+- Beim Schneiden der Einlage keine Nahtzugabe hinzufügen und im schrägen Fadenlauf zuschneiden.
+- Der Besatz und das Futter für das Vorderteil sind auf dem Vorderteil eingezeichnet. Sie teilen das Vorderteil entlang der Begrenzungslinie in zwei Teile. Du kannst das Schnittmuster für das Vorderteil entlang dieser Linie auseinander schneiden, nachdem du deinen Oberstoff zugeschnitten hast. Die Erweiterung für die innere Tasche ist separat aufgedruckt und du kannst sie wieder an die richtige Stelle kleben, nachdem du die Teile ausgeschnitten hast. **Vergiss nicht, an dieser Grenznaht bei sowohl dem Besatz als auch beim Futter Nahtzugabe hinzuzufügen**.
 
-![Tracke die Vorderseite und Futter vom Vorderteil](cuttingCaveat.svg)
+![Übertrage den Besatz und das Futter für das Vorderteil](cuttingCaveat.svg)
 
 </Warning>
