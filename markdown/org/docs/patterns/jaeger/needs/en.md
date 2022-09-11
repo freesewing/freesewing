@@ -17,7 +17,7 @@ To make Jaeger, you will need the following:
 
 <Note>
 
-\####### Where to get all this stuff
+###### Where to get all this stuff
 
 Making Jaeger is a fun and rewarning project, but getting all the required bits and pieces can be challenging.
 
