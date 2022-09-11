@@ -1,9 +1,6 @@
 import { flyFacing } from './fly-facing.mjs'
 
-function draftCharlieFlyExtension (part) {
-  // Shorthand
-  let { points, paths, Path, complete, macro, sa } = part.shorthand()
-
+function draftCharlieFlyExtension({ points, paths, Path, complete, macro, sa, part }) {
   // Clean up
   for (let id in paths) delete paths[id]
 
