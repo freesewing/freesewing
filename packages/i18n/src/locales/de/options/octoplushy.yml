@@ -8,7 +8,7 @@ armWidth:
   title: Armbreite
   description: Steuert die Breite der Arme
 armLength:
-  title: Arm length
+  title: Armlänge
   description: Steuert die Länge der Arme
 neckWidth:
   title: Halsbreite
