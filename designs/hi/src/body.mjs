@@ -1,22 +1,21 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function draftHiBody (part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-    utils,
-  } = part.shorthand()
-
+function draftHiBody({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  utils,
+  part,
+}) {
   let body01_02d = 117.67274991262845 * options.size
   let body02_03d = 124.91298035032229 * options.size
   // let body02_03d = body01_02d
@@ -468,7 +467,7 @@ function draftHiBody (part) {
   )
 
   // Reduce precision as size goes up coz performance
-  store.set('tolerance', (options.size < 1) ? 1 : options.size*100)
+  store.set('tolerance', options.size < 1 ? 1 : options.size * 100)
 
   // Complete?
   if (complete) {
@@ -488,8 +487,8 @@ function draftHiBody (part) {
       d: -5,
     })
 
-    points.grainlineFrom = points.body13.shiftFractionTowards(points.body03,0.5)
-    macro("grainline", {
+    points.grainlineFrom = points.body13.shiftFractionTowards(points.body03, 0.5)
+    macro('grainline', {
       from: points.grainlineFrom,
       to: points.body03,
     })
@@ -685,9 +684,9 @@ export const body = {
   name: 'hi.body',
   options: {
     size: { pct: 100, min: 5, max: 500, menu: 'style' },
-    nosePointiness: { pct: 0, min: -5,max: +10, menu: 'style' },
+    nosePointiness: { pct: 0, min: -5, max: +10, menu: 'style' },
     aggressive: { bool: false, menu: 'style' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftHiBody,
 }
