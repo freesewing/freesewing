@@ -1,21 +1,20 @@
 import { front } from './front.mjs'
 
-function teaganBack(part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    options,
-    complete,
-    paperless,
-    macro,
-    utils,
-    measurements,
-  } = part.shorthand()
-
+function teaganBack({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  options,
+  complete,
+  paperless,
+  macro,
+  utils,
+  measurements,
+  part,
+}) {
   // Adjust neckline
   points.cbNeck = new Point(0, points.neck.y + options.backNeckCutout * measurements.neck)
   points.cbNeckCp1 = points.cbNeck.shift(0, points.neck.x / 2)

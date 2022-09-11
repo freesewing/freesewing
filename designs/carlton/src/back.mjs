@@ -1,23 +1,22 @@
 import { back as bentBack } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
 
-function draftCarltonBack (part) {
-  let {
-    paperless,
-    sa,
-    snippets,
-    Snippet,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
-
+function draftCarltonBack({
+  paperless,
+  sa,
+  snippets,
+  Snippet,
+  store,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   calculateRatios(part)
   // Belt width
   let bw = measurements.hpsToWaistBack * options.beltWidth
@@ -232,10 +231,7 @@ export const back = {
   name: 'carlton.back',
   from: bentBack,
   hideDependencies: true,
-  measurements: [
-    'chest',
-    'hpsToWaistBack',
-  ],
+  measurements: ['chest', 'hpsToWaistBack'],
   options: {
     backPleat: 0.048,
     beltWidth: { pct: 15, min: 10, max: 20, menu: 'style' },

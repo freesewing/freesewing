@@ -10,22 +10,22 @@ export const sleeve = {
     'shoulderToWrist',
     'wrist',
   ],
-  draft: part => {
-    const {
-      store,
-      sa,
-      measurements,
-      options,
-      Point,
-      points,
-      Path,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      paperless,
-      macro,
-    } = part.shorthand()
+  draft: ({
+    store,
+    sa,
+    measurements,
+    options,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    part,
+  }) => {
 
     // Remove things inherited
     macro('cutonfold', false)

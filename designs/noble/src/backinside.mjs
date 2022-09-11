@@ -1,9 +1,18 @@
 import { backPoints } from './backpoints.mjs'
 
-function nobleBackInside(part) {
-  const { sa, points, Path, paths, Snippet, snippets, options, complete, paperless, macro } =
-    part.shorthand()
-
+function nobleBackInside({
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   if (options.dartPosition != 'shoulder') {
     paths.insideSeam = paths.seam.clone().setRender(true)
   } else {

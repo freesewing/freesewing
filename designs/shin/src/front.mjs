@@ -1,23 +1,22 @@
 import { back } from './back.mjs'
 
-function shinFront(part) {
-  const {
-    store,
-    macro,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    snippets,
-    Snippet,
-    sa,
-    options,
-    measurements,
-    utils,
-  } = part.shorthand()
-
+function shinFront({
+  store,
+  macro,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  paperless,
+  snippets,
+  Snippet,
+  sa,
+  options,
+  measurements,
+  utils,
+  part,
+}) {
   let angle = -12
   let bulge = (measurements.waistToUpperLeg - measurements.waistToHips) * options.bulge
   points.hipSide = new Point(0, 0)

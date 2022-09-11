@@ -10,9 +10,7 @@ const addThese = [
   'snap-socket',
 ]
 
-const pluginButtons = (part) => {
-  const { points, Point, paths, Path, snippets, Snippet, options } = part.shorthand()
-
+const pluginButtons = ({ points, Point, paths, Path, snippets, Snippet, options, part }) => {
   if (['buttons', 'all'].indexOf(options.plugin) !== -1) {
     let x = 10
     for (const add of addThese) {

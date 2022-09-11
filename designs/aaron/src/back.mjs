@@ -1,30 +1,29 @@
 import { dimensions } from './shared.mjs'
-import { front } from "./front.mjs"
+import { front } from './front.mjs'
 
 export const back = {
   from: front,
   name: 'aaron.back',
   options: {
     backNeckCutout: 0.05,
-    backlineBend: { pct: 50, min: 25, max: 100, menu: 'style' }
+    backlineBend: { pct: 50, min: 25, max: 100, menu: 'style' },
   },
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      utils,
-      units,
-      measurements,
-    } = part.shorthand()
-
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    utils,
+    units,
+    measurements,
+    part,
+  }) => {
     // Lower back neck a bit
     points.cbNeck.y = measurements.neck / 10
 
@@ -108,6 +107,5 @@ export const back = {
     }
 
     return part
-  }
+  },
 }
-

@@ -1,8 +1,16 @@
 import { backPocketWelt } from './backpocketwelt.mjs'
 
-function pacoBackPocketWeltInterfacing(part) {
-  const { points, Path, paths, snippets, options, complete, paperless, macro } = part.shorthand()
-
+function pacoBackPocketWeltInterfacing({
+  points,
+  Path,
+  paths,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   // Don't bother of we're not drafting back pockets
   if (!options.backPockets) {
     part.render = false

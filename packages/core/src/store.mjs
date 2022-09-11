@@ -4,7 +4,7 @@ import get from 'lodash.get'
 
 const avoid = ['set', 'setIfUnset', 'push', 'unset', 'get', 'extend']
 
-export function Store(methods=[]) {
+export function Store(methods = []) {
   for (const method of methods) {
     if (avoid.indexOf(method[0]) !== -1) {
       console.log(`WARNING: You can't squat ${method[0]}in the store`)
@@ -96,8 +96,8 @@ Store.prototype.unset = function (path) {
 }
 
 /** Retrieve a key */
-Store.prototype.get = function (path) {
-  const val = get(this, path)
+Store.prototype.get = function (path, dflt) {
+  const val = get(this, path, dflt)
   if (typeof val === 'undefined') {
     this.log.warning(`Store.get(key) on key \`${path}\`, which is undefined`)
   }

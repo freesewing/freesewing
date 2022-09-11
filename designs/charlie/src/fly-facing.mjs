@@ -1,9 +1,16 @@
 import { front } from './front.mjs'
 
-function draftCharlieFlyFacing (part) {
-  // Shorthand
-  let { points, Point, paths, Path, complete, macro, snippets, sa } = part.shorthand()
-
+function draftCharlieFlyFacing({
+  points,
+  Point,
+  paths,
+  Path,
+  complete,
+  macro,
+  snippets,
+  sa,
+  part,
+}) {
   // Clean up
   for (let id in paths) delete paths[id]
   for (let id in snippets) delete snippets[id]

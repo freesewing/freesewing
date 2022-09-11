@@ -5,8 +5,8 @@ import { draftFrontLeftSeamless } from './frontleft-seamless.mjs'
 import { front } from './front.mjs'
 import { buttonholePlacketStyle } from './options.mjs'
 
-function simonFrontLeft(part) {
-  const { sa, options, complete, paperless, points, macro } = part.shorthand()
+function simonFrontLeft(params) {
+  const { sa, options, complete, paperless, points, macro, part } = params
 
   if (complete && paperless) {
     frontDimensions(part, 'left')
@@ -17,11 +17,11 @@ function simonFrontLeft(part) {
     })
   }
   if (options.seperateButtonholePlacket) {
-    return draftFrontLeftClassicSeperate(part)
+    return draftFrontLeftClassicSeperate(params)
   } else if (options.buttonholePlacketStyle === 'seamless') {
-    return draftFrontLeftSeamless(part)
+    return draftFrontLeftSeamless(params)
   } else if (options.buttonholePlacketStyle === 'classic') {
-    return draftFrontLeftClassicCuton(part)
+    return draftFrontLeftClassicCuton(params)
   } else {
     throw `Unexpected buttonholePlacketStyle: ${options.buttonholePlacketStyle}`
   }

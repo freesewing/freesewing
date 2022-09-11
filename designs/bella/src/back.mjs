@@ -49,24 +49,23 @@ export const back = {
     frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced' },
     highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced' },
   },
-  plugins: [ pluginBundle ],
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      utils,
-      measurements,
-      raise,
-    } = part.shorthand()
-
+  plugins: [pluginBundle],
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    utils,
+    measurements,
+    log,
+    part,
+  }) => {
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
     points.hps = new Point(measurements.neck * options.neckWidthBack, 0)
@@ -107,7 +106,10 @@ export const back = {
       (reduction * (1 - options.backCenterWaistReduction * 0.5)) / 2
     )
     points.dartBottomRight = points.dartBottomLeft.rotate(180, points.dartBottomCenter)
-    points.dartLeftCp = points.dartBottomLeft.shift(90, points.dartTip.dy(points.dartBottomLeft) / 2)
+    points.dartLeftCp = points.dartBottomLeft.shift(
+      90,
+      points.dartTip.dy(points.dartBottomLeft) / 2
+    )
     points.dartRightCp = new Point(points.dartBottomRight.x, points.dartLeftCp.y)
     // Find out location of the armhole
     let armholeDepth = measurements.hpsToWaistBack * options.armholeDepth + points.shoulder.y
@@ -171,7 +173,7 @@ export const back = {
       points.waistCenter,
       measurements.hpsToBust
     )
-    if (!points.bustCenter) raise.error('Could not find bust height in center seam of back part')
+    if (!points.bustCenter) log.error('Could not find bust height in center seam of back part')
     if (points.bustCenter.y < points.armhole.y) {
       points.sideArmhole = points.armhole.clone()
       let sideArmholeTemp = new Path()
@@ -193,7 +195,7 @@ export const back = {
         measurements.hpsToBust
       )
     }
-    if (!points.bustSide) raise.error('Could not find bust height in side seam of back part')
+    if (!points.bustSide) log.error('Could not find bust height in side seam of back part')
     if (points.bustCenter.y < points.dartTip.y) {
       points.bustDartLeft = points.bustCenter.clone()
       points.bustDartLeft.x = points.dartTip.x
@@ -206,7 +208,7 @@ export const back = {
         measurements.hpsToBust
       )
     }
-    if (!points.bustDartLeft) raise.error('Could not find bust height in back dart')
+    if (!points.bustDartLeft) log.error('Could not find bust height in back dart')
     points.bustDartRight = points.bustDartLeft.flipX(points.dartTip)
     // Store things we'll need in the front parts
     store.set(
@@ -366,6 +368,5 @@ export const back = {
     }
 
     return part
-  }
+  },
 }
-

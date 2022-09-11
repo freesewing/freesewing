@@ -13,28 +13,27 @@ import {
   ribbingHeight,
 } from './options.mjs'
 
-function hugoFront(part) {
+function hugoFront({
+  utils,
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   // Remove clutter
-  const seam = part.paths.seam
-  part.paths = {}
-  part.paths.seam = seam
-
-  const {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
+  const seam = paths.seam
+  paths = {}
+  paths.seam = seam
 
   // Remove notch inherited from Brian
   delete snippets.armholePitchNotch
@@ -89,15 +88,17 @@ function hugoFront(part) {
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .line(points.raglanTipFront)
     .join(neckOpeningParts[0].reverse())
+  paths.saBase.render = false
   paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
+  // FIXME: This pocket path is not getting set on the paths object
+  // It's something to do with the paths proxy which -- I assume -- is proxying the wrong object?
   paths.pocket = new Path()
     .move(points.pocketHem)
     .line(points.pocketTip)
     .curve(points.pocketTip, points.pocketTopCp, points.pocketTop)
     .line(points.pocketCf)
     .attr('class', 'fabric help')
-  paths.saBase.render = false
-  paths.pocket.render = false
+    .setRender(false)
   // Store shoulder seam length, neck opening path, shoulder slope and raglan length
   store.set('shoulderLength', points.neck.dist(points.shoulder))
   store.set('neckOpeningPartFront', neckOpeningParts[1])
@@ -116,7 +117,7 @@ function hugoFront(part) {
 
   // Complete pattern?
   if (complete) {
-    paths.pocket.render = true
+    //paths.pocket.setRender(true)
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfRibbing,
@@ -194,6 +195,7 @@ function hugoFront(part) {
 export const front = {
   name: 'hugo.front',
   from: brianFront,
+  hideDependencies: true,
   measurements: ['hips', 'waistToHips'],
   options: {
     collarEase,

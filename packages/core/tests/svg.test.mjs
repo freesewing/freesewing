@@ -1,282 +1,282 @@
-import chai from "chai"
-import chaiString from "chai-string"
-import { Pattern } from "./dist/index.mjs"
+import chai from 'chai'
+import chaiString from 'chai-string'
+import { Design, Pattern } from '../src/index.mjs'
 import pkg from '../package.json' assert { type: 'json' }
-import render from "./fixtures/render.mjs"
+import render from './fixtures/render.mjs'
 
 chai.use(chaiString)
 const expect = chai.expect
 const { version } = pkg
-
+/*
 describe('Svg', () => {
-  it("Svg constructor should initialize object", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    let svg = pattern.svg;
-    expect(svg.openGroups).to.eql([]);
-    expect(svg.freeId).to.equal(0);
-    expect(svg.body).to.equal("");
-    expect(svg.style).to.equal("")
-    expect(svg.script).to.equal("");
-    expect(svg.defs).to.equal("");
-    expect(svg.pattern).to.eql(pattern);
-    expect(svg.prefix).to.equal(
-      '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'
-    );
-    expect(svg.attributes.get("xmlns")).to.equal("http://www.w3.org/2000/svg");
-    expect(svg.attributes.get("xmlns:svg")).to.equal(
-      "http://www.w3.org/2000/svg"
-    );
-    expect(svg.attributes.get("xmlns:xlink")).to.equal(
-      "http://www.w3.org/1999/xlink"
-    );
-    expect(svg.attributes.get("xmlns:freesewing")).to.equal(
-      "http://freesewing.org/namespaces/freesewing"
-    );
-    expect(svg.attributes.get("freesewing")).to.equal(version);
-  });
+  const part = {
+    name: 'test',
+    draft: part => {
+      const { paths, Path, Point, points } = part.shorthand()
+      points.a = new Path()
+        .move(new Point(0, 0))
+        .line(new Point(0, 40))
+        .shiftFractionAlong()
+      return part
+    }
+  }
+  const design = new Design({ parts: [ part ] })
+  const pattern = new design()
 
-  it("Should render Svg boilerplate", () => {
-    let pattern = new Pattern();
-    expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate);
-  });
+  it('Svg constructor should initialize object', () => {
+    pattern.render()
+    let svg = pattern.svg
+    expect(svg.openGroups).to.eql([])
+    expect(svg.freeId).to.equal(0)
+    expect(svg.body).to.equal('')
+    expect(svg.style).to.equal('')
+    expect(svg.script).to.equal('')
+    expect(svg.defs).to.equal('')
+    expect(svg.pattern).to.eql(pattern)
+    expect(svg.prefix).to.equal('<?xml version="1.0" encoding="UTF-8" standalone="no"?>')
+    expect(svg.attributes.get('xmlns')).to.equal('http://www.w3.org/2000/svg')
+    expect(svg.attributes.get('xmlns:svg')).to.equal('http://www.w3.org/2000/svg')
+    expect(svg.attributes.get('xmlns:xlink')).to.equal('http://www.w3.org/1999/xlink')
+    expect(svg.attributes.get('xmlns:freesewing')).to.equal(
+      'http://freesewing.org/namespaces/freesewing'
+    )
+    expect(svg.attributes.get('freesewing')).to.equal(version)
+  })
 
-  it("Should render language attribute", () => {
-    let pattern = new Pattern();
-    pattern.settings.locale = "nl";
-    expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplateNl);
-  });
+  it('Should render Svg boilerplate', () => {
+    let pattern = new Pattern()
+    expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate)
+  })
 
-  it("Should render Svg boilerplate for embedding", () => {
-    let pattern = new Pattern();
-    pattern.settings.embed = true;
-    expect(pattern.render()).to.equalIgnoreSpaces(render.embed);
-  });
+  it('Should render language attribute', () => {
+    let pattern = new Pattern()
+    pattern.settings.locale = 'nl'
+    expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplateNl)
+  })
 
-  it("Should render Svg part boilerplate", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    expect(pattern.render()).to.equalIgnoreSpaces(render.part);
-    pattern.parts.test.render = false;
-    expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate);
-  });
+  it('Should render Svg boilerplate for embedding', () => {
+    let pattern = new Pattern()
+    pattern.settings.embed = true
+    expect(pattern.render()).to.equalIgnoreSpaces(render.embed)
+  })
 
-  it("Should render Svg path", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
+  it('Should render Svg part boilerplate', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    expect(pattern.render()).to.equalIgnoreSpaces(render.part)
+    pattern.parts.test.render = false
+    expect(pattern.render()).to.equalIgnoreSpaces(render.boilerplate)
+  })
+
+  it('Should render Svg path', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
     p.paths.test = new p.Path()
       .move(new p.Point(0, 0))
       .line(new p.Point(40, 20))
       .curve(new p.Point(12, 34), new p.Point(56, 78), new p.Point(21, 32))
       .close()
-      .attr("id", "something")
-      .attr("class", "freesewing");
-    expect(pattern.render()).to.equalIgnoreSpaces(render.path);
-  });
-  it("Should not render Svg path when render property is false", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
+      .attr('id', 'something')
+      .attr('class', 'freesewing')
+    expect(pattern.render()).to.equalIgnoreSpaces(render.path)
+  })
+  it('Should not render Svg path when render property is false', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
     p.paths.test = new p.Path()
       .move(new p.Point(0, 0))
       .line(new p.Point(40, 20))
       .curve(new p.Point(12, 34), new p.Point(56, 78), new p.Point(21, 32))
       .close()
-      .attr("id", "something")
-      .attr("class", "freesewing");
-    p.paths.test.render = false;
-    expect(pattern.render()).to.equalIgnoreSpaces(render.part);
-  });
+      .attr('id', 'something')
+      .attr('class', 'freesewing')
+    p.paths.test.render = false
+    expect(pattern.render()).to.equalIgnoreSpaces(render.part)
+  })
 
-  it("Should render Svg text", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
+  it('Should render Svg text', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
     p.points.test = new p.Point(20, 20)
-      .attr("data-text", "This is a test")
-      .attr("data-text-class", "text-lg");
-    p.points.other = new p.Point(10, 10).attr("data-text", "");
-    expect(pattern.render()).to.equalIgnoreSpaces(render.text);
-  });
+      .attr('data-text', 'This is a test')
+      .attr('data-text-class', 'text-lg')
+    p.points.other = new p.Point(10, 10).attr('data-text', '')
+    expect(pattern.render()).to.equalIgnoreSpaces(render.text)
+  })
 
-  it("Should render Svg multi-line text", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
+  it('Should render Svg multi-line text', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
     p.points.test = new p.Point(20, 20)
-      .attr("data-text", "This is a test\nwith text on\nmultiple lines")
-      .attr("data-text-class", "text-lg")
-      .attr("data-text-lineheight", 8);
-    expect(pattern.render()).to.equalIgnoreSpaces(render.multiText);
-  });
+      .attr('data-text', 'This is a test\nwith text on\nmultiple lines')
+      .attr('data-text-class', 'text-lg')
+      .attr('data-text-lineheight', 8)
+    expect(pattern.render()).to.equalIgnoreSpaces(render.multiText)
+  })
 
-  it("Should render Svg multi-line text with default lineheight", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
+  it('Should render Svg multi-line text with default lineheight', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
     p.points.test = new p.Point(20, 20)
-      .attr("data-text", "This is a test\nwith text on\nmultiple lines")
-      .attr("data-text-class", "text-lg");
-    expect(pattern.render()).to.equalIgnoreSpaces(render.multiTextDflt);
-  });
+      .attr('data-text', 'This is a test\nwith text on\nmultiple lines')
+      .attr('data-text-class', 'text-lg')
+    expect(pattern.render()).to.equalIgnoreSpaces(render.multiTextDflt)
+  })
 
-  it("Should not render text when there is none", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
-    p.points.test = new p.Point(20, 20);
-    expect(pattern.render()).to.equalIgnoreSpaces(render.part);
-  });
+  it('Should not render text when there is none', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
+    p.points.test = new p.Point(20, 20)
+    expect(pattern.render()).to.equalIgnoreSpaces(render.part)
+  })
 
-  it("Should render Svg text on path", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
+  it('Should render Svg text on path', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
     p.paths.test = new p.Path()
       .move(new p.Point(0, 0))
       .line(new p.Point(40, 20))
       .curve(new p.Point(12, 34), new p.Point(56, 78), new p.Point(21, 32))
       .close()
-      .attr("data-text", "This is another test")
-      .attr("data-text-class", "text-sm")
-      .attr("class", "freesewing");
-    expect(pattern.render()).to.equalIgnoreSpaces(render.textOnPath);
-  });
+      .attr('data-text', 'This is another test')
+      .attr('data-text-class', 'text-sm')
+      .attr('class', 'freesewing')
+    expect(pattern.render()).to.equalIgnoreSpaces(render.textOnPath)
+  })
 
-  it("Should render Svg text on path, center aligned", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
+  it('Should render Svg text on path, center aligned', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
     p.paths.test = new p.Path()
       .move(new p.Point(0, 0))
       .line(new p.Point(40, 20))
       .curve(new p.Point(12, 34), new p.Point(56, 78), new p.Point(21, 32))
       .close()
-      .attr("data-text", "This is another test")
-      .attr("data-text-class", "center")
-      .attr("class", "freesewing");
-    expect(pattern.render()).to.equalIgnoreSpaces(render.textOnPathCenter);
-  });
+      .attr('data-text', 'This is another test')
+      .attr('data-text-class', 'center')
+      .attr('class', 'freesewing')
+    expect(pattern.render()).to.equalIgnoreSpaces(render.textOnPathCenter)
+  })
 
-  it("Should render Svg text on path, right aligned", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
+  it('Should render Svg text on path, right aligned', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
     p.paths.test = new p.Path()
       .move(new p.Point(0, 0))
       .line(new p.Point(40, 20))
       .curve(new p.Point(12, 34), new p.Point(56, 78), new p.Point(21, 32))
       .close()
-      .attr("data-text", "This is another test")
-      .attr("data-text-class", "right")
-      .attr("class", "freesewing");
-    expect(pattern.render()).to.equalIgnoreSpaces(render.textOnPathRight);
-  });
+      .attr('data-text', 'This is another test')
+      .attr('data-text-class', 'right')
+      .attr('class', 'freesewing')
+    expect(pattern.render()).to.equalIgnoreSpaces(render.textOnPathRight)
+  })
 
-  it("Should render an Svg circle", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
-    p.points.test = new p.Point(20, 20).attr("data-circle", "50");
-    expect(pattern.render()).to.equalIgnoreSpaces(render.circle);
-  });
+  it('Should render an Svg circle', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
+    p.points.test = new p.Point(20, 20).attr('data-circle', '50')
+    expect(pattern.render()).to.equalIgnoreSpaces(render.circle)
+  })
 
-  it("Should render an Svg snippet", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
-    p.snippets.test = new p.Snippet(
-      "test",
-      new p.Point(20, 20),
-      "This is a snippet"
-    );
-    expect(pattern.render()).to.equalIgnoreSpaces(render.snippet);
-  });
+  it('Should render an Svg snippet', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
+    p.snippets.test = new p.Snippet('test', new p.Point(20, 20), 'This is a snippet')
+    expect(pattern.render()).to.equalIgnoreSpaces(render.snippet)
+  })
 
-  it("Should render a rotated Svg snippet", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
-    p.snippets.test = new p.Snippet(
-      "test",
-      new p.Point(20, 20),
-      "This is a snippet"
-    ).attr('data-rotate', 90)
-    expect(pattern.render()).to.equalIgnoreSpaces(render.rotatedSnippet);
-  });
+  it('Should render a rotated Svg snippet', () => {
+    let pattern = new Pattern()
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
+    p.snippets.test = new p.Snippet('test', new p.Point(20, 20), 'This is a snippet').attr(
+      'data-rotate',
+      90
+    )
+    expect(pattern.render()).to.equalIgnoreSpaces(render.rotatedSnippet)
+  })
 
-  it("Should replaced double quotes in Svg text", () => {
+  it('Should replaced double quotes in Svg text', () => {
     const pattern = new Pattern()
     pattern.render()
-    expect(
-      pattern.svg.escapeText('This is a "test" message')
-    ).to.equal('This is a &#8220;test&#8220; message')
-  });
+    expect(pattern.svg.escapeText('This is a "test" message')).to.equal(
+      'This is a &#8220;test&#8220; message'
+    )
+  })
 
-  it("Should scale an Svg snippet", () => {
-    let pattern = new Pattern();
-    pattern.render();
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
-    p.snippets.test = new p.Snippet(
-      "test",
-      new p.Point(20, 20),
-      "This is a snippet"
-    ).attr("data-scale", 2);
-    expect(pattern.render()).to.contain("scale(2)");
-  });
-
-  it("Should run preRender hook", () => {
-    let pattern = new Pattern();
-    pattern.on("preRender", svg => {
-      svg.attributes.set("data-hook", "preRender");
-    });
-    pattern.render();
-    expect(pattern.svg.attributes.get("data-hook")).to.equal("preRender");
-  });
-
-  it("Should run insertText hook", () => {
-    let pattern = new Pattern();
-    pattern.on("insertText", (locale, text) => {
-      return text.toUpperCase();
-    });
-    pattern.parts.test = new pattern.Part();
-    let p = pattern.parts.test;
-    p.points.test = new p.Point(20, 20)
-      .attr("data-text", "This is a test")
-      .attr("data-text-class", "text-lg");
-    expect(pattern.render()).to.contain("THIS IS A TEST");
-  });
-
-  it("Should run postRender hook", () => {
+  it('Should scale an Svg snippet', () => {
     let pattern = new Pattern()
-    pattern.on("postRender", svg => {
-      svg.svg = "test";
-    });
-    expect(pattern.render()).to.equal("test");
-  });
+    pattern.render()
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
+    p.snippets.test = new p.Snippet('test', new p.Point(20, 20), 'This is a snippet').attr(
+      'data-scale',
+      2
+    )
+    expect(pattern.render()).to.contain('scale(2)')
+  })
 
-  it("Should tab in and out", () => {
+  it('Should run preRender hook', () => {
+    let pattern = new Pattern()
+    pattern.on('preRender', (svg) => {
+      svg.attributes.set('data-hook', 'preRender')
+    })
+    pattern.render()
+    expect(pattern.svg.attributes.get('data-hook')).to.equal('preRender')
+  })
+
+  it('Should run insertText hook', () => {
+    let pattern = new Pattern()
+    pattern.on('insertText', (locale, text) => {
+      return text.toUpperCase()
+    })
+    pattern.parts.test = new pattern.Part()
+    let p = pattern.parts.test
+    p.points.test = new p.Point(20, 20)
+      .attr('data-text', 'This is a test')
+      .attr('data-text-class', 'text-lg')
+    expect(pattern.render()).to.contain('THIS IS A TEST')
+  })
+
+  it('Should run postRender hook', () => {
+    let pattern = new Pattern()
+    pattern.on('postRender', (svg) => {
+      svg.svg = 'test'
+    })
+    expect(pattern.render()).to.equal('test')
+  })
+
+  it('Should tab in and out', () => {
     let pattern = new Pattern()
     pattern.render()
     const svg = pattern.svg
     svg.tabs = 2
     expect(svg.tab()).to.equal('    ')
-  });
-});
-
-
+  })
+})
+*/

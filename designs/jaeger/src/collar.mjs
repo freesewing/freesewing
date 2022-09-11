@@ -8,10 +8,19 @@ import { collarRoll } from './options.mjs'
  * experience, or more tailoring exprience.
  */
 
-function jaegerCollar(part) {
-  const { paperless, sa, snippets, complete, points, options, macro, paths, Path, store } =
-    part.shorthand()
-
+function jaegerCollar({
+  paperless,
+  sa,
+  snippets,
+  complete,
+  points,
+  options,
+  macro,
+  paths,
+  Path,
+  store,
+  part,
+}) {
   // Add extra fabric for collar roll
   store.set('collarRoll', points.collarstandCbTop.dist(points.collarCbTop) * options.collarRoll)
   points.collarCbTopRoll = points.collarCbTop.shift(-90, store.get('collarRoll'))

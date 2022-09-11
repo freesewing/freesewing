@@ -1,9 +1,19 @@
 import { front } from './front.mjs'
 
-function draftCorneliusZipperguard (part) {
-  let { Point, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
-    part.shorthand()
-
+function draftCorneliusZipperguard({
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   const cc = 0.551915024494 // circle constant
 
   let halfInch = store.get('halfInch')

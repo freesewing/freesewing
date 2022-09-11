@@ -12,7 +12,7 @@ import { sleeveCap } from './sleevecap.mjs'
 // Create design
 const Breanna = new Design({
   data,
-  parts: [ back, front, sleeve ]
+  parts: [back, front, sleeve],
 })
 
 // Named exports

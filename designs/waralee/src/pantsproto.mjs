@@ -1,8 +1,16 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import * as options from './options.mjs'
 
-function waraleePantsProto(part) {
-  const { options, measurements, Point, Path, points, paths, store } = part.shorthand()
+function waraleePantsProto({
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  store,
+  part,
+}) {
 
   let seatDepth =
     measurements.crotchDepth /* - measurements.waistToHips */ *

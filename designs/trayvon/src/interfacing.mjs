@@ -1,12 +1,11 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { draftTieShape, tieShapeDimensions, calculateHelpers, options } from './shared.mjs'
 
-function trayvonInterfacingTail(part) {
-  const { paths, points, macro, complete, paperless, Path, store, absoluteOptions } =
-    part.shorthand()
+function trayvonInterfacingTail(params) {
+  const { paths, points, macro, complete, paperless, Path, store, absoluteOptions } = params
 
-  calculateHelpers(part)
-  draftTieShape(part, store.get('backTip'), absoluteOptions.knotWidth)
+  calculateHelpers(params)
+  draftTieShape(params, store.get('backTip'), absoluteOptions.knotWidth)
   paths.seam.attributes.add('class', 'interfacing')
 
   // Complete pattern?
@@ -21,7 +20,7 @@ function trayvonInterfacingTail(part) {
 
   // Paperless?
   if (paperless) {
-    tieShapeDimensions(part)
+    tieShapeDimensions(params)
     paths.n45 = new Path()
       .move(points.midLeft)
       .line(points.midRight)
@@ -30,14 +29,14 @@ function trayvonInterfacingTail(part) {
       .attr('data-text-class', 'center')
   }
 
-  return part
+  return params.part
 }
 
-function trayvonInterfacingTip(part) {
-  let { paths, points, macro, complete, paperless, Path, absoluteOptions } = part.shorthand()
+function trayvonInterfacingTip(params) {
+  const { paths, points, macro, complete, paperless, Path, absoluteOptions } = params
 
-  calculateHelpers(part)
-  draftTieShape(part, absoluteOptions.tipWidth, absoluteOptions.knotWidth)
+  calculateHelpers(params)
+  draftTieShape(params, absoluteOptions.tipWidth, absoluteOptions.knotWidth)
   paths.seam.attributes.add('class', 'interfacing')
 
   // Complete pattern?
@@ -61,20 +60,20 @@ function trayvonInterfacingTip(part) {
       .attr('data-text-class', 'center')
   }
 
-  return part
+  return params.part
 }
 
 export const interfacingTail = {
   name: 'trayvon.interfacingTail',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: trayvonInterfacingTail,
 }
 export const interfacingTip = {
   name: 'trayvon.interfacingTip',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: trayvonInterfacingTip,
 }

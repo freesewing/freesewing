@@ -19,23 +19,23 @@ export const bandTie = {
     bandTieEnds: { dflt: 'straight', list: ['straight', 'pointed'], menu: 'style' },
     bandTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
   },
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      measurements,
-      snippets,
-      Snippet,
-      absoluteOptions,
-    } = part.shorthand()
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    measurements,
+    snippets,
+    Snippet,
+    absoluteOptions,
+    part,
+  }) => {
     // band tie
     if (!options.ties) {
       if (!options.crossBackTies) {
@@ -45,7 +45,8 @@ export const bandTie = {
     let bandTieLength
     if (options.crossBackTies)
       bandTieLength = (measurements.underbust * options.bandLength) / 2 + options.neckTieWidth * 2
-    else bandTieLength = (measurements.underbust + measurements.underbust * options.bandTieLength) / 2
+    else
+      bandTieLength = (measurements.underbust + measurements.underbust * options.bandTieLength) / 2
     let bandTieWidth
     if (options.crossBackTies) bandTieWidth = absoluteOptions.bandTieWidth * 2
     else bandTieWidth = absoluteOptions.bandTieWidth
@@ -86,7 +87,10 @@ export const bandTie = {
 
     if (complete) {
       points.cofLeft = points.bottomLeft.shift(0, bandTieWidth * (1 / 8))
-      points.grainlineLeft = points.topLeft.translate(bandTieWidth * (1 / 8), bandTieLength * (3 / 4))
+      points.grainlineLeft = points.topLeft.translate(
+        bandTieWidth * (1 / 8),
+        bandTieLength * (3 / 4)
+      )
       points.title = points.topLeft.translate(bandTieWidth * (1 / 8), bandTieLength * (1 / 4))
       if (!options.crossBackTies) {
         macro('title', {
@@ -201,6 +205,5 @@ export const bandTie = {
     }
 
     return part
-  }
+  },
 }
-

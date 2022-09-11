@@ -1,22 +1,22 @@
 import { front as brianFront } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 
-function yuriFront(part) {
-  const {
-    store,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    sa,
-    options,
-    measurements,
-    macro,
-    snippets,
-    Snippet,
-  } = part.shorthand()
+function yuriFront({
+  store,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  paperless,
+  sa,
+  options,
+  measurements,
+  macro,
+  snippets,
+  Snippet,
+  part,
+}) {
 
   // Clear paths from Brian
   for (const i in paths) {

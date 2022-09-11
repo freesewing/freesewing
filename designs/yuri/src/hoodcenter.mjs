@@ -1,8 +1,18 @@
 import { hoodSide } from './hoodside.mjs'
 
-function yuriHoodCenter(part) {
-  const { store, sa, Point, points, Path, paths, complete, paperless, macro, units } =
-    part.shorthand()
+function yuriHoodCenter({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  units,
+  part,
+}) {
 
   const width = store.get('hoodCenterWidth')
   const length = complete ? width * 2.5 : store.get('hoodCenterLength')

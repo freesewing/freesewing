@@ -1,7 +1,17 @@
-export const draftFrontLeftClassicSeperate = (part) => {
-  const { utils, sa, Point, points, Path, paths, store, snippets, complete, paperless, macro } =
-    part.shorthand()
-
+export const draftFrontLeftClassicSeperate = ({
+  utils,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  store,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  part,
+}) => {
   const fold = store.get('buttonholePlacketFoldWidth')
   points.neckEdge = utils.lineIntersectsCurve(
     new Point(points.cfNeck.x + fold * 2, points.cfNeck.y + 20),

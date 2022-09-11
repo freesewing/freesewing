@@ -102,4 +102,3 @@ Attributes.prototype.clone = function () {
 
   return clone
 }
-

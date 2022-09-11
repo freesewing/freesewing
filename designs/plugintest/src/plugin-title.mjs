@@ -1,9 +1,7 @@
 import { titlePlugin } from '@freesewing/plugin-title'
 import { base } from './base.mjs'
 
-const pluginTitle = (part) => {
-  const { points, Point, paths, Path, macro, options } = part.shorthand()
-
+const pluginTitle = ({ points, Point, paths, Path, macro, options, part }) => {
   if (['title', 'all'].indexOf(options.plugin) !== -1) {
     if (options.titleMeta) part.context.settings.metadata = { for: 'Some user' }
     points.a = new Point(20, 0)

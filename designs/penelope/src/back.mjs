@@ -1,11 +1,10 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { measurements, options, BuildMainShape } from './shape.mjs'
 
-function penelopeBack(part) {
+function penelopeBack(params) {
   const {
     options,
     measurements,
-    /*Point,*/
     Path,
     points,
     paths,
@@ -16,9 +15,10 @@ function penelopeBack(part) {
     sa,
     paperless,
     macro,
-  } = part.shorthand()
+    part,
+  } = params
 
-  BuildMainShape(part, false)
+  BuildMainShape(params, false)
 
   if (options.backVent == true) {
     // I don't care what you're trying to create, the vent will not go higher than your hips.
@@ -140,6 +140,6 @@ export const back = {
   name: 'penelope.back',
   measurements,
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: penelopeBack,
 }

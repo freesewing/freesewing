@@ -1,21 +1,21 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleeWaistband(type, part) {
-  const {
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    sa,
-    store,
-  } = part.shorthand()
+function waraleeWaistband(type, {
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  sa,
+  store,
+  part,
+}) {
 
   const WidthReduction = 6
   let waistBand = store.get('waistBand')

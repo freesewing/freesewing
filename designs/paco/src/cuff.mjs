@@ -1,8 +1,18 @@
 import { front } from './front.mjs'
 
-function pacoCuff(part) {
-  const { store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
-    part.shorthand()
+function pacoCuff({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   if (!options.elasticatedHem) {
     part.render = false
     return part

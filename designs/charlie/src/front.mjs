@@ -2,7 +2,23 @@ import { elastics } from '@freesewing/snapseries'
 import { pctBasedOn } from '@freesewing/core'
 import { front as titanFront } from '@freesewing/titan'
 
-function draftCharlieFront (part) {
+function draftCharlieFront({
+  points,
+  Point,
+  paths,
+  Path,
+  options,
+  complete,
+  paperless,
+  store,
+  macro,
+  utils,
+  snippets,
+  Snippet,
+  sa,
+  log,
+  part,
+}) {
   // Helper method to draw the outseam path
   const drawOutseam = () =>
     new Path()
@@ -22,24 +38,6 @@ function draftCharlieFront (part) {
       .line(points.slantTop)
       .join(outseam)
   }
-
-  // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    utils,
-    snippets,
-    Snippet,
-    sa,
-    raise,
-  } = part.shorthand()
 
   // Helper object holding the Titan side seam path
   const sideSeam =
@@ -61,7 +59,7 @@ function draftCharlieFront (part) {
     points.cfSeat.shiftFractionTowards(points.crotchSeamCurveCp2, options.flyLength).y
   )
   if (flyBottom) points.flyBottom = flyBottom
-  else raise.error('Unable to locate the fly bottom. This draft will fail.')
+  else log.error('Unable to locate the fly bottom. This draft will fail.')
 
   points.flyBottom = utils.curveIntersectsY(
     points.crotchSeamCurveStart,
@@ -388,8 +386,14 @@ export const front = {
 
     // Style (from Titan)
     waistHeight: { pct: -4, min: -15, max: 40, menu: 'style' },
-    waistbandWidth: { pct: 3, min: 1, max: 6, snap: elastics,
-      ...pctBasedOn('waistToFloor'), menu: 'style' },
+    waistbandWidth: {
+      pct: 3,
+      min: 1,
+      max: 6,
+      snap: elastics,
+      ...pctBasedOn('waistToFloor'),
+      menu: 'style',
+    },
     //waistbandWidth: { pct: 3.5, min: 2, max: 5 },
     lengthBonus: { pct: 2, min: -20, max: 10, menu: 'style' },
     crotchDrop: { pct: 2, min: 0, max: 15, menu: 'style' },
@@ -406,28 +410,18 @@ export const front = {
     waistBalance: { pct: 55, min: 30, max: 90, menu: 'advanced' },
 
     // Front pockets
-    frontPocketSlantDepth: { pct: 85, min: 70, max: 100,
-      menu: 'pockets.frontpockets' },
-    frontPocketSlantWidth: { pct: 25, min: 15, max: 35,
-      menu: 'pockets.frontpockets' },
-    frontPocketSlantRound: { pct: 30, min: 5, max: 50,
-      menu: 'pockets.frontpockets' },
-    frontPocketSlantBend: { pct: 25, min: 5, max: 50,
-      menu: 'pockets.frontpockets' },
-    frontPocketWidth: { pct: 55, min: 45, max: 65,
-      menu: 'pockets.frontpockets' },
-    frontPocketDepth: { pct: 100, min: 85, max: 110,
-      menu: 'pockets.frontpockets' },
-    frontPocketFacing: { pct: 45, min: 25, max: 65,
-      menu: 'pockets.frontpockets' },
+    frontPocketSlantDepth: { pct: 85, min: 70, max: 100, menu: 'pockets.frontpockets' },
+    frontPocketSlantWidth: { pct: 25, min: 15, max: 35, menu: 'pockets.frontpockets' },
+    frontPocketSlantRound: { pct: 30, min: 5, max: 50, menu: 'pockets.frontpockets' },
+    frontPocketSlantBend: { pct: 25, min: 5, max: 50, menu: 'pockets.frontpockets' },
+    frontPocketWidth: { pct: 55, min: 45, max: 65, menu: 'pockets.frontpockets' },
+    frontPocketDepth: { pct: 100, min: 85, max: 110, menu: 'pockets.frontpockets' },
+    frontPocketFacing: { pct: 45, min: 25, max: 65, menu: 'pockets.frontpockets' },
 
     // Fly
-    flyCurve: { pct: 72, min: 50, max: 100,
-      menu: 'advanced.fly' },
-    flyLength: { pct: 45, min: 30, max: 60,
-      menu: 'advanced.fly' },
-    flyWidth: { pct: 15, min: 10, max: 20,
-      menu: 'advanced.fly' },
+    flyCurve: { pct: 72, min: 50, max: 100, menu: 'advanced.fly' },
+    flyLength: { pct: 45, min: 30, max: 60, menu: 'advanced.fly' },
+    flyWidth: { pct: 15, min: 10, max: 20, menu: 'advanced.fly' },
   },
   draft: draftCharlieFront,
 }

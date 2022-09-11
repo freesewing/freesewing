@@ -1,9 +1,7 @@
 import { cutonfoldPlugin } from '@freesewing/plugin-cutonfold'
 import { base } from './base.mjs'
 
-const pluginCutonfold = (part) => {
-  const { points, Point, paths, Path, options, macro } = part.shorthand()
-
+const pluginCutonfold = ({ points, Point, paths, Path, options, macro, part }) => {
   if (['cutonfold', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(0, 0)
     points.b = new Point(200, 0)

@@ -2,7 +2,6 @@ import { Design } from '@freesewing/core'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { gorePlugin } from '@freesewing/plugin-gore'
 import { data } from '../data.mjs'
-import config from '../config/'
 
 // Path API
 import {
@@ -68,7 +67,7 @@ import {
   utils_curvesintersect,
   utils_pointonbeam,
   utils_pointonline,
-  utils_pointoncurve ,
+  utils_pointoncurve,
   utils_circlesintersect,
   utils_beamintersectscircle,
   utils_lineintersectscircle,
@@ -116,12 +115,10 @@ import { settings_sa } from './settings.mjs'
 // Docs illustrations
 import { docs_coords, docs_overview } from './docs.mjs'
 
-
 // Setup our new design
 const Examples = new Design({
   data,
   parts: [
-
     // Path API
     path__curve,
     path_attr,
@@ -183,7 +180,7 @@ const Examples = new Design({
     utils_curvesintersect,
     utils_pointonbeam,
     utils_pointonline,
-    utils_pointoncurve ,
+    utils_pointoncurve,
     utils_circlesintersect,
     utils_beamintersectscircle,
     utils_lineintersectscircle,
@@ -220,7 +217,7 @@ const Examples = new Design({
     snippet_snapstud,
     snippet_logo,
   ],
-  plugins: [ pluginBundle, gorePlugin ],
+  plugins: [pluginBundle, gorePlugin],
 })
 
 // Named exports
@@ -286,7 +283,7 @@ export {
   utils_curvesintersect,
   utils_pointonbeam,
   utils_pointonline,
-  utils_pointoncurve ,
+  utils_pointoncurve,
   utils_circlesintersect,
   utils_beamintersectscircle,
   utils_lineintersectscircle,
@@ -322,6 +319,5 @@ export {
   snippet_snapsocket,
   snippet_snapstud,
   snippet_logo,
-  Examples
+  Examples,
 }
-

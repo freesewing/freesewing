@@ -38,10 +38,10 @@ frontArmholeCurvature:
   title: Front armhole curvature
   description: Controls how deep the armhole is scooped out at the front bottom
 frontArmholePitchDepth:
-  description: Controls how deep the armhole curts into the front
+  description: Controls how deep the armhole cuts into the front
   title: Front armhole pitch depth
 backArmholePitchDepth:
-  description: Controls how deep the armhole curts into the back
+  description: Controls how deep the armhole cuts into the back
   title: Back armhole pitch depth
 backNeckCutout:
   description: Controls how deep the neck is cutout in the back
@@ -53,9 +53,9 @@ frontShoulderWidth:
   description: Controls how much width is added to the shoulder in the front
   title: Front shoulder width
 highBustWidth:
-  description: Controls the widht of the high bust
-  title: Hight bust width
+  description: Controls the width of the high bust
+  title: High bust width
 shoulderToShoulderEase:
-  description: Controls the amount of ease long the shoulder to shoulder measurement
+  description: Controls the amount of ease along the shoulder to shoulder measurement
   title: Shoulder to shoulder ease
 

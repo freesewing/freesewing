@@ -1,9 +1,18 @@
 import { front } from './front.mjs'
 
-function draftCarltonPocketFlap (part) {
-  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarltonPocketFlap({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(store.get('pocketWidth'), store.get('pocketFlapHeight'))
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)

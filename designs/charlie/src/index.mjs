@@ -19,16 +19,36 @@ import { beltLoops } from './beltloops.mjs'
 const Charlie = new Design({
   data,
   parts: [
-    front, back, waistband, waistbandCurved, frontPocket, frontPocketFacing,
-    backPocket, backPocketFacing, backPocketInterfacing, backPocketWelt,
-    flyFacing, flyExtension, beltLoops,
+    front,
+    back,
+    waistband,
+    waistbandCurved,
+    frontPocket,
+    frontPocketFacing,
+    backPocket,
+    backPocketFacing,
+    backPocketInterfacing,
+    backPocketWelt,
+    flyFacing,
+    flyExtension,
+    beltLoops,
   ],
 })
 
 // Named exports
 export {
-  front, back, waistband, waistbandCurved, frontPocket, frontPocketFacing,
-  backPocket, backPocketFacing, backPocketInterfacing, backPocketWelt,
-  flyFacing, flyExtension, beltLoops,
+  front,
+  back,
+  waistband,
+  waistbandCurved,
+  frontPocket,
+  frontPocketFacing,
+  backPocket,
+  backPocketFacing,
+  backPocketInterfacing,
+  backPocketWelt,
+  flyFacing,
+  flyExtension,
+  beltLoops,
   Charlie,
 }

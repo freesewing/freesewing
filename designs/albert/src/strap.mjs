@@ -7,22 +7,21 @@ export const strap = {
     chestDepth: { pct: 22, min: 15, max: 90, menu: 'fit' },
     strapWidth: { pct: 60, min: 20, max: 100, menu: 'style' },
   },
-  draft: part => {
-    const {
-      options,
-      measurements,
-      Point,
-      Path,
-      points,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      sa,
-      paperless,
-      macro,
-    } = part.shorthand()
-
+  draft: ({
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    sa,
+    paperless,
+    macro,
+    part,
+  }) => {
     let chestWidth = measurements.chest / 4
     let bibWidth = chestWidth * options.bibWidth
     /*
@@ -137,5 +136,5 @@ export const strap = {
     }
 
     return part
-  }
+  },
 }

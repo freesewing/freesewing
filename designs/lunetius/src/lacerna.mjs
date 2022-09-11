@@ -1,23 +1,22 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function lunetiusLacerna(part) {
-  const {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    sa,
-    paperless,
-    store,
-    utils,
-  } = part.shorthand()
-
+function lunetiusLacerna({
+  Point,
+  points,
+  Path,
+  paths,
+  measurements,
+  options,
+  macro,
+  complete,
+  snippets,
+  Snippet,
+  sa,
+  paperless,
+  store,
+  utils,
+  part,
+}) {
   // Store length and width
   store.set(
     'length',

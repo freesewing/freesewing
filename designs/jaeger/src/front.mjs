@@ -27,24 +27,23 @@ import {
   lapelReduction,
 } from './options.mjs'
 
-function jaegerFront(part) {
-  const {
-    paperless,
-    sa,
-    snippets,
-    Snippet,
-    utils,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
-
+function jaegerFront({
+  paperless,
+  sa,
+  snippets,
+  Snippet,
+  utils,
+  store,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   // Front closure overlap
   points.neckEdge = points.cfNeck.shift(180, measurements.chest * options.frontOverlap)
   points.hemEdge = new Point(points.neckEdge.x, points.cfHem.y)

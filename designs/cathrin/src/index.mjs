@@ -14,13 +14,8 @@ import { panels } from './panels.mjs'
 // Create design
 const Cathrin = new Design({
   data,
-  parts: [
-    panel1, panel2, panel3, panel4, panel5, panel6,
-  ],
+  parts: [panel1, panel2, panel3, panel4, panel5, panel6],
 })
 
 // Named exports
-export {
-  base, panels, panel1, panel2, panel3, panel4, panel5, panel6,
-  Cathrin,
-}
+export { base, panels, panel1, panel2, panel3, panel4, panel5, panel6, Cathrin }

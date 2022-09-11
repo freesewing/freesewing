@@ -1,24 +1,23 @@
 import { pluginBust } from '@freesewing/plugin-bust'
 import { front as carltonFront } from '@freesewing/carlton'
 
-function draftCarlitaFront (part) {
-  let {
-    paperless,
-    sa,
-    snippets,
-    Snippet,
-    utils,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
-
+function draftCarlitaFront({
+  paperless,
+  sa,
+  snippets,
+  Snippet,
+  utils,
+  store,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   /**
    * we're adding half of the proportionate amount of chest east for the bust span
    * Only half because this is not where ease is needed or pools
@@ -503,12 +502,8 @@ export const front = {
   name: 'carlita.front',
   from: carltonFront,
   hideDependencies: true,
-  measurements: [
-    'highBust',
-    'bustSpan',
-    'hpsToBust',
-  ],
-  plugins: [ pluginBust ],
+  measurements: ['highBust', 'bustSpan', 'hpsToBust'],
+  plugins: [pluginBust],
   options: {
     draftForHighBust: { bool: true, hide: () => true },
     contour: { pct: 50, min: 25, max: 75, menu: 'advanced' },

@@ -34,7 +34,7 @@ import {
   Bezier,
   generatePartTransform,
   macroName,
-} from "./utils.mjs"
+} from './utils.mjs'
 import { version } from '../data.mjs'
 
 // Named exports
@@ -46,7 +46,6 @@ export {
   Path,
   Snippet,
   Store,
-
   Bezier,
   capitalize,
   beamsIntersect,
@@ -75,7 +74,5 @@ export {
   generatePartTransform,
   macroName,
   isCoord,
-
   version,
 }
-

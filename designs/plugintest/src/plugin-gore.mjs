@@ -1,9 +1,7 @@
 import { gorePlugin } from '@freesewing/plugin-gore'
 import { base } from './base.mjs'
 
-const pluginGore = (part) => {
-  const { points, Point, options, macro } = part.shorthand()
-
+const pluginGore = ({ points, Point, options, macro, part }) => {
   if (['gore', 'all'].indexOf(options.plugin) !== -1) {
     points.start = new Point(10, 10)
     macro('gore', {

@@ -1,9 +1,18 @@
 import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
 
-function draftCarltonCuffFacing (part) {
-  let { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
-
+function draftCarltonCuffFacing({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('topCuffWidth') + store.get('underCuffWidth'),
@@ -81,6 +90,6 @@ function draftCarltonCuffFacing (part) {
 
 export const cuffFacing = {
   name: 'carlton.cuffFacing',
-  after: [ topSleeve, underSleeve ],
+  after: [topSleeve, underSleeve],
   draft: draftCarltonCuffFacing,
 }

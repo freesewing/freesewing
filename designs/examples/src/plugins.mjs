@@ -2,9 +2,7 @@ import { box } from './shared.mjs'
 
 export const plugin_banner = {
   name: 'examples.plugin_banner',
-  draft: part => {
-    const { points, Point, paths, Path, macro } = part.shorthand()
-
+  draft: ({ points, Point, paths, Path, macro, part }) => {
     points.from = new Point(0, 0)
     points.to = new Point(320, 0)
 
@@ -19,15 +17,12 @@ export const plugin_banner = {
     paths.box = new Path().move(new Point(0, -20)).line(new Point(0, 20)).attr('class', 'hidden')
 
     return part
-  }
+  },
 }
-
 
 export const plugin_bartack = {
   name: 'examples.plugin_bartack',
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     points.a = new Point(15, 15)
 
     macro('bartack', {
@@ -37,14 +32,12 @@ export const plugin_bartack = {
     })
 
     return box(part, 60, 30)
-  }
+  },
 }
 
 export const plugin_bartackalong = {
   name: 'examples.plugin_bartackalong',
-  draft: part => {
-    const { Point, Path, points, paths, macro } = part.shorthand()
-
+  draft: ({ Point, Path, points, paths, macro, part }) => {
     points.a = new Point(15, 15)
     points.b = new Point(20, 20)
     points.c = new Point(30, 20)
@@ -64,14 +57,12 @@ export const plugin_bartackalong = {
     })
 
     return box(part, 60, 30)
-  }
+  },
 }
 
 export const plugin_bartackfractionalong = {
   name: 'examples.plugin_bartackfractionalong',
-  draft: part => {
-    const { Point, Path, points, paths, macro } = part.shorthand()
-
+  draft: ({ Point, Path, points, paths, macro, part }) => {
     points.a = new Point(15, 15)
     points.b = new Point(20, 20)
     points.c = new Point(30, 20)
@@ -93,14 +84,12 @@ export const plugin_bartackfractionalong = {
     })
 
     return box(part, 60, 30)
-  }
+  },
 }
 
 export const plugin_buttons = {
   name: 'examples.plugin_buttons',
-  draft: part => {
-    const { Point, snippets, Snippet } = part.shorthand()
-
+  draft: ({ Point, snippets, Snippet, part }) => {
     snippets.button = new Snippet('button', new Point(20, 10))
     snippets.buttonhole = new Snippet('buttonhole', new Point(40, 10))
     snippets.buttonholeStart = new Snippet('buttonhole-start', new Point(60, 10))
@@ -109,14 +98,12 @@ export const plugin_buttons = {
     snippets.snapFemale = new Snippet('snap-socket', new Point(120, 10))
 
     return box(part, 140, 20)
-  }
+  },
 }
 
 export const plugin_cutonfold = {
   name: 'examples.plugin_cutonfold',
-  draft: part => {
-    const { Point, points, Path, paths, macro } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, macro, part }) => {
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(150, 0)
     points.bottomRight = new Point(150, 30)
@@ -136,14 +123,12 @@ export const plugin_cutonfold = {
     })
 
     return part
-  }
+  },
 }
 
 export const plugin_dimension = {
   name: 'examples.plugin_dimension',
-  draft: part => {
-    const { Point, points, Path, paths, macro } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, macro, part }) => {
     points.A = new Point(0, 0)
     points.B = new Point(0, 100)
     points.C = new Point(50, 100)
@@ -189,14 +174,12 @@ export const plugin_dimension = {
     })
 
     return part
-  }
+  },
 }
 
 export const plugin_gore = {
   name: 'examples.plugin_gore',
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     points.anchor = new Point(0, 0)
 
     macro('gore', {
@@ -208,14 +191,12 @@ export const plugin_gore = {
     })
 
     return part
-  }
+  },
 }
 
 export const plugin_grainline = {
   name: 'examples.plugin_grainline',
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     points.grainlineFrom = new Point(10, 10)
     points.grainlineTo = new Point(100, 10)
 
@@ -225,26 +206,23 @@ export const plugin_grainline = {
     })
 
     return box(part, 110, 15)
-  }
+  },
 }
 
 export const plugin_logo = {
   name: 'examples.plugin_logo',
-  draft: part => {
-    const { points, Point, snippets, Snippet } = part.shorthand()
+  draft: ({ points, Point, snippets, Snippet, part }) => {
     points.anchor = new Point(50, 25)
 
     snippets.logo = new Snippet('logo', points.anchor).attr('data-scale', 0.666)
 
     return box(part, 100, 35)
-  }
+  },
 }
 
 export const plugin_mirror = {
   name: 'examples.plugin_mirror',
-  draft: part => {
-    const { Point, Path, points, paths, macro } = part.shorthand()
-
+  draft: ({ Point, Path, points, paths, macro, part }) => {
     points.a = new Point(5, 5)
     points.b = new Point(45, 30)
     points.c = new Point(5, 30)
@@ -265,26 +243,22 @@ export const plugin_mirror = {
     })
 
     return box(part, 100, 40)
-  }
+  },
 }
 
 export const plugin_notches = {
   name: 'examples.plugin_notches',
-  draft: part => {
-    const { Point, snippets, Snippet } = part.shorthand()
-
+  draft: ({ Point, snippets, Snippet, part }) => {
     snippets.notch = new Snippet('notch', new Point(60, 10))
     snippets.bnotch = new Snippet('bnotch', new Point(80, 10))
 
     return box(part, 140, 20)
-  }
+  },
 }
 
 export const plugin_round = {
   name: 'examples.plugin_round',
-  draft: part => {
-    const { Point, points, Path, paths, macro } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, macro, part }) => {
     points.topLeft = new Point(0, 0)
     points.bottomLeft = new Point(0, 30)
     points.topRight = new Point(100, 0)
@@ -316,14 +290,12 @@ export const plugin_round = {
     })
 
     return part
-  }
+  },
 }
 
 export const plugin_scalebox = {
   name: 'examples.plugin_scalebox',
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     points.anchor1 = new Point(0, 0)
     points.anchor2 = new Point(70, 0)
 
@@ -331,14 +303,12 @@ export const plugin_scalebox = {
     macro('miniscale', { at: points.anchor2 })
 
     return part
-  }
+  },
 }
 
 export const plugin_sprinkle = {
   name: 'examples.plugin_sprinkle',
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     points.a = new Point(10, 10)
     points.b = new Point(20, 15)
     points.c = new Point(30, 10)
@@ -355,14 +325,12 @@ export const plugin_sprinkle = {
     })
 
     return box(part, 100, 25)
-  }
+  },
 }
 
 export const plugin_title = {
   name: 'examples.plugin_title',
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     points.title = new Point(90, 45)
 
     macro('title', {
@@ -373,6 +341,5 @@ export const plugin_title = {
     })
 
     return box(part, 200, 70)
-  }
+  },
 }
-

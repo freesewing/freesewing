@@ -1,22 +1,21 @@
 import { lowerTeeth } from './lowerTeeth.mjs'
 import { upperTeeth } from './upperTeeth.mjs'
 
-function draftHiMouth (part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiMouth({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let mouth01_02d = 141.93684055893488 * options.size
   let mouth01_02a = 312.8254216093024
   let mouth01_03d = 42.496 * options.size
@@ -141,6 +140,6 @@ function draftHiMouth (part) {
 
 export const mouth = {
   name: 'hi.mouth',
-  after: [ lowerTeeth, upperTeeth ],
+  after: [lowerTeeth, upperTeeth],
   draft: draftHiMouth,
 }

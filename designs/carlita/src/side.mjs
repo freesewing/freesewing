@@ -1,9 +1,19 @@
 import { front } from './front.mjs'
 
-function draftCarlitaSide (part) {
-  let { paperless, sa, snippets, Snippet, store, complete, points, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarlitaSide({
+  paperless,
+  sa,
+  snippets,
+  Snippet,
+  store,
+  complete,
+  points,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   // Give points their original names
   for (let i of store.get('side')) points[i] = points[i + 'Rot2'].clone()
 

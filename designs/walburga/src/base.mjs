@@ -1,22 +1,22 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function walburgaBase(part) {
-  const {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    sa,
-    paperless,
-    store,
-    utils,
-  } = part.shorthand()
+function walburgaBase({
+  Point,
+  points,
+  Path,
+  paths,
+  measurements,
+  options,
+  macro,
+  complete,
+  snippets,
+  Snippet,
+  sa,
+  paperless,
+  store,
+  utils,
+  part,
+}) {
 
   // define some variables
   const hem_pos =

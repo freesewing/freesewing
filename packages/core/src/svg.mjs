@@ -1,22 +1,19 @@
 import { Attributes } from './attributes.mjs'
-import { round } from './utils.mjs'
+import { addNonEnumProp, round } from './utils.mjs'
 import { version } from '../data.mjs'
 
 export function Svg(pattern) {
-  this.openGroups = []
-  this.layout = {}
-  this.freeId = 0
-  this.body = ''
-  /*
-   * This breaks SVG style (see #1606)
-   * Can we not set variables in SVG style?
-   * this.style = `svg.freesewing.pattern { --pattern-scale: ${pattern.settings.scale} }`
-   */
-  this.style = ''
-  this.script = ''
-  this.defs = ''
+  // Non-enumerable properties
+  addNonEnumProp(this, 'openGroups', [])
+  addNonEnumProp(this, 'layout', {})
+  addNonEnumProp(this, 'freeId', 0)
+  addNonEnumProp(this, 'body', '')
+  addNonEnumProp(this, 'style', '')
+  addNonEnumProp(this, 'defs', '')
+  addNonEnumProp(this, 'prefix', '<?xml version="1.0" encoding="UTF-8" standalone="no"?>')
+
+  // Enumerable properties
   this.pattern = pattern // Needed to expose pattern to hooks
-  this.prefix = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>'
   this.attributes = new Attributes()
   this.attributes.add('xmlns', 'http://www.w3.org/2000/svg')
   this.attributes.add('xmlns:svg', 'http://www.w3.org/2000/svg')
@@ -311,4 +308,3 @@ Svg.prototype.getId = function () {
 
   return '' + this.freeId
 }
-

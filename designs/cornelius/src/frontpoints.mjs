@@ -1,6 +1,14 @@
-function draftCorneliusFrontpoints (part) {
-  let { options, measurements, Point, Path, points, paths, store, raise } = part.shorthand()
-
+function draftCorneliusFrontpoints({
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  store,
+  log,
+  part,
+}) {
   let halfInch = measurements.waistToKnee / 48
 
   let inseam = measurements.inseam - (measurements.waistToFloor - measurements.waistToKnee)
@@ -40,14 +48,14 @@ function draftCorneliusFrontpoints (part) {
   if (null != tPoints && tPoints.length > 0) {
     points.pS = tPoints[0].clone()
   } else {
-    raise.error('Something is not quite right here!')
+    log.error('Something is not quite right here!')
   }
   tPath = new Path().move(points.pG).line(points.pX)
   tPoints = tPath.intersectsY(points.pT.y)
   if (null != tPoints && tPoints.length > 0) {
     points.pZ = tPoints[0].clone()
   } else {
-    raise.error('Could not find an intersection to create the crotch point Z')
+    log.error('Could not find an intersection to create the crotch point Z')
   }
 
   points.pP = points.pE.shift(180, seat / 3)

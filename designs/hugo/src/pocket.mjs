@@ -1,12 +1,11 @@
 import { front } from './front.mjs'
 
-function hugoPocket(part) {
+function hugoPocket({ utils, store, sa, points, Path, paths, complete, paperless, macro, part }) {
+  return part
   // Remove clutter
   const pocket = part.paths.pocket
   part.paths = {}
   part.snippets = {}
-
-  const { utils, store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
 
   paths.seam = pocket
     .line(points.cfRibbing)
@@ -90,5 +89,6 @@ function hugoPocket(part) {
 export const pocket = {
   name: 'hugo.pocket',
   from: front,
+  hideDependencies: true,
   draft: hugoPocket,
 }

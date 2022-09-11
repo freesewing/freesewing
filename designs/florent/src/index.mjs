@@ -10,13 +10,8 @@ import { brimInterfacing } from './briminterfacing.mjs'
 // Create new design
 const Florent = new Design({
   data,
-  parts: [
-    top, side, brimBottom, brimTop, brimInterfacing,
-  ]
+  parts: [top, side, brimBottom, brimTop, brimInterfacing],
 })
 
 // Named exports
-export {
-  top, side, brimBottom, brimTop, brimInterfacing,
-  Florent,
-}
+export { top, side, brimBottom, brimTop, brimInterfacing, Florent }

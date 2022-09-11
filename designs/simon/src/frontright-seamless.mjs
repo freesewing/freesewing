@@ -1,9 +1,18 @@
 import { addButtons } from './shared.mjs'
 
-export const draftFrontRightSeamless = (part) => {
-  const { sa, store, Point, points, Path, paths, complete, paperless, macro, options } =
-    part.shorthand()
-
+export const draftFrontRightSeamless = ({
+  sa,
+  store,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  option,
+  part,
+}) => {
   const width = store.get('buttonPlacketWidth')
   points.placketTopFold1 = points.cfNeck.shift(0, width / 2)
   points.placketTopFold2 = points.cfNeck.shift(0, width * 1.5)

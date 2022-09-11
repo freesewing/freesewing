@@ -1,22 +1,21 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { init } from './init.mjs'
 
-function draftBruceBack (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    utils,
-  } = part.shorthand()
-
+function draftBruceBack({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  utils,
+  part,
+}) {
   // Initialize
   init(part)
 
@@ -186,6 +185,6 @@ export const back = {
     legStretch: { pct: 40, min: 25, max: 45, menu: 'fit' },
     backRise: { pct: 5, min: 0, max: 10, menu: 'fit' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftBruceBack,
 }

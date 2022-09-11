@@ -1,9 +1,16 @@
 import { backPocket } from './back-pocket.mjs'
 
-function draftCharlieBackPocketInterfacing (part) {
-  // Shorthand
-  let { points, Point, paths, Path, complete, paperless, macro, snippets } = part.shorthand()
-
+function draftCharlieBackPocketInterfacing({
+  points,
+  Point,
+  paths,
+  Path,
+  complete,
+  paperless,
+  macro,
+  snippets,
+  part,
+}) {
   // Clean up
   for (let id in paths) delete paths[id]
   delete snippets.logo

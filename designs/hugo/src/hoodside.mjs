@@ -1,22 +1,21 @@
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
-function hugoHoodSide(part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    measurements,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function hugoHoodSide({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let neckOpening = store.get('neckOpeningLenFront') + store.get('neckOpeningLenBack')
   let hoodOpening = measurements.head
   let neckCutoutDelta = store.get('neckCutoutFront') - store.get('neckCutoutBack')
