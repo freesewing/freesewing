@@ -13,6 +13,6 @@ export const configpart = {
     lengthRatio: { pct: 75, min: 55, max: 85 },
   },
   hide: true,
-  draft: part => part
+  draft: ({part}) => part
 }
 
