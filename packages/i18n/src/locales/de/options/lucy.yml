@@ -1,10 +1,10 @@
 width:
-  title: Width
-  description: Width of the pocket
+  title: Breite
+  description: Breite der Tasche
 length:
-  title: Length
-  description: Length (depth) of the pocket
+  title: Länge
+  description: Länge (Tiefe) der Tasche
 edge:
-  title: Taper
-  description: Controls how much the pocket opening tapers inwards
+  title: Abschrägung
+  description: Steuert, wie sehr die Öffnung der Tasche nach innen abgeschrägt ist
 
