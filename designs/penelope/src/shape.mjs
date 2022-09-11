@@ -33,10 +33,10 @@ export const options = {
   dartToSideSeamFactor: { pct: 50, min: 30, max: 70, menu: 'advanced' },
 }
 
-export function BuildMainShape(part, frontPart) {
-  const { sa, options, measurements, Point, Path, points, paths, store, paperless, macro } =
-    part.shorthand()
-
+export function BuildMainShape(
+  { sa, options, measurements, Point, Path, points, paths, store, paperless, macro, part },
+  frontPart
+) {
   let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
 
   store.set('skirtLength', skirtLength)
