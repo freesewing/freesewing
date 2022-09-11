@@ -1,9 +1,18 @@
 import { front } from './front.mjs'
 
-function draftCarltonChestPocketBag (part) {
-  let { units, paperless, sa, store, complete, points, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarltonChestPocketBag({
+  units,
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('chestPocketHeight'),
