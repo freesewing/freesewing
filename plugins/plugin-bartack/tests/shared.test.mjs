@@ -4,4 +4,3 @@ import { sharedPluginTests } from '../../../tests/plugins/shared.mjs'
 
 // Run shared tests
 sharedPluginTests(plugin)
-

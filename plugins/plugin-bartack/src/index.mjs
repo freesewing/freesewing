@@ -95,13 +95,13 @@ export default function bartack(so, self) {
     }
   }
 
-  self.paths[`${so.prefix}bartack${so.suffix}`] = bartackPath(guide, so, self)
-    .attr('class', 'stroke-sm stroke-mark')
+  self.paths[`${so.prefix}bartack${so.suffix}`] = bartackPath(guide, so, self).attr(
+    'class',
+    'stroke-sm stroke-mark'
+  )
 
   return true
 }
-
-
 
 // The actual plugin
 export const plugin = {
@@ -136,4 +136,3 @@ export const plugin = {
 // More specifically named exports
 export const bartackPlugin = plugin
 export const pluginBartack = plugin
-
