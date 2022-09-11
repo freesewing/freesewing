@@ -9,7 +9,7 @@ import { ear } from './ear.mjs'
 // Create new design
 const Holmes = new Design({
   data,
-  parts: [ gore, visor, ear ],
+  parts: [gore, visor, ear],
 })
 
 // Named exports
