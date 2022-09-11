@@ -1,19 +1,19 @@
 import { back } from './back.mjs'
 
-function ursulaGusset(part) {
-  const {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    measurements,
-    store,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+function ursulaGusset({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  measurements,
+  store,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   // Create points
   points.frontGussetLeft = new Point(store.get('frontGussetLeft').x, 0)

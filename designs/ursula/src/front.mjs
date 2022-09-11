@@ -1,22 +1,22 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function ursulaFront(part) {
-  const {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    measurements,
-    //    Snippet,
-    //    snippets,
-    store,
-    utils,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+function ursulaFront({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  measurements,
+  //  Snippet,
+  //  snippets,
+  store,
+  utils,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   // Stretch utility method
 
