@@ -1,6 +1,14 @@
-function draftCorneliusFrontpoints (part) {
-  let { options, measurements, Point, Path, points, paths, store, raise } = part.shorthand()
-
+function draftCorneliusFrontpoints({
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  store,
+  raise,
+  part,
+}) {
   let halfInch = measurements.waistToKnee / 48
 
   let inseam = measurements.inseam - (measurements.waistToFloor - measurements.waistToKnee)

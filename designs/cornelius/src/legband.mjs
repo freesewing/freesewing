@@ -25,22 +25,21 @@ function findR(part, height, arcLength) {
   return a * (180 / Math.PI)
 }
 
-function draftCorneliusLegband (part) {
-  let {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    store,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftCorneliusLegband({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   if (options.cuffStyle == 'keystone') {
     return part
   }
@@ -193,12 +192,11 @@ function draftCorneliusLegband (part) {
 
 export const legband = {
   name: 'cornelius.legband',
-  after: [ back, front ],
+  after: [back, front],
   options: {
     kneeToBelow: { pct: 94, min: 85, max: 110, menu: 'advanced' },
     cuffWidth: { pct: 0, min: -50, max: 150, menu: 'style' },
-    cuffStyle: { dflt: 'elegant',
-      list: ['traditional', 'elegant', 'keystone'], menu: 'style' },
+    cuffStyle: { dflt: 'elegant', list: ['traditional', 'elegant', 'keystone'], menu: 'style' },
   },
   draft: draftCorneliusLegband,
 }

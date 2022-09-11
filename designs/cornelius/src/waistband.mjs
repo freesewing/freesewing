@@ -1,10 +1,20 @@
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
-function draftCorneliusWaistband (part) {
-  let { Point, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
-    part.shorthand()
-
+function draftCorneliusWaistband({
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   let halfInch = store.get('halfInch')
   let waistLength = store.get('frontWaistLength') + store.get('backWaistLength')
   let flyWidth = store.get('flyWidth')
@@ -77,6 +87,6 @@ function draftCorneliusWaistband (part) {
 
 export const waistband = {
   name: 'cornelius.waistband',
-  after: [ back, front ],
+  after: [back, front],
   draft: draftCorneliusWaistband,
 }

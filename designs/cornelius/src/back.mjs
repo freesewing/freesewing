@@ -175,10 +175,20 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
   }
 }
 
-function draftCorneliusBack (part) {
-  let { options, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
-    part.shorthand()
-
+function draftCorneliusBack({
+  options,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   let tempP = null
 
   let waist = store.get('waist')
