@@ -30,7 +30,7 @@ If you know where to get them, great. If not, you can get a **Jacket trim pack**
 It's a shop for professionals (they're not even open on Saturdays) but they don't require you to be a business
 to place an order.
 
-I have no afiliation with these guys, but it's the only place I know of that will sell you a kit of
+I have no affiliation with these guys, but it's the only place I know of that will sell you a kit of
 professional trimmings to make a jacket.
 
 If you know of any other place that carries this stuff, please let us know.
