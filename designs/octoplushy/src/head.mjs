@@ -1,5 +1,6 @@
-function octoplushyHeadSection(partNumber, part) {
-  const {
+function octoplushyHeadSection(
+  partNumber,
+  {
     options,
     Point,
     Path,
@@ -13,8 +14,9 @@ function octoplushyHeadSection(partNumber, part) {
     macro,
     utils,
     store,
-  } = part.shorthand()
-
+    part,
+  }
+) {
   if (partNumber > (options.type == 'squid' ? 1 : 0)) {
     return part
   }
@@ -630,10 +632,10 @@ const options = {
 export const headSection1 = {
   name: 'octoplushy.headSection1',
   options,
-  draft: (part) => octoplushyHeadSection(0, part),
+  draft: (params) => octoplushyHeadSection(0, params),
 }
 export const headSection2 = {
   name: 'octoplushy.headSection2',
   options,
-  draft: (part) => octoplushyHeadSection(1, part),
+  draft: (params) => octoplushyHeadSection(1, params),
 }
