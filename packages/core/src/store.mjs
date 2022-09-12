@@ -5,12 +5,6 @@ import get from 'lodash.get'
 const avoid = ['set', 'setIfUnset', 'push', 'unset', 'get', 'extend']
 
 export function Store(methods = []) {
-  for (const method of methods) {
-    if (avoid.indexOf(method[0]) !== -1) {
-      console.log(`WARNING: You can't squat ${method[0]}in the store`)
-    } else set(this, ...method)
-  }
-
   /*
    * Default logging methods
    * You can override these with a plugin
@@ -36,6 +30,12 @@ export function Store(methods = []) {
     },
   }
   this.logs = logs
+
+  for (const method of methods) {
+    if (avoid.indexOf(method[0]) !== -1) {
+      this.logs.warning(`You cannot squat ${method[0]} in the store`)
+    } else set(this, ...method)
+  }
 
   return this
 }

@@ -195,7 +195,7 @@ describe('Part', () => {
     const design = new Design({ parts: [ part ]})
     const pattern = new design({ paperless: true })
     pattern.draft()
-    pattern.parts.test.stack()
+    pattern.parts.test.home()
     console.log(pattern.parts.test.attributes)
     expect(part.attributes.get('transform')).to.equal('translate(-17, -74)')
   })
@@ -208,9 +208,9 @@ describe('Part', () => {
     part.points.from = new short.Point(2, 2)
     part.points.to = new short.Point(19, 76)
     part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    part.stack()
+    part.home()
     expect(part.attributes.get('transform')).to.equal(false)
-    part.stack()
+    part.home()
     expect(part.attributes.get('transform')).to.equal(false)
   })
 */
@@ -252,7 +252,7 @@ describe('Part', () => {
     part.points.from = new short.Point(2, 2)
     part.points.to = new short.Point(19, 76)
     part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    part.stack()
+    part.home()
     part.generateTransform({
       move: {
         x: 10,

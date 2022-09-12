@@ -26,6 +26,7 @@ export function Part() {
   this.points = {}
   this.paths = {}
   this.snippets = {}
+  this.name = null
 
   return this
 }
@@ -121,8 +122,8 @@ Part.prototype.boundary = function () {
   return this
 }
 
-/** Stacks part so that its top left corner is in (0,0) */
-Part.prototype.stack = function () {
+/** Homes part so that its top left corner is in (0,0) */
+Part.prototype.home = function () {
   if (this.topLeft !== false) return this
   else this.boundary()
   if (this.topLeft.x == 0 && this.topLeft.y == 0) return this
