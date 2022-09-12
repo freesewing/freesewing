@@ -47,8 +47,6 @@ export const plugin = {
   },
 }
 
-
 // More specifically named exports
 export const flipPlugin = plugin
 export const pluginFlip = plugin
-

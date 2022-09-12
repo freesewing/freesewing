@@ -1,33 +1,33 @@
 import chai from 'chai'
-import { Pattern } from '@freesewing/core'
+import { Design } from '@freesewing/core'
 import { plugin } from './dist/index.mjs'
 
 const expect = chai.expect
 
 describe('Flip Plugin Tests', () => {
-  const pattern = new Pattern().use(plugin);
-  pattern.parts.test = new pattern.Part()
-  pattern.parts.test.points.from = new pattern.Point(10, 20)
-  pattern.parts.test.points.to = new pattern.Point(30, 40)
-  pattern.parts.test.paths.test = new pattern.Path()
-    .move(new pattern.Point(1,2))
-    .curve(
-      new pattern.Point(10,20),
-      new pattern.Point(30,40),
-      new pattern.Point(50,60)
-    )
-  pattern.parts.test.snippets.test = new pattern.Snippet('logo', new pattern.Point(-66, 20))
-  const { macro } = pattern.parts.test.shorthand()
-  macro('flip')
-
-  it("Should flip points", () => {
+  const part = {
+    name: 'test',
+    draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+      points.from = new Point(10, 20)
+      points.to = new Point(30, 40)
+      paths.test = new Path()
+        .move(new Point(1, 2))
+        .curve(new Point(10, 20), new Point(30, 40), new Point(50, 60))
+      snippets.test = new Snippet('logo', new Point(-66, 20))
+      macro('flip')
+    },
+  }
+  const Test = new Design({ plugins: [plugin], parts: [part] })
+  const pattern = new Test()
+  pattern.draft()
+  it('Should flip points', () => {
     expect(pattern.parts.test.points.from.x).to.equal(-10)
     expect(pattern.parts.test.points.from.y).to.equal(20)
     expect(pattern.parts.test.points.to.x).to.equal(-30)
     expect(pattern.parts.test.points.to.y).to.equal(40)
   })
 
-  it("Should flip paths", () => {
+  it('Should flip paths', () => {
     expect(pattern.parts.test.paths.test.ops[0].to.x).to.equal(-1)
     expect(pattern.parts.test.paths.test.ops[0].to.y).to.equal(2)
     expect(pattern.parts.test.paths.test.ops[1].cp1.x).to.equal(-10)
@@ -38,39 +38,44 @@ describe('Flip Plugin Tests', () => {
     expect(pattern.parts.test.paths.test.ops[1].to.y).to.equal(60)
   })
 
-  it("Should flip snippets", () => {
+  it('Should flip snippets', () => {
     expect(pattern.parts.test.snippets.test.anchor.x).to.equal(66)
     expect(pattern.parts.test.snippets.test.anchor.y).to.equal(20)
   })
 
   it('Should flip points in a part on their vertical axis', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10,20)
-    pattern.parts.test.points.to = new pattern.Point(40,230)
-
-    let { macro } = pattern.parts.test.shorthand()
-    macro('flip', {})
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(40, 230)
+        macro('flip', {})
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test.points
     expect(c.from.x).to.equal(-10)
     expect(c.to.x).to.equal(-40)
   })
 
   it('Should flip points in a path on their vertical axis', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10,20)
-    let cp1 = new pattern.Point(40,0)
-    let cp2 = new pattern.Point(60,30)
-    pattern.parts.test.points.pathTo = new pattern.Point(90,20)
-    pattern.parts.test.points.to = new pattern.Point(40,230)
-    let { macro, Path } = pattern.parts.test.shorthand()
-    pattern.parts.test.paths.line = new Path()
-      .move(pattern.parts.test.points.from)
-      .curve(cp1, cp2, pattern.parts.test.points.pathTo)
-    macro('flip', {})
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+        points.from = new Point(10, 20)
+        points.cp1 = new Point(40, 0)
+        points.cp2 = new Point(60, 30)
+        points.to = new Point(40, 230)
+        points.pathTo = new Point(90, 20)
+        paths.line = new Path().move(points.from).curve(points.cp1, points.cp2, points.pathTo)
+        macro('flip', {})
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test
     expect(c.points.from.x).to.equal(-10)
     expect(c.points.to.x).to.equal(-40)
@@ -82,16 +87,19 @@ describe('Flip Plugin Tests', () => {
   })
 
   it('Should flip points in snippets on their vertical axis', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    let anchorPoint = new pattern.Point(40,0)
-    let { macro, snippets, Snippet } = pattern.parts.test.shorthand()
-    snippets.testSnippet = new Snippet('button', anchorPoint)
-
-    macro('flip', {})
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, snippets, Snippet, macro, part }) => {
+        points.anchorPoint = new Point(40, 0)
+        snippets.testSnippet = new Snippet('button', points.anchorPoint)
+        macro('flip', {})
+        return part
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft().render()
     let c = pattern.parts.test
     expect(c.snippets.testSnippet.anchor.x).to.equal(-40)
   })
 })
-
