@@ -1,23 +1,27 @@
 import chai from 'chai'
-import { round, Pattern } from '@freesewing/core'
-import { plugin } from './dist/index.mjs'
+import { round, Design, Pattern } from '@freesewing/core'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
 describe('Gore Plugin Tests', () => {
   it('Should create a default gore', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    let anchorPoint = new pattern.Point(50,50)
-    pattern.parts.test = new pattern.Part()
-    let { macro } = pattern.parts.test.shorthand()
-    macro('gore', {
-      from:anchorPoint,
-      radius:25,
-      gores:4,
-      extraLength:0,
-      prefix:'gore'
-    })
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+        points.anchorPoint = new Point(50, 50)
+        macro('gore', {
+          from: points.anchorPoint,
+          radius: 25,
+          gores: 4,
+          extraLength: 0,
+          prefix: 'gore',
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test.points
     expect(round(c.gorep1.y)).to.equal(50)
     expect(round(c.gorep2.x)).to.equal(50)
@@ -27,18 +31,22 @@ describe('Gore Plugin Tests', () => {
   })
 
   it('Should use a configurable number of gores', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    let anchorPoint = new pattern.Point(50,50)
-    pattern.parts.test = new pattern.Part()
-    let { macro } = pattern.parts.test.shorthand()
-    macro('gore', {
-      from:anchorPoint,
-      radius:25,
-      gores:8,
-      extraLength:0,
-      prefix:'gore'
-    })
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+        points.anchorPoint = new Point(50, 50)
+        macro('gore', {
+          from: points.anchorPoint,
+          radius: 25,
+          gores: 8,
+          extraLength: 0,
+          prefix: 'gore',
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test.points
     expect(round(c.gorep1.x)).to.equal(89.27)
     expect(round(c.gorep1.y)).to.equal(50)
@@ -49,18 +57,22 @@ describe('Gore Plugin Tests', () => {
   })
 
   it('Should use a configurable extra length', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    let anchorPoint = new pattern.Point(50,50)
-    pattern.parts.test = new pattern.Part()
-    let { macro } = pattern.parts.test.shorthand()
-    macro('gore', {
-      from:anchorPoint,
-      radius:25,
-      gores:4,
-      extraLength:20,
-      prefix:'gore'
-    })
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+        points.anchorPoint = new Point(50, 50)
+        macro('gore', {
+          from: points.anchorPoint,
+          radius: 25,
+          gores: 4,
+          extraLength: 20,
+          prefix: 'gore',
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test.points
     expect(round(c.gorep1.x)).to.equal(109.27)
     expect(round(c.gorep1.y)).to.equal(50)
@@ -71,18 +83,22 @@ describe('Gore Plugin Tests', () => {
   })
 
   it('Should use a configurable radius', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    let anchorPoint = new pattern.Point(50,50)
-    pattern.parts.test = new pattern.Part()
-    let { macro } = pattern.parts.test.shorthand()
-    macro('gore', {
-      from:anchorPoint,
-      radius:30,
-      gores:4,
-      extraLength:0,
-      prefix:'gore'
-    })
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+        points.anchorPoint = new Point(50, 50)
+        macro('gore', {
+          from: points.anchorPoint,
+          radius: 30,
+          gores: 4,
+          extraLength: 0,
+          prefix: 'gore',
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test.points
     expect(round(c.gorep1.x)).to.equal(97.12)
     expect(round(c.gorep1.y)).to.equal(50)
@@ -93,19 +109,22 @@ describe('Gore Plugin Tests', () => {
   })
 
   it('Should generate a seam path', () => {
-    let pattern = new Pattern()
-    pattern.use(plugin)
-    let anchorPoint = new pattern.Point(50,50)
-    pattern.parts.test = new pattern.Part()
-    let { macro } = pattern.parts.test.shorthand()
-    macro('gore', {
-      from:anchorPoint,
-      radius:25,
-      gores:4,
-      extraLength:0,
-      prefix:'gore'
-    })
-    pattern.render()
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+        points.anchorPoint = new Point(50, 50)
+        macro('gore', {
+          from: points.anchorPoint,
+          radius: 25,
+          gores: 4,
+          extraLength: 0,
+          prefix: 'gore',
+        })
+      },
+    }
+    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const pattern = new Test()
+    pattern.draft()
     let c = pattern.parts.test.paths.goreseam.ops
     expect(round(c[1].to.x)).to.equal(89.27)
     expect(round(c[1].to.y)).to.equal(50)
@@ -113,4 +132,3 @@ describe('Gore Plugin Tests', () => {
     expect(round(c[2].to.y)).to.equal(30.37)
   })
 })
-

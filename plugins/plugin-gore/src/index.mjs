@@ -60,4 +60,3 @@ export const plugin = {
 // More specifically named exports
 export const gorePlugin = plugin
 export const pluginGore = plugin
-
