@@ -502,23 +502,18 @@ const addPartOptionalMeasurements = (part, config, store, list = false) => {
   return config
 }
 
-// Add part-level dependencies
-//export const addPartDependencies = (part, config, store) => {
-//  if (part.after) {
-//    if (typeof config.dependencies === 'undefined') config.dependencies = {}
-//    config.dependencies[part.name] = mergeDependencies(config.dependencies[part.name], part.after)
-//  }
-//
-//  return config
-//}
-
 // Add part-level plugins
 export const addPartPlugins = (part, config, store) => {
   const plugins = {}
   if (!part.plugins) return config
   for (const plugin of config.plugins) plugins[plugin.name] = plugin
   if (!Array.isArray(part.plugins)) part.plugins = [part.plugins]
-  for (const plugin of part.plugins) {
+  for (let plugin of part.plugins) {
+    // Handle [plugin, data] scenario
+    if (Array.isArray(plugin)) {
+      const pluginObj = { ...plugin[0], data: plugin[1] }
+      plugin = pluginObj
+    }
     store.log.debug(`Config resolver: Plugin __${plugin.name}__ in ${part.name}`)
     // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
     if (plugin.plugin && plugin.condition) {

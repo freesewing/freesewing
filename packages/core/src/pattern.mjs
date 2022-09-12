@@ -454,7 +454,7 @@ Pattern.prototype.on = function (hook, method, data) {
 }
 
 Pattern.prototype.__loadPlugins = function () {
-  for (const plugin of this.config.plugins) this.use(plugin)
+  for (const plugin of this.config.plugins) this.use(plugin, plugin.data)
 
   return this
 }
