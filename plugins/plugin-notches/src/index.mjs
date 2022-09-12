@@ -23,4 +23,3 @@ export const plugin = {
 // More specifically named exports
 export const notchesPlugin = plugin
 export const pluginNotches = plugin
-
