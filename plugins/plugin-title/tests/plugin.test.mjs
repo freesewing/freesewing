@@ -5,24 +5,25 @@ import { plugin } from './dist/index.mjs'
 const expect = chai.expect
 
 describe('Title Plugin Tests', () => {
-  const Pattern = new Design()
-  const pattern = new Pattern().use(plugin)
-  pattern.draft().render()
-
   it('Should run the title macro', () => {
-    const Pattern = new Design({ data: { name: 'testPattern', version: 99 } })
-    let pattern = new Pattern()
-    pattern.draft = function () {}
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.anchor = new pattern.Point(-12, -34)
-    let { macro } = pattern.parts.test.shorthand()
-    macro('title', {
-      at: pattern.parts.test.points.anchor,
-      nr: 3,
-      title: 'unitTest',
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro }) => {
+        points.anchor = new pattern.Point(-12, -34)
+        macro('title', {
+          at: points.anchor,
+          nr: 3,
+          title: 'unitTest',
+        })
+      },
+    }
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      plugins: [plugin],
     })
-    pattern.render()
+    const pattern = new Pattern()
+    pattern.draft().render()
     let p = pattern.parts.test.points.__titleNr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
@@ -43,20 +44,25 @@ describe('Title Plugin Tests', () => {
   })
 
   it('Should run the title macro with append flag', () => {
-    const Pattern = new Design({ data: { name: 'testPattern', version: 99 } })
-    let pattern = new Pattern()
-    pattern.draft = function () {}
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.anchor = new pattern.Point(-12, -34).attr('data-text', '#')
-    let { macro } = pattern.parts.test.shorthand()
-    macro('title', {
-      at: pattern.parts.test.points.anchor,
-      nr: 3,
-      title: 'unitTest',
-      append: true,
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro }) => {
+        points.anchor = new pattern.Point(-12, -34).attr('data-text', '#')
+        macro('title', {
+          at: points.anchor,
+          nr: 3,
+          title: 'unitTest',
+          append: true,
+        })
+      },
+    }
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      plugins: [plugin],
     })
-    pattern.render()
+    const pattern = new Pattern()
+    pattern.draft().render()
     let p = pattern.parts.test.points.__titleNr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
@@ -67,20 +73,25 @@ describe('Title Plugin Tests', () => {
   })
 
   it('Should run the title macro with point prefix', () => {
-    const Pattern = new Design({ data: { name: 'testPattern', version: 99 } })
-    let pattern = new Pattern()
-    pattern.draft = function () {}
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.anchor = new pattern.Point(-12, -34).attr('data-text', '#')
-    let { macro } = pattern.parts.test.shorthand()
-    macro('title', {
-      at: pattern.parts.test.points.anchor,
-      nr: 3,
-      title: 'unitTest',
-      prefix: 'foo',
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro }) => {
+        points.anchor = new pattern.Point(-12, -34).attr('data-text', '#')
+        macro('title', {
+          at: points.anchor,
+          nr: 3,
+          title: 'unitTest',
+          prefix: 'foo',
+        })
+      },
+    }
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      plugins: [plugin],
     })
-    pattern.render()
+    const pattern = new Pattern()
+    pattern.draft().render()
     let p = pattern.parts.test.points._foo_titleNr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
