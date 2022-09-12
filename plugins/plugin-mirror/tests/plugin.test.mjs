@@ -5,38 +5,29 @@ import { plugin } from '../dist/index.mjs'
 const expect = chai.expect
 
 describe('Mirror Plugin Tests', () => {
-  const Pattern = new Design()
-  const pattern = new Pattern().use(plugin)
-  pattern.parts.test = new pattern.Part()
-  pattern.parts.test.points.mirrorA = new pattern.Point(-100, -100)
-  pattern.parts.test.points.mirrorB = new pattern.Point(100, 100)
-  pattern.parts.test.points.a = new pattern.Point(10, 20)
-  pattern.parts.test.points.b = new pattern.Point(30, 40)
-  pattern.parts.test.paths.test = new pattern.Path()
-    .move(new pattern.Point(1,2))
-    .curve(
-      new pattern.Point(10,20),
-      new pattern.Point(30,40),
-      new pattern.Point(50,60)
-    )
-  const { macro } = pattern.parts.test.shorthand()
-  const settings = {
-    mirror: [
-      pattern.parts.test.points.mirrorA,
-      pattern.parts.test.points.mirrorB,
-    ],
-    points: [
-      pattern.parts.test.points.a,
-      pattern.parts.test.points.b,
-    ],
-    paths: [
-      pattern.parts.test.paths.test,
-    ]
+  const part = {
+    name: 'test',
+    draft: ({ points, Point, macro, paths, Path }) => {
+      points.mirrorA = new Point(-100, -100)
+      points.mirrorB = new Point(100, 100)
+      points.a = new Point(10, 20)
+      points.b = new Point(30, 40)
+      paths.test = new Path()
+        .move(new Point(1, 2))
+        .curve(new Point(10, 20), new Point(30, 40), new Point(50, 60))
+      const settings = {
+        mirror: [points.mirrorA, points.mirrorB],
+        points: [points.a, points.b],
+        paths: [paths.test],
+      }
+      macro('mirror', settings)
+      macro('mirror', { ...settings, prefix: 'test' })
+      macro('mirror', { ...settings, clone: false })
+    },
   }
-  macro('mirror', settings)
-  macro('mirror', { ...settings, prefix: 'test' })
-  macro('mirror', { ...settings, clone: false })
-  pattern.draft().render()
+  const Pattern = new Design({ plugins: [plugin], parts: [part] })
+  const pattern = new Pattern()
+  pattern.draft()
 
   it('Should mirror points', () => {
     expect(pattern.parts.test.points.mirroredA.x).to.equal(20)
@@ -86,5 +77,4 @@ describe('Mirror Plugin Tests', () => {
     expect(pattern.parts.test.paths.test.ops[1].to.x).to.equal(60)
     expect(pattern.parts.test.paths.test.ops[1].to.y).to.equal(50)
   })
-
 })

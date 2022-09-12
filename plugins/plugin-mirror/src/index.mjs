@@ -97,4 +97,3 @@ export const plugin = {
 // More specifically named exports
 export const mirrorPlugin = plugin
 export const pluginMirror = plugin
-
