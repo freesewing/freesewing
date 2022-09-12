@@ -11,4 +11,3 @@ export const plugin = {
 // More specifically named exports
 export const scaleboxPlugin = plugin
 export const pluginScalebox = plugin
-
