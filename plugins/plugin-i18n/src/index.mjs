@@ -22,4 +22,3 @@ export const plugin = {
 // More specifically named exports
 export const i18nPlugin = plugin
 export const pluginI18n = plugin
-
