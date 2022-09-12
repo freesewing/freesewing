@@ -59,13 +59,13 @@ title: "Майка Аарон: Інструкція з пошиття"
 - Для пройми: біля бокового шва. Це сховає шов під рукою
 - Для горловини: на центрі шиї ззаду. Ви можете відмітити точку початку булавкою
 
-### Place (the start of) your binding
+### Розмістіть (початок) бейки
 
 ![Place (the start of) your binding](step03b.png)
 
-Put your A-shirt down with the good side up, and place your binding strip on top of it with the good side down (as in, good sides together).
+Покладіть майку лицьовою стороною доверху і покладіть бейку лицьовою стороною донизу (щоб чистові сторони торкалися одна одної).
 
-Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
+Вирівняйте край бейки з краєм тканини так, щоб бейка лежала на тканині (не в проймі/горловині). Place the corner on your starting point.
 
 Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
 
