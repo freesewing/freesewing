@@ -55,4 +55,3 @@ export const plugin = {
 // More specifically named exports
 export const grainlinePlugin = plugin
 export const pluginGrainline = plugin
-
