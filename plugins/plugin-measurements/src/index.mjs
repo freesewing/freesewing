@@ -39,4 +39,3 @@ export const plugin = {
 // More specifically named exports
 export const measurementsPlugin = plugin
 export const pluginMeasurements = plugin
-

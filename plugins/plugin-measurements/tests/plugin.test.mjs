@@ -10,12 +10,19 @@ const measurements = {
   waist: 100,
   waistBack: 45,
   crossSeam: 100,
-  crossSeamFront: 42
+  crossSeamFront: 42,
 }
 
-const Pattern = new Design()
-const pattern = new Pattern().use(plugin)
-pattern.apply({ measurements } ).draft()
+const part = {
+  name: 'test',
+  draft: ({ points, Point, macro }) => {
+    points.from = new Point(10, 20)
+    points.to = new Point(10, 230)
+  },
+}
+const Pattern = new Design({ plugins: [plugin], parts: [part] })
+const pattern = new Pattern({ measurements })
+pattern.draft()
 
 describe('Measurements Plugin Tests', () => {
   it('Should set the extra measurements', () => {
@@ -28,26 +35,26 @@ describe('Measurements Plugin Tests', () => {
   })
 
   it('Should calculate seatFront from seat and seatBack', function () {
-    const config = {measurements:{}}
+    const config = { measurements: {} }
     const testPattern = new Design({
       measurements: {},
-      plugins: [plugin]
+      plugins: [plugin],
     })
     const pattern = new testPattern()
-    const userMeasurements = {seat: 50, seatBack: 20}
+    const userMeasurements = { seat: 50, seatBack: 20 }
     pattern.settings.measurements = userMeasurements
     pattern.draft()
     expect(pattern.settings.measurements.seatFront).to.equal(30)
   })
 
   it('Should calculate waistFrontArc and waistBackArc from waist and waistBack', function () {
-    const config = {measurements:{}}
+    const config = { measurements: {} }
     const testPattern = new Design({
       measurements: {},
-      plugins: [plugin]
+      plugins: [plugin],
     })
     const pattern = new testPattern()
-    const userMeasurements = {waist: 50, waistBack: 20}
+    const userMeasurements = { waist: 50, waistBack: 20 }
     pattern.settings.measurements = userMeasurements
     pattern.draft()
     expect(pattern.settings.measurements.waistFrontArc).to.equal(15)
@@ -55,16 +62,15 @@ describe('Measurements Plugin Tests', () => {
   })
 
   it('Should calculate crossSeamBack from crossSeam and crossSeamFront', function () {
-    const config = {measurements:{}}
+    const config = { measurements: {} }
     const testPattern = new Design({
       measurements: {},
-      plugins: [plugin]
+      plugins: [plugin],
     })
     const pattern = new testPattern()
-    const userMeasurements = {crossSeam: 50, crossSeamFront: 20}
+    const userMeasurements = { crossSeam: 50, crossSeamFront: 20 }
     pattern.settings.measurements = userMeasurements
     pattern.draft()
     expect(pattern.settings.measurements.crossSeamBack).to.equal(30)
   })
 })
-
