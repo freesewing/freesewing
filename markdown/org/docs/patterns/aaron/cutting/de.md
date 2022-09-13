@@ -1,5 +1,5 @@
 - - -
-title: "Aron, A-Shirt: Zusschnitt"
+title: "Aaron, A-Shirt: Zuschnitt"
 - - -
 
 - Schneide **1 Rückenteil** im Stoffbruch
