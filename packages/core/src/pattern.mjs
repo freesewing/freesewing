@@ -104,6 +104,19 @@ Pattern.prototype.__createPartWithContext = function (name) {
   return part
 }
 
+Pattern.prototype.__createStackWithContext = function (name) {
+  // Context object to add to Stack closure
+  const stack = new Stack()
+  stack.name = name
+  stack.context = {
+    config: this.config,
+    settings: this.settings,
+    store: this.store,
+  }
+
+  return stack
+}
+
 // Merges default for options with user-provided options
 Pattern.prototype.__loadOptionDefaults = function () {
   if (Object.keys(this.config.options).length < 1) return this
@@ -548,7 +561,8 @@ Pattern.prototype.pack = function () {
   // First, create all stacks
   this.stacks = {}
   for (const [name, part] of Object.entries(this.parts)) {
-    if (typeof this.stacks[part.stack] === 'undefined') this.stacks[part.stack] = new Stack(part.stack)
+    if (typeof this.stacks[part.stack] === 'undefined')
+      this.stacks[part.stack] = this.__createStackWithContext(part.stack)
     this.stacks[part.stack].addPart(part)
   }
 
@@ -558,7 +572,8 @@ Pattern.prototype.pack = function () {
     stack.attributes.remove('transform')
     if (!this.isStackHidden(key)) {
       stack.home()
-      if (this.settings.layout === true) bins.push({ id: key, width: stack.width, height: stack.height })
+      if (this.settings.layout === true)
+        bins.push({ id: key, width: stack.width, height: stack.height })
       else {
         if (this.width < stack.width) this.width = stack.width
         if (this.height < stack.height) this.height = stack.height
@@ -573,7 +588,6 @@ Pattern.prototype.pack = function () {
       if (bin.x !== 0 || bin.y !== 0) {
         stack.attr('transform', `translate(${bin.x}, ${bin.y})`)
       }
-
       this.autoLayout.stacks[bin.id].move = {
         x: bin.x + stack.layout.move.x,
         y: bin.y + stack.layout.move.y,
@@ -843,6 +857,12 @@ Pattern.prototype.getRenderProps = function () {
         bottomRight: this.parts[p].bottomRight,
         topLeft: this.parts[p].topLeft,
       }
+    }
+  }
+  props.stacks = {}
+  for (let s in this.stacks) {
+    if (!this.isStackHidden(s)) {
+      props.stacks[s] = this.stacks[s]
     }
   }
 

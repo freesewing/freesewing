@@ -4,7 +4,6 @@ import { round, Design, Point, pctBasedOn } from '../src/index.mjs'
 const expect = chai.expect
 
 describe('Stacks', () => {
-
   describe('Pattern.init()', () => {
     const partA = {
       name: 'test.partA',
@@ -12,9 +11,9 @@ describe('Stacks', () => {
       options: {
         size: { pct: 40, min: 20, max: 80 },
       },
-      draft: ({ points, Point, paths, Path, part, store, measurements, options}) => {
+      draft: ({ points, Point, paths, Path, part, store, measurements, options }) => {
         store.set('size', measurements.head * options.size)
-        points.from = new Point(0,0)
+        points.from = new Point(0, 0)
         points.to = new Point(0, store.get('size'))
         paths.line = new Path().move(points.from).line(points.to)
         return part
@@ -25,8 +24,8 @@ describe('Stacks', () => {
       name: 'test.partB',
       measurements: ['head'],
       after: partA,
-      draft: ({ points, Point, paths, Path, part, store}) => {
-        points.from = new Point(0,store.get('size'))
+      draft: ({ points, Point, paths, Path, part, store }) => {
+        points.from = new Point(0, store.get('size'))
         points.to = new Point(store.get('size'), store.get('size'))
         paths.line = new Path().move(points.from).line(points.to)
         return part
@@ -36,7 +35,7 @@ describe('Stacks', () => {
     const partC = {
       name: 'test.partC',
       after: partB,
-      draft: ({ points, Point, paths, Path, part, store}) => {
+      draft: ({ points, Point, paths, Path, part, store }) => {
         points.from = new Point(store.get('size'), store.get('size'))
         points.to = new Point(store.get('size'), 0)
         paths.line = new Path().move(points.from).line(points.to)
@@ -47,13 +46,13 @@ describe('Stacks', () => {
     const partD = {
       name: 'test.partD',
       after: partC,
-      draft: ({ points, Point, paths, Path, part, store}) => {
+      draft: ({ points, Point, paths, Path, part, store }) => {
         points.from = new Point(store.get('size'), 0)
         points.to = new Point(0, 0)
         paths.line = new Path().move(points.from).line(points.to)
         return part
       },
-    //  stack: 'box',
+      //  stack: 'box',
     }
 
     const Pattern = new Design({
@@ -65,8 +64,8 @@ describe('Stacks', () => {
     })
     const pattern = new Pattern({
       measurements: {
-        head: 400
-      }
+        head: 400,
+      },
     })
     pattern.draft()
     console.log(pattern.store.logs)
@@ -90,6 +89,5 @@ describe('Stacks', () => {
         pattern.config.resolvedDependencies['test.partC'].indexOf('test.partB') !== -1
       ).to.equal(true)
     })
-
   })
 })

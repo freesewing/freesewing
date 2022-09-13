@@ -2,7 +2,7 @@ import { Attributes } from './attributes.mjs'
 import { Point } from './point.mjs'
 import * as utils from './utils.mjs'
 
-export function Stack(name=null) {
+export function Stack(name = null) {
   // Non-enumerable properties
   utils.addNonEnumProp(this, 'freeId', 0)
   utils.addNonEnumProp(this, 'topLeft', false)
@@ -20,20 +20,20 @@ export function Stack(name=null) {
 }
 
 /* Adds a part to the stack */
-Stack.prototype.addPart = function(part) {
+Stack.prototype.addPart = function (part) {
   if (part) this.parts.add(part)
 
   return this
 }
 
 /* Returns a list of parts in this stack */
-Stack.prototype.getPartList = function(part) {
+Stack.prototype.getPartList = function (part) {
   return [...this.parts]
 }
 
 /* Returns a list of names of parts in this stack */
-Stack.prototype.getPartNames = function(part) {
-  return [...this.parts].map(p => p.name)
+Stack.prototype.getPartNames = function (part) {
+  return [...this.parts].map((p) => p.name)
 }
 
 /** Homes the stack so that its top left corner is in (0,0) */
@@ -58,9 +58,11 @@ Stack.prototype.home = function () {
 
 /** Calculates the stack's bounding box and sets it */
 Stack.prototype.home = function () {
+  if (this.topLeft) return this // Cached
   this.topLeft = new Point(Infinity, Infinity)
   this.bottomRight = new Point(-Infinity, -Infinity)
   for (const part of this.getPartList()) {
+    part.boundary()
     if (part.topLeft.x < this.topLeft.x) this.topLeft.x = part.topLeft.x
     if (part.topLeft.y < this.topLeft.y) this.topLeft.y = part.topLeft.y
     if (part.bottomRight.x > this.bottomRight.x) this.bottomRight.x = part.bottomRight.x
@@ -73,8 +75,53 @@ Stack.prototype.home = function () {
   if (this.bottomRight.x === -Infinity) this.bottomRight.x = 0
   if (this.bottomRight.y === -Infinity) this.bottomRight.y = 0
 
+  // Add margin
+  let margin = this.context.settings.margin
+  if (this.context.settings.paperless && margin < 10) margin = 10
+  this.topLeft.x -= margin
+  this.topLeft.y -= margin
+  this.bottomRight.x += margin
+  this.bottomRight.y += margin
+
+  // Set dimensions
   this.width = this.bottomRight.x - this.topLeft.x
   this.height = this.bottomRight.y - this.topLeft.y
+  this.width = this.bottomRight.x - this.topLeft.x
+  this.height = this.bottomRight.y - this.topLeft.y
+
+  // Add transform
+  this.anchor = this.getAnchor()
+
+  if (this.topLeft.x === this.anchor.x && this.topLeft.y === this.anchor.y) return this
+  else {
+    this.attr('transform', `translate(${this.anchor.x - this.topLeft.x}, ${this.anchor.y - this.topLeft.y})`)
+    this.layout.move.x = this.anchor.x - this.topLeft.x
+    this.layout.move.y = this.anchor.y - this.topLeft.y
+  }
+
+  return this
+}
+
+/** Finds the anchor to aling parts in this stack */
+Stack.prototype.getAnchor = function() {
+  let anchorPoint = true
+  let gridAnchorPoint = true
+  const parts = this.getPartList()
+  for (const part of parts) {
+    if (typeof part.points.anchor === 'undefined') anchorPoint = false
+    if (typeof part.points.gridAnchor === 'undefined') gridAnchorPoint = false
+  }
+
+  if (anchorPoint) return parts[0].points.anchor
+  if (gridAnchorPoint) return parts[0].points.gridAnchor
+
+  return new Point(0,0)
+}
+
+/** Adds an attribute. This is here to make this call chainable in assignment */
+Stack.prototype.attr = function (name, value, overwrite = false) {
+  if (overwrite) this.attributes.set(name, value)
+  else this.attributes.add(name, value)
 
   return this
 }
