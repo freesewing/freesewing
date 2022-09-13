@@ -9,7 +9,7 @@ sabool:
   title: Nahtzugabe hinzufügen
   description: Legt fest, ob eine Nahtzugabe deinem Schnittmuster hinzugefügt werden soll
 sa:
-  title: Größe Nahtzugabe
+  title: Größe der Nahtzugabe
   description: Steuert die Breite der Nahtzugabe, die in deinem Schnittmuster enthalten ist
 locale:
   title: Sprache
