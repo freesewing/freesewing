@@ -1,7 +1,7 @@
 import { addDartToCurve, dartCalc } from './utils.mjs'
 
-export const measurements = ['waist', 'seat', 'waistToHips', 'waistToSeat', 'waistToKnee','waistBack', 'seatBack']
-// export const optionalMeasurements = ['waistBack', 'seatBack']
+export const measurements = ['waist', 'seat', 'waistToHips', 'waistToSeat', 'waistToKnee']
+export const optionalMeasurements = ['waistBack', 'seatBack']
 export const waistEase = { pct: 1, min: 0, max: 8, menu: 'fit' }
 export const options = {
   // FIXME: All of these constants mean this pattern won't scale properly :(
@@ -69,16 +69,15 @@ export function BuildMainShape(part, frontPart) {
   store.set('nrOfDarts', nrOfDarts)
   store.set('dartSize', dartSize)
 
-  if( measurements.seatBack ) {
-    // sideSeamShift = (frontPart ? -1 : 1) * (measurements.seatBack*2 -seat)/2
-    seat = (frontPart ? (seat -measurements.seatBack) : measurements.seatBack) *2
+  if( optionalMeasurements?.seatBack ) {
+    seat = (frontPart ? (seat -optionalMeasurements.seatBack) : optionalMeasurements.seatBack) *2
   } else {
-    seat = (frontPart ? -1 : 1) * options.sideSeamShiftPercentage 
+    seat *= 1+((frontPart ? -1 : 1) * options.sideSeamShiftPercentage)
   }
-  if( measurements.waistBack ) {
-    waist = (frontPart ? (waist -measurements.waistBack) : measurements.waistBack) *2
+  if( optionalMeasurements?.waistBack ) {
+    waist = (frontPart ? (waist -optionalMeasurements.waistBack) : optionalMeasurements.waistBack) *2
   } else {
-    seat = (frontPart ? -1 : 1) * options.sideSeamShiftPercentage 
+    waist *= 1+((frontPart ? -1 : 1) * options.sideSeamShiftPercentage) 
   }
   if( waist > seat ) {seat = waist}
 
@@ -128,7 +127,7 @@ export function BuildMainShape(part, frontPart) {
   //     waistToSeat: measurements.waistToSeat,
   //     waistToKnee: measurements.waistToKnee,
   //     waistBack: measurements.waistBack,
-  //     seatBack: measurements.seatBack,
+  //     seatBack: optionalMeasurements.seatBack,
   //   }
   // })
   // console.log({sideSeamLength: store.get('sideSeamLength')})
