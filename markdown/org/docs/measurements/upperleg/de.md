@@ -4,7 +4,7 @@ title: Oberschenkelumfang
 
 Der **obere Beinumfang** ist die Messung am oberen Teil deines Beines.
 
-Sie sollten dies ein wenig unterhalb Ihres Schrittes messen, siehe die Illustration zur Anleitung. Achte darauf, das Maßband parallel zum Boden zu halten, während du den Umfang deines Knies misst.
+Du solltest dies ein wenig unterhalb deines Schrittes messen, siehe die Illustration zur Anleitung. Achte darauf, das Maßband parallel zum Boden zu halten, während du den Umfang deines Knies misst.
 
 <Tip>
 
