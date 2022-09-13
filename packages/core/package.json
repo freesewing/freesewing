@@ -42,7 +42,9 @@
     "report": "c8 report",
     "testci": "mocha tests/*.test.mjs",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
-    "cibuild_step0": "node build.mjs"
+    "cibuild_step0": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step0": "node build.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
