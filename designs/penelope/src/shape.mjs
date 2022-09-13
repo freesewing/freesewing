@@ -4,7 +4,6 @@ export const measurements = ['waist', 'seat', 'waistToHips', 'waistToSeat', 'wai
 export const optionalMeasurements = ['waistBack', 'seatBack']
 export const waistEase = { pct: 1, min: 0, max: 8, menu: 'fit' }
 export const options = {
-  // FIXME: All of these constants mean this pattern won't scale properly :(
   dartMaximumDifference: 0.344,
   dartMinimumDifference: 0.2,
   dartMinimumWidth: 0.006888,
@@ -101,12 +100,7 @@ export function BuildMainShape(part, frontPart) {
       Math.abs((options.hemBonus * seat) / 10)) /
       options.hipCurveDividerDown
   )
-  //$p->newPoint('pH',   $sideSeam, $model->m('waistToHips') -$this->o('waistSideSeamRise'));
-  let waistFactorStart = 0.99
-  let waistFactorAdjustment = 1
   let waistFactor = 0.99
-  let sideFactorStart = 0.97
-  let sideFactorAdjustment = 1
   let sideFactor = 0.97
   let wdelta = 1
   let sdelta = 1
@@ -120,37 +114,20 @@ export function BuildMainShape(part, frontPart) {
   let curve1 = null
   let curve2 = null
 
-  // console.log({measurements: {
-  //     waist: measurements.waist,
-  //     seat: measurements.seat,
-  //     waistToHips: measurements.waistToHips,
-  //     waistToSeat: measurements.waistToSeat,
-  //     waistToKnee: measurements.waistToKnee,
-  //     waistBack: measurements.waistBack,
-  //     seatBack: optionalMeasurements.seatBack,
-  //   }
-  // })
-  // console.log({sideSeamLength: store.get('sideSeamLength')})
-
   do {
     if (wdelta < -1) {
       waistFactor *= 0.98
-      // waistFactor = waistFactorStart *(0.997**(waistFactorAdjustment ++))
     } else if (wdelta > 1) {
-      // waistFactor = waistFactorStart *(1.002**(waistFactorAdjustment ++))
       waistFactor *= 1.02
     }
     if (sdelta < -1) {
       sideFactor *= 0.97
-      // sideFactor = sideFactorStart *(0.97**(sideFactorAdjustment ++))
     } else if (sdelta > 1) {
       sideFactor *= 1.03
-      // sideFactor = sideFactorStart *(1.02**(sideFactorAdjustment ++))
     }
     points.rWaistTemp1 = points.lWaist.shift(0, (waist / 4) * waistFactor)
     points.rWaistTemp2 = points.rWaistTemp1.shift(0, dartSize * nrOfDarts)
     points.rWaist = points.rWaistTemp2.shift(90, (measurements.waistToSeat*0.0615) * sideFactor)
-    // points.rWaist = points.rWaistTemp2.shift(90, 16 * sideFactor)
     points.lWaistCP = points.lWaist.shift(0, seat / 12)
     points.rWaistCPleft = points.rWaist.shift(
       points.rWaist.angle(points.rWaistCPdown) - 90,
@@ -164,7 +141,6 @@ export function BuildMainShape(part, frontPart) {
 
     if (nrOfDarts > 0) {
       let dartDistance = seat / 4 / options.curvePlacement
-      // console.log({dartDistance: dartDistance, dartSize: dartSize})
       curve1 = addDartToCurve(
         part,
         waistCurve,
@@ -174,16 +150,13 @@ export function BuildMainShape(part, frontPart) {
       )
       if( curve1 ) {
         waistLength = curve1.left.length()
-        // console.log({left1: curve1.left.length(), right1: curve1.right.length()})
         points.dart1Start = curve1.dart.start()
         points.dart1Middle = curve1.dart.ops[1].to
         points.dart1End = curve1.dart.end()
         if (nrOfDarts > 1) {
           let dart2offset = measurements.waist / 35
           if( dart2offset < dartSize /1.8 ) {dart2offset = dartSize /1.8}
-          // if( dart2offset < dartSize /2 +sa ) {dart2offset = dartSize /2 -sa}
 
-          // console.log({ dart2offset: dart2offset })
           curve2 = addDartToCurve(
             part,
             curve1.right,
@@ -243,21 +216,6 @@ export function BuildMainShape(part, frontPart) {
       sideSeamLength = sideSeamPath.length()
       sdelta = store.get('sideSeamLength') - sideSeamLength
     }
-    // console.log({
-    //   // i: iteration,
-    //   sd: sdelta,
-    //   wd: wdelta,
-    //   sf: sideFactor,
-    //   wf: waistFactor,
-    //   sl: sideSeamLength,
-    //   x: points.rWaist.x,
-    //   y: points.rWaist.y,
-    //   wl: waistLength,
-    //   sideFactor: sideFactor,
-    //   nd: nrOfDarts,
-    //   wp: waistPath,
-    //   wpSA: waistPathSA
-    // })
   } while ((Math.abs(wdelta) > 1 || Math.abs(sdelta) > 1) && iteration++ < 100)
 
   paths.waist1 = waistCurve.translate(0, 10).attr('class', 'lining dashed')

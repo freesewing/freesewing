@@ -130,7 +130,6 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
         .curve(dartLeftCp1, dartBottomCp2, dartBottom)
         .curve(dartBottomCp1, dartRightCp2,dartRight)
         .setRender(false)
-
     }
   } else {
     dart = new part.Path().move(dartLeft).line(dartBottom).line(dartRight).setRender(false)
