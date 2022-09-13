@@ -102,15 +102,15 @@ Es ist an der Zeit, die Enden der Bindung zusammen zu nähen, bevor wir unseren 
 
 ![Markieren der Enden der Einfassung](step03f.png)
 
-Nehmen Sie eins der Enden und dehnen Sie es entlang der 3cm vom Startpunkt ab, wie Sie es beim Nähen tun würden.
+Nimm eins der Enden und dehne es entlang der 3cm ab den Startpunkt, wie du es beim Nähen tun würdest.
 
-Markieren Sie die Bindung, wo sie den Startpunkt erreicht. Tun Sie das Gleiche für das andere Ende.
+Markiere die Einfassung, wo sie den Startpunkt erreicht. Tu das Gleiche für das andere Ende.
 
 ### Nähbindung endet zusammen
 
 ![Zusammenfügen des Einfassstreifens](step03g.png)
 
-Durch das Falten Ihres T-Shirts ist es für Sie einfacher, beide Enden mit guten Seiten miteinander zu verbinden, indem Sie die Markierungen ausrichten. Nähe die Einfassstreifen auf der Markierung zusammen.
+Falte dein A-Shirt so, dass es am einfachsten ist die guten Enden des Einfassbandes mit rechts auf rechts an der Markierung zusammenzubringen. Nähe die Einfassstreifen auf der Markierung zusammen.
 
 > 6 cm ist nicht viel, aber sollte ausreichen, um beide Kanten bequem unter Ihrer Nähmaschine zu nähen.
 
@@ -126,7 +126,7 @@ Now that your binding ends are joined together, it's time to finish the last 6cm
 
 ![Falte den Einfassstreifen zurück](step04a.png)
 
-Falte den Einfassstreifen um den Hauptstoff deines A-shirts nach hinten. So werden wir es nach unten nähen.
+Falte den Einfassstreifen um den Hauptstoff deines A-shirts nach hinten. So nähen wir es jetzt fest.
 
 > Während der Stoff doppelt geklappt ist (Verstecke den Stoffrand im Prozess), ist das auf der Rückseite nicht nötig. Wir werden später nur noch den Rand zurückschneiden, da der Strick nicht schwenkt. Wenn wir den Stoff auch auf der Rückseite zurückklappen würden, würde er nur noch mehr massieren.
 
@@ -142,13 +142,13 @@ Wenn Sie eine Coverlock Maschine haben, wäre das perfekt für diese Naht
 
 </Note>
 
-Du musst deine Bindung noch einmal etwas ausdehnen, während du dies tust. Dieses mal gibt es eine zusätzliche Sache zu beachten.
+Du musst deine Einfassung noch einmal etwas dehnen, während du dies tust. Dieses mal gibt es eine zusätzliche Sache zu beachten.
 
 <Note>
 
 ##### Vorsicht vor dem ungleichemäßigen Transport
 
-während du deine Bindung annähst, zieht der Transport der Nähmaschine die untere Schicht (also den Einfassstreifen unten) schneller vorwärts.
+Während du deine Einfassung annähst, zieht der Transporter der Nähmaschine die untere Schicht (also den Einfassstreifen unten) schneller vorwärts.
 
 In einer perfekten Welt folgen alle Ebenen reibungslos.
 In den meisten Fällen hinkt die obere Ebene (vor der Bindung) ein bisschen hinterher.
@@ -162,7 +162,7 @@ Also achte darauf, und wenn du das siehst, strecke die Unterschicht ein bisschen
 
 ![Schneide die Einfassung auf der Innenseite zurück](step05.png)
 
-Auf der Innenseite Ihres A-shirts die Einfassung gegen die Naht zurückdrehen, um nahe an die Naht zu kommen.
+Schneide deine Einfassung auf der Innenseite deines A-Shirts entlang der Naht zurück.
 
 <Note>
 
