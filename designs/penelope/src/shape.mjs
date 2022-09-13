@@ -20,8 +20,9 @@ export const options = {
   sideSeamShiftPercentage: 0.006,
   backVentWidth: 0.1,
   paperlessOffset: 15,
-  curvedDartControlAngle: 3,
-  curvedDartControlOffset: 0.33,
+  curvedDartControlAngle: 2,
+  curvedDartTopControlOffset: 0.2,
+  curvedDartBottomControlOffset: 0.4,
   curvedDarts: { bool: true, menu: 'style' },
   lengthBonus: { pct: 0, min: -50, max: 50, menu: 'style' },
   hemBonus: { pct: 0, min: -35, max: 0, menu: 'style' },
@@ -46,7 +47,6 @@ export function BuildMainShape(part, frontPart) {
   store.set('skirtLength', skirtLength)
   store.set('waistEase', measurements.waist * options.waistEase)
   store.set('seatEase', measurements.seat * options.seatEase)
-  // [joost] I don't like how hem is handled here rather than as hem allowance
   store.set('hem', measurements.waistToKnee * options.hem)
 
   let dartDepthFactor = frontPart ? options.frontDartDepthFactor : options.backDartDepthFactor
@@ -69,16 +69,18 @@ export function BuildMainShape(part, frontPart) {
   store.set('nrOfDarts', nrOfDarts)
   store.set('dartSize', dartSize)
 
-  let sideSeamShift = (frontPart ? -1 : 1) * options.sideSeamShiftPercentage * seat
   if( measurements.seatBack ) {
     // sideSeamShift = (frontPart ? -1 : 1) * (measurements.seatBack*2 -seat)/2
     seat = (frontPart ? (seat -measurements.seatBack) : measurements.seatBack) *2
+  } else {
+    seat = (frontPart ? -1 : 1) * options.sideSeamShiftPercentage 
   }
   if( measurements.waistBack ) {
     waist = (frontPart ? (waist -measurements.waistBack) : measurements.waistBack) *2
+  } else {
+    seat = (frontPart ? -1 : 1) * options.sideSeamShiftPercentage 
   }
   if( waist > seat ) {seat = waist}
-  console.log({front:frontPart,seat:seat,waist:waist})
 
   seat += store.get('seatEase')
   waist += store.get('waistEase')
@@ -101,11 +103,15 @@ export function BuildMainShape(part, frontPart) {
       options.hipCurveDividerDown
   )
   //$p->newPoint('pH',   $sideSeam, $model->m('waistToHips') -$this->o('waistSideSeamRise'));
+  let waistFactorStart = 0.99
+  let waistFactorAdjustment = 1
   let waistFactor = 0.99
+  let sideFactorStart = 0.97
+  let sideFactorAdjustment = 1
   let sideFactor = 0.97
   let wdelta = 1
   let sdelta = 1
-  let iteration = 0
+  let iteration = 1
   let waistCurve = null
   let waistPath = null
   let waistPathSA = null
@@ -115,20 +121,37 @@ export function BuildMainShape(part, frontPart) {
   let curve1 = null
   let curve2 = null
 
+  // console.log({measurements: {
+  //     waist: measurements.waist,
+  //     seat: measurements.seat,
+  //     waistToHips: measurements.waistToHips,
+  //     waistToSeat: measurements.waistToSeat,
+  //     waistToKnee: measurements.waistToKnee,
+  //     waistBack: measurements.waistBack,
+  //     seatBack: measurements.seatBack,
+  //   }
+  // })
+  // console.log({sideSeamLength: store.get('sideSeamLength')})
+
   do {
     if (wdelta < -1) {
-      waistFactor *= 0.99
+      waistFactor *= 0.98
+      // waistFactor = waistFactorStart *(0.997**(waistFactorAdjustment ++))
     } else if (wdelta > 1) {
+      // waistFactor = waistFactorStart *(1.002**(waistFactorAdjustment ++))
       waistFactor *= 1.02
     }
     if (sdelta < -1) {
-      sideFactor *= 0.98
+      sideFactor *= 0.97
+      // sideFactor = sideFactorStart *(0.97**(sideFactorAdjustment ++))
     } else if (sdelta > 1) {
       sideFactor *= 1.03
+      // sideFactor = sideFactorStart *(1.02**(sideFactorAdjustment ++))
     }
     points.rWaistTemp1 = points.lWaist.shift(0, (waist / 4) * waistFactor)
     points.rWaistTemp2 = points.rWaistTemp1.shift(0, dartSize * nrOfDarts)
-    points.rWaist = points.rWaistTemp2.shift(90, 16 * sideFactor)
+    points.rWaist = points.rWaistTemp2.shift(90, (measurements.waistToSeat*0.0615) * sideFactor)
+    // points.rWaist = points.rWaistTemp2.shift(90, 16 * sideFactor)
     points.lWaistCP = points.lWaist.shift(0, seat / 12)
     points.rWaistCPleft = points.rWaist.shift(
       points.rWaist.angle(points.rWaistCPdown) - 90,
@@ -150,50 +173,60 @@ export function BuildMainShape(part, frontPart) {
         dartSize,
         measurements.waistToSeat * dartDepthFactor
       )
-      waistLength = curve1.left.length()
-      // console.log({left1: curve1.left.length(), right1: curve1.right.length()})
-      points.dart1Start = curve1.dart.start()
-      points.dart1Middle = curve1.dart.ops[1].to
-      points.dart1End = curve1.dart.end()
-      if (nrOfDarts > 1) {
-        let dart2offset = measurements.waist / 35
-        if( dart2offset < dartSize /1.8 ) {dart2offset = dartSize /1.8}
-        // if( dart2offset < dartSize /2 +sa ) {dart2offset = dartSize /2 -sa}
+      if( curve1 ) {
+        waistLength = curve1.left.length()
+        // console.log({left1: curve1.left.length(), right1: curve1.right.length()})
+        points.dart1Start = curve1.dart.start()
+        points.dart1Middle = curve1.dart.ops[1].to
+        points.dart1End = curve1.dart.end()
+        if (nrOfDarts > 1) {
+          let dart2offset = measurements.waist / 35
+          if( dart2offset < dartSize /1.8 ) {dart2offset = dartSize /1.8}
+          // if( dart2offset < dartSize /2 +sa ) {dart2offset = dartSize /2 -sa}
 
-        // console.log({ dart2offset: dart2offset })
-        curve2 = addDartToCurve(
-          part,
-          curve1.right,
-          dart2offset,
-          dartSize,
-          measurements.waistToSeat * dartDepthFactor * options.dart2factor
-        )
-        waistLength += curve2.left.length()
-        waistLength += curve2.right.length()
-        waistPath = curve1.left.clone()
-          .join(curve1.dart)
-          .join(curve2.left)
-          .join(curve2.dart)
-          .join(curve2.right)
-        
-        waistPathSA = curve1.left.clone()
-          .line(curve2.left.start())
-          .join(curve2.left)
-          .line(curve2.right.start())
-          .join(curve2.right)
-        
-        points.dart2Start = curve2.dart.start()
-        points.dart2Middle = curve2.dart.ops[1].to
-        points.dart2End = curve2.dart.end()
+          // console.log({ dart2offset: dart2offset })
+          curve2 = addDartToCurve(
+            part,
+            curve1.right,
+            dart2offset,
+            dartSize,
+            measurements.waistToSeat * dartDepthFactor * options.dart2factor
+          )
+          if( curve2 ) {
+            waistLength += curve2.left.length()
+            waistLength += curve2.right.length()
+            waistPath = curve1.left.clone()
+              .join(curve1.dart)
+              .join(curve2.left)
+              .join(curve2.dart)
+              .join(curve2.right)
+            
+            waistPathSA = curve1.left.clone()
+              .line(curve2.left.start())
+              .join(curve2.left)
+              .line(curve2.right.start())
+              .join(curve2.right)
+            
+            points.dart2Start = curve2.dart.start()
+            points.dart2Middle = curve2.dart.ops[1].to
+            points.dart2End = curve2.dart.end()
+          } else {
+            nrOfDarts --
+          }
+        } 
+        if( nrOfDarts == 1 ) {
+          waistLength += curve1.right.length()
+          waistPath = curve1.left.clone()
+            .join(curve1.dart)
+            .join(curve1.right)
+          waistPathSA = curve1.left.clone()
+            .join(curve1.right)
+        }
       } else {
-        waistLength += curve1.right.length()
-        waistPath = curve1.left.clone()
-          .join(curve1.dart)
-          .join(curve1.right)
-        waistPathSA = curve1.left.clone()
-          .join(curve1.right)
+        nrOfDarts --
       }
-    } else {
+    } 
+    if( nrOfDarts == 0 ) {
       waistLength = waistCurve.length()
       waistPath = waistCurve
       waistPathSA = waistCurve.clone()
@@ -211,11 +244,27 @@ export function BuildMainShape(part, frontPart) {
       sideSeamLength = sideSeamPath.length()
       sdelta = store.get('sideSeamLength') - sideSeamLength
     }
+    // console.log({
+    //   // i: iteration,
+    //   sd: sdelta,
+    //   wd: wdelta,
+    //   sf: sideFactor,
+    //   wf: waistFactor,
+    //   sl: sideSeamLength,
+    //   x: points.rWaist.x,
+    //   y: points.rWaist.y,
+    //   wl: waistLength,
+    //   sideFactor: sideFactor,
+    //   nd: nrOfDarts,
+    //   wp: waistPath,
+    //   wpSA: waistPathSA
+    // })
   } while ((Math.abs(wdelta) > 1 || Math.abs(sdelta) > 1) && iteration++ < 100)
 
   paths.waist1 = waistCurve.translate(0, 10).attr('class', 'lining dashed')
 
   if (iteration >= 100) {
+    console.log( 'Too many iterations trying to make it fit!' )
     throw 'Too many iterations trying to make it fit!'
   }
 

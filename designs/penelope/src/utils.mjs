@@ -1,6 +1,4 @@
 function dartCalcFront(options, seatWaistDiff, waist, nrOfDarts) {
-  console.log({ Front_seatWaistDiff: seatWaistDiff, Front_waist: waist, Front_nrOfDarts: nrOfDarts});
-  
   return (
     (((waist*options.dartMinimumWidth) +
       (Math.max(
@@ -15,11 +13,6 @@ function dartCalcFront(options, seatWaistDiff, waist, nrOfDarts) {
 }
 
 function dartCalcBack(options, seatWaistDiff, waist, nrOfDarts) {
-  /*
-  console.log(
-    "B: seatWaistDiff: " + seatWaistDiff + " nrOfDarts: " + nrOfDarts
-  );
-  */
   return (
     (((waist*options.dartMinimumWidth) +
       (seatWaistDiff -
@@ -40,14 +33,6 @@ function dartCalc(store, options, seat, seatEase, waist, waistEase) {
 
   let frontDartSize = dartCalcFront(options, seatWaistDiff, waist, nrOfDarts)
 
-  /*
-  console.log({
-    frontDartSize: frontDartSize,
-    dartMinimumWidth: options.dartMinimumWidth,
-    nrOfDarts: nrOfDarts
-  });
-  */
-
   // If the front darts are too small and we have more than one, remove one.
   if (frontDartSize <= options.dartMinimumWidth * nrOfDarts && nrOfDarts > 1) {
     nrOfDarts--
@@ -58,17 +43,6 @@ function dartCalc(store, options, seat, seatEase, waist, waistEase) {
   if (seatWaistDiff / 4 - frontDartSize < options.dartSideMinimum) {
     frontDartSize = 0
   }
-  //        if( seatWaistDiff/4 -frontDartSize < options.dartSideMinimum || frontDartSize < options.dartMinimumWidth *nrOfDarts ) {
-  //            nrOfDarts = 1;
-  //        }
-
-  /*
-  console.log({
-    frontDartSize: frontDartSize,
-    dartMinimumWidth: options.dartMinimumWidth,
-    nrOfDarts: nrOfDarts
-  });
-  */
 
   let backDartSize = dartCalcBack(options, seatWaistDiff, waist, nrOfDarts)
   // If the back darts are too small and we have more than one, remove one.
@@ -77,21 +51,6 @@ function dartCalc(store, options, seat, seatEase, waist, waistEase) {
     frontDartSize = dartCalcFront(options, seatWaistDiff, waist, nrOfDarts)
     backDartSize = dartCalcBack(options, seatWaistDiff, waist, nrOfDarts)
   }
-
-  /*
-  console.log({
-    backDartSize: backDartSize,
-    dartMinimumWidth: options.dartMinimumWidth,
-    nrOfDarts: nrOfDarts
-  });
-  */
-
-  console.log({
-    nrOfDarts: nrOfDarts,
-    frontDartSize: frontDartSize,
-    backDartSize: backDartSize,
-    seatWaistDiff: seatWaistDiff
-  })
 
   store.set('frontDartSize', frontDartSize)
   store.set('backDartSize', backDartSize)
@@ -111,20 +70,23 @@ function dartCalc(store, options, seat, seatEase, waist, waistEase) {
  */
 function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
   const { options } = part.shorthand()
-
-  // Protecting against dart starting before start of curve
-  if( distance < dartSize /2 ) {
-    distance = dartSize /2
+  
+  if( dartSize > curvePath.length() ) {
+    // Curve too small to fit dart!
+    return( null )
   }
-  if(curvePath.length() < distance){
-    throw 'Curve too small to fit dart!'
+  if( distance < dartSize /1.9 ) {
+    distance = dartSize /2.1
   }
-
+  if( curvePath.length() - distance < dartSize ) {
+    distance = curvePath.length() -(dartSize /1.95)
+  }
   let dartMiddle = curvePath.shiftAlong(distance)
-
   let curvePaths = curvePath.split(dartMiddle)
+
   if(curvePaths[0].length() < dartSize/2 || curvePaths[1].length() < dartSize/2 ){
-    throw 'Curve too small to fit dart!'
+    // Curve too small to fit dart!
+    return( null )
   }
   let dartLeft = curvePaths[0].reverse().shiftAlong(dartSize / 2)
   let dartRight = curvePaths[1].shiftAlong(dartSize / 2)
@@ -153,16 +115,15 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
     .curve(rightDartCP, curvePaths[1].ops[1].cp2, curvePaths[1].ops[1].to)
     .setRender(false)
 
-  // console.log({angle:dartBottom.angle(dartLeft)-dartBottom.angle(dartRight)})
   let dart
   if( options.curvedDarts ) {
     if( dartBottom.angle(dartLeft)-dartBottom.angle(dartRight) < options.curvedDartControlAngle*2) {
       dart = new part.Path().move(dartLeft).line(dartBottom).line(dartRight).setRender(false)
     } else {
-      let dartBottomCp2 = dartBottom.shiftFractionTowards(dartMiddle, options.curvedDartControlOffset).rotate(options.curvedDartControlAngle,dartBottom)
-      let dartBottomCp1 = dartBottom.shiftFractionTowards(dartMiddle, options.curvedDartControlOffset).rotate(360-options.curvedDartControlAngle,dartBottom)
-      let dartLeftCp1 = dartLeft.shiftFractionTowards(dartBottom, options.curvedDartControlOffset)
-      let dartRightCp2 = dartRight.shiftFractionTowards(dartBottom, options.curvedDartControlOffset)
+      let dartBottomCp2 = dartBottom.shiftFractionTowards(dartMiddle, options.curvedDartBottomControlOffset).rotate(options.curvedDartControlAngle,dartBottom)
+      let dartBottomCp1 = dartBottom.shiftFractionTowards(dartMiddle, options.curvedDartBottomControlOffset).rotate(360-options.curvedDartControlAngle,dartBottom)
+      let dartLeftCp1 = dartLeft.shiftFractionTowards(dartBottom, options.curvedDartTopControlOffset)
+      let dartRightCp2 = dartRight.shiftFractionTowards(dartBottom, options.curvedDartTopControlOffset)
 
       dart = new part.Path()
         .move(dartLeft)
