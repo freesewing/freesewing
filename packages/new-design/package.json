@@ -28,9 +28,9 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "i18n-only": "node ../../sites/shared/prebuild/i18n-only.mjs",
-    "wbuild": "set SITE=new-design/shared && node ../../sites/shared/prebuild/i18n-only.mjs && copy ..\\..\\scripts\\banner.mjs .\\lab && node build.mjs && set SITE=",
+    "wbuild": "set SITE=\"new-design/shared\"&& node ../../sites/shared/prebuild/i18n-only.mjs && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE=",
     "cibuild_step6": "SITE=new-design/shared yarn run i18n-only && cp ../../scripts/banner.mjs ./lib && node build.mjs",
-    "wcibuild_step6": "set SITE=new-design/shared && node ../../sites/shared/prebuild/i18n-only.mjs && copy ..\\..\\scripts\\banner.mjs .\\lab && node build.mjs && set SITE="
+    "wcibuild_step6": "set SITE=\"new-design/shared\"&& node ../../sites/shared/prebuild/i18n-only.mjs && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE="
   },
   "peerDependencies": {},
   "dependencies": {
