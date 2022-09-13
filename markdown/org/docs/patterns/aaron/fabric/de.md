@@ -2,7 +2,7 @@
 title: "Aaron A-Shirt: Stoffoptionen"
 - - -
 
-Ein A-Shirt ist im Wesentlichen Unterwäsche. Und in dieser Eigenschaft wolllen sie etwas bequemes, das sich gut anfühlt auf der Haut und atmet.
+Ein A-Shirt ist im Wesentlichen Unterwäsche. Und in dieser Hinsicht willst du etwas Bequemes, das sich auf der Haut gut anfühlt und atmungsaktiv ist.
 
 Baumwolle mit einem Hauch von etwas dehnbaren, vielleicht Viskose oder feiner Strick. Ich schlage vor, Sie gehen in den Stoffladen und fühlen sich um ein wenig.
 
