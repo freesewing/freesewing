@@ -59,6 +59,7 @@ core:
     'lodash.set': '^4.3.2'
     'lodash.unset': '^4.5.2'
   dev:
+    'eslint': '^8.23.1'
     'nyc': '^15.1.0'
 diana:
   peer:

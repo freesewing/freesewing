@@ -253,7 +253,7 @@ describe('Point', () => {
     const p1 = new Point(10, 10).withRaise(raise)
     const p2 = new Point(20, 20).withRaise(raise)
     expect(invalid).to.equal(false)
-    const p3 = p1.rotate('a', p2)
+    p1.rotate('a', p2)
     expect(invalid).to.equal(true)
   })
 
@@ -274,7 +274,6 @@ describe('Point', () => {
     let invalid = false
     const raise = { warning: () => (invalid = true) }
     const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
     expect(invalid).to.equal(false)
     try {
       p1.flipX('a')
@@ -288,7 +287,6 @@ describe('Point', () => {
     let invalid = false
     const raise = { warning: () => (invalid = true) }
     const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
     expect(invalid).to.equal(false)
     try {
       p1.flipY('a')
@@ -342,7 +340,6 @@ describe('Point', () => {
     let invalid = false
     const raise = { warning: () => (invalid = true) }
     const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
     expect(invalid).to.equal(false)
     try {
       p1.shiftTowards('a', 10)
@@ -370,7 +367,6 @@ describe('Point', () => {
     let invalid = false
     const raise = { warning: () => (invalid = true) }
     const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
     expect(invalid).to.equal(false)
     try {
       p1.shiftFractionTowards('a', 0.1)
@@ -398,7 +394,6 @@ describe('Point', () => {
     let invalid = false
     const raise = { warning: () => (invalid = true) }
     const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
     expect(invalid).to.equal(false)
     try {
       p1.shiftOutwards('a', 0.1)

@@ -21,6 +21,7 @@ core:
   test: 'c8 mocha tests/*.test.mjs'
   testci: "mocha tests/*.test.mjs"
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
+  lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
 i18n:
   prebuild: 'node scripts/prebuilder.mjs'
   test: *test

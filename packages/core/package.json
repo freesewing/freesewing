@@ -42,6 +42,7 @@
     "report": "c8 report",
     "testci": "mocha tests/*.test.mjs",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
+    "lint": "npx eslint 'src/*.mjs' 'tests/*.mjs'",
     "cibuild_step0": "node build.mjs"
   },
   "peerDependencies": {},
@@ -54,6 +55,7 @@
     "lodash.unset": "^4.5.2"
   },
   "devDependencies": {
+    "eslint": "^8.23.1",
     "nyc": "^15.1.0"
   },
   "files": [

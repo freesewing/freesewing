@@ -30,7 +30,6 @@ describe('Store', () => {
   })
 
   it('Should emit a warning when retrieving a invalid key', () => {
-    const warning = (msg) => events.push(msg)
     const store = new Store()
     store.get('nope')
     expect(store.get('logs.warning').length).to.equal(1)
@@ -63,6 +62,8 @@ describe('Store', () => {
       draft: ({ store, part }) => {
         store.test.example.warning('hello warning')
         store.test.example.info('hello info')
+
+        return part
       },
     }
     const Test = new Design({ plugins: [plugin], parts: [part] })
