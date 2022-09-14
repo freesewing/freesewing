@@ -361,8 +361,8 @@ export function pctBasedOn(measurement) {
   }
 }
 
-/** Generates the transform attributes needed for a given part */
-export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
+/** Generates the transform attributes needed for a given stack */
+export const generateStackTransform = (x, y, rotate, flipX, flipY, part) => {
   const transforms = []
   let xTotal = x || 0
   let yTotal = y || 0

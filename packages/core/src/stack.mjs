@@ -5,16 +5,16 @@ import * as utils from './utils.mjs'
 export function Stack(name = null) {
   // Non-enumerable properties
   utils.addNonEnumProp(this, 'freeId', 0)
-  utils.addNonEnumProp(this, 'topLeft', false)
-  utils.addNonEnumProp(this, 'bottomRight', false)
-  utils.addNonEnumProp(this, 'width', false)
-  utils.addNonEnumProp(this, 'height', false)
   utils.addNonEnumProp(this, 'layout', { move: { x: 0, y: 0 } })
 
   // Enumerable properties
   this.attributes = new Attributes()
   this.parts = new Set()
   this.name = name
+  this.topLeft = false
+  this.bottomRight = false
+  this.width = false
+  this.height = false
 
   return this
 }
@@ -37,24 +37,24 @@ Stack.prototype.getPartNames = function (part) {
 }
 
 /** Homes the stack so that its top left corner is in (0,0) */
-Stack.prototype.home = function () {
-  const parts = this.getPartList()
-  if (parts.length < 1) return this
-  for (const part of this.getPartList()) {
-    part.home()
-  }
-
-  if (parts.length === 1) {
-    this.topLeft = part.topLeft
-    this.bottomRigth = part.bottomRight
-    this.width = part.width
-    this.height = part.height
-
-    return this
-  }
-
-  return this.boundary()
-}
+//Stack.prototype.home = function () {
+//  const parts = this.getPartList()
+//  if (parts.length < 1) return this
+//  for (const part of this.getPartList()) {
+//    part.home()
+//  }
+//
+//  if (parts.length === 1) {
+//    this.topLeft = part.topLeft
+//    this.bottomRigth = part.bottomRight
+//    this.width = part.width
+//    this.height = part.height
+//
+//    return this
+//  }
+//
+//  return this.boundary()
+//}
 
 /** Calculates the stack's bounding box and sets it */
 Stack.prototype.home = function () {
@@ -102,7 +102,7 @@ Stack.prototype.home = function () {
   return this
 }
 
-/** Finds the anchor to aling parts in this stack */
+/** Finds the anchor to align parts in this stack */
 Stack.prototype.getAnchor = function() {
   let anchorPoint = true
   let gridAnchorPoint = true
@@ -125,5 +125,16 @@ Stack.prototype.attr = function (name, value, overwrite = false) {
 
   return this
 }
+
+/** Generates the transform for a stack */
+Stack.prototype.generateTransform = function (transforms) {
+  const { move, rotate, flipX, flipY } = transforms
+  const generated = utils.generateStackTransform(move.x, move.y, rotate, flipX, flipY, this)
+
+  for (var t in generated) {
+    this.attr(t, generated[t], true)
+  }
+}
+
 
 export default Stack

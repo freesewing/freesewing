@@ -561,9 +561,12 @@ Pattern.prototype.pack = function () {
   // First, create all stacks
   this.stacks = {}
   for (const [name, part] of Object.entries(this.parts)) {
-    if (typeof this.stacks[part.stack] === 'undefined')
-      this.stacks[part.stack] = this.__createStackWithContext(part.stack)
-    this.stacks[part.stack].addPart(part)
+    const stackName = (typeof part.stack === 'function')
+      ? part.stack(this.settings, name)
+      : part.stack
+    if (typeof this.stacks[stackName] === 'undefined')
+      this.stacks[stackName] = this.__createStackWithContext(stackName)
+    this.stacks[stackName].addPart(part)
   }
 
   let bins = []

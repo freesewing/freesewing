@@ -68,10 +68,8 @@ describe('Stacks', () => {
       },
     })
     pattern.draft()
-    console.log(pattern.store.logs)
     //console.log(pattern.parts)
     //pattern.render()
-    console.log(pattern.render())
 
     it('Pattern.init() should resolve dependencies', () => {
       expect(typeof pattern.config.resolvedDependencies).to.equal('object')
@@ -89,5 +87,92 @@ describe('Stacks', () => {
         pattern.config.resolvedDependencies['test.partC'].indexOf('test.partB') !== -1
       ).to.equal(true)
     })
+
+
+  it('Should calculate the part boundary', () => {
+    const part = {
+      name: 'test',
+      draft: ({points, Point, paths, Path, part }) => {
+        points.from = new Point(123, 456)
+        points.to = new Point(19, 76)
+        paths.test = new Path().move(points.from).line(points.to)
+
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ]})
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.stacks.test.topLeft.x).to.equal(17)
+    expect(pattern.stacks.test.topLeft.y).to.equal(74)
+    expect(pattern.stacks.test.bottomRight.x).to.equal(125)
+    expect(pattern.stacks.test.bottomRight.y).to.equal(458)
+    expect(pattern.stacks.test.width).to.equal(108)
+    expect(pattern.stacks.test.height).to.equal(384)
+  })
+
+  it('Should calculate the part boundary with custom margin', () => {
+    const part = {
+      name: 'test',
+      draft: ({points, Point, paths, Path, part }) => {
+        points.from = new Point(123, 456)
+        points.to = new Point(19, 76)
+        paths.test = new Path().move(points.from).line(points.to)
+
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ]})
+    const pattern = new design({ margin: 5 })
+    pattern.draft().render()
+    expect(pattern.stacks.test.topLeft.x).to.equal(14)
+    expect(pattern.stacks.test.topLeft.y).to.equal(71)
+    expect(pattern.stacks.test.bottomRight.x).to.equal(128)
+    expect(pattern.stacks.test.bottomRight.y).to.equal(461)
+    expect(pattern.stacks.test.width).to.equal(114)
+    expect(pattern.stacks.test.height).to.equal(390)
+  })
+
+  it('Should calculate the part boundary for paperless', () => {
+    const part = {
+      name: 'test',
+      draft: ({points, Point, paths, Path, part }) => {
+        points.from = new Point(123, 456)
+        points.to = new Point(19, 76)
+        paths.test = new Path().move(points.from).line(points.to)
+
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ]})
+    const pattern = new design({ paperless: true })
+    pattern.draft().render()
+    expect(pattern.stacks.test.topLeft.x).to.equal(9)
+    expect(pattern.stacks.test.topLeft.y).to.equal(66)
+  })
+  it('Should generate the part transforms', () => {
+    const part = {
+      name: 'test',
+      draft: ({points, Point, paths, Path, part }) => {
+        points.from = new Point(2, 2)
+        points.to = new Point(19, 76)
+        paths.test = new Path().move(points.from).line(points.to)
+
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    pattern.stacks.test.generateTransform({
+      move: {
+        x: 10,
+        y: 20,
+      },
+    })
+    expect(pattern.stacks.test.attributes.list.transform.length).to.equal(1)
+    expect(pattern.stacks.test.attributes.list.transform[0]).to.equal('translate(10 20)')
+  })
+
   })
 })

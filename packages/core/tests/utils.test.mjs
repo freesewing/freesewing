@@ -28,7 +28,7 @@ import {
   rad2deg,
   pctBasedOn,
   Bezier,
-  generatePartTransform,
+  generateStackTransform,
   macroName,
   Design,
 } from '../src/index.mjs'
