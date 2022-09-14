@@ -109,6 +109,17 @@ import {
   snippet_logo,
 } from './snippets.mjs'
 
+// Stacks
+import {
+  stacks_top,
+  stacks_left,
+  stacks_right,
+  stacks_bottom,
+  stacks_leftEye,
+  stacks_rightEye,
+  stacks_mouth,
+} from './stacks.mjs'
+
 // Settings
 import { settings_sa } from './settings.mjs'
 
@@ -216,6 +227,15 @@ const Examples = new Design({
     snippet_snapsocket,
     snippet_snapstud,
     snippet_logo,
+
+    // Stacks
+    stacks_top,
+    stacks_left,
+    stacks_right,
+    stacks_bottom,
+    stacks_leftEye,
+    stacks_rightEye,
+    stacks_mouth,
   ],
   plugins: [pluginBundle, gorePlugin],
 })
@@ -319,5 +339,15 @@ export {
   snippet_snapsocket,
   snippet_snapstud,
   snippet_logo,
+
+  // Stacks
+  stacks_top,
+  stacks_left,
+  stacks_right,
+  stacks_bottom,
+  stacks_leftEye,
+  stacks_rightEye,
+  stacks_mouth,
+
   Examples,
 }

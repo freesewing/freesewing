@@ -17,4 +17,3 @@ export const plugin = {
 // More specifically named exports
 export const sprinklePlugin = plugin
 export const pluginSprinkle = plugin
-
