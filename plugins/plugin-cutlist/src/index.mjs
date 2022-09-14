@@ -52,8 +52,6 @@ function setGrain(store, partName, grain = false) {
     return store
   }
   return store.set(path, grain)
-
-  return store
 }
 
 /** Method to add the cutOnFold info */

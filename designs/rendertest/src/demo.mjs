@@ -51,7 +51,7 @@ export const demo = {
     if (options.only === 'false' || options.only === 'widths') addWidths(params, true)
     if (options.only === 'false' || options.only === 'styles') addStyles(params, true)
     if (options.only === 'false' || options.only === 'combos') addCombos(params, true)
-    if (options.only === 'false' || options.only === 'circles') addCircles(params, true)
+    if (options.only === 'false' || options.only === 'circles') addCircles(params)
     if (options.only === 'false' || options.only === 'text') addText(params, true)
     if (options.only === 'false' || options.only === 'snippets') addSnippets(params, true)
     if (options.only === 'false' || options.only === 'macros') addMacros(params, true)

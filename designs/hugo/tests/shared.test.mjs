@@ -10,7 +10,7 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 testPatternConfig(Hugo)
 
 // Test drafting - Change the second parameter to `true` to log errors
-testPatternDrafting(Hugo, false)
+testPatternDrafting(Hugo, true)
 
 // Test sampling - Change the second parameter to `true` to log errors
 //testPatternSampling(Hugo, false)

@@ -2,7 +2,7 @@ import Part from './part'
 import { getProps } from './utils'
 
 const Stack = props => {
-  const { stackName, stack, patternProps, gist, app, updateGist, unsetGist, showInfo } = props
+  const { stackName, stack, gist, app, updateGist, unsetGist, showInfo } = props
 
   return (
     <g {...getProps(stack)} id={`stack-${stackName}`}>

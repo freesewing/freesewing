@@ -2,9 +2,9 @@ import rough from 'roughjs/bundled/rough.cjs.js'
 
 const getAttributes = (element) => Array.prototype.slice.call(element.attributes)
 
-const getNum = (element, attributes) => attributes.map(attr => parseFloat(element.getAttribute(attr), 10))
+const getNum = (element, attributes) => attributes.map(attr => parseFloat(element.getAttribute(attr)))
 
-const getDiam = (element, attributes) => attributes.map(attr => 2 * parseFloat(element.getAttribute(attr), 10))
+const getDiam = (element, attributes) => attributes.map(attr => 2 * parseFloat(element.getAttribute(attr)))
 
 const getCoords = (element, attribute) => element
   .getAttribute(attribute)
@@ -70,7 +70,7 @@ const coarse = (svg, options) => {
 
   for(let i = 0; i < children.length; i += 1) {
     const original = children[i];
-    const params = [];
+    let params = [];
     let shapeType;
 
     switch(original.tagName) {

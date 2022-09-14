@@ -283,6 +283,7 @@ function simonSleeve({
 export const sleeve = {
   name: 'simon.sleeve',
   from: brianSleeve,
+  after: front,
   hideDependencies: true,
   options: {
     cuffOverlap,

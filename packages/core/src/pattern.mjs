@@ -4,7 +4,6 @@ import {
   addNonEnumProp,
   macroName,
   sampleStyle,
-  capitalize,
   addPartConfig,
   mergeDependencies,
 } from './utils.mjs'
@@ -151,7 +150,7 @@ Pattern.prototype.getConfig = function () {
 /* Utility method to get the (initialized) part list */
 Pattern.prototype.getPartList = function () {
   this.init()
-  return Object.keys(this.config.parts) || []
+  return Object.keys(this.config.parts)
 }
 
 function snappedOption(option, pattern) {

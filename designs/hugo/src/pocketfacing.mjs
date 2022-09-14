@@ -1,12 +1,14 @@
 import { pocket } from './pocket.mjs'
 
 function hugoPocketFacing({ sa, points, Path, paths, complete, paperless, macro, store, part }) {
-  return part
-  // Remove clutter
-  const facing = part.paths.facing
-  part.paths = {}
 
-  paths.seam = facing
+  // Remove clutter
+  for (const key in paths) {
+    if (key !== 'facing') delete paths[key]
+  }
+
+  paths.seam = paths.facing
+    .clone()
     .line(points.pocketTop)
     .curve(points.pocketTopCp, points.pocketTip, points.pocketTip)
     .line(points.facingEnd)

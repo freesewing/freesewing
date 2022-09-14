@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Design, Pattern, Path } from '../src/index.mjs'
+import { Design, Pattern } from '../src/index.mjs'
 
 const expect = chai.expect
 

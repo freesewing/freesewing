@@ -1,17 +1,8 @@
-import designs from "../../config/software/designs.json" assert { type: 'json' }
 import { adult, doll, giant } from '@freesewing/models'
 import { getFamily, getShortName } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
-
-const noSizes = [
-  'examples',
-  'rendertest',
-  'plugintest',
-  'legend',
-  'tutorial',
-]
 
 /*
  * This runs unit tests for pattern drafting
@@ -25,8 +16,6 @@ export const testPatternDrafting = (Pattern, log=false) => {
   const pattern = new Pattern()
   const config = pattern.getConfig()
   const design = getShortName(config.data.name)
-  const family = getFamily(design)
-  const parts = pattern.getPartList()
   // Helper method to try/catch pattern drafting
   const doesItDraftAndRender = (pattern, log=false) => {
     try {

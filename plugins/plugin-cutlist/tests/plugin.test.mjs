@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Design, Point } from '@freesewing/core'
+import { Design } from '@freesewing/core'
 import { plugin } from '../dist/index.mjs'
 
 const expect = chai.expect

@@ -30,10 +30,11 @@ function hugoFront({
   macro,
   part,
 }) {
+
   // Remove clutter
-  const seam = paths.seam
-  paths = {}
-  paths.seam = seam
+  for (const key in paths) {
+    if (key !== 'seam') delete paths[key]
+  }
 
   // Remove notch inherited from Brian
   delete snippets.armholePitchNotch

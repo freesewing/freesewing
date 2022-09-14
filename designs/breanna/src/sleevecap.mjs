@@ -34,7 +34,7 @@ function sleevecapAdjust(store, twoBacks = false, options = null) {
 }
 
 function draftSleevecap(params, run) {
-  let { store, measurements, options, Point, points, Path, paths, part } = params
+  const { store, measurements, options, Point, points, Path, paths, part } = params
   // Sleeve center axis
   points.centerBiceps = new Point(0, 0)
   points.centerCap = points.centerBiceps.shift(
@@ -151,6 +151,8 @@ function draftSleevecap(params, run) {
     // Uncomment this line to see all sleevecap iterations
     //paths[run] = paths.sleevecap;
   }
+
+  return part
 }
 
 function redrawSleevecapFront(params, delta) {

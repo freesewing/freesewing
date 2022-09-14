@@ -30,6 +30,8 @@ const mdxCustomComponents = (app=false) => ({
   img: Figure,
   Dot,
   table: props => <table {...props} className="mdx-table table-auto w-full">{props.children}</table>,
+  Tab,
+  Tabs,
 })
 
 export default mdxCustomComponents

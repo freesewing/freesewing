@@ -236,6 +236,13 @@ const Examples = new Design({
     stacks_leftEye,
     stacks_rightEye,
     stacks_mouth,
+
+    // Settings
+    settings_sa,
+
+    // Docs
+    docs_coords,
+    docs_overview,
   ],
   plugins: [pluginBundle, gorePlugin],
 })
@@ -348,6 +355,10 @@ export {
   stacks_leftEye,
   stacks_rightEye,
   stacks_mouth,
+
+  // Docs
+  docs_coords,
+  docs_overview,
 
   Examples,
 }

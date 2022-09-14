@@ -1,10 +1,14 @@
 import chai from 'chai'
-import { round, Pattern, Design, pctBasedOn } from '../src/index.mjs'
+//import { round, Pattern, Design, pctBasedOn } from '../src/index.mjs'
 
 const expect = chai.expect
 
 describe('Pattern', () => {
   describe('Pattern.sample()', () => {
+    it('FIXME: Write some tests here', () => {
+      expect(true).to.equal(true)
+    })
+
     /*
     it('Should sample an option', () => {
       let pattern = new Pattern({

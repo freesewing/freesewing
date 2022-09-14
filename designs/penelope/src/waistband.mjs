@@ -92,6 +92,7 @@ export const waistband = {
   name: 'penelope.waistband',
   measurements: ['waist', 'waistToKnee'],
   options: {
+    waistEase,
     waistBandOverlap: 25,
     waistBand: { bool: true, menu: 'style' },
     waistBandWidth: { pct: 10, min: 5, max: 20, menu: 'style' },
