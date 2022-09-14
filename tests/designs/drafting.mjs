@@ -1,5 +1,4 @@
 import { adult, doll, giant } from '@freesewing/models'
-import { getFamily, getShortName } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
@@ -15,7 +14,6 @@ export const testPatternDrafting = (Pattern, log=false) => {
 
   const pattern = new Pattern()
   const config = pattern.getConfig()
-  const design = getShortName(config.data.name)
   // Helper method to try/catch pattern drafting
   const doesItDraftAndRender = (pattern, log=false) => {
     try {

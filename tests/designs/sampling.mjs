@@ -1,5 +1,4 @@
 import { adult, doll, giant } from '@freesewing/models'
-import { getFamily } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
