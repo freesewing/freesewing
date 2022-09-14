@@ -18,7 +18,7 @@ describe('Pattern', () => {
       expect(typeof pattern.config).to.equal('object')
       expect(typeof pattern.parts).to.equal('object')
       expect(typeof pattern.store).to.equal('object')
-      expect(Object.keys(pattern).length).to.equal(4)
+      expect(Object.keys(pattern).length).to.equal(5)
     })
 
     it('Pattern constructor should add non-enumerable properties', () => {
