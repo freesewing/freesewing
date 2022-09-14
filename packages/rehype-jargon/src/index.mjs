@@ -1,7 +1,8 @@
 import { visit } from 'unist-util-visit'
 import { fromHtml } from 'hast-util-from-html'
 
-const jargonTransform = (term, html) => `<span class="jargon-term">${term}<span class="jargon-info">${html}</span></span>`
+const jargonTransform = (term, html) =>
+  `<span class="jargon-term">${term}<span class="jargon-info">${html}</span></span>`
 
 export default (options) => {
   // Don't bother if we don't have any jargon
@@ -17,7 +18,8 @@ export default (options) => {
     if (
       node.tagName === 'em' &&
       Object.keys(options.jargon).indexOf(node.children[0].value.toLowerCase()) !== -1
-    ) return true
+    )
+      return true
     return false
   }
 

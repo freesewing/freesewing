@@ -1,2 +1,2 @@
-xMadeThis: "<strong>{x}</strong> made this"
-xWroteThis: "<strong>{x}</strong> wrote this"
+xMadeThis: '<strong>{x}</strong> made this'
+xWroteThis: '<strong>{x}</strong> wrote this'

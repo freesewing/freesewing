@@ -94,7 +94,10 @@ Stack.prototype.home = function () {
 
   if (this.topLeft.x === this.anchor.x && this.topLeft.y === this.anchor.y) return this
   else {
-    this.attr('transform', `translate(${this.anchor.x - this.topLeft.x}, ${this.anchor.y - this.topLeft.y})`)
+    this.attr(
+      'transform',
+      `translate(${this.anchor.x - this.topLeft.x}, ${this.anchor.y - this.topLeft.y})`
+    )
     this.layout.move.x = this.anchor.x - this.topLeft.x
     this.layout.move.y = this.anchor.y - this.topLeft.y
   }
@@ -103,7 +106,7 @@ Stack.prototype.home = function () {
 }
 
 /** Finds the anchor to align parts in this stack */
-Stack.prototype.getAnchor = function() {
+Stack.prototype.getAnchor = function () {
   let anchorPoint = true
   let gridAnchorPoint = true
   const parts = this.getPartList()
@@ -115,7 +118,7 @@ Stack.prototype.getAnchor = function() {
   if (anchorPoint) return parts[0].points.anchor
   if (gridAnchorPoint) return parts[0].points.gridAnchor
 
-  return new Point(0,0)
+  return new Point(0, 0)
 }
 
 /** Adds an attribute. This is here to make this call chainable in assignment */
@@ -135,6 +138,5 @@ Stack.prototype.generateTransform = function (transforms) {
     this.attr(t, generated[t], true)
   }
 }
-
 
 export default Stack
