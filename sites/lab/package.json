@@ -3,8 +3,8 @@
   "version": "3.0.0-alpha.0",
   "private": true,
   "scripts": {
-    "dev": "node --experimental-json-modules ../../node_modules/.bin/next dev -p 8000",
-    "develop": "node --experimental-json-modules ../../node_modules/.bin/next dev -p 8000",
+    "dev": "node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",
+    "develop": "node --experimental-json-modules ../../node_modules/next/dist/bin/next dev -p 8000",
     "start": "yarn prebuild && yarn dev",
     "prebuild": "node --experimental-json-modules ../shared/prebuild/index.mjs",
     "cibuild": "yarn prebuild && node --experimental-json-modules ../../node_modules/.bin/next build",

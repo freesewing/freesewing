@@ -30,7 +30,7 @@ models:
 new-design:
   i18n-only: "node ../../sites/shared/prebuild/i18n-only.mjs"
   build: "SITE=new-design/shared yarn run i18n-only && cp ../../scripts/banner.mjs ./lib && node build.mjs"
-  wbuild: "set SITE=\"new-design/shared\"&& node ../../sites/shared/prebuild/i18n-only.mjs && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE="
+  wbuild: "set SITE=new-design/shared&& node ../../sites/shared/prebuild/i18n-only.mjs && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE="
   mbuild: '!'
   test: '!'
   testci: '!'
