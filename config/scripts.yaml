@@ -7,7 +7,7 @@ _:
   vbuild: 'VERBOSE=1 node build.mjs'
   lab: "cd ../../sites/lab && yarn start"
   tips: "node ../../scripts/help.mjs"
-  lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
+  lint: "npx eslint 'src/**' 'tests/*.mjs'"
 _types:
   design:
     prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
