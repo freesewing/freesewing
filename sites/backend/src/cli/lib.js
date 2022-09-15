@@ -9,7 +9,11 @@ export const showHelp = () => {
   console.log()
   console.log('  ', chalk.bold.blue('npm run clear:users'), '👉 Truncate the users collection')
   console.log('  ', chalk.bold.blue('npm run clear:people'), '👉 Truncate the people collection')
-  console.log('  ', chalk.bold.blue('npm run clear:patterns'), '👉 Truncate the patterns collection')
+  console.log(
+    '  ',
+    chalk.bold.blue('npm run clear:patterns'),
+    '👉 Truncate the patterns collection'
+  )
   console.log(
     '  ',
     chalk.bold.blue('npm run clear:confirmations'),
@@ -26,33 +30,33 @@ export const showHelp = () => {
 }
 
 export const clearUsers = async () => {
-  await User.deleteMany().then(result => {
-   if (result.ok) console.log('🔥 Users deleted')
-   else console.log('🚨 Could not remove users', result)
+  await User.deleteMany().then((result) => {
+    if (result.ok) console.log('🔥 Users deleted')
+    else console.log('🚨 Could not remove users', result)
   })
 }
 export const clearPeople = async () => {
-  await Person.deleteMany().then(result => {
-   if (result.ok) console.log('🔥 People removed')
-   else console.log('🚨 Could not remove people', result)
+  await Person.deleteMany().then((result) => {
+    if (result.ok) console.log('🔥 People removed')
+    else console.log('🚨 Could not remove people', result)
   })
 }
 export const clearPatterns = async () => {
-  await Pattern.deleteMany().then(result => {
-   if (result.ok) console.log('🔥 Patterns deleted')
-   else console.log('🚨 Could not remove patterns', result)
+  await Pattern.deleteMany().then((result) => {
+    if (result.ok) console.log('🔥 Patterns deleted')
+    else console.log('🚨 Could not remove patterns', result)
   })
 }
 export const clearConfirmations = async () => {
-  await Confirmation.deleteMany().then(result => {
-   if (result.ok) console.log('🔥 Confirmations deleted')
-   else console.log('🚨 Could not remove confirmations', result)
+  await Confirmation.deleteMany().then((result) => {
+    if (result.ok) console.log('🔥 Confirmations deleted')
+    else console.log('🚨 Could not remove confirmations', result)
   })
 }
 export const clearNewsletterSubscribers = async () => {
-  await Newsletter.deleteMany().then(result => {
-   if (result.ok) console.log('🔥 Newsletter subscriptions deleted')
-   else console.log('🚨 Could not remove newsletter subscriptions', result)
+  await Newsletter.deleteMany().then((result) => {
+    if (result.ok) console.log('🔥 Newsletter subscriptions deleted')
+    else console.log('🚨 Could not remove newsletter subscriptions', result)
   })
 }
 
@@ -65,8 +69,8 @@ export const loadSampleData = async () => {
       ehash: ehash(sample.email),
       picture: sample.handle + '.svg',
       time: {
-        created: new Date()
-      }
+        created: new Date(),
+      },
     })
     user.createAvatar()
     promises.push(user.save())
@@ -83,7 +87,7 @@ export const loadSampleData = async () => {
   return Promise.all(promises)
 }
 
-export const runTasks = options => {
+export const runTasks = (options) => {
   let promises = []
   if (options.clearAll || options.reboot || options.clearUsers) promises.push(clearUsers())
   if (options.clearAll || options.reboot || options.clearPeople) promises.push(clearPeople())

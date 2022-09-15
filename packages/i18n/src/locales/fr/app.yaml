@@ -102,7 +102,7 @@ howToTakeMeasurements: Comment prendre les mesures
 i18n: Internationalisation
 imperialUnits: Unités impériales (pouces)
 instagram: Instagram
-invalidTldMessage: '.{tld} n''est pas un TLD valide'
+invalidTldMessage: ".{tld} n'est pas un TLD valide"
 joinTheChatMsg: Nous avons une communauté sur Discord avec des amis avec lesquels vous pouvez discuter.
 justAMoment: Juste un instant
 layout: Mis en page
@@ -186,11 +186,11 @@ shareFreesewing: Partager FreeSewing
 showcase: Galerie
 signUpForAFreeAccount: Créer un compte gratuit
 signUp: S'inscrire
-signupWithProvider: 'S''inscrire avec {provider}'
+signupWithProvider: "S'inscrire avec {provider}"
 sortByField: Trier par {field}
 standardSeamAllowance: Marge de couture standard
 startOver: Recommencer
-startTranslatingNowOrRead: '{startTranslatingNow}, ou lisez d''abord la {documentationForTranslators}.'
+startTranslatingNowOrRead: "{startTranslatingNow}, ou lisez d'abord la {documentationForTranslators}."
 startTranslatingNow: Commencez à traduire maintenant
 subscribe: Souscrire
 support: Support
@@ -248,9 +248,9 @@ noPattern: Vous n'avez pas (encore) de patrons. Créez un nouveau patron, puis s
 modelFirst: Commencez par ajouter des mensurations
 noModel: Vous n'avez pas (encore) ajouté de mesure. FreeSewing peut générer des patrons de couture sur mesure. Mais pour cela, nous avons besoin de mensurations.
 noModel2: La première chose à faire est donc d'ajouter une personne et de sortir votre mètre-ruban.
-noUserBrowsingTitle: "Vous ne pouvez pas simplement parcourir tous les utilisateurs"
-noUserBrowsingText: "Nous en avons des milliers. Vous avez certainement autre chose à faire ?"
-usePatternMeasurements: 'Utiliser les mesures du patron d''origine'
+noUserBrowsingTitle: 'Vous ne pouvez pas simplement parcourir tous les utilisateurs'
+noUserBrowsingText: 'Nous en avons des milliers. Vous avez certainement autre chose à faire ?'
+usePatternMeasurements: "Utiliser les mesures du patron d'origine"
 createReplica: Créer une réplique
 showDetails: Voir les détails
 hideDetails: Masquer les détails

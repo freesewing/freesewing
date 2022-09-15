@@ -12,20 +12,21 @@ const getMeasurements = (size, index) => {
 
 const multiplyMeasurements = (factor, index) => {
   const all = {}
-  const base = (index === 0) ? '340' : '380'
+  const base = index === 0 ? '340' : '380'
   for (const m of measurements) {
-    if (degreeMeasurements.indexOf(m) !== -1) all[m] = neckstimate(base, m, index) // Don't multiply degrees
+    if (degreeMeasurements.indexOf(m) !== -1)
+      all[m] = neckstimate(base, m, index) // Don't multiply degrees
     else all[m] = factor * neckstimate(base, m, index)
   }
 
   return all
 }
 
-export const groups = [ 'adult', 'doll', 'giant' ]
+export const groups = ['adult', 'doll', 'giant']
 
 export const sizes = {
-  cisFemaleAdult: [28,30,32,34,36,38,40,42,44,46],
-  cisMaleAdult: [32,34,36,38,40,42,44,46,48,50],
+  cisFemaleAdult: [28, 30, 32, 34, 36, 38, 40, 42, 44, 46],
+  cisMaleAdult: [32, 34, 36, 38, 40, 42, 44, 46, 48, 50],
   cisFemaleDoll: [10, 20, 30, 40, 50, 60],
   cisMaleDoll: [10, 20, 30, 40, 50, 60],
   cisFemaleGiant: [150, 200, 250, 300],
@@ -69,15 +70,14 @@ export const cisMaleDoll50 = multiplyMeasurements(0.5, CISMALE)
 export const cisMaleDoll60 = multiplyMeasurements(0.6, CISMALE)
 
 export const cisFemaleGiant150 = multiplyMeasurements(1.5, CISFEMALE)
-export const cisFemaleGiant200 = multiplyMeasurements(  2, CISFEMALE)
+export const cisFemaleGiant200 = multiplyMeasurements(2, CISFEMALE)
 export const cisFemaleGiant250 = multiplyMeasurements(2.5, CISFEMALE)
-export const cisFemaleGiant300 = multiplyMeasurements(  3, CISFEMALE)
+export const cisFemaleGiant300 = multiplyMeasurements(3, CISFEMALE)
 
 export const cisMaleGiant150 = multiplyMeasurements(1.5, CISMALE)
-export const cisMaleGiant200 = multiplyMeasurements(  2, CISMALE)
+export const cisMaleGiant200 = multiplyMeasurements(2, CISMALE)
 export const cisMaleGiant250 = multiplyMeasurements(2.5, CISMALE)
-export const cisMaleGiant300 = multiplyMeasurements(  3, CISMALE)
-
+export const cisMaleGiant300 = multiplyMeasurements(3, CISMALE)
 
 export const cisFemaleAdult = {
   28: cisFemaleAdult28,
@@ -147,4 +147,3 @@ export const giant = {
 }
 
 export { measurements }
-

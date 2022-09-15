@@ -15,7 +15,6 @@ export function frontWithPrimaryAt1200(part) {
         .noop('primary')
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1300:
       return new Path()
         .move(points.cfNeck)
@@ -29,7 +28,6 @@ export function frontWithPrimaryAt1200(part) {
         .noop('primary')
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1330:
       return new Path()
         .move(points.cfNeck)
@@ -43,7 +41,6 @@ export function frontWithPrimaryAt1200(part) {
         .noop('primary')
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1400:
     case 1500:
     case 1600:
@@ -60,7 +57,6 @@ export function frontWithPrimaryAt1200(part) {
         .noop('primary')
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1700:
       return new Path()
         .move(points.cfNeck)
@@ -74,7 +70,6 @@ export function frontWithPrimaryAt1200(part) {
         .noop('primary')
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     default:
       return new Path()
   }

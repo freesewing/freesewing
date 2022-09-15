@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { round, Design, Pattern } from '@freesewing/core'
+import { round, Design } from '@freesewing/core'
 import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
@@ -8,7 +8,7 @@ describe('Gore Plugin Tests', () => {
   it('Should create a default gore', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+      draft: ({ Point, points, macro }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -33,7 +33,7 @@ describe('Gore Plugin Tests', () => {
   it('Should use a configurable number of gores', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+      draft: ({ Point, points, macro }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -59,7 +59,7 @@ describe('Gore Plugin Tests', () => {
   it('Should use a configurable extra length', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+      draft: ({ Point, points, macro }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -85,7 +85,7 @@ describe('Gore Plugin Tests', () => {
   it('Should use a configurable radius', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+      draft: ({ Point, points, macro }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -111,7 +111,7 @@ describe('Gore Plugin Tests', () => {
   it('Should generate a seam path', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+      draft: ({ Point, points, macro }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,

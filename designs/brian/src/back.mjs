@@ -184,5 +184,5 @@ export const back = {
     }
 
     return part
-  }
+  },
 }

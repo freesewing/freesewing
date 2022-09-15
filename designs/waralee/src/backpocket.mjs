@@ -15,7 +15,6 @@ function waraleeBackPocket({
   sa,
   part,
 }) {
-
   if (false == options.backPocket) {
     return part
   }

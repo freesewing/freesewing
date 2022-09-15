@@ -15,7 +15,6 @@ function waraleePocket({
   macro,
   part,
 }) {
-
   if (false == options.frontPocket) {
     return part
   }

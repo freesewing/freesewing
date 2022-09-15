@@ -14,7 +14,6 @@ function yuriGusset({
   store,
   part,
 }) {
-
   const w = store.get('gussetLength')
   points.top = new Point(0, 0)
   points.bottom = new Point(0, w)

@@ -393,7 +393,7 @@ function asPath(bezier, debug = false, log = false) {
 }
 
 /** Joins path segments together into one path */
-function joinPaths(paths, closed = false, log = false) {
+function joinPaths(paths, closed = false) {
   let joint = new Path(paths[0].debug).withLog(paths[0].log).move(paths[0].ops[0].to)
   let current
   for (let p of paths) {

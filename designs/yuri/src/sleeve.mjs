@@ -1,17 +1,6 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
 
-function yuriSleeve({
-  Point,
-  Path,
-  points,
-  paths,
-  complete,
-  sa,
-  paperless,
-  macro,
-  part,
-}) {
-
+function yuriSleeve({ Point, Path, points, paths, complete, sa, paperless, macro, part }) {
   // Clear paths from Brian, but keep sleevecap
   for (let p of Object.keys(paths)) {
     if (p !== 'sleevecap') delete paths[p]

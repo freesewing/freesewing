@@ -13,7 +13,7 @@ export const base = {
     'shoulderSlope',
     'waistToHips',
   ],
-  optionalMeasurements: [ 'highBust' ],
+  optionalMeasurements: ['highBust'],
   options: {
     // Static
     brianFitSleeve: true,
@@ -37,7 +37,7 @@ export const base = {
     frontArmholeDeeper: { pct: 0.2, min: 0, max: 0.5, menu: 'advanced' },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80, menu: 'advanced' },
   },
-  plugins: [ pluginBundle, bustPlugin ],
+  plugins: [pluginBundle, bustPlugin],
   draft: ({
     measurements,
     options,
@@ -53,7 +53,6 @@ export const base = {
     macro,
     part,
   }) => {
-
     store.set('shoulderEase', (measurements.shoulderToShoulder * options.shoulderEase) / 2)
 
     // Center back (cb) vertical axis
@@ -63,7 +62,10 @@ export const base = {
     points.cbHips = new Point(0, points.cbWaist.y + measurements.waistToHips)
 
     // Shoulder line
-    points.neck = new Point((measurements.neck * (1 + options.collarEase)) / options.collarFactor, 0)
+    points.neck = new Point(
+      (measurements.neck * (1 + options.collarEase)) / options.collarFactor,
+      0
+    )
     points.hps = points.neck.clone() // We started using HPS in many measurements
     // Shoulder point using shoulderSlope degree measurement
     points.shoulder = utils.beamsIntersect(
@@ -76,7 +78,8 @@ export const base = {
     points.cbShoulder = new Point(0, points.shoulder.y)
     points.cbArmhole = new Point(
       0,
-      points.shoulder.y + measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
+      points.shoulder.y +
+        measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
     )
 
     // Now take shoulder slope reduction into account
@@ -87,7 +90,10 @@ export const base = {
     points.cbHem = new Point(0, points.cbHips.y * (1 + options.lengthBonus))
 
     // Side back (cb) vertical axis
-    points.armhole = new Point((measurements.chest * (1 + options.chestEase)) / 4, points.cbArmhole.y)
+    points.armhole = new Point(
+      (measurements.chest * (1 + options.chestEase)) / 4,
+      points.cbArmhole.y
+    )
     points.waist = new Point(points.armhole.x, points.cbWaist.y)
     points.hips = new Point(points.armhole.x, points.cbHips.y)
     points.hem = new Point(points.armhole.x, points.cbHem.y)
@@ -170,10 +176,10 @@ export const base = {
     points.gridAnchor = points.cbHem
 
     /*
-    * People would like to have the option to shift the shoulder seam
-    * See https://github.com/freesewing/freesewing/issues/642
-    * So let's make the people happy
-    */
+     * People would like to have the option to shift the shoulder seam
+     * See https://github.com/freesewing/freesewing/issues/642
+     * So let's make the people happy
+     */
     // Front armhole is a bit deeper, add those points
     let deeper = measurements.chest * options.frontArmholeDeeper
     for (const p of ['', 'Cp1', 'Cp2']) {
@@ -210,6 +216,5 @@ export const base = {
     }
 
     return part
-  }
+  },
 }
-

@@ -32,7 +32,7 @@ import {
   rad2deg,
   pctBasedOn,
   Bezier,
-  generatePartTransform,
+  generateStackTransform,
   macroName,
 } from './utils.mjs'
 import { version } from '../data.mjs'
@@ -71,7 +71,7 @@ export {
   deg2rad,
   rad2deg,
   pctBasedOn,
-  generatePartTransform,
+  generateStackTransform,
   macroName,
   isCoord,
   version,

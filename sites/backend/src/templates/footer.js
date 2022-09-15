@@ -29,7 +29,7 @@ const footer = {
 </table>
 </body>
 </html>`,
-  text: ''
+  text: '',
 }
 
 export default footer

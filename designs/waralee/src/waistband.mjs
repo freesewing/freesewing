@@ -1,22 +1,24 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleeWaistband(type, {
-  options,
-  measurements,
-  Point,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  paperless,
-  macro,
-  sa,
-  store,
-  part,
-}) {
-
+function waraleeWaistband(
+  type,
+  {
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    sa,
+    store,
+    part,
+  }
+) {
   const WidthReduction = 6
   let waistBand = store.get('waistBand')
   let waistBandLengthFront = points.fWaistSideHem.dist(points.fWaistFrontOverlapHem)
@@ -26,7 +28,6 @@ function waraleeWaistband(type, {
 
   let strapLength = measurements.waist + measurements.crotchDepth * 1.75
   let partNr = 0
-  let partN = 0
 
   switch (type) {
     case 'waistBandFront':

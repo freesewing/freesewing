@@ -8,20 +8,7 @@ import { bib } from './bib.mjs'
 // Setup our new design
 const Tutorial = new Design({
   data,
-  parts: [
-    step1,
-    step2,
-    step3,
-    step4,
-    step5,
-    step6,
-    step7,
-    step8,
-    step9,
-    step10,
-    step11,
-    bib,
-  ]
+  parts: [step1, step2, step3, step4, step5, step6, step7, step8, step9, step10, step11, bib],
 })
 
 // Named exports
@@ -38,6 +25,5 @@ export {
   step10,
   step11,
   bib,
-  Tutorial
+  Tutorial,
 }
-

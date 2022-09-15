@@ -10,7 +10,7 @@ import { sleevecap } from './sleevecap.mjs'
 // Setup our new design
 const Brian = new Design({
   data,
-  parts: [ back, front, sleeve ]
+  parts: [back, front, sleeve],
 })
 
 // Named exports

@@ -51,7 +51,7 @@ export const demo = {
     if (options.only === 'false' || options.only === 'widths') addWidths(params, true)
     if (options.only === 'false' || options.only === 'styles') addStyles(params, true)
     if (options.only === 'false' || options.only === 'combos') addCombos(params, true)
-    if (options.only === 'false' || options.only === 'circles') addCircles(params, true)
+    if (options.only === 'false' || options.only === 'circles') addCircles(params)
     if (options.only === 'false' || options.only === 'text') addText(params, true)
     if (options.only === 'false' || options.only === 'snippets') addSnippets(params, true)
     if (options.only === 'false' || options.only === 'macros') addMacros(params, true)
@@ -66,7 +66,7 @@ export const demo = {
   },
 }
 
-function addCircles({ Point, points, store, options }) {
+function addCircles({ Point, points, store, options, part }) {
   if (options.only === 'circles') {
     let y = store.get('y')
     const w = store.get('w')
@@ -101,7 +101,7 @@ function addCircles({ Point, points, store, options }) {
   return part
 }
 
-function addColors({ Point, Path, points, paths, store, options }, demo = false) {
+function addColors({ Point, Path, points, paths, store, options, part }, demo = false) {
   if (options.only === 'colors' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -134,7 +134,7 @@ function addColors({ Point, Path, points, paths, store, options }, demo = false)
   return part
 }
 
-function addCombos({ Point, Path, points, paths, store, options }, demo = false) {
+function addCombos({ Point, Path, points, paths, store, options, part }, demo = false) {
   if (options.only === 'combos' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -175,7 +175,7 @@ function addCombos({ Point, Path, points, paths, store, options }, demo = false)
   return part
 }
 
-function addMacros({ macro, Point, Path, points, paths, store, options }, demo = false) {
+function addMacros({ macro, Point, Path, points, paths, store, options, part }, demo = false) {
   if (options.only === 'macros' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -266,7 +266,7 @@ function addMacros({ macro, Point, Path, points, paths, store, options }, demo =
 }
 
 function addSnippets(
-  { Point, Path, points, paths, snippets, Snippet, store, options },
+  { Point, Path, points, paths, snippets, Snippet, store, options, part },
   demo = false
 ) {
   if (options.only === 'snippets' || demo) {
@@ -331,7 +331,7 @@ function addSnippets(
   return part
 }
 
-function addStyles({ Point, Path, points, paths, store, options }, demo = false) {
+function addStyles({ Point, Path, points, paths, store, options, part }, demo = false) {
   if (options.only === 'styles' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -364,7 +364,7 @@ function addStyles({ Point, Path, points, paths, store, options }, demo = false)
   return part
 }
 
-function addText({ Point, Path, points, paths, store, options }, demo = false) {
+function addText({ Point, Path, points, paths, store, options, part }, demo = false) {
   if (options.only === 'text' || demo) {
     let y = store.get('y')
     const w = store.get('w')
@@ -438,7 +438,7 @@ function addText({ Point, Path, points, paths, store, options }, demo = false) {
   return part
 }
 
-function addWidths({ Point, Path, points, paths, store, options }, demo = false) {
+function addWidths({ Point, Path, points, paths, store, options, part }, demo = false) {
   if (options.only === 'widths' || demo) {
     let y = store.get('y')
     const w = store.get('w')

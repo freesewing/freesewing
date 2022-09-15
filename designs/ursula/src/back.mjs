@@ -17,7 +17,6 @@ function ursulaBack({
   macro,
   part,
 }) {
-
   // Design pattern here
 
   // Create points

@@ -1,4 +1,3 @@
-
 /*
  * These are a set of measurements of an average-sized [woman, man].
  * We simply extrapolate for other sizes (based on neck)
@@ -109,18 +108,15 @@ const ratio = {
   waistFront: 0.85,
   waistFrontArc: 0.85,
   waistToFloor: 0.4,
-  wrist: 0.5
+  wrist: 0.5,
 }
 
 export const measurements = Object.keys(base)
 
 // This estimates a measurement based on the neck
-export const neckstimate = (neck = false, measurement = false, i=0, noRound=false) => {
-
+export const neckstimate = (neck = false, measurement = false, i = 0, noRound = false) => {
   if (typeof base[measurement] === 'undefined') {
-    console.log(
-      new Error(`neckstimate() called with an invalid measurement name (${measurement})`)
-    )
+    console.log(new Error(`neckstimate() called with an invalid measurement name (${measurement})`))
     return null
   }
   if (!measurement) {
@@ -144,4 +140,3 @@ export const neckstimate = (neck = false, measurement = false, i=0, noRound=fals
     ? base[measurement][i] + delta * ratio[measurement]
     : Math.round(base[measurement][i] + delta * ratio[measurement])
 }
-

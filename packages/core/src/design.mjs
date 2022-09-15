@@ -1,5 +1,4 @@
 import { Pattern } from './pattern.mjs'
-import { addPartConfig } from './utils.mjs'
 import { loadDesignDefaults } from './config.mjs'
 
 /*

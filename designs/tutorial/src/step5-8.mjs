@@ -3,16 +3,7 @@ import { step4 } from './step1-4.mjs'
 export const step5 = {
   name: 'tutorial.step5',
   from: step4,
-  draft: ({
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    part,
-  }) => {
-
+  draft: ({ Point, points, Path, paths, measurements, options, part }) => {
     const width = measurements.head * options.widthRatio
     const length = measurements.head * options.lengthRatio
 
@@ -30,20 +21,13 @@ export const step5 = {
       .close()
 
     return part
-  }
+  },
 }
 
 export const step6 = {
   name: 'tutorial.step6',
   from: step5,
-  draft: ({
-    Point,
-    points,
-    Path,
-    paths,
-    part,
-  }) => {
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.edgeLeft = new Point(points.topLeft.x, points.left.y)
     points.edgeRight = new Point(points.topRight.x, points.right.y)
     points.edgeTop = new Point(0, points.topLeft.y)
@@ -63,19 +47,13 @@ export const step6 = {
       .close()
 
     return part
-  }
+  },
 }
 
 export const step7 = {
   name: 'tutorial.step7',
   from: step6,
-  draft: ({
-    Point,
-    points,
-    macro,
-    part,
-  }) => {
-
+  draft: ({ Point, points, macro, part }) => {
     const strap = points.edgeTop.dy(points.top)
 
     points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
@@ -98,20 +76,13 @@ export const step7 = {
     })
 
     return part
-  }
+  },
 }
 
 export const step8 = {
   name: 'tutorial.step8',
   from: step7,
-  draft: ({
-    points,
-    Path,
-    paths,
-    macro,
-    part,
-  }) => {
-
+  draft: ({ points, Path, paths, macro, part }) => {
     const rotateThese = [
       'edgeTopLeftCp',
       'edgeTop',
@@ -160,6 +131,5 @@ export const step8 = {
       .close()
 
     return part
-  }
+  },
 }
-

@@ -138,7 +138,7 @@ export const plugin = {
       }
     },
     // Remove all dimensions (with standard prefix)
-    rmad: function (so) {
+    rmad: function () {
       for (let type of ['paths', 'points']) {
         for (let id in this[type]) {
           if (id.slice(0, prefix.length) === prefix) delete this[type][id]

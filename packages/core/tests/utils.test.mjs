@@ -1,6 +1,5 @@
 import chai from 'chai'
 import {
-  Pattern,
   Point,
   isCoord,
   capitalize,
@@ -20,17 +19,13 @@ import {
   circlesIntersect,
   beamIntersectsCircle,
   lineIntersectsCircle,
-  curveEdge,
   stretchToScale,
   round,
   sampleStyle,
   deg2rad,
   rad2deg,
   pctBasedOn,
-  Bezier,
-  generatePartTransform,
   macroName,
-  Design,
 } from '../src/index.mjs'
 
 const { expect } = chai

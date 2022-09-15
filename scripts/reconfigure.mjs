@@ -34,12 +34,13 @@ const repo = {
   exceptions: readConfigFile('exceptions.yaml'),
   templates: {
     pkg: readTemplateFile('package.dflt.json'),
-    data: readTemplateFile('data.dflt.mjs'),
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.mjs'),
-    designTests: readTemplateFile('design.test.mjs'),
-    pluginTests: readTemplateFile('plugin.test.mjs')
+    eslint: readTemplateFile('eslintrc.yml'),
+    pluginTests: readTemplateFile('plugin.test.mjs'),
+    designTests: readTemplateFile('design.test.mjs.mustache'),
+    data: readTemplateFile('data.dflt.mjs.mustache'),
   },
   dirs: foldersByType(),
   contributors: fs.readFileSync(path.join(cwd, 'CONTRIBUTORS.md'), 'utf-8'),
@@ -88,6 +89,10 @@ for (const pkg of Object.values(software)) {
       repo.templates.build
     )
   }
+  fs.writeFileSync(
+    path.join(cwd, pkg.folder, pkg.name, '.eslintrc.yml'),
+    repo.templates.eslint
+  )
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'),
     changelog(pkg)

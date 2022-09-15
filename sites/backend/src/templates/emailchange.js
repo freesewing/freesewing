@@ -4,7 +4,7 @@ const emailchange = {
     'email.emailchangeCopy1',
     'email.emailchangeActionText',
     'email.questionsJustReply',
-    'email.signature'
+    'email.signature',
   ],
   html: `<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
@@ -71,7 +71,7 @@ __emailchangeCopy1__
 
 __emailchangeActionLink__
 
-__questionsJustReply__`
+__questionsJustReply__`,
 }
 
 export default emailchange

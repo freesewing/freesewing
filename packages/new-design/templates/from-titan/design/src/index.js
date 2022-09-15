@@ -13,7 +13,7 @@ import draftBack from './back'
 const Design = new freesewing.Design(config, plugins)
 
 // Attach Titan's draft methods to the prototype
-for (const m of [ 'Back', 'Front' ]) {
+for (const m of ['Back', 'Front']) {
   Design.prototype[`draftTitan${m}`] = function (part) {
     return new Titan(this.settings)[`draft${m}`](part)
   }

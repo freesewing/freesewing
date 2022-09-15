@@ -3,13 +3,7 @@ import { step8 } from './step5-8.mjs'
 export const step9 = {
   name: 'tutorial.step9',
   from: step8,
-  draft: ({
-    points,
-    Path,
-    paths,
-    part,
-  }) => {
-
+  draft: ({ points, Path, paths, part }) => {
     points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
     points.topCp1 = points.topCp2.flipX()
     points.tipLeftTopStart = points.tipRightTopStart.flipX()
@@ -44,20 +38,13 @@ export const step9 = {
     delete paths.rect
 
     return part
-  }
+  },
 }
 
 export const step10 = {
   name: 'tutorial.step10',
   from: step9,
-  draft: ({
-    points,
-    Path,
-    paths,
-    macro,
-    part,
-  }) => {
-
+  draft: ({ points, Path, paths, macro, part }) => {
     macro('round', {
       from: points.topLeft,
       to: points.bottomRight,
@@ -95,23 +82,13 @@ export const step10 = {
       .close()
 
     return part
-  }
+  },
 }
 
 export const step11 = {
   name: 'tutorial.step11',
   from: step10,
-  draft: ({
-    Point,
-    points,
-    paths,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    part,
-  }) => {
-
+  draft: ({ Point, points, paths, macro, complete, snippets, Snippet, part }) => {
     // Complete?
     if (complete) {
       snippets.snapStud = new Snippet('snap-stud', points.snapLeft)
@@ -138,6 +115,5 @@ export const step11 = {
     }
 
     return part
-  }
+  },
 }
-

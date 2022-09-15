@@ -12,7 +12,6 @@ function wahidPocketWelt({
   paperless,
   part,
 }) {
-
   const pw = measurements.hips * options.pocketWidth // Pocket width
   const pwh = pw * options.weltHeight // Pocket welt height
   points.topLeft = new Point(0, 0)

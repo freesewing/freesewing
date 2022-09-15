@@ -27,7 +27,7 @@ const LabDraft = props => {
 
   return (
     <>
-      {(!patternProps || patternProps.events?.error?.length > 0)
+      {(!patternProps || patternProps.logs?.error?.length > 0)
         ? <Error {...{ draft, patternProps, updateGist }} />
         : null
       }

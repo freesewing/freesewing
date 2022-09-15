@@ -3,7 +3,7 @@ import { ribbing, hipsEase } from './frontback.mjs'
 import { ribbingStretch } from './cuff.mjs'
 
 function svenWaistband(params) {
-  const { measurements, sa, points, complete, paperless, macro, options, part } = params
+  const { measurements, points, complete, macro, options, part } = params
 
   if (!options.ribbing) return part
 
@@ -17,13 +17,6 @@ function svenWaistband(params) {
       nr: 4,
       title: 'waistband',
     })
-    if (sa) {
-      // FIXME: Don't we need SA here?
-    }
-  }
-
-  // Paperless?
-  if (paperless) {
   }
 
   return part

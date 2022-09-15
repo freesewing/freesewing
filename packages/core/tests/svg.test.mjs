@@ -1,12 +1,17 @@
 import chai from 'chai'
 import chaiString from 'chai-string'
-import { Design, Pattern } from '../src/index.mjs'
-import pkg from '../package.json' assert { type: 'json' }
-import render from './fixtures/render.mjs'
+//import { Design, Pattern } from '../src/index.mjs'
+//import pkg from '../package.json' assert { type: 'json' }
+//import render from './fixtures/render.mjs'
 
 chai.use(chaiString)
 const expect = chai.expect
-const { version } = pkg
+//const { version } = pkg
+
+it('FIXME: Write some tests here', () => {
+  expect(true).to.equal(true)
+})
+
 /*
 describe('Svg', () => {
   const part = {

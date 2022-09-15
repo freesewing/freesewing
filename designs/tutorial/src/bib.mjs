@@ -17,7 +17,6 @@ export const bib = {
     paperless,
     part,
   }) => {
-
     // Construct the neck opening
     let tweak = 1
     let target = (measurements.head * options.neckRatio) / 4
@@ -230,5 +229,5 @@ export const bib = {
     }
 
     return part
-  }
+  },
 }

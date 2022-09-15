@@ -1,13 +1,25 @@
 import { front } from './front.mjs'
 
-function hugoPocket({ utils, store, sa, points, Path, paths, complete, paperless, macro, part }) {
-  return part
+function hugoPocket({
+  utils,
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  snippets,
+  part,
+}) {
   // Remove clutter
-  const pocket = part.paths.pocket
-  part.paths = {}
-  part.snippets = {}
+  for (const key in paths) {
+    if (key !== 'pocket') delete paths[key]
+  }
+  for (const key in snippets) delete snippets[key]
 
-  paths.seam = pocket
+  paths.seam = paths.pocket
     .line(points.cfRibbing)
     .line(points.pocketHem)
     .close()

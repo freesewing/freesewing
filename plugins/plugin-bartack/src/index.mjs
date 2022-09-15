@@ -1,8 +1,5 @@
 import { version, name } from '../data.mjs'
 
-// Helper method to construct prefixed/suffixed name
-const getName = (n, so) => `${so.prefix}${n}${so.suffix}`
-
 // Method that draws the actual bartack
 const drawBartack = (points, self) => {
   let path = new self.Path().move(points.path1[0])

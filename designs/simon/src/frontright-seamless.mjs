@@ -10,7 +10,7 @@ export const draftFrontRightSeamless = ({
   complete,
   paperless,
   macro,
-  option,
+  options,
   part,
 }) => {
   const width = store.get('buttonPlacketWidth')

@@ -35,7 +35,6 @@ function wahidFront({
   store,
   part,
 }) {
-
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   delete snippets.armholePitchNotch

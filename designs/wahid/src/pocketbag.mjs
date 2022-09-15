@@ -13,7 +13,6 @@ function wahidPocketbag({
   store,
   part,
 }) {
-
   let pw = measurements.hips * options.pocketWidth // Pocket width
   let ph = store.get('pocketBagLength') // Pocket height
   points.topLeft = new Point(0, 0)

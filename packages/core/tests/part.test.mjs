@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Design, Pattern, Path } from '../src/index.mjs'
+import { Design, Pattern } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -124,7 +124,7 @@ describe('Part', () => {
     )
   })
 
-  it('Should calculate the part boundary with default margin', () => {
+  it('Should calculate the part boundary', () => {
     const design = new Design()
     const pattern = new design()
     const part = pattern.__createPartWithContext()
@@ -134,52 +134,15 @@ describe('Part', () => {
     part.points.to = new short.Point(19, 76)
     part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
     let boundary = part.boundary()
-    expect(boundary.topLeft.x).to.equal(17)
-    expect(boundary.topLeft.y).to.equal(74)
-    expect(boundary.bottomRight.x).to.equal(125)
-    expect(boundary.bottomRight.y).to.equal(458)
+    expect(boundary.topLeft.x).to.equal(19)
+    expect(boundary.topLeft.y).to.equal(76)
+    expect(boundary.bottomRight.x).to.equal(123)
+    expect(boundary.bottomRight.y).to.equal(456)
     boundary = part.boundary()
-    expect(boundary.width).to.equal(108)
-    expect(boundary.height).to.equal(384)
+    expect(boundary.width).to.equal(104)
+    expect(boundary.height).to.equal(380)
   })
 
-  it('Should calculate the part boundary with custom margin', () => {
-    const design = new Design()
-    const pattern = new design({ margin: 5 })
-    const part = pattern.__createPartWithContext()
-    pattern.init()
-    const short = part.shorthand()
-    part.points.from = new short.Point(123, 456)
-    part.points.to = new short.Point(19, 76)
-    part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    let boundary = part.boundary()
-    expect(boundary.topLeft.x).to.equal(14)
-    expect(boundary.topLeft.y).to.equal(71)
-    expect(boundary.bottomRight.x).to.equal(128)
-    expect(boundary.bottomRight.y).to.equal(461)
-    boundary = part.boundary()
-    expect(boundary.width).to.equal(114)
-    expect(boundary.height).to.equal(390)
-  })
-
-  it('Should calculate the part boundary for paperless', () => {
-    const design = new Design()
-    const pattern = new design({ paperless: true })
-    const part = pattern.__createPartWithContext()
-    pattern.init()
-    const short = part.shorthand()
-    part.points.from = new short.Point(123, 456)
-    part.points.to = new short.Point(19, 76)
-    part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    let boundary = part.boundary()
-    expect(boundary.topLeft.x).to.equal(9)
-    expect(boundary.topLeft.y).to.equal(66)
-    expect(boundary.bottomRight.x).to.equal(133)
-    expect(boundary.bottomRight.y).to.equal(466)
-    boundary = part.boundary()
-    expect(boundary.width).to.equal(124)
-    expect(boundary.height).to.equal(400)
-  })
   /*
   it('Should stack a part', () => {
     const part = {
@@ -195,7 +158,7 @@ describe('Part', () => {
     const design = new Design({ parts: [ part ]})
     const pattern = new design({ paperless: true })
     pattern.draft()
-    pattern.parts.test.stack()
+    pattern.parts.test.home()
     console.log(pattern.parts.test.attributes)
     expect(part.attributes.get('transform')).to.equal('translate(-17, -74)')
   })
@@ -208,9 +171,9 @@ describe('Part', () => {
     part.points.from = new short.Point(2, 2)
     part.points.to = new short.Point(19, 76)
     part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    part.stack()
+    part.home()
     expect(part.attributes.get('transform')).to.equal(false)
-    part.stack()
+    part.home()
     expect(part.attributes.get('transform')).to.equal(false)
   })
 */
@@ -221,7 +184,7 @@ describe('Part', () => {
     const part = pattern.__createPartWithContext()
     part.hooks.preDraft = [
       {
-        method: function (p) {
+        method: function () {
           count++
         },
       },
@@ -243,25 +206,6 @@ describe('Part', () => {
     )
   })
 
-  it('Should generate the part transforms', () => {
-    const design = new Design()
-    const pattern = new design({ margin: 5 })
-    const part = pattern.__createPartWithContext()
-    pattern.init()
-    let short = part.shorthand()
-    part.points.from = new short.Point(2, 2)
-    part.points.to = new short.Point(19, 76)
-    part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    part.stack()
-    part.generateTransform({
-      move: {
-        x: 10,
-        y: 20,
-      },
-    })
-    expect(part.attributes.list.transform.length).to.equal(1)
-    expect(part.attributes.list.transform[0]).to.equal('translate(10 20)')
-  })
   describe('isEmpty', () => {
     it('Should return true if the part has no paths or snippets', () => {
       const design = new Design()
@@ -274,7 +218,7 @@ describe('Part', () => {
       const design = new Design()
       const pattern = new design()
       const part = pattern.__createPartWithContext()
-      const { Path, paths, Point } = part.shorthand()
+      const { Path, paths } = part.shorthand()
       paths.seam = new Path()
       expect(part.isEmpty()).to.be.true
     })

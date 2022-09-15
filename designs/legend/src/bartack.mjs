@@ -1,16 +1,7 @@
 import { box } from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-const bartackOptions = (options) => ({
-  angle: options.bartackAngle,
-  length: options.bartackLength,
-  density: options.bartackDensity,
-  width: options.bartackWidth,
-  start: options.bartackStart,
-  end: options.bartackEnd,
-})
-
-function legendBartack({ points, Point, paths, Path, macro, options, part }) {
+function legendBartack({ points, Point, macro, part }) {
   points.bartack = new Point(40, 20).attr('data-text', 'bartack').attr('data-text-dy', -2)
   macro('bartack', {
     anchor: points.bartack,

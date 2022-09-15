@@ -81,7 +81,7 @@ export const plugin = {
       this.points[`_${prefix}_titlePattern`] = so.at
         .shift(-90 - so.rotation, shift * so.scale)
         .attr('data-text', name)
-        .attr('data-text', 'v' + this.context.config?.data?.version || 'No Version')
+        .attr('data-text', 'v' + (this.context.config?.data?.version || 'No Version'))
         .attr('data-text-class', 'fill-note')
         .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       if (this.context.settings.metadata && this.context.settings.metadata.for) {

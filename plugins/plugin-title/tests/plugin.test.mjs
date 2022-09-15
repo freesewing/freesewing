@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design } from '@freesewing/core'
-import { plugin } from './dist/index.mjs'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -9,7 +9,7 @@ describe('Title Plugin Tests', () => {
     const part = {
       name: 'test',
       draft: ({ points, Point, macro }) => {
-        points.anchor = new pattern.Point(-12, -34)
+        points.anchor = new Point(-12, -34)
         macro('title', {
           at: points.anchor,
           nr: 3,
@@ -47,7 +47,7 @@ describe('Title Plugin Tests', () => {
     const part = {
       name: 'test',
       draft: ({ points, Point, macro }) => {
-        points.anchor = new pattern.Point(-12, -34).attr('data-text', '#')
+        points.anchor = new Point(-12, -34).attr('data-text', '#')
         macro('title', {
           at: points.anchor,
           nr: 3,
@@ -76,7 +76,7 @@ describe('Title Plugin Tests', () => {
     const part = {
       name: 'test',
       draft: ({ points, Point, macro }) => {
-        points.anchor = new pattern.Point(-12, -34).attr('data-text', '#')
+        points.anchor = new Point(-12, -34).attr('data-text', '#')
         macro('title', {
           at: points.anchor,
           nr: 3,

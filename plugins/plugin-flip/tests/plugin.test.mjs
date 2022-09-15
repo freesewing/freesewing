@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design } from '@freesewing/core'
-import { plugin } from './dist/index.mjs'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -46,7 +46,7 @@ describe('Flip Plugin Tests', () => {
   it('Should flip points in a part on their vertical axis', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+      draft: ({ Point, points, macro }) => {
         points.from = new Point(10, 20)
         points.to = new Point(40, 230)
         macro('flip', {})
@@ -63,7 +63,7 @@ describe('Flip Plugin Tests', () => {
   it('Should flip points in a path on their vertical axis', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro, paths, Path, snippets, Snippet }) => {
+      draft: ({ Point, points, macro, paths, Path }) => {
         points.from = new Point(10, 20)
         points.cp1 = new Point(40, 0)
         points.cp2 = new Point(60, 30)

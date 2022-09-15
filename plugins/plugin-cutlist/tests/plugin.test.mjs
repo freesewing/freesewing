@@ -1,6 +1,6 @@
 import chai from 'chai'
-import { Design, Point } from '@freesewing/core'
-import { plugin } from '../dist/index.mjs'
+import { Design } from '@freesewing/core'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -25,7 +25,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should handle addCut() with defaults', () => {
     const part = {
       name: 'example_part',
-      draft: ({ addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ addCut }) => {
         addCut()
       },
     }
@@ -39,7 +39,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should handle addCut() with non-defaults', () => {
     const part = {
       name: 'example_part',
-      draft: ({ addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ addCut }) => {
         addCut(3, 'lining', true)
       },
     }
@@ -53,7 +53,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should remove cut info via addCut(false)', () => {
     const part = {
       name: 'example_part',
-      draft: ({ addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ addCut }) => {
         addCut(2, 'fabric')
         addCut(4, 'lining', true)
         addCut(false, 'lining')
@@ -68,7 +68,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should remove cut info for a material via removeCut()', () => {
     const part = {
       name: 'example_part',
-      draft: ({ addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ addCut, removeCut }) => {
         addCut(2, 'fabric')
         addCut(4, 'lining', true)
         removeCut('lining')
@@ -84,7 +84,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should remove cut info for all materials via removeCut(true)', () => {
     const part = {
       name: 'example_part',
-      draft: ({ addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ addCut, removeCut }) => {
         addCut(2, 'fabric')
         addCut(4, 'lining', true)
         removeCut()
@@ -99,7 +99,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should set the grain via setGrain()', () => {
     const part = {
       name: 'example_part',
-      draft: ({ addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ setGrain }) => {
         setGrain(45)
       },
     }
@@ -112,7 +112,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should remove the grain via setGrain(false)', () => {
     const part = {
       name: 'example_part',
-      draft: ({ addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ setGrain }) => {
         setGrain(45)
         setGrain(false)
       },
@@ -126,7 +126,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should set the cutOnFold via setCutOnFold(p1, p2)', () => {
     const part = {
       name: 'example_part',
-      draft: ({ Point, addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ Point, setCutOnFold }) => {
         try {
           setCutOnFold(new Point(2, 2), new Point(200, 200))
         } catch (err) {
@@ -146,7 +146,7 @@ describe('Cutlist Plugin Tests', () => {
   it('Should removet the cutOnFold via setCutOnFold(false)', () => {
     const part = {
       name: 'example_part',
-      draft: ({ Point, addCut, removeCut, setGrain, setCutOnFold }) => {
+      draft: ({ Point, setCutOnFold }) => {
         try {
           setCutOnFold(new Point(2, 2), new Point(200, 200))
           setCutOnFold(false)

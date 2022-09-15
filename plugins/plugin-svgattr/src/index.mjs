@@ -15,4 +15,3 @@ export const svgAttrPlugin = plugin
 export const svgattrPlugin = plugin
 export const pluginSvgAttr = plugin
 export const pluginSvgattr = plugin
-

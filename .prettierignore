@@ -3,4 +3,8 @@
 # So let's not
 *.yml
 *.md
-
+yarn.lock
+.husky/pre-commit
+.prettierignore
+.gitignore
+.eslintignore

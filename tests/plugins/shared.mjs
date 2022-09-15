@@ -1,4 +1,3 @@
-import { Pattern } from '@freesewing/core'
 import chai from 'chai'
 /*
  * This runs unit tests for the plugin configuration

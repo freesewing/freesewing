@@ -13,7 +13,6 @@ function wahidFrontFacing({
   sa,
   part,
 }) {
-
   // Cleanup from front part
   for (let i of Object.keys(paths).filter((name) => name !== 'grainline')) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]

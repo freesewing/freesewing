@@ -4,11 +4,11 @@ import {
   addNonEnumProp,
   macroName,
   sampleStyle,
-  capitalize,
   addPartConfig,
   mergeDependencies,
 } from './utils.mjs'
 import { Part } from './part.mjs'
+import { Stack } from './stack.mjs'
 import { Point } from './point.mjs'
 import { Path } from './path.mjs'
 import { Snippet } from './snippet.mjs'
@@ -23,7 +23,7 @@ export function Pattern(config) {
   addNonEnumProp(this, 'plugins', {})
   addNonEnumProp(this, 'width', 0)
   addNonEnumProp(this, 'height', 0)
-  addNonEnumProp(this, 'autoLayout', { parts: {} })
+  addNonEnumProp(this, 'autoLayout', { stacks: {} })
   addNonEnumProp(this, 'is', '')
   addNonEnumProp(this, 'hooks', new Hooks())
   addNonEnumProp(this, 'Point', Point)
@@ -41,6 +41,7 @@ export function Pattern(config) {
   // Enumerable properties
   this.config = config // Design config
   this.parts = {} // Drafted parts container
+  this.stacks = {} // Drafted stacks container
   this.store = new Store() // Store for sharing data across parts
 
   return this
@@ -86,6 +87,7 @@ Pattern.prototype.__createPartWithContext = function (name) {
   // Context object to add to Part closure
   const part = new Part()
   part.name = name
+  part.stack = this.__parts[name]?.stack || name
   part.context = {
     parts: this.parts,
     config: this.config,
@@ -99,6 +101,19 @@ Pattern.prototype.__createPartWithContext = function (name) {
   }
 
   return part
+}
+
+Pattern.prototype.__createStackWithContext = function (name) {
+  // Context object to add to Stack closure
+  const stack = new Stack()
+  stack.name = name
+  stack.context = {
+    config: this.config,
+    settings: this.settings,
+    store: this.store,
+  }
+
+  return stack
 }
 
 // Merges default for options with user-provided options
@@ -135,7 +150,7 @@ Pattern.prototype.getConfig = function () {
 /* Utility method to get the (initialized) part list */
 Pattern.prototype.getPartList = function () {
   this.init()
-  return Object.keys(this.config.parts) || []
+  return Object.keys(this.config.parts)
 }
 
 function snappedOption(option, pattern) {
@@ -295,7 +310,6 @@ Pattern.prototype.sampleParts = function () {
 Pattern.prototype.sampleRun = function (parts, anchors, run, runs, extraClass = false) {
   this.draft()
   for (let i in this.parts) {
-    let anchor = false
     let dx = 0
     let dy = 0
     if (this.parts[i].points.anchor) {
@@ -459,7 +473,7 @@ Pattern.prototype.__loadPlugins = function () {
   return this
 }
 
-Pattern.prototype.__loadPlugin = function (plugin, data, explicit = false) {
+Pattern.prototype.__loadPlugin = function (plugin, data) {
   this.plugins[plugin.name] = plugin
   if (plugin.hooks) this.__loadPluginHooks(plugin, data)
   if (plugin.macros) this.__loadPluginMacros(plugin)
@@ -536,40 +550,47 @@ Pattern.prototype.macro = function (key, method) {
   this.macros[key] = method
 }
 
-/** Packs parts in a 2D space and sets pattern size */
+/** Packs stacks in a 2D space and sets pattern size */
 Pattern.prototype.pack = function () {
   if (this.store.logs.error.length > 0) {
     this.store.log.warning(`One or more errors occured. Not packing pattern parts`)
     return this
   }
+  // First, create all stacks
+  this.stacks = {}
+  for (const [name, part] of Object.entries(this.parts)) {
+    const stackName =
+      typeof part.stack === 'function' ? part.stack(this.settings, name) : part.stack
+    if (typeof this.stacks[stackName] === 'undefined')
+      this.stacks[stackName] = this.__createStackWithContext(stackName)
+    this.stacks[stackName].addPart(part)
+  }
+
   let bins = []
-  for (let key in this.parts) {
-    let part = this.parts[key]
-    // Avoid multiple render calls to cause stacking of transforms
-    part.attributes.remove('transform')
-    if (part.render) {
-      part.stack()
-      let width = part.bottomRight.x - part.topLeft.x
-      let height = part.bottomRight.y - part.topLeft.y
-      if (this.settings.layout === true) bins.push({ id: key, width, height })
+  for (const [key, stack] of Object.entries(this.stacks)) {
+    // Avoid multiple render calls to cause addition of transforms
+    stack.attributes.remove('transform')
+    if (!this.isStackHidden(key)) {
+      stack.home()
+      if (this.settings.layout === true)
+        bins.push({ id: key, width: stack.width, height: stack.height })
       else {
-        if (this.width < width) this.width = width
-        if (this.height < height) this.height = height
+        if (this.width < stack.width) this.width = stack.width
+        if (this.height < stack.height) this.height = stack.height
       }
     }
   }
   if (this.settings.layout === true) {
     let size = pack(bins, { inPlace: true })
     for (let bin of bins) {
-      this.autoLayout.parts[bin.id] = { move: {} }
-      let part = this.parts[bin.id]
+      this.autoLayout.stacks[bin.id] = { move: {} }
+      let stack = this.stacks[bin.id]
       if (bin.x !== 0 || bin.y !== 0) {
-        part.attr('transform', `translate(${bin.x}, ${bin.y})`)
+        stack.attr('transform', `translate(${bin.x}, ${bin.y})`)
       }
-
-      this.autoLayout.parts[bin.id].move = {
-        x: bin.x + part.layout.move.x,
-        y: bin.y + part.layout.move.y,
+      this.autoLayout.stacks[bin.id].move = {
+        x: bin.x + stack.layout.move.x,
+        y: bin.y + stack.layout.move.y,
       }
     }
     this.width = size.width
@@ -577,11 +598,11 @@ Pattern.prototype.pack = function () {
   } else if (typeof this.settings.layout === 'object') {
     this.width = this.settings.layout.width
     this.height = this.settings.layout.height
-    for (let partId of Object.keys(this.settings.layout.parts)) {
+    for (let stackId of Object.keys(this.settings.layout.stacks)) {
       // Some parts are added by late-stage plugins
-      if (this.parts[partId]) {
-        let transforms = this.settings.layout.parts[partId]
-        this.parts[partId].generateTransform(transforms)
+      if (this.stacks[stackId]) {
+        let transforms = this.settings.layout.stacks[stackId]
+        this.stacks[stackId].generateTransform(transforms)
       }
     }
   }
@@ -689,7 +710,7 @@ Pattern.prototype.__resolveParts = function (count = 0) {
   // If so, resolve recursively
   if (len > count) return this.__resolveParts(len)
 
-  for (const [name, part] of Object.entries(this.__parts)) {
+  for (const part of Object.values(this.__parts)) {
     this.config = addPartConfig(part, this.config, this.store)
   }
 
@@ -783,6 +804,23 @@ Pattern.prototype.isHidden = function (partName) {
   return false
 }
 
+/* Checks whether (all parts in) a stack is hidden in the config */
+Pattern.prototype.isStackHidden = function (stackName) {
+  if (!this.stacks[stackName]) return true
+  const parts = this.stacks[stackName].getPartNames()
+  if (Array.isArray(this.settings.only)) {
+    for (const partName of parts) {
+      if (this.settings.only.includes(partName)) return false
+    }
+  }
+  for (const partName of parts) {
+    if (this.__parts?.[partName]?.hide) return true
+    if (this.__parts?.[partName]?.hideAll) return true
+  }
+
+  return false
+}
+
 /** Returns props required to render this pattern through
  *  an external renderer (eg. a React component)
  */
@@ -819,6 +857,12 @@ Pattern.prototype.getRenderProps = function () {
         bottomRight: this.parts[p].bottomRight,
         topLeft: this.parts[p].topLeft,
       }
+    }
+  }
+  props.stacks = {}
+  for (let s in this.stacks) {
+    if (!this.isStackHidden(s)) {
+      props.stacks[s] = this.stacks[s]
     }
   }
 

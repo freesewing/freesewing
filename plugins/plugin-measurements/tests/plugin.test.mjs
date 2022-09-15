@@ -1,6 +1,6 @@
 import chai from 'chai'
 import { Design } from '@freesewing/core'
-import { plugin } from './dist/index.mjs'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -15,7 +15,7 @@ const measurements = {
 
 const part = {
   name: 'test',
-  draft: ({ points, Point, macro }) => {
+  draft: ({ points, Point }) => {
     points.from = new Point(10, 20)
     points.to = new Point(10, 230)
   },
@@ -35,7 +35,6 @@ describe('Measurements Plugin Tests', () => {
   })
 
   it('Should calculate seatFront from seat and seatBack', function () {
-    const config = { measurements: {} }
     const testPattern = new Design({
       measurements: {},
       plugins: [plugin],
@@ -48,7 +47,6 @@ describe('Measurements Plugin Tests', () => {
   })
 
   it('Should calculate waistFrontArc and waistBackArc from waist and waistBack', function () {
-    const config = { measurements: {} }
     const testPattern = new Design({
       measurements: {},
       plugins: [plugin],
@@ -62,7 +60,6 @@ describe('Measurements Plugin Tests', () => {
   })
 
   it('Should calculate crossSeamBack from crossSeam and crossSeamFront', function () {
-    const config = { measurements: {} }
     const testPattern = new Design({
       measurements: {},
       plugins: [plugin],

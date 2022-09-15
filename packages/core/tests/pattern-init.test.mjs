@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { round, Design, Point, pctBasedOn } from '../src/index.mjs'
+import { Design } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -18,7 +18,7 @@ describe('Pattern', () => {
       expect(typeof pattern.config).to.equal('object')
       expect(typeof pattern.parts).to.equal('object')
       expect(typeof pattern.store).to.equal('object')
-      expect(Object.keys(pattern).length).to.equal(4)
+      expect(Object.keys(pattern).length).to.equal(5)
     })
 
     it('Pattern constructor should add non-enumerable properties', () => {
@@ -204,7 +204,7 @@ describe('Pattern', () => {
         options: { optionB: { pct: 12, min: 2, max: 20 } },
         measurements: ['measieB'],
         optionalMeasurements: ['optmeasieB', 'measieA'],
-        draft: ({ points, Point, paths, Path }) => {
+        draft: ({ points, Point, paths, Path, part }) => {
           points.b1 = new Point(2, 2)
           points.b2 = new Point(22, 22)
           paths.b = new Path().move(points.b1).line(points.b2)
@@ -217,7 +217,7 @@ describe('Pattern', () => {
         options: { optionC: { deg: 5, min: 0, max: 15 } },
         measurements: ['measieC'],
         optionalMeasurements: ['optmeasieC', 'measieA'],
-        draft: ({ points, Point, paths, Path }) => {
+        draft: ({ points, Point, paths, Path, part }) => {
           points.c1 = new Point(3, 3)
           points.c2 = new Point(33, 33)
           paths.c = new Path().move(points.c1).line(points.c2)
@@ -232,7 +232,7 @@ describe('Pattern', () => {
         options: { optionR: { dflt: 'red', list: ['red', 'green', 'blue'] } },
         measurements: ['measieR'],
         optionalMeasurements: ['optmeasieR', 'measieA'],
-        draft: ({ points, Point, paths, Path }) => {
+        draft: ({ points, Point, paths, Path, part }) => {
           points.r1 = new Point(4, 4)
           points.r2 = new Point(44, 44)
           paths.r = new Path().move(points.r1).line(points.r2)
@@ -355,7 +355,7 @@ describe('Pattern', () => {
         options: { optionB: { pct: 12, min: 2, max: 20 } },
         measurements: ['measieB'],
         optionalMeasurements: ['optmeasieB', 'measieA'],
-        draft: ({ points, Point, paths, Path }) => {
+        draft: ({ points, Point, paths, Path, part }) => {
           points.b1 = new Point(2, 2)
           points.b2 = new Point(22, 22)
           paths.b = new Path().move(points.b1).line(points.b2)
@@ -368,7 +368,7 @@ describe('Pattern', () => {
         options: { optionC: { deg: 5, min: 0, max: 15 } },
         measurements: ['measieC'],
         optionalMeasurements: ['optmeasieC', 'measieA'],
-        draft: ({ points, Point, paths, Path }) => {
+        draft: ({ points, Point, paths, Path, part }) => {
           points.c1 = new Point(3, 3)
           points.c2 = new Point(33, 33)
           paths.c = new Path().move(points.c1).line(points.c2)
@@ -381,7 +381,7 @@ describe('Pattern', () => {
         options: { optionD: { dflt: 'red', list: ['red', 'green', 'blue'] } },
         measurements: ['measieD'],
         optionalMeasurements: ['optmeasieD', 'measieA'],
-        draft: ({ points, Point, paths, Path }) => {
+        draft: ({ points, Point, paths, Path, part }) => {
           points.d1 = new Point(4, 4)
           points.d2 = new Point(44, 44)
           paths.d = new Path().move(points.d1).line(points.d2)
@@ -483,8 +483,8 @@ describe('Pattern', () => {
         name: 'example',
         version: 1,
         hooks: {
-          preRender: function (svg, attributes) {
-            svg.attributes.add('freesewing:plugin-example', version)
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example', 1)
           },
         },
       }
@@ -504,8 +504,8 @@ describe('Pattern', () => {
         name: 'example1',
         version: 1,
         hooks: {
-          preRender: function (svg, attributes) {
-            svg.attributes.add('freesewing:plugin-example1', version)
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example1', 1)
           },
         },
       }
@@ -513,8 +513,8 @@ describe('Pattern', () => {
         name: 'example2',
         version: 2,
         hooks: {
-          preRender: function (svg, attributes) {
-            svg.attributes.add('freesewing:plugin-example2', version)
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example2', 2)
           },
         },
       }
@@ -529,8 +529,8 @@ describe('Pattern', () => {
         name: 'example',
         version: 1,
         hooks: {
-          preRender: function (svg, attributes) {
-            svg.attributes.add('freesewing:plugin-example', version)
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example', 1)
           },
         },
       }
@@ -546,8 +546,8 @@ describe('Pattern', () => {
         name: 'example',
         version: 1,
         hooks: {
-          preRender: function (svg, attributes) {
-            svg.attributes.add('freesewing:plugin-example', version)
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example', 1)
           },
         },
       }
@@ -562,8 +562,8 @@ describe('Pattern', () => {
         name: 'example',
         version: 1,
         hooks: {
-          preRender: function (svg, attributes) {
-            svg.attributes.add('freesewing:plugin-example', version)
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example', 1)
           },
         },
       }
@@ -584,7 +584,7 @@ describe('Pattern', () => {
       const Pattern = new Design()
       const pattern = new Pattern()
       let count = 0
-      pattern.on('preDraft', function (pattern) {
+      pattern.on('preDraft', function () {
         count++
       })
       pattern.draft()
@@ -600,7 +600,7 @@ describe('Pattern', () => {
         name: 'test',
         version: '0.1-test',
         hooks: {
-          preDraft: function (pattern) {
+          preDraft: function () {
             count++
           },
         },
@@ -616,10 +616,10 @@ describe('Pattern', () => {
         version: '0.1-test',
         hooks: {
           preDraft: [
-            function (pattern) {
+            function () {
               count++
             },
-            function (pattern) {
+            function () {
               count++
             },
           ],

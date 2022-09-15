@@ -59,7 +59,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
       <h2>{t('cfp:preloadMeasurements')}</h2>
       <Tabs tabs="Adults, Dolls, Giants">
         {Object.keys(groups).map(group => (
-          <Tab tabId={group}>
+          <Tab tabId={group} key={group}>
             {Object.keys(icons).map(type => (
               <React.Fragment key={type}>
                 <h4 className="mt-4">{t(type)}</h4>

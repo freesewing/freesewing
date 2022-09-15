@@ -10,6 +10,7 @@ export default function ({
   sa,
   paperless,
   macro,
+  part,
 }) {
   const w = 500 * options.size
   points.topLeft = new Point(0, 0)

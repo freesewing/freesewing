@@ -10,9 +10,7 @@ export function createTeeth(pnts, toothCount, toothStartSize, toothEndSize, part
   // Deconstruct what we need from the part via shorthand()
   const { Path, points, Point, options } = part.shorthand()
 
-  // These 4 points make up our cubic bezier curve which in turn is half of the mouth
-  const [start, cp1, cp2, end] = pnts
-
+  // pnts holds 4 points that make up our cubic bezier curve which in turn is half of the mouth
   // Create the Bezier object from the 4 points
   const halfMouth = new Bezier(...pnts)
 

@@ -1,6 +1,6 @@
 export const settings_sa = {
   name: 'examples.settings_sa',
-  draft: ({ Point, points, Path, path, part }) => {
+  draft: ({ Point, points, Path, paths, part }) => {
     points.A = new Point(45, 60)
     points.B = new Point(10, 30)
     points.BCp2 = new Point(40, 20)

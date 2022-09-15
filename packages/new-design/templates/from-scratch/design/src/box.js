@@ -1,14 +1,6 @@
 export default (part) => {
-  const {
-    Point, points,
-    Path, paths,
-    Snippet, snippets,
-    complete,
-    options,
-    sa,
-    paperless,
-    macro
-  } = part.shorthand()
+  const { Point, points, Path, paths, Snippet, snippets, complete, options, sa, paperless, macro } =
+    part.shorthand()
 
   // Add points to make a box
   const w = 500 * options.size

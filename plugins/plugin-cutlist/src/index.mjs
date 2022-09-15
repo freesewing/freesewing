@@ -1,4 +1,4 @@
-import { name, version } from '../package.json'
+import { name, version } from '../data.mjs'
 import { Point } from '@freesewing/core'
 
 export const plugin = {
@@ -52,8 +52,6 @@ function setGrain(store, partName, grain = false) {
     return store
   }
   return store.set(path, grain)
-
-  return store
 }
 
 /** Method to add the cutOnFold info */

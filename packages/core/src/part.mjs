@@ -26,11 +26,12 @@ export function Part() {
   this.points = {}
   this.paths = {}
   this.snippets = {}
+  this.name = null
 
   return this
 }
 
-Part.prototype.macroClosure = function (args) {
+Part.prototype.macroClosure = function () {
   let self = this
   let method = function (key, args) {
     let macro = utils.macroName(key)
@@ -58,7 +59,7 @@ Part.prototype.getId = function (prefix = '') {
 }
 
 /** Returns a value formatted for units provided in settings */
-Part.prototype.unitsClosure = function (value) {
+Part.prototype.unitsClosure = function () {
   const self = this
   const method = function (value) {
     if (typeof value !== 'number')
@@ -110,27 +111,11 @@ Part.prototype.boundary = function () {
   if (topLeft.y === Infinity) topLeft.y = 0
   if (bottomRight.x === -Infinity) bottomRight.x = 0
   if (bottomRight.y === -Infinity) bottomRight.y = 0
-  // Add margin
-  let margin = this.context.settings.margin
-  if (this.context.settings.paperless && margin < 10) margin = 10
-  this.topLeft = new Point(topLeft.x - margin, topLeft.y - margin)
-  this.bottomRight = new Point(bottomRight.x + margin, bottomRight.y + margin)
+
+  this.topLeft = topLeft
+  this.bottomRight = bottomRight
   this.width = this.bottomRight.x - this.topLeft.x
   this.height = this.bottomRight.y - this.topLeft.y
-
-  return this
-}
-
-/** Stacks part so that its top left corner is in (0,0) */
-Part.prototype.stack = function () {
-  if (this.topLeft !== false) return this
-  else this.boundary()
-  if (this.topLeft.x == 0 && this.topLeft.y == 0) return this
-  else {
-    this.attr('transform', `translate(${this.topLeft.x * -1}, ${this.topLeft.y * -1})`)
-    this.layout.move.x = this.topLeft.x * -1
-    this.layout.move.y = this.topLeft.y * -1
-  }
 
   return this
 }
@@ -282,8 +267,8 @@ Part.prototype.shorthand = function () {
   shorthand.paths = new Proxy(this.paths || {}, pathsProxy)
   // Proxy the snippets object
   const snippetsProxy = {
-    get: function (target, prop, receiver) {
-      return Reflect.get(...arguments)
+    get: function (...args) {
+      return Reflect.get(...args)
     },
     set: (snippets, name, value) => {
       // Constructor checks
@@ -351,25 +336,16 @@ Part.prototype.shorthand = function () {
   return shorthand
 }
 
-Part.prototype.generateTransform = function (transforms) {
-  const { move, rotate, flipX, flipY } = transforms
-  const generated = utils.generatePartTransform(move.x, move.y, rotate, flipX, flipY, this)
-
-  for (var t in generated) {
-    this.attr(t, generated[t], true)
-  }
-}
-
 Part.prototype.isEmpty = function () {
   if (Object.keys(this.snippets).length > 0) return false
 
   if (Object.keys(this.paths).length > 0) {
-    for (var p in this.paths) {
+    for (const p in this.paths) {
       if (this.paths[p].render && this.paths[p].length()) return false
     }
   }
 
-  for (var p in this.points) {
+  for (const p in this.points) {
     if (this.points[p].attributes.get('data-text')) return false
     if (this.points[p].attributes.get('data-circle')) return false
   }

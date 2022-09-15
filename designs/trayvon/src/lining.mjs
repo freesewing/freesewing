@@ -51,11 +51,11 @@ function trayvonLiningTail(params) {
     })
     snippets.notch = new Snippet('notch', points.tip)
 
-    if (sa) seamAllowance(part, 'lining')
+    if (sa) seamAllowance(params, 'lining')
   }
 
   // Paperless?
-  if (paperless) tieShapeDimensions(part, true)
+  if (paperless) tieShapeDimensions(params, true)
 
   return params.part
 }
@@ -103,12 +103,12 @@ function trayvonLiningTip(params) {
     snippets.notch = new Snippet('notch', points.tip)
     macro('miniscale', { at: points.gridAnchor })
 
-    if (sa) seamAllowance(part, 'lining')
+    if (sa) seamAllowance(params, 'lining')
   }
 
   // Paperless?
   if (paperless) {
-    tieShapeDimensions(part, true)
+    tieShapeDimensions(params, true)
   }
 
   return params.part
