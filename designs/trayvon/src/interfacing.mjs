@@ -51,7 +51,7 @@ function trayvonInterfacingTip(params) {
 
   // Paperless?
   if (paperless) {
-    tieShapeDimensions(part)
+    tieShapeDimensions(params)
     paths.n45 = new Path()
       .move(points.midLeft)
       .line(points.midRight)

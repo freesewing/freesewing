@@ -3,7 +3,7 @@ import { ribbing } from './frontback.mjs'
 import { sleeve } from './sleeve.mjs'
 
 function svenCuff(params) {
-  const { measurements, sa, points, complete, paperless, macro, options, part } = params
+  const { measurements, sa, points, complete, macro, options, part } = params
 
   if (!options.ribbing) return part
   const length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
@@ -19,10 +19,6 @@ function svenCuff(params) {
     if (sa) {
       // FIXME: Don't we need SA here?
     }
-  }
-
-  // Paperless?
-  if (paperless) {
   }
 
   return part

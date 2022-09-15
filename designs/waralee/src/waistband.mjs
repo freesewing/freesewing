@@ -26,7 +26,6 @@ function waraleeWaistband(type, {
 
   let strapLength = measurements.waist + measurements.crotchDepth * 1.75
   let partNr = 0
-  let partN = 0
 
   switch (type) {
     case 'waistBandFront':

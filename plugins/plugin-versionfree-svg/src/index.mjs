@@ -5,7 +5,7 @@ export const plugin = {
   version,
   hooks: {
     preRender: function (svg) {
-      for (const [key, val] of Object.entries(svg.attributes.list)) {
+      for (const key in svg.attributes.list) {
         if (key.toLowerCase().slice(0, 10) === 'freesewing') delete svg.attributes.list[key]
       }
     },

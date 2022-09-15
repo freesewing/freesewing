@@ -13,7 +13,6 @@ export function frontWithPrimaryOnly(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 700:
       return new Path()
         .move(points.cfNeck)
@@ -24,7 +23,6 @@ export function frontWithPrimaryOnly(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 800:
     case 900:
     case 1000:
@@ -38,7 +36,6 @@ export function frontWithPrimaryOnly(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1100:
       return new Path()
         .move(points.primaryBustDart1)
@@ -50,7 +47,6 @@ export function frontWithPrimaryOnly(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.primaryBustDart1)
-      break
     case 1130:
       return new Path()
         .move(points.cfNeck)
@@ -62,7 +58,6 @@ export function frontWithPrimaryOnly(part) {
         .line(points.hps)
         .noop('primary')
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1200:
     case 1230:
       return new Path()
@@ -75,7 +70,6 @@ export function frontWithPrimaryOnly(part) {
         .noop('primary')
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1300:
       return new Path()
         .move(points.cfNeck)
@@ -87,7 +81,6 @@ export function frontWithPrimaryOnly(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1330:
       return new Path()
         .move(points.cfNeck)
@@ -99,7 +92,6 @@ export function frontWithPrimaryOnly(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1400:
     case 1500:
     case 1600:
@@ -114,6 +106,5 @@ export function frontWithPrimaryOnly(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
   }
 }

@@ -37,6 +37,7 @@ const repo = {
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.mjs'),
+    eslint: readTemplateFile('eslintrc.yml'),
     pluginTests: readTemplateFile('plugin.test.mjs'),
     designTests: readTemplateFile('design.test.mjs.mustache'),
     data: readTemplateFile('data.dflt.mjs.mustache'),
@@ -88,6 +89,10 @@ for (const pkg of Object.values(software)) {
       repo.templates.build
     )
   }
+  fs.writeFileSync(
+    path.join(cwd, pkg.folder, pkg.name, '.eslintrc.yml'),
+    repo.templates.eslint
+  )
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'),
     changelog(pkg)

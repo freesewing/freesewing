@@ -1,4 +1,4 @@
-import { name, version } from '../package.json'
+import { name, version } from '../data.mjs'
 import { Point } from '@freesewing/core'
 
 export const plugin = {

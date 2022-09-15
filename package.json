@@ -24,6 +24,7 @@
     "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
     "build": "yarn buildall",
     "testall": "node scripts/testall.js",
+    "lint": "lerna run lint",
     "release": "lerna exec --no-bail -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
     "ship": "lerna exec --no-bail -- npm publish",

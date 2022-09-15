@@ -36,10 +36,12 @@ function walburgaFront({
 
     // checks to ensure that neck opening does not become too small
     if (neckotop < measurements.neck / 4) {
-      ;(neckotop = measurements.neck / 4), (neckomid = (2 * measurements.neck) / 4 / goldenRatio)
+      neckotop = measurements.neck / 4
+      neckomid = (2 * measurements.neck) / 4 / goldenRatio
     }
     if (neckomid < measurements.neck / 4) {
-      ;(neckomid = measurements.neck / 4), (neckotop = ((measurements.neck / 4) * goldenRatio) / 2)
+      neckomid = measurements.neck / 4
+      neckotop = ((measurements.neck / 4) * goldenRatio) / 2
     }
 
     points.neckotop = points.top.shift(0, -neckotop)

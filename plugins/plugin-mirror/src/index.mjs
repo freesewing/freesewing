@@ -38,7 +38,7 @@ export const plugin = {
       const ops = ['from', 'to', 'cp1', 'cp2']
 
       if (paths !== null) {
-        paths.forEach((path, i) => {
+        paths.forEach((path) => {
           // Try to find point name from path by looking in list of all points
           let foundId = null
           for (let id of Object.keys(this.paths)) {
@@ -60,7 +60,7 @@ export const plugin = {
               // Iterate over all possible path op points and clone/move point
               const pathOp = path.ops[op][type]
               if (typeof pathOp !== 'undefined') {
-                ;[pathOp.x, pathOp.y] = mirrorPoint(pathOp)
+                [pathOp.x, pathOp.y] = mirrorPoint(pathOp)
                 pathOp.attributes.set('mirrored', true)
               }
             }
@@ -85,7 +85,7 @@ export const plugin = {
               this.points[`${prefix}${capFirst(foundId)}`] = point
             }
           }
-          ;[point.x, point.y] = mirrorPoint(point)
+          [point.x, point.y] = mirrorPoint(point)
           point.attributes.set('mirrored', true)
         })
       }

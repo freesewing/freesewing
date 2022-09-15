@@ -23,7 +23,7 @@ function trayvonFabricTail(params) {
       rotation: -90,
     })
 
-    if (sa) seamAllowance(part, 'fabric')
+    if (sa) seamAllowance(params, 'fabric')
   }
 
   // Paperless?
@@ -80,12 +80,12 @@ function trayvonFabricTip(params) {
     points.logo = points.tip.shiftFractionTowards(points.mid, 0.4)
     snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) seamAllowance(part, 'fabric')
+    if (sa) seamAllowance(params, 'fabric')
   }
 
   // Paperless?
   if (paperless) {
-    tieShapeDimensions(part)
+    tieShapeDimensions(params)
     macro('ld', {
       from: points.tip,
       to: points.notch1,

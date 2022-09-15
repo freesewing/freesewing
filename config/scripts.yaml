@@ -7,6 +7,7 @@ _:
   vbuild: 'VERBOSE=1 node build.mjs'
   lab: "cd ../../sites/lab && yarn start"
   tips: "node ../../scripts/help.mjs"
+  lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
 _types:
   design:
     prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
@@ -30,7 +31,15 @@ models:
   test: "npx mocha tests/*.test.mjs"
 new-design:
   build: "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs && cp ../../scripts/banner.mjs ./lib && node build.mjs"
+  lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'
   test: '!'
   testci: '!'
   vbuild: '!'
+rehype-jargon:
+  lint: "npx eslint 'src/*.mjs'"
+snapseries:
+  lint: "npx eslint 'src/*.mjs'"
+backend:
+  lint: "!"
+

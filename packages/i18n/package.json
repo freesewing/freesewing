@@ -35,6 +35,7 @@
     "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'src/*.mjs' 'tests/*.mjs'",
     "prebuild": "node scripts/prebuilder.mjs",
     "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
     "precibuild_step7": "node scripts/prebuilder.mjs",

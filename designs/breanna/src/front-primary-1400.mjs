@@ -16,7 +16,6 @@ export function frontWithPrimaryAt1400(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     case 1700:
       return new Path()
         .move(points.cfNeck)
@@ -29,7 +28,6 @@ export function frontWithPrimaryAt1400(part) {
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .line(points.hps)
         .curve_(points.hpsCp2, points.cfNeck)
-      break
     default:
       return new Path()
   }

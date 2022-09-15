@@ -8,7 +8,7 @@ describe('Bartack plugin Tests', () => {
   it('draws a default bartack from a point', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, macro }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
@@ -38,7 +38,7 @@ describe('Bartack plugin Tests', () => {
   it('draws a bartack along a path', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, Path, macro }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 30)
         macro('bartackAlong', {
@@ -69,7 +69,7 @@ describe('Bartack plugin Tests', () => {
   it('can be called using the bartackFractionAlong syntax', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, Path, macro }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 100)
         macro('bartackAlong', {
@@ -102,7 +102,7 @@ describe('Bartack plugin Tests', () => {
   it('can be called using the bartackFractionAlong syntax', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, Path, macro }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 100)
         macro('bartackFractionAlong', {
@@ -135,7 +135,7 @@ describe('Bartack plugin Tests', () => {
   it('has configurable length', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, macro }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
@@ -166,7 +166,7 @@ describe('Bartack plugin Tests', () => {
   it('has configurable width', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, macro }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
@@ -197,7 +197,7 @@ describe('Bartack plugin Tests', () => {
   it('has configurable angle', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, macro }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
@@ -228,7 +228,7 @@ describe('Bartack plugin Tests', () => {
   it('has configurable suffix', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, macro }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
@@ -246,7 +246,7 @@ describe('Bartack plugin Tests', () => {
   it('has configurable prefix', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, paths, macro }) => {
+      draft: ({ Point, points, macro }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
