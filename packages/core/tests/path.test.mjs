@@ -1035,7 +1035,7 @@ describe('Path', () => {
     const b = new Point(10, 10)
     const p1 = new Path().move(a).line(b)
     expect(invalid).to.equal(false)
-    const p2 = new Path().withLog(log).noop('test').insop(false, p1)
+    new Path().withLog(log).noop('test').insop(false, p1)
     expect(invalid).to.equal(true)
   })
 
@@ -1044,7 +1044,7 @@ describe('Path', () => {
     const log = { warning: () => (invalid = true) }
     const a = new Point(0, 0)
     const b = new Point(10, 10)
-    const p1 = new Path().move(a).line(b)
+    new Path().move(a).line(b)
     expect(invalid).to.equal(false)
     try {
       new Path().withLog(log).noop('test').insop('test')
@@ -1058,7 +1058,7 @@ describe('Path', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
     expect(invalid).to.equal(false)
-    const p1 = new Path().withLog(log).attr()
+    new Path().withLog(log).attr()
     expect(invalid).to.equal(true)
   })
 
@@ -1066,7 +1066,7 @@ describe('Path', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
     expect(invalid).to.equal(false)
-    const p1 = new Path().withLog(log).attr('test')
+    new Path().withLog(log).attr('test')
     expect(invalid).to.equal(true)
   })
 
@@ -1142,7 +1142,7 @@ describe('Path', () => {
   it('Should log a warning when calling shiftFractionalong but fraction is not a number', () => {
     const part = {
       name: 'test',
-      draft: ({ paths, Path, Point, points }) => {
+      draft: ({ Path, Point, points }) => {
         points.a = new Path().move(new Point(0, 0)).line(new Point(0, 40)).shiftFractionAlong()
         return part
       },
@@ -1158,7 +1158,7 @@ describe('Path', () => {
   it('Should log a warning when splitting a path on a non-point', () => {
     const part = {
       name: 'test',
-      draft: ({ paths, Path, Point, points }) => {
+      draft: ({ Path, Point, points }) => {
         points.a = new Path().move(new Point(0, 0)).line(new Point(0, 40)).split()
         return part
       },

@@ -310,7 +310,6 @@ Pattern.prototype.sampleParts = function () {
 Pattern.prototype.sampleRun = function (parts, anchors, run, runs, extraClass = false) {
   this.draft()
   for (let i in this.parts) {
-    let anchor = false
     let dx = 0
     let dy = 0
     if (this.parts[i].points.anchor) {
@@ -474,7 +473,7 @@ Pattern.prototype.__loadPlugins = function () {
   return this
 }
 
-Pattern.prototype.__loadPlugin = function (plugin, data, explicit = false) {
+Pattern.prototype.__loadPlugin = function (plugin, data) {
   this.plugins[plugin.name] = plugin
   if (plugin.hooks) this.__loadPluginHooks(plugin, data)
   if (plugin.macros) this.__loadPluginMacros(plugin)
@@ -711,7 +710,7 @@ Pattern.prototype.__resolveParts = function (count = 0) {
   // If so, resolve recursively
   if (len > count) return this.__resolveParts(len)
 
-  for (const [name, part] of Object.entries(this.__parts)) {
+  for (const part of Object.values(this.__parts)) {
     this.config = addPartConfig(part, this.config, this.store)
   }
 

@@ -27,7 +27,6 @@ describe('Design', () => {
       const settings = {}
       settings[key] = ['one', 'two']
       const Pattern = new Design(settings)
-      const m = Pattern.config.parts
       expect(Pattern.config[key].length).to.equal(2)
       expect(Pattern.config[key][0]).to.equal('one')
       expect(Pattern.config[key][1]).to.equal('two')

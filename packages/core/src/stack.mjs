@@ -27,12 +27,12 @@ Stack.prototype.addPart = function (part) {
 }
 
 /* Returns a list of parts in this stack */
-Stack.prototype.getPartList = function (part) {
+Stack.prototype.getPartList = function () {
   return [...this.parts]
 }
 
 /* Returns a list of names of parts in this stack */
-Stack.prototype.getPartNames = function (part) {
+Stack.prototype.getPartNames = function () {
   return [...this.parts].map((p) => p.name)
 }
 

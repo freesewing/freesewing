@@ -5,52 +5,6 @@ const expect = chai.expect
 
 describe('Pattern', () => {
   describe('Pattern.draft()', () => {
-    const partA = {
-      name: 'test.partA',
-      measurements: ['head', 'knee'],
-      optionalMeasurements: ['chest', 'waist'],
-      options: {
-        optA: { pct: 40, min: 20, max: 80 },
-      },
-      draft: () => {},
-    }
-    const partB = {
-      name: 'test.partB',
-      measurements: ['head', 'knee'],
-      optionalMeasurements: ['knee'],
-      after: partA,
-      plugins: [
-        {
-          name: 'testPlugin',
-          hooks: {
-            preRender: () => {},
-          },
-        },
-      ],
-      options: {
-        optB: { deg: 40, min: 20, max: 80 },
-      },
-      draft: () => {},
-    }
-    const partC = {
-      name: 'test.partC',
-      measurements: ['head', 'knee'],
-      optionalMeasurements: ['knee'],
-      from: partB,
-      options: {
-        optC: { pct: 20, min: 10, max: 30 },
-      },
-      draft: () => {},
-    }
-
-    const Pattern = new Design({
-      data: {
-        name: 'test',
-        version: '1.2.3',
-      },
-      parts: [partC],
-    })
-    const pattern = new Pattern()
 
     it('Pattern.draft() should draft according to settings', () => {
       let count = 0

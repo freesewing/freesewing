@@ -184,7 +184,7 @@ describe('Part', () => {
     const part = pattern.__createPartWithContext()
     part.hooks.preDraft = [
       {
-        method: function (p) {
+        method: function () {
           count++
         },
       },
@@ -218,7 +218,7 @@ describe('Part', () => {
       const design = new Design()
       const pattern = new design()
       const part = pattern.__createPartWithContext()
-      const { Path, paths, Point } = part.shorthand()
+      const { Path, paths } = part.shorthand()
       paths.seam = new Path()
       expect(part.isEmpty()).to.be.true
     })

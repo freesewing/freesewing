@@ -31,7 +31,7 @@ export function Part() {
   return this
 }
 
-Part.prototype.macroClosure = function (args) {
+Part.prototype.macroClosure = function () {
   let self = this
   let method = function (key, args) {
     let macro = utils.macroName(key)
@@ -59,7 +59,7 @@ Part.prototype.getId = function (prefix = '') {
 }
 
 /** Returns a value formatted for units provided in settings */
-Part.prototype.unitsClosure = function (value) {
+Part.prototype.unitsClosure = function () {
   const self = this
   const method = function (value) {
     if (typeof value !== 'number')
@@ -267,8 +267,8 @@ Part.prototype.shorthand = function () {
   shorthand.paths = new Proxy(this.paths || {}, pathsProxy)
   // Proxy the snippets object
   const snippetsProxy = {
-    get: function (target, prop, receiver) {
-      return Reflect.get(...arguments)
+    get: function (...args) {
+      return Reflect.get(...args)
     },
     set: (snippets, name, value) => {
       // Constructor checks
@@ -340,12 +340,12 @@ Part.prototype.isEmpty = function () {
   if (Object.keys(this.snippets).length > 0) return false
 
   if (Object.keys(this.paths).length > 0) {
-    for (var p in this.paths) {
+    for (const p in this.paths) {
       if (this.paths[p].render && this.paths[p].length()) return false
     }
   }
 
-  for (var p in this.points) {
+  for (const p in this.points) {
     if (this.points[p].attributes.get('data-text')) return false
     if (this.points[p].attributes.get('data-circle')) return false
   }

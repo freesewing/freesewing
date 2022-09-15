@@ -224,7 +224,7 @@ Svg.prototype.renderText = function (point) {
 }
 
 Svg.prototype.escapeText = function (text) {
-  return text.replace(/\"/g, '&#8220;')
+  return text.replace(/"/g, '&#8220;')
 }
 
 Svg.prototype.renderCircle = function (point) {
@@ -234,7 +234,7 @@ Svg.prototype.renderCircle = function (point) {
 }
 
 /** Returns SVG code for a snippet */
-Svg.prototype.renderSnippet = function (snippet, part) {
+Svg.prototype.renderSnippet = function (snippet) {
   let x = round(snippet.anchor.x)
   let y = round(snippet.anchor.y)
   let scale = snippet.attributes.get('data-scale') || 1
