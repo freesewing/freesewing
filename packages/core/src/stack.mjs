@@ -90,7 +90,9 @@ Stack.prototype.home = function () {
   this.height = this.bottomRight.y - this.topLeft.y
 
   // Add transform
-  this.anchor = this.getAnchor()
+  //this.anchor = this.getAnchor()
+  // FIXME: Can we be certain this is always (0,0) /
+  this.anchor = new Point(0, 0)
 
   if (this.topLeft.x === this.anchor.x && this.topLeft.y === this.anchor.y) return this
   else {
