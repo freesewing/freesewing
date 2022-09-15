@@ -13,7 +13,6 @@ function wahidPocketFacing({
   store,
   part,
 }) {
-
   const pw = measurements.hips * options.pocketWidth // Pocket width
   const pwh = pw * options.weltHeight // Pocket welt height
   const ph = store.get('pocketBagLength') + pwh // Pocket height

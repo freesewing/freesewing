@@ -5,17 +5,17 @@ module.exports = function tests(store, config, chai) {
     for (let lang in config.languages) {
       store[lang] = {
         email: lang + email,
-        password: 'test'
+        password: 'test',
       }
 
-      it(config.languages[lang] + '  => should create a pending signup', done => {
+      it(config.languages[lang] + '  => should create a pending signup', (done) => {
         chai
           .request(config.backend)
           .post('/signup')
           .send({
             email: store[lang].email,
             password: store[lang].password,
-            language: lang
+            language: lang,
           })
           .end((err, res) => {
             res.should.have.status(200)
@@ -24,14 +24,14 @@ module.exports = function tests(store, config, chai) {
           })
       })
 
-      it(config.languages[lang] + '  => should detect a pre-existing signup', done => {
+      it(config.languages[lang] + '  => should detect a pre-existing signup', (done) => {
         chai
           .request(config.backend)
           .post('/signup')
           .send({
             email: store[lang].email,
             password: store[lang].password,
-            language: lang
+            language: lang,
           })
           .end((err, res) => {
             res.should.have.status(400)
@@ -43,13 +43,13 @@ module.exports = function tests(store, config, chai) {
   })
 
   describe(`Send out emails for other tests that rely on email delivery`, () => {
-    it('should fetch the JWT token for test_user', done => {
+    it('should fetch the JWT token for test_user', (done) => {
       chai
         .request(config.backend)
         .post('/login')
         .send({
           username: config.user.username,
-          password: config.user.password
+          password: config.user.password,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -59,13 +59,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should trigger the email change confirmation email', done => {
+    it('should trigger the email change confirmation email', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + store.emailChange.token)
         .send({
-          email: config.user.changedEmail
+          email: config.user.changedEmail,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -75,7 +75,7 @@ module.exports = function tests(store, config, chai) {
   })
 
   describe(`Take a ${config.sleep} second power nap while we wait for the emails to be delivered`, () => {
-    it(`should sleep for ${config.sleep} seconds to allow the emails to arrive`, done => {
+    it(`should sleep for ${config.sleep} seconds to allow the emails to arrive`, (done) => {
       console.log('\n    😴  \n')
       setTimeout(() => {
         done()
@@ -85,7 +85,7 @@ module.exports = function tests(store, config, chai) {
     for (let lang in config.languages) {
       it(
         config.languages[lang] + '  => should have sent out an email to the signup email address',
-        done => {
+        (done) => {
           let url = `/api/v2/search?kind=to&query=${lang}${email}`
           chai
             .request(config.mailhog)
@@ -100,9 +100,8 @@ module.exports = function tests(store, config, chai) {
               message.Content.Headers.Subject[0].should.equal(
                 config.strings[lang]['email.signupSubject']
               )
-              store[lang].confirmation = message.Content.Headers[
-                'X-Freesewing-Confirmation-ID'
-              ].pop()
+              store[lang].confirmation =
+                message.Content.Headers['X-Freesewing-Confirmation-ID'].pop()
               done()
             })
         }
@@ -111,12 +110,12 @@ module.exports = function tests(store, config, chai) {
       it(
         config.languages[lang] +
           '  => should not activate the pending confirmation without consent',
-        done => {
+        (done) => {
           chai
             .request(config.backend)
             .post('/account')
             .send({
-              id: store[lang].confirmation
+              id: store[lang].confirmation,
             })
             .end((err, res) => {
               res.should.have.status(400)
@@ -126,15 +125,15 @@ module.exports = function tests(store, config, chai) {
         }
       )
 
-      it(config.languages[lang] + '  => should activate the pending confirmation', done => {
+      it(config.languages[lang] + '  => should activate the pending confirmation', (done) => {
         chai
           .request(config.backend)
           .post('/account')
           .send({
             id: store[lang].confirmation,
             consent: {
-              profile: true
-            }
+              profile: true,
+            },
           })
           .end((err, res) => {
             res.should.have.status(200)
@@ -161,7 +160,7 @@ module.exports = function tests(store, config, chai) {
       })
     }
 
-    it('should have sent out an email to confirm the email change', done => {
+    it('should have sent out an email to confirm the email change', (done) => {
       chai
         .request(config.mailhog)
         .get(`/api/v2/search?kind=to&query=${config.user.changedEmail}`)

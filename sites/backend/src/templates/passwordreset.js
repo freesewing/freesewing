@@ -4,7 +4,7 @@ const passwordreset = {
     'passwordresetCopy1',
     'passwordresetActionText',
     'questionsJustReply',
-    'signature'
+    'signature',
   ],
   html: `<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
@@ -71,7 +71,7 @@ __passwordresetCopy1__
 
 __passwordresetActionLink__
 
-__questionsJustReply__`
+__questionsJustReply__`,
 }
 
 export default passwordreset

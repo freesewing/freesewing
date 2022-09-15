@@ -5,7 +5,7 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 export const configpart = {
   name: 'tutorial.configpart',
   measurements: ['head'],
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   options: {
     size: { pct: 50, min: 10, max: 100 },
     neckRatio: { pct: 80, min: 70, max: 90 },
@@ -13,6 +13,5 @@ export const configpart = {
     lengthRatio: { pct: 75, min: 55, max: 85 },
   },
   hide: true,
-  draft: ({part}) => part
+  draft: ({ part }) => part,
 }
-

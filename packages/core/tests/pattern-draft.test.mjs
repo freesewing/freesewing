@@ -5,7 +5,6 @@ const expect = chai.expect
 
 describe('Pattern', () => {
   describe('Pattern.draft()', () => {
-
     it('Pattern.draft() should draft according to settings', () => {
       let count = 0
       const back = {

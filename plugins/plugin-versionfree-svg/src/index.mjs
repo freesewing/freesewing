@@ -15,4 +15,3 @@ export const plugin = {
 // More specifically named exports
 export const versionfreeSvgPlugin = plugin
 export const pluginVersionfreeSvg = plugin
-

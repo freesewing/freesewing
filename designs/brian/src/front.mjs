@@ -20,7 +20,6 @@ export const front = {
     utils,
     part,
   }) => {
-
     // Re-use points for deeper armhole at the front
     points.armholePitchCp1 = points.frontArmholePitchCp1
     points.armholePitch = points.frontArmholePitch
@@ -62,7 +61,9 @@ export const front = {
         .curve_(points.mirroredNeckCp2, points.mirroredCbNeck)
         .split(points.s3CollarSplit)[0]
         .reverse()
-        .join(new Path().move(points.hps).curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck))
+        .join(
+          new Path().move(points.hps).curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+        )
         .setRender(false)
     }
     if (options.s3Armhole < 0.1 && options.s3Armhole > -0.1) {
@@ -194,5 +195,5 @@ export const front = {
     }
 
     return part
-  }
+  },
 }

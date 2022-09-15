@@ -17,7 +17,6 @@ function yuriFront({
   Snippet,
   part,
 }) {
-
   // Clear paths from Brian
   for (const i in paths) {
     if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]

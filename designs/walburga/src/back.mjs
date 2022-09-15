@@ -1,14 +1,6 @@
 import { base } from './base.mjs'
 
-function walburgaBack({
-  points,
-  macro,
-  complete,
-  snippets,
-  Snippet,
-  part,
-}) {
-
+function walburgaBack({ points, macro, complete, snippets, Snippet, part }) {
   // Complete?
   if (complete) {
     // logo & title

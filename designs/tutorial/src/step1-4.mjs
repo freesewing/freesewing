@@ -17,7 +17,6 @@ export const step1 = {
     macro,
     part,
   }) => {
-
     let w = 500 * options.size
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(w, 0)
@@ -62,46 +61,31 @@ export const step1 = {
     }
 
     return part
-  }
+  },
 }
 
 export const step2 = {
   name: 'tutorial.step2',
   after: configpart,
-  draft: ({
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    part,
-  }) => {
-
+  draft: ({ Point, points, Path, paths, measurements, part }) => {
     points.right = new Point(measurements.head / 10, 0)
     points.bottom = new Point(0, measurements.head / 12)
 
     points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right) / 2)
     points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right) / 2)
 
-    paths.neck = new Path().move(points.right).curve(points.rightCp1, points.bottomCp2, points.bottom)
+    paths.neck = new Path()
+      .move(points.right)
+      .curve(points.rightCp1, points.bottomCp2, points.bottom)
 
     return part
-  }
+  },
 }
 
 export const step3 = {
   name: 'tutorial.step3',
   after: configpart,
-  draft: ({
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    part,
-  }) => {
-
+  draft: ({ Point, points, Path, paths, measurements, options, part }) => {
     let tweak = 1
     let target = (measurements.head * options.neckRatio) / 4
     let delta
@@ -122,19 +106,13 @@ export const step3 = {
     } while (Math.abs(delta) > 1)
 
     return part
-  }
+  },
 }
 
 export const step4 = {
   name: 'tutorial.step4',
   from: step3,
-  draft: ({
-    points,
-    Path,
-    paths,
-    part,
-  }) => {
-
+  draft: ({ points, Path, paths, part }) => {
     points.rightCp2 = points.rightCp1.flipY()
     points.bottomCp1 = points.bottomCp2.flipX()
 
@@ -155,6 +133,5 @@ export const step4 = {
       .close()
 
     return part
-  }
+  },
 }
-

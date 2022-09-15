@@ -5,8 +5,7 @@ import { ehash } from '../utils'
 
 function AdminController() {}
 
-
-AdminController.prototype.search = function(req, res) {
+AdminController.prototype.search = function (req, res) {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, admin) => {
     if (err || admin === null) return res.sendStatus(400)
@@ -16,26 +15,26 @@ AdminController.prototype.search = function(req, res) {
         { handle: { $regex: `.*${req.body.query}.*` } },
         { username: { $regex: `.*${req.body.query}.*` } },
         { ehash: ehash(req.body.query) },
-      ]
+      ],
     })
-    .sort('username')
-    .exec((err, users) => {
-      if (err) return res.sendStatus(400)
-      Person.find({ handle: { $regex: `.*${req.body.query}.*` } })
-      .sort('handle')
-      .exec((err, people) => {
+      .sort('username')
+      .exec((err, users) => {
         if (err) return res.sendStatus(400)
-        if (users === null && people === null) return res.sendStatus(404)
-        return res.send({
-          users: users.map(user => user.adminProfile()),
-          people: people.map(person => person.info()),
-        })
+        Person.find({ handle: { $regex: `.*${req.body.query}.*` } })
+          .sort('handle')
+          .exec((err, people) => {
+            if (err) return res.sendStatus(400)
+            if (users === null && people === null) return res.sendStatus(404)
+            return res.send({
+              users: users.map((user) => user.adminProfile()),
+              people: people.map((person) => person.info()),
+            })
+          })
       })
-    })
   })
 }
 
-AdminController.prototype.setPatronStatus = function(req, res) {
+AdminController.prototype.setPatronStatus = function (req, res) {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, admin) => {
     if (err || admin === null) return res.sendStatus(400)
@@ -49,7 +48,7 @@ AdminController.prototype.setPatronStatus = function(req, res) {
   })
 }
 
-AdminController.prototype.setRole = function(req, res) {
+AdminController.prototype.setRole = function (req, res) {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, admin) => {
     if (err || admin === null) return res.sendStatus(400)
@@ -63,7 +62,7 @@ AdminController.prototype.setRole = function(req, res) {
   })
 }
 
-AdminController.prototype.unfreeze = function(req, res) {
+AdminController.prototype.unfreeze = function (req, res) {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, admin) => {
     if (err || admin === null) return res.sendStatus(400)
@@ -77,7 +76,7 @@ AdminController.prototype.unfreeze = function(req, res) {
   })
 }
 
-AdminController.prototype.impersonate = function(req, res) {
+AdminController.prototype.impersonate = function (req, res) {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, admin) => {
     if (err || admin === null) return res.sendStatus(400)
@@ -95,16 +94,14 @@ AdminController.prototype.impersonate = function(req, res) {
         Pattern.find({ user: user.handle }, (err, patternList) => {
           if (err) return res.sendStatus(400)
           for (let pattern of patternList) patterns[pattern.handle] = pattern
-          return user.updateLoginTime(() =>
-            res.send({ account, people, patterns, token })
-          )
+          return user.updateLoginTime(() => res.send({ account, people, patterns, token }))
         })
       })
     })
   })
 }
 
-AdminController.prototype.patronList = function(req, res) {
+AdminController.prototype.patronList = function (req, res) {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, admin) => {
     if (err || admin === null) return res.sendStatus(400)
@@ -116,16 +113,16 @@ AdminController.prototype.patronList = function(req, res) {
   })
 }
 
-AdminController.prototype.subscriberList = function(req, res) {
+AdminController.prototype.subscriberList = function (req, res) {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, admin) => {
     if (err || admin === null) return res.sendStatus(400)
     if (admin.role !== 'admin') return res.sendStatus(403)
-    User.find({newsletter: true}, (err, subscribedUsers) => {
+    User.find({ newsletter: true }, (err, subscribedUsers) => {
       if (err) return res.sendStatus(500)
-      let subscribers = subscribedUsers.map(user => ({
+      let subscribers = subscribedUsers.map((user) => ({
         ehash: user.ehash,
-        email: user.email
+        email: user.email,
       }))
       Newsletter.find({}, (err, subs) => {
         if (err) return res.sendStatus(500)
@@ -135,12 +132,12 @@ AdminController.prototype.subscriberList = function(req, res) {
   })
 }
 
-AdminController.prototype.stats = function(req, res) {
+AdminController.prototype.stats = function (req, res) {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, admin) => {
     if (err || admin === null) return res.sendStatus(400)
     if (admin.role !== 'admin') return res.sendStatus(403)
-    User.find({ "consent.profile": true }, (err, users) => {
+    User.find({ 'consent.profile': true }, (err, users) => {
       if (err) return res.sendStatus(500)
       Person.find({}, (err, people) => {
         if (err) return res.sendStatus(500)
@@ -157,21 +154,21 @@ AdminController.prototype.stats = function(req, res) {
 }
 
 function saveAndReturnAccount(res, user) {
-  user.save(function(err, updatedUser) {
+  user.save(function (err, updatedUser) {
     if (err) {
       return res.sendStatus(500)
     } else return res.send({ account: updatedUser.account() })
   })
 }
 
-const getToken = account => {
+const getToken = (account) => {
   return jwt.sign(
     {
       _id: account._id,
       handle: account.handle,
       role: account.role,
       aud: config.jwt.audience,
-      iss: config.jwt.issuer
+      iss: config.jwt.issuer,
     },
     config.jwt.secretOrKey
   )

@@ -16,7 +16,6 @@ function yuriHoodSide({
   macro,
   part,
 }) {
-
   const neckOpening = store.get('frontNeckSeamLength') + store.get('backNeckSeamLength')
   const hoodOpening = measurements.head
   const neckCutoutDelta = store.get('neckCutoutFront') - store.get('neckCutoutBack')

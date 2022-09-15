@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { strings as i18n } from './dist/index.mjs'
+import * as i18n from '../prebuild/strings.js'
 
 const expect = chai.expect
 
@@ -27,13 +27,12 @@ const languages = [
 ]
 
 function checkTranslations(from, to) {
-  const originals = Object.keys(from.strings)
   const translated = to.strings
-  for (let string of originals) {
+  for (const string in from.strings) {
     if (typeof translated[string] === 'undefined') {
       console.log(`String ${string} in ${from.name} is not available in ${to.name}`)
-      expect(typeof translated[string]).to.equal('string')
     }
+    expect(typeof translated[string]).to.equal('string')
   }
 }
 

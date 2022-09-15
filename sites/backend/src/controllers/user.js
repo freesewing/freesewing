@@ -1,11 +1,5 @@
 import { User, Confirmation, Person, Pattern } from '../models'
-import {
-  log,
-  email,
-  ehash,
-  newHandle,
-  uniqueHandle,
-} from '../utils'
+import { log, email, ehash, newHandle, uniqueHandle } from '../utils'
 import jwt from 'jsonwebtoken'
 import config from '../config'
 import path from 'path'
@@ -15,15 +9,15 @@ import rimraf from 'rimraf'
 
 function UserController() {}
 
-UserController.prototype.login = function(req, res) {
+UserController.prototype.login = function (req, res) {
   if (!req.body || !req.body.username) return res.sendStatus(400)
   User.findOne(
     {
       $or: [
         { username: req.body.username.toLowerCase().trim() },
         { username: req.body.username.trim() },
-        { ehash: ehash(req.body.username) }
-      ]
+        { ehash: ehash(req.body.username) },
+      ],
     },
     (err, user) => {
       if (err) return res.sendStatus(400)
@@ -44,9 +38,7 @@ UserController.prototype.login = function(req, res) {
               Pattern.find({ user: user.handle }, (err, patternList) => {
                 if (err) return res.sendStatus(400)
                 for (let pattern of patternList) patterns[pattern.handle] = pattern
-                return user.updateLoginTime(() =>
-                  res.send({ account, people, patterns, token })
-                )
+                return user.updateLoginTime(() => res.send({ account, people, patterns, token }))
               })
             })
           }
@@ -60,7 +52,7 @@ UserController.prototype.login = function(req, res) {
 }
 
 // For people who have forgotten their password, or password-less logins
-UserController.prototype.confirmationLogin = function(req, res) {
+UserController.prototype.confirmationLogin = function (req, res) {
   if (!req.body || !req.body.id) return res.sendStatus(400)
   Confirmation.findById(req.body.id, (err, confirmation) => {
     if (err) return res.sendStatus(400)
@@ -83,9 +75,7 @@ UserController.prototype.confirmationLogin = function(req, res) {
           Pattern.find({ user: user.handle }, (err, patternList) => {
             if (err) return res.sendStatus(400)
             for (let pattern of patternList) patterns[pattern.handle] = pattern
-            return user.updateLoginTime(() =>
-              res.send({ account, people, patterns, token })
-            )
+            return user.updateLoginTime(() => res.send({ account, people, patterns, token }))
           })
         })
       }
@@ -112,7 +102,7 @@ UserController.prototype.create = (req, res) => {
       log.info('accountActivated', { handle: user.handle })
       let account = user.account()
       let token = getToken(account)
-      user.save(function(err) {
+      user.save(function (err) {
         if (err) return res.sendStatus(400)
         Confirmation.findByIdAndDelete(req.body.id, (err, confirmation) => {
           return res.send({ account, people: {}, patterns: {}, token })
@@ -164,7 +154,7 @@ UserController.prototype.update = (req, res) => {
     if (typeof data.settings !== 'undefined') {
       user.settings = {
         ...user.settings,
-        ...data.settings
+        ...data.settings,
       }
       return saveAndReturnAccount(res, user)
     } else if (data.newsletter === true || data.newsletter === false) {
@@ -183,7 +173,7 @@ UserController.prototype.update = (req, res) => {
     } else if (typeof data.consent === 'object') {
       user.consent = {
         ...user.consent,
-        ...data.consent
+        ...data.consent,
       }
       return saveAndReturnAccount(res, user)
     } else if (typeof data.avatar !== 'undefined') {
@@ -223,15 +213,15 @@ UserController.prototype.update = (req, res) => {
             language: user.settings.language,
             email: {
               new: req.body.email,
-              current: user.email
-            }
-          }
+              current: user.email,
+            },
+          },
         })
-        confirmation.save(function(err) {
+        confirmation.save(function (err) {
           if (err) return res.sendStatus(500)
           log.info('emailchangeRequest', {
             newEmail: req.body.email,
-            confirmation: confirmation._id
+            confirmation: confirmation._id,
           })
           email.emailchange(req.body.email, user.email, user.settings.language, confirmation._id)
           return saveAndReturnAccount(res, user)
@@ -242,7 +232,7 @@ UserController.prototype.update = (req, res) => {
 }
 
 function saveAndReturnAccount(res, user) {
-  user.save(function(err, updatedUser) {
+  user.save(function (err, updatedUser) {
     if (err) {
       log.error('accountUpdateFailed', err)
       return res.sendStatus(500)
@@ -274,7 +264,7 @@ UserController.prototype.signup = (req, res) => {
   if (!req.body.language) return res.status(400).send('languageMissing')
   User.findOne(
     {
-      ehash: ehash(req.body.email)
+      ehash: ehash(req.body.email),
     },
     (err, user) => {
       if (err) return res.sendStatus(500)
@@ -293,10 +283,10 @@ UserController.prototype.signup = (req, res) => {
           status: 'pending',
           picture: handle + '.svg',
           time: {
-            created: new Date()
-          }
+            created: new Date(),
+          },
         })
-        user.save(function(err) {
+        user.save(function (err) {
           if (err) {
             log.error('accountCreationFailed', user)
             console.log(err)
@@ -310,10 +300,10 @@ UserController.prototype.signup = (req, res) => {
               language: req.body.language,
               email: req.body.email,
               password: req.body.password,
-              handle
-            }
+              handle,
+            },
           })
-          confirmation.save(function(err) {
+          confirmation.save(function (err) {
             if (err) return res.sendStatus(500)
             log.info('signupRequest', { email: req.body.email, confirmation: confirmation._id })
             email.signup(req.body.email, req.body.language, confirmation._id)
@@ -332,7 +322,7 @@ UserController.prototype.resend = (req, res) => {
   if (!req.body.language) return res.status(400).send('languageMissing')
   User.findOne(
     {
-      ehash: ehash(req.body.email)
+      ehash: ehash(req.body.email),
     },
     (err, user) => {
       if (err) return res.sendStatus(500)
@@ -343,12 +333,15 @@ UserController.prototype.resend = (req, res) => {
           data: {
             language: req.body.language,
             email: user.email,
-            handle: user.handle
-          }
+            handle: user.handle,
+          },
         })
-        confirmation.save(function(err) {
+        confirmation.save(function (err) {
           if (err) return res.sendStatus(500)
-          log.info('resendActivationRequest', { email: req.body.email, confirmation: confirmation._id })
+          log.info('resendActivationRequest', {
+            email: req.body.email,
+            confirmation: confirmation._id,
+          })
           email.signup(req.body.email, req.body.language, confirmation._id)
           return res.sendStatus(200)
         })
@@ -363,8 +356,8 @@ UserController.prototype.resetPassword = (req, res) => {
     {
       $or: [
         { username: req.body.username.toLowerCase().trim() },
-        { ehash: ehash(req.body.username) }
-      ]
+        { ehash: ehash(req.body.username) },
+      ],
     },
     (err, user) => {
       if (err) {
@@ -375,10 +368,10 @@ UserController.prototype.resetPassword = (req, res) => {
       let confirmation = new Confirmation({
         type: 'passwordreset',
         data: {
-          handle: user.handle
-        }
+          handle: user.handle,
+        },
       })
-      confirmation.save(function(err) {
+      confirmation.save(function (err) {
         if (err) return res.sendStatus(500)
         log.info('passwordresetRequest', { user: user.handle, confirmation: confirmation._id })
         email.passwordreset(user.email, user.settings.language, confirmation._id)
@@ -398,7 +391,7 @@ UserController.prototype.setPassword = (req, res) => {
       if (user === null) return res.sendStatus(401)
       if (confirmation.type === 'passwordreset' && confirmation.data.handle === user.handle) {
         user.password = req.body.password
-        user.save(function(err) {
+        user.save(function (err) {
           log.info('passwordSet', { user, req })
           let account = user.account()
           let token = getToken(account)
@@ -433,7 +426,7 @@ UserController.prototype.patronList = (req, res) => {
       let patrons = {
         2: [],
         4: [],
-        8: []
+        8: [],
       }
       for (let key of Object.keys(users)) {
         let user = users[key].profile()
@@ -443,7 +436,7 @@ UserController.prototype.patronList = (req, res) => {
           bio: user.bio,
           picture: user.picture,
           social: user.social,
-          pictureUris: user.pictureUris
+          pictureUris: user.pictureUris,
         })
       }
       return res.send(patrons)
@@ -458,17 +451,17 @@ UserController.prototype.export = (req, res) => {
     if (!dir) return res.sendStatus(500)
     let zip = new Zip()
     zip.file('account.json', JSON.stringify(user.export(), null, 2))
-    loadAvatar(user).then(avatar => {
+    loadAvatar(user).then((avatar) => {
       if (avatar) zip.file(user.picture, data)
       zip
         .generateAsync({
           type: 'uint8array',
           comment: 'freesewing.org',
-          streamFiles: true
+          streamFiles: true,
         })
-        .then(function(data) {
+        .then(function (data) {
           let file = path.join(dir, 'export.zip')
-          fs.writeFile(file, data, err => {
+          fs.writeFile(file, data, (err) => {
             log.info('dataExport', { user, req })
             return res.send({ export: uri(file) })
           })
@@ -477,7 +470,7 @@ UserController.prototype.export = (req, res) => {
   })
 }
 
-const loadAvatar = async user => {
+const loadAvatar = async (user) => {
   if (user.picture)
     await fs.readFile(path.join(user.storagePath(), user.picture), (err, data) => data)
   else return false
@@ -489,7 +482,7 @@ UserController.prototype.restrict = (req, res) => {
   User.findById(req.user._id, (err, user) => {
     if (user === null) return res.sendStatus(400)
     user.status = 'frozen'
-    user.save(function(err) {
+    user.save(function (err) {
       if (err) {
         log.error('accountFreezeFailed', user)
         return res.sendStatus(500)
@@ -504,7 +497,7 @@ UserController.prototype.remove = (req, res) => {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, user) => {
     if (user === null) return res.sendStatus(400)
-    rimraf(user.storagePath(), err => {
+    rimraf(user.storagePath(), (err) => {
       if (err) {
         console.log('rimraf', err)
         log.error('accountRemovalFailed', { err, user, req })
@@ -520,14 +513,14 @@ UserController.prototype.remove = (req, res) => {
   })
 }
 
-const getToken = account => {
+const getToken = (account) => {
   return jwt.sign(
     {
       _id: account._id,
       handle: account.handle,
       role: account.role,
       aud: config.jwt.audience,
-      iss: config.jwt.issuer
+      iss: config.jwt.issuer,
     },
     config.jwt.secretOrKey
   )
@@ -535,7 +528,7 @@ const getToken = account => {
 
 const createTempDir = () => {
   let path = temporaryStoragePath(newHandle(10))
-  fs.mkdir(path, { recursive: true }, err => {
+  fs.mkdir(path, { recursive: true }, (err) => {
     if (err) {
       log.error('mkdirFailed', err)
       path = false
@@ -545,6 +538,6 @@ const createTempDir = () => {
   return path
 }
 
-const uri = path => config.static + path.substring(config.storage.length)
+const uri = (path) => config.static + path.substring(config.storage.length)
 
 export default UserController

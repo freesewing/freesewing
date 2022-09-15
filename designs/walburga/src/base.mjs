@@ -17,7 +17,6 @@ function walburgaBase({
   utils,
   part,
 }) {
-
   // define some variables
   const hem_pos =
     options.length === 'toKnee'

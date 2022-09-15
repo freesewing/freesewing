@@ -113,7 +113,7 @@ const header = {
         </td>
     </tr>
 </table>`,
-  text: ''
+  text: '',
 }
 
 export default header

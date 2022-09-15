@@ -359,6 +359,5 @@ export {
   // Docs
   docs_coords,
   docs_overview,
-
   Examples,
 }

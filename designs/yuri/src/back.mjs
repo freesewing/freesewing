@@ -15,7 +15,6 @@ function yuriBack({
   measurements,
   part,
 }) {
-
   // Clear paths from Brian
   for (const i in paths) {
     if (['backArmhole', 'backCollar'].indexOf(i) === -1) delete paths[i]

@@ -13,7 +13,6 @@ function waraleeCutout({
   macro,
   part,
 }) {
-
   let separateWaistband = options.separateWaistband
   if ('waistband' == options.frontPocketStyle) {
     separateWaistband = true

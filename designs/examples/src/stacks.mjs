@@ -69,7 +69,10 @@ export const stacks_leftEye = {
   stack,
   after: stacks_top,
   draft: ({ store, Point, points, part }) => {
-    points.leftEye = new Point(store.get('x') + store.get('size') * 0.35, store.get('y') + store.get('size') * 0.4)
+    points.leftEye = new Point(
+      store.get('x') + store.get('size') * 0.35,
+      store.get('y') + store.get('size') * 0.4
+    )
       .attr('data-circle', store.get('size') * 0.1)
       .attr('data-circle-class', 'stroke-6xl')
 
@@ -82,7 +85,10 @@ export const stacks_rightEye = {
   stack,
   after: stacks_top,
   draft: ({ store, Point, points, part }) => {
-    points.rightEye = new Point(store.get('x') + store.get('size') * 0.65, store.get('y') + store.get('size') * 0.4)
+    points.rightEye = new Point(
+      store.get('x') + store.get('size') * 0.65,
+      store.get('y') + store.get('size') * 0.4
+    )
       .attr('data-circle', store.get('size') * 0.08)
       .attr('data-circle-class', 'stroke-7xl')
 
@@ -95,10 +101,22 @@ export const stacks_mouth = {
   stack,
   after: stacks_top,
   draft: ({ store, Point, points, paths, Path, part }) => {
-    points.left    = new Point(store.get('x') + store.get('size') * 0.15, store.get('y') + store.get('size') * 0.5)
-    points.right   = new Point(store.get('x') + store.get('size') * 0.85, store.get('y') + store.get('size') * 0.5)
-    points.leftCp  = new Point(store.get('x') + store.get('size') * 0.35, store.get('y') + store.get('size') * 0.8)
-    points.rightCp = new Point(store.get('x') + store.get('size') * 0.65, store.get('y') + store.get('size') * 0.8)
+    points.left = new Point(
+      store.get('x') + store.get('size') * 0.15,
+      store.get('y') + store.get('size') * 0.5
+    )
+    points.right = new Point(
+      store.get('x') + store.get('size') * 0.85,
+      store.get('y') + store.get('size') * 0.5
+    )
+    points.leftCp = new Point(
+      store.get('x') + store.get('size') * 0.35,
+      store.get('y') + store.get('size') * 0.8
+    )
+    points.rightCp = new Point(
+      store.get('x') + store.get('size') * 0.65,
+      store.get('y') + store.get('size') * 0.8
+    )
 
     paths.mouth = new Path()
       .move(points.left)

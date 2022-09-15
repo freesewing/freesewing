@@ -30,7 +30,6 @@ function hugoFront({
   macro,
   part,
 }) {
-
   // Remove clutter
   for (const key in paths) {
     if (key !== 'seam') delete paths[key]

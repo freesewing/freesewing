@@ -12,7 +12,6 @@ function ursulaElastic({
   macro,
   part,
 }) {
-
   // Stretch utility method
   store.set('elasticScale', utils.stretchToScale(options.elasticStretch))
 

@@ -1,4 +1,5 @@
 import { adult, doll, giant } from '@freesewing/models'
+import { getFamily, getShortName } from './config.mjs'
 import chai from 'chai'
 
 const expect = chai.expect
@@ -10,12 +11,14 @@ const expect = chai.expect
  * @param object Pattern: pattern constructor
  * @param boolean log: Set to true to log errors
  */
-export const testPatternDrafting = (Pattern, log=false) => {
-
+export const testPatternDrafting = (Pattern, log = false) => {
   const pattern = new Pattern()
   const config = pattern.getConfig()
+  const design = getShortName(config.data.name)
+  const family = getFamily(design)
+
   // Helper method to try/catch pattern drafting
-  const doesItDraftAndRender = (pattern, log=false) => {
+  const doesItDraftAndRender = (pattern, log = false) => {
     try {
       pattern.draft().render()
       if (pattern.store.logs.error.length < 1) return true
@@ -31,8 +34,8 @@ export const testPatternDrafting = (Pattern, log=false) => {
    * Draft pattern for different models
    */
   if (family !== 'utilities') {
-    describe('Draft for humans:', function() {
-      this.timeout(5000);
+    describe('Draft for humans:', function () {
+      this.timeout(5000)
       for (const type of ['cisFemale', 'cisMale']) {
         describe(type, () => {
           for (const size in adult[type]) {
@@ -40,8 +43,9 @@ export const testPatternDrafting = (Pattern, log=false) => {
               expect(
                 doesItDraftAndRender(
                   new Pattern({
-                    measurements: adult[type][size]
-                  }), log
+                    measurements: adult[type][size],
+                  }),
+                  log
                 )
               ).to.equal(true)
             })
@@ -53,8 +57,8 @@ export const testPatternDrafting = (Pattern, log=false) => {
     // Do the same for fantastical models (doll, giant)
     const fams = { doll, giant }
     for (const family of ['doll', 'giant']) {
-      describe(`Draft for ${family}:`, function() {
-        this.timeout(5000);
+      describe(`Draft for ${family}:`, function () {
+        this.timeout(5000)
         for (const type of ['cisFemale', 'cisMale']) {
           describe(type, () => {
             for (const size in fams[family][type]) {
@@ -62,8 +66,9 @@ export const testPatternDrafting = (Pattern, log=false) => {
                 expect(
                   doesItDraftAndRender(
                     new Pattern({
-                      measurements: fams[family][type][size]
-                    }), log
+                      measurements: fams[family][type][size],
+                    }),
+                    log
                   )
                 ).to.equal(true)
               })
@@ -89,11 +94,9 @@ export const testPatternDrafting = (Pattern, log=false) => {
   }
 }
 
-
-
-  /*
-   * Draft parts individually
-   */
+/*
+ * Draft parts individually
+ */
 /*
   it('Draft parts individually:', () => true)
   for (const name of parts) {
@@ -110,9 +113,9 @@ export const testPatternDrafting = (Pattern, log=false) => {
   }
   */
 
-  /*
-   * Draft a paperless non-detailed pattern
-   */
+/*
+ * Draft a paperless non-detailed pattern
+ */
 /*
   it('Draft paperless non-detailed pattern:', () => true)
   if (family !== 'utilities') {
@@ -133,4 +136,3 @@ export const testPatternDrafting = (Pattern, log=false) => {
   }
 }
   */
-

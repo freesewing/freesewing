@@ -6,6 +6,6 @@ import github from './github'
 import admin from './admin'
 import newsletter from './newsletter'
 import strapi from './strapi'
-import og from "./og";
+import og from './og'
 
 export default { user, pattern, person, auth, github, admin, newsletter, strapi, og }

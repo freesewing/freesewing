@@ -38,7 +38,7 @@ If you'd like to catch up, we keep an online archive of previous editions at: ht
 
 You can unsubscribe at any time by visiting this link: __newsletterUnsubscribeLink__
 
-`
+`,
 }
 
 export default welcome

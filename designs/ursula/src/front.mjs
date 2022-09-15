@@ -17,7 +17,6 @@ function ursulaFront({
   macro,
   part,
 }) {
-
   // Stretch utility method
 
   store.set('xScale', utils.stretchToScale(options.fabricStretch))
@@ -217,6 +216,6 @@ export const front = {
     frontDip: { pct: 5.0, min: -5, max: 15, menu: 'style' },
     taperToGusset: { pct: 70, min: 5, max: 100, menu: 'style' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: ursulaFront,
 }

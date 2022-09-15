@@ -7,8 +7,8 @@ const transporter = nodemailer.createTransport({
   secure: false, // Only needed or SSL, not for TLS
   auth: {
     user: config.smtp.user,
-    pass: config.smtp.pass
-  }
+    pass: config.smtp.pass,
+  },
 })
 
 const deliver = (data, callback) => {

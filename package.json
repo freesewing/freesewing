@@ -15,7 +15,7 @@
     "?": "node scripts/help.mjs",
     "tips": "node scripts/help.mjs",
     "lab": "cd sites/lab && yarn start",
-    "kickstart": "npx lerna bootstrap && yarn buildall && yarn tips",
+    "kickstart": "npx lerna bootstrap && yarn buildall && yarn prepare && yarn tips",
     "cleanall": "lerna run clean",
     "test": "lerna run test",
     "prettier": "npx prettier --write 'packages/**/src/*.mjs' 'packages/**/src/*.js' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
@@ -24,7 +24,10 @@
     "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
     "build": "yarn buildall",
     "testall": "node scripts/testall.js",
-    "lint": "lerna run lint",
+    "lint": "lerna run lint -- ",
+    "qa": "yarn qa:prettier && yarn qa:lint",
+    "qa:prettier": "npx prettier",
+    "qa:lint": "npx eslint",
     "release": "lerna exec --no-bail -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
     "ship": "lerna exec --no-bail -- npm publish",
@@ -35,7 +38,8 @@
     "famgen": "all-contributors generate",
     "checkdocs": "remark markdown --quiet --frail",
     "strapi:translate": "node scripts/strapi-en-to-other.mjs",
-    "fixdocs": "remark markdown --quiet --frail --output"
+    "fixdocs": "remark markdown --quiet --frail --output",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -45,10 +49,11 @@
     "url": "https://github.com/freesewing/freesewing/issues"
   },
   "prettier": "@freesewing/prettier-config",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "lint-staged": {
+    "*": [
+      "npx prettier --write",
+      "npx eslint"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -67,16 +72,18 @@
     "cross-env": "^7.0.2",
     "esbuild": "^0.15.3",
     "esbuild-plugin-yaml": "^0.0.1",
+    "eslint": "^8.23.1",
     "eslint-plugin-yaml": "^0.5.0",
     "esm": "^3.2.25",
     "handlebars": "^4.7.7",
     "husky": "^8.0.1",
     "js-yaml": "^4.0.0",
     "lerna": "^5.1.4",
+    "lint-staged": "^13.0.3",
     "mocha": "^10.0.0",
     "mustache": "^4.0.1",
     "nyc": "^15.1.0",
-    "prettier": "^2.3.0",
+    "prettier": "^2.7.1",
     "pretty-quick": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",

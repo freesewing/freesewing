@@ -20,7 +20,7 @@ verifyConfig(config, chalk)
 mongoose.Promise = global.Promise
 mongoose
   .connect(config.db.uri, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
   })
   .then(() => {
     console.log(chalk.green('Successfully connected to the database'))
@@ -37,7 +37,7 @@ mongoose
       }
     })
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(chalk.red('Could not connect to the database. Exiting now...'), err)
     process.exit()
   })

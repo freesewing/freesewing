@@ -15,7 +15,6 @@ function waraleeFacings({
   sa,
   part,
 }) {
-
   let frontPocketSize =
     options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
   let backPocketSize =

@@ -4,18 +4,7 @@ import { pantsProto } from './pantsproto.mjs'
 // To keep you from printing it completely, you could print this part in paperless mode
 // and only have a single sheet with all the dimensions on it.
 
-function waraleeMini({
-  options,
-  Path,
-  points,
-  paths,
-  complete,
-  sa,
-  macro,
-  store,
-  part,
-}) {
-
+function waraleeMini({ options, Path, points, paths, complete, sa, macro, store, part }) {
   let mini = options.minimizer
   let separateWaistband = options.separateWaistband
   if ('waistband' == options.frontPocketStyle) {

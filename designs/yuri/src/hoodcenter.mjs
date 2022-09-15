@@ -13,7 +13,6 @@ function yuriHoodCenter({
   units,
   part,
 }) {
-
   const width = store.get('hoodCenterWidth')
   const length = complete ? width * 2.5 : store.get('hoodCenterLength')
   points.topLeft = new Point(0, 0)

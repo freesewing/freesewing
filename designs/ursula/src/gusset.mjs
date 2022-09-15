@@ -14,7 +14,6 @@ function ursulaGusset({
   macro,
   part,
 }) {
-
   // Create points
   points.frontGussetLeft = new Point(store.get('frontGussetLeft').x, 0)
   points.backGussetLeft = new Point(

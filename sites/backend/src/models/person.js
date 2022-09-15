@@ -13,37 +13,37 @@ const PersonSchema = new Schema(
       lowercase: true,
       unique: true,
       trim: true,
-      index: true
+      index: true,
     },
     user: {
       type: String,
       required: true,
       lowercase: true,
       trim: true,
-      index: true
+      index: true,
     },
     name: {
       type: String,
       required: true,
-      trim: true
+      trim: true,
     },
     breasts: {
       type: Boolean,
-      default: false
+      default: false,
     },
     picture: {
       type: String,
       trim: true,
-      default: ''
+      default: '',
     },
     units: {
       type: String,
       enum: ['metric', 'imperial'],
-      default: 'metric'
+      default: 'metric',
     },
     notes: {
       type: String,
-      trim: true
+      trim: true,
     },
     measurements: {
       ankle: Number,
@@ -90,7 +90,7 @@ const PersonSchema = new Schema(
 
 PersonSchema.index({ user: 1, handle: 1 })
 
-PersonSchema.methods.info = function() {
+PersonSchema.methods.info = function () {
   let person = this.toObject()
   delete person.__v
   delete person._id
@@ -98,20 +98,20 @@ PersonSchema.methods.info = function() {
     l: this.avatarUri(),
     m: this.avatarUri('m'),
     s: this.avatarUri('s'),
-    xs: this.avatarUri('xs')
+    xs: this.avatarUri('xs'),
   }
 
   return person
 }
 
-PersonSchema.methods.avatarName = function(size = 'l') {
+PersonSchema.methods.avatarName = function (size = 'l') {
   let prefix = size === 'l' ? '' : size + '-'
   if (this.picture.slice(-4).toLowerCase() === '.svg') prefix = ''
 
   return prefix + this.picture
 }
 
-PersonSchema.methods.avatarUri = function(size = 'l') {
+PersonSchema.methods.avatarUri = function (size = 'l') {
   return (
     config.static +
     '/users/' +
@@ -125,7 +125,7 @@ PersonSchema.methods.avatarUri = function(size = 'l') {
   )
 }
 
-PersonSchema.methods.storagePath = function() {
+PersonSchema.methods.storagePath = function () {
   return (
     config.storage +
     '/users/' +
@@ -138,24 +138,24 @@ PersonSchema.methods.storagePath = function() {
   )
 }
 
-PersonSchema.methods.createAvatar = function() {
+PersonSchema.methods.createAvatar = function () {
   let dir = this.storagePath()
-  fs.mkdir(dir, { recursive: true }, err => {
+  fs.mkdir(dir, { recursive: true }, (err) => {
     if (err) console.log('mkdirFailed', dir, err)
-    fs.writeFile(path.join(dir, this.handle) + '.svg', randomAvatar(), err => {
+    fs.writeFile(path.join(dir, this.handle) + '.svg', randomAvatar(), (err) => {
       if (err) console.log('writeFileFailed', dir, err)
     })
   })
 }
 
-PersonSchema.methods.saveAvatar = function(picture) {
+PersonSchema.methods.saveAvatar = function (picture) {
   let type = picture.split(';').shift()
   type = type.split('/').pop()
   this.picture = this.handle + '.' + type
 
   let dir = this.storagePath()
   let b64 = picture.split(';base64,').pop()
-  fs.mkdir(dir, { recursive: true }, err => {
+  fs.mkdir(dir, { recursive: true }, (err) => {
     if (err) log.error('mkdirFailed', err)
     let imgBuffer = Buffer.from(b64, 'base64')
     for (let size of Object.keys(config.avatar.sizes)) {

@@ -1,6 +1,6 @@
 import Controller from '../controllers/strapi'
 
-const Strapi= new Controller()
+const Strapi = new Controller()
 
 export default (app, passport) => {
   // Email subscribe

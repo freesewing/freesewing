@@ -16,7 +16,6 @@ function walburgaFront({
   utils,
   part,
 }) {
-
   const head = store.get('hhead') * 2
   const goldenRatio = store.get('goldenRatio')
   const ratio = goldenRatio * options.neckoRatio

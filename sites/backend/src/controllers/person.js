@@ -4,7 +4,7 @@ import { log } from '../utils'
 function PersonController() {}
 
 // CRUD basics
-PersonController.prototype.create = function(req, res) {
+PersonController.prototype.create = function (req, res) {
   if (!req.body) return res.sendStatus(400)
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, user) => {
@@ -17,10 +17,10 @@ PersonController.prototype.create = function(req, res) {
       units: req.body.units,
       breasts: req.body.breasts,
       picture: handle + '.svg',
-      created: new Date()
+      created: new Date(),
     })
     person.createAvatar()
-    person.save(function(err) {
+    person.save(function (err) {
       if (err) return res.sendStatus(400)
       log.info('personCreated', { handle: handle })
       return res.send({ person: person.info() })
@@ -28,7 +28,7 @@ PersonController.prototype.create = function(req, res) {
   })
 }
 
-PersonController.prototype.read = function(req, res) {
+PersonController.prototype.read = function (req, res) {
   if (!req.body) return res.sendStatus(400)
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, (err, user) => {
@@ -56,7 +56,7 @@ PersonController.prototype.update = (req, res) => {
       if (typeof data.measurements !== 'undefined')
         person.measurements = {
           ...person.measurements,
-          ...data.measurements
+          ...data.measurements,
         }
       if (typeof data.picture !== 'undefined') person.saveAvatar(data.picture)
 
@@ -69,7 +69,7 @@ PersonController.prototype.delete = (req, res) => {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, async (err, user) => {
     if (err || user === null) return res.sendStatus(400)
-    Person.deleteOne({ handle: req.params.handle, user: user.handle }, err => {
+    Person.deleteOne({ handle: req.params.handle, user: user.handle }, (err) => {
       if (err) return res.sendStatus(400)
       else return res.sendStatus(204)
     })
@@ -77,10 +77,10 @@ PersonController.prototype.delete = (req, res) => {
 }
 
 // Clone
-PersonController.prototype.clone = function(req, res) {}
+PersonController.prototype.clone = function (req, res) {}
 
 function saveAndReturnPerson(res, person) {
-  person.save(function(err, updatedPerson) {
+  person.save(function (err, updatedPerson) {
     if (err) {
       log.error('personUpdateFailed', updatedPerson)
       return res.sendStatus(500)

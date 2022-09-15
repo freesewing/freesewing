@@ -1,7 +1,18 @@
 import { front } from './front.mjs'
 
-function hugoPocket({ utils, store, sa, points, Path, paths, complete, paperless, macro, snippets, part }) {
-
+function hugoPocket({
+  utils,
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  snippets,
+  part,
+}) {
   // Remove clutter
   for (const key in paths) {
     if (key !== 'pocket') delete paths[key]

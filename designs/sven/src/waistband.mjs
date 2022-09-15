@@ -19,7 +19,6 @@ function svenWaistband(params) {
     })
   }
 
-
   return part
 }
 
