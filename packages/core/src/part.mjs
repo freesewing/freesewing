@@ -336,21 +336,21 @@ Part.prototype.shorthand = function () {
   return shorthand
 }
 
-Part.prototype.isEmpty = function () {
-  if (Object.keys(this.snippets).length > 0) return false
-
-  if (Object.keys(this.paths).length > 0) {
-    for (const p in this.paths) {
-      if (this.paths[p].render && this.paths[p].length()) return false
-    }
-  }
-
-  for (const p in this.points) {
-    if (this.points[p].attributes.get('data-text')) return false
-    if (this.points[p].attributes.get('data-circle')) return false
-  }
-
-  return true
-}
+//Part.prototype.isEmpty = function () {
+//  if (Object.keys(this.snippets).length > 0) return false
+//
+//  if (Object.keys(this.paths).length > 0) {
+//    for (const p in this.paths) {
+//      if (this.paths[p].render && this.paths[p].length()) return false
+//    }
+//  }
+//
+//  for (const p in this.points) {
+//    if (this.points[p].attributes.get('data-text')) return false
+//    if (this.points[p].attributes.get('data-circle')) return false
+//  }
+//
+//  return true
+//}
 
 export default Part

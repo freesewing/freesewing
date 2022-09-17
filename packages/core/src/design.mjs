@@ -10,12 +10,12 @@ export function Design(config) {
   config = { ...loadDesignDefaults(), ...config }
 
   // Create the pattern constructor
-  const pattern = function (settings) {
+  const pattern = function (...sets) {
     // Pass the design config
     Pattern.call(this, config)
 
     // Pass the pattern settings
-    return this.__applySettings(settings)
+    return this.__applySettings(sets)
   }
 
   // Set up inheritance

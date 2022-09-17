@@ -15,7 +15,7 @@ export function isCoord(value) {
 
 /** Returns internal hook name for a macro */
 export function macroName(name) {
-  return `_macro_${name}`
+  return `__macro_${name}`
 }
 
 /** Find intersection of two (endless) lines */
@@ -441,8 +441,14 @@ export function addNonEnumProp(obj, name, value) {
 const addPartOptions = (part, config, store) => {
   if (part.options) {
     for (const optionName in part.options) {
-      store.log.debug(`Config resolver: Option __${optionName}__ in ${part.name}`)
-      config.options[optionName] = part.options[optionName]
+      if (!config.optionDistance[optionName]) {
+        config.optionDistance[optionName] = part.distance
+        config.options[optionName] = part.options[optionName]
+        store.log.debug(`🔵  __${optionName}__ option loaded from \`${part.name}\``)
+      } else if (config.optionDistance[optionName] > part.distance) {
+        config.options[optionName] = part.options[optionName]
+        store.log.debug(`🟣  __${optionName}__ option overwritten by \`${part.name}\``)
+      }
     }
   }
   if (part.from) addPartOptions(part.from, config, store)
@@ -460,8 +466,10 @@ const addPartMeasurements = (part, config, store, list = false) => {
   if (!list) list = config.measurements ? [...config.measurements] : []
   if (part.measurements) {
     for (const m of part.measurements) {
-      list.push(m)
-      store.log.debug(`Config resolver: Measurement __${m}__ is required in ${part.name}`)
+      if (list.indexOf(m) === -1) {
+        list.push(m)
+        store.log.debug(`🟠  __${m}__ measurement is required in \`${part.name}\``)
+      }
     }
   }
   if (part.from) addPartMeasurements(part.from, config, store, list)
@@ -484,8 +492,10 @@ const addPartOptionalMeasurements = (part, config, store, list = false) => {
     for (const m of part.optionalMeasurements) {
       // Don't add it's a required measurement for another part
       if (config.measurements.indexOf(m) === -1) {
-        store.log.debug(`Config resolver: Measurement __${m}__ is optional in ${part.name}`)
-        list.push(m)
+        if (list.indexOf(m) === -1) {
+          list.push(m)
+          store.log.debug(`🟡  __${m}__ measurement is optional in \`${part.name}\``)
+        }
       }
     }
   }
@@ -514,7 +524,7 @@ export const addPartPlugins = (part, config, store) => {
       const pluginObj = { ...plugin[0], data: plugin[1] }
       plugin = pluginObj
     }
-    store.log.debug(`Config resolver: Plugin __${plugin.name}__ in ${part.name}`)
+    store.log.debug(`🔌  __${plugin.name}__ plugin in \`${part.name}\``)
     // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
     if (plugin.plugin && plugin.condition) {
       if (plugins[plugin.plugin.name]?.condition) {
@@ -538,7 +548,9 @@ export const addPartPlugins = (part, config, store) => {
 }
 
 export const addPartConfig = (part, config, store) => {
+  if (part.resolved) return config
   // Add parts, using set to keep them unique in the array
+  part.resolved = true
   config.parts = [...new Set(config.parts).add(part)]
   config = addPartOptions(part, config, store)
   config = addPartMeasurements(part, config, store)

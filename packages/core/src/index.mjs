@@ -1,6 +1,7 @@
 import { Attributes } from './attributes.mjs'
 import { Design } from './design.mjs'
 import { Pattern } from './pattern.mjs'
+import { Part } from './part.mjs'
 import { Point } from './point.mjs'
 import { Path } from './path.mjs'
 import { Snippet } from './snippet.mjs'
@@ -44,6 +45,7 @@ export {
   Pattern,
   Point,
   Path,
+  Part,
   Snippet,
   Store,
   Bezier,

@@ -76,8 +76,11 @@ Stack.prototype.home = function () {
   if (this.bottomRight.y === -Infinity) this.bottomRight.y = 0
 
   // Add margin
-  let margin = this.context.settings.margin
-  if (this.context.settings.paperless && margin < 10) margin = 10
+  let margin = 0
+  for (const set in this.context.settings) {
+    if (this.context.settings[set].margin > margin) margin = this.context.settings[set].margin
+    if (this.context.settings[set].paperless && margin < 10) margin = 10
+  }
   this.topLeft.x -= margin
   this.topLeft.y -= margin
   this.bottomRight.x += margin
@@ -90,7 +93,9 @@ Stack.prototype.home = function () {
   this.height = this.bottomRight.y - this.topLeft.y
 
   // Add transform
-  this.anchor = this.getAnchor()
+  //this.anchor = this.getAnchor()
+  // FIXME: Can we be certain this is always (0,0) /
+  this.anchor = new Point(0, 0)
 
   if (this.topLeft.x === this.anchor.x && this.topLeft.y === this.anchor.y) return this
   else {
