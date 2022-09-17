@@ -1,11 +1,11 @@
 - - -
-title: "Lunetius Lacerna: Cutting Instructions"
+title: "Lunetius, die Lacerna: Zuschnitt"
 - - -
 
-- Cut **1 lacerna** part on the fold
-- or Cut **2 lacerna** parts
+- Schneide **1 Lacerna**-Teil im Stoffbruch
+- oder Schneide **2 Lacerna**-Teile
 
-The way to cut Lunetius is going to depend on what fabric you have chosen to use. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage. If you have enough fabric width you can cut it _on the fold_.
+Wie du Lunetius zuschneidest, hängt davon ab, welchen Stoff du gewählt hast. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage. If you have enough fabric width you can cut it _on the fold_.
 
 A lot of garments were woven to shape in the Roman era, so this is one aspect where you don’t need to worry about historical accuracy at all, unless you would like to weave your Lunetius to shape.
 
