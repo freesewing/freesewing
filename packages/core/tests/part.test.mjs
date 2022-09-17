@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Design, Pattern } from '../src/index.mjs'
+import { Design, Part } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -21,20 +21,24 @@ describe('Part', () => {
   })
 
   it('Should return a function from macroClosure', () => {
-    const pattern = new Pattern()
-    const part = pattern.__createPartWithContext()
+    const part = new Part()
     expect(typeof part.macroClosure()).to.equal('function')
   })
 
   it('Should not run an unknown macro', () => {
-    const pattern = new Pattern()
-    const part = pattern.__createPartWithContext()
+    const part = new Part()
     const macro = part.macroClosure()
     expect(macro('unknown')).to.equal(undefined)
   })
 
   it('Should register and run a macro', () => {
-    const pattern = new Pattern()
+    const part = {
+      name: 'test',
+      draft: ({ part, macro }) => {
+        macro('test', { x: 123, y: 456 })
+        return part
+      },
+    }
     const plugin = {
       name: 'test',
       version: '0.1-test',
@@ -45,39 +49,34 @@ describe('Part', () => {
         },
       },
     }
-    pattern.use(plugin)
-    const part = pattern.__createPartWithContext()
-    const macro = part.macroClosure()
-    macro('test', { x: 123, y: 456 })
-    expect(part.points.macro.x).to.equal(123)
-    expect(part.points.macro.y).to.equal(456)
+    const design = new Design({ parts: [part], plugins: [plugin] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.parts[0].test.points.macro.x).to.equal(123)
+    expect(pattern.parts[0].test.points.macro.y).to.equal(456)
   })
 
   it('Should return a free ID', () => {
-    const pattern = new Pattern()
-    const part = pattern.__createPartWithContext()
+    const part = new Part()
     const free = part.getId()
     expect(part.getId()).to.equal('' + (parseInt(free) + 1))
   })
 
   it('Should return a function from unitsClosure', () => {
-    const pattern = new Pattern()
-    const part = pattern.__createPartWithContext()
+    const part = new Part()
     expect(typeof part.unitsClosure()).to.equal('function')
   })
 
   it('Should convert units', () => {
-    const design = new Design()
-    const pattern = new design()
-    const part = pattern.__createPartWithContext()
+    const part = new Part()
+    part.context = { settings: { units: 'metric' } }
     const units = part.unitsClosure()
     expect(units(123.456)).to.equal('12.35cm')
-    expect(part.units(123.456)).to.equal('12.35cm')
+    expect(units(123.456)).to.equal('12.35cm')
   })
 
   it('Should set part attributes', () => {
-    const pattern = new Pattern()
-    const part = pattern.__createPartWithContext()
+    const part = new Part()
     part.attr('foo', 'bar')
     expect(part.attributes.get('foo')).to.equal('bar')
     part.attr('foo', 'baz')
@@ -87,60 +86,72 @@ describe('Part', () => {
   })
 
   it('Should raise a warning when setting a non-Point value in points', () => {
-    const design = new Design()
+    const part = {
+      name: 'test',
+      draft: ({ points, part }) => {
+        points.a = 'banana'
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
     const pattern = new design()
-    const part = pattern.__createPartWithContext()
-    pattern.init()
-    const { points } = part.shorthand()
-    points.a = 'banana'
-    expect(pattern.store.logs.warning.length).to.equal(4)
-    expect(pattern.store.logs.warning[0]).to.equal(
+    pattern.draft()
+    expect(pattern.stores[0].logs.warning.length).to.equal(4)
+    expect(pattern.stores[0].logs.warning[0]).to.equal(
       '`points.a` was set with a value that is not a `Point` object'
     )
-    expect(pattern.store.logs.warning[1]).to.equal(
+    expect(pattern.stores[0].logs.warning[1]).to.equal(
       '`points.a` was set with a `x` parameter that is not a `number`'
     )
-    expect(pattern.store.logs.warning[2]).to.equal(
+    expect(pattern.stores[0].logs.warning[2]).to.equal(
       '`points.a` was set with a `y` parameter that is not a `number`'
     )
   })
 
   it('Should raise a warning when setting a non-Snippet value in snippets', () => {
-    const design = new Design()
+    const part = {
+      name: 'test',
+      draft: ({ snippets, part }) => {
+        snippets.a = 'banana'
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
     const pattern = new design()
-    const part = pattern.__createPartWithContext()
-    pattern.init()
-    const { snippets } = part.shorthand()
-    snippets.a = 'banana'
-    expect(pattern.store.logs.warning.length).to.equal(4)
-    expect(pattern.store.logs.warning[0]).to.equal(
+    pattern.draft()
+    expect(pattern.stores[0].logs.warning.length).to.equal(4)
+    expect(pattern.stores[0].logs.warning[0]).to.equal(
       '`snippets.a` was set with a value that is not a `Snippet` object'
     )
-    expect(pattern.store.logs.warning[1]).to.equal(
+    expect(pattern.stores[0].logs.warning[1]).to.equal(
       '`snippets.a` was set with a `def` parameter that is not a `string`'
     )
-    expect(pattern.store.logs.warning[2]).to.equal(
+    expect(pattern.stores[0].logs.warning[2]).to.equal(
       '`snippets.a` was set with an `anchor` parameter that is not a `Point`'
     )
   })
 
   it('Should calculate the part boundary', () => {
-    const design = new Design()
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, paths, Path, part }) => {
+        points.from = new Point(123, 456)
+        points.to = new Point(19, 76)
+        paths.test = new Path().move(points.from).line(points.to)
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
     const pattern = new design()
-    const part = pattern.__createPartWithContext()
-    pattern.init()
-    const short = part.shorthand()
-    part.points.from = new short.Point(123, 456)
-    part.points.to = new short.Point(19, 76)
-    part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    let boundary = part.boundary()
-    expect(boundary.topLeft.x).to.equal(19)
-    expect(boundary.topLeft.y).to.equal(76)
-    expect(boundary.bottomRight.x).to.equal(123)
-    expect(boundary.bottomRight.y).to.equal(456)
-    boundary = part.boundary()
-    expect(boundary.width).to.equal(104)
-    expect(boundary.height).to.equal(380)
+    pattern.draft()
+    const boundary = pattern.parts[0].test.boundary()
+    const { topLeft, bottomRight, width, height } = boundary
+    expect(topLeft.x).to.equal(19)
+    expect(topLeft.y).to.equal(76)
+    expect(bottomRight.x).to.equal(123)
+    expect(bottomRight.y).to.equal(456)
+    expect(width).to.equal(104)
+    expect(height).to.equal(380)
   })
 
   /*
@@ -176,7 +187,6 @@ describe('Part', () => {
     part.home()
     expect(part.attributes.get('transform')).to.equal(false)
   })
-*/
   it('Should run hooks', () => {
     let count = 0
     const design = new Design()
@@ -192,20 +202,25 @@ describe('Part', () => {
     part.runHooks('preDraft')
     expect(count).to.equal(1)
   })
+*/
 
-  it('Should get the units closure to raise a debug when passing a non-number', () => {
-    const design = new Design()
-    const pattern = new design({ margin: 5 })
-    const part = pattern.__createPartWithContext()
-    pattern.init()
-    const short = part.shorthand()
-    short.units('a')
-    expect(pattern.store.logs.warning.length).to.equal(1)
-    expect(pattern.store.logs.warning[0]).to.equal(
+  it('Units closure should log a warning when passing a non-number', () => {
+    const part = {
+      name: 'test',
+      draft: ({ units, part }) => {
+        units('a')
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.stores[0].logs.warning.length).to.equal(1)
+    expect(pattern.stores[0].logs.warning[0]).to.equal(
       'Calling `units(value)` but `value` is not a number (`string`)'
     )
   })
-
+  /*
   describe('isEmpty', () => {
     it('Should return true if the part has no paths or snippets', () => {
       const design = new Design()
@@ -272,4 +287,5 @@ describe('Part', () => {
       expect(part.isEmpty()).to.be.false
     })
   })
+  */
 })

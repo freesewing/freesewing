@@ -32,7 +32,7 @@ const { expect } = chai
 
 describe('Utils', () => {
   it('Should return the correct macro name', () => {
-    expect(macroName('test')).to.equal('_macro_test')
+    expect(macroName('test')).to.equal('__macro_test')
   })
 
   it('Should find the intersection of two endless line segments', () => {
