@@ -26,7 +26,9 @@ import Stack from './stack'
  */
 
 const SvgWrapper = props => {
-  const { patternProps, gist, app, updateGist, unsetGist, showInfo } = props
+  const { patternProps=false, gist, app, updateGist, unsetGist, showInfo } = props
+
+  if (!patternProps) return null
 
   return <SizeMe>{({ size }) => (
     <TransformWrapper

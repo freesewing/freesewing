@@ -257,4 +257,17 @@ module.exports = {
   '--pattern-stroke-6xl': "16px",
   // Pattern 7xl stroke width
   '--pattern-stroke-7xl': "20px",
+
+  // Pattern sampling styles
+  '--pattern-sample-1': colors.red["500"],
+  '--pattern-sample-2': colors.orange["500"],
+  '--pattern-sample-3': colors.yellow["500"],
+  '--pattern-sample-4': colors.lime["500"],
+  '--pattern-sample-5': colors.emerald["500"],
+  '--pattern-sample-6': colors.cyan["500"],
+  '--pattern-sample-7': colors.blue["500"],
+  '--pattern-sample-8': colors.violet["500"],
+  '--pattern-sample-9': colors.fuchsia["500"],
+  '--pattern-sample-10': colors.rose["500"],
+
 }

@@ -88,7 +88,7 @@ const XrayPart = props => {
 export const PartInner = forwardRef((props, ref) => {
   const { partName, part, gist } = props
 
-  const grid = gist.paperless ? (
+  const Grid = gist.paperless ? (
     <rect
       x={part.topLeft.x}
       y={part.topLeft.y}
@@ -100,7 +100,7 @@ export const PartInner = forwardRef((props, ref) => {
   ) : null
 
   return (<g ref={ref}>
-    {grid}
+    {Grid}
     {
       gist._state?.xray?.enabled &&
       <XrayPart {...props} />
@@ -140,7 +140,7 @@ const Part = props => {
   const { partName, part} = props
 
   return (
-      <g {...getProps(part)} id={`part-${partName}`}>
+      <g {...getProps(part)} id={`${part.context.settings.idPrefix || ''}part-${partName}`} className={part.context.settings.idPrefix || ''}>
         <PartInner {...props}/>
       </g>
   )
