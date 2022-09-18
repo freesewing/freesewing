@@ -227,40 +227,40 @@ describe('Point', () => {
     expect(p2.y).to.equal(70)
   })
 
-  it('Should add raise methods to a point', () => {
-    const raise = () => 'hello'
-    const p1 = new Point(10, 20).withRaise(raise)
-    expect(p1.raise()).to.equal('hello')
+  it('Should add log methods to a point', () => {
+    const log = () => 'hello'
+    const p1 = new Point(10, 20).__withLog(log)
+    expect(p1.log()).to.equal('hello')
   })
 
-  it('Should raise a warning on invalid point coordinates', () => {
+  it('Should log a warning on invalid point coordinates', () => {
     const invalid = { x: false, y: false }
-    const raiseX = { warning: () => (invalid.x = true) }
-    const raiseY = { warning: () => (invalid.y = true) }
-    const p1 = new Point('a', 10).withRaise(raiseX)
-    const p2 = new Point(20, 'b').withRaise(raiseY)
+    const logX = { warning: () => (invalid.x = true) }
+    const logY = { warning: () => (invalid.y = true) }
+    const p1 = new Point('a', 10).__withLog(logX)
+    const p2 = new Point(20, 'b').__withLog(logY)
     expect(invalid.x).to.equal(false)
     expect(invalid.y).to.equal(false)
-    p1.check()
-    p2.check()
+    p1.__check()
+    p2.__check()
     expect(invalid.x).to.equal(true)
     expect(invalid.y).to.equal(true)
   })
 
-  it('Should raise a warning if rotation is not a number', () => {
+  it('Should log a warning if rotation is not a number', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
+    const p2 = new Point(20, 20).__withLog(log)
     expect(invalid).to.equal(false)
     p1.rotate('a', p2)
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning if rotating around what is not a point', () => {
+  it('Should log a warning if rotating around what is not a point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.rotate(45, 'a')
@@ -270,10 +270,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it("Should raise a warning when flipX'ing around what is not a point", () => {
+  it("Should log a warning when flipX'ing around what is not a point", () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.flipX('a')
@@ -283,10 +283,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it("Should raise a warning when flipY'ing around what is not a point", () => {
+  it("Should log a warning when flipY'ing around what is not a point", () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.flipY('a')
@@ -296,10 +296,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when shifting with a distance that is not a number', () => {
+  it('Should log a warning when shifting with a distance that is not a number', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.shift(0, 'a')
@@ -309,10 +309,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when shifting with an angle that is not a number', () => {
+  it('Should log a warning when shifting with an angle that is not a number', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.shift('a', 12)
@@ -322,11 +322,11 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when shifting towards with a distance that is not a number', () => {
+  it('Should log a warning when shifting towards with a distance that is not a number', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
+    const p2 = new Point(20, 20).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.shiftTowards(p2, 'a')
@@ -336,10 +336,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when shifting towards with a target that is not a point', () => {
+  it('Should log a warning when shifting towards with a target that is not a point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.shiftTowards('a', 10)
@@ -349,11 +349,11 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when shifting fraction towards with a distance that is not a number', () => {
+  it('Should log a warning when shifting fraction towards with a distance that is not a number', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
+    const p2 = new Point(20, 20).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.shiftFractionTowards(p2, 'a')
@@ -363,10 +363,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when shifting a fraction towards with a target that is not a point', () => {
+  it('Should log a warning when shifting a fraction towards with a target that is not a point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.shiftFractionTowards('a', 0.1)
@@ -376,11 +376,11 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when shifting outowards with a distance that is not a number', () => {
+  it('Should log a warning when shifting outowards with a distance that is not a number', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
-    const p2 = new Point(20, 20).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
+    const p2 = new Point(20, 20).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.shiftOutwards(p2, 'a')
@@ -390,10 +390,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when shifting a outowards with a target that is not a point', () => {
+  it('Should log a warning when shifting a outowards with a target that is not a point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.shiftOutwards('a', 0.1)
@@ -403,10 +403,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when translating with an X-delta that is not a number', () => {
+  it('Should log a warning when translating with an X-delta that is not a number', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.translate('a', 10)
@@ -416,10 +416,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when translating with an Y-delta that is not a number', () => {
+  it('Should log a warning when translating with an Y-delta that is not a number', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.translate(10, 'a')
@@ -429,10 +429,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when sitsOn receives a non-point', () => {
+  it('Should log a warning when sitsOn receives a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.sitsOn('a')
@@ -442,10 +442,10 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
-  it('Should raise a warning when sitsRoughlyOn receives a non-point', () => {
+  it('Should log a warning when sitsRoughlyOn receives a non-point', () => {
     let invalid = false
-    const raise = { warning: () => (invalid = true) }
-    const p1 = new Point(10, 10).withRaise(raise)
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Point(10, 10).__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.sitsRoughlyOn('a')

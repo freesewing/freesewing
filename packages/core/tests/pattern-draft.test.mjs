@@ -78,9 +78,9 @@ describe('Pattern', () => {
       only: ['test.partB'],
     })
     pattern.init()
-    expect(pattern.needs('test.partA')).to.equal(true)
-    expect(pattern.needs('test.partB')).to.equal(true)
-    expect(pattern.needs('test.partC')).to.equal(false)
+    expect(pattern.__needs('test.partA')).to.equal(true)
+    expect(pattern.__needs('test.partB')).to.equal(true)
+    expect(pattern.__needs('test.partC')).to.equal(false)
   })
 
   it('Should check whether a part is wanted', () => {
@@ -127,9 +127,9 @@ describe('Pattern', () => {
       only: ['test.partB'],
     })
     pattern.init()
-    expect(pattern.wants('test.partA')).to.equal(false)
-    expect(pattern.wants('test.partB')).to.equal(true)
-    expect(pattern.wants('test.partC')).to.equal(false)
+    expect(pattern.__wants('test.partA')).to.equal(false)
+    expect(pattern.__wants('test.partB')).to.equal(true)
+    expect(pattern.__wants('test.partC')).to.equal(false)
   })
 
   /*

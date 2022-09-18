@@ -69,8 +69,8 @@ describe('Store', () => {
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    expect(pattern.store.get('test.message.warning')).to.equal('hello warning')
-    expect(pattern.store.get('test.message.info')).to.equal('hello info')
+    expect(pattern.stores[0].get('test.message.warning')).to.equal('hello warning')
+    expect(pattern.stores[0].get('test.message.info')).to.equal('hello info')
   })
 
   it('Should make top-level plugin methods available via shorthand', () => {
@@ -103,7 +103,7 @@ describe('Store', () => {
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    expect(pattern.store.get('test.example_part.a')).to.equal('hello A')
-    expect(pattern.store.get('test.example_part.b')).to.equal('hello B')
+    expect(pattern.stores[0].get('test.example_part.a')).to.equal('hello A')
+    expect(pattern.stores[0].get('test.example_part.b')).to.equal('hello B')
   })
 })

@@ -23,6 +23,7 @@ core:
   testci: 'mocha tests/*.test.mjs'
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
+  jsdoc: "jsdoc -c jsdoc.json -r src"
 i18n:
   prebuild: 'node scripts/prebuilder.mjs'
 models:

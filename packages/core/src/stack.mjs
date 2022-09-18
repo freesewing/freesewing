@@ -4,8 +4,8 @@ import * as utils from './utils.mjs'
 
 export function Stack(name = null) {
   // Non-enumerable properties
-  utils.addNonEnumProp(this, 'freeId', 0)
-  utils.addNonEnumProp(this, 'layout', { move: { x: 0, y: 0 } })
+  utils.__addNonEnumProp(this, 'freeId', 0)
+  utils.__addNonEnumProp(this, 'layout', { move: { x: 0, y: 0 } })
 
   // Enumerable properties
   this.attributes = new Attributes()
@@ -36,33 +36,13 @@ Stack.prototype.getPartNames = function () {
   return [...this.parts].map((p) => p.name)
 }
 
-/** Homes the stack so that its top left corner is in (0,0) */
-//Stack.prototype.home = function () {
-//  const parts = this.getPartList()
-//  if (parts.length < 1) return this
-//  for (const part of this.getPartList()) {
-//    part.home()
-//  }
-//
-//  if (parts.length === 1) {
-//    this.topLeft = part.topLeft
-//    this.bottomRigth = part.bottomRight
-//    this.width = part.width
-//    this.height = part.height
-//
-//    return this
-//  }
-//
-//  return this.boundary()
-//}
-
 /** Calculates the stack's bounding box and sets it */
 Stack.prototype.home = function () {
   if (this.topLeft) return this // Cached
   this.topLeft = new Point(Infinity, Infinity)
   this.bottomRight = new Point(-Infinity, -Infinity)
   for (const part of this.getPartList()) {
-    part.boundary()
+    part.__boundary()
     if (part.topLeft.x < this.topLeft.x) this.topLeft.x = part.topLeft.x
     if (part.topLeft.y < this.topLeft.y) this.topLeft.y = part.topLeft.y
     if (part.bottomRight.x > this.bottomRight.x) this.bottomRight.x = part.bottomRight.x
@@ -76,8 +56,11 @@ Stack.prototype.home = function () {
   if (this.bottomRight.y === -Infinity) this.bottomRight.y = 0
 
   // Add margin
-  let margin = this.context.settings.margin
-  if (this.context.settings.paperless && margin < 10) margin = 10
+  let margin = 0
+  for (const set in this.context.settings) {
+    if (this.context.settings[set].margin > margin) margin = this.context.settings[set].margin
+    if (this.context.settings[set].paperless && margin < 10) margin = 10
+  }
   this.topLeft.x -= margin
   this.topLeft.y -= margin
   this.bottomRight.x += margin
@@ -140,5 +123,25 @@ Stack.prototype.generateTransform = function (transforms) {
     this.attr(t, generated[t], true)
   }
 }
+
+/** Homes the stack so that its top left corner is in (0,0) */
+//Stack.prototype.home = function () {
+//  const parts = this.getPartList()
+//  if (parts.length < 1) return this
+//  for (const part of this.getPartList()) {
+//    part.home()
+//  }
+//
+//  if (parts.length === 1) {
+//    this.topLeft = part.topLeft
+//    this.bottomRigth = part.bottomRight
+//    this.width = part.width
+//    this.height = part.height
+//
+//    return this
+//  }
+//
+//  return this.boundary()
+//}
 
 export default Stack
