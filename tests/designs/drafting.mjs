@@ -21,11 +21,14 @@ export const testPatternDrafting = (Pattern, log = false) => {
   const doesItDraftAndRender = (pattern, log = false) => {
     try {
       pattern.draft().render()
-      if (pattern.store.logs.error.length < 1) return true
-      if (log) console.log(pattern.store.logs.error)
+      if (log) console.log(pattern.stores[0].logs)
+      if (pattern.stores[0].logs.error.length < 1) return true
       return false
     } catch (err) {
-      if (log) console.log(err)
+      if (log) {
+        console.log(err)
+      }
+
       return false
     }
   }
