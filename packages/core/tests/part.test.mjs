@@ -20,14 +20,14 @@ describe('Part', () => {
     expect(typeof dp.context).to.equal('object')
   })
 
-  it('Should return a function from macroClosure', () => {
+  it('Should return a function from __macroClosure', () => {
     const part = new Part()
-    expect(typeof part.macroClosure()).to.equal('function')
+    expect(typeof part.__macroClosure()).to.equal('function')
   })
 
   it('Should not run an unknown macro', () => {
     const part = new Part()
-    const macro = part.macroClosure()
+    const macro = part.__macroClosure()
     expect(macro('unknown')).to.equal(undefined)
   })
 
@@ -62,15 +62,15 @@ describe('Part', () => {
     expect(part.getId()).to.equal('' + (parseInt(free) + 1))
   })
 
-  it('Should return a function from unitsClosure', () => {
+  it('Should return a function from __unitsClosure', () => {
     const part = new Part()
-    expect(typeof part.unitsClosure()).to.equal('function')
+    expect(typeof part.__unitsClosure()).to.equal('function')
   })
 
   it('Should convert units', () => {
     const part = new Part()
     part.context = { settings: { units: 'metric' } }
-    const units = part.unitsClosure()
+    const units = part.__unitsClosure()
     expect(units(123.456)).to.equal('12.35cm')
     expect(units(123.456)).to.equal('12.35cm')
   })
@@ -144,7 +144,7 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const boundary = pattern.parts[0].test.boundary()
+    const boundary = pattern.parts[0].test.__boundary()
     const { topLeft, bottomRight, width, height } = boundary
     expect(topLeft.x).to.equal(19)
     expect(topLeft.y).to.equal(76)

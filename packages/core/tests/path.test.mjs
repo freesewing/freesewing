@@ -51,7 +51,7 @@ describe('Path', () => {
     const pattern = new design()
     pattern.draft().render()
     expect(round(pattern.parts[0].test.paths.offset.bottomRight.x)).to.equal(72.63)
-    expect(round(pattern.parts[0].test.paths.offset.bottomRight.y)).to.equal(26.48)
+    expect(round(pattern.parts[0].test.paths.offset.bottomRight.y)).to.equal(26.47)
   })
 
   it('Should offset a curve where cp2 = end', () => {
@@ -69,26 +69,6 @@ describe('Path', () => {
     expect(round(pattern.parts[0].test.paths.offset.bottomRight.x)).to.equal(119.26)
     expect(round(pattern.parts[0].test.paths.offset.bottomRight.y)).to.equal(43.27)
   })
-
-  /*
-  it('Should throw error when offsetting line that is no line', () => {
-    const part = {
-      name: 'test',
-      draft: ({ paths, Path, Point }) => {
-        paths.line = new Path()
-          .move(new Point(0, 40))
-          .line(new Point(0, 40))
-        paths.offset = paths.line.offset(10)
-        return part
-      }
-    }
-    const design = new Design({ parts: [ part ] })
-    const pattern = new design()
-    pattern.draft().render()
-    console.log(pattern.store.logs)
-    expect(() => pattern.draft().render()).to.throw()
-  })
-  */
 
   it('Should return the length of a line', () => {
     const part = {
@@ -119,6 +99,22 @@ describe('Path', () => {
     const pattern = new design()
     pattern.draft().render()
     expect(round(pattern.parts[0].test.paths.curve.length())).to.equal(145.11)
+  })
+
+  it('Should return the rough length of a curve', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.curve = new Path()
+          .move(new Point(0, 0))
+          .curve(new Point(0, 50), new Point(100, 50), new Point(100, 0))
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts[0].test.paths.curve.roughLength())).to.equal(200)
   })
 
   it('Should return the path start point', () => {
@@ -161,7 +157,7 @@ describe('Path', () => {
     const curve = new Path()
       .move(new Point(123, 456))
       .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
-    curve.boundary()
+    curve.__boundary()
     expect(curve.topLeft.x).to.equal(71.6413460920667)
     expect(curve.topLeft.y).to.equal(4)
     expect(curve.bottomRight.x).to.equal(230)
@@ -173,7 +169,7 @@ describe('Path', () => {
       .move(new Point(123, 456))
       .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
     let b = curve.clone()
-    b.boundary()
+    b.__boundary()
     expect(b.topLeft.x).to.equal(71.6413460920667)
     expect(b.topLeft.y).to.equal(4)
     b = b.clone()
@@ -236,7 +232,7 @@ describe('Path', () => {
       .curve(new Point(123, 123), new Point(-123, 456), new Point(456, -123))
     const a = test.shiftAlong(100)
     const b = test.reverse().shiftAlong(test.length() - 100)
-    expect(a.dist(b)).to.below(0.05)
+    expect(a.dist(b)).to.below(0.2)
   })
 
   it('Should shift fraction with sufficient precision', () => {
@@ -245,7 +241,7 @@ describe('Path', () => {
       .curve(new Point(123, 123), new Point(-123, 456), new Point(456, -123))
     const a = test.shiftFractionAlong(0.5)
     const b = test.reverse().shiftFractionAlong(0.5)
-    expect(a.dist(b)).to.below(0.05)
+    expect(a.dist(b)).to.below(0.2)
   })
 
   it('Should shift a fraction along a line', () => {
@@ -541,10 +537,10 @@ describe('Path', () => {
     expect(curve.type).to.equal('curve')
     expect(round(curve.cp1.x)).to.equal(35.08)
     expect(round(curve.cp1.y)).to.equal(21.64)
-    expect(round(curve.cp2.x)).to.equal(46.19)
-    expect(round(curve.cp2.y)).to.equal(-14.69)
-    expect(round(curve.to.x)).to.equal(72.53)
-    expect(round(curve.to.y)).to.equal(8.71)
+    expect(round(curve.cp2.x)).to.equal(46.18)
+    expect(round(curve.cp2.y)).to.equal(-14.67)
+    expect(round(curve.to.x)).to.equal(72.51)
+    expect(round(curve.to.y)).to.equal(8.69)
   })
 
   it('Should split a path on a line', () => {
@@ -683,13 +679,13 @@ describe('Path', () => {
 
   it('Should add log methods to a path', () => {
     const log = () => 'hello'
-    const p1 = new Path(10, 20).withLog(log)
+    const p1 = new Path(10, 20).__withLog(log)
     expect(p1.log()).to.equal('hello')
   })
 
   it('Should add log methods to a path', () => {
     const log = () => 'hello'
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     expect(p1.log()).to.equal('hello')
   })
 
@@ -707,7 +703,7 @@ describe('Path', () => {
   it('Should log a warning when moving to a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.move('a')
@@ -720,7 +716,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a line to a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     expect(invalid).to.equal(false)
     try {
       p1.line('a')
@@ -733,7 +729,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a curve to a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     const a = new Point(0, 0)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -748,7 +744,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a curve with a Cp1 that is a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     const a = new Point(0, 0)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -763,7 +759,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a curve with a Cp1 that is a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -777,7 +773,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a curve with a Cp2 that is a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -791,7 +787,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a _curve with a To that is a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -805,7 +801,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a _curve with a Cp2 that is a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -819,7 +815,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a curve_ with a To that is a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -833,7 +829,7 @@ describe('Path', () => {
   it('Should log a warning when drawing a curve_ with a Cp2 that is a non-point', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
-    const p1 = new Path().withLog(log)
+    const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
     try {
@@ -867,7 +863,7 @@ describe('Path', () => {
     const b = new Point(10, 10)
     const p1 = new Path().move(a).line(b)
     expect(invalid).to.equal(false)
-    new Path().withLog(log).noop('test').insop(false, p1)
+    new Path().__withLog(log).noop('test').insop(false, p1)
     expect(invalid).to.equal(true)
   })
 
@@ -879,7 +875,7 @@ describe('Path', () => {
     new Path().move(a).line(b)
     expect(invalid).to.equal(false)
     try {
-      new Path().withLog(log).noop('test').insop('test')
+      new Path().__withLog(log).noop('test').insop('test')
     } catch (err) {
       expect('' + err).to.contain("Cannot read properties of undefined (reading 'ops')")
     }
@@ -890,7 +886,7 @@ describe('Path', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
     expect(invalid).to.equal(false)
-    new Path().withLog(log).attr()
+    new Path().__withLog(log).attr()
     expect(invalid).to.equal(true)
   })
 
@@ -898,7 +894,7 @@ describe('Path', () => {
     let invalid = false
     const log = { warning: () => (invalid = true) }
     expect(invalid).to.equal(false)
-    new Path().withLog(log).attr('test')
+    new Path().__withLog(log).attr('test')
     expect(invalid).to.equal(true)
   })
 
@@ -944,7 +940,7 @@ describe('Path', () => {
     const log = { error: () => (invalid = true) }
     expect(invalid).to.equal(false)
     try {
-      new Path().withLog(log).start()
+      new Path().__withLog(log).start()
     } catch (err) {
       expect('' + err).to.contain("Cannot read properties of undefined (reading 'to')")
     }
@@ -956,7 +952,7 @@ describe('Path', () => {
     const log = { error: () => (invalid = true) }
     expect(invalid).to.equal(false)
     try {
-      new Path().withLog(log).end()
+      new Path().__withLog(log).end()
     } catch (err) {
       expect('' + err).to.contain("Cannot read properties of undefined (reading 'type')")
     }
@@ -967,7 +963,7 @@ describe('Path', () => {
     let invalid = false
     const log = { error: () => (invalid = true) }
     expect(invalid).to.equal(false)
-    new Path().withLog(log).move(new Point(0, 0)).line(new Point(10, 10)).shiftAlong()
+    new Path().__withLog(log).move(new Point(0, 0)).line(new Point(10, 10)).shiftAlong()
     expect(invalid).to.equal(true)
   })
 

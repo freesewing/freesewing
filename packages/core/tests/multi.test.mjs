@@ -73,8 +73,5 @@ describe('Multisets', () => {
       },
     ])
     pattern.draft()
-    console.log(pattern)
-    console.log(pattern.render())
-    //pattern.render()
   })
 })

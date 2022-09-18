@@ -1,23 +1,33 @@
 import { Attributes } from './attributes.mjs'
 import * as utils from './utils.mjs'
-import { Point } from './point.mjs'
-import { Path } from './path.mjs'
-import { Snippet } from './snippet.mjs'
+import { Point, pointsProxy } from './point.mjs'
+import { Path, pathsProxy } from './path.mjs'
+import { Snippet, snippetsProxy } from './snippet.mjs'
 import { Hooks } from './hooks.mjs'
 
+//////////////////////////////////////////////
+//               CONSTRUCTOR                //
+//////////////////////////////////////////////
+
+/**
+ * Constructor for a Part
+ *
+ * @constructor
+ * @return {Part} this - The Part instance
+ */
 export function Part() {
   // Non-enumerable properties
-  utils.addNonEnumProp(this, 'freeId', 0)
-  utils.addNonEnumProp(this, 'topLeft', false)
-  utils.addNonEnumProp(this, 'bottomRight', false)
-  utils.addNonEnumProp(this, 'width', false)
-  utils.addNonEnumProp(this, 'height', false)
-  utils.addNonEnumProp(this, 'utils', utils)
-  utils.addNonEnumProp(this, 'layout', { move: { x: 0, y: 0 } })
-  utils.addNonEnumProp(this, 'Point', Point)
-  utils.addNonEnumProp(this, 'Path', Path)
-  utils.addNonEnumProp(this, 'Snippet', Snippet)
-  utils.addNonEnumProp(this, 'hooks', new Hooks())
+  utils.__addNonEnumProp(this, 'freeId', 0)
+  utils.__addNonEnumProp(this, 'topLeft', false)
+  utils.__addNonEnumProp(this, 'bottomRight', false)
+  utils.__addNonEnumProp(this, 'width', false)
+  utils.__addNonEnumProp(this, 'height', false)
+  utils.__addNonEnumProp(this, 'utils', utils)
+  utils.__addNonEnumProp(this, 'layout', { move: { x: 0, y: 0 } })
+  utils.__addNonEnumProp(this, 'Point', Point)
+  utils.__addNonEnumProp(this, 'Path', Path)
+  utils.__addNonEnumProp(this, 'Snippet', Snippet)
+  utils.__addNonEnumProp(this, 'hooks', new Hooks())
 
   // Enumerable properties
   this.render = true // FIXME: Replace render with hide
@@ -31,56 +41,163 @@ export function Part() {
   return this
 }
 
-Part.prototype.macroClosure = function () {
-  let self = this
-  let method = function (key, args) {
-    let macro = utils.macroName(key)
-    if (typeof self[macro] === 'function') self[macro](args)
-  }
+//////////////////////////////////////////////
+//            PUBLIC METHODS                //
+//////////////////////////////////////////////
 
-  return method
+/**
+ * Adds an attribute in a chainable way
+ *
+ * @param {string} name - Name of the attribute to add
+ * @param {string} value - Value of the attribute to add
+ * @param {bool} overwrite - Whether to overwrite an existing attrubute or not
+ * @return {Part} this - The part instance
+ */
+Part.prototype.attr = function (name, value, overwrite = false) {
+  if (overwrite) this.attributes.set(name, value)
+  else this.attributes.add(name, value)
+
+  return this
 }
 
-Part.prototype.runHooks = function (hookName, data = false) {
-  if (data === false) data = this
-  let hooks = this.hooks[hookName]
-  if (hooks && hooks.length > 0) {
-    for (let hook of hooks) {
-      hook.method(data, hook.data)
-    }
-  }
-}
-
-/** Returns an unused ID */
+/**
+ * Returns on unused ID (unused in this part)
+ *
+ * @param {string} prefix - An optional prefix to apply to the ID
+ * @return {string} id - The id
+ */
 Part.prototype.getId = function (prefix = '') {
   this.freeId += 1
 
   return prefix + this.freeId
 }
 
-/** Returns a value formatted for units provided in settings */
-Part.prototype.unitsClosure = function () {
-  const self = this
-  const method = function (value) {
-    if (typeof value !== 'number')
-      self.context.store.log.warning(
-        `Calling \`units(value)\` but \`value\` is not a number (\`${typeof value}\`)`
-      )
-    return utils.units(value, self.context.settings.units)
+/** Returns an object with shorthand access for pattern design */
+/**
+ * Returns an object that will be passed to draft method to be destructured
+ *
+ * @return {object} short - The so-called shorthand object with what you might need in your draft method
+ */
+Part.prototype.shorthand = function () {
+  const complete = this.context.settings?.complete ? true : false
+  const paperless = this.context.settings?.paperless === true ? true : false
+  const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
+  const shorthand = {
+    part: this,
+    sa,
+    scale: this.context.settings?.scale,
+    store: this.context.store,
+    macro: this.__macroClosure(),
+    units: this.__unitsClosure(),
+    utils: utils,
+    complete,
+    paperless,
+    events: this.context.events,
+    log: this.context.store.log,
+    addCut: this.addCut,
+    removeCut: this.removeCut,
+  }
+  // Add top-level store methods and add a part name parameter
+  const partName = this.name
+  for (const [key, method] of Object.entries(this.context.store)) {
+    if (typeof method === 'function')
+      shorthand[key] = function (...args) {
+        return method(partName, ...args)
+      }
   }
 
-  return method
+  // We'll need this
+  let self = this
+
+  // Wrap the Point constructor so objects can log
+  shorthand.Point = function (x, y) {
+    Point.apply(this, [x, y])
+    Object.defineProperty(this, 'log', { value: self.context.store.log })
+  }
+  shorthand.Point.prototype = Object.create(Point.prototype)
+  // Wrap the Path constructor so objects can log
+  shorthand.Path = function () {
+    Path.apply(this, [true])
+    Object.defineProperty(this, 'log', { value: self.context.store.log })
+  }
+  shorthand.Path.prototype = Object.create(Path.prototype)
+  // Wrap the Snippet constructor so objects can log
+  shorthand.Snippet = function (def, anchor) {
+    Snippet.apply(this, [def, anchor, true])
+    Snippet.apply(this, arguments)
+    Object.defineProperty(this, 'log', { value: self.context.store.log })
+  }
+  shorthand.Snippet.prototype = Object.create(Snippet.prototype)
+
+  // Proxy points, paths, snippets, measurements, options, and absoluteOptions
+  shorthand.points = new Proxy(this.points || {}, pointsProxy(self.points, self.context.store.log))
+  shorthand.paths = new Proxy(this.paths || {}, pathsProxy(self.paths, self.context.store.log))
+  shorthand.snippets = new Proxy(
+    this.snippets || {},
+    snippetsProxy(self.snippets, self.context.store.log)
+  )
+  shorthand.measurements = new Proxy(this.context.settings.measurements || {}, {
+    get: function (measurements, name) {
+      if (typeof measurements[name] === 'undefined')
+        self.context.store.log.warning(
+          `Tried to access \`measurements.${name}\` but it is \`undefined\``
+        )
+      return Reflect.get(...arguments)
+    },
+    set: (measurements, name, value) => (self.context.settings.measurements[name] = value),
+  })
+  shorthand.options = new Proxy(this.context.settings.options || {}, {
+    get: function (options, name) {
+      if (typeof options[name] === 'undefined')
+        self.context.store.log.warning(
+          `Tried to access \`options.${name}\` but it is \`undefined\``
+        )
+      return Reflect.get(...arguments)
+    },
+    set: (options, name, value) => (self.context.settings.options[name] = value),
+  })
+  shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions || {}, {
+    get: function (absoluteOptions, name) {
+      if (typeof absoluteOptions[name] === 'undefined')
+        self.context.store.log.warning(
+          `Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``
+        )
+      return Reflect.get(...arguments)
+    },
+    set: (absoluteOptions, name, value) => (self.context.settings.absoluteOptions[name] = value),
+  })
+
+  return shorthand
 }
 
-/** Calculates the part's bounding box and sets it */
-Part.prototype.boundary = function () {
+/**
+ * Returns a value formatted for units set in settings
+ *
+ * @param {float} input - The value to format
+ * @return {string} result - The input formatted for the units set in settings
+ */
+Part.prototype.units = function (input) {
+  return utils.units(input, this.context.settings.units)
+}
+
+//////////////////////////////////////////////
+//            PRIVATE METHODS               //
+//////////////////////////////////////////////
+
+/**
+ * Calculates the part's bounding box and mutates the part to set it
+ *
+ * @private
+ * @return {Part} this - The part instance
+ */
+Part.prototype.__boundary = function () {
   if (this.topLeft) return this // Cached
 
   let topLeft = new Point(Infinity, Infinity)
   let bottomRight = new Point(-Infinity, -Infinity)
   for (let key in this.paths) {
     try {
-      let path = this.paths[key].boundary()
+      let path = this.paths[key].__boundary()
       if (path.render) {
         if (path.topLeft.x < topLeft.x) topLeft.x = path.topLeft.x
         if (path.topLeft.y < topLeft.y) topLeft.y = path.topLeft.y
@@ -120,16 +237,14 @@ Part.prototype.boundary = function () {
   return this
 }
 
-/** Adds an attribute. This is here to make this call chainable in assignment */
-Part.prototype.attr = function (name, value, overwrite = false) {
-  if (overwrite) this.attributes.set(name, value)
-  else this.attributes.add(name, value)
-
-  return this
-}
-
-/** Copies point/path/snippet data from part orig into this */
-Part.prototype.inject = function (orig) {
+/**
+ * Copies point/path/snippet data from part orig into this
+ *
+ * @private
+ * @param {object} orig - The original part to inject into this
+ * @return {Part} this - The part instance
+ */
+Part.prototype.__inject = function (orig) {
   const findBasePoint = (p) => {
     for (let i in orig.points) {
       if (orig.points[i] === p) return i
@@ -161,196 +276,37 @@ Part.prototype.inject = function (orig) {
   return this
 }
 
-Part.prototype.units = function (input) {
-  return utils.units(input, this.context.settings.units)
-}
-
-/** Returns an object with shorthand access for pattern design */
-Part.prototype.shorthand = function () {
-  const complete = this.context.settings?.complete ? true : false
-  const paperless = this.context.settings?.paperless === true ? true : false
-  const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
-  const shorthand = {
-    part: this,
-    sa,
-    scale: this.context.settings?.scale,
-    store: this.context.store,
-    macro: this.macroClosure(),
-    units: this.unitsClosure(),
-    utils: utils,
-    complete,
-    paperless,
-    events: this.context.events,
-    log: this.context.store.log,
-    addCut: this.addCut,
-    removeCut: this.removeCut,
-  }
-  // Add top-level store methods and add a part name parameter
-  const partName = this.name
-  for (const [key, method] of Object.entries(this.context.store)) {
-    if (typeof method === 'function')
-      shorthand[key] = function (...args) {
-        return method(partName, ...args)
-      }
-  }
-
-  // We'll need this
+/**
+ * Returns a closure holding the macro method
+ *
+ * @private
+ * @return {function} method - The closured macro method
+ */
+Part.prototype.__macroClosure = function () {
   let self = this
+  let method = function (key, args) {
+    let macro = utils.__macroName(key)
+    if (typeof self[macro] === 'function') self[macro](args)
+  }
 
-  // Wrap the Point constructor so objects can log
-  shorthand.Point = function (x, y) {
-    Point.apply(this, [x, y, true])
-    Object.defineProperty(this, 'log', { value: self.context.store.log })
-  }
-  shorthand.Point.prototype = Object.create(Point.prototype)
-  // Wrap the Path constructor so objects can log
-  shorthand.Path = function () {
-    Path.apply(this, [true])
-    Object.defineProperty(this, 'log', { value: self.context.store.log })
-  }
-  shorthand.Path.prototype = Object.create(Path.prototype)
-  // Wrap the Snippet constructor so objects can log
-  shorthand.Snippet = function (def, anchor) {
-    Snippet.apply(this, [def, anchor, true])
-    Snippet.apply(this, arguments)
-    Object.defineProperty(this, 'log', { value: self.context.store.log })
-  }
-  shorthand.Snippet.prototype = Object.create(Snippet.prototype)
-
-  // Proxy the points object
-  const pointsProxy = {
-    get: function () {
-      return Reflect.get(...arguments)
-    },
-    set: (points, name, value) => {
-      // Constructor checks
-      if (value instanceof Point !== true)
-        self.context.store.log.warning(
-          `\`points.${name}\` was set with a value that is not a \`Point\` object`
-        )
-      if (value.x == null || !utils.isCoord(value.x))
-        self.context.store.log.warning(
-          `\`points.${name}\` was set with a \`x\` parameter that is not a \`number\``
-        )
-      if (value.y == null || !utils.isCoord(value.y))
-        self.context.store.log.warning(
-          `\`points.${name}\` was set with a \`y\` parameter that is not a \`number\``
-        )
-      try {
-        value.name = name
-      } catch (err) {
-        self.context.store.log.warning(`Could not set \`name\` property on \`points.${name}\``)
-      }
-      return (self.points[name] = value)
-    },
-  }
-  shorthand.points = new Proxy(this.points || {}, pointsProxy)
-  // Proxy the paths object
-  const pathsProxy = {
-    get: function () {
-      return Reflect.get(...arguments)
-    },
-    set: (paths, name, value) => {
-      // Constructor checks
-      if (value instanceof Path !== true)
-        self.context.store.log.warning(
-          `\`paths.${name}\` was set with a value that is not a \`Path\` object`
-        )
-      try {
-        value.name = name
-      } catch (err) {
-        self.context.store.log.warning(`Could not set \`name\` property on \`paths.${name}\``)
-      }
-      return (self.paths[name] = value)
-    },
-  }
-  shorthand.paths = new Proxy(this.paths || {}, pathsProxy)
-  // Proxy the snippets object
-  const snippetsProxy = {
-    get: function (...args) {
-      return Reflect.get(...args)
-    },
-    set: (snippets, name, value) => {
-      // Constructor checks
-      if (value instanceof Snippet !== true)
-        self.context.store.log.warning(
-          `\`snippets.${name}\` was set with a value that is not a \`Snippet\` object`
-        )
-      if (typeof value.def !== 'string')
-        self.context.store.log.warning(
-          `\`snippets.${name}\` was set with a \`def\` parameter that is not a \`string\``
-        )
-      if (value.anchor instanceof Point !== true)
-        self.context.store.log.warning(
-          `\`snippets.${name}\` was set with an \`anchor\` parameter that is not a \`Point\``
-        )
-      try {
-        value.name = name
-      } catch (err) {
-        self.context.store.log.warning(`Could not set \`name\` property on \`snippets.${name}\``)
-      }
-      return (self.snippets[name] = value)
-    },
-  }
-  shorthand.snippets = new Proxy(this.snippets || {}, snippetsProxy)
-  // Proxy the measurements object
-  const measurementsProxy = {
-    get: function (measurements, name) {
-      if (typeof measurements[name] === 'undefined')
-        self.context.store.log.warning(
-          `Tried to access \`measurements.${name}\` but it is \`undefined\``
-        )
-      return Reflect.get(...arguments)
-    },
-    set: (measurements, name, value) => (self.context.settings.measurements[name] = value),
-  }
-  shorthand.measurements = new Proxy(this.context.settings.measurements || {}, measurementsProxy)
-  // Proxy the options object
-  const optionsProxy = {
-    get: function (options, name) {
-      if (typeof options[name] === 'undefined')
-        self.context.store.log.warning(
-          `Tried to access \`options.${name}\` but it is \`undefined\``
-        )
-      return Reflect.get(...arguments)
-    },
-    set: (options, name, value) => (self.context.settings.options[name] = value),
-  }
-  shorthand.options = new Proxy(this.context.settings.options || {}, optionsProxy)
-  // Proxy the absoluteOptions object
-  const absoluteOptionsProxy = {
-    get: function (absoluteOptions, name) {
-      if (typeof absoluteOptions[name] === 'undefined')
-        self.context.store.log.warning(
-          `Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``
-        )
-      return Reflect.get(...arguments)
-    },
-    set: (absoluteOptions, name, value) => (self.context.settings.absoluteOptions[name] = value),
-  }
-  shorthand.absoluteOptions = new Proxy(
-    this.context.settings.absoluteOptions || {},
-    absoluteOptionsProxy
-  )
-
-  return shorthand
+  return method
 }
 
-//Part.prototype.isEmpty = function () {
-//  if (Object.keys(this.snippets).length > 0) return false
-//
-//  if (Object.keys(this.paths).length > 0) {
-//    for (const p in this.paths) {
-//      if (this.paths[p].render && this.paths[p].length()) return false
-//    }
-//  }
-//
-//  for (const p in this.points) {
-//    if (this.points[p].attributes.get('data-text')) return false
-//    if (this.points[p].attributes.get('data-circle')) return false
-//  }
-//
-//  return true
-//}
+/**
+ * Returns a method to format values in the units provided in settings
+ *
+ * @private
+ * @return {function} method - The closured units method
+ */
+Part.prototype.__unitsClosure = function () {
+  const self = this
+  const method = function (value) {
+    if (typeof value !== 'number')
+      self.context.store.log.warning(
+        `Calling \`units(value)\` but \`value\` is not a number (\`${typeof value}\`)`
+      )
+    return utils.units(value, self.context.settings.units)
+  }
 
-export default Part
+  return method
+}

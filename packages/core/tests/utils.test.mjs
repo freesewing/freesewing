@@ -1,7 +1,6 @@
 import chai from 'chai'
 import {
   Point,
-  isCoord,
   capitalize,
   beamsIntersect,
   linesIntersect,
@@ -21,20 +20,14 @@ import {
   lineIntersectsCircle,
   stretchToScale,
   round,
-  sampleStyle,
   deg2rad,
   rad2deg,
   pctBasedOn,
-  macroName,
 } from '../src/index.mjs'
 
 const { expect } = chai
 
 describe('Utils', () => {
-  it('Should return the correct macro name', () => {
-    expect(macroName('test')).to.equal('__macro_test')
-  })
-
   it('Should find the intersection of two endless line segments', () => {
     let a = new Point(10, 20)
     let b = new Point(20, 24)
@@ -461,34 +454,6 @@ describe('Utils', () => {
     let b = new Point(225.71999999999997, 600)
     let i = beamIntersectsY(a, b, 400)
     expect(round(i.y)).to.equal(400)
-  })
-
-  it('Should check for valid coordinate', () => {
-    expect(isCoord(23423.23)).to.equal(true)
-    expect(isCoord(0)).to.equal(true)
-    expect(isCoord()).to.equal(false)
-    expect(isCoord(null)).to.equal(false)
-    expect(isCoord('hi')).to.equal(false)
-    expect(isCoord(NaN)).to.equal(false)
-  })
-
-  it('Should return the correct sample style', () => {
-    expect(sampleStyle(0, 5)).to.equal('stroke: hsl(-66, 100%, 35%);')
-    expect(sampleStyle(1, 5)).to.equal('stroke: hsl(0, 100%, 35%);')
-    expect(sampleStyle(2, 5)).to.equal('stroke: hsl(66, 100%, 35%);')
-    expect(sampleStyle(3, 5)).to.equal('stroke: hsl(132, 100%, 35%);')
-    expect(sampleStyle(4, 5)).to.equal('stroke: hsl(198, 100%, 35%);')
-  })
-
-  it('Should return the correct sample styles', () => {
-    const styles = [
-      'stroke: red;',
-      'stroke: blue;',
-      'stroke: green;',
-      'stroke: pink;',
-      'stroke: orange;',
-    ]
-    for (let i = 0; i < 5; i++) expect(sampleStyle(i, 5, styles)).to.equal(styles[i])
   })
 
   it('Should convert degrees to radians', () => {

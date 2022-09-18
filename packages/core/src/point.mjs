@@ -1,230 +1,319 @@
 import { Attributes } from './attributes.mjs'
+import { __isCoord, rad2deg, deg2rad } from './utils.mjs'
 
-export function Point(x, y, debug = false) {
+//////////////////////////////////////////////
+//               CONSTRUCTOR                //
+//////////////////////////////////////////////
+
+/**
+ * Constructor for a Point
+ *
+ * @constructor
+ * @param {float} x - X-coordinate of the Point
+ * @param {float} y - Y-coordinate of the Point
+ * @return {Point} this - The Point instance
+ */
+export function Point(x, y) {
   this.x = x
   this.y = y
   this.attributes = new Attributes()
-  Object.defineProperty(this, 'debug', { value: debug, configurable: true })
 }
 
-/** Adds the raise method for a path not created through the proxy **/
-Point.prototype.withRaise = function (raise = false) {
-  if (raise) Object.defineProperty(this, 'raise', { value: raise })
+//////////////////////////////////////////////
+//            PUBLIC METHODS                //
+//////////////////////////////////////////////
 
-  return this
+/**
+ * Returns the angle between this Point and that Point
+ *
+ * @param {Point} that - The Point instance to calculate the angle with
+ * @return {float} angle - The angle between this Point and that Point
+ */
+Point.prototype.angle = function (that) {
+  let rad = Math.atan2(-1 * this.__check().dy(that.__check()), this.dx(that))
+  while (rad < 0) rad += 2 * Math.PI
+
+  return rad2deg(rad)
 }
 
-/** Debug method to validate point data **/
-Point.prototype.check = function () {
-  if (typeof this.x !== 'number') this.raise.warning('X value of `Point` is not a number')
-  if (typeof this.y !== 'number') this.raise.warning('Y value of `Point` is not a number')
-}
-
-/** Radians to degrees */
-Point.prototype.rad2deg = function (radians) {
-  return radians * 57.29577951308232
-}
-
-/** Degrees to radians */
-Point.prototype.deg2rad = function (degrees) {
-  return degrees / 57.29577951308232
-}
-
-/** Adds an attribute. This is here to make this call chainable in assignment */
+/**
+ * Chainable way to add an attribute to the Point
+ *
+ * @param {string} name - Name of the attribute to add
+ * @param {string} value - Value of the attribute to add
+ * @param {bool} overwrite - Whether to overwrite an existing attrubute or not
+ * @return {object} this - The Point instance
+ */
 Point.prototype.attr = function (name, value, overwrite = false) {
-  this.check()
   if (overwrite) this.attributes.set(name, value)
   else this.attributes.add(name, value)
 
-  return this
+  return this.__check()
 }
 
-/** Returns the distance between this point and that point */
-Point.prototype.dist = function (that) {
-  this.check()
-  that.check()
-  let dx = this.x - that.x
-  let dy = this.y - that.y
-
-  return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))
-}
-
-/** Returns slope of a line made by this point and that point */
-Point.prototype.slope = function (that) {
-  this.check()
-  that.check()
-  return (that.y - this.y) / (that.x - this.x)
-}
-
-/** Returns the x-delta between this point and that point */
-Point.prototype.dx = function (that) {
-  this.check()
-  that.check()
-
-  return that.x - this.x
-}
-
-/** Returns the y-delta between this point and that point */
-Point.prototype.dy = function (that) {
-  this.check()
-  that.check()
-
-  return that.y - this.y
-}
-
-/** Returns the angle between this point and that point */
-Point.prototype.angle = function (that) {
-  this.check()
-  that.check()
-
-  let rad = Math.atan2(-1 * this.dy(that), this.dx(that))
-  while (rad < 0) rad += 2 * Math.PI
-
-  return this.rad2deg(rad)
-}
-
-/** Rotate this point deg around that point */
-Point.prototype.rotate = function (deg, that) {
-  if (typeof deg !== 'number')
-    this.raise.warning('Called `Point.rotate(deg,that)` but `deg` is not a number')
-  if (that instanceof Point !== true)
-    this.raise.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
-  this.check()
-  that.check()
-  let radius = this.dist(that)
-  let angle = this.angle(that)
-  let x = that.x + radius * Math.cos(this.deg2rad(angle + deg)) * -1
-  let y = that.y + radius * Math.sin(this.deg2rad(angle + deg))
-
-  return new Point(x, y, this.debug).withRaise(this.raise)
-}
-
-/** returns an identical copy of this point */
-Point.prototype.copy = function () {
-  this.check()
-
-  return new Point(this.x, this.y, this.debug).withRaise(this.raise)
-}
-
-/** Mirrors this point around X value of that point */
-Point.prototype.flipX = function (that = false) {
-  this.check()
-  if (that) {
-    if (that instanceof Point !== true)
-      this.raise.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
-    that.check()
-  }
-  if (that === false || that.x === 0)
-    return new Point(this.x * -1, this.y, this.debug).withRaise(this.raise)
-  else return new Point(that.x + this.dx(that), this.y, this.debug).withRaise(this.raise)
-}
-
-/** Mirrors this point around Y value of that point */
-Point.prototype.flipY = function (that = false) {
-  this.check()
-  if (that) {
-    if (that instanceof Point !== true)
-      this.raise.warning('Called `Point.flipY(that)` but `that` is not a `Point` object')
-    that.check()
-  }
-  if (that === false || that.y === 0)
-    return new Point(this.x, this.y * -1, this.debug).withRaise(this.raise)
-  else return new Point(this.x, that.y + this.dy(that), this.debug).withRaise(this.raise)
-}
-
-/** Shifts this point distance in the deg direction */
-Point.prototype.shift = function (deg, distance) {
-  this.check()
-  if (typeof deg !== 'number') this.raise.warning('Called `Point.shift` but `deg` is not a number')
-  if (typeof distance !== 'number')
-    this.raise.warning('Called `Point.shift` but `distance` is not a number')
-  let p = this.copy()
-  p.x += distance
-
-  return p.rotate(deg, this)
-}
-
-/** Shifts this point distance in the direction of that point */
-Point.prototype.shiftTowards = function (that, distance) {
-  if (typeof distance !== 'number')
-    this.raise.warning('Called `Point.shiftTowards` but `distance` is not a number')
-  if (that instanceof Point !== true)
-    this.raise.warning(
-      'Called `Point.shiftTowards(that, distance)` but `that` is not a `Point` object'
-    )
-  this.check()
-  that.check()
-
-  return this.shift(this.angle(that), distance)
-}
-
-/** Checks whether this has the same coordinates as that */
-Point.prototype.sitsOn = function (that) {
-  if (that instanceof Point !== true)
-    this.raise.warning('Called `Point.sitsOn(that)` but `that` is not a `Point` object')
-  this.check()
-  that.check()
-  if (this.x === that.x && this.y === that.y) return true
-  else return false
-}
-
-/** Checks whether this has roughly the same coordinates as that */
-Point.prototype.sitsRoughlyOn = function (that) {
-  if (that instanceof Point !== true)
-    this.raise.warning('Called `Point.sitsRoughlyOn(that)` but `that` is not a `Point` object')
-  this.check()
-  that.check()
-  if (Math.round(this.x) === Math.round(that.x) && Math.round(this.y) === Math.round(that.y))
-    return true
-  else return false
-}
-
-/** Shifts this point fraction of the distance towards that point */
-Point.prototype.shiftFractionTowards = function (that, fraction) {
-  if (that instanceof Point !== true)
-    this.raise.warning(
-      'Called `Point.shiftFractionTowards(that, fraction)` but `that` is not a `Point` object'
-    )
-  if (typeof fraction !== 'number')
-    this.raise.warning('Called `Point.shiftFractionTowards` but `fraction` is not a number')
-  this.check()
-  that.check()
-
-  return this.shiftTowards(that, this.dist(that) * fraction)
-}
-
-/** Shifts this point distance beyond that point */
-Point.prototype.shiftOutwards = function (that, distance) {
-  if (that instanceof Point !== true)
-    this.raise.warning(
-      'Called `Point.shiftOutwards(that, distance)` but `that` is not a `Point` object'
-    )
-  if (typeof distance !== 'number')
-    this.raise.warning(
-      'Called `Point.shiftOutwards(that, distance)` but `distance` is not a number'
-    )
-  this.check()
-  that.check()
-
-  return this.shiftTowards(that, this.dist(that) + distance)
-}
-
-/** Returns a deep copy of this */
+/**
+ * returns an deel clone of this Point (including coordinates)
+ *
+ * @return {Point} clone - The cloned Point instance
+ */
 Point.prototype.clone = function () {
-  this.check()
-  const clone = new Point(this.x, this.y, this.debug).withRaise(this.raise)
+  this.__check()
+  const clone = new Point(this.x, this.y).__withLog(this.log)
   clone.attributes = this.attributes.clone()
 
   return clone
 }
 
-/** Applies a translate transform */
+/**
+ * returns an copy of this Point (coordinates only)
+ *
+ * @return {Point} copy - The copied Point instance
+ */
+Point.prototype.copy = function () {
+  return new Point(this.__check().x, this.y).__withLog(this.log)
+}
+
+/**
+ * Returns the distance between this Point and that Point
+ *
+ * @param {Point} that - The Point instance to calculate the distance to
+ * @return {float} distance - The distance between this Point and that Point
+ */
+Point.prototype.dist = function (that) {
+  const dx = this.__check().x - that.__check().x
+  const dy = this.y - that.y
+
+  return Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2))
+}
+
+/**
+ * Returns the distance along the X-axis between this Point and that Point (delta X)
+ *
+ * @param {Point} that - The Point to which to calcuate the X delta
+ * @return {float} slote - The X delta
+ */
+Point.prototype.dx = function (that) {
+  return that.__check().x - this.__check().x
+}
+
+/**
+ * Returns the distance along the Y-axis between this Point and that Point (delta Y)
+ *
+ * @param {Point} that - The Point to which to calcuate the Y delta
+ * @return {float} slote - The Y delta
+ */
+Point.prototype.dy = function (that) {
+  return that.__check().y - this.__check().y
+}
+
+/**
+ * Mirrors this Point around the X value of that Point
+ *
+ * @param {Point} that - The Point to flip around
+ * @return {Point} flopped - The new flipped Point instance
+ */
+Point.prototype.flipX = function (that = false) {
+  this.__check()
+  if (that) {
+    if (that instanceof Point !== true)
+      this.log.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
+    that.__check()
+  }
+  if (that === false || that.x === 0) return new Point(this.x * -1, this.y).__withLog(this.log)
+  else return new Point(that.x + this.dx(that), this.y).__withLog(this.log)
+}
+
+/**
+ * Mirrors this Point around the Y value of that Point
+ *
+ * @param {Point} that - The Point to flip around
+ * @return {Point} flipped - The new flipped Point instance
+ */
+Point.prototype.flipY = function (that = false) {
+  this.__check()
+  if (that) {
+    if (that instanceof Point !== true)
+      this.log.warning('Called `Point.flipY(that)` but `that` is not a `Point` object')
+    that.__check()
+  }
+  if (that === false || that.y === 0) return new Point(this.x, this.y * -1).__withLog(this.log)
+  else return new Point(this.x, that.y + this.dy(that)).__withLog(this.lo)
+}
+
+/**
+ * Rotate this Point deg around that Point
+ *
+ * @param {float} deg - The degrees to rotate
+ * @param {Point} that - The Point instance to rotate around
+ * @return {Point} rotated - The rotated Point instance
+ */
+Point.prototype.rotate = function (deg, that) {
+  if (typeof deg !== 'number')
+    this.log.warning('Called `Point.rotate(deg,that)` but `deg` is not a number')
+  if (that instanceof Point !== true)
+    this.log.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
+  const radius = this.__check().dist(that.__check())
+  const angle = this.angle(that)
+  const x = that.x + radius * Math.cos(deg2rad(angle + deg)) * -1
+  const y = that.y + radius * Math.sin(deg2rad(angle + deg))
+
+  return new Point(x, y).__withLog(this.log)
+}
+
+/**
+ * A chainable way to add a circle at a Point
+ *
+ * @param {float} radius - The circle radius
+ * @param {string} className - The CSS classes to apply to the circle
+ * @return {Point} this - The Point instance
+ */
+Point.prototype.setCircle = function (radius = false, className = false) {
+  if (radius) this.attributes.set('data-circle', radius)
+  if (className) this.attributes.set('data-circle-class', className)
+
+  return this.__check()
+}
+
+/**
+ * A chainable way to add text to a Point
+ *
+ * @param {string} text - The text to add to the Point
+ * @param {string} className - The CSS classes to apply to the text
+ * @return {Point} this - The Point instance
+ */
+Point.prototype.setText = function (text = '', className = false) {
+  this.attributes.set('data-text', text)
+  if (className) this.attributes.set('data-text-class', className)
+
+  return this.__check()
+}
+
+/**
+ * Shifts this Point distance in the deg direction
+ *
+ * @param {float} deg - The angle to shift towards
+ * @param {float} dist - The distance to shift
+ * @return {Point} shifted - The new shifted Point instance
+ */
+Point.prototype.shift = function (deg, dist) {
+  if (typeof deg !== 'number') this.log.warning('Called `Point.shift` but `deg` is not a number')
+  if (typeof dist !== 'number')
+    this.log.warning('Called `Point.shift` but `distance` is not a number')
+  let p = this.__check().copy()
+  p.x += dist
+
+  return p.rotate(deg, this)
+}
+
+/**
+ * Shifts this Point a fraction in the direction of that Point
+ *
+ * @param {Point} that - The Point to shift towards
+ * @param {float} fraction - The fraction to shift
+ * @return {Point} shifted - The new shifted Point instance
+ */
+Point.prototype.shiftFractionTowards = function (that, fraction) {
+  if (that instanceof Point !== true)
+    this.log.warning(
+      'Called `Point.shiftFractionTowards(that, fraction)` but `that` is not a `Point` object'
+    )
+  if (typeof fraction !== 'number')
+    this.log.warning('Called `Point.shiftFractionTowards` but `fraction` is not a number')
+
+  return this.__check().shiftTowards(that.__check(), this.dist(that) * fraction)
+}
+
+/**
+ * Shifts this Point outwards from that Point
+ *
+ * @param {Point} that - The Point to shift outwards from
+ * @param {float} distance - The distance to shift
+ * @return {Point} shifted - The new shifted Point instance
+ */
+Point.prototype.shiftOutwards = function (that, distance) {
+  if (that instanceof Point !== true)
+    this.log.warning(
+      'Called `Point.shiftOutwards(that, distance)` but `that` is not a `Point` object'
+    )
+  if (typeof distance !== 'number')
+    this.log.warning('Called `Point.shiftOutwards(that, distance)` but `distance` is not a number')
+  this.__check()
+  that.__check()
+
+  return this.__check().shiftTowards(that.__check(), this.dist(that) + distance)
+}
+
+/**
+ * Shifts this Point distance in the direction of that Point
+ *
+ * @param {Point} that - The Point to short towards
+ * @param {float} dist - The distance to shift
+ * @return {Point} shifted - The new shifted Point instance
+ */
+Point.prototype.shiftTowards = function (that, dist) {
+  if (typeof dist !== 'number')
+    this.log.warning('Called `Point.shiftTowards` but `distance` is not a number')
+  if (that instanceof Point !== true)
+    this.log.warning(
+      'Called `Point.shiftTowards(that, distance)` but `that` is not a `Point` object'
+    )
+
+  return this.__check().shift(this.angle(that.__check()), dist)
+}
+
+/**
+ * Checks whether this Point has the same coordinates as that Point
+ *
+ * @param {Point} that - The Point to compare coordinates with
+ * @return {bool} result - True if the Points' coordinates match, false when they do not
+ */
+Point.prototype.sitsOn = function (that) {
+  if (that instanceof Point !== true)
+    this.log.warning('Called `Point.sitsOn(that)` but `that` is not a `Point` object')
+  if (this.__check().x === that.__check().x && this.y === that.y) return true
+  else return false
+}
+
+/**
+ * Checks whether this Point has roughtly the same coordinates as that Point
+ *
+ * @param {Point} that - The Point to compare coordinates with
+ * @return {bool} result - True if the Points' coordinates roughty match, false when they do not
+ */
+Point.prototype.sitsRoughlyOn = function (that) {
+  if (that instanceof Point !== true)
+    this.log.warning('Called `Point.sitsRoughlyOn(that)` but `that` is not a `Point` object')
+  if (
+    Math.round(this.__check().x) === Math.round(that.__check().x) &&
+    Math.round(this.y) === Math.round(that.y)
+  )
+    return true
+  else return false
+}
+
+/**
+ * Returns slope of a line made by this Point and that Point
+ *
+ * @param {Point} that - The Point that forms the line together with this Point
+ * @return {float} slote - The slope of the line made by this Point and that Point
+ */
+Point.prototype.slope = function (that) {
+  return (that.__check().y - this.__check().y) / (that.x - this.x)
+}
+
+/**
+ * Returns a Point instance with a translate transform applied
+ *
+ * @param {float} x - The X-value of the translate transform
+ * @param {float} y - The Y-value of the translate transform
+ * @return {Point} translated - The translated Point instance
+ */
 Point.prototype.translate = function (x, y) {
-  this.check()
+  this.__check()
   if (typeof x !== 'number')
-    this.raise.warning('Called `Point.translate(x,y)` but `x` is not a number')
+    this.log.warning('Called `Point.translate(x,y)` but `x` is not a number')
   if (typeof y !== 'number')
-    this.raise.warning('Called `Point.translate(x,y)` but `y` is not a number')
+    this.log.warning('Called `Point.translate(x,y)` but `y` is not a number')
   const p = this.copy()
   p.x += x
   p.y += y
@@ -232,18 +321,67 @@ Point.prototype.translate = function (x, y) {
   return p
 }
 
-/** Chainable way to set the data-text property (and optional class) */
-Point.prototype.setText = function (text = '', className = false) {
-  this.attributes.set('data-text', text)
-  if (className) this.attributes.set('data-text-class', className)
+//////////////////////////////////////////////
+//            PRIVATE METHODS               //
+//////////////////////////////////////////////
+
+/**
+ * Checks the Points coordinates, and raises a warning when they are invalid
+ *
+ * @private
+ * @return {object} this - The Point instance
+ */
+Point.prototype.__check = function () {
+  if (typeof this.x !== 'number') this.log.warning('X value of `Point` is not a number')
+  if (typeof this.y !== 'number') this.log.warning('Y value of `Point` is not a number')
 
   return this
 }
 
-/** Chainable way to set the data-circle property (and optional class) */
-Point.prototype.setCircle = function (radius = false, className = false) {
-  if (radius) this.attributes.set('data-circle', radius)
-  if (className) this.attributes.set('data-circle-class', className)
+/**
+ * Adds a logging instance so the Point can log
+ *
+ * @private
+ * @param {object} log - An object holding the logging methods
+ * @return {object} this - The Point instance
+ */
+Point.prototype.__withLog = function (log = false) {
+  if (log) Object.defineProperty(this, 'log', { value: log })
 
   return this
+}
+
+//////////////////////////////////////////////
+//        PUBLIC STATIC METHODS             //
+//////////////////////////////////////////////
+
+/**
+ * Returns a ready-to-proxy that logs when things aren't exactly ok
+ *
+ * @private
+ * @param {object} points - The points object to proxy
+ * @param {object} log - The logging object
+ * @return {object} proxy - The object that is ready to be proxied
+ */
+export function pointsProxy(points, log) {
+  return {
+    get: function (...args) {
+      return Reflect.get(...args)
+    },
+    set: (points, name, value) => {
+      // Constructor checks
+      if (value instanceof Point !== true)
+        log.warning(`\`points.${name}\` was set with a value that is not a \`Point\` object`)
+      if (value.x == null || !__isCoord(value.x))
+        log.warning(`\`points.${name}\` was set with a \`x\` parameter that is not a \`number\``)
+      if (value.y == null || !__isCoord(value.y))
+        log.warning(`\`points.${name}\` was set with a \`y\` parameter that is not a \`number\``)
+      try {
+        value.name = name
+      } catch (err) {
+        log.warning(`Could not set \`name\` property on \`points.${name}\``)
+      }
+      return (points[name] = value)
+    },
+  }
 }
