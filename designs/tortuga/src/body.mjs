@@ -19,7 +19,7 @@ function draftTortugaBody({
   const DEBUG = true
   const DEBUG_POINTS = false
 
-  //  const RIGHT = 0
+  const RIGHT = 0
   const LEFT = 180
   const UP = 90
   const DOWN = -90
@@ -31,7 +31,8 @@ function draftTortugaBody({
 
   // By default, the garment width is based on shoulder-to-shoulder
   const multipleShoulderWidth =
-    measurements.shoulderToShoulder + measurements.shoulderToShoulder * options.garmentWidth
+    measurements.shoulderToShoulder +
+    (measurements.shoulderToShoulder * options.garmentWidth)
   let width = multipleShoulderWidth
   let widthMeasurementUsed = 'Multiple Shoulder-to-shoulder width'
   if (DEBUG) log.debug('Multiple shoulder width: ' + multipleShoulderWidth)
@@ -133,14 +134,15 @@ function draftTortugaBody({
   // Armscye
 
   const armscyeLength = measurements.biceps * options.armscyeLength
-  points.armscyeBottomLeft = points.topLeft.shiftTowards(points.bottomLeft, armscyeLength)
-  points.armscyeBottomRight = points.topRight.shiftTowards(points.bottomRight, armscyeLength)
+  points.armscyeBottomLeft = points.topLeft
+    .shiftTowards(points.bottomLeft, armscyeLength)
+  points.armscyeBottomRight = points.topRight
+    .shiftTowards(points.bottomRight, armscyeLength)
 
-  points.armscyeBottomLeftSingle = points.topLeft.shiftTowards(points.topLeftSingle, armscyeLength)
-  points.armscyeBottomRightSingle = points.topRight.shiftTowards(
-    points.topRightSingle,
-    armscyeLength
-  )
+  points.armscyeBottomLeftSingle = points.topLeft
+    .shiftTowards(points.topLeftSingle, armscyeLength)
+  points.armscyeBottomRightSingle = points.topRight
+    .shiftTowards(points.topRightSingle, armscyeLength)
 
   //------------------------------------------------
   // Side Vents
@@ -149,10 +151,14 @@ function draftTortugaBody({
   points.sideVentTopLeft = points.bottomLeft.shift(UP, sideVentLength)
   points.sideVentTopRight = points.bottomRight.shift(UP, sideVentLength)
 
-  points.sideVentTopLeftSingle = points.topLeftSingle.shift(DOWN, sideVentLength)
-  points.sideVentTopRightSingle = points.topRightSingle.shift(DOWN, sideVentLength)
-  points.sideVentTopLeftBack = points.bottomLeftBack.shift(UP, sideVentLength)
-  points.sideVentTopRightBack = points.bottomRightBack.shift(UP, sideVentLength)
+  points.sideVentTopLeftSingle = points.topLeftSingle
+    .shift(DOWN, sideVentLength)
+  points.sideVentTopRightSingle = points.topRightSingle
+    .shift(DOWN, sideVentLength)
+  points.sideVentTopLeftBack = points.bottomLeftBack
+    .shift(UP, sideVentLength)
+  points.sideVentTopRightBack = points.bottomRightBack
+    .shift(UP, sideVentLength)
 
   //------------------------------------------------
   // Other Paths
@@ -164,6 +170,7 @@ function draftTortugaBody({
     .line(points.topRight)
     .line(points.topLeft)
     .close()
+    .hide()
 
   paths.sideSeamLeft = new Path()
     .move(points.armscyeBottomLeft)
@@ -185,7 +192,9 @@ function draftTortugaBody({
     .line(points.sideVentTopRight)
     .attr('class', 'fabric dashed')
 
-  paths.bottom = new Path().move(points.bottomLeft).line(points.bottomRight).attr('class', 'fabric')
+  paths.bottom = new Path()
+    .move(points.bottomLeft)
+    .line(points.bottomRight).attr('class', 'fabric')
 
   if (frontLength != backLength) {
     paths.sideVentLeftBack = new Path()
@@ -246,6 +255,7 @@ function draftTortugaBody({
       .line(points.topRightSingle)
       .line(points.topLeftSingle)
       .close()
+      .hide()
 
     paths.sideVentLeftSingle = new Path()
       .move(points.topLeftSingle)
@@ -297,11 +307,15 @@ function draftTortugaBody({
       scale: scale,
     })
 
-    points.logo = points.chestSlitBottom.shiftFractionTowards(points.bottomLeft, 0.4)
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', scale)
+    points.logo = points.chestSlitBottom
+      .shiftFractionTowards(points.bottomLeft, 0.4)
+    snippets.logo = new Snippet('logo', points.logo)
+      .attr('data-scale', scale)
 
-    points.grainlineTop = points.topRight.shift(DOWN, frontLength / 10).shift(LEFT, width / 10)
-    points.grainlineBottom = points.grainlineTop.shift(DOWN, frontLength * 0.6)
+    points.grainlineTop = points.topRight
+      .shift(DOWN, frontLength / 10).shift(LEFT, width / 10)
+    points.grainlineBottom = points.grainlineTop
+      .shift(DOWN, frontLength * 0.6)
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
@@ -314,24 +328,33 @@ function draftTortugaBody({
     snippets.neckSlitLeftNotch = new Snippet('notch', points.neckSlitLeft)
     snippets.neckSlitrightNotch = new Snippet('notch', points.neckSlitRight)
     snippets.chestSlitTopNotch = new Snippet('notch', points.chestSlitTop)
-    snippets.chestSlitBottomNotch = new Snippet('notch', points.chestSlitBottom)
+    snippets.chestSlitBottomNotch =
+      new Snippet('notch', points.chestSlitBottom)
 
     snippets.armScyeTopLeftNotch = new Snippet('notch', points.topLeft)
     snippets.armScyeTopRightNotch = new Snippet('notch', points.topRight)
-    snippets.armScyeBottomLeftNotch = new Snippet('notch', points.armscyeBottomLeft)
-    snippets.armScyeBottomRightNotch = new Snippet('notch', points.armscyeBottomRight)
+    snippets.armScyeBottomLeftNotch =
+      new Snippet('notch', points.armscyeBottomLeft)
+    snippets.armScyeBottomRightNotch =
+      new Snippet('notch', points.armscyeBottomRight)
 
     if (options.singleFrontBack) {
-      snippets.armScyeBottomLeftSingleNotch = new Snippet('notch', points.armscyeBottomLeftSingle)
-      snippets.armScyeBottomRightSingleNotch = new Snippet('notch', points.armscyeBottomRightSingle)
+      snippets.armScyeBottomLeftSingleNotch =
+        new Snippet('notch', points.armscyeBottomLeftSingle)
+      snippets.armScyeBottomRightSingleNotch =
+        new Snippet('notch', points.armscyeBottomRightSingle)
     }
 
-    snippets.sideVentTopLeftNotch = new Snippet('notch', points.sideVentTopLeft)
-    snippets.sideVentTopRightNotch = new Snippet('notch', points.sideVentTopRight)
+    snippets.sideVentTopLeftNotch =
+      new Snippet('notch', points.sideVentTopLeft)
+    snippets.sideVentTopRightNotch =
+      new Snippet('notch', points.sideVentTopRight)
 
     if (frontLength != backLength) {
-      snippets.sideVentTopLeftBackNotch = new Snippet('bnotch', points.sideVentTopLeftBack)
-      snippets.sideVentTopRightBackNotch = new Snippet('bnotch', points.sideVentTopRightBack)
+      snippets.sideVentTopLeftBackNotch =
+        new Snippet('bnotch', points.sideVentTopLeftBack)
+      snippets.sideVentTopRightBackNotch =
+        new Snippet('bnotch', points.sideVentTopRightBack)
       points.bottomCenterFront = new Point(0, points.bottomLeft.y)
         .attr('data-text', 'Front bottom')
         .attr('data-text-class', 'right fill-note')
@@ -341,19 +364,19 @@ function draftTortugaBody({
     }
 
     if (options.singleFrontBack) {
-      snippets.sideVentTopLeftSingleNotch = new Snippet('notch', points.sideVentTopLeftSingle)
-      snippets.sideVentTopRightSingleNotch = new Snippet('notch', points.sideVentTopRightSingle)
-    }
-
-    if (sa) {
-      //      paths.sa = paths.cutline.offset(-sa).attr('class', 'fabric sa')
+      snippets.sideVentTopLeftSingleNotch =
+        new Snippet('notch', points.sideVentTopLeftSingle)
+      snippets.sideVentTopRightSingleNotch =
+        new Snippet('notch', points.sideVentTopRightSingle)
     }
 
     if (DEBUG_POINTS) {
       for (const p in points) {
         if (p.indexOf('_') > -1) continue
         if (p.indexOf('title') > -1) continue
-        points[p].attr('data-circle', 2).attr('data-circle-class', 'fill-note')
+        points[p]
+          .attr('data-circle', 2)
+          .attr('data-circle-class', 'fill-note')
         points[p + 'label'] = points[p]
           .shiftTowards(points.center, 15)
           .attr('data-text', '(' + p + ')')
@@ -366,58 +389,91 @@ function draftTortugaBody({
   if (paperless) {
     // Dimensions
     let topSeamY = points.topRight.y
-    if (options.singleFrontBack) topSeamY = points.topRightSingle.y
+    let bottomSeamY = points.bottomLeftBack.y
+    let rightSeamX = points.topRight.x
+    let leftSeamX = points.topLeft.x
 
     // Garment width
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + (sa + 15),
+      y: bottomSeamY + (sa + (15 * 2)),
+    })
+    // Half garment width
+    macro('hd', {
+      from: points.bottomLeftBack,
+      to: new Point(0, points.bottomLeftBack.y),
+      y: bottomSeamY + (sa + 15),
     })
     // Garment length
     if (options.singleFrontBack) {
       // Full length
       macro('vd', {
-        from: points.bottomRight,
-        to: points.topRightSingle,
-        x: points.topRight.x + (sa + 15),
+        from: points.topRightSingle,
+        to: points.bottomRight,
+        x: rightSeamX + (sa + 15 * 2),
       })
       macro('vd', {
-        from: points.topLeftSingle,
-        to: points.topLeft,
-        x: points.topLeft.x - (sa + 15),
+        from: points.topRightSingle,
+        to: points.topRight,
+        x: rightSeamX + (sa + 15),
+      })
+      macro('vd', {
+        from: points.topRight,
+        to: points.bottomRight,
+        x: rightSeamX + (sa + 15),
       })
     } else {
       macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.topRight.x + (sa + 15),
+        from: points.topRight,
+        to: points.bottomRight,
+        x: rightSeamX + (sa + 15),
       })
+      if (frontLength != backLength) {
+        macro('vd', {
+          from: points.topRight,
+          to: points.bottomRightBack,
+          x: rightSeamX + (sa + (15 * 2)),
+        })
+      }
     }
     // Shoulder right
     macro('hd', {
-      from: points.topRight,
-      to: points.neckSlitRight,
+      from: points.neckSlitRight,
+      to: points.topRight,
       y: topSeamY - (sa + 15),
     })
     // Neck slit right
     macro('hd', {
-      from: points.neckSlitRight,
-      to: points.chestSlitTop,
-      y: topSeamY - (sa + 15),
-    })
-    // Half garment width
-    macro('hd', {
       from: points.chestSlitTop,
-      to: points.topLeft,
+      to: points.neckSlitRight,
       y: topSeamY - (sa + 15),
     })
-    // chest slit
+    // Chest slit
     macro('vd', {
       from: points.chestSlitTop,
       to: points.chestSlitBottom,
-      x: points.topLeft.x - (sa + 15),
+      x: points.chestSlitTop.x - (sa + 15),
     })
+    // Armscye
+    macro('vd', {
+      from: points.topLeft,
+      to: points.armscyeBottomLeft,
+      x: leftSeamX - (sa + 15),
+    })
+    // Side slit
+    macro('vd', {
+      from: points.sideVentTopLeft,
+      to: points.bottomLeft,
+      x: leftSeamX - (sa + 15),
+    })
+    if (frontLength != backLength) {
+      macro('vd', {
+        from: points.sideVentTopLeftBack,
+        to: points.bottomLeftBack,
+        x: leftSeamX - (sa + (15 * 2)),
+      })
+    }
   }
 
   return part
@@ -491,10 +547,6 @@ export const body = {
     sleeveLength: { pct: 10, min: 0, max: 50, menu: 'sleeve' },
     // Width of sleeve, as percent added to biceps.
     sleeveWidth: { pct: 30, min: 10, max: 100, menu: 'sleeve' },
-    // Length of sleeve that is the shoulder-cap section of the body
-    // part (as opposed to the sleeve part), as percentage of
-    // HPS-to-wrist length.
-    shoulderSleeveLength: { pct: 0, min: 0, max: 100, menu: 'sleeve' },
     // Length of armscye, as percent of biceps circumference.
     armscyeLength: { pct: 100, min: 80, max: 120, menu: 'sleeve' },
     // Length of underarm gusset square hypoteneuse, as percentage of
