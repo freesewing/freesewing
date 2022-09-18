@@ -6,7 +6,13 @@
  */
 export function Hooks() {
   return {
+    preInit: [],
+    postInit: [],
     preDraft: [],
+    preSetDraft: [],
+    prePartDraft: [],
+    postPartDraft: [],
+    postSetDraft: [],
     postDraft: [],
     preSample: [],
     postSample: [],

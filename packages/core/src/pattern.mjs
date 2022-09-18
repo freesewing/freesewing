@@ -80,12 +80,13 @@ Pattern.prototype.addPart = function (part) {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.draft = function () {
-  // Late-stage initialization
   this.init()
+  this.__runHooks('preDraft')
 
   // Iterate over the provided sets of settings (typically just one)
   for (const set in this.settings) {
-    // Set store
+    this.activeSet = set
+    this.__runHooks('preSetDraft')
     this.stores[set].log.debug(`📐 Drafting pattern (set ${set})`)
 
     // Create parts container
@@ -94,7 +95,6 @@ Pattern.prototype.draft = function () {
     // Handle snap for pct options
     this.__loadAbsoluteOptionsSet(set)
 
-    this.__runHooks('preDraft')
     for (const partName of this.config.draftOrder) {
       // Create parts
       this.stores[set].log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
@@ -116,8 +116,11 @@ Pattern.prototype.draft = function () {
       if (this.__needs(partName, set)) {
         // Draft part
         if (typeof this.__parts?.[partName]?.draft === 'function') {
+          this.activePart = partName
           try {
+            this.__runHooks('prePartDraft')
             const result = this.__parts[partName].draft(this.parts[set][partName].shorthand())
+            this.__runHooks('postPartDraft')
             if (typeof result === 'undefined') {
               this.stores[set].log.error(
                 `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
@@ -143,8 +146,9 @@ Pattern.prototype.draft = function () {
         this.parts[set][partName].hidden = true
       }
     }
-    this.__runHooks('postDraft')
+    this.__runHooks('postSetDraft')
   }
+  this.__runHooks('postDraft')
 
   return this
 }
@@ -215,6 +219,7 @@ Pattern.prototype.getRenderProps = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.init = function () {
+  this.__runHooks('preInit')
   /*
    * We allow late-stage updating of the design config (adding parts for example)
    * so we need to do the things we used to do in the contructor at a later stage.
@@ -237,6 +242,7 @@ Pattern.prototype.init = function () {
       )}\` pattern using \`@freesewing/core:${version}\``
   )
   this.stores[0].log.info(`Pattern initialized. Draft order is: ${this.__draftOrder.join(', ')}`)
+  this.__runHooks('postInit')
 
   return this
 }

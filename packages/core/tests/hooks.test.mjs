@@ -8,12 +8,18 @@ describe('Hooks', () => {
     const pattern = new Pattern()
     const h = pattern.hooks
     const test = {
+      preInit: [],
+      postInit: [],
       preDraft: [],
+      preSetDraft: [],
+      prePartDraft: [],
+      postPartDraft: [],
+      postSetDraft: [],
       postDraft: [],
-      postLayout: [],
       preSample: [],
       postSample: [],
       preRender: [],
+      postLayout: [],
       postRender: [],
       insertText: [],
     }
