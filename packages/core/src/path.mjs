@@ -532,17 +532,6 @@ Path.prototype.offset = function (distance) {
 }
 
 /**
- * Reveal the path - alias for path.unhide()
- *
- * @return {Path} path - The Path instance
- */
-Path.prototype.reveal = function () {
-  this.unhide()
-
-  return this
-}
-
-/**
  * Returns a reversed version of this Path
  *
  * @return {object} reverse - A Path instance that is the reversed version of this Path
@@ -860,7 +849,7 @@ Path.prototype.trim = function () {
 }
 
 /**
- * Unhide the path - alias for path.reveal()
+ * Unhide the path
  *
  * @return {Path} path - The Path instance
  */

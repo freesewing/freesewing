@@ -83,17 +83,6 @@ Part.prototype.hide = function () {
 }
 
 /**
- * Reveal the part - alias for part.unhide()
- *
- * @return {Part} part - The Part instance
- */
-Part.prototype.reveal = function () {
-  this.unhide()
-
-  return this
-}
-
-/**
  * Set the hidden attribute
  *
  * @param {boolean} hidden - The value to set the hidden property to
@@ -123,7 +112,6 @@ Part.prototype.shorthand = function () {
     macro: this.__macroClosure(),
     paperless,
     part: this,
-    reveal: this.reveal,
     sa,
     scale: this.context.settings?.scale,
     store: this.context.store,
@@ -205,7 +193,7 @@ Part.prototype.shorthand = function () {
 }
 
 /**
- * Unhide the part - alias for part.reveal()
+ * Unhide the part
  *
  * @return {Part} part - The Part instance
  */
