@@ -20,6 +20,7 @@
   "plugin-sprinkle": "A FreeSewing plugin to bulk-add snippets to your pattern",
   "plugin-svgattr": "A FreeSewing plugin to set SVG attributes",
   "plugin-theme": "A FreeSewing plugin that provides a default theme",
+  "plugin-timing": "A FreeSewing plugin to record the time it takes to draft your pattern parts",
   "plugin-title": "A FreeSewing plugin to add a title to your pattern parts",
   "plugin-versionfree-svg": "A FreeSewing plugin to keep version info out of your SVG to allow easy diffs across versions"
 }

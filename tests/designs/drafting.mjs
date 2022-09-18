@@ -1,6 +1,7 @@
 import { adult, doll, giant } from '@freesewing/models'
 import { getFamily, getShortName } from './config.mjs'
 import chai from 'chai'
+import { timingPlugin } from '@freesewing/plugin-timing'
 
 const expect = chai.expect
 
@@ -21,13 +22,13 @@ export const testPatternDrafting = (Pattern, log = false) => {
   const doesItDraftAndRender = (pattern, log = false) => {
     try {
       pattern.draft().render()
-      if (log) console.log(pattern.stores[0].logs)
+      if (log) {
+        console.log(pattern.stores[0].logs)
+      }
       if (pattern.stores[0].logs.error.length < 1) return true
       return false
     } catch (err) {
-      if (log) {
-        console.log(err)
-      }
+      if (log) console.log(err)
 
       return false
     }
@@ -47,7 +48,7 @@ export const testPatternDrafting = (Pattern, log = false) => {
                 doesItDraftAndRender(
                   new Pattern({
                     measurements: adult[type][size],
-                  }),
+                  }).use(timingPlugin),
                   log
                 )
               ).to.equal(true)
