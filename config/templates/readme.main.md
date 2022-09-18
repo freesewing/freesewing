@@ -52,7 +52,7 @@ This repository is our *monorepo* holding all our NPM designs, plugins, other NP
 
 ## We are working on FreeSewing v3 🚀
 
-The default branch (`develop`) in this repo is where we work on the upcoming FreeSewing v2.
+The default branch (`develop`) in this repo is where we work on the upcoming FreeSewing v3.
 Check out [the roadmap](https://github.com/freesewing/freesewing/discussions/1278) to
 see what we're working towards. There is still time to submit your ideas/suggestions for 
 what you would like to see in our mext major release.
