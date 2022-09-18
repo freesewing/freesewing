@@ -8,10 +8,17 @@ function sleevecapDelta(store) {
 }
 
 function sleevecapAdjust(store) {
-  let delta = sleevecapDelta(store)
+  const delta = sleevecapDelta(store)
+  const len = store.get('sleevecapLength')
+  const doverl = delta / len
+  store.set('doverl', doverl)
   let factor = store.get('sleeveFactor')
-  if (delta > 0) factor = factor * 0.98
-  else factor = factor * 1.02
+  if (doverl > 0.1) factor = factor * 0.8
+  if (doverl > 0.02) factor = factor * 0.9
+  else if (doverl < -0.1) factor = factor * 1.3
+  else if (doverl < -0.02) factor = factor * 1.15
+  else if (delta > 0) factor = factor * 0.99
+  else factor = factor * 1.008
   store.set('sleeveFactor', factor)
 }
 
