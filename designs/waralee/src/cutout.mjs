@@ -29,7 +29,7 @@ function waraleeCutout({
     .close()
     .attr('class', 'fabric')
 
-  paths.cutout.setRender(false)
+  paths.cutout.hide()
 
   // Complete?
   if (complete) {
@@ -79,9 +79,8 @@ function waraleeCutout({
       x: points.mWaist.x + 15,
     })
   }
-  part.render = options.showMini
 
-  return part
+  return part.setHidden(!options.showMini)
 }
 
 export const cutout = {

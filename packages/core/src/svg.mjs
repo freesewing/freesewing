@@ -57,16 +57,16 @@ Svg.prototype.render = function (pattern) {
   this.tail = this.__renderTail()
   this.svg = ''
   this.layout = {} // Reset layout
-  for (let partId in pattern.parts) {
-    let part = pattern.parts[partId]
-    if (part.render) {
-      let partSvg = this.__renderPart(part)
-      this.layout[partId] = {
-        svg: partSvg,
-        transform: part.attributes.getAsArray('transform'),
+  for (let stackId in pattern.stacks) {
+    const stack = pattern.stacks[stackId]
+    if (!stack.hidden) {
+      const stackSvg = this.__renderStack(stack)
+      this.layout[stackId] = {
+        svg: stackSvg,
+        transform: stack.attributes.getAsArray('transform'),
       }
-      this.svg += this.__openGroup(`${this.idPrefix}part-${partId}`, part.attributes)
-      this.svg += partSvg
+      this.svg += this.__openGroup(`${this.idPrefix}stack-${stackId}`, stack.attributes)
+      this.svg += stackSvg
       this.svg += this.__closeGroup()
     }
   }
@@ -279,11 +279,11 @@ Svg.prototype.__renderPathText = function (path) {
  * @param {Part} part - The Part instance to render
  * @return {string} svg - The SVG markup for the Part object
  */
-Svg.prototype.__renderPart = function (part) {
-  let svg = ''
+Svg.prototype.__renderPart = function (part, partId) {
+  let svg = this.__openGroup(`${this.idPrefix}part-${partId}`, part.attributes)
   for (let key in part.paths) {
     let path = part.paths[key]
-    if (path.render) svg += this.__renderPath(path)
+    if (!path.hidden) svg += this.__renderPath(path)
   }
   for (let key in part.points) {
     if (part.points[key].attributes.get('data-text')) {
@@ -297,6 +297,7 @@ Svg.prototype.__renderPart = function (part) {
     let snippet = part.snippets[key]
     svg += this.__renderSnippet(snippet, part)
   }
+  svg += this.__closeGroup()
 
   return svg
 }
@@ -342,6 +343,20 @@ Svg.prototype.__renderSnippet = function (snippet) {
   svg += `<use x="${x}" y="${y}" `
   svg += `xlink:href="#${snippet.def}" ${snippet.attributes.render()}>`
   svg += '</use>'
+
+  return svg
+}
+
+/**
+ * Returns SVG markup for a Stack object
+ *
+ * @private
+ * @param {Stack} stack - The Stack instance to render
+ * @return {string} svg - The SVG markup for the Stack object
+ */
+Svg.prototype.__renderStack = function (stack) {
+  let svg = ''
+  for (const part of stack.parts) svg += this.__renderPart(part)
 
   return svg
 }

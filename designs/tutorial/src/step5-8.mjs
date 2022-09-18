@@ -65,14 +65,12 @@ export const step7 = {
       to: points.tipRight,
       via: points.tipRightTop,
       prefix: 'tipRightTop',
-      render: true,
     })
     macro('round', {
       from: points.tipRight,
       to: points.top,
       via: points.tipRightBottom,
       prefix: 'tipRightBottom',
-      render: true,
     })
 
     return part
@@ -111,14 +109,12 @@ export const step8 = {
       to: points.tipRight,
       via: points.tipRightTop,
       prefix: 'tipRightTop',
-      render: true,
     })
     macro('round', {
       from: points.tipRight,
       to: points.top,
       via: points.tipRightBottom,
       prefix: 'tipRightBottom',
-      render: true,
     })
 
     paths.rect = new Path()

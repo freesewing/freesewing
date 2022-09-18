@@ -13,10 +13,7 @@ function pacoCuff({
   macro,
   part,
 }) {
-  if (!options.elasticatedHem) {
-    part.render = false
-    return part
-  }
+  if (!options.elasticatedHem) return part.hide()
 
   let len = store.get('frontAnkle') + store.get('backAnkle')
   points.topLeft = new Point(0, 0)

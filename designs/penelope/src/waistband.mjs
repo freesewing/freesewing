@@ -17,10 +17,7 @@ function penelopeWaistband({
   store,
   part,
 }) {
-  if (!options.waistBand) {
-    part.render = false
-    return part
-  }
+  if (!options.waistBand) return part.hide()
 
   let waist = measurements.waist
   waist += measurements.waist * options.waistEase

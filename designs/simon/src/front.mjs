@@ -110,10 +110,10 @@ function simonFront({
   }
 
   // Paths
-  paths.saBase.render = false
-  paths.saBaseFromHips.render = false
-  paths.saBaseFromArmhole.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.saBaseFromHips.hide()
+  paths.saBaseFromArmhole.hide()
+  paths.hemBase.hide()
   paths.seam = paths.hemBase
     .join(paths.saBase)
     .join(paths.saBaseFromArmhole)

@@ -99,8 +99,8 @@ function shinFront({
     .join(paths.saBase)
   paths.hemBase = new Path().move(points.legSide).curve_(points.legSideCp, points.reducedLegInner)
 
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase.join(paths.hemBase).attr('class', 'fabric')
 

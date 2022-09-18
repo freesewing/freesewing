@@ -27,7 +27,7 @@ function wahidPocketFacing({
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: pw / 8,
-    render: false,
+    hidden: true,
     prefix: 'roundLeft',
   })
   macro('round', {
@@ -35,7 +35,7 @@ function wahidPocketFacing({
     to: points.topRight,
     via: points.bottomRight,
     radius: pw / 8,
-    render: false,
+    hidden: true,
     prefix: 'roundRight',
   })
   paths.seam = new Path()

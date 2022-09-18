@@ -141,8 +141,8 @@ function sandySkirt({
       if (!options.seamlessFullCircle) paths.saBase = paths.saBase.line(points.ex1Rotated)
       paths.saBase = paths.saBase.offset(sa * -1)
 
-      paths.hemBase.render = false
-      paths.saBase.render = false
+      paths.hemBase.hide()
+      paths.saBase.hide()
 
       if (options.seamlessFullCircle) {
         paths.sa = new Path()

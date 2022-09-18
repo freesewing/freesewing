@@ -477,8 +477,8 @@ function titanFront({
         .join(paths.saBase.offset(sa))
         .close()
         .attr('class', 'fabric sa')
-      paths.saBase.render = false
-      paths.hemBase.render = false
+      paths.saBase.hide()
+      paths.hemBase.hide()
     }
 
     if (paperless && options.titanPaperless) {

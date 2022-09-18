@@ -24,12 +24,11 @@ import {
  */
 export function Path() {
   // Enumerable properties
-  this.hide = false
+  this.hidden = false
   this.ops = []
   this.attributes = new Attributes()
   this.topLeft = false
   this.bottomRight = false
-  this.render = true
 
   return this
 }
@@ -158,7 +157,7 @@ Path.prototype.bbox = function () {
  * @return {Path} clone - A clone of this Path instance
  */
 Path.prototype.clone = function () {
-  let clone = new Path().__withLog(this.log).setRender(this.render)
+  let clone = new Path().__withLog(this.log).setHidden(this.hidden)
   if (this.topLeft) clone.topLeft = this.topLeft.clone()
   else clone.topLeft = false
   if (this.bottomRight) clone.bottomRight = this.bottomRight.clone()
@@ -311,6 +310,17 @@ Path.prototype.end = function () {
 
   if (op.type === 'close') return this.start()
   else return op.to
+}
+
+/**
+ * Hide the path
+ *
+ * @return {Path} path - The Path instance
+ */
+Path.prototype.hide = function () {
+  this.hidden = true
+
+  return this
 }
 
 /**
@@ -522,6 +532,17 @@ Path.prototype.offset = function (distance) {
 }
 
 /**
+ * Reveal the path - alias for path.unhide()
+ *
+ * @return {Path} path - The Path instance
+ */
+Path.prototype.reveal = function () {
+  this.unhide()
+
+  return this
+}
+
+/**
  * Returns a reversed version of this Path
  *
  * @return {object} reverse - A Path instance that is the reversed version of this Path
@@ -590,10 +611,15 @@ Path.prototype.setClass = function (className = false) {
   return this
 }
 
-/** FIXME: This should go */
-Path.prototype.setRender = function (render = true) {
-  if (render) this.render = true
-  else this.render = false
+/**
+ * Set the hidden attribute
+ *
+ * @param {boolean} hidden - The value to set the hidden property to
+ * @return {object} this - The Path instance
+ */
+Path.prototype.setHidden = function (hidden = false) {
+  if (hidden) this.hidden = true
+  else this.hidden = false
 
   return this
 }
@@ -833,6 +859,17 @@ Path.prototype.trim = function () {
   return this
 }
 
+/**
+ * Unhide the path - alias for path.reveal()
+ *
+ * @return {Path} path - The Path instance
+ */
+Path.prototype.unhide = function () {
+  this.hidden = false
+
+  return this
+}
+
 //////////////////////////////////////////////
 //            PRIVATE METHODS               //
 //////////////////////////////////////////////
@@ -955,9 +992,6 @@ Path.prototype.__withLog = function (log = false) {
 
   return this
 }
-
-
-
 
 //////////////////////////////////////////////
 //        PUBLIC  STATIC METHODS            //
@@ -1217,8 +1251,9 @@ function shiftAlongBezier(distance, bezier, steps = false) {
       .curve(
         new Point(...Object.values(bezier.points[1])),
         new Point(...Object.values(bezier.points[2])),
-        new Point(...Object.values(bezier.points[3])),
-      ).roughLength()
+        new Point(...Object.values(bezier.points[3]))
+      )
+      .roughLength()
     if (rlen < 2) steps = 20
     else if (rlen < 10) steps = 40
     else if (rlen < 100) steps = 100

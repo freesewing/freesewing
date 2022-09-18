@@ -18,7 +18,7 @@ const pluginRound = ({ Point, points, Path, paths, macro, options, part }) => {
 
     const opts = {
       radius: options.roundRadius,
-      render: options.roundRender,
+      hide: options.roundHide,
     }
 
     macro('round', {
@@ -45,7 +45,7 @@ export const round = {
   after: base,
   options: {
     roundRadius: { count: 10, min: 0, max: 50, menu: 'round' },
-    roundRender: { bool: true, menu: 'round' },
+    roundHide: { bool: false, menu: 'round' },
   },
   plugins: roundPlugin,
   draft: pluginRound,

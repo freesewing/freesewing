@@ -76,8 +76,8 @@ export function draftDianaFrontOrBack({
 
   paths.hemBase = new Path().move(points.cHem).line(points.hem)
 
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.hemBase.join(paths.saBase).line(points.cHem)
 

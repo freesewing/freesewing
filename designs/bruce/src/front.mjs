@@ -130,9 +130,9 @@ function draftBruceFront({
       .move(points.leftTuskRight)
       .line(points.leftTuskLeft)
       .curve(points.curveLeftCpBottom, points.curveLeftCpTop, points.midLeft)
-    paths.seamStart.render = false
-    paths.trimBase.render = false
-    paths.seamEnd.render = false
+    paths.seamStart.hide()
+    paths.trimBase.hide()
+    paths.seamEnd.hide()
     paths.seam = paths.seamStart.join(paths.trimBase).join(paths.seamEnd)
   } else {
     paths.seam = new Path()

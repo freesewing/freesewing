@@ -25,7 +25,6 @@ function draftCarltonUnderSleeve({
     from: points.cuffBottomLeft,
     via: points.cuffBottomRight,
     radius: length / 3,
-    render: true,
     prefix: 'round',
   })
   store.set('underCuffWidth', points.usWristLeft.dist(points.usWristRight))

@@ -31,10 +31,10 @@ function simonYoke({
       clone: true,
     })
     paths.saBase = paths.saBase.join(paths.mirroredSaBase.reverse())
-    paths.mirroredSaBase.setRender(false)
+    paths.mirroredSaBase.hide()
   }
   paths.seam = paths.saBase.clone()
-  paths.saBase.render = false
+  paths.saBase.hide()
   paths.seam = paths.seam.close().attr('class', 'fabric')
 
   // Complete pattern?

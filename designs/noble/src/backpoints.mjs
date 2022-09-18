@@ -3,7 +3,7 @@ import * as options from './options.mjs'
 
 function nobleBackPoints({ points, Path, paths, options, snippets, log, part }) {
   // Hide Bella paths
-  for (let key of Object.keys(paths)) paths[key].render = false
+  for (let key of Object.keys(paths)) paths[key].hide()
   for (let i in snippets) delete snippets[i]
 
   delete points.__titleNr

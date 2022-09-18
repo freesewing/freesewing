@@ -37,7 +37,7 @@ function jaegerBack({
       .pop()
       .line(points.cbHem)
     paths.vent = paths.ventBase.offset(measurements.neck / 10)
-    paths.vent.render = false
+    paths.vent.hide()
     points.ventSlopeStart = utils.lineIntersectsCurve(
       paths.vent.start(),
       paths.vent.start().shift(10, measurements.neck / 5),
@@ -63,7 +63,7 @@ function jaegerBack({
       .pop()
       .line(points.hem)
     paths.vent = paths.ventBase.offset(measurements.neck / -10)
-    paths.vent.render = false
+    paths.vent.hide()
     points.ventSlopeStart = utils.lineIntersectsCurve(
       paths.vent.start(),
       paths.vent.start().shift(170, measurements.neck / 5),
@@ -94,7 +94,7 @@ function jaegerBack({
           .split(points.ventSlopeStart)
           .pop()
       )
-    paths.saBase.render = true
+    paths.saBase.unhide()
   } else {
     paths.saBase = new Path()
       .move(points.hem)
@@ -126,13 +126,13 @@ function jaegerBack({
   } else {
     paths.saBase.curve(points.cbWaistCp2, points.cbHipsCp1, points.cbHips).line(points.cbHem)
   }
-  paths.saBase.render = false
+  paths.saBase.hide()
 
   if (options.backVent === 2) paths.hemBase = new Path().move(points.cbHem).line(paths.vent.end())
   else if (options.backVent === 1)
     paths.hemBase = new Path().move(paths.vent.end()).line(points.hem)
   else paths.hemBase = new Path().move(points.cbHem).line(points.hem)
-  paths.hemBase.render = false
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase.join(paths.hemBase).attr('class', 'fabric')
 

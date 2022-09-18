@@ -70,8 +70,8 @@ function draftHueyFront({
     .line(points.cfHem)
     .attr('class', 'note stroke-xxl')
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).attr('class', 'note stroke-xxl')
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase.clone().join(paths.hemBase).close().attr('class', 'fabric')
 

@@ -43,7 +43,7 @@ export const sleeve = {
     points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
 
     // Paths
-    paths.sleevecap.render = false
+    paths.sleevecap.hide()
     paths.seam = new Path()
       .move(points.bicepsLeft)
       .move(points.wristLeft)

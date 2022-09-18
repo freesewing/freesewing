@@ -222,8 +222,8 @@ function draftCarltonFront({
     .line(points.hemEdge)
     .line(points.flbHem)
   paths.hemBase = new Path().move(points.flbHem).line(points.hem)
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   paths.rollLine = new Path()

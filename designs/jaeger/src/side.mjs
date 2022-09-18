@@ -35,7 +35,6 @@ function jaegerSide({
       .pop()
       .line(points.bsHem)
     paths.vent = paths.ventBase.offset(measurements.neck / -10)
-    //paths.vent.render = false;
     points.ventSlopeStart = utils.lineIntersectsCurve(
       paths.vent.start(),
       paths.vent.start().shift(170, measurements.neck / 5),

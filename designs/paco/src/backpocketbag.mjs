@@ -13,10 +13,7 @@ function pacoBackPocketBag({
   part,
 }) {
   // Don't bother of we're not drafting back pockets
-  if (!options.backPockets) {
-    part.render = false
-    return part
-  }
+  if (!options.backPockets) return part.hide()
 
   // Clean up
   for (const path in paths) delete paths[path]

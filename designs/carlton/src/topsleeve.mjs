@@ -26,7 +26,6 @@ function draftCarltonTopSleeve({
     from: points.cuffBottomLeft,
     via: points.cuffBottomRight,
     radius: length / 3,
-    render: true,
     prefix: 'round',
   })
   store.set('topCuffWidth', points.tsWristLeft.dist(points.tsWristRight))

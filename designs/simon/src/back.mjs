@@ -131,11 +131,11 @@ function simonBack({
   }
 
   const [back, yoke] = paths.backArmhole.split(points.armholeYokeSplit)
-  paths.backArmholeYoke = yoke.setRender(false)
+  paths.backArmholeYoke = yoke.hide()
   // For 1/10 dolls with breasts, this path becomes non-existing so we put a dummy here
   paths.backArmholeBack = back.attributes
-    ? back.setRender(false)
-    : new Path().move(points.armholeYokeSplit).line(points.armholeYokeSplit).setRender(false)
+    ? back.hide()
+    : new Path().move(points.armholeYokeSplit).line(points.armholeYokeSplit).hide()
 
   // We'll re-use this
   const armholeToPitch = new Path()
@@ -151,7 +151,7 @@ function simonBack({
   paths.armhole = armholeToPitch
   if (options.yokeHeight === 0) paths.armhole = paths.armhole.join(paths.backArmhole)
   else paths.armhole = paths.armhole.join(paths.backArmholeBack)
-  paths.armhole.render = false
+  paths.armhole.hide()
 
   if (options.roundBack > 0) {
     points.cbTop = points.cbYoke.shift(90, points.armholePitch.x * options.roundBack)
@@ -170,7 +170,7 @@ function simonBack({
     points.boxPleatLeftBottom = new Point(points.boxPleatLeft.x, points.armholeHollowCp2.y)
     points.boxPleatMidBottom = new Point(points.boxPleatMid.x, points.armholeHollowCp2.y)
     points.boxPleatRightBottom = new Point(points.boxPleatRight.x, points.armholeHollowCp2.y)
-    paths.armhole.setRender(false)
+    paths.armhole.hide()
     paths.armhole = paths.armhole.translate(store.get('boxPleatFold') * 2, 0)
     for (const p of [
       'armholePitch',
@@ -235,8 +235,8 @@ function simonBack({
   else paths.saBase = paths.saBase.line(points.cbYoke)
 
   // Paths
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
   paths.seam = paths.hemBase.join(paths.saBase).close().attr('class', 'fabric')
 
   // Complete pattern?

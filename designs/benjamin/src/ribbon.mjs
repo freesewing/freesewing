@@ -12,10 +12,7 @@ function draftBenjaminRibbon({
   paperless,
   part,
 }) {
-  if (options.adjustmentRibbon) {
-    part.render = false
-    return part
-  }
+  if (options.adjustmentRibbon) return part.hide()
 
   // Points
   points.bottomLeft = new Point(0, 0.5 * store.get('ribbonWidth'))

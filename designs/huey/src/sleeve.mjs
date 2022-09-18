@@ -36,8 +36,8 @@ function draftHueySleeve({
     .move(points.wristLeft)
     .line(points.wristRight)
     .attr('class', 'various stroke-xxl')
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 

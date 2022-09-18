@@ -24,7 +24,7 @@ function hugoPocket({
     .line(points.pocketHem)
     .close()
     .attr('class', 'fabric', true)
-  paths.seam.render = true
+  paths.seam.unhide()
 
   paths.saBase = new Path()
     .move(points.cfRibbing)
@@ -32,7 +32,7 @@ function hugoPocket({
     .line(points.pocketTip)
     ._curve(points.pocketTopCp, points.pocketTop)
     .line(points.pocketCf)
-    .setRender(false)
+    .hide()
 
   store.set('facingWidth', points.pocketHem.dist(points.pocketTip) / 2)
 
@@ -53,11 +53,11 @@ function hugoPocket({
     .line(facing.start())
     .join(facing)
     .attr('class', ' fabric help')
-  paths.facing.render = false
+  paths.facing.hide()
 
   // Complete pattern?
   if (complete) {
-    paths.facing.render = true
+    paths.facing.unhide()
     macro('cutonfold', {
       from: points.pocketCf,
       to: points.cfRibbing,

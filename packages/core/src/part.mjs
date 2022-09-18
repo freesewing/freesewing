@@ -30,8 +30,7 @@ export function Part() {
   utils.__addNonEnumProp(this, 'hooks', new Hooks())
 
   // Enumerable properties
-  this.render = true // FIXME: Replace render with hide
-  this.hide = false // FIXME: Replace render with hide
+  this.hidden = false
   this.attributes = new Attributes()
   this.points = {}
   this.paths = {}
@@ -72,6 +71,41 @@ Part.prototype.getId = function (prefix = '') {
   return prefix + this.freeId
 }
 
+/**
+ * Hide the part
+ *
+ * @return {Part} part - The Part instance
+ */
+Part.prototype.hide = function () {
+  this.hidden = true
+
+  return this
+}
+
+/**
+ * Reveal the part - alias for part.unhide()
+ *
+ * @return {Part} part - The Part instance
+ */
+Part.prototype.reveal = function () {
+  this.unhide()
+
+  return this
+}
+
+/**
+ * Set the hidden attribute
+ *
+ * @param {boolean} hidden - The value to set the hidden property to
+ * @return {Part} this - The Part instance
+ */
+Part.prototype.setHidden = function (hidden = false) {
+  if (hidden) this.hidden = true
+  else this.hidden = false
+
+  return this
+}
+
 /** Returns an object with shorthand access for pattern design */
 /**
  * Returns an object that will be passed to draft method to be destructured
@@ -83,19 +117,19 @@ Part.prototype.shorthand = function () {
   const paperless = this.context.settings?.paperless === true ? true : false
   const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
   const shorthand = {
+    complete,
+    hide: this.hide,
+    log: this.context.store.log,
+    macro: this.__macroClosure(),
+    paperless,
     part: this,
+    reveal: this.reveal,
     sa,
     scale: this.context.settings?.scale,
     store: this.context.store,
-    macro: this.__macroClosure(),
+    unhide: this.unhide,
     units: this.__unitsClosure(),
     utils: utils,
-    complete,
-    paperless,
-    events: this.context.events,
-    log: this.context.store.log,
-    addCut: this.addCut,
-    removeCut: this.removeCut,
   }
   // Add top-level store methods and add a part name parameter
   const partName = this.name
@@ -171,6 +205,17 @@ Part.prototype.shorthand = function () {
 }
 
 /**
+ * Unhide the part - alias for part.reveal()
+ *
+ * @return {Part} part - The Part instance
+ */
+Part.prototype.unhide = function () {
+  this.hidden = false
+
+  return this
+}
+
+/**
  * Returns a value formatted for units set in settings
  *
  * @param {float} input - The value to format
@@ -198,7 +243,7 @@ Part.prototype.__boundary = function () {
   for (let key in this.paths) {
     try {
       let path = this.paths[key].__boundary()
-      if (path.render) {
+      if (!path.hidden) {
         if (path.topLeft.x < topLeft.x) topLeft.x = path.topLeft.x
         if (path.topLeft.y < topLeft.y) topLeft.y = path.topLeft.y
         if (path.bottomRight.x > bottomRight.x) bottomRight.x = path.bottomRight.x

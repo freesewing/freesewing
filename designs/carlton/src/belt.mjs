@@ -28,7 +28,6 @@ function draftCarltonBelt({
     via: points.topLeft,
     prefix: 'roundTop',
     radius: width / 4,
-    render: true,
   })
   macro('round', {
     from: points.topLeft,
@@ -36,7 +35,6 @@ function draftCarltonBelt({
     via: points.bottomLeft,
     prefix: 'roundBottom',
     radius: width / 4,
-    render: true,
   })
 
   // Paths

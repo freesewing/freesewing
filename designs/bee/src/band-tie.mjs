@@ -38,9 +38,7 @@ export const bandTie = {
   }) => {
     // band tie
     if (!options.ties) {
-      if (!options.crossBackTies) {
-        part.render = false
-      }
+      if (!options.crossBackTies) part.hide()
     }
     let bandTieLength
     if (options.crossBackTies)

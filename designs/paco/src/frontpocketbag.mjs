@@ -13,10 +13,7 @@ function pacoFrontPocketBag({
   part,
 }) {
   // Don't bother of we're not drafting front pockets
-  if (!options.frontPockets) {
-    part.render = false
-    return part
-  }
+  if (!options.frontPockets) return part.hide()
 
   // Clean up
   for (const path in paths) delete paths[path]

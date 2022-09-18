@@ -44,7 +44,7 @@ export const front = {
     part,
   }) => {
     // Hide Brian paths
-    for (let key of Object.keys(paths)) paths[key].render = false
+    for (let key of Object.keys(paths)) paths[key].hide()
 
     // Handle stretch
     for (let i in points) points[i].x = points[i].x * (1 - options.stretchFactor)

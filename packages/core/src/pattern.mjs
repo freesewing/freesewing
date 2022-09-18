@@ -128,25 +128,34 @@ Pattern.prototype.draft = function () {
           }
         } else this.stores[set].log.error(`Unable to draft pattern. Part.draft() is not callable`)
         try {
-          this.parts[set][partName].render =
-            this.parts[set][partName].render === false ? false : this.__wants(partName, set)
+          this.parts[set][partName].hidden =
+            this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
         } catch (err) {
           this.stores[set].log.error([
-            `Unable to set \`render\` property on part \`${partName}\``,
+            `Unable to set \`hidden\` property on part \`${partName}\``,
             err,
           ])
         }
       } else {
         this.stores[set].log.debug(
-          `Part \`${partName}\` is not needed. Skipping draft and setting render to \`false\``
+          `Part \`${partName}\` is not needed. Skipping draft and setting hidden to \`true\``
         )
-        this.parts[set][partName].render = false
+        this.parts[set][partName].hidden = true
       }
     }
     this.__runHooks('postDraft')
   }
 
   return this
+}
+
+/**
+ * Return the initialized configuration
+ *
+ * @return {object} config - The initialized config
+ */
+Pattern.prototype.getConfig = function () {
+  return this.init().config
 }
 
 /** Returns props required to render this pattern through
@@ -176,7 +185,7 @@ Pattern.prototype.getRenderProps = function () {
   }))
   props.parts = {}
   for (let p in this.parts) {
-    if (this.parts[p].render) {
+    if (!this.parts[p].hidden) {
       props.parts[p] = {
         paths: this.parts[p].paths,
         points: this.parts[p].points,

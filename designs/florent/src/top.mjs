@@ -135,7 +135,7 @@ function draftFlorentTop({
     .attr('class', 'fabric')
 
   // Uncomment to see the side part here
-  paths.side.render = false
+  paths.side.hide()
 
   if (complete) {
     points.title = new Point(points.midMid.x, points.midFrontCp2.y)

@@ -40,9 +40,7 @@ export const neckTie = {
     part,
   }) => {
     // neck tie
-    if (!options.ties) {
-      part.render = false
-    }
+    if (!options.ties) part.hide()
     let neckTieLength
     if (options.crossBackTies)
       neckTieLength =

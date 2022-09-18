@@ -29,8 +29,8 @@ function draftFlorentBrimInterfacing({
   points.insetStart = paths.inset.shiftAlong(5)
   points.insetEnd = paths.inset.reverse().shiftAlong(5)
   paths.inset = paths.inset.split(points.insetStart).pop().split(points.insetEnd).shift()
-  paths.inset.render = false
-  paths.outset.render = false
+  paths.inset.hide()
+  paths.outset.hide()
 
   paths.hint = paths.seam.clone().attr('class', 'dashed stroke-sm')
   paths.seam = paths.outset

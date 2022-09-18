@@ -32,7 +32,7 @@ export const plugin = {
             this.points[prefix + 'Cp2'],
             this.points[prefix + 'p2']
           )
-          .setRender(false)
+          .hide()
 
         this.points[prefix + 'p2'] = this.paths.auxiliaryPath.intersectsX(0)[0] //the new point p2 is the one in which the auxiliary curve intersects x=0
         this.paths.auxiliaryPath = this.paths.auxiliaryPath.split(this.points[prefix + 'p2'])[0] //the auxiliary curve is split
@@ -51,8 +51,8 @@ export const plugin = {
         .close()
         .attr('class', so.class ? so.class : '')
 
-      if (typeof so.render !== 'undefined' && so.render) this.paths[prefix + 'seam'].render = true
-      else this.paths[prefix + 'seam'].render = false
+      if (so?.hidden) this.paths[prefix + 'seam'].hide()
+      else this.paths[prefix + 'seam'].unhide()
     },
   },
 }

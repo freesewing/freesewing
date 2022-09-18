@@ -45,8 +45,8 @@ function svenFrontBack({
   if (front) paths.hemBase = new Path().move(points.cfHem).line(points.hem)
   else paths.hemBase = new Path().move(points.cbHem).line(points.hem)
 
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.hemBase.join(paths.saBase)
   if (front) paths.seam.line(points.cfHem)

@@ -42,7 +42,8 @@ function yuriBack({
   paths.gussetBase = new Path()
     .move(points.bottom)
     .line(points.armhole)
-    .attr('class', 'note stroke-xxl')
+    .setClass('note stroke-xxl')
+    .hide()
   store.set('gussetLength', paths.gussetBase.length())
   paths.saBase = new Path()
     .move(points.armhole)
@@ -51,14 +52,13 @@ function yuriBack({
     .join(paths.backArmhole)
     .line(points.s3CollarSplit)
     .join(paths.backCollar)
-    .attr('class', 'note stroke-xxl')
+    .setClass('note stroke-xxl')
+    .hide()
   paths.hemBase = new Path()
     .move(points.cbBottom)
     .line(points.bottom)
-    .attr('class', 'note stroke-xxl')
-  paths.gussetBase.render = false
-  paths.saBase.render = false
-  paths.hemBase.render = false
+    .setClass('note stroke-xxl')
+    .hide()
 
   paths.seam = paths.gussetBase
     .join(paths.saBase)

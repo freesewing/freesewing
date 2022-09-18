@@ -13,10 +13,7 @@ function draftBenjaminBow2({
   paperless,
   part,
 }) {
-  if (!options.adjustmentRibbon) {
-    part.render = false
-    return part
-  }
+  if (!options.adjustmentRibbon) return part.hide()
 
   points.bandBottomLeft = points.bandBottomLeft.shift(180, 90)
   points.bandTopLeft = points.bandBottomLeft.flipY()

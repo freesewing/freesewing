@@ -334,10 +334,10 @@ function jaegerFront({
     .line(points.cutawayPoint)
     .curve(points.cutawayPointCp2, points.roundStartCp1, points.roundStart)
     .curve(points.roundCp1, points.roundCp2, points.roundEnd)
-  paths.saBase.render = false
+  paths.saBase.hide()
 
   paths.hemBase = new Path().move(points.roundEnd).line(points.hem)
-  paths.hemBase.render = false
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase.clone().join(paths.hemBase).attr('class', 'fabric')
 

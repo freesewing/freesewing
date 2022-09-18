@@ -25,8 +25,8 @@ function draftDianaSleeve({ sa, points, paths, Path, complete, paperless, macro,
         .join(paths.sleevecap)
         .line(points.wristLeft)
       paths.hemBase = new Path().move(points.wristLeft).line(points.wristRight)
-      paths.saBase.render = false
-      paths.hemBase.render = false
+      paths.saBase.hide()
+      paths.hemBase.hide()
       paths.sa = paths.saBase.offset(sa).join(paths.hemBase.offset(sa * 3))
       paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
     }

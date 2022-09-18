@@ -5,7 +5,7 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
   const bCircle = 0.552284749831
 
   // Hide Bella paths
-  for (let key of Object.keys(paths)) paths[key].render = false
+  for (let key of Object.keys(paths)) paths[key].hide()
   for (let i in snippets) delete snippets[i]
 
   // Remove macros from Bella
@@ -30,11 +30,10 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
   points.armholeDartInside = armholePath.shiftFractionAlong(options.armholeDartPosition)
   points.armholeDartOutside = points.armholeDartInside.clone()
 
-  // paths.armholeTemp = armholePath.clone().setRender(true).attr('class', 'lining')
   let armholePaths = armholePath.split(points.armholeDartInside)
 
-  let armholePathInside = armholePaths[0].clone().setRender(false)
-  let armholePathOutside = armholePaths[1].clone().setRender(false)
+  let armholePathInside = armholePaths[0].clone().hide()
+  let armholePathOutside = armholePaths[1].clone().hide()
   let armholeDartAngle =
     armholePathInside.reverse().shiftAlong(1).angle(armholePathOutside.shiftAlong(1)) - 90
 
@@ -78,13 +77,13 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
     paths.armholeInside = new Path()
       .move(points.armholeDartInside)
       .curve(points.armholeInsidePitchCp2, points.shoulderCp1, points.shoulder)
-      .setRender(false)
+      .hide()
   } else {
     paths.armholeInside = new Path()
       .move(points.armholeDartInside)
       .curve(points.armholeDartInsideCp2, points.armholeInsidePitchCp1, points.armholeInsidePitch)
       .curve(points.armholeInsidePitchCp2, points.shoulderCp1, points.shoulder)
-      .setRender(false)
+      .hide()
   }
 
   let rotateAngle =
@@ -145,7 +144,7 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
     paths.armholeOutside = new Path()
       .move(points.armholeDartOutside)
       .curve(points.armholeDartOutsideCp1, points.armholeOutsidePitchCp2, points.armhole)
-      .setRender(false)
+      .hide()
   } else {
     paths.armholeOutside = new Path()
       .move(points.armholeDartOutside)
@@ -155,14 +154,14 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
         points.armholeOutsidePitch
       )
       .curve(points.armholeOutsidePitchCp1, points.armholeCp2, points.armhole)
-      .setRender(false)
+      .hide()
   }
 
   paths.armholeTempDart = new Path()
     .move(points.armholeDartOutside)
     ._curve(points.armholeDartCpBottom, points.armholeDartTip)
     .curve_(points.armholeDartCpTop, points.armholeDartInside)
-    .setRender(false)
+    .hide()
 
   points.shoulderDartTipCpDownOutside = points.shoulderDartOutside.shiftFractionTowards(
     points.bust,
@@ -186,17 +185,17 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
     .move(points.waistDartLeft)
     .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)
     .line(points.shoulderDartInside)
-    .setRender(false)
+    .hide()
 
   paths.armholeInsideSeam = new Path()
     .move(points.waistDartLeft)
     .curve(points.waistDartLeftCp, points.armholeDartTipCpDownInside, points.armholeDartTip)
-    .setRender(false)
+    .hide()
 
   paths.sOutsideSeam = new Path()
     .move(points.waistDartRight)
     .curve(points.bustAcp, points.shoulderDartTipCpDownOutside, points.shoulderDartOutside)
-    .setRender(false)
+    .hide()
 
   points.waistDartRightCp = points.bustAcp.clone()
 
@@ -204,7 +203,7 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
     .move(points.waistDartLeft)
     .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)
     .line(points.shoulderDartInside)
-    .setRender(false)
+    .hide()
 
   points.waistUpDartLeft = paths.armholeInsideSeam.shiftAlong(
     points.waistDartLeft.dist(points.armholeDartTip) * 0.5
@@ -293,7 +292,7 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
       .move(points.armholeDartOutside)
       .curve(points.armholeCircleOutsideCp1, points.waistCircleOutsideCp1, points.waistUpDartRight)
       .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
-      .setRender(false)
+      .hide()
       .attr('class', 'lining')
     paths.armholeTempCircleInside = new Path()
       .move(points.armholeDartInside)
@@ -303,7 +302,7 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
         points.armholeDartTipInside
       )
       .curve(points.armholeDartTipCpDownInside, points.waistDartLeftCp, points.waistDartLeft)
-      .setRender(false)
+      .hide()
       .attr('class', 'lining')
 
     diff = paths.armholeTempCircleOutside.length() - paths.armholeTempCircleInside.length()

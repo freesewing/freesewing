@@ -38,17 +38,17 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
     .line(separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
     .attr('class', 'help')
 
-  paths.seam.setRender(true)
+  paths.seam.unhide()
 
   // Complete?
   if (complete) {
     macro('scalebox', { at: points.mLeg.shift(-90, 35) })
 
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
-      paths.frontPocket.setRender(true)
+      paths.frontPocket.unhide()
     }
     if (options.backPocket) {
-      paths.backPocket.setRender(true)
+      paths.backPocket.unhide()
     }
 
     if (sa) {
@@ -151,9 +151,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
     }
   }
 
-  part.render = options.showMini
-
-  return part
+  return part.setHidden(!options.showMini)
 }
 
 export const mini = {

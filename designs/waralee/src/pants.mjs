@@ -35,7 +35,7 @@ function waraleePants({
   paths.legFold = paths.leg.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
   paths.backFold = paths.back.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
 
-  paths.seam.setRender(true)
+  paths.seam.unhide()
 
   // Complete?
   if (complete) {
@@ -56,10 +56,10 @@ function waraleePants({
   }
 
   if (options.frontPocket && 'welt' == options.frontPocketStyle) {
-    paths.frontPocket.setRender(true)
+    paths.frontPocket.unhide()
   }
   if (options.backPocket) {
-    paths.backPocket.setRender(true)
+    paths.backPocket.unhide()
   }
 
   // Paperless?
@@ -161,9 +161,7 @@ function waraleePants({
     }
   }
 
-  part.render = options.showMini == false
-
-  return part
+  return part.setHidden(options.showMini != false)
 }
 
 export const pants = {

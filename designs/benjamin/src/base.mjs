@@ -65,7 +65,7 @@ function draftBenjaminBase({
   points.titleAnchor = new Point(points.tip1Top.x, 0)
 
   // Paths
-  paths.cap = new Path().move(points.tip2Bottom)
+  paths.cap = new Path().hide().move(points.tip2Bottom)
   if (options.endStyle === 'straight') {
     paths.cap = new Path().move(points.tip2Bottom).line(points.tip2Top)
   } else if (options.endStyle === 'pointed') {
@@ -87,7 +87,6 @@ function draftBenjaminBase({
     })
     paths.cap = paths.bottomRounded.join(paths.topRounded)
   }
-  paths.cap.render = false
 
   if (options.bowStyle === 'diamond' || options.bowStyle === 'butterfly') {
     const cpl = options.bowStyle === 'diamond' ? bow / 10 : bow / 4

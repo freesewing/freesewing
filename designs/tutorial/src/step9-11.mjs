@@ -50,7 +50,6 @@ export const step10 = {
       to: points.bottomRight,
       via: points.bottomLeft,
       radius: points.bottomRight.x / 4,
-      render: true,
       prefix: 'bottomLeft',
     })
     macro('round', {
@@ -58,7 +57,6 @@ export const step10 = {
       to: points.topRight,
       via: points.bottomRight,
       radius: points.bottomRight.x / 4,
-      render: true,
       prefix: 'bottomRight',
     })
 

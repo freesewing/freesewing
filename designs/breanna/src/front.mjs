@@ -140,7 +140,7 @@ function draftBreannaFront({
 
   // All done. Just set final path properties before we get to SA/final/paperless
   paths.seam.close().attr('class', 'fabric')
-  paths.saBase.close().render = false
+  paths.saBase.close().hide()
 
   // Anchor point
   points.gridAnchor = points.cfNeck.clone()

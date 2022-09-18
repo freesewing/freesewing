@@ -128,7 +128,7 @@ function draftBreannaBack({
 
   paths.seam.close().attr('class', 'fabric')
   paths.saBase.close()
-  paths.saBase.render = false
+  paths.saBase.hide()
 
   // Store data
   if (options.shoulderDart) {

@@ -166,8 +166,8 @@ function simoneFbaFront({
     .split(points.bustSideCut1_rot1)
   paths.fbaAboveDart = toSplit.pop()
   paths.fbaBelowDart = toSplit.pop()
-  paths.fbaAboveDart.render = false
-  paths.fbaBelowDart.render = false
+  paths.fbaAboveDart.hide()
+  paths.fbaBelowDart.hide()
   points.belowDartCpTop_rot1 = paths.fbaBelowDart.ops[1].cp2
   points.belowDartCpBottom_rot1 = paths.fbaBelowDart.ops[1].cp1
   points.aboveDartCpBottom_rot1 = paths.fbaAboveDart.ops[1].cp1 // (only one CP on this part
@@ -392,9 +392,9 @@ function simoneFbaFront({
     .join(paths.saBaseFromArmhole)
     .attr('class', 'fabric')
 
-  paths.saBaseFromHips.render = false
-  paths.saBaseFromArmhole.render = false
-  paths.saBase.render = false
+  paths.saBaseFromHips.hide()
+  paths.saBaseFromArmhole.hide()
+  paths.saBase.hide()
 
   if (complete && sa) {
     paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')

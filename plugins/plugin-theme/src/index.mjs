@@ -37,7 +37,7 @@ export const plugin = {
             : (svg.defs += grid.metric)
           for (const key in svg.pattern.parts) {
             const part = svg.pattern.parts[key]
-            if (part.render && svg.pattern.needs(key)) {
+            if (!part.hidden && svg.pattern.needs(key)) {
               let anchor = new svg.pattern.Point(0, 0)
               if (typeof part.points.gridAnchor !== 'undefined') anchor = part.points.gridAnchor
               else if (typeof part.points.anchor !== 'undefined') anchor = part.points.anchor

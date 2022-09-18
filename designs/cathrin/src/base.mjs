@@ -72,8 +72,8 @@ function draftCathrinBase({ measurements, options, store, points, paths, Point, 
     .line(points.bottomSide)
     .line(points.waistCF)
     .line(points.waistCB)
-  paths.help1.render = false
-  paths.help2.render = false
+  paths.help1.hide()
+  paths.help2.hide()
 
   paths.outline = new Path()
     .move(points.bottomCF)

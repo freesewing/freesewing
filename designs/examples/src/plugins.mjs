@@ -45,7 +45,7 @@ export const plugin_bartackalong = {
     points.e = new Point(20, 10)
     points.f = new Point(30, 10)
 
-    paths.a = new Path().move(points.a).curve(points.b, points.c, points.d).setRender(false)
+    paths.a = new Path().move(points.a).curve(points.b, points.c, points.d).hide()
 
     macro('bartackAlong', {
       path: paths.a,
@@ -70,7 +70,7 @@ export const plugin_bartackfractionalong = {
     points.e = new Point(20, 10)
     points.f = new Point(30, 10)
 
-    paths.a = new Path().move(points.a).curve(points.b, points.c, points.d).setRender(false)
+    paths.a = new Path().move(points.a).curve(points.b, points.c, points.d).hide()
 
     macro('bartackFractionAlong', {
       path: paths.a,
@@ -187,7 +187,6 @@ export const plugin_gore = {
       radius: 60,
       gores: 5,
       extraLength: 20,
-      render: true,
     })
 
     return part
@@ -278,7 +277,6 @@ export const plugin_round = {
       via: points.bottomLeft,
       radius: 10,
       prefix: 'bl',
-      render: true,
     })
     macro('round', {
       from: points.bottomRight,
@@ -286,7 +284,6 @@ export const plugin_round = {
       via: points.topRight,
       radius: 20,
       prefix: 'tr',
-      render: true,
     })
 
     return part

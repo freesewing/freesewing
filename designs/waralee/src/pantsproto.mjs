@@ -122,10 +122,10 @@ function waraleePantsProto({ options, measurements, Point, Path, points, paths, 
     .curve(points.bWaistCrotchCP, points.bHipCrotchCP, points.mHip)
     .split(points.bCutOutHip)
 
-  fPaths[0].setRender(false)
-  fPaths[1].setRender(false)
-  bPaths[0].setRender(false)
-  bPaths[1].setRender(false)
+  fPaths[0].hide()
+  fPaths[1].hide()
+  bPaths[0].hide()
+  bPaths[1].hide()
 
   points.fCutOutHipCp1 = fPaths[1].ops[1].cp1.shiftFractionTowards(points.fCutOutHip, 1.25)
   points.fCutOutHipCp2 = fPaths[1].ops[1].cp1.clone()
@@ -137,20 +137,20 @@ function waraleePantsProto({ options, measurements, Point, Path, points, paths, 
   paths.frontBottomCutOut = new Path()
     .move(points.mHip)
     .curve(points.mHipCp1, points.fCutOutHipCp2, points.fCutOutHip)
-    .setRender(false)
+    .hide()
   paths.backBottomCutOut = new Path()
     .move(points.bCutOutHip)
     .curve(points.bCutOutHipCp1, points.mHipCp2, points.mHip)
-    .setRender(false)
+    .hide()
 
   paths.frontTopCutOut = new Path()
     .move(points.fCutOutHip)
     .curve(points.fCutOutHipCp1, points.fWaistAdjusted, points.fWaistAdjusted)
-    .setRender(false)
+    .hide()
   paths.backTopCutOut = new Path()
     .move(points.bWaistAdjusted)
     .curve(points.bWaistAdjusted, points.bCutOutHipCp2, points.bCutOutHip)
-    .setRender(false)
+    .hide()
 
   points.fWaistSideHem = paths.frontTopCutOut.reverse().shiftAlong(waistBand)
   points.fWaistSideSeam = paths.frontTopCutOut.reverse().shiftAlong(waistBand * 2)
@@ -187,7 +187,7 @@ function waraleePantsProto({ options, measurements, Point, Path, points, paths, 
   paths.frontTopCutOut = new Path()
     .move(points.fCutOutHip)
     .curve(points.fCutOutHipCp1, points.fWaistSideCp2, points.fWaistSideSeam)
-    .setRender(false)
+    .hide()
   if (false == separateWaistband) {
     paths.frontTopCutOut.line(points.fWaistSideHem)
     paths.frontTopCutOut.line(points.fWaistSide)
@@ -200,37 +200,35 @@ function waraleePantsProto({ options, measurements, Point, Path, points, paths, 
   } else {
     paths.backTopCutOut = new Path().move(points.bWaistSideSeam)
   }
-  paths.backTopCutOut
-    .curve(points.bWaistSideCp1, points.bCutOutHipCp2, points.bCutOutHip)
-    .setRender(false)
+  paths.backTopCutOut.curve(points.bWaistSideCp1, points.bCutOutHipCp2, points.bCutOutHip).hide()
 
   paths.cutout = paths.backTopCutOut
     .join(paths.backBottomCutOut)
     .join(paths.frontBottomCutOut)
     .join(paths.frontTopCutOut)
-    .setRender(false)
+    .hide()
 
   paths.waistBack = new Path()
     .move(separateWaistband ? points.bWaistBackOverlapSeam : points.bWaistBackOverlap)
     .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBack)
     // .line(points.bWaistSideTemp) // This is a trick to make the offset() call work. Without it, the offset is crossing the cutout line.
     .line(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
-    .setRender(false)
+    .hide()
   paths.waistFront = new Path()
     .move(separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
     .line(separateWaistband ? points.fWaistFrontOverlapSeam : points.fWaistFrontOverlap)
-    .setRender(false)
+    .hide()
   paths.front = new Path()
     .move(separateWaistband ? points.fWaistFrontOverlapSeam : points.fWaistFrontOverlap)
     .line(points.fHipFrontOverlap)
     .line(points.fLegFrontOverlap)
-    .setRender(false)
+    .hide()
   paths.back = new Path()
     .move(points.bLegBackOverlap)
     .line(points.bHipBackOverlap)
     .line(separateWaistband ? points.bWaistBackOverlapSeam : points.bWaistBackOverlap)
-    .setRender(false)
-  paths.leg = new Path().move(points.fLegFrontOverlap).line(points.bLegBackOverlap).setRender(false)
+    .hide()
+  paths.leg = new Path().move(points.fLegFrontOverlap).line(points.bLegBackOverlap).hide()
 
   paths.seam = paths.waistFront
     .join(paths.front)
@@ -240,7 +238,7 @@ function waraleePantsProto({ options, measurements, Point, Path, points, paths, 
     .join(paths.cutout)
     .close()
     .attr('class', 'fabric')
-    .setRender(false)
+    .hide()
 
   if (options.frontPocket) {
     points.frontPocketTop = points.fWaistSideSeam
@@ -266,7 +264,7 @@ function waraleePantsProto({ options, measurements, Point, Path, points, paths, 
       .line(points.frontPocketTop2)
       .close()
       .attr('class', 'fabric')
-      .setRender(false)
+      .hide()
   }
 
   if (options.backPocket) {
@@ -304,12 +302,10 @@ function waraleePantsProto({ options, measurements, Point, Path, points, paths, 
       .line(points.backPocketRight)
       .close()
       .attr('class', 'fabric')
-      .setRender(false)
+      .hide()
   }
 
-  part.render = false
-
-  return part
+  return part.hide()
 }
 
 export const pantsProto = {

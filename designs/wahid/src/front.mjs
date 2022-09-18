@@ -252,9 +252,9 @@ function wahidFront({
   }
   paths.dart = dartPath(part)
   paths.seam = paths.saBase.join(paths.dart).join(paths.hemBase).close().attr('class', 'fabric')
-  paths.saBase.render = false
-  paths.hemBase.render = false
-  paths.dart.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
+  paths.dart.hide()
   if (complete) {
     // Pocket path
     paths.pocket = new Path()

@@ -39,7 +39,7 @@ function draftBreannaSleeve(params) {
   )
 
   // Paths
-  paths.sleevecap.render = false
+  paths.sleevecap.hide()
   paths.seam = new Path()
     .move(points.bicepsLeft)
     .line(points.wristLeft)

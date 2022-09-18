@@ -689,9 +689,9 @@ describe('Path', () => {
     expect(p1.log()).to.equal('hello')
   })
 
-  it('Should set render to true/false', () => {
-    const p1 = new Path().setRender(false)
-    expect(p1.render).to.equal(false)
+  it('Should set hidden to true/false', () => {
+    const p1 = new Path().setHidden(true)
+    expect(p1.hidden).to.equal(true)
   })
 
   it('Should set class with setClass', () => {

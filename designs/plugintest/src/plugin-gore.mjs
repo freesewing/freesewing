@@ -9,7 +9,6 @@ const pluginGore = ({ points, Point, options, macro, part }) => {
       radius: options.goreRadius,
       gores: options.goreGoreNumber,
       extraLength: options.goreExtraLength,
-      render: true,
     })
   }
   return part

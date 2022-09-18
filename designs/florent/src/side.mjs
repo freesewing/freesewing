@@ -19,7 +19,7 @@ function draftFlorentSide({
   }
 
   paths.seam = paths.side.clone().line(points.foldTop).attr('class', 'fabric')
-  paths.seam.render = true
+  paths.seam.unhide()
 
   if (complete) {
     if (points.__miniscaleMetric) delete points.__miniscaleMetric

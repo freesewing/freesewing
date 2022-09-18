@@ -46,7 +46,7 @@ function hugoBack({
     .line(points.raglanTipBack)
     .join(neckOpeningParts[0].reverse())
   paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
-  paths.saBase.render = false
+  paths.saBase.hide()
 
   // Store neck opening path
   store.set('neckOpeningPartBack', neckOpeningParts[1])

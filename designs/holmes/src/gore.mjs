@@ -27,7 +27,6 @@ function draftHolmesGore({
     gores: options.gores,
     extraLength: ((options.lengthRatio - 0.5) * headCircumference) / 2,
     prefix: 'gore_',
-    render: true,
   })
 
   // Complete?
@@ -47,13 +46,13 @@ function draftHolmesGore({
         .move(points.gore_p1)
         .curve(points.gore_Cp1, points.gore_Cp2, points.gore_p2)
         .offset(sa)
-        .setRender(false)
+        .hide()
       points.sa1 = new Point(points.gore_p3.x - sa * 2, points.gore_p3.y - sa)
       paths.saBase = new Path()
         .move(points.gore_p3)
         .line(points.p0)
         .offset(sa * 2)
-        .setRender(false)
+        .hide()
       paths.sa = new Path()
         .move(points.gore_p1)
         .line(points.gore_p1.shift(0, sa))

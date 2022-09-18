@@ -102,10 +102,10 @@ function wahidBack({
     .join(paths.dart)
     .line(points.hem)
     .attr('class', 'fabric')
-  paths.saBase.render = false
-  paths.hemBase.render = false
-  paths.hemBase.render = false
-  paths.dart.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
+  paths.hemBase.hide()
+  paths.dart.hide()
 
   if (complete) {
     //Grainline

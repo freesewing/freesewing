@@ -136,7 +136,7 @@ function draftCathrinPanels({ measurements, options, store, points, paths, Point
     .close()
     .attr('class', 'fabric')
 
-  paths.outline.render = false
+  paths.outline.hide()
 
   return part
 }

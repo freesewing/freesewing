@@ -58,8 +58,8 @@ function jaegerUnderCollar({
         .line(paths.sa1.end())
         .line(points.collarCbTop)
         .attr('class', 'various sa')
-      paths.sa1.render = false
-      paths.sa2.render = false
+      paths.sa1.hide()
+      paths.sa2.hide()
     }
 
     if (paperless) {

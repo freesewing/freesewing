@@ -31,8 +31,8 @@ function svenSleeve({ store, sa, points, paths, Path, complete, paperless, macro
         .join(paths.sleevecap)
         .line(points.wristLeft)
       paths.hemBase = new Path().move(points.wristLeft).line(points.wristRight)
-      paths.saBase.render = false
-      paths.hemBase.render = false
+      paths.saBase.hide()
+      paths.hemBase.hide()
       paths.sa = paths.saBase.offset(sa).join(paths.hemBase.offset(sa * (options.ribbing ? 1 : 3)))
       paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
     }

@@ -88,7 +88,7 @@ function hugoFront({
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
     .line(points.raglanTipFront)
     .join(neckOpeningParts[0].reverse())
-  paths.saBase.render = false
+  paths.saBase.hide()
   paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
   // FIXME: This pocket path is not getting set on the paths object
   // It's something to do with the paths proxy which -- I assume -- is proxying the wrong object?
@@ -98,7 +98,7 @@ function hugoFront({
     .curve(points.pocketTip, points.pocketTopCp, points.pocketTop)
     .line(points.pocketCf)
     .attr('class', 'fabric help')
-    .setRender(false)
+    .hide()
   // Store shoulder seam length, neck opening path, shoulder slope and raglan length
   store.set('shoulderLength', points.neck.dist(points.shoulder))
   store.set('neckOpeningPartFront', neckOpeningParts[1])
@@ -117,7 +117,6 @@ function hugoFront({
 
   // Complete pattern?
   if (complete) {
-    //paths.pocket.setRender(true)
     macro('cutonfold', {
       from: points.cfNeck,
       to: points.cfRibbing,

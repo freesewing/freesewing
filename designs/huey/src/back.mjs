@@ -50,8 +50,8 @@ function draftHueyBack({
     .join(paths.backCollar)
     .attr('class', 'note stroke-xxl')
   paths.hemBase = new Path().move(points.cbHem).line(points.hem).attr('class', 'note stroke-xxl')
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase
     .clone()

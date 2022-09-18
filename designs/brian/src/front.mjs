@@ -32,7 +32,7 @@ export const front = {
       paths.frontCollar = new Path()
         .move(points.hps)
         .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
-        .setRender(false)
+        .hide()
     } else if (options.s3Collar > 0) {
       // Shift shoulder seam forward on the collar side
       points.s3CollarSplit = utils.curveIntersectsY(
@@ -46,7 +46,7 @@ export const front = {
         .move(points.hps)
         .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
         .split(points.s3CollarSplit)[1]
-        .setRender(false)
+        .hide()
     } else if (options.s3Collar < 0) {
       // Shift shoulder seam backward on the collar side
       points.s3CollarSplit = utils.curveIntersectsY(
@@ -64,14 +64,14 @@ export const front = {
         .join(
           new Path().move(points.hps).curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
         )
-        .setRender(false)
+        .hide()
     }
     if (options.s3Armhole < 0.1 && options.s3Armhole > -0.1) {
       points.s3ArmholeSplit = points.shoulder
       paths.frontArmhole = new Path()
         .move(points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-        .setRender(false)
+        .hide()
     } else if (options.s3Armhole > 0) {
       // Shift shoulder seam forward on the armhole side
       points.s3ArmholeSplit = utils.curveIntersectsY(
@@ -85,7 +85,7 @@ export const front = {
         .move(points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .split(points.s3ArmholeSplit)[0]
-        .setRender(false)
+        .hide()
     } else if (options.s3Armhole < 0) {
       // Shift shoulder seam forward on the armhole side
       points.s3ArmholeSplit = utils.curveIntersectsY(
@@ -108,7 +108,7 @@ export const front = {
             )
             .split(points.s3ArmholeSplit)[0]
         )
-        .setRender(false)
+        .hide()
     }
 
     // Rename cb (center back) to cf (center front)
@@ -130,7 +130,7 @@ export const front = {
       .line(points.s3CollarSplit)
       .join(paths.frontCollar)
 
-    paths.saBase.render = false
+    paths.saBase.hide()
     paths.seam = new Path()
       .move(points.cfNeck)
       .line(points.cfHem)
