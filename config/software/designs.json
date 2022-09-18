@@ -284,7 +284,13 @@
       "difficulty": 1,
       "tags": ["tops", "historic"]
     },
-    "tortuga": "FIXME: A FreeSewing pattern that needs a description",
+    "tortuga": {
+      "description": "A FreeSewing pattern for a pirate shirt",
+      "code": "Benjamin F.",
+      "design": "Benjamin F.",
+      "difficulty": 1,
+      "tags": ["tops", "historic"]
+    },
     "ursula": {
       "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
       "code": "Natalia Sayang",
