@@ -15,9 +15,9 @@ function draftCorneliusPocket({
 }) {
   let halfInch = store.get('halfInch')
 
-  paths.waistSeam = paths.waistSeam.split(points.pocketFacingTL)[0].setRender(false)
+  paths.waistSeam = paths.waistSeam.split(points.pocketFacingTL)[0].hide()
 
-  paths.sideSeam = paths.sideSeam.split(points.pocketFacingBR)[1].setRender(false)
+  paths.sideSeam = paths.sideSeam.split(points.pocketFacingBR)[1].hide()
 
   points.brCPtl = points.pocketFacingBR.shift(
     points.pocketFacingBR.angle(points.pocketSide) + 90,
@@ -31,7 +31,7 @@ function draftCorneliusPocket({
   paths.facingInside = new Path()
     .move(points.pocketFacingTL)
     .curve(points.tlCPbr, points.brCPtl, points.pocketFacingBR)
-    .setRender(false)
+    .hide()
 
   paths.pocketFold = new Path()
     .move(points.pocketTL)
@@ -63,7 +63,7 @@ function draftCorneliusPocket({
     .join(paths.pocketBottom)
     .join(paths.sideSeam)
     .close()
-    .setRender(true)
+    .hide()
     .attr('class', 'fabric')
 
   if (complete) {

@@ -66,7 +66,7 @@ function draftCharlieWaistbandCurved({
   paths.waistbandTop = new Path()
     .move(points.cfRightTop)
     .curve(points.cfRightTopCp, points.cfLeftTopCp, points.cfLeftTop)
-    .setRender(false)
+    .hide()
 
   paths.waistbandBottom = new Path()
     .move(points.cfRightBottom)
@@ -87,8 +87,8 @@ function draftCharlieWaistbandCurved({
     .curve(points.cfRightTopCp, points.cfLeftTopCp, points.cfLeftTop)
     .line(points.cfLeftBottom)
     .close()
-    .setRender(false)
-  paths.seam = paths.saBase.clone().attr('class', 'fabric').setRender(true)
+    .hide()
+  paths.seam = paths.saBase.clone().attr('class', 'fabric').unhide()
 
   if (complete) {
     log.info(`Top of waistband: ${units(paths.waistbandTop.length())}`)

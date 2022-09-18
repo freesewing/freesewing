@@ -39,13 +39,9 @@ function penelopeBack(params) {
       .line(points.vTop)
       .line(points.vLeg)
       .line(points.vHem)
-      .setRender(false)
+      .hide()
 
-    paths.leftSide = new Path()
-      .move(points.lWaist)
-      .line(points.lVent)
-      .join(paths.vent)
-      .setRender(false)
+    paths.leftSide = new Path().move(points.lWaist).line(points.lVent).join(paths.vent).hide()
 
     paths.hem = paths.hem.line(points.vLeg)
   }

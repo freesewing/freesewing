@@ -32,12 +32,12 @@ function nobleFrontOutside({
         points.waistUpDartRight
       )
       .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
-      .setRender(false)
+      .hide()
     paths.armhole = new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
       .curve_(points.armholePitchCp2, points.shoulder)
-      .setRender(false)
+      .hide()
 
     paths.seam = new Path()
       .move(points.waistDartRight)
@@ -53,7 +53,7 @@ function nobleFrontOutside({
       .move(points.armholeDartOutside)
       .curve(points.armholeCircleOutsideCp1, points.waistCircleOutsideCp1, points.waistUpDartRight)
       .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
-      .setRender(false)
+      .hide()
 
     paths.seam = new Path()
       .move(points.waistDartRight)

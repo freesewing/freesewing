@@ -26,8 +26,8 @@ export function draftPanel1ab({
     .join(bottom.split(points.bottomABsplit)[0])
     .line(points.topABsplit)
     .join(top.split(points.topABsplit)[1])
-    .setRender(false)
-  paths.panel1a = paths.panel1a_nonfold.clone().close().attr('class', 'fabric').setRender(true)
+    .hide()
+  paths.panel1a = paths.panel1a_nonfold.clone().close().attr('class', 'fabric').unhide()
   paths.panel1b = bottom
     .split(points.bottomABsplit)[1]
     .curve(points.hipsGap1Cp, points.waistGap1LeftCp1, points.waistGap1Left)

@@ -45,8 +45,8 @@ function draftBruceInset({
     .line(points.tip)
     .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
     .line(points.bottomLeft)
-    .setRender(false)
-  paths.hemBase = new Path().move(points.bottomLeft).line(points.bottomRight).setRender(false)
+    .hide()
+  paths.hemBase = new Path().move(points.bottomLeft).line(points.bottomRight).hide()
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   // Complete pattern?

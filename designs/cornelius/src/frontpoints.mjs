@@ -86,9 +86,9 @@ function draftCorneliusFrontpoints({
     .move(points.pJ)
     .curve(points.pJcpA, points.pAextraCPj, points.pAextra)
     .curve(points.pAextraCPu, points.pUcpA, points.pU)
-    .setRender(false)
+    .hide()
 
-  paths.waistSeam = new Path().move(points.pU).line(points.pD).line(points.pW).setRender(false)
+  paths.waistSeam = new Path().move(points.pU).line(points.pD).line(points.pW).hide()
 
   points.pocketWaist = paths.waistSeam.shiftAlong(waist / 2 / 4.5)
   points.pocketFacingTL = paths.waistSeam.shiftAlong(waist / 2 / 4.5 + halfInch * 3)

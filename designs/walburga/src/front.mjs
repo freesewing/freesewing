@@ -89,11 +89,7 @@ function walburgaFront({
     if (sa) {
       if (options.neckline === true) {
         // Insop the start
-        paths.saHelper = new Path()
-          .move(points.neckomid)
-          .line(points.neckotop)
-          .offset(sa)
-          .setRender(false)
+        paths.saHelper = new Path().move(points.neckomid).line(points.neckotop).offset(sa).hide()
         paths.sa = paths.saBase
           .insop(
             'start',
@@ -116,7 +112,7 @@ function walburgaFront({
               .line(points.topLeft.shift(90, sa))
           )
           .attr('class', 'fabric sa')
-          .setRender(true)
+          .unhide()
       }
     }
 

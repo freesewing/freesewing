@@ -251,7 +251,7 @@ export const back = {
       .line(points.hps)
       ._curve(points.cbNeckCp1, points.cbNeck)
       .close()
-      .setRender(false)
+      .hide()
 
     if (complete) {
       points.titleAnchor = new Point(points.hps.x, points.armholePitchCp2.y)

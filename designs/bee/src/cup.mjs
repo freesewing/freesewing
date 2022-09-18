@@ -168,7 +168,7 @@ export const cup = {
       paths.frontCurve = new Path()
         .move(points.topLeft)
         .curve_(points.frontCurveControl, points.lefti)
-        .setRender(false)
+        .hide()
       points.frontNotch = paths.frontCurve.shiftFractionAlong(0.5)
       snippets.frontNotch = new Snippet('notch', points.frontNotch)
       snippets.lefti = new Snippet('notch', points.lefti)
@@ -363,7 +363,7 @@ export const cup = {
           .move(points.lefti)
           .curve_(points.leftControlOffset, points.middleDart)
           .curve_(points.rightControlOffset, points.rightiOffset)
-          .setRender(false)
+          .hide()
         paths.dart = new Path()
           .move(
             points.bustA.shiftOutwards(points.leftDart, points.topRight.dist(points.rightiOffset))
@@ -372,7 +372,7 @@ export const cup = {
           .line(
             points.bustA.shiftOutwards(points.rightDart, points.topRight.dist(points.rightiOffset))
           )
-          .setRender(false)
+          .hide()
         for (let p of paths.curve.intersects(paths.dart)) {
           points.rightDarti = points.bustA.shiftFractionTowards(p, 1)
         }
@@ -381,11 +381,11 @@ export const cup = {
         }
         let leftCurve = paths.curve.reverse().split(points.leftDarti)
         for (let i in leftCurve) {
-          paths.leftCurve = leftCurve[i].setRender(false)
+          paths.leftCurve = leftCurve[i].hide()
         }
         let rightCurve = paths.curve.split(points.rightDarti)
         for (let i in rightCurve) {
-          paths.rightCurve = rightCurve[i].setRender(false)
+          paths.rightCurve = rightCurve[i].hide()
         }
         store.set('gatherLength', paths.leftCurve.length() + paths.rightCurve.length())
       }

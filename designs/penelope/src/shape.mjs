@@ -125,7 +125,7 @@ export function BuildMainShape(
     waistCurve = new Path()
       .move(points.lWaist)
       .curve(points.lWaistCP, points.rWaistCPleft, points.rWaist)
-      .setRender(false)
+      .hide()
 
     if (nrOfDarts > 0) {
       curve1 = addDartToCurve(
@@ -199,7 +199,7 @@ export function BuildMainShape(
     .move(points.lLeg)
     .line(points.rLeg)
     .attr('class', 'fabric stroke-sm')
-    .setRender(false)
+    .hide()
 
   if (store.get('hem') > 0) {
     // Create the inverse of the curve from the leg to the waist
@@ -214,18 +214,18 @@ export function BuildMainShape(
 
     sideSeamPath = sideSeamHemPath.join(sideSeamPath)
 
-    paths.hem.setRender(true)
+    paths.hem.unhide()
   }
 
-  paths.leftSide = new Path().move(points.lWaist).line(points.lHem).setRender(false)
+  paths.leftSide = new Path().move(points.lWaist).line(points.lHem).hide()
 
-  paths.bottom = new Path().move(points.lHem).line(points.rHem).setRender(false)
+  paths.bottom = new Path().move(points.lHem).line(points.rHem).hide()
 
-  paths.sideSeam = sideSeamPath.setRender(false)
+  paths.sideSeam = sideSeamPath.hide()
 
   // Turn the path in the other direction, to comply with the counter-clockwise guideline
-  paths.waist = waistPath.reverse().setRender(false)
-  paths.waistSA = waistPathSA.reverse().setRender(false)
+  paths.waist = waistPath.reverse().hide()
+  paths.waistSA = waistPathSA.reverse().hide()
 
   points.titleAnchor = new Point(measurements.waist / 6, measurements.waistToSeat)
   points.logoAnchor = points.titleAnchor.shift(270, 75)

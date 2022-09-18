@@ -401,7 +401,7 @@ function draftHiBody({
     .curve(points.body17cp1, points.body18cp2, points.body18)
     .curve(points.body18cp1, points.body19cp2, points.body19)
     .curve(points.body19cp1, points.body01cp2, points.body01)
-    .setRender(false)
+    .hide()
 
   paths.seam = new Path()
     .move(points.body01)
@@ -409,7 +409,7 @@ function draftHiBody({
     .curve(points.body02cp1, points.body03cp2, points.body03)
     .join(paths.allButDart)
     .close()
-    .setRender(true)
+    .hide()
 
   let gillPath = new Path()
     .move(points.body17)

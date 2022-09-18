@@ -29,7 +29,7 @@ function draftBenjaminBow1({
     .line(points.bandTopLeft)
     .close()
     .attr('class', 'fabric')
-    .setRender(true)
+    .unhide()
 
   if (complete) {
     // Paperless?
@@ -41,7 +41,7 @@ function draftBenjaminBow1({
       })
     }
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').setRender(true)
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').unhide()
     }
     macro('title', {
       at: points.titleAnchor,

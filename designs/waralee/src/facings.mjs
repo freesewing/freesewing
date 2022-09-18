@@ -38,7 +38,7 @@ function waraleeFacings({
     .line(points.frontTL)
     .close()
     .attr('class', 'fabric')
-    .setRender(options.frontPocket && 'welt' == options.frontPocketStyle)
+    .setHidden(!(options.frontPocket && 'welt' == options.frontPocketStyle))
 
   paths.backSeam = new Path()
     .move(points.backTL)
@@ -48,7 +48,7 @@ function waraleeFacings({
     .line(points.backTL)
     .close()
     .attr('class', 'fabric')
-    .setRender(options.backPocket)
+    .setHidden(!options.backPocket)
 
   // Complete?
   if (complete) {

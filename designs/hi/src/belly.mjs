@@ -145,13 +145,13 @@ function draftHiBelly({
     .curve(points.belly04cp2, points.belly03cp1, points.belly03)
     .curve(points.belly03cp2, points.belly02cp1, points.belly02)
     .curve(points.belly02cp2, points.belly01cp1, points.belly01)
-    .setRender(false)
+    .hide()
   paths.bottom = new Path()
     .move(points.belly09)
     .curve(points.belly09cp2, points.belly08cp1, points.belly08)
     .curve(points.belly08cp2, points.belly07cp1, points.belly07)
     .curve(points.belly07cp2, points.belly06cp1, points.belly06)
-    .setRender(false)
+    .hide()
   paths.seam = new Path()
     .move(points.belly01)
     .curve(points.belly01cp2, points.belly10cp1, points.belly10)
@@ -161,7 +161,7 @@ function draftHiBelly({
     .curve(points.belly05cp2, points.belly04cp1, points.belly04)
     .join(paths.top)
     .close()
-    .setRender(true)
+    .unhide()
 
   store.set(
     'bellyFinLength',

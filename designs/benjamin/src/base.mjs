@@ -122,7 +122,7 @@ function draftBenjaminBase({
       .curve(points.knotTopCp2, points.tip1TopCp1, points.tip1Top)
       .curve(points.tip1TopCp2, points.transitionTopRightCp1, points.transitionTopRight)
       .line(points.bandTopRight)
-      .setRender(false)
+      .hide()
   } else {
     paths.bow = new Path()
       .move(points.bandBottomRight)
@@ -132,7 +132,7 @@ function draftBenjaminBase({
       .line(points.tip2Top)
       .line(points.transitionTopRight)
       .line(points.bandTopRight)
-      .setRender(false)
+      .hide()
   }
 
   // Complete?

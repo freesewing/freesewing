@@ -26,13 +26,8 @@ function draftCharlieFlyExtension({ points, paths, Path, complete, macro, sa, pa
     )
     .line(points.styleWaistIn)
     .line(points.flyTop)
-    .setRender(false)
-  paths.seam = paths.saBase
-    .clone()
-    .line(points.flyCorner)
-    .close()
-    .setRender(true)
-    .attr('class', 'fabric')
+    .hide()
+  paths.seam = paths.saBase.clone().line(points.flyCorner).close().hide().attr('class', 'fabric')
 
   if (complete) {
     macro('cutonfold', {

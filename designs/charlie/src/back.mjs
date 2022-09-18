@@ -136,7 +136,7 @@ function draftCharlieBack({
     .insop('dart', new Path().line(points.pocketCenter))
     .close()
     .attr('class', 'fabric')
-  paths.saBase.setRender(false)
+  paths.saBase.hide()
 
   if (complete) {
     paths.pocketLine = new Path()

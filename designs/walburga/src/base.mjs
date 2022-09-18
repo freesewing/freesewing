@@ -54,7 +54,7 @@ function walburgaBase({
     .line(points.triangleLeft)
     .line(points.bottomMiddle)
     .line(points.triangle)
-    .setRender(false)
+    .hide()
   paths.seam = new Path()
     .move(points.top)
     .line(points.topLeft)
@@ -112,7 +112,7 @@ function walburgaBase({
           )
         )
         .line(points.triangle)
-        .setRender(false)
+        .hide()
 
       // Insop the start
       paths.sa = paths.saBase
@@ -124,7 +124,7 @@ function walburgaBase({
             .line(points.topLeft.shift(90, sa))
         )
         .attr('class', 'fabric sa')
-        .setRender(true)
+        .unhide()
     }
 
     // Paperless?

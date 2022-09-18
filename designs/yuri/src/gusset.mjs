@@ -50,7 +50,7 @@ function yuriGusset({
     points.logo = points.title.shift(-75, 100)
     snippets.logo = new Snippet('logo', points.logo)
     if (sa) {
-      paths.saBase = new Path().move(points.right).line(points.top).setRender(false)
+      paths.saBase = new Path().move(points.right).line(points.top).hide()
       paths.sa = paths.curve
         .offset(3 * sa)
         .join(paths.saBase.offset(sa))

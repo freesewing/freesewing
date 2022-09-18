@@ -17,7 +17,7 @@ function draftCorneliusPocketFacing({
   let halfInch = store.get('halfInch')
   let waist = store.get('waist')
 
-  paths.waistSeam = paths.waistSeam.split(points.pocketFacingTL)[0].setRender(false)
+  paths.waistSeam = paths.waistSeam.split(points.pocketFacingTL)[0].hide()
 
   // Adding sa to this point so it allows for the pocket seam to be finished without the facing being included
   points.pocketFacingBR = paths.sideSeam.shiftAlong(
@@ -29,8 +29,8 @@ function draftCorneliusPocketFacing({
     paths.sideSeam = new Path()
       .move(points.pAextra)
       .curve(points.pAextraCPu, points.pUcpA, points.pU)
-      .setRender(false)
-  else paths.sideSeam = paths.sideSeam.split(points.pocketFacingBR)[1].setRender(false)
+      .hide()
+  else paths.sideSeam = paths.sideSeam.split(points.pocketFacingBR)[1].hide()
 
   points.brCPtl = points.pocketFacingBR.shift(
     points.pocketFacingBR.angle(points.pocketSide) + 90,
@@ -44,13 +44,13 @@ function draftCorneliusPocketFacing({
   paths.facingInside = new Path()
     .move(points.pocketFacingTL)
     .curve(points.tlCPbr, points.brCPtl, points.pocketFacingBR)
-    .setRender(false)
+    .hide()
 
   paths.seam = paths.waistSeam
     .join(paths.facingInside)
     .join(paths.sideSeam)
     .close()
-    .setRender(true)
+    .hide()
     .attr('class', 'fabric')
 
   if (complete) {

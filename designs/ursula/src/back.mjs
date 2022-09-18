@@ -177,7 +177,7 @@ function ursulaBack({
             points.backLegOpeningRightCp1,
             points.backLegOpeningRight
           )
-          .setRender(false)
+          .hide()
       : new Path()
           .move(points.backGussetRight)
           .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
@@ -186,13 +186,13 @@ function ursulaBack({
             points.backLegOpeningRightCp1,
             points.backLegOpeningRight
           )
-          .setRender(false)
+          .hide()
   store.set('backLegOpeningLength', paths.backLegOpening.length())
 
   paths.backWaistBand = new Path()
     .move(points.backWaistBandRight)
     .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
-    .setRender(false)
+    .hide()
   store.set('backWaistBandLength', paths.backWaistBand.length())
 
   // Complete?

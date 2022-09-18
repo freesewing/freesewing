@@ -160,7 +160,7 @@ function waraleeWaistband(
     .line(points.bl)
     .line(points.br)
     .close()
-    .setRender(false)
+    .hide()
 
   // Complete?
   if (complete) {

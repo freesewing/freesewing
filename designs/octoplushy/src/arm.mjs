@@ -153,7 +153,7 @@ function octoplushyArmSection(
     .move(points.armBottomLeft)
     .curve(points.armBottomLeftCp1, points.armBottomCp2, points.armBottom)
     .curve(points.armBottomCp1, points.armBottomRightCp2, points.armBottomRight)
-    .setRender(false)
+    .hide()
   if (options.type == 'squid') {
     if (partNumber == 1) {
       paths.armBottom = new Path()
@@ -162,7 +162,7 @@ function octoplushyArmSection(
         .curve(points.tentacleLeftCp1, points.armBottomCp2, points.armBottom)
         .curve(points.armBottomCp1, points.tentacleRightCp2, points.tentacleRight)
         .curve(points.tentacleRightCp1, points.armBottomRightCp2, points.armBottomRight)
-        .setRender(false)
+        .hide()
     }
   }
 

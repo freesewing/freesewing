@@ -21,7 +21,7 @@ function nobleBackOutside({
     .move(points.shoulderDart)
     .curve(points.shoulderDart, points.shoulderDartCpUp, points.dartTip)
     .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)
-    .setRender(false)
+    .hide()
 
   paths.outsideSeam = new Path()
     .move(points.dartBottomRight)

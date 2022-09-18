@@ -78,7 +78,7 @@ function octoplushyHeadSection(
     .move(points.circleTop)
     .curve(points.sectionTopCp1, points.sectionLeftCp2, points.sectionLeft)
     .curve(points.sectionLeftCp1, points.sectionBottomCp2, points.circleBottom)
-    .setRender(true)
+    .unhide()
 
   let iteration = 0
   let diff = 0
@@ -106,7 +106,7 @@ function octoplushyHeadSection(
     .move(points.circleTop)
     .curve(points.sectionTopCp1, points.sectionLeftCp2, points.sectionLeft)
     .curve(points.sectionLeftCp1, points.sectionBottomCp2, points.circleBottom)
-    .setRender(false)
+    .hide()
 
   points.sectionBottomLeft = utils.curveIntersectsY(
     points.sectionLeft,
@@ -299,7 +299,7 @@ function octoplushyHeadSection(
     .move(points.armBottomLeft)
     .curve(points.armBottomLeftCp1, points.armBottomCp2, points.armBottom)
     .curve(points.armBottomCp1, points.armBottomRightCp2, points.armBottomRight)
-    .setRender(false)
+    .hide()
 
   if (options.type == 'squid') {
     paths.sectionLeft = new Path()
@@ -307,20 +307,20 @@ function octoplushyHeadSection(
       .curve(points.sectionTopCp1, points.sectionLeftCp2, points.sectionLeft)
       .curve(points.sectionLeftCp1, points.sectionMidLeftCp2, points.sectionMidLeft)
       .curve(points.sectionMidLeftCp1, points.sectionBottomLeftCp2, points.sectionBottomLeft)
-      .setRender(false)
+      .hide()
     paths.sectionRight = new Path()
       .move(points.sectionBottomRight)
       .curve(points.sectionBottomRightCp1, points.sectionMidRightCp2, points.sectionMidRight)
       .curve(points.sectionMidRightCp1, points.sectionRightCp2, points.sectionRight)
-      .setRender(false)
+      .hide()
     paths.skirtLeft = new Path()
       .move(points.sectionBottomLeft)
       .curve(points.sectionBottomLeftCp1, points.armTopLeftCp2, points.armTopLeft)
-      .setRender(false)
+      .hide()
     paths.skirtRight = new Path()
       .move(points.armTopRight)
       .curve(points.armTopRightCp1, points.sectionBottomRightCp2, points.sectionBottomRight)
-      .setRender(false)
+      .hide()
     if (partNumber == 1) {
       paths.sectionLeft = new Path()
         .move(points.sectionTop)
@@ -330,45 +330,45 @@ function octoplushyHeadSection(
         .curve(points.finSectionCp1, points.sectionLeftCp2, points.sectionLeft)
         .curve(points.sectionLeftCp1, points.sectionMidLeftCp2, points.sectionMidLeft)
         .curve(points.sectionMidLeftCp1, points.sectionBottomLeftCp2, points.sectionBottomLeft)
-        .setRender(false)
+        .hide()
       paths.armBottom = new Path()
         .move(points.armBottomLeft)
         .curve(points.armBottomLeftCp1, points.tentacleLeftCp2, points.tentacleLeft)
         .curve(points.tentacleLeftCp1, points.armBottomCp2, points.armBottom)
         .curve(points.armBottomCp1, points.tentacleRightCp2, points.tentacleRight)
         .curve(points.tentacleRightCp1, points.armBottomRightCp2, points.armBottomRight)
-        .setRender(false)
+        .hide()
     }
   } else {
     paths.sectionLeft = new Path()
       .move(points.sectionTop)
       .curve(points.sectionTopCp1, points.sectionLeftCp2, points.sectionLeft)
       .curve(points.sectionLeftCp1, points.sectionBottomLeftCp2, points.sectionBottomLeft)
-      .setRender(false)
+      .hide()
     paths.sectionRight = new Path()
       .move(points.sectionBottomRight)
       .curve(points.sectionBottomRightCp1, points.sectionRightCp2, points.sectionRight)
-      .setRender(false)
+      .hide()
     if (points.skirtBottomLeft.sitsRoughlyOn(points.armTopLeft)) {
       paths.skirtLeft = new Path()
         .move(points.sectionBottomLeft)
         .curve(points.sectionBottomLeftCp1, points.skirtBottomLeft, points.skirtBottomLeft)
-        .setRender(false)
+        .hide()
       paths.skirtRight = new Path()
         .move(points.armTopRight)
         .curve(points.skirtBottomRight, points.sectionBottomRightCp2, points.sectionBottomRight)
-        .setRender(false)
+        .hide()
     } else {
       paths.skirtLeft = new Path()
         .move(points.sectionBottomLeft)
         .curve(points.sectionBottomLeftCp1, points.skirtBottomLeft, points.skirtBottomLeft)
         .curve(points.skirtBottomLeft, points.armTopLeftCp2, points.armTopLeft)
-        .setRender(false)
+        .hide()
       paths.skirtRight = new Path()
         .move(points.armTopRight)
         .curve(points.armTopRightCp1, points.skirtBottomRight, points.skirtBottomRight)
         .curve(points.skirtBottomRight, points.sectionBottomRightCp2, points.sectionBottomRight)
-        .setRender(false)
+        .hide()
     }
   }
 
@@ -384,16 +384,6 @@ function octoplushyHeadSection(
     .curve(points.sectionRightCp1, points.sectionTopCp2, points.sectionTop)
     .close()
     .attr('class', 'fabric')
-
-  // paths.box = new Path()
-  //   .move(points.topLeft)
-  //   .line(points.bottomLeft)
-  //   .line(points.bottomRight)
-  //   .line(points.topRight)
-  //   .line(points.topLeft)
-  //   .close()
-  //   .attr('class', 'fabric')
-  //   .setRender(false)
 
   // Complete?
   if (complete) {

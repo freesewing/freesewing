@@ -131,13 +131,13 @@ function ursulaFront({
   paths.frontLegOpening = new Path()
     .move(points.frontGussetRight)
     .curve(points.frontGussetRightCp1, points.frontLegOpeningRightCp1, points.frontLegOpeningRight)
-    .setRender(false)
+    .hide()
   store.set('frontLegOpeningLength', paths.frontLegOpening.length())
 
   paths.frontWaistBand = new Path()
     .move(points.frontWaistBandRight)
     .curve(points.frontWaistBandRightCp1, points.frontWaistBandLeftCp1, points.frontWaistBandLeft)
-    .setRender(false)
+    .hide()
   store.set('frontWaistBandLength', paths.frontWaistBand.length())
 
   // Complete?

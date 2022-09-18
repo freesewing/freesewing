@@ -26,8 +26,8 @@ function draftCharlieBackPocketFacing({
     .line(points.waistbandLeft)
     ._curve(points.cpLeft, points.curveStartLeft)
     .line(points.bottomLeft)
-    .setRender(false)
-  paths.seam = paths.saBase.clone().close().setRender(true).attr('class', 'fabric')
+    .hide()
+  paths.seam = paths.saBase.clone().close().unhide().attr('class', 'fabric')
 
   if (complete) {
     paths.opening = new Path()

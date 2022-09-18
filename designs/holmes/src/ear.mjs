@@ -31,8 +31,8 @@ function draftHolmesEar({
     .move(points.bottom)
     .curve(points.bottomC, points.topC, points.top)
     .curve(points.topCFlipped, points.bottomCFlipped, points.bottomFlipped)
-    .setRender(false)
-  paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom).setRender(false)
+    .hide()
+  paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom).hide()
   paths.seam = paths.saBase.join(paths.hemBase).close()
   // Complete?
   if (complete) {

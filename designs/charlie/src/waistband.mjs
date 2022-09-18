@@ -49,8 +49,8 @@ function draftCharlieWaistband({
     .line(points.topRight)
     .line(points.bottomRight)
     .line(points.bottomLeft)
-    .setRender(false)
-  paths.seam = paths.saBase.clone().close().attr('class', 'fabric').setRender(true)
+    .hide()
+  paths.seam = paths.saBase.clone().close().attr('class', 'fabric').unhide()
 
   if (complete) {
     macro('sprinkle', {

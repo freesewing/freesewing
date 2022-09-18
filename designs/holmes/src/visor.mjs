@@ -53,13 +53,13 @@ function draftHolmesVisor({
     .move(points.in2)
     .curve(points.in2C, points.in1C, points.in1)
     .curve(points.in1CFlipped, points.in2CFlipped, points.in2Flipped)
-    .setRender(false)
+    .hide()
 
   paths.saOuter = new Path()
     .move(points.in2Flipped)
     .curve(points.ex2CFlipped, points.ex1CFlipped, points.ex1)
     .curve(points.ex1C, points.ex2C, points.in2)
-    .setRender(false)
+    .hide()
 
   paths.seam = paths.saOuter.join(paths.saInner).close()
   // Complete?

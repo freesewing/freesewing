@@ -53,15 +53,15 @@ function lunetiusLacerna({
   points.bottomShoulderCp2 = points.bottomLeft.shiftFractionTowards(points.bottomShoulder, 0.5)
 
   // Add paths
-  paths.fold = new Path().move(points.bottom).line(points.top).setRender(false)
+  paths.fold = new Path().move(points.bottom).line(points.top).hide()
   paths.hem = new Path()
     .move(points.topLeft)
     .line(points.middleLeft)
     .curve(points.bottomShoulderCp1, points.bottomShoulderCp2, points.bottomShoulder)
     .line(points.bottom)
-    .setRender(false)
-  paths.saBase = new Path().move(points.top).line(points.topLeft).setRender(false)
-  paths.seam = paths.saBase.join(paths.hem).join(paths.fold).attr('class', 'fabric').setRender(true)
+    .hide()
+  paths.saBase = new Path().move(points.top).line(points.topLeft).hide()
+  paths.seam = paths.saBase.join(paths.hem).join(paths.fold).attr('class', 'fabric').hide()
 
   // Complete?
   if (complete) {

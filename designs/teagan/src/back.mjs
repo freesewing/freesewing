@@ -24,7 +24,7 @@ function teaganBack({
   points.shoulderCp1 = points.shoulderCp1.shiftFractionTowards(points.shoulder, 0.25)
 
   // Draw seamline
-  paths.hemBase = new Path().move(points.cfHem).line(points.hem).setRender(false)
+  paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
   paths.saBase = new Path()
     .move(points.hem)
     .curve_(points.waistCp2, points.armhole)
@@ -32,14 +32,14 @@ function teaganBack({
     .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve(points.neckCp2, points.cbNeckCp1, points.cbNeck)
-    .setRender(false)
+    .hide()
   paths.seam = new Path()
     .move(points.cfHem)
     .join(paths.hemBase)
     .join(paths.saBase)
     .line(points.cfHem)
     .close()
-    .setRender(true)
+    .hide()
     .attr('class', 'fabric')
 
   // Set store values required to draft sleevecap

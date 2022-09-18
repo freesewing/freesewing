@@ -25,7 +25,7 @@ function teaganSleeve({
     .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
     .edge('top')
 
-  paths.hemBase = new Path().move(points.hemLeft).line(points.hemRight).setRender(false)
+  paths.hemBase = new Path().move(points.hemLeft).line(points.hemRight).hide()
   paths.saBase = new Path()
     .move(points.hemRight)
     .line(points.bicepsRight)
@@ -35,7 +35,7 @@ function teaganSleeve({
     .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
     .curve(points.capQ4Cp2, points.bicepsLeft, points.bicepsLeft)
     .line(points.hemLeft)
-    .setRender(false)
+    .hide()
   paths.seam = new Path()
     .move(points.hemLeft)
     .join(paths.hemBase)

@@ -200,7 +200,7 @@ export const frontSideDart = {
       .curve_(points.armholePitchCp2, points.shoulder)
       .line(points.hps)
       .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
-      .setRender(false)
+      .hide()
 
     if (complete) {
       points.titleAnchor = new Point(points.armholePitch.x / 2, points.armholePitchCp2.y)
