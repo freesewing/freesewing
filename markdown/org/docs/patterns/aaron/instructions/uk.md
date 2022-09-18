@@ -69,11 +69,11 @@ title: "Майка Аарон: Інструкція з пошиття"
 
 Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
 
-### Make sure you know where to sew
+### Налаштуйте правильний припуск
 
 ![Make sure you know where to sew](step03c.png)
 
-We are going to sew 1.5cm from the edge. So be careful because this is not the standard seam allowance.
+Бейку варто пришити 1.5 від краю. Це не є стандартним припуском на шов, тому зверніть на це увагу.
 
 <Tip>
 
@@ -85,11 +85,11 @@ Then all you need to do is keep the edge of your fabric aligned with that line.
 
 Also, we are not starting at our start point, but we skip the first 3cm. We'll need this wiggle room later to join the ends of our binding.
 
-### Sew binding in place
+### Пришийте бейку
 
 ![Sew binding in place](step03d.png)
 
-Sew your binding in place while gently stretching the binding, but not the fabric. Make sure not to sew the last 3cm but leave them, just as you did at the start.
+Легко розтягуючи бейку, пришийте її до тканини. Тканину розтягувати не треба. Не забудьте залишити останні 3 см не пришитими, так як і на початку.
 
 You might need to practice a bit to get the hang of it.
 
