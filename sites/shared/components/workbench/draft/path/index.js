@@ -496,7 +496,7 @@ const XrayPath = props => {
 
 const Path = props => {
   const { path, partName, pathName } = props
-  if (!path.render) return null
+  if (path.hidden) return null
   const output = []
   const pathId = 'path-' + partName + '-' + pathName
   let d = ''
