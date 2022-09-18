@@ -19,7 +19,7 @@ function draftTortugaBody({
   const DEBUG = true
   const DEBUG_POINTS = false
 
-  const RIGHT = 0
+  //  const RIGHT = 0
   const LEFT = 180
   const UP = 90
   const DOWN = -90
@@ -338,8 +338,6 @@ function draftTortugaBody({
       points.bottomCenterBack = new Point(0, points.bottomLeftBack.y)
         .attr('data-text', 'Back bottom')
         .attr('data-text-class', 'left fill-note')
-
-      let bottomCenterBack = new Point(0, points.bottomLeftBack.y)
     }
 
     if (options.singleFrontBack) {
@@ -427,7 +425,6 @@ function draftTortugaBody({
 
 export const body = {
   name: 'tortuga.body',
-  measurements: ['neck'],
   measurements: [
     'neck',
     'chest',
