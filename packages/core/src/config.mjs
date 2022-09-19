@@ -34,4 +34,5 @@ export const __loadPatternDefaults = () => ({
   debug: false,
   options: {},
   absoluteOptions: {},
+  measurements: {}
 })

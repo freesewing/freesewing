@@ -334,7 +334,7 @@ Pattern.prototype.render = function () {
   this.svg = new Svg(this)
   this.svg.hooks = this.hooks
 
-  return this.__pack().svg.render(this)
+  return this.__pack().svg.render()
 }
 
 /**

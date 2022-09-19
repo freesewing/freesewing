@@ -580,6 +580,51 @@ describe('Pattern', () => {
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
 
+    it('Load conditional plugins that are also passing data', () => {
+      const plugin1 = {
+        name: 'example1',
+        version: 1,
+        hooks: {
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example1', 1)
+          },
+        },
+      }
+      const plugin2 = {
+        name: 'example2',
+        version: 2,
+        hooks: {
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example2', 1)
+          },
+        },
+      }
+      const condition1 = () => true
+      const condition2 = () => false
+      const part1 = {
+        name: 'part1',
+        plugins: [
+          [plugin1, {} ],
+          { plugin: plugin2, condition: condition1 }
+        ],
+        draft: ({ part }) => part
+      }
+      const part2 = {
+        name: 'part2',
+        plugins: [
+          plugin2,
+          { plugin: plugin2, condition: condition2 },
+        ],
+        draft: ({ part }) => part
+      }
+      const design = new Design({
+        parts: [ part1, part2 ]
+      })
+      const pattern = new design()
+      pattern.init()
+      expect(pattern.hooks.preRender.length).to.equal(2)
+    })
+
     it('Pattern.init() should register a hook via on', () => {
       const Pattern = new Design()
       const pattern = new Pattern()

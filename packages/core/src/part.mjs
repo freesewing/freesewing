@@ -95,7 +95,6 @@ Part.prototype.setHidden = function (hidden = false) {
   return this
 }
 
-/** Returns an object with shorthand access for pattern design */
 /**
  * Returns an object that will be passed to draft method to be destructured
  *
@@ -152,13 +151,13 @@ Part.prototype.shorthand = function () {
   shorthand.Snippet.prototype = Object.create(Snippet.prototype)
 
   // Proxy points, paths, snippets, measurements, options, and absoluteOptions
-  shorthand.points = new Proxy(this.points || {}, pointsProxy(self.points, self.context.store.log))
-  shorthand.paths = new Proxy(this.paths || {}, pathsProxy(self.paths, self.context.store.log))
+  shorthand.points = new Proxy(this.points, pointsProxy(self.points, self.context.store.log))
+  shorthand.paths = new Proxy(this.paths, pathsProxy(self.paths, self.context.store.log))
   shorthand.snippets = new Proxy(
-    this.snippets || {},
+    this.snippets,
     snippetsProxy(self.snippets, self.context.store.log)
   )
-  shorthand.measurements = new Proxy(this.context.settings.measurements || {}, {
+  shorthand.measurements = new Proxy(this.context.settings.measurements, {
     get: function (measurements, name) {
       if (typeof measurements[name] === 'undefined')
         self.context.store.log.warning(
@@ -168,7 +167,7 @@ Part.prototype.shorthand = function () {
     },
     set: (measurements, name, value) => (self.context.settings.measurements[name] = value),
   })
-  shorthand.options = new Proxy(this.context.settings.options || {}, {
+  shorthand.options = new Proxy(this.context.settings.options, {
     get: function (options, name) {
       if (typeof options[name] === 'undefined')
         self.context.store.log.warning(
@@ -178,7 +177,7 @@ Part.prototype.shorthand = function () {
     },
     set: (options, name, value) => (self.context.settings.options[name] = value),
   })
-  shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions || {}, {
+  shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions, {
     get: function (absoluteOptions, name) {
       if (typeof absoluteOptions[name] === 'undefined')
         self.context.store.log.warning(
@@ -239,9 +238,6 @@ Part.prototype.__boundary = function () {
       }
     } catch (err) {
       this.context.store.log.error(`Could not calculate boundary of \`paths.${key}\``)
-      this.context.store.log.debug(
-        `Since \`paths.${key}\` has no boundary, neither does \`parts.${this.name}\`. Ejecting part`
-      )
       return false
     }
   }

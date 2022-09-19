@@ -725,15 +725,10 @@ export const __addPartPlugins = (part, config, store) => {
     store.log.debug(`🔌  __${plugin.name}__ plugin in \`${part.name}\``)
     // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
     if (plugin.plugin && plugin.condition) {
-      if (plugins[plugin.plugin.name]?.condition) {
-        store.log.info(
-          `Plugin \`${plugin.plugin.name}\` was re-requested conditionally. Overwriting earlier condition.`
-        )
-        plugins[plugin.plugin.name] = plugin
-      } else
-        store.log.info(
-          `Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading.`
-        )
+      if (plugins[plugin.plugin.name]?.condition) plugins[plugin.plugin.name] = plugin
+      else store.log.info(
+        `Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading.`
+      )
     } else {
       plugins[plugin.name] = plugin
     }

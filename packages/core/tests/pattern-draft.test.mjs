@@ -48,7 +48,7 @@ describe('Pattern', () => {
       name: 'test.partB',
       measurements: ['head', 'knee'],
       optionalMeasurements: ['knee'],
-      after: partA,
+      after: [ partA ],
       plugins: [
         {
           name: 'testPlugin',

@@ -1,6 +1,7 @@
 import chai from 'chai'
 import {
   Point,
+  Design,
   capitalize,
   beamsIntersect,
   linesIntersect,
@@ -23,6 +24,7 @@ import {
   deg2rad,
   rad2deg,
   pctBasedOn,
+  generateStackTransform,
 } from '../src/index.mjs'
 
 const { expect } = chai
@@ -474,29 +476,20 @@ describe('Utils', () => {
     expect(result.toAbs(0.0123, { measurements })).to.equal(12.3)
     expect(result.fromAbs(12.3, { measurements })).to.equal(0.0123)
   })
-  /*
-  it('Should generate a part transform', () => {
-    const part = {
+  it('Should generate a stack transform', () => {
+    const test = {
       name: 'test',
-      draft: part => {
-        const { points, Point, paths, Path } = part.shorthand()
+      draft: ({ points, Point, paths, Path, part }) => {
         points.from = new Point(2, 2)
         points.to = new Point(19, 76)
         paths.test = new Path().move(points.from).line(points.to)
         return part
       }
     }
-    const design = new Design({ parts: [ part ]})
+    const design = new Design({ parts: [ test ]})
     const pattern = new design()
-    pattern.draft().render()
-    const transform = generatePartTransform(30, 60, 90, true, true, pattern.__parts.test)
-    expect(transform.transform).to.equal(
-      `translate(${30 + part.topLeft.x + part.bottomRight.x} ${
-        60 + part.topLeft.y + part.bottomRight.y
-      }) scale(-1 -1) rotate(90 ${part.topLeft.x + part.width / 2} ${
-        part.topLeft.y + part.height / 2
-      })`
-    )
+    const props = pattern.draft().getRenderProps()
+    const transform = generateStackTransform(30, 60, 90, true, true, props.stacks.test)
+    expect(transform.transform).to.equal('translate(51 138) scale(-1 -1) rotate(90 10.5 39)')
   })
-  */
 })

@@ -29,7 +29,7 @@ export function Svg(pattern) {
   this.attributes.add('xmlns', 'http://www.w3.org/2000/svg')
   this.attributes.add('xmlns:svg', 'http://www.w3.org/2000/svg')
   this.attributes.add('xmlns:xlink', 'http://www.w3.org/1999/xlink')
-  this.attributes.add('xml:lang', pattern.settings.locale)
+  this.attributes.add('xml:lang', pattern?.settings?.[0]?.locale || 'en')
   this.attributes.add('xmlns:freesewing', 'http://freesewing.org/namespaces/freesewing')
   this.attributes.add('freesewing', version)
 }
@@ -44,21 +44,24 @@ export function Svg(pattern) {
  * @param {Pattern} pattern - The pattern to render
  * @return {string} svg - The rendered SVG output
  */
-Svg.prototype.render = function (pattern) {
-  this.idPrefix = pattern.settings.idPrefix
+Svg.prototype.render = function () {
+  this.idPrefix = this.pattern?.settings?.[0]?.idPrefix || 'fs-'
   this.__runHooks('preRender')
-  pattern.__runHooks('postLayout')
-  if (!pattern.settings.embed) {
-    this.attributes.add('width', round(pattern.width) + 'mm')
-    this.attributes.add('height', round(pattern.height) + 'mm')
+  this.pattern.__runHooks('postLayout')
+  if (!this.pattern.settings[0].embed) {
+    this.attributes.add('width', round(this.pattern.width) + 'mm')
+    this.attributes.add('height', round(this.pattern.height) + 'mm')
   }
-  this.attributes.add('viewBox', `0 0 ${pattern.width} ${pattern.height}`)
+  this.attributes.add('viewBox', `0 0 ${round(this.pattern.width)} ${round(this.pattern.height)}`)
   this.head = this.__renderHead()
   this.tail = this.__renderTail()
   this.svg = ''
   this.layout = {} // Reset layout
-  for (let stackId in pattern.stacks) {
-    const stack = pattern.stacks[stackId]
+  this.activeStackIndex = 0
+  for (let stackId in this.pattern.stacks) {
+    this.activeStack = stackId
+    this.idPrefix = this.pattern.settings[this.activeStackIndex].idPrefix
+    const stack = this.pattern.stacks[stackId]
     if (!stack.hidden) {
       const stackSvg = this.__renderStack(stack)
       this.layout[stackId] = {
@@ -69,6 +72,7 @@ Svg.prototype.render = function (pattern) {
       this.svg += stackSvg
       this.svg += this.__closeGroup()
     }
+    this.activeStackIndex++
   }
   this.svg = this.prefix + this.__renderSvgTag() + this.head + this.svg + this.tail
   this.__runHooks('postRender')
@@ -137,7 +141,7 @@ Svg.prototype.__indent = function () {
 Svg.prototype.__insertText = function (text) {
   if (this.hooks.insertText.length > 0) {
     for (let hook of this.hooks.insertText)
-      text = hook.method(this.pattern.settings.locale, text, hook.data)
+      text = hook.method(this.pattern.settings[this.activeStackIndex].locale || 'en', text, hook.data)
   }
 
   return text
@@ -223,7 +227,6 @@ Svg.prototype.__renderDefs = function () {
  */
 Svg.prototype.__renderHead = function () {
   let svg = this.__renderStyle()
-  svg += this.__renderScript()
   svg += this.__renderDefs()
   svg += this.__openGroup(this.idPrefix + 'container')
 
@@ -279,8 +282,8 @@ Svg.prototype.__renderPathText = function (path) {
  * @param {Part} part - The Part instance to render
  * @return {string} svg - The SVG markup for the Part object
  */
-Svg.prototype.__renderPart = function (part, partId) {
-  let svg = this.__openGroup(`${this.idPrefix}part-${partId}`, part.attributes)
+Svg.prototype.__renderPart = function (part) {
+  let svg = this.__openGroup(`${this.idPrefix}stack-${this.activeStack}-part-${part.name}`, part.attributes)
   for (let key in part.paths) {
     let path = part.paths[key]
     if (!path.hidden) svg += this.__renderPath(path)
@@ -298,22 +301,6 @@ Svg.prototype.__renderPart = function (part, partId) {
     svg += this.__renderSnippet(snippet, part)
   }
   svg += this.__closeGroup()
-
-  return svg
-}
-
-/**
- * Returns SVG markup for the script block
- *
- * @private
- * @return {string} svg - The SVG markup for the script block
- */
-Svg.prototype.__renderScript = function () {
-  let svg = '<script type="text/javascript"> <![CDATA['
-  this.__indent()
-  svg += this.__nl() + this.script
-  this.__outdent()
-  svg += this.__nl() + ']]>' + this.__nl() + '</script>' + this.__nl()
 
   return svg
 }

@@ -642,7 +642,7 @@ Path.prototype.shiftAlong = function (distance, stepsPerMm = 10) {
       let thisLen = bezier.length()
       if (Math.abs(len + thisLen - distance) < 0.1) return op.to
       if (len + thisLen > distance)
-        return shiftAlongBezier(distance - len, bezier, thisLen * stepsPerMm)
+        return __shiftAlongBezier(distance - len, bezier, thisLen * stepsPerMm)
       len += thisLen
     }
     current = op.to
@@ -1266,25 +1266,10 @@ function __pathOffset(path, distance, log) {
  * @private
  * @param {float} distance - The distance to shift along the cubic Bezier curve
  * @param {Bezier} bezier - The BezierJs instance
- * @param {int} steps - The numer of steps to walk the Bezier with
+ * @param {int} steps - The numer of steps per mm to walk the Bezier with
  * @return {Point} point - The point at distance along the cubic Bezier curve
  */
-function shiftAlongBezier(distance, bezier, steps = false) {
-  let rlen
-  if (!steps) {
-    rlen = new Path()
-      .move(new Point(...Object.values(bezier.points[0])))
-      .curve(
-        new Point(...Object.values(bezier.points[1])),
-        new Point(...Object.values(bezier.points[2])),
-        new Point(...Object.values(bezier.points[3]))
-      )
-      .roughLength()
-    if (rlen < 2) steps = 20
-    else if (rlen < 10) steps = 40
-    else if (rlen < 100) steps = 100
-    else steps = 200
-  }
+function __shiftAlongBezier(distance, bezier, steps) {
   let previous, next, t, thisLen
   let len = 0
   for (let i = 0; i <= steps; i++) {

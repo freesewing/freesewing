@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Design, Part } from '../src/index.mjs'
+import { Design, Part, pctBasedOn } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -75,6 +75,13 @@ describe('Part', () => {
     expect(units(123.456)).to.equal('12.35cm')
   })
 
+  it('Should convert units directly', () => {
+    const part = new Part()
+    part.context = { settings: { units: 'metric' } }
+    expect(part.units(123.456)).to.equal('12.35cm')
+    expect(part.units(123.456)).to.equal('12.35cm')
+  })
+
   it('Should set part attributes', () => {
     const part = new Part()
     part.attr('foo', 'bar')
@@ -136,73 +143,26 @@ describe('Part', () => {
       name: 'test',
       draft: ({ points, Point, paths, Path, part }) => {
         points.from = new Point(123, 456)
-        points.to = new Point(19, 76)
+        points.to = new Point(19, 76).attr('data-circle', 12)
+
         paths.test = new Path().move(points.from).line(points.to)
         return part
       },
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
-    pattern.draft()
+    pattern.draft().render()
     const boundary = pattern.parts[0].test.__boundary()
     const { topLeft, bottomRight, width, height } = boundary
-    expect(topLeft.x).to.equal(19)
-    expect(topLeft.y).to.equal(76)
+    expect(topLeft.x).to.equal(7)
+    expect(topLeft.y).to.equal(64)
+    // Cover the cached branch
+    pattern.parts[0].test.__boundary()
     expect(bottomRight.x).to.equal(123)
     expect(bottomRight.y).to.equal(456)
-    expect(width).to.equal(104)
-    expect(height).to.equal(380)
+    expect(width).to.equal(116)
+    expect(height).to.equal(392)
   })
-
-  /*
-  it('Should stack a part', () => {
-    const part = {
-      name: 'test',
-      draft: (part) => {
-        const { points, Point, paths, Path }  = part.shorthand()
-        points.from = new Point(123, 456)
-        points.to = new Point(19, 76)
-        paths.test = new Path().move(points.from).line(points.to)
-        return aprt
-      }
-    }
-    const design = new Design({ parts: [ part ]})
-    const pattern = new design({ paperless: true })
-    pattern.draft()
-    pattern.parts.test.home()
-    console.log(pattern.parts.test.attributes)
-    expect(part.attributes.get('transform')).to.equal('translate(-17, -74)')
-  })
-
-  it('Should only stack a part if needed', () => {
-    let pattern = new Pattern()
-    pattern.settings.mode = 'draft'
-    let part = new pattern.Part()
-    let short = part.shorthand()
-    part.points.from = new short.Point(2, 2)
-    part.points.to = new short.Point(19, 76)
-    part.paths.test = new short.Path().move(part.points.from).line(part.points.to)
-    part.home()
-    expect(part.attributes.get('transform')).to.equal(false)
-    part.home()
-    expect(part.attributes.get('transform')).to.equal(false)
-  })
-  it('Should run hooks', () => {
-    let count = 0
-    const design = new Design()
-    const pattern = new design({ paperless: true })
-    const part = pattern.__createPartWithContext()
-    part.hooks.preDraft = [
-      {
-        method: function () {
-          count++
-        },
-      },
-    ]
-    part.runHooks('preDraft')
-    expect(count).to.equal(1)
-  })
-*/
 
   it('Units closure should log a warning when passing a non-number', () => {
     const part = {
@@ -213,79 +173,169 @@ describe('Part', () => {
       },
     }
     const design = new Design({ parts: [part] })
-    const pattern = new design()
+    // Let's also cover the branch where complete is false
+    const pattern = new design({ complete: false} )
     pattern.draft()
     expect(pattern.stores[0].logs.warning.length).to.equal(1)
     expect(pattern.stores[0].logs.warning[0]).to.equal(
       'Calling `units(value)` but `value` is not a number (`string`)'
     )
   })
-  /*
-  describe('isEmpty', () => {
-    it('Should return true if the part has no paths or snippets', () => {
-      const design = new Design()
-      const pattern = new design()
-      const part = pattern.__createPartWithContext()
-      expect(part.isEmpty()).to.be.true
-    })
 
-    it('Should return true if the part has paths but they have no length', () => {
-      const design = new Design()
-      const pattern = new design()
-      const part = pattern.__createPartWithContext()
-      const { Path, paths } = part.shorthand()
-      paths.seam = new Path()
-      expect(part.isEmpty()).to.be.true
-    })
-
-    it("Should return true if the part has paths but they don't render", () => {
-      const design = new Design()
-      const pattern = new design()
-      const part = pattern.__createPartWithContext()
-      const { Path, paths, Point } = part.shorthand()
-      paths.seam = new Path().move(new Point(0, 0)).line(new Point(2, 3)).setRender(false)
-      expect(part.isEmpty()).to.be.true
-    })
-
-    it('Should return false if the part has a path with length', () => {
-      const design = new Design()
-      const pattern = new design()
-      const part = pattern.__createPartWithContext()
-      const { Path, paths, Point } = part.shorthand()
-      paths.seam = new Path().move(new Point(0, 0)).line(new Point(2, 3))
-
-      expect(part.isEmpty()).to.be.false
-    })
-
-    it('Should return false if the part has a snippet', () => {
-      const design = new Design()
-      const pattern = new design()
-      const part = pattern.__createPartWithContext()
-      const { Point, snippets, Snippet } = part.shorthand()
-      snippets.test = new Snippet('test', new Point(0, 0))
-
-      expect(part.isEmpty()).to.be.false
-    })
-
-    it('Should return false if the part has a point that has text', () => {
-      const design = new Design()
-      const pattern = new design()
-      const part = pattern.__createPartWithContext()
-      const { Point, points } = part.shorthand()
-      points.test = new Point(0, 0)
-      points.test.attributes.set('data-text', 'text')
-      expect(part.isEmpty()).to.be.false
-    })
-
-    it('Should return false if the part has a point that has a circle', () => {
-      const design = new Design()
-      const pattern = new design()
-      const part = pattern.__createPartWithContext()
-      const { Point, points } = part.shorthand()
-      points.test = new Point(0, 0)
-      points.test.attributes.set('data-circle', 10)
-      expect(part.isEmpty()).to.be.false
-    })
+  it('Should (un)hide a part with hide()/unhide()', () => {
+    const part = new Part()
+    expect(part.hidden).to.equal(false)
+    part.hide()
+    expect(part.hidden).to.equal(true)
+    part.unhide()
+    expect(part.hidden).to.equal(false)
   })
-  */
+
+  it('Should (un)hide a part with setHidden()', () => {
+    const part = new Part()
+    expect(part.hidden).to.equal(false)
+    part.setHidden(true)
+    expect(part.hidden).to.equal(true)
+    part.setHidden(false)
+    expect(part.hidden).to.equal(false)
+  })
+
+  it('Draft method should receive the Snippet constructor', () => {
+    let method
+    const part = {
+      name: 'test',
+      draft: ({ Point, snippets, Snippet, part }) => {
+        method = Snippet
+        snippets.test = new Snippet('notch', new Point(19,80))
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(typeof method).to.equal('function')
+    expect(pattern.parts[0].test.snippets.test.def).to.equal('notch')
+    expect(pattern.parts[0].test.snippets.test.name).to.equal('test')
+    expect(pattern.parts[0].test.snippets.test.anchor.x).to.equal(19)
+    expect(pattern.parts[0].test.snippets.test.anchor.y).to.equal(80)
+  })
+
+  it('Measurments proxy should allow setting a measurement', () => {
+    const part = {
+      name: 'test',
+      draft: ({ measurements, part }) => {
+        measurements.head = 120
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.settings[0].measurements.head).to.equal(120)
+  })
+
+  it('Options proxy should allow setting an option', () => {
+    const part = {
+      name: 'test',
+      draft: ({ options, part }) => {
+        options.test = 120
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.settings[0].options.test).to.equal(120)
+  })
+
+  it('AbsoluteOptions proxy should allow setting an absoluteOption', () => {
+    const part = {
+      name: 'test',
+      draft: ({ absoluteOptions, part }) => {
+        absoluteOptions.test = 120
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.settings[0].absoluteOptions.test).to.equal(120)
+  })
+
+  it('Snapped percentage options should be available to the draft method', () => {
+    const part = {
+      name: 'test',
+      options: {
+        test: { pct: 10, min: 5, max: 25, snap: 5, ...pctBasedOn('head') }
+      },
+      draft: ({ paths, Path, Point, absoluteOptions, part }) => {
+        paths.test = new Path()
+          .move(new Point(0,0))
+          .line(new Point(absoluteOptions.test, 0))
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design({ measurements: { head: 200 } })
+    pattern.draft()
+    expect(pattern.parts[0].test.paths.test.ops[1].to.x).to.equal(20)
+  })
+
+  it('Accessing unknown option should log a warning', () => {
+    const part = {
+      name: 'test',
+      draft: ({ options, part }) => {
+        if (options.test || true) return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.stores[0].logs.warning.length).to.equal(1)
+    expect(pattern.stores[0].logs.warning[0]).to.equal('Tried to access `options.test` but it is `undefined`')
+  })
+
+  it('Accessing unknown absoluteOption should log a warning', () => {
+    const part = {
+      name: 'test',
+      draft: ({ absoluteOptions, part }) => {
+        if (absoluteOptions.test || true) return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.stores[0].logs.warning.length).to.equal(1)
+    expect(pattern.stores[0].logs.warning[0]).to.equal('Tried to access `absoluteOptions.test` but it is `undefined`')
+  })
+
+  it('Injecting a part should contain all data', () => {
+    const from = {
+      name: 'from',
+      draft: ({ points, Point, paths, Path, snippets, Snippet, part }) => {
+        points.from = new Point(0,0)
+        points.to = new Point(19,80)
+        points.start = new Point(100,100)
+        points.cp1 = new Point(100,200)
+        points.cp2 = new Point(200,100)
+        points.end = new Point(200,200)
+        paths.line = new Path().move(points.from).line(points.to)
+        paths.curve = new Path().move(points.start).curve(points.cp1, points.cp2, points.end)
+        snippets.test = new Snippet('notch', points.end)
+        return part
+      },
+    }
+    const to = {
+      from,
+      name: 'to',
+      draft: ({ part }) => part
+    }
+    const design = new Design({ parts: [from, to] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.parts[0].to.points.to.x).to.equal(19)
+    expect(pattern.parts[0].to.points.to.y).to.equal(80)
+    expect(typeof pattern.parts[0].to.paths.line).to.equal('object')
+    expect(pattern.parts[0].to.paths.curve.ops[1].cp2.x).to.equal(200)
+  })
 })
