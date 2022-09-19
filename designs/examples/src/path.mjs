@@ -571,6 +571,47 @@ export const path_shiftfractionalong = {
   },
 }
 
+export const path_smurve = {
+  name: 'examples.path_smurve',
+  draft: ({ Point, points, Path, paths, part }) => {
+    points.from = new Point(10, 20)
+    points.cp1 = new Point(40, 10)
+    points.cp2 = new Point(60, 30)
+    points.to = new Point(90, 20)
+    points.scp2 = new Point(140, 30)
+    points.sto = new Point(170, 20)
+
+    paths.line = new Path()
+      .move(points.from)
+      .curve(points.cp1, points.cp2, points.to)
+      .smurve(points.scp2, points.sto)
+      .attr('data-text', 'Path.smurve()')
+      .attr('data-text-class', 'text-sm center fill-note')
+
+    return box(part, 180, 40)
+  },
+}
+
+export const path_smurve_ = {
+  name: 'examples.path_smurve_',
+  draft: ({ Point, points, Path, paths, part }) => {
+    points.from = new Point(10, 20)
+    points.cp1 = new Point(40, 10)
+    points.cp2 = new Point(60, 30)
+    points.to = new Point(90, 20)
+    points.sto = new Point(170, 20)
+
+    paths.line = new Path()
+      .move(points.from)
+      .curve(points.cp1, points.cp2, points.to)
+      .smurve_(points.sto)
+      .attr('data-text', 'Path.smurve_()')
+      .attr('data-text-class', 'text-sm center fill-note')
+
+    return box(part, 180, 40)
+  },
+}
+
 export const path_split = {
   name: 'examples.path_split',
   draft: ({ Point, points, Path, paths, Snippet, snippets, part }) => {

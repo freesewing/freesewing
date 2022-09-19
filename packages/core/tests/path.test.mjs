@@ -4,6 +4,35 @@ import { round, Path, Point, Design } from '../src/index.mjs'
 const expect = chai.expect
 
 describe('Path', () => {
+  it('Should draw a smurve', () => {
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, Path, paths, part }) => {
+        points.from = new Point(10, 20)
+        points.cp1 = new Point(40, 0)
+        points.cp2 = new Point(60, 30)
+        points.to = new Point(90, 20)
+        points.scp2 = new Point(30, 55)
+        points.sto = new Point(10, 50)
+
+        paths.test = new Path()
+          .move(points.from)
+          .curve(points.cp1, points.cp2, points.to)
+          .smurve(points.scp2, points.sto)
+        console.log(paths.test, 'in draft')
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+
+    console.log(pattern.parts[0].test.paths)
+    console.log(pattern.stores[0].logs)
+    //expect(pattern.parts[0].test.paths.test.bottomRight.x).to.equal(-10)
+  })
+
   it('Should offset a line', () => {
     const part = {
       name: 'test',

@@ -666,6 +666,43 @@ Path.prototype.shiftFractionAlong = function (fraction, stepsPerMm = 10) {
 }
 
 /**
+ * Adds a smooth curve operation via cp2 to Point to
+ *
+ * @param {Point} cp2 - The end control Point
+ * @param {Point} to - The end point
+ * @return {Path} this - The Path instance
+ */
+Path.prototype.smurve = function (cp2, to) {
+  if (to instanceof Point !== true)
+    this.log.warning('Called `Path.smurve(cp2, to)` but `to` is not a `Point` object')
+  if (cp2 instanceof Point !== true)
+    this.log.warning('Called `Path.smurve(cp2, to)` but `cp2` is not a `Point` object')
+  // Retrieve cp1 from previous operation
+  const prevOp = this.ops.slice(-1).pop()
+  const cp1 = prevOp.cp2.rotate(180, prevOp.to)
+  this.ops.push({ type: 'curve', cp1, cp2, to })
+
+  return this
+}
+
+/**
+ * Adds a smooth curve operation without cp to Point to
+ *
+ * @return {Path} this - The Path instance
+ */
+Path.prototype.smurve_ = function (to) {
+  if (to instanceof Point !== true)
+    this.log.warning('Called `Path.smurve_(to)` but `to` is not a `Point` object')
+  // Retrieve cp1 from previous operation
+  const prevOp = this.ops.slice(-1).pop()
+  const cp1 = prevOp.cp2.rotate(180, prevOp.to)
+  const cp2 = to
+  this.ops.push({ type: 'curve', cp1, cp2, to })
+
+  return this
+}
+
+/**
  * Splits path on point, and retuns both halves as Path instances
  *
  * @param {Point} point - The Point to split this Path on
