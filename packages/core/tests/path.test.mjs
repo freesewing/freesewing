@@ -9,17 +9,16 @@ describe('Path', () => {
       name: 'test',
       draft: ({ Point, points, Path, paths, part }) => {
         points.from = new Point(10, 20)
-        points.cp1 = new Point(40, 0)
+        points.cp1 = new Point(40, 10)
         points.cp2 = new Point(60, 30)
         points.to = new Point(90, 20)
-        points.scp2 = new Point(30, 55)
-        points.sto = new Point(10, 50)
+        points.scp2 = new Point(140, 10)
+        points.sto = new Point(170, 20)
 
         paths.test = new Path()
           .move(points.from)
           .curve(points.cp1, points.cp2, points.to)
           .smurve(points.scp2, points.sto)
-        console.log(paths.test, 'in draft')
 
         return part
       },
@@ -28,9 +27,34 @@ describe('Path', () => {
     const pattern = new design()
     pattern.draft().render()
 
-    console.log(pattern.parts[0].test.paths)
-    console.log(pattern.stores[0].logs)
-    //expect(pattern.parts[0].test.paths.test.bottomRight.x).to.equal(-10)
+    expect(round(pattern.parts[0].test.paths.test.ops[2].cp1.x)).to.equal(120)
+    expect(round(pattern.parts[0].test.paths.test.ops[2].cp1.y)).to.equal(10)
+  })
+
+  it('Should draw a smurve_', () => {
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, Path, paths, part }) => {
+        points.from = new Point(10, 20)
+        points.cp1 = new Point(40, 10)
+        points.cp2 = new Point(60, 30)
+        points.to = new Point(90, 20)
+        points.sto = new Point(170, 20)
+
+        paths.test = new Path()
+          .move(points.from)
+          .curve(points.cp1, points.cp2, points.to)
+          .smurve_(points.sto)
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+
+    expect(round(pattern.parts[0].test.paths.test.ops[2].cp1.x)).to.equal(120)
+    expect(round(pattern.parts[0].test.paths.test.ops[2].cp1.y)).to.equal(10)
   })
 
   it('Should offset a line', () => {
