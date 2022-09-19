@@ -1,4 +1,14 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
+import { units } from '@freesewing/core'
+
+function logMeasurement(part, measurement, mm) {
+  const { log } = part.shorthand()
+  const cm = units(mm)
+  let shortname = part.name.substring(part.name.indexOf('.') + 1)
+  shortname = shortname.charAt(0).toUpperCase() + shortname.substring(1) 
+  log.info(shortname + ' ' + measurement + ': ' + cm)
+}
+
 
 function draftTortugaBody({
   measurements,
@@ -17,7 +27,7 @@ function draftTortugaBody({
   part,
 }) {
   const DEBUG = true
-  const DEBUG_POINTS = false
+  const DEBUG_POINTS = true
 
   const RIGHT = 0
   const LEFT = 180
@@ -65,13 +75,16 @@ function draftTortugaBody({
     width = seatWidth
     widthMeasurementUsed = 'Seat circumference'
   }
-  log.info('Garment width based on: ' + widthMeasurementUsed)
-  if (DEBUG) log.debug('Garment width: ' + width)
+  log.debug('Garment width based on: ' + widthMeasurementUsed)
 
   // Set our top left and top right points.
   const halfWidth = width / 2
   points.topLeft = points.topCenter.shift(180, halfWidth)
   points.topRight = points.topCenter.shift(0, halfWidth)
+
+  log.info('Note: All measurements include seam allowance.')
+  logMeasurement(part, 'width', width)
+  logMeasurement(part, 'half width', halfWidth)
 
   //------------------------------------------------
   // Garment length
@@ -82,11 +95,13 @@ function draftTortugaBody({
   const hipToKneeLength = kneeY - hipY
   const equalLength = hipY + hipToKneeLength * options.garmentLength
 
-  let length = equalLength
-
   const backAdditionalLength = equalLength * options.garmentExtraBackLength
   const backLength = equalLength + backAdditionalLength
   const frontLength = equalLength * 2 - backLength
+
+  logMeasurement(part, 'front length', frontLength)
+  logMeasurement(part, 'back length', backLength)
+  logMeasurement(part, 'full length', frontLength + backLength)
 
   // Set our bottom left and bottom right points.
   points.bottomLeft = points.topLeft.shift(DOWN, frontLength)
@@ -115,6 +130,9 @@ function draftTortugaBody({
     .line(points.neckSlitLeft)
     .attr('class', 'fabric dashed')
 
+  logMeasurement(part, 'half neck slit length', halfNeckSlitLength)
+  logMeasurement(part, 'full neck slit length', neckSlitLength)
+
   //------------------------------------------------
   // Chest
 
@@ -130,6 +148,8 @@ function draftTortugaBody({
     .line(points.chestSlitBottom)
     .attr('class', 'fabric dashed')
 
+  logMeasurement(part, 'chest slit length', chestSlitLength)
+
   //------------------------------------------------
   // Armscye
 
@@ -143,6 +163,8 @@ function draftTortugaBody({
     .shiftTowards(points.topLeftSingle, armscyeLength)
   points.armscyeBottomRightSingle = points.topRight
     .shiftTowards(points.topRightSingle, armscyeLength)
+
+  logMeasurement(part, 'armscye length', armscyeLength)
 
   //------------------------------------------------
   // Side Vents
@@ -159,6 +181,8 @@ function draftTortugaBody({
     .shift(UP, sideVentLength)
   points.sideVentTopRightBack = points.bottomRightBack
     .shift(UP, sideVentLength)
+
+  logMeasurement(part, 'side vent length', sideVentLength)
 
   //------------------------------------------------
   // Other Paths
@@ -374,6 +398,7 @@ function draftTortugaBody({
       for (const p in points) {
         if (p.indexOf('_') > -1) continue
         if (p.indexOf('title') > -1) continue
+        if (p.indexOf('logo') > -1) continue
         points[p]
           .attr('data-circle', 2)
           .attr('data-circle-class', 'fill-note')
@@ -399,12 +424,14 @@ function draftTortugaBody({
       to: points.bottomRight,
       y: bottomSeamY + (sa + (15 * 2)),
     })
+
     // Half garment width
     macro('hd', {
       from: points.bottomLeftBack,
       to: new Point(0, points.bottomLeftBack.y),
       y: bottomSeamY + (sa + 15),
     })
+
     // Garment length
     if (options.singleFrontBack) {
       // Full length
@@ -413,16 +440,23 @@ function draftTortugaBody({
         to: points.bottomRight,
         x: rightSeamX + (sa + 15 * 2),
       })
+      const fullLength = points.topRightSingle.dist(points.bottomRight)
+      log.info('Body full length: ' + fullLength)
+
       macro('vd', {
         from: points.topRightSingle,
         to: points.topRight,
         x: rightSeamX + (sa + 15),
       })
+      log.info('Body back legnth: ' + backLength)
+
       macro('vd', {
         from: points.topRight,
         to: points.bottomRight,
         x: rightSeamX + (sa + 15),
       })
+      log.info('Body front length: ' + frontLength)
+
     } else {
       macro('vd', {
         from: points.topRight,
