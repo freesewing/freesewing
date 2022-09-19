@@ -275,21 +275,4 @@ describe('Svg', () => {
     expect(svg.__tab()).to.equal('    ')
   })
 
-  /*
-  it('Should not render an Svg path when render property is false', () => {
-    let pattern = new Pattern()
-    pattern.render()
-    pattern.parts.test = new pattern.Part()
-    let p = pattern.parts.test
-    p.paths.test = new p.Path()
-      .move(new p.Point(0, 0))
-      .line(new p.Point(40, 20))
-      .curve(new p.Point(12, 34), new p.Point(56, 78), new p.Point(21, 32))
-      .close()
-      .attr('id', 'something')
-      .attr('class', 'freesewing')
-    p.paths.test.render = false
-    expect(pattern.render()).to.equalIgnoreSpaces(render.part)
-  })
-*/
 })

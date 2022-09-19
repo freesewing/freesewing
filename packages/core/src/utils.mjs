@@ -288,7 +288,7 @@ export function deg2rad(degrees) {
  * @param {Stack} stack - The Stack instance
  * @return {string} transform - The SVG transform value
  */
-export const generateStackTransform = (x, y, rotate, flipX, flipY, stack) => {
+export const generateStackTransform = (x=0, y=0, rotate=0, flipX=false, flipY=false, stack) => {
   const transforms = []
   let xTotal = x || 0
   let yTotal = y || 0

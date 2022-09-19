@@ -43,10 +43,10 @@ export function Store(methods = []) {
   }
   this.logs = logs
 
-  for (const method of methods) {
-    if (avoid.indexOf(method[0]) !== -1) {
-      this.logs.warning(`You cannot squat ${method[0]} in the store`)
-    } else set(this, ...method)
+  for (const [path, method] of methods) {
+    if (avoid.indexOf(path) !== -1) {
+      this.log.warning(`You cannot overwrite store.${path}()`)
+    } else set(this, path, method)
   }
 
   return this
@@ -62,10 +62,10 @@ export function Store(methods = []) {
  * @param {function} method - Method to add to the store (variadic)
  * @return {Store} this - The Store instance
  */
-Store.prototype.extend = function (...methods) {
+Store.prototype.extend = function (methods) {
   for (const [path, method] of methods) {
-    if (avoid.indexOf(method[0]) !== -1) {
-      this.log.warning(`You can't squat ${method[0]}in the store`)
+    if (avoid.indexOf(path) !== -1) {
+      this.log.warning(`You cannot overwrite store.${path}()`)
     } else {
       this.log.info(`Extending store with ${path}`)
       set(this, path, (...args) => method(this, ...args))

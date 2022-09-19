@@ -117,31 +117,11 @@ Stack.prototype.attr = function (name, value, overwrite = false) {
 /** Generates the transform for a stack */
 Stack.prototype.generateTransform = function (transforms) {
   const { move, rotate, flipX, flipY } = transforms
-  const generated = utils.generateStackTransform(move.x, move.y, rotate, flipX, flipY, this)
+  const generated = utils.generateStackTransform( move?.x, move?.y, rotate, flipX, flipY, this)
 
   for (var t in generated) {
     this.attr(t, generated[t], true)
   }
 }
-
-/** Homes the stack so that its top left corner is in (0,0) */
-//Stack.prototype.home = function () {
-//  const parts = this.getPartList()
-//  if (parts.length < 1) return this
-//  for (const part of this.getPartList()) {
-//    part.home()
-//  }
-//
-//  if (parts.length === 1) {
-//    this.topLeft = part.topLeft
-//    this.bottomRigth = part.bottomRight
-//    this.width = part.width
-//    this.height = part.height
-//
-//    return this
-//  }
-//
-//  return this.boundary()
-//}
 
 export default Stack

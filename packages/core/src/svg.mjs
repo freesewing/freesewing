@@ -60,7 +60,7 @@ Svg.prototype.render = function () {
   this.activeStackIndex = 0
   for (let stackId in this.pattern.stacks) {
     this.activeStack = stackId
-    this.idPrefix = this.pattern.settings[this.activeStackIndex].idPrefix
+    this.idPrefix = this.pattern.settings[this.activeStackIndex]?.idPrefix || 'fs-'
     const stack = this.pattern.stacks[stackId]
     if (!stack.hidden) {
       const stackSvg = this.__renderStack(stack)

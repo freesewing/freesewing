@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Snippet, Point } from '../src/index.mjs'
+import { Design, Snippet, Point } from '../src/index.mjs'
 
 const expect = chai.expect
 
@@ -26,4 +26,22 @@ describe('Snippet', () => {
     s.attr('class', 'less', true)
     expect(s.attributes.get('class')).to.equal('less')
   })
+
+  it('Should get a snippet via the snippets proxy', () => {
+    let result
+    const part = {
+      name: 'test',
+      draft: ({ snippets, part }) => {
+        snippets.test = ':)'
+        result = snippets.test
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(result).to.equal(':)')
+  })
+
 })

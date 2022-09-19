@@ -4,6 +4,7 @@ import { Design } from '../src/index.mjs'
 const expect = chai.expect
 
 describe('Stacks', () => {
+
   describe('Pattern.init()', () => {
     const partA = {
       name: 'test.partA',
@@ -52,7 +53,6 @@ describe('Stacks', () => {
         paths.line = new Path().move(points.from).line(points.to)
         return part
       },
-      //  stack: 'box',
     }
 
     const Pattern = new Design({
@@ -68,8 +68,6 @@ describe('Stacks', () => {
       },
     })
     pattern.draft()
-    //console.log(pattern.parts)
-    //pattern.render()
 
     it('Pattern.init() should resolve dependencies', () => {
       expect(typeof pattern.config.resolvedDependencies).to.equal('object')
@@ -104,6 +102,7 @@ describe('Stacks', () => {
       pattern.draft().render()
       expect(pattern.stacks.test.topLeft.x).to.equal(17)
       expect(pattern.stacks.test.topLeft.y).to.equal(74)
+      pattern.render()
       expect(pattern.stacks.test.bottomRight.x).to.equal(125)
       expect(pattern.stacks.test.bottomRight.y).to.equal(458)
       expect(pattern.stacks.test.width).to.equal(108)
@@ -149,7 +148,8 @@ describe('Stacks', () => {
       expect(pattern.stacks.test.topLeft.x).to.equal(9)
       expect(pattern.stacks.test.topLeft.y).to.equal(66)
     })
-    it('Should generate the part transforms', () => {
+
+    it('Should generate the stack transforms', () => {
       const part = {
         name: 'test',
         draft: ({ points, Point, paths, Path, part }) => {
@@ -172,5 +172,58 @@ describe('Stacks', () => {
       expect(pattern.stacks.test.attributes.list.transform.length).to.equal(1)
       expect(pattern.stacks.test.attributes.list.transform[0]).to.equal('translate(10 20)')
     })
+  })
+
+  it('Should get the anchor for the stack', () => {
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, paths, Path, part }) => {
+        points.anchor = new Point(2, 2)
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    const anchor = pattern.stacks.test.getAnchor()
+    expect(anchor.name).to.equal('anchor')
+    expect(anchor.x).to.equal(2)
+    expect(anchor.y).to.equal(2)
+  })
+
+  it('Should get the gridAnchor for the stack', () => {
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, paths, Path, part }) => {
+        points.gridAnchor = new Point(3, 3)
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    const anchor = pattern.stacks.test.getAnchor()
+    expect(anchor.name).to.equal('gridAnchor')
+    expect(anchor.x).to.equal(3)
+    expect(anchor.y).to.equal(3)
+  })
+
+  it('Should get the default aAnchor for the stack', () => {
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, paths, Path, part }) => {
+        points.test = new Point(3, 3)
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    const anchor = pattern.stacks.test.getAnchor()
+    expect(anchor.x).to.equal(0)
+    expect(anchor.y).to.equal(0)
   })
 })

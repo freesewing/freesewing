@@ -130,15 +130,8 @@ Pattern.prototype.draft = function () {
             this.stores[set].log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
           }
         } else this.stores[set].log.error(`Unable to draft pattern. Part.draft() is not callable`)
-        try {
-          this.parts[set][partName].hidden =
-            this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
-        } catch (err) {
-          this.stores[set].log.error([
-            `Unable to set \`hidden\` property on part \`${partName}\``,
-            err,
-          ])
-        }
+        this.parts[set][partName].hidden =
+          this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
       } else {
         this.stores[set].log.debug(
           `Part \`${partName}\` is not needed. Skipping draft and setting hidden to \`true\``
@@ -253,11 +246,12 @@ Pattern.prototype.init = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sample = function () {
+  this.init()
   if (this.settings[0].sample.type === 'option') {
     return this.sampleOption(this.settings[0].sample.option)
   } else if (this.settings[0].sample.type === 'measurement') {
     return this.sampleMeasurement(this.settings[0].sample.measurement)
-  } else if (this.settings.sample.type === 'models') {
+  } else if (this.settings[0].sample.type === 'models') {
     return this.sampleModels(this.settings[0].sample.models, this.settings[0].sample.focus || false)
   }
 }
@@ -268,7 +262,7 @@ Pattern.prototype.sample = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sampleMeasurement = function (measurementName) {
-  this.store.log.debug(`Sampling measurement \`${measurementName}\``)
+  this.stores[0].log.debug(`Sampling measurement \`${measurementName}\``)
   this.__runHooks('preSample')
   this.__applySettings(this.__measurementSets(measurementName))
   this.init()
@@ -283,7 +277,7 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sampleModels = function (models, focus = false) {
-  this.store.log.debug(`Sampling models \`${Object.keys(models).join(', ')}\``)
+  this.stores[0].log.debug(`Sampling models \`${Object.keys(models).join(', ')}\``)
   this.__runHooks('preSample')
   this.__applySettings(this.__modelSets(models, focus))
   this.init()
@@ -345,15 +339,7 @@ Pattern.prototype.render = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.use = function (plugin, data) {
-  if (this.plugins?.[plugin.name]?.condition && !plugin.condition) {
-    // Plugin was first loaded conditionally, and is now loaded explicitly
-    this.stores[0].log.info(
-      `Plugin \`${plugin.plugin.name} was loaded conditionally earlier, but is now loaded explicitly.`
-    )
-    return this.__loadPlugin(plugin, data)
-  }
-  // New plugin
-  else if (!this.plugins?.[plugin.name])
+  if (!this.plugins?.[plugin.name])
     return plugin.plugin && plugin.condition
       ? this.__useIf(plugin, data) // Conditional plugin
       : this.__loadPlugin(plugin, data) // Regular plugin
@@ -482,8 +468,8 @@ Pattern.prototype.__filterOptionalMeasurements = function () {
  * @return {bool} hidden - true if the part is hidden, or false if not
  */
 Pattern.prototype.__isPartHidden = function (partName) {
-  if (Array.isArray(this.settings.only)) {
-    if (this.settings.only.includes(partName)) return false
+  if (Array.isArray(this.settings[this.activeSet || 0].only)) {
+    if (this.settings[this.activeSet || 0].only.includes(partName)) return false
   }
   if (this.__parts?.[partName]?.hide) return true
   if (this.__parts?.[partName]?.hideAll) return true
@@ -501,9 +487,9 @@ Pattern.prototype.__isPartHidden = function (partName) {
 Pattern.prototype.__isStackHidden = function (stackName) {
   if (!this.stacks[stackName]) return true
   const parts = this.stacks[stackName].getPartNames()
-  if (Array.isArray(this.settings.only)) {
+  if (Array.isArray(this.settings[this.activeStack || 0].only)) {
     for (const partName of parts) {
-      if (this.settings.only.includes(partName)) return false
+      if (this.settings[this.activeStack || 0].only.includes(partName)) return false
     }
   }
   for (const partName of parts) {
@@ -694,7 +680,7 @@ Pattern.prototype.__loadPlugins = function () {
  */
 Pattern.prototype.__loadPluginStoreMethods = function (plugin) {
   if (Array.isArray(plugin.store)) {
-    for (const store of this.stores) store.extend(...plugin.store)
+    for (const store of this.stores) store.extend(plugin.store)
   } else this.stores[0].log.warning(`Plugin store methods should be an Array`)
 }
 
@@ -722,7 +708,7 @@ Pattern.prototype.__macro = function (key, method) {
 Pattern.prototype.__measurementSets = function (measurementName) {
   let val = this.settings[0].measurements[measurementName]
   if (val === undefined)
-    this.stores.log.error(
+    this.stores[0].log.error(
       `Cannot sample measurement \`${measurementName}\` because it's \`undefined\``
     )
   let step = val / 50
@@ -826,7 +812,7 @@ Pattern.prototype.__needs = function (partName, set = 0) {
  */
 Pattern.prototype.__optionSets = function (optionName) {
   let option = this.config.options[optionName]
-  if (typeof option.list === 'object') return this.__listOptionSets(optionName)
+  if (typeof option?.list === 'object') return this.__listOptionSets(optionName)
   const sets = []
   let factor = 1
   let step, val
@@ -917,7 +903,7 @@ Pattern.prototype.__pack = function () {
     for (let stackId of Object.keys(this.settings[0].layout.stacks)) {
       // Some parts are added by late-stage plugins
       if (this.stacks[stackId]) {
-        let transforms = this.settings.layout.stacks[stackId]
+        let transforms = this.settings[this.activeStack || 0].layout.stacks[stackId]
         this.stacks[stackId].generateTransform(transforms)
       }
     }
