@@ -80,6 +80,7 @@ function draftTortugaShoulderStrap({
     .line(points.topRight)
     .line(points.topLeft)
     .close()
+    .attr('class', 'fabric')
 
   // Invisible boundary path around the part, to
   // allow extra space for titlte and grainline info.:q

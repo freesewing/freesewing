@@ -65,8 +65,7 @@ export const base = {
     // Amount of extra back length, as percentage of the normal length.
     garmentExtraBackLength: { pct: 0, min: 0, max: 5, menu: 'body' },
     // Add reinforcement strap to the shoulder seams?
-    //shoulderStrap: { bool: false, menu: 'body' },
-    shoulderStrap: { bool: true, menu: 'body' }, // DEBUG: TO BE REMOVED
+    shoulderStrap: { bool: true, menu: 'body' },
     // Length of vertical chest slit, as percentage of HPS-to-bust.
     chestSlitLength: { pct: 100, min: 50, max: 125, menu: 'body' },
     // Add a reinforcement patch to the bottom of the chest slit?
@@ -100,6 +99,8 @@ export const base = {
     neckGussetLength: { pct: 17, min: 5, max: 30, menu: 'neck' },
     // Width of collar, as percentage of neck circumference.
     collarWidth: { pct: 25, min: 5, max: 50, menu: 'neck' },
+    // Length of collar, as percent added to neck circumference.
+    collarLength: { pct: 10, min: 5, max: 20, menu: 'neck' },
     // Length of sleeve, as percent added to shoulder-to-wrist.
     sleeveLength: { pct: 10, min: 0, max: 50, menu: 'sleeve' },
     // Width of sleeve, as percent added to biceps.
@@ -110,9 +111,11 @@ export const base = {
     // shoulder to elbow length.
     sleeveGussetLength: { pct: 50, min: 20, max: 80, menu: 'sleeve' },
     // Length of sleeve vents, as percentage of elbow-to-wrist length.
-    sleeveVentLength: { pct: 3, min: 1, max: 20, menu: 'sleeve' },
+    sleeveVentLength: { pct: 20, min: 0, max: 50, menu: 'sleeve' },
     // Width of cuff, as percentage of elbow-to-wrist length.
-    cuffWidth: { pct: 5, min: 1, max: 5, menu: 'sleeve' },
+    cuffWidth: { pct: 15, min: 2, max: 35, menu: 'sleeve' },
+    // Length of cuff, as percent added to wrist circumference.
+    cuffLength: { pct: 10, min: 2, max: 20, menu: 'sleeve' },
   },
   plugins: [pluginBundle],
   draft: draftTortugaBase,

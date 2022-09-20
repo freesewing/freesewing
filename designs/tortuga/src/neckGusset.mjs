@@ -55,19 +55,25 @@ function draftTortugaNeckGusset({
   points.center = points.topCenter.shift(DOWN, length / 2)
 
   //------------------------------------------------
-  // Other Paths
+  // Paths
 
-  paths.totalPartOutline = new Path()
+  paths.totalPart = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
     .line(points.topRight)
     .line(points.topLeft)
     .close()
+    .attr('class', 'fabric')
 
   // Complete?
   if (complete) {
     let scale = Math.min(1, width / 175)
+
+    paths.foldline = new Path()
+      .move(points.topLeft)
+      .line(points.bottomRight)
+      .attr('class', 'lashed mark')
 
     points.title = points.topCenter
       .shiftFractionTowards(points.bottomCenter, 0.1)
@@ -99,6 +105,9 @@ function draftTortugaNeckGusset({
 
   // Paperless?
   if (paperless) {
+
+    delete paths.foldline
+
     // Dimensions
     let topSeamY = points.topRight.y
     let bottomSeamY = points.bottomLeft.y

@@ -19,7 +19,7 @@ function draftTortugaBody({
   store,
   part,
 }) {
-  const DEBUG = true
+  const DEBUG = false
   const DEBUG_POINTS = false
 
   const RIGHT = 0
@@ -269,8 +269,10 @@ function draftTortugaBody({
     .attr('class', 'fabric')
 
   if (options.singleFrontBack) {
-    delete paths.topSeamLeft
-    delete paths.topSeamRight
+    paths.topSeamLeft
+      .attr('class', 'lashed mark')
+    paths.topSeamRight
+      .attr('class', 'lashed mark')
 
     paths.totalPartOutline = new Path()
       .move(points.topLeftSingle)
@@ -324,8 +326,8 @@ function draftTortugaBody({
     if (scale < .75) textsize = 'text-sm'
     if (scale < .5) textsize = 'text-xs'
     if (DEBUG) {
-      log.debug('Element scaling: ' + scale)
-      log.debug('Text size: ' + textsize)
+      log.debug('Body Element scaling: ' + scale)
+      log.debug('Body Text size: ' + textsize)
     }
 
     points.title = points.chestSlitBottom.shiftFractionTowards(
@@ -355,7 +357,7 @@ function draftTortugaBody({
     })
 
     //----------------------------------------
-    // Notches
+    // Notches and text
 
     snippets.neckSlitLeftNotch = new Snippet('notch', points.neckSlitLeft)
       .attr('data-scale', scale)
@@ -366,6 +368,17 @@ function draftTortugaBody({
     snippets.chestSlitBottomNotch =
       new Snippet('notch', points.chestSlitBottom)
         .attr('data-scale', scale)
+
+    points.topText = points.neckSlitLeft
+      .shiftFractionTowards(points.topCenter, 0.5)
+      .shift(DOWN, Math.min(frontLength / 20, 10))
+      .attr('data-text', 'Top')
+      .attr('data-text-class', `fill-note ${textsize}`)
+
+    points.bottomText = new Point(0, points.bottomLeft.y)
+      .attr('data-text', 'Bottom')
+      .attr('data-text-class', `fill-note ${textsize}`)
+
 
     snippets.armScyeBottomLeftNotch =
       new Snippet('notch', points.armscyeBottomLeft)
@@ -397,6 +410,7 @@ function draftTortugaBody({
       snippets.sideVentTopRightBackNotch =
         new Snippet('bnotch', points.sideVentTopRightBack)
           .attr('data-scale', scale)
+      delete points.bottomText
       points.bottomCenterFront = new Point(0, points.bottomLeft.y)
         .attr('data-text', 'Front bottom')
         .attr('data-text-class', `right fill-note ${textsize}`)

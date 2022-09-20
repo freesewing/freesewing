@@ -55,19 +55,25 @@ function draftTortugaSleeveGusset({
   points.center = points.topCenter.shift(DOWN, length / 2)
 
   //------------------------------------------------
-  // Other Paths
+  // Paths
 
-  paths.totalPartOutline = new Path()
+  paths.totalPart = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
     .line(points.topRight)
     .line(points.topLeft)
     .close()
+    .attr('class', 'fabric')
 
   // Complete?
   if (complete) {
     let scale = Math.min(1, width / 200)
+
+    paths.foldline = new Path()
+      .move(points.topLeft)
+      .line(points.bottomRight)
+      .attr('class', 'lashed mark')
 
     points.title = points.topCenter
       .shiftFractionTowards(points.bottomCenter, 0.3)
@@ -99,6 +105,9 @@ function draftTortugaSleeveGusset({
 
   // Paperless?
   if (paperless) {
+
+    delete paths.foldline
+
     // Dimensions
     let topSeamY = points.topRight.y
     let bottomSeamY = points.bottomLeft.y
@@ -122,6 +131,7 @@ function draftTortugaSleeveGusset({
       from: points.topLeft,
       to: points.bottomRight,
     })
+
   }
 
   return part

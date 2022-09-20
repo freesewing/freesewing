@@ -1,7 +1,6 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
-import { units } from '@freesewing/core'
 
-function draftTortugaCuff({
+function draftTortugaCollar({
   measurements,
   options,
   Point,
@@ -32,27 +31,21 @@ function draftTortugaCuff({
   //------------------------------------------------
   // Length and Width
 
-  const elbowToWristLength = measurements.shoulderToWrist -
-    measurements.shoulderToElbow
+  // The length is the neck circumference plus an extra amount.
+  const length = measurements.neck + 
+    measurements.neck * options.collarLength
 
-  if (DEBUG) log.debug('Elbow to wrist measurement is ' +
-    units(elbowToWristLength))
+  // The width of the finished collar is a percentage of the neck
+  // circumference.
+  const finishedWidth = measurements.neck * options.collarWidth
 
-  // The length is the wrist circumference plus some extra.
-  const length = measurements.wrist +
-    measurements.wrist * options.cuffLength
-
-  // The width of the finished cuff is a percentage of the
-  // elbow-to-wrist calculated measurement.
-  const finishedWidth = elbowToWristLength * options.cuffWidth
-
-  // Because the cuff is made of a double-width rectangle
+  // Because the collar is made of a double-width rectangle
   // folded in half, the actual width of the part needs to be
   // doubled.
   const width = finishedWidth * 2
 
   // Set our points.
-  // The cuff is drawn with the length as the horizontal dimension
+  // The collar is drawn with the length as the horizontal dimension
   // and the width as the vertical dimension.
   const halfLength= length / 2
   points.topLeft = points.topCenter.shift(LEFT, halfLength)
@@ -85,21 +78,6 @@ function draftTortugaCuff({
   // Complete?
   if (complete) {
     let scale = Math.min(1, width / 200)
-    let buttonscale = Math.min(1, width / 100)
-    if (buttonscale == 1) {
-      buttonscale = width / 80
-    }
-
-    points.buttonholeLeft = points.bottomLeft
-      .shiftFractionTowards(points.centerLeft, 0.5)
-      .shiftFractionTowards(points.centerRight, 0.05)
-    points.buttonholeRight = points.buttonholeLeft.flipX()
-    snippets.leftButtonhole = new Snippet('buttonhole',
-      points.buttonholeLeft)
-      .attr('data-scale', buttonscale)
-    snippets.rightButtonhole = new Snippet('buttonhole',
-      points.buttonholeRight)
-      .attr('data-scale', buttonscale)
 
     paths.foldline = new Path()
       .move(points.centerLeft)
@@ -111,8 +89,8 @@ function draftTortugaCuff({
       .shiftFractionTowards(points.bottomLeft, 0.1)
     macro('title', {
       at: points.title,
-      nr: 7,
-      title: 'Cuff',
+      nr: 6,
+      title: 'Collar',
       scale: scale,
     })
 
@@ -162,9 +140,9 @@ function draftTortugaCuff({
   return part
 }
 
-export const cuff = {
-  name: 'tortuga.cuff',
+export const collar = {
+  name: 'tortuga.collar',
   after: base,
   hideDependencies: true,
-  draft: draftTortugaCuff,
+  draft: draftTortugaCollar,
 }
