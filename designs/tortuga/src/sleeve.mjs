@@ -76,8 +76,10 @@ function draftTortugaSleeve({
   // Complete?
   if (complete) {
     let scale = Math.min(1, width / 200)
+
     points.title = points.topCenter
-      .shiftFractionTowards(points.bottomCenter, 0.4)
+      .shiftFractionTowards(points.bottomCenter, 0.3)
+      .shiftFractionTowards(points.bottomLeft, 0.2)
     macro('title', {
       at: points.title,
       nr: 2,
@@ -86,7 +88,7 @@ function draftTortugaSleeve({
     })
 
     points.logo = points.title
-      .shiftFractionTowards(points.bottomCenter, 0.3)
+      .shiftFractionTowards(points.bottomCenter, 0.4)
     snippets.logo = new Snippet('logo', points.logo)
       .attr('data-scale', scale)
 

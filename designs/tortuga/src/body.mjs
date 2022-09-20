@@ -163,6 +163,9 @@ function draftTortugaBody({
 
   logMeasurement(part, 'armscye length', armscyeLength)
 
+  // Save armscye length to use in sleeve patch
+  store.set('armscyeLength', armscyeLength)
+
   //------------------------------------------------
   // Side Vents
 

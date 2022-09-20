@@ -65,7 +65,8 @@ export const base = {
     // Amount of extra back length, as percentage of the normal length.
     garmentExtraBackLength: { pct: 0, min: 0, max: 5, menu: 'body' },
     // Add reinforcement patches to the shoulder seams?
-    shoulderPatch: { bool: false, menu: 'body' },
+    //shoulderPatch: { bool: false, menu: 'body' },
+    shoulderPatch: { bool: true, menu: 'body' }, // DEBUG: TO BE REMOVED
     // Length of vertical chest slit, as percentage of HPS-to-bust.
     chestSlitLength: { pct: 100, min: 50, max: 125, menu: 'body' },
     // Add a reinforcement patch to the bottom of the chest slit?

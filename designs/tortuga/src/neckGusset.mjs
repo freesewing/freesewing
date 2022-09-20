@@ -67,11 +67,11 @@ function draftTortugaNeckGusset({
 
   // Complete?
   if (complete) {
-    let scale = Math.min(1, width / 300)
+    let scale = Math.min(1, width / 175)
 
     points.title = points.topCenter
-      .shiftFractionTowards(points.bottomCenter, 0.2)
-      .shiftFractionTowards(points.bottomRight, 0.1)
+      .shiftFractionTowards(points.bottomCenter, 0.1)
+      .shiftFractionTowards(points.bottomLeft, 0.5)
     macro('title', {
       at: points.title,
       nr: 4,
@@ -79,15 +79,8 @@ function draftTortugaNeckGusset({
       scale: scale,
     })
 
-    points.logo = points.bottomCenter
-      .shiftFractionTowards(points.bottomLeft, 0.3)
-      .shiftFractionTowards(points.topLeft, 0.2)
-
-    snippets.logo = new Snippet('logo', points.logo)
-      .attr('data-scale', scale)
-
     points.grainlineTop = points.topRight
-      .shift(DOWN, length / 8).shift(LEFT, width / 10)
+      .shift(DOWN, length / 4).shift(LEFT, width / 5)
     points.grainlineBottom = points.grainlineTop
       .shift(DOWN, length / 2)
     macro('grainline', {

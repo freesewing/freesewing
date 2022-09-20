@@ -41,7 +41,7 @@ function draftTortugaShoulderPatch({
   const shoulderLength = store.get('shoulderLength')
   const length = shoulderLength + (neckGussetHypotenuseLength / 2)
 
-  const width = measurements.neck / 10
+  const width = measurements.neck / 40
 
   // Set our points
   const halfWidth = width / 2
@@ -50,16 +50,30 @@ function draftTortugaShoulderPatch({
   points.bottomLeft = points.topLeft.shift(DOWN, length)
   points.bottomRight = points.topRight.shift(DOWN, length)
 
+  logMeasurement(part, 'width', width)
+  logMeasurement(part, 'length', length)
+
   // Utility points
   points.bottomCenter = points.topCenter.shift(DOWN, length)
   points.center = points.topCenter.shift(DOWN, length / 2)
   points.centerLeft = points.topLeft.shift(DOWN, length / 2)
   points.centerRight = points.topRight.shift(DOWN, length / 2)
 
-  //------------------------------------------------
-  // Other Paths
+  // Points outside the part, to set additional boundary
+  points.topLeftBoundary = points.topLeft
+    .shift(UP, width)
+    .shift(LEFT, width)
+  points.bottomLeftBoundary = points.topLeftBoundary
+    .shift(DOWN, length + (width * 2))
+  points.topRightBoundary = points.topLeftBoundary
+    .shift(RIGHT, length / 2)
+  points.bottomRightBoundary = points.bottomLeftBoundary
+      .shift(RIGHT, length / 2)
 
-  paths.totalPartOutline = new Path()
+  //------------------------------------------------
+  // Paths
+
+  paths.actualPartOutline = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
@@ -67,39 +81,42 @@ function draftTortugaShoulderPatch({
     .line(points.topLeft)
     .close()
 
+  // Invisible boundary path around the part, to
+  // allow extra space for titlte and grainline info.:q
+  paths.boundaryOutline = new Path()
+    .move(points.topLeftBoundary)
+    .line(points.bottomLeftBoundary)
+    .line(points.bottomRightBoundary)
+    .line(points.topRightBoundary)
+    .line(points.topLeftBoundary)
+    .close()
+    .attr('class' , 'help')
+    .attr('style', 'stroke-opacity: 0')
+
   // Complete?
   if (complete) {
-    let scale = Math.min(1, width / 300)
+    let scale = Math.min(1, width / 15)
 
-    points.title = points.topCenter
-      .shiftFractionTowards(points.bottomCenter, 0.2)
-      .shiftFractionTowards(points.bottomRight, 0.1)
+    // Title, logo, grainline are outside part, inside boundary
+    points.title = points.topRight
+      .shiftFractionTowards(points.bottomRightBoundary, 0.4)
+      .shiftFractionTowards(points.bottomRight, 0.2)
     macro('title', {
       at: points.title,
-      nr: 4,
-      title: 'Neck Gusset',
+      nr: 5,
+      title: 'Shoulder Patch',
       scale: scale,
     })
 
-    points.logo = points.bottomCenter
-      .shiftFractionTowards(points.bottomLeft, 0.3)
-      .shiftFractionTowards(points.topLeft, 0.2)
-
-    snippets.logo = new Snippet('logo', points.logo)
-      .attr('data-scale', scale)
-
     points.grainlineTop = points.topRight
-      .shift(DOWN, length / 8).shift(LEFT, width / 10)
-    points.grainlineBottom = points.grainlineTop
-      .shift(DOWN, length / 2)
+      .shiftFractionTowards(points.bottomRightBoundary, 0.15)
+    points.grainlineBottom = points.bottomRight
+      .shiftFractionTowards(points.topRightBoundary, 0.15)
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
       scale: scale,
     })
-
-    //----------------------------------------
-    // Notches
 
     if (DEBUG_POINTS) {
       showPoints(points, scale, textsize)
@@ -138,6 +155,6 @@ function draftTortugaShoulderPatch({
 
 export const shoulderPatch = {
   name: 'tortuga.shoulderPatch',
-  after: [ base, neckGusset, body, ]
+  after: [ base, neckGusset, body, ],
   draft: draftTortugaShoulderPatch,
 }
