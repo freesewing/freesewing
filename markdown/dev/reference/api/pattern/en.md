@@ -1,33 +1,72 @@
 ---
 title: Pattern
-order: 15
+order: 20
 ---
 
 The `Pattern` object in FreeSewing's core library holds all data and logic of a pattern.
-It is the parametric blueprint that when instantiated with a user's measurements and
-objects will generate a made-to-measure pattern.
+It is the parametric blueprint that when instantiated with a user's settings
+can draft a made-to-measure sewing pattern.
 
-## Pattern constructor
+## Creating a Pattern
+
+A Pattern in FreeSewing is an instantiated Design:
 
 ```js
-function freesewing.Pattern(object settings) 
+import { Florence } from "@freesewing/florence"
+
+const pattern = new Florence()
 ```
 
-A pattern is instantiated by passing a [settings object](/reference/api/settings/) to the pattern constructor.
+You probably want to create a pattern using your own [settings](/reference/api/settings):
 
-This settings objects holds, amongst other things, the measurements and options chosen by the user.
-Refer to the [settings documentation](/reference/api/settings/) for an exhaustive list.
+```js
+import { Florence } from "@freesewing/florence"
 
-## Pattern properties
+const pattern = new Florence({
+  paperless: true,
+  measurements: {
+    head: 390,
+  }
+})
+```
 
-- `settings` : The settings as set by the user
-- `options` : the options as set by the user
-- `config` : The pattern configuration
-- `parts` : A plain object to hold your parts
-- `Part` : The [Part](/reference/api/part) constructor
-- `store` : A [Store](/reference/api/store) instance
-- `svg` : An [Svg](/reference/api/svg) instance
-- `is` : A string that will be set to `draft` or `sample` when you respectively draft or sample a pattern. This allows plugins that hook into your pattern to determine what to do in a given scenario.
+## Multisets in FreeSewing
+
+You can pass the Pattern constructor an array of multiple settings objects:
+
+```js
+import { Florence } from "@freesewing/florence"
+
+const pattern = new Florence([
+  {
+    measurements: {
+      head: 390,
+    }
+  },
+  {
+    measurements: {
+      head: 420,
+    }
+  },
+])
+```
+
+We refer to these *multiple sets of settings* as **multisets**.
+It is what powers FreeSewing's [sampling capabilities](/reference/api/pattern/sample) but
+it also allows you to draft some pattern parts with one set of measurements, and other parts
+with another set. For example if you have an asymetric model to fit.
+
+<Note>
+
+##### Core always keeps a set of settings
+
+Multisets is an advanced feature of FreeSewing, and for the most part you can forget about it
+until the day you want to use it.
+
+However, it's good to keep in mind that under the hood, FreeSewing will always use a set of settings.
+It just so happens that in most cases, there will be only one settings object in the set.
+
+</Note>
 
 ## Pattern methods
 
