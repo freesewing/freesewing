@@ -5,6 +5,7 @@ import ThemePicker from 'shared/components/theme-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 import SearchIcon from 'shared/components/icons/search.js'
+import Ribbon from 'shared/components/ribbon.js'
 
 const Right = props => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -47,7 +48,6 @@ const Header = ({ app, setSearch }) => {
         transition-transform
         ${show ? '': 'fixed top-0 left-0 -translate-y-20'}
         drop-shadow-xl
-        ${app.loading ? "theme-gradient loading" : ""}
       `}>
         <div className="max-w-6xl m-auto">
           <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
@@ -118,6 +118,7 @@ const Header = ({ app, setSearch }) => {
             </div>
           </div>
         </div>
+        <Ribbon loading={app.loading} theme={app.theme} />
       </header>
   )
 }
