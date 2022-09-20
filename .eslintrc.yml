@@ -6,9 +6,16 @@ overrides:
   - files: ["*.yaml", "*.yml"]
     plugins: ["yaml"]
     extends: ["plugin:yaml/recommended"]
+# Required when using experimental EcmaScript features
+parser: "@babel/eslint-parser"
 parserOptions:
   ecmaVersion: latest
   sourceType: module
+  # Options specific to the Babel parser
+  requireConfigFile: false
+  babelOptions:
+    plugins:
+    - "@babel/plugin-syntax-import-assertions"
 rules: {}
 globals:
   it: readonly
