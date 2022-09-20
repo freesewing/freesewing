@@ -1,7 +1,8 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
-import { units } from '@freesewing/core'
+import { neckGusset } from './neckGusset.mjs'
+import { body } from './body.mjs'
 
-function draftTortugaSleeve({
+function draftTortugaShoulderPatch({
   measurements,
   options,
   Point,
@@ -29,38 +30,31 @@ function draftTortugaSleeve({
 
   points.topCenter = new Point(0, 0)
 
+  if (!options.shoulderPatch) return part
+
   //------------------------------------------------
-  // Sleeve width
+  // Length and Width
 
-  const width = measurements.biceps + 
-    measurements.biceps * options.sleeveWidth
-  logMeasurement(part, 'width', width)
+  // The shoulder patch length covers the shoulder seam and the neck
+  // gusset (half of the hypotenuse).
+  const neckGussetHypotenuseLength = store.get('neckGussetHypotenuseLength')
+  const shoulderLength = store.get('shoulderLength')
+  const length = shoulderLength + (neckGussetHypotenuseLength / 2)
 
-  if (DEBUG) {
-    log.debug('Biceps measurement is ' + units(measurements.biceps) +
-      ' and sleeve width is ' + units(width) + '.')
-  }
+  const width = measurements.neck / 10
 
-  // Set our top left and top right points.
+  // Set our points
   const halfWidth = width / 2
   points.topLeft = points.topCenter.shift(LEFT, halfWidth)
   points.topRight = points.topCenter.shift(RIGHT, halfWidth)
-
-  //------------------------------------------------
-  // Sleeve length
-
-  // Garment length is between hips and knees.
-  const length = measurements.shoulderToWrist + 
-    measurements.shoulderToWrist * options.sleeveLength
-  logMeasurement(part, "length", length)
-
-  // Set our bottom left and bottom right points.
   points.bottomLeft = points.topLeft.shift(DOWN, length)
   points.bottomRight = points.topRight.shift(DOWN, length)
 
   // Utility points
   points.bottomCenter = points.topCenter.shift(DOWN, length)
   points.center = points.topCenter.shift(DOWN, length / 2)
+  points.centerLeft = points.topLeft.shift(DOWN, length / 2)
+  points.centerRight = points.topRight.shift(DOWN, length / 2)
 
   //------------------------------------------------
   // Other Paths
@@ -75,25 +69,29 @@ function draftTortugaSleeve({
 
   // Complete?
   if (complete) {
-    let scale = Math.min(1, width / 200)
+    let scale = Math.min(1, width / 300)
+
     points.title = points.topCenter
-      .shiftFractionTowards(points.bottomCenter, 0.4)
+      .shiftFractionTowards(points.bottomCenter, 0.2)
+      .shiftFractionTowards(points.bottomRight, 0.1)
     macro('title', {
       at: points.title,
-      nr: 2,
-      title: 'Sleeve',
+      nr: 4,
+      title: 'Neck Gusset',
       scale: scale,
     })
 
-    points.logo = points.title
-      .shiftFractionTowards(points.bottomCenter, 0.3)
+    points.logo = points.bottomCenter
+      .shiftFractionTowards(points.bottomLeft, 0.3)
+      .shiftFractionTowards(points.topLeft, 0.2)
+
     snippets.logo = new Snippet('logo', points.logo)
       .attr('data-scale', scale)
 
     points.grainlineTop = points.topRight
-      .shift(DOWN, length / 10).shift(LEFT, width / 10)
+      .shift(DOWN, length / 8).shift(LEFT, width / 10)
     points.grainlineBottom = points.grainlineTop
-      .shift(DOWN, length * 0.6)
+      .shift(DOWN, length / 2)
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
@@ -102,7 +100,6 @@ function draftTortugaSleeve({
 
     //----------------------------------------
     // Notches
-
 
     if (DEBUG_POINTS) {
       showPoints(points, scale, textsize)
@@ -117,25 +114,30 @@ function draftTortugaSleeve({
     let rightSeamX = points.topRight.x
     let leftSeamX = points.topLeft.x
 
-    // Garment width
+    // Width
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
       y: bottomSeamY + (sa + 15),
     })
-    // Garment length
+    // Length
     macro('vd', {
       from: points.topRight,
       to: points.bottomRight,
       x: rightSeamX + (sa + 15),
+    })
+    // Hypotenuse
+    macro('ld', {
+      from: points.topLeft,
+      to: points.bottomRight,
     })
   }
 
   return part
 }
 
-export const sleeve = {
-  name: 'tortuga.sleeve',
-  after: base,
-  draft: draftTortugaSleeve,
+export const shoulderPatch = {
+  name: 'tortuga.shoulderPatch',
+  after: [ base, neckGusset, body, ]
+  draft: draftTortugaShoulderPatch,
 }

@@ -1,7 +1,6 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
-import { units } from '@freesewing/core'
 
-function draftTortugaSleeve({
+function draftTortugaSleeveGusset({
   measurements,
   options,
   Point,
@@ -30,31 +29,24 @@ function draftTortugaSleeve({
   points.topCenter = new Point(0, 0)
 
   //------------------------------------------------
-  // Sleeve width
+  // Gusset size
 
-  const width = measurements.biceps + 
-    measurements.biceps * options.sleeveWidth
-  logMeasurement(part, 'width', width)
+  const sideLength =
+    measurements.shoulderToElbow * options.sleeveGussetLength
+  const hypotenuseLength = Math.sqrt(Math.pow(sideLength, 2) * 2)
+  logMeasurement(part, 'side length', sideLength)
+  logMeasurement(part, 'hypotenuse length', hypotenuseLength)
 
-  if (DEBUG) {
-    log.debug('Biceps measurement is ' + units(measurements.biceps) +
-      ' and sleeve width is ' + units(width) + '.')
-  }
+  store.set('sleeveGussetSideLength', sideLength)
+  store.set('sleeveGussetHypotenuseLength', hypotenuseLength)
 
-  // Set our top left and top right points.
+  const width = sideLength
+  const length = sideLength
+
+  // Set our points
   const halfWidth = width / 2
   points.topLeft = points.topCenter.shift(LEFT, halfWidth)
   points.topRight = points.topCenter.shift(RIGHT, halfWidth)
-
-  //------------------------------------------------
-  // Sleeve length
-
-  // Garment length is between hips and knees.
-  const length = measurements.shoulderToWrist + 
-    measurements.shoulderToWrist * options.sleeveLength
-  logMeasurement(part, "length", length)
-
-  // Set our bottom left and bottom right points.
   points.bottomLeft = points.topLeft.shift(DOWN, length)
   points.bottomRight = points.topRight.shift(DOWN, length)
 
@@ -75,25 +67,29 @@ function draftTortugaSleeve({
 
   // Complete?
   if (complete) {
-    let scale = Math.min(1, width / 200)
+    let scale = Math.min(1, width / 300)
+
     points.title = points.topCenter
-      .shiftFractionTowards(points.bottomCenter, 0.4)
+      .shiftFractionTowards(points.bottomCenter, 0.2)
+      .shiftFractionTowards(points.bottomRight, 0.1)
     macro('title', {
       at: points.title,
-      nr: 2,
-      title: 'Sleeve',
+      nr: 3,
+      title: 'Sleeve Gusset',
       scale: scale,
     })
 
-    points.logo = points.title
-      .shiftFractionTowards(points.bottomCenter, 0.3)
+    points.logo = points.bottomCenter
+      .shiftFractionTowards(points.bottomLeft, 0.3)
+      .shiftFractionTowards(points.topLeft, 0.2)
+
     snippets.logo = new Snippet('logo', points.logo)
       .attr('data-scale', scale)
 
     points.grainlineTop = points.topRight
-      .shift(DOWN, length / 10).shift(LEFT, width / 10)
+      .shift(DOWN, length / 8).shift(LEFT, width / 10)
     points.grainlineBottom = points.grainlineTop
-      .shift(DOWN, length * 0.6)
+      .shift(DOWN, length / 2)
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
@@ -102,7 +98,6 @@ function draftTortugaSleeve({
 
     //----------------------------------------
     // Notches
-
 
     if (DEBUG_POINTS) {
       showPoints(points, scale, textsize)
@@ -117,25 +112,30 @@ function draftTortugaSleeve({
     let rightSeamX = points.topRight.x
     let leftSeamX = points.topLeft.x
 
-    // Garment width
+    // Width
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
       y: bottomSeamY + (sa + 15),
     })
-    // Garment length
+    // Length
     macro('vd', {
       from: points.topRight,
       to: points.bottomRight,
       x: rightSeamX + (sa + 15),
+    })
+    // Hypotenuse
+    macro('ld', {
+      from: points.topLeft,
+      to: points.bottomRight,
     })
   }
 
   return part
 }
 
-export const sleeve = {
-  name: 'tortuga.sleeve',
+export const sleeveGusset = {
+  name: 'tortuga.sleeveGusset',
   after: base,
-  draft: draftTortugaSleeve,
+  draft: draftTortugaSleeveGusset,
 }

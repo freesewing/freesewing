@@ -1,14 +1,6 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-import { units } from '@freesewing/core'
-
-function logMeasurement(part, measurement, mm) {
-  const { log } = part.shorthand()
-  const cm = units(mm)
-  let shortname = part.name.substring(part.name.indexOf('.') + 1)
-  shortname = shortname.charAt(0).toUpperCase() + shortname.substring(1) 
-  log.info(shortname + ' ' + measurement + ': ' + cm)
-}
-
+import { base, logMeasurement, showPoints } from './base.mjs'
+import { sleeveGusset } from './sleeveGusset.mjs'
+import { neckGusset } from './neckGusset.mjs'
 
 function draftTortugaBody({
   measurements,
@@ -24,10 +16,11 @@ function draftTortugaBody({
   paperless,
   macro,
   log,
+  store,
   part,
 }) {
   const DEBUG = true
-  const DEBUG_POINTS = true
+  const DEBUG_POINTS = false
 
   const RIGHT = 0
   const LEFT = 180
@@ -75,14 +68,14 @@ function draftTortugaBody({
     width = seatWidth
     widthMeasurementUsed = 'Seat circumference'
   }
-  log.debug('Garment width based on: ' + widthMeasurementUsed)
+  if (widthMeasurementUsed !== 'Multiple Shoulder-to-shoulder width')
+    log.info('Garment width based on: ' + widthMeasurementUsed)
 
   // Set our top left and top right points.
   const halfWidth = width / 2
   points.topLeft = points.topCenter.shift(180, halfWidth)
   points.topRight = points.topCenter.shift(0, halfWidth)
 
-  log.info('Note: All measurements include seam allowance.')
   logMeasurement(part, 'width', width)
   logMeasurement(part, 'half width', halfWidth)
 
@@ -133,6 +126,10 @@ function draftTortugaBody({
   logMeasurement(part, 'half neck slit length', halfNeckSlitLength)
   logMeasurement(part, 'full neck slit length', neckSlitLength)
 
+  // Save shoulder length to use in shoulder patch
+  const shoulderLength = halfWidth - halfNeckSlitLength
+  store.set('shoulderLength', shoulderLength)
+
   //------------------------------------------------
   // Chest
 
@@ -169,7 +166,7 @@ function draftTortugaBody({
   //------------------------------------------------
   // Side Vents
 
-  const sideVentLength = length * options.sideVentLength
+  const sideVentLength = equalLength * options.sideVentLength
   points.sideVentTopLeft = points.bottomLeft.shift(UP, sideVentLength)
   points.sideVentTopRight = points.bottomRight.shift(UP, sideVentLength)
 
@@ -320,6 +317,14 @@ function draftTortugaBody({
   // Complete?
   if (complete) {
     let scale = Math.min(1, width / 200)
+    let textsize = 'text-md'
+    if (scale < .75) textsize = 'text-sm'
+    if (scale < .5) textsize = 'text-xs'
+    if (DEBUG) {
+      log.debug('Element scaling: ' + scale)
+      log.debug('Text size: ' + textsize)
+    }
+
     points.title = points.chestSlitBottom.shiftFractionTowards(
       points.bottomRight.shiftFractionTowards(points.bottomLeft, 0.25),
       0.4
@@ -350,65 +355,67 @@ function draftTortugaBody({
     // Notches
 
     snippets.neckSlitLeftNotch = new Snippet('notch', points.neckSlitLeft)
+      .attr('data-scale', scale)
     snippets.neckSlitrightNotch = new Snippet('notch', points.neckSlitRight)
+      .attr('data-scale', scale)
     snippets.chestSlitTopNotch = new Snippet('notch', points.chestSlitTop)
+      .attr('data-scale', scale)
     snippets.chestSlitBottomNotch =
       new Snippet('notch', points.chestSlitBottom)
+        .attr('data-scale', scale)
 
-    snippets.armScyeTopLeftNotch = new Snippet('notch', points.topLeft)
-    snippets.armScyeTopRightNotch = new Snippet('notch', points.topRight)
     snippets.armScyeBottomLeftNotch =
       new Snippet('notch', points.armscyeBottomLeft)
+        .attr('data-scale', scale)
     snippets.armScyeBottomRightNotch =
       new Snippet('notch', points.armscyeBottomRight)
+        .attr('data-scale', scale)
 
     if (options.singleFrontBack) {
       snippets.armScyeBottomLeftSingleNotch =
         new Snippet('notch', points.armscyeBottomLeftSingle)
+          .attr('data-scale', scale)
       snippets.armScyeBottomRightSingleNotch =
         new Snippet('notch', points.armscyeBottomRightSingle)
+          .attr('data-scale', scale)
     }
 
     snippets.sideVentTopLeftNotch =
       new Snippet('notch', points.sideVentTopLeft)
+        .attr('data-scale', scale)
     snippets.sideVentTopRightNotch =
       new Snippet('notch', points.sideVentTopRight)
+        .attr('data-scale', scale)
 
     if (frontLength != backLength) {
       snippets.sideVentTopLeftBackNotch =
         new Snippet('bnotch', points.sideVentTopLeftBack)
+          .attr('data-scale', scale)
       snippets.sideVentTopRightBackNotch =
         new Snippet('bnotch', points.sideVentTopRightBack)
+          .attr('data-scale', scale)
       points.bottomCenterFront = new Point(0, points.bottomLeft.y)
         .attr('data-text', 'Front bottom')
-        .attr('data-text-class', 'right fill-note')
+        .attr('data-text-class', `right fill-note ${textsize}`)
       points.bottomCenterBack = new Point(0, points.bottomLeftBack.y)
         .attr('data-text', 'Back bottom')
-        .attr('data-text-class', 'left fill-note')
+        .attr('data-text-class', `left fill-note ${textsize}`)
     }
 
     if (options.singleFrontBack) {
       snippets.sideVentTopLeftSingleNotch =
         new Snippet('notch', points.sideVentTopLeftSingle)
+          .attr('data-scale', scale)
       snippets.sideVentTopRightSingleNotch =
         new Snippet('notch', points.sideVentTopRightSingle)
+          .attr('data-scale', scale)
     }
 
     if (DEBUG_POINTS) {
-      for (const p in points) {
-        if (p.indexOf('_') > -1) continue
-        if (p.indexOf('title') > -1) continue
-        if (p.indexOf('logo') > -1) continue
-        points[p]
-          .attr('data-circle', 2)
-          .attr('data-circle-class', 'fill-note')
-        points[p + 'label'] = points[p]
-          .shiftTowards(points.center, 15)
-          .attr('data-text', '(' + p + ')')
-          .attr('data-text-class', 'text-lg center fill-note')
-      }
+      showPoints(points, scale, textsize)
     }
-  }
+  } // end complete
+
 
   // Paperless?
   if (paperless) {
@@ -515,82 +522,6 @@ function draftTortugaBody({
 
 export const body = {
   name: 'tortuga.body',
-  measurements: [
-    'neck',
-    'chest',
-    'waist',
-    'hips',
-    'seat',
-    'shoulderToShoulder',
-    'hpsToBust',
-    'hpsToWaistFront',
-    'waistToHips',
-    'waistToKnee',
-    'shoulderToElbow',
-    'shoulderToWrist',
-    'biceps',
-    'wrist',
-  ],
-  options: {
-    // Single front and back piece? or
-    singleFrontBack: { bool: false, menu: 'body' },
-    // Length of garment: percent from hips (0) to knee (100)
-    garmentLength: { pct: 75, min: 0, max: 100, menu: 'body' },
-    // Width of garment, percent added to shoulder-to-shoulder,
-    // automatically increased if needed to accommodate largest
-    // circumference chest/waist/hips/seat.
-    garmentWidth: { pct: 50, min: 25, max: 100, menu: 'body' },
-    // Amount of extra back length, as percentage of the normal length.
-    garmentExtraBackLength: { pct: 0, min: 0, max: 5, menu: 'body' },
-    // Add reinforcement patches to the shoulder seams?
-    shoulderPatch: { bool: false, menu: 'body' },
-    // Length of vertical chest slit, as percentage of HPS-to-bust.
-    chestSlitLength: { pct: 100, min: 50, max: 125, menu: 'body' },
-    // Add a reinforcement patch to the bottom of the chest slit?
-    // If so, what style?
-    chestSlitPatch: {
-      dflt: 'none',
-      list: ['none', 'house', 'jewel', 'triangle', 'heart'],
-      menu: 'body',
-    },
-    // Length of side vents, as percentage of absolute garment length.
-    sideVentLength: { pct: 5, min: 1, max: 10, menu: 'body' },
-    // Add gussets to the top of the side vents?
-    sideGussetUse: { bool: false, menu: 'body' },
-    // Length of side gusset square hypoteneuse, as percentage of
-    // side vent length.
-    sideGussetSize: { pct: 5, min: 1, max: 30, menu: 'body' },
-    // Add a reinforcement patch to the top of the side vents?
-    // If so, what style?
-    sideVentPatch: {
-      dflt: 'none',
-      list: ['none', 'triangle', 'house', 'jewel'],
-      menu: 'body',
-    },
-    // Add back gathers to the collar back?
-    collarBackGathers: { bool: false, menu: 'body' },
-    // Length of horizontal neck slit, as percent added to neck width,
-    // automatically limited by shoulder length.
-    neckSlitLength: { pct: 100, min: 100, max: 200, menu: 'neck' },
-    // Length of neck gusset square hypoteneuse, as percentage of
-    // shoulder-to-shoulder length.
-    neckGussetLength: { pct: 10, min: 5, max: 30, menu: 'neck' },
-    // Width of collar, as percentage of neck circumference.
-    collarWidth: { pct: 25, min: 5, max: 50, menu: 'neck' },
-    // Length of sleeve, as percent added to shoulder-to-wrist.
-    sleeveLength: { pct: 10, min: 0, max: 50, menu: 'sleeve' },
-    // Width of sleeve, as percent added to biceps.
-    sleeveWidth: { pct: 30, min: 10, max: 100, menu: 'sleeve' },
-    // Length of armscye, as percent of biceps circumference.
-    armscyeLength: { pct: 100, min: 80, max: 120, menu: 'sleeve' },
-    // Length of underarm gusset square hypoteneuse, as percentage of
-    // shoulder to elbow length.
-    underarmGussetLength: { pct: 50, min: 20, max: 80, menu: 'sleeve' },
-    // Length of sleeve vents, as percentage of elbow-to-wrist length.
-    sleeveVentLength: { pct: 3, min: 1, max: 20, menu: 'sleeve' },
-    // Width of cuff, as percentage of elbow-to-wrist length.
-    cuffWidth: { pct: 5, min: 1, max: 5, menu: 'sleeve' },
-  },
-  plugins: [pluginBundle],
+  after: [ base, sleeveGusset, neckGusset, ],
   draft: draftTortugaBody,
 }
