@@ -6,14 +6,14 @@ import { sleeveGusset } from './sleeveGusset.mjs'
 import { neckGusset } from './neckGusset.mjs'
 import { body } from './body.mjs'
 import { sleeve } from './sleeve.mjs'
-import { shoulderPatch } from './shoulderPatch.mjs'
+import { shoulderStrap } from './shoulderStrap.mjs'
 
 // Setup our new design
 const Tortuga = new Design({
   data,
-  parts: [ body, sleeve, sleeveGusset, neckGusset, shoulderPatch, ],
+  parts: [ body, sleeve, sleeveGusset, neckGusset, shoulderStrap, ],
 })
 
 // Named exports
-export { base, body, sleeveGusset, neckGusset, sleeve, shoulderPatch,
+export { base, body, sleeveGusset, neckGusset, sleeve, shoulderStrap,
   Tortuga }

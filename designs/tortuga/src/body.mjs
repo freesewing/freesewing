@@ -126,7 +126,7 @@ function draftTortugaBody({
   logMeasurement(part, 'half neck slit length', halfNeckSlitLength)
   logMeasurement(part, 'full neck slit length', neckSlitLength)
 
-  // Save shoulder length to use in shoulder patch
+  // Save shoulder length to use in shoulder strap
   const shoulderLength = halfWidth - halfNeckSlitLength
   store.set('shoulderLength', shoulderLength)
 
@@ -163,7 +163,7 @@ function draftTortugaBody({
 
   logMeasurement(part, 'armscye length', armscyeLength)
 
-  // Save armscye length to use in sleeve patch
+  // Save armscye length to use in sleeve binding
   store.set('armscyeLength', armscyeLength)
 
   //------------------------------------------------

@@ -2,7 +2,7 @@ import { base, logMeasurement, showPoints } from './base.mjs'
 import { neckGusset } from './neckGusset.mjs'
 import { body } from './body.mjs'
 
-function draftTortugaShoulderPatch({
+function draftTortugaShoulderStrap({
   measurements,
   options,
   Point,
@@ -30,18 +30,18 @@ function draftTortugaShoulderPatch({
 
   points.topCenter = new Point(0, 0)
 
-  if (!options.shoulderPatch) return part
+  if (!options.shoulderStrap) return part
 
   //------------------------------------------------
   // Length and Width
 
-  // The shoulder patch length covers the shoulder seam and the neck
+  // The shoulder strap length covers the shoulder seam and the neck
   // gusset (half of the hypotenuse).
   const neckGussetHypotenuseLength = store.get('neckGussetHypotenuseLength')
   const shoulderLength = store.get('shoulderLength')
   const length = shoulderLength + (neckGussetHypotenuseLength / 2)
 
-  const width = measurements.neck / 40
+  const width = measurements.neck / 10
 
   // Set our points
   const halfWidth = width / 2
@@ -61,14 +61,14 @@ function draftTortugaShoulderPatch({
 
   // Points outside the part, to set additional boundary
   points.topLeftBoundary = points.topLeft
-    .shift(UP, width)
-    .shift(LEFT, width)
+    .shift(UP, width / 2)
+    .shift(LEFT, width / 2)
   points.bottomLeftBoundary = points.topLeftBoundary
-    .shift(DOWN, length + (width * 2))
+    .shift(DOWN, length + width)
   points.topRightBoundary = points.topLeftBoundary
-    .shift(RIGHT, length / 2)
+    .shift(RIGHT, length)
   points.bottomRightBoundary = points.bottomLeftBoundary
-      .shift(RIGHT, length / 2)
+      .shift(RIGHT, length)
 
   //------------------------------------------------
   // Paths
@@ -104,7 +104,7 @@ function draftTortugaShoulderPatch({
     macro('title', {
       at: points.title,
       nr: 5,
-      title: 'Shoulder Patch',
+      title: 'Shoulder Strap',
       scale: scale,
     })
 
@@ -143,18 +143,13 @@ function draftTortugaShoulderPatch({
       to: points.bottomRight,
       x: rightSeamX + (sa + 15),
     })
-    // Hypotenuse
-    macro('ld', {
-      from: points.topLeft,
-      to: points.bottomRight,
-    })
   }
 
   return part
 }
 
-export const shoulderPatch = {
-  name: 'tortuga.shoulderPatch',
+export const shoulderStrap = {
+  name: 'tortuga.shoulderStrap',
   after: [ base, neckGusset, body, ],
-  draft: draftTortugaShoulderPatch,
+  draft: draftTortugaShoulderStrap,
 }
