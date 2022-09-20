@@ -3,7 +3,7 @@ import OsiLogo from 'shared/components/logos/osi.js'
 import CreativeCommonsLogo from 'shared/components/logos/cc.js'
 import CcByLogo from 'shared/components/logos/cc-by.js'
 import { useTranslation } from 'next-i18next'
-import PinkedRibbon from 'shared/components/pinked-ribbon.js'
+import Ribbon from 'shared/components/ribbon.js'
 import Link from 'next/link'
 
 import DiscordIcon from 'shared/components/icons/discord.js'
@@ -114,7 +114,7 @@ const Footer = ({ app, full=false }) => {
 
   return (
     <footer className="bg-neutral">
-      <PinkedRibbon loading={app.loading} theme={app.theme} />
+      <Ribbon loading={app.loading} theme={app.theme} />
       <div className="px-8 py-20 2xl:py-40 flex flex-row gap-8 flex-wrap 2xl:flex-nowrap justify-around text-neutral-content">
 
         {/* First col - CC & MIT */}
