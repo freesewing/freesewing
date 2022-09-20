@@ -1,6 +1,6 @@
 import DefaultErrorView from 'shared/components/error/view'
 
-const Error = ({ logs=[], updateGist }) => {
+const Error = ({ logs = [], updateGist }) => {
   let errors = 0
   let warnings = 0
   for (const log of logs) {
@@ -13,7 +13,7 @@ const Error = ({ logs=[], updateGist }) => {
       <li>
         Check the{' '}
         <button className="btn-link" onClick={() => updateGist(['_state', 'view'], 'logs')}>
-          <strong>{errors.length} errors</strong> and <strong>{warnings.length} warnings</strong>
+          <strong>{errors} errors</strong> and <strong>{warnings} warnings</strong>
         </button>
       </li>
       <li>Check the partially rendered pattern below to see which areas are problematic</li>

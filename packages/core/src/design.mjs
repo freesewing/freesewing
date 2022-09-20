@@ -17,7 +17,7 @@ export function Design(config) {
   config = { ...__loadDesignDefaults(), ...config }
 
   // Create the pattern constructor
-  const pattern = function (...sets) {
+  const pattern = function (sets) {
     // Pass the design config
     Pattern.call(this, config)
 

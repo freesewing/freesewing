@@ -354,7 +354,7 @@ Pattern.prototype.__applySettings = function (sets) {
   this.settings = []
   for (const set in sets) {
     this.settings.push({ ...__loadPatternDefaults(), ...sets[set] })
-    if (set > 0) this.stores.push(new Store())
+    if (set !== '0') this.stores.push(new Store())
   }
 
   return this
