@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   'fontFamily': '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
-  'base-100': colors.neutral['50'],
+  'base-100': colors.fuchsia['50'],
   'base-200': colors.neutral['200'],
   'base-300': colors.neutral['400'],
   'base-content': colors.neutral['700'],
