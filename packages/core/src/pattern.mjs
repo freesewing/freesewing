@@ -80,7 +80,7 @@ Pattern.prototype.addPart = function (part) {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.draft = function () {
-  this.init()
+  this.__init()
   this.__runHooks('preDraft')
 
   // Iterate over the provided sets of settings (typically just one)
@@ -152,7 +152,7 @@ Pattern.prototype.draft = function () {
  * @return {object} config - The initialized config
  */
 Pattern.prototype.getConfig = function () {
-  return this.init().config
+  return this.__init().config
 }
 
 /** Returns props required to render this pattern through
@@ -207,46 +207,12 @@ Pattern.prototype.getRenderProps = function () {
 }
 
 /**
- * Initializes the pattern coniguration and settings
- *
- * @return {object} this - The Pattern instance
- */
-Pattern.prototype.init = function () {
-  this.__runHooks('preInit')
-  /*
-   * We allow late-stage updating of the design config (adding parts for example)
-   * so we need to do the things we used to do in the contructor at a later stage.
-   * This methods does that, and resolves the design config + user settings
-   */
-  this.__resolveParts() // Resolves parts
-    .__resolveDependencies() // Resolves dependencies
-    .__resolveDraftOrder() // Resolves draft order
-    .__loadPlugins() // Loads plugins
-    .__filterOptionalMeasurements() // Removes required m's from optional list
-    .__loadConfigData() // Makes config data available in store
-    .__loadOptionDefaults() // Merges default options with user provided ones
-
-  // Say hello
-  this.stores[0].log.info(
-    `New \`${this.stores[0].get('data.name', 'No Name')}:` +
-      `${this.stores[0].get(
-        'data.version',
-        'No version'
-      )}\` pattern using \`@freesewing/core:${version}\``
-  )
-  this.stores[0].log.info(`Pattern initialized. Draft order is: ${this.__draftOrder.join(', ')}`)
-  this.__runHooks('postInit')
-
-  return this
-}
-
-/**
  * Handles pattern sampling
  *
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.sample = function () {
-  this.init()
+  this.__init()
   if (this.settings[0].sample.type === 'option') {
     return this.sampleOption(this.settings[0].sample.option)
   } else if (this.settings[0].sample.type === 'measurement') {
@@ -265,7 +231,7 @@ Pattern.prototype.sampleMeasurement = function (measurementName) {
   this.stores[0].log.debug(`Sampling measurement \`${measurementName}\``)
   this.__runHooks('preSample')
   this.__applySettings(this.__measurementSets(measurementName))
-  this.init()
+  this.__init()
   this.__runHooks('postSample')
 
   return this.draft()
@@ -280,7 +246,7 @@ Pattern.prototype.sampleModels = function (models, focus = false) {
   this.stores[0].log.debug(`Sampling models \`${Object.keys(models).join(', ')}\``)
   this.__runHooks('preSample')
   this.__applySettings(this.__modelSets(models, focus))
-  this.init()
+  this.__init()
   this.__runHooks('postSample')
 
   return this.draft()
@@ -295,7 +261,7 @@ Pattern.prototype.sampleOption = function (optionName) {
   this.stores[0].log.debug(`Sampling option \`${optionName}\``)
   this.__runHooks('preSample')
   this.__applySettings(this.__optionSets(optionName))
-  this.init()
+  this.__init()
   this.__runHooks('postSample')
 
   return this.draft()
@@ -456,6 +422,40 @@ Pattern.prototype.__filterOptionalMeasurements = function () {
   this.config.optionalMeasurements = this.config.optionalMeasurements.filter(
     (m) => this.config.measurements.indexOf(m) === -1
   )
+
+  return this
+}
+
+/**
+ * Initializes the pattern coniguration and settings
+ *
+ * @return {object} this - The Pattern instance
+ */
+Pattern.prototype.__init = function () {
+  this.__runHooks('preInit')
+  /*
+   * We allow late-stage updating of the design config (adding parts for example)
+   * so we need to do the things we used to do in the contructor at a later stage.
+   * This methods does that, and resolves the design config + user settings
+   */
+  this.__resolveParts() // Resolves parts
+    .__resolveDependencies() // Resolves dependencies
+    .__resolveDraftOrder() // Resolves draft order
+    .__loadPlugins() // Loads plugins
+    .__filterOptionalMeasurements() // Removes required m's from optional list
+    .__loadConfigData() // Makes config data available in store
+    .__loadOptionDefaults() // Merges default options with user provided ones
+
+  // Say hello
+  this.stores[0].log.info(
+    `New \`${this.stores[0].get('data.name', 'No Name')}:` +
+      `${this.stores[0].get(
+        'data.version',
+        'No version'
+      )}\` pattern using \`@freesewing/core:${version}\``
+  )
+  this.stores[0].log.info(`Pattern initialized. Draft order is: ${this.__draftOrder.join(', ')}`)
+  this.__runHooks('postInit')
 
   return this
 }

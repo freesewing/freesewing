@@ -104,7 +104,7 @@ describe('Pattern', () => {
     }
     const design = new Design()
     const pattern = new design({ only: ['test']})
-    pattern.init()
+    pattern.__init()
     expect(pattern.__isPartHidden('test')).to.equal(false)
   })
 

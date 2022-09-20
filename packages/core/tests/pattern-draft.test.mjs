@@ -77,7 +77,7 @@ describe('Pattern', () => {
     const pattern = new Pattern({
       only: ['test.partB'],
     })
-    pattern.init()
+    pattern.__init()
     expect(pattern.__needs('test.partA')).to.equal(true)
     expect(pattern.__needs('test.partB')).to.equal(true)
     expect(pattern.__needs('test.partC')).to.equal(false)
@@ -126,7 +126,7 @@ describe('Pattern', () => {
     const pattern = new Pattern({
       only: ['test.partB'],
     })
-    pattern.init()
+    pattern.__init()
     expect(pattern.__wants('test.partA')).to.equal(false)
     expect(pattern.__wants('test.partB')).to.equal(true)
     expect(pattern.__wants('test.partC')).to.equal(false)

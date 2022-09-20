@@ -5,7 +5,7 @@ const expect = chai.expect
 
 describe('Stacks', () => {
 
-  describe('Pattern.init()', () => {
+  describe('Pattern.__init()', () => {
     const partA = {
       name: 'test.partA',
       measurements: ['head'],
@@ -69,7 +69,7 @@ describe('Stacks', () => {
     })
     pattern.draft()
 
-    it('Pattern.init() should resolve dependencies', () => {
+    it('Pattern.__init() should resolve dependencies', () => {
       expect(typeof pattern.config.resolvedDependencies).to.equal('object')
       expect(Array.isArray(pattern.config.resolvedDependencies['test.partA'])).to.equal(true)
       expect(pattern.config.resolvedDependencies['test.partA'].length).to.equal(0)
