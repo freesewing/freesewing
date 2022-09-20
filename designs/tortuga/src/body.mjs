@@ -526,5 +526,6 @@ function draftTortugaBody({
 export const body = {
   name: 'tortuga.body',
   after: [ base, sleeveGusset, neckGusset, ],
+  hideDependencies: true,
   draft: draftTortugaBody,
 }

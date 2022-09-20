@@ -151,5 +151,6 @@ function draftTortugaShoulderStrap({
 export const shoulderStrap = {
   name: 'tortuga.shoulderStrap',
   after: [ base, neckGusset, body, ],
+  hideDependencies: true,
   draft: draftTortugaShoulderStrap,
 }

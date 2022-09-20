@@ -149,5 +149,6 @@ function draftTortugaNeckGusset({
 export const neckGusset = {
   name: 'tortuga.neckGusset',
   after: base,
+  hideDependencies, true,
   draft: draftTortugaNeckGusset,
 }

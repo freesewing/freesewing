@@ -130,5 +130,6 @@ function draftTortugaSleeveGusset({
 export const sleeveGusset = {
   name: 'tortuga.sleeveGusset',
   after: base,
+  hideDependencies: true,
   draft: draftTortugaSleeveGusset,
 }
