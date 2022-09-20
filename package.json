@@ -15,6 +15,7 @@
     "?": "node scripts/help.mjs",
     "tips": "node scripts/help.mjs",
     "lab": "cd sites/lab && yarn start",
+    "lab-debug": "cd sites/lab && yarn start-debug",
     "kickstart": "npx lerna bootstrap && yarn buildall && yarn prepare && yarn tips",
     "cleanall": "lerna run clean",
     "test": "lerna run test",
