@@ -2,10 +2,6 @@ env:
   browser: true
   es2021: true
 extends: eslint:recommended
-overrides:
-  - files: ["*.yaml", "*.yml"]
-    plugins: ["yaml"]
-    extends: ["plugin:yaml/recommended"]
 # Required when using experimental EcmaScript features
 parser: "@babel/eslint-parser"
 parserOptions:
@@ -17,6 +13,22 @@ parserOptions:
     plugins:
     - "@babel/plugin-syntax-import-assertions"
 rules: {}
+overrides:
+  # YAML files
+  - files: ["**/*.yaml", "**/*.yml"]
+    plugins: ["yaml"]
+    extends: ["plugin:yaml/recommended"]
+  # Markdown files
+  - files: ["**/*.md"]
+    plugins: ["markdown"]
+    processor: "markdown/markdown"
+  - files: ["**/*.md/*.js"]
+    rules:
+      "no-console": "off"
+      "no-empty": "off"
+      "no-undef": "off"
+      "no-unused-labels": "off"
+      "no-unused-vars": "off"
 globals:
   it: readonly
   describe: readonly
