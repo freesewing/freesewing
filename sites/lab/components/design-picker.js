@@ -20,10 +20,7 @@ const PatternPicker = ({ app }) => {
           >
             <DesignIcon />
             <span className="ml-4 font-bold text-lg">{t('Designs')}</span>
-            <ChevronDownIcon
-              className={`ml-2 h-5 w-5 transition duration-150 ease-in-out group-hover:text-opacity-80`}
-              aria-hidden="true"
-            />
+            <ChevronDownIcon className={`ml-2 h-5 w-5`} aria-hidden="true" />
           </Popover.Button>
           <Transition
             as={Fragment}
@@ -34,7 +31,7 @@ const PatternPicker = ({ app }) => {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+            <Popover.Panel className="absolute z-10 mt-3 w-screen max-w-sm transform px-4 sm:px-0 lg:max-w-3xl">
               <div className="overflow-hidden rounded-lg shadow-lg">
                 <div className="relative grid gap-8 bg-base-100 p-7 lg:grid-cols-2">
                   {Object.keys(app.navigation).map((section) => {

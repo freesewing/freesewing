@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
-import PatternPicker from 'site/components/pattern-picker.js'
+import DesignPicker from 'site/components/design-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
 import Ribbon from 'shared/components/ribbon.js'
@@ -66,7 +66,7 @@ const Header = ({ app }) => {
                 }
             </button>
             <div className="hidden md:flex flex-row items-center gap-2">
-              <PatternPicker app={app} />
+              <DesignPicker app={app} />
             </div>
             <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">
