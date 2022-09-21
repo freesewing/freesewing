@@ -24,6 +24,33 @@ export function Point(x, y) {
 //////////////////////////////////////////////
 
 /**
+ * A chainable way to add a circle at a Point
+ *
+ * @param {float} radius - The circle radius
+ * @param {string} className - The CSS classes to apply to the circle
+ * @return {Point} this - The Point instance
+ */
+Point.prototype.addCircle = function (radius = false, className = false) {
+  if (radius) this.attributes.add('data-circle', radius)
+  if (className) this.attributes.add('data-circle-class', className)
+
+  return this.__check()
+}
+
+/**
+ * A chainable way to add text to a Point
+ *
+ * @param {string} text - The text to add to the Point
+ * @param {string} className - The CSS classes to apply to the text
+ * @return {Point} this - The Point instance
+ */
+Point.prototype.addText = function (text = '', className = false) {
+  this.attributes.add('data-text', text)
+  if (className) this.attributes.add('data-text-class', className)
+
+  return this.__check()
+}
+/**
  * Returns the angle between this Point and that Point
  *
  * @param {Point} that - The Point instance to calculate the angle with

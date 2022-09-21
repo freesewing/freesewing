@@ -455,9 +455,20 @@ describe('Point', () => {
     expect(invalid).to.equal(true)
   })
 
+  it('Should add the data-text property in a chainable way', () => {
+    const p1 = new Point(10, 10).addText('hello').addText('world')
+    expect(p1.attributes.get('data-text')).to.equal('hello world')
+  })
+
   it('Should set the data-text property in a chainable way', () => {
     const p1 = new Point(10, 10).setText('hello')
     expect(p1.attributes.get('data-text')).to.equal('hello')
+  })
+
+  it('Should set the data-text-class property in a chainable way', () => {
+    const p1 = new Point(10, 10).addText('hello', 'fabric').addText('world', 'lining')
+    expect(p1.attributes.get('data-text')).to.equal('hello world')
+    expect(p1.attributes.get('data-text-class')).to.equal('fabric lining')
   })
 
   it('Should set the data-text-class property in a chainable way', () => {
@@ -466,9 +477,35 @@ describe('Point', () => {
     expect(p1.attributes.get('data-text-class')).to.equal('fabric')
   })
 
+  it('Should add the data-circle property in a chainable way', () => {
+    const p1 = new Point(10, 10).addCircle('20').addCircle('30').addCircle('40')
+    const radius = p1.attributes.getAsArray('data-circle')
+    expect(radius.length).to.equal(3)
+    expect(radius[0]).to.equal('20')
+    expect(radius[1]).to.equal('30')
+    expect(radius[2]).to.equal('40')
+  })
+
   it('Should set the data-circle property in a chainable way', () => {
     const p1 = new Point(10, 10).setCircle('20')
     expect(p1.attributes.get('data-circle')).to.equal('20')
+  })
+
+  it('Should add the data-circle-class property in a chainable way', () => {
+    const p1 = new Point(10, 10)
+      .addCircle('20', 'fabric')
+      .addCircle('30', 'lining')
+      .addCircle('40', 'interfacing')
+    const radius = p1.attributes.getAsArray('data-circle')
+    const classes = p1.attributes.getAsArray('data-circle-class')
+    expect(radius.length).to.equal(3)
+    expect(radius[0]).to.equal('20')
+    expect(radius[1]).to.equal('30')
+    expect(radius[2]).to.equal('40')
+    expect(classes.length).to.equal(3)
+    expect(classes[0]).to.equal('fabric')
+    expect(classes[1]).to.equal('lining')
+    expect(classes[2]).to.equal('interfacing')
   })
 
   it('Should set the data-circle-class property in a chainable way', () => {
