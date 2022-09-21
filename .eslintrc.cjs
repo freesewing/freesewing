@@ -25,6 +25,13 @@ module.exports = {
       },
     },
 
+    // JSON files
+    {
+      files: ['*.json', '*.json5', '*.jsonc'],
+      extends: ['plugin:jsonc/recommended-with-jsonc'],
+      parser: 'jsonc-eslint-parser',
+    },
+
     // YAML files
     {
       files: ['**/*.yaml', '**/*.yml'],
