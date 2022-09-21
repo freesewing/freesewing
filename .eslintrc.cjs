@@ -15,6 +15,7 @@ const frontendFiles = [
   '**/hooks/**',
   '**/pages/**',
   '**/page-templates/**',
+  'packages/i18n/**/*.md/*.js',
 ]
 
 module.exports = {
