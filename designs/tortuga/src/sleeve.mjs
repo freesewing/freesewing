@@ -200,17 +200,29 @@ function draftTortugaSleeve({
     let rightSeamX = points.topRight.x
     let leftSeamX = points.topLeft.x
 
-    // Garment width
+    // Width
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
       y: bottomSeamY + (sa + 15),
     })
-    // Garment length
+    // Length
     macro('vd', {
       from: points.topRight,
       to: points.bottomRight,
       x: rightSeamX + (sa + 15),
+    })
+    // Gusset area
+    macro('vd', {
+      from: points.topLeft,
+      to: points.gussetBottomLeft,
+      x: leftSeamX - (sa + 15),
+    })
+    // Vent
+    macro('vd', {
+      from: points.ventTopLeft,
+      to: points.bottomLeft,
+      x: leftSeamX - (sa + 15),
     })
   }
 

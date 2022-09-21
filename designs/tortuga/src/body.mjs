@@ -531,14 +531,14 @@ function draftTortugaBody({
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: bottomSeamY + (sa + (15 * 2)),
+      y: bottomSeamY + (sa + 15),
     })
 
     // Half garment width
     macro('hd', {
-      from: points.bottomLeftBack,
-      to: new Point(0, points.bottomLeftBack.y),
-      y: bottomSeamY + (sa + 15),
+      from: points.topLeft,
+      to: points.topCenter,
+      y: topSeamY - (sa + 15),
     })
 
     // Garment length
@@ -552,6 +552,7 @@ function draftTortugaBody({
       const fullLength = points.topRightSingle.dist(points.bottomRight)
       log.info('Body full length: ' + fullLength)
 
+      // Back length
       macro('vd', {
         from: points.topRightSingle,
         to: points.topRight,
@@ -559,6 +560,7 @@ function draftTortugaBody({
       })
       log.info('Body back legnth: ' + backLength)
 
+      // Front length
       macro('vd', {
         from: points.topRight,
         to: points.bottomRight,
@@ -567,11 +569,14 @@ function draftTortugaBody({
       log.info('Body front length: ' + frontLength)
 
     } else {
+      // Superimposed front and back
+      // Front Length
       macro('vd', {
         from: points.topRight,
         to: points.bottomRight,
         x: rightSeamX + (sa + 15),
       })
+      // Back Length
       if (frontLength != backLength) {
         macro('vd', {
           from: points.topRight,

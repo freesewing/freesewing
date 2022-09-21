@@ -169,8 +169,8 @@ function draftTortugaCollar({
     })
     // Half Width (the finished width)
     macro('vd', {
-      from: points.topRight,
-      to: points.bottomCenter,
+      from: points.centerRight,
+      to: points.bottomRight,
       x: rightSeamX + (sa + 15),
     })
     // Width
