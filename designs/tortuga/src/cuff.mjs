@@ -90,16 +90,26 @@ function draftTortugaCuff({
       buttonscale = width / 80
     }
 
-    points.buttonholeLeft = points.bottomLeft
-      .shiftFractionTowards(points.centerLeft, 0.5)
-      .shiftFractionTowards(points.centerRight, 0.05)
-    points.buttonholeRight = points.buttonholeLeft.flipX()
-    snippets.leftButtonhole = new Snippet('buttonhole',
-      points.buttonholeLeft)
-      .attr('data-scale', buttonscale)
-    snippets.rightButtonhole = new Snippet('buttonhole',
-      points.buttonholeRight)
-      .attr('data-scale', buttonscale)
+    // Closure
+    let snippet2 = 'buttonhole'
+    if (options.cuffClosure === 'ButtonAndButtonhole') {
+      snippet2 = 'button'
+    }
+    if (options.cuffClosure === 'TwoButtonholes' ||
+        options.cuffClosure === 'ButtonAndButtonhole') {
+
+      points.buttonholeLeft = points.bottomLeft
+        .shiftFractionTowards(points.centerLeft, 0.5)
+        .shiftFractionTowards(points.centerRight, 0.05)
+      snippets.leftButtonhole = new Snippet('buttonhole',
+        points.buttonholeLeft)
+        .attr('data-scale', buttonscale)
+
+      points.buttonholeRight = points.buttonholeLeft.flipX()
+      snippets.rightButtonhole = new Snippet(snippet2,
+        points.buttonholeRight)
+        .attr('data-scale', buttonscale)
+    }
 
     paths.foldline = new Path()
       .move(points.centerLeft)

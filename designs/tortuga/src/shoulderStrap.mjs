@@ -96,7 +96,7 @@ function draftTortugaShoulderStrap({
 
   // Complete?
   if (complete) {
-    let scale = Math.min(1, width / 15)
+    let scale = Math.min(1, width / 35)
 
     // Title, logo, grainline are outside part, inside boundary
     points.title = points.topRight

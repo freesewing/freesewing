@@ -19,7 +19,7 @@ function draftTortugaBody({
   store,
   part,
 }) {
-  const DEBUG = false
+  const DEBUG = true
   const DEBUG_POINTS = false
 
   const RIGHT = 0
@@ -345,6 +345,91 @@ function draftTortugaBody({
       .shiftFractionTowards(points.bottomLeft, 0.4)
     snippets.logo = new Snippet('logo', points.logo)
       .attr('data-scale', scale)
+
+    // Arrr!
+    let arrr_scale = Math.min(1, width / 200)
+    let arrr_textsize = 'text-md'
+    let arrr_offset = 0.2
+    let arrr_shiftback = 0.5
+    if (arrr_scale < 1.0) {
+      arrr_textsize = 'text-sm'
+      arrr_offset = 0.1
+      arrr_shiftback = 0
+    }
+    if (arrr_scale < 0.7) {
+      arrr_textsize = 'text-xs'
+      arrr_offset = 0.05
+    }
+    if (arrr_scale == 1) {
+      arrr_scale = width / 75
+    }
+    if (arrr_scale > 6) {
+      arrr_textsize = 'text-xl'
+      arrr_shiftback = 0.6
+    }
+    if (arrr_scale > 9) {
+      arrr_textsize = 'text-2xl'
+      arrr_shiftback = 0.8
+    }
+    if (arrr_scale > 12) {
+      arrr_textsize = 'text-3xl'
+    }
+    if (arrr_scale > 15) {
+      arrr_textsize = 'text-4xl'
+    }
+    if (arrr_scale > 20) {
+      arrr_textsize = 'text-5xl'
+    }
+    points.logo_t1 = points.logo
+      .shiftTowards(points.topRight, width / 5)
+      .shiftFractionTowards(points.logo, arrr_shiftback)
+    points.logo_t2 = points.logo_t1
+      .shift(UP, width / 20)
+      .shift(RIGHT, width / 40)
+    points.logo_t0 = points.logo_t1
+      .shift(UP, width / 20)
+    points.logo_t3 = points.logo_t2
+      .shift(UP, width / 40)
+      .shift(RIGHT, width / 20)
+    points.logo_c23a = points.logo_t2
+      .shift(RIGHT, width / 40)
+    points.logo_c23b = points.logo_t2
+      .shift(UP, width / 90)
+      .shift(RIGHT, width / 20)
+    points.logo_t4 = points.logo_t3
+      .shift(UP, width / 40)
+      .shift(LEFT, width / 17)
+    points.logo_c34a = points.logo_t3
+      .shift(UP, width / 60)
+    points.logo_c34b = points.logo_t3
+      .shift(UP, width / 40)
+      .shift(LEFT, width / 30)
+    points.logo_t5 = points.logo_t3.flipX(points.logo_t4)
+    points.logo_c45a = points.logo_c34b.flipX(points.logo_t4)
+    points.logo_c45b = points.logo_c34a.flipX(points.logo_t4)
+    points.logo_c50a = points.logo_c23b.flipX(points.logo_t4)
+    points.logo_c50b = points.logo_c23a.flipX(points.logo_t4)
+
+    paths.arrr = new Path()
+      .move(points.logo_t0)
+      .line(points.logo_t1)
+      .line(points.logo_t2)
+      .curve(points.logo_c23a, points.logo_c23b, points.logo_t3)
+      .curve(points.logo_c34a, points.logo_c34b, points.logo_t4)
+      .curve(points.logo_c45a, points.logo_c45b, points.logo_t5)
+      .curve(points.logo_c50a, points.logo_c50b, points.logo_t0)
+      .close()
+
+    points.arrr = points.logo_t0
+      .shiftFractionTowards(points.logo_t4, arrr_offset)
+      .shiftFractionTowards(points.logo_t5, arrr_offset)
+      .attr('data-text', 'Arrr!')
+      .attr('data-text-class', `fill-contrast ${arrr_textsize}`)
+    if (DEBUG) {
+      log.debug('Arrr scale: ' + arrr_scale)
+      log.debug('Arrr offset: ' + arrr_offset)
+      log.debug('Arrr textsize: ' + arrr_textsize)
+    }
 
     points.grainlineTop = points.topRight
       .shift(DOWN, frontLength / 10).shift(LEFT, width / 10)

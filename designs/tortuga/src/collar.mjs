@@ -77,7 +77,51 @@ function draftTortugaCollar({
 
   // Complete?
   if (complete) {
-    let scale = Math.min(1, width / 200)
+    let scale = Math.min(1, width / 300)
+    let buttonscale = Math.min(1, width / 150)
+    if (buttonscale == 1) {
+      buttonscale = width / 175
+    }
+
+    // Closure
+    let snippet2 = 'buttonhole'
+    if (options.collarClosure === 'OneSetOfButtonAndButtonhole' ||
+      options.collarClosure === 'TwoSetsOfButtonsAndButtonholes') {
+      snippet2 = 'button'
+    }
+    // Button/hole set 1, nearest bottom of collar
+    if (options.collarClosure === 'TwoSetsOfButtonholes' ||
+      options.collarClosure === 'OneSetOfButtonholes' ||
+      options.collarClosure === 'TwoSetsOfButtonsAndButtonholes' || 
+      options.collarClosure === 'OneSetOfButtonAndButtonhole') {
+
+      points.buttonholeBottomLeft = points.bottomLeft
+        .shift(RIGHT, finishedWidth / 5)
+        .shift(UP, finishedWidth / 4)
+      snippets.leftButtonholeBottom = new Snippet('buttonhole',
+        points.buttonholeBottomLeft)
+        .attr('data-scale', buttonscale)
+      points.buttonholeBottomRight = points.buttonholeBottomLeft.flipX()
+      snippets.rightButtonholeBottom = new Snippet(snippet2,
+        points.buttonholeBottomRight)
+        .attr('data-scale', buttonscale)
+    }
+    // Button/hole set 2, above button/hole 1
+    if (options.collarClosure === 'TwoSetsOfButtonholes' ||
+      options.collarClosure === 'TwoSetsOfButtonsAndButtonholes') {
+
+      points.buttonholeTopLeft = points.buttonholeBottomLeft
+        .shift(UP, width / 8)
+      snippets.leftButtonholeTop = new Snippet('buttonhole',
+        points.buttonholeTopLeft)
+        .attr('data-scale', buttonscale)
+      points.buttonholeTopRight = points.buttonholeBottomRight
+        .shift(UP, width / 8)
+      snippets.rightButtonholeTop = new Snippet(snippet2,
+        points.buttonholeTopRight)
+        .attr('data-scale', buttonscale)
+    }
+      
 
     paths.foldline = new Path()
       .move(points.centerLeft)

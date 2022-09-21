@@ -101,6 +101,15 @@ export const base = {
     collarWidth: { pct: 25, min: 5, max: 50, menu: 'neck' },
     // Length of collar, as percent added to neck circumference.
     collarLength: { pct: 10, min: 5, max: 20, menu: 'neck' },
+    // Style of collar closure.
+    collarClosure: {
+      dflt: 'TwoSetsOfButtonholes',
+      list: [
+        'TwoSetsOfButtonholes', 'TwoSetsOfButtonsAndButtonholes',
+        'OneSetOfButtonholes', 'OneSetOfButtonAndButtonhole',
+        'none' ],
+      menu: 'neck',
+    },
     // Length of sleeve, as percent added to shoulder-to-wrist.
     sleeveLength: { pct: 10, min: 0, max: 50, menu: 'sleeve' },
     // Width of sleeve, as percent added to biceps.
@@ -116,6 +125,12 @@ export const base = {
     cuffWidth: { pct: 15, min: 2, max: 35, menu: 'sleeve' },
     // Length of cuff, as percent added to wrist circumference.
     cuffLength: { pct: 10, min: 2, max: 20, menu: 'sleeve' },
+    // Style of cuff closure.
+    cuffClosure: {
+      dflt: 'TwoButtonholes',
+      list: ['TwoButtonholes', 'ButtonAndButtonhole', 'none'], 
+      menu: 'sleeve',
+    },
   },
   plugins: [pluginBundle],
   draft: draftTortugaBase,
