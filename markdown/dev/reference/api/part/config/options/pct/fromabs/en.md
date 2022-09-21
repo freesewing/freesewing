@@ -15,7 +15,7 @@ value.
 <Note>
 
 Note that this method will not change the percentage of the option.
-It will merely return return a percentage value. It is up to the
+It will merely return a percentage value. It is up to the
 frontend designer to then either set this value, or suggest it to
 the user.
 
@@ -27,16 +27,15 @@ The `fromAbs` property should hold a function with the following
 signature:
 
 ```js
-function toAbs(millimeter, settings) {
+function fromAbs(millimeter, settings) {
   // return a percentage here (0.5 is 50%)
 }
 ```
 
 The first parameter is the desired value in millimeter (for example
 `130` for `13cm`).
-The second parameter is the pattern's run-time configuration
-or [settings](/reference/api/settings) which holds -- among other things -- the
-measurements provided by the user.
+The second parameter is the pattern's [settings](/reference/api/settings) object
+which holds -- among other things -- the measurements provided by the user.
 
 ## Example
 
@@ -74,17 +73,14 @@ that will do the work for you:
 // First import the method
 import { pctBasedOn } from '@freesewing/core'
 
-const config = {
-  // ...
-  options: {
-    chestEase: {
-      pct: 8,
-      min: 0,
-      max: 20,
-      // Pass the measurement name as parameter
-      // and spread the return value into your option
-      ...pctBasedOn('chest')
-    }
+options: {
+  chestEase: {
+    pct: 8,
+    min: 0,
+    max: 20,
+    // Pass the measurement name as parameter
+    // and spread the return value into your option
+    ...pctBasedOn('chest')
   }
 }
 ```
@@ -93,5 +89,6 @@ This will not only add an `fromAbs()` method to your option --
 one that will return the percentage of any millimeter value passed into it --
 it will also add a `toAbs()` method that does the inverse: return the
 value in millimeter of whatever percentage the option is set to.
+
 See [Reporting a percentage option value in
 millimeter](/reference/api/config/options/pct/toabs) for details.

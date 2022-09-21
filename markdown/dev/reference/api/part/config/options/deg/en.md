@@ -1,5 +1,5 @@
 ---
-title: degrees
+title: Degree options
 ---
 
 For angles, use a degree option.
@@ -11,9 +11,17 @@ Your degree option should be a plain object with these properties:
 - `deg` : The default value in degrees
 - `min` : The minimul that's allowed
 - `max` : The maximum that's allowed
-- `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
 
-[hide]: /reference/api/config/options#optionally-hide-options-by-configuring-a-hide-method
+<Tip>
+
+Like all options that are configured through an object, you can 
+add more properties to the options' object to implement functionality on
+top of what's provided by the core library.
+
+Refer to [extending options](/reference/api/part/config/options/extend) for
+more details.
+
+</Tip>
 
 ## Example
 

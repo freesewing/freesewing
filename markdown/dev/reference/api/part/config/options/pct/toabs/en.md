@@ -24,9 +24,8 @@ function toAbs(percentage, settings) {
 
 The first parameter is the percentage value provided by the user (for example
 `0.5` for `50%`).
-The second parameter is the pattern's run-time configuration
-or [settings](/reference/api/settings) which holds -- among other things -- the
-measurements provided by the user.
+The second parameter holds the pattern's [settings](/reference/api/settings) object
+which holds -- among other things -- the measurements provided by the user.
 
 ## Example
 
@@ -64,17 +63,14 @@ that will do the work for you:
 // First import the method
 import { pctBasedOn } from '@freesewing/core'
 
-const config = {
-  // ...
-  options: {
-    chestEase: {
-      pct: 8,
-      min: 0,
-      max: 20,
-      // Pass the measurement name as parameter
-      // and spread the return value into your option
-      ...pctBasedOn('chest')
-    }
+options: {
+  chestEase: {
+    pct: 8,
+    min: 0,
+    max: 20,
+    // Pass the measurement name as parameter
+    // and spread the return value into your option
+    ...pctBasedOn('chest')
   }
 }
 ```
@@ -82,5 +78,7 @@ const config = {
 This will not only add an `toAbs()` method to your option -- one that will return
 the value in millimeter of whatever percentage the option is set to -- it will
 also add a `fromAbs()` method that does the inverse: return the percentage of
-any millimeter value passed into it. See [Setting a value in millimeter as a
+any millimeter value passed into it.
+
+See [Setting a value in millimeter as a
 percentage option](/api/config/options/pct/fromabs) for details.

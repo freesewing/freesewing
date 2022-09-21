@@ -1,5 +1,5 @@
 ---
-title: constant
+title: Constant options
 ---
 
 If your option is a scalar value (like a string or a number),

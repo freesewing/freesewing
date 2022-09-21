@@ -15,14 +15,24 @@ Your snapped percentage option should be a plain object with these properties:
 - `pct` : The default percentage
 - `min` : The minimum percentage that's allowed
 - `max` : The maximum percentage that's allowed
-- `snap`: Holds the snap configuration (see [Snap configuration](#))
+- `snap`: Holds the snap configuration (see below)
 - `toAbs`: a method returning the **millimeter value** of the option ([see `toAbs()`][toabs])
-- `hide` <small>(optional)</small> : A method to [control the optional display of the option][hide]
+
+<Tip>
+##### Values for snapped percentage options are available through `absoluteOptions`
+
+Your draft method can not only destructure the `options` property to get access to options,
+it can also desctructure the `absoluteOptions` property to get access to the values 
+for those options with snaps configured.
+
+See [the part `draft()` method](/reference/api/part/draft) for mor details.
+
+</Tip>
 
 ## Snap configuration
 
 A snapped percentage option requires a `snap` property that will determine
-what values to snap to.
+what **value in millimeter** to snap to.
 
 There are three different scenarios:
 
@@ -32,13 +42,13 @@ When `snap` holds a number, the option will be _snapped_ to a
 multiple of this value.
 
 In the example below, the absolute value of this option will be set to a multiple of `7`
-(so one of `7`, `14`, `21`, `28`, `35`, ...).
+(so one of `0mm`, `7mm`, `14mm`, `21mm`, `28mm`, `35mm`, `42mm`, ...).
 
 ```js
 myOption: {
   pct:5,
   min: 0
-  max: 35,
+  max: 25,
   snap: 7,
   toAbs: (pct, { measurements }) => measurements.waistToFloor * pct
 }
@@ -58,7 +68,7 @@ When snap holds an array of numbers, the option will be _snapped_ to one of
 the numbers unless it's further away than half the distance to its closest neighbor.
 
 In the example below, if the absolute value returned by `toAbs()` is in the
-region of influence -- in this example between 4.5 and 69.5 --  the nearest snap value
+region of influence -- in this example between `4.5mm` and `69.5mm` --  the nearest snap value
 will be used. If instead it is outside the region of influence, the result of
 `toAbs()` will be uses as-is.
 
@@ -74,19 +84,20 @@ myOption: {
 
 ### snap is a plain object with `metric` and `imperial` properties that each hold an array of numbers
 
-In this case, the behavior is exaxtle the same as when `snap` holds an array
+In this case, the behavior is similar to when `snap` holds an array
 of numbers.
 
-The differnce is that this allows you to supply a different list of snap values
+The difference is that this allows you to supply a different list of snap values
 for users using metric or imperial units.
 
 In the example below, the value of [settings.units](/api/settings/units) will
 determine which list of snap values gets used.
 
 Then, if the absolute value returned by `toAbs()` is in the
-region of influence -- in this example between 4.5 and 69.5 --  the nearest snap value
+region of influence -- in this example between `4.5mm` and `69.5mm` for metric
+and between `12.7mm` and `88.9mm` for imperial --  the nearest snap value
 will be used. If instead it is outside the region of influence, the result of
-`toAbs()` will be uses as-is.
+`toAbs()` will be used as-is.
 
 ```js
 myOption: {
@@ -95,7 +106,7 @@ myOption: {
   max: 35,
   snap: {
     metric: [7, 12, 21, 34, 53, 64 ],
-    imperial: [25.4, 50.8, 76.3 ],
+    imperial: [25.4, 50.8, 76.2 ],
   }
 }
 ```
@@ -127,10 +138,10 @@ We have a few different ways we can approach this:
 We use a percentage option based on a vertical measurement, like
 `waistToFloor`.
 
-The elastic width people end up with is something like 34.12mm for
-user A and 27.83mm for user B.
+The elastic width people end up with is something like `34.12mm` for
+user A and `27.83mm` for user B.
 
-Those are not widths for sale in the store, so that's not great.
+Elastic of that width is not for sale in the store, so that's not great.
 
 ### Approach B: We use a list option
 
@@ -154,23 +165,22 @@ with:
 - Our list of standard elastic widths as _snaps_
 
 For typical humans, our options will _snap_ to the closest match in our
-list and behave just like Approach A (with a list option).
+list and behave just like Approach B (with a list option).
 
 For dolls and giants, the option will revert to the parametric value and
-behave just like Approach B (with a percentage option).
-
-Sweet!
+behave just like Approach A (with a percentage option).
 
 ## How snapped percentage options work
 
-Before we wade into the details, let's first agree on terminology:
+Before we wade into the details of how snapped percentage options are handled
+under the hood, let's first agree on terminology:
 
-- The **percentage value** is the page passed by the user for the option.
-  Its value always represents a percentage.
+- The **percentage value** is the value passed by the user for the option.
+  Its value always represents a percentage. For example `0.5` for 50%.
 - The **millimeter value** is the result of feeding the **percentage value** to
-  the `toAbs()` method. Its value always represents millimeters.
+  the `toAbs()` method. Its value always represents millimeters. For example `12mm`.
 - The **snap values** are the values provided by the snap confguration.
-  Each of the values always represents millimeters.
+  Each of the values always represents millimeters (even for imperial users).
 
 Under the hood, and snapped percentage option will:
 
@@ -207,38 +217,8 @@ This system results in the best of both worlds:
 - When the input measurements go somewhere the designer did not anticipate,
   the option will just behave as a regular percentage option
 
-## Using snapped percentage options in your pattern code
+[toabs]: /reference/api/part/config/options/pct/toabs
 
-This is all well and good, but how do you use this?
+[pct]: /reference/api/part/config/options/pct
 
-Well, just like you can get the `options` object from our shorthand call,
-you can now get the `absoluteOptions` object that holds absolute values
-for those options with snaps configured.
-
-In our paco example, what used to be:
-
-```js
-store.set('ankleElastic', measurements.waistToFloor * options.ankleElastic)
-```
-
-is now:
-
-```js
-store.set('ankleElastic', absoluteOptions.ankleElastic)
-```
-
-<Note>
-
-There's really no added value in setting this in the store as `absoluteOptions`
-is available everywhere, but we've changed as little as possible in the example
-to clarify the difference.
-
-</Note>
-
-[toabs]: /reference/api/config/options/pct/toabs
-
-[pct]: /reference/api/config/options/pct
-
-[list]: /reference/api/config/options/list
-
-[hide]: /reference/api/config/options#optionally-hide-options-by-configuring-a-hide-method
+[list]: /reference/api/part/config/options/list

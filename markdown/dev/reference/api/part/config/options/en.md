@@ -41,8 +41,7 @@ These are the types of options supported by the FreeSewing core library:
 4. [**degree** options][deg] are for degrees
 5. [**list** options][list] are for a list of possible choices
 6. [**millimeter** options][mm] are supported but not recommended (see warning below)
-7. [**percentage** options][pct] are for percentages
-8. [**snapped percentage** options][snapped] constrain percentage options to (a set of) possible values
+7. [**percentage** options][pct] are for percentages (and can optionally be [**snapped percentage** options][snapped])
 
 <Tip>
 
@@ -58,7 +57,7 @@ we do not allow them in designs contributed to FreeSewing.org
 as they are a _red flag_ for poor parametric design.
 
 If you believe you need `mm` options, look into [snapped
-percentage options](snapped) instead.
+percentage options][snapped] instead.
 
 </Warning>
 
