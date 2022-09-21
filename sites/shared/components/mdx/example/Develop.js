@@ -58,7 +58,7 @@ const Develop = (props) => {
     }
     for (let i in props.focus[part].points) {
       let name = props.focus[part].points[i]
-      let point = props.parts[part].points[name]
+      let point = props.parts[part.name].points[name]
       points.push(
         <details key={'potitle-' + name} className={'point c' + (i % 8)}>
           <summary>

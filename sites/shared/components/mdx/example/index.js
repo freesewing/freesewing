@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Svg from './Svg'
 import Defs from './Defs'
 import Part from './Part'
+import Stack from './Stack'
 import Develop from './Develop'
 
 const PatternSvg = props => (
@@ -19,17 +20,11 @@ const PatternSvg = props => (
     <Defs {...props} />
     <style>{`:root { --pattern-scale: ${props.settings.scale || 1}}`}</style>
     <g>
-      {Object.keys(props.parts).map((name) => (
-        <Part
-          part={props.parts[name]}
-          language={props.settings.locale}
-          paperless={props.settings.paperless}
-          units={props.settings.units}
-          key={name}
-          name={name}
-          focus={props.focus || false}
-          develop={props.develop || false}
-          raiseEvent={props.raiseEvent}
+      {Object.keys(props.stacks).map((stackName) => (
+        <Stack {...props}
+          key={stackName}
+          stackName={stackName}
+          stack={props.stacks[stackName]}
         />
       ))}
     </g>
@@ -54,7 +49,7 @@ const Pattern = props => {
   const [focus, setFocus] = useState(null)
 
   // Don't continue if there's no pattern
-  if (!pattern || !patterns[pattern]) return <pre>{JSON.stringify(props,null,4)}</pre> //null
+  if (!pattern || !patterns[pattern]) return <pre>No pattern provided</pre>
 
   /* Helper method to handle user clicks */
   const raiseEvent = (type, data) => {
@@ -103,11 +98,12 @@ const Pattern = props => {
      : val
   }
 
-  if (part !== '') settings.only = [part]
+  if (part !== '') settings.only = [ "examples."+part]
   const patternInstance = new patterns[pattern](settings)
   if (sample) patternInstance.sample()
   else patternInstance.draft()
   const patternProps = patternInstance.getRenderProps()
+
   return svgOnly
     ? <PatternSvg {...patternProps} develop={develop} focus={focus} raiseEvent={raiseEvent} />
     : (
@@ -123,7 +119,7 @@ const Pattern = props => {
                     className="toggle toggle-secondary"
                     onChange={() => setDevelop(!develop)}
                   />
-                  <span className="label-text text-secondary">{develop ? 'Disable' : 'Enable'} Developer View</span>
+                  <span className="label-text text-secondary">{develop ? 'Disable' : 'Enable'} X-Ray</span>
                 </label>
               </div>
             </div>

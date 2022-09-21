@@ -5,9 +5,9 @@ import Figure from './figure.js'
 import ReadMore from './read-more.js'
 import Example from './example/index.js'
 import Dot from './dot.js'
-import examples from '@freesewing/examples'
-import rendertest from '@freesewing/rendertest'
-import tutorial from '@freesewing/tutorial'
+import { Examples } from '@freesewing/examples'
+import { Rendertest } from '@freesewing/rendertest'
+import { Tutorial } from '@freesewing/tutorial'
 import { Tab, Tabs } from './tabs.js'
 
 
@@ -15,7 +15,11 @@ const mdxCustomComponents = (app=false) => ({
   // Custom components
   Example: props => <Example
     {...props}
-    patterns={{examples, rendertest, tutorial}}
+    patterns={{
+      examples: Examples,
+      //rendertest: Rendertest,
+      //tutorial: Tutorial,
+    }}
   >{props.children}</Example>,
   Comment: props => <Popout {...props} comment />,
   Fixme: props => <Popout {...props} fixme />,

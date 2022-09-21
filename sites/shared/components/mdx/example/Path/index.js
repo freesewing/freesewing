@@ -4,7 +4,7 @@ import DevelopPath from '../DevelopPath'
 import { getProps } from '../utils'
 
 const Path = (props) => {
-  if (!props.path.render) return null
+  if (props.path.hidden) return null
   const output = []
   const pathId = 'path-' + props.part + '-' + props.name
   if (props.develop) output.push(<DevelopPath {...props} key={'dpa-' + props.name} />)

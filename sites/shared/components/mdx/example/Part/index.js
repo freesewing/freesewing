@@ -4,13 +4,13 @@ import Point from '../Point'
 import Snippet from '../Snippet'
 import { getProps } from '../utils'
 
-const Part = (props) => {
+const Part = ({ part, paperless=false, develop=false, language='en', raiseEvent=()=>false }) => {
   const focusPoint = (point, i) => {
-    const p = props.part.points[point]
-    const pathString = `M ${p.x} ${props.part.topLeft.y} `
-      + `L ${p.x} ${props.part.bottomRight.y} `
-      + `M ${props.part.topLeft.x} ${p.y} `
-      + `L ${props.part.bottomRight.x} ${p.y} `
+    const p = part.points[point]
+    const pathString = `M ${p.x} ${part.topLeft.y} `
+      + `L ${p.x} ${part.bottomRight.y} `
+      + `M ${part.topLeft.x} ${p.y} `
+      + `L ${part.bottomRight.x} ${p.y} `
     const classes = 'focus point c' + (i % 8) // Cycle through 8 colors
     return (
       <React.Fragment key={'fp' + point}>
@@ -21,8 +21,8 @@ const Part = (props) => {
           r="5"
           className="contrast"
           onClick={() =>
-            props.raiseEvent('clearFocus', {
-              part: props.name,
+            raiseEvent('clearFocus', {
+              part: part.name,
               type: 'points',
               name: point
             })
@@ -33,10 +33,10 @@ const Part = (props) => {
   }
 
   const focusCoords = (p, i) => {
-    let pathString = `M ${p.x} ${props.part.topLeft.y} `
-    pathString += `L ${p.x} ${props.part.bottomRight.y} `
-    pathString += `M ${props.part.topLeft.x} ${p.y} `
-    pathString += `L ${props.part.bottomRight.x} ${p.y} `
+    let pathString = `M ${p.x} ${part.topLeft.y} `
+    pathString += `L ${p.x} ${part.bottomRight.y} `
+    pathString += `M ${part.topLeft.x} ${p.y} `
+    pathString += `L ${part.bottomRight.x} ${p.y} `
     let classes = 'focus coords c' + (i % 4) // Cycle through 4 CSS classes
     return (
       <React.Fragment key={'cp' + i}>
@@ -47,8 +47,8 @@ const Part = (props) => {
           r="5"
           className={classes}
           onClick={() =>
-            props.raiseEvent('clearFocus', {
-              part: props.name,
+            raiseEvent('clearFocus', {
+              part: part.name,
               type: 'coords',
               data: p
             })
@@ -58,32 +58,32 @@ const Part = (props) => {
     )
   }
 
-  let grid = props.paperless ? (
+  let grid = paperless ? (
     <rect
-      x={props.part.topLeft.x}
-      y={props.part.topLeft.y}
-      width={props.part.width}
-      height={props.part.height}
+      x={part.topLeft.x}
+      y={part.topLeft.y}
+      width={part.width}
+      height={part.height}
       className="grid"
-      fill={'url(#grid-' + props.name + ')'}
+      fill={'url(#grid-' + part.name + ')'}
     />
   ) : null
 
   let focus = []
-  if (props.develop) {
-    if (props.focus && typeof props.focus[props.name] !== 'undefined') {
-      for (let i in props.focus[props.name].points)
-        focus.push(focusPoint(props.focus[props.name].points[i], i))
-      for (let i in props.focus[props.name].paths) {
-        let name = props.focus[props.name].paths[i]
+  if (develop) {
+    if (focus && typeof focus[name] !== 'undefined') {
+      for (let i in focus[name].points)
+        focus.push(focusPoint(focus[name].points[i], i))
+      for (let i in focus[name].paths) {
+        let name = focus[name].paths[i]
         focus.push(
           <path
             key={'fpa-' + name}
-            d={props.part.paths[name].asPathstring()}
+            d={part.paths[name].asPathstring()}
             className={'focus path c' + (i % 4)}
             onClick={() =>
-              props.raiseEvent('clearFocus', {
-                part: props.name,
+              raiseEvent('clearFocus', {
+                part: name,
                 type: 'paths',
                 name
               })
@@ -91,44 +91,44 @@ const Part = (props) => {
           />
         )
       }
-      for (let i in props.focus[props.name].coords)
-        focus.push(focusCoords(props.focus[props.name].coords[i], i))
+      for (let i in focus[name].coords)
+        focus.push(focusCoords(focus[name].coords[i], i))
     }
   }
 
   return (
-    <g {...getProps(props.part)} id={`part-${props.name}`}>
+    <g {...getProps(part)} id={`part-${part.name}`}>
       {grid}
-      {Object.keys(props.part.paths).map((name) => (
+      {Object.keys(part.paths).map((name) => (
         <Path
           key={name}
           name={name}
-          part={props.name}
-          language={props.language}
-          path={props.part.paths[name]}
-          focus={props.focus}
-          topLeft={props.part.topLeft}
-          bottomRight={props.part.bottomRight}
-          develop={props.develop}
-          raiseEvent={props.raiseEvent}
+          part={part.name}
+          language={language}
+          path={part.paths[name]}
+          focus={focus}
+          topLeft={part.topLeft}
+          bottomRight={part.bottomRight}
+          develop={develop}
+          raiseEvent={raiseEvent}
         />
       ))}
-      {Object.keys(props.part.points).map((name) => (
+      {Object.keys(part.points).map((name) => (
         <Point
           key={name}
           name={name}
-          part={props.name}
-          language={props.language}
-          point={props.part.points[name]}
-          focus={props.focus}
-          topLeft={props.part.topLeft}
-          bottomRight={props.part.bottomRight}
-          develop={props.develop}
-          raiseEvent={props.raiseEvent}
+          part={part.name}
+          language={language}
+          point={part.points[name]}
+          focus={focus}
+          topLeft={part.topLeft}
+          bottomRight={part.bottomRight}
+          develop={develop}
+          raiseEvent={raiseEvent}
         />
       ))}
-      {Object.keys(props.part.snippets).map((name) => (
-        <Snippet key={name} name={name} snippet={props.part.snippets[name]} />
+      {Object.keys(part.snippets).map((name) => (
+        <Snippet key={name} name={name} snippet={part.snippets[name]} />
       ))}
       {focus}
     </g>
