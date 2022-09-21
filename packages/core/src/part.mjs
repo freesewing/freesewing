@@ -106,6 +106,7 @@ Part.prototype.shorthand = function () {
   const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
   const shorthand = {
     complete,
+    getId: this.getId,
     hide: this.hide,
     log: this.context.store.log,
     macro: this.__macroClosure(),
