@@ -38,7 +38,7 @@ export const options = {
 }
 
 export function BuildMainShape(part, frontPart) {
-  const { sa, options, measurements, optionalMeasurements, Point, Path, points, paths, store, paperless, macro } =
+  const { sa, options, measurements, optionalMeasurements, Point, Path, points, paths, store, paperless, macro, log } =
     part.shorthand()
 
   let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
@@ -221,8 +221,8 @@ export function BuildMainShape(part, frontPart) {
   paths.waist1 = waistCurve.translate(0, 10).attr('class', 'lining dashed')
 
   if (iteration >= 100) {
-    console.log( 'Too many iterations trying to make it fit!' )
-    throw 'Too many iterations trying to make it fit!'
+    // console.log( 'Too many iterations trying to make it fit!' )
+    log.error( 'Too many iterations trying to make it fit!' )
   }
 
   if (frontPart) {

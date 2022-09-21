@@ -2,7 +2,6 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { measurements, options, BuildMainShape } from './shape.mjs'
 
 function penelopeFront(part) {
-  // return( part )
   const { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
     part.shorthand()
 
