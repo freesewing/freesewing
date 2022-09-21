@@ -114,6 +114,7 @@ Part.prototype.shorthand = function () {
     part: this,
     sa,
     scale: this.context.settings?.scale,
+    setHidden: this.setHidden,
     store: this.context.store,
     unhide: this.unhide,
     units: this.__unitsClosure(),
