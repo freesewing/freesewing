@@ -17,6 +17,7 @@ const frontendFiles = [
   '**/page-templates/**',
   'packages/i18n/**/*.md/*.js',
 ]
+const isomorphicFiles = ['packages/core/**', 'plugins/**', 'tests/designs/**', 'tests/plugins/**']
 
 module.exports = {
   extends: 'eslint:recommended',
@@ -56,7 +57,7 @@ module.exports = {
       },
     },
     {
-      files: '**',
+      files: isomorphicFiles,
       excludedFiles: [].concat(nodeFiles, frontendFiles),
       env: {
         'shared-node-browser': true,
