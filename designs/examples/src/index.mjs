@@ -37,6 +37,8 @@ import {
 
 // Point API
 import {
+  point_addcircle,
+  point_addtext,
   point_angle,
   point_attr,
   point_clone,
@@ -46,6 +48,8 @@ import {
   point_dy,
   point_flipx,
   point_flipy,
+  point_setcircle,
+  point_settext,
   point_shift,
   point_shiftfractiontowards,
   point_shifttowards,
@@ -163,6 +167,8 @@ const Examples = new Design({
     path_trim,
 
     // Point API
+    point_addcircle,
+    point_addtext,
     point_angle,
     point_attr,
     point_clone,
@@ -172,6 +178,8 @@ const Examples = new Design({
     point_dy,
     point_flipx,
     point_flipy,
+    point_setcircle,
+    point_settext,
     point_shift,
     point_shiftfractiontowards,
     point_shifttowards,
@@ -284,6 +292,8 @@ export {
   path_trim,
 
   // Point API
+  point_addcircle,
+  point_addtext,
   point_angle,
   point_attr,
   point_clone,
@@ -293,6 +303,8 @@ export {
   point_dy,
   point_flipx,
   point_flipy,
+  point_setcircle,
+  point_settext,
   point_shift,
   point_shiftfractiontowards,
   point_shifttowards,

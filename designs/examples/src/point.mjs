@@ -1,5 +1,33 @@
 import { box } from './shared.mjs'
 
+export const point_addcircle = {
+  name: 'examples.point_addcircle',
+  draft: ({ Point, points, part }) => {
+    points.a = new Point(30, 10).addCircle(3, 'lining dashed').addCircle(7, 'mark dashed')
+
+    points.b = new Point(50, 10)
+      .addCircle(1, 'interfacing')
+      .addCircle(3, 'fabric')
+      .addCircle(5, 'lining')
+      .addCircle(7, 'mark')
+      .addCircle(9, 'note')
+
+    points.c = new Point(70, 10).addCircle(3, 'interfacing').addCircle(7, 'mark lashed')
+    return box(part, 100, 20)
+  },
+}
+
+export const point_addtext = {
+  name: 'examples.point_addtext',
+  draft: ({ Point, points, part }) => {
+    points.anchor = new Point(100, 25)
+      .addText('supportFreesewingBecomeAPatron', 'center')
+      .addText('please?')
+
+    return box(part, 200, 50)
+  },
+}
+
 export const point_angle = {
   name: 'examples.point_angle',
   draft: ({ Point, points, Path, paths, part }) => {
@@ -251,6 +279,34 @@ export const point_rotate = {
     }
 
     return part
+  },
+}
+
+export const point_setcircle = {
+  name: 'examples.point_setcircle',
+  draft: ({ Point, points, part }) => {
+    points.a = new Point(30, 10).setCircle(3, 'lining dashed').setCircle(7, 'mark dashed')
+
+    points.b = new Point(50, 10)
+      .setCircle(1, 'interfacing')
+      .setCircle(3, 'fabric')
+      .setCircle(5, 'lining')
+      .setCircle(7, 'mark')
+      .setCircle(9, 'note')
+
+    points.c = new Point(70, 10).setCircle(3, 'interfacing').setCircle(7, 'mark lashed')
+    return box(part, 100, 20)
+  },
+}
+
+export const point_settext = {
+  name: 'examples.point_settext',
+  draft: ({ Point, points, part }) => {
+    points.anchor = new Point(100, 25)
+      .setText('supportFreesewingBecomeAPatron', 'center')
+      .setText('please?')
+
+    return box(part, 200, 50)
   },
 }
 
