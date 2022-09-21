@@ -1,7 +1,25 @@
+const nodeFiles = [
+  '**/build.dflt.{js,mjs,cjs}',
+  '**/build.{js,mjs,cjs}',
+  '**/config/**',
+  '**/prebuild.{js,mjs,cjs}',
+  '**/prebuild/**',
+  '**/scripts/**',
+  'packages/new-design/lib/**',
+  'sites/backend/**',
+  'sites/*/mdx/**',
+  'sites/*/themes/**',
+]
+const frontendFiles = [
+  '**/components/**',
+  '**/hooks/**',
+  '**/pages/**',
+  '**/page-templates/**',
+]
+
 module.exports = {
   extends: 'eslint:recommended',
   env: {
-    browser: true,
     es2021: true,
   },
   // Required when using experimental EcmaScript features
@@ -17,11 +35,46 @@ module.exports = {
   },
   rules: {},
   overrides: [
-    // JavaScript source files
+    // Partitioned JavaScript files
+    {
+      files: nodeFiles,
+      env: {
+        node: true,
+      },
+      rules: {
+        'no-console': 'off',
+      },
+    },
+    {
+      files: frontendFiles,
+      excludedFiles: nodeFiles,
+      extends: ['next/core-web-vitals'],
+      env: {
+        // We can be stricter than 'next/core-web-vitals' is
+        node: false,
+      },
+    },
+    {
+      files: '**',
+      excludedFiles: [].concat(nodeFiles, frontendFiles),
+      env: {
+        'shared-node-browser': true,
+      },
+    },
+    // Additional globals for JavaScript files that happen to be CommonJS.
+    // Only allowed in *.cjs files, not *.js files, because we probably want to move towards
+    // a `"type": "module"` future where any CommonJS files would have to have .cjs extensions.
     {
       files: ['**/*.cjs'],
       env: {
         commonjs: true,
+      },
+    },
+    // Additional globals for JavaScript files that happen to contain Mocha tests
+    {
+      files: ['**/tests/**', '**/*.test.mjs'],
+      env: {
+        mocha: true,
       },
     },
 
@@ -41,7 +94,7 @@ module.exports = {
 
     // Markdown files
     {
-      files: ['**/*.md'],
+      files: ['**/markdown/**', '**/*.md'],
       plugins: ['markdown'],
       processor: 'markdown/markdown',
     },
@@ -56,10 +109,4 @@ module.exports = {
       },
     },
   ],
-  globals: {
-    it: 'readonly',
-    describe: 'readonly',
-    process: 'readonly',
-    __dirname: 'readonly',
-  },
 }
