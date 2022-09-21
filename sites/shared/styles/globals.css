@@ -56,6 +56,17 @@
     background-color: inherit;
     background-opacity: inherit;
   }
+  .mdx table.mdx-table {
+    margin: 2rem auto;
+  }
+  .mdx table.mdx-table tr td {
+    padding: 0.25rem 0.5rem;
+  }
+  .mdx table.mdx-table thead th {
+    padding: 8px;
+    font-size: 110%;
+    border-bottom: 2px solid hsl(var(--b3));
+  }
 
   /* FreeSewing SVG output styles */
   .fs-stroke-fabric      { stroke: var(--pattern-fabric); }
