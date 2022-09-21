@@ -491,6 +491,7 @@ Pattern.prototype.__isStackHidden = function (stackName) {
     for (const partName of parts) {
       if (this.settings[this.activeStack || 0].only.includes(partName)) return false
     }
+    return true
   }
   for (const partName of parts) {
     if (this.__parts?.[partName]?.hide) return true
