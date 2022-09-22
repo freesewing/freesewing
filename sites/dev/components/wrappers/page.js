@@ -7,6 +7,8 @@ import LayoutWrapper from 'site/components/wrappers/layout'
 import Docs from 'site/components/layouts/docs'
 // Add feeds
 import Feeds from 'site/components/feeds.js'
+// Modal
+import Modal from 'shared/components/modal'
 
 /* This component should wrap all page content */
 const PageWrapper= ({
@@ -61,6 +63,7 @@ const PageWrapper= ({
           : children
         }
       </LayoutWrapper>
+      {app.popup && <Modal cancel={() => app.setPopup(false)}>{app.popup}</Modal>}
     </div>
   )
 }

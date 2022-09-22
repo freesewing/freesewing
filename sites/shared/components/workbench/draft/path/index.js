@@ -60,7 +60,7 @@ const pathDimensions = (from, to, cp1=false, cp2=false, path=false) => {
     if (cp1.y > bottomRight.y) bottomRight.y = cp1.y
     if (cp2.y > bottomRight.y) bottomRight.y = cp2.y
     // This undocumented core methods returns the curve's bounding box
-    bbox = path.boundary()
+    bbox = path.bbox()
   }
   const w = bottomRight.x - topLeft.x
   const h = bottomRight.y - topLeft.y
