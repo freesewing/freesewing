@@ -20,14 +20,14 @@ const patterns = {
   //tutorial: Tutorial,
 }
 
-const TabbedExample = ({pattern, part, children, caption, app }) => (
-  <div>
-  <Tabs tabs="Preview, Code, X-Ray">
-    <Tab><Preview patterns={patterns} pattern={pattern} part={part} /></Tab>
-    <Tab>{children}</Tab>
-    <Tab><Preview patterns={patterns} pattern={pattern} part={part} xray={true} showInfo={app.setPopup} /></Tab>
-  </Tabs>
-  {caption && <div className="text-center italic -mt-4"><Md>{caption}</Md></div>}
+const TabbedExample = ({ app, pattern, part, children, caption }) => (
+  <div className="my-8">
+    <Tabs tabs="Preview, Code, X-Ray">
+      <Tab><Preview patterns={patterns} pattern={pattern} part={part} app={app} /></Tab>
+      <Tab>{children}</Tab>
+      <Tab><Preview patterns={patterns} pattern={pattern} part={part} xray={true} app={app} /></Tab>
+    </Tabs>
+    {caption && <div className="text-center italic -mt-4"><Md>{caption}</Md></div>}
   </div>
 )
 

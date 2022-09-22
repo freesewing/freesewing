@@ -7,11 +7,15 @@ from the current position via two control points to a given endpoint.
 However, the start control point is identical to the current position,
 so you do not need to provide it.
 
+## Signature
+
 ```js
 Path path._curve(Point cp2, Point to)
 ```
 
 <Tip compact>This method is chainable as it returns the `Path` object</Tip>
+
+## Example
 
 <TabbedExample part="path__curve" caption="Example of the Path.\_curve() method">
 ```js
@@ -33,19 +37,14 @@ Path path._curve(Point cp2, Point to)
 </TabbedExample>
 
 
-<Note>
+## Notes
 
-###### This method exists to save you some typing
-
-Note that the two following calls yield the same result:
+The main purpose of this method is to save your some typing,
+as the two following calls yield the same result:
 
 ```js
 path.curve(point1, point1, point2)
 path._curve(point1, point2)
 ```
-
-So the only purpose of this method is to save your some typing.
-
-</Note>
 
 

@@ -7,7 +7,7 @@ export function box(part, w = 100, h = 50) {
   part.paths.box = new part.Path()
     .move(new part.Point(0, 0))
     .line(new part.Point(w, h))
-    .attr('class', 'hidden')
+    .setClass('hidden noxray')
 
   return part
 }

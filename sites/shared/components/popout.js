@@ -26,7 +26,7 @@ const Popout = (props) => {
 
   return props.compact
     ? (
-      <div className={`relative my-4 bg-${color} bg-opacity-5 -ml-6 -mr-6 sm:ml-0 sm:mr-0 ${className}`}>
+      <div className={`relative my-8 bg-${color} bg-opacity-5 -ml-6 -mr-6 sm:ml-0 sm:mr-0 ${className}`}>
         <div className={`
           border-y-4 sm:border-0 sm:border-l-4 px-4
           shadow text-base border-${color}

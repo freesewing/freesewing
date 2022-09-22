@@ -10,7 +10,7 @@
 
   /* Applied styles for common HTML tags */
   h1 { @apply text-base-content text-4xl py-5 font-bold lg:text-6xl }
-  h2 { @apply text-base-content text-3xl py-4 font-bold lg:text-4xl }
+  h2 { @apply text-base-content text-3xl pt-8 pb-2 my-8 font-bold lg:text-4xl border-b }
   h3 { @apply text-base-content text-2xl py-3 font-bold lg:text-3xl }
   h4 { @apply text-base-content text-xl py-2 font-bold lg:text-2xl }
   h5 { @apply text-base-content text-lg py-1 font-bold lg:text-xl }
@@ -27,15 +27,18 @@
   .mdx ol { @apply pl-4 list-decimal list-inside text-base-content }
   .mdx code { @apply bg-accent bg-opacity-10 px-2 rounded text-accent }
   .mdx pre code { @apply bg-inherit }
-  .mdx span.icon.icon-link:before {
-    content: '#';
-    font-size: 80%;
-    padding-right: 0.5rem;
+  .mdx a.heading-autolink {
+    color: currentColor;
     text-decoration: none;
-    text-decoration-line: none;
   }
-  .mdx a[aria-hidden="true"] {
-    text-decoration: none;
+  .mdx a.heading-autolink:after {
+    content: '';
+    color: hsl(var(--s));
+    font-size: 75%;
+    padding-left: 0.5rem;
+  }
+  .mdx a.heading-autolink:hover:after {
+    content: '#';
   }
   /* Watch out of P tags in the toc list */
   .mdx-toc ul li p {

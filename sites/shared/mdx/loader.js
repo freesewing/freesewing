@@ -72,7 +72,10 @@ const mdxLoader = async (language, site, slug, jargon) => {
         [rehypeJargon, { jargon, transform: jargonTransform }],
         [rehypeHighlight, { plainText: ['dot', 'http'] }],
         rehypeSlug,
-        rehypeAutolinkHeadings,
+        [rehypeAutolinkHeadings, {
+          behavior: 'wrap',
+          properties: { className: 'heading-autolink' }
+        }],
       ],
     })
   )
