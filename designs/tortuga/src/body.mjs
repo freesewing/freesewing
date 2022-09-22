@@ -1,4 +1,4 @@
-import { base, logMeasurement, showPoints } from './base.mjs'
+import { base, logMeasurement, showPoints, UNIVERSAL_DEBUG } from './base.mjs'
 import { sleeveGusset } from './sleeveGusset.mjs'
 import { neckGusset } from './neckGusset.mjs'
 import { collar } from './collar.mjs'
@@ -23,7 +23,7 @@ function draftTortugaBody({
   units,
   part,
 }) {
-  const DEBUG = true
+  const DEBUG = UNIVERSAL_DEBUG || false
   const DEBUG_POINTS = false
 
   const RIGHT = 0

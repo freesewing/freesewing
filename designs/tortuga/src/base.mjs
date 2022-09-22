@@ -1,6 +1,8 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { units } from '@freesewing/core'
 
+export const UNIVERSAL_DEBUG = true
+
 // Log part measurements.
 export function logMeasurement(part, measurement, mm) {
   const { log } = part.shorthand()

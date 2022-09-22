@@ -20,7 +20,7 @@ function draftTortugaSideGusset({
   part,
 }) {
 
-  const DEBUG = true
+  const DEBUG = UNIVERSAL_DEBUG || false
   const DEBUG_POINTS = false
 
   const RIGHT = 0

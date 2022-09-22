@@ -1,4 +1,4 @@
-import { base, logMeasurement, showPoints } from './base.mjs'
+import { base, logMeasurement, showPoints, UNIVERSAL_DEBUG } from './base.mjs'
 import { round } from '@freesewing/core'
 
 function draftTortugaSideAndSleevePatch({
@@ -19,7 +19,7 @@ function draftTortugaSideAndSleevePatch({
   part,
 }) {
 
-  const DEBUG = true
+  const DEBUG = UNIVERSAL_DEBUG || false
   const DEBUG_POINTS = false
 
   const RIGHT = 0
