@@ -45,7 +45,7 @@ export default function (part) {
     if (options.buttonhole) {
       let buttonholeDistance = store.get('goreLength')
       points.buttonhole = new Point(points.top.x, points.bottom.y - buttonholeDistance)
-      snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr('data-scale', 2)
+      snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr('data-scale', 2)
     }
     if (sa) {
       paths.sa = paths.saBase
