@@ -1,4 +1,4 @@
-import { base, logMeasurement, showPoints } from './base.mjs'
+import { base, logMeasurement, showPoints, UNIVERSAL_DEBUG } from './base.mjs'
 import { body } from './body.mjs'
 import { round } from '@freesewing/core'
 
