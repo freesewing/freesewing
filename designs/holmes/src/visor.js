@@ -29,9 +29,9 @@ export default function (part) {
     2 * visorRadius * Math.sin(visorSectorAngle / 2)
   )
   //test circle
-  //points.circleCentre = points.in1.shift(90,headRadius)
-  //.attr("data-circle",headRadius)
-  //points.circle60 = points.circleCentre.shift(-30,headRadius)
+  //points.circleCentre = points.in1.shift(90, radius)
+  //.attr("data-circle", radius)
+  //points.circle60 = points.circleCentre.shift(-30, radius)
   //
   points.in1C = points.in1.shift(0, cpDistance)
   points.in2C = points.in2.shift(180 + (180 / Math.PI) * visorSectorAngle, cpDistance)
