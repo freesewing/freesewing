@@ -1,9 +1,9 @@
-name: ESLint All Files
+# In the event that lint is broken in mainline (e.g. `develop`, the only mainline branch that has linting code right now),
+# this workflow is expected to pass even if lint.all.yml fails.
+
+name: ESLint Changed Files
 
 on:
-  push:
-    branches:
-      - develop
   pull_request:
     branches:
       - develop
@@ -31,4 +31,4 @@ jobs:
       - name: Build all
         run: npm run buildall
       - name: Run eslint
-        run: npm run lint
+        run: npx eslint --no-error-on-unmatched-pattern $(git diff --name-only $GITHUB_BASE_REF)
