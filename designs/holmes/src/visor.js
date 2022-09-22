@@ -4,7 +4,6 @@ export default function (part) {
     points,
     Path,
     paths,
-    measurements,
     options,
     complete,
     sa,
