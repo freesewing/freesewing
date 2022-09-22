@@ -17,9 +17,9 @@ export default function (part) {
   } = part.shorthand()
 
   // Design pattern here
-  let headCircumference = store.get('headCircumference')
+  let circumference = store.get('circumference')
   let earFlapLength = store.get('goreLength') * options.earLength
-  let earFlapWidth = (headCircumference / 12) * options.earWidth
+  let earFlapWidth = (circumference / 12) * options.earWidth
   points.top = new Point(0, 0)
   points.bottom = new Point(earFlapWidth, earFlapLength)
   points.topC = points.top.shift(0, points.bottom.x)
@@ -43,7 +43,7 @@ export default function (part) {
     macro('title', { at: points.title, nr: 3, title: 'ear flap', scale: 0.5 })
     macro('miniscale', { at: new Point(0, points.bottom.y * 0.3) })
     if (options.buttonhole) {
-      let buttonholeDistance = (options.lengthRatio * headCircumference) / 2
+      let buttonholeDistance = (options.lengthRatio * circumference) / 2
       points.buttonhole = new Point(points.top.x, points.bottom.y - buttonholeDistance)
       snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr('data-scale', 2)
     }

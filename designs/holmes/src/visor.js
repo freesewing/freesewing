@@ -14,11 +14,11 @@ export default function (part) {
     store,
   } = part.shorthand()
 
-  let headCircumference = store.get('headCircumference')
-  let headRadius = headCircumference / 2 / Math.PI
-  let visorRadius = headRadius / Math.sin((options.visorAngle * Math.PI) / 180)
+  let circumference = store.get('circumference')
+  let radius = circumference / 2 / Math.PI
+  let visorRadius = radius / Math.sin((options.visorAngle * Math.PI) / 180)
   let sectorAngle = (Math.PI / 3) * options.visorLength
-  let visorSectorAngle = (sectorAngle * headRadius) / visorRadius
+  let visorSectorAngle = (sectorAngle * radius) / visorRadius
   let cpDistance =
     ((4 / 3) * visorRadius * (1 - Math.cos(visorSectorAngle / 2))) / Math.sin(visorSectorAngle / 2)
 

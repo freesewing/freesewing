@@ -33,7 +33,7 @@ export default function (part) {
 
   // Complete?
   if (complete) {
-    store.set('headCircumference', points.gore_p3.dist(points.p0) * 2 * options.gores)
+    store.set('circumference', points.gore_p3.dist(points.p0) * 2 * options.gores)
     store.set('goreLength', points.p0.dist(points.gore_p1))
 
     points.title = new Point(points.gore_p1.x / 10, points.gore_p2.y / 1.8)
