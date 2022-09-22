@@ -4,7 +4,6 @@ export default function (part) {
     points,
     Path,
     paths,
-    measurements,
     options,
     complete,
     sa,
@@ -12,7 +11,6 @@ export default function (part) {
     Snippet,
     paperless,
     macro,
-    absoluteOptions,
     store,
   } = part.shorthand()
 
