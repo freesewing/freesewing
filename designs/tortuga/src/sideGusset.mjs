@@ -1,7 +1,8 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
+import { body } from './body.mjs'
 import { round } from '@freesewing/core'
 
-function draftTortugaSleeveGusset({
+function draftTortugaSideGusset({
   measurements,
   options,
   Point,
@@ -29,17 +30,19 @@ function draftTortugaSleeveGusset({
 
   points.topCenter = new Point(0, 0)
 
+  if (!options.sideGussetUse) return part
+
   //------------------------------------------------
   // Gusset size
 
-  const sideLength =
-    measurements.shoulderToElbow * options.sleeveGussetLength
+  const sideVentLength = store.get('sideVentLength')
+  const sideLength = sideVentLength * options.sideGussetSize
   const hypotenuseLength = Math.sqrt(Math.pow(sideLength, 2) * 2)
   logMeasurement(part, 'side length', sideLength)
   logMeasurement(part, 'hypotenuse length', hypotenuseLength)
 
-  store.set('sleeveGussetSideLength', sideLength)
-  store.set('sleeveGussetHypotenuseLength', hypotenuseLength)
+  store.set('sideGussetSideLength', sideLength)
+  store.set('sideGussetHypotenuseLength', hypotenuseLength)
 
   const width = sideLength
   const length = sideLength
@@ -52,8 +55,24 @@ function draftTortugaSleeveGusset({
   points.bottomRight = points.topRight.shift(DOWN, length)
 
   // Utility points
-  points.bottomCenter = points.topCenter.shift(DOWN, length)
-  points.center = points.topCenter.shift(DOWN, length / 2)
+  points.bottomCenter = points.topCenter.shift(DOWN, width)
+  points.center = points.topCenter.shift(DOWN, width / 2)
+  points.centerLeft = points.topLeft.shift(DOWN, width / 2)
+  points.centerRight = points.topRight.shift(DOWN, width / 2)
+
+  // Points outside the part, to set additional boundary
+  points.topLeftBoundary = points.topLeft
+    .shift(UP, width / 2)
+    .shift(LEFT, width / 2)
+  points.bottomLeftBoundary = points.bottomLeft
+    .shift(DOWN, width / 2)
+    .shift(LEFT, width / 2)
+  points.topRightBoundary = points.topRight
+    .shift(UP, width / 2)
+    .shift(RIGHT, width * 2)
+  points.bottomRightBoundary = points.bottomRight
+    .shift(DOWN, width / 2)
+    .shift(RIGHT, width * 2)
 
   //------------------------------------------------
   // Paths
@@ -69,31 +88,44 @@ function draftTortugaSleeveGusset({
 
   // Complete?
   if (complete) {
+    
+    // Invisible boundary path around the part, to
+    // allow extra space for titlte and grainline info.:q
+    paths.boundaryOutline = new Path()
+      .move(points.topLeftBoundary)
+      .line(points.bottomLeftBoundary)
+      .line(points.bottomRightBoundary)
+      .line(points.topRightBoundary)
+      .line(points.topLeftBoundary)
+      .close()
+      .attr('class' , 'help')
+      .attr('style', 'stroke-opacity: 0')
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-
-    let scale = Math.min(1, width / 200)
-    if (DEBUG) {
-      log.debug('Sleeve gusset element scaling: ' + round(scale))
-    }
 
     paths.foldline = new Path()
       .move(points.topLeft)
       .line(points.bottomRight)
       .attr('class', 'lashed mark')
 
-    points.title = points.topCenter
-      .shiftFractionTowards(points.bottomCenter, 0.3)
-      .shiftFractionTowards(points.bottomLeft, 0.3)
+    let scale = Math.min(1, width / 80)
+    if (DEBUG) {
+      log.debug('Side gusset element scaling: ' + round(scale))
+    }
+
+    // Title is outside actual part, inside boundary
+    points.title = points.topRight
+      .shiftFractionTowards(points.bottomRightBoundary, 0.4)
+      .shiftFractionTowards(points.bottomRight, 0.1)
     macro('title', {
       at: points.title,
-      nr: 3,
-      title: 'Sleeve Gusset',
+      nr: 8,
+      title: 'Side Gusset',
       scale: scale,
     })
 
     points.grainlineTop = points.topRight
-      .shift(DOWN, length / 5).shift(LEFT, width / 8)
+      .shift(DOWN, length / 4).shift(LEFT, width / 4)
     points.grainlineBottom = points.grainlineTop
       .shift(DOWN, length / 2)
     macro('grainline', {
@@ -101,9 +133,6 @@ function draftTortugaSleeveGusset({
       to: points.grainlineBottom,
       scale: scale,
     })
-
-    //----------------------------------------
-    // Notches
 
     if (DEBUG_POINTS) {
       showPoints(points, scale, textsize)
@@ -138,15 +167,14 @@ function draftTortugaSleeveGusset({
       from: points.topLeft,
       to: points.bottomRight,
     })
-
   }
 
   return part
 }
 
-export const sleeveGusset = {
-  name: 'tortuga.sleeveGusset',
-  after: base,
+export const sideGusset = {
+  name: 'tortuga.sideGusset',
+  after: [ base, body, ],
   hideDependencies: true,
-  draft: draftTortugaSleeveGusset,
+  draft: draftTortugaSideGusset,
 }

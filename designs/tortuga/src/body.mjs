@@ -1,6 +1,9 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
 import { sleeveGusset } from './sleeveGusset.mjs'
 import { neckGusset } from './neckGusset.mjs'
+import { collar } from './collar.mjs'
+import { round } from '@freesewing/core'
+import { sleeve } from './sleeve.mjs'
 
 function draftTortugaBody({
   measurements,
@@ -17,6 +20,7 @@ function draftTortugaBody({
   macro,
   log,
   store,
+  units,
   part,
 }) {
   const DEBUG = true
@@ -37,39 +41,65 @@ function draftTortugaBody({
     measurements.shoulderToShoulder +
     (measurements.shoulderToShoulder * options.garmentWidth)
   let width = multipleShoulderWidth
-  let widthMeasurementUsed = 'Multiple Shoulder-to-shoulder width'
-  if (DEBUG) log.debug('Multiple shoulder width: ' + multipleShoulderWidth)
+  let widthMeasurementUsed = 'Shoulder width'
+  if (DEBUG) {
+    log.debug('Shoulder width plus percentage: ' +
+      units(multipleShoulderWidth))
+  }
 
   // However, increase the width to accommodate the largest circumference,
   // chest, waist, hips, or seat, to make sure the garment fits.
-  const chestWidth = measurements.chest / 2
-  const waistWidth = measurements.waist / 2
-  const hipsWidth = measurements.hips / 2
-  const seatWidth = measurements.seat / 2
+  const minimumChestWidth = (measurements.chest * 1.3) / 2
+  const minimumWaistWidth = (measurements.waist * 1.3) / 2
+  const minimumHipsWidth = (measurements.hips * 1.3) / 2
+  const minimumSeatWidth = (measurements.seat * 1.3) / 2
   if (DEBUG) {
-    log.debug('Chest width: ' + chestWidth)
-    log.debug('Waist width: ' + waistWidth)
-    log.debug('Hips width: ' + hipsWidth)
-    log.debug('Seat width: ' + seatWidth)
+    log.debug('Minimum chest width: ' + units(minimumChestWidth))
+    log.debug('Minimum waist width: ' + units(minimumWaistWidth))
+    log.debug('Minimum hips width: ' + units(minimumHipsWidth))
+    log.debug('Minimum seat width: ' + units(minimumSeatWidth))
   }
-  if (chestWidth > width) {
-    width = chestWidth
+  if (minimumChestWidth > width) {
+    width = minimumChestWidth
     widthMeasurementUsed = 'Chest circumference'
   }
-  if (waistWidth > width) {
-    width = waistWidth
+  if (minimumWaistWidth > width) {
+    width = minimumWaistWidth
     widthMeasurementUsed = 'Waist circumference'
   }
-  if (hipsWidth > width) {
-    width = hipsWidth
+  if (minimumHipsWidth > width) {
+    width = minimumHipsWidth
     widthMeasurementUsed = 'Hips circumference'
   }
-  if (seatWidth > width) {
-    width = seatWidth
+  if (minimumSeatWidth > width) {
+    width = minimumSeatWidth
     widthMeasurementUsed = 'Seat circumference'
   }
-  if (widthMeasurementUsed !== 'Multiple Shoulder-to-shoulder width')
-    log.info('Garment width based on: ' + widthMeasurementUsed)
+  if (widthMeasurementUsed !== 'Shoulder width') {
+    log.info('Unable to use requested shoulder width for body width.')
+    log.info('Instead, body width was based on: ' + widthMeasurementUsed)
+  } else {
+    log.info('Using body width based on shoulder-to-shoulder width.')
+  }
+
+  let largestCircumference = 0
+  let largestBodyPart = ''
+  if (measurements.chest >= largestCircumference) {
+    largestCircumference = measurements.chest
+    largestBodyPart = 'chest'
+  }
+  if (measurements.waist >= largestCircumference) {
+    largestCircumference = measurements.waist
+    largestBodyPart = 'waist'
+  }
+  if (measurements.hips >= largestCircumference) {
+    largestCircumference = measurements.hips
+    largestBodyPart = 'hips'
+  }
+  if (measurements.seat >= largestCircumference) {
+    largestCircumference = measurements.seat
+    largestBodyPart = 'seat'
+  }
 
   // Set our top left and top right points.
   const halfWidth = width / 2
@@ -77,7 +107,14 @@ function draftTortugaBody({
   points.topRight = points.topCenter.shift(0, halfWidth)
 
   logMeasurement(part, 'width', width)
-  logMeasurement(part, 'half width', halfWidth)
+  store.set('bodyCircumference', width * 2)
+  store.set('bodyWidth', width)
+
+  log.info('Body circumference is ' + units(width * 2) +
+    ' and largest actual circumference (' + largestBodyPart +
+    ') is ' + units(largestCircumference) + '.')
+  log.info('Body circumference ease: ' +
+    units((width * 2) - largestCircumference))
 
   //------------------------------------------------
   // Garment length
@@ -95,6 +132,8 @@ function draftTortugaBody({
   logMeasurement(part, 'front length', frontLength)
   logMeasurement(part, 'back length', backLength)
   logMeasurement(part, 'full length', frontLength + backLength)
+  store.set('bodyFrontLength', frontLength)
+  store.set('bodyBackLength', backLength)
 
   // Set our bottom left and bottom right points.
   points.bottomLeft = points.topLeft.shift(DOWN, frontLength)
@@ -107,28 +146,64 @@ function draftTortugaBody({
   points.topRightSingle = points.topRight.shift(UP, backLength)
 
   //------------------------------------------------
+  // Shoulder
+
+  // Shoulder is based on a percentage added to the calculated
+  // neck-to-shoulder length,
+  const requestedShoulderLength = measurements.neckToShoulder +
+    measurements.neckToShoulder * options.shoulderLength
+  let shoulderLength = requestedShoulderLength
+
+  // However, we need to limit this to make sure a minimum neck
+  // slit length remains.
+  const minimumNeckSlitLength = (measurements.neck * 1.05) / 2
+  const requestedNeckSlitLength = width - (2 * shoulderLength)
+  if (requestedNeckSlitLength < minimumNeckSlitLength) {
+    shoulderLength = (width - minimumNeckSlitLength) / 2
+    log.info('Shoulder length was limited by neck slit length.')
+  }
+  if (DEBUG) {
+    log.debug('Requested shoulder length: ' +
+      units(requestedShoulderLength))
+    log.debug('Requested neck slit length: ' +
+      units(requestedNeckSlitLength))
+    log.debug('Minimum neck slit length: ' +
+      units(minimumNeckSlitLength))
+  }
+
+  logMeasurement(part, 'shoulder length', shoulderLength)
+  store.set('bodyShoulderLength', shoulderLength)
+
+  //------------------------------------------------
   // Neck
 
-  // Neck slit is based on neck size, limited by garment width
-  const neckWidth = measurements.neck / 2
-  let neckSlitLength = neckWidth + neckWidth * options.neckSlitLength
-  if (neckSlitLength > width) neckSlitLength = width * 0.95
+  const neckSlitLength = width - (2 * shoulderLength)
   const halfNeckSlitLength = neckSlitLength / 2
 
   points.neckSlitLeft = points.topCenter.shift(180, halfNeckSlitLength)
   points.neckSlitRight = points.topCenter.shift(0, halfNeckSlitLength)
 
-  paths.neckSlit = new Path()
-    .move(points.neckSlitRight)
-    .line(points.neckSlitLeft)
-    .attr('class', 'fabric dashed')
-
   logMeasurement(part, 'half neck slit length', halfNeckSlitLength)
   logMeasurement(part, 'full neck slit length', neckSlitLength)
+  store.set('neckSlitLength', neckSlitLength)
 
-  // Save shoulder length to use in shoulder strap
-  const shoulderLength = halfWidth - halfNeckSlitLength
-  store.set('shoulderLength', shoulderLength)
+  //------------------------------------------------
+  // Neck opening sanity check.
+
+  const collarLength = store.get('collarLength')
+  const neckGussetSideLength = store.get('neckGussetSideLength')
+  const neckGussetHypotenuseLength = store.get('neckGussetHypotenuseLength')
+  const neckOpening = (neckSlitLength * 2) -
+    (4 * neckGussetSideLength) + (2 * neckGussetHypotenuseLength)
+  log.info('Collar length is ' + units(collarLength) +
+    ' and body neck opening is ' + units(neckOpening) + '.')
+  if (neckOpening < collarLength) {
+    log.warning('Collar is ' + units(collarLength - neckOpening) +
+      ' larger than the neck opening in the body!')
+  } else {
+    log.info('Excess body fabric to be gathered into collar: ' +
+      units(neckOpening - collarLength))
+  }
 
   //------------------------------------------------
   // Chest
@@ -140,15 +215,11 @@ function draftTortugaBody({
 
   // chestSlitLength
 
-  paths.chestSlit = new Path()
-    .move(points.chestSlitTop)
-    .line(points.chestSlitBottom)
-    .attr('class', 'fabric dashed')
-
   logMeasurement(part, 'chest slit length', chestSlitLength)
+  store.set('chestSlitLength', chestSlitLength)
 
   //------------------------------------------------
-  // Armscye
+  // Armscye length
 
   const armscyeLength = measurements.biceps * options.armscyeLength
   points.armscyeBottomLeft = points.topLeft
@@ -167,6 +238,23 @@ function draftTortugaBody({
   store.set('armscyeLength', armscyeLength)
 
   //------------------------------------------------
+  // Armscye, gusset and sleeve calculations.
+
+  const sleeveCircumference = store.get('sleeveCircumference')
+  const sleeveGussetSideLength = store.get('sleeveGussetSideLength')
+  
+  const armscyeCircumference = armscyeLength * 2
+  const armscyeCircumferenceMinusGussets = armscyeCircumference -
+    (2 * sleeveGussetSideLength)
+
+  log.info('Armscye opening is ' + units(armscyeCircumferenceMinusGussets) +
+    ' and sleeve circumference is ' + units(sleeveCircumference) +
+    '.')
+    
+  log.info('Excess sleeve fabric to be gathered into armscye: ' +
+    units(sleeveCircumference - armscyeCircumferenceMinusGussets))
+
+  //------------------------------------------------
   // Side Vents
 
   const sideVentLength = equalLength * options.sideVentLength
@@ -183,151 +271,180 @@ function draftTortugaBody({
     .shift(UP, sideVentLength)
 
   logMeasurement(part, 'side vent length', sideVentLength)
+  store.set('sideVentLength', sideVentLength)
 
   //------------------------------------------------
-  // Other Paths
+  // Paths
 
-  paths.totalPartOutline = new Path()
+  // We're going around twice, to get the overlapped front
+  // and back parts.
+  paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
     .line(points.topRight)
     .line(points.topLeft)
-    .close()
-    .hide()
-
-  paths.sideSeamLeft = new Path()
-    .move(points.armscyeBottomLeft)
-    .line(points.sideVentTopLeft)
-    .attr('class', 'fabric')
-
-  paths.sideSeamRight = new Path()
-    .move(points.sideVentTopRight)
-    .line(points.armscyeBottomRight)
-    .attr('class', 'fabric')
-
-  paths.sideVentLeft = new Path()
-    .move(points.sideVentTopLeft)
-    .line(points.bottomLeft)
-    .attr('class', 'fabric dashed')
-
-  paths.sideVentRight = new Path()
-    .move(points.bottomRight)
-    .line(points.sideVentTopRight)
-    .attr('class', 'fabric dashed')
-
-  paths.bottom = new Path()
-    .move(points.bottomLeft)
-    .line(points.bottomRight).attr('class', 'fabric')
-
-  if (frontLength != backLength) {
-    paths.sideVentLeftBack = new Path()
-      .move(points.sideVentTopLeftBack)
-      .line(points.bottomLeftBack)
-      .attr('class', 'fabric dashed')
-
-    paths.sideVentRightBack = new Path()
-      .move(points.bottomRightBack)
-      .line(points.sideVentTopRightBack)
-      .attr('class', 'fabric dashed')
-
-    paths.bottomBack = new Path()
-      .move(points.bottomLeftBack)
-      .line(points.bottomRightBack)
-      .attr('class', 'fabric')
-
-    if (points.sideVentTopLeftBack.y > points.bottomLeft.y) {
-      paths.extraSeamLeft = new Path()
-        .move(points.bottomLeft)
-        .line(points.sideVentTopLeftBack)
-        .attr('class', 'fabric')
-      paths.extraSeamRight = new Path()
-        .move(points.sideVentTopRightBack)
-        .line(points.bottomRight)
-        .attr('class', 'fabric')
-    }
-  }
-
-  paths.armsceyeLeft = new Path()
-    .move(points.topLeft)
-    .line(points.armscyeBottomLeft)
-    .attr('class', 'fabric dashed')
-
-  paths.armsceyeRight = new Path()
-    .move(points.armscyeBottomRight)
+    .line(points.bottomLeftBack)
+    .line(points.bottomRightBack)
     .line(points.topRight)
-    .attr('class', 'fabric dashed')
-
-  paths.topSeamRight = new Path()
-    .move(points.topRight)
-    .line(points.neckSlitRight)
-    .attr('class', 'fabric')
-
-  paths.topSeamLeft = new Path()
-    .move(points.neckSlitLeft)
     .line(points.topLeft)
-    .attr('class', 'fabric')
+    .close()
 
   if (options.singleFrontBack) {
-    paths.topSeamLeft
-      .attr('class', 'lashed mark')
-    paths.topSeamRight
-      .attr('class', 'lashed mark')
-
-    paths.totalPartOutline = new Path()
+    paths.seam = new Path()
       .move(points.topLeftSingle)
       .line(points.bottomLeft)
       .line(points.bottomRight)
       .line(points.topRightSingle)
       .line(points.topLeftSingle)
       .close()
-      .hide()
+  }
 
-    paths.sideVentLeftSingle = new Path()
-      .move(points.topLeftSingle)
-      .line(points.sideVentTopLeftSingle)
+  // There are two sets of paths, one is the plain, complete seam
+  // used for cutting out the fabric part, and the other is a 
+  // decorated seam with dashed lines and other details.
+  // We hide/show the two sets of paths depending on complete.
+
+  if (complete) {
+    paths.seam.hide()
+
+    paths.neckSlit = new Path()
+      .move(points.neckSlitRight)
+      .line(points.neckSlitLeft)
       .attr('class', 'fabric dashed')
 
-    paths.sideVentRightSingle = new Path()
-      .move(points.sideVentTopRightSingle)
-      .line(points.topRightSingle)
+    paths.chestSlit = new Path()
+      .move(points.chestSlitTop)
+      .line(points.chestSlitBottom)
       .attr('class', 'fabric dashed')
 
-    paths.sideSeamLeftSingle = new Path()
-      .move(points.sideVentTopLeftSingle)
-      .line(points.armscyeBottomLeftSingle)
+    paths.sideSeamLeft = new Path()
+      .move(points.armscyeBottomLeft)
+      .line(points.sideVentTopLeft)
       .attr('class', 'fabric')
 
-    paths.sideSeamRightSingle = new Path()
-      .move(points.armscyeBottomRightSingle)
-      .line(points.sideVentTopRightSingle)
+    paths.sideSeamRight = new Path()
+      .move(points.sideVentTopRight)
+      .line(points.armscyeBottomRight)
       .attr('class', 'fabric')
+
+    paths.sideVentLeft = new Path()
+      .move(points.sideVentTopLeft)
+      .line(points.bottomLeft)
+      .attr('class', 'fabric dashed')
+
+    paths.sideVentRight = new Path()
+      .move(points.bottomRight)
+      .line(points.sideVentTopRight)
+      .attr('class', 'fabric dashed')
+
+    paths.bottom = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomRight).attr('class', 'fabric')
+
+    if (frontLength != backLength) {
+      paths.sideVentLeftBack = new Path()
+        .move(points.sideVentTopLeftBack)
+        .line(points.bottomLeftBack)
+        .attr('class', 'fabric dashed')
+
+      paths.sideVentRightBack = new Path()
+        .move(points.bottomRightBack)
+        .line(points.sideVentTopRightBack)
+        .attr('class', 'fabric dashed')
+
+      paths.bottomBack = new Path()
+        .move(points.bottomLeftBack)
+        .line(points.bottomRightBack)
+        .attr('class', 'fabric')
+
+      if (points.sideVentTopLeftBack.y > points.bottomLeft.y) {
+        paths.extraSeamLeft = new Path()
+          .move(points.bottomLeft)
+          .line(points.sideVentTopLeftBack)
+          .attr('class', 'fabric')
+        paths.extraSeamRight = new Path()
+          .move(points.sideVentTopRightBack)
+          .line(points.bottomRight)
+          .attr('class', 'fabric')
+      }
+    }
 
     paths.armsceyeLeft = new Path()
-      .move(points.armscyeBottomLeftSingle)
+      .move(points.topLeft)
       .line(points.armscyeBottomLeft)
       .attr('class', 'fabric dashed')
 
     paths.armsceyeRight = new Path()
       .move(points.armscyeBottomRight)
-      .line(points.armscyeBottomRightSingle)
+      .line(points.topRight)
       .attr('class', 'fabric dashed')
 
-    paths.top = new Path()
-      .move(points.topRightSingle)
-      .line(points.topLeftSingle)
+    paths.topSeamRight = new Path()
+      .move(points.topRight)
+      .line(points.neckSlitRight)
       .attr('class', 'fabric')
+
+    paths.topSeamLeft = new Path()
+      .move(points.neckSlitLeft)
+      .line(points.topLeft)
+      .attr('class', 'fabric')
+
+    if (options.singleFrontBack) {
+      paths.topSeamLeft
+        .attr('class', 'lashed mark')
+      paths.topSeamRight
+        .attr('class', 'lashed mark')
+
+      paths.sideVentLeftSingle = new Path()
+        .move(points.topLeftSingle)
+        .line(points.sideVentTopLeftSingle)
+        .attr('class', 'fabric dashed')
+
+      paths.sideVentRightSingle = new Path()
+        .move(points.sideVentTopRightSingle)
+        .line(points.topRightSingle)
+        .attr('class', 'fabric dashed')
+
+      paths.sideSeamLeftSingle = new Path()
+        .move(points.sideVentTopLeftSingle)
+        .line(points.armscyeBottomLeftSingle)
+        .attr('class', 'fabric')
+
+      paths.sideSeamRightSingle = new Path()
+        .move(points.armscyeBottomRightSingle)
+        .line(points.sideVentTopRightSingle)
+        .attr('class', 'fabric')
+
+      paths.armsceyeLeft = new Path()
+        .move(points.armscyeBottomLeftSingle)
+        .line(points.armscyeBottomLeft)
+        .attr('class', 'fabric dashed')
+
+      paths.armsceyeRight = new Path()
+        .move(points.armscyeBottomRight)
+        .line(points.armscyeBottomRightSingle)
+        .attr('class', 'fabric dashed')
+
+      paths.top = new Path()
+        .move(points.topRightSingle)
+        .line(points.topLeftSingle)
+        .attr('class', 'fabric')
+    }
   }
 
   // Complete?
   if (complete) {
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
     let scale = Math.min(1, width / 200)
     let textsize = 'text-md'
     if (scale < .75) textsize = 'text-sm'
     if (scale < .5) textsize = 'text-xs'
     if (DEBUG) {
-      log.debug('Body Element scaling: ' + scale)
-      log.debug('Body Text size: ' + textsize)
+      log.debug('Body element scaling: ' + round(scale))
+      log.debug('Body text size: ' + textsize)
     }
 
     points.title = points.chestSlitBottom.shiftFractionTowards(
@@ -349,7 +466,11 @@ function draftTortugaBody({
     // Arrr!
     let arrr_scale = Math.min(1, width / 200)
     let arrr_textsize = 'text-md'
+    // Fractional offset to shift text back towards left/bottom
+    // of word ballon, to make the "Arrr!" look more balanced.
     let arrr_offset = 0.2
+    // Fractional offset to shift the word ballon back towards
+    // the Skully logo.
     let arrr_shiftback = 0.5
     if (arrr_scale < 1.0) {
       arrr_textsize = 'text-sm'
@@ -367,9 +488,13 @@ function draftTortugaBody({
       arrr_textsize = 'text-xl'
       arrr_shiftback = 0.6
     }
+    if (arrr_scale > 7.5) {
+      arrr_shiftback = 0.7
+    }
     if (arrr_scale > 9) {
-      arrr_textsize = 'text-2xl'
       arrr_shiftback = 0.8
+      arrr_offset = 0.1
+      arrr_textsize = 'text-2xl'
     }
     if (arrr_scale > 12) {
       arrr_textsize = 'text-3xl'
@@ -426,7 +551,7 @@ function draftTortugaBody({
       .attr('data-text', 'Arrr!')
       .attr('data-text-class', `fill-contrast ${arrr_textsize}`)
     if (DEBUG) {
-      log.debug('Arrr scale: ' + arrr_scale)
+      log.debug('Arrr scale: ' + round(arrr_scale))
       log.debug('Arrr offset: ' + arrr_offset)
       log.debug('Arrr textsize: ' + arrr_textsize)
     }
@@ -629,7 +754,7 @@ function draftTortugaBody({
 
 export const body = {
   name: 'tortuga.body',
-  after: [ base, sleeveGusset, neckGusset, ],
+  after: [ base, sleeveGusset, neckGusset, collar, sleeve,],
   hideDependencies: true,
   draft: draftTortugaBody,
 }

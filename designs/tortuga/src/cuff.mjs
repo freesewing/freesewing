@@ -1,5 +1,7 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
-import { units } from '@freesewing/core'
+import { shoulderStrap } from './shoulderStrap.mjs'
+import { sleeve } from './sleeve.mjs'
+import { round } from '@freesewing/core'
 
 function draftTortugaCuff({
   measurements,
@@ -16,6 +18,7 @@ function draftTortugaCuff({
   macro,
   log,
   store,
+  units,
   part,
 }) {
 
@@ -32,24 +35,17 @@ function draftTortugaCuff({
   //------------------------------------------------
   // Length and Width
 
-  const elbowToWristLength = measurements.shoulderToWrist -
-    measurements.shoulderToElbow
+  // Retrieve the width calculated in sleeve.mjs
+  const finishedWidth = store.get('cuffFinishedWidth')
 
-  if (DEBUG) log.debug('Elbow to wrist measurement is ' +
-    units(elbowToWristLength))
+  // Because the cuff is made of a double-width rectangle
+  // folded in half, the actual width of the fabric needs to be
+  // doubled.
+  const width = finishedWidth * 2
 
   // The length is the wrist circumference plus some extra.
   const length = measurements.wrist +
-    measurements.wrist * options.cuffLength
-
-  // The width of the finished cuff is a percentage of the
-  // elbow-to-wrist calculated measurement.
-  const finishedWidth = elbowToWristLength * options.cuffWidth
-
-  // Because the cuff is made of a double-width rectangle
-  // folded in half, the actual width of the part needs to be
-  // doubled.
-  const width = finishedWidth * 2
+     measurements.wrist * options.cuffLength
 
   // Set our points.
   // The cuff is drawn with the length as the horizontal dimension
@@ -63,6 +59,8 @@ function draftTortugaCuff({
   logMeasurement(part, 'width', width)
   logMeasurement(part, 'finished width', finishedWidth)
   logMeasurement(part, 'length', length)
+  store.set('cuffWidth', width)
+  store.set('cuffLength', length)
 
   // Utility points
   points.bottomCenter = points.topCenter.shift(DOWN, width)
@@ -71,9 +69,44 @@ function draftTortugaCuff({
   points.centerRight = points.topRight.shift(DOWN, width / 2)
 
   //------------------------------------------------
+  // Finished sleeve length
+
+  // The cuff waits after shoulderStrap and sleeve in order
+  // to have the information needed to calculate the total sleeve
+  // length.
+
+  const bodyShoulderLength = store.get('shoulderLength')
+  const sleeveLength = store.get('sleeveLength')
+  const cuffLength = finishedWidth
+  const fullFabricSleeveAndShoulderLength =
+    bodyShoulderLength + sleeveLength + cuffLength
+  
+  // The amount of sleeve provided by the body part.
+  const bodySleeveLength = bodyShoulderLength - measurements.neckToShoulder
+  log.info('Amount of sleeve provided by body part: ' +
+    units(bodySleeveLength))
+
+  // Equivalent sleeve length is the length of the garment fabric
+  // measured from the shoulder to the wrist, taking into account
+  // the amount of sleeve provided by the body part.
+  // It is what most people think of as the length of the sleeve
+  // in the finished garment.
+  const equivalentSleeveLength = fullFabricSleeveAndShoulderLength -
+    measurements.neckToShoulder
+  log.info('Actual finished garment sleeve length: ' +
+    units(equivalentSleeveLength))
+  log.info('Shoulder to wrist measurement is ' +
+    units(measurements.shoulderToWrist) +
+    ' and actual finished sleeve length is ' +
+    units(equivalentSleeveLength) + '.')
+  const excessSleeveLength = equivalentSleeveLength -
+    measurements.shoulderToWrist
+  log.info('Excess sleeve length: ' + units(excessSleeveLength))
+
+  //------------------------------------------------
   // Paths
 
-  paths.actualPart = new Path()
+  paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
@@ -84,10 +117,17 @@ function draftTortugaCuff({
 
   // Complete?
   if (complete) {
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
     let scale = Math.min(1, width / 200)
     let buttonscale = Math.min(1, width / 100)
     if (buttonscale == 1) {
       buttonscale = width / 80
+    }
+    if (DEBUG) {
+      log.debug('Cuff element scaling: ' + round(scale))
+      log.debug('Cuff button/hole scaling: ' + round(buttonscale))
     }
 
     // Closure
@@ -174,7 +214,7 @@ function draftTortugaCuff({
 
 export const cuff = {
   name: 'tortuga.cuff',
-  after: base,
+  after: [ base, shoulderStrap, sleeve, ],
   hideDependencies: true,
   draft: draftTortugaCuff,
 }

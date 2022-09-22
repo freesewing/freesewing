@@ -1,4 +1,5 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
+import { round } from '@freesewing/core'
 
 function draftTortugaCollar({
   measurements,
@@ -15,6 +16,7 @@ function draftTortugaCollar({
   macro,
   log,
   store,
+  units,
   part,
 }) {
 
@@ -40,7 +42,7 @@ function draftTortugaCollar({
   const finishedWidth = measurements.neck * options.collarWidth
 
   // Because the collar is made of a double-width rectangle
-  // folded in half, the actual width of the part needs to be
+  // folded in half, the actual width of the fabric needs to be
   // doubled.
   const width = finishedWidth * 2
 
@@ -56,7 +58,14 @@ function draftTortugaCollar({
   logMeasurement(part, 'width', width)
   logMeasurement(part, 'finished width', finishedWidth)
   logMeasurement(part, 'length', length)
+  store.set('collarWidth', width)
+  store.set('collarFinishedWidth', finishedWidth)
+  store.set('collarLength', length)
 
+  log.info('Collar is ' + units(length) + 
+    ' and neck circumference is ' + units(measurements.neck) + '.')
+  log.info('Collar neck ease: ' + units(length - measurements.neck))
+  
   // Utility points
   points.bottomCenter = points.topCenter.shift(DOWN, width)
   points.center = points.topCenter.shift(DOWN, width / 2)
@@ -66,7 +75,7 @@ function draftTortugaCollar({
   //------------------------------------------------
   // Paths
 
-  paths.actualPart = new Path()
+  paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
@@ -77,10 +86,17 @@ function draftTortugaCollar({
 
   // Complete?
   if (complete) {
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
     let scale = Math.min(1, width / 300)
     let buttonscale = Math.min(1, width / 150)
     if (buttonscale == 1) {
       buttonscale = width / 175
+    }
+    if (DEBUG) {
+      log.debug('Collar element scaling: ' + round(scale))
+      log.debug('Collar button/hole scaling: ' + round(buttonscale))
     }
 
     // Closure

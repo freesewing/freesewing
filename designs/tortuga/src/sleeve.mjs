@@ -1,6 +1,6 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
-import { units } from '@freesewing/core'
 import { sleeveGusset } from './sleeveGusset.mjs'
+import { round } from '@freesewing/core'
 
 function draftTortugaSleeve({
   measurements,
@@ -17,6 +17,7 @@ function draftTortugaSleeve({
   macro,
   log,
   store,
+  units,
   part,
 }) {
 
@@ -36,11 +37,12 @@ function draftTortugaSleeve({
   const width = measurements.biceps + 
     measurements.biceps * options.sleeveWidth
   logMeasurement(part, 'width', width)
+  store.set('sleeveCircumference', width)
 
-  if (DEBUG) {
-    log.debug('Biceps measurement is ' + units(measurements.biceps) +
-      ' and sleeve width is ' + units(width) + '.')
-  }
+  log.info('Biceps measurement is ' + units(measurements.biceps) +
+    ' and sleeve width is ' + units(width) + '.')
+  log.info('Sleeve biceps ease: ' +
+    units(width - measurements.biceps))
 
   // Set our top left and top right points.
   const halfWidth = width / 2
@@ -50,10 +52,22 @@ function draftTortugaSleeve({
   //------------------------------------------------
   // Sleeve length
 
-  // Garment length is between hips and knees.
+  // The cuff width previously was calculated in cuff.mjs, but because
+  // we need it here and because cuff.mjs is afer: sleeve.mjs, we
+  // are putting the code here and storing it.
+  // The width of the finished cuff is a percentage of the
+  // elbow-to-wrist calculated measurement.
+  const elbowToWrist = measurements.elbowToWrist
+  const finishedWidth = elbowToWrist * options.cuffWidth
+  store.set('cuffFinishedWidth', finishedWidth)
+
+  // Length is from shoulder to wrist, plus/minus an additional percent,
+  // minus the cuff width.
   const length = measurements.shoulderToWrist + 
-    measurements.shoulderToWrist * options.sleeveLength
+    (measurements.shoulderToWrist * options.sleeveLength) -
+    finishedWidth
   logMeasurement(part, "length", length)
+  store.set('sleeveLength', length)
 
   // Set our bottom left and bottom right points.
   points.bottomLeft = points.topLeft.shift(DOWN, length)
@@ -83,63 +97,70 @@ function draftTortugaSleeve({
   //------------------------------------------------
   // Paths
 
-  paths.seamTop = new Path()
-    .move(points.topRight)
-    .line(points.topLeft)
-    .attr('class', 'fabric')
-
-  paths.seamBottom = new Path()
-    .move(points.bottomLeft)
-    .line(points.bottomRight)
-    .attr('class', 'fabric')
-
-  paths.ventLeft = new Path()
-    .move(points.ventTopLeft)
-    .line(points.bottomLeft)
-    .attr('class', 'dashed fabric')
-
-  paths.ventRight = new Path()
-    .move(points.bottomRight)
-    .line(points.ventTopRight)
-    .attr('class', 'dashed fabric')
-
-  paths.gussetLeft = new Path()
-    .move(points.topLeft)
-    .line(points.gussetBottomLeft)
-    .attr('class', 'dashed fabric')
-
-  paths.gussetRight = new Path()
-    .move(points.gussetBottomRight)
-    .line(points.topRight)
-    .attr('class', 'dashed fabric')
-
-  paths.seamLeft = new Path()
-    .move(points.gussetBottomLeft)
-    .line(points.ventTopLeft)
-    .attr('class', 'fabric')
-  paths.seamRight = new Path()
-    .move(points.ventTopRight)
-    .line(points.gussetBottomRight)
-    .attr('class', 'fabric')
-
-  paths.totalPartOutline = new Path()
+  paths.seam = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .hide()
+
+  if (complete) {
+
+    paths.seam.hide()
+
+    paths.seamTop = new Path()
+      .move(points.topRight)
+      .line(points.topLeft)
+      .attr('class', 'fabric')
+
+    paths.seamBottom = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomRight)
+      .attr('class', 'fabric')
+
+    paths.ventLeft = new Path()
+      .move(points.ventTopLeft)
+      .line(points.bottomLeft)
+      .attr('class', 'dashed fabric')
+
+    paths.ventRight = new Path()
+      .move(points.bottomRight)
+      .line(points.ventTopRight)
+      .attr('class', 'dashed fabric')
+
+    paths.gussetLeft = new Path()
+      .move(points.topLeft)
+      .line(points.gussetBottomLeft)
+      .attr('class', 'dashed fabric')
+
+    paths.gussetRight = new Path()
+      .move(points.gussetBottomRight)
+      .line(points.topRight)
+      .attr('class', 'dashed fabric')
+
+    paths.seamLeft = new Path()
+      .move(points.gussetBottomLeft)
+      .line(points.ventTopLeft)
+      .attr('class', 'fabric')
+    paths.seamRight = new Path()
+      .move(points.ventTopRight)
+      .line(points.gussetBottomRight)
+      .attr('class', 'fabric')
+  }
 
   // Complete?
   if (complete) {
+    
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
     let scale = Math.min(1, width / 200)
     let textsize = 'text-md'
     if (scale < .75) textsize = 'text-sm'
     if (scale < .5) textsize = 'text-xs'
     if (DEBUG) {
-      log.debug('Sleeve Element scaling: ' + scale)
-      log.debug('Sleeve Text size: ' + textsize)
+      log.debug('Sleeve element scaling: ' + round(scale))
+      log.debug('Sleeve text size: ' + textsize)
     }
 
     snippets.ventTopLeftNotch = new Snippet('notch', points.ventTopLeft)

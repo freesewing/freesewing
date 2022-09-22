@@ -1,7 +1,7 @@
 import { base, logMeasurement, showPoints } from './base.mjs'
 import { round } from '@freesewing/core'
 
-function draftTortugaNeckGusset({
+function draftTortugaSideAndSleevePatch({
   measurements,
   options,
   Point,
@@ -29,17 +29,13 @@ function draftTortugaNeckGusset({
 
   points.topCenter = new Point(0, 0)
 
+  if (!options.sidePatch) return part
+
   //------------------------------------------------
-  // Gusset size
+  // Patch size
 
-  const sideLength =
-    measurements.shoulderToShoulder * options.neckGussetLength
-  const hypotenuseLength = Math.sqrt(Math.pow(sideLength, 2) * 2)
-  logMeasurement(part, 'side length', sideLength)
-  logMeasurement(part, 'hypotenuse length', hypotenuseLength)
-
-  store.set('neckGussetSideLength', sideLength)
-  store.set('neckGussetHypotenuseLength', hypotenuseLength)
+  const sideLength = measurements.neck / 15
+  logMeasurement(part, 'square side length', sideLength)
 
   const width = sideLength
   const length = sideLength
@@ -52,8 +48,24 @@ function draftTortugaNeckGusset({
   points.bottomRight = points.topRight.shift(DOWN, length)
 
   // Utility points
-  points.bottomCenter = points.topCenter.shift(DOWN, length)
-  points.center = points.topCenter.shift(DOWN, length / 2)
+  points.bottomCenter = points.topCenter.shift(DOWN, width)
+  points.center = points.topCenter.shift(DOWN, width / 2)
+  points.centerLeft = points.topLeft.shift(DOWN, width / 2)
+  points.centerRight = points.topRight.shift(DOWN, width / 2)
+
+  // Points outside the part, to set additional boundary
+  points.topLeftBoundary = points.topLeft
+    .shift(UP, width)
+    .shift(LEFT, width)
+  points.bottomLeftBoundary = points.bottomLeft
+    .shift(DOWN, width)
+    .shift(LEFT, width)
+  points.topRightBoundary = points.topRight
+    .shift(UP, width)
+    .shift(RIGHT, width * 4)
+  points.bottomRightBoundary = points.bottomRight
+    .shift(DOWN, width)
+    .shift(RIGHT, width * 4)
 
   //------------------------------------------------
   // Paths
@@ -70,40 +82,36 @@ function draftTortugaNeckGusset({
   // Complete?
   if (complete) {
     
+    // Invisible boundary path around the part, to
+    // allow extra space for titlte and grainline info.:q
+    paths.boundaryOutline = new Path()
+      .move(points.topLeftBoundary)
+      .line(points.bottomLeftBoundary)
+      .line(points.bottomRightBoundary)
+      .line(points.topRightBoundary)
+      .line(points.topLeftBoundary)
+      .close()
+      .attr('class' , 'help')
+      .attr('style', 'stroke-opacity: 0')
+
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-    let scale = Math.min(1, width / 175)
+    let scale = Math.min(1, width / 60)
     if (DEBUG) {
-      log.debug('Neck gusset element scaling: ' + round(scale))
+      log.debug('Side patch element scaling: ' + round(scale))
     }
 
-    paths.foldline = new Path()
-      .move(points.topLeft)
-      .line(points.bottomRight)
-      .attr('class', 'lashed mark')
-
-    points.title = points.topCenter
-      .shiftFractionTowards(points.bottomCenter, 0.1)
-      .shiftFractionTowards(points.bottomLeft, 0.5)
+    // Title is outside actual part, inside boundary
+    points.title = points.topRight
+      .shiftFractionTowards(points.bottomRightBoundary, 0.4)
+      .shiftFractionTowards(points.bottomRight, 0.1)
+      .shiftFractionTowards(points.topRightBoundary, 0.1)
     macro('title', {
       at: points.title,
-      nr: 4,
-      title: 'Neck Gusset',
+      nr: 9,
+      title: 'Side and Sleeve Patch',
       scale: scale,
     })
-
-    points.grainlineTop = points.topRight
-      .shift(DOWN, length / 4).shift(LEFT, width / 5)
-    points.grainlineBottom = points.grainlineTop
-      .shift(DOWN, length / 2)
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-      scale: scale,
-    })
-
-    //----------------------------------------
-    // Notches
 
     if (DEBUG_POINTS) {
       showPoints(points, scale, textsize)
@@ -112,8 +120,6 @@ function draftTortugaNeckGusset({
 
   // Paperless?
   if (paperless) {
-
-    delete paths.foldline
 
     // Dimensions
     let topSeamY = points.topRight.y
@@ -133,19 +139,14 @@ function draftTortugaNeckGusset({
       to: points.bottomRight,
       x: rightSeamX + (sa + 15),
     })
-    // Hypotenuse
-    macro('ld', {
-      from: points.topLeft,
-      to: points.bottomRight,
-    })
   }
 
   return part
 }
 
-export const neckGusset = {
-  name: 'tortuga.neckGusset',
+export const sideAndSleevePatch = {
+  name: 'tortuga.sideAndSleevePatch',
   after: base,
   hideDependencies: true,
-  draft: draftTortugaNeckGusset,
+  draft: draftTortugaSideAndSleevePatch,
 }
