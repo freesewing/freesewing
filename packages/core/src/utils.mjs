@@ -288,7 +288,14 @@ export function deg2rad(degrees) {
  * @param {Stack} stack - The Stack instance
  * @return {string} transform - The SVG transform value
  */
-export const generateStackTransform = (x=0, y=0, rotate=0, flipX=false, flipY=false, stack) => {
+export const generateStackTransform = (
+  x = 0,
+  y = 0,
+  rotate = 0,
+  flipX = false,
+  flipY = false,
+  stack
+) => {
   const transforms = []
   let xTotal = x || 0
   let yTotal = y || 0
@@ -682,13 +689,21 @@ const __addPartOptionalMeasurements = (part, config, store, list = false) => {
 const __addPartOptions = (part, config, store) => {
   if (part.options) {
     for (const optionName in part.options) {
-      if (!config.optionDistance[optionName]) {
+      if (!config.optionDistance) {
+        config.optionDistance = {}
+      }
+      if (!config.optionDistance.hasOwn(optionName)) {
         config.optionDistance[optionName] = part.distance
         config.options[optionName] = part.options[optionName]
-        store.log.debug(`🔵  __${optionName}__ option loaded from \`${part.name}\``)
+        store.log.debug(`🔵  __${optionName}__ option loaded from part \`${part.name}\``)
       } else if (config.optionDistance[optionName] > part.distance) {
+        config.optionDistance[optionName] = part.distance
         config.options[optionName] = part.options[optionName]
-        store.log.debug(`🟣  __${optionName}__ option overwritten by \`${part.name}\``)
+        store.log.debug(`🟣  __${optionName}__ option overwritten by part \`${part.name}\``)
+      } else {
+        store.log.debug(
+          `🟣  __${optionName}__ option already configured before loading \`${part.name}\``
+        )
       }
     }
   }
@@ -726,9 +741,10 @@ export const __addPartPlugins = (part, config, store) => {
     // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
     if (plugin.plugin && plugin.condition) {
       if (plugins[plugin.plugin.name]?.condition) plugins[plugin.plugin.name] = plugin
-      else store.log.info(
-        `Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading.`
-      )
+      else
+        store.log.info(
+          `Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading.`
+        )
     } else {
       plugins[plugin.name] = plugin
     }
