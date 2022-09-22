@@ -1016,7 +1016,6 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
           this.__addDependency(name, part, dep)
         }
       } else {
-        if (part.hideDependencies) part.after.hide = true
         part.after.distance = distance
         this.__parts[part.after.name] = part.after
         this.__addDependency(name, part, part.after)
