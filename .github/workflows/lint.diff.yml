@@ -18,8 +18,14 @@ jobs:
         node-version: [16.x]
 
     steps:
-      - name: Checkout repository
+      - name: Fetch PR base ref
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.base_ref }}
+      - name: Checkout PR topic ref
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -31,4 +37,4 @@ jobs:
       - name: Build all
         run: npm run buildall
       - name: Run eslint
-        run: npx eslint --no-error-on-unmatched-pattern $(git diff --name-only $GITHUB_BASE_REF)
+        run: npx eslint --no-error-on-unmatched-pattern $(git diff --name-only origin/$GITHUB_BASE_REF)
