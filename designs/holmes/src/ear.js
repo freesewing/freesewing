@@ -13,11 +13,12 @@ export default function (part) {
     paperless,
     macro,
     absoluteOptions,
+    store,
   } = part.shorthand()
 
   // Design pattern here
-  let headCircumference = measurements.head + absoluteOptions.headEase
-  let earFlapLength = ((options.lengthRatio * headCircumference) / 2) * options.earLength
+  let headCircumference = store.get('headCircumference')
+  let earFlapLength = store.get('goreLength') * options.earLength
   let earFlapWidth = (headCircumference / 12) * options.earWidth
   points.top = new Point(0, 0)
   points.bottom = new Point(earFlapWidth, earFlapLength)
@@ -30,9 +31,8 @@ export default function (part) {
     .move(points.bottom)
     .curve(points.bottomC, points.topC, points.top)
     .curve(points.topCFlipped, points.bottomCFlipped, points.bottomFlipped)
-	.setRender(false)
-  paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom)
-  .setRender(false)
+    .setRender(false)
+  paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom).setRender(false)
   paths.seam = paths.saBase.join(paths.hemBase).close()
   // Complete?
   if (complete) {

@@ -24,10 +24,13 @@ export default {
     advanced: ['visorLength'],
   },
   measurements: ['head'],
-  dependencies: {},
+  dependencies: {
+    ear: 'gore',
+    visor: 'gore',
+  },
   inject: {},
   hide: [],
-  parts: ['gore', 'visor', 'ear'],
+  parts: ['gore'],
   options: {
     headEase: {
       pct: 3,

@@ -11,9 +11,10 @@ export default function (part) {
     paperless,
     macro,
     absoluteOptions,
+    store,
   } = part.shorthand()
 
-  let headCircumference = measurements.head + absoluteOptions.headEase
+  let headCircumference = store.get('headCircumference')
   let headRadius = headCircumference / 2 / Math.PI
   let visorRadius = headRadius / Math.sin((options.visorAngle * Math.PI) / 180)
   let sectorAngle = (Math.PI / 3) * options.visorLength
@@ -46,34 +47,35 @@ export default function (part) {
   )
   points.ex1CFlipped = points.ex1C.flipX()
   points.ex2CFlipped = points.ex2C.flipX()
-  
-paths.saInner = new Path ()
-.move(points.in2)
-.curve(points.in2C, points.in1C, points.in1)
-.curve(points.in1CFlipped, points.in2CFlipped, points.in2Flipped)
-.setRender(false)
-  
-paths.saOuter = new Path()
-.move(points.in2Flipped)
-.curve(points.ex2CFlipped, points.ex1CFlipped, points.ex1)
-.curve(points.ex1C, points.ex2C, points.in2)
-.setRender(false)
-  
-paths.seam = paths.saOuter.join(paths.saInner).close()
+
+  paths.saInner = new Path()
+    .move(points.in2)
+    .curve(points.in2C, points.in1C, points.in1)
+    .curve(points.in1CFlipped, points.in2CFlipped, points.in2Flipped)
+    .setRender(false)
+
+  paths.saOuter = new Path()
+    .move(points.in2Flipped)
+    .curve(points.ex2CFlipped, points.ex1CFlipped, points.ex1)
+    .curve(points.ex1C, points.ex2C, points.in2)
+    .setRender(false)
+
+  paths.seam = paths.saOuter.join(paths.saInner).close()
   // Complete?
   if (complete) {
     macro('grainline', { from: points.in1, to: points.ex1 })
     macro('title', { at: points.ex1.shift(45, 20), nr: 2, title: 'visor', scale: 0.4 })
 
     if (sa) {
-	points.sa1 = new Point(points.in2.x + sa, paths.saInner.offset(sa*2).start().y)
-	points.sa2 = points.sa1.flipX(points.in1)
-	paths.sa = paths.saOuter.offset(sa)
-	.line(points.sa1)
-	.join(paths	.saInner.offset(sa * 2))
-	.line(points.sa2)
-	.close()
-	.attr('class', 'fabric sa')
+      points.sa1 = new Point(points.in2.x + sa, paths.saInner.offset(sa * 2).start().y)
+      points.sa2 = points.sa1.flipX(points.in1)
+      paths.sa = paths.saOuter
+        .offset(sa)
+        .line(points.sa1)
+        .join(paths.saInner.offset(sa * 2))
+        .line(points.sa2)
+        .close()
+        .attr('class', 'fabric sa')
     }
 
     // Paperless?
