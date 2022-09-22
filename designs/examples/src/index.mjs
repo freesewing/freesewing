@@ -6,6 +6,7 @@ import { data } from '../data.mjs'
 // Path API
 import {
   path__curve,
+  path_addclass,
   path_attr,
   path_move,
   path_line,
@@ -138,6 +139,7 @@ const Examples = new Design({
   parts: [
     // Path API
     path__curve,
+    path_addclass,
     path_attr,
     path_move,
     path_line,
@@ -263,6 +265,7 @@ const Examples = new Design({
 export {
   // Path API
   path__curve,
+  path_addclass,
   path_attr,
   path_move,
   path_line,

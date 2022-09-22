@@ -1,4 +1,18 @@
 import React, { useState } from 'react'
+import { Examples } from '@freesewing/examples'
+import { Rendertest } from '@freesewing/rendertest'
+import { Tutorial } from '@freesewing/tutorial'
+import Svg from '../../workbench/draft/svg'
+import Defs from '../../workbench/draft/defs'
+import Stack from '../../workbench/draft/stack'
+
+export const examplePatterns = {
+  examples: Examples,
+  //rendertest: Rendertest,
+  //tutorial: Tutorial,
+}
+
+/*
 import Svg from './Svg'
 import Defs from './Defs'
 import Part from './Part'
@@ -51,7 +65,7 @@ const Pattern = props => {
   // Don't continue if there's no pattern
   if (!pattern || !patterns[pattern]) return <pre>No pattern provided</pre>
 
-  /* Helper method to handle user clicks */
+  // Helper method to handle user clicks
   const raiseEvent = (type, data) => {
     if (type === 'clearFocusAll') return setFocus(null)
     let f = {}
@@ -68,7 +82,7 @@ const Pattern = props => {
     setFocus(f)
   }
 
-  /* Handle various elements with focus */
+  // Handle various elements with focus
   let focusCount = 0
   if (focus !== null) {
     for (let p of Object.keys(focus)) {
@@ -78,7 +92,7 @@ const Pattern = props => {
     }
   }
 
-  /* Set up settings object */
+  // Set up settings object
   const settings = {
     options: { ...options },
     measurements: { ...measurements },
@@ -152,5 +166,45 @@ const Pattern = props => {
       </figure>
     )
 }
+*/
+const Example = ({
+  app,
+  pattern='examples',
+  part,
+  gist={
+    settings: {
+      options: {},
+      measurements: { head: 390 },
+    }
+  },
+  updateGist,
+  unsetGist,
+  showInfo,
+  feedback,
+  xray=false,
+  measurements = { head: 390},
+  hasRequiredMeasurements=true,
+}) => {
+  const Pattern = examplePatterns[pattern]
+  if (part !== '') gist.settings.only = [ "examples."+part]
+  const draft = new Pattern(gist.settings)
+  const patternProps = draft.getRenderProps()
 
-export default Pattern
+  return (
+    <Svg {...patternProps} embed={true}>
+      <Defs {...patternProps} />
+      <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
+      <g>
+        {Object.keys(patternProps.stacks).map((stackName) => (
+          <Stack {...{ app, gist, updateGist, unsetGist, showInfo, patternProps }}
+            key={stackName}
+            stackName={stackName}
+            stack={patternProps.stacks[stackName]}
+          />
+        ))}
+      </g>
+    </Svg>
+  )
+}
+
+export default Example
