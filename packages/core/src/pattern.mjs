@@ -300,7 +300,7 @@ Pattern.prototype.render = function () {
 /**
  * Loads a plugin
  *
- * @param {object} plugin - The plugin to load
+ * @param {object} plugin - The plugin to load, or an object with `plugin` and `condition` keys
  * @param {object} data - Any data to pass to the plugin
  * @return {object} this - The Pattern instance
  */
@@ -925,7 +925,7 @@ Pattern.prototype.__pack = function () {
 Pattern.prototype.__resolveDependency = function (
   seen,
   part,
-  graph = this.dependencies,
+  graph = this.__dependencies,
   deps = []
 ) {
   if (typeof seen[part] === 'undefined') seen[part] = true
@@ -1145,7 +1145,7 @@ Pattern.prototype.__snappedPercentageOption = function (optionName, set) {
  * Loads a conditional plugin
  *
  * @private
- * @param {object} plugin - The plugin object
+ * @param {object} plugin - An object with `plugin` and `condition` keys
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__useIf = function (plugin) {
