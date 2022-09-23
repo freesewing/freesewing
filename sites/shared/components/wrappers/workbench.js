@@ -130,6 +130,11 @@ const WorkbenchWrapper = ({ app, design, preload = false, from = false, layout =
       console.log('Failed to draft design', error)
       return <DraftError error={error} app={app} draft={draft} at={'draft'} />
     }
+  } else {
+    // for non-drafting views, we still need a properly populated config, so we initialize a pattern from the gist.
+    // Because pattern.config === design.config, this will allow calls for design.config to work
+    let pattern = new design(gist)
+    pattern.__init()
   }
 
   // Props to pass down
