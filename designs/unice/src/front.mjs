@@ -128,7 +128,7 @@ export const front = {
     .line(points.frontSeatLeft)
     .line(points.frontHipLeft)
     .line(points.frontWaistLeft)
-    .setRender(false) // only show when debugging
+    .setHidden(true) // only show when debugging
 
   /* Waist band is somewhere on the sideLeft path */
   points.frontWaistBandLeft = paths.sideLeft.shiftFractionAlong(options.rise)
@@ -164,6 +164,9 @@ export const front = {
   points.frontGussetRight = points.frontGussetLeft.flipX(points.frontWaistMid)
   points.frontHipRight = points.frontSeatLeft.flipX(points.frontWaistMid)
   points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
+
+  console.log('points',points)
+
 
   /* Middle point for label */
   points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(
@@ -229,7 +232,7 @@ export const front = {
         points.frontLegOpeningRightCp1,
         points.frontLegOpeningRight
       )
-      .setRender(false)
+      .setHidden(true)
   store.set('frontLegOpeningLength',paths.frontLegOpening.length())
   
   paths.frontWaistBand = new Path()
@@ -239,7 +242,7 @@ export const front = {
         points.frontWaistBandLeftCp1,
         points.frontWaistBandLeft
       )
-      .setRender(false)
+      .setHidden(true)
   store.set('frontWaistBandLength',paths.frontWaistBand.length())
 
   // Complete?
