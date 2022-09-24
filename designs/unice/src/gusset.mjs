@@ -1,5 +1,5 @@
 import { pctBasedOn } from '@freesewing/core'
-import {gusset as ursulaGusset } from '@freesewing/ursula'
+import { back } from './back.mjs'
 
 export const gusset = {
   name: 'unice.gusset',
@@ -19,6 +19,7 @@ export const gusset = {
     // booleans
     useCrossSeam: { bool: true, menu: 'fit' },
   },
+  after: back,
   draft: ({
     utils,
     store,

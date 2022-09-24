@@ -1,5 +1,4 @@
 import { pctBasedOn } from '@freesewing/core'
-import { back as ursulaBack } from '@freesewing/ursula'
 import { front } from './front.mjs'
 
 export const back = {
