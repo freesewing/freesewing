@@ -6,13 +6,8 @@
  * @return {object} defaults - The default design configuration
  */
 export const __loadDesignDefaults = () => ({
-  measurements: [],
-  optionalMeasurements: [],
-  options: {},
-  optionDistance: {},
   parts: [],
   data: {},
-  plugins: [],
 })
 
 /**
