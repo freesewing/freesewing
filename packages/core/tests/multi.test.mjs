@@ -3,8 +3,6 @@ import { Design } from '../src/index.mjs'
 
 const expect = chai.expect
 
-if (!expect) console.log('shut up eslint REMOVE')
-
 describe('Multisets', () => {
   describe('FIXME', () => {
     const partA = {

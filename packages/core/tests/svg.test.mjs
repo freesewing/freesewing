@@ -266,7 +266,7 @@ describe('Svg', () => {
     pattern.on('postRender', (svg) => {
       svg.svg = 'test'
     })
-    expect(pattern.render()).to.equal('test')
+    expect(pattern.draft().render()).to.equal('test')
   })
 
   it('Should tab in and out', () => {

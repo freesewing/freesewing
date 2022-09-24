@@ -45,6 +45,24 @@ export function Part() {
 //////////////////////////////////////////////
 
 /**
+ * Returns a part as an object suitable for inclusion in renderprops
+ *
+ * @return {object} part - A plain object representing the part
+ */
+Part.prototype.asProps = function () {
+  return {
+    paths: this.paths,
+    points: this.points,
+    snippets: this.snippets,
+    attributes: this.attributes,
+    height: this.height,
+    width: this.width,
+    bottomRight: this.bottomRight,
+    topLeft: this.topLeft,
+  }
+}
+
+/**
  * Adds an attribute in a chainable way
  *
  * @param {string} name - Name of the attribute to add
@@ -106,6 +124,7 @@ Part.prototype.shorthand = function () {
   const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
   const shorthand = {
     complete,
+    context: this.context,
     getId: this.getId,
     hide: this.hide,
     log: this.context.store.log,

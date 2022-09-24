@@ -5,7 +5,6 @@ const expect = chai.expect
 
 describe('Pattern', () => {
   describe('Pattern.constructor()', () => {
-    /*
 
     it('Pattern constructor should return pattern object', () => {
       const Pattern = new Design()
@@ -20,7 +19,7 @@ describe('Pattern', () => {
       expect(Array.isArray(pattern.setStores)).to.equal(true)
       expect(typeof pattern.store).to.equal('object')
       expect(typeof pattern.config).to.equal('object')
-      expect(Object.keys(pattern).length).to.equal(6)
+      expect(Object.keys(pattern).length).to.equal(5)
     })
 
     it('Pattern constructor should add non-enumerable properties', () => {
@@ -34,7 +33,7 @@ describe('Pattern', () => {
       expect(typeof pattern.Snippet).to.equal('function')
       expect(typeof pattern.Attributes).to.equal('function')
       expect(typeof pattern.macros).to.equal('object')
-      expect(typeof pattern.__parts).to.equal('object')
+      expect(typeof pattern.__designParts).to.equal('object')
       expect(typeof pattern.__inject).to.equal('object')
       expect(typeof pattern.__dependencies).to.equal('object')
       expect(typeof pattern.__resolvedDependencies).to.equal('object')
@@ -75,7 +74,7 @@ describe('Pattern', () => {
       options: {
         optA: { pct: 40, min: 20, max: 80 },
       },
-      draft: () => {},
+      draft: ({ part }) => part,
     }
     const partB = {
       name: 'test.partB',
@@ -93,7 +92,7 @@ describe('Pattern', () => {
       options: {
         optB: { deg: 40, min: 20, max: 80 },
       },
-      draft: () => {},
+      draft: ({ part }) => part,
     }
     const partC = {
       name: 'test.partC',
@@ -103,7 +102,7 @@ describe('Pattern', () => {
       options: {
         optC: { pct: 20, min: 10, max: 30 },
       },
-      draft: () => {},
+      draft: ({ part }) => part,
     }
 
     const Pattern = new Design({
@@ -114,7 +113,7 @@ describe('Pattern', () => {
       parts: [partC],
     })
     const pattern = new Pattern()
-    pattern.__init()
+    pattern.draft()
 
     it('Pattern.__init() should resolve all measurements', () => {
       expect(
@@ -152,7 +151,7 @@ describe('Pattern', () => {
     })
 
     it('Pattern.__init() should resolve plugins', () => {
-      expect(pattern.config.plugins.length).to.equal(1)
+      expect(Object.keys(pattern.config.plugins).length).to.equal(1)
     })
 
     it('Pattern.__init() should set config data in the store', () => {
@@ -497,7 +496,7 @@ describe('Pattern', () => {
       }
       const design = new Design({ parts: [part] })
       const pattern = new design()
-      pattern.__init()
+      pattern.draft()
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
 
@@ -573,13 +572,23 @@ describe('Pattern', () => {
       const pattern = new design()
       expect(pattern.hooks.preRender.length).to.equal(0)
     })
+
     it('Pattern.__init() should load multiple conditional plugins', () => {
-      const plugin = {
-        name: 'example',
+      const plugin1 = {
+        name: 'example1',
         version: 1,
         hooks: {
           preRender: function (svg) {
             svg.attributes.add('freesewing:plugin-example', 1)
+          },
+        },
+      }
+      const plugin2 = {
+        name: 'example2',
+        version: 2,
+        hooks: {
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example', 2)
           },
         },
       }
@@ -588,17 +597,16 @@ describe('Pattern', () => {
       const part = {
         name: 'test.part',
         plugins: [
-          { plugin, condition: condition1 },
-          { plugin, condition: condition2 },
+          { plugin: plugin1, condition: condition1 },
+          { plugin: plugin2, condition: condition2 },
         ],
         draft: (part) => part,
       }
       const design = new Design({ parts: [ part ] })
       const pattern = new design()
-      pattern.__init()
+      pattern.draft()
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
-*/
 
     it('Load conditional plugins that are also passing data', () => {
       const plugin1 = {
@@ -638,17 +646,13 @@ describe('Pattern', () => {
         draft: ({ part }) => part
       }
       const design = new Design({
-        parts: [ part1 ]
+        parts: [ part1, part2 ]
       })
       const pattern = new design()
       pattern.__init()
-      //console.log(pattern.store.logs)
-      console.log(pattern.config)
-      //console.log(pattern.hooks)
       expect(pattern.hooks.preRender.length).to.equal(2)
     })
 
-    /*
     it('Pattern.__init() should register a hook via on', () => {
       const Pattern = new Design()
       const pattern = new Pattern()
@@ -704,35 +708,44 @@ describe('Pattern', () => {
     })
 
     it('Should check whether created parts get the pattern context', () => {
+      let partContext
       const part = {
         name: 'test',
-        draft: ({ part }) => part,
+        draft: ({ Point, paths, Path, part, context }) => {
+          paths.test = new Path()
+            .move(new Point(0,0))
+            .line(new Point(100,0))
+          partContext = context
+
+          return part
+        }
       }
-      const Pattern = new Design({ parts: [part] })
+      const Pattern = new Design({ parts: [part], data: { name: 'test', version: '1' }})
       const pattern = new Pattern()
       pattern.draft()
-      const context = pattern.parts[0].test.context
-      expect(typeof context).to.equal('object')
-      expect(typeof context.parts).to.equal('object')
-      expect(typeof context.config).to.equal('object')
-      expect(typeof context.config.options).to.equal('object')
-      expect(typeof pattern.parts[0].test.context.config.data).to.equal('object')
-      expect(Array.isArray(context.config.measurements)).to.equal(true)
-      expect(Array.isArray(context.config.optionalMeasurements)).to.equal(true)
-      expect(Array.isArray(context.config.parts)).to.equal(true)
-      expect(Array.isArray(context.config.plugins)).to.equal(true)
-      expect(context.settings).to.equal(pattern.settings[0])
-      expect(typeof context.store).to.equal('object')
-      expect(typeof context.store.log).to.equal('object')
-      expect(typeof context.store.log.debug).to.equal('function')
-      expect(typeof context.store.log.info).to.equal('function')
-      expect(typeof context.store.log.warning).to.equal('function')
-      expect(typeof context.store.log.error).to.equal('function')
-      expect(typeof context.store.logs).to.equal('object')
-      expect(Array.isArray(context.store.logs.debug)).to.equal(true)
-      expect(Array.isArray(context.store.logs.info)).to.equal(true)
-      expect(Array.isArray(context.store.logs.warning)).to.equal(true)
-      expect(Array.isArray(context.store.logs.error)).to.equal(true)
+      expect(typeof partContext).to.equal('object')
+      expect(typeof partContext.parts).to.equal('object')
+      expect(typeof partContext.config).to.equal('object')
+      expect(typeof partContext.config.options).to.equal('object')
+      expect(typeof partContext.store.data).to.equal('object')
+      expect(partContext.store.data.name).to.equal('test')
+      expect(partContext.store.get('data.name')).to.equal('test')
+      expect(Array.isArray(partContext.config.measurements)).to.equal(true)
+      expect(Array.isArray(partContext.config.optionalMeasurements)).to.equal(true)
+      expect(typeof partContext.config.plugins).to.equal('object')
+      expect(typeof partContext.parts).to.equal('object')
+      expect(partContext.settings).to.equal(pattern.settings[0])
+      expect(typeof partContext.store).to.equal('object')
+      expect(typeof partContext.store.log).to.equal('object')
+      expect(typeof partContext.store.log.debug).to.equal('function')
+      expect(typeof partContext.store.log.info).to.equal('function')
+      expect(typeof partContext.store.log.warning).to.equal('function')
+      expect(typeof partContext.store.log.error).to.equal('function')
+      expect(typeof partContext.store.logs).to.equal('object')
+      expect(Array.isArray(partContext.store.logs.debug)).to.equal(true)
+      expect(Array.isArray(partContext.store.logs.info)).to.equal(true)
+      expect(Array.isArray(partContext.store.logs.warning)).to.equal(true)
+      expect(Array.isArray(partContext.store.logs.error)).to.equal(true)
     })
   })
 
@@ -800,6 +813,5 @@ describe('Pattern', () => {
       const pattern = new Pattern()
       expect(() => pattern.__init()).to.throw()
     })
-    */
   })
 })

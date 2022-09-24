@@ -26,6 +26,15 @@ Stack.prototype.addPart = function (part) {
   return this
 }
 
+/* Returns a stack object suitbale for renderprops */
+Stack.prototype.asProps = function (part) {
+  return {
+    ...this,
+    parts: [...this.parts]
+  }
+}
+
+
 /* Returns a list of parts in this stack */
 Stack.prototype.getPartList = function () {
   return [...this.parts]

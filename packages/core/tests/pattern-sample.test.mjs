@@ -30,7 +30,7 @@ describe('Pattern', () => {
         }
       })
       pattern.sample()
-      expect(pattern.stores.length).to.equal(10)
+      expect(pattern.setStores.length).to.equal(10)
       expect(pattern.settings.length).to.equal(10)
       expect(pattern.parts[9].test.paths.test.ops[1].to.y).to.equal(320)
     })
@@ -59,7 +59,7 @@ describe('Pattern', () => {
         }
       })
       pattern.sample()
-      expect(pattern.stores.length).to.equal(10)
+      expect(pattern.setStores.length).to.equal(10)
       expect(pattern.settings.length).to.equal(10)
       expect(round(pattern.parts[9].test.paths.test.ops[1].to.y)).to.equal(22)
     })
@@ -88,7 +88,7 @@ describe('Pattern', () => {
         }
       })
       pattern.sample()
-      expect(pattern.stores.length).to.equal(10)
+      expect(pattern.setStores.length).to.equal(10)
       expect(pattern.settings.length).to.equal(10)
       expect(pattern.parts[9].test.paths.test.ops[1].to.y).to.equal(400)
     })
@@ -117,7 +117,7 @@ describe('Pattern', () => {
         }
       })
       pattern.sample()
-      expect(pattern.stores.length).to.equal(10)
+      expect(pattern.setStores.length).to.equal(10)
       expect(pattern.settings.length).to.equal(10)
       expect(pattern.parts[9].test.paths.test.ops[1].to.y).to.equal(216)
     })
@@ -146,8 +146,8 @@ describe('Pattern', () => {
         }
       })
       pattern.sample()
-      expect(pattern.stores[0].logs.error.length).to.equal(1)
-      expect(pattern.stores[0].logs.error[0]).to.equal("Cannot sample measurement `head` because it's `undefined`")
+      expect(pattern.store.logs.error.length).to.equal(1)
+      expect(pattern.store.logs.error[0]).to.equal("Cannot sample measurement `head` because it's `undefined`")
     })
 
     it('Should sample models', () => {
@@ -180,7 +180,7 @@ describe('Pattern', () => {
         }
       })
       pattern.sample()
-      expect(pattern.stores.length).to.equal(4)
+      expect(pattern.setStores.length).to.equal(4)
       expect(pattern.settings.length).to.equal(4)
       expect(pattern.parts[3].test.paths.test.ops[1].to.y).to.equal(200)
     })
@@ -217,7 +217,6 @@ describe('Pattern', () => {
         }
       })
       pattern.sample();
-      console.log(pattern.parts)
       expect(pattern.parts.front.paths.line_1.ops[1].to.x).to.equal(100);
       expect(pattern.parts.front.paths.line_2.ops[1].to.x).to.equal(200);
       expect(pattern.parts.front.paths.line_3.ops[1].to.x).to.equal(300);
