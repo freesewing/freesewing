@@ -58,10 +58,22 @@ describe('Part', () => {
     expect(pattern.parts[0].test.points.macro.y).to.equal(456)
   })
 
-  it('Should return a free ID', () => {
-    const part = new Part()
-    const free = part.getId()
-    expect(part.getId()).to.equal('' + (parseInt(free) + 1))
+  it('Should return a free ID in draft method', () => {
+    let id = null
+    const part = {
+      name: 'test',
+      draft: ({ getId, part }) => {
+        console.log(getId)
+        id = getId()
+        id = getId()
+        id = getId()
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    new design().draft()
+    expect(id).to.equal('3')
   })
 
   it('Should return a function from __unitsClosure', () => {

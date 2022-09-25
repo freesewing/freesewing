@@ -78,18 +78,6 @@ Part.prototype.attr = function (name, value, overwrite = false) {
 }
 
 /**
- * Returns on unused ID (unused in this part)
- *
- * @param {string} prefix - An optional prefix to apply to the ID
- * @return {string} id - The id
- */
-Part.prototype.getId = function (prefix = '') {
-  this.freeId += 1
-
-  return prefix + this.freeId
-}
-
-/**
  * Hide the part
  *
  * @return {Part} part - The Part instance
@@ -125,7 +113,7 @@ Part.prototype.shorthand = function () {
   const shorthand = {
     complete,
     context: this.context,
-    getId: this.getId,
+    getId: this.__getIdClosure(),
     hide: this.hide,
     log: this.context.store.log,
     paperless,
@@ -287,6 +275,22 @@ Part.prototype.__boundary = function () {
   this.height = this.bottomRight.y - this.topLeft.y
 
   return this
+}
+
+/**
+ * Returns a closure holding a getId method (returns an ID unused in this part)
+ *
+ * @return {function} getId - The getId function
+ */
+Part.prototype.__getIdClosure = function () {
+  const self = this
+  const method = function (prefix = '') {
+    self.freeId += 1
+
+    return prefix + self.freeId
+  }
+
+  return method
 }
 
 /**
