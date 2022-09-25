@@ -5,34 +5,37 @@ import Figure from './figure.js'
 import ReadMore from './read-more.js'
 import Example from './example/index.js'
 import Dot from './dot.js'
-import examples from '@freesewing/examples'
-import rendertest from '@freesewing/rendertest'
-import tutorial from '@freesewing/tutorial'
+import { Examples } from '@freesewing/examples'
+import { Rendertest } from '@freesewing/rendertest'
+import { Tutorial } from '@freesewing/tutorial'
 import { Tab, Tabs } from './tabs.js'
 
-
-const mdxCustomComponents = (app=false) => ({
+const mdxCustomComponents = (app = false) => ({
   // Custom components
-  Example: props => <Example
-    {...props}
-    patterns={{examples, rendertest, tutorial}}
-  >{props.children}</Example>,
-  Comment: props => <Popout {...props} comment />,
-  Fixme: props => <Popout {...props} fixme />,
-  Link: props => <Popout {...props} link />,
-  Note: props => <Popout {...props} note />,
-  ReadMore: props => <ReadMore {...props} app={app} slug={app.slug} />,
-  Related: props => <Popout {...props} related />,
-  Tip: props => <Popout {...props} tip />,
-  Warning: props => <Popout {...props} warning />,
+  Example: (props) => (
+    <Example {...props} patterns={{ Examples, Rendertest, Tutorial }}>
+      {props.children}
+    </Example>
+  ),
+  Comment: (props) => <Popout {...props} comment />,
+  Fixme: (props) => <Popout {...props} fixme />,
+  Link: (props) => <Popout {...props} link />,
+  Note: (props) => <Popout {...props} note />,
+  ReadMore: (props) => <ReadMore {...props} app={app} slug={app.slug} />,
+  Related: (props) => <Popout {...props} related />,
+  Tip: (props) => <Popout {...props} tip />,
+  Warning: (props) => <Popout {...props} warning />,
   YouTube,
-  pre: props => <Highlight {...props} />,
+  pre: (props) => <Highlight {...props} />,
   img: Figure,
   Dot,
-  table: props => <table {...props} className="mdx-table table-auto w-full">{props.children}</table>,
+  table: (props) => (
+    <table {...props} className="mdx-table table-auto w-full">
+      {props.children}
+    </table>
+  ),
   Tab,
   Tabs,
 })
 
 export default mdxCustomComponents
-
