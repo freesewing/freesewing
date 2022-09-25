@@ -7,7 +7,7 @@ order: 30
 
 - Your E-mail address
 - Your username and password
-- Optional: A profile picture, bio, and your social media accounts
+- Необов'язковими є: зображення, опис та соціальні мережі
 
 ##### Why do we need it?
 
@@ -17,7 +17,7 @@ order: 30
 
 ##### How long do we keep it?
 
-- We keep profile data up to 12 months after your last login, or until you remove it.
+- Ми зберігаємо дані облікового запису до 12 місяців з моменту Вашого останнього входу в обліковий запис чи до тих пір, доки Ви не видалите їх.
 
 ##### Do we share it?
 
