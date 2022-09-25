@@ -35,7 +35,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
 
   useEffect(() => {
     if (!gistReady) { return }
-    for (const m of design.config?.measurements || []) {
+    for (const m of design.patternConfig?.measurements || []) {
       if (!gist?.measurements?.[m]) {
         setFirstInvalid(m);
         return;
@@ -47,7 +47,7 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
 
   // Save us some typing
   const inputProps = useMemo(() => ({ app, updateMeasurements, gist }), [app, gist])
-  const shortname = design.config.data.name.replace('@freesewing/', '')
+  const shortname = design.designConfig.data.name.replace('@freesewing/', '')
 
   return (
     <div className="m-auto max-w-2xl">
@@ -89,18 +89,18 @@ const WorkbenchMeasurements = ({ app, design, gist, updateGist, gistReady }) => 
       <div className="my-2 border p-4 rounded-lg shadow bg-base-200">
         <Setting key={'units'} setting={'units'} config={settings.units} updateGist={updateGist} {...inputProps} />
       </div>
-        {design.config.measurements && (
+        {design.patternConfig.measurements && (
           <>
             <h3>{t('requiredMeasurements')}</h3>
-            {design.config.measurements.map(m => (
+            {design.patternConfig.measurements.map(m => (
               <MeasurementInput key={m} m={m} focus={m == firstInvalid} {...inputProps} />
             ))}
           </>
         )}
-        {design.config.optionalMeasurements && (
+        {design.patternConfig.optionalMeasurements.length > 0 && (
           <>
             <h3>{t('optionalMeasurements')}</h3>
-            {design.config.optionalMeasurements.map(m => (
+            {design.patternConfig.optionalMeasurements.map(m => (
               <MeasurementInput key={m} m={m} {...inputProps} />
             ))}
           </>

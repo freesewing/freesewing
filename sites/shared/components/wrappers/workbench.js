@@ -34,9 +34,9 @@ const views = {
 }
 
 const hasRequiredMeasurementsMethod = (design, gist) => {
-  if (design.config.measurements.length && !gist.measurements) return false
+  if (design.patternConfig.measurements.length && !gist.measurements) return false
 
-  for (const m of design.config.measurements || []) {
+  for (const m of design.patternConfig.measurements || []) {
     if (!gist.measurements[m]) return false
   }
 

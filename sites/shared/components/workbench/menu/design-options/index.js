@@ -11,7 +11,7 @@ const DesignOptions = props => {
   const Option = props.Option
     ? props.Option
     : OptionComponent
-  const optionsMenu = optionsMenuStructure(props.design.config.options)
+  const optionsMenu = optionsMenuStructure(props.design.patternConfig.options)
 
   return (
     <Details open>

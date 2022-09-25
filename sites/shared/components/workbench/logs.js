@@ -96,17 +96,12 @@ const StoreLogs = ({ logs, units }) => (
   </div>
 )
 
-const Logs = (props) =>
-  props.draft.stores.length === 1 ? (
-    <StoreLogs logs={props.draft.stores[0].logs} units={props.gist.units} />
-  ) : (
-    <Tabs tabs={props.draft.stores.map((store, i) => `Set ${i}`).join(',')}>
-      {props.draft.stores.map((store, i) => (
-        <Tab key={i}>
-          <StoreLogs logs={store.logs} units={props.gist.units} />
-        </Tab>
-      ))}
-    </Tabs>
-  )
+const Logs = (props) => (
+  <Tabs tabs={['Pattern', ...props.draft.setStores.map((store, i) => `Set ${i}`)].join(',')}>
+    {[props.draft.store, ...props.draft.setStores].map((store, i) => (
+      <Tab key={i}><StoreLogs logs={store.logs} units={props.gist.units} /></Tab>
+    ))}
+  </Tabs>
+)
 
 export default Logs

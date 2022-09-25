@@ -30,8 +30,8 @@ const DesignOptionPctDeg = props => {
   const { t } = useTranslation(['app'])
   const suffix = props.type === 'deg' ? '°' : '%'
   const factor = props.type === 'deg' ? 1 : 100
-  const { max, min } = props.design.config.options[props.option]
-  const dflt = props.design.config.options[props.option][props.type || 'pct']
+  const { max, min } = props.design.patternConfig.options[props.option]
+  const dflt = props.design.patternConfig.options[props.option][props.type || 'pct']
   const val = (typeof props.gist?.options?.[props.option] === 'undefined')
     ? dflt
     : props.gist.options[props.option] * factor
@@ -92,8 +92,8 @@ const DesignOptionPctDeg = props => {
       />
       <div className="flex flex-row justify-between">
         <span className={val===dflt ? 'text-secondary' : 'text-accent'}>
-          {props.design.config.options[props.option]?.toAbs && props.gist.measurements
-            ? formatMm(props.design.config.options[props.option].toAbs(value/100, props.gist))
+          {props.design.patternConfig.options[props.option]?.toAbs && props.gist.measurements
+            ? formatMm(props.design.patternConfig.options[props.option].toAbs(value/100, props.gist))
             : ' '
           }
         </span>

@@ -23,14 +23,16 @@ const LabDraft = (props) => {
   let patternProps = {}
   try {
     patternProps = draft.getRenderProps()
+    console.log(patternProps)
   } catch (error) {
     console.log('Failed to get render props for design', error)
     return <Error error={error} {...props} />
   }
 
   const errors = []
-  for (const logs of patternProps.logs) {
-    errors.push(...logs.error)
+  errors.push(...patternProps.logs.pattern.error)
+  for (const set of patternProps.logs.sets) {
+    errors.push(...set.error)
   }
 
   return (
