@@ -8,17 +8,21 @@ describe('Bartack plugin Tests', () => {
   it('draws a default bartack from a point', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.bartack
+
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -38,18 +42,21 @@ describe('Bartack plugin Tests', () => {
   it('draws a bartack along a path', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, macro }) => {
+      draft: ({ Point, points, Path, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 30)
         macro('bartackAlong', {
           path: new Path().move(points.from).line(points.to),
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.bartack
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(8.5)
@@ -69,7 +76,7 @@ describe('Bartack plugin Tests', () => {
   it('can be called using the bartackFractionAlong syntax', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, macro }) => {
+      draft: ({ Point, points, Path, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 100)
         macro('bartackAlong', {
@@ -77,12 +84,15 @@ describe('Bartack plugin Tests', () => {
           start: 0.2,
           end: 0.8,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.bartack
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
@@ -102,7 +112,7 @@ describe('Bartack plugin Tests', () => {
   it('can be called using the bartackFractionAlong syntax', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, Path, macro }) => {
+      draft: ({ Point, points, Path, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 100)
         macro('bartackFractionAlong', {
@@ -110,12 +120,15 @@ describe('Bartack plugin Tests', () => {
           start: 0.2,
           end: 0.8,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.bartack
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
@@ -135,18 +148,21 @@ describe('Bartack plugin Tests', () => {
   it('has configurable length', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
           length: 20,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.bartack
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -166,18 +182,21 @@ describe('Bartack plugin Tests', () => {
   it('has configurable width', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
           width: 5,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.bartack
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -197,18 +216,21 @@ describe('Bartack plugin Tests', () => {
   it('has configurable angle', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
           angle: 45,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.bartack
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(11.06)
@@ -228,36 +250,42 @@ describe('Bartack plugin Tests', () => {
   it('has configurable suffix', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
           suffix: 'foo',
         })
+
+        part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.bartackfoo
+    const c = pattern.parts[0].test.paths.bartackfoo
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
   })
 
   it('has configurable prefix', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
           prefix: 'foo',
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const design = new Design({ parts: [part], plugins: [plugin] })
+    const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts.test.paths.foobartack
+    const c = pattern.parts[0].test.paths.foobartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
   })
 })
