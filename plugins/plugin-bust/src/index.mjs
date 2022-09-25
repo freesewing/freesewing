@@ -5,10 +5,12 @@ export const plugin = {
   version,
   hooks: {
     preDraft: ({ settings }) => {
-      if (settings.measurements) {
-        if (typeof settings.measurements.bust === 'undefined') {
-          settings.measurements.bust = settings.measurements.chest
-          settings.measurements.chest = settings.measurements.highBust
+      for (const set of settings) {
+        if (set.measurements) {
+          if (typeof set.measurements.bust === 'undefined') {
+            set.measurements.bust = set.measurements.chest
+            set.measurements.chest = set.measurements.highBust
+          }
         }
       }
     },
