@@ -455,6 +455,7 @@ Pattern.prototype.__addPartOptions = function (part) {
     for (const optionName in part.options) {
       if (!this.__mutated.optionDistance[optionName]) {
         this.__mutated.optionDistance[optionName] = this.__mutated.partDistance?.[part.name] || 0
+        this.__mutated.optionDistance[optionName] = this.__mutated.partDistance?.[part.name] || 0
         // Keep design parts immutable in the pattern or risk subtle bugs
         this.config.options[optionName] = Object.freeze(part.options[optionName])
         this.store.log.debug(`🔵  __${optionName}__ option loaded from \`${part.name}\``)
@@ -688,6 +689,8 @@ Pattern.prototype.__isPartHidden = function (partName) {
   }
   if (this.__designParts?.[partName]?.hide) return true
   if (this.__designParts?.[partName]?.hideAll) return true
+  if (this.__mutated.partHide?.[partName]) return true
+  if (this.__mutated.partHideAll?.[partName]) return true
 
   return false
 }
@@ -711,6 +714,8 @@ Pattern.prototype.__isStackHidden = function (stackName) {
   for (const partName of parts) {
     if (this.__designParts?.[partName]?.hide) return true
     if (this.__designParts?.[partName]?.hideAll) return true
+    if (this.__mutated.partHide?.[partName]) return true
+    if (this.__mutated.partHideAll?.[partName]) return true
   }
 
   return false
@@ -1216,14 +1221,14 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
   }
   for (const [name, part] of Object.entries(this.__designParts)) {
     // Hide when hideAll is set
-    if (part.hideAll) part.hide = true
+    if (part.hideAll) this.__mutated.partHide[part.name] = true
     // Inject (from)
     if (part.from) {
       if (part.hideDependencies || part.hideAll) {
         // Don't mutate the part, keep this info in the pattern object
         this.__mutated.partHide[part.from.name] = true
         this.__mutated.partHideAll[part.from.name] = true
-        this.__mutated.partDistance = distance
+        this.__mutated.partDistance[part.from.name] = distance
       }
       this.__designParts[part.from.name] = part.from
       this.__inject[name] = part.from.name
