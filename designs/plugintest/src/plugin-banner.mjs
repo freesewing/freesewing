@@ -9,7 +9,7 @@ const pluginBanner = ({ points, Point, paths, Path, macro, options, part }) => {
     paths.banner = new Path().move(points.from).line(points.to)
 
     macro('banner', {
-      path: 'banner',
+      path: paths.banner,
       text: 'banner plugin',
       dy: options.bannerDy,
       spaces: options.bannerSpaces,

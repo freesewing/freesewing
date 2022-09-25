@@ -182,7 +182,7 @@ function simonSleeve({
         .close()
         .attr('class', 'fabric sa')
       macro('banner', {
-        path: 'frenchSa',
+        path: paths.frenchSa,
         text: 'flatFelledSeamAllowance',
         repeat: 30,
       })

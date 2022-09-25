@@ -278,15 +278,15 @@ export const paperlessFrenchCuff = (part) => {
 }
 
 export const frontDimensions = (part, side = 'left') => {
-  const { sa, options, paperless, points, macro } = part.shorthand()
+  const { sa, options, paperless, points, paths, macro } = part.shorthand()
   const factor = side === 'right' ? -1 : 1
   if (sa) {
     macro('banner', {
-      path: 'hemSa',
+      path: paths.hemSa,
       text: ['hem', ': 3x', 'seamAllowance'],
     })
     macro('banner', {
-      path: 'saFrench',
+      path: paths.saFrench,
       text: ['frenchSeam', ': 2x', 'seamAllowance'],
     })
   }

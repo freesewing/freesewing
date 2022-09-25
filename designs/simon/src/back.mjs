@@ -275,7 +275,7 @@ function simonBack({
         .line(points.cbYoke)
         .attr('class', 'fabric sa')
       macro('banner', {
-        path: 'hemSa',
+        path: paths.hemSa,
         text: ['hem', ': 3x', 'seamAllowance'],
       })
     }

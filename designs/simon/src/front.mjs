@@ -135,14 +135,14 @@ function simonFront({
     if (sa) {
       paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
       macro('banner', {
-        path: 'saFrench',
+        path: paths.saFrench,
         text: 'flatFelledSeamAllowance',
         repeat: 30,
       })
       paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
       paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
       macro('banner', {
-        path: 'hemSa',
+        path: paths.hemSa,
         text: ['hem', ': 3x', 'seamAllowance'],
       })
       paths.saConnect = new Path()
