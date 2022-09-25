@@ -1,7 +1,7 @@
 ---
-title: Biceps circumference
+title: Обхват біцепсів
 ---
 
-The **biceps circumference** measurement goes around the fullest part of your upper arm.
+**Обхват біцепсів** вимірюється навколо найширшого частини плеча.
 
-To measure your **biceps circumference**, run the tape measure around the fullest part of your upper arm.
+Для зняття **обхвату біцепсів**, охопіть сантиметр навколо найширшої частини плеча (верхньої частини руки).
