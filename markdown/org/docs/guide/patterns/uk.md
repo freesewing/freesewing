@@ -1,20 +1,20 @@
 ---
-title: Your patterns
+title: Ваші викрійки
 order: 400
 ---
 
-When you generate a made-to-measure pattern, you can tweak it endlessly, and export it to a variety of formats, including PDF.  
-But it remains ephemeral until you save it to your account, so it becomes one of **your patterns**.
+Коли Ви створюєте викрійку на базі вимірів, Ви можете нескінченно налаштовувати її та експортувати у вигляді багатьох форматів, включаючи PDF.  
+Однак така викрійка лишається недовговічною до тих пір, доки Ви не збережете її до свого облікового запису, коли вона стає однією з **Ваших викрійок**.
 
-Saving your pattern is optional, but it allows you to re-visit the pattern later, make further tweaks to it or simply download the PDF again.
+Збереження викрійки є не обов'язковим, однак воно дозволяє згодом повернутися до викрійки, внести додаткові зміни або просто знову завантажити у вигляді PDF файлу.
 
-You can save as many patterns as you like.
+Ви можете зберігати будь-яку кількість викрійок.
 
 <Tip>
 
-##### Patterns vs Designs
+##### Викрійки та Дизайни
 
-If you came to this site looking for _patterns_ you might have found them under _designs_.
+Якщо Ви шукаєте _викрійки_ на сайті, Ви знайдете їх у вкладці _Дизайни_.
 It's not a super important distinction, but it helps to understand that:
 
 - **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
