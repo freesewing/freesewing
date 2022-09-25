@@ -15,9 +15,9 @@ order: 400
 ##### Викрійки та Дизайни
 
 Якщо Ви шукаєте _викрійки_ на сайті, Ви знайдете їх у вкладці _Дизайни_.
-It's not a super important distinction, but it helps to understand that:
+Це не дуже важлива різниця, але вона допомагає зрозуміти, що:
 
-- **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
-- **Pattern**: The result of generating one of those styles into a pattern. We've got thousands of patterns stored for our users, and some might be yours
+- **Дизайн**. Одна з моделей, які ми пропонуємо. Ми маємо велику кількість дизайнів та Ви можете спробувати їх всі.
+- **Викрійка**. Це результат генерації однієї з моделей у кресленик. Ми маємо тисячі викрійок, що зберігаються для наших користувачів, і деякі з них можуть бути Вашими
 
 </Tip>
