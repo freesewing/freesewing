@@ -93,7 +93,7 @@ cuffStyle:
     straightBarrelCuff: Прямий спортивний (італійський) манжет
     roundedFrenchCuff: Заокруглений подвійний (французький) манжет
     angledFrenchCuff: Скоршений подвійний (французький) манжет
-    straightFrenchCuff: Прямий подвійний (французький) рукав
+    straightFrenchCuff: Прямий подвійний (французький) манжет
 extraTopButton:
   title: Додатковий верхній ґудзик
   description: Чи додавати ще один ґудзик зверху шліца.
