@@ -16,28 +16,31 @@ export const plugin = {
   name,
   version,
   hooks: {
-    preDraft: function (pattern) {
+    preSetDraft: function (pattern) {
       const time = now()
-      if (time) pattern.stores[pattern.activeSet].set(['timing', 'draft', 'start'], time)
+      if (time) pattern.setStores[pattern.activeSet].set(['timing', 'draft', 'start'], time)
     },
     prePartDraft: function (pattern) {
       const time = now()
       if (time)
-        pattern.stores[pattern.activeSet].set(
+        pattern.setStores[pattern.activeSet].set(
           ['timing', 'parts', pattern.activePart, 'start'],
           time
         )
     },
     postPartDraft: function (pattern) {
       const took = delta(
-        pattern.stores[pattern.activeSet].get(['timing', 'parts', pattern.activePart, 'start'])
+        pattern.setStores[pattern.activeSet].get(['timing', 'parts', pattern.activePart, 'start'])
       )
       if (took)
-        pattern.stores[pattern.activeSet].set(['timing', 'parts', pattern.activePart, 'took'], took)
+        pattern.setStores[pattern.activeSet].set(
+          ['timing', 'parts', pattern.activePart, 'took'],
+          took
+        )
     },
-    postDraft: function (pattern) {
-      const took = delta(pattern.stores[pattern.activeSet].get(['timing', 'draft', 'start']))
-      if (took) pattern.stores[pattern.activeSet].set(['timing', 'draft', 'took'], took)
+    postSetDraft: function (pattern) {
+      const took = delta(pattern.setStores[pattern.activeSet].get(['timing', 'draft', 'start']))
+      if (took) pattern.setStores[pattern.activeSet].set(['timing', 'draft', 'took'], took)
     },
   },
 }
