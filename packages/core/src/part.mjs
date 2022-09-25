@@ -128,7 +128,6 @@ Part.prototype.shorthand = function () {
     getId: this.getId,
     hide: this.hide,
     log: this.context.store.log,
-    macro: this.__macroClosure(),
     paperless,
     part: this,
     sa,
@@ -208,6 +207,9 @@ Part.prototype.shorthand = function () {
     },
     set: (absoluteOptions, name, value) => (self.context.settings.absoluteOptions[name] = value),
   })
+
+  // Macro closure at the end as it includes the shorthand object
+  shorthand.macro = this.__macroClosure(shorthand)
 
   return shorthand
 }
@@ -332,11 +334,11 @@ Part.prototype.__inject = function (orig) {
  * @private
  * @return {function} method - The closured macro method
  */
-Part.prototype.__macroClosure = function () {
-  let self = this
-  let method = function (key, args) {
-    let macro = utils.__macroName(key)
-    if (typeof self[macro] === 'function') self[macro](args)
+Part.prototype.__macroClosure = function (props) {
+  const self = this
+  const method = function (key, args) {
+    const macro = utils.__macroName(key)
+    if (typeof self[macro] === 'function') self[macro](args, props)
   }
 
   return method
