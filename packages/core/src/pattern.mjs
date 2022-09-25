@@ -36,6 +36,7 @@ export function Pattern(designConfig) {
   __addNonEnumProp(this, 'Snippet', Snippet)
   __addNonEnumProp(this, 'Attributes', Attributes)
   __addNonEnumProp(this, 'macros', {})
+  __addNonEnumProp(this, '__initialized', false)
   __addNonEnumProp(this, '__designParts', {})
   __addNonEnumProp(this, '__inject', {})
   __addNonEnumProp(this, '__dependencies', {})
@@ -72,8 +73,10 @@ export function Pattern(designConfig) {
  */
 Pattern.prototype.addPart = function (part) {
   if (typeof part?.draft === 'function') {
-    if (part.name) this.designConfig.parts.push(part)
-    else this.store.log.error(`Part must have a name`)
+    if (part.name) {
+      this.designConfig.parts.push(part)
+      this.__initialized = false
+    } else this.store.log.error(`Part must have a name`)
   } else this.store.log.error(`Part must have a draft() method`)
 
   return this
@@ -648,7 +651,18 @@ Pattern.prototype.__filterOptionalMeasurements = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.__init = function () {
+  if (this.__initialized) return this
+
   this.__runHooks('preInit')
+  // Say hello
+  this.store.log.info(
+    `New \`${this.store.get('data.name', 'No Name')}:` +
+      `${this.store.get(
+        'data.version',
+        'No version'
+      )}\` pattern using \`@freesewing/core:${version}\``
+  )
+
   /*
    * We allow late-stage updating of the design config (adding parts for example)
    * so we need to do the things we used to do in the contructor at a later stage.
@@ -662,16 +676,10 @@ Pattern.prototype.__init = function () {
     .__filterOptionalMeasurements() // Removes required m's from optional list
     .__loadOptionDefaults() // Merges default options with user provided ones
 
-  // Say hello
-  this.store.log.info(
-    `New \`${this.store.get('data.name', 'No Name')}:` +
-      `${this.store.get(
-        'data.version',
-        'No version'
-      )}\` pattern using \`@freesewing/core:${version}\``
-  )
   this.store.log.info(`Pattern initialized. Draft order is: ${this.__draftOrder.join(', ')}`)
   this.__runHooks('postInit')
+
+  this.__initialized = true
 
   return this
 }
