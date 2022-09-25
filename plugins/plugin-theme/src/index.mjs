@@ -31,13 +31,15 @@ export const plugin = {
         svg.style += sample
         svg.style += paperless
         svg.style += buildStylesheet(svg.pattern.settings.scale, data.stripped)
-        if (svg.pattern.settings.paperless) {
+        // FIXME : Re-implement this for v3
+        /*
+        if (svg.pattern.settings[0].paperless) {
           svg.pattern.settings.units === 'imperial'
             ? (svg.defs += grid.imperial)
             : (svg.defs += grid.metric)
           for (const key in svg.pattern.parts) {
             const part = svg.pattern.parts[key]
-            if (!part.hidden && svg.pattern.needs(key)) {
+            if (!part.hidden && svg.pattern.__needs(key)) {
               let anchor = new svg.pattern.Point(0, 0)
               if (typeof part.points.gridAnchor !== 'undefined') anchor = part.points.gridAnchor
               else if (typeof part.points.anchor !== 'undefined') anchor = part.points.anchor
@@ -55,6 +57,7 @@ export const plugin = {
             }
           }
         }
+        */
       }
     },
   },
