@@ -10,12 +10,12 @@ const markers = `
 `
 const prefix = '__paperless'
 
-function drawDimension(from, to, so, self) {
-  const dimension = new self.Path()
+function drawDimension(from, to, so, { Path, units }) {
+  const dimension = new Path()
     .move(from)
     .line(to)
     .attr('class', 'mark')
-    .attr('data-text', so.text || self.units(from.dist(to)))
+    .attr('data-text', so.text || units(from.dist(to)))
     .attr('data-text-class', 'fill-mark center')
   if (!so.noStartMarker) dimension.attributes.set('marker-start', 'url(#dimensionFrom)')
   if (!so.noEndMarker) dimension.attributes.set('marker-end', 'url(#dimensionTo)')
@@ -23,35 +23,37 @@ function drawDimension(from, to, so, self) {
   return dimension
 }
 
-function drawLeader(self, from, to, id) {
-  self.paths[id] = new self.Path().move(from).line(to).attr('class', 'mark dotted')
+function drawLeader({ paths, Path }, from, to, id) {
+  paths[id] = new Path().move(from).line(to).attr('class', 'mark dotted')
 }
 
-function hleader(so, type, self, id) {
+function hleader(so, type, props, id) {
+  const { Point } = props
   let point
   if (typeof so.y === 'undefined' || so[type].y === so.y) {
     point = so[type]
   } else {
-    point = new self.Point(so[type].x, so.y)
-    drawLeader(self, so[type], point, id)
+    point = new Point(so[type].x, so.y)
+    drawLeader(props, so[type], point, id)
   }
 
   return point
 }
 
-function vleader(so, type, self, id) {
+function vleader(so, type, props, id) {
+  const { Point } = props
   let point
   if (typeof so.x === 'undefined' || so[type].x === so.x) {
     point = so[type]
   } else {
-    point = new self.Point(so.x, so[type].y)
-    drawLeader(self, so[type], point, id)
+    point = new Point(so.x, so[type].y)
+    drawLeader(props, so[type], point, id)
   }
 
   return point
 }
 
-function lleader(so, type, self, id) {
+function lleader(so, type, props, id) {
   let point, rot, other
   if (type === 'from') {
     rot = 1
@@ -64,7 +66,7 @@ function lleader(so, type, self, id) {
     point = so[type]
   } else {
     point = so[type].shiftTowards(so[other], so.d).rotate(90 * rot, so[type])
-    drawLeader(self, so[type], point, id)
+    drawLeader(props, so[type], point, id)
   }
 
   return point
@@ -80,69 +82,75 @@ export const plugin = {
   },
   macros: {
     // horizontal
-    hd: function (so) {
-      const id = so.id || this.getId(prefix)
-      this.paths[id] = drawDimension(
-        hleader(so, 'from', this, id + '_ls'),
-        hleader(so, 'to', this, id + '_le'),
+    hd: function (so, props) {
+      const { getId, paths } = props
+      const id = so.id || getId(prefix)
+      paths[id] = drawDimension(
+        hleader(so, 'from', props, id + '_ls'),
+        hleader(so, 'to', props, id + '_le'),
         so,
-        this
+        props
       )
     },
     // vertical
-    vd: function (so) {
-      const id = so.id || this.getId(prefix)
-      this.paths[id] = drawDimension(
-        vleader(so, 'from', this, id + '_ls'),
-        vleader(so, 'to', this, id + '_le'),
+    vd: function (so, props) {
+      const { getId, paths } = props
+      const id = so.id || getId(prefix)
+      paths[id] = drawDimension(
+        vleader(so, 'from', props, id + '_ls'),
+        vleader(so, 'to', props, id + '_le'),
         so,
-        this
+        props
       )
     },
     // linear
-    ld: function (so) {
-      const id = so.id || this.getId(prefix)
-      this.paths[id] = drawDimension(
-        lleader(so, 'from', this, id + '_ls'),
-        lleader(so, 'to', this, id + '_le'),
+    ld: function (so, props) {
+      const { getId, paths } = props
+      const id = so.id || getId(prefix)
+      paths[id] = drawDimension(
+        lleader(so, 'from', props, id + '_ls'),
+        lleader(so, 'to', props, id + '_le'),
         so,
-        this
+        props
       )
     },
     // path
-    pd: function (so) {
-      const id = so.id || this.getId(prefix)
-      if (typeof so.d === 'undefined') so.d = 10 * this.context.settings.scale
+    pd: function (so, props) {
+      const { getId, paths, scale, units } = props
+      const id = so.id || getId(prefix)
+      if (typeof so.d === 'undefined') so.d = 10 * scale
       const dimension = so.path
         .offset(so.d)
         .attr('class', 'mark')
-        .attr('data-text', so.text || this.units(so.path.length()))
+        .attr('data-text', so.text || units(so.path.length()))
         .attr('data-text-class', 'fill-mark center')
       if (!so.noStartMarker) dimension.attributes.set('marker-start', 'url(#dimensionFrom)')
       if (!so.noEndMarker) dimension.attributes.set('marker-end', 'url(#dimensionTo)')
-      this.paths[id] = dimension
-      drawLeader(this, so.path.start(), dimension.start(), id + '_ls')
-      drawLeader(this, so.path.end(), dimension.end(), id + '_le')
+      paths[id] = dimension
+      drawLeader(props, so.path.start(), dimension.start(), id + '_ls')
+      drawLeader(props, so.path.end(), dimension.end(), id + '_le')
     },
     // Remove dimension
-    rmd: function (so) {
-      if (this.paths[so.id]) delete this.paths[so.id]
-      if (this.paths[`${so.id}_ls`]) delete this.paths[`${so.id}_ls`]
-      if (this.paths[`${so.id}_le`]) delete this.paths[`${so.id}_le`]
+    rmd: function (so, props) {
+      const { paths } = props
+      if (paths[so.id]) delete this.paths[so.id]
+      if (paths[`${so.id}_ls`]) delete paths[`${so.id}_ls`]
+      if (paths[`${so.id}_le`]) delete paths[`${so.id}_le`]
       if (Array.isArray(so.ids)) {
         for (const id of so.ids) {
-          if (this.paths[id]) delete this.paths[id]
-          if (this.paths[`${id}_ls`]) delete this.paths[`${id}_ls`]
-          if (this.paths[`${id}_le`]) delete this.paths[`${id}_le`]
+          if (paths[id]) delete paths[id]
+          if (paths[`${id}_ls`]) delete paths[`${id}_ls`]
+          if (paths[`${id}_le`]) delete paths[`${id}_le`]
         }
       }
     },
     // Remove all dimensions (with standard prefix)
-    rmad: function () {
-      for (let type of ['paths', 'points']) {
-        for (let id in this[type]) {
-          if (id.slice(0, prefix.length) === prefix) delete this[type][id]
-        }
+    rmad: function ({ prefix = '' }, { paths, points }) {
+      for (let id in points) {
+        if (id.slice(0, prefix.length) === prefix) delete points[id]
+      }
+      for (let id in paths) {
+        if (id.slice(0, prefix.length) === prefix) delete paths[id]
       }
     },
   },
