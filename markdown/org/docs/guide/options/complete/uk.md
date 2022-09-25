@@ -1,7 +1,7 @@
 ---
-title: Detail
+title: Подробиці
 ---
 
-Turn this setting off to only draft a basic outline of the pattern.
+Ви можете вимкнути це налаштування, аби бачити лише основний контур викрійки.
 
-This is particularly useful for people looking to use a laser cutter or other automated tools, and only want the cutlines of the pattern.
+Це може бути особливо корисною порадою для людей, що планують використовувати лазерний різак чи інше автоматизоване обладнання, та хочуть мати лише основний контур викрійки.
