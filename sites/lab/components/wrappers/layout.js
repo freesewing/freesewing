@@ -3,8 +3,7 @@ import { useRouter } from 'next/router'
 import Header from 'site/components/header'
 import Footer from 'site/components/footer'
 
-const LayoutWrapper = ({ app, title=false, children=[] }) => {
-
+const LayoutWrapper = ({ app, children = [] }) => {
   const startNavigation = () => {
     app.startLoading()
     // Force close of menu on mobile if it is open
@@ -16,12 +15,14 @@ const LayoutWrapper = ({ app, title=false, children=[] }) => {
   router.events?.on('routeChangeComplete', app.stopLoading)
 
   return (
-    <div className={`
+    <div
+      className={`
     flex flex-col justify-between
     min-h-screen
     bg-base-100
-    `}>
-      <Header app={app}/>
+    `}
+    >
+      <Header app={app} />
       <main className="grow">{children}</main>
       <Footer app={app} />
     </div>

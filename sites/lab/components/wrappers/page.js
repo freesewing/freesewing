@@ -5,17 +5,16 @@ import { useRouter } from 'next/router'
 import LayoutWrapper from 'site/components/wrappers/layout'
 
 /* This component should wrap all page content */
-const PageWrapper= ({
-  title="FIXME: No title set",
-  app=false,
-  layout=false,
-  children=[]
+const PageWrapper = ({
+  title = 'FIXME: No title set',
+  app = false,
+  layout = false,
+  children = [],
 }) => {
-
   const swipeHandlers = useSwipeable({
-    onSwipedLeft: evt => (app.primaryMenu) ? app.setPrimaryMenu(false) : null,
-    onSwipedRight: evt => (app.primaryMenu) ? null : app.setPrimaryMenu(true),
-    trackMouse: true
+    onSwipedLeft: () => (app.primaryMenu ? app.setPrimaryMenu(false) : null),
+    onSwipedRight: () => (app.primaryMenu ? null : app.setPrimaryMenu(true)),
+    trackMouse: true,
   })
 
   const router = useRouter()
@@ -38,14 +37,10 @@ const PageWrapper= ({
       key={app.theme} // Thiis forces the data-theme update
     >
       <LayoutWrapper {...childProps}>
-        {Layout
-          ? <Layout {...childProps}>{children}</Layout>
-          : children
-        }
+        {Layout ? <Layout {...childProps}>{children}</Layout> : children}
       </LayoutWrapper>
     </div>
   )
 }
 
 export default PageWrapper
-
