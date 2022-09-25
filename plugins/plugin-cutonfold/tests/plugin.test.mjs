@@ -8,19 +8,22 @@ describe('Cutonfold Plugin Tests', () => {
   it('Should run the default cutonfold macro', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 220)
         macro('cutonfold', {
           from: points.from,
           to: points.to,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts.test.paths.cutonfold
+    const c = pattern.parts[0].test.paths.cutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')
@@ -43,7 +46,7 @@ describe('Cutonfold Plugin Tests', () => {
   it('Should run the cutonfold/grainline macro', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 220)
         macro('cutonfold', {
@@ -51,19 +54,22 @@ describe('Cutonfold Plugin Tests', () => {
           to: points.to,
           grainline: true,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts.test.paths.cutonfold
+    const c = pattern.parts[0].test.paths.cutonfold
     expect(c.attributes.get('data-text')).to.equal('cutOnFoldAndGrainline')
   })
 
   it('Should run the cutonfold macro with configurable offset', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 220)
         macro('cutonfold', {
@@ -71,12 +77,15 @@ describe('Cutonfold Plugin Tests', () => {
           to: points.to,
           offset: 30,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts.test.paths.cutonfold
+    let c = pattern.parts[0].test.paths.cutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')
@@ -99,7 +108,7 @@ describe('Cutonfold Plugin Tests', () => {
   it('Should run the cutonfold macro with configurable margin', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 220)
         macro('cutonfold', {
@@ -107,12 +116,15 @@ describe('Cutonfold Plugin Tests', () => {
           to: points.to,
           margin: 20,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
     const Test = new Design({ plugins: [plugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts.test.paths.cutonfold
+    let c = pattern.parts[0].test.paths.cutonfold
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')

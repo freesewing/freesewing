@@ -18,14 +18,13 @@ export const plugin = {
     },
   },
   macros: {
-    cutonfold: function (so) {
-      const { points, complete, setCutOnFold, setGrain } = this.shorthand()
+    cutonfold: function (so, { points, paths, Path, complete, setCutOnFold, setGrain, scale }) {
       if (so === false) {
-        delete this.points.cutonfoldFrom
-        delete this.points.cutonfoldTo
-        delete this.points.cutonfoldVia1
-        delete this.points.cutonfoldVia2
-        delete this.paths.cutonfold
+        delete points.cutonfoldFrom
+        delete points.cutonfoldTo
+        delete points.cutonfoldVia1
+        delete points.cutonfoldVia2
+        delete paths.cutonfold
         // setCutOnFold relies on plugin-cutlist
         if (typeof setCutOnFold === 'function') {
           setCutOnFold(false) // Restore default
@@ -46,13 +45,13 @@ export const plugin = {
         points['cutonfoldFrom' + so.prefix] = so.from.shiftFractionTowards(so.to, so.margin / 100)
         points['cutonfoldTo' + so.prefix] = so.to.shiftFractionTowards(so.from, so.margin / 100)
         points['cutonfoldVia1' + so.prefix] = points['cutonfoldFrom' + so.prefix]
-          .shiftTowards(so.from, so.offset * this.context.settings.scale)
+          .shiftTowards(so.from, so.offset * scale)
           .rotate(-90, points['cutonfoldFrom' + so.prefix])
         points['cutonfoldVia2' + so.prefix] = points['cutonfoldTo' + so.prefix]
-          .shiftTowards(so.to, so.offset * this.context.settings.scale)
+          .shiftTowards(so.to, so.offset * scale)
           .rotate(90, points['cutonfoldTo' + so.prefix])
         const text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
-        this.paths['cutonfold' + so.prefix] = new this.Path()
+        paths['cutonfold' + so.prefix] = new Path()
           .move(points['cutonfoldFrom' + so.prefix])
           .line(points['cutonfoldVia1' + so.prefix])
           .line(points['cutonfoldVia2' + so.prefix])
