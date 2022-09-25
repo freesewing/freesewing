@@ -27,13 +27,12 @@ Stack.prototype.addPart = function (part) {
 }
 
 /* Returns a stack object suitbale for renderprops */
-Stack.prototype.asProps = function (part) {
+Stack.prototype.asProps = function () {
   return {
     ...this,
-    parts: [...this.parts]
+    parts: [...this.parts],
   }
 }
-
 
 /* Returns a list of parts in this stack */
 Stack.prototype.getPartList = function () {
@@ -126,7 +125,7 @@ Stack.prototype.attr = function (name, value, overwrite = false) {
 /** Generates the transform for a stack */
 Stack.prototype.generateTransform = function (transforms) {
   const { move, rotate, flipX, flipY } = transforms
-  const generated = utils.generateStackTransform( move?.x, move?.y, rotate, flipX, flipY, this)
+  const generated = utils.generateStackTransform(move?.x, move?.y, rotate, flipX, flipY, this)
 
   for (var t in generated) {
     this.attr(t, generated[t], true)

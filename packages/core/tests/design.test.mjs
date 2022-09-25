@@ -35,4 +35,61 @@ describe('Design', () => {
     expect(o.two.min).to.equal(5)
     expect(o.two.max).to.equal(15)
   })
+
+  it(`Design constructor should generate configuration`, () => {
+    const partA = {
+      name: 'test.partA',
+      measurements: ['head', 'knee'],
+      optionalMeasurements: ['chest', 'waist'],
+      options: {
+        optA: { pct: 40, min: 20, max: 80 },
+      },
+      draft: ({ part }) => part,
+    }
+    const partB = {
+      name: 'test.partB',
+      measurements: ['hpsToWaist', 'shoulderToWrist'],
+      optionalMeasurements: ['neck'],
+      after: partA,
+      plugins: [
+        {
+          name: 'testPlugin',
+          hooks: {
+            preRender: () => {},
+          },
+        },
+      ],
+      options: {
+        optB: { deg: 40, min: 20, max: 80 },
+      },
+      draft: ({ part }) => part,
+    }
+    const partC = {
+      name: 'test.partC',
+      measurements: ['seat', 'ankle'],
+      optionalMeasurements: ['knee', 'hpsToWaist'],
+      from: partB,
+      options: {
+        optC: { pct: 20, min: 10, max: 30 },
+      },
+      draft: ({ part }) => part,
+    }
+    const design = new Design({
+      data: {
+        name: 'test',
+        version: '1.2.3',
+      },
+      parts: [partC],
+    })
+    expect(design.designConfig.data.name).to.equal('test')
+    expect(design.designConfig.data.version).to.equal('1.2.3')
+    expect(design.patternConfig.measurements.length).to.equal(6)
+    for (const m of ['seat', 'ankle', 'hpsToWaist', 'shoulderToWrist', 'head', 'knee']) {
+      expect(design.patternConfig.measurements.includes(m)).to.equal(true)
+    }
+    for (const m of ['neck', 'chest', 'waist']) {
+      expect(design.patternConfig.optionalMeasurements.includes(m)).to.equal(true)
+    }
+    expect(design.patternConfig.plugins.testPlugin.name).to.equal('testPlugin')
+  })
 })

@@ -137,9 +137,15 @@ Pattern.prototype.draft = function () {
               )
             } else this.parts[set][partName] = result
           } catch (err) {
-            this.setStores[set].log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
+            this.setStores[set].log.error([
+              `Unable to draft part \`${partName}\` (set ${set})`,
+              err,
+            ])
           }
-        } else this.setStores[set].log.error(`Unable to draft pattern part __${partName}__. Part.draft() is not callable`)
+        } else
+          this.setStores[set].log.error(
+            `Unable to draft pattern part __${partName}__. Part.draft() is not callable`
+          )
         this.parts[set][partName].hidden =
           this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
       } else {
@@ -191,7 +197,7 @@ Pattern.prototype.getRenderProps = function () {
       info: store.logs.info,
       error: store.logs.error,
       warning: store.logs.warning,
-    }))
+    })),
   }
   props.parts = []
   for (const set of this.parts) {
@@ -316,13 +322,12 @@ Pattern.prototype.render = function () {
  */
 Pattern.prototype.use = function (plugin, data) {
   const name = getPluginName(plugin)
-  if (!this.plugins?.[name]) return (plugin.plugin && plugin.condition)
+  if (!this.plugins?.[name])
+    return plugin.plugin && plugin.condition
       ? this.__useIf(plugin, data) // Conditional plugin
       : this.__loadPlugin(plugin, data) // Regular plugin
 
-  this.store.log.info(
-    `Plugin \`${name}\` was requested, but it's already loaded. Skipping.`
-  )
+  this.store.log.info(`Plugin \`${name}\` was requested, but it's already loaded. Skipping.`)
 
   return this
 }
@@ -359,7 +364,6 @@ Pattern.prototype.__addDependency = function (name, part, dep) {
  * @return {object} config - The mutated global config
  */
 Pattern.prototype.__addPartConfig = function (part) {
-
   if (this.__resolvedParts.includes(part.name)) return this
 
   // Add parts, using set to keep them unique in the array
@@ -379,7 +383,7 @@ Pattern.prototype.__addPartConfig = function (part) {
  * @param {array} list - The list of resolved measurements
  * @return {Pattern} this - The Pattern instance
  */
-Pattern.prototype.__addPartMeasurements = function (part, list=false) {
+Pattern.prototype.__addPartMeasurements = function (part, list = false) {
   if (!this.config.measurements) this.config.measurements = []
   if (!list) list = this.config.measurements
   if (part.measurements) {
@@ -411,7 +415,7 @@ Pattern.prototype.__addPartMeasurements = function (part, list=false) {
  * @param {array} list - The list of resolved optional measurements
  * @return {Pattern} this - The Pattern instance
  */
-Pattern.prototype.__addPartOptionalMeasurements = function (part, list=false) {
+Pattern.prototype.__addPartOptionalMeasurements = function (part, list = false) {
   if (!this.config.optionalMeasurements) this.config.optionalMeasurements = []
   if (!list) list = this.config.optionalMeasurements
   if (part.optionalMeasurements) {
@@ -454,7 +458,9 @@ Pattern.prototype.__addPartOptions = function (part) {
         // Keep design parts immutable in the pattern or risk subtle bugs
         this.config.options[optionName] = Object.freeze(part.options[optionName])
         this.store.log.debug(`🔵  __${optionName}__ option loaded from \`${part.name}\``)
-      } else if (this.__mutated.optionDistance[optionName] > this.__mutated.partDistance[part.name]) {
+      } else if (
+        this.__mutated.optionDistance[optionName] > this.__mutated.partDistance[part.name]
+      ) {
         this.config.options[optionName] = part.options[optionName]
         this.store.log.debug(`🟣  __${optionName}__ option overwritten by \`${part.name}\``)
       }
@@ -474,7 +480,7 @@ function getPluginName(plugin) {
   if (Array.isArray(plugin)) {
     if (plugin[0].name) return plugin[0].name
     if (plugin[0].plugin.name) return plugin[0].plugin.name
-  }  else {
+  } else {
     if (plugin.name) return plugin.name
     if (plugin.plugin.name) return plugin.plugin.name
   }
@@ -504,28 +510,30 @@ Pattern.prototype.__addPartPlugins = function (part) {
       const pluginObj = { ...plugin[0], data: plugin[1] }
       plugin = pluginObj
     }
-    if (plugin.plugin) this.store.log.debug(`🔌  Resolved __${name}__ conditional plugin in \`${part.name}\``)
+    if (plugin.plugin)
+      this.store.log.debug(`🔌  Resolved __${name}__ conditional plugin in \`${part.name}\``)
     else this.store.log.debug(`🔌  Resolved __${name}__ plugin in \`${part.name}\``)
     // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
     if (plugin.plugin && plugin.condition) {
       if (!plugins[name]) {
         plugins[name] = plugin
         this.store.log.info(`Plugin \`${name}\` was conditionally added.`)
-      }
-      else if (plugins[name]?.condition) {
-        plugins[name+'_'] = plugin
-        this.store.log.info(`Plugin \`${name}\` was conditionally added again. Renaming to ${name}_.`)
-      }
-      else this.store.log.info(
-        `Plugin \`${name}\` was requested conditionally, but is already added explicitly. Not loading.`
-      )
+      } else if (plugins[name]?.condition) {
+        plugins[name + '_'] = plugin
+        this.store.log.info(
+          `Plugin \`${name}\` was conditionally added again. Renaming to ${name}_.`
+        )
+      } else
+        this.store.log.info(
+          `Plugin \`${name}\` was requested conditionally, but is already added explicitly. Not loading.`
+        )
     } else {
       plugins[name] = plugin
       this.store.log.info(`Plugin \`${name}\` was added.`)
     }
   }
 
-  this.config.plugins = {...plugins }
+  this.config.plugins = { ...plugins }
 
   return this
 }
@@ -539,13 +547,10 @@ Pattern.prototype.__addPartPlugins = function (part) {
 Pattern.prototype.__createSetStore = function () {
   const store = new Store()
   store.set('data', this.store.data)
-  for (const method of [...this.__storeMethods]) {
-    store.set(method[0], (...args) => method[1](store, ...args))
-  }
+  store.extend([...this.__storeMethods])
 
   return store
 }
-
 
 /**
  * Merges (sets of) settings with the default settings
@@ -803,7 +808,7 @@ Pattern.prototype.__loadOptionDefaults = function () {
           else if (typeof option.dflt !== 'undefined') this.settings[i].options[name] = option.dflt
           else {
             let err = 'Unknown option type: ' + JSON.stringify(option)
-            this.setStores[i].log.error(err)
+            this.store.log.error(err)
             throw new Error(err)
           }
         } else this.settings[i].options[name] = option
@@ -877,10 +882,8 @@ Pattern.prototype.__loadPluginMacros = function (plugin) {
  */
 Pattern.prototype.__loadPlugins = function () {
   if (!this.config.plugins) return this
-  for (const plugin in this.config.plugins) this.use(
-    this.config.plugins[plugin],
-    this.config.plugins[plugin]?.data,
-  )
+  for (const plugin in this.config.plugins)
+    this.use(this.config.plugins[plugin], this.config.plugins[plugin]?.data)
 
   return this
 }
@@ -895,8 +898,7 @@ Pattern.prototype.__loadPlugins = function () {
 Pattern.prototype.__loadPluginStoreMethods = function (plugin) {
   if (Array.isArray(plugin.store)) {
     for (const method of plugin.store) this.__storeMethods.add(method)
-  }
-  else this.store.log.warning(`Plugin store methods should be an Array`)
+  } else this.store.log.warning(`Plugin store methods should be an Array`)
 
   return this
 }
@@ -1209,7 +1211,8 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
   }
   distance++
   for (const part of this.designConfig.parts) {
-    if (typeof this.__mutated.partDistance[part.name] === 'undefined') this.__mutated.partDistance[part.name] = distance
+    if (typeof this.__mutated.partDistance[part.name] === 'undefined')
+      this.__mutated.partDistance[part.name] = distance
   }
   for (const [name, part] of Object.entries(this.__designParts)) {
     // Hide when hideAll is set
@@ -1218,8 +1221,8 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
     if (part.from) {
       if (part.hideDependencies || part.hideAll) {
         // Don't mutate the part, keep this info in the pattern object
-        this.__mutated.partHide[from.name] = true
-        this.__mutated.partHideAll[from.name] = true
+        this.__mutated.partHide[part.from.name] = true
+        this.__mutated.partHideAll[part.from.name] = true
         this.__mutated.partDistance = distance
       }
       this.__designParts[part.from.name] = part.from
@@ -1409,9 +1412,6 @@ Pattern.prototype.__wants = function (partName, set = 0) {
 
   return true
 }
-
-
-
 
 //////////////////////////////////////////////
 //         STATIC  PRIVATE FUNCTIONS        //

@@ -29,8 +29,9 @@ export function Design(designConfig) {
   pattern.prototype = Object.create(Pattern.prototype)
   pattern.prototype.constructor = pattern
 
-  // Make designConfig available without need to instantiate pattern
+  // Make design & pattern config available without instantiating a pattern
   pattern.designConfig = designConfig
+  pattern.patternConfig = new pattern().getConfig()
 
   return pattern
 }
