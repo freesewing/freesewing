@@ -1,9 +1,9 @@
 ---
-title: Made-to-measure sewing patterns
+title: Швейні викрійки на базі замірів
 order: 200
 ---
 
-All of our sewing patterns are **made to measure**.
+Всі наші швейні викрійки **створюються на базі замірів**.
 
 We don’t scale or grade patterns. Instead, we draft the pattern to your measurements. That happens in real-time, in your browser.
 
