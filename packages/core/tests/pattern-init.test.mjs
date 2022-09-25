@@ -5,7 +5,6 @@ const expect = chai.expect
 
 describe('Pattern', () => {
   describe('Pattern.constructor()', () => {
-
     it('Pattern constructor should return pattern object', () => {
       const Pattern = new Design()
       const pattern = new Pattern()
@@ -521,7 +520,7 @@ describe('Pattern', () => {
       }
       const part = {
         name: 'test.part',
-        plugins: [ plugin1, plugin2 ],
+        plugins: [plugin1, plugin2],
         draft: (part) => part,
       }
       const design = new Design({ parts: [part] })
@@ -543,10 +542,10 @@ describe('Pattern', () => {
       const condition = () => true
       const part = {
         name: 'test.part',
-        plugins: [ { plugin, condition } ],
+        plugins: [{ plugin, condition }],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [ part ] })
+      const design = new Design({ parts: [part] })
       const pattern = new design()
       pattern.draft()
       expect(pattern.hooks.preRender.length).to.equal(1)
@@ -565,10 +564,10 @@ describe('Pattern', () => {
       const condition = () => false
       const part = {
         name: 'test.part',
-        plugins: [ { plugin, condition } ],
+        plugins: [{ plugin, condition }],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [ part ] })
+      const design = new Design({ parts: [part] })
       const pattern = new design()
       expect(pattern.hooks.preRender.length).to.equal(0)
     })
@@ -602,7 +601,7 @@ describe('Pattern', () => {
         ],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [ part ] })
+      const design = new Design({ parts: [part] })
       const pattern = new design()
       pattern.draft()
       expect(pattern.hooks.preRender.length).to.equal(1)
@@ -631,22 +630,16 @@ describe('Pattern', () => {
       const condition2 = () => false
       const part1 = {
         name: 'part1',
-        plugins: [
-          [plugin1, { some: 'data'} ],
-          { plugin: plugin2, condition: condition1 }
-        ],
-        draft: ({ part }) => part
+        plugins: [[plugin1, { some: 'data' }], { plugin: plugin2, condition: condition1 }],
+        draft: ({ part }) => part,
       }
       const part2 = {
         name: 'part2',
-        plugins: [
-          plugin2,
-          { plugin: plugin2, condition: condition2 },
-        ],
-        draft: ({ part }) => part
+        plugins: [plugin2, { plugin: plugin2, condition: condition2 }],
+        draft: ({ part }) => part,
       }
       const design = new Design({
-        parts: [ part1, part2 ]
+        parts: [part1, part2],
       })
       const pattern = new design()
       pattern.__init()
@@ -712,15 +705,13 @@ describe('Pattern', () => {
       const part = {
         name: 'test',
         draft: ({ Point, paths, Path, part, context }) => {
-          paths.test = new Path()
-            .move(new Point(0,0))
-            .line(new Point(100,0))
+          paths.test = new Path().move(new Point(0, 0)).line(new Point(100, 0))
           partContext = context
 
           return part
-        }
+        },
       }
-      const Pattern = new Design({ parts: [part], data: { name: 'test', version: '1' }})
+      const Pattern = new Design({ parts: [part], data: { name: 'test', version: '1' } })
       const pattern = new Pattern()
       pattern.draft()
       expect(typeof partContext).to.equal('object')
@@ -806,12 +797,16 @@ describe('Pattern', () => {
         options: { unknown: { foo: 30 } },
         draft: () => {},
       }
-      const Pattern = new Design({
-        data: { name: 'test', version: '1.2.3' },
-        parts: [part],
-      })
-      const pattern = new Pattern()
-      expect(() => pattern.__init()).to.throw()
+      let error
+      try {
+        new Design({
+          data: { name: 'test', version: '1.2.3' },
+          parts: [part],
+        })
+      } catch (err) {
+        error = err
+      }
+      expect('' + error).to.contain('Unknown option type')
     })
   })
 })

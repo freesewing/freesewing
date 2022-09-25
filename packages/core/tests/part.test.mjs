@@ -45,7 +45,7 @@ describe('Part', () => {
     const part = {
       name: 'test',
       draft: ({ part, Point, points, macro }) => {
-        points.example = new Point(12,34)
+        points.example = new Point(12, 34)
         macro('test', { x: 123, y: 456 })
         return part
       },
@@ -176,7 +176,7 @@ describe('Part', () => {
     }
     const design = new Design({ parts: [part] })
     // Let's also cover the branch where complete is false
-    const pattern = new design({ complete: false} )
+    const pattern = new design({ complete: false })
     pattern.draft()
     expect(pattern.setStores[0].logs.warning.length).to.equal(1)
     expect(pattern.setStores[0].logs.warning[0]).to.equal(
@@ -208,7 +208,7 @@ describe('Part', () => {
       name: 'test',
       draft: ({ Point, snippets, Snippet, part }) => {
         method = Snippet
-        snippets.test = new Snippet('notch', new Point(19,80))
+        snippets.test = new Snippet('notch', new Point(19, 80))
         return part
       },
     }
@@ -268,12 +268,10 @@ describe('Part', () => {
     const part = {
       name: 'test',
       options: {
-        test: { pct: 10, min: 5, max: 25, snap: 5, ...pctBasedOn('head') }
+        test: { pct: 10, min: 5, max: 25, snap: 5, ...pctBasedOn('head') },
       },
       draft: ({ paths, Path, Point, absoluteOptions, part }) => {
-        paths.test = new Path()
-          .move(new Point(0,0))
-          .line(new Point(absoluteOptions.test, 0))
+        paths.test = new Path().move(new Point(0, 0)).line(new Point(absoluteOptions.test, 0))
         return part
       },
     }
@@ -287,40 +285,46 @@ describe('Part', () => {
     const part = {
       name: 'test',
       draft: ({ options, part }) => {
-        if (options.test || true) return part
+        if (options.test) return part
+        else return part
       },
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
     expect(pattern.setStores[0].logs.warning.length).to.equal(1)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal('Tried to access `options.test` but it is `undefined`')
+    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+      'Tried to access `options.test` but it is `undefined`'
+    )
   })
 
   it('Accessing unknown absoluteOption should log a warning', () => {
     const part = {
       name: 'test',
       draft: ({ absoluteOptions, part }) => {
-        if (absoluteOptions.test || true) return part
+        if (absoluteOptions.test) return part
+        else return part
       },
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
     expect(pattern.setStores[0].logs.warning.length).to.equal(1)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal('Tried to access `absoluteOptions.test` but it is `undefined`')
+    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+      'Tried to access `absoluteOptions.test` but it is `undefined`'
+    )
   })
 
   it('Injecting a part should contain all data', () => {
     const from = {
       name: 'from',
       draft: ({ points, Point, paths, Path, snippets, Snippet, part }) => {
-        points.from = new Point(0,0)
-        points.to = new Point(19,80)
-        points.start = new Point(100,100)
-        points.cp1 = new Point(100,200)
-        points.cp2 = new Point(200,100)
-        points.end = new Point(200,200)
+        points.from = new Point(0, 0)
+        points.to = new Point(19, 80)
+        points.start = new Point(100, 100)
+        points.cp1 = new Point(100, 200)
+        points.cp2 = new Point(200, 100)
+        points.end = new Point(200, 200)
         paths.line = new Path().move(points.from).line(points.to)
         paths.curve = new Path().move(points.start).curve(points.cp1, points.cp2, points.end)
         snippets.test = new Snippet('notch', points.end)
@@ -330,7 +334,7 @@ describe('Part', () => {
     const to = {
       from,
       name: 'to',
-      draft: ({ part }) => part
+      draft: ({ part }) => part,
     }
     const design = new Design({ parts: [from, to] })
     const pattern = new design()

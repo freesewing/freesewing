@@ -4,7 +4,6 @@ import { Design } from '../src/index.mjs'
 const expect = chai.expect
 
 describe('Stacks', () => {
-
   describe('Pattern.__init()', () => {
     const partA = {
       name: 'test.partA',
@@ -177,7 +176,7 @@ describe('Stacks', () => {
   it('Should get the anchor for the stack', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, paths, Path, part }) => {
+      draft: ({ points, Point, part }) => {
         points.anchor = new Point(2, 2)
 
         return part
@@ -195,7 +194,7 @@ describe('Stacks', () => {
   it('Should get the gridAnchor for the stack', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, paths, Path, part }) => {
+      draft: ({ points, Point, part }) => {
         points.gridAnchor = new Point(3, 3)
 
         return part
@@ -213,7 +212,7 @@ describe('Stacks', () => {
   it('Should get the default aAnchor for the stack', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, paths, Path, part }) => {
+      draft: ({ points, Point, part }) => {
         points.test = new Point(3, 3)
 
         return part
