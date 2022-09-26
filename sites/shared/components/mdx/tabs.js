@@ -19,7 +19,9 @@ export const Tabs = ({ tabs = '', active = 0, children }) => {
         {tablist.map((title, tabId) => (
           <button
             key={tabId}
-            className={`text-xl font-bold capitalize tab tab-bordered grow ${activeTab === tabId ? 'tab-active' : ''}`}
+            className={`text-xl font-bold capitalize tab tab-bordered ${
+              activeTab === tabId ? 'tab-active' : ''
+            }`}
             onClick={() => setActiveTab(tabId)}
           >
             {title}
