@@ -145,12 +145,15 @@ export const plugin = {
       }
     },
     // Remove all dimensions (with standard prefix)
-    rmad: function ({ prefix = '' }, { paths, points }) {
-      for (let id in points) {
-        if (id.slice(0, prefix.length) === prefix) delete points[id]
+    rmad: function (params, props) {
+      const toRemove = {
+        points: props.point,
+        paths: props.paths,
       }
-      for (let id in paths) {
-        if (id.slice(0, prefix.length) === prefix) delete paths[id]
+      for (let type in toRemove) {
+        for (let id in props[type]) {
+          if (id.slice(0, prefix.length) === prefix) delete props[type][id]
+        }
       }
     },
   },
