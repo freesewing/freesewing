@@ -34,8 +34,6 @@ export const back = {
 
   // Design pattern here
 
-log.info('start back')
-
   // Create points
   points.backWaistMid = new Point(measurements.seat / 4, 0)
   points.backWaistBandLeft = new Point(

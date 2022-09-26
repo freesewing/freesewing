@@ -10,6 +10,8 @@ export const elastic = {
   options,
   Point,
   points,
+  Path,
+  paths,
   store,
   utils,
   units,
@@ -37,14 +39,13 @@ export const elastic = {
     .attr('data-text', ':')
     .attr('data-text', units(waistBandLength * store.get('elasticScale') + 2 * sa))
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.elasticInfo,
-      to: points.elasticInfo,
-      y: points.elasticInfo.y + sa + 15,
-    })
-  }
+  // Draw a box around the text, so the part shows up correctly.
+  paths.box = new Path()
+    .move(new Point(-10,-10))
+    .line(new Point(-10,15))
+    .line(new Point(200,15))
+    .line(new Point(200,-10))
+    .close()
 
   return part
   },

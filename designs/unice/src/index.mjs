@@ -12,4 +12,4 @@ const Unice = new Design({
 })
 
 // Named exports
-export {front, back, gusset, elastic, Unice} // export { back, front, gusset, Unice }
+export {front, back, gusset, elastic, Unice}

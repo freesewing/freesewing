@@ -1,4 +1,5 @@
 import { pctBasedOn } from '@freesewing/core'
+import {pluginBundle } from '@freesewing/plugin-bundle'
 
 export const front = {
   name: 'unice.front',
@@ -18,6 +19,7 @@ export const front = {
     useCrossSeam: { bool: true, menu: 'fit' },
     adjustStretch: {bool: true, menu: 'fit' }, // to not stretch fabric to the limits    
   },
+  plugins: [pluginBundle, ],
   draft: ({
     utils,
     store,
