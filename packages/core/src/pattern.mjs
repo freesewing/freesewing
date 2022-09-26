@@ -656,11 +656,9 @@ Pattern.prototype.__init = function () {
   this.__runHooks('preInit')
   // Say hello
   this.store.log.info(
-    `New \`${this.store.get('data.name', 'No Name')}:` +
-      `${this.store.get(
-        'data.version',
-        'No version'
-      )}\` pattern using \`@freesewing/core:${version}\``
+    `New \`${this.designConfig?.data?.name || 'No Name'}:` +
+      `${this.designConfig?.data?.version || 'No version'}\` ` +
+      `pattern using \`@freesewing/core:${version}\``
   )
 
   /*
