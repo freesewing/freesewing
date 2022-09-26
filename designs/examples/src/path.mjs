@@ -17,6 +17,21 @@ export const path__curve = {
   },
 }
 
+export const path_addclass = {
+  name: 'examples.path_addclass',
+  draft: ({ Point, points, Path, paths, part }) => {
+    points.from = new Point(5, 10)
+    points.to = new Point(95, 10)
+
+    paths.line = new Path()
+      .move(points.from)
+      .line(points.to)
+      .addClass('note dashed')
+
+    return box(part, 100, 20)
+  },
+}
+
 export const path_attr = {
   name: 'examples.path_attr',
   draft: ({ Point, points, Path, paths, part }) => {

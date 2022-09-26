@@ -18,12 +18,15 @@ describe('Buttons Plugin Test', () => {
   it('Draws a button on an anchor point', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, snippets, Snippet }) => {
+      draft: ({ points, Point, snippets, Snippet, part }) => {
         points.anchor = new Point(10, 20)
         snippets.button = new Snippet('button', points.anchor)
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
     expect(svg).to.contain('<use x="10" y="20" xlink:href="#button"')
   })
@@ -31,12 +34,15 @@ describe('Buttons Plugin Test', () => {
   it('Draws a buttonhole centred on an anchor point', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, snippets, Snippet }) => {
+      draft: ({ points, Point, snippets, Snippet, part }) => {
         points.anchor = new Point(10, 20)
         snippets.button = new Snippet('buttonhole', points.anchor)
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
     expect(svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole"')
   })
@@ -44,12 +50,15 @@ describe('Buttons Plugin Test', () => {
   it('Draws a buttonhole starting on an anchor point', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, snippets, Snippet }) => {
+      draft: ({ points, Point, snippets, Snippet, part }) => {
         points.anchor = new Point(10, 20)
         snippets.button = new Snippet('buttonhole-start', points.anchor)
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
     expect(svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole-start"')
   })
@@ -57,12 +66,15 @@ describe('Buttons Plugin Test', () => {
   it('Draws a buttonhole ending on an anchor point', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, snippets, Snippet }) => {
+      draft: ({ points, Point, snippets, Snippet, part }) => {
         points.anchor = new Point(10, 20)
         snippets.button = new Snippet('buttonhole-end', points.anchor)
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
     expect(svg).to.contain('<use x="10" y="20" xlink:href="#buttonhole-end"')
   })
@@ -70,12 +82,15 @@ describe('Buttons Plugin Test', () => {
   it('Draws a snap-stud on an anchor point', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, snippets, Snippet }) => {
+      draft: ({ points, Point, snippets, Snippet, part }) => {
         points.anchor = new Point(10, 20)
         snippets.button = new Snippet('snap-stud', points.anchor)
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
     expect(svg).to.contain('<use x="10" y="20" xlink:href="#snap-stud"')
   })
@@ -83,12 +98,15 @@ describe('Buttons Plugin Test', () => {
   it('Draws a snap-socket on an anchor point', () => {
     const part = {
       name: 'test',
-      draft: ({ points, Point, snippets, Snippet }) => {
+      draft: ({ points, Point, snippets, Snippet, part }) => {
         points.anchor = new Point(10, 20)
         snippets.button = new Snippet('snap-socket', points.anchor)
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Pattern = new Design({ parts: [part], plugins: [plugin] })
+    const Pattern = new Design({ parts: [part] })
     const svg = new Pattern().draft().render()
     expect(svg).to.contain('<use x="10" y="20" xlink:href="#snap-socket"')
   })

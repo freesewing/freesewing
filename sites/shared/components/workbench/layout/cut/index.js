@@ -4,7 +4,7 @@ import Settings from './settings'
 const CutLayout = props => {
   const { t } = useTranslation(['workbench'])
 
-  let name = props.design.config.data.name
+  let name = props.design.designConfig.data.name
   name = name.replace('@freesewing/', '')
   return (
     <div>

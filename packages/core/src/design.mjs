@@ -9,17 +9,17 @@ import { __loadDesignDefaults } from './config.mjs'
  * Return a Pattern constructor (it's a super-constructor)
  *
  * @constructor
- * @param {object} config - The design configuration
+ * @param {object} designConfig - The design configuration
  * @return {function} pattern - The pattern constructor
  */
-export function Design(config) {
-  // Initialize config with defaults
-  config = { ...__loadDesignDefaults(), ...config }
+export function Design(designConfig) {
+  // Initialize designConfig with defaults
+  designConfig = { ...__loadDesignDefaults(), ...designConfig }
 
   // Create the pattern constructor
   const pattern = function (...sets) {
-    // Pass the design config
-    Pattern.call(this, config)
+    // Pass the designConfig
+    Pattern.call(this, designConfig)
 
     // Pass the pattern settings
     return this.__applySettings(sets)
@@ -29,8 +29,9 @@ export function Design(config) {
   pattern.prototype = Object.create(Pattern.prototype)
   pattern.prototype.constructor = pattern
 
-  // Make config available without need to instantiate pattern
-  pattern.config = config
+  // Make design & pattern config available without instantiating a pattern
+  pattern.designConfig = designConfig
+  pattern.patternConfig = new pattern().getConfig()
 
   return pattern
 }

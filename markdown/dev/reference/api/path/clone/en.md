@@ -1,12 +1,12 @@
 ---
-title: clone()
+title: Path.clone()
 ---
+
+The `Path.clone()` method returns a new `Path` object that is a deep copy of this path.
 
 ```js
 Path path.clone()
 ```
-
-Returns a new Path that is a deep copy of this path.
 
 <Example part="path_clone">
 Example of the Path.clone() method

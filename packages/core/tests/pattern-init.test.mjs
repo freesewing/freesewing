@@ -15,10 +15,10 @@ describe('Pattern', () => {
       const Pattern = new Design()
       const pattern = new Pattern()
       expect(Array.isArray(pattern.settings)).to.equal(true)
-      expect(Array.isArray(pattern.stores)).to.equal(true)
+      expect(Array.isArray(pattern.setStores)).to.equal(true)
+      expect(typeof pattern.store).to.equal('object')
       expect(typeof pattern.config).to.equal('object')
-      expect(typeof pattern.store).to.equal('undefined')
-      expect(Object.keys(pattern).length).to.equal(4)
+      expect(Object.keys(pattern).length).to.equal(5)
     })
 
     it('Pattern constructor should add non-enumerable properties', () => {
@@ -32,7 +32,7 @@ describe('Pattern', () => {
       expect(typeof pattern.Snippet).to.equal('function')
       expect(typeof pattern.Attributes).to.equal('function')
       expect(typeof pattern.macros).to.equal('object')
-      expect(typeof pattern.__parts).to.equal('object')
+      expect(typeof pattern.__designParts).to.equal('object')
       expect(typeof pattern.__inject).to.equal('object')
       expect(typeof pattern.__dependencies).to.equal('object')
       expect(typeof pattern.__resolvedDependencies).to.equal('object')
@@ -73,7 +73,7 @@ describe('Pattern', () => {
       options: {
         optA: { pct: 40, min: 20, max: 80 },
       },
-      draft: () => {},
+      draft: ({ part }) => part,
     }
     const partB = {
       name: 'test.partB',
@@ -91,7 +91,7 @@ describe('Pattern', () => {
       options: {
         optB: { deg: 40, min: 20, max: 80 },
       },
-      draft: () => {},
+      draft: ({ part }) => part,
     }
     const partC = {
       name: 'test.partC',
@@ -101,7 +101,7 @@ describe('Pattern', () => {
       options: {
         optC: { pct: 20, min: 10, max: 30 },
       },
-      draft: () => {},
+      draft: ({ part }) => part,
     }
 
     const Pattern = new Design({
@@ -112,7 +112,7 @@ describe('Pattern', () => {
       parts: [partC],
     })
     const pattern = new Pattern()
-    pattern.__init()
+    pattern.draft()
 
     it('Pattern.__init() should resolve all measurements', () => {
       expect(
@@ -146,16 +146,16 @@ describe('Pattern', () => {
     })
 
     it('Pattern.__init() should resolve parts', () => {
-      expect(pattern.config.parts.length).to.equal(3)
+      expect(pattern.designConfig.parts.length).to.equal(3)
     })
 
     it('Pattern.__init() should resolve plugins', () => {
-      expect(pattern.config.plugins.length).to.equal(1)
+      expect(Object.keys(pattern.config.plugins).length).to.equal(1)
     })
 
     it('Pattern.__init() should set config data in the store', () => {
-      expect(pattern.stores[0].get('data.name')).to.equal('test')
-      expect(pattern.stores[0].get('data.version')).to.equal('1.2.3')
+      expect(pattern.setStores[0].get('data.name')).to.equal('test')
+      expect(pattern.setStores[0].get('data.version')).to.equal('1.2.3')
     })
 
     it('Pattern.__init() should resolve dependencies', () => {
@@ -495,7 +495,7 @@ describe('Pattern', () => {
       }
       const design = new Design({ parts: [part] })
       const pattern = new design()
-      pattern.__init()
+      pattern.draft()
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
 
@@ -518,12 +518,17 @@ describe('Pattern', () => {
           },
         },
       }
-
-      const design = new Design({ plugins: [plugin1, plugin2] })
+      const part = {
+        name: 'test.part',
+        plugins: [plugin1, plugin2],
+        draft: (part) => part,
+      }
+      const design = new Design({ parts: [part] })
       const pattern = new design()
       pattern.__init()
       expect(pattern.hooks.preRender.length).to.equal(2)
     })
+
     it('Pattern.__init() should load conditional plugin', () => {
       const plugin = {
         name: 'example',
@@ -535,9 +540,14 @@ describe('Pattern', () => {
         },
       }
       const condition = () => true
-      const design = new Design({ plugins: [{ plugin, condition }] })
+      const part = {
+        name: 'test.part',
+        plugins: [{ plugin, condition }],
+        draft: (part) => part,
+      }
+      const design = new Design({ parts: [part] })
       const pattern = new design()
-      pattern.__init()
+      pattern.draft()
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
 
@@ -552,14 +562,19 @@ describe('Pattern', () => {
         },
       }
       const condition = () => false
-      const design = new Design({ plugins: { plugin, condition } })
+      const part = {
+        name: 'test.part',
+        plugins: [{ plugin, condition }],
+        draft: (part) => part,
+      }
+      const design = new Design({ parts: [part] })
       const pattern = new design()
       expect(pattern.hooks.preRender.length).to.equal(0)
     })
 
     it('Pattern.__init() should load multiple conditional plugins', () => {
-      const plugin = {
-        name: 'example',
+      const plugin1 = {
+        name: 'example1',
         version: 1,
         hooks: {
           preRender: function (svg) {
@@ -567,16 +582,28 @@ describe('Pattern', () => {
           },
         },
       }
+      const plugin2 = {
+        name: 'example2',
+        version: 2,
+        hooks: {
+          preRender: function (svg) {
+            svg.attributes.add('freesewing:plugin-example', 2)
+          },
+        },
+      }
       const condition1 = () => true
       const condition2 = () => false
-      const design = new Design({
+      const part = {
+        name: 'test.part',
         plugins: [
-          { plugin, condition: condition1 },
-          { plugin, condition: condition2 },
+          { plugin: plugin1, condition: condition1 },
+          { plugin: plugin2, condition: condition2 },
         ],
-      })
+        draft: (part) => part,
+      }
+      const design = new Design({ parts: [part] })
       const pattern = new design()
-      pattern.__init()
+      pattern.draft()
       expect(pattern.hooks.preRender.length).to.equal(1)
     })
 
@@ -603,22 +630,16 @@ describe('Pattern', () => {
       const condition2 = () => false
       const part1 = {
         name: 'part1',
-        plugins: [
-          [plugin1, {} ],
-          { plugin: plugin2, condition: condition1 }
-        ],
-        draft: ({ part }) => part
+        plugins: [[plugin1, { some: 'data' }], { plugin: plugin2, condition: condition1 }],
+        draft: ({ part }) => part,
       }
       const part2 = {
         name: 'part2',
-        plugins: [
-          plugin2,
-          { plugin: plugin2, condition: condition2 },
-        ],
-        draft: ({ part }) => part
+        plugins: [plugin2, { plugin: plugin2, condition: condition2 }],
+        draft: ({ part }) => part,
       }
       const design = new Design({
-        parts: [ part1, part2 ]
+        parts: [part1, part2],
       })
       const pattern = new design()
       pattern.__init()
@@ -680,35 +701,42 @@ describe('Pattern', () => {
     })
 
     it('Should check whether created parts get the pattern context', () => {
+      let partContext
       const part = {
         name: 'test',
-        draft: ({ part }) => part,
+        draft: ({ Point, paths, Path, part, context }) => {
+          paths.test = new Path().move(new Point(0, 0)).line(new Point(100, 0))
+          partContext = context
+
+          return part
+        },
       }
-      const Pattern = new Design({ parts: [part] })
+      const Pattern = new Design({ parts: [part], data: { name: 'test', version: '1' } })
       const pattern = new Pattern()
       pattern.draft()
-      const context = pattern.parts[0].test.context
-      expect(typeof context).to.equal('object')
-      expect(typeof context.parts).to.equal('object')
-      expect(typeof context.config).to.equal('object')
-      expect(typeof context.config.options).to.equal('object')
-      expect(typeof pattern.parts[0].test.context.config.data).to.equal('object')
-      expect(Array.isArray(context.config.measurements)).to.equal(true)
-      expect(Array.isArray(context.config.optionalMeasurements)).to.equal(true)
-      expect(Array.isArray(context.config.parts)).to.equal(true)
-      expect(Array.isArray(context.config.plugins)).to.equal(true)
-      expect(context.settings).to.equal(pattern.settings[0])
-      expect(typeof context.store).to.equal('object')
-      expect(typeof context.store.log).to.equal('object')
-      expect(typeof context.store.log.debug).to.equal('function')
-      expect(typeof context.store.log.info).to.equal('function')
-      expect(typeof context.store.log.warning).to.equal('function')
-      expect(typeof context.store.log.error).to.equal('function')
-      expect(typeof context.store.logs).to.equal('object')
-      expect(Array.isArray(context.store.logs.debug)).to.equal(true)
-      expect(Array.isArray(context.store.logs.info)).to.equal(true)
-      expect(Array.isArray(context.store.logs.warning)).to.equal(true)
-      expect(Array.isArray(context.store.logs.error)).to.equal(true)
+      expect(typeof partContext).to.equal('object')
+      expect(typeof partContext.parts).to.equal('object')
+      expect(typeof partContext.config).to.equal('object')
+      expect(typeof partContext.config.options).to.equal('object')
+      expect(typeof partContext.store.data).to.equal('object')
+      expect(partContext.store.data.name).to.equal('test')
+      expect(partContext.store.get('data.name')).to.equal('test')
+      expect(Array.isArray(partContext.config.measurements)).to.equal(true)
+      expect(Array.isArray(partContext.config.optionalMeasurements)).to.equal(true)
+      expect(typeof partContext.config.plugins).to.equal('object')
+      expect(typeof partContext.parts).to.equal('object')
+      expect(partContext.settings).to.equal(pattern.settings[0])
+      expect(typeof partContext.store).to.equal('object')
+      expect(typeof partContext.store.log).to.equal('object')
+      expect(typeof partContext.store.log.debug).to.equal('function')
+      expect(typeof partContext.store.log.info).to.equal('function')
+      expect(typeof partContext.store.log.warning).to.equal('function')
+      expect(typeof partContext.store.log.error).to.equal('function')
+      expect(typeof partContext.store.logs).to.equal('object')
+      expect(Array.isArray(partContext.store.logs.debug)).to.equal(true)
+      expect(Array.isArray(partContext.store.logs.info)).to.equal(true)
+      expect(Array.isArray(partContext.store.logs.warning)).to.equal(true)
+      expect(Array.isArray(partContext.store.logs.error)).to.equal(true)
     })
   })
 
@@ -769,12 +797,16 @@ describe('Pattern', () => {
         options: { unknown: { foo: 30 } },
         draft: () => {},
       }
-      const Pattern = new Design({
-        data: { name: 'test', version: '1.2.3' },
-        parts: [part],
-      })
-      const pattern = new Pattern()
-      expect(() => pattern.__init()).to.throw()
+      let error
+      try {
+        new Design({
+          data: { name: 'test', version: '1.2.3' },
+          parts: [part],
+        })
+      } catch (err) {
+        error = err
+      }
+      expect('' + error).to.contain('Unknown option type')
     })
   })
 })

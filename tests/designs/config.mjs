@@ -23,30 +23,31 @@ const mmAllowed = ['rendertest']
  * @param string Pattern: The Pattern constructor
  */
 export const testPatternConfig = (Pattern) => {
-  const pattern = new Pattern()
-  const config = pattern.getConfig()
+  //const pattern = new Pattern()
+  const designConfig = Pattern.designConfig
+  const patternConfig = Pattern.patternConfig
   it('Pattern data:', () => true)
   it(`  - 'name' should be set and be a non-empty string`, () => {
-    expect(typeof config.data.name).to.equal('string')
-    expect(config.data.name.length > 1).to.be.true
+    expect(typeof designConfig.data.name).to.equal('string')
+    expect(designConfig.data.name.length > 1).to.be.true
   })
   //
   it(`  - 'version' should be set and be a non-empty string`, () => {
-    expect(typeof config.data.version).to.equal('string')
-    expect(config.data.version.length > 1).to.be.true
+    expect(typeof designConfig.data.version).to.equal('string')
+    expect(designConfig.data.version.length > 1).to.be.true
   })
   it(`  - 'version' should be a proper semantic version`, () => {
-    const chunks = config.data.version.split('.')
+    const chunks = designConfig.data.version.split('.')
     if (chunks.length > 3) {
-      expect(config.data.version.split('.').length).to.equal(4)
+      expect(designConfig.data.version.split('.').length).to.equal(4)
       expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
     }
-    else expect(config.version.split('.').length).to.equal(3)
+    else expect(designConfig.version.split('.').length).to.equal(3)
   })
 
   it('Monorepo data:', () => true)
   // Store these for re-use
-  const name = getShortName(config.data.name)
+  const name = getShortName(designConfig.data.name)
   const family = getFamily(name)
   it(`  - 'name' should be resolvable to a short name`, () => {
     expect(typeof name).to.equal('string')
@@ -94,13 +95,13 @@ export const testPatternConfig = (Pattern) => {
   if (family !== 'utilities') {
     // Ensure required measurements are known measurements
     it('Required measurements:', () => true)
-    for (const measurement of config.measurements || []) {
+    for (const measurement of patternConfig.measurements || []) {
       it(`  - '${measurement}' should be a known measurement`, () => {
         expect(measurements.indexOf(measurement)).to.not.equal(-1)
       })
     }
     it('Optional measurements:', () => true)
-    for (let measurement of config.optionalMeasurements || []) {
+    for (let measurement of patternConfig.optionalMeasurements || []) {
       it(`  - '${measurement}' should be a known measurement`, () => {
         expect(measurements.indexOf(measurement)).to.not.equal(-1)
       })
@@ -109,8 +110,8 @@ export const testPatternConfig = (Pattern) => {
 
   // Test validity of the pattern's options
   it('Pattern options:', () => true)
-  for (const name in config.options) {
-    const option = config.options[name]
+  for (const name in patternConfig.options) {
+    const option = patternConfig.options[name]
     const type = typeof option
     if (type === 'object' && typeof option.pct !== 'undefined') {
       it(`    - If it has a 'menu' property, it should be a string or method`, () => {
@@ -155,7 +156,7 @@ export const testPatternConfig = (Pattern) => {
       it(`    - Should have a maximum >= the default value`, () => {
         expect(option.max >= option.mm).to.be.true
       })
-      if (mmAllowed.indexOf(getShortName(config.data.name)) === -1) {
+      if (mmAllowed.indexOf(getShortName(designConfig.data.name)) === -1) {
         it(`    - Patterns should not use mm options`, () => {
           expect("Does not use mm").to.be.true
         })

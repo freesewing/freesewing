@@ -3,8 +3,8 @@ import ClearIcon from 'shared/components/icons/clear.js'
 import { useTranslation } from 'next-i18next'
 
 const DesignOptionList = props => {
-  const { t } = useTranslation([`o_${props.design.config.data.name}`])
-  const { dflt, list, doNotTranslate=false } = props.design.config.options[props.option]
+  const { t } = useTranslation([`o_${props.design.designConfig.data.name}`])
+  const { dflt, list, doNotTranslate=false } = props.design.patternConfig.options[props.option]
   const val = (typeof props.gist?.options?.[props.option] === 'undefined')
     ? dflt
     : props.gist.options[props.option]
@@ -48,7 +48,7 @@ const DesignOptionList = props => {
               </span>
               {doNotTranslate
                 ? choice
-                : props.ot(`o_${props.design.config.data.name}:${props.option}.o.${choice}`)
+                : props.ot(`o_${props.design.designConfig.data.name}:${props.option}.o.${choice}`)
               }
             </button>
           ))}

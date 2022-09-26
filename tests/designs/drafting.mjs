@@ -14,8 +14,8 @@ const expect = chai.expect
  */
 export const testPatternDrafting = (Pattern, log = false) => {
   const pattern = new Pattern()
-  const config = pattern.getConfig()
-  const design = getShortName(config.data.name)
+  const config = Pattern.patternConfig
+  const design = getShortName(Pattern.designConfig.data.name)
   const family = getFamily(design)
 
   // Helper method to try/catch pattern drafting
@@ -23,9 +23,11 @@ export const testPatternDrafting = (Pattern, log = false) => {
     try {
       pattern.draft().render()
       if (log) {
-        console.log(pattern.stores[0].logs)
+        console.log(pattern.store.logs)
+        console.log(pattern.setStores[0].logs)
       }
-      if (pattern.stores[0].logs.error.length < 1) return true
+      if (pattern.store.logs.error.length < 1) return true
+      if (pattern.setStores[0].logs.error.length < 1) return true
       return false
     } catch (err) {
       if (log) console.log(err)

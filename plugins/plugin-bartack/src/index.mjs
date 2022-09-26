@@ -1,11 +1,11 @@
 import { version, name } from '../data.mjs'
 
 // Method that draws the actual bartack
-const drawBartack = (points, self) => {
-  let path = new self.Path().move(points.path1[0])
-  for (const i in points.path1) {
-    if (points.path1[i]) path = path.line(points.path1[i])
-    if (points.path2[i]) path = path.line(points.path2[i])
+const drawBartack = (pointList, { Path }) => {
+  let path = new Path().move(pointList.path1[0])
+  for (const i in pointList.path1) {
+    if (pointList.path1[i]) path = path.line(pointList.path1[i])
+    if (pointList.path2[i]) path = path.line(pointList.path2[i])
   }
 
   return path
@@ -39,9 +39,9 @@ const getPoints = (path, so) => {
   return points
 }
 
-const bartackPath = (path, so, self) => (path ? drawBartack(getPoints(path, so), self) : null)
+const bartackPath = (path, so, props) => (path ? drawBartack(getPoints(path, so), props) : null)
 
-export default function bartack(so, self) {
+function bartack(so, props) {
   const defaults = {
     width: 3,
     length: 15,
@@ -60,6 +60,8 @@ export default function bartack(so, self) {
   }
   so = { ...defaults, ...so }
 
+  const { Path, paths } = props
+
   // Handle negative angle
   if (so.angle < 0) so.angle = 360 + (so.angle % -360)
 
@@ -67,10 +69,10 @@ export default function bartack(so, self) {
 
   if (so.anchor)
     // Anchor + angle + length
-    guide = new self.Path().move(so.anchor).line(so.anchor.shift(so.angle, so.length))
+    guide = new Path().move(so.anchor).line(so.anchor.shift(so.angle, so.length))
   else if (so.from && so.to)
     // From to
-    guide = new self.Path().move(so.from).line(so.to)
+    guide = new Path().move(so.from).line(so.to)
   else if (so.path) {
     // Along path
     let start = false
@@ -92,7 +94,7 @@ export default function bartack(so, self) {
     }
   }
 
-  self.paths[`${so.prefix}bartack${so.suffix}`] = bartackPath(guide, so, self).attr(
+  paths[`${so.prefix}bartack${so.suffix}`] = bartackPath(guide, so, props).attr(
     'class',
     'stroke-sm stroke-mark'
   )
@@ -105,27 +107,24 @@ export const plugin = {
   name,
   version,
   macros: {
-    bartack: function (so) {
-      const self = this
-      return bartack(so, self)
+    bartack: function (so, props) {
+      return bartack(so, props)
     },
-    bartackAlong: function (so) {
-      const self = this
+    bartackAlong: function (so, props) {
       so.bartackFractionAlong = false
       so.bartackAlong = true
       so.anchor = false
       so.from = false
       so.to = false
-      return bartack(so, self)
+      return bartack(so, props)
     },
-    bartackFractionAlong: function (so) {
-      const self = this
+    bartackFractionAlong: function (so, props) {
       so.bartackFractionAlong = true
       so.bartackAlong = false
       so.anchor = false
       so.from = false
       so.to = false
-      return bartack(so, self)
+      return bartack(so, props)
     },
   },
 }

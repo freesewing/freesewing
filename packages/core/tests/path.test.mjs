@@ -77,14 +77,16 @@ describe('Path', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.stores[0].logs.warning.length).to.equal(2)
-    expect(pattern.stores[0].logs.warning[0]).to.equal('Called `Path.smurve(cp2, to)` but `to` is not a `Point` object')
+    expect(pattern.setStores[0].logs.warning.length).to.equal(2)
+    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+      'Called `Path.smurve(cp2, to)` but `to` is not a `Point` object'
+    )
   })
 
   it('Should log a warning when passing a non-Point to smurve_()', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, Path, paths, part }) => {
+      draft: ({ Path, paths, part }) => {
         paths.test = new Path().smurve_('hi')
 
         return part
@@ -93,8 +95,10 @@ describe('Path', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.stores[0].logs.warning.length).to.equal(1)
-    expect(pattern.stores[0].logs.warning[0]).to.equal('Called `Path.smurve_(to)` but `to` is not a `Point` object')
+    expect(pattern.setStores[0].logs.warning.length).to.equal(1)
+    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+      'Called `Path.smurve_(to)` but `to` is not a `Point` object'
+    )
   })
 
   it('Should log a warning when passing a non-Path to the paths proxy', () => {
@@ -109,9 +113,13 @@ describe('Path', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.stores[0].logs.warning.length).to.equal(2)
-    expect(pattern.stores[0].logs.warning[0]).to.equal('`paths.test` was set with a value that is not a `Path` object')
-    expect(pattern.stores[0].logs.warning[1]).to.equal('Could not set `name` property on `paths.test`')
+    expect(pattern.setStores[0].logs.warning.length).to.equal(2)
+    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+      '`paths.test` was set with a value that is not a `Path` object'
+    )
+    expect(pattern.setStores[0].logs.warning[1]).to.equal(
+      'Could not set `name` property on `paths.test`'
+    )
   })
 
   it('Should offset a line', () => {
@@ -232,9 +240,7 @@ describe('Path', () => {
     const part = {
       name: 'test',
       draft: ({ paths, Path, Point, part }) => {
-        paths.line = new Path()
-          .move(new Point(0, 0))
-          .line(new Point(0, 50))
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 50))
         return part
       },
     }
@@ -706,7 +712,7 @@ describe('Path', () => {
     const a = new Point(45, 60)
     const b = new Point(10, 30)
     const c = new Point(90, 30)
-    const test = new Path().move(a)._curve(b,b)._curve(c,c)
+    const test = new Path().move(a)._curve(b, b)._curve(c, c)
 
     let halves = test.split(b)
     expect(halves[0].ops[1].to.x).to.equal(10)
@@ -787,7 +793,7 @@ describe('Path', () => {
   it('Calling translate with non-numbers should generate a warning', () => {
     const log = []
     const p = new Path()
-    p.log = { warning: msg => log.push(msg) }
+    p.log = { warning: (msg) => log.push(msg) }
     p.translate('a', 'b')
     expect(log.length).to.equal(2)
     expect(log[0]).to.equal('Called `Path.translate(x, y)` but `x` is not a number')
@@ -1074,8 +1080,8 @@ describe('Path', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.stores[0].logs.error.length).to.equal(2)
-    expect(pattern.stores[0].logs.error[0]).to.equal(
+    expect(pattern.setStores[0].logs.error.length).to.equal(2)
+    expect(pattern.setStores[0].logs.error[0]).to.equal(
       'Called `Path.offset(distance)` but `distance` is not a number'
     )
   })
@@ -1092,8 +1098,8 @@ describe('Path', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.stores[0].logs.error.length).to.equal(2)
-    expect(pattern.stores[0].logs.error[0]).to.equal(
+    expect(pattern.setStores[0].logs.error.length).to.equal(2)
+    expect(pattern.setStores[0].logs.error[0]).to.equal(
       'Called `Path.join(that)` but `that` is not a `Path` object'
     )
   })
@@ -1141,7 +1147,7 @@ describe('Path', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.stores[0].logs.error[0]).to.equal(
+    expect(pattern.setStores[0].logs.error[0]).to.equal(
       'Called `Path.shiftFractionAlong(fraction)` but `fraction` is not a number'
     )
   })
@@ -1149,7 +1155,7 @@ describe('Path', () => {
   it('Should log a warning when splitting a path on a non-point', () => {
     const part = {
       name: 'test',
-      draft: ({ Path, Point, points, part}) => {
+      draft: ({ Path, Point, points, part }) => {
         points.a = new Path().move(new Point(0, 0)).line(new Point(0, 40)).split()
         return part
       },
@@ -1157,7 +1163,7 @@ describe('Path', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.stores[0].logs.error[0]).to.equal(
+    expect(pattern.setStores[0].logs.error[0]).to.equal(
       'Called `Path.split(point)` but `point` is not a `Point` object'
     )
   })
@@ -1165,10 +1171,10 @@ describe('Path', () => {
   it('Should add a class', () => {
     const part = {
       name: 'test',
-      draft: ({ Path, paths, Point, points, part }) => {
+      draft: ({ Path, paths, Point, part }) => {
         paths.line = new Path()
-          .move(new Point(0,0))
-          .line(new Point(10,10))
+          .move(new Point(0, 0))
+          .line(new Point(10, 10))
           .addClass('fabric banana')
         return part
       },
@@ -1187,5 +1193,4 @@ describe('Path', () => {
     path.unhide()
     expect(path.hidden).to.equal(false)
   })
-
 })

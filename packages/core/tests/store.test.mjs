@@ -59,6 +59,7 @@ describe('Store', () => {
     }
     const part = {
       name: 'example.part',
+      plugins: [ plugin ],
       draft: ({ store, part }) => {
         store.test.example.warning('hello warning')
         store.test.example.info('hello info')
@@ -66,11 +67,11 @@ describe('Store', () => {
         return part
       },
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    expect(pattern.stores[0].get('test.message.warning')).to.equal('hello warning')
-    expect(pattern.stores[0].get('test.message.info')).to.equal('hello info')
+    expect(pattern.setStores[0].get('test.message.warning')).to.equal('hello warning')
+    expect(pattern.setStores[0].get('test.message.info')).to.equal('hello info')
   })
 
   it('Should make top-level plugin methods available via shorthand', () => {
@@ -94,17 +95,18 @@ describe('Store', () => {
     }
     const part = {
       name: 'example_part',
+      plugins: [ plugin ],
       draft: ({ methodA, methodB, part }) => {
         methodA('hello A')
         methodB('hello B')
         return part
       },
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    expect(pattern.stores[0].get('test.example_part.a')).to.equal('hello A')
-    expect(pattern.stores[0].get('test.example_part.b')).to.equal('hello B')
+    expect(pattern.setStores[0].get('test.example_part.a')).to.equal('hello A')
+    expect(pattern.setStores[0].get('test.example_part.b')).to.equal('hello B')
   })
 
   it('Should log a warning when trying to extend a protected method via the constructor', () => {
@@ -153,5 +155,4 @@ describe('Store', () => {
     store.unset('test')
     expect(typeof store.get('test')).to.equal('undefined')
   })
-
 })

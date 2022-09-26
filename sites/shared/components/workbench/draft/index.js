@@ -29,8 +29,9 @@ const LabDraft = (props) => {
   }
 
   const errors = []
-  for (const logs of patternProps.logs) {
-    errors.push(...logs.error)
+  errors.push(...patternProps.logs.pattern.error)
+  for (const set of patternProps.logs.sets) {
+    errors.push(...set.error)
   }
 
   return (

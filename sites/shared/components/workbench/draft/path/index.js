@@ -60,7 +60,7 @@ const pathDimensions = (from, to, cp1=false, cp2=false, path=false) => {
     if (cp1.y > bottomRight.y) bottomRight.y = cp1.y
     if (cp2.y > bottomRight.y) bottomRight.y = cp2.y
     // This undocumented core methods returns the curve's bounding box
-    bbox = path.boundary()
+    bbox = path.bbox()
   }
   const w = bottomRight.x - topLeft.x
   const h = bottomRight.y - topLeft.y
@@ -188,7 +188,7 @@ const Curve = (props) => {
 }
 
 const MiniPath = props => {
-  const bbox = props.path.boundary()
+  const bbox = props.path.bbox()
   const id = `${props.partName}_${props.pathName}_mini}`
   const w = bbox.bottomRight.x - bbox.topLeft.x
   const h = bbox.bottomRight.y - bbox.topLeft.y
@@ -356,7 +356,7 @@ export const Attributes = ({ list }) => list
   ) : null
 
 export const pathInfo = (props) => {
-  const bbox = props.path.boundary()
+  const bbox = props.path.bbox()
 
   return (
     <div className="p-4 border bg-neutral bg-opacity-40 shadow rounded-lg">
@@ -472,7 +472,10 @@ const XrayCurve = props => {
 }
 
 const XrayPath = props => {
+  const classes = props.path.attributes.get('class')
+  if (typeof classes === 'string' && classes.includes('noxray')) return null
   const ops = props.path.divide()
+
 
   return (
     <g>

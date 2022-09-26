@@ -12,12 +12,13 @@ const ConsoleLog = props =>  (
         <Chevron />
       </Summary>
       <Ul>
-        {['config', 'gist', 'draft'].map(it => (
+        {['designConfig', 'patternConfig', 'gist', 'draft'].map(it => (
           <Li key={it}>
-            <SumButton onClick={() => console.log(it === 'config'
-              ? props.design.config
-              : props[it]
-            )}>
+            <SumButton onClick={() => {
+              if (it === 'designConfig') return console.log(props.design.designConfig)
+              if (it === 'patternConfig') return console.log(props.design.patternConfig)
+              return console.log(props[it])
+            }}>
               <SumDiv>
                 <Deg />
                 <span>{it}</span>

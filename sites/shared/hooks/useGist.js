@@ -8,8 +8,7 @@ import {useState} from 'react'
 // Generates a default design gist to start from
 export const defaultGist = (design, locale='en') => {
   const gist = {
-  design: design.config.data.name,
-  version: design.config.version,
+  design,
   ...defaultSettings,
   _state: {view: 'draft'}
   }
@@ -21,7 +20,7 @@ export const defaultGist = (design, locale='en') => {
 // generate the gist state and its handlers
 export function useGist(design, app) {
 	// get the localstorage state and setter
-	const [gist, _setGist, gistReady] = useLocalStorage(`${design.config.name}_gist`, defaultGist(design, app.locale));
+	const [gist, _setGist, gistReady] = useLocalStorage(`${design}_gist`, defaultGist(design, app.locale));
 	const [gistHistory, setGistHistory] = useState([]);
 	const [gistFuture, setGistFuture] = useState([]);
 

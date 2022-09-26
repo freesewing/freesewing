@@ -16,13 +16,14 @@ paths.banner = new Path()
   .line(points.to)
 
 macro('banner', {
-  path: 'banner',
+  path: paths.banner,
   text: 'banner plugin',
 })
 ```
 
 | Property     | Default    | Type       | Description |
 |-------------:|------------|------------|-------------|
+| `path`       |            | `Path`     | The Path to add the text on |
 | `text`       |            | `text`     | The text to place repeat along the path |
 | `dy`         | `1`        | `number`   | Controls how far the text will be located above the path |
 | `spaces`     | `12`       | `number`   | The number of spaces to place between repetitions |

@@ -8,7 +8,7 @@ describe('Dimension Plugin Tests', () => {
   describe('Measures horizontal dimensions', function () {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(200, 20)
         macro('hd', {
@@ -16,14 +16,17 @@ describe('Dimension Plugin Tests', () => {
           to: points.to,
           y: 35,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
 
     it('should draw a line and add text to indicate its length', () => {
-      const c = pattern.parts.test.paths['__paperless1']
+      const c = pattern.parts[0].test.paths['__paperless1']
       expect(c.attributes.get('class')).to.equal('mark')
       expect(c.attributes.get('marker-start')).to.equal('url(#dimensionFrom)')
       expect(c.attributes.get('marker-end')).to.equal('url(#dimensionTo)')
@@ -38,7 +41,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('should draw the start marker', () => {
-      const c = pattern.parts.test.paths['__paperless1_ls']
+      const c = pattern.parts[0].test.paths['__paperless1_ls']
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -49,7 +52,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('should draw the end marker', () => {
-      const c = pattern.parts.test.paths['__paperless1_le']
+      const c = pattern.parts[0].test.paths['__paperless1_le']
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -63,7 +66,7 @@ describe('Dimension Plugin Tests', () => {
   describe('Measures vertical dimensions', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 20)
         points.to = new Point(10, 200)
         macro('vd', {
@@ -71,14 +74,17 @@ describe('Dimension Plugin Tests', () => {
           to: points.to,
           x: 25,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
 
     it('Should draw a line and add text to indicate its length', () => {
-      const c = pattern.parts.test.paths['__paperless1']
+      const c = pattern.parts[0].test.paths['__paperless1']
       expect(c.attributes.get('class')).to.equal('mark')
       expect(c.attributes.get('marker-start')).to.equal('url(#dimensionFrom)')
       expect(c.attributes.get('marker-end')).to.equal('url(#dimensionTo)')
@@ -93,7 +99,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the start marker', () => {
-      const c = pattern.parts.test.paths['__paperless1_ls']
+      const c = pattern.parts[0].test.paths['__paperless1_ls']
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -104,7 +110,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the end marker', () => {
-      const c = pattern.parts.test.paths['__paperless1_le']
+      const c = pattern.parts[0].test.paths['__paperless1_le']
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -118,7 +124,7 @@ describe('Dimension Plugin Tests', () => {
   describe('Measures the length of straight lines', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.from = new Point(10, 10)
         points.to = new Point(100, 100)
         macro('ld', {
@@ -126,14 +132,17 @@ describe('Dimension Plugin Tests', () => {
           to: points.to,
           d: 15,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
 
     it('Should draw a line and add text to indicate its length', () => {
-      const c = pattern.parts.test.paths['__paperless1']
+      const c = pattern.parts[0].test.paths['__paperless1']
       expect(c.attributes.get('class')).to.equal('mark')
       expect(c.attributes.get('marker-start')).to.equal('url(#dimensionFrom)')
       expect(c.attributes.get('marker-end')).to.equal('url(#dimensionTo)')
@@ -148,7 +157,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the start marker', () => {
-      const c = pattern.parts.test.paths['__paperless1_ls']
+      const c = pattern.parts[0].test.paths['__paperless1_ls']
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -159,7 +168,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the end marker', () => {
-      const c = pattern.parts.test.paths['__paperless1_le']
+      const c = pattern.parts[0].test.paths['__paperless1_le']
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -173,7 +182,7 @@ describe('Dimension Plugin Tests', () => {
   describe('Measures curved lines', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro, Path }) => {
+      draft: ({ Point, points, macro, Path, part }) => {
         points.from = new Point(10, 10)
         points.cp1 = new Point(100, 10)
         points.cp2 = new Point(10, 100)
@@ -182,14 +191,17 @@ describe('Dimension Plugin Tests', () => {
           path: new Path().move(points.from).curve(points.cp1, points.cp2, points.to),
           d: 15,
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
 
     it('Should draw a line and add text to indicate the length', () => {
-      const c = pattern.parts.test.paths['__paperless1']
+      const c = pattern.parts[0].test.paths['__paperless1']
       expect(c.attributes.get('class')).to.equal('mark')
       expect(c.attributes.get('marker-start')).to.equal('url(#dimensionFrom)')
       expect(c.attributes.get('marker-end')).to.equal('url(#dimensionTo)')
@@ -204,7 +216,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the start marker', () => {
-      const c = pattern.parts.test.paths['__paperless1_ls']
+      const c = pattern.parts[0].test.paths['__paperless1_ls']
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -215,7 +227,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the end marker', () => {
-      const c = pattern.parts.test.paths['__paperless1_le']
+      const c = pattern.parts[0].test.paths['__paperless1_le']
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')

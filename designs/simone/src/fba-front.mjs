@@ -418,6 +418,7 @@ export const fbaFront = {
   measurements: ['highBust'],
   hideDependencies: true,
   plugins: [bustPlugin],
+  hide: true,
   options: {
     draftForHighBust: true,
     minimalDartShaping: 5,

@@ -7,20 +7,28 @@ const measurements = { head: 400 }
 const toAbs = (val, { measurements }) => measurements.head * val
 
 describe('Snapped options', () => {
-  it('Should snap a percentage options to equal steps', () => {
+  it('Should snap a percentage option to equal steps', () => {
+    let abs
     const part = {
       name: 'test',
       measurements: ['head'],
       options: {
         test: { pct: 30, min: 0, max: 100, snap: 12, toAbs },
       },
+      draft: ({ part, absoluteOptions }) => {
+        abs = absoluteOptions
+        return part
+      }
     }
-    const design = new Design({ parts: [part] })
-    const patternA = new design({ options: { test: 0.13 }, measurements }).draft()
-    const patternB = new design({ options: { test: 0.27 }, measurements }).draft()
-    expect(patternA.settings[0].absoluteOptions.test).to.equal(60)
-    expect(patternB.settings[0].absoluteOptions.test).to.equal(108)
+    const design = new Design({ parts: [ part] })
+    new design({ options: { test: 0.13 }, measurements, idPrefix: 'A' }).draft()
+    expect(abs.test).to.equal(60)
+    new design({ options: { test: 0.27 }, measurements, idPrefix: 'B' }).draft()
+    expect(abs.test).to.equal(108)
+    new design({ options: { test: 0.71 }, measurements, idPrefix: 'C' }).draft()
+    expect(abs.test).to.equal(288)
   })
+
   it('Should snap a percentage options to the Fibonacci sequence', () => {
     const part = {
       name: 'test',
