@@ -23,10 +23,19 @@ export const path_addclass = {
     points.from = new Point(5, 10)
     points.to = new Point(95, 10)
 
-    paths.line = new Path()
-      .move(points.from)
-      .line(points.to)
-      .addClass('note dashed')
+    paths.line = new Path().move(points.from).line(points.to).addClass('note dashed')
+
+    return box(part, 100, 20)
+  },
+}
+
+export const path_addtext = {
+  name: 'examples.path_addtext',
+  draft: ({ Point, points, Path, paths, part }) => {
+    points.from = new Point(5, 10)
+    points.to = new Point(95, 10)
+
+    paths.line = new Path().move(points.from).line(points.to).addText('FreeSewing rocks')
 
     return box(part, 100, 20)
   },
@@ -67,7 +76,7 @@ export const path_clone = {
 
     paths.clone = paths.example
       .clone()
-      .attr('class', 'note lashed stroke-l')
+      .setClass('note lashed stroke-xl')
       .attr('style', 'stroke-opacity: 0.5')
 
     return part
@@ -86,8 +95,7 @@ export const path_close = {
       ._curve(points.cp2, points.to)
       .close()
       .reverse() // To keep text from being upside-down
-      .attr('data-text', 'Path._close()')
-      .attr('data-text-class', 'text-sm right fill-note')
+      .setText('Path._close()', 'text-sm right fill-note')
 
     return box(part, 100, 25)
   },
@@ -104,8 +112,7 @@ export const path_curve = {
     paths.line = new Path()
       .move(points.from)
       .curve(points.cp1, points.cp2, points.to)
-      .attr('data-text', 'Path.curve()')
-      .attr('data-text-class', 'text-sm center fill-note')
+      .setText('Path.curve()', 'text-sm center fill-note')
 
     return box(part, 100, 25)
   },
