@@ -149,8 +149,9 @@ Pattern.prototype.draft = function () {
           this.setStores[set].log.error(
             `Unable to draft pattern part __${partName}__. Part.draft() is not callable`
           )
-        this.parts[set][partName].hidden =
-          this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
+        // FIXME: THis won't work not that this is immutable
+        // But is it still needed?
+        // this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
       } else {
         this.setStores[set].log.debug(
           `Part \`${partName}\` is not needed. Skipping draft and setting hidden to \`true\``

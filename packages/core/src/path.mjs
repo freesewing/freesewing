@@ -68,6 +68,20 @@ Path.prototype.addClass = function (className = false) {
 }
 
 /**
+ * A chainable way to add text to a Path
+ *
+ * @param {string} text - The text to add to the Path
+ * @param {string} className - The CSS classes to apply to the text
+ * @return {Path} this - The Path instance
+ */
+Path.prototype.addText = function (text = '', className = false) {
+  this.attributes.add('data-text', text)
+  if (className) this.attributes.add('data-text-class', className)
+
+  return this
+}
+
+/**
  * Returns the SVG pathstring for this path
  *
  * @return {string} svg - The SVG pathsstring (the 'd' attribute of an SVG path)
@@ -536,7 +550,7 @@ Path.prototype.offset = function (distance) {
  *
  * @return {object} reverse - A Path instance that is the reversed version of this Path
  */
-Path.prototype.reverse = function () {
+Path.prototype.reverse = function (cloneAttributes = false) {
   let sections = []
   let current
   let closed = false
@@ -555,6 +569,7 @@ Path.prototype.reverse = function () {
   let rev = new Path().__withLog(this.log).move(current)
   for (let section of sections.reverse()) rev.ops.push(section.ops[1])
   if (closed) rev.close()
+  if (cloneAttributes) rev.attributes = this.attributes.clone()
 
   return rev
 }
@@ -613,6 +628,19 @@ Path.prototype.setHidden = function (hidden = false) {
   return this
 }
 
+/**
+ * A chainable way to set text on a Path
+ *
+ * @param {string} text - The text to add to the Path
+ * @param {string} className - The CSS classes to apply to the text
+ * @return {Path} this - The Path instance
+ */
+Path.prototype.setText = function (text = '', className = false) {
+  this.attributes.set('data-text', text)
+  if (className) this.attributes.set('data-text-class', className)
+
+  return this
+}
 /**
  * Returns a point that lies at distance along this Path
  *
