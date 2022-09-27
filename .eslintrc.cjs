@@ -1,3 +1,4 @@
+const mongoFiles = ['ansible/playbooks/files/migrate_data.{js,mjs,cjs}']
 const nodeFiles = [
   '**/build.dflt.{js,mjs,cjs}',
   '**/build.{js,mjs,cjs}',
@@ -38,6 +39,13 @@ module.exports = {
   overrides: [
     // Partitioned JavaScript files
     {
+      files: mongoFiles,
+      plugins: ['mongo'],
+      env: {
+        'mongo/shell': true,
+      },
+    },
+    {
       files: nodeFiles,
       env: {
         node: true,
@@ -57,7 +65,7 @@ module.exports = {
     },
     {
       files: ['**'],
-      excludedFiles: [].concat(nodeFiles, frontendFiles),
+      excludedFiles: [].concat(mongoFiles, nodeFiles, frontendFiles),
       env: {
         'shared-node-browser': true,
       },
