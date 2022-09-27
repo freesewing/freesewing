@@ -1,4 +1,3 @@
-import { pctBasedOn } from '@freesewing/core'
 import {pluginBundle } from '@freesewing/plugin-bundle'
 
 export const front = {
@@ -28,8 +27,6 @@ export const front = {
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     options,
     measurements,
     complete,

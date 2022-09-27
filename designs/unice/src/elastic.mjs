@@ -16,8 +16,6 @@ export const elastic = {
   utils,
   units,
   sa,
-  paperless,
-  macro,
   part,
   }) => {
   // Stretch utility method

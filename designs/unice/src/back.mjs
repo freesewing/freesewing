@@ -1,4 +1,3 @@
-import { pctBasedOn } from '@freesewing/core'
 import { front } from './front.mjs'
 
 export const back = {
@@ -21,15 +20,12 @@ export const back = {
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     options,
     measurements,
     complete,
     paperless,
     macro,
     part,
-	log,
   }) => {
 
   // Design pattern here

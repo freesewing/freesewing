@@ -1,4 +1,3 @@
-import { pctBasedOn } from '@freesewing/core'
 import { back } from './back.mjs'
 
 export const gusset = {
@@ -21,15 +20,12 @@ export const gusset = {
   },
   after: back,
   draft: ({
-    utils,
     store,
     sa,
     Point,
     points,
     Path,
     paths,
-    Snippet,
-    snippets,
     options,
     measurements,
     complete,
