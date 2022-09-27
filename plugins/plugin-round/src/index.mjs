@@ -31,7 +31,7 @@ export const plugin = {
           this.points[prefix + 'End']
         )
         .attr('class', so.class ? so.class : '')
-      if (so?.hidden) this.paths[prefix + 'Rounded'].hide()
+      if (so?.hide) this.paths[prefix + 'Rounded'].hide()
       else this.paths[prefix + 'Rounded'].unhide()
     },
   },

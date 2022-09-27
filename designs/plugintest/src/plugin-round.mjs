@@ -17,7 +17,7 @@ const pluginRound = ({ Point, points, Path, paths, macro, options, part }) => {
       .attr('class', 'note dashed')
 
     const opts = {
-      radius: options.roundRadius,
+      radius: Number(options.roundRadius),
       hide: options.roundHide,
     }
 
