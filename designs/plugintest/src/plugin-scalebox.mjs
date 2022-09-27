@@ -7,6 +7,7 @@ const pluginScalebox = ({ Point, points, macro, options, part }) => {
 
     macro(options.scaleboxType, {
       at: points.a,
+      rotate: options.scaleboxRotation,
     })
   }
 
@@ -19,6 +20,7 @@ export const scalebox = {
   after: base,
   options: {
     scaleboxType: { dflt: 'scalebox', list: ['scalebox', 'miniscale'], menu: 'scalebox' },
+    scaleboxRotation: { deg: 0, min: 0, max: 360, menu: 'scalebox' },
   },
   draft: pluginScalebox,
 }
