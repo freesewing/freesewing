@@ -10,10 +10,16 @@ function draftBenjaminBow3({
   macro,
   sa,
   store,
+  snippets,
   paperless,
   part,
 }) {
-  if (!options.adjustmentRibbon) return part.hide()
+  if (!options.adjustmentRibbon) {
+    for (const s in snippets) delete snippets[s]
+    for (const p in points) delete points[p]
+    for (const p in paths) delete paths[p]
+    return part.hide()
+  }
 
   points.bandBottomLeft = points.bandBottomLeft.shift(180, 290)
   points.bandTopLeft = points.bandBottomLeft.flipY()

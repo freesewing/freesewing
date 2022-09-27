@@ -67,9 +67,9 @@ function draftBenjaminBase({
   // Paths
   paths.cap = new Path().hide().move(points.tip2Bottom)
   if (options.endStyle === 'straight') {
-    paths.cap = new Path().move(points.tip2Bottom).line(points.tip2Top)
+    paths.cap = new Path().move(points.tip2Bottom).line(points.tip2Top).hide()
   } else if (options.endStyle === 'pointed') {
-    paths.cap = new Path().move(points.tip2Bottom).line(points.tip).line(points.tip2Top)
+    paths.cap = new Path().move(points.tip2Bottom).line(points.tip).line(points.tip2Top).hide()
   } else {
     points.roundBottom = new Point(points.tip.x, points.tip2Bottom.y)
     points.roundTop = points.roundBottom.flipY()
@@ -78,14 +78,16 @@ function draftBenjaminBase({
       to: points.tip,
       via: points.roundBottom,
       prefix: 'bottom',
+      hidden: true,
     })
     macro('round', {
       from: points.tip,
       to: points.tip2Top,
       via: points.roundTop,
       prefix: 'top',
+      hidden: true,
     })
-    paths.cap = paths.bottomRounded.join(paths.topRounded)
+    paths.cap = paths.bottomRounded.join(paths.topRounded).hide()
   }
 
   if (options.bowStyle === 'diamond' || options.bowStyle === 'butterfly') {
