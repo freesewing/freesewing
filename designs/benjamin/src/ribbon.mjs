@@ -1,3 +1,5 @@
+import { base } from './base.mjs'
+
 function draftBenjaminRibbon({
   Point,
   Path,
@@ -62,5 +64,6 @@ function draftBenjaminRibbon({
 
 export const ribbon = {
   name: 'benjamin.ribbon',
+  after: base,
   draft: draftBenjaminRibbon,
 }
