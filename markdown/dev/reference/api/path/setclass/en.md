@@ -1,37 +1,43 @@
 ---
-title: setClass()
+title: Path.setClass()
 ---
 
+The `Path.setClass()` method sets the CSS class(es) of the path.
+
+## Signature
+
 ```js
-Path path.attr(
-  string name, 
-  mixed value, 
-  bool overwrite = false
-)
+Path path.setClass(string className)
 ```
 
-This `Path.attr()` method calls `this.attributes.add()` under the hood, but returns the Path object.
+<Tip compact>This method is chainable as it returns the `Path` object</Tip>
 
-This allows you to chain different calls together as in the example below.
+## Example
 
-If the third parameter is set to `true` it will call `this.attributes.set()` instead, thereby overwriting the value of the attribute.
+<Example caption="Example of the Path.setClass() method">
+```js
+({ Point, points, Path, paths, part }) => {
 
-<Example part="path_attr">
-Example of the Path.attr() method
+  points.from = new Point(5, 10)
+  points.to = new Point(95, 10)
+
+  paths.line = new Path()
+    .move(points.from)
+    .line(points.to)
+    .setClass('note dashed')
+
+  return part
+}
+```
 </Example>
 
+## Notes
+
+The main purpose of this method is to save your some typing,
+as the two following calls yield the same result:
+
 ```js
-let { Point, points, Path, paths } = part.shorthand();
-
-points.B = new Point(10, 50);
-points.BCp2 = new Point(40, 10);
-points.C = new Point(90, 30);
-points.CCp1 = new Point(50, 90);
-
-paths.example = new Path()
-  .move(points.B)
-  .curve(points.BCp2, points.CCp1, points.C)
-  .attr("class", "canvas")
-  .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
-  .attr("data-text-class", "text-xs center");
+path.attr('class', 'fabric', true)
+path.addClass('fabric')
 ```
+

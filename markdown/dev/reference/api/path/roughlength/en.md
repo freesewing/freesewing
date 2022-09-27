@@ -1,37 +1,50 @@
 ---
-title: roughLength()
+title: Path.roughLength()
 ---
 
+The `Path.roughLength()` method returns a (very) rough estimate of the path's length.
+
+## Signature
+
 ```js
-Path path.attr(
-  string name, 
-  mixed value, 
-  bool overwrite = false
-)
+Number path.roughLength()
 ```
 
-This `Path.attr()` method calls `this.attributes.add()` under the hood, but returns the Path object.
+## Example
 
-This allows you to chain different calls together as in the example below.
+<Example caption="Example of the Path.attr() method">
+```js
+({ Point, points, Path, paths, macro, units, part }) => {
 
-If the third parameter is set to `true` it will call `this.attributes.set()` instead, thereby overwriting the value of the attribute.
+  points.B = new Point(10, 30);
+  points.BCp2 = new Point(40, 20);
+  points.C = new Point(120, 30);
+  points.CCp1 = new Point(50, -30);
+  
+  paths.example = new Path()
+    .move(points.B)
+    .curve(points.BCp2, points.CCp1, points.C);
+  
+  macro("pd", {
+    path: paths.example,
+    d: -10,
+    text: `Path.roughLength() = ${units(paths.example.roughLength())}`
+  })
+  macro("pd", {
+    path: paths.example,
+    d: 10,
+    text: `Path.length() = ${units(paths.example.length())}`
+  });
+  
 
-<Example part="path_attr">
-Example of the Path.attr() method
+  return part
+}
+```
 </Example>
 
-```js
-let { Point, points, Path, paths } = part.shorthand();
+## Notes
 
-points.B = new Point(10, 50);
-points.BCp2 = new Point(40, 10);
-points.C = new Point(90, 30);
-points.CCp1 = new Point(50, 90);
+The `Path.roughLength()` is not intended to give an estimate that is accurate, but rather differentiatate between paths that are a few millimeter long, or meters long.
 
-paths.example = new Path()
-  .move(points.B)
-  .curve(points.BCp2, points.CCp1, points.C)
-  .attr("class", "canvas")
-  .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
-  .attr("data-text-class", "text-xs center");
-```
+It calculates the length without *walking the (cubic) Bezier curve* making it very fast and very inaccurate (for curves).
+It is typically used to determine how much precision to apply when walking a curve.
