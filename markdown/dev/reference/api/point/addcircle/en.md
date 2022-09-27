@@ -2,11 +2,11 @@
 title: Point.addCircle()
 ---
 
-Adds a circle to a Point. Under the hood, this will call `Point.attr()` as circles
-are added by setting attributes. Refer to [Drawing circles](/howtos/code/drawing-circles) for 
-more details.
+The `Point.addCircle()` method adds a circle to a Point. Under the hood, this
+will call `Point.attr()` as circles are added by setting attributes. Refer to
+[Drawing circles](/howtos/code/drawing-circles) for more details.
 
-## Point.addCircle() signature
+## Signature
 
 ```js
 Point point.addCircle(
@@ -15,12 +15,9 @@ Point point.addCircle(
 )
 ```
 
-## Point.addCircle() example
+## Example
 
-<Example part="point_addcircle">
-Examples of Point.addCircle(), compare this to [Point.setCircle](/reference/api/point/setcircle)
-</Example>
-
+<Example caption="Examples of Point.addCircle(), compare this to [Point.setCircle](/reference/api/point/setcircle)">
 ```js
 ({ Point, points, part }) => {
   points.a = new Point(30, 10)
@@ -41,4 +38,6 @@ Examples of Point.addCircle(), compare this to [Point.setCircle](/reference/api/
   return part
 }
 ```
+</Example>
+
 
