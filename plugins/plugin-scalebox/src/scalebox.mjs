@@ -1,4 +1,4 @@
-export function scalebox(so) {
+export function scalebox(so, { store, points, paths, scale, Point, Path }) {
   // Passing `false` will remove the scalebox
   if (so === false) {
     for (let id of [
@@ -17,15 +17,13 @@ export function scalebox(so) {
       '__scaleboxMetric',
       '__scaleboxImperial',
     ])
-      delete this.points[id]
-    for (let id of ['__scaleboxMetric', '__scaleboxImperial']) delete this.paths[id]
+      delete points[id]
+    for (let id of ['__scaleboxMetric', '__scaleboxImperial']) delete paths[id]
     return true
   }
 
-  const scale = this.context.settings.scale
-
   // Convert scale to a value between 0 and 9, inclusive.
-  const scaleIndex = Math.round(10 * Math.max(0.1, Math.min(1, this.context.settings.scale))) - 1
+  const scaleIndex = Math.round(10 * Math.max(0.1, Math.min(1, scale))) - 1
 
   // Metric width and height in mm and display width and height for each scale index.
   const metricSizes = [
@@ -66,48 +64,43 @@ export function scalebox(so) {
   const imperialDisplayHeight = imperialSizes[scaleIndex][3]
 
   // Box points
-  this.points.__scaleboxMetricTopLeft = new this.Point(
-    so.at.x - metricWidth / 2,
-    so.at.y - metricHeight / 2
-  )
-  this.points.__scaleboxMetricTopRight = new this.Point(
-    so.at.x + metricWidth / 2,
-    so.at.y - metricHeight / 2
-  )
-  this.points.__scaleboxMetricBottomLeft = new this.Point(
+  points.__scaleboxMetricTopLeft = new Point(so.at.x - metricWidth / 2, so.at.y - metricHeight / 2)
+  points.__scaleboxMetricTopRight = new Point(so.at.x + metricWidth / 2, so.at.y - metricHeight / 2)
+  points.__scaleboxMetricBottomLeft = new Point(
     so.at.x - metricWidth / 2,
     so.at.y + metricHeight / 2
   )
-  this.points.__scaleboxMetricBottomRight = new this.Point(
+  points.__scaleboxMetricBottomRight = new Point(
     so.at.x + metricWidth / 2,
     so.at.y + metricHeight / 2
   )
-  this.points.__scaleboxImperialTopLeft = new this.Point(
+  points.__scaleboxImperialTopLeft = new Point(
     so.at.x - imperialWidth / 2,
     so.at.y - imperialHeight / 2
   )
-  this.points.__scaleboxImperialTopRight = new this.Point(
+  points.__scaleboxImperialTopRight = new Point(
     so.at.x + imperialWidth / 2,
     so.at.y - imperialHeight / 2
   )
-  this.points.__scaleboxImperialBottomLeft = new this.Point(
+  points.__scaleboxImperialBottomLeft = new Point(
     so.at.x - imperialWidth / 2,
     so.at.y + imperialHeight / 2
   )
-  this.points.__scaleboxImperialBottomRight = new this.Point(
+  points.__scaleboxImperialBottomRight = new Point(
     so.at.x + imperialWidth / 2,
     so.at.y + imperialHeight / 2
   )
   // Text anchor points
-  this.points.__scaleboxLead = new this.Point(so.at.x - 45 * scale, so.at.y - 15 * scale)
-  this.points.__scaleboxTitle = this.points.__scaleboxLead.shift(-90, 10 * scale)
-  this.points.__scaleboxText = this.points.__scaleboxTitle.shift(-90, 12 * scale)
-  this.points.__scaleboxLink = this.points.__scaleboxText.shift(-90, 5 * scale)
-  this.points.__scaleboxMetric = new this.Point(so.at.x, so.at.y + 20 * scale)
-  this.points.__scaleboxImperial = new this.Point(so.at.x, so.at.y + 24 * scale)
+  points.__scaleboxLead = new Point(so.at.x - 45 * scale, so.at.y - 15 * scale)
+  points.__scaleboxTitle = points.__scaleboxLead.shift(-90, 10 * scale)
+  points.__scaleboxText = points.__scaleboxTitle.shift(-90, 12 * scale)
+  points.__scaleboxLink = points.__scaleboxText.shift(-90, 5 * scale)
+  points.__scaleboxMetric = new Point(so.at.x, so.at.y + 20 * scale)
+  points.__scaleboxImperial = new Point(so.at.x, so.at.y + 24 * scale)
   // Rotation
   if (so.rotate) {
-    let points = [
+    so.rotate = Number(so.rotate)
+    let toRotate = [
       '__scaleboxMetricTopLeft',
       '__scaleboxMetricTopRight',
       '__scaleboxMetricBottomLeft',
@@ -123,61 +116,61 @@ export function scalebox(so) {
       '__scaleboxMetric',
       '__scaleboxImperial',
     ]
-    for (let pid of points) this.points[pid] = this.points[pid].rotate(so.rotate, so.at)
-    for (let pid of points.slice(8)) {
-      this.points[pid].attributes.set(
+    for (let pid of toRotate) points[pid] = points[pid].rotate(so.rotate, so.at)
+    for (let pid of toRotate.slice(8)) {
+      points[pid].attributes.set(
         'data-text-transform',
-        `rotate(${so.rotate * -1}, ${this.points[pid].x}, ${this.points[pid].y})`
+        `rotate(${so.rotate * -1}, ${points[pid].x}, ${points[pid].y})`
       )
     }
   }
   // Paths
-  this.paths.__scaleboxImperial = new this.Path()
+  paths.__scaleboxImperial = new Path()
     .attr('class', 'scalebox imperial fill-current')
-    .move(this.points.__scaleboxImperialTopLeft)
-    .line(this.points.__scaleboxImperialBottomLeft)
-    .line(this.points.__scaleboxImperialBottomRight)
-    .line(this.points.__scaleboxImperialTopRight)
+    .move(points.__scaleboxImperialTopLeft)
+    .line(points.__scaleboxImperialBottomLeft)
+    .line(points.__scaleboxImperialBottomRight)
+    .line(points.__scaleboxImperialTopRight)
     .close()
-  this.paths.__scaleboxMetric = new this.Path()
+  paths.__scaleboxMetric = new Path()
     .attr('class', 'scalebox metric fill-bg')
-    .move(this.points.__scaleboxMetricTopLeft)
-    .line(this.points.__scaleboxMetricBottomLeft)
-    .line(this.points.__scaleboxMetricBottomRight)
-    .line(this.points.__scaleboxMetricTopRight)
+    .move(points.__scaleboxMetricTopLeft)
+    .line(points.__scaleboxMetricBottomLeft)
+    .line(points.__scaleboxMetricBottomRight)
+    .line(points.__scaleboxMetricTopRight)
     .close()
   // Lead
-  this.points.__scaleboxLead = this.points.__scaleboxLead
+  points.__scaleboxLead = points.__scaleboxLead
     .attr('data-text', so.lead || 'FreeSewing')
     .attr('data-text-class', 'text-sm')
   // Title
-  if (so.title) this.points.__scaleboxTitle.attributes.set('data-text', so.title)
+  if (so.title) points.__scaleboxTitle.attributes.set('data-text', so.title)
   else {
-    let name = this.context.config?.data?.name || 'No Name'
+    let name = store.data?.name || 'No Name'
     if (name.indexOf('@freesewing/') !== -1) name = name.replace('@freesewing/', '')
-    this.points.__scaleboxTitle = this.points.__scaleboxTitle
+    points.__scaleboxTitle = points.__scaleboxTitle
       .attr('data-text', name)
-      .attr('data-text', 'v' + (this.context.config?.data?.version || 'No Version'))
+      .attr('data-text', 'v' + (store.data?.version || 'No Version'))
   }
-  this.points.__scaleboxTitle.attributes.add('data-text-class', 'text-lg')
+  points.__scaleboxTitle.attributes.add('data-text-class', 'text-lg')
   // Text
   if (typeof so.text === 'string') {
-    this.points.__scaleboxText.attr('data-text', so.text)
+    points.__scaleboxText.attr('data-text', so.text)
   } else {
-    this.points.__scaleboxText.attr('data-text', 'supportFreesewingBecomeAPatron')
-    this.points.__scaleboxLink = this.points.__scaleboxLink
+    points.__scaleboxText.attr('data-text', 'supportFreesewingBecomeAPatron')
+    points.__scaleboxLink = points.__scaleboxLink
       .attr('data-text', 'freesewing.org/patrons/join')
       .attr('data-text-class', 'text-sm fill-note')
   }
-  this.points.__scaleboxText.attr('data-text-class', 'text-xs').attr('data-text-lineheight', 4)
+  points.__scaleboxText.attr('data-text-class', 'text-xs').attr('data-text-lineheight', 4)
   // Instructions
-  this.points.__scaleboxMetric = this.points.__scaleboxMetric
+  points.__scaleboxMetric = points.__scaleboxMetric
     .attr('data-text', 'theWhiteInsideOfThisBoxShouldMeasure')
     .attr('data-text', `${metricDisplayWidth}`)
     .attr('data-text', 'x')
     .attr('data-text', `${metricDisplayHeight}`)
     .attr('data-text-class', 'text-xs center')
-  this.points.__scaleboxImperial = this.points.__scaleboxImperial
+  points.__scaleboxImperial = points.__scaleboxImperial
     .attr('data-text', 'theBlackOutsideOfThisBoxShouldMeasure')
     .attr('data-text', `${imperialDisplayWidth}`)
     .attr('data-text', 'x')
