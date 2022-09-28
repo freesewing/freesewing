@@ -1,5 +1,7 @@
 // Constant
+export const acrossBackFactor = 0.97
 export const frontOverlap = 0.01
+export const frontArmholeDeeper = 0.005
 // Fit
 export const armholeDepthFactor = { pct: 70, min: 60, max: 80, menu: 'fit' }
 export const backScyeDart = { deg: 2, min: 0, max: 6, menu: 'fit' }
