@@ -1,7 +1,7 @@
 ---
-title: Paperless
+title: Без паперу
 ---
 
-Paperless patterns have extra markings to use them without a printer.
+Викрійки без паперу мають додаткові позначки для їх використання без друку.
 
-The idea is that with the help of the grid and the extra dimensions, you don't need to print the pattern. Instead, you can transfer it directly onto fabric, or onto a intermediate medium such as drafting paper.
+Ідея в тому, що за належності сітки та додаткових вимірів можна не друкувати викрійку. Натомість Ви можете перенести її відразу на тканину або на папір для креслення.

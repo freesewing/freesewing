@@ -10,10 +10,10 @@ Wir sind zuversichtlich, dass sie unser Engagement für Privatsphäre unter Bewe
 
 Der Übersicht wegen haben wir dies in vier verschiedene Rollen aufgeteilt:
 
-- For **visitors of our website**, we store **[visitor data][v]**
-- For **subscribers to our newsletter**, we store **[subscriber data][s]**
-- For **users with an account** on our website, we store **[account data][a]**
-- For **users with an account that contains people**, we store **[people data][p]**
+- Für **Besucher/-innen unserer Website** speichern wir **[Besuchsdaten][v]**
+- Für **Abonnenten unseres Newsletters** speichern wir **[Abonnentendaten][s]**
+- Für **Benutzer/-innen mit einem Account** auf unserer Website speichern wir **[Accountdaten][a]**
+- Für **Benutzer/-innen mit einem Account, der Personen enthält**, speichern wir **[Personendaten][p]**
 
 Hier sind die relevanten Abschnitte:
 
@@ -23,8 +23,8 @@ Hier sind die relevanten Abschnitte:
 
 ##### Diese Rollen sind normalerweise kumulativ
 
-Wenn du ein Newsletter-Abonnent bist, bist du auch Besucher.
-Und wenn du ein/e Benutzer/in mit einem oder mehrerer Modellen bist, bist du auch ein/e Nutzer/in und ebenso ein/e Besucher/in.
+Wenn du Newsletter-Abonnent/-in bist, bist du auch Besucher/-in.
+Und wenn du Benutzer/-in mit einem oder mehreren Modellen bist, bist du auch Nutzer/-in und ebenso Besucher/-in.
 
 </Tip>
 
@@ -34,7 +34,7 @@ Bei Fragen zu dieser Datenschutzerklärung kannst du dich an Joost De Cock unter
 
 ##### Änderungen und Aktualisierungen dieser Erklärung
 
-Diese Erklärung kann gelegentlich aktualisiert werden. Wir werden dies bei **Letztes Update** am oberen Rand dieses Dokuments angeben.
+Diese Erklärung kann gelegentlich aktualisiert werden. Wir werden dies bei den **Letztes Update** Informationen am oberen Rand dieses Dokuments angeben.
 
 Eine umfassendere Übersicht über die bisherigen Änderungen dieses Dokuments ist [auf GitHub][1] verfügbar
 

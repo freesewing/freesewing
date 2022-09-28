@@ -17,7 +17,7 @@ To make Jaeger, you will need the following:
 
 <Note>
 
-\####### Where to get all this stuff
+###### Where to get all this stuff
 
 Making Jaeger is a fun and rewarning project, but getting all the required bits and pieces can be challenging.
 
@@ -30,8 +30,8 @@ Si sabes dónde conseguirlos, genial. If not, you can get a **Jacket trim pack**
 It's a shop for professionals (they're not even open on Saturdays) but they don't require you to be a business
 to place an order.
 
-No tengo afiliación con estos chicos, pero es el único lugar que conozco que te venderá un kit de
-trinmings profesionales para hacer un jacket.
+I have no affiliation with these guys, but it's the only place I know of that will sell you a kit of
+professional trimmings to make a jacket.
 
 Si conoces cualquier otro lugar que lleve esta materia, por favor háznoslo saber.
 

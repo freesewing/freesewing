@@ -1,7 +1,7 @@
 ---
-title: Bust front
+title: Передній напівобхват грудей
 ---
 
-The **bust front** is the front part of your chest circumference.
+**Передній напівобхват грудей** — це передня частина обхвату грудей.
 
-To measure your bust front, run the tape measure horizontally accross the fullest part of your chest, starting at the side (seam) on one side, across your breasts to the side (seam) on the other side.
+Для зняття переднього напівобхвату грудей, горизонтально виміряйте найширшу частину грудей, починаючи з одного бокового шва, через груди та закінчуючи протилежним боковим швом.

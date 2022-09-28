@@ -20,7 +20,7 @@ Wir haben zwar nicht die Absicht, irgendwelche deiner persönlichen Daten weiter
 
 Wenn wir gesetzlich dazu verpflichtet sind oder wenn wir der Meinung sind, dass dies das kleinere Übel wäre, werden wir personenbezogene Daten preisgeben.
 
-Bisher haben wir von der Strafverfolgung keine Anfrage erhalten, Informationen über eine/n unserer Nutzer/innen zu veröffentlichen. Wir haben auch keine persönlichen Informationen aus irgendeinem anderen Grund preisgegeben.
+Bisher haben wir von der Strafverfolgung keine Anfrage erhalten, Informationen über eine/n unserer Nutzer/-innen zu veröffentlichen. Wir haben auch keine persönlichen Informationen aus irgendeinem anderen Grund preisgegeben.
 
 ##### Nutzung von Minderjährigen unter 16 Jahren
 

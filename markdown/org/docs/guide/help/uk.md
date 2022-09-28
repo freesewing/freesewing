@@ -1,8 +1,8 @@
 ---
-title: Getting help
+title: Як отримати допомогу
 order: 999
 ---
 
-If you get stuck or have questions, you can [join us on Discord](https://discord.freesewing.org/) where there's always somebody around to offer help.
+Якщо Ви застрягли на якійсь частині або маєте запитання, Ви можете [долучитися до нас в Discord](https://discord.freesewing.org/), де завжди є хтось, хто не проти допомогти.
 
-Altenatively, you can check out some of the other places [where you can find us](/community/where/).
+Як альтернатива, Ви можете переглянути інші місця, [де ми також є](/community/where/).

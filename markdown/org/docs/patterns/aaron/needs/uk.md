@@ -1,19 +1,19 @@
 - - -
-title: "Aaron A-Shirt: What You Need"
+title: "Майка Аарон: Матеріали"
 - - -
 
-To make Aaron, you will need the following:
+Щоб пошити Майку Аарон, Вам потрібно:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 75 сантиметрів (0,8 ярдів) належної тканини ([див. Вибір тканини](/docs/patterns/aaron/fabric))
 
 <Note>
 
-#### A serger/overlock is nice, but optional
+#### Використовувати машину-оверлок рекомендовано, проте не обов’язково
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+При роботі з трикотажними тканинами та тканинами, що тягнуться, прийнято використовувати оверлок - це значно полегшує увесь процес.
 
-If you do not have one of those, don't despair. You don't really need it.
-Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
+Проте, якщо у Вас її немає - не розчаровуйтесь. Для цього проєкту вона не обов'язкова.
+Плечові та бокові шви не будуть розтягуватися, тому Ви можете зшити частини виробу простим прямим стібком на домашній машинці.
 
 </Note>

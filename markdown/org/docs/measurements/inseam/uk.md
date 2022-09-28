@@ -1,7 +1,7 @@
 ---
-title: Inseam
+title: Внутрішній шов
 ---
 
-The **inseam** is the measurement from your crotch down to the floor.
+Вимір **внутрішній шов** — це відстань від паху до підлоги.
 
-To measure your **inseam**, measure down vertically from the point your legs join (at the crotch) down to the floor.
+Для зняття внутрішнього шва, вимірюйте вертикально вниз від нижньої точки паху до поверхні підлоги.

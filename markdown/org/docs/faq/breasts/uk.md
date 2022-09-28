@@ -1,23 +1,23 @@
 ---
-title: "What's all this talk about with or without breasts?"
+title: "З молочними залозами чи без: про що це все?"
 ---
 
-Some people get confused by the terms _with breasts_ and _without breasts_.
+Багатьох людей дивує використання термінології _з молочними залозами_ та _без молочних залоз_.
 
-We use these terms as a gender-inclusive way to ask whether or not a person has breasts.
+Ми використовуємо ці терміни, аби запитання було гендерно-нейтральним, а й, отже, гендерно інклюзивним.
 
-##### As it applies to bodies
+##### Як це стосується людських тіл
 
-Nearly every clothing company has two main categories for their clothing: menswear and womenswear. These garment designs are usually based off of the ideal or average body. Meaning, for womenswear, the designer will likely make a garment for a body with breasts, narrow shoulders, a smaller waist and wide hips.
+Майже кожна компанія, що виробляє одяг, має дві основні категорії: чоловічий одяг та жіночий одяг. Дизайн таких виробів зазвичай залежить від стандартизованих розмірних таблиць, які базуються на ідеалізованих чи середньостатистичних тілах. Отже, для жіночого одягу дизайнери найчастіше роблять вироби для тіла, яке має молочні залози, вузькі плечі, тонку талію та широкі стегна.
 
-These characteristics are generally thought of as _the typical characteristics of a woman's body_. However, we believe it is best to stay away from this; no body is average and we want to build a gender-inclusive environment.
+Ці атрибути зазвичай вважаються _типовими характеристиками жіночого тіла_. Однак ми хочемо відійти від цих стандартів; жодне тіло не підкорюється середньостатистичним показникам та ми прагнемо побудувати гендерно інклюзивний простір на нашому сайті.
 
-We do not want to exclude anyone and we think that _body shape ≠ gender_. That's why we use the terminology **with breasts** and **without breasts**, simply asking whether a person has breast tissue or not.
+Ми прагнемо, аби жодна людина не відчувала себе покинутою, користуючись нашими викрійками, та ми вважаємо, що _анатомія ≠ гендер_. Тому ми використовуємо терміни **з молочними залозами** та **без молочних залоз**, питаючи Вас це при створенні викрійок на базі Ваших вимірів.
 
-##### How it applies to patterns
+##### Як це стосується викрійок
 
-Any user can draft any pattern on our site, as long as they provide the required measurements. Which for some patterns includes measurements that are only relevant if you have breasts.
+Будь-який користувач може створити будь-яку викрійку на нашому сайті, доки вони матимуть потрібні виміри. Деякі викрійки потребують виміри, які актуальні лише якщо людина має молочні залози. Викрійки, розраховані на людей з молочними залозами часто мають у назві _з виточками_.
 
-##### How it applies to binding
+##### Як це стосується утягування
 
-If you are binding, use the **without breasts** patterns, and use the cirumference of your binded chest as [chest measurement](/docs/measurements/chest/)
+Якщо Ви утягуєте груди/носите біндер, ми рекомендуємо створити профіль вимірів **без молочних залоз** та використовувати викрійки без виточок. В такому випадку вимірюйте [обхват грудей](/docs/measurements/chest/) під час утягування.

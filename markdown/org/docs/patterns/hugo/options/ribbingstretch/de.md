@@ -4,9 +4,9 @@ title: "Ribbing stretch"
 
 ![Ribbing-Strecken auf Hugo](./ribbingstretch.svg)
 
-Mit dieser Option können Sie die Streckung Ihres Bandes optimieren.
+Mit dieser Option kannst du die Dehnung deines Bündchens anpassen.
 
-Wenn Sie zum Beispiel 90% für jedes 10cm Band auswählen, werden wir nur 9 cm aufnehmen. Auf diese Weise werden 9 cm Bänder auf 10 cm gestreckt.
+Wenn du zum Beispiel 90% für jede 10cm an Bündchen auswählst, werden wir nur 9 cm zeichnen. Auf diese Weise werden 9 cm Bänder auf 10 cm gestreckt.
 
 <Note>
 

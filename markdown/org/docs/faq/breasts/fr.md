@@ -18,6 +18,6 @@ We do not want to exclude anyone and we think that _body shape ≠ gender_. That
 
 Any user can draft any pattern on our site, as long as they provide the required measurements. Which for some patterns includes measurements that are only relevant if you have breasts.
 
-##### Comment cela s'applique au bandage de la poitrine
+##### How it applies to chest binding
 
-Si vous vous bandez la poitrine, utilisez les patrons **sans seins**, et utilisez la circonférence de votre poitrine bandée comme mesure de [Tour de Poitrine](/docs/measurements/chest/)
+If you are chest binding — effectively flattening your chest — use the **without breasts** patterns, and use the cirumference of your bound chest as [chest measurement](/docs/measurements/chest/)

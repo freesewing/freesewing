@@ -1,11 +1,11 @@
 ---
-title: Configuring your pattern
+title: Налаштування викрійки
 order: 998
 ---
 
-When you [create a pattern](/create/) there are two important groups of things you can tweak:
+Коли Ви [створюєте викрійку](/create/), Вам доступні 2 основні групи налаштувань:
 
-- The **design options** are options the designer added to the pattern. Typically style and fit choices.
-- The **pattern options** are a set of options that come with the platform, and are available for all patterns. Below is a complete list:
+- **Налаштування дизайну** додає дизайнер до викрійки. Зазвичай ця група допомагає налаштувати стиль та посадку.
+- **Налаштування кресленика** є загальними для сайту та доступні для всіх викрійок. Нижче наведено повний список:
 
 <ReadMore list />
