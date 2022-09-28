@@ -184,8 +184,6 @@ export const front = {
     points.frontHipRight = points.frontSeatLeft.flipX(points.frontWaistMid)
     points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
 
-    console.log('points', points)
-
     /* Middle point for label */
     points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(
       points.frontLegOpeningRight,
