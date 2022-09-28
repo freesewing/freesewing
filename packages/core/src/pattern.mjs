@@ -1257,25 +1257,22 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
     if (part.hideAll) this.__mutated.partHide[part.name] = true
     // Inject (from)
     if (part.from) {
-      if (part.hideDependencies || part.hideAll || this.__mutated.partHideAll[name]) {
-        // Don't mutate the part, keep this info in the pattern object
-        this.__mutated.partHide[part.from.name] = true
-        this.__mutated.partHideAll[part.from.name] = true
-        this.__mutated.partDistance[part.from.name] = distance
-      }
+      this.__setFromHide(part, name, part.from.name)
       this.__designParts[part.from.name] = part.from
       this.__inject[name] = part.from.name
+      this.__mutated.partDistance[part.from.name] = distance
     }
     // Simple dependency (after)
     if (part.after) {
       if (Array.isArray(part.after)) {
         for (const dep of part.after) {
-          // Don't mutate the part, keep this info in the pattern object
+          this.__setAfterHide(part, name, dep.name)
           this.__mutated.partDistance[dep.name] = distance
           this.__designParts[dep.name] = dep
           this.__addDependency(name, part, dep)
         }
       } else {
+        this.__setAfterHide(part, name, part.after.name)
         this.__mutated.partDistance[part.after.name] = distance
         this.__designParts[part.after.name] = part.after
         this.__addDependency(name, part, part.after)
@@ -1359,6 +1356,49 @@ Pattern.prototype.__setBase = function () {
     measurements: { ...(this.settings[0].measurements || {}) },
     options: { ...(this.settings[0].options || {}) },
   }
+}
+
+/**
+ * Sets visibility of a dependency based on its config
+ *
+ * @private
+ * @param {Part} part - The part of which this is a dependency
+ * @param {string} name - The name of the part
+ * @param {string} depName - The name of the dependency
+ * @param {int} set - The index of the set in the list of settings
+ * @return {Pattern} this - The Pattern instance
+ */
+Pattern.prototype.__setFromHide = function (part, name, depName) {
+  if (
+    part.hideDependencies ||
+    part.hideAll ||
+    this.__mutated.partHide[name] ||
+    this.__mutated.partHideAll[name]
+  ) {
+    this.__mutated.partHide[depName] = true
+    this.__mutated.partHideAll[depName] = true
+  }
+
+  return this
+}
+
+/**
+ * Sets visibility of an 'after' dependency based on its config
+ *
+ * @private
+ * @param {Part} part - The part of which this is a dependency
+ * @param {string} name - The name of the part
+ * @param {string} depName - The name of the dependency
+ * @param {int} set - The index of the set in the list of settings
+ * @return {Pattern} this - The Pattern instance
+ */
+Pattern.prototype.__setAfterHide = function (part, name, depName) {
+  if (this.__mutated.partHide[name] || this.__mutated.partHideAll[name]) {
+    this.__mutated.partHide[depName] = true
+    this.__mutated.partHideAll[depName] = true
+  }
+
+  return this
 }
 
 /**
