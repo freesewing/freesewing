@@ -1,10 +1,20 @@
 import { init } from './init.mjs'
 import { back } from './back.mjs'
 
-function draftBruceInset (part) {
-  let { store, sa, Point, points, Path, paths, complete, paperless, macro, Snippet, snippets } =
-    part.shorthand()
-
+function draftBruceInset({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  Snippet,
+  snippets,
+  part,
+}) {
   // Initialize
   init(part)
 
@@ -35,8 +45,8 @@ function draftBruceInset (part) {
     .line(points.tip)
     .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
     .line(points.bottomLeft)
-    .setRender(false)
-  paths.hemBase = new Path().move(points.bottomLeft).line(points.bottomRight).setRender(false)
+    .hide()
+  paths.hemBase = new Path().move(points.bottomLeft).line(points.bottomRight).hide()
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   // Complete pattern?

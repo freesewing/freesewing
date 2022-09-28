@@ -1,10 +1,20 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { frontpoints } from './frontpoints.mjs'
 
-function draftCorneliusFront (part) {
-  let { options, Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
-    part.shorthand()
-
+function draftCorneliusFront({
+  options,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   const cc = 0.551915024494 // circle constant
 
   let halfInch = store.get('halfInch')
@@ -44,17 +54,14 @@ function draftCorneliusFront (part) {
     .line(points.flyTop)
     .line(points.flyBottom)
     .curve(points.pFBcpZ, points.pZcpFB, points.pZ)
-    .setRender(false)
+    .hide()
 
   paths.flyFold = new Path().move(points.pW).line(points.pZ).attr('class', 'fabric dashed')
   store.set('flyLength', paths.flyFold.length())
 
   store.set('frontWaistLength', paths.waistSeam.line(points.flyTop).length())
 
-  paths.crotchSeam = new Path()
-    .move(points.pZ)
-    .curve(points.pZcpR, points.pRcpZ, points.pR)
-    .setRender(false)
+  paths.crotchSeam = new Path().move(points.pZ).curve(points.pZcpR, points.pRcpZ, points.pR).hide()
 
   points.pRcpK = points.pR
     .shiftFractionTowards(points.pF, options.pctRtoKin)
@@ -63,20 +70,14 @@ function draftCorneliusFront (part) {
     .shiftFractionTowards(points.pH, -1 * (options.pctKtoRout + options.fullness))
     .shiftFractionTowards(points.pR, options.pctKtoRup)
 
-  paths.insideSeam = new Path()
-    .move(points.pR)
-    .curve(points.pRcpK, points.pKcpR, points.pK)
-    .setRender(false)
+  paths.insideSeam = new Path().move(points.pR).curve(points.pRcpK, points.pKcpR, points.pK).hide()
   store.set('insideSeam', paths.insideSeam.length())
 
   let tempP = points.pH.shift(270, halfInch * 1.5)
   points.pKcpH = points.pK.shiftFractionTowards(tempP, options.pctKtoH)
   points.pJcpH = points.pJ.shiftFractionTowards(tempP, options.pctKtoH)
 
-  paths.legSeam = new Path()
-    .move(points.pK)
-    .curve(points.pKcpH, points.pJcpH, points.pJ)
-    .setRender(false)
+  paths.legSeam = new Path().move(points.pK).curve(points.pKcpH, points.pJcpH, points.pJ).hide()
 
   store.set('frontLegSeam', paths.legSeam.length())
 
@@ -93,7 +94,7 @@ function draftCorneliusFront (part) {
   points.pocketWaist = paths.waistSeam.shiftAlong(waist / 2 / 4.5)
   points.pocketSide = paths.sideSeam.shiftAlong(paths.sideSeam.length() - (waist / 2 / 4.5) * 3.5)
 
-  paths.pocketSeam = new Path().move(points.pocketSide).line(points.pocketWaist).setRender(false)
+  paths.pocketSeam = new Path().move(points.pocketSide).line(points.pocketWaist).hide()
 
   paths.waistSeam = paths.waistSeam.split(points.pocketWaist)[1]
   paths.sideSeam = paths.sideSeam.split(points.pocketSide)[0]
@@ -246,6 +247,6 @@ export const front = {
     pctKtoRup: 0.25,
     pctKtoH: 0.7,
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftCorneliusFront,
 }

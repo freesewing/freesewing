@@ -8,9 +8,8 @@ import { ribbon } from './ribbon.mjs'
 // Setup our new design
 const Benjamin = new Design({
   data,
-  parts: [ bow1, bow2, bow3, ribbon ],
+  parts: [bow1, bow2, bow3, ribbon],
 })
 
 // Named exports
 export { bow1, bow2, bow3, ribbon, Benjamin }
-

@@ -1,12 +1,12 @@
 module.exports = function tests(store, config, chai) {
   describe('Non language-specific User controller signup routes', () => {
-    it('should not create signup without email address', done => {
+    it('should not create signup without email address', (done) => {
       chai
         .request(config.backend)
         .post('/signup')
         .send({
           password: config.user.password,
-          language: 'en'
+          language: 'en',
         })
         .end((err, res) => {
           res.should.have.status(400)
@@ -15,13 +15,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should not create signup without password', done => {
+    it('should not create signup without password', (done) => {
       chai
         .request(config.backend)
         .post('/signup')
         .send({
           email: config.user.email,
-          language: 'en'
+          language: 'en',
         })
         .end((err, res) => {
           res.should.have.status(400)
@@ -30,13 +30,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should not create signup without language', done => {
+    it('should not create signup without language', (done) => {
       chai
         .request(config.backend)
         .post('/signup')
         .send({
           email: config.user.email,
-          password: config.user.password
+          password: config.user.password,
         })
         .end((err, res) => {
           res.should.have.status(400)
@@ -47,13 +47,13 @@ module.exports = function tests(store, config, chai) {
   })
 
   describe('Login/Logout and session handling', () => {
-    it('should login with the username', done => {
+    it('should login with the username', (done) => {
       chai
         .request(config.backend)
         .post('/login')
         .send({
           username: config.user.username,
-          password: config.user.password
+          password: config.user.password,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -65,13 +65,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should login with the email address', done => {
+    it('should login with the email address', (done) => {
       chai
         .request(config.backend)
         .post('/login')
         .send({
           username: config.user.email,
-          password: config.user.password
+          password: config.user.password,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -82,7 +82,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should load account with JSON Web Token', done => {
+    it('should load account with JSON Web Token', (done) => {
       chai
         .request(config.backend)
         .get('/account')
@@ -101,13 +101,13 @@ module.exports = function tests(store, config, chai) {
   })
 
   describe('Account management', () => {
-    it('should update the account avatar', done => {
+    it('should update the account avatar', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          avatar: config.avatar
+          avatar: config.avatar,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -116,13 +116,13 @@ module.exports = function tests(store, config, chai) {
           done()
         })
     })
-    it('should update the account username', done => {
+    it('should update the account username', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          username: config.user.username + '_updated'
+          username: config.user.username + '_updated',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -132,13 +132,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should restore the account username', done => {
+    it('should restore the account username', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          username: config.user.username
+          username: config.user.username,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -148,13 +148,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should not update the account username if that username is taken', done => {
+    it('should not update the account username if that username is taken', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          username: 'admin'
+          username: 'admin',
         })
         .end((err, res) => {
           res.should.have.status(400)
@@ -163,14 +163,14 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the account bio', done => {
+    it('should update the account bio', (done) => {
       let bio = 'This is the test bio '
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          bio: bio
+          bio: bio,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -180,15 +180,15 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the account language', done => {
+    it('should update the account language', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
           settings: {
-            language: 'nl'
-          }
+            language: 'nl',
+          },
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -198,15 +198,15 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the account units', done => {
+    it('should update the account units', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
           settings: {
-            units: 'imperial'
-          }
+            units: 'imperial',
+          },
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -217,7 +217,7 @@ module.exports = function tests(store, config, chai) {
     })
 
     for (let network of ['github', 'twitter', 'instagram']) {
-      it(`should update the account's ${network} username`, done => {
+      it(`should update the account's ${network} username`, (done) => {
         let data = { social: {} }
         data.social[network] = network
         chai
@@ -233,13 +233,13 @@ module.exports = function tests(store, config, chai) {
       })
     }
 
-    it('should update the account password', done => {
+    it('should update the account password', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          password: 'changeme'
+          password: 'changeme',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -247,13 +247,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should login with the new password', done => {
+    it('should login with the new password', (done) => {
       chai
         .request(config.backend)
         .post('/login')
         .send({
           username: config.user.username,
-          password: 'changeme'
+          password: 'changeme',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -261,13 +261,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should restore the account password', done => {
+    it('should restore the account password', (done) => {
       chai
         .request(config.backend)
         .put('/account')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          password: config.user.password
+          password: config.user.password,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -277,7 +277,7 @@ module.exports = function tests(store, config, chai) {
   })
 
   describe('Other user endpoints', () => {
-    it("should load a user's profile", done => {
+    it("should load a user's profile", (done) => {
       chai
         .request(config.backend)
         .get('/users/admin')
@@ -290,13 +290,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should confirm that a username is available', done => {
+    it('should confirm that a username is available', (done) => {
       chai
         .request(config.backend)
         .post('/available/username')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          username: Date.now() + '  ' + Date.now()
+          username: Date.now() + '  ' + Date.now(),
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -304,13 +304,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should confirm that a username is not available', done => {
+    it('should confirm that a username is not available', (done) => {
       chai
         .request(config.backend)
         .post('/available/username')
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          username: 'admin'
+          username: 'admin',
         })
         .end((err, res) => {
           res.should.have.status(400)
@@ -318,7 +318,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should load the patron list', done => {
+    it('should load the patron list', (done) => {
       chai
         .request(config.backend)
         .get('/patrons')
@@ -332,7 +332,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should export the user data', done => {
+    it('should export the user data', (done) => {
       chai
         .request(config.backend)
         .get('/account/export')

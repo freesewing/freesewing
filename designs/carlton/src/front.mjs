@@ -1,24 +1,23 @@
 import { front as bentFront } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
 
-function draftCarltonFront (part) {
-  let {
-    paperless,
-    sa,
-    snippets,
-    Snippet,
-    utils,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
-
+function draftCarltonFront({
+  paperless,
+  sa,
+  snippets,
+  Snippet,
+  utils,
+  store,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   calculateRatios(part)
 
   // Waist shaping
@@ -223,8 +222,8 @@ function draftCarltonFront (part) {
     .line(points.hemEdge)
     .line(points.flbHem)
   paths.hemBase = new Path().move(points.flbHem).line(points.hem)
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   paths.rollLine = new Path()
@@ -479,11 +478,7 @@ export const front = {
   name: 'carlton.front',
   from: bentFront,
   hideDependencies: true,
-  measurements: [
-    'waist',
-    'waistToFloor',
-    'waistToSeat',
-  ],
+  measurements: ['waist', 'waistToFloor', 'waistToSeat'],
   options: {
     chestEase: { pct: 10, min: 5, max: 20, menu: 'fit' },
     buttonSpacingHorizontal: { pct: 43.5, min: 15, max: 60, menu: 'style' },

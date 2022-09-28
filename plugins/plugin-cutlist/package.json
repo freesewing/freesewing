@@ -1,7 +1,7 @@
 {
   "name": "@freesewing/plugin-cutlist",
   "version": "3.0.0-alpha.0",
-  "description": "A FreeSewing plugin to store a pattern's cutlist",
+  "description": "A FreeSewing plugin to store data regarding a pattern's cutlist",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -38,9 +38,12 @@
     "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
-    "cibuild_step1": "node build.mjs"
+    "cibuild_step1": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step1": "node build.mjs"
   },
   "peerDependencies": {
     "@freesewing/core": "^3.0.0-alpha.0"

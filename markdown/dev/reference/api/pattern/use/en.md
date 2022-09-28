@@ -2,10 +2,9 @@
 title: Pattern.use()
 ---
 
-A pattern's `use()` method will load a FreeSewing plugin.
-Plugins are a way to extend a pattern's functionality, and can be
-loaded both at build-time and at run-time. This method only applies
-to run-time plugins. For more details, refer to [the plugin guide](/guides/plugins/).
+The `Pattern.use()` method will load a FreeSewing plugin.
+Plugins are a way to extend a pattern's functionality.
+For more details, refer to [the plugin guide](/guides/plugins/).
 
 <Note>This method is chainable as it returns the Pattern object</Note>
 
@@ -21,16 +20,13 @@ you plugin object.
 ## Pattern.use() example
 
 ```js
-import Aaron from "@freesewing/aaron"
-import models from "@freesewing/models"
-import theme from "@freesewing/theme"
+import { Aaron } from "@freesewing/aaron"
+import { cisFemaleAdult34 } from "@freesewing/models"
+import { pluginTheme } from "@freesewing/plugin-theme"
 
 const pattern = new Aaron({
-  settings: {
-    embed: true,
-  },
-  measurements: models.manSize38
-}).use(theme)
+  measurements: cisFemaleAdult34
+}).use(pluginTheme)
 
 const svg = pattern.draft().render()
 ```

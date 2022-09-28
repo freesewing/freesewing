@@ -12,21 +12,20 @@ import {
   ffsa,
 } from './options.mjs'
 
-function simonFront(part) {
-  const {
-    store,
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    macro,
-    snippets,
-    options,
-  } = part.shorthand()
-
+function simonFront({
+  store,
+  measurements,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  macro,
+  snippets,
+  options,
+  part,
+}) {
   // Clean up
   for (const i in paths) {
     if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
@@ -111,10 +110,10 @@ function simonFront(part) {
   }
 
   // Paths
-  paths.saBase.render = false
-  paths.saBaseFromHips.render = false
-  paths.saBaseFromArmhole.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.saBaseFromHips.hide()
+  paths.saBaseFromArmhole.hide()
+  paths.hemBase.hide()
   paths.seam = paths.hemBase
     .join(paths.saBase)
     .join(paths.saBaseFromArmhole)
@@ -136,14 +135,14 @@ function simonFront(part) {
     if (sa) {
       paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
       macro('banner', {
-        path: 'saFrench',
+        path: paths.saFrench,
         text: 'flatFelledSeamAllowance',
         repeat: 30,
       })
       paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
       paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
       macro('banner', {
-        path: 'hemSa',
+        path: paths.hemSa,
         text: ['hem', ': 3x', 'seamAllowance'],
       })
       paths.saConnect = new Path()

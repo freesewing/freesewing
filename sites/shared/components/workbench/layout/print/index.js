@@ -44,7 +44,7 @@ const PrintLayout = props => {
     handleExport('pdf', props.gist, props.design, t, props.app, (e) => setError(false), (e) => setError(true))
   }
 
-  let name = props.design.config.data.name
+  let name = props.design.designConfig.data.name
   name = name.replace('@freesewing/', '')
   return (
     <div>

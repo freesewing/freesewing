@@ -1,13 +1,12 @@
 module.exports = function tests(store, config, chai) {
-
   describe('Oauth via Github', () => {
-    it('should trigger Oauth via Github', done => {
+    it('should trigger Oauth via Github', (done) => {
       chai
         .request(config.backend)
         .post('/oauth/init')
         .send({
           provider: 'github',
-          language: 'en'
+          language: 'en',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -18,13 +17,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should trigger Oauth via Google', done => {
+    it('should trigger Oauth via Google', (done) => {
       chai
         .request(config.backend)
         .post('/oauth/init')
         .send({
           provider: 'github',
-          language: 'en'
+          language: 'en',
         })
         .end((err, res) => {
           res.should.have.status(200)

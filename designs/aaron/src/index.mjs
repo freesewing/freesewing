@@ -6,7 +6,7 @@ import { front } from './front.mjs'
 // Setup our new design
 const Aaron = new Design({
   data,
-  parts: [ back, front ],
+  parts: [back, front],
 })
 
 // Named exports

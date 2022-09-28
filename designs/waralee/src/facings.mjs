@@ -1,21 +1,20 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleeFacings(part) {
-  const {
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    sa,
-  } = part.shorthand()
-
+function waraleeFacings({
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  sa,
+  part,
+}) {
   let frontPocketSize =
     options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
   let backPocketSize =
@@ -39,7 +38,7 @@ function waraleeFacings(part) {
     .line(points.frontTL)
     .close()
     .attr('class', 'fabric')
-    .setRender(options.frontPocket && 'welt' == options.frontPocketStyle)
+    .setHidden(!(options.frontPocket && 'welt' == options.frontPocketStyle))
 
   paths.backSeam = new Path()
     .move(points.backTL)
@@ -49,7 +48,7 @@ function waraleeFacings(part) {
     .line(points.backTL)
     .close()
     .attr('class', 'fabric')
-    .setRender(options.backPocket)
+    .setHidden(!options.backPocket)
 
   // Complete?
   if (complete) {

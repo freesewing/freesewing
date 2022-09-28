@@ -1,7 +1,7 @@
 export const base = {
   name: 'pluginstest.base',
   hide: true,
-  draft: part => part,
+  draft: ({ part }) => part,
   options: {
     plugin: {
       dflt: 'all',
@@ -28,6 +28,5 @@ export const base = {
       ],
       menu: 'tests',
     },
-  }
+  },
 }
-

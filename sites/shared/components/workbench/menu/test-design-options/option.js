@@ -1,9 +1,7 @@
-import { linkClasses } from 'shared/components/navigation/primary.js'
 import { Li, SumButton, SumDiv } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 
 const Option = props => {
-  const { t } = useTranslation([`o_${props.design.config.data.name}`, 'workbench'])
   const active = (
     props.sampleSettings?.type === 'option' &&
     props.active === props.option

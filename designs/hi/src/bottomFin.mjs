@@ -2,22 +2,21 @@ import { body } from './body.mjs'
 import { belly } from './belly.mjs'
 import { aboveMouth } from './aboveMouth.mjs'
 
-function draftHiBottomFin (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiBottomFin({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let bottomFin01_02d = 250.63638754690027 * options.size
   let bottomFin01_02a = 119.34849371430543
   let bottomFin01_03d = 137.70322741678933 * options.size
@@ -104,7 +103,9 @@ function draftHiBottomFin (part) {
       .shiftAlong(store.get('aboveMouthFinLength'))
     snippets.bottomFin = new Snippet('bnotch', points.bottomFinSnippet)
 
-    points.titleAnchor = points.bottomFin02.shiftFractionTowards(points.bottomFin01, 0.4).shiftFractionTowards(points.bottomFin03, 0.1)
+    points.titleAnchor = points.bottomFin02
+      .shiftFractionTowards(points.bottomFin01, 0.4)
+      .shiftFractionTowards(points.bottomFin03, 0.1)
     points.logoAnchor = points.titleAnchor.shiftFractionTowards(points.bottomFin03, 0.4)
 
     snippets.logo = new Snippet('logo', points.logoAnchor).attr(
@@ -165,12 +166,12 @@ function draftHiBottomFin (part) {
       macro('vd', {
         from: points.bottomFinTop,
         to: points.bottomFin01,
-        x: points.bottomFin01.x +sa + 20,
+        x: points.bottomFin01.x + sa + 20,
       })
       macro('vd', {
         from: points.bottomFinTop,
         to: points.bottomFinInsideBottom,
-        x: points.bottomFin01.x +sa + 10,
+        x: points.bottomFin01.x + sa + 10,
         // id: 'smallRight',
         // noStartMarker: true,
         // noEndMarker: true,
@@ -192,6 +193,6 @@ function draftHiBottomFin (part) {
 
 export const bottomFin = {
   name: 'hi.bottomFin',
-  after: [ body, belly, aboveMouth ],
+  after: [body, belly, aboveMouth],
   draft: draftHiBottomFin,
 }

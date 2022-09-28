@@ -27,7 +27,7 @@ const EditCount = props => (
 
 const DesignOptionCount = props => {
   const { t } = useTranslation(['app'])
-  const { count, max, min } = props.design.config.options[props.option]
+  const { count, max, min } = props.design.patternConfig.options[props.option]
   const val = (typeof props.gist?.options?.[props.option] === 'undefined')
     ? count
     : props.gist.options[props.option]

@@ -6,6 +6,7 @@ export const plugin = {
   macros: {
     round: function (so) {
       const C = 0.55191502449
+      const { hide = true } = so
       // Find angle between points
       let from = so.from
       let to = so.to
@@ -31,9 +32,8 @@ export const plugin = {
           this.points[prefix + 'End']
         )
         .attr('class', so.class ? so.class : '')
-      if (typeof so.render !== 'undefined' && so.render)
-        this.paths[prefix + 'Rounded'].render = true
-      else this.paths[prefix + 'Rounded'].render = false
+      if (hide) this.paths[prefix + 'Rounded'].hide()
+      else this.paths[prefix + 'Rounded'].unhide()
     },
   },
 }
@@ -41,4 +41,3 @@ export const plugin = {
 // More specifically named exports
 export const roundPlugin = plugin
 export const pluginRound = plugin
-

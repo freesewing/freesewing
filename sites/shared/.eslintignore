@@ -1,0 +1,4 @@
+themes/*
+styles/*
+.eslintignore
+*.css

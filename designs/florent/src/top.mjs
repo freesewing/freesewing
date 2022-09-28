@@ -1,9 +1,19 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function draftFlorentTop (part) {
-  let { paperless, sa, points, macro, Point, Path, paths, snippets, Snippet, complete, store } =
-    part.shorthand()
-
+function draftFlorentTop({
+  paperless,
+  sa,
+  points,
+  macro,
+  Point,
+  Path,
+  paths,
+  snippets,
+  Snippet,
+  complete,
+  store,
+  part,
+}) {
   const fitCap = (part, scale) => {
     let { points, options, Point, Path, measurements } = part.shorthand()
 
@@ -125,7 +135,7 @@ function draftFlorentTop (part) {
     .attr('class', 'fabric')
 
   // Uncomment to see the side part here
-  paths.side.render = false
+  paths.side.hide()
 
   if (complete) {
     points.title = new Point(points.midMid.x, points.midFrontCp2.y)
@@ -214,14 +224,14 @@ function draftFlorentTop (part) {
 
 export const top = {
   name: 'florent.top',
-  measurements: [ 'head' ],
-  options : {
+  measurements: ['head'],
+  options: {
     // Constants
     topSide: 0.8,
     brim: 0,
     // Percentages
     headEase: { pct: 2, min: 0, max: 5, menu: 'fit' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftFlorentTop,
 }

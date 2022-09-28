@@ -17,11 +17,28 @@ const colorDot = dot => dot
   .replace(regexA, getColorTint)
   .replace(regexB, getColor)
 const fixSvg = svg => svg.replace(/#000000/g, () => 'currentColor')
+const wrapDot = dot => {
+  if (dot.slice(0,7) === 'digraph') return dot
 
+  return plain
+  ? `digraph G { bgcolor=transparent; ${colorDot(dot)} }`
+  : `digraph G {
+graph [fontname = "Indie Flower"];
+node [fontname = "Indie Flower"];
+edge [fontname = "Indie Flower"];
+bgcolor=transparent;
+overlap=false;
+${colorDot(dot)} }`
+}
 // Supported layout engines
 const engines = [ 'circo', 'dot', 'fdp', 'neato', 'osage', 'twopi' ]
 
 const Dot = props => {
+
+  // Extract code/caption from props
+  const [code, caption] = props.children
+  // Extract dot code from mdx
+  const dot = wrapDot(code.props.children.props.children)
 
   // State and effect are needed to run async code as this
   // library always returns a promise
@@ -68,24 +85,6 @@ const Dot = props => {
     }
   }
 
-  const wrapDot = dot => {
-    if (dot.slice(0,7) === 'digraph') return dot
-
-    return plain
-    ? `digraph G { bgcolor=transparent; ${colorDot(dot)} }`
-    : `digraph G {
-  graph [fontname = "Indie Flower"];
-  node [fontname = "Indie Flower"];
-  edge [fontname = "Indie Flower"];
-  bgcolor=transparent;
-  overlap=false;
-  ${colorDot(dot)} }`
-  }
-
-  // Extract code/caption from props
-  const [code, caption] = props.children
-  // Extract dot code from mdx
-  const dot = wrapDot(code.props.children.props.children)
   // Initialize viz library
   const viz = new Viz({ Module, render })
 

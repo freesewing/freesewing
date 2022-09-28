@@ -3,21 +3,20 @@ import { configpart } from './configpart.mjs'
 export const bib = {
   name: 'tutorial.bib',
   after: configpart,
-  draft: part => {
-    const {
-      Point,
-      points,
-      Path,
-      paths,
-      measurements,
-      options,
-      macro,
-      complete,
-      snippets,
-      Snippet,
-      paperless,
-    } = part.shorthand()
-
+  draft: ({
+    Point,
+    points,
+    Path,
+    paths,
+    measurements,
+    options,
+    macro,
+    complete,
+    snippets,
+    Snippet,
+    paperless,
+    part,
+  }) => {
     // Construct the neck opening
     let tweak = 1
     let target = (measurements.head * options.neckRatio) / 4
@@ -230,5 +229,5 @@ export const bib = {
     }
 
     return part
-  }
+  },
 }

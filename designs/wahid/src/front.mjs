@@ -18,23 +18,23 @@ import {
   hipsEase,
 } from './options.mjs'
 
-function wahidFront(part) {
-  const {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    utils,
-    macro,
-    snippets,
-    Snippet,
-    complete,
-    sa,
-    paperless,
-    store,
-  } = part.shorthand()
+function wahidFront({
+  points,
+  Point,
+  paths,
+  Path,
+  measurements,
+  options,
+  utils,
+  macro,
+  snippets,
+  Snippet,
+  complete,
+  sa,
+  paperless,
+  store,
+  part,
+}) {
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   delete snippets.armholePitchNotch
@@ -252,9 +252,9 @@ function wahidFront(part) {
   }
   paths.dart = dartPath(part)
   paths.seam = paths.saBase.join(paths.dart).join(paths.hemBase).close().attr('class', 'fabric')
-  paths.saBase.render = false
-  paths.hemBase.render = false
-  paths.dart.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
+  paths.dart.hide()
   if (complete) {
     // Pocket path
     paths.pocket = new Path()

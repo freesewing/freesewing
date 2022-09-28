@@ -1,11 +1,18 @@
-function draftBenjaminRibbon (part) {
-  let { Point, Path, measurements, store, options, complete, macro, points, paths, sa, paperless } =
-    part.shorthand()
-
-  if (options.adjustmentRibbon) {
-    part.render = false
-    return part
-  }
+function draftBenjaminRibbon({
+  Point,
+  Path,
+  measurements,
+  store,
+  options,
+  complete,
+  macro,
+  points,
+  paths,
+  sa,
+  paperless,
+  part,
+}) {
+  if (options.adjustmentRibbon) return part.hide()
 
   // Points
   points.bottomLeft = new Point(0, 0.5 * store.get('ribbonWidth'))

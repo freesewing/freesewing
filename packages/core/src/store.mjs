@@ -2,15 +2,21 @@ import set from 'lodash.set'
 import unset from 'lodash.unset'
 import get from 'lodash.get'
 
+// Don't allow setting of these top-level keys in the store
 const avoid = ['set', 'setIfUnset', 'push', 'unset', 'get', 'extend']
 
-export function Store(methods=[]) {
-  for (const method of methods) {
-    if (avoid.indexOf(method[0]) !== -1) {
-      console.log(`WARNING: You can't squat ${method[0]}in the store`)
-    } else set(this, ...method)
-  }
+//////////////////////////////////////////////
+//               CONSTRUCTOR                //
+//////////////////////////////////////////////
 
+/**
+ * Constructor for a Store
+ *
+ * @constructor
+ * @param {Array} methods - Any methods to add to the store
+ * @return {Store} this - The Store instance
+ */
+export function Store(methods = []) {
   /*
    * Default logging methods
    * You can override these with a plugin
@@ -37,14 +43,29 @@ export function Store(methods=[]) {
   }
   this.logs = logs
 
+  for (const [path, method] of methods) {
+    if (avoid.indexOf(path) !== -1) {
+      this.log.warning(`You cannot overwrite store.${path}()`)
+    } else set(this, path, method)
+  }
+
   return this
 }
 
-/** Extends the store with additional methods */
-Store.prototype.extend = function (...methods) {
+//////////////////////////////////////////////
+//            PUBLIC METHODS                //
+//////////////////////////////////////////////
+
+/**
+ * Extend the store with additional methods
+ *
+ * @param {function} method - Method to add to the store (variadic)
+ * @return {Store} this - The Store instance
+ */
+Store.prototype.extend = function (methods) {
   for (const [path, method] of methods) {
-    if (avoid.indexOf(method[0]) !== -1) {
-      this.log.warning(`You can't squat ${method[0]}in the store`)
+    if (avoid.indexOf(path) !== -1) {
+      this.log.warning(`You cannot overwrite store.${path}()`)
     } else {
       this.log.info(`Extending store with ${path}`)
       set(this, path, (...args) => method(this, ...args))
@@ -54,29 +75,29 @@ Store.prototype.extend = function (...methods) {
   return this
 }
 
-/** Set key at path to value */
-Store.prototype.set = function (path, value) {
-  if (typeof value === 'undefined') {
-    this.log.warning(`Store.set(value) on key \`${path}\`, but value is undefined`)
+/**
+ * Retrieve a key from the store
+ *
+ * @param {string|array} path - Path to the key
+ * @param {mixed} dflt - Default method to return if key is undefined
+ * @return {mixed} value - The value stored under key
+ */
+Store.prototype.get = function (path, dflt) {
+  const val = get(this, path, dflt)
+  if (typeof val === 'undefined') {
+    this.log.warning(`Store.get(key) on key \`${path}\`, which is undefined`)
   }
-  set(this, path, value)
 
-  return this
+  return val
 }
 
-/** Set key at path to value, but only if it's not currently set */
-Store.prototype.setIfUnset = function (path, value) {
-  if (typeof value === 'undefined') {
-    this.log.warning(`Store.setIfUnset(value) on key \`${path}\`, but value is undefined`)
-  }
-  if (typeof get(this, path) === 'undefined') {
-    return set(this, path, value)
-  }
-
-  return this
-}
-
-/** Adds a value to an array stored under path */
+/**
+ * Adds a value to an array stored under path
+ *
+ * @param {string|array} path - Path to the key
+ * @param {mixed} values - One or more values to add (variadic)
+ * @return {Store} this - The Store instance
+ */
 Store.prototype.push = function (path, ...values) {
   const arr = get(this, path)
   if (Array.isArray(arr)) {
@@ -88,19 +109,49 @@ Store.prototype.push = function (path, ...values) {
   return this
 }
 
-/** Remove the key at path */
-Store.prototype.unset = function (path) {
-  unset(this, path)
+/**
+ * Set key at path to value
+ *
+ * @param {string|array} path - Path to the key
+ * @param {mixed} value - The value to set
+ * @return {Store} this - The Store instance
+ */
+Store.prototype.set = function (path, value) {
+  if (typeof value === 'undefined') {
+    this.log.warning(`Store.set(value) on key \`${path}\`, but value is undefined`)
+  }
+  set(this, path, value)
 
   return this
 }
 
-/** Retrieve a key */
-Store.prototype.get = function (path) {
-  const val = get(this, path)
-  if (typeof val === 'undefined') {
-    this.log.warning(`Store.get(key) on key \`${path}\`, which is undefined`)
+/**
+ * Set key at path to value, but only if it's not currently set
+ *
+ * @param {string|array} path - Path to the key
+ * @param {mixed} value - The value to set
+ * @return {Store} this - The Store instance
+ */
+Store.prototype.setIfUnset = function (path, value) {
+  if (typeof value === 'undefined') {
+    this.log.warning(`Store.setIfUnset(value) on key \`${path}\`, but value is undefined`)
+  }
+  if (typeof get(this, path) === 'undefined') {
+    return set(this, path, value)
   }
 
-  return val
+  return this
+}
+
+/**
+ * Remove the key at path
+ *
+ * @param {string|array} path - Path to the key
+ * @param {mixed} value - The value to set
+ * @return {Store} this - The Store instance
+ */
+Store.prototype.unset = function (path) {
+  unset(this, path)
+
+  return this
 }

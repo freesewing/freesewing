@@ -1,41 +1,44 @@
 import chai from 'chai'
 import { Design } from '@freesewing/core'
-import { plugin } from './dist/index.mjs'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
 describe('Title Plugin Tests', () => {
-  const Pattern = new Design()
-  const pattern = new Pattern().use(plugin)
-  pattern.draft().render()
-
   it('Should run the title macro', () => {
-    const Pattern = new Design({ data: { name: 'testPattern', version: 99 } })
-    let pattern = new Pattern()
-    pattern.draft = function () {}
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.anchor = new pattern.Point(-12, -34)
-    let { macro } = pattern.parts.test.shorthand()
-    macro('title', {
-      at: pattern.parts.test.points.anchor,
-      nr: 3,
-      title: 'unitTest',
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro, part }) => {
+        points.anchor = new Point(-12, -34)
+        macro('title', {
+          at: points.anchor,
+          nr: 3,
+          title: 'unitTest',
+        })
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
     })
-    pattern.render()
-    let p = pattern.parts.test.points.__titleNr
+    const pattern = new Pattern()
+    pattern.draft().render()
+    let p = pattern.parts[0].test.points.__titleNr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
     expect(p.attributes.get('data-text')).to.equal('3')
     expect(p.attributes.get('data-text-class')).to.equal('text-4xl fill-note font-bold')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-34')
-    p = pattern.parts.test.points.__titleName
+    p = pattern.parts[0].test.points.__titleName
     expect(p.attributes.get('data-text')).to.equal('unitTest')
     expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-26')
-    p = pattern.parts.test.points.__titlePattern
+    p = pattern.parts[0].test.points.__titlePattern
     expect(p.attributes.get('data-text')).to.equal('testPattern v99')
     expect(p.attributes.get('data-text-class')).to.equal('fill-note')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
@@ -43,21 +46,28 @@ describe('Title Plugin Tests', () => {
   })
 
   it('Should run the title macro with append flag', () => {
-    const Pattern = new Design({ data: { name: 'testPattern', version: 99 } })
-    let pattern = new Pattern()
-    pattern.draft = function () {}
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.anchor = new pattern.Point(-12, -34).attr('data-text', '#')
-    let { macro } = pattern.parts.test.shorthand()
-    macro('title', {
-      at: pattern.parts.test.points.anchor,
-      nr: 3,
-      title: 'unitTest',
-      append: true,
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro, part }) => {
+        points.anchor = new Point(-12, -34).attr('data-text', '#')
+        macro('title', {
+          at: points.anchor,
+          nr: 3,
+          title: 'unitTest',
+          append: true,
+        })
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
     })
-    pattern.render()
-    let p = pattern.parts.test.points.__titleNr
+    const pattern = new Pattern()
+    pattern.draft().render()
+    let p = pattern.parts[0].test.points.__titleNr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
     expect(p.attributes.get('data-text')).to.equal('# 3')
@@ -67,33 +77,40 @@ describe('Title Plugin Tests', () => {
   })
 
   it('Should run the title macro with point prefix', () => {
-    const Pattern = new Design({ data: { name: 'testPattern', version: 99 } })
-    let pattern = new Pattern()
-    pattern.draft = function () {}
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.anchor = new pattern.Point(-12, -34).attr('data-text', '#')
-    let { macro } = pattern.parts.test.shorthand()
-    macro('title', {
-      at: pattern.parts.test.points.anchor,
-      nr: 3,
-      title: 'unitTest',
-      prefix: 'foo',
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro, part }) => {
+        points.anchor = new Point(-12, -34).attr('data-text', '#')
+        macro('title', {
+          at: points.anchor,
+          nr: 3,
+          title: 'unitTest',
+          prefix: 'foo',
+        })
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
     })
-    pattern.render()
-    let p = pattern.parts.test.points._foo_titleNr
+    const pattern = new Pattern()
+    pattern.draft().render()
+    let p = pattern.parts[0].test.points._foo_titleNr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
     expect(p.attributes.get('data-text')).to.equal('3')
     expect(p.attributes.get('data-text-class')).to.equal('text-4xl fill-note font-bold')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-34')
-    p = pattern.parts.test.points._foo_titleName
+    p = pattern.parts[0].test.points._foo_titleName
     expect(p.attributes.get('data-text')).to.equal('unitTest')
     expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-26')
-    p = pattern.parts.test.points._foo_titlePattern
+    p = pattern.parts[0].test.points._foo_titlePattern
     expect(p.attributes.get('data-text')).to.equal('testPattern v99')
     expect(p.attributes.get('data-text-class')).to.equal('fill-note')
     expect(p.attributes.get('data-text-x')).to.equal('-12')

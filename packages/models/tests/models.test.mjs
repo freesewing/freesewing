@@ -1,13 +1,13 @@
-import chai from "chai"
-import * as all from "./dist/index.mjs"
+import chai from 'chai'
+import * as all from './dist/index.mjs'
 
 const expect = chai.expect
 const { measurements, sizes } = all
 
 describe('Measurements', () => {
-  it("Measurements should be a named export and match the sizes", () => {
+  it('Measurements should be a named export and match the sizes', () => {
     for (const m of measurements) {
-      expect(typeof all.cisFemaleAdult28[m]).to.equal('number');
+      expect(typeof all.cisFemaleAdult28[m]).to.equal('number')
     }
   })
 })
@@ -24,4 +24,3 @@ for (const type in sizes) {
     })
   }
 }
-

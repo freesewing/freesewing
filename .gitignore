@@ -96,6 +96,7 @@ node_modules
 dist
 build
 export
+packages/core/out
 
 # Prebuild files
 prebuild/*.json

@@ -1,9 +1,18 @@
 import { backPoints } from './backpoints.mjs'
 
-function nobleBackOutside(part) {
-  const { sa, points, Path, paths, Snippet, snippets, options, complete, paperless, macro } =
-    part.shorthand()
-
+function nobleBackOutside({
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   if (options.dartPosition != 'shoulder') {
     return part
   }
@@ -12,7 +21,7 @@ function nobleBackOutside(part) {
     .move(points.shoulderDart)
     .curve(points.shoulderDart, points.shoulderDartCpUp, points.dartTip)
     .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)
-    .setRender(false)
+    .hide()
 
   paths.outsideSeam = new Path()
     .move(points.dartBottomRight)

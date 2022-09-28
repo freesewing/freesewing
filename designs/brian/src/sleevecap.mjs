@@ -8,10 +8,17 @@ function sleevecapDelta(store) {
 }
 
 function sleevecapAdjust(store) {
-  let delta = sleevecapDelta(store)
+  const delta = sleevecapDelta(store)
+  const len = store.get('sleevecapLength')
+  const doverl = delta / len
+  store.set('doverl', doverl)
   let factor = store.get('sleeveFactor')
-  if (delta > 0) factor = factor * 0.98
-  else factor = factor * 1.02
+  if (doverl > 0.1) factor = factor * 0.8
+  if (doverl > 0.02) factor = factor * 0.9
+  else if (doverl < -0.1) factor = factor * 1.3
+  else if (doverl < -0.02) factor = factor * 1.15
+  else if (delta > 0) factor = factor * 0.99
+  else factor = factor * 1.008
   store.set('sleeveFactor', factor)
 }
 
@@ -165,9 +172,7 @@ export const sleevecap = {
     sleevecapQ4Spread2: { pct: 6.3, min: 4, max: 20, menu },
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100, menu: 'advanced' },
   },
-  draft: part => {
-    const { store, units, options, Point, points, paths, raise, snippets, macro } = part.shorthand()
-
+  draft: ({ store, units, options, Point, points, paths, log, snippets, macro, part }) => {
     // Clean up from fron
     for (const path in paths) delete paths[path]
     delete snippets.logo
@@ -181,7 +186,7 @@ export const sleevecap = {
       delta = sleevecapDelta(store)
       sleevecapAdjust(store)
       run++
-      raise.debug(`Fitting Brian sleevecap. Run ${run}: delta is ${units(delta)}`)
+      log.debug(`Fitting Brian sleevecap. Run ${run}: delta is ${units(delta)}`)
     } while (options.brianFitSleeve === true && run < 50 && Math.abs(sleevecapDelta(store)) > 2)
 
     // Paths
@@ -191,5 +196,5 @@ export const sleevecap = {
     points.gridAnchor = new Point(0, 0)
 
     return part
-  }
+  },
 }

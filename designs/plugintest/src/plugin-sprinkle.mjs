@@ -1,9 +1,7 @@
 import { sprinklePlugin } from '@freesewing/plugin-sprinkle'
 import { base } from './base.mjs'
 
-const pluginSprinkle = (part) => {
-  const { Point, points, Path, paths, options, macro } = part.shorthand()
-
+const pluginSprinkle = ({ Point, points, Path, paths, options, macro, part }) => {
   if (['sprinkle', 'all'].indexOf(options.plugin) !== -1) {
     points.center = new Point(0, 0)
     points.top = new Point(0, 40)
@@ -45,7 +43,7 @@ export const sprinkle = {
         'snap-socket',
         'logo',
       ],
-      menu: 'sprinkle'
+      menu: 'sprinkle',
     },
   },
   plugins: sprinklePlugin,

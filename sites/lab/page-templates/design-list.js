@@ -38,9 +38,9 @@ const PatternListPageTemplate = ({ section=false }) => {
       const all = []
       for (const section in app.designs) all.push(...app.designs[section])
       return all
-    } else return app.designs[section]
+    }
 
-    return []
+    return app.designs[section]
   }
 
   return (

@@ -1,7 +1,8 @@
 import { headSection1 } from './head.mjs'
 
-function octoplushyEye(partNumber, part) {
-  const {
+function octoplushyEye(
+  partNumber,
+  {
     options,
     Point,
     Path,
@@ -14,8 +15,9 @@ function octoplushyEye(partNumber, part) {
     paperless,
     macro,
     store,
-  } = part.shorthand()
-
+    part,
+  }
+) {
   if (options.type != 'squid' && options.type != 'octopus') {
     return part
   }
@@ -58,7 +60,7 @@ function octoplushyEye(partNumber, part) {
       .curve(points.rightCp1, points.topCp2, points.top)
       .close()
       .attr('class', 'fabric')
-      .setRender(true)
+      .hide()
     points.logo = points.top.shiftFractionTowards(points.bottom, 0.3)
     points.titleAnchor = points.bottom
       .shiftFractionTowards(points.top, 0.25)
@@ -81,7 +83,7 @@ function octoplushyEye(partNumber, part) {
       .line(points.tl)
       .close()
       .attr('class', 'fabric')
-      .setRender(true)
+      .hide()
 
     points.logo = points.tl
       .shiftFractionTowards(points.bl, 0.5)
@@ -133,15 +135,15 @@ function octoplushyEye(partNumber, part) {
 export const eye1 = {
   name: 'octoplushy.eye1',
   after: headSection1,
-  draft: (part) => octoplushyEye(0, part),
+  draft: (params) => octoplushyEye(0, params),
 }
 export const eye2 = {
   name: 'octoplushy.eye2',
   after: headSection1,
-  draft: (part) => octoplushyEye(1, part),
+  draft: (params) => octoplushyEye(1, params),
 }
 export const eye3 = {
   name: 'octoplushy.eye3',
   after: headSection1,
-  draft: (part) => octoplushyEye(2, part),
+  draft: (params) => octoplushyEye(2, params),
 }

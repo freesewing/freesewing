@@ -1,14 +1,23 @@
 import { backPoints } from './backpoints.mjs'
 
-function nobleBackInside(part) {
-  const { sa, points, Path, paths, Snippet, snippets, options, complete, paperless, macro } =
-    part.shorthand()
-
+function nobleBackInside({
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   if (options.dartPosition != 'shoulder') {
-    paths.insideSeam = paths.seam.clone().setRender(true)
+    paths.insideSeam = paths.seam.clone().unhide()
   } else {
     // Hide Bella paths
-    for (let key of Object.keys(paths)) paths[key].render = false
+    for (let key of Object.keys(paths)) paths[key].hide()
     for (let i in snippets) delete snippets[i]
 
     paths.insideSeam = new Path()

@@ -1,23 +1,22 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function walburgaBase(part) {
-  const {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    sa,
-    paperless,
-    store,
-    utils,
-  } = part.shorthand()
-
+function walburgaBase({
+  Point,
+  points,
+  Path,
+  paths,
+  measurements,
+  options,
+  macro,
+  complete,
+  snippets,
+  Snippet,
+  sa,
+  paperless,
+  store,
+  utils,
+  part,
+}) {
   // define some variables
   const hem_pos =
     options.length === 'toKnee'
@@ -55,7 +54,7 @@ function walburgaBase(part) {
     .line(points.triangleLeft)
     .line(points.bottomMiddle)
     .line(points.triangle)
-    .setRender(false)
+    .hide()
   paths.seam = new Path()
     .move(points.top)
     .line(points.topLeft)
@@ -113,7 +112,7 @@ function walburgaBase(part) {
           )
         )
         .line(points.triangle)
-        .setRender(false)
+        .hide()
 
       // Insop the start
       paths.sa = paths.saBase
@@ -125,7 +124,7 @@ function walburgaBase(part) {
             .line(points.topLeft.shift(90, sa))
         )
         .attr('class', 'fabric sa')
-        .setRender(true)
+        .unhide()
     }
 
     // Paperless?

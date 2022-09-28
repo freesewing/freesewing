@@ -1,8 +1,6 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
 
-function yuriSleeve(part) {
-  let { Point, Path, points, paths, complete, sa, paperless, macro } = part.shorthand()
-
+function yuriSleeve({ Point, Path, points, paths, complete, sa, paperless, macro, part }) {
   // Clear paths from Brian, but keep sleevecap
   for (let p of Object.keys(paths)) {
     if (p !== 'sleevecap') delete paths[p]
@@ -14,15 +12,15 @@ function yuriSleeve(part) {
     .line(points.bicepsRight)
     .join(paths.sleevecap)
     .line(points.wristLeft)
-    .attr('class', 'various stroke-xxl')
+    .setClass('various stroke-xxl')
+    .hide()
   paths.hemBase = new Path()
     .move(points.wristLeft)
     .line(points.wristRight)
-    .attr('class', 'various stroke-xxl')
-  paths.saBase.render = false
-  paths.hemBase.render = false
+    .setClass('various stroke-xxl')
+    .hide()
 
-  paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.hemBase).close().setClass('fabric')
 
   // Complete?
   if (complete) {

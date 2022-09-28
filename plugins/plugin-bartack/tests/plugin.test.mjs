@@ -1,20 +1,28 @@
 import chai from 'chai'
-import { round, Pattern } from '@freesewing/core'
-import { plugin } from './dist/index.mjs'
+import { round, Design } from '@freesewing/core'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
 describe('Bartack plugin Tests', () => {
   it('draws a default bartack from a point', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartack', {
-      anchor: pattern.parts.test.points.from,
-    })
-    const c = pattern.parts.test.paths.bartack
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, part }) => {
+        points.from = new Point(10, 20)
+        macro('bartack', {
+          anchor: points.from,
+        })
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -32,17 +40,23 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('draws a bartack along a path', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    const from = new pattern.Point(10, 20)
-    const to = new pattern.Point(10, 30)
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, Path, macro, part }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(10, 30)
+        macro('bartackAlong', {
+          path: new Path().move(points.from).line(points.to),
+        })
 
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartackAlong', {
-      path: new pattern.Path().move(from).line(to),
-    })
-    const c = pattern.parts.test.paths.bartack
+        return part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(8.5)
@@ -60,19 +74,25 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('can be called using the bartackFractionAlong syntax', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    const from = new pattern.Point(10, 20)
-    const to = new pattern.Point(10, 100)
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, Path, macro, part }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(10, 100)
+        macro('bartackAlong', {
+          path: new Path().move(points.from).line(points.to),
+          start: 0.2,
+          end: 0.8,
+        })
 
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartackAlong', {
-      path: new pattern.Path().move(from).line(to),
-      start: 0.2,
-      end: 0.8,
-    })
-    const c = pattern.parts.test.paths.bartack
+        return part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
@@ -90,19 +110,25 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('can be called using the bartackFractionAlong syntax', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    const from = new pattern.Point(10, 20)
-    const to = new pattern.Point(10, 100)
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, Path, macro, part }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(10, 100)
+        macro('bartackFractionAlong', {
+          path: new Path().move(points.from).line(points.to),
+          start: 0.2,
+          end: 0.8,
+        })
 
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartackFractionAlong', {
-      path: new pattern.Path().move(from).line(to),
-      start: 0.2,
-      end: 0.8,
-    })
-    const c = pattern.parts.test.paths.bartack
+        return part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
@@ -120,16 +146,23 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable length', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartack', {
-      anchor: pattern.parts.test.points.from,
-      length: 20,
-    })
-    const c = pattern.parts.test.paths.bartack
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, part }) => {
+        points.from = new Point(10, 20)
+        macro('bartack', {
+          anchor: points.from,
+          length: 20,
+        })
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -147,16 +180,23 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable width', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartack', {
-      anchor: pattern.parts.test.points.from,
-      width: 5,
-    })
-    const c = pattern.parts.test.paths.bartack
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, part }) => {
+        points.from = new Point(10, 20)
+        macro('bartack', {
+          anchor: points.from,
+          width: 5,
+        })
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -174,16 +214,23 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable angle', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartack', {
-      anchor: pattern.parts.test.points.from,
-      angle: 45,
-    })
-    const c = pattern.parts.test.paths.bartack
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, part }) => {
+        points.from = new Point(10, 20)
+        macro('bartack', {
+          anchor: points.from,
+          angle: 45,
+        })
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.bartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(11.06)
@@ -201,30 +248,44 @@ describe('Bartack plugin Tests', () => {
   })
 
   it('has configurable suffix', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartack', {
-      anchor: pattern.parts.test.points.from,
-      suffix: 'foo',
-    })
-    const c = pattern.parts.test.paths.bartackfoo
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, part }) => {
+        points.from = new Point(10, 20)
+        macro('bartack', {
+          anchor: points.from,
+          suffix: 'foo',
+        })
+
+        part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.bartackfoo
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
   })
 
   it('has configurable prefix', function () {
-    const pattern = new Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('bartack', {
-      anchor: pattern.parts.test.points.from,
-      prefix: 'foo',
-    })
-    const c = pattern.parts.test.paths.foobartack
+    const part = {
+      name: 'test',
+      draft: ({ Point, points, macro, part }) => {
+        points.from = new Point(10, 20)
+        macro('bartack', {
+          anchor: points.from,
+          prefix: 'foo',
+        })
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.foobartack
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
   })
 })

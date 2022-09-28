@@ -161,6 +161,20 @@ svg.freesewing.pattern {
   }
 }
 
+/* Styling for v3 sampling */
+@for $i from 1 to 10 {
+
+  svg.freesewing.pattern g.sample-$i path.fabric,
+  svg.freesewing.pattern g.sample-$i path.lining,
+  svg.freesewing.pattern g.sample-$i path.interfacing {
+    stroke: var(--pattern-sample-$i);
+    fill: var(--pattern-sample-$i);
+    fill-opacity: 0.01;
+  }
+
+}
+
+
 /* Styling the shadow DOM is hard to do
  * This is for styling FreeSewing snippets
  * TODO: Update snippets to use inline styles with CSS vars
@@ -256,4 +270,7 @@ figure.develop.example div.develop {
     border-color: var(--pattern-dev-7);
   }
 }
+
+
+
 

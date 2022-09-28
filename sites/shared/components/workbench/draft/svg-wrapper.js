@@ -2,7 +2,7 @@ import { SizeMe } from 'react-sizeme'
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 import Svg from './svg'
 import Defs from './defs'
-import Part from './part'
+import Stack from './stack'
 
 /* What's with all the wrapping?
  *
@@ -26,7 +26,9 @@ import Part from './part'
  */
 
 const SvgWrapper = props => {
-  const { patternProps, gist, app, updateGist, unsetGist, showInfo } = props
+  const { patternProps=false, gist, app, updateGist, unsetGist, showInfo } = props
+
+  if (!patternProps) return null
 
   return <SizeMe>{({ size }) => (
     <TransformWrapper
@@ -40,11 +42,11 @@ const SvgWrapper = props => {
             <Defs {...patternProps} />
             <style>{`:root { --pattern-scale: ${gist.scale || 1}} ${patternProps.svg.style}`}</style>
             <g>
-              {Object.keys(patternProps.parts).map((name) => (
-                <Part {...{ app, gist, updateGist, unsetGist, showInfo }}
-                  key={name}
-                  partName={name}
-                  part={patternProps.parts[name]}
+              {Object.keys(patternProps.stacks).map((stackName) => (
+                <Stack {...{ app, gist, updateGist, unsetGist, showInfo, patternProps }}
+                  key={stackName}
+                  stackName={stackName}
+                  stack={patternProps.stacks[stackName]}
                 />
               ))}
             </g>

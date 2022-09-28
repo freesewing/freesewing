@@ -1,9 +1,19 @@
 import { back } from './back.mjs'
 
-function yuriGusset(part) {
-  const { Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro, store } =
-    part.shorthand()
-
+function yuriGusset({
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  store,
+  part,
+}) {
   const w = store.get('gussetLength')
   points.top = new Point(0, 0)
   points.bottom = new Point(0, w)
@@ -40,7 +50,7 @@ function yuriGusset(part) {
     points.logo = points.title.shift(-75, 100)
     snippets.logo = new Snippet('logo', points.logo)
     if (sa) {
-      paths.saBase = new Path().move(points.right).line(points.top).setRender(false)
+      paths.saBase = new Path().move(points.right).line(points.top).hide()
       paths.sa = paths.curve
         .offset(3 * sa)
         .join(paths.saBase.offset(sa))

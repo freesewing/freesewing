@@ -2,10 +2,20 @@ import { front as brianFront } from '@freesewing/brian'
 import { back } from './back.mjs'
 import { sharedDimensions } from './shared.mjs'
 
-function draftHueyFront (part) {
-  let { utils, store, Point, Path, points, paths, complete, paperless, sa, options, measurements } =
-    part.shorthand()
-
+function draftHueyFront({
+  utils,
+  store,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  paperless,
+  sa,
+  options,
+  measurements,
+  part,
+}) {
   // Clear paths from Brian
   for (let i in paths) {
     if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
@@ -60,8 +70,8 @@ function draftHueyFront (part) {
     .line(points.cfHem)
     .attr('class', 'note stroke-xxl')
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).attr('class', 'note stroke-xxl')
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase.clone().join(paths.hemBase).close().attr('class', 'fabric')
 

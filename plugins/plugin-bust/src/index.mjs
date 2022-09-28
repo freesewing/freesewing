@@ -4,11 +4,13 @@ export const plugin = {
   name,
   version,
   hooks: {
-    preDraft: ({ settings }) => {
-      if (settings.measurements) {
-        if (typeof settings.measurements.bust === 'undefined') {
-          settings.measurements.bust = settings.measurements.chest
-          settings.measurements.chest = settings.measurements.highBust
+    preDraft: function ({ settings }) {
+      for (const i in settings) {
+        if (settings[i].measurements) {
+          if (typeof settings[i].measurements.bust === 'undefined') {
+            settings[i].measurements.bust = settings[i].measurements.chest
+            settings[i].measurements.chest = settings[i].measurements.highBust
+          }
         }
       }
     },
@@ -22,9 +24,6 @@ export const pluginBust = plugin
 // Helper method to conditionally load this plugin
 export const withCondition = {
   plugin,
-  condition: (settings=false) =>
-    settings?.options?.draftForHighBust &&
-    settings?.measurements?.highBust
-    ? true : false
+  condition: (settings = false) =>
+    settings?.options?.draftForHighBust && settings?.measurements?.highBust ? true : false,
 }
-

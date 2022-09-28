@@ -1,9 +1,18 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleeCutout(part) {
-  const { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
-    part.shorthand()
-
+function waraleeCutout({
+  options,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   let separateWaistband = options.separateWaistband
   if ('waistband' == options.frontPocketStyle) {
     separateWaistband = true
@@ -20,7 +29,7 @@ function waraleeCutout(part) {
     .close()
     .attr('class', 'fabric')
 
-  paths.cutout.setRender(false)
+  paths.cutout.hide()
 
   // Complete?
   if (complete) {
@@ -70,9 +79,8 @@ function waraleeCutout(part) {
       x: points.mWaist.x + 15,
     })
   }
-  part.render = options.showMini
 
-  return part
+  return part.setHidden(!options.showMini)
 }
 
 export const cutout = {

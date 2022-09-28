@@ -1,4 +1,4 @@
-export function dimensions (part, s) {
+export function dimensions(part, s) {
   let { macro, points, sa } = part.shorthand()
 
   macro('ld', {

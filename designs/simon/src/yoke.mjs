@@ -1,10 +1,20 @@
 import { back } from './back.mjs'
 import { splitYoke } from './options.mjs'
 
-function simonYoke(part) {
-  const { sa, Point, points, Path, paths, Snippet, snippets, complete, paperless, macro, options } =
-    part.shorthand()
-
+function simonYoke({
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  options,
+  part,
+}) {
   for (const id in paths) {
     if (['backCollar', 'backArmhole', 'backArmholeYoke'].indexOf(id) === -1) delete part.paths[id]
   }
@@ -21,10 +31,10 @@ function simonYoke(part) {
       clone: true,
     })
     paths.saBase = paths.saBase.join(paths.mirroredSaBase.reverse())
-    paths.mirroredSaBase.setRender(false)
+    paths.mirroredSaBase.hide()
   }
   paths.seam = paths.saBase.clone()
-  paths.saBase.render = false
+  paths.saBase.hide()
   paths.seam = paths.seam.close().attr('class', 'fabric')
 
   // Complete pattern?

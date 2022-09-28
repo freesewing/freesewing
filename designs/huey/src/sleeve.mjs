@@ -1,10 +1,19 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
 import { back } from './back.mjs'
 
-function draftHueySleeve (part) {
-  let { Point, Path, points, paths, store, options, complete, sa, paperless, macro } =
-    part.shorthand()
-
+function draftHueySleeve({
+  Point,
+  Path,
+  points,
+  paths,
+  store,
+  options,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   // Clear paths from Brian, but keep sleevecap
   for (let p of Object.keys(paths)) {
     if (p !== 'sleevecap') delete paths[p]
@@ -27,8 +36,8 @@ function draftHueySleeve (part) {
     .move(points.wristLeft)
     .line(points.wristRight)
     .attr('class', 'various stroke-xxl')
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 

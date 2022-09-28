@@ -1,22 +1,21 @@
 import { base, neckline, neckoRatio } from './base.mjs'
 
-function walburgaFront(part) {
-  const {
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    sa,
-    paperless,
-    store,
-    utils,
-  } = part.shorthand()
-
+function walburgaFront({
+  points,
+  Path,
+  paths,
+  measurements,
+  options,
+  macro,
+  complete,
+  snippets,
+  Snippet,
+  sa,
+  paperless,
+  store,
+  utils,
+  part,
+}) {
   const head = store.get('hhead') * 2
   const goldenRatio = store.get('goldenRatio')
   const ratio = goldenRatio * options.neckoRatio
@@ -36,10 +35,12 @@ function walburgaFront(part) {
 
     // checks to ensure that neck opening does not become too small
     if (neckotop < measurements.neck / 4) {
-      ;(neckotop = measurements.neck / 4), (neckomid = (2 * measurements.neck) / 4 / goldenRatio)
+      neckotop = measurements.neck / 4
+      neckomid = (2 * measurements.neck) / 4 / goldenRatio
     }
     if (neckomid < measurements.neck / 4) {
-      ;(neckomid = measurements.neck / 4), (neckotop = ((measurements.neck / 4) * goldenRatio) / 2)
+      neckomid = measurements.neck / 4
+      neckotop = ((measurements.neck / 4) * goldenRatio) / 2
     }
 
     points.neckotop = points.top.shift(0, -neckotop)
@@ -88,11 +89,7 @@ function walburgaFront(part) {
     if (sa) {
       if (options.neckline === true) {
         // Insop the start
-        paths.saHelper = new Path()
-          .move(points.neckomid)
-          .line(points.neckotop)
-          .offset(sa)
-          .setRender(false)
+        paths.saHelper = new Path().move(points.neckomid).line(points.neckotop).offset(sa).hide()
         paths.sa = paths.saBase
           .insop(
             'start',
@@ -115,7 +112,7 @@ function walburgaFront(part) {
               .line(points.topLeft.shift(90, sa))
           )
           .attr('class', 'fabric sa')
-          .setRender(true)
+          .unhide()
       }
     }
 

@@ -4,9 +4,7 @@ import { pantsProto } from './pantsproto.mjs'
 // To keep you from printing it completely, you could print this part in paperless mode
 // and only have a single sheet with all the dimensions on it.
 
-function waraleeMini(part) {
-  const { options, Path, points, paths, complete, sa, macro, store } = part.shorthand()
-
+function waraleeMini({ options, Path, points, paths, complete, sa, macro, store, part }) {
   let mini = options.minimizer
   let separateWaistband = options.separateWaistband
   if ('waistband' == options.frontPocketStyle) {
@@ -40,17 +38,17 @@ function waraleeMini(part) {
     .line(separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
     .attr('class', 'help')
 
-  paths.seam.setRender(true)
+  paths.seam.unhide()
 
   // Complete?
   if (complete) {
     macro('scalebox', { at: points.mLeg.shift(-90, 35) })
 
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
-      paths.frontPocket.setRender(true)
+      paths.frontPocket.unhide()
     }
     if (options.backPocket) {
-      paths.backPocket.setRender(true)
+      paths.backPocket.unhide()
     }
 
     if (sa) {
@@ -153,9 +151,7 @@ function waraleeMini(part) {
     }
   }
 
-  part.render = options.showMini
-
-  return part
+  return part.setHidden(!options.showMini)
 }
 
 export const mini = {

@@ -3,9 +3,7 @@ import { step4 } from './step1-4.mjs'
 export const step5 = {
   name: 'tutorial.step5',
   from: step4,
-  draft: part => {
-    const { Point, points, Path, paths, measurements, options } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, measurements, options, part }) => {
     const width = measurements.head * options.widthRatio
     const length = measurements.head * options.lengthRatio
 
@@ -23,15 +21,13 @@ export const step5 = {
       .close()
 
     return part
-  }
+  },
 }
 
 export const step6 = {
   name: 'tutorial.step6',
   from: step5,
-  draft: part => {
-    const { Point, points, Path, paths } = part.shorthand()
-
+  draft: ({ Point, points, Path, paths, part }) => {
     points.edgeLeft = new Point(points.topLeft.x, points.left.y)
     points.edgeRight = new Point(points.topRight.x, points.right.y)
     points.edgeTop = new Point(0, points.topLeft.y)
@@ -51,15 +47,13 @@ export const step6 = {
       .close()
 
     return part
-  }
+  },
 }
 
 export const step7 = {
   name: 'tutorial.step7',
   from: step6,
-  draft: part => {
-    const { Point, points, macro } = part.shorthand()
-
+  draft: ({ Point, points, macro, part }) => {
     const strap = points.edgeTop.dy(points.top)
 
     points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
@@ -71,25 +65,22 @@ export const step7 = {
       to: points.tipRight,
       via: points.tipRightTop,
       prefix: 'tipRightTop',
-      render: true,
     })
     macro('round', {
       from: points.tipRight,
       to: points.top,
       via: points.tipRightBottom,
       prefix: 'tipRightBottom',
-      render: true,
     })
 
     return part
-  }
+  },
 }
 
 export const step8 = {
   name: 'tutorial.step8',
   from: step7,
-  draft: part => {
-    const { points, Path, paths, macro } = part.shorthand()
+  draft: ({ points, Path, paths, macro, part }) => {
     const rotateThese = [
       'edgeTopLeftCp',
       'edgeTop',
@@ -118,14 +109,12 @@ export const step8 = {
       to: points.tipRight,
       via: points.tipRightTop,
       prefix: 'tipRightTop',
-      render: true,
     })
     macro('round', {
       from: points.tipRight,
       to: points.top,
       via: points.tipRightBottom,
       prefix: 'tipRightBottom',
-      render: true,
     })
 
     paths.rect = new Path()
@@ -138,6 +127,5 @@ export const step8 = {
       .close()
 
     return part
-  }
+  },
 }
-

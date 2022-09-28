@@ -1,21 +1,22 @@
-function ursulaFront(part) {
-  const {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    measurements,
-    //    Snippet,
-    //    snippets,
-    store,
-    utils,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+import { pluginBundle } from '@freesewing/plugin-bundle'
 
+function ursulaFront({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  measurements,
+  //  Snippet,
+  //  snippets,
+  store,
+  utils,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   // Stretch utility method
 
   store.set('xScale', utils.stretchToScale(options.fabricStretch))
@@ -130,13 +131,13 @@ function ursulaFront(part) {
   paths.frontLegOpening = new Path()
     .move(points.frontGussetRight)
     .curve(points.frontGussetRightCp1, points.frontLegOpeningRightCp1, points.frontLegOpeningRight)
-    .setRender(false)
+    .hide()
   store.set('frontLegOpeningLength', paths.frontLegOpening.length())
 
   paths.frontWaistBand = new Path()
     .move(points.frontWaistBandRight)
     .curve(points.frontWaistBandRightCp1, points.frontWaistBandLeftCp1, points.frontWaistBandLeft)
-    .setRender(false)
+    .hide()
   store.set('frontWaistBandLength', paths.frontWaistBand.length())
 
   // Complete?
@@ -215,5 +216,6 @@ export const front = {
     frontDip: { pct: 5.0, min: -5, max: 15, menu: 'style' },
     taperToGusset: { pct: 70, min: 5, max: 100, menu: 'style' },
   },
+  plugins: [pluginBundle],
   draft: ursulaFront,
 }

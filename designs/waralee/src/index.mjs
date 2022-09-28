@@ -39,5 +39,6 @@ export {
   waistbandBack,
   strapFront,
   strapBack,
+  pantsProto,
   Waralee,
 }

@@ -21,22 +21,21 @@ import {
   getSaDartPaths,
 } from './dart-utils.mjs'
 
-function draftBreannaFront (part) {
-  let {
-    options,
-    store,
-    utils,
-    points,
-    Path,
-    paths,
-    sa,
-    complete,
-    paperless,
-    macro,
-    snippets,
-    Snippet,
-  } = part.shorthand()
-
+function draftBreannaFront({
+  options,
+  store,
+  utils,
+  points,
+  Path,
+  paths,
+  sa,
+  complete,
+  paperless,
+  macro,
+  snippets,
+  Snippet,
+  part,
+}) {
   /*
    * We're starting from front-base here, which is injected into this part
    * It has a single primary bust dart at 06:00
@@ -141,7 +140,7 @@ function draftBreannaFront (part) {
 
   // All done. Just set final path properties before we get to SA/final/paperless
   paths.seam.close().attr('class', 'fabric')
-  paths.saBase.close().render = false
+  paths.saBase.close().hide()
 
   // Anchor point
   points.gridAnchor = points.cfNeck.clone()

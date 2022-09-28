@@ -1,27 +1,23 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { waistEase } from './shape.mjs'
 
-function penelopeWaistband(part) {
-  const {
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-    store,
-  } = part.shorthand()
-
-  if (!options.waistBand) {
-    part.render = false
-    return part
-  }
+function penelopeWaistband({
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  store,
+  part,
+}) {
+  if (!options.waistBand) return part.hide()
 
   let waist = measurements.waist
   waist += measurements.waist * options.waistEase
@@ -93,10 +89,11 @@ export const waistband = {
   name: 'penelope.waistband',
   measurements: ['waist', 'waistToKnee'],
   options: {
+    waistEase,
     waistBandOverlap: 25,
     waistBand: { bool: true, menu: 'style' },
     waistBandWidth: { pct: 10, min: 5, max: 20, menu: 'style' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: penelopeWaistband,
 }

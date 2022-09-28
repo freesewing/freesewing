@@ -6,8 +6,7 @@ import { bandTie } from './band-tie.mjs'
 
 const Bee = new Design({
   data,
-  parts: [ cup, neckTie, bandTie ],
+  parts: [cup, neckTie, bandTie],
 })
 
 export { cup, neckTie, bandTie, Bee }
-

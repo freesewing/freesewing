@@ -1,21 +1,20 @@
 import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 
-function yuriBack(part) {
-  const {
-    store,
-    macro,
-    Path,
-    Point,
-    points,
-    paths,
-    complete,
-    paperless,
-    sa,
-    options,
-    measurements,
-  } = part.shorthand()
-
+function yuriBack({
+  store,
+  macro,
+  Path,
+  Point,
+  points,
+  paths,
+  complete,
+  paperless,
+  sa,
+  options,
+  measurements,
+  part,
+}) {
   // Clear paths from Brian
   for (const i in paths) {
     if (['backArmhole', 'backCollar'].indexOf(i) === -1) delete paths[i]
@@ -43,7 +42,8 @@ function yuriBack(part) {
   paths.gussetBase = new Path()
     .move(points.bottom)
     .line(points.armhole)
-    .attr('class', 'note stroke-xxl')
+    .setClass('note stroke-xxl')
+    .hide()
   store.set('gussetLength', paths.gussetBase.length())
   paths.saBase = new Path()
     .move(points.armhole)
@@ -52,14 +52,13 @@ function yuriBack(part) {
     .join(paths.backArmhole)
     .line(points.s3CollarSplit)
     .join(paths.backCollar)
-    .attr('class', 'note stroke-xxl')
+    .setClass('note stroke-xxl')
+    .hide()
   paths.hemBase = new Path()
     .move(points.cbBottom)
     .line(points.bottom)
-    .attr('class', 'note stroke-xxl')
-  paths.gussetBase.render = false
-  paths.saBase.render = false
-  paths.hemBase.render = false
+    .setClass('note stroke-xxl')
+    .hide()
 
   paths.seam = paths.gussetBase
     .join(paths.saBase)

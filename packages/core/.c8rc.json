@@ -1,0 +1,7 @@
+{
+  "reporter": "html",
+  "all": true,
+  "extension": "mjs",
+  "exclude": ["node_modules/*", "tests"]
+}
+

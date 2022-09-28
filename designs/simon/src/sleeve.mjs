@@ -10,22 +10,22 @@ import {
   sleevePlacketLength,
 } from './options.mjs'
 
-function simonSleeve(part) {
-  const {
-    measurements,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    options,
-    snippets,
-    Snippet,
-    store,
-  } = part.shorthand()
+function simonSleeve({
+  measurements,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  options,
+  snippets,
+  Snippet,
+  store,
+  part,
+}) {
   // Update the back armhole notch because the one from Brian is not correct
   points.backNotch = paths.sleevecap.reverse().shiftAlong(store.get('backArmholeToArmholePitch'))
 
@@ -43,7 +43,7 @@ function simonSleeve(part) {
     .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
     .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
     .curve_(points.capQ4Cp2, points.bicepsLeft)
-    .setRender(false)
+    .hide()
   points.top = new Point(0, paths.sleevecap.edge('top').y)
   points.bottom = points.top.shift(-90, len)
 
@@ -114,10 +114,10 @@ function simonSleeve(part) {
     .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
     .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
     .curve_(points.capQ4Cp2, points.bicepsLeft)
-  paths.frenchBase.render = false
+  paths.frenchBase.hide()
 
   paths.saBase = new Path().move(points.bicepsLeft).line(points.wristLeft)
-  paths.saBase.render = false
+  paths.saBase.hide()
 
   paths.cuffBase = new Path()
     .move(points.wristLeft)
@@ -128,7 +128,7 @@ function simonSleeve(part) {
   paths.cuffBase._curve(points.cuffRightCuspCp1, points.cuffRightCusp)
   if (pleats === 2) paths.cuffBase.line(points.cuffPleat2Edge)
   paths.cuffBase.curve_(points.cuffRightCuspCp2, points.wristRight)
-  paths.cuffBase.render = false
+  paths.cuffBase.hide()
 
   paths.seam = paths.frenchBase
     .clone()
@@ -182,7 +182,7 @@ function simonSleeve(part) {
         .close()
         .attr('class', 'fabric sa')
       macro('banner', {
-        path: 'frenchSa',
+        path: paths.frenchSa,
         text: 'flatFelledSeamAllowance',
         repeat: 30,
       })
@@ -283,6 +283,7 @@ function simonSleeve(part) {
 export const sleeve = {
   name: 'simon.sleeve',
   from: brianSleeve,
+  after: front,
   hideDependencies: true,
   options: {
     cuffOverlap,

@@ -4,51 +4,48 @@ export const plugin = {
   name,
   version,
   macros: {
-    flip: function (so) {
+    flip: function (so, { paths, points, snippets }) {
       const axis = so?.axis === 'y' ? 'y' : 'x'
       let flipped = null
       const ops = ['from', 'to', 'cp1', 'cp2']
-      for (const id in this.points) {
+      for (const id in points) {
         // Keep track of the amount of flips
         // (needed to allow flipping twice, but also avoid double flips in paths below)
         if (flipped === null) {
-          flipped = this.points[id].attributes.get('flipped')
+          flipped = points[id].attributes.get('flipped')
           if (flipped === false) flipped = 1
           else flipped += 1
         }
-        this.points[id][axis] = this.points[id][axis] * -1
-        this.points[id].attributes.set('flipped', flipped)
+        points[id][axis] = points[id][axis] * -1
+        points[id].attributes.set('flipped', flipped)
       }
-      for (let id of Object.keys(this.paths)) {
-        for (let op in this.paths[id].ops) {
+      for (let id of Object.keys(paths)) {
+        for (let op in paths[id].ops) {
           for (let type of ops) {
-            if (typeof this.paths[id].ops[op][type] !== 'undefined') {
+            if (typeof paths[id].ops[op][type] !== 'undefined') {
               // Path ops can use points not listed in part.points. We should only flip those here
               // and not double flip the points flipped above
-              let wasFlipped = this.paths[id].ops[op][type].attributes.get('flipped')
+              let wasFlipped = paths[id].ops[op][type].attributes.get('flipped')
               if (wasFlipped !== false) wasFlipped = parseInt(wasFlipped)
               if (wasFlipped !== flipped) {
-                this.paths[id].ops[op][type][axis] = this.paths[id].ops[op][type][axis] * -1
-                this.paths[id].ops[op][type].attributes.set('flipped', flipped)
+                paths[id].ops[op][type][axis] = paths[id].ops[op][type][axis] * -1
+                paths[id].ops[op][type].attributes.set('flipped', flipped)
               }
             }
           }
         }
       }
-      for (let id of Object.keys(this.snippets)) {
+      for (let id of Object.keys(snippets)) {
         // Snippets use points not listed in part.points. We should only flip those here
         // and not double flip the points flipped above
-        let wasFlipped = this.snippets[id].anchor.attributes.get('flipped')
+        let wasFlipped = snippets[id].anchor.attributes.get('flipped')
         if (wasFlipped !== false) wasFlipped = parseInt(wasFlipped)
-        if (wasFlipped !== flipped)
-          this.snippets[id].anchor[axis] = this.snippets[id].anchor[axis] * -1
+        if (wasFlipped !== flipped) snippets[id].anchor[axis] = snippets[id].anchor[axis] * -1
       }
     },
   },
 }
 
-
 // More specifically named exports
 export const flipPlugin = plugin
 export const pluginFlip = plugin
-

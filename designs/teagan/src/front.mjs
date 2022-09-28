@@ -1,27 +1,26 @@
 import { base } from '@freesewing/brian'
 
-function teaganFront(part) {
-  const {
-    utils,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-    raise,
-    units,
-  } = part.shorthand()
-
+function teaganFront({
+  utils,
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  log,
+  units,
+  part,
+}) {
   // Hide Brian paths
-  for (let key of Object.keys(paths)) paths[key].render = false
+  for (let key of Object.keys(paths)) paths[key].hide()
 
   // Adapt fit to waist
   let width
@@ -58,11 +57,11 @@ function teaganFront(part) {
     points.armholePitch.x
   )
 
-  // Raise info for full length
-  raise.info(['fullLengthFromHps', units(points.hps.dy(points.hem))])
+  // Log info for full length
+  log.info(['fullLengthFromHps', units(points.hps.dy(points.hem))])
 
   // Draw seamline
-  paths.hemBase = new Path().move(points.cfHem).line(points.hem).setRender(false)
+  paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
   paths.saBase = new Path()
     .move(points.hem)
     .curve_(points.waistCp2, points.armhole)
@@ -70,7 +69,7 @@ function teaganFront(part) {
     .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
-    .setRender(false)
+    .hide()
   paths.seam = new Path()
     .move(points.cfHem)
     .join(paths.hemBase)

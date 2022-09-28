@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
-import PatternPicker from 'site/components/pattern-picker.js'
+import DesignPicker from 'site/components/design-picker.js'
 import CloseIcon from 'shared/components/icons/close.js'
 import MenuIcon from 'shared/components/icons/menu.js'
+import Ribbon from 'shared/components/ribbon.js'
 
 const Right = props => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,9 +46,7 @@ const Header = ({ app }) => {
         w-full
         z-30
         transition-transform
-        drop-shadow-xl
         ${show ? '': 'fixed top-0 left-0 -translate-y-20'}
-        ${app.loading ? "theme-gradient loading" : ""}
       `}>
         <div className="max-w-6xl m-auto">
           <div className="p-2 flex flex-row gap-2 justify-between text-neutral-content">
@@ -67,7 +66,7 @@ const Header = ({ app }) => {
                 }
             </button>
             <div className="hidden md:flex flex-row items-center gap-2">
-              <PatternPicker app={app} />
+              <DesignPicker app={app} />
             </div>
             <div className="hidden md:flex md:flex-row gap-2">
               <Link href="/">
@@ -82,6 +81,7 @@ const Header = ({ app }) => {
             </div>
           </div>
         </div>
+        <Ribbon loading={app.loading} theme={app.theme} />
       </header>
   )
 }

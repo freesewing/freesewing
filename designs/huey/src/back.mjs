@@ -2,10 +2,20 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 
-function draftHueyBack (part) {
-  let { store, macro, Path, Point, points, paths, complete, paperless, sa, options, measurements } =
-    part.shorthand()
-
+function draftHueyBack({
+  store,
+  macro,
+  Path,
+  Point,
+  points,
+  paths,
+  complete,
+  paperless,
+  sa,
+  options,
+  measurements,
+  part,
+}) {
   // Clear paths from Brian
   for (let i in paths) {
     if (['backArmhole', 'backCollar'].indexOf(i) === -1) delete paths[i]
@@ -40,8 +50,8 @@ function draftHueyBack (part) {
     .join(paths.backCollar)
     .attr('class', 'note stroke-xxl')
   paths.hemBase = new Path().move(points.cbHem).line(points.hem).attr('class', 'note stroke-xxl')
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase
     .clone()
@@ -79,12 +89,12 @@ export const back = {
   name: 'huey.back',
   from: brianBack,
   hideDependencies: true,
-  measurements: [ 'hips' ],
+  measurements: ['hips'],
   options: {
     ribbing: { bool: true, menu: 'style' },
     ribbingHeight: { pct: 10, min: 5, max: 15, menu: 'style' },
     hipsEase: { pct: 8, min: 4, max: 12, menu: 'fit' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftHueyBack,
 }

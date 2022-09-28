@@ -10,23 +10,22 @@ export const bib = {
     lengthRatio: { pct: 75, min: 55, max: 85, menu: 'fit' },
     headSize: { pct: 100, min: 10, max: 200, snap: 5, menu: 'size' },
   },
-  plugins: [ pluginBundle ],
-  draft: part => {
-    const {
-      Point,
-      points,
-      Path,
-      paths,
-      optionalMeasurements,
-      options,
-      macro,
-      raise,
-      complete,
-      snippets,
-      Snippet,
-      paperless,
-    } = part.shorthand()
-
+  plugins: [pluginBundle],
+  draft: ({
+    Point,
+    points,
+    Path,
+    paths,
+    optionalMeasurements,
+    options,
+    macro,
+    log,
+    complete,
+    snippets,
+    Snippet,
+    paperless,
+    part,
+  }) => {
     // Head size
     const head = (optionalMeasurements?.head || 360) * options.headSize
 
@@ -176,9 +175,9 @@ export const bib = {
       .close()
       .attr('class', 'fabric')
 
-    raise.info(['biasTapeLength', { mm: paths.seam.length() }])
-    raise.info(['fabricHeight', { mm: points.tipRightTopStart.dy(points.bottomLeftEnd) }])
-    raise.info(['fabricWidth', { mm: points.bottomLeftStart.dx(points.bottomRightEnd) }])
+    log.info(['biasTapeLength', { mm: paths.seam.length() }])
+    log.info(['fabricHeight', { mm: points.tipRightTopStart.dy(points.bottomLeftEnd) }])
+    log.info(['fabricWidth', { mm: points.bottomLeftStart.dx(points.bottomRightEnd) }])
 
     // Complete?
     if (complete) {
@@ -246,6 +245,5 @@ export const bib = {
     }
 
     return part
-  }
+  },
 }
-

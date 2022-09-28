@@ -1,9 +1,7 @@
 import { bannerPlugin } from '@freesewing/plugin-banner'
 import { base } from './base.mjs'
 
-const pluginBanner = (part) => {
-  const { points, Point, paths, Path, macro, options } = part.shorthand()
-
+const pluginBanner = ({ points, Point, paths, Path, macro, options, part }) => {
   if (['banner', 'all'].indexOf(options.plugin) !== -1) {
     points.from = new Point(0, 0)
     points.to = new Point(320, 0)
@@ -11,7 +9,7 @@ const pluginBanner = (part) => {
     paths.banner = new Path().move(points.from).line(points.to)
 
     macro('banner', {
-      path: 'banner',
+      path: paths.banner,
       text: 'banner plugin',
       dy: options.bannerDy,
       spaces: options.bannerSpaces,

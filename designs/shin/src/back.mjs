@@ -2,24 +2,23 @@ import { pctBasedOn } from '@freesewing/core'
 import { elastics } from '@freesewing/snapseries'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function shinBack(part) {
-  const {
-    store,
-    macro,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    snippets,
-    Snippet,
-    sa,
-    options,
-    measurements,
-    utils,
-  } = part.shorthand()
-
+function shinBack({
+  store,
+  macro,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  paperless,
+  snippets,
+  Snippet,
+  sa,
+  options,
+  measurements,
+  utils,
+  part,
+}) {
   // Store some helper variables
   store.set('hips', (measurements.hips / 2) * utils.stretchToScale(options.stretch))
   store.set('hipFront', store.get('hips') * options.frontFactor)
@@ -99,8 +98,8 @@ function shinBack(part) {
     .join(paths.saBase)
 
   paths.hemBase = new Path().move(points.legSide).curve_(points.legSideCp, points.reducedLegInner)
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
 
   paths.seam = paths.saBase.join(paths.hemBase).attr('class', 'fabric')
 

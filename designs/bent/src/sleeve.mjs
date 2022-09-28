@@ -1,8 +1,6 @@
 import { front } from '@freesewing/brian'
 
-function draftBentSleeve (part) {
-  let { Path, paths, points, store, options } = part.shorthand()
-
+function draftBentSleeve({ Path, paths, points, store, options, part }) {
   function draftSleeve(part, tweak) {
     let { Point, Path, points, store, options, measurements, utils } = part.shorthand()
     // Sleeve frame
@@ -177,11 +175,7 @@ export const sleeve = {
   name: 'bent.sleeve',
   after: front,
   hide: true,
-  measurements: [
-    'shoulderToElbow',
-    'shoulderToWrist',
-    'wrist',
-  ],
+  measurements: ['shoulderToElbow', 'shoulderToWrist', 'wrist'],
   options: {
     // Constants
     brianFitSleeve: true,

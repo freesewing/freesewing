@@ -1,9 +1,7 @@
 import { logoPlugin } from '@freesewing/plugin-logo'
 import { base } from './base.mjs'
 
-const pluginLogo = (part) => {
-  const { points, Point, paths, Path, snippets, Snippet, options } = part.shorthand()
-
+const pluginLogo = ({ points, Point, paths, Path, snippets, Snippet, options, part }) => {
   if (['logo', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(40, 40)
     snippets.a = new Snippet('logo', points.a)

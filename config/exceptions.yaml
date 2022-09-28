@@ -13,6 +13,14 @@ packageJson:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:
     author: woutervdub (https://github.com/woutervdub)
+  code:
+    c8:
+      reporter: html
+      all: yes
+      extension: mjs
+      exclude:
+        - "node_modules/*"
+        - "tests"
   hi:
     author: woutervdub (https://github.com/woutervdub)
   holmes:

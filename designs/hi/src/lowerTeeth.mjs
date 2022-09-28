@@ -1,22 +1,21 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { createTeeth } from './teeth.mjs'
 
-function draftHiLowerTeeth (part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiLowerTeeth({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let lowerTeeth01_02d = 75.74338717643937 * options.size
   let lowerTeeth01_02a = 25.414236606099728 + 180
   let lowerTeeth02cp1d = 47.74891452755759 * options.size
@@ -37,7 +36,6 @@ function draftHiLowerTeeth (part) {
   points.lowerTeeth01cp1 = points.lowerTeeth01cp2.flipX()
   points.lowerTeeth03cp2 = points.lowerTeeth02cp1.flipX()
 
-
   paths.seam = new Path()
     .move(points.lowerTeeth02)
     .curve(points.lowerTeeth02cp1, points.lowerTeeth01cp2, points.lowerTeeth01)
@@ -46,7 +44,8 @@ function draftHiLowerTeeth (part) {
   store.set('lowerTeethLength', paths.seam.length())
 
   paths.teeth = createTeeth(
-    [ // Array holding the points for half a mouth (bezier, not path)
+    [
+      // Array holding the points for half a mouth (bezier, not path)
       points.lowerTeeth02, // start
       points.lowerTeeth02cp1, // cp1
       points.lowerTeeth01cp2, // cp2
@@ -118,6 +117,6 @@ function draftHiLowerTeeth (part) {
 
 export const lowerTeeth = {
   name: 'hi.lowerTeeth',
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftHiLowerTeeth,
 }

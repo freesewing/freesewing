@@ -4,29 +4,25 @@ export const sleeve = {
   from: sleevecap,
   name: 'brian.sleeve',
   options: {
-    sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'style' }
+    sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'style' },
   },
-  measurements: [
-    'shoulderToWrist',
-    'wrist',
-  ],
-  draft: part => {
-    const {
-      store,
-      sa,
-      measurements,
-      options,
-      Point,
-      points,
-      Path,
-      paths,
-      Snippet,
-      snippets,
-      complete,
-      paperless,
-      macro,
-    } = part.shorthand()
-
+  measurements: ['shoulderToWrist', 'wrist'],
+  draft: ({
+    store,
+    sa,
+    measurements,
+    options,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    complete,
+    paperless,
+    macro,
+    part,
+  }) => {
     // Remove things inherited
     macro('cutonfold', false)
     macro('rmad')
@@ -40,11 +36,14 @@ export const sleeve = {
 
     // Wrist
     points.centerWrist = points.sleeveTop.shift(-90, store.get('sleeveLength'))
-    points.wristRight = points.centerWrist.shift(0, (measurements.wrist * (1 + options.cuffEase)) / 2)
+    points.wristRight = points.centerWrist.shift(
+      0,
+      (measurements.wrist * (1 + options.cuffEase)) / 2
+    )
     points.wristLeft = points.wristRight.rotate(180, points.centerWrist)
 
     // Paths
-    paths.sleevecap.render = false
+    paths.sleevecap.hide()
     paths.seam = new Path()
       .move(points.bicepsLeft)
       .move(points.wristLeft)
@@ -70,7 +69,9 @@ export const sleeve = {
       macro('scalebox', { at: points.scalebox })
 
       points.frontNotch = paths.sleevecap.shiftAlong(store.get('frontArmholeToArmholePitch'))
-      points.backNotch = paths.sleevecap.reverse().shiftAlong(store.get('backArmholeToArmholePitch'))
+      points.backNotch = paths.sleevecap
+        .reverse()
+        .shiftAlong(store.get('backArmholeToArmholePitch'))
       snippets.frontNotch = new Snippet('notch', points.frontNotch)
       snippets.backNotch = new Snippet('bnotch', points.backNotch)
       if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -104,5 +105,5 @@ export const sleeve = {
       })
     }
     return part
-  }
+  },
 }

@@ -1,21 +1,20 @@
 import { body } from './body.mjs'
 
-function draftHiTail (part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiTail({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let tail01_02d = 192.0129724628 * options.size
   let tail01_02a = 53.242955551234914
   let tail01_03d = 115.38057785000036 * options.size

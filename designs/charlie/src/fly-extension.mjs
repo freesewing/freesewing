@@ -1,9 +1,6 @@
 import { flyFacing } from './fly-facing.mjs'
 
-function draftCharlieFlyExtension (part) {
-  // Shorthand
-  let { points, paths, Path, complete, macro, sa } = part.shorthand()
-
+function draftCharlieFlyExtension({ points, paths, Path, complete, macro, sa, part }) {
   // Clean up
   for (let id in paths) delete paths[id]
 
@@ -29,13 +26,8 @@ function draftCharlieFlyExtension (part) {
     )
     .line(points.styleWaistIn)
     .line(points.flyTop)
-    .setRender(false)
-  paths.seam = paths.saBase
-    .clone()
-    .line(points.flyCorner)
-    .close()
-    .setRender(true)
-    .attr('class', 'fabric')
+    .hide()
+  paths.seam = paths.saBase.clone().line(points.flyCorner).close().unhide().attr('class', 'fabric')
 
   if (complete) {
     macro('cutonfold', {

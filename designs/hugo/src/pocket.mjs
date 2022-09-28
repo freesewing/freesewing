@@ -1,19 +1,30 @@
 import { front } from './front.mjs'
 
-function hugoPocket(part) {
+function hugoPocket({
+  utils,
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  snippets,
+  part,
+}) {
   // Remove clutter
-  const pocket = part.paths.pocket
-  part.paths = {}
-  part.snippets = {}
+  for (const key in paths) {
+    if (key !== 'pocket') delete paths[key]
+  }
+  for (const key in snippets) delete snippets[key]
 
-  const { utils, store, sa, points, Path, paths, complete, paperless, macro } = part.shorthand()
-
-  paths.seam = pocket
+  paths.seam = paths.pocket
     .line(points.cfRibbing)
     .line(points.pocketHem)
     .close()
     .attr('class', 'fabric', true)
-  paths.seam.render = true
+  paths.seam.unhide()
 
   paths.saBase = new Path()
     .move(points.cfRibbing)
@@ -21,7 +32,7 @@ function hugoPocket(part) {
     .line(points.pocketTip)
     ._curve(points.pocketTopCp, points.pocketTop)
     .line(points.pocketCf)
-    .setRender(false)
+    .hide()
 
   store.set('facingWidth', points.pocketHem.dist(points.pocketTip) / 2)
 
@@ -42,11 +53,11 @@ function hugoPocket(part) {
     .line(facing.start())
     .join(facing)
     .attr('class', ' fabric help')
-  paths.facing.render = false
+  paths.facing.hide()
 
   // Complete pattern?
   if (complete) {
-    paths.facing.render = true
+    paths.facing.unhide()
     macro('cutonfold', {
       from: points.pocketCf,
       to: points.cfRibbing,
@@ -90,5 +101,6 @@ function hugoPocket(part) {
 export const pocket = {
   name: 'hugo.pocket',
   from: front,
+  // hideDependencies: true,
   draft: hugoPocket,
 }

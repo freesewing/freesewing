@@ -1,23 +1,22 @@
 import { front } from './front.mjs'
 
-function ursulaBack(part) {
-  const {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    measurements,
-    //    Snippet,
-    //    snippets,
-    store,
-    utils,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function ursulaBack({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  measurements,
+  //  Snippet,
+  //  snippets,
+  store,
+  utils,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   // Design pattern here
 
   // Create points
@@ -178,7 +177,7 @@ function ursulaBack(part) {
             points.backLegOpeningRightCp1,
             points.backLegOpeningRight
           )
-          .setRender(false)
+          .hide()
       : new Path()
           .move(points.backGussetRight)
           .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
@@ -187,13 +186,13 @@ function ursulaBack(part) {
             points.backLegOpeningRightCp1,
             points.backLegOpeningRight
           )
-          .setRender(false)
+          .hide()
   store.set('backLegOpeningLength', paths.backLegOpening.length())
 
   paths.backWaistBand = new Path()
     .move(points.backWaistBandRight)
     .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
-    .setRender(false)
+    .hide()
   store.set('backWaistBandLength', paths.backWaistBand.length())
 
   // Complete?

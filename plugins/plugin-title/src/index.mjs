@@ -31,7 +31,7 @@ export const plugin = {
     },
   },
   macros: {
-    title: function (so) {
+    title: function (so, { points, scale, locale, store }) {
       const prefix = so.prefix || ''
 
       // Passing `false` will remove the title
@@ -43,7 +43,7 @@ export const plugin = {
           `_${prefix}_titleFor`,
           `_${prefix}_exportDate`,
         ])
-          delete this.points[id]
+          delete points[id]
         return true
       }
 
@@ -59,36 +59,36 @@ export const plugin = {
       }
 
       so = { ...defaults, ...so }
-      so.scale = so.scale * this.context.settings.scale
+      so.scale = so.scale * scale
       let overwrite = true
       if (so.append) overwrite = false
-      this.points[`_${prefix}_titleNr`] = so.at
+      points[`_${prefix}_titleNr`] = so.at
         .clone()
         .attr('data-text', so.nr, overwrite)
         .attr('data-text-class', 'text-4xl fill-note font-bold')
         .attr('data-text-transform', transform(so.at))
       let shift = 8
       if (so.title) {
-        this.points[`_${prefix}_titleName`] = so.at
+        points[`_${prefix}_titleName`] = so.at
           .shift(-90 - so.rotation, shift * so.scale)
           .attr('data-text', so.title)
           .attr('data-text-class', 'text-lg fill-current font-bold')
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, 13 * so.scale)))
         shift += 8
       }
-      let name = this.context.config?.data?.name || 'No Name'
+      let name = store.data?.name || 'No Name'
       name = name.replace('@freesewing/', '')
-      this.points[`_${prefix}_titlePattern`] = so.at
+      points[`_${prefix}_titlePattern`] = so.at
         .shift(-90 - so.rotation, shift * so.scale)
         .attr('data-text', name)
-        .attr('data-text', 'v' + this.context.config?.data?.version || 'No Version')
+        .attr('data-text', 'v' + (store.data?.version || 'No Version'))
         .attr('data-text-class', 'fill-note')
         .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
-      if (this.context.settings.metadata && this.context.settings.metadata.for) {
+      if (store.data.for) {
         shift += 8
-        this.points[`_${prefix}_titleFor`] = so.at
+        points[`_${prefix}_titleFor`] = so.at
           .shift(-90 - so.rotation, shift * so.scale)
-          .attr('data-text', '( ' + this.context.settings.metadata.for + ' )')
+          .attr('data-text', '( ' + store.data.for + ' )')
           .attr('data-text-class', 'fill-current font-bold')
           .attr('data-text-transform', transform(so.at.shift(-90 - so.rotation, shift * so.scale)))
       }
@@ -98,11 +98,11 @@ export const plugin = {
       let mins = now.getMinutes()
       if (hours < 10) hours = `0${hours}`
       if (mins < 10) mins = `0${mins}`
-      this.points[`_${prefix}_exportDate`] = so.at
+      points[`_${prefix}_exportDate`] = so.at
         .shift(-90 - so.rotation, shift * so.scale)
         .attr(
           'data-text',
-          now.toLocaleDateString(this.context.settings.locale || 'en', {
+          now.toLocaleDateString(locale || 'en', {
             weekday: 'long',
             year: 'numeric',
             month: 'short',

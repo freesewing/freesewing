@@ -1,5 +1,5 @@
 import { name, version } from '../data.mjs'
-import { sample, paperless, buildStylesheet } from './css.mjs'
+import { sampleStyle, paperlessStyle, buildStylesheet } from './css.mjs'
 
 const grid = {
   metric: `
@@ -17,7 +17,7 @@ const grid = {
   <path class="gridline" d="M 12.7 0 L 12.7 25.4 M 0 12.7 L 25.4 12.7" />
   <path class="gridline-sm" d="M 3.175 0 L 3.175 25.4 M 6.32 0 L 6.35 25.4 M 9.525 0 L 9.525 25.4 M 15.875 0 L 15.875 25.4 M 19.05 0 L 19.05 25.4 M 22.225 0 L 22.225 25.4" />
   <path class="gridline-sm" d="M 0 3.175 L 25.4 3.175 M 0 6.32 L 25.4 6.35 M 0 9.525 L 25.4 9.525 M 0 15.875 L 25.4 15.875 M 0 19.05 L 25.4 19.05 M 0 22.225 L 25.4 22.225" />
-</pattern>`
+</pattern>`,
 }
 
 export const plugin = {
@@ -28,16 +28,20 @@ export const plugin = {
       const current = svg.attributes.get('class')
       if (!current || current.indexOf('freesewing') !== -1) {
         svg.attributes.set('class', 'freesewing')
-        svg.style += sample
-        svg.style += paperless
+        svg.style += sampleStyle
+        svg.style += paperlessStyle
         svg.style += buildStylesheet(svg.pattern.settings.scale, data.stripped)
-        if (svg.pattern.settings.paperless) {
-          svg.pattern.settings.units === 'imperial'
+        let paperless = false
+        for (const set of svg.pattern.settings) {
+          if (set.paperless) paperless = true
+        }
+        if (paperless) {
+          svg.pattern.settings[0].units === 'imperial'
             ? (svg.defs += grid.imperial)
             : (svg.defs += grid.metric)
-          for (const key in svg.pattern.parts) {
+          for (const key in svg.pattern.parts[0]) {
             const part = svg.pattern.parts[key]
-            if (part.render && svg.pattern.needs(key)) {
+            if (!part.hidden && svg.pattern.__needs(key)) {
               let anchor = new svg.pattern.Point(0, 0)
               if (typeof part.points.gridAnchor !== 'undefined') anchor = part.points.gridAnchor
               else if (typeof part.points.anchor !== 'undefined') anchor = part.points.anchor
@@ -63,4 +67,3 @@ export const plugin = {
 // More specifically named exports
 export const themePlugin = plugin
 export const pluginTheme = plugin
-

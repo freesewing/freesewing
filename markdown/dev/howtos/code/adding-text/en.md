@@ -16,9 +16,7 @@ points.anchor = new Point(100, 25)
   .attr("data-text-class", "center");
 ```
 
-<Example part="point_attr">
-Text inserted in a FreeSewing pattern
-</Example>
+<Example part="point_attr">Text inserted in a FreeSewing pattern</Example>
 
 <Note>
 

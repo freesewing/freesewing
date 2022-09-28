@@ -28,6 +28,7 @@
     "lodash.unset": "^4.5.2",
     "mdast-util-toc": "^6.1.0",
     "pdfkit": "^0.13.0",
+    "postcss-for": "^2.1.1",
     "react-markdown": "^8.0.0",
     "react-sizeme": "^3.0.2",
     "react-timeago": "^7.1.0",
@@ -44,6 +45,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "eslint": "^8.23.1",
+    "eslint-plugin-react": "^7.31.8",
     "lodash.set": "^4.3.2",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.1",

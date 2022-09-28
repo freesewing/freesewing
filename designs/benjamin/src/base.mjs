@@ -1,22 +1,21 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function draftBenjaminBase (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftBenjaminBase({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   if (options.bowStyle === 'square') options.tipWidth = options.knotWidth
 
   for (let option of [
@@ -66,7 +65,7 @@ function draftBenjaminBase (part) {
   points.titleAnchor = new Point(points.tip1Top.x, 0)
 
   // Paths
-  paths.cap = new Path().move(points.tip2Bottom)
+  paths.cap = new Path().hide().move(points.tip2Bottom)
   if (options.endStyle === 'straight') {
     paths.cap = new Path().move(points.tip2Bottom).line(points.tip2Top)
   } else if (options.endStyle === 'pointed') {
@@ -88,7 +87,6 @@ function draftBenjaminBase (part) {
     })
     paths.cap = paths.bottomRounded.join(paths.topRounded)
   }
-  paths.cap.render = false
 
   if (options.bowStyle === 'diamond' || options.bowStyle === 'butterfly') {
     const cpl = options.bowStyle === 'diamond' ? bow / 10 : bow / 4
@@ -124,7 +122,7 @@ function draftBenjaminBase (part) {
       .curve(points.knotTopCp2, points.tip1TopCp1, points.tip1Top)
       .curve(points.tip1TopCp2, points.transitionTopRightCp1, points.transitionTopRight)
       .line(points.bandTopRight)
-      .setRender(false)
+      .hide()
   } else {
     paths.bow = new Path()
       .move(points.bandBottomRight)
@@ -134,7 +132,7 @@ function draftBenjaminBase (part) {
       .line(points.tip2Top)
       .line(points.transitionTopRight)
       .line(points.bandTopRight)
-      .setRender(false)
+      .hide()
   }
 
   // Complete?
@@ -206,9 +204,7 @@ function draftBenjaminBase (part) {
 export const base = {
   name: 'benjamin.base',
   hide: true,
-  measurements: [
-    'neck',
-  ],
+  measurements: ['neck'],
   options: {
     // Static options
     transitionLength: 2, //Twice the knot
@@ -221,17 +217,18 @@ export const base = {
     tipWidth: { pct: 15, min: 0, max: 20, menu: 'style' },
     knotWidth: { pct: 7, min: 5, max: 10, menu: 'style' },
     bowLength: { pct: 28, min: 23, max: 33, menu: 'style' },
-    bowStyle: { dflt: 'butterfly',
+    bowStyle: {
+      dflt: 'butterfly',
       list: ['diamond', 'butterfly', 'square', 'widesquare'],
-      menu: 'style'
+      menu: 'style',
     },
     endStyle: {
       dflt: 'straight',
       list: ['straight', 'pointed', 'rounded'],
-      menu: 'style'
+      menu: 'style',
     },
     ribbonWidth: { pct: 6, min: 5, max: 8, menu: 'style' },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftBenjaminBase,
 }

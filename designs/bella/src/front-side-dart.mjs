@@ -3,22 +3,21 @@ import { back } from './back.mjs'
 export const frontSideDart = {
   name: 'bella.frontSideDart',
   after: back,
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      utils,
-      measurements,
-    } = part.shorthand()
-
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    utils,
+    measurements,
+    part,
+  }) => {
     // Get to work
     points.cfNeck = new Point(0, measurements.neck * options.collarFactor)
     points.hps = new Point(measurements.neck * options.neckWidthFront, 0)
@@ -161,7 +160,10 @@ export const frontSideDart = {
       points.bust,
       options.waistDartLength
     )
-    points.waistDartLeftCp = points.waistDartLeft.shift(90, points.waistDartHem.dist(points.bust) / 2)
+    points.waistDartLeftCp = points.waistDartLeft.shift(
+      90,
+      points.waistDartHem.dist(points.bust) / 2
+    )
     points.waistDartRightCp = points.waistDartRight.shift(
       90,
       points.waistDartHem.dist(points.bust) / 2
@@ -198,7 +200,7 @@ export const frontSideDart = {
       .curve_(points.armholePitchCp2, points.shoulder)
       .line(points.hps)
       .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
-      .setRender(false)
+      .hide()
 
     if (complete) {
       points.titleAnchor = new Point(points.armholePitch.x / 2, points.armholePitchCp2.y)
@@ -333,6 +335,5 @@ export const frontSideDart = {
     }
 
     return part
-  }
+  },
 }
-

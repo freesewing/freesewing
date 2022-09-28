@@ -11,9 +11,7 @@ export const options = {
     menu: 'style',
   },
 }
-export const calculateHelpers = (part) => {
-  let { store, measurements, options, absoluteOptions } = part.shorthand()
-
+export const calculateHelpers = ({ store, measurements, options, absoluteOptions }) => {
   let halfLength =
     (measurements.hpsToWaistBack + measurements.waistToHips + measurements.neck / 2) *
     (1 + options.lengthBonus)
@@ -24,9 +22,12 @@ export const calculateHelpers = (part) => {
   store.set('backTip', backTip)
 }
 
-export const draftTieShape = (part, tipWidth, knotWidth, notch = false) => {
-  let { points, Point, store, utils, paths, Path, macro, absoluteOptions } = part.shorthand()
-
+export const draftTieShape = (
+  { points, Point, store, utils, paths, Path, macro, absoluteOptions },
+  tipWidth,
+  knotWidth,
+  notch = false
+) => {
   let hl = store.get('halfLength')
   let ht = tipWidth / 2
   let hk = knotWidth / 2
@@ -62,9 +63,7 @@ export const draftTieShape = (part, tipWidth, knotWidth, notch = false) => {
     .close()
 }
 
-export const tieShapeDimensions = (part, lining = false) => {
-  let { points, macro, paths, Path } = part.shorthand()
-
+export const tieShapeDimensions = ({ points, macro, paths, Path }, lining = false) => {
   macro('hd', {
     from: points.tipLeft,
     to: points.tipRight,
@@ -100,8 +99,7 @@ export const tieShapeDimensions = (part, lining = false) => {
   }
 }
 
-export const seamAllowance = (part, className) => {
-  let { paths, Path, points, sa } = part.shorthand()
+export const seamAllowance = ({ paths, Path, points, sa }, className) => {
   paths.sa = new Path()
     .move(points.tipLeft)
     .line(points.tip)

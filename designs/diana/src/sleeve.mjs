@@ -2,9 +2,7 @@ import { sleeve as sleeveBase } from '@freesewing/brian'
 import { front } from './front.mjs'
 import { back } from './front.mjs'
 
-function draftDianaSleeve (part) {
-  let { sa, points, paths, Path, complete, paperless, macro } = part.shorthand()
-
+function draftDianaSleeve({ sa, points, paths, Path, complete, paperless, macro, part }) {
   paths.seam = new Path()
     .move(points.wristRight)
     .line(points.bicepsRight)
@@ -27,8 +25,8 @@ function draftDianaSleeve (part) {
         .join(paths.sleevecap)
         .line(points.wristLeft)
       paths.hemBase = new Path().move(points.wristLeft).line(points.wristRight)
-      paths.saBase.render = false
-      paths.hemBase.render = false
+      paths.saBase.hide()
+      paths.hemBase.hide()
       paths.sa = paths.saBase.offset(sa).join(paths.hemBase.offset(sa * 3))
       paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
     }
@@ -68,7 +66,7 @@ function draftDianaSleeve (part) {
 export const sleeve = {
   name: 'diana.sleeve',
   from: sleeveBase,
-  after: [ front, back ],
+  after: [front, back],
   hideDependencies: true,
   draft: draftDianaSleeve,
 }

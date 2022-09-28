@@ -1,5 +1,5 @@
 // Where to cut for a dart in a given location
-export function getDartInsertionPoint (points, utils, loc, angle) {
+export function getDartInsertionPoint(points, utils, loc, angle) {
   let tip = points.bustPoint
   switch (loc) {
     case 700:
@@ -46,7 +46,7 @@ export function getDartInsertionPoint (points, utils, loc, angle) {
 }
 
 // What points need to be rotated after cutting the primary bust dart
-export function getPrimaryDartRotationList (loc) {
+export function getPrimaryDartRotationList(loc) {
   let rotate = ['cfWaist']
   if (loc >= 1100) rotate.push('cfNeck')
   if (loc >= 1130) rotate.push('hpsCp2')
@@ -61,7 +61,7 @@ export function getPrimaryDartRotationList (loc) {
 // What points need to be rotated after cutting the secondary bust dart
 // loc1 = primary bust dart location
 // loc2 = secondary bust dart location
-export function getSecondaryDartRotationList (loc1, loc2) {
+export function getSecondaryDartRotationList(loc1, loc2) {
   let rotate = ['primaryBustDart1']
   if (loc1 <= 700 && loc2 >= 800) rotate.push('cfWaist')
   if (loc1 <= 1000 && loc2 >= 1100) rotate.push('cfNeck')
@@ -74,7 +74,7 @@ export function getSecondaryDartRotationList (loc1, loc2) {
   return rotate
 }
 
-export function getDartLocationsAsNumbers (options) {
+export function getDartLocationsAsNumbers(options) {
   let loc1 = options.primaryBustDart
   let loc2 = options.secondaryBustDart
   loc1 = Number(loc1.slice(0, 2) + loc1.slice(-2))
@@ -111,7 +111,7 @@ export const getSaDartPaths = (Path, points) => [
  * still need to turn them into darts that make sense in practice.
  * This method takes care of that
  */
-export function applyBustDarts (points, options, utils) {
+export function applyBustDarts(points, options, utils) {
   // Find the bust dart edge point
   points.primaryBustDartEdge = utils.beamsIntersect(
     points.primaryBustDart1,

@@ -1,7 +1,8 @@
 import { headSection1, headSection2 } from './head.mjs'
 
-function octoplushyArmSection(partNumber, part) {
-  const {
+function octoplushyArmSection(
+  partNumber,
+  {
     options,
     Point,
     Path,
@@ -15,8 +16,9 @@ function octoplushyArmSection(partNumber, part) {
     macro,
     utils,
     store,
-  } = part.shorthand()
-
+    part,
+  }
+) {
   if (partNumber > (options.type == 'squid' ? 1 : 0)) {
     return part
   }
@@ -151,7 +153,7 @@ function octoplushyArmSection(partNumber, part) {
     .move(points.armBottomLeft)
     .curve(points.armBottomLeftCp1, points.armBottomCp2, points.armBottom)
     .curve(points.armBottomCp1, points.armBottomRightCp2, points.armBottomRight)
-    .setRender(false)
+    .hide()
   if (options.type == 'squid') {
     if (partNumber == 1) {
       paths.armBottom = new Path()
@@ -160,7 +162,7 @@ function octoplushyArmSection(partNumber, part) {
         .curve(points.tentacleLeftCp1, points.armBottomCp2, points.armBottom)
         .curve(points.armBottomCp1, points.tentacleRightCp2, points.tentacleRight)
         .curve(points.tentacleRightCp1, points.armBottomRightCp2, points.armBottomRight)
-        .setRender(false)
+        .hide()
     }
   }
 
@@ -315,10 +317,10 @@ function octoplushyArmSection(partNumber, part) {
 export const armSection1 = {
   name: 'octoplushy.armSection1',
   after: headSection1,
-  draft: (part) => octoplushyArmSection(0, part),
+  draft: (params) => octoplushyArmSection(0, params),
 }
 export const armSection2 = {
   name: 'octoplushy.armSection2',
   after: headSection2,
-  draft: (part) => octoplushyArmSection(1, part),
+  draft: (params) => octoplushyArmSection(1, params),
 }

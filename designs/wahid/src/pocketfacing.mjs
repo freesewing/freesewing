@@ -1,8 +1,18 @@
 import { front } from './front.mjs'
 
-function wahidPocketFacing(part) {
-  const { points, Point, paths, Path, measurements, options, macro, complete, paperless, store } =
-    part.shorthand()
+function wahidPocketFacing({
+  points,
+  Point,
+  paths,
+  Path,
+  measurements,
+  options,
+  macro,
+  complete,
+  paperless,
+  store,
+  part,
+}) {
   const pw = measurements.hips * options.pocketWidth // Pocket width
   const pwh = pw * options.weltHeight // Pocket welt height
   const ph = store.get('pocketBagLength') + pwh // Pocket height
@@ -17,7 +27,7 @@ function wahidPocketFacing(part) {
     to: points.bottomRight,
     via: points.bottomLeft,
     radius: pw / 8,
-    render: false,
+    hidden: true,
     prefix: 'roundLeft',
   })
   macro('round', {
@@ -25,7 +35,7 @@ function wahidPocketFacing(part) {
     to: points.topRight,
     via: points.bottomRight,
     radius: pw / 8,
-    render: false,
+    hidden: true,
     prefix: 'roundRight',
   })
   paths.seam = new Path()

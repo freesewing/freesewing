@@ -1,12 +1,12 @@
 module.exports = function tests(store, config, chai) {
   describe('Admin routes', () => {
-    it('should login ad admin', done => {
+    it('should login ad admin', (done) => {
       chai
         .request(config.backend)
         .post('/login')
         .send({
           username: 'admin',
-          password: 'admin'
+          password: 'admin',
         })
         .end((err, res) => {
           console.log(res)
@@ -15,7 +15,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should load a user account', done => {
+    it('should load a user account', (done) => {
       chai
         .request(config.backend)
         .get('/admin/users/rracx')

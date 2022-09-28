@@ -1,9 +1,19 @@
 import { back } from './back.mjs'
 
-function draftCarltonBelt (part) {
-  let { paperless, sa, snippets, Snippet, store, complete, points, macro, Point, paths, Path } =
-    part.shorthand()
-
+function draftCarltonBelt({
+  paperless,
+  sa,
+  snippets,
+  Snippet,
+  store,
+  complete,
+  points,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   let length = 1.6 * (store.get('cbToDart') + store.get('dartToSide'))
   let width = store.get('beltWidth')
 
@@ -18,7 +28,6 @@ function draftCarltonBelt (part) {
     via: points.topLeft,
     prefix: 'roundTop',
     radius: width / 4,
-    render: true,
   })
   macro('round', {
     from: points.topLeft,
@@ -26,7 +35,6 @@ function draftCarltonBelt (part) {
     via: points.bottomLeft,
     prefix: 'roundBottom',
     radius: width / 4,
-    render: true,
   })
 
   // Paths

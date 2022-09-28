@@ -1,7 +1,7 @@
-export function miniscale(so) {
+export function miniscale(so, { points, paths, Point, Path, scale }) {
   // Passing `false` will remove the miniscale
   if (so === false) {
-    for (let id of [
+    for (const id of [
       '__miniscaleMetricTopLeft',
       '__miniscaleMetricTopRight',
       '__miniscaleMetricBottomRight',
@@ -13,15 +13,13 @@ export function miniscale(so) {
       '__miniscaleMetric',
       '__miniscaleImperial',
     ])
-      delete this.points[id]
-    for (let id of ['__miniscaleMetric', '__miniscaleImperial']) delete this.paths[id]
+      delete points[id]
+    for (const id of ['__miniscaleMetric', '__miniscaleImperial']) delete paths[id]
     return true
   }
 
-  const scale = this.context.settings.scale
-
   // Convert scale to a value between 0 and 5, inclusive.
-  const scaleIndex = Math.ceil(6 * Math.max(0.1, Math.min(1, this.context.settings.scale))) - 1
+  const scaleIndex = Math.ceil(6 * Math.max(0.1, Math.min(1, scale))) - 1
 
   // Metric size in mm / display value and imperial size in mm / display value for each scale index.
   const sizes = [
@@ -37,20 +35,21 @@ export function miniscale(so) {
   const metricDisplaySize = sizes[scaleIndex][1]
   const imperialDisplaySize = sizes[scaleIndex][3]
   // Box points
-  this.points.__miniscaleMetricTopLeft = new this.Point(so.at.x - m, so.at.y - m)
-  this.points.__miniscaleMetricTopRight = new this.Point(so.at.x + m, so.at.y - m)
-  this.points.__miniscaleMetricBottomLeft = new this.Point(so.at.x - m, so.at.y + m)
-  this.points.__miniscaleMetricBottomRight = new this.Point(so.at.x + m, so.at.y + m)
-  this.points.__miniscaleImperialTopLeft = new this.Point(so.at.x - i, so.at.y - i)
-  this.points.__miniscaleImperialTopRight = new this.Point(so.at.x + i, so.at.y - i)
-  this.points.__miniscaleImperialBottomLeft = new this.Point(so.at.x - i, so.at.y + i)
-  this.points.__miniscaleImperialBottomRight = new this.Point(so.at.x + i, so.at.y + i)
+  points.__miniscaleMetricTopLeft = new Point(so.at.x - m, so.at.y - m)
+  points.__miniscaleMetricTopRight = new Point(so.at.x + m, so.at.y - m)
+  points.__miniscaleMetricBottomLeft = new Point(so.at.x - m, so.at.y + m)
+  points.__miniscaleMetricBottomRight = new Point(so.at.x + m, so.at.y + m)
+  points.__miniscaleImperialTopLeft = new Point(so.at.x - i, so.at.y - i)
+  points.__miniscaleImperialTopRight = new Point(so.at.x + i, so.at.y - i)
+  points.__miniscaleImperialBottomLeft = new Point(so.at.x - i, so.at.y + i)
+  points.__miniscaleImperialBottomRight = new Point(so.at.x + i, so.at.y + i)
   // Text anchor points
-  this.points.__miniscaleMetric = new this.Point(so.at.x, so.at.y - 2 * scale)
-  this.points.__miniscaleImperial = new this.Point(so.at.x, so.at.y + 8 * scale)
+  points.__miniscaleMetric = new Point(so.at.x, so.at.y - 2 * scale)
+  points.__miniscaleImperial = new Point(so.at.x, so.at.y + 8 * scale)
   // Rotation
   if (so.rotate) {
-    let points = [
+    so.rotate = Number(so.rotate)
+    let toRotate = [
       '__miniscaleMetricTopLeft',
       '__miniscaleMetricTopRight',
       '__miniscaleMetricBottomLeft',
@@ -62,34 +61,34 @@ export function miniscale(so) {
       '__miniscaleMetric',
       '__miniscaleImperial',
     ]
-    for (let pid of points) this.points[pid] = this.points[pid].rotate(so.rotate, so.at)
-    for (let pid of points.slice(8)) {
-      this.points[pid].attributes.set(
+    for (const pid of toRotate) points[pid] = points[pid].rotate(so.rotate, so.at)
+    for (const pid of toRotate.slice(8)) {
+      points[pid].attributes.set(
         'data-text-transform',
-        `rotate(${so.rotate * -1}, ${this.points[pid].x}, ${this.points[pid].y})`
+        `rotate(${so.rotate * -1}, ${points[pid].x}, ${points[pid].y})`
       )
     }
   }
   // Paths
-  this.paths.__miniscaleImperial = new this.Path()
+  paths.__miniscaleImperial = new Path()
     .attr('class', 'scalebox imperial fill-current')
-    .move(this.points.__miniscaleImperialTopLeft)
-    .line(this.points.__miniscaleImperialBottomLeft)
-    .line(this.points.__miniscaleImperialBottomRight)
-    .line(this.points.__miniscaleImperialTopRight)
+    .move(points.__miniscaleImperialTopLeft)
+    .line(points.__miniscaleImperialBottomLeft)
+    .line(points.__miniscaleImperialBottomRight)
+    .line(points.__miniscaleImperialTopRight)
     .close()
-  this.paths.__miniscaleMetric = new this.Path()
+  paths.__miniscaleMetric = new Path()
     .attr('class', 'scalebox metric fill-bg')
-    .move(this.points.__miniscaleMetricTopLeft)
-    .line(this.points.__miniscaleMetricBottomLeft)
-    .line(this.points.__miniscaleMetricBottomRight)
-    .line(this.points.__miniscaleMetricTopRight)
+    .move(points.__miniscaleMetricTopLeft)
+    .line(points.__miniscaleMetricBottomLeft)
+    .line(points.__miniscaleMetricBottomRight)
+    .line(points.__miniscaleMetricTopRight)
     .close()
   // Text
-  this.points.__miniscaleMetric = this.points.__miniscaleMetric
+  points.__miniscaleMetric = points.__miniscaleMetric
     .attr('data-text', `${metricDisplaySize} x ${metricDisplaySize}`)
     .attr('data-text-class', 'text-xs center')
-  this.points.__miniscaleImperial = this.points.__miniscaleImperial
+  points.__miniscaleImperial = points.__miniscaleImperial
     .attr('data-text', `${imperialDisplaySize} x ${imperialDisplaySize}`)
     .attr('data-text-class', 'text-xs center ')
 }

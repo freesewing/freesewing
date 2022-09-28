@@ -1,22 +1,37 @@
 ---
 title: Part
-order: 20
+order: 15
 ---
 
-The `Part` object in FreeSewing's core library holds all data and logic of a pattern part.
-A pattern part is what holds the actual information about points and paths,
-and multiple parts together typically make up a pattern.
+A `Part` in FreeSewing holds all data, logic, and configuration of a Design.
+Parts truly are the building blocks of FreeSewing as they not only provide
+the configurarion, but also a `draft()` method that does the actual work
+of drafting a parametric design.
 
-## Part properties
+## Example
 
-| Property | Description |
-| --------:| ----------- |
-| `attributes` | An [Attributes](/reference/api/attributes) instance holding the part's attributes |
-| `paths` | A plain object to store your paths in |
-| `points` |  A plain object to store your points in |
-| `render` |  A flag that controls whether to include the part in the render output |
-| `snippets` | A plain object to store your snippets in |
+```js
+const part = {
+  name: 'example.part',
+  from: otherPart,
+  after: [ yetAnotherPart, oneMorePart ],
+  measurements: ['head', 'chest' ],
+  optionalMeasurements: ['neck'],
+  options: {
+    headEase: { pct: 12, min: 5, max: 20 }
+  }
+  hide: false,
+  hideAll: false,
+  hideDependencies: true,
+  plugins: [ 
+    plugin1, 
+    plugin1, 
+    [ plugin3, dataForPlugin3 ],
+  ]
+}
+```
 
-## Part methods
+Click below to learn more about:
 
-<ReadMore list />
+- [A part's configuration](/reference/api/part/config)
+- [A part's `draft()` method](/reference/api/part/draft)

@@ -1,10 +1,20 @@
 import { frontPoints } from './frontpoints.mjs'
 import { frontInside } from './frontinside.mjs'
 
-function nobleFrontOutside(part) {
-  const { store, sa, points, Path, paths, Snippet, snippets, options, complete, paperless, macro } =
-    part.shorthand()
-
+function nobleFrontOutside({
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   delete points.bustDartTop
   delete points.bustSide
   delete points.bustDartMiddle
@@ -22,12 +32,12 @@ function nobleFrontOutside(part) {
         points.waistUpDartRight
       )
       .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
-      .setRender(false)
+      .hide()
     paths.armhole = new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
       .curve_(points.armholePitchCp2, points.shoulder)
-      .setRender(false)
+      .hide()
 
     paths.seam = new Path()
       .move(points.waistDartRight)
@@ -43,7 +53,7 @@ function nobleFrontOutside(part) {
       .move(points.armholeDartOutside)
       .curve(points.armholeCircleOutsideCp1, points.waistCircleOutsideCp1, points.waistUpDartRight)
       .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
-      .setRender(false)
+      .hide()
 
     paths.seam = new Path()
       .move(points.waistDartRight)

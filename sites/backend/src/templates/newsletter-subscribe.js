@@ -56,7 +56,7 @@ If it was you, please click below to confirm your subscription:
 
 __newsletterConfirmationLink__
 
-`
+`,
 }
 
 export default subscribe

@@ -1,8 +1,17 @@
 import { base } from './base.mjs'
 
-function draftBenjaminBow1 (part) {
-  let { Point, points, Path, paths, complete, macro, sa, store, paperless } = part.shorthand()
-
+function draftBenjaminBow1({
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  macro,
+  sa,
+  store,
+  paperless,
+  part,
+}) {
   points.bandBottomLeft = points.bandBottomLeft.shift(0, 0)
   points.bandTopLeft = points.bandBottomLeft.flipY()
 
@@ -20,7 +29,7 @@ function draftBenjaminBow1 (part) {
     .line(points.bandTopLeft)
     .close()
     .attr('class', 'fabric')
-    .setRender(true)
+    .unhide()
 
   if (complete) {
     // Paperless?
@@ -32,7 +41,7 @@ function draftBenjaminBow1 (part) {
       })
     }
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').setRender(true)
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').unhide()
     }
     macro('title', {
       at: points.titleAnchor,

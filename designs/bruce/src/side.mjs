@@ -2,22 +2,21 @@ import { back } from './back.mjs'
 import { front } from './front.mjs'
 import { init } from './init.mjs'
 
-function draftBruceSide (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    complete,
-    paperless,
-    macro,
-    utils,
-    snippets,
-    Snippet,
-  } = part.shorthand()
-
+function draftBruceSide({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  paperless,
+  macro,
+  utils,
+  snippets,
+  Snippet,
+  part,
+}) {
   // Initialize
   init(part)
 
@@ -54,8 +53,8 @@ function draftBruceSide (part) {
     .line(points.topRight)
     .line(points.bottomRight)
   paths.hemBase = new Path().move(points.bottomRight).line(points.bottomLeft)
-  paths.saBase.render = false
-  paths.hemBase.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   // Anchor point for sampling
@@ -120,6 +119,6 @@ function draftBruceSide (part) {
 
 export const side = {
   name: 'bruce.side',
-  after: [ back, front ],
+  after: [back, front],
   draft: draftBruceSide,
 }

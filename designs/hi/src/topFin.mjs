@@ -1,21 +1,20 @@
 import { body } from './body.mjs'
 
-function draftHiTopFin (part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiTopFin({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let topFinOpening = store.get('topFinOpening')
   let topFinOpeningLength = store.get('topFinOpeningLength')
 
@@ -79,8 +78,9 @@ function draftHiTopFin (part) {
 
   // Complete?
   if (complete) {
-
-    points.titleAnchor = points.topFin01.shiftFractionTowards(points.topFin02, 0.5).shiftFractionTowards(points.topFin03, 0.1)
+    points.titleAnchor = points.topFin01
+      .shiftFractionTowards(points.topFin02, 0.5)
+      .shiftFractionTowards(points.topFin03, 0.1)
     points.logoAnchor = points.titleAnchor.shiftFractionTowards(points.topFin03, 0.4)
 
     snippets.logo = new Snippet('logo', points.logoAnchor).attr(
@@ -134,12 +134,12 @@ function draftHiTopFin (part) {
       macro('vd', {
         from: points.topFin01,
         to: points.topFinInsideBottom,
-        x: points.topFin02.x +sa + 10,
+        x: points.topFin02.x + sa + 10,
       })
       macro('vd', {
         from: points.topFinInsideTop,
         to: points.topFin01,
-        x: points.topFinLeft.x -sa - 20,
+        x: points.topFinLeft.x - sa - 20,
       })
     }
     // if( options.size < 1.5 ) {

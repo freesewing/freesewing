@@ -5,8 +5,8 @@ import { draftFrontRightSeamless } from './frontright-seamless.mjs'
 import { front } from './front.mjs'
 import { buttonPlacketStyle } from './options.mjs'
 
-function simonFrontRight(part) {
-  const { sa, options, complete, paperless, points, macro, paths } = part.shorthand()
+function simonFrontRight(params) {
+  const { sa, options, complete, paperless, points, macro, paths, part } = params
   macro('flip')
   if (complete) {
     points.scalebox = points.waist.shiftFractionTowards(points.cfWaist, 0.5)
@@ -26,11 +26,11 @@ function simonFrontRight(part) {
   }
 
   if (options.seperateButtonPlacket) {
-    return draftFrontRightClassicSeperate(part)
+    return draftFrontRightClassicSeperate(params)
   } else if (options.buttonPlacketStyle === 'seamless') {
-    return draftFrontRightSeamless(part)
+    return draftFrontRightSeamless(params)
   } else if (options.buttonPlacketStyle === 'classic') {
-    return draftFrontRightClassicCuton(part)
+    return draftFrontRightClassicCuton(params)
   } else {
     throw `Unexpected buttonPlacketStyle: ${options.buttonPlacketStyle}`
   }

@@ -1,21 +1,20 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function tiberiusTunica(part) {
-  const {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    macro,
-    complete,
-    snippets,
-    Snippet,
-    sa,
-    paperless,
-  } = part.shorthand()
-
+function tiberiusTunica({
+  Point,
+  points,
+  Path,
+  paths,
+  measurements,
+  options,
+  macro,
+  complete,
+  snippets,
+  Snippet,
+  sa,
+  paperless,
+  part,
+}) {
   // Handle width
   let width =
     options.width === 'toElbow'
@@ -63,14 +62,10 @@ function tiberiusTunica(part) {
   points.armholeLeft = points.topLeft.shift(-90, armhole)
 
   // draw paths
-  paths.saBase = new Path()
-    .move(points.top)
-    .line(points.topLeft)
-    .line(points.bottomLeft)
-    .setRender(false)
-  paths.hem = new Path().move(points.bottomLeft).line(points.bottom).setRender(false)
-  paths.fold = new Path().move(points.bottom).line(points.top).setRender(false)
-  paths.seam = paths.saBase.join(paths.hem).join(paths.fold).setRender(true).attr('class', 'fabric')
+  paths.saBase = new Path().move(points.top).line(points.topLeft).line(points.bottomLeft).hide()
+  paths.hem = new Path().move(points.bottomLeft).line(points.bottom).hide()
+  paths.fold = new Path().move(points.bottom).line(points.top).hide()
+  paths.seam = paths.saBase.join(paths.hem).join(paths.fold).unhide().attr('class', 'fabric')
 
   // clavi
   if (options.clavi) {

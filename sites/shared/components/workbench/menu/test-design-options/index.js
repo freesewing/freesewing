@@ -5,7 +5,7 @@ import Option from './option'
 import { Ul, Details, TopSummary, TopSumTitle } from 'shared/components/workbench/menu'
 import { useTranslation } from 'next-i18next'
 import { optionsMenuStructure } from 'shared/utils.mjs'
-import { adult, doll, giant, measurements } from '@freesewing/models'
+import { adult, doll, giant } from '@freesewing/models'
 
 const groups = { adult, doll, giant }
 
@@ -17,14 +17,14 @@ const SampleDesignOption = props => {
     option={props.option}
     design={props.design}
     active={props.gist.sample?.option}
-    label={t(`o_${props.design.config.data.name}:${props.option}.t`)}
+    label={t(`o_${props.design.designConfig.data.name}:${props.option}.t`)}
     sampleSettings={{type: 'option', option: props.option}}
   />
 }
 
 const DesignOptions = props => {
   const { t } = useTranslation(['app'])
-  const optionsMenu = optionsMenuStructure(props.design.config.options)
+  const optionsMenu = optionsMenuStructure(props.design.patternConfig.options)
 
   const measies = props.draft?.config?.measurements || []
 

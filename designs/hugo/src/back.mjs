@@ -1,27 +1,26 @@
 import { back as brianBack } from '@freesewing/brian'
 import { front } from './front.mjs'
 
-function hugoBack(part) {
+function hugoBack({
+  store,
+  measurements,
+  options,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   // Remove clutter
-  let seam = part.paths.seam
-  part.paths = {}
-  part.paths.seam = seam
-
-  const {
-    store,
-    measurements,
-    options,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
+  let seam = paths.seam
+  paths = {}
+  paths.seam = seam
 
   // Remove notch inherited from Brian
   delete snippets.armholePitchNotch
@@ -47,7 +46,7 @@ function hugoBack(part) {
     .line(points.raglanTipBack)
     .join(neckOpeningParts[0].reverse())
   paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
-  paths.saBase.render = false
+  paths.saBase.hide()
 
   // Store neck opening path
   store.set('neckOpeningPartBack', neckOpeningParts[1])
@@ -119,6 +118,7 @@ function hugoBack(part) {
 export const back = {
   name: 'hugo.back',
   from: brianBack,
+  hideDependencies: true,
   measurements: ['hips'],
   after: front,
   draft: hugoBack,

@@ -1,10 +1,18 @@
 import { waistband } from './waistband.mjs'
 
-function draftCharlieBeltLoops (part) {
-  // Shorthand
-  let { store, points, Point, paths, Path, options, complete, paperless, macro, sa } =
-    part.shorthand()
-
+function draftCharlieBeltLoops({
+  store,
+  points,
+  Point,
+  paths,
+  Path,
+  options,
+  complete,
+  paperless,
+  macro,
+  sa,
+  part,
+}) {
   let count = options.beltLoops
   let length = store.get('waistbandWidth') * 2.5 * count
   let width = store.get('waistbandWidth') / 4

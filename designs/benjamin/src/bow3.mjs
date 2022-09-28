@@ -1,13 +1,19 @@
 import { base } from './base.mjs'
 
-function draftBenjaminBow3 (part) {
-  let { options, Point, points, Path, paths, complete, macro, sa, store, paperless } =
-    part.shorthand()
-
-  if (!options.adjustmentRibbon) {
-    part.render = false
-    return part
-  }
+function draftBenjaminBow3({
+  options,
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  macro,
+  sa,
+  store,
+  paperless,
+  part,
+}) {
+  if (!options.adjustmentRibbon) return part.hide()
 
   points.bandBottomLeft = points.bandBottomLeft.shift(180, 290)
   points.bandTopLeft = points.bandBottomLeft.flipY()
@@ -26,7 +32,7 @@ function draftBenjaminBow3 (part) {
     .line(points.bandTopLeft)
     .close()
     .attr('class', 'fabric')
-    .setRender(true)
+    .unhide()
 
   if (complete) {
     // Paperless?
@@ -38,7 +44,7 @@ function draftBenjaminBow3 (part) {
       })
     }
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').setRender(true)
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').unhide()
     }
     macro('title', {
       at: points.titleAnchor,

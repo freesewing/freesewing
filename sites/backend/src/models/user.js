@@ -12,24 +12,24 @@ const UserSchema = new Schema(
   {
     email: {
       type: String,
-      required: true
+      required: true,
     },
     ehash: {
       type: String,
       required: true,
       unique: true,
-      index: true
+      index: true,
     },
     initial: {
       type: String,
-      required: true
+      required: true,
     },
     username: {
       type: String,
       required: true,
       unique: true,
       index: true,
-      trim: true
+      trim: true,
     },
     handle: {
       type: String,
@@ -37,89 +37,89 @@ const UserSchema = new Schema(
       lowercase: true,
       trim: true,
       index: true,
-      unique: true
+      unique: true,
     },
     role: {
       type: String,
       enum: ['user', 'moderator', 'admin'],
       required: true,
-      default: 'user'
+      default: 'user',
     },
     patron: {
       type: Number,
       enum: [0, 2, 4, 8],
-      default: 0
+      default: 0,
     },
     bio: {
       type: String,
-      default: ''
+      default: '',
     },
     picture: {
       type: String,
       trim: true,
-      default: ''
+      default: '',
     },
     status: {
       type: String,
       enum: ['pending', 'active', 'blocked', 'frozen'],
       default: 'pending',
-      required: true
+      required: true,
     },
     password: {
       type: String,
-      bcrypt: true
+      bcrypt: true,
     },
     settings: {
       language: {
         type: String,
         default: 'en',
-        enum: config.languages
+        enum: config.languages,
       },
       units: {
         type: String,
         enum: ['metric', 'imperial'],
-        default: 'metric'
-      }
+        default: 'metric',
+      },
     },
     consent: {
       profile: {
         type: Boolean,
-        default: false
+        default: false,
       },
       measurements: {
         type: Boolean,
-        default: false
+        default: false,
       },
       openData: {
         type: Boolean,
-        default: true
-      }
+        default: true,
+      },
     },
     time: {
       migrated: Date,
       login: Date,
-      patron: Date
+      patron: Date,
     },
     social: {
       twitter: String,
       instagram: String,
-      github: String
+      github: String,
     },
     newsletter: {
       type: Boolean,
-      default: false
+      default: false,
     },
   },
   { timestamps: true }
 )
 
-UserSchema.pre('remove', function(next) {
+UserSchema.pre('remove', function (next) {
   email
     .goodbye(this.email, this.settings.language)
     .then(() => {
       next()
     })
-    .catch(err => {
+    .catch((err) => {
       logger.error(err)
       next()
     })
@@ -131,10 +131,10 @@ UserSchema.index({ ehash: 1, username: 1, handle: 1 })
 UserSchema.plugin(encrypt, {
   secret: config.encryption.key,
   encryptedFields: ['email', 'initial', 'social.twitter', 'social.instagram', 'social.github'],
-  decryptPostSave: true
+  decryptPostSave: true,
 })
 
-UserSchema.methods.account = function() {
+UserSchema.methods.account = function () {
   let account = this.toObject()
   delete account.password
   delete account.ehash
@@ -147,13 +147,13 @@ UserSchema.methods.account = function() {
     l: this.avatarUri(),
     m: this.avatarUri('m'),
     s: this.avatarUri('s'),
-    xs: this.avatarUri('xs')
+    xs: this.avatarUri('xs'),
   }
 
   return account
 }
 
-UserSchema.methods.profile = function() {
+UserSchema.methods.profile = function () {
   let account = this.toObject()
   delete account.password
   delete account.ehash
@@ -174,13 +174,13 @@ UserSchema.methods.profile = function() {
     l: this.avatarUri(),
     m: this.avatarUri('m'),
     s: this.avatarUri('s'),
-    xs: this.avatarUri('xs')
+    xs: this.avatarUri('xs'),
   }
 
   return account
 }
 
-UserSchema.methods.adminProfile = function() {
+UserSchema.methods.adminProfile = function () {
   let account = this.toObject()
   delete account.password
   delete account.ehash
@@ -194,13 +194,13 @@ UserSchema.methods.adminProfile = function() {
     l: this.avatarUri(),
     m: this.avatarUri('m'),
     s: this.avatarUri('s'),
-    xs: this.avatarUri('xs')
+    xs: this.avatarUri('xs'),
   }
 
   return account
 }
 
-UserSchema.methods.export = function() {
+UserSchema.methods.export = function () {
   let exported = this.toObject()
   delete exported.password
   delete exported.ehash
@@ -211,26 +211,26 @@ UserSchema.methods.export = function() {
   return exported
 }
 
-UserSchema.methods.updateLoginTime = function(callback) {
+UserSchema.methods.updateLoginTime = function (callback) {
   this.set({ time: { login: new Date() } })
-  this.save(function(err, user) {
+  this.save(function (err, user) {
     return callback()
   })
 }
 
-UserSchema.methods.avatarName = function(size = 'l') {
+UserSchema.methods.avatarName = function (size = 'l') {
   let prefix = size === 'l' ? '' : size + '-'
   if (this.picture.slice(-4).toLowerCase() === '.svg') prefix = ''
 
   return prefix + this.picture
 }
 
-UserSchema.methods.storagePath = function() {
+UserSchema.methods.storagePath = function () {
   return path.join(config.storage, 'users', this.handle.substring(0, 1), this.handle)
 }
 
-UserSchema.methods.avatarUri = function(size = 'l') {
-  if (!this.picture || this.picture.length < 5) return "https://freesewing.org/avatar.svg"
+UserSchema.methods.avatarUri = function (size = 'l') {
+  if (!this.picture || this.picture.length < 5) return 'https://freesewing.org/avatar.svg'
   return (
     config.static +
     '/users/' +
@@ -242,14 +242,14 @@ UserSchema.methods.avatarUri = function(size = 'l') {
   )
 }
 
-UserSchema.methods.saveAvatar = function(picture) {
+UserSchema.methods.saveAvatar = function (picture) {
   let type = picture.split(';').shift()
   type = type.split('/').pop()
   this.picture = this.handle + '.' + type
 
   let dir = this.storagePath()
   let b64 = picture.split(';base64,').pop()
-  fs.mkdir(dir, { recursive: true }, err => {
+  fs.mkdir(dir, { recursive: true }, (err) => {
     if (err) log.error('mkdirFailed', err)
     let imgBuffer = Buffer.from(b64, 'base64')
     for (let size of Object.keys(config.avatar.sizes)) {
@@ -262,11 +262,11 @@ UserSchema.methods.saveAvatar = function(picture) {
   })
 }
 
-UserSchema.methods.createAvatar = function() {
+UserSchema.methods.createAvatar = function () {
   let dir = this.storagePath()
-  fs.mkdirSync(dir, { recursive: true }, err => {
+  fs.mkdirSync(dir, { recursive: true }, (err) => {
     if (err) console.log('mkdirFailed', dir, err)
-    fs.writeFileSync(path.join(dir, this.handle) + '.svg', randomAvatar(), err => {
+    fs.writeFileSync(path.join(dir, this.handle) + '.svg', randomAvatar(), (err) => {
       if (err) console.log('writeFileFailed', dir, err)
     })
   })

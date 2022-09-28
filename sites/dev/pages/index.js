@@ -9,6 +9,8 @@ import Highlight from 'shared/components/mdx/highlight'
 import Popout from 'shared/components/popout'
 import WebLink from 'shared/components/web-link'
 import Code from 'shared/components/code'
+import PageLink from 'shared/components/page-link'
+import Link from 'next/link'
 
 const HomePage = (props) => {
   const app = useApp()
@@ -80,6 +82,30 @@ const HomePage = (props) => {
           </div>
         </section>
       <div>
+      <div className="max-w-7xl m-auto my-32">
+        <h2>FreeSewing 3</h2>
+        <div className="flex flex-row flex-wrap gap-4 justify-between">
+          <div className="max-w-xl">
+            <h3>We&apos;re working on it 🤓</h3>
+              <p>
+                The upcoming version 3 of FreeSewing is currently under development.
+                Our core library has stabilized and we are working on updating our documentation.
+              </p>
+              <p>
+                If you have any questions to which you can&apos;t find the answers here,
+                please <WebLink href="https://discord.freesewing.org/" txt="reach out to us on Discord" />.
+              </p>
+          </div>
+          <div className="max-w-xl">
+            <h3>What&apos;s changed?</h3>
+            <p>
+              Check <PageLink href="/guides/v3/new" txt="the FreeSewing version 3 migration guide" /> to learn about
+              what is new in version 3 of FreeSewing, and what changes you should make in your own
+              designs to port them to version 3.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="max-w-7xl m-auto my-32">
         <h2>TL;DR</h2>
         <div className="flex flex-row flex-wrap gap-4 justify-between">

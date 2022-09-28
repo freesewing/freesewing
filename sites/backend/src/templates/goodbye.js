@@ -39,7 +39,7 @@ const goodbye = {
 </table>`,
   text: `__goodbyeTitle__
 
-__goodbyeCopy1__`
+__goodbyeCopy1__`,
 }
 
 export default goodbye

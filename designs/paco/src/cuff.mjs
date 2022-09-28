@@ -1,12 +1,19 @@
 import { front } from './front.mjs'
 
-function pacoCuff(part) {
-  const { store, sa, Point, points, Path, paths, options, complete, paperless, macro } =
-    part.shorthand()
-  if (!options.elasticatedHem) {
-    part.render = false
-    return part
-  }
+function pacoCuff({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
+  if (!options.elasticatedHem) return part.hide()
 
   let len = store.get('frontAnkle') + store.get('backAnkle')
   points.topLeft = new Point(0, 0)

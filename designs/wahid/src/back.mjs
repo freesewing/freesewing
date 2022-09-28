@@ -2,21 +2,20 @@ import { constructMainDart, shapeSideSeam, dartPath } from './shared.mjs'
 import { back as brianBack } from '@freesewing/brian'
 import { backInset, shoulderInset, neckInset, centerBackDart, backScyeDart } from './options.mjs'
 
-function wahidBack(part) {
-  const {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    macro,
-    complete,
-    sa,
-    paperless,
-    snippets,
-  } = part.shorthand()
-
+function wahidBack({
+  points,
+  Point,
+  paths,
+  Path,
+  measurements,
+  options,
+  macro,
+  complete,
+  sa,
+  paperless,
+  snippets,
+  part,
+}) {
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   delete snippets.armholePitchNotch
@@ -103,10 +102,10 @@ function wahidBack(part) {
     .join(paths.dart)
     .line(points.hem)
     .attr('class', 'fabric')
-  paths.saBase.render = false
-  paths.hemBase.render = false
-  paths.hemBase.render = false
-  paths.dart.render = false
+  paths.saBase.hide()
+  paths.hemBase.hide()
+  paths.hemBase.hide()
+  paths.dart.hide()
 
   if (complete) {
     //Grainline

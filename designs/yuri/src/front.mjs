@@ -1,23 +1,22 @@
 import { front as brianFront } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 
-function yuriFront(part) {
-  const {
-    store,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    sa,
-    options,
-    measurements,
-    macro,
-    snippets,
-    Snippet,
-  } = part.shorthand()
-
+function yuriFront({
+  store,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  paperless,
+  sa,
+  options,
+  measurements,
+  macro,
+  snippets,
+  Snippet,
+  part,
+}) {
   // Clear paths from Brian
   for (const i in paths) {
     if (['frontArmhole', 'frontCollar'].indexOf(i) === -1) delete paths[i]
@@ -56,19 +55,19 @@ function yuriFront(part) {
     .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
     .join(paths.frontArmhole)
     .line(points.s3CollarSplit)
-    .attr('class', 'note stroke-xxl')
+    .setClass('note stroke-xxl')
+    .hide()
   paths.buttonBase = new Path()
     .move(points.s3CollarSplit)
     .line(points.button)
     .line(points.cfBottom)
-    .attr('class', 'note stroke-xxl')
+    .attr('note stroke-xxl')
+    .hide()
   paths.hemBase = new Path()
     .move(points.cfBottom)
     .line(points.bottom)
-    .attr('class', 'note stroke-xxl')
-  paths.saBase.render = false
-  paths.hemBase.render = false
-  paths.buttonBase.render = false
+    .setClass('note stroke-xxl')
+    .hide()
 
   paths.seam = paths.saBase
     .clone()

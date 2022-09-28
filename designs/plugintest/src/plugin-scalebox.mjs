@@ -1,14 +1,13 @@
 import { scaleboxPlugin } from '@freesewing/plugin-scalebox'
 import { base } from './base.mjs'
 
-const pluginScalebox = (part) => {
-  const { Point, points, macro, options } = part.shorthand()
-
+const pluginScalebox = ({ Point, points, macro, options, part }) => {
   if (['scalebox', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(0, 0)
 
     macro(options.scaleboxType, {
       at: points.a,
+      rotate: options.scaleboxRotation,
     })
   }
 
@@ -21,6 +20,7 @@ export const scalebox = {
   after: base,
   options: {
     scaleboxType: { dflt: 'scalebox', list: ['scalebox', 'miniscale'], menu: 'scalebox' },
+    scaleboxRotation: { deg: 0, min: 0, max: 360, menu: 'scalebox' },
   },
   draft: pluginScalebox,
 }

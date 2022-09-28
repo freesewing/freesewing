@@ -2,10 +2,19 @@ import { frontBase } from './frontbase.mjs'
 import { backBase } from './backbase.mjs'
 import { pocketFoldover } from './options.mjs'
 
-function jaegerPocket(part) {
-  const { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
-    part.shorthand()
-
+function jaegerPocket({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   const width = store.get('pocketWidth')
   const depth = store.get('pocketDepth')
 

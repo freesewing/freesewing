@@ -4,23 +4,22 @@ import { back } from './back.mjs'
 export const front = {
   from: back,
   name: 'brian.front',
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      Snippet,
-      snippets,
-      options,
-      complete,
-      paperless,
-      macro,
-      utils,
-    } = part.shorthand()
-
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    options,
+    complete,
+    paperless,
+    macro,
+    utils,
+    part,
+  }) => {
     // Re-use points for deeper armhole at the front
     points.armholePitchCp1 = points.frontArmholePitchCp1
     points.armholePitch = points.frontArmholePitch
@@ -33,7 +32,7 @@ export const front = {
       paths.frontCollar = new Path()
         .move(points.hps)
         .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
-        .setRender(false)
+        .hide()
     } else if (options.s3Collar > 0) {
       // Shift shoulder seam forward on the collar side
       points.s3CollarSplit = utils.curveIntersectsY(
@@ -47,7 +46,7 @@ export const front = {
         .move(points.hps)
         .curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
         .split(points.s3CollarSplit)[1]
-        .setRender(false)
+        .hide()
     } else if (options.s3Collar < 0) {
       // Shift shoulder seam backward on the collar side
       points.s3CollarSplit = utils.curveIntersectsY(
@@ -62,15 +61,17 @@ export const front = {
         .curve_(points.mirroredNeckCp2, points.mirroredCbNeck)
         .split(points.s3CollarSplit)[0]
         .reverse()
-        .join(new Path().move(points.hps).curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck))
-        .setRender(false)
+        .join(
+          new Path().move(points.hps).curve(points.neckCp2Front, points.cfNeckCp1, points.cfNeck)
+        )
+        .hide()
     }
     if (options.s3Armhole < 0.1 && options.s3Armhole > -0.1) {
       points.s3ArmholeSplit = points.shoulder
       paths.frontArmhole = new Path()
         .move(points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
-        .setRender(false)
+        .hide()
     } else if (options.s3Armhole > 0) {
       // Shift shoulder seam forward on the armhole side
       points.s3ArmholeSplit = utils.curveIntersectsY(
@@ -84,7 +85,7 @@ export const front = {
         .move(points.armholePitch)
         .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
         .split(points.s3ArmholeSplit)[0]
-        .setRender(false)
+        .hide()
     } else if (options.s3Armhole < 0) {
       // Shift shoulder seam forward on the armhole side
       points.s3ArmholeSplit = utils.curveIntersectsY(
@@ -107,7 +108,7 @@ export const front = {
             )
             .split(points.s3ArmholeSplit)[0]
         )
-        .setRender(false)
+        .hide()
     }
 
     // Rename cb (center back) to cf (center front)
@@ -129,7 +130,7 @@ export const front = {
       .line(points.s3CollarSplit)
       .join(paths.frontCollar)
 
-    paths.saBase.render = false
+    paths.saBase.hide()
     paths.seam = new Path()
       .move(points.cfNeck)
       .line(points.cfHem)
@@ -160,7 +161,7 @@ export const front = {
       }
 
       // Add notches if the shoulder seam is shifted
-      shared.s3Notches(part, 'notch')
+      shared.s3Notches(snippets, Snippet, points, options, 'notch')
     }
 
     // Paperless?
@@ -194,5 +195,5 @@ export const front = {
     }
 
     return part
-  }
+  },
 }

@@ -1,9 +1,7 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { panels } from './panels.mjs'
 
-function draftCathrinPanel3 (part) {
-  let { macro, sa, points, paths, Point, complete, paperless } = part.shorthand()
-
+function draftCathrinPanel3({ macro, sa, points, paths, Point, complete, paperless, part }) {
   points.anchor = points.underbustGap2Right.clone()
 
   delete paths.outline
@@ -77,6 +75,6 @@ function draftCathrinPanel3 (part) {
 export const panel3 = {
   name: 'cathrin.panel3',
   from: panels,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftCathrinPanel3,
 }

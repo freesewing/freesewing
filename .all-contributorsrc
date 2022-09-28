@@ -931,6 +931,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "jdhoek",
+      "name": "Jeroen Hoek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/683699?v=4",
+      "profile": "http://jeroenhoek.nl",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true

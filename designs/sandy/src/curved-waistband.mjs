@@ -1,26 +1,26 @@
 import { draftRingSector } from './shared.mjs'
 
-export function draftCurvedWaistband(part) {
+export function draftCurvedWaistband({
+  utils,
+  store,
+  sa,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  absoluteOptions,
+  part,
+}) {
   /**
    * The curved waistband is just a ring sector with external
    * and intenal radius and angle calculated from measurements
    * and options
    */
-  const {
-    utils,
-    store,
-    sa,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-    absoluteOptions,
-  } = part.shorthand()
 
   // Calculate the angle of the ring sector and the radius of the upper arc
   const an =

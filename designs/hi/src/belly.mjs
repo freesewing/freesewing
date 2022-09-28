@@ -1,22 +1,21 @@
 import { body } from './body.mjs'
 import { aboveMouth } from './aboveMouth.mjs'
 
-function draftHiBelly (part) {
-  let {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiBelly({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let belly01_02d = 224.8451041 * options.size
   let belly02_03d = 108.1988389 * options.size
   let belly03_04d = 216.7485605 * options.size
@@ -146,13 +145,13 @@ function draftHiBelly (part) {
     .curve(points.belly04cp2, points.belly03cp1, points.belly03)
     .curve(points.belly03cp2, points.belly02cp1, points.belly02)
     .curve(points.belly02cp2, points.belly01cp1, points.belly01)
-    .setRender(false)
+    .hide()
   paths.bottom = new Path()
     .move(points.belly09)
     .curve(points.belly09cp2, points.belly08cp1, points.belly08)
     .curve(points.belly08cp2, points.belly07cp1, points.belly07)
     .curve(points.belly07cp2, points.belly06cp1, points.belly06)
-    .setRender(false)
+    .hide()
   paths.seam = new Path()
     .move(points.belly01)
     .curve(points.belly01cp2, points.belly10cp1, points.belly10)
@@ -162,7 +161,7 @@ function draftHiBelly (part) {
     .curve(points.belly05cp2, points.belly04cp1, points.belly04)
     .join(paths.top)
     .close()
-    .setRender(true)
+    .unhide()
 
   store.set(
     'bellyFinLength',
@@ -183,9 +182,9 @@ function draftHiBelly (part) {
     snippets.mouth1 = new Snippet('bnotch', points.bellyMouthSnippet1)
     snippets.mouth2 = new Snippet('bnotch', points.bellyMouthSnippet2)
 
-    points.grainlineFrom = new Point( points.belly10.x, points.belly02.y *.7 )
-    points.grainlineTo = new Point( points.belly05.x, points.belly02.y *.7 )
-    macro("grainline", {
+    points.grainlineFrom = new Point(points.belly10.x, points.belly02.y * 0.7)
+    points.grainlineTo = new Point(points.belly05.x, points.belly02.y * 0.7)
+    macro('grainline', {
       from: points.grainlineFrom,
       to: points.grainlineTo,
     })
@@ -315,7 +314,7 @@ function draftHiBelly (part) {
 
 export const belly = {
   name: 'hi.belly',
-  after: [ body, aboveMouth ],
+  after: [body, aboveMouth],
   options: {
     hungry: { pct: 50, min: 0, max: 100, menu: 'style' },
   },

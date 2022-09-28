@@ -22,7 +22,6 @@
     "testci_IGNORE": "babel-node --presets '@babel/preset-env' scripts/testci.js",
     "clean": "rimraf dist",
     "prettier": "npx prettier --write 'src/**' 'tests/**'",
-    "lint": "eslint --fix \"src/*.js\"",
     "develop": "backpack",
     "build": "backpack build",
     "start:prod": "backpack build && pm2 start build/main.js --name freesewing-backend",

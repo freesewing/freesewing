@@ -1,8 +1,17 @@
 import { front } from './front.mjs'
 
-function draftCarltonInnerPocketWelt (part) {
-  let { paperless, sa, store, complete, points, macro, Point, paths, Path } = part.shorthand()
-
+function draftCarltonInnerPocketWelt({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('innerPocketWidth') * 1.4,

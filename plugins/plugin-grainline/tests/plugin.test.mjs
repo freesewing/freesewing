@@ -1,23 +1,29 @@
 import chai from 'chai'
 import { round, Design } from '@freesewing/core'
-import { plugin } from './dist/index.mjs'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
 describe('Grainline Plugin Tests', () => {
   it('Should run the default grainline macro', () => {
-    const Pattern = new Design({ plugins: [ plugin ]})
-    const pattern = new Pattern()
-    pattern.parts.test = new pattern.Part()
-    pattern.parts.test.points.from = new pattern.Point(10, 20)
-    pattern.parts.test.points.to = new pattern.Point(10, 230)
-    const { macro } = pattern.parts.test.shorthand()
-    macro('grainline', {
-      from: pattern.parts.test.points.from,
-      to: pattern.parts.test.points.to,
-    })
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro, part }) => {
+        points.from = new Point(10, 20)
+        points.to = new Point(10, 230)
+        macro('grainline', {
+          from: points.from,
+          to: points.to,
+        })
 
-    const c = pattern.parts.test.paths.grainline
+        return part
+      },
+      plugins: [plugin],
+    }
+    const Pattern = new Design({ parts: [part] })
+    const pattern = new Pattern()
+    pattern.draft()
+    const c = pattern.parts[0].test.paths.grainline
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#grainlineFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#grainlineTo)')

@@ -5,31 +5,31 @@ export const plugin = {
   version,
   hooks: {
     preDraft: function ({ settings }) {
-      if (settings.measurements) {
-        if (
-          typeof settings.measurements.seatBack !== 'undefined' &&
-          typeof settings.measurements.seat !== 'undefined'
-        ) {
-          settings.measurements.seatFront =
-            settings.measurements.seat - settings.measurements.seatBack
-          settings.measurements.seatBackArc = settings.measurements.seatBack / 2
-          settings.measurements.seatFrontArc = settings.measurements.seatFront / 2
-        }
-        if (
-          typeof settings.measurements.waist !== 'undefined' &&
-          typeof settings.measurements.waistBack !== 'undefined'
-        ) {
-          settings.measurements.waistFront =
-            settings.measurements.waist - settings.measurements.waistBack
-          settings.measurements.waistBackArc = settings.measurements.waistBack / 2
-          settings.measurements.waistFrontArc = settings.measurements.waistFront / 2
-        }
-        if (
-          typeof settings.measurements.crossSeam !== 'undefined' &&
-          typeof settings.measurements.crossSeamFront !== 'undefined'
-        ) {
-          settings.measurements.crossSeamBack =
-            settings.measurements.crossSeam - settings.measurements.crossSeamFront
+      for (const set of settings) {
+        if (set.measurements) {
+          if (
+            typeof set.measurements.seatBack !== 'undefined' &&
+            typeof set.measurements.seat !== 'undefined'
+          ) {
+            set.measurements.seatFront = set.measurements.seat - set.measurements.seatBack
+            set.measurements.seatBackArc = set.measurements.seatBack / 2
+            set.measurements.seatFrontArc = set.measurements.seatFront / 2
+          }
+          if (
+            typeof set.measurements.waist !== 'undefined' &&
+            typeof set.measurements.waistBack !== 'undefined'
+          ) {
+            set.measurements.waistFront = set.measurements.waist - set.measurements.waistBack
+            set.measurements.waistBackArc = set.measurements.waistBack / 2
+            set.measurements.waistFrontArc = set.measurements.waistFront / 2
+          }
+          if (
+            typeof set.measurements.crossSeam !== 'undefined' &&
+            typeof set.measurements.crossSeamFront !== 'undefined'
+          ) {
+            set.measurements.crossSeamBack =
+              set.measurements.crossSeam - set.measurements.crossSeamFront
+          }
         }
       }
     },
@@ -39,4 +39,3 @@ export const plugin = {
 // More specifically named exports
 export const measurementsPlugin = plugin
 export const pluginMeasurements = plugin
-

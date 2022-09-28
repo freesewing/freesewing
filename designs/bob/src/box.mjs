@@ -1,7 +1,17 @@
-export default function (part) {
-  const { options, Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
-    part.shorthand()
-
+export default function ({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   const w = 500 * options.size
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(w, 0)
