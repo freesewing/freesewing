@@ -1,5 +1,11 @@
+*.gif
+*.jpg
+*.jpeg
+*.png
+*.sh
 .git
 coverage
+dist
 node_modules
 yarn.lock
 package.json

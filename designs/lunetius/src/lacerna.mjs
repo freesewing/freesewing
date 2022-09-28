@@ -61,7 +61,7 @@ function lunetiusLacerna({
     .line(points.bottom)
     .hide()
   paths.saBase = new Path().move(points.top).line(points.topLeft).hide()
-  paths.seam = paths.saBase.join(paths.hem).join(paths.fold).attr('class', 'fabric').hide()
+  paths.seam = paths.saBase.join(paths.hem).join(paths.fold).attr('class', 'fabric')
 
   // Complete?
   if (complete) {

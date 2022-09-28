@@ -1,8 +1,8 @@
-import { version } from '../package.json' assert { type: 'json' }
+import pkg from '../package.json' assert { type: 'json' }
 
 export default {
   name: '{{name}}',
-  version,
+  version: pkg.version,
   optionGroups: {
     fit: ['size'],
   },
@@ -15,4 +15,3 @@ export default {
     size: { pct: 50, min: 10, max: 100 },
   },
 }
-
