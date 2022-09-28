@@ -581,8 +581,20 @@ Pattern.prototype.__applySettings = function (sets) {
   if (!Array.isArray(sets)) throw 'Sets should be an array of settings objects'
   if (sets.length === 0) sets.push({}) // Required to load default settings
   this.settings = []
-  for (const set in sets) {
-    this.settings.push({ ...__loadPatternDefaults(), ...sets[set] })
+  for (const i in sets) {
+    // Make the user's input immmuatable to avoid weird bugs
+    sets[i] = Object.freeze(sets[i])
+    const set = { ...sets[i] }
+    if (!set.options) set.options = {}
+    if (!set.measurements) set.measurements = {}
+    this.settings.push({
+      ...__loadPatternDefaults(),
+      ...set,
+      // Force creation of a new objects
+      // so we don't reference the original
+      options: { ...set.options },
+      measurements: { ...set.measurements },
+    })
   }
 
   return this
