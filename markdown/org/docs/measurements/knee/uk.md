@@ -1,7 +1,7 @@
 ---
-title: Knee circumference
+title: Обхват коліна
 ---
 
-The **knee circumference** is the measurement around your knee.
+**Обхват коліна** вимірюється навколо Вашого коліна.
 
-To measure your **knee circumference**, wrap the tape measure around your knee. Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your knee.
+Для зняття **обхвату коліна**, охопіть сантиметром навколо Вашого коліна. Переконайтеся, що стрічка розміщується паралельно до підлоги під час зняття цієї мірки.
