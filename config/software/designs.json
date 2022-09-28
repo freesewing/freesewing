@@ -321,10 +321,6 @@
     }
   },
   "utilities": {
-    "examples": {
-      "description":  "A FreeSewing pattern holding examples for our documentation",
-      "code": "Joost De Cock"
-    },
     "legend": {
       "description":  "A FreeSewing pattern to document pattern notation",
       "code": "Joost De Cock"
