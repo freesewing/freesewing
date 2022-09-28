@@ -63,7 +63,6 @@ function draftCorneliusPocket({
     .join(paths.pocketBottom)
     .join(paths.sideSeam)
     .close()
-    .hide()
     .attr('class', 'fabric')
 
   if (complete) {
