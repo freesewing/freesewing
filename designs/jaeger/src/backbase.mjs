@@ -8,6 +8,7 @@ import {
   reduceWaistStandardFraction,
   reduceWaistDartFraction,
   reduceHipsStandardFraction,
+  lengthBonus,
 } from './options.mjs'
 
 function jaegerBackBase({ store, points, measurements, options, Point, paths, Path, part }) {
@@ -99,6 +100,7 @@ export const backBase = {
     reduceWaistStandardFraction,
     reduceWaistDartFraction,
     reduceHipsStandardFraction,
+    lengthBonus,
   },
   draft: jaegerBackBase,
 }
