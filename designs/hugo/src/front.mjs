@@ -31,9 +31,7 @@ function hugoFront({
   part,
 }) {
   // Remove clutter
-  for (const key in paths) {
-    if (key !== 'seam') delete paths[key]
-  }
+  for (const i in paths) delete paths[i]
 
   // Remove notch inherited from Brian
   delete snippets.armholePitchNotch
@@ -96,7 +94,6 @@ function hugoFront({
     .curve(points.pocketTip, points.pocketTopCp, points.pocketTop)
     .line(points.pocketCf)
     .attr('class', 'fabric help')
-    .hide()
   // Store shoulder seam length, neck opening path, shoulder slope and raglan length
   store.set('shoulderLength', points.neck.dist(points.shoulder))
   store.set('neckOpeningPartFront', neckOpeningParts[1])
