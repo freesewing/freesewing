@@ -29,7 +29,9 @@ i18n:
 models:
   test: 'npx mocha tests/*.test.mjs'
 new-design:
-  build: 'SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs && cp ../../scripts/banner.mjs ./lib && node build.mjs'
+  i18n-only: "node ../../sites/shared/prebuild/i18n-only.mjs"
+  build: "SITE=new-design/shared yarn i18n-only && cp ../../scripts/banner.mjs ./lib && node build.mjs"
+  wbuild: "set SITE=new-design/shared&& yarn i18n-only && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE="
   lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'
   test: '!'

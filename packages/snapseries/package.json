@@ -31,8 +31,10 @@
     "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "lint": "npx eslint 'src/*.mjs'",
-    "cibuild_step0": "node build.mjs"
+    "cibuild_step0": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step0": "node build.mjs",
+    "lint": "npx eslint 'src/*.mjs'"
   },
   "peerDependencies": {},
   "dependencies": {},
