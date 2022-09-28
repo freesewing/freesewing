@@ -1246,7 +1246,7 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
     if (part.hideAll) this.__mutated.partHide[part.name] = true
     // Inject (from)
     if (part.from) {
-      if (part.hideDependencies) {
+      if (part.hideDependencies || this.__mutated.partHideAll[name]) {
         // Don't mutate the part, keep this info in the pattern object
         this.__mutated.partHide[part.from.name] = true
         this.__mutated.partHideAll[part.from.name] = true
