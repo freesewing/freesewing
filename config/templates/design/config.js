@@ -1,14 +1,14 @@
-import { version } from './package.json'
+import pkg from './package.json' assert { type: 'json' }
 
 export default {
   name: '{{name}}',
-  version,
+  version: pkg.version,
   design: '{{author}}',
   code: '{{author}}',
   department: '{{department}}',
   type: '{{type}}',
   difficulty: 3,
-  tags: [ ],
+  tags: [],
   optionGroups: {
     fit: ['size'],
   },

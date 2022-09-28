@@ -1,7 +1,7 @@
 ---
-title: Hips circumference
+title: Обхват тазу
 ---
 
-The **hips circumference** is measured at the top of your hip bones.
+**Обхват тазу** вимірюється в найширшій частині кульшової кістки.
 
-To measure your **hips circumference** put a tape measure around your body at the height of your hip bone.
+Для зняття **обхвату тазу** повністю охопіть сантиметром навколо найширшої частини кульші, щоб стрічка проходила через кісточки тазу.

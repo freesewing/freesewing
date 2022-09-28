@@ -18,6 +18,6 @@ We do not want to exclude anyone and we think that _body shape ≠ gender_. That
 
 Any user can draft any pattern on our site, as long as they provide the required measurements. Which for some patterns includes measurements that are only relevant if you have breasts.
 
-##### Cómo se aplica a la vinculación
+##### How it applies to chest binding
 
-Si estás enlazándose, usa **sin senos** patrones, y usa la cirumferencia de tu cofre enlazado como [medición del cofre](/docs/measurements/chest/)
+If you are chest binding — effectively flattening your chest — use the **without breasts** patterns, and use the cirumference of your bound chest as [chest measurement](/docs/measurements/chest/)

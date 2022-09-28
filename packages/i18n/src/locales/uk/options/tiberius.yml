@@ -1,39 +1,39 @@
 ---
 headRatio:
-  title: Head ratio
-  description: Controls the size of the head opening
+  title: Ширина горловини
+  description: Керує шириною пройми для голови
 armholeDrop:
-  title: Armhole drop
-  description: Controls the depth of the armhole
+  title: Спуск пройми
+  description: Керує глибиною/довжиною пройми для руки
 lengthBonus:
-  title: Length bonus
-  description: Allows variation of the length of the garment
+  title: Додаткова довжина
+  description: Дозволяє керувати загальною довжиною виробу
 widthBonus:
-  title: Width bonus
-  description: Allows variation of the width of the garment
+  title: Додаткова ширина
+  description: Дозволяє керувати загальною шириною виробу
 clavi:
-  title: Clavi
-  description: Whether or not to include guides for clavi
+  title: Клав
+  description: Чи додавати вказівні лінії для клаву
 clavusLocation:
-  title: Clavus location
-  description: Controls the location of the clavi
+  title: Розташування клавів
+  description: Керує розташування клавів
 clavusWidth:
-  title: Clavus width
-  description: Controls the width of the clavi
+  title: Ширина клавів
+  description: Керує шириною клавів
 length:
-  title: Length
-  description: Controls the length of the garment
+  title: Довжина
+  description: Керує загальною довжиною виробу
   options:
-    toKnee: On the knee
-    toMidLeg: On the thigh
-    toFloor: To the floor
+    toKnee: До коліна
+    toMidLeg: До стегна
+    toFloor: До підлоги
 width:
-  title: Width
-  description: Controls the width of the garment
+  title: Ширина
+  description: Керує загальною шириною виробу
   options:
-    toElbow: To the elbow
-    toShoulder: To the shoulder
-    toMidArm: To the upper arm
+    toElbow: До ліктя
+    toShoulder: До плечового суглоба
+    toMidArm: До плеча (руки)
 forceWidth:
-  title: Force width
-  description: Apply width settings regardless of constraints
+  title: Примусова ширина
+  description: Застосувати налаштування ширини незалежно від обмежень

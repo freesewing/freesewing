@@ -15,7 +15,7 @@ Je ne sais pas si vous êtes familier avec l'expression **noblesse oblige** mais
 
 Je suis privilégié, et j'ai donc des responsabilités. J'ai la chance d'être né en Europe occidentale, d'avoir un bon travail et un toit au-dessus de ma tête.
 
-Pourrais-je utiliser cet argent ? Yes I could.\
+Pourrais-je utiliser cet argent ? Yes I could.  
 Do I need the money? Non.
 
 ##### La valeur de votre soutien

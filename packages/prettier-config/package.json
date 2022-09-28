@@ -17,8 +17,9 @@
     "prettier"
   ],
   "type": "module",
+  "module": "dist/index.mjs",
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": "./index.json"
   },
   "scripts": {
     "build": "echo \"prettier-config: No build required\" && exit 0"
@@ -37,6 +38,5 @@
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=8"
-  },
-  "main": "index.json"
+  }
 }

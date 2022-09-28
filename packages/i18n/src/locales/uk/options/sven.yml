@@ -1,13 +1,13 @@
 ---
 hipsEase:
-  title: Hips ease
-  description: Controls the amount of ease at your hips (the bottom of the sweater)
+  title: Свобода облягання на стегнах
+  description: Керує кількістю свободи облягання на стегнах (низ светрика)
 ribbing:
-  title: Ribbing
-  description: Whether to finish the hem and cuffs with ribbing or not.
+  title: Гумка
+  description: Чи завершувати край та сохли гумкою.
 ribbingHeight:
-  title: Ribbing height
-  description: The height of the ribbing on cuffs and hem.
+  title: Висота гумки
+  description: Висота гумки на чохлах та краю светра.
 ribbingStretch:
-  title: Ribbing stretch
-  description: The amount of negative ease to apply to the ribbing used for cuffs and hem.
+  title: Еластичність гумки
+  description: Кількість від'ємної свободи облягання в гумці на чохлах та краю светра.

@@ -15,20 +15,20 @@ rise:
   title: Посадка
   description: Керує висотою посадки
 legOpening:
-  title: Leg opening
-  description: Controls how high the leg is cut out
+  title: Пройма ноги
+  description: Керує наскільки високо підіймається пройма ноги
 frontDip:
-  title: Front waist dip
-  description: Controls how much the front waist curves (revealing more or less skin)
+  title: Передній вигин пояса
+  description: Керує наскільки крутим є передній вигин пояса (більше чи менше відкритої шкіри)
 backDip:
-  title: Back waist dip
-  description: Controls how much the back waist curves (revealing more or less skin)
+  title: Задній вигин пояса
+  description: Керує наскільки крутим є задній вигин пояса (більше чи менше відкритої шкіри)
 taperToGusset:
-  title: Front exposure
-  description: Controls the amount of exposed skin on the front
+  title: Переднє відкриття
+  description: Керує кількістю відкритої шкіри спереду (біля ніжних пройм)
 backExposure:
-  title: Back exposure
-  description: Controls the amount of exposed skin on the back
+  title: Заднє відкриття
+  description: Керує кількістю відкритої шкіри ззаду (біля ніжних пройм)
 
 
 

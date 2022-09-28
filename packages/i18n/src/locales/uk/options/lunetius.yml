@@ -1,16 +1,16 @@
 ---
 lengthRatio:
-  title: Length ratio
-  description: Controls the length of the garment
+  title: Співвідношення довжини
+  description: Керує наскільки довгим буде виріб
 widthRatio:
-  title: Width ratio
-  description: Controls the width of the garment
+  title: Співвідношення ширини
+  description: Керує наскільки широким буде виріб
 length:
-  title: Length
-  description: Choose from the different length styles
+  title: Довжина
+  description: Виберіть один зі стилів довжини
   options:
-    toKnee: On the knee
-    toBelowKnee: Below the knee
-    toHips: On the hips
-    toUpperLeg: On the thigh
-    toFloor: To the floor
+    toKnee: На коліні
+    toBelowKnee: Вище коліна
+    toHips: На кульші
+    toUpperLeg: На стегнах
+    toFloor: До підлоги

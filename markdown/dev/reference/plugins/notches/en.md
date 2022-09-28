@@ -37,6 +37,6 @@ const Pattern = new freesewing.Design(config, notches);
 ```
 
 Now you can use the
-[notch](/reference/api/snippets/notch) and\
+[notch](/reference/api/snippets/notch) and  
 [bnotch](/reference/api/snippets/buttonhole)
 snippets in your designs.

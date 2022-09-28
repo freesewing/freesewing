@@ -2,7 +2,7 @@ module.exports = function tests(store, config, chai) {
   const should = chai.should()
 
   describe('Person endpoints', () => {
-    it('should create a person', done => {
+    it('should create a person', (done) => {
       chai
         .request(config.backend)
         .post('/people')
@@ -10,7 +10,7 @@ module.exports = function tests(store, config, chai) {
         .send({
           name: 'Test person',
           units: 'imperial',
-          breasts: true
+          breasts: true,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -27,13 +27,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the person name', done => {
+    it('should update the person name', (done) => {
       chai
         .request(config.backend)
         .put('/people/' + config.user.person)
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          name: 'New person name'
+          name: 'New person name',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -44,13 +44,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the person chest', done => {
+    it('should update the person chest', (done) => {
       chai
         .request(config.backend)
         .put('/people/' + config.user.person)
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          breasts: 'false'
+          breasts: 'false',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -61,13 +61,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the person units', done => {
+    it('should update the person units', (done) => {
       chai
         .request(config.backend)
         .put('/people/' + config.user.person)
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          units: 'metric'
+          units: 'metric',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -78,13 +78,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the person notes', done => {
+    it('should update the person notes', (done) => {
       chai
         .request(config.backend)
         .put('/people/' + config.user.person)
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          notes: 'These are the notes'
+          notes: 'These are the notes',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -95,7 +95,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the person measurements', done => {
+    it('should update the person measurements', (done) => {
       chai
         .request(config.backend)
         .put('/people/' + config.user.person)
@@ -103,8 +103,8 @@ module.exports = function tests(store, config, chai) {
         .send({
           measurements: {
             shoulderToShoulder: 456,
-            neck: 345
-          }
+            neck: 345,
+          },
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -116,15 +116,15 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should not set a non-existing measurement', done => {
+    it('should not set a non-existing measurement', (done) => {
       chai
         .request(config.backend)
         .put('/people/' + config.user.person)
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
           measurements: {
-            hairLength: 12
-          }
+            hairLength: 12,
+          },
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -137,13 +137,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the person avatar', done => {
+    it('should update the person avatar', (done) => {
       chai
         .request(config.backend)
         .put('/people/' + config.user.person)
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          picture: config.avatar
+          picture: config.avatar,
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -155,7 +155,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should load the person data', done => {
+    it('should load the person data', (done) => {
       chai
         .request(config.backend)
         .get('/people/' + config.user.person)
@@ -170,7 +170,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should delete the person', done => {
+    it('should delete the person', (done) => {
       chai
         .request(config.backend)
         .delete('/people/' + config.user.person)
@@ -181,7 +181,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should no longer have this person', done => {
+    it('should no longer have this person', (done) => {
       chai
         .request(config.backend)
         .get('/people/' + config.user.person)

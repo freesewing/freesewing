@@ -2,7 +2,7 @@
 title: vd
 ---
 
-The `vd` macro adds a _vertical dimension_ to your pattern.\
+The `vd` macro adds a _vertical dimension_ to your pattern.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
 <Example part="point_dy">

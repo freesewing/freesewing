@@ -1,136 +1,136 @@
 ---
 backDarts:
-  title: Back darts
-  description: Whether or not to include back darts
+  title: Виточки на спині
+  description: Чи додавати виточки на спині
   options:
-    auto: Automatic
-    always: Always
-    never: Never
+    auto: Автоматично
+    always: Завжди
+    never: Ніколи
 backDartShaping:
-  title: Back dart shaping
-  description: The amount of shaping that is done by the back darts
+  title: Форма виточок на спині
+  description: Наскільки сильно виточки на спині впливають на загальну форму
 barrelCuffNarrowButton:
-  title: Cuff narrow button
-  description: Whether to include a button to tie the cuffs more narrow. This option is only relevant for barrel cuffs.
+  title: Другий ґудзик на чохлі
+  description: Чи додавати другий ґудзик на чохлі/манжеті для більшого звуження. Цей варіант працює лише зі спортивним (італійським) манжетом.
 boxPleat:
-  title: Box pleat
-  description: Whether to include a box pleat at the back or not
+  title: Бантова збірка
+  description: Чи додавати бантову складку на спині
 boxPleatWidth:
-  title: Box pleat width
-  description: The total widh of the box pleat
+  title: Ширина бантової складки
+  description: Загальна ширина бантової складки
 boxPleatFold:
-  title: Box pleat fold
-  description: The amount by with the box pleat folds inwards
+  title: Згин бантової складки
+  description: Кількість тканини, яка складається всередину при виконанні бантової складки
 buttonPlacketStyle:
-  title: Button placket style
-  description: Style of the button placket.
+  title: Стиль ґудзикового шліца
+  description: Стиль шліца, де розміщуються ґудзики.
   options:
-    classic: Classic style
-    seamless: French style (seamless)
+    classic: Класичний
+    seamless: Французький (безшовний)
 buttonPlacketWidth:
-  title: Button placket width
-  description: Width of the button placket.
+  title: Ширина ґудзикового шліца
+  description: Загальна ширина ґудзикового шліца.
 buttonFreeLength:
-  title: Button free length
-  description: How much of the bottom of the front closure to keep button-free.
+  title: Довжина без ґудзиків
+  description: Довжина нижньої та верхньої частини шліца без ґудзиків.
 buttonholePlacketFoldWidth:
   title: Buttonhole placket fold width
   description: Width of the buttonhole placket fold.
 buttonholePlacketStyle:
-  title: Buttonhole placket style
-  description: Style of the buttonhole placket.
+  title: Стиль діркового шліца
+  description: Стиль шліца, де розміщуються дірки для ґудзиків.
   options:
-    classic: Classic style
-    seamless: French style (seamless)
+    classic: Класичний
+    seamless: Французький (безшовний)
 buttonholePlacketWidth:
-  title: Buttonhole placket width
-  description: Width of the buttonhole placket.
+  title: Ширина діркового шліца
+  description: Ширина шліца, де розміщуються дірки для ґудзиків.
 buttons:
-  title: Number of buttons
-  description: The number of buttons on the front closure.
+  title: Кількість ґудзиків
+  description: Кількість ґудзиків на шліці.
 collarAngle:
-  title: Collar angle
-  description: The angle of the collar tips.
+  title: Кут коміра
+  description: Кут нахилу зрізів кінця коміра.
 collarBend:
-  title: Collar bend
-  description: The bend of the collar.
+  title: Вигин коміра
+  description: Крива вигину коміра.
 collarFlare:
-  title: Collar flare
-  description: The flare of the collar tips.
+  title: Загортання коміра
+  description: Наскільки краї біля зрізів кінця коміра завертатимуться до стійки.
 collarGap:
-  title: Collar gap
-  description: The gap between the the two collar ends.
+  title: Відступ коміра
+  description: Відступ між зрізами кінців коміра.
 collarRoll:
-  title: Collar roll
-  description: The amount by which the top collar is larger than the undercollar.
+  title: Розмір відльоту коміра
+  description: Наскільки відліт коміра є більшим за стійку коміра.
 collarStandBend:
-  title: Collar stand bend
-  description: The bend of the collar stand.
+  title: Вигин стійки коміра
+  description: Вигин стійки коміра.
 collarStandCurve:
-  title: Collar stand curve
-  description: The curve of the collar stand.
+  title: Крива стійки коміра
+  description: Вектор кривої стійки коміра.
 collarStandWidth:
-  title: Collar stand width
-  description: Width of the collar stand.
+  title: Ширина стійки коміра
+  description: Ширина стійки коміра.
 cuffButtonRows:
-  title: Cuff button rows
-  description: Whether to draft a single or double row of cuff buttons. This option is only relevant for barrel cuffs.
+  title: Рядки ґудзиків на чохлі
+  description: Чи додавати другий рядок ґудзиків на чохлі/манжеті. Це налаштування дійсне лише для спортивного (італійського) манжета.
   options:
-    '1': Single cuff button row
-    '2': Double cuff button row
+    '1': Один рядок ґудзиків
+    '2': Два рядки ґудзиків
 cuffDrape:
-  title: Cuff drape
-  description: The amount by which the sleeve is wider than the cuff where the are joined.
+  title: Збірка біля чохли
+  description: Наскільки ширшим є рукав відносно чохли у місці їх зметування.
 cuffLength:
-  title: Cuff length
-  description: The length of the cuffs.
+  title: Довжина чохли
+  description: Загальна довжина чохли (манжета).
 cuffStyle:
-  title: Cuff style
-  description: The style of the cuffs.
+  title: Стиль чохли
+  description: Стиль чохли (манжета).
   options:
-    roundedBarrelCuff: Rounded barrel cuff
-    angledBarrelCuff: Angled barrel cuff
-    straightBarrelCuff: Straight barrel cuff
-    roundedFrenchCuff: Rounded French cuff
-    angledFrenchCuff: Angled French cuff
-    straightFrenchCuff: Straight French cuff
+    roundedBarrelCuff: Заокруглений спортивний (італійський) манжет
+    angledBarrelCuff: Скошений спортивний (італійський) манжет
+    straightBarrelCuff: Прямий спортивний (італійський) манжет
+    roundedFrenchCuff: Заокруглений подвійний (французький) манжет
+    angledFrenchCuff: Скоршений подвійний (французький) манжет
+    straightFrenchCuff: Прямий подвійний (французький) манжет
 extraTopButton:
-  title: Extra top button
-  description: Whether or not to include an extra top button on the front closure.
+  title: Додатковий верхній ґудзик
+  description: Чи додавати ще один ґудзик зверху шліца.
 ffsa:
   title: Flat-felled seam allowace
   description: The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance
 hemCurve:
-  title: Hem curve
-  description: The height of the curve on a curved hem.
+  title: Крива краю
+  description: Висота кривої вигнутого краю.
 hemStyle:
-  title: Hem style
-  description: The style of the shirt hem.
+  title: Стиль краю
+  description: Стиль краю сорочки.
   options:
-    straight: Straight hem
-    baseball: Baseball hem
-    slashed: Slashed hem
+    straight: Прямий край
+    baseball: З боковими підйомами
+    slashed: З боковими вирізами
 roundBack:
-  title: Round back
-  description: To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides.
+  title: Заокруглена спина
+  description: Для (більш) заокруглених спин, це налаштування збільшує довжину спини (під кокеткою). Додаткова довжина поступово зменшується від центру до боків спинного полотнища.
 seperateButtonholePlacket:
-  title: Seperate buttonhole placket
-  description: Draft a separate buttonhole placket.
+  title: Окремий дірковий шліц
+  description: Шліц для дірок додається до викрійки як окрема частина.
 seperateButtonPlacket:
-  title: Seperate button placket
-  description: Draft a separate button placket
+  title: Окремий ґудзиковий шліц
+  description: Шліц для ґудзиків додається до викрійки як окрема частина
 sleevePlacketLength:
-  title: Sleeve placket length
-  description: The length of the sleeve placket.
+  title: Довжина шліца на рукаві
+  description: Довжина шліца, що знаходиться на рукаві.
 sleevePlacketWidth:
-  title: Sleeve placket width
-  description: The width of the sleeve placket.
+  title: Ширина шліца на рукаві
+  description: Ширина шліца, що знаходиться на рукаві.
 splitYoke:
-  title: Split yoke
-  description: Whether to draft a split or regular yoke.
+  title: Зшивна кокетка
+  description: Зшивна кокетка чи кокетка суцільного крою?
 waistEase:
-  title: Waist ease
-  description: The amount of ease at your (natural) waist.
+  title: Свобода облягання на талії
+  description: Керує свободою облягання на талії.
 yokeHeight:
-  title: Yoke height
-  description: Controls the height of the yoke
+  title: Висота кокетки
+  description: Керує висотою кокетки

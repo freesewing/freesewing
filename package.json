@@ -15,15 +15,22 @@
     "?": "node scripts/help.mjs",
     "tips": "node scripts/help.mjs",
     "lab": "cd sites/lab && yarn start",
-    "kickstart": "npx lerna bootstrap && yarn buildall && yarn tips",
+    "lab-debug": "cd sites/lab && yarn start-debug",
+    "kickstart": "npx lerna bootstrap && yarn buildall && yarn prepare && yarn tips",
+    "kickstart:windows": "npx lerna bootstrap && yarn wbuildall && yarn prepare && yarn tips",
     "cleanall": "lerna run clean",
     "test": "lerna run test",
-    "prettier": "npx prettier --write 'packages/**/src/*.js' 'packages/**/config/*.js' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
+    "prettier": "npx prettier --write 'packages/**/src/*.mjs' 'packages/**/src/*.js' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs'",
     "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
     "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
     "buildall": "lerna run cibuild_step0 && lerna run cibuild_step1 && lerna run cibuild_step2 && lerna run cibuild_step3 && lerna run cibuild_step4 && lerna run cibuild_step5 && lerna run cibuild_step6 && lerna run cibuild_step7",
     "build": "yarn buildall",
+    "wbuild": "yarn wbuildall",
     "testall": "node scripts/testall.js",
+    "lint": "lerna run lint -- ",
+    "qa": "yarn qa:prettier && yarn qa:lint",
+    "qa:prettier": "npx prettier",
+    "qa:lint": "npx eslint",
     "release": "lerna exec --no-bail -- npm publish",
     "postrelease": "git add . && git commit -m ':bookmark: v$npm_package_version' && git tag -a v$npm_package_version -m ':bookmark: FreeSewing v$npm_package_version'",
     "ship": "lerna exec --no-bail -- npm publish",
@@ -34,7 +41,9 @@
     "famgen": "all-contributors generate",
     "checkdocs": "remark markdown --quiet --frail",
     "strapi:translate": "node scripts/strapi-en-to-other.mjs",
-    "fixdocs": "remark markdown --quiet --frail --output"
+    "fixdocs": "remark markdown --quiet --frail --output",
+    "wbuildall": "lerna run wcibuild_step0 && lerna run wcibuild_step1 && lerna run wcibuild_step2 && lerna run wcibuild_step3 && lerna run wcibuild_step4 && lerna run wcibuild_step5 && lerna run wcibuild_step6 && lerna run wcibuild_step7",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -44,18 +53,22 @@
     "url": "https://github.com/freesewing/freesewing/issues"
   },
   "prettier": "@freesewing/prettier-config",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "lint-staged": {
+    "*": [
+      "npx prettier --write",
+      "npx eslint"
+    ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-syntax-import-assertions": "^7.18.6",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@types/express": "^4.17.13",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.8",
     "all-contributors-cli": "^6.20.0",
+    "autoprefixer": "^10.4.0",
     "ava": "^4.0.1",
     "axios": "^0.27.2",
     "chai": "^4.2.0",
@@ -65,31 +78,35 @@
     "cross-env": "^7.0.2",
     "esbuild": "^0.15.3",
     "esbuild-plugin-yaml": "^0.0.1",
+    "eslint": "^8.23.1",
+    "eslint-config-next": "^12.3.1",
+    "eslint-plugin-jsonc": "^2.4.0",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-yaml": "^0.5.0",
     "esm": "^3.2.25",
+    "handlebars": "^4.7.7",
     "husky": "^8.0.1",
     "js-yaml": "^4.0.0",
     "lerna": "^5.1.4",
+    "lint-staged": "^13.0.3",
     "mocha": "^10.0.0",
     "mustache": "^4.0.1",
     "nyc": "^15.1.0",
-    "prettier": "^2.3.0",
+    "prettier": "^2.7.1",
     "pretty-quick": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
-    "rimraf": "^3.0.2",
-    "standard": "^17.0.0",
-    "autoprefixer": "^10.4.0",
-    "handlebars": "^4.7.7",
     "rehype-format": "^4.0.1",
-    "remark-cli": "^11.0.0",
+    "remark": "^14.0.2",
     "remark-frontmatter": "^4.0.1",
+    "remark-html": "^15.0.1",
     "remark-lint-emphasis-marker": "^3.1.1",
     "remark-lint-list-item-indent": "^3.1.1",
     "remark-preset-lint-consistent": "^5.1.1",
-    "remark-preset-lint-recommended": "^6.1.2"
+    "remark-preset-lint-recommended": "^6.1.2",
+    "rimraf": "^3.0.2",
+    "standard": "^17.0.0"
   },
   "workspaces": [
     "designs/*",
@@ -97,5 +114,19 @@
     "plugins/*",
     "sites/*"
   ],
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "c8": "^7.12.0",
+    "handlebars": "^4.7.7",
+    "jsonfile": "^6.1.0",
+    "postcss": "^8.4.5",
+    "remark-cli": "^11.0.0",
+    "remark-frontmatter": "^4.0.1",
+    "remark-lint-emphasis-marker": "^3.1.1",
+    "remark-lint-list-item-indent": "^3.1.1",
+    "remark-preset-lint-consistent": "^5.1.1",
+    "remark-preset-lint-recommended": "^6.1.2",
+    "tailwindcss": "^3.0.7"
+  }
 }

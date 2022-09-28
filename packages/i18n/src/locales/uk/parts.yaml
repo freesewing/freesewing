@@ -2,7 +2,7 @@
 back: Спина
 backBase: Основа спинки
 backPocketWelt: Листочка задньої кишені
-base: База
+base: Основа
 bentBack: Спина Бент
 bentBase: Основа Бент
 bentFront: Перед Бент
@@ -26,7 +26,7 @@ gusset: Ластовиця
 hoodCenter: Центр капюшону
 hood: Капюшон
 hoodSide: Сторона капюшону
-inset: Вставка
+inset: Виріз пройми
 interfacingTail: Деблерінова деталь хвоста
 interfacingTip: Дублерінова деталь кута
 liningTail: Деталь підкладки хвоста
@@ -47,8 +47,8 @@ pocketWelt: Кишенькова листочка
 side: Бік
 sleeveBase: Основа рукава
 sleevecap: Окат рукава
-sleevePlacketOverlap: Верх шліца
-sleevePlacketUnderlap: Низ шліца
+sleevePlacketOverlap: Верхня деталь шліца рукава
+sleevePlacketUnderlap: Нижня деталь шліца рукава
 sleeve: Рукав
 topSleeve: Верх рукава
 top: Верх

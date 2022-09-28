@@ -1,7 +1,7 @@
 ---
-title: Language
+title: Мова
 ---
 
-This determines the language used on your pattern.
+Керує мовою на Вашій викрійці.
 
-By default, we use the same language as you're using on the website, but if for some reason you want a pattern in a different language, this is where to configure that.
+За замовчуванням використовується мова, яку Ви обрали на сайті, але якщо Ви хочете мати викрійку іншою мовою, тут це можна налагодити.

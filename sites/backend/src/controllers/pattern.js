@@ -17,9 +17,9 @@ PatternController.prototype.create = (req, res) => {
       name: req.body.name,
       notes: req.body.notes,
       data: req.body.data,
-      created: new Date()
+      created: new Date(),
     })
-    pattern.save(function(err) {
+    pattern.save(function (err) {
       if (err) {
         log.error('patternCreationFailed', user)
         console.log(err)
@@ -56,7 +56,7 @@ PatternController.prototype.delete = (req, res) => {
   if (!req.user._id) return res.sendStatus(400)
   User.findById(req.user._id, async (err, user) => {
     if (err || user === null) return res.sendStatus(400)
-    Pattern.deleteOne({ handle: req.params.handle, user: user.handle }, err => {
+    Pattern.deleteOne({ handle: req.params.handle, user: user.handle }, (err) => {
       if (err) return res.sendStatus(400)
       else return res.sendStatus(204)
     })
@@ -64,7 +64,7 @@ PatternController.prototype.delete = (req, res) => {
 }
 
 // Delete multiple
-PatternController.prototype.deleteMultiple = function(req, res) {
+PatternController.prototype.deleteMultiple = function (req, res) {
   if (!req.body) return res.sendStatus(400)
   if (!req.body.patterns) return res.sendStatus(400)
   if (!req.user._id) return res.sendStatus(400)
@@ -77,9 +77,9 @@ PatternController.prototype.deleteMultiple = function(req, res) {
     Pattern.deleteMany(
       {
         user: user.handle,
-        $or: handles
+        $or: handles,
       },
-      err => {
+      (err) => {
         if (err) return res.sendStatus(500)
         const patterns = {}
         Patterns.find({ user: user.handle }, (err, patternList) => {
@@ -93,7 +93,7 @@ PatternController.prototype.deleteMultiple = function(req, res) {
 }
 
 function saveAndReturnPattern(res, pattern) {
-  pattern.save(function(err, updatedPattern) {
+  pattern.save(function (err, updatedPattern) {
     if (err) {
       log.error('patternUpdateFailed', updatedPattern)
       return res.sendStatus(500)

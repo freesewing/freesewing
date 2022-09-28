@@ -15,7 +15,7 @@ La génération d'un modèle de couture sur mesure nécessite un compte.
 Pour le visiteur décontracté qui tombe sur notre site web,
 cela ajoute beaucoup de frein avant de pouvoir essayer le site Web.
 
-For this reason, we've added standard sizes since version 2.2.\
+For this reason, we've added standard sizes since version 2.2.  
 We advise against using our standard sizes for actual garment construction.
 
 </Note>

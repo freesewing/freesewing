@@ -6,7 +6,7 @@ import { banner } from './banner.mjs'
 import mustache from 'mustache'
 import { execSync } from 'child_process'
 // Software
-import designs from '../config/software/designs.json'
+import designs from '../config/software/designs.json' assert { type: 'json' }
 
 const type = process.argv[2]
 

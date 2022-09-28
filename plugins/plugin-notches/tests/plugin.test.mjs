@@ -1,10 +1,18 @@
 import chai from 'chai'
-import freesewing from '@freesewing/core'
-import plugin from '../dist/index.mjs'
+import { Design } from '@freesewing/core'
+import { plugin } from '../src/index.mjs'
 
 const expect = chai.expect
 
-const pattern = new freesewing.Pattern().use(plugin)
+const part = {
+  name: 'test',
+  draft: ({ Point, snippets, Snippet }) => {
+    snippets.button = new Snippet('notch', new Point(10, 20))
+  },
+  plugins: [plugin],
+}
+const Pattern = new Design({ parts: [part] })
+const pattern = new Pattern()
 pattern.draft().render()
 
 describe('Notches Plugin Test', () => {
@@ -16,15 +24,20 @@ describe('Notches Plugin Test', () => {
     expect(pattern.svg.defs.indexOf(`<g id="notch">`)).to.not.equal(-1)
   })
 
-  it("Draws a notch on an anchor point", () => {
-    let pattern = new freesewing.Pattern()
-    pattern.use(plugin)
-    pattern.parts.test = new pattern.Part()
-    let { Point, snippets, Snippet } = pattern.parts.test.shorthand()
-    snippets.button = new Snippet('notch', new Point(10,20))
-    pattern.render()
-    let c = pattern.svg
+  it('Draws a notch on an anchor point', () => {
+    const part = {
+      name: 'test',
+      draft: ({ Point, snippets, Snippet, part }) => {
+        snippets.button = new Snippet('notch', new Point(10, 20))
+
+        return part
+      },
+      plugins: [plugin],
+    }
+    const Pattern = new Design({ parts: [part] })
+    const pattern = new Pattern()
+    pattern.draft().render()
+    const c = pattern.svg
     expect(c.layout.test.svg).to.contain('<use x="10" y="20" xlink:href="#notch"')
   })
 })
-

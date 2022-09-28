@@ -1,7 +1,7 @@
 import { Chevron } from 'shared/components/navigation/primary.js'
 import { Ul, Li, Details, Summary, SumButton, SumDiv, Deg } from 'shared/components/workbench/menu'
 
-const ConsoleLog = props =>  (
+const ConsoleLog = (props) => (
   <Li>
     <Details>
       <Summary>
@@ -12,12 +12,16 @@ const ConsoleLog = props =>  (
         <Chevron />
       </Summary>
       <Ul>
-        {['config', 'gist', 'draft'].map(it => (
+        {['designConfig', 'patternConfig', 'gist', 'draft', 'renderProps'].map((it) => (
           <Li key={it}>
-            <SumButton onClick={() => console.log(it === 'config'
-              ? props.design.config
-              : props[it]
-            )}>
+            <SumButton
+              onClick={() => {
+                if (it === 'designConfig') return console.log(props.design.designConfig)
+                if (it === 'patternConfig') return console.log(props.design.patternConfig)
+                if (it === 'renderProps') return console.log(props.draft.getRenderProps())
+                return console.log(props[it])
+              }}
+            >
               <SumDiv>
                 <Deg />
                 <span>{it}</span>

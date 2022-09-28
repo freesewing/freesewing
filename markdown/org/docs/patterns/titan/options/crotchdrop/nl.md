@@ -4,7 +4,7 @@ title: "Crotch drop"
 
 Bepaalt hoeveel het kruis verlaagd is.
 
-Lowering the crotch makes for a more casual fit.\
+Lowering the crotch makes for a more casual fit.  
 A signigicantly lowered crotched can also be a style choice.
 
 ## Effect van deze optie op het patroon

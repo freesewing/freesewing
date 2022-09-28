@@ -5,7 +5,7 @@ order: 70
 ---
 
 The **Store** object holds a simple key/value store with
-methods for storing and retrieving information.\
+methods for storing and retrieving information.  
 A single store per pattern is shared by all pattern parts.
 
 A store is typically used to share information between parts. For example

@@ -1,29 +1,23 @@
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 import { config as bellaConfig } from '@freesewing/bella'
 
 export default {
   name: '{{name}}',
-  version,
+  version: pkg.version,
   optionGroups: {
     ...bellaConfig.optionGroups,
   },
-  measurements: [
-    ...bellaConfig.measurements,
-  ],
+  measurements: [...bellaConfig.measurements],
   dependencies: {
     bellaFrontSideDart: 'bellaBack',
   },
   inject: {
     back: 'bellaBack',
-    front: 'bellaFrontSideDart'
+    front: 'bellaFrontSideDart',
   },
-  hide: [
-    'bellaBack',
-    'bellaFrontSideDart',
-  ],
+  hide: ['bellaBack', 'bellaFrontSideDart'],
   parts: [],
   options: {
     ...bellaConfig.options,
   },
 }
-

@@ -1,16 +1,16 @@
 ---
 heelEase:
-  title: Heel ease
-  description: The amount of ease at your heel (when stepping into the leg)
+  title: Свобода підйому
+  description: Свобода облягання підйому ноги (при надяганні)
 frontPockets:
-  title: Front pockets
-  description: Whether or not to add front pockets on the side seam
+  title: Передні кишені
+  description: Чи додавати передні кишені в бокових швах
 backPockets:
-  title: Back pockets
-  description: Whether or not to add welt pockets to the back
+  title: Задні кишені
+  description: Чи додавати задні кишені з листочками
 elasticatedHem:
-  title: Elasticated hem
-  description: Whether or not you want an elasticated hem
+  title: Еластичний край
+  description: Чи додавати гумку на краях - поясі та ніжних проймах
 ankleElastic:
-  title: Ankle/Hem elastic width
-  description: Width of the (optional) elastic at the ankle/hem
+  title: Ширина гумки на кісточці
+  description: Ширина (необов'язкової) гумки на кісточці ноги/краю

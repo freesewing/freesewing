@@ -2,7 +2,7 @@
 title: hd
 ---
 
-The `hd` macro adds a _horizontal dimension_ to your pattern.\
+The `hd` macro adds a _horizontal dimension_ to your pattern.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
 <Example part="point_dx">

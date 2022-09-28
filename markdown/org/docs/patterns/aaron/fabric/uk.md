@@ -1,13 +1,13 @@
 - - -
-title: "Aaron A-Shirt: Fabric Options"
+title: "Майка Аарон: Варіанти тканин"
 - - -
 
-An A-shirt is essentially underwear. And in that capacity, you want something that is comfortable, feels nice on your skin and breaths.
+Майка це, технічно, спідня білизна. В цьому випадку, ми рекомендуємо обрати комфортну тканину; таку, що дихає.
 
-Cotton with a hint of something stretchy, maybe rayon, or a fine knit. I suggest you go to the fabric store and feel around a bit.
+До прикладу, підійде еластична бавовна, віскоза або трикотаж. Ми пропонуємо відвідати магазин тканин та роздивитися їх асортимент.
 
 <Note>
 
-While stretch is not required, it does make sense for underwear. That being said, you can make this in a non-stretch, just make sure pick loose or casual fit.
+Хоча еластична тканина не єдиний вірний вибір, краще обрати саме її. Якщо ви хочете зробити майку з нееластичної тканини, ми рекомендуємо обирати вільний крій або оверсайз.
 
 </Note>

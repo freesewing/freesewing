@@ -65,7 +65,7 @@ __signupCopy1__
 
 __signupActionLink__
 
-__questionsJustReply__`
+__questionsJustReply__`,
 }
 
 export default signup

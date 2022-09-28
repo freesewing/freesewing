@@ -14,14 +14,7 @@ import draftSleeve from './sleeve'
 const Design = new freesewing.Design(config, plugins)
 
 // Attach Breanna's draft methods to the prototype
-for (const m of [
-  'Base',
-  'Back',
-  'FrontBase',
-  'Front',
-  'Sleevecap',
-  'Sleeve',
-]) {
+for (const m of ['Base', 'Back', 'FrontBase', 'Front', 'Sleevecap', 'Sleeve']) {
   Design.prototype[`draftBreanna${m}`] = function (part) {
     return new Breanna(this.settings)[`draft${m}`](part)
   }

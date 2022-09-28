@@ -4,17 +4,17 @@ import { formatMm, formatPercentage} from 'shared/utils'
 export const values = {
   pct: props => {
     const val = (typeof props.gist?.options?.[props.option] === 'undefined')
-      ? props.design.config.options[props.option].pct/100
+      ? props.design.patternConfig.options[props.option].pct/100
       : props.gist.options[props.option]
     return (
       <span className={
-        val=== props.design.config.options[props.option].pct/100
+        val=== props.design.patternConfig.options[props.option].pct/100
           ? 'text-secondary-focus'
           : 'text-accent'
       }>
         {formatPercentage(val)}
-        {props.design.config.options[props.option]?.toAbs && props.gist.measurements
-          ? ' | ' +formatMm(props.design.config.options[props.option]?.toAbs(val, props.gist))
+        {props.design.patternConfig.options[props.option]?.toAbs && props.gist.measurements
+          ? ' | ' +formatMm(props.design.patternConfig.options[props.option]?.toAbs(val, props.gist))
           : null
         }
       </span>
@@ -22,7 +22,7 @@ export const values = {
   },
   bool: props => {
     const { t } = useTranslation(['app'])
-    const dflt = props.design.config.options[props.option].bool
+    const dflt = props.design.patternConfig.options[props.option].bool
     let current = props.gist?.options?.[props.option]
     current = current === undefined ? dflt : current;
     return (
@@ -39,17 +39,17 @@ export const values = {
     )
   },
   count: props => {
-    const dflt = props.design.config.options[props.option].count
+    const dflt = props.design.patternConfig.options[props.option].count
     const current = props.gist?.options?.[props.option]
     return (dflt==current || typeof current === 'undefined')
       ? (<span className="text-secondary-focus">{dflt}</span>)
       : (<span className="text-accent">{current}</span>)
   },
   list: props => {
-    const dflt = props.design.config.options[props.option].dflt
+    const dflt = props.design.patternConfig.options[props.option].dflt
     const current = props.gist?.options?.[props.option]
     const prefix = `${props.option}.o.`
-    const translate = props.design.config.options[props.option]?.doNotTranslate
+    const translate = props.design.patternConfig.options[props.option]?.doNotTranslate
       ? (input) => input
       : (input) => props.t(prefix+input)
     return (dflt==current || typeof current === 'undefined')
@@ -57,7 +57,7 @@ export const values = {
       : (<span className="text-accent">{translate(current)}</span>)
   },
   deg: props => {
-    const dflt = props.design.config.options[props.option].deg
+    const dflt = props.design.patternConfig.options[props.option].deg
     const current = props.gist?.options?.[props.option]
     return (dflt==current || typeof current === 'undefined')
       ? (<span className="text-secondary-focus">{dflt}&deg;</span>)

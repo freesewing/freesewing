@@ -1,46 +1,46 @@
 ---
 backDartDepthFactor:
-  title: Back dart depth factor
-  description: How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Глибина задньої виточки
+  description: Наскільки далеко вниз або глибоко йде задня виточка від поясу. Залежить від виміру "від талії до стегон".
 backVent:
-  title: Back vent
-  description: Add a vent in the back of the skirt.
+  title: Задній виріз
+  description: Чи додати виріз ззаду спідниці.
 backVentLength:
-  title: Back vent length
-  description: Length of the Back Vent as a percentage of the skirt length.
+  title: Довжина заднього вирізу
+  description: Довжина заднього вирізу як відсоток від загальної довжини спідниці.
 dartToSideSeamFactor:
-  title: Dart to side seam factor
-  description: Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
+  title: Співвідношення виточки до бокового шва
+  description: Відсоток утягування від кульші (тазу) до талії, за який відповідають виточки та боковий шов.
 frontDartDepthFactor:
-  title: Front dart depth factor
-  description: How far down does the front dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.
+  title: Глибина передньої виточки
+  description: Наскільки далеко вниз або глибоко йде передня виточка від поясу. Залежить від виміру "від талії до стегон".
 hem:
-  title: Size of the hem
-  description: The size of the hem. Measurement in absolute values.
+  title: Розмір краю
+  description: Ширина краю. Вимір в абсолютних значеннях (модулі дійсного числа).
 hemBonus:
-  title: Hem bonus
-  description: This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement.
+  title: Додатковий край
+  description: Це налаштування зменшить загальну довжину краю спідниці. Вимірюється відсотком від виміру "обхват стегон".
 lengthBonus:
-  title: Length bonus
-  description: This sets the length of the skirt. Percentage of the Natural Waist to Knee measurement.
+  title: Додаткова довжина
+  description: Визначає довжину спідниці. Відсоток від виміру "від талії до коліна".
 nrOfDarts:
-  title: Number of darts
-  description: The number of darts used in the pattern. Maximum is 2. This option can be reduced by the pattern if the calculations create darts that are too small.
+  title: Кількість виточок
+  description: Загальна кількість виточок у викрійці. Найбільша кількість - 2. Це налаштування може автоматично зменшитися, якщо виточки за розрахунками виходять замалими.
 seatEase:
-  title: Seat ease
-  description: Amount of ease at the seat level.
+  title: Свобода облягання на стегнах
+  description: Свобода облягання на стегнах, яка допомагає забезпечити комфортне сидіння.
 waistBand:
-  title: Waist band
-  description: Add a waistband to the pattern.
+  title: Пояс
+  description: Додати пояс до викрійки.
 waistBandWidth:
-  title: Waist band width
-  description: The width of the waist band.
+  title: Ширина пояса
+  description: Загальна ширина пояса.
 waistEase:
-  title: Waist ease
-  description: Amount of ease at the waist level.
+  title: Свобода облягання на талії
+  description: Свобода облягання на талії.
 zipperLocation:
-  title: Zipper location
-  description: The location of the zipper.
+  title: Розташування застібки
+  description: Де розташовуватиметься застібка-блискавка.
   options:
-    backSeam: At the back seam
-    sideSeam: At the side seam
+    backSeam: У задньому шві
+    sideSeam: У боковому шві

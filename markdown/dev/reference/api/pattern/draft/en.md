@@ -2,7 +2,7 @@
 title: Pattern.draft()
 ---
 
-A pattern's `draft()` method will draft all the different pattern parts
+A pattern's `draft()` method will draft the different pattern parts
 making sure to do so in the right order, handle dependencies, resolve
 options to their absolute values and a number of other housekeeping things
 that are required for the pattern to be drafted.
@@ -18,14 +18,11 @@ Pattern pattern.draft()
 ## Pattern.draft() example
 
 ```js
-import Aaron from "@freesewing/aaron"
-import models from "@freesewing/models"
+import { Aaron } from "@freesewing/aaron"
+import { cisFemaleAdult34 } from "@freesewing/models"
 
 const pattern = new Aaron({
-  settings: {
-    embed: true,
-  },
-  measurements: models.manSize38
+  measurements: cisFemaleAdult34
 })
 
 const svg = pattern.draft().render()

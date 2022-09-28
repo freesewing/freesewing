@@ -1,12 +1,12 @@
 ---
-title: Getreide- und Faltenanzeige
+title: Fadenlauf und Indikator für Zuschnitt im Stoffbruch
 ---
 
-Grainlines — a line that indicates the _fabric grain_ — look like this:
+Fadenlauf -- eine Linie, die den _Verlauf der Fäden im Stoff_ anzeigt -- sieht folgendermaßen as:
 
 <Legend part="grainline">
 
-A grainline indicator
+Ein Indikator für den Fadenlauf
 
 </Legend>
 

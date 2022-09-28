@@ -1,7 +1,7 @@
 ---
 draftForHighBust:
-  title: Draft for high bust
-  description: Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+  title: Креслення для нагруддя
+  description: Викрійка креслиться з урахуванням виміру "обхват над грудьми" (якщо такий є в профілі), а не за виміром "обхват грудей". Таким чином, виріб буде більш посадженим для людей з великими грудьми.
 sleeveEase:
   title: Свобода прилягання рукава
   description: Змінити свободу прилягання рукавів

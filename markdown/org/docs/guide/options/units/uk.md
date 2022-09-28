@@ -1,13 +1,14 @@
 ---
-title: Units
+title: Одиниці вимірювання
 ---
 
-This controls the units used (by the text) on the pattern.
+Керує (текстовими) одиницями вимірювання на викрійці.
 
-Freesewing supports two types of units:
+FreeSewing підтримує два типи одиниць:
 
-- Metric units (cm)
-- Imperial units (inch)
+- Метричні одиниці (см)
+- Імперські одиниці (дюйм)
 
-You can configure your default units in your account settings.\
-In addition, you can set the units individually for each model.\ And if that wasn't enough, you can still override the units for an individual pattern with this setting.
+Ви можете налаштувати одиниці за замовчуванням в налаштуваннях облікового запису.  
+Крім того, одиниці можна обирати індивідуально для кожної моделі.  
+Але якщо і цього було недостатньо, одиниці можна також обрати для конкретної викрійки завдяки цьому налаштуванню.

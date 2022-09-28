@@ -8,7 +8,7 @@ Le dos des pattes du pantalon est toujours plus large que le devant. Cela contr√
 
 <Note>
 
-Increasing this will make the front leg panel narrower.\
+Increasing this will make the front leg panel narrower.  
 This makes the wearer look more skinny.
 
 This trick is often used in womenswear jeans

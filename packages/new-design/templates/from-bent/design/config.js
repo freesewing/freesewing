@@ -1,15 +1,13 @@
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 import { config as bentConfig } from '@freesewing/bent'
 
 export default {
   name: '{{name}}',
-  version,
+  version: pkg.version,
   optionGroups: {
     ...bentConfig.optionGroups,
   },
-  measurements: [
-    ...bentConfig.measurements,
-  ],
+  measurements: [...bentConfig.measurements],
   inject: {
     bentBack: 'bentBase',
     bentFront: 'bentBack',
@@ -20,16 +18,8 @@ export default {
     topSleeve: 'bentTopSleeve',
     underSleeve: 'bentUnderSleeve',
   },
-  hide: [
-    'bentBase',
-    'bentFront',
-    'bentBack',
-    'bentSleeve',
-    'bentTopSleeve',
-    'bentUnderSleeve',
-  ],
+  hide: ['bentBase', 'bentFront', 'bentBack', 'bentSleeve', 'bentTopSleeve', 'bentUnderSleeve'],
   options: {
     ...bentConfig.options,
   },
 }
-

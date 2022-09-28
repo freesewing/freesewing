@@ -14,7 +14,7 @@ const banner = `/**
 const options = {
   banner: { js: banner },
   bundle: true,
-  entryPoints: ['src/index.js'],
+  entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
   external: [ 'unist-util-visit', 'hast-util-from-html' ],

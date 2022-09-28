@@ -1,34 +1,34 @@
 export default [
   {
     name: 'clearUsers',
-    type: Boolean
+    type: Boolean,
   },
   {
     name: 'clearModels',
-    type: Boolean
+    type: Boolean,
   },
   {
     name: 'clearPatterns',
-    type: Boolean
+    type: Boolean,
   },
   {
     name: 'clearConfirmations',
-    type: Boolean
+    type: Boolean,
   },
   {
     name: 'clearNewsletterSubscribers',
-    type: Boolean
+    type: Boolean,
   },
   {
     name: 'clearAll',
-    type: Boolean
+    type: Boolean,
   },
   {
     name: 'reboot',
-    type: Boolean
+    type: Boolean,
   },
   {
     name: 'help',
-    type: Boolean
-  }
+    type: Boolean,
+  },
 ]

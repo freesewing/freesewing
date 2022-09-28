@@ -13,6 +13,14 @@ packageJson:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:
     author: woutervdub (https://github.com/woutervdub)
+  code:
+    c8:
+      reporter: html
+      all: yes
+      extension: mjs
+      exclude:
+        - "node_modules/*"
+        - "tests"
   hi:
     author: woutervdub (https://github.com/woutervdub)
   holmes:
@@ -43,8 +51,8 @@ packageJson:
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:
-    main: 'index.json'
-    module: '!'
+    type: "module"
+    exports: { .: "./index.json" }
     scripts: { build: 'echo "prettier-config: No build required" && exit 0' }
     keywords:
       - prettier

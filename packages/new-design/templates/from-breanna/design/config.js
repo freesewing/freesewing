@@ -1,17 +1,14 @@
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 import { config as breannaConfig } from '@freesewing/breanna'
 
 export default {
   name: '{{name}}',
-  version,
+  version: pkg.version,
   optionGroups: {
     ...breannaConfig.optionGroups,
   },
-  measurements: [
-    ...breannaConfig.measurements,
-  ],
-  dependencies: {
-  },
+  measurements: [...breannaConfig.measurements],
+  dependencies: {},
   inject: {
     breannaBack: 'breannaBase',
     breannaFrontBase: 'breannaBase',
@@ -34,4 +31,3 @@ export default {
     ...breannaConfig.options,
   },
 }
-

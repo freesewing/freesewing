@@ -2,7 +2,7 @@
 title: ld
 ---
 
-The `ld` macro adds a _linear dimension_ to your pattern.\
+The `ld` macro adds a _linear dimension_ to your pattern.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
 <Example part="point_dist">

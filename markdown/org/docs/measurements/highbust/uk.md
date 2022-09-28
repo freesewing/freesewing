@@ -1,9 +1,9 @@
 ---
-title: High bust
+title: Обхват над грудьми
 ---
 
-The **high bust** measurement is your chest circumference measured just under your arms, above the fullest part of your bust.
+**Обхват над грудьми** вимірюється відразу під пахвами, над найширшою частиною грудей.
 
-The point of the high bust measurement is to get an idea of the chest circumference without taking breasts into account. As such, this measurement is only relevant for models with breasts.
+Обхват над грудьми знімається для того, аби отримати обхват грудей без урахування молочних залоз. Цей вимір є актуальним лише для моделей з молочними залозами.
 
-To measure your high bust, wrap the tape measure around your chest just under your arms. You might not be able to keep it horizontal (parallel to the floor), but that's ok.
+Для зняття обхвату над грудьми, повністю охопіть сантиметром навколо грудей відразу під пахвами. Стрічка може не бути горизонтальною (паралельною підлозі), але це гаразд.

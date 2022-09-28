@@ -1,6 +1,6 @@
 module.exports = function tests(store, config, chai) {
   describe('Pattern endpoints', () => {
-    it('should create a pattern', done => {
+    it('should create a pattern', (done) => {
       chai
         .request(config.backend)
         .post('/patterns')
@@ -10,8 +10,8 @@ module.exports = function tests(store, config, chai) {
           person: 'Someone',
           notes: 'Some notes',
           data: {
-            test: 'value'
-          }
+            test: 'value',
+          },
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -24,13 +24,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the pattern name', done => {
+    it('should update the pattern name', (done) => {
       chai
         .request(config.backend)
         .put('/patterns/' + config.user.pattern)
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          name: 'New name'
+          name: 'New name',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -41,13 +41,13 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should update the pattern notes', done => {
+    it('should update the pattern notes', (done) => {
       chai
         .request(config.backend)
         .put('/patterns/' + config.user.pattern)
         .set('Authorization', 'Bearer ' + config.user.token)
         .send({
-          notes: 'These are the notes'
+          notes: 'These are the notes',
         })
         .end((err, res) => {
           res.should.have.status(200)
@@ -58,7 +58,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should load the pattern data without authentication', done => {
+    it('should load the pattern data without authentication', (done) => {
       chai
         .request(config.backend)
         .get('/patterns/' + config.user.pattern)
@@ -71,7 +71,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should delete the pattern', done => {
+    it('should delete the pattern', (done) => {
       chai
         .request(config.backend)
         .delete('/patterns/' + config.user.pattern)
@@ -82,7 +82,7 @@ module.exports = function tests(store, config, chai) {
         })
     })
 
-    it('should no longer have this pattern', done => {
+    it('should no longer have this pattern', (done) => {
       chai
         .request(config.backend)
         .get('/patterns/' + config.user.pattern)

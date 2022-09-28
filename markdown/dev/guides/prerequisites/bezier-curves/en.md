@@ -33,7 +33,7 @@ As long as you intuitively _get_ how the control points influence the curve, you
 
 ###### More on Bézier curves
 
-Wikipedia has a good [introduction to Bézier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve).\
+Wikipedia has a good [introduction to Bézier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve).  
 For a deep-dive into the subject, check out [A Primer on Bézier Curves](https://pomax.github.io/bezierinfo/) by
 [Pomax](https://github.com/Pomax).
 

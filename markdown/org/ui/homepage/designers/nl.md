@@ -5,7 +5,7 @@
 
 Parametrisch ontwerp verwijst naar het gebruik van parameters of variabelen om het resultaat van een bepaald ontwerp binnen de regels te manipuleren.
 
-In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.\
+In sewing patterns, the _parameters_ are what is provided by the user: Their measurements and options that they have selected.  
 The _rules_ of the design are what you, the designer, make them.
 
 #### Wat betekent dat voor de ontwerpers?

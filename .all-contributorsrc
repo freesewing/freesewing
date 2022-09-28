@@ -922,6 +922,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Bart-PXL",
+      "name": "Bart",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45118788?v=4",
+      "profile": "https://github.com/Bart-PXL",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "jdhoek",
+      "name": "Jeroen Hoek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/683699?v=4",
+      "profile": "http://jeroenhoek.nl",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "SirCharlotte",
+      "name": "SirCharlotte",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63847870?v=4",
+      "profile": "https://github.com/SirCharlotte",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "skipCi": true

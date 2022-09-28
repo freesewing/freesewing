@@ -15,7 +15,7 @@ Ik weet niet of de term **noblesse oblige** je bekend is, maar het betekent dat 
 
 Ik ben bevoorrecht, en dus heb ik verantwoordelijkheden. Ik ben zeer gelukkig dat ik in West-Europa ben geboren, dat ik goed werk heb en een dak boven mijn hoofd.
 
-Zou ik het geld kunnen gebruiken? Yes I could.\
+Zou ik het geld kunnen gebruiken? Yes I could.  
 Do I need the money? Nee, eigenlijk niet.
 
 ##### De waarde van jullie steun

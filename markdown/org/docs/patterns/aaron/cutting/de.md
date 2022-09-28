@@ -1,5 +1,5 @@
 - - -
-title: "Aaron A-Shirt: Cutting Instructions"
+title: "Aaron, A-Shirt: Zuschnitt"
 - - -
 
 - Schneide **1 Rückenteil** im Stoffbruch
@@ -8,10 +8,10 @@ title: "Aaron A-Shirt: Cutting Instructions"
 
 <Warning>
 
-#### Caveats
+#### Achtung
 
-- There is no seam allowance on the armholes
-- There is no seam allowance on the neck opening
-- There is extra hem allowance at the hem
+ - Es gibt keine Nahtzugabe an den Armlöchern 
+ - Es gibt keine Nahtzugabe an der Halsöffnung
+ - Es gibt eine zusätzliche Saumzugabe am Saum
 
 </Warning>

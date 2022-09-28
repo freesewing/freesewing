@@ -4,7 +4,7 @@ order: 400
 ---
 
 When you generate a made-to-measure pattern, you can tweak it endlessly,
-and export it to a variety of formats, including PDF.\
+and export it to a variety of formats, including PDF.  
 But it remains ephemeral until you save it to your account, so it
 becomes one of **your patterns**.
 

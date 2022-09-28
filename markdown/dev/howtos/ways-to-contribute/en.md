@@ -2,7 +2,7 @@
 title: Ways to contribute
 ---
 
-Thank you for being part of our community, and for wanting to contribute! ❤️\
+Thank you for being part of our community, and for wanting to contribute! ❤️  
 FreeSewing is an open source project ran by volunteers from different corners of the world.
 We would love to have you on board, and this page lists everything you need to know to get started.
 

@@ -1,160 +1,96 @@
-import React, { useState } from 'react'
-import Svg from './Svg'
-import Defs from './Defs'
-import Part from './Part'
-import Develop from './Develop'
+import { Tab, Tabs } from '../tabs.js'
+import Md from 'react-markdown'
+import { plugin } from '@freesewing/plugin-bundle'
+import { Design } from '@freesewing/core'
+import Svg from '../../workbench/draft/svg'
+import Defs from '../../workbench/draft/defs'
+import Stack from '../../workbench/draft/stack'
+import { useGist } from 'shared/hooks/useGist'
 
-const PatternSvg = props => (
-  <Svg
-    embed={props.settings.embed}
-    width={props.width}
-    height={props.height}
-    language={props.settings.locale}
-    id={props.settings.idPrefix + 'svg'}
-    develop={props.develop || false}
-    style={props.style || {}}
-    viewBox={props.viewBox}
-    className={props.className || 'freesewing pattern'}
-  >
-    <Defs {...props} />
-    <style>{`:root { --pattern-scale: ${props.settings.scale || 1}}`}</style>
-    <g>
-      {Object.keys(props.parts).map((name) => (
-        <Part
-          part={props.parts[name]}
-          language={props.settings.locale}
-          paperless={props.settings.paperless}
-          units={props.settings.units}
-          key={name}
-          name={name}
-          focus={props.focus || false}
-          develop={props.develop || false}
-          raiseEvent={props.raiseEvent}
-        />
-      ))}
-    </g>
-  </Svg>
-)
-
-const Pattern = props => {
-
-  const {
-    pattern = 'examples',
-    patterns = {},
-    children=null,
-    options = {},
-    measurements = { head: 390},
-    part = '',
-    sample,
-    svgOnly=false,
-    allowDevelop=true
-  } = props
-
-  const [develop, setDevelop] = useState(false)
-  const [focus, setFocus] = useState(null)
-
-  // Don't continue if there's no pattern
-  if (!pattern || !patterns[pattern]) return <pre>{JSON.stringify(props,null,4)}</pre> //null
-
-  /* Helper method to handle user clicks */
-  const raiseEvent = (type, data) => {
-    if (type === 'clearFocusAll') return setFocus(null)
-    let f = {}
-    if (focus !== null) f = { ...focus }
-    if (typeof f[data.part] === 'undefined') f[data.part] = { paths: [], points: [], coords: [] }
-    if (type === 'point') f[data.part].points.push(data.name)
-    else if (type === 'path') f[data.part].paths.push(data.name)
-    else if (type === 'coords') f[data.part].coords.push(data.coords)
-    else if (type === 'clearFocus') {
-      let i = focus[data.part][data.type].indexOf(data.name)
-      f[data.part][data.type].splice(i, 1)
-    }
-
-    setFocus(f)
+// Get code from children
+const asText = (reactEl) => {
+  if (typeof reactEl.props.children === 'string') return reactEl.props.children
+  if (Array.isArray(reactEl.props.children)) {
+    return reactEl.props.children.map((el) => (typeof el === 'string' ? el : asText(el))).join('')
   }
+  if (typeof reactEl.props.children === 'object') return asText(reactEl.props.children)
 
-  /* Handle various elements with focus */
-  let focusCount = 0
-  if (focus !== null) {
-    for (let p of Object.keys(focus)) {
-      for (let i in focus[p].points) focusCount++
-      for (let i in focus[p].paths) focusCount++
-      for (let i in focus[p].coords) focusCount++
-    }
-  }
-
-  /* Set up settings object */
-  const settings = {
-    options: { ...options },
-    measurements: { ...measurements },
-    ...props.settings
-  }
-  // Support for options_ prefix
-  for (const [key, val] of Object.entries(props)) {
-    if (key.slice(0,8) === 'options_') settings.options[key.slice(8)] = (val === 'true')
-     ? true
-     : (val === 'false')
-     ? false
-     : val
-    if (key.slice(0,9) === 'settings_') settings[key.slice(9)] = (val === 'true')
-     ? true
-     : (val === 'false')
-     ? false
-     : val
-  }
-
-  if (part !== '') settings.only = [part]
-  const patternInstance = new patterns[pattern](settings)
-  if (sample) patternInstance.sample()
-  else patternInstance.draft()
-  const patternProps = patternInstance.getRenderProps()
-  return svgOnly
-    ? <PatternSvg {...patternProps} develop={develop} focus={focus} raiseEvent={raiseEvent} />
-    : (
-      <figure className={`my-4 ${develop ? 'develop example' : 'example'}`}>
-        <div className="example text-base-content">
-          {allowDevelop && (
-            <div className="actions">
-              <div className="form-control">
-                <label className="cursor-pointer label justify-start gap-4 font-lg lg:font-xl font-bold">
-                  <input
-                    type="checkbox"
-                    checked={develop}
-                    className="toggle toggle-secondary"
-                    onChange={() => setDevelop(!develop)}
-                  />
-                  <span className="label-text text-secondary">{develop ? 'Disable' : 'Enable'} Developer View</span>
-                </label>
-              </div>
-            </div>
-          )}
-          {develop && (
-            <div className="develop p-4 py-2 border rounded mb-2">
-              <div className="flex flex-row justify-between">
-                <h5>Developer info</h5>
-                <button
-                  disabled={!develop}
-                  className="px-2 py-1 rounded text-secondary border-secondary border text-sm"
-                  onClick={() => raiseEvent('clearFocusAll', null)}
-                >
-                  <strong>Clear</strong>
-                </button>
-              </div>
-              <Develop
-                focus={focus}
-                develop={develop}
-                raiseEvent={raiseEvent}
-                parts={patternProps.parts}
-              />
-            </div>
-          )}
-          <div className="shadow rounded border border-base-200">
-            <PatternSvg {...patternProps} develop={develop} focus={focus} raiseEvent={raiseEvent} />
-          </div>
-        </div>
-        <figcaption className="text-base-content text-center text-base lg:text-lg italic">{children}</figcaption>
-      </figure>
-    )
+  return ''
 }
 
-export default Pattern
+// The actual example
+const Example = ({ app, draft, xray = false }) => {
+  // State for gist
+  const { gist, unsetGist, updateGist } = useGist('example-mdx', app)
+
+  if (xray) {
+    gist._state.xray = { enabled: true }
+    gist.margin = 20
+  }
+  const patternProps = draft.draft().getRenderProps()
+  console.log(draft)
+  if (draft.store.logs.error.length > 0 || draft.setStores[0].logs.error.length > 0)
+    return (
+      <div className="max-w-full p-4">
+        <pre>{draft.store.logs.error.join('\n')}</pre>
+        <pre>{draft.setStores[0].logs.error.join('\n')}</pre>
+      </div>
+    )
+
+  return (
+    <Svg {...patternProps} embed={true}>
+      <Defs {...patternProps} />
+      <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
+      <g>
+        {Object.keys(patternProps.stacks).map((stackName) => (
+          <Stack
+            {...{ app, gist, updateGist, unsetGist, patternProps }}
+            showInfo={app.setPopup}
+            key={stackName}
+            stackName={stackName}
+            stack={patternProps.stacks[stackName]}
+          />
+        ))}
+      </g>
+    </Svg>
+  )
+}
+
+// Returns a FreeSewing draft based on code in children
+const buildExample = (children, settings = { margin: 10 }) => {
+  const code = asText(children)
+  const draft = eval(code)
+  const part = {
+    draft,
+    measurements: [],
+    plugins: [plugin],
+  }
+  const design = new Design({ parts: [part] })
+  return new design(settings)
+}
+
+// Wrapper component dealing with the tabs and code view
+const TabbedExample = ({ app, children, caption }) => {
+  const draft = buildExample(children)
+
+  return (
+    <div className="my-8">
+      <Tabs tabs="Preview, Code, X-Ray">
+        <Tab>
+          <Example draft={draft} app={app} />
+        </Tab>
+        <Tab>{children}</Tab>
+        <Tab>
+          <Example draft={draft} app={app} xray={true} />
+        </Tab>
+      </Tabs>
+      {caption && (
+        <div className="text-center italic -mt-4">
+          <Md>{caption}</Md>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default TabbedExample

@@ -4,7 +4,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { strapiHost } from 'shared/config/freesewing.mjs'
 import { strapiImage } from 'shared/utils.js'
 import { useTranslation } from 'next-i18next'
-import designs from 'shared/config/designs.json'
+import designs from 'shared/config/designs.json' assert { type: 'json' }
 import { PreviewTile } from '../index.js'
 
 const DesignIndexPage = (props) => {

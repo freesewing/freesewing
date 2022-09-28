@@ -1,8 +1,7 @@
 ---
-title: High bust front
+title: Напівобхват над грудьми
 ---
 
-The **high bust front** measurement is the front part of your **high bust** measurement: your chest circumference measured just under your arms, above the fullest part of your bust.
+**Напівобхват над грудьми** є передньою частиною **обхвату над грудьми** — обхвату грудей відразу під пахвами та над найширшою частиною грудей.
 
-To measure your high bust front, wrap the tape measure around your chest just under your arms and measure from the side (seam) across your breasts to the other side (seam).\
-You might not be able to keep it horizontal (parallel to the floor), but that's ok.
+Для зняття напівобхвату над грудьми, виміряйте свої груди відразу під пахвами, від одного боку, над грудьми та до іншого боку. Стрічка може не бути горизонтальною (паралельною підлозі), але це гаразд.

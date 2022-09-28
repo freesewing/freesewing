@@ -1,6 +1,5 @@
 import ThemePicker from 'shared/components/theme-picker.js'
 import LocalePicker from 'shared/components/locale-picker.js'
-import VersionPicker from 'site/components/version-picker.js'
 
 export const BeforeNav = ({ app }) => (
   <>
@@ -8,18 +7,15 @@ export const BeforeNav = ({ app }) => (
       <ThemePicker app={app} />
       <LocalePicker app={app} />
     </div>
-    <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2">
-      <VersionPicker app={app} />
-    </div>
+    <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2"></div>
   </>
 )
 
-const LabLayout = ({ app, AltMenu, children=[] }) => (
+const LabLayout = ({ app, AltMenu, children = [] }) => (
   <div className="py-24 lg:py-36 flex flex-row">
-    <div className="w-full px-8">
-      {children}
-    </div>
-    <aside className={`
+    <div className="w-full xl:w-3/4 px-8">{children}</div>
+    <aside
+      className={`
       fixed top-0 right-0
       pt-20 pb-8 px-8
       md:pt-0
@@ -39,8 +35,9 @@ const LabLayout = ({ app, AltMenu, children=[] }) => (
       md:w-80
       lg:w-96
       shrink-0
-    `}>
-      <BeforeNav app={app}/>
+    `}
+    >
+      <BeforeNav app={app} />
       {AltMenu}
     </aside>
   </div>

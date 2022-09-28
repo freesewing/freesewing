@@ -11,7 +11,7 @@ A lot of garments were woven to shape in the Roman era, so this is one aspect wh
 
 <Comment by="Zee">In that case I salute you and please share the results [in our discord](https://discord.freesewing.org/)! </Comment>
 
-If you want to learn more about this you can read about it in:\
+If you want to learn more about this you can read about it in:  
 Granger-Taylor, H. (1982) _Weaving Clothes To Shape in the Ancient World: The Tunic and Toga of the Arringatore_ in Textile History 13 (1), pp 3-25
 
 ### On Historical Accuracy

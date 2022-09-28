@@ -1,15 +1,13 @@
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
 import { config as brianConfig } from '@freesewing/brian'
 
 export default {
   name: '{{name}}',
-  version,
+  version: pkg.version,
   optionGroups: {
     ...brianConfig.optionGroups,
   },
-  measurements: [
-    ...brianConfig.measurements,
-  ],
+  measurements: [...brianConfig.measurements],
   dependencies: {
     brianSleevecap: 'brianFront',
   },
@@ -21,17 +19,9 @@ export default {
     front: 'brianFront',
     sleeve: 'brianSleeve',
   },
-  hide: [
-    'brianBase',
-    'brianFront',
-    'brianBack',
-    'brianSleevecap',
-    'brianSleeve',
-    'sleevecap',
-  ],
+  hide: ['brianBase', 'brianFront', 'brianBack', 'brianSleevecap', 'brianSleeve', 'sleevecap'],
   parts: [],
   options: {
     ...brianConfig.options,
   },
 }
-

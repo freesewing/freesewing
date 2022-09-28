@@ -1,4 +1,4 @@
-import { withBreasts, withoutBreasts } from '@freesewing/models';
+import { withBreasts, withoutBreasts } from '@freesewing/models'
 
 export default {
   users: [
@@ -10,15 +10,15 @@ export default {
       role: 'user',
       settings: {
         language: 'nl',
-        units: 'imperial'
+        units: 'imperial',
       },
       patron: 2,
       consent: {
         profile: true,
         measurements: true,
-        openData: true
+        openData: true,
       },
-      status: 'active'
+      status: 'active',
     },
     {
       email: 'test@freesewing.org',
@@ -28,15 +28,15 @@ export default {
       role: 'user',
       settings: {
         language: 'nl',
-        units: 'imperial'
+        units: 'imperial',
       },
       patron: 4,
       consent: {
         profile: true,
         measurements: true,
-        openData: true
+        openData: true,
       },
-      status: 'active'
+      status: 'active',
     },
     {
       email: 'admin@freesewing.org',
@@ -52,16 +52,16 @@ export default {
       patron: 8,
       settings: {
         language: 'en',
-        units: 'metric'
+        units: 'metric',
       },
       consent: {
         profile: true,
         measurements: true,
-        openData: true
+        openData: true,
       },
       newsletter: true,
-      status: 'active'
-    }
+      status: 'active',
+    },
   ],
   people: [
     {
@@ -72,7 +72,7 @@ export default {
       breasts: false,
       units: 'metric',
       notes: 'This is an example person',
-      measurements: withoutBreasts.size42
+      measurements: withoutBreasts.size42,
     },
     {
       handle: 'persb',
@@ -84,37 +84,37 @@ export default {
       notes: 'This is an example person',
       measurements: {
         ...withBreasts.size36,
-        doesNotExist: 234
-      }
+        doesNotExist: 234,
+      },
     },
   ],
   patterns: [
     {
-      handle: "recip",
-      name: "Example pattern",
-      notes: "These are the pattern notes",
+      handle: 'recip',
+      name: 'Example pattern',
+      notes: 'These are the pattern notes',
       data: {
         settings: {
           sa: 10,
           complete: true,
           paperless: false,
-          units: "imperial",
+          units: 'imperial',
           measurements: {
             biceps: 335,
             hpsToWaist: 520,
             chest: 1080,
             waistToHips: 145,
             neck: 420,
-            shoulderSlope:  13,
+            shoulderSlope: 13,
             shoulderToShoulder: 465,
-            hips: 990
-          }
+            hips: 990,
+          },
         },
-        design: "aaron",
+        design: 'aaron',
       },
-      created: "2019-08-14T09:47:27.163Z",
+      created: '2019-08-14T09:47:27.163Z',
       user: 'tuser',
-      person:"persa"
-    }
-  ]
+      person: 'persa',
+    },
+  ],
 }

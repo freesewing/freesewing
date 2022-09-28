@@ -17,7 +17,7 @@ To make Jaeger, you will need the following:
 
 <Note>
 
-\####### Where to get all this stuff
+###### Where to get all this stuff
 
 Making Jaeger is a fun and rewarning project, but getting all the required bits and pieces can be challenging.
 
@@ -30,8 +30,8 @@ Wenn Sie wissen, wo sie zu bekommen, großartig. If not, you can get a **Jacket 
 It's a shop for professionals (they're not even open on Saturdays) but they don't require you to be a business
 to place an order.
 
-Ich habe keine Lust mit diesen Jungs aber es ist der einzige Ort, den ich kenne, dass dir ein Kit aus
-professionellen Trimmings verkaufen wird, um eine Jacke herzustellen.
+I have no affiliation with these guys, but it's the only place I know of that will sell you a kit of
+professional trimmings to make a jacket.
 
 Wenn Sie einen anderen Ort kennen, der dieses Zeug trägt, lassen Sie es uns bitte wissen.
 

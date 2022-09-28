@@ -1,17 +1,16 @@
-// This file is auto-generated.
-// Changes you make will be overwritten.
-import Pattern from './dist/index.mjs'
+// This file is auto-generated | Any changes you make will be overwritten.
+import { Bee } from '../src/index.mjs'
 
 // Shared tests
-import { testPatternConfig } from '../../../tests/patterns/config.mjs'
-import { testPatternDrafting } from '../../../tests/patterns/drafting.mjs'
-import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
+import { testPatternConfig } from '../../../tests/designs/config.mjs'
+import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
+//import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig("bee", new Pattern())
+testPatternConfig(Bee)
 
-// Test drafting
-testPatternDrafting("bee", Pattern)
+// Test drafting - Change the second parameter to `true` to log errors
+testPatternDrafting(Bee, false)
 
-// Test sampling
-testPatternSampling( "bee", Pattern)
+// Test sampling - Change the second parameter to `true` to log errors
+//testPatternSampling(Bee, false)

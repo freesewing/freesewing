@@ -61,7 +61,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 
 <Note>
 
-The lengths above are recommendations so feel free to go as long or as short as you like with the ties.\
+The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
 If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
 
 </Note>
@@ -236,7 +236,7 @@ Mientras que un botón cubierto está cubierto puedes usar cualquier botón que 
 
 <Note>
 
-Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.\
+Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
 The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
 
 </Note>

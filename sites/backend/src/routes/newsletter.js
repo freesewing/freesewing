@@ -1,6 +1,6 @@
 import Controller from '../controllers/newsletter'
 
-const Nws= new Controller()
+const Nws = new Controller()
 
 export default (app, passport) => {
   // Email subscribe

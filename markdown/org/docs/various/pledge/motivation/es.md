@@ -15,7 +15,7 @@ No sé si estás familiarizado con la frase **noblesse oblige** , pero esencialm
 
 Estoy privilegiado y, por lo tanto, tengo responsabilidades. Tengo la suerte de haber nacido en Europa Occidental, de tener un buen trabajo y un techo sobre mi cabeza.
 
-¿Puedo utilizar el dinero? Yes I could.\
+¿Puedo utilizar el dinero? Yes I could.  
 Do I need the money? No lo hago.
 
 ##### El valor de su apoyo

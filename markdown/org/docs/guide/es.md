@@ -3,7 +3,7 @@ title: Comenzando
 order: 100
 ---
 
-Hi there 👋 and welcome to freesewing.org 🙂\
+Hi there 👋 and welcome to freesewing.org 🙂  
 Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
 
 ##### Lo que explicaremos

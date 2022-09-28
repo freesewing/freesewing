@@ -1,9 +1,9 @@
 ---
-title: Scale
+title: Масштаб
 ---
 
-The scale factor can be used to scale down (or up) everything that is not the actual pattern itself. Things like font sizes, arrow sizes, logos, scalebox, line width and so on.
+Масштаб змінює розмір всього, що не є безпосередніми елементами викрійки. Тобто такі речі, як кегль шрифту, розмір стрілочок, логотипи, точність масштабу, ширина ліній тощо.
 
-It was specifically created to accommodate patterns for doll clothes and other situations where the text and snippets would become too large in comparison to the pattern.
+Це налаштування було створене конкретно для створення викрійок лялькового одягу та інших випадків, коли умовні позначки є надто великими у співвідношення до самої викрійки.
 
-You need to enable _Expert mode_ after which you can find the scale setting under _Advanced_.
+Вам необхідно ввімкнути _Режим фахівця_, де Ви можете знайти налаштування масштабу в вкладці _Додатково_.

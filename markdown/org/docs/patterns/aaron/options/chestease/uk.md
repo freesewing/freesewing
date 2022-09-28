@@ -1,19 +1,19 @@
 - - -
-title: "Chest ease"
+title: "Свобода облягання грудної клітини"
 - - -
 
-![The chest ease option on Aaron](./chestease.svg)
+![Свобода облягання грудної клітини у майці Аарон](./chestease.svg)
 
-How much room do you want at the chest?
+Наскільки вільною має бути Ваша майка на грудній клітині?
 
-Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
+Обрану кількість буде додано до заданого об'єму грудей при креслені викрійки.
 
-> Given that an undershirt has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
+> Зважаючи на те, що у майки немає рукавів, навіть невелика кількість свободи у грудях може зіграти велику роль. Якщо Ви додасте забагато - пройми більше не будуть правильно сидіти.
 
-> ##### This option also allows negative values
+> ##### Ви також можете обрати негативне значення
 > 
-> You should only use negative ease if you are using a stretch material that you want to fit tightly. Overall stretch should be configured with the **stretch** option.
+> Використовувати це варто тільки тоді, коли Ви використовуєте еластичну тканину і Ви хочете, щоб виріб сидів сантиметр в сантиметр. Загальна розтяжність тканини задається в опції **розтяжність**.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на викрійку
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](aaron_chestease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні видно ефект даної опції при зіставленні декількох варіантів, які мають різні значення](aaron_chestease_sample.svg "Вплив цієї опції на викрійку")

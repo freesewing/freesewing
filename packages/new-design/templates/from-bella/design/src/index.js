@@ -13,7 +13,7 @@ import draftFront from './front'
 const Design = new freesewing.Design(config, plugins)
 
 // Attach Bella's draft methods to the prototype
-for (const m of [ 'Back', 'FrontSideDart' ]) {
+for (const m of ['Back', 'FrontSideDart']) {
   Design.prototype[`draftBella${m}`] = function (part) {
     return new Bella(this.settings)[`draft${m}`](part)
   }

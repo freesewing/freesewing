@@ -14,13 +14,7 @@ import draftSleeve from './sleeve'
 const Design = new freesewing.Design(config, plugins)
 
 // Attach Brian's draft methods to the prototype
-for (const m of [
-  'Base',
-  'Front',
-  'Back',
-  'Sleevecap',
-  'Sleeve',
-]) {
+for (const m of ['Base', 'Front', 'Back', 'Sleevecap', 'Sleeve']) {
   Design.prototype[`draftBrian${m}`] = function (part) {
     return new Brian(this.settings)[`draft${m}`](part)
   }

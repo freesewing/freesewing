@@ -14,6 +14,7 @@ import {
 } from '../config/software/index.mjs'
 import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
+import { capitalize } from '../sites/shared/utils.mjs'
 
 // Working directory
 const cwd = process.cwd()
@@ -36,8 +37,11 @@ const repo = {
     changelog: readTemplateFile('changelog.dflt.md'),
     readme: readTemplateFile('readme.dflt.md'),
     build: readTemplateFile('build.dflt.mjs'),
-    designTests: readTemplateFile('design.test.mjs'),
-    pluginTests: readTemplateFile('plugin.test.mjs')
+    // Removed in favor of central config file. Keeping just in case
+    //eslint: readTemplateFile('eslintrc.yml'),
+    pluginTests: readTemplateFile('plugin.test.mjs'),
+    designTests: readTemplateFile('design.test.mjs.mustache'),
+    data: readTemplateFile('data.dflt.mjs.mustache'),
   },
   dirs: foldersByType(),
   contributors: fs.readFileSync(path.join(cwd, 'CONTRIBUTORS.md'), 'utf-8'),
@@ -65,12 +69,16 @@ log.write(chalk.blueBright('Validating configuration...'))
 if (validate()) log.write(chalk.green(" Done\n"))
 
 
-// Step 3: Generate package.json, README, and CHANGELOG
+// Step 3: Generate package.json, pkg.mjs, README, and CHANGELOG
 log.write(chalk.blueBright('Generating package-specific files...'))
 for (const pkg of Object.values(software)) {
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'package.json'),
     JSON.stringify(packageJson(pkg), null, 2) + '\n'
+  )
+  fs.writeFileSync(
+    path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
+    mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
   )
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'README.md'),
@@ -82,6 +90,10 @@ for (const pkg of Object.values(software)) {
       repo.templates.build
     )
   }
+  //fs.writeFileSync(
+  //  path.join(cwd, pkg.folder, pkg.name, '.eslintrc.yml'),
+  //  repo.templates.eslint
+  //)
   fs.writeFileSync(
     path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'),
     changelog(pkg)
@@ -101,6 +113,7 @@ const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`);
 const buildAllCommand = buildSteps.join(' && ');
 const newRootPkgJson = {...rootPackageJson};
 newRootPkgJson.scripts.buildall = buildAllCommand;
+newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')
 fs.writeFileSync(
   path.join(repo.path, 'package.json'),
   JSON.stringify(newRootPkgJson, null, 2) + '\n'
@@ -111,7 +124,7 @@ log.write(chalk.green(" Done\n"))
 for (const design in designs) {
   fs.writeFileSync(
     path.join(repo.path, 'designs', design, 'tests', 'shared.test.mjs'),
-    mustache.render(repo.templates.designTests, { name: design })
+    mustache.render(repo.templates.designTests, { name: design, Name: capitalize(design) })
   )
 }
 for (const plugin in plugins) {
@@ -217,8 +230,18 @@ function scripts(pkg) {
   // Enforce build order by generating the cibuild_stepX scrips
   for (let step=0; step < buildOrder.length; step++) {
     if (buildOrder[step].indexOf(pkg.name) !== -1) {
-      if (runScripts.prebuild) runScripts[`precibuild_step${step}`] = runScripts.prebuild
-      if (runScripts.build) runScripts[`cibuild_step${step}`] = runScripts.build
+      if (runScripts.prebuild) {
+        runScripts[`precibuild_step${step}`] = runScripts.prebuild
+        if (!runScripts.prewbuild) runScripts.prewbuild = runScripts.prebuild
+      }
+      if (runScripts.build) {
+        runScripts[`cibuild_step${step}`] = runScripts.build
+
+        // add windows scripts
+        if (!runScripts.wbuild) runScripts.wbuild = runScripts.build
+
+        runScripts[`wcibuild_step${step}`] = runScripts.wbuild
+      }
     }
   }
 

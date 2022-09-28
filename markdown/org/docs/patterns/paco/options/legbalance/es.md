@@ -8,7 +8,7 @@ La parte trasera de las patas de los pantalones son siempre más anchas que la p
 
 <Note>
 
-Increasing this will make the front leg panel narrower.\
+Increasing this will make the front leg panel narrower.  
 This makes the wearer look more skinny.
 
 This trick is often used in womenswear jeans

@@ -1,17 +1,16 @@
-// This file is auto-generated.
-// Changes you make will be overwritten.
-import Pattern from './dist/index.mjs'
+// This file is auto-generated | Any changes you make will be overwritten.
+import { Florence } from '../src/index.mjs'
 
 // Shared tests
-import { testPatternConfig } from '../../../tests/patterns/config.mjs'
-import { testPatternDrafting } from '../../../tests/patterns/drafting.mjs'
-import { testPatternSampling } from '../../../tests/patterns/sampling.mjs'
+import { testPatternConfig } from '../../../tests/designs/config.mjs'
+import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
+//import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig("florence", new Pattern())
+testPatternConfig(Florence)
 
-// Test drafting
-testPatternDrafting("florence", Pattern)
+// Test drafting - Change the second parameter to `true` to log errors
+testPatternDrafting(Florence, false)
 
-// Test sampling
-testPatternSampling( "florence", Pattern)
+// Test sampling - Change the second parameter to `true` to log errors
+//testPatternSampling(Florence, false)

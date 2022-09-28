@@ -6,14 +6,14 @@ import config from '../config'
 const ConfirmationSchema = new Schema({
   created: {
     type: Date,
-    default: Date.now
+    default: Date.now,
   },
   type: {
     type: String,
     enum: ['signup', 'emailchange', 'passwordreset', 'oauth', 'newsletter'],
-    required: true
+    required: true,
   },
-  data: {}
+  data: {},
 })
 
 ConfirmationSchema.plugin(bcrypt)
@@ -21,7 +21,7 @@ ConfirmationSchema.plugin(bcrypt)
 ConfirmationSchema.plugin(encrypt, {
   secret: config.encryption.key,
   encryptedFields: ['data'],
-  decryptPostSave: false
+  decryptPostSave: false,
 })
 
 export default mongoose.model('Confirmation', ConfirmationSchema)

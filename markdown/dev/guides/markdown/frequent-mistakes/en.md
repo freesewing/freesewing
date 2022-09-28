@@ -43,7 +43,7 @@ See first list item for an example.
 ### Linking within the same website
 
 When you are linking within freesewing.dev or freesewing.org you can use a relative link from
-the site root.\
+the site root.  
 Use:
 
 ```text

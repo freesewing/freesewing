@@ -1,10 +1,10 @@
 ---
 flare:
-  title: Flare
-  description: The amount by which the garment flares from your chest downwards
+  title: Кльош
+  description: Керує кількістю тканини, що драпіруватиметься від грудей донизу
 shoulderseamLength:
-  title: Shoulder seam length
-  description: The length of the shoulder seam, as a factor of your shoulder to shoulder measurement
+  title: Довжина плечового шва
+  description: Загальна довжина плечового шва, залежить від виміру "ширина плечей"
 shoulderSlope:
-  title: Shoulder slope
-  description: Controls the angle of the shoulder seams
+  title: Нахил плеча
+  description: Керує кутом нахилу плечових швів
