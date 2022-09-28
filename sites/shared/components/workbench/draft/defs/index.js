@@ -45,19 +45,19 @@ const grids = {
           ${style}
         />
       </pattern>
-  `
+  `,
 }
 
 const Defs = (props) => {
   let defs = props.svg.defs
-  if (props.settings.paperless) {
-    defs += grids[props.settings.units || 'metric']
-    for (let p in props.parts) {
+  if (props.settings[0].paperless) {
+    defs += grids[props.settings[0].units || 'metric']
+    for (let p in props.parts[0]) {
       let anchor = { x: 0, y: 0 }
-      if (typeof props.parts[p].points.gridAnchor !== 'undefined')
-        anchor = props.parts[p].points.gridAnchor
-      else if (typeof props.parts[p].points.anchor !== 'undefined')
-        anchor = props.parts[p].points.anchor
+      if (typeof props.parts[0][p].points.gridAnchor !== 'undefined')
+        anchor = props.parts[0][p].points.gridAnchor
+      else if (typeof props.parts[0][p].points.anchor !== 'undefined')
+        anchor = props.parts[0][p].points.anchor
 
       defs += `<pattern id="grid-${p}" key="grid-${p}" xlink:href="#grid" x="${anchor.x}" y="${anchor.y}" />`
     }
