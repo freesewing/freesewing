@@ -501,40 +501,48 @@ function getPluginName(plugin) {
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__addPartPlugins = function (part) {
+  if (!part.plugins) return this
   if (!this.config.plugins) this.config.plugins = {}
   const plugins = { ...this.config.plugins }
-  if (!part.plugins) return this
   // Side-step immutability of the part object to ensure plugins is an array
   let partPlugins = part.plugins
   if (!Array.isArray(partPlugins)) partPlugins = [partPlugins]
-  for (const plugin of partPlugins) plugins[getPluginName(plugin)] = plugin
+  // Go through list of part plugins
   for (let plugin of partPlugins) {
     const name = getPluginName(plugin)
+    this.store.log.debug(
+      plugin.plugin
+        ? `🔌  Resolved __${name}__ conditional plugin in \`${part.name}\``
+        : `🔌  Resolved __${name}__ plugin in \`${part.name}\``
+    )
     // Handle [plugin, data] scenario
     if (Array.isArray(plugin)) {
       const pluginObj = { ...plugin[0], data: plugin[1] }
       plugin = pluginObj
     }
-    if (plugin.plugin)
-      this.store.log.debug(`🔌  Resolved __${name}__ conditional plugin in \`${part.name}\``)
-    else this.store.log.debug(`🔌  Resolved __${name}__ plugin in \`${part.name}\``)
-    // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
-    if (plugin.plugin && plugin.condition) {
-      if (!plugins[name]) {
-        plugins[name] = plugin
-        this.store.log.info(`Plugin \`${name}\` was conditionally added.`)
-      } else if (plugins[name]?.condition) {
-        plugins[name + '_'] = plugin
-        this.store.log.info(
-          `Plugin \`${name}\` was conditionally added again. Renaming to ${name}_.`
-        )
-      } else
-        this.store.log.info(
-          `Plugin \`${name}\` was requested conditionally, but is already added explicitly. Not loading.`
-        )
-    } else {
+    if (!plugins[name]) {
+      // New plugin, so we load it
       plugins[name] = plugin
-      this.store.log.info(`Plugin \`${name}\` was added.`)
+      this.store.log.info(
+        plugin.condition
+          ? `New plugin conditionally added: \`${name}\``
+          : `New plugin added: \`${name}\``
+      )
+    } else {
+      // Existing plugin, takes some more work
+      if (plugin.plugin && plugin.condition) {
+        // Multiple instances of the same plugin with different conditions
+        // will all be added, so we need to change the name.
+        if (plugins[name]?.condition) {
+          plugins[name + '_'] = plugin
+          this.store.log.info(
+            `Plugin \`${name}\` was conditionally added again. Renaming to ${name}_.`
+          )
+        } else
+          this.store.log.info(
+            `Plugin \`${name}\` was requested conditionally, but is already added explicitly. Not loading.`
+          )
+      }
     }
   }
 

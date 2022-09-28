@@ -702,6 +702,9 @@ describe('Pattern', () => {
 
     it('Should check whether created parts get the pattern context', () => {
       let partContext
+      const plugin = {
+        name: 'example',
+      }
       const part = {
         name: 'test',
         draft: ({ Point, paths, Path, part, context }) => {
@@ -710,6 +713,7 @@ describe('Pattern', () => {
 
           return part
         },
+        plugins: [plugin],
       }
       const Pattern = new Design({ parts: [part], data: { name: 'test', version: '1' } })
       const pattern = new Pattern()
