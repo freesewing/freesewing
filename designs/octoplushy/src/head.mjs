@@ -1,3 +1,5 @@
+import { pluginBundle } from '@freesewing/plugin-bundle'
+
 function octoplushyHeadSection(
   partNumber,
   {
@@ -622,10 +624,12 @@ const options = {
 export const headSection1 = {
   name: 'octoplushy.headSection1',
   options,
+  plugins: [ pluginBundle ],
   draft: (params) => octoplushyHeadSection(0, params),
 }
 export const headSection2 = {
   name: 'octoplushy.headSection2',
   options,
+  plugins: [ pluginBundle ],
   draft: (params) => octoplushyHeadSection(1, params),
 }
