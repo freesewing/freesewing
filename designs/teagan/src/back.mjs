@@ -39,8 +39,7 @@ function teaganBack({
     .join(paths.saBase)
     .line(points.cfHem)
     .close()
-    .hide()
-    .attr('class', 'fabric')
+    .setClass('fabric')
 
   // Set store values required to draft sleevecap
   store.set('sleevecapEase', 0)
