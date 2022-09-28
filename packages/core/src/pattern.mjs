@@ -582,8 +582,7 @@ Pattern.prototype.__applySettings = function (sets) {
   if (sets.length === 0) sets.push({}) // Required to load default settings
   this.settings = []
   for (const i in sets) {
-    // Make the user's input immmuatable to avoid weird bugs
-    sets[i] = Object.freeze(sets[i])
+    // Don't mutate the input itself
     const set = { ...sets[i] }
     if (!set.options) set.options = {}
     if (!set.measurements) set.measurements = {}
