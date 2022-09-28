@@ -30,6 +30,7 @@ function ursulaElastic(part) {
     .line(new Point(200,15))
     .line(new Point(200,-10))
     .close()
+    .setClass('hidden')
 
   return part
 }
