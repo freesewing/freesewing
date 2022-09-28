@@ -1,12 +1,12 @@
 ---
-title: HPS to bust
+title: Від плеча до грудей
 ---
 
 <Note>
 
-###### HPS: high point shoulder
+##### Найвища точка плеча
 
-The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
+_Найвища точка плеча_ використовується для зняття декількох вертикальних мірок.
 Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
 
 </Note>
