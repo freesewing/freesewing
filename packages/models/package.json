@@ -35,8 +35,10 @@
     "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
-    "cibuild_step6": "node build.mjs"
+    "cibuild_step6": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step6": "node build.mjs",
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'"
   },
   "peerDependencies": {
     "@freesewing/utils": "^3.0.0-alpha.0"

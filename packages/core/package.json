@@ -44,7 +44,9 @@
     "testci": "mocha tests/*.test.mjs",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "jsdoc": "jsdoc -c jsdoc.json -r src",
-    "cibuild_step0": "node build.mjs"
+    "cibuild_step0": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step0": "node build.mjs"
   },
   "peerDependencies": {},
   "dependencies": {

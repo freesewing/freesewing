@@ -22,13 +22,16 @@
     ".": "./dist/index.mjs"
   },
   "scripts": {
-    "build": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs && cp ../../scripts/banner.mjs ./lib && node build.mjs",
+    "build": "SITE=new-design/shared yarn run i18n-only && cp ../../scripts/banner.mjs ./lib && node build.mjs",
     "clean": "rimraf dist",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "lint": "npx eslint 'lib/*.mjs'",
-    "cibuild_step6": "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs && cp ../../scripts/banner.mjs ./lib && node build.mjs"
+    "i18n-only": "node ../../sites/shared/prebuild/i18n-only.mjs",
+    "wbuild": "set SITE=new-design/shared&& node ../../sites/shared/prebuild/i18n-only.mjs && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE=",
+    "cibuild_step6": "SITE=new-design/shared yarn run i18n-only && cp ../../scripts/banner.mjs ./lib && node build.mjs",
+    "wcibuild_step6": "set SITE=new-design/shared&& node ../../sites/shared/prebuild/i18n-only.mjs && copy ..\\..\\scripts\\banner.mjs .\\lib\\banner.mjs /Y && node build.mjs && set SITE=",
+    "lint": "npx eslint 'lib/*.mjs'"
   },
   "peerDependencies": {},
   "dependencies": {

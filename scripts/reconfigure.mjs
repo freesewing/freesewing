@@ -112,6 +112,7 @@ const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`);
 const buildAllCommand = buildSteps.join(' && ');
 const newRootPkgJson = {...rootPackageJson};
 newRootPkgJson.scripts.buildall = buildAllCommand;
+newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')
 fs.writeFileSync(
   path.join(repo.path, 'package.json'),
   JSON.stringify(newRootPkgJson, null, 2) + '\n'
@@ -228,8 +229,18 @@ function scripts(pkg) {
   // Enforce build order by generating the cibuild_stepX scrips
   for (let step=0; step < buildOrder.length; step++) {
     if (buildOrder[step].indexOf(pkg.name) !== -1) {
-      if (runScripts.prebuild) runScripts[`precibuild_step${step}`] = runScripts.prebuild
-      if (runScripts.build) runScripts[`cibuild_step${step}`] = runScripts.build
+      if (runScripts.prebuild) {
+        runScripts[`precibuild_step${step}`] = runScripts.prebuild
+        if (!runScripts.prewbuild) runScripts.prewbuild = runScripts.prebuild
+      }
+      if (runScripts.build) {
+        runScripts[`cibuild_step${step}`] = runScripts.build
+
+        // add windows scripts
+        if (!runScripts.wbuild) runScripts.wbuild = runScripts.build
+
+        runScripts[`wcibuild_step${step}`] = runScripts.wbuild
+      }
     }
   }
 

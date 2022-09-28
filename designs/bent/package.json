@@ -41,7 +41,9 @@
     "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
-    "cibuild_step4": "node build.mjs"
+    "cibuild_step4": "node build.mjs",
+    "wbuild": "node build.mjs",
+    "wcibuild_step4": "node build.mjs"
   },
   "peerDependencies": {
     "@freesewing/core": "^3.0.0-alpha.0",
