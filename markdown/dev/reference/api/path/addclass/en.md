@@ -4,31 +4,17 @@ title: Path.addClass()
 
 The `Path.addClass()` method adds a CSS class to the path.
 
+## Signature
+
 ```js
 Path path.addClass(string className)
 ```
 
-<Tip | compact>This method is chainable as it returns the `Path` object</Tip>
+<Tip compact>This method is chainable as it returns the `Path` object</Tip>
 
-<Tip>
+## Example
 
-###### This method exists to save you some typing
-
-Note that the two following calls yield the same result:
-
-```js
-path.attr('class', 'fabric')
-path.addClass('fabric')
-```
-
-So the only purpose of this method is to save your some typing.
-
-</Tip>
-
-<Example part="path_addclass">
-Example of the Path.addClass() method
-</Example>
-
+<Example caption="Example of the Path.addClass() method">
 ```js
 ({ Point, points, Path, paths, part }) => {
 
@@ -43,3 +29,15 @@ Example of the Path.addClass() method
   return part
 }
 ```
+</Example>
+
+## Notes
+
+The main purpose of this method is to save your some typing,
+as the two following calls yield the same result:
+
+```js
+path.attr('class', 'fabric')
+path.addClass('fabric')
+```
+

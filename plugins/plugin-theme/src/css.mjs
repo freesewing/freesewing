@@ -1,4 +1,4 @@
-export const paperless = `
+export const paperlessStyle = `
 /* Paperless grid */
 svg.freesewing path.grid {
   fill: none;
@@ -26,7 +26,7 @@ svg.freesewing path.gridline-xs {
 svg.freesewing path.gridbox {
   fill: url(#grid);
 }`
-export const sample = `
+export const sampleStyle = `
 /* Sample classes */
 svg.freesewing path.sample {
   stroke-width: 0.75

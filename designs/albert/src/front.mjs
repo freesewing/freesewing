@@ -6,52 +6,52 @@ const crossBox = {
   name: 'crossbox',
   version,
   macros: {
-    crossBox: function (so) {
-      let id = this.getId()
+    crossBox: function (so, { points, Point, paths, Path, getId }) {
+      let id = getId()
       let shiftFraction = 0.1
-      this.points[id + '_boxTopLeft'] = so.from.copy()
-      this.points[id + '_boxBottomRight'] = so.to.copy()
-      this.points[id + '_boxTopRight'] = new this.Point(so.to.x, so.from.y)
-      this.points[id + '_boxBottomLeft'] = new this.Point(so.from.x, so.to.y)
+      points[id + '_boxTopLeft'] = so.from.copy()
+      points[id + '_boxBottomRight'] = so.to.copy()
+      points[id + '_boxTopRight'] = new Point(so.to.x, so.from.y)
+      points[id + '_boxBottomLeft'] = new Point(so.from.x, so.to.y)
 
-      this.points[id + '_topCrossTL'] = this.points[id + '_boxTopLeft'].shiftFractionTowards(
-        this.points[id + '_boxBottomRight'],
+      points[id + '_topCrossTL'] = points[id + '_boxTopLeft'].shiftFractionTowards(
+        points[id + '_boxBottomRight'],
         shiftFraction
       )
-      this.points[id + '_topCrossTR'] = this.points[id + '_boxTopRight'].shiftFractionTowards(
-        this.points[id + '_boxBottomLeft'],
+      points[id + '_topCrossTR'] = points[id + '_boxTopRight'].shiftFractionTowards(
+        points[id + '_boxBottomLeft'],
         shiftFraction
       )
-      this.points[id + '_topCrossBL'] = this.points[id + '_boxBottomLeft'].shiftFractionTowards(
-        this.points[id + '_boxTopRight'],
+      points[id + '_topCrossBL'] = points[id + '_boxBottomLeft'].shiftFractionTowards(
+        points[id + '_boxTopRight'],
         shiftFraction
       )
-      this.points[id + '_topCrossBR'] = this.points[id + '_boxBottomRight'].shiftFractionTowards(
-        this.points[id + '_boxTopLeft'],
+      points[id + '_topCrossBR'] = points[id + '_boxBottomRight'].shiftFractionTowards(
+        points[id + '_boxTopLeft'],
         shiftFraction
       )
 
-      this.paths[id + 'crossBox'] = new this.Path()
-        .move(this.points[id + '_boxTopLeft'])
-        .line(this.points[id + '_boxTopRight'])
-        .line(this.points[id + '_boxBottomRight'])
-        .line(this.points[id + '_boxBottomLeft'])
-        .line(this.points[id + '_boxTopLeft'])
+      paths[id + 'crossBox'] = new Path()
+        .move(points[id + '_boxTopLeft'])
+        .line(points[id + '_boxTopRight'])
+        .line(points[id + '_boxBottomRight'])
+        .line(points[id + '_boxBottomLeft'])
+        .line(points[id + '_boxTopLeft'])
         .close()
         .attr('class', 'lining dotted stroke-sm')
-      this.paths[id + '_topCross'] = new this.Path()
-        .move(this.points[id + '_topCrossTL'])
-        .line(this.points[id + '_topCrossBR'])
-        .line(this.points[id + '_topCrossTR'])
-        .line(this.points[id + '_topCrossBL'])
-        .line(this.points[id + '_topCrossTL'])
-        .line(this.points[id + '_topCrossTR'])
-        .move(this.points[id + '_topCrossBR'])
-        .line(this.points[id + '_topCrossBL'])
+      paths[id + '_topCross'] = new Path()
+        .move(points[id + '_topCrossTL'])
+        .line(points[id + '_topCrossBR'])
+        .line(points[id + '_topCrossTR'])
+        .line(points[id + '_topCrossBL'])
+        .line(points[id + '_topCrossTL'])
+        .line(points[id + '_topCrossTR'])
+        .move(points[id + '_topCrossBR'])
+        .line(points[id + '_topCrossBL'])
         .attr('class', 'lining dotted stroke-sm')
       if (typeof so.text === 'string') {
-        this.points.textAnchor = this.points[id + '_boxTopLeft']
-          .shiftFractionTowards(this.points[id + '_boxBottomRight'], 0.5)
+        points.textAnchor = points[id + '_boxTopLeft']
+          .shiftFractionTowards(points[id + '_boxBottomRight'], 0.5)
           .attr('data-text', so.text)
           .attr('data-text-class', 'center')
       }

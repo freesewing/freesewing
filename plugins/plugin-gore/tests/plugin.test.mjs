@@ -8,7 +8,7 @@ describe('Gore Plugin Tests', () => {
   it('Should create a default gore', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -17,12 +17,15 @@ describe('Gore Plugin Tests', () => {
           extraLength: 0,
           prefix: 'gore',
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts.test.points
+    let c = pattern.parts[0].test.points
     expect(round(c.gorep1.y)).to.equal(50)
     expect(round(c.gorep2.x)).to.equal(50)
     expect(round(c.gorep2.y)).to.equal(30.37)
@@ -33,7 +36,7 @@ describe('Gore Plugin Tests', () => {
   it('Should use a configurable number of gores', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -42,12 +45,15 @@ describe('Gore Plugin Tests', () => {
           extraLength: 0,
           prefix: 'gore',
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts.test.points
+    let c = pattern.parts[0].test.points
     expect(round(c.gorep1.x)).to.equal(89.27)
     expect(round(c.gorep1.y)).to.equal(50)
     expect(round(c.gorep2.x)).to.equal(50)
@@ -59,7 +65,7 @@ describe('Gore Plugin Tests', () => {
   it('Should use a configurable extra length', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -68,12 +74,15 @@ describe('Gore Plugin Tests', () => {
           extraLength: 20,
           prefix: 'gore',
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts.test.points
+    let c = pattern.parts[0].test.points
     expect(round(c.gorep1.x)).to.equal(109.27)
     expect(round(c.gorep1.y)).to.equal(50)
     expect(round(c.gorep2.x)).to.equal(70)
@@ -85,7 +94,7 @@ describe('Gore Plugin Tests', () => {
   it('Should use a configurable radius', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -94,12 +103,15 @@ describe('Gore Plugin Tests', () => {
           extraLength: 0,
           prefix: 'gore',
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts.test.points
+    let c = pattern.parts[0].test.points
     expect(round(c.gorep1.x)).to.equal(97.12)
     expect(round(c.gorep1.y)).to.equal(50)
     expect(round(c.gorep2.x)).to.equal(50)
@@ -111,7 +123,7 @@ describe('Gore Plugin Tests', () => {
   it('Should generate a seam path', () => {
     const part = {
       name: 'test',
-      draft: ({ Point, points, macro }) => {
+      draft: ({ Point, points, macro, part }) => {
         points.anchorPoint = new Point(50, 50)
         macro('gore', {
           from: points.anchorPoint,
@@ -120,12 +132,15 @@ describe('Gore Plugin Tests', () => {
           extraLength: 0,
           prefix: 'gore',
         })
+
+        return part
       },
+      plugins: [plugin],
     }
-    const Test = new Design({ plugins: [plugin], parts: [part] })
+    const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts.test.paths.goreseam.ops
+    let c = pattern.parts[0].test.paths.goreseam.ops
     expect(round(c[1].to.x)).to.equal(89.27)
     expect(round(c[1].to.y)).to.equal(50)
     expect(round(c[2].to.x)).to.equal(50)

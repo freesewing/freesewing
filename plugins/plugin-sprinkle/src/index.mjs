@@ -4,11 +4,11 @@ export const plugin = {
   name,
   version,
   macros: {
-    sprinkle: function (so) {
+    sprinkle: function (so, { snippets, Snippet, points }) {
       for (let pid of so.on) {
-        this.snippets[pid + '-' + so.snippet] = new this.Snippet(so.snippet, this.points[pid])
-        if (so.scale) this.snippets[pid + '-' + so.snippet].attr('data-scale', so.scale)
-        if (so.rotate) this.snippets[pid + '-' + so.snippet].attr('data-rotate', so.rotate)
+        snippets[pid + '-' + so.snippet] = new Snippet(so.snippet, points[pid])
+        if (so.scale) snippets[pid + '-' + so.snippet].attr('data-scale', so.scale)
+        if (so.rotate) snippets[pid + '-' + so.snippet].attr('data-rotate', so.rotate)
       }
     },
   },

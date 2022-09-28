@@ -1,5 +1,5 @@
 import { name, version } from '../data.mjs'
-import { sample, paperless, buildStylesheet } from './css.mjs'
+import { sampleStyle, paperlessStyle, buildStylesheet } from './css.mjs'
 
 const grid = {
   metric: `
@@ -28,16 +28,18 @@ export const plugin = {
       const current = svg.attributes.get('class')
       if (!current || current.indexOf('freesewing') !== -1) {
         svg.attributes.set('class', 'freesewing')
-        svg.style += sample
-        svg.style += paperless
+        svg.style += sampleStyle
+        svg.style += paperlessStyle
         svg.style += buildStylesheet(svg.pattern.settings.scale, data.stripped)
-        // FIXME : Re-implement this for v3
-        /*
-        if (svg.pattern.settings[0].paperless) {
-          svg.pattern.settings.units === 'imperial'
+        let paperless = false
+        for (const set of svg.pattern.settings) {
+          if (set.paperless) paperless = true
+        }
+        if (paperless) {
+          svg.pattern.settings[0].units === 'imperial'
             ? (svg.defs += grid.imperial)
             : (svg.defs += grid.metric)
-          for (const key in svg.pattern.parts) {
+          for (const key in svg.pattern.parts[0]) {
             const part = svg.pattern.parts[key]
             if (!part.hidden && svg.pattern.__needs(key)) {
               let anchor = new svg.pattern.Point(0, 0)
@@ -57,7 +59,6 @@ export const plugin = {
             }
           }
         }
-        */
       }
     },
   },

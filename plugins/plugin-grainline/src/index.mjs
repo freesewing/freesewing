@@ -19,19 +19,18 @@ export const plugin = {
     },
   },
   macros: {
-    grainline: function (so = {}) {
+    grainline: function (so = {}, { points, paths, Path, complete, setGrain }) {
       if (so === false) {
-        delete this.points.grainlineFrom
-        delete this.points.grainlineTo
-        delete this.paths.grainline
-        this.setGrain(90) // Restoring default
+        delete points.grainlineFrom
+        delete points.grainlineTo
+        delete paths.grainline
+        setGrain(90) // Restoring default
         return true
       }
       so = {
         ...dflts,
         ...so,
       }
-      const { points, complete, setGrain } = this.shorthand()
       // setGrain relies on plugin-cutlist
       if (typeof setGrain === 'function') {
         setGrain(so.from.angle(so.to))
@@ -39,7 +38,7 @@ export const plugin = {
       if (complete) {
         points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
         points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
-        this.paths.grainline = new this.Path()
+        paths.grainline = new Path()
           .move(points.grainlineFrom)
           .line(points.grainlineTo)
           .attr('class', 'note')

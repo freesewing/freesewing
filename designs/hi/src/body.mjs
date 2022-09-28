@@ -409,7 +409,6 @@ function draftHiBody({
     .curve(points.body02cp1, points.body03cp2, points.body03)
     .join(paths.allButDart)
     .close()
-    .hide()
 
   let gillPath = new Path()
     .move(points.body17)

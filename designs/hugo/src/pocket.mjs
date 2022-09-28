@@ -101,6 +101,6 @@ function hugoPocket({
 export const pocket = {
   name: 'hugo.pocket',
   from: front,
-  hideDependencies: true,
+  // hideDependencies: true,
   draft: hugoPocket,
 }

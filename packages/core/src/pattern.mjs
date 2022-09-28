@@ -149,8 +149,9 @@ Pattern.prototype.draft = function () {
           this.setStores[set].log.error(
             `Unable to draft pattern part __${partName}__. Part.draft() is not callable`
           )
-        this.parts[set][partName].hidden =
-          this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
+        // FIXME: THis won't work not that this is immutable
+        // But is it still needed?
+        // this.parts[set][partName].hidden === true ? true : !this.__wants(partName, set)
       } else {
         this.setStores[set].log.debug(
           `Part \`${partName}\` is not needed. Skipping draft and setting hidden to \`true\``
@@ -180,6 +181,7 @@ Pattern.prototype.getConfig = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.getRenderProps = function () {
+  this.store.log.info('Gathering render props')
   // Run pre-render hook
   let svg = new Svg(this)
   svg.hooks = this.hooks
@@ -193,15 +195,6 @@ Pattern.prototype.getRenderProps = function () {
   props.height = this.height
   props.autoLayout = this.autoLayout
   props.settings = this.settings
-  props.logs = {
-    pattern: this.store.logs,
-    sets: this.setStores.map((store) => ({
-      debug: store.logs.debug,
-      info: store.logs.info,
-      error: store.logs.error,
-      warning: store.logs.warning,
-    })),
-  }
   props.parts = []
   for (const set of this.parts) {
     const setParts = {}
@@ -211,6 +204,10 @@ Pattern.prototype.getRenderProps = function () {
           ...set[p].asProps(),
           store: this.setStores[set[p].set],
         }
+      } else if (this.setStores[set?.set]) {
+        this.setStores[set.set].log.info(
+          `Part${p} is hidden in set ${set.set}. Not adding to render props`
+        )
       }
     }
     props.parts.push(setParts)
@@ -219,7 +216,16 @@ Pattern.prototype.getRenderProps = function () {
   for (let s in this.stacks) {
     if (!this.__isStackHidden(s)) {
       props.stacks[s] = this.stacks[s].asProps()
-    }
+    } else this.store.log.info(`Stack ${s} is hidden. Skipping in render props.`)
+  }
+  props.logs = {
+    pattern: this.store.logs,
+    sets: this.setStores.map((store) => ({
+      debug: store.logs.debug,
+      info: store.logs.info,
+      error: store.logs.error,
+      warning: store.logs.warning,
+    })),
   }
 
   return props
@@ -500,40 +506,48 @@ function getPluginName(plugin) {
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__addPartPlugins = function (part) {
+  if (!part.plugins) return this
   if (!this.config.plugins) this.config.plugins = {}
   const plugins = { ...this.config.plugins }
-  if (!part.plugins) return this
   // Side-step immutability of the part object to ensure plugins is an array
   let partPlugins = part.plugins
   if (!Array.isArray(partPlugins)) partPlugins = [partPlugins]
-  for (const plugin of partPlugins) plugins[getPluginName(plugin)] = plugin
+  // Go through list of part plugins
   for (let plugin of partPlugins) {
     const name = getPluginName(plugin)
+    this.store.log.debug(
+      plugin.plugin
+        ? `🔌  Resolved __${name}__ conditional plugin in \`${part.name}\``
+        : `🔌  Resolved __${name}__ plugin in \`${part.name}\``
+    )
     // Handle [plugin, data] scenario
     if (Array.isArray(plugin)) {
       const pluginObj = { ...plugin[0], data: plugin[1] }
       plugin = pluginObj
     }
-    if (plugin.plugin)
-      this.store.log.debug(`🔌  Resolved __${name}__ conditional plugin in \`${part.name}\``)
-    else this.store.log.debug(`🔌  Resolved __${name}__ plugin in \`${part.name}\``)
-    // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
-    if (plugin.plugin && plugin.condition) {
-      if (!plugins[name]) {
-        plugins[name] = plugin
-        this.store.log.info(`Plugin \`${name}\` was conditionally added.`)
-      } else if (plugins[name]?.condition) {
-        plugins[name + '_'] = plugin
-        this.store.log.info(
-          `Plugin \`${name}\` was conditionally added again. Renaming to ${name}_.`
-        )
-      } else
-        this.store.log.info(
-          `Plugin \`${name}\` was requested conditionally, but is already added explicitly. Not loading.`
-        )
-    } else {
+    if (!plugins[name]) {
+      // New plugin, so we load it
       plugins[name] = plugin
-      this.store.log.info(`Plugin \`${name}\` was added.`)
+      this.store.log.info(
+        plugin.condition
+          ? `New plugin conditionally added: \`${name}\``
+          : `New plugin added: \`${name}\``
+      )
+    } else {
+      // Existing plugin, takes some more work
+      if (plugin.plugin && plugin.condition) {
+        // Multiple instances of the same plugin with different conditions
+        // will all be added, so we need to change the name.
+        if (plugins[name]?.condition) {
+          plugins[name + '_'] = plugin
+          this.store.log.info(
+            `Plugin \`${name}\` was conditionally added again. Renaming to ${name}_.`
+          )
+        } else
+          this.store.log.info(
+            `Plugin \`${name}\` was requested conditionally, but is already added explicitly. Not loading.`
+          )
+      }
     }
   }
 
@@ -697,6 +711,7 @@ Pattern.prototype.__isPartHidden = function (partName) {
   if (this.__designParts?.[partName]?.hideAll) return true
   if (this.__mutated.partHide?.[partName]) return true
   if (this.__mutated.partHideAll?.[partName]) return true
+  if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
 
   return false
 }
@@ -722,6 +737,7 @@ Pattern.prototype.__isStackHidden = function (stackName) {
     if (this.__designParts?.[partName]?.hideAll) return true
     if (this.__mutated.partHide?.[partName]) return true
     if (this.__mutated.partHideAll?.[partName]) return true
+    if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
   }
 
   return false
@@ -1230,7 +1246,7 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
     if (part.hideAll) this.__mutated.partHide[part.name] = true
     // Inject (from)
     if (part.from) {
-      if (part.hideDependencies || part.hideAll) {
+      if (part.hideDependencies || this.__mutated.partHideAll[name]) {
         // Don't mutate the part, keep this info in the pattern object
         this.__mutated.partHide[part.from.name] = true
         this.__mutated.partHideAll[part.from.name] = true
@@ -1249,9 +1265,6 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
           this.__addDependency(name, part, dep)
         }
       } else {
-        if (part.hideDependencies) {
-          this.__mutated.partHide[part.after.name] = true
-        }
         this.__mutated.partDistance[part.after.name] = distance
         this.__designParts[part.after.name] = part.after
         this.__addDependency(name, part, part.after)

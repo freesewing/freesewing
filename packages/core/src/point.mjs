@@ -50,6 +50,7 @@ Point.prototype.addText = function (text = '', className = false) {
 
   return this.__check()
 }
+
 /**
  * Returns the angle between this Point and that Point
  *
@@ -202,7 +203,7 @@ Point.prototype.setCircle = function (radius = false, className = false) {
 }
 
 /**
- * A chainable way to add text to a Point
+ * A chainable way to set text on a Point
  *
  * @param {string} text - The text to add to the Point
  * @param {string} className - The CSS classes to apply to the text

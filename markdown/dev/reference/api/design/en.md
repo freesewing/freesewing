@@ -3,14 +3,21 @@ title: Design
 order: 10
 ---
 
-The `Design` named export in FreeSewing's core library serves a single purpose:
-To create new pattern designs.
+The `Design` named export in FreeSewing's core library is a contructor that
+creates new pattern designs.
 
-## Design constructor
+## Signature
 
 ```js
-import { Design } from "@freesewing/core"
+Pattern Design({
+  array parts,
+  object data
+})
+```
 
+## Example
+
+```js
 const Sorcha = new Design({ 
   // design configuration here
 })
@@ -21,9 +28,8 @@ It takes a single argument, an object holding the design's configuration.
 
 ## Design configuration
 
-
 Since a design's configuration is managed at the part level,
-the Design constructor only expects a `parts` attribute that should
+the Design configuration object only requires a `parts` property that should
 hold an array of parts to include in the Design.
 
 ```js
@@ -44,14 +50,29 @@ to [the Store](/reference/api/store).
 const Sorcha = new Design({ 
   parts: [ front, back, sleeve ],
   data: {
-    // Your custom data here
+    version: 3,
+    price: 12,
+    currency: 'euro'
   }
 })
 ```
 
-<Tip>
+## Notes
 
-This Design constructor is a _super-constructor_. 
+
+The Design constructor is a _super-constructor_. 
 It will return a constructor method that will a pattern based on your design.
 
-</Tip>
+## Properties
+
+In addition to the returned constructor method, an instantiated Design object
+also provides the following properties:
+
+### Design.designConfig
+
+This holds the design configuration as passed to the Design constructor.
+
+### Design.patternConfig
+
+Holds the resolved pattern configuration based on the configuration passed to the Design constructor.
+

@@ -89,9 +89,7 @@ function hugoFront({
     .line(points.raglanTipFront)
     .join(neckOpeningParts[0].reverse())
   paths.saBase.hide()
-  paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
-  // FIXME: This pocket path is not getting set on the paths object
-  // It's something to do with the paths proxy which -- I assume -- is proxying the wrong object?
+  paths.seam = paths.saBase.clone().unhide().close().attr('class', 'fabric')
   paths.pocket = new Path()
     .move(points.pocketHem)
     .line(points.pocketTip)

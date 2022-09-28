@@ -1,13 +1,13 @@
 ![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/examples"
-  title="@freesewing/examples on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/examples.svg"
-  alt="@freesewing/examples on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/unice"
+  title="@freesewing/unice on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/unice.svg"
+  alt="@freesewing/unice on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/examples.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/unice.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -15,10 +15,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aexamples"
-  title="Open issues tagged pkg:examples"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:examples.svg?label=Issues"
-  alt="Open issues tagged pkg:examples"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Aunice"
+  title="Open issues tagged pkg:unice"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:unice.svg?label=Issues"
+  alt="Open issues tagged pkg:unice"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
@@ -46,9 +46,9 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/examples
+# @freesewing/unice
 
-A FreeSewing pattern holding examples for our documentation
+A FreeSewing pattern for a basic, highly-customizable underwear pattern
 
 
 
@@ -63,7 +63,7 @@ A FreeSewing pattern holding examples for our documentation
 
 This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
 
-This folder holds: @freesewing/examples
+This folder holds: @freesewing/unice
 
 If you're not entirely sure what to do or how to start, type this command:
 
