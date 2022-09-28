@@ -13,8 +13,6 @@ const expect = chai.expect
  * @param boolean log: Set to true to log errors
  */
 export const testPatternDrafting = (Pattern, log = false) => {
-  const pattern = new Pattern()
-  const config = Pattern.patternConfig
   const design = getShortName(Pattern.designConfig.data.name)
   const family = getFamily(design)
 
@@ -26,8 +24,8 @@ export const testPatternDrafting = (Pattern, log = false) => {
         console.log(pattern.store.logs)
         console.log(pattern.setStores[0].logs)
       }
-      if (pattern.store.logs.error.length < 1) return true
-      if (pattern.setStores[0].logs.error.length < 1) return true
+      if (pattern.store.logs.error.length < 1 && pattern.setStores[0].logs.error.length < 1)
+        return true
       return false
     } catch (err) {
       if (log) console.log(err)
