@@ -10,14 +10,7 @@ import { hoodCenter } from './hoodcenter.mjs'
 // Setup our new design
 const Yuri = new Design({
   data,
-  parts: [
-    back,
-    front,
-    sleeve,
-    gusset,
-    hoodSide,
-    //  hoodCenter
-  ],
+  parts: [back, front, sleeve, gusset, hoodSide, hoodCenter],
 })
 
 // Named exports
