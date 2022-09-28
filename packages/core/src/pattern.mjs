@@ -181,6 +181,7 @@ Pattern.prototype.getConfig = function () {
  * @return {object} this - The Pattern instance
  */
 Pattern.prototype.getRenderProps = function () {
+  this.store.log.info('Gathering render props')
   // Run pre-render hook
   let svg = new Svg(this)
   svg.hooks = this.hooks
@@ -194,15 +195,6 @@ Pattern.prototype.getRenderProps = function () {
   props.height = this.height
   props.autoLayout = this.autoLayout
   props.settings = this.settings
-  props.logs = {
-    pattern: this.store.logs,
-    sets: this.setStores.map((store) => ({
-      debug: store.logs.debug,
-      info: store.logs.info,
-      error: store.logs.error,
-      warning: store.logs.warning,
-    })),
-  }
   props.parts = []
   for (const set of this.parts) {
     const setParts = {}
@@ -212,6 +204,10 @@ Pattern.prototype.getRenderProps = function () {
           ...set[p].asProps(),
           store: this.setStores[set[p].set],
         }
+      } else if (this.setStores[set?.set]) {
+        this.setStores[set.set].log.info(
+          `Part${p} is hidden in set ${set.set}. Not adding to render props`
+        )
       }
     }
     props.parts.push(setParts)
@@ -220,7 +216,16 @@ Pattern.prototype.getRenderProps = function () {
   for (let s in this.stacks) {
     if (!this.__isStackHidden(s)) {
       props.stacks[s] = this.stacks[s].asProps()
-    }
+    } else this.store.log.info(`Stack ${s} is hidden. Skipping in render props.`)
+  }
+  props.logs = {
+    pattern: this.store.logs,
+    sets: this.setStores.map((store) => ({
+      debug: store.logs.debug,
+      info: store.logs.info,
+      error: store.logs.error,
+      warning: store.logs.warning,
+    })),
   }
 
   return props
@@ -706,6 +711,7 @@ Pattern.prototype.__isPartHidden = function (partName) {
   if (this.__designParts?.[partName]?.hideAll) return true
   if (this.__mutated.partHide?.[partName]) return true
   if (this.__mutated.partHideAll?.[partName]) return true
+  if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
 
   return false
 }
@@ -731,6 +737,7 @@ Pattern.prototype.__isStackHidden = function (stackName) {
     if (this.__designParts?.[partName]?.hideAll) return true
     if (this.__mutated.partHide?.[partName]) return true
     if (this.__mutated.partHideAll?.[partName]) return true
+    if (this.parts?.[this.activeSet]?.[partName]?.hidden) return true
   }
 
   return false
@@ -1239,7 +1246,7 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
     if (part.hideAll) this.__mutated.partHide[part.name] = true
     // Inject (from)
     if (part.from) {
-      if (part.hideDependencies || part.hideAll) {
+      if (part.hideDependencies) {
         // Don't mutate the part, keep this info in the pattern object
         this.__mutated.partHide[part.from.name] = true
         this.__mutated.partHideAll[part.from.name] = true
@@ -1258,9 +1265,6 @@ Pattern.prototype.__resolveParts = function (count = 0, distance = 0) {
           this.__addDependency(name, part, dep)
         }
       } else {
-        if (part.hideDependencies) {
-          this.__mutated.partHide[part.after.name] = true
-        }
         this.__mutated.partDistance[part.after.name] = distance
         this.__designParts[part.after.name] = part.after
         this.__addDependency(name, part, part.after)
