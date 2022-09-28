@@ -85,7 +85,7 @@
     "rimraf": "2.6.2",
     "sharp": "^0.31.0",
     "tlds": "^1.221.1",
-    "yaml": "^1.10.2"
+    "yaml": "^2.1.1"
   },
   "devDependencies": {
     "backpack-core": "0.8.4",
