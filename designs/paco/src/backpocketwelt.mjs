@@ -12,13 +12,17 @@ function pacoBackPocketWelt({
   paperless,
   macro,
   part,
+  hide,
 }) {
-  // Don't bother of we're not drafting back pockets
-  if (!options.backPockets) return part.hide()
-
-  // Clean up
+  // Clean up before returning.
+  // See https://github.com/freesewing/freesewing/issues/2878
   for (const path in paths) delete paths[path]
   for (const snippet in snippets) delete snippets[snippet]
+  macro('scalebox', false)
+  macro('title', false)
+
+  // Don't bother of we're not drafting back pockets
+  if (!options.backPockets) return hide()
 
   let welt = points.pocketLeft.dist(points.pocketRight) * options.weltFactor
   points.topLeft = new Point(points.pocketBagWaistLeft.x, points.pocketLeft.y)
