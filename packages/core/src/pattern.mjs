@@ -467,7 +467,7 @@ Pattern.prototype.__addPartOptions = function (part) {
         this.__mutated.optionDistance[optionName] = this.__mutated.partDistance?.[part.name] || 0
         // Keep design parts immutable in the pattern or risk subtle bugs
         this.config.options[optionName] = Object.freeze(part.options[optionName])
-        this.store.log.debug(`🔵  __${optionName}__ option loaded from \`${part.name}\``)
+        this.store.log.debug(`🔵  __${optionName}__ option loaded from part \`${part.name}\``)
       } else if (
         this.__mutated.optionDistance[optionName] > this.__mutated.partDistance[part.name]
       ) {
@@ -850,7 +850,7 @@ Pattern.prototype.__loadOptionDefaults = function () {
  * Loads a plugin
  *
  * @private
- * @param {object} plugin - The plugin object
+ * @param {object} plugin - The plugin object, or an object with `plugin` and `condition` keys
  * @param {object} data - Any plugin data to load
  * @return {Pattern} this - The Pattern instance
  */
@@ -1393,7 +1393,7 @@ Pattern.prototype.__snappedPercentageOption = function (optionName, set) {
  * Loads a conditional plugin
  *
  * @private
- * @param {object} plugin - The plugin object
+ * @param {object} plugin - An object with `plugin` and `condition` keys
  * @return {Pattern} this - The Pattern instance
  */
 Pattern.prototype.__useIf = function (plugin) {
