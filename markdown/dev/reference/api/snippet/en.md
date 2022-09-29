@@ -1,6 +1,5 @@
 ---
 title: Snippet
-order: 35
 ---
 
 A Snippet is a reuseable bit of markup for your pattern. They are added to the

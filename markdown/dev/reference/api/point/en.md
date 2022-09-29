@@ -1,6 +1,5 @@
 ---
 title: Point
-order: 25
 ---
 
 A Point object represents a point on a 2D plane with an X and Y axis.

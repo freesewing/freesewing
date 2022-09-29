@@ -1,6 +1,5 @@
 ---
 title: Design 
-order: 10
 ---
 
 The `Design` named export in FreeSewing's core library is a contructor that

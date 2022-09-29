@@ -1,6 +1,5 @@
 ---
 title: Part
-order: 15
 ---
 
 A `Part` in FreeSewing holds all data, logic, and configuration of a Design.

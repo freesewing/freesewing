@@ -1,7 +1,5 @@
 ---
 title: Svg
-components: true
-order: 80
 ---
 
 The `Svg` object in FreeSewing's core library represents an SVG document.

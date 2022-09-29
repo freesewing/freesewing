@@ -1,7 +1,5 @@
 ---
-title: "Store"
-components: true
-order: 70
+title: Store
 ---
 
 The **Store** object holds a simple key/value store with
