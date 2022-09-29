@@ -34,9 +34,6 @@ ${colorDot(dot)} }`
 // Supported layout engines
 const engines = ['circo', 'dot', 'fdp', 'neato', 'osage', 'twopi']
 
-// Initialize viz library
-const viz = new Viz({ Module, render })
-
 const Dot = ({ children, caption, eng = 'dot' }) => {
   // State and effect are needed to run async code as this
   // library always returns a promise
@@ -68,6 +65,9 @@ const Dot = ({ children, caption, eng = 'dot' }) => {
       }
     })
   }, [dot, rough, plain, engine, viz])
+
+  // Initialize viz library
+  const viz = new Viz({ Module, render })
 
   const togglePlain = () => {
     setRough(0)
