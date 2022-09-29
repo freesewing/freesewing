@@ -8,7 +8,7 @@ import Stack from '../../workbench/draft/stack'
 import { useGist } from 'shared/hooks/useGist'
 
 // Get code from children
-const asText = (reactEl) => {
+export const asText = (reactEl) => {
   if (typeof reactEl.props.children === 'string') return reactEl.props.children
   if (Array.isArray(reactEl.props.children)) {
     return reactEl.props.children.map((el) => (typeof el === 'string' ? el : asText(el))).join('')
