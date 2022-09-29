@@ -19,7 +19,7 @@ Point point.attr(
 If the third parameter is set to `true` it will call [`this.attributes.set()`](/reference/api/attributes/set/) instead, thereby overwriting the value of the attribute.
 
 
-<Tip compact>This method is chainable as it returns the `Path` object</Tip>
+<Tip compact>This method is chainable as it returns the `Point` object</Tip>
 
 ## Example
 
