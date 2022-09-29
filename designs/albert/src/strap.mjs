@@ -31,7 +31,7 @@ export const strap = {
     */
     let apronWidth = measurements.waist * (1 - options.backOpening)
     let backOpening = apronWidth - Math.max(measurements.hips, measurements.waist)
-    let hemWidth = 3 * sa
+    let hemWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
 
     let hSpan = backOpening / 2 + bibWidth / 2
     let vSpan =
