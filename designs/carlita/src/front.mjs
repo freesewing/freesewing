@@ -505,7 +505,7 @@ export const front = {
   measurements: ['highBust', 'bustSpan', 'hpsToBust'],
   plugins: [pluginBust],
   options: {
-    draftForHighBust: { bool: true, hide: () => true },
+    draftForHighBust: true,
     contour: { pct: 50, min: 25, max: 75, menu: 'advanced' },
   },
   draft: draftCarlitaFront,
