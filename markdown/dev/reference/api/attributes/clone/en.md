@@ -1,19 +1,23 @@
 ---
-title: clone()
+title: Attributes.clone()
 ---
+
+The `Attributes.clone()` method returns a new Attributes object that is a deep
+copy of this one.
+
+## Signature
 
 ```js
 Attributes attributes.clone()
 ```
 
-Returns a new Attributes object that is a deep copy of this one.
+## Example
 
 ```js
-let { Path, paths } = part.shorthand();
+const attr = new Attributes()
+  .add('class', 'classA')
+  .add('class', 'classB')
 
-paths.demo = new Path()
-  .attr('class', 'classA')
-  .attr('class', 'classB');
-
-paths.clone = paths.demo.clone()
+const cloned = attr.clone()
 ```
+

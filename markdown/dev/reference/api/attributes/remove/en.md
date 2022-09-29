@@ -1,22 +1,23 @@
 ---
-title: remove()
+title: Attributes.remove()
 ---
+
+The `Attributes.remove()` method removes the attribute values under key and
+returns the Attributes object.
+
+## Signature
 
 ```js
 Attributes attributes.remove(string key)
 ```
 
-Removes the attribute values under key and returns the Attributes object.
+## Example
 
 ```js
-let { Path, paths } = part.shorthand();
+const attr = new Attributes()
+  .add('class', 'classA')
+  .add('class', 'classB')
+  .remove('class')
 
-paths.demo = new Path()
-  .attr('class', 'classA')
-  .attr('class', 'classB');
-
-let class = paths.example.attributes
-  .remove()
-  .get('class'); 
-// class now holds: false
+// attr holds no data
 ```
