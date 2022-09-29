@@ -11,6 +11,8 @@ import { title } from './title.mjs'
 import { scalebox } from './scalebox.mjs'
 import { textSize } from './textsize.mjs'
 import { bartack } from './bartack.mjs'
+import { dimension } from './dimension.mjs'
+import { sa } from './sa.mjs'
 
 // Setup our new design
 const Legend = new Design({
@@ -31,6 +33,8 @@ const Legend = new Design({
     scalebox,
     textSize,
     bartack,
+    dimension,
+    sa,
   ],
 })
 
@@ -51,5 +55,7 @@ export {
   scalebox,
   textSize,
   bartack,
+  dimension,
+  sa,
   Legend,
 }
