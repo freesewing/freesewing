@@ -15,6 +15,8 @@ Point point.setText(
 )
 ```
 
+<Tip compact>This method is chainable as it returns the `Point` object</Tip>
+
 ## Example
 
 <Example caption="Examples of Point.setText(), compare this to [Point.setText](/reference/api/point/settext)">

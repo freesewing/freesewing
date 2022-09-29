@@ -21,6 +21,8 @@ Point point.setCircle(
 )
 ```
 
+<Tip compact>This method is chainable as it returns the `Point` object</Tip>
+
 ## Example
 
 <Example caption="Examples of Point.setCircle(), compare this to [Point.addCircle](/reference/api/point/addcircle)">
