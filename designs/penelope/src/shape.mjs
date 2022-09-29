@@ -1,14 +1,14 @@
 import { addDartToCurve, dartCalc } from './utils.mjs'
 
 export const measurements = ['waist', 'seat', 'waistToHips', 'waistToSeat', 'waistToKnee']
+export const optionalMeasurements = ['waistBack', 'seatBack']
 export const waistEase = { pct: 1, min: 0, max: 8, menu: 'fit' }
 export const options = {
-  // FIXME: All of these constants mean this pattern won't scale properly :(
-  dartMaximumDifference: 300,
-  dartMinimumDifference: 180,
-  dartMinimumWidth: 6,
+  dartMaximumDifference: 0.344,
+  dartMinimumDifference: 0.2,
+  dartMinimumWidth: 0.006888,
   dartSideMinimum: 10,
-  dartBackControl1: 100,
+  dartBackControl1: 0.114,
   dartBackControl2: 5,
   dartBackControl3: 4,
   curvePlacement: 2.4,
@@ -19,6 +19,10 @@ export const options = {
   sideSeamShiftPercentage: 0.006,
   backVentWidth: 0.1,
   paperlessOffset: 15,
+  curvedDartControlAngle: 2,
+  curvedDartTopControlOffset: 0.2,
+  curvedDartBottomControlOffset: 0.4,
+  curvedDarts: { bool: true, menu: 'style' },
   lengthBonus: { pct: 0, min: -50, max: 50, menu: 'style' },
   hemBonus: { pct: 0, min: -35, max: 0, menu: 'style' },
   hem: { pct: 2, min: 0, max: 5, menu: 'style' },
@@ -34,7 +38,21 @@ export const options = {
 }
 
 export function BuildMainShape(
-  { sa, options, measurements, Point, Path, points, paths, store, paperless, macro, part },
+  {
+    sa,
+    options,
+    measurements,
+    optionalMeasurements,
+    Point,
+    Path,
+    points,
+    paths,
+    store,
+    paperless,
+    macro,
+    part,
+    log,
+  },
   frontPart
 ) {
   let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
@@ -42,7 +60,6 @@ export function BuildMainShape(
   store.set('skirtLength', skirtLength)
   store.set('waistEase', measurements.waist * options.waistEase)
   store.set('seatEase', measurements.seat * options.seatEase)
-  // [joost] I don't like how hem is handled here rather than as hem allowance
   store.set('hem', measurements.waistToKnee * options.hem)
 
   let dartDepthFactor = frontPart ? options.frontDartDepthFactor : options.backDartDepthFactor
@@ -65,12 +82,25 @@ export function BuildMainShape(
   store.set('nrOfDarts', nrOfDarts)
   store.set('dartSize', dartSize)
 
-  let sideSeamShift = (frontPart ? -1 : 1) * options.sideSeamShiftPercentage * seat
+  if (optionalMeasurements?.seatBack) {
+    seat = (frontPart ? seat - optionalMeasurements.seatBack : optionalMeasurements.seatBack) * 2
+  } else {
+    seat *= 1 + (frontPart ? -1 : 1) * options.sideSeamShiftPercentage
+  }
+  if (optionalMeasurements?.waistBack) {
+    waist =
+      (frontPart ? waist - optionalMeasurements.waistBack : optionalMeasurements.waistBack) * 2
+  } else {
+    waist *= 1 + (frontPart ? -1 : 1) * options.sideSeamShiftPercentage
+  }
+  if (waist > seat) {
+    seat = waist
+  }
 
   seat += store.get('seatEase')
   waist += store.get('waistEase')
 
-  let sideSeam = seat / 4 + sideSeamShift
+  let sideSeam = seat / 4 //+ sideSeamShift
 
   points.lWaist = new Point(0, 0)
   points.lLeg = new Point(0, skirtLength)
@@ -87,12 +117,11 @@ export function BuildMainShape(
       Math.abs((options.hemBonus * seat) / 10)) /
       options.hipCurveDividerDown
   )
-  //$p->newPoint('pH',   $sideSeam, $model->m('waistToHips') -$this->o('waistSideSeamRise'));
   let waistFactor = 0.99
   let sideFactor = 0.97
   let wdelta = 1
   let sdelta = 1
-  let iteration = 0
+  let iteration = 1
   let waistCurve = null
   let waistPath = null
   let waistPathSA = null
@@ -104,18 +133,18 @@ export function BuildMainShape(
 
   do {
     if (wdelta < -1) {
-      waistFactor *= 0.99
+      waistFactor *= 0.98
     } else if (wdelta > 1) {
       waistFactor *= 1.02
     }
     if (sdelta < -1) {
-      sideFactor *= 0.98
+      sideFactor *= 0.97
     } else if (sdelta > 1) {
       sideFactor *= 1.03
     }
     points.rWaistTemp1 = points.lWaist.shift(0, (waist / 4) * waistFactor)
     points.rWaistTemp2 = points.rWaistTemp1.shift(0, dartSize * nrOfDarts)
-    points.rWaist = points.rWaistTemp2.shift(90, 16 * sideFactor)
+    points.rWaist = points.rWaistTemp2.shift(90, measurements.waistToSeat * 0.0615 * sideFactor)
     points.lWaistCP = points.lWaist.shift(0, seat / 12)
     points.rWaistCPleft = points.rWaist.shift(
       points.rWaist.angle(points.rWaistCPdown) - 90,
@@ -128,40 +157,66 @@ export function BuildMainShape(
       .hide()
 
     if (nrOfDarts > 0) {
+      let dartDistance = seat / 4 / options.curvePlacement
       curve1 = addDartToCurve(
         part,
         waistCurve,
-        seat / 4 / options.curvePlacement,
+        dartDistance,
         dartSize,
         measurements.waistToSeat * dartDepthFactor
       )
-      waistLength = curve1.left.length()
-      points.dart1Start = curve1.dart.start()
-      points.dart1Middle = curve1.dart.ops[1].to
-      points.dart1End = curve1.dart.end()
-      if (nrOfDarts > 1) {
-        curve2 = addDartToCurve(
-          part,
-          curve1.right,
-          options.dart2offset,
-          dartSize,
-          measurements.waistToSeat * dartDepthFactor * options.dart2factor
-        )
-        waistLength += curve2.left.length()
-        waistLength += curve2.right.length()
-        waistPath = curve1.left.join(
-          curve1.dart.join(curve2.left.join(curve2.dart.join(curve2.right)))
-        )
-        waistPathSA = curve1.left.join(curve2.left.join(curve2.right))
-        points.dart2Start = curve2.dart.start()
-        points.dart2Middle = curve2.dart.ops[1].to
-        points.dart2End = curve2.dart.end()
+      if (curve1) {
+        waistLength = curve1.left.length()
+        points.dart1Start = curve1.dart.start()
+        points.dart1Middle = curve1.dart.ops[1].to
+        points.dart1End = curve1.dart.end()
+        if (nrOfDarts > 1) {
+          let dart2offset = measurements.waist / 35
+          if (dart2offset < dartSize / 1.8) {
+            dart2offset = dartSize / 1.8
+          }
+
+          curve2 = addDartToCurve(
+            part,
+            curve1.right,
+            dart2offset,
+            dartSize,
+            measurements.waistToSeat * dartDepthFactor * options.dart2factor
+          )
+          if (curve2) {
+            waistLength += curve2.left.length()
+            waistLength += curve2.right.length()
+            waistPath = curve1.left
+              .clone()
+              .join(curve1.dart)
+              .join(curve2.left)
+              .join(curve2.dart)
+              .join(curve2.right)
+
+            waistPathSA = curve1.left
+              .clone()
+              .line(curve2.left.start())
+              .join(curve2.left)
+              .line(curve2.right.start())
+              .join(curve2.right)
+
+            points.dart2Start = curve2.dart.start()
+            points.dart2Middle = curve2.dart.ops[1].to
+            points.dart2End = curve2.dart.end()
+          } else {
+            nrOfDarts--
+          }
+        }
+        if (nrOfDarts == 1) {
+          waistLength += curve1.right.length()
+          waistPath = curve1.left.clone().join(curve1.dart).join(curve1.right)
+          waistPathSA = curve1.left.clone().join(curve1.right)
+        }
       } else {
-        waistLength += curve1.right.length()
-        waistPath = curve1.left.join(curve1.dart.join(curve1.right))
-        waistPathSA = curve1.left.join(curve1.right)
+        nrOfDarts--
       }
-    } else {
+    }
+    if (nrOfDarts == 0) {
       waistLength = waistCurve.length()
       waistPath = waistCurve
       waistPathSA = waistCurve.clone()
@@ -184,7 +239,8 @@ export function BuildMainShape(
   paths.waist1 = waistCurve.translate(0, 10).attr('class', 'lining dashed')
 
   if (iteration >= 100) {
-    throw 'Too many iterations trying to make it fit!'
+    // console.log( 'Too many iterations trying to make it fit!' )
+    log.error('Too many iterations trying to make it fit!')
   }
 
   if (frontPart) {
