@@ -15,14 +15,6 @@ function legendBartack({ points, Point, macro, part }) {
 
 export const bartack = {
   name: 'legend.bartack',
-  options: {
-    bartackLength: { count: 15, min: 2, max: 100, menu: 'bartack' },
-    bartackAngle: { count: 0, min: -360, max: 360, menu: 'bartack' },
-    bartackDensity: { count: 3, min: 1, max: 5, menu: 'bartack' },
-    bartackWidth: { count: 3, min: 1, max: 5, menu: 'bartack' },
-    bartackStart: { pct: 25, min: 0, max: 100, menu: 'bartack' },
-    bartackEnd: { pct: 75, min: 0, max: 100, menu: 'bartack' },
-  },
   plugins: pluginBundle,
   draft: legendBartack,
 }
