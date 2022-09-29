@@ -27,7 +27,7 @@ float point.dist(Point point)
   paths.line = new Path()
     .move(points.from)
     .line(points.to)
-    .attr('class', 'dashed')
+    .setClass('dashed')
   
   return part
 }

@@ -32,7 +32,6 @@ bool point.sitsOn(Point check)
     .move(new Point(0,0))
     .move(new Point(90,70))
 
-
   return part
 }
 ```

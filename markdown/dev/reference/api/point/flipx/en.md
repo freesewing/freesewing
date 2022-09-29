@@ -54,7 +54,7 @@ Point point.flipX(Point mirror = false)
     .line(points._out2)
     .line(points._in1)
     .line(points._out1)
-    .close();
+    .close()
   
   paths.mirror = new Path()
     .move(points.top)
