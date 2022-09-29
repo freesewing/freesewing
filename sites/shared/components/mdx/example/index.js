@@ -1,6 +1,8 @@
 import { Tab, Tabs } from '../tabs.js'
 import Md from 'react-markdown'
-import { plugin } from '@freesewing/plugin-bundle'
+import { pluginBundle } from '@freesewing/plugin-bundle'
+import { pluginFlip } from '@freesewing/plugin-flip'
+import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
 import Svg from '../../workbench/draft/svg'
 import Defs from '../../workbench/draft/defs'
@@ -63,7 +65,7 @@ const buildExample = (children, settings = { margin: 10 }) => {
   const part = {
     draft,
     measurements: [],
-    plugins: [plugin],
+    plugins: [pluginBundle, pluginFlip, pluginGore],
   }
   const design = new Design({ parts: [part] })
   return new design(settings)
