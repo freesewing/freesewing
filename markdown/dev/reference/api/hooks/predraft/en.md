@@ -2,12 +2,22 @@
 title: preDraft
 ---
 
-The `preDraft` hook runs just before your pattern is drafted.
+The `preDraft` lifecycle hook runs just before your pattern is drafted.
 
-Your plugin will receive the Pattern object.
+## Signature
 
-<Note>
+```js
+null hook(Pattern pattern)
+```
 
-The `preDraft` hook is rarely used.
+## Example
 
-</Note>
+```js
+pattern.on('preDraft', pattern => {
+  // Mutate the pattern object here
+}
+```
+
+## Notes
+
+The `preDraft` hook is rarely used, but it's there if you need it.

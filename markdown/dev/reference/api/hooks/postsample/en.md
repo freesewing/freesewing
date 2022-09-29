@@ -3,7 +3,24 @@ title: postSample
 ---
 
 The `postSample` hook runs just after your pattern is sampled.
-Your plugin will receive the Pattern object.
+
+## Signature
+
+```js
+null hook(Pattern pattern)
+```
+
+## Example
+
+```js
+pattern.on('postSample', pattern => {
+  // Mutate the pattern object here
+}
+```
+
+## Notes
+
+The `postSample` hook is rarely used, but it's there if you need it.
 
 It is triggered just before the end of either:
 
@@ -11,8 +28,3 @@ It is triggered just before the end of either:
 - the [Pattern.sampleMeasurement()](/reference/api/pattern/samplemeasurement) method
 - the [Pattern.sampleModels()](/reference/api/pattern/samplemodels) method
 
-<Note>
-
-The `postSample` hook is rarely used.
-
-</Note>
