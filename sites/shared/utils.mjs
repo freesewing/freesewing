@@ -1,5 +1,6 @@
 import get from 'lodash.get'
 import set from 'lodash.set'
+import orderBy from 'lodash.orderby'
 
 // Generic rounding method
 export const round = (val, decimals=1) => Math.round(val*Math.pow(10, decimals))/Math.pow(10, decimals)
@@ -164,15 +165,28 @@ export const measurementAsMm = (value, units = "metric") => {
 
 export const optionsMenuStructure = options => {
   if (!options) return options
-  const menu = {}
+  const sorted = {}
   for (const [name, option] of Object.entries(options)) {
+    sorted[name] = { ...option, name }
+  }
+
+  const menu = {}
+  // Fixme: One day we should sort this based on the translation
+  for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
     if (typeof option  === 'object') {
-      if (option.menu) set(menu, (option.menu ? `${option.menu}.${name}` : name), optionType(option))
+      if (option.menu) set(menu, (option.menu ? `${option.menu}.${option.name}` : option.name), optionType(option))
       else if (typeof option.menu === 'undefined') console.log(
-        `Warning: Option ${name} does not have a menu config. ` +
+        `Warning: Option ${option.name} does not have a menu config. ` +
         'Either configure it, or set it to falseo false to hide this option.'
       )
     }
+  }
+
+  // Always put advanced at the end
+  if (menu.advanced) {
+    const adv = menu.advanced
+    delete menu.advanced
+    menu.advanced = adv
   }
 
   return menu
