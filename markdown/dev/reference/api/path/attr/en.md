@@ -26,10 +26,10 @@ Path path.attr(
 ```js
 ({ Point, points, Path, paths, part }) => {
 
-  points.from = new Point(10, 20);
-  points.cp1 = new Point(20, -10);
-  points.cp2 = new Point(50, 50);
-  points.to = new Point(70, 20);
+  points.from = new Point(10, 20)
+  points.cp1 = new Point(20, -10)
+  points.cp2 = new Point(50, 50)
+  points.to = new Point(70, 20)
 
   paths.example = new Path()
     .move(points.from)

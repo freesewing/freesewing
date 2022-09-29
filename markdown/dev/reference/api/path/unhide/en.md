@@ -2,9 +2,9 @@
 title: Path.unhide()
 ---
 
-The `Path.unhide()` method unhides the path so it does appears in the output.
-
-By default, paths are not hidden. So you should only call this on path previously hidden via `Path.hide()`.
+The `Path.unhide()` method unhides the path so it appears in the output.  By
+default, paths are not hidden. So you should only call this on path previously
+hidden via `Path.hide()`.
 
 ## Signature
 

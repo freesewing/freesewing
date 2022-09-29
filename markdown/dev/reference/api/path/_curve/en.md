@@ -21,9 +21,9 @@ Path path._curve(Point cp2, Point to)
 ```js
 ({ Point, points, Path, paths, part }) => {
 
-  points.from = new Point(5, 20);
-  points.cp2 = new Point(60, 50);
-  points.to = new Point(90, 20);
+  points.from = new Point(5, 20)
+  points.cp2 = new Point(60, 50)
+  points.to = new Point(90, 20)
 
   paths.line = new Path()
     .move(points.from)

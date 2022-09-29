@@ -34,7 +34,7 @@ Path path.trim()
           points["tipCpRight" + i],
           points["base" + i],
           points["base" + i]
-        );
+        )
     } else {
       paths.example
         .line(points["base" + i])
@@ -51,7 +51,7 @@ Path path.trim()
   paths.trimmed = paths.offset
     .trim()
     .setClass("various stroke-xl")
-    .attr("style", "stroke-opacity: 0.5;")
+    .attr("style", "stroke-opacity: 0.5")
 
   return part
 }

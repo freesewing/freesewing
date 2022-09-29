@@ -24,16 +24,16 @@ For most cases, the default will be fine.
 ```js
 ({ Point, points, Path, paths, Snippet, snippets, part }) => {
 
-  points.A = new Point(45, 60);
-  points.B = new Point(10, 30);
-  points.BCp2 = new Point(40, 20);
-  points.C = new Point(90, 30);
-  points.CCp1 = new Point(50, -30);
+  points.A = new Point(45, 60)
+  points.B = new Point(10, 30)
+  points.BCp2 = new Point(40, 20)
+  points.C = new Point(90, 30)
+  points.CCp1 = new Point(50, -30)
   
   paths.example = new Path()
     .move(points.A)
     .line(points.B)
-    .curve(points.BCp2, points.CCp1, points.C);
+    .curve(points.BCp2, points.CCp1, points.C)
   
   points.x1 = paths.example
     .shiftFractionAlong(0.2)
@@ -42,8 +42,8 @@ For most cases, the default will be fine.
     .shiftFractionAlong(0.9)
     .setText("0.9", "center")
   
-  snippets.xl = new Snippet("notch", points.x1);
-  snippets.x2 = new Snippet("notch", points.x2);
+  snippets.xl = new Snippet("notch", points.x1)
+  snippets.x2 = new Snippet("notch", points.x2)
 
   return part
 }

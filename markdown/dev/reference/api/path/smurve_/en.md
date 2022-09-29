@@ -21,10 +21,10 @@ Path path.smurve_(Point cp2, Point end)
 ```js
 ({ Point, points, Path, paths, part }) => {
 
-  points.aFrom = new Point(10, 10);
-  points.aCp1 = new Point(40, 40);
-  points.aCp2 = new Point(70, -20);
-  points.aTo = new Point(100, 10);
+  points.aFrom = new Point(10, 10)
+  points.aCp1 = new Point(40, 40)
+  points.aCp2 = new Point(70, -20)
+  points.aTo = new Point(100, 10)
 
   points.bTo = new Point(10,50)
   
