@@ -1,682 +1,720 @@
-import chai from "chai"
-import { round, Pattern, Path, Point } from "./dist/index.mjs"
+import chai from 'chai'
+import { round, Pattern, Path, Point, Design } from '../src/index.mjs'
 
 const expect = chai.expect
 
 describe('Path', () => {
-  it("Should offset a line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should offset a line', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
+        paths.offset = paths.line.offset(10)
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.parts.test.paths.offset.bottomRight.x).to.equal(-10)
+    expect(pattern.parts.test.paths.offset.bottomRight.y).to.equal(40)
+  })
 
-    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
-    a.paths.offset = a.paths.line.offset(10);
-    pattern.render();
-    expect(a.paths.offset.bottomRight.x).to.equal(-10);
-    expect(a.paths.offset.bottomRight.y).to.equal(40);
-  });
+  it('Should offset a curve', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.curve = new Path()
+          .move(new Point(0, 0))
+          .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
+        paths.offset = paths.curve.offset(10)
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(72.18)
+    expect(round(pattern.parts.test.paths.offset.bottomRight.y)).to.equal(38.26)
+  })
 
-  it("Should offset a curve", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should offset a curve where cp1 = start', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.curve = new Path().move(new Point(0, 0))._curve(new Point(123, 34), new Point(23, 4))
+        paths.offset = paths.curve.offset(10)
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(72.63)
+    expect(round(pattern.parts.test.paths.offset.bottomRight.y)).to.equal(26.48)
+  })
 
-    a.paths.curve = new a.Path()
-      .move(new a.Point(0, 0))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(23, 4));
-    a.paths.offset = a.paths.curve.offset(10);
-    pattern.render();
-    expect(round(a.paths.offset.bottomRight.x)).to.equal(72.18);
-    expect(round(a.paths.offset.bottomRight.y)).to.equal(38.26);
-  });
+  it('Should offset a curve where cp2 = end', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.curve = new Path().move(new Point(0, 0)).curve_(new Point(40, 0), new Point(123, 34))
+        paths.offset = paths.curve.offset(10)
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts.test.paths.offset.bottomRight.x)).to.equal(119.26)
+    expect(round(pattern.parts.test.paths.offset.bottomRight.y)).to.equal(43.27)
+  })
 
-  it("Should offset a curve where cp1 = start", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  /*
+  it('Should throw error when offsetting line that is no line', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point }) => {
+        paths.line = new Path()
+          .move(new Point(0, 40))
+          .line(new Point(0, 40))
+        paths.offset = paths.line.offset(10)
+        return part
+      }
+    }
+    const design = new Design({ parts: [ part ] })
+    const pattern = new design()
+    pattern.draft().render()
+    console.log(pattern.store.logs)
+    expect(() => pattern.draft().render()).to.throw()
+  })
+  */
 
-    a.paths.curve = new a.Path()
-      .move(new a.Point(0, 0))
-      .curve(new a.Point(0, 0), new a.Point(123, 34), new a.Point(23, 4));
-    a.paths.offset = a.paths.curve.offset(10);
-    pattern.render();
-    expect(round(a.paths.offset.bottomRight.x)).to.equal(72.63);
-    expect(round(a.paths.offset.bottomRight.y)).to.equal(26.48);
-  });
+  it('Should return the length of a line', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(40, 0))
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.parts.test.paths.line.length()).to.equal(40)
+  })
 
-  it("Should offset a curve where cp2 = end", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should return the length of a curve', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.curve = new Path()
+          .move(new Point(0, 0))
+          .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
+          .close()
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(round(pattern.parts.test.paths.curve.length())).to.equal(145.11)
+  })
 
-    a.paths.curve = new a.Path()
-      .move(new a.Point(0, 0))
-      .curve(new a.Point(40, 0), new a.Point(123, 34), new a.Point(123, 34))
-      .close();
-    a.paths.offset = a.paths.curve.offset(10);
-    pattern.render();
-    expect(round(a.paths.offset.bottomRight.x)).to.equal(119.26);
-    expect(round(a.paths.offset.bottomRight.y)).to.equal(43.27);
-  });
+  it('Should return the path start point', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.curve = new Path()
+          .move(new Point(123, 456))
+          .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
+          .close()
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.parts.test.paths.curve.start().x).to.equal(123)
+    expect(pattern.parts.test.paths.curve.start().y).to.equal(456)
+  })
 
-  it("Should throw error when offsetting line that is no line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should return the path end point', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.curve = new Path()
+          .move(new Point(123, 456))
+          .curve(new Point(0, 40), new Point(123, 34), new Point(23, 4))
+          .close()
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
+    expect(pattern.parts.test.paths.curve.end().x).to.equal(123)
+    expect(pattern.parts.test.paths.curve.end().y).to.equal(456)
+  })
 
-    a.paths.line = new a.Path().move(new a.Point(0, 40)).line(new a.Point(0, 40));
-    expect(() => a.paths.line.offset(10)).to.throw();
-  });
+  it('Should calculate that path boundary', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
 
-  it("Should return the length of a line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-
-    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
-    expect(a.paths.line.length()).to.equal(40);
-  });
-
-  it("Should return the length of a curve", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(0, 0))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(23, 4))
-      .close();
-    expect(round(a.paths.curve.length())).to.equal(145.11);
-  });
-
-  it("Should return the path start point", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(123, 456))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(23, 4))
-      .close();
-    expect(a.paths.curve.start().x).to.equal(123);
-    expect(a.paths.curve.start().y).to.equal(456);
-  });
-
-  it("Should return the path end point", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(123, 456))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(23, 4));
-    expect(a.paths.curve.end().x).to.equal(23);
-    expect(a.paths.curve.end().y).to.equal(4);
-    a.paths.curve.close();
-    expect(a.paths.curve.end().x).to.equal(123);
-    expect(a.paths.curve.end().y).to.equal(456);
-  });
-
-  it("Should calculate that path boundary", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(123, 456))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4));
-    a.paths.curve.boundary();
-    expect(a.paths.curve.topLeft.x).to.equal(71.6413460920667);
-    expect(a.paths.curve.topLeft.y).to.equal(4);
-    a.paths.curve.boundary();
-    expect(a.paths.curve.bottomRight.x).to.equal(230);
-    expect(a.paths.curve.bottomRight.y).to.equal(456);
-  });
-
-  it("Should clone a path", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-
-    a.paths.curve = new a.Path()
-      .move(new a.Point(123, 456))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4));
-    let b = a.paths.curve.clone();
-    b.boundary();
-    expect(b.topLeft.x).to.equal(71.6413460920667);
-    expect(b.topLeft.y).to.equal(4);
-    b = b.clone();
-    expect(b.bottomRight.x).to.equal(230);
-    expect(b.bottomRight.y).to.equal(456);
-  });
-
-  it("Should join paths", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-
-    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
-    a.paths.curve = new a.Path()
-      .move(new a.Point(123, 456))
-      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4));
-    a.paths.joint = a.paths.curve.join(a.paths.line);
-    expect(a.paths.joint.ops.length).to.equal(4);
-  });
-
-  it("Should throw error when joining a closed paths", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-
-    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
     a.paths.curve = new a.Path()
       .move(new a.Point(123, 456))
       .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4))
-      .close();
-    expect(() => a.paths.curve.join(a.paths.line)).to.throw();
-  });
+    a.paths.curve.boundary()
+    expect(a.paths.curve.topLeft.x).to.equal(71.6413460920667)
+    expect(a.paths.curve.topLeft.y).to.equal(4)
+    a.paths.curve.boundary()
+    expect(a.paths.curve.bottomRight.x).to.equal(230)
+    expect(a.paths.curve.bottomRight.y).to.equal(456)
+  })
 
-  it("Should shift along a line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should clone a path', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
 
-    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40));
-    expect(a.paths.line.shiftAlong(20).y).to.equal(20);
-  });
+    a.paths.curve = new a.Path()
+      .move(new a.Point(123, 456))
+      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4))
+    let b = a.paths.curve.clone()
+    b.boundary()
+    expect(b.topLeft.x).to.equal(71.6413460920667)
+    expect(b.topLeft.y).to.equal(4)
+    b = b.clone()
+    expect(b.bottomRight.x).to.equal(230)
+    expect(b.bottomRight.y).to.equal(456)
+  })
 
-  it("Should not shift along a path/line if we end up on the end point", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should join paths', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
 
-    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(10, 0));
-    expect(a.paths.line.shiftAlong(10).x).to.equal(10);
-  });
+    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40))
+    a.paths.curve = new a.Path()
+      .move(new a.Point(123, 456))
+      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4))
+    a.paths.joint = a.paths.curve.join(a.paths.line)
+    expect(a.paths.joint.ops.length).to.equal(4)
+  })
 
-  it("Should shift along lines", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should throw error when joining a closed paths', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+
+    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40))
+    a.paths.curve = new a.Path()
+      .move(new a.Point(123, 456))
+      .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4))
+      .close()
+    expect(() => a.paths.curve.join(a.paths.line)).to.throw()
+  })
+
+  it('Should shift along a line', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+
+    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(0, 40))
+    expect(a.paths.line.shiftAlong(20).y).to.equal(20)
+  })
+
+  it('Should not shift along a path/line if we end up on the end point', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+
+    a.paths.line = new a.Path().move(new a.Point(0, 0)).line(new a.Point(10, 0))
+    expect(a.paths.line.shiftAlong(10).x).to.equal(10)
+  })
+
+  it('Should shift along lines', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
 
     a.paths.line = new a.Path()
       .move(new a.Point(0, 0))
       .line(new a.Point(0, 40))
-      .line(new a.Point(100, 40));
-    expect(a.paths.line.shiftAlong(50).x).to.equal(10);
-    expect(a.paths.line.shiftAlong(50).y).to.equal(40);
-  });
+      .line(new a.Point(100, 40))
+    expect(a.paths.line.shiftAlong(50).x).to.equal(10)
+    expect(a.paths.line.shiftAlong(50).y).to.equal(40)
+  })
 
-  it("Should shift along curve + line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should shift along curve + line', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
 
     a.paths.test = new a.Path()
       .move(new a.Point(0, 0))
       .line(new a.Point(0, 40))
       .curve(new a.Point(40, 40), new a.Point(40, 0), new a.Point(200, 0))
-      .line(new a.Point(200, 400));
-    expect(round(a.paths.test.shiftAlong(500).x)).to.equal(200);
-    expect(round(a.paths.test.shiftAlong(500).y)).to.equal(253.74);
-  });
+      .line(new a.Point(200, 400))
+    expect(round(a.paths.test.shiftAlong(500).x)).to.equal(200)
+    expect(round(a.paths.test.shiftAlong(500).y)).to.equal(253.74)
+  })
 
   it("Should throw error when shifting along path further than it's long", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
     a.paths.test = new a.Path()
       .move(new a.Point(0, 0))
       .line(new a.Point(0, 40))
-      .line(new a.Point(200, 400));
-    expect(() => a.paths.test.shiftAlong(500)).to.throw();
-  });
+      .line(new a.Point(200, 400))
+    expect(() => a.paths.test.shiftAlong(500)).to.throw()
+  })
 
-  it("Should shift along with sufficient precision", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should shift along with sufficient precision', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
     a.paths.test = new a.Path()
       .move(new a.Point(0, 0))
       .curve(new a.Point(123, 123), new a.Point(-123, 456), new a.Point(456, -123))
     a.points.a = a.paths.test.shiftAlong(100)
-    a.points.b = a.paths.test.reverse().shiftAlong(a.paths.test.length()-100)
-    expect(a.points.a.dist(a.points.b)).to.below(0.05);
-  });
+    a.points.b = a.paths.test.reverse().shiftAlong(a.paths.test.length() - 100)
+    expect(a.points.a.dist(a.points.b)).to.below(0.05)
+  })
 
-  it("Should shift fraction with sufficient precision", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should shift fraction with sufficient precision', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
     a.paths.test = new a.Path()
       .move(new a.Point(0, 0))
       .curve(new a.Point(123, 123), new a.Point(-123, 456), new a.Point(456, -123))
     a.points.a = a.paths.test.shiftFractionAlong(0.5)
     a.points.b = a.paths.test.reverse().shiftFractionAlong(0.5)
-    expect(a.points.a.dist(a.points.b)).to.below(0.05);
-  });
+    expect(a.points.a.dist(a.points.b)).to.below(0.05)
+  })
 
-  it("Should shift a fraction along a line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should shift a fraction along a line', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
     a.paths.line = new a.Path()
       .move(new a.Point(0, 0))
       .line(new a.Point(0, 40))
-      .line(new a.Point(100, 40));
-    expect(round(a.paths.line.shiftFractionAlong(0.5).x)).to.equal(30);
-    expect(round(a.paths.line.shiftFractionAlong(0.5).y)).to.equal(40);
-  });
+      .line(new a.Point(100, 40))
+    expect(round(a.paths.line.shiftFractionAlong(0.5).x)).to.equal(30)
+    expect(round(a.paths.line.shiftFractionAlong(0.5).y)).to.equal(40)
+  })
 
-  it("Should find the bounding box of a line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let Path = pattern.parts.a.Path;
-    let Point = pattern.parts.a.Point;
+  it('Should find the bounding box of a line', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let Path = pattern.parts.a.Path
+    let Point = pattern.parts.a.Point
 
-    let line = new Path().move(new Point(3, 2)).line(new Point(10, 40));
-    let box = line.bbox();
-    expect(box.topLeft.x).to.equal(3);
-    expect(box.topLeft.y).to.equal(2);
-    expect(box.bottomRight.x).to.equal(10);
-    expect(box.bottomRight.y).to.equal(40);
+    let line = new Path().move(new Point(3, 2)).line(new Point(10, 40))
+    let box = line.bbox()
+    expect(box.topLeft.x).to.equal(3)
+    expect(box.topLeft.y).to.equal(2)
+    expect(box.bottomRight.x).to.equal(10)
+    expect(box.bottomRight.y).to.equal(40)
 
-    line = new Path().move(new Point(10, 40)).line(new Point(3, 2));
-    box = line.bbox();
-    expect(box.topLeft.x).to.equal(3);
-    expect(box.topLeft.y).to.equal(2);
-    expect(box.bottomRight.x).to.equal(10);
-    expect(box.bottomRight.y).to.equal(40);
+    line = new Path().move(new Point(10, 40)).line(new Point(3, 2))
+    box = line.bbox()
+    expect(box.topLeft.x).to.equal(3)
+    expect(box.topLeft.y).to.equal(2)
+    expect(box.bottomRight.x).to.equal(10)
+    expect(box.bottomRight.y).to.equal(40)
 
-    line = new Path().move(new Point(1, 40)).line(new Point(31, 2));
-    box = line.bbox();
-    expect(box.topLeft.x).to.equal(1);
-    expect(box.topLeft.y).to.equal(2);
-    expect(box.bottomRight.x).to.equal(31);
-    expect(box.bottomRight.y).to.equal(40);
+    line = new Path().move(new Point(1, 40)).line(new Point(31, 2))
+    box = line.bbox()
+    expect(box.topLeft.x).to.equal(1)
+    expect(box.topLeft.y).to.equal(2)
+    expect(box.bottomRight.x).to.equal(31)
+    expect(box.bottomRight.y).to.equal(40)
 
-    line = new Path().move(new Point(31, 2)).line(new Point(1, 40));
-    box = line.bbox();
-    expect(box.topLeft.x).to.equal(1);
-    expect(box.topLeft.y).to.equal(2);
-    expect(box.bottomRight.x).to.equal(31);
-    expect(box.bottomRight.y).to.equal(40);
+    line = new Path().move(new Point(31, 2)).line(new Point(1, 40))
+    box = line.bbox()
+    expect(box.topLeft.x).to.equal(1)
+    expect(box.topLeft.y).to.equal(2)
+    expect(box.bottomRight.x).to.equal(31)
+    expect(box.bottomRight.y).to.equal(40)
 
-    line = new Path().move(new Point(11, 2)).line(new Point(11, 40));
-    box = line.bbox();
-    expect(box.topLeft.x).to.equal(11);
-    expect(box.topLeft.y).to.equal(2);
-    expect(box.bottomRight.x).to.equal(11);
-    expect(box.bottomRight.y).to.equal(40);
+    line = new Path().move(new Point(11, 2)).line(new Point(11, 40))
+    box = line.bbox()
+    expect(box.topLeft.x).to.equal(11)
+    expect(box.topLeft.y).to.equal(2)
+    expect(box.bottomRight.x).to.equal(11)
+    expect(box.bottomRight.y).to.equal(40)
 
-    line = new Path().move(new Point(11, 40)).line(new Point(11, 2));
-    box = line.bbox();
-    expect(box.topLeft.x).to.equal(11);
-    expect(box.topLeft.y).to.equal(2);
-    expect(box.bottomRight.x).to.equal(11);
-    expect(box.bottomRight.y).to.equal(40);
+    line = new Path().move(new Point(11, 40)).line(new Point(11, 2))
+    box = line.bbox()
+    expect(box.topLeft.x).to.equal(11)
+    expect(box.topLeft.y).to.equal(2)
+    expect(box.bottomRight.x).to.equal(11)
+    expect(box.bottomRight.y).to.equal(40)
 
-    line = new Path().move(new Point(11, 12)).line(new Point(41, 12));
-    box = line.bbox();
-    expect(box.topLeft.x).to.equal(11);
-    expect(box.topLeft.y).to.equal(12);
-    expect(box.bottomRight.x).to.equal(41);
-    expect(box.bottomRight.y).to.equal(12);
+    line = new Path().move(new Point(11, 12)).line(new Point(41, 12))
+    box = line.bbox()
+    expect(box.topLeft.x).to.equal(11)
+    expect(box.topLeft.y).to.equal(12)
+    expect(box.bottomRight.x).to.equal(41)
+    expect(box.bottomRight.y).to.equal(12)
 
-    line = new Path().move(new Point(41, 12)).line(new Point(11, 12));
-    box = line.bbox();
-    expect(box.topLeft.x).to.equal(11);
-    expect(box.topLeft.y).to.equal(12);
-    expect(box.bottomRight.x).to.equal(41);
-    expect(box.bottomRight.y).to.equal(12);
-  });
+    line = new Path().move(new Point(41, 12)).line(new Point(11, 12))
+    box = line.bbox()
+    expect(box.topLeft.x).to.equal(11)
+    expect(box.topLeft.y).to.equal(12)
+    expect(box.bottomRight.x).to.equal(41)
+    expect(box.bottomRight.y).to.equal(12)
+  })
 
-  it("Should find the bounding box of a line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should find the bounding box of a line', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
     a.paths.curve = new a.Path()
       .move(new a.Point(123, 456))
       .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4))
-      .close();
-    let box = a.paths.curve.bbox();
-    expect(round(box.topLeft.x)).to.equal(71.64);
-    expect(box.topLeft.y).to.equal(4);
-    expect(box.bottomRight.x).to.equal(230);
-    expect(box.bottomRight.y).to.equal(456);
-  });
+      .close()
+    let box = a.paths.curve.bbox()
+    expect(round(box.topLeft.x)).to.equal(71.64)
+    expect(box.topLeft.y).to.equal(4)
+    expect(box.bottomRight.x).to.equal(230)
+    expect(box.bottomRight.y).to.equal(456)
+  })
 
-  it("Should reverse a path", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should reverse a path', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
     let test = new a.Path()
       .move(new a.Point(123, 456))
       .line(new a.Point(12, 23))
       .curve(new a.Point(0, 40), new a.Point(123, 34), new a.Point(230, 4))
-      .close();
-    let rev = test.reverse();
-    let tb = test.bbox();
-    let rb = rev.bbox();
-    expect(tb.topLeft.x).to.equal(rb.topLeft.x);
-    expect(tb.topLeft.y).to.equal(rb.topLeft.y);
-    expect(tb.bottomRight.x).to.equal(rb.bottomRight.x);
-    expect(tb.bottomRight.y).to.equal(rb.bottomRight.y);
-    expect(rev.ops[1].type).to.equal("curve");
-    expect(rev.ops[2].type).to.equal("line");
-  });
+      .close()
+    let rev = test.reverse()
+    let tb = test.bbox()
+    let rb = rev.bbox()
+    expect(tb.topLeft.x).to.equal(rb.topLeft.x)
+    expect(tb.topLeft.y).to.equal(rb.topLeft.y)
+    expect(tb.bottomRight.x).to.equal(rb.bottomRight.x)
+    expect(tb.bottomRight.y).to.equal(rb.bottomRight.y)
+    expect(rev.ops[1].type).to.equal('curve')
+    expect(rev.ops[2].type).to.equal('line')
+  })
 
-  it("Should find the edges of a path", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(45, 60);
-    a.points.B = new a.Point(10, 30);
-    a.points.BCp2 = new a.Point(40, 20);
-    a.points.C = new a.Point(90, 30);
-    a.points.CCp1 = new a.Point(50, -30);
-    a.points.D = new a.Point(-60, 90);
-    a.points.E = new a.Point(90, 190);
+  it('Should find the edges of a path', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(45, 60)
+    a.points.B = new a.Point(10, 30)
+    a.points.BCp2 = new a.Point(40, 20)
+    a.points.C = new a.Point(90, 30)
+    a.points.CCp1 = new a.Point(50, -30)
+    a.points.D = new a.Point(-60, 90)
+    a.points.E = new a.Point(90, 190)
     a.paths.test = new a.Path()
       .move(a.points.A)
       .line(a.points.B)
       .curve(a.points.BCp2, a.points.CCp1, a.points.C)
       .curve(a.points.E, a.points.D, a.points.A)
-      .close();
-    expect(round(a.paths.test.edge("topLeft").x)).to.equal(7.7);
-    expect(round(a.paths.test.edge("topLeft").y)).to.equal(0.97);
-    expect(round(a.paths.test.edge("bottomLeft").x)).to.equal(7.7);
-    expect(round(a.paths.test.edge("bottomLeft").y)).to.equal(118.46);
-    expect(round(a.paths.test.edge("bottomRight").x)).to.equal(90);
-    expect(round(a.paths.test.edge("bottomRight").y)).to.equal(118.46);
-    expect(round(a.paths.test.edge("topRight").x)).to.equal(90);
-    expect(round(a.paths.test.edge("topRight").y)).to.equal(0.97);
-    expect(round(a.paths.test.edge("left").x)).to.equal(7.7);
-    expect(round(a.paths.test.edge("left").y)).to.equal(91.8);
-    expect(round(a.paths.test.edge("bottom").x)).to.equal(40.63);
-    expect(round(a.paths.test.edge("bottom").y)).to.equal(118.46);
-    expect(round(a.paths.test.edge("right").x)).to.equal(89.76);
-    expect(round(a.paths.test.edge("right").y)).to.equal(29.64);
-    expect(round(a.paths.test.edge("top").x)).to.equal(55.98);
-    expect(round(a.paths.test.edge("top").y)).to.equal(0.97);
-  });
+      .close()
+    expect(round(a.paths.test.edge('topLeft').x)).to.equal(7.7)
+    expect(round(a.paths.test.edge('topLeft').y)).to.equal(0.97)
+    expect(round(a.paths.test.edge('bottomLeft').x)).to.equal(7.7)
+    expect(round(a.paths.test.edge('bottomLeft').y)).to.equal(118.46)
+    expect(round(a.paths.test.edge('bottomRight').x)).to.equal(90)
+    expect(round(a.paths.test.edge('bottomRight').y)).to.equal(118.46)
+    expect(round(a.paths.test.edge('topRight').x)).to.equal(90)
+    expect(round(a.paths.test.edge('topRight').y)).to.equal(0.97)
+    expect(round(a.paths.test.edge('left').x)).to.equal(7.7)
+    expect(round(a.paths.test.edge('left').y)).to.equal(91.8)
+    expect(round(a.paths.test.edge('bottom').x)).to.equal(40.63)
+    expect(round(a.paths.test.edge('bottom').y)).to.equal(118.46)
+    expect(round(a.paths.test.edge('right').x)).to.equal(89.76)
+    expect(round(a.paths.test.edge('right').y)).to.equal(29.64)
+    expect(round(a.paths.test.edge('top').x)).to.equal(55.98)
+    expect(round(a.paths.test.edge('top').y)).to.equal(0.97)
+  })
 
-  it("Should find the edges of a path for corner cases", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(-45, -60);
-    a.points.B = new a.Point(45, 60);
-    a.points.C = new a.Point(-90, -160);
-    a.paths.test = new a.Path().move(a.points.A).line(a.points.B);
-    expect(round(a.paths.test.edge("top").x)).to.equal(-45);
-    expect(round(a.paths.test.edge("top").y)).to.equal(-60);
-    expect(round(a.paths.test.edge("left").x)).to.equal(-45);
-    expect(round(a.paths.test.edge("left").y)).to.equal(-60);
-    expect(round(a.paths.test.edge("bottom").x)).to.equal(45);
-    expect(round(a.paths.test.edge("bottom").y)).to.equal(60);
-    expect(round(a.paths.test.edge("right").x)).to.equal(45);
-    expect(round(a.paths.test.edge("right").y)).to.equal(60);
-    a.paths.test = new a.Path().move(a.points.B).line(a.points.A);
-    expect(round(a.paths.test.edge("top").x)).to.equal(-45);
-    expect(round(a.paths.test.edge("top").y)).to.equal(-60);
-    expect(round(a.paths.test.edge("left").x)).to.equal(-45);
-    expect(round(a.paths.test.edge("left").y)).to.equal(-60);
-    expect(round(a.paths.test.edge("bottom").x)).to.equal(45);
-    expect(round(a.paths.test.edge("bottom").y)).to.equal(60);
-    expect(round(a.paths.test.edge("right").x)).to.equal(45);
-    expect(round(a.paths.test.edge("right").y)).to.equal(60);
-  });
+  it('Should find the edges of a path for corner cases', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(-45, -60)
+    a.points.B = new a.Point(45, 60)
+    a.points.C = new a.Point(-90, -160)
+    a.paths.test = new a.Path().move(a.points.A).line(a.points.B)
+    expect(round(a.paths.test.edge('top').x)).to.equal(-45)
+    expect(round(a.paths.test.edge('top').y)).to.equal(-60)
+    expect(round(a.paths.test.edge('left').x)).to.equal(-45)
+    expect(round(a.paths.test.edge('left').y)).to.equal(-60)
+    expect(round(a.paths.test.edge('bottom').x)).to.equal(45)
+    expect(round(a.paths.test.edge('bottom').y)).to.equal(60)
+    expect(round(a.paths.test.edge('right').x)).to.equal(45)
+    expect(round(a.paths.test.edge('right').y)).to.equal(60)
+    a.paths.test = new a.Path().move(a.points.B).line(a.points.A)
+    expect(round(a.paths.test.edge('top').x)).to.equal(-45)
+    expect(round(a.paths.test.edge('top').y)).to.equal(-60)
+    expect(round(a.paths.test.edge('left').x)).to.equal(-45)
+    expect(round(a.paths.test.edge('left').y)).to.equal(-60)
+    expect(round(a.paths.test.edge('bottom').x)).to.equal(45)
+    expect(round(a.paths.test.edge('bottom').y)).to.equal(60)
+    expect(round(a.paths.test.edge('right').x)).to.equal(45)
+    expect(round(a.paths.test.edge('right').y)).to.equal(60)
+  })
 
-  it("Should find the edge of a path for this edge-case", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(-109.7, 77, 12);
-    a.points.B = new a.Point(-27.33, 99.19);
-    a.points.C = new a.Point(-39.45, 137.4);
-    a.points.D = new a.Point(-61.52, 219.77);
-    a.paths.test = new a.Path()
-      .move(a.points.A)
-      .curve(a.points.B, a.points.C, a.points.D);
-    expect(round(a.paths.test.edge("right").x)).to.equal(-45.22);
-    expect(round(a.paths.test.edge("right").y)).to.equal(139.4);
-  });
+  it('Should find the edge of a path for this edge-case', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(-109.7, 77, 12)
+    a.points.B = new a.Point(-27.33, 99.19)
+    a.points.C = new a.Point(-39.45, 137.4)
+    a.points.D = new a.Point(-61.52, 219.77)
+    a.paths.test = new a.Path().move(a.points.A).curve(a.points.B, a.points.C, a.points.D)
+    expect(round(a.paths.test.edge('right').x)).to.equal(-45.22)
+    expect(round(a.paths.test.edge('right').y)).to.equal(139.4)
+  })
 
-  it("Should find where a path intersects with an X value", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(95, 50);
-    a.points.B = new a.Point(10, 30);
-    a.points.BCp2 = new a.Point(40, 20);
-    a.points.C = new a.Point(90, 30);
-    a.points.CCp1 = new a.Point(50, -30);
-    a.points.D = new a.Point(50, 130);
-    a.points.DCp1 = new a.Point(150, 30);
-    a.paths.test = new a.Path()
-      .move(a.points.A)
-      .line(a.points.B)
-      .curve(a.points.BCp2, a.points.CCp1, a.points.C)
-      .curve(a.points.DCp1, a.points.DCp1, a.points.D)
-      .close();
-    let intersections = a.paths.test.intersectsX(60);
-    expect(intersections.length).to.equal(4);
-    expect(round(intersections[0].x)).to.equal(60);
-    expect(round(intersections[0].y)).to.equal(41.76);
-    expect(round(intersections[1].x)).to.equal(60);
-    expect(round(intersections[1].y)).to.equal(1.45);
-    expect(round(intersections[2].x)).to.equal(60);
-    expect(round(intersections[2].y)).to.equal(120);
-    expect(round(intersections[3].x)).to.equal(60);
-    expect(round(intersections[3].y)).to.equal(112.22);
-  });
-
-  it("Should find where a path intersects with an Y value", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(95, 50);
-    a.points.B = new a.Point(10, 30);
-    a.points.BCp2 = new a.Point(40, 20);
-    a.points.C = new a.Point(90, 30);
-    a.points.CCp1 = new a.Point(50, -30);
-    a.points.D = new a.Point(50, 130);
-    a.points.DCp1 = new a.Point(150, 30);
+  it('Should find where a path intersects with an X value', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(95, 50)
+    a.points.B = new a.Point(10, 30)
+    a.points.BCp2 = new a.Point(40, 20)
+    a.points.C = new a.Point(90, 30)
+    a.points.CCp1 = new a.Point(50, -30)
+    a.points.D = new a.Point(50, 130)
+    a.points.DCp1 = new a.Point(150, 30)
     a.paths.test = new a.Path()
       .move(a.points.A)
       .line(a.points.B)
       .curve(a.points.BCp2, a.points.CCp1, a.points.C)
       .curve(a.points.DCp1, a.points.DCp1, a.points.D)
-      .close();
-    let intersections = a.paths.test.intersectsY(60);
-    expect(intersections.length).to.equal(2);
-    expect(round(intersections[0].x)).to.equal(117.83);
-    expect(round(intersections[0].y)).to.equal(60);
-    expect(round(intersections[1].x)).to.equal(89.38);
-    expect(round(intersections[1].y)).to.equal(60);
-  });
+      .close()
+    let intersections = a.paths.test.intersectsX(60)
+    expect(intersections.length).to.equal(4)
+    expect(round(intersections[0].x)).to.equal(60)
+    expect(round(intersections[0].y)).to.equal(41.76)
+    expect(round(intersections[1].x)).to.equal(60)
+    expect(round(intersections[1].y)).to.equal(1.45)
+    expect(round(intersections[2].x)).to.equal(60)
+    expect(round(intersections[2].y)).to.equal(120)
+    expect(round(intersections[3].x)).to.equal(60)
+    expect(round(intersections[3].y)).to.equal(112.22)
+  })
 
-  it("Should throw an error when not passing a value to path.intersectsX", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.paths.test = new a.Path();
-    expect(() => a.paths.test.intersectsX()).to.throw();
-    expect(() => a.paths.test.intersectsY()).to.throw();
-  });
+  it('Should find where a path intersects with an Y value', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(95, 50)
+    a.points.B = new a.Point(10, 30)
+    a.points.BCp2 = new a.Point(40, 20)
+    a.points.C = new a.Point(90, 30)
+    a.points.CCp1 = new a.Point(50, -30)
+    a.points.D = new a.Point(50, 130)
+    a.points.DCp1 = new a.Point(150, 30)
+    a.paths.test = new a.Path()
+      .move(a.points.A)
+      .line(a.points.B)
+      .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+      .curve(a.points.DCp1, a.points.DCp1, a.points.D)
+      .close()
+    let intersections = a.paths.test.intersectsY(60)
+    expect(intersections.length).to.equal(2)
+    expect(round(intersections[0].x)).to.equal(117.83)
+    expect(round(intersections[0].y)).to.equal(60)
+    expect(round(intersections[1].x)).to.equal(89.38)
+    expect(round(intersections[1].y)).to.equal(60)
+  })
 
-  it("Should find the intersections between two paths", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(45, 60);
-    a.points.B = new a.Point(10, 30);
-    a.points.BCp2 = new a.Point(40, 20);
-    a.points.C = new a.Point(90, 30);
-    a.points.CCp1 = new a.Point(50, -30);
-    a.points.D = new a.Point(50, 130);
-    a.points.DCp1 = new a.Point(150, 30);
+  it('Should throw an error when not passing a value to path.intersectsX', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.paths.test = new a.Path()
+    expect(() => a.paths.test.intersectsX()).to.throw()
+    expect(() => a.paths.test.intersectsY()).to.throw()
+  })
 
-    a.points._A = new a.Point(55, 40);
-    a.points._B = new a.Point(0, 55);
-    a.points._BCp2 = new a.Point(40, -20);
-    a.points._C = new a.Point(90, 40);
-    a.points._CCp1 = new a.Point(50, -30);
-    a.points._D = new a.Point(40, 120);
-    a.points._DCp1 = new a.Point(180, 40);
+  it('Should find the intersections between two paths', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(45, 60)
+    a.points.B = new a.Point(10, 30)
+    a.points.BCp2 = new a.Point(40, 20)
+    a.points.C = new a.Point(90, 30)
+    a.points.CCp1 = new a.Point(50, -30)
+    a.points.D = new a.Point(50, 130)
+    a.points.DCp1 = new a.Point(150, 30)
+
+    a.points._A = new a.Point(55, 40)
+    a.points._B = new a.Point(0, 55)
+    a.points._BCp2 = new a.Point(40, -20)
+    a.points._C = new a.Point(90, 40)
+    a.points._CCp1 = new a.Point(50, -30)
+    a.points._D = new a.Point(40, 120)
+    a.points._DCp1 = new a.Point(180, 40)
 
     a.paths.example1 = new a.Path()
       .move(a.points.A)
       .line(a.points.B)
       .curve(a.points.BCp2, a.points.CCp1, a.points.C)
-      .curve(a.points.DCp1, a.points.DCp1, a.points.D);
+      .curve(a.points.DCp1, a.points.DCp1, a.points.D)
     a.paths.example2 = new a.Path()
       .move(a.points._A)
       .line(a.points._B)
       .curve(a.points._BCp2, a.points._CCp1, a.points._C)
-      .curve(a.points._DCp1, a.points._DCp1, a.points._D);
-    let intersections = a.paths.example1.intersects(a.paths.example2);
-    expect(intersections.length).to.equal(6);
-    expect(round(intersections[0].x)).to.equal(29.71);
-    expect(round(intersections[0].y)).to.equal(46.9);
-    expect(round(intersections[1].x)).to.equal(12.48);
-    expect(round(intersections[1].y)).to.equal(32.12);
-    expect(round(intersections[2].x)).to.equal(14.84);
-    expect(round(intersections[2].y)).to.equal(27.98);
-    expect(round(intersections[3].x)).to.equal(66.33);
-    expect(round(intersections[3].y)).to.equal(4.1);
-    expect(round(intersections[4].x)).to.equal(130.65);
-    expect(round(intersections[4].y)).to.equal(40.52);
-    expect(round(intersections[5].x)).to.equal(86.52);
-    expect(round(intersections[5].y)).to.equal(93.31);
-  });
+      .curve(a.points._DCp1, a.points._DCp1, a.points._D)
+    let intersections = a.paths.example1.intersects(a.paths.example2)
+    expect(intersections.length).to.equal(6)
+    expect(round(intersections[0].x)).to.equal(29.71)
+    expect(round(intersections[0].y)).to.equal(46.9)
+    expect(round(intersections[1].x)).to.equal(12.48)
+    expect(round(intersections[1].y)).to.equal(32.12)
+    expect(round(intersections[2].x)).to.equal(14.84)
+    expect(round(intersections[2].y)).to.equal(27.98)
+    expect(round(intersections[3].x)).to.equal(66.33)
+    expect(round(intersections[3].y)).to.equal(4.1)
+    expect(round(intersections[4].x)).to.equal(130.65)
+    expect(round(intersections[4].y)).to.equal(40.52)
+    expect(round(intersections[5].x)).to.equal(86.52)
+    expect(round(intersections[5].y)).to.equal(93.31)
+  })
 
-  it("Should throw an error when running path.intersect on an identical path", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.paths.test = new a.Path();
-    expect(() => a.paths.test.intersects(a.paths.test)).to.throw();
-  });
+  it('Should throw an error when running path.intersect on an identical path', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.paths.test = new a.Path()
+    expect(() => a.paths.test.intersects(a.paths.test)).to.throw()
+  })
 
-  it("Should divide a path", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(45, 60);
-    a.points.B = new a.Point(10, 30);
-    a.points.BCp2 = new a.Point(40, 20);
-    a.points.C = new a.Point(90, 30);
-    a.points.CCp1 = new a.Point(50, -30);
-    a.points.D = new a.Point(-60, 90);
-    a.points.E = new a.Point(90, 190);
+  it('Should divide a path', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(45, 60)
+    a.points.B = new a.Point(10, 30)
+    a.points.BCp2 = new a.Point(40, 20)
+    a.points.C = new a.Point(90, 30)
+    a.points.CCp1 = new a.Point(50, -30)
+    a.points.D = new a.Point(-60, 90)
+    a.points.E = new a.Point(90, 190)
     a.paths.test = new a.Path()
       .move(a.points.A)
       .line(a.points.B)
       .curve(a.points.BCp2, a.points.CCp1, a.points.C)
       .curve(a.points.E, a.points.D, a.points.A)
-      .close();
-    let divided = a.paths.test.divide();
-    expect(divided.length).to.equal(4);
-    expect(divided[0].ops[0].type).to.equal("move");
-    expect(divided[0].ops[0].to.x).to.equal(45);
-    expect(divided[0].ops[0].to.y).to.equal(60);
-    expect(divided[0].ops[1].type).to.equal("line");
-    expect(divided[0].ops[1].to.x).to.equal(10);
-    expect(divided[0].ops[1].to.y).to.equal(30);
-    expect(divided[1].ops[0].type).to.equal("move");
-    expect(divided[1].ops[0].to.x).to.equal(10);
-    expect(divided[1].ops[0].to.y).to.equal(30);
-    expect(divided[1].ops[1].type).to.equal("curve");
-    expect(divided[1].ops[1].cp1.x).to.equal(40);
-    expect(divided[1].ops[1].cp1.y).to.equal(20);
-    expect(divided[1].ops[1].cp2.x).to.equal(50);
-    expect(divided[1].ops[1].cp2.y).to.equal(-30);
-    expect(divided[1].ops[1].to.x).to.equal(90);
-    expect(divided[1].ops[1].to.y).to.equal(30);
-    expect(divided[2].ops[0].type).to.equal("move");
-    expect(divided[2].ops[0].to.x).to.equal(90);
-    expect(divided[2].ops[0].to.y).to.equal(30);
-    expect(divided[2].ops[1].type).to.equal("curve");
-    expect(divided[2].ops[1].cp1.x).to.equal(90);
-    expect(divided[2].ops[1].cp1.y).to.equal(190);
-    expect(divided[2].ops[1].cp2.x).to.equal(-60);
-    expect(divided[2].ops[1].cp2.y).to.equal(90);
-    expect(divided[2].ops[1].to.x).to.equal(45);
-    expect(divided[2].ops[1].to.y).to.equal(60);
-    expect(divided[3].ops[0].type).to.equal("move");
-    expect(divided[3].ops[0].to.x).to.equal(45);
-    expect(divided[3].ops[0].to.y).to.equal(60);
-    expect(divided[3].ops[1].type).to.equal("line");
-    expect(divided[3].ops[1].to.x).to.equal(45);
-    expect(divided[3].ops[1].to.y).to.equal(60);
-  });
+      .close()
+    let divided = a.paths.test.divide()
+    expect(divided.length).to.equal(4)
+    expect(divided[0].ops[0].type).to.equal('move')
+    expect(divided[0].ops[0].to.x).to.equal(45)
+    expect(divided[0].ops[0].to.y).to.equal(60)
+    expect(divided[0].ops[1].type).to.equal('line')
+    expect(divided[0].ops[1].to.x).to.equal(10)
+    expect(divided[0].ops[1].to.y).to.equal(30)
+    expect(divided[1].ops[0].type).to.equal('move')
+    expect(divided[1].ops[0].to.x).to.equal(10)
+    expect(divided[1].ops[0].to.y).to.equal(30)
+    expect(divided[1].ops[1].type).to.equal('curve')
+    expect(divided[1].ops[1].cp1.x).to.equal(40)
+    expect(divided[1].ops[1].cp1.y).to.equal(20)
+    expect(divided[1].ops[1].cp2.x).to.equal(50)
+    expect(divided[1].ops[1].cp2.y).to.equal(-30)
+    expect(divided[1].ops[1].to.x).to.equal(90)
+    expect(divided[1].ops[1].to.y).to.equal(30)
+    expect(divided[2].ops[0].type).to.equal('move')
+    expect(divided[2].ops[0].to.x).to.equal(90)
+    expect(divided[2].ops[0].to.y).to.equal(30)
+    expect(divided[2].ops[1].type).to.equal('curve')
+    expect(divided[2].ops[1].cp1.x).to.equal(90)
+    expect(divided[2].ops[1].cp1.y).to.equal(190)
+    expect(divided[2].ops[1].cp2.x).to.equal(-60)
+    expect(divided[2].ops[1].cp2.y).to.equal(90)
+    expect(divided[2].ops[1].to.x).to.equal(45)
+    expect(divided[2].ops[1].to.y).to.equal(60)
+    expect(divided[3].ops[0].type).to.equal('move')
+    expect(divided[3].ops[0].to.x).to.equal(45)
+    expect(divided[3].ops[0].to.y).to.equal(60)
+    expect(divided[3].ops[1].type).to.equal('line')
+    expect(divided[3].ops[1].to.x).to.equal(45)
+    expect(divided[3].ops[1].to.y).to.equal(60)
+  })
 
-  it("Should split a path on a curve", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(45, 60);
-    a.points.B = new a.Point(10, 30);
-    a.points.BCp2 = new a.Point(40, 20);
-    a.points.C = new a.Point(90, 30);
-    a.points.CCp1 = new a.Point(50, -30);
-    a.points.D = new a.Point(50, 130);
-    a.points.DCp1 = new a.Point(150, 30);
-
-    a.paths.test = new a.Path()
-      .move(a.points.A)
-      .line(a.points.B)
-      .curve(a.points.BCp2, a.points.CCp1, a.points.C)
-      .curve(a.points.DCp1, a.points.DCp1, a.points.D);
-
-    a.points.split = a.paths.test.shiftAlong(120);
-    let halves = a.paths.test.split(a.points.split);
-    let curve = halves[0].ops.pop();
-    expect(curve.type).to.equal("curve");
-    expect(round(curve.cp1.x)).to.equal(35.08);
-    expect(round(curve.cp1.y)).to.equal(21.64);
-    expect(round(curve.cp2.x)).to.equal(46.19);
-    expect(round(curve.cp2.y)).to.equal(-14.69);
-    expect(round(curve.to.x)).to.equal(72.53);
-    expect(round(curve.to.y)).to.equal(8.71);
-  });
-
-  it("Should split a path on a line", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(45, 60);
-    a.points.B = new a.Point(10, 30);
-    a.points.BCp2 = new a.Point(40, 20);
-    a.points.C = new a.Point(90, 30);
-    a.points.CCp1 = new a.Point(50, -30);
-    a.points.D = new a.Point(50, 130);
-    a.points.DCp1 = new a.Point(150, 30);
+  it('Should split a path on a curve', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(45, 60)
+    a.points.B = new a.Point(10, 30)
+    a.points.BCp2 = new a.Point(40, 20)
+    a.points.C = new a.Point(90, 30)
+    a.points.CCp1 = new a.Point(50, -30)
+    a.points.D = new a.Point(50, 130)
+    a.points.DCp1 = new a.Point(150, 30)
 
     a.paths.test = new a.Path()
       .move(a.points.A)
       .line(a.points.B)
       .curve(a.points.BCp2, a.points.CCp1, a.points.C)
-      .curve(a.points.DCp1, a.points.DCp1, a.points.D);
+      .curve(a.points.DCp1, a.points.DCp1, a.points.D)
 
-    a.points.split = a.paths.test.shiftAlong(20);
-    let halves = a.paths.test.split(a.points.split);
-    let line = halves[0].ops.pop();
-    expect(line.type).to.equal("line");
-    expect(round(line.to.x)).to.equal(29.81);
-    expect(round(line.to.y)).to.equal(46.98);
-  });
+    a.points.split = a.paths.test.shiftAlong(120)
+    let halves = a.paths.test.split(a.points.split)
+    let curve = halves[0].ops.pop()
+    expect(curve.type).to.equal('curve')
+    expect(round(curve.cp1.x)).to.equal(35.08)
+    expect(round(curve.cp1.y)).to.equal(21.64)
+    expect(round(curve.cp2.x)).to.equal(46.19)
+    expect(round(curve.cp2.y)).to.equal(-14.69)
+    expect(round(curve.to.x)).to.equal(72.53)
+    expect(round(curve.to.y)).to.equal(8.71)
+  })
 
-  it("Should trim a path when lines overlap", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(0, 0);
-    a.points.B = new a.Point(100, 100);
-    a.points.C = new a.Point(0, 100);
-    a.points.D = new a.Point(100, 0);
+  it('Should split a path on a line', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(45, 60)
+    a.points.B = new a.Point(10, 30)
+    a.points.BCp2 = new a.Point(40, 20)
+    a.points.C = new a.Point(90, 30)
+    a.points.CCp1 = new a.Point(50, -30)
+    a.points.D = new a.Point(50, 130)
+    a.points.DCp1 = new a.Point(150, 30)
+
+    a.paths.test = new a.Path()
+      .move(a.points.A)
+      .line(a.points.B)
+      .curve(a.points.BCp2, a.points.CCp1, a.points.C)
+      .curve(a.points.DCp1, a.points.DCp1, a.points.D)
+
+    a.points.split = a.paths.test.shiftAlong(20)
+    let halves = a.paths.test.split(a.points.split)
+    let line = halves[0].ops.pop()
+    expect(line.type).to.equal('line')
+    expect(round(line.to.x)).to.equal(29.81)
+    expect(round(line.to.y)).to.equal(46.98)
+  })
+
+  it('Should trim a path when lines overlap', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(0, 0)
+    a.points.B = new a.Point(100, 100)
+    a.points.C = new a.Point(0, 100)
+    a.points.D = new a.Point(100, 0)
 
     let test = new a.Path()
       .move(new a.Point(0, 20))
@@ -685,21 +723,21 @@ describe('Path', () => {
       .line(a.points.C)
       .line(a.points.D)
       .line(a.points.A)
-      .trim();
+      .trim()
 
-    expect(test.ops.length).to.equal(5);
-    expect(test.ops[2].to.x).to.equal(50);
-    expect(test.ops[2].to.y).to.equal(50);
-  });
+    expect(test.ops.length).to.equal(5)
+    expect(test.ops[2].to.x).to.equal(50)
+    expect(test.ops[2].to.y).to.equal(50)
+  })
 
-  it("Should trim a path when a line overlaps with a curve", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(0, 0);
-    a.points.B = new a.Point(100, 100);
-    a.points.C = new a.Point(0, 100);
-    a.points.D = new a.Point(100, 0);
+  it('Should trim a path when a line overlaps with a curve', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(0, 0)
+    a.points.B = new a.Point(100, 100)
+    a.points.C = new a.Point(0, 100)
+    a.points.D = new a.Point(100, 0)
 
     let test = new a.Path()
       .move(new a.Point(0, 20))
@@ -708,21 +746,21 @@ describe('Path', () => {
       .line(a.points.C)
       .line(a.points.D)
       .line(a.points.A)
-      .trim();
+      .trim()
 
-    expect(test.ops.length).to.equal(5);
-    expect(round(test.ops[2].to.x)).to.equal(72.19);
-    expect(round(test.ops[2].to.y)).to.equal(27.81);
-  });
+    expect(test.ops.length).to.equal(5)
+    expect(round(test.ops[2].to.x)).to.equal(72.19)
+    expect(round(test.ops[2].to.y)).to.equal(27.81)
+  })
 
-  it("Should trim a path when a curves overlap", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(0, 0);
-    a.points.B = new a.Point(100, 100);
-    a.points.C = new a.Point(0, 100);
-    a.points.D = new a.Point(100, 0);
+  it('Should trim a path when a curves overlap', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(0, 0)
+    a.points.B = new a.Point(100, 100)
+    a.points.C = new a.Point(0, 100)
+    a.points.D = new a.Point(100, 0)
 
     let test = new a.Path()
       .move(new a.Point(0, 20))
@@ -731,67 +769,70 @@ describe('Path', () => {
       .line(a.points.C)
       .curve(a.points.C, a.points.A, a.points.D)
       .line(a.points.A)
-      .trim();
+      .trim()
 
-    expect(test.ops.length).to.equal(5);
-    expect(round(test.ops[2].to.x)).to.equal(50);
-    expect(round(test.ops[2].to.y)).to.equal(11.01);
-  });
+    expect(test.ops.length).to.equal(5)
+    expect(round(test.ops[2].to.x)).to.equal(50)
+    expect(round(test.ops[2].to.y)).to.equal(11.01)
+  })
 
-  it("Should translate a path", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
-    a.points.A = new a.Point(0, 0);
-    a.points.B = new a.Point(100, 100);
-    a.points.C = new a.Point(0, 100);
-    a.points.D = new a.Point(100, 0);
+  it('Should translate a path', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
+    a.points.A = new a.Point(0, 0)
+    a.points.B = new a.Point(100, 100)
+    a.points.C = new a.Point(0, 100)
+    a.points.D = new a.Point(100, 0)
 
-    let base = new a.Path()
-      .move(a.points.A)
-      .curve(a.points.B, a.points.C, a.points.D);
-    let test = base.translate(10, 20);
+    let base = new a.Path().move(a.points.A).curve(a.points.B, a.points.C, a.points.D)
+    let test = base.translate(10, 20)
 
-    expect(test.ops.length).to.equal(2);
-    expect(test.ops[0].to.x).to.equal(10);
-    expect(test.ops[0].to.y).to.equal(20);
-    expect(test.ops[1].to.x).to.equal(110);
-    expect(test.ops[1].to.y).to.equal(20);
-  });
+    expect(test.ops.length).to.equal(2)
+    expect(test.ops[0].to.x).to.equal(10)
+    expect(test.ops[0].to.y).to.equal(20)
+    expect(test.ops[1].to.x).to.equal(110)
+    expect(test.ops[1].to.y).to.equal(20)
+  })
 
-  it("Should add a path attribute", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should add a path attribute', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
 
     a.paths.line = new a.Path()
       .move(new a.Point(0, 0))
       .line(new a.Point(0, 40))
-      .attr("class", "foo")
-      .attr("class", "bar");
-    expect(a.paths.line.attributes.get("class")).to.equal("foo bar");
-  });
+      .attr('class', 'foo')
+      .attr('class', 'bar')
+    expect(a.paths.line.attributes.get('class')).to.equal('foo bar')
+  })
 
-  it("Should overwrite a path attribute", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should overwrite a path attribute', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, part }) => {
+        paths.line = new Path()
+          .move(new Point(0, 0))
+          .line(new Point(0, 40))
+          .attr('class', 'foo')
+          .attr('class', 'bar')
+          .attr('class', 'overwritten', true)
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft().render()
 
-    // Paths from shorthand have the raise method
-    const { Path } = a.shorthand()
-    a.paths.line = new Path()
-      .move(new a.Point(0, 0))
-      .line(new a.Point(0, 40))
-      .attr("class", "foo")
-      .attr("class", "bar")
-      .attr("class", "overwritten", true);
-    expect(a.paths.line.attributes.get("class")).to.equal("overwritten");
-  });
+    // Paths from shorthand have the log method
+    expect(pattern.parts.test.paths.line.attributes.get('class')).to.equal('overwritten')
+  })
 
-  it("Should move along a path even if it lands just on a joint", () => {
-    let pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    let a = pattern.parts.a;
+  it('Should move along a path even if it lands just on a joint', () => {
+    let pattern = new Pattern()
+    pattern.parts.a = pattern.__createPartWithContext('a')
+    let a = pattern.parts.a
 
     a.paths.curve = new a.Path()
       .move(new a.Point(20.979322245694167, -219.8547313525503))
@@ -808,367 +849,325 @@ describe('Path', () => {
     expect(a.points.test).to.be.instanceOf(a.Point)
   })
 
-  it("Should add raise methods to a path", () => {
-    const raise = () => 'hello'
-    const p1 = new Path(10, 20).withRaise(raise);
-    expect(p1.raise()).to.equal('hello');
-  });
+  it('Should add log methods to a path', () => {
+    const log = () => 'hello'
+    const p1 = new Path(10, 20).withLog(log)
+    expect(p1.log()).to.equal('hello')
+  })
 
-  it("Should add raise methods to a path", () => {
-    const raise = () => 'hello'
-    const p1 = new Path().withRaise(raise);
-    expect(p1.raise()).to.equal('hello');
-  });
+  it('Should add log methods to a path', () => {
+    const log = () => 'hello'
+    const p1 = new Path().withLog(log)
+    expect(p1.log()).to.equal('hello')
+  })
 
-  it("Should set render to true/false", () => {
+  it('Should set render to true/false', () => {
     const p1 = new Path().setRender(false)
-    expect(p1.render).to.equal(false);
-  });
+    expect(p1.render).to.equal(false)
+  })
 
-  it("Should set class with setClass", () => {
+  it('Should set class with setClass', () => {
     const p1 = new Path().setClass('fabric')
     p1.setClass()
-    expect(p1.attributes.get('class')).to.equal('fabric');
-  });
+    expect(p1.attributes.get('class')).to.equal('fabric')
+  })
 
-  it("Should raise a warning when moving to a non-point", () => {
+  it('Should log a warning when moving to a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    expect(invalid).to.equal(false)
     try {
       p1.move('a')
+    } catch (err) {
+      expect('' + err).to.contain('check is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("check is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a line to a non-point", () => {
+  it('Should log a warning when drawing a line to a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    expect(invalid).to.equal(false)
     try {
       p1.line('a')
+    } catch (err) {
+      expect('' + err).to.contain('check is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("check is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a curve to a non-point", () => {
+  it('Should log a warning when drawing a curve to a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    const a = new Point(0,0)
-    const b = new Point(10,10)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    const a = new Point(0, 0)
+    const b = new Point(10, 10)
+    expect(invalid).to.equal(false)
     try {
       p1.move(b).curve(a, b, 'c')
+    } catch (err) {
+      expect('' + err).to.contain('check is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("check is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a curve with a Cp1 that is a non-point", () => {
+  it('Should log a warning when drawing a curve with a Cp1 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    const a = new Point(0,0)
-    const b = new Point(10,10)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    const a = new Point(0, 0)
+    const b = new Point(10, 10)
+    expect(invalid).to.equal(false)
     try {
       p1.move(b).curve(a, 'x', b)
+    } catch (err) {
+      expect('' + err).to.contain('check is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("check is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a curve with a Cp1 that is a non-point", () => {
+  it('Should log a warning when drawing a curve with a Cp1 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    const b = new Point(10,10)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    const b = new Point(10, 10)
+    expect(invalid).to.equal(false)
     try {
       p1.move(b).curve('a', b, b)
+    } catch (err) {
+      expect('' + err).to.contain('copy is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("copy is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a curve with a Cp2 that is a non-point", () => {
+  it('Should log a warning when drawing a curve with a Cp2 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    const b = new Point(10,10)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    const b = new Point(10, 10)
+    expect(invalid).to.equal(false)
     try {
       p1.move(b).curve(b, 'a', b)
+    } catch (err) {
+      expect('' + err).to.contain('copy is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("copy is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a _curve with a To that is a non-point", () => {
+  it('Should log a warning when drawing a _curve with a To that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    const b = new Point(10,10)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    const b = new Point(10, 10)
+    expect(invalid).to.equal(false)
     try {
       p1.move(b)._curve(b, 'a')
+    } catch (err) {
+      expect('' + err).to.contain('copy is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("copy is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a _curve with a Cp2 that is a non-point", () => {
+  it('Should log a warning when drawing a _curve with a Cp2 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    const b = new Point(10,10)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    const b = new Point(10, 10)
+    expect(invalid).to.equal(false)
     try {
       p1.move(b)._curve('a', b)
+    } catch (err) {
+      expect('' + err).to.contain('copy is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("copy is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a curve_ with a To that is a non-point", () => {
+  it('Should log a warning when drawing a curve_ with a To that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    const b = new Point(10,10)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    const b = new Point(10, 10)
+    expect(invalid).to.equal(false)
     try {
       p1.move(b).curve_(b, 'a')
+    } catch (err) {
+      expect('' + err).to.contain('copy is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("copy is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when drawing a curve_ with a Cp2 that is a non-point", () => {
+  it('Should log a warning when drawing a curve_ with a Cp2 that is a non-point', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const p1 = new Path().withRaise(raise)
-    const b = new Point(10,10)
-    expect(invalid).to.equal(false);
+    const log = { warning: () => (invalid = true) }
+    const p1 = new Path().withLog(log)
+    const b = new Point(10, 10)
+    expect(invalid).to.equal(false)
     try {
       p1.move(b).curve_('a', b)
+    } catch (err) {
+      expect('' + err).to.contain('copy is not a function')
     }
-    catch (err) {
-      expect(''+err).to.contain("copy is not a function")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should add a noop operation", () => {
+  it('Should add a noop operation', () => {
     const p1 = new Path().noop()
-    expect(p1.ops.length).to.equal(1);
-    expect(p1.ops[0].type).to.equal('noop');
-  });
+    expect(p1.ops.length).to.equal(1)
+    expect(p1.ops[0].type).to.equal('noop')
+  })
 
-  it("Should handle an insop operation", () => {
-    const a = new Point(0,0)
-    const b = new Point(10,10)
+  it('Should handle an insop operation', () => {
+    const a = new Point(0, 0)
+    const b = new Point(10, 10)
     const p1 = new Path().move(a).line(b)
     const p2 = new Path().noop('test').insop('test', p1)
-    expect(p2.ops.length).to.equal(2);
-    expect(p1.ops[0].type).to.equal('move');
-    expect(p1.ops[1].type).to.equal('line');
-  });
+    expect(p2.ops.length).to.equal(2)
+    expect(p1.ops[0].type).to.equal('move')
+    expect(p1.ops[1].type).to.equal('line')
+  })
 
-  it("Should raise a warning when an insop operation used an falsy ID", () => {
+  it('Should log a warning when an insop operation used an falsy ID', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const a = new Point(0,0)
-    const b = new Point(10,10)
+    const log = { warning: () => (invalid = true) }
+    const a = new Point(0, 0)
+    const b = new Point(10, 10)
     const p1 = new Path().move(a).line(b)
-    expect(invalid).to.equal(false);
-    const p2 = new Path().withRaise(raise).noop('test').insop(false, p1)
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(false)
+    const p2 = new Path().withLog(log).noop('test').insop(false, p1)
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when an insop operation used an falsy ID", () => {
+  it('Should log a warning when an insop operation used an falsy ID', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    const a = new Point(0,0)
-    const b = new Point(10,10)
+    const log = { warning: () => (invalid = true) }
+    const a = new Point(0, 0)
+    const b = new Point(10, 10)
     const p1 = new Path().move(a).line(b)
-    expect(invalid).to.equal(false);
+    expect(invalid).to.equal(false)
     try {
-      new Path().withRaise(raise).noop('test').insop('test')
+      new Path().withLog(log).noop('test').insop('test')
+    } catch (err) {
+      expect('' + err).to.contain("Cannot read properties of undefined (reading 'ops')")
     }
-    catch (err) {
-      expect(''+err).to.contain("Cannot read properties of undefined (reading 'ops')")
+    expect(invalid).to.equal(true)
+  })
+
+  it('Should log a warning when setting an attribute without a name', () => {
+    let invalid = false
+    const log = { warning: () => (invalid = true) }
+    expect(invalid).to.equal(false)
+    const p1 = new Path().withLog(log).attr()
+    expect(invalid).to.equal(true)
+  })
+
+  it('Should log a warning when setting an attribute without a value', () => {
+    let invalid = false
+    const log = { warning: () => (invalid = true) }
+    expect(invalid).to.equal(false)
+    const p1 = new Path().withLog(log).attr('test')
+    expect(invalid).to.equal(true)
+  })
+
+  it('Should log a warning when calling offset without a distance', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, points }) => {
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 40)).attr('class', 'foo')
+        paths.a = new Path().move(points.a).line(points.b)
+        paths.b = paths.a.offset()
+        return part
+      },
     }
-    expect(invalid).to.equal(true);
-  });
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.store.logs.error.length).to.equal(2)
+    expect(pattern.store.logs.error[0]).to.equal(
+      'Called `Path.offset(distance)` but `distance` is not a number'
+    )
+  })
 
-  it("Should raise a warning when setting an attribute without a name", () => {
+  it('Should log a warning when calling join without a path', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, points }) => {
+        paths.line = new Path().move(new Point(0, 0)).line(new Point(0, 40)).attr('class', 'foo')
+        paths.a = new Path().move(points.a).line(points.b).join()
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.store.logs.error.length).to.equal(2)
+    expect(pattern.store.logs.error[0]).to.equal(
+      'Called `Path.join(that)` but `that` is not a `Path` object'
+    )
+  })
+
+  it('Should log a warning when calling start on a path without drawing operations', () => {
     let invalid = false
-    const raise = { warning: () => invalid = true }
-    expect(invalid).to.equal(false);
-    const p1 = new Path().withRaise(raise).attr()
-    expect(invalid).to.equal(true);
-  });
-
-  it("Should raise a warning when setting an attribute without a value", () => {
-    let invalid = false
-    const raise = { warning: () => invalid = true }
-    expect(invalid).to.equal(false);
-    const p1 = new Path().withRaise(raise).attr('test')
-    expect(invalid).to.equal(true);
-  });
-
-  it("Should raise a warning when calling offset without a distance", () => {
-    const pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    const { Path, Point, points, paths } = pattern.parts.a.shorthand()
-    points.a = new Point(0,0)
-    points.b = new Point(10,10)
-    paths.a = new Path().move(points.a).line(points.b)
-    paths.b = paths.a.offset()
-    expect(pattern.events.error.length).to.equal(1)
-    expect(pattern.events.error[0]).to.equal("Called `Path.offset(distance)` but `distance` is not a number")
-  });
-
-  it("Should raise a warning when calling join without a path", () => {
-    const pattern = new Pattern();
-    pattern.parts.a = new pattern.Part();
-    const { Path, Point, points, paths } = pattern.parts.a.shorthand()
-    points.a = new Point(0,0)
-    points.b = new Point(10,10)
+    const log = { error: () => (invalid = true) }
+    expect(invalid).to.equal(false)
     try {
-      //paths.a = new Path().move(points.a).line(points.b).join()
-      pattern.parts.a.paths.a = new Path().move(points.a).line(points.b).join()
+      new Path().withLog(log).start()
+    } catch (err) {
+      expect('' + err).to.contain("Cannot read properties of undefined (reading 'to')")
     }
-    catch (err) {
-      expect(''+err).to.contain("Cannot read properties of undefined (reading 'ops')")
-    }
-    expect(pattern.events.error.length).to.equal(1)
-    expect(pattern.events.error[0]).to.equal("Called `Path.join(that)` but `that` is not a `Path` object")
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when calling start on a path without drawing operations", () => {
+  it('Should log a warning when calling end on a path without drawing operations', () => {
     let invalid = false
-    const raise = { error: () => invalid = true }
-    expect(invalid).to.equal(false);
+    const log = { error: () => (invalid = true) }
+    expect(invalid).to.equal(false)
     try {
-      new Path().withRaise(raise).start()
+      new Path().withLog(log).end()
+    } catch (err) {
+      expect('' + err).to.contain("Cannot read properties of undefined (reading 'type')")
     }
-    catch (err) {
-      expect(''+err).to.contain("Cannot read properties of undefined (reading 'to')")
-    }
-    expect(invalid).to.equal(true);
-  });
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when calling end on a path without drawing operations", () => {
+  it('Should log a warning when calling shiftAlong but distance is not a number', () => {
     let invalid = false
-    const raise = { error: () => invalid = true }
-    expect(invalid).to.equal(false);
-    try {
-      new Path().withRaise(raise).end()
-    }
-    catch (err) {
-      expect(''+err).to.contain("Cannot read properties of undefined (reading 'type')")
-    }
-    expect(invalid).to.equal(true);
-  });
+    const log = { error: () => (invalid = true) }
+    expect(invalid).to.equal(false)
+    new Path().withLog(log).move(new Point(0, 0)).line(new Point(10, 10)).shiftAlong()
+    expect(invalid).to.equal(true)
+  })
 
-  it("Should raise a warning when calling shiftAlong but distance is not a number", () => {
-    let invalid = false
-    const raise = { error: () => invalid = true }
-    expect(invalid).to.equal(false);
-    new Path()
-      .withRaise(raise)
-      .move(new Point(0,0))
-      .line(new Point(10,10))
-      .shiftAlong()
-    expect(invalid).to.equal(true);
-  });
+  it('Should log a warning when calling shiftFractionalong but fraction is not a number', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, points }) => {
+        points.a = new Path().move(new Point(0, 0)).line(new Point(0, 40)).shiftFractionAlong()
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.store.logs.error[0]).to.equal(
+      'Called `Path.shiftFractionAlong(fraction)` but `fraction` is not a number'
+    )
+  })
 
-  it("Should raise a warning when calling shiftFractionalong but fraction is not a number", () => {
-    let invalid = false
-    const raise = {
-      error: () => invalid = true,
-      warning: () => invalid = true,
+  it('Should log a warning when splitting a path on a non-point', () => {
+    const part = {
+      name: 'test',
+      draft: ({ paths, Path, Point, points }) => {
+        points.a = new Path().move(new Point(0, 0)).line(new Point(0, 40)).split()
+        return part
+      },
     }
-    expect(invalid).to.equal(false);
-    new Path()
-      .withRaise(raise)
-      .move(new Point(0,0).withRaise(raise))
-      .line(new Point(10,10).withRaise(raise))
-      .line(new Point(10,20).withRaise(raise))
-      .shiftFractionAlong()
-    expect(invalid).to.equal(true);
-  });
-
-  it("Should raise a warning when splitting a path on a non-point", () => {
-    let invalid = false
-    const raise = {
-      error: () => invalid = true,
-      warning: () => invalid = true,
-    }
-    const from = new Point(0,0).withRaise(raise)
-    const cp1 =  new Point(10,0).withRaise(raise)
-    const cp2 =  new Point(90,0).withRaise(raise)
-    const to =   new Point(100,0).withRaise(raise)
-    const path = new Path()
-      .withRaise(raise)
-      .move(from)
-      .curve(cp1, cp2, to)
-      .line(from)
-      .line(cp1)
-    try {
-      path.split()
-    }
-    catch (err) {
-      expect(''+err).to.contain("Cannot read properties of undefined (reading 'check')")
-    }
-    expect(invalid).to.equal(true);
-  });
-
-  it("Should raise a warning when splitting a path on a non-point", () => {
-    let invalid = false
-    const raise = {
-      error: () => invalid = true,
-      warning: () => invalid = true,
-    }
-    const from = new Point(0,0).withRaise(raise)
-    const cp1 =  new Point(10,0).withRaise(raise)
-    const cp2 =  new Point(90,0).withRaise(raise)
-    const to =   new Point(100,0).withRaise(raise)
-    const path = new Path()
-      .withRaise(raise)
-      .move(from)
-      .curve(cp1, cp2, to)
-      .line(from)
-    try {
-      path.split()
-    }
-    catch (err) {
-      expect(''+err).to.contain("Cannot read properties of undefined (reading 'check')")
-    }
-    expect(invalid).to.equal(true);
-  });
-});
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(pattern.store.logs.error[0]).to.equal(
+      'Called `Path.split(point)` but `point` is not a `Point` object'
+    )
+  })
+})

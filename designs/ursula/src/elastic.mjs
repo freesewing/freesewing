@@ -1,8 +1,19 @@
 import { gusset } from './gusset.mjs'
 
-function ursulaElastic(part) {
-  const { options, Point, points, Path, paths, store, utils, units,
-    sa, paperless, macro } = part.shorthand()
+function ursulaElastic({
+  options,
+  Point,
+  points,
+  Path,
+  paths,
+  store,
+  utils,
+  units,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   // Stretch utility method
   store.set('elasticScale', utils.stretchToScale(options.elasticStretch))

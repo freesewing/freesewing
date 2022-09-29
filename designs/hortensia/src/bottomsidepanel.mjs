@@ -1,4 +1,4 @@
-export function bottomsidepanel (points, topMiddle, w, h, sizeRatio) {
+export function bottomsidepanel(points, topMiddle, w, h, sizeRatio) {
   const c = 0.551915024494 // circle constant
   const cornerCP = 20 * sizeRatio
 

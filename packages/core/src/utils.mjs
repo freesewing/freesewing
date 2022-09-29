@@ -356,16 +356,16 @@ export { Bezier }
 export function pctBasedOn(measurement) {
   return {
     toAbs: (val, { measurements }) => measurements[measurement] * val,
-    fromAbs: (val, { measurements }) => Math.round((10000 * val) / measurements[measurement]) / 10000,
+    fromAbs: (val, { measurements }) =>
+      Math.round((10000 * val) / measurements[measurement]) / 10000,
   }
 }
 
 /** Generates the transform attributes needed for a given part */
 export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
-
   const transforms = []
-  let xTotal = x || 0;
-  let yTotal = y || 0;
+  let xTotal = x || 0
+  let yTotal = y || 0
   let scaleX = 1
   let scaleY = 1
 
@@ -391,8 +391,8 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   if (rotate) {
     // we can put the center as the rotation origin, so get the center
     const center = {
-      x: part.topLeft.x + part.width/2,
-      y: part.topLeft.y + part.height/2,
+      x: part.topLeft.x + part.width / 2,
+      y: part.topLeft.y + part.height / 2,
     }
 
     // add the rotation around the center to the transforms
@@ -400,9 +400,7 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   }
 
   // put the translation before any other transforms to avoid having to make complex calculations once the matrix has been rotated or scaled
-  if (xTotal !== 0 || yTotal !== 0) transforms.unshift(
-    `translate(${xTotal} ${yTotal})`
-  )
+  if (xTotal !== 0 || yTotal !== 0) transforms.unshift(`translate(${xTotal} ${yTotal})`)
 
   return {
     transform: transforms.join(' '),
@@ -410,135 +408,7 @@ export const generatePartTransform = (x, y, rotate, flipX, flipY, part) => {
   }
 }
 
-// Add part-level options
-const addPartOptions = (part, config) => {
-  if (part.options) {
-    for (const optionName in part.options) {
-      config.options[optionName] = part.options[optionName]
-    }
-  }
-  if (part.from) addPartOptions(part.from, config)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) addPartOptions(dep, config)
-    } else addPartOptions(part.after, config)
-  }
-
-  return config
-}
-
-/*
-// Helper method for detecting a array with only strings
-const isStringArray = val => (Array.isArray(val) && val.length > 0)
-  ? val.reduce((prev=true, cur) => (prev && typeof cur === 'string'))
-  : false
-// Helper method for detecting an object
-const isObject = obj => obj && typeof obj === 'object'
-
-// Hat-tip to jhildenbiddle => https://stackoverflow.com/a/48218209
-const mergeOptionSubgroup = (...objects) => objects.reduce((prev, obj) => {
-  Object.keys(obj).forEach(key => {
-    const pVal = prev[key];
-    const oVal = obj[key];
-
-    if (Array.isArray(pVal) && Array.isArray(oVal)) {
-      prev[key] = pVal.concat(...oVal);
-    }
-    else if (isObject(pVal) && isObject(oVal)) {
-      prev[key] = mergeOptionSubgroup(pVal, oVal);
-    }
-    else {
-      prev[key] = oVal;
-    }
-  })
-
-  return prev
-}, {})
-
-const mergeOptionGroups = (cur, add) => {
-  if (isStringArray(cur) && isStringArray(add)) return [...new Set([...cur, ...add])]
-  else if (!Array.isArray(cur) && !Array.isArray(add)) return mergeOptionSubgroup(cur, add)
-  else {
-    const all = [...cur]
-    for (const entry of add) {
-      if (typeof add === 'string' && all.indexOf(entry) === -1) all.push(entry)
-      else all.push(entry)
-    }
-    return all
-  }
-
-  return cur
-}
-*/
-// Add part-level optionGroups
-const addPartOptionGroups = (part, config) => {
-  if (typeof config.optionGroups === 'undefined') {
-    if (part.optionGroups) config.optionGroups = part.optionGroups
-    return config
-  }
-  if (part.optionGroups) {
-    for (const group in part.optionGroups) {
-      if (typeof config.optionGroups[group] === 'undefined') config.optionGroups[group] = part.optionGroups[group]
-      else config.optionGroups[group] = mergeOptionGroups(config.optionGroups[group], part.optionGroups[group])
-    }
-  }
-  if (part.from) addPartOptionGroups(part.from, config)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) addPartOptionGroups(dep, config)
-    } else addPartOptionGroups(part.after, config)
-  }
-
-  return config
-}
-
-// Add part-level measurements
-const addPartMeasurements = (part, config, raise, list=false) => {
-  if (!list) list = config.measurements
-    ? [...config.measurements]
-    : []
-  if (part.measurements) {
-    for (const m of part.measurements) list.push(m)
-  }
-  if (part.from) addPartMeasurements(part.from, config, raise, list)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) addPartMeasurements(dep, config, raise, list)
-    } else addPartMeasurements(part.after, config, raise, list)
-  }
-
-  // Weed out duplicates
-  config.measurements = [...new Set(list)]
-
-  return config
-}
-
-// Add part-level optional measurements
-const addPartOptionalMeasurements = (part, config, raise, list=false) => {
-  if (!list) list = config.optionalMeasurements
-    ? [...config.optionalMeasurements]
-    : []
-  if (part.optionalMeasurements) {
-    for (const m of part.optionalMeasurements) {
-      // Don't add it's a required measurement for another part
-      if (config.measurements.indexOf(m) === -1) list.push(m)
-    }
-  }
-  if (part.from) addPartOptionalMeasurements(part.from, config, list)
-  if (part.after) {
-    if (Array.isArray(part.after)) {
-      for (const dep of part.after) addPartOptionalMeasurements(dep, config, list)
-    } else addPartOptionalMeasurements(part.after, config, list)
-  }
-
-  // Weed out duplicates
-  config.optionalMeasurements = [...new Set(list)]
-
-  return config
-}
-
-
-export const mergeDependencies = (dep=[], current=[]) => {
+export const mergeDependencies = (dep = [], current = []) => {
   // Current dependencies
   const list = []
   if (Array.isArray(current)) list.push(...current)
@@ -557,43 +427,128 @@ export const mergeDependencies = (dep=[], current=[]) => {
   return deps
 }
 
-// Add part-level dependencies
-export const addPartDependencies = (part, config) => {
+// Decorate an object with a non-enumerable property
+export function addNonEnumProp(obj, name, value) {
+  Object.defineProperty(obj, name, {
+    enumerable: false,
+    configurable: false,
+    writable: true,
+    value,
+  })
+}
+
+// Add part-level options
+const addPartOptions = (part, config, store) => {
+  if (part.options) {
+    for (const optionName in part.options) {
+      store.log.debug(`Config resolver: Option __${optionName}__ in ${part.name}`)
+      config.options[optionName] = part.options[optionName]
+    }
+  }
+  if (part.from) addPartOptions(part.from, config, store)
   if (part.after) {
-    if (typeof config.dependencies === 'undefined') config.dependencies = {}
-    config.dependencies[part.name] = mergeDependencies(config.dependencies[part.name], part.after)
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartOptions(dep, config, store)
+    } else addPartOptions(part.after, config, store)
   }
 
   return config
 }
+
+// Add part-level measurements
+const addPartMeasurements = (part, config, store, list = false) => {
+  if (!list) list = config.measurements ? [...config.measurements] : []
+  if (part.measurements) {
+    for (const m of part.measurements) {
+      list.push(m)
+      store.log.debug(`Config resolver: Measurement __${m}__ is required in ${part.name}`)
+    }
+  }
+  if (part.from) addPartMeasurements(part.from, config, store, list)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartMeasurements(dep, config, store, list)
+    } else addPartMeasurements(part.after, config, store, list)
+  }
+
+  // Weed out duplicates
+  config.measurements = [...new Set(list)]
+
+  return config
+}
+
+// Add part-level optional measurements
+const addPartOptionalMeasurements = (part, config, store, list = false) => {
+  if (!list) list = config.optionalMeasurements ? [...config.optionalMeasurements] : []
+  if (part.optionalMeasurements) {
+    for (const m of part.optionalMeasurements) {
+      // Don't add it's a required measurement for another part
+      if (config.measurements.indexOf(m) === -1) {
+        store.log.debug(`Config resolver: Measurement __${m}__ is optional in ${part.name}`)
+        list.push(m)
+      }
+    }
+  }
+  if (part.from) addPartOptionalMeasurements(part.from, config, store, list)
+  if (part.after) {
+    if (Array.isArray(part.after)) {
+      for (const dep of part.after) addPartOptionalMeasurements(dep, config, store, list)
+    } else addPartOptionalMeasurements(part.after, config, store, list)
+  }
+
+  // Weed out duplicates
+  config.optionalMeasurements = [...new Set(list)]
+
+  return config
+}
+
+// Add part-level dependencies
+//export const addPartDependencies = (part, config, store) => {
+//  if (part.after) {
+//    if (typeof config.dependencies === 'undefined') config.dependencies = {}
+//    config.dependencies[part.name] = mergeDependencies(config.dependencies[part.name], part.after)
+//  }
+//
+//  return config
+//}
 
 // Add part-level plugins
-export const addPartPlugins = (part, config, raise) => {
+export const addPartPlugins = (part, config, store) => {
+  const plugins = {}
   if (!part.plugins) return config
-  if (!Array.isArray(part.plugins)) part.plugins = [ part.plugins ]
+  for (const plugin of config.plugins) plugins[plugin.name] = plugin
+  if (!Array.isArray(part.plugins)) part.plugins = [part.plugins]
   for (const plugin of part.plugins) {
+    store.log.debug(`Config resolver: Plugin __${plugin.name}__ in ${part.name}`)
     // Do not overwrite an existing plugin with a conditional plugin unless it is also conditional
     if (plugin.plugin && plugin.condition) {
-      if (config.plugins[plugin.plugin.name]?.condition) {
-        raise.info(`Plugin \`${plugin.plugin.name}\` was re-requested conditionally. Overwriting earlier condition.`)
-        config.plugins[plugin.plugin.name] = plugin
-      }
-      else raise.info(`Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading.`)
+      if (plugins[plugin.plugin.name]?.condition) {
+        store.log.info(
+          `Plugin \`${plugin.plugin.name}\` was re-requested conditionally. Overwriting earlier condition.`
+        )
+        plugins[plugin.plugin.name] = plugin
+      } else
+        store.log.info(
+          `Plugin \`${plugin.plugin.name}\` was requested conditionally, but is already loaded explicitly. Not loading.`
+        )
+    } else {
+      plugins[plugin.name] = plugin
+    }
   }
-    else config.plugins[plugin.name] = plugin
+
+  return {
+    ...config,
+    plugins: [...new Set(Object.values(plugins))],
   }
+}
+
+export const addPartConfig = (part, config, store) => {
+  // Add parts, using set to keep them unique in the array
+  config.parts = [...new Set(config.parts).add(part)]
+  config = addPartOptions(part, config, store)
+  config = addPartMeasurements(part, config, store)
+  config = addPartOptionalMeasurements(part, config, store)
+  config = addPartPlugins(part, config, store)
 
   return config
 }
-
-export const addPartConfig = (part, config, raise) => {
-  config = addPartOptions(part, config, raise)
-  config = addPartMeasurements(part, config, raise)
-  config = addPartOptionalMeasurements(part, config, raise)
-  config = addPartDependencies(part, config, raise)
-  config = addPartOptionGroups(part, config, raise)
-  config = addPartPlugins(part, config, raise)
-
-  return config
-}
-

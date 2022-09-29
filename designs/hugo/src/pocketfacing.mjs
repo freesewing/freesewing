@@ -1,11 +1,10 @@
 import { pocket } from './pocket.mjs'
 
-function hugoPocketFacing(part) {
+function hugoPocketFacing({ sa, points, Path, paths, complete, paperless, macro, store, part }) {
+  return part
   // Remove clutter
   const facing = part.paths.facing
   part.paths = {}
-
-  let { sa, points, Path, paths, complete, paperless, macro, store } = part.shorthand()
 
   paths.seam = facing
     .line(points.pocketTop)
@@ -47,5 +46,6 @@ function hugoPocketFacing(part) {
 export const pocketFacing = {
   name: 'hugo.pocketFacing',
   from: pocket,
+  hideDependencies: true,
   draft: hugoPocketFacing,
 }

@@ -10,6 +10,7 @@ import { grainline } from './grainline.mjs'
 import { title } from './title.mjs'
 import { scalebox } from './scalebox.mjs'
 import { textSize } from './textsize.mjs'
+import { bartack } from './bartack.mjs'
 
 // Setup our new design
 const Legend = new Design({
@@ -29,6 +30,7 @@ const Legend = new Design({
     title,
     scalebox,
     textSize,
+    bartack,
   ],
 })
 
@@ -48,5 +50,6 @@ export {
   title,
   scalebox,
   textSize,
+  bartack,
   Legend,
 }

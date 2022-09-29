@@ -6,7 +6,7 @@ const allLineTypes = ['note', 'mark', 'contrast', 'help']
 const allLineStrokes = ['dotted', 'dashed', 'lashed']
 const allLineWidths = ['stroke-xs', 'stroke-sm', 'default', 'stroke-lg', 'stroke-xl', 'stroke-xxl']
 
-function legendFabricLines(part) {
+function legendFabricLines({ part }) {
   let y = 10
   for (const t of allFabricTypes) {
     drawLine(part, y, t)
@@ -16,7 +16,7 @@ function legendFabricLines(part) {
   return box(part, 120, 65)
 }
 
-function legendLineStrokes(part) {
+function legendLineStrokes({ part }) {
   let y = 10
   for (const t of allLineStrokes) {
     drawLine(part, y, t)
@@ -26,7 +26,7 @@ function legendLineStrokes(part) {
   return box(part, 120, 50)
 }
 
-function legendLineWidths(part) {
+function legendLineWidths({ part }) {
   let y = 10
   for (const t of allLineWidths) {
     drawLine(part, y, t)
@@ -36,7 +36,7 @@ function legendLineWidths(part) {
   return box(part, 120, 95)
 }
 
-function legendSaLines(part) {
+function legendSaLines({ part }) {
   let y = 10
   for (const t of allFabricTypes) {
     drawLine(part, y, t + ' sa')
@@ -46,9 +46,7 @@ function legendSaLines(part) {
   return box(part, 120, 65)
 }
 
-function legendOtherLines(part) {
-  const { points, Point, paths, Path } = part.shorthand()
-
+function legendOtherLines({ points, Point, paths, Path, part }) {
   const drawLine = (y, t) => {
     points[`${t}From`] = new Point(10, y)
     points[`${t}To`] = new Point(w, y)

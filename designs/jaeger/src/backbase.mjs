@@ -10,9 +10,8 @@ import {
   reduceHipsStandardFraction,
 } from './options.mjs'
 
-function jaegerBackBase(part) {
+function jaegerBackBase({ store, points, measurements, options, Point, paths, Path, part }) {
   calculateRatios(part)
-  let { store, points, measurements, options, Point, paths, Path } = part.shorthand()
 
   /**
    * Shaping the back seam

@@ -1,9 +1,18 @@
 import { front } from './front.mjs'
 
-function jaegerChestPocketWelt(part) {
-  let { paperless, sa, store, complete, points, options, macro, Point, paths, Path } =
-    part.shorthand()
-
+function jaegerChestPocketWelt({
+  paperless,
+  sa,
+  store,
+  complete,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   let width = store.get('chestPocketWidth')
   let height = store.get('chestPocketWeltHeight')
   let angle = options.chestPocketAngle

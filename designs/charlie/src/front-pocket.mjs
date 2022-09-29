@@ -1,9 +1,17 @@
 import { front } from './front.mjs'
 
-function draftCharlieFrontPocket (part) {
-  // Shorthand
-  let { points, paths, Path, complete, paperless, macro, snippets, Snippet, sa } = part.shorthand()
-
+function draftCharlieFrontPocket({
+  points,
+  paths,
+  Path,
+  complete,
+  paperless,
+  macro,
+  snippets,
+  Snippet,
+  sa,
+  part,
+}) {
   // Clean up
   for (let id in paths) delete paths[id]
   for (let id in snippets) delete snippets[id]

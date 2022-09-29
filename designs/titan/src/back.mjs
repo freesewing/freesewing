@@ -2,7 +2,24 @@ import { pctBasedOn } from '@freesewing/core'
 import { elastics } from '@freesewing/snapseries'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function titanBack(part) {
+function titanBack({
+  points,
+  Point,
+  paths,
+  Path,
+  measurements,
+  options,
+  complete,
+  paperless,
+  store,
+  macro,
+  utils,
+  snippets,
+  Snippet,
+  sa,
+  absoluteOptions,
+  part,
+}) {
   /*
    * Helper method to draw the inseam path
    */
@@ -84,25 +101,6 @@ function titanBack(part) {
       .shiftFractionTowards(points.crossSeamCurveMax, options.crossSeamCurveBend)
       .rotate(options.crossSeamCurveAngle, points.fork)
   }
-
-  // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    utils,
-    snippets,
-    Snippet,
-    sa,
-    absoluteOptions,
-  } = part.shorthand()
 
   // Let's get to work
   points.waistX = new Point(-1 * measurements.waistBackArc * (1 + options.waistEase), 0)

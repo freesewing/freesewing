@@ -1,11 +1,11 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { measurements, options, BuildMainShape } from './shape.mjs'
 
-function penelopeFront(part) {
-  const { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
-    part.shorthand()
+function penelopeFront(params) {
+  const { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro, part } =
+    params
 
-  BuildMainShape(part, true)
+  BuildMainShape(params, true)
 
   paths.seam = paths.leftSide
     .clone()
@@ -61,6 +61,6 @@ export const front = {
   name: 'penelope.front',
   measurements,
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: penelopeFront,
 }

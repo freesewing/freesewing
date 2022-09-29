@@ -3,24 +3,22 @@ import { back } from './back.mjs'
 import { front as titanFront } from '@freesewing/titan'
 import { back as titanBack } from '@freesewing/titan'
 
-function draftCharlieWaistband (part) {
-  // Shorthand
-  let {
-    points,
-    Point,
-    paths,
-    Path,
-    options,
-    complete,
-    paperless,
-    store,
-    macro,
-    snippets,
-    Snippet,
-    sa,
-    absoluteOptions,
-  } = part.shorthand()
-
+function draftCharlieWaistband({
+  points,
+  Point,
+  paths,
+  Path,
+  options,
+  complete,
+  paperless,
+  store,
+  macro,
+  snippets,
+  Snippet,
+  sa,
+  absoluteOptions,
+  part,
+}) {
   store.set('waistbandWidth', absoluteOptions.waistbandWidth)
 
   if (options.waistbandCurve > 0) {
@@ -143,7 +141,7 @@ function draftCharlieWaistband (part) {
 
 export const waistband = {
   name: 'charlie.waistband',
-  after: [ titanBack, titanFront, back, front ],
+  after: [titanBack, titanFront, back, front],
   options: {
     waistbandCurve: { pct: 0, min: 0, max: 35, menu: 'fit' },
   },

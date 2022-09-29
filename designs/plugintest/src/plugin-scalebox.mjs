@@ -1,9 +1,7 @@
 import { scaleboxPlugin } from '@freesewing/plugin-scalebox'
 import { base } from './base.mjs'
 
-const pluginScalebox = (part) => {
-  const { Point, points, macro, options } = part.shorthand()
-
+const pluginScalebox = ({ Point, points, macro, options, part }) => {
   if (['scalebox', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(0, 0)
 

@@ -1,10 +1,19 @@
 import { topSleeve as bentTopSleeve } from '@freesewing/bent'
 import { sleeveVentLength, sleeveVentWidth } from './options.mjs'
 
-function jaegerTopSleeve(part) {
-  const { paperless, sa, utils, complete, points, measurements, options, macro, paths, Path } =
-    part.shorthand()
-
+function jaegerTopSleeve({
+  paperless,
+  sa,
+  utils,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  paths,
+  Path,
+  part,
+}) {
   // Vent
   let slope = 15
   let width = measurements.wrist * (1 + options.cuffEase) * options.sleeveVentWidth

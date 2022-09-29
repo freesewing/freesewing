@@ -1,20 +1,19 @@
 import { back } from './back.mjs'
 
-function shinWaistband(part) {
-  const {
-    store,
-    macro,
-    Point,
-    Path,
-    points,
-    paths,
-    complete,
-    paperless,
-    sa,
-    utils,
-    absoluteOptions,
-  } = part.shorthand()
-
+function shinWaistband({
+  store,
+  macro,
+  Point,
+  Path,
+  points,
+  paths,
+  complete,
+  paperless,
+  sa,
+  utils,
+  absoluteOptions,
+  part,
+}) {
   const height = absoluteOptions.elasticWidth * 2
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, height)

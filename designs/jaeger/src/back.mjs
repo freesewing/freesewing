@@ -1,24 +1,23 @@
 import { backBase } from './backbase.mjs'
 import { backVent, backVentLength } from './options.mjs'
 
-function jaegerBack(part) {
-  const {
-    paperless,
-    sa,
-    snippets,
-    Snippet,
-    utils,
-    store,
-    complete,
-    points,
-    measurements,
-    options,
-    macro,
-    Point,
-    paths,
-    Path,
-  } = part.shorthand()
-
+function jaegerBack({
+  paperless,
+  sa,
+  snippets,
+  Snippet,
+  utils,
+  store,
+  complete,
+  points,
+  measurements,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   // Back vent(s)
   let ventY = points.cbHips.y - points.cbWaistCp2.dy(points.cbHips) * options.backVentLength
   if (options.backVent === 1) {

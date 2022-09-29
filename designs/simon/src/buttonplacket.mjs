@@ -2,23 +2,22 @@ import { addButtons } from './shared.mjs'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
-function simonButtonPlacket(part) {
-  const {
-    utils,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    paperless,
-    macro,
-    options,
-    store,
-  } = part.shorthand()
-
+function simonButtonPlacket({
+  utils,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  paperless,
+  macro,
+  options,
+  store,
+  part,
+}) {
   if (!options.seperateButtonPlacket) {
     part.paths = {}
     part.snippets = {}

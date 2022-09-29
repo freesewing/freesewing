@@ -1,22 +1,21 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
 
-function tamikoTop(part) {
-  const {
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    measurements,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function tamikoTop({
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   // Width at shoulders
   const shoulders = measurements.shoulderToShoulder
 

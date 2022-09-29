@@ -1,9 +1,7 @@
 import { back as bellaBack } from '@freesewing/bella'
 import * as options from './options.mjs'
 
-function nobleBackPoints(part) {
-  const { points, Path, paths, options, snippets } = part.shorthand()
-
+function nobleBackPoints({ points, Path, paths, options, snippets, log, part }) {
   // Hide Bella paths
   for (let key of Object.keys(paths)) paths[key].render = false
   for (let i in snippets) delete snippets[i]
@@ -76,7 +74,7 @@ function nobleBackPoints(part) {
     iteration++
   } while (diff < -0.5 || (diff > 0.5 && iteration < 100))
   if (iteration >= 100) {
-    raise.error('Something is not quite right here!')
+    log.error('Something is not quite right here!')
   }
 
   return part

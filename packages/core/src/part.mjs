@@ -6,24 +6,26 @@ import { Snippet } from './snippet.mjs'
 import { Hooks } from './hooks.mjs'
 
 export function Part() {
+  // Non-enumerable properties
+  utils.addNonEnumProp(this, 'freeId', 0)
+  utils.addNonEnumProp(this, 'topLeft', false)
+  utils.addNonEnumProp(this, 'bottomRight', false)
+  utils.addNonEnumProp(this, 'width', false)
+  utils.addNonEnumProp(this, 'height', false)
+  utils.addNonEnumProp(this, 'utils', utils)
+  utils.addNonEnumProp(this, 'layout', { move: { x: 0, y: 0 } })
+  utils.addNonEnumProp(this, 'Point', Point)
+  utils.addNonEnumProp(this, 'Path', Path)
+  utils.addNonEnumProp(this, 'Snippet', Snippet)
+  utils.addNonEnumProp(this, 'hooks', new Hooks())
+
+  // Enumerable properties
+  this.render = true // FIXME: Replace render with hide
+  this.hide = false // FIXME: Replace render with hide
   this.attributes = new Attributes()
   this.points = {}
   this.paths = {}
   this.snippets = {}
-  this.freeId = 0
-  this.topLeft = false
-  this.bottomRight = false
-  this.width = false
-  this.height = false
-  this.render = true
-  this.utils = utils
-  this.layout = { move: { x: 0, y: 0 } }
-  this.cut = { grain: 90, materials: {} }
-  this.Point = Point
-  this.Path = Path
-  this.Snippet = Snippet
-
-  this.hooks = new Hooks() // Hooks container
 
   return this
 }
@@ -59,8 +61,8 @@ Part.prototype.getId = function (prefix = '') {
 Part.prototype.unitsClosure = function (value) {
   const self = this
   const method = function (value) {
-    if (self.context.settings.debug && typeof value !== 'number')
-      self.context.raise.debug(
+    if (typeof value !== 'number')
+      self.context.store.log.warning(
         `Calling \`units(value)\` but \`value\` is not a number (\`${typeof value}\`)`
       )
     return utils.units(value, self.context.settings.units)
@@ -85,8 +87,8 @@ Part.prototype.boundary = function () {
         if (path.bottomRight.y > bottomRight.y) bottomRight.y = path.bottomRight.y
       }
     } catch (err) {
-      this.context.raise.error(`Could not calculate boundary of \`paths.${key}\``)
-      this.context.raise.debug(
+      this.context.store.log.error(`Could not calculate boundary of \`paths.${key}\``)
+      this.context.store.log.debug(
         `Since \`paths.${key}\` has no boundary, neither does \`parts.${this.name}\`. Ejecting part`
       )
       return false
@@ -180,12 +182,13 @@ Part.prototype.units = function (input) {
 
 /** Returns an object with shorthand access for pattern design */
 Part.prototype.shorthand = function () {
-  const complete = this.context.settings.complete ? true : false
-  const paperless = this.context.settings.paperless === true ? true : false
-  const sa = this.context.settings.complete ? this.context.settings.sa || 0 : 0
+  const complete = this.context.settings?.complete ? true : false
+  const paperless = this.context.settings?.paperless === true ? true : false
+  const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
   const shorthand = {
+    part: this,
     sa,
-    scale: this.context.settings.scale,
+    scale: this.context.settings?.scale,
     store: this.context.store,
     macro: this.macroClosure(),
     units: this.unitsClosure(),
@@ -193,38 +196,39 @@ Part.prototype.shorthand = function () {
     complete,
     paperless,
     events: this.context.events,
-    raise: this.context.raise,
+    log: this.context.store.log,
     addCut: this.addCut,
     removeCut: this.removeCut,
   }
   // Add top-level store methods and add a part name parameter
   const partName = this.name
   for (const [key, method] of Object.entries(this.context.store)) {
-    if (typeof method === 'function') shorthand[key] = function(...args) {
-      return method(partName, ...args)
-    }
+    if (typeof method === 'function')
+      shorthand[key] = function (...args) {
+        return method(partName, ...args)
+      }
   }
 
   // We'll need this
   let self = this
 
-  // Wrap the Point constructor so objects can raise events
+  // Wrap the Point constructor so objects can log
   shorthand.Point = function (x, y) {
     Point.apply(this, [x, y, true])
-    Object.defineProperty(this, 'raise', { value: self.context.raise })
+    Object.defineProperty(this, 'log', { value: self.context.store.log })
   }
   shorthand.Point.prototype = Object.create(Point.prototype)
-  // Wrap the Path constructor so objects can raise events
+  // Wrap the Path constructor so objects can log
   shorthand.Path = function () {
     Path.apply(this, [true])
-    Object.defineProperty(this, 'raise', { value: self.context.raise })
+    Object.defineProperty(this, 'log', { value: self.context.store.log })
   }
   shorthand.Path.prototype = Object.create(Path.prototype)
-  // Wrap the Snippet constructor so objects can raise events
+  // Wrap the Snippet constructor so objects can log
   shorthand.Snippet = function (def, anchor) {
     Snippet.apply(this, [def, anchor, true])
     Snippet.apply(this, arguments)
-    Object.defineProperty(this, 'raise', { value: self.context.raise })
+    Object.defineProperty(this, 'log', { value: self.context.store.log })
   }
   shorthand.Snippet.prototype = Object.create(Snippet.prototype)
 
@@ -236,21 +240,21 @@ Part.prototype.shorthand = function () {
     set: (points, name, value) => {
       // Constructor checks
       if (value instanceof Point !== true)
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `\`points.${name}\` was set with a value that is not a \`Point\` object`
         )
       if (value.x == null || !utils.isCoord(value.x))
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `\`points.${name}\` was set with a \`x\` parameter that is not a \`number\``
         )
       if (value.y == null || !utils.isCoord(value.y))
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `\`points.${name}\` was set with a \`y\` parameter that is not a \`number\``
         )
       try {
         value.name = name
       } catch (err) {
-        self.context.raise.warning(`Could not set \`name\` property on \`points.${name}\``)
+        self.context.store.log.warning(`Could not set \`name\` property on \`points.${name}\``)
       }
       return (self.points[name] = value)
     },
@@ -264,13 +268,13 @@ Part.prototype.shorthand = function () {
     set: (paths, name, value) => {
       // Constructor checks
       if (value instanceof Path !== true)
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `\`paths.${name}\` was set with a value that is not a \`Path\` object`
         )
       try {
         value.name = name
       } catch (err) {
-        self.context.raise.warning(`Could not set \`name\` property on \`paths.${name}\``)
+        self.context.store.log.warning(`Could not set \`name\` property on \`paths.${name}\``)
       }
       return (self.paths[name] = value)
     },
@@ -284,21 +288,21 @@ Part.prototype.shorthand = function () {
     set: (snippets, name, value) => {
       // Constructor checks
       if (value instanceof Snippet !== true)
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `\`snippets.${name}\` was set with a value that is not a \`Snippet\` object`
         )
       if (typeof value.def !== 'string')
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `\`snippets.${name}\` was set with a \`def\` parameter that is not a \`string\``
         )
       if (value.anchor instanceof Point !== true)
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `\`snippets.${name}\` was set with an \`anchor\` parameter that is not a \`Point\``
         )
       try {
         value.name = name
       } catch (err) {
-        self.context.raise.warning(`Could not set \`name\` property on \`snippets.${name}\``)
+        self.context.store.log.warning(`Could not set \`name\` property on \`snippets.${name}\``)
       }
       return (self.snippets[name] = value)
     },
@@ -308,7 +312,7 @@ Part.prototype.shorthand = function () {
   const measurementsProxy = {
     get: function (measurements, name) {
       if (typeof measurements[name] === 'undefined')
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `Tried to access \`measurements.${name}\` but it is \`undefined\``
         )
       return Reflect.get(...arguments)
@@ -320,7 +324,9 @@ Part.prototype.shorthand = function () {
   const optionsProxy = {
     get: function (options, name) {
       if (typeof options[name] === 'undefined')
-        self.context.raise.warning(`Tried to access \`options.${name}\` but it is \`undefined\``)
+        self.context.store.log.warning(
+          `Tried to access \`options.${name}\` but it is \`undefined\``
+        )
       return Reflect.get(...arguments)
     },
     set: (options, name, value) => (self.context.settings.options[name] = value),
@@ -330,7 +336,7 @@ Part.prototype.shorthand = function () {
   const absoluteOptionsProxy = {
     get: function (absoluteOptions, name) {
       if (typeof absoluteOptions[name] === 'undefined')
-        self.context.raise.warning(
+        self.context.store.log.warning(
           `Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``
         )
       return Reflect.get(...arguments)
@@ -345,16 +351,16 @@ Part.prototype.shorthand = function () {
   return shorthand
 }
 
-Part.prototype.generateTransform = function(transforms) {
-  const {move, rotate, flipX, flipY} = transforms;
-  const generated = utils.generatePartTransform(move.x, move.y, rotate, flipX, flipY, this);
+Part.prototype.generateTransform = function (transforms) {
+  const { move, rotate, flipX, flipY } = transforms
+  const generated = utils.generatePartTransform(move.x, move.y, rotate, flipX, flipY, this)
 
   for (var t in generated) {
-    this.attr(t, generated[t], true);
+    this.attr(t, generated[t], true)
   }
 }
 
-Part.prototype.isEmpty = function() {
+Part.prototype.isEmpty = function () {
   if (Object.keys(this.snippets).length > 0) return false
 
   if (Object.keys(this.paths).length > 0) {

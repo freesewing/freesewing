@@ -1,22 +1,21 @@
 import { body } from './body.mjs'
 import { mouth } from './mouth.mjs'
 
-function draftHiAboveMouth (part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    options,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
-
+function draftHiAboveMouth({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  options,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
   let aboveMouth01_02d = 266.7238454769277 * options.size
   let aboveMouth01_02a = 353.4089695458119
   let aboveMouth02_03d = 28.348200101593726 * options.size
@@ -175,6 +174,6 @@ function draftHiAboveMouth (part) {
 
 export const aboveMouth = {
   name: 'hi.aboveMouth',
-  after: [ body, mouth ],
+  after: [body, mouth],
   draft: draftHiAboveMouth,
 }

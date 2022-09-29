@@ -1,9 +1,7 @@
 import { dimensionPlugin } from '@freesewing/plugin-dimension'
 import { base } from './base.mjs'
 
-const pluginDimension = (part) => {
-  const { points, Point, paths, Path, options, macro } = part.shorthand()
-
+const pluginDimension = ({ points, Point, paths, Path, options, macro, part }) => {
   if (['dimension', 'all'].indexOf(options.plugin) !== -1) {
     points.a = new Point(0, 0)
     points.b = new Point(10, 0)

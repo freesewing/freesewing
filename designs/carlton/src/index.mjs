@@ -22,15 +22,45 @@ import { innerPocketTab } from './innerpockettab.mjs'
 // Create design
 const Carlton = new Design({
   data,
-  parts: [ front, back, tail, topSleeve, underSleeve, belt, collarStand,
-    collar, cuffFacing, pocket, pocketFlap, pocketLining, chestPocketWelt,
-    chestPocketBag, innerPocketWelt, innerPocketBag, innerPocketTab, ],
+  parts: [
+    front,
+    back,
+    tail,
+    topSleeve,
+    underSleeve,
+    belt,
+    collarStand,
+    collar,
+    cuffFacing,
+    pocket,
+    pocketFlap,
+    pocketLining,
+    chestPocketWelt,
+    chestPocketBag,
+    innerPocketWelt,
+    innerPocketBag,
+    innerPocketTab,
+  ],
 })
 
 // Named exports
 export {
-  front, back, tail, topSleeve, underSleeve, belt, collarStand, collar,
-  cuffFacing, pocket, pocketFlap, pocketLining, chestPocketWelt,
-  chestPocketBag, innerPocketWelt, innerPocketBag, innerPocketTab,
-  Carlton
+  front,
+  back,
+  tail,
+  topSleeve,
+  underSleeve,
+  belt,
+  collarStand,
+  collar,
+  cuffFacing,
+  pocket,
+  pocketFlap,
+  pocketLining,
+  chestPocketWelt,
+  chestPocketBag,
+  innerPocketWelt,
+  innerPocketBag,
+  innerPocketTab,
+  Carlton,
 }

@@ -2,20 +2,20 @@ import { constructMainDart, shapeSideSeam, dartPath } from './shared.mjs'
 import { back as brianBack } from '@freesewing/brian'
 import { backInset, shoulderInset, neckInset, centerBackDart, backScyeDart } from './options.mjs'
 
-function wahidBack(part) {
-  const {
-    points,
-    Point,
-    paths,
-    Path,
-    measurements,
-    options,
-    macro,
-    complete,
-    sa,
-    paperless,
-    snippets,
-  } = part.shorthand()
+function wahidBack({
+  points,
+  Point,
+  paths,
+  Path,
+  measurements,
+  options,
+  macro,
+  complete,
+  sa,
+  paperless,
+  snippets,
+  part,
+}) {
 
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]

@@ -1,18 +1,19 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-/*
- * We don't move this draft method under the part object
- * because doing so changes the indentation which causes
- * us to lose all history of changes to this method.
- *
- * So to maintain the history of contributions over the
- * years, keeps this method here, and resist the urge to
- * move it into the named export at the bottom of this file.
- */
-function draft (part) {
-  const { options, Point, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro } =
-    part.shorthand()
-
+function draft({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
   // Pocket seams here
   const pocketLength = 800 * options.length
   const pocketWidth = 500 * options.width
@@ -117,7 +118,6 @@ export const pocket = {
     length: { pct: 50, min: 30, max: 100, menu: 'style' },
     edge: { pct: 25, min: 20, max: 50, menu: 'style' },
   },
-  plugins: [ pluginBundle ],
-  draft
+  plugins: [pluginBundle],
+  draft,
 }
-

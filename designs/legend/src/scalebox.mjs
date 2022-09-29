@@ -1,9 +1,7 @@
 import { box } from './shared.mjs'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function legendScalebox(part) {
-  const { points, Point, macro } = part.shorthand()
-
+function legendScalebox({ points, Point, macro, part }) {
   points.a = new Point(55, 25)
   macro('scalebox', { at: points.a })
 

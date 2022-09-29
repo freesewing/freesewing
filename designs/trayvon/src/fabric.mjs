@@ -7,12 +7,11 @@ import {
   options,
 } from './shared.mjs'
 
-function trayvonFabricTail(part) {
-  const { Path, complete, macro, paths, points, paperless, sa, store, absoluteOptions } =
-    part.shorthand()
+function trayvonFabricTail(params) {
+  const { Path, complete, macro, paths, points, paperless, sa, store, absoluteOptions } = params
 
-  calculateHelpers(part)
-  draftTieShape(part, store.get('backTip') * 2.5, absoluteOptions.knotWidth * 2.5, true)
+  calculateHelpers(params)
+  draftTieShape(params, store.get('backTip') * 2.5, absoluteOptions.knotWidth * 2.5, true)
   paths.seam.attributes.add('class', 'fabric')
 
   // Complete pattern?
@@ -29,7 +28,7 @@ function trayvonFabricTail(part) {
 
   // Paperless?
   if (paperless) {
-    tieShapeDimensions(part)
+    tieShapeDimensions(params)
     macro('ld', {
       from: points.tip,
       to: points.notch1,
@@ -48,10 +47,10 @@ function trayvonFabricTail(part) {
       .attr('data-text-class', 'center')
   }
 
-  return part
+  return params.part
 }
 
-function trayvonFabricTip(part) {
+function trayvonFabricTip(params) {
   const {
     Path,
     Snippet,
@@ -63,10 +62,10 @@ function trayvonFabricTip(part) {
     sa,
     snippets,
     absoluteOptions,
-  } = part.shorthand()
+  } = params
 
-  calculateHelpers(part)
-  draftTieShape(part, absoluteOptions.tipWidth * 2.5, absoluteOptions.knotWidth * 2.5, true)
+  calculateHelpers(params)
+  draftTieShape(params, absoluteOptions.tipWidth * 2.5, absoluteOptions.knotWidth * 2.5, true)
   paths.seam.attributes.add('class', 'fabric')
 
   // Complete pattern?
@@ -105,14 +104,14 @@ function trayvonFabricTip(part) {
       .attr('data-text-class', 'center')
   }
 
-  return part
+  return params.part
 }
 
 export const fabricTail = {
   name: 'trayvon.fabricTail',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: trayvonFabricTail,
 }
 
@@ -120,6 +119,6 @@ export const fabricTip = {
   name: 'trayvon.fabricTip',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: trayvonFabricTip,
 }

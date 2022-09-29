@@ -2,12 +2,12 @@ import { draftRibbing } from './shared.mjs'
 import { ribbing } from './frontback.mjs'
 import { sleeve } from './sleeve.mjs'
 
-function svenCuff(part) {
-  const { measurements, sa, points, complete, paperless, macro, options } = part.shorthand()
+function svenCuff(params) {
+  const { measurements, sa, points, complete, paperless, macro, options, part } = params
 
   if (!options.ribbing) return part
   const length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
-  draftRibbing(part, length)
+  draftRibbing(params, length)
 
   // Complete pattern?
   if (complete) {

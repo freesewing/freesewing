@@ -1,21 +1,21 @@
 import { back } from './back.mjs'
 import { front } from './front.mjs'
 
-function yuriHoodSide(part) {
-  const {
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    measurements,
-    complete,
-    paperless,
-    macro,
-  } = part.shorthand()
+function yuriHoodSide({
+  store,
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  measurements,
+  complete,
+  paperless,
+  macro,
+  part,
+}) {
 
   const neckOpening = store.get('frontNeckSeamLength') + store.get('backNeckSeamLength')
   const hoodOpening = measurements.head

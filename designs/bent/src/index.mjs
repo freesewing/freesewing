@@ -10,7 +10,7 @@ import { underSleeve } from './undersleeve.mjs'
 // Create new design
 const Bent = new Design({
   data,
-  parts: [ front, back, sleeve, topSleeve, underSleeve ],
+  parts: [front, back, sleeve, topSleeve, underSleeve],
 })
 
 // Named exports

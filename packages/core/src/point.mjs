@@ -135,8 +135,7 @@ Point.prototype.flipY = function (that = false) {
 /** Shifts this point distance in the deg direction */
 Point.prototype.shift = function (deg, distance) {
   this.check()
-  if (typeof deg !== 'number')
-    this.raise.warning('Called `Point.shift` but `deg` is not a number')
+  if (typeof deg !== 'number') this.raise.warning('Called `Point.shift` but `deg` is not a number')
   if (typeof distance !== 'number')
     this.raise.warning('Called `Point.shift` but `distance` is not a number')
   let p = this.copy()
@@ -234,7 +233,7 @@ Point.prototype.translate = function (x, y) {
 }
 
 /** Chainable way to set the data-text property (and optional class) */
-Point.prototype.setText = function (text = '', className=false) {
+Point.prototype.setText = function (text = '', className = false) {
   this.attributes.set('data-text', text)
   if (className) this.attributes.set('data-text-class', className)
 
@@ -242,10 +241,9 @@ Point.prototype.setText = function (text = '', className=false) {
 }
 
 /** Chainable way to set the data-circle property (and optional class) */
-Point.prototype.setCircle = function (radius = false, className=false) {
+Point.prototype.setCircle = function (radius = false, className = false) {
   if (radius) this.attributes.set('data-circle', radius)
   if (className) this.attributes.set('data-circle-class', className)
 
   return this
 }
-

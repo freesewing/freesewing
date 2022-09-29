@@ -1,5 +1,5 @@
-export const draftRibbing = function (part, length) {
-  const {
+export const draftRibbing = function (
+  {
     store,
     measurements,
     options,
@@ -12,8 +12,10 @@ export const draftRibbing = function (part, length) {
     paperless,
     macro,
     units,
-  } = part.shorthand()
-
+    part,
+  },
+  length
+) {
   let height = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
   if (part.context.settings.sample) store.set('ribbingHeight', height)
   else store.setIfUnset('ribbingHeight', height)

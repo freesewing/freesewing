@@ -1,22 +1,21 @@
 import { pluginBundle } from '@freesewing/plugin-bundle'
 
-function draftHolmesEar (part) {
-  let {
-    Point,
-    points,
-    Path,
-    paths,
-    measurements,
-    options,
-    complete,
-    sa,
-    snippets,
-    Snippet,
-    paperless,
-    macro,
-    absoluteOptions,
-  } = part.shorthand()
-
+function draftHolmesEar({
+  Point,
+  points,
+  Path,
+  paths,
+  measurements,
+  options,
+  complete,
+  sa,
+  snippets,
+  Snippet,
+  paperless,
+  macro,
+  absoluteOptions,
+  part,
+}) {
   // Design pattern here
   let headCircumference = measurements.head + absoluteOptions.headEase
   let earFlapLength = ((options.lengthRatio * headCircumference) / 2) * options.earLength
@@ -32,9 +31,8 @@ function draftHolmesEar (part) {
     .move(points.bottom)
     .curve(points.bottomC, points.topC, points.top)
     .curve(points.topCFlipped, points.bottomCFlipped, points.bottomFlipped)
-	.setRender(false)
-  paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom)
-  .setRender(false)
+    .setRender(false)
+  paths.hemBase = new Path().move(points.bottomFlipped).line(points.bottom).setRender(false)
   paths.seam = paths.saBase.join(paths.hemBase).close()
   // Complete?
   if (complete) {
@@ -83,20 +81,24 @@ function draftHolmesEar (part) {
 
 export const ear = {
   name: 'holmes.ear',
-  measurements: [ 'head' ],
+  measurements: ['head'],
   options: {
-    headEase: { pct: 3, min: 0, max: 9,
+    headEase: {
+      pct: 3,
+      min: 0,
+      max: 9,
       snap: {
         metric: [6, 13, 19, 25, 32, 38, 44, 50],
         imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1, 44.45, 50.8],
       },
       toAbs: (pct, { measurements }) => measurements.head * pct,
-      menu: 'fit' },
+      menu: 'fit',
+    },
     lengthRatio: { pct: 55, min: 40, max: 60, menu: 'style' },
     earLength: { pct: 100, min: 80, max: 150, menu: 'style' },
     earWidth: { pct: 100, min: 80, max: 150, menu: 'style' },
     buttonhole: { bool: false },
   },
-  plugins: [ pluginBundle ],
+  plugins: [pluginBundle],
   draft: draftHolmesEar,
 }

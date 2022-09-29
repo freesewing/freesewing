@@ -1,20 +1,20 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleePocket(part) {
-  const {
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-  } = part.shorthand()
+function waraleePocket({
+  options,
+  measurements,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  paperless,
+  macro,
+  part,
+}) {
 
   if (false == options.frontPocket) {
     return part

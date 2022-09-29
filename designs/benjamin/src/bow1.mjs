@@ -1,8 +1,17 @@
 import { base } from './base.mjs'
 
-function draftBenjaminBow1 (part) {
-  let { Point, points, Path, paths, complete, macro, sa, store, paperless } = part.shorthand()
-
+function draftBenjaminBow1({
+  Point,
+  points,
+  Path,
+  paths,
+  complete,
+  macro,
+  sa,
+  store,
+  paperless,
+  part,
+}) {
   points.bandBottomLeft = points.bandBottomLeft.shift(0, 0)
   points.bandTopLeft = points.bandBottomLeft.flipY()
 

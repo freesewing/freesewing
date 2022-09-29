@@ -3,7 +3,7 @@ import { pluginBundle } from '@freesewing/plugin-bundle'
 
 export const neckTie = {
   name: 'bee.neckTie',
-  measurements: [ 'underbust', 'hpsToBust', 'hpsToWaistFront' ],
+  measurements: ['underbust', 'hpsToBust', 'hpsToWaistFront'],
   options: {
     ties: { bool: true, menu: 'style' },
     crossBackTies: { bool: false, menu: 'style' },
@@ -23,22 +23,22 @@ export const neckTie = {
     neckTieEnds: { dflt: 'straight', list: ['straight', 'pointed'], menu: 'style' },
     neckTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
   },
-  plugins: [ pluginBundle ],
-  draft: part => {
-    const {
-      store,
-      sa,
-      Point,
-      points,
-      Path,
-      paths,
-      options,
-      complete,
-      paperless,
-      macro,
-      measurements,
-      absoluteOptions,
-    } = part.shorthand()
+  plugins: [pluginBundle],
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    options,
+    complete,
+    paperless,
+    macro,
+    measurements,
+    absoluteOptions,
+    part,
+  }) => {
     // neck tie
     if (!options.ties) {
       part.render = false
@@ -55,7 +55,8 @@ export const neckTie = {
           measurements.underbust -
           measurements.underbust * options.bandLength * options.neckTieLength) /
         2
-    else neckTieLength = (measurements.hpsToBust + measurements.hpsToBust * options.neckTieLength) / 2
+    else
+      neckTieLength = (measurements.hpsToBust + measurements.hpsToBust * options.neckTieLength) / 2
     store.set('neckTieLength', neckTieLength * 2)
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(absoluteOptions.neckTieWidth * 2, points.topLeft.y)
@@ -187,6 +188,5 @@ export const neckTie = {
     }
 
     return part
-  }
+  },
 }
-

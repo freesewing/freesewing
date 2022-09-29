@@ -1,9 +1,18 @@
 import { frontpoints } from './frontpoints.mjs'
 
-function draftCorneliusPocket (part) {
-  let { Path, points, paths, Snippet, snippets, complete, sa, store, paperless, macro } =
-    part.shorthand()
-
+function draftCorneliusPocket({
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  complete,
+  sa,
+  store,
+  paperless,
+  macro,
+  part,
+}) {
   let halfInch = store.get('halfInch')
 
   paths.waistSeam = paths.waistSeam.split(points.pocketFacingTL)[0].setRender(false)
