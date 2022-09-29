@@ -464,12 +464,11 @@ Pattern.prototype.__addPartOptions = function (part) {
     for (const optionName in part.options) {
       if (!this.__mutated.optionDistance[optionName]) {
         this.__mutated.optionDistance[optionName] = this.__mutated.partDistance?.[part.name] || 0
-        this.__mutated.optionDistance[optionName] = this.__mutated.partDistance?.[part.name] || 0
         // Keep design parts immutable in the pattern or risk subtle bugs
         this.config.options[optionName] = Object.freeze(part.options[optionName])
         this.store.log.debug(`🔵  __${optionName}__ option loaded from part \`${part.name}\``)
       } else if (
-        this.__mutated.optionDistance[optionName] > this.__mutated.partDistance[part.name]
+        this.__mutated.optionDistance[optionName] < this.__mutated.partDistance[part.name]
       ) {
         this.config.options[optionName] = part.options[optionName]
         this.store.log.debug(`🟣  __${optionName}__ option overwritten by \`${part.name}\``)
