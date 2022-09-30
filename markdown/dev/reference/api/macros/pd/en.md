@@ -2,19 +2,44 @@
 title: pd
 ---
 
-The `pd` macro adds a _path dimension_ to your pattern, indicating the length of a path.  
-It is provided by the [dimension plugin](/reference/plugins/dimension/).
+The `pd` macro adds a _path dimension_ to your pattern, indicating the length
+of a path.  It is provided by the [dimension
+plugin](/reference/plugins/dimension/).
 
-<Example part="path_length">
-Example of a multiple path dimensions
-</Example>
+## Signature
 
 ```js
 macro('pd', {
-  path: paths.example,
-  d: -20
+  Number d,
+  String id,
+  Path path,
+  Boolean noEndtMarker,
+  Boolean noStartMarker,
+  String text,
 })
 ```
+
+## Example
+
+<Example caption="An example of a path dimension with the pd macro">
+```js
+({ Point, Path, paths, macro, part }) => {
+
+  paths.example = new Path()
+    .move(new Point(0,0))
+    .curve(new Point(20,10), new Point(60,10), new Point(80,0))
+
+  macro('pd', {
+    path: paths.example,
+    d: 15,
+  })
+
+  return part
+}
+```
+</Example>
+
+## Configuration
 
 | Property        | Default | Type                | Description |
 |----------------:|---------|---------------------|-------------|
@@ -25,11 +50,9 @@ macro('pd', {
 | `noStartMarker` | `false` | Boolean             | Whether to not draw a start marker |
 | `noEndMarker`   | `false` | Boolean             | Whether to not draw an end marker |
 
-<Note>
+## Notes
 
 Setting a custom ID will:
 
 - Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
 - Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
-
-</Note>

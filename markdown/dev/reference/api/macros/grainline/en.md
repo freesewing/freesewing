@@ -5,16 +5,34 @@ title: grainline
 The `grainline` macro adds a _grainline_ indicator to your pattern.  
 It is provided by the [grainline plugin](/reference/plugins/grainline/).
 
-<Example part="plugin_grainline">
-Example of the grainline indicator added by this macro
-</Example>
+## Signature
 
 ```js
-macro("grainline", {
-  from: points.grainlineFrom,
-  to: points.grainlineTo,
+macro('grainline', {
+  Point from,
+  Point to,
+  String text=grainline,
 })
 ```
+
+## Example
+
+<Example caption="Example of the grainline indicator added by this macro">
+```js
+({ Point, macro, part }) => {
+
+  macro('grainline', {
+    from: new Point(0,0),
+    to: new Point(100,0),
+  })
+
+  return part
+}
+```
+</Example>
+
+
+## Configuration
 
 | Property    | Default     | Type       | Description                                  |
 |------------:|-------------|------------|----------------------------------------------|
@@ -24,7 +42,9 @@ macro("grainline", {
 
 [1]: /reference/api/point
 
-## Removing the grainline indicator
+## Notes
+
+### Removing the grainline indicator
 
 If you inherit a part with a grainline indicator and you'd like to remove it,
 you can do so by passing `false` to the macro:

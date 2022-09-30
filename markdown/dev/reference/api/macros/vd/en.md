@@ -5,17 +5,38 @@ title: vd
 The `vd` macro adds a _vertical dimension_ to your pattern.  
 It is provided by the [dimension plugin](/reference/plugins/dimension/).
 
-<Example part="point_dy">
-An example of a vertical dimension
-</Example>
+## Signature
 
 ```js
 macro('vd', {
-  from: points.from,
-  to: points.to,
-  x: 25
+  String id,
+  Point from,
+  Boolean noEndtMarker,
+  Boolean noStartMarker,
+  String text,
+  Point to,
+  Number x,
 })
 ```
+
+## Example
+
+<Example caption="An example of a vertical dimension with the vd macro">
+```js
+({ Point, macro, part }) => {
+
+  macro('vd', {
+    from: new Point(0,0),
+    to: new Point(0,40),
+    x:10,
+  })
+
+  return part
+}
+```
+</Example>
+
+## Configuration
 
 | Property        | Default | Type                | Description |
 |----------------:|---------|---------------------|-------------|
@@ -27,11 +48,9 @@ macro('vd', {
 | `noStartMarker` | `false` | Boolean             | Whether to not draw a start marker |
 | `noEndMarker`  | `false` | Boolean             | Whether to not draw an end marker |
 
-<Note>
+## Notes
 
 Setting a custom ID will:
 
 - Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
 - Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
-
-</Note>
