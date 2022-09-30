@@ -14,7 +14,7 @@ const pluginDimension = ({ points, Point, paths, Path, options, macro, part }) =
 
     const opts = {
       text: options.dimensionCustomText ? 'custom text' : false,
-      d: options.dimensionD,
+      d: Number(options.dimensionD),
       noStartMarker: !options.dimensionStartMarker,
       noEndMarker: !options.dimensionEndMarker,
     }
