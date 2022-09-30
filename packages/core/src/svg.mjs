@@ -16,11 +16,7 @@ import { version } from '../data.mjs'
 export function Svg(pattern) {
   // Non-enumerable properties
   __addNonEnumProp(this, 'openGroups', [])
-  __addNonEnumProp(this, 'layout', {})
   __addNonEnumProp(this, 'freeId', 0)
-  __addNonEnumProp(this, 'body', '')
-  __addNonEnumProp(this, 'style', '')
-  __addNonEnumProp(this, 'defs', '')
   __addNonEnumProp(this, 'prefix', '<?xml version="1.0" encoding="UTF-8" standalone="no"?>')
 
   // Enumerable properties
@@ -32,6 +28,10 @@ export function Svg(pattern) {
   this.attributes.add('xml:lang', pattern?.settings?.[0]?.locale || 'en')
   this.attributes.add('xmlns:freesewing', 'http://freesewing.org/namespaces/freesewing')
   this.attributes.add('freesewing', version)
+  this.layout = {}
+  this.body = ''
+  this.style = ''
+  this.defs = ''
 }
 
 //////////////////////////////////////////////
@@ -141,7 +141,11 @@ Svg.prototype.__indent = function () {
 Svg.prototype.__insertText = function (text) {
   if (this.hooks.insertText.length > 0) {
     for (let hook of this.hooks.insertText)
-      text = hook.method(this.pattern.settings[this.activeStackIndex].locale || 'en', text, hook.data)
+      text = hook.method(
+        this.pattern.settings[this.activeStackIndex].locale || 'en',
+        text,
+        hook.data
+      )
   }
 
   return text
@@ -283,7 +287,10 @@ Svg.prototype.__renderPathText = function (path) {
  * @return {string} svg - The SVG markup for the Part object
  */
 Svg.prototype.__renderPart = function (part) {
-  let svg = this.__openGroup(`${this.idPrefix}stack-${this.activeStack}-part-${part.name}`, part.attributes)
+  let svg = this.__openGroup(
+    `${this.idPrefix}stack-${this.activeStack}-part-${part.name}`,
+    part.attributes
+  )
   for (let key in part.paths) {
     let path = part.paths[key]
     if (!path.hidden) svg += this.__renderPath(path)
