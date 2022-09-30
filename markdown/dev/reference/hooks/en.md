@@ -1,10 +1,9 @@
 ---
-title: Hooks API
-for: developers
-about: Documents the available lifecycle hooks in Core and how to use them
+title: Lifecycle hooks
 ---
 
-A **hook** is a lifecycle event.
+FreeSewing has **lifecycle hooks** that allow you extend its functionality by
+hooking into a lifecycle event.
 
 You can register a method for a hook. When the hook is triggered, your method will be
 called. It will receive two parameters:
