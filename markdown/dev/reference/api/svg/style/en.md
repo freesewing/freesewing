@@ -1,10 +1,11 @@
 ---
-title: style
+title: Svg.style
 ---
 
-A string that will be rendered as the style section of the SVG document.
+The `Svg.style` property holds a string that will be rendered as the style
+section of the SVG document.
 
-The style attribute is where plugins will add additional snippets.
+## Signature
 
 ```svg
 <style type="text/css">
@@ -12,9 +13,9 @@ The style attribute is where plugins will add additional snippets.
 </style>
 ```
 
-<Warning>
+## Notes
 
-###### Add, but don't overwrite
+The style property is where plugins will add additional styling.
 
 When adding your own styles, it's important not to
 overwrite this property, but rather add your own.
@@ -22,13 +23,11 @@ overwrite this property, but rather add your own.
 In other words, do this:
 
 ```js
-svg.style += myStyles;
+svg.style += myStyles
 ```
 
 and don't do this:
 
 ```js
-svg.style = myStyles;
+svg.style = myStyles
 ```
-
-</Warning>
