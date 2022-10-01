@@ -1,8 +1,12 @@
 ---
-title: "@freesewing/plugin-bundle"
+title: plugin-bundle
 ---
 
-The **@freesewing/plugin-bundle** plugin bundles the most common FreeSewing build-time plugins:
+Published as [@freesewing/plugin-bundle][1], this plugin bundles the most
+commonly used FreeSewing time plugins in one handy package.
+
+Specifically, loading this plugin will have the same effect as loading these
+plugins individually:
 
 - [plugin-banner](/reference/plugins/banner) : Add repeating text to your patterns
 - [plugin-bartack](/reference/plugins/bartack) : Add bartacks to your patterns
@@ -19,8 +23,6 @@ The **@freesewing/plugin-bundle** plugin bundles the most common FreeSewing buil
 - [plugin-sprinkle](/reference/plugins/sprinkle) : Add multiple snippets to your patterns
 - [plugin-title](/reference/plugins/title) : Add pretty titles to your pattern parts
 
-Almost all patterns use these plugins, so it made sense to bundle them.
-
 ## Installation
 
 ```bash
@@ -29,13 +31,7 @@ npm install @freesewing/plugin-bundle
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import plugins from "@freesewing/plugin-bundle";
-import config from "../config";
-
-const Pattern = new freesewing.Design(config, plugins);
-```

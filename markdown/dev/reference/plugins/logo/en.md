@@ -1,37 +1,25 @@
 ---
-title: "@freesewing/plugin-logo"
+title: plugin-logo
 ---
 
-The **@freesewing/plugin-logo** plugin provides the FreeSewing logo
-as [the logo snippet](/reference/api/snippets/logo).
-It's a plugin you most likely want to replace with your own version
-if you want to generate patterns with your own branding.
-
-<Example part="plugin_logo">An example of the logo snippet</Example>
-
-<Tip>
-
-The logo plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-logo][1], this plugin provides [the logo
+macro](/reference/api/macros/logo) which adds FreeSewing's logo to your
+design.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-logo
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import logo from "@freesewing/plugin-logo";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, logo);
-```
+The logo plugin is part of our [plugin-bundle](/reference/plugins/bundle)
 
-You can now use the [logo](/reference/api/snippets/logo) snippet in your parts.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-logo

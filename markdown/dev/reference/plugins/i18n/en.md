@@ -1,40 +1,29 @@
 ---
-title: "@freesewing/plugin-i18n"
+title: plugin-i18n
 ---
 
-The **@freesewing/plugin-i18n** plugin provides a mechanism to translate your designs.
-It does that by attaching to [the insertText lifecycle hook](/reference/api/hooks/inserttext) to
-intercept all operations that add text to a design and attempt to translate the text
-prior to insertion.
-
-<Note>
-
-This plugin provides the mechanism for translation, but does not come with translations itself.
-For this, you can use our [i18n package](/reference/packages/i18n).
-
-</Note>
+Published as [@freesewing/plugin-i18n][1], this plugin faciliates
+translation of your designs.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-i18n
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/#build-time-plugins), you load them
-by passing them to the [`freesewing.Design`](/reference/api#design) constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import aaron from "@freesewing/aaron";
-import i18n from "@freesewing/plugin-i18n";
-import translations from "@freesewing/i18n";
+## Notes
 
-const pattern = new aaron()
-  .use(i18nPlugin, { strings: translations });
-```
+This plugin provides the mechanism for translation, but does not come with
+translations itself.  For this, you can use our [i18n
+package](/reference/packages/i18n).
 
-You should also pass a second argument which holds your translations.
+To add (your own) translations, you should pass data to this plugin.
 It should be structured as such:
 
 ```js
@@ -50,3 +39,8 @@ It should be structured as such:
   }
 }
 ```
+
+The i18n plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+[1]: https://www.npmjs.com/package/@freesewing/plugin-i18n
+

@@ -1,9 +1,8 @@
 ---
-title: "@freesewing/plugin-measurements"
+title: plugin-measurements
 ---
 
-The **@freesewing/plugin-measurements** plugin attaches
-to [the preDraft lifecycle hook](/reference/api/hooks/predraft) to
+Published as [@freesewing/plugin-measurements][1], this plugin will
 provide a number of extra measurements to your pattern insofar as
 they can be deduced from the measurements that are provided.
 
@@ -17,12 +16,6 @@ It will add the following measurements:
 - `waistFrontArc` (if both `waist` and `waistBack` are provided)
 - `crossSeamBack` (if both `crossSeam` and `crossSeamFront` are available)
 
-<Tip>
-
-The measurements plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
-
 ## Installation
 
 ```sh
@@ -31,13 +24,12 @@ npm install @freesewing/plugin-measurements
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import measurements from "@freesewing/plugin-measurements";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, measurements);
-```
+The measurements plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+[1]: https://www.npmjs.com/package/@freesewing/plugin-measurements

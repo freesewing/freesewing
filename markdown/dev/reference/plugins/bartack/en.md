@@ -1,21 +1,13 @@
 ---
-title: "@freesewing/plugin-bartack"
+title: plugin-bartack
 ---
 
-The **@freesewing/plugin-bartack** plugin provides
-[the bartack macro](/reference/api/macros/bartack).
-This macro allows you to add bartacks — a set of
-tight zig-zag stitches used to enforce a seam — to your design.
-
-## Example
-
-<Example part="plugin_bartack">Example of the bartack macro provided by this plugin</Example>
-
-<Tip>
-
-The bartack plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-bartack][1], this plugin provides 
+the [bartack](/reference/api/macros/bartack),
+[bartackAlong](/reference/api/macros/bartackalong), and
+the [bartackFractionAlong](/reference/api/macros/bartack) macros
+which allows you to add bartacks — a set
+of tight zig-zag stitches used to enforce a seam — to your design.
 
 ## Installation
 
@@ -25,18 +17,13 @@ npm install @freesewing/plugin-bartack
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import bartack from "@freesewing/plugin-bartack";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, bartack);
-```
+The bartack plugin is part of our [plugin-bundle](/reference/plugins/bundle)
 
-Now you can use the
-[bartack](/reference/api/macros/bartack/),
-[bartackAlong](/reference/api/macros/bartackalong/), and
-[bartackFractionAlong](/reference/api/macros/bartackfractionalong/) macros in your parts.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-bartack
+

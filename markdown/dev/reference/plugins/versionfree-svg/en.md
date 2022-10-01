@@ -1,28 +1,23 @@
 ---
-title: "@freesewing/versionfree-svg"
+title: versionfree-svg
 ---
 
-The **@freesewing/plugin-versionfree-svg** plugin suppresses
-the inclusion of the FreeSewing version number in SVG output.
-This allows diffing pattern output between versions to check for
-any differences in the output between different versions of FreeSewing.
+Published as [@freesewing/plugin-versionfree-svg][1], this plugin suppresses
+the inclusion of the FreeSewing version number in SVG output.  This allows
+diffing pattern output between versions to check for any differences in the
+output between different versions of FreeSewing.
 
 ## Installation
 
 ```sh
-npm install @freesewing/plugin-bartack
+npm install @freesewing/plugin-versionfree-svg
 ```
 
 ## Usage
 
-Like all [run-time plugins](/guides/plugins/types-of-plugins#run-time-plugins), you
-load them by by passing them to the `use()` method of an instatiated pattern.
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-That method is chainable, so if you have multiple plugins you can just chain them together.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-versionfree-svg
 
-```js
-import Aaron from "@freesewing/aaron";
-import versionfreeSvg from "@freesewing/plugin-versionfree-svg";
-
-const pattern = new Aaron().use(versionfreeSvg);
-```

@@ -1,29 +1,27 @@
 ---
-title: "@freesewing/plugin-svgattr"
+title: plugin-svgattr
 ---
 
-The **@freesewing/plugin-svgattr** plugin takes an object of key-value
-pairs and adds them ass attributes to your SVG document on render.
-It leverages [the preRender lifecycle hook](/reference/api/hooks/prerender) to do so.
+Published as [@freesewing/plugin-svgattr][1], this plugin takes an object of
+key-value pairs and adds them ass attributes to your SVG document on render.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-svgattr
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import Aaron from "@freesewing/aaron";
-import svgAttr from "@freesewing/plugin-svgattr";
-import translations from "@freesewing/i18n";
+## Notes
 
-const myAaron = new Aaron()
-  .use(svgAttr, { class: "freesewing pattern" });
-```
+You should pass a second argument which holds key-value pairs of the attributes
+you want to add to the SVG tag.
 
-You should pass a second argument which holds key-value pairs of the attributes you want to add to the SVG tag.
+The svgattr plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+[1]: https://www.npmjs.com/package/@freesewing/plugin-svgattr

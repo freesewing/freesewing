@@ -2,46 +2,31 @@
 title: "@freesewing/plugin-scalebox"
 ---
 
-The **@freesewing/plugin-scalebox** plugin provides [the
-scalebox macro](/reference/api/macros/scalebox/) with facilitates
-adding a scalebox to your design, so users can verify that the pattern
-is printed at the correct scale.
-
-<Example part="plugin_scalebox">An example of the scalebox</Example>
-
-<Note>
-
-##### FreeSewing branding can be overruled at runtime
-
-This plugin by default includes FreeSewing branding, but you can
-override that when calling the scalebox macro in case you want to
-generate your own branded designs.
-
-</Note>
-
-<Tip>
-
-The scalebox plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-scalebox][1], this plugin provides the
+[scalebox](/reference/api/macros/scalebox) and
+[miniscale](/reference/api/macros/miniscale) macros which add a (mini) scalebox
+to your design, so users can verify that the pattern is printed at the correct
+scale.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-scalebox
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import scalebox from "@freesewing/plugin-scalebox";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, scalebox);
-```
+This plugin by default includes FreeSewing branding, but you can
+override that when calling the scalebox macro in case you want to
+generate your own branded designs.
 
-Now you can use the [scalebox](/reference/api/macros/scalebox/) macro in your parts.
+The scalebox plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+[1]: https://www.npmjs.com/package/@freesewing/plugin-scalebox
+

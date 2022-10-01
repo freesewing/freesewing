@@ -1,20 +1,10 @@
 ---
-title: "@freesewing/plugin-banner"
+title: plugin-banner
 ---
 
-The **@freesewing/plugin-banner** plugin provides
-[the banner macro](/reference/api/macros/banner).
-This macro allows you to add repeating text along a path.
-
-## Example
-
-<Example part="plugin_banner">Example of the banner macro provided by this plugin</Example>
-
-<Tip>
-
-The banner plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-banner][1], this plugin provides [the banner
+macro](/reference/api/macros/banner) which allows you to add repeating text
+along a path.
 
 ## Installation
 
@@ -24,16 +14,13 @@ npm install @freesewing/plugin-banner
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import banner from "@freesewing/plugin-banner";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, banner);
-```
+The banner plugin is part of our [plugin-bundle](/reference/plugins/bundle)
 
-Now you can use the
-[banner](/reference/api/macros/banner/) macros in your parts.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-banner
+

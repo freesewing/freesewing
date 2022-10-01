@@ -1,50 +1,32 @@
 ---
-title: "@freesewing/plugin-buttons"
+title: plugin-buttons
 ---
 
-The **@freesewing/plugin-buttons** plugin provides the following [snippets](/reference/api/snippets):
+Published as [@freesewing/plugin-buttons][1], this plugin provides the following
+[snippets](/reference/snippets):
 
-- [button](/reference/api/snippets/button)
-- [buttonhole](/reference/api/snippets/buttonhole)
-- [buttonhole-start](/reference/api/snippets/buttonhole-start)
-- [buttonhole-end](/reference/api/snippets/buttonhole-end)
-- [snap-stud](/reference/api/snippets/snap-stud)
-- [snap-socket](/reference/api/snippets/snap-socket)
-
-<Example part="plugin_buttons">
-An example of the button, buttonhole, buttonhole-start, buttonhole-end, snap-stud, and snap-socket snippets
-</Example>
-
-<Tip>
-
-The buttons plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+- [button](/reference/snippets/button)
+- [buttonhole](/reference/snippets/buttonhole)
+- [buttonhole-start](/reference/snippets/buttonhole-start)
+- [buttonhole-end](/reference/snippets/buttonhole-end)
+- [snap-stud](/reference/snippets/snap-stud)
+- [snap-socket](/reference/snippets/snap-socket)
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-buttons
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-```js
-import freesewing from "@freesewing/core";
-import buttons from "@freesewing/plugin-buttons";
-import config from "../config";
+## Notes
 
-const Pattern = new freesewing.Design(config, buttons);
-```
+The buttons plugin is part of our [plugin-bundle](/reference/plugins/bundle)
 
-Now you can use the
-[button](/reference/api/snippets/button),
-[buttonhole](/reference/api/snippets/buttonhole),
-[buttonhole-start](/reference/api/snippets/buttonhole-start),
-[buttonhole-end](/reference/api/snippets/buttonhole-end),
-[snap-stud](/reference/api/snippets/snap-stud), and
-[snap-socket](/reference/api/snippets/snap-socket)
-snippets in your designs.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-buttons
+
