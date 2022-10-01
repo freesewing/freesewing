@@ -6,9 +6,6 @@ overrides:
   - files: ["*.yaml", "*.yml"]
     plugins: ["yaml"]
     extends: ["plugin:yaml/recommended"]
-  - files: ["*.md"]
-    plugins: ["markdown"]
-    processor: "markdown/markdown"
 parserOptions:
   ecmaVersion: latest
   sourceType: module
