@@ -15,5 +15,5 @@ If you are sewing a historically accurate Jane you will want the following for y
 - Beeswax for waxing thread
 - A thimble is recommended for comfortable handsewing
 
-If you are working with a sewing machine or not constrained by historical accuracy you will want some [link] basic sewing supplies
+If you are working with a sewing machine or not constrained by historical accuracy you will want some [basic sewing supplies](/docs/sewing/basic-sewing-supplies).
 
