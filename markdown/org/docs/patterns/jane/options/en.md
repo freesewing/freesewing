@@ -2,4 +2,4 @@
 title: "Jane Shift: Options"
 ---
 
-<PatternDocs pattern='jane' />
+<PatternOptions pattern='jane' />
