@@ -360,13 +360,13 @@ export const front = {
     // Paperless?
     if (paperless) {
       macro('hd', {
-        from: points.frontWaistBandRight,
-        to: points.frontWaistBandLeft,
+        from: points.frontWaistBandLeft,
+        to: points.frontWaistBandRight,
         y: points.frontWaistBandRight.y + sa - 15,
       })
       macro('hd', {
-        from: points.frontLegOpeningRight,
-        to: points.frontLegOpeningLeft,
+        from: points.frontLegOpeningLeft,
+        to: points.frontLegOpeningRight,
         y: points.frontLegOpeningRight.y + sa - 15,
       })
       macro('hd', {
@@ -382,7 +382,7 @@ export const front = {
       macro('ld', {
         from: points.frontWaistBandLeft,
         to: points.frontLegOpeningLeft,
-        d: points.frontWaistBandLeft.y + sa - 15,
+        d: sa - 15,
       })
       macro('pd', {
         path: new Path()

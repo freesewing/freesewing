@@ -326,13 +326,13 @@ export const back = {
     // Paperless?
     if (paperless) {
       macro('hd', {
-        from: points.backWaistBandRight,
-        to: points.backWaistBandLeft,
+        from: points.backWaistBandLeft,
+        to: points.backWaistBandRight,
         y: points.backWaistBandRight.y + sa - 15,
       })
       macro('hd', {
-        from: points.backLegOpeningRight,
-        to: points.backLegOpeningLeft,
+        from: points.backLegOpeningLeft,
+        to: points.backLegOpeningRight,
         y: points.backLegOpeningRight.y + sa - 15,
       })
       macro('hd', {
